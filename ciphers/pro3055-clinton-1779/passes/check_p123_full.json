@@ -1,0 +1,1527 @@
+{
+ "source": "H-1649 Image 1205 (B.148 p.123) full/max, columns cut by cut_2380_p121_122.py (SHEAR=0.012 PAD=0)",
+ "cells_letter_and_word": 192,
+ "cell_grades": {
+  "H": 189,
+  "M": 3
+ },
+ "compared_cells": 92,
+ "a_printed_page": 22,
+ "b_line1_variant_GATED": 22,
+ "c_plus_line9_OFICERS": 22,
+ "d_plus_doubled_figures": 23,
+ "share_b": 0.239,
+ "share_c": 0.239,
+ "share_d": 0.25,
+ "control": {
+  "b": {
+   "seeds": 1000,
+   "mean": 5.48,
+   "p95": 9,
+   "max": 13
+  },
+  "c": {
+   "seeds": 1000,
+   "mean": 5.48,
+   "p95": 9,
+   "max": 13
+  },
+  "d": {
+   "seeds": 1000,
+   "mean": 5.62,
+   "p95": 9,
+   "max": 13
+  }
+ },
+ "gate": "FAIL",
+ "addendum_B2_decode_shuffled_key": {
+  "runs_ge3": 17,
+  "hits": 9,
+  "share": 0.529,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "mean": 0.03,
+   "p95": 0,
+   "max": 1
+  },
+  "gate": "FAIL",
+  "decoded_runs": [
+   {
+    "start": "c1:2",
+    "cells": "16-31 16-32 16-15 16-40 16-20 16-3 16-35 16-35",
+    "decoded": "congress",
+    "hit": true
+   },
+   {
+    "start": "c1:12",
+    "cells": "16-34 16-3 16-15 16-35 16-27 16-8",
+    "decoded": "pensyl",
+    "hit": true
+   },
+   {
+    "start": "c1:19",
+    "cells": "16-19 16-27 16-24 16-19",
+    "decoded": "ayla",
+    "hit": false
+   },
+   {
+    "start": "c1:23",
+    "cells": "23-2 23-9 23-9 23-15 23-14 23-20 23-35",
+    "decoded": "assembl",
+    "hit": true
+   },
+   {
+    "start": "c1:31",
+    "cells": "20-4 20-3 20-6 20-7",
+    "decoded": "dete",
+    "hit": true
+   },
+   {
+    "start": "c2:10",
+    "cells": "23-2 23-9 23-9 23-15 23-14 23-20 23-35 23-15",
+    "decoded": "assemble",
+    "hit": true
+   },
+   {
+    "start": "c3:8",
+    "cells": "29-3 29-2 29-44 29-3 29-4",
+    "decoded": "no?nd",
+    "hit": false
+   },
+   {
+    "start": "c3:26",
+    "cells": "23-2 23-9 23-9 23-15 23-14 23-20 23-35 23-15",
+    "decoded": "assemble",
+    "hit": true
+   },
+   {
+    "start": "c4:2",
+    "cells": "26-2 26-6 26-11 26-6 26-5 26-1",
+    "decoded": "ihfhtw",
+    "hit": false
+   },
+   {
+    "start": "c4:12",
+    "cells": "22-4 22-14 22-6 22-7 22-9",
+    "decoded": "given",
+    "hit": true
+   },
+   {
+    "start": "c4:21",
+    "cells": "29-6 29-22 29-42 29-16 29-1 29-6 29-7",
+    "decoded": "n???ln?",
+    "hit": false
+   },
+   {
+    "start": "c5:1",
+    "cells": "18-27 18-28 18-4 18-6 18-9 18-13 18-14 18-15",
+    "decoded": "paterson",
+    "hit": true
+   },
+   {
+    "start": "c5:12",
+    "cells": "26-11 26-8 26-13 26-9 26-10 26-15 26-6",
+    "decoded": "furnish",
+    "hit": true
+   },
+   {
+    "start": "c5:25",
+    "cells": "26-22 26-23 26-8 26-8 26-2 26-13 26-7",
+    "decoded": "reuuire",
+    "hit": false
+   },
+   {
+    "start": "c6:1",
+    "cells": "23-26 23-7 23-9 23-11 23-7 23-8",
+    "decoded": "ioston",
+    "hit": false
+   },
+   {
+    "start": "c6:7",
+    "cells": "24-13 24-12 24-31 24-22 24-10 24-13 24-10 24-16",
+    "decoded": "re?airin",
+    "hit": false
+   },
+   {
+    "start": "c6:16",
+    "cells": "29-17 29-6 29-44 20-32 20-9 20-15 20-36",
+    "decoded": "?n?york",
+    "hit": false
+   }
+  ]
+ },
+ "columns": {
+  "c1": {
+   "tokens": 9,
+   "letter_cells": 29,
+   "word_codes": 4,
+   "score": 3,
+   "runner_up_score": 3,
+   "decipherment_span": [
+    16,
+    24
+   ],
+   "span_words": "one under major genl potter will consist of four"
+  },
+  "c2": {
+   "tokens": 17,
+   "letter_cells": 20,
+   "word_codes": 14,
+   "score": 3,
+   "runner_up_score": 2,
+   "decipherment_span": [
+    27,
+    43
+   ],
+   "span_words": "troops and six hundred militia and volunteers are to assemble at fort munsey near the west branch"
+  },
+  "c3": {
+   "tokens": 23,
+   "letter_cells": 13,
+   "word_codes": 21,
+   "score": 2,
+   "runner_up_score": 1,
+   "decipherment_span": [
+    129,
+    151
+   ],
+   "span_words": "the present expedition as there is a large force in nova scotia i have given orders to major general paterson who commands there"
+  },
+  "c4": {
+   "tokens": 19,
+   "letter_cells": 18,
+   "word_codes": 16,
+   "score": 3,
+   "runner_up_score": 2,
+   "decipherment_span": [
+    11,
+    29
+   ],
+   "span_words": "the indian country the principle one under major genl potter will consist of four hundred continental troops and six"
+  },
+  "c5": {
+   "tokens": 15,
+   "letter_cells": 22,
+   "word_codes": 12,
+   "score": 2,
+   "runner_up_score": 2,
+   "decipherment_span": [
+    0,
+    14
+   ],
+   "span_words": "congress and the pensylvania assembly determined to make two incursions into the indian country the"
+  },
+  "c6": {
+   "tokens": 5,
+   "letter_cells": 21,
+   "word_codes": 2,
+   "score": 2,
+   "runner_up_score": 2,
+   "decipherment_span": [
+    27,
+    31
+   ],
+   "span_words": "troops and six hundred militia"
+  }
+ },
+ "word_codes": [
+  {
+   "col": "c1",
+   "code": "10-1",
+   "gloss": "",
+   "ref": "c1:10",
+   "aligned_word": "under"
+  },
+  {
+   "col": "c1",
+   "code": "5-19",
+   "gloss": "",
+   "ref": "c1:11",
+   "aligned_word": "major"
+  },
+  {
+   "col": "c1",
+   "code": "9-16",
+   "gloss": "",
+   "ref": "c1:18",
+   "aligned_word": "potter"
+  },
+  {
+   "col": "c1",
+   "code": "17-17",
+   "gloss": "",
+   "ref": "c1:30",
+   "aligned_word": "of"
+  },
+  {
+   "col": "c2",
+   "code": "12-19",
+   "gloss": "",
+   "ref": "c2:1",
+   "aligned_word": "troops"
+  },
+  {
+   "col": "c2",
+   "code": "10-1",
+   "gloss": "",
+   "ref": "c2:2",
+   "aligned_word": "and"
+  },
+  {
+   "col": "c2",
+   "code": "56-18",
+   "gloss": "",
+   "ref": "c2:3",
+   "aligned_word": "six"
+  },
+  {
+   "col": "c2",
+   "code": "58-8",
+   "gloss": "",
+   "ref": "c2:4",
+   "aligned_word": "hundred"
+  },
+  {
+   "col": "c2",
+   "code": "14-12",
+   "gloss": "",
+   "ref": "c2:5",
+   "aligned_word": "militia"
+  },
+  {
+   "col": "c2",
+   "code": "10-1",
+   "gloss": "",
+   "ref": "c2:6",
+   "aligned_word": "and"
+  },
+  {
+   "col": "c2",
+   "code": "26-21",
+   "gloss": "",
+   "ref": "c2:7",
+   "aligned_word": "volunteers"
+  },
+  {
+   "col": "c2",
+   "code": "18-1",
+   "gloss": "",
+   "ref": "c2:8",
+   "aligned_word": "are"
+  },
+  {
+   "col": "c2",
+   "code": "4-19",
+   "gloss": "",
+   "ref": "c2:9",
+   "aligned_word": "to"
+  },
+  {
+   "col": "c2",
+   "code": "17-1",
+   "gloss": "",
+   "ref": "c2:18",
+   "aligned_word": "at"
+  },
+  {
+   "col": "c2",
+   "code": "6-6",
+   "gloss": "^t",
+   "ref": "c2:19",
+   "aligned_word": "fort"
+  },
+  {
+   "col": "c2",
+   "code": "13-14",
+   "gloss": "",
+   "ref": "c2:26",
+   "aligned_word": "near"
+  },
+  {
+   "col": "c2",
+   "code": "5-19",
+   "gloss": "",
+   "ref": "c2:27",
+   "aligned_word": "the"
+  },
+  {
+   "col": "c2",
+   "code": "1-22",
+   "gloss": "",
+   "ref": "c2:28",
+   "aligned_word": "west"
+  },
+  {
+   "col": "c3",
+   "code": "11-3",
+   "gloss": "",
+   "ref": "c3:1",
+   "aligned_word": "the"
+  },
+  {
+   "col": "c3",
+   "code": "5-19",
+   "gloss": "",
+   "ref": "c3:2",
+   "aligned_word": "present"
+  },
+  {
+   "col": "c3",
+   "code": "33-14",
+   "gloss": "",
+   "ref": "c3:3",
+   "aligned_word": "expedition"
+  },
+  {
+   "col": "c3",
+   "code": "5-19",
+   "gloss": "under",
+   "ref": "c3:4",
+   "aligned_word": "as"
+  },
+  {
+   "col": "c3",
+   "code": "26-3",
+   "gloss": "",
+   "ref": "c3:5",
+   "aligned_word": "there"
+  },
+  {
+   "col": "c3",
+   "code": "3-14",
+   "gloss": "",
+   "ref": "c3:6",
+   "aligned_word": "is"
+  },
+  {
+   "col": "c3",
+   "code": "2-7",
+   "gloss": "",
+   "ref": "c3:7",
+   "aligned_word": "a"
+  },
+  {
+   "col": "c3",
+   "code": "17-22",
+   "gloss": "",
+   "ref": "c3:13",
+   "aligned_word": "force"
+  },
+  {
+   "col": "c3",
+   "code": "10-3",
+   "gloss": "",
+   "ref": "c3:14",
+   "aligned_word": "in"
+  },
+  {
+   "col": "c3",
+   "code": "3-14",
+   "gloss": "",
+   "ref": "c3:15",
+   "aligned_word": "nova"
+  },
+  {
+   "col": "c3",
+   "code": "4-14",
+   "gloss": "",
+   "ref": "c3:16",
+   "aligned_word": "scotia"
+  },
+  {
+   "col": "c3",
+   "code": "43-19",
+   "gloss": "",
+   "ref": "c3:17",
+   "aligned_word": "i"
+  },
+  {
+   "col": "c3",
+   "code": "35-12",
+   "gloss": "",
+   "ref": "c3:18",
+   "aligned_word": "have"
+  },
+  {
+   "col": "c3",
+   "code": "9-1",
+   "gloss": "",
+   "ref": "c3:19",
+   "aligned_word": "given"
+  },
+  {
+   "col": "c3",
+   "code": "6-21",
+   "gloss": "",
+   "ref": "c3:20",
+   "aligned_word": "orders"
+  },
+  {
+   "col": "c3",
+   "code": "3-14",
+   "gloss": "few",
+   "ref": "c3:21",
+   "aligned_word": "to"
+  },
+  {
+   "col": "c3",
+   "code": "5-22",
+   "gloss": "",
+   "ref": "c3:22",
+   "aligned_word": "major"
+  },
+  {
+   "col": "c3",
+   "code": "18-1",
+   "gloss": "",
+   "ref": "c3:23",
+   "aligned_word": "general"
+  },
+  {
+   "col": "c3",
+   "code": "4-3",
+   "gloss": "",
+   "ref": "c3:24",
+   "aligned_word": "paterson"
+  },
+  {
+   "col": "c3",
+   "code": "17-22",
+   "gloss": "",
+   "ref": "c3:25",
+   "aligned_word": "who"
+  },
+  {
+   "col": "c3",
+   "code": "17-1",
+   "gloss": "",
+   "ref": "c3:34",
+   "aligned_word": "there"
+  },
+  {
+   "col": "c4",
+   "code": "5-19",
+   "gloss": "",
+   "ref": "c4:1",
+   "aligned_word": "the"
+  },
+  {
+   "col": "c4",
+   "code": "11-3",
+   "gloss": "",
+   "ref": "c4:8",
+   "aligned_word": "country"
+  },
+  {
+   "col": "c4",
+   "code": "10-1",
+   "gloss": "",
+   "ref": "c4:9",
+   "aligned_word": "the"
+  },
+  {
+   "col": "c4",
+   "code": "5-19",
+   "gloss": "",
+   "ref": "c4:10",
+   "aligned_word": "principle"
+  },
+  {
+   "col": "c4",
+   "code": "20-9",
+   "gloss": "",
+   "ref": "c4:11",
+   "aligned_word": "one"
+  },
+  {
+   "col": "c4",
+   "code": "1-2",
+   "gloss": "",
+   "ref": "c4:17",
+   "aligned_word": "major"
+  },
+  {
+   "col": "c4",
+   "code": "12-18",
+   "gloss": "",
+   "ref": "c4:18",
+   "aligned_word": "genl"
+  },
+  {
+   "col": "c4",
+   "code": "17-15",
+   "gloss": "",
+   "ref": "c4:19",
+   "aligned_word": "potter"
+  },
+  {
+   "col": "c4",
+   "code": "5-22",
+   "gloss": "",
+   "ref": "c4:20",
+   "aligned_word": "will"
+  },
+  {
+   "col": "c4",
+   "code": "5-6",
+   "gloss": "",
+   "ref": "c4:28",
+   "aligned_word": "of"
+  },
+  {
+   "col": "c4",
+   "code": "22-19",
+   "gloss": "",
+   "ref": "c4:29",
+   "aligned_word": "four"
+  },
+  {
+   "col": "c4",
+   "code": "9-8",
+   "gloss": "",
+   "ref": "c4:30",
+   "aligned_word": "hundred"
+  },
+  {
+   "col": "c4",
+   "code": "38-3",
+   "gloss": "",
+   "ref": "c4:31",
+   "aligned_word": "continental"
+  },
+  {
+   "col": "c4",
+   "code": "26-12",
+   "gloss": "",
+   "ref": "c4:32",
+   "aligned_word": "troops"
+  },
+  {
+   "col": "c4",
+   "code": "4-19",
+   "gloss": "",
+   "ref": "c4:33",
+   "aligned_word": "and"
+  },
+  {
+   "col": "c4",
+   "code": "5-19",
+   "gloss": "forward",
+   "ref": "c4:34",
+   "aligned_word": "six"
+  },
+  {
+   "col": "c5",
+   "code": "5-22",
+   "gloss": "",
+   "ref": "c5:9",
+   "aligned_word": "and"
+  },
+  {
+   "col": "c5",
+   "code": "26-38",
+   "gloss": "",
+   "ref": "c5:10",
+   "aligned_word": "the"
+  },
+  {
+   "col": "c5",
+   "code": "4-19",
+   "gloss": "there",
+   "ref": "c5:11",
+   "aligned_word": "pensylvania"
+  },
+  {
+   "col": "c5",
+   "code": "3-24",
+   "gloss": "",
+   "ref": "c5:19",
+   "aligned_word": "determined"
+  },
+  {
+   "col": "c5",
+   "code": "8-22",
+   "gloss": "",
+   "ref": "c5:20",
+   "aligned_word": "to"
+  },
+  {
+   "col": "c5",
+   "code": "11-1",
+   "gloss": "",
+   "ref": "c5:21",
+   "aligned_word": "make"
+  },
+  {
+   "col": "c5",
+   "code": "13-1",
+   "gloss": "",
+   "ref": "c5:22",
+   "aligned_word": "two"
+  },
+  {
+   "col": "c5",
+   "code": "3-24",
+   "gloss": "",
+   "ref": "c5:23",
+   "aligned_word": "incursions"
+  },
+  {
+   "col": "c5",
+   "code": "3-12",
+   "gloss": "",
+   "ref": "c5:24",
+   "aligned_word": "into"
+  },
+  {
+   "col": "c5",
+   "code": "6-19",
+   "gloss": "",
+   "ref": "c5:32",
+   "aligned_word": "indian"
+  },
+  {
+   "col": "c5",
+   "code": "2-6",
+   "gloss": "",
+   "ref": "c5:33",
+   "aligned_word": "country"
+  },
+  {
+   "col": "c5",
+   "code": "10-1",
+   "gloss": "",
+   "ref": "c5:34",
+   "aligned_word": "the"
+  },
+  {
+   "col": "c6",
+   "code": "23-1",
+   "gloss": "",
+   "ref": "c6:15",
+   "aligned_word": "six"
+  },
+  {
+   "col": "c6",
+   "code": "1-18",
+   "gloss": "",
+   "ref": "c6:23",
+   "aligned_word": "militia"
+  }
+ ],
+ "word_codes_by_code": {
+  "10-1": [
+   "under",
+   "and",
+   "and",
+   "the",
+   "the"
+  ],
+  "5-19": [
+   "major",
+   "the",
+   "present",
+   "as",
+   "the",
+   "principle",
+   "six"
+  ],
+  "9-16": [
+   "potter"
+  ],
+  "17-17": [
+   "of"
+  ],
+  "12-19": [
+   "troops"
+  ],
+  "56-18": [
+   "six"
+  ],
+  "58-8": [
+   "hundred"
+  ],
+  "14-12": [
+   "militia"
+  ],
+  "26-21": [
+   "volunteers"
+  ],
+  "18-1": [
+   "are",
+   "general"
+  ],
+  "4-19": [
+   "to",
+   "and",
+   "pensylvania"
+  ],
+  "17-1": [
+   "at",
+   "there"
+  ],
+  "6-6": [
+   "fort"
+  ],
+  "13-14": [
+   "near"
+  ],
+  "1-22": [
+   "west"
+  ],
+  "11-3": [
+   "the",
+   "country"
+  ],
+  "33-14": [
+   "expedition"
+  ],
+  "26-3": [
+   "there"
+  ],
+  "3-14": [
+   "is",
+   "nova",
+   "to"
+  ],
+  "2-7": [
+   "a"
+  ],
+  "17-22": [
+   "force",
+   "who"
+  ],
+  "10-3": [
+   "in"
+  ],
+  "4-14": [
+   "scotia"
+  ],
+  "43-19": [
+   "i"
+  ],
+  "35-12": [
+   "have"
+  ],
+  "9-1": [
+   "given"
+  ],
+  "6-21": [
+   "orders"
+  ],
+  "5-22": [
+   "major",
+   "will",
+   "and"
+  ],
+  "4-3": [
+   "paterson"
+  ],
+  "20-9": [
+   "one"
+  ],
+  "1-2": [
+   "major"
+  ],
+  "12-18": [
+   "genl"
+  ],
+  "17-15": [
+   "potter"
+  ],
+  "5-6": [
+   "of"
+  ],
+  "22-19": [
+   "four"
+  ],
+  "9-8": [
+   "hundred"
+  ],
+  "38-3": [
+   "continental"
+  ],
+  "26-12": [
+   "troops"
+  ],
+  "26-38": [
+   "the"
+  ],
+  "3-24": [
+   "determined",
+   "incursions"
+  ],
+  "8-22": [
+   "to"
+  ],
+  "11-1": [
+   "make"
+  ],
+  "13-1": [
+   "two"
+  ],
+  "3-12": [
+   "into"
+  ],
+  "6-19": [
+   "indian"
+  ],
+  "2-6": [
+   "country"
+  ],
+  "23-1": [
+   "six"
+  ],
+  "1-18": [
+   "militia"
+  ]
+ },
+ "mismatches_under_d": [
+  {
+   "cell": "16-19",
+   "at": "c1:19",
+   "want": "w",
+   "page_d": "a",
+   "word": "will",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "16-27",
+   "at": "c1:20",
+   "want": "i",
+   "page_d": "y",
+   "word": "will",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "16-19",
+   "at": "c1:22",
+   "want": "l",
+   "page_d": "a",
+   "word": "will",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-2",
+   "at": "c1:23",
+   "want": "c",
+   "page_d": "a",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-9",
+   "at": "c1:24",
+   "want": "o",
+   "page_d": "s",
+   "word": "consist",
+   "found_at_offset_c": [
+    -2
+   ]
+  },
+  {
+   "cell": "23-9",
+   "at": "c1:25",
+   "want": "n",
+   "page_d": "s",
+   "word": "consist",
+   "found_at_offset_c": [
+    -1
+   ]
+  },
+  {
+   "cell": "23-15",
+   "at": "c1:26",
+   "want": "s",
+   "page_d": "e",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-14",
+   "at": "c1:27",
+   "want": "i",
+   "page_d": "m",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-20",
+   "at": "c1:28",
+   "want": "s",
+   "page_d": "b",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-35",
+   "at": "c1:29",
+   "want": "t",
+   "page_d": "l",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "20-4",
+   "at": "c1:31",
+   "want": "f",
+   "page_d": "d",
+   "word": "four",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "20-3",
+   "at": "c1:32",
+   "want": "o",
+   "page_d": "e",
+   "word": "four",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "20-6",
+   "at": "c1:33",
+   "want": "u",
+   "page_d": "t",
+   "word": "four",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "20-7",
+   "at": "c1:34",
+   "want": "r",
+   "page_d": "e",
+   "word": "four",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-3",
+   "at": "c3:8",
+   "want": "l",
+   "page_d": "n",
+   "word": "large",
+   "found_at_offset_c": [
+    -2
+   ]
+  },
+  {
+   "cell": "29-2",
+   "at": "c3:9",
+   "want": "a",
+   "page_d": "o",
+   "word": "large",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-44",
+   "at": "c3:10",
+   "want": "r",
+   "page_d": "d",
+   "word": "large",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-3",
+   "at": "c3:11",
+   "want": "g",
+   "page_d": "n",
+   "word": "large",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-4",
+   "at": "c3:12",
+   "want": "e",
+   "page_d": "d",
+   "word": "large",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-2",
+   "at": "c3:26",
+   "want": "c",
+   "page_d": "a",
+   "word": "commands",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-9",
+   "at": "c3:27",
+   "want": "o",
+   "page_d": "s",
+   "word": "commands",
+   "found_at_offset_c": [
+    -2
+   ]
+  },
+  {
+   "cell": "23-9",
+   "at": "c3:28",
+   "want": "m",
+   "page_d": "s",
+   "word": "commands",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-15",
+   "at": "c3:29",
+   "want": "m",
+   "page_d": "e",
+   "word": "commands",
+   "found_at_offset_c": [
+    -1
+   ]
+  },
+  {
+   "cell": "23-14",
+   "at": "c3:30",
+   "want": "a",
+   "page_d": "m",
+   "word": "commands",
+   "found_at_offset_c": [
+    2
+   ]
+  },
+  {
+   "cell": "23-20",
+   "at": "c3:31",
+   "want": "n",
+   "page_d": "b",
+   "word": "commands",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-35",
+   "at": "c3:32",
+   "want": "d",
+   "page_d": "l",
+   "word": "commands",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-15",
+   "at": "c3:33",
+   "want": "s",
+   "page_d": "e",
+   "word": "commands",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-6",
+   "at": "c4:3",
+   "want": "n",
+   "page_d": "h",
+   "word": "indian",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-11",
+   "at": "c4:4",
+   "want": "d",
+   "page_d": "f",
+   "word": "indian",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-6",
+   "at": "c4:5",
+   "want": "i",
+   "page_d": "h",
+   "word": "indian",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-5",
+   "at": "c4:6",
+   "want": "a",
+   "page_d": "t",
+   "word": "indian",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-1",
+   "at": "c4:7",
+   "want": "n",
+   "page_d": "w",
+   "word": "indian",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "22-4",
+   "at": "c4:12",
+   "want": "u",
+   "page_d": "g",
+   "word": "under",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "22-14",
+   "at": "c4:13",
+   "want": "n",
+   "page_d": "i",
+   "word": "under",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "22-6",
+   "at": "c4:14",
+   "want": "d",
+   "page_d": "v",
+   "word": "under",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "22-9",
+   "at": "c4:16",
+   "want": "r",
+   "page_d": "n",
+   "word": "under",
+   "found_at_offset_c": [
+    -1,
+    2
+   ]
+  },
+  {
+   "cell": "29-6",
+   "at": "c4:21",
+   "want": "c",
+   "page_d": "n",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-42",
+   "at": "c4:23",
+   "want": "n",
+   "page_d": "?",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-16",
+   "at": "c4:24",
+   "want": "s",
+   "page_d": "?",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-1",
+   "at": "c4:25",
+   "want": "i",
+   "page_d": "l",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-6",
+   "at": "c4:26",
+   "want": "s",
+   "page_d": "n",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-7",
+   "at": "c4:27",
+   "want": "t",
+   "page_d": "?",
+   "word": "consist",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "18-27",
+   "at": "c5:1",
+   "want": "c",
+   "page_d": "p",
+   "word": "congress",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "18-28",
+   "at": "c5:2",
+   "want": "o",
+   "page_d": "a",
+   "word": "congress",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "18-4",
+   "at": "c5:3",
+   "want": "n",
+   "page_d": "t",
+   "word": "congress",
+   "found_at_offset_c": [
+    -2
+   ]
+  },
+  {
+   "cell": "18-6",
+   "at": "c5:4",
+   "want": "g",
+   "page_d": "e",
+   "word": "congress",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "18-13",
+   "at": "c5:6",
+   "want": "e",
+   "page_d": "s",
+   "word": "congress",
+   "found_at_offset_c": [
+    -1
+   ]
+  },
+  {
+   "cell": "18-14",
+   "at": "c5:7",
+   "want": "s",
+   "page_d": "o",
+   "word": "congress",
+   "found_at_offset_c": [
+    -1
+   ]
+  },
+  {
+   "cell": "18-15",
+   "at": "c5:8",
+   "want": "s",
+   "page_d": "n",
+   "word": "congress",
+   "found_at_offset_c": [
+    -2
+   ]
+  },
+  {
+   "cell": "26-11",
+   "at": "c5:12",
+   "want": "a",
+   "page_d": "f",
+   "word": "assembly",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-8",
+   "at": "c5:13",
+   "want": "s",
+   "page_d": "u",
+   "word": "assembly",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-13",
+   "at": "c5:14",
+   "want": "e",
+   "page_d": "r",
+   "word": "assembly",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-9",
+   "at": "c5:15",
+   "want": "m",
+   "page_d": "n",
+   "word": "assembly",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-10",
+   "at": "c5:16",
+   "want": "b",
+   "page_d": "i",
+   "word": "assembly",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-15",
+   "at": "c5:17",
+   "want": "l",
+   "page_d": "s",
+   "word": "assembly",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "26-6",
+   "at": "c5:18",
+   "want": "y",
+   "page_d": "h",
+   "word": "assembly",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-26",
+   "at": "c6:1",
+   "want": "t",
+   "page_d": "i",
+   "word": "troops",
+   "found_at_offset_c": [
+    1
+   ]
+  },
+  {
+   "cell": "23-7",
+   "at": "c6:2",
+   "want": "r",
+   "page_d": "o",
+   "word": "troops",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-9",
+   "at": "c6:3",
+   "want": "o",
+   "page_d": "s",
+   "word": "troops",
+   "found_at_offset_c": [
+    -2
+   ]
+  },
+  {
+   "cell": "23-11",
+   "at": "c6:4",
+   "want": "o",
+   "page_d": "t",
+   "word": "troops",
+   "found_at_offset_c": [
+    2
+   ]
+  },
+  {
+   "cell": "23-7",
+   "at": "c6:5",
+   "want": "p",
+   "page_d": "o",
+   "word": "troops",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "23-8",
+   "at": "c6:6",
+   "want": "s",
+   "page_d": "n",
+   "word": "troops",
+   "found_at_offset_c": [
+    -2,
+    1
+   ]
+  },
+  {
+   "cell": "29-17",
+   "at": "c6:16",
+   "want": "h",
+   "page_d": "?",
+   "word": "hundred",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-6",
+   "at": "c6:17",
+   "want": "u",
+   "page_d": "n",
+   "word": "hundred",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "29-44",
+   "at": "c6:18",
+   "want": "n",
+   "page_d": "d",
+   "word": "hundred",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "20-32",
+   "at": "c6:19",
+   "want": "d",
+   "page_d": "y",
+   "word": "hundred",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "20-9",
+   "at": "c6:20",
+   "want": "r",
+   "page_d": "o",
+   "word": "hundred",
+   "found_at_offset_c": []
+  },
+  {
+   "cell": "20-15",
+   "at": "c6:21",
+   "want": "e",
+   "page_d": "r",
+   "word": "hundred",
+   "found_at_offset_c": [
+    -2
+   ]
+  },
+  {
+   "cell": "20-36",
+   "at": "c6:22",
+   "want": "d",
+   "page_d": "k",
+   "word": "hundred",
+   "found_at_offset_c": []
+  }
+ ],
+ "pairs_apart_count_differs": [
+  {
+   "col": "c1",
+   "decipherment_word": "one",
+   "cells": [
+    "16-31",
+    "16-32",
+    "16-15",
+    "16-40",
+    "16-20",
+    "16-3",
+    "16-35",
+    "16-35"
+   ],
+   "page_letters_d": "congress"
+  },
+  {
+   "col": "c1",
+   "decipherment_word": "genl",
+   "cells": [
+    "16-34",
+    "16-3",
+    "16-15",
+    "16-35",
+    "16-27",
+    "16-8"
+   ],
+   "page_letters_d": "pensyl"
+  },
+  {
+   "col": "c5",
+   "decipherment_word": "the",
+   "cells": [
+    "26-22",
+    "26-23",
+    "26-8",
+    "26-8",
+    "26-2",
+    "26-13",
+    "26-7"
+   ],
+   "page_letters_d": "reuuire"
+  },
+  {
+   "col": "c6",
+   "decipherment_word": "and",
+   "cells": [
+    "24-13",
+    "24-12",
+    "24-31",
+    "24-22",
+    "24-10",
+    "24-13",
+    "24-10",
+    "24-16"
+   ],
+   "page_letters_d": "re?airin"
+  }
+ ],
+ "unpaired_inside_span": []
+}

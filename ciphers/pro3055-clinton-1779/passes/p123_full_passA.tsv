@@ -1,0 +1,205 @@
+crop	row	mark	cell	underline	gloss	conf	note
+p123_c1_top	1		3-4	y		h	heading 1 above
+p123_c1_top	2	x	16-31	n		h	
+p123_c1_top	3		-32	n		h	
+p123_c1_top	4		-15	n		h	
+p123_c1_top	5		-40	n		h	
+p123_c1_top	6		-20	n		h	
+p123_c1_top	7		-3	n		h	
+p123_c1_top	8		-35	n		h	
+p123_c1_top	9		-35	y		h	
+p123_c1_top	10		10-1	n		h	
+p123_c1_top	11		5-19	n		h	
+p123_c1_top	12	x	16-34	n		h	
+p123_c1_top	13		-3	n		h	
+p123_c1_top	14		-15	n		h	
+p123_c1_top	15		-35	n		h	
+p123_c1_top	16		-27	n		h	
+p123_c1_top	17		-8	n		h	
+p123_c1_bot	1		-8	n		h	
+p123_c1_bot	2		9-16	n		h	
+p123_c1_bot	3		-19	n		h	
+p123_c1_bot	4		-27	n		h	
+p123_c1_bot	5		-24	n		h	
+p123_c1_bot	6		-19	y		h	
+p123_c1_bot	7	x	23-2	n		h	
+p123_c1_bot	8		-9	n		h	
+p123_c1_bot	9		-9	n		h	
+p123_c1_bot	10		-15	n		h	
+p123_c1_bot	11		-14	n		h	
+p123_c1_bot	12		-20	n		h	
+p123_c1_bot	13		-35	n		h	
+p123_c1_bot	14		14-17	y		l	or 17-17
+p123_c1_bot	15	x	20-4	n		h	
+p123_c1_bot	16		-3	n		h	
+p123_c1_bot	17		-6	n		h	
+p123_c1_bot	18		-7	n		h	
+p123_c2_top	1		12-19	n		h	heading 2 above
+p123_c2_top	2		10-1	n		h	
+p123_c2_top	3		56-18	n		h	
+p123_c2_top	4		58-8	n		h	
+p123_c2_top	5		14-12	n		h	
+p123_c2_top	6		10-1	n		h	
+p123_c2_top	7		26-21	n		h	
+p123_c2_top	8		18-1	n		h	
+p123_c2_top	9		4-19	n		h	
+p123_c2_top	10	x	23-2	n		h	
+p123_c2_top	11		-9	n		h	
+p123_c2_top	12		-9	n		h	
+p123_c2_top	13		-15	n		h	
+p123_c2_top	14		-14	n		h	
+p123_c2_top	15		-20	n		h	
+p123_c2_top	16		-35	n		h	
+p123_c2_top	17		-15	y		h	
+p123_c2_bot	1		-15	y		h	
+p123_c2_bot	2		17-1	n		h	
+p123_c2_bot	3		6-6t	n		l	second figure has small raised t; maybe 6-6
+p123_c2_bot	4	x	18-7	n		h	
+p123_c2_bot	5		-17	n		l	or -14
+p123_c2_bot	6		-21	n		h	
+p123_c2_bot	7		-13	n		h	
+p123_c2_bot	8		-12	n		h	
+p123_c2_bot	9		-29	y		h	
+p123_c2_bot	10		13-14	n		h	
+p123_c2_bot	11		5-19	n		h	
+p123_c2_bot	12		1-22	n		h	
+p123_c2_bot	13	x	23-20	n		h	
+p123_c2_bot	14		-21	n		h	
+p123_c2_bot	15		-19	n		h	
+p123_c2_bot	16		-17	n		l	or -14
+p123_c2_bot	17		-41	n		h	
+p123_c2_bot	18		-28	y		h	
+p123_c3_top	1		11-3	y		h	heading 3 above; double underline
+p123_c3_top	2		5-19	n		h	
+p123_c3_top	3		33-14	n		h	
+p123_c3_top	4		5-19	n	under	h	
+p123_c3_top	5		26-3	n		h	
+p123_c3_top	6		3-14	n		h	
+p123_c3_top	7		2-7	n		l	or 2-4
+p123_c3_top	8	x	29-3	n		h	
+p123_c3_top	9		-2	n		h	
+p123_c3_top	10		-44	n		h	
+p123_c3_top	11		-3	n		h	
+p123_c3_top	12		-4	y		h	
+p123_c3_top	13		17-22	n		h	
+p123_c3_top	14		10-3	n		l	or 10-8
+p123_c3_top	15		3-14	n		h	
+p123_c3_top	16		4-14	n		h	
+p123_c3_top	17		43-19	n		h	
+p123_c3_bot	1		43-19	n		h	
+p123_c3_bot	2		35-12	n		l	right edge cut off, possibly 35-121
+p123_c3_bot	3		9-1	n		h	
+p123_c3_bot	4		6-21	n		h	
+p123_c3_bot	5		3-14	n	few	h	
+p123_c3_bot	6		5-22	n		h	
+p123_c3_bot	7		18-1	n		h	
+p123_c3_bot	8		4-3	n		h	
+p123_c3_bot	9		17-22	n		h	
+p123_c3_bot	10	x	23-2	n		h	
+p123_c3_bot	11		-9	n		h	
+p123_c3_bot	12		-9	n		h	
+p123_c3_bot	13		-15	n		h	
+p123_c3_bot	14		-14	n		h	
+p123_c3_bot	15		-20	n		h	
+p123_c3_bot	16		-35	n		h	
+p123_c3_bot	17		-15	y		h	
+p123_c3_bot	18		17-1	n		l	at bottom edge, partly cut
+p123_c4_top	1		5-19	n		h	heading 4 above
+p123_c4_top	2	x	26-2	n		l	mark looks like a check/v
+p123_c4_top	3		-6	n		h	
+p123_c4_top	4		-11	n		h	
+p123_c4_top	5		-6	n		h	
+p123_c4_top	6		-5	n		h	
+p123_c4_top	7		-1	y		h	
+p123_c4_top	8		11-3	n		h	
+p123_c4_top	9		10-1	n		h	
+p123_c4_top	10		5-19	n		h	
+p123_c4_top	11		20-9	n		h	
+p123_c4_top	12	x	22-4	n		h	
+p123_c4_top	13		-14	n		h	
+p123_c4_top	14		-6	n		h	
+p123_c4_top	15		-7	n		h	
+p123_c4_top	16		-9	y		h	
+p123_c4_top	17		1-2	n		h	
+p123_c4_top	18		12-18	n		l	bottom edge partly cut
+p123_c4_bot	1		1-2	n		h	
+p123_c4_bot	2	x	12-18	n		l	mark uncertain
+p123_c4_bot	3		17-15	y		h	
+p123_c4_bot	4		5-22	n		h	
+p123_c4_bot	5	x	29-6	n	have	h	
+p123_c4_bot	6		-22	n		h	
+p123_c4_bot	7		-42	n		h	
+p123_c4_bot	8		-16	n		h	
+p123_c4_bot	9		-1	n		h	
+p123_c4_bot	10		-6	n		h	
+p123_c4_bot	11		-7	y		h	
+p123_c4_bot	12		5-6	n		h	
+p123_c4_bot	13		22-19	n		h	
+p123_c4_bot	14		9-8	n		h	
+p123_c4_bot	15		38-3	n		h	
+p123_c4_bot	16		26-12	n		h	
+p123_c4_bot	17		4-19	n		h	
+p123_c4_bot	18		5-19	n	forward	h	
+p123_c5_top	1	x	18-27	n		h	heading 5 above
+p123_c5_top	2		-28	n		h	
+p123_c5_top	3		-4	n		h	
+p123_c5_top	4		-6	n		h	
+p123_c5_top	5		-9	n		h	
+p123_c5_top	6		-13	n		h	
+p123_c5_top	7		-14	n		h	
+p123_c5_top	8		-15	y		h	
+p123_c5_top	9		5-22	n		h	
+p123_c5_top	10		26-38	n		l	or 26-30
+p123_c5_top	11		4-19	n	there	h	
+p123_c5_top	12	+	26-11	n		h	
+p123_c5_top	13		-8	n		h	
+p123_c5_top	14		-13	n		h	
+p123_c5_top	15		-9	n		h	
+p123_c5_top	16		-10	n		h	
+p123_c5_top	17		-15	n		h	
+p123_c5_top	18		-6	n		h	
+p123_c5_bot	1		-15	n		h	
+p123_c5_bot	2		-6	y		h	
+p123_c5_bot	3		3-24	n		h	
+p123_c5_bot	4		8-22	n		h	
+p123_c5_bot	5		11-1	n		h	
+p123_c5_bot	6		13-1	n		h	
+p123_c5_bot	7		3-24	n		h	
+p123_c5_bot	8		3-12	n		h	
+p123_c5_bot	9	x	26-22	n		h	partial English words at right edge, cut
+p123_c5_bot	10		-23	n		h	
+p123_c5_bot	11		-8	n		h	
+p123_c5_bot	12		-8	n		h	
+p123_c5_bot	13		-2	n		h	
+p123_c5_bot	14		-13	n		l	looks overwritten; or -12
+p123_c5_bot	15		-7	y		h	double underline
+p123_c5_bot	16		6-19	n		h	
+p123_c5_bot	17		2-6	n		h	
+p123_c5_bot	18		10-1	n		h	
+p123_c6_top	1	x	23-26	n		h	heading 6 above
+p123_c6_top	2		-7	n		h	
+p123_c6_top	3		-9	n		h	
+p123_c6_top	4		-11	n		h	
+p123_c6_top	5		-7	n		h	
+p123_c6_top	6		-8	y		h	
+p123_c6_top	7	x	24-13	n		h	
+p123_c6_top	8		-12	n		h	
+p123_c6_top	9		-31	n		h	
+p123_c6_top	10		-22	n		h	
+p123_c6_top	11		-10	n		h	
+p123_c6_top	12		-13	n		h	
+p123_c6_top	13		-10	n		h	
+p123_c6_top	14		-16	n		h	
+p123_c6_top	15		23-1	y		h	double underline
+p123_c6_top	16	x	29-17	n		h	
+p123_c6_top	17		-6	n		h	
+p123_c6_top	18		-44	n		h	
+p123_c6_bot	1		-6	n		l	top edge cut
+p123_c6_bot	2		-44	y		h	
+p123_c6_bot	3	x	20-32	n		h	
+p123_c6_bot	4		-9	n		h	
+p123_c6_bot	5		-15	n		h	
+p123_c6_bot	6		-36	y		l	ink blot over figures
+p123_c6_bot	7		1-18	n		h	
+p123_c6_bot	8		25	y		h	single number, no dash; double underline; English words below in order: the L'Aigle / of 44 Guns / Capt. Latouche / a valuable / Ship of 20 / guns with / bale goods / from France / were lately / taken in
+p123_c6_bot	9		-15	n		l	bottom right beside words 'following.'

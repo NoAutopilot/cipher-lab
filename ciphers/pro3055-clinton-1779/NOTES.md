@@ -1550,11 +1550,49 @@ touched.
 Requests: image-uab.canadiana.ca 2 (Image 1029 at 1400 px and full/max, browser UA + Referer, HTTP 200, > 1.6 s apart). Vision calls:
 1 blind Sonnet read (three strips, one page) + the worker's look at the 1400 px layout copy and the three strips. Status unchanged: partial.
 
+## D4-CLIN (8 Oct 2026, account 4): the whole B.148 p.123 cipher page transcribed; both pre-registered gates FAIL, the decoded runs read the p.102 text
+
+Run 08:44-08:52 UTC 8 Oct 2026 (date -u), worker D4-CLIN for LANE DEFAULT-account-4-20261008-0740. Pre-registered in PREREG_D4-CLIN.md
+(pushed 94ed51265 before any score; addendum B pushed 90900a4a2 after the first gate failed, before B2 was computed).
+
+**Transcription.** Image 1205 full/max (5512x4056, scratchpad, not committed). `python3 tools/iiif_lines.py --image img1205.jpg
+--region 2300,700,1850,3100 --out lines` -> "0 lines, 0 bands ... wrote 0 crops" (figure columns, as on pp.120, 382-384), so the six
+columns were cut by `SHEAR=0.012 PAD=0 python3 passes/cut_2380_p121_122.py IMGDIR OUT 1205` (box for 1205 added; the crops are
+autocontrasted one by one, white ink on grey as filmed). Two blind Sonnet passes (passes/p123_full_passA.tsv, _passB.tsv; one call
+each, the page only) agree on 187 of 192 cells after removing the top/bottom overlap rows; the worker settled 2 of the 5 splits on
+zoomed crops (c1 17-17, c2 6-6 with a raised t) and left 3 at M (c2 two cells -17/-14, c3 2-7/2-4): passes/p123_full_reconciled.tsv,
+123 letter cells, 69 word-code cells (48 distinct codes; 5-19 x7, 10-1 x5), 1 head (3-4), the plain numeral "25" and the clear words.
+The opening 22 cells of column 1 agree with p123_cells.tsv (Tomokiyo + GAPS6) except that both passes see no x on 9-16.
+
+**Registered check (passes/check_p123_full.py, `--check` OK): FAIL.** Length-only column alignment, 92 compared cells: (b) 22/92 =
+0.239 against the 0.80 gate (control max 13, mean 5.5). The alignment did not discriminate: the runner-up end ties the best in 3 of 6
+columns and column 1 was placed at "one under major", not at "Congress". This tests the alignment design, not the key.
+**Addendum B2 (the brief's design: decode on the 1778 key, page-permuted key control): FAIL on share, 9/17 runs of >= 3 cells =
+0.529 against 0.60; hits 9 against a control max of 1 (mean 0.03, 1000 seeds).** Decoded runs in page order: c1 congress / pensyl /
+ayla / assembl / dete; c2 assemble; c3 no?nd / assemble; c4 ihfhtw / given / n???ln?; c5 paterson / furnish / reuuire; c6 ioston /
+re?airin / ?n?york. The misses are one cell off a decipherment word ("require", "Boston", "repairing", "New York") or split by a full
+pair without x that the registered rule counts as a word code (9-16 inside "Pensylvania", 17-17 at the end of "assembly"). Read
+against p.102, the six columns are separate runs of the letter (c1 opens "Congress and the Pensylvania assembly determined", c4-c5
+reach "I have given Orders to Major General Paterson ... furnish you with any Assistance You may require", c6 reaches "at Boston -
+repairing New York - Sept 25" and then the clear "The L'Aigle ... lately taken in"), as the page's foot note ("Each column is
+continued on the page following") says; that ordering is read off the decoded runs, not tested by a gate.
+**Not shown:** a full cell-by-cell agreement figure for p.123 -- both registered designs failed their gates, so no PASS is claimed and the
+1778 key's confirmation stays as GAPS7 (32 opening pairs) plus this page's 9/17 decoded runs against a control max of 1.
+**Word codes (not gated):** five interlinear glosses sit on the page: "under" and "forward" both over a 5-19 per both passes, "few" over
+3-14, "have" over x29-6, "there" over 4-19, and a raised "t" on 6-6. 5-19 reads "the" in column 1 (Congress and the Pensylvania), so
+which cell a gloss belongs to (the one below or above) is not settled from the crops; no code meaning is claimed from them (grade M).
+Grades: cells H 189, M 3 (transcription); decoded letters S only inside the 9 hit runs (key-read, control-backed), the rest uncounted.
+No reading of the letter changes (its text is read at H from p.102, GAPS7); AUDIT.md not touched. Requests: image-uab.canadiana.ca 1
+(Image 1205 full/max, browser UA + Referer). Vision calls: 2 blind Sonnet passes + 2 worker looks (column montage, one reconciliation
+strip). Next on this item if wanted: re-gate with the class rule fixed (a full pair inside an un-underlined letter run is a letter
+cell) and an anchored per-column alignment (start at the decoded run), pre-registered, ~$1.5, no new vision; p.124 (the continuation)
+not fetched.
+
 ## Remaining gaps (R15-CLINGAP refresh, 6 Oct 2026)
 Refresh only, 17:2x UTC 6 Oct 2026 (worker R15-CLINGAP, LANE RUN15, account 2): each gap restated from the dated sections GAPS-GAPS12, A2P4-CLINT, R10-CLIN3868/3868B, R10-CLINV/CLINV2, R11-CLIN2380/B/C, R11-CLINV3-5 and R12-CLINVHS; no new reading, no request made. The 1 Oct 2026 section above is superseded.
 Read so far: 20 of 20 items text-known or read at grade H/C -- the 12 named items (3689, 3753, 3784, 3803, 3813 at C from Stevens 1888; 6009, 6012 clear and printed; 2894, 3868, 2380 period decipherments read at H, N0 in AUDIT.md; 3853's f.381 decipherment printed 1920 vol. III doc 260; 4833 and its 22 June 1782 enclosure printed VHS Collections II pp.280-282) and the 8 Discovery siblings (2962, 3004, 4152 printed 1920 vol. III; 3502, 3537, 4216 printed VHS II; 3050, 3077 read at H from B.147 pp.245-246, N0) plus the 26 Oct 1782 note (Carleton 25 Sept 1782, p.102 read at H, GAPS7). Cipher side checked cell by cell on the 1778 Army List key: 2894 all 315 pairs (GAPS2), 3868 all four pages (GAPS8 cols 1-2 + R10: p.382 cols 3-6 97/100, pp.383-384 526/535), 2380 all three pages pp.120-122 (GAPS9 + R11: 224/258, 406/420, 244/254 after the R11-CLINV5/R12 bar fix); partly: 3050/3077 (118/118 opening cells, GAPS12) and the 25 Sept 1782 p.123 copy (32 opening pairs, GAPS7). Witness conflicts (Digby/Darby; the 650 Recruits clause, "I am", move/movements, Chesapeak) are recorded per witness (R10-CLINV, R12-CLINVHS), not gaps. What is left is cipher-side checking. D1A-CLIN (8 Oct 2026) closed the 3853 f.381 gap: the period decipherment (B.147 p.381, Image 1029) carries "give up", "all your Trouble and pains" and "25 Sail" as the cipher and its glosses do; the 1920 print (as OCR'd) drops "up" and "and pains" and reads "28".
 - Reel ciphers of the other text-known siblings not checked: 2962, 3004, 3502 (Image 945), 3537 (Image 958), 4152, 4216 (Image 1090), and the rest of 3050/3077 (p.242 cols 4-6, pp.243-244, p.247 cols 3-8) - blocker: not-attempted; key-consistency checks on items whose text is printed or read at H, low value (GAPS11, GAPS12); next: per page, frame fetch + one blind pass + reconciliation, ~$3-4.5 a page (the 3853 step is done, D1A-CLIN 8 Oct 2026)
-- Rest of the 25 Sept 1782 p.123 cipher (Image 1205, on disk as images/h1649/img1205_w1600.jpg; only 32 opening pairs checked, GAPS6/GAPS7) - blocker: not-attempted; text read at H from p.102 (218 words), a key check only; it may show the 1782 word-code elements Tomokiyo left blank; next: column crops from the native frame, PREREG, one blind pass + reconciliation, ~$3.5
+- Rest of the 25 Sept 1782 p.123 cipher (Image 1205): transcribed in full by D4-CLIN (8 Oct 2026, 192 cells, two blind passes, p123_full_reconciled.tsv), but both pre-registered gates FAIL (length-only alignment 22/92; decode-run share 9/17 = 0.53 < 0.60, hits 9 vs permuted-key control max 1), so the whole-page key match is not shown - blocker: not-attempted; text read at H from p.102, a key check only; next: re-gate with the full-pair-in-a-run class rule and an anchored per-column alignment, pre-registered, ~$1.5, no new vision
 - Cipher of the 22 June 1782 letter enclosed in 4833 (Haldimand to Carleton No. 1) - blocker: needs-physical-access; the reel copy B.148 pp.39-40 (Images 1115-1116) is clear, headed "In Cypher" (GAPS10), so the enciphered copy exists only at Kew (PRO 30/55, Discovery digitised=false) or C.O. 5/106 p.361; text known (VHS II pp.280-282), a key check only
 - Kew-side physical copies (Clinton's retained copies of 2380 incl. its duplicate, 2894, 3868; PRO decipherments "Vol.11 Nos.117/190"; Am. & W.I. 142 fo.150, 145 fo.87) - blocker: needs-physical-access; Discovery C16266110 digitised=false (1 Oct 2026), no image route; every one of these letters is already read from the recipient-side reel, so this matters only for a token-level Kew-copy comparison (REQUEST.md for a TNA copy order would be a person step, ~$1 to draft)
 
@@ -1566,4 +1604,4 @@ Read so far: 20 of 20 items text-known or read at grade H/C -- the 12 named item
 - [n/a] key-rebuild: no key is being extended; the 1778 key reads every checked cell, and the 1782 word-code blanks matter only for the p.123 rest and the Kew 4833 cipher
 - [x] image-check: frames confirmed on the images (Image 759 = p.121, 889/890 = B.147 pp.245/246, 1205 = B.148 p.123, 1115-1116 = B.148 pp.39-40); every key-failing cell in R10/R11 re-read on zoomed crops; Brymner's foliation matches the reel (AX-HMC2, R11-CLIN2380B)
 - [ ] retry: the remaining cipher pages above are not yet passed; the 3853 cipher is fully passed (R15-CLIN3853 p.406 PASS 191/197; R15-CLIN407 p.407 PASS 189/197, control max 28 each; p.407 carries "and pains" beyond the 1920 print); the f.381 decipherment line read (D1A-CLIN, 8 Oct 2026: it carries "and pains", "give up" and "25"); the 3537 print check ran (R15-CLIN3537, PASS)
-Verdict: keep going: 2 internal gaps (D1A-CLIN, 8 Oct 2026: the f.381 period decipherment, B.147 p.381 Image 1029, carries "give up", "all your Trouble and pains" and "25 Sail" as the 3853 cipher and its glosses do; the omissions and "28" are in the 1920 print as OCR'd, not in the period decipherment); cheapest next: the rest of the p.123 cipher, ~$3.5, or the sibling cipher pages, ~$3-4.5 a page; 2 gaps blocked outside (needs-physical-access, Kew/C.O. 5)
+Verdict: keep going: 2 internal gaps (D4-CLIN, 8 Oct 2026: p.123 transcribed in full, both registered gates FAIL, decoded runs 9/17 vs control max 1; cheapest next: the p.123 re-gate, ~$1.5. D1A-CLIN, 8 Oct 2026: the f.381 period decipherment, B.147 p.381 Image 1029, carries "give up", "all your Trouble and pains" and "25 Sail" as the 3853 cipher and its glosses do; the omissions and "28" are in the 1920 print as OCR'd, not in the period decipherment); cheapest next: the rest of the p.123 cipher, ~$3.5, or the sibling cipher pages, ~$3-4.5 a page; 2 gaps blocked outside (needs-physical-access, Kew/C.O. 5)

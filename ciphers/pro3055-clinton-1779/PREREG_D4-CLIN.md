@@ -27,7 +27,7 @@ Word codes, reported apart (not gated): each code with the decipherment word it 
 period interlinear gloss on the page ("under", "few", "have", "there", "forward" seen on the layout look) against that word.
 Scope stop: p.124 (the continuation) is not fetched in this job.
 
-## Addendum B (8 Oct 2026, 09:0x UTC, after the registered alignment check above was run and FAILed; written before this one is run)
+## Addendum B (8 Oct 2026, 08:51 UTC by date -u, after the registered alignment check above was run and FAILed; written before this one is run)
 Why: the registered length-only alignment did not discriminate (check_p123_full.json: runner-up end score ties the best in
 3 of 6 columns; column 1 placed at "one under major" though GAPS7 anchored its cells at "Congress"), so its FAIL tests the
 alignment, not the key. The job brief named a different design, run here as statistic B2 (no alignment, no letters chosen):

@@ -1,0 +1,200 @@
+# D4-CLIN (8 Oct 2026): B.148 p.123 (H-1649 Image 1205) cipher cells, all six columns. passA/passB = two blind Sonnet passes on the
+# column-half crops (cut_2380_p121_122.py, SHEAR=0.012 PAD=0; top/bottom overlap rows removed); entry = after the worker's look at the
+# 5 A/B disagreements on zoomed crops. kind from the page only (PREREG_D4-CLIN.md): x/+ L-P or -P = letter; full pair without x = word;
+# column 1's 3-4 = head; the plain numeral 25 = clear; the -15 after the foot line "Each column is continued on the page following" = skip.
+col	idx	kind	entry	underline	gloss	grade	passA	passB	note
+c1	1	head	3-4	y		H	3-4	3-4	heading 1 above
+c1	2	letter	x16-31	n		H	x16-31	x16-31	
+c1	3	letter	-32	n		H	-32	-32	
+c1	4	letter	-15	n		H	-15	-15	
+c1	5	letter	-40	n		H	-40	-40	
+c1	6	letter	-20	n		H	-20	-20	
+c1	7	letter	-3	n		H	-3	-3	
+c1	8	letter	-35	n		H	-35	-35	
+c1	9	letter	-35	y		H	-35	-35	
+c1	10	word	10-1	n		H	10-1	10-1	
+c1	11	word	5-19	n		H	5-19	5-19	
+c1	12	letter	x16-34	n		H	x16-34	x16-34	
+c1	13	letter	-3	n		H	-3	-3	
+c1	14	letter	-15	n		H	-15	-15	
+c1	15	letter	-35	n		H	-35	-35	
+c1	16	letter	-27	n		H	-27	-27	
+c1	17	letter	-8	n		H	-8	-8	
+c1	18	word	9-16	n		H	9-16	9-16	
+c1	19	letter	-19	n		H	-19	-19	
+c1	20	letter	-27	n		H	-27	-27	
+c1	21	letter	-24	n		H	-24	-24	
+c1	22	letter	-19	y		H	-19	-19	
+c1	23	letter	x23-2	n		H	x23-2	x23-2	
+c1	24	letter	-9	n		H	-9	-9	
+c1	25	letter	-9	n		H	-9	-9	
+c1	26	letter	-15	n		H	-15	-15	
+c1	27	letter	-14	n		H	-14	-14	
+c1	28	letter	-20	n		H	-20	-20	
+c1	29	letter	-35	n		H	-35	-35	
+c1	30	word	17-17	y		H	14-17	17-17	A 14-17 / B 17-17; the crop shows the same two figures twice: 17-17
+c1	31	letter	x20-4	n		H	x20-4	x20-4	
+c1	32	letter	-3	n		H	-3	-3	
+c1	33	letter	-6	n		H	-6	-6	
+c1	34	letter	-7	n		H	-7	-7	
+c2	1	word	12-19	n		H	12-19	12-19	heading 2 above
+c2	2	word	10-1	n		H	10-1	10-1	
+c2	3	word	56-18	n		H	56-18	56-18	
+c2	4	word	58-8	n		H	58-8	58-8	
+c2	5	word	14-12	n		H	14-12	14-12	
+c2	6	word	10-1	n		H	10-1	10-1	
+c2	7	word	26-21	n		H	26-21	26-21	
+c2	8	word	18-1	n		H	18-1	18-1	
+c2	9	word	4-19	n		H	4-19	4-19	
+c2	10	letter	x23-2	n		H	x23-2	x23-2	
+c2	11	letter	-9	n		H	-9	-9	
+c2	12	letter	-9	n		H	-9	-9	
+c2	13	letter	-15	n		H	-15	-15	
+c2	14	letter	-14	n		H	-14	-14	
+c2	15	letter	-20	n		H	-20	-20	
+c2	16	letter	-35	n		H	-35	-35	
+c2	17	letter	-15	y		H	-15	-15	
+c2	18	word	17-1	n		H	17-1	17-1	
+c2	19	word	6-6	n	^t	H	6-6t	6-6	A 6-6t / B 6-6; a raised t after the second 6 on the crop (kept in gloss as ^t)
+c2	20	letter	x18-7	n		H	x18-7	x18-7	
+c2	21	letter	-17	n		M	-17	-14	A -17 / B -14; the crop does not settle 7 vs 4 in this hand
+c2	22	letter	-21	n		H	-21	-21	
+c2	23	letter	-13	n		H	-13	-13	
+c2	24	letter	-12	n		H	-12	-12	
+c2	25	letter	-29	y		H	-29	-29	
+c2	26	word	13-14	n		H	13-14	13-14	
+c2	27	word	5-19	n		H	5-19	5-19	
+c2	28	word	1-22	n		H	1-22	1-22	
+c2	29	letter	x23-20	n		H	x23-20	x23-20	
+c2	30	letter	-21	n		H	-21	-21	
+c2	31	letter	-19	n		H	-19	-19	
+c2	32	letter	-17	n		M	-17	-14	A -17 / B -14; the crop does not settle 7 vs 4 in this hand
+c2	33	letter	-41	n		H	-41	-41	
+c2	34	letter	-28	y		H	-28	-28	
+c3	1	word	11-3	y		H	11-3	11-3	heading 3 above; double underline; double underline
+c3	2	word	5-19	n		H	5-19	5-19	
+c3	3	word	33-14	n		H	33-14	33-14	
+c3	4	word	5-19	n	under	H	5-19	5-19	
+c3	5	word	26-3	n		H	26-3	26-3	
+c3	6	word	3-14	n		H	3-14	3-14	
+c3	7	word	2-7	n		M	2-7	2-4	A 2-7 / B 2-4; unsettled on the crop
+c3	8	letter	x29-3	n		H	x29-3	x29-3	
+c3	9	letter	-2	n		H	-2	-2	
+c3	10	letter	-44	n		H	-44	-44	
+c3	11	letter	-3	n		H	-3	-3	
+c3	12	letter	-4	y		H	-4	-4	
+c3	13	word	17-22	n		H	17-22	17-22	
+c3	14	word	10-3	n		H	10-3	10-3	or 10-8
+c3	15	word	3-14	n		H	3-14	3-14	
+c3	16	word	4-14	n		H	4-14	4-14	
+c3	17	word	43-19	n		H	43-19	43-19	
+c3	18	word	35-12	n		H	35-12	35-12	right edge cut off, possibly 35-121; cut at bottom edge
+c3	19	word	9-1	n		H	9-1	9-1	
+c3	20	word	6-21	n		H	6-21	6-21	
+c3	21	word	3-14	n	few	H	3-14	3-14	
+c3	22	word	5-22	n		H	5-22	5-22	
+c3	23	word	18-1	n		H	18-1	18-1	
+c3	24	word	4-3	n		H	4-3	4-3	
+c3	25	word	17-22	n		H	17-22	17-22	
+c3	26	letter	x23-2	n		H	x23-2	x23-2	
+c3	27	letter	-9	n		H	-9	-9	
+c3	28	letter	-9	n		H	-9	-9	
+c3	29	letter	-15	n		H	-15	-15	
+c3	30	letter	-14	n		H	-14	-14	
+c3	31	letter	-20	n		H	-20	-20	
+c3	32	letter	-35	n		H	-35	-35	
+c3	33	letter	-15	y		H	-15	-15	
+c3	34	word	17-1	n		H	17-1	17-1	at bottom edge, partly cut
+c4	1	word	5-19	n		H	5-19	5-19	heading 4 above
+c4	2	letter	x26-2	n		H	x26-2	x26-2	mark looks like a check/v; mark looks like v tick
+c4	3	letter	-6	n		H	-6	-6	
+c4	4	letter	-11	n		H	-11	-11	
+c4	5	letter	-6	n		H	-6	-6	
+c4	6	letter	-5	n		H	-5	-5	
+c4	7	letter	-1	y		H	-1	-1	
+c4	8	word	11-3	n		H	11-3	11-3	
+c4	9	word	10-1	n		H	10-1	10-1	
+c4	10	word	5-19	n		H	5-19	5-19	
+c4	11	word	20-9	n		H	20-9	20-9	
+c4	12	letter	x22-4	n		H	x22-4	x22-4	
+c4	13	letter	-14	n		H	-14	-14	
+c4	14	letter	-6	n		H	-6	-6	
+c4	15	letter	-7	n		H	-7	-7	
+c4	16	letter	-9	y		H	-9	-9	
+c4	17	word	1-2	n		H	1-2	1-2	
+c4	18	word	12-18	n		H	12-18	12-18	bottom edge partly cut
+c4	19	word	17-15	y		H	17-15	17-15	
+c4	20	word	5-22	n		H	5-22	5-22	
+c4	21	letter	x29-6	n	have	H	x29-6	x29-6	
+c4	22	letter	-22	n		H	-22	-22	
+c4	23	letter	-42	n		H	-42	-42	
+c4	24	letter	-16	n		H	-16	-16	
+c4	25	letter	-1	n		H	-1	-1	
+c4	26	letter	-6	n		H	-6	-6	
+c4	27	letter	-7	y		H	-7	-7	
+c4	28	word	5-6	n		H	5-6	5-6	
+c4	29	word	22-19	n		H	22-19	22-19	
+c4	30	word	9-8	n		H	9-8	9-8	
+c4	31	word	38-3	n		H	38-3	38-3	
+c4	32	word	26-12	n		H	26-12	26-12	
+c4	33	word	4-19	n		H	4-19	4-19	
+c4	34	word	5-19	n	forward	H	5-19	5-19	
+c5	1	letter	x18-27	n		H	x18-27	x18-27	heading 5 above
+c5	2	letter	-28	n		H	-28	-28	
+c5	3	letter	-4	n		H	-4	-4	
+c5	4	letter	-6	n		H	-6	-6	
+c5	5	letter	-9	n		H	-9	-9	
+c5	6	letter	-13	n		H	-13	-13	
+c5	7	letter	-14	n		H	-14	-14	
+c5	8	letter	-15	y		H	-15	-15	
+c5	9	word	5-22	n		H	5-22	5-22	
+c5	10	word	26-38	n		H	26-38	26-38	or 26-30; alt 36 or 35
+c5	11	word	4-19	n	there	H	4-19	4-19	
+c5	12	letter	+26-11	n		H	+26-11	+26-11	
+c5	13	letter	-8	n		H	-8	-8	
+c5	14	letter	-13	n		H	-13	-13	
+c5	15	letter	-9	n		H	-9	-9	
+c5	16	letter	-10	n		H	-10	-10	
+c5	17	letter	-15	n		H	-15	-15	
+c5	18	letter	-6	n		H	-6	-6	
+c5	19	word	3-24	n		H	3-24	3-24	
+c5	20	word	8-22	n		H	8-22	8-22	
+c5	21	word	11-1	n		H	11-1	11-1	
+c5	22	word	13-1	n		H	13-1	13-1	
+c5	23	word	3-24	n		H	3-24	3-24	
+c5	24	word	3-12	n		H	3-12	3-12	
+c5	25	letter	x26-22	n		H	x26-22	x26-22	partial English words at right edge, cut
+c5	26	letter	-23	n		H	-23	-23	
+c5	27	letter	-8	n		H	-8	-8	
+c5	28	letter	-8	n		H	-8	-8	
+c5	29	letter	-2	n		H	-2	-2	
+c5	30	letter	-13	n		H	-13	-13	looks overwritten; or -12; alt 12 (overwritten)
+c5	31	letter	-7	y		H	-7	-7	double underline; double underline
+c5	32	word	6-19	n		H	6-19	6-19	
+c5	33	word	2-6	n		H	2-6	2-6	
+c5	34	word	10-1	n		H	10-1	10-1	
+c6	1	letter	x23-26	n		H	x23-26	x23-26	heading 6 above
+c6	2	letter	-7	n		H	-7	-7	
+c6	3	letter	-9	n		H	-9	-9	
+c6	4	letter	-11	n		H	-11	-11	
+c6	5	letter	-7	n		H	-7	-7	
+c6	6	letter	-8	y		H	-8	-8	
+c6	7	letter	x24-13	n		H	x24-13	x24-13	
+c6	8	letter	-12	n		H	-12	-12	
+c6	9	letter	-31	n		H	-31	-31	
+c6	10	letter	-22	n		H	-22	-22	
+c6	11	letter	-10	n		H	-10	-10	
+c6	12	letter	-13	n		H	-13	-13	
+c6	13	letter	-10	n		H	-10	-10	
+c6	14	letter	-16	n		H	-16	-16	
+c6	15	word	23-1	y		H	23-1	23-1	double underline
+c6	16	letter	x29-17	n		H	x29-17	x29-17	
+c6	17	letter	-6	n		H	-6	-6	
+c6	18	letter	-44	n		H	-44	-44	
+c6	19	letter	x20-32	n		H	x20-32	x20-32	
+c6	20	letter	-9	n		H	-9	-9	
+c6	21	letter	-15	n		H	-15	-15	
+c6	22	letter	-36	y		H	-36	-36	ink blot over figures
+c6	23	word	1-18	n		H	1-18	1-18	
+c6	24	clear	25	y		H	25	25	single number, no dash; double underline; English words below in order: the L'Aigle / of 44 Guns / Capt. Latouche / a valuable / Ship of 20 / guns with / bale goods / from France / were lately / taken in; no dash, double underline, words: the L'Aigle of 44 Guns Capt Latouche a valuable Ship of 20 guns with bale goods from France were lately taken in
+c6	25	skip	-15	n		H	-15	-15	bottom right beside words 'following.'; beside words following

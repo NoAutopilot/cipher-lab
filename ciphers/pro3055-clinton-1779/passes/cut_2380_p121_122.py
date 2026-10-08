@@ -15,8 +15,12 @@ BOXES = {
     1056: {'y': (900, 3250), 'cols': [(1525, 1825), (1825, 2105), (2100, 2315), (2310, 2530), (2525, 2775), (2750, 3010)]},
     # 3853 cipher continued, B.147 p.407 (R15-CLIN407, 6 Oct 2026; img1058.jpg from .../69429%2Fc0fn10p9j08z/full/max/0/default.jpg)
     1058: {'y': (520, 3100), 'cols': [(1510, 1770), (1760, 1990), (1990, 2215), (2220, 2450), (2450, 2730), (2720, 3000)]},
+    # 25 Sept 1782 cipher copy, B.148 p.123 (D4-CLIN, 8 Oct 2026; img1205.jpg from .../69429%2Fc0ft8dg56944/full/max/0/default.jpg;
+    # white ink on grey as filmed, read as is; run with SHEAR=0.012 PAD=0)
+    1205: {'y': (720, 3800), 'cols': [(2330, 2660), (2640, 2930), (2900, 3200), (3130, 3460), (3420, 3760), (3700, 4120)]},
 }
-LABEL = {1056: 406, 1058: 407}  # page label where it is not image - 638
+LABEL = {1056: 406, 1058: 407, 1205: 123}  # page label where it is not image - 638
+STRETCH = {1205}  # low-contrast frames (white ink on grey as filmed): autocontrast each crop on its own
 SHEAR = float(os.environ.get('SHEAR', '0.025'))  # 0 = the first cut (R11-CLIN2380B blind pass A read SHEAR=0 crops)
 PAD = int(os.environ.get('PAD', '30'))  # widen each box by PAD px both sides (0 for pass A's crops)
 
@@ -32,6 +36,9 @@ def main(src, out, only=None):
             im = im.transform(im.size, Image.AFFINE, (1, SHEAR, -SHEAR * y0, 0, 1, 0), resample=Image.BICUBIC, fillcolor=255); mid = (y0 + y1) // 2
         for k, (x0, x1) in enumerate(b['cols'], 1):
             for half, (a, z) in (('top', (y0, mid + 60)), ('bot', (mid - 60, y1))):
-                im.crop((x0 - PAD, a, x1 + PAD, z)).save(os.path.join(out, f'p{LABEL.get(img, img - 638)}_c{k}_{half}.jpg'), quality=70)
+                c = im.crop((x0 - PAD, a, x1 + PAD, z))
+                if img in STRETCH:
+                    c = ImageOps.autocontrast(c, cutoff=2)
+                c.save(os.path.join(out, f'p{LABEL.get(img, img - 638)}_c{k}_{half}.jpg'), quality=70)
 if __name__ == '__main__':
     main(sys.argv[1], sys.argv[2], [int(a) for a in sys.argv[3:]])  # optional image numbers, e.g. 1056
