@@ -2680,7 +2680,7 @@ are not message text and are not counted.
 
 ## AUDIT (LS-V6)
 
-Verifier LS-V6 (account 1, LANE ST-LEDGER-2), 8 Oct 2026, 04:16-05:0x UTC by `date -u`; a separate session from every reader of the
+Verifier LS-V6 (account 1, LANE ST-LEDGER-2), 8 Oct 2026, 04:16-04:4x UTC by `date -u`; a separate session from every reader of the
 batch (LS-R6), not protecting its conclusions. Scope: LS-R6's eleven blocks **N2-BG..N2-BM** (ciphertext-no2.txt, key-no2.md = mssEC 47
 Cipher No. 2), **E65** (ciphertext.txt, key.md) and **O9-AH..O9-AJ** (ciphertext-no9.txt, key-no9.md = mssEC 67), plus LS-R6's step-2 1865
 verdict. Nothing decoded beyond re-running the committed scripts and looking up E65's eight code words in key-no2.md (section 2).
