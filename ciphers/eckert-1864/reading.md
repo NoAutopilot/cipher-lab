@@ -485,5 +485,11 @@ For [Maj Genl U.S. Grant] Hay Asthore house [.] Yours received [.] with the safe
 
 Code-word tokens: H 8.
 
-Totals over the 59 entries: H 980, C 13, I 0, M 0.
+**E36 | Page 166 | 9060 | 29 Aug 1864 8 PM, to McCaine at Harper's Ferry (sent to Beckwith and McCaine; operator not given)**
+
+Following just recd ["] [Columbus] to [Secretary of War] [.] Move cool and careful [Report]'s from Gal I pole is dies credit the [Telegraph (-ed, -ing)] of this morning stop polecat [Post] there thinks no [Advance (-ed, -ing)] is making but the return [Of the] [100] day [Men] leaves the [Valley] open wolves [18] whore B rough ["] sent to Beckwith & McCaine
+
+Code-word tokens: H 14.
+
+Totals over the 60 entries: H 994, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->
