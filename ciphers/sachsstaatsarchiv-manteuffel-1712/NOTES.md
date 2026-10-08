@@ -2128,3 +2128,9 @@ Classes: 0436 **N0** (Acta Borussica BO I, 1894, p. 258 prints the paragraph, na
 Arnold's mission to Stanislas, Eosander's to Charles XII); the pooled gate PASS is p ~ 0.01 on 10,000 shuffles, fails on 4 of 10 fresh
 seeds and rises to 39/1000 without 0214 (`f0375_08/vmantr8_seeds.out`). Eye check of the transcription not done (no crops on disk).
 Next reader of the 694/08 pool: search Acta Borussica BO I (Google Books ESf8fHFG9ngC search-inside) by a clear word of each frame first.
+
+## AUD2-MANTR8 (second audit of 0214 and 0375, account 3, 8 Oct 2026)
+
+AUDIT.md "AUDIT 2 (AUD2-MANTR8)": 0375 N2 held, 0214 N3 held (low), both D1. Eye-checked on the holder's frames: the 0214 run and 0375's
+51.28 match ciphertext.tsv; the neighbour inventory's "60.4.51" on 0214 is the y-shaped 9. Correction to the V-MANTR8 lines above: "a 51.28"
+is "à St." (51 s|sa M, 28 t C), and its expansion is graded I, Stanislas or Stettin. The key does not choose between them.

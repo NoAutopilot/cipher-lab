@@ -1012,3 +1012,94 @@ Lesson for the next reader of this pool: **search Acta Borussica BO I (Google Bo
 of each frame before reading it**; its Nr. 64, 72, 82-83, 91-93 extracts cover June 1712-April 1713. Corrections are written in NOTES.md
 "V-MANTR8"; the solver's own section is left as written. Requests this audit: books.google.com 34, resources.huygens.knaw.nl 6,
 archive.org 3 (one 404); no 403/429/challenge.
+
+## AUDIT 2 (AUD2-MANTR8)
+
+Verifier AUD2-MANTR8 (account 3, LANE-VERIFY-4, session_018nvXsMuGuSPqhPgZGoWDnr), 8 Oct 2026, 23:39-23:5x UTC by `date -u`. Second
+adversarial audit of frames 0214 and 0375 only. Account 3 never read or first-audited either frame (reader MANT-R8 and first auditor
+V-MANTR8 are account 2). Brief: .claude/briefs/runs/2026-10-08-acct3-verify4-jobs.md "## AUD2-MANTR8". Nothing decoded; key.tsv,
+decode files and readings untouched. V-MANTR8's Acta Borussica BO I, Droysen IV.1 and Heinsius searches were not repeated.
+
+**1. Eye check (V-MANTR8 could not run one).** The two frames were fetched once each from the holder (archiv.sachsen.de frames.tsv URLs,
+2 requests, 200, image/jpeg) into scratch only (not committed). The runs were cut with MANT-R8's pasted regions (f0214a 2140,1600,1240,420;
+f0375a 880,1420,1260,300; f0375b 880,2290,1260,150) and read by eye:
+- 0214 r3: the page reads "L'on me mande qu'on n'attend que 31.66.7.6.35.60.y.51.16.21. pour achever l'ouvra[ge]": every group agrees with
+  ciphertext.tsv, the seventh group being the y-shaped 9 that MANT-R8 settled on. The neighbour inventory's "60.4.51" (NOTES, 694/08
+  neighbours) misreads that glyph. Clear context above: "Certaine personne que V.E. devinera s'il lui plaît, et 160 avoient entrepris,
+  avant que je tombasse malade, de mettre Mons: 110.297 d'icy sur le bon pied, et la chose étoit en très bon train." (110.297: the middle
+  digit looks like 9 at this scale, so U stays.)
+- 0375 r1-r4: "... qu'elle nous avoit donné des projets, qu'elle avoit envoyé 66.60.21.33.12.120. a 51.28., et 35.16.5?.66.14.100. au 187
+  l'un et l'autre avec des instructions par écrit qui marquoient clairement les vues de cette cour contre 177." **51.28 is confirmed on
+  the image**, written as one group with a stop after it and then a comma. The third group of the Eosand run is 51 or 57 (both s in
+  key.tsv, so the letter is the same either way). 187 looks like 187 at this crop and stays low. r6 "a l'egard de 35" agrees.
+**St[anislas] against the key table:** key.tsv gives 51 s|sa (M, note "sa") and 28 t (C), so 51.28 reads "st" or "sat"; "St." as an
+abbreviation is consistent with the table. Expanding it to Stanislas is an identification (I), not something the key gives. Stettin is
+a second expansion the key cannot exclude: Stanislas was with the Swedish forces in Pomerania in 1712, and the same digraph 51.28 sits
+inside 0241's "...35.51.28..." (MANT-R8's hypothesis "Ste[ttin]"). The 0375 safe sentence should therefore keep "St." unexpanded, as
+V-MANTR8's sentence already does.
+
+**2. Prior-work checks 3-5.** `tools/prior_work.py sachsstaatsarchiv-manteuffel-1712 --item-spec 'shelfmark=SHStA Dresden 10026 Loc. 694/08;
+folio=frame <f>;sender=Manteuffel;recipient=Flemming;date=<d>' --step-type second-audit --fetch` for 0214 (1712-07-15) and 0375 (1712-09-15):
+exit 4 each. The only LEAD is this audit's own ROOM claim (48214b); the other rows are V-MANTR8's CLEARs. Generic rows: 3-tomokiyo
+UNCHECKED (no folio key), 3-solver UNCHECKED-NET (aaymeloglu not cloned), 4-editions UNCHECKED-NET (no prior_editions.tsv row);
+answered by hand below.
+- G3 phrase search, Internet Archive full text (be-api fts, all items, 1.7 s apart): "attend que ma guérison", "que ma guérison pour
+  achever", "ma guérison pour achever" 0 each. The 0214 clear-context phrase "avant que je tombasse malade" got 5 hits, all other texts
+  (Destouches, Leprince de Beaumont): not this letter. 0375: "Arnold à Stanislas", "Eosander au roi de Suède" and the clear-context phrase
+  "marquoient clairement les vues de cette cour" 0 each; "envoyé Arnold" 8 hits, none relevant. Positive-control note: "toujours malade
+  ou, pour mieux dire" (Acta Borussica BO I p. 258, printed) also scores 0 on IA, so BO I is not in IA full text and IA's 0 tells us nothing
+  about BO I (which V-MANTR8 covered through Google Books).
+- **Hinrichs, *Friedrich Wilhelm I.*** (IA bwb_C0-BHF-356, lending-only; fts inside the item, 13 queries; snippets only, no page read).
+  This is the scholarship most dependent on Manteuffel's reports for 1712-13. It cites them by date, mostly as "a. a. O. S." pages of
+  Acta Borussica (31 May, 7 and 18 June, 29 June / 23 Oct, 12 Dec 1712; Jan-Feb 1713). It cites the Eosander mission from Prussian
+  records ("Bericht Eosanders: 27. September 1712. Reskript an denselben, 13. September 1712", GStA Rep. XI 247) and says Eosander reached
+  Bender on 19 September. No hit for Arnold, Neiße, Bürgermeister, "Manteuffel September 1712", Genesung (1712), "Manteuffel krank" (1712);
+  "Manteuffel Juli 1712" matched nothing usable. Weak negative (snippets).
+- **Waddington, *Histoire de Prusse* II (1922)** (IA histoiredeprusse02wadd djvu, full text grep): p. 212 "Le colonel Eosander fut expédié à
+  Bender au mois d'août, en vue de solliciter l'approbation de Charles XII", and p. 212 n. 1 (Jablonski, 20 Dec 1712). Arnold is not
+  named; there is no Manteuffel quotation for Jul-Sept 1712 (his only 1712 quotation is the "pot-pourri de vices" portrait). A second
+  print of the 0375 news, beside Droysen.
+- Manteuffel's own illness, summer 1712: IA fts "Manteuffels Krankheit" 0; "Manteuffel erkrankte" 8 hits, none in 1712 (Droysen IV.3
+  Breslau, later; Neues Archiv f. sächs. Gesch. 5/21 Grodno-Warsaw, a later mission; 19th-20th-century namesakes); "Manteuffel malade
+  1712 Flemming" turned up no relevant snippet (Vehse, Waddington, Maurice de Saxe works). OpenAlex (keyed, 5 searches): Rous 2016,
+  "Der Weinkeller als Schlachtfeld" (Société des antisobres: Manteuffel/Flemming/Grumbkow), the only relevant hit; its PDF answered
+  brill.com 403, **unreachable**. Stuber 2024 is about Urbich, not relevant (OAPEN 403/429 in any case). Haake, Ziekursch, Flemming
+  biographies and Sbornik RIO: **not searched by title** this session; only the IA-wide fts above would have caught their texts.
+- Press of Jul and Sept 1712 (Europäische Fama, Mercure historique): **not searched** (no full-text route tried in the box).
+- Google Books: **unreachable**. 10 keyed calls with country=US returned 429 at 23:41 (the shared key's quota was apparently spent by
+  parallel sessions), plus one retry after about 9 minutes, also 429; nothing further sent. So no Google Books coverage beyond
+  V-MANTR8's earlier BO I search-inside.
+- N1 test for 0375 (could Manteuffel's report itself be quoted?): neither the cipher-span phrases nor the clear-context phrase hit in IA.
+  Hinrichs and Waddington, the two narrative works that use Manteuffel's 1712 reports, document the Eosander mission from Prussian
+  sources, not from this letter. Not established.
+
+**3. Classification (rule 10; key published, Krauske 1893 table, credited).**
+- **0375 (Loc. 694/08 ff.299v-300, Sept 1712): N2 held.** The news (Arnold sent to St[anislas] or St[ettin], Eosander to the King of
+  Sweden with written instructions against the czar) is in print: Droysen IV.1 Anm. 511-512 (V-MANTR8), and for Eosander also Waddington
+  II p. 212 and Hinrichs. No prior mapping of this ciphertext and no quotation of this report found, so no N1. Confidence: medium.
+  Gaps: Google Books 429; the press not searched. Safe sentence: V-MANTR8's, unchanged. Unsafe: "Arnold's mission to Stanislas
+  read from cipher" (the expansion is I).
+- **0214 (f.165, Jul 1712): N3 held, confidence low.** "ma guérison" is confirmed on the image (10 tokens, C 7 M 3; the M rows 60, 51 and 16 are each
+  used in their first or second listed value). No prior plaintext was found in IA full text (cipher and clear phrases), Hinrichs (snippets),
+  Waddington (full text), OpenAlex, or V-MANTR8's three editions. It holds at low confidence, not higher, because Google Books was
+  unreachable, Rous 2016 was unreachable, and the Saxon biographies and the 1712 press were not searched. Safe sentence: V-MANTR8's,
+  unchanged. Unsafe: "a previously unread passage on Manteuffel's illness", or any first/new wording.
+- **Count correction (rule 4):** V-MANTR8's "10 keyed tokens, one M" for 0214 r3 (item 6 and status.json `grade`) is three M: 60 r|re|ro,
+  51 s|sa, 16 o|ou|ous are M rows in key.tsv (reading_tokens.tsv: C 7, M 3). The reading needs each M row's first or second listed
+  value, so the class is not affected; status.json corrected. SO-MANT-0214's prompt states no token count, so no edit.
+- **Depth:** both D1 kept (keep-or-lower). The cipher clause fails (10-16 letters vs AD about 127-138), and no code value reads in two
+  sensible contexts (51.28 recurs in 0241 only inside an unread run).
+- SO-MANT-0214 (queued 8 Oct) still matches: class and counts unchanged, no edit. 0375 is N2, so no SO row.
+
+**4. Registers.** VERIFY-BACKLOG flagged "REGISTERS DISAGREE". **PROGRESS.tsv is the wrong one.** Its own header says one row per
+leaf/letter, but it carries a single row for this folder ("Manteuffel f.410", audit 2 = AUDIT2-MANT on f.410), and
+tools/verify_backlog.py matches by folder, so that row looked as if it covered 0214 and 0375. status.json was right: "one audit" for
+both until this section. Fix: two PROGRESS.tsv rows added (frames 0214 and 0375, stages 1 and 2 done), and status.json audit_status
+"two audits" for both result rows with this section added to audit_refs.
+
+**5. Postmortem.** No over-claim found in V-MANTR8's sentences. Two notes for the next reader: (a) the neighbour-inventory reading
+"60.4.51" for 0214 (NOTES, MANT-0609X) is the y-shaped 9; ciphertext.tsv is right. (b) "St[anislas]" in V-MANTR8 item 4 and
+NOTES V-MANTR8 is an identification that Stettin rivals; it should be written "St." with the expansion graded I. Requests this audit:
+www.archiv.sachsen.de 2; be-api.us.archive.org fts 29; archive.org 7 (metadata 5, djvu 2, one 404 on a guessed name); api.openalex.org 8;
+googleapis.com 11 (all 429); library.oapen.org 1 + 3 browser (403/403/429); brill.com 1 (403). Stopped at each block, no loops beyond
+one retry.
