@@ -10891,3 +10891,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 07:21 | worker D2-F4712 | claim fr4712-nevers-duchesse: apply ASKS 113 answer to the six f.13r carries; cap 3, box 07:20-08:20 UTC (80% stop 08:08); for LANE DEFAULT-account-2-20261008-0710
 2026-10-08 07:21 | D2-VIVX (worker, Opus) | claim fr16106-vivonne-longlee-1579: apply D4-VIVV crosswalk fixes + re-score vivmous/vivv; cap $4, box 07:21-08:36 UTC; for LANE DEFAULT-account-2-20261008-0710
 2026-10-08 07:21 | D2V-E74 (verifier, Opus) | claim: eckert-1864 E74 second adversarial audit, cap 4.5, box 07:21-08:51 UTC (80% 08:33), for LANE DEFAULT-account-2-20261008-0710
+2026-10-08 07:21 | worker D2-HEIN | claim 07:20 UTC by date -u: heinsius-vanhaersolte-1703 Deel 2 small-number re-grep, cap USD 2.5, box 07:20-08:20 UTC (80% 08:08); for LANE DEFAULT-account-2-20261008-0710
