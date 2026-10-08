@@ -437,13 +437,13 @@ Code-word tokens: H 32.
 
 Code-word tokens: H 27.
 
-**E55 | Page 165 | 9057 | 26 Aug 1864 11 AM, to Lt. Col. C. H. Howard at Louisville (Capt. Bruch)**
+**E55 | Page 163 | 9057 | 26 Aug 1864 11 AM, to Lt. Col. C. H. Howard at Louisville (Capt. Bruch)**
 
 [Washington] ang [26] {time: 11 AM} for Lt. Col [Colonel] C H Howard Lol [.] a dispatch just recd from Gen Canby [Maj Gen S. A. Hurlbut] states that Gen A J Smith's [Command = Er (-ed, -ing)] has already been [Detach (-ed, -ing)]ed to cooperrate with [Maj Gen W. T. Sherman] [General-in-Chief]
 
 Code-word tokens: H 11.
 
-**E56 | Page 237 | 9129 | 28 Nov 1864 11 AM, to Lamb (Van Duzer & McCaine)**
+**E56 | Page 235 | 9129 | 28 Nov 1864 11 AM, to Lamb (Van Duzer & McCaine)**
 
 [Washington] {time: 11 AM} [28] For [P. H. Sheriden] [Maj Gen Geo. H. Thomas] [.] [Maj Genl U.S. Grant] directs me to say that it is not eggs peck dead of you to give to the [Major] [General]'s or dear ed to nick to you [Command = Er (-ed, -ing)]'s of more than [Division]'s [General-in-Chief]
 
@@ -503,13 +503,13 @@ For [Quartermaster] Biggs [.] Send ordrs to Spaulding to proceed to Hilt on head
 
 Code-word tokens: H 10.
 
-**E63 | Page 144 | 9036 | 6 Aug 1864 11.30 AM, to Grant (code word Japan), at Monocacy Junction (McCaine, No 1)**
+**E63 | Page 143 | 9036 | 6 Aug 1864 11.30 AM, to Grant (code word Japan), at Monocacy Junction (McCaine, No 1)**
 
 Monocacy Junc. [Washington] {time: 11.30 AM} August [6] for [Maj Genl U.S. Grant] [.] one [Brigade] of Torbert's [Division] of [Cavalry] [Left] last night & another will start this morning for [Harpers Ferry] [By the way of] money cacy ---- As your wreath of last nite says ["] send all [Cavalry] yet to arrive Etc ["] I presume you allude to the [Division] expected from [City Point] ---- Do you want an order issued making a mily [Division] of the [4] [Department]'s or shall it await your return here [?] [General in Chief] End
 
 Code-word tokens: H 21.
 
-**E64 | Page 146 | 9038 | 7 Aug 1864 12.30 PM, to Sheridan (code word Nabob), signed Jupiter (McCaine, H. F.)**
+**E64 | Page 145 | 9038 | 7 Aug 1864 12.30 PM, to Sheridan (code word Nabob), signed Jupiter (McCaine, H. F.)**
 
 [Washington] {date: Aug 7} {time: 12} For [P. H. Sheriden] [.] Do not hesitate to give [Command = Er (-ed, -ing)]'s to Officers in whom you repose confideants with out regard to claims of others on account of rank [.] If you deem Torbert the best man to [Command = Er (-ed, -ing)] the [Cavalry] place him in [Command = Er (-ed, -ing)] aug give Dismiss some other [Command = Er (-ed, -ing)] or relieve Sapan [Expedition] and order him to nick to [Maj. Gen. David Hunter] [.] What we want is prompt & active [Movement]'s [After the] [Enemy] in accordance with the instructions you already have stop I feel every confide ants that you will do for the very best & will leave you as far as possible to act on your own judgement  {tail: [signed] [Maj Genl U.S. Grant] [.] another {time: 12.30} For [P. H. Sheriden] [.] The [Department]'s of [Washington] Pikin the Middle [,] the Susquehanna and of [West] um [Virginia] have been formed in to a Military [Division] called the Middle [Division] and you have been as signed tooth temporary [Command = Er (-ed, -ing)] [.] Orders will be sent to you by mail at once [.] You can assume [Command = Er (-ed, -ing)] with out further authority [signed] [Maj Genl U.S. Grant] fine day}
 
@@ -545,25 +545,25 @@ Bickford H. Ferry Washn Sept 23rd 1864 {time: 10 AM} [23] For [Brigadier General
 
 Code-word tokens: H 16.
 
-**E73 | Page 226 | 9118 | 7 Nov 1864 12.30 PM, to Cipher Clerk at Cairo, signed B F Greene chf clerk for chf Bureau (printed page 224)**
+**E73 | Page 224 | 9118 | 7 Nov 1864 12.30 PM, to Cipher Clerk at Cairo, signed B F Greene chf clerk for chf Bureau (printed page 224)**
 
 [Washington] {time: 12.30} [7] for [S. P. Lee] Mound City [By the way of] [Cairo] [.] Be pleased to direct polkers in your [Marine] to make all important signals by adding a number utopia (toby designated in your order utopia) to signal numbers made and subtracting the same number from signal numbers received  {tail: [signed] B F Greene Chf Clerk for Chf Bureau}
 
 Code-word tokens: H 9.
 
-**E74 | Page 179 | 9071 | 11 Sept 1864 8 PM, to Chas Armond (signed Brutus; printed page 177)**
+**E74 | Page 177 | 9071 | 11 Sept 1864 8 PM, to Chas Armond (signed Brutus; printed page 177)**
 
 The publicnation of Sand hers despatch was an Enormous blunder Twas done by Tycoon without my knowledge I did not know he had seen it until too late and four saw the Consequences would be very bad It Cannot happen again  {tail: [signed] [Secretary of War] call Coox Edwards}
 
 Code-word tokens: H 2.
 
-**E76 | Page 219 | 9111 | 1 Nov 1864 12 M, Butler (signed Knox) to W. P. Smith (operator Sampson; Cipher No. 1, time word Francis = 12)**
+**E76 | Page 217 | 9111 | 1 Nov 1864 12 M, Butler (signed Knox) to W. P. Smith (operator Sampson; Cipher No. 1, time word Francis = 12)**
 
 {time: 12} to W. P. Smith X Please let me have your special car for self & staff for the first through train to [New York] [.] strictly confidential Ack receipt care [Colonel] Hardie  {tail: [signed] [Maj Gen B. F. Butler]}
 
 Code-word tokens: H 6.
 
-**E77 | Page 251 | 9143 | 22 Dec 1864 10.30 PM, G. V. Fox to Commodore Rodgers (operator Sheldon, Ft Monroe, "No 1"; Cipher No. 1, Reliance = 10.30 PM)**
+**E77 | Page 249 | 9143 | 22 Dec 1864 10.30 PM, G. V. Fox to Commodore Rodgers (operator Sheldon, Ft Monroe, "No 1"; Cipher No. 1, Reliance = 10.30 PM)**
 
 {time: 10.30 PM} for Commo Rodgers [Command = Er (-ed, -ing)]ing Dick potato [Norfolk] Yesterday the fleet were in active at their destination on act. of continued bad weather This from [Maj Genl U.S. Grant] You may be in time Yet GV [Philadelphia]
 
@@ -719,13 +719,13 @@ Code-word tokens: H 6.
 
 Code-word tokens: H 18.
 
-**E120 | Page 151 | 9043 | 11 Aug 1864 3 PM, S. H. Beckwith (to Lieut. Col. T. S. Bowers, Grant's staff) (LS5-R1d, 8 Oct 2026; row 9043/0; image-read)**
+**E120 | Page 150 | 9043 | 11 Aug 1864 3 PM, S. H. Beckwith (to Lieut. Col. T. S. Bowers, Grant's staff) (LS5-R1d, 8 Oct 2026; row 9043/0; image-read)**
 
 [Washington] {date: Aug 11} {time: 3 PM} For Lieut [Colonel] T S Bowers A. A G [Maj Genl U.S. Grant] Staff [City Point] Copy to [P. H. Sheriden] [Harpers Ferry] [.] [Scout (-ed, -ing)] just arrived [Report]'s [Follow (-ed, -ing)] [.] The old man whom he met at {time: 11 PM} last night left [Gordonsville] yesterday morning and [Report]'s that [Longstreet]'s satin [Corps] was passing [North] through Staunton night before last [.] could give no [Information] as to number but was certain the whole [Corps] was [Movement]ing to join Early and Hump [.] [2] other [Scout (-ed, -ing)] are expected [Tomorrow] morning  {tail: [signed] Geo K Leit}
 
 Code-word tokens: H 28.
 
-**E121 | Page 157 | 9049 | 16 Aug 1864 8.30 PM, McCaine (LS5-R1d; row 9049/1; image-read)**
+**E121 | Page 155 | 9049 | 16 Aug 1864 8.30 PM, McCaine (LS5-R1d; row 9049/1; image-read)**
 
 {time: 8.30 PM} Augusta [16] for [P. H. Sheriden] [.] The discharge [Of the] [Ohio] Militia leaves [West] [Virginia] much exposed to raids & there are no [Troops] that canby sent for its [Defense (-ed, -ing)] except from your [Army]  {tail: [signed] [General-in-Chief] Did you get my letter}
 
@@ -743,13 +743,13 @@ Code-word tokens: H 10.
 
 Code-word tokens: H 17.
 
-**E124 | Page 194 | 9086 | 2 Oct 1864 12 m, Beckwith at City Point, signed Geo K Leet (LS5-R1d; row 9086/1; image-read)**
+**E124 | Page 192 | 9086 | 2 Oct 1864 12 m, Beckwith at City Point, signed Geo K Leet (LS5-R1d; row 9086/1; image-read)**
 
 [Washington] {time: 12} Sunday for [Maj Genl U.S. Grant] ---- Wolves who returned from Stafford & spotSylvania Counties this mng [Report] [Follow (-ed, -ing)]ing ---- a week ago yesterday [1] [Division] of [Infantry] generally supposed to be Kershaws was sent by rail from [Richmond] to [Gordonsville] & last tuesday it was marched from [Gordonsville] to [Join (-ed, -ing)] Earl ---- Some [Cavalry] probably a [Brigade] has gone from [Richmond] to Early's support recently ---- Officer in charge of wolves says the above came to him from [2] sources Geo Kaleet
 
 Code-word tokens: H 16.
 
-**E125 | Page 221 | 9113 | 4 Nov 1864, H. F. Schermerhorn(?), to Stevenson (LS5-R1d; row 9113/1; image-read)**
+**E125 | Page 219 | 9113 | 4 Nov 1864, H. F. Schermerhorn(?), to Stevenson (LS5-R1d; row 9113/1; image-read)**
 
 [Washington] {time: 12} {date: Nov 4} for [Brigadier General] Steven son [.] It is [Report]ed that Rosser is at Lees burg with [Brigade] [.] [General] [P. H. Sheriden] should be in formed of this and dis positions made to prevent him from [Cross (-ed, -ing)]ing the [River]  {tail: [signed] Jen guess its [Longstreet]}
 
@@ -809,7 +809,7 @@ Code-word tokens: H 26.
 
 Code-word tokens: H 21, C 1.
 
-**E103 | Page 237 | 9129 | 28 Nov 1864 10.30 AM, J. C. Van Duzer (LS5-R1c, 8 Oct 2026; row 9129/1; image-read)**
+**E103 | Page 235 | 9129 | 28 Nov 1864 10.30 AM, J. C. Van Duzer (LS5-R1c, 8 Oct 2026; row 9129/1; image-read)**
 
 [Washington] {time: 10.30 AM} [28] For [Brigadier General]  {tail: [signed] Orders have been given to transfer to [Baltimore] all mail matter in [10] dead for [Maj Gen W. T. Sherman] [Army] [signed] [C. A. Dana] crazy}
 
@@ -821,7 +821,7 @@ HdQrs AP for Hum phrey Dispatch in relation to wolves recd Send wolves down to [
 
 Code-word tokens: H 5.
 
-**E105 | Page 180 | 9072 | 12 Sept 1864, operator Carey at Lexington (LS5-R1c; row 9072/0; image-read)**
+**E105 | Page 178 | 9072 | 12 Sept 1864, operator Carey at Lexington (LS5-R1c; row 9072/0; image-read)**
 
 {time: 11 AM} [12] for Kent Your proposed [Movement] should be made as Early as possible while [Breckenridge]'s [Corps] is occupied by [P. H. Sheriden] [Near] [Winchester]  {tail: [signed] [General-in-Chief] have additions arrived}
 

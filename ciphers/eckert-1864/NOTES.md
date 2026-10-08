@@ -2410,3 +2410,5 @@ outreach/huntington-einaudi-reply-2026-10.md, each checked against the source he
   ciphertext-no2.txt. Four of them are status.json document_ids (E74 p.179->177, E76 p.219->217, N2-BY p.234->232, E103
   p.237->235; none on the outreach list). A one-job fix: correct the page column of entries-mssEC19.tsv from the holder titles,
   regenerate the headers, run decode.py / decode_no2.py --check, and rename the four document_ids (~USD 1).
+
+- **ECK-PAGEFIX done (8 Oct 2026):** the 29 headers and the whole entries-mssEC19.tsv page column now follow the holder titles (sources/mssEC19, no network; 609 rows changed; 13 non-"Page N" titles are covers/fly leaves/spine only). decode.py, decode_no2.py, decode_no9.py --check exit 0. status.json ids renamed E74 p.177, E76 p.217, N2-BY p.232, E103 p.235; E26 p.159 in PRIOR-WORK-LEAK; the huntington-decipherments list is unaffected (none of the four on it).

@@ -3145,7 +3145,7 @@ Key source for all four: `period` (Cipher No. 1, key.md = mssEC 41; Cipher No. 2
 ## AUDIT 2 (second adversarial, D2V-E74)
 
 Verifier D2V-E74 (account 2, LANE DEFAULT-account-2-20261008-0710, session_01GWXLUH2ZBG9tHhixnLF26u), 8 Oct 2026, 07:21-07:4x UTC by `date -u`;
-a separate session from the reader (LS-R7) and from LS-V7, not protecting either. Scope: **E74 only** (mssEC 19 p.177 printed / p.179,
+a separate session from the reader (LS-R7) and from LS-V7, not protecting either. Scope: **E74 only** (mssEC 19 p.177 printed / p.179 [page corrected ECK-PAGEFIX: holder title is Page 177],
 pointer 9071). Nothing decoded beyond `decode.py --check` (exit 0). Outreach gate 2 emphasis: search to disprove novelty.
 
 ### 1. The two open pointers, identified
@@ -3635,7 +3635,7 @@ E84), all account 2; not protecting any of their conclusions. Scope: **O9-BA, E7
   **E84** (9928, x 200-2300, y 1040-1720; **no image check in LS3-V18b**, which read it from the public transcription only): word for word
   with ciphertext.txt, header "No 1" and "1.30 PM" included ("baptism" written "baptisim"-like, as transcribed). **E76** (9111, y 700-1260):
   word for word; the leaf's printed folio is **217** (the Huntington title says "Page 217"; E37's header gives 9110-9111 as 216-217), so the
-  "Page 219" in E76's header in ciphertext.txt / reading.md is a header-label slip (not changed here; reader's file). **O9-BA** (9717, y 150-1000)
+  "Page 219" [page corrected ECK-PAGEFIX, 8 Oct 2026: now 217] in E76's header in ciphertext.txt / reading.md is a header-label slip (not changed here; reader's file). **O9-BA** (9717, y 150-1000)
   and **E83** (9901, y 150-950): word for word; O9-BA line 6 reads "rabbits" (second eye agrees with LS3-V18a); E83 "canby spared" is the plain
   pun "can be spared".
 
@@ -3723,7 +3723,7 @@ E84), all account 2; not protecting any of their conclusions. Scope: **O9-BA, E7
 - LS3-V18b left E84 without an image check; read here, it agrees.
 - Over-claiming sentences corrected: status.json rows for E76 (N3 -> N1), E83 and E84 (N3 -> N2), all "not counted"; O9-BA's row gains
   "two audits" and the public-transcription note. SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E76, -E83, -E84 withdrawn (second opinions are queued only
-  at N3 or better); SO-ECKERT-O9BA stays queued. Readings and ciphertext files unchanged (E76 header "Page 219" -> 217 left for a reader, ~$0.05).
+  at N3 or better); SO-ECKERT-O9BA stays queued. Readings and ciphertext files unchanged (E76 header "Page 219" -> 217 [done by ECK-PAGEFIX, 8 Oct 2026] left for a reader, ~$0.05).
 - Requests: hdl.huntington.org 8 (4 item JSON, 4 images); archive.org 7 djvu; be-api.us.archive.org 15 (6 timeouts/non-JSON, one retry
   round); www.loc.gov 10 + tile.loc.gov 2; googleapis.com 4 (2 answered 503); api.openalex.org 4; all >= 1.5 s apart.
 

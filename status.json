@@ -6259,11 +6259,11 @@
       "line": "Clear text signed with two Cipher No. 1 code words read at grade H ('[signed] [Secretary of War]'); the text is in the Huntington's public transcription of mssEC 19 (pointer 9071) (two audits, 8 Oct 2026).",
       "gap": "N1 (lowered by D2V-E74 8 Oct 2026): the Huntington's own public transcription of pointer 9071 carries the clear body word for word; D1, only the signature is in cipher; not a counted solve; 'Sanders' despatch' = G. N. Sanders' 1 Sept 1864 telegram to D. Wier, Halifax, read out by Seward at Auburn 3 Sept; Chas Armond = War Department operative at Halifax (mssEC 29 leaves 341, 348); SO-ECKERT-E74 withdrawn",
       "phrases": [
-        "Huntington mssEC 19 p.179, pointer 9071, E74"
+        "Huntington mssEC 19 p.177, pointer 9071, E74"
       ],
-      "document_id": "Huntington mssEC 19 p.179, pointer 9071, E74",
+      "document_id": "Huntington mssEC 19 p.177, pointer 9071, E74",
       "documents": [
-        "Huntington mssEC 19 p.179, pointer 9071, E74"
+        "Huntington mssEC 19 p.177, pointer 9071, E74"
       ],
       "claim_scope": "completed-reading",
       "plaintext_novelty": "N1",
@@ -6637,11 +6637,11 @@
       "line": "A mostly clear telegram whose text is in the Huntington's public transcription of mssEC 18 p.217; the Cipher No. 1 words read at grade H as New York, Colonel and Butler's signature, and his New York posting is printed in OR ser. I vol. 42 pt 3 pp.481, 489.",
       "gap": "N1 (lowered by AUD2-LS3-B, 8 Oct 2026): body clear in the Huntington transcription of pointer 9111 except one content code word (New York), which OR I/42 pt 3 pp.481, 489 print as Butler's destination (the LS3-V18b/D2V-E74 line for mostly-clear entries); not counted; SO-ECKERT-E76 withdrawn; header 'Page 219' should read 217",
       "phrases": [
-        "Huntington mssEC 19 p.219, pointer 9111, E76"
+        "Huntington mssEC 19 p.217, pointer 9111, E76"
       ],
-      "document_id": "Huntington mssEC 19 p.219, pointer 9111, E76",
+      "document_id": "Huntington mssEC 19 p.217, pointer 9111, E76",
       "documents": [
-        "Huntington mssEC 19 p.219, pointer 9111, E76"
+        "Huntington mssEC 19 p.217, pointer 9111, E76"
       ],
       "claim_scope": "completed-reading",
       "plaintext_novelty": "N1",
@@ -6848,11 +6848,11 @@
       "line": "Read at grade H with the period War Department Cipher No. 2: Grant tells Rawlins on 22 Nov 1864 from Washington that he will not be at City Point until Thursday; Rawlins reported the same despatch in his letter of that day, printed in J. H. Wilson, The Life of John A. Rawlins (1916), p.283.",
       "gap": "N2 (V1-LS4A, 8 Oct 2026): substance in Rawlins's letter of 22 Nov 1864, Wilson, Life of John A. Rawlins (1916) p.283 ('A despatch just received from the General dated at Washington says he will be back to this place Thursday'); Grant's wording not located in print; not counted; SO-ECKERT-N2BY withdrawn",
       "phrases": [
-        "Huntington mssEC 19 p.234, pointer 9126, N2-BY"
+        "Huntington mssEC 19 p.232, pointer 9126, N2-BY"
       ],
-      "document_id": "Huntington mssEC 19 p.234, pointer 9126, N2-BY",
+      "document_id": "Huntington mssEC 19 p.232, pointer 9126, N2-BY",
       "documents": [
-        "Huntington mssEC 19 p.234, pointer 9126, N2-BY"
+        "Huntington mssEC 19 p.232, pointer 9126, N2-BY"
       ],
       "claim_scope": "completed-reading",
       "plaintext_novelty": "N2",
@@ -7475,11 +7475,11 @@
       "completeness": "11 H of 14 code-word groups (Webster M)",
       "unresolved_spans": "",
       "phrases": [
-        "Huntington mssEC 19 p.237, pointer 9129, E103"
+        "Huntington mssEC 19 p.235, pointer 9129, E103"
       ],
-      "document_id": "Huntington mssEC 19 p.237, pointer 9129, E103",
+      "document_id": "Huntington mssEC 19 p.235, pointer 9129, E103",
       "documents": [
-        "Huntington mssEC 19 p.237, pointer 9129, E103"
+        "Huntington mssEC 19 p.235, pointer 9129, E103"
       ],
       "depth_sentence": "On 28 Nov 1864, while Sherman's army was out of contact on its march through Georgia, Dana in Washington told a brigadier general, probably J. D. Webster at Nashville, that orders had been given to transfer its mail matter to Baltimore.",
       "depth_check": "code clause: Knapsack = Sherman (3 uses), Baptism = Baltimore (9 uses); header words Elizabeth = 10.30 AM and Harsh Paddle = 28 equal the header; no external check",

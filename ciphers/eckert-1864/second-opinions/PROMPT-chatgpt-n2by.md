@@ -5,7 +5,7 @@ cipher telegram and want you to try to prove that its text was already printed b
 reading. Be adversarial: we would rather learn now that it is in print than claim it wrongly later.
 
 THE ITEM
-- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.234 (digital pointer 9126), https://hdl.huntington.org/digital/collection/p16003coll11/id/9126, entry N2-BY, headed "A. H. Caldwell Mc  Wash'n Nov. 22nd 1864". Read with War Department Cipher No. 2 (key in our file key-no2.md, from mssEC 47 in the same collection).
+- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.232 (digital pointer 9126), https://hdl.huntington.org/digital/collection/p16003coll11/id/9126, entry N2-BY, headed "A. H. Caldwell Mc  Wash'n Nov. 22nd 1864". Read with War Department Cipher No. 2 (key in our file key-no2.md, from mssEC 47 in the same collection).
 - Ciphertext as written: "Hang Nancy Oliver Arnold to Palermo Rawl = lins / I will not beat Bridle until Yankee crowd".
 - Reading: Washington, 8 PM, 22 [November 1864], to Brig. General Rawlins: I will not be at City Point until Thursday. [signed] Lieut. Gen. U. S. Grant.
 - Context we already know: OR ser. I vol. 42 pt 3 prints Grant at Burlington, N. J., to Stanton, 18 Nov 1864, 8.30 p.m.: "I will be in Washington Tuesday morning. Will go to New York with my family and remain until Monday." The plain words of the entry (not the code words) are in the Huntington's own public transcription.

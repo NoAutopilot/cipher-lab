@@ -5,7 +5,7 @@ cipher telegram and want you to try to prove that its text was already printed b
 reading. Be adversarial: we would rather learn now that it is in print than claim it wrongly later.
 
 THE ITEM
-- Source: Thomas T. Eckert's telegraph ledger, Huntington Library, San Marino, mssEC 19 p.179 (digital pointer 9071),
+- Source: Thomas T. Eckert's telegraph ledger, Huntington Library, San Marino, mssEC 19 p.177 (digital pointer 9071),
   https://hdl.huntington.org/digital/collection/p16003coll11/id/9071, entry E74, headed "Chas Armond  Washn 8 pm Sept 11th 1864". Read with War Department Cipher No. 1 (mssEC 41), signature only; the book is in the same collection.
 - Reading: Stanton (signed with the code word for the Secretary of War) to 'Chas Armond': The publication of Sanders' despatch was an enormous blunder. 'Twas done by Tycoon without my knowledge. I did not know he had seen it until too late, and foresaw the consequences would be very bad. It cannot happen again.
 - Context we already know: The text is written in clear in the ledger; only the signature is in cipher. 'Tycoon' was a contemporary nickname for Lincoln. We have not identified 'Sanders' (possibly George N. Sanders of the Niagara affair) or 'Chas Armond'.

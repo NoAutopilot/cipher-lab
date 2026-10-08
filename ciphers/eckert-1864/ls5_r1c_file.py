@@ -5,7 +5,7 @@ import re, sys
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
 MAP = {
- "Y1":  ("no1", "E103", "Page 237 | 9129 | 28 Nov 1864 10.30 AM, J. C. Van Duzer (LS5-R1c, 8 Oct 2026; row 9129/1; image-read)"),
+ "Y1":  ("no1", "E103", "Page 235 | 9129 | 28 Nov 1864 10.30 AM, J. C. Van Duzer (LS5-R1c, 8 Oct 2026; row 9129/1; image-read)"),
  "Y2":  ("no1", "E104", "Page 15 | 8907 | 4 Mar 1864, operator Caldwell (HQ Army of the Potomac), for Humphreys (LS5-R1c; row 8907/1; image-read)"),
  "Y5":  ("no1", "E105", "Page 180 | 9072 | 12 Sept 1864, operator Carey at Lexington (LS5-R1c; row 9072/0; image-read)"),
  "Y9":  ("no1", "E106", "Page 77 | 8969 | 22 May 1864 10.30 PM, R. R. McCaine, entry struck through and marked 'Not sent' (LS5-R1c; row 8969/3; image-read)"),

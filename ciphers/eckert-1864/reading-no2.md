@@ -855,31 +855,31 @@ Carlisle [Pennsylvania] {time: 7 AM} [30] for [Maj Genl H W Halleck] stop The [R
 
 Code-word tokens: H 11.
 
-**N2-BU | Page 165 | 9057 | 29 Aug 1864, S H Beckwith, City Point (cipher: information of Grant, sent to Sherman) (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees)**
+**N2-BU | Page 163 | 9057 | 29 Aug 1864, S H Beckwith, City Point (cipher: information of Grant, sent to Sherman) (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees)**
 
 Following rumors are given for [Information] [Grant U S] & [Has been sent] to [Maj Gen W T Sherman] [.] [Rebel]'s in [Valley] [Report] Hood [Killed] & [Longstreet] in [Command (-ed, -ing)] at [Atlanta] [.] The mily Agt at Gallipolis [Telegraph (-ed, -ing)]'s Gov Bruff this morning that [Breckenridge] with [8000] [Men] has [Advance (-ed, -ing) [#]]ed into [Kanawha] [Valley] [By the way of] Lewisburg
 
 Code-word tokens: H 21, I 1.
 
-**N2-BV | Page 173 | 9065 | 7 Sept 1864, Beckwith (cipher time word 10.30 AM), to Grant (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees)**
+**N2-BV | Page 171 | 9065 | 7 Sept 1864, Beckwith (cipher time word 10.30 AM), to Grant (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees)**
 
 {time: 10.30 AM} [7] for [Lieut Gen U.S. Grant] [.] I've received your [telegram] and will attend tooth line this side of [Point] [Lookout] stop Act comack is beyond my control  {tail: [signed] Gimlet I owe you one}
 
 Code-word tokens: H 7, C 1.
 
-**N2-BW | Page 175 | 9067 | 7 Sept 1864 9.30 PM, Harpers Ferry, J. D. Stevenson to the Secretary of War (LS4-R2a, 8 Oct 2026; image-read, volunteer text "raven" where the image reads "ravens"; found word for word in OR I/43 pt 2)**
+**N2-BW | Page 173 | 9067 | 7 Sept 1864 9.30 PM, Harpers Ferry, J. D. Stevenson to the Secretary of War (LS4-R2a, 8 Oct 2026; image-read, volunteer text "raven" where the image reads "ravens"; found word for word in OR I/43 pt 2)**
 
 [Harpers Ferry] {time: 9.30 PM} [7] for [Secretary of War] [.] All [Report]'s from [Front] confirm the retiring of [Enemy] stop A [Heavy] [Cavalry] [Reconnoissance] is being made in direction of [Winchester] [.] [Prisoners]'s and [Deserter]'s [Report] the [Enemy]'s shading to Fishers [Hill] Nothing from [Sheridan P H] on the subject  {tail: [signed] J. D. Stevenson [Brig. General]}
 
 Code-word tokens: H 20, I 1.
 
-**N2-BX | Page 233 | 9125 | 18 Nov 1864 (cipher time word 4 PM), Beckwith at Burlington N. J., to Grant (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees; six code tokens)**
+**N2-BX | Page 231 | 9125 | 18 Nov 1864 (cipher time word 4 PM), Beckwith at Burlington N. J., to Grant (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees; six code tokens)**
 
 [Washington] {time: 4 PM} [18] For [Maj Genl U S Grant] [.] Please come this way if posy able on your re turn [Secretary of War]
 
 Code-word tokens: H 6.
 
-**N2-BY | Page 234 | 9126 | 22 Nov 1864 (cipher time word 8 PM), A. H. Caldwell, to Rawlins (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees; "beat" for "be at" as written)**
+**N2-BY | Page 232 | 9126 | 22 Nov 1864 (cipher time word 8 PM), A. H. Caldwell, to Rawlins (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees; "beat" for "be at" as written)**
 
 [Washington] {time: 8 PM} [22] to [Brig. General] Rawllins I will not beat [City Point] until [Thursday] [Lieut Gen U.S. Grant]
 
@@ -891,13 +891,13 @@ Code-word tokens: H 8.
 
 Code-word tokens: H 29, I 2.
 
-**N2-CA | Page 157 | 9049 | 16 Aug 1864, to Mastiff (operator Chapel; LS4-R1a, row 9049/2; first read as No. 1, re-filed here: tulip, Mastiff)**
+**N2-CA | Page 155 | 9049 | 16 Aug 1864, to Mastiff (operator Chapel; LS4-R1a, row 9049/2; first read as No. 1, re-filed here: tulip, Mastiff)**
 
 {time: 8.30 PM} {date: Aug 16} for [Canby Ed R S] [New Orleans] [.] [Maj Genl U S Grant] directs that if [Kirby Smith] succeeds in [Cross (-ed, -ing)]ing the [Mississippi] that you [Concentrate (-ed, -ing)] all the [Troops] you can spare on [Mobile]  {tail: [signed] [General in Chief] does Myers still trouble you}
 
 Code-word tokens: H 14.
 
-**N2-CB | Page 240 | 9132 | 1 Dec 1864 3 PM (cipher time word), S. H. Beckwith, to Billy (LS4-R2b, 8 Oct 2026; row 9132/0; image-read)**
+**N2-CB | Page 238 | 9132 | 1 Dec 1864 3 PM (cipher time word), S. H. Beckwith, to Billy (LS4-R2b, 8 Oct 2026; row 9132/0; image-read)**
 
 {time: 3 PM} [1] for Billy [.] [Foster J G] has no other [Cavalry] than the [Maj Gen H W Halleck] lion of [4] [Massachusetts] which is now red used to [100] [Men] He asks forth [8] come ponies with [10] [Corps] [.] If I [Order] as you direct it will leave not a single Mount ed man [In the] [Department] [Of the] [South] Is this your in ten shun [?]  {tail: [signed] [H W Halleck]}
 
@@ -921,37 +921,37 @@ Code-word tokens: H 52, C 3, I 3.
 
 Code-word tokens: H 39, I 2.
 
-**N2-CF | Page 160 | 9052 | 21 Aug 1864 1 PM (ledger), Beckwith at City Point (LS4-R2b; row 9052/1; image-read)**
+**N2-CF | Page 158 | 9052 | 21 Aug 1864 1 PM (ledger), Beckwith at City Point (LS4-R2b; row 9052/1; image-read)**
 
 [Willich A] [Kentucky] [August] [21] for [General in Chief] [.] I am satisfied [From the] [Report]'s of my [Scout (-ed, -ing)]'s [Kentucky] is Tobey in vaded by a large [Force] under [19] & [Wheeler] [.] If there are any [Troops]'s which [Canby Ed R S] sent tommy please [Order] them at once Windy Bur bridge End
 
 Code-word tokens: H 16, C 1, I 1.
 
-**N2-CG | Page 229 | 9121 | 11 Nov 1864 (cipher time word 3 PM), S. H. Beckwith, to Grant (LS4-R2b; row 9121/1; image-read)**
+**N2-CG | Page 227 | 9121 | 11 Nov 1864 (cipher time word 3 PM), S. H. Beckwith, to Grant (LS4-R2b; row 9121/1; image-read)**
 
 {time: 3 PM} [11] [Maj Genl U S Grant] [.] [Troops]'s sent [North] have been [Order]ed back tother [Command (-ed, -ing)]'s When willow be up to make annual [Report]  {tail: [signed] [Maj Gen H W Halleck]}
 
 Code-word tokens: H 10, C 1.
 
-**N2-CH | Page 230 | 9122 | 12 Nov 1864 9 AM, Beckwith, G. V. Fox to Grant (LS4-R2b; row 9122/2; image-read)**
+**N2-CH | Page 228 | 9122 | 12 Nov 1864 9 AM, Beckwith, G. V. Fox to Grant (LS4-R2b; row 9122/2; image-read)**
 
 {time: 9 AM} [12] [Lieut Gen U.S. Grant] [.] We shelly at Hampton [Road] at {time: 7 AM} [Tomorrow] morning unless its stormy weather which will cause some delay [Porter D D] [Join]'s no there GV [McMinnville]
 
 Code-word tokens: H 9, I 1.
 
-**N2-CI | Page 233 | 9125 | 19 Nov 1864, Beckwith at Burlington N. J., to Grant (LS4-R2b; row 9125/2; image-read)**
+**N2-CI | Page 231 | 9125 | 19 Nov 1864, Beckwith at Burlington N. J., to Grant (LS4-R2b; row 9125/2; image-read)**
 
 [Washington] Brook [15] PM For [Lieut Gen U.S. Grant] [.] There is no reason why you should not go to Grain ada [.] Let me know your ad dress there [.] [Secretary of War]
 
 Code-word tokens: H 5, I 2.
 
-**N2-CJ | Page 250 | 9142 | 18 Dec 1864, J. H. Emerick at City Point (LS4-R2b; row 9142/0, first telegram; image-read)**
+**N2-CJ | Page 248 | 9142 | 18 Dec 1864, J. H. Emerick at City Point (LS4-R2b; row 9142/0, first telegram; image-read)**
 
 [Colonel] Bradley chief [Quarter Master] The orders given at first in relation to the transports for [Maj Gen W T Sherman] will be carried out [.] Have such of the boats named as are in the [James] sent off as directed without delay to their destination  {tail: [signed] Rue Two In galls [Brig. General] {time: 3.30 PM}}
 
 Code-word tokens: H 7, I 1.
 
-**N2-CK | Page 250 | 9142 | 18 Dec 1864 11.15 PM, Emerick at City Point, signed T. T. Eckert (LS4-R2b; row 9142/0, second telegram; image-read)**
+**N2-CK | Page 248 | 9142 | 18 Dec 1864 11.15 PM, Emerick at City Point, signed T. T. Eckert (LS4-R2b; row 9142/0, second telegram; image-read)**
 
 [Washington] [18] {time: 11.30 PM} [.] you can inform [General] Raw lines [Grant U S] [Left] here at {time: 3 PM} [To day] for [City Point] by boat T T Eckert
 
@@ -969,7 +969,7 @@ Code-word tokens: H 9.
 
 Code-word tokens: H 93, C 4, I 3.
 
-**N2-EA | Page 196 | 9088 | 8 Oct 1864 2 PM, Beckwith at Fort Monroe, signed Geo K Leet (LS5-R1d; row 9088/1; first tried as No. 1, read as No. 2; image-read)**
+**N2-EA | Page 194 | 9088 | 8 Oct 1864 2 PM, Beckwith at Fort Monroe, signed Geo K Leet (LS5-R1d; row 9088/1; first tried as No. 1, read as No. 2; image-read)**
 
 Beckwith Ft. Monroe Wash Oct 8. 1864 [Saturday] for [Lieut Gen U.S. Grant] ---- [2] [Scout (-ed, -ing)]'s who returned from Spot Savannah County this mag [Report] [Follow (-ed, -ing) [#]]ing ---- [Cars] have not been running [In the] Central [Rail-road] since last [Saturday] ---- [Report]'s say that the [Transportation] is all being used to Convey [Government] property from [Richmond] to [Danville] preparatory to the [Evacuation] of [Richmond] ---- The impression prevails that [Richmond] cannot beheld a a month longer ---- Every [Available] [Men] is being sent to [Richmond] to aid in its [Defend (-ed, -ing) [#]]'s ---- All old [Men] & boys who are able to [Carry] muskets are put in the trenches windy G E O K L Eat a age
 
@@ -981,7 +981,7 @@ Code-word tokens: H 24.
 
 Code-word tokens: H 11.
 
-**N2-DB | Page 198 | 9090 | 10 Oct 1864 10.50 AM, Beckwith at City Point (LS5-R1c; row 9090/1; image-read; first tried against No. 1, read as No. 2)**
+**N2-DB | Page 196 | 9090 | 10 Oct 1864 10.50 AM, Beckwith at City Point (LS5-R1c; row 9090/1; image-read; first tried against No. 1, read as No. 2)**
 
 Beckwith City Pt Wash DC Oct 10. 64 [Monday] {time: 11 AM} [Lieut Gen U.S. Grant] ---- [Charleston] dispatches are for Electioneering purposes being published in [New York] & [Philadelphia] papers representing a great disaster & refuse of [30] Bright [Men] in your [Army] [Friday] --- Please favor me with a [Report] that I can publish [Of the] true condition of things immedy [Secretary of War]
 

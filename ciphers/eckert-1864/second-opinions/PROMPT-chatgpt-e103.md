@@ -5,7 +5,7 @@ cipher telegram and want you to try to prove that its text was already printed b
 reading. Be adversarial: we would rather learn now that it is in print than claim it wrongly later.
 
 THE ITEM
-- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.237 (digital pointer 9129), entry E103, headed "J. C. Van Duzer Wash'n Nov 28th 1864 10.30 A. M.", https://hdl.huntington.org/digital/collection/p16003coll11/id/9129. Read with War Department Cipher No. 1 (Huntington mssEC 41).
+- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.235 (digital pointer 9129), entry E103, headed "J. C. Van Duzer Wash'n Nov 28th 1864 10.30 A. M.", https://hdl.huntington.org/digital/collection/p16003coll11/id/9129. Read with War Department Cipher No. 1 (Huntington mssEC 41).
 - Reading: C. A. Dana (Assistant Secretary of War) to Brig. Gen. [J. D.?] Webster, 28 Nov 1864, 10.30 AM: "Orders have been given to transfer to [Baltimore] all mail matter in [?] dead for [Maj. Gen. Sherman's] [Army]. [C. A. Dana]" -- the words "feeble dead" are not understood.
 - Context we already know: Related but not this telegram: the Army and Navy Journal of 31 Dec 1864 says mail for Sherman's army goes by way of New York; Sherman's own 1865 order routes it to Old Point via Baltimore.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,

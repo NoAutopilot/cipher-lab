@@ -5,7 +5,7 @@ cipher telegram and want you to try to prove that its text was already printed b
 reading. Be adversarial: we would rather learn now that it is in print than claim it wrongly later.
 
 THE ITEM
-- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.219 (digital pointer 9111), https://hdl.huntington.org/digital/collection/p16003coll11/id/9111, entry E76, headed "12M to Sampson  Wash'n Nov 1st 1864". Read with War Department Cipher No. 1 (mssEC 41); the book is in the same collection.
+- Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 19 p.217 (digital pointer 9111), https://hdl.huntington.org/digital/collection/p16003coll11/id/9111, entry E76, headed "12M to Sampson  Wash'n Nov 1st 1864". Read with War Department Cipher No. 1 (mssEC 41); the book is in the same collection.
 - Reading: Butler (signature word Knox) to W. P. Smith: Please let me have your special car for self and staff for the first through train to New York. Strictly confidential. Acknowledge receipt care Colonel Hardie.
 - Context we already know: Hardie to Butler and Grant to Butler of 1 November 1864 are printed in OR ser. I vol. 42 pt 3 pp.480-481; Butler then went to New York for election week. We did not find this telegram there or in Butler's Private and Official Correspondence vol. 5.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
