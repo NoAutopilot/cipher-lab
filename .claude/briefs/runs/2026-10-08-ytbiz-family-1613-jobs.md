@@ -164,3 +164,16 @@ labels as a pre-registered crib for the 2046/2077 map cartouches. Write PREREG-F
 placed against shuffled/other cartouches or a permuted key, chosen so it CAN differ from the target on the statistic) and push it before
 scoring. Fetch 0729 at native size once (service.archief.nl, <= 5 requests). Grade C only for values the gloss fixes; anything else M.
 Update Remaining gaps / Escalation; a reading change after AUDIT.md -> say so and flag for a verifier in ROOM.
+
+## Wave 4 (17:5x UTC 8 Oct), last of this incarnation
+Wave 3 ledgered (12.48). Intake gate for wvo-11106-bergh-1572 as wave 3 (exit 0, 17:19 UTC).
+
+### FAM-11106L (Opus, cap 5, box 75 min): wvo-11106-bergh-1572, homophonic family in other languages + a firmer French control
+FAM-11106T's French homophonic control passed its gate by 0.016 (mean 0.616, seeds 0.332-0.856), so its target FAIL is a weak negative.
+Prior-work check 1 only (paste). Then, with `tools/family_run.py` on the folder's spec (create specs/wvo-11106-bergh-1572.json if missing,
+from ciphertext.txt, N 820, K 41): (1) fr16 again with more seeds (`--seeds 6`) so the control's mean and spread are known, same noise level
+as FAM-11106T (0.10, which brackets err_2reader 0.10); (2) de16 and (3) la17 (Bergh's chancery could write German or Latin; Dutch has no
+16th-c. corpus on file -- nl18 is era-mismatched, say so and skip it rather than run it), each control first, target only if its control
+meets the gate. Also try a merged-inventory variant if FAM-11106T's focus.tsv names a clear look-alike merge set (merge only pairs both
+passes split on; state the merge before scoring). Write every row to HYPOTHESES.md (family_run does this), a dated NOTES section, Remaining
+gaps / Escalation; rule 3's third-attempt clause applies per hypothesis (count attempts). Report what was found and where it was not found.
