@@ -4235,13 +4235,13 @@ Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the r
 
 ## Escalation (loose-ends pass, 8 Oct 2026)
 - [x] siblings: the 1806 item checked against the UMW catalogue capture (H78, 8 Oct 2026): LS, no code note; the coded Armstrong-Monroe siblings are the three NYPL 1805 letters, images requested via outreach/armstrong-keyhunt-monroe-papers.md (ready, owner sends)
-- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 0 internal gaps; cheapest next: assess the six unassessed escalation steps (clear-pages, known-keys, print, key-rebuild, image-check, retry) against NOTES/HYPOTHESES, ~$1
+- [x] clear-pages: the letter's clear words (opening "The", HYPOTHESES ARM-TR/ARM-TR2) and every clear sibling on file were used as cribs: ARM3-LOOP crib rounds, H70 crib sheet (Armstrong-Madison chain Nov 1807-Jun 1808, ASP FR III, Bourdeau's 15/22 Feb decodes); Krajcovic's 15 Feb crib does not check out (CAMPAIGN header); assessed H79, 8 Oct 2026
+- [x] known-keys: THE=972 and every sibling table on file tested and excluded (HYPOTHESES ARM-A2 transfer sweep, ARM-CODES, ARM3-LIVCODE, ARM-LIV, WE028 via H29, Madrid legation H43/H48); Madison 15 May 1808 "No such Cypher is in the office"; assessed H79
+- [x] print: no printed decipherment located (CHECK-SOLVED-WEB 28 Sept; Bourdeau solver-repo check 2 Oct, class b: attempted, unread; Papers of James Madison reply 7 Oct; H76 French side; Brant Papers item located, not digitised); assessed H79
+- [ ] key-rebuild: planned: rebuild the private Armstrong-Monroe cipher's key from the three NYPL 1805 letters "partially in code and deciphered" (Monroe's own decipherment = clear-copy pairs, tools/interlinear_align.py), then test it on the target with a matched control; material awaited from the UMW image request (outreach/armstrong-keyhunt-monroe-papers.md); assessed H79
+- [x] image-check: native NARA IIIF frames 0029-0033 on file (images/manifest.json), two independent transcriptions (ARM-TR, ARM-TR2), owner mark counts 5 Oct, SLANT-CROP crop check 5 Oct (gate fail, flags off); assessed H79
+- [ ] retry: planned: re-run the nomenclator family (ARM-C1, H73: control below gate at N=369) with a design prior from the rebuilt Armstrong-Monroe key once key-rebuild has material; the plate-only shorthand reader is retired (H24/H28) and the dot-position statistic is untested-by-this-tool (H77, specimens too short), neither reopened without a new instrument; assessed H79
+Verdict: keep going: 0 internal gaps; cheapest next: key-rebuild from the NYPL 1805 deciphered Armstrong-Monroe letters once the UMW image request is answered, ~$5
 
 ## Campaign step H78 (2026-10-08 05:3x UTC)
 
@@ -4261,4 +4261,15 @@ Reading: the 1806 item is, on the catalogue's evidence, a clear letter, not a si
 unlocated, which no longer matters for the target. The coded siblings remain the three NYPL 1805 letters, whose images the ready
 outreach draft A asks for. Inferred, not image-checked: the absence of a code note is the catalogue editors' description.
 Files: none new (the capture on file is the source). No class or reading change.
+
+## Campaign step H79 (2026-10-08 05:3x UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh). Desk assessment from the record
+only; no network, no vision, no new instrument. The loose-ends pass of 8 Oct left six escalation lines "not assessed"; each is now
+marked with its evidence in the Escalation section above: clear-pages [x], known-keys [x], print [x], image-check [x] (cited
+HYPOTHESES/NOTES sections), key-rebuild [ ] and retry [ ] (planned steps named). Both open steps hang on the same new material: the
+three NYPL 1805 Armstrong-Monroe letters with Monroe's own decipherment (TOMO-ARM W1; H78), images asked for in the gate-7-ready
+draft outreach/armstrong-keyhunt-monroe-papers.md, which the owner sends. Whether that private cipher is the target's code is
+unknown (Madison 15 May 1808 says the office lacked the target's cipher, which fits a private Armstrong code but proves nothing).
+No reading, no class change.
 
