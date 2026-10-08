@@ -272,3 +272,12 @@ are confirmed (now H in ciphertext.tsv; 38 is a null), and the first two codes l
 
 Requests: resources.huygens.knaw.nl 7 (the 5194 record, 05194.pdf, one 404 on a wrong-path PDF, 11008.pdf,
 pages.json source 3, Groen pp.448 and 449 html), >= 2 s apart, no 403/429.
+
+### W11008-R2: R2 span set to Groen's printed words (8 Oct 2026)
+
+Worker W11008-R2 (LANE FAMILY-A2c, account 2), 23:03-23:1x UTC 8 Oct 2026 by `date -u`; disk only, no requests. Applied AUDIT 3 item 4:
+`w5194_gate.py` R2 span is now "resolu en campagne je me trouve" (Groen III p.448 as OCR'd, quoted by V-11008KP), same seed 5194 and 1000
+shuffles. `python3 w5194_gate.py` regenerated `w5194_gate.tsv`; `--check` -> `current`, exit 0. Numbers: R1 LCS 5, shuffle mean 0.85, p95 2, 0/1000
+(PASS); R2 LCS 20, shuffle mean 7.65, p95 10, 0/1000 (PASS) -- matches AUDIT 3's re-score. Against the print 25 of 38 decoded letters align.
+The table above and the "37 of 38" sentence are superseded by these numbers (the correction note in that section stands). No grade, class or
+depth change. Not checked: the p.448 page image (the OCR is the only reading of the print, M).

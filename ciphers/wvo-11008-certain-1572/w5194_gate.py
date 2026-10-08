@@ -6,7 +6,7 @@
 
 Gate pre-registered in PREREG-W11008KP.md before this score was computed. Input: w5194_ciphertext.tsv (page 1,
 manuscript lines 3-8, two blind passes reconciled), runs bounded by clear words that Groen III pp.448-449 also prints;
-the Groen span between the same anchors is fixed below (letters only; j->i, v->u, accents stripped).
+the Groen span between the same anchors is fixed below, copied from Groen's printed words only (R2 corrected 8 Oct 2026 per AUDIT 3 item 4) (letters only; j->i, v->u, accents stripped).
 Statistic: LCS between the run decoded with ../orange-nassau-1572/key_nepveu.tsv (letter codes only; every other
 number dropped as null) and the Groen span. Null: 1000 seeded permutations of the 24 letter values among the 24 letter
 codes. PASS per run if real > shuffle p95.
@@ -18,7 +18,7 @@ for r in csv.DictReader(open(os.path.join(H, '..', 'orange-nassau-1572', 'key_ne
     KEY[int(r['group'])] = r['value'].split('/')[0]
 GROEN = {  # Groen III p.448, between the clear anchors on the leaf
     'R1': ('que', 'suis', 'comme je'),
-    'R2': ('suis', 'toujours', "resolu de me mettre d icy a trois jours en campagne je me trouve"),
+    'R2': ('suis', 'toujours', "resolu en campagne je me trouve"),
 }
 def norm(s):
     s = unicodedata.normalize('NFD', s.lower())
