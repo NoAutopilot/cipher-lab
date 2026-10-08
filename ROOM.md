@@ -11439,3 +11439,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 21:13 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 21:13 UTC: spawned 0 (), queued left 0
 2026-10-08 21:14 | FV-FM3c verifier (Opus) | LANE LEDGER hdl take
 2026-10-08 21:15 | FV-FM3c verifier (Opus) | LANE LEDGER hdl release (15 requests: 12 CONTENTdm dmQuery, 3 IIIF pages 5799 5748 5831 at 2400 px to scratch, 3.2 s apart); for LANE LEDGER (account 1)
+2026-10-08 21:15 | FV-FM3c verifier (Opus) | LANE LEDGER hdl take (correction to my release: the run broke at request 10 on a RemoteDisconnected; 9 dmQuery answered, 0 images; one retry of the rest now)
