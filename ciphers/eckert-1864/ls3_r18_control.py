@@ -21,14 +21,16 @@ sys.path.insert(0, str(HERE))
 import decode  # noqa: E402
 
 BOOKS = {"1": ("key.md", "ciphertext.txt"), "2": ("key-no2.md", "ciphertext-no2.txt"), "9": ("key-no9.md", "ciphertext-no9.txt")}
-ENTRIES = {"E78": "1", "N2-BP": "2", "N2-BQ": "2", "O9-BA": "9", "O9-BB": "9"}
+ENTRIES = {"E78": "1", "N2-BP": "2", "N2-BQ": "2", "O9-BA": "9", "O9-BB": "9",
+           "E79": "1", "E80": "1", "E81": "1", "E82": "1", "E83": "1", "E84": "1"}
 SEEDS = 200
 
 
 def norm_time(s):
     m = re.search(r"(\d{1,2})(?:[.:](\d\d))?\s*([AP])\.?\s*M", s, re.I)
     if not m:
-        return None
+        m = re.fullmatch(r"\s*(12)\s*", s)  # the key's "12" (noon) carries no am/pm
+        return "12.00 PM" if m else None
     return f"{int(m.group(1))}.{m.group(2) or '00'} {m.group(3).upper()}M"
 
 
@@ -39,6 +41,8 @@ def shuffled(key, seed):
         by_kind.setdefault(k, []).append(w)
     out = {}
     for k, ws in by_kind.items():
+        if k == "numeral":  # a few numeral rows carry a non-numeric meaning ("number"): left in place
+            ws = [w for w in ws if key[w][0].split()[0].isdigit()]
         vals = [key[w] for w in ws]
         rng.shuffle(vals)
         for w, v in zip(ws, vals):
@@ -60,7 +64,7 @@ def checks(text, key, hdr_time, hdr_date):
     reading, _ = decode.decode_entry(text, key)
     t = re.findall(r"\{time: ([^}]*)\}", reading)
     d = re.findall(r"\{date: ([^}]*)\}", reading)
-    time_ok = bool(t) and norm_time(t[0]) == hdr_time
+    time_ok = hdr_time is not None and bool(t) and norm_time(t[0]) == hdr_time
     date_ok = None if hdr_date is None else (bool(d) and d[0].strip() == hdr_date)
     return time_ok, date_ok
 
@@ -68,7 +72,7 @@ def checks(text, key, hdr_time, hdr_date):
 def main():
     keys = {b: decode.load_key(HERE / kf) for b, (kf, _) in BOOKS.items()}
     ents = load_entries()
-    print("entry | chosen | tokens | share k1/k2/k9 | time-word agrees with header (book 1/2/9) | shuffled chosen book: time agrees / date agrees (of %d)" % SEEDS)
+    print("entry | chosen | tokens | share k1/k2/k9 | time-word agrees with header (book 1/2/9) | shuffled chosen book: time agrees / date agrees (of %d; NT = the header has no hour, not testable)" % SEEDS)
     for eid, chosen in ENTRIES.items():
         header, lines = ents[eid]
         text = decode.entry_text(lines)
@@ -79,7 +83,7 @@ def main():
         toks = [re.sub(r"[^a-z]", "", t.lower()) for t in text.split()]
         toks = [t for t in toks if t]
         share = "/".join(str(sum(t in keys[b] for t in toks)) for b in "129")
-        real = ["Y" if checks(text, keys[b], hdr_time, hdr_date)[0] else "n" for b in "129"]
+        real = ["Y" if checks(text, keys[b], hdr_time, hdr_date)[0] else ("n" if hdr_time else "NT") for b in "129"]
         dates = ["Y" if checks(text, keys[b], hdr_time, hdr_date)[1] else "n" for b in "129"]
         tc = dc = 0
         for s in range(SEEDS):
