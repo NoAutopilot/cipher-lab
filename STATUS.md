@@ -6077,6 +6077,25 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE ST-LEDGER-2 handoff (session_01F54CxP1w63RgwvrKV1pN4S, account 1), 8 October 2026 (closed 05:5x UTC: scope spent, lane about 47.5 of 50)
+
+Brief .claude/briefs/runs/2026-10-08-acct3-ledger2.md (ST-LEDGER-2); worker brief .claude/briefs/runs/2026-10-08-acct1-st-ledger2-workers.md.
+Nine workers 42.50 + orchestrator ~5.0 by get_session. Sonnet readers (LS-R5, R2c, R6, R7), Opus first verifiers (LS-V5, V2c, V6, V7), LS-FIX.
+Result (eckert-1864, mssEC 19, one audit each, not counted until a second): N3 at D2+ -- E33; E57, E59, E62; N2-BI, BJ, BK, BL, BM,
+O9-AH (D2); E66, E68, E70, N2-BN (D3). N3 at D1 (not countable): O9-AI, O9-AJ, E74. 36 entries read (+ E69, E75: no key in hand);
+the rest N1/N2 (14 N1 incl. five of E30-E36 in OR I/43 pt 1). Second audits queued by the account-3 orchestrator: AUD2-LS-F (acct 4:
+E33 E57 E59 E62), AUD2-LS-G (acct 2: N2-BI..BM, O9-AH), AUD2-LS-H (acct 2: E66 E68 E70 N2-BN) -- nothing left to queue.
+- (c) E30-E36 done once: the two earlier no-commit endings were an auto-mode Bash refusal (LS-R2) and a turn ended with "decode handed
+  off" (LS-R2b); "push every two entries, never hand off" fixed it. E33 N3; six N1.
+- Corrections caught by the verifiers: E65 was decoded with Cipher No. 1 but is No. 2 -> re-filed as N2-BO (N2); E60 is Lincoln to
+  John Hay, not to Grant; the "No. 1 reads 1865 rows" check was a non-test (No. 2 rows score as high) and is withdrawn.
+- The filter is near dry: loosened to or_cov 4 it gave 14 countable of 36 (vs 20 of 27 at or_cov 3). Unread 1864 priority-1 rows left
+  are McCaine/Valley telegrams (5 of 7 of that run already in OR I/43) plus 9056/164/1, 9062, 9063, 9066.
+Left, runnable: (a) a real key-book check for the 1865 rows (share of tokens in key.md vs key-no2.md vs key-no9.md per row, against
+the read E/N2/O9 entries; Nos. 3/4 not in hand), ~$1, before any 1865 read; (b) a search of mssEC 37-76 for the book marked "10" that
+E69 and E75 use, ~$1.5; (c) object 5952 (Fort Monroe 1864-65) with the same pre-filter, the next ledger; (d) reader nit from LS-V7:
+plain: lines for person/Stephen/Humphreys/Ramsay and E70 Pockaing, ~$0.3.
+
 ## LANE ST-LEDGER handoff (session_016rC9SvHBi7gsLuXBh6whmZ, account 1), 8 October 2026 (closed 02:2x UTC: cap spent, lane about 48.8 of 50)
 
 STEAM round (.claude/briefs/runs/2026-10-07-acct3-steam.md, section ST-LEDGER); worker brief

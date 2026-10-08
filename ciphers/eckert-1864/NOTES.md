@@ -1309,7 +1309,7 @@ Read so far: of the ten rows, 8 read (E66, E67, E68, N2-BN as E71, E70, E72, E73
 - [n/a] key-rebuild: no key change proposed ("Fox" = Philadelphia in key.md is a plain-name collision in E67, one token).
 - [x] image-check: crops read by the worker; no subagent.
 - [x] retry: not needed (E69 and E75 each tried against three keys once).
-Verdict: keep going: 2 internal gaps; cheapest next: LS-V7 verifier on E66-E74 (E67 N1 by print), then a search of mssEC 37-76 for the "10" book for E69 and E75, ~$1.5
+Verdict: keep going: 2 internal gaps; cheapest next: a key-book check of the 1865 priority-1 rows (share of tokens in key.md vs key-no2.md vs key-no9.md per row against the read entries; the LS-R6 check was a non-test), ~$1, then the "10" book for E69/E75 in mssEC 37-76, ~$1.5 (updated ST-LEDGER-2 close, 8 Oct 2026: LS-V7 done, E66 E68 E70 N2-BN N3 one audit; second audits AUD2-LS-F/G/H queued). Earlier: keep going: 2 internal gaps; cheapest next: LS-V7 verifier on E66-E74 (E67 N1 by print), then a search of mssEC 37-76 for the "10" book for E69 and E75, ~$1.5
 
 ## Siblings (8 Oct 2026)
 
