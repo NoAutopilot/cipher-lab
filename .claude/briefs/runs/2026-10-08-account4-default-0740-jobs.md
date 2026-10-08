@@ -35,7 +35,7 @@ if it was, write one ROOM line saying so and stop.
   folder's existing crops); read line or strip crops, never a full page image; one page (or half page) per subagent call. Price ~1.5 per
   vision call, reconciliation one more unit.
 - Done: one ROOM line `done (<start>-<end> UTC by date -u, brief met|stopped at cap): <result, commit>` "for LANE
-  DEFAULT-account-2-20261008-0710", then a five-line final report.
+  DEFAULT-account-4-20261008-0740", then a five-line final report.
 
 ## Wave 1 (spawned 08:4x UTC 8 Oct)
 Intake gate 08:4x UTC (tools/intake_gate_check.py, each "-- edition/page or full-text-search citation found within 6 lines"):
@@ -131,10 +131,19 @@ File, each as the folder's Verdict names it, and nothing else: (1) castelcicala-
 or copy of BL Add MS 41525 f.38 (1816-17 Castelcicala-Circello clear-text extracts) as a possible grade-C crib (Premise check (d)); write
 REQUEST.md in the folder. (2) fr4715-f61-mayenne-1592: an ASKS row from family/REQUEST_fr4699.md (Verdict: "the orchestrator files an ASKS
 row", ~$0 -- filed by you for this lane). (3) fr16142-noailles-constantinople-1571: an ASKS row for a person's read of the c262 gloss word
-crops (Verdict l.1732), naming the crop paths. Before each: check ASKS.md / LOCAL-QUEUE.tsv for an existing row on the same item (if one
+crops (Verdict l.1732), naming the crop paths. (4) fr5160-letellier-1653: D4-F5160 flagged (ROOM 08:47) that the Français
+20661-20662 gap names a REQUEST.md that does not exist and has no ASKS row: write the folder's REQUEST.md and file the ASKS row. Before each: check ASKS.md / LOCAL-QUEUE.tsv for an existing row on the same item (if one
 exists, cite it in NOTES instead). Rules: CLAUDE.md "Anything blocked on a human goes in ASKS.md"; tools/key_livecheck.py only if a row asks
 for access; LOCAL-QUEUE rows follow tools/local_runner_brief.md's columns and tools/lq_answer_check.py's row kinds; never name the owner,
 no personal data. Update each folder's Remaining gaps ("waiting-on ASKS <n>") and gaps_check.
+
+### D4V-BROC -- antt-msliv0638-brochado-1712: rule-7 re-derivation of the revised letter 134 reading (VERIFIER, Opus; cap 2.5, box 45 min)
+D4-BROC (commit 3aae2fe15, ROOM flag 08:53) changed letter 134: m0275-r1 pos 2/4/8 re-read 8/10/55, m0276-r1 pos 10 ff -> s with a new
+key.tsv row (ff, M, via m0179/Carta 80); C54/M14/U2; judge pt17/pt18 FAIL. You are not the solver. Working from the spec, the key and the
+transcription only (not D4-BROC's narrative): re-derive letter 134 with the folder's decode script and --check (CLAUDE.md rule 7); compare
+token by token (a difference beyond the M-graded tokens sends the reading back); check the ff key row's evidence (is m0179/Carta 80 an
+independent attestation or the same token?) and whether the KA gate D4-BROC used could have failed. Write the result as a dated section in
+NOTES.md (no AUDIT.md exists; creating AUDIT.md with an N-class is out of scope here -- name it as the next step). No novelty class.
 
 ## Wave 3 (only if spend allows, orchestrator's call)
 ### D4-B167 -- baluze167-davaux-1637: two blind passes on the 170 f.229r-v crops + reconciliation (solver, Opus; cap 8, box 120 min)
