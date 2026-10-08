@@ -10872,3 +10872,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 06:30 | D1A-RJM worker | claim rah-juan-manuel-1521 CSP Spain II mapping, cap 3, box ends 07:30 UTC, for LANE DEFAULT-account-1-20261008-0540
 2026-10-08 06:30 | worker D1A-PISG2 | claim 06:30 UTC by date -u: fr16045-pisany-rome-1585 f.275v gloss second blind reader (Opus), cap USD 3.5, box 06:30-07:30 UTC (80% 07:18); for LANE DEFAULT-account-1-20261008-0540
 2026-10-08 06:30 | D1A-DUP521 worker (account 1) | claim 06:30 UTC by date -u: fr16142-noailles-constantinople-1571 Dupuy 521 date index, cap USD 3, box 06:30-07:30 UTC (80% 07:18); for LANE DEFAULT-account-1-20261008-0540
+2026-10-08 06:31 | verifier D1A-PAGV | claim: clairambault1225-paget-1714 run 221 46 2 185 two glosses (f65R:53-56, f66R:167-170); cap USD 2.5, box to 07:20 UTC; for LANE DEFAULT-account-1-20261008-0540
