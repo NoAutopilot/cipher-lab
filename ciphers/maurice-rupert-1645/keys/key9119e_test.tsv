@@ -1,0 +1,10 @@
+stat	target	shuffled_key_mean	shuffled_key_p95	rank_of_1001
+4gram	-1.591	-1.631	-1.365	390
+word_cover	0.567	0.619	0.804	679
+coverage_tokens	43	23.430	34.000	1
+4gram_banded	-1.591	-1.660	-1.439	304
+word_cover_banded	0.567	0.605	0.756	664
+coverage_banded	43	36.808	46.000	119
+power_4gram_vs_banded_p95	0/50 synthetic at coverage <= 43			
+judge	score -1.591	real_p05 -0.588	null_p99 -1.769	FAIL N=120
+rendered	gfromdmarchgcChesterhyBanburygfrommarchfoundhnoibleavenodununfromofleaveunforwardlfromknoehhisnextunfromdforwardnomepart			

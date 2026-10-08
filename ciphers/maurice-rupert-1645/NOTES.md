@@ -621,12 +621,46 @@ Run 6 Oct 2026, 17:35-17:5x UTC (`date -u`). The step was the "While waiting" li
   djvu.xml, 5 page images), 1.5-2 s apart. Vision: worker's own eye on 7 crops plus 1 form crop; no subagent.
 - Rule 10: search results only.
 
+## D1A-EVL-maurice-rupert-1645 (8 Oct 2026, account-1, LANE DEFAULT-account-1-20261008-0540)
+
+- **Job.** Full harvest of the printed cipher/gloss pairs on Bray's Evelyn Memoirs (1819) vol. II correspondence pages
+  (IA memoirsillustrat02eveluoft), the "next" step of R15-MREVL; then keys/key_test.py on key9119 + the print rows.
+  Gates pre-registered in PREREG-D1A-EVL.md (pushed 06:16 UTC, before any score).
+- **Instrument.** `keys/evelyn_harvest.py DIR` reads the OCR word boxes (`_djvu.xml`, `_page_numbers.json`, fetched once,
+  not committed) and writes `keys/evelyn_harvest_pairs.tsv`: 94 gloss/cipher line pairs on pp.82-120 (a gloss is the line
+  directly above a cipher line set in the small interlinear type, word height < 0.8 x the leaf median). The pairs were
+  aligned with `tools/interlinear_align.py align --floor 101 --shuffle 200`, no --prior, so key9119 stayed an independent check.
+- **Gates.** pp.102-115 (43 pairs): shuffle-control CONSISTENT real 17 vs control mean 4.4, p95 8 (p = 0.005); agreement
+  with key9119 on codes both read (count >= 2, share >= 0.6) 14/17. Both pass. pp.92-101 (47 pairs): real 6 vs p95 8
+  (p = 0.35), agreement 0/3. Both fail, so these pages are excluded: a different key, or the OCR pairing is too noisy
+  there. p.120 (1646, 4 pairs): real 2 vs p95 2, 1 code compared, excluded. pp.82-91: 1 pair, excluded. One pair
+  cannot be deranged, and `--shuffle` then never returns (tool limitation, noted here, not fixed).
+- **What the gated pages add.** No code the 9119 form leaves blank reaches count >= 2 with share >= 0.6 in the automatic
+  key. The pages hold few cipher lines: most of the King's Oct 1645 cipher is short spelled stretches, and the hard-EM
+  drifts on lines whose gloss sits off its numbers. Read by eye from the aligned pairs, all rows in `keys/evelyn_pairs.tsv`:
+  41 = h (p.103, 'dispatch' = 124:72:32:17:61:41; grade I; **a code the letter uses**, 1 token); 124 = dis (pp.103, 115);
+  72 = p (pp.103, 111). Conflict: 29 = n by the print ('then' = 277:29, p.114), against key9119's h. This joins 27 = n,
+  which the print confirms again on p.114 ('tonight' = 263:27:78:24:42:19). The form's 27-29 block looks like n misread as h.
+  323 (2 tokens in the letter, 'army' p.107) is re-looked at and still not attributable. The other 37 codes the letter
+  leaves uncovered do not occur on the gated pages.
+- **Coverage and key test** (rule 3, `keys/key_test.py key9119e`; key9119e.tsv = key9119.tsv + 340, 293, 212, 41; the
+  conflicts are not applied). Coverage 35/93 with key9119 alone, 43/93 with the print rows. R15-MREVL counted 42 and did
+  not count 41. Results: 4-gram -1.591, all-slot rank 390/1001, banded rank 304/1001 (banded p95 -1.439); word cover
+  rank 664/1001; coverage banded rank 119/1001. Power 0/50 synthetic at coverage <= 43, so this is a **non-test**, as at
+  35. Judge FAIL (-1.591 vs real_p05 -0.588, N=120). Grades on the letter: none (rule 4). The 9119 family stays
+  untested by this instrument at this coverage, not refuted.
+- **Rule 7.** `keys/evelyn_harvest.py DIR --check` and `keys/key_test.py key9119e --check` pass. `key_test.py key9119
+  --check` was STALE before this job touched anything: the 4-gram value drifted by 0.002 (-1.521 to -1.523), from an
+  upstream model or corpus change, and ranks are unchanged. It was regenerated.
+- Requests: archive.org 3 (djvu.txt, djvu.xml, page_numbers.json), 2 s apart. No page images and no vision call: the OCR
+  alignment was enough for the rows read. Rule 10: search results only. Report what was found and where it was not found.
+
 ## Remaining gaps (FT4f, 3 Oct 2026; GAPS47, GAPS52 3 Oct 2026)
 Read so far: 0 of 93 tokens at any grade. Keys tested, all with judge FAIL: no. 118 (rank 80/201); Osborne P4 (rank 175/201); Osborne extended (rank 148/201); DECODE 9119 reconstruction (banded 4-gram rank 159/1001, coverage at the banded median, power 0/50 so a non-test); DECODE 9117 (chance on every statistic). See NOTES FT4b, FT4d, FT4e and GAPS52.
 - The letter's own key, or a decipherment of the 7 July 1645 leaf, in Rupert's papers BL Add MS 18980-82 (the leaf is not itemised in the catalogue) - blocker: needs-physical-access; BL images have been offline since the 2023 cyberattack, and the copy order is ASKS row 56 / REQUEST.md. Every key reachable online was tested: Digby cabinet no. 118, the DECODE 8627 index, Osborne 8443/8444 in full, Cryptiana Nicholas-Rupert, Bourdeau's King-Queen SP106-5, and DECODE 9119/9117 (GAPS52).
 - Secondary witnesses for the 7 July leaf (GAPS47, 3 Oct 2026): BL Add MS 30305 is read from its catalogue record. It has no Maurice letter and no 7 July 1645 item. Bodleian MSS Firth c. 6-8, the transcripts of Rupert's letters made for Warburton - blocker: waiting-on LOCAL-QUEUE row L43; their holding record is Anubis-blocked from the cloud, so the owner's desk runner reads the Firth c. 6-8 record, its availability flag and the 7 July 1645 folio
 - The "Keys to cyphers" at BL Add MS 30305 f.86 (Charles I, undated; Nicholas 1646-58), which could hold a key covering this letter's codes - blocker: needs-physical-access; the record has no Digitised Content line, and BL images are offline since 2023. Added to REQUEST.md beside the ASKS row 56 BL copy order
-- The 9119 key family (Charles I/Nicholas ministers' cipher) at this letter's coverage (GAPS52, 3 Oct 2026). The 1820 reconstruction fills only the codes its source letters used. At 35/93 tokens the 4-gram test has 0/50 power, so the family is untested by this instrument, not refuted. Bray's Evelyn Memoirs (1819) vol. II pp.102-113 add 293, 340, 212 (R15-MREVL, 6 Oct 2026: 42/93, still too few for the test). A fuller key of the same family would reopen it - blocker: needs-physical-access; the candidates are the Add MS 30305 f.86 keys (gap above) and the 7 July leaf itself, under ASKS row 56
+- The 9119 key family (Charles I/Nicholas ministers' cipher) at this letter's coverage (GAPS52, 3 Oct 2026). The 1820 reconstruction fills only the codes its source letters used. At 35/93 tokens the 4-gram test has 0/50 power, so the family is untested by this instrument, not refuted. Bray's Evelyn Memoirs (1819) vol. II pp.102-113 add 293, 340, 212 (R15-MREVL, 6 Oct 2026), and 41 (D1A-EVL, 8 Oct 2026, full harvest of pp.82-120: 43/93, key_test power still 0/50, so the result is a non-test). The print is now exhausted for this letter's codes. A fuller key of the same family would reopen it - blocker: needs-physical-access; the candidates are the Add MS 30305 f.86 keys (gap above) and the 7 July leaf itself, under ASKS row 56
 - Statistical key rebuild from the 93 tokens alone - blocker: too-short; 93 tokens with 63 distinct codes in a letters-plus-words nomenclator. The rule 3 controls on file show code+mark designs read only at pooled lengths (22-67% blind at N=720), so no solver can be expected to read this at N=93.
 
 ## Escalation (FT4f, 3 Oct 2026; GAPS47, GAPS52 3 Oct 2026)
@@ -641,6 +675,7 @@ Verdict: parked: every gap has an outside blocker
 
 ## While waiting
 
+- DONE 8 Oct 2026 (D1A-EVL): full harvest of pp.82-120 done; coverage 43/93, key_test power 0/50 (non-test); see the D1A-EVL section.
 - DONE 6 Oct 2026 (R15-MREVL): the edition is Bray's Evelyn Memoirs 1819 vol. II (IA memoirsillustrat02eveluoft); keys/evelyn_pairs.tsv; coverage 42/93, key_test not re-run. Remaining cheap step: a full harvest of every printed pair on the correspondence pages (pp.~90-120), which could add more of the family; next: one worker, ~$2.5. Original line follows.
   The one action that depends on nobody is to find where the 9119 reconstructor's source letters are printed. The form
   cites "Evelyn's Memoirs", pages 102-113, with King-to-Nicholas letters of Oct 1645. Locate that edition on Internet

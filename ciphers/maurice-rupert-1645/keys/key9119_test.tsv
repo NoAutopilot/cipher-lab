@@ -1,10 +1,10 @@
 stat	target	shuffled_key_mean	shuffled_key_p95	rank_of_1001
-4gram	-1.521	-1.625	-1.345	276
+4gram	-1.523	-1.625	-1.345	276
 word_cover	0.574	0.620	0.805	661
 coverage_tokens	35	22.823	33.000	28
-4gram_banded	-1.521	-1.655	-1.439	159
+4gram_banded	-1.523	-1.655	-1.438	159
 word_cover_banded	0.574	0.607	0.761	644
 coverage_banded	35	35.841	45.000	509
 power_4gram_vs_banded_p95	0/50 synthetic at coverage <= 35			
-judge	score -1.521	real_p05 -0.579	null_p99 -1.74	FAIL N=94
+judge	score -1.523	real_p05 -0.579	null_p99 -1.74	FAIL N=94
 rendered	gfromdgchyBanburygfromfoundhnoibleavenodfromofleaveforwardlfromknoehisnextfromdforwardnomepart			

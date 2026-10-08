@@ -6,6 +6,9 @@
 # the 9119 rows those glosses test. Gloss words are set above the numbers and drift by up to one code, so 'conf' says how the word was tied
 # to the code. Grade C = from the printed decipherment; M = the tie of word to code is uncertain; I = inferred from neighbouring form values.
 # vs9119: agree / conflict / extends (code blank on the 9119 form).
+# D1A-EVL (8 Oct 2026): full harvest of pp.82-120 by keys/evelyn_harvest.py -> evelyn_harvest_pairs.tsv (94 gloss/cipher line pairs) and
+# tools/interlinear_align.py (PREREG-D1A-EVL.md). Only pp.102-115 passed the gates (shuffle real 17 vs p95 8; 14/17 agree with key9119);
+# pp.92-101 failed both (real 6 vs p95 8; 0/3), p.120 and pp.82-91 too thin. Rows marked D1A-EVL below were read from the aligned pairs by eye.
 code	meaning	page	context_as_printed	grade	conf	vs9119	note
 340	Chester	103	then I turne to Chester / 277:27:174: shall 17:43:3:28:37:290:340	C	med	extends	King to Nicholas, Bridgnorth 9 Aug 1645; last gloss word, last code; 290=to on the form; glosses on this line sit one code left of their numbers
 28	n	103	turne = 17:43:3:28:37	I	med	conflict	key9119 reads 28=h (pass A h, pass B n; GAPS52 settled h, 'ascender visible'); 'turne' with 17=t 43=u 3=r 37=e from the form needs 28=n; R15-MREVL re-looked at crop p2c1_L02: the 28 glyph does carry a tall stroke, so the form and the print disagree here; not settled
@@ -13,8 +16,12 @@ code	meaning	page	context_as_printed	grade	conf	vs9119	note
 277	the	107	rather = 2:33:277:3	C	med	agree	'r a the r' with 33=a 3=r on the form; 277 also spells 'the' in 'then' (p.103, p.107)
 293	un (in 'under')	106	my horse under Lo: Goring / 224:173:293:83:36:3:380	C	high	extends	gloss 'under' sits over 293; 83=d 36=e 3=r on the form, so 293 carries 'un' (value 'un' is I-grade, the word 'under' is C); King to Nicholas, Oct 1645 (p.106)
 212	march	111	a daye or two's march and if Montrosse be in / 32:20:118:51:232:568:212:60:96:175:417:104:176	M	low-med	extends	'march' sits between 568 and 212, nearer 212; 568 then 'two's' (or part); 20 and 60 nulls on the form; King to Nicholas, Oct 1645 (p.111)
-41	-	103	that there is no dispatch yet come / 229:124:72:32:17:61:41:315	-	-	-	inside a spelled stretch under the single gloss 'dispatch'; no value can be tied to 41 from the print
 323	-	107	army rather then to be besieged / 95:323:47:90:2:33:277:...	-	-	-	no gloss over 323 ('army' over 95); not attributable
 48	-	113	(... 71:2:48:19:30:279:290:169 :)	-	-	-	this p.113 passage is printed without decipherment
 136	-	113	279:447:79:18:47:136:236	-	-	-	printed without decipherment
 2	r	107	rather = 2:33:277:3	I	med	conflict	key9119 reads 2=p (low; pass A p, pass B r); "rather" needs 2=r; supports pass B
+41	h	103	dispatch = 124:72:32:17:61:41 (line 229:124:72:32:17:61:41:315:116:290:213:148:401, gloss 'dispatch yet come to me from')	I	med-high	extends	D1A-EVL; 229=no ends the previous gloss ('there is no'), 315=yet, 116=come, 290=to, 148=from; 32=a 17=t 61=c from the form, 124=dis and 72=p below; 41 sits in the h block of the form (39, 42 = h). The value is a letter split from the C-grade word
+124	dis	103,115	dispatch = 124:72:32:17:61:41 (p.103); discretion = 124:59:3:38:... (p.115, 'must be discretion')	I	med	extends	D1A-EVL; also p.96 'indiscreete', 'distance' (pp.92-101 failed the gates, not counted); word codes are alphabetical (111=can, 116=come, 124 before 'd' words)
+72	p	103,111	dispatch (p.103); proofs = 72:1:54:57:7:51 (p.111)	I	med	extends	D1A-EVL; 74=p on the form, so 72 is a second p homophone; not among the letter's codes
+29	n	114	then he = 277:29:167 (p.114, 'come tenight then he' over 116:263:27:78:24:42:19:277:29:167)	I	med	conflict	D1A-EVL; key9119 reads 29=h; with 277=the, 'then' needs 29=n, as 27=n (pp.103, 107, and 'tonight' 263:27:78:24:42:19 here); 27-29 look like the form's n block misread as h. 29 is not among the letter's codes; key9119.tsv left unchanged
+323	-	107	army = 95:323:47:90 (90 null, 47=y)	-	-	-	D1A-EVL re-look: 95 lies between 94=all and 96=and in the alphabetical word codes, so 'army' splits 95+323+y in a way the print does not fix; not attributable (2 tokens in the letter)
