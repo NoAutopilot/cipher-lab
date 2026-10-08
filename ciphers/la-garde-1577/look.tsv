@@ -1,0 +1,5 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-08 22:20	adhoc-0e32dc	adhoc-0e32dc:2-leaf:3ca102	unit			margin_6467_run1_4x.png	manifest	owed
+2026-10-08 22:20	adhoc-0e32dc	adhoc-0e32dc:2-leaf:3ca102	unit			margin_6467_run2_4x.png	manifest	owed
+2026-10-08 22:20	adhoc-0e32dc	adhoc-0e32dc:2-leaf:3ca102	unit			margin_6467_leftcolumn_3x.png	manifest	owed

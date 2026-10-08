@@ -1332,3 +1332,101 @@ re-run this prereg at that measured figure. Otherwise the target waits for the i
 Requests: none. Vision: 0 calls. Files: `families/homophonic_prereg.md`; two HYPOTHESES.md rows. No decode files were
 written (target not run).
 
+
+## LAG-ERR: transcription-error re-measure, marks stripped vs kept (8 Oct 2026, account 2, LANE FAMILY-A2c, Sonnet, CPU only)
+
+**Job:** R15-LAGHOM's named next step. No network, no vision, no subagents. Intake gate: lane orchestrator 22:2x UTC,
+`la-garde-1577: open (line 1)`, exit 0. Prior work: `tools/prior_work.py la-garde-1577 --item-spec 'shelfmark=KHA A
+11/XIV C/M-12;date=1577-11-28;sender=La Garde;recipient=Willem van Oranje' --step-type transcribe --offline` -> **exit 4**,
+LOOK 1 (2-leaf, 3 crops owed) + UNCHECKED 3 (3-tomokiyo, 3-solver, 4-editions) + UNCHECKED-NET 1. These rows are about
+plaintext prior reading; this job reads no plaintext and makes no reading claim, and it has no network or vision to
+discharge them, so they are **unchecked, not recorded** (`--record` accepts only DONE/KNOWN/CLEAR-type answers and none is
+true). Check 1 (step already done): the pass-to-pass figure was measured on 26 Sept (WC-LAGARDE: 48/239 = 20.1% rows
+carrying a witness `alt`, 52/239 = 21.8% M-grade) on *marks-kept* signs only; no marks-stripped base-code figure and no
+pair list exists in NOTES.md or HYPOTHESES.md (grep "base-code", "stripped"). So not done.
+
+**Method** (`lag_err.py`, offline, `--check` passes; outputs `lag_err.tsv`, `lag_err_pairs.tsv`, `lag_err_cells.tsv`).
+The raw transcription passes on disk, aligned the way `build_v2.py` aligns them (`tools/reconcile_passes.nw` on literal
+signs, pass A as reference, per page or cipher run): 6179 p2 A vs B and A vs L1; 6179 p3 A vs L1; 6467 run 1 and run 2
+A vs L1 (6467 has no pass B; 6179 pass B never reached p3). Each aligned A position against one witness is one comparison.
+*Marks kept* = literal sign differs (`11` vs `11^`). *Marks stripped* = base code differs, the same reduction
+`build_basecode.py` applies to build `families/basecode_cipher.txt` (suffixes `^ ~` removed; a free-standing `[mark]` token
+is its own value, so mark-vs-digit counts as a mismatch). Gaps (an A sign with no witness sign, or the reverse) are
+counted separately as indels and are not in the substitution numerators.
+
+| Comparison | Aligned | Marks kept | Marks stripped (base code) | Digit-vs-digit only | Indels A / witness |
+|---|---|---|---|---|---|
+| 6179 p2 A vs B | 112 | 12 (10.7%) | 4 (3.6%) | 4 (3.6%) | 1 / 1 |
+| 6179 p2 A vs L1 | 110 | 23 (20.9%) | 6 (5.5%) | 6 (5.5%) | 3 / 3 |
+| 6179 p3 A vs L1 | 78 | 17 (21.8%) | 6 (7.7%) | 5 (6.4%) | 2 / 2 |
+| 6467 run 1 A vs L1 | 27 | 7 (25.9%) | 1 (3.7%) | 1 (3.7%) | 0 / 0 |
+| 6467 run 2 A vs L1 | 18 | 4 (22.2%) | 2 (11.1%) | 1 (5.6%) | 1 / 0 |
+| **Pooled (345 comparisons)** | 345 | **63 (18.3%)** | **19 (5.5%)**; 95% Wilson interval 3.6-8.4% | 17 (4.9%) | 7 / 6 (about 2%) |
+| A vs L1 only (233) | 233 | 51 (21.9%) | 15 (6.4%) | 13 (5.6%) | 6 / 5 |
+| A vs B only (112) | 112 | 12 (10.7%) | 4 (3.6%) | 4 (3.6%) | 1 / 1 |
+
+The marks-kept pooled figure (18.3%, A vs L1 21.9%) reproduces the earlier 20.1-25.5% band, so the instrument agrees with
+WC-LAGARDE's. **Stripping the marks takes the pooled disagreement from 18.3% to 5.5%: about two thirds of the pass-to-pass
+disagreement is whether a stroke is an overline/tilde, not which numeral it is.** The marks-kept 23% that every
+family control (A2-LAG3, R15-LAGHOM, GAPS145/149, R15-LAGDIG/MI) was injected with is a figure for the *marked* signs;
+the families that were run on `basecode_cipher.txt` read base codes only.
+
+Committed `*_v2.tsv` against pass A (not independent: v2 is A plus majority and image settling): 6179 5/193 literal, 3/193
+(1.6%) base; 6467 2/46 literal, 2/46 (4.3%) base. Quoted for completeness; not an error estimate.
+
+**Sign pairs behind the 19 stripped mismatches** (`lag_err_pairs.tsv`, per-cell list `lag_err_cells.tsv`). The base-pair
+counts are all small (top: 10/18 x4, 24/29 x2, 10/16 x2, the rest once each: 17/19, 12/9, 12/18, 18/mark, 1/9, 12/2, 6/8,
+12/8, 24/4), so the pair list says little by count alone. Two shape families carry most of it:
+1. **`10` vs `18` (and `10` vs `16`): 6 of 19.** A closed oval 10 against a 1-stroke + 8-loop 18; the cells are 6179
+   p2L26.6, p2L27.13, p3L7.6, p3L7.17, p2L22.10 (10~/16), p2L27.28 (16^/10). Of the six, p3L7.6/.17 were settled 18 by
+   WC-LAGARDE from the crops; p2L22.10 and p2L27.28 are majority-resolved (M); p2L26.6 and p2L27.13 sit in v2 as M (10)
+   with the witness reading 18, **not image-settled**.
+2. **`12`/`2`/`8`/`9`/`1` single-stroke-plus-loop confusions** (1-stroke present or absent): p2L27.2 (12/9), p2L28.12
+   (12/18 and 12/8^, settled 18^ by WC-LAGARDE), p3L6.8 (9/1, settled 1~), p3L6.16 (12/2, settled 2). One digit shape (a
+   leading 1-stroke read or missed) behind 5 of 19 (p2L27.2, p2L28.12 x2, p3L6.8, p3L6.16).
+3. `24` vs `29`/`4` (3 cells: p2L24.12, p2L28.7, 6467 p2L7.12) -- the last settled 24 by WC-LAGARDE.
+Ten of the 19 mismatching comparisons (nine distinct cells; p2L28.12 appears in both the L1 and B rows) are cells
+WC-LAGARDE (26 Sept) already settled from the image, so the committed base-code error is **below** the pass-to-pass 5.5%.
+
+**Result.** Marks-stripped base-code pass-to-pass disagreement is **0.055 pooled (0.036-0.084 at 95%)**, against the 0.23
+(marks-kept) that `families/homophonic_prereg.md` injected; it is well below the brief's 0.15 line. Statement for the
+orchestrator: **the homophonic prereg should be re-run at about this figure, as a separate job; it was not run here.**
+Two things a separate job should carry with it:
+- a pairwise disagreement between two readers is an upper estimate of one reader's independent error (about half, if
+  errors were independent) and a *lower* bound on errors both readers share (the same stroke shape misread alike by passes
+  from the same model family; L1 and A are both Sonnet-class readers). The control should bracket, not point-estimate:
+  0.03 / 0.055 / 0.10 (the 0.10 row of R15-LAGHOM already reads 0.699 / 0.493 / 0.672, mean 0.622, so the gate 0.60 is met
+  at 0.10 and is expected to be met below it; that row was control-only and licensed nothing about the target, per
+  SALV-DIAG, only because 0.10 sat below the then-measured 0.23).
+- the rule 3 third-attempt clause (R15-LAGHOM: "the next attempt needs new material, not another family run at the same N
+  and error") is met by the *error measurement changing*, not by a knob: this job's number comes from a different reduction
+  of data already on disk, and it changes which injected error brackets the target. It does not change N (229) or the
+  design; a re-run that still fails its control at <= 0.10 closes the homophonic/masc ladder under that clause, as before.
+Not tested here: whether `basecode_cipher.txt`'s dropped 11 free `[mark]` tokens are signs of the cipher (7 indels and 1-2
+mark-vs-digit mismatches suggest the drop decision is itself about 2-3% uncertain); stays an inference (I).
+
+**Handoff to the sign sorter.** The disagreement is under the 0.15 line, so the otherwise-branch (hand the pairs to
+`tools/lookalike_pass.py`) is not triggered. The two cells that are both M-grade and not image-settled and fall in shape
+family 1 (6179 p2L26.6 and p2L27.13, `10` vs `18`) are the cheapest image check left for the base codes; they and the
+other not-yet-settled mismatches are listed in `lag_err_cells.tsv`.
+
+Grades: 0 cipher tokens read (H 0, C 0, S 0, M 0, I 0 -- no reading was attempted). Status unchanged (`open`). Requests: 0.
+Vision: 0 calls. Files: `lag_err.py`, `lag_err.tsv`, `lag_err_pairs.tsv`, `lag_err_cells.tsv`, this section,
+`prior-work.tsv`/`look.tsv` (prior_work.py's own outputs).
+
+## Remaining gaps (LAG-ERR, 8 Oct 2026)
+Read so far: 0 of 229 cipher tokens graded H/C/S (no reading exists; transcription base-code disagreement 5.5% pooled, `lag_err.tsv`)
+- homophonic family at the measured base-code error - blocker: not-attempted; `families/homophonic_prereg.md` was gated at 0.23 marks-kept error, the base-code figure is 0.055 (0.036-0.084); next: re-run the prereg control at 0.03/0.055/0.10 then the target if it gates, ~$1.5
+- masc family at the measured base-code error - blocker: not-attempted; A2-LAG3's control was injected at 0.23 and read 0.367, the base-code figure is 0.055; next: `family_run.py --family masc --measured-error 0.055` control first, ~$1.5
+- two M-grade, not image-settled `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: not-attempted; witness reads 18, committed 10; next: crop check from images/06179_p2.png, ~$1.5
+- plaintext prior-work rows (leaf gloss LOOK, Tomokiyo, solver caches, Gachard window) - blocker: not-attempted; prior_work.py exit 4 on 8 Oct 2026, owed before any decode; next: `prior_work.py --fetch` then `--record`, ~$1
+
+## Escalation (LAG-ERR, 8 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG
+- [n/a] key-rebuild: needs a family that passes its control first
+- [x] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells remain
+- [ ] retry: homophonic and masc re-runs at the base-code error (above)
+Verdict: keep going: 4 internal gaps; cheapest next: re-run homophonic prereg control at the 0.055 base-code error, ~$1.5

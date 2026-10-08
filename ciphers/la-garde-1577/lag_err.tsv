@@ -1,0 +1,11 @@
+comparison	n_aligned	lit_mismatch	lit_rate	base_mismatch	base_rate	base_mismatch_digit_only	digit_only_rate	indel_A	indel_wit
+6179 p2 A-vs-L1	110	23	0.209	6	0.055	6	0.055	3	3
+6179 p3 A-vs-L1	78	17	0.218	6	0.077	5	0.064	2	2
+6179 p2 A-vs-B	112	12	0.107	4	0.036	4	0.036	1	1
+6467 run1 A-vs-L1	27	7	0.259	1	0.037	1	0.037	0	0
+6467 run2 A-vs-L1	18	4	0.222	2	0.111	1	0.056	1	0
+TOTAL A-vs-B	112	12	0.107	4	0.036	4	0.036	1	1
+TOTAL A-vs-L1	233	51	0.219	15	0.064	13	0.056	6	5
+TOTAL pooled	345	63	0.183	19	0.055	17	0.049	7	6
+6179 A-vs-v2	193	5	0.026	3	0.016	3	0.016	0	0
+6467 A-vs-v2	46	2	0.043	2	0.043	2	0.043	0	0

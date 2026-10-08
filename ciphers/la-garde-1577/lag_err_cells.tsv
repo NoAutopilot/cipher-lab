@@ -1,0 +1,20 @@
+unit	A_line.pos	A_sign	witness_sign
+6179 p2 A-vs-L1	p2L22.17	17	19
+6179 p2 A-vs-L1	p2L26.6	10	18
+6179 p2 A-vs-L1	p2L27.2	12	9
+6179 p2 A-vs-L1	p2L27.13	10	18
+6179 p2 A-vs-L1	p2L28.7	29^	24
+6179 p2 A-vs-L1	p2L28.12	12	18
+6179 p3 A-vs-L1	p3L6.7	18^	[mark]
+6179 p3 A-vs-L1	p3L6.8	9	1
+6179 p3 A-vs-L1	p3L6.16	12	2
+6179 p3 A-vs-L1	p3L7.5	6	8
+6179 p3 A-vs-L1	p3L7.6	18	10
+6179 p3 A-vs-L1	p3L7.17	18	10
+6179 p2 A-vs-B	p2L22.10	10~	16
+6179 p2 A-vs-B	p2L24.12	24^	29^
+6179 p2 A-vs-B	p2L27.28	16^	10
+6179 p2 A-vs-B	p2L28.12	12	8^
+6467 run1 A-vs-L1	p2L7.12	4	24
+6467 run2 A-vs-L1	p2L11.8	[mark]	07~~
+6467 run2 A-vs-L1	p2L11.12	5^	3^
