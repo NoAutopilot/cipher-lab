@@ -54,7 +54,7 @@ a_L01	16	L:s?	?	s	M
 a_L02	0	26'		ge	H
 a_L02	1	12'		ci	H
 a_L02	2	41'		le	H
-a_L02	3	L:t?	?	t	M
+a_L02	3	L:a?	?	a	M
 b_L01	4	L:c?	?	c	M
 b_L01	5	65'		ra	H
 b_L01	6	L:i?	?	i	M
@@ -64,7 +64,7 @@ b_L01	9	61'		que	H
 b_L01	10	14'		cu	H
 b_L01	11	40'		la	H
 b_L01	12	L:l?	?	l	M
-b_L01	13	L:t?	?	t	M
+b_L01	13	L:a?	?	a	M
 b_L01	14	L:n?	?	n	M
 b_L02	0	L:g?	?	g	M
 b_L02	1	65'		ra	H
@@ -128,7 +128,7 @@ b_L05	3	76'?	?	te	M
 b_L05	5	14'		cu	H
 b_L05	6	40'		la	H
 b_L05	7	L:l?	?	l	M
-b_L05	8	L:t?	?	t	M
+b_L05	8	L:a?	?	a	M
 b_L05	9	L:n?	?	n	M
 b_L05	10	L:g?	?	g	M
 b_L05	11	65'		ra	H
@@ -138,7 +138,7 @@ b_L06	3	29:?	?	traitte	M
 b_L06	4	61'		que	H
 b_L06	5	L:l?	?	l	M
 b_L06	6	41'		le	H
-b_L06	7	L:t?	?	t	M
+b_L06	7	L:a?	?	a	M
 b_L06	8	98'		fait	H
 b_L06	11	86'?	?	avec	M
 b_L06	12	1=		le Roy	H

@@ -1,0 +1,10 @@
+tile	match	second	conf	shape_description
+U1	u	s	low	Open top curl above a thick descending stroke ending in a hooked curl turning up-right; looks like E-u but E-s nearly identical
+U2	a	t	medium	Hooked 4-like top on a stem descending through a horizontal crossbar; no lower loop, matches E-a
+U3	r	a	high	Long horizontal bar through a diagonal stroke with closed loop below left; matches E-r looped y with crossbar
+U4	a	r	medium	4-like top, stem crossing a bar that extends left, no lower loop; same configuration as E-a
+U5	a	t	high	Hooked top, stem crossing the bar, no loop; direct match to E-a
+U6	a	t	high	4-like top with stem crossing the bar at mid-height; matches E-a
+U7	a	t	low	Doubled or u-like top over a stem crossing a bar at the bottom; between E-a and E-t, chose a for single stem crossing like E-a
+U8	n	-	high	Slanted h-like sign, short upper stroke, long thick descending stem; matches E-n
+U9	t	m	high	Two-minim u-shape followed by a cross, vertical crossing the bar on the right; matches E-t

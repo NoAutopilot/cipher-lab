@@ -1,0 +1,10 @@
+tile	match	second	conf	shape_description
+U1	s	u	low	Single open curl, curved top stroke sweeping down into a bottom hook curling up-right; s and u near-identical; chose s for rounder top
+U2	a	-	high	Short 4-like head over heavy descending stem, horizontal crossbar low on the stem; crossbar position matches E-a
+U3	r	a	medium	Long horizontal crossbar through middle, lower-left loop, diagonal body; matches E-r looped crossed form
+U4	a	r	medium	4-like head over stem with long thin crossbar through lower stem extending far left; stem matches E-a
+U5	a	r	high	y/4-like head, stem crossed by a bar in the lower half, slightly curved top; same as E-a
+U6	a	-	high	Small 4-like head over long stem crossed low by a horizontal bar; same as E-a
+U7	a	-	medium	4-like head, stem crossed low by a bar doubled or smudged at the base; same as E-a
+U8	n	c	high	Isolated tall stem with flag-like angled head, no crossbar; matches E-n angled head and stem
+U9	t	m	high	Minim/u pair followed by a short stem crossed by a bar (u+); exact match to E-t

@@ -7,11 +7,11 @@ b170f228r c_L01	avec luy
 b170f228r b_L01	POINT A PROPOS DANS CETTE CONJONCTURE de le traitte r de
 b170f228r b_L02	la me [s:wave] me so r te QUE vous t ve s fait la n ne e
 b170f228v a_L01	pa s se e a t fi n qui l se re n de m lu s
-b170f228v a_L02	ge ci le t TOUS AJUSTEMENS RAISONNABLES POUR LE BIEN
-b170f228v b_L01	TESMOIGNE QUIL A QUELQUE c ra i n te que cu la l t n
+b170f228v a_L02	ge ci le a TOUS AJUSTEMENS RAISONNABLES POUR LE BIEN
+b170f228v b_L01	TESMOIGNE QUIL A QUELQUE c ra i n te que cu la l a n
 b170f228v b_L02	g ra ve et ca du c s de lu ne bo u r g la c sued m mo
 b170f228v b_L03	de n t avec les en ne mi s ET QUAINSY luy et Bavier so i en
 b170f228v b_L04	t con t ra i n c t s de se re ti re r c ha cu n de
-b170f228v b_L05	leur co s te POUR cu la l t n g ra ve J AY PEINE A LE
-b170f228v b_L06	CROIRE VEU le traitte que l le t fait DEPUIS PEU avec le Roy MAIS POUR
+b170f228v b_L05	leur co s te POUR cu la l a n g ra ve J AY PEINE A LE
+b170f228v b_L06	CROIRE VEU le traitte que l le a fait DEPUIS PEU avec le Roy MAIS POUR
 b170f228v b_L07	les du c s de lu ne bo u r g CEST CHOSE QUI NEST PAS

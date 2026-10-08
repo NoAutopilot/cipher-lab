@@ -44,6 +44,15 @@ if os.path.exists('b167228/sig_marks.tsv'):
             continue
         l, occ, code, mk = ln.split('\t')[:4]
         MARK[(l, int(occ))] = (code, mk)
+# SIG-B228B (8 Oct 2026): per-token u4/4u override (b167228/sig2_shape_map.tsv, prereg_sig2.md: two blind reads matched the tile
+# to the same f.229 exemplar, decoy gate 2/3 passed); keyed by line and cipher-token index (clear words not counted), shape checked.
+OVR = {}
+if os.path.exists('b167228/sig2_shape_map.tsv'):
+    for ln in open('b167228/sig2_shape_map.tsv', encoding='utf-8'):
+        if ln.startswith('line\t') or not ln.strip():
+            continue
+        l, col, val = ln.split('\t')[:3]
+        OVR[(l, int(col))] = val
 for f in ('passes/reconciled_b170f228r.tsv', 'passes/reconciled_b170f228v.tsv'):
     for ln in open(f, encoding='utf-8'):
         if ln.startswith('#') or ln.startswith('line\t') or not ln.strip():
@@ -53,7 +62,14 @@ for f in ('passes/reconciled_b170f228r.tsv', 'passes/reconciled_b170f228v.tsv'):
         res = []
         lkey = lid.replace('b170f228', '').lstrip('_')
         nocc = 0
+        ncol = 0
         for t in TOK.findall(toks):
+            if not t.startswith('{'):
+                ncol += 1
+            if (lkey, ncol) in OVR and not t.startswith('{'):
+                assert t.rstrip('?') == 's:u4', (lid, ncol, t)
+                res.append('L:' + OVR.pop((lkey, ncol)) + '?')
+                continue
             if re.fullmatch(r"\d+[':=]?\??", t):
                 nocc += 1
                 if (lkey, nocc) in MARK:
@@ -77,5 +93,6 @@ for f in ('passes/reconciled_b170f228r.tsv', 'passes/reconciled_b170f228v.tsv'):
                 res.append(t + q)
         out.append(f'{page} {line} | ' + ' '.join(res))
 assert not MARK, ('sig_marks rows not applied', MARK)
+assert not OVR, ('sig2_shape_map rows not applied', OVR)
 open('ciphertext_b170f228.txt', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 print(len(out) - 3, 'lines; unread shapes', dict(unread))
