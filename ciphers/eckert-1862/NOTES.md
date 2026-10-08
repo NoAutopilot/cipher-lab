@@ -2262,3 +2262,30 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: the ten mssEC 15 readings (reading.md); six mssEC 18 entries (DEF1-ECK62I); Lehigh row (DEF1-ECK62P); six residue entries' M tokens (LS3-R62, 0 slips)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 4 internal gaps; cheapest next: align the 20 printed residue entries to their OR print for dated C witnesses, ~$2 (the image route for the residue M tokens is tested, 0 slips in six entries); the No. 4 book waits on a desk-browser read of the Friedman copy
+
+## K8472 (8 Oct 2026, account 1, for LANE LEDGER): which book reads Huntington objects 8472 (mssEC 16) and 6254 (mssEC 22), and is 9660 a copy of 8472
+Claimed 17:48 UTC by date -u; cap USD 5, box to 19:28 UTC. Status of this target unchanged (partial).
+
+Prior-work step, hand checklist (civil-war adapter), first lines written before any priced step:
+- check 1 (our own work, offline, 17:5x UTC, after `git fetch`): grep of 8472 / 6254 / 9660 / mssEC 16 / mssEC 22 in eckert-1862 and eckert-1864
+  NOTES.md, AUDIT.md, HYPOTHESES.md, *.tsv, NEXT-STEPS.tsv, WORK-QUEUE.tsv, status.json and ROOM.md: only the LS-SCOUT rows
+  (LEDGER-SCOUT-2026-10-07: "key factor 0.5, which book covers it is not established"), prefilter-ls4-parents.tsv (8472 = mssEC 16, 6254 =
+  mssEC 22) and the one pointer arithmetic line for mssEC 18 in eckert-1864/NOTES.md; no read, no test, no ROOM claim before this one: CLEAR.
+- check 2 (leaf and neighbours), 3 (holder transcription), 4 (editions) -- run under the hdl token / after page selection; lines follow below.
+
+### Pre-registration (written before any ledger entry was scored)
+Instrument: ciphers/eckert-1862/k8472_score.py. Books in hand: no1 (eckert-1864/key.md, Cipher No. 1), no2 (key-no2.md), no9 (key-no9.md),
+mssEC15 (eckert-1862/key.md, Feb-Jul 1862). Per entry and book: share = recognised non-function tokens / non-function tokens; clauses = number of
+maximal runs of >= 3 consecutive reading tokens, every adjacent pair an attested bigram of the pooled readings of the four books (leave-one-out for
+an entry that is itself in the corpus), containing >= 1 token from a decoded code word. Each book gets two meaning-shuffled copies (word rows,
+seeds 7 and 11). An entry passes for book B when share_B is strictly greater than every other book's share AND clauses_B is strictly greater than
+both shuffled copies of B. VERDICT RULE: a book "reads" a ledger when it passes on >= 7 of the 10 test entries; if no book does, "no book in
+hand reads it". Ties are not passes. Entries: 10 per ledger, >= 8 code-shaped words and not clear in their own transcription, chosen from the
+25 pages per ledger before any scoring.
+Matched control (rule 3), run BEFORE the targets and fixing what a verdict can mean: the same procedure on the first 10 entries of each book's own
+ciphertext file with the true book (leave-one-out). Results (clause statistic v2; v1, a plain-bigram run count that did not depend on the decoded
+tokens, gave 4/10 for no1 and was replaced before any target was scored, since shuffled copies leave it unchanged by construction):
+no1 6/10, no2 8/10, no9 0/10, mssEC15 0/10 reads by this rule. Gate: a target verdict "book B reads ledger L" is licensed only for a book whose own
+control reached >= 7/10 (today only no2); a "no book reads it" verdict is conditional: for no9 and mssEC15 (small books whose words are mostly
+a subset of no1/no2, so the strict-share condition cannot hold even for their own entries) and for no1 (6/10) the instrument is below its gate,
+so a negative for those three is "untested by this instrument", not a negative. No further retuning of the statistic (rule 3, third-attempt clause).
