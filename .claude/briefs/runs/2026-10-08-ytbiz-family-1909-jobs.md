@@ -110,3 +110,39 @@ cipher/decipherment pairs (interlinear glosses), table the pairs, and run the SA
 on each sibling table against the target's 40 legible groups, with its key-true and random-code controls; if a table is not EXCLUDED, a
 decode of the target under it with --check and a shuffled-key control. Prior-work check 2: the leaves either side of each record for a
 clear copy. Scrub the account name from any saved page. One login, <= 40 de-crypt.org requests >= 2 s. Report both numbers per table.
+
+## Wave 1 results (19:40 UTC, get_session): RUS-CS 1.50 (still blocked on L67), NL16-11106 3.36 (nl16 built; Dutch homophonic
+control-backed negative), OLD-S10 5.56 (scan 10 S 15.7%, key rank 1/120, judge FAIL), AERS-POOL 4.29 (pool already Bourdeau's; not
+promoted), CRAV-49 2.99 (T_8452/T_8453 EXCLUDED). Wave 1 total 17.70.
+
+## Wave 2 (19:4x UTC 8 Oct)
+Intake gate: na-oldenbarnevelt-2442-1605, craven-rupert-1648, wvo-11106-bergh-1572 exit 0 at 19:2x (above); na-suriname-map-1781:
+`partial` (gate run by the worker and pasted).
+
+### OLD-O4 (Opus, cap 2, box 45 min): na-oldenbarnevelt-2442-1605, step (o4): the pass-notation fix for the S rule on the scan 10 block
+NOTES.md section 23 (OLD-S10) names it: the registered S share on the scan 10 block moves 15.7% -> 26.3% when the cursive r / v notation
+is normalised the same way on both sides. Pre-register the normalisation (PREREG-OLD-O4.md pushed before the score: which folds, applied
+to passes AND key/reading side alike, and the permutation control re-run under the same normalisation so it can differ from the target),
+re-score the block, re-run the permutation control (both numbers), regenerate the reading with `--check`, update section 23's numbers in
+a dated sub-section (do not rewrite OLD-S10's text). No new vision. The verifier for the block runs after you in a separate session.
+
+### CRAV-54 (Opus, cap 2.5, box 60 min): craven-rupert-1648, R8454 and the f.142 sibling
+NOTES.md "Remaining gaps": R8454 (f.195, 2 images, Charles R. 1649) was not fetched (file cap) and BL f.142 ("heavily ciphered, with
+deciphering") untried. One DECODE login (`tools/decode_browser_login.js ... --guess-fullsize`), fetch R8454 only (check first in the
+login-free listing, `tools/decode_list.py`, whether f.142 has its own DECODE record; if so fetch it in the same login). Table any
+cipher/gloss pairs and run the SAME pre-registered A1/A2 coverage test with its controls; report both numbers per table. Note that R8447's
+codes run to 1067, beyond every sampled table (max 557): say whether R8454/f.142 reach that range. <= 20 de-crypt.org requests >= 2 s.
+
+### GLY-11106 (Opus, cap 3, box 75 min): wvo-11106-bergh-1572, glyph atlas on the 72 look-alike positions, sorter inputs for the owner
+NOTES.md "Remaining gaps" first line: 72 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; next:
+`tools/glyph_atlas.py segment`/`cluster` on images/crops so `tools/sign_sorter.py` can build the owner's sheet. Read TRANSCRIPTION.md and
+the two tools' --help first. Run segment + cluster on the folder's existing crops (disk only, no network), report cluster purity on the
+positions where both readers agree (a known-answer check of the atlas itself), and build the sign-sorter inputs (focus.tsv + tiles) the
+tools produce. Do NOT publish an artifact (the account-3 orchestrator publishes sorters); write one ASKS-ready line in NOTES.md naming the
+built sheet. No design test, no decode.
+
+### SUR-IJ (Opus, cap 2, box 45 min): na-suriname-map-1781, the dotted-ij controlled shape look
+NOTES.md "While waiting" (D1A-SURV, 8 Oct 2026): compare the letters' dotted ij with the inv. 86 Nieuw N-row [u-dots] (= n, M) by a
+controlled shape look, ~$1.5. Disk images only. Pre-register the look (PREREG-SUR-IJ.md: which crops, blind tile order, decoy tiles of
+known class so the look can fail), one or two blind Opus subagent passes on tiles (never full pages), score against the decoys, report
+both numbers; change a grade only if the pre-registered gate passes. Update Remaining gaps/Escalation, gaps_check.
