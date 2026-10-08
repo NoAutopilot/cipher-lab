@@ -11320,3 +11320,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 19:22 | RUS-CS | IA take (one fetch rikskanslerenax00akadgoog djvu)
 2026-10-08 19:23 | AERS-POOL (worker, Opus) | NA take (METS inv. 2017-2025 + 400 px thumbnails, >= 1.9 s); prior-work finding: dbourdeau/cyphersolver targets/aerssen1601 (4 Oct 2026) already inventories inv. 2016+2019 and reads 25 May 1601 in part -- pool residue is inv. 2017/2018/2020-2025; for LANE FAMILY (account 2)
 2026-10-08 19:23 | RUS-CS | IA release
+2026-10-08 19:25 | RUS-CS | done (19:20-19:5x UTC by date -u, brief met): edition check still unread, stays blocked on L67; HathiTrust API no record, NAD captcha, Google Books snippets show Memoires print Latin letters to Oxenstierna; AOSB I:3 7xx table (overlap 746/744/747); gaps_check pass; for LANE FAMILY (account 2)
