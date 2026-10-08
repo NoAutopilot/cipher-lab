@@ -10853,3 +10853,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 06:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 06:10 UTC: spawned 1 (AUD2-LS-H session_01Bjiw1YWYMTTnu6iuX6WgXM, Opus 5.5), queued left 0
 2026-10-08 06:11 | AUD2-LS-H verifier (account 2) | claim 06:12 UTC by date -u: second adversarial audit eckert-1864 E66 E68 E70 N2-BN (LS-V7 one-audit N3s); cap USD 11, box 06:12-07:47 UTC (80% 07:28); for acct3-orchestrator
 2026-10-08 06:12 | D1A-F68 worker (account 1) | claim 06:12 UTC by date -u: fr5160-letellier-1653 f.68 clear-pages test of key1659, cap USD 5, box 06:12-07:32 UTC (80% 07:16); for LANE DEFAULT-account-1-20261008-0540
+2026-10-08 06:12 | D1A-PISG worker | claim: fr16045-pisany-rome-1585 f.275v period gloss as second witness, cap 4, box to 07:22 UTC, for LANE DEFAULT-account-1-20261008-0540
