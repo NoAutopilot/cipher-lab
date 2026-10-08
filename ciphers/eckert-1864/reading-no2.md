@@ -873,5 +873,17 @@ Code-word tokens: H 7, C 1.
 
 Code-word tokens: H 20, I 1.
 
-Totals over the 75 entries: H 1846, C 71, I 61, M 2.
+**N2-BX | Page 233 | 9125 | 18 Nov 1864 (cipher time word 4 PM), Beckwith at Burlington N. J., to Grant (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees; six code tokens)**
+
+[Washington] {time: 4 PM} [18] For [Maj Genl U S Grant] [.] Please come this way if posy able on your re turn [Secretary of War]
+
+Code-word tokens: H 6.
+
+**N2-BY | Page 234 | 9126 | 22 Nov 1864 (cipher time word 8 PM), A. H. Caldwell, to Rawlins (LS4-R2a, 8 Oct 2026; image-read, volunteer text agrees; "beat" for "be at" as written)**
+
+[Washington] {time: 8 PM} [22] to [Brig. General] Rawllins I will not beat [City Point] until [Thursday] [Lieut Gen U.S. Grant]
+
+Code-word tokens: H 8.
+
+Totals over the 77 entries: H 1860, C 71, I 61, M 2.
 <!-- decode.py: derived block ends -->
