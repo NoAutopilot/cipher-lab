@@ -1,0 +1,22 @@
+tile	A	B	conf	shape_description
+T01	NONE	s	medium	crossed double-f with a horizontal bar through it
+T02	c	c	high	q-like loop on top with a long straight descending stem
+T03	s	NONE	low	S-shaped wave with a small hook on the left
+T04	c	c	high	q-like bowl with a long descending stem
+T05	r	r	high	y-shaped sign with a horizontal bar through it and a looped tail
+T06	c	c	high	q-like bowl with a long descending stem
+T07	l	l	medium	small n/u-shaped sign with a pointed top
+T08	s	NONE	low	curled S with a closed hook and a dot at the lower right
+T09	l	l	medium	small n/u-shaped sign with a pointed top
+T10	NONE	n	medium	g-shaped sign with a cross-stroke and a lower curl
+T11	NONE	n	medium	g-shaped sign with a cross-stroke
+T12	NONE	s	medium	crossed double-f with a horizontal bar through it
+T13	c	c	high	q-like loop with a long descending stem
+T14	NONE	n	medium	g-shaped sign with a cross-stroke and a lower curl
+T15	u	u	medium	zeta-shaped sign with a top hook and a lower curl
+T16	l	l	medium	small n/u-shaped sign
+T17	c	c	high	q-like loop with a descending stem
+T18	l	l	medium	small n/u-shaped sign
+T19	s	NONE	low	S-curl with a top hook and a lower loop
+T20	c	c	high	q-like loop with a descending stem
+T21	l	l	medium	small n/u-shaped sign

@@ -1,0 +1,8 @@
+shape	letter	source
+# SIG-B228, 8 Oct 2026: external-exemplar values (prereg_sig.md; two blind Sonnet reads agree on the same exemplar for every tile; decoy gate 2/3 PASS). Grade M like every letter sign.
+q	c	f229 E-c + Tomokiyo c, 6/6 tiles both reads
+ll	l	f229 E-l + Tomokiyo l, 4/4 tiles
+ll|u4	l	f229 E-l + Tomokiyo l, 1/1
+g+	n	Tomokiyo n only, 3/3 tiles (no f229 match)
+?(ff_crossed_double_long_s)	s	Tomokiyo s only, 2/2 tiles
+v	s	f229 E-s only, 1/1 (f229 channel decoys 1/3)

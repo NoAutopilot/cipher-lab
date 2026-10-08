@@ -1,0 +1,74 @@
+strip	line	idx	code	role	transcribed
+S01	r_a_L02	1	73	other	
+S01	r_a_L02	2	45	other	
+S01	r_a_L02	3	70	other	
+S01	r_a_L02	4	77	other	
+S01	r_a_L02	5	98	other	
+S01	r_a_L02	6	16	target	none
+S01	r_a_L02	7	73	target	none
+S02	r_c_L01	1	86	target	none
+S02	r_c_L01	2	9	other	
+S03	r_b_L01	1	16	target	none
+S03	r_b_L01	2	41	other	
+S03	r_b_L01	3	29	target	none
+S03	r_b_L01	4	16	other	
+S04	r_b_L02	1	40	control	'
+S04	r_b_L02	2	46	target	none
+S04	r_b_L02	3	46	other	
+S04	r_b_L02	4	73	other	
+S04	r_b_L02	5	76	target	none
+S04	r_b_L02	6	33	other	
+S04	r_b_L02	7	81	target	none
+S04	r_b_L02	8	98	target	none
+S04	r_b_L02	9	40	target	none
+S04	r_b_L02	10	51	target	none
+S05	v_a_L01	1	55	target	none
+S05	v_a_L01	2	71	control	'
+S05	v_a_L01	3	22	target	none
+S05	v_a_L01	4	62	target	none
+S05	v_a_L01	5	71	other	
+S05	v_a_L01	6	66	target	none
+S05	v_a_L01	7	16	target	none
+S05	v_a_L01	8	44	other	
+S06	v_a_L02	1	26	other	
+S06	v_a_L02	2	12	target	none
+S06	v_a_L02	3	41	other	
+S07	v_b_L02	1	65	other	
+S07	v_b_L02	2	81	other	
+S07	v_b_L02	3	96	target	none
+S07	v_b_L02	4	10	other	
+S07	v_b_L02	5	19	other	
+S07	v_b_L02	6	16	target	none
+S07	v_b_L02	7	44	control	'
+S07	v_b_L02	8	51	other	
+S07	v_b_L02	9	6	other	
+S07	v_b_L02	10	40	other	
+S07	v_b_L02	11	13	other	
+S07	v_b_L02	12	48	other	
+S08	v_b_L03	1	16	target	none
+S08	v_b_L03	2	86	other	
+S08	v_b_L03	3	10	other	
+S08	v_b_L03	4	95	other	
+S08	v_b_L03	5	51	other	
+S08	v_b_L03	6	47	other	
+S08	v_b_L03	7	9	other	
+S08	v_b_L03	8	96	target	none
+S08	v_b_L03	9	73	other	
+S08	v_b_L03	10	73	other	
+S08	v_b_L03	11	95	other	
+S09	v_b_L04	1	90	control	'
+S09	v_b_L04	2	65	other	
+S09	v_b_L04	3	16	target	none
+S09	v_b_L04	4	71	other	
+S09	v_b_L04	5	66	target	none
+S09	v_b_L04	6	77	other	
+S09	v_b_L04	7	66	target	none
+S09	v_b_L04	8	30	other	
+S09	v_b_L04	9	14	target	none
+S09	v_b_L04	10	16	target	none
+S10	v_b_L07	1	10	other	
+S10	v_b_L07	2	19	other	
+S10	v_b_L07	3	16	target	none
+S10	v_b_L07	4	44	other	
+S10	v_b_L07	5	51	other	
+S10	v_b_L07	6	6	other	

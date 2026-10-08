@@ -1,17 +1,17 @@
 # Baluze 170 f.228r-v bare passage (B167-228, 8 Oct 2026): provisional, reconciled transcription (D1-BAL170/B) read with Tomokiyo's
 # D'Avaux table (published key, credited) and the f.229 letter-shape values (b167228/to_pipe.py). Letter signs M; unmarked numerals I
 # (b167228/key_unmarked.tsv). Regenerate: python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check
-# Grades: H 56, I 27, M 53, U 18
-b170f228r a_L02	so n t ma [s:ll|u4] sa ti [s:v] fait [s:ff_crossed_double_long_s] de so A CE QUE L ON NOUS
+# Grades: H 71, I 12, M 70, U 1
+b170f228r a_L02	so n t ma l sa ti s fait s de Bavier A CE QUE L ON NOUS
 b170f228r c_L01	avec luy
-b170f228r b_L01	POINT A PROPOS DANS CETTE CONJONCTURE de le gu r de
-b170f228r b_L02	la me [s:wave] me so r te QUE vous t ve [s:ff_crossed_double_long_s] fait la n ne e
-b170f228v a_L01	pa s se e a t fi n qui [s:ll] se re n de m lu s
+b170f228r b_L01	POINT A PROPOS DANS CETTE CONJONCTURE de le traitte r de
+b170f228r b_L02	la me [s:wave] me so r te QUE vous t ve s fait la n ne e
+b170f228v a_L01	pa s se e a t fi n qui l se re n de m lu s
 b170f228v a_L02	ge ci le t TOUS AJUSTEMENS RAISONNABLES POUR LE BIEN
-b170f228v b_L01	TESMOIGNE QUIL A QUELQUE [s:q] ra i n te que cu la [s:ll] t [s:g+]
-b170f228v b_L02	g ra ve et ca du [s:q] s de lu ne bo u r g la [s:q] sued m mo
-b170f228v b_L03	de [s:g+] t avec les en ne mi s ET QUAINSY luy et Bavier so i en
-b170f228v b_L04	t con t ra i n [s:q] t s de se re ti re r [s:q] ha cu n de
-b170f228v b_L05	leur co s te POUR cu la [s:ll] t [s:g+] g ra ve J AY PEINE A LE
-b170f228v b_L06	CROIRE VEU le traitte que [s:ll] le t fait DEPUIS PEU avec le Roy MAIS POUR
-b170f228v b_L07	les du [s:q] s de lu ne bo u r g CEST CHOSE QUI NEST PAS
+b170f228v b_L01	TESMOIGNE QUIL A QUELQUE c ra i n te que cu la l t n
+b170f228v b_L02	g ra ve et ca du c s de lu ne bo u r g la c sued m mo
+b170f228v b_L03	de n t avec les en ne mi s ET QUAINSY luy et Bavier so i en
+b170f228v b_L04	t con t ra i n c t s de se re ti re r c ha cu n de
+b170f228v b_L05	leur co s te POUR cu la l t n g ra ve J AY PEINE A LE
+b170f228v b_L06	CROIRE VEU le traitte que l le t fait DEPUIS PEU avec le Roy MAIS POUR
+b170f228v b_L07	les du c s de lu ne bo u r g CEST CHOSE QUI NEST PAS

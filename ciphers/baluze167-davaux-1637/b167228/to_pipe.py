@@ -19,12 +19,31 @@ for f in ('passes/reconciled_b170f229r.tsv', 'passes/reconciled_b170f229v.tsv'):
                 if let in LET:
                     votes[shape][let] += 1
 SHAPE = {s: c.most_common(1)[0][0] for s, c in votes.items()}
+# SIG-B228 (8 Oct 2026): shapes with no f.229 value get the external-exemplar value of b167228/sig_shape_map.tsv, if any
+# (prereg_sig.md: two blind reads matched to Tomokiyo's block or a labelled f.229 tile, decoy gate passed); never from f.228 context.
+import os
+if os.path.exists('b167228/sig_shape_map.tsv'):
+    for ln in open('b167228/sig_shape_map.tsv', encoding='utf-8'):
+        if ln.startswith(('#', 'shape\t')) or not ln.strip():
+            continue
+        sh, let = ln.split('\t')[:2]
+        SHAPE.setdefault(sh, let)
+        print('external shape', sh, '->', let)
 for s, c in sorted(votes.items()):
     print('f229 shape', s, dict(c), '->', SHAPE[s])
 out = ['# Baluze 170 f.228r-v (same letter as f.229, 25 Aug 1640, Amiens, bare cipher passage), reconciled by D1-BAL170/D1-BAL170B',
        '# (passes/reconciled_b170f228{r,v}.tsv). B167-228, 8 Oct 2026: letter shapes given the f.229 values (majority per shape,',
        '# b167228/to_pipe.py); L:x? = letter sign, M; s:<shape> = shape with no f.229 value (unread). Numerals as seen.']
 unread = collections.Counter()
+# SIG-B228 (8 Oct 2026): numeral marks agreed by two blind reads on line strips (b167228/sig_marks.tsv, prereg_sig.md item 6,
+# control gate 3/4 PASS) replace an unmarked numeral's transcription; keyed by line and numeral occurrence, code checked.
+MARK = {}
+if os.path.exists('b167228/sig_marks.tsv'):
+    for ln in open('b167228/sig_marks.tsv', encoding='utf-8'):
+        if ln.startswith('line\t') or not ln.strip():
+            continue
+        l, occ, code, mk = ln.split('\t')[:4]
+        MARK[(l, int(occ))] = (code, mk)
 for f in ('passes/reconciled_b170f228r.tsv', 'passes/reconciled_b170f228v.tsv'):
     for ln in open(f, encoding='utf-8'):
         if ln.startswith('#') or ln.startswith('line\t') or not ln.strip():
@@ -32,7 +51,16 @@ for f in ('passes/reconciled_b170f228r.tsv', 'passes/reconciled_b170f228v.tsv'):
         lid, toks = ln.rstrip('\n').split('\t')
         page, line = lid.split('_', 1)
         res = []
+        lkey = lid.replace('b170f228', '').lstrip('_')
+        nocc = 0
         for t in TOK.findall(toks):
+            if re.fullmatch(r"\d+[':=]?\??", t):
+                nocc += 1
+                if (lkey, nocc) in MARK:
+                    code, mk = MARK.pop((lkey, nocc))
+                    assert t.rstrip("?':=") == code, (lid, nocc, t, code)
+                    res.append(code + mk)
+                    continue
             if t.startswith('{'):
                 res += ['w:' + w for w in t[1:-1].split()]
                 continue
@@ -48,5 +76,6 @@ for f in ('passes/reconciled_b170f228r.tsv', 'passes/reconciled_b170f228v.tsv'):
             else:
                 res.append(t + q)
         out.append(f'{page} {line} | ' + ' '.join(res))
+assert not MARK, ('sig_marks rows not applied', MARK)
 open('ciphertext_b170f228.txt', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 print(len(out) - 3, 'lines; unread shapes', dict(unread))

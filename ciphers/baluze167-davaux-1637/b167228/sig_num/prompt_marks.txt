@@ -1,0 +1,24 @@
+You are a blind reader of a 1640 French cipher letter. Use only the ten images named below; do not read any other repository file.
+In this cipher a numeral may carry a mark that changes its meaning: an ACUTE (a short slanting stroke above or just above-right of the
+numeral), a DIAERESIS (two dots above), a BAR (a horizontal stroke above), or NO mark. Note: in this hand the digit 1 is often written
+as a dotted i (a dot over the 1); that dot belongs to the digit and is NOT a mark. A tick that clearly sits over a neighbouring sign
+belongs to that sign.
+
+Images: /home/user/cipher-lab/ciphers/baluze167-davaux-1637/b167228/sig_num/S01.png ... S10.png (one cipher line each; some show a bit
+of plain French or a neighbouring line at the edges -- ignore those). For each strip, the numerals on its main cipher line are listed
+below in left-to-right order (letter signs between them are not listed). Look at each strip at full size.
+
+S01: 73 45 70 77 98 16 73
+S02: 86 9
+S03: 16 41 29 16
+S04: 40 46 46 73 76 33 81 98 40 51
+S05: 55 71 22 62 71 66 16 44
+S06: 26 12 41
+S07: 65 81 96 10 19 16 44 51 6 40 13 48
+S08: 16 86 10 95 51 47 9 96 73 73 95
+S09: 90 65 16 71 66 77 66 30 14 16
+S10: 10 19 16 44 51 6
+
+For every listed numeral report the mark you see: acute, diaeresis, bar, none, or unsure. Judge only what is on the page.
+Output ONLY a TSV block with header strip<TAB>idx<TAB>numeral<TAB>mark<TAB>note (idx = 1-based position in the list above),
+one row per listed numeral (70 rows), nothing after it.

@@ -1,0 +1,15 @@
+You are a blind palaeographic matcher. Do not read any other file in the repository; use only the three images named below.
+
+Images (absolute paths, view each with the Read tool):
+1. UNKNOWN sheet: /home/user/cipher-lab/ciphers/baluze167-davaux-1637/b167228/sig_tiles/sheet_unknown.png -- 21 tiles T01..T21 cut from a 1640 French cipher letter. Each tile is centred on ONE target sign (the sign nearest the horizontal centre of the tile); neighbouring signs at the tile edges are context, ignore them.
+2. EXEMPLAR sheet A: /home/user/cipher-lab/ciphers/baluze167-davaux-1637/b167228/sig_tiles/sheet_f229_exemplars.png -- 11 labelled tiles E-s, E-n, E-r, E-a, E-c, E-m, E-u, E-p, E-e, E-t, E-l from the next leaf of the same letter, same hand. The label letter is the plaintext letter of the centred sign.
+3. EXEMPLAR sheet B: /home/user/cipher-lab/ciphers/baluze167-davaux-1637/b167228/sig_tiles/sheet_tomokiyo_block.png -- a printed table of the cipher's letter signs: the pink header row gives the plaintext letters a b c d e f g h i l m n o p q r s t u x y z; the handwritten signs under each header letter are that letter's cipher signs (several per letter, in rows below).
+
+Task: for every tile T01..T21, independently:
+- A: the single best-matching exemplar on sheet A (give its letter, e.g. "s"), or NONE if no exemplar on sheet A is the same sign shape (do not force a match: a different shape is NONE).
+- B: the header letter of the column on sheet B whose sign is the same shape, or NONE if no sign in the table matches.
+- conf: high / medium / low.
+- a few words describing the target sign's shape.
+Judge only by shape. Do not use any idea of what the text might say.
+
+Output ONLY a TSV block with header: tile<TAB>A<TAB>B<TAB>conf<TAB>shape_description , 21 rows, nothing else after it.
