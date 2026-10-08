@@ -3326,3 +3326,132 @@ reader; "potato" is a tail group. `depth_pct` = H / (H + I + M) over the message
 - Rows: status.json one result row each for E83 and E84 (N3), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E83,
   SO-ECKERT-E84 with prompts in second-opinions/; JSTOR-QUEUE.tsv 4 rows. Requests: hdl.huntington.org 6 images + 6 item JSONs; archive.org 11
   djvu files + 8 fts; googleapis 15; loc.gov 4; OpenAlex 5, S2 5, CORE 5; all >= 1.2 s apart.
+## AUDIT (LS3-V18a)
+
+Verifier LS3-V18a (account 2, LANE ST-LEDGER-3, session_01NymtgDJeDWU3K51WSJR7Jt), 8 Oct 2026, 10:40-11:1x UTC by `date -u`; a separate session
+from every reader (LS3-R18 read N2-BP, E78, N2-BQ, O9-BA, O9-BB; LS3-R9 read O9-AK, E76, O9-AL, E77), not protecting their conclusions. Nothing
+decoded beyond re-running the committed scripts, a three-book decode of each block with decode.py's own functions (scratch, not committed) and key
+look-ups. Key source for every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md.
+
+### 1. Re-derivation (rule 7), which book, image check
+- `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check`, `ls3_r18_control.py --check`: exit 0 each.
+- **Which book.** Each block decoded under key.md, key-no2.md and key-no9.md. H count No. 1 / No. 2 / No. 9 and whether a sentence results:
+  N2-BP 16/24/9 (only No. 2 reads: Ohio, Indiana, Illinois, Iowa, 100000, Arms, Equipment, 20, 3, fortifications, Department, Secretary of War,
+  1.30 PM, April 21); E78 12/12/4 (only No. 1: 3.30 PM, Colonel, Quartermaster, Transportation, Potomac, Monroe, Qr Master Genl); N2-BQ 8/9/3 (only
+  No. 2: 7 PM, 2 telegrams of to day, General Rucker, Transportation, Cipher); O9-BA 8/8/5 (only No. 9: Artillery, Infantry, Guards, Bridge, Halleck);
+  O9-BB 10/10/9 (only No. 9: Washington, 10 PM, Major, Quartermaster, New York, Fort Monroe, Washington, Troops, Quartermaster General); O9-AK 5/5/5
+  (only No. 9: Heintzelman, Ohio, Regiment, Troops, Halleck); E76 6/7/4 (only No. 1: 12, New York, Colonel, signed Butler). **No mis-keyed entry.**
+- **Clause recount** (the readers' counts were one reader's hand counts; recounted here from the three decodes, code-word tokens that read sensibly
+  in place, chosen book vs the other two): E78 12/12 vs 2/12 (No. 2: "train", "Delaware") and 1/4 (No. 9); N2-BP 23/25 vs about 2/16 (No. 1) and 0/9;
+  N2-BQ 9/9 vs 1/8 and 0/3; O9-BB 9/10 vs 1/10 and 0/10; O9-BA 5/5 vs 0/8 and 0/8. The readers' direction holds everywhere; they undercounted E78
+  (Sugar, below) and overcounted the losing books (E78 No. 2 5/12, N2-BQ No. 1 4/9, O9-BA No. 1 3/8). The chosen book beats both others and the
+  200-seed shuffle in every entry.
+- **Image** (Huntington IIIF, `hdl.huntington.org/iiif/2/p16003coll11:<pointer>/full/3000,/0/default.jpg` for 9714 and 9717; 2400 px for 8946,
+  9111; scratch, not committed). Line crops cut here:
+  `python3 tools/iiif_lines.py --image $S/img/p9714.jpg --out $S/c9714 --prefix p9714 --region 250,280,2500,2420 --centres 112,252,352,448,560,668,792,908,1020,1132,1252,1452,1568,1680,1792,1908,2020,2140,2252 --lines-per-crop 2 --max-width 2400`
+  and `python3 tools/iiif_lines.py --image $S/img/p9717.jpg --out $S/c9717 --prefix p9717 --region 250,360,2400,2600 --centres 40,160,280,392,496,600,720,832,1040,1152,1272,1384,1488,1600,1720,1840,1952,2060,2180,2292,2400,2512 --lines-per-crop 2 --max-width 2400`
+  (the line finder's own profile found only 10 of 19 lines on 9714's faint pencil, so centres were set by eye from a 750 px view).
+  Word for word, header to tail: **O9-BB** (9717, the longest, 13 lines), **N2-BP** (9714, 11 lines), **E78** (9714, 8 lines), and **O9-BA** (9717,
+  8 lines, the weakest): all agree with the ciphertext files except O9-BA line 6, where the image reads **"rabbits"** (plural), not "rabbit"
+  (transcription left as is, a reader's file; the reading becomes "guard bridges").
+- **M tokens re-read from the image**: N2-BP "Yawl" (reads Yawl, final l looped; not "Yard"), "spit" (clear); E78 "Sugar" (clear); O9-BA "Randolphed",
+  "wedlock" (clear, as transcribed); O9-BB "Surgery" (clear). O9-AK and E76 carry no M token.
+- **Key row Bologna/Bolivia = Heintzelman**: mssEC 67 p.[10] re-read from the committed ciphers/eckert-1862/images/mssEC67_p1730.jpg (the IIIF server
+  answered 501 for pointer 1730 today): l.18 of "Maj. Generals", printed "Bologna" left, "Bolivia" right, handwritten "Heintzelman". **Second eye
+  agrees**; the row stands at H.
+
+### 2. Entries located in print, confirmed by script
+| ID | printed at | how confirmed |
+|---|---|---|
+| **N2-BP** | **OR ser. III vol. 4 pp.238-239** (War Department, Washington, April 21, 1864, Stanton to Lieutenant-General Grant, Culpeper), followed by Grant's reply of the same day; also **Papers of Ulysses S. Grant vol. 10** (IA `papersofulyssess0010gran`, full-text hit, page not read: lending item) | IA `cu31924079575373` djvu (scratch): "The Governors of Ohio, Indiana, Illinois, and Iowa are here, and propose to offer to the Government 100,000 men, to be ready for the field, clothed, armed, and fully equipped, within twenty days from date of notice, and to serve for the period of three months in fortifications, or wherever else their services may be required, and in any State. The Department would be glad to have your opinion as to whether this offer should be accepted or refused. EDWIN M. STANTON, Secretary of War." Word for word with the ledger. **N1.** LS3-R18's "no hit" came from OR ser. I only. |
+| **O9-AL** | OR ser. I vol. 37 pt 2 **p.453** (Washington, July 26, 1864, 12.30 p.m., Halleck to General Kelley, Cumberland) | cached `warofrebellion372unit` djvu: "General Heintzelman has been directed to give you all the assistance possible from his department." Word for word (ledger "Dept"). **N1**, as LS3-R9 said. |
+| **E77** | ORN ser. I vol. 11 **p.204** ([Telegram.] Navy Department, December 22, 1864, Fox to Commodore John Rodgers, commanding U.S.S. Dictator, Norfolk) | IA `officialrecordso0011unse` djvu: "Yesterday the fleet were inactive at their destination on account of continued bad weather. This from General Grant. You may be in time yet. G. V. Fox." Word for word; the ledger's "polkaing Dick potato" sits where the print's address has "Commanding U.S.S. Dictator". **N1**, as LS3-R9 said. |
+
+### 3. Entries not located: search families (8 Oct 2026)
+Phrases taken verbatim from the decoded lines. Context found on the way is context, not a location of the entry.
+
+| family | searched | result |
+|---|---|---|
+| **ORN first** (brief: LS3-R18 did not search it) | phrase and keyword regex over ORN ser. I vol. 5 (`officialrecordso0005unse`, Potomac Flotilla), vol. 9 (to 4 May 1864, cached), vol. 10 (cached), vol. 11 (`officialrecordso0011unse`) | no entry located; ORN I/9 has Van Vliet's 1864 letters to Canby on a chartered steamer (unrelated); "by Friday next" in ORN I/11 is Grant to Fox, Dec 1864 (unrelated) |
+| OR by date and correspondent, +/- 3 days (normalized-text regex, whole volume) | OR I/33 (cached, to 30 Apr 1864), I/34 pt 3 (`warofrebellion343unit`), I/36 pt 2 (cached), I/42 pt 3 (`warofrebellion423unit`), I/43 pt 2 (cached), **ser. III vol. 4** (`cu31924079575373`) | **N2-BP located (section 2).** Context: **N2-BQ** -- OR I/33 **p.934** prints Humphreys to the Commanding Officer Engineer Brigade, 21 Apr 1864, 2.40 p.m.: "I wrote you by mail on the 19th ... requested that you would use the cipher when replying by telegraph to confidential communications. Land transportation will not be needed." N2-BQ is Benham's 7 p.m. reply ("omitting land transportation ... not being aware that that would ensure a cipher"): the other half is printed, its own text is not. **O9-BA** -- OR I/33 about **p.912** prints Halleck to Dix, 19 Apr: "Cannot the Fourteenth New York Heavy Artillery be spared from your department?", and about **p.954** Halleck to Burnside, 23 Apr: "The Fourteenth New York Heavy Artillery, armed as infantry, has been assigned to your corps"; p.934 shows Canby at New York on 21 Apr (his reply to Halleck on troops to be sent). O9-BA's question of 22 Apr is between the two; not printed. **O9-AK** -- OR ser. III vol. 4 **pp.234-235, 240-241** prints Brough to Stanton, 18 Apr ("one regiment of volunteer militia ... for guard duty at Johnson's Island, you can take the two veteran regiments down there to the front"), Stanton's authority the same day, Stanton to Heintzelman 21 Apr and Heintzelman's reply; OR I/33 about p.954 prints Halleck to Heintzelman 23 Apr (militia at Gallipolis). O9-AK (25 Apr: the regiment will be at Johnson's Island by Friday; send the relieved troops to the field) is the next step; not printed. **O9-BB** -- OR I/33 **p.992** prints Fox to Welles, 26 Apr, asking for the tugs at New York to be hurried to Fort Monroe; Meigs to Van Vliet of 22 Apr not found. **E78** -- OR I/33 index lists Biggs's correspondence with the Quartermaster General's office at p.814 only (earlier in April); E78 not found. **E76** -- OR I/42 pt 3 **pp.480-481** prints Col. J. A. Hardie (Inspector-General) to Butler, Fort Monroe, 1 Nov 1864, and Grant to Butler, 1 Nov 3.30 p.m. ("dispatch from the Secretary of War asking me to send ..."), the start of Butler's New York election-week posting; E76 itself not found. |
+| Sender's/recipient's papers | Butler, Private and Official Correspondence vols. 4-5 (cached) for E76, E78, O9-AK; Lincoln in the Telegraph Office (cached); Papers of U. S. Grant vol. 10 by IA full text (N2-BP hit) | no hit for the six; Butler vol. 5 has no special-car telegram of 1 Nov |
+| IA full text, all items (be-api fts) | 15 quoted phrases over the seven entries (two to three each) | N2-BP only (OR III/4 in three IA copies, Grant Papers vol. 10); nothing for the other six |
+| Google Books API (key, country=US) | 12 queries (5 answered 503, one retry each; 2 still 503: N2-BQ, E76 "first through train") | no hit on any entry; one lead for O9-AK: **The Mereness Calendar** (1971, calendar of Federal documents on the Upper Mississippi Valley) snippet "... militia to Johnson's Island for duty. W.D. 108 H.D." -- a calendared War Department telegram, not read; if it is O9-AK, the class drops to N2 |
+| 1864 press (loc.gov Chronicling America JSON, date window) | O9-AK 22-30 Apr: 0; O9-BA 20-28 Apr: 0; E76 1-5 Nov: 90 pages, not read; N2-BP: timed out (the governors' offer itself was public in late April) | no entry located |
+| OpenAlex, Semantic Scholar, CORE (keys) | one query per entry each | nothing relevant |
+| JSTOR | 12 rows appended to JSTOR-QUEUE.tsv (families (i) and (ii)) for E78, N2-BQ, O9-BA, O9-BB, O9-AK, E76 | pending (never blocks) |
+| Unread / unreachable | NARA RG 92 (QMG letters and telegrams sent), RG 107 (M473, Secretary of War telegrams), RG 77 (Engineer Brigade); the Mereness Calendar entry; the Grant Papers vol. 10 page; HathiTrust full text; the 90 press pages for E76 | unread |
+
+### 4. Grades (rule 4) after the image and key re-reads
+- **N2-BP** H 22, C 2, M 0. The print supplies two tokens: "spit" reads **men** (print "100,000 men"); key-no2.md has Spit = Near (and key.md Spit = Men),
+  so either the No. 2 row is misread or the clerk used the No. 1 value -- a data conflict for the key row, logged, graded C here. The second "opinion"
+  is the plain word (print "your opinion"); the decoder's [Field] for it is withdrawn (H 24 -> 22 with spit moved to C). "Yawl" = Signed (H, image
+  checked). Tail "Beach Harriet Genesis Oliver Allen" = Secretary of War, 1.30 PM, April 21 (20 + 1): agrees with the header's own "1.30 pm" and date.
+- **E78** H 12, M 1. **"Sugar" is not unread**: key.md p.21 l.14 gives Sugar = **Interrogation** (the decoder's "[?]" is that meaning, a question
+  mark), so "Is your transportation coming? Report daily by mangle." LS3-R18's M on Sugar is withdrawn. The one unread word is **"mangle"** ("by
+  mangle"), which has no row in any of the three books and which the decoder leaves plain. depth_pct 12 of 13.
+- **N2-BQ** H 9, M 0 (as the reader). "Minnie" = 7 PM agrees with the header; "Brooks whiffs" = 2 telegrams; "Pigeon" = Cipher.
+- **O9-BA** H 5, M 2. The reader graded all five M because the entry has no time word; the book is fixed instead by (a) the No. 9 signature Applause =
+  Halleck, which reads in O9-AK and O9-AL as well (O9-AL is printed over Halleck's name), and (b) the print of the next day, which calls the same
+  regiment "Fourteenth New York Heavy Artillery, armed as infantry" -- Rodney = Artillery and Segment = Infantry, independent of the decoder. Sexton
+  = Guards and "rabbits" (image) = Bridges, H. M 2: "Randolphed" and "wedlock" have no No. 9 row (the reader's "armed?" for Randolphed is a guess the
+  print favours, not a reading). depth_pct 5 of 7 = 71.4.
+- **O9-BB** H 9, M 1 ("Surgery", no No. 9 row). Laura = 10 PM agrees with the header; Abbot = Quartermaster General agrees with the plain signature
+  "M C Meigs" on the same line; Midas = New York agrees with the operator "John Horner NY".
+- **O9-AK** H 5, M 0. Bologna = Heintzelman confirmed by a second eye (section 1).
+- **E76** H 6, M 0. Francis = 12 agrees with the header "12M"; Pandora = Colonel reads the same way in E66 ("Pandora Wise" = Colonel Wise); Knox =
+  Butler. Most of the text is plain.
+
+### 5. Classification (key `period` for all)
+`depth_pct` = H / (H + C + I + M) over the entry's cipher tokens (plain words and names excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| N2-BP Stanton to Grant, Culpeper, 21 Apr 1864 1.30 PM | **N1** | known (OR III/4 pp.238-239; Grant Papers vol. 10) | D4 | 100 (22 H + 2 C of 24) | word for word with the print; image all 11 lines |
+| E78 QMG (Belcher) to Lt Col H. Biggs, 21 Apr 1864 3.30 PM | **N3** | unknown | D3 | 92.3 (12 H of 13) | image all 8 lines; time word = header; external: Biggs, chief quartermaster at Fort Monroe, in correspondence with the QMG's office (OR I/33 p.814; ORN I/9) |
+| N2-BQ Benham to Humphreys, 21 Apr 1864 7 PM | **N3** (weak: the other half printed) | unknown | D3 | 100 (9 H of 9) | time word = header; external: Humphreys' printed telegram of 2.40 p.m. (OR I/33 p.934) asks for the cipher and says land transportation will not be needed -- the two points Benham answers |
+| O9-BA Halleck to Canby, New York, 22 Apr 1864 3 PM | **N3** (weak: the subject printed either side) | unknown | D2 | 71.4 (5 H of 7) | image all 8 lines ("rabbits"); external: Halleck to Dix 19 Apr and to Burnside 23 Apr (OR I/33 pp.912, 954) on the same regiment, "armed as infantry"; code clause: Applause = Halleck reads in O9-AK, O9-AL and here |
+| O9-BB Meigs to Van Vliet, New York, 22 Apr 1864 10 PM | **N3** | unknown | D3 | 90.0 (9 H of 10) | image all 13 lines; time word = header; Abbot = QMG agrees with the plain "M C Meigs"; external: Fox to Welles 26 Apr (OR I/33 p.992) on tugs at New York for Fort Monroe |
+| O9-AK Halleck to Heintzelman, Columbus, 25 Apr 1864 | **N3** (weak: the exchange before it printed; Mereness lead unread) | unknown | D3 | 100 (5 H of 5) | key row re-read; external: OR III/4 pp.234-241 (Brough's militia regiment for Johnson's Island so that the veteran regiments go to the front; Stanton to Heintzelman 21 Apr) |
+| E76 Butler (Knox) to W. P. Smith, 1 Nov 1864 12 M | **N3** | unknown | D2 | 100 (6 H of 6) | time word = header; Pandora = Colonel reads in E66 too; external: Hardie to Butler and Grant to Butler, 1 Nov (OR I/42 pt 3 pp.480-481); held at D2, not D3, because six code words carry little of the sense |
+| O9-AL Halleck to Kelley, 26 Jul 1864 | **N1** | known (OR I/37 pt 2 p.453) | D4 | 100 (5 H of 5) | word for word with the print |
+| E77 Fox to Rodgers, 22 Dec 1864 | **N1** | known (ORN I/11 p.204) | D3 | 3 H + 1 I + 3 M of 7 code words; the print fixes the M as "commanding Dictator" (C), so 3 H + 3 C + 1 I = 85.7 | word for word with the print |
+
+- **N3 (E78, N2-BQ, O9-BA, O9-BB, O9-AK, E76)**: no prior plaintext or decipherment located after the logged search. Not N4: NARA RG 92/107/77, the
+  Mereness Calendar entry, HathiTrust full text and the E76 press pages are unread, JSTOR rows pending. Safe sentence (each): "Read at grade H with the
+  period War Department cipher book (No. 1 for E78 and E76, No. 2 for N2-BQ, the old vocabulary 'No. 9' for O9-AK, O9-BA, O9-BB); no prior
+  decipherment or printed text located in the Official Records (Army ser. I and III, Navy), the Butler and Grant editions, Internet Archive full text,
+  Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026)." Unsafe: "first", "unpublished", "never printed", "unknown telegram".
+- **Weak N3, the E66/N2-BN shape**: N2-BQ (Humphreys' half printed), O9-AK (Brough/Stanton/Heintzelman half printed; Mereness lead), O9-BA (Halleck's
+  own messages on the same regiment either side printed). A second audit should read the Mereness Calendar entry and the Grant Papers vol. 10
+  footnotes for 21-25 Apr before any of these is counted twice.
+- **N2-BP, O9-AL, E77 at N1**: not counted; status.json rows are not written for them.
+- Depth sentences (D2+, written from the reading):
+  **E78** "On 21 Apr 1864 the Quartermaster General's office asks Lt. Col. H. Biggs, quartermaster at Fort Monroe, whether his transportation is coming
+  and to report daily, telling him that present orders stop everything coming up the Potomac and send it to Fort Monroe, but that a large quantity of
+  transportation ordered for Washington, which will be needed there, should be allowed to come once he is supplied."
+  **N2-BQ** "At 7 PM on 21 Apr 1864 Benham tells Humphreys that his two telegrams of that day are received, that the estimates went at once to General
+  Rucker without land transportation, that the telegrams will be sent as desired, and that he had marked the earlier one 'confidential' but, not knowing
+  that this would ensure it went in cipher, had changed its words so that they would be safe."
+  **O9-BA** "On 22 Apr 1864 Halleck asks Canby at New York the condition of the 14th New York Artillery, and whether it has been drilled as infantry so
+  that it can go into the field."
+  **O9-BB** "At 10 PM on 22 Apr 1864 Meigs tells Major Van Vliet, quartermaster at New York, to complete the supply of tugs, ferry boats, barges and
+  schooners for both Fort Monroe and Washington, says that steamers enough to move the troops are now engaged, and orders him to devote himself to
+  hastening the vessels' arrival, since delay would be most injurious."
+  **O9-AK** "On 25 Apr 1864 Halleck tells Heintzelman at Columbus that the Governor of Ohio reports a regiment of militia will be at Johnson's Island by
+  the coming Friday, and that as soon as the troops there are relieved he is to send them to the field as previously ordered."
+  **E76** "On 1 Nov 1864 Butler asks W. P. Smith for his special car for himself and his staff on the first through train to New York, strictly
+  confidential, with the acknowledgement to go care of Colonel Hardie."
+
+### 6. Postmortem
+- **N2-BP was in print** (OR ser. III vol. 4 pp.238-239) and LS3-R18 called it "no hit": its print pre-filter covered OR ser. I only. War Department
+  traffic to commanders about raising troops sits in ser. III. **OR ser. III vol. 4 is on IA** as `cu31924079575373` (Cornell copy, djvu text answers
+  200); LS-V7 and the E68 status row logged ser. III vols. 4-5 as "not on IA / unreachable" -- that gap can now be closed for every 1864 entry. The IA
+  full-text API (be-api) found the print with one quoted phrase; a reader's pre-filter should run it before decoding.
+- Corrections to LS3-R18's section (a note is appended there): E78's "Sugar" = Interrogation (H, not M; the unread word is "mangle"); N2-BP's "spit"
+  reads "men" by the print (data conflict with key-no2.md's Near); O9-BA's image has "rabbits"; O9-BA's five tokens are H, not M (book fixed by the
+  Applause signature and the next day's print); the clause counts as recounted in section 1.
+- Not changed (no decoding in a verifier's brief): ciphertext*.txt and readings. Next, for a reader, ~$0.3: `plain: opinion` for N2-BP's second
+  "opinion" (only that occurrence), "rabbits" in O9-BA line 6, and a note on key-no2.md's Spit row (Near vs Men; check the mssEC 47 page).
+- Rows: status.json one result row per N3 entry (E78, N2-BQ, O9-BA, O9-BB, O9-AK, E76), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows
+  SO-ECKERT-E78, -N2BQ, -O9BA, -O9BB, -O9AK, -E76 with prompts in second-opinions/; JSTOR-QUEUE.tsv 12 rows. Requests: in the ROOM done line.

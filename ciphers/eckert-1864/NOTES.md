@@ -1509,6 +1509,12 @@ Not done: the other 18 of A3V3-ECK18's 28 fully keyed book-1 entries were not re
 Judge (rule 7), all eleven readings of this section and part 1: `python3 tools/judge_plaintext.py specs/eckert-1862.json --file ciphers/eckert-1864/ls3_r18_readings.md` -> `FAIL language: score=-1.141, null_p99=-2.109, real_p05=-0.845, real_median=-0.813, mode=both, N=3603` (reported as a FAIL; bracketed readings of short entries, unknown-reliability en judge).
 Regeneration: `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` and `ls3_r18_control.py --check` exit 0.
 
+
+LS3-V18a correction note (8 Oct 2026, verifier, see AUDIT.md "## AUDIT (LS3-V18a)"): **N2-BP is in print**, word for word, OR ser. III vol. 4 pp.238-239
+(Stanton to Grant, 21 Apr 1864; IA `cu31924079575373`) -- N1; the part-1 pre-filter covered OR ser. I only. E78's "Sugar" = Interrogation in key.md (the decoder's
+"[?]"), so it is H; the unread word is "mangle". N2-BP's "spit" reads "men" in the print (key-no2.md has Near: a key-row conflict). O9-BA's image has "rabbits";
+its five code words are H (book fixed by Applause = Halleck and the 23 Apr print "armed as infantry"). LS3-R9's O9-AL and E77 confirmed N1 by script; the
+Bologna/Bolivia = Heintzelman row confirmed by a second eye. Classes: E78, N2-BQ, O9-BA, O9-BB, O9-AK, E76 N3 (three weak); N2-BP, O9-AL, E77 N1.
 ## LS3-R18b (8 Oct 2026, account 2, for LANE ST-LEDGER-3)
 
 The last seven A3V3-ECK18 keyed entries (started 10:42 UTC by `date -u`). Fetch: 7 leaf images from hdl.huntington.org (IIIF full, 2 s apart, not committed), 10 OR `_djvu.txt` (ser. I vols. 46.1-49.2, archive.org, 2 s apart, scratch, not committed), vol18.json (sha256 matches pilot1864/manifest.tsv). Crops: `python3 tools/iiif_lines.py --image p9943.jpg --out c9943 --prefix p9943 --region 620,600,4900,5000 --distance 200 --prominence 20 --smooth 3 --lines-per-crop 3 --max-width 2400 --overlap 100 --debug` (same for 9948, 10028, 10031; 9948's bottom entry needed `--region 400,5300,5400,1700`). Read: the debug overlay of each page plus individual crops for doubtful words, one reader.
