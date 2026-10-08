@@ -5984,6 +5984,37 @@ Leads: fr.2988 ff.4-5 clear copy of a Raince 15 Dec 1526 cipher letter (original
 ANTT CLNH/0032/10 and /0037/42 undigitised cipher records (copy-order leads); WVO 1068 glossed page for the willem-van-hessen key.
 Left: Baluze 155 canvases 270-440 and fr.4133 (1629-31) unscanned for Sabran; Linhares maco 86 /02 /09 unopened; canvas 308 of fr.3988.
 
+## LANE ST-ACCESS handoff (session_01HvLc1KhkzLZ2aCNnWHdqNo, account 4), 8 October 2026 (closed 00:0x UTC: brief met, lane about 29.5 of 50)
+
+STEAM round (.claude/briefs/runs/2026-10-07-acct3-steam.md, section ST-ACCESS); worker brief
+.claude/briefs/runs/2026-10-07-acct4-staccess-workers.md. Eight workers 24.98 (SA-G 4.23, SA-O 3.38, SA-MP 4.34, SA-CO 6.77 Opus,
+SA-CO2 2.23, SA-MP2 0.82, SA-G2 1.69, SA-G3 1.52; all Sonnet but SA-CO) + orchestrator ~4.5 by get_session. Rows in
+keyhunt/2026-10-07-SA{G,G2,G3,O,MP,MP2,CO}.tsv; KEYHUNT-2026-10-07.tsv lines updated in place (old text after " | was: ").
+The brief's "27" and "33" were not reproducible from the TSV; the lane screened an explicit list (named in the worker brief),
+leaving the italien 1583-85 Sforza rows to LANE ST-REBUILD (live claim).
+
+1. Screening (every "no cipher" backed by a known-cipher control flagged at the same scale; most are samples, not full coverage):
+   - Unread cipher siblings, unglossed, key in hand (NOTES "Unread sibling found" lines written): BnF fr.3988 c304-308 (Henri IV
+     to Nevers 22 Dec 1593, 4 pages; no.60 key; KHF-4's held-out hand check was a non-test), Baluze 155 c273-279, c293 (Servien
+     1632; Sabran/decode-2754 key), fr.3091 c50 (~f.46-47, Raince/Carpi window), Dupuy 265 f.336r (inline lines), fr.3053 c16/c34
+     (Gramont, key unknown).
+   - Glossed (known-plaintext source, not a reading): fr.7126 f.274r-275v (Tomokiyo cipher no.2, interlinear decipherment) for
+     the fr7129-villeroy-bongars key family.
+   - No cipher seen: ANTT CLNH/0086/02, /09 (1 in 3 sampled), RAH Gonzalez Bravo 30 of 38, WVO August 1561-64 35 of 106, Huntington
+     mssBLA (search), Monroe reels (Erving 23 Sep 1804 = r3 f0502-0503; "24 Feb 1807" = 24 Jan 1807 r4 f0011-0014; Bowdoin "27 Mar
+     1807" = 27 Feb), fr.4133 (coarse only), Baluze 155 c295-440, and samples of fr.2963/2984/3003/3897, Dupuy 265/452/468, Colbert 113.
+   - Not settled: Erving undated Nov-Dec 1804 (not located, r3 f0561-0647 every frame); Pinkney M30 r12-13: dense code absent, but
+     short runs unscreened -- numeral_page_detect.py --line-max (added, offline test) failed its control (r11 f0065 rank 58/324 vs
+     gate 9), so "untestable by this tool at this scale"; next instrument native-res line crops to vision (~USD 8+) or a person.
+2. COPY-ORDERS-2026-10.md/.tsv: 19 order rows (~50 letters) + 10 dropped with reasons. Free tier: CO-01 MHi (25 images; value cut
+   to 1 unit -- two originals found clear on LOC), CO-02 AN Marine B3 Vergier 1695-97 (1-19 views), CO-03 AAE CP Etats-Unis (1-19
+   views; no folios, AAE thread already open). Paid: one BnF devis covers CO-04..10, 14 (~EUR 73 HT). BNE and NYPL tariff pages
+   unreachable from the cloud. Drafts outreach/mhs-erving-letterbook-2026-10.md and outreach/an-marine-vergier-2026-10.md are
+   `drafted`, NOT sendable (MHi holding and AN cote unconfirmed); gate 7 deliberately not run on unsendable drafts.
+   LOCAL-QUEUE L64 (AN Marine B3 cote) and L65 (MHi Erving holding) queued for the desk runner; gate 7 runs once they answer.
+Next (for other lanes): decode tests on fr.3988 c305-308 (no.60 key) and Baluze 155 c273-279/293 (Sabran key), each ~USD 3-5 with
+a shuffled-key control; fr.7126 f.274 known-plaintext alignment for the fr7129 key; the BnF devis (owner) once ranked rows are agreed.
+
 ## LANE KH-4 handoff (session_01DP265vPazck9n51AQqAN1V, account 4), 7 October 2026 (closed 18:58 UTC: brief met, lane about 34.9 of 40)
 
 KEYHUNT round (.claude/briefs/runs/2026-10-07-acct3-keyhunt.md), KEY-OFFICES.tsv rows 49-71 (23 keys); worker brief
