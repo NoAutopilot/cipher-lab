@@ -82,3 +82,27 @@ p.381 once from image-uab.canadiana.ca with the route the folder already used (b
 number pattern; check images/ first), crop the one line plus its neighbours, one blind subagent read of the crop (no context given) + your
 reconciliation. Record what the period decipherment carries for the "all your Trouble ..." and "give ..." passages, with the frame number.
 No status change; update the gap line and Verdict; gaps_check.
+
+## Wave 2 (spawned 05:5x UTC 8 Oct)
+Intake gate 05:5x UTC: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`sp77-nicholas-1659: open (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`naf14913-rousseau-venice-1743: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+### D1A-SUR -- na-suriname-map-1781 [ij] test with a control off ceiling + step-2 tile (solver, Opus; cap 4, box 75 min)
+Verdict (NOTES.md l.3067, NZ-SURIJ 7 Oct): "open: an IJ test with a control not at ceiling over more scans (~$2) and a cleanly cut
+same-hand step-2 look with [d-loop][s-loop] as one tile (~$1)". Unit 1: pool the image-dotted ij forms from the inv. 373 scans already on
+disk (0693, 0702, 0730, 0746, 0758; NZ-SURIJ found 6 on 0746) to n >= 10 if they exist; write PREREG-D1A-SUR.md first with a C1 control
+whose p99 at that n sits below the gate (if no available n gets the control off ceiling, stop and log "untestable at this n" -- rule 3
+third-attempt clause applies: this is the second IJ attempt, so change the n, not the gate). Unit 2 only if unit 1 finished under 50% of
+cap and box: the [d-loop][s-loop] one-tile step-2 look with a known-same control that answers SAME (NZ-SURIJ's was UNSURE). No key row
+changes without a passed gate. Update NOTES/HYPOTHESES/gaps.
+
+### D1A-SRCH -- two print searches (search worker, Sonnet; cap 3, box 60 min)
+Unit 1 (sp77-nicholas-1659, NOTES.md l.150): grep the IA full text (`_djvu.txt`) of CSPD 1659-60 and Calendar of the Clarendon State
+Papers vol. iv -- find the identifiers with advancedsearch first; indexes first, then body -- for royalist aliases/agents at St Sebastian in
+Aug 1659 (Holder, Bennet, Peter Wilson's house) and anything that identifies "Sir L.R."; quote each hit with identifier and djvu line.
+Unit 2 (naf14913-rousseau-venice-1743, NOTES.md l.226 and l.228): phrase-search f.206r's own quote ("venitiens en faveur de la Reine de
+Hongrie" and one or two other exact phrases from slip_f206r.txt) via archive.org be-api fts and the Google Books API (`&country=US`,
+`&key=$GOOGLE_BOOKS_KEY`), and full-text search Souchon 1915 (Gallica bpt6k935116v; Gallica SRU or the volume's own search) for the
+1743-44 passage. Log every query with hit counts, by host; "no hits" is a search result, never a novelty verdict. Append findings as a dated
+section in each NOTES.md and tick the matching lines; gaps_check where the folder is partial. Scripts read, the model judges the hits.
