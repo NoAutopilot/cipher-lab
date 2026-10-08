@@ -1,4 +1,4 @@
-# PREREG TT-MATRIX (key_design.py --matrix), written 22:58 UTC 8 Oct 2026 by date -u, before any control run
+# PREREG TT-MATRIX (key_design.py --matrix), written 22:47 UTC 8 Oct 2026 by date -u, before any control run
 
 Instrument: `tools/key_design.py --matrix KEY.tsv` (Tomokiyo, matrix.htm "Vatican Substitution Ciphers Designed on
 Alphabetical Matrices", 2018; practices 3 and 4 of LESSONS-TOMOKIYO.md).

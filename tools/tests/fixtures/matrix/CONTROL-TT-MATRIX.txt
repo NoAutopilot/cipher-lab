@@ -1,0 +1,11 @@
+# TT-MATRIX control run, 08 Oct 2026 22:51 UTC by date -u: python3 tools/key_design.py --matrix-control
+# first run (pre-registered, before the interpolate fallback): PREDICT 1811/4080 = 0.444 FAIL; labels 6/6, null none 120/120, null predict 1/4080
+# rerun below includes the post-hoc interpolate fallback (not used for the grade)
+manetti     (matrix.htm, it21): label one-part; predict 3 anchors x20: 360/360 correct, 0 wrong; null labels {'none': 20}
+nevers25    (matrix.htm, it22): label one-part; predict 3 anchors x20: 7/740 correct, 0 wrong; null labels {'none': 20}
+despes      (matrix.htm, es23): label one-part; predict 3 anchors x20: 378/1160 correct, 144 wrong; null labels {'none': 20}
+commendone  (matrix.htm, it21): label two-dimensional; predict 3 anchors x20: 63/720 correct, 13 wrong; null labels {'none': 20}
+ormonde     (ormonde.htm, en24): label one-part; predict 3 anchors x20: 718/780 correct, 0 wrong; null labels {'none': 20}
+schiner     (schiner.htm, it21): label one-part; predict 3 anchors x20: 292/320 correct, 28 wrong; null labels {'none': 20}
+LABELS 6/6 (pass >= 5); NULL none 120/120 = 1.000 (pass >= 0.95); PREDICT 1818/4080 = 0.446 correct, 185 wrong (pass >= 0.50); NULL PREDICT 1/4080 = 0.000 correct, 29 wrong (pass <= 0.15)
+# exit 1

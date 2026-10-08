@@ -1094,3 +1094,40 @@ the null only among the codes the ciphertext actually covers. Requests: none (of
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 Nothing depends on anyone: the next steps are the owner's sign-sorter settlement of the cipher runs (ASKS 124; readers split 16.8% of 770 signs, so no further machine pass or solver variant on this transcription, per the A1B-VILL-994 verdict) and the two reproductions for the f.131 / Godefroy 145 pair (ASKS 111, ASKS 123).
+
+## TT-MATRIX (8 Oct 2026)
+
+Worker TT-MATRIX (account 4, LANE TOOLS-TOMO), 22:50-22:53 UTC 8 Oct 2026 by date -u. Instrument: `tools/key_design.py --matrix`
+(Tomokiyo, matrix.htm, "Vatican Substitution Ciphers Designed on Alphabetical Matrices": lay a key's letter codes out by digits
+and look for regular assignment). Gates: `intake_gate_check.py fr3993-villeroy-1595` exit 0 ("open (line 1) -- edition/page or
+full-text-search citation found within 6 lines"); `prior_work.py fr3993-villeroy-1595 --item-spec 'shelfmark=BnF fr.3995;folio=104v'
+--step-type key --offline` exit 0 ("proceed on the residue: whole item"; CONTEXT row: Tomokiyo nevers.htm "no.58 (fol.104) (July
+1593)": "Substitution by figures and a few symbols. Homophones. Nulls."; two generic UNCHECKED-NET rows, no specific hold).
+
+Command and head:
+```
+python3 tools/key_design.py --matrix ciphers/fr3993-villeroy-1595/keys/key_f104r_letters.tsv
+ciphers/fr3993-villeroy-1595/keys/key_f104r_letters.tsv: blockwise one-part (34 letter codes)
+  block_order: shuffled
+  paired_first_digits: 0/8
+  numeric: adjacent 0.788 (7 breaks / 33 steps; permuted-key null mean 30.3 breaks, p=0.005); runs: b-c(3) a-a(2) d-d(2) l-l(1) e-e(2) p-q(2) f-o(12) r-z(10)
+  column: adjacent 0.0 (33 breaks / 33 steps; permuted-key null mean 30.6 breaks, p=1.0); runs: i-i(1) r-r(1) e-e(1) r-r(1) b-b(1) e-e(1) m-m(1) x-x(1) c-c(1) p-p(1) m-m(1) s-s(1)
+  matrix (rows = tens digit, columns = units digit):
+     0  1  2  3  4  5  6  7  8  9
+  0  .  .  b  c  c  a  a  d  d  l
+  1  .  e  e  p  q  f  f  g  h  i
+  2  i  .  m  m  n  n  .  o  o  .
+  3  r  r  .  s  s  .  t  .  u  u
+  4  .  .  x  .  y  .  z  .  .  .
+```
+What it found. The f.104v letter strip (VILL-STRIPS, 3 Oct 2026, grade M) is a one-part figure table with homophone pairs
+(a 5 6, c 3 4, d 7 8, e 11 12, f 15 16, m 22 23, n 24 25, o 27 28, r 30 31, s 33 34, u 38 39): 33 code-order steps, 7 breaks, against
+30.3 breaks mean on 200 letter-permuted copies (p = 0.005). The tool labels it "blockwise one-part" only because three readings sit
+out of alphabetical place: l = 09, p = 13, q = 14. The one-part order leaves holes at 1, 10, 21, 26, 29 (besides the Nulles-box
+codes 32 35 37 40 41 43 45, which also fall in holes, as any consistent table must). With the clean pairs as anchors,
+`--anchors 2=b,4=c,8=d,11=e,16=f,17=g,18=h,20=i,22=m,25=n,27=o,30=r,33=s,36=t,38=u,42=x,44=y,46=z --alphabet it22 --inventory 1-46`
+predicts **21 = l** (between i 19/20 and m 22) and one of **p/q at 29** (between o 27/28 and r 30); 09 and 10 would be d/e, 13 and 14
+e/f homophones. So either the table breaks its own order for l, p, q, or the strip readings 09, 13, 14 (and the unread 21, 29) are
+misplaced. Where it found nothing: no column/matrix arrangement (column adjacency 0.0, p = 1.0), no paired first digits (0/8).
+Next step (not run, outside this brief): one native-crop re-read of codes 09, 10, 13, 14, 21, 29 on f.104v (canvas f203,
+region of VILL-STRIPS), ~USD 1.5, one vision unit. This is about the f.104v table only; it reads no plaintext of the target.

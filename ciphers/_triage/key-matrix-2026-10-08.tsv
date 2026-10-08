@@ -1,0 +1,138 @@
+# key_design.py --matrix sweep (TT-MATRIX); Tomokiyo matrix.htm. Integer codes carrying one letter only; p = permuted-key null (200 shuffles, seed 0)
+key_path	label	letter_codes	numeric_adjacent	numeric_p	column_adjacent	column_p	paired_first_digits	series	block_order	vowel_headed
+ciphers/_keys/gonzaga-nevers-asmn-ag423-c396/key.tsv	none	43	0.0	1.0	0.119	0.3831	1/15			
+ciphers/antt-msliv0638-brochado-1712/key.tsv	none	28	0.111	0.4229	0.111	0.5522	1/7			
+ciphers/august-van-saksen-1561-64/key.tsv	none	9	0.125	0.597	0.125	0.6318	0/0			
+ciphers/august-van-saksen-1561-64/key_53.tsv	none	8	0.143	0.6418	0.143	0.6219	0/0			
+ciphers/august-van-saksen-1561-64/key_74.tsv	none	9	0.25	0.2189	0.25	0.1791	0/0			
+ciphers/baluze103-letellier-marca-1644/key_decode.tsv	blockwise one-part	21	0.75	0.005	0.1	0.4527	0/4		reversed	
+ciphers/birago-fr3252-1571-72/keys/key_fr3995_no32.tsv	none	21	0.25	0.209	0.1	0.7015	0/4			
+ciphers/birago-fr3252-1571-72/keys/key_fr3995_no71_f133r.tsv	none	26	0.4	0.005	0.32	0.005	0/7			
+ciphers/birago-fr3252-1571-72/keys/key_fr3995_no73_f136r.tsv	one-part	19	0.944	0.005	0.278	0.0199	0/0	1		
+ciphers/birago-fr3252-1571-72/keys/key_fr3995_no74.tsv	none	22	0.0	1.0	0.238	0.0199	0/3			
+ciphers/bowes-walsingham-1583/key.tsv	none	19	0.222	0.0348	0.0	1.0	0/6			
+ciphers/castelcicala-1816/key.tsv	none	14	0.462	0.5622	0.308	0.6119	0/0			
+ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	one-part	16	1.0	0.005	0.2	0.0945	0/4	1		
+ciphers/clair1108-duvergier/key_1696.tsv	none	37	0.583	0.005	0.056	0.8856	0/10			
+ciphers/clair349-este-guise-1556/key_alpha.tsv	none	19	0.333	0.3184	0.278	0.3433	1/2			
+ciphers/clair349-este-guise-1556/key_decode.tsv	none	20	0.421	0.1045	0.263	0.3134	1/2			
+ciphers/clairambault1225-paget-1714/key.tsv	none	22	0.381	0.0647	0.143	0.7413	0/3			
+ciphers/colbert155-beziers-1670/keys/key_colbert_croissy_1668.tsv	none	14	0.615	0.005	0.154	0.4129	0/0			
+ciphers/colbert26-lathuillerie-1644/interlinear/key_f23_phrase.tsv	none	53	0.115	0.8706	0.173	0.2438	2/18			
+ciphers/colbert26-lathuillerie-1644/key_f23.tsv	none	41	0.25	0.0896	0.15	0.4677	0/12			
+ciphers/colbert26-lathuillerie-1644/key_f23_anchor.tsv	none	10	0.556	0.1741	0.222	0.8706	0/0			
+ciphers/colbert26-lathuillerie-1644/key_f23_anchor_5456.tsv	none	13	0.167	0.8259	0.25	0.403	0/0			
+ciphers/colbert26-lathuillerie-1644/key_f23_anchor_r10.tsv	none	23	0.545	0.0945	0.455	0.1244	1/4			
+ciphers/colbert26-lathuillerie-1644/key_f24.tsv	none	26	0.2	0.3781	0.08	0.8806	0/7			
+ciphers/colbert26-lathuillerie-1644/siblings/key_f23_preDA1COL.tsv	none	43	0.262	0.0597	0.143	0.5323	0/12			
+ciphers/colbert26-lathuillerie-1644/siblings/key_refit.tsv	none	56	0.182	0.209	0.091	0.8408	0/17			
+ciphers/colbert26-lathuillerie-1644/siblings/key_refit_joint4.tsv	none	59	0.172	0.3781	0.121	0.7463	0/20			
+ciphers/colbert26-lathuillerie-1644/siblings/key_refit_w.tsv	none	53	0.154	0.398	0.096	0.8408	0/15			
+ciphers/colbert26-lathuillerie-1644/siblings/key_refit_wc30.tsv	none	56	0.182	0.209	0.091	0.8408	0/17			
+ciphers/decode-2678-bnf-colbert127-gravel-1665/key_gravel1672.tsv	none	20	0.053	0.9154	0.105	0.4627	0/5			
+ciphers/decode-2754-bnf-baluze156-1636/key_sabran_1631_letters.tsv	none	8	0.286	0.2338	0.143	0.592	0/0			
+ciphers/es132-vargas-mexia-1578/key.tsv	blockwise one-part	27	0.769	0.005	0.0	1.0	0/10		shuffled	
+ciphers/espagnol142-mercy-1648/key.tsv	none	32	0.29	0.005	0.065	0.7413	0/9			
+ciphers/fr15575-syllabic-1592-95/key_no54.tsv	none	8	0.429	0.204	0.429	0.1592	0/0			
+ciphers/fr3416-nevers-fils-1589/keys/key_no25.tsv	one-part	39	1.0	0.005	0.026	0.9403	0/13	1		
+ciphers/fr3622-nevers-gondi-1594/keys/key_no41_alphabet.tsv	none	15	0.5	0.005	0.143	0.2886	0/0			
+ciphers/fr3985-nevers-revol-1593/key.tsv	none	11	0.3	0.5771	0.1	0.9602	0/1			
+ciphers/fr3993-gonzague-nevers-1595/keys/key_no70.tsv	blockwise one-part	45	0.841	0.005	0.023	0.9851	0/14		shuffled	
+ciphers/fr3993-villeroy-1595/keys/key_f104r_letters.tsv	blockwise one-part	34	0.788	0.005	0.0	1.0	0/8		shuffled	
+ciphers/fr3993-villeroy-1595/keys/key_f159_full.tsv	none	17	0.562	0.005	0.125	0.8209	0/0			
+ciphers/fr3993-villeroy-1595/keys/key_f159_letters.tsv	none	17	0.562	0.005	0.125	0.8209	0/0			
+ciphers/fr3993-villeroy-1595/keys/key_f74r_letters.tsv	none	37	0.25	0.005	0.0	1.0	0/15			
+ciphers/fr4712-nevers-duchesse/keys/key_no1.tsv	none	32	0.355	0.005	0.0	1.0	0/10			
+ciphers/fr4715-montholon-1589/keys/key_vieuville_nevers.tsv	none	33	0.312	0.0199	0.344	0.005	0/7			
+ciphers/fr4715-montholon-1589/witness/key_rows_calibration.tsv	none	33	0.312	0.0199	0.344	0.005	0/7			
+ciphers/fr4715-montholon-1589/witness/key_rows_calibration_v2.tsv	none	33	0.312	0.0199	0.344	0.005	0/7			
+ciphers/fr4715-montholon-1589/witness_f24/key_real.tsv	none	47	0.261	0.0995	0.196	0.3682	0/9			
+ciphers/fr4715-montholon-1589/witness_f24_full/key_real.tsv	none	100	0.131	0.9154	0.162	0.5373	2/24			
+ciphers/fr5160-letellier-1653/key_1659.tsv	none	24	0.304	0.1244	0.174	0.5572	0/2			
+ciphers/fr5160-letellier-1653/key_1659_ext.tsv	none	24	0.304	0.1244	0.174	0.5572	0/2			
+ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	none	18	0.235	0.5323	0.235	0.3483	0/0			
+ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	one-part	16	1.0	0.005	0.2	0.0945	0/4	1		
+ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	one-part	13	0.75	0.005	0.25	0.2687	0/1	1		
+ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v3.tsv	none	25	0.292	0.6318	0.25	0.7662	0/0			
+ciphers/fr7129-villeroy-bongars-1604/sibling/key_r2_f260.tsv	none	9	0.25	0.6567	0.25	0.6517	0/0			
+ciphers/fr7129-villeroy-bongars-1604/sibling/key_shared_f260.tsv	none	9	0.25	0.8408	0.25	0.8458	0/0			
+ciphers/gunther-van-schwarzburg-1561/key.tsv	none	19	0.444	0.1443	0.444	0.0846	2/3			
+ciphers/hellen-frederick-1752/key_r4369/key_L.tsv	none	30	0.241	0.4577	0.31	0.0547	0/0			
+ciphers/hellen-frederick-1752/key_r4369/key_LR100.tsv	none	60	0.153	0.7313	0.102	0.9403	0/3			
+ciphers/hellen-frederick-1752/key_r4369/key_Lonly.tsv	none	21	0.3	0.3383	0.25	0.2338	0/0			
+ciphers/hellen-frederick-1752/key_r4369/key_R0.tsv	none	39	0.132	0.8159	0.158	0.5224	0/3			
+ciphers/hellen-frederick-1752/key_r4369/key_R100.tsv	none	39	0.132	0.8159	0.158	0.5224	0/3			
+ciphers/hellen-frederick-1752/key_r4369/key_decode.tsv	none	60	0.153	0.7313	0.102	0.9403	0/3			
+ciphers/hellen-frederick-1752/key_r4370/key_L.tsv	none	32	0.258	0.4279	0.226	0.3731	0/0			
+ciphers/hellen-frederick-1752/key_r4370/key_LR100.tsv	none	32	0.226	0.6219	0.226	0.4478	0/1			
+ciphers/hellen-frederick-1752/key_r4370/key_R0.tsv	none	11	0.3	0.607	0.0	1.0	0/1			
+ciphers/hellen-frederick-1752/key_r4370/key_R100.tsv	none	11	0.3	0.607	0.0	1.0	0/1			
+ciphers/hellen-frederick-1752/key_r4370/key_decode.tsv	none	32	0.226	0.6219	0.226	0.4478	0/1			
+ciphers/hellen-frederick-1752/key_r4370/key_full_LR100.tsv	none	32	0.226	0.6219	0.226	0.4478	0/1			
+ciphers/hellen-frederick-1752/key_r4372/key_LR100.tsv	none	9	0.625	0.1642	0.25	0.6368	0/0			
+ciphers/hellen-frederick-1752/key_r4372/key_comb_L.tsv	none	67	0.197	0.3781	0.106	0.9602	0/3			
+ciphers/hellen-frederick-1752/key_r4372/key_comb_LR100.tsv	none	69	0.221	0.2438	0.118	0.8955	0/3			
+ciphers/hellen-frederick-1752/key_r4372/key_comb_R0.tsv	none	63	0.145	0.7612	0.129	0.8109	0/3			
+ciphers/hellen-frederick-1752/key_r4372/key_comb_R100.tsv	none	63	0.145	0.7612	0.129	0.8109	0/3			
+ciphers/hellen-frederick-1752/key_r4372/key_decode.tsv	none	9	0.625	0.1642	0.25	0.6368	0/0			
+ciphers/hellen-frederick-1752/key_r4372/key_full_LR100.tsv	none	9	0.625	0.1642	0.25	0.6368	0/0			
+ciphers/hellen-frederick-1752/key_r4376/key_L.tsv	none	57	0.179	0.4975	0.179	0.4229	1/8			
+ciphers/hellen-frederick-1752/key_r4376/key_LR100.tsv	none	41	0.15	0.806	0.25	0.1841	1/2			
+ciphers/hellen-frederick-1752/key_r4376/key_LR100_z.tsv	none	41	0.15	0.806	0.25	0.1841	1/2			
+ciphers/hellen-frederick-1752/key_r4376/key_L_z.tsv	none	57	0.179	0.4975	0.179	0.4229	1/8			
+ciphers/hellen-frederick-1752/key_r4376/key_R0.tsv	none	11	0.1	0.9602	0.0	1.0	0/0			
+ciphers/hellen-frederick-1752/key_r4376/key_R0_z.tsv	none	11	0.1	0.9602	0.0	1.0	0/0			
+ciphers/hellen-frederick-1752/key_r4376/key_R100.tsv	none	14	0.308	0.5224	0.0	1.0	0/0			
+ciphers/hellen-frederick-1752/key_r4376/key_R100_z.tsv	none	14	0.308	0.5224	0.0	1.0	0/0			
+ciphers/hellen-frederick-1752/key_r4376/key_decode.tsv	none	41	0.15	0.806	0.25	0.1841	1/2			
+ciphers/hellen-frederick-1752/sibling_michell/key_sibling.tsv	none	12	0.636	0.0448	0.273	0.4229	0/0			
+ciphers/hessen-daenemark-1672/key.tsv	two-dimensional	120	0.143	0.0199	0.807	0.005	48/52			3/10
+ciphers/huntington-blathwayt-madrid-1728/key.tsv	blockwise one-part	27	0.846	0.005	0.346	0.0348	1/1		shuffled	
+ciphers/huntington-luzerne-destouches-1781/key.tsv	none	24	0.565	0.0647	0.217	0.9204	0/0			
+ciphers/huntington-luzerne-destouches-1781/key_tomokiyo.tsv	none	20	0.368	0.8358	0.316	0.4378	0/0			
+ciphers/intercepted-royalist-1646/key.tsv	none	14	0.385	0.5224	0.231	0.6418	0/1			
+ciphers/jan-van-nassau-1572-75/key_1572.tsv	one-part	23	1.0	0.005	0.0	1.0	0/0	1		
+ciphers/jan-van-nassau-1572-75/key_5549.tsv	blockwise one-part	121	0.983	0.005	0.017	0.995	1/52		reversed	
+ciphers/lodewijk-van-nassau-1573-74/axmerge3/key_full_v2.tsv	blockwise one-part	121	0.983	0.005	0.017	0.995	1/52		reversed	
+ciphers/lodewijk-van-nassau-1573-74/key.tsv	blockwise one-part	121	0.983	0.005	0.017	0.995	1/52		reversed	
+ciphers/lodewijk-van-nassau-1573-74/key_4614.tsv	blockwise one-part	110	0.89	0.005	0.156	0.0299	2/40		shuffled	
+ciphers/lodewijk-van-nassau-1573-74/key_5799.tsv	none	69	0.103	0.9154	0.176	0.3035	1/17			
+ciphers/lodewijk-van-nassau-1573-74/key_5801.tsv	none	166	0.315	0.1343	0.291	0.398	17/66			
+ciphers/lodewijk-van-nassau-1573-74/key_7205.tsv	none	145	0.5	0.005	0.132	0.5174	1/44			
+ciphers/lodewijk-van-nassau-1573-74/key_7206.tsv	blockwise one-part	115	0.851	0.005	0.07	0.9154	0/38		shuffled	
+ciphers/lodewijk-van-nassau-1573-74/key_full.tsv	blockwise one-part	122	0.983	0.005	0.025	0.995	1/52		shuffled	
+ciphers/malsburg-hessen-1636/keys/key_519.tsv	two-dimensional	74	0.0	1.0	1.0	0.005	25/32			1/9
+ciphers/maurice-rupert-1645/key118.tsv	none	80	0.722	0.005	0.076	0.4577	0/31			
+ciphers/maurice-rupert-1645/keys/key9117.tsv	none	59	0.138	0.1493	0.103	0.4229	1/20			
+ciphers/maurice-rupert-1645/keys/key9119.tsv	none	57	0.607	0.005	0.018	1.0	0/17			
+ciphers/maurice-rupert-1645/keys/key9119e.tsv	none	58	0.614	0.005	0.018	1.0	0/17			
+ciphers/na-janssens-java-1811/key.tsv	none	24	0.348	0.5075	0.217	0.6766	0/0			
+ciphers/na-schonenberg-1678-1716/key.tsv	none	61	0.633	0.005	0.05	0.9652	0/19			
+ciphers/na-suriname-map-1781/key_period_codes.tsv	none	9	0.375	0.1443	0.375	0.0896	0/0			
+ciphers/na-suriname-map-1781/key_period_codes_nieuw.tsv	none	9	0.125	0.7264	0.125	0.7562	0/0			
+ciphers/nla-heinrich-braunschweig-1519/key_548.tsv	none	19	0.111	0.2786	0.056	0.5871	0/1			
+ciphers/nla-heinrich-braunschweig-1519/key_562.tsv	none	16	0.267	0.0398	0.067	0.5871	0/1			
+ciphers/orange-nassau-1572/key_nepveu.tsv	one-part	22	1.0	0.005	0.0	1.0	0/0	1		
+ciphers/oxenstierna-gustav-adolf-1632/key.tsv	none	59	0.431	0.005	0.0	1.0	0/17			
+ciphers/rah-canada-1869/key.tsv	none	8	0.143	0.7662	0.143	0.796	0/0			
+ciphers/rah-morillo-1817/key_2242.tsv	blockwise one-part	20	0.895	0.005	0.105	0.4428	0/1		reversed	
+ciphers/rah-morillo-1817/key_5186.tsv	none	19	0.167	0.3383	0.111	0.6119	0/2			
+ciphers/riksarkivet-r4282-1628/aosb/key_aosb1629.tsv	none	62	0.016	0.995	0.033	1.0	0/23			
+ciphers/sachsstaatsarchiv-manteuffel-1712/key.tsv	none	90	0.348	0.005	0.112	0.3284	1/30			
+ciphers/szembek-bk1560/key.tsv	none	22	0.333	0.01	0.048	0.806	0/4			
+ciphers/szembek-bk1560/key_direct.tsv	none	15	0.429	0.0299	0.143	0.592	0/2			
+ciphers/thurloe-printed/key_blake.tsv	blockwise one-part	10	0.889	0.005	0.556	0.0249	0/0		ascending	
+ciphers/thurloe-printed/key_blake_extended.tsv	blockwise one-part	44	0.86	0.005	0.163	0.1045	1/10		shuffled	
+ciphers/thurloe-printed/key_butler.tsv	none	56	0.236	0.5423	0.255	0.4726	0/5			
+ciphers/thurloe-printed/key_fauconberg.tsv	none	52	0.235	0.005	0.02	0.9751	0/18			
+ciphers/thurloe-printed/key_fauconberg_extended.tsv	none	52	0.235	0.005	0.02	0.9751	0/18			
+ciphers/thurloe-printed/key_johnson1.tsv	none	25	0.333	0.2637	0.167	0.801	0/1			
+ciphers/thurloe-printed/key_johnson2.tsv	none	20	0.316	0.3234	0.211	0.4279	0/0			
+ciphers/thurloe-printed/key_montagu_extended.tsv	none	100	0.071	0.9602	0.051	0.9801	2/32			
+ciphers/thurloe-printed/key_montagu_extended2.tsv	none	100	0.071	0.9602	0.051	0.9801	2/32			
+ciphers/thurloe-printed/key_steele.tsv	blockwise one-part	57	0.804	0.005	0.125	0.3731	0/13		shuffled	
+ciphers/thurloe-printed/pool_1654/key_stamford.tsv	none	40	0.103	0.4876	0.103	0.4328	1/12			
+ciphers/thurloe-printed/tx/key_johnson1_img.tsv	none	12	0.364	0.3582	0.273	0.5323	0/0			
+ciphers/thurloe-printed/tx/key_johnson2_img.tsv	none	19	0.5	0.0299	0.167	0.6816	0/0			
+tools/keys/key60.tsv	none	11	0.3	0.5771	0.1	0.9602	0/1			
+ciphers/_keys/gonzaga-nevers-asmn-ag423-c396/key.tsv	none	43	0.0	1.0	0.119	0.3831	1/15			

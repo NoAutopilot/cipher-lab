@@ -1,0 +1,6 @@
+# tools/prior_work.py rows, append-only (a search result and a routing verdict, never a novelty class)
+utc	origin_main_commit	item_id	scope	check	route	query	control	hits	evidence	verdict	requests_by_host	valid_until	row_id	residue
+2026-10-08 22:52	884d06600047	adhoc-21e64c	plaintext	3-tomokiyo	sources/cryptiana/web/nevers.htm:text706				sources/cryptiana/web/nevers.htm (text line 706) ### no.58 (fol.104) (July 1593)	CONTEXT		2026-10-08	adhoc-21e64c:3-tomokiyo:3787ce	
+2026-10-08 22:52	884d06600047	adhoc-21e64c	plaintext	3-solver	registry:unsolved-ciphers				unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it	UNCHECKED-NET		2026-10-08	adhoc-21e64c:3-solver:c79056	
+2026-10-08 22:52	884d06600047	adhoc-21e64c	plaintext	3-solver	caches				no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau	CLEAR		2026-10-08	adhoc-21e64c:3-solver:a7793a	
+2026-10-08 22:52	884d06600047	adhoc-21e64c	plaintext	4-editions	registry				core-only: no tools/data/prior_editions.tsv row matches this slug, year and correspondents; check-solved names the editions read or records that none exists	UNCHECKED-NET		2026-10-08	adhoc-21e64c:4-editions:9b54db	
