@@ -6660,6 +6660,129 @@
       "depth_sentence": "Chavigny tells d'Avaux that the dukes and Madame la Landgrave want their troops joined to M. de Longueville and kept under his command even when the armies of the two crowns are together, and that the comte d'Heberstein, who is to succeed, will be gratified to bind him to do better than his predecessor.",
       "depth_check": "cipher clause not met (longest H stretch ~12 letters); code clause: 8: leur ('leurs forces', 'leurs troupes') and 10: les (7 contexts) read sensibly; external: letter values printed in Tomokiyo's table (D3/D4 element, not used for D2); fr17 PASS (D4V-B167); rule-7 re-derivation exact (D4V-B167)",
       "depth_note": "letter signs eye-identified against the published table, no shape-level control; held at D2"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS4-V1a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS4-V1a verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Quartermaster General's office to Col. Biggs, Fort Monroe, 20 May 1864 1.30 PM, has Sheridan left the James, must we forage him by the other line (E90)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Papers of Ulysses S. Grant (Internet Archive full text), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
+      "gap": "N3 (weak): frame clear in the public transcription of 8965; Biggs's clear reply of 6.50 PM (mssEC 11 p.201, pointer 4642) answers it; Grant Papers footnotes, NARA RG 92 and JSTOR unread",
+      "phrases": [
+        "Huntington mssEC 19 p.73, pointer 8965, E90"
+      ],
+      "document_id": "Huntington mssEC 19 p.73, pointer 8965, E90",
+      "documents": [
+        "Huntington mssEC 19 p.73, pointer 8965, E90"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "12 H of 12 code words",
+      "unresolved_spans": "none",
+      "reading_version": "LS4-R1a 8 Oct 2026 (reading.md), grades as checked in AUDIT (LS4-V1a) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS4-V1a)' section 4",
+      "depth_sentence": "At 1.30 PM on 20 May 1864 the Quartermaster General's office asks Colonel Biggs at Fort Monroe whether Sheridan has left the James, and whether they must forage him by the other line.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, LS4-V1a); image checked, all 5 lines (LS4-V1a); code clause: Bergen = James reads in E7 and E90, Nabob = Sheridan in E13 and E90; external: Biggs's clear reply, mssEC 11 p.201 (pointer 4642), agrees on Sheridan and forage",
+      "depth_note": "12 H of 12 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS4-V1a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS4-V1a verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Quartermaster General's office to Capt. Thomas, Baltimore, 7 Jul 1864 11 AM, return the vessels that brought up Ricketts' troops to City Point with all available steam transports (E92)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Papers of Ulysses S. Grant (Internet Archive full text), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
+      "gap": "N3 (weak): the order's frame is clear in the public transcription of 8996, destination and cargo are code; context printed (Grant to Meigs 6 Jul 1864, OR I/40 pt 3), this order not located; Grant Papers footnotes, NARA RG 92 and JSTOR unread",
+      "phrases": [
+        "Huntington mssEC 19 p.104, pointer 8996, E92"
+      ],
+      "document_id": "Huntington mssEC 19 p.104, pointer 8996, E92",
+      "documents": [
+        "Huntington mssEC 19 p.104, pointer 8996, E92"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "11 H of 11 code words",
+      "unresolved_spans": "none",
+      "reading_version": "LS4-R1a 8 Oct 2026 (reading.md), grades as checked in AUDIT (LS4-V1a) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS4-V1a)' section 4",
+      "depth_sentence": "On 7 July 1864 the Quartermaster General's office tells Captain Thomas at Baltimore to send the vessels that brought up Ricketts' troops straight back to City Point, together with every steam transport in U.S. service then available in the port of Baltimore.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, LS4-V1a); image checked, all 8 lines (LS4-V1a); code clause: Wayworn = Steam reads in E7, E21 and E92, Blubber = City Point in E63 and E92; no external check",
+      "depth_note": "11 H of 11 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS4-V1a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 95.5,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS4-V1a verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Capt. Geo. K. Leet to Lt. Col. Bowers, 14 Aug 1864, Sharpe's men and W. J. Lee's offered ride to Gordonsville (N2-BZ part 2)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Papers of Ulysses S. Grant (Internet Archive full text), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
+      "gap": "N3 (weak): about half the body is clear in the public transcription of 9047; the key gives Gordonsville, horse, Wednesday/Thursday, information, tomorrow and 200; the Grant Papers footnotes for 14 Aug 1864 were not read page by page (msstate PDFs Cloudflare-challenged), JSTOR unread",
+      "phrases": [
+        "Huntington mssEC 19 p.154, pointer 9047, N2-BZ (second telegram)"
+      ],
+      "document_id": "Huntington mssEC 19 p.154, pointer 9047, N2-BZ (second telegram)",
+      "documents": [
+        "Huntington mssEC 19 p.154, pointer 9047, N2-BZ (second telegram)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "21 H of 22 code words (Black M)",
+      "unresolved_spans": "none",
+      "reading_version": "LS4-R1a 8 Oct 2026 (reading-no2.md), grades as checked in AUDIT (LS4-V1a) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS4-V1a)' section 4",
+      "depth_sentence": "On 14 Aug 1864 Captain Leet tells Lieutenant Colonel Bowers that Colonel Sharpe's men will not go out before Wednesday or Thursday, and that W. J. Lee, once employed by Sharpe, offers to ride to Gordonsville starting tomorrow morning if given a horse and 200 dollars.",
+      "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, LS4-V1a); image checked, 7 lines (LS4-V1a); code clause: Charity = Gordonsville reads in N2-BB, N2-E and here; no external check",
+      "depth_note": "21 H of 22 code words (Black M)"
     }
   ],
   "lanes": [

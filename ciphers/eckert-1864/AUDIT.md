@@ -3726,3 +3726,105 @@ E84), all account 2; not protecting any of their conclusions. Scope: **O9-BA, E7
   at N3 or better); SO-ECKERT-O9BA stays queued. Readings and ciphertext files unchanged (E76 header "Page 219" -> 217 left for a reader, ~$0.05).
 - Requests: hdl.huntington.org 8 (4 item JSON, 4 images); archive.org 7 djvu; be-api.us.archive.org 15 (6 timeouts/non-JSON, one retry
   round); www.loc.gov 10 + tile.loc.gov 2; googleapis.com 4 (2 answered 503); api.openalex.org 4; all >= 1.5 s apart.
+
+## AUDIT (LS4-V1a)
+
+Verifier LS4-V1a (account 1, LANE ST-LEDGER-4), 8 Oct 2026, 15:59-16:3x UTC by `date -u`; a separate session from the reader (LS4-R1a read
+these entries), not protecting its conclusions. Scope: **E90, E91, E92, E94** (ciphertext.txt, Cipher No. 1, key.md) and **N2-BZ
+part 2** (ciphertext-no2.txt, Cipher No. 2); N1 confirmation by script of **N2-BZ part 1** and **N2-CA**. Nothing decoded beyond
+re-running the committed scripts and looking code words up in the three key files. Key source for every item: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md.
+
+### 1. Re-derivation, which book, image check
+- `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check`: exit 0 each.
+- **Which book.** Body code words looked up in key.md / key-no2.md / key-no9.md. E90 under No. 2: Schenck, Necessary, Pennsylvania, Fall back
+  (no sentence); E92 under No. 2: Telegraph, Cairo, Transportation, Steele, Left, Baton Rouge (none); key-no9.md has no row for either but
+  Stomach/Whiff/Blubber in other senses. **E90, E92 are No. 1.** N2-BZ part 2 under No. 1: Yancey = "Drove in our pickets", Yankee = "Drove in
+  Enemys pickets", Charity = Humboldt, Silver = Head Quarters, Wedlock = Track (none); under No. 2: Wednesday, Thursday, Gordonsville, Horse,
+  Tomorrow, Arnold Snyder = 2 100, Spencer = Information (one sentence). **No. 2**, as the reader re-filed it.
+- **Image.** 2400 px IIIF images of 8965, 8996, 9047 (3 requests, scratch, not committed); crops cut here:
+  `python3 tools/iiif_lines.py --image $S/img/p8965.jpg --out $S/crops/8965 --prefix p8965 --region 0,1640,2400,500 --lines-per-crop 3 --max-width 1600`,
+  likewise 8996 `--region 0,1080,2400,750 --lines-per-crop 4` and 9047 `--region 0,1700,2400,800 --lines-per-crop 4`. Word for word:
+  **E90** (all 5 lines, "Hannah Harrow for Pandora Biggs Animal unity Has Nabob Stomach the Bergen [Must, faint, struck] Must we shade him by
+  the other line Star Walrus Belcher Pleasant") agrees with ciphertext.txt; **E92** (all 8 lines) agrees, the word after "U S" is written with a
+  looped initial that looks like "Revise" (no key row; plain "service" as the volunteer has it), and "Despatch!" is the image's spelling;
+  **N2-BZ part 2** (the longest, lines "For Lt Pearl Bowers Black yard Paxton Sharpes" to "with Silver and Arnold Snyder doll yours yacht")
+  agrees. The one M token in the part (Black, City Point in No. 1, Cairo in No. 2) is clearly "Black" on the image: the conflict is the
+  book's, not the eye's; it stays M.
+- **Step 0 the reader skipped (the D2V-E74 / LS3-V18b line).** The Huntington's own public transcriptions: **8967 (E91)** reads "Please come
+  hither Pekin Your depart ure for Europe Persia practicable is deemed Tartan" -- the body is in clear except Persia (As soon as), Pekin
+  (comma) and the unread Tartan; **9030 (E94)** reads "The money and pack cage concerning which I wrangled you on Friday are Sligo Chemical bank
+  and not the bank of Com - merce" -- in clear except wrangled (Telegraph-ed) and Sligo (In the). Both are N1 by the line in "## AUDIT
+  (LS3-V18b)" section 5 (body in clear in the holding archive's public transcription, at most one content code word). **E90**: the clear words
+  are only "Has ... the ... must we ... him by the other line"; **E92**: the order's frame is clear, its destination, cargo and port are code
+  (troops, City Point, steam transports, available, in the, Baltimore); **N2-BZ part 2**: much is clear ("a man named W. J. Lee formerly employed
+  by ... Sharpe offers to make a trip to ... on ...back"), but the key alone gives Gordonsville, horse, Wednesday/Thursday, information,
+  tomorrow and 200 [dollars].
+
+### 2. Located in print / in the holding archive's clear text
+| ID | where | how confirmed |
+|---|---|---|
+| N2-CA (Halleck to Canby, 16 Aug 1864 8.30 PM) | **OR ser. I vol. 41 pt 2 p.725** ("Washington, August 16, 1864 -- 8.30 p. m. ... General Grant directs, if Kirby Smith succeeds in crossing the Mississippi River, that you concentrate all the troops you can spare on Mobile. H. W. Halleck") | IA `warofrebellion412unit` djvu (scratch), normalized grep; page from the running head. The ledger's closing "Does Myers still trouble you?" is not in the print. **N1 confirmed.** |
+| N2-BZ part 1 (Lincoln to Grant, 14 Aug 1864) | **OR ser. I vol. 42 pt 2 p.167** ("Washington, D. C., August 14, 1864 -- 1.50 p. m. Lieutenant-General Grant, City Point ... The Secretary of War and I concur that you had better confer with General Lee and stipulate for a mutual discontinuance of house burning ... A. Lincoln"; the ledger heads it 1.30 PM) | IA `warofrebellion422unit` djvu (scratch), normalized grep. **N1 confirmed.** |
+| E91 | Huntington public transcription of 8967 | body in clear (section 1) |
+| E94 | Huntington public transcription of 9030 | body in clear (section 1) |
+| E90 (context, not the text) | **Biggs's clear reply**, Huntington mssEC 11 p.201 (pointer 4642), public transcription: "Ft Monroe May 20. 1864 [6.50 PM] for QrmrGenl ... Your dispatch recd. Sheridan's Command is at White House wants ponton train rations & forage ... Sent two days forage to him all I had at the depot ... expect Sheridan will come to West Point ... Herman Biggs Chf Qrmr" | CONTENTdm full-text search "Sheridan forage" (12 hits, this the only one of 20 May 1864); `dmGetItemInfo` read. It answers both of E90's questions and checks Nabob = Sheridan and Shade = Forage non-statistically; it does not state E90's own words. Not found in OR I/36 pt 2 by phrase ("ponton train", "fifteen hundred axes", "no uneasiness about us"). |
+
+### 3. Search log, entries not located (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| Holding archive, CONTENTdm full text (p16003coll11, `CISOSEARCHALL`, sixth segment 1) | "Sheridan forage", "Ricketts transports", "Chemical bank", "Sanford Europe", "Sanford Brevoort", "Gordonsville horseback", "Sharpe Lee Bowers", "Dix Chemical"; `dmGetItemInfo` 4642, 7980 | 4642 = Biggs's reply (section 2); "Chemical bank" also 7980 and 8798, Memphis funds to the Treasurer, 1865 (unrelated); the rest only the entries' own pages |
+| OR by date, local djvu grep, normalized (scratch / sources/ia-fulltext/print-check) | I/36 pt 2 (May 1864: E90), I/37 pt 2 and I/40 pt 3 (July 1864: E92), I/41 pt 2, I/42 pt 2 (Aug 1864: N2-BZ), ser. III vols. 4-5 (`cu31924079575373`, `cu31924079575381`: all) | E90, E92, N2-BZ part 2 not found; I/40 pt 3 prints the context of E92 (Grant to Meigs, City Point 6 Jul 1864: "Ricketts' division ... embarking here to-day for Harper's Ferry by Baltimore"; Ingalls the same day) but no QMG order of 7 Jul returning the vessels |
+| ORN | not searched: none of the five is naval traffic (E92's vessels are army transports) | -- |
+| Papers of Ulysses S. Grant (IA lending copies, be-api full text by identifier) | vol. 10 ("forage", "White House" Biggs, "Biggs"), vol. 11 ("Gordonsville", "reliable man", "formerly employed by", "Ricketts", "steam transports", "Leet", "Sharpe", "house burning") | snippets only, no page: "Gordonsville" and "Ricketts" hit other telegrams (N2-BB's text, already N1; Beckwith's 8 Jul sibling of E92 on 8996); "Sharpe" hits a 3.00 PM Sharpe-to-Rawlins telegram and the index, not this one; nothing for E90, E92 or N2-BZ part 2. The open-access PDFs at scholarsjunction.msstate.edu are Cloudflare-challenged (403, one try): **the Grant Papers footnotes for 14 Aug 1864 were not read page by page** |
+| IA full text (be-api fts, no identifier) | "Chemical Bank" "Bank of Commerce" Dana; "Sanford" "departure for Europe"; "Sheridan" "forage him" | nothing relevant (directories, a 1914 newspaper); plus LS4-R1a's phrases |
+| 1864 press (loc.gov Chronicling America JSON, `dates=` window) | chemical bank dix dana (15 May-15 Aug 1864, 14 pages), sanford europe seward (20) | titles only, not read; chroniclingamerica.loc.gov's own search answered 403 (one try each) |
+| Not searched / unreachable | Google Books, OpenAlex, S2, CORE (cap); NARA RG 92 QMG telegrams sent; Seward papers and Sanford papers (E91, N1 regardless); Basler (none of the five is to or from Lincoln except N2-BZ part 1, printed); HathiTrust; JSTOR (rows appended, never blocking) | unread |
+
+### 4. Grades and classification (key `period` for all)
+`depth_pct` = H / (H + I + M) over the message's code words (tail fillers excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E90 QMG office to Col. Biggs, Fort Monroe, 20 May 1864 1.30 PM | **N3** (weak) | unknown: the frame is clear in the public transcription, the content is code; Biggs's clear reply of 6.50 PM (4642) answers it | D3 | 100 (12 H of 12) | image, all 5 lines; code clause; external: 4642 |
+| E91 Seward to H. S. Sanford, New York, 21 May 1864 10 AM | **N1** | known: body clear in the public transcription of 8967 | D1 | 90.9 (10 H of 11; Tartan unread) | public transcription read against ciphertext.txt |
+| E92 QMG office to Capt. Thomas, Baltimore, 7 Jul 1864 11 AM | **N3** (weak) | unknown | D2 | 100 (11 H of 11) | image, all 8 lines; code clause |
+| E94 Dana to Dix, New York, 1 Aug 1864 10.30 AM | **N1** | known: body clear in the public transcription of 9030 | D1 | 88.9 (8 H of 9; Growler M) | as E91 |
+| N2-BZ part 2, Leet to Lt. Col. Bowers, 14 Aug 1864 | **N3** (weak) | unknown: about half the body is clear in the public transcription of 9047 | D2 | 95.5 (21 H of 22; Black M) | image, the longest 7 lines; code clause |
+| N2-BZ part 1, Lincoln to Grant, 14 Aug 1864 | **N1** (confirmed) | known, OR I/42 pt 2 p.167 | -- | -- | script grep |
+| N2-CA Halleck to Canby, 16 Aug 1864 | **N1** (confirmed) | known, OR I/41 pt 2 p.725 (closing question not printed) | -- | -- | script grep |
+
+- **Code clauses (depth bar: a value reading sensibly in >= 2 independent contexts).** E90: Bergen = James reads in E7 (9 May 1864, to Biggs,
+  "transport these men up the James") and E90; Nabob = Sheridan in E13 ("Sheridan may know where to go") and E90. E92: Wayworn = Steam reads in
+  E7 ("we need steam power to tow barges"), E21 (Wayworn among the steamers and tugs chartered) and E92; Blubber = City Point in E63 and E92. N2-BZ part 2: Charity = Gordonsville
+  reads in N2-BB ("passed through Gordonsville in cars") and N2-E ("80 days supplies at Gordonsville") and here; Silver = Horse in several other No. 2 entries.
+  Each depth sentence below depends on those values. E91's and E94's body code words carry no specific content: no clause, D1.
+- **D3 for E90 only**: 100% H, image, and a non-statistical external check (Biggs's clear reply agrees on Sheridan and forage). E92 and N2-BZ part 2
+  have no external check and no AD computation here: D2.
+- **N3 (weak) for E90, E92, N2-BZ part 2**: no prior plaintext or decipherment located after the logged search. Not N4: the Grant Papers
+  footnotes, NARA RG 92, the press page by page, HathiTrust and JSTOR are unread. Weak because part of each is in clear in the public
+  transcription (E90 its frame and the clear reply; N2-BZ part 2 about half its words). A second audit may lower N2-BZ part 2 if the Grant
+  Papers footnote for Bowers's 14 Aug traffic prints it. Safe sentence (each): "Read at grade H with the period Cipher No. [1|2] book; part of
+  the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located
+  in the Official Records (by date and correspondent), the Papers of Ulysses S. Grant (Internet Archive full text), the Huntington's own
+  full-text search or Internet Archive full text (searched 8 Oct 2026)." Unsafe: "first", "unpublished", "never printed", any word implying
+  the clear words were not public.
+- Depth sentences (D2+, written from the reading, checked against the derived block): **E90** "At 1.30 PM on 20 May 1864 the Quartermaster
+  General's office asks Colonel Biggs at Fort Monroe whether Sheridan has left the James, and whether they must forage him by the other line."
+  **E92** "On 7 July 1864 the Quartermaster General's office tells Captain Thomas at Baltimore to send the vessels that brought up Ricketts'
+  troops straight back to City Point, together with every steam transport in U.S. service then available in the port of Baltimore."
+  **N2-BZ part 2** "On 14 Aug 1864 Captain Leet tells Lieutenant Colonel Bowers that Colonel Sharpe's men will not go out before Wednesday or
+  Thursday, and that W. J. Lee, once employed by Sharpe, offers to ride to Gordonsville starting tomorrow morning if given a horse and 200 dollars."
+
+### 5. Postmortem
+- The reader's step 0 (its own brief) should have stopped E91 and E94: their bodies read in order in the public transcription. The reader
+  recorded only the pasted slip 9048/0 as clear. Same lesson as D2V-E74 and LS3-V18b, a third time: the step-0 test is "does the body read in
+  order", not "is the entry a clear slip".
+- The holding archive's full-text search found what the print pass could not for E90: the addressee's clear reply on another ledger.
+  Searching the decoded substance in CONTENTdm is worth its cost for every QMG-office entry (Biggs, Ingalls, Van Vliet reply in clear).
+- Corrections to LS4-R1a's section (a note appended there): E91, E94 are N1 (clear in their own transcription); N2-BZ part 1 and N2-CA print
+  pages fixed (OR I/42 pt 2 p.167; I/41 pt 2 p.725); E90's "forage him" is "shade him" on the image, Shade = Forage, not doubtful.
+- Rows: status.json one result row each for E90, E92, N2-BZ part 2 (N3), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows
+  SO-ECKERT-E90, SO-ECKERT-E92, SO-ECKERT-N2BZ2 with prompts in second-opinions/; JSTOR-QUEUE.tsv 6 rows (families i and ii). Requests:
+  hdl.huntington.org 8 searches + 2 item JSONs + 3 images, >= 3.2 s apart; archive.org 5 djvu + 4 metadata + 1 advancedsearch; be-api 15
+  (one 502, one retry after 5 s); scholarsjunction.msstate.edu 3 (two 403s, stopped); chroniclingamerica.loc.gov 2 (403, stopped); www.loc.gov 2.

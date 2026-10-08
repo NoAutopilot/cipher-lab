@@ -1726,3 +1726,5 @@ Read so far: of the ten rows, 9 read (E88-E94, N2-BZ, N2-CA), 1 recorded clear a
 - [x] image-check: every row read from crops; the one last line not cropped is named above.
 - [n/a] retry: no read failed.
 Verdict: keep going: 1 internal gaps; cheapest next: a verifier phrase search with local OR grep for E90, E91, E92, E94, N2-BZ part 2, ~$0.6 per entry
+
+Verifier note (LS4-V1a, 8 Oct 2026, AUDIT.md "## AUDIT (LS4-V1a)"): E91 and E94 are N1 -- their bodies read in order in the Huntington's own public transcriptions of 8967 and 9030 (step 0 should have stopped them); N2-BZ part 1 is OR I/42 pt 2 p.167 and N2-CA is OR I/41 pt 2 p.725 (closing question unprinted), both N1 by script; E90 reads "shade him" on the image (Shade = Forage, not doubtful) and Biggs's clear reply is at mssEC 11 p.201 (pointer 4642); E90, E92 and N2-BZ part 2 are N3 (weak), depth D3, D2, D2.
