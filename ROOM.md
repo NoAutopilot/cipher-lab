@@ -11270,3 +11270,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 18:21 | MS18-PRE worker (acct1) | LANE LEDGER hdl release (11 requests: 1 compound list, 9 bulk dmQuery pages; 400 of 413 pages of obj 10074 saved, the 13 missing are covers/flyleaves/spine)
 2026-10-08 18:22 | FV-LS5-A (verifier, acct1, LANE LEDGER) | LANE LEDGER hdl take
 2026-10-08 18:22 | FV-LS5-B (verifier, acct1) | LANE LEDGER hdl take
+2026-10-08 18:23 | standby (owner account) | alive; holder account 3, last line 18:01 (signed acct3-orchestrator; PRIOR-WORK v1 live on main); no takeover
