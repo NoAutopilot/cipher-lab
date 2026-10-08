@@ -354,3 +354,11 @@ ciphers/na-oldenbarnevelt-2442-1605	("Senisteros" OR "Sinisteros" OR "Cisneros")
 ciphers/na-oldenbarnevelt-2442-1605	"obispo de Sigüenza" AND 1605 AND "Juan de la Peña"	2026-10-08	queued	
 ciphers/na-oldenbarnevelt-2442-1605	"todos tienen sus pretensiones"	2026-10-08	queued	
 ciphers/na-oldenbarnevelt-2442-1605	"sus mismos hijos muchas veces no se atreven"	2026-10-08	queued	
+ciphers/eckert-1864	Meigs AND Biggs AND "Cavalry Bureau" AND 1864 AND (telegram OR cipher OR horses)	2026-10-08	queued	
+ciphers/eckert-1864	Rucker AND Biggs AND "City of Albany" AND 1864 AND (telegram OR cipher OR Pamunkey)	2026-10-08	queued	
+ciphers/eckert-1864	"move cattle and horses up the Pamunkey"	2026-10-08	queued	
+ciphers/eckert-1864	Rucker AND Newport AND Baltimore AND 1864 AND (steamers OR propellers) AND (telegram OR cipher)	2026-10-08	queued	
+ciphers/eckert-1864	"every available steamer and propeller"	2026-10-08	queued	
+ciphers/eckert-1864	"send on a man to identify him"	2026-10-08	queued	
+ciphers/eckert-1864	Meigs AND Biggs AND Salvor AND 1864 AND (coal OR "Hilton Head" OR telegram)	2026-10-08	queued	
+ciphers/eckert-1864	"Send Salvor to Annapolis"	2026-10-08	queued	

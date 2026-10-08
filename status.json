@@ -5229,9 +5229,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V3)'"
+        "AUDIT.md '## AUDIT (LS-V3)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-D)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -5246,8 +5247,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Meigs to Biggs, 25 Apr 1864, winds and waves, 1,000 horses, saddle horses to the Cavalry Bureau (E42)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS-V3), not counted until a second adversarial audit; SO-ECKERT-E42 queued",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located after two independent searches (8 Oct 2026) of the Official Records (ser. I, II, III and the Navy series, by date and correspondent), the senders' and recipients' printed papers (Butler's correspondence included), the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE.",
+      "gap": "NARA RG 92/107/393 copies, the Meigs Papers, the NY Evening Post itself and HathiTrust full text unread, Semantic Scholar unreachable, JSTOR rows pending, so not N4; second audit AUD2-LS-D 8 Oct 2026 held N3 (Butler correspondence, ORN, OR by date, 1864 press by date window); SO-ECKERT-E42 queued",
       "phrases": [
         "Huntington mssEC 19 p.53, pointer 8945"
       ],
@@ -5263,16 +5264,17 @@
       "reading_version": "LS-R3 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V3)' section 4",
       "depth_sentence": "Meigs tells Biggs that winds and waves hold up the barges and sailing vessels, that 1,000 horses are being shipped, that his request for 100 saddle horses went to the Cavalry Bureau, and that he is to send for the mules.",
-      "depth_check": "fresh rule-7 re-derivation (LS-V3); no external print check of a decoded value",
+      "depth_check": "fresh rule-7 re-derivation (LS-V3); no external print check of a decoded value; external check (AUD2-LS-D): the code value for 1,000 with Horses agrees with Halleck's 1,000 horses for Butler, 21 Apr 1864 (OR I/33; Butler corr. vol. 4 p.112)",
       "depth_note": "28/28 code words H"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V3)'"
+        "AUDIT.md '## AUDIT (LS-V3)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-D)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 95.2,
@@ -5287,8 +5289,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Rucker to Biggs, 29 May 1864, coal for White House; City of Albany and Ranger back (E43)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS-V3), not counted until a second adversarial audit; SO-ECKERT-E43 queued",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located after two independent searches (8 Oct 2026) of the Official Records (ser. I, II, III and the Navy series, by date and correspondent), the senders' and recipients' printed papers (Butler's correspondence included), the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE.",
+      "gap": "NARA RG 92/107/393 copies, the Meigs Papers, the NY Evening Post itself and HathiTrust full text unread, Semantic Scholar unreachable, JSTOR rows pending, so not N4; second audit AUD2-LS-D 8 Oct 2026 held N3 (Butler correspondence, ORN, OR by date, 1864 press by date window); SO-ECKERT-E43 queued; Biggs's reply of 30 May (OR I/36 pt 3) prints only the return of the two boats",
       "phrases": [
         "Huntington mssEC 19 p.83, pointer 8975"
       ],
@@ -5304,16 +5306,17 @@
       "reading_version": "LS-R3 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V3)' section 4",
       "depth_sentence": "Rucker asks Biggs whether the coal for the York and Pamunkey has been sent, as it is needed at White House at once, and asks for the steamers City of Albany and Ranger back to move cattle and horses up the Pamunkey.",
-      "depth_check": "fresh rule-7 re-derivation (LS-V3); OR I/36 pt 3, Biggs's reply of 30 May 1864 (return of City of Albany and Ranger, Benham's boats) agrees",
+      "depth_check": "fresh rule-7 re-derivation (LS-V3); OR I/36 pt 3, Biggs's reply of 30 May 1864 (return of City of Albany and Ranger, Benham's boats) agrees; image checked (AUD2-LS-D)",
       "depth_note": "19 H + 1 C of 21 code words; 'Waymorners' unread"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V3)'"
+        "AUDIT.md '## AUDIT (LS-V3)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-D)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -5328,8 +5331,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Rucker to Newport, Baltimore, 29 Nov 1864, every available steamer and propeller (E45)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS-V3), not counted until a second adversarial audit; SO-ECKERT-E45 queued",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located after two independent searches (8 Oct 2026) of the Official Records (ser. I, II, III and the Navy series, by date and correspondent), the senders' and recipients' printed papers (Butler's correspondence included), the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE.",
+      "gap": "NARA RG 92/107/393 copies, the Meigs Papers, the NY Evening Post itself and HathiTrust full text unread, Semantic Scholar unreachable, JSTOR rows pending, so not N4; second audit AUD2-LS-D 8 Oct 2026 held N3 (Butler correspondence, ORN, OR by date, 1864 press by date window); SO-ECKERT-E45 queued",
       "phrases": [
         "Huntington mssEC 19 p.235, pointer 9129"
       ],
@@ -5345,16 +5348,17 @@
       "reading_version": "LS-R3 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V3)' section 4",
       "depth_sentence": "Rucker tells Colonel Newport at Baltimore to send every steamer and propeller he can spare to Washington at once and to give their names.",
-      "depth_check": "fresh rule-7 re-derivation (LS-V3); header time conflict (Fanny = 11 AM vs 10.45) noted",
+      "depth_check": "fresh rule-7 re-derivation (LS-V3); header time conflict (Fanny = 11 AM vs 10.45) noted; external check (AUD2-LS-D): signature code words Brigadier General and Quartermaster agree with Rucker's rank and office (OR I/43 pt 2); header 10.45 AM confirmed on the image, time word Fanny 11 AM",
       "depth_note": "11/11 code words H"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V3)'"
+        "AUDIT.md '## AUDIT (LS-V3)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-D)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -5369,8 +5373,8 @@
       "kind": "reading",
       "title": "Eckert 1864: to John A. Kennedy, New York police, 30 Nov 1864, suspected chief conspirator of the New York fires in the Old Capitol (E46)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/110/92/59 copies, the Seward and Stanton papers, the 1864 New York press page by page, HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS-V3), not counted until a second adversarial audit; SO-ECKERT-E46 queued; the Evening Post description it cites is reprinted in the Evening Star 29 Nov 1864 p.2, the Old Capitol prisoner is not located",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located after two independent searches (8 Oct 2026) of the Official Records (ser. I, II, III and the Navy series, by date and correspondent), the senders' and recipients' printed papers (Butler's correspondence included), the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE.",
+      "gap": "NARA RG 92/107/393 copies, the Meigs Papers, the NY Evening Post itself and HathiTrust full text unread, Semantic Scholar unreachable, JSTOR rows pending, so not N4; second audit AUD2-LS-D 8 Oct 2026 held N3 (Butler correspondence, ORN, OR by date, 1864 press by date window); SO-ECKERT-E46 queued; the Evening Post description it cites is reprinted in the Evening Star 29 Nov 1864 p.2, the Old Capitol prisoner is not located",
       "phrases": [
         "Huntington mssEC 19 p.236, pointer 9130"
       ],
@@ -5386,16 +5390,17 @@
       "reading_version": "LS-R3 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V3)' section 4",
       "depth_sentence": "Kennedy, New York's police superintendent, is told that a man believed to be the chief conspirator of the attempt to burn New York, as described in Monday's Evening Post, is in the Old Capitol Prison, and asked to send someone to identify him.",
-      "depth_check": "image crop, all lines, checked (LS-V3); fresh rule-7 re-derivation (LS-V3); Evening Star 29 Nov 1864 p.2 reprints the Evening Post description the telegram cites; OR I/43 pt 2 gives Kennedy's post",
+      "depth_check": "image crop, all lines, checked (LS-V3); fresh rule-7 re-derivation (LS-V3); Evening Star 29 Nov 1864 p.2 reprints the Evening Post description the telegram cites; OR I/43 pt 2 gives Kennedy's post; press 30 Nov-12 Dec 1864 read for the Old Capitol identification (AUD2-LS-D): not located",
       "depth_note": "9/9 code words H; signature words unread (a name)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V4)'"
+        "AUDIT.md '## AUDIT (LS-V4)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-D)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 92.9,
@@ -5410,8 +5415,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Meigs to Lt Col Biggs, Fort Monroe, 6 Apr 1864, the Salvor to Annapolis and coal for Hilton Head (E47)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "NARA RG 107/92/156 copies, the 1864 press page by page, HathiTrust full text and the open scholarship indexes unread, JSTOR rows pending, so not N4; one audit (LS-V4), not counted until a second adversarial audit; SO-ECKERT-E47 queued; a second ledger copy (Huntington 5595, ciphertext) exists",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located after two independent searches (8 Oct 2026) of the Official Records (ser. I, II, III and the Navy series, by date and correspondent), the senders' and recipients' printed papers (Butler's correspondence included), the Huntington collection's full text, the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE.",
+      "gap": "NARA RG 92/107/393 copies, the Meigs Papers, the NY Evening Post itself and HathiTrust full text unread, Semantic Scholar unreachable, JSTOR rows pending, so not N4; second audit AUD2-LS-D 8 Oct 2026 held N3 (Butler correspondence, ORN, OR by date, 1864 press by date window); SO-ECKERT-E47 queued; a second ledger copy (Huntington 5595, ciphertext) exists; OR I/33 p.814 prints Biggs's same-day reply on the coal and Salvor, not this telegram",
       "phrases": [
         "Huntington mssEC 19 p.30, pointer 8922, E47"
       ],
@@ -5427,7 +5432,7 @@
       "reading_version": "LS-R4 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V4)' section 4",
       "depth_sentence": "Meigs tells Biggs at Fort Monroe to send the steamer Salvor to Annapolis if she can be spared and to send coal afloat at Fort Monroe to Hilton Head, saying how much, so that he can replace it from the North.",
-      "depth_check": "fresh rule-7 re-derivation (LS-V4); second ledger copy Huntington pointer 5595 agrees in its plain words and gives vinton for the repaired word",
+      "depth_check": "fresh rule-7 re-derivation (LS-V4); second ledger copy Huntington pointer 5595 agrees in its plain words and gives vinton for the repaired word; external check (AUD2-LS-D): Purple = 1,000 (tons) and Appian/Animal = Monroe agree with Biggs's printed same-day offer (OR I/33 p.814); image checked",
       "depth_note": "13 H + 1 I of 14 code words"
     },
     {

@@ -2234,3 +2234,81 @@ queries by name and event.
   Chief of Staff; LS-R4's "Halleck (signed General-in-Chief)" is accurate as a transcription of the code word.
 - Rows: status.json one result row per N3 entry (E47, E49, E50, E51, E52, E54); SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E47, -E49,
   -E50, -E51, -E52, -E54 with prompts in second-opinions/. Requests: listed in the ROOM done line.
+
+## AUDIT 2 (second adversarial, AUD2-LS-D)
+
+Verifier AUD2-LS-D (account 2, session_01STRHCzJtyQ9kBmyHiNY5Yk, for the account-3 orchestrator; brief
+`.claude/briefs/runs/2026-10-08-acct3-ledger2.md`, shape of `runs/2026-10-08-acct3-aud2-ls.md`), 8 Oct 2026, 03:12-03:4x UTC by
+`date -u`. Scope: **E42, E43, E45, E46, E47** only. This session is separate from the solvers (LS-R3, LS-R4) and the first auditors
+(LS-V3, LS-V4). It tried to find each text in print and did not protect either audit's conclusion. Nothing was decoded beyond
+re-running the committed script. Depth ruled under `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`.
+
+### 1. Re-derivation (rule 7) and image check
+- `python3 ciphers/eckert-1864/decode.py --check`: "reading.md is current", exit 0.
+- 2400 px IIIF images `hdl.huntington.org/digital/iiif/p16003coll11/<ptr>/full/2400,/0/default.jpg` for 8945 (E42), 8975 (E43),
+  9129 (E45), 8922 (E47) and 5595 (E47's second copy), in scratch, not committed. The entry regions were cropped with PIL and read by eye
+  (E42 y 1880-2720, E43 y 290-1230, E45 y 1240-1900, E47 y 1880-2700, full width). LS-V3 and LS-V4 had checked none of these four
+  pages; LS-V3 had checked E46 (9130) word for word, so it was not re-cropped here. Every line from header to signature agrees with
+  ciphertext.txt. Notes, none of which changes a reading:
+  - E42: the tail word is written "Benders", transcribed "Bender". It is outside the plain text.
+  - E43: "Waymorners" is as transcribed. The line-end "Windsors[?]" runs into the gutter and stays uncertain.
+  - E45: the header time "10 45 am" is written above "Sampson Balto.", so the "[?]" on the header time can go. The time word Fanny
+    still gives 11 AM, the conflict LS-R3 noted. The twin message to "S H Beckwith City Pt" on the same page (10 am) has the same
+    text and is not read.
+  - E47: the page has a marginal "Sent from Book 4 PM", and its header reads 3.30 PM. Pencil glosses in a later hand sit above the
+    header words ("again", "day", "8", "6", "small", "given", "4", "10", "2") and under the last line ("Run 3", "5", "was", "your",
+    "9", "rush", "7", "once", "him", "here"). They sit over route and blind words, not plain text (NOTES.md already records them).
+    They are not ledger text and not a decipherment of the message.
+
+### 2. Families LS-V3 / LS-V4 did not cover, searched here (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| Butler, *Private and Official Correspondence* vols 4-5 (IA `privateofficialc04butl`, `privateofficialc05butl`, djvu whole volume, regex) -- LS-V3 read them for E42/E43, LS-V4 not at all (E47: Biggs was Butler's QM) | Biggs, Meigs, Rucker, Salvor, Hilton Head, coal, saddle, Cavalry Bureau, mules, City of Albany, Pamunkey, Newport, propeller, Kennedy, Old Capitol, Evening Post, by date +/- 3 days | no text of any of the five. Context for **E42**: Halleck to Butler, 21 Apr 1864, "One thousand horses will be sent to you in preference to all others" (vol. 4 p.112; also OR I/33), and Butler to the Secretary of War, 19 Apr, asking for "at least one thousand" cavalry horses, the shipment E42 reports under way |
+| ORN ser. I vols 9, 10, 11 (North Atlantic) and 15 (South Atlantic, Hilton Head) -- not read by LS-V4 for E47, nor by LS-V3 for E43, E45 | same names and phrases | none. "Salvor" occurs only as "salvors" (a salvage claim) |
+| OR read by date and correspondent again: I/33 (E42, E47), I/36 pt 3 (E43), I/42 pt 3 and I/43 pt 2 (E45, E46), III/4 | every Biggs, Rucker, Newport entry on 4-7 Apr, 23-27 Apr, 27-30 May, 27 Nov-5 Dec 1864 | no telegram of the five. **E47 context:** OR I/33 p.814 prints Biggs to Meigs, Fort Monroe, 6 Apr 1864 (received 1.30 p.m.): "Can spare a thousand tons coal, and have ordered it sail as soon as weather will possibly admit. Can spare more which is afloat ... Will give Salvor eight days' coal and twelve of water". It reached Washington before E47 was sent (header 3.30 PM, "Sent from Book 4 PM"), so it answers an earlier request. E47's "Purple" = 1,000 tons of coal is Meigs acting on that offer. The order to send Salvor to Annapolis and the coal's destination (Hilton Head) are not in it. **E45:** Rucker's correspondence in I/43 pt 2 is with J. G. C. Lee (27 Nov, Alexandria depot guards) and Whytal, nothing on steamers; no twin to City Point or Baltimore in I/42 pt 3 |
+| 1864 press (loc.gov Chronicling America JSON, `dates=` window; page OCR via `tile.loc.gov` word-coordinates service), mandatory per entry | **E46**: `"Old Capitol" incendiary` and `conspirator "Old Capitol" New York fires`, 30 Nov-12 Dec 1864 (28 and 6 result pages listed). Read in OCR: NY Tribune 30 Nov pp.4-5, NY Herald 30 Nov p.4, Evening Star 5 Dec p.2, Phila. Evening Telegraph 3 Dec p.1, Cleveland Leader 30 Nov p.1, Worcester Spy 30 Nov p.2, and five weekly pages (Muscatine 2 Dec, Canton 5 Dec, Sunbury 3 Dec, Potter 7 Dec, Bradford 1 Dec). **E42**: horses shipped Fortress Monroe, 22-30 Apr (21 pages listed; NY Tribune 29 Apr p.1 and Nat. Intelligencer 28 Apr p.3 read for "Cavalry Bureau", "saddle horses", "winds and waves"). **E43**: `"City of Albany" Ranger`, 25 May-10 June (0). **E45**: steamers propellers Baltimore quartermaster, 28 Nov-5 Dec (5 pages, commercial; none on its face). **E47**: Salvor, 1-25 Apr (53 listed; Evening Star 21 Apr p.4 read) | **E46: no report located** of a suspect held in the Old Capitol or of a New York man sent to identify him. Read pages: the Old Capitol in these days holds Roger A. Pryor (NY Tribune and Herald 30 Nov), and the incendiary news is from New York (rewards, the Muscatine weekly's "one of the chief conspirators to burn the city has been arrested" -- in New York, an early report). E42, E43, E45: nothing. E47: Salvor appears only in the New York and Washington Steamship Company's advertisement (Evening Star 21 Apr p.4), the line's ships |
+| Huntington CONTENTdm (`CISOSEARCHALL`, p16003coll11) | City of Albany, Pamunkey, Benham, "saddle horses", Newport, propeller, Old Capitol, conspirator, Salvor | object-level hits only (9302 = mssEC 19 itself, and 4849, 4953, 5952, 10074, 10550 and other volumes, which LS-V3/LS-V4 had already worked page by page for Salvor, Kennedy, Old Capitol); no plain copy of any of the five located. E47's second ledger copy (5595, LS-V4) was fetched and is a ciphertext witness, as LS-V4 says |
+| `tools/print_check.py` fresh phrase pass (scratch target, 14 new phrases: E42 "every exertion is being made winds and waves", "referred to Cavalry Bureau which supplies saddle horses", "not sent here transportation enough for the infantry"; E43 "coal up the York and Pamunkey", "these two boats back here at once"; E45 "every available steamer and propeller you have", "ascertain at once and give names of those you send"; E46 "described in the New York Evening Post of Monday", "is in the Old Capitol prison send on a man to identify him"; E47 "Send Salvor to Annapolis", "order a thousand tons of coal afloat", "that I may replace it from the North", and others), listed sources Butler vols 4-5, ORN I/9, I/10, I/15 | no hit in any listed source; IA-wide 0; Google Books returns loose word matches only (checked by title and snippet); OpenAlex and CrossRef keyword searches give nothing relevant |
+| Google Books API (key, country=US), 6 hand queries | `"Old Capitol" "chief conspirator" 1864`; `Kennedy "Old Capitol" identify incendiary 1864`; `"Salvor" Annapolis Meigs 1864`; `"City of Albany" Ranger Pamunkey Rucker`; `Rucker Newport "every available" steamer propeller 1864`; `"winds and waves" Meigs barges 1864 Biggs` | only the OR I/36 pt 3 Biggs reply (E43 context, known to LS-V3); Harper's Weekly 10 Dec 1864 has the incendiary plot in general (snippet). No text of the five |
+| CORE (key) | `"Salvor" AND Annapolis AND 1864` (0); `Rucker AND Newport AND quartermaster AND 1864` (0); `"Old Capitol" AND "burn New York"` (HTTP 500, not retried) | nothing |
+| Semantic Scholar (key) | three event queries (Meigs coal Hilton Head April 1864; Rucker steamers Baltimore Nov 1864; Old Capitol prisoner New York plot); print_check's call | HTTP 429 on every call; **unreachable** this session, not retried in a loop |
+| JSTOR-QUEUE.tsv | existing: E42 "winds and waves control" (ii), E46 "chief conspirator" AND "burning of New York" AND "Old Capitol" (i). Added: E42 (i); E43 (i) and (ii); E45 (i) and (ii); E46 (ii); E47 (i) and (ii) | pending (never blocks) |
+| Unread / unreachable | NARA RG 92 (QMG letters and telegrams sent: Meigs, Rucker), RG 107 (M473), RG 393 (Dept of Washington, Old Capitol prison records, E46's sender), the NY Evening Post itself (not in Chronicling America), Kennedy's police papers; Meigs Papers (LoC); HathiTrust full text; Semantic Scholar | unread |
+Requests: hdl.huntington.org 14 (5 IIIF images, 9 CONTENTdm), archive.org 22 (metadata + djvu, 11 volumes) + print_check 5,
+be-api.us.archive.org print_check 14, www.googleapis.com 6 + print_check 14, www.loc.gov about 25, tile.loc.gov about 15, api.openalex.org
+print_check 16, api.crossref.org print_check 3, api.core.ac.uk 3, api.semanticscholar.org 4 (all 429).
+
+### 3. Classification (key `period` for all five)
+| ID | first audit | AUDIT 2 | depth | why |
+|---|---|---|---|---|
+| E42 Meigs to Biggs, 25 Apr 1864 | N3 (LS-V3) | **N3 (kept)** | D3 kept, 100 (28/28 H) | no printed text. Print shows only the order it follows (Halleck, 21 Apr: 1,000 horses to Butler), not Meigs's report of the shipping, the referral of the 100 saddle horses to the Cavalry Bureau or the transport complaint. External check added here (LS-V3 had none): the code value read 1,000 ("Plug Promise") with "[Horse]'s" agrees with Halleck's 1,000 horses for Butler (OR I/33; Butler vol. 4 p.112). Not D4: "saddle" is left plain against the book's value Guard, a reading liberty outside the listed name/code residue |
+| E43 Rucker to Biggs, 29 May 1864 | N3 (LS-V3) | **N3 (kept)** | D3 kept, 95.2 (19 H + 1 C of 21; "Waymorners" unread) | the reply (OR I/36 pt 3, 30 May) prints only that the two boats will be returned. Rucker's coal question and his reason (cattle and horses up the Pamunkey) are not in print. Image checked here |
+| E45 Rucker to Newport, Baltimore, 29 Nov 1864 | N3 (LS-V3) | **N3 (kept)** | D3 kept, 100 (11/11 H) | no printed text and no press report of a call for Baltimore steamers. External check added here: the signature code words "palate" (Brigadier General) and "Vinton" (Quartermaster) agree with Rucker's rank and office in print that autumn ("Brig. Gen. D. H. Rucker, Chief Quartermaster", OR I/43 pt 2, 19 Oct 1864). Not D4: the time word Fanny (11 AM) conflicts with the written header 10.45 AM, confirmed on the image |
+| E46 to John A. Kennedy, 30 Nov 1864 | N3 (LS-V3, "second weakest") | **N3 (kept)** | D3 kept, 100 (9/9 H; signature name words unread) | the press read here for 30 Nov-12 Dec 1864, as LS-V3 asked, has no report of a suspect answering the Evening Post's description held in the Old Capitol, and no request to New York to identify him. The description itself is in print (Evening Star 29 Nov 1864, LS-V3). Still not N4: the NY Evening Post itself and RG 393 / Old Capitol records are unread |
+| E47 Meigs to Biggs, 6 Apr 1864 | N3 (LS-V4) | **N3 (kept)** | D3 kept, 92.9 (13 H + 1 I of 14) | the related exchange is in print (OR I/33 p.814: Biggs, received 1.30 p.m. the same day, can spare a thousand tons of coal; Salvor's coal and water). That reply precedes this telegram and does not contain its two orders: Salvor to Annapolis, and the coal to Hilton Head. The content is not the telegram's, so this is not the E26/E28 kind of N2. External check added here: "Purple" = 1,000 (tons) and "Appian"/"Animal" = Monroe agree with Biggs's printed offer from Fort Monroe. Image checked here. Not D4: one I-grade token (Vintur) |
+
+- **N3 (all five), safe sentence (each):** "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located
+  after two independent searches (8 Oct 2026) of the Official Records (ser. I, II, III and the Navy series, by date and correspondent),
+  the senders' and recipients' printed papers (Butler's correspondence included), the Huntington collection's full text, the 1864 press
+  through Chronicling America, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE." Unsafe: "first", "unpublished",
+  "never printed", "unknown telegram". Not N4: NARA RG 92/107/393, the Meigs Papers, the NY Evening Post itself and HathiTrust full
+  text are unread, Semantic Scholar was unreachable, and the JSTOR rows are pending.
+- **Depth under the 8 Oct depth bar.** The code clause is met for every entry. Each of these code values reads sensibly in at least two
+  of these independent telegrams: "Spaffords" = Horses (E42, E43); "Pandora" = Colonel (E42, E45, E47); "Appian"/"Animal" = Monroe
+  (E43, E47); "upton" = Post (E45 "your Post", E46 "Evening Post"); "sligo" = "In the" (E45, E46). Each depth sentence below was written
+  by LS-V3/LS-V4 from the reading. It was re-checked here against the derived block (and, except E46, against the image) and stands (D2). D3 holds for each:
+  at least 80% of tokens are H/C, and each has an external check named in the table (E42, E45 and E47 checks added here; E43 and E46
+  from LS-V3). None is raised to D4: each has one listed liberty (E42 "saddle", E45 time word, E47 I token), or residue beyond name codes
+  (E43 "Waymorners"). E46 was not image-checked by this session. Outward words: "largely deciphered (about N%)".
+
+### 4. Postmortem
+- No over-claim found: all five hold N3 after the families neither audit covered (Butler's correspondence for E47, ORN for E43/E45/E47,
+  the press for E42/E43/E45/E47, and the press of 30 Nov-12 Dec 1864 for E46).
+- Understatements filled: three D3 rulings (E42, E45, E47) had no named external check under the 8 Oct depth bar. One is now named for
+  each (section 3). E45's header time is confirmed on the image.
+- One near-miss, recorded for the next auditor: for E47, OR I/33 p.814 prints a same-day Fort Monroe reply about the same coal and the
+  same steamer. A telegram in the same exchange printed beside the target is the place to look for the target itself. Here it was
+  read and is not E47, but LS-V4 had listed it only as "context".
+- status.json: E42, E43, E45, E46, E47 rows `audit_status` "two audits", `audit_refs` and the gap line updated; class, depth and
+  depth_pct unchanged. SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-E42, -E43, -E45, -E46, -E47 unchanged (class and counts unchanged).
+  JSTOR-QUEUE.tsv: 8 rows added (section 2).
