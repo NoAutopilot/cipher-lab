@@ -1,0 +1,3 @@
+ok   length: got=67, min=40, max=1000000000
+ok   language: score=-0.941, null_p99=-1.477, real_p05=-1.044, real_median=-0.835, mode=both, N=67
+PASS - sachsstaatsarchiv-manteuffel-1712 (a PASS is a gate for a verifier, not a reading; rule 10)

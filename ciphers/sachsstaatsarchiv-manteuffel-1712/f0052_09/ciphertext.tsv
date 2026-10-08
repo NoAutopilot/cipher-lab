@@ -1,0 +1,51 @@
+# FAM-MANT15 (8 Oct 2026): Loc. 694/09 URL file 0052, left page (slip f.36?, P.S. beside the 'Extrait ... a la lettre de Manteuffel du 11 Fevr
+# 1713'), unglossed. Two blind Sonnet passes (passA_0052.tsv in order, passB_0052.tsv reversed) + worker reconciliation on 2x zooms.
+# r1 = crop lines L02+L03 (one run, both passes); r3 = L06+L07 (one run: L06 ends '66.' at the edge, L07 starts '5.16'; MANT-0609's eye read agrees).
+# low: r1 tok1 465 (overwritten; both passes 465?, MANT-0609 read 405; U either way), tok4 34 (B 39), tok13 394 (both passes; this hand writes 4 like
+# 'y', zoom reads 3-y-y = 344 as likely; U either way), tok20 54 (right edge), tok21 16 (left edge), tok23 28 (overwritten; B 2.28);
+# r3 tok1 520 (A/B: or 5.20), tok6 5 (faint stroke before it). Small interlinear numerals over r1 (A 103.17.38.28.?5?, B 103?.17?.38?.28?.58?)
+# are not in this file and not decoded (PREREG-MANT15 addendum).
+line	pos	sign	conf
+694-09_0052_r1	1	465	low
+694-09_0052_r1	2	67	med
+694-09_0052_r1	3	21	med
+694-09_0052_r1	4	34	low
+694-09_0052_r1	5	33	med
+694-09_0052_r1	6	6	med
+694-09_0052_r1	7	60	med
+694-09_0052_r1	8	51	med
+694-09_0052_r1	9	35	med
+694-09_0052_r1	10	44	med
+694-09_0052_r1	11	103	med
+694-09_0052_r1	12	24	med
+694-09_0052_r1	13	394	low
+694-09_0052_r1	14	10	med
+694-09_0052_r1	15	58	med
+694-09_0052_r1	16	28	med
+694-09_0052_r1	17	31	med
+694-09_0052_r1	18	4	med
+694-09_0052_r1	19	24	med
+694-09_0052_r1	20	54	low
+694-09_0052_r1	21	16	low
+694-09_0052_r1	22	54	med
+694-09_0052_r1	23	28	low
+694-09_0052_r1	24	14	med
+694-09_0052_r1	25	6	med
+694-09_0052_r1	26	100	med
+694-09_0052_r1	27	2	med
+694-09_0052_r1	28	5	med
+694-09_0052_r1	29	66	med
+694-09_0052_r1	30	32	med
+694-09_0052_r1	31	52	med
+694-09_0052_r2	1	257	med
+694-09_0052_r3	1	520	low
+694-09_0052_r3	2	10	med
+694-09_0052_r3	3	12	med
+694-09_0052_r3	4	103	med
+694-09_0052_r3	5	66	med
+694-09_0052_r3	6	5	low
+694-09_0052_r3	7	16	med
+694-09_0052_r3	8	4	med
+694-09_0052_r3	9	28	med
+694-09_0052_r3	10	35	med
+694-09_0052_r3	11	6	med
