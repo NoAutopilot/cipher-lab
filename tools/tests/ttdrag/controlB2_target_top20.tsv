@@ -1,0 +1,23 @@
+drag minlen=10 words=8488 msgs=1 tabulae=vig,beau,varbeau order=4 fragments=42008280 rank=z
+rank	z	score/letter	msg	pos	word	role	tabula	fragment	true
+1	7.85	-1.830	1	957	transmitting	p|k	vig	esofficether	unknown
+2	7.47	-1.809	1	844	immediatelj	p|k	vig	odsfromthei	unknown
+3	7.44	-2.116	1	7	communicating	p|k	vig	yinterviewwit	unknown
+4	7.43	-1.825	1	844	immediately	p|k	vig	odsfromthet	unknown
+5	7.31	-1.691	1	134	reconveyed	p|k	vig	questermit	no
+6	7.26	-2.177	1	682	uncontinented	plain	varbeau	cwidehingsall	unknown
+7	7.26	-2.177	1	682	uncontinented	key	beau	cwidehingsall	unknown
+8	7.21	-2.060	1	7	communicated	p|k	vig	yinterviewas	unknown
+9	7.19	-2.070	1	388	frankincense	plain	varbeau	butpowereful	unknown
+10	7.19	-2.070	1	388	frankincense	key	beau	butpowereful	unknown
+11	7.15	-1.929	1	376	refreshment	p|k	vig	rosshehadre	unknown
+12	7.08	-1.954	1	868	unavoidable	p|k	vig	dthenexplai	unknown
+13	7.08	-2.727	1	2	intercommunicating	p|k	vig	nobgmyinterviewwit	unknown
+14	7.07	-2.353	1	402	somnambulatory	plain	beau	zofviewlestont	unknown
+15	7.07	-2.353	1	402	somnambulatory	key	varbeau	zofviewlestont	unknown
+16	7.07	-2.111	1	516	transmission	p|k	vig	hatitwasesse	unknown
+17	7.05	-2.362	1	402	somnambulistic	plain	beau	zofviewleastex	unknown
+18	7.05	-2.362	1	402	somnambulistic	key	varbeau	zofviewleastex	unknown
+19	7.05	-2.121	1	935	geographical	plain	beau	laticatcheer	unknown
+20	7.05	-2.121	1	935	geographical	key	varbeau	laticatcheer	unknown
+TRUTH hits@10=0 hits@20=0 first_true_rank=381 (of 6650 kept rows)

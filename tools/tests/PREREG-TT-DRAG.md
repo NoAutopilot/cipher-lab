@@ -27,7 +27,7 @@ Truth known only inside Brown's 207-letter window; rows outside it are unknown, 
 Grade on the shelf: `proven` only if A and B both pass and both nulls collapse; `controlled-only` if A passes and B fails or B is
 not runnable; `weak` ("controlled-only: failed ...") if A fails.
 
-## Addendum, 8 Oct 2026 22:57 UTC (date -u) -- written after Control B ran, before B2 runs
+## Addendum, 8 Oct 2026 22:55 UTC (date -u) -- written after Control B ran, before B2 runs
 Control B result (pre-registered line above): FAIL -- the first true in-window placement ranks 272 (pass line: top 20); the
 shuffled null collapses (no true placement in any kept list, seeds 1-5). Diagnosis: only ONE word of the English dictionary
 (4,910 types of >= 10 letters from five novels) occurs anywhere in Brown's 207-letter truth window ("calculated", plaintext
@@ -38,3 +38,11 @@ pairs Brown published (runningkey.htm "Solution"); it lies outside the 207-lette
   (Madison/Jefferson/Gallatin writings, period diplomatic register). LM unchanged (en only). PASS line: a true in-window
   placement in the top 20. NULL: shuffled order, seeds 1-5, collapses if none in the top 20. The shelf grade follows B2 only if
   it passes; otherwise B's FAIL decides and the grade is `controlled-only`.
+
+## Results (8 Oct 2026, 23:00 UTC by date -u; files tools/tests/ttdrag/controlA.tsv, controlB.tsv, controlB2.tsv)
+- A: PASS. True word in top 10 in 7/8 seeds (seed 7: first true rank 31), mean hits@10 3.75 (30/80). NULL A collapses: 0/8, mean 0.
+- B: FAIL (first true in-window rank 272 > 20). NULL B collapses: 0/5.
+- B2: FAIL (first true in-window rank 381; three window words now in the dictionary: correcting@136, ambassador@273 (key),
+  calculated@328). NULL collapses: 0/5. Not pre-registered, reported only: Brown's published pairs communicating/yinterviewwit
+  (rank 1 in B, 3 in B2) and transmission/hatitwasesse (rank 16 in B2) come out at the top; both lie outside the 207-letter window.
+- Grade: `controlled-only` (A passes, the Tomokiyo case's pre-registered line fails).

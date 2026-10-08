@@ -26,3 +26,9 @@ Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: 
 | 27 Sept 2026 17:18 | periodic_masc | N=164 K=24 restarts=8 corpus=pg2404_Italienische_Reise_Band1.txt.gz+pg2405_Italienische_Reise_Band2.txt.gz+pg31538_Peter_Schlemihl.txt.gz period=6 | 1-3 | 0.098 (0.024-0.140) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | HES-PHASE periodic_masc de19 |
 | 27 Sept 2026 17:18 | periodic_masc | N=164 K=24 restarts=8 corpus=pg2404_Italienische_Reise_Band1.txt.gz+pg2405_Italienische_Reise_Band2.txt.gz+pg31538_Peter_Schlemihl.txt.gz period=7 | 1-3 | 0.102 (0.067-0.159) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | HES-PHASE periodic_masc de19 |
 | 27 Sept 2026 17:18 | periodic_masc | N=164 K=24 restarts=8 corpus=pg2404_Italienische_Reise_Band1.txt.gz+pg2405_Italienische_Reise_Band2.txt.gz+pg31538_Peter_Schlemihl.txt.gz period=8 | 1-3 | 0.165 (0.091-0.238) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | HES-PHASE periodic_masc de19 |
+
+## TT-DRAG, 8 Oct 2026 -- `tools/running_key.py --drag` (both streams, order-4 z per length; hand-written row, no family_run.py wrapper)
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 8 Oct 2026 22:56 | running_key (drag) | --drag 10 and 8, --corpus/--pcorpus tools/data/de19, all tabulae, order 4 | control 1-8 | hits@10 3.75 (0-6), true word in top 10 in 7/8; random-key null 0/8, null top-1 z 6.98-7.75 (tools/tests/ttdrag/controlA.tsv) | top z 7.48 (aufgewendete@107, vig), inside the null band; no row matches Bourdeau's reading | - | yes | known-answer must-not-flag run (key periodic bcdefg, AUDIT.md N0); NOTES.md "TT-DRAG (8 Oct 2026)" |

@@ -1,0 +1,10 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-08 22:56	adhoc-8993dc	adhoc-8993dc:2-leaf:fc4f0a	cipher-page	249r			folio arithmetic	owed
+2026-10-08 22:56	adhoc-8993dc	adhoc-8993dc:2-leaf:fc4f0a	facing	248v			folio arithmetic	owed
+2026-10-08 22:56	adhoc-8993dc	adhoc-8993dc:2-leaf:fc4f0a	before-2	248r			folio arithmetic	owed
+2026-10-08 22:56	adhoc-8993dc	adhoc-8993dc:2-leaf:fc4f0a	after-1	249v			folio arithmetic	owed
+2026-10-08 22:56	adhoc-8993dc	adhoc-8993dc:2-leaf:fc4f0a	after-2	250r			folio arithmetic	owed
+2026-10-08 22:56	adhoc-8993dc	adhoc-8993dc:2-leaf:fc4f0a	after-3	250v			folio arithmetic	owed
+2026-10-08 22:56	adhoc-8993dc	adhoc-8993dc:2-leaf:fc4f0a	after-4	251r			folio arithmetic	owed
+2026-10-08 22:56	adhoc-8993dc	adhoc-8993dc:2-leaf:fc4f0a	unit			hstam_9_a_nr_259__0249.jpg	manifest	owed

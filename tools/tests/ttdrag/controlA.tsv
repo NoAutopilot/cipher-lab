@@ -1,0 +1,17 @@
+seed	plain_book	key_book	arm	hits@10	hits@20	first_true_rank	top1
+1	pg2404_Italienische_Reise_Band1.txt.gz	pg31538_Peter_Schlemihl.txt.gz	control	5	5	1	1 9.66 -1.818 1 17 durchschnittenem p|k vig dieserstadthervo yes
+1	pg2404_Italienische_Reise_Band1.txt.gz	pg31538_Peter_Schlemihl.txt.gz	null_randomkey	0	0	None	1 7.52 -2.083 1 100 vierfussigen plain varbeau mistderzogis no
+2	pg2404_Italienische_Reise_Band1.txt.gz	pg31538_Peter_Schlemihl.txt.gz	control	5	7	1	1 8.91 -1.586 1 52 umherzugehen p|k vig schlagenundf yes
+2	pg2404_Italienische_Reise_Band1.txt.gz	pg31538_Peter_Schlemihl.txt.gz	null_randomkey	0	0	None	1 7.11 -2.350 1 50 durchzuwirken plain varbeau quaackefdassl no
+3	pg2404_Italienische_Reise_Band1.txt.gz	pg31538_Peter_Schlemihl.txt.gz	control	2	3	1	1 7.45 -1.925 1 92 vergitterte p|k vig egrosstezuv yes
+3	pg2404_Italienische_Reise_Band1.txt.gz	pg31538_Peter_Schlemihl.txt.gz	null_randomkey	0	0	None	1 7.69 -1.857 1 22 zuruckkunft plain beau ovielmiraut no
+4	pg2404_Italienische_Reise_Band1.txt.gz	pg2405_Italienische_Reise_Band2.txt.gz	control	4	5	1	1 9.68 -1.719 1 71 kutschendeckels p|k vig uhabengewohnlic yes
+4	pg2404_Italienische_Reise_Band1.txt.gz	pg2405_Italienische_Reise_Band2.txt.gz	null_randomkey	0	0	None	1 7.01 -1.943 1 136 alexandern plain varbeau rtensoller no
+5	pg31538_Peter_Schlemihl.txt.gz	pg2405_Italienische_Reise_Band2.txt.gz	control	5	5	2	1 8.24 -1.951 1 141 verschiedenen p|k vig erreichennung no
+5	pg31538_Peter_Schlemihl.txt.gz	pg2405_Italienische_Reise_Band2.txt.gz	null_randomkey	0	0	None	1 7.75 -2.098 1 44 italienisches plain beau eformaltistum no
+6	pg31538_Peter_Schlemihl.txt.gz	pg2404_Italienische_Reise_Band1.txt.gz	control	6	8	1	1 8.36 -1.765 1 124 deckenstucke p|k vig tlicherstras yes
+6	pg31538_Peter_Schlemihl.txt.gz	pg2404_Italienische_Reise_Band1.txt.gz	null_randomkey	0	0	None	1 7.07 -2.099 1 97 kriegstaten plain varbeau utessicheru no
+7	pg2405_Italienische_Reise_Band2.txt.gz	pg2404_Italienische_Reise_Band1.txt.gz	control	0	0	31	1 7.79 -1.918 1 77 herausstosst p|k vig tichtungstev no
+7	pg2405_Italienische_Reise_Band2.txt.gz	pg2404_Italienische_Reise_Band1.txt.gz	null_randomkey	0	0	None	1 7.28 -2.121 1 119 blodsinniger p|k vig ahdenrosstem no
+8	pg2404_Italienische_Reise_Band1.txt.gz	pg2405_Italienische_Reise_Band2.txt.gz	control	3	3	1	1 8.04 -1.712 1 69 bezeichnend p|k vig denherrenun yes
+8	pg2404_Italienische_Reise_Band1.txt.gz	pg2405_Italienische_Reise_Band2.txt.gz	null_randomkey	0	0	None	1 6.98 -2.444 1 33 kieselbreccien plain beau suzaufnochmass no

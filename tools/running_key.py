@@ -8,6 +8,7 @@
   python3 tools/running_key.py --noise --pcorpus ... --kcorpus ... --lengths ...   one-time-key noise band
   python3 tools/running_key.py CIPHER --crib-drag WORDS.txt --kcorpus ... [--top 30]
   python3 tools/running_key.py CIPHER --period-scan 31 120 [--seed 1]  coset IC per period + one-time-key band
+  python3 tools/running_key.py CIPHER --drag 10 --corpus DICT [--kcorpus ...] [--all-tabulae] [--top 20]  Brown/Tomokiyo drag
 
 CIPHER: a text file of letters, messages separated by blank lines, '#' lines ignored (ciphers/<t>/ciphertext.txt), or a spec JSON (specs/<slug>.json) whose
 `ciphertext` list carries `groups` per message. Every message is decoded independently: the key offset in the book
@@ -45,6 +46,21 @@ candidates, never a claim.
 
 --period-scan LO HI: per-message coset IC (pairs pooled over the five messages, the key restarting per message)
 for each period LO..HI, with the same statistic on --noise-trials uniform random texts of the same lengths.
+
+--drag MINLEN (8 Oct 2026, TT-DRAG, LANE TOOLS-TOMO; Tomokiyo practice 11, runningkey.htm "Tips" and "Running Key
+Challenge"/"Solution": Matthew Brown's dictionary attack -- every dictionary word of >= 10 letters at every offset, the
+revealed other side scored by quadgram fitness, the best fragments then extended by hand). Every word of length >= MINLEN
+from --corpus DICT (a word list or corpus files/dirs; its word types are taken from the raw text, so word boundaries are
+real) is placed at every offset of every message, as PLAINTEXT (the fragment shown is the key it implies) and as KEY (the
+fragment is the plaintext it implies) -- either side may hold the word ("Tips"); under vig the two coincide and one row is
+printed (role p|k). The fragment is scored with an order --drag-order (default 4, quadgram) letter model of the side it
+belongs to (key side: --kcorpus, plain side: --pcorpus; both default to --corpus), mean log-prob per letter; z is against
+all fragments of the same length in the run. --drag-cribs FILE restricts the words to a crib list; --truth P K
+[--truth-at N] marks rows that equal the true plaintext/key (known-answer controls) and prints hits@10/@20.
+Meant to catch: a long dictionary word of either stream at its true offset in a book-key (running-key) cipher of
+~150+ letters. Must NOT flag: a cipher whose key is not language (a random one-time key, a short periodic key such as
+hessen-1824's bcdefg) -- there the true plaintext word's fragment is key noise and scores like every other row (the
+offline test checks both). A ranked table of candidates for hand extension, never a reading.
 
 Corpora: files, or directories (every *.txt / *.txt.gz inside is one book). Letters are folded to a-z (umlauts
 to base letters, sharp s to ss); everything else dropped.
@@ -541,6 +557,157 @@ def run_period_scan(args, msgs):
     return tgt
 
 
+# ---------------------------------------------------------------- drag (TT-DRAG, 8 Oct 2026; Tomokiyo runningkey.htm)
+def drag_words(specs, minlen, maxlen=40):
+    """distinct folded word types of length minlen..maxlen from files/dirs (word lists or running text)."""
+    out = set()
+    for b in list_books(specs):
+        for tok in re.findall(r"[^\W\d_]+", read_text(b)):
+            w = fold(tok)
+            if minlen <= len(w) <= maxlen:
+                out.add(w)
+    return sorted(out)
+
+
+def tab_arrays(tab):
+    """numpy KOF[c, p] -> key letter and POF[c, k] -> plain letter for a tabula name or mixed_tabula() dict."""
+    import numpy as np
+    KOF = np.zeros((26, 26), dtype=np.int64)
+    POF = np.zeros((26, 26), dtype=np.int64)
+    for p in range(26):
+        for k in range(26):
+            c = encipher(tab, p, k)
+            KOF[c, p] = k
+            POF[c, k] = p
+    return KOF, POF
+
+
+class NgramTable:
+    """the LM's conditional log-probs as flat numpy tables T[m][ctx*26+x], m = 1..order, for vectorised scoring."""
+
+    def __init__(self, lm):
+        import numpy as np
+        self.order = lm.order
+        self.T = [None]
+        for m in range(1, lm.order + 1):
+            t = np.zeros(26 ** m)
+            for ci in range(26 ** (m - 1)):
+                ctx, v = "", ci
+                for _ in range(m - 1):
+                    ctx = A[v % 26] + ctx
+                    v //= 26
+                t[ci * 26:(ci + 1) * 26] = lm.dist(ctx)[:26]
+            self.T.append(t)
+
+    def score_rows(self, F):
+        """F: int array (rows, L) of letter indices; returns the total log-prob of each row."""
+        import numpy as np
+        rows, L = F.shape
+        tot = np.zeros(rows)
+        idx = np.zeros(rows, dtype=np.int64)
+        n = self.order
+        for j in range(L):
+            m = min(j + 1, n)
+            if j >= n:
+                idx = idx % (26 ** (n - 1))
+            idx = idx * 26 + F[:, j]
+            tot += self.T[m][idx]
+        return tot
+
+
+def run_drag(args, msgs):
+    import numpy as np
+    if args.drag_cribs:
+        words = sorted({fold(w) for w in read_text(args.drag_cribs).split() if len(fold(w)) >= args.drag})
+    else:
+        if not args.corpus:
+            sys.exit("--drag needs --corpus DICT (word list or corpus) or --drag-cribs FILE")
+        words = drag_words(args.corpus, args.drag)
+    pspec = args.pcorpus or args.corpus
+    kspec = args.kcorpus or pspec
+    if not pspec:
+        sys.exit("--drag needs a language corpus: --pcorpus/--kcorpus or --corpus")
+    pbooks, kbooks = list_books(pspec), list_books(kspec)
+    lmp = LM([fold(read_text(b)) for b in pbooks], args.drag_order, args.discount)
+    tp = NgramTable(lmp)
+    tk = tp if sorted(pbooks) == sorted(kbooks) else NgramTable(LM([fold(read_text(b)) for b in kbooks],
+                                                                   args.drag_order, args.discount))
+    tabs = ["vig", "beau", "varbeau"] if args.all_tabulae else [args.tabula]
+    C = [np.array([IDX[ch] for ch in m], dtype=np.int64) for m in msgs]
+    keep = max(args.top, 50)
+    stats = defaultdict(lambda: [0, 0.0, 0.0])  # length -> n, sum, sumsq of per-letter scores
+    cand = defaultdict(list)  # length -> candidate rows (trimmed per length, since z is per length)
+    for tab in tabs:
+        KOF, POF = tab_arrays(tab)
+        roles = [("p|k", KOF, tk)] if np.array_equal(KOF, POF) else [("plain", KOF, tk), ("key", POF, tp)]
+        for w in words:
+            L = len(w)
+            wv = np.array([IDX[ch] for ch in w], dtype=np.int64)
+            for mi, c in enumerate(C):
+                if len(c) < L:
+                    continue
+                win = np.lib.stride_tricks.sliding_window_view(c, L)  # (offsets, L)
+                for role, M, tbl in roles:
+                    F = M[win, wv[None, :]]
+                    sc = tbl.score_rows(F) / L
+                    st = stats[L]
+                    st[0] += len(sc)
+                    st[1] += float(sc.sum())
+                    st[2] += float((sc * sc).sum())
+                    k = min(keep, len(sc))
+                    for i in np.argpartition(-sc, k - 1)[:k]:
+                        cand[L].append((float(sc[i]), w, mi + 1, int(i), role, tab_name(tab),
+                                     "".join(A[x] for x in F[i])))
+            if len(cand[L]) > 20 * keep:
+                cand[L] = heapq.nlargest(4 * keep, cand[L])
+    rows = []
+    for sc, w, mi, pos, role, tn, frag in (x for v in cand.values() for x in v):
+        n, s1, s2 = stats[len(w)]
+        mu = s1 / n
+        sd = max((s2 / n - mu * mu), 1e-12) ** 0.5
+        rows.append({"z": (sc - mu) / sd, "score": sc, "msg": mi, "pos": pos, "word": w, "role": role,
+                     "tabula": tn, "fragment": frag})
+    key = "z" if args.drag_rank == "z" else "score"
+    rows.sort(key=lambda r: -r[key])
+    seen, uniq = set(), []
+    for r in rows:
+        t = (r["msg"], r["pos"], r["word"], r["role"], r["tabula"])
+        if t not in seen:
+            seen.add(t)
+            uniq.append(r)
+    rows = uniq
+    truth = None
+    if args.truth:
+        tP, tK = (fold(read_text(f)) for f in args.truth)
+        truth = (tP, tK, args.truth_at)
+        for r in rows:
+            r["true"] = drag_truth(r, truth)
+    print(f"drag minlen={args.drag} words={len(words)} msgs={len(msgs)} tabulae={','.join(tab_name(t) for t in tabs)} "
+          f"order={args.drag_order} fragments={sum(v[0] for v in stats.values())} rank={key}")
+    print("rank\tz\tscore/letter\tmsg\tpos\tword\trole\ttabula\tfragment" + ("\ttrue" if truth else ""))
+    for i, r in enumerate(rows[:args.top]):
+        print(f"{i+1}\t{r['z']:.2f}\t{r['score']:.3f}\t{r['msg']}\t{r['pos']}\t{r['word']}\t{r['role']}\t"
+              f"{r['tabula']}\t{r['fragment']}" + (f"\t{r['true']}" if truth else ""))
+    if truth:
+        h10 = sum(r["true"] == "yes" for r in rows[:10])
+        h20 = sum(r["true"] == "yes" for r in rows[:20])
+        first = next((i + 1 for i, r in enumerate(rows) if r["true"] == "yes"), None)
+        print(f"TRUTH hits@10={h10} hits@20={h20} first_true_rank={first} (of {len(rows)} kept rows)")
+    return {"rows": rows[:max(args.top, 50)], "words": len(words)}
+
+
+def drag_truth(r, truth):
+    """'yes' if the dragged word is the true plaintext or key at that offset of message 1, 'no' if the truth window
+    covers the placement and it is not, 'unknown' outside the window."""
+    tP, tK, at = truth
+    if r["msg"] != 1:
+        return "unknown"
+    lo, L = r["pos"] - at, len(r["word"])
+    if lo < 0 or lo + L > min(len(tP), len(tK)):
+        return "unknown"
+    return "yes" if r["word"] in (tP[lo:lo + L], tK[lo:lo + L]) else "no"
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0],
                                  formatter_class=argparse.RawDescriptionHelpFormatter, epilog=__doc__)
@@ -569,6 +736,16 @@ def main(argv=None):
     ap.add_argument("--top", type=int, default=30)
     ap.add_argument("--period-scan", nargs=2, type=int, metavar=("LO", "HI"))
     ap.add_argument("--noise-trials", type=int, default=200)
+    ap.add_argument("--drag", type=int, metavar="MINLEN",
+                    help="Tomokiyo practice 11 (runningkey.htm Tips/Solution, Brown's method): drag every --corpus word of "
+                         ">= MINLEN letters at every offset as plaintext and as key, quadgram-score the other side, rank by z")
+    ap.add_argument("--corpus", nargs="+", default=[], metavar="DICT",
+                    help="--drag dictionary: word list or corpus files/dirs (word types read from the raw text)")
+    ap.add_argument("--drag-cribs", metavar="FILE", help="--drag: use only the words of this crib list")
+    ap.add_argument("--drag-order", type=int, default=4, help="--drag scoring model order (default 4, quadgram)")
+    ap.add_argument("--drag-rank", choices=["z", "score"], default="z", help="--drag ranking (default z per word length)")
+    ap.add_argument("--truth", nargs=2, metavar=("PLAIN", "KEY"), help="--drag control: true plaintext and key files")
+    ap.add_argument("--truth-at", type=int, default=0, help="--truth: offset of the truth window in message 1")
     ap.add_argument("--out", help="write JSON result")
     ap.add_argument("--verbose", action="store_true")
     a = ap.parse_args(argv)
@@ -587,6 +764,8 @@ def main(argv=None):
         msgs = read_cipher(a.cipher)
         if a.period_scan:
             result = run_period_scan(a, msgs)
+        elif a.drag:
+            result = run_drag(a, msgs)
         elif a.crib_drag:
             lmk = LM([fold(read_text(b)) for b in list_books(a.kcorpus or a.pcorpus)], a.order, a.discount)  # letters only
             result = run_crib(a, msgs, lmk)

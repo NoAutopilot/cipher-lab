@@ -1,0 +1,22 @@
+drag minlen=10 words=9668 msgs=1 tabulae=vig,beau,varbeau order=4 fragments=7396625 rank=z
+rank	z	score/letter	msg	pos	word	role	tabula	fragment
+1	7.48	-2.117	1	107	aufgewendete	p|k	vig	kthenzuberde
+2	7.40	-2.474	1	139	kastanienholzes	plain	beau	ccinogotsehrtsi
+3	7.40	-2.474	1	139	kastanienholzes	key	varbeau	ccinogotsehrtsi
+4	7.37	-1.842	1	108	zugewendet	p|k	vig	osenzuberd
+5	7.19	-1.907	1	108	angewendet	p|k	vig	nzenzuberd
+6	7.11	-2.461	1	149	goldspielenden	plain	beau	zufriesosogust
+7	7.11	-2.461	1	149	goldspielenden	key	varbeau	zufriesosogust
+8	6.96	-2.290	1	106	zerstorenden	p|k	vig	ygwurdeuberj
+9	6.88	-2.021	1	110	anwendeten	p|k	vig	kezuberdev
+10	6.80	-2.861	1	92	hornsteingeschiebe	p|k	vig	ptdasfreuleteppgmi
+11	6.76	-2.227	1	69	vereinigung	plain	beau	rgotthatbef
+12	6.76	-2.227	1	69	vereinigung	key	varbeau	rgotthatbef
+13	6.72	-2.482	1	90	uberantwortet	p|k	vig	otsquarchvonp
+14	6.71	-2.372	1	91	verantworten	p|k	vig	zsquarchvonv
+15	6.71	-2.676	1	22	marmortafelchen	p|k	vig	zuletteufixuhig
+16	6.63	-2.273	1	50	meisterhaft	p|k	vig	kvertegenos
+17	6.58	-2.288	1	110	fabrizieren	p|k	vig	fruhginsrec
+18	6.57	-2.294	1	107	eingesendet	p|k	vig	gfzenduberd
+19	6.55	-2.423	1	70	wohlgeruchen	plain	varbeau	ursammenlitz
+20	6.55	-2.423	1	70	wohlgeruchen	key	beau	ursammenlitz

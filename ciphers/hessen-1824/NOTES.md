@@ -285,3 +285,60 @@ Read so far: 0 of 164 cipher letters (0%) read and committed. NOTES.md has no re
 - [ ] retry: no key reads anything yet in committed form. Once the stated key and phase map read, rerun all 164 letters, apply the reconciled glyphs, grade per token (rule 4) and run judge_plaintext.py and decode --check (rule 7). The verifier, not the solver, assigns novelty (rule 10).
 Verdict: keep going: 4 internal gaps; cheapest next: read the Arcinsys record for HStAM 9 a Nr. 259 (digitisation flag) and query HCPortal for sibling records, ~$2 (highest value: apply the Anmerkung's stated key bcdefg on a 25-letter i=j tableau with a logged phase map and a shuffled-copy control, ~$3)
 Superseded 2 Oct 2026: found-solved (AUDIT.md).
+
+## TT-DRAG (8 Oct 2026): `tools/running_key.py --drag`, known-answer run
+
+Worker TT-DRAG, LANE TOOLS-TOMO (account 4), brief `.claude/briefs/runs/2026-10-08-acct4-tools-tomo-jobs.md`. The
+instrument this file's 27 Sept "Next step" named (Tomokiyo, runningkey.htm "Tips" and "Solution": Matthew Brown's
+dictionary drag, words of >= 10 letters at every offset, quadgram score of the other side). `--drag` differs from
+HES-DRAG's `--crib-drag`: it places each word as plaintext AND as key (either stream may hold it), scores with an order-4
+model of the side the fragment belongs to, and ranks by z within each word length.
+
+Gates (pasted, 8 Oct 2026, run between 22:55 and 22:57 UTC by date -u):
+- `python3 tools/intake_gate_check.py hessen-1824` -> "hessen-1824: found-solved (line 1) has an edition citation but no
+  logged open-web and blog-comment check ..." **EXIT 1**. The target is already read (Bourdeau, AUDIT.md N0), so this is not
+  deep work on an unread item: the run below is filed as known-answer work, the use the brief and the prior-work gate allow.
+- `python3 tools/prior_work.py hessen-1824 --item-spec 'shelfmark=HStAM 9 a Nr. 259;folio=249;date=1824-02-20' --step-type
+  decode` -> "verdict plaintext: KNOWN ... exit 2: KNOWN, no consumer"; re-run with `--known-answer gate:running_key-drag`
+  -> "exit 0: KNOWN, known-answer work for consumer gate:running_key-drag". No exit-4 rows.
+
+Commands: `python3 tools/running_key.py ciphers/hessen-1824/families/hessen1824_ciphertext_folded.txt --drag 10 --corpus
+tools/data/de19 --pcorpus tools/data/de19 --all-tabulae --top 20` (9,668 de19 word types, 7.40 M fragments), then
+`--drag 8` (15,396 types, 11.88 M fragments). Full tables: `families/ttdrag_target_min10.tsv`, `families/ttdrag_target_min8.tsv`.
+
+Top 20, MINLEN 10 (rank, z, pos, word, role, tabula, fragment):
+
+| rank | z | pos | word | role | tabula | fragment |
+|---|---|---|---|---|---|---|
+| 1 | 7.48 | 107 | aufgewendete | p|k | vig | kthenzuberde |
+| 2 | 7.40 | 139 | kastanienholzes | plain | beau | ccinogotsehrtsi |
+| 3 | 7.40 | 139 | kastanienholzes | key | varbeau | ccinogotsehrtsi |
+| 4 | 7.37 | 108 | zugewendet | p|k | vig | osenzuberd |
+| 5 | 7.19 | 108 | angewendet | p|k | vig | nzenzuberd |
+| 6 | 7.11 | 149 | goldspielenden | plain | beau | zufriesosogust |
+| 7 | 7.11 | 149 | goldspielenden | key | varbeau | zufriesosogust |
+| 8 | 6.96 | 106 | zerstorenden | p|k | vig | ygwurdeuberj |
+| 9 | 6.88 | 110 | anwendeten | p|k | vig | kezuberdev |
+| 10 | 6.80 | 92 | hornsteingeschiebe | p|k | vig | ptdasfreuleteppgmi |
+| 11 | 6.76 | 69 | vereinigung | plain | beau | rgotthatbef |
+| 12 | 6.76 | 69 | vereinigung | key | varbeau | rgotthatbef |
+| 13 | 6.72 | 90 | uberantwortet | p|k | vig | otsquarchvonp |
+| 14 | 6.71 | 91 | verantworten | p|k | vig | zsquarchvonv |
+| 15 | 6.71 | 22 | marmortafelchen | p|k | vig | zuletteufixuhig |
+| 16 | 6.63 | 50 | meisterhaft | p|k | vig | kvertegenos |
+| 17 | 6.58 | 110 | fabrizieren | p|k | vig | fruhginsrec |
+| 18 | 6.57 | 107 | eingesendet | p|k | vig | gfzenduberd |
+| 19 | 6.55 | 70 | wohlgeruchen | plain | varbeau | ursammenlitz |
+| 20 | 6.55 | 70 | wohlgeruchen | key | beau | ursammenlitz |
+
+MINLEN 8 returns the same top 15; ranks 16-20 add two 9-letter words (gemachern@123 under beau and varbeau, gesendete@110), none above z 6.69.
+
+**What it found:** nothing above noise. The top z (7.48, aufgewendete@107) sits inside the random-key null band of the
+matched control (top-1 z 6.98-7.75 over 8 seeds, `tools/tests/ttdrag/controlA.tsv`) and below 7 of 8 control seeds' true
+top-1 hits (7.45-9.68). The pos 106-110 cluster (-wendet- words, fragments in "zuberd") is one shared fragment, not five
+findings. **Hand extension:** none attempted beyond a check against the published reading -- no top-20 row matches Bourdeau's
+plaintext at its offset (+-1 for our dropped sign near 88) on either side (at 107 his text runs "wettegehorthatt", at 149
+"wezlarmerkliche"). This is the outcome the design predicts: the key is periodic (bcdefg, Bourdeau), not language, so a
+true plaintext word reveals key noise and cannot rank. **Where it found nothing:** all three tabulae, both roles, MINLEN 10
+and 8. Read: a must-not-flag case passed on real material; it says nothing about running-key ciphers this tool has not seen.
+Status line unchanged (found-solved).

@@ -1,0 +1,9 @@
+# B2: dictionary 8488 types
+# Brown challenge: N=1000, truth window 207 letters at offset 131 (vig)
+arm	seed	hits@10	hits@20	first_true_rank
+brown	-	0	0	None
+null_shuffled	1	0	0	None
+null_shuffled	2	0	0	None
+null_shuffled	3	0	0	None
+null_shuffled	4	0	0	None
+null_shuffled	5	0	0	None
