@@ -982,3 +982,57 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 - [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167)
 - [x] retry: 170 f.229 crops re-cut (D1A-B167), passed (D4-B167), re-derived (D4V-B167) and audited (AUD1-B167)
 Verdict: keep going: 3 internal gaps; cheapest next: provisional decode of 170 f.228r-v with the f.229 letter values (~$2), then the second audit AUD2-B167
+
+## B167-228 solver (account 4, for the account-3 orchestrator), 8 Oct 2026, 12:37-12:4x UTC by date -u (ended 12:46)
+
+Brief: `.claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md` section B167-228 (provisional decode of 170 f.228r-v with the f.229 letter
+values, matched control, fr17 judge). Files: `b167228/` (to_pipe.py, key_unmarked.tsv, judge_null.py, judge_null.out),
+`ciphertext_b170f228.txt`, `reading_b170f228.txt`, `reading_tokens_b170f228.tsv`, third job in decode.json.
+**Method.** `b167228/to_pipe.py` takes the shape classes of the D1-BAL170/D1-BAL170B reconciliations and gives each shape the majority
+letter it carries in passes/reconciled_b170f229{r,v}.tsv (hook s 30, h n 24, 4u a 16/17, u4 t 14/15, gam u 14, y+ r 13, p i 9, r g 4, w e
+3, m4 m 6 ...), computed by the script, not chosen from f.228's own context. Every letter sign M. Shapes with no f.229 value stay unread
+(U, 18 tokens): q 6, ll 4, g+ 3, ff_crossed 2, ll|u4 1, v 1, wave 1. Numerals as transcribed; the 18 unmarked numerals that have only an
+acute (syllable) row in key.tsv read with it at grade I (`b167228/key_unmarked.tsv`, the D1-BAL170B passes saw no mark); unmarked 13 is
+`sued|co` (M). `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> reading up to date, exit 0.
+**Counts (rule 4), 154 cipher tokens:** H 56 (marked numerals), M 53 (letter signs + 13), I 27 (unmarked numerals), U 18. No C, no S.
+Cryptanalytic/key-application result, provisional.
+**Judge (fr17, same minimal spec as D4V-B167; U tokens dropped, 136 tokens, 268 letters):**
+| text | fr17 score | gate |
+|---|---|---|
+| reading_b170f228 | -0.993 | FAIL (real_p05 -0.887, real median -0.773, null_p99 -1.808) |
+| shuffled key, all 61 distinct signs (20 seeds, 20261008) | median -1.276, max -1.128 | all below the reading |
+| shuffled letter-sign values only, numerals kept (20 seeds) | median -1.205, max -1.130 | all below the reading |
+| positive control: reading_b170f229 cut to the same 136 tokens (3 segments) | -0.788, -0.849, -0.837 | PASS 3/3 |
+The positive control shows the judge can pass this hand's real text at this N, so the FAIL is a real shortfall of this reading, not lack
+of power; the reading sits above all 40 shuffled-key nulls, but below real prose. (The "with clear words" line of judge_null.out is
+identical to the cipher-only line because the token file holds no clear rows; it is not a separate test.) Likely causes, not tested: 18
+unread shapes cut words; 27 numerals read with a supplied mark.
+**External check (not a gate).** Tomokiyo (sources/cryptiana/web/louisxiii.htm line 361) quotes one fragment of f.228: "sont mal
+satisfaits de *". f.228r a_L02 reads `73' so, n, t, 45' ma, [ll|u4], 70' sa, 77' ti, [v], 98' fait, [ff], 16 de` -- "so n t ma [.] sa ti [.]
+fait [.] de", agreeing with his fragment at every read token, with the three unread shapes at l, s, s.
+**What it reads, provisional (M/I letters):** f.228v "... [q]ra i n te que ... g ra ve et ca du[q]s de lu ne bo u r g ...", "les du[q]s de
+lu ne bo u r g CEST CHOSE QUI NEST PAS", "le traitte que ... fait DEPUIS PEU avec le Roy", "luy et Bavier so i en t con t ra i n[q]t s de se
+re ti re r", "[q]ha cu n de leur co s te". The q-shape fits c in every context (pass B on f.228v read it as 9, the f.229 c-sign), giving
+"ducs de Lunebourg", "crainte", "chacun"; not adopted here, since that value would come from f.228's own context (ARM-C1 shape).
+Where not found: no f.229 value for q, ll, g+, ff_crossed, v, wave; no printed text of f.228 searched in this job (not in the brief).
+Requests: none. Subagents: none. Network: none. Rule 10: no novelty claim made here.
+
+## Remaining gaps (B167-228, 8 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: provisional reading audited (AUD1-B167: N3, D2, one audit).
+170 f.228r-v: provisional decode (B167-228: H 56, M 53, I 27, U 18; fr17 FAIL -0.993 vs -0.887, above all shuffled nulls). 168
+f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 f.228r-v reading - blocker: not-attempted; 18 shapes unread and 27 numerals with a supplied mark keep the judge below gate; next: eye-check the 7 unvalued shapes (q, ll, g+, ff_crossed, v, wave) against Tomokiyo's letter block and the f.229 crops, and the unmarked numerals' marks on the native crops, then re-run b167228/judge_null.py, ~$2
+- 170 f.229r-v reading - blocker: waiting-on the answer of second audit AUD2-B167 (WORK-QUEUE.tsv, account 1) and the SO-BAL170-F229 reply (SECOND-OPINIONS-QUEUE.tsv); the letter signs stay M until a shape-level control on this hand; next for depth: a shape-level control (letter signs of this hand against the glossed 170 leaves), ~$3
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (8 Oct 2026, B167-228)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762; Siblings section above
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values applied to f.228 (B167-228)
+- [x] print: Avenel VI-VIII, Négociations secrètes t.1, Guébriant histories 1657 and 1913, IA/Google Books/OpenAlex/CrossRef phrase search (AUD1-B167); Tomokiyo's f.228 fragment agrees with the decode (B167-228)
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); f.229 letter values settled (D4-B167, D4V-B167) and carried to f.228 (B167-228); untried: values for f.228's 7 unvalued shapes against Tomokiyo's block, and a glossed text in the f.247 hand
+- [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167)
+- [x] retry: 170 f.228r re-cut and re-passed (D1-BAL170, D1-BAL170B) and decoded (B167-228)
+Verdict: keep going: 3 internal gaps; cheapest next: eye-check of f.228's 7 unvalued shapes and unmarked numerals on the crops, then re-judge (~$2)

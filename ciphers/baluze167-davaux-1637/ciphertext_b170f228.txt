@@ -1,0 +1,16 @@
+# Baluze 170 f.228r-v (same letter as f.229, 25 Aug 1640, Amiens, bare cipher passage), reconciled by D1-BAL170/D1-BAL170B
+# (passes/reconciled_b170f228{r,v}.tsv). B167-228, 8 Oct 2026: letter shapes given the f.229 values (majority per shape,
+# b167228/to_pipe.py); L:x? = letter sign, M; s:<shape> = shape with no f.229 value (unread). Numerals as seen.
+b170f228r a_L02 | 73' L:n? L:t? 45' s:ll|u4? 70' 77' s:v? 98' s:ff_crossed_double_long_s? 16? 73? w:a w:ce w:que w:l w:on w:nous
+b170f228r c_L01 | 86 9:
+b170f228r b_L01 | w:point w:a w:propos w:dans w:cette w:Conjoncture 16 41' 29? L:r? 16'
+b170f228r b_L02 | 40' 46 s:wave? 46'? 73'? L:r? 76 w:que 33: L:t? 81? s:ff_crossed_double_long_s? 98 40 L:n? 51 L:e?
+b170f228v a_L01 | 55 L:s? 71' L:e? L:a? L:t? 22 L:n? 62 s:ll? 71' 66 L:n? 16 L:m? 44'? L:s?
+b170f228v a_L02 | 26' 12 41' L:t? w:tous w:ajustemens w:raisonnables w:pour w:le w:bien
+b170f228v b_L01 | w:tesmoigne w:quil w:a w:quelque s:q? 65' L:i? L:n? 76' 61' 14' 40' s:ll? L:t? s:g+?
+b170f228v b_L02 | L:g? 65' 81' 96 10' 19' s:q? L:s? 16 44' 51' 6' L:u? L:r? L:g? 40' s:q? 13 L:m? 48'
+b170f228v b_L03 | 16 s:g+? L:t? 86'? 10: 95' 51' 47' L:s? w:et w:quainsy 9: 96 73= 73' L:i? 95'
+b170f228v b_L04 | L:t? 90' L:t? 65' L:i? L:n? s:q? L:t? L:s? 16 71' 66 77'? 66 L:r? s:q? 30' 14 L:n? 16
+b170f228v b_L05 | 8: 13' L:s? 76'? w:Pour 14' 40' s:ll? L:t? s:g+? L:g? 65' 81' w:j w:ay w:peine w:a w:le
+b170f228v b_L06 | w:croire w:veu 41' 29:? 61' s:ll? 41' L:t? 98' w:depuis w:peu 86'? 1= w:mais w:pour
+b170f228v b_L07 | 10: 19' s:q? L:s? 16 44' 51' 6' L:u? L:r? L:g? w:cest w:chose w:qui w:nest w:pas

@@ -36,6 +36,28 @@
     "# python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check",
     "# Grades: {grades_sorted}"
    ]
+  },
+  {
+   "ciphertext": "ciphertext_b170f228.txt",
+   "format": "pipe",
+   "key": [
+    "key.tsv",
+    "b167228/key_unmarked.tsv"
+   ],
+   "style": "spaced",
+   "reading": "reading_b170f228.txt",
+   "tokens": "reading_tokens_b170f228.tsv",
+   "m_sources": [],
+   "m_words": [
+    "red in his table",
+    "bracketed"
+   ],
+   "header": [
+    "# Baluze 170 f.228r-v bare passage (B167-228, 8 Oct 2026): provisional, reconciled transcription (D1-BAL170/B) read with Tomokiyo's",
+    "# D'Avaux table (published key, credited) and the f.229 letter-shape values (b167228/to_pipe.py). Letter signs M; unmarked numerals I",
+    "# (b167228/key_unmarked.tsv). Regenerate: python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check",
+    "# Grades: {grades_sorted}"
+   ]
   }
  ]
 }
