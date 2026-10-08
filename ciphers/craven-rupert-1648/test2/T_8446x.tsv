@@ -1,0 +1,51 @@
+# Inferred extension of T_8446 (grade I): the attested pairs sit on two regular odd-number letter series, low a3 b5 c7 d9 e11 f13 g15 h17 i19 k21 l23 m25 n27 o29 p31 q33 r35 s37 t39 and high a51 b53 c55 d57 e59 f61 g63 h65 i67 k69 l71 m73 n75 o77 p79 q81 r83 s85 t87 (89 unassigned) u91 w93 x95 y97 z99. Attested words of T_8446 kept. Not read from the page: a hypothesis table.
+code	value	conf	where
+3	a	I	low series
+5	b	I	low series
+7	c	I	low series
+9	d	I	low series
+11	e	I	low series
+13	f	I	low series
+15	g	I	low series
+17	h	I	low series
+19	i	I	low series
+21	k	I	low series
+23	l	I	low series
+25	m	I	low series
+27	n	I	low series
+29	o	I	low series
+31	p	I	low series
+33	q	I	low series
+35	r	I	low series
+37	s	I	low series
+39	t	I	low series
+51	a	I	high series
+53	b	I	high series
+55	c	I	high series
+57	d	I	high series
+59	e	I	high series
+61	f	I	high series
+63	g	I	high series
+65	h	I	high series
+67	i	I	high series
+69	k	I	high series
+71	l	I	high series
+73	m	I	high series
+75	n	I	high series
+77	o	I	high series
+79	p	I	high series
+81	q	I	high series
+83	r	I	high series
+85	s	I	high series
+87	t	I	high series
+91	u	I	high series
+93	w	I	high series
+95	x	I	high series
+97	y	I	high series
+99	z	I	high series
+101	be	M	attested
+211	in	M	attested
+259	into	M	attested
+271	put	M	attested
+279	the	M	attested
+307	is	M	attested

@@ -1,0 +1,49 @@
+# Nicholas-Rupert cipher after Naseby (July 1645), letter section as reconstructed by S. Tomokiyo (cryptiana.web.fc2.com/code/rupert1.jpg, fetched 8 Oct 2026; bracketed values are his inferences, kept, conf from his brackets). Word series 98-373 and 427-616 are not published as a table and are not included.
+code	value	conf	where
+4	p	H	
+5	p	I	
+6	p	H	
+8	c	I	
+9	c	I	
+10	c	H	
+11	w	I	
+12	w	I	
+13	w	H	
+14	t	I	
+15	t	I	
+16	t	I	
+17	i	H	
+18	i	I	
+19	i	I	
+24	o	I	
+25	o	I	
+26	o	I	
+27	o	H	
+28	s	H	
+29	s	I	
+30	s	H	
+31	y	I	
+32	y	I	
+33	u	H	
+34	u	I	
+35	u	I	
+36	u	I	
+37	m	H	
+38	m	H	
+39	m	I	
+40	e	H	
+43	e	H	
+50	t	H	
+51	t	H	
+53	a	H	
+54	a	H	
+66	g	H	
+76	d	H	
+79	n	H	
+80	n	H	
+81	n	H	
+85	h	H	
+86	h	I	
+87	h	H	
+20	[null]	H	Tomokiyo "-"
+71	[null]	H	Tomokiyo "-"
