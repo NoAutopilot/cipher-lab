@@ -1,0 +1,3 @@
+table	enciphered_with	target_COV	C1_p99	keytrue_p01	keytrue_median	verdict	note
+T_8454	T_8454	5	8	20	25	EXCLUDED	upper bound (partial sample enciphers itself); target codes in table: 63 107 167 311
+T_G	T_G	7	13	30	36	EXCLUDED	upper bound (partial sample enciphers itself); target codes in table: 63 107 167 183 311

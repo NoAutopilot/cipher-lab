@@ -1,0 +1,51 @@
+# R8454 (BL Add MS 18982 f.195, Charles R. to "Deare Cousin" [Rupert], Jersey 4 Dec [1649]; endorsed 'partly in Cypher ... 1649') code -> value pairs read by CRAV-54, 8 Oct 2026, from the period interlinear gloss on DECODE IMG_R8454_I39040_P1 (iiif_lines.py region crop + 6 gloss/cipher strips), single reader. One code group is blotted (L7, between 103 and 137) and not read. [null] = no gloss over the code. L1-L8 = the eight code lines of the letter.
+code	value	conf	where
+107	c	M	L1 gloss C; T_8453 107=c/i
+583	ap	I	L1 gloss 'cap' between 107 and 91
+91	t	M	L1; = T_8453
+55	a	M	L1
+215	in	M	L1 and L5 'in'; = T_8453
+439	all	I	L1 unglossed-'h'?; L4 'all'; = T_8453
+269	my	M	L2; T_8453 269=y
+163	goe	M	L2; = T_8453
+311	ing	M	L2 'in'; = T_8453
+38	[null]	I	L2 and L6, gloss absent both times (null or to)
+503	to	I	L2 gloss 'Sto'
+264	ireland	M	L2 gloss abbreviated; = T_8453
+535	and	M	L2 and L4; = T_8453
+235	the	M	L3 and L6; = T_8453
+240	way	I	L3 gloss 'way'; T_8453 240=us
+465	of	M	L3
+455	it	I	L3 'it', L5 'in it' end
+102	[null]	I	L3 unglossed; T_8453 102=r
+146	[null]	I	L4 unglossed
+475	to	M	L4; = T_8453
+557	make	M	L4; = T_8453
+241	[null]	I	L4 unglossed
+187	the	M	L4 and L7; = T_8453
+159	e	I	L5 gloss 'e'; T_8453 159=ce/n
+255	ex	I	L5; T_8453 255=wel
+131	p	M	L5; = T_8453
+111	e	M	L5; = T_8453
+205	di	I	L5
+139	t	I	L5; = T_8453
+119	i	I	L5; = T_8453
+225	on	I	L5; L7 gloss 'n'; T_8453 225=t
+195	you	M	L5; = T_8453
+251	can	M	L5; T_8453 251=ca
+150	[null]	I	L5 line end, unglossed
+399	n	M	L6 'the n' = then
+331	that	M	L6; = T_8453
+167	i	M	L6; = T_8453
+41	s	M	L6; = T_8453
+501	how	M	L7
+153	goe	M	L7; T_8453 153=be
+303	er	M	L7; = T_8453
+63	e	M	L7; = T_8453
+295	as	M	L7; = T_8453
+89	s	M	L7; = T_8453
+177	o	M	L7; = T_8453
+103	a	M	L7; = T_8453
+137	s	M	L7; = T_8453
+23	i	M	L7; = T_8453
+199	can	I	L8 gloss 'ca'
