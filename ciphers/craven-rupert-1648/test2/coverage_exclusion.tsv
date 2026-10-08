@@ -1,0 +1,6 @@
+table	enciphered_with	target_COV	C1_p99	keytrue_p01	keytrue_median	verdict	note
+T_8446	T_8446x	6	8	22	29	EXCLUDED	
+T_8446x	T_8446x	14	11	41	41	EXCLUDED	
+T_8448	T_8448	4	8	34	38	EXCLUDED	upper bound (partial sample enciphers itself)
+T_8445	T_8445	2	8	25	31	EXCLUDED	upper bound (partial sample enciphers itself)
+T_NR	T_NR	8	17	29	35	EXCLUDED	

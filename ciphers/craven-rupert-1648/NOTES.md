@@ -73,3 +73,42 @@ Read so far: 0 of 42 cipher tokens read (test 1 transcribed only; no key applied
 - [x] image-check: DECODE full-size images obtained and transcribed 6 Oct 2026
 - [ ] retry: not applicable until test 2 has run
 Verdict: keep going: 1 internal gaps; cheapest next: spec test 2, ~$3
+
+## Test 2: key-family test (D2-CRAV, LANE DEFAULT-account-2-20261008-0710, 8 Oct 2026 07:58-08:1x UTC)
+**Material.** I made one DECODE browser login (`decode_browser_login.js 8445 ... --fetch-page RecordsView/8446,8448,8449 --guess-fullsize`). It returned all ten full-size sibling images. They are not committed (about 120 MB); their sha256 values are in test2/sibling_images_sha256.tsv. Cryptiana's rupert1.jpg was fetched once.
+- R8445 (f.114, London 1 June 1648): a different design. Letters are 3-digit homophones (a 18/19, e 46, n 203-205, o 215/217, s 260-262, t 244-248), with a period interlinear decipherment. 25 pairs were read from a ~1250 px view: test2/T_8445.tsv, M.
+- R8446 (f.123, 20 Aug 1648): two-digit letters run together, with words in 101-307. The attested pairs sit on two regular odd series: low e11 g13/15 i19 l23 n27 r35 s37 t39, and high a51 c55 e59 h65 i67 l71 n75 o77 p79 r83 s85 t87 u91. 28 pairs were read from the top quarter of P1 only: test2/T_8446.tsv, M. test2/T_8446x.tsv extends the two series to a full alphabet (grade I, a hypothesis table).
+- R8448 (f.141, Jermyn, 19 Nov 1648): letters 5-91 with homophones, and words 112-535 (535 Prince, 453/512 they, 289 Ireland, 308 King, 118 Adm[iral]). 45 pairs: test2/T_8448.tsv, M. The leaf also carries a symbol alphabet (a-z) that was not used here.
+- R8449 (ff.146-147): an estimate of ships' charges in clear, with no cipher pairs. No table.
+- Nicholas-Rupert July 1645: Tomokiyo's letter table, codes 4-87 with his bracketed inferences (test2/T_NR.tsv). His word series are not published.
+- THE=g4: Tomokiyo calls it a private reconstruction from 18982 f.79. No table was found in the charlesi.htm snapshot, the live page, or the 25 Sept 2023 blog post. Not tested.
+
+**Registered test (PREREG-D2-CRAV.md, pushed 85370ca81 before scoring).** COV is checked against a random-code control and WL (dictionary-word letters) against a shuffled-key control, both at p99, with a self-enciphered matched-design control. Every table FAILs on the target, and the design control passes only 0, 1, 0, 0 and 14 of 20, so all five results are **non-tests**. WL has no power at N=41 split into seven short lines. One deviation is logged in the PREREG: en16_repo is tagged reading files, so the dictionary was switched to tools/data/en.
+**Amendment A1 (pushed 670996f9d before computing): coverage exclusion.** This asks whether R8447 could have been enciphered with the key each table samples. Target coverage is set against the key-true synthetic coverage distribution (200 letters) and the random-code p99. Results (test2/coverage_exclusion.tsv):
+
+| table | target COV /41 | key-true p01 (median) | random-code p99 | verdict |
+|---|---|---|---|---|
+| T_8446 (enciphered with T_8446x) | 6 | 22 (29) | 8 | EXCLUDED |
+| T_8446x | 14 | 41 (41) | 11 | EXCLUDED |
+| T_8448 | 4 | 34 (38) | 8 | EXCLUDED (control is an upper bound) |
+| T_8445 | 2 | 25 (31) | 8 | EXCLUDED (control is an upper bound) |
+| T_NR | 8 | 29 (35) | 17 | EXCLUDED (letter part only) |
+
+In every row the key-true p01 sits above the random-code p99, so the control could have failed differently from the target (rule 3). **Reading:** none. 0 of 41 tokens read; nothing is graded. **Observation:** R8447 uses 11 even two-digit codes (18 40 42 52 60 64 68 72 78 86 90). The attested R8446 pairs are all odd, which fits Tomokiyo's "different cipher". Under T_8446x the odd codes give "g o r s h g x o z s y h o", which is not English. All of this is conditional on the transcription (95.3% two-pass agreement) and on single-reader sibling pairs.
+**Requests:** DECODE 1 login session (4 record pages, 10 thumbnails, 10 full images); cryptiana.web.fc2.com 2; cryptiana.blogspot.com 1.
+Scripts: `python3 test2/key_family_test.py --check`, `python3 test2/coverage_exclusion.py --check` (both OK).
+
+## Remaining gaps (D2-CRAV, 8 Oct 2026)
+Read so far: 0 of 42 cipher tokens read (test 2 excluded five candidate tables; no key applies)
+- the 40 legible groups - blocker: not-attempted; the 1649 siblings in the same volume (DECODE R8451-R8454, ff.185-195) and BL f.142 ("heavily ciphered, with deciphering") have not been tried, and all of R8446 below its top quarter is unread; next: one DECODE login for R8451-R8454 plus the A1 coverage test on their pairs, ~$3
+- the struck group X and the torn 18? on f.134r - blocker: illegible; a blotted strike-out and a tear through the figure on the DECODE image; next: the original, or a BL image if the BL restores its images
+
+## Escalation (D2-CRAV, 8 Oct 2026)
+- [x] siblings: R8445/R8446/R8448 tables EXCLUDED under A1, R8449 has no pairs (8 Oct 2026, test2/); 1649 siblings R8451-R8454 not yet tried
+- [ ] clear-pages: use the clear context around each run ("write to [40.97.52.35.85]" is a name) to constrain groups; after the 1649 siblings
+- [x] known-keys: Tomokiyo's Nicholas-Rupert letter table EXCLUDED; THE=g4 unpublished; no other Rupert key on disk
+- [ ] print: no edition prints the letter (Warburton checked); recheck only if a later test reads a name
+- [ ] key-rebuild: only if a sibling key reads part of the letter
+- [x] image-check: DECODE full-size images obtained and transcribed 6 Oct 2026
+- [ ] retry: not applicable
+Verdict: keep going: 1 internal gap; cheapest next: R8451-R8454 sibling pairs, ~$3

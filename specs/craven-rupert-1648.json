@@ -26,6 +26,15 @@
    "control": "design_prior shuffled-input false-positive rate 0.140 (its own control at N=42)",
    "verdict": "descriptive: images in hand, N=42 too short for design_prior to separate families; shape (2-digit units + 3-4 digit groups + halves) is consistent with a nomenclator; next: test 2 (sibling-letter tables) at the same N",
    "cost": "read from get_session by the orchestrator"
+  },
+  {
+   "date": "8 Oct 2026",
+   "by": "D2-CRAV (LANE DEFAULT-account-2-20261008-0710)",
+   "test": "2. key-family test: R8446/R8448/R8445 pair tables (R8449 has no cipher pairs), R8446 series extension, Tomokiyo Nicholas-Rupert letter table; THE=g4 unpublished, not tested",
+   "target": "COV of 41 tokens: T_8446 6, T_8446x 14, T_8448 4, T_8445 2, T_NR 8; WL 0 for all",
+   "control": "registered WL gate: shuffled-key WL p99 0-15 and matched-design control 0-14/20 -> NON-TEST for all; amendment A1 coverage exclusion: key-true COV p01 22/41/34/25/29 vs random-code p99 8/11/8/8/17",
+   "verdict": "control-backed exclusion under A1 for all five tables (T_8448/T_8445 against an upper-bound control); R8447 uses many even codes the R8446 odd series lacks, consistent with Tomokiyo's 'different cipher'. next: 1649 siblings R8451-R8454 and BL f.142 pairs, then clear-context cribs",
+   "cost": "read from get_session by the orchestrator"
   }
  ],
  "judge": {
