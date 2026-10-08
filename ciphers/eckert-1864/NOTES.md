@@ -1545,3 +1545,86 @@ Note (LS3-V86, first verifier, 8 Oct 2026; AUDIT.md "## AUDIT (LS3-V86)"): O9-BC
 Grant (C, from the print; candidate rows for key-no9.md). E86's body is clear in the Huntington public transcription of 9948 except Grapes
 (Washington) -- N1, D1. E86's leading "Growl" is the No. 1 blind word, not [Washington]. Next, for a reader, ~$0.2: add Borgia/Ranger rows
 (grade C, citing the Urbana Union) to key-no9.md and mark Growl as the blind word in reading.md.
+
+## PF4 (8 Oct 2026, account 1, for LANE ST-LEDGER-4)
+
+A pre-filter, not a reading: nothing was decoded; a ranking with a stated error rate, not a verdict (rule 10). Script `prefilter_ls4.py`
+(imports the segmenter and vocab of `entries_mssEC19.py`; `--offline` re-runs from the caches in `sources/ia-fulltext/print-check/ls4/`
+and reproduced `prefilter-ls4.tsv` byte for byte); output `prefilter-ls4.tsv` (115 pool rows, 12 control rows), `prefilter-ls4-parents.tsv`
+(volume title of every Huntington parent object that produced a hit). Intake gate: `partial (line 3)`, exit 0 (pasted in the brief).
+
+**Pool** (selecting script output): rows of `entries-mssEC19.tsv` with `already_read` blank, pointer < 9149, group 1 = `cipher_guess` 9: 5;
+group 2 = `cipher_guess` 2, priority 1 or 2: 37; group 3 = `cipher_guess` 1, priority 1 or 2: 73; total 115. Order within a group: lowest widened cover first.
+
+**(a) Print, widened.** IA volumes with `_djvu.txt`, found by metadata calls and logged: OR ser. III vol. 4 = `cu31924079575373`
+(dates 1860-65, 677 of the 1864 date strings), OR ser. III vol. 5 = `cu31924079575381` (1863-66), ORN ser. I vol. 11 = `officialrecordso0011unse`
+(1864-65), ORN ser. I vol. 12 = `officialrecordso0012unse` (1861-62, 1865). The LS-PRE window cover (rare 3-grams, max frequency 40, window
+400, threshold 7 plain tokens) was run over these four only and joined with the LS-PRE `or_cov` as `or_cov_widened` (the ser. I volumes were not
+rescanned). Phrases: the rarest run of 4 consecutive plain words whose words each occur at least twice in the added volumes, two per row for groups 1-2, one per row for group 3
+(archive.org request budget), through `be-api.us.archive.org/fts/v1/search?q="phrase"` with no identifier; print-likely by phrase = at most 20
+items and one of them a work whose title or identifier names the war records or a correspondent (Grant, Lincoln, Sherman, Stanton, Halleck, Butler,
+Welles ...). The hit identifiers are in `print_hits`; page numbers are not a locator for this API and are not recorded. 8 pool rows have no run of 4 plain words (phrase not testable).
+**(b) Huntington full text.** `dmQuery/p16003coll11/CISOSEARCHALL^w1 w2^all^and/title!transc/nosort/20/1/0/0/1/0/json` (the transcription
+comes back in the result, so a hit costs no second request); the two rarest plain words per row; a second pair only if the first returned more than 20 hits and no strong hit.
+Each hit other than the row's own pointer is scored by the cover of the row's plain rare 3-grams (y at 7 or more, u at 3-6) and by the share of ALL the row's
+3-grams found in the hit (copy at 0.5 or more, the same text in cipher); y or copy gives `clear-sibling`. The row's own transcription "mostly clear" was NOT
+turned into a flag: see the control. **(c) Same leaf and neighbours** (offline): entries on the pointer and +/-1 page; same day and (same sender name, or same header time, or at least 3 shared rare plain tokens), or at least 5 shared rare plain tokens on any day.
+
+**Known-answer control (rule 3), run before the pool, same code, same thresholds, nothing tuned after it.** Twelve entries; the mssEC 18 leaves
+(9714, 9717, 9901, 9948, 10028 and the six neighbour leaves 9900, 9902, 9947, 9949, 10027, 10029) were fetched from the Huntington with `tools/huntington_transc.py`
+and are committed as text in `sources/mssEC18/`.
+| entry | audit result | flagged | by |
+|---|---|---|---|
+| N2-BP | lowered, print OR III/4 | yes | print-likely: widened cover 41 (OR III/4) |
+| E70 | lowered, Huntington text | **no** | clean (cover 4); the body is clear in the entry's own transcription |
+| E74 | lowered, Huntington text | **no** | clean (cover 4); same |
+| E76 | lowered, body clear in Huntington text | **no** | clean (cover 4); same |
+| E83 | lowered N2, print OR I/43 pt 2 p.695 + same-leaf sibling | yes | clear-sibling: Huntington hit 5811 in mssEC 25 (the Fort Monroe ledger) y+copy, cover 25, 0.82 of all 3-grams; not the audit's reason (the OR I/43 volume and the same-leaf sibling were not hit) |
+| E86 | lowered, Huntington/print | **no** | clean (cover 4); only `u` Huntington hits (cover 3-4, 0.05-0.11 of 3-grams), below the flag line |
+| O9-BC | lowered, press (Urbana Union) | yes | clear-sibling+dup, not for the audit's reason: the clear same-day sibling 10027/3 (Horner NY) is on the same leaf |
+| E77 | lowered, print | yes | print-likely: widened cover 17 |
+| O9-AL | lowered | yes | dup: 9015/0 (3 shared rare tokens, a read entry), not the audit's reason |
+| E78, O9-BB, O9-BA | held N3 by two audits | no, no, no | clean (covers 6, 3, 4) |
+**Recall 5 of 9 lowered entries flagged; false flags 0 of 3 held entries.** 5 of 9 is not under the brief's line of 5, so no fix was made before the pool (not
+tuned on the control). Which check missed: the four misses (E70, E74, E76, E86) are entries whose body is clear in their OWN Huntington transcription; none of a, b or c can see that,
+and the statistic that was tried to see it did not separate them: the share of an entry's word pairs found in the added volumes is 0.33 (E70), 0.59 (E74), 0.47 (E76), 0.40 (E86)
+against 0.50 for the held O9-BA ("clear words public", still N3 weak); the code-vocabulary fraction is 0.13-0.43 on both sides. So the filter does not catch "mostly in clear"
+entries, and a clean row can still be one. Three of the five flags (E83, O9-BC, O9-AL) came from a check other than the one that settled the audit; only 2 of 9 (N2-BP, E77) were flagged for the audit's own reason, so the recall figure is partly luck of overlap. Control sample: 12 entries,
+a rate, not a proof.
+
+**Results, counts per verdict per group** (a row may carry several; component counts):
+| group | rows | clean | print-likely | clear-sibling | dup |
+|---|---|---|---|---|---|
+| 1 (`cipher_guess` 9) | 5 | 0 | 5 | 1 | 2 |
+| 2 (`cipher_guess` 2, prio 1-2) | 37 | 25 | 7 | 0 | 5 |
+| 3 (`cipher_guess` 1, prio 1-2) | 73 | 54 | 9 | 3 | 11 |
+| total | 115 | 79 | 21 | 4 | 18 |
+Checked rows: all 115, 0 unchecked. Caveats the reader should know: 8888:0 (group 3) is the page-top run-on of a leaf that recurs in 13 other ledgers (a page header, not a telegram);
+7 of the 18 dup rows are weak (same day and same sender or same time only, no shared rare token: 9067/1, 9067/2, 8916/2, 9119/0, 9022/1, 9063/1, 9071/1); 8916/2 and 9071/1 have an already-read sibling.
+Group 1's 5 of 5 print-likely come from ORN I/11-12 covers of 12-31 and phrase hits in OR/Grant volumes, ranked by the same thresholds that gave 0 of 3 false flags on the control; the covers are modest next to N2-BP's 41.
+Six clean rows carry a `u` Huntington hit (8902/0, 9125/1, 9062/1, 8967/2, 9034/1, 8907/1): a partial overlap, not a flag.
+
+**Clean rows by group, in the order a reader should take them** (lowest widened cover first; pointer/entry; groups 1: none):
+- group 2 (25): 8887/0 8915/1 8988/1 8902/0 9024/1 9057/2 9065/2 9067/0 9125/1 9126/0 9132/0 8982/1 8986/1 9040/0 9052/1 9060/2 9066/1 9121/1 9122/2 9125/2 9142/0 8948/2 8967/0 8971/2 9003/0
+- group 3 (54): 9048/0 9097/0 9123/3 8965/1 8967/1 8996/1 9003/2 9030/0 9047/1 9049/2 9097/1 9116/2 9119/1 9125/3 9128/2 9134/1 9138/2 9140/2 8921/1 8922/0 8969/3 8982/2 8992/0 8996/0 9020/1 9036/0 9043/0 9049/1 9053/2 9055/1 9062/1 9062/2 9086/1 9088/1 9090/1 9113/1 9131/1 8898/1 8967/2 8984/1 9034/1 9072/0 9124/0 9124/1 9129/1 8907/1 8992/1 9034/0 9044/1 9081/0 9098/1 9120/0 9139/1 9144/0
+Next for the lane: read from the top of group 2, then group 3; a clean row is "not found in what was searched" (OR ser. I vols 32-52, III vols 4-5, ORN I vols 9-12, IA phrase search,
+Huntington full text, same-leaf siblings), never "unprinted" (rule 10), and the four control misses show it can still be an entry that is mostly clear in its own transcription.
+
+Requests (counted in `sources/ia-fulltext/print-check/ls4/requests.json`): hdl.huntington.org 168 (115 pool queries, 12 control queries, 26 parent-title lookups, 9 control leaf fetches, about 6 probes; no 429 or 403);
+be-api.us.archive.org 183 (31 control, 144 pool, about 8 probes; the endpoint answered 502 on roughly one call in five, each retried once after 4 s, no 429 or 403); archive.org 15
+(metadata and `_djvu.txt` for four volumes, one advancedsearch). No other host.
+
+## Remaining gaps (PF4, 8 Oct 2026)
+Read so far: 0 of the 79 clean pool rows read (this pass reads nothing); 115 of 115 pool rows pre-filtered, 21 flagged print-likely, 4 clear-sibling, 18 dup.
+- the 79 clean rows - blocker: not-attempted; clean here means not found in the searched print, Huntington text and same-leaf neighbours; next: a reader on group 2 from 8887/0 down (25 rows) then group 3, ~$0.55 per entry
+- entries mostly in clear in their own Huntington transcription - blocker: not-attempted; the control missed 4 of 9 such lowered entries and no mechanical flag separates them from held O9-BA; next: a reader or verifier checks each row's own transcription before a first decode, ~$0.1 per row
+
+## Escalation (PF4, 8 Oct 2026)
+- [n/a] siblings: same-leaf neighbours checked offline for all 115 rows (check c).
+- [n/a] clear-pages: nothing read in this pass.
+- [n/a] known-keys: nothing decoded in this pass.
+- [x] print: OR III vols 4-5 and ORN I vols 11-12 added to the LS-PRE scan; be-api phrase search on every testable row.
+- [n/a] key-rebuild: no key work in this pass.
+- [n/a] image-check: no token read, so none to image-check.
+- [n/a] retry: no read attempted.
+Verdict: keep going: 2 internal gaps; cheapest next: a reader on the clean rows of group 2 in the order above, ~$0.55 per entry

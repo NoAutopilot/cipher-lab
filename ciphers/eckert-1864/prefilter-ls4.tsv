@@ -1,0 +1,129 @@
+# PF4 (8 Oct 2026, LANE ST-LEDGER-4): pre-filter, a ranking not a verdict (rule 10). prefilter_ls4.py; hit lists: pointer@parentobject:y|u|copy:cov:full.
+group	id	pointer	page	entry	cipher_guess	priority	words	or_cov_widened	new_vol	print_hits	hunt_terms	hunt_hits	hunt_clear	own	leaf_sibs	verdict	note
+control-lowered	N2-BP	9714	48	1	?		86	41	OR III/4	where ever their services=93; offer should be accepted=7906	clothed refused	none	none	cipher	none	print-likely	lowered N1: print OR III/4 pp.238-239
+control-lowered	E70	8985	93	2	1		67	4	ORN I/12	four hundred rounds assorted=0; send with quickest dispatch=0	quickest messenger	none	none	cipher	none	clean	lowered: Huntington transcription clear sibling
+control-lowered	E74	9071	179	2	1		47	4	OR III/4	four saw the consequences=0; it until too late=9634	hers consequences	none	none	cipher	none	clean	lowered N1: Huntington transcription, mostly clear
+control-lowered	E76	9111	219	1	9		33	4	ORN I/12	special car for self=3; please let me have=56212	hardie confidential	none	none	cipher	none	clean	lowered N1: body clear in Huntington transcription
+control-lowered	E83	9901	235	0	?		46	5	OR III/5	please send here immediately=0; names of those you=4682	rucker canby	5811@5952:y+copy:cov25:full0.82	y+copy	cipher	none	clear-sibling	lowered N2: OR I/43 pt2 p.695 + same-leaf sibling
+control-lowered	E86	9948	282	3	?		21	4	OR III/4	at your earliest convenience=110932; very fine day this=98	convenience earliest	9540@9660:u:cov3:full0.05 6339@6362:u:cov4:full0.11 9062@9302:u:cov4:full0.11 3779@3820:u:cov4:full0.11 12195@12382:u:cov4:full0.11 9424@9660:u:cov4:full0.11 6225@6254:u:cov4:full0.11 8037@8066:u:cov4:full0.11 8038@8066:u:cov4:full0.11 8916@9302:u:cov4:full0.11 12760@12844:u:cov4:full0.11	u	cipher	none	clean	lowered: Huntington / print
+control-lowered	O9-BC	10028	362	1	?		36	3	OR III/5	period suppress all sail=0; are all dispensed sig=0	liquor traveled	10027@10074:y:cov19:full0.44	y	cipher	dup:10027/3[6tok]	clear-sibling+dup	lowered: press (Urbana Union 1865), outside checks a-c
+control-lowered	E77	9143	251	1	9		34	17	ORN I/11	active at their destination=2; act of continued bad=0	commo dick	none	none	cipher	none	print-likely	lowered: print
+control-lowered	O9-AL	9015	123	1	9		25	6	ORN I/11	from his dept sign=0; directed to give you=965	sign sixth	none	none	cipher	dup:9015/0[3tok]	dup	lowered: print/clear
+control-held	E78	9714	48	2	?		63	6	OR III/4	every thing coming up=103; supplied should be allowed=34	biggs dove	none	none	cipher	none	clean	held N3
+control-held	O9-BB	9717	51	2	?		78	3	OR III/4	engaged period devote yourself=0; their destined ports period=0	expediting devote	none	none	cipher	none	clean	held N3
+control-held	O9-BA	9717	51	1	?		39	4	OR III/4	br gen canby what=0; it can go into=14191	drilled canby	none	none	cipher	none	clean	held N3 (weak)
+pool-1	8905:1	8905	13	1	9	3	61	12	ORN I/12	command if successful expects=10:chroniclesofcivi0000phil,warofrebellion0133rootrich,warofrebellion33unit; be there by tomorrow=2975	tomorrow expects	6947@7238:u:cov3:full0.02 5574@5952:y+copy:cov10:full0.54 4482@4849:y:cov14:full0.24 11313@11468:u:cov3:full0.02	y+copy	cipher	none	print-likely+clear-sibling	Sheldon (9)  Washn Feby 29th 1864
+pool-1	9015:0	9015	123	0	9	3	42	14	ORN I/12	can possibly spare temporarily=10:warofrebellionco0037unit_n8n3,warrebellionaco07housgoog,cu31924077723041; temporarily from your dept=0	possibly temporarily	none	none	cipher	dup:9015/1[3tok;read]	print-likely+dup	T. B. A. Baird  Washn July 26th 1864
+pool-1	9114:2	9114	222	2	9	3	78	17	ORN I/12	feet eight inches high=14166; forty five years old=100541	pause eyes	none	none	cipher	dup:9115/1[7tok;read]	print-likely+dup	Chas Davenport Cincinnati Ohio  Washington Nov 5th 1864
+pool-1	9082:1	9082	190	1	9	3	48	25	ORN I/11	consent rate them wherever=0; now from here sig=0	shoals raid	none	none	cipher	none	print-likely	Kelly Cumbd  Wash. Sep. 28. 1864
+pool-1	9089:2	9089	197	2	9	3	66	31	ORN I/11	nov fifteenth and embark=0; idaho there are fifteen=17:cu31924079575282	idaho embark	none	none	cipher	none	print-likely	Genl Wright California  Washn Oct 9th 1864
+pool-2	8887:0	8887	-5	0	2	1	7	0		no-4-run	sent united	none	none	cipher	none	clean	
+pool-2	8902:0	8902	10	0	2	1	66	3	OR III/4	no-4-run	fitz lomax	10175@10550:u:cov6:full0.03	u	cipher	none	clean	
+pool-2	8915:1	8915	23	1	2	2	20	0		no-4-run	unless	none	none	cipher	none	clean	S. H. Beckwith (2)  Wash'n Mar 18th 1864 330 P. M.
+pool-2	8988:1	8988	96	1	2	1	21	0		coe horn mortars included=0	horn mortars	none	none	cipher	none	clean	3 pm  Washn June 20th 1864
+pool-2	9126:0	9126	234	0	2	1	15	3	OR III/4	no-4-run	beat until	none	none	cipher	none	clean	A. H. Caldwell Mc  Wash'n Nov. 22nd 1864
+pool-2	8971:2	8971	79	2	2	2	55	6	OR III/4	are somewhat em bare=0; your instructions of yesterday=223	bare somewhat	none	none	cipher	none	clean	1030 am Beckwith  Washn May 26th 1864
+pool-2	8982:1	8982	90	1	2	2	29	4	ORN I/12	not find the gauge=6	gauge find	none	none	cipher	none	clean	Kimber Vicksburg  Washn June 11th 1864
+pool-2	8986:1	8986	94	1	2	2	81	4	OR III/4	he did not see=811341	saddles german	none	none	cipher	none	clean	S. H. Beckwith  Wash'n June 17th 1864
+pool-2	9024:1	9024	132	1	2	2	30	3		was at green castle=24	carlisle villages	none	none	cipher	none	clean	SH Beckwith  Washn July 30th
+pool-2	9050:1	9050	158	1	2	2	55	6	OR III/4	produce animals impressed but=1:papersofulyssess0012gran; in lou don county=226	quakers disturbed	none	none	cipher	none	print-likely	Beckwith City Pt No 2  Wash. Aug 20. 1864
+pool-2	9057:2	9057	165	2	2	2	46	3	OR III/5	following rumors are given=2	lewisburg gallipolis	none	none	cipher	none	clean	S H. Beckwith City Point  Washn Aug 29th 1864
+pool-2	9065:2	9065	173	2	2	2	33	3		no-4-run	attend control	none	none	cipher	none	clean	Beckwith  Washn Sept 7th 64
+pool-2	9067:0	9067	175	0	2	1	49	3	OR III/4	being made in direction=25	retiring stevenson	none	none	cipher	none	clean	9.30 pm  Harpers Ferry Sept 7th
+pool-2	9067:1	9067	175	1	2	2	80	3	OR III/4	off under easy canvass=18; escaped by running inside=5	canvass stack	none	none	cipher	dup:9067/2[sender]	dup	1 pm Beckwith  Washington Sept 8th 64
+pool-2	9087:2	9087	195	2	2	1	38	5	OR III/5	can possibly be spared=4954; your place they needed=10	rucker newport	none	none	cipher	dup:9087/1[5tok-nodate]	dup	JW Sampson Balto No 1 Washn Oct 4th 1864
+pool-2	9098:2	9098	206	2	2	2	37	3	OR III/4	leave by special boat=14:papersofulyssess0012gran; which shall be obtained=3007	earliest requisition	none	none	cipher	none	print-likely	Beckwith City Pt  Wash Oct. 21.1864.
+pool-2	9125:1	9125	233	1	2	2	18	3	ORN I/11	please come this way=14692; on your re turn=3159	turn come	2951@3294:u:cov3:full0.06	u	cipher	none	clean	Beckwith Burlington N. J.  Wash'n Nov. 18th 64
+pool-2	9132:0	9132	240	0	2	2	64	3	OR III/4	is now red used=0; direct it will leave=5	lion asks	none	none	cipher	none	clean	S. H. Beckwith  Wh'n Dec 1st 1864 3. PM
+pool-2	8954:2	8954	62	2	2	2	91	6	ORN I/12	been packed pause he=0; sent verbal message that=1:papersofulyssess0010gran	pause score	none	none	cipher	none	print-likely	Beckwith No 2  Wash May 1. 1864
+pool-2	9040:0	9040	148	0	2	1	29	4	OR III/4	might be kept away=1467	brent decide	none	none	cipher	none	clean	
+pool-2	9041:1	9041	149	1	2	2	153	7	OR III/4	can safely spare many=1:papersofulyssess0011gran; much diminished by sickness=230	pause replacing	none	none	cipher	none	print-likely	S. H. Beckwith  Washn Aug 11th 1864 11 AM
+pool-2	9052:1	9052	160	1	2	2	50	4	ORN I/12	windy bur bridge end=0; end no pm pm=0	windy widows	none	none	cipher	none	clean	Beckwith City Pt.  Wash DC Aug 21.1864
+pool-2	9060:2	9060	168	2	2	2	51	4	ORN I/11	bell who says he=111; here wishes to go=57	leet scout	none	none	cipher	none	clean	Beckwith City Pt.  Wash. Aug. 31. 1864 9.30 PM
+pool-2	9066:1	9066	174	1	2	1	49	4	OR III/4	forgery being perpetrated since=0; files for any telegrams=9	perpetrated forgery	none	none	cipher	none	clean	HE Thayer  Washn Sept 7th 1864
+pool-2	9067:2	9067	175	2	2	2	27	4	ORN I/11	here and will await=114	await understand	none	none	cipher	dup:9067/1[sender]	dup	SH Beckwith  Washn Sept 8th 1864
+pool-2	9087:1	9087	195	1	2	2	43	5	OR III/5	can possibly be spared=4954; place they are needed=901	rucker rufus	none	none	cipher	dup:9087/2[5tok-nodate]	dup	Beckwith No 2  Washn Oct 4th 1864
+pool-2	9121:1	9121	229	1	2	2	23	4	OR III/5	have been repeated back=52; up to make annual=35	widows prospects	none	none	cipher	none	clean	SH Beckwith  Washn Novr 11th 1864
+pool-2	9122:2	9122	230	2	2	2	28	4		morning unless its stormy=0; we shelly at hampton=0	shelly stormy	none	none	cipher	none	clean	9am Beckwith  Washn Novr 12th 1864
+pool-2	9125:2	9125	233	2	2	2	29	4	OR III/5	know you ad dress=7; reason why you should=237041	dress reason	none	none	cipher	none	clean	Beckwith Burlington N. J.  Nov. 19th 1864
+pool-2	9129:4	9129	237	4	2	2	43	5	OR III/5	please send here immediately=0; once give the names=59	shared prop	none	none	cipher	dup:9129/3[3tok;read]	dup	SH Beckwith City Pt  Washn Nov 29th 64
+pool-2	9131:0	9131	239	0	2	1	35	4		wish any sent to=20:warofrebellion014302rootrich,warofrebellion432unit,warofrebellion0000unse_b7w7	remainder wish	none	none	cipher	none	print-likely	RRM Caine #2  Washn Novr 30th 1864
+pool-2	9135:1	9135	243	1	2	2	121	7	ORN I/12	not yet arrived spike=10; cattle she is light=0	vander lawson	none	none	cipher	none	print-likely	S. H. Beckwith  Wash'n Dec 6th 1864 4 P. M
+pool-2	9142:0	9142	250	0	2	1	74	4	OR III/4	by boat tt eckert=0; boats named as are=0	bradley eckert	none	none	cipher	none	clean	J. H. Emerick City Point  Washington D. C. Dec. 18. '64
+pool-2	8948:2	8948	56	2	2	1	43	5	OR III/4	rocks if you cannot=124; wish without some co=0	vols rocks	none	none	cipher	none	clean	No 2 t Caldwell MC  Wash Apl 20 1864
+pool-2	8967:0	8967	75	0	2	1	105	6	ORN I/11	even if much crowded=0; to fredericksburg at pm=0	crowded lighter	none	none	cipher	none	clean	
+pool-2	9003:0	9003	111	0	2	1	18	6		repeated to you no=148	cows repeated	none	none	cipher	none	clean	
+pool-2	9039:1	9039	147	1	2	1	130	9	ORN I/12	events pause consult how=0; their drivers are needed=7	pause drivers	none	none	cipher	none	print-likely	F. T. Beckford  Wash'n Aug 9th 930 am 1864
+pool-3	8888:0	8888	-4	0	1	1	16	0		book manufacturers pennsylvania av=0	metropolitan manufacturers	7240@7652:y+copy:cov10:full0.79 6310@6362:y+copy:cov10:full0.79 2478@2886:y+copy:cov10:full0.79 7654@8066:y+copy:cov10:full0.79 10076@10136:y+copy:cov12:full1.00 10138@10550:y+copy:cov10:full0.79 8474@8886:y+copy:cov10:full0.79 3401@3574:y+copy:cov10:full0.79 4437@4849:y+copy:cov10:full0.79 4036@4147:y+copy:cov7:full0.71 4851@4953:y+copy:cov10:full0.79 9662@10074:y+copy:cov10:full0.79 5128@5540:y+copy:cov10:full0.79	y+copy	cipher	none	clear-sibling	
+pool-3	8965:1	8965	73	1	1	1	30	3	OR III/4	him by the other=22380	biggs other	none	none	cipher	none	clean	130 PM GD Sheldon F Monroe, Washington May 20th 1864
+pool-3	9048:0	9048	156	0	1	1	25	0		to tt eckert cipher=0	cipher eckert	none	none	cipher	none	clean	
+pool-3	9083:2	9083	191	2	1	2	23	7	OR III/4	has been ordered to=200136	stevenson ordered	none	none	cipher	none	print-likely	Bickford H. Ferry  Wash Sept. 29. 1864.
+pool-3	9097:0	9097	205	0	1	1	18	0		lawrence send your dies=0	lawrence mounted	none	none	cipher	none	clean	JW Sampson Balto  Washn Oct 15th 64
+pool-3	9119:1	9119	227	1	1	1	28	3	OR III/4	furnishes no personal description=0	rainy furnishes	none	none	cipher	none	clean	Capt Clowry St Louis  Washn Nov 7th 1864
+pool-3	9123:3	9123	231	3	1	1	18	0		no-4-run	gill much	none	none	cipher	none	clean	Washn Novr 15th 1864
+pool-3	9129:1	9129	237	1	1	1	27	5	OR III/5	orders have been given=39897	dead matter	none	none	cipher	none	clean	J. C. Van Duzer  Wash'n Nov 28th 1864 10.30 A. M.
+pool-3	9138:2	9138	246	2	1	1	18	3	ORN I/11	no-4-run	winslow till	none	none	cipher	none	clean	Mason Cairo  Washn Decr 10th 1864
+pool-3	8907:1	8907	15	1	1	1	37	6	ORN I/11	below to ascertain if=265	hdqrs ascertain	2673@2886:u:cov3:full0.06	u	cipher	none	clean	Caldwell "1"  Wash. Mar. 4. 1864
+pool-3	8916:2	8916	24	2	1	1	35	4	OR III/4	you proposed is issued=0	hank gone	none	none	cipher	dup:8916/1[sender;read]	dup	Caldwell  Washn Mch 23rd 1864
+pool-3	8922:0	8922	30	0	1	1	32	4	ORN I/12	there is no design=12690	design believe	none	none	cipher	none	clean	F. S. Van Valkenburg Nashville  Washn Apl 6th 1864
+pool-3	8967:1	8967	75	1	1	1	35	3		your depart ure for=78	sanford depart	none	none	cipher	none	clean	10 am Jno Horner  Washn May 21st 1864
+pool-3	8996:1	8996	104	1	1	1	36	3	ORN I/12	let the vessels bringing=0	bringing dispatch	none	none	cipher	none	clean	Sampson Bueto  Wash July 7. 1864.
+pool-3	9003:2	9003	111	2	1	1	28	3	ORN I/11	well armed supplied with=75	supplied mounted	none	none	cipher	none	clean	JC Van Duzer Nashville  Washn July 16th 1864
+pool-3	9020:1	9020	128	1	1	2	35	4	OR III/4	will be in convenient=627	corrections convenient	none	none	cipher	none	clean	S. H. Beckwith  Washn July 28th 1864
+pool-3	9026:2	9026	134	2	1	1	45	3	OR III/4	that are in service=3538	meigs moving	none	none	cipher	dup:9026/3[3tok;clear]	dup	John Homer & Samson  Washn July 31st 64 11 AM
+pool-3	9030:0	9030	138	0	1	1	34	3	OR III/4	bank of com merce=38535	friday concerning	none	none	cipher	none	clean	Jno Horner  Washn Aug 1st 1864
+pool-3	9047:1	9047	155	1	1	1	37	3	ORN I/11	robt murray us mar=0	murray detained	none	none	cipher	none	clean	<deletion>Thayer Phila</deletion> Wash Aug. 14. 1864
+pool-3	9049:2	9049	157	2	1	1	35	3	OR III/4	does myers still trouble=0	myers trouble	none	none	cipher	none	clean	Chapel  Wash Aug 16th
+pool-3	9062:1	9062	170	1	1	1	23	4	OR III/4	mr genl ports mouth=0	convenience earliest	9540@9660:u:cov3:full0.05 6339@6362:u:cov4:full0.10 3779@3820:u:cov4:full0.10 12195@12382:u:cov4:full0.10 9424@9660:u:cov5:full0.14 6225@6254:u:cov5:full0.14 8037@8066:u:cov4:full0.10 8038@8066:u:cov4:full0.10 8916@9302:u:cov4:full0.10 12760@12844:u:cov4:full0.10 9948@10074:u:cov4:full0.10	u	cipher	none	clean	Richards Boston  Wash. Sept 1. 1864
+pool-3	9072:0	9072	180	0	1	1	28	5	OR III/4	for kent your proposed=0	kent additions	none	none	cipher	none	clean	Carey Lexington  Washn Sept 12th 1864
+pool-3	9090:1	9090	198	1	1	2	46	4	ORN I/12	true condition of things=5329	aster representing	none	none	cipher	none	clean	Beckwith City Pt  Wash DC Oct 10. 64
+pool-3	9097:1	9097	205	1	1	1	17	3	ORN I/12	come over to night=2211	come night	none	none	cipher	none	clean	JW Sampson  Wash Oct 15th 64
+pool-3	9111:0	9111	219	0	1	1	30	3	ORN I/11	sign as provost marsh=0	sign marsh	none	none	cipher	dup:9110/2[5tok-nodate;read]	dup	
+pool-3	9116:2	9116	224	2	1	1	39	3	OR III/4	wicked on what seems=0	wicked target	none	none	cipher	none	clean	JW Sampson Balto  Wash 11 pm Nov 5th 1864
+pool-3	9119:0	9119	227	0	1	1	36	3	OR III/5	arisen in your command=0	arisen transmitted	none	none	cipher	dup:9118/1[sender,time]	dup	John Horner  Washn 1pm Nov 7th 1864
+pool-3	9125:3	9125	233	3	1	1	36	3	ORN I/11	can not you hold=122	reaches asst	none	none	cipher	none	clean	R. O. Brien Hd Qrs Army Janus  Nov. 19th 1864
+pool-3	9128:2	9128	236	2	1	1	21	3		no-4-run	contrary notwithstanding	none	none	cipher	none	clean	Clowry  Washn Novr 26th 1864
+pool-3	9131:1	9131	239	1	1	1	20	4	OR III/4	please come on at=223	attorney appoint	none	none	cipher	none	clean	Capt Bruch Lvl  Washn Dec 1st 1864
+pool-3	9134:1	9134	242	1	1	1	31	3	ORN I/11	personal bundle for yourself=0	dana yourself	none	none	cipher	none	clean	McCaine  Wash Decr 3d 1864
+pool-3	9140:2	9140	248	2	1	1	17	3	OR III/4	for orders tt eckert=0	eckert speed	none	none	cipher	none	clean	John Horner  Washn Decr 15
+pool-3	9146:1	9146	254	1	1	2	50	17	ORN I/11	but its hopeless alone=0	beckwith maria	none	none	cipher	dup:9145/1[sender]	print-likely+dup	Beckwith City Pt.  Wash 10pm Dec 29. 1864
+pool-3	8898:1	8898	6	1	1	1	28	5	ORN I/11	leave here to day=3288	devereux leave	none	none	cipher	none	clean	S. H Beckmith 1  Washn Feby 5th 1864
+pool-3	8921:1	8921	29	1	1	1	68	4	ORN I/11	fully coaled wat ered=0	grim coaled	none	none	cipher	none	clean	Baldwin Balt "1"  Wash D. C. Apl 5
+pool-3	8939:3	8939	47	3	1	1	28	4	OR III/4	no more in exchange=287	exchange sick	3809@3820:u:cov3:full0.04 5617@5952:y+copy:cov13:full0.65 4551@4849:u:cov3:full0.04	y+copy	cipher	none	clear-sibling	Geo D. Sheldon. Ft Monroe  Washn Apl 20th 1864
+pool-3	8969:3	8969	77	3	1	1	73	4	OR III/4	received please understand that=31	asking narrow	none	none	cipher	none	clean	RR McCaine  Wash 1030 pm May 22d 1864
+pool-3	8977:1	8977	85	1	1	1	36	19	OR III/4	very encouraging to disloyalty=15:bwb_S0-BQU-865,lincolnwargovern0000unse,lincolnwargovern0000wili	appearances disloyalty	none	none	cipher	none	print-likely	7 am JW Wallack Indianapolis  Washn June 1" 1864
+pool-3	8982:2	8982	90	2	1	1	73	4	OR III/4	cant you catch that=1	bruch divest	none	none	cipher	none	clean	Washn June 11th
+pool-3	8992:0	8992	100	0	1	1	35	4	OR III/5	resigned period please come=0	gove nominated	none	none	cipher	none	clean	Col Stager  Washington D. C. June 30th 1864
+pool-3	8996:0	8996	104	0	1	1	42	4	OR III/4	as rap idly as=30365	antietam whites	none	none	cipher	none	clean	RR McCaine Parkersburg  Wash July 6th 1864
+pool-3	9022:1	9022	130	1	1	1	35	4	OR III/4	about to arrive here=546	tablets advised	none	none	cipher	dup:9021/1[sender]	dup	McCaine  Washn July 28th 1864
+pool-3	9036:0	9036	144	0	1	1	44	4	OR III/5	confidential period your telegrams=0	telegrams adequate	none	none	cipher	none	clean	Col M. S. Quay  Wash'n Aug 5th 1864
+pool-3	9041:0	9041	149	0	1	1	42	4	ORN I/11	augur has shown me=10:warrebellionaco08offigoog,cu31924080776929,warofrebellion431unit_0	augur till	none	none	cipher	none	print-likely	R. R McCaine  Washn Aug 10th 1864 11. AM
+pool-3	9043:0	9043	151	0	1	1	97	4	ORN I/12	man whom he met=6181	beckwith staunton	none	none	cipher	none	clean	
+pool-3	9049:1	9049	157	1	1	1	39	4	OR III/5	much exposed to raids=160	raids canby	none	none	cipher	none	clean	830pm McCaine  Washn Aug 16th
+pool-3	9053:2	9053	161	2	1	1	41	4	OR III/4	sent you at once=3931	augur undertaking	none	none	cipher	none	clean	no1  McCaine Winchester ----  Washington, Aug 21, 1864
+pool-3	9055:1	9055	163	1	1	1	45	4	ORN I/12	seize articles when purchased=0	eckert seize	none	none	cipher	none	clean	John Horner  Washn Aug 23d 64
+pool-3	9056:1	9056	164	1	1	1	60	8	OR III/4	keys us marshal bos=0	bruns keys	none	none	cipher	none	print-likely	Washn August 24th 1864
+pool-3	9058:1	9058	166	1	1	1	43	7	OR III/4	poles is if it=2	oper checks	none	none	cipher	dup:9057/3[sender;read]	print-likely+dup	McCaine #4  Washn Aug 29th 1864
+pool-3	9062:2	9062	170	2	1	1	54	4	ORN I/12	cheerfully given you may=2	plated peck	none	none	cipher	none	clean	8.30 pm  Washn Sept 3d 1864
+pool-3	9063:1	9063	171	1	1	1	56	6	ORN I/12	afterwards repaid it please=0	complicity capitol	none	none	cipher	dup:9064/1[time]	dup	3 pm  Washn Sept 5th 1864
+pool-3	9086:1	9086	194	1	1	2	82	4	OR III/4	supposed to be ker=4	spot earl	none	none	cipher	none	clean	Beckwith City Pt  Wash Oct 2 1864.
+pool-3	9088:1	9088	196	1	1	2	98	4	OR III/4	savannah county this mag=0	windy prevails	none	none	cipher	none	clean	Beckwith Ft. Monroe  Wash Oct 8. 1864
+pool-3	9113:1	9113	221	1	1	1	45	4	ORN I/11	is wicked that rosser=0	frances wicked	none	none	cipher	none	clean	Schermerham H. F. Enemy Crum line Wash'n Nov. 4th 1864
+pool-3	9124:1	9124	232	1	1	1	33	5	OR III/4	trouble or expense should=347	trouble spared	none	none	cipher	none	clean	John Horner N. York  Washington Nov 16th 1864
+pool-3	8967:2	8967	75	2	1	1	39	5	OR III/4	more will soon follow=1274	follow expected	8226@8472:u:cov3:full0.03 5982@6254:u:cov3:full0.03 8394@8472:u:cov3:full0.03	u	cipher	none	clean	J. C. Van Duzer Nashville  Wash'n May 21st 1864 10 AM
+pool-3	8984:1	8984	92	1	1	1	58	5	OR III/5	he will corn tin=0	pare checks	none	none	cipher	none	clean	930 pm  Washn June 12th 1864
+pool-3	9034:1	9034	142	1	1	1	43	5	OR III/4	is beginning to arrive=3086	arrive beginning	9328@9660:u:cov4:full0.05 9860@10074:u:cov3:full0.02 7074@7238:u:cov3:full0.02	u	cipher	none	clean	McCaine Monocacy  Washn Aug 4th 1864 1130 AM
+pool-3	9071:1	9071	179	1	1	1	32	5	OR III/4	highest importance that it=1851	curtis highest	none	none	cipher	dup:9070/2[sender;read]	dup	Capt Smith St Louis  Washn 1 pm Sept 10th 1864
+pool-3	9124:0	9124	232	0	1	1	42	5	OR III/5	where ever found with=20	bunker lafayette	none	none	cipher	none	clean	John Horner  Washn 1130 am Novr 16 64
+pool-3	8922:1	8922	30	1	1	1	75	10	ORN I/11	directs me to acknowledge=2378	exchange directs	5595@5952:y+copy:cov33:full0.75 4997@5126:u:cov3:full0.01 2203@2230:u:cov6:full0.04	y+copy	cipher	dup:8922/2[sender;read]	print-likely+clear-sibling+dup	Geo. D. Sheldon  Washn Apr 6th 1864 230 PM
+pool-3	8971:3	8971	79	3	1	1	49	6		for rest is collecting=0	oppressed preparatory	none	none	cipher	dup:8970/1[3tok;read]	dup	Sam Bruch  Wash'n May 26th 1864
+pool-3	8992:1	8992	100	1	1	1	72	6	OR III/4	can possibly be spared=4954	vliet advised	none	none	cipher	none	clean	3 pm  New York June 30th 1864
+pool-3	9034:0	9034	142	0	1	1	87	6		clinton pause the yankees=0	eatonton pause	none	none	cipher	none	clean	F. S. Van Valkenburg  Washington Aug 4th 1864
+pool-3	9040:1	9040	148	1	1	1	145	6	ORN I/11	contained definite instructions did=8:warrebellionaco08offigoog,warofrebellion431unit_0,cu31924080776929	augur appearances	none	none	cipher	none	print-likely	RR McCaine HF  Washn 12pm Aug 9th 64
+pool-3	9044:1	9044	152	1	1	2	103	6	OR III/4	belongs was under marching=0	pause fitz	none	none	cipher	none	clean	SH Beckwith & McCaine  Wash'n Aug 12th 1864
+pool-3	9081:0	9081	189	0	1	1	95	6	OR III/4	hat dark frock coat=21	transact represents	none	none	cipher	none	clean	WT Richards Boston in #13  Washn Sept 28th 1864
+pool-3	9098:1	9098	206	1	1	1	43	6	OR III/4	to be dis missed=33955	kinney missed	none	none	cipher	none	clean	John Horner  Washn Oct 21st 1864 2 PM
+pool-3	9120:0	9120	228	0	1	1	28	6	ORN I/12	his wife ewell consult=0	ewell consult	none	none	cipher	none	clean	JW Sampson No 1  Washn Novr 10th
+pool-3	9139:1	9139	247	1	1	1	117	6	ORN I/11	interruption caused by changing=15	ants recommends	none	none	cipher	none	clean	Capt Bruch Louisvl.  Washn D. C. Dec. 12. 1864
+pool-3	9141:1	9141	249	1	1	1	120	64	ORN I/11	seen thursday off hat=0	ditto dore	none	none	cipher	none	print-likely	Geo D. Sheldon  Wash'n Dec. 17th 1864 830 P. M
+pool-3	9144:0	9144	252	0	1	1	84	6	OR III/5	pure suit be sent=0	questioning pure	none	none	cipher	none	clean	Capt Van Duzer  Wash'n Dec. 28th 1864 4 PM
