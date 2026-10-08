@@ -2317,9 +2317,7 @@ Print: be-api full text without identifier for 14 phrases (2.2 s apart); cached-
 
 ## Remaining gaps (MS18-R1, 8 Oct 2026)
 Read so far: of twelve rows, ten filed (E200-E209), two step-0 skips. In print by phrase: E201, E203, E204, E205, E208. Not located in what was searched: E200, E202, E206, E207, E209.
-- E200, E207, E209 (Quartermaster-General telegrams, 6 Apr and 30 Dec 1864) - blocker: not-attempted; print search limited to be-api phrases, the cached OR set and OR I/42 pt 3; next: Official Records Navy ser. I vol. 11-12 and the QMG outgoing telegrams (Meigs papers), Google Books once the 429 clears, ~$0.5
-- E202 (24 Oct 1864, remounts, Chambliss) - blocker: not-attempted; the telegram text itself not found, only the 27 Oct Field Order that acts on a 23 Oct War Department telegram; next: OR I/39 pt 3 pp. 462, 511 and Thomas's correspondence around 24-26 Oct read by hand, ~$0.3
-- E206 (Kelton, 30 May 1864) - blocker: not-attempted; only be-api phrases and the cached set tried; next: OR I/37 pt 1 and I/36 pt 3 pages of 30-31 May read by hand (Sigel/Hunter command change), ~$0.3
+- grading fixes from AUDIT (FV-MS18), 8 Oct 2026 (print location of E200 E202 E206 E207 E209 settled there: E206 printed word for word, OR I/37 pt 1 p.557, N1; the other four N2 by printed substance) - blocker: not-attempted; key/grading rows Orphan = Sigel, Hero = Johnson in E202 only, Binder -> Bender, weasler(s) -> Weasel + er not yet applied through the decode path; next: a FIX job as FIX-FM1, ~$0.4
 - one addressee code each (E206 "Orphan", E209 "new port", E200/E202 signature or name rows) - blocker: no-key-material; none of these words reads from any book row in context; next: compare with other sent entries carrying the same words, ~$0.2
 - 9836/0 lead: the Halifax cipher "recd Sept 6th, Page 113, Recd book #2" - blocker: not-attempted; the lead names a page of a ledger not yet fetched; next: find that page in the received ledgers, ~$0.2
 
@@ -2331,4 +2329,4 @@ Read so far: of twelve rows, ten filed (E200-E209), two step-0 skips. In print b
 - [n/a] key-rebuild: no key row added.
 - [x] image-check: nine of nine pages viewed whole at 2400 px.
 - [x] retry: Google Books retried once after a pause, 429 again.
-Verdict: keep going: 4 internal gaps (print location of E200 E207 E209, E202, E206, and the addressee codes; the Halifax lead is the fifth line), cheapest next: a verifier phrase search with local OR grep, ~$0.3-0.5 per entry
+Verdict: keep going: 2 internal gaps (FV-MS18 grading fixes, the Halifax lead; the addressee codes are no-key-material); cheapest next: the FV-MS18 grading fix job, ~$0.4

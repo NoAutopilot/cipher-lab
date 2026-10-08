@@ -5332,3 +5332,111 @@ second audit should look for the 9 Sept 1864 addenda and the March 1864 changes)
 - Rows written in this session: status.json results for E168, E165, E167 (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
   SO-ECKERT-E165, SO-ECKERT-E167, SO-ECKERT-E168 (prompts in second-opinions/); WORK-QUEUE.tsv AUD2-LEDGER-4; HYPOTHESES.md Mint/Mogul
   settled.
+
+## AUDIT (FV-MS18)
+
+Verifier FV-MS18 (account 1, for LANE LEDGER), 8 Oct 2026, 21:12-21:3x UTC by `date -u`; a separate session from the reader MS18-R1
+(account 1), not protecting its conclusions. Scope: **E200, E202, E206, E207, E209** (ciphertext.txt, Cipher No. 1, read by MS18-R1 from
+the War Department Sent ledger mssEC 18 = Huntington object 10074; NOTES "## MS18-R1"), the five that reader did not locate in print.
+Nothing decoded beyond key look-ups in key.md. Key source for every item: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+**Result: no entry reaches N3. E206 is printed word for word (N1); E200, E202, E207 and E209 are relay or parallel orders of printed
+instructions (N2, the E100 kind).** No status.json, SECOND-OPINIONS-QUEUE.tsv or WORK-QUEUE row is written (N3+ only).
+
+### 1. Duplicates, prior-work checklist
+- **Duplicate diff:** pointer, date and addressee of each against every `###` header in ciphertext.txt / -no2 / -no9 and status.json:
+  pointers 9696, 9875, 9751, 9923 occur only in E200-E209's own headers. Same-subject neighbours, not duplicates: E100 (8921, 5 Apr 1864,
+  the Nelly Pentz alone, to the same Capt. Thomas) for E200; E66 (9151, 3 Jan 1865, the sequel) for E207/E209. **No duplicate.**
+- `tools/prior_work.py eckert-1864 --item-spec 'item_id=E2nn;shelfmark=mssEC 18;ptr=...;date=...;sender=...;recipient=...' --step-type
+  audit --offline` (the items are not in items.tsv), exit 4 for all five: the LEADs owed are this verifier's own claim, a target-level
+  V1-KNOWN claim (5.2 h, account 3, not these items), MS18-R1's own sibling marker (NOTES l.2327), and edition windows in OR I/33 and I/36
+  pt 1 (E200: Culpeper/Rapidan material, not this telegram) and I/43 pt 2 (E202: Dept. of the Susquehanna, not this telegram) -- each looked
+  at, none this telegram. E206 KNOWN-PART (clear words public in the holder transcription). Tomokiyo: unchecked (no folio key); the
+  aaymeloglu repository: not searched (no clone).
+- **Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, under the hdl token 21:18-21:20 UTC, 9 dmQuery requests): "North Point"
+  (117, generic), "Eastern state" (15: 9696 itself; 4841 = a clear Baltimore reply to Meigs signed "C. W. Thomas assistant Q. M." -- confirms
+  the addressee of E200 is Capt. C. W. Thomas at Baltimore), "remounts" (6: 9875 itself; 9776, 9907, 9523, 9097, 8565 other dates),
+  "bliss inspector" (9875 only), "Parkersburg Monocacy" (9751; 10306 = Sigel's clear report of May 1864 on guarding the road "from
+  Parkersburg to Monocacy"; 4527), "stations Kelton" (3098, other), "ocean Appian" (9943, 24 Jan 1865, other), "Vliet Monday" (9923 itself;
+  **7672 p.14 of the received ledger: Van Vliet's clear reply "The Ariel & Champion are coaled & can go to Sea in twenty four hours after
+  receiving orders & can carry each twelve hundred men ... will these answer? Please telegh at once"**, the answer to E207), "coal water
+  Monroe Monday" (**7670 p.12: Ingalls's clear telegram "...the vessels just used in the Butler Expedition ... I wish them all assembled &
+  in readiness on or before Monday noon the 2d Jany"**, and Grant's "fueled & watered ... by Monday morning ... Eight thousand in all";
+  7665 and 5840 = Butler's 27 Dec report, other).
+
+### 2. Print (OR as IA `_djvu.txt`, whitespace-normalized lower-case grep; cached OR I/35 pt 2, fetched to scratch I/37 pt 1, I/39 pt 3,
+I/42 pt 3, I/46 pt 2)
+
+| ID | finding | where |
+|---|---|---|
+| **E206** | **FOUND word for word**: "Washington, D. C., May 30, 1864 -- 2.10 p. m. Major-General Sigel, Martinsburg, W. Va.: Report by telegraph to Adjutant-General of the Army, by arm and regiment, all troops on or in vicinity of line of railroad from Parkersburg to the Monacacy [sic], with their stations. J. C. Kelton, Colonel and Assistant Adjutant-General." The answer follows in print (Martinsburg, 31 May: "In obedience to orders, signed by Colonel Kelton, I have the honor to report the following troops on and in the vicinity of the Baltimore and Ohio Railroad ..."). MS18-R1's phrase pass missed it on the OCR's "telegraj)h" and "Monacacy" and the line-break "par- kersburg". **Orphan = Sigel** (the addressee MS18-R1 left M) -- the instruction of E168 (17 Mar 1864), now confirmed by a second printed telegram after E108. Printed time 2.10 p.m. against ledger 2 PM. | OR I/37 pt 1 p.557 (running head 557 before, 558 after; IA `warofrebellion371unit`) |
+| **E207, E209** | **SUBSTANCE (G3)**: the instruction they carry out is printed: "City Point, Va., December 30, 1864. (Received 7 p.m.) Col. George D. Wise, Quartermaster-General's Office: Lieutenant-General Grant wishes sea-going vessels to be assembled at once at Fortress Monroe, prepared with coal and water for, say, fifteen days for 8,000 troops. The vessels just used in the Butler expedition will form a part ... Please see that some additional ones are ordered there at once. I wish them all assembled and in readiness on or before Monday, the 2d of January. Rufus Ingalls." E207 (9 PM, to Van Vliet, New York: ocean steamers for 3,000 troops at Monroe by Monday 2 January, coal and water for 15 days, secret) and E209 (9 PM, to the quartermaster at Baltimore: any ocean steamer there with 15 days' water and coal at Monroe Monday 2 January) are the QMG office's relays of it two hours later: shared Fortress Monroe, Monday 2 January, coal and water for fifteen days, the same evening. Van Vliet's printed 3 Jan reply (OR I/46 pt 2, "there are but few steamers available here at present ... the Ericsson ... the Rapidan") and his clear 31 Dec reply in the Huntington (7672, above) answer E207/E66. Grant to Stanton, 31 Dec (same volume p.1106): "steamers collecting there [Fortress Monroe]". The two telegrams themselves: not located (no "Van Vliet" 30 Dec in I/42 pt 3; I/46 pt 2 starts 1 Jan). | OR I/42 pt 3 p.1101 (running head 1102 follows; IA `warofrebellion423unit`); OR I/46 pt 2 (IA `warofrebellion462unit`) |
+| **E202** | **SUBSTANCE (G3)**: OR I/39 pt 3 p.462, Sherman's Special Field Orders No. 107, Gaylesville, 27 Oct 1864: "Pursuant to instructions of the War Department by telegraph, under date of October 23, Major Chambliss is recognized as the inspector of cavalry for the Military Division of the Mississippi, and Brig. Gen. [R.] W. Johnson is relieved from that duty"; p.511, Sherman (to Wilson): "General Johnson has been relieved by Chambliss in pursuance of instructions from the War Department"; p.301, Wilson: "Maj. W. P. Chambliss is special inspector of cavalry for the Military Division of the Mississippi ... I know of no other officer from the Cavalry Bureau upon similar duty", and (same report) "General R. W. Johnson is at Nashville, charged with the duty of mounting, remounting ...". Every content element of E202 (Chambliss appointed special inspector of cavalry, M.D.M.; the Cavalry Bureau wants Johnson relieved; remounts to Chambliss) is in print within three days except its stated reason (two officers on the same duty conflict in orders and requisitions). The telegram itself: not located (0 hits "cavalry bureau requests", "conflict of orders", "johnson be relieved" in I/39 pt 3). **Hero = Johnson** here, not key.md's "Johnston": the print names the man (C). | OR I/39 pt 3 pp.301, 462, 511 (IA `warofrebellion393unit`) |
+| **E200** | **SUBSTANCE (G3)**: the same operation as E100, one day later, same sender and addressee: OR I/35 pt 2 pp.36-37, 5 Apr 1864, Meigs to Van Vliet ("send one of them to Annapolis to transport colored troops thence to Port Royal ... fully coaled and watered") and to Biggs, Fort Monroe ("send the Spaulding to Annapolis immediately to take a colored regiment thence to Hilton Head"), Halleck's memorandum of the two colored regiments at Annapolis; the second audit of E100 ("## AUDIT 2 (second adversarial, V1-LS4B)" above) found the Supplement to the OR ("We shipped on board of transports Relief, North Point and Nelly Pentz. April 19.- Arrived ... Hilton Head") and Hepburn 2023 (the First Michigan Colored "embarked on board three transports, North Point, Relief, and Nellie Pentz" at Annapolis, night of 15 Apr): two of E200's three ships made that voyage. E200 adds the Eastern State and North Point to the Nelly Pentz, "full loaded" coal and water for voyage out and back, and "report progress". The telegram itself: not located (0 hits "north point", "eastern state", "pentz" in I/35 pt 2). The body is clear in the Huntington's public transcription except two code words (Whimper = transport, Whinny = troops), both predictable from the clear words. | OR I/35 pt 2 pp.36-37 (cached `warofrebellion352unit`) |
+
+Grant Papers (be-api inside `papersofulyssess0013gran` "Van Vliet", `papersofulyssess0010gran` "North Point": 0 hits each, no positive
+control run -> **unchecked**, not clear; `...0013gran` "fifteen days" and `...0012gran` "Chambliss" answered HTTP 502, host not retried).
+Google Books: not called (brief: 429 since ~20:50). Basler, Butler's Correspondence: no entry to or from Lincoln or Butler. Press of the
+day, JSTOR, NARA RG 92: not searched (the classes above are already below N3; nothing further could raise them).
+
+### 3. Grade and reading corrections (MS18-R1's table and reading.md; not edited here -- a key/grading edit is a fix job)
+- **E206 "Orphan" = Maj. Gen. Franz Sigel**: C (printed addressee, OR I/37 pt 1 p.557) and H by the period instruction E168; MS18-R1's M
+  is superseded. E206: **H 12, C 1** of 13 code groups. key.md lacks Orphan/Endless (FV-FM2's list of key rows E168 supplies).
+- **E202 "Hero"**: C = Brig. Gen. R. W. Johnson (print), not "Johnston" (key.md p.15 l.17, the period book's value, a different man). The
+  clerk used the near-homophone; the reading's [Johnston] is wrong for this telegram. E202: **H 18, C 1** of 19.
+- **E200 "Binder"**: the spelling variant of **Bender = Qr Master Genl U.S.** (key.md p.10 l.24; E209 signs "walrus bender", decoded so;
+  the order is Meigs's office's, OR I/35 pt 2 p.36): I (repaired spelling), not "not in key.md". "Frances" = Francis (12, matches the
+  header "12 M"): I. E200: **H 10, I 2** of 12.
+- **E207 "weaslers", E209 "weasler"** = Weasel + -er = **steamer(s)** (key.md p.23 l.23; the decoder misses the spelling, as in E163 after
+  FIX-FM1 and E66's "Banditte"): I, and the printed antecedent says "sea-going vessels". E207: **H 18, I 1** of 19; E209: **H 13, I 1, M 1**
+  ("new port", the addressee, unread) of 15.
+- MS18-R1's "not located" for E206 is a search miss (OCR variants), corrected here; its other four "not located" stand for the telegrams
+  themselves, but not for their substance.
+- `python3 decode.py --check`: "reading.md is current", exit 0 (fresh re-derivation by this session, 21:21 UTC).
+
+### 4. Classification (key `period`)
+`depth_pct` = H+C / code-word groups (I counted against).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E206** Kelton (AAG) to Sigel, Martinsburg, 30 May 1864 2 PM | **N1** | yes: OR I/37 pt 1 p.557, word for word | **D4** | 100 (12 H + 1 C of 13) | non-statistical external check (print, word for word, every code group); fresh `--check` exit 0 |
+| **E202** Halleck (for the Cavalry Bureau) to Thomas, 24 Oct 1864 4 PM: Chambliss inspector of cavalry M.D.M., Johnson to be relieved | **N2** | substance yes: OR I/39 pt 3 pp.301, 462, 511 (War Dept. instruction of 23 Oct acted on by Field Orders No. 107, 27 Oct); no prior mapping of this ciphertext | **D3** | 100 (18 H + 1 C of 19) | external: Chambliss, Johnson, cavalry, division, Mississippi, Major confirmed by the printed order |
+| **E207** QMG (Meigs's word) to Van Vliet, New York, 30 Dec 1864 9 PM | **N2** | substance yes: Ingalls to Wise, 30 Dec 1864, OR I/42 pt 3 p.1101 (and its clear copy, Huntington 7670); replies OR I/46 pt 2 and Huntington 7672 | **D3** | 94.7 (18 H of 19; weaslers I) | external: Monroe (Appian), 2 (planked), 15 (gallant), Report, troops confirmed by the printed antecedent |
+| **E209** QMG to the quartermaster at Baltimore, 30 Dec 1864 9 PM | **N2** | substance yes: as E207 | **D3** | 86.7 (13 H of 15; weasler I, "new port" M) | external as E207; Baltimore (banditti) and 15 (ghost) |
+| **E200** QMG (Bender) to Capt. C. W. Thomas, AQM Baltimore, 6 Apr 1864 12 M: Nellie Pentz, Eastern State, North Point to Annapolis for colored troops for Hilton Head | **N2** (borders N1: only two body code words, both predictable from the clear words in the public transcription) | substance yes: OR I/35 pt 2 pp.36-37 (Meigs's 5 Apr orders), Supplement to the OR and Hepburn 2023 (North Point and Nelly Pentz carried the troops) | **D2** (held, as E100) | 83.3 (10 H of 12; Frances, Binder I) | code clause: Whimper = Transport (E100, E200; printed wording "to transport colored troops"), Whinny = Troops (E200, E207) |
+
+- **E206: N1.** Safe sentence: "Read at grade H with War Department Cipher No. 1; the plaintext is printed word for word in the Official
+  Records (ser. I vol. 37 pt 1 p.557: Kelton to Sigel, Martinsburg, 30 May 1864), so this is an independent re-decipherment of a known text,
+  which also confirms Orphan = Sigel." Unsafe: "not located", "unpublished", anything implying the text was unknown.
+- **E202: N2.** Safe sentence: "Read at grade H with Cipher No. 1: a War Department telegram of 24 Oct 1864 to General Thomas asking, for
+  the Cavalry Bureau, that General Johnson be relieved and remounts be left to Major Chambliss, special inspector of cavalry for the Military
+  Division of the Mississippi; its substance is in the Official Records (ser. I vol. 39 pt 3 pp.301, 462, 511), the telegram itself not
+  located there." Depth sentence (D3): "On 24 Oct 1864 Washington tells Thomas that the Cavalry Bureau wants Brig. Gen. Johnson relieved and
+  the remount work left to Maj. Chambliss, because two officers on the same duty give conflicting orders and requisitions."
+- **E207, E209: N2.** Safe sentence (each): "Read at grade H with Cipher No. 1: one of the Quartermaster General's 9 PM orders of 30 Dec 1864
+  relaying Grant's call for ocean steamers at Fortress Monroe by Monday 2 January with coal and water for fifteen days (the call itself is
+  printed in the Official Records, ser. I vol. 42 pt 3 p.1101); the telegram itself not located there." Depth sentences (D3): E207 "On the
+  night of 30 Dec 1864 the Quartermaster General's office orders Van Vliet at New York to send ocean steamers for 3,000 troops to Fort Monroe
+  by Monday 2 January, coaled and watered for fifteen days, to report in cipher and to keep it secret"; E209 "The same night it asks Baltimore
+  to send any ocean steamer there, with fifteen days' water and coal, to Fort Monroe for Monday 2 January, and to report the names and
+  capacity if there is more than one."
+- **E200: N2.** Safe sentence: "Read at grade H with Cipher No. 1, the body being mostly clear in the Huntington's public transcription: the
+  Quartermaster General's noon order of 6 Apr 1864 to Baltimore to send the Nellie Pentz, the Eastern State and the North Point to Annapolis
+  to carry colored troops to Hilton Head; the operation is printed in Meigs's orders of the previous day (Official Records ser. I vol. 35 pt 2
+  pp.36-37), the telegram itself not located there." Depth sentence (D2): "At noon on 6 Apr 1864 the Quartermaster General's office tells
+  Capt. Thomas at Baltimore to send three steamers -- the Nellie Pentz, the Eastern State and the North Point -- to Annapolis, coaled and
+  watered for the voyage out and back, to carry colored troops to Hilton Head, and to report progress."
+- Unsafe for all five: "first", "unpublished", "previously unknown", "not in print".
+
+### 5. Postmortem and requests
+- **Failure:** MS18-R1 called E206 "not located" when OR I/37 pt 1 p.557 prints it word for word; its exact-phrase pass missed OCR variants
+  ("telegraj)h", "Monacacy", "par- kersburg"). A whitespace-normalized grep for two rare clear words (here "by arm and regiment", "with their
+  stations") in the date's own volume finds it; readers should run that before writing "not located". For E200/E202/E207/E209 the reader
+  searched for the telegram's wording, not its substance: G3's two-rare-entities test inside +-3 days (Chambliss+Johnson; Monroe+2 January+
+  fifteen days) is what lowers them.
+- **Lead for another audit (not in scope):** E66 (3 Jan 1865, kept N3 weak by LS-V7 on Van Vliet's printed reply) is the sequel of E207 and
+  carries out the same printed Ingalls order (OR I/42 pt 3 p.1101) -- a substance diff of E66 against it is owed.
+- **Fix job (key rows / gradings, ~0.4):** Orphan/Endless = Sigel (E168, E108, E206); Hero = Johnson in E202 only (exceptions row, not a key
+  change); Binder -> Bender; weasler(s) -> Weasel+er.
+- Requests: hdl.huntington.org 9 (dmQuery, under the token); archive.org 4 (`_djvu.txt` to scratch); be-api 4 (2 answered 0, 2 HTTP 502);
+  Google Books 0. Subagents 0. Rows written: none in status.json, SECOND-OPINIONS-QUEUE.tsv or WORK-QUEUE.tsv (no N3).
