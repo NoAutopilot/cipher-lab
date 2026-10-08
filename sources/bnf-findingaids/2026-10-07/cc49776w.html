@@ -1,0 +1,512 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049776">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049776">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3315
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049776_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776">Français 3315 • Anc. 8818 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e119">1 « Remonstrances soudainement dressées par monseigneur le duc de Nivernois,... L[OUIS DE] GONZAGUE,... pair de France, estant aux bains d'Acqui au Montferrat, et par luy diligemmant envoyées, en septembre 1574, au roy Henry troyme, qui pour lors estoit en la ville de Lyon, concernans l'allienation des villes de Pinerol, Savillan et La Perrouse ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e128">Fol. 12 • 2 « Chiffre de monseigneur [le duc de Nevers], envoyé à madame [la duchesse]... 1574, 26 mars. De Cracovie ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e141">3 Double du chiffre précédent.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e147">Fol. 14 • 4 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon cousin monsieur le duc de Nivernois,... Escript au chasteau du boys de Vincennes, le premier jour de jung 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e155">Fol. 15 • 5 Lettre, avec chiffre et déchiffrement, de la duchesse DE NEVERS à son mari. « De Lion, se 16 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e168">Fol. 17 • 6 Lettre « de monsieur le chancellier... RENATO BIRAGO,... all' illmo sigr duca di Nevers,... Da Pariggi, alli XXIIII di settembre M.DLXXVI ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e187">Fol. 19 • 7 Lettre de « HENRY [III]... à mon cousin le duc de Nevers,... Escript à Lyon, le XXVIIIe jour de septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e198">Fol. 20 • 8 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Lion, ce XXVIIIme de sebtembre 157IIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e209">Fol. 21 • 9 Lettre, avec chiffre et déchiffrement, de « RENATO BIRAGO,... à monseigneur le duc de Nivernoys,... Da Lyone, alli XXVIII di settembre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e217">Fol. 23 • 10 Vidimus de lettres missives et de lettres patentes de CHARLES IX, des mois d'août et d'octobre 1562, relatives à la restitution au duc de Savoie des quatre villes de Turin, Quiers, Chivas et Villa-Nova d'Asti. « Donné à Pinerol, ce premier d'octobre, l'an mil cinq cens soixante quatorze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e246">Fol. 33 • 11 Lettre de « HENRY [III]... à mon cousin le duc de Nivernois,... Escript à Lyon, le Xe jour d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e262">Fol. 34 • 12 Copie des « Articles accordez... avec Mr de Savoie,... E[mmanuel] Philibert,... par messrs le grand prieur de France, Frere Henry d'Angoulesme,... Carolo Birago et de Saulve,... A Thurin... ce jourd'huy quatorziesme jour de decembre, l'an mil cinq cens soixante quatorze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e281">Fol. 40 • 13 Copie d'une « instruction donnée par le roy... HENRY [III]... à messieurs le grand prieur et de Saulve, allant vers monsieur de Savoye, pour la restitution de Pinerol, Savillan et La Perouze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e309">Fol. 43 • 14 « Coppie d'une lectre escripte par monseigneur [le duc DE NEVERS] à monseigneur le chancellier [de Birague]... De Saluces, ce 8 octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e322">Fol. 44 • 15 « Pouvoir pour messieurs les deputez... le duc de Nyvernois,... lieutenant general delà lez montz... Carles de Birague,... et de Sauve,... Donné à Lyon, le 25 jour de septembre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e336">Fol. 46 • 16 « Descharge du Sr Carles de Birague,... lieutenant general delà lez monts, en l'absence » du « duc de Nyvernois,... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e358">17 « Descharge du capitaine La Guarigue du gouvernement qu'il avoit de Pinerol... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e370">Fol. 47 • 18 « Descharge au Sr André de Birague, gouverneur de Savillan... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil cinq cens soixante et quatorze... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e384">Fol. 48 • 19 « Descharge au Sr Francisque de Birague, capitaine du chasteau de La Perouse... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e409">20 « Descharge des habitans de Pinerol... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e421">Fol. 49 • 21 « Descharge des habitans de Savillan et Genolles... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante et quatorze... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e440">22 « Descharge des habitans de La Perouse... Donné à Lion, le VIIe jour d'octobre, l'an de grace MV.C.LXXIIII... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e452">Fol. 50 • 23 « Descharge pour monsieur de Nevers,... Donné à Lion, le VIIe jour d'octobre, l'an de grace M.V.C.LXXIIII... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e471">Fol. 51 • 24 Autre « Descharge de monseigneur de Nevers,... A Lion... octobre, l'an de grace M.V.C.LXXIIII... Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e482">25 « Brevet portant descharge à monseigneur le chancellier... octobre M.V.C. soixante et quatorze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e491">Fol. 53 • 26 Lettre de « HENRY [III]... au Sr Carles de Birague,... Escript à Lyon, ce XIe jour d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e505">Fol. 54 • 27 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Lion, cet XIme d'octobre 157IIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e516">Fol. 55 • 28 Lettre de NICOLAS « DE NEUFVILLE [Sr DE VILLEROY]... à monseigneur le duc de Nevers,... De Lyon, le XIe de octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e535">Fol. 56 • 29 Lettre de « D'AYOLLE,... à monseigneur le duc de Nivernois,... De Lyon, ce XIe d'octobre 1579 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e556">Fol. 58 • 30 « Advis donné par monseigneur [le duc DE NEVERS] au roy [Henri III] sur l'allienation de Pinerol et Savillan, pour luy faire congnoistre les droictz qu'il pretend contre monseigneur de Savoye [Emmanuel-Philibert]... De Pinerol, ce 13 octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e564">Fol. 62 • 31 Lettre de « BIRON,... à monsieur [Charles] de Birague,... De Lyon, ce XIIIIe jour d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e580">Fol. 64 • 32 « Coppies de deux lectres, l'une du roy [HENRI III] et l'autre de monseigneur DE BIRON, escriptes au Sr Carles [de Birague], pour faire transporter l'artillerye de Pinerol et Savillan à Carmaignolles, dattées du 12 et 14 octobre 1574».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e601">Fol. 66 • 33 « Coppies des premieres lectres patentes depeschées à monseigneur [le duc de Nevers], pour la descharge qu'il demandoit de tout son gouvernement... Donné à Lyon, le unziesme jour d'octobre, l'an de grace mil cinq cens soixante quatorze... Ainsi signées : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e614">Fol. 69 • 34 Lettre de « HENRY [III]... à mon cousin le duc de Nyvernois,... Escript à Lyon, le IXe jour d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e625">Fol. 70 • 35 Lettre du duc DE NEVERS à Henri III. « De Pinerol, ce 18 octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e633">Fol. 72 • 36 Lettre du duc DE NEVERS à Catherine de Médicis. « De Pinerol, ce 18 octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e641">Fol. 79 • 37 « Rellation faicte par monseigneur... N. DE CONAN,... lequel estoit envoyé de la part de monseigneur [le duc de Nevers] pour faire remonstrance au roy [Henri III] sur l'allienation de Pinerol et Savillan... A Pinerol, ce 18 de octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e654">Fol. 83 • 38 Lettre de « N. D[E] CONAN,... à monseigneur [le duc de Nevers]... De Lyon, ce 22e d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e675">Fol. 85 • 39 Lettre de « C. TANCHIN,... à monsieur le duc de Nevers,... Fait à Kouskavolia, 20 d'octobre 1574».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e698">Fol. 87 • 40 Lettre de « HENRY [III]... à mon cousin le duc de Nivernois,... Escript à Lyon, le XXIe jour d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e719">Fol. 89 • 41 Lettre de « N. D[E] CONAN,... à monseigneur [le duc de Nevers]... De Lyon, ce 23 de octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e737">Fol. 92 • 42 Don fait par « LODOVICO GONZAGA, duca DI NEVERS,... al sargente Viviano di una piccola casa... Datto in Pinerolo, alli XII 8bre 1574 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e763">43 « Don » fait par « LODOVICO DE GONZAGUE,... à Mr...Françoys Roux, conseiller du roy et maistre de ses requestes deça les montz... de certains livres et tapisseries... Donné audict Pinerol, ce XIIIIe jour d'octobre, l'an MV.C.LXXIIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e778">Fol. 93 • 44 « Don » fait par « LODOVICO DE GONZAGUE,... au Sr de La Ralde de II.C.L. livres... Faict à Pinerol, ce XXe jour d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e800">Fol. 94 • 45 Don fait par « LODOVICO GONZAGA,... à Mr Francesco Gallotto, ingegnere, di certa calcina, etc... Fatto nel conseglo tenuto a Pinerolo, alli XXIII d'ottobre M.D.LXXIIII ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e814">Fol. 95 • 46 « Remissione di un horto a Morisia Brasa, col dono d'un piccolo edifficio construtto dentro... Fatto nel conseglio tenuto a Pinerolo, li XXIII d'ottobre 1574 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e830">Fol. 97 • 47 Lettre de « R[ENATO] DE BIRAGO,... à monseigneur le duc de Nivernoys,... De Lyon, ce 22e d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e846">Fol. 99 • 48 Lettre de « HENRY [III]... à mon cousin le duc de Nevers,... Escript à Lyon, le XXVe jour d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e857">Fol. 100 • 49 Lettre « del Sr duca di Savoia E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur [de] Nevers,... De Turin, ce XXVIe octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e876">Fol. 102 • 50 Lettre de NICOLAS « DE NEUFVILLE [Sr DE VILLEROY]... à monseigneur le duc de Nevers,... De Lyon, le XXVIe jour d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e905">Fol. 103 • 51 Lettre de « HIER[ONIMO], ar[civescovo] di Turino... al' illmo... Sor duca di Nevers,... Di Turino, alli 26 di ottobre 1574 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e929">Fol. 106 • 52 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Lion, cet XXVIIme de octobre 157IIII.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e950">Fol. 107 • 53 Lettre de POMPONE DE « BELLIEVRE,... à monseigneur le duc de Nyvernois,... C'est de Lyon, le XXVIIe jour de octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e976">Fol. 109 • 54 Lettre de « R[ENATO] DE BIRAGO,... à monseigneur le duc de Nivernoys,... De Lyon, ce 27e d'octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e997">Fol. 111 • 55 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur de Nevers,... De Turin, ce IIIe [de] novembre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1008">Fol. 113 • 56 Lettre de « FIZES [Sr DE SAUVE]... à monseigneur le duc de Nivernois,... De Thurin, le IIIe jour de novembre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1032">Fol. 115 • 57 Lettre de « f[rère] H[ENRI] D'ANGOULESME,... à monsieur le duc de Nevers,... De Turin, le IIIme novembre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1053">Fol. 117 • 58 Lettre de « HIER[ONIMO], ar[civescovo] d[i] Turino... all' illmo... Sr duca di Nevers,... Di Turino... alli 4 di novembre 1574 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1077">Fol. 119 • 59 Copie d'une lettre du duc DE NEVERS à Henri d'Angoulême. « De Pinerol, ce 4 novembre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1085">60 Copie d'une lettre du duc DE NEVERS à « monsieur de Saulve,... De Pinerol, ce IIIIe octobre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1094">Fol. 120 • 61 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur le duc de Nevers,... De Turin, ce VIe de novembre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1105">Fol. 122 • 62 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur de Nevers,... De Turin, ce VIIIe novembre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1116">Fol. 124 • 63 « Remonstrances faictes par monseigneur le duc DE SAVOYE sur la demolition du chasteau de Pinerol, presentées à messrs le grand prieur [Henri d'Angoulême] et Carlo Birago et de Sauve, commissaires en ceste execution, le lundy 8 novembre 1574, à Pinerol ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1127">Fol. 126 • 64 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur [de] Nevers,... De Turin, ce XIe [de] novembre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1138">Fol. 128 • 65 « Extraict du registre du conseil souverain », relatif à l'enregistrement de la décharge du duc de Nevers. « Le XIXme jour d'octobre » 1574.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049776_d0e1149">Fol. 132 • 66 « Pouvoir donné par le roy [HENRI III] à la royne sa mere pour les affaires de France, en l'année LXXIIII ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3315 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49776w&Cote=Français 3315&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90600800">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31604 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49776w&Cote=MF 31604&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3315 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8818</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31604. Cote de la matrice (pour commander une reproduction) : R 4414.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90600800" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b90600800.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b90600800.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Birague, René de, chancelier de France. • Lettres.</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Chiffres diplomatiques.</p>
+<p>Conan, N. de. • Actes et lettres.</p>
+<p>Henri III, roi de France. • Actes et lettres.</p>
+<p>Henri III, roi de France. • Notes et pièces diverses.</p>
+<p>La Rovère, Jérôme de, archevêque de Turin. • Lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Pérouse, LA, Piémont. • Restitution à la Savoie (1574).</p>
+<p>Savigliano, Piémont. • Restitution au duc de Savoie (1574).</p>
+<p>Savoie, Emmanuel-Philibert, duc de. • Actes et lettres.</p>
+<p>Savoie, Emmanuel-Philibert, duc de. • Restitution de Pignerol.</p>
+<p>Tapisseries. • Pièces diverses.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e119');">1 « Remonstrances soudainement dressées par monseigneur le duc de Nivernois,... L[OUIS DE] GONZAGUE,... pair de France, estant aux bains d'Acqui au Montferrat, et par luy diligemmant envoyées, en septembre 1574, au roy Henry troyme, qui pour lors estoit en la ville de Lyon, concernans l'allienation des villes de Pinerol, Savillan et La Perrouse ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e128');">2 « Chiffre de monseigneur [le duc de Nevers], envoyé à madame [la duchesse]... 1574, 26 mars. De Cracovie ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e141');">3 Double du chiffre précédent.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e147');">4 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon cousin monsieur le duc de Nivernois,... Escript au chasteau du boys de Vincennes, le premier jour de jung 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e155');">5 Lettre, avec chiffre et déchiffrement, de la duchesse DE NEVERS à son mari. « De Lion, se 16 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e168');">6 Lettre « de monsieur le chancellier... RENATO BIRAGO,... all' illmo sigr duca di Nevers,... Da Pariggi, alli XXIIII di settembre M.DLXXVI ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e187');">7 Lettre de « HENRY [III]... à mon cousin le duc de Nevers,... Escript à Lyon, le XXVIIIe jour de septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e198');">8 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Lion, ce XXVIIIme de sebtembre 157IIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e209');">9 Lettre, avec chiffre et déchiffrement, de « RENATO BIRAGO,... à monseigneur le duc de Nivernoys,... Da Lyone, alli XXVIII di settembre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e217');">10 Vidimus de lettres missives et de lettres patentes de CHARLES IX, des mois d'août et d'octobre 1562, relatives à la restitution au duc de Savoie des quatre villes de Turin, Quiers, Chivas et Villa-Nova d'Asti. « Donné à Pinerol, ce premier d'octobre, l'an mil cinq cens soixante quatorze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e246');">11 Lettre de « HENRY [III]... à mon cousin le duc de Nivernois,... Escript à Lyon, le Xe jour d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e262');">12 Copie des « Articles accordez... avec Mr de Savoie,... E[mmanuel] Philibert,... par messrs le grand prieur de France, Frere Henry d'Angoulesme,... Carolo Birago et de Saulve,... A Thurin... ce jourd'huy quatorziesme jour de decembre, l'an mil cinq cens soixante quatorze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e281');">13 Copie d'une « instruction donnée par le roy... HENRY [III]... à messieurs le grand prieur et de Saulve, allant vers monsieur de Savoye, pour la restitution de Pinerol, Savillan et La Perouze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e309');">14 « Coppie d'une lectre escripte par monseigneur [le duc DE NEVERS] à monseigneur le chancellier [de Birague]... De Saluces, ce 8 octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e322');">15 « Pouvoir pour messieurs les deputez... le duc de Nyvernois,... lieutenant general delà lez montz... Carles de Birague,... et de Sauve,... Donné à Lyon, le 25 jour de septembre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e336');">16 « Descharge du Sr Carles de Birague,... lieutenant general delà lez monts, en l'absence » du « duc de Nyvernois,... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e358');">17 « Descharge du capitaine La Guarigue du gouvernement qu'il avoit de Pinerol... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e370');">18 « Descharge au Sr André de Birague, gouverneur de Savillan... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil cinq cens soixante et quatorze... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e384');">19 « Descharge au Sr Francisque de Birague, capitaine du chasteau de La Perouse... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e409');">20 « Descharge des habitans de Pinerol... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante quatorze... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e421');">21 « Descharge des habitans de Savillan et Genolles... Donné à Lyon, le VIIe jour d'octobre, l'an de grace mil V.C. soixante et quatorze... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e440');">22 « Descharge des habitans de La Perouse... Donné à Lion, le VIIe jour d'octobre, l'an de grace MV.C.LXXIIII... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e452');">23 « Descharge pour monsieur de Nevers,... Donné à Lion, le VIIe jour d'octobre, l'an de grace M.V.C.LXXIIII... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e471');">24 Autre « Descharge de monseigneur de Nevers,... A Lion... octobre, l'an de grace M.V.C.LXXIIII... Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e482');">25 « Brevet portant descharge à monseigneur le chancellier... octobre M.V.C. soixante et quatorze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e491');">26 Lettre de « HENRY [III]... au Sr Carles de Birague,... Escript à Lyon, ce XIe jour d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e505');">27 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Lion, cet XIme d'octobre 157IIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e516');">28 Lettre de NICOLAS « DE NEUFVILLE [Sr DE VILLEROY]... à monseigneur le duc de Nevers,... De Lyon, le XIe de octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e535');">29 Lettre de « D'AYOLLE,... à monseigneur le duc de Nivernois,... De Lyon, ce XIe d'octobre 1579 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e556');">30 « Advis donné par monseigneur [le duc DE NEVERS] au roy [Henri III] sur l'allienation de Pinerol et Savillan, pour luy faire congnoistre les droictz qu'il pretend contre monseigneur de Savoye [Emmanuel-Philibert]... De Pinerol, ce 13 octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e564');">31 Lettre de « BIRON,... à monsieur [Charles] de Birague,... De Lyon, ce XIIIIe jour d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e580');">32 « Coppies de deux lectres, l'une du roy [HENRI III] et l'autre de monseigneur DE BIRON, escriptes au Sr Carles [de Birague], pour faire transporter l'artillerye de Pinerol et Savillan à Carmaignolles, dattées du 12 et 14 octobre 1574».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e601');">33 « Coppies des premieres lectres patentes depeschées à monseigneur [le duc de Nevers], pour la descharge qu'il demandoit de tout son gouvernement... Donné à Lyon, le unziesme jour d'octobre, l'an de grace mil cinq cens soixante quatorze... Ainsi signées : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e614');">34 Lettre de « HENRY [III]... à mon cousin le duc de Nyvernois,... Escript à Lyon, le IXe jour d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e625');">35 Lettre du duc DE NEVERS à Henri III. « De Pinerol, ce 18 octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e633');">36 Lettre du duc DE NEVERS à Catherine de Médicis. « De Pinerol, ce 18 octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e641');">37 « Rellation faicte par monseigneur... N. DE CONAN,... lequel estoit envoyé de la part de monseigneur [le duc de Nevers] pour faire remonstrance au roy [Henri III] sur l'allienation de Pinerol et Savillan... A Pinerol, ce 18 de octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e654');">38 Lettre de « N. D[E] CONAN,... à monseigneur [le duc de Nevers]... De Lyon, ce 22e d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e675');">39 Lettre de « C. TANCHIN,... à monsieur le duc de Nevers,... Fait à Kouskavolia, 20 d'octobre 1574».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e698');">40 Lettre de « HENRY [III]... à mon cousin le duc de Nivernois,... Escript à Lyon, le XXIe jour d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e719');">41 Lettre de « N. D[E] CONAN,... à monseigneur [le duc de Nevers]... De Lyon, ce 23 de octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e737');">42 Don fait par « LODOVICO GONZAGA, duca DI NEVERS,... al sargente Viviano di una piccola casa... Datto in Pinerolo, alli XII 8bre 1574 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e763');">43 « Don » fait par « LODOVICO DE GONZAGUE,... à Mr...Françoys Roux, conseiller du roy et maistre de ses requestes deça les montz... de certains livres et tapisseries... Donné audict Pinerol, ce XIIIIe jour d'octobre, l'an MV.C.LXXIIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e778');">44 « Don » fait par « LODOVICO DE GONZAGUE,... au Sr de La Ralde de II.C.L. livres... Faict à Pinerol, ce XXe jour d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e800');">45 Don fait par « LODOVICO GONZAGA,... à Mr Francesco Gallotto, ingegnere, di certa calcina, etc... Fatto nel conseglo tenuto a Pinerolo, alli XXIII d'ottobre M.D.LXXIIII ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e814');">46 « Remissione di un horto a Morisia Brasa, col dono d'un piccolo edifficio construtto dentro... Fatto nel conseglio tenuto a Pinerolo, li XXIII d'ottobre 1574 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e830');">47 Lettre de « R[ENATO] DE BIRAGO,... à monseigneur le duc de Nivernoys,... De Lyon, ce 22e d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e846');">48 Lettre de « HENRY [III]... à mon cousin le duc de Nevers,... Escript à Lyon, le XXVe jour d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e857');">49 Lettre « del Sr duca di Savoia E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur [de] Nevers,... De Turin, ce XXVIe octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e876');">50 Lettre de NICOLAS « DE NEUFVILLE [Sr DE VILLEROY]... à monseigneur le duc de Nevers,... De Lyon, le XXVIe jour d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e905');">51 Lettre de « HIER[ONIMO], ar[civescovo] di Turino... al' illmo... Sor duca di Nevers,... Di Turino, alli 26 di ottobre 1574 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e929');">52 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Lion, cet XXVIIme de octobre 157IIII.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e950');">53 Lettre de POMPONE DE « BELLIEVRE,... à monseigneur le duc de Nyvernois,... C'est de Lyon, le XXVIIe jour de octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e976');">54 Lettre de « R[ENATO] DE BIRAGO,... à monseigneur le duc de Nivernoys,... De Lyon, ce 27e d'octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e997');">55 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur de Nevers,... De Turin, ce IIIe [de] novembre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1008');">56 Lettre de « FIZES [Sr DE SAUVE]... à monseigneur le duc de Nivernois,... De Thurin, le IIIe jour de novembre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1032');">57 Lettre de « f[rère] H[ENRI] D'ANGOULESME,... à monsieur le duc de Nevers,... De Turin, le IIIme novembre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1053');">58 Lettre de « HIER[ONIMO], ar[civescovo] d[i] Turino... all' illmo... Sr duca di Nevers,... Di Turino... alli 4 di novembre 1574 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1077');">59 Copie d'une lettre du duc DE NEVERS à Henri d'Angoulême. « De Pinerol, ce 4 novembre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1085');">60 Copie d'une lettre du duc DE NEVERS à « monsieur de Saulve,... De Pinerol, ce IIIIe octobre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1094');">61 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur le duc de Nevers,... De Turin, ce VIe de novembre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1105');">62 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur de Nevers,... De Turin, ce VIIIe novembre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1116');">63 « Remonstrances faictes par monseigneur le duc DE SAVOYE sur la demolition du chasteau de Pinerol, presentées à messrs le grand prieur [Henri d'Angoulême] et Carlo Birago et de Sauve, commissaires en ceste execution, le lundy 8 novembre 1574, à Pinerol ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1127');">64 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, monsieur [de] Nevers,... De Turin, ce XIe [de] novembre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1138');">65 « Extraict du registre du conseil souverain », relatif à l'enregistrement de la décharge du duc de Nevers. « Le XIXme jour d'octobre » 1574.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049776_d0e1149');">66 « Pouvoir donné par le roy [HENRI III] à la royne sa mere pour les affaires de France, en l'année LXXIIII ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>
