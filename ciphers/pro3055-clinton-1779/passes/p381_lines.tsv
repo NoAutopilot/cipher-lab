@@ -1,0 +1,14 @@
+# B.147 p.381 (BL Add MS 21807 fo.306), H-1649 Image 1029 (iiif c0696zw9ws18, full/max 5432x4056), period decipherment of 3853 (Robertson to Haldimand, 31 Oct 1781)
+# D1A-CLIN, 8 Oct 2026. Crops (full/max coords, inverted greyscale, scratchpad only): A 1560,560,3460,880; B 1560,1440,3460,1740; C 1560,1880,3460,2200
+# columns: crop	ms_line	blind_read (one Sonnet pass, no context)	reconciled (worker, native crop)	grade
+crop	ms_line	blind_read	reconciled	grade
+A	1	fo. 306   Sir Henry Clinton with about   38	fo.306 Sir Henry Clinton with about [page no. 381, cut at crop edge]	H
+A	2	See the  six thousand Men went on board	[margin: See the] six thousand Men went on board	H
+A	3	initialled  a fleet of 25 Sail of the line to try	[margin: initialled] a fleat of 25 Sail of the line to try	H
+B	9	answer your letters about Vermont.	answer your letters about Vermont.	H
+B	10	I will willingly give up a very	I will willingly give up a very	H
+B	11	good estate in that Country and	good estate in that Country and	H
+C	14	Crown. but I dont this Recent [?]	Crown. but I dont [or dout] this Recent	M
+C	15	event will defeat all your Trouble	event will defeat all your Trouble	H
+C	16	and Pains — General Arnold says	and pains — General Arnold says	H
+C	17	here Flagnet [?] is an Inveterate [?]	pere Flaquet is an Inveterate	M
