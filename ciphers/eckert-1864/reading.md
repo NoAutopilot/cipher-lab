@@ -425,5 +425,17 @@ Code-word tokens: H 22.
 
 Code-word tokens: H 30.
 
-Totals over the 49 entries: H 790, C 13, I 0, M 0.
+**E55 | Page 165 | 9057 | 26 Aug 1864 11 AM, to Lt. Col. C. H. Howard at Louisville (Capt. Bruch)**
+
+[Washington] ang [26] {time: 11 AM} for Lt. Col [Colonel] C H Howard Lol [.] a dispatch just recd from Gen Canby [Maj Gen S. A. Hurlbut] states that Gen A J Smith's [Command = Er (-ed, -ing)] has already been [Detach (-ed, -ing)]ed to cooperrate with [Maj Gen W. T. Sherman] [General-in-Chief]
+
+Code-word tokens: H 11.
+
+**E56 | Page 237 | 9129 | 28 Nov 1864 11 AM, to Lamb (Van Duzer & McCaine)**
+
+[Washington] {time: 11 AM} [28] For [P. H. Sheriden] [Maj Gen Geo. H. Thomas] [.] [Maj Genl U.S. Grant] directs me to say that it is not eggs peck dead of you to give to the [Major] [General]'s or dear ed to nick to you [Command = Er (-ed, -ing)]'s of more than [Division]'s [General-in-Chief]
+
+Code-word tokens: H 13.
+
+Totals over the 51 entries: H 814, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->

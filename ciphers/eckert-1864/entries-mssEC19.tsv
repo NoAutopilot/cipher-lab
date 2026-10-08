@@ -337,7 +337,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9055	163	1	John Horner  Washn Aug 23d 64	John Horner	TT Eckert	45	5	8	2	1	none	4		1
 9056	164	0	1030 am to McCaine  Wash August 24th 1864	1030 am to McCaine		124	42	46	9	1	none	3		1
 9056	164	1	Washn August 24th 1864			60	12	16	3	1	none	4		1
-9057	165	1	Capt Bruch  Washn D. C. Aug 26. 1864.	Capt Bruch		45	10	11	1	1	none	0		1
+9057	165	1	Capt Bruch  Washn D. C. Aug 26. 1864.	Capt Bruch		45	10	11	1	1	none	0	LS-R5 E55	1
 9057	165	2	S H. Beckwith City Point  Washn Aug 29th 1864	S H. Beckwith City Point		46	15	23	1	2	none	3		2
 9057	165	3	R. R. McCaine  #3  Washn Aug 29th 1864	R. R. McCaine #3		87	26	27	6	1	none	3		1
 9058	166	1	McCaine #4  Washn Aug 29th 1864	McCaine #4		43	11	14	2	1	none	4		1
@@ -497,7 +497,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9128	236	1	RR McCaine #2  Washn Nov 26th 1864	RR McCaine #2		59	13	20	4	1	warofrebellionco0043unit_i5n6@leaf0(cov15)	15		3
 9128	236	2	Clowry  Washn Novr 26th 1864	Clowry		21	12	9	4	1	none	3		1
 9129	237	1	J. C. Van Duzer  Wash'n Nov 28th 1864 10.30 A. M.	J. C. Van Duzer		27	14	14	4	1	none	0		1
-9129	237	2	Van Duzer & McCaine  Wash'n Nov 28th 1864 11. am	Van Duzer & McCaine	1045 am	42	10	18	2	1	none	0		1
+9129	237	2	Van Duzer & McCaine  Wash'n Nov 28th 1864 11. am	Van Duzer & McCaine	1045 am	42	10	18	2	1	none	0	LS-R5 E56	1
 9129	237	3	Sampson Balto  Washn Nov 29th 1864	Sampson Balto	10 am	48	9	13	5	1	none	3	LS-R3 E45	1
 9129	237	4	SH Beckwith City Pt  Washn Nov 29th 64	SH Beckwith City Pt		43	9	14	4	2	none	4		2
 9130	238	0	Beckwith & McCaine  Wash'n Nov 29th 1864	Beckwith & McCaine		90	18	36	3	2	warofrebellion432unit@leaf0(cov14)	14		3
