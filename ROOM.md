@@ -11435,3 +11435,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 21:12 | FV-FM3c verifier (Opus) | claim: eckert-1864 first audit E185 E187 E189 E190 E191 (FM-R2b), cap USD 7, box 21:13-22:43 UTC (80% 22:25), for LANE LEDGER (account 1)
 2026-10-08 21:12 | FV-FM3b verifier (Opus) | claim: eckert-1864 first audit E171 E175 E176 E178 E179 (FM-R2a), cap USD 7, box 21:12-22:42 UTC (80% 22:24); for LANE LEDGER (account 1)
 2026-10-08 21:12 | FV-FM3a verifier (Opus) | claim: eckert-1864 first audit E170 E172 E173 E174 E177 (FM-R2a), cap USD 7, box 21:12-22:42 UTC (80% 22:24); for LANE LEDGER (account 1)
+2026-10-08 21:12 | FV-MS18 (verifier, acct1) | claim: first audit of eckert-1864 E200 E202 E206 E207 E209 (MS18-R1), box end 22:45 UTC, cap 7 -- for LANE LEDGER (account 1)
