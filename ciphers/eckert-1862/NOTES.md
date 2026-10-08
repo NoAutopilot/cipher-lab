@@ -2378,3 +2378,26 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [x] image-check: as LS3-R62 (six residue entries' M tokens, 0 slips)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 2 internal gaps; cheapest next: or_align.py on vols. 9, 7, 8 for the remaining printed residue entries, ~$0.5
+
+## E62-9660 (8 Oct 2026, account 1, for LANE LEDGER)
+Worker E62-9660, claimed 20:47 UTC by date -u, cap USD 3. Status of this target unchanged (partial). Rule 10: found / not found only, no novelty class.
+Prior-work lines (by hand; tools/prior_work.py not run): own work -- K8472 above: 9660 compared to 8472 on two dates only, "not attempted"; no ROOM claim
+on 9660 before this one: CLEAR. Holder transcription: the volunteer text is the input (volunteer text only, no image looked at; every verdict is
+conditional on it, rule 2). Leaf/neighbours, editions: no entry was read or decoded, so not run -- "unchecked", not clear.
+
+### Pre-registration
+Exactly K8472's: instrument k8472_score.py, same four books, same pass rule (strictly greatest share AND clauses beyond both shuffled copies; reads when
+>= 7 of 10), and K8472's matched control (no1 6/10, no2 8/10, no9 0/10, mssEC15 0/10) is the control for this run, unchanged (same instrument, same
+code, no retuning). Entries picked before scoring by k9660_select.py (K8472's selector, object 9660 only): 25 pointers evenly spaced over the 357
+(9303..9659, plus the two already cached from K8472, 9343 and 9503), >= 8 code-shaped words, best per stratum. Selection committed before scoring.
+
+### Result (obj9660/entries.txt, scores.tsv)
+| ledger | no1 | no2 | no9 | mssEC15 | entries passing (need 7) |
+|---|---|---|---|---|---|
+| 9660 (mssEC 17, 30 Aug 1862 - 1863) | 0.274 | 0.307 | 0.154 | 0.017 | no1 1, no2 2, no9 0, mssEC15 0 |
+**Verdict (pre-registered rule): no book in hand reads object 9660.** Same shape as 8472/6254: no1 and no2 tie within 0.03 on share (shared template
+words). For no2 (control 8/10) the negative is control-backed (2/10 here); for no1 (control 6/10, below gate), no9 and mssEC15 (control 0/10) it is
+"untested by this instrument", not a negative (rule 3). Conditional on 10 vocabulary-rich selected entries and the volunteer transcription. Entry 01
+(12 Aug 1862, "For Axis The Aragon informs me ...") and entry 10 (code 33, no1 8 / no2 6 clauses, the strongest) are the nearest to readable under
+no1/no2 but neither clears the pass rule; no 1862-63 entry of 9660 is listed as readable, so none is handed on. Requests, hdl.huntington.org: 25
+dmGetItemInfo (1.7 s apart, one token block 20:47-20:49), plus 1 stray API probe at 20:49 made after my release (logged in ROOM).
