@@ -106,3 +106,58 @@ Hongrie" and one or two other exact phrases from slip_f206r.txt) via archive.org
 `&key=$GOOGLE_BOOKS_KEY`), and full-text search Souchon 1915 (Gallica bpt6k935116v; Gallica SRU or the volume's own search) for the
 1743-44 passage. Log every query with hit counts, by host; "no hits" is a search result, never a novelty verdict. Append findings as a dated
 section in each NOTES.md and tick the matching lines; gaps_check where the folder is partial. Scripts read, the model judges the hits.
+
+## Wave 3 (spawned 06:1x UTC 8 Oct)
+Wave 1-2 results: all six done by 06:01 (12.33 by get_session); see LEDGER. Intake gate 06:1x UTC (each exit 0):
+`na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`fr5160-letellier-1653: open (line 3) -- edition/page or full-text-search citation found within 6 lines`;
+`fr16045-pisany-rome-1585: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`clairambault296-paget-1713: open (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`maurice-rupert-1645: open (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`fr5761-election-1519: open (line 1) -- edition/page or full-text-search citation found within 6 lines`;
+`fr3975-vieuville-1587: blocked (line 1) -- already terminal, nothing to gate`;
+
+### D1A-SURV -- na-suriname-map-1781 verifier of D1A-SUR's pooled [ij] PASS (verifier, Opus; cap 3, box 60 min)
+D1A-SUR (session_012DCr3WeBmkxicbNPb5pHVJ, 05:54 ROOM flag) reports pooled [ij] (0746+0758) PASS 10/10 m|n vs C1 p99 0.800, PREREG
+3fe2b69c0, results d52ee4f19; no key file changed, "verifier decides any entry". You are a separate session: check the PREREG predates the
+run (git order), re-run its driver byte-identically, re-eye at least 4 of the 10 forms on the native crops, check the control can differ
+from the target on the statistic (rule 3 orthogonality paragraph) and that the pool does not reuse tokens counted in NZ-SURIJ's failed
+test as if new. Verdict: enter [ij] in key_period_codes_nieuw.tsv at C (with the pooled counts) only if all of that holds; otherwise say
+why. Write a dated NOTES.md section; update gaps; no AUDIT.md N-class change unless a reading changes (then say so for the folder's
+verifier). If time remains under 50% of cap and box, do NOT start the step-2 tile (a solver step); name it in the Verdict.
+
+### D1A-F68 -- fr5160-letellier-1653 f.68 clear-pages test of key1659 (solver, Opus; cap 5, box 80 min)
+Verdict (NOTES.md l.2198, loose-ends 8 Oct): commit the f.68 clear transcription (dechiffref68.txt; AUDIT.md:301) with a second blind pass
+(line crops via tools/iiif_lines.py, one subagent call per half page), align it to the f.68 cipher, and test key1659 rows on it. Register
+PREREG-D1A-F68.md first: the statistic is per-aligned-token agreement of key1659's value with the clear letter at that position; the
+control is the same alignment with the clear text order shuffled within lines (order matters for alignment agreement, so this control can
+differ from the target), same length and symbol count; gate = target above control p99. Units: 2 transcription calls + reconciliation +
+scoring ~= 4 units at ~1.2 each. Grades per rule 4; no key change without the gate. Update NOTES/HYPOTHESES/gaps.
+
+### D1A-PISG -- fr16045-pisany-rome-1585 f.275v period gloss as a second witness (solver, Opus; cap 4, box 70 min)
+Gap line (NOTES.md): "f.275v period decipherment (head of page and left margin, second hand, beside both cipher blocks) as a second
+witness -- read the gloss at native resolution, normalise to one convention with the copy (rule 3 PX-BRODEC), score agreement, ~$2".
+Crops first (tools/iiif_lines.py, the folder's manifest for the ark/canvas), one blind subagent read of the gloss crops + your
+reconciliation; normalise both the gloss and the Colbert copy to one convention (expand abbreviations, one case, one punctuation set)
+before scoring; register the agreement gate and a shuffled-alignment control in PREREG-D1A-PISG.md before the score. If the gloss covers
+any T40 tokens, report what it gives them (D1A-PIS retired the alignment instrument for T40; a gloss is a different instrument). No key86
+change without a passed gate. Update NOTES/HYPOTHESES/gaps.
+
+### D1A-PAG -- clairambault296-paget-1713 known-residue list from the 1714 key (solver, Opus; cap 3, box 60 min)
+NOTES.md l.597: "Apply the sister folder's 1714 Paget key (../clairambault1225-paget-1714) to the 1714 letters' own unglossed spans and
+list which codes stay open, so the 1713 letter can be tested against a known residue the day it arrives. S, disk only." Use
+tools/decode_key.py on the sister folder's own files (do not edit the sister folder's key or readings; write outputs in this folder):
+residue.tsv (code, occurrences, letter/leaf, context codes either side), plus a one-paragraph NOTES.md section. No network.
+
+### D1A-EVL -- maurice-rupert-1645 Evelyn printed-pair harvest (solver, Opus; cap 3.5, box 70 min)
+NOTES.md l.644: "a full harvest of every printed pair on the correspondence pages (pp.~90-120) [of Bray's Evelyn Memoirs 1819 vol. II, IA
+memoirsillustrat02eveluoft], which could add more of the family; next: one worker, ~$2.5." Script the harvest from the `_djvu.txt` (fetch
+once), add rows to keys/evelyn_pairs.tsv with page refs, then re-run the folder's key_test with its existing control and report coverage
+before/after (42/93 now). Check page images only for pairs the OCR garbles (a few crops, one subagent call at most).
+
+### D1A-SRCH2 -- two print searches (search worker, Sonnet; cap 2.5, box 50 min)
+Unit 1 (fr5761-election-1519, NOTES.md l.595): full-text search (archive.org advancedsearch to find the volume, then be-api fts; Google
+Books API with `&country=US&key=$GOOGLE_BOOKS_KEY`) of Deutsche Reichstagsakten, Juengere Reihe vol. 1 (1519 election) for
+'chiffre'/'Ziffer'/'ziffern' with Moltzan/Cordier; quote hits with identifier and context. Unit 2 (fr3975-vieuville-1587, NOTES.md l.101):
+run tools/print_check.py with the letter's readable clear phrases ("eschevins et maire de ville", "St Aignen", 30 Sept 1587) against
+IA/Google Books/OpenAlex; status stays blocked. Log queries and hit counts by host; append dated NOTES.md sections.
