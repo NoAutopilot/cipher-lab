@@ -1,0 +1,12 @@
+measure	value
+cipher_groups	546
+scored_tokens	523
+unscored_tokens	23
+agree	419
+S_target	0.8011
+null_mean	0.4736
+null_p95	0.5067
+null_p99	0.5182
+null_max	0.5296
+null_ge_target	0/1000
+gate	PASS

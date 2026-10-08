@@ -2185,17 +2185,18 @@ bpt6k6549213m). No leaf tested. Rows: `keyhunt/2026-10-07-KH2A.tsv`.
 ## Remaining gaps (loose-ends pass, 8 Oct 2026)
 Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
 Not a gap any more: 1653 band canvases 45, 55, 58, 74. 55/58/74 were recovered as plain prose (NOTES.md:1429-1465); canvas 45 fetched 8 Oct 2026 (D1A-CAN): folio 26r, blank leaf, faint bleed-through and a docket line at the foot, no cipher groups. Nothing added to trial_1653.
-- f.68 clear/cipher pair (dechiffref68.txt), never used as a second-letter test of key1659's homophones - blocker: not-attempted; noted in the body at AUDIT.md:301, never carried as a step (loose-ends 8 Oct 2026); next: commit the f.68 clear transcription with a second blind pass, align it, and test key1659 rows on the f.68 cipher beside a shuffled-order alignment control of the same length and symbol count, ~$3
+Not a gap any more: the f.68r clear/f.67 cipher pair. dechiffre_f68.txt (pass A) and dechiffre_f68_B.txt (blind pass B) were committed 24 Sept 2026 and aligned by align_f67.py (C 435 / M 111 of 546); D1A-F68 (8 Oct 2026) ran the key_1659 second-letter test with its shuffled-order control: PASS, S 0.801 vs null p99 0.518 (test_f68_key1659.py).
+- Français 20661-20662 (Brienne 1653 despatch minutes, R11A-F5160 (3)), no Gallica link - blocker: needs-physical-access; on-site read or reproduction quote, person-side via REQUEST.md (FRESH-0914, 7 Oct 2026)
 
 ## Escalation (loose-ends pass, 8 Oct 2026)
 - [x] siblings: canvas 45 fetched 8 Oct 2026 (D1A-CAN, 1 request): f.26r, blank, no cipher; 55/58/74 plain prose (24 Sept); no leaf added to trial_1653
-- [ ] clear-pages: commit the f.68 clear transcription with a second blind pass, align it, and test key1659 rows on the f.68 cipher beside a shuffled-order alignment control of the same length and symbol count; ~$3; source: loose-ends 8 Oct
+- [x] clear-pages: f.68r clear text (two passes, 24 Sept) aligned to the f.67 cipher (align_f67.py, 24 Sept); key_1659 second-letter test with shuffled-order control run 8 Oct 2026 (D1A-F68): PASS 0.801 vs p99 0.518, no key row changed
 - [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: commit the f.68 clear transcription with a second blind pass, align it, and test key1659 rows on the f.68 cipher beside a shuffled-order alignment control of the same length and symbol count, ~$3 (D1A-CAN, 8 Oct 2026: canvas 45 blank, gap closed)
+Verdict: keep going: 0 internal gaps; cheapest next: (clear-pages done, D1A-F68 8 Oct 2026, PASS; Français 20661-20662 is person-side, needs-physical-access) assess the five unassessed escalation rows (known-keys, print, key-rebuild, image-check, retry), ~$1
 
 ## D1A-CAN: canvas 45 (8 Oct 2026, 05:4x UTC)
 
@@ -2208,3 +2209,32 @@ a short faded docket line, two or three lines, at the foot (not read at 1000 px)
 (the brief: only if cipher is present). Nothing added to `trial_1653`. Row updated in `walk_37_159.tsv`.
 What was found: a blank leaf. Where it was not found: no cipher on canvas 45; the 1653-band canvas walk (4-159) now has no
 unfetched canvas. Requests: gallica.bnf.fr 1.
+
+## D1A-F68: key_1659 second-letter test on f.67 against f.68r (8 Oct 2026, 06:12-06:1x UTC)
+
+Worker D1A-F68, LANE DEFAULT-account-1-20261008-0540. The brief's first two parts were already done: the f.68r clear text was
+committed with a blind second pass on 24 Sept 2026 (`dechiffre_f68.txt` pass A, `dechiffre_f68_B.txt` pass B, 179/199 words
+identical, the rest settled on the image) and aligned to the f.67 cipher by `align_f67.py` (C 435 / M 111 of 546). The
+loose-ends note naming "dechiffref68.txt" as uncommitted was mistaken. So no transcription call was made. What had not been run
+is a key test with a control: `align_f67.py` keeps key_1659's counts in its EM as pseudo-counts, so its C grades cannot test the key.
+
+Pre-registered in `PREREG-D1A-F68.md` (c4e51c7a8, pushed before scoring). `test_f68_key1659.py` (`--check` exits 0): f.67's three
+cipher stretches decoded with key_1659's modal values only (no f.67 evidence), each aligned (Needleman-Wunsch) to its f.68r stretch;
+a token agrees when all its letters align to identical clear letters. Control: f.68r words shuffled within each manuscript line,
+1000 shuffles, seed 20261008 (order changes the alignment, so the control can differ from the target).
+
+| measure | value |
+|---|---|
+| scored tokens (codes in key_1659) | 523 of 546 (23 unscored: codes absent from key_1659 or null) |
+| agreeing | 419 |
+| S target | **0.801** |
+| null mean / p95 / p99 / max | 0.474 / 0.507 / 0.518 / 0.530 |
+| null >= target | 0/1000 |
+| gate (S > p99) | **PASS** |
+
+Reading: key_1659, built from the f.86/f.88 pair with the f.87 decipherment, reads a second letter (f.67, 10 Oct 1659) in agreement
+with its own clear copy on f.68r far above a shuffled-order null. Per code (`f68_key1659_codes.tsv`, descriptive only, no row
+revised): the low rows are the ones already known from align_f67: `6` qu 1/14 (a on f.67; letter-scoped, NOTES "key_1659 codes 6
+and 65"), `_6` ques 0/13 (f.68r qu, an alternate key_1659 attests), `10` je 0/9 (s/z, attested alternates), `23` pr 2/10 (p),
+`3` e 0/3 (d), and the syllabic pairs `7` ou 11/23 and `15` oi 11/23. No key row or grade changed; no reading changed, so AUDIT.md
+is untouched. Requests: 0 network. Subagents: 0.
