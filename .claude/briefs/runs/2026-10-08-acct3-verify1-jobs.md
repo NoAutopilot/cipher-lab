@@ -31,3 +31,29 @@ corrections, not novelty work: confirm or correct the class and cite the print a
   D2V-COL26 grade change carried.
 - Set each status.json row's `audit_status` to "two audits" and PROGRESS.tsv `2` where a row exists (Birago rows are off limits:
   skip birago-fr3252-1571-72 entirely).
+
+## Second wave (16:1x UTC): one-audit N3 items from the lane's inventory (every N3 D2+ item already has two audits)
+Per item: a second adversarial audit with the common tail, section "## AUDIT 2 (second adversarial, <JOB>)" (or "AUDIT 4" where the
+folder numbers them), the families the first audit did NOT cover searched first, then prior-work check 5 (G3) on the decoded text
+itself -- "a search section exists" is not G3; log the phrases actually run. Units about $2.5 per item + one reconciliation unit.
+
+## V1-OLD (account 3), cap $6, box 75 min: na-oldenbarnevelt-2442-1605 leaves 4/5/7 (ff.59v-62r, 729 cipher words)
+First audit: AUDIT 3 (OLD-SIBS-V, account 2); reader OLD-SIBS (account 4). N3 D1. Check the Oldenbarnevelt retroboek (Huygens,
+toc1 + full-text search, CLAUDE.md host table) and the recipient side; re-derive with the folder's --check; depth under the bar.
+
+## V1-O9 (account 3), cap $6, box 75 min: eckert-1864 O9-AI, O9-AJ
+First audit LS-V6 (account 1); reader LS-R6 (account 1). N3 D1; the press of the day was NOT read (gold/coin shipment orders: read
+Chronicling America for the dates +-3 days, OR ser. I/III and the Treasury side). Also, a record fix only: status.json row for E70
+still says N3 while AUD2-LS-H lowered it to N2 -- correct that row (cite AUD2-LS-H), nothing else on E70. File a status.json result
+row for O9-AI/O9-AJ only if the class stays N3+ and depth reaches D2 (else none, as now).
+
+## V1-1862 (account 3), cap $6, box 75 min: eckert-1862 4982.1 and 4992.3 (code word "Sermon = Bowling Green")
+First audits LS3-V62 (account 2) and VERIFY-ECK (account 4). 4992.3 G3 unclear: run it. Correct the queued SECOND-OPINIONS-QUEUE row
+for 4992.3 if the class moves.
+
+## V1-F4712 (account 3), cap $5, box 60 min: fr4712-nevers-duchesse f.10r (six tokens carried from the f.13r gloss)
+First audit D2V-F4712 (account 2); reader D2-F4712 (account 2). G3 was not run (shelfmark/subject searches only): run it on the six
+tokens' phrase context, the Nevers printed correspondence and Tomokiyo's cached pages. Correct the queued SO row if the class moves.
+
+## Re-addressed (not run on account 3): AUD2-ES132 -- es132-vargas-mexia-1578 f.89 and f.119 unprinted paragraphs (N3 D1) were
+first-audited on account 3 (A3V2-ES132A1, 4 Oct), so their second audit goes to account 4 under this same common tail.
