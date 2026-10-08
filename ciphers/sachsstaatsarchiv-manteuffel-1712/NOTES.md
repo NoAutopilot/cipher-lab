@@ -1774,7 +1774,7 @@ Next: (1) 0052's run 1 needs a native-resolution re-read of groups 4 (34/39), 13
 further reading (~$1); (2) the next ranked unglossed leaves (mant0609/rank_unglossed.tsv ranks 3-7: 694/08 0485, 0391, 0390, 0395;
 all letter range, ~$2-3 each with the same gate); (3) a verifier on the 0015-16 reading (rule 10) if the lane wants it counted.
 
-## MANT-08-sachsstaatsarchiv-manteuffel-1712 (8 Oct 2026, 20:08-20:23 UTC by date -u, LANE FAMILY account 2): 694/08 0390, 0391, 0395, 0485 read with Krauske's table
+## MANT-08-sachsstaatsarchiv-manteuffel-1712 (8 Oct 2026, 20:08-20:22 UTC by date -u, LANE FAMILY account 2): 694/08 0390, 0391, 0395, 0485 read with Krauske's table
 
 Brief: .claude/briefs/runs/2026-10-08-ytbiz-family-1909-jobs.md, MANT-08 (mant0609/rank_unglossed.tsv ranks 3-5 and 7). Intake gate
 `tools/intake_gate_check.py`: exit 0 (partial, edition citation found). Prior-work step, before the first priced step:

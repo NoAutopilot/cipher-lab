@@ -1,0 +1,9 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	cipher-page	390r			folio arithmetic	owed
+2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	facing	389v			folio arithmetic	owed
+2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	before-2	389r			folio arithmetic	owed
+2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	after-1	390v			folio arithmetic	owed
+2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	after-2	391r			folio arithmetic	owed
+2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	after-3	391v			folio arithmetic	owed
+2026-10-08 20:18	adhoc-99fed0	adhoc-99fed0:2-leaf:b142fb	after-4	392r			folio arithmetic	owed
