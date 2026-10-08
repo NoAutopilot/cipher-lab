@@ -1,0 +1,45 @@
+{
+ "job": "ES132-RD rule-7 re-derivation",
+ "rows": 119,
+ "decisions": {
+  "flag-removed": 25,
+  "keep:R3a-not-isolated": 30,
+  "replaced": 18,
+  "keep:R1-not-agreed": 10,
+  "not-applied:teulet-f90v-known-answer": 36
+ },
+ "rows_differing": 0,
+ "settled_applied": 43,
+ "settled_key_decodable": 35,
+ "control_50": {
+  "n": 50,
+  "replaced": 2,
+  "gate_pass": true
+ },
+ "control_all_firm": {
+  "n": 1218,
+  "replaced": 75
+ },
+ "page_decode_vs_reading": {
+  "f89r": {
+   "tokens": 445,
+   "differ": 0,
+   "first": []
+  },
+  "f89v": {
+   "tokens": 428,
+   "differ": 0,
+   "first": []
+  },
+  "f90r": {
+   "tokens": 494,
+   "differ": 0,
+   "first": []
+  },
+  "f91r": {
+   "tokens": 120,
+   "differ": 0,
+   "first": []
+  }
+ }
+}

@@ -11,7 +11,7 @@ as '0ρ' by the passes: 70ρ, 150ρ, 170ρ, 280ρ ...), counted in the printout.
 import sys, re, difflib
 from pathlib import Path
 HERE = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(HERE))
-from test2 import load_pass
+from settle_dup import load_pass  # frozen A3V3-ES9396 loader (test2.load_pass changed in RUN5-ESFIX; ES132-RD, 8 Oct 2026)
 pg = sys.argv[1]
 D = {}
 for l in open(HERE / f'run2/decisions_{pg}.tsv', encoding='utf-8'):

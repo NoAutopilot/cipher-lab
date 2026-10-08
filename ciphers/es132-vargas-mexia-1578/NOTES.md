@@ -817,3 +817,31 @@ Sensitivity only (gates nothing): k = 1 0.926 / 0.903; k = 3 0.923 / 0.913.
 Reading of the failure: the licence's accuracy separates cleanly from the control (0.92 vs shuffled p95 0.35-0.38), but the pre-registered count criterion fails because the value shuffle leaves the vowel indicators, the marks and the letter-symbol bases (y, a, b ...) unshuffled, so a shuffled key still confirms many cells and licenses 40-90 tokens at low accuracy. Gate (c) is the substantive miss: correlated misreads (one pass's error copied into the other) at the target's measured disagreement get through pass agreement and pull held-out accuracy to 0.84-0.93, under 0.90 on 19 of 20 seeds. Per the brief, stopped here: no regrade (unit 3) and no judge run (unit 4). The unprinted paragraphs stay M; their H/C/S/M/U counts and AUDIT 1's N3/D1 stand. Not re-tuned: k, the 0.90 gate, the 25% mirror share and the count criterion were fixed in the PREREG.
 Next (named, not run): a different instrument, not a re-tune -- a third independent witness from the f.93-95 duplicate copy (two copies, three readers) to break correlated misreads, or a transcription pass that lowers r; the AUD2D-ES132 verifier follow-up is not due (the brief queues it only if step 2 passes).
 Requests: github.com 2 (ls-remote, shallow clone). No credentials printed. Report only; no novelty classification made.
+
+## Rule-7 re-derivation (ES132-RD, account 4, 8 Oct 2026, 03:38-03:4x UTC by `date -u`)
+Brief: `.claude/briefs/runs/2026-10-08-acct3-acct4-small.md` "## ES132-RD". Fresh session: read the spec, key.tsv, PREREG_dupsettle.md and
+the transcription files, not the settling worker's or ES132-SLIC's reasoning. Disk only, no network, no subagents.
+
+**Repair of `settle_dup.py --check`** (KeyError ('L01', 14), ES132-SLIC): `run2/decisions_f9*.tsv` are indexed against the duplicate passes
+as `test2.load_pass` tokenised them at A3V3-ES9396 (per-token `shape_tok`, so only the first word of a `{CLEAR:}` span dropped); RUN5-ESFIX
+(commit 24c24c79, 4 Oct 2026 13:25 UTC) changed `load_pass` to cut whole spans, shifting the indices. `settle_dup.py` now carries that
+loader frozen (the 591f3022 body verbatim, reusing test2's unchanged `shape_tok`/`norm_line`); `run2/reconcile_dup.py` imports it too (same
+drift). No settled value changed: `settle_dup.py --check` -> "OK: committed outputs match" (exit 0) with no output file rewritten, and
+`run2/reconcile_dup.py f93r ... f95r` rewrote all five `ciphertext_f9*.tsv` byte-identical (git shows no change). `align_dup.py --check`
+SAME, `test2.py`, `test1.py`, `test0.py`, `slic.py --check` all OK.
+
+**Re-derivation** (`rd7_settle.py`, own implementation of R1-R3 and the control from PREREG_dupsettle.md and an own Cp.30 decoder from
+key.tsv; it imports neither settle_dup.py nor test0's decoder; outputs `rd7_settle.tsv`, `rd7_settle_result.json`; `--check` OK):
+| check | result |
+|---|---|
+| 119 candidate rows: decision and settled token vs `dup_settled.tsv` | 119/119 identical (25 flag-removed, 18 replaced, 30 R3a, 10 R1, 36 f.90v not applied) |
+| settled token present at its position in `ciphertext_f89r/f89v/f90r/f90v/f91r.tsv` | 119/119 |
+| decoded settled token vs `reading_<page>.txt` at that position | 83/83 on the unprinted pages; 43 settled, 35 key-decodable, 8 code/U |
+| control (50 firm tokens, seed 1578) / whole firm population | 48/50 unchanged (gate PASS) / 1,143/1,218 unchanged, as committed |
+| whole-page decode vs committed reading, f.89r / f.89v / f.90r / f.91r | 0/445, 0/428, 0/494, 0/120 tokens differ |
+The comparison can fail: with one key value altered (24 -> x) the same f.89r comparison differs on 26 tokens.
+**Verdict (rule 7): the re-derivation differs from the committed reading on 0 tokens, so nothing exceeds the M-graded tokens; the reading
+stands as committed.** Grades unchanged (f.89r 408 M / 37 U / 24 '?', f.89v 386/42/26, f.90r 430/64/18, f.91r 113/7/2; no H/C/S). Scope: this
+re-derives the settlement and the decode from the committed transcription and key; it does not re-read the images and leaves the
+ES132-SLIC finding (correlated misreads at r = 0.159) untouched. The rule-7 re-derivation owed since A3V3-ES132S is now done.
+Requests: none. Report only; no novelty classification.

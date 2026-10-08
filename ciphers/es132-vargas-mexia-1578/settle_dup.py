@@ -11,7 +11,21 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from test0 import load_key, load_lines, dec_tok
-from test2 import load_pass
+from test2 import shape_tok, norm_line
+
+
+def load_pass(p):
+    """The duplicate passes as test2.load_pass tokenised them when run2/reconcile_dup.py wrote run2/decisions_*.tsv (A3V3-ES9396,
+    commit 591f3022 and before): per-token shape_tok, so only the first word of a {CLEAR:...} span is dropped. test2's RUN5-ESFIX
+    loader cuts whole spans, which shifts the decision indices (KeyError ('L01', 14) on f93r); frozen here by ES132-RD, 8 Oct 2026,
+    so --check re-derives the settlement against the indices it was made with. No settled value changes."""
+    L = {}
+    for l in open(p, encoding='utf-8'):
+        if l.startswith('#') or not l.strip() or '\t' not in l: continue
+        a, b = l.rstrip('\n').split('\t', 1)
+        toks = [x for x in (shape_tok(t) for t in b.split()) if x]
+        L[a.strip()] = norm_line(' '.join(toks)).split()
+    return L
 
 UNPRINTED = {'f89r', 'f89v', 'f90r', 'f91r'}
 DUP = ['f93r', 'f93v', 'f94r', 'f94v', 'f95r']
