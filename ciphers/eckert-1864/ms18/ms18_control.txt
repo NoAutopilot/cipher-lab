@@ -1,0 +1,17 @@
+KNOWN-ANSWER
+  9670/1 cover 31 (OR I/33) verdict print-likely+clear-sibling -- 1864-01-31, 11 exact 8-word run(s) in OR I/33
+  9672/0 cover 32 (OR I/33) verdict print-likely+clear-sibling+mssEC25-dup -- 1864-02-05, 35 exact 8-word run(s) in Butler Corr. 3
+  9704/1 cover 20 (OR II/7) verdict print-likely+clear-sibling+mssEC25-dup -- 1864-04-14, 22 exact 8-word run(s) in OR II/7
+  9716/2 cover 39 (ORN I/9) verdict print-likely+clear-sibling -- 1864-04-21, 11 exact 8-word run(s) in ORN I/9
+  9758/1 cover 45 (OR II/7) verdict print-likely+clear-sibling -- 1864-06-12, 20 exact 8-word run(s) in OR II/7
+  9960/2 cover 43 (OR I/43-1) verdict print-likely+clear-sibling -- 1865-02-18, 2 exact 8-word run(s) in OR I/43-1
+  9962/1 cover 65 (OR I/46-2) verdict print-likely+clear-sibling -- 1865-02-24, 8 exact 8-word run(s) in OR I/46-2
+  9967/1 cover 151 (OR I/46-2) verdict print-likely+clear-sibling -- 1865-03-02, 64 exact 8-word run(s) in OR I/46-2
+  9969/2 cover 61 (OR I/46-2) verdict print-likely+clear-sibling -- 1865-03-03, 21 exact 8-word run(s) in OR I/46-2
+  10025/2 cover 54 (OR II/8) verdict print-likely+clear-sibling -- 1865-05-30, 19 exact 8-word run(s) in OR II/8
+  10037/1 cover 136 (OR III/5) verdict print-likely+clear-sibling -- 1865-06-22, 104 exact 8-word run(s) in OR III/5
+  10064/2 cover 43 (OR II/8) verdict print-likely+clear-sibling -- 1865-11-14, 23 exact 8-word run(s) in OR II/8
+  recall 12/12
+NULL real: n=804 cover>=7 302 (0.376); cover 5-6 152; cover>=10 241; max 151
+NULL shuffled: n=804 cover>=7 0 (0.000); cover 5-6 2; cover>=10 0; max 6
+NULL shuffled, entries >= 60 words (n=424): cover>=7 0; real same entries cover>=7 193

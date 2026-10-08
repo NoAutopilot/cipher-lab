@@ -19,10 +19,14 @@ KNOWN = [(5652, 0, "OR I/36-2 (6 May 1864, Sheldon to Eckert: Butler thinks it u
          (5722, 1, "OR I/36-3 (31 May 1864, Sheldon to Eckert: will communicate with Bickford; Palmer's party met rebel pickets)"),
          (5739, 1, "OR I/36-3 (11 June 1864, Sheldon to Butler: material ready for the line Jamestown Island, Swan's Point, Cabin Point, Garysville)")]
 
+if fe.S == "ms18":    # MS18-PRE: the known answers are the clear ledger entries with an exact 8-word run in the print volumes (ms18_known.py), found without the cover statistic
+    KNOWN = [(int(r[0]), int(r[1]), "%s, %s exact 8-word run(s) in %s" % (r[2], r[4], r[5])) for r in
+             (l.rstrip("\n").split("\t") for l in open(os.path.join(fe.OUTDIR, "known-ms18.tsv")) if not l.startswith("#") and not l.startswith("pointer"))]
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__); ap.add_argument("--scratch", required=True); ap.add_argument("--seed", type=int, default=20261008)
     a = ap.parse_args(argv)
-    rows = {(r["pointer"], r["entry"]): r for r in csv.DictReader((l for l in open(os.path.join(HERE, "prefilter-fm.tsv")) if not l.startswith("#")), delimiter="\t")}
+    rows = {(r["pointer"], r["entry"]): r for r in csv.DictReader((l for l in open(os.path.join(fe.OUTDIR, "prefilter-%s.tsv" % fe.S)) if not l.startswith("#")), delimiter="\t")}
     print("KNOWN-ANSWER")
     hit = 0
     for p, n, where in KNOWN:
@@ -30,11 +34,11 @@ def main(argv=None):
         print(f"  {p}/{n} cover {r['or_cov']} ({r['or_vol']}) verdict {r['verdict']} -- {where}")
     print(f"  recall {hit}/{len(KNOWN)}")
     pl.NEWVOLS = {k: v for k, v in fp.VOLS.items() if os.path.exists(os.path.join(a.scratch, "or", k + ".txt"))}
-    pl.CACHE = os.path.join(fp.ROOT, "sources", "ia-fulltext", "print-check", "fm")
+    pl.CACHE = os.path.join(fp.ROOT, "sources", "ia-fulltext", "print-check", fe.CFG["cache"])
     codes, fm = fe.build(); rnd = random.Random(a.seed)
     for e in fm:
         t = list(e["tokens"]); rnd.shuffle(t); e["tokens"] = t
-    freq, cov, wc = pl.scan_new(fm, codes, a.scratch, os.path.join(pl.CACHE, "scan_fm_shuffled_seed%d.json" % a.seed))
+    freq, cov, wc = pl.scan_new(fm, codes, a.scratch, os.path.join(pl.CACHE, "scan_%s_shuffled_seed%d.json" % (fe.S, a.seed)))
     real = [int(r["or_cov"]) for r in rows.values()]
     sh = [cov[i][0] for i in range(len(fm))]
     for lab, vals in (("real", real), ("shuffled", sh)):

@@ -23,7 +23,7 @@ def load_pages(pages_dir="sources/mssEC19"):
     out = []
     for fn in glob.glob(os.path.join(HERE, pages_dir, "p*.json")):
         p = int(os.path.basename(fn)[1:-5]); j = json.load(open(fn))
-        out.append((p, j.get("title"), j.get("transc") or ""))
+        out.append((p, j.get("title_dm") or j.get("title"), j.get("transc") or ""))
     return sorted(out)
 
 def vocab(fn, first_col_only=True):

@@ -1,0 +1,806 @@
+# MS18-PRE (8 Oct 2026): offline pre-filter of Huntington object 10074 (mssEC 18, sent ledger), fm_prefilter.py; a ranking, not a verdict (rule 10). Volumes scanned: Butler Corr. 3, Butler Corr. 4, Butler Corr. 5, OR I/33, OR I/36-1, OR I/36-2, OR I/36-3, OR I/40-1, OR I/40-2, OR I/40-3, OR I/42-1, OR I/42-2, OR I/42-3, OR I/43-1, OR I/43-2, OR I/44, OR I/45-1, OR I/45-2, OR I/46-1, OR I/46-2, OR I/46-3, OR I/51-1, OR I/51-2, OR II/6, OR II/7, OR II/8, OR III/4, OR III/5, ORN I/10, ORN I/11, ORN I/9
+pointer	page	entry	date	direction	words	best_book	hdr_mark	s1	s2	s9	or_cov	or_vol	own	dups	verdict
+9667	1	0	1864-01-26	sent	77	9		0.212	0.212	0.152	5	OR II/8	cipher	none	clean
+9667	1	1	1864-01-26	sent	36	9		0.304	0.348	0.304	3	OR I/33	cipher	none	clean
+9668	2	0	1864-01-29	sent	27	9		0.267	0.267	0.267	3	Butler Corr. 3	cipher	none	clean
+9668	2	1	1864-01-29	sent	126	9		0.219	0.233	0.096	12	OR I/51-2	cipher	none	print-likely
+9669	3	1	1864-01-29	sent	54	9		0.276	0.31	0.276	5	OR I/51-1	cipher	none	clean
+9669	3	2	1864-01-31	sent	58	9		0.241	0.276	0.172	18	OR I/33	cipher	none	print-likely
+9670	4	0	1864-01-31	sent	29	clear		0.118	0.118	0.118	3	OR I/36-2	clear	none	clear-sibling
+9670	4	1	1864-01-31	sent	58	clear		0.114	0.143	0.029	31	OR I/33	clear	none	print-likely+clear-sibling
+9671	5	0	1864-02-03	sent	30	9		0.312	0.375	0.188	6	OR I/33	cipher	mssEC25:5545/1[copy0.68]	mssEC25-dup
+9671	5	1	1864-02-03	sent	15	2		0.5	0.5	0.0	4	OR I/33	cipher	none	clean
+9671	5	2	1864-02-03	sent	23	9		0.429	0.429	0.429	3	OR I/36-1	cipher	mssEC25:5546/0[copy0.71]	mssEC25-dup
+9672	6	0	1864-02-05	sent	58	clear		0.167	0.2	0.167	32	OR I/33	clear	mssEC25:5554/0[copy0.78]	print-likely+clear-sibling+mssEC25-dup
+9672	6	1	1864-02-05	sent	43	2		0.52	0.52	0.16	16	OR I/33	cipher	none	print-likely
+9673	7	0	1864-02-05	sent	72	9		0.184	0.224	0.143	4	OR III/4	cipher	none	clean
+9673	7	1	1864-02-06	sent	43	1		0.483	0.379	0.103	4	OR I/46-2	cipher	none	clean
+9673	7	2	1864-02-07	sent	21	1		0.714	0.714	0.143	0		cipher	none	clean
+9674	8	0	1864-02-10	sent	63	1		0.447	0.447	0.158	4	OR I/45-1	cipher	none	clean
+9674	8	1	1864-02-11	sent	58	1		0.444	0.361	0.111	4	OR I/40-3	cipher	none	clean
+9674	8	2	1864-02-11	sent	139	2		0.356	0.425	0.151	17	OR I/33	cipher	none	print-likely
+9675	9	1	1864-02-12	sent	19	9		0.583	0.667	0.417	0		cipher	none	clean
+9675	9	2	1864-02-13	sent	13	9		0.5	0.5	0.333	0		cipher	none	clean
+9676	10	0	1864-02-14	sent	27	9		0.471	0.471	0.412	3	OR I/51-2	cipher	none	clean
+9676	10	1	1864-02-14	sent	62	1		0.351	0.297	0.081	4	OR III/4	cipher	none	clean
+9676	10	2	1864-02-15	sent	39	9		0.211	0.263	0.158	4	OR I/45-1	cipher	mssEC25:5571/0[copy0.62]	mssEC25-dup
+9677	11	0	1864-02-15	sent	48	2		0.462	0.615	0.077	4	OR I/45-1	cipher	none	clean
+9677	11	1	1864-02-16	sent	170	2		0.515	0.673	0.099	8	OR I/46-2	cipher	none	print-likely
+9678	12	0	1864-02-20	sent	76	2		0.297	0.378	0.081	5	OR I/43-2	cipher	none	clean
+9678	12	1	1864-02-23	sent	17	9	9	0.5	0.5	0.3	3	OR I/36-1	cipher	none	clean
+9678	12	2	1864-02-23	sent	42	clear		0.042	0.125	0.0	4	OR III/4	clear	none	clear-sibling
+9679	13	0	1864-02-26	sent	82	9		0.182	0.2	0.145	6	OR I/33	cipher	none	clean
+9679	13	1	1864-02-26	sent	28	2		0.261	0.304	0.043	0		cipher	none	clean
+9680	14	0	1864-02-27	sent	49	2		0.556	0.778	0.139	3	OR I/40-3	cipher	none	clean
+9680	14	1	1864-02-27	sent	92	2		0.483	0.534	0.172	3	OR I/33	cipher	none	clean
+9681	15	0	1864-02-29	sent	45	2		0.462	0.577	0.077	3	OR I/42-1	cipher	none	clean
+9681	15	1	1864-02-29	sent	30	9		0.211	0.316	0.211	15	OR I/33	cipher	mssEC25:5575/2[copy0.57]	print-likely+mssEC25-dup
+9681	15	2	1864-03-03	sent	30	2		0.6	0.7	0.2	4	OR I/46-2	cipher	none	clean
+9682	16	0	1864-03-03	sent	142	1		0.506	0.494	0.18	20	OR I/33	cipher	none	print-likely
+9683	17	0	1864-03-06	sent	136	9	1	0.203	0.254	0.068	94	OR I/33	cipher	none	print-likely
+9683	17	1	1864-03-07	sent	39	2		0.4	0.52	0.08	6	OR I/33	cipher	none	clean
+9684	18	0	1864-03-09	sent	67	9		0.311	0.356	0.244	6	OR I/33	cipher	none	clean
+9684	18	1	1864-03-10	sent	40	9		0.207	0.207	0.207	4	OR II/7	cipher	none	clean
+9685	19	0	1864-03-12	sent	60	9		0.171	0.195	0.073	4	Butler Corr. 4	cipher	none	clean
+9685	19	1	1864-03-10	sent	62	2		0.22	0.439	0.049	4	OR I/46-1	cipher	none	clean
+9686	20	0	1864-03-12	sent	57	2		0.25	0.25	0.056	28	OR I/33	cipher	none	print-likely
+9686	20	1	1864-03-14	sent	49	9		0.24	0.28	0.24	6	Butler Corr. 3	cipher	none	clean
+9686	20	2	1864-03-14	sent	70	1		0.436	0.333	0.103	6	OR I/46-3	cipher	none	clean
+9687	21	0	1864-03-15	sent	98	2		0.414	0.655	0.069	4	OR II/8	cipher	none	clean
+9687	21	1	1864-03-16	sent	71	9		0.159	0.25	0.136	4	OR I/45-2	cipher	none	clean
+9688	22	0	1864-03-16	sent	62	2		0.486	0.595	0.216	6	OR I/43-2	cipher	none	clean
+9688	22	1	1864-03-17	sent	295	1		0.494	0.421	0.079	89	ORN I/9	cipher	mssEC25:5585/1[6tok]	print-likely
+9690	24	0	1864-03-17	sent	94	2		0.424	0.542	0.119	3	OR II/7	cipher	none	clean
+9690	24	1	1864-03-23	sent	25	clear		0.154	0.154	0.0	3	OR I/46-3	clear	none	clear-sibling
+9690	24	2	1864-03-25	sent	63	2		0.41	0.538	0.103	3	OR II/7	cipher	none	clean
+9691	25	0	1864-03-25	sent	80	2		0.295	0.386	0.045	4	OR I/33	cipher	none	clean
+9691	25	1	1864-03-26	sent	74	2		0.435	0.435	0.174	19	OR I/33	cipher	none	print-likely
+9692	26	0	1864-03-27	sent	33	1		0.333	0.286	0.095	4	OR I/43-2	cipher	mssEC25:5589/0[copy0.71,3tok]	mssEC25-dup
+9692	26	1	1864-03-28	sent	83	9		0.118	0.196	0.0	7	OR I/36-3	cipher	none	print-likely
+9693	27	1	1864-03-31	sent	94	1		0.375	0.339	0.071	4	OR I/40-3	cipher	none	clean
+9693	27	2	1864-04-04	sent	95	1		0.308	0.308	0.096	36	OR I/33	cipher	none	print-likely
+9694	28	1	1864-04-04	sent	66	1		0.682	0.545	0.091	5	OR I/46-3	cipher	none	clean
+9694	28	2	1864-04-05	sent	99	9		0.19	0.222	0.143	4	OR I/44	cipher	none	clean
+9695	29	1	1864-04-06	sent	148	9		0.2	0.256	0.144	7	Butler Corr. 4	cipher	none	print-likely
+9696	30	0	1864-04-06	sent	43	1		0.371	0.343	0.143	0		cipher	none	clean
+9696	30	1	1864-04-07	sent	53	1		0.455	0.424	0.121	13	Butler Corr. 4	cipher	mssEC25:5596/2[copy0.71]	print-likely+mssEC25-dup
+9696	30	2	1864-04-07	sent	20	1		0.5	0.5	0.083	3	OR I/40-3	cipher	none	clean
+9697	31	0	1864-04-07	sent	61	2		0.564	0.615	0.179	6	OR I/33	cipher	none	clean
+9697	31	1	1864-04-07	sent	166	1		0.296	0.284	0.136	7	OR I/43-1	cipher	none	print-likely
+9698	32	0	1864-04-08	sent	60	2		0.459	0.568	0.135	27	OR I/33	cipher	none	print-likely
+9698	32	1	1864-04-08	sent	75	1		0.351	0.378	0.135	40	OR I/33	cipher	none	print-likely
+9699	33	0	1864-04-08	sent	95	9		0.153	0.254	0.085	4	OR I/43-2	cipher	none	clean
+9699	33	1	1864-04-09	sent	124	9		0.213	0.267	0.093	5	OR I/40-3	cipher	none	clean
+9701	35	0	1864-04-09	sent	72	2		0.535	0.605	0.116	4	OR I/36-2	cipher	none	clean
+9701	35	1	1864-04-11	sent	62	2		0.444	0.583	0.111	3	OR I/40-2	cipher	none	clean
+9702	36	0	1864-04-12	sent	56	1		0.393	0.429	0.107	21	OR I/33	cipher	mssEC25:5602/0[copy0.83]	print-likely+mssEC25-dup
+9702	36	1	1864-04-12	sent	113	1		0.277	0.246	0.062	53	OR I/33	cipher	none	print-likely
+9703	37	0	1864-04-12	sent	61	1		0.583	0.472	0.083	3	OR I/40-2	cipher	none	clean
+9703	37	1	1864-04-12	sent	53	2		0.051	0.179	0.0	21	Butler Corr. 4	cipher	mssEC25:5602/1[4tok]	print-likely
+9703	37	2	1864-04-13	sent	34	1		0.455	0.409	0.045	8	Butler Corr. 4	cipher	mssEC25:5605/1[copy0.84]	print-likely+mssEC25-dup
+9704	38	1	1864-04-14	sent	43	clear		0.19	0.143	0.048	20	OR II/7	clear	mssEC25:5606/2[copy0.68;clear]	print-likely+clear-sibling+mssEC25-dup
+9704	38	2	1864-04-14	sent	19	1		0.545	0.455	0.091	3	OR I/46-2	cipher	none	clean
+9704	38	3	1864-04-16	sent	48	1		0.543	0.4	0.086	6	OR I/33	cipher	mssEC25:5607/2[copy0.80]	mssEC25-dup
+9705	39	1	1864-04-16	sent	131	2		0.44	0.533	0.12	48	OR I/33	cipher	none	print-likely
+9706	40	1	1864-04-16	sent	72	9		0.22	0.244	0.171	4	OR I/51-1	cipher	none	clean
+9706	40	2	1864-04-16	sent	173	9		0.213	0.292	0.18	17	OR I/33	cipher	mssEC19:8931/0[5tok]	print-likely
+9708	42	0	1864-04-17	sent	209	2		0.452	0.532	0.143	64	OR I/33	cipher	none	print-likely
+9709	43	0	1864-04-18	sent	42	1		0.667	0.458	0.292	3	OR I/33	cipher	mssEC25:5610/0[copy0.85]	mssEC25-dup
+9709	43	1	1864-04-19	sent	56	9		0.156	0.178	0.067	3	OR I/33	cipher	none	clean
+9709	43	2	1864-04-20	sent	39	clear		0.074	0.111	0.0	8	OR I/33	clear	none	print-likely+clear-sibling
+9710	44	1	1864-04-20	sent	42	1		0.593	0.519	0.074	14	OR I/33	cipher	mssEC25:5613/1[copy0.75,3tok]	print-likely+mssEC25-dup
+9710	44	2	1864-04-20	sent	230	9		0.23	0.259	0.165	6	OR I/33	cipher	mssEC19:8937/0[3tok;read:LS-R6 O9-AH] mssEC19:8939/1[4tok;read:O9-AA,clear]	clear-sibling
+9712	46	0		sent	3	short		0.0	0.0	0.0	0		clear	none	clear-sibling+short
+9712	46	1	1864-04-20	sent	413	1		0.588	0.329	0.135	9	OR I/46-1	cipher	mssEC25:5614/2[3tok]	print-likely
+9714	48	1	1864-04-21	sent	86	2		0.286	0.49	0.184	31	OR III/4	cipher	none	print-likely
+9714	48	2	1864-04-21	sent	63	1		0.316	0.368	0.105	4	OR I/36-3	cipher	mssEC25:5620/0[copy0.75]	mssEC25-dup
+9715	49	0	1864-04-21	sent	145	9		0.216	0.257	0.068	75	OR III/4	cipher	none	print-likely
+9716	50	1	1864-04-21	sent	64	2		0.158	0.263	0.026	4	OR III/5	cipher	none	clean
+9716	50	2	1864-04-21	sent	70	clear		0.158	0.132	0.079	39	ORN I/9	clear	none	print-likely+clear-sibling
+9717	51	1	1864-04-22	sent	39	9		0.263	0.263	0.211	6	OR I/40-3	cipher	none	clean
+9717	51	2	1864-04-22	sent	78	9		0.245	0.245	0.17	4	ORN I/9	cipher	none	clean
+9718	52	0	1864-04-23	sent	153	2		0.442	0.567	0.115	46	OR I/33	cipher	none	print-likely
+9719	53	1	1864-04-23	sent	30	1		0.273	0.182	0.045	10	OR I/33	cipher	none	print-likely
+9719	53	2	1864-04-23	sent	24	9		0.188	0.375	0.188	3	OR I/42-2	cipher	none	clean
+9719	53	3	1864-04-23	sent	33	clear		0.0	0.08	0.0	3	OR I/43-1	clear	none	clear-sibling
+9720	54	0	1864-04-23	sent	40	clear		0.0	0.05	0.0	4	Butler Corr. 4	clear	none	clear-sibling
+9720	54	1	1864-04-23	sent	24	9		0.2	0.267	0.2	4	OR I/33	cipher	none	clean
+9720	54	2	1864-04-23	sent	51	1		0.455	0.424	0.182	21	ORN I/9	cipher	mssEC25:5627/2[copy0.88]	print-likely+mssEC25-dup
+9721	55	1	1864-04-23	sent	167	1		0.258	0.213	0.079	102	OR I/33	cipher	none	print-likely
+9722	56	0	1864-04-24	sent	105	1		0.312	0.25	0.047	6	OR I/46-2	cipher	none	clean
+9722	56	1	1864-11-02	sent	51	2		0.364	0.424	0.091	3	OR I/33	cipher	none	clean
+9723	57	1	1864-04-26	sent	237	2		0.31	0.44	0.069	7	OR I/40-3	cipher	none	print-likely
+9724	58	0	1864-04-27	sent	190	2		0.353	0.441	0.049	6	OR I/46-2	cipher	MS18:9725/1[3tok]	clean
+9725	59	0	1864-04-27	sent	49	2		0.414	0.517	0.069	3	OR I/40-3	cipher	none	clean
+9725	59	1	1864-04-27	sent	224	9		0.289	0.298	0.19	6	OR I/46-2	cipher	MS18:9724/0[3tok]	clean
+9727	61	0	1864-04-30	sent	130	2		0.377	0.571	0.104	6	OR II/6	cipher	none	clean
+9727	61	1	1864-05-02	sent	55	1		0.525	0.45	0.125	7	Butler Corr. 4	cipher	MS18:9728/2[4tok] mssEC25:5645/1[copy0.87,5tok] mssEC25:5646/1[4tok]	print-likely+mssEC25-dup
+9728	62	1	1864-05-02	sent	55	2	2	0.304	0.413	0.109	7	ORN I/9	cipher	none	print-likely
+9728	62	2	1864-05-02	sent	54	1	1	0.35	0.35	0.075	7	Butler Corr. 4	cipher	MS18:9727/1[4tok] mssEC25:5645/1[4tok] mssEC25:5646/1[4tok]	print-likely
+9729	63	0	1864-05-02	sent	35	2		0.348	0.522	0.13	0		cipher	none	clean
+9729	63	1	1864-05-03	sent	62	2		0.371	0.6	0.114	6	OR I/51-2	cipher	none	clean
+9729	63	2	1864-05-03	sent	66	1		0.378	0.378	0.156	4	OR I/42-3	cipher	none	clean
+9730	64	0	1864-05-04	sent	65	1		0.596	0.447	0.213	6	OR I/36-1	cipher	none	clean
+9730	64	1	1864-05-04	sent	63	1		0.5	0.472	0.111	3	OR III/4	cipher	none	clean
+9730	64	2	1864-05-05	sent	31	1		0.421	0.368	0.053	5	OR I/33	cipher	none	clean
+9731	65	1	1864-05-05	sent	30	9		0.429	0.571	0.429	3	Butler Corr. 4	cipher	none	clean
+9731	65	2	1864-05-05	sent	47	9		0.31	0.345	0.31	4	OR III/4	cipher	none	clean
+9731	65	3	1864-05-06	sent	28	1		0.579	0.474	0.158	3	OR I/40-2	cipher	none	clean
+9732	66	1	1864-05-06	sent	133	1		0.43	0.342	0.127	5	OR I/33	cipher	none	clean
+9733	67	0	1864-05-06	sent	90	1		0.448	0.397	0.086	24	Butler Corr. 4	cipher	mssEC25:5652/0[copy0.77,5tok]	print-likely+mssEC25-dup
+9733	67	1	1864-05-07	sent	116	1		0.436	0.333	0.115	6	OR I/51-2	cipher	none	clean
+9734	68	0	1864-05-07	sent	41	1		0.458	0.458	0.167	3	OR I/43-1	cipher	none	clean
+9734	68	1	1864-05-08	sent	168	1		0.4	0.353	0.106	74	OR I/36-2	cipher	none	print-likely
+9735	69	0	1864-05-09	sent	54	9		0.3	0.3	0.2	4	OR I/42-3	cipher	none	clean
+9735	69	1	1864-05-13	sent	90	1		0.509	0.491	0.109	27	Butler Corr. 4	cipher	mssEC25:5667/0[copy0.84,6tok]	print-likely+mssEC25-dup
+9736	70	0	1864-05-15	sent	72	2		0.422	0.644	0.089	12	Butler Corr. 4	cipher	none	print-likely
+9736	70	1	1864-05-15	sent	139	1		0.589	0.489	0.178	23	OR I/36-2	cipher	none	print-likely
+9737	71	0	1864-05-16	sent	114	2	2	0.439	0.53	0.136	15	OR I/36-2	cipher	none	print-likely
+9737	71	1	1864-05-16	sent	35	9		0.44	0.4	0.08	8	OR I/36-2	cipher	none	print-likely
+9738	72	0	1864-05-16	sent	63	2		0.386	0.568	0.159	11	OR I/36-2	cipher	none	print-likely
+9738	72	1	1864-05-16	sent	181	2		0.389	0.574	0.102	18	OR I/36-2	cipher	none	print-likely
+9739	73	1	1864-05-18	sent	36	2		0.545	0.682	0.182	0		cipher	none	clean
+9739	73	2	1864-05-19	sent	48	2		0.393	0.464	0.071	4	OR I/33	cipher	none	clean
+9740	74	1	1864-05-19	sent	130	1		0.371	0.371	0.113	73	OR I/36-2	cipher	mssEC25:5678/0[copy0.88,3tok]	print-likely+mssEC25-dup
+9740	74	2	1864-05-20	sent	70	1		0.421	0.395	0.132	28	OR I/36-3	cipher	mssEC25:5678/1[copy0.68]	print-likely+mssEC25-dup
+9741	75	1	1864-05-20	sent	330	1		0.404	0.351	0.101	9	OR I/36-2	cipher	none	print-likely
+9742	76	1	1864-05-22	sent	90	1		0.484	0.406	0.141	21	OR I/36-3	cipher	mssEC25:5685/0[copy0.97,8tok]	print-likely+mssEC25-dup
+9743	77	0	1864-05-23	sent	66	1		0.674	0.587	0.196	15	OR I/36-3	cipher	mssEC25:5684/1[copy0.91,3tok]	print-likely+mssEC25-dup
+9743	77	1	1864-05-23	sent	71	1		0.55	0.4	0.125	6	OR III/4	cipher	none	clean
+9744	78	0	1864-05-24	sent	69	1		0.78	0.537	0.171	3	OR I/33	cipher	mssEC25:5691/1[copy0.81]	mssEC25-dup
+9744	78	1	1864-05-25	sent	36	1		0.565	0.478	0.217	3	OR I/46-3	cipher	none	clean
+9744	78	2	1864-05-26	sent	156	1		0.517	0.461	0.112	55	OR I/36-3	cipher	mssEC25:5694/1[copy0.67]	print-likely+mssEC25-dup
+9745	79	1	1864-05-26	sent	125	1		0.354	0.304	0.127	4	OR II/8	cipher	none	clean
+9746	80	0	1864-05-27	sent	124	1		0.592	0.487	0.066	4	OR I/36-3	cipher	none	clean
+9746	80	1	1864-05-27	sent	101	2		0.532	0.694	0.161	4	OR I/36-2	cipher	none	clean
+9747	81	1	1864-05-27	sent	273	1		0.309	0.279	0.074	11	OR I/43-2	cipher	mssEC25:5704/1[7tok]	print-likely
+9748	82	1	1864-05-28	sent	79	1		0.538	0.462	0.135	29	OR I/36-3	cipher	mssEC25:5711/0[copy0.87,4tok]	print-likely+mssEC25-dup
+9749	83	1	1864-05-28	sent	80	2		0.432	0.568	0.136	22	OR I/36-3	cipher	none	print-likely
+9749	83	2	1864-05-29	sent	26	1		0.562	0.375	0.125	3	OR I/40-3	cipher	none	clean
+9750	84	1	1864-05-30	sent	170	1		0.424	0.394	0.081	8	OR I/36-3	cipher	mssEC25:5717/2[10tok]	print-likely
+9751	85	0	1864-05-30	sent	62	1		0.317	0.317	0.049	3	OR I/36-2	cipher	none	clean
+9751	85	1	1864-05-31	sent	31	9		0.526	0.526	0.263	6	OR I/36-3	cipher	mssEC25:5720/2[copy0.62]	mssEC25-dup
+9751	85	2	1864-05-31	sent	55	1		0.467	0.4	0.133	28	OR I/36-3	cipher	mssEC25:5723/0[copy0.81,4tok]	print-likely+mssEC25-dup
+9752	86	1	1864-05-31	sent	52	9		0.452	0.516	0.194	4	OR I/33	cipher	mssEC25:5724/1[copy0.52,3tok]	mssEC25-dup
+9752	86	2	1864-06-02	sent	59	2		0.212	0.455	0.121	28	OR I/36-3	cipher	none	print-likely
+9753	87	0	1864-06-04	sent	72	1		0.56	0.42	0.1	7	OR I/36-2	cipher	none	print-likely
+9753	87	1	1864-06-04	sent	64	1		0.55	0.475	0.1	4	OR I/42-1	cipher	none	clean
+9754	88	0	1864-06-06	sent	49	1		0.417	0.333	0.111	4	OR I/45-1	cipher	mssEC25:5732/0[copy0.81]	mssEC25-dup
+9754	88	1	1864-06-06	sent	125	1		0.379	0.318	0.121	9	Butler Corr. 5	cipher	none	print-likely
+9755	89	0	1864-06-07	sent	70	2		0.386	0.591	0.136	4	OR III/5	cipher	none	clean
+9755	89	1	1864-06-10	sent	90	2		0.3	0.32	0.1	7	OR II/7	cipher	none	print-likely
+9756	90	0	1864-06-10	sent	72	2		0.278	0.389	0.083	33	OR I/36-3	cipher	none	print-likely
+9756	90	1		sent	126	clear		0.061	0.136	0.0	10	OR I/46-2	clear	none	print-likely+clear-sibling
+9757	91	1	1864-06-11	sent	242	2		0.319	0.403	0.069	6	OR I/46-3	cipher	none	clean
+9758	92	1	1864-06-12	sent	70	clear		0.05	0.075	0.0	45	OR II/7	clear	none	print-likely+clear-sibling
+9759	93	0	1864-06-13	sent	63	2		0.486	0.514	0.086	4	OR I/43-2	cipher	none	clean
+9759	93	1	1864-06-13	sent	136	1		0.462	0.344	0.097	5	OR II/6	cipher	none	clean
+9760	94	1	1864-06-16	sent	121	clear		0.054	0.108	0.014	6	OR I/45-2	clear	none	clear-sibling
+9761	95	0	1864-06-18	sent	60	9		0.171	0.286	0.029	6	OR I/51-1	cipher	mssEC19:8987/1[3tok]	clean
+9761	95	1	1864-06-19	sent	59	2		0.35	0.475	0.1	3	Butler Corr. 4	cipher	none	clean
+9762	96	1	1864-06-19	sent	117	9		0.219	0.266	0.047	6	OR I/42-2	cipher	none	clean
+9763	97	1	1864-06-21	sent	137	2		0.203	0.342	0.063	75	OR I/40-2	cipher	none	print-likely
+9764	98	1	1864-06-23	sent	65	1		0.176	0.235	0.0	6	OR I/46-3	cipher	none	clean
+9764	98	2	1864-06-24	sent	83	2		0.391	0.543	0.087	6	OR I/51-1	cipher	none	clean
+9765	99	1	1864-06-24	sent	30	2		0.471	0.529	0.176	4	OR I/43-2	cipher	none	clean
+9765	99	2	1864-06-25	sent	104	2		0.35	0.4	0.117	6	OR I/42-1	cipher	none	clean
+9766	100	0	1864-06-25	sent	164	1		0.457	0.436	0.149	8	OR I/42-3	cipher	none	print-likely
+9767	101	0	1864-06-26	sent	24	2		0.4	0.333	0.067	3	OR I/33	cipher	none	clean
+9767	101	1	1864-06-26	sent	96	2		0.367	0.45	0.117	3	OR I/43-1	cipher	none	clean
+9768	102	0	1864-06-28	sent	79	2		0.333	0.373	0.098	7	ORN I/10	cipher	none	print-likely
+9768	102	1	1864-06-29	sent	63	2		0.364	0.485	0.121	6	OR I/43-1	cipher	none	clean
+9769	103	0	1864-06-29	sent	69	1		0.474	0.395	0.105	3	OR I/45-2	cipher	none	clean
+9769	103	1	1864-06-29	sent	62	1		0.524	0.405	0.095	4	OR I/33	cipher	none	clean
+9770	104	0	1864-07-01	sent	54	1		0.588	0.471	0.176	5	OR I/43-2	cipher	none	clean
+9770	104	1	1864-07-02	sent	64	1		0.455	0.455	0.091	4	OR I/42-2	cipher	none	clean
+9770	104	2	1864-07-03	sent	56	9		0.219	0.25	0.031	6	OR I/46-2	cipher	none	clean
+9771	105	0	1864-07-03	sent	139	2		0.408	0.5	0.105	6	OR I/40-1	cipher	none	clean
+9771	105	1	1864-07-03	sent	30	1		0.55	0.45	0.2	4	OR I/33	cipher	none	clean
+9772	106	0	1864-07-03	sent	128	9		0.291	0.304	0.101	4	OR I/46-2	cipher	none	clean
+9773	107	0	1864-07-05	sent	231	2		0.375	0.486	0.097	49	OR I/40-3	cipher	mssEC19:8995/0[4tok]	print-likely
+9774	108	1	1864-07-05	sent	40	1		0.385	0.308	0.154	4	OR I/51-1	cipher	none	clean
+9774	108	2	1864-07-05	sent	35	2		0.348	0.652	0.087	3	OR I/33	cipher	none	clean
+9774	108	3	1864-07-06	sent	111	2		0.415	0.477	0.123	4	OR I/42-3	cipher	none	clean
+9775	109	1	1864-07-03	sent	117	9		0.143	0.214	0.029	6	OR II/6	cipher	none	clean
+9776	110	0	1864-07-06	sent	150	2		0.287	0.391	0.08	65	OR I/40-3	cipher	none	print-likely
+9777	111	0	1864-07-06	sent	49	2		0.394	0.485	0.242	13	OR I/40-3	cipher	none	print-likely
+9777	111	1	1864-06-07	sent	146	1		0.354	0.366	0.061	6	OR II/7	cipher	none	clean
+9778	112	1	1864-07-07	sent	42	1		0.5	0.5	0.179	3	OR I/33	cipher	mssEC25:5767/2[copy0.78]	mssEC25-dup
+9778	112	2	1864-07-07	sent	117	2		0.371	0.443	0.1	46	OR I/40-3	cipher	none	print-likely
+9779	113	0	1864-07-08	sent	77	1		0.381	0.31	0.119	6	OR I/43-2	cipher	none	clean
+9779	113	1	1864-07-08	sent	73	1		0.54	0.42	0.16	4	OR I/43-1	cipher	none	clean
+9780	114	0	1864-07-08	sent	97	2		0.39	0.475	0.102	6	OR III/4	cipher	none	clean
+9780	114	1	1864-07-09	sent	72	2		0.396	0.5	0.062	16	OR I/40-3	cipher	none	print-likely
+9781	115	0	1864-07-09	sent	112	2		0.371	0.516	0.081	31	OR I/40-3	cipher	none	print-likely
+9782	116	0	1864-07-09	sent	40	2		0.478	0.565	0.043	4	OR I/40-3	cipher	none	clean
+9782	116	1	1864-07-09	sent	24	1		0.526	0.421	0.105	0		cipher	mssEC25:5768/1[copy0.64]	mssEC25-dup
+9782	116	2	1864-07-10	sent	65	2		0.444	0.6	0.156	3	OR I/36-1	cipher	none	clean
+9783	117	0	1864-07-10	sent	224	2		0.364	0.436	0.045	136	Butler Corr. 4	cipher	none	print-likely
+9784	118	0	1864-07-10	sent	297	2		0.237	0.29	0.065	137	OR I/40-3	cipher	none	print-likely
+9785	119	1	1864-07-11	sent	48	2		0.5	0.567	0.167	16	OR I/40-3	cipher	none	print-likely
+9786	120	0	1864-07-11	sent	313	2		0.331	0.459	0.087	6	OR I/42-3	cipher	none	clean
+9787	121	1	1864-07-11	sent	120	1		0.457	0.471	0.114	6	OR I/46-3	cipher	none	clean
+9788	122	0	1864-07-11	sent	48	1		0.444	0.389	0.139	7	OR I/45-2	cipher	none	print-likely
+9788	122	1	1864-07-12	sent	42	2		0.333	0.583	0.083	20	OR I/40-3	cipher	none	print-likely
+9789	123	0	1864-07-12	sent	332	2		0.361	0.474	0.072	136	OR I/40-3	cipher	none	print-likely
+9790	124	1	1864-07-13	sent	78	1		0.596	0.489	0.149	6	OR I/42-3	cipher	none	clean
+9791	125	0	1864-07-13	sent	70	1		0.467	0.467	0.067	4	OR I/43-1	cipher	none	clean
+9791	125	1	1864-07-13	sent	325	2		0.359	0.519	0.068	4	ORN I/9	cipher	none	clean
+9793	127	0	1864-07-14	sent	317	1		0.45	0.406	0.067	6	OR I/40-2	cipher	none	clean
+9794	128	1	1864-07-15	sent	354	2		0.319	0.472	0.083	7	OR I/43-2	cipher	none	print-likely
+9796	130	0	1864-07-15	sent	150	2		0.398	0.559	0.086	46	OR I/40-3	cipher	none	print-likely
+9797	131	0	1864-07-17	sent	136	1		0.403	0.375	0.097	6	OR I/33	cipher	none	clean
+9797	131	1	1864-07-18	sent	33	2		0.48	0.56	0.16	11	OR I/40-3	cipher	none	print-likely
+9798	132	0	1864-07-18	sent	63	2		0.326	0.465	0.14	3	OR I/42-1	cipher	none	clean
+9798	132	1	1864-07-19	sent	40	2		0.522	0.696	0.13	6	OR I/40-3	cipher	none	clean
+9798	132	2	1864-07-20	sent	50	2		0.233	0.533	0.167	23	OR I/40-3	cipher	none	print-likely
+9799	133	0	1864-07-21	sent	185	2		0.31	0.405	0.06	64	OR I/40-3	cipher	none	print-likely
+9800	134	0	1864-07-23	sent	35	1		0.571	0.381	0.19	3	OR I/42-2	cipher	none	clean
+9800	134	1	1864-07-24	sent	43	1		0.643	0.464	0.071	13	OR I/40-3	cipher	none	print-likely
+9800	134	2	1864-07-24	sent	58	2		0.35	0.6	0.175	3	OR I/33	cipher	none	clean
+9801	135	0	1864-07-24	sent	55	1		0.519	0.444	0.111	4	OR III/4	cipher	none	clean
+9801	135	1	1864-07-26	sent	38	2		0.474	0.368	0.105	12	OR I/40-3	cipher	none	print-likely
+9801	135	2	1864-07-27	sent	23	1		0.588	0.412	0.118	3	OR I/33	cipher	none	clean
+9802	136	1	1864-07-27	sent	81	1		0.333	0.333	0.133	6	Butler Corr. 5	cipher	none	clean
+9802	136	2	1864-07-27	sent	69	2		0.444	0.6	0.111	11	OR I/40-3	cipher	none	print-likely
+9803	137	0	1864-07-27	sent	43	9		0.261	0.261	0.174	5	OR I/44	cipher	none	clean
+9803	137	1	1864-07-28	sent	29	clear		0.188	0.188	0.062	3	OR I/40-2	clear	none	clear-sibling
+9803	137	2	1864-07-29	sent	32	2		0.318	0.545	0.136	8	OR I/40-3	cipher	none	print-likely
+9804	138	1	1864-07-30	sent	136	2		0.378	0.456	0.1	6	OR I/42-3	cipher	none	clean
+9805	139	0	1864-07-30	sent	193	2		0.32	0.426	0.082	7	OR II/6	cipher	mssEC25:5775/2[3tok]	print-likely
+9806	140	1	1864-07-31	sent	28	2		0.353	0.471	0.118	13	OR I/40-3	cipher	none	print-likely
+9806	140	2	1864-07-31	sent	185	1		0.327	0.317	0.038	6	OR II/6	cipher	none	clean
+9807	141	0	1864-08-01	sent	69	2		0.34	0.404	0.043	3	OR I/33	cipher	none	clean
+9807	141	1	1864-08-02	sent	165	2	2	0.352	0.448	0.067	4	OR I/46-3	cipher	none	clean
+9808	142	1	1864-08-02	sent	40	1		0.643	0.536	0.071	3	OR I/33	cipher	none	clean
+9808	142	2	1864-08-03	sent	91	9		0.18	0.2	0.06	4	OR I/46-2	cipher	none	clean
+9809	143	0	1864-08-03	sent	353	2		0.395	0.453	0.126	6	OR I/42-2	cipher	none	clean
+9811	145	0	1864-08-04	sent	69	2		0.222	0.278	0.056	6	OR I/51-2	cipher	none	clean
+9811	145	1	1864-08-05	sent	60	1		0.415	0.293	0.073	4	OR II/6	cipher	none	clean
+9811	145	2	1864-08-05	sent	75	1		0.255	0.234	0.064	4	OR I/33	cipher	none	clean
+9812	146	0	1864-08-05	sent	41	1		0.375	0.25	0.0	6	OR I/43-1	cipher	none	clean
+9812	146	1	1864-08-05	sent	37	1		0.542	0.542	0.167	3	OR I/40-3	cipher	none	clean
+9812	146	2	1864-08-05	sent	71	clear		0.021	0.085	0.0	3	OR I/33	clear	none	clear-sibling
+9813	147	0	1864-08-06	sent	114	2		0.324	0.471	0.103	4	OR I/45-1	cipher	none	clean
+9813	147	1	1864-08-06	sent	48	1		0.393	0.357	0.107	3	OR I/33	cipher	none	clean
+9814	148	0	1864-08-07	sent	234	9		0.326	0.376	0.135	6	OR III/4	cipher	none	clean
+9815	149	1	1864-08-07	sent	36	1		0.4	0.36	0.16	4	OR I/43-2	cipher	mssEC25:5777/0[copy0.76]	mssEC25-dup
+9816	150	0	1864-08-07	sent	30	1		0.474	0.368	0.105	4	OR I/40-3	cipher	none	clean
+9816	150	1	1864-08-07	sent	37	2		0.455	0.5	0.091	5	OR I/33	cipher	none	clean
+9816	150	2	1864-08-10	sent	0	short		0.0	0.0	0.0	0		clear	none	clear-sibling+short
+9816	150	3	1864-08-10	sent	52	clear		0.032	0.065	0.0	5	OR I/45-1	clear	none	clear-sibling
+9817	151	0	1864-08-11	sent	51	1		0.455	0.455	0.121	4	OR I/33	cipher	mssEC25:5778/1[copy0.73]	mssEC25-dup
+9817	151	1	1864-08-11	sent	101	clear		0.054	0.107	0.0	6	OR II/8	clear	none	clear-sibling
+9818	152	1	1864-08-11	sent	0	short		0.0	0.0	0.0	0		clear	none	clear-sibling+short
+9818	152	2	1864-08-11	sent	97	clear		0.054	0.143	0.0	6	OR I/33	clear	none	clear-sibling
+9819	153	1	1864-08-12	sent	35	2		0.538	0.577	0.154	3	OR I/33	cipher	none	clean
+9819	153	2	1864-08-13	sent	40	1	1	0.424	0.394	0.091	0		cipher	none	clean
+9819	153	3	1864-08-13	sent	59	1		0.214	0.238	0.095	7	OR I/51-2	cipher	none	print-likely
+9820	154	1	1864-08-13	sent	81	1		0.167	0.185	0.074	4	OR I/46-2	cipher	none	clean
+9820	154	2	1864-08-14	sent	20	1		0.143	0.214	0.0	3	OR I/44	cipher	none	clean
+9820	154	3	1864-08-16	sent	40	1		0.36	0.28	0.08	4	OR II/6	cipher	none	clean
+9821	155	0	1864-08-17	sent	48	2		0.226	0.387	0.065	23	Butler Corr. 5	cipher	none	print-likely
+9821	155	1	1864-08-18	sent	71	1		0.417	0.417	0.104	4	OR II/7	cipher	none	clean
+9822	156	0	1864-08-18	sent	221	2		0.244	0.358	0.081	12	OR I/45-1	cipher	none	print-likely
+9823	157	1	1864-08-19	sent	62	2		0.405	0.5	0.071	12	OR I/42-2	cipher	none	print-likely
+9823	157	2	1864-08-19	sent	66	1	1	0.442	0.302	0.116	3	OR I/40-1	cipher	none	clean
+9823	157	3	1864-08-19	sent	127	1		0.347	0.306	0.083	6	OR I/51-2	cipher	none	clean
+9824	158	1	1864-08-19	sent	45	2		0.36	0.48	0.12	14	OR I/42-2	cipher	none	print-likely
+9824	158	2	1864-08-19	sent	29	9		0.333	0.333	0.167	3	OR I/33	cipher	none	clean
+9825	159	1	1864-08-19	sent	66	1		0.326	0.302	0.116	4	OR I/43-2	cipher	none	clean
+9825	159	2	1864-08-19	sent	93	1		0.448	0.431	0.052	4	OR I/51-1	cipher	none	clean
+9826	160	0	1864-08-25	sent	231	1		0.441	0.375	0.074	6	OR I/42-3	cipher	none	clean
+9827	161	1	1864-08-26	sent	185	1		0.403	0.345	0.076	4	OR I/46-2	cipher	none	clean
+9828	162	1	1864-08-28	sent	135	clear		0.139	0.167	0.097	7	OR I/42-2	clear	none	print-likely+clear-sibling
+9829	163	1	1864-08-28	sent	35	1		0.458	0.417	0.083	3	OR I/46-3	cipher	none	clean
+9829	163	2	1864-09-01	sent	94	2		0.333	0.483	0.067	20	OR I/42-2	cipher	none	print-likely
+9830	164	1	1864-09-02	sent	85	9		0.26	0.38	0.04	4	Butler Corr. 4	cipher	none	clean
+9830	164	2	1864-09-02	sent	75	1		0.222	0.267	0.111	3	ORN I/11	cipher	none	clean
+9831	165	1	1864-09-02	sent	90	clear		0.137	0.137	0.039	7	OR III/5	clear	none	print-likely+clear-sibling
+9831	165	2	1864-09-03	sent	28	1		0.444	0.556	0.056	3	OR I/33	cipher	none	clean
+9831	165	3	1864-09-03	sent	70	9		0.298	0.404	0.128	11	OR I/42-2	cipher	none	print-likely
+9832	166	1	1864-09-03	sent	40	2		0.406	0.562	0.188	6	ORN I/10	cipher	none	clean
+9833	167	0	1864-09-04	sent	108	1		0.54	0.444	0.143	38	OR I/43-2	cipher	none	print-likely
+9833	167	1	1864-09-04	sent	254	2		0.337	0.434	0.06	48	OR I/43-2	cipher	none	print-likely
+9835	169	0	1864-09-05	sent	42	1		0.538	0.577	0.154	3	OR I/33	cipher	none	clean
+9835	169	1	1864-09-06	sent	49	1		0.393	0.357	0.107	4	OR I/42-2	cipher	none	clean
+9835	169	2	1864-09-06	sent	40	2		0.385	0.538	0.154	6	OR III/4	cipher	none	clean
+9836	170	0	1864-09-06	sent	84	1		0.275	0.373	0.039	3	OR I/36-2	cipher	none	clean
+9836	170	1	1864-09-07	sent	48	1		0.455	0.394	0.121	4	OR I/33	cipher	none	clean
+9837	171	0	1864-09-07	sent	66	9		0.206	0.235	0.088	9	OR II/8	cipher	none	print-likely
+9837	171	1	1864-09-08	sent	28	2		0.316	0.579	0.105	4	OR I/43-1	cipher	none	clean
+9838	172	0	1864-09-10	sent	94	1		0.438	0.422	0.078	13	OR I/43-2	cipher	none	print-likely
+9839	173	0	1864-09-12	sent	199	2		0.273	0.432	0.053	4	OR I/43-2	cipher	none	clean
+9840	174	0	1864-09-13	sent	112	2		0.333	0.397	0.048	4	ORN I/9	cipher	none	clean
+9840	174	1	1864-09-13	sent	21	1		0.615	0.538	0.308	3	OR I/43-1	cipher	none	clean
+9840	174	2	1864-09-13	sent	24	1		0.467	0.467	0.267	3	OR I/33	cipher	none	clean
+9841	175	0	1864-09-13	sent	76	1		0.343	0.229	0.114	5	OR I/51-2	cipher	none	clean
+9841	175	1	1864-09-13	sent	39	2		0.333	0.5	0.056	4	OR II/6	cipher	none	clean
+9841	175	2	1864-09-14	sent	26	2		0.278	0.389	0.111	8	OR I/42-2	cipher	none	print-likely
+9842	176	0	1864-09-14	sent	160	2		0.258	0.371	0.045	64	OR I/43-2	cipher	none	print-likely
+9842	176	1	1864-09-15	sent	48	1		0.424	0.455	0.182	4	OR I/43-2	cipher	none	clean
+9843	177	0	1864-09-16	sent	58	clear		0.053	0.079	0.0	4	Butler Corr. 3	clear	none	clear-sibling
+9843	177	1	1864-09-16	sent	73	1		0.364	0.386	0.045	4	OR I/42-2	cipher	none	clean
+9844	178	0	1864-09-17	sent	30	1		0.5	0.4	0.15	3	OR I/42-1	cipher	none	clean
+9844	178	1	1864-09-17	sent	101	9		0.118	0.235	0.0	9	Butler Corr. 3	cipher	none	print-likely
+9845	179	0	1864-09-18	sent	90	9		0.289	0.356	0.089	4	OR II/7	cipher	none	clean
+9845	179	1	1864-09-19	sent	24	2		0.471	0.529	0.176	3	OR I/33	cipher	none	clean
+9846	180	0	1864-09-19	sent	80	2		0.467	0.55	0.133	7	OR I/43-2	cipher	none	print-likely
+9846	180	1	1864-09-19	sent	29	1		0.333	0.429	0.048	3	ORN I/10	cipher	none	clean
+9846	180	2	1864-09-19	sent	59	clear		0.111	0.111	0.0	4	OR I/40-2	clear	none	clear-sibling
+9847	181	1	1864-09-19	sent	46	clear		0.065	0.129	0.0	5	OR I/45-1	clear	none	clear-sibling
+9847	181	2	1864-09-20	sent	27	1		0.389	0.389	0.222	18	OR I/43-2	cipher	none	print-likely
+9848	182	0	1864-09-21	sent	83	2		0.408	0.531	0.102	6	OR I/51-2	cipher	none	clean
+9848	182	1	1864-09-22	sent	86	2		0.364	0.545	0.073	4	Butler Corr. 4	cipher	none	clean
+9849	183	1	1864-09-22	sent	26	2		0.312	0.5	0.062	8	OR I/43-2	cipher	none	print-likely
+9849	183	2	1864-09-23	sent	41	1		0.536	0.429	0.179	6	OR I/43-2	cipher	none	clean
+9849	183	3	1864-09-24	sent	24	1		0.278	0.222	0.111	3	OR I/42-2	cipher	none	clean
+9849	183	4	1864-09-22	sent	49	1		0.618	0.412	0.088	12	OR I/43-2	cipher	none	print-likely
+9850	184	1	1864-09-25	sent	72	2		0.357	0.5	0.048	4	OR II/7	cipher	none	clean
+9850	184	2	1864-09-26	sent	60	2		0.351	0.459	0.054	6	OR II/7	cipher	none	clean
+9850	184	3	1864-09-27	sent	27	2		0.643	0.571	0.143	5	OR I/33	cipher	none	clean
+9851	185	1	1864-09-27	sent	71	2		0.25	0.325	0.025	28	OR I/43-2	cipher	none	print-likely
+9851	185	2	1864-09-28	sent	82	1		0.453	0.358	0.132	25	OR I/43-2	cipher	none	print-likely
+9852	186	1	1864-09-29	sent	33	1		0.455	0.364	0.045	0		cipher	none	clean
+9852	186	2	1864-09-29	sent	32	clear		0.13	0.13	0.087	3	OR I/40-3	clear	none	clear-sibling
+9852	186	3	1864-09-29	sent	19	1		0.643	0.643	0.214	3	OR I/33	cipher	none	clean
+9853	187	1	1864-09-30	sent	179	1		0.236	0.274	0.075	6	ORN I/11	cipher	none	clean
+9854	188	0	1864-09-30	sent	95	clear		0.04	0.12	0.0	6	OR I/43-2	clear	none	clear-sibling
+9854	188	1	1864-09-30	sent	18	1		0.615	0.692	0.077	3	OR I/36-3	cipher	none	clean
+9855	189	0	1864-10-01	sent	106	2	2	0.432	0.5	0.162	18	OR I/42-3	cipher	none	print-likely
+9855	189	1	1864-10-01	sent	44	1		0.607	0.5	0.179	6	ORN I/9	cipher	none	clean
+9856	190	1	1864-10-02	sent	152	2		0.307	0.387	0.133	60	OR I/43-2	cipher	none	print-likely
+9856	190	2	1864-10-03	sent	80	1		0.5	0.462	0.192	12	OR I/43-2	cipher	none	print-likely
+9857	191	0	1864-10-03	sent	60	1	1	0.576	0.485	0.121	16	OR I/42-3	cipher	none	print-likely
+9857	191	1	1864-10-03	sent	110	1	1	0.377	0.391	0.072	33	OR I/43-2	cipher	none	print-likely
+9858	192	1	1864-10-04	sent	41	1		0.24	0.16	0.04	10	Butler Corr. 5	cipher	none	print-likely
+9858	192	2	1864-10-04	sent	47	9		0.194	0.226	0.032	5	OR I/43-1	cipher	none	clean
+9858	192	3	1864-10-04	sent	35	1	1	0.462	0.385	0.154	5	OR I/33	cipher	none	clean
+9859	193	0	1864-10-04	sent	39	9		0.138	0.172	0.0	5	OR I/33	cipher	none	clean
+9859	193	1	1864-10-04	sent	30	9		0.19	0.333	0.0	3	Butler Corr. 5	cipher	none	clean
+9859	193	2	1864-10-04	sent	30	clear		0.087	0.087	0.0	3	OR I/33	clear	none	clear-sibling
+9860	194	0	1864-10-05	sent	39	1		0.414	0.345	0.069	3	OR I/36-3	cipher	none	clean
+9860	194	1	1864-10-05	sent	64	2		0.356	0.556	0.067	7	OR I/43-2	cipher	none	print-likely
+9860	194	2	1864-10-05	sent	95	2	2	0.311	0.328	0.098	41	OR I/42-2	cipher	none	print-likely
+9861	195	1	1864-10-06	sent	66	1		0.244	0.244	0.067	18	ORN I/10	cipher	none	print-likely
+9861	195	2	1864-10-07	sent	37	1		0.5	0.455	0.136	3	OR I/40-1	cipher	none	clean
+9862	196	0	1864-10-07	sent	57	1		0.321	0.321	0.036	6	ORN I/11	cipher	none	clean
+9862	196	1	1864-10-07	sent	57	9		0.229	0.257	0.114	6	OR II/8	cipher	none	clean
+9863	197	0	1864-10-07	sent	67	1		0.455	0.432	0.136	4	OR I/33	cipher	none	clean
+9863	197	1	1864-10-07	sent	33	2		0.5	0.5	0.167	4	OR I/42-3	cipher	none	clean
+9863	197	2	1864-10-08	sent	63	1	1	0.525	0.525	0.1	17	OR I/43-2	cipher	none	print-likely
+9864	198	0	1864-10-12	sent	83	1	1	0.464	0.429	0.089	4	ORN I/10	cipher	none	clean
+9864	198	1	1864-10-13	sent	46	1	1	0.542	0.542	0.083	3	OR I/40-1	cipher	none	clean
+9865	199	1	1864-10-13	sent	123	1		0.413	0.373	0.08	6	OR I/51-2	cipher	none	clean
+9865	199	2	1864-10-13	sent	94	2		0.322	0.407	0.119	25	OR I/43-2	cipher	none	print-likely
+9866	200	1	1864-10-13	sent	32	1		0.353	0.471	0.176	4	OR I/46-3	cipher	none	clean
+9866	200	2	1864-10-13	sent	64	1		0.267	0.267	0.089	15	OR I/43-2	cipher	none	print-likely
+9866	200	3	1864-10-14	sent	101	1		0.45	0.367	0.0	4	OR I/51-1	cipher	none	clean
+9867	201	1	1864-10-14	sent	100	2		0.311	0.328	0.066	26	OR I/43-2	cipher	none	print-likely
+9867	201	2	1864-10-15	sent	138	1		0.521	0.447	0.149	23	OR I/43-2	cipher	mssEC25:5790/1[copy0.84,9tok]	print-likely+mssEC25-dup
+9868	202	1	1864-10-15	sent	137	1		0.353	0.324	0.088	13	OR I/43-2	cipher	mssEC25:5791/1[12tok]	print-likely
+9869	203	1	1864-10-16	sent	25	1		0.625	0.562	0.125	3	OR I/36-2	cipher	none	clean
+9869	203	2	1864-10-18	sent	33	1		0.5	0.542	0.083	3	OR I/51-1	cipher	none	clean
+9869	203	3	1864-10-17	sent	62	2		0.333	0.436	0.103	29	OR I/43-2	cipher	none	print-likely
+9869	203	4	1864-10-17	sent	69	1		0.368	0.316	0.026	6	OR II/8	cipher	none	clean
+9870	204	1	1864-10-17	sent	46	1		0.448	0.414	0.034	3	OR I/33	cipher	none	clean
+9870	204	2	1864-10-17	sent	38	9		0.174	0.13	0.0	15	OR I/43-2	cipher	none	print-likely
+9870	204	3	1864-10-19	sent	72	2		0.288	0.327	0.173	13	OR I/43-2	cipher	none	print-likely
+9871	205	1	1864-10-19	sent	54	2		0.194	0.222	0.056	3	OR II/6	cipher	none	clean
+9871	205	2	1864-10-19	sent	62	2		0.122	0.146	0.0	3	OR I/42-2	cipher	none	clean
+9872	206	1	1864-10-19	sent	32	clear		0.105	0.105	0.053	5	OR I/43-2	clear	none	clear-sibling
+9872	206	2	1864-10-19	sent	152	2		0.356	0.436	0.139	19	OR I/43-2	cipher	none	print-likely
+9873	207	1	1864-10-20	sent	43	1		0.5	0.333	0.042	3	OR II/7	cipher	none	clean
+9873	207	2	1864-10-21	sent	31	1		0.429	0.333	0.048	4	OR II/7	cipher	none	clean
+9873	207	3	1864-10-21	sent	122	2		0.293	0.36	0.067	4	OR I/33	cipher	none	clean
+9874	208	1	1864-10-22	sent	61	2		0.24	0.4	0.06	3	ORN I/10	cipher	none	clean
+9874	208	2	1864-10-22	sent	78	1		0.234	0.277	0.085	6	OR I/51-1	cipher	none	clean
+9874	208	3	1864-10-22	sent	39	2		0.296	0.519	0.111	3	OR I/33	cipher	none	clean
+9875	209	1	1864-10-23	sent	118	2		0.239	0.343	0.06	7	OR I/43-2	cipher	none	print-likely
+9875	209	2	1864-10-24	sent	70	1		0.5	0.364	0.068	3	OR I/40-3	cipher	none	clean
+9876	210	0	1864-10-24	sent	94	2		0.22	0.28	0.04	6	OR I/33	cipher	none	clean
+9876	210	1	1864-10-27	sent	82	2		0.308	0.519	0.077	4	OR I/46-1	cipher	none	clean
+9877	211	1	1864-10-27	sent	52	1		0.405	0.324	0.054	5	OR I/33	cipher	none	clean
+9877	211	2	1864-10-27	sent	26	1		0.6	0.533	0.133	4	OR I/45-2	cipher	none	clean
+9877	211	3	1864-10-28	sent	52	1		0.606	0.485	0.242	5	OR I/45-2	cipher	none	clean
+9878	212	1	1864-10-28	sent	44	1		0.652	0.565	0.087	4	Butler Corr. 4	cipher	none	clean
+9878	212	2	1864-10-28	sent	32	1		0.571	0.476	0.095	3	OR I/42-2	cipher	none	clean
+9878	212	3	1864-10-30	sent	59	2		0.333	0.389	0.111	10	OR I/43-2	cipher	none	print-likely
+9878	212	4	1864-10-30	sent	25	clear		0.062	0.062	0.0	3	OR III/4	clear	none	clear-sibling
+9879	213	0	1864-10-30	sent	106	2		0.145	0.261	0.058	3	OR I/36-2	cipher	none	clean
+9879	213	1	1864-10-31	sent	41	2		0.24	0.36	0.08	4	OR I/44	cipher	none	clean
+9880	214	0	1864-10-31	sent	40	2	2	0.48	0.64	0.04	4	OR I/51-2	cipher	none	clean
+9880	214	1	1864-10-31	sent	22	1	1	0.562	0.375	0.188	4	OR I/36-1	cipher	none	clean
+9880	214	2	1864-10-31	sent	63	9		0.45	0.4	0.125	3	OR I/40-2	cipher	none	clean
+9881	215	0	1864-11-01	sent	89	2		0.269	0.442	0.038	25	OR I/43-2	cipher	none	print-likely
+9881	215	1	1864-11-01	sent	93	1		0.491	0.564	0.127	4	OR II/7	cipher	none	clean
+9882	216	0	1864-11-01	sent	152	1		0.556	0.456	0.044	6	OR I/46-3	cipher	none	clean
+9883	217	0	1864-11-01	sent	88	1		0.319	0.404	0.128	6	OR I/33	cipher	none	clean
+9883	217	1	1864-11-02	sent	65	1		0.324	0.353	0.147	6	Butler Corr. 3	cipher	none	clean
+9884	218	0	1864-11-02	sent	54	1		0.484	0.355	0.194	19	OR I/42-3	cipher	none	print-likely
+9884	218	1	1864-11-02	sent	84	1		0.545	0.341	0.091	34	OR I/43-2	cipher	none	print-likely
+9885	219	1	1864-10-02	sent	99	1		0.283	0.196	0.087	5	OR I/46-3	cipher	none	clean
+9885	219	2	1864-11-02	sent	42	1		0.615	0.462	0.192	11	OR I/43-2	cipher	none	print-likely
+9885	219	3	1864-11-03	sent	53	1		0.4	0.343	0.086	6	OR I/43-2	cipher	none	clean
+9886	220	0	1864-11-03	sent	93	1		0.458	0.441	0.136	4	ORN I/10	cipher	none	clean
+9886	220	1	1864-11-03	sent	63	1		0.471	0.559	0.206	4	OR I/40-1	cipher	none	clean
+9887	221	0	1864-11-03	sent	80	1		0.333	0.306	0.139	5	OR I/43-2	cipher	none	clean
+9887	221	1	1864-11-03	sent	72	1		0.386	0.341	0.159	17	OR I/43-2	cipher	none	print-likely
+9888	222	1	1864-11-05	sent	126	2		0.419	0.541	0.149	4	OR I/40-3	cipher	none	clean
+9888	222	2	1864-11-05	sent	87	1		0.438	0.438	0.062	4	OR I/36-3	cipher	none	clean
+9889	223	0	1864-11-05	sent	53	1		0.524	0.5	0.143	3	OR I/33	cipher	none	clean
+9889	223	1	1864-11-05	sent	36	1		0.536	0.536	0.25	3	OR I/33	cipher	MS18:9889/2[copy0.53] MS18:9890/0[copy0.53]	dup
+9889	223	2	1864-11-05	sent	42	1		0.485	0.485	0.212	3	OR I/33	cipher	none	clean
+9890	224	0	1864-11-05	sent	33	1		0.583	0.583	0.25	3	OR I/33	cipher	MS18:9889/1[copy0.58]	dup
+9890	224	1	1864-11-06	sent	252	2		0.42	0.522	0.102	7	OR II/6	cipher	none	print-likely
+9892	226	0	1864-11-07	sent	108	1		0.306	0.371	0.097	54	OR I/43-2	cipher	none	print-likely
+9892	226	1	1864-11-08	sent	50	1		0.543	0.486	0.086	3	OR I/40-3	cipher	none	clean
+9893	227	1	1864-11-08	sent	100	2		0.567	0.597	0.149	3	OR I/40-3	cipher	none	clean
+9893	227	2	1864-11-09	sent	74	1		0.6	0.48	0.16	6	ORN I/9	cipher	none	clean
+9894	228	1	1864-11-09	sent	241	2		0.228	0.26	0.063	151	OR I/42-3	cipher	none	print-likely
+9895	229	1	1864-11-09	sent	56	2		0.241	0.379	0.138	33	OR I/42-3	cipher	none	print-likely
+9895	229	2	1864-11-10	sent	73	1		0.365	0.327	0.115	4	OR I/44	cipher	none	clean
+9896	230	1	1864-11-11	sent	69	1		0.412	0.471	0.088	36	OR I/42-3	cipher	none	print-likely
+9896	230	2	1864-11-12	sent	104	2		0.407	0.542	0.085	4	OR I/33	cipher	none	clean
+9897	231	1	1864-11-15	sent	63	1		0.353	0.324	0.118	6	OR I/51-2	cipher	none	clean
+9897	231	2	1864-11-15	sent	33	9		0.35	0.45	0.15	4	OR I/51-1	cipher	none	clean
+9897	231	3	1864-11-16	sent	33	2		0.304	0.522	0.087	3	OR I/42-3	cipher	none	clean
+9898	232	1	1864-11-18	sent	42	2		0.3	0.533	0.1	7	OR I/43-2	cipher	none	print-likely
+9898	232	2	1864-11-23	sent	64	2		0.277	0.404	0.043	4	OR I/44	cipher	none	clean
+9899	233	1	1864-11-25	sent	159	1		0.441	0.409	0.086	35	Butler Corr. 5	cipher	none	print-likely
+9899	233	2	1864-11-25	sent	31	2		0.409	0.455	0.091	3	OR I/36-1	cipher	none	clean
+9900	234	1	1864-11-26	sent	80	1		0.333	0.312	0.125	14	OR I/45-1	cipher	none	print-likely
+9900	234	2	1864-11-27	sent	57	2		0.278	0.333	0.083	14	OR I/43-2	cipher	none	print-likely
+9901	235	0	1864-11-29	sent	46	1		0.355	0.258	0.065	5	OR III/5	cipher	mssEC25:5811/1[copy0.82]	mssEC25-dup
+9901	235	1	1864-11-29	sent	44	2		0.448	0.414	0.103	12	OR I/43-2	cipher	none	print-likely
+9901	235	2	1864-11-29	sent	51	1		0.594	0.5	0.188	21	OR I/43-2	cipher	none	print-likely
+9902	236	1	1864-11-30	sent	33	2		0.5	0.7	0.15	3	OR I/33	cipher	none	clean
+9902	236	2	1864-12-01	sent	55	1		0.314	0.286	0.086	9	OR I/42-3	cipher	none	print-likely
+9902	236	3	1864-12-02	sent	90	2		0.464	0.554	0.143	7	OR I/45-2	cipher	none	print-likely
+9903	237	0	1864-12-02	sent	35	1		0.444	0.333	0.111	8	ORN I/11	cipher	mssEC25:5815/1[copy0.82,3tok]	print-likely+mssEC25-dup
+9903	237	1	1864-12-02	sent	60	1		0.468	0.234	0.128	5	Butler Corr. 5	cipher	none	clean
+9903	237	2	1864-12-03	sent	81	2		0.326	0.442	0.093	26	OR I/45-2	cipher	none	print-likely
+9904	238	0	1864-12-03	sent	24	1		0.647	0.647	0.176	3	Butler Corr. 3	cipher	none	clean
+9904	238	1	1864-12-03	sent	36	1		0.4	0.36	0.12	3	OR I/51-2	cipher	none	clean
+9904	238	2	1864-12-03	sent	149	2		0.269	0.376	0.065	33	OR I/45-2	cipher	none	print-likely
+9905	239	1	1864-12-03	sent	70	2		0.326	0.522	0.087	3	OR I/33	cipher	none	clean
+9905	239	2	1864-12-04	sent	38	2		0.4	0.48	0.2	12	OR I/43-2	cipher	none	print-likely
+9906	240	0	1864-12-05	sent	49	2		0.419	0.516	0.129	4	OR I/36-3	cipher	none	clean
+9906	240	1	1864-12-05	sent	36	1		0.565	0.522	0.217	4	OR II/8	cipher	none	clean
+9906	240	2	1864-12-05	sent	43	2		0.36	0.36	0.08	16	OR I/43-2	cipher	none	print-likely
+9907	241	0	1864-12-05	sent	120	2		0.346	0.543	0.062	39	OR I/45-2	cipher	none	print-likely
+9907	241	1	1864-12-06	sent	46	1		0.464	0.393	0.107	4	OR I/45-2	cipher	none	clean
+9908	242	0	1864-12-06	sent	35	1		0.458	0.458	0.125	6	OR I/45-2	cipher	none	clean
+9908	242	1	1864-12-06	sent	50	1		0.618	0.441	0.029	14	OR I/45-2	cipher	none	print-likely
+9908	242	2	1864-12-06	sent	44	2		0.355	0.484	0.097	6	OR I/45-2	cipher	none	clean
+9909	243	1	1864-12-07	sent	84	2		0.405	0.548	0.143	19	OR I/45-2	cipher	none	print-likely
+9909	243	2	1864-12-07	sent	26	2		0.45	0.6	0.25	6	OR I/43-2	cipher	none	clean
+9910	244	0	1864-12-08	sent	54	2		0.237	0.395	0.079	20	OR I/42-3	cipher	none	print-likely
+9910	244	1	1864-12-08	sent	42	9		0.55	0.45	0.2	19	OR I/45-2	cipher	none	print-likely
+9910	244	2	1864-12-08	sent	39	2		0.308	0.385	0.038	18	OR I/45-2	cipher	none	print-likely
+9911	245	1	1864-12-09	sent	88	1		0.388	0.388	0.102	32	OR I/45-2	cipher	none	print-likely
+9911	245	2	1864-12-09	sent	166	2		0.311	0.368	0.085	10	OR I/45-2	cipher	none	print-likely
+9912	246	1	1864-12-10	sent	69	1		0.333	0.333	0.071	26	OR I/45-2	cipher	none	print-likely
+9913	247	0	1864-12-10	sent	59	2		0.19	0.429	0.095	3	ORN I/10	cipher	none	clean
+9913	247	1	1864-12-12	sent	80	1		0.2	0.16	0.04	5	OR I/36-3	cipher	mssEC25:5829/0[5tok]	clean
+9913	247	2	1864-12-13	sent	39	2		0.286	0.321	0.107	3	OR I/42-3	cipher	none	clean
+9914	248	0	1864-12-14	sent	129	9		0.333	0.356	0.069	33	OR I/45-2	cipher	none	print-likely
+9914	248	1	1864-12-14	sent	46	2		0.241	0.483	0.103	3	OR I/36-1	cipher	none	clean
+9915	249	1	1864-12-15	sent	99	2		0.328	0.391	0.156	24	OR I/44	cipher	none	print-likely
+9915	249	2	1864-12-15	sent	31	2		0.227	0.318	0.045	14	OR I/42-3	cipher	none	print-likely
+9916	250	0	1864-12-15	sent	45	1		0.36	0.4	0.08	13	OR I/45-1	cipher	none	print-likely
+9916	250	1	1864-12-16	sent	53	2		0.355	0.323	0.065	3	OR I/40-2	cipher	none	clean
+9916	250	2	1864-12-17	sent	65	2		0.36	0.42	0.14	3	ORN I/10	cipher	none	clean
+9917	251	0	1864-12-18	sent	27	2		0.263	0.316	0.158	6	OR III/5	cipher	none	clean
+9917	251	1	1864-12-18	sent	98	1		0.385	0.354	0.077	25	OR I/45-2	cipher	none	print-likely
+9917	251	2	1864-12-19	sent	122	2		0.306	0.424	0.094	22	OR I/43-2	cipher	mssEC25:5838/1[4tok]	print-likely
+9918	252	1	1864-12-19	sent	104	2		0.164	0.393	0.033	48	OR I/45-2	cipher	none	print-likely
+9919	253	0	1864-12-20	sent	30	2		0.316	0.579	0.105	8	OR I/43-2	cipher	none	print-likely
+9919	253	1	1864-12-20	sent	28	2		0.409	0.455	0.091	10	ORN I/11	cipher	none	print-likely
+9919	253	2	1864-12-20	sent	37	1		0.261	0.261	0.043	4	OR I/33	cipher	none	clean
+9920	254	1	1864-12-21	sent	135	1		0.403	0.377	0.117	52	OR I/45-2	cipher	none	print-likely
+9920	254	2	1864-12-22	sent	255	1		0.321	0.321	0.083	91	OR I/45-2	cipher	none	print-likely
+9922	256	1	1864-12-26	sent	122	2		0.145	0.197	0.013	52	OR I/44	cipher	none	print-likely
+9922	256	2	1864-12-27	sent	33	1		0.238	0.19	0.0	10	OR I/44	cipher	none	print-likely
+9922	256	3	1864-12-28	sent	58	9		0.2	0.225	0.05	9	OR I/42-3	cipher	none	print-likely
+9923	257	1	1864-12-28	sent	23	9		0.267	0.267	0.067	10	OR I/42-3	cipher	none	print-likely
+9923	257	2	1864-12-30	sent	60	1		0.378	0.297	0.108	3	OR I/36-3	cipher	MS18:9923/3[3tok]	clean
+9923	257	3	1864-12-30	sent	62	1		0.463	0.415	0.122	3	OR I/33	cipher	MS18:9923/2[3tok]	clean
+9924	258	1	1864-12-30	sent	168	9		0.245	0.306	0.061	41	OR I/42-3	cipher	none	print-likely
+9925	259	1	1864-12-31	sent	162	1		0.457	0.435	0.087	49	OR I/45-2	cipher	none	print-likely
+9926	260	1	1864-12-31	sent	116	9		0.241	0.349	0.06	3	OR I/51-1	cipher	none	clean
+9927	261	1	1865-01-02	sent	157	2		0.391	0.435	0.13	30	Butler Corr. 5	cipher	none	print-likely
+9927	261	2	1865-01-02	sent	44	2		0.45	0.5	0.1	13	OR I/46-2	cipher	none	print-likely
+9928	262	1	1865-01-03	sent	33	9		0.333	0.458	0.125	3	OR I/40-2	cipher	none	clean
+9928	262	2	1865-01-03	sent	38	1		0.318	0.318	0.182	8	OR I/43-1	cipher	none	print-likely
+9928	262	3	1865-01-03	sent	59	9		0.195	0.293	0.049	4	OR I/46-3	cipher	none	clean
+9929	263	1	1865-01-03	sent	85	1		0.396	0.358	0.019	3	OR I/33	cipher	mssEC25:5849/0[3tok]	clean
+9929	263	2	1865-01-05	sent	61	2		0.341	0.455	0.045	14	OR I/46-2	cipher	none	print-likely
+9930	264	1	1865-01-05	sent	56	2		0.389	0.5	0.194	3	OR II/8	cipher	none	clean
+9930	264	2	1865-01-05	sent	34	9		0.15	0.25	0.05	12	OR I/43-1	cipher	none	print-likely
+9930	264	3	1865-01-05	sent	50	1		0.312	0.375	0.125	5	OR III/5	cipher	mssEC25:5859/0[copy0.83]	mssEC25-dup
+9931	265	1	1865-01-05	sent	80	1		0.431	0.431	0.118	6	ORN I/9	cipher	none	clean
+9931	265	2	1865-01-05	sent	53	1		0.364	0.333	0.182	19	OR I/46-2	cipher	mssEC25:5859/2[copy0.82]	print-likely+mssEC25-dup
+9931	265	3	1865-01-06	sent	21	1		0.2	0.133	0.067	3	OR I/33	cipher	none	clean
+9931	265	4	1865-01-07	sent	35	1		0.552	0.552	0.172	4	OR I/46-2	cipher	none	clean
+9932	266	1	1865-01-07	sent	136	9		0.347	0.367	0.051	22	OR I/46-2	cipher	none	print-likely
+9932	266	2	1865-01-07	sent	47	1		0.444	0.444	0.074	8	OR I/46-2	cipher	none	print-likely
+9933	267	1	1865-01-09	sent	20	1		0.316	0.211	0.0	0		cipher	none	clean
+9933	267	2	1865-01-10	sent	112	2		0.267	0.45	0.05	4	ORN I/9	cipher	none	clean
+9934	268	1	1865-01-10	sent	194	9		0.256	0.293	0.015	13	OR I/45-2	cipher	none	print-likely
+9935	269	1	1865-01-13	sent	47	1		0.292	0.292	0.167	26	OR I/46-2	cipher	none	print-likely
+9935	269	2	1865-01-15	sent	65	1		0.455	0.455	0.159	6	OR I/43-2	cipher	none	clean
+9935	269	3	1865-01-15	sent	81	1		0.205	0.364	0.023	33	OR I/46-2	cipher	none	print-likely
+9936	270	1	1865-01-17	sent	22	1		0.5	0.562	0.062	3	OR I/33	cipher	none	clean
+9936	270	2	1865-01-17	sent	17	1		0.538	0.615	0.077	0		cipher	none	clean
+9936	270	3	1865-01-18	sent	122	9		0.171	0.25	0.026	36	OR I/46-2	cipher	mssEC19:9163/1[3tok]	print-likely
+9937	271	1	1865-01-19	sent	261	9		0.447	0.403	0.094	59	OR I/45-2	cipher	none	print-likely
+9938	272	1	1865-01-19	sent	18	9		0.2	0.133	0.067	0		cipher	none	clean
+9938	272	2	1865-01-20	sent	72	1		0.195	0.146	0.049	6	ORN I/11	cipher	none	clean
+9938	272	3	1865-01-21	sent	91	1		0.396	0.377	0.113	7	OR I/43-1	cipher	none	print-likely
+9939	273	1	1865-01-21	sent	24	1		0.6	0.533	0.2	10	OR I/43-1	cipher	none	print-likely
+9939	273	2	1865-01-21	sent	24	1		0.8	0.6	0.2	4	OR I/46-2	cipher	mssEC25:5883/2[copy0.77]	mssEC25-dup
+9939	273	3	1865-01-21	sent	27	9		0.217	0.391	0.13	0		cipher	none	clean
+9940	274	0	1865-01-21	sent	54	9		0.367	0.4	0.133	5	OR I/43-1	cipher	none	clean
+9940	274	1	1865-01-21	sent	68	9		0.3	0.4	0.1	5	OR I/33	cipher	none	clean
+9940	274	2	1865-01-21	sent	24	1		0.5	0.571	0.286	10	OR I/43-1	cipher	none	print-likely
+9941	275	0	1865-01-23	sent	99	1		0.383	0.283	0.15	4	OR I/42-3	cipher	none	clean
+9941	275	1	1865-01-23	sent	143	2		0.234	0.298	0.085	20	OR I/43-1	cipher	none	print-likely
+9942	276	1	1865-01-23	sent	24	1		0.471	0.353	0.059	3	OR I/42-3	cipher	none	clean
+9942	276	2	1865-01-24	sent	30	9		0.391	0.435	0.13	11	OR I/46-2	cipher	mssEC25:5886/1[copy0.89]	print-likely+mssEC25-dup
+9943	277	0	1865-01-24	sent	112	1		0.425	0.411	0.137	4	Butler Corr. 3	cipher	mssEC25:5887/0[copy0.75,4tok]	mssEC25-dup
+9943	277	1	1865-01-24	sent	32	9		0.143	0.143	0.0	15	OR I/46-2	cipher	none	print-likely
+9944	278	1	1865-01-25	sent	32	2		0.35	0.5	0.15	7	OR I/46-2	cipher	none	print-likely
+9944	278	2	1865-01-25	sent	61	1		0.408	0.265	0.082	5	OR I/46-2	cipher	none	clean
+9944	278	3	1865-01-25	sent	48	1		0.3	0.4	0.2	6	OR I/43-1	cipher	mssEC25:5888/0[copy0.80]	mssEC25-dup
+9945	279	0	1865-01-25	sent	77	clear		0.1	0.14	0.0	4	OR I/45-1	clear	none	clear-sibling
+9945	279	1	1865-01-25	sent	71	1		0.5	0.5	0.065	3	OR I/40-3	cipher	none	clean
+9946	280	0	1865-01-26	sent	54	2		0.167	0.267	0.0	22	OR I/46-2	cipher	none	print-likely
+9946	280	1	1865-01-26	sent	98	2		0.371	0.516	0.097	3	OR I/33	cipher	none	clean
+9947	281	1	1865-01-26	sent	74	1		0.5	0.455	0.114	4	OR I/43-1	cipher	none	clean
+9947	281	2	1865-01-26	sent	71	1		0.585	0.488	0.146	4	OR I/33	cipher	none	clean
+9947	281	3	1865-01-27	sent	32	1		0.778	0.667	0.167	4	OR I/36-3	cipher	none	clean
+9948	282	1	1865-01-27	sent	54	1		0.205	0.231	0.128	13	ORN I/11	cipher	mssEC25:5890/1[copy0.83,9tok]	print-likely+mssEC25-dup
+9948	282	2	1865-01-29	sent	77	1		0.359	0.256	0.077	37	OR I/46-2	cipher	none	print-likely
+9948	282	3	1865-01-31	sent	23	1		0.562	0.5	0.188	3	OR I/36-2	cipher	none	clean
+9949	283	1	1865-01-31	sent	58	2		0.175	0.225	0.05	10	OR I/46-2	cipher	none	print-likely
+9949	283	2	1865-01-31	sent	207	9		0.305	0.382	0.061	22	OR I/46-2	cipher	mssEC19:9174/1[6tok]	print-likely
+9950	284	1	1865-01-31	sent	17	2		0.231	0.385	0.077	0		cipher	none	clean
+9950	284	2	1865-01-31	sent	31	1		0.19	0.143	0.0	3	OR I/43-2	cipher	none	clean
+9950	284	3	1865-02-01	sent	26	2		0.3	0.3	0.05	4	OR I/46-2	cipher	none	clean
+9951	285	1	1865-02-01	sent	50	9		0.343	0.4	0.029	3	OR I/43-1	cipher	none	clean
+9951	285	2	1865-02-01	sent	65	1		0.513	0.487	0.154	3	OR I/33	cipher	none	clean
+9951	285	3	1865-02-01	sent	41	2		0.233	0.267	0.033	3	OR I/46-2	cipher	none	clean
+9952	286	1	1865-02-03	sent	40	1		0.2	0.2	0.0	4	OR I/42-2	cipher	none	clean
+9952	286	2	1865-02-04	sent	45	1		0.467	0.433	0.067	4	OR II/7	cipher	none	clean
+9953	287	1	1865-02-04	sent	34	1		0.464	0.464	0.214	0		cipher	none	clean
+9953	287	2	1865-02-04	sent	100	9		0.269	0.343	0.09	15	OR I/43-1	cipher	none	print-likely
+9954	288	1	1865-02-04	sent	120	9		0.233	0.274	0.041	4	OR I/33	cipher	none	clean
+9954	288	2	1865-02-04	sent	21	1		0.462	0.462	0.0	0		cipher	none	clean
+9955	289	1	1865-02-04	sent	129	1		0.494	0.442	0.013	4	Butler Corr. 3	cipher	none	clean
+9955	289	2	1865-02-04	sent	121	2		0.276	0.316	0.053	15	OR I/46-2	cipher	none	print-likely
+9956	290	1	1865-02-05	sent	32	9		0.19	0.19	0.095	3	OR I/40-3	cipher	none	clean
+9956	290	2	1865-02-05	sent	89	9		0.233	0.267	0.017	8	OR I/43-1	cipher	mssEC19:9180/1[3tok]	print-likely
+9957	291	1	1865-02-06	sent	86	2		0.185	0.2	0.031	12	OR I/43-1	cipher	none	print-likely
+9957	291	2	1865-02-09	sent	193	9		0.27	0.355	0.035	25	OR I/46-2	cipher	none	print-likely
+9958	292	1	1865-02-15	sent	39	1		0.393	0.393	0.071	3	Butler Corr. 5	cipher	none	clean
+9959	293	1	1865-02-16	sent	225	9		0.222	0.278	0.056	87	OR I/43-1	cipher	none	print-likely
+9960	294	1	1865-02-18	sent	76	clear		0.109	0.145	0.073	6	OR I/46-2	clear	none	clear-sibling
+9960	294	2	1865-02-18	sent	80	clear		0.157	0.118	0.02	43	OR I/43-1	clear	none	print-likely+clear-sibling
+9961	295	1	1865-02-18	sent	47	2		0.464	0.536	0.107	3	OR I/36-2	cipher	none	clean
+9961	295	2	1865-02-23	sent	131	9		0.198	0.286	0.044	13	OR I/46-2	cipher	none	print-likely
+9962	296	1	1865-02-24	sent	132	clear		0.132	0.162	0.015	65	OR I/46-2	clear	none	print-likely+clear-sibling
+9962	296	2	1865-02-24	sent	47	2		0.321	0.464	0.107	7	OR I/46-2	cipher	none	print-likely
+9963	297	1	1865-02-25	sent	63	9		0.333	0.41	0.103	5	OR I/43-1	cipher	none	clean
+9963	297	2	1865-02-25	sent	47	1		0.2	0.233	0.067	11	OR I/46-2	cipher	none	print-likely
+9963	297	3	1865-02-25	sent	60	9		0.2	0.267	0.067	11	OR I/46-2	cipher	none	print-likely
+9964	298	0	1865-02-26	sent	54	2		0.444	0.583	0.167	7	OR I/46-2	cipher	MS18:9964/2[3tok]	print-likely
+9964	298	1	1865-02-26	sent	33	1		0.464	0.5	0.179	0		cipher	none	clean
+9964	298	2	1865-02-26	sent	29	9		0.217	0.391	0.043	3	OR I/40-3	cipher	MS18:9964/0[3tok]	clean
+9964	298	3	1865-02-27	sent	37	9		0.161	0.387	0.065	3	OR I/46-2	cipher	none	clean
+9965	299	0	1865-02-27	sent	45	1		0.667	0.556	0.111	14	OR I/46-2	cipher	none	print-likely
+9965	299	1	1865-02-28	sent	39	1		0.667	0.485	0.182	0		cipher	none	clean
+9965	299	2	1865-03-01	sent	72	2		0.156	0.178	0.044	28	OR I/46-2	cipher	none	print-likely
+9966	300	1	1865-03-01	sent	110	1		0.712	0.466	0.11	3	OR I/42-2	cipher	none	clean
+9966	300	2	1865-03-02	sent	29	9		0.471	0.588	0.176	12	OR I/46-2	cipher	none	print-likely
+9966	300	3	1865-03-01	sent	26	9		0.111	0.222	0.0	4	ORN I/11	cipher	none	clean
+9967	301	0	1865-03-02	sent	50	9		0.209	0.349	0.07	4	OR I/42-2	cipher	none	clean
+9967	301	1	1865-03-02	sent	269	clear		0.158	0.173	0.03	151	OR I/46-2	clear	none	print-likely+clear-sibling
+9969	303	1	1865-03-02	sent	108	9		0.189	0.226	0.019	25	OR I/46-2	cipher	none	print-likely
+9969	303	2	1865-03-03	sent	138	clear		0.091	0.13	0.0	61	OR I/46-2	clear	none	print-likely+clear-sibling
+9970	304	1	1865-03-03	sent	76	9		0.255	0.327	0.055	8	OR I/43-1	cipher	none	print-likely
+9970	304	2	1865-03-03	sent	60	clear		0.038	0.115	0.0	4	OR I/33	clear	none	clear-sibling
+9971	305	0	1865-03-04	sent	35	2	2	0.391	0.652	0.043	7	OR I/46-2	cipher	none	print-likely
+9971	305	1	1865-03-04	sent	52	1		0.297	0.243	0.081	15	OR I/46-2	cipher	none	print-likely
+9971	305	2	1865-03-06	sent	22	9		0.118	0.235	0.0	0		cipher	none	clean
+9971	305	3	1865-03-07	sent	45	9		0.25	0.278	0.083	3	OR I/44	cipher	none	clean
+9972	306	0	1865-03-08	sent	427	9		0.192	0.241	0.021	64	OR I/46-2	cipher	mssEC25:5926/0[3tok]	print-likely
+9974	308	0		sent	361	9		0.224	0.294	0.035	53	OR I/46-2	cipher	none	print-likely
+9975	309	1	1865-03-09	sent	45	1		0.481	0.444	0.148	5	OR I/46-2	cipher	none	clean
+9976	310	1	1865-03-09	sent	57	9		0.143	0.19	0.024	12	OR I/46-2	cipher	none	print-likely
+9976	310	2	1865-03-10	sent	45	2	2	0.367	0.467	0.033	4	OR I/45-2	cipher	none	clean
+9976	310	3	1865-03-10	sent	75	9		0.212	0.25	0.038	3	OR I/36-1	cipher	none	clean
+9977	311	1	1865-03-11	sent	111	9		0.185	0.277	0.031	37	OR I/43-1	cipher	none	print-likely
+9977	311	2	1865-03-11	sent	72	1		0.349	0.442	0.116	7	OR I/36-3	cipher	none	print-likely
+9978	312	1	1865-03-12	sent	88	2		0.44	0.5	0.14	22	OR I/43-1	cipher	none	print-likely
+9978	312	2	1865-03-12	sent	57	9		0.167	0.19	0.024	4	OR I/45-2	cipher	none	clean
+9978	312	3	1865-03-21	sent	25	9		0.222	0.222	0.056	3	OR I/33	cipher	none	clean
+9979	313	1	1865-03-21	sent	190	1		0.459	0.405	0.126	25	OR I/43-1	cipher	none	print-likely
+9980	314	1	1865-03-22	sent	90	clear		0.1	0.16	0.02	26	OR I/46-3	clear	none	print-likely+clear-sibling
+9980	314	2	1865-03-23	sent	62	1		0.351	0.324	0.108	30	OR I/46-3	cipher	none	print-likely
+9981	315	0	1865-03-25	sent	66	2		0.146	0.188	0.021	6	OR I/46-3	cipher	mssEC19:9208/3[3tok]	clean
+9981	315	1	1865-03-25	sent	77	9		0.255	0.218	0.055	24	OR I/46-3	cipher	none	print-likely
+9982	316	1	1865-03-26	sent	119	9		0.167	0.231	0.064	27	OR I/46-3	cipher	mssEC19:9209/0[6tok]	print-likely
+9982	316	2	1865-03-27	sent	77	1		0.298	0.319	0.128	4	OR II/6	cipher	none	clean
+9983	317	1	1865-03-28	sent	195	9		0.143	0.195	0.008	4	OR I/33	cipher	none	clean
+9983	317	2	1865-04-04	sent	25	9		0.238	0.333	0.048	0		cipher	none	clean
+9984	318	1	1865-04-05	sent	34	1		0.385	0.462	0.115	0		cipher	none	clean
+9984	318	2	1865-04-05	sent	77	9		0.14	0.175	0.035	5	OR I/46-3	cipher	none	clean
+9985	319	1	1865-04-05	sent	110	9		0.236	0.222	0.014	33	OR I/46-3	cipher	MS18:9986/0[5tok]	print-likely
+9985	319	2	1865-04-05	sent	36	clear		0.045	0.136	0.045	3	ORN I/11	clear	none	clear-sibling
+9986	320	0	1865-04-05	sent	94	9		0.164	0.164	0.0	18	OR I/46-3	cipher	MS18:9985/1[5tok]	print-likely
+9986	320	1	1865-04-06	sent	45	9		0.133	0.267	0.067	3	OR III/4	cipher	none	clean
+9987	321	1	1865-04-08	sent	128	9		0.163	0.212	0.013	3	OR I/33	cipher	none	clean
+9987	321	2	1865-04-08	sent	24	2		0.2	0.2	0.05	0		cipher	none	clean
+9987	321	3	1865-04-09	sent	36	9		0.391	0.348	0.087	5	Butler Corr. 5	cipher	none	clean
+9988	322	1	1865-04-09	sent	49	9		0.207	0.241	0.034	4	OR II/8	cipher	none	clean
+9988	322	2	1865-04-09	sent	54	2		0.357	0.393	0.071	5	OR I/43-2	cipher	none	clean
+9988	322	3	1865-04-10	sent	28	2		0.2	0.2	0.0	4	OR I/46-3	cipher	none	clean
+9988	322	4	1865-04-11	sent	36	1		0.174	0.217	0.043	13	OR I/46-3	cipher	none	print-likely
+9989	323	1	1865-04-11	sent	100	1		0.31	0.293	0.086	39	OR I/46-3	cipher	none	print-likely
+9989	323	2	1865-04-12	sent	112	1		0.314	0.314	0.118	49	OR I/46-3	cipher	none	print-likely
+9990	324	1	1865-04-12	sent	28	2		0.286	0.238	0.048	3	OR I/46-3	cipher	none	clean
+9990	324	2	1865-04-12	sent	134	9		0.242	0.297	0.033	19	OR I/46-3	cipher	none	print-likely
+9991	325	1	1865-04-15	sent	134	9		0.108	0.169	0.0	6	ORN I/9	cipher	none	clean
+9991	325	2	1865-04-15	sent	94	1		0.226	0.264	0.057	45	OR I/46-3	cipher	none	print-likely
+9992	326	1	1865-04-15	sent	52	1		0.267	0.267	0.033	24	OR I/46-3	cipher	none	print-likely
+9992	326	2	1865-04-16	sent	95	2		0.383	0.553	0.106	25	OR I/46-3	cipher	none	print-likely
+9993	327	1	1865-04-16	sent	136	1		0.373	0.373	0.12	57	OR I/46-3	cipher	none	print-likely
+9993	327	2	1865-04-16	sent	72	1		0.356	0.311	0.044	5	ORN I/10	cipher	none	clean
+9994	328	0	1865-04-16	sent	55	1		0.382	0.382	0.088	3	OR I/43-1	cipher	none	clean
+9994	328	1	1865-04-16	sent	29	1		0.467	0.4	0.067	15	OR I/46-3	cipher	none	print-likely
+9994	328	2	1865-04-17	sent	98	2		0.448	0.569	0.103	6	OR I/40-2	cipher	none	clean
+9995	329	0	1865-04-17	sent	81	9		0.125	0.354	0.042	4	OR I/43-1	cipher	none	clean
+9995	329	1	1865-04-17	sent	60	1		0.455	0.394	0.152	16	OR I/46-3	cipher	none	print-likely
+9995	329	2	1865-04-18	sent	45	2		0.393	0.536	0.143	11	OR I/46-3	cipher	none	print-likely
+9996	330	1	1865-04-19	sent	74	9		0.293	0.39	0.024	21	OR I/46-3	cipher	none	print-likely
+9996	330	2	1865-04-19	sent	40	9		0.182	0.273	0.045	15	OR I/46-3	cipher	none	print-likely
+9996	330	3	1865-04-19	sent	35	9		0.13	0.348	0.13	11	OR I/46-3	cipher	none	print-likely
+9997	331	1	1865-04-19	sent	44	9		0.233	0.267	0.067	4	OR II/7	cipher	none	clean
+9997	331	2	1865-04-20	sent	70	9		0.182	0.136	0.023	4	OR I/44	cipher	none	clean
+9998	332	1	1865-04-20	sent	413	1		0.309	0.295	0.091	7	OR I/36-3	cipher	none	print-likely
+10000	334	1	1865-04-20	sent	133	2		0.225	0.4	0.075	60	OR I/46-3	cipher	none	print-likely
+10000	334	2	1865-04-22	sent	50	1		0.188	0.188	0.031	9	OR I/46-3	cipher	none	print-likely
+10001	335	1	1865-04-23	sent	78	1		0.4	0.34	0.12	4	OR I/40-3	cipher	none	clean
+10001	335	2	1865-04-29	sent	35	1		0.435	0.391	0.13	6	Butler Corr. 4	cipher	none	clean
+10002	336	0	1865-04-29	sent	85	1		0.448	0.431	0.069	18	OR I/46-3	cipher	none	print-likely
+10002	336	1	1865-04-29	sent	27	9		0.294	0.353	0.118	3	OR I/40-2	cipher	none	clean
+10002	336	2	1865-05-01	sent	42	1		0.593	0.519	0.074	3	OR I/40-3	cipher	none	clean
+10003	337	0	1865-05-06	sent	21	9		0.375	0.438	0.188	3	OR I/33	cipher	none	clean
+10003	337	1	1865-05-07	sent	35	1		0.5	0.409	0.182	3	OR I/43-1	cipher	none	clean
+10003	337	2	1865-05-07	sent	102	1		0.429	0.444	0.095	5	OR I/43-1	cipher	none	clean
+10004	338	1	1865-05-07	sent	71	1		0.489	0.404	0.149	4	OR I/36-3	cipher	none	clean
+10004	338	2	1865-05-07	sent	84	2		0.255	0.471	0.039	30	OR I/46-3	cipher	none	print-likely
+10005	339	1	1865-05-08	sent	57	2		0.25	0.281	0.062	33	OR I/46-3	cipher	none	print-likely
+10005	339	2	1865-05-08	sent	56	1		0.463	0.415	0.171	4	OR I/46-3	cipher	none	clean
+10005	339	3	1865-05-08	sent	20	1		0.353	0.294	0.176	3	OR II/6	cipher	none	clean
+10006	340	0	1865-05-08	sent	42	2		0.433	0.6	0.1	3	OR I/36-2	cipher	none	clean
+10006	340	1	1865-05-09	sent	41	2		0.259	0.259	0.037	3	OR I/51-1	cipher	none	clean
+10006	340	2	1865-05-09	sent	85	2		0.383	0.532	0.085	20	OR I/46-3	cipher	none	print-likely
+10007	341	1	1865-05-10	sent	40	2		0.348	0.391	0.087	4	OR I/46-2	cipher	none	clean
+10007	341	2	1865-05-11	sent	21	1		0.4	0.4	0.133	3	OR III/4	cipher	none	clean
+10007	341	3	1865-05-11	sent	32	2		0.389	0.444	0.056	16	OR I/46-3	cipher	none	print-likely
+10008	342	0	1865-05-14	sent	80	1		0.426	0.404	0.149	6	OR I/43-2	cipher	mssEC19:9232/3[3tok]	clean
+10008	342	1	1865-05-14	sent	90	clear		0.152	0.196	0.043	5	OR I/33	clear	none	clear-sibling
+10009	343	1	1865-05-17	sent	140	1		0.419	0.473	0.129	3	OR I/42-1	cipher	none	clean
+10009	343	2	1865-05-17	sent	45	1		0.214	0.286	0.036	3	OR I/40-3	cipher	none	clean
+10010	344	1	1865-05-17	sent	58	2		0.385	0.423	0.077	35	OR I/46-3	cipher	none	print-likely
+10010	344	2	1865-05-19	sent	92	1		0.508	0.4	0.062	3	OR I/33	cipher	none	clean
+10011	345	1	1865-05-18	sent	54	1		0.314	0.286	0.057	7	OR I/46-3	cipher	none	print-likely
+10011	345	2	1865-05-18	sent	104	2	2	0.239	0.338	0.056	33	OR I/46-3	cipher	none	print-likely
+10012	346	1	1865-05-19	sent	156	2	2	0.268	0.42	0.045	3	OR I/45-2	cipher	none	clean
+10012	346	2	1865-05-19	sent	63	2		0.348	0.5	0.065	21	OR I/46-3	cipher	none	print-likely
+10013	347	0		sent	40	1	1	0.607	0.393	0.143	4	OR II/6	cipher	none	clean
+10013	347	1	1865-05-20	sent	56	9		0.222	0.25	0.083	3	OR I/42-3	cipher	none	clean
+10013	347	2	1865-05-21	sent	134	2		0.227	0.33	0.091	27	OR I/46-3	cipher	none	print-likely
+10014	348	1	1865-05-21	sent	170	9		0.277	0.287	0.059	6	OR II/8	cipher	none	clean
+10015	349	1	1865-05-21	sent	48	2		0.28	0.4	0.04	28	OR I/46-3	cipher	none	print-likely
+10016	350	0	1865-05-21	sent	32	1		0.462	0.462	0.115	3	OR II/8	cipher	none	clean
+10016	350	1	1865-05-22	sent	42	1		0.292	0.333	0.042	3	OR I/40-2	cipher	none	clean
+10016	350	2	1865-05-22	sent	47	1	1	0.552	0.379	0.138	3	OR II/6	cipher	none	clean
+10017	351	1	1865-05-23	sent	135	1		0.227	0.227	0.093	83	OR II/8	cipher	none	print-likely
+10017	351	2	1865-05-23	sent	42	9		0.143	0.107	0.0	6	OR II/8	cipher	none	clean
+10018	352	1	1865-05-23	sent	205	1		0.472	0.376	0.048	8	OR I/42-1	cipher	none	print-likely
+10019	353	1	1865-05-24	sent	149	1		0.489	0.383	0.074	6	OR I/46-3	cipher	none	clean
+10019	353	2	1865-05-24	sent	42	1		0.542	0.333	0.083	13	OR I/46-3	cipher	none	print-likely
+10020	354	1	1865-05-24	sent	41	1		0.593	0.481	0.111	6	OR I/44	cipher	none	clean
+10020	354	2	1865-05-24	sent	50	1		0.629	0.657	0.086	4	OR II/7	cipher	none	clean
+10020	354	3	1865-05-24	sent	45	9		0.321	0.321	0.036	5	OR I/43-2	cipher	none	clean
+10020	354	4	1865-05-24	sent	34	1		0.348	0.435	0.13	3	OR I/36-1	cipher	none	clean
+10021	355	0	1865-05-25	sent	55	1		0.324	0.324	0.081	16	OR I/46-3	cipher	none	print-likely
+10021	355	1	1865-05-27	sent	54	2	2	0.303	0.606	0.061	6	OR I/43-1	cipher	none	clean
+10022	356	1	1865-05-28	sent	35	1		0.263	0.211	0.053	9	OR II/8	cipher	none	print-likely
+10022	356	2	1865-05-28	sent	33	2		0.4	0.55	0.1	13	OR II/8	cipher	none	print-likely
+10022	356	3	1865-05-28	sent	47	2		0.407	0.407	0.148	8	OR II/8	cipher	none	print-likely
+10023	357	1	1865-05-28	sent	177	2		0.305	0.41	0.095	6	OR I/43-2	cipher	none	clean
+10024	358	1	1865-05-28	sent	47	1		0.423	0.346	0.192	10	OR II/8	cipher	none	print-likely
+10024	358	2	1865-05-28	sent	63	1		0.271	0.229	0.062	3	OR I/33	cipher	none	clean
+10024	358	3	1865-05-29	sent	28	2		0.167	0.333	0.111	0		cipher	none	clean
+10025	359	1	1865-05-30	sent	57	9		0.256	0.385	0.077	3	OR I/40-3	cipher	none	clean
+10025	359	2	1865-05-30	sent	143	clear		0.163	0.175	0.05	54	OR II/8	clear	none	print-likely+clear-sibling
+10026	360	1	1865-05-31	sent	30	1		0.625	0.5	0.125	4	OR I/45-1	cipher	none	clean
+10026	360	2	1865-06-01	sent	55	1		0.433	0.433	0.167	5	OR I/46-2	cipher	none	clean
+10027	361	1	1865-06-01	sent	37	2		0.474	0.579	0.211	3	OR I/42-2	cipher	none	clean
+10027	361	2	1865-06-02	sent	54	1		0.485	0.394	0.091	4	OR II/7	cipher	none	clean
+10027	361	3	1865-06-02	sent	37	1		0.375	0.333	0.125	3	ORN I/9	cipher	MS18:10028/1[4tok]	clean
+10028	362	1	1865-06-02	sent	36	9		0.227	0.273	0.182	3	ORN I/9	cipher	MS18:10027/3[4tok]	clean
+10028	362	2	1865-06-03	sent	65	2		0.381	0.429	0.119	6	OR III/4	cipher	none	clean
+10028	362	3	1865-06-05	sent	54	2	2	0.237	0.395	0.053	7	OR II/8	cipher	none	print-likely
+10029	363	0	1865-06-05	sent	23	2		0.312	0.375	0.125	3	OR I/33	cipher	none	clean
+10029	363	1	1865-06-06	sent	72	1		0.419	0.349	0.07	31	OR II/8	cipher	none	print-likely
+10029	363	2	1865-06-08	sent	33	2		0.44	0.44	0.12	11	OR II/8	cipher	none	print-likely
+10030	364	1	1865-06-08	sent	80	2		0.239	0.37	0.043	39	OR I/46-3	cipher	none	print-likely
+10030	364	2	1865-06-14	sent	105	1		0.356	0.425	0.082	6	OR I/40-2	cipher	none	clean
+10031	365	1	1865-06-16	sent	80	9		0.135	0.212	0.019	4	ORN I/9	cipher	none	clean
+10031	365	2	1865-06-15	sent	36	9		0.591	0.591	0.045	3	OR I/45-2	cipher	none	clean
+10032	366	0	1865-06-17	sent	53	2		0.45	0.675	0.125	0		cipher	none	clean
+10032	366	1	1865-06-17	sent	360	2		0.229	0.368	0.076	9	ORN I/11	cipher	none	print-likely
+10034	368	1	1865-06-19	sent	35	1		0.4	0.36	0.12	3	OR I/33	cipher	none	clean
+10034	368	2	1865-06-19	sent	87	2		0.305	0.407	0.068	6	OR II/6	cipher	none	clean
+10035	369	1	1865-06-22	sent	250	1		0.276	0.25	0.039	109	OR III/5	cipher	MS18:10036/1[19tok]	print-likely
+10036	370	1	1865-06-22	sent	237	9		0.267	0.281	0.075	104	OR III/5	cipher	MS18:10035/1[19tok] MS18:10037/1[17tok;clear]	print-likely+clear-sibling
+10037	371	1	1865-06-22	sent	234	clear		0.083	0.105	0.008	136	OR III/5	clear	MS18:10036/1[17tok]	print-likely+clear-sibling
+10039	373	0	1865-06-26	sent	109	1		0.506	0.494	0.049	6	Butler Corr. 5	cipher	none	clean
+10039	373	1	1865-07-02	sent	90	2		0.308	0.404	0.077	44	OR II/8	cipher	none	print-likely
+10040	374	0	1865-07-11	sent	43	2		0.414	0.552	0.241	3	OR I/33	cipher	none	clean
+10040	374	1	1865-07-13	sent	73	9		0.186	0.233	0.047	4	OR I/46-1	cipher	none	clean
+10041	375	1	1865-07-14	sent	67	9		0.237	0.289	0.132	26	OR II/8	cipher	none	print-likely
+10041	375	2	1865-11-05	sent	56	2		0.103	0.205	0.026	3	OR II/7	cipher	none	clean
+10041	375	3	1865-11-04	sent	55	9		0.135	0.162	0.0	3	OR I/46-3	cipher	none	clean
+10042	376	1	1865-07-22	sent	241	9		0.22	0.262	0.035	113	OR II/8	cipher	none	print-likely
+10043	377	1	1865-07-23	sent	66	1		0.386	0.341	0.091	4	OR II/7	cipher	none	clean
+10043	377	2	1865-07-24	sent	78	1		0.364	0.291	0.091	6	ORN I/11	cipher	none	clean
+10044	378	0	1865-07-26	sent	44	2		0.121	0.121	0.0	3	OR I/45-1	cipher	none	clean
+10044	378	1	1865-07-29	sent	49	9		0.091	0.242	0.03	4	OR II/7	cipher	MS18:10045/0[3tok]	clean
+10045	379	0	1865-07-29	sent	169	2		0.248	0.339	0.028	6	OR I/43-2	cipher	MS18:10044/1[3tok]	clean
+10046	380	1	1865-07-30	sent	61	1		0.412	0.382	0.176	6	OR I/33	cipher	none	clean
+10046	380	2	1865-08-08	sent	125	2		0.247	0.309	0.049	6	OR III/5	cipher	none	clean
+10047	381	1	1865-08-12	sent	74	9		0.24	0.3	0.02	3	OR I/43-2	cipher	none	clean
+10047	381	2	1865-09-01	sent	93	9		0.152	0.242	0.015	4	OR II/6	cipher	mssEC19:9272/0[3tok]	clean
+10048	382	0	1865-09-01	sent	56	clear		0.147	0.118	0.029	4	OR III/5	clear	none	clear-sibling
+10048	382	1	1865-09-02	sent	108	1		0.312	0.281	0.094	5	OR III/4	cipher	none	clean
+10049	383	0	1865-09-04	sent	381	9		0.158	0.192	0.017	7	Butler Corr. 5	cipher	mssEC19:9256/0[3tok]	print-likely
+10051	385	0	1865-09-09	sent	158	9		0.2	0.274	0.032	6	OR II/6	cipher	none	clean
+10052	386	0	1865-09-17	sent	153	9		0.143	0.163	0.061	6	ORN I/11	cipher	none	clean
+10053	387	1	1865-09-19	sent	120	9		0.247	0.312	0.026	6	OR I/40-1	cipher	none	clean
+10053	387	2	1865-09-20	sent	36	9		0.182	0.318	0.0	4	OR I/44	cipher	none	clean
+10054	388	0	1865-09-20	sent	72	clear		0.182	0.159	0.023	6	OR III/5	clear	none	clear-sibling
+10054	388	1	1865-09-20	sent	88	9		0.208	0.264	0.038	4	OR II/6	cipher	mssEC19:9285/1[3tok]	clean
+10055	389	0	1865-09-23	sent	72	1		0.49	0.408	0.143	5	OR II/6	cipher	none	clean
+10055	389	1	1865-09-30	sent	72	9		0.114	0.205	0.023	10	OR II/8	cipher	none	print-likely
+10056	390	1	1865-09-30	sent	36	1		0.385	0.385	0.115	3	OR I/36-2	cipher	none	clean
+10056	390	2	1865-10-01	sent	82	1		0.306	0.226	0.032	4	OR I/43-1	cipher	none	clean
+10057	391	0	1865-10-07	sent	104	9		0.274	0.288	0.082	6	OR I/44	cipher	none	clean
+10057	391	1	1865-10-13	sent	49	9		0.161	0.29	0.0	3	OR I/36-3	cipher	MS18:10058/0[3tok]	clean
+10058	392	0	1865-10-13	sent	72	1		0.245	0.265	0.061	3	OR I/36-3	cipher	MS18:10057/1[3tok]	clean
+10058	392	1	1865-10-16	sent	143	9		0.234	0.277	0.064	6	OR I/51-2	cipher	none	clean
+10059	393	0	1865-10-18	sent	31	1		0.429	0.286	0.048	8	OR II/8	cipher	none	print-likely
+10059	393	1	1865-10-18	sent	126	9		0.205	0.217	0.012	4	OR I/46-1	cipher	MS18:10060/0[6tok] MS18:10060/1[4tok]	clean
+10060	394	0	1865-10-18	sent	120	1		0.28	0.253	0.093	6	OR III/5	cipher	MS18:10059/1[6tok]	clean
+10060	394	1	1865-10-18	sent	110	9		0.187	0.187	0.013	6	OR I/51-2	cipher	MS18:10059/1[4tok]	clean
+10061	395	0	1865-10-20	sent	42	1		0.483	0.517	0.172	4	OR I/42-3	cipher	none	clean
+10061	395	1		sent	0	short		0.0	0.0	0.0	0		clear	none	clear-sibling+short
+10061	395	2	1865-10-21	sent	66	2		0.225	0.25	0.025	5	OR I/42-3	cipher	none	clean
+10062	396	0	1865-10-21	sent	89	1		0.236	0.218	0.0	6	ORN I/10	cipher	none	clean
+10062	396	1	1865-10-22	sent	39	1		0.382	0.294	0.059	0		cipher	none	clean
+10062	396	2	1865-10-27	sent	62	9		0.2	0.225	0.05	4	OR I/40-3	cipher	none	clean
+10063	397	0	1865-10-28	sent	52	9		0.29	0.452	0.032	15	OR II/8	cipher	none	print-likely
+10063	397	1	1865-10-29	sent	79	2		0.184	0.204	0.041	4	Butler Corr. 5	cipher	none	clean
+10063	397	2	1865-10-30	sent	20	9		0.143	0.214	0.071	3	OR I/40-2	cipher	none	clean
+10064	398	1	1865-11-21	sent	33	1		0.36	0.32	0.12	4	OR I/42-2	cipher	none	clean
+10064	398	2	1865-11-14	sent	75	clear		0.167	0.194	0.028	43	OR II/8	clear	none	print-likely+clear-sibling
+10065	399	1	1865-11-23	sent	60	1		0.188	0.281	0.0	6	OR II/6	cipher	none	clean
+10065	399	2	1865-12-02	sent	72	1		0.292	0.312	0.146	4	OR I/46-3	cipher	none	clean
+10066	400	0	1865-12-02	sent	51	2		0.41	0.487	0.026	15	OR II/8	cipher	none	print-likely
+10066	400	1	1865-12-02	sent	47	2		0.231	0.333	0.128	7	OR II/8	cipher	MS18:10066/2[4tok] mssEC19:9294/0[3tok] mssEC19:9294/1[3tok]	print-likely
+10066	400	2	1865-12-02	sent	40	9		0.125	0.219	0.031	4	OR II/8	cipher	MS18:10066/1[4tok]	clean

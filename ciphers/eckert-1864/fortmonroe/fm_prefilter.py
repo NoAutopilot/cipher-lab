@@ -34,6 +34,7 @@ def okdm(dm): return dm if dm and dm[0] else None
 def other_ledgers():
     """mssEC 19 (with the read ids of entries-mssEC19.tsv) and mssEC 18 entries, analysed, with (month, day) in dm."""
     codes = m.load_vocab(); out = []
+    if fe.S == "ms18": return codes, _other_ms18(codes)
     tsv = {}
     for l in open(os.path.join(PARENT, "entries-mssEC19.tsv"), encoding="utf-8"):
         if l.startswith("#") or l.startswith("pointer\t"): continue
@@ -46,6 +47,20 @@ def other_ledgers():
             if e["words"] >= 8: out.append(e)
     return codes, out
 
+def _other_ms18(codes):
+    """MS18-PRE: for the sent ledger mssEC 18 the other ledgers are mssEC 19 (with its read ids) and Fort Monroe (object 5952, mssEC 25)."""
+    out = []; tsv = {}
+    for l in open(os.path.join(PARENT, "entries-mssEC19.tsv"), encoding="utf-8"):
+        if l.startswith("#") or l.startswith("pointer\t"): continue
+        c = l.rstrip("\n").split("\t"); tsv[(int(c[0]), int(c[2]))] = c
+    for vol, pages in (("mssEC19", m.load_pages()), ("mssEC25", m.load_pages("sources/fortmonroe"))):
+        for e in m.segment(pages):
+            m.analyse(e, codes); e["vol"] = vol
+            e["dm"] = okdm(m.day_month(e["header"])); e["already_read"] = ""
+            if vol == "mssEC19" and (e["pointer"], e["entry_on_page"]) in tsv: e["already_read"] = tsv[(e["pointer"], e["entry_on_page"])][13]
+            if e["words"] >= 8: out.append(e)
+    return out
+
 def grams3(tokens):
     return {tuple(tokens[i:i + 3]) for i in range(len(tokens) - 2)}
 
@@ -54,7 +69,7 @@ def dups(e, fm, oth, codes, wc):
     if len(mine) < 8: return tags
     for o in fm + oth:
         if o is e: continue
-        if o["vol"] == "FM":
+        if o["vol"] == fe.SAME:
             if abs(o["page"] - e["page"]) > 1 or o["page"] == 0: continue
             if e["dm"] and o["dm"] and abs(dnum(e["dm"]) - dnum(o["dm"])) > 3: continue
         else:
@@ -66,22 +81,22 @@ def dups(e, fm, oth, codes, wc):
         if sh >= 3: why.append(f"{sh}tok")
         if why:
             st = [("read:" + o["already_read"]) if o.get("already_read") else "", "clear" if o["codefrac"] < 0.12 else ""]
-            tag = {"FM": f"FM:{o['pointer']}/{o['entry_on_page']}"}.get(o["vol"], f"{o['vol']}:{o['pointer']}/{o['entry_on_page']}")
+            tag = f"{o['vol']}:{o['pointer']}/{o['entry_on_page']}"
             tags.append(f"{tag}[{','.join(why)}{';' + ','.join(s for s in st if s) if any(st) else ''}]")
     return tags
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--scratch", required=True); ap.add_argument("--out", default=os.path.join(HERE, "prefilter-fm.tsv"))
+    ap.add_argument("--scratch", required=True); ap.add_argument("--out", default=os.path.join(fe.OUTDIR, "prefilter-%s.tsv" % fe.S))
     a = ap.parse_args(argv)
     avail = {k: v for k, v in VOLS.items() if os.path.exists(os.path.join(a.scratch, "or", k + ".txt"))}
     pl.NEWVOLS = avail
-    pl.CACHE = os.path.join(ROOT, "sources", "ia-fulltext", "print-check", "fm"); os.makedirs(pl.CACHE, exist_ok=True)
+    pl.CACHE = os.path.join(ROOT, "sources", "ia-fulltext", "print-check", fe.CFG["cache"]); os.makedirs(pl.CACHE, exist_ok=True)
     codes, fm = fe.build()
-    for e in fm: e["vol"] = "FM"; e["already_read"] = ""
+    for e in fm: e["vol"] = fe.SAME; e["already_read"] = ""
     _, oth = other_ledgers()
     ents = fm
-    freq, cov, wc = pl.scan_new(ents, codes, a.scratch, os.path.join(pl.CACHE, "scan_fm.json"))
+    freq, cov, wc = pl.scan_new(ents, codes, a.scratch, os.path.join(pl.CACHE, "scan_%s.json" % fe.S))
     rows = []
     for ei, e in enumerate(fm):
         r = {"pointer": e["pointer"], "page": e["page"], "entry": e["entry_on_page"], "date": e["date"], "direction": e["direction"],
@@ -95,13 +110,14 @@ def main(argv=None):
         # recorded in `dups` as a near-neighbour (same-day traffic on one subject) and does not exclude the row
         if re.search(r"mssEC19:[^ ]*\[[^\]]*copy", r["dups"]): v.append("mssEC19-dup")
         if re.search(r"mssEC18:[^ ]*\[[^\]]*copy", r["dups"]): v.append("mssEC18-dup")
-        if re.search(r"FM:[^ ]*\[[^\]]*copy", r["dups"]): v.append("dup")
+        if re.search(r"mssEC25:[^ ]*\[[^\]]*copy", r["dups"]) and fe.S == "ms18": v.append("mssEC25-dup")
+        if re.search(fe.SAME + r":[^ ]*\[[^\]]*copy", r["dups"]): v.append("dup")
         if e["words"] < 8: v.append("short")
         r["verdict"] = "+".join(v) if v else "clean"
         rows.append(r)
     cols = ["pointer", "page", "entry", "date", "direction", "words", "best_book", "hdr_mark", "s1", "s2", "s9", "or_cov", "or_vol", "own", "dups", "verdict"]
     with open(a.out, "w") as f:
-        f.write("# FM-PRE (8 Oct 2026): offline pre-filter of Huntington object 5952 (mssEC 25), fm_prefilter.py; a ranking, not a verdict (rule 10). Volumes scanned: %s\n" % ", ".join(sorted(avail.values())))
+        f.write("# " + fe.LAB + " (8 Oct 2026): offline pre-filter of Huntington " + fe.OBJ + ", fm_prefilter.py; a ranking, not a verdict (rule 10). Volumes scanned: %s\n" % ", ".join(sorted(avail.values())))
         f.write("\t".join(cols) + "\n")
         for r in rows: f.write("\t".join(str(r[c]).replace("\t", " ") for c in cols) + "\n")
     print(collections.Counter(r["verdict"] for r in rows).most_common(14), file=sys.stderr)

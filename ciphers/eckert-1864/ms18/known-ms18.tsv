@@ -1,0 +1,14 @@
+# MS18-PRE (8 Oct 2026): clear ledger entries whose exact 8-word plain runs occur in the print volumes (ms18_known.py); located independently of the cover statistic. a ranking input, not a verdict.
+pointer	entry	date	words	exact_8gram_hits	top_volume	or_cov	prefilter_verdict
+9670	1	1864-01-31	58	11	OR I/33	31	print-likely+clear-sibling
+9672	0	1864-02-05	58	35	Butler Corr. 3	32	print-likely+clear-sibling+mssEC25-dup
+9704	1	1864-04-14	43	22	OR II/7	20	print-likely+clear-sibling+mssEC25-dup
+9716	2	1864-04-21	70	11	ORN I/9	39	print-likely+clear-sibling
+9758	1	1864-06-12	70	20	OR II/7	45	print-likely+clear-sibling
+9960	2	1865-02-18	80	2	OR I/43-1	43	print-likely+clear-sibling
+9962	1	1865-02-24	132	8	OR I/46-2	65	print-likely+clear-sibling
+9967	1	1865-03-02	269	64	OR I/46-2	151	print-likely+clear-sibling
+9969	2	1865-03-03	138	21	OR I/46-2	61	print-likely+clear-sibling
+10025	2	1865-05-30	143	19	OR II/8	54	print-likely+clear-sibling
+10037	1	1865-06-22	234	104	OR III/5	136	print-likely+clear-sibling
+10064	2	1865-11-14	75	23	OR II/8	43	print-likely+clear-sibling

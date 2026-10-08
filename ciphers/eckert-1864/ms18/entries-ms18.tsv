@@ -1,0 +1,806 @@
+# MS18-PRE (8 Oct 2026): entries of Huntington object 10074 = mssEC 18 (sent ledger), from sources/mssEC18 (fm_entries.py); s1/s2/s9 = share of non-function tokens in the code columns of key.md / key-no2.md / key-no9.md; a ranking input, not a verdict.
+pointer	page	entry_on_page	date	direction	header	addr	sender	words	codefrac	hdr_mark	cont	m1	m2	m9	s1	s2	s9	share_book	best_book
+9667	1	0	1864-01-26	sent	Gen Sheldon Ft Monroe  Washington Jany 26th 1864	For Audit period your application for	a couple of hours signed Aaron	77	0.12			0	0	1	0.212	0.212	0.152	1	9
+9667	1	1	1864-01-26	sent	Sheldon " F "  Wash'n Jany 26th 1864	Pagan Jany Twenty Sixth Henrietta for	possible moment to Palsy sig Arabia	36	0.22			0	0	0	0.304	0.348	0.304	2	9
+9668	2	0	1864-01-29	sent	John Homer N. York ----  Washington D. C. Jany 29th 1864	For Major Vermin Sickles Merlin	for me signed Asia Barbara	27	0.15			0	0	0	0.267	0.267	0.267	1	9
+9668	2	1	1864-01-29	sent	Capt Geo H. Smith St Louis  Jany 29th 1864	Pagan Jany Twenty ninth Frances for	apprehended disturbance sig Abortion pleasant	126	0.13		9669	0	0	2	0.219	0.233	0.096	2	9
+9669	3	1	1864-01-29	sent	Geo. D. Sheldon Ft Monroe  Jany 29th 1864	Pagan Jany Twenty ninth For Abbey	H Rucker Valley and Vinton Catharine	54	0.17			0	1	0	0.276	0.31	0.276	2	9
+9669	3	2	1864-01-31	sent	Lt W. B. Kelly  Wash'n  Jany 31st 1864	For Valley Kelly A copy of your	any stranger could decipher	58	0.14			0	0	1	0.241	0.276	0.172	2	9
+9670	4	0	1864-01-31	sent	Jaques  Wash. Jan 31. 1864	Knoxville Tenn  4 PM	Henrietta Jan 30 1st	29	0.07			0	0	1	0.118	0.118	0.118	1	clear
+9670	4	1	1864-01-31	sent	Matthews  Wash. D. C. Jan. 31. 1864.	Cumberland Md.	Applause	58	0.09			0	0	1	0.114	0.143	0.029	2	clear
+9671	5	0	1864-02-03	sent	Sheldon F. 9  Washn Feby 3rd 1864	For Abby Arno is at Mellon	can move sign Aaron Nelly Baker	30	0.23			0	0	0	0.312	0.375	0.188	2	9
+9671	5	1	1864-02-03	sent	Caldwell 2  Washn Feby 3rd 1864 . 430 PM	For Nestor Please Pine directly	to his proposed suppers Lady	15	0.33			0	0	0	0.5	0.5	0.0	1	2
+9671	5	2	1864-02-03	sent	Sheldon F 9  Washn Feby 3rd 1864 5. pm	For Audit Please supper directly	any cooper = ation sig Applause	23	0.26			0	0	1	0.429	0.429	0.429	1	9
+9672	6	0	1864-02-05	sent	Sheldon F  Washn Feby 5th 1864 930 AM	Coro For Audit period Vernon Sedge wick	Abortion fine day this with us	58	0.1			0	0	1	0.167	0.2	0.167	2	clear
+9672	6	1	1864-02-05	sent	Caldwell 2  Wash'n Feby 5th 1864 11.30 AM	For Nestor Tulip Legend again asks for a	Yawl Battle Florence night - in - a - gale oh	43	0.3			0	4	0	0.52	0.52	0.16	1	2
+9673	7	0	1864-02-05	sent	John Horner 9  Washn Feby 5th 1864	Pagan Feby fifth Henrietta for Village	Meigs Aragon warm cloudy like rain	72	0.15			0	0	0	0.184	0.224	0.143	2	9
+9673	7	1	1864-02-06	sent	S. H. Beckwith 1  Washn Feby 6th 1864 11. AM	Growl Feby Plague Fanny For Pandora D C Mc	Youth W H Whiton how goes battle with you	43	0.33			3	0	0	0.483	0.379	0.103	1	1
+9673	7	2	1864-02-07	sent	S. H. Beckwith 1  Washn Feby 7th 1864 12.30 PM	Grapes Feby Postpone Viola For Juno Empress	unless made by Knapsack yoke Benjamin Smith	21	0.52			2	0	0	0.714	0.714	0.143	1	1
+9674	8	0	1864-02-10	sent	S. H. Beckwith 1  Washn Feby 10th 1864 4. PM	Growl Feby Federal Julia For John Empress Unity Mr	who have done so yoke Italy Mailed letter today	63	0.3			5	0	0	0.447	0.447	0.158	1	1
+9674	8	1	1864-02-11	sent	S. H. Beckwith " 1 "  Washn Feby 11th 1864 4 PM	Grapes Flag Feby Julia Japan Empress unity Congress has been	or worse condition than yours Youth Ireland She's my darling	58	0.28			3	0	0	0.444	0.361	0.111	1	1
+9674	8	2	1864-02-11	sent	A. H. Caldwell " 2 "  Washn Feby 11th 1864 4 P. M.	For Nestor tulip In your whim of the Cushing inst	12 M	139	0.23		9675	1	6	0	0.356	0.425	0.151	2	2
+9675	9	1	1864-02-12	sent	Lt WB Kelly  Washington D. C. Feby 12th 1864	For Vermont Kel = ly The	sig Ab = or = tion Gertrude	19	0.42			0	0	1	0.583	0.667	0.417	2	9
+9675	9	2	1864-02-13	sent	Lt WB Kelly  Wash'n Feby 13th 1864 3. PM	For Valley Kel = ly Order	suspend = ed sig Applause Helen	13	0.46			0	0	1	0.5	0.5	0.333	1	9
+9676	10	0	1864-02-14	sent	Lt. W. B. Kelly " 9 "  Washn Feby 14th 1864 1230 PM	For Valley Kelly Can not	Lock = wood sig Applause Viola	27	0.3			0	0	1	0.471	0.471	0.412	1	9
+9676	10	1	1864-02-14	sent	S. H. Beckwith " 1 "  Washn Feby 14th 1864 12.30 PM	Grapes Viola Female Feby For Juno Empress Unity Wafering	Quadroon Sugar Name several to select from Youth Italy	62	0.21			3	0	0	0.351	0.297	0.081	1	1
+9676	10	2	1864-02-15	sent	Geo D. Sheldon " 9 "  Washn D. C Feby 15th 1864 4 PM	For Abbey The Arabia directs that if	execu = tion till further orders (sig) Abortion	39	0.13			0	0	1	0.211	0.263	0.158	2	9
+9677	11	0	1864-02-15	sent	S. H. Beckwith ' 2 '  Washn Feby 15th 1864	Happy Julia Kimball Balaam For Magic Tulip The Comb directs	the miserable till further repeats Yawl Lady Are you well	48	0.33			0	3	0	0.462	0.615	0.077	2	2
+9677	11	1	1864-02-16	sent	SH Beckwith " 2 "  Washn Feby 16th 1864 1. P. M.	Hunter Hannah Johnson Balaam To Belly Geneva Tulip According	to Patron with out Floras aid yawl Empress plenty said	170	0.41			0	7	0	0.515	0.673	0.099	2	2
+9678	12	0	1864-02-20	sent	SH Beckwith Nashville ----  Washn Feby 20th 1864	Hang Hannah Balaam Oliver For Crowd Tulip	Lamb Behead Is it cold with you	76	0.18			0	6	0	0.297	0.378	0.081	2	2
+9678	12	1	1864-02-23	sent	Lt W. B. Kelly (9)  Wash'n Feby 23rd 1864	Helen For Vermont Kel	sig Ab = or = tion	17	0.29	9		0	0	1	0.5	0.5	0.3	1	9
+9678	12	2	1864-02-23	sent	Washington Feby 23rd 1864	Washn Eight fifteen P M For	signed A Lincoln Prest U. S.	42	0.07			0	0	0	0.042	0.125	0.0	2	clear
+9679	13	0	1864-02-26	sent	John Horner  Feby 26th Wash'n 12 M	Gertrude For John A Ken = e =	Scrtary of War finis	82	0.13			0	0	0	0.182	0.2	0.145	2	9
+9679	13	1	1864-02-26	sent	Wash. Feb. 26. 1864	Caldwell Hd Qrs AP	Bermuda wind ham Bat - tu - el End End	28	0.25			0	0	0	0.261	0.304	0.043	2	2
+9680	14	0	1864-02-27	sent	S. H. Beckwith  Washn Feby 27th 1864 11. AM	Hang Fanny Nelson Cushing Balaam For Madrid	Oliver instant Yawl Lady keep them scared	49	0.57			0	2	1	0.556	0.778	0.139	2	2
+9680	14	1	1864-02-27	sent	S. H. Beckwith " 2 "  Washn 1.30 PM Feby 27th 1864	Huron Harriet Oliver Cushing For Belly The	spoon of author wafer windham behead End	92	0.35			0	4	1	0.483	0.534	0.172	2	2
+9681	15	0	1864-02-29	sent	SH Beckwith  Washn Feby 29th 1864	Hang Balaam Oliver Franklin Topsy For Magic I have	with you Beach Think he will Plant in Pigeon	45	0.38			0	0	0	0.462	0.577	0.077	2	2
+9681	15	1	1864-02-29	sent	Geo D. Sheldon  Washn Feby 29th 1864 9 P. M.	For Abbey Act as you	zebra sig Ab = or = tion	30	0.2			1	0	1	0.211	0.316	0.211	2	9
+9681	15	2	1864-03-03	sent	AH Caldwell  Wash'n Mar 3rd 1864 10. Am	Emily For Mohawk tulip Monkey	to Bermuda Valley Yawl Sandy	30	0.5			0	3	0	0.6	0.7	0.2	2	2
+9682	16	0	1864-03-03	sent	S. H. Beckwith ( 2 )  Washn Mar 3rd 1864 330 P. m	Happy Imogene Enoch Benton For Belly Tulip The Beach	other vehicles with your polka Yoke Journal	142	0.36			5	3	0	0.506	0.494	0.18	1	1
+9683	17	0	1864-03-06	sent	A. H. Caldwell - (1)  Washington March 6. 1864 ---- 8 P. M.	Nancy For Javelin I forgot to call your	in person also the Cherrystone Message accompanying this -	136	0.12	1		1	0	0	0.203	0.254	0.068	2	9
+9683	17	1	1864-03-07	sent	A. H. Caldwell ( 2 )  Washn Mar 7th 1864 330 PM	Imogene. For Biped Measures are being taken to provide wayworn	He has Rusty sig Rufus Ing alls Palestine & C	39	0.36			0	2	0	0.4	0.52	0.08	2	2
+9684	18	0	1864-03-09	sent	John Horner  Washn Mar 9th 1864 11 AM	Francis For Venus Ol cott	Atlas	67	0.24			0	0	0	0.311	0.356	0.244	2	9
+9684	18	1	1864-03-10	sent	John Horner N. Y. ( 9 )  Washn Mar 10th 1030 P. M. 1864	Pagoda Susan tenth For Venus H. S.	sult a tion sig Atlas dam bore	40	0.15			0	0	0	0.207	0.207	0.207	1	9
+9685	19	0	1864-03-12	sent	EW Culgan Pittsburgh  Wash'n Mar. 12th 1864 ----	From Vicksburg Miss Feby Twenty seventh	Sherman Relay Quorum forwarded from Monarch	60	0.13			0	0	0	0.171	0.195	0.073	2	9
+9685	19	1	1864-03-10	sent	Caldwell  Wash'n Mar 10th 1864	Huron Harriet for Bellows Polk in Chief Snake Peru	of the U nited Sta = tes sig Costume Etc	62	0.29			0	0	0	0.22	0.439	0.049	2	2
+9686	20	0	1864-03-12	sent	A. H. Caldwell  Washington March 12 1864	For Major Shark Pleasant tun tulip You wil	animals Windham Mohawk Rebecca four more words here	57	0.19			0	1	0	0.25	0.25	0.056	1	2
+9686	20	1	1864-03-14	sent	R. C. Cloury Little Rock ( 9 )  Wash'n Mar 14th 1864	Pagan Mar 14th Clara For Vernon	in this respect sig Abortion easy	49	0.14			0	0	1	0.24	0.28	0.24	2	9
+9686	20	2	1864-03-14	sent	Capt Geo H. Smith  Washn Mar 14th 1864	Growl March Pension Elizabeth for Shelton Curtes Saco Flag worth	immediately revoked yoke Halleck Ireland Please forward this at once	70	0.26			4	0	0	0.436	0.333	0.103	1	1
+9687	21	0	1864-03-15	sent	S. H. Beckwith ( 2 )  Washn Mar 15th 1864 1030 Am	Hunters Jones Enoch Elizabeth To Chart A Despatch just	an apple is yawl Lady Spunky Shark Chief Staff	98	0.39			0	5	0	0.414	0.655	0.069	2	2
+9687	21	1	1864-03-16	sent	Jno Horner N. Y. ( 9 )  Washn Mar 16th 1864 11 AM	Francis For Village Van Vleet Vincent Midas	sig MC Meigs Aragon Confidential	71	0.17			0	0	0	0.159	0.25	0.136	2	9
+9688	22	0	1864-03-16	sent	S. H. Beckwith ( 2 )  Mar 16th 1864 12.30 PM	Hang Topsy Enoch Johnson To Belly The fur loughs	Weasel stanhope yawl cupid Does your goose hang high	62	0.35			0	2	0	0.486	0.595	0.216	2	2
+9688	22	1	1864-03-17	sent	GD Sheldon ( 1 )  Washn Mar 17th 1864 12 M	Growl Francis Mar Glance The following is from Snake	Sylvan to Happy's Oyster Walrus Journal Sarah	295	0.29		9689	8	0	0	0.494	0.421	0.079	1	1
+9690	24	0	1864-03-17	sent	S. H. Beckwith  Wash'n Mar 17th 1864 230 P. M	Happy Enoch Marshall Henrietta To Bellows The fur	Suppers sig Lady Spunky Shark Chief of Satan	94	0.34			0	4	0	0.424	0.542	0.119	2	2
+9690	24	1	1864-03-23	sent	Caldwell  Mar 23rd	S H Beckwith Charts Pigeon Opera to or is	field works no one & two Pigeon competent man	25	0.08			0	0	0	0.154	0.154	0.0	1	clear
+9690	24	2	1864-03-25	sent	S.H. Beckwith ( 2 )  Washn Mar 25th 1864	Imogene For Madrid Yacht Arnold Waynes of heavy Pagan	from them extra pages until I receive my book	63	0.33			0	3	0	0.41	0.538	0.103	2	2
+9691	25	0	1864-03-25	sent	S. H. Beckwith ( 2 )  Wash'n Mar. 25th 1864	Chum Katy Oliver Dayton to Comet tulip A	to Mohawk by order of Magic yours &c	80	0.23			0	3	0	0.295	0.386	0.045	2	2
+9691	25	1	1864-03-26	sent	SH Beckwith ( 2 )  Washn Mar 26th 1864	Gertrude For Chart Yacht Repeats sent to Lonesome to	you Wedlock yawl Lady Maj Eckert not returned yet	74	0.3			0	6	0	0.435	0.435	0.174	1	2
+9692	26	0	1864-03-27	sent	Washington Mch 27th 1135 AM 1864	Sheldon Ft Monroe	youth Brutus	33	0.21			0	0	0	0.333	0.286	0.095	1	1
+9692	26	1	1864-03-28	sent	Br Gen Wright  Wash. Mar 28, 1864	San Francisco Cal.	No 11 3	83	0.12		9693	0	0	0	0.118	0.196	0.0	2	9
+9693	27	1	1864-03-31	sent	W. F. Mason Cairo Ill ( 1 )  Wash'n Mar 31st 1864 11.30 AM	Growl Mar Lamp Plug Florence For Pilgrim	T. T Eckert	94	0.26			4	0	0	0.375	0.339	0.071	1	1
+9693	27	2	1864-04-04	sent	RR McCaine Cumberland ----  Washn 130 PM Apl 4th 1864	For orphan Unity Your letter of the plank recd	No 26 P.	95	0.19		9694	4	0	0	0.308	0.308	0.096	1	1
+9694	28	1	1864-04-04	sent	F. S. Van Valkenburg ( 1 ) Wash'n DC Apr. 4th 1864 8. PM	Growl April Pension Nancy For Kennebec Empress unity	No 5 NY	66	0.47			4	0	0	0.682	0.545	0.091	1	1
+9694	28	2	1864-04-05	sent	John Horner N. Y. ( 9 )  Washn Apr 5th 1864 3 PM	Pagan Apr 5th Helen For Village Van	No 7. NY	99	0.15		9695	0	0	0	0.19	0.222	0.143	2	9
+9695	29	1	1864-04-06	sent	John Horner NY ( 9 )  Washington Apr 6th 1864 12 M	Pagan Gertrude April For Vienna	Tell him to telegraph in cipher	148	0.16			0	0	0	0.2	0.256	0.144	2	9
+9696	30	0	1864-04-06	sent	Geo W. Baldwin n d ( 1 )  Washn Apr 6th 1864 12 M	Frances For Princess Thomas Vinton unity Send	No 1 F	43	0.33			3	0	0	0.371	0.343	0.143	1	1
+9696	30	1	1864-04-07	sent	Geo D Sheldon ( 1 ) Dunn June Sine  Washn Apr 7th 1864 1130 AM	Florence For Knave Zodiac Mistress Bologna and I think	probable vis = it Yoke Irving mark this confide - dential	53	0.34			2	0	0	0.455	0.424	0.121	1	1
+9696	30	2	1864-04-07	sent	Beckwith Culpeper ----  Washington Apl 7th 1864	For Jupiter unity Is there	for Palsey Webster Brutus Francis ----	20	0.35			2	0	0	0.5	0.5	0.083	1	1
+9697	31	0	1864-04-07	sent	SH Beckwith ( 2 )  Washn April 7th 1864 1 P. M	Hannah For crowd Tulip Bracket Stephen un = expect = edly	it be done Stanhope Yawl Lamb Stanhope fine day this	61	0.39			0	8	0	0.564	0.615	0.179	2	2
+9697	31	1	1864-04-07	sent	Capt Sam Bunch Louisville ( 1 )  Washington D. C. April 7th 1864	Grapes April Plunder Imogene For Palate Robert Allen Chief Vinton	Q. M Genl	166	0.16			5	0	0	0.296	0.284	0.136	1	1
+9698	32	0	1864-04-08	sent	S. H. Beckwith ( 2 )  Wash'n Apr. 8th 1864 1130 AM	Genesis Fisher Florence For Billy Tulip Spark Patrick	Simmes Pagan repeated to Chapel Yawl Lady pardon	60	0.35			0	4	0	0.459	0.568	0.135	2	2
+9698	32	1	1864-04-08	sent	S. H Beckwith Culpeper  Washn Apl 8th 1864	Helen For Judah Zodiac Jasper has just	yoke Ivory what a very fine day	75	0.2			3	0	0	0.351	0.378	0.135	2	1
+9699	33	0	1864-04-08	sent	John Horner N. York ----  Wash Apl 8th 1864	Minnie For Virtue S. L. Brown	propellers needed Confidential signed Meigs Abbott	95	0.16			0	0	0	0.153	0.254	0.085	2	9
+9699	33	1	1864-04-09	sent	John Horner. NY ( 9 )  Wash'n Apr 9th 1864 12.30 PM	Pagan Apr 9th Viola For Vulcan	sig M C Meigs Abbott	124	0.19		9700	0	0	0	0.213	0.267	0.093	2	9
+9701	35	0	1864-04-09	sent	SH Beckwith Culpeper  Washn 130 pm April 9th 1864	Harriet For Crowd Yacht A Veteran Baltic Sugar	the Persia talbot Argus Yawl Cupid wet again	72	0.36			0	4	0	0.535	0.605	0.116	2	2
+9701	35	1	1864-04-11	sent	S. H. Beckwith ( 2 )  Wash'n April 11th 1864 230 P. M.	Henrietta Gardner Genesis magic The comb has no	Biscay repeated as directed yawl Lamb all right	62	0.35			0	5	0	0.444	0.583	0.111	2	2
+9702	36	0	1864-04-12	sent	Geo. D. Sheldon. Ft Monroe  Washn April 12th 1864	Hannah For Knave Unity Shelby Ben ham is	a Panama polkaer I will accommodate you Jupiter	56	0.27			3	0	0	0.393	0.429	0.107	2	1
+9702	36	1	1864-04-12	sent	Washn April 12th 1864	Hannah for Orphan Unity Your letter recd . will not a	the next federal days youth Jupiter	113	0.18			3	0	0	0.277	0.246	0.062	1	1
+9703	37	0	1864-04-12	sent	Geo H Smith St Louis Mo  Washington April 12th 1864	Growl April flood For Moscow Unity Your report of	sugar Send all you can yoke Japan	61	0.34			4	0	0	0.583	0.472	0.083	1	1
+9703	37	1	1864-04-12	sent	G T Sheldon Ft. Monroe  New York Apl 12 / 64	Astor House N York April twelve for	Wm H Seward 430 PM clear warm beautiful afternoon	53	0.15			0	0	0	0.051	0.179	0.0	2	2
+9703	37	2	1864-04-13	sent	Washn April 13th 1864	G. D. Sheldon Ft Monroe	11 PM	34	0.29		9704	1	0	0	0.455	0.409	0.045	1	1
+9704	38	1	1864-04-14	sent	Sheldon Ft Monroe <insertion>" 1 "</insertion> Wash D. C Apl 14, 1864	for nave your wick respecting negotiations with	11 PM	43	0.09			1	0	0	0.19	0.143	0.048	1	clear
+9704	38	2	1864-04-14	sent	Van Valkenburg " 1 "  Wash. Apl 14 1864	Nashville	declined transferring him Jupiter Sarah Female	19	0.32			1	0	0	0.545	0.455	0.091	1	1
+9704	38	3	1864-04-16	sent	Washn Apl 16th 1864	Geo D Sheldon . Ft Monroe.	SH Beckwith	48	0.4		9705	2	0	0	0.543	0.4	0.086	1	1
+9705	39	1	1864-04-16	sent	Culpeper ----  Washn Apl 16th 1864	Topsy For chart tulip Paxton Kautz will be sent to	John Horner	131	0.33		9706	2	7	0	0.44	0.533	0.12	2	2
+9706	40	1	1864-04-16	sent	N York  Washn Apl 16th 1864	Helen For Agate pause You will	of Adam signed Dana Asst arabia	72	0.14			0	0	0	0.22	0.244	0.171	2	9
+9706	40	2	1864-04-16	sent	John Horner N. York  Washington Apl 16th 1864	Rosalie For Vienna Van Fleet Vinton	large signed Me Eggs Vinton Vermin	173	0.15		9707	0	0	0	0.213	0.292	0.18	2	9
+9708	42	0	1864-04-17	sent	SH Beckwith Culpeper  Washn Apl 17th 1864	Helen For Bellows tulip Shark Kautz ordered to Bunyan Wash	provisions from that Wrangle to Javelins Persia yawl Comet End	209	0.34			1	8	0	0.452	0.532	0.143	2	2
+9709	43	0	1864-04-18	sent	Geo D Sheldon Ft Monroe  Washn Apl 18th 1864	Hannah For Knox Unity Plague purple shelter	this Queenly yoke Me eggs Vinton Shelby	42	0.38			2	0	0	0.667	0.458	0.292	1	1
+9709	43	1	1864-04-19	sent	John Horner ( N. Y. )  Washn D. C. Apr. 19th 1864	Pagan Apr nineteenth Viola For	Olcott $pd Canon & C	56	0.16			0	0	0	0.156	0.178	0.067	2	9
+9709	43	2	1864-04-20	sent	Washington Apl 20th 1864	For Gin rail Pope Mill walk	No 2 Ft M	39	0.08		9710	0	0	0	0.074	0.111	0.0	2	clear
+9710	44	1	1864-04-20	sent	Geo. D. Sheldon ( 1 )  Washn D. C. Apr 20th 1864	Apr Harsh Fanny For Knox Please wrangle Persia	2 P. M.	42	0.4			0	1	0	0.593	0.519	0.074	1	1
+9710	44	2	1864-04-20	sent	Horner N. Y. " 9 "  Wash Apl 20. 1864	for Vienna Van Vliet Period vulcan Wise	of this fleet sig Aragon hannah	230	0.17		9711	0	0	0	0.23	0.259	0.165	2	9
+9712	46	0		sent		no 6. F. M	no 6. F. M	3	0.0			0	0	0	0.0	0.0	0.0	1	short
+9712	46	1	1864-04-20	sent	Geo D. Sheldon  Washn Wash Apr. 20th 4 P. M.	April Harrow Julia For Lent Pandora H Biggs Chief	Yoke Meigs Render Translate Pekin and Pedlar every time	413	0.49		9713	24	0	0	0.588	0.329	0.135	1	1
+9714	48	1	1864-04-21	sent	Beckwith Culpeper  Wash Apl 21 1864	magic . The Govrs of biscay adorn agate & alias	or refused Yawl beach Harriet Genesis Oliver Allen End	86	0.28			2	3	0	0.286	0.49	0.184	2	2
+9714	48	2	1864-04-21	sent	Geo Sheldon ( 1 )  Washn Apr 21st 1864 3.30 PM	Jennie For Lt Paradise H Biggs Vinton Is your	come here yoke Belcher Oh for wnigs of Dove	63	0.22			1	0	0	0.316	0.368	0.105	2	1
+9715	49	0	1864-04-21	sent	C. S. Cutler Albany NY  Washn D. C. Apr 21st 1864 530 PM	Grunt April Twenty one Rosalie For	No " 2 "  7PM	145	0.14		9716	0	0	0	0.216	0.257	0.068	2	9
+9716	50	1	1864-04-21	sent	Caldwell Hd qrs AP  Wash Apl. 21. 1864 7 PM	Minnie for Hum - phreys Your Brooks whiffs of wherry	" 9 "  940 Pm	64	0.16			0	1	0	0.158	0.263	0.026	2	2
+9716	50	2	1864-04-21	sent	Horner NY  Washn D. C. Apl. 21. 1864	for Vulcan John Err - ics - son	3 Pm	70	0.1		9717	0	0	0	0.158	0.132	0.079	1	clear
+9717	51	1	1864-04-22	sent	Horner N. Y.  Wash. Apl. 22 1864	for Br Gen Canby ---- What is	applause Have you recd no 1	39	0.13			0	0	1	0.263	0.263	0.211	1	9
+9717	51	2	1864-04-22	sent	John Horner NY  Wash'n Apr. 22nd 1864 10 PM	Pagan April Twenty Second Laura For	injurious sig M C Meigs Abbot	78	0.18			0	0	0	0.245	0.245	0.17	1	9
+9718	52	0	1864-04-23	sent	S.H. Beckwith ( 2 )   Wash'n DC Apr 23rd 1864 113 0am	Hang Florence Genesis Nelson Austin For chart tulip	" 1 "  2. P. M.	153	0.41		9719	1	15	0	0.442	0.567	0.115	2	2
+9719	53	1	1864-04-23	sent	McCaine Cumberland  Wash. Apl 23 1864	for Endless unity Persia Merlin sends	320 PM	30	0.2			1	0	0	0.273	0.182	0.045	1	1
+9719	53	2	1864-04-23	sent	Horner N. Y. " 9 "  Washn Apl 23. 1864	for Van Vliet Have	" Card "  320 P. M.	24	0.25			0	0	0	0.188	0.375	0.188	2	9
+9719	53	3	1864-04-23	sent	Thayer Phila  Wash. D. C. Apl. 23 1864	for Col Crossman Asst Qrmr	Meigs Q M Genl ----	33	0.06			0	0	0	0.0	0.08	0.0	2	clear
+9720	54	0	1864-04-23	sent	H. E. Thayer Phila  Washn Apl 23rd 1864	For Colonel Cross man period	another signed M C Meigs	40	0.03			0	0	0	0.0	0.05	0.0	2	clear
+9720	54	1	1864-04-23	sent	John Horner N. Y.  Washn Apl 23rd 1864	For Vain Fleet Vincent Merlin period	possible and dispatch it quickly Abbot	24	0.17			0	0	0	0.2	0.267	0.2	2	9
+9720	54	2	1864-04-23	sent	715 P. M  Washn Apr 23rd 1864	Clotilda For Knox unity Impossible to leave just now	1	51	0.33		9721	3	0	0	0.455	0.424	0.182	1	1
+9721	55	1	1864-04-23	sent	Caldwell Hdqrs AP  Washn D.C. Apl 23 1864	Nelly for Kindle unity much uneasiness & considerable excitement	them Youth Infant & such is life	167	0.14			3	0	0	0.258	0.213	0.079	1	1
+9722	56	0	1864-04-24	sent	F. S. Van Valkenburg Nashville  Washn Apl 24th 1864	For Pandora D C Mack Callum Embrace Unity	230 PM	105	0.2			3	0	0	0.312	0.25	0.047	1	1
+9722	56	1	1864-11-02	sent	Caldwell < insertion>no 2</insertion>  Wash. Apl 25 1864	Hd Qrs AP ----	SH Beckwith	51	0.29		9723	0	0	0	0.364	0.424	0.091	2	2
+9723	57	1	1864-04-26	sent	Culpeper   Washn April 26th 1864	Harriet For Chart Tulip Your Whiff of the Nelson Arnold	left Welch Battle Hon Abt Rebel cipher Dam your eyes	237	0.22			0	9	0	0.31	0.44	0.069	2	2
+9724	58	0	1864-04-27	sent	Capt C. S. Bulkley N. Orleans ( 2 )  Wash'n D. C. Apr. 27th 1864	Happy April Nelson Downing Elizabeth For Lapland Banjo	Halleck Chief of Staff Hurry this to Cherub without delay	190	0.25			0	6	0	0.353	0.441	0.049	2	2
+9725	59	0	1864-04-27	sent	S. H. Beckwith  Alexandria Va Apr. 27th 1864	Banjo Helen Apr Nelson Cushing for Chart Tulip	No 32	49	0.33			0	3	0	0.414	0.517	0.069	2	2
+9725	59	1	1864-04-27	sent	Capt R. F. Clowry Little Rock  Wash'n D. C. Apr 27th	For Commanding Officer Little Rock .	Ask Smith for number one	224	0.18		9726	2	0	2	0.289	0.298	0.19	2	9
+9727	61	0	1864-04-30	sent	S. H. Beckwith ( 2 )  Wash'n D. C. Apr. 30th 1864	Ogden Genesis Jennie For chart tulip as some time may	Prospect and will repair to his home in Agate Lady	130	0.35			0	5	0	0.377	0.571	0.104	2	2
+9727	61	1	1864-05-02	sent	to SH Beckwith Culpepper & GD Sheldon Ft Monroe  Washn May 2d 1864	Vernon Looked out Francis May Peach to Tappan R	1230 PM	55	0.4		9728	2	0	0	0.525	0.45	0.125	1	1
+9728	62	1	1864-05-02	sent	Beckwith No 2  Wash May 2. 1864	Culpeper	1 Pm	55	0.35	2		0	4	0	0.304	0.413	0.109	2	2
+9728	62	2	1864-05-02	sent	Sheldon ( No 1 )  Wash May 2. 1864.	Ft. Monroe Va	Draper pandora polking district ---- ---- ---- ----	54	0.28	1		0	0	0	0.35	0.35	0.075	1	1
+9729	63	0	1864-05-02	sent	S. H. Beckwith ( 2 ) ( Ch )  Washn DC May 2nd 1864 235 pm	Henrietta Brooks For Magic Tulip Have	Chf Staff	35	0.34			0	1	0	0.348	0.522	0.13	2	2
+9729	63	1	1864-05-03	sent	S. H. Beckwith  Washn May 3rd 1864	Hang Benton Job Fanny For Chart Chester Tulip Your	yacht I will write to you immediately Yawl Lady	62	0.34			0	4	0	0.371	0.6	0.114	2	2
+9729	63	2	1864-05-03	sent	Jno Horner  Wash'n May 3rd 1864 1025 Pm	Growl May Pebble Reliance for Paradise Ol = cott Frog Zebra	Boston and France Navy Yards Yoke Fox Asst Buxton boy	66	0.29			4	0	0	0.378	0.378	0.156	1	1
+9730	64	0	1864-05-04	sent	Geo. D. Sheldon  Washn May 4th 1864 2.30 P. M	Growl Henrietta May Penny For Knox unity Jupiters	we have Pocketed the Audit Walrus John Chinamen	65	0.43			6	0	0	0.596	0.447	0.213	1	1
+9730	64	1	1864-05-04	sent	F. S. Van Valkenburg Chat  Washington May 4th 1864 3 0 Pm	Growl Jennie May Pension For Kennebec unity Some	by militia Yoke Jacob give us first news	63	0.33			4	0	0	0.5	0.472	0.111	1	1
+9730	64	2	1864-05-05	sent	JW Sampson Balto  Wash May 5th 1 pm 1864	Harriet for J W Garrett unity Abner whist	220 PM	31	0.26		9731	2	0	0	0.421	0.368	0.053	1	1
+9731	65	1	1864-05-05	sent	David Columbus  Washn DC May 5. 1864	Minnie May 5th for bologna Send	2.20 P. M.	30	0.4			0	0	1	0.429	0.571	0.429	2	9
+9731	65	2	1864-05-05	sent	<deletion>David Columbus</deletion><insertion>Rowe wheeling</insertion>  Wash May 5, 1864.	Send following mesg in cipher if	10.10 A. M -----	47	0.21			0	0	1	0.31	0.345	0.31	2	9
+9731	65	3	1864-05-06	sent	Van Valkenburg  Washn May 6 1864	Ringgold Ga ----	No w 47	28	0.39		9732	3	0	0	0.579	0.474	0.158	1	1
+9732	66	1	1864-05-06	sent	Capt Sam Bruch  Washn May 6th 1864	Growl May Pledge Jennie For Palsy Robt  Al-	if Moscow will not give them up Ireland	133	0.27			4	0	0	0.43	0.342	0.127	1	1
+9733	67	0	1864-05-06	sent	Sheldon Ft Monroe  Wash May 6th 1864	Grapes May Pledge Sarah For Knox Animal unity A despatch	last night yoke Brutus the ball has opened I guess	90	0.33			4	0	0	0.448	0.397	0.086	1	1
+9733	67	1	1864-05-07	sent	John Horner  Wash'n May 7th 1864 11 AM	Growl May Postpone Fanny For Princess S L Brown	acknowledge this on receipt yoke Bender Mark this confidential	116	0.32			6	0	0	0.436	0.333	0.115	1	1
+9734	68	0	1864-05-07	sent	Capt Sam Bruch Lvl  Washn 9 pm May 7th 64	Grapes May postpone Rosetta for Palate R Allen	No 4	41	0.32			3	0	0	0.458	0.458	0.167	1	1
+9734	68	1	1864-05-08	sent	R. O.'Brien  Washn May 8th 1864 430 P. M.	Growl May Paddle Katy for Knox Your despatch torch Postpone	luck may accomplish all your wishes Youth Bruno awful hot	168	0.24			6	0	0	0.4	0.353	0.106	1	1
+9735	69	0	1864-05-09	sent	Rowe Cumberland  9  Washn May 9 1864	Pagan Hannah May 9th to Vermont Kelley	as deem best Abortion	54	0.17			0	0	1	0.3	0.3	0.2	1	9
+9735	69	1	1864-05-13	sent	R O Brien 7 am via F  Wash May 13 1864	Grapes May Forlorn Catherine For Knox unity Your despatch of	by a simms storm Walrus India this is very good	90	0.37			6	0	0	0.509	0.491	0.109	1	1
+9736	70	0	1864-05-15	sent	Beckwith Wash'n May 15th 1864	Hunter Nelly Job Kimball For Madrid Tulip Legend	the number to Norris Dwight Yawl Lady dark	72	0.43			0	4	0	0.422	0.644	0.089	2	2
+9736	70	1	1864-05-15	sent	9. P. M  Wash'n May 15th 1864	Growl Rosalie May Ghost For Season unity The Infant directs	unity A prompt execution of this order is expected Ireland	139	0.41			10	0	0	0.589	0.489	0.178	1	1
+9737	71	0	1864-05-16	sent	1 pm Beckwith (2)  Washington May 16th 1864	Happy Hannah May Knapp for Chart A new wayne	& silvers Wiley Cupid work to Belle Plain tonight	114	0.32	2		0	2	0	0.439	0.53	0.136	2	2
+9737	71	1	1864-05-16	sent	130 pm Sampson Balto  Washn May 16 1864	For Press Banditti whist at Port Tobacco can march	whimper to Bell plain walrus India whens arch cmg	35	0.34			2	0	0	0.44	0.4	0.08	1	9
+9738	72	0	1864-05-16	sent	SH Beckwith  Washington D. C. May 16th 1864 930 PM	Hang Rosalie Job Knapp For Crowd Tulip There is	harm there Stick Flora still singular Yawl comet gone	63	0.4			0	6	0	0.386	0.568	0.159	2	2
+9738	72	1	1864-05-16	sent	S. H. Beckwith 11 PM  Wash DC May 16 1864 ----	Hunter Job Marshall Sarah For Chart tulip Negus has	4 pm	181	0.35		9739	1	14	0	0.389	0.574	0.102	2	2
+9739	73	1	1864-05-18	sent	To Beckwith ( 2 )  Washn May 18th 1864	Julia Job Mason to Belly The Barton directs me	Please answer as Early as possible Welch Cupid rains	36	0.44			0	0	0	0.545	0.682	0.182	2	2
+9739	73	2	1864-05-19	sent	Beckwith ( 2 )  Washn 830 pm May 19	Nelly Job Morgan for Crowds It is Canby & not	1030 pm	48	0.29		9740	0	1	0	0.393	0.464	0.071	2	2
+9740	74	1	1864-05-19	sent	R O Brien  Washn May 19th 1864	Reliance May Hope to Knave your mangle of Nancy	results you have already obtained Webster Bruno Corunna taken	130	0.18			5	0	0	0.371	0.371	0.113	1	1
+9740	74	2	1864-05-20	sent	R O'Brien  Wash'n May 20th 1864	Growl May Harrow Elizabeth For Knave unity The Amen has	Van Valkenburg	70	0.24		9741	4	0	0	0.421	0.395	0.132	1	1
+9741	75	1	1864-05-20	sent	11 pm  Washn May 20th	Rebecca harsh for Kennebec Cherub your wrangle of	and of opera rations in Alba youth Brutus good night	330	0.25		9742	9	0	0	0.404	0.351	0.101	1	1
+9742	76	1	1864-05-22	sent	OBrien Hdqrs Gen Butler,  Wash DC May 22 1864.	Growl May Harrow plank Rosalie For Knox unity On friday	quarter Webster Brutus How do you think you are now	90	0.38			6	0	0	0.484	0.406	0.141	1	1
+9743	77	0	1864-05-23	sent	R OBrien Gen Butler Hd Qrs Washn 1215 pm May 23d 1864	Viola harrow perfume for Palate Meigs & Palsy Barnard tulip	whiff to the Amen should be prepared youth Indian all	66	0.48			1	2	0	0.674	0.587	0.196	1	1
+9743	77	1	1864-05-23	sent	R. R. McCaine  Wash'n May 23rd 9. pm 1864	Genrl Rosalie Harsh Perfume For Mackerel Unity There	Plunge Else is mustered out yoke Jacob up	71	0.32			4	0	0	0.55	0.4	0.125	1	1
+9744	78	0	1864-05-24	sent	730 pm  Washn May 24th 1864	Minnie harsh pension for Knox Juno directs that you have	the Harsh perfume was talboting on the Waxy Anna Italy	69	0.46			2	0	0	0.78	0.537	0.171	1	1
+9744	78	1	1864-05-25	sent	230 pm Cloury Little Rock  Washn May 25 1864	Henrietta Harrow plaster May for Mellow zebra a body	meet them on the Agnew border Walrus Jew confident	36	0.39			2	0	0	0.565	0.478	0.217	1	1
+9744	78	2	1864-05-26	sent	R. O'Brien  Washington DC May 26th 1864	Growl Emily May harsh pledge For Knave unity Jupiter directs	of which should receive your attention Yoke Jacob Jones	156	0.32		9745	7	0	0	0.517	0.461	0.112	1	1
+9745	79	1	1864-05-26	sent	John Horner 240 pm  May 26 1864	Imogene May harrow pledge for Kunkle . zebra	by mail of wedge L C Turner	125	0.26			2	0	0	0.354	0.304	0.127	1	1
+9746	80	0	1864-05-27	sent	Capt Geo H Smith  Washn May 27th 1864 230 PM	Growl Henrietta May Harsh Postpone for Moscow Unity The	Whips till they all leave your Quadrant Yoke Jacob	124	0.36			5	0	0	0.592	0.487	0.066	1	1
+9746	80	1	1864-05-27	sent	S. P. Kimber  Washn May 27th 1864 3 PM	Harry May Nelson Downing Jennie For Mastiff Tulip The Quotient	940 pm	101	0.44		9747	0	8	0	0.532	0.694	0.161	2	2
+9747	81	1	1864-05-27	sent	Geo D. Sheldon (F)  Washn May 27th 1864	Rebecca harsh plunder for Paradise Biggs Animal unity It	articles & spit called for Rucker	273	0.18		9748	5	0	0	0.309	0.279	0.074	1	1
+9748	82	1	1864-05-28	sent	R OBrien  Washn May 28th 1864	Henrietta harrow platina for Nankin zebra Jersey directs that	10 pm	79	0.35		9749	3	0	0	0.538	0.462	0.135	1	1
+9749	83	1	1864-05-28	sent	SH Beckwith  Washn May 28th 64	Rebecca Nelson Fisher to Crowd tulip Nothing will leave	that time wiley lady teleg trifle White House Young	80	0.31			0	3	0	0.432	0.568	0.136	2	2
+9749	83	2	1864-05-29	sent	GF Smith St Louis ( 1 )  Wash 1130 am May 29th	Florence May harrow padlock for	1230 pm	26	0.35		9750	1	0	0	0.562	0.375	0.125	1	1
+9750	84	1	1864-05-30	sent	Washn May 30th 1864	Viola Lamp to Pandora Biggs Appian The queenly torch	with Nankin up the York sugar webster Meigs Belcher	170	0.25			6	0	0	0.424	0.394	0.081	1	1
+9751	85	0	1864-05-30	sent	Lawrence H. Ferry  Wash May 30. 1864 ,	Growl may lamp Helen for orphan Martinsburg	J C Kelton paradise a a G	62	0.23			2	0	0	0.317	0.317	0.049	1	1
+9751	85	1	1864-05-31	sent	1 pm Dealey Ft Monroe  Washn May 31st 1864	Harriet for Polking officers Appian & Hastings zebra	sent to Knox Bermuda Hundreds youth Benjamin F	31	0.35			1	0	0	0.526	0.526	0.263	1	9
+9751	85	2	1864-05-31	sent	Dealey Ft Monroe  245 pm  Washn May 31st	Imogene for Pontiac officer Animal unity The weaseler Victor	7.40 P. M.	55	0.27		9752	2	0	0	0.467	0.4	0.133	1	1
+9752	86	1	1864-05-31	sent	Sheldon Ft Monroe  Wash DC May 31. 1864	Nancy for paradise Begs ---- vessels at hastings	opal of Attica Ere this time Walrus bender	52	0.31			2	0	0	0.452	0.516	0.194	2	9
+9752	86	2	1864-06-02	sent	Beckwith  Wash June 2 1864 .	Rebecca luke brooks magic tulip	them Stanhope Wiley lamb End	59	0.25			0	1	0	0.212	0.455	0.121	2	2
+9753	87	0	1864-06-04	sent	JW Sampson Balto  Wash June 4 1864	Fanny pension for Season unity You will immediately	send by train to Dagger no leave now	72	0.4			5	0	0	0.56	0.42	0.1	1	1
+9753	87	1	1864-06-04	sent	JW Sampson  Wash June 4th 1864	Jennie pension for Submit The plug Acton veteran	Webster Jacob tell n/u? see B as directed	64	0.38			3	0	0	0.55	0.475	0.1	1	1
+9754	88	0	1864-06-06	sent	Caldwell or Bickford  June 6th	Grapes June pledge For Lieut Morris Shaff	in time sig George D Ramsay Anna	49	0.35			3	0	0	0.417	0.333	0.111	1	1
+9754	88	1	1864-06-06	sent	S H Van Valkenburg  Washn June 6th 1864	Rebecca Pledge for Kidnap zebra Opera - rations on Empire	can to cover your walkins youth Ireland dead beat	125	0.21			2	0	0	0.379	0.318	0.121	1	1
+9755	89	0	1864-06-07	sent	S. P. Kimber  Wash'n June 7th 1864	Happy June Downing Imogene For Mastiff Tulip	to Monroe Wiley Meigs Buggy damp again	70	0.4			0	4	0	0.386	0.591	0.136	2	2
+9755	89	1	1864-06-10	sent	S. P. Kimber  Washington DC June 10th 1864	Hunter June French Gertrude For Mastiff tulip The Belgrade	been separated Welch Lady Please time all your dispatches	90	0.19			1	5	0	0.3	0.32	0.1	2	2
+9756	90	0	1864-06-10	sent	SH Beckwith  Wash June 10th	Susan Luke French Pollux tulip Please say to Biped	than is enter trained for him Wiley Barton on	72	0.19			0	1	0	0.278	0.389	0.083	2	2
+9756	90	1		sent	Bickford No 7 F. M.	Wash June Eleventh For Capt Pitkin	last night with horses signed Rucker	126	0.09		9757	0	0	0	0.061	0.136	0.0	2	clear
+9757	91	1	1864-06-11	sent	Kimber  Washn June 11 1864	Julia Hawkins for Mastiff Hero tulip Palermo Bailey	on the Washita may be made available Cupid	242	0.25		9758	0	9	0	0.319	0.403	0.069	2	2
+9758	92	1	1864-06-12	sent	JW Wallack Indianapolis  Wash June 12th 1864	For Govr Brough Indianapolis period Judge	soon signed Edwin M Stanton Secy	70	0.06			0	0	0	0.05	0.075	0.0	2	clear
+9759	93	0	1864-06-13	sent	8 pm  Washn D. C. June 13 1864	Nancy Hudson June to Farmer Hero tulip With regard	it has been referred to Magic Welch Paxton Hardie	63	0.32			0	1	0	0.486	0.514	0.086	2	2
+9759	93	1	1864-06-13	sent	12 pm Van Valkenburg ----  Wash June 13 " 1864	Growl June forlorn topsy For Kennebec Zebra Japan commenced	JW Wallach	136	0.35		9760	5	0	0	0.462	0.344	0.097	1	1
+9760	94	1	1864-06-16	sent	12 M  Indianapolis  Washn June 16th 1864	Washington director M for Capt J	ammunition signed Brig Genl Ram say	121	0.08			0	0	0	0.054	0.108	0.014	2	clear
+9761	95	0	1864-06-18	sent	Col Meysenburg 11 AM  Washn June 18th 1864	For Genl Stahl period For any	train signed Alden Dorothy oh migh	60	0.17			0	0	0	0.171	0.286	0.029	2	9
+9761	95	1	1864-06-19	sent	11 AM  Washn June 19th 1864	Fanny Morgan Following just rec'd dated Flint Mason	Col Meisenberg ,	59	0.32		9762	0	1	0	0.35	0.475	0.1	2	2
+9762	96	1	1864-06-19	sent	2.30 P. M. Martinsburg Va  =  Washington June 19, 1864	For General Stahl . period Gen'l Sheridan	12.30 P. M.	117	0.15		9763	0	0	0	0.219	0.266	0.047	2	9
+9763	97	1	1864-06-21	sent	A. H. Caldwoll Hd Qrs. A. of P.  Washington June 21. 1864.	Topsy Luke Oliver Brown For Spark In gulls	Meysenberg	137	0.2		9764	0	3	0	0.203	0.342	0.063	2	2
+9764	98	1	1864-06-23	sent	9 pm  Martinsburg  Wash June 23d 1864	For Genl Stahel period I have	be made with great caution Alden	65	0.12			0	0	0	0.176	0.235	0.0	2	1
+9764	98	2	1864-06-24	sent	SH Beckwith Hd Qrs  Washn June 24th 1864	Fanny Luke Oliver Baker to Magic tulip As stated in	8.30 pm	83	0.3		9765	0	2	0	0.391	0.543	0.087	2	2
+9765	99	1	1864-06-24	sent	GF Smith St Louis  Washn June 24th 1864	Nelly for Moon Geneva Complaints	white to me walrus Bologna	30	0.3			1	0	0	0.471	0.529	0.176	2	2
+9765	99	2	1864-06-25	sent	SH Beckwith  Washn 1130 AM June 25th 64	Florence Oliver Dayton for Palermo In Gauls Chief	spoon wiley Buggy Do you want some blankets	104	0.24			0	1	0	0.35	0.4	0.117	2	2
+9766	100	0	1864-06-25	sent	John Horner NY  Washn 1130 am June 25th 1864	Florence for Tappan S Van Vliet Queenly Vinton France unity	signed S Van Vliet Vincent violet do you keep warm	164	0.27			4	0	0	0.457	0.436	0.149	1	1
+9767	101	0	1864-06-26	sent	1130 am  Washn June 26th 1864	Florence to Crowd I have whiffed	special messenger welch Lady Chandler sick	24	0.25			0	2	0	0.4	0.333	0.067	1	2
+9767	101	1	1864-06-26	sent	10 pm  Washn June 26th 1864	Rebecca Nelson Dawson for Palestine In gulls yacht	must wait upon the other wiley Buggy Sandwich	96	0.29			0	3	0	0.367	0.45	0.117	2	2
+9768	102	0	1864-06-28	sent	DH Bates  Washn June 28th 1864	Helen for Bellows tulip If you could put Lieut Paxton	Snake every day but am detained by accumulated business Mars	79	0.27			0	2	0	0.333	0.373	0.098	2	2
+9768	102	1	1864-06-29	sent	10.30 AM DH Bates  Washn June 29th 1864	Elizabeth to Belly tulip Meriden has applied for and	Gauley welch Comet shall I forward letter from Wilmington	63	0.25			0	1	0	0.364	0.485	0.121	2	2
+9769	103	0	1864-06-29	sent	RR McCaine Loup Creek Va  Washn June 29th	Imogene harsh padlock for Mackerel near Gauley units	toby followed youth Ivory your valise not recd	69	0.28			1	0	0	0.474	0.395	0.105	1	1
+9769	103	1	1864-06-29	sent	WT June Mason ( #1 ) Cairo  Washn June 29th 1864	Julia June Harrow padlock to Palsy Bailey Girls Care	sligo Tremble yoke Belcher Where is Wash Parker now	62	0.37			3	0	0	0.524	0.405	0.095	1	1
+9770	104	0	1864-07-01	sent	RR McCaine  Washn 1230 pm July 1st 1864	Viola July Plug for Multon France Gauley unity John	the Rome now Stephen world walrus Benjamin write me	54	0.37			3	0	0	0.588	0.471	0.176	1	1
+9770	104	1	1864-07-02	sent	To RR McCaine  Washn July 2d 1864	Mutton zebra Judah says that such of your	of Hemp Webster Jew are you all oak	64	0.25			2	0	0	0.455	0.455	0.091	1	1
+9770	104	2	1864-07-03	sent	Meysenburg Martinsburg  Washn 1030 am July 3d 1864	Dorothy for Badger period Bremen has <deletion>o</deletion>	Capt & A A G pleasant	56	0.14			0	0	0	0.219	0.25	0.031	2	9
+9771	105	0	1864-07-03	sent	FT Bickford  Washn 330 pm July 3d 1864	Julia Benton for Magic tulip Neptune watsons that Early Ingot	the Robin should Pardon the line in Salem yawl Lady	139	0.27			0	6	0	0.408	0.5	0.105	2	2
+9771	105	1	1864-07-03	sent	715 pm  Washn July 3d 1864	Minnie to Polking Officer Cancer	immy youth Jordan you did	30	0.37			1	0	0	0.55	0.45	0.2	1	1
+9772	106	0	1864-07-03	sent	JW Sampson Wash July 3d 1864	Nancy for John W Garrett zodiac	signed Pagan Lew Wall lace fourth	128	0.21			2	0	0	0.291	0.304	0.101	2	9
+9773	107	0	1864-07-05	sent	FT Bickford  Washn July 5th 1864	Topsy to Belly tulip There has been no whiffic penfield	RR McCaine	231	0.31		9774	0	8	0	0.375	0.486	0.097	2	2
+9774	108	1	1864-07-05	sent	Parkersburg W Va via Phila  Washn 4 pm July 5th	Julia Mackerel zebra Juno has revoked the order	Acton and Harlem youth Irelands observe checks Pirate	40	0.28			1	0	0	0.385	0.308	0.154	1	1
+9774	108	2	1864-07-05	sent	FT Bickford  Washn July 5th 4 pm	Katy Magic stick Meriden has just been	New Import welch Comet alabama is sunk	35	0.43			0	1	0	0.348	0.652	0.087	2	2
+9774	108	3	1864-07-06	sent	SH Beckwith  Wash'n D. C. July 6th 1864	Helen Madrid tulip Shark Home has reached Chum	used them properly wiley Empress how you was	111	0.29		9775	0	6	0	0.415	0.477	0.123	2	2
+9775	109	1	1864-07-03	sent	WB Gilman  Washn July 3 PM	Washn July Sixth Three P. M.	Stanton Secy of War three afternoon	117	0.14			0	0	0	0.143	0.214	0.029	2	9
+9776	110	0	1864-07-06	sent	430 pm to Beckwith  Washn July 6th 1864	Laura for Belly tulip Please give me an estimate	Stanhope I think lantern shld not leave haron lamb	150	0.24			0	6	0	0.287	0.391	0.08	2	2
+9777	111	0	1864-07-06	sent	10 pm  Washn July 6th 1864	Rebecca to Magic tulip Lantern is of opinion	Panamas mind Battle mans a phenomenon one knows	49	0.33			2	1	0	0.394	0.485	0.242	2	2
+9777	111	1	1864-06-07	sent	Sampson Balto.  Wash June 7 1864	Grapes Emily for Capt Thomas Asst Vinton Baptism	wagons walrus bender - - - - -	146	0.23		9778	2	0	0	0.354	0.366	0.061	2	1
+9778	112	1	1864-07-07	sent	GD Sheldon Ft Monroe  11.30 AM  Washn July 7th 1864	Lieut Pandora Biggs Chf Vincent Appian zebra	Webster Belcher Florence united states of America	42	0.36			4	0	0	0.5	0.5	0.179	1	1
+9778	112	2	1864-07-07	sent	10 pm  Washn July 7th 1864	For Chart tulip The pagan prepared to send to you	yet devil upt yawl Embrace How are you Black horse	117	0.28			0	5	0	0.371	0.443	0.1	2	2
+9779	113	0	1864-07-08	sent	R. R. McCaine  Washn July 8th 10 Pm 1864	Washn July Platina Rebecca For Mutton unity	be of much use Yoke Jacob hot	77	0.22			3	0	0	0.381	0.31	0.119	1	1
+9779	113	1	1864-07-08	sent	Jno Horner N. Y.  Washn July 8th 1864 11 PM	Growl July Paddle Sarah For Kasson Frog Unity	for field service Youth Infant Hurry this up	73	0.38			5	0	0	0.54	0.42	0.16	1	1
+9780	114	0	1864-07-08	sent	F. T. Bickford  Wash'n D. C. July 8th 1864	Hang July Fisher Susan For Pollux Tulip I	has not yet left Parkersburg Yawl Beach end	97	0.32			0	6	0	0.39	0.475	0.102	2	2
+9780	114	1	1864-07-09	sent	1230 pm  Washn July 9th 1864	Crowd tulip If Mastiffs widow arrive in time I	my whiff of last evening welch Battle what then	72	0.35			0	4	0	0.396	0.5	0.062	2	2
+9781	115	0	1864-07-09	sent	S. H. Beckwith  Wash'n July 9th 1864 9 PM	Hang Mark Franklin Rosetta For Chart Tulip	of defence at that place yawl Lamb	112	0.29			0	5	0	0.371	0.516	0.081	2	2
+9782	116	0	1864-07-09	sent	1030 pm  Washn July 9th 1864	Magic tulip As arrival of Morgan pelton is	for quince of that pontiac Mind Lady Susan	40	0.35			0	1	0	0.478	0.565	0.043	2	2
+9782	116	1	1864-07-09	sent	Sheldon Ft Monroe  Wash July 9 1863	Susan July padlock for Polkaing Officer	grapes Webster Jacob good night yours	24	0.42			3	0	0	0.526	0.421	0.105	1	1
+9782	116	2	1864-07-10	sent	SH Beckwith City Point  Washn July 10th 1864 1230 AM	Hang . Mark french francis for Crowd : yacht	<unclear>sprague</unclear> Wiley cupid things are come mixed	65	0.42			0	6	0	0.444	0.6	0.156	2	2
+9783	117	0	1864-07-10	sent	S. H. Beckwith  Washn D. C. July 10th 1864	Huron Mark French Henrietta For Chart tulip Your despatch	not an repeat yawl college hurry this up sam	224	0.24			0	15	0	0.364	0.436	0.045	2	2
+9784	118	0	1864-07-10	sent	Beckwith City Pt  Wash July 10. 1864 330 PM	Imogene mark french for Belly ---- Your whim of	<insertion>338 w</insertion>	297	0.18		9785	0	3	0	0.237	0.29	0.065	2	2
+9785	119	1	1864-07-11	sent	8 AM  Washn July 11th 1864	Crowd tulip Yours of reliance yesterday received and	between Rock ville and here now wiley Balfour	48	0.38			0	2	0	0.5	0.567	0.167	2	2
+9786	120	0	1864-07-11	sent	S. H. Beckwith  Washn D. C. July 11th 1030 AM 1864	Hang Mark Hawkins Elizabeth For Palermo Raw line Tulip	1230 PM	313	0.26		9787	3	12	0	0.331	0.459	0.087	2	2
+9787	121	1	1864-07-11	sent	McCaine  Washn D. C. July 11th 1864	Growl July Flag Viola For Mutton unity Persia you form	be varied according to Sir come stanzas Yoke Jacob Jews	120	0.31			4	0	0	0.457	0.471	0.114	2	1
+9788	122	0	1864-07-11	sent	130 pm  Balto July 11th 1864	Hannah Submit unity Keep spaffords enough to mount	in our reptile walrus Jonah another battle fit	48	0.33			4	0	0	0.444	0.389	0.139	1	1
+9788	122	1	1864-07-12	sent	S. H. Beckwith  Wash'n July 12th 1864	Happy Mark Hoffman Florence For Chart	Sexton Welch College getting warm here	42	0.33			0	1	0	0.333	0.583	0.083	2	2
+9789	123	0	1864-07-12	sent	SH Beckwith City Point  Wash July 12 " 1864 ---- 1145 pm	Hang Mark Gilbert Sarah for Bellows yard Oxide request	supposed yawl cupid We are gay and happy yet	332	0.29		9790	0	16	0	0.361	0.474	0.072	2	2
+9790	124	1	1864-07-13	sent	RR McCaine  Washn July 13th 1864	Imogene Fever for Mutton unity The ridge left our reptile	estimated at over harsh purple walrus Jordan why so slow	78	0.38			3	0	0	0.596	0.489	0.149	1	1
+9791	125	0	1864-07-13	sent	JW Sampson  Washn July 13th 1864	Julia Fever for Mentor unity The rose left here	whistle eligo direction of Banditti except mounted guerrillas Italy	70	0.37			4	0	0	0.467	0.467	0.067	1	1
+9791	125	1	1864-07-13	sent	Wash. July 13. 1864 11 PM	Happy mark Hudson Susan for Crossed tulip Since my dispatch	Saginaw for marching wiley pollux which it is rather long	325	0.34		9792	0	2	0	0.359	0.519	0.068	2	2
+9793	127	0	1864-07-14	sent	RR McCaine  Wash'n July 14th 1864 12 noon	Growl July Female Frances For Mutton unity Shelby Pekin Ridge	Your Obt Servt Walrus Ireland Jonah acknowledge receipt this quick	317	0.3		9794	9	0	0	0.45	0.406	0.067	1	1
+9794	128	1	1864-07-15	sent	SH Beckwith  Washn July 15th 1864	Topsy Jones for Madrid tulip Yours of Helen yesterday is	to Churn Welch Battle will send you maps thro Leet	354	0.29		9795	1	11	0	0.319	0.472	0.083	2	2
+9796	130	0	1864-07-15	sent	SH Beckwith  Washn July 15th 1864	Reliance Kimball Belly tulip Lady thinks Meridens princeton very	to romance racine till recalled wiley Sandusky mem t'g	150	0.35			1	4	0	0.398	0.559	0.086	2	2
+9797	131	0	1864-07-17	sent	R. R. McCaine  Washn July 17th 1864	Grapes July Glance Elizabeth For Mutton unity Yours of	do not wish to order other wise Walrus Irving	136	0.24			8	0	0	0.403	0.375	0.097	1	1
+9797	131	1	1864-07-18	sent	SH Beckwith  Washn July 18th 1864	Elizabeth for Bellows tulip Considering the condition	you direct other wise yawl Lady	33	0.42			0	2	0	0.48	0.56	0.16	2	2
+9798	132	0	1864-07-18	sent	SH Beckwith  Washn July 18th 1864	Topsy Mason for Bellows I have just learned from Genl	Watkins will return wind Lady	63	0.32			0	1	0	0.326	0.465	0.14	2	2
+9798	132	1	1864-07-19	sent	SH Beckwith  Washn July 19th 1864	Julia Morgan for Chart tulip I am of	I have written wherry at length welch Lamb	40	0.4			0	1	0	0.522	0.696	0.13	2	2
+9798	132	2	1864-07-20	sent	SH Beckwith  Washn July 20th 1864	Katy Oliver for Crowd Yours of yesterday	glad to hear your suggestions wiley Color	50	0.32			2	1	0	0.233	0.533	0.167	2	2
+9799	133	0	1864-07-21	sent	SH Beckwith  Washn July 21st 1864	Florence for Madrid tulip Shark Barnard is repeated to	in obeying repeats Lamb last repeated is not arbitrary	185	0.28			1	5	0	0.31	0.405	0.06	2	2
+9800	134	0	1864-07-23	sent	8 AM McCaine H Ferry  Wash July 23 1864	Grapes July harsh pebble Deborah for Mackerel	finding that Wright has stomach youth Bologna	35	0.34			2	0	0	0.571	0.381	0.19	1	1
+9800	134	1	1864-07-24	sent	McCaine  Washn July 24th 1864	Grapes July Harsh Pension Florence For Mackerel unity	violet yoke Jew	43	0.42			3	0	0	0.643	0.464	0.071	1	1
+9800	134	2	1864-07-24	sent	Wash'n July 24th 1864 12 M	SH Beckwith	packed yawl Empress getting to be lively again	58	0.41			0	4	0	0.35	0.6	0.175	2	2
+9801	135	0	1864-07-24	sent	10 P. M. - McCaine H. Ferry  Washington D. C. July 24, 1864	Growl July harrow Jenny Rebecca for Mutton paws	and in what direction was he operating Indus	55	0.27			2	0	0	0.519	0.444	0.111	1	1
+9801	135	1	1864-07-26	sent	Beckwith City Pt  Wash July 26 1864	Happy for Bellows ---- Shark	bunyon after Yankee mng Costume	38	0.24			0	1	0	0.474	0.368	0.105	1	2
+9801	135	2	1864-07-27	sent	830 AM  Wash July 27 1864	Grapes Dorothy Harsh . postpone for	9 AM	23	0.43		9802	1	0	0	0.588	0.412	0.118	1	1
+9802	136	1	1864-07-27	sent	Van Duzer  Wash D. C. July 27 1864	Nashville	is no place seeking him Walrus bolivia End	81	0.22			4	0	0	0.333	0.333	0.133	1	1
+9802	136	2	1864-07-27	sent	S. H. Beckwith  Wash'n July 27th 1864 130 PM	Harry Mark Nelson Downing Harriet For Chart Tulip No Watsons	the Robin attempts to Plum above or below Chapel Lady	69	0.39			0	3	0	0.444	0.6	0.111	2	2
+9803	137	0	1864-07-27	sent	Lt Kelly  Wash'n July 27th 1864 9 P. M	Pagan Lucy July twenty seventh for	1140 am	43	0.16			0	0	0	0.261	0.261	0.174	1	9
+9803	137	1	1864-07-28	sent	Gilmore Chambersbg  Wash July 28. 1864	Koran Report what move - able forces	Aver - ill at Nankin Sig Label	29	0.1			0	0	0	0.188	0.188	0.062	1	clear
+9803	137	2	1864-07-29	sent	SH Beckwith  Wash'n July 29th 830 AM	Hunter Dorothy Nelson Franklin For Pillows	8 am 30th	32	0.38		9804	0	0	0	0.318	0.545	0.136	2	2
+9804	138	1	1864-07-30	sent	Wash July 30. 1864.	Chambers - burg Alice Mark ogden to cupid ---- Lafitte	raven is Swindling in Austin laughs windy lobster End	136	0.31			0	2	0	0.378	0.456	0.1	2	2
+9805	139	0	1864-07-30	sent	McCaine Line kind  Wash'n July 30th 1864 11 AM	Grapes July Lamp For Mutton unity It is wicked	11.30 am	193	0.3		9806	3	8	0	0.32	0.426	0.082	2	2
+9806	140	1	1864-07-31	sent	Beckwith City Pt  Wash D. C. July 31 1864	Crowd will the Queen of pedlar come armed mounted	940 pm	28	0.29			0	1	0	0.353	0.471	0.118	2	2
+9806	140	2	1864-07-31	sent	McCaine Fredkmd  Wash. D. C. July 31 1864	Growl July lamp plunge Rosetta for Sheep zebra I	wilby forwarded to your walrus Ivory very hot	185	0.21			4	1	0	0.327	0.317	0.038	1	1
+9807	141	0	1864-08-01	sent	FT Bickford  Washn August 1st 1864	Gertrude Brown for Palermo In gals Vermont tulip	230 Pm	69	0.28			0	2	0	0.34	0.404	0.043	2	2
+9807	141	1	1864-08-02	sent	Beckwith (No 2)  Wash. D. C. Aug 2. 1864	City Pt	I shall endeavor to have done lamb meridiens snake Fredk	165	0.3	2	9808	0	2	0	0.352	0.448	0.067	2	2
+9808	142	1	1864-08-02	sent	McCaine <insertion>no H. F. monocacy</insertion>  Washn Aug 2nd 1864 ----	Growl Peach Jennie For mutton unity Friend Picketed	Dovers Panama to Pigeon his Warrick Star Jordan	40	0.5			3	0	0	0.643	0.536	0.071	1	1
+9808	142	2	1864-08-03	sent	EW Culgan  Washn Aug 3rd 1864 4 PM	Henrietta For Optic As a new raid	sig Austria Mohawk August third act	91	0.13			0	0	0	0.18	0.2	0.06	2	9
+9809	143	0	1864-08-03	sent	SH Beckwith  Washn Aug 3d 1864	Henrietta Benton Belly From the best spencer I can	flying whack Eaton ton Virgin Webster Jupiter	353	0.31		9810	2	3	0	0.395	0.453	0.126	2	2
+9811	145	0	1864-08-04	sent	SH Beckwith  Washn Aug 4th 1864	Viola Andrew for Magic Had you asked my opinion	1040 am	69	0.16			0	1	0	0.222	0.278	0.056	2	2
+9811	145	1	1864-08-05	sent	McCaine  Wash. Aug 5 1864	Monocacy Junc .	Com - stock Lt paradise A D C End	60	0.28			2	0	0	0.415	0.293	0.073	1	1
+9811	145	2	1864-08-05	sent	Sampson Balto  Washn D. C Aug. 5. 1864	for W. P. Smith Baptism ---- Juno with one	G Wood Side Viola Growl Aug plaster ---- ----	75	0.19			1	0	0	0.255	0.234	0.064	1	1
+9812	146	0	1864-08-05	sent	McCaine  Wash D. C. Aug 5.1864	Monocacy Junc.	the walnuts are in Hag - ers - town Italy ----	41	0.22			0	1	0	0.375	0.25	0.0	1	1
+9812	146	1	1864-08-05	sent	Sampson Balto  Wash 12 pm Aug 5 64	Topsy plaster for Pilgrim Thomas Vinton zebra	by wrangle webster Bender	37	0.35			2	0	0	0.542	0.542	0.167	1	1
+9812	146	2	1864-08-05	sent	HE Thayer Phila  Washn 12 pm Aug 5th 1864	for Col Cross man Qr It is desired to have	capacity of those you engage	71	0.06			0	0	0	0.021	0.085	0.0	2	clear
+9813	147	0	1864-08-06	sent	Bickford  Washn Aug 6th 1864	Anna for Palermo In galls vermont stop I have	Course be used in this work welch Buggy crabs	114	0.29			1	3	0	0.324	0.471	0.103	2	2
+9813	147	1	1864-08-06	sent	McCaine  Aug 6th 1864	Pledge Francis For Makent unity The Panama Bureau	mount your Panama yoke Italy over the wave	48	0.25			2	0	0	0.393	0.357	0.107	1	1
+9814	148	0	1864-08-07	sent	T. B. A. David  Wash'n Aug 7th 1864	Pagan Aug seventh Harriet For Bologna	Howe poking cancer Webster Nabob Delr soon	234	0.24		9815	1	1	1	0.326	0.376	0.135	2	9
+9815	149	1	1864-08-07	sent	L. F. Sheldon  Wash'n Aug 7th 1864	Grapes Aug Plunder Rosetta For Palsy H W Wessels	for orders yoke Italy mighty warm day this sir	36	0.31			3	0	0	0.4	0.36	0.16	1	1
+9816	150	0	1864-08-07	sent	C. G. Sholes  Wash'n Aug 7th 1864 1030 Pm	Growl Aug Plunder Reliance For Kidnap	Polka youth Italy awful hot here	30	0.3			1	0	0	0.474	0.368	0.105	1	1
+9816	150	1	1864-08-07	sent	Capt W. G. Fuller  Wash'n Aug 7th 1864	Hang Aug Downing Reliance For Oyster Tulip	930 PM	37	0.3			0	2	0	0.455	0.5	0.091	2	2
+9816	150	2	1864-08-10	sent	Thayer Phila  Wash D. C. Aug 10. 1864			0	0.0			0	0	0	0.0	0.0	0.0	1	short
+9816	150	3	1864-08-10	sent	Washn Aug 10. 9. 30.	P. M for Chas Gilpin	signed Edwin M Stanton Secy	52	0.04			0	0	0	0.032	0.065	0.0	2	clear
+9817	151	0	1864-08-11	sent	G. D. Sheldon  Wash'n Aug 11th 1864 11 AM	Growl Flag Aug Fanny For Lester Polkaing Quadrant Waxy Unity	Inland says the Continental is under orders for Quadroon Wax end	51	0.33			4	0	0	0.455	0.455	0.121	1	1
+9817	151	1	1864-08-11	sent	Thayer Phila  Washn D.C. Aug 11, 1864	for C. A. Wal- born	No 6 1.30 PM	101	0.08		9818	0	0	0	0.054	0.107	0.0	2	clear
+9818	152	1	1864-08-11	sent	Cobb Chicago Ill  Wash. Aug 11 1864			0	0.0			0	0	0	0.0	0.0	0.0	1	short
+9818	152	2	1864-08-11	sent	Washn Aug 11th 1 30 PM	for Maj Gen Jno Pope Mil -	No 2  3. P. M.	97	0.08		9819	0	0	0	0.054	0.143	0.0	2	clear
+9819	153	1	1864-08-12	sent	Chappel New Orleans La  Washn. D. C. Aug. 12. 1864	Happy Aug Hoffman Jennie for farmer Ginger	12 M	35	0.43			0	1	0	0.538	0.577	0.154	2	2
+9819	153	2	1864-08-13	sent	McCaine No 1  Wash D. C. Aug 13. 1864	Grapes Aug fever Francis for No - bobby --	No 1  1230 pm	40	0.38	1		2	0	0	0.424	0.394	0.091	1	1
+9819	153	3	1864-08-13	sent	Horner N. Y.  Wash DC Aug 13 1864	Viola for Abm. Wake - man P M Frog ----	No 1	59	0.17		9820	1	0	0	0.214	0.238	0.095	2	1
+9820	154	1	1864-08-13	sent	Horner NY  Wash D. C Aug 13 1864	Viola aug forlorn for Robt Murray U S	in Hali - fax or was yesterday webster Brutus	81	0.14			1	0	0	0.167	0.185	0.074	2	1
+9820	154	2	1864-08-14	sent	Horner N. Y.  Wash. Aug. 14. 1864. 9 P. M.	for Robt Murray US mar shal Detain the Prince S.	till further directions The subject is under investigation Webster Bunyan	20	0.15			1	0	0	0.143	0.214	0.0	2	1
+9820	154	3	1864-08-16	sent	John Horner NY  Washn Aug 16th 1864	Libby for Insanity Your peach wrangler recd The the	may trans pire walrus Bruno deliver Keiths msg	40	0.23			1	0	0	0.36	0.28	0.08	1	1
+9821	155	0	1864-08-17	sent	S. H. Beckwith  Wash'n Aug 17th 1864 1030 AM	Happy Moses Marshall Elizabeth For Magic Tulip	1230 PM	48	0.25			0	4	0	0.226	0.387	0.065	2	2
+9821	155	1	1864-08-18	sent	Lawrence H. Ferry  Washn D. C. Aug 18. 1864	Grapes Viola for polking Shelby Camel unity The	D. Town Send A A Gen ---- ----	71	0.34			4	0	0	0.417	0.417	0.104	1	1
+9822	156	0	1864-08-18	sent	7 pm Beckwith  Washn Aug 18th 1864	Minnie Mason to Crowd . Frequent complaints have reached	No 2.  1010 am	221	0.21		9823	0	6	0	0.244	0.358	0.081	2	2
+9823	157	1	1864-08-19	sent	Beckwith City Pt  Wash Aug. 19. 1864	hang Emily Morgan Magic Allen of lantern's warps insists that	Swimming for Negus wind ham Embrace me my lady love	62	0.34			0	2	0	0.405	0.5	0.071	2	2
+9823	157	2	1864-08-19	sent	McCaine ( No 1 )  Wash. Aug. 19. 1864	Charleston Va	No 1  11.30 am	66	0.3	1		3	0	0	0.442	0.302	0.116	1	1
+9823	157	3	1864-08-19	sent	McCaine Charlestown Va  Wash. Aug. 19 1864	Grapes aug hunkey florence bobby unity I have	No 2  2 pm	127	0.23		9824	3	0	0	0.347	0.306	0.083	1	1
+9824	158	1	1864-08-19	sent	Beckwith City Pt  Wash D. C. Aug 19. 1864	happy Morgan Helen crowd The College	( No 9 )  2 PM	45	0.27			0	1	0	0.36	0.48	0.12	2	2
+9824	158	2	1864-08-19	sent	Carey Lexington Ky  Wash Aug 19.1864	Pagan hannah for Bur bridge	No 2  2 pm	29	0.21		9825	0	0	0	0.333	0.333	0.167	1	9
+9825	159	1	1864-08-19	sent	Beckwith City Pt  Washn D.C. Aug 19 1864	grapes Helen hunkey for paradise Bowers Blubber	(No 1)  3 PM	66	0.23			2	0	0	0.326	0.302	0.116	1	1
+9825	159	2	1864-08-19	sent	Sholes near Atlanta Ga  Washn D. C. Aug 19 1864	Grapes hunkey Imogene Kid nap Unity It seems absolutely	Jonah	93	0.31			3	0	0	0.448	0.431	0.052	1	1
+9826	160	0	1864-08-25	sent	RR McCaine  Washn Aug 25th 1864	Reliance Nabob unity Among the persons brought in by Tappan	To McCaine	231	0.28		9827	8	0	0	0.441	0.375	0.074	1	1
+9827	161	1	1864-08-26	sent	430 pm  Washn Aug 26th 1864	Katy Nabob The provisional battalion of Pacific belonging	Saints walrus Benjamin Aug harrow postpone ---- ----	185	0.29		9828	4	0	0	0.403	0.345	0.076	1	1
+9828	162	1	1864-08-28	sent	Gates Columbus  Washn August 28th 1864	Pagoda Hannah for Bolivia period As there	signed Abortion are you well	135	0.1		9829	1	0	1	0.139	0.167	0.097	2	clear
+9829	163	1	1864-08-28	sent	RR McCaine #1  Washn Aug 28th 1864	Helen for Nabob zebra Mackerel has asked	Sugar Berry not recd that letter yet	35	0.34			1	0	0	0.458	0.417	0.083	1	1
+9829	163	2	1864-09-01	sent	SH Beckwith  Washn Sept 1st 1864	Rosetta for Crowd tulip The knavey quotient appears very	No 13  1.30 pm	94	0.32		9830	0	4	0	0.333	0.483	0.067	2	2
+9830	164	1	1864-09-02	sent	Richards Boston Mass.  Wash. Sept. 2. 1864	for Bologna Dresden period Biped is	by all means Sig Claudius Mary	85	0.24			0	0	0	0.26	0.38	0.04	2	9
+9830	164	2	1864-09-02	sent	John Horner  Washn Sept 2nd 64	Imogene for Palate Wm Hay France zebra Have your	No 1  5. P. M.	75	0.17		9831	1	0	0	0.222	0.267	0.111	2	1
+9831	165	1	1864-09-02	sent	Horner NY  Wash. Sept. 2. 1864	Growl Lucy for palsy Hays ---- If enrolment lists	Sent to Nashville	90	0.08			1	0	0	0.137	0.137	0.039	1	clear
+9831	165	2	1864-09-03	sent	1030 AM  Washn Sept 3d 1864	Elizabeth perfume for Shelby A J Smith	webster Jacob Borgia hunt him up quick	28	0.36			1	0	0	0.444	0.556	0.056	2	1
+9831	165	3	1864-09-03	sent	Beckwith City Point  Washn Sept 3d 64	Gertrude Benton for Belly Just returned tulip	No 2	70	0.27		9832	0	1	0	0.298	0.404	0.128	2	9
+9832	166	1	1864-09-03	sent	Beckwith City Pt.  Wash. Sept. 3. 1864 930 pm	Rosalie Benton for Interest M.	Benjamin Paulding is arbitrary End	40	0.47			0	0	0	0.406	0.562	0.188	2	2
+9833	167	0	1864-09-04	sent	McCaine  Wash Sept 4th 1864	Francis for Nabob zebra a wolf of mine came	sweden as reliable webster Gimlet hurry up that letter	108	0.33			4	0	0	0.54	0.444	0.143	1	1
+9833	167	1	1864-09-04	sent	Beckwith  Wash Sept 4th 1864	Gertrude Baker for Crowd A warden from Charity	J D Stevenson Clifton not are - bite - rarey	254	0.3		9834	0	6	0	0.337	0.434	0.06	2	2
+9835	169	0	1864-09-05	sent	Carey Lexington Ky  Washn Sept 5th 1864	Francis plaster for Shelby Burr patron zebra	loyal people webster Ireland that pains alleviated	42	0.38			2	0	0	0.538	0.577	0.154	2	1
+9835	169	1	1864-09-06	sent	Chas Armond Halifax  Washn Sept 6th 1864	Elizabeth Coax zebra Your wrangle rec'd & I'm	the Pacific coast webster Bruno yours just arrived	49	0.24			2	0	0	0.393	0.357	0.107	1	1
+9835	169	2	1864-09-06	sent	Beckwith  Washn Sept 6th	Julia Dawson for Bellows Your whim of yesterday	pelton now oxide spoon under Negus thats funny	40	0.38			0	0	0	0.385	0.538	0.154	2	2
+9836	170	0	1864-09-06	sent	12 M  Washn Sept 6th 1864	Francis pledge for Lady Bishop The following wreathe from	see Page 113 Recd book #2 2 )	84	0.24			2	0	0	0.275	0.373	0.039	2	1
+9836	170	1	1864-09-07	sent	Horner N. Y.  Washn Sept 7th 1864	Harriet for Pandora McCallum care Masury and Whiton	sent this to Adonis webster W H Whiton	48	0.33			3	0	0	0.455	0.394	0.121	1	1
+9837	171	0	1864-09-07	sent	5 pm  Washn Sept 7th 1864	Rosalie for Bologna If Berths papers	Let him have his property Clarence	66	0.12			0	0	0	0.206	0.235	0.088	2	9
+9837	171	1	1864-09-08	sent	Beckwith  Washn 1030 a. m. Sept 8th 64	Elizabeth Fisher Magic tulip whim was sent	sent to him at same time Lady	28	0.39			0	1	0	0.316	0.579	0.105	2	2
+9838	172	0	1864-09-10	sent	McCaine #19  Washn Sept 10th 1864	Hannah Federal for Nabob zebra I've been obliged	impossible to get in to a ravish Gimlet	94	0.34			1	0	0	0.438	0.422	0.078	1	1
+9839	173	0	1864-09-12	sent	to Beckwith  Washn Sept 12th 1864	8 pm for Magic tulip Paxton Bingham & the other	Buggy Quantrell was owled wherry at Indian = apple = is	199	0.29			0	5	0	0.273	0.432	0.053	2	2
+9840	174	0	1864-09-13	sent	Beckwith  Washn Sept 13th 1864	Florence Hudson Crowd tulip In accordance with your previous	to understand precisely what repeats have already been given	112	0.25			1	3	0	0.333	0.397	0.048	2	2
+9840	174	1	1864-09-13	sent	Carey Lexington  Washn Sept 13th 1864	Jennie Fever for Kearney zebra Send a	to white to Merlin to saddle prisoners	21	0.38			1	0	0	0.615	0.538	0.308	1	1
+9840	174	2	1864-09-13	sent	Gates Columbus  Washn Sept 13th 1864	Henrietta Adonis period Quarrel Burr pedlar	you nigh Kate with him Austria	24	0.29			0	0	0	0.467	0.467	0.267	1	1
+9841	175	0	1864-09-13	sent	430 pm to OBrien  Washn Sept 13th 1864	Katy Fever for Knox zebra The Ames shoals I am	on your can all webster Bologna	76	0.16			3	0	0	0.343	0.229	0.114	1	1
+9841	175	1	1864-09-13	sent	Washn Sept 13th 1864	845 PM To Beckwith	necessity of the measure yawl Barton	39	0.23			0	3	0	0.333	0.5	0.056	2	2
+9841	175	2	1864-09-14	sent	To Beckwith  Washn Sept 14th 1864	Rebecca for Chart tulip If any thing should	EM Stanton	26	0.27			0	2	0	0.278	0.389	0.111	2	2
+9842	176	0	1864-09-14	sent	1 PM To Beckwith  Washington Sept 14th 1864	Hannah It is represented Tommy by reliable business men that	representations for you coin cider ration yawl Embrace why not	160	0.22			0	3	0	0.258	0.371	0.045	2	2
+9842	176	1	1864-09-15	sent	Capt Bruch  Washn Sept 15th 1864	Katy for Palate Robt Allen Vincent Dolphin zebra	to be done immediately Webster Bender fine day	48	0.33			2	0	0	0.424	0.455	0.182	2	1
+9843	177	0	1864-09-16	sent	HE Thayer  Washn Sept 16th 1864	To Col A J Perry	of War C A Dana	58	0.05			0	0	0	0.053	0.079	0.0	2	clear
+9843	177	1	1864-09-16	sent	Cipher Clerk  Washn Sept 16th 1864	Nashville	arrival here webster Brutus ans quick	73	0.26			2	0	0	0.364	0.386	0.045	2	1
+9844	178	0	1864-09-17	sent	10 am  Washn Sept 17th 64	Growl Emily glance For Kitchen Unity	you youth Ink coming to town	30	0.4			2	0	0	0.5	0.4	0.15	1	1
+9844	178	1	1864-09-17	sent	HE Thayer  Washn Sept 17th 1864	For Benjamin Franklin Phila period	when seizure is made EM Stanton	101	0.13			0	0	0	0.118	0.235	0.0	2	9
+9845	179	0	1864-09-18	sent	11 A. M. To J. W. Wallack Indianapolis  Washn Sept 18th	Mohawk Francis Eighteenth to Governor Morton	( signed ) Bishop How are you now	90	0.18			0	0	0	0.289	0.356	0.089	2	9
+9845	179	1	1864-09-19	sent	10 am Beckwith  Washn Sept 19th 1864	Elizabeth Morgan to Bellows tulip Odor and	Gertrude wedlock welch G V. Fox asst	24	0.38			0	1	0	0.471	0.529	0.176	2	2
+9846	180	0	1864-09-19	sent	4 PM Beckwith City Pt  Washn Sept 19th 1864	Huron Julia Following for information Crowd Tulip Churn	No 1  815 PM	80	0.44			0	6	0	0.467	0.55	0.133	2	2
+9846	180	1	1864-09-19	sent	Sampson Balto  Wash. Sept. 19. 1864	Nelly for J W G A R R E	8.30 P. M.	29	0.31			1	0	0	0.333	0.429	0.048	2	1
+9846	180	2	1864-09-19	sent	Thayer Philada.  Wash Sept. 19. 1864	for Benj Franklin Chf Police	8.30 PM	59	0.1		9847	0	0	0	0.111	0.111	0.0	1	clear
+9847	181	1	1864-09-19	sent	W. P. Smith Balto  Washn D. C. Sep. 19. 1864	Washn. 8. 30. P. M.	to fill up the mesg	46	0.09			0	0	0	0.065	0.129	0.0	2	clear
+9847	181	2	1864-09-20	sent	McCaine  Wash Sept 20	Emily Harrow Nabob Have just heard of	come up and see you walrus Bologna	27	0.3			2	0	0	0.389	0.389	0.222	1	1
+9848	182	0	1864-09-21	sent	2 PM Beckwith  Washn Sept 21st 1864	Helen Nelson Brown Chart Bridle stick a veteran Wayne	No 2  1.45 PM	83	0.33			0	3	0	0.408	0.531	0.102	2	2
+9848	182	1	1864-09-22	sent	Beckwith City Pt  Wash Sep 22 1864	Chart ---- Shark Woodbury was placed in prospect of the	No 2  3 pm	86	0.36		9849	0	0	1	0.364	0.545	0.073	2	2
+9849	183	1	1864-09-22	sent	Beckwith City Pt  Wash. Sep. 22 1864	Crowd ---- Ireland see by	2 pm	26	0.31			0	1	0	0.312	0.5	0.062	2	2
+9849	183	2	1864-09-23	sent	Bickford  Washn Sept 23d 1864	Helen for Palate Steven son zebra about person	No 10	41	0.37			3	0	0	0.536	0.429	0.179	1	1
+9849	183	3	1864-09-24	sent	Gates Columbus O.  Washn Sept 24th 1864	Fanny for Gov William Denny son	quorum come on immediately signed Blanchard	24	0.21			0	0	0	0.278	0.222	0.111	1	1
+9849	183	4	1864-09-22	sent	To McCaine #1  Washn Sept 22d 1864	Reliance harsh peach Nabob zebra Penny waldo Pony	8 PM	49	0.43		9850	2	0	0	0.618	0.412	0.088	1	1
+9850	184	1	1864-09-25	sent	Beckwith  Washn Sept 25th 1864	Nancy Nelson Dalon For Chart Tulip It is republic	#2	72	0.31			0	4	0	0.357	0.5	0.048	2	2
+9850	184	2	1864-09-26	sent	Kimber N.O.  Washn Sept 26th 1864	Topsy Nelson Dawson for Famish tulip An officer of	No 1  9 AM	60	0.3			0	1	0	0.351	0.459	0.054	2	2
+9850	184	3	1864-09-27	sent	Eddy Atlanta  Wash Sept 27. 1864	Emma harsh plunder for Kidnap ---- You	No 2	27	0.44		9851	0	0	0	0.643	0.571	0.143	1	2
+9851	185	1	1864-09-27	sent	Beckwith City Pt  Wash. Sep. 27. 1864	Hannah Nelson Downing Crowd The Clarke Brussels	No 32	71	0.21			0	1	0	0.25	0.325	0.025	2	2
+9851	185	2	1864-09-28	sent	To McCaine  Washn <insertion>12 M</insertion> Sept 28th 1864	Francis Wednesday harsh platine to Nabob zebra John	No 1  1030 AM	82	0.3		9852	3	0	0	0.453	0.358	0.132	1	1
+9852	186	1	1864-09-29	sent	Bickford H Ferry  Wash. Sep. 29. 1864	for Steven son send immedy from darling	No 9  1045 AM	33	0.36			0	0	0	0.455	0.364	0.045	1	1
+9852	186	2	1864-09-29	sent	Kelly Cumberland  Washington Sep. 29. 1864	francis for Kelly ---- <deletion>Gen S</deletion>	pers ferry ---- abortion	32	0.09			0	0	1	0.13	0.13	0.087	1	clear
+9852	186	3	1864-09-29	sent	JW Sampson Balto  Washn Sept 29th 64	Harriet for Submit zebra Send immediately	1230 pm	19	0.47		9853	2	0	0	0.643	0.643	0.214	1	1
+9853	187	1	1864-09-30	sent	CG Sholes  Washn Sept 30 1864	Harriet Friday Kidnap zebra Ive just seen the Pay	of Brandy & Garter for fearoff your raids Jonah	179	0.18			3	0	0	0.236	0.274	0.075	2	1
+9854	188	0	1864-09-30	sent	HE Thayer  Washn 330 pm Sept 30th 1864	Please deliver this in person	permits signed M C Meigs	95	0.07			0	0	0	0.04	0.12	0.0	2	clear
+9854	188	1	1864-09-30	sent	JW Sampson  Washn Sept 30th 1864	Season zebra The Infant directs	Cancer Walrus Jew	18	0.5			2	0	0	0.615	0.692	0.077	2	1
+9855	189	0	1864-10-01	sent	2 pm Beckwith ( No 2 )  Washn Oct 1st 1864	Helen Youth Crowd tulip The rewarding hasben recd oxide	for your advice tooth quotient there upon Paxton Hardie	106	0.37	2		0	3	0	0.432	0.5	0.162	2	2
+9855	189	1	1864-10-01	sent	WT Mason Cairo #1  Washn Oct 1st 1864	Henrietta plug for Niagara Bladder zodiac Send	No 2  11 AM	44	0.39		9856	2	0	0	0.607	0.5	0.179	1	1
+9856	190	1	1864-10-02	sent	Beckwith City Pt  Wash. Oct. 2. 1864	Zodiac fanny magic ---- The Walnut & whiff peltons	the road wheedle Sexton Royal ---- be head ----	152	0.19			0	0	0	0.307	0.387	0.133	2	2
+9856	190	2	1864-10-03	sent	To McCaine No 36  Washn Oct 3d 1864	Florence perfume Nabob zebra Your dispatch torch plug is just	that place walrus Jew Your number Lamp plaster is missing	80	0.35			3	0	0	0.5	0.462	0.192	1	1
+9857	191	0	1864-10-03	sent	R OBrien No 1  Washn Oct 3d 1864	Gertrude perfume Knave zebra I have directed Beach	all dispatch webster Brutus	60	0.33	1		3	0	0	0.576	0.485	0.121	1	1
+9857	191	1	1864-10-03	sent	McCaine No 1  Washn Oct 3d 1864	Rosalie perfume Nabob unity The wiley to reptile Royal	No. 1  2 PM	110	0.28	1	9858	4	0	0	0.377	0.391	0.072	2	1
+9858	192	1	1864-10-04	sent	Sheldon Ft. Monroe  Wash Oct 4 1864	pension to paradise Webster Chf Vinton ----	No 13  230 Pm	41	0.15			2	0	0	0.24	0.16	0.04	1	1
+9858	192	2	1864-10-04	sent	Richards Boston Wash Oct. 4. 1864.	John Oct 4 libby for Optic	Fox Asst Sec Navy ---- ----	47	0.15			0	0	0	0.194	0.226	0.032	2	9
+9858	192	3	1864-10-04	sent	John Horner N. Y. ( No 1 )  Washn Oct 4th 1864	Jennie pension for Tappan vain fleet vincent Frog	D Wise Paradise & Vinton	35	0.34	1		2	0	0	0.462	0.385	0.154	1	1
+9859	193	0	1864-10-04	sent	HE Thayer Phila  Washn Oct 4 1864	Col A J Perry Quarter	Wise Col & Q M	39	0.15			0	0	0	0.138	0.172	0.0	2	9
+9859	193	1	1864-10-04	sent	H. E. Thayer  Washn Oct 4th 1864	For Hon Wm K Kelly	river signed E M Stanton	30	0.27			0	0	0	0.19	0.333	0.0	2	9
+9859	193	2	1864-10-04	sent	HE Thayer Phila  Washn Oct 4th 1864	To Col A J Perry	signed Geo D Wise Col	30	0.07			0	0	0	0.087	0.087	0.0	1	clear
+9860	194	0	1864-10-05	sent	Horner NY  Washn Oct 5th 1864	Hannah plaster for Belcher care Tappan Vain fleet	need not be sent walrus Geo D Wise	39	0.31			2	0	0	0.414	0.345	0.069	1	1
+9860	194	1	1864-10-05	sent	SH Beckwith  Wash Oct 5th 64	Henrietta Caldwell Bellows tulip Warps in this morning	cipher from Geneva to follow Randall Baker lives	64	0.39			0	2	0	0.356	0.556	0.067	2	2
+9860	194	2	1864-10-05	sent	Beckwith City Pt ( No 2 )  Wash Oct 5 1864 ---- 6 Pm	Yancey libby crowd ---- Launches repeated by	No 1  9 pm	95	0.21	2	9861	0	1	0	0.311	0.328	0.098	2	2
+9861	195	1	1864-10-06	sent	Sheldon Ft. Monroe  Wash. Oct. 6. 1864	9 PM for Como Lanman Ft Mon . The peach	Secy Navy	66	0.18			0	0	0	0.244	0.244	0.067	1	1
+9861	195	2	1864-10-07	sent	JW Sampson " ND "  Washn Oct 7th 1864	Francis submit Its wicked that a small gorilla	spur them Webster Jordan	37	0.3			2	0	0	0.5	0.455	0.136	1	1
+9862	196	0	1864-10-07	sent	JW Sampson  Washn Oct 7th 1864	Julia for J W Garrett unity Niggard were sent	" (Cal) "  6 P. m	57	0.19			2	0	0	0.321	0.321	0.036	1	1
+9862	196	1	1864-10-07	sent	Gen Wright San Fran.  Washn D. C. Oct 7. 1864	Ida Emily Octo 7 for Govr	measures towards thwarting the same Quiver	57	0.16			0	0	0	0.229	0.257	0.114	2	9
+9863	197	0	1864-10-07	sent	8 pm OBrien  Washn Oct 7th 1864	Rosalie postpone Knox zebra Sligo France Herald torch	No 2  1020 Pm	67	0.33			2	0	0	0.455	0.432	0.136	1	1
+9863	197	1	1864-10-07	sent	Caldwell Hd Qrs AP.  Wash. D. C. Oct. 7. 1864	Yellow reliance for Monarch Make such	Squadron talbot Abbot sig belly ----	33	0.36			0	0	0	0.5	0.5	0.167	1	2
+9863	197	2	1864-10-08	sent	JW Sampson No 1  Washn Oct 8th 1864	Season unity Its wicked that Mosby with about platinum	also look out sharp for Harlem Webster Bennet Florence	63	0.37	1		4	0	0	0.525	0.525	0.1	1	1
+9864	198	0	1864-10-12	sent	McCaine No 1  Washn Oct 12th 1864	Nelly forbid Nabob zebra This quadrant again	the Country walrus Infant	83	0.33	1		2	0	0	0.464	0.429	0.089	1	1
+9864	198	1	1864-10-13	sent	Carey Lexington & Bruch Lol No 1  Washn Oct 13th 1864	Florence Fever for Kiss Dragon zebra all Salems that	No 1	46	0.33	1	9865	2	0	0	0.542	0.542	0.083	1	1
+9865	199	1	1864-10-13	sent	JC Van Duzer Nashville  Washington Oct 13th 1864	Francis forlorn to Lantern zebra Plank old whips from	( No 2 )	123	0.26			4	0	0	0.413	0.373	0.08	1	1
+9865	199	2	1864-10-13	sent	Beckwith City Pt  Washn DC Oct. 13. 1864 .	Yankee Gertrude Crowd ---- The substance of your dispatch of the	No 1  3 pm	94	0.26		9866	0	1	0	0.322	0.407	0.119	2	2
+9866	200	1	1864-10-13	sent	Horner NY  Wash Oct 13 1864	Grapes Imogene for pandora L C Baker frog	No 1	32	0.25			2	0	0	0.353	0.471	0.176	2	1
+9866	200	2	1864-10-13	sent	McCaine Cedar Creek  Washn D. C. Oct 13. 1864	Growl lucy no surry Bob ---- The brutus wishes	No 1  10 am	64	0.2			2	0	0	0.267	0.267	0.089	1	1
+9866	200	3	1864-10-14	sent	Van Duzer Nashville  Wash Oct. 14. 1864	Grapes female for lady ---- I have directed	( No 2 )  10.30 am ----	101	0.31		9867	2	0	0	0.45	0.367	0.0	1	1
+9867	201	1	1864-10-14	sent	Beckwith City Pt ----  Wash Oct 14. 1864	happy yellow Elizabeth Magic ---- plantation between flora	Copy to Beckwith	100	0.23			0	0	0	0.311	0.328	0.066	2	2
+9867	201	2	1864-10-15	sent	W. J. Dealey Ft Monroe  Washn Oct 15th 1864	Washn Eugenia Ghost Bruno Animal Rambling is all we have	yesterday pledge pelham had arrived from ragged royal walrus Stevenson	138	0.37		9868	7	0	0	0.521	0.447	0.149	1	1
+9868	202	1	1864-10-15	sent	WJ Dealey Ft Monroe  Washn Oct 15th 1864	San Francisco Adrian Fugitive for Byron zebra	730 PM	137	0.29		9869	2	0	0	0.353	0.324	0.088	1	1
+9869	203	1	1864-10-16	sent	JW Sampson Balto  Washn Oct 16th 1864	Minnie Pandora Wise well Barnums	or Fence walrus T Ingraham	25	0.4			1	0	0	0.625	0.562	0.125	1	1
+9869	203	2	1864-10-18	sent	Sampson  Washn Oct 1864	Nancy Gas Season unity Ewell	(No 2)  12. 30 p. m.	33	0.45			2	0	0	0.5	0.542	0.083	2	1
+9869	203	3	1864-10-17	sent	Beckwith City Pt.  Wash Oct 17. 1864	Woodbury francis crowd negus has just been here he has not	No 1  2 PM	62	0.27			0	2	0	0.333	0.436	0.103	2	2
+9869	203	4	1864-10-17	sent	Carey Lexington Ky  Wash Oct 17th 1864	Growl Helen Kearney ---- There are no nutmeg whiskey	No 1  2 pm	69	0.2		9870	2	0	0	0.368	0.316	0.026	1	1
+9870	204	1	1864-10-17	sent	Fowler Memphis Tenn.  Wash. Oct 17 1864	Grapes Helen Oct glory for lavender ---- Should	430 pm	46	0.33			2	0	0	0.448	0.414	0.034	1	1
+9870	204	2	1864-10-17	sent	MS Quay Harrisburg  Washn Oct 17th 1864	for Curtin period Your information is	( No 2 )  2.30 Pm	38	0.13			0	0	0	0.174	0.13	0.0	1	9
+9870	204	3	1864-10-19	sent	Beckwith City Pt  Washn D. C. Oct 19. 1864	Rectortown Yancy Delia lamb Simms can on aiding has been	No 13	72	0.24		9871	0	0	0	0.288	0.327	0.173	2	2
+9871	205	1	1864-10-19	sent	WF Richards Boston  Washn Oct 19th 1864	Nancy for Bolivia period I especially	meant signed California Judah Oct 19th	54	0.17			0	0	0	0.194	0.222	0.056	2	2
+9871	205	2	1864-10-19	sent	WF Richards Boston  Washn Oct 19th 1864	If by any pretext you are	( No 2 )  630 PM	62	0.13		9872	0	0	0	0.122	0.146	0.0	2	2
+9872	206	1	1864-10-19	sent	Beckwith City Pt  Wash. Oct. 19. 1864	Up to this hour many Oper at Churn Watsons passing	7.30 pm	32	0.06			0	0	0	0.105	0.105	0.053	1	clear
+9872	206	2	1864-10-19	sent	Beckwith  Washn Oct 19th 1864	Martha Morgan Crowd tulip I send the adjoined despatch for	No 1  3 pm	152	0.3		9873	0	4	0	0.356	0.436	0.139	2	2
+9873	207	1	1864-10-20	sent	Van Duzer Nashville  Wash. Oct. 20. 1864.	Growl harsh Imogene for lady ---- It is wicked	No 1	43	0.28			1	0	0	0.5	0.333	0.042	1	1
+9873	207	2	1864-10-21	sent	Capt Van Duzer Nashv.  Wash. Oct. 21. 1864	Grapes harrow plug Elizabeth lantern So long as	best means of getting rid of him Jonah	31	0.29			1	0	0	0.429	0.333	0.048	1	1
+9873	207	3	1864-10-21	sent	Beckwith City Pt  Washn Oct 21st 1864	Katy Oliver Brown Belly As it is manifest that no	No 2	122	0.24		9874	0	4	0	0.293	0.36	0.067	2	2
+9874	208	1	1864-10-22	sent	RR McCaine  Wash'n Oct 22nd 64	Hang Noah Nelson Brooks Fanny for Pearl J. W. For =	( No 1 )  1230 Pm	61	0.33			0	3	0	0.24	0.4	0.06	2	2
+9874	208	2	1864-10-22	sent	Horner N. Y.  Wash Oct. 22 1864	Grapes Viola for paradise Brown & tappan Van Vliet	---- I will add tooth list by mail bender	78	0.17			1	0	0	0.234	0.277	0.085	2	1
+9874	208	3	1864-10-22	sent	Beckwith  Wash'n Oct 22nd 1864	Rosalie Oliver Arnold Belly Tulip Spencer received this evening	No. 2  9 P. M.	39	0.36		9875	0	3	0	0.296	0.519	0.111	2	2
+9875	209	1	1864-10-23	sent	Caldwell Hd Qrs AP  Wash. Oct. 23. 1864.	happy zodiac rosetta grunt ---- The promotions recommended	agreeable to law and regulation wiley comb End	118	0.19			0	0	0	0.239	0.343	0.06	2	2
+9875	209	2	1864-10-24	sent	J. C. Van Duzer  Wash'n Oct 24th 1864 4. P. M	Grapes Julia harsh Penny for Lamb zebra As the War	orders and requisitions yoke Ivory of conner there is so	70	0.31			4	0	0	0.5	0.364	0.068	1	1
+9876	210	0	1864-10-24	sent	Caldwell  Washn Oct 24th 64 8 P.M	Nancy Nelson Baker for Mohawk yacht The	No 2  11 am	94	0.16			0	3	0	0.22	0.28	0.04	2	2
+9876	210	1	1864-10-27	sent	Beckwith City Pt Wash D. C Oct. 27. 1864	Yankee fanny chart ---- The Brown Benton & Baker Webbs	No 1  11. am	82	0.34		9877	0	2	0	0.308	0.519	0.077	2	2
+9877	211	1	1864-10-27	sent	Sampson Balt  Wash Oct. 27 1864	florence submit ---- You will please give	No 1  11.30 am	52	0.29			0	0	0	0.405	0.324	0.054	1	1
+9877	211	2	1864-10-27	sent	Glass Nashville  Wash. Oct 27. 1864	Grapes francis lafitte ---- Should moscow be able to send	No 1	26	0.35			1	0	0	0.6	0.533	0.133	1	1
+9877	211	3	1864-10-28	sent	Schermerhorn H. F.  Wash'n Oct 28th 1864 930 AM	Eugenia Harsh Platina for Palsy Steven son zebra Oakum Stephen	No 1.	52	0.38		9878	3	0	0	0.606	0.485	0.242	1	1
+9878	212	1	1864-10-28	sent	B. B. Glass Nashville  Washn Oct 28 1864	Growl francis lantern ---- John has ordered moon to	No 1	44	0.34			3	0	0	0.652	0.565	0.087	1	1
+9878	212	2	1864-10-28	sent	Byington Ft Leavenworth  Wash. Oct. 28. 1864	Growl Oct harrow platina francis for Shelby Court	No 2	32	0.38			1	0	0	0.571	0.476	0.095	1	1
+9878	212	3	1864-10-30	sent	RR McCaine  Wash'n Oct 30th. 1864	Hang Noah Ogden Hannah for Negus Tulip is abe	shun with the at most rigor J C Kelt on	59	0.25			0	3	0	0.333	0.389	0.111	2	2
+9878	212	4	1864-10-30	sent	Col MS Quay  Wash'n Oct 30th 1864	Wash'n Oct thirtieth for Hon A	sig A Link on yours truly	25	0.04			0	0	0	0.062	0.062	0.0	1	clear
+9879	213	0	1864-10-30	sent	Caldwell  Wash'n Oct 30th 1864	Happy Hannah Ogden for Nymph yacht It is credibly	A Day nay assist ant Brach how look now	106	0.17			0	3	0	0.145	0.261	0.058	2	2
+9879	213	1	1864-10-31	sent	Washn Oct 31st 1864	G. C. Eddy - Rome Ga.	means of weasel to any point where required Cupid	41	0.22			0	1	0	0.24	0.36	0.08	2	2
+9880	214	0	1864-10-31	sent	SH Beckwith No 2  Washn 3 pm Oct 31st 1864	Jenny Woodbury Belly tulip Whim just received from Shark	No 1	40	0.4	2		0	2	0	0.48	0.64	0.04	2	2
+9880	214	1	1864-10-31	sent	D Byington No 1 Ft Leavenworth = Washn 3 pm Oct 31st 1864	Imogene Lamp plug for Shelby Curtis unity	No 1	22	0.41	1		1	0	0	0.562	0.375	0.188	1	1
+9880	214	2	1864-10-31	sent	Capt GH Smith St Louis  Washn Oct 31st 1864	Imogene Monday for Moon unity Shelter Curtis wrangles that	of Mellow or Montrose These orders mustby obeyed Bennet	63	0.29			2	0	0	0.45	0.4	0.125	1	9
+9881	215	0	1864-11-01	sent	SH Beckwith  Washn 1030 am Nov 1st 1864	Elizabeth Brown Crowd tulip It is absolutely stomach there	spared it would be well to send him Comb	89	0.27			1	3	0	0.269	0.442	0.038	2	2
+9881	215	1	1864-11-01	sent	Capt GH Smith St Louis  Washn Nov 1st 1864	Fanny plug for Moscow zebra Despatches just received from	to Lafitte youth Jonah	93	0.37			2	0	0	0.491	0.564	0.127	2	1
+9882	216	0	1864-11-01	sent	Capt JG Van Duzer  Washn Nov 1st 1864	Florence plunge Lantern zodiac Moscow was directed	by new whisky as they arrive Jacob	152	0.36			2	0	0	0.556	0.456	0.044	1	1
+9883	217	0	1864-11-01	sent	Washn Nov 1st 1864	Harriet For Palsy Robt Allen Vinton Dragon Zebra	youth M see Me Eggs Bender the End	88	0.22			1	0	0	0.319	0.404	0.128	2	1
+9883	217	1	1864-11-02	sent	1220 PM  Washn Nov 2d 1864	St Louis	await their trains there yoke Italy that is all	65	0.22			4	0	0	0.324	0.353	0.147	2	1
+9884	218	0	1864-11-02	sent	R OBrien Hdqrs Gen Butler  Washn 1pm Nov 2d 1864	Harriet peach For Tappan shelter Terry Unity You will	required Unity They are going to Hamlet youth Knave	54	0.28			4	0	0	0.484	0.355	0.194	1	1
+9884	218	1	1864-11-02	sent	Washn Nov 2nd 1864	John Horner	no 1	84	0.29		9885	3	0	0	0.545	0.341	0.091	1	1
+9885	219	1	1864-10-02	sent	John Horner  Wash'n Oct 2nd 64	Growl Helen Plank for Kunkle zebra would it not be	This may deter the production of many fraudulent votes Infant	99	0.14			3	0	0	0.283	0.196	0.087	1	1
+9885	219	2	1864-11-02	sent	Ed Schermorhorn H. Ferry  Washn Nov 2d 1864	Harvard Emily peach For Palate Stevenson Camel	the Randolph in charge youth Nabob End	42	0.38			1	0	0	0.615	0.462	0.192	1	1
+9885	219	3	1864-11-03	sent	John Horner NY #1  Washn Nov 3rd 1864 9 pm	Rosalie perfume for Knave Ive wrangled to Kasson &	Infant another long one will be ready very soon	53	0.26			1	0	0	0.4	0.343	0.086	1	1
+9886	220	0	1864-11-03	sent	Capt Clowry St Louis  Washn 12 m Nov 3d 64	Francis perfume for Shelby Curtis in field unity The	( 1 )	93	0.3			3	0	0	0.458	0.441	0.136	1	1
+9886	220	1	1864-11-03	sent	Capt R. C. Clowry  Wash'n Nov. 3rd 1864 4 P. M.	From Julia Pebble for Palsy Rawlins Chief of Staff	and Halifax Yoke Italy He is in your city	63	0.33			3	0	0	0.471	0.559	0.206	2	1
+9887	221	0	1864-11-03	sent	John Horner New York  Washn Nov 3d 1864	Mary perfume For Kasson Unity The whist going to France	Not sent	80	0.16			2	0	0	0.333	0.306	0.139	1	1
+9887	221	1	1864-11-03	sent	John Horner NY #1  Washn 9 pm Nov 3d 1864	Rosalie Knox zebra Jersey whites from Black that there	1230 PM	72	0.25		9888	3	0	0	0.386	0.341	0.159	1	1
+9888	222	1	1864-11-05	sent	Beckwith City Pt  Washn Nov 5th 1864	Hannah Dayton For Bellows stick I think from present	Ida and Kossuth against Falcon wiley Cupid good day	126	0.33			0	4	0	0.419	0.541	0.149	2	2
+9888	222	2	1864-11-05	sent	RC Clowry St Louis  Washn Novr 5th 1864	Henrietta plaster for Palsy Rawlins unity Its wicked that theres	own tanner at once walrus Jacob weather clear & cool	87	0.26			3	0	0	0.438	0.438	0.062	1	1
+9889	223	0	1864-11-05	sent	Clowry St Louis  Washn Novr 5th 1864	Jennie person for Moon unity . The Indigo directs the	New Madrid Aragon pandora Wm Harper keep Girardeau Insanity	53	0.45			2	0	0	0.524	0.5	0.143	1	1
+9889	223	1	1864-11-05	sent	Capt Sam Bruch Louisvl Washn Nov 5 1864	Jennie plaster Kearney zodiac The Infant	Garrett Dragon Youth Image Asst Brutus	36	0.42			1	0	0	0.536	0.536	0.25	1	1
+9889	223	2	1864-11-05	sent	Capt Van Duzer Nashville  Washn Nov 5th 1864	Jennie plaster for Palate J F Miller	Tunstall Embrace yoke Insanity stop Tun stall	42	0.4			3	0	0	0.485	0.485	0.212	1	1
+9890	224	0	1864-11-05	sent	Sampson Balto  Washn Novr 5th 1864	Julia plaster for Submit zodiac The Infant	Wm Hamilton Banditti youth Insanity	33	0.42			0	0	0	0.583	0.583	0.25	1	1
+9890	224	1	1864-11-06	sent	SH Beckwith City Point  Washn 1 pm Nov 6th 1864	Hannah Dawson Magic yard Whatty meant about Mastiff	Washn Novr	252	0.33		9891	0	7	3	0.42	0.522	0.102	2	2
+9892	226	0	1864-11-07	sent	John Horner New York  Washington Nov 7th 1864	Harriet For Knox zebra Bolivia thinks it expedient to	the subject of abstract discussion yoke Indigo good day	108	0.22			2	0	0	0.306	0.371	0.097	2	1
+9892	226	1	1864-11-08	sent	JC Van Duzer Nashville  Washn Novr 8th 1864	Fanny platina Lantern zebra Kiss as the	11 am	50	0.38		9893	2	0	0	0.543	0.486	0.086	1	1
+9893	227	1	1864-11-08	sent	Wash'n Kingston Ga  Wash'n Nov. 8th 1864	Hang Fanny Obadiah For Flora Tulip Knight is now	No 1	100	0.42			0	7	0	0.567	0.597	0.149	2	2
+9893	227	2	1864-11-09	sent	RS Fowler  Wash'n Nov. 9th 1864	Growl Nov Pony Lucy For Lavender Zebra John has	9 PM	74	0.42		9894	6	0	0	0.6	0.48	0.16	1	1
+9894	228	1	1864-11-09	sent	J. B. Pierce Hdqrs A. P.  Washington Nov 9th 1864	Rosetta Ellsworth For Grunt yacht Your despatch of this date	930 PM	241	0.15		9895	0	6	0	0.228	0.26	0.063	2	2
+9895	229	1	1864-11-09	sent	J. B. Pierce Hdqrs AP  Washington Nov 9th 1864	Rosalie Franklin For Grunt Tulip Your dispatch of	1	56	0.2			0	1	0	0.241	0.379	0.138	2	2
+9895	229	2	1864-11-10	sent	Capt RC Clowny  Wash'n Nov. 10th 1864	Grapes Nov. Federal Rosalie for Paradise A G Brackett	930 PM	73	0.27		9896	5	0	0	0.365	0.327	0.115	1	1
+9896	230	1	1864-11-11	sent	John Horner N. York  Washn Nov 11th 1864	Rosalie For Knox Zebra Your wreathe of this date	2	69	0.26			2	0	0	0.412	0.471	0.088	2	1
+9896	230	2	1864-11-12	sent	W. G. Fuller New Orleans  Wash'n Nov. 12th 1864	Happy Nov. Hoffman For Mastiff Mouth of Atlas via Black	10 PM	104	0.32		9897	0	6	0	0.407	0.542	0.085	2	2
+9897	231	1	1864-11-15	sent	John Horner New York .  Washn Nov 15th 1864	Rebecca Ghost Kasson zebra I am confidentially informed	falls for the purpose sugar webster Image	63	0.21			3	0	0	0.353	0.324	0.118	1	1
+9897	231	2	1864-11-15	sent	1015 PM  Washn Nov 15th 1864	John Horner N. York	what is Bunkers first name Image	33	0.3			1	0	0	0.35	0.45	0.15	2	9
+9897	231	3	1864-11-16	sent	SH Beckwith  Washn Novr 16th 64	Hannah Knapp Madrid The repeat for	130 PM	33	0.36		9898	0	0	0	0.304	0.522	0.087	2	2
+9898	232	1	1864-11-18	sent	RR McCaine Newtown Va  Washn Nov 18th 1864	Harriet Mason For Negus Tulip your despatch	active windham George Kay Leet Asst. Basket	42	0.38			0	2	0	0.3	0.533	0.1	2	2
+9898	232	2	1864-11-23	sent	1030 am to Caldwell  Washn Novr 23d 1864	Elizabeth Oliver benton for Paxton G H Sharp	130 PM	64	0.31		9899	0	2	0	0.277	0.404	0.043	2	2
+9899	233	1	1864-11-25	sent	John Horner N. York  Washn Nov 25th 1864	Hannah For Paradise S. L. Brown Chf of Shaker etc	your attention toby remedied Walrus Knox Violet beautiful & warm	159	0.29			6	0	0	0.441	0.409	0.086	1	1
+9899	233	2	1864-11-25	sent	SH Beckwith  Washn Novr 25th 1864	Jennie Yellow Madrid Authority was given to Mastiff	1	31	0.32		9900	0	1	0	0.409	0.455	0.091	2	2
+9900	234	1	1864-11-26	sent	Capt Van Duzer  Wash'n Nov 26th 1864 12 M	Growl Frances Harsh Pledge Lady zodiac All Whiskey	a notify Bartons Quadroon yoke Jacob very hazy	80	0.23			3	0	0	0.333	0.312	0.125	1	1
+9900	234	2	1864-11-27	sent	130 PM  Washington Nov 27th 1864	RR McCaine Kearnestown	K Leet Interest and Asst. Bargain	57	0.23			0	3	0	0.278	0.333	0.083	2	2
+9901	235	0	1864-11-29	sent	GD Sheldon Ft Monroe  Washn Nov 29th 1864	Fanny harrow padlock to Pandora R C	No 3  1 PM	46	0.24			1	0	0	0.355	0.258	0.065	1	1
+9901	235	1	1864-11-29	sent	McCaine Kernstown Washn Nov 29 1864	Hannah for Negus ---- Will not the spencer in	Embrace	44	0.32			0	0	0	0.448	0.414	0.103	1	2
+9901	235	2	1864-11-29	sent	John Horner  Washn Novr 29th 1864	Henrietta harsh pony Kasson zodiac	2	51	0.39		9902	1	0	0	0.594	0.5	0.188	1	1
+9902	236	1	1864-11-30	sent	McCaine  Wash'n Nov 30th 1864	Julia Ogden For Argus Have any Talbot Dawson	" No 1 "	33	0.42			0	1	0	0.5	0.7	0.15	2	2
+9902	236	2	1864-12-01	sent	O'Brien HdQrs Army James  Wash Dec 1.1864	hannah plungeth for Knox ---- Telegram read ---- one Wm	2	55	0.25			1	0	0	0.314	0.286	0.086	1	1
+9902	236	3	1864-12-02	sent	Beckwith  Wash'n Dec 2nd 1864 1030 AM	Harry Elizabeth Brooks for Billy yacht The college feels solicit	Belmont in Princeton Talbot quotient of Bremen Stanhope Wiley Barton	90	0.36			0	6	0	0.464	0.554	0.143	2	2
+9903	237	0	1864-12-02	sent	Geo D Sheldon Ft Monroe  Washn Decr 2d 1864	Hannah peach for Niagara Animal Your dispatch	1	35	0.34			1	0	0	0.444	0.333	0.111	1	1
+9903	237	1	1864-12-02	sent	John Horner  Wash'n Dec 2nd 1864	Growl Julia Peach for Pilgrim Cry spin No Leg Person	2	60	0.38			4	0	0	0.468	0.234	0.128	1	1
+9903	237	2	1864-12-03	sent	Beckwith  Wash'n Dec 3rd 1864 10 am	Emily Benton For Chart Tulip Lobster is not a good	says it will be necessary to conquer Abbey yawl Beach	81	0.23			1	4	0	0.326	0.442	0.093	2	2
+9904	238	0	1864-12-03	sent	Schermerhorn H Ferry  Washn Decr 3d 1864	Florence perfume for Steven = son	Camel wedge yoke Shelby Wright	24	0.46			1	0	0	0.647	0.647	0.176	1	1
+9904	238	1	1864-12-03	sent	JC Van Duzer Nashville  Washn Decr 3d 64	Francis perfume for W W Wright chief	No 2  130 PM	36	0.28			2	0	0	0.4	0.36	0.12	1	1
+9904	238	2	1864-12-03	sent	Beckwith City Pt.  Wash. D. C. Dec. 3. 1864.	Youth Harriet Crowd Every optic man from Maltas &	reports in reaching Geneva yawl Cupid	149	0.23		9905	0	2	0	0.269	0.376	0.065	2	2
+9905	239	1	1864-12-03	sent	SH Beckwith  Wash'n Dec 3rd 1864	Jennie Benton For Palermo Raw lins Chief of Satan yacht	Roof us In galls Palestine Chif Vermont How are you	70	0.34			0	4	0	0.326	0.522	0.087	2	2
+9905	239	2	1864-12-04	sent	RR McCaine  Washn Dec 4th 1864	Harriet Andrew Negus Ewell fixture own time	sent from book	38	0.32			0	1	0	0.4	0.48	0.2	2	2
+9906	240	0	1864-12-05	sent	S. H. Beckwith  Wash'n Dec 5th 1864 11. AM	Fanny Dayton For Crowd The vassails trifle	yawl Roof us In galls Palermo Vermont	49	0.33			0	4	0	0.419	0.516	0.129	2	2
+9906	240	1	1864-12-05	sent	Schermerhorn H Ferry  Washn Decr 5th 64	Florence plaster Stevens on zebra Please	care of Shelter Augur youth Wright	36	0.36			1	0	0	0.565	0.522	0.217	1	1
+9906	240	2	1864-12-05	sent	McCaine  Washn Dec 5th	Harriet Dayton Negus Warps were again	between the wrangle and Horace Leet	43	0.23			0	0	0	0.36	0.36	0.08	1	2
+9907	241	0	1864-12-05	sent	SH Beckwith  Washn Decr 5th 1864	Imogene Caldwell Magic The records show that there	or Mastiff welch Lamb under line word never	120	0.37			0	3	0	0.346	0.543	0.062	2	2
+9907	241	1	1864-12-06	sent	R. S. Fowler Memphis  Wash'n Dec. 6th 1864	Growl Emily Plague To Polkaing Officer at Drum Zebra	for as sistems if necessary yoke Italy yours truly	46	0.28			4	0	0	0.464	0.393	0.107	1	1
+9908	242	0	1864-12-06	sent	Geo Gallup Vicksburg  Washn Dec 6th 1864 10 am	Grapes Plague Emily To Polkaing Officer at girls	No 1.  1 P. M.	35	0.34			1	0	0	0.458	0.458	0.125	1	1
+9908	242	1	1864-12-06	sent	Capt Van Duzer Nashville  Washn D. C. Dec 6 1864	Harriet pledge lady ---- The talbot against the Empire	No 2.  1 pm	50	0.44			1	0	0	0.618	0.441	0.029	1	1
+9908	242	2	1864-12-06	sent	Beckwith City Pt.  Washn D. C. Dec 6. 1864	Young Hannah chart Negus was repeated some days ago	2	44	0.34		9909	0	1	0	0.355	0.484	0.097	2	2
+9909	243	1	1864-12-07	sent	SH Beckwith  Washn Dec 7th 1864 10 AM	Emily Downing Crowd Yon remember that when	last horn yawl costume that is so	84	0.27			0	7	0	0.405	0.548	0.143	2	2
+9909	243	2	1864-12-07	sent	RR McCaine  Washn Dec 7th 1864	Florence Downing negus If the Brooks queen	for other purposes wiley Behead	26	0.46			0	0	0	0.45	0.6	0.25	2	2
+9910	244	0	1864-12-08	sent	SH Beckwith  Washn Decr 8th 1864	Jennie Fisher Bellows The costume authorizes such transfer	No 1.  9 PM	54	0.28			0	1	0	0.237	0.395	0.079	2	2
+9910	244	1	1864-12-08	sent	<deletion>Smith</deletion> <insertion>Clowry</insertion> St Louis Mo  Washn. D. C. Dec 8. 1864	Rosalie platina for Dodge ---- Send all the	no 2  9 PM	42	0.26			0	0	0	0.55	0.45	0.2	1	9
+9910	244	2	1864-12-08	sent	Beckwith City Pt.  Washn. D. C. Dec 8 1864	Rosetta crowd few wish nuisance relieved	1	39	0.28		9911	0	2	0	0.308	0.385	0.038	2	2
+9911	245	1	1864-12-09	sent	J. C. Van Duzer  Wash'n Dec 9th 1864 10.30 am	Grapes Elizabeth Pony for Lady zebra John expresses	2	88	0.26			5	0	0	0.388	0.388	0.102	1	1
+9911	245	2	1864-12-09	sent	S. H. Beckwith  Washn Dec 9th 1864 410 P. M	Julia Ellsworth For Billy Repeats real leaving	10.30 am	166	0.26		9912	1	3	0	0.311	0.368	0.085	2	2
+9912	246	1	1864-12-10	sent	Wash. D. C. Dec. 10. 1864	No 1.	returned peru cry - Sis is passed Webster Jacob End	69	0.22			2	0	0	0.333	0.333	0.071	1	1
+9913	247	0	1864-12-10	sent	R. R. McCaine  Washn Decr 10th 1864	Gertrude French Negus tulip Pay masters ready togoto	No 1  5 PM	59	0.31			0	2	0	0.19	0.429	0.095	2	2
+9913	247	1	1864-12-12	sent	Sheldon Ft. Monroe  Wash D. C. Dec. 12 1862	Lucy Knox I have directed Tappan Binney toupee	whole immedy for this outlay B W Brice	80	0.14			1	0	0	0.2	0.16	0.04	1	1
+9913	247	2	1864-12-13	sent	SH Beckwith  Washn Dec 13th 1864	Jennie Hudson for Revenue Paxton TS Bowers A. A. Shark	Please answer wiley Gen K Leet A A G	39	0.26			0	1	0	0.286	0.321	0.107	2	2
+9914	248	0	1864-12-14	sent	JC Van Duzer  Washn Decr 14th 1864	Viola female Lafitte zodiac It has been seriously	No 2  3 PM	129	0.26			3	0	0	0.333	0.356	0.069	2	9
+9914	248	1	1864-12-14	sent	Caldwell Hdqrs AP  Wash DC Dec 14 1864	Yancy Jennie Monarch ---- In compliance with the Secys	No 2  1110 am	46	0.3		9915	0	0	0	0.241	0.483	0.103	2	2
+9915	249	1	1864-12-15	sent	Beckwith City Pt.  Wash D. C. Dec. 15 1864	Youth Fanny magic You are aware that large amount	11.15. P. M.	99	0.26			0	0	0	0.328	0.391	0.156	2	2
+9915	249	2	1864-12-15	sent	Emerick City Point  Washington Dec. 15. ' 64	Brig Genl Rawlins I send you	Yawl Madrid Sarah blank goes here	31	0.23			0	1	0	0.227	0.318	0.045	2	2
+9916	250	0	1864-12-15	sent	Van Duzer  Dec 15th 12 midnight	Growl Topsy gallant For Lady zodiac	No 2.  130 PM	45	0.24			1	0	0	0.36	0.4	0.08	2	1
+9916	250	1	1864-12-16	sent	Fuller New Orleans Wash Dec. 16. 1864 1 30 Pm	Yellow Johnson Mastiff The arrival of flora's pern at	The others will be at your disposal wiley lamb Harriet	53	0.23			0	1	0	0.355	0.323	0.065	1	2
+9916	250	2	1864-12-17	sent	JH Emerick  Washn Decr 17th 1864	Minnie Marshal Revenue paxton GW Bradley Chief Vermont	<deletion>point</deletion> <insertion>trinity</insertion> Rufus In Galls Chf vermont Palermo &c	65	0.32			0	1	0	0.36	0.42	0.14	2	2
+9917	251	0	1864-12-18	sent	To JH Emerick  Washn Decr 18th 1864	Florence Mason for Pearl G W Bradley	until the receipt of further orders RIngalls	27	0.22			0	0	0	0.263	0.316	0.158	2	2
+9917	251	1	1864-12-18	sent	JC Van Duzer  Washn Decr 18th 1864	Francis Govern Lantern zodiac The oysters operating	Clarence and all other nurse vernons Jersey	98	0.3			3	0	0	0.385	0.354	0.077	1	1
+9917	251	2	1864-12-19	sent	GD Sheldon Ft Monroe  Washn Decr 19th 1864	Florence hope for Come Rodgers polka Dick tater animal	McCaine	122	0.31		9918	1	5	0	0.306	0.424	0.094	2	2
+9918	252	1	1864-12-19	sent	SH Beckwith  Washn Dec 19th 1864	Nancy Morgan Madrid Ewell see by wherrys papers	Beach	104	0.23			0	1	0	0.164	0.393	0.033	2	2
+9919	253	0	1864-12-20	sent	McCaine  Washington Dec 20 1864	Clotilda Nelson Vegus tulip I	off for your place lantern	30	0.37			0	2	0	0.316	0.579	0.105	2	2
+9919	253	1	1864-12-20	sent	Beckwith  Washn Decr 20th 1864	Florence Oliver Bellows tulip I hope Ewell	#1	28	0.39			0	1	0	0.409	0.455	0.091	2	2
+9919	253	2	1864-12-20	sent	JW Sampson Balto  Washn Decr 20th 1864	Jennie harrow for Dr Wm C Van Bibber	1	37	0.19		9920	0	0	0	0.261	0.261	0.043	1	1
+9920	254	1	1864-12-21	sent	Capt Van Duzer  Wash'n Dec 21st 1864 12 M	Growl Francis Harsh plug For Lamb zebra Permit me	to obtain so important an object yoke Italy finish	135	0.27			7	0	0	0.403	0.377	0.117	1	1
+9920	254	2	1864-12-22	sent	Van Duzer  Wash'n Dec 22nd 64	Grapes Julia Harsh peach for Paradise Jay D Bring	by mustering out use less officers yoke Bruno good boy	255	0.22		9921	6	2	0	0.321	0.321	0.083	1	1
+9922	256	1	1864-12-26	sent	Beckwith City Pt  Washn D. C. Dec. 26. 1864	Judith Leonard negus potash I wish you merry Christmas	No 3  1 P. M	122	0.13			1	0	0	0.145	0.197	0.013	2	2
+9922	256	2	1864-12-27	sent	Beckwith City Pt  Washn Dec. 27. 1864	Judith Patterson rebels Gold Is there any objection on mily grounds	& garnishing it to public trade Except contraband of war Mimick	33	0.15			1	0	0	0.238	0.19	0.0	1	1
+9922	256	3	1864-12-28	sent	Beckwith  Washn Dec 28th 64 3.30 P. M	Penrose Sarah Patent The Fremont British has hampered Abner Calicos which	No. 3.  5.30 P. M.	58	0.16		9923	0	0	0	0.2	0.225	0.05	2	9
+9923	257	1	1864-12-28	sent	Beckwith City Pt  Wash Dec. 28. 1864	Penrose Rosalie Rankin If there be no objection please tell me	No 1  9 pm	23	0.17			0	0	0	0.267	0.267	0.067	1	9
+9923	257	2	1864-12-30	sent	Sampson Balto.  Wash. Dec. 30. 1864	Rosalie for pandora new port vincent If	No 1.  9 PM	60	0.23			1	0	0	0.378	0.297	0.108	1	1
+9923	257	3	1864-12-30	sent	Horner N. Y.  Wash. Dec. 30. 1864	Rosalie laughette for shelter V Vliet	3	62	0.32		9924	1	0	0	0.463	0.415	0.122	1	1
+9924	258	1	1864-12-30	sent	Beckwith  Washn Dec. 30th. 1864	Maria Spalding Pasture Pink Pines requisition upon Plump	1	168	0.19		9925	0	0	0	0.245	0.306	0.061	2	9
+9925	259	1	1864-12-31	sent	J. C. Van Duzer  Wash'n Dec 31st 1864	Growl Florence Laugh Plug For Lady zebra John directs	No 3  230 pm.	162	0.27		9926	6	0	0	0.457	0.435	0.087	1	1
+9926	260	1	1864-12-31	sent	Beckwith City Pt.  Wash Dec. 31. 1864	Susan Spalding Pine black Carmine Nevada red	No 2.  740 PM	116	0.27		9927	0	0	0	0.241	0.349	0.06	2	9
+9927	261	1	1865-01-02	sent	McCaine Winchester  Wash. DC. Jan. 2. 1865	Woodbury Arnold for negus yacht Strict - ly - corn - fide - en -	No 2  10 1/2 PM	157	0.26			0	3	0	0.391	0.435	0.13	2	2
+9927	261	2	1865-01-02	sent	McCaine Winchester  Wash. Jan 2. 1865	reliance negus the burglar watsons that	No 1  12 1/2 pm	44	0.23		9928	0	0	0	0.45	0.5	0.1	2	2
+9928	262	1	1865-01-03	sent	Sheldon Ft Monroe  Wash. Jan. 3. 1865	Viola for pilgrim Berr - ien	No 1  1.30 Pm	33	0.33			0	0	0	0.333	0.458	0.125	2	9
+9928	262	2	1865-01-03	sent	Sheldon Ft. Monroe  Wash Jan 3.1865	Hannah pandora Webster vincent ---- If you	No 3	38	0.18			1	0	0	0.318	0.318	0.182	1	1
+9928	262	3	1865-01-03	sent	Beckwith City Pt  Wash. Jan. 3 1865. ---- 1 1/2 pm	topsy baffle Howell Alpha pink	No 1  7 PM	59	0.2		9929	2	0	0	0.195	0.293	0.049	2	9
+9929	263	1	1865-01-03	sent	Horner N. Y.  Wash Jan. 3. 1865	fleet unity weaslers C C. Leary pedlar ariel	No 2.  10.15 am	85	0.25			2	0	0	0.396	0.358	0.019	1	1
+9929	263	2	1865-01-05	sent	McCaine Winchester Va  Wash. Jan. 5. 1865	negus Weans stephen bridle yesterday for bard	2  12 M	61	0.33		9930	0	0	0	0.341	0.455	0.045	2	2
+9930	264	1	1865-01-05	sent	RR McCaine  Washn Jany 5th 1865	Gertrude Dayton for Negus tulip Crowd whimpers as	No 3.  3 P. m.	56	0.32			0	3	0	0.389	0.5	0.194	2	2
+9930	264	2	1865-01-05	sent	Beckwith City Pt.  Wash. Jan. 5. 1865.	Katie rebel Eternity it lucretia useful few would	& appears indifferent if not hostile robin	34	0.15			0	0	0	0.15	0.25	0.05	2	9
+9930	264	3	1865-01-05	sent	Geo. D. Sheldon  Washn Jany 5th 1865 3.30 PM	Jennie Plaster for Tappan Amos Been neigh Chief	1  4 P. M	50	0.26		9931	2	0	0	0.312	0.375	0.125	2	1
+9931	265	1	1865-01-05	sent	Jno Horner  Washn Jany 5th 1865	Grapes Julia Person for Kasson zebra Oakum E. R Pease	gone to Harem Odor him there youth Insanity asst Brutus	80	0.31			4	0	0	0.431	0.431	0.118	1	1
+9931	265	2	1865-01-05	sent	Geo D Sheldon <insertion>Grant</insertion> 1  Washn Jany 5th 1865 8 P. m	Nancy Plaster for John zebra Can you not possibly go	<deletion>10</deletion> 3  1030 am	53	0.23			2	0	0	0.364	0.333	0.182	1	1
+9931	265	3	1865-01-06	sent	SH Beckwith  Washn Jany 6th 1865	Emily Elliot Rebel Forbids by Special messenger	implements from wolf an sin all Dyer	21	0.19			0	0	0	0.2	0.133	0.067	1	1
+9931	265	4	1865-01-07	sent	Sampson  Washn Jany 7th 1865 1030 am	Elizabeth Plunder For New port zebra Including Surro Nada	3	35	0.49		9932	2	0	0	0.552	0.552	0.172	1	1
+9932	266	1	1865-01-07	sent	Beckwith  Washn Jany 7th 1865 11. am	Work Martha Maxwell To Negus Pink I send you	No 1	136	0.32			0	0	0	0.347	0.367	0.051	2	9
+9932	266	2	1865-01-07	sent	Sampson Balt.  Wash. Jan. 7. 1865	Lucy for Newport Vincent ---- Nabob	3  1130	47	0.26		9933	0	0	0	0.444	0.444	0.074	1	1
+9933	267	1	1865-01-09	sent	S. H. Beckwith  Wash'n Jany 9th 1865	Effie Wolf Evans Patent Pink Nurers Harvest Gallent	Eckert	20	0.3			0	0	0	0.316	0.211	0.0	1	1
+9933	267	2	1865-01-10	sent	Capt W. G. Fuller  Washn Jany 10th .	From Chicago Abraham Ellsworth for Mastiff Tulip Your whim	No 3	112	0.25		9934	0	6	0	0.267	0.45	0.05	2	2
+9934	268	1	1865-01-10	sent	Beckwith City Pt  Washn DC Jan 10. 1865	Judith ---- Raymond rebel pink Explain at once	( 1 )	194	0.23		9935	0	0	0	0.256	0.293	0.015	2	9
+9935	269	1	1865-01-13	sent	R. O'Brien 1.50 P. M.  Washington D.C. Jan. 13. 1865	Hd. Qrs. A. of J.	1	47	0.17			1	0	0	0.292	0.292	0.167	1	1
+9935	269	2	1865-01-15	sent	Capt Sam Bruch  Wash'n Jany 15th 1865.	Growl Fanny ghost for Pandora Parsons goslin zebra	No 1  5 PM.	65	0.32			3	0	0	0.455	0.455	0.159	1	1
+9935	269	3	1865-01-15	sent	G. K. Smith Cumbd  Wash Jan 15. 1865	Grapes lucy Gallant for Shelby Crooked ---- It is	No 1  10 AM	81	0.2		9936	1	0	0	0.205	0.364	0.023	2	1
+9936	270	1	1865-01-17	sent	Plum Eastport Miss  Wash Jan 17 1865	Emily Glance to lady ---- Kisses	No 1  10 1/2 am	22	0.45			2	0	0	0.5	0.562	0.062	2	1
+9936	270	2	1865-01-17	sent	Sampson Balt  Wash Jan 17 1865	Elizabeth Gar - net ---- The	No 3  1. P. M.	17	0.47			1	0	0	0.538	0.615	0.077	2	1
+9936	270	3	1865-01-18	sent	Beckwith City Pt.  Wash Jan 18. 1865	Judith Norris raven pink Mr Clay Gurgle agent in undress	No 1.  2.30 P. M.	122	0.18		9937	0	0	0	0.171	0.25	0.026	2	9
+9937	271	1	1865-01-19	sent	W. R. Plum Eastport Miss.  Wash Jan. 19 1865	Henrietta Hope Lady unity Judah has directed that no	No 3.  730 PM	261	0.3		9938	6	0	0	0.447	0.403	0.094	1	9
+9938	272	1	1865-01-19	sent	Beckwith City Pt  Wash Jan 19 1865	Rachael Rankin Hewell leave at Cornelia	( 1 )  11. AM	18	0.17			0	0	0	0.2	0.133	0.067	1	9
+9938	272	2	1865-01-20	sent	John Horner, New York -----  Washington D. C. Jan 20. 65	Kasson unity I am informed that the iron	have it attended to at once walrus Insanity	72	0.14			2	0	0	0.195	0.146	0.049	1	1
+9938	272	3	1865-01-21	sent	J. W. Sampson Balto 1 pm  Washn Jany 21st 1865	To Garrett Baptism Plug train stomach Bogus	W L Bigert has number plug Booby	91	0.27		9939	2	0	0	0.396	0.377	0.113	1	1
+9939	273	1	1865-01-21	sent	W L Bogart Cincinnati  Washn Jany 21st 65	for Pandora Parsons Bogus Zebra Cannot you use	1	24	0.38			1	0	0	0.6	0.533	0.2	1	1
+9939	273	2	1865-01-21	sent	Geo D Sheldon  Wash'n Jany 21st 1865 3 P.M	Growl Imogene Plug for Mock zebra Wait	will leave an apple is at Cora Whelp John	24	0.5			2	0	0	0.8	0.6	0.2	1	1
+9939	273	3	1865-01-21	sent	S. H. Beckwith City Pt  Wash'n Jany 21st 1865 5 P. M	Libbie Kimball for Belgium E Sparker Black	Tea S Bow years snow & sleet	27	0.33			0	0	0	0.217	0.391	0.13	2	9
+9940	274	0	1865-01-21	sent	JW Sampson Balto  Washn Jany 21st 1865	Minnie for JW Garrett No trains have been sent by	send boats up the windsor whelp youth Image ----	54	0.22			0	0	0	0.367	0.4	0.133	2	9
+9940	274	1	1865-01-21	sent	SH Beckwith  Washn Jany 21st 1865	Lucy Kimball Pine Blue Willow please give directions	their names indigo Pump	68	0.25			0	0	0	0.3	0.4	0.1	2	9
+9940	274	2	1865-01-21	sent	WL Bogart Cincinnati  Washn Jany 21st 1865	Nancy for Paradise Parson zebra Mr Garrett informs	on any part of his road yoke Insanity	24	0.33			2	0	0	0.5	0.571	0.286	2	1
+9941	275	0	1865-01-23	sent	J W. Sampson  Washn Jany 23rd 1865 11 AM	Fanny Harrow Perfume for J Double you Gay - writ	wheel lingo yoke Insanity oh for a world of	99	0.24			2	0	0	0.383	0.283	0.15	1	1
+9941	275	1	1865-01-23	sent	S. H. Beckwith  Wash'n Jany 23rd 1865 330 PM	Sarah Knapp for Ravish Pink Some time since genders were sent	No 1	143	0.21		9942	1	0	0	0.234	0.298	0.085	2	2
+9942	276	1	1865-01-23	sent	Horner N. Y.  Wash Jan 23. 1865	Rosetta harsh perfumed for fleet	Meaghers polka walrus Jonah ----	24	0.33			2	0	0	0.471	0.353	0.059	1	1
+9942	276	2	1865-01-24	sent	Geo D Sheldon Ft Monroe #1  Washn Jany 24th 1865	Harriet for Pilgrim J M Berrien pontiac Navy Yard farmer	to cape fear toby ready thursday morning youth Princess Fox	30	0.33			0	1	0	0.391	0.435	0.13	2	9
+9943	277	0	1865-01-24	sent	GD Sheldon  Washn Jany 24th 1865	Harriet Paradise Webster Vincent Animal Weaseler Nevada	sugar youth H A Wise chf Bureau	112	0.29			3	1	0	0.425	0.411	0.137	1	1
+9943	277	1	1865-01-24	sent	SH Beckwith  #3  Washn Jany 24th 1865	830 pm for Lt Gen Grant = Col Wise telegraphs from	3  1030 AM	32	0.12		9944	0	0	0	0.143	0.143	0.0	1	9
+9944	278	1	1865-01-25	sent	S. H. Beckwith  Wash'n Jany 25th 1865	Emily Palmer Patent Pink Pudding has just affected	1 pm	32	0.34			0	0	0	0.35	0.5	0.15	2	2
+9944	278	2	1865-01-25	sent	Washn Jany 25th 1865	No 1	H A Wise Chf Bu Ord	61	0.34			0	0	0	0.408	0.265	0.082	1	1
+9944	278	3	1865-01-25	sent	GD Sheldon  Washn Jany 25th 1865	Henrietta for Polker Lauman polking Abbot zebra Have the	out walrus Burton	48	0.25			2	0	0	0.3	0.4	0.2	2	1
+9945	279	0	1865-01-25	sent	3 pm  Washn Jany 25th 1865	Katie Lawrence Neighbor The frigate Susquehanna at Hampton	there and will Impress Monarch	77	0.1			0	0	0	0.1	0.14	0.0	2	clear
+9945	279	1	1865-01-25	sent	6 pm  Washn Jany 25th 1865	Libby Lantern The quickenment torch penny aragon pacific	roman which will talbot rapidly walrus Ivory	71	0.37			3	0	0	0.5	0.5	0.065	1	1
+9946	280	0	1865-01-26	sent	12 M to Beckwith  Washn Jany 26th 1865	12 M for Lt Gen Grant = Asst Secy Fox and Gen Schofield	No 2.	54	0.15			0	0	0	0.167	0.267	0.0	2	2
+9946	280	1	1865-01-26	sent	Capt Fuller N. Orleans  Wash Jan 26 1865	Gertrude Oliver Clarke for Mastiff ---- Harding with	4 Pm	98	0.33		9947	0	3	1	0.371	0.516	0.097	2	2
+9947	281	1	1865-01-26	sent	Theo Holt Little Rock Ark  Wash'n Jany 26th 1865	Growl Julia Jany Harsh pledge for Monster zebra	1  4. P. m	74	0.31			3	0	0	0.5	0.455	0.114	1	1
+9947	281	2	1865-01-26	sent	Capt Clowry St Louis  Wash'n Jany 26th 1865	Grapes Julia harrow plague for Shelby Dodge unity The Leg	we can give you other whisky if required youth Inland	71	0.37			4	0	0	0.585	0.488	0.146	1	1
+9947	281	3	1865-01-27	sent	Capt R. C. Clowry St Louis Jany 27th 1865 2 P. M	Growl Helen harsh plunder for Taunton Shelter Dodge	1	32	0.44		9948	1	0	0	0.778	0.667	0.167	1	1
+9948	282	1	1865-01-27	sent	Geo D. Sheldon  Washn Jany 27th 1865	Helen For Come oh door Josey Land man zebra	our vessels youth Burton go in lemons sink 'em	54	0.19			1	0	0	0.205	0.231	0.128	2	1
+9948	282	2	1865-01-29	sent	R OBrien  Washington Jany 29th	Grapes Harsh Pony Rebecca for Meriden unity	shuns youth Brutus no one to love	77	0.19			3	0	0	0.359	0.256	0.077	1	1
+9948	282	3	1865-01-31	sent	John Horner  Washn Jany 31st 1865 1130 AM	Growl Florence Laugh Plug for Kasson zebra	No .3  1 1/2 pm	23	0.39		9949	3	0	0	0.562	0.5	0.188	1	1
+9949	283	1	1865-01-31	sent	Beckwith City Pt  Washn Jan. 31 1865	Topsy spalding negus ames. singer scumming to	3	58	0.16			0	0	0	0.175	0.225	0.05	2	2
+9949	283	2	1865-01-31	sent	SH Beckwith  Washn Jany 31st 1865	Katie Powell for Pasture Brass I have magnify of Clotilda tooth	3	207	0.27		9950	1	0	0	0.305	0.382	0.061	2	9
+9950	284	1	1865-01-31	sent	S. H. Beckwith  Washn Jany 31st 1865	Rosalie Spalding Palestine Brass The British of Tankard	No. 3  9 PM	17	0.29			0	0	0	0.231	0.385	0.077	2	2
+9950	284	2	1865-01-31	sent	Baldwin Annapolis  Wash Jan. 31. 1865	Maggie for Blodgett See that Irving	935 PM	31	0.13			0	0	0	0.19	0.143	0.0	1	1
+9950	284	3	1865-02-01	sent	Washington D. C. February 1. '65 ----	( 3 )	3	26	0.27		9951	0	0	0	0.3	0.3	0.05	1	2
+9951	285	1	1865-02-01	sent	Geo W Baldwin  Wash'n Feby 1st 1865 12 M	Delia Harry for Ashland Meaghn Tremble Brass Magic	impress Pudding	50	0.3			3	0	0	0.343	0.4	0.029	2	9
+9951	285	2	1865-02-01	sent	J. <unclear>W</unclear> Sampson  Washn Feby 1st 1865	Frances for Palsey Meaghn Baptism zebra You will please	No 3  9 PM	65	0.34			3	0	0	0.513	0.487	0.154	1	1
+9951	285	3	1865-02-01	sent	Beckwith City Pt.  Wash. Feby. 1. 1865	Maggie Dickens negus Peru bewildered by	640 pm	41	0.22		9952	0	0	0	0.233	0.267	0.033	2	2
+9952	286	1	1865-02-03	sent	Baldwin Annapolis  Wash Feb 3. 1865	Louisa muss What time did the athletic fromerich	No 1  11 Am	40	0.12			0	0	0	0.2	0.2	0.0	1	1
+9952	286	2	1865-02-04	sent	W. R. Plum Eastport Miss.  Wash. Feb 4 1865	Emily penny lady Jupiter does	No 1.	45	0.33		9953	1	0	0	0.467	0.433	0.067	1	1
+9953	287	1	1865-02-04	sent	Sheldon Ft Monroe Va  Wash. Feby 4 1865	fanny for Berrien famish Arthur	3	34	0.41			1	1	0	0.464	0.464	0.214	1	1
+9953	287	2	1865-02-04	sent	Geo W Baldwin  Wash'n Feby 4th 1865	Delia Marshall for Finland Scout Pink Effie	No 3.  130 pm	100	0.25		9954	1	0	0	0.269	0.343	0.09	2	9
+9954	288	1	1865-02-04	sent	Beckwith City Pt  Wash. Feb. 4. 1865	Topsy patient Gender to ragged dismal countermanded	No 1  2 PM	120	0.19			0	0	0	0.233	0.274	0.041	2	9
+9954	288	2	1865-02-04	sent	Sampson Balt ----  Wash Feb 4 1865	for Morris The harsh perfumed	No 1	21	0.33		9955	0	0	0	0.462	0.462	0.0	1	1
+9955	289	1	1865-02-04	sent	Plum Eastport  Wash Feb 4 1865	Helen pension lady The order was to send about	Huron from plumming webster Jacob ---- ---- ---- ----	129	0.33			1	0	0	0.494	0.442	0.013	1	1
+9955	289	2	1865-02-04	sent	McCaine 2  Washn Feby 4th 1865	Nelly Baker for Negus Tulip an other whig was whelp	11. AM	121	0.21		9956	0	4	0	0.276	0.316	0.053	2	2
+9956	290	1	1865-02-05	sent	Geo W Baldwin  Washn Feby 5th 1865	Cornelia Martin Scout Brass Play Lobster not allowed	No. 3.  4 Pm	32	0.12			0	0	0	0.19	0.19	0.095	1	9
+9956	290	2	1865-02-05	sent	Baldwin Annapolis  Wash. Feb. 5. 1865	Laura Shout potash Magic cackles in my <insertion>name</insertion> the benefitting	No 3  230 Pm.	89	0.2		9957	2	0	0	0.233	0.267	0.017	2	9
+9957	291	1	1865-02-06	sent	Beckwith City Pt  Wash Feb 6 1865	Susan rebel Pontiacs amounted as requested ----	old Albany Religion	86	0.16			0	0	0	0.185	0.2	0.031	2	2
+9957	291	2	1865-02-09	sent	Beckwith City Pt #3  Washn Feby 9th 1865	Matilda McClellan to Pearl brass Calico Lampered Alfred Dawson	No 1 11 am	193	0.28		9958	0	0	0	0.27	0.355	0.035	2	9
+9958	292	1	1865-02-15	sent	Theo Holt Little Rock  Washn Feby 15th 1865	Fanny Ghost for Monster zebra Jupiter approves the dies position	3	39	0.36		9959	3	0	0	0.393	0.393	0.071	1	1
+9959	293	1	1865-02-16	sent	S. H. Beckwith  Wash'n Feby 16th 1865 5 PM	Libbie Fred for Negus Pink Duplicate just learned from Plump and	Horner n. y.	225	0.17		9960	1	0	0	0.222	0.278	0.056	2	9
+9960	294	1	1865-02-18	sent	1230 P. M.  Wash Feb. 18. 1865.	for Capt Chap man Sixty six Cedar St frog	No 1  1230 Pm	76	0.11			0	0	0	0.109	0.145	0.073	2	clear
+9960	294	2	1865-02-18	sent	Horner NY  Wash Feb 18	for fleet frog ---- all supplies for Kidnap's opal	N Orleans	80	0.1		9961	0	0	0	0.157	0.118	0.02	1	clear
+9961	295	1	1865-02-18	sent	2 pm Feby 18th  Washn Feby 18th 65	Helen Mason for Mastiff tulip Its not possible	3	47	0.34			0	3	0	0.464	0.536	0.107	2	2
+9961	295	2	1865-02-23	sent	S. H. Beckwith  Washn Feby 23rd 1865	Katie Knapp Rebel Pink Duplicate positive and office all emigrate	930 am	131	0.24		9962	0	0	0	0.198	0.286	0.044	2	9
+9962	296	1	1865-02-24	sent	S. H. Beckwith  Wash'n Feby 24th 1865	Clendora Knox Pasture Black I am in a little perplexity Gold	include Mexico ----	132	0.11			0	0	0	0.132	0.162	0.015	2	clear
+9962	296	2	1865-02-24	sent	Wash'n Feby 24th 1865	RR McCaine	3	47	0.3		9963	0	2	0	0.321	0.464	0.107	2	2
+9963	297	1	1865-02-25	sent	SH Beckwith  Wash'n Feby 25th 1865	Emily Palmer Patent Gold Gambol Kent orders were sent	3	63	0.29			0	0	0	0.333	0.41	0.103	2	9
+9963	297	2	1865-02-25	sent	SH Beckwith  Wash'n Feby 25th 1865	Julia Lawrence Pasture Pink Do you feel entirely husband	No 3  8 P. M.	47	0.15			0	0	0	0.2	0.233	0.067	2	1
+9963	297	3	1865-02-25	sent	Beckwith City Pt  Wash. Feb 25. 1865.	Lucy Lawrence Rankin black Nestor's Calhoun to	rat least tothe Bean - do Grant Repose	60	0.2			0	0	0	0.2	0.267	0.067	2	9
+9964	298	0	1865-02-26	sent	RR McCaine #2  Washn Feby 26th 1865	Helen Nelson Dawson Negus tulip Minister is tempo rarely	use Mechanic and Minister for shark Hand cock understand	54	0.39			0	2	0	0.444	0.583	0.167	2	2
+9964	298	1	1865-02-26	sent	JW Sampson  Washn Feby 26 1965	Helen Sunday for Palate Morris zebra Tappan Shelby	absence of Nabob yoke Jew I'm sarahs cousin	33	0.45			2	0	0	0.464	0.5	0.179	2	1
+9964	298	2	1865-02-26	sent	SH Beckwith  Washn Feby 26th	Lt Gen Grant	Camden provided u approve impress ---- Minerva	29	0.31			0	0	0	0.217	0.391	0.043	2	9
+9964	298	3	1865-02-27	sent	SH Beckwith  Washn Feby 27th	Lt Gen Grant	have jest cent desponds till it affects Perform	37	0.32			0	0	0	0.161	0.387	0.065	2	9
+9965	299	0	1865-02-27	sent	JW Sampson  Washn Feby 27th 65	Henrietta Shelby Morris zodiac A whip of nuptial was	1	45	0.4			1	0	0	0.667	0.556	0.111	1	1
+9965	299	1	1865-02-28	sent	W. R. Plumm Nashville  Washn Feby 28th 1865 .	Grapes Emily Harrow paddle for Lamb zebra The	3	39	0.59			2	0	0	0.667	0.485	0.182	1	1
+9965	299	2	1865-03-01	sent	S H Beckwith  Wash'n March 1st 1865	Clotilda Harry Patent Pink Fuet macon gender that know	1	72	0.12		9966	0	0	0	0.156	0.178	0.044	2	2
+9966	300	1	1865-03-01	sent	Capt Sam Bruch  Wash'n Mar 1st 1865	Growl Plug Florence for Palsy Rhabe hunt All in chief	Waldo Plaster Prolong instead of harrow person purple yoke Belcher	110	0.49			6	0	0	0.712	0.466	0.11	1	1
+9966	300	2	1865-03-02	sent	SH Becksmith  Washn Mch 2d 1865	Clotilda Hawkins Negus You dresden sent contents of	Include Milk	29	0.34			0	0	0	0.471	0.588	0.176	2	9
+9966	300	3	1865-03-01	sent	to Beckwith  Nashville Mch 1st 65	2 pm for Lt Gen Grant Your telegram of	MGenl	26	0.15			0	0	0	0.111	0.222	0.0	2	9
+9967	301	0	1865-03-02	sent	SH Beckwith  Wash Mch 2d 1865	Laura Ludwig Neighbor The curling juliet just dover	no 10	50	0.3			0	0	0	0.209	0.349	0.07	2	9
+9967	301	1	1865-03-02	sent	MS Quay Harrisburg  Washn Mch 2d 1865	Katy for Gov Curtin stop a	to discuss signed Nero thats all	269	0.1		9968	0	0	0	0.158	0.173	0.03	2	clear
+9969	303	1	1865-03-02	sent	S. H. Beckwith  Wash'n Mar. 2nd 1865	Nellie Hawkins Neighbor Have you sent any cushion Knight	corked increase Mogul now he is a talk in	108	0.12			0	0	0	0.189	0.226	0.019	2	9
+9969	303	2	1865-03-03	sent	1215 AM Mch 3d  City Point Mch 2d 1865	1130 PM 2d Secy of War ---- My despatch of the PM answers yours	3	138	0.09		9970	0	0	0	0.091	0.13	0.0	2	clear
+9970	304	1	1865-03-03	sent	S. H. Beckwith  Wash'n Mar. 3rd 1865	Cornelia Madison Patent Blue Deplore Carroll was gendered with	6	76	0.26			0	0	0	0.255	0.327	0.055	2	9
+9970	304	2	1865-03-03	sent	Emery Cobb  Wash'n Mar 3rd 1865	To the My or of Chicago	Dan a Asst Secy of War	60	0.05			0	0	0	0.038	0.115	0.0	2	clear
+9971	305	0	1865-03-04	sent	RR McCaine No 2  Wash'n Mar 4th 1865	Elizabeth Minister Brown new wayland from states roland	no 1  9 P. M.	35	0.43	2		0	0	0	0.391	0.652	0.043	2	2
+9971	305	1	1865-03-04	sent	Sheldon Ft. Mon.  Wash. Mar. 4 1865.	Rosalie Pension for Pilgrim Glisson US N	& when Walrus Buxton Yrs vy truly	52	0.23			1	0	0	0.297	0.243	0.081	1	1
+9971	305	2	1865-03-06	sent	Col A Stager Cleveland O  Washn Mch 6th	Katie Mason for Hon David Tod Duplicate yours	a complicate kiss endless way Include Mexico	22	0.18			0	0	0	0.118	0.235	0.0	2	9
+9971	305	3	1865-03-07	sent	SH Beckwith  Washn Mch 7th 1865	For information Ravish . Maggie Maxwell = Tragedy Holmes for Bayonet	Vienna kerner Increase Belgium of Well s Gorgeous	45	0.24			0	0	0	0.25	0.278	0.083	2	9
+9972	306	0	1865-03-08	sent	SH Beckwith City Point  Washn Mch 8th 1865	Minnie Ripley Howard to Ravish Black Your abner	and of that you as Bender gallant cushions endless comic are the	427	0.18		9973	0	0	0	0.192	0.241	0.021	2	9
+9974	308	0		sent		absolute and pair amount judge yellow This I believe Toby the	No 1	361	0.21		9975	0	0	0	0.224	0.294	0.035	2	9
+9975	309	1	1865-03-09	sent	W. R. Plum  Wash'n Mar. 9th 1865 4 PM	Growl Julia March Padlock for Lady Zebra It is	4	45	0.31		9976	4	0	0	0.481	0.444	0.148	1	1
+9976	310	1	1865-03-09	sent	S. H. Beckwith  Wash'n Mar 9th 1865	Nellie Evans for America Lion Ridicule Orleans jest	3 pm	57	0.14			0	0	0	0.143	0.19	0.024	2	9
+9976	310	2	1865-03-10	sent	McCaine No 2  Washn Mch 10 1865	Jennie French Palestine Morgan tulip Spunky Shark Egan wishes	4	45	0.33	2		0	2	0	0.367	0.467	0.033	2	2
+9976	310	3	1865-03-10	sent	SH Beckwith  Washn Mar. 10th 1865	Louisa Everett Bless Pork Ludwig verge shielders who were	4	75	0.17		9977	0	1	0	0.212	0.25	0.038	2	9
+9977	311	1	1865-03-11	sent	S. H. Beckwith  Wash'n Mar. 11th 1865	Helen Baldwin Advertise Fawn Probate quorum a letter from Betray	1	111	0.16			0	0	0	0.185	0.277	0.031	2	9
+9977	311	2	1865-03-11	sent	John Horner  Wash'n Mar 11th 1865	Katy Flag for Paradise Baker As tons House France zebra	No 2  12 M	72	0.28		9978	3	0	0	0.349	0.442	0.116	2	1
+9978	312	1	1865-03-12	sent	Capt Gilmore Hilton Head  Wash Mar 12 1865	Happy Enoch Hoffman Gertrude for Lonesome tulip Madrid	your duty is simply quincive welch Lady &c	88	0.28			0	3	0	0.44	0.5	0.14	2	2
+9978	312	2	1865-03-12	sent	330 pm Beckwith  Washn Mch 12th 1865	Lottie Bates Amber Have verged ankle enquire	here sheridan nutmeg for Geneva upward Bequeath	57	0.14			0	0	0	0.167	0.19	0.024	2	9
+9978	312	3	1865-03-21	sent	SH Beckwith  Washn Mch 21st 1865	Minnie Gilbert for Liberia Robt Abstain Gentlemen We	1  22nd	25	0.2		9979	0	0	0	0.222	0.222	0.056	1	9
+9979	313	1	1865-03-21	sent	Jno Horner NY  Washn Mar. 21st 1865	Grapes harsh plug for Palsy Dec Mc Callum Supt of	4	190	0.29		9980	6	0	0	0.459	0.405	0.126	1	1
+9980	314	1	1865-03-22	sent	S. H. Beckwith  Wash'n Mar. 22nd 1865 430 PM	Lucy Chelsia Bladder Elk Your account serenade way	up accomplish	90	0.09			0	0	0	0.1	0.16	0.02	2	clear
+9980	314	2	1865-03-23	sent	RR McCaine Winchester  Washn Mch 23d 1865	Hannah Hancock Whole number of knew whips	Nabob star Please answer youth Benjamin	62	0.21			1	0	0	0.351	0.324	0.108	1	1
+9981	315	0	1865-03-25	sent	SH Beckwith  Washn Mch 25th 1865	Gertrude Claude Bless giraffe The waldo for Chapels Jockey	managed as the Andrew Madrid urged Bombay	66	0.15			0	0	0	0.146	0.188	0.021	2	2
+9981	315	1	1865-03-25	sent	SH Beckwith  Washn March 25th 1865	Nellie Graham for Abigail elk Wooster and Camargo	No 4  1 P. m.	77	0.21		9982	0	0	0	0.255	0.218	0.055	1	9
+9982	316	1	1865-03-26	sent	McCaine Winchr.  Washn D. C. Mar. 26 1865.	Judith Blot flea amber is opposed to giving up	amateur for his opinion upward angel So we go	119	0.16			0	0	0	0.167	0.231	0.064	2	9
+9982	316	2	1865-03-27	sent	John Horner N York  Washn March 27th 1865	Fanny Monday to H Ward Beecher zebra The fugitive of	10 am	77	0.22		9983	3	0	0	0.298	0.319	0.128	2	1
+9983	317	1	1865-03-28	sent	S. H. Beckwith  Wash'n Mar. 28th 1865	Gertrude David for Brimstone Degrade Elk We have barely enough	amount of narrow gauge stock upward Bunker per Whiton &c	195	0.14			0	0	0	0.143	0.195	0.008	2	9
+9983	317	2	1865-04-04	sent	2 pm to Mr Dana  Washington Apr 4th	Katie Edward Agnew pork Give all motions world	930 AM	25	0.28		9984	0	0	0	0.238	0.333	0.048	2	9
+9984	318	1	1865-04-05	sent	Capt R. C. Clowry  Wash'n Apr 5th 1865	Growl April Plaster for James E. Yeatman squire	No 4  6 pm	34	0.38			3	0	0	0.385	0.462	0.115	2	1
+9984	318	2	1865-04-05	sent	Beckwith City Pt  Wash. Apl 5. 1865	Martha Edwin for abigail About Ludwig hours ago Mr	4	77	0.13		9985	0	0	0	0.14	0.175	0.035	2	9
+9985	319	1	1865-04-05	sent	SH Beckwith  Washn Apr. 5th 1865	Nancy Edwin Advertise Elk It is desirable that all letters	Hominy pork up Africa Do give us news whereas Dutch	110	0.16			0	0	0	0.236	0.222	0.014	1	9
+9985	319	2	1865-04-05	sent	SH Beckwith  Apr. 5th 1865 8. P. M	Nancy Albert Addison pork The fracture of Mr Swards -	yet known up Accomplish why are you not front	36	0.08			0	0	0	0.045	0.136	0.045	2	clear
+9986	320	0	1865-04-05	sent	Hon CA Dana Richmond Va  Washn Apl 5 1865	Implore Flora Edwin To Agnew Hoax Giraffe Woaster	No 4  5 pm	94	0.15			0	0	0	0.164	0.164	0.0	1	9
+9986	320	1	1865-04-06	sent	Plum Nashvl  Wash Apl 6 1865	Maggie Alfred conquer Elk a requisition	4	45	0.18		9987	0	0	0	0.133	0.267	0.067	2	9
+9987	321	1	1865-04-08	sent	S. H. Beckwith  Wash'n Apr 8th 1865 11 am	Harriet Andrew for C L McAlpin or Jay J.	promptly up Bunker per W H whiten in charge	128	0.15			0	0	0	0.163	0.212	0.013	2	9
+9987	321	2	1865-04-08	sent	R. R. McCaine  Wash'n Apr. 8th 1865 1130 AM	Helen Emerson for Borgia Elk Quill numbskull universe	wishes upright Ambush On ward to Rich mound	24	0.17			0	0	0	0.2	0.2	0.05	1	2
+9987	321	3	1865-04-09	sent	RR McCaine  Wash Apl 9	Martha Borgia The military news welch transmitted to you	4	36	0.28		9988	0	0	0	0.391	0.348	0.087	1	9
+9988	322	1	1865-04-09	sent	RR McCaine  Wash'n Apr. 9th 6.30 P. M	Mary Evans Blot Pork A victory from Hoax states that	mistake upward Abstract why dont you git up & git	49	0.16			0	0	0	0.207	0.241	0.034	2	9
+9988	322	2	1865-04-09	sent	A. H. Caldwell A. of P.  Wash'n Apr 9th 1865 8. P. M	Nancy Ellsworth for Madrid Tulip The College has just	and to sober him until they are accomplished Barton	54	0.24			0	2	0	0.357	0.393	0.071	2	2
+9988	322	3	1865-04-10	sent	Hon CA Dana  Washn Apl 10th 1865	Flora Everett fawn Xenia please proceed prospect to	tooth maxim upright Accomplish	28	0.18			0	0	0	0.2	0.2	0.0	1	2
+9988	322	4	1865-04-11	sent	RR McCaine  Washn Apl 11th	Topsy Borgia Quell your waldo should not omega till weaken	1	36	0.14		9989	0	0	0	0.174	0.217	0.043	2	1
+9989	323	1	1865-04-11	sent	JH Emerick  Wash'n Apr. 11th 1865	Laura Flag for Shelter Weitzel zebra The remains of	1	100	0.2			2	0	0	0.31	0.293	0.086	1	1
+9989	323	2	1865-04-12	sent	J. H. Emerick  Wash'n Apr. 12th 1865	Emma Flood Shelter Weitzel unity I have seen your dispatch	( No 4 )  10.15 A. M.	112	0.15		9990	3	0	0	0.314	0.314	0.118	1	1
+9990	324	1	1865-04-12	sent	Beckwith City Pt.  Wash. Apl. 12. 1865.	Rebecca bless I desire wayne ankle	or girls purp abuse	28	0.25			0	0	0	0.286	0.238	0.048	1	2
+9990	324	2	1865-04-12	sent	SH Beckwith  Washn Apl 12th	Helen Bates Amateur The new tiptons sent to Borgia since	12. M.  ( 4 )	134	0.21		9991	2	0	0	0.242	0.297	0.033	2	9
+9991	325	1	1865-04-15	sent	Eddy, Shermans Hd. Qrs.  Washington D.C. Apr. 15. 1865	For Amend fawn It has been stated that when	is given upward Bombay religion & chief of staff ----	134	0.14			0	0	0	0.108	0.169	0.0	2	9
+9991	325	2	1865-04-15	sent	( 1 ) Emerick Richmond .  Washington D. C. April 15. 1865.	For Mentor unity Oakum Jay A. Campbell Mayor Mayo and	No 1  8 PM	94	0.18		9992	3	0	0	0.226	0.264	0.057	2	1
+9992	326	1	1865-04-15	sent	Emerick Richmond  Wash Apl 15 1865	Nancy Ghost Meriden On reflection	No 2  3.15 PM	52	0.17			0	0	0	0.267	0.267	0.033	1	1
+9992	326	2	1865-04-16	sent	Caldwell Hd Qrs A. P.  Washn Apl 16 1865	Imogene Knapp for negus Not away tulip Your	1	95	0.28		9993	0	4	0	0.383	0.553	0.106	2	2
+9993	327	1	1865-04-16	sent	JH Emerick  Wash'n Apr 16th 1865	Jennie Gift for Mentor zebra Your telegram tooth Bologna	No 1.	136	0.23			5	0	0	0.373	0.373	0.12	1	1
+9993	327	2	1865-04-16	sent	Clowry St Louis  Wash Apl 16. 1865.	Grapes Gas for Shelby Pope zebra Make you preparations	want to get out torch country him self Jersey	72	0.24			3	0	0	0.356	0.311	0.044	1	1
+9994	328	0	1865-04-16	sent	Carey Louisville Ky  Washn Apl 16th 1865	Rosalie gift for shelter Allen Dolphin You may	of teams canby greatly reduced yoke Japan	55	0.27			1	0	0	0.382	0.382	0.088	1	1
+9994	328	1	1865-04-16	sent	JW Sampson  Washn Apl 16th 65	Sarah gas Nabob You may bring your	1.30 pm	29	0.24			0	0	0	0.467	0.4	0.067	1	1
+9994	328	2	1865-04-17	sent	Sherman mobile  Wash DC Apl 17 65	Harriet Marshall famish tulip I feel certain that	your surgery against canary trifle cooper alive magic	98	0.35			0	4	0	0.448	0.569	0.103	2	2
+9995	329	0	1865-04-17	sent	Plum Nashville  Washn Apl 17th 65	Katie Caldwell Apple pork The freedom of franklin from	as tankard as spunk the Palestine is intact Amber	81	0.21			0	0	0	0.125	0.354	0.042	2	9
+9995	329	1	1865-04-17	sent	J. H. Emerick Richmond  Wash'n Apr. 17th 1865	Lucy Glory Meriden zebra Ford man age her torch three	done lest he is capes yoke John good hang him	60	0.25			4	0	0	0.455	0.394	0.152	1	1
+9995	329	2	1865-04-18	sent	AH Caldwell Burkesville Va  Wash Apl 18th 1865	Elizabeth Mason Mohawk The pedlar was telegraphed savory	4  1030 AM	45	0.33		9996	0	2	0	0.393	0.536	0.143	2	2
+9996	330	1	1865-04-19	sent	McCaine  Washn Apr 19th 1865	Hannah George Borgia Vincennes evidence that Elder knew of	4	74	0.23			0	0	0	0.293	0.39	0.024	2	9
+9996	330	2	1865-04-19	sent	R. R. McCaine  Wash'n Apr 19th 1865	Maria Cameron Blot If Elder does not avail	bitch will not be entitled to quarter Bladder	40	0.15			0	0	0	0.182	0.273	0.045	2	9
+9996	330	3	1865-04-19	sent	RR McCaine  Washn Apl 19th	Nelly George Blot Send Harry Narcotic & all the	No 3	35	0.23		9997	0	0	0	0.13	0.348	0.13	2	9
+9997	331	1	1865-04-19	sent	Sheldon Ft Monroe  Wash. Apl. 19. 1865	Nellie Kent for belgium J	Pasture	44	0.2			0	0	0	0.233	0.267	0.067	2	9
+9997	331	2	1865-04-20	sent	Eddy Raleigh NC  Washn Apl 20th 1865	Harriet Gibson Chapel fawn If Drown venoms his jockey	no 19 n	70	0.13		9998	0	0	0	0.182	0.136	0.023	1	9
+9998	332	1	1865-04-20	sent	John Horner  Little money lost  Wash'n Apr 20th 1865	Jennie harsh for John A Kennedy Shelter Supt of	Sam zebra Au Revoir youth Etta virgin go in	413	0.19		9999	15	0	0	0.309	0.295	0.091	1	1
+10000	334	1	1865-04-20	sent	Caldwell Hd Qrs A. P.  Wash Apl 20 1865	Rosalie Nelson Monarch you macy to Mr Done	with out delay Wiley M a D rid	133	0.24			0	5	0	0.225	0.4	0.075	2	2
+10000	334	2	1865-04-22	sent	1 AM 22 Apl 22  Wash Apl 22 1865	Agnes Giles for Borgin Giraffe You will prospectively	No 1  1 P. M.	50	0.16		10001	0	0	0	0.188	0.188	0.031	1	1
+10001	335	1	1865-04-23	sent	Mason Cairo Ills.  Washn April 23d 1865	Harriet Harrow performed for Neptune Bladder	( No. 1. )  9 AM	78	0.28			3	0	0	0.4	0.34	0.12	1	1
+10001	335	2	1865-04-29	sent	Horner N. Y.  Wash D. C. Apl 29 1865	Emma harrow padlock for Hon	Wrangle Webster Indigo Rebellion Squelched	35	0.37			3	0	0	0.435	0.391	0.13	1	1
+10002	336	0	1865-04-29	sent	J. H. Emerick Richmond,  Washn Apl 29th 1865	Florence for Jacob unity pension peltons torch oyster	No 4  8 PM	85	0.34			2	0	0	0.448	0.431	0.069	1	1
+10002	336	1	1865-04-29	sent	Plum Nashville  Wash DC Apl 29. 65.	Nancy Dawson Conquer fawn Prescott	No 1  9.30 PM.	27	0.22			0	0	0	0.294	0.353	0.118	2	9
+10002	336	2	1865-05-01	sent	Clowry St Louis Mo  Wash. May 1. 1865.	Rosalie plug for Pipe You	torch Argyle webster Japan &c	42	0.38			2	0	0	0.593	0.519	0.074	1	1
+10003	337	0	1865-05-06	sent	Plum Nashville  Washn May 6th 1865	Apple pork Spur such lisbon as world	Camel loathing robin lapland Amber upright Catalogue	21	0.33			0	0	0	0.375	0.438	0.188	2	9
+10003	337	1	1865-05-07	sent	Washington May 7th	AH Caldwell	No 1	35	0.34			2	0	0	0.5	0.409	0.182	1	1
+10003	337	2	1865-05-07	sent	S. T. Lines Macon Ga.  Washington D. C. May 7 1865	Growl Deborah may postpone for Shelby will son	No 1  730 Pm	102	0.31		10004	4	0	0	0.429	0.444	0.095	2	1
+10004	338	1	1865-05-07	sent	Lines Macon  Wash May 7 1865	Deborah may plunder for Will son Divine	No 2  730 Pm	71	0.37			5	0	0	0.489	0.404	0.149	1	1
+10004	338	2	1865-05-07	sent	Caldwell Richmond  Washn May 7 . 1865	Nancy Downing Empress tulip Your action in refusing	No. 2.  1030 am	84	0.29		10005	0	4	0	0.255	0.471	0.039	2	2
+10005	339	1	1865-05-08	sent	Caldwell Richmond  Wash May 8 1865	Elizabeth Edwards Lady Yuma detain all the pedlar	Trinities as may require their Windy Magic services Windy Magic	57	0.16			0	0	0	0.25	0.281	0.062	2	2
+10005	339	2	1865-05-08	sent	Wash May 8 1865 4 PM	No 1	tooth judge advocate shelter Youth Insanity purity virtue	56	0.38			2	0	0	0.463	0.415	0.171	1	1
+10005	339	3	1865-05-08	sent	Capt Clowry St Louis Mo  Washn May 8th 1865	Nelly platina Shelby Pope zebra	located at Red wing John	20	0.3			1	0	0	0.353	0.294	0.176	1	1
+10006	340	0	1865-05-08	sent	R O'Brien Raleigh NC  Wash May 8 " 1865	Happy Job Fisher Susan <deletion>for</deletion> Monkey Homer tulip	saddle please acknowledge receipt of this repeat Crowd	42	0.43			0	2	0	0.433	0.6	0.1	2	2
+10006	340	1	1865-05-09	sent	CG Eddy Ft Monroe Va  Washn May 9th 1865	Julia Evans Annapolis hound Wooster of wrangle tinkered	No 2  2 P. M.	41	0.22			0	1	0	0.259	0.259	0.037	1	2
+10006	340	2	1865-05-09	sent	Caldwell Richmond Va  Washn May 9 1865	Helen Ellsworth lamb I understand Spark	though not on that subject yawl magic	85	0.31		10007	1	3	0	0.383	0.532	0.085	2	2
+10007	341	1	1865-05-10	sent	Caldwell Richmond Va  1030 AM Washn May 10th	Elizabeth French Embrace You are authorized to	may deem expedient yawl Costume	40	0.25			0	2	0	0.348	0.391	0.087	2	2
+10007	341	2	1865-05-11	sent	GJ Lawrence Balto  Washn May 11th 1865	Fanny Flag to Polking officer Banditti	success or youth Juno	21	0.29			0	0	0	0.4	0.4	0.133	1	1
+10007	341	3	1865-05-11	sent	AH Caldwell  Washn May 11th 1865	Lamb tulip You may order wayworn for all	them welch Crowd when this cruel wars over	32	0.25			0	2	0	0.389	0.444	0.056	2	2
+10008	342	0	1865-05-14	sent	HF Lines Macon  Washn May 14th 1865	Grapes Minnie female for Lieut Pandora Pritchard Bigelow	penfield no plug also OBrien at Galena &c	80	0.26			4	0	0	0.426	0.404	0.149	1	1
+10008	342	1	1865-05-14	sent	11 PM Hon CA Dana Chicago  Wash May 14 1865	We found among Booths papers a pigeon which	No. 1	90	0.1		10009	0	3	0	0.152	0.196	0.043	2	clear
+10009	343	1	1865-05-17	sent	H. F. Lines Macon  Washington May 17th 1865	Growl Harriet Glory for Wilson Dismal unity The Vincent quadroon	polka of Jersey yoke John A Rawlins palsey Chief Staff	140	0.34			4	0	0	0.419	0.473	0.129	2	1
+10009	343	2	1865-05-17	sent	Capt RC Clowry St Louis  Washn May 17th 1865	Glory Shelby Pope zebra You may suspend	No 2  9 P. m.	45	0.2		10010	2	0	0	0.214	0.286	0.036	2	1
+10010	344	1	1865-05-17	sent	Caldwell Richmond  Wash May 17 1865	Rosetta lady yacht Madrid is here	230 PM	58	0.19			0	3	0	0.385	0.423	0.077	2	2
+10010	344	2	1865-05-19	sent	R. C. Clowry  Washington May 19th 1865	Grapes Henrietta Gradual for Tappan Shelter Pope unity orders	No 1  3 PM	92	0.36		10011	4	0	0	0.508	0.4	0.062	1	1
+10011	345	1	1865-05-18	sent	Caldwell Richmond  Wash. May 18. 1865	Govern Imogene for Meriden unity no plug swells pelton	polkaers order the boards yoke Juno	54	0.24			2	0	0	0.314	0.286	0.057	1	1
+10011	345	2	1865-05-18	sent	AH Caldwell Richmond  No 2  Wash 7 PM May 18 / 65	Minnie Mason for Empress Tulip Spark wait sell is	1230 Pm	104	0.26	2	10012	0	3	0	0.239	0.338	0.056	2	2
+10012	346	1	1865-05-19	sent	No 2 R. O'Brien Raleigh  Washington D.C. May 19 1865	Happy Job Morgan Topsy for are Be Bullock Bigelow abortion	luck is perfectly reliable Julip Extension review here tuesday wednesday	156	0.31	2		0	6	1	0.268	0.42	0.045	2	2
+10012	346	2	1865-05-19	sent	2 AH Caldwell Richmond  Washington May 19 1865	Morgan Hannah to Embrace Julep shark white zeal wilby	here but take their silver equipments Wiley chart gold	63	0.38			0	2	0	0.348	0.5	0.065	2	2
+10013	347	0		sent	No 1 Capt RC Clowry St Louis  Washington 830 PM 19 May	Grapes Hunkey Nelly for Tappan shelter Pipe unity	under your orders youth Jno A Rawlins palate	40	0.42	1		2	0	0	0.607	0.393	0.143	1	1
+10013	347	1	1865-05-20	sent	4 JC Sullivan Nashv  Washinton 12 M May 20 / 65	Implore Gibson Henrietta for apple fawn quell it	times urged America How arrow Yankee now Beck	56	0.16			0	0	0	0.222	0.25	0.083	2	9
+10013	347	2	1865-05-21	sent	JC Sullivan Nashv  Washn May 21st 1865	Gertrude Gilbert Anderson Lawful terms given paroled	Lt Gen	134	0.22		10014	0	2	0	0.227	0.33	0.091	2	2
+10014	348	1	1865-05-21	sent	GD Sheldon Ft Monroe  Washn May 21st 1865	Elizabeth Jacob Animal zebra The women & children may	No 2  130 P. M.	170	0.18		10015	2	0	0	0.277	0.287	0.059	2	9
+10015	349	1	1865-05-21	sent	Caldwell Richmond Va.  Wash May 21, 1865	Harriet Oliver Allen for Weitzel bridle	weaning them from here Yawl madrid	48	0.23			0	3	0	0.28	0.4	0.04	2	2
+10016	350	0	1865-05-21	sent	Sheldon Ft. Mon.  Wash D. C. May 21 1865	Nancy harsh plug Jordan Evidence	No 1  2 PM	32	0.44			0	0	0	0.462	0.462	0.115	1	1
+10016	350	1	1865-05-22	sent	OBrien Raleigh  Wash D. C. May 22 1865	Helen harsh plank kiss Yuma	7 PM	42	0.24			0	0	0	0.292	0.333	0.042	2	1
+10016	350	2	1865-05-22	sent	No 1 RC Clowry St Louis  Washington DC May 22 / 65	Growl Martha Harsh plank to pope Gaul unity .	No 1  9 A. M.	47	0.36	1	10017	4	0	0	0.552	0.379	0.138	1	1
+10017	351	1	1865-05-23	sent	Horner NY  Wash D. C. May 23. 1865.	Emma harsh pebble Kasson unity Reagan late walnut	attention unity By order of Bolivia signed Brutus	135	0.17			5	0	0	0.227	0.227	0.093	1	1
+10017	351	2	1865-05-23	sent	No 3. GD Sheldon Ft. M.  Wash. 1230 PM May 23 / 65	Matilda Knapp to point gold cackle Bayonet pritchard to Harvest	No 1  8 PM	42	0.14		10018	0	0	0	0.143	0.107	0.0	1	9
+10018	352	1	1865-05-23	sent	H. F. Lines Macon Ga  Wash D. C. May 23 1865	Empress fanny harrow pebble for Japan Copy to Will	No 1  9 am	205	0.31		10019	5	0	0	0.472	0.376	0.048	1	1
+10019	353	1	1865-05-24	sent	Sullivan Nashville Tenn  Wash D. C. May 24 1865	& Lines Macon Ga	No 1  930 am	149	0.32			5	0	0	0.489	0.383	0.074	1	1
+10019	353	2	1865-05-24	sent	Sheldon Ft Mon.  Wash DC May 24. 65	Eugenia harsh penny Jordan I understand Shelby Wright	No 1  930 am	42	0.33		10020	2	0	0	0.542	0.333	0.083	1	1
+10020	354	1	1865-05-24	sent	Clowry St Louis Mo.  Wash DC May 24. 65	Eugenia harsh pension for Pope unity Shelby Dodge	No 1	41	0.39			3	0	0	0.593	0.481	0.111	1	1
+10020	354	2	1865-05-24	sent	H. F. Lines Macon  Wash'n May 24th 1865	Grapes Harsh female may Nelly officer Polkaing Bigelow	No 4	50	0.48			2	0	0	0.629	0.657	0.086	2	1
+10020	354	3	1865-05-24	sent	J. C. Sullivan Nashville  Wash'n May 24th 1865	Indian Grafton Nellie for Climax pork I am instructed	date urge William G Morse Dagger ho for Texas	45	0.24			0	0	0	0.321	0.321	0.036	1	9
+10020	354	4	1865-05-24	sent	Capt RC Clowry St Louis  Washn May 24th	Shelby Pipe zebra A large pelican of Alpha panama oysters	US Grant Lt Gen	34	0.29			1	0	0	0.348	0.435	0.13	2	1
+10021	355	0	1865-05-25	sent	AH Caldwell Richmond  Washington May 25 / 65	Helen for Indian Zebra I asked to	7 PM	55	0.29			3	0	0	0.324	0.324	0.081	1	1
+10021	355	1	1865-05-27	sent	Capt Fuller No 2  Washn May 27 1865.	N. Orleans La	3  1030 am	54	0.37	2	10022	0	3	0	0.303	0.606	0.061	2	2
+10022	356	1	1865-05-28	sent	Sheldon Ft Mon.  Wash. May 28. 1865	Emily Penrose for Point platina please	2	35	0.14			0	0	0	0.263	0.211	0.053	1	1
+10022	356	2	1865-05-28	sent	Caldwell " R'd "  Wash'n May 28th 1865 7 PM	Minnie Lamb Stevens was summer shunned blythe	2	33	0.33			0	1	0	0.4	0.55	0.1	2	2
+10022	356	3	1865-05-28	sent	AH Caldwell " Rd "  Washn May 28th 1865	Rosetta Lady Said done was the person in ten	9.30 P. m	47	0.26		10023	0	2	0	0.407	0.407	0.148	1	2
+10023	357	1	1865-05-28	sent	J. C. Sullivan  Wash'n May 28th 1865	Rachael David for Climax Pork xenia please	1	177	0.24		10024	0	7	1	0.305	0.41	0.095	2	2
+10024	358	1	1865-05-28	sent	John Homer  Wash'n May 28th 1865 10. P. M	Rebecca harsh paddle for Kunkle zebra Mallory late	hold them there yoke Brutus good for them	47	0.23			2	0	0	0.423	0.346	0.192	1	1
+10024	358	2	1865-05-28	sent	J. R Gillmore  Wash May 28 1865	Growl May harsh paddle Sarah for Maxim Hilton Head	receive & hold them in safe cuss tady Brutus	63	0.22			3	0	0	0.271	0.229	0.062	1	1
+10024	358	3	1865-05-29	sent	J. C. Sullivan Nashville  Wash. May 29 / 65	Implore Julia Dawson for apple pork Have musty	930 am	28	0.21		10025	0	0	0	0.167	0.333	0.111	2	2
+10025	359	1	1865-05-30	sent	J. C. Sullivan Nashville  Wash'n May 30th 1865	Flora Dayton for Conquer Horse Send the Palestine	10 PM	57	0.28			0	0	0	0.256	0.385	0.077	2	9
+10025	359	2	1865-05-30	sent	No 10 JW Wallack Indianapolis  Wash May 30	Mohawk Sarah thirtieth May for Relay	by you signed Bishop thats all	143	0.1		10026	0	0	0	0.163	0.175	0.05	2	clear
+10026	360	1	1865-05-31	sent	HF Lines  Washn May 31	Wednesday Knight zebra Telegh to Maxim	1	30	0.33			2	0	0	0.625	0.5	0.125	1	1
+10026	360	2	1865-06-01	sent	Theo Holt Little Rock  Wash'n June 1st 1865 1030 AM	Emily Jane Plug for Monster zebra whisky will be	2	55	0.27		10027	2	0	0	0.433	0.433	0.167	1	1
+10027	361	1	1865-06-01	sent	Capt W. G. Fuller  Wash'n June 1st 1865 1030 am	Hunter Luke Brown Elizabeth for Farmer yacht	No 1.  10 AM	37	0.3			0	2	0	0.474	0.579	0.211	2	2
+10027	361	2	1865-06-02	sent	Clowry St Louis  Wash June 2 1865.	Emily plank for Pope unity You	1	54	0.3			4	0	0	0.485	0.394	0.091	1	1
+10027	361	3	1865-06-02	sent	John Horner N. Y.  Wash'n June 2nd 1865	Grapes Elizabeth Peach Kasson zebra Suppress all sail of	1030 am	37	0.24		10028	3	0	0	0.375	0.333	0.125	1	1
+10028	362	1	1865-06-02	sent	Stevens " Cin "  Washn June 2nd 1865	Pagan Clara second for Borgia period	all dispensed sig Ranger Lowes weather	36	0.17			1	0	0	0.227	0.273	0.182	2	9
+10028	362	2	1865-06-03	sent	Capt WG Fuller 2  Washn June 3d 1865	Fanny Benton Negus tulip It is probable a large salem	orbits carried home by them wiley Chart	65	0.31			0	3	0	0.381	0.429	0.119	2	2
+10028	362	3	1865-06-05	sent	Capt <deletion>W.</deletion> Gillmore Hilton Hd No 2  Washn June 5 / 65	Hang Florence Dayton for Lonesome Julip Revenue George B	Pulaski Watson execution of this repeat yawl Edie Townsend	54	0.28	2		0	2	0	0.237	0.395	0.053	2	2
+10029	363	0	1865-06-05	sent	AH Caldwell  Washn June 5th 1865	Julia Battle When will the papers relating	1	23	0.26			0	0	0	0.312	0.375	0.125	2	2
+10029	363	1	1865-06-06	sent	John Horner N. Y  Washn June 6th 1865	Grapes Henrietta Pledge for Kunkle unity Have John Mitch	until he has his man youth Japan keep mum	72	0.26			3	0	0	0.419	0.349	0.07	1	1
+10029	363	2	1865-06-08	sent	Capt JR Gilmore Hilton Head  Washn June 8th	Imogene Edwards Lonesome tulip In reply your Watson	630 PM	33	0.36		10030	0	1	0	0.44	0.44	0.12	1	2
+10030	364	1	1865-06-08	sent	Washington June 8 1865	Huron Luke Fisher Mary for Lady if Mr	deem proper Wiley Beach now comes the end	80	0.24			0	1	0	0.239	0.37	0.043	2	2
+10030	364	2	1865-06-14	sent	Washington 12.30 am June 14th 1865	Geo K. Smith Cumberland Md	4	105	0.31		10031	2	0	0	0.356	0.425	0.082	2	1
+10031	365	1	1865-06-16	sent	Jno R Dixon New Orleans Washn June 16th 1865	Indian Judith Riley Buffalo for Chandler care Autograph	received for further instructions urge Advertise acknowledge recpt	80	0.15			0	0	0	0.135	0.212	0.019	2	9
+10031	365	2	1865-06-15	sent	Capt Sam Bruch Lvl  Washn June 15 1865 5 PM	Milan Dolphin you can Pearl the	chief of staff right this is	36	0.39			1	0	0	0.591	0.591	0.045	1	9
+10032	366	0	1865-06-17	sent	HA Seiberg N Orleans  Washn June 17 1865	Happy Luke Marshall for Negus Ginger tulip Hill the	as Chief Vermont be satisfactory wiley Burglar number two	53	0.51			0	1	0	0.45	0.675	0.125	2	2
+10032	366	1	1865-06-17	sent	Washn June 17 1865	HA Seiberg N Orleans	work well Wiley Burglar how is the weather down there	360	0.23		10033	1	15	0	0.229	0.368	0.076	2	2
+10034	368	1	1865-06-19	sent	H. F. Lines  Washn June 19th 1865	Growl Harriet Hope for Shelter Wilson zebra	Polka yoke John mighty warm up here	35	0.31			3	0	0	0.4	0.36	0.12	1	1
+10034	368	2	1865-06-19	sent	JR Gilmore Hilton Head 2  Washington 2 Pm June 19th 65	Happy Helen Luke Morgan for pearl York Provost Marshal The	No 1  8 PM	87	0.31		10035	0	2	1	0.305	0.407	0.068	2	2
+10035	369	1	1865-06-22	sent	All Cipher Oprs at Mil Div & Dep. Hdqrs  Washn June 22 / 65	Grapes Nancy June Harsh peach for All mil quitman and	8 PM	250	0.18		10036	7	0	0	0.276	0.25	0.039	1	1
+10036	370	1	1865-06-22	sent	Washn. June 22 / 65	James Gamble San Francisco Cal	execute shun Venus Archery axis Asp	237	0.19		10037	0	0	0	0.267	0.281	0.075	2	9
+10037	371	1	1865-06-22	sent	Washn 8 PM June 22 1865	Stevens Cincinnati	signed Bengal Jeff Davis & Co	234	0.06		10038	0	0	0	0.083	0.105	0.008	2	clear
+10039	373	0	1865-06-26	sent	Capt J. R. Gillmore  Washington June 26 / 65 330 PM	Jno C Sullivan Nashville	Jersey Virgin forward to Polkaers named yoke U. S G	109	0.4			3	0	0	0.506	0.494	0.049	1	1
+10039	373	1	1865-07-02	sent	Capt J. R. Gilmore  Washn July 2nd 10.30 am 1865	Hunter Mark Arnold Elizabeth For Lonesome Tulip . Your letter	orders Talbot Quotient Yawl Ed Town send asst Basket	90	0.27			0	3	0	0.308	0.404	0.077	2	2
+10040	374	0	1865-07-11	sent	Richd O Brien  Wash July 11 " 1865	Hunter Mark Hawkins Henrietta tulip Letter Mark Baker	Thos T Eckert	43	0.4			0	3	0	0.414	0.552	0.241	2	2
+10040	374	1	1865-07-13	sent	W H Fuller New Orleans  Wash July 13 1865	Impress Stewart Benton Harriet for amount harness horse	3.30 P. M	73	0.18		10041	0	0	0	0.186	0.233	0.047	2	9
+10041	375	1	1865-07-14	sent	Geo D. Sheldon  Wash'n July 14th 1865	Wolf Sarah Nelson for Point Brass	3 PM	67	0.18			0	0	0	0.237	0.289	0.132	2	9
+10041	375	2	1865-11-05	sent	Capt R C Clowry no 5  Washn July 22 1865	St Louis	celebrate of Pauline if accomplished master Broach repose stop	56	0.14			0	0	0	0.103	0.205	0.026	2	2
+10041	375	3	1865-11-04	sent	Capt WG Fuller N. O. no 4  Washington DC July 22 / 65	Implore Libbie chelsea for amount giraffe The abolish multiplies that	3	55	0.15		10042	0	0	0	0.135	0.162	0.0	2	9
+10042	376	1	1865-07-22	sent	Geo D Sheldon Ft Monroe  Wash'n July 22nd 9 pm 1865	Winslow Maggie Wagner King for Point Black Your letter was	830 pm	241	0.19		10043	0	0	0	0.22	0.262	0.035	2	9
+10043	377	1	1865-07-23	sent	Cipher Clerk  Wash July 23 1865	Memphis Tenn	no 1  1030 am	66	0.29			4	0	0	0.386	0.341	0.091	1	1
+10043	377	2	1865-07-24	sent	Cipher Opr Memphis Tenn  Washington July 24th 1865	Grapes Elizabeth harsh pension for Palate Barton Drill unity	acknowledge receipt youth E. D Townsend A A G	78	0.27			3	0	0	0.364	0.291	0.091	1	1
+10044	378	0	1865-07-26	sent	Col AC Waterhouse. Columbia SC  Wash July 26 " 1865	Your letter jingle fowler instant hatch and	Thos T Eckert	44	0.14			1	0	0	0.121	0.121	0.0	1	2
+10044	378	1	1865-07-29	sent	Col Babcock Saratoga NY  Wash July 29 " 1865	Wheel Scott Downing Effie for assist copper	narrow without it Master account yours truly	49	0.16			0	0	0	0.091	0.242	0.03	2	9
+10045	379	0	1865-07-29	sent	Col Babcock , Saratoga  Wash July 29 1865	Webster Wagner Downing Sarah for assist, scarlet Artics	no 1	169	0.24		10046	2	0	0	0.248	0.339	0.028	2	2
+10046	380	1	1865-07-30	sent	Summerville Memphis  Wash'n July 30th 1865	Growl Laugh Fanny for Him H G Root Drill zebra Zebra	FE Spinner Treas You S look up the other messages	61	0.25			5	0	0	0.412	0.382	0.176	1	1
+10046	380	2	1865-08-08	sent	3 PM Caldwell - Richmond  Wash Aug 8th 65	I am directed by spunky Eckert to say that	No 4  630 pm	125	0.22		10047	0	4	0	0.247	0.309	0.049	2	2
+10047	381	1	1865-08-12	sent	Gross New Orleans  Wash D. C. Aug.  12. 1865.	Rogers Bates Mary for Parson J M Wells	is still here upward Abigail Addison abolish Absent	74	0.23			0	0	0	0.24	0.3	0.02	2	9
+10047	381	2	1865-09-01	sent	5 PM DH Bates Highlands  Wash Sept 1. 1865	for Rampant.Scarlet.I Scarlet I have several applications	mastiff Regent Libbie Sheridan Harris nice girl	93	0.17			0	1	0	0.152	0.242	0.015	2	9
+10048	382	0	1865-09-01	sent	530 PM Bates Highlands  Washn Sept 1. 1865	The rockland lightens that the propeller Continental	1	56	0.09			0	1	0	0.147	0.118	0.029	1	clear
+10048	382	1	1865-09-02	sent	Geo Gallup  Wash'n Sept 2nd 1865	Growl Sept Peach Henrietta for Myrtle zebra Up on	to Gov Sharkey at chapel Zebra How is this	108	0.2			6	0	0	0.312	0.281	0.094	1	1
+10049	383	0	1865-09-04	sent	10 PM  Washn Sept 4 , 1865	Impress Roland Albany Polly for Climax Harem	shuffle are without menace restored & enforced upughh addison finis	381	0.13		10050	0	0	0	0.158	0.192	0.017	2	9
+10051	385	0	1865-09-09	sent	Washn Sept 9 . 1865	Wheel Libbie for Randolph Red Republic assures me	chicken Egypt Master Regent are you homesick yet	158	0.18			0	0	0	0.2	0.274	0.032	2	9
+10052	386	0	1865-09-17	sent	DH Bates Boston  Washn Sept 17 . 65	Delia Fowler Rattle bronze Insanity Benton gather here black made	No 5	153	0.13		10053	0	0	0	0.143	0.163	0.061	2	9
+10053	387	1	1865-09-19	sent	Capt J. C. Van Duzer Nashville  Washn Sept 19th 1865	Webster Sheridan Bates Judith For Breakfast Potash orderly	mastiff broach roanoke pleasant weather cool and clear	120	0.22			2	1	0	0.247	0.312	0.026	2	9
+10053	387	2	1865-09-20	sent	230 PM DH Bates  Wash Sept 20 " 1865	From Detroit Baldwin for Randolph bronze	silver match Chas Dickey Nostril Marshal	36	0.22			0	0	0	0.182	0.318	0.0	2	9
+10054	388	0	1865-09-20	sent	230 PM DH Bates  Wash Sept 20 " 1865	Webster Weaver Fairbanks Susan for rattle purple Galway	obviate present master Regent Rankin How are you	72	0.11			1	0	0	0.182	0.159	0.023	1	clear
+10054	388	1	1865-09-20	sent	3 PM DH Bates  Wash Sept 20 1865	Wheel Sheridan Baldwin Katie for Rampant crimson Galways	me mastiff Regent acting Rankin go it boys	88	0.16			1	1	0	0.208	0.264	0.038	2	9
+10055	389	0	1865-09-23	sent	12 m JW Sampson Lynchburg  Wash Sept 23 1865	Growl harsh pebble Francis for pilgrim Alberger Dresden	necessary at Dresden youth L C Baker Palsy	72	0.36			6	0	0	0.49	0.408	0.143	1	1
+10055	389	1	1865-09-30	sent	Seiberg New Orleans  Washn Sept 30th 1865	Webster Katie Sheridan Dickens Bourbon Potash Orthodox was	1	72	0.14		10056	1	0	0	0.114	0.205	0.023	2	9
+10056	390	1	1865-09-30	sent	Sampson Lynchbg  Wash'n Sept 30th	Grapes Lamp Katy To Shelby Curtis Zebra	No 1  12 M	36	0.31			4	0	0	0.385	0.385	0.115	1	1
+10056	390	2	1865-10-01	sent	Sampson Lynchbg Va  Wash Octo. 1 1865	Frances for Mrs M H Alberger plug publish	Master Artist	82	0.23			2	0	0	0.306	0.226	0.032	1	1
+10057	391	0	1865-10-07	sent	Capt R. C. Clowry St Louis Mo  Washn Oct 7 1865	Webster Whitney Clark Topsy for Bogus Wave bronze ----	matched Ralph Raleigh How are things with you	104	0.23			1	0	0	0.274	0.288	0.082	2	9
+10057	391	1	1865-10-13	sent	1130 AM H Seiberg N Orleans  Wash Oct 13 1865	Wheel Whitney Gardner Effie for Bourbon bronze	among them perkins penrose chorus lobsters Ashland	49	0.18			0	0	0	0.161	0.29	0.0	2	9
+10058	392	0	1865-10-13	sent	Capt JC Van Duzer ---- Nashville  Washn Oct 13 1865	Webster Whitney Gardner Matilda for degrade R . H . Ramsay	frosted fulcrum War Office mastiff Broadway How are you	72	0.21			1	1	0	0.245	0.265	0.061	2	1
+10058	392	1	1865-10-16	sent	230 PM Capt JC Van Duzer Nashville Tenn  Washn Oct 16 " 1865	Webster Whitney Brown Susan for Degrade Ramsay vomit bronze	ripley Egypt obviate made master Breakfast cool & clear	143	0.19			1	0	0	0.234	0.277	0.064	2	9
+10059	393	0	1865-10-18	sent	H Seiberg N Orleans  Washn Oct 18 ' 65	Webber Martha Benton Bourbon purple The ransom declines to	your music master Rattle	31	0.32			0	0	0	0.429	0.286	0.048	1	1
+10059	393	1	1865-10-18	sent	AH Caldwell Rd  Washn Oct 18 , 1865	Cornelia Fleming Bruno warp and Arnica waldo purple The	reputation master Broach send to Arnica in english please	126	0.16			0	0	0	0.205	0.217	0.012	2	9
+10060	394	0	1865-10-18	sent	WJ Bodle Balto  Washn Oct 18 . 65	Florence for Hand Cock zebra The Indigo directs that you	efficiency as an officer star What is that reputation Townsend	120	0.21			1	0	0	0.28	0.253	0.093	1	1
+10060	394	1	1865-10-18	sent	H Seiberg N Orleans  Washn Oct 18 . 65	Matilda Fleming Bluff The forbidding paragraph appear gurgle papers gray	action Mastiff Broach plead guilty throw yourself mercy of court	110	0.15			0	1	0	0.187	0.187	0.013	1	9
+10061	395	0	1865-10-20	sent	1130 AM WJ Bodle . Balto  Washn Oct 20 1865	Grapes Oct harsh Florence for palsy Elsee	asst Bruno there is good time coming	42	0.38			3	0	0	0.483	0.517	0.172	2	1
+10061	395	1		sent	H Sieberg (No 5)  4 P. M.			0	0.0			0	0	0	0.0	0.0	0.0	1	short
+10061	395	2	1865-10-21	sent	or Capt. Gross. N. O.  Washn D. C. Oct. 21 65.	Webster Laura Baker Whitney for Bourbon bronze	he travelled Match rampant Answer via Turban	66	0.17			1	0	0	0.225	0.25	0.025	2	2
+10062	396	0	1865-10-21	sent	5 PM  Washn Oct 21 , 1865	for Tappan Shelby Emory Cumber land unity on the requisition	W. S Hand Cock Taunton Shelter this is no one	89	0.18			3	0	0	0.236	0.218	0.0	1	1
+10062	396	1	1865-10-22	sent	430 PM Bodle  Washington Oct 22 / 65	Katy Harsh plunge for Jay L Mack fail number	No. 5.  10 A. M.	39	0.44			2	0	0	0.382	0.294	0.059	1	1
+10062	396	2	1865-10-27	sent	H. Sieberg N. Orleans.  Washington D. C. Oct. 27. 1865.	Webber Clotilda Albany for bourbon bronze Spires might	Rampant	62	0.18			0	0	0	0.2	0.225	0.05	2	9
+10063	397	0	1865-10-28	sent	Geo D Sheldon Ft Monroe  Washn Oct 28 , 1865	Lallie Penrose Point Black An gender gallant Mexico dismal	to weakness if he prefers Include Minister	52	0.29			0	0	0	0.29	0.452	0.032	2	9
+10063	397	1	1865-10-29	sent	H Seiberg NO No 5  Washn Oct 29 1865	Rosalie Downing Bourbon Bronze Your Perkins expands of optic one of	brings Spires javelin master Rattle	79	0.14			0	0	0	0.184	0.204	0.041	2	2
+10063	397	2	1865-10-30	sent	930 am GD Sheldon Ft Monroe ---- Wash Oct 30 1865	Winslow Whitney Phillips Emma for point	No. 1  12.30 PM	20	0.15		10064	0	0	0	0.143	0.214	0.071	2	9
+10064	398	1	1865-11-21	sent	John Horner N. Y.  Washington D. C. Nov. 21. 1865	Viola peach for John Odell Care of J.	No 10	33	0.33			2	0	0	0.36	0.32	0.12	1	1
+10064	398	2	1865-11-14	sent	J. W. Walleck Inds  Washn D.C. Nov. 14. 1865.	Reliance 14th for Morton Gov Dresden	No 6 card	75	0.09		10065	0	0	0	0.167	0.194	0.028	2	clear
+10065	399	1	1865-11-23	sent	Emory Cobb Chicago Ill  Wash Nov 23 1865	Washn Nov twenty three for Major	sig US Grant Lieut Genl end	60	0.18			0	0	0	0.188	0.281	0.0	2	1
+10065	399	2	1865-12-02	sent	Bodle Balto  Wash Dec 2 1865	Grapes Dec flank Helen for Shelby Hand cock	receipt youth Ed Town send asst Barton end	72	0.24			3	0	0	0.292	0.312	0.146	2	1
+10066	400	0	1865-12-02	sent	AH Caldwell Richmond Va  Wash Dec 2 1865	Happy Pharoah Arnold <unclear>Laurie</unclear> for Spunky spark	spark yawl Ed Town send asst basket	51	0.39			0	3	0	0.41	0.487	0.026	2	2
+10066	400	1	1865-12-02	sent	R OBrien Raleigh  Dec 2 1865	Webster Woods Dawson Sarah for Hornet T H	Advocate Galway Mastiff broach roanoke warm & pleasant	47	0.28			1	1	0	0.231	0.333	0.128	2	2
+10066	400	2	1865-12-02	sent	JR Gilmore Charleston  Washn Dec 2 1865	Wheel Snyder Harding for Boil transact Sister bronze	chandler leveled fulcrum Judge Advocate galway Master Broach	40	0.2			0	0	0	0.125	0.219	0.031	2	9

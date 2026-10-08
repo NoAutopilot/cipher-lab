@@ -2123,3 +2123,43 @@ Read so far: ten of ten rows filed (E160-E169); in print: E161, E166 (news only)
 - [x] image-check: two of nine pages read whole (5802, 5584); seven transcription only.
 - [x] retry: none needed.
 Verdict: keep going: 4 internal gaps, cheapest next: a battery-name phrase search in OR I/42 pt 3 for E160/E162, ~$0.6
+
+## MS18-PRE (8 Oct 2026, account 1, for LANE LEDGER)
+
+A pre-filter, not a reading: nothing was decoded; a ranking with stated error rates, not a verdict (rule 10). Worker MS18-PRE, 18:13-19:3x UTC by `date -u`. Same code as FM-PRE
+(`fortmonroe/fm_*.py` run with `FM_LEDGER=ms18`, which points every stage at object 10074 and writes to `ms18/`; the shared scripts gained that switch, a `title_dm` title override in
+`entries_mssEC19.load_pages`, and an MS18-only year/label repair), plus `ms18/ms18_known.py`, `ms18_power.py`, `ms18_gb.py`. Intake gate: `partial (line 3)`, exit 0 (pasted in the lane brief).
+
+**Prior-work checks (by hand; `tools/prior_work.py` is not used by this brief).** (1) Own work: grep of `10074` / `mssEC 18` in NOTES, AUDIT, `ls3_r18_readings.md`, status.json and ROOM -- 13 entries of this ledger are already
+filed (E78, N2-BP, N2-BQ, O9-BA, O9-BB on pp.48-51; E79 p.146; E80 p.189; E81 p.192; E82 p.200; E83 p.235; E84 p.262; E86 p.282; O9-BC p.362); rows on the same leaf and day are tagged `filed:<id>` and held out of the reader list (24 rows). RUN6-ECK
+(5 Oct) and LS3-R18 (8 Oct) read only 21-22 Apr 1864. (2) Leaf and neighbours (images, glosses, clerk's copies): NOT run -- no image was opened; unchecked. (3) Holder: the Huntington volunteer
+transcription is the input; catalogue record `sources/mssEC18_obj10074.json` (title "Sent Jany 21, 1864 Dec. 7, 1865", 413 images). Tomokiyo caches and the two solver repositories: unchecked. (4) Editions: OR ser. I vols 33, 36 (3 pts), 40 (3), 42 (3), 43 (2), 44, 45 (2), 46 (3), 51 (2),
+ser. II vols 6-8, ser. III vols 4-5, ORN I vols 9-11, Butler's Private and Official Correspondence vols 3-5 (31 IA `_djvu.txt` volumes, scratch only; ORN I/12 not fetched; OR II/6 gave HTTP 500 once, one retry, 200) with a positive control (below);
+Google Books snippet (country=US, key, positive control "crossing of the Rapidan effected": 31 volumes, 7 snippets containing the phrase) on 186 clean 1864 rows. Basler's Collected Works of Lincoln and the Papers of U. S. Grant volumes are reached only through that
+Google snippet index; there is no full-text route to them here: unchecked beyond it.
+
+**Harvest** (the hdl token, 18:14-18:21 UTC): `dmGetCompoundObjectInfo/p16003coll11/10074` (413 pages) and nine `dmQuery/p16003coll11/CISOSEARCHALL^Page^all^and/title!transc/nosort/1024/<start>/0/0/1/0/json` pages (9,026 hits for "Page" in the collection; the
+pages of object 10074 are selected by `parentobject`), 11 requests, 400 of 413 saved to `sources/mssEC18/p<pointer>.json` (title, transcription). The 13 not saved are the cover, fly leaves and spine (pointers 9661-9666, 10067-10073: no "Page" title).
+The 11 leaves already on disk (9710-9720) were kept and given `title_dm` and `transc` fields (text identical to the bulk copy after whitespace folding). Later hdl use: 271 `dmQuery` full-text requests (below). Total hdl: 282. Other hosts: archive.org downloads 32 (31 volumes + one retry),
+be-api 300, Google Books 187 (186 rows + control).
+
+**Entries.** `ms18/entries-ms18.tsv`: 804 entries (every entry `sent`; the ledger is the Sent book), segmented by the shared segmenter with the header labels read: 26 headers carry a book label ("(No 2)", "(1)", "(9)"), a better book guide than the token share
+(the 1865 band is non-selective against its control, LS3-K) -- `hdr_mark` column. One shared-regex bug found and repaired for this ledger only: "No 2" in a header parsed as 2 Nov (13 rows dated 1864/1865-11-0x); `fm_entries.py` now strips the label before dating.
+**Year change:** 2 Jan 1865 first appears on p.261 (pointer 9927). 1864 = pages 1-260 (about 510 entries dated 1864); **Jan-Apr 1865 = pages 261-336 (pointers 9927-10002), 165 entries** -- the book for those months is not in hand (LS3-K): listed, not scored, no network budget spent (`book-not-in-hand`, 161 rows after the filed-tag split);
+May 1865 begins on p.336. Undated (header unparsed): 5 rows.
+
+**Known-answer control (rule 3), run before the verdicts, same code, nothing tuned after it.** Located without the cover statistic (`ms18_known.py`: every ledger entry that is clear in the ledger, >= 20 words, 43 entries; an exact 8-word run in the normalised print text): 12 entries
+located (pointer/entry: 9670/1, 9672/0, 9704/1, 9716/2, 9758/1, 9960/2, 9962/1, 9967/1, 9969/2, 10025/2, 10037/1, 10064/2; printed in OR I/33, Butler Corr. 3, OR II/7, ORN I/9, OR I/43-1, OR I/46-2, OR II/8, OR III/5; three read by eye against the print: 9670/1 Halleck to Kelly, OR I/33; 9672/0
+Halleck, Butler Corr. 3 citing OR I/33 p.518; 9716/2 Fox to Ericsson, ORN I/9) -- **12/12 flagged print-likely** (`ms18/ms18_control.txt`). Shuffled null (every entry's tokens shuffled, seed 20261008): **0/804** reach cover >= 7 (max 6) against 302/804 (0.376) for the real entries (193/424 on entries >= 60 words vs 0/424).
+Power on keyed entries (`ms18/ms18_power.txt`; the 12 are clear, so a fraction p of each one's tokens is replaced by a non-word, 5 seeds): recall 1.00 (p 0), 0.97 (0.3), 0.65 (0.5), 0.13 (0.7). The median plain share of keyed ledger rows >= 40 words is 0.74 by the code-column count, i.e. p about 0.26; but a keyed entry whose code
+words are outside the three key tables counts as plain, so the true p is higher and the filter's recall on keyed rows lies between 0.97 and 0.65. **A clean row can still be in print; the miss rate on a heavily keyed entry is real.** Limit of the control: 12 entries, all clear, 9 of them 1864 and 3 Jan-Mar 1865 or later.
+Date-repair rerun after the control: prefilter output unchanged in verdicts (one row's naive-Bayes `best_book` flips between runs: set-ordering ties, 9966/3, a book-not-in-hand row).
+
+**Results** (`ms18/prefilter-ms18.tsv` offline; `net-ms18-ia.tsv` be-api phrase, 271 rows run; `net-ms18-hdl.tsv` Huntington full text, 276 rows; `net-ms18-gb.tsv` Google Books, 186 rows; `prefilter-ms18-final.tsv` merged; `clean-ms18.tsv` the reader list). Offline verdict counts of 804:
+clean 449, print-likely 263 (plain tag; 302 rows carry it counting the joined tags), clear-sibling 27, mssEC25-dup 20 (a cipher copy of an entry in the Fort Monroe ledger, mssEC 25), dup 2, short 4, mssEC19-dup 0 (14 near-neighbours with >= 3 shared rare tokens on the same day, 2 of them to entries already read, recorded in `dups`). Network checks on the clean rows with >= 40 words and not in Jan-Apr 1865 (276):
+be-api phrase 15 print hits; Huntington full text 6 clear-sibling/copy hits (4 y, 2 y+copy); Google Books 6 under PF4's phrase rule (<= 20 volumes in the index and a war-records/correspondent title: 9677/0, 9701/1, 9770/0, 9797/0, 9879/1, 9893/2; every other Google hit was a generic phrase in unrelated or numerous volumes and is ignored).
+**Final:** clean 244 rows (1864: 180, May-Dec 1865: 63, undated: 1), print-likely 202 + 6 (gb), clear-sibling 28, mssEC25-dup 14 (+ with print-likely 18), filed 24, book-not-in-hand 161, clean-offline (< 40 words, Huntington check not run) 89. Reader order (`clean-ms18.tsv`): book guess by token share (No. 1 first, then 9, then 2), lowest print cover first,
+longest first. Clean 1864 rows by guessed book: No. 1 89, No. 2 65, No. 9 26; 9 clean rows carry a header label (6 labelled 1, 3 labelled 2: the guess agreed on 9 of 9). Book guess for 1865 rows is not selective (LS3-K); rows of May 1865 onward are listed with it, not trusted by it.
+
+**Not found / limits.** The Huntington check found no cipher copy of a mssEC 19 entry (0 mssEC19-dup): the two ledgers hold different telegrams, as RUN6-ECK saw for 21-22 Apr. Rows under 40 words were not sent to the network checks. Whether a row is on the Huntington site as a different transcription of the same leaf (the same volunteer text twice) was not tested.
+Rule 10: nothing here is a novelty statement. Next for a reader: take `clean-ms18.tsv` 1864 rows in order; the unit price of a reader row is the LS5-R1 rate.
