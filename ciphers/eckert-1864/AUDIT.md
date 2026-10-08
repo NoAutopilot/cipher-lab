@@ -4174,3 +4174,109 @@ account 2, and D4-V2AI/D4-V2AJ, account 4). Nothing decoded. The bodies come fro
 Requests: be-api.us.archive.org 23 (tool) + 7 (retry; 3 still 502); www.googleapis.com 23 (tool, 3 HTTP 503) + 23 (snippet pass);
 api.openalex.org 23; archive.org 6 (djvu); www.loc.gov 10 searches (3 errors: 503 twice, one HTTP/2 stream error); tile.loc.gov 21
 word-coordinates pages; hdl.huntington.org 0 (cached). Gaps of 1.5-3 s between requests to the same host.
+
+## AUDIT (FV-LS4-R1b)
+
+Verifier FV-LS4-R1b (account 2, for LANE ST-LEDGER-4), 8 Oct 2026, 17:11-17:4x UTC by `date -u`; a separate session from the reader
+LS4-R1b (account 1), not protecting its conclusions. Scope: **E95, E96, E97, E98, E100, E101** (ciphertext.txt, Cipher No. 1, key.md);
+N1 confirmation by script of **E99**. Nothing decoded beyond re-running `decode.py --check` (exit 0) and looking code words up in key.md.
+Key source for every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. `tools/prior_work.py` does not exist:
+the prior-work checklist (.claude/briefs/prior-work-step.md) was run by hand, one line per check in section 1.
+
+### 1. Prior-work checklist and step 0 (own transcription first, the LS4-V1a lesson)
+- (1) Our own work: E95-E101 appear only in LS4-R1b's section, ciphertext.txt and reading.md; no AUDIT, status.json or SO row before this one;
+  no live ROOM claim on them (ROOM.md last lines, 17:11 UTC).
+- (2)+(3) The Huntington's own public transcription of each pointer (sources/mssEC19/p<pointer>.json, read before anything else):
+  - **9097 (E95)**: "Lucy Gallant for Hon H W Hoffman unity Come over to night and c me A Lincoln" -- the whole body is in clear; the only
+    code words are the time and date words and "unity" (period). **Step 0 should have stopped it.**
+  - **9125 (E98)**: "can not you hold on for Pebble or Pension days until our vessel reaches you Pekin now on the way yoke G V. Fox asst
+    Buxton" -- the body is in clear except the numerals 3 and 4 (and the comma word): at most one content code word. **Step 0 should have
+    stopped it** (the LS3-V18b section 5 line: body in clear in the holding archive's public transcription, at most one content code word = N1).
+  - **8922 (E101)**: "Do not believe the news papers There is no design to put Shelby Buell again in Pontiac in Adonis Brutus" -- frame clear,
+    three content code words (General, command, Tennessee) and the signature (Brutus = Secretary of War). Not N1 by the transcription alone;
+    see section 2.
+  - **9116 (E96)**: "Pandora William Hamilton is wicked on what seems trust worthy evidence asa walnut agent in Baptism zebra If there are
+    several persons answering tooth name care mustby exercised target the wesley plug youth Insanity" -- frame clear; the substance words are
+    code: Colonel, reported, Rebel, Baltimore, Right, signature Dana.
+  - **9119 (E97)**: "Unfortunately the Evidence in our possession furnishes No personal description torch walnut Agent at Gaul yoke Image
+    Asst Infant" -- frame clear; Rebel and St Louis (and addressee Rosecrans, signature Dana) are code. Two content code words: not N1 by the line.
+  - **8921 (E100)**: "Send the Nelly Pantz if in Banditti to Annapolis fully coaled & wat-ered to whimper colored whisky to Hilt-on Head &
+    thence to such point as maxim may order on her whiting to him Zodiac She should leave persia the Storm is over ..." -- much is clear; the
+    content code words are Baltimore, transport, troops, Gillmore, reporting, as soon as, and the signature (Quartermaster General).
+  - Same-leaf siblings: 9097's first entry (Sampson, "Send your dismounted [cavalry] ... for remounts") is printed in OR I/43 pt 2 (be-api
+    positive control below), not E95's text; 8921's sibling is E62 (already read); 9119's first and third entries (Horner, Beckwith) are other
+    telegrams. The margin cross-reference on 9119 ("See page 224 Book 1 + page 226 Book 2") is not a rendering.
+- (4) Editions by date and correspondent: section 3.
+- **Image** (rule: three entries word for word, the longest included): 2400 px IIIF images of 9116, 9119, 8921 (3 requests, scratch, not
+  committed); crops cut here: `python3 tools/iiif_lines.py --image $S/img/p9116.jpg --out $S/crops/9116 --prefix p9116 --region 0,870,2400,740
+  --lines-per-crop 3 --max-width 1600 --prominence 20 --ink 200` and the same for 9119 `--region 0,950,2400,520`; the pencil-marked 8921 by a
+  plain PIL block crop `(150,200,2250,1340)` at 1800 px (the line finder failed there for the reader too). Word for word, **E96** (7 lines),
+  **E97** (4 lines) and **E100** (the longest, 10 lines) agree with ciphertext.txt and the volunteer text. E100's word is spelled "whiskey"
+  on the image (key row Whisky = Troops); it stays M, as the reader graded it. The later pencil superscripts on 8921 ("bad", "late", "over",
+  "man", "at", "50", "lose", numerals) are single words, not a rendering; not used.
+
+### 2. Located in print / in the holding archive's clear text
+| ID | where | how confirmed |
+|---|---|---|
+| E95 (Lincoln to Hon. H. W. Hoffman, Baltimore, 15 Oct 1864 5 PM) | **Ida M. Tarbell, The Life of Abraham Lincoln, vol. 4** (appendix of Lincoln's War Department telegrams): "Hoffman, Baltimore, Md.: Come over to-night and see me. A. Lincoln" (four IA scans: `lifeofabrahamliv04tarb`, `tarbellslifeoflincoln04tarbrich`, `lifeofabrahamlin04tarbrich`, `lifeofabrahamlinv4tarb`); and the body is in clear in the Huntington transcription of 9097 | be-api full text, quoted phrase "come over to-night and see me. A. Lincoln" (46 hits); page not read. **N1.** Basler CW vol. 8 not opened (not needed for the class). |
+| E98 (G. V. Fox to Butler, 19 Nov 1864 8 PM) | Huntington public transcription of 9125: body in clear except the numerals 3/4 | step 0 (section 1). Not found in ORN I/11 (IA `officialrecordso0011unse`, local grep "our vessel reaches", "three or four days until"), OR I/42 pt 3 (`warofrebellion423unit`), Butler's Private and Official Correspondence vol. 5 (cached), be-api "until our vessel reaches you" (0). **N1** by the holding archive's clear text. |
+| E99 (Halleck to Rosecrans, 26 Nov 1864) | **OR ser. I vol. 41 pt 4 p.693**: "Washington, D. C., November 26, 1864 -- 12.30 p. m. Major-General Rosecrans: All troops sent from Missouri must report to General Thomas, any other orders to the contrary notwithstanding. H. W. Halleck, Major-General and Chief of Staff." (the ledger's time word Harrow/12.30 agrees) | IA `warofrebellion014104rootrich` djvu (scratch), normalized grep; page from the running head ("CHAP. LIII.] CORRESPONDENCE, ETC.--UNION. 693"). **N1 confirmed**, the reader's location stands, page added. |
+| E101 (Stanton to Gov. Andrew Johnson, Nashville, 6 Apr 1864) | **The Papers of Andrew Johnson, vol. 6 (1862-1864)**, editorial text/note: "Stanton assured the governor that there was 'no design to put General Buel again in command in Tennessee'" | be-api full text restricted to `papersofandrewjo0006unse` (positive controls "Nashville", "Buell" each answer the volume); quoted phrase "no design" -> this snippet; page not read (lending copy). The print spells "Buel", which is why the reader's unrestricted phrase "no design to put General Buell" returned 0. The decoded clause (General, command, Tennessee, from Stanton) is in print. **N1** (quoted in print; the opening "Do not believe the newspapers" not seen in the snippet). |
+
+### 3. Search log, entries not located (E96, E97, E100; 8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| Holding archive, CONTENTdm full text (p16003coll11, `CISOSEARCHALL`, sixth segment 1) | "Hoffman Lincoln", "Pentz", "Buell newspapers", "Hamilton Baltimore agent", "personal description agent", "Hamilton rebel", "Buell Johnson", "vessel Fox Butler", "William Hamilton" | only the entries' own pages for E95, E96, E97, E101; "Pentz": four 1863 entries (7307, 7308, 4328, 9488: the Nelly Pentz ordered as a troop transport, June-July 1863), not this order; "Hamilton rebel": 1862-63 entries about other Hamiltons; no clear reply or sibling stating E96, E97 or E100 |
+| OR / ORN by date, local djvu grep, normalized | I/41 pt 4 (`warofrebellion014104rootrich`, Nov 1864: E97, E99), II/7 (cached `warofrebellion0207rootrich`, prisoners and state, Nov 1864: E96, E97), I/43 pt 2 (cached, Middle Dept Nov 1864: E96), I/42 pt 3 (`warofrebellion423unit`: E98), I/32 pt 3 (`warofrebellion013203rootrich`: E101), I/35 pt 2 (cached, Dept of the South Apr 1864: E100), III/4 (`cu31924079575373`: E100), ORN I/11 (`officialrecordso0011unse`: E98), plus the whole cached print-check set (Butler Corr. IV-V, Dana's Recollections, Bates's Lincoln in the Telegraph Office, Seward) | phrases "trustworthy evidence", "william hamilton", "personal description", "pentz", "coaled and watered", "do not believe the newspapers", "buell again", "no design to put", "our vessel reaches", "hoffman, baltimore": only E99 (above); nothing for E96, E97, E100 |
+| IA full text (be-api fts, no identifier; positive control "send your dismounted cavalry to cavalry depot" -> OR I/43 pt 2, four scans) | "Colonel William Hamilton" (402, unrelated), "furnishes no personal description" (0), "no personal description of the rebel agent" (0), "storm is over and the sea moderates" (0), "Nelly Pentz" (14: 1863 press only), "fully coaled and watered" (29, railway books), "to Annapolis fully coaled" (0); "seems trustworthy evidence" and "Hamilton is reported" answered 502 twice each | E96 (two phrases), E97, E100 not located |
+| Papers of U. S. Grant, Basler | not searched for E96, E97, E100: none is to or from Grant or Lincoln (Dana to Sampson/Rosecrans; the QMG to Vinton) | -- |
+| Press of the day | loc.gov Chronicling America JSON, "william hamilton rebel agent baltimore" (Nov 1864) and "nelly pentz" (Apr 1864): the date filter was not applied by my query form; two Nov 1864 page titles, not read | effectively unsearched: say so |
+| Not searched / unreachable | Dana papers; NARA RG 92 (QMG telegrams sent) and RG 107; OR II/8; Google Books; HathiTrust; OpenAlex/S2/CORE (cap); JSTOR (rows appended, never blocking) | unread |
+
+### 4. Grades and classification (key `period` for all)
+`depth_pct` = H / (H + I + M) over the message's code words (tail fillers excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E95 Lincoln to Hoffman, 15 Oct 1864 | **N1** | known: Tarbell vol. 4; body clear in the transcription of 9097 | D1 | 100 (3 H of 3, time/date/period only) | be-api phrase; transcription |
+| E96 Dana to Sampson (Baltimore), 5 Nov 1864 11 PM | **N3** (weak) | unknown: frame clear in the transcription of 9116, substance in code | D2 | 85.7 (12 H of 14; William, persons M) | image, 7 lines; code clause |
+| E97 Dana to Rosecrans, St. Louis, 7 Nov 1864 | **N3** (weak) | unknown: frame clear in the transcription of 9119; Rebel and St Louis in code | D2 | 100 (12 H of 12; "rainy" filler unread) | image, 4 lines; code clause |
+| E98 Fox to Butler, 19 Nov 1864 8 PM | **N1** | known: body clear in the transcription of 9125 (numerals 3/4 only) | D1 | 90.9 (10 H of 11; Fox M) | transcription read against ciphertext.txt |
+| E99 Halleck to Rosecrans, 26 Nov 1864 | **N1** (confirmed) | known, OR I/41 pt 4 p.693 | -- | -- | script grep |
+| E100 QMG to Capt. Vinton, Baltimore, 5 Apr 1864 3.30 PM | **N3** (weak) | unknown: about two thirds clear in the transcription of 8921 | D2 | 87.5 (14 H of 16; Nelly, colored/whiskey M) | image, 10 lines (longest); code clause |
+| E101 Stanton to Andrew Johnson, 6 Apr 1864 | **N1** | known: quoted in The Papers of Andrew Johnson vol. 6 | D1 (not ruled further: N1) | 83.3 (5 H of 6; date word M) | be-api restricted, snippet |
+
+- **Code clauses (depth bar: a value reading sensibly in >= 2 independent contexts).** E96: Walnut = Rebel reads in E1 (OR I/33 p.643, word for
+  word) and E96; Baptism = Baltimore in E8 (to Wallace at Baltimore) and E96. E97: Gaul = St Louis reads in E6 (OR I/32 pt 3 p.498, "can be
+  mounted at St Louis") and E97; Walnut = Rebel as for E96 (E96 and E97 are one affair, so E97 rests on E1 and E6). E100: Whimper = Transport
+  reads in E7 (OR I/36 pt 2 p.587, "transport these men up the James") and E100; Banditti = Baltimore in E92 ("the port of Baltimore", LS4-V1a)
+  and E100. Each depth sentence below depends on those values.
+- **D2, not D3**, for E96, E97, E100: no non-statistical external check (no clear reply or print of the substance found) and no AD
+  computation here. The reader's matched control (other two books and a shuffled No. 1: 0 clauses each, `ls4_r1b_controls.txt`) is on file.
+- **N3 (weak) for E96, E97, E100**: no prior plaintext or decipherment located after the logged search. Not N4: the press of the day
+  (effectively unsearched), Dana's papers, NARA RG 92/107, OR II/8, HathiTrust and JSTOR are unread. Weak because the frame of each is in clear
+  in the Huntington's public transcription. Safe sentence (each): "Read at grade H with the period Cipher No. 1 book; part of the message is in
+  clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official
+  Records (by date and correspondent), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026)." Unsafe:
+  "first", "unpublished", "never printed", any word implying the clear words were not public.
+- Depth sentences (D2, written from the reading, checked against the derived block in reading.md):
+  **E96** "At 11 PM on 5 Nov 1864 Assistant Secretary of War Dana telegraphs to Baltimore that a Colonel William Hamilton is reported, on what
+  seems trustworthy evidence, as a Rebel agent in Baltimore, and warns that if several men answer to the name care must be taken to get the right one."
+  **E97** "On 7 Nov 1864 Dana tells General Rosecrans at St. Louis that the evidence the War Department holds gives no personal description of
+  the Rebel agent at St. Louis."
+  **E100** "At 3.30 PM on 5 Apr 1864 the Quartermaster General orders Captain Vinton at Baltimore to send the steamer Nelly Pentz, fully coaled
+  and watered, to Annapolis to carry troops to Hilton Head and on to wherever General Gillmore directs, leaving as soon as the storm is over."
+- Grades as the reader's by-hand table (E96 H 12 M 2; E97 H 12; E100 H 14 M 2), checked against the image; no grade moved.
+
+### 5. Postmortem
+- The reader's step 0 missed **E95 and E98** (bodies in clear in their own transcription) -- the fourth time (D2V-E74, LS3-V18b, LS4-V1a, here).
+  Both were read, filed and sent to a verifier at about 0.55 + 0.8 each.
+- **E101 shows a second miss shape**: a print that spells a name differently ("Buel") defeats an exact-phrase pass over the decoded text.
+  Restricting be-api to the recipient's edition and searching a short distinctive fragment without the name ("no design") found it. For
+  telegrams to a governor or cabinet officer, search the recipient's papers by fragment, not only the sender's sentence.
+- Corrections to LS4-R1b's section (a note appended there): E95, E98 N1 (clear in their own transcription; E95 also in Tarbell vol. 4);
+  E101 N1 (Papers of Andrew Johnson vol. 6); E99's page is OR I/41 pt 4 p.693.
+- Rows: status.json one result row each for E96, E97, E100 (N3, D2), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E96,
+  SO-ECKERT-E97, SO-ECKERT-E100 with prompts in second-opinions/; JSTOR-QUEUE.tsv 6 rows (families i and ii). Requests: hdl.huntington.org
+  10 CONTENTdm searches (one dropped connection, not retried) + 3 images, >= 3.2 s apart; archive.org 6 djvu (one a wrong guess, vol. 39 pt 3,
+  discarded) + 1 advancedsearch; be-api 29 (10 answered 502, each retried at most once); www.loc.gov 2. No 429/403.

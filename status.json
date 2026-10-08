@@ -6893,6 +6893,129 @@
       },
       "depth_check": "FAM-MANTV: cipher clause fails (longest run 8 vs AD 138); code clause 198 Stanislas 2 contexts, both windows below shuffle p95 (tool splices neighbouring runs on a clear-text leaf, flagged); external agreement with Colyer's printed letters on 3 facts (D3/D4 element only)",
       "decode_status": "Non-decrypted"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-LS4-R1b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 85.7,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "FV-LS4-R1b verifier (account 2)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: C. A. Dana to Baltimore, 5 Nov 1864 11 PM, Colonel William Hamilton reported as a Rebel agent in Baltimore (E96)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
+      "gap": "N3 (weak): frame clear in the public transcription of 9116; press of the day, Dana papers, NARA RG 107, OR II/8 and JSTOR unread",
+      "phrases": [
+        "Huntington mssEC 19 p.222, pointer 9116, E96"
+      ],
+      "document_id": "Huntington mssEC 19 p.222, pointer 9116, E96",
+      "documents": [
+        "Huntington mssEC 19 p.222, pointer 9116, E96"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "12 H of 14 code words (William, persons M)",
+      "unresolved_spans": "none",
+      "reading_version": "LS4-R1b 8 Oct 2026 (reading.md), grades as checked in AUDIT (FV-LS4-R1b) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS4-R1b)' section 4",
+      "depth_sentence": "At 11 PM on 5 Nov 1864 Assistant Secretary of War Dana telegraphs to Baltimore that a Colonel William Hamilton is reported, on what seems trustworthy evidence, as a Rebel agent in Baltimore, and warns that if several men answer to the name care must be taken to get the right one.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS4-R1b); image checked, all 7 lines (FV-LS4-R1b); code clause: Walnut = Rebel reads in E1 and E96, Baptism = Baltimore in E8 and E96; no external check",
+      "depth_note": "12 H of 14 code words (William, persons M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-LS4-R1b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "FV-LS4-R1b verifier (account 2)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: C. A. Dana to Rosecrans, St. Louis, 7 Nov 1864, no personal description of the Rebel agent at St. Louis (E97)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
+      "gap": "N3 (weak): frame clear in the public transcription of 9119; press of the day, Dana papers, OR II/8 and JSTOR unread",
+      "phrases": [
+        "Huntington mssEC 19 p.225, pointer 9119, E97"
+      ],
+      "document_id": "Huntington mssEC 19 p.225, pointer 9119, E97",
+      "documents": [
+        "Huntington mssEC 19 p.225, pointer 9119, E97"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "12 H of 12 code words",
+      "unresolved_spans": "none",
+      "reading_version": "LS4-R1b 8 Oct 2026 (reading.md), grades as checked in AUDIT (FV-LS4-R1b) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS4-R1b)' section 4",
+      "depth_sentence": "On 7 Nov 1864 Dana tells General Rosecrans at St. Louis that the evidence the War Department holds gives no personal description of the Rebel agent at St. Louis.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS4-R1b); image checked, all 4 lines (FV-LS4-R1b); code clause: Gaul = St Louis reads in E6 and E97, Walnut = Rebel in E1 and E97; no external check",
+      "depth_note": "12 H of 12 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-LS4-R1b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 87.5,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "FV-LS4-R1b verifier (account 2)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Quartermaster General to Capt. Vinton, Baltimore, 5 Apr 1864 3.30 PM, send the Nelly Pentz to Annapolis to carry troops to Hilton Head (E100)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
+      "gap": "N3 (weak): about two thirds clear in the public transcription of 8921; NARA RG 92, the press of the day and JSTOR unread",
+      "phrases": [
+        "Huntington mssEC 19 p.29, pointer 8921, E100"
+      ],
+      "document_id": "Huntington mssEC 19 p.29, pointer 8921, E100",
+      "documents": [
+        "Huntington mssEC 19 p.29, pointer 8921, E100"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "14 H of 16 code words (Nelly, colored/whiskey M)",
+      "unresolved_spans": "none",
+      "reading_version": "LS4-R1b 8 Oct 2026 (reading.md), grades as checked in AUDIT (FV-LS4-R1b) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS4-R1b)' section 4",
+      "depth_sentence": "At 3.30 PM on 5 Apr 1864 the Quartermaster General orders Captain Vinton at Baltimore to send the steamer Nelly Pentz, fully coaled and watered, to Annapolis to carry troops to Hilton Head and on to wherever General Gillmore directs, leaving as soon as the storm is over.",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS4-R1b); image checked, all 10 lines, the longest (FV-LS4-R1b); code clause: Whimper = Transport reads in E7 and E100, Banditti = Baltimore in E92 and E100; no external check",
+      "depth_note": "14 H of 16 code words (Nelly, colored/whiskey M)"
     }
   ],
   "lanes": [
