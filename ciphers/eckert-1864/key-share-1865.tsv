@@ -1,0 +1,285 @@
+# LS3-K (8 Oct 2026): share of non-function tokens in the code-word columns of key.md (No.1), key-no2.md (No.2), key-no9.md (No.9). group 1865 = unread priority-1 rows, words>=30; control-E/N/O = already-read entries. verdict: best-book share inside that book's control p10-p90. Regenerate: python3 key_share_1865.py --write
+pointer	page	entry_on_page	read_id	header	group	n_nonfunc	share_no1	share_no2	share_no9	best_book	margin	verdict
+8893	1	0	O9-E	Sheldon F.  Washn Jany 27th 1864	control-O	17	0.412	0.353	0.353	1	0.059	
+8894	2	0	O9-G	Geo D. Sheldon  Jany 30th 1864	control-O	41	0.317	0.341	0.268	2	0.024	
+8895	3	0	O9-A	Capt J. P. Willard  Washn Jan 30. 1864.	control-O	36	0.278	0.333	0.250	2	0.056	
+8895	3	1	O9-B	Baldwin  Washn Feby 1st 1864	control-O	22	0.227	0.227	0.227	1	0.000	
+8896	4	1	N2-AD	Lt W. B. Kelly  Washn Feby 1st 1864	control-N	33	0.394	0.364	0.333	1	0.030	
+8896	4	2	O9-C	Caldwell  Washn Feby 1st 1864	control-O	20	0.550	0.750	0.150	2	0.200	
+8896	4	3	O9-D	Geo Baldwin Balto  Washington Feby 1st 1864	control-O	15	0.467	0.467	0.333	1	0.000	
+8897	5	0	O9-H	Geo. W. Baldwin Balto.  Washington Feby 1st 1864	control-O	24	0.542	0.500	0.458	1	0.042	
+8897	5	1	O9-I	Washington Feby 2nd 1864	control-O	21	0.286	0.238	0.190	1	0.048	
+8898	6	0	O9-J	Lawrence Harpers Ferry  Washington Feby 3rd 1864	control-O	42	0.262	0.333	0.214	2	0.071	
+8899	7	0	O9-K	G. D. Sheldon Ft Monroe  Washington D. C. Feby 5th 1864	control-O	32	0.312	0.344	0.281	2	0.031	
+8900	8	1	N2-AK	Caldwell HdQrs AP  Washington Feby 11th 1864	control-N	16	0.375	0.500	0.125	2	0.125	
+8902	10	1	N2-N	S. H. Beckwith "2"  Washn Feby 16th 1864 330 P. M	control-N	31	0.419	0.516	0.097	2	0.097	
+8903	11	0	N2-AF	S. H. Beckwith "2"  Washn Feby 17th 1864 1230 P. M	control-N	56	0.446	0.500	0.107	2	0.054	
+8903	11	1	O9-L	T. J. Lawrence  Washn Feby 18th 1864 110 PM	control-O	32	0.250	0.250	0.219	1	0.000	
+8906	14	1	N2-O	A. H. Caldwell (2)  Washn Feb 29th 1864 3 P. M.	control-N	18	0.611	0.667	0.167	2	0.056	
+8906	14	2	N2-AG	S. H Beckwith (2)  Washn Feby 29th 1864 3.30 P. M	control-N	20	0.400	0.650	0.200	2	0.250	
+8907	15	0	O9-AI	Br Gen Geo Wright San Francisco  Washn Mar 1st 1864 230 PM	control-O	58	0.172	0.259	0.103	2	0.086	
+8907	15	1	O9-AJ	Caldwell "1"  Wash. Mar. 4. 1864	control-O	21	0.333	0.238	0.048	1	0.095	
+8908	16	0	E1	Geo. W. Baldwin (1)  Washn Mar 5th 1864	control-E	22	0.500	0.455	0.227	1	0.045	
+8908	16	1	E2	Geo W. Baldwin (1)  Washn Mar 5th 1864 7.40 P. M	control-E	29	0.517	0.345	0.103	1	0.172	
+8908	16	2	E3	Capt Sam Bruch ("1")  Washn Mar 6th 1864 1130 AM	control-E	33	0.394	0.364	0.091	1	0.030	
+8909	17	0	O9-O	John Horner (9)  Washington D. C. March 6, 1864	control-O	29	0.276	0.276	0.172	1	0.000	
+8909	17	1	N2-AH	A. H. Caldwell (2)  Washn Mar 7th 1864 1030 am	control-N	49	0.408	0.510	0.102	2	0.102	
+8910	18	0	N2-AI	A. H. Caldwell  Washn Mar 8th 1864. 330 PM	control-N	82	0.427	0.463	0.073	2	0.037	
+8910	18	1	N2-AJ	A H Caldwell  Washn Mch 9" 1864 12. noon	control-N	12	0.833	0.917	0.333	2	0.083	
+8911	19	0	O9-P	John Horner 9  Washn Mar 10th 1864 830 P. M	control-O	89	0.124	0.213	0.079	2	0.090	
+8912	20	0	O9-Q	Davenport or Stevens (9)  Washn Mar 13th 1864	control-O	60	0.250	0.267	0.217	2	0.017	
+8913	21	0	O9-R	R F. Clarry (9)  Washn Mar 13th 1864	control-O	23	0.391	0.522	0.391	2	0.130	
+8913	21	1	N2-V	S. H. Beckwith (2)  Washn Mar 14th 1864	control-N	46	0.457	0.587	0.087	2	0.130	
+8913	21	2	N2-W	Beckwith "2"  Wash. D. C Mar. 15. 1864	control-N	24	0.458	0.583	0.167	2	0.125	
+8914	22	0	N2-BN	Coldwell "2"  Wash D. C. Mar. 16.1864	control-N	43	0.209	0.372	0.070	2	0.163	
+8914	22	2	N2-X	S. H. Beckwith (2)  Mar 18th	control-N	29	0.276	0.483	0.103	2	0.207	
+8915	23	0	N2-P	Geo D. Sheldon (1)  Washington Mar 18th 1864 230 PM	control-N	53	0.340	0.283	0.094	1	0.057	
+8915	23	2	N2-Y	S. H. Beckwith Louisville (2)  Wash'n D. C. Mar 19th 10.30 A	control-N	19	0.421	0.421	0.105	1	0.000	
+8916	24	0	N2-Z	S. H. Beckwith (2)  Wash'n Mar 19th 1864 11 am	control-N	18	0.556	0.667	0.167	2	0.111	
+8916	24	1	N2-AA	Caldwell  Washn Mar. 23rd 1864	control-N	40	0.550	0.625	0.100	2	0.075	
+8917	25	2	N2-AB	S. H. Beckwith (2)  Washn Mar 26th 1864 230 P. M	control-N	48	0.208	0.312	0.104	2	0.104	
+8918	26	0	O9-W	Horner N. Y. "9"  Wash. Mar. 28. 1864	control-O	78	0.179	0.154	0.128	1	0.026	
+8919	27	1	O9-S	J. H. Bunnell (1)  Wash'n Mar 31st 1864 5. P. M	control-O	38	0.500	0.526	0.079	2	0.026	
+8922	30	0	E47	F. S. Van Valkenburg Nashville  Washn Apl 6th 1864	control-E	20	0.500	0.500	0.050	1	0.000	
+8923	31	1	O9-T	John Horner N. Y. (9)  Wash'n Apr 7th 1864 2 P. M	control-O	32	0.281	0.344	0.250	2	0.062	
+8925	33	1	N2-BL	Capt Bulkley New Orleans  Washington D. C. Apr. 8th 1864	control-N	46	0.413	0.457	0.152	2	0.043	
+8926	34	0	N2-AC	S. H. Beckwith (2) Porter treason request  Washn Apr. 8th 33	control-N	56	0.268	0.464	0.071	2	0.196	
+8926	34	1	O9-U	John Horner N. Y. (9)  Wash'n April 8th 1864 4. P. M.	control-O	38	0.237	0.237	0.237	1	0.000	
+8927	35	0	E57	Geo W. Baldwin (1) navy Plan Progress  Washn Apr. 8th 1864.	control-E	27	0.370	0.333	0.148	1	0.037	
+8930	38	1	N2-A	S H. Beckwith "ch" (2)  Washn Apr. 16th 1864 11. AM	control-N	73	0.397	0.589	0.068	2	0.192	
+8932	40	0	N2-AL	S. H. Beckwith "ch" Enlist transfer Wash'n Apr. 18th 1864	control-N	67	0.373	0.567	0.060	2	0.194	
+8932	40	1	E58	Washington Apl 19th 1864	control-E	32	0.406	0.312	0.062	1	0.094	
+8933	41	0	O9-X	John Horner N York.  Washn April 19th 1864	control-O	97	0.155	0.216	0.113	2	0.062	
+8935	43	1	N2-AM	SH Beckwith Culpeper  Washington Apl 19th 1864	control-N	51	0.412	0.490	0.137	2	0.078	
+8936	44	1	N2-AN	Culpeper  Washn Apl 19th 1864	control-N	47	0.298	0.447	0.128	2	0.149	
+8936	44	2	O9-Y	Jno Horner N. Y.  Wash'n D. C April 19th 1864	control-O	56	0.214	0.250	0.196	2	0.036	
+8937	45	0	O9-AH	John Horner N. Y.  Wash'n D. C. Apr. 20th 1864	control-O	87	0.207	0.195	0.161	1	0.011	
+8939	47	1	O9-AA	Horner N. Y.  Washn D. C Apl. 20. 1864	control-O	35	0.114	0.143	0.086	2	0.029	
+8939	47	2	O9-AF	Horner NY  Wash. Apl. 20. 1864	control-O	27	0.222	0.222	0.148	1	0.000	
+8940	48	1	O9-AB	Horner N. Y.  Wash Apl. 21.1864	control-O	38	0.184	0.211	0.184	2	0.026	
+8940	48	2	O9-AG	Geo D. Sheldon (1)  Wash'n D. C. Apr 21st 430 P. M	control-O	24	0.667	0.458	0.167	1	0.208	
+8941	49	0	E4	SH Beckwith Culpeper  Washn Apl 21st 1864	control-E	39	0.333	0.872	0.128	2	0.538	
+8941	49	1	N2-D	Geo D Sheldon  Wash'n Apr 21st 1864 9.30 PM	control-N	33	0.394	0.242	0.061	1	0.152	
+8941	49	2	E5	Geo. D. Sheldon  Wash'n D. C. Apr. 22nd 1864 1045 AM	control-E	33	0.576	0.455	0.152	1	0.121	
+8942	50	0	N2-AO	H. E. Thayer Phila -  Washn April 22nd 1864	control-N	23	0.043	0.130	0.000	2	0.087	
+8942	50	1	O9-AC	N. York  Washn Apl 22nd 1864	control-O	17	0.294	0.353	0.294	2	0.059	
+8943	51	0	O9-V	John Horner N. Y. (9)  Washn Apr 22nd 1864 5 P. M	control-O	36	0.250	0.278	0.222	2	0.028	
+8944	52	0	N2-Q	Caldwell Hdqrs AP  Washn Apl 23rd 1864	control-N	18	0.556	0.556	0.278	1	0.000	
+8944	52	1	N2-AP	Beckwith (2) advance signal  Washn Apr 23rd 415 P. M	control-N	42	0.476	0.524	0.119	2	0.048	
+8945	53	0	N2-AR	S. H. Beckwith (2)  Perry you  Wash'n D. C. Apr. 24th 1864 1	control-N	93	0.333	0.484	0.075	2	0.151	
+8945	53	1	E42	Geo D. Sheldon  Washington D. C. April 25th 1864	control-E	66	0.394	0.303	0.106	1	0.091	
+8946	54	1	O9-AD	Sheldon  Wash Apl 25. 1864	control-O	17	0.353	0.235	0.059	1	0.118	
+8948	56	1	N2-AS	Beckwith  Wash Apl 25. 1864	control-N	49	0.408	0.490	0.041	2	0.082	
+8949	57	1	E22	GD Sheldon  Wash Apl 26th 64	control-E	34	0.382	0.265	0.059	1	0.118	
+8950	58	1	N2-E	Beckwith  Wash Apl 25. 1864	control-N	43	0.465	0.651	0.116	2	0.186	
+8950	58	2	E6	F. S. Van Valkenburg  Washn D. C. Apr 26th 1864	control-E	24	0.625	0.542	0.125	1	0.083	
+8950	58	3	N2-F	Caldwell MC  Wash Apl 27th 64	control-N	25	0.400	0.440	0.120	2	0.040	
+8951	59	1	E59	SH Beckwith  Washn 11 am Apr 27th 1864	control-E	33	0.364	0.485	0.182	2	0.121	
+8951	59	3	N2-AT	S. H. Beckwith (2) Official Remark  Washn Apr 28th 1864 330 	control-N	44	0.500	0.568	0.159	2	0.068	
+8952	60	1	N2-B	S. H. Beckwith  Sumter quarter "ch"  Wash'n Apr. 29th 1864 2	control-N	44	0.409	0.568	0.091	2	0.159	
+8953	61	1	N2-L	Buckley  Wash Apl 30. 1864.	control-N	40	0.300	0.375	0.100	2	0.075	
+8953	61	2	O9-AE	Capt Clowry  Wash Apl 30th 1864	control-O	43	0.349	0.372	0.279	2	0.023	
+8956	64	0	N2-AU	SH Beckwith (2)  Wash 130 pm May 3d 1864	control-N	55	0.255	0.509	0.127	2	0.255	
+8957	65	1	E48	J W Sampson Balto  Washn May 5th 1864 1130 am	control-E	29	0.655	0.586	0.138	1	0.069	
+8958	66	0	N2-BO	Col Stager  Wash May 6. 1864	control-N	33	0.182	0.242	0.061	2	0.061	
+8959	67	1	E61	OBrien Hd Qrs Butler  Wash May 9. 1864	control-E	20	0.300	0.300	0.050	1	0.000	
+8960	68	0	E7	G. D. Sheldon F Monroe  Washn May 9th 1864	control-E	39	0.538	0.359	0.103	1	0.179	
+8960	68	1	E8	JW Sampson Balto  Washn May 11th 1864	control-E	31	0.613	0.581	0.129	1	0.032	
+8960	68	2	N2-G	S. P. Kimber Care Gen Canby  Washn May 12th 1864 1230 PM	control-N	42	0.381	0.500	0.119	2	0.119	
+8964	72	0	E24	Jno Horner N. Y.  Washington May 18th 1864	control-E	37	0.297	0.324	0.108	2	0.027	
+8964	72	1	N2-AW	S. H. Beckwith  Washington D. C. May 19th 1864 11. am	control-N	89	0.438	0.629	0.124	2	0.191	
+8965	73	0	N2-AX	Beckwith 930 pm  Washn May 19th 1864	control-N	68	0.485	0.544	0.162	2	0.059	
+8966	74	1	N2-AY	1.45 p. m  (2)  Wash May 20th 1864	control-N	71	0.423	0.507	0.169	2	0.085	
+8970	78	0	E9	RR McCaine Cedar Creek, Washn 1030 AM May 23d 1864	control-E	81	0.395	0.469	0.160	2	0.074	
+8970	78	1	E10	W. T. Mason  Washn May 26th 1864	control-E	29	0.552	0.517	0.138	1	0.034	
+8971	79	1	N2-S	10am  Washn May 26th 1864 2	control-N	37	0.541	0.432	0.081	1	0.108	
+8975	83	0	E43	GD Sheldon  Washn 530 pm May 29th 1864	control-E	51	0.353	0.235	0.078	1	0.118	
+8978	86	1	N2-BF	SH Beckwith  Washn June 4th	control-N	110	0.318	0.573	0.064	2	0.255	
+8979	87	0	N2-BJ	10 pm  Washn June 4th 1864	control-N	47	0.340	0.511	0.106	2	0.170	
+8979	87	1	N2-T	S. H. Beckwith  Wash'n June 6th 1864 10 AM	control-N	47	0.340	0.553	0.043	2	0.213	
+8980	88	0	N2-C	S. P. Kimber  Washn June 6th 1864 1230 P. M	control-N	92	0.446	0.500	0.130	2	0.054	
+8981	89	0	N2-I	6 pm SH Beckwith  Washn June 7th 1864	control-N	25	0.440	0.640	0.160	2	0.200	
+8981	89	1	E11	S. P. Kimber  Washington D. C. June 8th 1864 4 P. M	control-E	50	0.360	0.360	0.080	1	0.000	
+8981	89	2	N2-J	Geo H Smith St Louis  Wash'n June 8th 1864 6 P. M	control-N	34	0.382	0.265	0.118	1	0.118	
+8982	90	0	N2-M	Saml Bruch  Washn June 11 1864	control-N	30	0.433	0.400	0.133	1	0.033	
+8983	91	1	N2-AZ	prompt  Wash June 11th 1864	control-N	63	0.222	0.365	0.016	2	0.143	
+8983	91	2	E49	Sheldon Ft. Monroe  Wash. D. C. June 12. 1864.	control-E	28	0.179	0.250	0.107	2	0.071	
+8985	93	0	N2-U	7 am SH Beckwith  Washington June 15" 1864	control-N	22	0.409	0.591	0.136	2	0.182	
+8985	93	2	E70	Capt Smith St Louis.  Wash. June 16. 1864 1220 pm	control-E	45	0.244	0.289	0.044	2	0.044	
+8986	94	0	N2-BA	S. P. Kimber Wash'n June 17th 1864	control-N	75	0.360	0.440	0.080	2	0.080	
+8988	96	0	N2-BC	Beckwith  Wash June 19. 1864	control-N	76	0.368	0.461	0.118	2	0.092	
+9003	111	1	E60	10 30 am  Washn July 16th 1864	control-E	26	0.346	0.385	0.077	2	0.038	
+9011	119	2	N2-BI	11 am Bickford  Washn July 24th 1864	control-N	55	0.273	0.545	0.073	2	0.273	
+9019	127	0	N2-BM	2 pm  Washn July 27 1864	control-N	27	0.222	0.407	0.148	2	0.185	
+9023	131	0	E25	RR McCaine  Washn July 29 1864	control-E	30	0.533	0.533	0.133	1	0.000	
+9035	143	0	E12	Capt Sam Bruch  Washn Aug 4th 1864 430 PM	control-E	40	0.275	0.300	0.100	2	0.025	
+9035	143	1	E13	McCaine Monocacy  Washn Aug 5th 1864	control-E	17	0.588	0.529	0.118	1	0.059	
+9035	143	2	E14	C. G. Sholes  Washn Aug 5th 1864	control-E	39	0.462	0.333	0.128	1	0.128	
+9038	146	0	E64	McCaine H. F  Washn Aug 7th 1864 1230 Pm	control-E	101	0.366	0.347	0.099	1	0.020	
+9039	147	0	E68	Capt Sam Bruch Louisville  Washn Aug 7th 1864	control-E	49	0.408	0.388	0.082	1	0.020	
+9042	150	0	E50	Geo D. Sheldon  Wash'n Aug. 11th 11 1/2 am 1864	control-E	35	0.486	0.400	0.171	1	0.086	
+9045	153	1	E38	Horner N. Y.  Wash. Aug 12. 1864.	control-E	55	0.309	0.291	0.055	1	0.018	
+9045	153	2	E39	John Horner N. Y.  Washn Aug 12th 1864	control-E	83	0.337	0.325	0.084	1	0.012	
+9046	154	0	E40	Jno Homer N. Y.  Washn Aug 13th 1864	control-E	49	0.327	0.429	0.163	2	0.102	
+9051	159	1	E30	<deletion>Lawrence</deletion> <insertion>McCaine</insertion>	control-E	46	0.435	0.326	0.152	1	0.109	
+9051	159	2	E31	to McCaine  Washn 730 am Aug 21st 1864	control-E	66	0.455	0.379	0.136	1	0.076	
+9053	161	1	E26	Horner NY  Wash D. C. Aug 21. 1864	control-E	73	0.342	0.288	0.068	1	0.055	
+9054	162	1	E32	McCaine Charlestown Va  Wash DC Aug. 21.1864	control-E	57	0.474	0.368	0.158	1	0.105	
+9055	163	0	E33	McCaine H Ferry  Washn DC Aug. 22. 1864.	control-E	57	0.421	0.228	0.070	1	0.193	
+9056	164	0	E34	1030 am to McCaine  Wash August 24th 1864	control-E	82	0.512	0.439	0.110	1	0.073	
+9057	165	1	E55	Capt Bruch  Washn D. C. Aug 26. 1864.	control-E	34	0.294	0.294	0.029	1	0.000	
+9057	165	2	E35	S H. Beckwith City Point  Washn Aug 29th 1864	control-E	33	0.455	0.576	0.030	2	0.121	
+9060	168	1	E36	8 p. m. McCaine Harpers Fy Washn Aug 29th 1864	control-E	44	0.295	0.273	0.045	1	0.023	
+9070	178	0	E15	Geo Gallup Cairo  Washn 1130 am Sept 10th 64	control-E	43	0.326	0.326	0.070	1	0.000	
+9070	178	1	E16	Kimber N Orleans via NY & Cairo Wash 11.30 am Sept 10th 1864	control-E	24	0.542	0.625	0.208	2	0.083	
+9070	178	2	N2-K	Capt Smith St Louis Washn 12M Sept 10th 1864	control-N	22	0.455	0.364	0.091	1	0.091	
+9071	179	2	E74	Chas Armond  Washn 8 pm Sept 11th 1864	control-E	28	0.107	0.250	0.000	2	0.143	
+9091	199	1	E27	Horner N. Y.  Washn. Octo 10. 1864.	control-E	43	0.349	0.419	0.116	2	0.070	
+9097	205	0	E41	JW Sampson Balto  Washn Oct 15th 64	control-E	14	0.500	0.500	0.143	1	0.000	
+9098	206	0	E51	J. C. Van Duzer  Washn Oct 21st 1864 11 am	control-E	33	0.545	0.394	0.061	1	0.152	
+9104	212	2	N2-BH	R. R. McCaine  Wash'n Oct 26th 1864 5 P. M	control-N	61	0.311	0.525	0.082	2	0.213	
+9107	215	2	E17	Capt 1 Clowry  Washn Oct 28th 1864 12 M	control-E	39	0.538	0.487	0.103	1	0.051	
+9115	223	1	E29	John Horner  Wash'n Nov. 5th 1864	control-E	121	0.488	0.421	0.149	1	0.066	
+9117	225	1	E52	Capt. W. G. Fuller N. Orleans  Washington Nov 7th 1864	control-E	104	0.567	0.644	0.125	2	0.077	
+9118	226	0	E73	Cipher Clerk Cairo  Washn 1230 pm Novr 7th 1864	control-E	39	0.231	0.256	0.077	2	0.026	
+9123	231	1	E53	Van Duzer Nashville  Washn Nov 12th 1864	control-E	37	0.514	0.514	0.081	1	0.000	
+9124	232	2	E44	GD Sheldon Ft Monroe  Washn Nov 15th 1864	control-E	36	0.444	0.278	0.139	1	0.167	
+9129	237	1	E56	J. C. Van Duzer  Wash'n Nov 28th 1864 10.30 A. M.	control-E	19	0.684	0.579	0.211	1	0.105	
+9129	237	3	E45	Sampson Balto  Washn Nov 29th 1864	control-E	35	0.257	0.229	0.143	1	0.029	
+9130	238	1	E46	John Horner  Washn Novr 30th 1864	control-E	35	0.286	0.314	0.143	2	0.029	
+9134	242	0	E67	1230 pm  Washn Decr 3d 1864	control-E	50	0.320	0.260	0.080	1	0.060	
+9135	243	0	E54	Geo D Sheldon "Ft"  Wash'n Dec. 5th 1864 2.30 P. M	control-E	41	0.317	0.366	0.098	2	0.049	
+9138	246	0	E19	Glass Nashville  Washn Decr 10th 1864	control-E	66	0.333	0.333	0.045	1	0.000	
+9138	246	1	E20	Butler Memphis  Washn Decr 10th 1864	control-E	40	0.550	0.550	0.150	1	0.000	
+9139	247	1	N2-BK	Capt Bruch Louisvl.  Washn D. C. Dec. 12. 1864	control-N	71	0.380	0.437	0.113	2	0.056	
+9151	259	1	-	Horner NY  Wash. Jan. 2. 1865	1865	19	0.421	0.368	0.211	1	0.053	readable with No. 1
+9151	259	2	E66	Capt Van Duzer  Wash'n Jany 3rd 1865 11. am	control-E	43	0.419	0.442	0.070	2	0.023	
+9151	259	3	-	John Horner  Wash'n Jany 3rd 1864 12.M	1865	66	0.485	0.394	0.152	1	0.091	readable with No. 1
+9152	260	1	-	John Horner  Wash'n Jany 3rd 1865	1865	25	0.520	0.480	0.240	1	0.040	readable with No. 1
+9153	261	1	-	Geo. D. Sheldon  Wash'n Jany 5th 1865	1865	38	0.421	0.368	0.132	1	0.053	readable with No. 1
+9154	262	2	-	Capt J. C. Van Duzer  Wash'n Jany 8th 1865	1865	43	0.605	0.581	0.140	1	0.023	book not in hand (Nos. 3/4)
+9156	264	1	-	JW Sampson  Wash'n Jany 11th 1865 12M	1865	28	0.321	0.393	0.143	2	0.071	readable with No. 2
+9158	266	1	-	WR Plum via Paducah  Washn Jany 12th 1865 130 P. M	1865	21	0.476	0.381	0.095	1	0.095	readable with No. 1
+9166	274	1	-	Sam Bruch  Wash'n Jany 20th 1865	1865	20	0.750	0.700	0.250	1	0.050	book not in hand (Nos. 3/4)
+9166	274	2	-	J. W. Sampson  Washn Jany 21st 1865	1865	30	0.433	0.367	0.167	1	0.067	readable with No. 1
+9167	275	1	-	Sampson Balto  Wash'n Jany 21st 1865	1865	44	0.455	0.341	0.159	1	0.114	readable with No. 1
+9168	276	1	-	Gen D. Sheldon Ft Monroe  Wash'n Jany 21st 1865	1865	32	0.531	0.375	0.219	1	0.156	readable with No. 1
+9170	278	1	-	W. R Plum  Washn Jany 26th 1865	1865	32	0.594	0.469	0.188	1	0.125	book not in hand (Nos. 3/4)
+9170	278	2	-	Capt Sam Bruch  Wash'n Jany 26th 1865 1130 am	1865	37	0.541	0.459	0.189	1	0.081	readable with No. 1
+9173	281	3	-	Sampson N. D. No 13 N. D. observe notes  Washn Jany 30th 186	1865	62	0.387	0.339	0.145	1	0.048	readable with No. 1
+9174	282	0	-		1865	34	0.265	0.265	0.118	1	0.000	book not in hand (Nos. 3/4)
+9176	284	3	-	Geo W. Baldwin  Washn Feby 2nd 1865	1865	22	0.364	0.364	0.136	1	0.000	readable with No. 1
+9177	285	1	-	Baldwin Annapolis  Washn. Feby. 2. 1865	1865	82	0.232	0.293	0.049	2	0.061	book not in hand (Nos. 3/4)
+9178	286	0	-	Geo W. Baldwin  Wash'n Feby 2nd 1865	1865	40	0.200	0.300	0.000	2	0.100	book not in hand (Nos. 3/4)
+9179	287	1	-	Baldwin Annapolis  Wash. Feb. 4. 1865.	1865	92	0.120	0.207	0.033	2	0.087	book not in hand (Nos. 3/4)
+9180	288	2	-	Baldwin Annapolis  Wash Feb. 6. 1865.	1865	35	0.286	0.400	0.029	2	0.114	readable with No. 2
+9181	289	2	-	Fuller N. Orleans La.  Wash. Feb. 7. 1865.	1865	35	0.486	0.571	0.086	2	0.086	readable with No. 2
+9182	290	1	-	Baldwin Annapolis  Wash Feb 7. 1865	1865	35	0.343	0.457	0.114	2	0.114	readable with No. 2
+9182	290	2	-	Capt Van Duzer Nashvl Wash Feb 8. 1865	1865	31	0.290	0.290	0.032	1	0.000	readable with No. 1
+9183	291	2	-	Egan Cairo ----  Wash Feb 8. 1865	1865	19	0.316	0.316	0.053	1	0.000	readable with No. 1
+9185	293	1	-	Capt WG Fuller N. O.  Wash 930pm Feby 11 1865	1865	93	0.215	0.387	0.043	2	0.172	readable with No. 2
+9186	294	0	-	Plum  Washn 2.30pm Feby 13th 1865	1865	72	0.514	0.444	0.069	1	0.069	readable with No. 1
+9186	294	1	-	Horner N. Y. (no1)  Wash. Feb. 18. 1865.	1865	53	0.075	0.170	0.038	2	0.094	book not in hand (Nos. 3/4)
+9190	298	2	-	J C. Van Duzer 330 pm  Washn Feby 21st 1865	1865	43	0.512	0.442	0.163	1	0.070	readable with No. 1
+9192	300	1	-	W. R. Plumm via Nashville  Wash'n Feby 27th 1865 2. P. M	1865	98	0.776	0.418	0.122	1	0.357	book not in hand (Nos. 3/4)
+9197	305	2	-	John Horner N. Y.  Mar. 6th 1865	1865	29	0.552	0.517	0.207	1	0.034	readable with No. 1
+9198	306	1	-	Fuller New Orleans  Wash mar 8. 1865	1865	34	0.382	0.500	0.059	2	0.118	readable with No. 2
+9203	311	0	-	John Horner N York  New York March 20th 1865	1865	47	0.511	0.404	0.149	1	0.106	readable with No. 1
+9207	315	2	-	John Horner NY  Washn 830 pm Mch 23 1865	1865	25	0.280	0.360	0.120	2	0.080	book not in hand (Nos. 3/4)
+9212	320	1	-	Horner NY  Wash Apl 3. 1865	1865	43	0.209	0.256	0.070	2	0.047	book not in hand (Nos. 3/4)
+9212	320	2	-	McCaine  Washn Apl 4th 1865	1865	43	0.116	0.186	0.023	2	0.070	book not in hand (Nos. 3/4)
+9213	321	0	-	Clowry St Louis  Washn Apl 12th	1865	78	0.282	0.269	0.064	1	0.013	book not in hand (Nos. 3/4)
+9217	325	1	-	Lawrence Balto  Wash Apl 18 1865	1865	34	0.412	0.382	0.088	1	0.029	readable with No. 1
+9218	326	3	-	Laurence Balto  Wash'n Apr 20th 1865 9.30 AM	1865	26	0.615	0.500	0.154	1	0.115	book not in hand (Nos. 3/4)
+9220	328	0	-	Capt Clowry St Louis  Washington Apr 22d 1865	1865	51	0.333	0.314	0.098	1	0.020	readable with No. 1
+9226	334	1	-	Plum Nashvl  Wash. May 1. 1865.	1865	25	0.240	0.280	0.080	2	0.040	book not in hand (Nos. 3/4)
+9226	334	2	-	JW Wallack Inds  Washn May 2d 1865	1865	27	0.185	0.259	0.074	2	0.074	book not in hand (Nos. 3/4)
+9228	336	0	-	JH Emerick Ro  Washn May 4th 1865	1865	108	0.278	0.296	0.074	2	0.019	book not in hand (Nos. 3/4)
+9229	337	0	-	John Horner NY  Washn May 4	1865	33	0.394	0.273	0.091	1	0.121	readable with No. 1
+9229	337	1	-	AH Caldwell  Washn May 6th 1865	1865	53	0.377	0.283	0.057	1	0.094	readable with No. 1
+9230	338	1	-	Caldwell Richmond  Wash. May 7 1865	1865	46	0.457	0.565	0.043	2	0.109	readable with No. 2
+9233	341	0	-	G. J. Lawrence Balt.  Washington May 15/65	1865	32	0.406	0.375	0.125	1	0.031	readable with No. 1
+9233	341	2	-	GJ Lawrence Balto  Washn May 15th 1865	1865	27	0.222	0.333	0.037	2	0.111	book not in hand (Nos. 3/4)
+9236	344	0	-		1865	44	0.318	0.455	0.068	2	0.136	readable with No. 2
+9236	344	1	-	Caldwell Richmond  Washn 11am May 18th 1865	1865	54	0.296	0.352	0.037	2	0.056	book not in hand (Nos. 3/4)
+9238	346	3	-	Lines Macon Ga.  Wash D. C. May 19. 1865.	1865	24	0.375	0.375	0.083	1	0.000	readable with No. 1
+9241	349	2	-	No 1 Emerick Rd.  Washington D. C. May 22/65	1865	41	0.341	0.341	0.098	1	0.000	readable with No. 1
+9242	350	0	-	Capt RC Clowry  Washn May 28th 1865	1865	51	0.451	0.353	0.020	1	0.098	readable with No. 1
+9244	352	1	-	Capt R. C. Clowry  Wash'n May 30th 1865	1865	71	0.408	0.380	0.155	1	0.028	readable with No. 1
+9245	353	2	-	J. C Sullivan Nashville  Wash'n May 31st 1865 10 am	1865	25	0.160	0.360	0.040	2	0.200	book not in hand (Nos. 3/4)
+9245	353	3	-	Wallack. Ind  Wash'n May 31st 1865 1 PM	1865	32	0.156	0.250	0.000	2	0.094	book not in hand (Nos. 3/4)
+9247	355	1	-	J. R. Gilmore Hilton Head  Wash'n June 5th 1865	1865	40	0.625	0.450	0.200	1	0.175	book not in hand (Nos. 3/4)
+9247	355	2	-	John Horner  Wash'n June 6th 1865 9.30 am	1865	42	0.524	0.286	0.167	1	0.238	readable with No. 1
+9249	357	2	-	AH Caldwell Richmond  Washn June 10th 1865	1865	35	0.400	0.543	0.029	2	0.143	readable with No. 2
+9249	357	3	-	GD Sheldon Ft Monroe  Washn June 15th 1865	1865	62	0.323	0.339	0.065	2	0.016	book not in hand (Nos. 3/4)
+9250	358	1	-	Capt RC Clowry St Louis  Washn June 15th 1865	1865	23	0.522	0.391	0.087	1	0.130	readable with No. 1
+9250	358	3	-	AH Caldwell Richmond Va June Washn June 15th 65	1865	50	0.260	0.380	0.100	2	0.120	readable with No. 2
+9251	359	2	-	Capt Gilmore Hilton Head  Wash'n June 16th 1865	1865	38	0.474	0.632	0.158	2	0.158	book not in hand (Nos. 3/4)
+9252	360	1	-	Seizberg NO #2  Washn June 16th 1865	1865	29	0.276	0.448	0.069	2	0.172	readable with No. 2
+9252	360	2	-	McCaine Winchester Va  Washn June 16th 65	1865	43	0.465	0.465	0.116	1	0.000	readable with No. 1
+9253	361	1	-	John Horner NY  Washn June 22d	1865	33	0.333	0.242	0.030	1	0.091	readable with No. 1
+9253	361	2	-	Wash'n June 24th 1865	1865	31	0.516	0.484	0.129	1	0.032	readable with No. 1
+9256	364	1	-	Capt JR Gilmore  Washn July 2d 1865	1865	29	0.379	0.483	0.172	2	0.103	readable with No. 2
+9256	364	2	-	Capt Fuller  Washn July 13th 1865	1865	25	0.240	0.240	0.000	1	0.000	book not in hand (Nos. 3/4)
+9257	365	0	-	Wash July 14 1865	1865	83	0.313	0.361	0.096	2	0.048	book not in hand (Nos. 3/4)
+9257	365	1	-	WG Fuller N Orleans  Wash July 15th 1865	1865	37	0.216	0.297	0.108	2	0.081	book not in hand (Nos. 3/4)
+9258	366	1	-	Capt J. R. Gilmore Charleston  Washn July 15th 1865	1865	36	0.194	0.222	0.000	2	0.028	book not in hand (Nos. 3/4)
+9258	366	2	-	Somerville Memphis Tenn  Wash July 27 1865	1865	34	0.441	0.382	0.147	1	0.059	readable with No. 1
+9260	368	0	-	Richd O'Brien Chf Opr Raleigh NC  Wash Aug 11" 1865	1865	29	0.241	0.345	0.069	2	0.103	book not in hand (Nos. 3/4)
+9263	371	0	-		1865	26	0.269	0.308	0.077	2	0.038	book not in hand (Nos. 3/4)
+9263	371	1	-	Geo Gallup Vicksburg Miss  Wash Aug 16" 1865	1865	98	0.235	0.224	0.051	1	0.010	book not in hand (Nos. 3/4)
+9264	372	0	-		1865	25	0.400	0.400	0.080	1	0.000	readable with No. 1
+9265	373	0	-		1865	45	0.200	0.244	0.022	2	0.044	book not in hand (Nos. 3/4)
+9265	373	1	-	R OBrien  Raleigh NO  Wash Aug 17 1865	1865	20	0.300	0.400	0.050	2	0.100	readable with No. 2
+9266	374	1	-	Washington Aug 20 1865	1865	49	0.408	0.408	0.082	1	0.000	readable with No. 1
+9267	375	0	-	Washington Aug 20. 1865	1865	70	0.143	0.143	0.000	1	0.000	book not in hand (Nos. 3/4)
+9267	375	1	-	AH Caldwell chf opr Richmond Va = Wash Aug 21 1865	1865	29	0.276	0.241	0.034	1	0.034	book not in hand (Nos. 3/4)
+9268	376	2	-	Col OE Babcock Galena Ill ---- Wash Aug 22" 1865	1865	28	0.179	0.250	0.036	2	0.071	book not in hand (Nos. 3/4)
+9269	377	0	-	Col. OE Babcock ---- Galena Ill  Wash Aug 23 1865	1865	19	0.316	0.316	0.053	1	0.000	readable with No. 1
+9269	377	2	-	330 PM DH Bates NY  Wash Aug 26 1865	1865	31	0.129	0.226	0.065	2	0.097	book not in hand (Nos. 3/4)
+9270	378	0	-	4 PM DH Bates NY  Wash Aug 26th 1865	1865	27	0.185	0.222	0.074	2	0.037	book not in hand (Nos. 3/4)
+9270	378	2	-	3 PM DH Bates Highlands  Wash Aug 30 1865	1865	27	0.296	0.296	0.000	1	0.000	readable with No. 1
+9271	379	0	-	330 PM Jno Horner NY  Wash Aug 30 1865	1865	130	0.346	0.362	0.077	2	0.015	book not in hand (Nos. 3/4)
+9272	380	0	-	230 PM DH Bates Highlands N. J. Wash Sept 1 1865	1865	76	0.171	0.184	0.066	2	0.013	book not in hand (Nos. 3/4)
+9272	380	1	-	12 PM DH Bates Highlands NJ  Wash Sept 2 1865	1865	24	0.250	0.333	0.000	2	0.083	book not in hand (Nos. 3/4)
+9273	381	1	-	DH Bates Highlands  Washn Sept 2nd 65	1865	54	0.130	0.167	0.000	2	0.037	book not in hand (Nos. 3/4)
+9273	381	2	-	Col OE Babcock Galena Ill  Washn Sept 4" 1865	1865	28	0.357	0.357	0.071	1	0.000	readable with No. 1
+9274	382	0	-	230 PM Geo D Sheldon Ft Monroe ---- Wash Sept 4" 1865	1865	37	0.162	0.162	0.081	1	0.000	book not in hand (Nos. 3/4)
+9274	382	1	-	11 AM Capt JC Van Duzer Nashville Wash Sept 5 1865	1865	29	0.241	0.310	0.034	2	0.069	book not in hand (Nos. 3/4)
+9274	382	2	-	Capt J. C. Van Duzer Nashville Wash'n Sept 5th 1865	1865	28	0.143	0.250	0.071	2	0.107	book not in hand (Nos. 3/4)
+9275	383	0	-	10 am DH Bates West Point Wash Sept 6" 1865	1865	22	0.273	0.273	0.045	1	0.000	book not in hand (Nos. 3/4)
+9275	383	1	-	10 30 AM Geo D Sheldon Ft Monroe Wash Sept 6 1865	1865	52	0.212	0.269	0.058	2	0.058	book not in hand (Nos. 3/4)
+9276	384	0	-	11 AM Geo D Sheldon Ft Monroe  Wash Sept 6 1865	1865	76	0.237	0.250	0.039	2	0.013	book not in hand (Nos. 3/4)
+9276	384	1	-	Capt Van Duzer Nashville ---- Wash Sept 7 1865	1865	39	0.179	0.205	0.026	2	0.026	book not in hand (Nos. 3/4)
+9277	385	0	-	3 PM Col OE Babcock Galena Ill  Wash Sept 7th 1865	1865	28	0.250	0.321	0.071	2	0.071	book not in hand (Nos. 3/4)
+9277	385	1	-	4PM DH Bates NY  Wash Sept 8" 1865	1865	70	0.171	0.214	0.014	2	0.043	book not in hand (Nos. 3/4)
+9278	386	0	-	1030 am 9th D. H. Bates ---- N. Y. Wash Sept 9" 1865	1865	36	0.361	0.306	0.111	1	0.056	readable with No. 1
+9278	386	1	-	4 PM DH Bates NY  Wash Sept 9 1865	1865	32	0.375	0.406	0.094	2	0.031	readable with No. 2
+9279	387	0	-	4 PM AH Caldwell Richmond Wash Sept 9 1865	1865	53	0.340	0.434	0.075	2	0.094	readable with No. 2
+9280	388	0	-	1240 PM  Wash Sept 12" 1865	1865	52	0.154	0.308	0.000	2	0.154	book not in hand (Nos. 3/4)
+9280	388	1	-	730 PM DH Bates Newport RI  Wash Sept 12 1865	1865	65	0.231	0.308	0.077	2	0.077	book not in hand (Nos. 3/4)
+9281	389	1	-	11.30 am DH Bates Newport RI  Wash Sept 13 1865	1865	38	0.211	0.316	0.000	2	0.105	book not in hand (Nos. 3/4)
+9282	390	0	-	3 30PM  Wash Sept 13 1865	1865	64	0.203	0.250	0.031	2	0.047	book not in hand (Nos. 3/4)
+9282	390	2	-	10 am DH Bates Boston  Wash Sept 16 1865	1865	27	0.111	0.222	0.037	2	0.111	book not in hand (Nos. 3/4)
+9283	391	0	-	5 PM DH Bates Boston  Wash Sept 16 1865	1865	39	0.205	0.256	0.000	2	0.051	book not in hand (Nos. 3/4)
+9284	392	2	-	530 PM DH Bates  Washington Sept 18 '65	1865	49	0.184	0.204	0.020	2	0.020	book not in hand (Nos. 3/4)
+9285	393	1	-	7 PM JD Congdon St Louis  Wash Sept 20 1865	1865	54	0.185	0.333	0.000	2	0.148	book not in hand (Nos. 3/4)
+9286	394	0	-	3 30 PM H. Seiberg N Orleans Wash Sept 29" 1865	1865	69	0.217	0.290	0.058	2	0.072	book not in hand (Nos. 3/4)
+9286	394	1	-	No 2 AH Caldwell  Washington Oct. 4th 65	1865	32	0.188	0.312	0.062	2	0.125	book not in hand (Nos. 3/4)
+9287	395	0	-	230 PM Capt Jas K Gilmore H Head Wash Oct 10 1865	1865	89	0.157	0.225	0.011	2	0.067	book not in hand (Nos. 3/4)
+9288	396	0	-	230 pm H Seiberg NO  Wash Oct 10 1865	1865	70	0.143	0.186	0.043	2	0.043	book not in hand (Nos. 3/4)
+9288	396	1	-	Capt RC Clowry St Louis Mo  Wash Nov 2 1865	1865	25	0.200	0.400	0.040	2	0.200	readable with No. 2
+9289	397	0	-	H Seiberg N Orleans  Wash Nov 2 1865	1865	23	0.304	0.391	0.087	2	0.087	readable with No. 2
+9289	397	1	-	H Seiberg N. Orleans LA  Wash Nov 2d 1865	1865	35	0.143	0.257	0.029	2	0.114	book not in hand (Nos. 3/4)
+9289	397	2	-	Capt Van Duzer Nashville ----  Wash Nov 7" 1865	1865	44	0.182	0.250	0.068	2	0.068	book not in hand (Nos. 3/4)
+9290	398	0	-	Capt JC Van Duzer Nashville  Wash Nov 7 1865	1865	36	0.167	0.278	0.056	2	0.111	book not in hand (Nos. 3/4)
+9290	398	1	-	GF Milliken Boston  Wash Nov 9 1865	1865	34	0.441	0.382	0.118	1	0.059	readable with No. 1
+9290	398	2	-	Jno Horner N York  Wash Nov 9 1865	1865	24	0.542	0.458	0.167	1	0.083	readable with No. 1
+9291	399	2	-	J. C Van duzer Nashville  Wash Nov 24 1865	1865	71	0.225	0.324	0.070	2	0.099	book not in hand (Nos. 3/4)
+9292	400	1	-	Washn Novr 26. 1865	1865	102	0.147	0.196	0.049	2	0.049	book not in hand (Nos. 3/4)
+9292	400	2	-	SH Seiberg New Orleans La  Wash Nov 28 1865	1865	25	0.240	0.280	0.040	2	0.040	book not in hand (Nos. 3/4)
+9293	401	0	-	Col ES Sanford Care Jno Horner N Y. Wash Nov 29th 1865. 1130	1865	47	0.170	0.213	0.085	2	0.043	book not in hand (Nos. 3/4)
+9293	401	1	-	R OBrien Raleigh NC & AH Caldwell Richmond = Wash Nov 29 186	1865	56	0.107	0.125	0.000	2	0.018	book not in hand (Nos. 3/4)
+9294	402	0	-	SH Seiberg New Orleans  Wash Dec 2 1865	1865	44	0.250	0.386	0.045	2	0.136	readable with No. 2
+9294	402	1	-	JD Condon St Louis  Wash Dec 2 1865	1865	29	0.138	0.207	0.069	2	0.069	book not in hand (Nos. 3/4)
+9294	402	2	-	Cipher Opr Cairo Ills,  Washn Dec 2 1865	1865	35	0.457	0.371	0.029	1	0.086	readable with No. 1

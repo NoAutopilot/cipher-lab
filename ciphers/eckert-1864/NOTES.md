@@ -1334,3 +1334,23 @@ is in cipher (D1 unchanged). Identified: "Sand hers despatch" = George N. Sander
 Halifax, read out by Seward at Auburn on 3 Sept (Natl Intelligencer 8 Sept 1864 p.2); "Chas Armond" = the War Department telegraph operative
 who reached Halifax on 3 Sept and telegraphed Eckert (mssEC 29 leaves 341, 348; mssEC 18 p.169 is a 6 Sept cipher to him, not decoded). No
 reading changed. Suggestion for a reader (not run): mssEC 18 p.169's "Chas Armond Halifax" block is a sibling worth decoding, ~$0.3.
+
+
+## LS3-K (8 Oct 2026, account 2, for LANE ST-LEDGER-3)
+
+Two script checks, no reading. Scripts: `key_share_1865.py` (regenerates `key-share-1865.tsv`, `--write`); the (a) searches are logged below. Requests: Huntington `hdl.huntington.org/digital/bl/dmwebservices`, about 45 calls, 1.6-2 s apart, no 429/403 (the form without `/digital/bl/` answers 302).
+
+### (a) The "10" book for E69 and E75: not found
+Searches run (p16003coll11, `CISOSEARCHALL^TERM^all^and`, sixth segment 1; hits = records; none a cipher book numbered 10):
+"No. 10" 9; "Cipher No. 10" 3 (mssEC 42 Cipher Book #1, "Telegraphs Sent.", and a Cipher Messages sent ledger, Aug 1862-Jan 1864); "Cipher Book #10" 0; "Halleck" 31; "Hallack" 3; "Baldwin" 19; "Ten" 32; "Lockwood" 14; "Cipher Book" 43; "Telegraphic Correspondence" 11. The hits for names and "Ten" are ledger volumes, not key books.
+Cipher books titled in the collection: Cipher Book #1 (mssEC 42-47, six objects), #2 (mssEC 48, 49), #5 (mssEC 50, 66; unused so far here), #9 (object 1751 = mssEC 67), "Cipher book for Generals and Places" (mssEC 39), "Handwritten cipher book" (mssEC 38), a Headquarters A of P cipher book (object 6255). No "#10". Tomokiyo sources/cryptiana/web/civilwar1.htm: No. 9, No. 10 and No. 12 share one printed template ("same keys and arbitrary words, only their meaning different"; "Adam" = Lincoln in No. 9, McClellan in No. 10, Halleck in No. 12) and Beckwith made one book with three inks for them; no No. 10 key table or image is given. So a No. 10 book would be a re-meaning of the No. 9 template that the repo already tabulates in key-no9.md, but the meanings are not in hand; nothing to count coverage against. E69 and E75 stay "key not in hand", the gap stays no-key-material. Possible untried, not run: mssEC 66 (Cipher Book #5) and mssEC 38/39 as the "10"-marked books' neighbours, and the three-ink Beckwith book if it is in the collection (not searched for by name here); next: a reader would need to open mssEC 38/39 page images, ~$1.
+
+### (b) 1865 key-book check: `key-share-1865.tsv` (130 unread priority-1 1865 rows, words >= 30; 153 labelled control rows)
+1865 = pointer >= 9149 (page 257 opens "Jany 2d 1865") or a header naming 1865. Share = tokens of the entry (function words and one-letter tokens dropped) found in the code-word columns of the key file.
+Control distributions (already-read entries, share in their own book): No. 1 n=63 median 0.406, p10 0.286, p90 0.567; No. 2 n=58 median 0.500, p10 0.364, p90 0.629; No. 9 n=32 median 0.205, p10 0.079, p90 0.333.
+1865 distribution: No. 1 median 0.284 (p10 0.154, p90 0.516); No. 2 median 0.333 (0.213, 0.465); No. 9 median 0.069 (0.011, 0.159). Best book: No. 2 on 75, No. 1 on 55, No. 9 on none.
+Verdict by the brief's rule (best-book share inside that book's control p10-p90): readable with No. 1: 41; readable with No. 2: 18; book not in hand (Nos. 3/4): 71 (59 readable + 71 not = 130).
+No. 9: no 1865 row has No. 9 as best book; its table is a sample, not the whole book (key-no9.md header), and 0/32 of the No. 9 control rows have No. 9 as best book.
+
+Matched control, and why the count is weak (rule 3): the control's own best-book call matches the label on 94/153 (No. 1 45/63, No. 2 49/58, No. 9 0/32). The p10-p90 band is not selective: No. 1's band accepts 51/63 No. 1 entries but also 46/58 of the No. 2 entries and 13/32 of the No. 9 entries; No. 2's band accepts 46/58 No. 2, 31/63 No. 1, 6/32 No. 9; No. 9's band accepts 27/32 of its own and 44/63 and 44/58 of No. 1/No. 2 entries. The three books share arbitraries (one template for Nos. 1/2, and 9/10/12 another), so token share cannot tell the books apart: "readable with No. N" is not licensed by this test, and "book not in hand" at 71 of 130 is a low share, not proof of a missing book. Only the No. 2 band separates somewhat from No. 9 entries. Logged as untestable by this instrument at this N; the next step needs a different instrument (decode a handful of 1865 rows with each book and count grammatical clauses with the shuffled-meaning control of the lane brief), not a tighter band.
+Both counts: readable 59 (41 + 18), not in hand 71. No 1865 reading in this job.
