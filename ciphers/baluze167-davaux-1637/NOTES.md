@@ -1036,3 +1036,87 @@ f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs un
 - [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167)
 - [x] retry: 170 f.228r re-cut and re-passed (D1-BAL170, D1-BAL170B) and decoded (B167-228)
 Verdict: keep going: 3 internal gaps; cheapest next: eye-check of f.228's 7 unvalued shapes and unmarked numerals on the crops, then re-judge (~$2)
+
+## SIG-B228 (8 Oct 2026, account 1, for LANE SIG-1), 22:50-23:1x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-08-acct1-sig1-jobs.md` section SIG-B228. No novelty class. Pre-registration
+`b167228/prereg_sig.md` committed and pushed (af513d5c9/091b04835, 22:52 UTC) before any f.228 tile was cut or read.
+**Prior-work step (pasted):** `python3 tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228r;date=1640-08-25;sender=Chavigny;recipient=Avaux' --step-type transcribe`
+first run exit 4 (12 LEAD: escalation checkboxes of other steps and the f.229 audit; 1 LOOK: leaf gloss check); each answered with
+`--record` (CONTEXT: this step is the untried one in B167-228's Remaining gaps; CLEAR: D1-BAL170's c239-241 overview shows no gloss on
+f.228, f.230r is the clear close); re-run: `holds: specific 0 (none); generic 2 (UNCHECKED-NET 2) ... exit 0: proceed on the residue`.
+The two UNCHECKED-NET rows (aaymeloglu repository not cloned; no prior_editions.tsv row) are unchanged by this step (no network in brief).
+
+**Shape values (units 1-2).** `b167228/sig_tiles.py` cut 18 f.228 tiles of the 7 unvalued shapes plus 3 decoy tiles (f.228 occurrences
+of hook, gam, y+, already valued on f.229) from the native source regions on disk, shuffled to blind ids T01-T21 (`key_private.tsv`
+held back), and an exemplar sheet of 11 labelled f.229 tiles (E-s, E-n, E-r, E-a, E-c, E-m, E-u, E-p, E-e, E-t, E-l) beside Tomokiyo's
+letter block (`images/louisxiii_davaux.png`, enlarged). Tile centres were placed by this worker on gridded copies (shape location only,
+no value judged). Two independent blind Sonnet reads (`b167228/sig_tiles/prompt_shapes.txt`; `readA.tsv`, `readB.tsv`), each naming
+per tile the matching f.229 tile (channel A) and the Tomokiyo column (channel B), or NONE. Scored by `b167228/sig_score.py` -> `sig_score.tsv`:
+| gate / shape | result |
+|---|---|
+| decoy gate (prereg item 4: >= 2 of 3 decoys matched right by both reads) | **2/3 PASS** (gam=u both channels; y+=r Tomokiyo channel; hook=s missed: read B NONE) |
+| decoys per channel | f.229 tiles 1/3, Tomokiyo block 2/3 |
+| q (6 tiles) | c: both reads, both channels, 6/6 |
+| ll (4) and ll\|u4 (1) | l: both reads, both channels (f.229 E-l = the f.229 "n" shape that reads l), 5/5 |
+| g+ (3) | n: Tomokiyo channel only, both reads, 3/3 |
+| ff_crossed (2) | s: Tomokiyo channel only (his "ff" under s), both reads, 2/2 |
+| v (1) | s: f.229 channel only (E-s), both reads; this channel's own decoy record is 1/3, so the weakest of the six |
+| wave (1) | stays U (read A s low, read B NONE) |
+Adopted through `b167228/sig_shape_map.tsv`, read by `b167228/to_pipe.py` only for shapes with no f.229 value; grade M like every letter sign.
+
+**Numeral marks (unit 3).** `b167228/sig_num.py` cut 10 line strips (cipher part, < 2500 px) and listed each strip's numerals in order,
+without saying which were in question; two blind Sonnet reads named the mark per numeral (`sig_num/readA.tsv`, `readB.tsv`, 70 rows each).
+`b167228/sig_marks.py`: control gate (prereg item 6, 4 numerals transcribed with an acute) **3/4 PASS** (40', 44', 90' read acute by both;
+v a_L01 71' read "none" by both reads, at both of its occurrences -- the D1-BAL170B transcription's acute there is now in doubt, not changed
+here). Of the 27 unmarked targets: both reads name the same mark on 15 (13 acute, 73 bar, 29 diaeresis) -> regraded H through
+`b167228/sig_marks.tsv` (applied in to_pipe.py, code checked per token); both "none" on 10 and a split on 2 (r b_L02 76, v b_L02 16) keep I.
+
+**Decode (rule 7).** `python3 b167228/to_pipe.py` then `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> `reading up to date`, exit 0.
+**Counts, 154 cipher tokens:** before (B167-228) H 56, M 53, I 27, U 18; after H 71, M 70, I 12, U 1. No C, no S. Cryptanalytic/key-application
+result, provisional (letters M).
+
+**Judge (b167228/judge_null.py unchanged, fr17 spec d4vb167/judge_spec_fr17.json, seed 20261008; output `b167228/judge_null_sig.out`):**
+| text | B167-228 | SIG-B228 |
+|---|---|---|
+| reading_b170f228 (U dropped) | -0.993, N 268 letters, real_p05 -0.887: FAIL | **-0.971, N 294, real_p05 -0.935: FAIL** (gap 0.106 -> 0.036) |
+| shuffled key, all signs, 20 | median -1.276, max -1.128 | median -1.258, max -1.046 |
+| shuffled letter-sign values only, 20 | median -1.205, max -1.130 | median -1.224, max -1.131 |
+| positive control, f.229 cut to the same N, 3 segments | -0.788, -0.849, -0.837: 3/3 PASS | -0.790, -0.860, -0.825: 3/3 PASS |
+Still a FAIL, now 0.036 below the gate and above all 40 shuffled nulls; the positive control shows the judge has power at this N.
+
+**External check (not a gate).** Tomokiyo's f.228 fragment "sont mal satisfaits de" (louisxiii.htm l.361): f.228r a_L02 now reads
+`so n t ma l sa ti s fait s de` -- every token agrees, including the three that were unread (l from ll|u4, s from v, s from ff).
+
+**What f.228 now says (provisional; letters M, numerals H unless noted; [ ] = unread or doubtful).** In plain text on f.228r, Chavigny
+writes that the Landgravine and the dukes of Lunebourg; the cipher then says they "sont mal satisfaits de Bavier [Banér]" (then in clear: "a ce que l'on nous mande"), that it would be "point a propos dans cette conjoncture de le traitter de la me[wave]me sorte ..." On f.228v the cipher reports
+that someone "tesmoigne qu'il a quelque crainte que [cu] la l[a]ngrave et les ducs de Lunebourg ... [m mo de n t] avec les ennemis et
+qu'ainsy luy et Bavier soient contraincts de se retirer chacun de leur coste. Pour [cu] la l[a]ngrave j'ay peine a le croire veu le traitte
+que l le [t] fait [qu'elle a fait?] depuis peu avec le Roy, mais pour les ducs de Lunebourg c'est chose qui n'est pas [mal aisee a croire]." The bracketed "a"
+in "l[a]ngrave" is a sign the D1-BAL170B reconciliation labelled u4 (read t through the f.229 u4 value); on f.229 the same position in
+"langrave" is the 4u = a shape (see gaps). The quoted passages mix cipher and the letter's own clear words ("tesmoigne qu'il a quelque", "et qu'ainsy", "pour",
+"j'ay peine a le croire veu", "depuis peu", "mais pour", "c'est chose qui n'est pas mal aisee a croire"; upper case in reading_b170f228.txt). One true sentence about content, for the verifier to check: the cipher says the Landgravine
+of Hesse-Kassel and the dukes of Lunebourg are dissatisfied with Banér, and that Chavigny doubts the Landgravine would come to terms with
+the enemy because of her recent treaty with the King, but not the dukes of Lunebourg.
+Where not found: no exemplar match for the wave sign on either sheet; no printed text of f.228 searched (not in this brief; no network).
+Subagents: 4 Sonnet calls (2 shape reads, 2 mark reads). Network: none. Rule 10: no novelty claim made here.
+
+## Remaining gaps (SIG-B228, 8 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: provisional reading audited (AUD1-B167: N3, D2, one audit).
+170 f.228r-v: provisional decode (SIG-B228: H 71, M 70, I 12, U 1 of 154; fr17 FAIL -0.971 vs real_p05 -0.935, above all 40 shuffled nulls).
+168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 f.228r-v reading - blocker: not-attempted; the judge is 0.036 below gate; the 4 f.228v signs D1-BAL170B settled as s:u4 from a u4/4u split (b_L01, b_L05 "la l[?]ngrave") sit where f.229 has 4u = a, and v a_L01's two 71' read unmarked by both SIG-B228 mark reads; next: the same two-blind-read exemplar test for the u4-vs-4u signs of f.228 against f.229 E-a/E-t tiles with decoys, the two 71 marks re-checked, then re-run b167228/judge_null.py, a separate verifier on the reading, ~$2
+- 170 f.229r-v reading - blocker: waiting-on the answer of second audit AUD2-B167 (WORK-QUEUE.tsv, account 1) and the SO-BAL170-F229 reply (SECOND-OPINIONS-QUEUE.tsv); the letter signs stay M until a shape-level control on this hand; next for depth: a shape-level control (letter signs of this hand against the glossed 170 leaves), ~$3
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (8 Oct 2026, SIG-B228)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762; Siblings section above
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values applied to f.228 (B167-228); f.228's unvalued shapes matched to Tomokiyo's block and f.229 tiles by two blind reads with decoys (SIG-B228)
+- [x] print: Avenel VI-VIII, Négociations secrètes t.1, Guébriant histories 1657 and 1913, IA/Google Books/OpenAlex/CrossRef phrase search (AUD1-B167); Tomokiyo's f.228 fragment agrees with the decode at every token (SIG-B228)
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); f.229 letter values settled (D4-B167, D4V-B167) and carried to f.228 (B167-228); 6 of 7 f.228 shapes valued (SIG-B228); untried: the f.228 u4/4u labels against f.229 exemplars, and a glossed text in the f.247 hand
+- [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167); 170 f.228 numeral marks re-read blind twice on line strips (SIG-B228)
+- [x] retry: 170 f.228r re-cut and re-passed (D1-BAL170, D1-BAL170B), decoded (B167-228) and re-decoded with external shape values and marks (SIG-B228)
+Verdict: keep going: 3 internal gaps; cheapest next: two-blind-read exemplar test of f.228's u4/4u signs and the two 71 marks, then re-judge (~$2)
