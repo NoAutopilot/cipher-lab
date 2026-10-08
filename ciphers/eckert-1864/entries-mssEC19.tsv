@@ -379,7 +379,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9074	182	0	SH Beckwith Balto  Washn Sept 17th 1864	SH Beckwith Balto	their way here wiley Lady	67	16	25	3	2	warofrebellion432unit@leaf0(cov29)	29		3
 9074	182	1	SH Beckwith  Washn Sept 20th 1864	SH Beckwith		63	14	27	3	1	warofrebellion422unit@leaf0(cov27)	27		3
 9075	183	0	Beckwith  Washn Sept 21st 1864	Beckwith	10 am	81	17	32	5	2	warofrebellion432unit@leaf0(cov24)	24		3
-9075	183	1	Bickford H. Ferry  Washn Sept 23rd 1864	Bickford H. Ferry		56	17	16	5	1	none	4		1
+9075	183	1	Bickford H. Ferry  Washn Sept 23rd 1864	Bickford H. Ferry		56	17	16	5	1	none	4	LS-R7 E72	1
 9076	184	1	Beckwith City Point  Washn Sept 23d 1864	Beckwith City Point		169	34	71	6	2	warofrebellion432unit@leaf0(cov40)	40		3
 9077	185	0	430 PM To Beckwith City Pt  Washn. Sept 23d 1864	430 PM To Beckwith City Pt		250	49	97	11	1	warofrebellionco0043unit_i5n6@leaf0(cov64)	64		3
 9078	186	0	Capt Smith St Louis  Washn Sept 24th 1864	Capt Smith St Louis		115	39	54	8	1	warofrebellion413unit@leaf0(cov13)	13		3
@@ -467,7 +467,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9116	224	3	Capt Fuller N Orleans  Washn 9 pm Nov 6th 1864	Capt Fuller N Orleans		72	16	25	5	2	warofrebellion414unit@leaf0(cov19)	19		3
 9117	225	1	Capt. W. G. Fuller N. Orleans  Washington Nov 7th 1864	Capt. W. G. Fuller N. Orleans		180	60	97	13	1	warofrebellion414unit@leaf0(cov51)	51		3
 9117	225	2	Sampson  Wash'n Nov. 7th 1864 1130 AM	Sampson		43	13	11	6	1	none	3	LS-R4 E52	1
-9118	226	0	Cipher Clerk Cairo  Washn 1230 pm Novr 7th 1864	Cipher Clerk Cairo		55	10	18	3	1	none	4		1
+9118	226	0	Cipher Clerk Cairo  Washn 1230 pm Novr 7th 1864	Cipher Clerk Cairo		55	10	18	3	1	none	4	LS-R7 E73	1
 9118	226	1	John Horner N. Y.  Washn 1 pm Novr 7th 1864	John Horner N. Y.		80	16	27	2	1	warofrebellion432unit@leaf0(cov34)	34		3
 9119	227	0	John Horner  Washn 1pm Nov 7th 1864	John Horner		36	9	13	2	1	none	3		1
 9119	227	1	Capt Clowry St Louis  Washn Nov 7th 1864	Capt Clowry St Louis		28	12	15	5	1	none	0		1

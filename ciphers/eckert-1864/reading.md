@@ -545,5 +545,17 @@ for [Major] Callender [Command = Er (-ed, -ing)]ing arsenal [St Louis] ---- Issu
 
 Code-word tokens: H 13.
 
-Totals over the 69 entries: H 1150, C 14, I 0, M 0.
+**E72 | Page 183 (printed 181 page; pointer 9075) | 23 Sept 1864 10 AM, to Bickford at Harper's Ferry (faint pencil; operator not given)**
+
+Bickford H. Ferry Washn Sept 23rd 1864 {time: 10 AM} [23] For [Brigadier General] [In the] son [Harpers Ferry] [.] Nearly [5000] [Troops] leave here for [Winchester] this morning [.] Will you see that [Transportation] is ready for them on their a rival at your [Post] and afford them all facilities for a rapid March to their destine nation  {tail: [signed] see see Awe gear [Brigadier General] finis}
+
+Code-word tokens: H 16.
+
+**E73 | Page 226 | 9118 | 7 Nov 1864 12.30 PM, to Cipher Clerk at Cairo, signed B F Greene chf clerk for chf Bureau (printed page 224)**
+
+[Washington] {time: 12.30} [7] for [S. P. Lee] Mound City [By the way of] [Cairo] [.] Be pleased to direct polkers in your [Marine] to make all important signals by adding a number utopia (toby designated in your order utopia) to signal numbers made and subtracting the same number from signal numbers received  {tail: [signed] B F Greene Chf Clerk for Chf Bureau}
+
+Code-word tokens: H 9.
+
+Totals over the 71 entries: H 1175, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->
