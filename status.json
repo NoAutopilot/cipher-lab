@@ -4238,7 +4238,8 @@
       "key": "period",
       "audit_refs": [
         "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
-        "AUDIT.md '## AUDIT 2 (second adversarial, D12-V2R)'"
+        "AUDIT.md '## AUDIT 2 (second adversarial, D12-V2R)'",
+        "AUDIT.md '## G3 check (V1-G3A): E5, N2-M, N2-T, N2-R, N2-AI, N2-AJ'"
       ],
       "audit_status": "two audits",
       "superseded_by": "",
@@ -4255,7 +4256,7 @@
       "kind": "reading",
       "title": "Eckert 1864: Augur to Meade, 26 Apr 1864, a party needing co-operation from Warrenton and Point of Rocks (N2-R)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (I/33, I/51 pt 1), the Grant Papers, Meade's Life and Letters, the Huntington collection's full text, the Zooniverse project pages, Internet Archive or Google Books full text, or the open scholarship indexes (searched 7 Oct 2026, two audits).",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (I/33, I/51 pt 1), the Grant Papers, Meade's Life and Letters, the Huntington collection's full text, the Zooniverse project pages, Internet Archive or Google Books full text, or the open scholarship indexes (searched 7 Oct 2026, two audits). Most of the clear words of the ledger entry have been public in the Huntington's volunteer transcription since 2018; what the key adds is Warrenton, Point (of Rocks), force and the correspondents (G3 check V1-G3A, 8 Oct 2026).",
       "gap": "Supplement to the OR unsearchable from the cloud and JSTOR rows pending, so not N4; SO-ECKERT-N2R queued",
       "phrases": [
         "Huntington mssEC 19 p.56, pointer 8948"
@@ -4280,7 +4281,8 @@
       "key": "period",
       "audit_refs": [
         "AUDIT.md '## AUDIT (propagation, D12-VP)'",
-        "AUDIT.md '## AUDIT 2 (second adversarial, D4-V2AI)'"
+        "AUDIT.md '## AUDIT 2 (second adversarial, D4-V2AI)'",
+        "AUDIT.md '## G3 check (V1-G3A): E5, N2-M, N2-T, N2-R, N2-AI, N2-AJ'"
       ],
       "audit_status": "two audits",
       "superseded_by": "",
@@ -4297,7 +4299,7 @@
       "kind": "reading",
       "title": "Eckert 1864: Howell to Ingalls, 8 Mar 1864, water transportation at Yorktown and cavalry horses (N2-AI)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I vols 33, 36 pt 1, 51 pt 1), the Grant Papers vol. 10, Butler's printed Correspondence vol. 3, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar, CORE or CrossRef (searched 7 Oct 2026, two audits).",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I vols 33, 36 pt 1, 51 pt 1), the Grant Papers vol. 10, Butler's printed Correspondence vol. 3, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar, CORE or CrossRef (searched 7 Oct 2026, two audits). Most of the clear words of the ledger entry have been public in the Huntington's volunteer transcription since 2018; what the key adds is the 40 code words (Yorktown, Monroe, New York, 1,000, 1,400, cavalry, horses and others) (G3 check V1-G3A, 8 Oct 2026).",
       "gap": "NARA RG 92/RG 107/RG 393 copies, the Supplement to the OR and OR ser. III vol. 4 full text unread, JSTOR rows pending, so not N4; SO-ECKERT-N2AI queued",
       "phrases": [
         "Huntington mssEC 19 p.18, pointer 8910"
@@ -4407,7 +4409,8 @@
       "key": "period",
       "audit_refs": [
         "AUDIT.md '## AUDIT (propagation, ECK64-NO2 verifier)'",
-        "AUDIT.md '## AUDIT 2 (second adversarial, D12-V2T)'"
+        "AUDIT.md '## AUDIT 2 (second adversarial, D12-V2T)'",
+        "AUDIT.md '## G3 check (V1-G3A): E5, N2-M, N2-T, N2-R, N2-AI, N2-AJ'"
       ],
       "audit_status": "two audits",
       "superseded_by": "",
@@ -4424,7 +4427,7 @@
       "kind": "reading",
       "title": "Eckert 1864: the Secretary of War to Dana, 6 June 1864, two French officers (N2-T)",
       "grade": "N4",
-      "line": "Read at grade H/C with the period Cipher No. 2 book; no prior decipherment located (OR, The Papers of Ulysses S. Grant, Dana's Recollections, Bates, Plum, the Huntington's full text and the Zooniverse project, searched 7 Oct 2026); Dana's two replies are printed in OR I/36 pt 1 p.91 and I/40 pt 1 pp.24-25.",
+      "line": "Read at grade H/C with the period Cipher No. 2 book; no prior decipherment located (OR, The Papers of Ulysses S. Grant, Dana's Recollections, Bates, Plum, the Huntington's full text and the Zooniverse project, searched 7 Oct 2026); Dana's two replies are printed in OR I/36 pt 1 p.91 and I/40 pt 1 pp.24-25. The clear words of the ledger entry (most of the sentence) have been public in the Huntington's volunteer transcription since 2018, and Dana's 7 June reply prints the topic; what the key adds is the code words (officers, colonel, captain, operations, Grant, headquarters, front) (G3 check V1-G3A, 8 Oct 2026).",
       "gap": "Stanton papers (LoC) and NARA RG 107 telegrams sent unread (unpublished, not excluded at N4); JSTOR rows queued 7 Oct 2026; SO-ECKERT-N2T queued",
       "phrases": [
         "Huntington mssEC 19 p.87, pointer 8979"
