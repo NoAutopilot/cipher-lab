@@ -1482,6 +1482,72 @@ python3 ../../tools/iiif_lines.py --image <scratch>/s10_region_rot2.jpg --out im
 Overlay checked (`images/crops_L10/L10_lines_debug.jpg`): L01 is the clear line "avs memande Responder en este particular
 luego"; L02-L24 are the 23 lines of the block, one line per crop.
 
+**Blind passes.** Two Sonnet subagent calls, crops only, notation as PREREG_OLD-PASS2; pass A L01->L24, pass B L24->L01
+(`transcription/passK_OLDS10_L10_{A,B}.tsv`, 191 and 190 tokens). `python3 scripts/decode_L10.py --diff`:
+`L10 edits 192 mean_len 906 disagreement 21.2%` -- over the 10% rule: **split recorded, no third machine pass** (prereg item 3).
+Part of it is line identity, not signs: pass B put L04's text under L05 and L05's under L04 (the grading's best-matching-line
+rule is not affected). Both passes write this hand's cursive r as `v` and pass A writes l as `(`. Agreement, not accuracy.
+
+**Reconciliation (one unit).** Opus, my eye on the same crops (`transcription/reconciled_L10_OLDS10.tsv`, 23 cipher lines + the
+clear L01/L24 lines). Letters set from the image (r for the passes' v; the superscript "ra" in L08 and "clerigo" over the
+struck word in L09 kept as interlinear); doubtful signs left as seen (L02 "2b3dr4", "cr4d4d7" under an ink blot; L04/L23
+"4b827" probably "atreuo" but the ascender is not settled; L05 "3nq28s3d7r"; L13 "h8237"; L16 "h4237"; L17 "m4378"; L24
+"8n8t87"), not repaired to a better word; words the scribe wrote joined are kept joined ("8ns2c4s4", "c3ll8r34c7n").
+
+**Decode and grades.** `python3 scripts/decode_L10.py` -> `reading_L10.txt`, `reading_L10_tokens.tsv`; `--check` exit 0.
+Cipher tokens 191: **H 0, C 0, S 50, M 141, I 0** (clear tokens 13). Digit tokens (2/3/4/7/8) 426: S 67 (**15.7%**), M 359.
+**Longest contiguous S stretch: 6 digit tokens** ("de santiago i") -- below the folder's small-liberty AD floor (24.2-24.4
+digits, AUDIT 2a) and far below the AD with 141 M words counted as liberties (AUDIT 3c's rule). Numbers only; the verifier
+sets depth. Cryptanalytic result (no H or C). Sensitivity, NOT registered: normalising the passes' v->r and (->l on both
+sides before the S test gives S 73 / M 118, digit S 112/426 (26.3%), longest S stretch 7 -- the registered S rule is held
+down mostly by the passes' notation, not by the decode.
+
+**Matched control (prereg item 6; can differ from the target: the statistic depends on the key).** `python3 scripts/decode_L10.py --control`:
+```
+cipher tokens scored (V.S. excluded): 190
+fixed key 2=u3=i4=a7=o8=e: lexicon-hit share 0.684; rank 1 of 120
+119 permutations: mean 0.396, max 0.553; top three: 2=u3=i4=a7=o8=e 0.684; 2=u3=o4=a7=i8=e 0.553; 2=i3=u4=a7=o8=e 0.553
+```
+Registered pass mark met: the fixed key ranks 1 of 120 and beats the best permutation by 0.131.
+
+**Judge (es1600, rule 7; spec copy with `"language": "es1600"`; cipher-only decode `transcription/reading_L10_cipher_only.txt`):**
+```
+reading_L10_cipher_only.txt  FAIL language: score=-1.121, null_p99=-2.004, real_p05=-0.837, real_median=-0.781, mode=both, N=860
+                             ok   words: cover=0.843, min=0.5, real_text_median_cover=0.907
+shuffled decode seed 1       FAIL language: score=-2.056
+shuffled decode seed 2       FAIL language: score=-2.049
+shuffled decode seed 3       FAIL language: score=-2.106
+```
+FAIL, the same shape as B/C1 and L457: far above the shuffled nulls, below real_p05; the stream is cipher fragments joined
+(every clear word and V.S. dropped), N=860 only.
+
+**What the block says (fixed-key decode; a solver's reading, mostly M-graded).** After "a V.S. me mande responder en este
+particular luego": the writer will not decide without V.S.'s answer on a particular; a lady's descent is at issue -- she and
+the inquisitor Salcedo had as grandmother "una hija de un clerigo y de una muger casada con un herrero", who confessed that the
+clerigo fathered the girl on her while the herrero was away; the clerigo kept the girl as his daughter in his house and fed
+and dowered her; to marry her off "debieron de hacer al inquisidor colegial en Oviedo y despues inquisidor", and later married
+brothers of caballeros;
+now, they say, Don Garcia de Medrano, collegial of Salamanca, native of Soria, of the habit of Santiago, of the Consejo Real,
+has married his elder brother, holder of the mayorazgo, to a sister of this doncella, and an oidor of the Chancilleria
+recently; "con todo eso por ser muger casada aquella del herrero, y ver por equivocaciones tantas cosas claras torcidas en
+el mundo, no me atreuo a nada sin el parecer de V.S.", "assi ... como todo lo demas del memorial".
+
+**Prior-work check 5 (G3).** `tools/prior_work.py ... --step-type decode --reading reading_L10.txt --network` took its
+phrases from the file header (a tool artefact, not a test); re-run with six decoded phrases (scratch file, listed here:
+"por abuela una hija de un clerigo y de una muger casada con un herrero", "el inquisidor Salcedo", "don Garcia de Medrano
+colegial de Salamanca natural de Soria del habito de Santiago", "del consejo real un hermano mayor suyo mayorazgo con una
+hermana desta doncella", "poco ha caso un oidor de chancilleria", "por equivocaciones tantas cosas claras torcidas en el
+mundo"): IA global 4 items for the Medrano phrase (Alcala university and Granada works naming the man, not this letter);
+Google Books generic "inquisidor" titles; recorded CLEAR with reasons in prior-work.tsv. Not located there; the verifier diffs.
+
+Requests: none to any archive host (scan 10 on disk); prior_work.py --network: its own IA/Google Books calls only. Subagent
+calls: 2 blind passes (Sonnet). Reconciliation one unit (this session).
+
+**Verdict: open** (unchanged; a verifier classifies). Next steps: (o3') verifier for the scan 10 block (AUDIT, N/D under the
+depth bar), ~$2.5; (o2) masked re-cut + blind passes on L4/L7 as before, ~$9; (o4) a pass-notation fix for the S rule
+(passes told to write the cursive r as r, or the S normaliser folding v->r on both sides, pre-registered) before any further
+block, since the registered S share on this block moves 15.7% -> 26.3% on that alone, ~$1.
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
