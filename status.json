@@ -3089,18 +3089,18 @@
       "reading_version": "9f4b969 (reading.txt at V6-MERCY2, 2159f63); revised after both audits at 5b08322 (R7-MREV, logged in AUDIT.md 'Post-audit reading change')",
       "superseded_by": "",
       "fields_source": "espagnol142-mercy-1648/AUDIT.md section 1 and S2.1 (N3, key ours); S 496, M 26 of 522 after R7-MREV (the audited version read S 494, M 27 of 521)",
-      "depth": "D2",
+      "depth": "D1",
       "depth_pct": 92.2,
       "depth_unread": {
-        "names_codes": "word codes left unread (marks)",
-        "other": "41 M"
+        "names_codes": "8 (2 box name-sign tokens, 6 letters inside Cheureuse, Cleues, Conrad, Burgstorf)",
+        "other": "33 M ordinary letters"
       },
-      "depth_sentence": "The instruction tells Mercy to go and see the Elector of Brandenburg and his High Chamberlain, for whom letters of credence are being sent to him.",
-      "depth_check": "matched control (anneal beats it by 167-181 points) and shuffled-stream controls; rule-7 byte-identical; no external check and no AD computed on file, so D3 withheld",
-      "depth_note": "S 488 of 529 in the current reading.txt (audited S 496 of 522)",
-      "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
-      "depth_date": "4 Oct 2026",
-      "decode_status": "Partially decrypted",
+      "depth_sentence": "The instruction tells Mercy to go to Cleves to see the Elector of Brandenburg and his High Chamberlain and to propose raising three thousand infantry in two or three regiments in that country.",
+      "depth_check": "DV-MERCY 8 Oct 2026: cipher clause not met (longest S run 53 letters within a segment vs AD 141 es17 / 135 es17c / 84 at R 3.4); code clause not met (box sign unread, value I and circular); residue 33 of 41 ordinary letters; external check met (Lonchay-Cuvelier IV no. 183 p.71); design-matched exact-profile control (H1) puts the target inside the real-text band, the 167-181 gap was over a non-matched control; D2 not licensed under the 8 Oct depth bar, lowered to D1",
+      "depth_note": "S 488, M 41 of 529 (decode_key --check exit 0, 8 Oct 2026); AUDIT.md '## Depth re-rule (DV-MERCY, 8 Oct 2026)'; convention flag posted to the parent",
+      "depth_by": "session_01E9ntQhmaNJrhBPBZuo4RZw",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Non-decrypted",
       "text": "unknown"
     },
     {

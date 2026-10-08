@@ -497,3 +497,72 @@ is unchanged for the same reason. Outward wording for this code: "15 proposed as
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **BnF Espagnol 144 f.22r-v (Gallica btv1b10035717h, canvases 58-59), instruction to Mercy, B**: **D2** (Partially decrypted; outward "partially deciphered (about 92%)"), 92.2% (S 488 of 529 in the current reading.txt (audited S 496 of 522)). Check: matched control (anneal beats it by 167-181 points) and shuffled-stream controls; rule-7 byte-identical; no external check and no AD computed on file, so D3 withheld. Sentence: "The instruction tells Mercy to go and see the Elector of Brandenburg and his High Chamberlain, for whom letters of credence are being sent to him."
+
+## Depth re-rule (DV-MERCY, 8 Oct 2026)
+
+Verifier DV-MERCY (account 4, LANE DEPTH, session_01E9ntQhmaNJrhBPBZuo4RZw), 18:44-19:0x UTC by date -u; brief
+`.claude/briefs/runs/2026-10-08-acct4-depth-wave1.md` "## DV-MERCY"; bar `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`,
+copied into `PREREG-DV-MERCY.md` and pushed (d0fd735d) before any statistic. Nothing decoded; N-class (N4) untouched.
+Item: BnF Espagnol 144 f.22r-v, instruction to Mercy, Barneton, 6 June 1648.
+
+**Ruling: D1 (lowered from D2, 4 Oct 2026). Outward: "fragments read"; decode_status Non-decrypted.** The reading is
+not changed by this ruling; what changed is that the rule-4a clauses were computed for the first time and neither is met.
+
+1. **Re-derivation.** `python3 tools/decode_key.py ciphers/espagnol142-mercy-1648 --check`: "tokens 529: M 41, S 488",
+   "reading up to date", exit 0. H 0, C 0, S 488, M 41, I 0, U 0; no nulls (one M token, r10:14, is the empty second half
+   of the merged 28 and contributes no letter). 92.2% S.
+2. **Cipher clause: not met.** `tools/depth_stats.py --cipher-class code<=120 --shuffle all --seeds 8100-8149`:
+   V 21, distinct cipher codes 34, H_design 149.3 bits, liberties 41.0 bits (41 M), H(K) 190.3 bits;
+   es17 (NOTES.md's judge corpus): R 2.023, unicity 94.1, **AD 141.1 letters**; es17c: R 2.114, AD 135.1; at R = 3.4: AD 84.0.
+   Even design-only (no liberties) at es17 R: 1.5 x 149.3 / 2.023 = 110.7. Longest contiguous S stretch, counted within one
+   cipher segment (clear text breaks a run; the tool's own figure, 58, joins v08-v09 to v11-v13 across a clear passage):
+   **53 letters** (r13-v09 segment, v01-v04 "...amaremayorsiquerraencargaedellayquecorraporsunoladire"); per segment
+   r04-r05 16, r06-r07 12, r08-r11 23, r13-v09 53, v11-v13 33. 53 < 84 < 141. Sensitivity (not a ruling): with the
+   three key-level M codes 9, 15, 25 treated as S wherever their sign is read H, the longest run is 63, still below every AD.
+   The M tokens are spread through the long segment (r16-r24 carry 26 of them), so no contiguous stretch reaches AD.
+3. **Code clause: not met.** The only code-class signs are [MARK:box] (2 tokens, r07:5, r09:6; value `_`, unread in
+   key.tsv) and [MARK:frac] (1 token, v01:6; a corrected letter group read c, not a code). The box's identification as
+   Saint-Ibal is grade I (Bourdeau 1 Oct 2026, from the clear sibling f.21r) and was chosen to fit these same two
+   contexts (H29), so "reads sensibly in two contexts" would be circular; the value is not in the reading. No other code.
+4. **Residue (41 non-S tokens), token by token** (contexts from reading_tokens.tsv): name/code **8** -- r07:5 and r09:6
+   (box name sign), r06:14 (c of Cheureuse), r14:7 (c of Cleues), r16:6 and r16:9 (c, u of "Copurad" = Conrad),
+   r16:21-22 (t, o of "Burgstorf"); ordinary letters **33** -- r04:17, r06:7, r09:7, r10:8/13/14, r16:3, r17:4/5/10/11/21/22,
+   r18:5/6, r19:10, r20:6/7/15/16, r22:2, r23:1/2, r24:4/5/14/15, v01:6, v01:15, v04:9, v04:19, v07:15/16. Gaps are
+   mostly ordinary text (33 of 41), so the D3 "gaps mostly names/codes" element fails too.
+5. **Matched control.** The 167-181-point gap quoted at DEPTH-REGRADE is over Y8's frequency-allotted control, which is
+   not the design-matched control: H1 (27 Sept 2026, NOTES.md "Campaign step H1") ran the exact-profile control (same
+   N 521, K 38, the target's own sign-count multiset, Spanish) and found the target **inside** that control's band
+   (es17: target -1154.3 vs out-of-sample control mean -1140.4, band -1227.8..-1088.2; the control reads 91-99% blind),
+   and withdrew the "beats the control" sentence. So the design-matched control says "the solver reads real Spanish of this
+   shape and the target scores like real Spanish" -- supportive, but not a margin; DEPTH-REGRADE's "matched control
+   (anneal beats it by 167-181)" is corrected here. Item control (i) of depth_stats (longest stretch segmenting into es17
+   words): target 236 vs 50 value-shuffled keys p95 37, max 54 (es17c: 205 vs p95 36, max 51) -- strong, but it is an item
+   control, not a 4a clause.
+6. **External check: found (on file, not new here).** Lonchay-Cuvelier IV (1933) no. 183 p. 71 ([date] juin 1648,
+   Leopold-Guillaume to Philip IV; SEE reg. 240 f.201; MERCY-N4 row 4, 28 Sept 2026): "On a demandé à [gap] de demander à
+   l'Électeur de Brandebourg, s'il y aurait moyen de lever 3,000 fantassins dans ses États" -- an independent period
+   précis agreeing with the reading's errand (the Elector of Brandenburg; "tres mil hombres de infanteria"). Sources tried
+   this session for anything further: none beyond the AUDIT.md logs (Le Clerc III-IV, APW digital with control,
+   Cuvelier-Lefèvre VI p.647, Lonchay 1896, Cousin, Google Books 19+36 queries, OpenAlex, Semantic Scholar, JSTOR rows) --
+   no network request was made; Gallica untouched (403 at 18:40, lane probe). The historical Konrad von Burgsdorff,
+   Brandenburg Oberkämmerer in the 1640s, fits the reading's "Conrad Burgstorf su camarero mayor" (general knowledge,
+   not a logged source; not used for the ruling). Under the bar the external check is a D3/D4 element and does not replace
+   a clause at D2.
+7. **Why D1 and not D2/D3.** D2 needs one clause (neither met); D3 needs >= 80% (met, 92.2%), gaps mostly names/codes
+   (not met, 8/41) and external check or AD + matched control (external check met). Hold D1; depth is lowered on revision.
+   Sentence (true, written from the reading; kept on the row, not a D2 licence): "The instruction tells Mercy to go to
+   Cleves to see the Elector of Brandenburg and his High Chamberlain and to propose raising three thousand infantry in
+   two or three regiments in that country."
+8. **Convention flag (posted once in ROOM.md for the parent, per the bar).** For a letter-homophonic item whose whole
+   528-letter reading is under one 34-code key, AD (~141) is under a third of the item, and H(K) already charges the 41 M
+   tokens as liberties; requiring the AD to be met by one *contiguous* S run charges those same M tokens a second time
+   (each one also breaks the run). Here that turns a 92%-read letter with an external period confirmation into D1. The
+   ruling stands under the bar until the owner changes it.
+
+**What would move it.** (a) Any 4a clause: resolving enough of the r16-v07 M tokens on the image (v04:9/v04:11 blind
+reads are the folder's own next step, ~$4) would not reach AD on its own (63 < 84 even with codes 9/15/25 settled); a
+contiguous run > 141 needs most of r17-r24's M tokens settled at S, i.e. a key source or the 15 April Brussels sibling
+(ASKS row 60 / SEND-QUEUE S3). (b) An owner decision on the convention in item 8.
+
+**Postmortem.** DEPTH-REGRADE (4 Oct) set D2 without computing AD or testing the code clause, and cited the
+frequency-allotted control that H1 had already withdrawn a week earlier; both corrected here.
