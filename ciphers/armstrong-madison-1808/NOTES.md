@@ -4231,14 +4231,34 @@ this tool at this specimen length, not a negative on any system. No network, no 
 
 ## Remaining gaps (loose-ends pass, 8 Oct 2026)
 Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- the 7 Jan 1806 Armstrong-Monroe four-surface item, absent at its expected place on LOC Monroe reel 3 (frames 720-739 other material) - blocker: not-attempted; noted in the body at NOTES.md:2015, never carried as a step (loose-ends 8 Oct 2026); next: search another LOC or NYPL surrogate and the reel index for the 1806 item, ~$1.5
+- the private Armstrong-Monroe cipher's surviving siblings (NYPL Monroe Papers, Armstrong to Monroe 22 Jan, 5 Apr, 4 May 1805, each 'partially in code and deciphered') - blocker: waiting-on a reply from the Papers of James Monroe (UMW) to outreach/armstrong-keyhunt-monroe-papers.md (gate-7 ready, owner sends); evidence: campaign step H78 (8 Oct 2026) closed the 7 Jan 1806 item as a lead (UMW 83746, LOC LS, no code note), leaving these three as the only coded Armstrong-Monroe letters 1804-1808
 
 ## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: search another LOC or NYPL surrogate and the reel index for the 1806 item; ~$1.5; source: loose-ends 8 Oct
+- [x] siblings: the 1806 item checked against the UMW catalogue capture (H78, 8 Oct 2026): LS, no code note; the coded Armstrong-Monroe siblings are the three NYPL 1805 letters, images requested via outreach/armstrong-keyhunt-monroe-papers.md (ready, owner sends)
 - [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: search another LOC or NYPL surrogate and the reel index for the 1806 item, ~$1.5
+Verdict: keep going: 0 internal gaps; cheapest next: assess the six unassessed escalation steps (clear-pages, known-keys, print, key-rebuild, image-check, retry) against NOTES/HYPOTHESES, ~$1
+
+## Campaign step H78 (2026-10-08 05:3x UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh). No network call, no vision call.
+Question (loose-ends gap of 8 Oct): where is the 7 Jan 1806 Armstrong-to-Monroe item that the 1963 LOC index lists (4 pp.) but
+that is absent at its expected place on LOC Monroe reel 3, and is it a coded sibling of the target?
+Instrument: the UMW Monroe Catalogue Online capture already on file (keyhunt/monroe-catalogue-2026-10-07/, TOMO-ARM W1, 7 Oct),
+read with `awk -F'\t' '$2 ~ /^180[4-8]/ && $4 ~ /Monroe/' armstrong_to_any.tsv` (cols id, date, sender, holding).
+Result: the item is UMW 83746, 1806.01.07, Armstrong to Monroe, Paris, "Library of Congress: Monroe Papers (LS)", digital image
+held by the project; summary "poor health ... American negotiations in France ... in Spain; European affairs; Kosciusko". The
+holding field carries no code note. Of the 19 Armstrong-to-Monroe entries 1804-1808 in the capture, exactly three carry
+"partially in code and deciphered": 22 Jan 1805 (ALS), 5 Apr 1805 (LS), 4 May 1805 (LS), all NYPL Monroe Papers.
+Control: the same field correctly flags the known coded items in the capture (Erving to Monroe 5 Feb 1806, LOC, "partially in code
+with deciphered text interlined", screened in H25/H29; Madison to Monroe 10-11 Mar 1806), so a missing code note on 83746 is
+evidence, not a field that is never filled.
+Reading: the 1806 item is, on the catalogue's evidence, a clear letter, not a sibling of the private cipher; its reel-3 frame stays
+unlocated, which no longer matters for the target. The coded siblings remain the three NYPL 1805 letters, whose images the ready
+outreach draft A asks for. Inferred, not image-checked: the absence of a code note is the catalogue editors' description.
+Files: none new (the capture on file is the source). No class or reading change.
+
