@@ -86,3 +86,18 @@ from Google Books in aud1b167/print-check.tsv); (2) re-rule depth under .claude/
 whether word codes 8: leur and 10: les meet the code clause; (3) check one spot of the reconciled ciphertext against the crops
 (images/crops/b170f229v_L02, L12-L13). Write '## AUDIT 2 (AUD2-B167)' in AUDIT.md, update the status.json row (audit_status), and mark
 the WORK-QUEUE row done. Rule 10 wording only.
+
+## Next sibling round (SIBS-PREMISE, account 4, 8 Oct 2026, 12:40 UTC by date -u)
+Premise pass on SIBLINGS-2026-10-08.tsv done for all 32 rows with p_counted >= 0.1 (disk only; state + NOTES line quoted in the
+evidence column; rows below 0.1 left as they were, not premise-passed). Result: 12 glossed/read/printed rows that the old column called
+`unread`, 9 `unread-unglossed` rows remain (fewer than ten exist at p >= 0.1). Ranked by yield_per_usd, key in hand marked:
+1. eckert-1864 Cipher No.9 remainder (~33 of ~43), $2, p 0.20, key-no9.md + decode_no9.py in hand (O9-AH..BC already read/audited; pre-filter OR I-III, ORN, Huntington transcription first).
+2. eckert-1864 Cipher No.2 headquarters entries (~180 of ~201 unread), $4, p 0.35, mssEC 47 key (H) in hand.
+3. eckert-1864 Cipher No.1 remainder (~540 of ~583 guessed), $5, p 0.35, key.md in hand; most are N1/N2 in print, so filter first.
+4. ceppo-nevers fr.4702 f.36r, $3, p 0.15, Ceppo-Nevers key in hand (ranks 1/201 on both passes); no gloss on f.36r (f.37 has it); next: reconcile the 136 '?' splits against the f.37 gloss, then judge (currently FAIL, 514 M).
+5. lodewijk wvo-11008-certain-1572, $2, p 0.10, printed 1572 Orange-Nassau table (key_nepveu, numerals = multiples of 3) in hand; 54 numerals only, so small.
+6. sachsstaatsarchiv-manteuffel Loc. 694/09 (302 frames) + uninventoried 694/08, $5, p 0.15, Krauske table (codes 1-401) in hand; first extend frame_classify.
+7. eckert-1864 mssEC 18 (413 images, most unopened), $6, p 0.25, key.md in hand; same pre-filter.
+8. hellen-frederick-1752 R1049, $8, p 0.10, NO key in hand (R4376 failed controls; R4377/R4379 Potsdam sheets untried, images not on disk).
+9. hellen-frederick-1752 1763 cluster, $4, p 0.10, NO key in hand (HEL-T2 controls below gate; needs a 1763 table, Add MS 32276 R4381-R4408).
+Also open but not a sibling-table row: fr.16105 ink piece 38 (4 June 1573 second copy), $1, p 0.08, Tomokiyo key in hand (SIBS-READ already handed up fr.16104 piece 52 as VIV52).
