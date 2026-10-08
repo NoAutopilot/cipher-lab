@@ -4222,3 +4222,9 @@ What it changes: nothing read; it confirms that the edition holds no key or sibl
 recipient-side witnesses. TOMO-ARM wave 1's Armstrong-Monroe private cipher (NYPL 1805 letters deciphered by Monroe; LOC reel 4
 f.0302, 10 July 1807 P.S.) is not in the edition's knowledge as stated and is the lead to test (W2). A reply that thanks her and
 shares that finding (no ask) is in OUT-UMW's brief as draft B; gate 7 before the owner sends.
+
+## H77 dot-position statistic (8 Oct 2026, 01:09-01:12 UTC, LANE TOMO-ARM)
+Reader-free test of the owner's 5 Oct dot-vowel lead (h77/, prereg 06634cff pushed before any score). Control: Mavor 1792
+plate V vs Byrom 1796 plate I specimen lines on disk, split-half JSD of a 3 x 3 dot-position histogram -- cross 0.193 vs
+within 0.139, permutation p 0.149 (gate 0.01), Mavor only 12 dots (gate 40). Gate FAIL: Armstrong not scored. Untested by
+this tool at this specimen length, not a negative on any system. No network, no model calls.

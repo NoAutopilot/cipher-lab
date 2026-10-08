@@ -1,0 +1,52 @@
+{
+ "control": {
+  "cross": 0.19292869530575843,
+  "within": 0.1389867546348986,
+  "perm_p": 0.1489255372313843,
+  "dots_mavor": 12,
+  "dots_byrom": 44,
+  "gate": 0.0,
+  "lines": {
+   "M1": {
+    "dots_used": 2,
+    "dots": 2,
+    "strokes": 20
+   },
+   "M2": {
+    "dots_used": 3,
+    "dots": 3,
+    "strokes": 18
+   },
+   "M3": {
+    "dots_used": 3,
+    "dots": 3,
+    "strokes": 19
+   },
+   "M4": {
+    "dots_used": 4,
+    "dots": 4,
+    "strokes": 18
+   },
+   "B1": {
+    "dots_used": 13,
+    "dots": 13,
+    "strokes": 18
+   },
+   "B2": {
+    "dots_used": 9,
+    "dots": 9,
+    "strokes": 35
+   },
+   "B3": {
+    "dots_used": 17,
+    "dots": 17,
+    "strokes": 22
+   },
+   "B4": {
+    "dots_used": 5,
+    "dots": 5,
+    "strokes": 28
+   }
+  }
+ }
+}

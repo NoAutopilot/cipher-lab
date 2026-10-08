@@ -1397,3 +1397,8 @@ here (ARM-C1, H27, H73), so the next attempt needs new material, not a further s
 | family | control / baseline | target | gate | verdict |
 |---|---|---|---|---|
 | crop tool: `iiif_lines.py --deskew --mask-neighbours` vs old crops, 15 ms/glyphs disagreement stretches, 2 blind Sonnet passes each | OLD agreement 92.7 (exact 0.53; abs dev from 2-of-3 consensus 2.06) | NEW 93.8 (exact 0.53; abs dev 1.44); no consensus mark lost | NEW >= OLD + 5 | **FAIL**; the old baseline is near ceiling, so this is untested by this metric at N=15, not refuted. Flags stay default off |
+
+## H77 reader-free dot-position statistic (8 Oct 2026, LANE TOMO-ARM): control below gate, target not scored
+| family | control | target | gate | verdict |
+|---|---|---|---|---|
+| shorthand dot placement (h77/dotpos.py, prereg 06634cff) | Mavor plate V vs Byrom plate I, 4 lines each: cross JSD 0.193 vs within 0.139, perm p 0.149; dots 12 / 44 | not scored | cross > within, p <= 0.01, >= 40 dots per system | **untested-by-this-tool** (specimens too short), not refuted; needs longer connected specimens |

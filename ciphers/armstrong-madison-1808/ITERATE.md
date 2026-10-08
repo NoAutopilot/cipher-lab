@@ -48,3 +48,12 @@ Moved something: catalogue/document instruments (Monroe Catalogue, LOC reel read
 26 Sept: in-house solvers and model glyph readers at N=369 (retired). The data now point at one witness family -- the
 Armstrong-Monroe private cipher, 1805-1807 -- whose specimens with period decipherment sit at NYPL. Standing state after this
 wave: waiting on W2 images (NYPL reply / UMW editors), the owner's sorter "done" (ASKS 128), and the fr.4688 copy order.
+
+| date (UTC) | hypothesis | instrument | matched control | result (both numbers) | verdict | what it taught |
+|---|---|---|---|---|---|---|
+| 8 Oct 2026 01:09-01:12 | W4. Dot placement relative to strokes carries a shorthand-system signature (owner's Mavor dot-vowel lead, 5 Oct) | h77/dotpos.py: Otsu + 8-connected components, dot = <0.15 x median area, 3 x 3 position cell vs nearest stroke; no model reader; prereg h77/PREREGISTRATION.md (06634cff) | Mavor 1792 plate V vs Byrom 1796 plate I specimens on disk (4 lines each), split-half within vs cross JSD, 2000 label permutations; must separate the two systems before the target is scored | control: cross 0.193 vs within 0.139, perm p 0.149 (gate <= 0.01); dots Mavor 12, Byrom 44 (gate >= 40 each); target not scored | non-test (control below gate) | Untested-by-this-tool, not refuted: four engraved lines per system give too few dots (Mavor 12) to show a system signature, so the statistic cannot yet discriminate. It would need longer connected specimens (dozens of lines per system), which is new material, not a setting. |
+
+Next best attempt and why (8 Oct 2026 01:12 UTC): unchanged -- **W2, the NYPL Armstrong-to-Monroe 1805 coded letters** (OUT-UMW on
+account 2 is contacting the UMW editors; the NYPL email of 5 Oct awaits a reply). Every in-house instrument on this target is now
+retired or untested for lack of material (nomenclator x3, model plate/glyph readers, crop flags, dot-position). The lane is
+waiting on W2 images, the owner's sorter (ASKS 128) and, for Birago, the fr.4688 copy order; it re-checks once a day.
