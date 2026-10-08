@@ -509,5 +509,17 @@ Cleveland O. [Washington] May 6th {time: 12.30} for Stager ---- The service requ
 
 Code-word tokens: H 7.
 
-Totals over the 63 entries: H 1017, C 13, I 0, M 0.
+**E63 | Page 144 | 9036 | 6 Aug 1864 11.30 AM, to Grant (code word Japan), at Monocacy Junction (McCaine, No 1)**
+
+Monocacy Junc. [Washington] {time: 11.30 AM} August [6] for [Maj Genl U.S. Grant] [.] one [Brigade] of Torbert's [Division] of [Cavalry] [Left] last night & another will start this morning for [Harpers Ferry] [By the way of] money cacy ---- As your wreath of last nite says ["] send all [Cavalry] yet to arrive Etc ["] I presume you allude to the [Division] expected from [City Point] ---- Do you want an order issued making a mily [Division] of the [4] [Department]'s or shall it await your return here [?] [General in Chief] End
+
+Code-word tokens: H 21.
+
+**E64 | Page 146 | 9038 | 7 Aug 1864 12.30 PM, to Sheridan (code word Nabob), signed Jupiter (McCaine, H. F.)**
+
+[Washington] {date: Aug 7} {time: 12} For [P. H. Sheriden] [.] Do not hesitate to give [Command = Er (-ed, -ing)]'s to Officers in whom you repose confideants with out regard to claims of others on account of rank [.] If you deem Torbert the best man to [Command = Er (-ed, -ing)] the [Cavalry] place him in [Command = Er (-ed, -ing)] aug give Dismiss some other [Command = Er (-ed, -ing)] or relieve Sapan [Expedition] and order him to nick to [Maj. Gen. David Hunter] [.] What we want is prompt & active [Movement]'s [After the] [Enemy] in accordance with the instructions you already have stop I feel every confide ants that you will do for the very best & will leave you as far as possible to act on your own judgement  {tail: [signed] [Maj Genl U.S. Grant] [.] another {time: 12.30} For [P. H. Sheriden] [.] The [Department]'s of [Washington] Pikin the Middle [,] the Susquehanna and of [West] um [Virginia] have been formed in to a Military [Division] called the Middle [Division] and you have been as signed tooth temporary [Command = Er (-ed, -ing)] [.] Orders will be sent to you by mail at once [.] You can assume [Command = Er (-ed, -ing)] with out further authority [signed] [Maj Genl U.S. Grant] fine day}
+
+Code-word tokens: H 35, C 1.
+
+Totals over the 65 entries: H 1073, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->
