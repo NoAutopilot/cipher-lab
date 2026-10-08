@@ -351,3 +351,34 @@ line, and the code-40 d|a discussion) are superseded by NOTES.md section "Native
 The plaintext is unchanged (it is the print); the key is still `ours`. The N-class and depth are a verifier's to restate;
 this note does not change them. The SECOND-OPINIONS-QUEUE row SO-VANBEUNINGEN-1657 is already checked; its prompt quotes
 the earlier key figures, so a verifier re-reading it should use this note's numbers.
+
+## G3 check and depth ruling (V1-G3E)
+
+Verifier V1-G3E (account 3, session_01Nuc8h5bY9zgKLDsH1atcwb), 8 Oct 2026, 16:55-17:2x UTC by date -u, for LANE-VERIFY-1; prior-work-step.md check 5 (G3) only, not a full third audit; nothing decoded. Account-3 skip test: the reading and both novelty audits of this item ran on other accounts; the only account-3 pass on file is DEPTH-REGRADE (4 Oct, depth only, no novelty search), not treated as an audit for the skip rule. `tools/prior_work.py` does not exist; checks run by hand. Phrase runs: `tools/print_check.py --only ia-global,gbooks,openalex` with an ad hoc phrases file (output kept in the session scratchpad, not over the folder's print-check.tsv), plus exact-phrase Google Books API calls (key, country=US). Google Books counts without a snippet match are word-level noise, read and discarded.
+
+Item 2: the key/decipherment of the cipher copy ff.210-211 (item 1, the letter's text, is N1 and not re-checked). Class on
+file N3. The plaintext is the 1919 print, so G3 here asks whether any prior key or decipherment of this cipher copy exists.
+
+| check | route, query | result |
+|---|---|---|
+| key / cipher, Dutch | IA global fts, Google Books, OpenAlex: "Beuningen De Witt cijfer sleutel 1657"; "onopgelost cijfer van een andere hand"; "Beuningen geheimschrift De Witt" | IA 0/1 (two HTTP 502, logged once); OpenAlex 0/3; Google Books: 1919 *Brieven aan Johan de Witt* (the editor's own "onopgelost" footnote, already item 1's source), Rowen 2015 and 1846 Lefèvre-Pontalis background, no key |
+| Google Books exact | `"Beuningen" "sleutel" "cijfer" 1657` | 4, all the 1906 *Brieven van Johan de Witt* footnote on Van Beuningen to the Amsterdam burgomasters, 28 Oct 1657 ("grootendeels gecijferd (ik heb het cijfer overal ..."). This is the Kernkamp footnote AUD2 already diffed (pp.440-441): a different letter, recipient and archive; key table not printed. Not SUBSTANCE for ff.210-211 |
+
+Result: no prior key or decipherment of ff.210-211 located. **Class kept: N3**, key `ours`, text `known`.
+
+**Depth (rule 4a, ruled under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md; the row had none).** Counts after the 5 Oct
+re-read (`reading_tokens.tsv`): 517 coded tokens, C 491, M 26 (9 [MARK], 2 illegible, 1 name code 186, 14 letters); 95.0%.
+- Cipher clause: **not met.** Longest contiguous C run is 30 coded tokens (50 if clear words do not break it). The design is a
+  homophonic letter table (53 values over 21 letters) plus nomenclator codes, so H(K) is about 53 x log2(21) = 233 bits before
+  the 26 M liberties. With Dutch redundancy of about 3.2 bits per letter, unicity is about 73 letters and AD about 110. Neither
+  run reaches that.
+- Code clause: **met.** Code 143 reads "Vereenichde Nederlanden" in 5 different sentences (L19, L27, L40, L50 among them),
+  213 "Engelandt" in 4, 144 "Haer Hoog Mog." in 4, 173 "Coningh van Denemarcken" in 2 (L26 "sal doen soo veel", L34 "agent
+  ... uyt Londen"). None is a verbatim repeat. Each occurrence agrees with the printed text.
+- Sentence (mine, written from reading.txt L33-L37): "Van Beuningen writes that the King of Denmark's agent in London reports
+  hopes that the English ambassador will be instructed to negotiate an alliance."
+- **D2** ("partially deciphered (about 95%)"). **D3 withheld.** The key was fitted by aligning against the print, so agreeing
+  with the print is not an independent external check. GAPS' alphabetic-bracket leave-one-out (34/35 against a shuffle mean of
+  18.2) tests the key's order, and a dedicated depth job could weigh it toward D3. This check does not.
+status.json row (results[5]) gets these depth fields. SO row unchanged (no class move).
+Requests: be-api.us.archive.org 3, www.googleapis.com 4, api.openalex.org 3.

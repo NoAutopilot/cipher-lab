@@ -162,3 +162,21 @@ different from the Millet one and gives no key for f.349) / "son frère" as an H
 ### 5. What would move the class
 N4 (or N2): Haug 2015 read at its 1665 pension pages (a library or an owner-side read; OAPEN/DOAB 403 from the cloud) and
 the JSTOR rows 301-303 answered. Neither blocks N3.
+
+## G3 check (V1-G3E)
+
+Verifier V1-G3E (account 3, session_01Nuc8h5bY9zgKLDsH1atcwb), 8 Oct 2026, 16:55-17:2x UTC by date -u, for LANE-VERIFY-1; prior-work-step.md check 5 (G3) only, not a full third audit; nothing decoded. Account-3 skip test: the reading and both novelty audits of this item ran on other accounts; the only account-3 pass on file is DEPTH-REGRADE (4 Oct, depth only, no novelty search), not treated as an audit for the skip rule. `tools/prior_work.py` does not exist; checks run by hand. Phrase runs: `tools/print_check.py --only ia-global,gbooks,openalex` with an ad hoc phrases file (output kept in the session scratchpad, not over the folder's print-check.tsv), plus exact-phrase Google Books API calls (key, country=US). Google Books counts without a snippet match are word-level noise, read and discarded.
+
+Item: R2678 P2/P3 ("Pour [son frère ...] qui en doit avoir 500", "pour [les chanoines] qui doivent aussy recevoir 1000
+Reichsdalles"). Class on file N3, depth D2 (not re-ruled here). AUDIT 2 already ran several clear-frame phrases; this pass runs
+the decoded words inside their frame.
+
+| check | route, query | result |
+|---|---|---|
+| decoded phrases in frame | IA global fts, Google Books, OpenAlex: "pour son frere qui en doit avoir 500"; "pour les chanoines qui doivent aussy recevoir"; "Gravel 1665 chanoines pension Ratisbonne" | IA 0/3, OpenAlex 0/3; Google Books 350 / 27 / 0, word-level noise (coutumes, arrêts, 1844 Reims archives) |
+| Google Books exact | `"Gravel" 1665 "chanoines" pension Colbert` | 0 |
+| same-day other version | Gravel's own report of 29 Jan 1665 (AE CP Allemagne 194 f.44, cited by Auerbach 1912) | **unchecked**: unprinted as far as logged; the archive volume is not online |
+| press of the day | secret pension payments; no gazette would carry them | not applicable |
+
+Result: no SUBSTANCE located. **Class kept: N3** (Haug 2015 remains the named N2/N4 decider). No status.json or SO change.
+Requests: be-api.us.archive.org 3, www.googleapis.com 4, api.openalex.org 3.

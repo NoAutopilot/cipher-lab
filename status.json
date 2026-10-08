@@ -1656,7 +1656,19 @@
       "audit_status": "two audits",
       "reading_version": "d3da7d9 (reading.txt, unchanged since)",
       "superseded_by": "",
-      "fields_source": "vanbeuningen-dewitt-1657/AUDIT.md verdict table and AUD2 (key N3, text N1: printed in Brieven aan Johan de Witt I pp.405-406); C 446 of 517 from the row's grade"
+      "fields_source": "vanbeuningen-dewitt-1657/AUDIT.md verdict table and AUD2 (key N3, text N1: printed in Brieven aan Johan de Witt I pp.405-406); C 446 of 517 from the row's grade",
+      "depth": "D2",
+      "depth_pct": 95.0,
+      "depth_unread": {
+        "names_codes": "1 (code 186, M)",
+        "other": "9 marks, 2 illegible, 14 letter tokens at M"
+      },
+      "depth_sentence": "Van Beuningen writes that the King of Denmark's agent in London reports hopes that the English ambassador will be instructed to negotiate an alliance.",
+      "depth_check": "code clause: 143 'Vereenichde Nederlanden' in 5 non-verbatim contexts, 213 'Engelandt' 4, 144 'Haer Hoog Mog.' 4, all agreeing with the 1919 print; cipher clause not met (longest C run 30 < AD ~110)",
+      "depth_note": "C 491 of 517 coded tokens (5 Oct re-read); D3 withheld: key fitted to the print, so print agreement is not an independent external check",
+      "depth_by": "session_01Nuc8h5bY9zgKLDsH1atcwb (V1-G3E)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted"
     },
     {
       "date": "25 Sept 2026",

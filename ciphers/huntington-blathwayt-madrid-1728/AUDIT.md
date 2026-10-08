@@ -621,3 +621,23 @@ Image check on native crops (NOTES.md "A4-RFHUN"): group 849 is glossed "parle" 
 had the gloss one column left). BLA 186 p3 now reads mechanically *Monsieur de Patigno m'en a parlé ce soir*, 849 C (one
 gloss); the "[849, doubtful]" above and row 4 of the second-opinion table are superseded. 575 = j' (C) at two BLA 191(a)
 tokens. Target counts: C 131, M 20, U 21 of 172 (were C 129, M 22, U 21). No class changed by this worker (not a verifier).
+
+## G3 check (V1-G3E)
+
+Verifier V1-G3E (account 3, session_01Nuc8h5bY9zgKLDsH1atcwb), 8 Oct 2026, 16:55-17:2x UTC by date -u, for LANE-VERIFY-1; prior-work-step.md check 5 (G3) only, not a full third audit; nothing decoded. Account-3 skip test: the reading and both novelty audits of this item ran on other accounts; the only account-3 pass on file is DEPTH-REGRADE (4 Oct, depth only, no novelty search), not treated as an audit for the skip rule. `tools/prior_work.py` does not exist; checks run by hand. Phrase runs: `tools/print_check.py --only ia-global,gbooks,openalex` with an ad hoc phrases file (output kept in the session scratchpad, not over the folder's print-check.tsv), plus exact-phrase Google Books API calls (key, country=US). Google Books counts without a snippet match are word-level noise, read and discarded.
+
+Item: mssBLA 186, the two cipher lines (p1 "l'ambassadeur [73] a ete fort [470] [778] [190] te affaire"; p3 "Monsieur de
+Patigno m'en a parle ce soir", as revised by A4-RFHUN). Class on file N4 (both lines).
+
+| check | route, query | result |
+|---|---|---|
+| decoded phrase, French | IA global fts, Google Books, OpenAlex: "Patigno m'en a parle ce soir", "Patino m'en a parle ce soir" | IA 0, OpenAlex 0; Google Books 92 / 43 volumes, word-level noise only (Michaud-Poujoulat *Nouvelle collection*, magazines), no snippet carries the phrase |
+| decoded phrase, English (Rose prints this letter in English) | same three hosts: "Patino spoke to me of it this evening" | IA 0, OpenAlex 0, Google Books noise (84, none relevant) |
+| other correspondents' version / same-day reports | IA, Google Books, OpenAlex: "Paretti Ripperda Segovia 1728 ambassador"; Google Books exact `"Ripperda" "Patiño" "septembre 1728" ambassadeur` | 0 everywhere. Coxe (*Walpole*, *Kings of Spain*), HMC *Townshend*, Rose and HMC *Polwarth* were already covered by the earlier audits and IA-DESK-ALT |
+| press of the day (Gazette de France / London Gazette, 13 Sept 1728 +-3 days) | not run | **unchecked** (the lines report who spoke to the writer, not a printable news item; a Gallica pass on the Gazette for Sept-Oct 1728 would close it, about $0.5) |
+| same-leaf siblings | the Huntington holds no decipherment of BLA 186 (first and second audits, CONTENTdm full text) | not repeated |
+
+Result: no SUBSTANCE (no text sharing two rare entities or numbers with the cipher lines within +-3 days) located. Rose 1831
+ii 414-15 remains the only print of the letter, with the cipher shown as "(Cypher.)". **Class kept: N4** for the cipher lines;
+the press family stays a named unchecked gap, not a clear. status.json and the SO row are unchanged (no class move).
+Requests: be-api.us.archive.org 4, www.googleapis.com 5, api.openalex.org 4.

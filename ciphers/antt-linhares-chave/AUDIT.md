@@ -474,3 +474,18 @@ decode_key.py --check exit 0; judge PASS -1.024 vs real_p05 -1.122. Verdict PASS
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **ANTT PT/TT/CLNH/0086/11 m0002 (Linhares letter fragment)**: **D2** (Partially decrypted; outward "partially deciphered (about 88%)"), 88.5% (H 23 of 26 (reading.txt header, 3 Oct revision); D3 withheld: the residue is ordinary words, not names/codes, and line 3 does not read). Check: period key sheet's worked example matched to Vieyra 1809 (H); pt18 judge PASS with control; fresh re-derivation 24/26. Sentence: "The surviving page of the Linhares letter says that something is to be kept secret even from the ministry ('he segredo ate para o ministerio')."
+
+## G3 check (V1-G3E)
+
+Verifier V1-G3E (account 3, session_01Nuc8h5bY9zgKLDsH1atcwb), 8 Oct 2026, 16:55-17:2x UTC by date -u, for LANE-VERIFY-1; prior-work-step.md check 5 (G3) only, not a full third audit; nothing decoded. Account-3 skip test: the reading and both novelty audits of this item ran on other accounts; the only account-3 pass on file is DEPTH-REGRADE (4 Oct, depth only, no novelty search), not treated as an audit for the skip rule. `tools/prior_work.py` does not exist; checks run by hand. Phrase runs: `tools/print_check.py --only ia-global,gbooks,openalex` with an ad hoc phrases file (output kept in the session scratchpad, not over the folder's print-check.tsv), plus exact-phrase Google Books API calls (key, country=US). Google Books counts without a snippet match are word-level noise, read and discarded.
+
+Item 1: m0002 letter fragment (26 tokens, H 23 M 3, 3 Oct revision). Class on file N3, depth D2 (not re-ruled here).
+
+| check | route, query | result |
+|---|---|---|
+| decoded phrases | IA global fts, OpenAlex: "segredo ate para o ministerio", "he segredo ate para o ministerio", "para supprir o seu lugar junto" | IA 0/2 (third phrase HTTP 502, not retried in a loop: logged unreachable once), OpenAlex 0/3 |
+| decoded phrases, Google Books exact | `"segredo até para o ministerio"` (337, every snippet a different sentence: 1847 Palmela pamphlets, 1895 Brazilian treasury report, legislation); `"para supprir o seu lugar"` (11: Paraíba 1824 and Bahia vice-presidents, modern prose) | no snippet carries the fragment's wording or its context; the "supprir o seu lugar" hits are a set phrase in other documents, not this letter |
+| same-day replies, other correspondents, press | the fragment is undated (mid-letter, no dateline on the leaf or the verso m0001) | **unchecked**: no date to key a +-3 day search; the sender-family edition (Textos Políticos 1993) was covered by LX-ED |
+
+Result: no SUBSTANCE located. **Class kept: N3.** No status.json or SO change.
+Requests: be-api.us.archive.org 3, www.googleapis.com 5, api.openalex.org 3.
