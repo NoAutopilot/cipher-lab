@@ -2677,3 +2677,138 @@ are not message text and are not counted.
   reading of "John" there. Next: a reader adds a `plain: John` line to E60 and a header fix, ~$0.2.
 - Rows: status.json one result row per N3 entry (E57, E59, E62), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E57, -E59,
   -E62 with prompts in second-opinions/; JSTOR-QUEUE.tsv six rows. Requests: in the ROOM done line.
+
+## AUDIT (LS-V6)
+
+Verifier LS-V6 (account 1, LANE ST-LEDGER-2), 8 Oct 2026, 04:16-05:0x UTC by `date -u`; a separate session from every reader of the
+batch (LS-R6), not protecting its conclusions. Scope: LS-R6's eleven blocks **N2-BG..N2-BM** (ciphertext-no2.txt, key-no2.md = mssEC 47
+Cipher No. 2), **E65** (ciphertext.txt, key.md) and **O9-AH..O9-AJ** (ciphertext-no9.txt, key-no9.md = mssEC 67), plus LS-R6's step-2 1865
+verdict. Nothing decoded beyond re-running the committed scripts and looking up E65's eight code words in key-no2.md (section 2).
+Key source for every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md.
+
+### 1. Re-derivation (rule 7) and image check
+- `decode.py --check` "reading.md is current", `decode_no2.py --check` "reading-no2.md is current", `decode_no9.py --check`
+  "reading-no9.md is current": exit 0 each.
+- Strip crops from the 2400 px IIIF images (scratch, not committed; S = session scratch):
+  `python3 tools/iiif_lines.py --image $S/img/p8966.jpg --out $S/crops/8966 --prefix p8966 --region 100,1560,2300,1180 --centres
+  90,180,270,365,460,550,645,740,835,930,1030,1120 --lines-per-crop 3 --max-width 2400`; p8967 `--region 100,150,2300,700 --lines-per-crop 3`
+  and `--region 100,780,2300,480 --centres 60,150,240,330,420 --lines-per-crop 5`; p9011 `--region 100,1560,2300,1000 --lines-per-crop 5`;
+  p8958 `--region 100,180,2300,1080 --lines-per-crop 6`; p9104 `--region 100,1330,2300,950 --lines-per-crop 10`; p9139 `--region
+  100,1580,2300,900 --lines-per-crop 10`; p8907 `--region 100,230,2300,1700 --lines-per-crop 9`.
+- **Three entries word for word** (header to signature): **N2-BG** (the longest, 213 words, pp.74-75), **N2-BI**, **E65**. All agree with the
+  committed transcription except: N2-BG line 9 the image has "has has so whimpered" (a doubled plain "has"; transcription "has so") -- no
+  effect on the reading; N2-BI the addressee reads **"Bickford"** on the image (capital B, as the volunteer text), not LS-R6's "Pickford"
+  (header word, ungraded; left M). N2-BG's last line ("brought off yawl Buggy How are you long saved fraternity") is cut at the crop foot;
+  first words checked, the rest left as LS-R6 read it.
+- I/M tokens and image-vs-volunteer words re-read from the image: N2-BG "crowded" is a plain word on the page (the decoder's
+  `[Lieut Gen U.S. Grant]ed` is a stem artifact, not a code word); N2-BH "desires", "New Haven" plain (and C from the print, section 3),
+  "Wasel" on the image (transcription "Weasel", same code word = Transportation, confirmed by the print's "transportation"); N2-BI
+  "I presume ree [sweden]" -- "presume" is plain on the image (the decoder reads it as the key row Presume = "Hotly [?]"; plain word, not a code word), time word "Fanny" against the
+  header "10 am" confirmed; N2-BK "spoud" (= espoused) as transcribed; O9-AI/AJ "Ida", "Camden", "Hannah", "Deborah", "Quadroon" as
+  transcribed, the AJ header "noon" and tail "noon Mch 4th" confirmed (the time word Deborah's 3 AM disagrees, M stands); E65 "Wedlock",
+  "Salems", "altar", "Shark", "Costume", "blubber" as transcribed -- and see section 2.
+
+### 2. Correction: E65 is in Cipher No. 2, not Cipher No. 1 (over-claim in LS-R6's section and reading.md)
+LS-PRE's tsv guessed cipher 2 for 8958/66/0; LS-R6 overrode it as "Cipher No. 1 vocabulary, mostly plain". Looking up the eight code words
+in both keys: key.md gives Blubber = City Point, Salem = Force, Altar = (none), Shark = Government, Wedlock = Track, Costume = Jefferson,
+Viola = 12.30 -- which is why the committed reading says "proceed immy to City Point ... the forces on the altar ... Government Canby will
+start for there Track afternoon ... Jefferson". key-no2.md gives **Blubber = Cairo** (p.12 l.15), **Salem = Force** (p.21 l.18), **Altar = Red R**
+(p.10 l.18), **Shark = General** (p.22 l.3), **Wedlock = Tomorrow** (p.25 l.1), **Costume = Secretary of War** (p.13 l.24), **Viola = 12
+midnight** (time page): "The service requires that you should proceed immediately to Cairo to make arrangements for the transmission and
+receipt of intelligence between that point and the forces on the Red River. General Canby will start for there tomorrow afternoon. You
+had better join him ... [signed] Secretary of War", sent at midnight 6 May 1864. Every value fits; "Growl" (opening word) is left
+unresolved here. The No. 2 values are confirmed externally, word for word in part: **W. R. Plum, *The Military Telegraph during the Civil War
+in the United States* (Chicago 1882), vol. 2 p.47** (IA `militarytelegra02plumgoog`, djvu text, OCR running head 47): "On the 6th of May, at
+midnight, Colonel Stager was ordered by Secretary Stanton, to meet and proceed with General E. R. S. Canby (who was about to relieve
+Banks) to Cairo, Ill., to arrange 'for prompt transmission and receipt of intelligence between that point and the forces on Red River.'"
+OR ser. I vol. 34 pt 3 (`warofrebellion343unit`) prints Canby at Indianapolis 10 May ("I leave for Cairo in the first train. Colonel Stager
+is with me") and Stager's own reports from Cairo, 11-12 May. **The committed E65 reading is wrong in five code words (City Point, Government,
+Track, Jefferson, and "altar" left as a plain word) and must be re-filed in ciphertext-no2.txt and re-read with key-no2.md** (a reader's job,
+not this verifier's; flagged in ROOM). Until then E65's H 7 count in reading.md stands for a wrong key.
+
+### 3. Entries located in print: page confirmed by script (a check, not a search)
+| ID | printed at | how confirmed |
+|---|---|---|
+| N2-BH | OR ser. I vol. 43 pt 2 **pp.467-468** (Adjutant-General's Office, Washington, October 26, 1864, to Major-General Sheridan, Strasburg; signed E. D. Townsend) | IA `warofrebellion432unit` djvu: the telegram starts before and ends after the running head "468 OPERATIONS IN N. VA., W. VA., MD., AND PA."; "The Secretary of War desires you to order the Eighteenth Connecticut Volunteers to be at New Haven the 2d of November, and the Second Eastern Shore Maryland Regiment to be at Baltimore by the 4th of November; the quartermaster to furnish them transportation; the regiments to be replaced at Martinsburg by others ordered by you from elsewhere. Acknowledge receipt." Word for word with the decode (the ledger's "repeat" = the print's "order" by the code word). LS-R6's "p.468" corrected to pp.467-468 |
+| N2-BG | **substance**: F. H. Garrison, *John Shaw Billings, a memoir* (New York 1915) **p.93** (IA `johnshawbillings00garr`, Billings's war diary, 21 May 1864) | "8 A.M. Dispatch received by Genl. Ingalls from Genl. Meigs stating that steamboats and covered barges had been started to Fredericksburg to carry off the wounded. Two large steamers are to be at Tappahannock to be loaded from the lighter vessels. All the wounded are to be taken away even if it crowds the vessels. Cavalry posted on the bluffs from Port Royal to Fredericksburg to cover the movement." -- a summary of N2-BG (Meigs to Ingalls, 20 May 10 PM) by the Army of the Potomac's medical inspector who saw it the next morning; not the telegram's text |
+| E65 | **substance and a quoted phrase**: Plum vol. 2 p.47 (section 2) | as quoted above |
+
+### 4. Entries not located: search families (8 Oct 2026)
+Phrases (decoded wording): N2-BI "depreciation of vouchers", "short supply of money", "checked deliveries", "cavalry horses which are on
+hand"; N2-BJ "pluck and gallantry", "son of the Senator", "Sheridan's staff", Wade + New Orleans; N2-BK "most capable and most worthy",
+"chief quartermaster to your army", "revoke the assignment"; N2-BL "make sure of a supply", forage + Pensacola; N2-BM "do you need more
+mules", "obliged to stop shipments", "stop shipments of horses"; O9-AH "fully coaled", "thirty thousand men ... two thousand horses", "fresh
+for their morning", "Astor House", "chartered a number of vessels"; O9-AI/AJ "no further shipments of gold", "ship no more coin", Cheesman.
+
+| family | searched | result |
+|---|---|---|
+| OR by date and correspondent +/- 3 days (IA djvu, whole volume, regex on flattened text) | ser. I vols 33 (O9-AH), 34 pt 3 (N2-BL, E65), 36 pt 1 and pt 3 (N2-BG, N2-BJ), 40 pt 3 (`warofrebellion403unit`: N2-BI, N2-BM -- **the volume LS-R6 did not search**; both are addressed "for Brig. General Ingalls", City Point, in the decoded plain, not to a quartermaster "at Pickford/Palestine" as LS-R6's table says), 43 pt 2 (N2-BK); ser. III vol. 4 (all) | no hit for N2-BI, BJ, BK, BL, BM, O9-AH, O9-AI/AJ. I/40 pt 3 has telegrams to Ingalls of 26-31 July 1864 (Butler, Meade, Paine, Sheridan's cavalry), none from Meigs on horses or mules; I/36 pt 1 (medical report) mentions the State of Maine and Connecticut at Fredericksburg (N2-BG context) |
+| 1864 press, Chronicling America (loc.gov JSON, `dates=` window from the telegram's date) | every phrase above (11 queries) | 0 results for every quoted phrase except "fresh for their morning" (9 pages, June 1864; common phrase, no title matched O9-AH on its face, not read) and "Stager Cairo Canby telegraph" (1 page, Chicago Tribune 12 May 1864, unread -- E65 is placed by Plum anyway) |
+| Sender's and recipient's printed papers | Billings's diary (Garrison 1915) for N2-BG (found, section 3); Plum's Military Telegraph vol. 2 for E65 (found); Meigs, Ingalls, Holabird, Sheridan, Dana, Chase/Treasury: no printed letter-book exists for Meigs or Ingalls; Sheridan's *Personal Memoirs* and Dana's *Recollections* not read; Chase Papers (Niven) via Google Books: 0 for Cheesman + gold + London | not located |
+| IA full text, all items (be-api fts) | every phrase above | N2-BI "depreciation of vouchers": 2 items, one is M. R. Wilson, *The Business of Civil War* (2006), quoting a manufacturer's letter to the Quartermaster General ("because of the recent severe depreciation of vouchers and certificates, 'We in common with other ...'") -- the same phrase in the same office and summer, not N2-BI; others 0 or loose matches |
+| Google Books API (key, country=US) | every phrase above + 5 hand queries | Billings memoir (N2-BG, found above); Wilson 2006 (as above); no telegram located; 503 on four queries (not retried) |
+| OpenAlex, Semantic Scholar, CORE (keys) | 6 name/event queries (Cheesman gold 1864; Meigs Ingalls horses 1864; Stager Cairo Canby; J. F. Wade Sheridan staff; Holabird Pensacola forage; Van Vliet Butler transports) | nothing relevant; S2 429 on two |
+| JSTOR | 12 rows appended to JSTOR-QUEUE.tsv (N2-BI, BJ, BK, BL, BM, O9-AH; families i and ii) | pending (never blocks) |
+| Unread / unreachable | NARA RG 92 (Meigs, telegrams sent), RG 107 (Stanton, M473), RG 56 (Treasury, telegrams to the Assistant Treasurer, San Francisco); the Washington and San Francisco press page by page (O9-AI/AJ gold); Sheridan's and Dana's memoirs; HathiTrust full text | unread |
+
+### 5. Classification (key `period` for all)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| N2-BG Meigs to Ingalls, 20 May 1864 | **N2** | substance known (Billings diary, Garrison 1915 p.93) | D3 | 97.9 (47 H + 1 I of 48 code words; "crowded" is plain) | image, all lines; re-derivation; Billings's summary agrees point by point |
+| N2-BH Townsend to Sheridan, 26 Oct 1864 | N1 | known (OR I/43 pt 2 pp.467-468) | D4 | 100 (29 H + 2 C) | word for word with the print |
+| N2-BI Meigs to Ingalls, 24 July 1864 | **N3** | unknown | **D2** | 96.7 (29 H + 1 I of 30 code words; the decoder's H on "presume" is a plain word) | image, all lines; re-derivation; Wilson 2006 prints the same "depreciation of vouchers and certificates" complaint to the QMG that summer |
+| N2-BJ Secretary of War to Dana, 4 June 1864 | **N3** | unknown | **D2** | 95.7 (22 H + 1 I of 23) | re-derivation |
+| N2-BK Meigs to Sheridan, 12 Dec 1864 | **N3** | unknown | **D2** | 90.9 (8 H + 2 C + 1 I of 11) | re-derivation; image of the I/M words |
+| N2-BL Meigs to Holabird, 8 Apr 1864 | **N3** | unknown | **D2** | 100 (17 H) | re-derivation |
+| N2-BM Meigs to Ingalls, 27 July 1864 | **N3** | unknown | **D2** | 100 (10 H) | re-derivation |
+| E65 Stanton to Stager, 6 May 1864 | **N2** | substance and one quoted clause known (Plum 1882 II p.47) | not rated: committed reading uses the wrong key (section 2) | -- | -- |
+| O9-AH Meigs? to Capt. G. D. Wise, 20 Apr 1864 | **N3** | unknown | **D2** | 100 (14 H; mostly in clear) | re-derivation; image as transcribed by LS-R6 |
+| O9-AI, O9-AJ (to D. W. Cheesman, 1 and 4 Mar 1864) | N3 (no prior text located) | unknown | **D1** | 33.3 (1 H of 3 code words; "Ida", "Camden" M) | image checked here. The text is written in clear in the ledger; the decipherment adds three code words, two uncertain, so no result row is filed |
+
+- **N3 (N2-BI, N2-BJ, N2-BK, N2-BL, N2-BM, O9-AH)**: no prior plaintext or decipherment located after the logged search. Not N4: NARA RG 92/107,
+  the press page by page, Sheridan's and Dana's memoirs and HathiTrust are unread; JSTOR pending. Safe sentence (each): "Read at grade H with
+  the period Cipher No. 2 book (O9-AH: the War Department's older vocabulary, mssEC 67); no prior decipherment or printed text located in the
+  Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google
+  Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026)." Unsafe: "first", "unpublished", "never printed", "unknown telegram".
+- **Depth D2, not D3, for the six N3 entries**: rule 4a and the depth bar put D3 on an external check or AD + a matched control; these have
+  a fresh re-derivation and a contiguous H stretch well past the authentication distance, but no outside source that checks a code value
+  (Wilson 2006 for N2-BI is context, not a check). N2-BG is D3 because Billings's diary checks its code values (Fredericksburg, wounded,
+  Port Royal, cavalry, Tappahannock) point by point. Outward words for the six: "partially deciphered (about N%)".
+- **Weakest N3s**: N2-BJ (Wade's appointment to Sheridan's staff, if made, will be in Sheridan's or Dana's papers and in Heitman; a second audit
+  should read Dana's *Recollections* and Sheridan's *Memoirs* for June 1864); N2-BK (the revoked assignment of a chief quartermaster to the
+  Middle Military Division, Dec 1864, may be in OR I/43 pt 2 correspondence under another wording or in ser. III vol. 4 Meigs's annual report).
+- **N2-BG, E65: N2** (substance known elsewhere, no prior mapping of this ciphertext). **N2-BH: N1.** Not counted.
+- Depth sentences (D2+ each, written from the derived block): N2-BI "Meigs tells Ingalls that about a thousand cavalry horses on hand will
+  be sent with the artillery horses, more as they come in, that depreciation of vouchers and certificates and short money have lately checked
+  deliveries, and that 3,962 cavalry horses have been issued at Washington since 1 July." N2-BJ "The Secretary of War asks Dana to find out
+  whether Sheridan will take on his staff Lieutenant Colonel Wade, the Senator's son, a former cavalry captain of the Army of the Potomac just
+  back from New Orleans, whom Meade knows." N2-BK "Meigs tells Sheridan that the Secretary of War has been asked to revoke an assignment,
+  made because the officer was already acting in that capacity, and asks whether Sheridan's army needs a chief quartermaster and who is most
+  capable and worthy." N2-BL "Meigs tells Col. Holabird, chief quartermaster at New Orleans, to send a vessel loaded with forage to Pensacola to
+  make sure of a supply there by 1 May, since forage sent from New York may be delayed by storms." N2-BM "Meigs asks Ingalls whether, under
+  changed circumstances, he needs more mules, says about 500 have been shipped and the rest held until he hears, and that shipments of horses
+  to him have been stopped." O9-AH "Captain Wise at the Astor House, New York, is told to work with Major Van Vliet on the vessels chartered for
+  the expedition, all to reach Fort Monroe by the 24th and be coaled by the 25th, because Butler means to move thirty thousand men, two
+  thousand horses, ten batteries and a hundred wagons."
+
+### 6. LS-R6 step 2 (the 1865 rows): is the 0.077 gap within the control's spread?
+Re-run of `ls_r6_no1_1865.py` at 04:2x UTC: the 1865 rows are unchanged (n=108, median 0.276) but the control is now **n=34, median 0.395**
+(E30-E36 were marked `already_read` by LS-R2c after LS-R6 ran), diff **-0.119**, so the script's own verdict flips to "does not read". Spread
+(scratch `spread.py`): control split-half |median difference| p95 0.092; bootstrap 95% interval of the difference -0.185 to -0.041 (excludes
+0); the 1865 median sits at the control's 9th percentile. And the statistic does not separate the ciphers: the rows already read as **Cipher
+No. 2 or old vocabulary** (N2-*, O9-*, n=88) score median **0.374**, as high as the No. 1 control -- the code-word column of key.md is common
+English words, so the share measures plain-word overlap, not which book was used. One line: **the 0.077 gap is not within the control's
+spread on the current control (0.119, bootstrap interval excludes 0), and in any case the test is a non-test -- a known non-No.-1 control
+passes it -- so neither verdict is licensed; whether No. 1 reads the 1865 rows is untested by this statistic (rule 3).**
+
+### 7. Postmortem
+- Over-claims corrected: (1) E65's reading (wrong key; LS-R6's table "proceed at once to City Point", "Canby will start tomorrow" and "sender
+  not decoded; Jefferson?") -- a correction note is added under LS-R6's section in NOTES.md; reading.md is left as derived until a reader
+  re-files E65 in No. 2 (rule 7: never hand-edit the derived block). (2) The step-2 verdict "No. 1 reads 1865 rows" is withdrawn as a
+  non-test. (3) N2-BI/N2-BM addressees: the decoded plain names Ingalls; LS-R6's table "to the quartermaster at (Pickford/Bickford)" and
+  "to a quartermaster ('Palestine')" describe header words, and the OR volume searched (I/37 pt 2, I/39 pt 2) was the wrong theatre; I/40 pt 3
+  searched here. (4) N2-BH page p.468 -> pp.467-468. (5) N2-BI addressee header "Bickford" on the image.
+- Lesson for readers: when LS-PRE's cipher_guess disagrees with the reader's choice of book, look up three code words in both keys before
+  decoding; the wrong book still yields fluent-looking plain words in a mostly-plain telegram.
+- Rows: status.json one result row per N3 entry (N2-BI, N2-BJ, N2-BK, N2-BL, N2-BM, O9-AH), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv
+  rows SO-ECKERT-N2BI, -N2BJ, -N2BK, -N2BL, -N2BM, -O9AH with prompts in second-opinions/. Requests: in the ROOM done line.

@@ -1154,6 +1154,8 @@ Requests: hdl.huntington.org 11 (IIIF images, 200; 8966 and 9104 also thumbnails
 found and where it was not found; novelty is a verifier's (rule 10): batch flagged for a first verifier (LS-V6). Process note: `tools/room.py "<role>" "<text>" --push <paths>`
 logs the ROOM line and pushes only ROOM.md; the files were pushed by `git add`, `git commit`, `git pull --rebase`, `git push origin HEAD:main` (first three commits b195952b, 6cdb82bd, c356c084).
 
+Verifier note (LS-V6, 8 Oct 2026, AUDIT.md "## AUDIT (LS-V6)"): **E65 is Cipher No. 2, not No. 1** -- key-no2.md reads Blubber = Cairo, Altar = Red River, Shark = General, Wedlock = Tomorrow, Costume = Secretary of War, Viola = midnight, and Plum, Military Telegraph (1882) II p.47 prints the order in substance; the table row above and reading.md's E65 block are wrong in five code words until a reader re-files it in ciphertext-no2.txt. The step-2 verdict is withdrawn as a non-test (rows read as No. 2/old vocabulary score median 0.374 against the No. 1 control's 0.395; re-run diff now -0.119). N2-BI and N2-BM are addressed to Ingalls in the decoded plain (OR I/40 pt 3 searched there, not located); N2-BH is OR I/43 pt 2 pp.467-468.
+
 ## LS-R5 (8 Oct 2026, account 1, for LANE ST-LEDGER-2)
 
 Ten priority-1 entries of `entries-mssEC19.tsv` read with key.md (Cipher No. 1) as E55-E64 in ciphertext.txt; every entry is Cipher No. 1, key.md

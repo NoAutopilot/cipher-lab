@@ -5813,6 +5813,252 @@
       "depth_sentence": "Meigs tells Biggs at Fort Monroe to order the Spaulding on to Hilton Head to report to the quartermaster there, to send the Montauk and the other two propellers to Annapolis to carry troops to Hilton Head with plenty of coal, and to report his coal on hand, the coal expected within a fortnight, and every steamer arrival daily.",
       "depth_check": "fresh rule-7 re-derivation (LS-V5); external: Biggs's printed replies of 5 Apr (OR I/35 pt 2 pp.37-38, the Montauk and two other propellers) and 6 Apr (OR I/33 p.814, Montauk's broken valve-crank, Spaulding not yet arrived) answer the ships and orders this telegram names",
       "depth_note": "10 H + 1 I of 11 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V6)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 96.7,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V6 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Meigs to Ingalls, City Point, 24 July 1864, cavalry horses and the money shortage checking deliveries (N2-BI)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BI queued",
+      "phrases": [
+        "Huntington mssEC 19 p.119, pointer 9011, N2-BI"
+      ],
+      "document_id": "Huntington mssEC 19 p.119, pointer 9011, N2-BI",
+      "documents": [
+        "Huntington mssEC 19 p.119, pointer 9011, N2-BI"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "29 H + 1 I of 30 code words",
+      "unresolved_spans": "none (one I token; the decoder H on the plain word presume set aside)",
+      "reading_version": "LS-R6 8 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V6)' section 5",
+      "depth_sentence": "Meigs tells Ingalls that about a thousand cavalry horses on hand will be sent with the artillery horses, more as they come in, that depreciation of vouchers and certificates and short money have lately checked deliveries, and that 3,962 cavalry horses have been issued at Washington since 1 July.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V6); image crop, all lines (LS-V6); context only: M. R. Wilson, The Business of Civil War (2006) quotes the same depreciation-of-vouchers complaint to the QMG that summer",
+      "depth_note": "29 H + 1 I of 30 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V6)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 95.7,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V6 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Secretary of War to Dana, 4 June 1864, Lt Col Wade, the Senator's son, for Sheridan's staff (N2-BJ)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BJ queued",
+      "phrases": [
+        "Huntington mssEC 19 p.87, pointer 8979, N2-BJ"
+      ],
+      "document_id": "Huntington mssEC 19 p.87, pointer 8979, N2-BJ",
+      "documents": [
+        "Huntington mssEC 19 p.87, pointer 8979, N2-BJ"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "22 H + 1 I of 23 code words",
+      "unresolved_spans": "none (one I token)",
+      "reading_version": "LS-R6 8 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V6)' section 5",
+      "depth_sentence": "The Secretary of War asks Dana to find out whether Sheridan will take on his staff Lieutenant Colonel Wade, the Senator's son, a former cavalry captain of the Army of the Potomac just back from New Orleans, whom Meade knows.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V6)",
+      "depth_note": "22 H + 1 I of 23 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V6)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 90.9,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V6 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Meigs to Sheridan, 12 Dec 1864, a revoked assignment and a chief quartermaster for his army (N2-BK)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BK queued",
+      "phrases": [
+        "Huntington mssEC 19 p.245, pointer 9139, N2-BK"
+      ],
+      "document_id": "Huntington mssEC 19 p.245, pointer 9139, N2-BK",
+      "documents": [
+        "Huntington mssEC 19 p.245, pointer 9139, N2-BK"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "8 H + 2 C + 1 I of 11 code words",
+      "unresolved_spans": "none (one I token)",
+      "reading_version": "LS-R6 8 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V6)' section 5",
+      "depth_sentence": "Meigs tells Sheridan that the Secretary of War has been asked to revoke an assignment, made because the officer was already acting in that capacity, and asks whether Sheridan's army needs a chief quartermaster and who is most capable and worthy.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V6); image of the I/M words (LS-V6)",
+      "depth_note": "8 H + 2 C + 1 I of 11 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V6)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V6 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Meigs to Col. Holabird, New Orleans, 8 Apr 1864, forage to Pensacola by 1 May (N2-BL)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BL queued",
+      "phrases": [
+        "Huntington mssEC 19 p.33, pointer 8925, N2-BL"
+      ],
+      "document_id": "Huntington mssEC 19 p.33, pointer 8925, N2-BL",
+      "documents": [
+        "Huntington mssEC 19 p.33, pointer 8925, N2-BL"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "17/17 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "LS-R6 8 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V6)' section 5",
+      "depth_sentence": "Meigs tells Col. Holabird, chief quartermaster at New Orleans, to send a vessel loaded with forage to Pensacola to make sure of a supply there by 1 May, since forage sent from New York may be delayed by storms.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V6)",
+      "depth_note": "17/17 code words H"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V6)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V6 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Meigs to Ingalls, 27 July 1864, mules shipped and horse shipments stopped (N2-BM)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BM queued",
+      "phrases": [
+        "Huntington mssEC 19 p.127, pointer 9019, N2-BM"
+      ],
+      "document_id": "Huntington mssEC 19 p.127, pointer 9019, N2-BM",
+      "documents": [
+        "Huntington mssEC 19 p.127, pointer 9019, N2-BM"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "10/10 code words H",
+      "unresolved_spans": "none",
+      "reading_version": "LS-R6 8 Oct 2026 (reading-no2.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V6)' section 5",
+      "depth_sentence": "Meigs asks Ingalls whether, under changed circumstances, he needs more mules, says about 500 have been shipped and the rest held until he hears, and that shipments of horses to him have been stopped.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V6)",
+      "depth_note": "10/10 code words H"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V6)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D2",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V6 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: to Capt. G. D. Wise, New York, 20 Apr 1864, transports for Butler's expedition (O9-AH)",
+      "grade": "N3",
+      "line": "Read at grade H with the War Department's older period vocabulary (mssEC 67); no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-O9AH queued",
+      "phrases": [
+        "Huntington mssEC 19 p.45, pointer 8937, O9-AH"
+      ],
+      "document_id": "Huntington mssEC 19 p.45, pointer 8937, O9-AH",
+      "documents": [
+        "Huntington mssEC 19 p.45, pointer 8937, O9-AH"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "14/14 code words H (mostly in clear)",
+      "unresolved_spans": "none",
+      "reading_version": "LS-R6 8 Oct 2026 (reading-no9.md)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V6)' section 5",
+      "depth_sentence": "Captain Wise at the Astor House, New York, is told to work with Major Van Vliet on the vessels chartered for the expedition, all to reach Fort Monroe by the 24th and be coaled by the 25th, because Butler means to move thirty thousand men, two thousand horses, ten batteries and a hundred wagons.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V6)",
+      "depth_note": "14/14 code words H (mostly in clear)"
     }
   ],
   "lanes": [
