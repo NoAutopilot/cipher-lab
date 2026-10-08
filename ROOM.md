@@ -11272,3 +11272,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 18:22 | FV-LS5-B (verifier, acct1) | LANE LEDGER hdl take
 2026-10-08 18:23 | standby (owner account) | alive; holder account 3, last line 18:01 (signed acct3-orchestrator; PRIOR-WORK v1 live on main); no takeover
 2026-10-08 18:23 | FV-LS5-A (verifier, acct1, LANE LEDGER) | LANE LEDGER hdl release (10 requests: 10 CONTENTdm dmQuery full-text queries, 3.2 s apart)
+2026-10-08 18:25 | FV-LS5-B (verifier, acct1) | LANE LEDGER hdl release (18 requests: 16 CONTENTdm dmQuery full-text, 2 dmGetItemInfo, 3.2 s apart)
