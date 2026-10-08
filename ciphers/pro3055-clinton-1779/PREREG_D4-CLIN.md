@@ -26,3 +26,14 @@ comparison, so it can fail where the target passes. Gate: (b) share >= 0.80 AND 
 Word codes, reported apart (not gated): each code with the decipherment word it aligns to, consistency across repeats, and any
 period interlinear gloss on the page ("under", "few", "have", "there", "forward" seen on the layout look) against that word.
 Scope stop: p.124 (the continuation) is not fetched in this job.
+
+## Addendum B (8 Oct 2026, 09:0x UTC, after the registered alignment check above was run and FAILed; written before this one is run)
+Why: the registered length-only alignment did not discriminate (check_p123_full.json: runner-up end score ties the best in
+3 of 6 columns; column 1 placed at "one under major" though GAPS7 anchored its cells at "Congress"), so its FAIL tests the
+alignment, not the key. The job brief named a different design, run here as statistic B2 (no alignment, no letters chosen):
+decode every H-graded letter cell of p123_full_reconciled.tsv on the 1778 title page (variant (b), line 1 "BY PERMISION of the
+RIGHT HONORABLE"); split into runs at underlines and word codes; a run of >= 3 cells is a hit when its decoded string occurs
+as a substring of the p.102 decipherment letters (spaces and punctuation removed; '?' never matches). B2 = hits / runs.
+Control (the brief's): the title-page characters permuted across the page (line lengths kept), 1000 seeds, seed 123, same
+cells. Gate: B2 share >= 0.60 AND hits > control max. Reported with the decoded runs per column; the registered result stays
+FAIL as recorded and is not replaced.
