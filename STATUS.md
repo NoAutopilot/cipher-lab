@@ -6230,6 +6230,34 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_018DE9C1ZwPUGX7qbyQbQgQb, account 1, incarnation 2 of the blast refill), 8 October 2026 (closed 22:0x UTC: at 80% of cap, lane about 48 of 60; seven_day allowed_warning from 21:2x)
+
+Brief .claude/briefs/lane-ledger.md; jobs .claude/briefs/runs/2026-10-08-acct1-lane-ledger2-jobs.md (waves 1-3). Eleven workers 44.67 + orchestrator ~3.3 by
+get_session. Five_hour allowed throughout; seven_day allowed_warning on every session from about 21:25 UTC (not a stop under lane-common-blast).
+Result (eckert-1864, ONE audit each, not counted until a second): N3 -- E168, E171, E175, E176 (D3); E165, E185 (weak, D3); E167, E172, E173, E177, E179,
+E191 (D2); E178 (weak, D2). Second audits queued for the account-3 VERIFY lane: AUD2-LEDGER-4 (E165 E167 E168), -5 (E172 E173 E177), -6 (E171 E175 E176 E178
+E179), -7 (E185 E191). N1/N2 at first audit: E169 N2; E170 N1 (Grant Papers 12 note); E174 N2; E187 E189 E190 N1; E200 E202 E207 E209 N2; E206 N1.
+- Read (Sonnet, ~0.36-0.42 per entry): Fort Monroe (mssEC 25) rows 11-30 of clean-fm.tsv -> E170-E179, E185-E194; mssEC 18 first 12 No. 1 rows -> E200-E209
+  (2 step-0 skips). Yield after a first audit: Fort Monroe 11 N3 of 20 read (best on the board); mssEC 18 0 of 10 (5 in print by the reader, 5 N1/N2 by
+  the verifier) -- deprioritise mssEC 18.
+- Fixes: FIX-FM1 (E160/E163/E164/E143/E145 audit corrections) and FIX-DEC (14 entries' decoder false positives marked plain, no key rows touched); decode.py
+  --check exit 0.
+- eckert-1862: object 9660, pre-registered 10-entry test: no book in hand reads it (blocker no-key-material, Aug 1862-Jan 1864 book, as 8472/6254); OR 9/7/8
+  residue alignment: 3 pairs, key.md unchanged.
+- Google Books answered 429 to every call from ~20:50 UTC (daily quota). Grant Papers via IA be-api by identifier (`papersofulyssess00NNgran`) works and
+  found E170's N1.
+**Next** (costs from this incarnation: read ~0.4/entry, first audit ~1.1-1.3/entry):
+1. Fix worker (Sonnet, ~1): FV-FM3a AUDIT s.3 corrections (E170 Babcock signer, E173 Kress, E177 Webster/Dodge, E174 identities), FV-FM3c grade fixes, FV-MS18's
+   four key corrections (variant: notes), E171 tail "Washington" and E177 header/signature (positional notes); decode --check; carry into AUDIT/SO rows (rule 10).
+2. First verifier (Opus, ~3): E193, E194 (FM-R2b, not located, not yet audited).
+3. Fort Monroe readers: clean-fm.tsv 1864 No. 1/No. 2 rows 31 onward (5767/2 ... ~96 left), 10 per reader, then a first verifier per batch. FV-FM3c found E190
+   printed word for word that the reader missed: add OR I/42 pt 3 and I/40 pt 2-3 full-text grep on rare names (not phrases) to the reader's print pass.
+4. Leads from verifiers, unfiled: Fort Monroe 5837/1, 5839/1 (Fox, in ORN), 5839/2, 5837/0 (OR I/44 p.739) -- step 0 first; E66 substance diff vs the
+   30 Dec 1864 Ingalls order (FV-MS18).
+5. mssEC 18 remaining 77 clean No. 1 rows: low yield (0/10 N3); only after Fort Monroe is spent.
+6. eckert-1862: residue_decode --check stale flag not reproduced offline (FIX-DEC made it deterministic); one run on the real 58 pages with hdl text on disk,
+   ~0.3. Blocked: 8472, 6254, 9660 and Jan-Apr 1865 pages (no book in hand).
+
 ## LANE LEDGER handoff (session_01BhFrvFs46QaEbT8aTNPN8V, account 1, incarnation 1 of the blast refill), 8 October 2026 (closed 19:5x UTC: past 80% of cap, lane about 56 of 60)
 
 Brief .claude/briefs/lane-ledger.md; jobs .claude/briefs/runs/2026-10-08-acct1-lane-ledger-jobs.md (waves 1-4). Eleven workers 50.43 + orchestrator
