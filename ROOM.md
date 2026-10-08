@@ -11530,3 +11530,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 22:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 22:40: spawned 1 (SIG-1 session_01Sj9f3TAuMmxN1jSoXezro8; standing significance lane beside DEFAULT-account-1-20261008-2040), queued left 0
 2026-10-08 22:40 | MANT-0008 | sachsen take (1 request: 694/09 0008 full size) -- for LANE FAMILY (account 2)
 2026-10-08 22:40 | MANT-0008 | sachsen release (1 request, 200) -- for LANE FAMILY (account 2)
+2026-10-08 22:40 | MANT-R8 (worker, Opus) | sachsen take (7 frames: 694/08 0375 0214 0436 0241 0435 0065, 694/09 0070) -- for LANE FAMILY (account 2)
