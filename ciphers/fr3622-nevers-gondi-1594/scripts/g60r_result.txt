@@ -1,0 +1,6 @@
+tags 135 keyed 110 unkeyed ['6+', 'I', 'a', 'h', 'w:...', 'z']
+real (a) -1.344 (b) 0.870
+decode tlaaanlasaabiensnisaiariedesnaatlabeeitsetlatdessatlabesdelaanasnettsditsnzoetttemetslaunelasatnaassasntdesetlasnzmaiamadootesalassedestetdelaenostrestsaa
+NullA (a) p99 -1.308 rank 21/1000 >= real | (b) p99 0.847 rank 4/1000 >= real
+NullB (a) p95 -1.217 p99 -1.194 share>=real 0.630
+NullB (b) p95 0.892 p99 0.916 share>real 0.165 share>=real 0.175

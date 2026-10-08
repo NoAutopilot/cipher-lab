@@ -43,3 +43,14 @@ passes were discarded). Gallica IIIF returned HTTP 500 twice, a local copy was u
 N=134 tags, (a) -1.344 vs p95 -1.403 / p99 -1.272, (b) 0.870 vs p99 0.844 (rank 198/200); pass agreement 0.65. Per-token grades (H = in key and both passes agree;
 M otherwise; U = tag not in key): H 75, M 35, U 24; no H/C period reading, so this is a cryptanalytic result at most. Viterbi text is a draft
 (`scripts/g60e_result.txt`), no translation claim. No reading file written, so decode_key.py --check not applicable. Verifier next.
+
+## Robustness check (BNF-G60R)
+
+8 Oct 2026, account 2, independent Opus session for LANE BNF-FOCUS (did not see G60E's reasoning before the numbers).
+Script `scripts/g60r_robust.py` (instrument `scripts/g60d_instrument.py` unchanged), output `scripts/g60r_result.txt`.
+
+- Re-derivation: real (a) 4-gram -1.344, (b) word cover 0.870 -- reproduces G60E to 3 dp (135 tokens read, 110 keyed).
+- Null A, 1000 class-preserving shuffled keys (seed 7001): (a) p99 -1.308, 21/1000 at or above real; (b) p99 0.847, 4/1000 at or above real.
+- Null B, shuffled target (rule 3, ARM-C1), 200 permutations of tag order (seed 7002), real key: (a) p95 -1.217, p99 -1.194, 63.0% at or above real; (b) p95 0.892, p99 0.916, 16.5% above real.
+- Registered verdict: **does not hold.** Real (b) clears Null A but not Null B (0.870 < p99 0.916; 16.5% >= 5%). The word cover comes from no.60's word and syllable values (la, de, les, et, bien, nostre) on any ordering of these tags; the real order of f.91 is no better than a random order under this key. Not a negative of no.60 on f.91 either: this instrument cannot decide at N=135 (rule 3 non-test). Step 5 (depth) not run, per the brief.
+- Agreement with G60E: G60E's own row already flagged the thin margin and asked for the shuffled-target decode; that check fails, so "no.60 fits f.91" should not go to a verifier on these numbers. A discriminating test needs an order-sensitive statistic (e.g. a run of readable clause) or more ciphertext.
