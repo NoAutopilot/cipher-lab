@@ -142,3 +142,19 @@ not read; see NOTES.md "## ST-LEDGER parked entries").
  your permission mode, do not work around it: push what you have, say which call was refused in ROOM, and stop.
 
 ## LS-V3 (Opus 5.5, verifier; cap $6, box 75 min) -- the LS-V1 / LS-V2 section above, scoped to LS-R3's entries.
+
+---
+
+# Wave 4 (written 8 Oct 2026 01:0x UTC) -- last pair inside the lane cap
+
+LS-R3 read E37-E46 (9 of 10 not located in what it searched, 5.50); LS-V3 is auditing them. One more reader + verifier fits the cap.
+
+## LS-R4 (Opus 5.5, solver; cap $5, box 90 min) -- method as LS-R1 / LS-R2 (Wave 2), these entries and IDs:
+ 8922/30/2 E47, 8957/65/1 E48, 8983/91/2 E49, 9042/150/0 E50, 9098/206/0 E51, 9117/225/2 E52, 9123/231/1 E53, 9135/243/0 E54
+ (Sheldon at Fort Monroe, Sampson at Baltimore, Van Duzer at Nashville). ~0.55 per entry measured on LS-R3; stop before an entry that
+ would cross 80% of cap. No. 2 entries go to N2-BG..; old vocabulary O9-AH... Push after the first two entries. If a tool call is
+ refused by your permission mode, do not work around it: push what you have, say which call was refused in ROOM, and stop.
+ LS-V3 may be writing AUDIT.md at the same time: you do not touch AUDIT.md.
+
+## LS-V4 (Opus 5.5, verifier; cap $4.5, box 60 min) -- the LS-V1 / LS-V2 section (Wave 2), scoped to LS-R4's entries; AUDIT.md
+ "## AUDIT (LS-V1)" is the worked example. Rebase before every write to AUDIT.md / status.json / SECOND-OPINIONS-QUEUE.tsv.
