@@ -5925,6 +5925,47 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261008-1613, session_01XR227ra6tFXMey23e7ENgo, account 2), 8 October 2026 (closed 18:3x UTC: runnable in-scope backlog worked, lane 45.14 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-08-ytbiz-family-1613-jobs.md. First incarnation
+(no earlier LANE FAMILY handoff). Supply: next_steps.py --hot-only (exit 0) and SIBLINGS "Next sibling round", re-checked by hand (prior-work
+check 1): five register rows were already done and dropped (wvo-11008, msliv0638 m0200/m0277, wallis Thurloe grep, vanhaersolte small_runs,
+suriname inv. 373 0702-0758); then FAM-POOL's ranking (research/FAMILY-POOLS-2026-10-08.md). Workers 12 (4 waves 16:21-18:05 UTC; Opus 9,
+Sonnet 3; all ledgered): 39.60 by get_session; orchestrator 5.54; five_hour `allowed` throughout. Over cap: CS11106 2.80/2.5, SUR373 3.33/3,
+4333L 4.24/4. Known-text share 5.43 (12%: FAM-WVOH, FAM-SUR729).
+
+Results:
+- sachsstaatsarchiv-manteuffel-1712 694/09 0015+0016 (Gersdorff relation 3 Jan 1713): Krauske table, 69 tokens C 47 M 21 U 1; shuffled-key
+  gate 0/1000, judge fr18 PASS (FAM-MANT15). First audit FAM-MANTV: N2 D1 -- the news of the cipher spans is printed in Colyer to Heinsius
+  12 and 18 Nov 1712 (Heinsius Briefwisseling XIV nos.336/367); 0052 D0. No AUD2 row (gated on N3+ D2+).
+- wvo-11106-bergh-1572 (folder created; check-solved `open`, no gloss on the 3 images; year 1572 is editorial): page 2 transcribed, 22 lines,
+  820 signs, K 41 provisional, err_2reader 0.10, 72 look-alike positions in tx/focus.tsv. Homophonic family, noise 0.10, control-backed
+  negatives: fr16 (control 0.718 over 6 seeds), de1600 (0.777), la17 (0.611), merged K38 fr16 (0.670); merged K38 de1600 control below gate
+  (non-test). design_prior: nothing above null. Dutch untested (no 16th-c. corpus on file).
+- decode-4333-rusdorff-oxenstierna-1628 (folder created, status blocked on the edition check): the leaves date 1624-25, not 1628; two systems
+  -- 1624 letter cipher (apparent one-place shift; a period a-z margin gloss on R4334 p2) and 1625 numeric (2-digit groups ~15-86 + 7xx name
+  codes). Key records: R4104 Swedish homophonic 11-271; R4120 Camerarius-Grubbe 1626 table 14-85 + cover names, a range candidate for
+  R4336/37 (untested). Neither fits riksarkivet-r4282. Krueger 1876: Kassel MS vol. 3 holds the Rusdorf-Oxenstiern correspondence 1624-28.
+- heinsius-hermitage-1704: 20 deciphered l'Hermitage letters (London, 1710-16) tabled from the edition, none before Jul 1710; REQUEST.md
+  order: add H.A. 1536 first, then 1636, 1726.
+- wvo-hessen-1564: reference-strip blind read, decoy gate 8/10 PASS; eye-adjusted AGREE 171/257 (was 159); no key change; 5 rows to the sorter.
+- na-suriname-map-1781: inv. 373 0697-0757 swept, 10 more glossed cipher scans, none unglossed; 0729 site-name crib MISS both (pre-registered).
+- Flag (FAM-MANTV): tools/depth_stats.py builds the code-clause window from cipher tokens only, so on a leaf where cipher runs are islands in
+  clear text it splices letters from neighbouring runs; a clear-text-aware window option is needed (tool owner's call).
+
+**next** (for the next LANE FAMILY incarnation):
+1. decode-4333-rusdorff: Riksarkivet NAD catalogue lookup for the five records (~0.3); when LOCAL-QUEUE L67 (Cuhn 1789 Memoires II p.668 +
+   Oxenstiern 1624/25/28) is answered, the R4334/R4335 shift decode with --check and the margin gloss as known answer (~1.5); then R4336/37
+   transcription + a pre-registered R4120 key test with a permuted-key control (~5).
+2. wvo-11106-bergh-1572: a 16th-c. Dutch corpus (tools/data, era-matched per rule 3) and the nl homophonic run (~2); WVO Opmerkingen of
+   Bergh's sibling letters for a cipher note (~0.3); the owner's sign sorter on tx/focus.tsv before any further machine design test.
+3. sachsstaatsarchiv-manteuffel-1712: 694/08 ranked frames 0485/0391/0390/0395 (mant0609/rank_unglossed.tsv) deferred -- value lower after the
+   N2 finding; if taken, run prior-work check 4 against Heinsius Briefwisseling XIV-XV and Colyer first (~9 for two frames).
+4. heinsius-hermitage-1704: the archive order (H.A. 1536 first) is a person step via REQUEST.md; Deel 5-9 candidate pages unread (~1).
+5. wvo-hessen-1564: owner sorter pass on the 5 focus rows, then re-align (~1.5).
+6. riksarkivet-r4282-1628: neither R4104 nor R4120 is its key table; the 1629 3-row 8-block table is still unlocated.
+Blocked: hellen 1763 (no key material, design prior no family); Suriname inv. 373 has no unglossed neighbour in 0697-0757.
+
 ## LANE DEFAULT-account-4-20261007-1335 handoff (session_01FwjSioN4d1tryS9vCFN4aN, account 4), 7 October 2026 (closed 15:2x UTC: backlog spent, lane about 55 of 60)
 
 Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-07-account4-default1335-jobs.md. Gate 0a: no SESSION-SWEEP-account-4 row.
