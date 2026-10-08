@@ -126,3 +126,19 @@ rows in both families). N-class + key `period` + text known/unknown + depth (rul
 Append "## AUDIT (LS-V<k>)" to AUDIT.md; status.json result rows for N3+ entries only, one per entry in the format of the 7 Oct eckert
 rows (rebase first); SECOND-OPINIONS-QUEUE.tsv row per N3+ entry in this session; correct any over-claim in the solver's section.
 `tools/depth_check.py` passes for the rows you add. Do not decode other entries.
+
+---
+
+# Wave 3 (written 8 Oct 2026 00:2x UTC)
+
+Wave 2 results: LS-R1 read E21-E29; LS-V1 classed E21, E23, E26, E27, E28 N3 (key period), E29 N2, E22/E24/E25 N1 -- 5 of 9 at N3
+from the filter, against 0 of 14 in the last two unfiltered chunks. LS-R2 and LS-R2b both ended without a commit (E30-E36 are parked,
+not read; see NOTES.md "## ST-LEDGER parked entries").
+
+## LS-R3 (Opus 5.5, solver; cap $11, box 120 min) -- same section as LS-R1 / LS-R2 above, these entries and IDs:
+ 9110/218/2 E37, 9045/153/1 E38, 9045/153/2 E39, 9046/154/0 E40, 9097/205/2 E41, 8945/53/1 E42, 8975/83/0 E43, 9124/232/2 E44,
+ 9129/237/3 E45, 9130/238/1 E46 (Horner at New York, Sheldon at Fort Monroe, Sampson at Baltimore; no other worker holds them).
+ No. 2 entries go to N2-BG..; old vocabulary to O9-AH... Commit and push after the first two entries. If a tool call is refused by
+ your permission mode, do not work around it: push what you have, say which call was refused in ROOM, and stop.
+
+## LS-V3 (Opus 5.5, verifier; cap $6, box 75 min) -- the LS-V1 / LS-V2 section above, scoped to LS-R3's entries.

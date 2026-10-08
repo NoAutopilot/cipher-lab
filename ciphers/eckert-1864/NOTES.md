@@ -952,3 +952,10 @@ Requests: hdl.huntington.org 9 (IIIF images, all 200; the volunteer text came fr
 retried; 1 advancedsearch); be-api.us.archive.org 11 (fts; 4 answered 502, one retry each, E23 failed twice and was dropped);
 www.googleapis.com 18 (Books API with key and country=US; 2 answered 503, retried once, 200). Report what was found and where
 it was not found; novelty is a verifier's (rule 10): batch flagged for LS-V1.
+
+## ST-LEDGER parked entries (8 Oct 2026 00:2x UTC, LANE ST-LEDGER, account 1)
+The seven priority-1 entries assigned as E30-E36 (pointers/page/entry 9051/159/1, 9051/159/2, 9054/162/1, 9055/163/0, 9056/164/0,
+9057/165/3, 9060/168/1; McCaine in the Shenandoah Valley, Aug 1864) were given to two solver sessions (LS-R2, LS-R2b, 7 Oct 2026); both
+ended without a commit, so nothing of them is on origin and the IDs E30-E36 are unused. They are still unread; next: one solver session
+on them with the LS-R1 method, ~$8, and the reason the two sessions stopped looked at first (session records show only "decode handed
+off" / a refused tool call).
