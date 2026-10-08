@@ -321,6 +321,6 @@ ES132-SLIC	account-2	.claude/briefs/runs/2026-10-08-acct3-scout-jobs.md	Opus 5.5
 AUD2-WVO11008	account-4	.claude/briefs/runs/2026-10-08-acct3-scout-jobs.md	Opus 5.5	5	60	done 2026-10-08 02:45	2026-10-08 01:3x	second audit wvo-11008 under the shared depth bar; N3 kept; depth D2->D1 (longest H stretch 15 < AD>=28); AUDIT 2 in AUDIT.md
 AUD2D-OLD2442	account-4	.claude/briefs/runs/2026-10-08-acct3-scout-jobs.md	Opus 5.5	6	75	done 2026-10-08 03:05	2026-10-08 01:3x	second audit + depth oldenbarnevelt 2442 blocks B/C1 (moved from account 1 to balance); AUDIT 2 pushed 74335c03: N3 kept, key ours, D2 88.4% digit basis; parent: status.json + depth_check + NOTES open->partial
 AUD2-LS-C	account-4	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	13	110	queued	2026-10-08 02:5x	second audits eckert-1864 E37-E41
-AUD2-LS-D	account-2	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	13	110	queued	2026-10-08 02:5x	second audits eckert-1864 E42 E43 E45 E46 E47
+AUD2-LS-D	account-2	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	13	110	claimed session_01STRHCzJtyQ9kBmyHiNY5Yk 2026-10-08 03:09	2026-10-08 02:5x	second audits eckert-1864 E42 E43 E45 E46 E47
 AUD2-LS-E	account-1	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	13	110	queued	2026-10-08 02:5x	second audits eckert-1864 E49-E52 E54
 ST-LEDGER-2	account-1	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	50	480	queued	2026-10-08 02:5x	STEAM: ledger round 2, ~280 filtered priority-1 rows, reads + first audits, second audits queued to accts 2/4
