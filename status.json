@@ -8235,9 +8235,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM3c)'"
+        "AUDIT.md '## AUDIT (FV-FM3c)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-7)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM3c verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -8258,7 +8259,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Porter to Commanders Parker (Onondaga) and Colhoun (Saugus), 10 Dec 1864, the Saugus ordered down to Hampton Roads (E185)",
       "line": "Read at grade H with War Department Cipher No. 1: on 10 Dec 1864 Fort Monroe forwarded two telegrams signed by Rear Admiral D. D. Porter -- to Commander W. A. Parker of the Onondaga at Dutch Gap, 'send the Saugus down at once', and to Commander E. R. Colhoun of the ironclad Saugus at City Point, 'report to me with your vessel without delay at Hampton Roads'; not located in the Naval Official Records (ser. I vol. 11), the Official Records (ser. I vol. 42 pt 3), Internet Archive full text or the Huntington's full-text search (searched 8 Oct 2026).",
-      "gap": "N3 (weak: the operative sentence is clear in the public transcription): Grant Papers vol. 13 (not searchable by be-api), Porter's and the monitors' logs, Google Books unread",
+      "gap": "N3 (weak: the first order's sentence is clear in the public transcription; held by AUD2-LEDGER-7): Grant Papers vol. 13 (not searchable by be-api), the Saugus and Onondaga logs (unprinted, RG 24), Google Books (429 on 8 Oct) unread; ORN I/11 every 10-11 Dec 1864 entry read, not located",
       "depth": "D3",
       "completeness": "13 H of 13 code-word groups ('William', 'Hemp', 'Tommy' plain)",
       "phrases": [
@@ -8276,9 +8277,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM3c)'"
+        "AUDIT.md '## AUDIT (FV-FM3c)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-7)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM3c verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -8298,8 +8300,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Butler to Maj. Gen. Lew Wallace, Baltimore, 28 Mar 1864, arrest Colonel William Chestnut (E191)",
-      "line": "Read at grade H with Cipher No. 1: on 28 Mar 1864 Butler, through Fort Monroe, advised Maj. Gen. Lew Wallace at Baltimore to arrest at once Colonel William Chestnut at the corner of South and Pratt Streets and hold him safe, and to send him a confidential staff officer of high intelligence by the next night's boat; not located in the Official Records (ser. I vol. 33), Butler's printed correspondence (vols. III-IV), Internet Archive full text or the Huntington's full-text search (searched 8 Oct 2026).",
-      "gap": "N3: OR ser. II (prisoners), Baltimore press of late March 1864, Wallace's papers, Butler's letterbooks, Google Books unread",
+      "line": "Read at grade H with Cipher No. 1: on 28 Mar 1864 Butler, through Fort Monroe, advised Maj. Gen. Lew Wallace at Baltimore to arrest at once Colonel William Chestnut at the corner of South and Pratt Streets and hold him safe, and to send him a confidential staff officer of high intelligence by the next night's boat. The arrest itself was reported in the press (Alexandria Gazette, 31 Mar 1864, p.1: Chestnut, a Baltimore grocer and commission merchant, arrested 'at the request and by order of Gen. Butler'); the telegram was not located in the Official Records (ser. I vol. 33, ser. II vol. 6), Butler's printed correspondence (vols. III-IV), Wallace's autobiography, Internet Archive full text, Chronicling America or the Huntington's full-text search (searched 8 Oct 2026).",
+      "gap": "N3 (held by AUD2-LEDGER-7; the arrest is printed, the telegram not located): Baltimore Sun/American (not in Chronicling America), Wallace's and Butler's papers, Google Books (429 on 8 Oct) unread. Depth: D3 criteria met on the press report (external check) but held at D2 under LANE VERIFY-3's keep-or-lower rule -- raise is the orchestrator's call",
       "depth": "D2",
       "completeness": "12 H of 12 code-word groups ('Wallace', 'William' plain)",
       "phrases": [

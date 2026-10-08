@@ -5724,3 +5724,99 @@ plaintext material, N1 if ever filed).
 
 ## HathiTrust full text (owner desk, 8 Oct 2026; LOCAL-QUEUE L4, ASKS 141)
 owner desk read 8 Oct 2026 (screenshot to the account-3 orchestrator, 21:5x UTC): babel.hathitrust.org full-text search, "Full Text & All Fields", phrase "some camels made in a few days" (E4): No results (All Items 0, Full View 0). Other E4/E5 phrases and "Fox to Butler" "April 21, 1864" not run. A search result for the log, not a novelty verdict (rule 10); class unchanged.
+
+## AUDIT 2 (AUD2-LEDGER-7)
+Verifier AUD2-LEDGER-7 (account 3, Opus, session_01XAgtN8LGMsAr2qWCB6HKiG, for LANE VERIFY-3), 8 Oct 2026, 21:42-22:1x UTC by `date -u`.
+Second adversarial audit of **E185** (N3 weak D3) and **E191** (N3 D2) after "## AUDIT (FV-FM3c)" (account 1); reader FM-R2b
+(account 1). Account 3 neither read nor first-audited either item. Nothing decoded; key look-ups in key.md only (Polka = Command(er),
+Niagara = D. D. Porter, Imogene = 3 PM, Black = City Point, Wick = Report, Wiley = Road, Walrus/Youth = Signature, Zebra/Unity = Period;
+Tappan = Major, Shelby = General, Banditti/Baptism = Baltimore, Oakum = Arrest, Pandora = Colonel, Whelp = Tomorrow, Knox = Maj Gen B. F.
+Butler, Topsy = 12): every value FV-FM3c used agrees with key.md. Key source `period`. Scripts: `fortmonroe/aud2_ledger7_hdl.py`.
+
+### 1. Duplicate diff and prior-work gate
+- **Duplicates:** pointers 5824 and 5589 occur only in E185's and E191's own headers; FV-FM3c's diff (same-date E19/E20, O9-W) re-checked
+  against ciphertext.txt headers: **no duplicate**.
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=mssEC 25;folio=5824;date=1864-12-10;sender=Porter;recipient=Parker'
+  --step-type second-audit --fetch` (E185 and E191 have no items.tsv row): exit 4, one LEAD = the target-level V1-KNOWN claim of 16:02
+  (account 3, a different item set; no unit named; does not cover E185/E191); 3-tomokiyo CLEAR, 3-solver CLEAR (cyphersolver, bourdeau
+  caches) / UNCHECKED-NET (aaymeloglu, no clone), 4-editions CLEAR on the cached OR volumes (date +-1, both correspondents, control hit).
+  G3 run with `--reading <scratch> --network`: output under section 2 last bullet.
+
+### 2. Prior-work checks 3-5 (G3: holder, recipient side, same-day orders, sender's same-week letters, press)
+- **Holder's full text** (Huntington CONTENTdm p16003coll11, `CISOSEARCHALL`, transcription returned; 9 requests 21:54-21:55 UTC under a
+  LANE VERIFY-3 hdl take): saugus 17, onondaga 12, canonicus 13, mahopac 6 -- the Saugus/monitor traffic is 5813 (30 Nov), 5814 (1 Dec,
+  O'Brien for Parker: "the [three] monitors Mahopac, Canonicus and Saugus are ready for service"), 5815/5821 (1 and 8 Dec, Porter to
+  Parker), 5824 (E185), **5827** (Colhoun's same-day reply, already used by FV-FM3c), 5838 (19 Dec, the Saugus "ready for sea"); no second
+  copy of either 10 Dec order. chesnut 0; "hold him safe" 5 (5589 = E191; 5524, 7042, 8553, 8377 unrelated); "oakum at once" 3 (5589;
+  8388, 9241 unrelated); "nights boat" 2 (5589; 12787 unrelated, July, New York); "high intelligence" 74 (OR-mode; 5589 among them; not
+  read further). **No reply from Baltimore and no Wallace-side copy of E191 in the holder's full text.**
+- **ORN ser. I vol. 11** (`officialrecordso0011unse`, `_djvu.txt` to scratch): every "December 10/11, 1864" heading read. 10 Dec: Porter
+  to Fox and Welles (men wanted), to Berrien (Cambridge), to Schenck (Tacony), to Rhind (Louisiana powder), General Order No. 70 (Fort
+  Fisher plan). 11 Dec: Porter's orders sending Mahopac, Monadnock, Canonicus, Iosco to Beaufort and Spuyten Duyvil up the James to
+  "Commander W. A. Parker". **No order to Parker or Colhoun about the Saugus on 10 Dec**; regex "send the Saugus|Saugus down|with your
+  vessel without delay" 0 relevant. 77 "Saugus" lines: Parker's 1 Dec report (the three monitors ready), Colhoun's Fort Fisher reports,
+  the 25 Dec "Saugus having arrived the night previous". Abstract logs printed in vol. 11: Malvern, Fort Jackson, Chicopee and some 25
+  others, **no Saugus or Onondaga log** (the ship logs are unprinted, National Archives RG 24: not reachable from here).
+- **OR ser. II vol. 6** (`warofrebellion0206rootrich`, prisoners and state prisoners, June 1863-Mar 1864, to scratch): Chestnut/Chesnut
+  (OCR-tolerant `ches?t?nut`) **0**, "Pratt street" 0; positive controls: "Wallace" 67 lines, March 26-31, 1864 headings present. OR ser. II
+  vol. 7 (Aug 1864-) cached: Chesnut hits are Gen. James Chesnut (Confederate), unrelated. OR I/33 and Butler III-IV: FV-FM3c, not repeated.
+- **Wallace's own book** (*Lew Wallace: An Autobiography*, 1906, `lewwallaceautobi00wall`, cached): Chestnut 0; the Baltimore chapter
+  ("Martial law in Baltimore -- Women smugglers -- An arrest") is about a woman smuggler, not Chestnut.
+- **Press of the day** (Chronicling America through the www.loc.gov collection API, 13 requests; the old chroniclingamerica.loc.gov
+  search endpoint answered 403 five times in one burst and was not retried):
+  - E191: **FOUND, the event: *Alexandria Gazette*, 31 Mar 1864, p.1** (sn85025007, `https://www.loc.gov/resource/sn85025007/1864-03-31/ed-1/?sp=1`):
+    "Col. William Chestnut, grocer and commission merchant, and a prominent Union man, in Baltimore, was arrested yesterday morning. The
+    arrest was made at the request and by order of Gen. Butler, but the charges did nor [not] transpire, although it was stated that it was in
+    connection with the sale of contraband goods to persons at Fortress Monroe or [Norfolk, OCR garbled]." (OCR read from the page's ALTO XML.) It
+    confirms, independently of the key, the four values the key supplies to E191's sense -- Colonel (Pandora), arrest (Oakum), Baltimore
+    (Banditti/Baptism), Butler (Knox) -- and that the arrest followed within about two days. It does **not** print the telegram.
+    "Colonel Chestnut" 0, "Col. Chestnut" 0 (Mar 20-May 31); "William Chestnut" 1 (this page). The Baltimore Sun and Baltimore American
+    are not in Chronicling America for 1864: unread.
+  - E185: "Saugus" "Colhoun" 9-20 Dec 0; "Saugus Hampton Roads" 3 (19 Dec: Baltimore Wecker, National Intelligencer, Worcester Spy); the
+    Intelligencer page read: the Fort Fisher fleet list (Saugus among the ironclads), context only.
+- **Google Books** (key, `country=US`): 10 phrase queries ("send the Saugus down", "William Chestnut" Baltimore, "Col. William Chestnut",
+  "confidential member of your staff", ...) all **HTTP 429** (daily quota spent); host stopped, **unreachable**, not a negative.
+- **Grant Papers vol. 13** (E185): not searched -- AUDIT 2 (AUD2-LS3-B) and FV-FM3c found the volume not searchable through be-api
+  (positive control "Sheridan" 0); still unread.
+- Sender's same-week letters to other recipients: Porter 10-11 Dec in ORN I/11 (above); Butler 26-31 Mar 1864 in OR I/33 and Butler III-IV
+  (FV-FM3c) -- no Chestnut. Same-day orders in the destination department (Middle Department, 8th Army Corps): only through OR I/33
+  (FV-FM3c) and OR II/6 (here); Wallace's papers (Indiana Historical Society) unread.
+- G3 tool output (`prior_work.py ... --reading <scratch> --network`): both items exit 4 (verdict step LEAD). E185: 6-g3 CLEAR on ORN I/9, I/10 and Butler IV (6 decoded phrases, no hit); ia-global and gbooks not searched (tool's max-requests reached; covered by hand above, gbooks 429); 4-editions UNCHECKED-NET on OR I/47-49 (not fetched, outside the dates). E191: same CLEARs; two 6-g3 LEADs, 9c4139 (OR I/36 pt 2) and 2d7efe (OR I/37 pt 2), each 'Major General Wallace Baltimore' 0 exact/1 near, not within +-3 days -- read: the address formula 'Major-General Wallace, Baltimore, Md.:' of May/July 1864 telegrams, Chestnut 0 in both volumes: **resolved, not this item**. The remaining LEAD (1-own f916ab) is the V1-KNOWN target-level claim, which does not cover these items.
+
+### 3. Grades (re-checked against key.md, not re-decoded)
+- **E185:** 13 code groups (Polkaer x2, zebra x2, youth, walrus, Niagara x2, Imogene x2, Black, wick, wileys) = 13 H; plain William,
+  Hemp(ton), Tommy ("to me") as FV-FM3c ruled. **Agree.**
+- **E191:** 12 code groups (Tappan, Shelby, Banditti, unity, oakum, pandora, baptism, zebra, whelp, youth, Knox, Topsy) = 12 H; Wallace,
+  William plain. **Agree.** The press item now confirms Pandora, Oakum, Banditti/Baptism and Knox in this context.
+
+### 4. Classification (key `period`)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E185** | **N3 (weak), held** | unknown (the first order's sentence "Send the Saugus down at once" is clear in the holder's public transcription; the key supplies Porter, Commander, City Point, Report, Roads) | **D3, held** | 100 (13 H of 13) | Colhoun's reply 5827 and ORN I/11 context (Parker's 1 Dec report; the Saugus at Hampton Roads for Fort Fisher) |
+| **E191** | **N3, held** | unknown (the telegram); **the arrest itself was printed** (Alexandria Gazette 31 Mar 1864 p.1) | **D2, held** under this lane's keep-or-lower rule; **D3 criteria now met** (100% H + a non-statistical external check, the press report) -- flagged for the orchestrator | 100 (12 H of 12) | code clause as FV-FM3c; external: Alexandria Gazette 31 Mar 1864 p.1 |
+
+- **E185: N3 (weak).** Adversarial note: read alone, the first telegram is N1-shaped (its order is clear in the holder's transcription,
+  as E187 was ruled N1); the item stays N3 because the second order's sense ("[report] to me ... at Hampton [Roads]") and the signer
+  (Porter) need the key. Safe sentence: FV-FM3c's, with "the Naval Official Records (ser. I vol. 11, every 10-11 Dec 1864 entry read)" and
+  "searched 8 Oct 2026" -- unchanged otherwise. Unsafe: "first", "unpublished", "unknown order".
+- **E191: N3.** Safe sentence (replaces FV-FM3c's): "Read at grade H with Cipher No. 1: on 28 Mar 1864 Butler, through Fort Monroe, advised
+  Maj. Gen. Lew Wallace at Baltimore to arrest at once Colonel William Chestnut at the corner of South and Pratt Streets and hold him safe,
+  and to send him a confidential staff officer of high intelligence by the next night's boat. The arrest itself was reported in the press
+  (Alexandria Gazette, 31 Mar 1864, p.1: Chestnut, a Baltimore grocer and commission merchant, arrested 'at the request and by order of
+  Gen. Butler', reportedly over contraband sales to Fortress Monroe or Norfolk); the telegram was not located in the Official Records
+  (ser. I vol. 33, ser. II vol. 6), Butler's printed correspondence (vols. III-IV), Wallace's autobiography, Internet Archive full text,
+  Chronicling America or the Huntington's full-text search (searched 8 Oct 2026)." Unsafe: "first", "unknown arrest", "unpublished
+  episode" -- the arrest is printed; only the telegram's text is not located.
+  Depth sentence (D2, and the D3 sentence if raised): "On 28 Mar 1864 Butler asked Lew Wallace to arrest Colonel William Chestnut of
+  South and Pratt Streets, Baltimore, at once; the arrest was made at Butler's order within about two days."
+- Not N4 for either: Google Books (429), Grant Papers vol. 13, the Baltimore Sun/American, Wallace's and Butler's papers, ship logs unread.
+
+### 5. Postmortem
+- FV-FM3c's E191 gap ("Baltimore press of late March 1864 unread") hid a printed report of the very arrest: the press-of-the-day check
+  was the one that moved, as the VERIFY-1 lesson predicted. The FV-FM3c safe sentence was not wrong (it claimed only the telegram), but
+  any outward note that presented the arrest as unknown would have over-claimed; the new safe sentence names the press item.
+- No over-claim found for E185.
+- Rows written: status.json E185, E191 (audit_status "two audits", audit_refs, line/gap for E191); SECOND-OPINIONS-QUEUE.tsv rows
+  unchanged (class unchanged), but `second-opinions/PROMPT-chatgpt-e191.md` gains a note of the press item.
+- Requests: hdl.huntington.org 9; archive.org 2 (`_djvu.txt`); www.loc.gov 13 + tile.loc.gov 4; chroniclingamerica.loc.gov 5 (403, stopped);
+  googleapis 10 (429, stopped). Subagents 0.
