@@ -359,3 +359,4 @@ VIV52-R	account-2	.claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md	Opus 5.5	
 BLAST-account-1	account-1	-	-	0	0	active 2026-10-08 15:53	2026-10-08 15:53	lanes=1 until=2026-10-10 18:00 brief=.claude/briefs/lane-ledger.md; owner 8 Oct: 5-8 running with refills
 BLAST-account-2	account-2	-	-	0	0	active 2026-10-08 15:53	2026-10-08 15:53	lanes=1 until=2026-10-10 18:00 brief=.claude/briefs/lane-family.md; owner 8 Oct: 5-8 running with refills
 BLAST-account-4	account-4	-	-	0	0	active 2026-10-08 15:53	2026-10-08 15:53	lanes=1 until=2026-10-10 18:00 brief=.claude/briefs/lane-depth.md; owner 8 Oct: 5-8 running with refills
+LANE-VERIFY-1	account-3	.claude/briefs/lane-verify.md	Opus 5.5	60	600	queued	2026-10-08 15:54	standing VERIFY lane, spawned by the account-3 orchestrator (no account-3 dispatcher); refilled at its check-ins
