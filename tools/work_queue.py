@@ -25,7 +25,8 @@ owner restarting both accounts by hand). Must NOT fill: when a queued row exists
 is still claimed, PAUSE is set, a default lane was added < 12 h ago, or for account B when only B's queue is empty and
 A was asked (tests tools/tests/test_work_queue.py). --next without --account never fills.
 Blast mode (owner, 8 Oct 2026: "5 - 8 running on all accts, with refills"). A BLAST-<A> row (status `active <UTC>`, note
-`lanes=N until=YYYY-MM-DD HH:MM`, written by `--blast A --lanes N --until "..."`, ended by `--unblast A`) changes rules (2), (3)
+`lanes=N until=YYYY-MM-DD HH:MM [brief=PATH]`, written by `--blast A --lanes N --until "..." [--brief PATH]`, ended by
+`--unblast A`; brief= names the standing lane brief the refill rows use, default .claude/briefs/default-lane.md) changes rules (2), (3)
 and (5) for account A while `until` is in the future: auto-fill adds a DEFAULT row whenever fewer than N lane rows are open
 (a lane here is LANE-*, DEFAULT-*, or any claimed row with box_min >= 240, i.e. a named lane-orchestrator row), the
 after-close wait is 15 min instead of 60, and the 12-h DEFAULT hold does not apply. Rules (1) and (4) still hold: a queued row
@@ -63,7 +64,7 @@ def blast(rows, A, t):
         ud = r["note"].split("until=", 1)[1][:16] if "until=" in r["note"] else ""
         until = parse_ts(*ud.split()) if len(ud.split()) == 2 else None
         if until is None or t >= until: return None
-        return n, until
+        return n, until, kv.get("brief") or DEFAULT_BRIEF
     return None
 def autofill(rows, account, t=None):
     """Return the DEFAULT row to append for `account`, or None with the reason; never mutates rows."""
@@ -73,7 +74,7 @@ def autofill(rows, account, t=None):
     if any(r["job_id"] == "PAUSE-" + A and r["status"].startswith("paused") for r in mine): return None, "paused"
     b = blast(mine, A, t)
     if b:
-        n, until = b; open_n = 0; last = None
+        n, until, bbrief = b; open_n = 0; last = None
         for r in mine:
             if not is_lane_wide(r): continue
             s = r["status"].split()
@@ -89,7 +90,7 @@ def autofill(rows, account, t=None):
         if last and (t - last).total_seconds() < 900: return None, "blast: lane closed < 15 min ago"
         jid = f"DEFAULT-{A}-{t.strftime('%Y%m%d-%H%M')}"
         if any(r["job_id"] == jid for r in rows): return None, "id exists"
-        return {"job_id": jid, "account": A, "brief": DEFAULT_BRIEF, "model": "Opus 5.5", "cap_usd": "60", "box_min": "600",
+        return {"job_id": jid, "account": A, "brief": bbrief, "model": "Opus 5.5", "cap_usd": "60", "box_min": "600",
                 "status": "queued", "added": t.strftime("%Y-%m-%d %H:%M"),
                 "note": f"auto-fill: blast {open_n + 1} of {n} until {until.strftime('%Y-%m-%d %H:%M')}"}, "filled"
     last_close = None
@@ -171,7 +172,9 @@ def main():
         if r is None:
             r = {"job_id": jid, "account": A, "brief": "-", "model": "-", "cap_usd": "0", "box_min": "0",
                  "status": "", "added": now(), "note": ""}; rows.append(r)
-        r["status"] = f"active {now()}"; r["note"] = f"lanes={a.lanes} until={a.until}" + (f"; {a.note}" if a.note else "")
+        if a.brief and not os.path.exists(os.path.join(os.path.dirname(HERE), a.brief)): sys.exit("brief missing: " + a.brief)
+        r["status"] = f"active {now()}"
+        r["note"] = f"lanes={a.lanes} until={a.until}" + (f" brief={a.brief}" if a.brief else "") + (f"; {a.note}" if a.note else "")
         save(rows); print(jid, r["status"], r["note"]); return
     if a.check: sys.exit(0 if check(rows) else 1)
     if a.next:

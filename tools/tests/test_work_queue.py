@@ -163,6 +163,12 @@ def test_check_accepts_blast_row():
     assert w.check([_blast()])
 
 
+def test_blast_brief_override_used_for_refill():
+    r = _blast(lanes=1); r['note'] = 'lanes=1 until=2026-10-06 00:00 brief=.claude/briefs/runs/x.md'
+    new, why = w.autofill([r], 'account-1', T)
+    assert why == 'filled' and new['brief'] == '.claude/briefs/runs/x.md'
+
+
 if __name__ == '__main__':
     for k, f in list(globals().items()):
         if k.startswith('test_'): f()
