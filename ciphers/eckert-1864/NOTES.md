@@ -1147,3 +1147,62 @@ Requests: hdl.huntington.org 11 (IIIF images, 200; 8966 and 9104 also thumbnails
 `362unit`, `363unit`, `371unit`, `372unit`, `392unit`, `432unit`) plus 1 be-api fts test; www.googleapis.com 8 (Books API, key, country=US). Report what was
 found and where it was not found; novelty is a verifier's (rule 10): batch flagged for a first verifier (LS-V6). Process note: `tools/room.py "<role>" "<text>" --push <paths>`
 logs the ROOM line and pushes only ROOM.md; the files were pushed by `git add`, `git commit`, `git pull --rebase`, `git push origin HEAD:main` (first three commits b195952b, 6cdb82bd, c356c084).
+
+## LS-R5 (8 Oct 2026, account 1, for LANE ST-LEDGER-2)
+
+Ten priority-1 entries of `entries-mssEC19.tsv` read with key.md (Cipher No. 1) as E55-E64 in ciphertext.txt; every entry is Cipher No. 1, key.md
+reads all code-word tokens but the unread words listed below, so none went to key-no2.md or key-no9.md. `python3 decode.py --write` then `--check` exit 0
+after every pair; rows marked `already_read` with "LS-R5 E<n>". Commits: 0d977fc6 (E55-E56), 672ddf03 (E57-E58), f623f3e8 (E59-E60), 8f924457 (E61-E62), a99cfc78 (E63-E64).
+
+| ID | date | from / to (decoded plain) | H | C | I | M |
+|---|---|---|---|---|---|---|
+| E55 | 26 Aug 1864 11 AM | to Lt. Col. C. H. Howard, Louisville (Capt. Bruch): Canby's dispatch states Gen. A. J. Smith's command has been detached to co-operate with Sherman (code Kidnap, Jew = General-in-Chief) | 11 | 0 | 0 | 0 |
+| E56 | 28 Nov 1864 11 AM | Van Duzer & McCaine: "Grant directs me to say that it is not expedient of you to give to the Major Generals ... commands of more than Divisions" (to Nabob/Lamb = Sheridan/Thomas) | 13 | 0 | 0 | 0 |
+| E57 | 8 Apr 1864 | Meigs to a Captain Thomas, Quartermaster: if Relief is a good staunch steamer let her call at Annapolis for a load of colored troops, else proceed to Hilton Head | 8 | 0 | 2 | 0 |
+| E58 | 19 Apr 1864 | Grant (code John) via E. D. Townsend: return Jeffery's letter to Secretary Seward; send copy of message to Burnside | 12 | 0 | 0 | 2 |
+| E59 | 27 Apr 1864 | to Sherman at Nashville (Van Valkenburg): the Cavalry Bureau reports the 11th Michigan Cavalry is of no use at Lexington, ought to go to the field; signed General-in-Chief | 12 | 0 | 0 | 1 |
+| E60 | 16 Jul 1864 10.30 AM | President (Bologna) to Grant: yours received with the safe conduct as you propose, without waiting for one by mail from me; "if there is, or is not, anything in the affair I wish to know it without unnecessary delay" | 8 | 0 | 0 | 0 |
+| E61 | 9 May 1864 3.55 PM | Stanton (Brutus) to Butler (Knox), O'Brien at Hd Qrs Butler: dispatch from Grant just received, on the march with his whole army to form a junction with you, route not determined | 6 | 0 | 0 | 0 |
+| E62 | 6 Apr 1864 | Meigs to Biggs, Fort Monroe (Sheldon): send orders to Spaulding to Hilton Head, Montauk and two propellers to Annapolis to take troops, coal supply | 10 | 0 | 1 | 0 |
+| E63 | 6 Aug 1864 11.30 AM | Halleck? (signed Sugar Ben-jam-in, unread) to Grant (Japan), Monocacy Junction: one brigade of Torbert's cavalry division left last night, another this morning for Harpers Ferry | 21 | 0 | 1 | 0 |
+| E64 | 7 Aug 1864 12.30 PM | Grant (Jupiter) to Sheridan (Nabob): give commands to officers regardless of rank; the Departments of Washington, Susquehanna and West Virginia formed into the Middle Military Division, you have temporary command | 35 | 1 | 0 | 1 |
+
+Grades: decoder H 136, C 1 over E55-E64. By hand: I 4 (E57 "Ann" and "collared" and E62 "Ann" read as plain by `plain:` lines; E63 "money" plain
+= Mono-cacy); M 4 (E58 "pembroke" read [Cipher] and "Tinkers" read [Offensive] by the decoder, plausible sense "Burnside in Cipher at Offensive's request" doubtful, both M; E59 "Susan" is key.md 11.30 PM against the
+ledger header 11.30 AM; E64 "Sapan Rape", the officer to be relieved, not in key.md). Unread, left as written and not graded: E55 "Lol"; E56 "nick", "eggs peck dead" (= "expedient", clerk's split); E57 "his on one",
+"Bender"; E58 Jeffery, See ward as written; E63 "Sugar Ben - jam - in" (signature); E64 "confide = ants", "um" (West Virginia part). Pencil glosses in a later hand (numerals, "wants", "money", "order issued making") over
+E55-E64 not transcribed, except the interlineations carried into the sentence (E55 Pandora, leopard; E56 Nabob; E61 determined, translated; E63 expected, order issued making, money) as `<ins>`.
+Image vs volunteer text (image taken in every case): E57 header "Baldwin"; E57 "there needed proceed" read from the image where the volunteer text has "there"; E57 "his on one" (volunteer "he's on one");
+E59 "there" struck through (volunteer text keeps it); E61 header "(No 1)" and "355 PM" above the date; E62 "ordrs"; E64 "nick" (volunteer "wick"), a struck "you" before "you have been as signed"
+(volunteer text has one "you"). E60 and E63-E64 header and tails read in full from the crops; E58 has no operator or addressee header on the page (volunteer text is the same).
+
+Print: `tools/print_check.py` on 16 decoded phrases (scratch target, not committed), `ia` sources `warofrebellion372unit` (I/37 pt 2), `362unit` (I/36 pt 2), `33unit` (I/33),
+`431unit`, `452unit` (I/45 pt 2), 5 volumes x 16 phrases: no hits, plus `ia-global` (hits only on phrases that name no letter-specific text), Google Books with key and country=US (503 on four phrases, not searched), OpenAlex,
+CrossRef (nothing relevant), Semantic Scholar 429 (not searched). A search result, not a finding. Corrections of that search: the phrases were paraphrased, not verbatim from the ledger, so a miss is weak; `431unit`
+is not the volume I took it for (its text is Jan 1865 operations in Georgia, 1 "August" date; the Aug 1864 Shenandoah correspondence is not in the cached set), `432unit` starts 1 Sept 1864 (searched, 0 hits for the Aug 6-7
+phrases, as expected), and `372unit` ends about 3 Aug 1864. So E55, E63 and E64 (5-26 Aug) are NOT located and NOT searched in the right volume: the OR volume for 4-31 Aug 1864 (ser. I vol. 43 pt 1 on
+the Official Records' own numbering, IA id not found in the cached set) is still unread; E64's content (Middle Military Division, Sheridan, 7 Aug 1864) is described in secondary literature, so a hit is
+expected there. E60 (Lincoln, 16 Jul 1864): `372unit` 0 hits on "safe conduct as you propose"; Lincoln Collected Works (Basler) vol. 7 not searched. E61 not located in I/36 pt 2 by this check; E56 not located in I/45 pt 2;
+E57, E58, E59, E62 not located in I/33 by this check; ORN, Grant Papers and Lincoln Papers were not searched. Hosts: archive.org 2, be-api.us.archive.org 16, www.googleapis.com 16, api.openalex.org 16, api.crossref.org 16,
+api.semanticscholar.org 3; hdl.huntington.org 10 (one 2400 px image each, once). Subagents 0. Report what was found and where it was not found; novelty is a verifier's (rule 10): batch ready for a first verifier (LS-V5).
+Crop commands (S = session scratch; images `hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg` fetched once to $S/img; regions from 600 px thumbnails, x4):
+`python3 tools/iiif_lines.py --image $S/img/p<pointer>.jpg --out $S/crops/<pointer> --prefix p<pointer> --region <x,y,w,h> --centres <list> --lines-per-crop 2 --max-width 2400` with 9057 `100,260,2300,620` centres 60,160,260,360,460,560;
+9129 `100,660,2300,580` 85,185,285,385,480; 8927 `100,260,2300,780` 40,140,252,348,448,540,628,712; 8932 `100,1700,2300,820` 40,128,220,312,408,500,596,692,772; 8951 `100,1040,2300,720` 50,192,288,380,472,568,660;
+9003 `100,600,2300,900` 60,168,272,368,464,560,652,740,828; 8959 `100,1920,2300,520` 52,148,240,332,428 and `100,2330,2300,300` 110 (last line); 8921 `100,1260,2300,1080` 80,172,260,360,460,560,660,760,860,940;
+9036 `100,1100,2300,1000` 40,112,212,312,412,512,612,712,812,912; 9038 `100,270,2300,2060` 30,142,235,328,422,515,608,701,794,888,981,1074,1167,1260,1354,1447,1540,1633,1726,1820,1913.
+
+## Remaining gaps (LS-R5, 8 Oct 2026)
+Read so far: 108 of 893 mssEC 19 segments read after LS-R5's ten (E55-E64: H 136, C 1, I 4, M 4; `decode.py --check` exit 0); the rest of the 300 or so priority-1 rows unread by this job.
+- Print location of E55, E63, E64 (5-26 Aug 1864) - blocker: not-attempted; the OR volume for 4-31 Aug 1864 is not in the cached set (`431unit` proved to be Jan 1865, `372unit` ends 3 Aug, `432unit` starts 1 Sept); next: fetch that volume's djvu once and search the verbatim ledger phrases, ~$0.5
+- Print location of E60 (Lincoln, 16 Jul 1864) - blocker: not-attempted; Basler vol. 7 and Grant Papers vol. 11 not searched; next: LS-V5 search, ~$0.5
+- M-graded tokens E58 "pembroke"/"Tinkers", E59 "Susan", E64 "Sapan Rape" - blocker: open-codes; no context narrows them; next: LS-V5 re-read against the page images, ~$0.5
+
+## Escalation (LS-R5, 8 Oct 2026)
+- [n/a] siblings: the ten are siblings of E21-E54 already read; no new sibling pool found by this job.
+- [x] clear-pages: E55-E64 read from the page images, volunteer text as second witness.
+- [x] known-keys: key.md read every code word but the listed unread ones; key-no2.md and key-no9.md not needed.
+- [ ] print: five OR volumes searched, wrong volume for August (see gaps); Lincoln/Grant editions not searched.
+- [n/a] key-rebuild: no key change proposed.
+- [x] image-check: crops read by the worker; no subagent.
+- [x] retry: not needed.
+Verdict: keep going: 3 internal gaps; cheapest next: fetch the OR volume for 4-31 Aug 1864 and the Lincoln/Grant editions and locate E55, E60, E63, E64 in print, ~$0.5-1
