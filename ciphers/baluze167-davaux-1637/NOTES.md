@@ -888,3 +888,60 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 - [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice and reconciled from the crops (D4-B167)
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B); 170 f.229 crops re-cut (D1A-B167) and passed (D4-B167)
 Verdict: keep going: 4 internal gaps; cheapest next: provisional decode of 170 f.228r-v with the f.229 letter values (~$2), and a verifier re-derivation of f.229r-v (~$2.5)
+
+## D4V-B167 verifier (account 4, for LANE DEFAULT-account-4-20261008-0740), 8 Oct 2026, 09:51-09:5x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-08-account4-default-0740-jobs.md` job D4V-B167 (rule-7 re-derivation of D4-B167's f.229r-v
+provisional reading; not the solver). No AUDIT/N-class here. Files: `d4vb167/` (judge_null.py, judge_null.out, judge_spec_fr17.json).
+**1. Rule 7.** `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> "reading up to date", exit 0;
+ciphertext_b170f229.txt: 366 tokens H 106, M 258, I 1, U 1. Exact match with D4-B167's figures; no diff.
+**2. The four letter values that depart from the d1bal167 exemplar map are in the published key.** Tomokiyo's letter-sign table
+(images/louisxiii_davaux.png, top block) gives a 9-like sign under c (beside x), mm under p, n under l (third row), and a circled P under i
+joined by a drawn line to a circled p under s, so the P sign is ambiguous i/s in his own table. So: 9=c (9 + dd, 10 tokens), mm=p (5), n=l (7)
+are attested by the key source, not set from this leaf alone; p=i (9 tokens) is attested as one of the two values Tomokiyo gives (the exemplar
+map's p=s, 4 tokens on 168 f.166, is the other). Of the 181 letter-sign tokens, 134 use a (shape, letter) pair also gloss-fixed in
+d1bal167/exemplars.tsv; the rest are this hand's own forms (9, mm, n, gam2, 4uu, w', w4, dd, 9_, u). The other common shapes also match
+his table (h=n, gam=u, u4=t, y+=r, m4=m, hook~ν under s). **The H count does not fall:** every letter sign is already M in
+reading_tokens_b170f229.tsv (180 M + 0 H; the H 106 are all numerals with clear marks). Corrected/confirmed counts: H 106 (numerals),
+M 258 (180 letter signs + 78 numerals whose mark is not separable from the i-dot or line-start), I 1, U 1. Letter signs are left at M, not
+raised: shape identification against a hand-drawn table is an eye judgment and no shape-level control was run on this hand.
+**3. Judge (fr17, era-matched 1617-1644 epistolary; no spec exists, so a minimal `{"judge":{"language":"fr17"}}`).** Cipher tokens only
+(clear words excluded), 624 letters:
+| text | fr17 score | gate |
+|---|---|---|
+| reading_b170f229 | -0.824 | PASS (real_p05 -0.853, real median -0.782, null_p99 -1.878) |
+| shuffled key, values permuted across all 91 distinct signs (20 seeds) | median -1.425, max -1.146 | all below real_p05 |
+| shuffled values across the 18 letter signs only, numerals kept (20 seeds) | median -1.480, max -1.316 | all below real_p05 |
+Caveat (rule 3, ARM-C1 shape): the solver settled the letter-sign and 1-bearing numeral values from context, so the PASS is not independent
+for those 258 M tokens; what is independent is (a) the H numerals and (b) that the letter values chosen are the ones Tomokiyo's table
+already prints (point 2). The letter-only null shows the reading depends on those letter values, not that they were found blind.
+**4. Spot-check of the reconciled ciphertext against the crops** (b170f229r_L07, L10; read by this verifier): L07 `78' gam 9 30' h u4
+40' 38' h 9 32: 16' 8: hook 23' y+ 11' hook` -- all 18 agree with the crop (y+ crossing faint); L10 `16' hook mm 40' p 66' 4u 13 73=` --
+8 of 9 agree; the p-sign is drawn with a trailing s-like stroke ("ps") and the acute on 66 is not visible at this crop (both already M,
+the decode gives "de s p la i re a", "desplaire" in clear context). 26 tokens checked, 0 contradicted, 2 uncertain.
+**Depth-relevant facts (for AUDIT 1, not a depth grade):** 106/366 = 29% of cipher tokens H/C/S; the rest M except 2. Clauses of 20+
+letters read across numeral H tokens (e.g. f.229r L07 "touchant la jonction de leurs forces"). One sentence about content that the reading
+supports, conditional on the M letters: the passage reports that a party wants its troops joined to M. de Longueville and under his
+command, which displeases [13 73=, key "sued Bavier"], and names Madame la Landgrave and a comte d'Heberstein who is to succeed someone.
+Unsettled spots stay as D4-B167 listed (f.229r L03-L05, L10 "13 73=", f.229v L01 "se dejuste" with 39'=ju, L04).
+Next: AUDIT 1 (rule 10 verifier: novelty search on the f.229 plaintext, 25 Aug 1640 Chavigny to d'Avaux) -- the reading holds under
+re-derivation, key attestation and the judge. Requests: none. Subagents: none. Rule 10: no novelty claim made here.
+
+## Remaining gaps (D4V-B167, 8 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: provisional reading re-derived and judged (D4V-B167; H 106 / M 258).
+168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled. 170 f.228r-v: reconciled (35 + 119 tokens).
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 f.228r-v bare passage - blocker: not-attempted; the owner's sorter (sorter170/) is still unanswered, but the f.229 values (9 c, mm p, n l, P i/s: all in Tomokiyo's table, D4V-B167) give this hand; next: provisional decode of passes/reconciled_b170f228{r,v}.tsv with those values, marks graded M, same decode.json pattern, ~$2
+- 170 f.229r-v reading - blocker: not-attempted; re-derived and judge PASS (D4V-B167); next: AUDIT 1 novelty/depth verifier on the f.229 plaintext, ~$3
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (8 Oct 2026, D4V-B167)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); applied to 170 f.229r-v (D4-B167); its letter-sign block attests the f.229 values 9 c, mm p, n l, P i/s (D4V-B167)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); f.229 letter values settled and checked against the table (D4-B167, D4V-B167); untried: the same for f.228 and a glossed text in the f.247 hand
+- [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice, reconciled (D4-B167) and spot-checked 26 tokens (D4V-B167)
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B); 170 f.229 crops re-cut (D1A-B167), passed (D4-B167) and re-derived (D4V-B167)
+Verdict: keep going: 4 internal gaps; cheapest next: provisional decode of 170 f.228r-v with the f.229 letter values (~$2), and AUDIT 1 on the f.229 reading (~$3)

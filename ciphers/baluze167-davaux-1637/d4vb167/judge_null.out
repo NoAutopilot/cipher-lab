@@ -1,0 +1,7 @@
+cipher tokens 366 letters 624
+REAL cipher-only {'pass': True, 'score': -0.824, 'null_p99': -1.878, 'real_p05': -0.853, 'real_median': -0.782, 'mode': 'both', 'N': 624}
+REAL with clear words {'pass': True, 'score': -0.824, 'null_p99': -1.878, 'real_p05': -0.853, 'real_median': -0.782, 'mode': 'both', 'N': 624}
+all-signs n=20 min -1.524 median -1.425 max -1.146
+letter-signs-only n=20 min -1.577 median -1.480 max -1.316
+
+[exited with code 0]
