@@ -22,3 +22,10 @@ Image pass, not a family run. Control first: m0179-r1 pos 16 (Carta 80 copy sing
 both blind passes; target m0276-r1 pos 10 read the same; m0275-r1 pos 8 read 55 (two digits) by both. Known-answer gate
 G1 0.939/0.939 (gate 0.85), G2/G3 pass. Standing: `ff -> s`, grade M, 1 witness (PREREG-D4-BROC.md). m0275-r1 pos 31 and
 m0276-r2 pos 16 match no known code (untested-by-this-tool beyond the image; LM run next).
+
+## D4-BROLM (8 Oct 2026): LM-context rescoring of letter 134's 26 open tokens
+Instrument: pt18 letter 4-gram Viterbi + key prior (PREREG-D4-BROLM.md, scripts/23_d4brolm_lm_rescore.py). Control first:
+600 appendix windows at letter 134's own mask load (26/70), truth = Deciffrada letter. pt18: open-slot top-1 0.307 (gate 0.40;
+shuffled null 0.112), keyed-override precision 0.214 (gate 0.60; decoder 0.782 vs prior-only 0.827). pt17: 0.322 / 0.206.
+CONTROL BELOW GATE both gates, both corpora: target not run. Standing: non-test at this N (untested-by-this-tool), no value
+changed; m0275-r1 pos 31 and m0276-r2 pos 16 -> no-key-material.
