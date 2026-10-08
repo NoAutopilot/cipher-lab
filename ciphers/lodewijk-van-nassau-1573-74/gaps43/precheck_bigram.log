@@ -1,0 +1,3 @@
+unigram lexicon 23565 words, maxlen 20, OOV 4.860 bits/char
+bigram model 267758 pairs, 23461 contexts, D 0.75
+5811 cut: 833 keyed, 96 codes; key_full cost 2559.6
