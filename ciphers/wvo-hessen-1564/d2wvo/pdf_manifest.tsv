@@ -1,0 +1,15 @@
+nr	url	http	bytes	sha256_16	pages	text_layer	look	cipher_span_seen
+01110	https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01110.pdf	200	12702297	f16aa74767f0fbde	10	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+01112	https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01112.pdf	200	2939394	a9e2fdfd82979047	3	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+01113	https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01113.pdf	200	4840394	3ee21adce3ee20c5	8	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+01114	https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01114.pdf	200	3342485	50fb11808b55475f	4	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+01115	https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01115.pdf	200	3267521	dd15e859bf503dc3	4	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+01116	https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01116.pdf	200	7193907	a155606ee97084a3	8	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+01117	https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01117.pdf	200	3096596	c985eba705020089	4	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+01118	https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01118.pdf	200	8237030	cdabdd845b7231f8	9	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+03616	https://resources.huygens.knaw.nl/media/wvo/images/03000-03999/03616.pdf	200	10818050	cb7ceb0f0389729d	2	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+04117	https://resources.huygens.knaw.nl/media/wvo/images/04000-04999/04117.pdf	200	2355106	66955bdeb6cdded3	2	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+04120	https://resources.huygens.knaw.nl/media/wvo/images/04000-04999/04120.pdf	200	3148756	fbde44b9963e9761	2	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+04121	https://resources.huygens.knaw.nl/media/wvo/images/04000-04999/04121.pdf	200	462292	5a26b34812f83f5e	2	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+05908	https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05908.pdf	200	2500213	9162196476595e34	2	archive header only (image-only scan)	pdftoppm -r 30 contact sheet, every page	no
+01111	https://resources.huygens.knaw.nl/media/wvo/images/01000-01999/01111.pdf	(on disk, raw/01111.pdf, R7-WVOH)	1248819	db0b49d59d022227	3	archive header only	native read R8-WVO1111 (wvo1111_transcription.md)	no
