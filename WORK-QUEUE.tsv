@@ -339,6 +339,6 @@ AUD2-LS-G	account-2	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	15	
 AUD2-LS-H	account-2	.claude/briefs/runs/2026-10-08-acct3-ledger2.md	Opus 5.5	11	95	claimed session_01Bjiw1YWYMTTnu6iuX6WgXM 2026-10-08 06:10	2026-10-08 05:3x	second audits eckert-1864 E66 E68 E70 N2-BN (LS-V7)
 DEFAULT-account-1-20261008-0540	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-08 06:49	2026-10-08 05:40	auto-fill: empty queue
 DEFAULT-account-4-20261008-0634	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	bounced 2026-10-08 06:35 account-4 lane DEB-RUN still claimed (autofill sees only LANE-/DEFAULT- rows); refill after DEB-RUN closes	2026-10-08 06:34	auto-fill: empty queue
-DEFAULT-account-2-20261008-0710	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_01DmKMLEo17qiXvRU7NGoG7g 2026-10-08 07:11	2026-10-08 07:10	auto-fill: empty queue
+DEFAULT-account-2-20261008-0710	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-08 08:32	2026-10-08 07:10	auto-fill: empty queue
 DEFAULT-account-4-20261008-0740	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	queued	2026-10-08 07:4x	acct3 orchestrator: DEB-RUN idle-standing 07:20, account 4 free (refill of the 06:34 bounce)
 OUT-DEB	account-2	.claude/briefs/runs/2026-10-08-acct3-out-deb.md	Opus 5.5	8	75	claimed session_01WE6JtsKg24rbriT7w4pTW3 2026-10-08 08:10	2026-10-08 07:4x	Debosnys progress note to the museum from ATTEMPTS.md (no restricted content, rule 1d), drafter + separate gate-7 checker

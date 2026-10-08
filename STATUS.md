@@ -5940,6 +5940,38 @@ period-deciphered leaf for the unread R1166 P4 (guardrail-allowed); together 37%
 Left: eckert-1864 No 2 pp.107-182 (~34 entries, expected mostly N1; read only if the next lane accepts the known-text cost); fr7129 and
 fr15564 and costabili q/TT wait on the owner's sign sorter; hessen-daenemark nomenclator needs physical access.
 
+## LANE DEFAULT-account-2-20261008-0710 handoff (session_01DmKMLEo17qiXvRU7NGoG7g, account 2), 8 October 2026 (closed 08:3x UTC: runnable backlog worked, lane ~53.5 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-08-account2-default-0710-jobs.md. Gate 0a clear (SESSION-SWEEP-account-2
+done 5 Oct). Backlog a: VERIFY-BACKLOG top row eckert-1864 E74 (outside AUD2-LS-H's scope) taken; rest N0 or Birago. Backlog b: next_steps.py
+(hot-only, then plain) runnable rows and parallel actions, plus the fresh "source: loose-ends 8 Oct" steps, filtered against ROOM claims < 6 h,
+LANE DEFAULT-account-1-20261008-0540's folders and LANE BNF-FOCUS's Nevers pool. NEXT-STEPS.tsv regenerated at 07:20.
+Workers (17, 4 waves 07:18-08:25; all Opus; all ledgered): 46.08 by get_session; orchestrator ~7.4; five_hour `allowed` throughout. Three ran
+1.1-1.2x cap (D2-PRINT4 4.35/3.5, D2-DEC2 4.45/4, D2-CRAV 4.64/4) -- bundles of 2-4 targets priced per search ran ~1.1 per target. Known-text
+share 5.09 (11%: D2-COL26, D2V-COL26).
+
+Results:
+- eckert-1864 E74 (D2V-E74, AUDIT 2): N3 -> N1 -- the Huntington public transcription of pointer 9071 carries the clear body; only the
+  signature is cipher (D1). Sanders despatch = G. N. Sanders 1 Sept 1864 telegram, Chas Armond = War Dept operative at Halifax.
+- fr4712-nevers-duchesse: ASKS 113's same-writer answer applied as pre-registered (3 Oct): six f.10r tokens C (82 D. n., 21 Berry,
+  12 b. Pal.), gate p 0.029; open -> partial. AUDIT 1 (D2V-F4712): item A N3 / D1 ("fragments read", not counted), key period; f.10 dated
+  i octobre 1592 (BnF 1895); SO-F4712-F10 queued; no status.json row (a six-token crib lookup, verifier's call).
+- colbert26 (N0): 30 = s M -> C on value-independent units c33/c51/c62 (D2-COL26), verifier D2V-COL26 held it but lowered 2 tokens: f.23 C
+  110 -> 125; 96 que PASS kept M (f.23 conflict); 20 i FAIL; 67/81/85 TOO-SHORT; canvas 29 is a glossed mixed-system leaf (next ~$6).
+- fr16106-vivonne-longlee: D4-VIVV crosswalk fixes changed nothing (0.4537, margin 0.006): second attempt of the crosswalk instrument logged;
+  next needs the owner's sorter.
+- craven-rupert-1648 spec test 2: registered gate NON-TEST on all 5 candidate tables (design control 0-14/20); coverage excludes all five; 0/42.
+- fair-game-2010: marker-scheme sweep, planted control 60/60, null 0/40, target 0 PASS -> control-backed negative for direct-English markers.
+- wvo-hessen-1564: 13 neighbouring WVO PDFs, no cipher rows; 33 C-tile eye alignment gate FAIL 7/10 decoys.
+- siena-concistoro-2308 no. 11 fetched, does not clear the reader-bias control (no. 19 stands); decode-4450: 15 siblings, none Ranzo's system.
+- censorship-manual-stego: Duploye joined-hand control 0.376 vs gate 0.60 -> signature read a non-test at this resolution; waits ASKS 126.
+- heinsius-hermitage-1704: two deciphered later l'Hermitage letters in print (Deel 10 no.1066, 1710, H.A. 1536; Deel 16 no.634, 1714,
+  H.A. 1867), possible same-key cribs; none 1704-06; 83 candidate pages unread.
+- Searches, no hits: heinsius-vanhaersolte Deel 2 small-number runs; bl-gualterio HMC Stuart calendar (ends 1718, no Vernon); scorpion
+  oranchak images (no uncrossed S5); whitworth DECODE (0) and HTRC EF (down again); fr2933 CSP Spain III/1; lambeth-bacon; mccormick; sp105.
+What is left: colbert26 canvas 29 (~$6, known-text); heinsius-hermitage: read the 1710/1714 deciphered letters as key evidence and the 83
+candidate pages (Huygens host, <=120 req/session); whitworth HTRC EF retry another day. Most cheap loose-ends steps of 8 Oct are now run.
+
 ## LANE DEFAULT-account-1-20261008-0540 handoff (session_01RR9DYMbpvFjP1tVfVsp2Ho, account 1), 8 October 2026 (closed 06:5x UTC: runnable hot backlog spent, lane ~41.4 of 60)
 
 Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-08-account1-default-0540-jobs.md. Gate 0a: SESSION-SWEEP-account-1
