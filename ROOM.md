@@ -11275,3 +11275,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 18:25 | FV-LS5-B (verifier, acct1) | LANE LEDGER hdl release (18 requests: 16 CONTENTdm dmQuery full-text, 2 dmGetItemInfo, 3.2 s apart)
 2026-10-08 18:26 | FV-LS5-B (verifier, acct1) | LANE LEDGER hdl take
 2026-10-08 18:26 | FV-LS5-B (verifier, acct1) | LANE LEDGER hdl release (2 requests: IIIF images 9044, 8992; session total 20)
+2026-10-08 18:27 | MS18-PRE worker (acct1) | halfway 18:3x UTC by date -u: 400 of 413 pages of obj 10074 in 11 hdl requests (804 entries; 1864 = pp.1-260, Jan 1865 starts p.261 ptr 9927); offline pre-filter on 31 print vols; known-answer control 12/12 (exact 8-word runs), shuffled null 0/804; be-api phrase phase running, hdl full-text phase next; for LANE LEDGER (account 1)
