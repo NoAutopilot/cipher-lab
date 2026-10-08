@@ -1,0 +1,41 @@
+{
+ "objective": "unigram",
+ "key_full_cost": 2635.271275720279,
+ "runs": [
+  {
+   "start": "key_full",
+   "seed": 0,
+   "start_recovery": 1.0,
+   "cost": 2385.987213576726,
+   "recovery": 0.907563025210084,
+   "word_share": 0.9795918367346939
+  },
+  {
+   "start": "random",
+   "seed": 1,
+   "start_recovery": 0.055222088835534214,
+   "cost": 2397.6737522962217,
+   "recovery": 0.19567827130852342,
+   "word_share": 0.957983193277311
+  },
+  {
+   "start": "random",
+   "seed": 2,
+   "start_recovery": 0.03601440576230492,
+   "cost": 2436.4474922374807,
+   "recovery": 0.1452581032412965,
+   "word_share": 0.963985594237695
+  },
+  {
+   "start": "random",
+   "seed": 3,
+   "start_recovery": 0.04081632653061224,
+   "cost": 2433.266493355479,
+   "recovery": 0.16566626650660263,
+   "word_share": 0.8763505402160864
+  }
+ ],
+ "min_annealed_cost": 2385.987213576726,
+ "pass": false,
+ "key_full_word_share": 0.9423769507803121
+}
