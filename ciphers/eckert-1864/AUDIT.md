@@ -6138,3 +6138,11 @@ is the New York telegraph operator.**
   table title "John Horner to Sheldon".
 - Requests: hdl.huntington.org 15 (14 dmQuery, 1 IIIF page); archive.org 2 (Plum djvu); loc.gov 4; be-api 3 (third 502, stopped); prior_work.py's own G3 calls (its
   report). Subagents 0.
+**Addendum (AUD2-LEDGER-6, G3 for E176, E178, E179, finished 22:1x UTC).** `prior_work.py ... --reading <decoded body> --network`:
+E176 KNOWN-PART (frame public in the holder transcription, 31 code words not); one SUBSTANCE within +-3 days in OR I/42 pt 1
+(`warofrebellion421unit`), read: Butler's report of 3 Jan 1865 ("Ames' division, of the Twenty-fourth Corps ... On the 8th the troops embarked
+for Fortress Monroe") and his order to Weitzel -- the same embarkation as Ames's report, no per-steamer figures, not this telegram; five LEADs
+"division of the twenty fourth" in OR I/42 pt 3, I/46 pts 1-3, I/47 pt 1, all outside +-3 days: unrelated; ia-global and gbooks UNCHECKED-NET
+(request cap). E178 KNOWN-PART only (consistent with the N1 above); gbooks UNCHECKED-NET. E179 KNOWN-PART; eighteen LEADs on the boilerplate
+phrases "soon as possible Will you" and "of General W F Smith" in OR I/32-49 and an Alexandria Gazette of 18 Mar 1864 (ia-global), none within
++-3 days: unrelated; gbooks blocked (HTTP 429). No class or depth changes from the addendum. Done 22:2x UTC.
