@@ -6176,3 +6176,35 @@ SO-ECKERT-E* rows queued) -- not counted until a second adversarial audit: E21, 
 Left, runnable: (a) second adversarial audits of the 20 N3 entries (weakest flagged: E37, E46, E51, E52), ~$3.5 each, to make
 them count; (b) the ~280 remaining priority-1 rows of entries-mssEC19.tsv (1865 rows need a check that Cipher No. 1 still reads
 them -- Nos. 3/4 are not in hand), ~$1.2 per entry read+audit; (c) E30-E36; (d) object 5952 with the same pre-filter.
+
+## LANE DEFAULT-account-4-20261008-0740 handoff (session_01TUdEQx6bJBobRvPc1dUPfi, account 4), 8 October 2026 (closed 10:1x UTC: runnable hot backlog worked, lane ~47.4 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-08-account4-default-0740-jobs.md. Gate 0a: no SESSION-SWEEP-account-4
+row. Backlog a: nothing takeable (14 eckert-1864 rows held by the account-3 AUD2-LS/ST-LEDGER series; nla-heinrich and colbert26 N0; Birago
+off limits). Backlog b: next_steps.py --hot-only runnable rows and parallel actions, re-checked against each folder's current Verdict, excluding
+LANE BNF-FOCUS's Nevers pool, eckert-1864, Debosnys/Armstrong/Birago and ROOM claims < 6 h.
+Workers (17, 4 waves 08:41-09:58; all Opus; all ledgered): 41.21 by get_session; orchestrator ~6.2; five_hour `allowed` throughout. Over cap:
+D4-VIV 2.58/2 (D-), D4-PISA 3.23/3. Known-text share: none of the jobs worked an N0/N1 text except as key-testing (0%).
+
+Results:
+- baluze167-davaux-1637 (D4-B167, D4V-B167): 170 f.229r-v transcribed (4 blind passes split 0.23/0.26, eye-reconciled from crops); provisional
+  decode 366 tokens H106/M258/I1/U1, rule-7 re-derivation exact; fr17 judge PASS -0.824 vs real_p05 -0.853, shuffled-key max -1.146 (PASS not
+  independent of the 258 context-settled M tokens); the 4 departing letter values are in Tomokiyo's published table. Next: AUDIT 1 (N/D class).
+- ceppo-nevers-fr3251-1570s (D4V-CEPPO): the five D22-CEPPO21 f.21v S80 tokens hold S (decoy control 7/7); f.21v S 157 -> 162/267; D1/N3 unchanged.
+- fr2980-gramont (D4-GRA): 16 zb -> zh relabel on n9gra4/n12gra; f.18r gate PASS 0.815 (was 0.802).
+- antt-msliv0638-brochado-1712 (D4-BROC, D4V-BROC, D4-BROLM): letter 134 image pass (KA 0.939): pos 8 = 55, ff -> s key row (M), C54/M14/U2,
+  re-derived exact; judge still FAIL pt17/pt18. LM-context rescoring: KA control FAIL both gates, non-test, target not scored.
+- pro3055-clinton-1779 (D4-CLIN): B.148 p.123 cipher transcribed in full (192 cells, 187/192 agree); both pre-registered gates FAIL.
+- wvo-hessen-1564 (D4-WVO): crib placement vs settled/key.tsv: control 5/14, target 0/14 placed; reference-strip eye read still open.
+- fr16045-pisany-rome-1585 (D4-PISA): f.275v L04 forced-choice tiles from the debug image, control 5/8 < 7/8, non-test (Gallica 500/503).
+- fr5160-letellier-1653 (D4-F5160, D4-F5160B): escalation rows assessed, verdict 0 -> 3 gaps; c11-12 + c32 reconciled at text level only
+  (Gallica 503), 26 splits left for images; four-key trial 0 of 220 read.
+- sachsstaatsarchiv-manteuffel-1712 (D4-MANT): 4-digit inventory, 12 leaves (694/05 not covered).
+- fr16104-vivonne-spain-1572 (D4-VIV): four f-on-label-p crops set up as a sign-sorter page for the owner.
+- Person-side asks filed (D4-ASKS): ASKS 152-154 + LOCAL-QUEUE L66 (castelcicala BL Add MS 41525 f.38; fr4715-f61 fr.4699 request; fr16142 c262
+  gloss crops; fr5160 Français 20661-20662 REQUEST.md).
+- Stale NEXT-STEPS rows corrected (D4-B2754: f.40 step ran 25 Sept; D4-SUR: scan 0702 ran 6 Oct).
+
+What is left: baluze167 AUDIT 1; fr16045 native re-cut when Gallica answers (~2); fr5160 image arbitration of 26 splits (Gallica); wvo-hessen
+reference-strip read (~1.5); brochado appendix data-fault gap (~3); manteuffel 694/05 and the 0501 orchestrator decision.
+Lesson: NEXT-STEPS.tsv lags the folders; read the folder's Verdict and latest dated section before briefing (2 of 17 jobs were already done).
