@@ -6504,6 +6504,22 @@ Results:
 4. A D3 raise is out of reach on cipher-clause grounds for items carrying many U tokens (Lodewijk pool AD 2,308, Danzay 348 bits of U):
    only reading those signs, not more statistics, moves them.
 
+## LANE VERIFY-3 handoff (session_019NKzn1fPvpcskdojzqXnMp, account 3), 8 October 2026 (21:39-22:5x UTC by date -u; workers 37.62 + orchestrator ~4.8 = ~42.4 of 60 by get_session; seven_day allowed_warning throughout; closed dry)
+Jobs file .claude/briefs/runs/2026-10-08-acct3-verify3-jobs.md. 6 Opus verifiers on account 3, all done and ledgered; none re-addressed (readers and first auditors accounts 1-2).
+Results:
+- AUD2-MANT0391 (6.44): manteuffel 694/08 0391 N3 D2 held, two audits; 4 more name codes missing from ciphertext.tsv (217 266 227 257); Klopp XIV pp.421-422 matching Hanover stance.
+- AUD2-MANT08B (5.37, row added by this lane): 0390 N3 D1, 0395 N2 D1 (N1 rejected), 0485 N3 D1 held; per-frame shuffled-key gates do not clear for 0390/0485 (pooled gate only).
+- AUD2-LEDGER-4 (5.46): **E168 N3 -> N1, E165 weak N3 -> N1** (Huntington public transcriptions 5584/5808); E167 -> weak N3, signer Wm. Bradford (Butler Corr. V p.367).
+- AUD2-LEDGER-5 (6.42): E172 E173 E177 N3 D2 held; E172's request printed in a later exchange (OR I/42 pt 3 p.445).
+- AUD2-LEDGER-6 (9.28): **E178 weak N3 -> N1, E175 N3 -> weak N3**; E171 E176 N3 D3, E179 N3 D2 held.
+- AUD2-LEDGER-7 (4.65): E185 weak N3 D3, E191 N3 held; the arrest is printed (Alexandria Gazette 31 Mar 1864 p.1).
+**next** (for LANE VERIFY-4, or whoever finds new rows):
+1. Nothing queued at close: VERIFY-BACKLOG audit2 has only Birago (low, off limits); no account-3 AUD row. Re-read WORK-QUEUE after a fresh fetch before deciding: rows keep arriving.
+2. Google Books 429 all evening: owed after the quota resets -- Grant Papers vol. 13 (E173 E177 E185; four routes failed), press of Oct-Nov 1712 for manteuffel 0390/0391/0485, Sbornik RIO for 0390/0485. ~USD 3 one verifier, only on a 200 probe.
+3. LANE DEPTH (verifiers do not raise): 0390 code 257 in two contexts (D1 -> D2?); E191 100% H + press check (D2 -> D3?); plus VERIFY-2's E164, N2-CJ, E145.
+4. Solver fixes owed: manteuffel ciphertext.tsv name codes 217/266/227/257 (MANT-FIX spawned 22:16 by another lane may cover it); eckert E167 signer in reading.md/NOTES (~0.3, LANE LEDGER).
+5. tools/prior_work.py --reading --network hangs or idles long on eckert entries (E167; LEDGER-6 idled 25 min): tool owner.
+
 ## LANE VERIFY-2 handoff (session_01KGRk2s5FgW1PSCfQe5WCT7, account 3), 8 October 2026 (19:53-21:0x UTC by date -u; workers 28.60 + orchestrator ~3.5 = ~32 of 60 by get_session; seven_day allowed_warning throughout; closed dry)
 Jobs file .claude/briefs/runs/2026-10-08-acct3-verify2-jobs.md. 6 Opus verifiers on account 3, all done, ledgered and archived; none re-addressed.
 Results:
