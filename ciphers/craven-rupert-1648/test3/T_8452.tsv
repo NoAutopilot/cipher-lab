@@ -1,0 +1,73 @@
+# R8452 (BL Add MS 18982 f.187, "Duplicat", headed "my owne Cypher", Charles R. to [Rupert], St Germains 3 Aug 1649 n.st.) code -> value pairs read by CRAV-49, 8 Oct 2026, from the period interlinear decipherment on DECODE IMG_R8452_I39026_P1 (line crops via tools/iiif_lines.py), single reader, conf M throughout. R8451 (f.185) is the same letter's original with the same cipher text (spot-checked line by line on a 1100 px view; its gloss is partial and torn at the right edge), so it adds no pairs. Values marked I are fitted from context where the gloss sits between two codes.
+code	value	conf	where
+106	i	M	I am advertised; Ireland
+19	am	M	
+10	a	M	
+46	d	M	
+236	v	M	
+59	e	M	
+203	r	M	
+225	t	M	
+107	i	M	
+214	s	M	
+67	ed	M	
+131	l	M	Lord; well; land
+169	o	M	
+158	r	M	gloss once reads n (many)
+174	on	M	
+232	that	M	
+58	e	M	
+31	bro	M	
+34	c	M	
+122	k	M	
+60	e	M	
+226	t	M	
+85	gover	I	gloss "Go"
+159	n	M	
+176	or	M	
+173	of	M	
+118	king	M	Kingsale
+215	s	M	
+12	a	M	
+130	l	M	
+98	e	M	
+125	h	M	
+95	a	I	hath
+13	a	M	
+124	k	M	
+61	e	M	
+160	n	M	
+149	mony	I	
+36	c	M	
+209	r	M	
+142	om	M	
+255	wel	M	
+227	to	M	
+269	y	M	
+231	the	M	
+249	w	M	
+105	him	M	
+240	us	M	
+181	p	M	
+66	er	M	
+74	for	M	
+47	d	M	
+15	and	M	
+253	h	I	
+96	ar	I	
+11	a	M	
+207	re	M	
+25	be	M	
+132	l	M	
+110	in	M	
+48	d	M	
+175	or	M	
+204	r	M	
+242	up	M	
+113	ing	M	
+143	m	M	
+172	o	M	
+216	s	I	
+251	wh	I	
+32	br	I	
+108	o	I	

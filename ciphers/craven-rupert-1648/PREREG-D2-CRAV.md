@@ -40,3 +40,12 @@ enciphered with the table itself (for T_8448/T_8445, which are partial samples, 
 EXCLUDED if target COV < the 1st percentile of the key-true COV distribution AND the key-true p01 exceeds the random-code C1 p99 (so the
 control can fail differently from the target -- rule 3); NOT EXCLUDED if target COV is at or above that p01; non-test if key-true p01 <= C1 p99.
 Script: test2/coverage_exclusion.py --check.
+
+## Amendment A2 (CRAV-49, 8 Oct 2026, registered before it is computed): A1 unchanged, two more tables
+Tables: test3/T_8452.tsv (Charles R., "my owne Cypher", St Germains 3 Aug 1649; R8451 is the same letter and adds no pairs) and
+test3/T_8453.tsv ("L. Gerrards Cypher", Charles R., Jersey 15 Nov [1649]); single-reader M pairs from the period interlinear glosses.
+R8454 (f.195, 2 images) was not fetched (the session's one login hit its file cap first): not tested.
+Statistic, controls, seeds and verdict rule exactly as A1 (key-true synthetic = each table enciphering itself, flagged as an upper bound
+because each is a one-letter sample of its key; random-code C1 p99 over 1..max(code)). Script: test3/coverage_a2.py --check.
+If a table is NOT EXCLUDED: decode R8447 under it with a shuffled-key control (brief CRAV-49). Note recorded before scoring: R8447 carries
+9 of 41 tokens above 269 (T_8452's highest code) and 4 above 557 (T_8453's), so neither table's key can cover the whole letter as sampled.
