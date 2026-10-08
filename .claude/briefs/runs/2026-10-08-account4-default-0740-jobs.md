@@ -145,7 +145,24 @@ token by token (a difference beyond the M-graded tokens sends the reading back);
 independent attestation or the same token?) and whether the KA gate D4-BROC used could have failed. Write the result as a dated section in
 NOTES.md (no AUDIT.md exists; creating AUDIT.md with an N-class is out of scope here -- name it as the next step). No novelty class.
 
-## Wave 3 (only if spend allows, orchestrator's call)
+## Wave 3 (spawned 09:2x UTC 8 Oct; lane spend at 09:21 was 28.74 workers + 3.69 orchestrator)
+Intake gate re-used from waves 1-2 for fr5160 and brochado; `baluze167-davaux-1637: partial (line 1)` exit 0 at 08:4x. Gallica answered HTTP 500
+to one manifest request at 09:2x, so the D4-PISA native re-cut waits (not briefed).
 ### D4-B167 -- baluze167-davaux-1637: two blind passes on the 170 f.229r-v crops + reconciliation (solver, Opus; cap 8, box 120 min)
 Verdict: "cheapest next: two blind passes on the 170 f.229r-v crops plus reconciliation (~$7.5)". Crops on disk (D1A-B167, 8 Oct). Per-page
 subagent calls, one page per call (Usage 6), reconciliation = one more unit. Decode with the folder's key, grade, --check, NOTES/gaps.
+
+### D4-F5160B -- fr5160-letellier-1653: reconcile the canvas 11-12 block and canvas 32 (solver, Opus; cap 4, box 70 min)
+Verdict (D4-F5160, 8 Oct): "cheapest next: reconcile the canvas 11-12 block and canvas 32 against native crops (passes on disk), ~$3". The
+two passes are on disk; reconciliation is one unit per block (2 units x ~1.5); native crops from disk or one Gallica IIIF fetch each (if
+Gallica answers 5xx, stop the fetch, reconcile from what is on disk and say so). Use tools/reconcile_passes.py first so the model settles only
+disagreements.tsv. Apply the folder's key/decode, grade per token, --check, NOTES/gaps.
+
+### D4-BROLM -- antt-msliv0638-brochado-1712: LM-context rescoring with its known-answer control first (solver, Opus; cap 6, box 100 min)
+Verdict (after D4V-BROC, 8 Oct): "the LM-context rescoring with its known-answer control first (~$5, now including m0275-r1 pos 31 and
+m0276-r2 pos 16)". Read D4-BROC's and D4V-BROC's sections (NOTES.md from l.2380) and the pt18 corpus README. Pre-register in
+PREREG-D4-BROLM.md, pushed before scoring: the candidate set per open token, the pt18 character/word model, the known-answer control (mask
+tokens of known C value in the appendix or settled letters, same count and context length; gate: the control picks the true value at a
+pre-set rate) and the shuffled-context null. Control first: if it misses its gate, stop, log "non-test at this N", run nothing on the target
+(CLAUDE.md rule 3, family_run discipline). If it passes, score the open tokens and grade any change S at most. --check, judge both corpora,
+HYPOTHESES/NOTES/gaps. Do not run the appendix data-fault gap (separate job).
