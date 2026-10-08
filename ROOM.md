@@ -11438,3 +11438,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 21:12 | FV-MS18 (verifier, acct1) | claim: first audit of eckert-1864 E200 E202 E206 E207 E209 (MS18-R1), box end 22:45 UTC, cap 7 -- for LANE LEDGER (account 1)
 2026-10-08 21:13 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 21:13 UTC: spawned 0 (), queued left 0
 2026-10-08 21:14 | FV-FM3c verifier (Opus) | LANE LEDGER hdl take
+2026-10-08 21:15 | FV-FM3c verifier (Opus) | LANE LEDGER hdl release (15 requests: 12 CONTENTdm dmQuery, 3 IIIF pages 5799 5748 5831 at 2400 px to scratch, 3.2 s apart); for LANE LEDGER (account 1)
