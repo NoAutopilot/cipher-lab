@@ -671,5 +671,47 @@ Code-word tokens: H 13.
 
 Code-word tokens: H 9.
 
-Totals over the 90 entries: H 1364, C 14, I 0, M 0.
+**E95 | Page 203 | 9097 | 15 Oct 1864, operator J. W. Sampson (LS4-R1b, 8 Oct 2026, row 9097/1)**
+
+{time: 5 PM} [15] for Hon H W Hoffman [.] Come over to night and c me A Lincoln
+
+Code-word tokens: H 3.
+
+**E96 | Page 222 | 9116 | 5 Nov 1864 11 PM, operator J. W. Sampson at Baltimore (LS4-R1b, row 9116/2)**
+
+{time: 11 PM} [5] for Season [.] [Colonel] [100] Hamilton is [Report]ed on what seems trust worthy evidence asa [Rebel] agent in [Baltimore] [.] If there are several [5]s answering tooth name care mustby exercised target the [Right] [1]  {tail: [signed] [C. A. Dana]}
+
+Code-word tokens: H 14.
+
+**E97 | Page 225 | 9119 | 7 Nov 1864, operator Capt. Clowry, St. Louis (LS4-R1b, row 9119/1)**
+
+[Washington] {time: 3 PM} [7] For [Maj Gen W. S. Rosecrans] [St Louis] [.] Unfortunately the Evidence in our possession furnishes No personal description [Of the] [Rebel] Agent at [St Louis]  {tail: [signed] [C. A. Dana] Asst [Secretary of War] rainy here}
+
+Code-word tokens: H 12.
+
+**E98 | Page 231 | 9125 | 19 Nov 1864, operator R. O. Brien, Head Quarters Army James (LS4-R1b, row 9125/3)**
+
+[Washington] Orr. [19] {time: 8 PM} For [Maj Gen B. F. Butler] [.] Can not you hold on for [3] or [4] days until our vessel reaches you [,] now on the way  {tail: [signed] G V. [Philadelphia] asst [Secretary of Navy] Hm I lie}
+
+Code-word tokens: H 11.
+
+**E99 | Page 234 | 9128 | 26 Nov 1864, operator Clowry (LS4-R1b, row 9128/2)**
+
+{time: 12.30} [26] [Maj Gen W. S. Rosecrans] [.] All [Troops] sent from [Missouri] must [Report] to [Maj Gen Geo. H. Thomas] any other orders tooth contrary notwithstanding [General in Chief]
+
+Code-word tokens: H 10.
+
+**E100 | Page 29 | 8921 | 5 Apr 1864 3.30 PM, operator Baldwin, Baltimore (LS4-R1b, row 8921/1)**
+
+for [Captain] Thomas [Quartermaster] [Baltimore] [.] Confidential Send the {time: 8.30 PM} Pantz if in [Baltimore] to Annapolis fully coaled & watered to [Transport (-ed, -ing)] [Jasper]ed whiskey to Hilton Head & thence to such point as [Gen Q. A. Gillmore] may order on her [Report]ing to Him [.] She should leave [As soon as] the Storm is over & the Sea moderates So as to make the voyage safe  {tail: [signed] [Qr Master Genl U.S.] [Washington] {time: 3.30 PM} & such is life}
+
+Code-word tokens: H 16.
+
+**E101 | Page 30 | 8922 | 6 Apr 1864, operator F. S. Van Valkenburg, Nashville (LS4-R1b, row 8922/0)**
+
+[Washington] {date: Apr 1} For Gov. Johnson [.] Do not believe the news papers There is no design to put [General] Buell again in [Command = Er (-ed, -ing)] in [Tennessee] Bautus
+
+Code-word tokens: H 6.
+
+Totals over the 97 entries: H 1436, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->

@@ -1014,3 +1014,62 @@ The money and pack cage concerning which
 I wrangled you on Friday are Sligo
 Chemical bank and not the bank of
 Com - merce youth Image of old nick
+
+# E95-E101: LS4-R1b (8 Oct 2026, account 1, for LANE ST-LEDGER-4). Read from the 2400 px IIIF page images (crops by
+# tools/iiif_lines.py --image, NOTES.md "## LS4-R1b") with the volunteer text (sources/mssEC19/p<pointer>.json) as second witness;
+# where the two differ the image is taken and the word is listed in NOTES.md. Rows from PF4 group 3 (prefilter-ls4.tsv).
+
+### E95 | Page 203 | 9097 | 15 Oct 1864, operator J. W. Sampson (LS4-R1b, 8 Oct 2026, row 9097/1)
+J W Sampson  Wash Oct 15th 64
+Lucy Gallant for Hon H
+W Hoffman unity Come over
+to night and c me A Lincoln
+
+### E96 | Page 222 | 9116 | 5 Nov 1864 11 PM, operator J. W. Sampson at Baltimore (LS4-R1b, row 9116/2)
+J W Sampson Balto  Wash 11 pm Nov 5th 1864
+Sarah plaster for Season unity Pandora
+William Hamilton is wicked on what
+seems trust worthy evidence asa walnut
+agent in Baptism zebra If there
+are several persons answering tooth name
+care mustby exercised target the Wesley
+plug youth Insanity
+
+### E97 | Page 225 | 9119 | 7 Nov 1864, operator Capt. Clowry, St. Louis (LS4-R1b, row 9119/1)
+Capt Clowry St Louis  Washn Nov 7th 1864
+Grapes Imogene Postpone For Moscow Geneva Zebra
+Unfortunately the Evidence in our possession furnishes
+No personal description torch walnut Agent at
+Gaul yoke Image Asst Infant rainy here
+
+### E98 | Page 231 | 9125 | 19 Nov 1864, operator R. O. Brien, Head Quarters Army James (LS4-R1b, row 9125/3)
+R. O. Brien Hd Qrs Army Janus  Nov. 19th 1864
+Growl Orr. Hope Nancy For Knave zebra Can not
+you hold on for Pebble or Pension days until
+our vessel reaches you Pekin now on the way
+yoke G V. Fox asst Buxton Hm I lie
+
+### E99 | Page 234 | 9128 | 26 Nov 1864, operator Clowry (LS4-R1b, row 9128/2)
+Clowry  Washn Novr 26th 1864
+Viola Harrow pledge Moscow zebra All whist
+sent from Aragon must white to Lantern
+any other orders tooth contrary notwithstanding Benjamin
+
+### E100 | Page 29 | 8921 | 5 Apr 1864 3.30 PM, operator Baldwin, Baltimore (LS4-R1b, row 8921/1)
+Baldwin Balt "1"  Wash D. C. Apl 5
+for Pil - grim Thomas Vinton Baptism Unity Confidential
+Send the Nelly Pantz if in Banditti to
+Annapolis fully coaled & wat - ered to whimper
+colored whiskey to Hilt - on Head & thence
+to such point as Maxim may order on
+her whiting to Him Zodiac She should leave
+persia the Storm is over & the Sea
+moderates So as to make the voyage safe
+yoke Belcher Growl Jennie & such is life
+
+### E101 | Page 30 | 8922 | 6 Apr 1864, operator F. S. Van Valkenburg, Nashville (LS4-R1b, row 8922/0)
+F. S. Van Valkenburg Nashville  Washn Apl 6th 1864
+Grapes April Plunge For Gov. John = son
+Zebra Do not believe the news papers
+There is no design to put Shelby
+Buell again in Pontiac in Adonis Bautus
