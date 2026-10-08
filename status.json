@@ -4939,9 +4939,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V1)'"
+        "AUDIT.md '## AUDIT (LS-V1)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-B)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 93.3,
@@ -4956,8 +4957,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Judge Advocate Turner, 10 Oct 1864, Jewett and Siebert from Richmond; Gemmell in the Old Capitol (E27)",
       "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
-      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E27 queued",
+      "line": "Read at grade H with the period Cipher No. 1 book (one place word M, the addressee code unread); no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series), the senders' and recipients' printed papers, F. W. Seward's and L. C. Baker's memoirs, the Old Capitol prison memoirs, the Lincoln Papers, Chronicling America, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026, two audits).",
+      "gap": "NARA M797 (Turner-Baker investigation files), RG 107 and HathiTrust full text unread, Semantic Scholar unreachable, JSTOR rows pending, so not N4; SO-ECKERT-E27 queued",
       "phrases": [
         "Huntington mssEC 19 p.197, pointer 9091"
       ],
@@ -4971,34 +4972,35 @@
       "completeness": "14/15 code words H, 1 M (place word Grunt); addressee word 'beverage' outside the book",
       "unresolved_spans": "addressee word 'beverage' (not in the book)",
       "reading_version": "LS-R1 7 Oct 2026 (reading.md)",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V1)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-B)' section 3",
       "depth_sentence": "Judge Advocate Turner reports that two men, Jewett and Siebert, came from Richmond the week before and are supposed to be rebel agents, and that James Gemmell, who crossed the Potomac with them, is in the Old Capitol.",
-      "depth_check": "period key book (mssEC 41); image crops (LS-R1); fresh rule-7 re-derivation (LS-V1)",
+      "depth_check": "period key book (mssEC 41); image crops (LS-R1); fresh rule-7 re-derivation (LS-V1); image re-checked and second re-derivation (AUD2-LS-B): Grunt confirmed on the image, M stands",
       "depth_note": "code words H 14, M 1"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V1)'"
+        "AUDIT.md '## AUDIT (LS-V1)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-B)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth": "D3",
+      "depth": "D4",
       "depth_pct": 100.0,
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
       },
-      "depth_by": "LS-V1 verifier (account 1)",
+      "depth_by": "AUD2-LS-B verifier (account 4)",
       "depth_date": "8 Oct 2026",
-      "decode_status": "Partially decrypted",
+      "decode_status": "Decrypted",
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: F. W. Seward to Thurlow Weed, 11 Oct 1864, a navy boat for the sailors' vote (E28)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
-      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E28 queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 1 book; the telegram's substance (a Mississippi Squadron boat for the New York agents collecting sailors' votes) is printed in the Diary of Gideon Welles (1911) vol. 2 p.175 and in the Lincoln Papers' transcriptions (Weed to Lincoln, 10 Oct 1864); the telegram's own wording was not located in print.",
+      "gap": "N2, not counted: substance in Welles's Diary vol. 2 p.175 and the Lincoln Papers (AUD2-LS-B); SO-ECKERT-E28 withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.197, pointer 9091"
       ],
@@ -5007,14 +5009,14 @@
         "Huntington mssEC 19 p.197, pointer 9091, E28 (F. W. Seward to Weed, 11 Oct 1864)"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
-      "completeness": "15/15 code words H (one flagged Pilgrim[?] = Captain)",
+      "completeness": "15/15 code words H (the flagged token is written 'Pelgrim' on the image = Pilgrim = Captain)",
       "unresolved_spans": "none",
       "reading_version": "LS-R1 7 Oct 2026 (reading.md)",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V1)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-B)' section 3",
       "depth_sentence": "Frederick Seward tells Thurlow Weed that Captain Pennock, in temporary command of the Mississippi Squadron, will put a boat at the disposal of the New York election agents to take the sailors' votes or proxies.",
-      "depth_check": "period key book (mssEC 41); image crops (LS-R1); fresh rule-7 re-derivation (LS-V1); ORN I/26 Sept 1864 (Pennock commanding the station, Porter absent) fits 'temporary command'",
+      "depth_check": "period key book (mssEC 41); image crops (LS-R1, and AUD2-LS-B word for word incl. 'Pelgrim'); fresh rule-7 re-derivations (LS-V1, AUD2-LS-B); ORN I/26 pp.541-542 (Captain Pennock in command of the squadron, autumn 1864); Welles Diary vol. 2 p.175 and Weed to Lincoln 10 Oct 1864 (the boat for the New York agents)",
       "depth_note": "code words H 15"
     }
   ],

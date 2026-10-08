@@ -1942,3 +1942,91 @@ chroniclingamerica.loc.gov 2 (403), hdl.huntington.org 4 (IIIF images).
 - status.json: E21, E23 rows `audit_status` "two audits"; E26 row grade N2, `audit_status` "two audits", not counted.
   SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-E26 withdrawn (N2); its prompt's context line names the Herald report. SO-ECKERT-E21 and -E23
   unchanged (class and counts unchanged). reading.md summary row for E26 notes the Herald report (decode.py --check still exit 0).
+
+## AUDIT 2 (second adversarial, AUD2-LS-B)
+
+Verifier AUD2-LS-B (account 4, for the account-3 orchestrator, brief `.claude/briefs/runs/2026-10-08-acct3-aud2-ls.md`), 8 Oct 2026,
+00:41-00:5x UTC by `date -u`. This session is separate from the solver (LS-R1) and the first auditor (LS-V1) and does not protect
+either one's conclusions. Two entries: **E27** (Judge Advocate L. C. Turner to 'beverage', 10 Oct 1864) and **E28** (F. W. Seward to
+Thurlow Weed, 11 Oct 1864 11.30 AM), both mssEC 19 p.197, pointer 9091. Nothing was decoded beyond re-running the committed script.
+
+### 1. Re-derivation (rule 7) and image check
+- `python3 ciphers/eckert-1864/decode.py --check`: "reading.md is current", exit 0.
+- Image: `hdl.huntington.org/digital/iiif/p16003coll11/9091/full/2400,/0/default.jpg` (scratch, not committed);
+  `python3 tools/iiif_lines.py --image $S/img/p9091.jpg --out $S/crops --prefix p9091 --region 0,200,2400,1800 --centres
+  50,150,...,1750 --lines-per-crop 3 --max-width 1800` (6 bands x 2 segments), plus two hand crops of the E28 opening line
+  (x 1000-2300, y 1310-1440). Every E27 line (header "Horner N.Y. No. 1 Washn. Octo. 10. 1864" through "L C Turner Judge Advo.")
+  and every E28 line (header "Horner N.Y. No 1 Washn Oct 11th 1864" through "F W Seward Asst Byron") agrees word for word with
+  ciphertext.txt. The token LS-R1 flagged as "Pilgrim[?]" is clearly written **"Pelgrim"** on the image: a clerk's misspelling of the
+  book word Pilgrim = Captain (key.md p.18 l.26 R). Pennock's rank is Captain in ORN I/26 throughout 1864 ("Captain A. M. Pennock,
+  U. S. Navy"), so the reading is confirmed independently. "Grunt" (E27) is clearly "Grunt" on the image, not a misread of Growl. The
+  M grade stands, since the book gives Warrenton and the telegram was sent from Washington.
+
+### 2. Families LS-V1 section 3 did not cover, searched here (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| `tools/print_check.py` fresh phrase pass (scratch target, 10 phrases: E27 "Jewett and Siebert came from Richmond", "supposed to be rebel agents", "James Gemmell crossed the Potomac", "is now in Old Capitol", "A Miss Gardner was with them", "she was going to Norwich"; E28 "in temporary command of the Mississippi squadron", "at the disposal of the New York election agents", "receive the vote or proxy of the sailors", "all the facilities will be furnished by the naval officer") | listed: F. W. Seward, *Seward at Washington* vol. 3 1861-72 (IA williamhsewardau03sewa); F. W. Seward, *Reminiscences of a War-Time Statesman* 1916 (reminiscencesofw00sewauoft); Benton, *Voting in the Field* 1915 (votinginfieldfor00bent); L. C. Baker, *History of the U.S. Secret Service* 1867 (historyofuniteds00bake); Williamson, *Prison Life in the Old Capitol* 1911 (prisonlifeoldcap00willrich); Bates, *Lincoln in the Telegraph Office* (lincolnintelegra00bates); ORN I/26; OR II/7. Unasked: IA full text (all items), Google Books, OpenAlex, CrossRef | no hit in any listed source. IA-wide and Google Books hits checked by snippet: "in temporary command of the Mississippi Squadron" appears only in Garrison, *Unusual Persons of the Civil War* (1996) and *Ohio History* 107 (1998), both general accounts of Pennock, not this telegram. "is now in Old Capitol" appears in OR II/8 (Ingraham, 31 May 1865), another case. The rest are unrelated hits on common words |
+| **Diary of Gideon Welles vol. 2** (IA diaryofgideonwel02welluoft, djvu read by date, not only by phrase) | entry of 11 Oct 1864 | **E28: content in print.** p.175: "October 11, Tuesday. The President and Seward called on me this forenoon relative to New York voters in the Navy. Wanted one of our boats to be placed at the disposal of the New York commission to gather votes in the Mississippi Squadron. ... directed commanders to extend facilities to all voters." LS-V1 searched this volume by phrase only, and the wording differs from the telegram's, so the entry was missed |
+| **Abraham Lincoln Papers, LoC** (Knox College transcriptions, online since 1999; loc.gov JSON API) | Weed + Pennock; Weed + Seward + sailors + votes, 1864 | **E28: request and sequel in print online.** Thurlow Weed to Lincoln, New York, 10 Oct 1864 (mal3709900): "I am anxious about the vote of the Sailors on the Mississippi, and have written to Frederick Seward advising him to obtain a Government Steamer for our Agents to go from Cairo down the River to the different Gun Boats". The editors' note cites Welles's diary p.175 and *Collected Works* VIII p.43. J. Springsteed (a New York commissioner for the sailors' votes) to Weed, Cairo, 21 Oct 1864 (mal3747400), enclosed in Weed to F. W. Seward, 28 Oct 1864, says he "went up to Capt Pennocks Head Quarters Mound City". Neither quotes E28's text or names Pennock as the officer giving the boat |
+| Lincoln Lore (IA abrahamlincolnsalinc_4; Google Books dates the issue 1979) | IA full text: Springsteed, Frederick Seward, Mississippi Squadron, Pennock | narrates the episode: Weed's request to Frederick Seward, Welles's 11 Oct entry, Springsteed at Cairo, the "squadron of fifty boats". No Pennock and no telegram text |
+| *Collected Works of Abraham Lincoln* vol. VIII (IA collectedworksof0008royp_m9a6, volumeviiicollec0000unse; be-api full text, lending-only) | Pennock; "Thurlow Weed" AND sailors; Mississippi AND sailors AND vote; Welles AND "election agents"; "Navy vote"; "Frederick Seward" AND Weed AND October | no E28 text; p.43 (cited by the Lincoln Papers editors) could not be read page by page (lending-only) |
+| ORN ser. I vol. 26 (IA officialrecordso0026unse djvu, read by date and correspondent, not only by phrase) | Pennock, Oct-Nov 1864; election, vote, proxy, Weed | no E28 text and no election traffic. **External check for E28:** S. P. Lee, Mound City, 2 Nov 1864 (p.541-542), refers to papers "sent to the Department by Captain Pennock while he was in command of this squadron", and Pennock reports directly to Welles in Sept 1864 (Mound City, 14 Sept 1864, near p.560). Both agree with the decoded "Captain Pennock ... of Cairo in temporary command of the Mississippi squadron" |
+| Chronicling America (loc.gov collections API; chroniclingamerica.loc.gov now 308-redirects there) | 1864: Gemmell + "Old Capitol"; Jewett Siebert; Pennock sailors election Weed; Oct-Nov 1864: Gemmell; sailors vote Mississippi squadron New York | Gemmell 0; Jewett/Siebert 3 pages, unrelated; sailors' vote 47 pages (NY Herald 6 and 12 Nov 1864 and others), listed but not read page by page; none surfaced E27 or E28 text in the result descriptions |
+| Huntington CONTENTdm (`CISOSEARCHALL`, page level, p16003coll11) | Pennock (16 pages), Jewett (5), Springsteed (0), "election agents" (1) | only the ledger's own p.197 (9091) for E27/E28. The other Pennock and Jewett pages (received and sent books 1862-64, e.g. 9414, 9515, 10249, 2727) are other telegrams. No plain copy of either entry |
+| Google Books API (key, country=US), 6 further queries | "James Gemmell" 1864; Siebert Jewett Richmond "rebel agents" 1864; "Miss Gardner" Norwich Richmond 1864 Turner; Springsteed sailors votes Cairo 1864; "Frederick Seward" Weed Pennock sailors vote 1864; Pennock "Mississippi Squadron" "New York" sailors vote proxies 1864 | E27: nothing (other James Gemmells: Montana, Ontario, Clydesdale). E28: only Lincoln Lore (above) |
+| CORE (key) | Gemmell AND "Old Capitol"; "Thurlow Weed" AND sailors AND vote AND 1864 | 0, 0 |
+| Semantic Scholar (key) | one query | HTTP 429 at print_check's call and again on one retry after a pause; **unreachable** this session, not retried in a loop |
+| JSTOR | rows 333-336 (LS-V1: family i for E27 and E28; family ii "Jewett and Siebert", "proxy of the sailors") read. Two family (ii) rows added: "gather votes in the Mississippi Squadron" (E28, the printed diary's own wording) and "James Gemmell" (E27) | pending (never blocks) |
+| Unread / unreachable | NARA M797 (case files of investigations by Levi C. Turner and Lafayette C. Baker, RG 94), the most likely home of E27's subjects; RG 107 (M473); RG 59 domestic letters (E28); Weed and Seward Papers (Rochester); *Collected Works* VIII p.43 page image; HathiTrust full text; the 47 Chronicling America pages on the sailors' vote, not read page by page | unread |
+Requests: hdl.huntington.org 7 (1 IIIF image, 6 CONTENTdm), archive.org 9 (advancedsearch 5, 2 djvu downloads, 1 metadata, + print_check 8),
+be-api.us.archive.org 12 (+ print_check 30), www.googleapis.com 7 (+ print_check 10), www.loc.gov 7, tile.loc.gov 3, api.core.ac.uk 2,
+api.semanticscholar.org 1 (429; print_check's 2 also 429), api.openalex.org 10 and api.crossref.org 10 (print_check).
+
+### 3. Classification (key `period` for both)
+- **E27: N3, held.** No prior plaintext or decipherment located after both audits' searches. Not N4: NARA M797 (the Turner-Baker
+  investigation files, where Jewett, Siebert, Gemmell and Miss Gardner would be recorded), RG 107 and HathiTrust full text are
+  unread, and Semantic Scholar was unreachable. Not lowered: nothing about these four people or the telegram was found in print.
+  - **Depth: D3, held.** 14/15 code words H, 1 M ("Grunt": the book gives Warrenton, but the telegram was sent from Washington,
+    confirmed on the image). The addressee word "beverage" is outside the book (a name code). D4 needs every cipher-letter token
+    H/C/S, so the M token blocks D4 until a period source settles "Grunt". depth_pct 93.3 unchanged. Outward words: "largely
+    deciphered (about 93%)".
+  - Safe sentence: "Read at grade H with the period Cipher No. 1 book (one place word M, the addressee code unread); no prior
+    decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series), the senders' and recipients'
+    printed papers, F. W. Seward's and L. C. Baker's memoirs, the Old Capitol prison memoirs, the Lincoln Papers, Chronicling America,
+    the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct
+    2026, two audits)." Unsafe: "first", "unpublished", "never printed", "unknown rebel agents".
+  - Depth sentence (unchanged, checked against the derived block): "Judge Advocate Turner reports that two men, Jewett and Siebert,
+    came from Richmond the week before and are supposed to be rebel agents, and that James Gemmell, who crossed the Potomac with
+    them, is in the Old Capitol."
+- **E28: lowered N3 -> N2.** The telegram's substance is in print: the Navy's decision to place a boat at the disposal of the New
+  York commission gathering sailors' votes in the Mississippi Squadron, with facilities extended to voters. It is in Welles's
+  *Diary* vol. 2 p.175 (11 Oct 1864, the day of the telegram, the decision it relays), in Weed's request to Lincoln of 10 Oct 1864
+  naming Frederick Seward as the man asked (Lincoln Papers, annotated transcription), and in Lincoln Lore's account of the episode.
+  This is the same shape as E29 (LS-V1) and E26 (AUD2-LS-A): content in print, no prior mapping of this ciphertext to it found. The
+  telegram's own text and Pennock as the officer were not located in print. That is a search result and does not make the item N3.
+  Not counted.
+  - **Depth: D4 (raised from D3).** Rule 4a's D4 criteria, item by item: every cipher-letter token H (15/15); no residue; a
+    non-statistical external check (the image agrees word for word, the flagged token is "Pelgrim" = Pilgrim = Captain, ORN I/26
+    pp.541-542 has Captain Pennock in command of the squadron in autumn 1864, and Welles's diary and Weed's letter independently
+    give the boat for the New York agents); and a fresh rule-7 re-derivation by a session other than the solver's (section 1).
+    LS-V1 held D3 only because the flagged token had not been checked on the image. It has been checked here. Outward words:
+    "deciphered". decode_status Decrypted.
+  - Safe sentence: "Read at grade H with the period Cipher No. 1 book; the telegram's substance (a Mississippi Squadron boat for the
+    New York agents collecting sailors' votes) is printed in the Diary of Gideon Welles (1911) vol. 2 p.175 and in the Lincoln Papers'
+    transcriptions (Weed to Lincoln, 10 Oct 1864); the telegram's own wording was not located in print." Unsafe: "first",
+    "unpublished", "unknown", "previously unread", or any N3 wording.
+  - Depth sentence (unchanged, checked against the derived block): "Frederick Seward tells Thurlow Weed that Captain Pennock, in
+    temporary command of the Mississippi Squadron, will put a boat at the disposal of the New York election agents to take the
+    sailors' votes or proxies."
+
+### 4. Postmortem
+- Over-claim corrected: E28 was N3 in LS-V1 section 4, status.json and the SO-ECKERT-E28 prompt. The miss was a phrase-only search
+  of a volume (Welles vol. 2) that LS-V1 did search. The diary paraphrases the decision rather than quoting the telegram, so the
+  telegram's wording could not find it. The lesson matches AUD2-LS-A's for E26: when a telegram reports a decision or an event,
+  read the obvious diary or edition **by date** for the event, and search the recipient's correspondence with the head of state
+  (here the Lincoln Papers), before setting N3.
+- Understatement corrected: E28 depth D3 -> D4 (section 3).
+- status.json: E27 row `audit_status` "two audits", class, depth and line unchanged except the safe line's source list. E28 row grade
+  N2 (`plaintext_novelty` N2, `mapping_novelty` N3), `audit_status` "two audits", depth D4, not counted.
+  SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-E28 withdrawn (N2), and its prompt's context line names the Welles and Lincoln Papers prints.
+  SO-ECKERT-E27 unchanged (class and counts unchanged).
