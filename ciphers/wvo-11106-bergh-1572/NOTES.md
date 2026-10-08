@@ -84,3 +84,10 @@ Not waiting on anyone: the transcription (above) depends on nobody.
 ## Requests
 
 resources.huygens.knaw.nl: 29 (WVO record 11106 and 3 neighbours, 1 PDF, 2 Bergh list pages and 1 repeat, 2 pages.json, 7 Groen page fetches, 8 Groen full-text searches, 1 Kemp search; the 2 WVO list pages were fetched once without a cookie jar and once with), >= 2 s apart, no 403/429. be-api.us.archive.org: 5. www.googleapis.com/books: 3. api.openalex.org: 1. github.com (clone): 2. No Gallica.
+
+## FAM-11106T: transcription of page 2 (LANE FAMILY, account 2, 8 Oct 2026, from 17:24 UTC by `date -u`)
+
+Prior work, check 1 re-run 17:26 UTC 8 Oct 2026 (checks 2-4 are FAM-CS11106's, above): `grep -rln 11106` over every .md/.tsv/.json outside
+sources/ -> KEYHUNT-2026-10-07.tsv, keyhunt/2026-10-07-KH2D.tsv, research/FAMILY-POOLS-2026-10-08.md, research/n9xm/nulls.json, STATUS.md,
+LEDGER.md, this folder, the lane brief; last 1,500 ROOM.md lines: KH2-D lead, FAM-POOL, FAM-CS11106 claim + done, the lane's wave-3 line,
+this job's claim. No ciphertext.txt/tsv, HYPOTHESES.md or AUDIT.md in the folder; no live claim by another session. Result: not done.
