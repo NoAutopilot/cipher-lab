@@ -47,3 +47,11 @@ Stanislas, Eosander to Charles XII, Droysen IV.1 Anm. 511-512) -- could the Mant
 V-MANTR8's reading "St[anislas]" for 51.28 against the key table (no image crops on disk; say so if you cannot eye-check). Update
 status.json audit_status for both rows and PROGRESS.tsv per the backlog's action; the backlog flags REGISTERS DISAGREE for this folder:
 correct the register that is wrong, say which. AUDIT.md heading "## AUDIT 2 (AUD2-MANTR8)". Units 2 x $1.8 + reconciliation.
+
+## AUD3-E97 (account 3), cap $2.5, box 40 min: eckert-1864 E97 -- the Horan check, carried from AUD3-E96 (added 23:5x UTC)
+AUD3-E96 found Horan, *Confederate Agent* (1954) p.226 (IA dli.ernet.157117, leaf 267) prints Holt's 23 Nov 1864 summary of the Francis
+Jones confession, which lists Baltimore agents (E96 -> N2), and p.227 names St Louis agents. E97 (St Louis, same affair; first audit
+FV-LS4-R1b acct 2, second V1-LS4B acct 3 in another session) needs the same test: read AUD3-E96's section first, read Horan pp.226-228
+for E97's people and substance, and judge N2 (substance in print) vs N3 (name only, or nothing). Also check E100 against the same pages
+if it belongs to the same confession affair (V1-LS4B audited E96 E97 E100 together). AUDIT.md heading "## AUDIT 3 (AUD3-E97)"; propagate
+class to status.json and any SO row. Units 1-2 items x ~$1 + reconciliation.
