@@ -102,6 +102,25 @@ is held to no letters) at its key value through EVERY iteration, 10 counts per a
 (--prior/--word-prior): the fixed codes act as anchors and only the codes absent from KEY.tsv are re-estimated. The fixed
 codes' own chunks still appear in the alignment TSV but are not evidence; report only the free codes. Use with a pooled
 PAIRS.tsv of many glossed multi-code runs, where a free code's chunk is learned from its agreement across runs.
+
+--cipher-pair A B --out DIR [--iters N] [--gap-open X] [--gap-ext Y] [--min-n N] [--min-lift L]
+(8 Oct 2026, TT-PAIR, LANE TOOLS-TOMO; Tomokiyo practice 7, servien.htm "Identifying Symbols by Aligning Two
+Ciphertexts", Servien to Sabran, Baluze 155 f.123/f.127, 1632): two token files of ONE text in two encipherments (a
+letter and its duplicata, or the same despatch to two ambassadors). Whitespace-separated cipher tokens; a clear word is
+written in braces, {francois}, and is split into clear letters; '|' and line breaks are ignored. No plaintext is needed.
+Affine-gap Needleman-Wunsch (Gotoh) over the two streams, iterated align -> symbol-equivalence update -> realign
+(Tomokiyo: "the identified symbols reveal letters; revealed letters allow aligning more portions ... and the alignment
+reveals identification of more homophones"; leave-one-out, so a column never votes for itself): a clear letter against the same clear letter is an anchor (+4; words in
+clear in BOTH copies are plaintext, not nulls); a cipher token against a clear letter in the other copy is a crib (its
+letter is counted for that symbol); a cipher pair scores by the lift of its co-alignment count over chance in the last
+alignment, plus a bonus or charge when both symbols carry a crib letter. A contradiction is resolved by the gap model,
+i.e. a one-place shift ("cete" against "ceste"). Writes DIR/alignment.tsv (column, A token, B token, kind, score,
+confidence = share of the A symbol's alignments that go to this B symbol), DIR/equivalences.tsv (A symbol, B symbol,
+n, lift, group), DIR/groups.tsv (homophone groups: connected components of the accepted equivalences, so two A symbols
+that both map to one B symbol fall in one group; crib letter by vote) and DIR/cribs.tsv (each cipher run in one copy set
+against a clear word in the other). Meant to catch: homophones of one letter in two independent encipherments of the
+same text, with insertions and wording differences between the copies. Must NOT flag: two DIFFERENT texts of the same
+length (the null control) -- equivalences there fall to chance precision. Grade from a known two-copy case only.
 """
 import csv
 import itertools
@@ -525,8 +544,288 @@ def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, p
         shuffle_control(pairs, kw, real)
 
 
+# ---------------------------------------------------------------------------------------------------------------
+# --cipher-pair (TT-PAIR, 8 Oct 2026; Tomokiyo practice 7, servien.htm). See the module docstring.
+
+def cp_read(path):
+    """Token file -> list of (kind, value): ('c', symbol) for a cipher token, ('p', letter) for a clear letter."""
+    out = []
+    txt = open(path, encoding='utf-8').read().replace('|', ' ')
+    for m in re.finditer(r'\{([^}]*)\}|(\S+)', txt):
+        if m.group(1) is not None:
+            for ch in fold(fold_accents(m.group(1).lower())):
+                if ch.isalpha():
+                    out.append(('p', ch))
+        else:
+            out.append(('c', m.group(2)))
+    return out
+
+
+def cp_align(A, B, score, gap_open=-3.0, gap_ext=-0.4):
+    """Gotoh affine-gap global alignment; returns a list of (i or None, j or None)."""
+    import math
+    n, m = len(A), len(B)
+    NEG = -math.inf
+    M = [[NEG] * (m + 1) for _ in range(n + 1)]
+    X = [[NEG] * (m + 1) for _ in range(n + 1)]   # gap in B (A token unmatched)
+    Y = [[NEG] * (m + 1) for _ in range(n + 1)]   # gap in A (B token unmatched)
+    M[0][0] = 0.0
+    for i in range(1, n + 1):
+        X[i][0] = gap_open + (i - 1) * gap_ext
+    for j in range(1, m + 1):
+        Y[0][j] = gap_open + (j - 1) * gap_ext
+    for i in range(1, n + 1):
+        Mi, Xi, Yi, Mp, Xp, Yp = M[i], X[i], Y[i], M[i - 1], X[i - 1], Y[i - 1]
+        a = A[i - 1]
+        for j in range(1, m + 1):
+            best = Mp[j - 1]
+            if Xp[j - 1] > best:
+                best = Xp[j - 1]
+            if Yp[j - 1] > best:
+                best = Yp[j - 1]
+            Mi[j] = best + score(a, B[j - 1], i - 1, j - 1)
+            o = max(Mp[j], Yp[j]) + gap_open
+            e = Xp[j] + gap_ext
+            Xi[j] = o if o > e else e
+            o = max(Mi[j - 1], Xi[j - 1]) + gap_open
+            e = Yi[j - 1] + gap_ext
+            Yi[j] = o if o > e else e
+    i, j = n, m
+    st = max((M[i][j], 0), (X[i][j], 1), (Y[i][j], 2))[1]
+    path = []
+    while i > 0 or j > 0:
+        if st == 0:
+            path.append((i - 1, j - 1))
+            pm, px, py = M[i - 1][j - 1], X[i - 1][j - 1], Y[i - 1][j - 1]
+            st = 0 if pm >= px and pm >= py else (1 if px >= py else 2)
+            i, j = i - 1, j - 1
+        elif st == 1:
+            path.append((i - 1, None))
+            st = 1 if (i > 1 and X[i - 1][j] + gap_ext >= max(M[i - 1][j], Y[i - 1][j]) + gap_open) else \
+                (0 if M[i - 1][j] >= Y[i - 1][j] else 2)
+            if i - 1 == 0 and j == 0:
+                st = 0
+            i -= 1
+        else:
+            path.append((None, j - 1))
+            st = 2 if (j > 1 and Y[i][j - 1] + gap_ext >= max(M[i][j - 1], X[i][j - 1]) + gap_open) else \
+                (0 if M[i][j - 1] >= X[i][j - 1] else 1)
+            if i == 0 and j - 1 == 0:
+                st = 0
+            j -= 1
+    path.reverse()
+    return path
+
+
+def cp_counts(A, B, path):
+    pair, ca, cb = Counter(), Counter(), Counter()
+    la, lb = defaultdict(Counter), defaultdict(Counter)
+    for i, j in path:
+        if i is None or j is None:
+            continue
+        (ka, va), (kb, vb) = A[i], B[j]
+        if ka == 'c' and kb == 'c':
+            pair[(va, vb)] += 1
+            ca[va] += 1
+            cb[vb] += 1
+        elif ka == 'c' and kb == 'p':
+            la[va][vb] += 1
+        elif ka == 'p' and kb == 'c':
+            lb[vb][va] += 1
+    return pair, ca, cb, la, lb
+
+
+def cp_label(cnt, min_n=2, share=0.6):
+    if not cnt:
+        return None
+    x, k = max(cnt.items(), key=lambda kv: (kv[1], kv[0]))
+    tot = sum(cnt.values())
+    return x if k >= min_n and k >= share * tot else None
+
+
+def cp_lift(pair, ca, cb, a, b):
+    import math
+    tot = sum(ca.values()) or 1
+    exp = ca[a] * cb[b] / tot
+    return math.log((pair[(a, b)] + 0.2) / (exp + 0.2))
+
+
+def cp_run(A, B, iters=8, gap_open=-3.0, gap_ext=-0.4):
+    """Iterate align -> equivalence counts -> realign until the alignment stops changing. Returns (path, counts)."""
+    import math
+    state = {'pair': Counter(), 'ca': Counter(), 'cb': Counter(), 'labA': {}, 'labB': {}, 'it': 0, 'cols': set()}
+
+    def score(x, y, i, j):
+        (kx, vx), (ky, vy) = x, y
+        if kx == 'p' and ky == 'p':
+            return 4.0 if vx == vy else -4.0
+        if kx == 'c' and ky == 'c':
+            if state['it'] == 0:
+                return 1.0
+            # leave-one-out: a column does not vote for itself, so the last alignment cannot simply lock itself in
+            own = 1 if (i, j) in state['cols'] else 0
+            pair, ca, cb = state['pair'], state['ca'], state['cb']
+            tot = (sum(ca.values()) or 1)
+            exp = (ca[vx] - own) * (cb[vy] - own) / tot
+            s = math.log((pair[(vx, vy)] - own + 0.2) / (max(exp, 0.0) + 0.2))
+            s = max(-3.0, min(3.0, s))
+            lx, ly = state['labA'].get(vx), state['labB'].get(vy)
+            if lx and ly:
+                s += 2.0 if lx == ly else -2.0
+            return s
+        sym, let, lab = (vx, vy, state['labA']) if kx == 'c' else (vy, vx, state['labB'])
+        l = lab.get(sym)
+        if l is None:
+            return 0.5
+        return 3.0 if l == let else -2.0
+
+    path, prev = None, None
+    for it in range(iters):
+        state['it'] = it
+        path = cp_align(A, B, score, gap_open, gap_ext)
+        pair, ca, cb, la, lb = cp_counts(A, B, path)
+        # crib letters, propagated one hop through the cipher-cipher equivalences
+        labA, labB = {}, {}
+        for s_, c in la.items():
+            if cp_label(c):
+                labA[s_] = cp_label(c)
+        for s_, c in lb.items():
+            if cp_label(c):
+                labB[s_] = cp_label(c)
+        votesA, votesB = defaultdict(Counter), defaultdict(Counter)
+        for (a, b), k in pair.items():
+            if b in labB:
+                votesA[a][labB[b]] += k
+            if a in labA:
+                votesB[b][labA[a]] += k
+        for a, v in votesA.items():
+            v.update(la.get(a, {}))
+            if cp_label(v, 2, 0.6):
+                labA.setdefault(a, cp_label(v, 2, 0.6))
+        for b, v in votesB.items():
+            v.update(lb.get(b, {}))
+            if cp_label(v, 2, 0.6):
+                labB.setdefault(b, cp_label(v, 2, 0.6))
+        state.update(pair=pair, ca=ca, cb=cb, labA=labA, labB=labB,
+                     cols={(i, j) for i, j in path if i is not None and j is not None})
+        if path == prev:
+            break
+        prev = path
+    return path, state
+
+
+def cp_groups(state, min_n=2, min_lift=1.0):
+    """Accepted equivalences and their connected components (homophone groups)."""
+    pair, ca, cb = state['pair'], state['ca'], state['cb']
+    acc = [(a, b, k, cp_lift(pair, ca, cb, a, b)) for (a, b), k in pair.items()
+           if k >= min_n and cp_lift(pair, ca, cb, a, b) >= min_lift]
+    parent = {}
+
+    def find(x):
+        parent.setdefault(x, x)
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+    for a, b, _k, _l in acc:
+        parent[find(('A', a))] = find(('B', b))
+    comp = defaultdict(list)
+    for x in list(parent):
+        comp[find(x)].append(x)
+    gid = {}
+    groups = []
+    for n, root in enumerate(sorted(comp, key=lambda r: (-len(comp[r]), str(r)))):
+        g = 'g%d' % (n + 1)
+        mem = comp[root]
+        for x in mem:
+            gid[x] = g
+        letters = Counter()
+        for side, s_ in mem:
+            l = (state['labA'] if side == 'A' else state['labB']).get(s_)
+            if l:
+                letters[l] += 1
+        groups.append((g, sorted(s_ for side, s_ in mem if side == 'A'), sorted(s_ for side, s_ in mem if side == 'B'),
+                       letters.most_common(1)[0][0] if letters else ''))
+    return acc, gid, groups
+
+
+def cp_cribs(A, B, path):
+    """Each maximal run of cipher tokens in one copy aligned against clear letters in the other."""
+    out = []
+    for side, mine, other in (('A', 0, 1), ('B', 1, 0)):
+        S, O = (A, B) if side == 'A' else (B, A)
+        run_c, run_p, start = [], [], None
+        for col, ij in enumerate(path + [(None, None)]):
+            x, y = ij[mine], ij[other]
+            if x is not None and y is not None and S[x][0] == 'c' and O[y][0] == 'p':
+                if start is None:
+                    start = col
+                run_c.append(S[x][1])
+                run_p.append(O[y][1])
+            else:
+                if len(run_c) >= 2:
+                    out.append((side, start, ' '.join(run_c), ''.join(run_p)))
+                run_c, run_p, start = [], [], None
+    return out
+
+
+def cmd_cipher_pair(a_path, b_path, out_dir, iters=8, gap_open=-3.0, gap_ext=-0.4, min_n=2, min_lift=1.0):
+    import os
+    A, B = cp_read(a_path), cp_read(b_path)
+    path, state = cp_run(A, B, iters, gap_open, gap_ext)
+    acc, gid, groups = cp_groups(state, min_n, min_lift)
+    os.makedirs(out_dir, exist_ok=True)
+    pair, ca = state['pair'], state['ca']
+
+    def w(name, header, rows):
+        with open(os.path.join(out_dir, name), 'w', encoding='utf-8', newline='') as f:
+            wr = csv.writer(f, delimiter='\t', lineterminator='\n')
+            wr.writerow(header)
+            wr.writerows(rows)
+    rows = []
+    for col, (i, j) in enumerate(path):
+        ta = A[i] if i is not None else None
+        tb = B[j] if j is not None else None
+        kind = 'gap'
+        conf = ''
+        sc = ''
+        if ta and tb:
+            kind = {'cc': 'cipher', 'pp': 'anchor', 'cp': 'crib', 'pc': 'crib'}[ta[0] + tb[0]]
+            if kind == 'anchor' and ta[1] != tb[1]:
+                kind = 'clash'
+            if kind == 'cipher':
+                conf = '%.2f' % (pair[(ta[1], tb[1])] / ca[ta[1]])
+                sc = '%.2f' % cp_lift(pair, ca, state['cb'], ta[1], tb[1])
+        show = lambda t: '' if t is None else (t[1] if t[0] == 'c' else '{%s}' % t[1])
+        rows.append([col, show(ta), show(tb), kind, sc, conf])
+    w('alignment.tsv', ['col', 'a', 'b', 'kind', 'lift', 'confidence'], rows)
+    w('equivalences.tsv', ['a', 'b', 'n', 'lift', 'group'],
+      [[a, b, k, '%.2f' % l, gid.get(('A', a), '')] for a, b, k, l in sorted(acc, key=lambda r: (-r[2], r[0], r[1]))])
+    w('groups.tsv', ['group', 'a_symbols', 'b_symbols', 'crib_letter'],
+      [[g, ' '.join(sa), ' '.join(sb), l] for g, sa, sb, l in groups])
+    cribs = cp_cribs(A, B, path)
+    w('cribs.tsv', ['cipher_copy', 'col', 'cipher_run', 'clear_in_other'], cribs)
+    kinds = Counter(r[3] for r in rows)
+    print('cipher-pair: A %d tokens, B %d; columns %s; equivalences %d; groups %d (%d with a crib letter); cribs %d'
+          % (len(A), len(B), dict(kinds), len(acc), len(groups), sum(1 for g in groups if g[3]), len(cribs)))
+    return path, state, acc, groups
+
+
 if __name__ == '__main__':
     a = sys.argv[1:]
+    if a and a[0] == '--cipher-pair':
+        opts = {'--iters': 8, '--gap-open': -3.0, '--gap-ext': -0.4, '--min-n': 2, '--min-lift': 1.0, '--out': None}
+        for flag in list(opts):
+            if flag in a:
+                k = a.index(flag)
+                opts[flag] = a[k + 1] if flag == '--out' else type(opts[flag])(float(a[k + 1]))
+                del a[k:k + 2]
+        if len(a) != 3 or not opts['--out']:
+            sys.exit('usage: interlinear_align.py --cipher-pair A.txt B.txt --out DIR [--iters N] [--gap-open X] '
+                     '[--gap-ext Y] [--min-n N] [--min-lift L]')
+        cmd_cipher_pair(a[1], a[2], opts['--out'], int(opts['--iters']), opts['--gap-open'], opts['--gap-ext'],
+                        int(opts['--min-n']), opts['--min-lift'])
+        sys.exit(0)
     if a and a[0] == 'stream':
         import stream_align
         stream_align.main(a[1:])

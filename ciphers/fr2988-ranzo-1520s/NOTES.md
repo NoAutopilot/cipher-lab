@@ -448,3 +448,32 @@ Requests: github.com 1 sparse clone; archive.org 2 (Castiglione djvu texts, scra
 native regions). Vision: 5 own looks, 0 subagent calls.
 For Bourdeau (parent's call, outreach gates): his c007, c018 and c020 label the compact-8 s form as g (21/21 settled on c007;
 4/4 sampled on c018/c020), while c006/c017/c019 do not; his solver's g->s merge already absorbs most of it.
+
+## TT-PAIR (8 Oct 2026) -- symbol-equivalence alignment of the two copies (LANE TOOLS-TOMO, account 4)
+
+Instrument: `tools/interlinear_align.py --cipher-pair` (Tomokiyo practice 7, servien.htm: align two encipherments of one
+text and read off which symbols stand for one another). Gates first: `python3 tools/intake_gate_check.py fr2988-ranzo-1520s`
+exit 0 ("open (line 1) -- edition/page or full-text-search citation found within 6 lines"); `python3 tools/prior_work.py
+fr2988-ranzo-1520s --item-spec 'shelfmark=BnF fr.3019;folio=73r-74r;sender=Ranzo' --step-type align` exit 0 ("proceed on
+the residue: whole item"; plaintext verdict UNCHECKED-NET, Tomokiyo francis.htm/venetian.htm/unsolved.htm name the letters
+as undeciphered; no exit-4 rows).
+Inputs (no key, no plaintext; built this pass into `cipher_pair/`): A = `fr3019_no27_settled.tsv` (fr.3019 no.27, the
+settled two-witness read, 816 tokens); B = Bourdeau's fr.2988 f.2r-v with the settled s/g and reader-error fixes
+(`bourdeau_relabelled/ranzo_c006_T2.txt` + `ranzo_c007_T2.txt`, D. Bourdeau, MIT / CC BY 4.0; 816 tokens). Dropped from
+both: '/', '/.', and Bourdeau's '?'-prefixed tokens (one).
+Command: `python3 tools/interlinear_align.py --cipher-pair ciphers/fr2988-ranzo-1520s/cipher_pair/A_fr3019_no27.txt
+ciphers/fr2988-ranzo-1520s/cipher_pair/B_fr2988_f2_T2.txt --out ciphers/fr2988-ranzo-1520s/cipher_pair/out` (12 s).
+Head: `cipher-pair: A 816 tokens, B 816; columns {'cipher': 813, 'gap': 6}; equivalences 141; groups 140 (0 with a crib
+letter); cribs 0`.
+Found: 140 of the 141 accepted equivalences are a symbol with itself (the clerk copied the same code, as RANZO-DUP
+measured: 750/817 raw agreement). One is not: **r41 (fr.3019) = t41 (fr.2988), 3 aligned columns, lift 2.56**; fr.3019's
+r41 also stands opposite fr.2988's r41 in 10 columns, so in fr.2988's copy code 41 is written with both an r and a t prefix
+where fr.3019 has r -- the tool groups {r41} with {r41, t41} (groups.tsv g1). This is the same copy variant RANZO-DUP's
+hand diff recorded ("r41 (fr.3019) / t41 (fr.2988) four times"; here 3 aligned plus 1 opposite a gap at the line break
+where fr.3019 has two extra tokens). Whether r/t on 41 is a homophone pair, a notation choice or a misread letter is not
+decided by an alignment: it is a hint for the code's structure (prefix letter possibly not significant on 41), not a
+reading.
+Not found: no other pair of different codes co-aligns twice or more with lift >= 1.0; the other 21 single non-identical
+columns (r196/r296, m297/m247, q20/q10, p1/p10 ...) are RANZO-DUP's number variants and reader differences, each seen once,
+below the tool's acceptance line (n >= 2). No clear word in either copy, so no anchors and no cribs. Grades: no reading,
+no key; H 0, C 0. Novelty not classified.

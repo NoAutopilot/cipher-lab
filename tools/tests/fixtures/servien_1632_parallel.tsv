@@ -1,0 +1,29 @@
+# Servien to Sabran, Carignan 1 Dec 1632 (postscript 14 Dec), BnF Baluze 155 f.123 (copy A) and its duplicate f.127
+# (copy B): the two PLAINTEXTS as printed in parallel by S. Tomokiyo, Cryptiana servien.htm, "Two Plaintexts in
+# Parallel" (first posted 29 May 2021), lines (a)-(k), with his real wording differences. Braces = words in clear in that
+# copy (his italics; plus "polidor"/"grotesque" and "pour ces effect", which his introduction lists as clear). "endur?"
+# and the bracketed editorial letters are given without the marks. Used only to build the semi-synthetic TT-PAIR control
+# (tools/tests/cipher_pair_control.py): the cipher symbols themselves are images on his page, not transcribed here.
+line	copy	text
+a	A	De cete sorte l'on pouroit {peutestre} menager si l'on
+a	B	{De ceste sorte} on pouroit peutestre menager si {l'on}
+b	A	ne peut l'empescher qu'ils se joingnent a {francois}
+b	B	{ne} peut tout a faict l'empescher que s'ils se joingnent a {francois}
+c	A	que ce coit seulement en l'un des deux premiers
+c	B	ce soit seulement en {l'un des} deux premiers
+d	A	cas, {a scavoir} si le Milanois ou leur estat sont ataques
+d	B	cas, a scavoir si le Milanois ou leur estat sont ataques
+e	A	{sans que le} secours qu'ils prometront {puisse}
+e	B	{sans que} le secours qu'ils prometront {puisse}
+f	A	{estre} employe pour le troisiesme {lequelles pourroit}
+f	B	{estre} employe pour le troisiesme {lequelles pourroit}
+g	A	jeter dans une rupture ouverte avec {polidor} {dont ils}
+g	B	jeter dans une rupture ouverte avec {grotesque} dont ils
+h	A	{se seroyent endur autheurs de gayete de coeur se tenants}
+h	B	{se seroyent endur} les auteurs {de gayete de coeur} se tenant
+i	A	{pour ces effect} aux simples termes de contribuer a la defence
+i	B	aux termes de contribuer a la defence
+j	A	de l'estat de Milan et du leur estat sans fournir
+j	B	de l'estat de Milan sans fournir
+k	A	les moyens d'ataquer ceux de leurs voisins
+k	B	de quoy ataquer ceux de leurs voisins

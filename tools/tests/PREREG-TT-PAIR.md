@@ -27,7 +27,7 @@ shuffled-order null of the same text, which this is not.
 Outcome wording: all four hold -> shelf grade `controlled-only` (semi-synthetic, passes); any fails -> `weak`, evidence
 "controlled-only: failed <item>".
 
-## Addendum, 8 Oct 2026 ~23:00 UTC (date -u), before the run: a REAL two-copy case on disk
+## Addendum, 8 Oct 2026 22:55 UTC (date -u), before the run: a REAL two-copy case on disk
 
 After the Servien control above had run (result: all four items held, both designs), a real two-copy ciphertext with a
 known answer was found on disk: BnF Espagnol 132, Philip II to Vargas Mexia, 19 Sept 1578, f.89r-f.91r and its duplicate
@@ -45,3 +45,26 @@ numbers in evidence):
 4. column agreement with align_dup.py's key-assisted alignment (dup_align.tsv) >= 0.80.
 Caveat stated now: the two copies here are mostly the same tokens, so items 1 and 4 are easier than on independently
 enciphered copies; item 2 is the one that tests homophone discovery.
+
+## Outcome (8 Oct 2026, 23:0x UTC by date -u; numbers from tools/tests/fixtures/tt_pair_control.tsv and tt_pair_es132.tsv)
+
+Servien 1632 semi-synthetic, 10 seeds per design (`cipher_pair_control.py --seeds 10 --design both --null`):
+| design | case | accepted | precision (min-max) | recall | hrecall | crib | opening |
+|---|---|---|---|---|---|---|---|
+| same | servien | 74.5 | 0.993 (0.973-1.000) | 0.359 | 0.478 | 0.902 | 0.933 |
+| same | null | 26.0 | 0.089 (0.000-0.152) | 0.012 | 0.010 | 0.094 | 0.050 |
+| indep | servien | 73.4 | 0.990 (0.961-1.000) | 0.350 | 0.452 | 0.897 | 0.948 |
+| indep | null | 24.4 | 0.091 (0.000-0.200) | 0.010 | 0.012 | 0.096 | 0.000 |
+All four Servien items hold in both designs.
+
+es132 real duplicate (`cipher_pair_es132.py`): accepted 186 (153 scorable), precision **0.739** (item 1 FAIL, < 0.80);
+non-identical 47, precision **0.149** (item 2 FAIL); null precision 0.000 (item 3 holds); column agreement with the
+key-assisted dup_align.tsv **0.515** of 1836 (item 4 FAIL). Diagnosis (one look, after the score): the syllabic table
+gives 378 distinct symbols in 1,927 tokens, 178 of them seen once, and about a quarter of the key-assisted aligned pairs
+differ by reader error or variant (dup_align_summary.json), so leave-one-out co-alignment counts are too thin to steer the
+DP at this N; Servien's letter key has ~63 symbols. Nothing was re-tuned on this case.
+Grade: the brief grades from the real case when one exists, so the shelf row is `weak` with evidence "controlled-only:
+passes semi-synthetic Servien (precision 0.99 vs null 0.09); failed real es132 duplicate". This is stricter than the
+addendum's fallback wording above (which would have kept `controlled-only`); the stricter grade is taken.
+Named next step (not run): a `--same-key` identity prior for a duplicata known to share one key (identical symbols are
+equivalent by construction, as in Servien and es132), tested on a held-out real two-copy case, not re-run on es132 alone.
