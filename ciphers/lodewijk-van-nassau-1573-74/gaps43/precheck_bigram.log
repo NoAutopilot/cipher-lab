@@ -1,3 +1,8 @@
 unigram lexicon 23565 words, maxlen 20, OOV 4.860 bits/char
 bigram model 267758 pairs, 23461 contexts, D 0.75
 5811 cut: 833 keyed, 96 codes; key_full cost 2559.6
+{'start': 'key_full', 'seed': 0, 'start_recovery': 1.0, 'cost': 2327.7336598220604, 'recovery': 0.9243697478991597, 'word_share': 0.9819927971188476}
+{'start': 'random', 'seed': 1, 'start_recovery': 0.055222088835534214, 'cost': 2114.0051031276785, 'recovery': 0.057623049219687875, 'word_share': 1.0}
+{'start': 'random', 'seed': 2, 'start_recovery': 0.03601440576230492, 'cost': 2666.664395042947, 'recovery': 0.013205282112845138, 'word_share': 0.9651860744297719}
+{'start': 'random', 'seed': 3, 'start_recovery': 0.04081632653061224, 'cost': 2120.4691291430777, 'recovery': 0.057623049219687875, 'word_share': 1.0}
+PRECHECK (key_full 2559.6 <= min annealed 2114.0): FAIL
