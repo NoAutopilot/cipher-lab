@@ -67,15 +67,23 @@ exit=0
 
 ## Remaining gaps
 
-- [ ] Transcription of p2 (about 23 lines, 800-900 signs), to TRANSCRIPTION.md's standard (sign inventory settled before machine passes; two machine passes disagreeing on more than a tenth go to the owner's sign sorter); about $5-8 (price per page from the AX-COMP2 rule: N passes + 1 reconciliation, crops first with `tools/iiif_lines.py --image`).
-- [ ] Monoalphabetic / homophonic test on the transcription with a matched control of the same length, symbol count and design (rule 3), French plaintext, with the Bergh closing formula and "Prince d'Orange"-type cribs; only after the transcription.
-- [ ] Test the year: the letter may not be 1572 (rule: year is editorial).
-- [ ] Open the Opmerkingen of WVO 5628-5631, 9663, 9666 (Bergh, 1574-77) for a cipher or key mention; about 6 Huygens requests, ~$0.3.
-- [ ] Waanders 2022 table of contents (owner's desk or a library catalogue), ~$0.5.
+Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct 2026: K=41 provisional, err_2reader 0.10, err_true not measurable).
+- Whole letter, inventory - blocker: not-attempted; 72 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv, owner's sorter needs tiles first; next: `tools/glyph_atlas.py segment`/`cluster` on images/crops so `tools/sign_sorter.py --focus` can show them, ~$2
+- Whole letter, language - blocker: not-attempted; only French homophonic tested (control-backed negative, HYPOTHESES.md); next: homophonic family_run with de16 and a 16th-c. Dutch corpus (none on disk; build first), plus French at a merged inventory K about 33-35, ~$3
+- Whole letter, design - blocker: not-attempted; multi-sign (syllable/code) is the design prior's nearest class, untested; next: `family_run.py --family syllabary` with its control after the inventory is settled, ~$1
+- Year - blocker: not-attempted; the year 1572 is editorial; next: only once something reads, ~$0.3
+- Sibling Bergh letters - blocker: not-attempted; Opmerkingen of WVO 5628-5631, 9663, 9666 (Bergh, 1574-77) unopened; next: six Huygens requests for a cipher or key mention, ~$0.3
 
 ## Escalation
 
-Status `open` (not `partial`): nothing has been read. Verdict: keep going -- check-solved verdict `open`; next job is the transcription of page 2, then the first cheap test with its matched control, all inside this repository's own routes (images on disk, Huygens host).
+- [ ] siblings: WVO 5628-5631, 9663, 9666 Opmerkingen unopened (planned, ~$0.3).
+- [x] clear-pages: leaf p1-p3 viewed at native resolution, no gloss or clear copy (FAM-CS11106 Premise check (c)).
+- [x] known-keys: the Nassau keys key_1572.tsv and key_nepveu.tsv were dropped as a design mismatch by KH2-D; no Bergh key on file.
+- [x] print: Groen 1re serie, Gachard III-IV, Kervyn full text, Japikse out of range (FAM-CS11106); Waanders 2022 still unchecked.
+- [ ] key-rebuild: homophonic French K=41 control-backed negative; Dutch/German and merged-inventory runs planned.
+- [ ] image-check: tx/focus.tsv's 72 look-alike positions await an atlas and the owner's sorter.
+- [ ] retry: the syllabary/multi-sign family after the inventory is settled.
+Verdict: keep going: 5 internal gaps; cheapest next: WVO sibling Opmerkingen, ~$0.3, then the nl/de homophonic runs, ~$3
 
 ## While waiting
 
@@ -91,3 +99,86 @@ Prior work, check 1 re-run 17:26 UTC 8 Oct 2026 (checks 2-4 are FAM-CS11106's, a
 sources/ -> KEYHUNT-2026-10-07.tsv, keyhunt/2026-10-07-KH2D.tsv, research/FAMILY-POOLS-2026-10-08.md, research/n9xm/nulls.json, STATUS.md,
 LEDGER.md, this folder, the lane brief; last 1,500 ROOM.md lines: KH2-D lead, FAM-POOL, FAM-CS11106 claim + done, the lane's wave-3 line,
 this job's claim. No ciphertext.txt/tsv, HYPOTHESES.md or AUDIT.md in the folder; no live claim by another session. Result: not done.
+
+### Transcription (FAM-11106T)
+
+- Image: page 2 extracted once at native 300 ppi (`pdfimages -j -f 2 -l 2 images/11106.pdf p`, 2539x3819, not committed: regenerable,
+  `images/manifest.json` key `crops_p2`).
+- Crop command (pasted): `python3 tools/iiif_lines.py --image p-000.jpg --out images/crops --region 470,280,2050,2070 --prefix p2 --debug
+  --mask-neighbours --mask-margin 50 --mask-keep 0.2` -> 22 lines (pitch 90 px), centres 94 ... 1972. Overlay checked
+  (`images/crops/p2_lines_debug.jpg`): 22 text lines, one band each; the unmasked first cut (no `--mask-neighbours`) clipped descenders
+  (long s, g tails, crossed tails), and `--mask-keep 0.5` whitened this line's own long-tailed g and y on L10, so 0.2 was used. The
+  eye count of 23 lines in the check-solved section was one too many: there are 22 cipher lines, the last ending "A 19 Septembris".
+  (images/crops/manifest.json records the scratchpad source path; the crops themselves are committed.)
+- Provisional sign list drawn from the crops before any pass (tx/signlist.md, shapes only, no meanings).
+- Passes: two blind Sonnet passes per half (L01-L11, L12-L22; one call per half per pass, crop paths only; B read the lines in reverse
+  order). Files tx/A_h1.tsv, B_h1.tsv, A_h2.tsv, B_h2.tsv. Neither pass rated per sign: A wrote H everywhere, B wrote M everywhere, so
+  every agreed sign carries conf M (the lower) and the conf column says nothing per sign.
+- `tools/reconcile_passes.py`: L01-L11 agree 403/446 = 90.4%; L12-L22 346/387 = 89.4%; together 749/833 = 89.9%, so **err_2reader 0.10**
+  (84 split columns). **err_true not measurable: no benchmark item of this hand or key.**
+- Split classes (counts): d/dd 17, y/yx 10, s/S 7, g/G 4, g/q 4, s/5 3, n/u 3, g/y 3, z/2 2, g/9 2, the rest single or gap-vs-sign.
+  These are the provisional inventory's own look-alike distinctions: the split is over 1/10 and the inventory is unsettled.
+- `tools/lookalike_pass.py` was **not run**: its packet/windows/audit modes need a sign sheet image and sheet map of tile ids, and none
+  exists for this hand (no atlas). Building one is a separate job. Brief rule applied instead: no third pass; the reconciler (this worker)
+  settled 13 columns from the native crops (gap-vs-sign and count questions: `PICK` in tx/build_ciphertext.py), and the other **72
+  split columns go to tx/focus.tsv** (`sid` = line:column of the reconcile alignment, question names A's and B's label and the crop)
+  for the owner's sign sorter. Those 72 keep pass A's label, conf M. The sorter needs an atlas or tile cut before it can use them.
+- Output (regenerate and check: `python3 ciphers/wvo-11106-bergh-1572/tx/build_ciphertext.py --check`): ciphertext.tsv (per sign:
+  line, pos, sign, conf, kind cipher/struck/date, note), ciphertext.txt (one line per manuscript line), tx/ciphertext_oneline.txt,
+  tx/inventory.tsv. **820 cipher signs, 41 distinct labels**, plus 10 struck-through signs (L02 3, L04 2, L08 3, L20 2; kept with
+  kind=struck, left out of the cipher stream) and the clear date. Commonest: g 131, s 110, b 37, d 37, yx 36, m 35, t 31, B 28, u 28,
+  n 25, 3 25, r 25, p 24, o 24, 4 22. "st" and "ust" recur often (e.g. "Bust", "Aust", "Eust"), visible on the page.
+- If the look-alike pairs are the same sign, K falls toward about 33-35; if they are distinct, 41 stands. The family test below is
+  conditional on that.
+
+### Design prior (FAM-11106T, pasted)
+
+```
+$ python3 tools/design_prior.py ciphers/wvo-11106-bergh-1572/ciphertext.txt --no-write
+ciphers/wvo-11106-bergh-1572/ciphertext.txt: 820 tokens, 41 distinct, inventory letters
+  relabel-invariant statistics: True; references at this N: 208
+  multi-sign (homophonic/nomenclator/syllabary) d=0.21 envelope=0.38 null_p05=0.16 -> not above null
+  letter-for-letter      d=0.46 envelope=0.83 null_p05=0.88 -> plausible
+  mixed (partial table)  d=0.82 envelope=1.51 null_p05=0.91 -> plausible
+  code                   d=1.55 envelope=1.98 null_p05=2.11 -> plausible
+  shuffled-input false-positive rate: 0.045
+  fine family ranking (advisory, not calibrated): nomenclator=0.21; homophonic=0.31; alphabet substitution=0.46; syllabary=0.81; mixed=0.82; code numbers=1.55
+  nearest keys: colbert26-lathuillerie-1644 key_f23 (nomenclator, d=0.16, synthetic) || colbert26 key_f23_preDA1COL (d=0.19) || august-van-saksen-1561-64 key_98 (nomenclator, d=0.28)
+```
+Reading: letter-for-letter is the best-placed class that is above its null; the multi-sign class is nearest but a flattened text sits near
+the uniform null by design, so "not above null" does not exclude it (the tool's own docstring).
+
+### First family test (FAM-11106T; PREREG-FAM-11106T.md pushed 3dc2e7f25 before any score)
+
+masc could not be run: its control needs a plaintext window with exactly K=41 distinct letters, and folded French has at most 26. A
+letter-for-letter design at K=41 means homophones, so the test is `homophonic` with the target's own sign-count profile and noise 0.10
+injected into the control (= err_2reader, rule 3's bracket). Corpus fr = tools/data/fr16 (Catherine de Medicis letters, 1570s,
+era-matched, **one source file**, so per-fold reliability is unknown).
+
+```
+$ python3 tools/family_run.py specs/wvo-11106-bergh-1572.json --family homophonic --cipher ciphers/wvo-11106-bergh-1572/tx/ciphertext_oneline.txt \
+    --tokens space --seeds 3 --gate 0.6 --param profile=target --param noise=0.10 --measured-error 0.10 --label "FAM-11106T PREREG gate 1"
+CONTROL seed 1: N=820 K=39 recovery 0.660 score -2090.04
+CONTROL seed 2: N=820 K=40 recovery 0.856 score -2006.10
+CONTROL seed 3: N=820 K=39 recovery 0.332 score -2161.70
+TARGET best score -2201.288; judge: FAIL language: score=-1.332, null_p99=-1.867, real_p05=-0.876, real_median=-0.782, mode=both, N=820
+```
+Pre-registered result: control mean 0.616 meets the 0.6 gate; the target FAILs the judge. **Gate 2 applies: a control-backed negative for
+single-letter homophonic French at this transcription**, conditional on (a) the provisional inventory (72 unsettled look-alike
+positions), (b) French plaintext, (c) a control that only just meets its gate (one seed in three at 0.332: the anneal's opening is
+bimodal at this N and K).
+
+Exploratory, not pre-registered, same settings (rows in HYPOTHESES.md labelled so): target seed 2 FAIL -1.432 (anneal -2216.7, control
+0.856); seed 3's control 0.332 fell below the gate, so its target was not run; shuffled-target floor (`--shuffle-target 1`, seed 1)
+FAIL -1.457 (anneal -2333.7). So the target's judge scores (-1.33, -1.43) sit next to its own shuffled floor (-1.46) and far below
+real_p05 (-0.876). The anneal does fit the real order better than the shuffled one (-2201 vs -2334), which any text with structure would
+give (the repeated "st"/"ust" runs alone would), so it is not a sign of French. The target's best anneal score is also worse than every
+control seed's, the failed seed included.
+Not tested: Dutch or German plaintext (the sender's own languages; only the closing and the address are French), a merged inventory
+(look-alike pairs as one sign, K about 33-35), and a multi-sign design with syllables or code words (the design prior's nearest class).
+
+### FAM-11106T requests and spend
+
+0 network requests (the PDF was on disk). Four Sonnet vision subagent calls (one per half per pass), one reconciler pass over 7 native
+crops by this worker, four family_run.py runs (about 2 minutes of CPU). Report what was found and where it was not found; novelty is not
+classified here (rule 10). Next for the lane: see Escalation.

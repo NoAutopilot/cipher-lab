@@ -1,0 +1,832 @@
+line	pos	sign	conf	kind	note
+L01	1	B	M	cipher	2-reader agree
+L01	2	e	M	cipher	2-reader agree
+L01	3	S	M	cipher	2-reader agree
+L01	4	s	M	cipher	split A=s B=-; A kept pending sorter
+L01	5	p	M	cipher	2-reader agree
+L01	6	g	M	cipher	2-reader agree
+L01	7	dd	M	cipher	split A=dd B=d; A kept pending sorter
+L01	8	o	M	cipher	2-reader agree
+L01	9	g	M	cipher	split A=g B=-; A kept pending sorter
+L01	10	7	M	cipher	2-reader agree
+L01	11	yx	M	cipher	2-reader agree
+L01	12	g	M	cipher	2-reader agree
+L01	13	z	M	cipher	split A=z B=2; A kept pending sorter
+L01	14	m	M	cipher	2-reader agree
+L01	15	dd	M	cipher	split A=dd B=d; A kept pending sorter
+L01	16	l	M	cipher	2-reader agree
+L01	17	G	M	cipher	2-reader agree
+L01	18	p	M	cipher	2-reader agree
+L01	19	b	M	cipher	2-reader agree
+L01	20	m	M	cipher	2-reader agree
+L01	21	n	M	cipher	split A=n B=-; A kept pending sorter
+L01	22	s	M	cipher	2-reader agree
+L01	23	s	M	cipher	2-reader agree
+L01	24	t	M	cipher	2-reader agree
+L01	25	f	M	cipher	2-reader agree
+L01	26	g	M	cipher	2-reader agree
+L01	27	3	M	cipher	2-reader agree
+L01	28	m	M	cipher	2-reader agree
+L01	29	b	M	cipher	2-reader agree
+L01	30	y	M	cipher	2-reader agree
+L01	31	g	M	cipher	2-reader agree
+L01	32	s	M	cipher	2-reader agree
+L01	33	m	M	cipher	2-reader agree
+L01	34	n	M	cipher	2-reader agree
+L01	35	C	M	cipher	2-reader agree
+L01	36	S	M	cipher	2-reader agree
+L01	37	3	M	cipher	2-reader agree
+L01	38	g	M	cipher	2-reader agree
+L01	39	r	M	cipher	2-reader agree
+L01	40	c	M	cipher	2-reader agree
+L01	41	2	M	cipher	2-reader agree
+L01	42	s	M	cipher	2-reader agree
+L01	43	k	M	cipher	2-reader agree
+L01	44	k	M	cipher	2-reader agree
+L01	45	g	M	cipher	2-reader agree
+L01	46	s	M	cipher	2-reader agree
+L01	47	s	M	cipher	2-reader agree
+L02	1	u	M	cipher	2-reader agree
+L02	2	s	M	cipher	2-reader agree
+L02	3	t	M	cipher	2-reader agree
+L02	4	g	M	cipher	2-reader agree
+L02	5	g	M	cipher	2-reader agree
+L02	6	s	M	cipher	2-reader agree
+L02	7	7	M	cipher	2-reader agree
+L02	8	G	M	cipher	2-reader agree
+L02	9	3	M	cipher	2-reader agree
+L02	10	g	M	cipher	2-reader agree
+L02	11	3	M	cipher	2-reader agree
+L02	12	yx	M	cipher	2-reader agree
+L02	13	h~	M	struck	2-reader agree
+L02	14	y~	M	struck	split A=- B=y~; A kept pending sorter
+L02	15	r~	M	struck	2-reader agree
+L02	16	3	M	cipher	2-reader agree
+L02	17	5	M	cipher	split A=s B=5; reconciler pick from crop
+L02	18	g	M	cipher	2-reader agree
+L02	19	n	M	cipher	2-reader agree
+L02	20	l	M	cipher	split A=- B=l; A kept pending sorter
+L02	21	A	M	cipher	2-reader agree
+L02	22	m	M	cipher	2-reader agree
+L02	23	s	M	cipher	2-reader agree
+L02	24	S	M	cipher	2-reader agree
+L02	25	r	M	cipher	2-reader agree
+L02	26	dd	M	cipher	2-reader agree
+L02	27	o	M	cipher	2-reader agree
+L02	28	b	M	cipher	2-reader agree
+L02	29	7	M	cipher	2-reader agree
+L02	30	p	M	cipher	2-reader agree
+L02	31	yx	M	cipher	2-reader agree
+L02	32	g	M	cipher	2-reader agree
+L02	33	3	M	cipher	2-reader agree
+L02	34	4	M	cipher	2-reader agree
+L02	35	z	M	cipher	split A=z B=2; reconciler pick from crop
+L02	36	g	M	cipher	2-reader agree
+L02	37	D	M	cipher	2-reader agree
+L02	38	p	M	cipher	2-reader agree
+L02	39	m	M	cipher	2-reader agree
+L02	40	h	M	cipher	2-reader agree
+L02	41	b	M	cipher	2-reader agree
+L02	42	n	M	cipher	2-reader agree
+L02	43	s	M	cipher	2-reader agree
+L02	44	t	M	cipher	2-reader agree
+L03	1	g	M	cipher	2-reader agree
+L03	2	m	M	cipher	2-reader agree
+L03	3	p	M	cipher	2-reader agree
+L03	4	p	M	cipher	2-reader agree
+L03	5	g	M	cipher	2-reader agree
+L03	6	g	M	cipher	2-reader agree
+L03	7	B	M	cipher	2-reader agree
+L03	8	E	M	cipher	2-reader agree
+L03	9	7	M	cipher	2-reader agree
+L03	10	2	M	cipher	2-reader agree
+L03	11	s	M	cipher	split A=s B=5; A kept pending sorter
+L03	12	g	M	cipher	2-reader agree
+L03	13	g	M	cipher	2-reader agree
+L03	14	g	M	cipher	2-reader agree
+L03	15	S	M	cipher	2-reader agree
+L03	16	E	M	cipher	2-reader agree
+L03	17	s	M	cipher	split A=s B=S; A kept pending sorter
+L03	18	g	M	cipher	2-reader agree
+L03	19	4	M	cipher	2-reader agree
+L03	20	D	M	cipher	2-reader agree
+L03	21	l	M	cipher	2-reader agree
+L03	22	g	M	cipher	2-reader agree
+L03	23	b	M	cipher	2-reader agree
+L03	24	g	M	cipher	2-reader agree
+L03	25	X	M	cipher	2-reader agree
+L03	26	s	M	cipher	2-reader agree
+L03	27	dd	M	cipher	2-reader agree
+L03	28	g	M	cipher	2-reader agree
+L03	29	r	M	cipher	2-reader agree
+L03	30	3	M	cipher	2-reader agree
+L03	31	g	M	cipher	2-reader agree
+L03	32	m	M	cipher	2-reader agree
+L03	33	k	M	cipher	2-reader agree
+L03	34	r	M	cipher	2-reader agree
+L03	35	g	M	cipher	2-reader agree
+L03	36	3	M	cipher	2-reader agree
+L03	37	A	M	cipher	2-reader agree
+L03	38	o	M	cipher	2-reader agree
+L03	39	s	M	cipher	2-reader agree
+L03	40	n	M	cipher	split A=n B=u; A kept pending sorter
+L03	41	yx	M	cipher	2-reader agree
+L04	1	4	M	cipher	2-reader agree
+L04	2	m	M	cipher	2-reader agree
+L04	3	g	M	cipher	2-reader agree
+L04	4	4	M	cipher	2-reader agree
+L04	5	s	M	cipher	split A=s B=S; A kept pending sorter
+L04	6	r	M	cipher	2-reader agree
+L04	7	3	M	cipher	2-reader agree
+L04	8	E	M	cipher	2-reader agree
+L04	9	G~	M	struck	2-reader agree
+L04	10	h~	M	struck	split A=h~ B=5~; A kept pending sorter
+L04	11	s	M	cipher	split A=s B=l; A kept pending sorter
+L04	12	d	M	cipher	2-reader agree
+L04	13	s	M	cipher	2-reader agree
+L04	14	G	M	cipher	split A=G B=g; A kept pending sorter
+L04	15	f	M	cipher	2-reader agree
+L04	16	s	M	cipher	2-reader agree
+L04	17	d	M	cipher	2-reader agree
+L04	18	yx	M	cipher	2-reader agree
+L04	19	6	M	cipher	2-reader agree
+L04	20	s	M	cipher	2-reader agree
+L04	21	A	M	cipher	2-reader agree
+L04	22	h	M	cipher	2-reader agree
+L04	23	b	M	cipher	2-reader agree
+L04	24	o	M	cipher	2-reader agree
+L04	25	g	M	cipher	2-reader agree
+L04	26	r	M	cipher	2-reader agree
+L04	27	c	M	cipher	2-reader agree
+L04	28	o	M	cipher	2-reader agree
+L04	29	s	M	cipher	split A=s B=S; A kept pending sorter
+L04	30	z	M	cipher	2-reader agree
+L04	31	d	M	cipher	split A=d B=-; A kept pending sorter
+L04	32	l	M	cipher	2-reader agree
+L04	33	dd	M	cipher	2-reader agree
+L04	34	s	M	cipher	2-reader agree
+L04	35	n	M	cipher	split A=n B=u; A kept pending sorter
+L04	36	p	M	cipher	2-reader agree
+L04	37	B	M	cipher	2-reader agree
+L04	38	g	M	cipher	2-reader agree
+L04	39	r	M	cipher	2-reader agree
+L04	40	dd	M	cipher	2-reader agree
+L05	1	E	M	cipher	2-reader agree
+L05	2	o	M	cipher	2-reader agree
+L05	3	s	M	cipher	2-reader agree
+L05	4	g	M	cipher	2-reader agree
+L05	5	s	M	cipher	2-reader agree
+L05	6	g	M	cipher	2-reader agree
+L05	7	p	M	cipher	2-reader agree
+L05	8	s	M	cipher	2-reader agree
+L05	9	m	M	cipher	2-reader agree
+L05	10	B	M	cipher	2-reader agree
+L05	11	g	M	cipher	2-reader agree
+L05	12	o	M	cipher	2-reader agree
+L05	13	i	M	cipher	2-reader agree
+L05	14	c	M	cipher	2-reader agree
+L05	15	m	M	cipher	2-reader agree
+L05	16	g	M	cipher	2-reader agree
+L05	17	r	M	cipher	2-reader agree
+L05	18	yx	M	cipher	2-reader agree
+L05	19	s	M	cipher	2-reader agree
+L05	20	t	M	cipher	2-reader agree
+L05	21	f	M	cipher	2-reader agree
+L05	22	g	M	cipher	2-reader agree
+L05	23	d	M	cipher	2-reader agree
+L05	24	g	M	cipher	2-reader agree
+L05	25	o	M	cipher	2-reader agree
+L05	26	s	M	cipher	2-reader agree
+L05	27	G	M	cipher	2-reader agree
+L05	28	m	M	cipher	2-reader agree
+L05	29	p	M	cipher	2-reader agree
+L05	30	yx	M	cipher	split A=yx B=y; A kept pending sorter
+L05	31	t	M	cipher	2-reader agree
+L05	32	B	M	cipher	2-reader agree
+L05	33	l	M	cipher	2-reader agree
+L05	34	b	M	cipher	2-reader agree
+L05	35	s	M	cipher	2-reader agree
+L05	36	t	M	cipher	2-reader agree
+L05	37	yx	M	cipher	2-reader agree
+L06	1	B	M	cipher	2-reader agree
+L06	2	i	M	cipher	2-reader agree
+L06	3	yx	M	cipher	split A=yx B=y; A kept pending sorter
+L06	4	g	M	cipher	2-reader agree
+L06	5	f	M	cipher	2-reader agree
+L06	6	s	M	cipher	2-reader agree
+L06	7	g	M	cipher	2-reader agree
+L06	8	s	M	cipher	2-reader agree
+L06	9	dd	M	cipher	2-reader agree
+L06	10	l	M	cipher	2-reader agree
+L06	11	s	M	cipher	2-reader agree
+L06	12	m	M	cipher	2-reader agree
+L06	13	d	M	cipher	2-reader agree
+L06	14	4	M	cipher	2-reader agree
+L06	15	G	M	cipher	2-reader agree
+L06	16	7	M	cipher	2-reader agree
+L06	17	s	M	cipher	2-reader agree
+L06	18	g	M	cipher	2-reader agree
+L06	19	n	M	cipher	2-reader agree
+L06	20	E	M	cipher	2-reader agree
+L06	21	u	M	cipher	2-reader agree
+L06	22	y	M	cipher	2-reader agree
+L06	23	s	M	cipher	2-reader agree
+L06	24	t	M	cipher	2-reader agree
+L06	25	d	M	cipher	split A=d B=dd; A kept pending sorter
+L06	26	l	M	cipher	2-reader agree
+L06	27	g	M	cipher	2-reader agree
+L06	28	s	M	cipher	2-reader agree
+L06	29	b	M	cipher	2-reader agree
+L06	30	s	M	cipher	2-reader agree
+L06	31	7	M	cipher	2-reader agree
+L06	32	G	M	cipher	split A=G B=g; A kept pending sorter
+L06	33	o	M	cipher	2-reader agree
+L06	34	e	M	cipher	2-reader agree
+L06	35	s	M	cipher	2-reader agree
+L06	36	p	M	cipher	2-reader agree
+L06	37	B	M	cipher	2-reader agree
+L06	38	o	M	cipher	2-reader agree
+L06	39	e	M	cipher	2-reader agree
+L07	1	s	M	cipher	2-reader agree
+L07	2	t	M	cipher	2-reader agree
+L07	3	3	M	cipher	2-reader agree
+L07	4	yx	M	cipher	2-reader agree
+L07	5	3	M	cipher	2-reader agree
+L07	6	r	M	cipher	2-reader agree
+L07	7	p	M	cipher	2-reader agree
+L07	8	g	M	cipher	2-reader agree
+L07	9	E	M	cipher	2-reader agree
+L07	10	l	M	cipher	2-reader agree
+L07	11	g	M	cipher	2-reader agree
+L07	12	b	M	cipher	2-reader agree
+L07	13	d	M	cipher	2-reader agree
+L07	14	X	M	cipher	2-reader agree
+L07	15	G	M	cipher	2-reader agree
+L07	16	yx	M	cipher	2-reader agree
+L07	17	3	M	cipher	2-reader agree
+L07	18	g	M	cipher	2-reader agree
+L07	19	dd	M	cipher	2-reader agree
+L07	20	4	M	cipher	2-reader agree
+L07	21	h	M	cipher	2-reader agree
+L07	22	m	M	cipher	2-reader agree
+L07	23	p	M	cipher	2-reader agree
+L07	24	b	M	cipher	2-reader agree
+L07	25	4	M	cipher	2-reader agree
+L07	26	b	M	cipher	2-reader agree
+L07	27	s	M	cipher	2-reader agree
+L07	28	g	M	cipher	2-reader agree
+L07	29	p	M	cipher	2-reader agree
+L07	30	A	M	cipher	2-reader agree
+L07	31	u	M	cipher	2-reader agree
+L07	32	s	M	cipher	2-reader agree
+L07	33	t	M	cipher	2-reader agree
+L07	34	f	M	cipher	2-reader agree
+L07	35	g	M	cipher	2-reader agree
+L07	36	dd	M	cipher	2-reader agree
+L07	37	u	M	cipher	2-reader agree
+L07	38	e	M	cipher	2-reader agree
+L08	1	S	M	cipher	2-reader agree
+L08	2	s	M	cipher	2-reader agree
+L08	3	k	M	cipher	2-reader agree
+L08	4	d	M	cipher	2-reader agree
+L08	5	g	M	cipher	split A=g B=y; reconciler pick from crop
+L08	6	n	M	cipher	2-reader agree
+L08	7	C	M	cipher	2-reader agree
+L08	8	e	M	cipher	2-reader agree
+L08	9	o	M	cipher	2-reader agree
+L08	10	s	M	cipher	2-reader agree
+L08	11	t	M	cipher	2-reader agree
+L08	12	g	M	cipher	2-reader agree
+L08	13	r	M	cipher	2-reader agree
+L08	14	D	M	cipher	2-reader agree
+L08	15	k	M	cipher	2-reader agree
+L08	16	d	M	cipher	2-reader agree
+L08	17	g	M	cipher	split A=g B=y; reconciler pick from crop
+L08	18	n	M	cipher	2-reader agree
+L08	19	A	M	cipher	2-reader agree
+L08	20	y	M	cipher	2-reader agree
+L08	21	u	M	cipher	2-reader agree
+L08	22	s	M	cipher	2-reader agree
+L08	23	t	M	cipher	2-reader agree
+L08	24	e	M	cipher	2-reader agree
+L08	25	m	M	cipher	2-reader agree
+L08	26	g	M	cipher	2-reader agree
+L08	27	dd	M	cipher	2-reader agree
+L08	28	k~	M	struck	split A=- B=k~; A kept pending sorter
+L08	29	h~	M	struck	2-reader agree
+L08	30	k~	M	struck	split A=k~ B=e~; A kept pending sorter
+L08	31	f	M	cipher	2-reader agree
+L08	32	u	M	cipher	2-reader agree
+L08	33	c	M	cipher	split A=e B=c; reconciler pick from crop
+L08	34	s	M	cipher	2-reader agree
+L08	35	t	M	cipher	2-reader agree
+L08	36	3	M	cipher	2-reader agree
+L08	37	g	M	cipher	split A=g B=9; A kept pending sorter
+L08	38	m	M	cipher	2-reader agree
+L08	39	o	M	cipher	2-reader agree
+L08	40	s	M	cipher	2-reader agree
+L08	41	D	M	cipher	2-reader agree
+L09	1	s	M	cipher	2-reader agree
+L09	2	t	M	cipher	2-reader agree
+L09	3	e	M	cipher	2-reader agree
+L09	4	d	M	cipher	split A=d B=dd; A kept pending sorter
+L09	5	g	M	cipher	2-reader agree
+L09	6	B	M	cipher	2-reader agree
+L09	7	l	M	cipher	2-reader agree
+L09	8	g	M	cipher	2-reader agree
+L09	9	g	M	cipher	2-reader agree
+L09	10	g	M	cipher	2-reader agree
+L09	11	h	M	cipher	2-reader agree
+L09	12	g	M	cipher	2-reader agree
+L09	13	n	M	cipher	2-reader agree
+L09	14	A	M	cipher	2-reader agree
+L09	15	e	M	cipher	2-reader agree
+L09	16	p	M	cipher	2-reader agree
+L09	17	g	M	cipher	2-reader agree
+L09	18	u	M	cipher	2-reader agree
+L09	19	g	M	cipher	split A=g B=e; A kept pending sorter
+L09	20	f	M	cipher	2-reader agree
+L09	21	b	M	cipher	2-reader agree
+L09	22	s	M	cipher	2-reader agree
+L09	23	g	M	cipher	2-reader agree
+L09	24	s	M	cipher	2-reader agree
+L09	25	y	M	cipher	split A=y B=-; A kept pending sorter
+L09	26	yx	M	cipher	2-reader agree
+L09	27	X	M	cipher	2-reader agree
+L09	28	s	M	cipher	2-reader agree
+L09	29	g	M	cipher	2-reader agree
+L09	30	E	M	cipher	2-reader agree
+L09	31	dd	M	cipher	2-reader agree
+L09	32	b	M	cipher	2-reader agree
+L09	33	s	M	cipher	2-reader agree
+L09	34	y	M	cipher	split A=y B=yx; A kept pending sorter
+L09	35	l	M	cipher	2-reader agree
+L09	36	t	M	cipher	2-reader agree
+L09	37	s	M	cipher	2-reader agree
+L09	38	m	M	cipher	2-reader agree
+L09	39	3	M	cipher	2-reader agree
+L09	40	d	M	cipher	split A=d B=dd; A kept pending sorter
+L09	41	u	M	cipher	2-reader agree
+L10	1	sz	M	cipher	split A=sz B=S; A kept pending sorter
+L10	2	u	M	cipher	2-reader agree
+L10	3	d	M	cipher	2-reader agree
+L10	4	s	M	cipher	2-reader agree
+L10	5	G	M	cipher	split A=G B=g; A kept pending sorter
+L10	6	dd	M	cipher	2-reader agree
+L10	7	s	M	cipher	split A=s B=S; A kept pending sorter
+L10	8	r	M	cipher	2-reader agree
+L10	9	4	M	cipher	2-reader agree
+L10	10	g	M	cipher	2-reader agree
+L10	11	B	M	cipher	2-reader agree
+L10	12	b	M	cipher	2-reader agree
+L10	13	h	M	cipher	2-reader agree
+L10	14	n	M	cipher	2-reader agree
+L10	15	p	M	cipher	2-reader agree
+L10	16	s	M	cipher	2-reader agree
+L10	17	t	M	cipher	2-reader agree
+L10	18	g	M	cipher	2-reader agree
+L10	19	4	M	cipher	2-reader agree
+L10	20	y	M	cipher	split A=y B=yx; A kept pending sorter
+L10	21	n	M	cipher	2-reader agree
+L10	22	b	M	cipher	2-reader agree
+L10	23	s	M	cipher	2-reader agree
+L10	24	g	M	cipher	2-reader agree
+L10	25	m	M	cipher	2-reader agree
+L10	26	B	M	cipher	2-reader agree
+L10	27	E	M	cipher	2-reader agree
+L10	28	u	M	cipher	2-reader agree
+L10	29	f	M	cipher	2-reader agree
+L10	30	g	M	cipher	2-reader agree
+L10	31	A	M	cipher	2-reader agree
+L10	32	g	M	cipher	2-reader agree
+L10	33	s	M	cipher	2-reader agree
+L10	34	s	M	cipher	2-reader agree
+L10	35	m	M	cipher	2-reader agree
+L10	36	f	M	cipher	2-reader agree
+L10	37	h	M	cipher	2-reader agree
+L10	38	m	M	cipher	2-reader agree
+L11	1	f	M	cipher	2-reader agree
+L11	2	p	M	cipher	2-reader agree
+L11	3	s	M	cipher	2-reader agree
+L11	4	m	M	cipher	2-reader agree
+L11	5	E	M	cipher	2-reader agree
+L11	6	y	M	cipher	split A=y B=yx; A kept pending sorter
+L11	7	s	M	cipher	split A=s B=S; A kept pending sorter
+L11	8	r	M	cipher	2-reader agree
+L11	9	4	M	cipher	2-reader agree
+L11	10	dd	M	cipher	2-reader agree
+L11	11	8	M	cipher	2-reader agree
+L11	12	b	M	cipher	2-reader agree
+L11	13	s	M	cipher	2-reader agree
+L11	14	g	M	cipher	2-reader agree
+L11	15	G	M	cipher	2-reader agree
+L11	16	yx	M	cipher	2-reader agree
+L11	17	b	M	cipher	2-reader agree
+L11	18	dd	M	cipher	2-reader agree
+L11	19	d	M	cipher	split A=- B=d; A kept pending sorter
+L11	20	b	M	cipher	2-reader agree
+L11	21	s	M	cipher	2-reader agree
+L11	22	m	M	cipher	2-reader agree
+L11	23	2	M	cipher	2-reader agree
+L11	24	g	M	cipher	2-reader agree
+L11	25	yx	M	cipher	2-reader agree
+L11	26	B	M	cipher	2-reader agree
+L11	27	u	M	cipher	2-reader agree
+L11	28	e	M	cipher	2-reader agree
+L11	29	o	M	cipher	2-reader agree
+L11	30	g	M	cipher	2-reader agree
+L11	31	g	M	cipher	2-reader agree
+L11	32	e	M	cipher	2-reader agree
+L11	33	yx	M	cipher	2-reader agree
+L11	34	c	M	cipher	2-reader agree
+L11	35	s	M	cipher	split A=s B=S; A kept pending sorter
+L11	36	r	M	cipher	2-reader agree
+L11	37	r	M	cipher	2-reader agree
+L11	38	g	M	cipher	2-reader agree
+L11	39	s	M	cipher	2-reader agree
+L11	40	t	M	cipher	2-reader agree
+L12	1	e	M	cipher	2-reader agree
+L12	2	u	M	cipher	2-reader agree
+L12	3	g	M	cipher	2-reader agree
+L12	4	g	M	cipher	2-reader agree
+L12	5	o2	M	cipher	2-reader agree
+L12	6	f	M	cipher	2-reader agree
+L12	7	h	M	cipher	2-reader agree
+L12	8	g	M	cipher	2-reader agree
+L12	9	b	M	cipher	2-reader agree
+L12	10	p	M	cipher	2-reader agree
+L12	11	b	M	cipher	2-reader agree
+L12	12	h	M	cipher	2-reader agree
+L12	13	g	M	cipher	2-reader agree
+L12	14	A	M	cipher	2-reader agree
+L12	15	yx	M	cipher	2-reader agree
+L12	16	m	M	cipher	2-reader agree
+L12	17	g	M	cipher	2-reader agree
+L12	18	g	M	cipher	2-reader agree
+L12	19	o	M	cipher	2-reader agree
+L12	20	s	M	cipher	2-reader agree
+L12	21	n	M	cipher	2-reader agree
+L12	22	b	M	cipher	2-reader agree
+L12	23	m	M	cipher	2-reader agree
+L12	24	s	M	cipher	2-reader agree
+L12	25	B	M	cipher	2-reader agree
+L12	26	e	M	cipher	2-reader agree
+L12	27	u	M	cipher	2-reader agree
+L12	28	s	M	cipher	2-reader agree
+L12	29	t	M	cipher	2-reader agree
+L12	30	g	M	cipher	2-reader agree
+L12	31	r	M	cipher	2-reader agree
+L12	32	4	M	cipher	2-reader agree
+L12	33	g	M	cipher	2-reader agree
+L12	34	r	M	cipher	2-reader agree
+L12	35	f	M	cipher	2-reader agree
+L12	36	z	M	cipher	2-reader agree
+L12	37	g	M	cipher	2-reader agree
+L12	38	g	M	cipher	2-reader agree
+L12	39	u	M	cipher	2-reader agree
+L13	1	S	M	cipher	2-reader agree
+L13	2	s	M	cipher	2-reader agree
+L13	3	e	M	cipher	2-reader agree
+L13	4	u	M	cipher	2-reader agree
+L13	5	s	M	cipher	2-reader agree
+L13	6	t	M	cipher	2-reader agree
+L13	7	o2	M	cipher	split A=o2 B=o; A kept pending sorter
+L13	8	s	M	cipher	2-reader agree
+L13	9	n	M	cipher	2-reader agree
+L13	10	B	M	cipher	2-reader agree
+L13	11	b	M	cipher	2-reader agree
+L13	12	h	M	cipher	split A=- B=h; reconciler pick from crop
+L13	13	h	M	cipher	2-reader agree
+L13	14	h	M	cipher	2-reader agree
+L13	15	b	M	cipher	2-reader agree
+L13	16	m	M	cipher	2-reader agree
+L13	17	2	M	cipher	2-reader agree
+L13	18	g	M	cipher	2-reader agree
+L13	19	3	M	cipher	2-reader agree
+L13	20	d	M	cipher	split A=d B=dd; A kept pending sorter
+L13	21	yx	M	cipher	2-reader agree
+L13	22	o	M	cipher	2-reader agree
+L13	23	5	M	cipher	split A=5 B=s; A kept pending sorter
+L13	24	E	M	cipher	2-reader agree
+L13	25	s	M	cipher	2-reader agree
+L13	26	S	M	cipher	2-reader agree
+L13	27	4	M	cipher	2-reader agree
+L13	28	2	M	cipher	2-reader agree
+L13	29	g	M	cipher	2-reader agree
+L13	30	g	M	cipher	2-reader agree
+L13	31	u	M	cipher	split A=u B=n; reconciler pick from crop
+L13	32	s	M	cipher	2-reader agree
+L13	33	b	M	cipher	2-reader agree
+L13	34	3	M	cipher	2-reader agree
+L13	35	g	M	cipher	2-reader agree
+L13	36	s	M	cipher	2-reader agree
+L13	37	g	M	cipher	2-reader agree
+L13	38	m	M	cipher	2-reader agree
+L13	39	b	M	cipher	2-reader agree
+L13	40	s	M	cipher	2-reader agree
+L13	41	t	M	cipher	split A=t~ B=X; reconciler pick from crop
+L14	1	E	M	cipher	2-reader agree
+L14	2	yx	M	cipher	split A=yx B=y; A kept pending sorter
+L14	3	g	M	cipher	2-reader agree
+L14	4	4	M	cipher	2-reader agree
+L14	5	g	M	cipher	2-reader agree
+L14	6	o	M	cipher	2-reader agree
+L14	7	s	M	cipher	2-reader agree
+L14	8	d	M	cipher	split A=d B=dd; A kept pending sorter
+L14	9	yx	M	cipher	2-reader agree
+L14	10	h	M	cipher	2-reader agree
+L14	11	z	M	cipher	2-reader agree
+L14	12	b	M	cipher	2-reader agree
+L14	13	r	M	cipher	2-reader agree
+L14	14	d	M	cipher	2-reader agree
+L14	15	g	M	cipher	2-reader agree
+L14	16	B	M	cipher	2-reader agree
+L14	17	e	M	cipher	2-reader agree
+L14	18	u	M	cipher	2-reader agree
+L14	19	g	M	cipher	2-reader agree
+L14	20	o	M	cipher	2-reader agree
+L14	21	h	M	cipher	2-reader agree
+L14	22	g	M	cipher	2-reader agree
+L14	23	p	M	cipher	2-reader agree
+L14	24	d	M	cipher	split A=d B=dd; A kept pending sorter
+L14	25	yx	M	cipher	2-reader agree
+L14	26	E	M	cipher	2-reader agree
+L14	27	b	M	cipher	2-reader agree
+L14	28	S	M	cipher	2-reader agree
+L14	29	r	M	cipher	2-reader agree
+L14	30	3	M	cipher	2-reader agree
+L14	31	B	M	cipher	2-reader agree
+L14	32	a	M	cipher	2-reader agree
+L14	33	yx	M	cipher	split A=yx B=y; A kept pending sorter
+L14	34	n	M	cipher	2-reader agree
+L14	35	b	M	cipher	2-reader agree
+L14	36	s	M	cipher	2-reader agree
+L14	37	t	M	cipher	2-reader agree
+L15	1	s	M	cipher	2-reader agree
+L15	2	t	M	cipher	2-reader agree
+L15	3	e	M	cipher	2-reader agree
+L15	4	sz	M	cipher	2-reader agree
+L15	5	4	M	cipher	2-reader agree
+L15	6	2	M	cipher	2-reader agree
+L15	7	m	M	cipher	2-reader agree
+L15	8	3	M	cipher	2-reader agree
+L15	9	4	M	cipher	2-reader agree
+L15	10	g	M	cipher	2-reader agree
+L15	11	3	M	cipher	2-reader agree
+L15	12	E	M	cipher	2-reader agree
+L15	13	u	M	cipher	2-reader agree
+L15	14	s	M	cipher	2-reader agree
+L15	15	t	M	cipher	2-reader agree
+L15	16	g	M	cipher	2-reader agree
+L15	17	h	M	cipher	2-reader agree
+L15	18	g	M	cipher	2-reader agree
+L15	19	q	M	cipher	split A=- B=q; A kept pending sorter
+L15	20	s	M	cipher	2-reader agree
+L15	21	dd	M	cipher	2-reader agree
+L15	22	d	M	cipher	2-reader agree
+L15	23	s	M	cipher	2-reader agree
+L15	24	n	M	cipher	2-reader agree
+L15	25	B	M	cipher	2-reader agree
+L15	26	y	M	cipher	2-reader agree
+L15	27	s	M	cipher	2-reader agree
+L15	28	t	M	cipher	2-reader agree
+L15	29	3	M	cipher	2-reader agree
+L15	30	m	M	cipher	2-reader agree
+L15	31	g	M	cipher	2-reader agree
+L15	32	d	M	cipher	2-reader agree
+L15	33	s	M	cipher	2-reader agree
+L15	34	d	M	cipher	split A=d B=dd; A kept pending sorter
+L15	35	yx	M	cipher	2-reader agree
+L16	1	B	M	cipher	2-reader agree
+L16	2	y	M	cipher	2-reader agree
+L16	3	sz	M	cipher	2-reader agree
+L16	4	3	M	cipher	2-reader agree
+L16	5	m	M	cipher	2-reader agree
+L16	6	g	M	cipher	2-reader agree
+L16	7	5	M	cipher	2-reader agree
+L16	8	2	M	cipher	2-reader agree
+L16	9	d	M	cipher	split A=d B=dd; A kept pending sorter
+L16	10	o	M	cipher	2-reader agree
+L16	11	s	M	cipher	2-reader agree
+L16	12	yx	M	cipher	2-reader agree
+L16	13	p	M	cipher	2-reader agree
+L16	14	s	M	cipher	2-reader agree
+L16	15	g	M	cipher	2-reader agree
+L16	16	g	M	cipher	2-reader agree
+L16	17	g	M	cipher	2-reader agree
+L16	18	B	M	cipher	2-reader agree
+L16	19	f	M	cipher	2-reader agree
+L16	20	s	M	cipher	2-reader agree
+L16	21	g	M	cipher	split A=g B=q; A kept pending sorter
+L16	22	n	M	cipher	2-reader agree
+L16	23	p	M	cipher	2-reader agree
+L16	24	E	M	cipher	2-reader agree
+L16	25	yx	M	cipher	split A=yx B=y; A kept pending sorter
+L16	26	h	M	cipher	2-reader agree
+L16	27	b	M	cipher	2-reader agree
+L16	28	m	M	cipher	2-reader agree
+L16	29	d	M	cipher	2-reader agree
+L16	30	4	M	cipher	2-reader agree
+L16	31	d	M	cipher	2-reader agree
+L16	32	u	M	cipher	2-reader agree
+L16	33	g	M	cipher	2-reader agree
+L17	1	s	M	cipher	2-reader agree
+L17	2	g	M	cipher	split A=g B=q; A kept pending sorter
+L17	3	p	M	cipher	2-reader agree
+L17	4	s	M	cipher	2-reader agree
+L17	5	g	M	cipher	2-reader agree
+L17	6	o	M	cipher	2-reader agree
+L17	7	m	M	cipher	2-reader agree
+L17	8	s	M	cipher	2-reader agree
+L17	9	yx	M	cipher	split A=yx B=y; A kept pending sorter
+L17	10	3	M	cipher	2-reader agree
+L17	11	s	M	cipher	2-reader agree
+L17	12	r	M	cipher	2-reader agree
+L17	13	d	M	cipher	split A=d B=dd; A kept pending sorter
+L17	14	s	M	cipher	2-reader agree
+L17	15	g	M	cipher	split A=g B=q; A kept pending sorter
+L17	16	p	M	cipher	2-reader agree
+L17	17	m	M	cipher	2-reader agree
+L17	18	s	M	cipher	2-reader agree
+L17	19	k	M	cipher	2-reader agree
+L17	20	m	M	cipher	2-reader agree
+L17	21	b	M	cipher	2-reader agree
+L17	22	g	M	cipher	2-reader agree
+L17	23	n	M	cipher	2-reader agree
+L17	24	s	M	cipher	2-reader agree
+L17	25	B	M	cipher	2-reader agree
+L17	26	r	M	cipher	split A=- B=r; A kept pending sorter
+L17	27	e	M	cipher	2-reader agree
+L17	28	u	M	cipher	2-reader agree
+L17	29	d	M	cipher	2-reader agree
+L17	30	f	M	cipher	2-reader agree
+L17	31	b	M	cipher	2-reader agree
+L17	32	g	M	cipher	2-reader agree
+L17	33	3	M	cipher	2-reader agree
+L17	34	g	M	cipher	2-reader agree
+L17	35	2	M	cipher	2-reader agree
+L17	36	f	M	cipher	2-reader agree
+L17	37	b	M	cipher	2-reader agree
+L18	1	g	M	cipher	split A=g B=q; A kept pending sorter
+L18	2	d	M	cipher	split A=d B=dd; A kept pending sorter
+L18	3	yx	M	cipher	split A=yx B=f; A kept pending sorter
+L18	4	b	M	cipher	2-reader agree
+L18	5	s	M	cipher	2-reader agree
+L18	6	B	M	cipher	2-reader agree
+L18	7	8	M	cipher	2-reader agree
+L18	8	d	M	cipher	split A=d B=dd; A kept pending sorter
+L18	9	s	M	cipher	2-reader agree
+L18	10	g	M	cipher	2-reader agree
+L18	11	n	M	cipher	2-reader agree
+L18	12	n	M	cipher	2-reader agree
+L18	13	u	M	cipher	split A=- B=u; A kept pending sorter
+L18	14	s	M	cipher	2-reader agree
+L18	15	yx	M	cipher	2-reader agree
+L18	16	b	M	cipher	2-reader agree
+L18	17	g	M	cipher	2-reader agree
+L18	18	g	M	cipher	2-reader agree
+L18	19	r	M	cipher	2-reader agree
+L18	20	g	M	cipher	2-reader agree
+L18	21	B	M	cipher	2-reader agree
+L18	22	f	M	cipher	2-reader agree
+L18	23	s	M	cipher	2-reader agree
+L18	24	n	M	cipher	2-reader agree
+L18	25	yx	M	cipher	2-reader agree
+L18	26	k	M	cipher	2-reader agree
+L18	27	g	M	cipher	2-reader agree
+L18	28	r	M	cipher	2-reader agree
+L18	29	3	M	cipher	2-reader agree
+L18	30	B	M	cipher	2-reader agree
+L18	31	k	M	cipher	2-reader agree
+L18	32	g	M	cipher	2-reader agree
+L18	33	m	M	cipher	2-reader agree
+L18	34	yx	M	cipher	2-reader agree
+L18	35	d	M	cipher	split A=d B=dd; A kept pending sorter
+L19	1	4	M	cipher	2-reader agree
+L19	2	g	M	cipher	2-reader agree
+L19	3	2	M	cipher	2-reader agree
+L19	4	2	M	cipher	2-reader agree
+L19	5	q	M	cipher	split A=- B=q; A kept pending sorter
+L19	6	g	M	cipher	split A=g B=y; A kept pending sorter
+L19	7	y	M	cipher	2-reader agree
+L19	8	u	M	cipher	2-reader agree
+L19	9	d	M	cipher	split A=d B=dd; A kept pending sorter
+L19	10	s	M	cipher	2-reader agree
+L19	11	p	M	cipher	2-reader agree
+L19	12	g	M	cipher	split A=g B=G; A kept pending sorter
+L19	13	f	M	cipher	2-reader agree
+L19	14	m	M	cipher	2-reader agree
+L19	15	d	M	cipher	split A=d B=a; A kept pending sorter
+L19	16	4	M	cipher	2-reader agree
+L19	17	B	M	cipher	2-reader agree
+L19	18	h	M	cipher	2-reader agree
+L19	19	g	M	cipher	2-reader agree
+L19	20	d	M	cipher	2-reader agree
+L19	21	u	M	cipher	2-reader agree
+L19	22	s	M	cipher	2-reader agree
+L19	23	t	M	cipher	2-reader agree
+L19	24	X	M	cipher	2-reader agree
+L19	25	s	M	cipher	2-reader agree
+L19	26	g	M	cipher	2-reader agree
+L19	27	o	M	cipher	2-reader agree
+L19	28	r	M	cipher	2-reader agree
+L19	29	u	M	cipher	2-reader agree
+L19	30	B	M	cipher	2-reader agree
+L19	31	d	M	cipher	2-reader agree
+L19	32	s	M	cipher	2-reader agree
+L19	33	g	M	cipher	2-reader agree
+L19	34	n	M	cipher	2-reader agree
+L19	35	n	M	cipher	2-reader agree
+L19	36	b	M	cipher	2-reader agree
+L19	37	h	M	cipher	2-reader agree
+L19	38	g	M	cipher	2-reader agree
+L19	39	n	M	cipher	2-reader agree
+L20	1	s	M	cipher	2-reader agree
+L20	2	t	M	cipher	2-reader agree
+L20	3	g	M	cipher	2-reader agree
+L20	4	g	M	cipher	2-reader agree
+L20	5	t	M	cipher	2-reader agree
+L20	6	s	M	cipher	split A=s B=S; A kept pending sorter
+L20	7	2	M	cipher	2-reader agree
+L20	8	4	M	cipher	2-reader agree
+L20	9	g	M	cipher	2-reader agree
+L20	10	B	M	cipher	2-reader agree
+L20	11	f~	M	struck	split A=f B=-; reconciler pick from crop
+L20	12	f~	M	struck	split A=f~ B=S~; reconciler pick from crop
+L20	13	h	M	cipher	2-reader agree
+L20	14	o	M	cipher	2-reader agree
+L20	15	u	M	cipher	2-reader agree
+L20	16	d	M	cipher	2-reader agree
+L20	17	yx	M	cipher	2-reader agree
+L20	18	o	M	cipher	2-reader agree
+L20	19	g	M	cipher	2-reader agree
+L20	20	p	M	cipher	2-reader agree
+L20	21	s	M	cipher	2-reader agree
+L20	22	g	M	cipher	2-reader agree
+L20	23	g	M	cipher	2-reader agree
+L20	24	n	M	cipher	2-reader agree
+L20	25	s	M	cipher	2-reader agree
+L20	26	t	M	cipher	2-reader agree
+L20	27	yx	M	cipher	2-reader agree
+L20	28	2	M	cipher	2-reader agree
+L20	29	g	M	cipher	2-reader agree
+L20	30	4	M	cipher	2-reader agree
+L20	31	S	M	cipher	split A=- B=S; reconciler pick from crop
+L20	32	s	M	cipher	2-reader agree
+L20	33	2	M	cipher	2-reader agree
+L20	34	r	M	cipher	2-reader agree
+L20	35	g	M	cipher	2-reader agree
+L20	36	2	M	cipher	2-reader agree
+L20	37	b	M	cipher	2-reader agree
+L20	38	B	M	cipher	2-reader agree
+L20	39	g	M	cipher	2-reader agree
+L21	1	A	M	cipher	2-reader agree
+L21	2	u	M	cipher	2-reader agree
+L21	3	yx	M	cipher	split A=yx B=y; A kept pending sorter
+L21	4	s	M	cipher	2-reader agree
+L21	5	t	M	cipher	2-reader agree
+L21	6	8	M	cipher	2-reader agree
+L21	7	b	M	cipher	2-reader agree
+L21	8	s	M	cipher	2-reader agree
+L21	9	g	M	cipher	2-reader agree
+L21	10	d	M	cipher	split A=d B=dd; A kept pending sorter
+L21	11	4	M	cipher	2-reader agree
+L21	12	S	M	cipher	2-reader agree
+L21	13	3	M	cipher	2-reader agree
+L21	14	4	M	cipher	2-reader agree
+L21	15	yx	M	cipher	2-reader agree
+L21	16	o	M	cipher	2-reader agree
+L21	17	s	M	cipher	2-reader agree
+L21	18	d	M	cipher	2-reader agree
+L21	19	g	M	cipher	2-reader agree
+L21	20	E	M	cipher	2-reader agree
+L21	21	g	M	cipher	2-reader agree
+L21	22	r	M	cipher	2-reader agree
+L21	23	d	M	cipher	split A=d B=dd; A kept pending sorter
+L21	24	yx	M	cipher	2-reader agree
+L21	25	7	M	cipher	2-reader agree
+L21	26	g	M	cipher	split A=g B=9; A kept pending sorter
+L21	27	f	M	cipher	2-reader agree
+L21	28	k	M	cipher	2-reader agree
+L21	29	s	M	cipher	2-reader agree
+L21	30	g	M	cipher	2-reader agree
+L21	31	B	M	cipher	2-reader agree
+L21	32	yx	M	cipher	2-reader agree
+L21	33	A	M	cipher	2-reader agree
+L21	34	o	M	cipher	2-reader agree
+L21	35	s	M	cipher	2-reader agree
+L21	36	t	M	cipher	2-reader agree
+L22	1	s	M	cipher	2-reader agree
+L22	2	t	M	cipher	2-reader agree
+L22	3	u	M	cipher	2-reader agree
+L22	4	y	M	cipher	2-reader agree
+L22	5	sz	M	cipher	2-reader agree
+L22	6	B	M	cipher	2-reader agree
+L22	7	s	M	cipher	2-reader agree
+L22	8	t	M	cipher	2-reader agree
+L22	9	u	M	cipher	2-reader agree
+L22	10	y	M	cipher	2-reader agree
+L22	11	sz	M	cipher	2-reader agree
+L22	12	d	M	cipher	2-reader agree
+L22	13	yx	M	cipher	2-reader agree
+L22	14	DATE	H	date	2-reader agree

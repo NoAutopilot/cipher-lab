@@ -7,7 +7,7 @@
   "nl",
   "de"
  ],
- "ciphertext": "ciphers/wvo-11106-bergh-1572/ciphertext.txt",
+ "ciphertext_file": "ciphers/wvo-11106-bergh-1572/tx/ciphertext_oneline.txt (pass with --cipher; ciphertext.txt keeps the manuscript lines)",
  "ciphertext_source": "WVO PDF image p.2 (resources.huygens.knaw.nl/media/wvo/images/11000-11999/11106.pdf), 22 line crops images/crops/, two blind Sonnet passes per half + tools/reconcile_passes.py + reconciler picks (tx/build_ciphertext.py), FAM-11106T 8 Oct 2026",
  "alphabet": "provisional glyph labels (tx/signlist.md): lowercase letter-shapes, S long s, sz, dd looped d, o2, G hooked g, yx crossed-tail sign, capitals A B C D E, digits 2-9, X; space-separated tokens",
  "constraints": [

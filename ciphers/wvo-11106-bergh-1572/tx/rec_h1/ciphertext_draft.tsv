@@ -1,0 +1,447 @@
+line	position	sign	confidence	alt	why
+L01	1	B	M		agree-flagged
+L01	2	e	M		agree-flagged
+L01	3	S	M		agree-flagged
+L01	4	s	M	B:-	gap
+L01	5	p	M		agree-flagged
+L01	6	g	M		agree-flagged
+L01	7	dd	M	B:d	differ
+L01	8	o	M		agree-flagged
+L01	9	g	M	B:-	gap
+L01	10	7	M		agree-flagged
+L01	11	yx	M		agree-flagged
+L01	12	g	M		agree-flagged
+L01	13	z	M	B:2	differ
+L01	14	m	M		agree-flagged
+L01	15	dd	M	B:d	differ
+L01	16	l	M		agree-flagged
+L01	17	G	M		agree-flagged
+L01	18	p	M		agree-flagged
+L01	19	b	M		agree-flagged
+L01	20	m	M		agree-flagged
+L01	21	n	M	B:-	gap
+L01	22	s	M		agree-flagged
+L01	23	s	M		agree-flagged
+L01	24	t	M		agree-flagged
+L01	25	f	M		agree-flagged
+L01	26	g	M		agree-flagged
+L01	27	3	M		agree-flagged
+L01	28	m	M		agree-flagged
+L01	29	b	M		agree-flagged
+L01	30	y	M		agree-flagged
+L01	31	g	M		agree-flagged
+L01	32	s	M		agree-flagged
+L01	33	m	M		agree-flagged
+L01	34	n	M		agree-flagged
+L01	35	C	M		agree-flagged
+L01	36	S	M		agree-flagged
+L01	37	3	M		agree-flagged
+L01	38	g	M		agree-flagged
+L01	39	r	M		agree-flagged
+L01	40	c	M		agree-flagged
+L01	41	2	M		agree-flagged
+L01	42	s	M		agree-flagged
+L01	43	k	M		agree-flagged
+L01	44	k	M		agree-flagged
+L01	45	g	M		agree-flagged
+L01	46	s	M		agree-flagged
+L01	47	s	M		agree-flagged
+L02	1	u	M		agree-flagged
+L02	2	s	M		agree-flagged
+L02	3	t	M		agree-flagged
+L02	4	g	M		agree-flagged
+L02	5	g	M		agree-flagged
+L02	6	s	M		agree-flagged
+L02	7	7	M		agree-flagged
+L02	8	G	M		agree-flagged
+L02	9	3	M		agree-flagged
+L02	10	g	M		agree-flagged
+L02	11	3	M		agree-flagged
+L02	12	yx	M		agree-flagged
+L02	13	h~	M		agree-flagged
+L02	14	y~	M	A:-	gap
+L02	15	r~	M		agree-flagged
+L02	16	3	M		agree-flagged
+L02	17	s	M	B:5	differ
+L02	18	g	M		agree-flagged
+L02	19	n	M		agree-flagged
+L02	20	l	M	A:-	gap
+L02	21	A	M		agree-flagged
+L02	22	m	M		agree-flagged
+L02	23	s	M		agree-flagged
+L02	24	S	M		agree-flagged
+L02	25	r	M		agree-flagged
+L02	26	dd	M		agree-flagged
+L02	27	o	M		agree-flagged
+L02	28	b	M		agree-flagged
+L02	29	7	M		agree-flagged
+L02	30	p	M		agree-flagged
+L02	31	yx	M		agree-flagged
+L02	32	g	M		agree-flagged
+L02	33	3	M		agree-flagged
+L02	34	4	M		agree-flagged
+L02	35	z	M	B:2	differ
+L02	36	g	M		agree-flagged
+L02	37	D	M		agree-flagged
+L02	38	p	M		agree-flagged
+L02	39	m	M		agree-flagged
+L02	40	h	M		agree-flagged
+L02	41	b	M		agree-flagged
+L02	42	n	M		agree-flagged
+L02	43	s	M		agree-flagged
+L02	44	t	M		agree-flagged
+L03	1	g	M		agree-flagged
+L03	2	m	M		agree-flagged
+L03	3	p	M		agree-flagged
+L03	4	p	M		agree-flagged
+L03	5	g	M		agree-flagged
+L03	6	g	M		agree-flagged
+L03	7	B	M		agree-flagged
+L03	8	E	M		agree-flagged
+L03	9	7	M		agree-flagged
+L03	10	2	M		agree-flagged
+L03	11	s	M	B:5	differ
+L03	12	g	M		agree-flagged
+L03	13	g	M		agree-flagged
+L03	14	g	M		agree-flagged
+L03	15	S	M		agree-flagged
+L03	16	E	M		agree-flagged
+L03	17	s	M	B:S	differ
+L03	18	g	M		agree-flagged
+L03	19	4	M		agree-flagged
+L03	20	D	M		agree-flagged
+L03	21	l	M		agree-flagged
+L03	22	g	M		agree-flagged
+L03	23	b	M		agree-flagged
+L03	24	g	M		agree-flagged
+L03	25	X	M		agree-flagged
+L03	26	s	M		agree-flagged
+L03	27	dd	M		agree-flagged
+L03	28	g	M		agree-flagged
+L03	29	r	M		agree-flagged
+L03	30	3	M		agree-flagged
+L03	31	g	M		agree-flagged
+L03	32	m	M		agree-flagged
+L03	33	k	M		agree-flagged
+L03	34	r	M		agree-flagged
+L03	35	g	M		agree-flagged
+L03	36	3	M		agree-flagged
+L03	37	A	M		agree-flagged
+L03	38	o	M		agree-flagged
+L03	39	s	M		agree-flagged
+L03	40	n	M	B:u	differ
+L03	41	yx	M		agree-flagged
+L04	1	4	M		agree-flagged
+L04	2	m	M		agree-flagged
+L04	3	g	M		agree-flagged
+L04	4	4	M		agree-flagged
+L04	5	s	M	B:S	differ
+L04	6	r	M		agree-flagged
+L04	7	3	M		agree-flagged
+L04	8	E	M		agree-flagged
+L04	9	G~	M		agree-flagged
+L04	10	h~	M	B:5~	differ
+L04	11	s	M	B:l	differ
+L04	12	d	M		agree-flagged
+L04	13	s	M		agree-flagged
+L04	14	G	M	B:g	differ
+L04	15	f	M		agree-flagged
+L04	16	s	M		agree-flagged
+L04	17	d	M		agree-flagged
+L04	18	yx	M		agree-flagged
+L04	19	6	M		agree-flagged
+L04	20	s	M		agree-flagged
+L04	21	A	M		agree-flagged
+L04	22	h	M		agree-flagged
+L04	23	b	M		agree-flagged
+L04	24	o	M		agree-flagged
+L04	25	g	M		agree-flagged
+L04	26	r	M		agree-flagged
+L04	27	c	M		agree-flagged
+L04	28	o	M		agree-flagged
+L04	29	s	M	B:S	differ
+L04	30	z	M		agree-flagged
+L04	31	d	M	B:-	gap
+L04	32	l	M		agree-flagged
+L04	33	dd	M		agree-flagged
+L04	34	s	M		agree-flagged
+L04	35	n	M	B:u	differ
+L04	36	p	M		agree-flagged
+L04	37	B	M		agree-flagged
+L04	38	g	M		agree-flagged
+L04	39	r	M		agree-flagged
+L04	40	dd	M		agree-flagged
+L05	1	E	M		agree-flagged
+L05	2	o	M		agree-flagged
+L05	3	s	M		agree-flagged
+L05	4	g	M		agree-flagged
+L05	5	s	M		agree-flagged
+L05	6	g	M		agree-flagged
+L05	7	p	M		agree-flagged
+L05	8	s	M		agree-flagged
+L05	9	m	M		agree-flagged
+L05	10	B	M		agree-flagged
+L05	11	g	M		agree-flagged
+L05	12	o	M		agree-flagged
+L05	13	i	M		agree-flagged
+L05	14	c	M		agree-flagged
+L05	15	m	M		agree-flagged
+L05	16	g	M		agree-flagged
+L05	17	r	M		agree-flagged
+L05	18	yx	M		agree-flagged
+L05	19	s	M		agree-flagged
+L05	20	t	M		agree-flagged
+L05	21	f	M		agree-flagged
+L05	22	g	M		agree-flagged
+L05	23	d	M		agree-flagged
+L05	24	g	M		agree-flagged
+L05	25	o	M		agree-flagged
+L05	26	s	M		agree-flagged
+L05	27	G	M		agree-flagged
+L05	28	m	M		agree-flagged
+L05	29	p	M		agree-flagged
+L05	30	yx	M	B:y	differ
+L05	31	t	M		agree-flagged
+L05	32	B	M		agree-flagged
+L05	33	l	M		agree-flagged
+L05	34	b	M		agree-flagged
+L05	35	s	M		agree-flagged
+L05	36	t	M		agree-flagged
+L05	37	yx	M		agree-flagged
+L06	1	B	M		agree-flagged
+L06	2	i	M		agree-flagged
+L06	3	yx	M	B:y	differ
+L06	4	g	M		agree-flagged
+L06	5	f	M		agree-flagged
+L06	6	s	M		agree-flagged
+L06	7	g	M		agree-flagged
+L06	8	s	M		agree-flagged
+L06	9	dd	M		agree-flagged
+L06	10	l	M		agree-flagged
+L06	11	s	M		agree-flagged
+L06	12	m	M		agree-flagged
+L06	13	d	M		agree-flagged
+L06	14	4	M		agree-flagged
+L06	15	G	M		agree-flagged
+L06	16	7	M		agree-flagged
+L06	17	s	M		agree-flagged
+L06	18	g	M		agree-flagged
+L06	19	n	M		agree-flagged
+L06	20	E	M		agree-flagged
+L06	21	u	M		agree-flagged
+L06	22	y	M		agree-flagged
+L06	23	s	M		agree-flagged
+L06	24	t	M		agree-flagged
+L06	25	d	M	B:dd	differ
+L06	26	l	M		agree-flagged
+L06	27	g	M		agree-flagged
+L06	28	s	M		agree-flagged
+L06	29	b	M		agree-flagged
+L06	30	s	M		agree-flagged
+L06	31	7	M		agree-flagged
+L06	32	G	M	B:g	differ
+L06	33	o	M		agree-flagged
+L06	34	e	M		agree-flagged
+L06	35	s	M		agree-flagged
+L06	36	p	M		agree-flagged
+L06	37	B	M		agree-flagged
+L06	38	o	M		agree-flagged
+L06	39	e	M		agree-flagged
+L07	1	s	M		agree-flagged
+L07	2	t	M		agree-flagged
+L07	3	3	M		agree-flagged
+L07	4	yx	M		agree-flagged
+L07	5	3	M		agree-flagged
+L07	6	r	M		agree-flagged
+L07	7	p	M		agree-flagged
+L07	8	g	M		agree-flagged
+L07	9	E	M		agree-flagged
+L07	10	l	M		agree-flagged
+L07	11	g	M		agree-flagged
+L07	12	b	M		agree-flagged
+L07	13	d	M		agree-flagged
+L07	14	X	M		agree-flagged
+L07	15	G	M		agree-flagged
+L07	16	yx	M		agree-flagged
+L07	17	3	M		agree-flagged
+L07	18	g	M		agree-flagged
+L07	19	dd	M		agree-flagged
+L07	20	4	M		agree-flagged
+L07	21	h	M		agree-flagged
+L07	22	m	M		agree-flagged
+L07	23	p	M		agree-flagged
+L07	24	b	M		agree-flagged
+L07	25	4	M		agree-flagged
+L07	26	b	M		agree-flagged
+L07	27	s	M		agree-flagged
+L07	28	g	M		agree-flagged
+L07	29	p	M		agree-flagged
+L07	30	A	M		agree-flagged
+L07	31	u	M		agree-flagged
+L07	32	s	M		agree-flagged
+L07	33	t	M		agree-flagged
+L07	34	f	M		agree-flagged
+L07	35	g	M		agree-flagged
+L07	36	dd	M		agree-flagged
+L07	37	u	M		agree-flagged
+L07	38	e	M		agree-flagged
+L08	1	S	M		agree-flagged
+L08	2	s	M		agree-flagged
+L08	3	k	M		agree-flagged
+L08	4	d	M		agree-flagged
+L08	5	g	M	B:y	differ
+L08	6	n	M		agree-flagged
+L08	7	C	M		agree-flagged
+L08	8	e	M		agree-flagged
+L08	9	o	M		agree-flagged
+L08	10	s	M		agree-flagged
+L08	11	t	M		agree-flagged
+L08	12	g	M		agree-flagged
+L08	13	r	M		agree-flagged
+L08	14	D	M		agree-flagged
+L08	15	k	M		agree-flagged
+L08	16	d	M		agree-flagged
+L08	17	g	M	B:y	differ
+L08	18	n	M		agree-flagged
+L08	19	A	M		agree-flagged
+L08	20	y	M		agree-flagged
+L08	21	u	M		agree-flagged
+L08	22	s	M		agree-flagged
+L08	23	t	M		agree-flagged
+L08	24	e	M		agree-flagged
+L08	25	m	M		agree-flagged
+L08	26	g	M		agree-flagged
+L08	27	dd	M		agree-flagged
+L08	28	k~	M	A:-	gap
+L08	29	h~	M		agree-flagged
+L08	30	k~	M	B:e~	differ
+L08	31	f	M		agree-flagged
+L08	32	u	M		agree-flagged
+L08	33	e	M	B:c	differ
+L08	34	s	M		agree-flagged
+L08	35	t	M		agree-flagged
+L08	36	3	M		agree-flagged
+L08	37	g	M	B:9	differ
+L08	38	m	M		agree-flagged
+L08	39	o	M		agree-flagged
+L08	40	s	M		agree-flagged
+L08	41	D	M		agree-flagged
+L09	1	s	M		agree-flagged
+L09	2	t	M		agree-flagged
+L09	3	e	M		agree-flagged
+L09	4	d	M	B:dd	differ
+L09	5	g	M		agree-flagged
+L09	6	B	M		agree-flagged
+L09	7	l	M		agree-flagged
+L09	8	g	M		agree-flagged
+L09	9	g	M		agree-flagged
+L09	10	g	M		agree-flagged
+L09	11	h	M		agree-flagged
+L09	12	g	M		agree-flagged
+L09	13	n	M		agree-flagged
+L09	14	A	M		agree-flagged
+L09	15	e	M		agree-flagged
+L09	16	p	M		agree-flagged
+L09	17	g	M		agree-flagged
+L09	18	u	M		agree-flagged
+L09	19	g	M	B:e	differ
+L09	20	f	M		agree-flagged
+L09	21	b	M		agree-flagged
+L09	22	s	M		agree-flagged
+L09	23	g	M		agree-flagged
+L09	24	s	M		agree-flagged
+L09	25	y	M	B:-	gap
+L09	26	yx	M		agree-flagged
+L09	27	X	M		agree-flagged
+L09	28	s	M		agree-flagged
+L09	29	g	M		agree-flagged
+L09	30	E	M		agree-flagged
+L09	31	dd	M		agree-flagged
+L09	32	b	M		agree-flagged
+L09	33	s	M		agree-flagged
+L09	34	y	M	B:yx	differ
+L09	35	l	M		agree-flagged
+L09	36	t	M		agree-flagged
+L09	37	s	M		agree-flagged
+L09	38	m	M		agree-flagged
+L09	39	3	M		agree-flagged
+L09	40	d	M	B:dd	differ
+L09	41	u	M		agree-flagged
+L10	1	sz	M	B:S	differ
+L10	2	u	M		agree-flagged
+L10	3	d	M		agree-flagged
+L10	4	s	M		agree-flagged
+L10	5	G	M	B:g	differ
+L10	6	dd	M		agree-flagged
+L10	7	s	M	B:S	differ
+L10	8	r	M		agree-flagged
+L10	9	4	M		agree-flagged
+L10	10	g	M		agree-flagged
+L10	11	B	M		agree-flagged
+L10	12	b	M		agree-flagged
+L10	13	h	M		agree-flagged
+L10	14	n	M		agree-flagged
+L10	15	p	M		agree-flagged
+L10	16	s	M		agree-flagged
+L10	17	t	M		agree-flagged
+L10	18	g	M		agree-flagged
+L10	19	4	M		agree-flagged
+L10	20	y	M	B:yx	differ
+L10	21	n	M		agree-flagged
+L10	22	b	M		agree-flagged
+L10	23	s	M		agree-flagged
+L10	24	g	M		agree-flagged
+L10	25	m	M		agree-flagged
+L10	26	B	M		agree-flagged
+L10	27	E	M		agree-flagged
+L10	28	u	M		agree-flagged
+L10	29	f	M		agree-flagged
+L10	30	g	M		agree-flagged
+L10	31	A	M		agree-flagged
+L10	32	g	M		agree-flagged
+L10	33	s	M		agree-flagged
+L10	34	s	M		agree-flagged
+L10	35	m	M		agree-flagged
+L10	36	f	M		agree-flagged
+L10	37	h	M		agree-flagged
+L10	38	m	M		agree-flagged
+L11	1	f	M		agree-flagged
+L11	2	p	M		agree-flagged
+L11	3	s	M		agree-flagged
+L11	4	m	M		agree-flagged
+L11	5	E	M		agree-flagged
+L11	6	y	M	B:yx	differ
+L11	7	s	M	B:S	differ
+L11	8	r	M		agree-flagged
+L11	9	4	M		agree-flagged
+L11	10	dd	M		agree-flagged
+L11	11	8	M		agree-flagged
+L11	12	b	M		agree-flagged
+L11	13	s	M		agree-flagged
+L11	14	g	M		agree-flagged
+L11	15	G	M		agree-flagged
+L11	16	yx	M		agree-flagged
+L11	17	b	M		agree-flagged
+L11	18	dd	M		agree-flagged
+L11	19	d	M	A:-	gap
+L11	20	b	M		agree-flagged
+L11	21	s	M		agree-flagged
+L11	22	m	M		agree-flagged
+L11	23	2	M		agree-flagged
+L11	24	g	M		agree-flagged
+L11	25	yx	M		agree-flagged
+L11	26	B	M		agree-flagged
+L11	27	u	M		agree-flagged
+L11	28	e	M		agree-flagged
+L11	29	o	M		agree-flagged
+L11	30	g	M		agree-flagged
+L11	31	g	M		agree-flagged
+L11	32	e	M		agree-flagged
+L11	33	yx	M		agree-flagged
+L11	34	c	M		agree-flagged
+L11	35	s	M	B:S	differ
+L11	36	r	M		agree-flagged
+L11	37	r	M		agree-flagged
+L11	38	g	M		agree-flagged
+L11	39	s	M		agree-flagged
+L11	40	t	M		agree-flagged

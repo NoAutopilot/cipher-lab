@@ -6,9 +6,33 @@
  "bytes_pdf": 8965726,
  "regen": "pdfimages -j 11106.pdf p   (writes p-000.jpg p-001.jpg p-002.jpg at native size; full JPEGs deleted to keep the folder small)",
  "pdf_images": [
-  {"page": 1, "size": [2611, 3871], "ppi": 300, "content": "address leaf: 'Monsieur / Monsieur et Prince d'Orange', seal remains, no gloss"},
-  {"page": 2, "size": [2539, 3819], "ppi": 300, "content": "THE CIPHER LETTER: about 23 lines of letter/digit glyphs, '19 Septembris', clear closing 'entierement serviteur de vre s[eigneu]rie Guillaume de Berghe'; archivist's pencil 'G. de Berghe' top left and '19 Sept. - (?)' bottom left; no interlinear gloss"},
-  {"page": 3, "size": [5007, 3823], "ppi": 300, "content": "back of the sheet: blank, ink show-through only (checked with autocontrast)"}
+  {
+   "page": 1,
+   "size": [
+    2611,
+    3871
+   ],
+   "ppi": 300,
+   "content": "address leaf: 'Monsieur / Monsieur et Prince d'Orange', seal remains, no gloss"
+  },
+  {
+   "page": 2,
+   "size": [
+    2539,
+    3819
+   ],
+   "ppi": 300,
+   "content": "THE CIPHER LETTER: about 23 lines of letter/digit glyphs, '19 Septembris', clear closing 'entierement serviteur de vre s[eigneu]rie Guillaume de Berghe'; archivist's pencil 'G. de Berghe' top left and '19 Sept. - (?)' bottom left; no interlinear gloss"
+  },
+  {
+   "page": 3,
+   "size": [
+    5007,
+    3823
+   ],
+   "ppi": 300,
+   "content": "back of the sheet: blank, ink show-through only (checked with autocontrast)"
+  }
  ],
  "kept": {
   "view_p1.jpg": "page 1 reduced to 1600 px",
@@ -18,5 +42,10 @@
   "crop_p2_bottom.jpg": "page 2 native crop y2500-3819 (closing, signature, pencil date)",
   "crop_p1_address.jpg": "page 1 native crop x200-2611 y1200-2700 (address, seal)",
   "wvo-record-11106.html": "the WVO record page as fetched"
+ },
+ "crops_p2": {
+  "made": "8 Oct 2026, FAM-11106T",
+  "command": "pdfimages -j -f 2 -l 2 11106.pdf p ; python3 tools/iiif_lines.py --image p-000.jpg --out images/crops --region 470,280,2050,2070 --prefix p2 --debug --mask-neighbours --mask-margin 50 --mask-keep 0.2",
+  "files": "images/crops/p2_L01..L22.jpg + p2_lines_debug.jpg + manifest.json"
  }
 }

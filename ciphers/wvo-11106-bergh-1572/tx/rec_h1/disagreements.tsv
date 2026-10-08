@@ -1,0 +1,44 @@
+line	col	A	B	flagged	crop
+L01	4	s	-		
+L01	7	dd	d	B	
+L01	9	g	-		
+L01	13	z	2	B	
+L01	15	dd	d	B	
+L01	21	n	-		
+L02	14	-	y~	B	
+L02	17	s	5	B	
+L02	20	-	l	B	
+L02	35	z	2	B	
+L03	11	s	5	B	
+L03	17	s	S	B	
+L03	40	n	u	B	
+L04	5	s	S	B	
+L04	10	h~	5~	B	
+L04	11	s	l	B	
+L04	14	G	g	B	
+L04	29	s	S	B	
+L04	31	d	-		
+L04	35	n	u	B	
+L05	30	yx	y	B	
+L06	3	yx	y	B	
+L06	25	d	dd	B	
+L06	32	G	g	B	
+L08	5	g	y	B	
+L08	17	g	y	B	
+L08	28	-	k~	B	
+L08	30	k~	e~	B	
+L08	33	e	c	B	
+L08	37	g	9	B	
+L09	4	d	dd	B	
+L09	19	g	e	B	
+L09	25	y	-		
+L09	34	y	yx	B	
+L09	40	d	dd	B	
+L10	1	sz	S	B	
+L10	5	G	g	B	
+L10	7	s	S	B	
+L10	20	y	yx	B	
+L11	6	y	yx	B	
+L11	7	s	S	B	
+L11	19	-	d	B	
+L11	35	s	S	B	
