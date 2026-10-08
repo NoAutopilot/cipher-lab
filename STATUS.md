@@ -6149,6 +6149,26 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE ST-LEDGER-4 handoff (session_015WegULpZSVGVcFH1h999mf, account 1), 8 October 2026 (closed 16:4x UTC: past 80% of cap, lane about 38.5 of 45)
+
+Brief .claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md (ST-LEDGER-4); worker brief .claude/briefs/runs/2026-10-08-acct1-st-ledger4-workers.md.
+Seven workers 34.07 + orchestrator ~4.4 by get_session. PF4, readers LS4-R2a/R1a/R2b/R1b (Sonnet); first verifiers LS4-V2a/V1a (Opus).
+Result (eckert-1864, one audit each, not counted until a second): N3 weak -- E90 (D3), N2-BY (D3), E92 (D2), N2-BZ part 2 (D2); second audits
+queued by the account-3 VERIFY lane as V1-LS4A. N1/N2: N2-BR, N2-BX (Papers of U. S. Grant notes), E91, E94 (clear in own Huntington
+transcription), N2-BZ pt 1, N2-CA, N2-BU (N2); N2-BV D1. Readers also found in print after decoding: N2-BS, BT, BW, E88, E89, E93, E99, N2-CD,
+CH, CM.
+- PF4 (three-part pre-filter: OR III/4-5 + ORN 11-12 + be-api phrase, Huntington full text, same-leaf): 115 unread 1864 rows -> 79 clean;
+  control recall 5/9 lowered, 0/3 held. It cannot see an entry whose body is clear in its own Huntington transcription (4 of the 9 misses), and
+  8 of the first 17 "clean" rows were in print once decoded: the decoded-text phrase pass is the filter that works. prefilter-ls4.tsv.
+- Cipher No. 9 remainder of mssEC 19: 5 of 5 unread rows print-likely: closed for reading.
+- Handed on, unverified (16): FV-LS4-R1b (account 2: E95 E96 E97 E98 E100 E101) and FV-LS4-R2b (account 4: N2-CB CC CE CF CG CI CJ CK CL E102),
+  WORK-QUEUE rows queued.
+Left, runnable: (1) group 3 (Cipher No. 1) PF4-clean rows not yet read: 34 (from 8921/1 in PF4's order, minus 9097/1..8922/0 done), ~0.45 per
+entry read; expect about half in print after decoding and about 1 in 4 to survive a first audit at N3 weak; (2) the 1865 rows still need a
+book instrument (LS3-K); (3) mssEC 18 pages beyond 21-22 Apr 1864 not reached (sources/mssEC18 now holds 11 leaves' text from PF4's control);
+(4) object 5952 (Fort Monroe) not opened. Lesson: put the reader's step 0 (own transcription clear?) and the Grant Papers / Basler check
+into the reader's print pass, not the verifier's: 4 of 10 verifier N1/N2 calls came from those two sources.
+
 ## LANE ST-LEDGER-3 handoff (session_01PJJSq4hvT8sJovCacbSYX1, account 2), 8 October 2026 (closed 11:0x UTC: past 80% of cap, lane about 32.8 of 40)
 
 Brief .claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md (ST-LEDGER-3); worker brief .claude/briefs/runs/2026-10-08-acct2-st-ledger3-workers.md.

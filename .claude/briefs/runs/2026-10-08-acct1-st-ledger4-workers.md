@@ -105,3 +105,21 @@ Method as wave 2 (steps 0-4), with step 1 widened: the decoded-text phrase pass 
 to or from Grant, Lincoln, Stanton or Halleck also a be-api search restricted to the Grant Papers / Basler volumes if their IA identifiers
 answer (log which). An entry found in print is filed with its page and not sent to a verifier. NOTES sections "## LS4-R2b (...)" /
 "## LS4-R1b (...)". Four workers share the hosts: >= 3 s between your own hdl.huntington.org requests, at most 40 there.
+
+---
+
+# Hand-on first verifiers (written 8 Oct 2026 16:4x UTC at the lane's close; queued as WORK-QUEUE rows, not run by this lane)
+Lane closed past 80% of cap (about 38.4 of 45). Readers LS4-R1b and LS4-R2b (account 1) left 16 entries not located in what they searched.
+## FV-LS4-R1b (account 2) and FV-LS4-R2b (account 4): Opus 5.5 first verifiers, separate sessions from the readers
+Exactly the "## First verifiers LS4-V2a and LS4-V1a" section above (points 1-4 first per entry, depth bar, AUDIT.md heading
+"## AUDIT (FV-LS4-R1b)" / "## AUDIT (FV-LS4-R2b)", status.json rows for N3+ only with audit_status "one audit", SO rows, depth_check,
+file_shrink_guard), plus .claude/briefs/prior-work-step.md (run `tools/prior_work.py` if it exists by then; else its checklist by hand).
+Lessons from LS4-V1a/V2a, apply first: the readers' step 0 still missed two entries whose bodies are clear in their own Huntington
+transcription (E91, E94) -- re-read every entry's own transcription before anything else; the Papers of U. S. Grant notes printed
+N2-BR and N2-BX word for word (Google Books snippet search reaches vol. 13, which is not on IA); a clear reply in the received ledgers
+(mssEC 11) is a good external check. Unit ~0.8 per entry; stop before an entry that would cross 80% of cap or box. On N3+ D2+ name the
+item in ROOM for the account-3 VERIFY lane's second audit (second audits go to account 3, 8 Oct 15:56 UTC).
+- FV-LS4-R1b (account 2), cap $6, box 80 min: E95, E96, E97, E98, E100, E101 (NOTES "## LS4-R1b"; E99 is in OR I/41 pt 4: confirm N1 by script).
+- FV-LS4-R2b (account 4), cap $8, box 100 min: N2-CB, N2-CC (OR I/34 pt 4 parallel), N2-CE, N2-CF, N2-CG, N2-CI, N2-CJ, N2-CK, N2-CL, E102
+  (OR I/39 pt 2 p.54 parallel) (NOTES "## LS4-R2b"; key conflicts Harry and Pickets in HYPOTHESES.md: grade by rule 4); N2-CD, N2-CH, N2-CM
+  are in print: confirm N1 by script.
