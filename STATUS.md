@@ -714,6 +714,16 @@ Not archived (the orchestrator's call, none holds unpushed work): parents 2-6 (0
 
 </details>
 
+## Prior-work leak study, 8 Oct 2026 (account-3 orchestrator)
+Owner asked how to stop working already-solved items, for all work, not only Eckert. Workflow wf_e1b87449-ccc mined all 68 AUDIT.md
+files and the room log: 307 records (3 withheld as restricted) of work spent on items already read, across 80 targets, 180 outside
+Eckert; kinds: plaintext in print 143, period gloss or clear copy on the leaf or a sibling 72, our own earlier work 49, holder public
+transcription 19, modern decipherment 14; 216 caught only by the solver or first audit; about USD 1,600 avoidable on the records' own
+figures. Design and critiques: research/PRIOR-WORK-LEAK-2026-10-08.md (+ .tsv records, SURVIVORS must-not-block list). Interim rule
+for every brief: .claude/briefs/prior-work-step.md (checklist by hand until tools/prior_work.py exists, then the tool). Standing blast
+lanes: .claude/briefs/lane-common-blast.md + lane-ledger.md (account 1), lane-family.md (account 2), lane-depth.md (account 4),
+lane-verify.md (account 3).
+
 ## Parent handoff (account-4, session_01SEzoee67SivPooFpTkxMme), from 1 Oct 2026 23:25 UTC, kept current
 
 New account joined 1 Oct 2026 23:25 UTC (clock read), depth 0 (created from the UI). Role field `account-4 parent`;
