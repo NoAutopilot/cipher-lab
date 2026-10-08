@@ -30,10 +30,10 @@ Next best attempt and why: BNF-G60 (brief .claude/briefs/runs/2026-10-08-ytbiz-b
 
 | 8 Oct 2026 | f.91's cipher is Nevers no.60 | BNF-G60 gate G1 (fr.3987 f.54 known answer), pre-registered | value-shuffled keys (not reached) | G1 NOT RUN, stopped before any sign pass: no agreement number, no shuffle number, no target decode | non-test: gate (unrunnable as priced; no cost spent on Sonnet calls) | see G60 note below |
 
-G60 note (BNF-G60, 8 Oct 2026 06:00-06:2x UTC by date -u; intake_gate_check.py exit 0, "open (line 1)"). Located by eye on
+G60 note (BNF-G60, 8 Oct 2026 06:00-06:04 UTC by date -u; intake_gate_check.py exit 0, "open (line 1)"). Located by eye on
 Gallica btv1b90606320 (fr.3987; manifest has 0 folio labels): f.54 = canvas 99 (leaf head "10 de Nov.re 1593", foliation 54
 top right), continuing on canvas 100 (more cipher lines) and canvas 101 (last lines, signature "Henry", dated "Dieppe ... 1593"
-by thumbnail). Canvases 103 / 105 / 111 carry folios 56 / 57 / 60. Read at 1800 px (8 curl requests-class fetches, ~16
+by thumbnail). Canvases 103 / 105 / 111 carry folios 56 / 57 / 60. Read at 1800 px (~16
 gallica.bnf.fr requests total, two 503s/one reset, each retried once). What the leaf is: a FULL-PAGE cipher letter, about 34
 cipher lines on canvas 99 alone (about 60-70 signs a line, ~2,000 signs), plus more on 100-101. The interlinear decipherment
 is word-level and sparse: the clerk's plain words sit above only some cipher groups (roughly 1 word per 6-10 signs, ~15-20%
