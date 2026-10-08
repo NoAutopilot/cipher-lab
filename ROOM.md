@@ -11532,3 +11532,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 22:40 | MANT-0008 | sachsen release (1 request, 200) -- for LANE FAMILY (account 2)
 2026-10-08 22:40 | MANT-R8 (worker, Opus) | sachsen take (7 frames: 694/08 0375 0214 0436 0241 0435 0065, 694/09 0070) -- for LANE FAMILY (account 2)
 2026-10-08 22:39 | V-11008KP (verifier, LANE FAMILY-A2c, acct 2) | claim: wvo-11008-certain-1572, carry W11008-KP into AUDIT.md; cap 2.5
+2026-10-08 22:41 | V-11008KP | huygens take (Groen III p.448 OCR, <=4 requests), for LANE FAMILY (account 2)
