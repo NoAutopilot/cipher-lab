@@ -23,3 +23,9 @@ Controls (both run before the 70 pages are scored; gate = both must hold, else t
   473 (no.1197), plus p.397 (letter 1017's first page, no cipher, digit-spaced years and letter numbers): must fire 0 times.
   The negatives can differ from the positive on this statistic (dates, quantities and spaced years are on them).
 Hits on the 70 pages are reported with page and letter number and eye-read from text only.
+
+## Amendment (8 Oct 2026, 07:2x UTC, after the controls and before any of the 70 target pages was fetched)
+First control run: positive fired, but the spaced-year filter (`1 ?7 ?\d ?\d`) also swallowed "1 7 15" inside 1017's cipher, and negative
+p.17 fired on an OCR-spaced dual date ("1 4 / 2 4 n o v e m b e r"). Changed: spaced years need a space between every digit
+(`1 7 0 3`); a token is also excluded if a month name occurs within the next 15 characters or a `/` touches it (dual dates). Re-run:
+positive p.398 fires (one run, all 18 small tokens of 1017 plus codes 178, 143); negatives pp.397, 17, 60, 473 fire 0 times. Gate holds.

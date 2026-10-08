@@ -334,11 +334,44 @@ Requests: resources.huygens.knaw.nl 16 (all HTTP 200, >= 2.2 s apart, descriptiv
 **Status: open (unchanged).** Deel 3 page read complete (103 of 103 H.A. 918 pages); the 16 left were editor summaries with no cipher. The 1703
 system's key is still not located in print.
 
-## Next step (cheap, depends on no one; updated R12A-HEIN, 6 Oct 2026)
-1. Re-grep the 70 Deel 2 pages A2P4 read for the small-number runs of letter 1017's kind (1-70 inside text), which A2P4's 140-199 grep could not
-   catch: about 70 requests to resources.huygens.knaw.nl (one session, >= 2 s apart), ~USD 1, script only.
+## Deel 2 small-number re-grep (D2-HEIN, 8 Oct 2026, 07:20-07:29 UTC)
+
+Brief (LANE DEFAULT-account-2-20261008-0710, next step 1): re-grep the 70 Deel 2 pages A2P4-HAER read (Haersolte hits, printed pp.81-600) for
+runs of small numbers (1-70) of letter 1017's kind, which A2P4's 140-199 grep could not catch. Script only: `small_runs.py`; rule
+pre-registered in `PREREG-D2-HEIN.md` (pushed 7e4ea1797 before any target page was fetched; one amendment after the first control run, also
+before the target pages, recorded there). Page OCR html kept in `deel2_ocr/` (75 files, 432 KB; pages below 100 are zero-padded,
+`_081.html`); hits in `small_runs_D2HEIN.tsv`.
+
+Candidate run: >= 3 small tokens (1-70) inside 40 characters, after dropping the running page number, letter headings, footnotes, solid or
+digit-spaced years, `H.A.` references, and tokens next to p./nr./fol., a month name (within 15 characters), a money/measure/troop word, an
+ordinal word, or a `/` (dual dates).
+Controls: positive p.398 (letter 1017) fires once with all 18 small tokens (`32 30 1 7 15 14 ... 5 1 70`, codes 178, 143 beside them);
+negatives pp.397 (1017's first page), 17 (no.41), 60 (no.155), 473 (no.1197) fire 0 times. The first rule version failed both ways (it ate
+"1 7 15" as a year and fired on p.17's "1 4 / 2 4 n o v e m b e r"); the amendment fixed both before the target run.
+
+Result on the 70 pages: 8 runs on 7 pages, all eye-read from the OCR text. **None is cipher.** p.130 is the target letter 341 itself ("le 178
+que 1 9 8": the known code 198, OCR digit-spaced); the other 7 are dates (pp.196, 255, 518: OCR "l703"/"1 70S" escaping the year filter),
+troop or garrison figures (pp.243 "10 a 12.000 man", 298 "29 ... 2 regiments"), and footnote references on p.404 whose footnote block the
+heading rule missed. So on these 70 pages there is no small-number cipher passage of the 1017 kind; with A2P4's 140-199 grep, R11A-HEIN2's 21
+further letters and the 1017/929 pages, the 1703 cipher extent in Deel 2's print stays letters 341, 929 and 1017.
+
+Where it was not found / limits: the rule needs three small numbers together, so a single small code or a pair in clear text would pass
+unseen (as would an OCR-mangled run); the OCR is the only witness (rule 2), and pages without a Haersolte hit were not scanned. Graded tokens
+read by us: 0. No key change, no status change.
+
+Requests: resources.huygens.knaw.nl 77 (2 control pages 397-398, 3 negative pages, 70 target pages of which 2 were HTTP 500 on unpadded names
+[81, 99], 2 padded re-fetches), all >= 2.2 s apart, descriptive UA, no 429/403. WebSearch 0, vision 0, subagents 0.
+
+## Verdict (D2-HEIN, 8 Oct 2026)
+
+**Status: open (unchanged).** The small-number re-grep of the 70 Deel 2 pages finds no further cipher; the 1703 system's extent in print is
+still letters 341, 929, 1017, and its key is still not located in print.
+
+## Next step (cheap, depends on no one; updated D2-HEIN, 8 Oct 2026)
+1. [done, D2-HEIN 8 Oct 2026] Small-number re-grep of the 70 Deel 2 pages A2P4 read: no cipher run beyond letters 341/1017 (`small_runs_D2HEIN.tsv`).
 2. [done, R12A-HEIN 6 Oct 2026] Deel 3 (1704): all 103 H.A. 918 pages read (R11A-HEIN3 87, R12A-HEIN 16); no cipher beyond letter 588.
 3. Ask the NA (REQUEST.md) to include H.A. 918 beside H.A. 841, so d'Alonne's decipherment of the 1704 letter can be compared with its cipher.
 
 ## While waiting
-The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: next step 1 above.
+The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that (optional, ~USD 1): run `small_runs.py` over the rest of
+Deel 2 (pages without a Haersolte hit), since a ciphered passage's heading OCR may miss the name; next step 1 is done.
