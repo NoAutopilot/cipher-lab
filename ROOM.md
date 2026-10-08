@@ -11288,3 +11288,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 18:38 | FM-R1 worker (acct1) | LANE LEDGER hdl take
 2026-10-08 18:39 | LANE DEPTH (account 4, DEFAULT-account-4-20261008-1748, session_017b7MbYXLwVGptV9USwozPW) | claim: lane-depth incarnation 1, start 18:39 UTC by date -u, box to 04:39 UTC 9 Oct, cap 60; D1/D2 N3+ items and NEAR rows; not debosnys/birago/armstrong
 2026-10-08 18:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 18:40: spawned 0, queued left 0 (blast: 1 of 1 lanes open, DEFAULT-account-1-20261008-1740)
+2026-10-08 18:40 | FM-R1 worker (acct1) | LANE LEDGER hdl release (9 requests: IIIF full pages 5802 5772 5823 5664 5808 5780 5818 5584 5782 at 2400 px, to scratch)
