@@ -67,6 +67,17 @@ What it must NOT block (also tested):
 A non-partial target that does carry the sections is checked for format too (a malformed section is still wrong),
 but never required to have them.
 
+Siblings (SUCCESS-SIBS, 8 Oct 2026). A success must propagate to its siblings by construction: on 3 Oct 2026 the solve
+of na-oldenbarnevelt-2442-1605 blocks B/C1 never triggered a look at leaves 4, 5, 7 of its own volume, because the
+observation sat in a body paragraph. So a target whose status.json `results` row reaches N3 or better (the
+`plaintext_novelty` field, else the N-class in `grade`; any audit count; a row carrying `qa_flag` is ignored) must
+carry a "## Siblings" heading (e.g. "## Siblings (8 Oct 2026)") in its NOTES.md, whatever its status word; without
+one it FAILs. The status file is <ciphers-dir>/../status.json unless --status-json names another; when it is absent no
+target needs the section. CATCH (tested): an N3 row's folder with no "## Siblings" section, also when the target is
+`solved`/`open` and would otherwise SKIP. NOT BLOCK (tested): the same folder once the section exists; an N2/N1/N0
+row's folder (and a qa_flag N3 row's folder) with no section; a "Siblings" word in body prose is not the heading.
+--all also checks every N3+ folder, not only `partial` ones.
+
 Output: one line per target -- "OK parked", "OK keep-going (N internal gaps, M steps untried)", "FAIL: reasons",
 or "SKIP" -- then a summary line. Exit 0 when nothing FAILs, 1 on any FAIL, 2 on a usage error (unknown target).
 Offline; reads files only. Status words are read with tools/next_steps.py's first_status_word (rule 5 vocabulary,
@@ -88,6 +99,8 @@ BLOCKERS = OUTSIDE + INTERNAL
 STEPS = ("siblings", "clear-pages", "known-keys", "print", "key-rebuild", "image-check", "retry")
 MARKS = ("x", "n/a", "retired", " ")
 
+SIB_HEAD = re.compile(r"^##\s+Siblings\b", re.I)
+NCLASS = re.compile(r"\bN([0-5])\b")
 GAPS_HEAD = re.compile(r"^##\s+Remaining gaps\b", re.I)
 ESC_HEAD = re.compile(r"^##\s+Escalation\b", re.I)
 ANY_HEAD = re.compile(r"^#{1,2}\s")
@@ -226,9 +239,34 @@ def parse_escalation(body, problems):
     return steps, verdict
 
 
-def check_text(text, status):
-    """Check one NOTES.md body. Returns (kind, message): kind in OK-parked, OK-keep, FAIL, SKIP."""
+def n3_folders(status_path):
+    """Folder names (under ciphers/) of status.json `results` rows at N3 or better, qa_flag rows left out."""
+    import json
+    if not status_path or not os.path.exists(status_path):
+        return set()
+    try:
+        rows = json.load(open(status_path, encoding="utf-8")).get("results", [])
+    except (ValueError, OSError):
+        return set()
+    out = set()
+    for r in rows:
+        if r.get("qa_flag"):
+            continue
+        m = NCLASS.search(r.get("plaintext_novelty") or "") or NCLASS.search(r.get("grade") or "")
+        f = re.search(r"ciphers/([\w.-]+)", r.get("link") or "")
+        if m and int(m.group(1)) >= 3 and f:
+            out.add(f.group(1))
+    return out
+
+
+def check_text(text, status, needs_siblings=False):
+    """Check one NOTES.md body. Returns (kind, message): kind in OK-parked, OK-keep, FAIL, SKIP.
+    needs_siblings: the target has an N3+ status.json row, so a "## Siblings" section is required."""
     lines = unfenced(text.splitlines())
+    if needs_siblings and not any(SIB_HEAD.match(l) for l in lines):
+        kind, msg = check_text(text, status)
+        extra = "N3+ result in status.json but no '## Siblings' section (SUCCESS-SIBS, 8 Oct 2026)"
+        return "FAIL", extra + ("; " + msg if kind == "FAIL" else "")
     gaps_body = last_section(lines, GAPS_HEAD)
     esc_body = last_section(lines, ESC_HEAD)
     if status != "partial" and gaps_body is None and esc_body is None:
@@ -267,12 +305,12 @@ def check_text(text, status):
     return "OK-keep", "keep going: %d internal gap(s), %d step(s) untried" % (len(internal), len(untried))
 
 
-def check_target(ciphers_dir, target):
+def check_target(ciphers_dir, target, n3=frozenset()):
     path = os.path.join(ciphers_dir, target, "NOTES.md")
     if not os.path.exists(path):
         return None
     text = open(path, encoding="utf-8").read()
-    return check_text(text, first_status_word(text))
+    return check_text(text, first_status_word(text), needs_siblings=target in n3)
 
 
 def partial_targets(ciphers_dir):
@@ -290,16 +328,20 @@ def main(argv=None, out=sys.stdout):
     ap.add_argument("targets", nargs="*", help="target folder names under ciphers/ (or paths to them)")
     ap.add_argument("--all", action="store_true", help="check every target whose NOTES.md status is partial")
     ap.add_argument("--ciphers-dir", default=os.path.join(ROOT, "ciphers"), help="default: the repository's ciphers/")
+    ap.add_argument("--status-json", default=None,
+                    help="status.json whose N3+ result rows require a '## Siblings' section (default: <ciphers-dir>/../status.json)")
     args = ap.parse_args(argv)
+    n3 = n3_folders(args.status_json or os.path.join(os.path.dirname(os.path.abspath(args.ciphers_dir)), "status.json"))
     targets = [os.path.basename(os.path.normpath(t)) for t in args.targets]
     if args.all:
         targets += [t for t in partial_targets(args.ciphers_dir) if t not in targets]
+        targets += [t for t in sorted(n3) if t not in targets and os.path.isdir(os.path.join(args.ciphers_dir, t))]
     if not targets:
         ap.error("name a target or pass --all")
     counts = {"OK-parked": 0, "OK-keep": 0, "FAIL": 0, "SKIP": 0}
     usage_error = False
     for t in targets:
-        r = check_target(args.ciphers_dir, t)
+        r = check_target(args.ciphers_dir, t, n3)
         if r is None:
             print("ERROR %s: no NOTES.md under %s" % (t, args.ciphers_dir), file=out)
             usage_error = True

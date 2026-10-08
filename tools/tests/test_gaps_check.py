@@ -255,6 +255,62 @@ def test_help_works():
         assert e.code == 0
 
 
+# --- Siblings rule (SUCCESS-SIBS, 8 Oct 2026): an N3+ status.json row requires a "## Siblings" section ---
+
+def _status(tmp_path, rows):
+    import json
+    p = os.path.join(str(tmp_path), "status.json")
+    json.dump({"results": rows}, open(p, "w"))
+    return p
+
+
+def _row(folder, novelty, **kw):
+    r = {"title": folder, "link": "https://github.com/x/y/tree/main/ciphers/%s" % folder, "plaintext_novelty": novelty,
+         "grade": novelty + " (one audit)"}
+    r.update(kw)
+    return r
+
+
+def test_n3_row_without_siblings_section_fails_even_if_solved(tmp_path):
+    cdir = make(tmp_path, "t-n3", "solved")
+    sj = _status(tmp_path, [_row("t-n3", "N3")])
+    out = io.StringIO()
+    code = gc.main(["t-n3", "--ciphers-dir", cdir, "--status-json", sj], out=out)
+    assert code == 1 and "no '## Siblings' section" in out.getvalue(), out.getvalue()
+
+
+def test_n3_row_with_siblings_section_passes(tmp_path):
+    cdir = make(tmp_path, "t-n3", "solved\n\nBody text mentions Siblings in prose.\n\n## Siblings (8 Oct 2026)\n- f.12 same-volume unread\n")
+    sj = _status(tmp_path, [_row("t-n3", "N4")])
+    out = io.StringIO()
+    code = gc.main(["t-n3", "--ciphers-dir", cdir, "--status-json", sj], out=out)
+    assert code == 0 and "SKIP t-n3" in out.getvalue(), out.getvalue()
+
+
+def test_siblings_word_in_prose_is_not_the_heading(tmp_path):
+    cdir = make(tmp_path, "t-n3", "solved\n\nSiblings in the same volume were not read.\n")
+    sj = _status(tmp_path, [_row("t-n3", "N3")])
+    out = io.StringIO()
+    assert gc.main(["t-n3", "--ciphers-dir", cdir, "--status-json", sj], out=out) == 1
+
+
+def test_below_n3_and_qa_flag_rows_need_no_siblings(tmp_path):
+    make(tmp_path, "t-n2", "solved")
+    cdir = make(tmp_path, "t-qa", "solved")
+    sj = _status(tmp_path, [_row("t-n2", "N2"), _row("t-qa", "N4", qa_flag="held")])
+    out = io.StringIO()
+    code = gc.main(["t-n2", "t-qa", "--ciphers-dir", cdir, "--status-json", sj], out=out)
+    assert code == 0, out.getvalue()
+
+
+def test_all_includes_n3_folders_that_are_not_partial(tmp_path):
+    cdir = make(tmp_path, "t-n3", "Status: open")
+    sj = _status(tmp_path, [_row("t-n3", "N3")])
+    out = io.StringIO()
+    code = gc.main(["--all", "--ciphers-dir", cdir, "--status-json", sj], out=out)
+    assert code == 1 and "FAIL t-n3" in out.getvalue(), out.getvalue()
+
+
 if __name__ == "__main__":
     # Plain-python fallback (no pytest needed): run every test_* with a fresh temporary tmp_path.
     import inspect
