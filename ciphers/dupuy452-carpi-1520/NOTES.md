@@ -579,3 +579,5 @@ decipherment, volume not digitised. No test run. Rows: `keyhunt/2026-10-07-KH1A.
 BnF fr.3091 (btv1b9060253s) canvas 50 (about f.46-47, unlabelled): both pages full cipher, no gloss seen; BnF Dupuy 265 f.336r
 (canvas 687, btv1b52515673w): three inline numeral/symbol lines, no gloss (1535, outside the key window). Key unknown; next: view
 at native scale and compare sign set with key.tsv, ~USD 0.5. Screen only; SA-G2 did not transcribe. Details keyhunt/2026-10-07-SAG2.tsv.
+
+Correction (KH-CS3, 8 Oct 2026, for SA-G2's fr.3091 c50 line above): fr.3091 c50 is **no.23, Gramont to Montmorency, Rome, 11 Oct 1529** (ff.45r-47v, c49-52), in Gramont's cipher (1529). It was read by Lasry (Tomokiyo GL.htm, "Gramont's Cipher (1529): BnF fr.3040, BnF fr.3091") and in full by Bourdeau (cyphersolver `targets/gramont1529/`, 18 Sept 2026). It is not an unread leaf and not this key.

@@ -1545,3 +1545,4 @@ stays unlocated (N8-GRA). No test run. Rows: `keyhunt/2026-10-07-KH1A.tsv`.
 
 ## Unread sibling found (SA-G3, 7 Oct 2026)
 BnF fr.3053 (btv1b90601432) canvases 16 (p.7) and 34 (p.17): full symbol-cipher leaves, no decipherment seen on c34, marginal/inline text on c16 unchecked. Key unknown (screened at 520 px sheet scale only, 6 of 162 canvases). Next step: view c16/c34 at 700 px, compare sign inventory with the held Gramont key, ~USD 0.8. Source: keyhunt/2026-10-07-SAG3.tsv.
+Correction (KH-CS3, 8 Oct 2026): not the Gramont family. fr.3053 c16 (f.7, in BnF item 3, f.6, 29 Jan 1536 o.s.) and c34 (f.17r, item 5, f.16, 9 Feb 1536 o.s.) are dispatches of Charles Hémard de Denonville, cardinal of Mâcon, to Montmorency (DECODE R4233/R4234), in "Mascon's cipher". Bourdeau (cyphersolver `targets/rome1536/`, 21-22 Sept 2026) has already read them at ~95 %/~94 %. found-solved; see ciphers/fr3053-macon-1536/NOTES.md.
