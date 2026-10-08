@@ -97,3 +97,14 @@ are leaf order, a different start on the slip, or sign confusions. Settle it at 
 
 Requests this job: gallica.bnf.fr 4 (manifest 1, two 1000-px views, 1 native region); github.com 2 shallow clones (read
 only). Subagents: 2 Sonnet blind passes.
+
+## CEPPO-4702 (account 4): intake gate failed, no deep work done (08 Oct 2026, 13:38 UTC by date -u)
+
+The brief (`.claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md`, section CEPPO-4702) asked for the 136 splits to be reconciled, then a re-decode and the judge.
+The intake gate was run first, as required:
+`python3 tools/intake_gate_check.py ceppo-nevers-fr4702-f36` printed "open (line 1) names an edition not read ('unread' within 6
+lines) -- CLAUDE.md's Pipeline intake gate says this must read `blocked` instead" and exited 1. This folder still has no
+check-solved verdict and no "## Premise check". The edition and threads not yet read are Gomberville 1665, the Italian Ceppo
+editions, web search and the Cipherbrain/Cryptiana threads (see "Searched" above). SIBS-PREMISE (8 Oct 2026) read only the disk, so it is not a check-solved verdict.
+No reconciliation, decode or judge run was done, and no file other than this section changed. The WORK-QUEUE row is bounced.
+Next: run the check-solved workflow with its Premise check on this folder (~$2-3). Then re-queue CEPPO-4702 unchanged.
