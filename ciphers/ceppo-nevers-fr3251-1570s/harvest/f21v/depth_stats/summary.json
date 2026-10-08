@@ -1,0 +1,46 @@
+{
+ "tokens": 267,
+ "grades": {
+  "M": 60,
+  "S": 195,
+  "I": 7,
+  "U": 5
+ },
+ "hcs": 195,
+ "hcs_pct": 73.0,
+ "primary_run": 20,
+ "primary_run_text": "o p t a q u e s t a c a r i c a s a d i",
+ "secondary_run": 20,
+ "secondary_run_text": "o p t a q u e s t a c a r i c a s a d i",
+ "H_model_bits": 2.584,
+ "R": 2.116,
+ "V": 20,
+ "distinct_cipher_codes": 35,
+ "H_design": 151.3,
+ "H_lib": 81.6,
+ "H_K": 232.9,
+ "unicity": 110.0,
+ "primary_run_m_through": 39,
+ "primary_run_m_through_text": "r a n s e i n t e n c i o n e m o p t a q u e s t a c a r i c a s a d i q u a",
+ "AD": 165.0,
+ "AD_R3_4": 102.7,
+ "cipher_clause": false,
+ "cipher_clause_m_through": false,
+ "stat_i_target": 160,
+ "stat_i_p95": 118,
+ "stat_i_max": 210,
+ "stat_i_pass": true,
+ "n_shuffles": 200,
+ "seeds": "8100-8299",
+ "shuffle": "classes",
+ "cipher_class": "len<=3",
+ "recurring_codes": {
+  "S67": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 1
+  }
+ },
+ "wordlist_size": 10228
+}

@@ -1031,7 +1031,7 @@ verifier's to move, not this worker's: L11.17 is one more tile that, if endorsed
 Read so far: 421 of 682 tokens at S across the four letters (f.11r 53/135, f.21v 195/267 after CEPPO-SPLITS, BIRAGO-SMALL, D22-CEPPO21 and D07-CEP21, f.35 35/76, f.87 138/204, the
 HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short passages, no continuous text; judge FAIL
 on every folio.
-- f.21v, 60 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026), and the S65/S80 pair is read by the R-8 witness shape on 4x tiles (D22-CEPPO21, 6 Oct 2026: 26 of 27 8-tokens decided, every one agreeing with its passD label; 5 M -> S where shape and score agree; L01.10, L11.9 stay M (score prefers the other value), L03.39 undecided; verifier wanted for the 5); S10/S26 and S13/S69 read by the R-g/R-bar witness shape on 4x tiles (D07-CEP21, 7 Oct 2026: S10/S26 both print s, value-neutral; L10.6 S69 -> X_THETA2 r at S, judge -1.135 -> -1.128; L06.2.15 UNDECIDED at the gutter, L06.2.12 stays M; L10.6 endorsed at S by verifier D07-CEPV, 7 Oct 2026); next: a verifier on the D22 S tokens (5), then the remaining f.21v split pairs in `harvest/f21v/lookalike/confusion.tsv` (S60/S69 L06.2.12 is done; the next pair by count), ~$3.
+- f.21v, 60 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS; L11.17 by BIRAGO-SMALL, endorsed by VERIFY-BIRAGO-SMALL 3 Oct 2026), and the S65/S80 pair is read by the R-8 witness shape on 4x tiles (D22-CEPPO21, 6 Oct 2026: 26 of 27 8-tokens decided, every one agreeing with its passD label; 5 M -> S where shape and score agree; L01.10, L11.9 stay M (score prefers the other value), L03.39 undecided; verifier wanted for the 5); S10/S26 and S13/S69 read by the R-g/R-bar witness shape on 4x tiles (D07-CEP21, 7 Oct 2026: S10/S26 both print s, value-neutral; L10.6 S69 -> X_THETA2 r at S, judge -1.135 -> -1.128; L06.2.15 UNDECIDED at the gutter, L06.2.12 stays M; L10.6 endorsed at S by verifier D07-CEPV, 7 Oct 2026); D22's five S endorsed by D4V-CEPPO (8 Oct 2026); D2-CEP21M (8 Oct 2026): f.21v: no split pair bridges AD (longest run 20 vs AD 165; no passage is longer than 39 letters, `harvest/f21v/depth_gap.tsv`), so a split pair can raise S% but cannot lift depth; next: the remaining split pairs in `harvest/f21v/lookalike/confusion.tsv` for coverage only (D1 stays whatever they give), ~$3.
 - f.87, 62 M + 4 U tokens of 204 (S 138) - blocker: not-attempted; hash and 8 pairs judged by the f.36 witness rules (CEPPO-WITNESS-PAIRS, VERIFY-CEPPO-WP, 3 Oct 2026: 7 applied, L04.41/L05.42 t at M contested, L02.35 rejected); L04.39 read barred by both blind readers but gate (iii) fails, S65 kept at M (A1B-CEPPO-87); S31/S32/S76 still have no witness rule (no agreed gloss on f.36r S31 x2, f.37r S76 (A1B-CEPPO-87), nor on f.36v S32 x1 and S76/S58 x5 (A1B-CEPPO-36V, 3 Oct 2026, 2 blind Sonnet reads each); f.36v S76/S58 x3 carry a two-stroke gloss both readers see (ii/ll/11, not z) but name no letter); D1-CEPPO (6 Oct 2026): a third, blind Opus reader on a1b36v T1-T6 gives 2-of-3 agreement on one tile only (T4, "ll" over S76/S58, against printed z; logged as a data conflict in HYPOTHESES.md); the same reader reads the same looped sign as "ss" on T5/T6, so no shape rule; f.87's six S76 tokens were already M, no grade change; next: the owner's sign sorter for the S31/S32/S76 looped family (sorter/), or a further glossed Birago/Ceppo leaf with the looped sign -- blind model reads of the a1b36v tiles are [retired] (three readers, A1B-CEPPO-36V + D1-CEPPO)
 - f.11r, 12 I tokens (the pound sign read l from context) - blocker: no-key-material; every witness on disk or one fetch away is now searched: ff.27/39/82 (A1B-CEPPO-POUND), fr.3252 f.36r/f.36v/f.37r + slip (A1B-CEPPO-36: one occurrence, gloss not legible blind), fr.3252 f.47r (A1B-CEPPO-11V, 3 Oct 2026: 0 X_POUND labels in passA/passB/recon, and the leaf carries no interlinear gloss, so no glossed occurrence is possible), f.11v (A1B-CEPPO-11V: show-through of f.11r and a docket only, no cipher, no decipherment); stays I under PREREG c5412f90. f.117r is not a gloss source either (no slip or clear copy, birago Premise check (c)) and waits on the owner's sorter; reopens only with a new glossed Birago/Ceppo leaf.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
@@ -1045,7 +1045,7 @@ on every folio.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: the next f.21v split pair by count (D22-CEPPO21's five S endorsed by D4V-CEPPO 8 Oct 2026, endorsed S 162/267; D07-CEP21 L10.6 endorsed by D07-CEPV 7 Oct 2026); f.21v S10/S26 and S13/S69 read 7 Oct 2026 (D07-CEP21, L10.6 f -> r); f.21v S65/S80 read 6 Oct 2026 (D22-CEPPO21, 5 M -> S); f.36v S76/S58 gloss tiles read by three blind readers (A1B-CEPPO-36V 2 Sonnet, D1-CEPPO 1 Opus, 6 Oct 2026): one tile agrees on "ll" (data conflict with printed z), no rule -- [retired] instrument: blind model reads of the a1b36v tiles; L04.39 and f.36r/f.37r S31/S76 tried 3 Oct 2026 (A1B-CEPPO-87), L04.39 to M, no gloss; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
+Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: the next f.21v split pair by count, for coverage only -- D2-CEP21M (8 Oct 2026) showed no f.21v passage (max 39 letters) can reach AD 165, so no pair lifts depth (D22-CEPPO21's five S endorsed by D4V-CEPPO 8 Oct 2026, endorsed S 162/267; D07-CEP21 L10.6 endorsed by D07-CEPV 7 Oct 2026); f.21v S10/S26 and S13/S69 read 7 Oct 2026 (D07-CEP21, L10.6 f -> r); f.21v S65/S80 read 6 Oct 2026 (D22-CEPPO21, 5 M -> S); f.36v S76/S58 gloss tiles read by three blind readers (A1B-CEPPO-36V 2 Sonnet, D1-CEPPO 1 Opus, 6 Oct 2026): one tile agrees on "ll" (data conflict with printed z), no rule -- [retired] instrument: blind model reads of the a1b36v tiles; L04.39 and f.36r/f.37r S31/S76 tried 3 Oct 2026 (A1B-CEPPO-87), L04.39 to M, no gloss; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
 
 ## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
 
@@ -1508,3 +1508,43 @@ because D22's stored L09.5 centre (`cut_r8_tiles.py` x 650) is on the neighbour 
 S53 and S23 as passD has it. All five **hold S**; verifier-endorsed f.21v S 157 -> **162 of 267 (60.7%)**; letters, judge, depth (D1)
 and N3 unchanged; status.json and PROGRESS.tsv updated. Suggestion (not applied): correct L09.5 to x 720 in `cut_r8_tiles.py`.
 Details: AUDIT.md "AUDIT (D4V-CEPPO)". Hosts: none (0 network requests).
+
+## D2-CEP21M (8 Oct 2026)
+
+Worker for LANE DEPTH (account 4), brief `.claude/briefs/runs/2026-10-08-acct4-depth-2136-jobs.md` section D2-CEP21M; clock 21:44
+UTC at start (date -u). Disk only, 0 network requests. No depth is ruled here (a separate verifier does); depth bar
+`.claude/briefs/runs/2026-10-08-acct3-depth-bar.md` applied as written.
+
+**Prior-work check 1.** ROOM.md last ~300 lines: no live claim on this folder in the last 6 h other than this job's own (21:44);
+the f.21v sections D22-CEPPO21, D07-CEP21, CEPPO-SPLITS and AUDIT.md "AUDIT (D4V-CEPPO)" read (postmortem (a), L09.5 at x 720, noted;
+no tile was cut, so it did not arise).
+
+**Measurement (step 2), command pasted.** Key = `key_f11.tsv` + `key_extra.tsv` concatenated as `harvest/f21v/depth_key_f21v.tsv`
+(the two files decode.json names for f.21v).
+```
+python3 tools/depth_stats.py --tokens ciphers/ceppo-nevers-fr3251-1570s/harvest/reading_f21v_tokens.tsv \
+  --key ciphers/ceppo-nevers-fr3251-1570s/harvest/f21v/depth_key_f21v.tsv --cipher-class 'len<=3' --shuffle classes \
+  --seeds 8100-8299 --corpus tools/data/fr16 --break-lines --out ciphers/ceppo-nevers-fr3251-1570s/harvest/f21v/depth_stats
+python3 ciphers/ceppo-nevers-fr3251-1570s/harvest/f21v/depth_gap.py ciphers/ceppo-nevers-fr3251-1570s/harvest/f21v/depth_stats/summary.json
+```
+`--break-lines` because the passages (L01, L02.1 ... L11) are separated by clear prose. Grades read: S 195, M 60, I 7, U 5 of 267.
+- Longest primary H/C/S run: **20 letters** (L03, `optaquestacaricasadi`); with M let through (charged in H(K)): 39.
+- AD = 1.5 x H(K)/R = **165.0 letters** (H(K) 232.9 bits = design 151.3 [35 distinct cipher codes x log2 20] + liberties 81.6;
+  R 2.116 on fr16). At R = 3.4: 102.7. Design term alone, every liberty settled: 1.5 x 151.3 / 2.116 = 107.3.
+- cipher_clause false, cipher_clause_m_through false. Control (i) (corpus-word segmentation) 160 vs shuffle p95 118: a coverage
+  statistic, not the clause. Code class: the only recurring code-class sign is the NULL S67 (x2), which carries no reading.
+- Per breaking token (`harvest/f21v/depth_gap.tsv`, 73 rows: 60 M, 5 U, 7 I, 1 S NULL): the largest merged run if that one token
+  were S is **31** (L03.16 S74 m, joining 10 + 20); next 22 (L03.37), 18 (L05.23). The longest passage is **39 letters** (L01, L03),
+  so even every M/U/I token of one passage settled at once gives at most 39, against AD 165 (102.7 at R 3.4, 107.3 on design alone).
+
+**Result: f.21v: no split pair bridges AD (longest run 20 vs AD 165).** Stopped at step 2 as the brief directs; no prereg, no tile,
+no subagent, no grade change. The bound is structural: the cipher on this leaf comes in passages of at most 39 letters between clear
+words, so no transcription settlement on f.21v alone can produce the rule-4a cipher clause; a D2 for this letter would need a code
+clause (none: no code-class value recurs) or the passages treated as one stretch, which the depth bar does not allow across prose.
+Split pairs still raise S% (coverage) and remain the cheap internal step for that. `decode_key.py --check` not re-run (no grade or
+reading changed); judge unchanged (last: FAIL -1.128, D07-CEP21). Report: what was found and where it was not found; no novelty class.
+`python3 tools/gaps_check.py ceppo-nevers-fr3251-1570s`, pasted:
+```
+OK keep-going ceppo-nevers-fr3251-1570s: keep going: 2 internal gap(s), 0 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
