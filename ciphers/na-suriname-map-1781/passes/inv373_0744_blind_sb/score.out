@@ -1,0 +1,21 @@
+# pass A: reader [ij] 20, undotted y 53
+# pass A run 1 (gated): [ij] -> A3
+0744 before: pairs 21, signs 761, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 688, A 0.795; C1 mean 0.483 p99 0.518 max 0.532 -> SAME SYSTEM (DP)
+0744 after : pairs 21, signs 761, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 688, A 0.795; C1 mean 0.483 p99 0.518 max 0.532 -> SAME SYSTEM (DP); aliased tokens 20
+  0744 A3 -> [ij] (reader dotted): n_al 18, agree 15, share 0.833; C1 share mean 0.452 p99 0.700; scan A 0.795 -> 0.795 -> PASS
+  pass A PREREG gate (n_al >= 10): PASS
+# pass A run 2 (descriptive, no gate): undotted y -> A3
+0744 before: pairs 21, signs 761, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 688, A 0.795; C1 mean 0.483 p99 0.518 max 0.532 -> SAME SYSTEM (DP)
+0744 after : pairs 21, signs 761, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 688, A 0.795; C1 mean 0.483 p99 0.518 max 0.532 -> SAME SYSTEM (DP); aliased tokens 53
+  0744 A3 -> [ij] (reader dotted): n_al 49, agree 40, share 0.816; C1 share mean 0.392 p99 0.522; scan A 0.795 -> 0.795 -> PASS
+# pass B: reader [ij] 19, undotted y 53
+# pass B run 1 (gated): [ij] -> A3
+0744 before: pairs 21, signs 771, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 691, A 0.783; C1 mean 0.481 p99 0.521 max 0.542 -> SAME SYSTEM (DP)
+0744 after : pairs 21, signs 771, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 691, A 0.783; C1 mean 0.481 p99 0.521 max 0.542 -> SAME SYSTEM (DP); aliased tokens 19
+  0744 A3 -> [ij] (reader dotted): n_al 18, agree 13, share 0.722; C1 share mean 0.435 p99 0.688; scan A 0.783 -> 0.783 -> PASS
+  pass B PREREG gate (n_al >= 10): PASS
+# pass B run 2 (descriptive, no gate): undotted y -> A3
+0744 before: pairs 21, signs 771, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 691, A 0.783; C1 mean 0.481 p99 0.521 max 0.542 -> SAME SYSTEM (DP)
+0744 after : pairs 21, signs 771, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 691, A 0.783; C1 mean 0.481 p99 0.521 max 0.542 -> SAME SYSTEM (DP); aliased tokens 53
+  0744 A3 -> [ij] (reader dotted): n_al 49, agree 39, share 0.796; C1 share mean 0.392 p99 0.531; scan A 0.783 -> 0.783 -> PASS
+UNIT VERDICT (0744 left, [ij] in m|n): PASS  [A PASS; B PASS]
