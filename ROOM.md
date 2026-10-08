@@ -11506,3 +11506,5 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 22:21 | MANT-FIX (Sonnet, session_01RALWiLVDicXSjVRJeUSPT5) | done (22:19-22:22 UTC by date -u, brief met), commit 1721e6c5e: f0390_08 fixes applied (0391 r4 tok5 39, 0390 r9 tok3 9, 0391 r5 tok1 160 M, 217 x4 / 266 / 227 / 257 added); tokens 89 -> 95, C 58 M 37; --check exit 0; pooled gate PASS 0/1000 (-1.483 -> -1.373), frame 0390 307 -> 58/1000, 0485 still FAIL 16/1000; AUDIT lines added, SO-MANT-0839 unchanged; guard ok, gaps_check keep-going; 0 network requests; for LANE FAMILY (account 2)
 2026-10-08 22:21 | SUR-BLIND (worker, Opus) | NA take (service.archief.nl, inv. 373 scans 0743-0745/0701/0703, <=20 requests) -- for LANE FAMILY (account 2)
 2026-10-08 22:21 | W11008-KP | huygens take (Groen III pp.448-449 OCR)
+2026-10-08 22:19 | MANT-0609X (worker, LANE FAMILY-A2c) | claim: sachsstaatsarchiv-manteuffel-1712 mant0609/ -- Loc. 694/09 stride-3 frame inventory (contact sheets + top-6 native looks), cap USD 4, box ends 23:48 UTC 8 Oct; for LANE FAMILY (account 2)
+2026-10-08 22:22 | MANT-0609X (worker, LANE FAMILY-A2c) | sachsen take
