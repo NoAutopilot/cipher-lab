@@ -7782,9 +7782,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM3a)'"
+        "AUDIT.md '## AUDIT (FV-FM3a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-5)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM3a verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7804,8 +7805,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): McAlpine (City Point) to E. L. Wentz via Fort Monroe, 6 Oct 1864, extending the military railroad beyond Warren to Peebles House (E172)",
-      "line": "Read at grade H with Cipher No. 1: on 6 Oct 1864 C. L. McAlpine at City Point tells E. L. Wentz, through Fort Monroe, that Meade (via Ingalls) wants the military railroad extended beyond Warren to Peebles House, two miles, and that he cannot begin until the ties for Alexandria are sent; not located in the Official Records ser. I vol. 42, Grant Papers vol. 12 or the Huntington full text (searched 8 Oct 2026).",
-      "gap": "N3: received copy (mssEC 09-11) not on disk; press, Google Books (429) unread; railroad unit 'I urn ... no chairs' M",
+      "line": "Read at grade H with Cipher No. 1: on 6 Oct 1864 C. L. McAlpine at City Point tells E. L. Wentz, through Fort Monroe, that Ingalls reports Meade wants the military railroad extended beyond Warren to Peebles House, two miles, and that he cannot begin until the ties for Alexandria are sent. Meade's wish to have the railroad extended to Peebles' farm is printed in Ingalls's and Williams's exchange of 31 Oct 1864 (Official Records ser. I vol. 42 pt 3 p.445); this 6 Oct telegram was not located there, in Grant Papers vol. 12 or in the Huntington's full text (searched 8 Oct 2026).",
+      "gap": "N3: received copy (mssEC 09-11) not on disk; press, Google Books (429) unread; railroad unit 'I urn ... no chairs' M; second audit AUD2-LEDGER-5 (8 Oct 2026): N3 D2 held; related later print found (Ingalls-Williams 31 Oct 1864, OR I/42 pt 3 p.445, Meade's wish to extend the railroad to Peebles' farm), not this telegram; the received copy not located in the Huntington's transcriptions",
       "depth": "D2",
       "completeness": "15 H by hand of 16 decoder H ('Washington' in the address an artefact); 'a plation', 'I urn paws', 'no chairs pause' M; signer C. L. McAlpine plain",
       "phrases": [
@@ -7823,9 +7824,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM3a)'"
+        "AUDIT.md '## AUDIT (FV-FM3a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-5)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM3a verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7846,7 +7848,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): J. A. Kress (Fort Monroe) to Turner, chief of staff, 26 Dec 1864: Dodge's letter from Beaufort, rations and ordnance for the Fort Fisher expedition (E173)",
       "line": "Read at grade H with Cipher No. 1: on 26 Dec 1864 John A. Kress at Fort Monroe tells Butler's chief of staff Turner that a letter from Colonel Dodge dated Beaufort the 24th said no troops had landed, that forty days' rations but no ordnance stores had been sent since the expedition sailed, and that there is a large supply of ammunition at New Berne; not located in the Official Records ser. I vol. 42 or Butler's printed correspondence (searched 8 Oct 2026).",
-      "gap": "N3: Grant Papers vol. 13 not reachable on IA; press, Google Books (429), Butler letterbooks unread",
+      "gap": "N3: Grant Papers vol. 13 not reachable on IA; press, Google Books (429), Butler letterbooks unread; second audit AUD2-LEDGER-5 (8 Oct 2026): N3 D2 held; Grant Papers vol. 13 unreachable by four routes (IA, Google Books 429, MSU PDF 403, HTRC EF 500)",
       "depth": "D2",
       "completeness": "18 H of 18 code-word groups ('Dodge', 'ordnance', 'John' plain, decoder H wrong on each)",
       "phrases": [
@@ -7864,9 +7866,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM3a)'"
+        "AUDIT.md '## AUDIT (FV-FM3a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-5)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM3a verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7887,7 +7890,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): O'Brien (Hd Qrs A. of J.) for Col. Dodge to Fort Monroe, 8 Dec 1864: steamers Albany, United States and Dupont (E177)",
       "line": "Read at grade H with Cipher No. 1: on 8 Dec 1864 O'Brien, for Colonel Dodge, tells Fort Monroe (for Colonel Webster) that the Albany and United States are coming with horses to be transferred to other steamers, to hold the Dupont, and to ready two ocean steamers; not located in the Official Records ser. I vol. 42 (searched 8 Oct 2026).",
-      "gap": "N3: Grant Papers vol. 13 not reachable on IA; press, Google Books (429) unread; decoder puts the body in {tail} (header 'webster' read as signature)",
+      "gap": "N3: Grant Papers vol. 13 not reachable on IA; press, Google Books (429) unread; decoder puts the body in {tail} (header 'webster' read as signature); second audit AUD2-LEDGER-5 (8 Oct 2026): N3 D2 held; Grant Papers vol. 13 unreachable by four routes (IA, Google Books 429, MSU PDF 403, HTRC EF 500)",
       "depth": "D2",
       "completeness": "about 20 H of code-word groups; 'flight' x2 and the filler 'many weaselers form flights' M; Webster (addressee) and Dodge (signer) plain",
       "phrases": [

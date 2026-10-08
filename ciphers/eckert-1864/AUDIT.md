@@ -5932,3 +5932,94 @@ Safe sentences (rule 10 wording; "first", "unpublished", "never printed" are uns
   are in its output. Subagents 0.
 - Rows written: status.json results 223-227 (`audit_status` "two audits", `audit_refs`, E175 and E178 class, E178 `text` known);
   SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E178 withdrawn (N1), SO-ECKERT-E175 prompt corrected (weak, date); WORK-QUEUE AUD2-LEDGER-6 done.
+
+## AUDIT 2 (AUD2-LEDGER-5)
+
+Verifier AUD2-LEDGER-5 (account 3, for LANE VERIFY-3, session_012uvySuug4DxhSygZiYM31x), 8 Oct 2026, 21:43-22:2x UTC by `date -u`.
+Second adversarial audit of **E172, E173, E177** (first audit "## AUDIT (FV-FM3a)", account 1; reader FM-R2a, account 1). Account 3
+neither read nor first-audited any of the three. Not decoded; key look-ups only. E170 (N1) and E174 (N2) not re-audited (brief: only if
+cheap; nothing found that bears on them).
+
+### 1. Duplicate diff and prior-work checks 3-5
+- **Duplicate diff:** pointer, date and addressee of 5787/2 (6 Oct 1864, Eckert for Wentz), 5840/0 (26 Dec 1864, O'Brien for Turner),
+  5823/0 (8 Dec 1864, Sheldon from O'Brien) against every `###` header of ciphertext*.txt and status.json: only E163 (5823/1, a different
+  entry) shares a pointer. **No duplicate.** Ledger order confirms E172's date: page 243 entry 2 sits between 4 and 5 Oct (entries 0-1) and
+  page 244's Eckert reply of 6 Oct and Sheldon's 7 Oct (`fortmonroe/entries-fm.tsv`), so "Oct. 6" is not a misread for a later date.
+- **`tools/prior_work.py --step-type second-audit --fetch`** (no items.tsv rows for these IDs, so `--item-spec` with shelfmark mssEC 25,
+  page, pointer, date, sender, recipient), then `--reading <file> --network` (G3) per item. Output (verdict lines):
+  E172 plaintext KNOWN / step LEAD; E173 plaintext UNCHECKED-NET / step LEAD; E177 plaintext UNCHECKED-NET / step LEAD.
+  E172's three KNOWN rows are Tomokiyo `viete.htm` lines about Moreo's letter "f.243" (Colbert 33) -- a folio-number collision, not this
+  unit: **false positive**. 5-civil-war KNOWN-PART for all three = the clear words of the holder's own transcription (expected; the code
+  words are not in it). LEADs: own-work marker NOTES.md:2239 (FM-R2a's escalation list) and V1-KNOWN's target-level claim (neither covers
+  these items). G3: OR I/45 pt 2, ORN I/9-10, Butler IV: "6 decoded phrases, no hit" (all three); E177 also OR I/44, I/45 pt 1, I/46
+  pts 1-3, I/47 pts 1-3: no hit. The tool hit its per-item request cap before its IA-global and Google Books phrase passes and before
+  OR I/48-49 (UNCHECKED-NET); IA-global was then run by hand (below).
+- **Holder's transcription and the received copy (Huntington CONTENTdm, p16003coll11, CISOSEARCHALL word-AND, 16 queries, 3.2 s apart,
+  under the "LANE VERIFY-3 hdl take" line):** wentz 11 hits (5787 = E172; 7886, 12821, 13017, 13025 other Wentzes or other dates; 9821
+  Aug 1864; 7744 Feb 1865; 6745 1862; 10516 = **mssEC 10** "Received" book, a clear City Point -> Wentz, Alexandria telegram of 22 July
+  1864 signed C. S. McAlpine, the same correspondents three months earlier; 11297); "peebles house" 1 hit (5787 only); mcalpine 3 (8624,
+  5921 Mar 1865; 10516 above); "ties to alexandria" 0; kress 0; "no troops had landed" (word-AND) 4: 4601 May 1864, 5177 1863, 7702 Jan
+  1865 (California, Fort Fisher), 8581 -- none E173; "ordnance stores sent" 7 (5840 = E173; 6913, 8308 other years); "new berne" 5 (none
+  Dec 1864); "oceanic" 1 (5823 = E177 only); "united states leaves" 16 (5823 the only Dec 1864 hit in the list); "river steamers" 35,
+  "remaining infantry" 5, "large supply" 54 (5840 the only E173-matching record); "hold the dupont" connection reset, not retried.
+  **E172's War Department received copy** (the brief's mssEC 09-11 check; mssEC 10 is the Jan-July 1864 Received book, dmGetItemInfo 10550): Peebles is a plain word in the cipher text, so a received-book
+  copy transcribed by the volunteers would match "peebles house"; it matches only the Fort Monroe ledger. The received copy is **not
+  located in the holder's transcriptions** (the July 1864 McAlpine-Wentz telegram in mssEC 10 shows such traffic does reach those books).
+  mssEC 09-11 page images not read (unchecked beyond the full-text search).
+- **Sender's same-week letters, recipient-side and staff papers, same-day orders:** OR I/42 pt 3 (`warofrebellion423unit`) and pt 1
+  (`421unit`) `_djvu.txt`, Butler Corr. V (`privateofficialc05butl`), fetched to scratch and grepped: see section 2.
+- **Solver repositories / Tomokiyo:** cached cyphersolver, cyphersolver-site, bourdeau: CLEAR (prior_work.py); aaymeloglu: not cached,
+  unchecked; Tomokiyo: no row for mssEC 25 entries (only the folio collisions above).
+
+### 2. Print (sources reached, searched, result)
+| family | source | searched | result |
+|---|---|---|---|
+| Grant Papers vol. 13 (Nov 16 1864-Feb 20 1865; E173, E177) | IA | advancedsearch: vols 1-12, 14-20 only; `papersofulyssess0000unse` answers 0 to a "City Point" control (not indexed) | **unreachable** |
+| | Google Books API (`country=US`, key) | 2 calls | **429** daily quota, no retry loop: **unreachable** |
+| | MSU Scholars Junction (`usg-volumes/31`, viewcontent article=1030) | curl 403; headless Chromium: item page served, the PDF itself 403 (Cloudflare) on 2 attempts | **unreachable** |
+| | HathiTrust EF API (vol. 13 = `mdp.39015074927560`, `uc1.b3503290`, from the Bib API by OCLC 382397) | per-page token counts for Kress/Dupont/Peebles | **HTTP 500** "No primary node is available" on both htids (server-side), one retry: **unreachable** |
+| OR ser. I vol. 42 pt 3 | IA `_djvu.txt` grep | Peebles (all 40 lines), Wentz, McAlpine, Kress, "ordnance stores", "forty days", New Berne, "supply of ammunition", Du Pont, Albany, Weybosset, "ocean steamer", "river steamers", every 25-28 Dec heading read for Monroe/Beaufort/Turner/Dodge/Kress | E172: **related print, not this telegram** -- p.445 (from the OCR page numbers, +-1; the same convention FV-FM3a used), City Point, 31 Oct 1864, Ingalls to Williams: "Does General Meade wish the railroad extended toward the South Side road?"; Williams's reply: "General Meade will be glad to have the railroad extended as far as Peebles' farm, that being at present the left of our line." Also Ingalls to Meigs, 13 Oct (p.198, +-1): the railroad construction force wanted for "extending the City Point road around to the vicinity of the South Side road ... I trust Major Wentz has received orders". E173: nothing (Butler's 26-27 Dec orders and his 27 Dec 8 p.m. report "could not get out of Beaufort" are context only; Kress appears only in a 28 Nov siege-train report, p.736). E177: nothing. |
+| OR ser. I vol. 42 pt 1 | IA `_djvu.txt` grep | same terms | Peebles' farm/house in reports only; nothing for the three |
+| Butler, Private and Official Corr. vol. V | IA `_djvu.txt` grep | Kress, Dodge, Dupont, Albany, Dec 8 and Dec 24-28 headings | Kress only 30 Sept 1864 (Grant: "your ordnance officer, Lt. Kress, to Ft. Monroe"); Butler to Dodge 2 and 7 Dec ("The 'Baltic' is at Annapolis. Get her."): context, not E177; nothing for the three |
+| IA full text, global (be-api, exact phrase) | 8 phrases | "extended beyond Warren" 0; "to Peebles House" 15 (Scotland, a novel, Southern Magazine 1875 on the plank road -- none this); "no ordnance stores sent" 0; "no troops had landed" 36 (a 1965 naval-warfare course on Fort Fisher, "by noon, no troops had landed on the beach" -- the 13-15 Jan 1865 attack, not this; others unrelated); "large supply of ammunition at" 68 (unrelated); "hold the Dupont" 7 (unrelated); "Albany and United States" 29 (unrelated); "two good ocean steamers" 0 | not located |
+| Press of the day | loc.gov Chronicling America JSON (`q=`, date window) | "Peebles" railroad 5-15 Oct 1864: 21 page hits (battle reports of Peebles' farm, e.g. NY Herald 7 Oct p.5; titles only, pages not read); "Du Pont" Albany horses 7-14 Dec: 0 | not located (titles only for the 21) |
+
+Requests: hdl.huntington.org 16 (+1 reset); archive.org 7 (advancedsearch 2, metadata 1, djvu 4, one 503 for a guessed ORN id); be-api 13
+(+ the G3 tool's own); www.googleapis.com 2 (429); scholarsjunction.msstate.edu 6 (2 curl, 4 browser); catalog.hathitrust.org 1;
+data.htrc.illinois.edu 2 (500); openlibrary.org 1; www.loc.gov 5.
+
+### 3. Reading and grade check (key look-ups only)
+Every code word the first audit graded H was looked up again in key.md: E173 Fanny (11 AM), Palsy (Brig. Gen.), Unity/Zebra/Zodiac
+(period), Paradise (Colonel), Bible (Beaufort) Harsh Penny (20+4 = 24), Whisky (Troops), Lampoon (40), Wales (Rations), Roman
+(Expedition), Shelter (General), Olive (Ammunition), Flora (Newbern): all as read. E172 Blubber (City Point) Pledge (6), Barber/Banjo
+(Alexandria), Shelby/Shelter (General), Welch (Rail Road), Peach (2), Spoon(s) (Mile), Plunge/Plug (1), Yoke (Signature): all as read;
+"toby" is not a key row (plain "to be"). E177 Mary (6.30 PM), Pandora/Paradise (Colonel), Spartan(s) (Horse), Appian/Animal (Monroe),
+Weasel(ers) (Steam[ers]), Squash (Infantry), Windsor (River), Plank (2): all as read; "flight(s)", "doge", "many", "form" are not key rows
+(M, as FV-FM3a has them). No grade change. FV-FM3a's section-3 corrections (Dodge, ordnance, John plain in E173; Webster the addressee
+and Dodge the signer in E177; McAlpine the signer in E172) are consistent with the plain-word evidence above (Butler V calls Dodge
+"Chief Quartermaster, Bermuda"; Kress is Butler's ordnance officer; 10516 has McAlpine writing to Wentz from City Point).
+
+### 4. Classes and depth
+| ID | first audit | AUD2 | depth | basis | safe sentence |
+|---|---|---|---|---|---|
+| E172 | N3 D2 | **N3 held** | **D2 held** | this 6 Oct telegram not located; its central request (Meade wants the railroad extended to Peebles') is printed in a *later, different* exchange (Ingalls-Williams, 31 Oct, OR I/42 pt 3 p.445) -- an external check of the content, not the plaintext of this item | "Read at grade H with Cipher No. 1: on 6 Oct 1864 C. L. McAlpine at City Point tells E. L. Wentz, through Fort Monroe, that Ingalls reports Meade wants the military railroad extended beyond Warren to Peebles House, two miles, and that he cannot begin until the ties for Alexandria are sent. Meade's wish to have the railroad extended to Peebles' farm is printed in Ingalls's and Williams's exchange of 31 Oct 1864 (Official Records ser. I vol. 42 pt 3 p.445); this 6 Oct telegram was not located there, in Grant Papers vol. 12 or in the Huntington's full text (searched 8 Oct 2026)." |
+| E173 | N3 D2 | **N3 held** | **D2 held** (all 18 code groups H, but still no key-independent check of the content; D3 stays withheld) | not located in OR I/42 pts 1, 3, Butler V, IA full text, Huntington full text; Grant Papers vol. 13 unreachable by four routes | FV-FM3a's sentence stands. |
+| E177 | N3 D2 | **N3 held** | **D2 held** | not located in OR I/42 pts 1, 3, I/44-47 (G3 tool), Butler V, IA full text, Huntington; Grant Papers vol. 13 unreachable | FV-FM3a's sentence stands. |
+
+Not N4 for any of the three: Grant Papers vol. 13 (E173, E177) unread by four routes; NARA RG 92/107/393 (Dodge's, Kress's and the
+Military Railroads' letters sent); mssEC 09-11 page images (E172); the press pages listed by title only; HathiTrust full text; JSTOR
+(no rows queued by this audit). Unsafe for all three: "first", "new", "unpublished", "never printed".
+Depth sentences (my own, true per the reading and the print): E172 -- "Three weeks before Meade's chief of staff told Ingalls that
+Meade would be glad to have the railroad run to Peebles' farm, the City Point railroad's engineer was already reporting that request
+and that work waited on ties bound for Alexandria." E173 -- "On 26 Dec 1864 Fort Monroe told Butler's headquarters that a letter from
+Beaufort of the 24th said no troops had landed and that rations, but no ordnance stores, had gone after the expedition." E177 -- "On
+8 Dec 1864 Butler's headquarters told Fort Monroe to hold the Dupont and to ready two ocean steamers while the Albany and United States
+brought horses down the James."
+
+### 5. Postmortem
+No over-claim found in the three rows' sentences; the first audit's searches reproduce. The first audit missed the 31 Oct Ingalls-Williams
+exchange (OR I/42 pt 3 p.445), which prints the substance of E172's central request; it does not change the class (different date,
+different correspondents, the telegram's own particulars absent) but belongs in E172's safe sentence, which is revised above and in
+status.json and its SO prompt. Next step that could still move E173/E177: Grant Papers vol. 13 for 8 and 26 Dec 1864 from a person's
+browser (MSU Scholars Junction PDF, or Google Books after the quota resets); for E172, the War Department received book that covers
+6-7 Oct 1864 (after mssEC 10, which ends 31 July; volume not identified here), read in the image.
