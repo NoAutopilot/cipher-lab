@@ -399,3 +399,43 @@ V1-G3D (account 3, 8 Oct 2026, 17:0x UTC by `date -u`) skipped f.35r per its bri
 Third wave: "Skip any item whose reading or an audit ran on account 3"). The reading NV02-READ and the first audit VERIFY-NV02 both ran on
 account 3 (3 Oct 2026). The G3 decoded-phrase re-search for this item is still owed, by a session on another account. No class or
 status changed.
+
+## G3 check (G3-FR3416)
+
+Verifier G3-FR3416 (account 4, session_01UvhKGyp5zFmRcE8oZzBsWg), 8 Oct 2026, 17:37-17:43 UTC by `date -u`; separate from every
+solver and auditor of this item (NV02-READ and VERIFY-NV02 on account 3; VERIFY-FILS-N4, A1B-VERIFY-FILS-N4b, D07-NEVFV and DEPTH-MH
+on account 1). Job: prior-work-step.md check 5 per .claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md (Fourth wave; re-addressed
+from V1-G3D, which skipped it above). Nothing decoded; key, ciphertext, reading, grades (H 80 / M 22) untouched.
+
+**Phrases run** (`verify/g3/phrases_g3.txt`, output `verify/g3/print-check.tsv` + `print-check-hosts.tsv`, `tools/print_check.py`
+on IA full-text across all items, Google Books, OpenAlex, CrossRef; Semantic Scholar 429 on the first call, logged unreachable):
+- decoded figure-run fragments: "ainsi ne les auroit" (run 1), "s'es avoir bons deniers" (run 3 + the clear words after it),
+  "et moiens a quoy je vous prie" (the unadopted `4 57 9` parse of run 4/5 + the clear text after it, run anyway so a print of
+  that parse would surface);
+- distinctive clear text of the same letter: "la responce que avez faict de garder la citadelle", "quitter les badineries",
+  "il est temps que resveillez vostre esprit", "Tremolit Buzy" (the two persons named at U09), "duc de Rethelois citadelle 1589".
+- Antecedents / replies / other correspondents' versions (the letter is undated, c. Oct-Dec 1589, so no +-3 day window can be
+  fixed): Books API with key + `country=US`, by hand: `"duc de Rethelois" citadelle`, `"Rethelois" "citadelle de Mezieres" 1589`,
+  `"citadelle de Mézières" Nevers "son fils" 1589`, `"duc de Rethelois" citadelle Mézières "Notice historique"`,
+  `"duc de Rethelois" "citadelle" lettre "mon fils"`; the four print_check Google Books 503s retried once by hand ("ainsi ne les
+  auroit", "et moiens a quoy", "quitter les badineries" answered; `"Nevers" "a son fils" 1589 "Mezieres"`, `"Tremolet" Nevers
+  1589`, `"Revue historique des Ardennes" Nevers Rethelois 1589 citadelle` 503 twice, logged unreachable).
+- Press of the day: not applicable as a family (no periodical press in France in 1589); the pamphlet literature is covered only
+  as far as IA/Google Books full text reaches it.
+
+**Result.** IA full text (all items) and OpenAlex: no hits on any phrase. Google Books: the API does not hold quoted phrases
+strictly; every hit returned was a loose word match (Calvin, Sully's *Économies royales*, Pasquier, the 1614 Vieuville/Mézières
+episode, Cardevacque's 1879 notice on the citadel of *Cambrai*, the 1874 BnF catalogue of the French manuscripts already on file
+as family (a)), none quoting this letter or a reply to it. *Revue historique des Ardennes* (1864, YsBLAAAAMAAJ) gives only "1589 --
+Construction de la citadelle de Mézières par la Ligue", a dated event, no letter text. CrossRef/OpenAlex keyword searches: general
+Nevers scholarship (Boltanski-type, *French History* 2.1 "Piety and political allegiance"), nothing on f.35. **No SUBSTANCE item**
+(nothing sharing two rare entities with this letter was found), so nothing to diff.
+
+**Class kept: N4** (third audit, 3 Oct 2026); depth D1 kept (DEPTH-MH). No status.json, PROGRESS.tsv or SO-NV02-F35 change. Safe
+sentence as AUDIT 3 left it (80 of 102 tokens H), now with "decoded-phrase re-search 8 Oct 2026" added to its search list.
+Limit: the G3 search sees only full text that IA, Google Books and the open indexes expose; Semantic Scholar and three Books API
+queries were unreachable, and Gérard 2003 / Boltanski 2006 remain searched within their search-inside limits (audits 2 and 3).
+
+Requests: be-api.us.archive.org 8, www.googleapis.com 8 + 14 by hand, api.openalex.org 9, api.crossref.org 2,
+api.semanticscholar.org 1 (429). A first print_check run crashed at its write step (`--out` given a directory) after making about
+the same requests again, unlogged by the tool; count them as a second identical pass.
