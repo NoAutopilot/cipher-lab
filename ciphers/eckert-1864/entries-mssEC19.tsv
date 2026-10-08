@@ -64,7 +64,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8920	28	1	Sheldon Ft Monroe "1"  Washn DC Apl 5. 1864	Sheldon Ft Monroe "1"		80	11	24	2	1	warofrebellion352unit@leaf0(cov36)	36		3
 8921	29	0			330 PM	5	3	1	0	short	none	0		3
 8921	29	1	Baldwin Balt "1"  Wash D. C. Apl 5	Baldwin Balt "1"		68	15	27	6	1	none	4		1
-8921	29	2	No 1 Ft M  Washn April 6th 1864	No 1 Ft M		86	11	22	5	1	none	4		1
+8921	29	2	No 1 Ft M  Washn April 6th 1864	No 1 Ft M		86	11	22	5	1	none	4	LS-R5 E62	1
 8922	30	0	F. S. Van Valkenburg Nashville  Washn Apl 6th 1864	F. S. Van Valkenburg Nashville	No 3 Tim	32	10	17	1	1	none	3		1
 8922	30	1	Geo. D. Sheldon  Washn Apr 6th 1864 230 PM	Geo. D. Sheldon	No 4 F. M.	75	13	32	3	1	none	6		1
 8922	30	2	Geo D. Sheldon (1)  Washn Apr. 6th 330 P. M 1864	Geo D. Sheldon (1)		65	13	17	3	1	none	4	LS-R4 E47	1
@@ -143,7 +143,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8958	66	0	Col Stager  Wash May 6. 1864	Col Stager		60	6	17	2	2	none	4		1
 8958	66	1	5 pm  Martinsburg May 7th		Maj Genl	143	10	26	1	clear	warofrebellion371unit@leaf0(cov62)	62		3
 8959	67	0	Jisse Bunnell  Wash'n May 8th 1864 11. am	Jisse Bunnell	No 1  355 PM	162	40	68	6	1	warofrebellion343unit@leaf0(cov45)	45		3
-8959	67	1	OBrien Hd Qrs Butler  Wash May 9. 1864	OBrien Hd Qrs Butler		43	6	9	1	1	none	3		1
+8959	67	1	OBrien Hd Qrs Butler  Wash May 9. 1864	OBrien Hd Qrs Butler		43	6	9	1	1	none	3	LS-R5 E61	1
 8960	68	0	G. D. Sheldon F Monroe  Washn May 9th 1864	G. D. Sheldon F Monroe		60	21	20	4	1	none	3	E7	2
 8960	68	1	JW Sampson Balto  Washn May 11th 1864	JW Sampson Balto	ready to move sig Irland	55	19	31	4	1	none	5	E8	2
 8960	68	2	S. P. Kimber Care Gen Canby  Washn May 12th 1864 1230 PM	S. P. Kimber Care Gen Canby		61	16	27	5	2	none	6	N2-G	2

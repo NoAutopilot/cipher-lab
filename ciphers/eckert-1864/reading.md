@@ -491,5 +491,17 @@ Following just recd ["] [Columbus] to [Secretary of War] [.] Move cool and caref
 
 Code-word tokens: H 14.
 
-Totals over the 60 entries: H 994, C 13, I 0, M 0.
+**E61 | Page 67 | 8959 | 9 May 1864 3.55 PM, to Knox (O'Brien, Hd Qrs Butler)**
+
+{time: 4 PM} {date: May 9} for [Maj Gen B. F. Butler] --- a dispatch from [Maj Genl U.S. Grant] has just been recd ---- He is on the march with his whole opad to form a [Junction] with you but had not determined his route another dispatch from him is being translated Sig [Secretary of War]
+
+Code-word tokens: H 6.
+
+**E62 | Page 29 | 8921 | 6 Apr 1864, to Vinton Biggs, Fort Monroe (operator G. D. Sheldon)**
+
+For [Quartermaster] Biggs [.] Send ordrs to Spaulding to proceed to Hilt on head and report to [Quartermaster] for ordrs Send Montauk and other two propellers to Annappleis to take [Troops] to Hilt on head [.] Give her plenty of Coal as it is probably scarce at Anappleis [.] Report your supply of Coal at present and that Expected with in a fortnight Report daily any arrivals of [Steam] hers Confidential  {tail: [signed] Meigs [Qr Master Genl U.S.] {time: 12.30}}
+
+Code-word tokens: H 10.
+
+Totals over the 62 entries: H 1010, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->
