@@ -97,3 +97,52 @@ folder's sources.tsv/manifest for the route; native size, >= 1.5 s) to images/ w
 passes per page + one reconciliation, readers not told the key; mark every [ij]/[y-fam] position. Then score the held-out units under the
 current key (decode script --check) against its shuffled control, as the folder's prior held-out tests did (match their gate; name it in
 PREREG-SUR-BLIND.md before scoring). Report what reads and where it does not; a gate PASS goes to the lane for a separate verifier.
+
+## Wave 1 results (22:3x UTC): MANT-FIX 0.84 (fixes applied, pooled gate PASS 0/1000), LAG-ERR 1.20 (base-code error 0.055, marks 0.183),
+BERGH-STRIP 3.99 (gate 16/19 FAIL vs 17), W11008-KP 4.14 (5194 known-plaintext PASS: Certain letters use the 1572 table), MANT-0609X 4.86
+(694/09 0008 heavy glossed frame, ~170-190 groups). SUR-BLIND running. Wave 1 done total 15.03.
+
+## Wave 2 (22:4x UTC 8 Oct)
+Intake gate unchanged from wave 1 for these folders (exit 0, 22:2x). Known-text share: MANT-0008 works a glossed leaf (gloss = known
+answer, key extension above 401); counted in the lane's known-text share.
+
+### MANT-0008 (Opus, cap 5.5, box 120 min): sachsstaatsarchiv-manteuffel-1712, Loc. 694/09 frame 0008 as a known-answer and key-extension leaf
+mant0609/rank_glossed.tsv row 1 (MANT-0609X). Prior-work check 1-2: the leaf's own interlinear gloss makes its text KNOWN (N0) -- the job
+is a key test, not a reading: (a) frame from disk (MANT-0609X fetched 694/09 frames full-size; else one fetch, "sachsen take"); crop the
+code lines and, separately, the gloss lines (`tools/iiif_lines.py --image ... --out ...`, paste); two blind Sonnet passes on the code lines
+(readers not shown the gloss) + one reconciliation; one Sonnet pass transcribing the glosses. (b) Pre-register in PREREG-MANT-0008.md before
+scoring: agreement of Krauske key.tsv decodes with the gloss, per code, vs 1000 shuffled keys (the f.468 GAPS154 design, 17/17 vs p99 5).
+(c) Codes above Krauske's 401 (503 and any others) and any code the gloss reads differently from Krauske: list with the gloss value; enter
+into key.tsv only codes glossed on this leaf, grade C, with "694/09 0008" as source, and only if the leaf's own gate PASSes (CLAUDE.md rule
+3, per-unit gate before a merge); a conflict with Krauske goes to HYPOTHESES.md with both witnesses (rule 4), not settled. (d) Then rerun
+`tools/decode_key.py` on the main folder and on f0390_08 with --check and report whether any U/M token of f.409v/f.410/0390-0485 changes
+grade. Work in a subfolder f0008_09/. NOTES section, Remaining gaps, gaps_check.
+
+### LAG-HOM (Opus, cap 4.5, box 100 min): la-garde-1577, the homophonic prereg re-run at the measured base-code error
+LAG-ERR (22:22): marks-stripped base-code disagreement 0.055 (0.036-0.084) against the 0.23 earlier controls ran at. Read
+families/homophonic_prereg.md, LAG-ERR's NOTES section and HYPOTHESES.md rows for the earlier homophonic runs. Re-run the same prereg on the
+base-code text (families/basecode_cipher.txt or what LAG-ERR names) with `tools/family_run.py` (control first, same N, K and corpus as the
+prereg; controls at 0.055 AND 0.084 injected error, the upper CI bound, so the control brackets the measured error -- rule 3 SALV-DIAG).
+Add a dated amendment to the prereg naming the new error level before running (do not change the gate). Both numbers to HYPOTHESES.md.
+Control below gate at 0.084 = non-test at that bound, say so. A target above its gate goes to the lane for a separate verifier; report
+what was found and where it was not found. NOTES section, gaps/escalation, gaps_check.
+
+### V-11008KP (Opus, cap 2.5, box 60 min): VERIFIER, wvo-11008-certain-1572 -- carry W11008-KP into AUDIT.md
+You are a verifier, a session other than the solver (W11008-KP, session_01EFVBhGdpFZLGvbkkfVZFKf). Read NOTES.md "W11008-KP" section,
+PREREG-W11008KP.md, w5194_gate.py/.tsv and AUDIT.md (incl. "AUDIT 2 (AUD2-WVO11008)"). (1) Re-run w5194_gate.py and decode.py --check;
+check two of 5194's decoded runs against Groen III pp.448-449 yourself. (2) Try to break the claim that 5194 shows the Certain letters use
+the 1572 multiples-of-3 table: could the LCS gate pass from the nulls or the run lengths alone (check the shuffle preserves the null
+share)? (3) Carry the result into AUDIT.md as a dated section: what changes for 11008's per-token grades (does 5194 make any H/M token C?),
+its key class (period/published/ours, rule 10), and depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md (re-rule; usually no
+change for a names-only reading). Update status.json's row for this folder only if the class or depth changes; any SO row filed for 11008
+gets the change too (rule 10 propagation). Rule 10 wording only.
+
+### MANT-R8 (Opus, cap 5, box 120 min): sachsstaatsarchiv-manteuffel-1712, mant0609/rank_unglossed.tsv ranks 8-14 under the Krauske table
+Handoff next 1 (second half). Frames 694/08 0375, 0214, 0436, 0241, 0435, 0065 and 694/09 0070 (~6-16 tokens each). Prior-work check 4
+FIRST, as MANT-08 did: Heinsius Briefwisseling XIII-XIV (Huygens retroboeken full text, "huygens take") for the same news days; a frame whose
+content is plainly printed is logged KNOWN-likely and skipped unless under 50% of cap. Frames from disk (images/loc694-08-09/ or MANT-0609X's
+download) else one fetch each ("sachsen take", >= 2 s; MANT-0008 may hold it -- wait or work from disk). Crops of the code lines only
+(paste the command); 2 blind Sonnet passes per pair of frames + 1 reconciliation; decode into a subfolder f0375_08/ with decode.json ->
+../key.tsv and --check; pooled shuffled-key gate (the shuffle_gate_0390.py design, 1000 shuffles) pre-registered before scoring; per-frame
+numbers alongside the pooled one. Stop before a unit that crosses 80% of cap or box. Report what was found and where it was not found; a
+gate PASS goes to the lane for a separate verifier; do not classify novelty.
