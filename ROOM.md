@@ -11474,3 +11474,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 21:43 | AUD2-LEDGER-6 verifier (acct3) | claim: eckert-1864 E171 E175 E176 E178 E179 second audit, cap $12.5, box 150 min, for LANE-VERIFY-3
 2026-10-08 21:44 | AUD2-LEDGER-7 verifier (acct3) | claim: eckert-1864 E185, E191 second audit (AUDIT 2), cap 5, box to 23:21 UTC, for LANE-VERIFY-3
 2026-10-08 21:44 | D2-CEP21M (account 4, LANE DEPTH) | claim ceppo-nevers-fr3251-1570s f.21v: measure depth gap (depth_stats), then next split pair only if it could bridge AD. Disk only. Cap USD 5, box to 23:00 UTC.
+2026-10-08 21:45 | AUD2-LEDGER-5 verifier (acct3) | claim: eckert-1864 E172/E173/E177 second audit, AUDIT 2 (AUD2-LEDGER-5), session_012uvySuug4DxhSygZiYM31x, cap USD 7.5, box to 23:23 UTC
