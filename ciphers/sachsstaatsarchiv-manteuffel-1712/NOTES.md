@@ -1667,3 +1667,13 @@ the volume, so f.410's passage looks unprinted there; a page read of seq 434-440
 AUDIT2-MANT (3 Oct 2026): done another way. Vol. I is in full view on Google Books (ESf8fHFG9ngC), and it was searched in full text
 with passing controls (every Manteuffel report heading pp. 204-396 found). Angleterre, Suédois, Stettin and contentement are 0, and Droysen
 IV.1's endnotes quote no Nov 1712 report. AUDIT.md now gives N4, "no prior decipherment located"; see its second-audit section.
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 5 listed, 3 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- Loc. 694/08 frames 0528, 0540, 0576, 0531, 0534, 0549, 0558, 0573 (glossed reports) [same-volume; unread] -- 0528 DONE (GAPS195, 3 Oct); continue by frame_rank_gaps189.tsv rank: 0540, 0576, ... transcribe 2 blind passes + reconcile, decode_key.py --check, glosses as known answers; ~$6; p 0.3; evidence: sachsstaatsarchiv-manteuffel-1712/frame_rank_gaps189.tsv; frame_inventory.tsv (reconciler: 0528 done per NOTES.md:1628)
+- Loc. 694/08 frame 0579 (f.467) cipher with interlinear glosses [same-volume; unread] -- crop, 2 blind passes + reconcile, decode_key.py --check with Krauske key.tsv; glosses give C check; ~$5; p 0.2; evidence: sachsstaatsarchiv-manteuffel-1712/frame_inventory.tsv; NOTES.md:143 (reconciler: f.467 gloss calibration already done (GAPS166, NOTES.md:1643); f.468 decoded (GAPS154))
+- Loc. 694/08 f.409v-410 (file 0511 upper half, f.409v) and f.409 (0510) [same-volume; read] -- transcribe f.409v and upper f.410; resolve codes above 401 (up to 1056) not in Krauske table; ~$4; p 0.2; evidence: sachsstaatsarchiv-manteuffel-1712/NOTES.md:158,187 (f.410 H0 C144 M48 U24)
+- Krauske key table Loc. 694/10 ff.1-5 (codes 1-401) [same-key; read] -- already transcribed; extend table to codes beyond 401 from glossed leaves; ~$3; p 0.2; evidence: sachsstaatsarchiv-manteuffel-1712/NOTES.md:2,119-123; key.tsv
+- Loc. 694/09 (302 frames, 1713) and remaining ~870 uninventoried 694/08 frames [same-volume; not-in-repo] -- extend frame_classify to 694/09 sample, then glossed-frame pick; request-limited to a few hundred per session; ~$5; p 0.15; evidence: sachsstaatsarchiv-manteuffel-1712/NOTES.md:97,135 (873 of 894 frames not inventoried); frame_batch_gaps201.tsv

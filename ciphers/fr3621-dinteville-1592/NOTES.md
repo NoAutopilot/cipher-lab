@@ -968,3 +968,15 @@ Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; 
 - [x] image-check: f.130 from Gallica f269 (2 blind passes + reconciliation, A2-DIN2); date line read 4 July; f.128's 7 conflicting zeros looked at at line-crop scale (DIN-3623, undecided 3/4) and at native scale (D2-DIN0, merged 5/7 vs e-reading control 1/11)
 - [n/a] retry: no failed instrument on this target; DIN-WORDS's re-run waits on v'/0' keys
 Verdict: keep going: 2 internal gaps; cheapest next: once the owner's f.23r sort lands (ASKS 112), two passes against the settled labels + the 7-row alignment (~$30-48), which would also test 0' = s/p and give plain-0 occurrences to settle row 0; then re-run divide_f130.py with v'/0' keyed (~$2). fr.4718 fols. 17/21/40 go to the BnF reproduction batch (ASKS 78)
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 7 listed, 5 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- fr.3623 f.23r cipher slip with interlinear Italian decipherment (same sign family) [same-volume; unread] -- owner's sort in f.23r sign sorter (ASKS 112), then 2 passes vs settled labels and alignment; ~$30-48; ~$35; p 0.15; evidence: fr3621-dinteville NOTES.md:958,964 (ASKS 112, sign sorter; DIN-23P non-test at 63% agreement)
+- fr3631-dinteville-1593 (camp de Collaverde, 14 Jun 1593, fr.3631 no.27 f.28) [same-sender; unread] -- check whether f.130 key (f130/key_dk.tsv, 29 symbols) applies; image check + key rank with control; blocked status needs reading its NOTES; ~$3; p 0.1; evidence: folders.tsv blocked
+- Dinteville/Langres other letters in fr.3621 (5/13 July 1592 'not checked') [same-sender; not-in-repo] -- fetch Gallica canvas, apply f130/key_dk.tsv with shuffled-key control; ~$3; p 0.1; evidence: fr3621-dinteville NOTES.md top (fr.3623 sibling letters not checked, needs Gallica image)
+- Birago namesake fr.3621 ff.42,48,49 (27 Jan-5 Feb 1592) Nevers 1590s key group [same-series; not-in-repo] -- different sender and key; DECODE Decrypted: only as period-decipherment calibration; ~$3; p 0.03; evidence: BIRAGO-POOL.tsv
+- fr.4718 fols 17, 21, 40 (three Dinteville cipher letters with decipherment, Jul-Aug 1592) [same-sender; not-in-repo] -- none: BnF reproduction batch (ASKS 78); p 0.02; evidence: fr3621-dinteville NOTES.md:959 (waiting-on ASKS 78, no Gallica copy)
+- fr.3621 f.128r (3 July 1592 sibling in same volume, aligned to 1882 print) [same-volume; read] -- none: already used for key; p 0.02; evidence: fr3621-dinteville NOTES.md:955,963 (0.831 vs shuffle max 0.358)
+- fr3622-nevers-gondi-1594, fr3620-henri4-nevers-1592 (found-solved), fr3625-lauriere-1593 (found-solved) [same-series; read] -- none: fr3620/3625 already solved; fr3622 open different key; p 0.02; evidence: folders.tsv

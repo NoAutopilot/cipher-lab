@@ -1170,3 +1170,13 @@ Every WVO August letter with cipher in the window is already in this folder. 106
 f.67 ("Es wirt auch bei uns fur gewis gesagt das Wilhelm von Grombach ..."). Its sign set is the Hessian one, not System B.
 That makes it a known-plaintext page for the Orange-Hessen key, not for this one. Test: none (no survivor).
 File: keyhunt/2026-10-07-KH1D.tsv.
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 5 listed, 3 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- WVO 74, 98, 153, 175 (Willem<->August, cipher plus contemporary decipherment on leaf) [same-key; read] -- none: used as key sources; 153 has two decipherments but not aligned in KEY-DESIGN, align 153 with interlinear_align.py to build key_153; p 0.15; evidence: NOTES.md:31,92-117; KEY-OFFICES.tsv key_74/key_98
+- WVO 58 (sample), 53 page 2 unread cipher block [same-volume; unread] -- transcribe 53 p2 per TRANSCRIPTION.md crops, apply key_53.tsv --check; control; ~$3; p 0.15; evidence: AUDIT.md 53 unread second page; NOTES.md:942
+- ciphers/wvo-hessen-1564 (1109 with 1107) and willem-van-hessen-1567 [same-design; unread] -- run design_prior.py with key_74/key_98 nomenclator against wvo-hessen-1564 cipher with shuffled-key control; ~$2; p 0.1; evidence: folders.tsv; KEY-DESIGN.tsv German 1560s nomenclator rows key_1069, key_74
+- Locat 9941/3 other leaves and KHA minute (clear draft of 126 postscript f.139) [same-volume; not-in-repo] -- WVO imaged-leaf listing for Locat 9941/3 f.xx; DDB/Archivportal-D (DDB_API_KEY) search for cipher leaves; ~$1; p 0.05; evidence: AUDIT.md:61 (minute unverified)
+- WVO 124 (cipher ~679 signs, ciphertext_124.tsv, align_124.txt) [same-volume; read] -- none: read and controlled (control_124.py 611/611 vs shuffled mean 0.100; NOTES.md:551-578); p 0.03; evidence: ciphertext_124.tsv, control_124.py, dp_check_124.py, pairs_124.tsv exist; NOTES.md:539 (corrected by reconciler: NOTES.md:551-578)

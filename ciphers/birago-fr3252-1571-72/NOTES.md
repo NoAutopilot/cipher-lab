@@ -1850,3 +1850,13 @@ Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.
 - [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
 - [ ] retry: kept f.36-37 rows' splits: line-segment reconciliation [retired] (RUN6-BIR3637 one call, BKLOG-0507 four per-page calls; 8 of 193 settled, r37 only); next per-sign 4x tiles by neighbour context; f.117r [x] power at the measured post-look-alike error done (D2-B117KAPC: 18/20 at 0.126, 16/20 at 0.183, rank 1/201 on 5/5 seeds), 27 M -> S; f.117r 16 plain-M window read (D2-B117M): 7 M -> S
 Verdict: keep going: 10 internal gaps (f.117r S 224/M 29); cheapest next: per-sign 4x tiles of the kept f.36-37 splits (look-alike pairs first, ~$3, disk only); the Nov 1571 system needs new material (a letter or key sheet in another Nevers/Birago volume)
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 5 listed, 2 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- fr.3251 1572 letters f.138-184 (Nevers-Birago key group) [same-key; read] -- none new: key group is the source of the f.117r tests; see T88=q pre-registered test on f.152r/f.174v (~$1, disk only); p 0.05; evidence: birago-fr3252 NOTES.md:466 escalation siblings; nevers-birago NOTES.md:893-904
+- birago-nevers-1571 (f.119 numerical) + f.100r digits pooled [same-design; unread] -- none: joint anneal retired for this hypothesis; needs different instrument; p 0.02; evidence: birago-fr3252 NOTES.md:463,470
+- ceppo-nevers-fr3251-1570s f.36-37 witness (fr.3252 same volume, 5 Apr 1571, with interlinear) [same-volume; read] -- none: already used; p 0.01; evidence: BIRAGO-POOL.tsv row f.36-37 (already used as witness X_THETA2=r)
+- guazzo-nevers-fr4688-1571-72 (10 items Dec 1571-Apr 1572) [same-recipient; not-in-repo] -- none: images not found; p 0.01; evidence: folders.tsv blocked; BIRAGO-POOL.tsv fr.4688 rows
+- fr.3252 f.70 Birago 19 Oct 1571 and other fr.3251/3252 Sept 1571-Mar 1572 letters [same-sender; read] -- none: no cipher; p 0.0; evidence: BIRAGO-POOL.tsv BIRAGO-NUM-SCOUT rows (all clear text, no cipher)

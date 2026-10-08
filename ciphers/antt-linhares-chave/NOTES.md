@@ -1504,3 +1504,13 @@ António de Araújo's first letter after leaving Lisbon on the frigate Thetis, "
 c.1807-08) and `PT/TT/CLNH/0037/42` (secret instructions "nesta espécie de cifra, que só poderá decifrar o Sr.
 F. A. M. G.", mentions Wellesley, c.1808-09); whether either uses this dictionary key is unknown. No test decode
 (no survivor). Every candidate: `keyhunt/2026-10-07-KH1E.tsv`.
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 5 listed, 4 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- CLNH/0086 items /02 (126 images) and /09 (212 images), never opened [same-volume; unread] -- DigitArq thumbnail montage stride 1 eyeball for numeral groups with /11 as positive control (tools/digitarq_fetch.py); ~$3; p 0.06; evidence: NOTES.md Escalation loose-ends 8 Oct 2026
+- CLNH/0086 items /04 (46 images) and /01 (82 images) [same-volume; unread] -- same montage sweep; ~$2; p 0.04; evidence: NOTES.md Remaining gaps (unopened)
+- CLNH/0020/14 and CLNH/0078/80 other Chave de uma cifra units [same-key; not-in-repo] -- none: undigitised; ANTT reproduction quote needed (no ASKS row yet); p 0.02; evidence: NOTES.md Remaining gaps (hasImages false)
+- PT/TT/CLNH/0086/11 m0001 (verso of m0002 leaf, clear French note) [same-volume; read] -- none; p 0.01; evidence: NOTES.md:960 (m0001 read 2 Oct 2026, H38/M2, no crib)
+- ciphers/antt-msliv0638-brochado-1712 (other ANTT Portuguese cipher) [same-series; unread] -- none: different period (1712) and key; design not same; p 0.01; evidence: folders.tsv partial

@@ -1501,3 +1501,13 @@ siena-concistoro-2308, bl-gualterio-1700, cylob-c1995 this job).
 ## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
 
 next: the body needs a sibling letter in the "verendertte" key. The candidates are HStAM 4 f Staaten N, Frankreich 340 and Niederlande 134 (Marburg reply MAIL-3, above), and both are microfiche only. The step is a follow-up email to HStAM (drafted in outreach/ and sent by the owner, ASKS row 48 thread). The ENHG corpus the earlier line asked for now exists (tools/data/de16), but no annealer run is named until there is more ciphertext. Who acts: owner. Blocker class: needs-person.
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 5 listed, 1 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- WVO 5549 (21 Nov 1573 Jan->Willem; large clear German stretch p4-p5 per J5I) [same-volume; read] -- none: reading exists, plaintext N1; counted question is the unprinted remainder; p 0.05; evidence: NOTES.md:2-12; KEY-DESIGN.tsv key_5549.tsv; AUDIT.md V1 says N1 for the clear stretch
+- WVO 5551 (17 Apr 1574 Jan->Willem van Hessen, Mookerheyde report) [same-sender; read] -- none: already read; verify AUDIT class; p 0.05; evidence: reading_5551.txt; NOTES.md:2 (V-TX check-solved 25 Sept 2026)
+- ciphers/lodewijk-van-nassau-1573-74 letters 4610/4611/4612/4616 (Nassau-Orange chancery 1573-74 table, 1574 key per J5S) [same-key; read] -- apply Lodewijk 4613/4615 table to the remaining unprinted stretch of 5549 p4-p5 (already clear in print) as external check; low yield; ~$1; p 0.04; evidence: NOTES.md:2-12 (key_1572 vs 1574 table); KEY-OFFICES.tsv
+- WVO 5207 (23 May 1574), 5213 (26 Nov 1574), 5221 (30 Jul 1575) to Jan [same-recipient; not-in-repo] -- none: plaintext printed in Groen (N1) yields ~0; p 0.02; evidence: NOTES.md:2,4,28-31
+- WVO 5200 p2 (rest of 18 Oct 1572 letter after p1 N1) [same-volume; read] -- none: printed in Groen; yields ~0; p 0.02; evidence: AUDIT.md:15-19 (p1 N1, Groen IV CCCLXXXIX)

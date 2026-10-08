@@ -2521,3 +2521,15 @@ T11, conf M, in `harvest/f174r/passC.tsv`, `harvest/no86/passC_all.tsv`, `harves
 U 54); clerk-variant no.86: C 10 S 619 M 76 U 53. The run's last word reads [carmagnola], not [turino]. No control re-run: the
 change removes one unkeyed sign and swaps one M word, and the verifier judged it does not move the control. Requests 0, subagents 0.
 
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 7 listed, 5 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- fr.3251 f.144r no.73, f.168 no.85, f.162 no.82 (short runs, too-short blocker) [same-key; read] -- pool the short runs after the atlas re-test (disk-only, NOTES.md:904) with shuffled-text control; ~$1; p 0.07; evidence: nevers-birago NOTES.md:896-897,901
+- fr.3251 f.138-139v no.71 (cipher 161 signs, 21 off-sheet) and f.152r+ no.77 (rest past f.152v unopened) [same-volume; unread] -- open canvas 155-156 at 1200px, read further no.77 cipher run, key rank + shuffled control; ~$2; p 0.06; evidence: nevers-birago NOTES.md:898-899 (Remaining gaps)
+- fr.3251 f.174v no.86 full cipher page (27 Aug 1572) [same-key; read] -- none as a new read: no.86 transcribed (389 signs, passC_all) and judged (whole letter FAIL, NOTES.md:1504-1558); open question is the key, not the leaf; p 0.05; evidence: nevers-birago NOTES.md:903 (main cipher is f.174v, canvas 1..) (corrected by reconciler: NOTES.md:1504,1514,1558)
+- fr.3252 f.100r Birago 8 Jan 1572 (565 digits) and f.117r 13 Mar 1572 (French, 277 signs) [same-key; unread] -- f.117r look-alike/third reader then 1572 key re-run (z 2.8-3.1 not licensed at 0.25 error), ~$3; f.100r digits key unknown; ~$3; p 0.05; evidence: birago-fr3252 NOTES.md:463,542; BIRAGO-POOL.tsv
+- fr.3252 f.47r (Ceppo-era, same sender) [same-sender; unread] -- see birago-fr3252 row; ~$10; p 0.05; evidence: BIRAGO-POOL.tsv
+- fr.4698 ff.40,47,57ff, fr.3619 f.73, fr.3621 ff.42,48,49, fr.3623 f.41 (Lodovico Birago namesake 1590s -> Nevers, with decipherments) [same-recipient; not-in-repo] -- different key (Nevers 1590s); sibling to Dinteville row; fetch only if decipherment images wanted; ~$4; p 0.04; evidence: BIRAGO-POOL.tsv last rows (DECODE 9438,9445-9447,9457 Decrypted)
+- fr.3315 f.21 Renato Birago->Nevers 28 Sept 1574 (Nevers 1574 key; clerk fair copy under flap) [same-recipient; not-in-repo] -- different key; check KEY-OFFICES for nevers1574 (Bourdeau); low relevance to 1572 key; ~$3; p 0.03; evidence: BIRAGO-POOL.tsv row fr.3315; Bourdeau catalogue 283 read in part

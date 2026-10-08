@@ -3000,3 +3000,12 @@ LOCAL-QUEUE/JSTOR-style desk job for the lane to decide).
 **Suggestions (not run).** (1) A re-gate of M1/M2/M5 needs a different instrument, not a new threshold: page-image pairs
 (as R8-THUR25 did for P25-P28) or a gate pre-registered on statistics the in-pool controls pass. (2) The vol.7 l.26827
 Mountagu [1658] block needs its page image. (3) The 5 Nov 1658 unglossed intelligence cipher (vol.7 l.46512-46517) to a scout.
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 4 listed, 2 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- P4 Stamford 13 Mar 1655 (no printed decipherment), siblings P5-P7 [same-key; read] -- second audit of P4 only (counted candidate already); no new doc; ~$1; p 0.1; evidence: thurloe-printed/NOTES.md:42,703; key_stamford.tsv; AUDIT N3 one audit
+- P3 Butler postscript (3 lines) and P10 p.620 L10 (14 unglossed groups) [same-key; unread] -- apply key_butler.tsv / key_blake_extended.tsv with --check plus shuffled control; too short for D2; ~$1; p 0.05; evidence: thurloe-printed/NOTES.md:42,216
+- Other cipher passages in Birch 1742 vols 1,4,6 not among the 23 extracted [same-series; not-in-repo] -- htrc_numeral_pages / ia_numeral_runs sweep of vols 1,4,6; printed decipherments mean N0; ~$3; p 0.05; evidence: thurloe-printed/NOTES.md:3 (only vols 2,3,5,7 swept)
+- thurloe-barriere-1654 [same-sender; read] -- none: closed-negative, rule 3 control already logged; p 0.02; evidence: folders.tsv: closed-negative

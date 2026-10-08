@@ -831,3 +831,14 @@ not told the question): `sibling_f27/gloss/passes.tsv`. Scorer `sibling_f27/glos
   or a person reading the gloss under `43 18 1 32`. The rest of f.27r stays the separate ~$30 transcription job named in D07-NEVF25.
 Requests: gallica.bnf.fr 1 (region fetch at native size). Vision: 2 Sonnet subagent calls (2 crops each); 2 own looks (0.5x
 locating strip, debug crop). Not found in print: nothing searched (sibling read job).
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 6 listed, 3 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- fr.4715 ff.34,56,59,68,69 (no.25/no.26 key siblings, 'avec chiffre et dechiffrement') [same-key; not-in-repo] -- fetch with catalogue-gloss, apply keys/key_no25.tsv with --check; letters with printed decipherment mostly N0/N1-prone; ~$4; p 0.08; evidence: NEVERS-VEIN.tsv DROP row 'no.25/no.26 siblings'
+- fr4715-vieuville-pool, fr4715-f61-mayenne-1592 (partial), fr4712-nevers-duchesse (open) [same-series; unread] -- fr4712 f.10 37 numbers: test duchess keys no.1/2/4 (NV-09), ~$2; ~$2; p 0.08; evidence: folders.tsv
+- fr.3416 f.35v (unchecked), f.38 glosses (alignment failed twice), f.101/102 Regnyer (code numbers, no key) [same-volume; unread] -- view f.35v canvas c44 for cipher; f.38 retired by FAIL x2; ~$2; p 0.05; evidence: fr3416 NOTES.md:350; NEVERS-VEIN.tsv NV-02 'f.35v unchecked', DROP row fr.3416 f.101,102
+- fr.4715 f.27r (Nevers/1586-89, interlinear gloss; L09-L12 read, D07-NEVF25 NON-TEST) [same-key; read] -- none: sibling check already run, non-test; p 0.02; evidence: fr3416 NOTES.md:348,356; sibling_f27/
+- fr4715-evesque-nevers-1589 (f.38, key no.25, found-solved) [same-key; read] -- none: already solved; used as positive control; p 0.0; evidence: folders.tsv found-solved; NEVERS-VEIN NV-03
+- fr3976-nevers-f133-1586, fr3993-gonzague-nevers-1595 and fr3984-sillery-1593 (Nevers-vein found-solved) [same-series; read] -- none: already solved; p 0.0; evidence: folders.tsv found-solved; NEVERS-VEIN.tsv NV-01,NV-04

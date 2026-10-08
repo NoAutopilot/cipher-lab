@@ -4099,3 +4099,15 @@ Suggestion (one line, not run): FRESH-0914's next_steps dry-run should treat a k
 target's own key file as already applied, so this row does not regenerate. Requests 0, subagents 0, vision calls 0.
 
 - KH2-D (7 Oct 2026): WVO 1810 (Willem to Lumbres, 8 Jan 1575, secretary copy, KHAG A 11/XIV I/11) has two short numeral runs (60 73 121 41 60 57 124 76 65; 103 60 196 47, eye-read); key.tsv/key_full.tsv give "zcv?zz?da"/"iz?x" -- not this table (13 tokens, too short for a control); keyhunt/2026-10-07-KH2D.tsv.
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 7 listed, 4 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- WVO 5811 (13 Apr 1574 to Lodewijk, Dordrecht) and 5810 (6 Jan 1574) [same-key; unread] -- apply key_full_v2.tsv/key_5801.tsv to ciphertext_5810 with decode_key.py --check plus shuffled-key control; 5811 is printed so only 5810 useful; ~$1.5; p 0.12; evidence: NOTES.md:136-137; key_5801.tsv exists in KEY-DESIGN.tsv; 5811 N0 (Groen CDLXXXIII)
+- ciphers/wvo-11008-certain-1572 (Willem as George Certain to Lodewijk, 12 Aug 1572) [same-recipient; unread] -- test Nassau-Orange key family (key_5801/key_full_v2) on it after intake gate; cipher design may be nicknames not numerals so check first; ~$2; p 0.1; evidence: folders.tsv (status open)
+- ciphers/orange-nassau-1572 (Nepveu key, found-solved) and willem-van-hessen-1567/siblings key_1069, key_174 [same-design; read] -- run design_prior.py/key_crossmatch against willem-van-hessen-1567 target using Lodewijk numeral keys (homophonic de 1570s), shuffled control; ~$1.5; p 0.1; evidence: KEY-OFFICES.tsv rows for key_nepveu.tsv, key_1069.tsv
+- WVO 5194 (24 Jun 1572 to Lodewijk, Frankfurt) [same-recipient; not-in-repo] -- fetch WVO PDF, check if printed in Groen; then transcribe if cipher and not printed (~$3 transcription); ~$3; p 0.08; evidence: NOTES.md:133
+- WVO 4613 (25 Mar 1574) and 4615 (7 Apr 1574) Lodewijk->Willem with period decipherment on leaf [same-volume; read] -- none: already the key source (grade C); only check whether any residual cipher groups unread; p 0.05; evidence: ciphers/lodewijk-van-nassau-1573-74/NOTES.md:31-34,177-181
+- ciphers/jan-van-nassau-1572-75 letter 5549 (Jan->Willem 21 Nov 1573) and other Nassau-Orange chancery letters [same-key; read] -- none: key cross already used; p 0.05; evidence: KEY-DESIGN.tsv: lodewijk key.tsv derived_from jan key_5549.tsv; same office row KEY-OFFICES.tsv
+- WVO 4503 (15 Apr 1574 to Lodewijk, Groen IV CDLXXXIV) [same-recipient; unread] -- none: plaintext N0 printed; yields ~0; p 0.02; evidence: NOTES.md:132; AUDIT.md N0 per V7 (printed in Groen)

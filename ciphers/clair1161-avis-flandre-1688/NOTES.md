@@ -2112,3 +2112,12 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted agreed-token audit with the Sonnet window reader NON-TEST (catch 0.65 < 0.80, D2-C1161AUD); next: the owner's sign sorter on la/focus.tsv + aud/focus.tsv, or the audit with re-cut slope-followed windows and a stronger reader
 - [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
 Verdict: keep going: 3 internal gaps; cheapest next: owner's sign sorter on la/focus.tsv + aud/focus.tsv, then a held-out-leaf judge test, ~$2
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 4 listed, 1 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- held-out cipher leaves c185R,c186R,c186L,c187L,c187R,c188L (all six already merged, same folder) [same-volume; read] -- owner sign sorter on la/focus.tsv + aud/focus.tsv, then held-out-leaf judge test, ~$2; ~$2; p 0.12; evidence: ciphers/clair1161-avis-flandre-1688/NOTES.md:2059-2067 (3389 signs; 0 H, C 353 S 1908 M 1114)
+- other Clairambault 'avis'/Louvois-era (1688) cipher pieces, same sender unidentified [same-series; not-in-repo] -- identify sender via decoded content, then sweep Clairambault finding aid for same hand; no concrete item named, ~$3; ~$3; p 0.02; evidence: ciphers/clair1161-avis-flandre-1688/NOTES.md:12,117-135 (sender/date unidentified)
+- c184 and c189 neighbouring leaves (checked, no continuation) [same-volume; read] -- none: no cipher; p 0.0; evidence: ciphers/clair1161-avis-flandre-1688/NOTES.md:2067,2107 (N4-C1 1a)
+- fr.3281 f.4 and fr16142 candidate keys (compared, NO FIT 2/17, 2/16) [same-design; read] -- none: tested and failed; different era; p 0.0; evidence: ciphers/clair1161-avis-flandre-1688/NOTES.md:2061

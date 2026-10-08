@@ -1486,3 +1486,14 @@ the new folder `ciphers/ceppo-nevers-fr4702-f36`. The key ranks 1/201 against sh
 (2) A suggested witness, not yet used here: BnF fr.4715 f.20 (item 5, "Mémoire, en chiffre, avec déchiffrement. Mars 1571.
 En italien", Gallica btv1b52509819x). Tomokiyo says it is in the Ceppo-Nevers cipher, so its period gloss could test the
 two I-graded signs.
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 6 listed, 5 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- fr.4702 f.36r Ceppo->Nevers undated c.1570-71 (key source leaf) [same-key; unread] -- apply keys/key_ceppo_nevers.tsv to f.36r transcription with --check + shuffled control; ~$3; p 0.15; evidence: folders.tsv status open; BIRAGO-POOL.tsv fr.4702 ff.36-37 row (Tomokiyo: read 'not quite')
+- fr.3252 f.47r Birago 26 Apr 1571 (~690 of ~850 signs untested) [same-key; unread] -- two blind passes in 3-4 line chunks + reconcile vs Ceppo sheet, decode_control + shuffled-key control (error 0.44 limits); ~$10; p 0.05; evidence: ciphers/birago-fr3252-1571-72/NOTES.md:461 (Remaining gaps); BIRAGO-POOL.tsv row f.47r
+- fr.3251 other 1570-71 Birago letters (16 cipher-bearing letters f.11-184; ff.27,39,82 period decipherments used as calibration) [same-volume; read] -- remaining uncounted Ceppo-era letters: check PROGRESS.tsv for unread folios; mostly already S-graded fragments, judge FAIL; ~$3; p 0.05; evidence: ceppo NOTES.md:1041; BIRAGO-POOL.tsv row fr.3251 f.11-184
+- fr.4715 f.20 unnamed->Nevers Mar 1571 (Ceppo-Nevers per Tomokiyo) [same-key; not-in-repo] -- fetch canvas, count cipher signs, then key rank test; check length first; ~$2; p 0.04; evidence: ciphers/nevers-birago-fr3251-1572/BIRAGO-POOL.tsv row fr.4715 f.20 'not checked'
+- birago-nevers-1571 (fr.3251 f.119, Nov 1571 numerical cipher, 483 digits) [same-sender; unread] -- none: no key material; needs a new instrument or crib; p 0.02; evidence: folders.tsv open; birago-fr3252 NOTES.md:463 (no key; BIRAGO-NUM 1-3 retired joint anneal)
+- guazzo-nevers-fr4688-1571-72 (Guazzo->Nevers, 25 Mar 1571 ff.15,17) [same-recipient; not-in-repo] -- none: images not located (blocked); p 0.01; evidence: folders.tsv blocked; BIRAGO-POOL.tsv fr.4688 rows (not found on Gallica)

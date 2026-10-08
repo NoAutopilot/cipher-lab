@@ -611,3 +611,15 @@ des fonds", section "Inventaire des documents microfilmés"; PDF dated 14 May 20
 CP Allemagne 194 = Mnesys 2CP/194, **microfilm 13108** (filmed, a reel to itself). Form field values for "Correspondance
 politique, Allemagne 194, ff. 40-48" (hand-held jpg, 18 views, free tier; reuse "Travaux de recherche" + "Mise en ligne")
 written to REQUEST.md for the person; no personal details. Requests: diplomatie.gouv.fr 7 (2 x 404 on guessed page URLs).
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 7 listed, 5 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- AE Correspondance politique Allemagne 194 (Jan 1665 Diet dispatches, same office cipher) [same-key; not-in-repo] -- blocked: owner sends REQUEST.md (ASKS 150), ~$0; p 0.05; evidence: ciphers/decode-2678-bnf-colbert127-gravel-1665/REQUEST.md; NEXT-STEPS.tsv
+- R2733 Gravel to Maulevrier 1674, Mel. Colbert 168bis f.553 (Bourdeau item c) [same-sender; unread] -- none with key_gravel1672: R2733 is a different three-digit design (NOTES.md:351), and Tomokiyo quotes its passage (likely N1); a design test would need its own key; p 0.03; evidence: CATALOG.md:116; ciphers/decode-2678-bnf-colbert127-gravel-1665/NOTES.md (Next 1); key_gravel1672.tsv (corrected by reconciler: NOTES.md:347-351)
+- Gravel to Colbert 127bis f.968r-v (Feb 1665), in clear at thumbnail [same-sender; unread] -- native look for any cipher groups; at thumbnail clear, ~$0.5; ~$0.5; p 0.02; evidence: ciphers/decode-2678-bnf-colbert127-gravel-1665/NOTES.md:~300 (R9 sibling table)
+- Gravel to Colbert 127bis f.1078r-v (Feb 1665), in clear at thumbnail [same-sender; unread] -- as above, ~$0.5; ~$0.5; p 0.02; evidence: ciphers/decode-2678-bnf-colbert127-gravel-1665/NOTES.md:~300
+- Gravel letters 1664 swept: vol.120 f.589, f.55; vol.121 f.221; 121bis f.746 (all clear) [same-sender; read] -- none: swept, clear only; p 0.0; evidence: ciphers/decode-2678-bnf-colbert127-gravel-1665/gravel_leaves_sweep.tsv
+- mel-colbert133-jeure-millet-danzig-1665 (Tomokiyo key on louisxiv0.htm) [same-series; unread] -- separate target; different key, not a propagation; p 0.0; evidence: QUEUE.md:7492 (published key, ~1500 signs, other correspondent: not same key)
+- Colbert-Croissy 1668 key (keys/key_colbert_croissy_1668.tsv) and other Colbert embassy ciphers 1665-71 [same-design; read] -- none: different correspondents/keys; p 0.0; evidence: KEY-OFFICES.tsv; QUEUE.md:7481,7488

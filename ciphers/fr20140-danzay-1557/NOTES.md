@@ -706,3 +706,15 @@ Searched 7 Oct 2026 (date -u): Gallica SRU "Danzay" (199 records; every other Bn
 no cipher seen at this size. ff.40-42 are Latin letters of 1566 and ff.43-49 are despatches dated 1567, outside the
 1554-1560 window. **Unread siblings for key.tsv: 0.** A native look at ff.38-39 would rule out isolated cipher words.
 Test: none. File: keyhunt/2026-10-07-KH1D.tsv.
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 7 listed, 5 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- f.16 (10 Jan 1557 to Henri II), period decipherment on separate sheets [same-volume; not-in-repo] -- transcribe f.16 cipher + apply key.tsv --check; plaintext on sheets gives C; N1-N2 likely since Tomokiyo deciphered, ~$3; ~$3; p 0.05; evidence: ciphers/fr20140-danzay-1557/NOTES.md:157,242 (Tomokiyo built key from it)
+- f.24 (10 Jan 1557 to Card. Lorraine), deciphered in margin [same-volume; not-in-repo] -- as f.16, ~$3; margin decipherment makes this recovery/period, not a new solve; ~$3; p 0.05; evidence: ciphers/fr20140-danzay-1557/NOTES.md:158,242
+- f.30 (27 Jan 1557 to Henri II), deciphered in margin [same-volume; not-in-repo] -- as f.16, ~$3; ~$3; p 0.05; evidence: ciphers/fr20140-danzay-1557/NOTES.md:159,242
+- fr.20140 ff.38-39 (Nov 1558 minutes), possible isolated cipher words [same-volume; unread] -- native look at ff.38-39, ~$0.5; ~$0.5; p 0.01; evidence: ciphers/fr20140-danzay-1557/NOTES.md:707 (KH1-D: unread siblings 0; native look would rule out)
+- other Danzay volumes 1566-1588 (Gallica SRU 199 records) incl. Ryabov 1574-78 fr.4736 cipher [same-sender; not-in-repo] -- none: different cipher period, solved by Ryabov/Tomokiyo; key does not transfer; p 0.01; evidence: ciphers/fr20140-danzay-1557/NOTES.md:168,703-706
+- f.36r lines 1-4 (remaining cipher, same letter/leaf group) [same-volume; read] -- none: already within counted item; p 0.0; evidence: ciphers/fr20140-danzay-1557/NOTES.md:597 (H 37/M 26/U 4); AUDIT.md
+- fr2812-danzay-1578 (Danzay to Henri III, 28 Feb 1578) [same-sender; read] -- none: later, different Danzay cipher (1574-78), already found-solved; p 0.0; evidence: ciphers/fr20140-danzay-1557/NOTES.md:212; ciphers/fr2812-danzay-1578/NOTES.md (found-solved)

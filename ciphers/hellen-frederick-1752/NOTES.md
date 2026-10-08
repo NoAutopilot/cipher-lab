@@ -1730,3 +1730,12 @@ Read so far: 460 of 847 R1953 tokens carry a key value (H 154, S 306) plus M 15,
 - [x] image-check: R4369, R4370, R4372, R4376, R4386, R4388 read from full-size images; R1953 checked against DECODE's transcription (R7A-HEL53) and its keyed 0/8 twins read masked (R8-HEL)
 - [x] retry: the R1953 image check (R7A-HEL53) and the 0/8 pass (R8-HEL)
 Verdict: keep going: 1 internal gap; cheapest next: the 1-800 key-rebuild on the full Fagel scans 5-93 corpus, ~$30-35, low prior (a campaign, lane orchestrator's call), or adopting the image-check + 0/8 corrections into key_r4369/ (orchestrator's call, changes a counted reading)
+
+## Siblings (8 Oct 2026)
+
+SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 4 listed, 3 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
+
+- Hellen key sheets R4369/R4370/R4372/R4376/R4386/R4388 (Add MS 32276) [same-key; read] -- pre-registered diagnosis of R4372 bigram signal; fill codes 1-800 for R1953's 374 U tokens; ~$6; p 0.2; evidence: KEY-DESIGN.tsv rows for key_r4369..4372; NOTES.md:961
+- R1049 (7 Sept 1756) Hellen letter [same-sender; unread] -- transcribe R4376 (f.56, 1754 table) and test on R1049; ~$8; p 0.1; evidence: hellen-frederick-1752/ciphertext_R1049.txt; NOTES.md:878 (next: transcribe R4376 P3)
+- 1763 cluster R1045-R1048, R1060, R1061 (pooled_1763.txt) [same-sender; unread] -- open post-1756 Add MS 32276 records R4381-R4408 for a 1763 table; or pooled solver with matched control; ~$4; p 0.1; evidence: hellen-frederick-1752/pooled_1763.txt, pool_1763.py; NOTES.md:879 (no 1763 table)
+- Michell to Frederick letters R1050 (5 Sept 1752), R1051 (12 Nov 1751) and kin, KHA inv.198 [same-design; unread] -- none until a Michell key surfaces; keys tested negative FT4/FT4b; p 0.03; evidence: hellen-frederick-1752/sibling_michell/DOC_R1050_D1938_1938.txt; NOTES.md:805 (Michell keys negative)
