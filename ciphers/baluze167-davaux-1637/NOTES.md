@@ -983,7 +983,7 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 - [x] retry: 170 f.229 crops re-cut (D1A-B167), passed (D4-B167), re-derived (D4V-B167) and audited (AUD1-B167)
 Verdict: keep going: 3 internal gaps; cheapest next: provisional decode of 170 f.228r-v with the f.229 letter values (~$2), then the second audit AUD2-B167
 
-## B167-228 solver (account 4, for the account-3 orchestrator), 8 Oct 2026, 12:37-12:4x UTC by date -u (ended 12:46)
+## B167-228 solver (account 4, for the account-3 orchestrator), 8 Oct 2026, 12:37-12:45 UTC by date -u
 
 Brief: `.claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md` section B167-228 (provisional decode of 170 f.228r-v with the f.229 letter
 values, matched control, fr17 judge). Files: `b167228/` (to_pipe.py, key_unmarked.tsv, judge_null.py, judge_null.out),
