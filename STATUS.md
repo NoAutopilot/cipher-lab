@@ -6139,6 +6139,26 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE ST-LEDGER-3 handoff (session_01PJJSq4hvT8sJovCacbSYX1, account 2), 8 October 2026 (closed 11:0x UTC: past 80% of cap, lane about 32.8 of 40)
+
+Brief .claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md (ST-LEDGER-3); worker brief .claude/briefs/runs/2026-10-08-acct2-st-ledger3-workers.md.
+Eight workers 29.71 + orchestrator ~3.1 by get_session. Readers Sonnet (LS3-K, R9, R18, R18b) + Opus (R62); first verifiers Opus (LS3-V18a, V18b, V62).
+Result (eckert-1864, one audit each, not counted until a second): N3 at D3 -- E78, N2-BQ (weak), O9-BB, O9-AK (weak); N3 at D2 -- O9-BA (weak),
+E76, E83 (weak), E84 (weak). Second audits queued: AUD2-LS3-A (account 4: E78 N2-BQ O9-BB O9-AK), AUD2-LS3-B (account 1: O9-BA E76 E83 E84).
+In print or clear (N1/N2): N2-BP (OR ser. III vol. 4 pp.238-239 -- the reader pre-filtered OR ser. I only), O9-AL, E77, E79 (N2), E80 (ORN I/26
+p.575), E81, E82 (clear in the Huntington transcription); 9730.87, 9731.89, 9908.417, 9939.484 and three of R18b's seven in OR. eckert-1862: six
+residue entries image-checked (0 slips); 4982.1 N3 D1, the other five N1 (OR I/52 pt 1 and the Huntington clear text).
+- (a) no Cipher Book #10 in p16003coll11 (10 searches): E69/E75 stay no-key-material. (b) the 1865 token-share band is non-selective against its
+  labelled control: 1865 book assignment is untestable by that instrument; the ledger's own "No N" label plus the time word is what decides a row.
+- Unverified, handed on: LS3-R18b read E86 (Horner to Dix, 31 Jan 1865, weak: no label, book 2 shares the time word) and O9-BC (10028.625, ledger
+  "9"; its clear text is the same telegram as 10027.624, likely N1). E85 and E87 key not in hand. A first verifier for E86/O9-BC is ~$2.
+- A3V3-ECK18's book assignment by key.md alone was wrong on 9731.89 and 10028.625 (both labelled "9" on the leaf): the other 16 of its 28 fully
+  keyed entries were not re-tested for that.
+Left, runnable: (1) first verifier E86/O9-BC, ~$2; (2) re-test A3V3's remaining keyed entries for wrong book (ledger label from image), ~$2;
+(3) eckert-1862: align the 20 printed residue entries to their print for dated C witnesses, ~$2 (LS3-R62 NOTES); (4) object 5952 (Fort Monroe
+1864-65) with the same pre-filter, the next ledger, never opened -- item (f) of the brief, not reached; (5) the Cutler p.49 entry (mssEC 18,
+21 Apr 1864): none of the three books reads it.
+
 ## LANE ST-LEDGER-2 handoff (session_01F54CxP1w63RgwvrKV1pN4S, account 1), 8 October 2026 (closed 05:5x UTC: scope spent, lane about 47.5 of 50)
 
 Brief .claude/briefs/runs/2026-10-08-acct3-ledger2.md (ST-LEDGER-2); worker brief .claude/briefs/runs/2026-10-08-acct1-st-ledger2-workers.md.

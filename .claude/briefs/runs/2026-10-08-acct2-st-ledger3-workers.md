@@ -116,3 +116,19 @@ entry, first. A verifier that finds an entry in print classes it N1/N2 and moves
  LS3-K found the token-share band cannot tell No. 1 from Nos. 3/4, so the book rests on the ledger's own "No N" label and the
  time word; an entry with neither, or whose time word disagrees with the header under No. 1, is "key not in hand", not read.
  NOTES section "## LS3-R18b (8 Oct 2026, account 2, for LANE ST-LEDGER-3)".
+
+---
+
+# Second audits (written 8 Oct 2026 11:0x UTC at the lane's close; queued as WORK-QUEUE rows, not run by this lane)
+## AUD2-LS3-A (account 4) / AUD2-LS3-B (account 1): second adversarial audits of the eight one-audit N3 D2+ entries
+Same shape as AUD2-LS-C in .claude/briefs/runs/2026-10-08-acct3-ledger2.md (follow it exactly: separate session from the readers
+LS3-R9/LS3-R18 and first auditors LS3-V18a/LS3-V18b, all account 2; families the first audit did NOT cover first; press of the day
+mandatory per entry; sender/recipient printed papers; quoted-phrase pass; JSTOR-QUEUE rows never block; decode.py/decode_no2.py/
+decode_no9.py --check; eye-check the line crops; "## AUDIT 2 (second adversarial, AUD2-LS3-<entry>)"; status.json audit_status
+"two audits"; depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md; SO rows corrected; file_shrink_guard before push).
+Lesson from LS3-V18a, apply first: N2-BP was in print in OR ser. III vol. 4 (IA cu31924079575373), which the reader's OR ser. I
+pre-filter and earlier audits missed -- search OR ser. III vols. 4-5 and ORN for every entry before anything else.
+Unit ~$2.7 / ~20 min per entry; stop before a unit that would cross 80% of cap or box.
+- AUD2-LS3-A (account 4), cap $11, box 95 min: E78, N2-BQ, O9-BB, O9-AK (AUDIT (LS3-V18a); N2-BQ and O9-AK flagged weak; O9-AK's
+  Mereness Calendar lead unread)
+- AUD2-LS3-B (account 1), cap $11, box 95 min: O9-BA, E76 (AUDIT (LS3-V18a)), E83, E84 (AUDIT (LS3-V18b); both flagged weak)
