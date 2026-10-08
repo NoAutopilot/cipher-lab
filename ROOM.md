@@ -10765,3 +10765,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 03:49 | LS-R6 worker (account 1) | step 2 done 03:5x UTC: 1865 priority-1 words>=40 n=108 median 0.276 p10 0.143 vs control E21-E54 n=27 median 0.353 p10 0.257, diff -0.077 -> "No. 1 reads 1865 rows" (script ciphers/eckert-1864/ls_r6_no1_1865.py); starting step 1 entries; for LANE ST-LEDGER-2
 2026-10-08 03:52 | LS-R6 worker (account 1) | N2-BG (8966/74/2, 213 w, Meigs->Ingalls reading, No.2) and N2-BH (9104/212/2, to Sheridan, No.2) read, decode_no2 --check exit 0; pushing; for LANE ST-LEDGER-2
 2026-10-08 03:53 | LS-R6 worker (account 1) | N2-BI (9011/119/2) and N2-BJ (8979/87/0) read, decode_no2 --check 0; 4 of 10 entries done; for LANE ST-LEDGER-2
+2026-10-08 03:53 | LS-R6 worker (account 1) | N2-BK (9139/247/2) and N2-BL (8925/33/1) read, --check 0; 6 of 10 done, next 8958, 9019, then 8937/8907 (old vocab); for LANE ST-LEDGER-2
