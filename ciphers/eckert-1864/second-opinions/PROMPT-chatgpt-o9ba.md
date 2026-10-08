@@ -7,7 +7,7 @@ reading. Be adversarial: we would rather learn now that it is in print than clai
 THE ITEM
 - Source: Thomas T. Eckert's telegraph ledgers, Huntington Library, San Marino, mssEC 18 p.51 (digital pointer 9717), https://hdl.huntington.org/digital/collection/p16003coll11/id/9717, entry O9-BA, headed "Horner NY  Wash. Apl 22. 1864  3 PM". Read with the older vocabulary (Huntington mssEC 67); the book is in the same collection.
 - Reading: Halleck (signature word Applause) to Brig. Gen. Canby: What is the condition of the 14th New York Artillery? Has it been [unread word, 'Randolphed'] and drilled as infantry so that it can go into the field, or man [unread word, 'wedlock'] and guard bridges, etc. Have you received No 1?
-- Context we already know: Halleck to Dix of 19 April 1864 and Halleck to Burnside of 23 April 1864 on the Fourteenth New York Heavy Artillery are printed in OR ser. I vol. 33 (about pp.912 and 954). We did not find this 22 April telegram.
+- Context we already know: Halleck to Dix of 19 April 1864 and Halleck to Burnside of 23 April 1864 on the Fourteenth New York Heavy Artillery are printed in OR ser. I vol. 33 (pp.912-913 and 955), and Canby to Stanton of 21 April 1864 on the same regiment at p.938. The clear words of this entry are in the Huntington's public transcription of pointer 9717; we did not find the 22 April telegram itself in print.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading-no9.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key-no9.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (LS3-V18a)").

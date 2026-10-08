@@ -6286,9 +6286,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS3-V18b)'"
+        "AUDIT.md '## AUDIT (LS3-V18b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS3-B)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 100.0,
@@ -6302,9 +6303,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864-65: Rucker to Colonel R. C. Webster, Fort Monroe, 29 Nov 1864, every available steamer and propeller that can be spared (E83)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; most of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (Army and Navy, by date and correspondent), the 1864-65 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92, Meigs's 1865 report, the press page by page and HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS3-V18b); weak N3: most of the body is clear in the Huntington's public transcription, the key supplies available, steamer, in the, post (and the address, date and hour); SO-ECKERT-E83 queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 1 book; the telegram's clear words are in the Huntington's public transcription of mssEC 18 p.235, and its substance (steamers ordered to Washington on 29 Nov 1864 to move the Sixth Corps) is in Halleck's printed telegram to Sheridan of the same day (OR ser. I vol. 43 pt 2 p.695); Rucker's own wording with its code words read was not located in print.",
+      "gap": "N2 (lowered by AUD2-LS3-B, 8 Oct 2026): body public in the Huntington transcription of pointer 9901, and its hidden point is printed: Halleck to Sheridan 29 Nov 1864 1 p.m., 'I have ordered steamers here' (OR I/43 pt 2 p.695; the No. 3 entry on the same leaf); not counted; SO-ECKERT-E83 withdrawn",
       "phrases": [
         "Huntington mssEC 18 p.235, pointer 9901, E83"
       ],
@@ -6313,23 +6314,24 @@
         "Huntington mssEC 18 p.235, pointer 9901, E83"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "10 H of 10 code words",
       "unresolved_spans": "none",
       "reading_version": "LS3-R18 8 Oct 2026 (reading.md), grades as checked in AUDIT (LS3-V18b) section 5",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS3-V18b)' section 5",
       "depth_sentence": "On 29 Nov 1864 Rucker asks Colonel R. C. Webster, quartermaster at Fort Monroe, to send to Washington immediately every available steamer and propeller in service at his post that can be spared, and to answer at once with their names.",
-      "depth_check": "fresh rule-7 re-derivation (decode.py --check, LS3-V18b); image checked, all 7 lines (LS3-V18b); code clause: Weasel = Steam reads in E79, E83 and the 9858 Horner sibling; no external check",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, LS3-V18b); image checked, all 7 lines (LS3-V18b); code clause: Weasel = Steam reads in E79, E83 and the 9858 Horner sibling; no external check; second eye on the image, lines 1-8 (AUD2-LS3-B); external: Halleck to Sheridan 29 Nov 1864 1 p.m., OR I/43 pt 2 p.695 (AUD2-LS3-B)",
       "depth_note": "10 H of 10 code words"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS3-V18b)'"
+        "AUDIT.md '## AUDIT (LS3-V18b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS3-B)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 100.0,
@@ -6343,9 +6345,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864-65: Ingalls to Colonel Webster, Fort Monroe, 3 Jan 1865, surplus seagoing vessels to Baltimore (E84)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; most of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (Army and Navy, by date and correspondent), the 1864-65 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92, Meigs's 1865 report, the press page by page and HathiTrust full text unread, JSTOR rows pending, so not N4; one audit (LS3-V18b); weak N3: most of the body is clear in the Huntington's public transcription, the key supplies Baltimore, report, Quartermaster (and the address and hour); SO-ECKERT-E84 queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 1 book; the clear words are in the Huntington's public transcription of mssEC 18 p.262, and the purpose (sea-going vessels at Baltimore for Sheridan's division) is printed in Grant's telegrams of 2-3 Jan 1865 (OR ser. I vol. 46 pt 2 pp.9, 25); Ingalls's own wording was not located in print.",
+      "gap": "N2 (lowered by AUD2-LS3-B, 8 Oct 2026; a matching of the order to its printed purpose, not a print of E84's words -- a third audit may hold weak N3): body public in the Huntington transcription of pointer 9928; Grant to Stanton 2 Jan 1865 and Grant to Terry (OR I/46 pt 2 pp.9, 25) put Sheridan's division on sea-going vessels at Baltimore; not counted; SO-ECKERT-E84 withdrawn",
       "phrases": [
         "Huntington mssEC 18 p.262, pointer 9928, E84"
       ],
@@ -6354,14 +6356,14 @@
         "Huntington mssEC 18 p.262, pointer 9928, E84"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "6 H of 6 code words",
       "unresolved_spans": "none",
       "reading_version": "LS3-R18 8 Oct 2026 (reading.md), grades as checked in AUDIT (LS3-V18b) section 5",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS3-V18b)' section 5",
       "depth_sentence": "At 1.30 PM on 3 Jan 1865 Ingalls asks Colonel Webster, quartermaster at Fort Monroe, to send any surplus seagoing vessels not needed there to Baltimore, to report to the chief quartermaster.",
-      "depth_check": "fresh rule-7 re-derivation (decode.py --check, LS3-V18b); public transcription read against ciphertext.txt, image not cropped; code clause: Baptism = Baltimore reads in E79 and E84; no external check",
+      "depth_check": "fresh rule-7 re-derivation (decode.py --check, LS3-V18b); public transcription read against ciphertext.txt, image not cropped; code clause: Baptism = Baltimore reads in E79 and E84; external: OR I/46 pt 2 pp.9, 25 (AUD2-LS3-B); image lines 1-7 read (AUD2-LS3-B; none before)",
       "depth_note": "6 H of 6 code words"
     },
     {
@@ -6452,9 +6454,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS3-V18a)'"
+        "AUDIT.md '## AUDIT (LS3-V18a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS3-B)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 71.4,
@@ -6469,8 +6472,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Halleck to Canby, New York, 22 Apr 1864, is the 14th New York Artillery drilled as infantry so that it can go into the field? (O9-BA)",
       "grade": "N3",
-      "line": "Read at grade H with the period War Department cipher book (the old vocabulary 'No. 9', mssEC 67); no prior decipherment or printed text located in the Official Records (Army ser. I and III, Navy), the Butler and Grant editions, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "weak N3: Halleck's messages on the same regiment either side are printed; NARA RG 92/107/77, HathiTrust full text and the Huntington Sent volumes page by page unread, JSTOR rows pending, so not N4; one audit (LS3-V18a); SO-ECKERT-O9BA queued",
+      "line": "Read at grade H with the period War Department cipher book (the old vocabulary 'No. 9', mssEC 67); no prior decipherment or printed text located in the Official Records (Army ser. I and III, Navy), the Butler and Grant editions, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026); the clear words are in the Huntington's public transcription (mssEC 18 p.51).",
+      "gap": "weak N3 kept by AUD2-LS3-B (two audits, 8 Oct 2026): clear words public in the Huntington transcription of pointer 9717; the regiment's arm and outcome printed either side (Canby 21 Apr, OR I/33 p.938; Halleck to Burnside 23 Apr, p.955), Halleck's 22 Apr question (field vs. guards and bridges) not located in print; not N4: NARA RG 107, Grant Papers vol. 10 notes, HathiTrust unread, JSTOR pending. Earlier gap: weak N3: Halleck's messages on the same regiment either side are printed; NARA RG 92/107/77, HathiTrust full text and the Huntington Sent volumes page by page unread, JSTOR rows pending, so not N4; one audit (LS3-V18a); SO-ECKERT-O9BA queued",
       "phrases": [
         "Huntington mssEC 18 p.51, pointer 9717, O9-BA"
       ],
@@ -6577,9 +6580,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS3-V18a)'"
+        "AUDIT.md '## AUDIT (LS3-V18a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS3-B)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 100.0,
@@ -6593,9 +6597,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: Butler to W. P. Smith, 1 Nov 1864, special car for himself and staff on the first through train to New York, strictly confidential (E76)",
-      "grade": "N3",
-      "line": "Read at grade H with the period War Department cipher book (Cipher No. 1); no prior decipherment or printed text located in the Official Records (Army ser. I and III, Navy), the Butler and Grant editions, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "the 1-5 Nov 1864 press pages (90, unread); B&O Railroad records; NARA RG 92/107/77, HathiTrust full text and the Huntington Sent volumes page by page unread, JSTOR rows pending, so not N4; one audit (LS3-V18a); SO-ECKERT-E76 queued",
+      "grade": "N1",
+      "line": "A mostly clear telegram whose text is in the Huntington's public transcription of mssEC 18 p.217; the Cipher No. 1 words read at grade H as New York, Colonel and Butler's signature, and his New York posting is printed in OR ser. I vol. 42 pt 3 pp.481, 489.",
+      "gap": "N1 (lowered by AUD2-LS3-B, 8 Oct 2026): body clear in the Huntington transcription of pointer 9111 except one content code word (New York), which OR I/42 pt 3 pp.481, 489 print as Butler's destination (the LS3-V18b/D2V-E74 line for mostly-clear entries); not counted; SO-ECKERT-E76 withdrawn; header 'Page 219' should read 217",
       "phrases": [
         "Huntington mssEC 19 p.219, pointer 9111, E76"
       ],
@@ -6604,7 +6608,7 @@
         "Huntington mssEC 19 p.219, pointer 9111, E76"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N1",
       "mapping_novelty": "N3",
       "completeness": "6 H of 6 code words; most of the text is plain",
       "unresolved_spans": "",

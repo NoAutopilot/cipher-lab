@@ -3621,3 +3621,108 @@ it was found in the press, which the brief named.
   print (Urbana Union 7 Jun 1865 p.2), Borgia = Hooker, Ranger = Grant (C); both bodies are clear in the public transcription.
 - Requests: hdl.huntington.org 3 item JSONs; archive.org 2 (one djvu, one advancedsearch); loc.gov 5 (2 search JSON, 1 page JSON, 2 full-text,
   one of which answered 500); all >= 2 s apart.
+
+## AUDIT 2 (second adversarial, AUD2-LS3-B)
+
+Verifier AUD2-LS3-B (account 1, WORK-QUEUE row AUD2-LS3-B, session_01XTwC7fiKALx6WC8A3weak9), 8 Oct 2026, 12:44-13:1x UTC by `date -u`; a
+separate session from the readers (LS3-R9: E76; LS3-R18: O9-BA, E83, E84) and from the earlier auditors (LS3-V18a: O9-BA, E76; LS3-V18b: E83,
+E84), all account 2; not protecting any of their conclusions. Scope: **O9-BA, E76, E83, E84**. Nothing decoded beyond `--check`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. Key source for all four: `period`.
+
+### 1. Re-derivation (rule 7) and image
+- `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check`: exit 0 each (12:47 UTC).
+- Image (Huntington IIIF `hdl.huntington.org/iiif/2/p16003coll11:<pointer>/full/2400,/0/default.jpg`, PIL crops in scratch, not committed):
+  **E84** (9928, x 200-2300, y 1040-1720; **no image check in LS3-V18b**, which read it from the public transcription only): word for word
+  with ciphertext.txt, header "No 1" and "1.30 PM" included ("baptism" written "baptisim"-like, as transcribed). **E76** (9111, y 700-1260):
+  word for word; the leaf's printed folio is **217** (the Huntington title says "Page 217"; E37's header gives 9110-9111 as 216-217), so the
+  "Page 219" in E76's header in ciphertext.txt / reading.md is a header-label slip (not changed here; reader's file). **O9-BA** (9717, y 150-1000)
+  and **E83** (9901, y 150-950): word for word; O9-BA line 6 reads "rabbits" (second eye agrees with LS3-V18a); E83 "canby spared" is the plain
+  pun "can be spared".
+
+### 2. Families the earlier audits did not cover, searched first (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| **Holding archive's public transcription** (D2V-E74 test; absent from LS3-V18a's log for O9-BA and E76) | Huntington CONTENTdm `dmGetItemInfo` for 9717, 9111 (and 9901, 9928 re-read) | **clear words of all four public**; 9901 and 9928 also carry the same-day siblings used in section 3 |
+| **OR ser. I by date, the volumes the earlier logs did not name** | OR I/43 pt 2 (`warofrebellion432unit`, cached) for E83, 27 Nov-3 Dec; OR I/46 pt 1 (`warofrebellion461unit`) and pt 2 (`warofrebellion462unit`) for E84, 1-6 Jan; OR I/42 pt 3 (`warofrebellion423unit`) re-read for E76, 1-2 Nov; OR I/33 (cached) for O9-BA, 18-26 Apr | **E83's hidden point printed** (OR I/43 pt 2 p.695); **E84's purpose printed** (OR I/46 pt 2 pp.9, 25); **E76's destination printed** (OR I/42 pt 3 pp.481, 489); O9-BA: context only (section 3) |
+| **OR ser. III vols. 4-5** (brief's lesson) | IA `cu31924079575373` (vol. 4) and `cu31924079575381` (vol. 5, incl. Meigs's annual report for 1865, which LS3-V18b listed as unread), whole-volume regex: "surplus", "sea-going vessels", "fit for sea", "not required at your", "every available steamer", Webster, Sheridan + Baltimore, Fort Fisher + transport | no entry; vol. 5 has only the report's summary of the Fort Fisher transport fleet and Webster in officer lists |
+| ORN | ORN I/11 (`officialrecordso0011unse`, Dec 1864-Jan 1865 North Atlantic) for E84: "surplus", "fit for sea", "sea-going vessels" | Grant's instructions to Terry only (the same text as OR I/46 pt 2 p.25); not E84 |
+| Papers of U. S. Grant (be-api fts per item) | vol. 12 (`papersofulyssess0012gran`, positive control "Butler" answered): "special car" 0; vol. 13 (`papersofulyssess0013gran`): positive control "Sheridan" answered 0, so the item is not searchable this way -- **unreachable**, not a negative; vol. 10 (O9-BA): two timeouts, not retried further | no hit where the control answered |
+| 1864-65 press (loc.gov Chronicling America JSON, `dates=` window; ALTO OCR for two pages) | O9-BA: "fourteenth heavy artillery" Canby 22-30 Apr 0; "14th heavy artillery" drilled infantry 22 Apr-5 May 0. E76: "Butler" "special car" New York 1-6 Nov 0; "General Butler" arrived New York election 2-5 Nov 10 pages, **Evening Star 2 Nov p.2 read**: "Major General Butler ... arrived here this morning at 7 o'clock from the front on his dispatch boat Greyhound" (context; not E76). E83: "sixth corps" steamers Washington 29 Nov-6 Dec 4; steamers ordered Washington "Fortress Monroe" 29 Nov-3 Dec 16; Evening Star 30 Nov p.1 read (284 OCR words, no hit). E84: Sheridan division Baltimore transports 3-10 Jan 14 (titles only, not read); "surplus vessels" Baltimore 3-12 Jan 0 | no entry located |
+| IA full text, fresh exact phrases (be-api) | "drilled as infantry so that"; "condition of the Fourteenth New York" Canby; "special car for self and staff"; "first through train to New York" Butler (9 hits, all 1880s NY Times, unrelated); "give the names of those you send"; two E83/E84 queries answered non-JSON | 0 relevant |
+| Google Books API (key, country=US) | 4 queries; 2 answered 503 (E76, E84), not retried | nothing relevant |
+| OpenAlex (key) | one query per entry (Sixth Corps steamers Dec 1864; Fort Fisher transports Jan 1865; Butler New York election 1864; Fourteenth New York Heavy Artillery 1864) | nothing relevant |
+| JSTOR | families (i) and (ii) already queued by the earlier audits for all four | pending (never blocks) |
+| Unread / unreachable | NARA RG 92 (Rucker's and Ingalls's telegrams sent), RG 107; Grant Papers vol. 13 (be-api control failed; the Jan 1865 notes may quote E84's side); Butler's Book (1892); the 14 + 16 + 10 press pages listed by title only; HathiTrust full text; S2 and CORE (not re-run) | unread |
+
+### 3. Findings per entry
+- **E83** (Rucker to Webster, Fort Monroe, 29 Nov 1864). The No. 3 entry directly below it on the same leaf (9901, public transcription: "Will
+  not the spencer in regard to Gordon's Quaker prevent the Query ment ... Please ans immely as I have ordered Waltzers here Embrace") is
+  **Halleck to Sheridan, Washington, 29 Nov 1864, 1 p.m., printed at OR I/43 pt 2 p.695**: "Will not the information in regard to Gordon's
+  division prevent the detachment of the Sixth Corps? ... Please answer immediately, as I have ordered steamers here." The same page prints
+  Sheridan's 2.30 p.m. reply (the Sixth Corps should go at once if Grant intends an offensive). So the printed record says that on 29 Nov steamers
+  were ordered to Washington to move the Sixth Corps; E83's body, public except "every [available] [steamer] and propeller you have [in the]
+  service at your [post]", is that order to the Fort Monroe quartermaster. The key's contribution is the word "steamer" and three fillers whose
+  sense the print already gives. **N2** (lowered from N3): substance in print and the clear words public; Rucker's own wording with its code words
+  read not located in print. (The 9901 No. 3 entry is itself a printed text, should a reader take it up: N1 by OR I/43 pt 2 p.695.)
+- **E84** (Ingalls to Webster, Fort Monroe, 3 Jan 1865 1.30 PM). Body public except "send them to [Baltimore] to [report] to the Chf
+  [Quartermaster]". **OR I/46 pt 2 p.9** prints Grant to Stanton, City Point, 2 Jan 1865, 3 p.m.: "Let him [Sheridan] get them to Baltimore now
+  as soon as possible, and all the infantry on vessels that can go to Wilmington ready for orders"; **p.25** prints Grant's instructions to Terry:
+  "General Sheridan has been ordered to send a division of troops to Baltimore and place them on sea-going vessels. These troops will be brought
+  to Fort Monroe, and kept there on the vessels". E84 asks the Fort Monroe quartermaster for surplus vessels fit for sea, to Baltimore, to report
+  to the chief quartermaster: the print gives the destination and the purpose (sea-going vessels at Baltimore for Sheridan's division), and the
+  same leaf's No. 3 entry to Beckwith at City Point, 1.30 PM, has "Webster to send all surplus sea going [vessels] to [tumbler]" in the public
+  transcription. **N2** (lowered from N3). This rests on matching E84's order to the printed purpose, not on a print of E84's own words; a third
+  audit could hold it at weak N3 (the O9-BB line of AUD2-LS3-A), and this audit records that alternative.
+- **E76** (Butler, signed Knox = Butler, to W. P. Smith, 1 Nov 1864 12 M). The Huntington's public transcription of 9111 carries the body clear:
+  "Please let me have your special car for self & staff for the first through train to France zebra strictly confidential Ack receipt care
+  Pandora Hardie Youth Knox". The body's code words are [New York], [.] (zebra), [Colonel] (a rank before a clear name), and the signature
+  [signed] [Butler]. The one content word, New York, is Butler's destination in print the same day and the next: Grant to Butler, 1 Nov 3.30 p.m.,
+  "to let you go there [the city of New York] until after the election" (**OR I/42 pt 3 p.481**), and Butler to Grant from Washington, 2 Nov
+  1 p.m., "Am ordered to report in New York to General Dix ... Shall leave to-night for New York, Fifth Avenue Hotel" (**p.489**; this is the
+  9111 entry below E76, whose public transcription matches the print). By the line LS3-V18b drew for mostly-clear entries (body clear except at
+  most one content code word: E81, E82) and the D2V-E74 precedent, **N1** (lowered from N3). Context, not affecting the class: the Evening Star of
+  2 Nov p.2 reports Butler arriving in Washington at 7 a.m. that day, so E76 (dated Washington, noon 1 Nov, acknowledgement "care Colonel
+  Hardie") was presumably relayed through the War Department office before he arrived; not settled here.
+- **O9-BA** (Halleck to Canby, New York, 22 Apr 1864 3 PM). Body public except [Artillery], [Infantry], [Guards], [Bridges] (Randolphed and
+  wedlock M). Context added to LS3-V18a's: **OR I/33 p.938** prints Canby to Stanton, New York, 21 Apr: "The Fourteenth New York Heavy
+  Artillery, 1,900 present ... will leave for Washington ... General Dix is of the opinion that a regiment of the city militia should be called
+  into the service, to furnish guards and escorts"; Halleck to Burnside of 23 Apr ("armed as infantry, has been assigned to your corps") is on
+  **p.955**, not about p.954 as LS3-V18a wrote. The print gives the regiment, its arm and its outcome (infantry, to Burnside's corps), but not
+  Halleck's question of 22 Apr (field service vs. manning guards and bridges) or Canby's answer to it. **N3, weak** (kept). A third audit could
+  draw N2 here on the strength of p.955; this audit does not, because the question's substance -- field vs. guard duty -- is not in the print
+  located.
+
+### 4. Classification and depth
+| ID | N-class | text known? | key | depth | check |
+|---|---|---|---|---|---|
+| O9-BA Halleck to Canby, 22 Apr 1864 3 PM | **N3, weak** (kept) | clear words public (9717); the question not located in print | period | D2 kept, 71.4 | code clause Applause = Halleck (O9-AK, O9-AL, here); image lines 1-8 (second eye); external: Canby 21 Apr (OR I/33 p.938), Halleck to Burnside 23 Apr (p.955) |
+| E76 Butler to W. P. Smith, 1 Nov 1864 12 M | **N1** (lowered) | known: body clear in the Huntington transcription of 9111; the one content code word (New York) in print (OR I/42 pt 3 pp.481, 489) | period | D2 kept, 100 | code clause France = New York reads in E37 and other entries; Pandora = Colonel in E66; image lines 1-6; external: OR I/42 pt 3 pp.481, 489 |
+| E83 Rucker to Webster, 29 Nov 1864 | **N2** (lowered) | substance known: OR I/43 pt 2 p.695 (Halleck, "I have ordered steamers here"); body public (9901) | period | D2 kept, 100 | code clause Weasel = Steam (E79, E83, 9858); image lines 1-8 (second eye); external: OR I/43 pt 2 p.695 |
+| E84 Ingalls to Webster, 3 Jan 1865 1.30 PM | **N2** (lowered) | substance known: OR I/46 pt 2 pp.9, 25 (Sheridan's division to Baltimore on sea-going vessels); body public (9928) | period | D2 kept, 100 | code clause Baptism = Baltimore (E79, E84); **image lines 1-7 read here (none before)**; external: OR I/46 pt 2 pp.9, 25 |
+
+- Depth is kept, not raised: each has a code clause under the bar and a true specific sentence (the earlier audits' sentences, checked here
+  against the print: E83's "to Washington" and E84's "to Baltimore" agree with OR I/43 pt 2 p.695 and OR I/46 pt 2 p.9). An external check now
+  exists for E83 and E84, but D3 also needs the clause above the authentication distance and >= 80% of cipher tokens H/C/S with a stated AD
+  computation, which this audit did not make; no raise without the check.
+- **Safe sentences.** E83: "Read at grade H with the period Cipher No. 1 book; the telegram's clear words are in the Huntington's public
+  transcription of mssEC 18 p.235, and its substance (steamers ordered to Washington on 29 Nov 1864 to move the Sixth Corps) is in Halleck's
+  printed telegram to Sheridan of the same day (OR ser. I vol. 43 pt 2 p.695); Rucker's own wording with its code words read was not located in
+  print." E84: "Read at grade H with the period Cipher No. 1 book; the clear words are in the Huntington's public transcription of mssEC 18 p.262,
+  and the purpose (sea-going vessels at Baltimore for Sheridan's division) is printed in Grant's telegrams of 2-3 Jan 1865 (OR ser. I vol. 46 pt
+  2 pp.9, 25); Ingalls's own wording was not located in print." E76: "A mostly clear telegram whose text is in the Huntington's public
+  transcription of mssEC 18 p.217; the Cipher No. 1 words read at grade H as New York, Colonel and Butler's signature, and his New York posting is
+  printed in OR ser. I vol. 42 pt 3 pp.481, 489." O9-BA: LS3-V18a's sentence, adding "the clear words are in the Huntington's public
+  transcription". Unsafe for all four: "first", "unpublished", "unknown telegram", any word implying the clear text was not available.
+- Not N4 for O9-BA: NARA RG 107, the Grant Papers vol. 10 notes for 22 Apr and HathiTrust are unread; JSTOR rows pending.
+
+### 5. Postmortem
+- Both earlier audits searched OR by date in the volumes they named, but neither read **the leaf's own siblings against print**: E83's
+  same-leaf No. 3 neighbour is printed in OR I/43 pt 2 p.695 and names the order E83 executes; E76's neighbour is printed in OR I/42 pt 3 p.489.
+  For a ledger entry, check each same-leaf sibling against OR before classing the entry.
+- LS3-V18a's log had no holding-archive transcription family (AUD2-LS3-A's finding, repeated for O9-BA and E76); E76's body is in it.
+- LS3-V18b left E84 without an image check; read here, it agrees.
+- Over-claiming sentences corrected: status.json rows for E76 (N3 -> N1), E83 and E84 (N3 -> N2), all "not counted"; O9-BA's row gains
+  "two audits" and the public-transcription note. SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E76, -E83, -E84 withdrawn (second opinions are queued only
+  at N3 or better); SO-ECKERT-O9BA stays queued. Readings and ciphertext files unchanged (E76 header "Page 219" -> 217 left for a reader, ~$0.05).
+- Requests: hdl.huntington.org 8 (4 item JSON, 4 images); archive.org 7 djvu; be-api.us.archive.org 15 (6 timeouts/non-JSON, one retry
+  round); www.loc.gov 10 + tile.loc.gov 2; googleapis.com 4 (2 answered 503); api.openalex.org 4; all >= 1.5 s apart.
