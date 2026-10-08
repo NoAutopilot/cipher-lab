@@ -88,3 +88,13 @@ control (one line, no reading).
  vocabulary its code words belong to (share of tokens in key.md vs key-no2.md vs key-no9.md) before judging the reading; and re-read
  from the image every M token. For E69/E75 say in one line whether one of the three keys does read them after all (counts only).
  Points from Wave 2 (three crops word for word, I/M re-reads, press of the day) hold.
+
+## LS-FIX (Sonnet 5.5; cap $2, box 35 min; written 05:2x UTC): two corrections the first verifiers asked for, nothing else
+ Points A-C apply. (1) E65 (8958/66/0) was decoded with Cipher No. 1 but is Cipher No. 2 (AUDIT.md "## AUDIT (LS-V6)"): move its
+ block out of ciphertext.txt into ciphertext-no2.txt as the next free N2 ID (fetch first; N2-BN is used), decode with decode_no2.py
+ against key-no2.md, both decoders `--write` then `--check` exit 0; leave a one-line "E65: withdrawn, re-filed as N2-B? (LS-FIX)" in
+ the ciphertext.txt header comment or reading.md note the way earlier withdrawn IDs are recorded (grep for "withdrawn" first); update
+ the entries-mssEC19.tsv already_read cell and the LS-R6 NOTES table row. (2) E60 (AUDIT "## AUDIT (LS-V5)"): fix the header to
+ Lincoln to John Hay at the Astor House and add "John" as a plain word in clear, re-run decode.py --write/--check. Then add one line to
+ AUDIT.md under "## AUDIT (LS-V6)" and "## AUDIT (LS-V5)" naming the commit that carried each correction (rule 10 propagation); no
+ class changes. NOTES section "## LS-FIX (8 Oct 2026, account 1, for LANE ST-LEDGER-2)", three lines. file_shrink_guard before push.
