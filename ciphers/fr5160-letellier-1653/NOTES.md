@@ -2238,3 +2238,32 @@ revised): the low rows are the ones already known from align_f67: `6` qu 1/14 (a
 and 65"), `_6` ques 0/13 (f.68r qu, an alternate key_1659 attests), `10` je 0/9 (s/z, attested alternates), `23` pr 2/10 (p),
 `3` e 0/3 (d), and the syllabic pairs `7` ou 11/23 and `15` oi 11/23. No key row or grade changed; no reading changed, so AUDIT.md
 is untouched. Requests: 0 network. Subagents: 0.
+
+## D4-F5160: escalation rows assessed (8 Oct 2026, 08:45-08:5x UTC)
+
+Worker D4-F5160, LANE DEFAULT-account-4-20261008-0740. Disk only (this file, HYPOTHESES.md, AUDIT.md, KEY-OFFICES.tsv,
+KEY-DESIGN.tsv); no network, no subagent, no cryptanalysis. **Correction to the loose-ends pass of 8 Oct 2026:** its "0
+internal gaps" missed three unread pieces the folder itself records: the canvas 11-12 second cipher block of the 2 Jan 1653
+letter (two blind passes `passA_f11.tsv`/`passB_f11.tsv`, 76.6% agreement, never reconciled; NOTES "Canvas walk 37-159 and
+canvas 11-12 block"), the canvas 32 full-page 1653 letter (two blind passes `passA_c32.tsv`/`passB_c32.tsv`, 82.6%, never
+reconciled, never trialled; NOTES "Canvas 129/130 and canvas 32"), and the 1653 band f.1-2 + f.9 itself (752 sign tokens,
+no reading: four known keys tried with controls, one constrained solve stopped at its control). Also: the Français
+20661-20662 gap names "REQUEST.md" but this folder has no REQUEST.md and ASKS.md has no row for it (grep, 8 Oct 2026), so
+the person-side ask has not actually been filed; flagged in ROOM for the lane.
+
+## Remaining gaps (D4-F5160, 8 Oct 2026)
+Read so far: f.86+f.88 169 of 539 cipher tokens C (AUDIT.md Audit 2, D1); f.67 C 435 / M 111 of 546 (align_f67.py); 1653 band f.1-2+f.9 0 of 752; canvas 11-12 block and canvas 32 not reconciled, so not counted
+- Français 20661-20662 (Brienne 1653 despatch minutes, R11A-F5160 (3)), no Gallica link - blocker: needs-physical-access; on-site read or reproduction quote; no REQUEST.md or ASKS row filed yet (8 Oct 2026), the lane files one
+- canvas 11-12 second cipher block of the 2 Jan 1653 letter (~111 tokens) - blocker: not-attempted; two blind passes exist (passA_f11/passB_f11, 76.6%), the hook and looped-ascender signs unsettled; next: reconcile against re-fetched native crops (regions in images/manifest.json), one reconciliation unit, ~$1.5
+- canvas 32 full-page 1653 letter (~115 tokens) - blocker: not-attempted; two blind passes exist (passA_c32/passB_c32, 82.6%, 7 of 20 splits are db/tt); next: reconcile against re-fetched native crops, then add to trial_1653.py's four-key trial, ~$2
+- 1653 band f.1-2 + f.9 (752 tokens, a key_1659-like syllabic table, about 40% of tokens in signs no known key covers) - blocker: not-attempted; nomenclator_anneal.py control read 25.7% (one attempt, not retired); next: rerun control_1653 after adding canvas 11-12 and canvas 32 (~980 tokens) and, if still below bar, a word-level (dictionary-constrained) solver between the clear frames with its own matched control, ~$4
+
+## Escalation (D4-F5160, 8 Oct 2026)
+- [x] siblings: canvas walks 4-367 complete (walk_37_159.tsv, walk_160_367.tsv; canvas 45 D1A-CAN 8 Oct); sibling volumes and Colbert 26 part III read whole (375/375, AM-LOOK 7 Oct); KH2-A keyhunt 7 Oct: 0 unread fetchable siblings for key_1659/1647/1651
+- [x] clear-pages: f.68r clear text aligned to f.67 and tested (D1A-F68, PASS 0.801 vs p99 0.518); f.87 decipherment is the key source for f.86/f.88; the 1653 band has no interlinear or clear copy on any canvas 4-36 (Premise check, 2 Oct 2026)
+- [ ] known-keys: f.1-2 and f.9 tried with key_1646, Tomokiyo 1647, Tomokiyo 1651 and key_1659 under matched controls (trial_1653.py: 1646/1651 clean negatives, 1647 chance, 1659 character signal z 3.4/3.7 but no words); KEY-OFFICES.tsv holds no other key of this office for 1650-1655; canvas 32 and the canvas 11-12 block were never trialled; next: add both, once reconciled, to trial_1653.py, ~$0.5 after the reconciliations
+- [x] print: the read items were print-checked (print-check.tsv 115 rows for f.86/f.88, print-check-f67.tsv 132 rows for f.67) and searched by two verifier audits (AUDIT.md 1, F67, Audit 2); the 1653 band has nothing read to search
+- [ ] key-rebuild: key_1659 rebuilt from f.87 (79 groups, period) and confirmed on a second letter (D1A-F68); for the 1653 table one cryptanalytic attempt (nomenclator_anneal.py, control 25.7% against a ~60% bar, NOTES "1653 band: constrained solve") -- one attempt, so not retired under rule 3; next: rerun the control with canvas 11-12 and canvas 32 added, then a word-level solver with its own control, ~$4
+- [ ] image-check: f.1-2, f.9, f.67, f.86, f.88 reconciled from native crops (reconcile_*.py with --check); canvas 11-12 block and canvas 32 have only blind passes; next: one reconciliation unit each against re-fetched native crops, ~$3 for both
+- [x] retry: every failed fetch has been retried and closed (canvases 45, 55, 58, 74, 679; canvas 11 HTTP 500 and canvas 32 resets recovered); the one failed solve's retry is the key-rebuild step above, not a repeat at the same size
+Verdict: keep going: 3 internal gaps; cheapest next: reconcile the canvas 11-12 block and canvas 32 against native crops (passes on disk), ~$3
