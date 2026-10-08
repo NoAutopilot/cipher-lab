@@ -1,0 +1,11 @@
+test	read	gate	result	detail
+A	1	K	FAIL	[['T', 'P2', 'P1', 'FQ', 'FP2'], ['D2', 'D1', 'N', 'FD'], ['FP1'], ['G']]
+A	1	C	FAIL	FQ in Pf pile: True
+A	1	T_with_Pf	True	
+A	2	K	PASS	[['FD', 'D1', 'D2'], ['P2', 'FQ', 'FP2', 'P1', 'T', 'FP1'], ['G'], ['N']]
+A	2	C	FAIL	FQ in Pf pile: True
+A	2	T_with_Pf	True	
+B	1	K74	FAIL	[['T2', 'S1', 'T1', 'S2'], ['X', 'J']]
+B	1	X_with	other	
+B	2	K74	FAIL	[['S2', 'S1'], ['T1', 'X', 'J'], ['T2']]
+B	2	X_with	T	
