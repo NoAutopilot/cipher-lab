@@ -174,3 +174,16 @@ only (paste the command); 2 blind Sonnet passes + 1 reconciliation per frame pai
 0396 left; 0485 with 0486 left) -- about 3 units per page at ~1.5; `tools/decode_key.py` with key.tsv and --check; shuffled-key control
 (the FAM-MANT15 design, 1000 shuffles); judge fr18 only where >= 60 letters. Stop before a unit that crosses 80% of cap or box. Report
 what was found and where it was not found; a gate PASS goes to the lane for a separate verifier; do not classify novelty.
+
+## Wave 3 results (20:3x UTC): V-OLD10 2.19 (scan 10 N3 D1, AUDIT 5, SO-OLDEN-2442-L10), MANT-08 7.39 (gate PASS 0/1000; judge cannot
+decide at N=83). Wave 3 total 9.58.
+
+### V-MANT08 (Opus, cap 4, box 75 min): FIRST VERIFIER, sachsstaatsarchiv-manteuffel-1712 694/08 frames 0390/0391/0395/0485
+You are a verifier, a session other than the solver (MANT-08). CLAUDE.md "Verifier brief (template)" in full; claim under audit: NOTES.md
+section MANT-08 (f0390_08/): 89 code tokens read under the Krauske table (C 54 M 35), pooled shuffled-key gate 0/1000, judge fr18 FAIL at
+N=83; content in context "la treve, Oxford, detacheroit [Danemark], duc Ferdinand [of Courland], la Courl[ande], Breton". Read AUDIT.md's
+FAM-MANTV section (0015-16 fell to N2 because the news was printed in Colyer to Heinsius, Briefwisseling XIV) and repeat that kind of
+search first: Heinsius Briefwisseling XIII-XIV (Oct-Nov 1712), the Saxon/Prussian envoy reports printed for the Utrecht congress, and the
+press of the day for the decoded names (Courland, Duke Ferdinand, Bolingbroke/Oxford, the truce), by date +-3 days. Re-derive with the
+folder's decode and --check; eye-check ~20 tokens against the crops; N-class + depth (depth bar; mind the FAM-MANTV flag on depth_stats
+windows across clear-text islands). Write the AUDIT.md section; SO row only at N3+; AUD2 WORK-QUEUE row for account 3 only at N3+ D2+.
