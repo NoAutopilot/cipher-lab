@@ -425,6 +425,18 @@ Code-word tokens: H 22.
 
 Code-word tokens: H 30.
 
+**E32 | Page 160 | 9054 | 21 Aug 1864 (No 1, 10 PM), to McCaine at Charlestown Va (operator not given)**
+
+[Washington] {date: Aug 21} {time: 10 PM} for Not any robert I thank you [.] Lazelle says he recd his [Information] concerning the [Enemy]'s [Force]'s at [Culpepper] from a citi zen who had just [Left] there [.] He also [Information]ed him about the [Force]'s at Grant ---- [Colonel] Gansevoort with his [Regiment] [13] [New York] [Cavalry] goes out [Tomorrow] to [Scout (-ed, -ing)] [In the] vicinity of those places ---- The [41] [New York] arrived here from Hilton Head [Today] about [400] [Men]'s ---- [2] more [Regiment] [Rhode Island] their way  {tail: [signed] Gimlet ax saw}
+
+Code-word tokens: H 32.
+
+**E33 | Page 161 | 9055 | 22 Aug 1864, to McCaine at Harper's Ferry (operator not given)**
+
+[Washington] August [22] {time: 12.30} for No Sir Ree Bob [.] a small train of forges & other [Surprise (-ed, -ing)] ons for your pana. ma [Left] here yesterday for [Harpers Ferry] Thayer Escorted by the [25] [New York] [Cavalry] [300] & [50] [Men]'s ordered to you & a [Detach (-ed, -ing)] ment of [300] & [75] [Men]'s belonging to [1] & [3] pana ma [Division]'s [,] all amounted & Readingped  {tail: [signed] Chisel plane ax saw}
+
+Code-word tokens: H 27.
+
 **E55 | Page 165 | 9057 | 26 Aug 1864 11 AM, to Lt. Col. C. H. Howard at Louisville (Capt. Bruch)**
 
 [Washington] ang [26] {time: 11 AM} for Lt. Col [Colonel] C H Howard Lol [.] a dispatch just recd from Gen Canby [Maj Gen S. A. Hurlbut] states that Gen A J Smith's [Command = Er (-ed, -ing)] has already been [Detach (-ed, -ing)]ed to cooperrate with [Maj Gen W. T. Sherman] [General-in-Chief]
@@ -449,5 +461,5 @@ Code-word tokens: H 8.
 
 Code-word tokens: H 12.
 
-Totals over the 53 entries: H 834, C 13, I 0, M 0.
+Totals over the 55 entries: H 893, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->
