@@ -1,4 +1,4 @@
-# SIG-B228 pre-registration (LANE SIG-1, account 1), written 8 Oct 2026 ~22:58 UTC by date -u, committed before any f.228 tile is cut or read
+# SIG-B228 pre-registration (LANE SIG-1, account 1), written 8 Oct 2026 22:52 UTC by date -u, committed before any f.228 tile is cut or read
 
 Target: Baluze 170 f.228r-v (same letter as f.229, Chavigny to d'Avaux, Amiens 25 Aug 1640). Brief: .claude/briefs/runs/2026-10-08-acct1-sig1-jobs.md "## SIG-B228".
 
