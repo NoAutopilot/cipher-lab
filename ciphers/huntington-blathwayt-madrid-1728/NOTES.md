@@ -628,3 +628,27 @@ Observation, not acted on (outside the 42): BLA184 p1 L02 pos 2, 1243, decodes C
 inside the range R17 called a probable names section ("Monsieur 1240 de 1243 la Paz"). A verifier should check it before the BLA184
 count is quoted.
 Report: what was found and where it was not found; novelty not classified.
+
+## D3-BLA2 known-answer re-gate (8 Oct 2026)
+
+Account-4 worker, LANE DEPTH, 21:43-21:5x UTC by date -u. Pre-registered in PREREG-D3BLA2.md (pushed 3b8babd6; amendment 1 on the aligned-column
+universe 6b5493c7, amendment 2 on crop method and pages d831b1a4, both before any blind pass ran). Prior-work check 1: no ROOM claim on this folder in
+the last 6 h (last: V2-G3GAPS 19:56). No network. Universe: 115 glossed aligned columns in the six key items where pass A is not H or A and B differ
+(`d3bla2_universe.py`), seeded sample of 40 (seed 20261008). `tools/iiif_lines.py --image` found 0-1 lines per page on the 1200 px copies (pasted in the
+prereg amendment), so six overlapping PIL bands per page, one blind Sonnet pass per page on four pages (BLA188_p3, p5, p4, BLA190_p7; 4 calls,
+transcriptions in d3bla2_blind/), one reconciliation by me on the four candidate columns (d3bla2_reconcile.tsv) before scoring. Scorer `d3bla2.py`,
+`--check` 0, outputs d3bla2_scored.tsv, d3bla2_summary.json.
+
+Counts: 40 sampled; 9 on uncovered pages (BLA185_p5, 190_p5, 194_p1/p2, 179_p6); 11 dropped (gloss with no other H attestation); **N scored 20**.
+Rule (A = B = blind, reconciler sees no competing digit): **settled S = 2** (BLA188_p3 L04 pos 2 = 506; BLA190_p7 L09 pos 6 = 663), both correct
+(2/2); two more met A = B = blind but the reconciler saw a competing digit (p3 L05 pos 8, 934; p3 L14 pos 2, 757). Settle rate 0.10. Single readers over
+the 20: A 0.40, B 0.60, blind Z 0.45, majority-of-three 0.50.
+
+**Gate: UNTESTABLE at this N (S 2 < 10), not a pass and not a fail of the rule.** The rule can settle only a column where A already equals B; these
+M/disagree columns are by selection mostly ones where A and B differ (16 of 20 scored), so the rule's reach here is small by construction. 2/2 is
+consistent with a precise rule but is not evidence at this size. Nothing promoted: reading_tokens.tsv unchanged (**C 130, M 22, S 3, U 17**), the 9 held
+L12 tokens stay held. Observation (not a gate result): the blind pass alone is no better than A or B on these columns (0.45 vs 0.40/0.60) and the
+three readers split on the doubtful digit pairs 7/9, 3/5, 5/6, 8/9. Two more attempts at this exact design would hit rule 3's third-attempt clause: the next
+step needs a different instrument or more columns where A = B but flagged (e.g. all 115 candidates and the 9 uncovered pages, about 4 more calls, ~USD 2.4 -- still
+likely S < 10) or a higher-resolution image of BLA191 p5 L12 itself, which the 1200 px copy cannot give.
+Report: what was found and where it was not found; novelty not classified.

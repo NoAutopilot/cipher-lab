@@ -1,0 +1,23 @@
+{
+ "best_single": 0.6,
+ "dropped_no_attestation": 11,
+ "gate": "UNTESTABLE (S<10)",
+ "not_covered": 9,
+ "rule_precision": 1.0,
+ "sampled": 40,
+ "scored_N": 20,
+ "settle_rate": 0.1,
+ "settled_S": 2,
+ "settled_correct": 2,
+ "settled_subset_single": {
+  "a": 2,
+  "b": 2,
+  "z": 2
+ },
+ "single_reader_precision": {
+  "a": 0.4,
+  "b": 0.6,
+  "majority": 0.5,
+  "z": 0.45
+ }
+}
