@@ -4351,3 +4351,134 @@ exist; checks run by hand and logged below.
 - Requests: be-api.us.archive.org 20 (no errors); archive.org 4 (I/41 pt 4 djvu, II/8 djvu 500 then 200 on one retry, 1 advancedsearch); googleapis.com 15
   (four 503s, at most one retry each); api.openalex.org 2; www.loc.gov 2 (403 Cloudflare) + chroniclingamerica.loc.gov 1 (308); hdl.huntington.org 0
   (local copies of the transcription read). >= 1.6 s apart, one host at a time.
+
+## AUDIT (FV-LS4-R2b)
+
+Verifier FV-LS4-R2b (account 4, for LANE ST-LEDGER-4 / the account-3 orchestrator), 8 Oct 2026, 17:37-17:5x UTC by `date -u`; a separate
+session from the reader LS4-R2b (account 1), not protecting its conclusions. Scope: **N2-CB, N2-CC, N2-CE, N2-CF, N2-CG, N2-CI, N2-CJ, N2-CK,
+N2-CL** (ciphertext-no2.txt, Cipher No. 2, key-no2.md) and **E102** (ciphertext.txt, Cipher No. 1, key.md); N1 confirmation by script of
+**N2-CD, N2-CH, N2-CM**. Nothing decoded beyond `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` (exit 0 each) and key
+look-ups. Key source for every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. `tools/prior_work.py` does not
+exist: the prior-work checklist (.claude/briefs/prior-work-step.md) was run by hand (section 1). No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run (as the reader recorded).
+
+### 1. Prior-work checklist and step 0
+- (1) **Our own work -- two of the ten are duplicates of entries already filed and audited.** A phrase grep of the reader's blocks across
+  ciphertext.txt / ciphertext-no2.txt / ciphertext-no9.txt (not run by the reader, whose step 0 diffed only the ID list):
+  - **N2-CC = N2-M** (ciphertext-no2.txt l.171-176, same pointer 8982, same entry word for word: "I can not find the gauge talbot Holly &
+    Sleeve port warner what is it ..."). N2-M already carries two audits and an N4 status row (SO-ECKERT-N2M). N2-CC is a second ID for it.
+  - **N2-CL = N2-R** (ciphertext-no2.txt l.225-231, same pointer 8948, same entry word for word: "Florence Oliver Clarke for Mohawk I cannot
+    send the party as I wish ..."). N2-R already carries N3 with two audits (AUDIT.md l.1205, l.1385-1440) and a G3 check (V1-G3A). N2-CL is
+    a second ID for it.
+  Neither duplicate is classed here; both IDs should be withdrawn by a fix worker the way LS-FIX withdrew E65 (a one-line note in the
+  ciphertext-no2.txt header comment, the blocks removed, `decode_no2.py --write` then `--check`, the LS4-R2b NOTES table rows marked). Not done
+  here: a verifier does not rewrite the reader's decode files. Lesson: prior-work check 1 is a phrase grep of the transcription against every
+  ciphertext file, not only an ID or pointer/entry diff (8982/1 and 8948/2 were already filed under PF4's row numbering as other IDs).
+  No other entry of the ten repeats a block (phrase grep: "single", "drivers are needed", "Abbey is Tobey", "squadron have been repeated", "no
+  reason why you should not", "transports for fortune", "Raw lines", "For rest is collecting": one block each).
+- (2)+(3) Own Huntington transcription of each pointer (sources/mssEC19/p<pointer>.json), read first:
+  - **9125 (N2-CI)**: "There is no reason why you should not go to Grain ada yard Let me know you ad dress there yard comb" -- the body is in
+    clear except "Grain ada" (= New York, by the print below). Step 0 should have stopped it (body clear, at most one content code word).
+  - **8948 (N2-CL/N2-R)**, **8982 (N2-CC/N2-M)**: frame clear, as N2-R's and N2-M's audits already record.
+  - **9142 (N2-CJ)**: frame clear; content code words Sherman (fortune), James (Abbott), the addressee's rank and office. **(N2-CK)**: "you can
+    inform spark Raw lines magic Stephen here at Jennie wherry for brimstone by boat" -- the substance (Grant, left, 3 PM, to-day, City Point)
+    is code.
+  - **9039/9040 (N2-CE)**: much of the frame is clear; the content code words are 6th Corps, Cavalry, follow, Troops, steamers, City Point,
+    movement, force, Monroe, James, available, River, and the signature (Quartermaster General).
+  - **9132 (N2-CB)**, **9052 (N2-CF)**, **9121 (N2-CG)**, **8971 (E102)**: the substance words are code in the transcription.
+  - Same-leaf siblings: CONTENTdm full-text search of p16003coll11 (`CISOSEARCHALL`, 6 queries, 3.2 s apart) for decoded substance: "drivers are
+    needed" -> pointers 9037 and 9039 only; 9037 is Meigs to Ingalls of 6 Aug 1864 (no 2, 12.30 PM: "do not send the ambulances until after the
+    ... wagons teams and drivers which are most needed are shipped"), printed OR I/42 pt 2 p.66, a sibling, not N2-CE. "single mounted man" 0;
+    "transports for", "Rawlins", "cooperation from", "Point of Rocks" return large unrelated lists (words ANDed, not phrases): not decisive.
+- Page labels: the Huntington's own labels for these pointers are p.238 (9132), 158 (9052), 227 (9121), 231 (9125), 248 (9142) -- the
+  number written on the leaf (9132 image shows "238") -- where the reader's headers have 240, 160, 229, 233, 250 (two higher). 146, 56, 79,
+  90 agree. A header correction for the same fix worker; no reading changes.
+- **Image** (rule: three entries word for word, the longest included): 2400 px IIIF images of 9132, 9039, 8948 and 9040 (4 requests,
+  scratch, not committed). Crops: `python3 tools/iiif_lines.py --image $S/img/p9132.jpg --out $S/c9132 --prefix p9132 --region
+  200,150,2100,950 --lines-per-crop 3 --max-width 2100`; the same for 9039 `--region 200,1360,2100,1300 --lines-per-crop 4` and 8948
+  `--region 200,1560,2100,700 --lines-per-crop 3`. **N2-CB** (9 lines incl. header) and **N2-CE** (the longest, all 14 lines on p.146) agree
+  word for word with ciphertext-no2.txt ("F. T. Beckford" on the image, the block's header has Bickford; the reader recorded this). N2-CE's
+  three-line tail on p.147 (9040) was not cut. 8948 (N2-CL = N2-R) agrees too, header "Apl 26"; the pencil interlinear words over it
+  ("doing", "did", "get", "man", "change", "may", "partake", "go") are not a rendering of the code words (Oliver = 26, Clarke = 6 in the key).
+- **Grade correction, N2-CE:** "If collected at Brimstone" -- the decoder graded "collected" H as the name code Collect = Harrison
+  ("[Harrison]ed at [City Point]"); in context it is the plain word ("if collected at City Point these boats will be available"). The same holds for "decide this question" (decoded "this [Defend]"): plain. Code-word
+  H for N2-CE is 37, not 39. **Grade note, N2-CF:** "widows which Mastiff sent tommy" decodes "[Troops] which [Canby] sent to me", but the
+  printed text reads "troops which can be sent to me": Mastiff here is a pun for "can be", graded M, not H (Canby). Neither changes a class.
+
+### 2. Located in print (N1, confirmed by script)
+OR volumes fetched once from archive.org as `_djvu.txt` to scratch (`warofrebellion392unit`, `422unit`, `423unit`, `44unit`, `451unit`,
+`344unit`, `391unit`, `402unit`; 8 requests) plus the cached 33, 362, 372, 432, 452; whitespace- and hyphen-normalised regex; pages from the
+running heads.
+
+| ID | printed at | match |
+|---|---|---|
+| **E102** | OR I/39 pt 2 (`warofrebellion392unit`) pp.50-51: "Washington, May 26, 1864 -- 11 a. m. General Burbridge, Commanding District of Kentucky: General Washburn telegraphs from Memphis that Forrest is collecting a large cavalry force at Corinth and Tupelo, probably preparatory to a raid into Middle Tennessee and Kentucky. H. W. HALLECK, Major-General, Chief of Staff." | word for word, time 11 AM included. The reader's "parallel" (p.54, to Brayman, 20 May) is a second telegram; the entry itself is printed. "home of the oppressed" (4 M) is a tail/signature group, not text. |
+| **N2-CF** | OR I/39 pt 2 p.279: "Headquarters, Lexington, Ky., August 21, 1864. (Received 12.20 p.m.) Major-General Halleck, Chief of Staff: I am satisfied from the reports of my scouts Kentucky is to be invaded by a large force under Morgan and Wheeler. If there are any troops which can be sent to me please order them at once. S. G. BURBRIDGE" | word for word ("Tobey in vaded" = to be invaded; "Morgan" plain name; "Mastiff ... tommy" = can be ... to me) |
+| **N2-CG** | OR I/42 pt 3 (`warofrebellion423unit`) p.594/595: "Washington, D. C., November 11, 1864 -- 3 p.m. Lieutenant-General Grant, City Point: Troops sent North have been ordered back to their commands. When will you be up to make annual report? H. W. HALLECK" | word for word ("tother" = to their, "willew"/"willow" = will you); Grant's 5 p.m. reply follows |
+| **N2-CB** | The Papers of Ulysses S. Grant vol. 13 (Nov 1864-Feb 1865; 1985; not on IA), a note: "Foster has no other cavalry than the battalion of 4th Mass, which is now reduced to one hundred men. He asks for the 8 companies with 10th corps. If I order as you direct, it will leave not a single moun[ted man ...]" | Google Books API snippet (key, country=US), query "Foster has no other cavalry", 2 hits, both this volume. Word for word with the ledger reading ("battle lion" = battalion, "red used" = reduced, "come ponies" = companies, "Allen Smith" = one hundred). Context: Foster to Halleck, OR I/44 p.507, asks that "the two battalions of the Fourth Massachusetts Cavalry, taken with the Tenth Army Corps, may be returned". The reader's be-api and OR grep did not reach vol. 13. |
+| **N2-CI** | The Papers of Ulysses S. Grant vol. 13, a note: "... 1864, 2:15 P.M., Secretary of War Edwin M. Stanton telegraphed to USG. 'Your telegram just received. There is No reason why you should not go to New York. Let me have your address there.'" | Google Books snippet, query "no reason why you should not go to" Grant 1864, 2 hits, both this volume. "Grain ada" = New York; the ledger has "Let me know your address" where the print has "Let me have". Also clear in the Huntington transcription (step 0). |
+| N2-CD | OR I/40 pt 2 (`warofrebellion402unit`) pp.116-117: "Washington, June 17, 1864 -- 3 p.m. Lieutenant-General Grant, Bermuda Hundred, Va.: A German engineer officer who left Lee's army June 7 says that Pickett's division ..." | confirmed by script, word for word; the print's "cars run from Richmond to Charlottesville" gives "Harry" = Richmond here (key row Washington, C from one entry): M in this entry, as the reader graded; the conflict is logged in HYPOTHESES.md (rule 4) and stays unresolved by majority |
+| N2-CM | OR I/37 pt 2 (`warofrebellion372unit`) pp.332-333: "War Department, Washington City, July 15, 1864 -- 4 p.m. Lieutenant-General Grant: Steamer McClellan from New Orleans with 860 men, Nineteenth Corps, arrived here 12.30 p.m. ..." | confirmed by script, word for word |
+| N2-CH | The Papers of Ulysses S. Grant vol. 12 (`papersofulyssess0012gran`): "9:00 a.m., Fox telegraphed to USG. 'We shall be at Hampton Roads at 7 A.M. tomorrow morning unless it is ...'" | confirmed by be-api (1 hit, this volume) |
+
+### 3. Not located: N2-CE, N2-CJ, N2-CK (search log, 8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| Own transcription, Huntington full text | section 1 | not clear in their own transcription (content code words listed there); "drivers are needed" -> 9037/9039 only |
+| OR by date and correspondent | N2-CE: OR I/42 pt 2 and I/43 pt 2 (`422unit`, `432unit`) every Quartermaster-General's Office item within 900 chars of Ingalls dated Aug 8-9, and Ingalls + steamers + City Point + Monroe windows; N2-CJ, N2-CK: OR I/42 pt 3 and I/44 (`423unit`, `44unit`) Dec 17-19 items with Emerick, Rawlins, Ingalls; phrases "drivers are needed", "relieve ours", "transports for Sherman", "orders given at first", "City Point by boat", "Grant left here" | not printed. Context: Meigs to Ingalls 6 Aug 1864 (OR I/42 pt 2 p.66, the 9037 sibling: wagons, teams and drivers shipped from Washington); Meade to Rawlins, 19 Dec 1864 11.25 a.m. (OR I/42 pt 3 p.1038): "Have you any idea about what time the lieutenant-general may be expected to arrive to-day?" -- agrees with Grant leaving Washington by boat on the 18th |
+| Grant Papers | Google Books snippet (reaches vols. 12-13): "you can inform General Rawlins" Grant boat; "Grant left here at 3" (503 once, retried: no Grant Papers hit); "orders given at first in relation to the transports"; "in relation to the transports for Sherman" (503 twice, not retried further) | no hit for any of the three |
+| IA full text (be-api) | "drivers are needed to relieve ours" (0); "steamers has been engaged" (37, all unrelated trade/press); "transports for Sherman will be carried out" (0); "in relation to the transports for" Sherman Ingalls (1: Grant Papers vol. 15, Oct 1865, unrelated); "left here at 3 p.m. to-day for City Point" (0); "Grant left Washington" December 1864 boat (0) | none |
+| Google Books other | "Their drivers are needed to relieve ours"; "wait events" Ingalls steamers 1864 | unrelated hits only |
+| Unread | Meigs's letterbooks (NARA RG 92), Ingalls papers, the press of 9 Aug and 18-20 Dec 1864, ORN, HathiTrust, JSTOR, Grant Papers vol. 13 pages themselves (snippets only) | unread |
+
+### 4. Classification (key `period`)
+`depth_pct` = (H + C) / code-word tokens (signature/tail groups the reader graded M or I counted as unread).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| N2-CB Halleck to Grant, 1 Dec 1864 3 PM | **N1** | known (Grant Papers vol. 13, note) | not ruled (N1) | - | word for word with the print |
+| N2-CF Burbridge to Halleck, 21 Aug 1864 | **N1** | known (OR I/39 pt 2 p.279) | not ruled | - | word for word |
+| N2-CG Halleck to Grant, 11 Nov 1864 3 PM | **N1** | known (OR I/42 pt 3 p.594/595) | not ruled | - | word for word |
+| N2-CI Stanton to Grant, 19 Nov 1864 2.15 PM | **N1** | known (Grant Papers vol. 13, note; and clear in the Huntington transcription) | not ruled | - | word for word |
+| E102 Halleck to Burbridge, 26 May 1864 11 AM | **N1** | known (OR I/39 pt 2 pp.50-51) | not ruled | - | word for word |
+| N2-CD, N2-CH, N2-CM | **N1** (confirmed) | known | - | - | as section 2 |
+| N2-CC, N2-CL | not classed: duplicates of N2-M and N2-R | - | - | - | withdraw the IDs |
+| **N2-CE** Quartermaster-General to Ingalls, 9 Aug 1864 | **N3** (weak: much of the frame public in the Huntington transcription) | unknown | **D3** | 94.9 (37 H of 39 code-word groups after the two plain-word corrections; 2 I) | image all 14 lines on p.146 (this audit); code clause: Brimstone = City Point reads in place here and in N2-CK ("for Brimstone by boat"), Abbot = James here ("forces on the James") and in N2-CJ ("boats ... in the James"); external: the printed sibling Meigs to Ingalls 6 Aug 1864 (OR I/42 pt 2 p.66) on wagons, teams and drivers shipped to City Point; matched control by LS4-R2b (No. 1, No. 9, three shuffles: 0 of 3 clauses) |
+| **N2-CK** Eckert (Washington) to Emerick, City Point, 18 Dec 1864 11.15 PM | **N3** (weak: the frame and "Raw lines" public in the transcription) | unknown | **D3** | 100 (10 H of 10) | image not cut (one of the three-entry quota went to N2-CL, a duplicate; the volunteer text and the reader's image read agree); code clause: Brimstone = City Point in two entries (above); external: Meade to Rawlins 19 Dec 1864 11.25 a.m. (OR I/42 pt 3 p.1038) expects Grant at City Point that day; time word "11.30 PM" vs header "11 15 pm" closest under No. 2 (reader's control) |
+| **N2-CJ** to Col. Bradley, chief quartermaster, City Point, 18 Dec 1864 | **N3** (weak: frame clear; two content code words) | unknown | **D2** | 87.5 (7 H of 8; "Rue Two" M) | code clause: Abbot/Abbott = James reads in N2-CE and here; no external check; the sender ("Rue Two In galls", read Ingalls by the reader) is M |
+
+- **N2-CE: N3.** Safe sentence: "Read at grade H with the period War Department Cipher No. 2: on 9 Aug 1864 the Quartermaster General tells Brig.
+  Gen. Ingalls at City Point that the wagons of the Sixth Corps and of the cavalry sent to Washington should follow the troops, since their
+  drivers are needed to relieve ours, and that a large number of steamers has been engaged and ordered to City Point; much of the frame is
+  in clear in the Huntington's public transcription; no prior decipherment of its code words or printed text located in the Official
+  Records (ser. I vols. 42 pt 2, 43 pt 2), Internet Archive full text, Google Books or the Huntington's own full-text search (searched 8 Oct
+  2026)." Unsafe: "first", "unpublished", "never printed". Not N4: Meigs's letterbooks, the press and Grant Papers vol. 11 pages unread.
+  Depth sentence (D3): "On 9 Aug 1864 the Quartermaster General in Washington tells Brig. Gen. Ingalls at City Point that a large number of
+  steamers has been engaged and ordered to City Point to be ready for any movement in force, and that if they are not needed there they
+  should return to Fort Monroe."
+- **N2-CK: N3.** Safe sentence: "Read at grade H with Cipher No. 2: late on 18 Dec 1864 T. T. Eckert in Washington tells the City Point
+  operator to inform General Rawlins that Grant left Washington at 3 PM that day for City Point by boat; no prior decipherment or printed
+  text located in OR ser. I vol. 42 pt 3 or vol. 44, Internet Archive full text or Google Books (searched 8 Oct 2026)." Depth sentence (D3):
+  "At 11.15 PM on 18 Dec 1864 Eckert in Washington has the City Point operator tell General Rawlins that Grant left Washington by boat for
+  City Point at 3 PM that day."
+- **N2-CJ: N3.** Safe sentence: "Read at grade H with Cipher No. 2: on 18 Dec 1864 Col. Bradley, chief quartermaster at City Point, is told that
+  the orders first given about the transports for Sherman will be carried out and that the named boats now in the James are to be sent off
+  without delay; the frame is in clear in the Huntington's public transcription; no prior printed text located (searched 8 Oct 2026)."
+  Depth sentence (D2): "On 18 Dec 1864 Col. Bradley, chief quartermaster at City Point, is told to send off without delay those of the named
+  boats that are in the James, under the orders first given for Sherman's transports."
+- **N1: N2-CB, N2-CF, N2-CG, N2-CI, E102** (and N2-CD, N2-CH, N2-CM confirmed). Not counted; no status.json or SO rows.
+- Second audits (account 3 VERIFY lane): N2-CE, N2-CK, N2-CJ. Start with Grant Papers vol. 13 pages for 17-20 Dec 1864 (N2-CK) and vol. 11
+  for 8-10 Aug 1864 (N2-CE: Grant Papers notes print QMG telegrams to Ingalls), then the press of the day.
+
+### 5. Postmortem
+- Five of the reader's ten "not located" entries are printed word for word (two in OR volumes the reader listed as grepped: I/39 pt 2 and
+  I/42 pt 3 -- the reader's scratch grep missed them, so an "18 volumes grepped" line is not evidence by itself; two in Grant Papers vol.
+  13, reachable by Google Books snippet; one in OR I/39 pt 2, which the reader cited only for a parallel two pages away). Two more are
+  duplicates of our own filed and audited entries. Three survive at N3 (weak).
+- Corrections for a fix worker (~$0.3): withdraw N2-CC and N2-CL as duplicates of N2-M and N2-R; header pages 238/158/227/231/248 for N2-CB,
+  N2-CF, N2-CG, N2-CI, N2-CJ/CK; N2-CE "collected" and "question" plain (H 37); N2-CF "Mastiff" = "can be" (M); the LS4-R2b NOTES table's "print" column
+  for N2-CB, CF, CG, CI, E102 (now N1, pages above).
+- Requests: hdl.huntington.org 10 (4 images, 6 CONTENTdm queries), archive.org 9 (`_djvu.txt`), be-api.us.archive.org 12, googleapis.com
+  books about 26 (several 503s, each retried at most once). Subagents 0.
+- Rows written in this session: status.json results for N2-CE, N2-CK, N2-CJ (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
+  SO-ECKERT-N2CE, SO-ECKERT-N2CK, SO-ECKERT-N2CJ (prompts in second-opinions/). `tools/depth_check.py`: exit 0.
