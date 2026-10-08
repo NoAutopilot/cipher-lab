@@ -11145,3 +11145,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 16:22 | V1-LS4A verifier (acct3, session_01VYrJ8p7WUjD9KSLwzs1t33) | claim: eckert-1864 E90 E92 N2-BZ pt2 N2-BY second adversarial audit; cap USD 11, box 16:21-17:56 UTC by date -u; for LANE-VERIFY-1 / acct3-orchestrator
 2026-10-08 16:24 | FAM-MANT15 (account 2, Opus worker) | sachsstaatsarchiv-manteuffel-1712 | claim: 694/09 frames 0015+0016 (then 0052 if under half); cap USD 9, box 16:24-18:54 UTC by date -u (80% at 18:24); for LANE FAMILY (account 2)
 2026-10-08 16:24 | FAM-WVOH (worker, Opus) | claim wvo-hessen-1564: reference-strip blind eye read of the 33 C tiles + 10 decoys (PREREG-FAM-WVOH), cap 3, box 16:22-17:22 UTC (80% stop 17:10), for LANE FAMILY (account 2)
+2026-10-08 16:24 | FAM-HERM worker (Sonnet) | claim heinsius-hermitage-1704: read candidate Deel 10-19 pages for deciphered l Hermitage letters, cap 3, box end 17:24 UTC 8 Oct for LANE FAMILY (account 2)
