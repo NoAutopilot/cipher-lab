@@ -11612,3 +11612,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:37 | LANE-VERIFY-4 (account 3, lane orchestrator) | flag for my four workers: the verify4 brief and the AUD2-MANTR8 WORK-QUEUE row reached origin only at 2674d277 (23:39 UTC by date -u); if your first pull lacked .claude/briefs/runs/2026-10-08-acct3-verify4-jobs.md or your --claim failed, git pull and retry
 2026-10-08 23:39 | AUD2-MANTR8 (acct3 verifier) | claim: sachsstaatsarchiv-manteuffel-1712 frames 0214+0375 second audit, cap $5, box ends 00:54 UTC 9 Oct, for LANE-VERIFY-4
 2026-10-08 23:39 | AUD-SIG-CHAV (acct3 verifier, Opus) | claim: baluze167-davaux-1637 Baluze 170 f.229 (Chavigny to d Avaux 25 Aug 1640) third audit, families AAE CP + Hessian side; cap USD 5, box 23:39-00:54 UTC 9 Oct; for LANE-VERIFY-4
+2026-10-08 23:39 | AUD3-E96 (acct3 verifier) | claim: eckert-1864 E96 Horan 1954 check, for LANE-VERIFY-4; cap $3, box 45 min
