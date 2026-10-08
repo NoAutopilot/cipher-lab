@@ -4914,3 +4914,99 @@ Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md: kept or lowered, 
   (its cap); archive.org 0 by hand (OR djvu texts read from the tool's cache and sources/ia-fulltext); hdl.huntington.org 0; loc.gov 0. Subagents 0.
 - Rows written: status.json E106, E122, E104 (`audit_status` "two audits", `audit_refs` += this section, gap note), E103 (N2, line, title,
   depth_sentence, audit fields); SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E103 withdrawn; WORK-QUEUE.tsv AUD2-LEDGER-1 done.
+
+## AUDIT 2 (AUD2-LEDGER-3)
+
+Verifier AUD2-LEDGER-3 (account 3, LANE-VERIFY-2, session_01UQeK5JUU6ootTdxBD377Ep), 8 Oct 2026, 19:57-20:3x UTC by `date -u`; a session
+separate from the reader FM-R1 and the first auditor FV-FM1 (both account 1), not protecting either. Scope: **E162, E160, E163, E164** (mssEC 25,
+Fort Monroe ledger, Huntington object 5952). Nothing decoded: the readings audited are FV-FM1 section 3's corrected readings; key look-ups in key.md only.
+Key source for every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md (keep or lower; E164 raised once, with the check
+named below).
+
+### 1. Duplicate diff and prior-work checks 3-5
+- **Duplicates:** pointer, date and addressee of each entry against every `###` header of ciphertext*.txt and status.json (FV-FM1's diff re-run after
+  `git fetch`, 19:58 UTC): 5802/0, 5802/2, 5823/1, 5664/0 occur only as E162, E160, E163, E164. **No duplicate.**
+- **`tools/prior_work.py --item-spec ... --step-type second-audit --fetch`** (per item, 19:59-20:05; no items.tsv, so `--item-spec` with
+  ptr 5802/0, 5802/2, 5823/1, 5664/0): every item `KNOWN-PART 5-civil-war` (clear frame public in the holder transcription; code words not: E162 23,
+  E160 28, E163 11, E164 11); `CLEAR 3-tomokiyo` (no folio named), `CLEAR 3-solver` (cyphersolver, bourdeau caches), `UNCHECKED-NET 3-solver`
+  (aaymeloglu, no clone), `CLEAR 4-editions` (date +-1 day and both correspondents, control hit, no window); step `LEAD 1-own` = three live claims:
+  FV-FM1 (closed, done line ROOM 19:13), V1-KNOWN (target-level, does not name these units), this session's own claim: resolved, not owed.
+  First run without the `/N` suffix returned "ambiguous entry" for E160 and E163; re-run with the suffix (above).
+- **`--reading <file> --network` (G3, 20:05-20:20):** E162, E160, E163: `CLEAR 6-g3` in ORN I/9, I/10 and Butler Corr. IV (6 phrases each; E163 also
+  OR I/47 pts 2-3), but the tool reached its per-item request cap before the ia-global and gbooks layers (`UNCHECKED-NET`); E164: `CLEAR 6-g3` in
+  OR I/47 pts 2-3, I/48 pts 1-2, I/49 pts 1-2, ORN I/9-10, Butler Corr. IV, ia-global no hits; gbooks `LEAD` = 346 volumes for "down nine Compare
+  with yours", top hits a 2024 tarot book, a 1995 reader and a London serial: noise, resolved. The capped layers were run by hand (next bullet).
+- **G3 by hand (decoded phrases):** IA full text (be-api fts, whole collection; positive control "necessity for haste in getting them off", Butler
+  2 Nov 1864, returns 18 volumes): "best five batteries", "Napoleons 4 officers", "3 inch Parrotts 3 officers", "large sized steamer or two",
+  "subsistence forage and ammunition ready to follow", "my cipher of ten columns", "cant translate your cipher", "down six down ten up one": 0 each.
+  Google Books (key, country=US; 15 calls, four 503s each retried once, one still 503): "best five batteries" "Army of the James", the battery list
+  with Napoleons Howard Martin, "110 men" "166 men", "3 officers and 110 men", "17th New York" Napoleons "Battery M", "loaded with subsistence, forage
+  and ammunition" (1 hit: Barbour's Mexican War journal, 1846, unrelated), "ready to follow at a moment's notice" Turner, the E164 route words,
+  "compare with yours" cipher O'Brien 1864 (17: OR prints a 27 May 1864 telegram to O'Brien, a later and different message), "ten columns" cipher
+  O'Brien Sheldon (0): none prints any of the four telegrams.
+- **Holder's own transcription:** FV-FM1's CONTENTdm full-text run (12 queries, whole collection) stands; nothing new to ask it.
+- **Sender's copy and same-week traffic, mssEC 19 and 18 (Washington sent books, `sources/mssEC19`, `sources/mssEC18`, read from disk):** every
+  page dated 1-2 Nov, 8-10 Dec and 9-11 May 1864 grepped: no copy of any of the four (Army of the James -> Fort Monroe traffic does not pass through
+  the Washington books). Same-week siblings found: mssEC 18 p9884, Butler at Washington to Terry, 2 Nov 1 PM ("send whiff [troops] to me at France
+  [New York], select those which are reliable"; printed, Butler Corr. V p.307); mssEC 18 p9912, City Point 9 Dec, "the weasler Empire City" (a second
+  context for Weasel(er) = steamer; Grant to Butler 9 Dec on the Empire City, Butler Corr. V p.397). Context only.
+- **Recipient and staff side:** this ledger is the recipient's (Sheldon's) copy; the staff requests that E162 and E160 answer are in clear on
+  the same pages (FV-FM1). Howard's and Martin's own papers, Turner's letterbook (NARA RG 393): not reachable from here, unsearched.
+- **Press of the day (Chronicling America, loc.gov JSON; 3 queries, one 503 retried once):** "Langdon battery Napoleons New York" 1-20 Nov 1864: 0;
+  "Turner steamer subsistence forage ammunition Fortress Monroe" 8-31 Dec: 1 (Ottumwa Courier 29 Dec, a general page); "O'Brien cipher Bermuda
+  telegraph" 9 May-15 June: 0.
+
+### 2. Print read by page (the brief's list)
+OR and editions as `_djvu.txt` (archive.org, fetched once to scratch): `warofrebellion423unit` (OR I/42 pt 3, title page read),
+`autobiographype00butl` (Butler's Book, 1892), `militarytelegraph01plumrich` and `...02plumrich` (Plum 1882), `privateoffice03butlrich` (Butler Corr. III),
+`cu31924032766846` (Bates, *Lincoln in the Telegraph Office*, 1907); Butler Corr. IV and V from the cached gz in sources/ia-fulltext/print-check.
+
+| ID | finding | where |
+|---|---|---|
+| E162, E160 | **context, not the telegrams.** Butler to Grant 2 Nov 1 p.m. ("at least two batteries of Napoleons", Butler's Book appendix no. 86, p.1093; OR I/42 pt 3 p.489; Butler Corr. V p.307); Grant to Terry 2 Nov ("two batteries of Napoleon guns"); **new to this audit: OR I/42 pt 3 p.490**, Lt. B. M. Hall for Lt. Col. Jackson, Light Artillery Brigade, Tenth Corps, 2 Nov, to Capt. L. L. Langdon, "Commanding Battery M, First U.S. Artillery", to take "Batteries ... M, First U. S. Artillery and the Fourth New Jersey" to Bermuda Hundred to embark: Battery M, the head of both E162 and E160, is the battery actually sent. OR I/42 pt 3, 1-3 Nov window (lines read by date), no list of five batteries, no strengths. Butler Corr. V 1-2 Nov: no list. | OR I/42 pt 3 pp.489-490; Butler's Book appendix p.1093; Butler Corr. V pp.307-308 |
+| E163 | **context, not the telegram.** OR I/42 pt 3 p.887: Turner, 8 Dec, "General Butler has gone to Fort Monroe" (the addressee's place on 9 Dec); p.939: Turner to "General Butler, Fort Monroe", 10 Dec 7 p.m. (a later, different telegram, printed); Butler's Book appendix nos. 109-115, pp.1103-1104 (Dodge to Turner 7 Dec on the boats; Butler to Weitzel) and Butler Corr. V pp.397-398 (Grant 9 Dec 2 p.m. on the Empire City; Butler to Weitzel 9 Dec 9 p.m.). The 9 Dec 11 AM telegram: not printed in either. | OR I/42 pt 3 pp.887, 938-939 |
+| E164 | **the route itself is in print, the telegram is not.** Tomokiyo, "A Civil War Dispatch Redeciphered" (cryptiana, cached `sources/cryptiana/web/civilwar2.htm`, snapshot 19 Sept 2026): "The page of 'ten columns' in the cipher book prescribes the following route. ROUTE: -- Down the 6th; down the 10th; up the 1st; down the 8th; up the 2d; down the 4th; up the 7th; down the 3d; up the 5th; down the 9th" -- E164's ten numerals in the same order. The same route is mssEC 41 p.6 (pointer 323) in our key.md section 6, including the hand correction of the first slot ("Up" struck, "Down" written), and E164 reads "down" there too. Plum vol. 1 pp.53-54 prints only Cipher No. 2's ten-column route (up 5, down 1, up 10, ...: different) and describes No. 1's design; Bates prints a six-column example; neither prints E164. Butler Corr. IV, 9-11 May: nothing on cipher. | Tomokiyo civilwar2.htm; key.md section 6 page 6 |
+
+### 3. Grade and reading checks
+- FV-FM1's corrections stand (E160 "pledge pebble inch" = six 3-inch; "gloryth" = 17th; E163 "weasler", "offal" H; E164 "poney" = 9). No further
+  reading change. The E162/E160 disagreement on the 17th New York's guns (3-inch vs Napoleons) stays recorded, not settled.
+- **E164 external check (non-statistical):** the eleven numeral words read independently from the numeral leaf (mssEC 41 leaf 25) give a route that
+  equals, slot for slot with direction, the ten-column route page of the same period book (p.6) and Tomokiyo's printed transcription of it. Chance
+  agreement in order alone: 1/10! = 2.8e-7. This replaces FV-FM1's internal permutation check as the D3 element.
+
+### 4. Classification (key `period`)
+
+| ID | N-class | text known? | depth | depth_pct | change |
+|---|---|---|---|---|---|
+| **E162** | **N3** (held) | no | **D3** (held) | 96.7 | external check strengthened: OR I/42 pt 3 p.490 (Battery M, 1st U.S. sent, 2 Nov) |
+| **E160** | **N3** (held) | no | **D3** (held) | 100 | as E162 |
+| **E163** | **N3** (held; weak: body largely clear in the public transcription) | no | **D2** (held) | 100 | second context for Weasel(er) = steamer (mssEC 18 p9912); no external check of the content, D3 withheld |
+| **E164** | **N2** (lowered from N3) | the route, yes (Tomokiyo; the cipher book) | **D3** (raised from D2) | 100 | the only coded content, the route, is printed as Cipher No. 1's ten-column route; the clear frame is in the Huntington's public transcription; no prior mapping of this telegram to the route found |
+
+- **E162: N3.** FV-FM1's safe sentence holds, extended: "... not located in the Official Records (ser. I vols. 42-43, OR I/42 pt 3 read by page
+  for 1-3 Nov), Butler's Book (1892), Butler's printed correspondence (vols. III-V), Internet Archive full text, Google Books, Chronicling America
+  or the Huntington's full-text search (searched 8 Oct 2026)." Unsafe: "first", "unpublished". Depth sentence (D3) as FV-FM1.
+- **E160: N3.** Same extension of FV-FM1's safe sentence. Depth sentence (D3) as FV-FM1.
+- **E163: N3 (weak).** FV-FM1's safe sentence holds, adding "OR ser. I vol. 42 pt 3 read for 8-10 Dec, Butler's Book, Chronicling America". Depth
+  sentence (D2) as FV-FM1.
+- **E164: N2.** Safe sentence: "Read at grade H with Cipher No. 1: on 10 May 1864 R. O'Brien at Bermuda Landing gives Sheldon at Fort Monroe the
+  route of his ten-column cipher, down 6, down 10, up 1, down 8, up 2, down 4, up 7, down 3, up 5, down 9 -- the route printed for Cipher No. 1's
+  ten-column page (Tomokiyo, 'A Civil War Dispatch Redeciphered'; Huntington mssEC 41 p.6) -- and says he cannot translate Sheldon's cipher; the
+  rest of the telegram is in clear in the Huntington's public transcription; no prior mapping of this telegram to that route found (Plum 1882,
+  Bates 1907, Google Books, Internet Archive full text, searched 8 Oct 2026)." Unsafe: any wording that the route or the telegram's content is
+  newly recovered. Depth sentence (D3): "On 10 May 1864 O'Brien sends Sheldon the column order of his ten-column cipher, which is exactly the
+  ten-column route of the Cipher No. 1 book, because he cannot translate Sheldon's cipher."
+- Not N4 for any: Turner's and Butler's letterbooks and the Light Artillery Brigade papers (NARA RG 393), NARA RG 107 recipient copies, HathiTrust
+  and JSTOR unread; the aaymeloglu solver repository not cloned.
+
+### 5. Postmortem
+- FV-FM1 named Plum and Bates as unread for E164 but not the cached Tomokiyo pages, which `prior_work.py` lists as a family (it checks them for a
+  folio, not for decoded content). The route a telegram states is key content: before an N3 on a message about the cipher itself, grep the key's
+  published descriptions (Tomokiyo, Plum, Bates) for the decoded values. The same check gave E164 its D3 element.
+- `prior_work.py --network` spent its per-item request cap on fetching OR volumes and never reached ia-global/gbooks for three of four items; the
+  layers were run by hand. One-line suggestion for the tool's owner: query the global layers before the per-volume fetches.
+- Rows written: status.json E162, E160, E163, E164 (audit_status "two audits"; E164 grade N2, depth D3); SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E164
+  withdrawn (N2); SO-ECKERT-E160/E162/E163 unchanged (class held). prior-work.tsv rows for the four items appended.
+- Requests: archive.org 9 (3 advancedsearch, 6 `_djvu.txt`; one 403 on a lending-only Bates copy, a second copy used), be-api 9 (fts), googleapis
+  books 15 (+ the tool's own), loc.gov 4, plus `tools/prior_work.py --network`'s own calls (its prior-work.tsv rows carry the per-host counts).
+  Subagents 0.
