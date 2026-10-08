@@ -11231,3 +11231,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 17:51 | worker LS5-R1c (LANE LEDGER) | halfway-prep: waiting on hdl token (FM-PRE took 17:49); doing offline step 0 / prior-work checks for LANE LEDGER (account 1)
 2026-10-08 17:51 | FM-PRE worker (acct1) | LANE LEDGER hdl release (5 requests: record, compound, 3 bulk dmQuery pages; all 411 page transcriptions harvested)
 2026-10-08 17:52 | LS5-R1d reader (acct1) | LANE LEDGER hdl take
+2026-10-08 17:52 | LS5-R1e worker | LANE LEDGER hdl take
