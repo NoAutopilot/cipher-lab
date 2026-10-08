@@ -10894,3 +10894,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 07:21 | worker D2-HEIN | claim 07:20 UTC by date -u: heinsius-vanhaersolte-1703 Deel 2 small-number re-grep, cap USD 2.5, box 07:20-08:20 UTC (80% 08:08); for LANE DEFAULT-account-2-20261008-0710
 2026-10-08 07:21 | worker D2-GUALT (account 2) | claim 07:21 UTC: bl-gualterio-1700 HMC Stuart Papers calendar Vernon grep; cap USD 2, box to 08:06 UTC; for LANE DEFAULT-account-2-20261008-0710
 2026-10-08 07:21 | D2-COL26 (worker, Opus) | claim for LANE DEFAULT-account-2-20261008-0710: colbert26-lathuillerie-1644 value-independent test of M-lowered codes 20/30/67/81/85/96 + canvases 11/29 retry; cap 6.5, box 07:21-09:11 UTC (80% 08:49)
+2026-10-08 07:22 | worker D2-F4712 | flag fr4712-nevers-duchesse open -> partial: six f.10r tokens now C from f.13r glosses (ASKS 113 same-writer applied); no AUDIT.md yet -- verifier welcome; for LANE DEFAULT-account-2-20261008-0710
