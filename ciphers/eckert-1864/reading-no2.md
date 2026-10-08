@@ -837,5 +837,17 @@ Code-word tokens: H 24, C 1.
 
 Code-word tokens: H 9.
 
-Totals over the 69 entries: H 1767, C 70, I 59, M 2.
+**N2-BR | Page 23 | 8915 | 18 Mar 1864 3.30 PM, Beckwith (2), to Grant (LS4-R2a, 8 Oct 2026; image-read)**
+
+[Washington]'s [18] {time: 3.30 PM} For [Grant U S] This [Department] will not transfer [Troops] from [Steele Fdk]'s [Command (-ed, -ing)] unless at your request  {tail: [signed] [Secretary of War]}
+
+Code-word tokens: H 10.
+
+**N2-BS | Page 96 | 8988 | 20 June 1864 3 PM (cipher date word 19), to Grant (LS4-R2a, 8 Oct 2026; image-read; image "started" where the volunteer text has "stated")**
+
+{time: 3 PM} [June] [19] to [Grant U S] [.] The last [Of the] [Siege] [Train] has just started the coe horn mortars included  {tail: [signed] [Maj Genl H W Halleck]}
+
+Code-word tokens: H 10.
+
+Totals over the 71 entries: H 1787, C 70, I 59, M 2.
 <!-- decode.py: derived block ends -->
