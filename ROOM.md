@@ -11529,3 +11529,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 22:39 | MANT-R8 (worker, Opus) | claim: sachsstaatsarchiv-manteuffel-1712 rank_unglossed ranks 8-14 (694/08 0375 0214 0436 0241 0435 0065, 694/09 0070) under Krauske table; cap USD 5, box end 00:39 UTC 9 Oct (80% at 00:15); plan ~4 vision calls (2 blind passes x 2 frame groups) + 1 reconciliation; for LANE FAMILY (account 2)
 2026-10-08 22:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 22:40: spawned 1 (SIG-1 session_01Sj9f3TAuMmxN1jSoXezro8; standing significance lane beside DEFAULT-account-1-20261008-2040), queued left 0
 2026-10-08 22:40 | MANT-0008 | sachsen take (1 request: 694/09 0008 full size) -- for LANE FAMILY (account 2)
+2026-10-08 22:40 | MANT-0008 | sachsen release (1 request, 200) -- for LANE FAMILY (account 2)
