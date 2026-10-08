@@ -6,8 +6,8 @@ reading. Be adversarial: we would rather learn now that it is in print than clai
 
 THE ITEM
 - Source: Thomas T. Eckert Papers, Huntington Library, San Marino, mssEC 25 ("Ciphers Received and Sent", Fort Monroe) p.274 (digital pointer 5818), entry E167, headed "New York Dec 6th 1864 / Geo D Sheldon Ft. Monroe", https://hdl.huntington.org/digital/collection/p16003coll11/id/5818. Read with War Department Cipher No. 1 (Huntington mssEC 41).
-- Reading: John Horner (New York) to Maj. Gen. B. F. Butler via Sheldon at Fort Monroe, 6 Dec 1864: "[The steamer] Russia is in [New York]. Have examined her. Accommodations poor, for [horses] bad. River services bad, outside good. Draft not less than [7] and [1] half feet. Power good. Length [205] and depth [12] feet. Not more than [14] [miles] per hour speed. Mattawan not the craft for your services. Have not seen Sanborne yet. Particulars by letter. Yours ... address [37] Broad ..." (two names near the end not settled)
-- Context we already know: The first Fort Fisher expedition was assembling; a transport Russia sailed with it (ORN ser. I vol. 11).
+- Reading: Wm. Bradford (signed "Wm breeds ford"; John Horner, the military telegraph operator at New York, signs the transmission) to Maj. Gen. B. F. Butler via Sheldon at Fort Monroe, 6 Dec 1864: "[The steamer] Russia is in [New York]. Have examined her. Accommodations poor, for [horses] bad. River services bad, outside good. Draft not less than [7] and [1] half feet. Power good. Length [205] and depth [12] feet. Not more than [14] [miles] per hour speed. Mattawan not the craft for your services. Have not seen Sanborne yet. Particulars by letter. Yours, Wm. Bradford, address [37] Broad ..." ("Wesport raining here" not settled). Corrected 8 Oct 2026 by AUD2-LEDGER-4 (AUDIT.md "## AUDIT 2 (AUD2-LEDGER-4)"); most of the body is in clear in the Huntington's public transcription.
+- Context we already know: The first Fort Fisher expedition was assembling; a transport Russia sailed with it (ORN ser. I vol. 11). Butler's dispatch boat Greyhound had burned in late Nov 1864, and Butler sent its master, Mr. Bradford, north "to select another boat for similar uses" (Butler, Private and Official Correspondence vol. V p.367, to George H. Powers).
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM2)").
@@ -21,7 +21,7 @@ HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path
   `ciphers/eckert-1864/second-opinions/chatgpt-e167-<UTC date>.md`. Do not touch any other file. Do not commit to `main`:
   create a branch named `second-opinion/SO-ECKERT-E167` and open a pull request from it, titled exactly
-  `[SO-ECKERT-E167] second opinion: Horner to Butler, the steamer Russia, 6 Dec 1864`.
+  `[SO-ECKERT-E167] second opinion: Bradford to Butler, the steamer Russia, 6 Dec 1864`.
 - The first lines of the file must be this header, filled in:
       label: SO-ECKERT-E167
       model: <your model name and version>

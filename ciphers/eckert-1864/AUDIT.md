@@ -6023,3 +6023,118 @@ different correspondents, the telegram's own particulars absent) but belongs in 
 status.json and its SO prompt. Next step that could still move E173/E177: Grant Papers vol. 13 for 8 and 26 Dec 1864 from a person's
 browser (MSU Scholars Junction PDF, or Google Books after the quota resets); for E172, the War Department received book that covers
 6-7 Oct 1864 (after mssEC 10, which ends 31 July; volume not identified here), read in the image.
+
+## AUDIT 2 (AUD2-LEDGER-4)
+
+Verifier AUD2-LEDGER-4 (account 3, LANE-VERIFY-3, session_01XjtcfCRxGcamoVybBevLNq), 8 Oct 2026, 21:43-22:3x UTC by `date -u`. Second
+adversarial audit of **E168, E165, E167** (Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952; reader FM-R1, first audit
+FV-FM2, both account 1); E169 (N2 by FV-FM2) checked only where cheap. Account 3 neither read nor first-audited any of them. A separate
+session from both, not protecting their conclusions. Nothing decoded beyond key look-ups; decode.py not touched (FIX-DEC owns it). Key
+source `period` for all. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md: kept or lowered, never raised.
+**Result: E168 and E165 lowered to N1 (the D2V-E74 line: body clear in the Huntington's public transcription, the key adds only titles and
+the cipher's name; for E168 the Norfolk operator's same-day clear restatement sits three pages on, p.43, pointer 5587). E167 held at N3, now weak,
+with a reading correction: the report is signed Wm. Bradford, master of Butler's burned dispatch boat Greyhound, not by John Horner, who
+is the New York telegraph operator.**
+
+### Prior-work checks 3-5
+- **Duplicate diff (first step):** pointers 5584, 5808, 5818 against every `###` header in ciphertext*.txt, reading*.md and status.json:
+  only E168, E165, E167 themselves; the second 5818 entry (Sheldon to R. O'Brien, Fortress Monroe Dec 6/64, image below Horner's) is not
+  filed and is another telegram. 5587 (O'Brien, Norfolk, 17 Mar 1864, below) is not filed. **No duplicate.**
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=mssEC 25;folio=<page>;canvas=<ptr>;ptr=<ptr>;date;sender;recipient;place'
+  --step-type second-audit --fetch` (no items.tsv rows), exit 4 each: step LEAD = V1-KNOWN's target-level claim of 16:02 (16 N0/N1 rows,
+  none of these): cleared. Plaintext **KNOWN-PART (5-civil-war)** for E165 and E168: "clear words public in the holder transcription" (9 and
+  13 code words not) -- the tool's own flag of the D2V-E74 shape, which FV-FM2 did not act on. E167: LEAD "2 entries on pointer 5818 dated
+  1864-12-06" = the Sheldon-to-O'Brien entry, not a duplicate. Tomokiyo CONTEXT hits are folio-number collisions (viete.htm, henryvii.htm,
+  spanish3D.htm: other archives), unrelated. aaymeloglu cache not on disk (UNCHECKED-NET); cyphersolver/bourdeau caches CLEAR.
+- `--reading <decoded body> --network` (G3): E165 and E168: CLEAR (6 decoded phrases, no hit) on ORN ser. I vols 9-10 and Butler Corr. vol. 4; the tool hit its per-item request cap before fetching most OR ser. I vols 32-49 djvu texts and before ia-global and gbooks (UNCHECKED-NET, generic; 31 and 19 rows). E167: **not run** -- the tool hung on this item three times (--network at 400 s and 900 s, --offline at 300 s; killed, no output); logged as a tool fault, not a search. By hand instead: be-api full text "Mattawan not the craft" 0, "Russia is in New York" 11 (1908-1960 newspapers, unrelated), third query 502 (host stopped, one request); the cached Butler IV-V and Plum reads below. The tool's G3 does not reach the holder's transcription, the press or recipient papers; the hand checks below do.
+- **Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, `fortmonroe/aud2_ledger4_hdl.py`, 14 queries, 3.2 s apart, hdl
+  token 21:47-21:53 UTC): **orphan** (22 hits), **endless** (26), **sigel** (119), **lewis wallace** (3: 5584, **5587**, 3034), **additional
+  arbitraries** (5584 only); **godfrey** (14: 5808 and other uses), **gazette** (6), **rousseau native** (5808), **following additions**
+  (5782 = E169 only), **editions** (5808, 14009, 12344); **horner** (336, the operator's name passim), **russia** (8: 5818; 5852, 5855,
+  5940, 5941 = the steamer Russia at Fort Monroe Jan-Mar 1865, later traffic; 6649 unrelated), **sanborn** (9, none Dec 1864 at Fort
+  Monroe), **breedford** (0).
+  - **5587 (mssEC 25 p.43), Norfolk Mar. 17, 1864, R. O'Brien to Maj. Eckert, plain:** "I change words Tappan to Orphian, Shelter to
+    Endless, Taunton to France, Shelby to Sigel, Lewis to season, Wallace to submit and make Taunton and shelter stand for H W Halleck
+    Ireland & Italy stand opposite General in chief as before answer R OBrien". The Norfolk operator, the same day, restates E168 in clear
+    as he understood it -- wrongly: he takes the frame words Tappan/Shelter/Taunton/Shelby (Major/General) as the words being replaced. His
+    reading is refuted by the printed later uses FV-FM2 cites (Orphan = Sigel, E108; Submit = Lew Wallace, E8), so FV-FM2's sense of
+    E168 stands; but the instruction's substance (Orphan, Endless, Sigel, Season, Submit, Wallace, "General in chief", H. W. Halleck) is in
+    the holder's public transcription twice: in E168's own clear words and in this reply.
+- **Plum, *The Military Telegraph during the Civil War* (1882)**, IA `militarytelegraph01plumrich` / `02plumrich` djvu text (2 requests):
+  vol. 1 pp.45-53 (ciphers; "New arbitraries were added as military operations seemed to require", p.46; No. 1 at pp.52-53: made 1862, in
+  general use from Feb 1864, discarded after the Athens capture of 24 Sept 1864, nearly 900 arbitraries) prints **no addenda, no Sigel/Wallace
+  arbitraries and none of E165's words** (Godfrey/Grainery/Goslin/Gazette/Napier/Penfield/Tappan/Taunton: 0 in the cipher chapter; the
+  appendix ciphers are other books, Belgium = Sigel there). Vol. 2 p.315 lists **John Horner** among the operators "at New York City".
+- **Butler, *Private and Official Correspondence* vol. V** (cached `privateofficialc05butl`, full read of hits): Horner 0, Russia 0 (one
+  1860s legal sense), Mattawan 0, Sanborn 0; **p.367, Butler to George H. Powers, Fort Monroe, November [2]8th 1864** (OCR "iSth"): the
+  dispatch boat Greyhound burned; "I desire specially to commend ... Mr. Bradford, the master of the boat ... I have sent him north to
+  select another boat for similar uses as the 'Greyhound'". This is the context of E167 (below).
+- **Press of the day (Chronicling America, loc.gov JSON, 25 Nov 1864 - 15 Jan 1865, 4 requests):** "steamer russia" 211 and "horner russia"
+  88 keyword hits (no phrase operator: noise, titles read, nothing about Butler); "mattawan" 0; "greyhound bradford butler" 4 (NY Herald
+  30 Nov p.1 and 3 Dec p.4, Liberator 2 Dec, Portland Press 13 Jan: the Greyhound's burning, context only). No page text read.
+- **Friedman Collection copy of No. 1 and its printed addenda of 9 Sept 1864** (Tomokiyo, civilwar1): not reached in this session
+  (no route tried; George C. Marshall Foundation holding) -- **unchecked**; it bears on E169 only by date.
+- Not searched: Google Books (no call; FV-FM2's 429 lesson; G3 above covers what the tool reached), HathiTrust, JSTOR, OR ser. I vol. 33
+  beyond FV-FM2's grep, Bates (1907).
+
+### Findings per entry
+- **E168 (Halleck to Sheldon, 17 Mar 1864).** The body in the Huntington's public transcription of 5584 reads in clear: "in no plug
+  penfield on page of additional arbitraries add orphan Endless for Tappan shelter Franz sigel and season submit for Taunton Shelby Lewis
+  Wallace also alter General in Chief to Taunton Shelter H W Halleck answer if this is under stood" (and the same words reversed above).
+  The key adds only "No. 1 Cipher" (Plug, Penfield) and "Major General" three times. By the D2V-E74 line (E81, E82, E86: body clear, the key
+  adds titles, a place or a figure) this is **N1**; O'Brien's same-day clear restatement (5587) is a second public witness of the substance.
+  Grades unchanged (16 H, FV-FM2 section 3). Depth **D3 kept**: Tappan/Taunton = Major, Shelby/Shelter = General read in E165, E169 and here;
+  the printed later uses (E8, E48, E108) remain the external check; O'Brien's misreading is a period operator's error, not a conflicting key
+  witness (his values would make Orphan = Major, against E108's print).
+- **E165 (Eckert to Sheldon, 14 Nov 1864).** Body clear in the public transcription of 5808 ("for Pulaski Godfrey and grainery for Paducah
+  Goslin and Gazette for Columbia Baker and Buffalo for Shelby Stanly Napier and for shelter Rousseau native act Knowledge receipt quick");
+  the key adds "following" (Rambling), "No. 1 Cipher" (Plug, Penfield) and "General" twice. FV-FM2 itself marked it weak for this reason;
+  under the D2V-E74 line it is **N1**. Grades unchanged (5 H). Depth **D3 kept** (weak: 5 code groups; mssEC 43 external check).
+- **E167 (New York to Butler via Sheldon, 6 Dec 1864).** Image of 5818 read here at 2400 px (first image read of this entry): matches the
+  transcription word for word except **"Wm breeds ford"** (not "breed"). **Reading correction: "Wm breeds ford" = Wm. Bradford**, the signer
+  ("particulars by letter yours Wm Bradford address [37] Broad ..."), master of Butler's dispatch boat Greyhound, sent north by Butler after
+  the fire "to select another boat for similar uses" (Butler Corr. V p.367); "John Horner" under the text is the New York operator who
+  sent it (Plum II p.315). So the telegram is Bradford's report on boats he examined for Butler -- the Russia and the Mattawan -- not
+  Horner's, and not (on this evidence) about the Fort Fisher expedition, which stays context. FV-FM2's safe sentence ("John Horner at New
+  York reports to Butler") over-claims the sender and is corrected below. Grades: 27 H unchanged; "Wm breeds ford" M -> plain (I, read
+  from context); "Wesport raining here" stays M. Class: **N3 (weak)** by the E83/E84 line -- about half the body is clear in the public
+  transcription; the key carries Butler, New York, horses and every figure (7½, 205, 12, 14). Depth **D2 kept** (rule: never raised here);
+  the image read and the Butler V p.367 context are new D3 material for a depth job.
+- **E169 (N2, FV-FM2): not re-audited.** Cheap checks only: "following additions" in the Huntington full text = 5782 itself; Plum prints no
+  addenda. N2 stands on FV-FM2's basis (the Friedman copy's printed addenda of the same date, via Tomokiyo; unread here).
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E168 Halleck to Sheldon, 17 Mar 1864 | **N1** (lowered from N3) | **known**: body clear in the Huntington's public transcription of 5584 (key adds No. 1 Cipher and Major General x3); restated in clear the same day by R. O'Brien, Norfolk (5587) | D3 (kept) | 100 (16 H of 16) | as FV-FM2; 5587 read |
+| E165 Eckert to Sheldon, 14 Nov 1864 | **N1** (lowered from N3 weak) | **known**: body clear in the public transcription of 5808 (key adds following, No. 1 Cipher, General x2) | D3 (kept, weak) | 100 (5 H of 5) | as FV-FM2 |
+| E167 Wm. Bradford (via Horner, New York) to Butler, 6 Dec 1864 | **N3** (weak; was N3) | unknown: about half the body clear in the public transcription; key supplies Butler, New York, horses and the figures | D2 (kept) | 100 (27 H of 27) | image of 5818 read; Butler V p.367 context |
+
+- **E168 N1, E165 N1.** Safe sentence (each): "The body of this telegram is in clear in the Huntington's public transcription of the Fort
+  Monroe ledger (mssEC 25); Cipher No. 1 adds only [the cipher's name and officers' titles], read at grade H." Unsafe: "first", "unpublished",
+  "not located", "unknown telegram". No SO prompt: SO-ECKERT-E165 and SO-ECKERT-E168 withdrawn.
+- **E167 N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 6 Dec 1864 Wm. Bradford, through the New York
+  operator John Horner, reports to Butler that he has examined the steamer Russia -- poor accommodation, bad for horses, bad for river
+  service but good outside, draft 7½ feet, length 205 feet, depth 12 feet, not over 14 miles an hour -- and that the Mattawan is not the
+  craft for Butler's service; most of the message is in clear in the Huntington's public transcription, and no prior decipherment of its
+  code words or printed text was located in the Official Records (ser. I vol. 42 pt 3), the Naval Official Records (ser. I vols. 10-11),
+  Butler's printed correspondence (vols. IV-V), Plum (1882), Internet Archive full text, the 1864 press through Chronicling America
+  (keyword), or the Huntington's full-text search (searched 8 Oct 2026)." Unsafe: "Horner reports", "first", "unpublished", "about the Fort
+  Fisher expedition". Depth sentence (D2, mine): "On 6 Dec 1864 Bradford tells Butler the steamer Russia is 205 feet long, draws 7½ feet
+  and makes no more than 14 miles an hour, and that the Mattawan will not do." Not N4: Butler's letterbooks (NARA RG 393), the NY press
+  page by page, Google Books, HathiTrust, JSTOR unread. SO-ECKERT-E167 kept queued, prompt corrected (sender, context, title).
+
+### Postmortem
+- FV-FM2's full-text search queried only the rare payload words (Goslin, grainery, Mattawan) and so missed **5587**, the Norfolk operator's
+  same-day clear reply to E168 three pages on (p.43); querying the instruction's own clear words (endless, lewis wallace) finds it at
+  once. Lesson (G3): for a ledger entry, query the clear words of the body too, and read the pages around it.
+- FV-FM2 noted E165's body was clear and still classed it N3, and did not apply the same test to E168: the D2V-E74 line (a fifth time in
+  this file) -- for a mostly-clear entry, ask first what the key adds; prior_work.py's KNOWN-PART flag says so mechanically.
+- FM-R1 and FV-FM2 read "Wm breed ford" as unsettled and made the ledger's operator the sender; the operator list (Plum II p.315) and
+  Butler's letter (vol. V p.367) settle it. Lesson: a name under a forwarded telegram can be the transmitting operator.
+- Corrections made here: status.json rows for E168, E165 (N1, text known, two audits), E167 (N3 weak, sender, line, two audits);
+  SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E165, SO-ECKERT-E168 withdrawn, SO-ECKERT-E167 prompt corrected. Not edited (fix job, ~$0.3):
+  reading.md / NOTES "## FM-R1" E167 signer ("Wm breeds ford" = Wm. Bradford, plain; transcription "breed" -> "breeds"), and the E167
+  table title "John Horner to Sheldon".
+- Requests: hdl.huntington.org 15 (14 dmQuery, 1 IIIF page); archive.org 2 (Plum djvu); loc.gov 4; be-api 3 (third 502, stopped); prior_work.py's own G3 calls (its
+  report). Subagents 0.

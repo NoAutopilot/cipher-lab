@@ -7659,9 +7659,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM2)'"
+        "AUDIT.md '## AUDIT (FV-FM2)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-4)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM2 verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7677,12 +7678,12 @@
         "other": "0"
       },
       "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Halleck to Fort Monroe, 17 Mar 1864, additional arbitraries for Sigel and Lew Wallace, 'General-in-Chief' altered to Halleck (E168)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 17 Mar 1864, five days after Grant replaced Halleck as General-in-Chief, a telegram signed H. W. Halleck tells Fort Monroe to add Orphan and Endless for Maj. Gen. Franz Sigel and Season and Submit for Maj. Gen. Lew Wallace to No. 1's additional arbitraries, and to alter the entry 'General-in-Chief' to 'Maj. Gen. H. W. Halleck'; the telegram itself not located in the Official Records (ser. I vol. 33), Internet Archive full text or the Huntington's full-text search (searched 8 Oct 2026).",
-      "gap": "N3: Plum (1882), Bates, the Friedman copy of No. 1, Google Books (429), HathiTrust, JSTOR unread",
+      "line": "The body of this telegram is in clear in the Huntington's public transcription of the Fort Monroe ledger (mssEC 25, pointer 5584); Cipher No. 1 adds only the cipher's name and 'Major General' three times, read at grade H.",
+      "gap": "body clear in the Huntington public transcription (D2V-E74 line); no novelty; restated in clear same day by R. O'Brien, Norfolk, 5587",
       "depth": "D3",
       "completeness": "16 H of 16 code-word groups over the two copies (payload Orphan, Endless, Season, Submit and the plain surname Wallace not counted)",
       "phrases": [
@@ -7694,15 +7695,17 @@
       ],
       "depth_sentence": "On 17 Mar 1864 Washington instructs Fort Monroe to enter Orphan and Endless for Sigel and Season and Submit for Lew Wallace in Cipher No. 1, and to change the book's 'General-in-Chief' to 'Maj. Gen. H. W. Halleck'.",
       "depth_check": "code clause: Tappan/Taunton = Major, Shelby/Shelter = General passim; external: Submit = Wallace (E8, OR I/37 pt 1 p.435), Season = Wallace (E48), Orphan = Sigel (E108, OR I/37 pt 2) in later printed telegrams; mssEC 43 carries the General-in-Chief -> Halleck change; matched control FM-R1",
-      "depth_note": "16 H of 16 code-word groups over the two copies (payload Orphan, Endless, Season, Submit and the plain surname Wallace not counted)"
+      "depth_note": "16 H of 16 code-word groups over the two copies (payload Orphan, Endless, Season, Submit and the plain surname Wallace not counted)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM2)'"
+        "AUDIT.md '## AUDIT (FV-FM2)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-4)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM2 verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7718,12 +7721,12 @@
         "other": "0"
       },
       "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Eckert to Fort Monroe, 14 Nov 1864, new arbitraries for Pulaski, Paducah, Columbia, Stanley and Rousseau (E165)",
-      "line": "Read at grade H with Cipher No. 1 (only five words are in code): on 14 Nov 1864 Eckert sends Fort Monroe new arbitraries -- Godfrey and Grainery for Pulaski, Goslin and Gazette for Paducah, Baker and Buffalo for Columbia, Napier for General Stanley and Native for General Rousseau -- three of which also stand in the Huntington's key copy mssEC 43; the telegram itself not located in the Official Records (ser. I vol. 45), Internet Archive full text or the Huntington's full-text search (searched 8 Oct 2026).",
-      "gap": "N3 (weak): body clear in the public transcription of 5808; Baker/Columbia/Buffalo quoted by Tomokiyo from mssEC 43 p.11; Plum, Friedman copy unread",
+      "line": "The body of this telegram is in clear in the Huntington's public transcription of the Fort Monroe ledger (mssEC 25, pointer 5808); Cipher No. 1 adds only 'following', the cipher's name and 'General' twice, read at grade H.",
+      "gap": "body clear in the Huntington public transcription (D2V-E74 line); no novelty",
       "depth": "D3",
       "completeness": "5 H of 5 code-word groups (Ramble, Plug, Penfield, Shelby, Shelter; Columbia plain; payload not counted); weak: 5 groups",
       "phrases": [
@@ -7735,15 +7738,17 @@
       ],
       "depth_sentence": "On 14 Nov 1864, as Hood's army threatened Middle Tennessee, Eckert gave Fort Monroe new code words for Pulaski, Paducah and Columbia and for Generals Stanley and Rousseau.",
       "depth_check": "code clause: Shelby/Shelter = General passim; external: mssEC 43 p.[11] Baker/Columbia/Buffalo and p.[17] Napier = Stanley, Native = Rousseau (images read 8 Oct 2026); page image 5808 read; matched control FM-R1",
-      "depth_note": "5 H of 5 code-word groups (Ramble, Plug, Penfield, Shelby, Shelter; Columbia plain; payload not counted); weak: 5 groups"
+      "depth_note": "5 H of 5 code-word groups (Ramble, Plug, Penfield, Shelby, Shelter; Columbia plain; payload not counted); weak: 5 groups",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM2)'"
+        "AUDIT.md '## AUDIT (FV-FM2)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-4)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM2 verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7762,11 +7767,11 @@
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
-      "title": "Eckert 1864 (Fort Monroe ledger): Horner (New York) to Butler, 6 Dec 1864, the steamer Russia examined (E167)",
-      "line": "Read at grade H with Cipher No. 1: on 6 Dec 1864 John Horner at New York reports to Butler through Fort Monroe that he has examined the steamer Russia -- poor accommodation, bad for horses, good outside, draft 7 1/2 feet, length 205 feet, depth 12 feet, not over 14 miles an hour -- and that the Mattawan is not the craft for Butler's service; not located in the Official Records (ser. I vol. 42 pt 3), the Naval Official Records (ser. I vols. 10-11), Butler's printed correspondence, Internet Archive full text or the Huntington's full-text search (searched 8 Oct 2026).",
-      "gap": "N3: Butler's letterbooks, press of the day, Google Books (429) unread; page 5818 not image-read",
+      "title": "Eckert 1864 (Fort Monroe ledger): Wm. Bradford (via Horner, New York) to Butler, 6 Dec 1864, the steamer Russia examined (E167)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 6 Dec 1864 Wm. Bradford, through the New York operator John Horner, reports to Butler that he has examined the steamer Russia -- poor accommodation, bad for horses, bad for river service but good outside, draft 7 1/2 feet, length 205 feet, depth 12 feet, not over 14 miles an hour -- and that the Mattawan is not the craft for Butler's service; most of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (ser. I vol. 42 pt 3), the Naval Official Records (ser. I vols. 10-11), Butler's printed correspondence (vols. IV-V), Plum (1882), Internet Archive full text, the 1864 press through Chronicling America (keyword) or the Huntington's full-text search (searched 8 Oct 2026).",
+      "gap": "N3 (weak, E83/E84 line: about half the body clear in the public transcription). Not N4: Butler letterbooks (NARA RG 393), NY press page by page, Google Books, HathiTrust, JSTOR unread",
       "depth": "D2",
-      "completeness": "27 H of 27 code-word groups ('John' of John Horner plain); 'Wm breed ford', 'Wesport raining here' M",
+      "completeness": "27 H of 27 code-word groups; 'Wm breeds ford' = Wm. Bradford (plain, AUD2-LEDGER-4); 'Wesport raining here' M",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.274, pointer 5818, E167"
       ],
@@ -7774,9 +7779,9 @@
       "documents": [
         "Huntington mssEC 25 (obj 5952) p.274, pointer 5818, E167"
       ],
-      "depth_sentence": "On 6 Dec 1864 Horner tells Butler the steamer Russia is 205 feet long, draws 7 1/2 feet and makes no more than 14 miles an hour, and that the Mattawan will not do.",
+      "depth_sentence": "On 6 Dec 1864 Bradford tells Butler the steamer Russia is 205 feet long, draws 7 1/2 feet and makes no more than 14 miles an hour, and that the Mattawan will not do.",
       "depth_check": "code clause: Knox = Butler, Frog = New York and the numeral page passim; no external check of the content (Russia in the Fort Fisher expedition, ORN I/11, context only); D3 withheld",
-      "depth_note": "27 H of 27 code-word groups ('John' of John Horner plain); 'Wm breed ford', 'Wesport raining here' M"
+      "depth_note": "27 H of 27 code-word groups; signer Wm. Bradford (AUD2-LEDGER-4); D2 kept; image of 5818 read and Butler Corr. V p.367 context are D3 material for a depth job"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
