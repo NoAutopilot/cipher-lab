@@ -85,3 +85,18 @@ requests each under the token (wave-2 rule). Unit ~1.4 per entry; stop before an
 - FV-FM3c: E185, E187, E189, E190, E191 (NOTES "## FM-R2b").
 - FV-MS18: E200, E202, E206, E207, E209 (NOTES "## MS18-R1").
 Handed on, not briefed this wave: E193, E194 (FM-R2b); FV-FM2's decoder over-count fix for key-supplement telegrams (~0.4).
+
+---
+
+# Wave 3 (written 8 Oct 2026 21:3x UTC; seven_day allowed_warning on workers, keep going per lane-common-blast)
+By get_session: E62-9660 2.47 (no book in hand reads 9660; no residue pair added); FV-FM3b 5.46 (E171 E175 E176 N3 D3, E178 N3 weak D2, E179 N3 D2; AUD2-LEDGER-6).
+
+## FIX-DEC (Sonnet 5.5; cap $2, box 50 min, no network): decoder false positives + the residue --check flag
+1. ciphers/eckert-1864/decode.py: FV-FM2 (AUDIT "## AUDIT (FV-FM2)": payload words of key-supplement telegrams E165/E168/E169 counted as code) and FV-FM3b
+   (AUDIT "## AUDIT (FV-FM3b)": 11 named false positives, plain words/ship names that are also key.md code words). Mark them plain through the entry-level
+   mechanism FIX-FM1 used (variant:/split:/plain notes in ciphertext.txt or decode.py's per-entry exceptions), never by deleting key rows; regenerate with
+   `--write` then `--check` (exit 0); report H before/after per entry. Do not touch entries a live verifier holds (E170 E172 E173 E174 E177 E185 E187 E189
+   E190 E191 E200 E202 E206 E207 E209 -- check ROOM for their done lines first; if done, include their listed false positives too).
+2. ciphers/eckert-1862/print/residue_decode.py --check: E62-9660 flagged "residue readings are stale" with page texts matching the manifest and key/decoder
+   unchanged. Find the cause (nondeterministic order, seed, timestamp, a file another job rewrote); fix in the script, rerun --check twice, both exit 0.
+NOTES "## FIX-DEC (8 Oct 2026, account 1, for LANE LEDGER)" in each folder touched; status.json H counts updated for rows already there; file_shrink_guard.
