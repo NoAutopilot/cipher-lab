@@ -78,18 +78,18 @@ Read so far: 57 canvases sampled (VIV-M); one pair located (2 Mar 1580, c107-c10
 - Clerk's copy f.105r-106v only half read - blocker: not-attempted; beyond this brief (one pair, one first test); next: a second independent read of f.105r plus f.105v-106v at native resolution with a paleography-focused pass, ~$3
 - Test 1 at power: re-run test1.py on settled labels over the whole letter (c107-c109 left, five pages, against the four-page copy) - blocker: not-attempted; beyond this brief (one pair, one first test); next: after the two gaps above, ~$4
 - Which Vivonne cipher letters 1580-82 lack a clerk's decipherment - blocker: not-attempted; beyond this brief (one pair, one first test); next: walk the dense-cipher runs and the "Dechifre" pages (about 150-200 canvases at 600 px, ~USD 4)
-- Mousset table applied but label-to-glyph crosswalk is by eye on an unsettled inventory (D4-VIVMOUS: PASS 0.454 vs null p99 0.400; D4-VIVV: most of that margin is French letter statistics, text-specific margin thin, 0.454 vs wrong-text p99 0.448; crosswalk misses the table's x = 'ı o' and cc = '8'; 261 tokens multi, 234 no glyph incl. the frequent 'R' and '=') - blocker: not-attempted; beyond this brief (published-key check only); next: after the owner sorter, re-label the piles against key/mousset1912.tsv glyphs and re-run vivmous.py, ~$1.5
+- Mousset table applied through a by-eye crosswalk on an unsettled inventory (D4-VIVMOUS PASS 0.454 vs null p99 0.400; D4-VIVV text-specific margin thin, 0.454 vs wrong-text p99 0.448; D2-VIVX applied D4-VIVV's four crosswalk fixes and nothing moved: 0.4537 unchanged, wrong-text p99 0.4475 unchanged; second attempt of this instrument, a third crosswalk-only pass is closed by rule 3) - blocker: not-attempted; needs settled labels from the owner sign sorter (gap 1) first; next: after the sorter, re-label the piles directly against key/mousset1912.tsv glyphs (a different instrument: new labels, not a crosswalk edit) and re-run vivmous.py + vivv_contam.py, ~$1.5
 - Mousset printed page column and the 46 undated rows of the TSV - blocker: not-attempted; beyond this brief (one pair, one first test); next: second script pass on letter headings, ~USD 0.5
 - github.com/larrycbeck/cyphersolver and Cipherbrain/Cryptiana comment threads not opened - blocker: not-attempted; beyond this brief (one pair, one first test); next: one README fetch, ~USD 0.1
 ## Escalation (VIV-T, 4 Oct 2026)
 - [ ] siblings: fr16104 folder (1572-74 cipher, Tomokiyo's Vivonne1 table) is a sibling with a different key; not merged and not written
 - [x] clear-pages: one pair located (2 Mar 1580: cipher c107-c109 left, copy c110 right-c112 left); test 1 ran on f.101v vs f.105r: NON-TEST at err_2reader 0.576
-- [x] known-keys: Mousset pp.lviii-lix table on disk (key/mousset1912.tsv, published) and applied to f.101v through a shape crosswalk (D4-VIVMOUS, 6 Oct 2026): PASS (0.454 vs null p99 0.400) with a 5/5 matched control; verifier D4-VIVV: text-specific PASS only by a thin margin (0.454 vs unrelated-French p99 0.448), D0; a key check, not a reading; see the D4-VIVMOUS section
+- [x] known-keys: Mousset pp.lviii-lix table on disk (key/mousset1912.tsv, published) and applied to f.101v through a shape crosswalk (D4-VIVMOUS, 6 Oct 2026): PASS (0.454 vs null p99 0.400) with a 5/5 matched control; verifier D4-VIVV: text-specific PASS only by a thin margin (0.454 vs unrelated-French p99 0.448), D0; a key check, not a reading; see the D4-VIVMOUS section; D2-VIVX (8 Oct 2026) applied D4-VIVV's four crosswalk fixes: target score unchanged (0.4537), text-specific margin unchanged (0.006 over wrong-text p99), second attempt of the crosswalk instrument logged in HYPOTHESES.md; no further crosswalk-only tuning
 - [x] print: Mousset 1912, Gachard II, d'Ars 1884 read; no print of the 2 Mar 1580 letter's text found (d'Ars paraphrase only)
 - [ ] key-rebuild: test 1 fitted a grade-C key, unusable at this transcription error; rebuild after the sorter
 - [x] image-check: 57 canvases sampled; c107-c112 viewed; c107 cut to native line crops
 - [ ] retry: test 1 re-run on settled labels and the whole letter (gap 3)
-Verdict: keep going: 7 internal gaps; cheapest next: owner sign sorter on the c107 crops (the inventory is the blocker), then re-label against the Mousset glyphs and re-run vivmous.py, a full read of the copy, and test 1 re-run at power on the whole letter, ~$8 plus owner time
+Verdict: keep going: 7 internal gaps (D2-VIVX, 8 Oct 2026: the crosswalk route is exhausted without the sorter); cheapest next: owner sign sorter on the c107 crops (the inventory is the blocker), then re-label against the Mousset glyphs and re-run vivmous.py, a full read of the copy, and test 1 re-run at power on the whole letter, ~$8 plus owner time
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
@@ -167,3 +167,37 @@ PREREG_vivv.md pushed e638be972 (13:30:46 UTC) before the scored run.
    value read in two contexts. Outward words: none beyond "a published-key check; no fragments read". No novelty class: no
    reading is claimed. status unchanged: partial.
 Requests: none (disk only). Cost: within cap.
+
+## D2-VIVX: D4-VIVV's crosswalk fixes applied and re-scored (8 Oct 2026, 07:21-08:0x UTC by date -u)
+Brief: LANE DEFAULT-account-2-20261008-0710, job D2-VIVX. PREREG-D2-VIVX.md and the edited key/crosswalk.tsv pushed in a92c91aa5
+(07:23 UTC) before the re-score. Changes, crosswalk only (transcription not relabelled): (1) pair row '1+o' = x.g1 (table x = '10'),
+'o o' -> d keeps precedence; 1 occurrence in pass A (L01), 0 in pass B; (2) '8' += cc.g1; (3) 'H' += b.g2; (4) 'z' += ff.g1 (now multi e|ff).
+Appended values go last, so the first-listed value the stream uses is unchanged for 2-4 (stated in the PREREG before scoring).
+Pre-fix results kept as vivmous_result_cw1.json, vivv_contam_result_cw1.json, mousset_decode_cw1.txt. Gate, statistic, nulls, control
+unchanged (PREREG_vivmous.md, PREREG_vivv.md).
+| number | before (cw1) | after (D2-VIVX) |
+|---|---|---|
+| pass A real vs copy | 0.4537 | 0.4537 |
+| pass A value-perm null p99 (mean) | 0.3998 (0.3218) | 0.3928 (0.3145) |
+| pass B real / null p99 | 0.4196 / 0.4045 | 0.4196 / 0.3929 |
+| control 5 seeds, real (null p99) | 0.634-0.652 (0.383-0.396), 5/5 | 0.634-0.654 (0.371-0.381), 5/5 |
+| wrong-text (fr16) null mean / p99 | 0.4173 / 0.4475 | 0.4172 / 0.4475 |
+| token-order shuffle mean / p99 | 0.4042 / 0.4308 | 0.4024 / 0.4263 |
+| control seed 0 vs copy / wrong-text max | 0.6369 / 0.4436 | 0.6359 / 0.4512 |
+| (a) traceback cut real / p99 | 0.4537 / 0.3981 | 0.4537 / 0.3910 |
+| (b) L01 + copy line 1 dropped | 0.4555 / 0.4033 | 0.4555 / 0.3914 |
+| (d) all multi at second value | 0.3819 / 0.3837 FAIL | 0.3495 / 0.3299 PASS |
+| tokens one/multi/none (pass A) | 798/261/234 | 714/345/233 |
+| grades H/M/I as vivmous.py counts them | 328/837/280 | 285/880/280 (D4-VIVV's correction H 0, M 1165, I 280 stands) |
+Verdicts (pre-registered): PREREG_vivmous PASS (0.4537 > 0.3928, control 5/5); PREREG_vivv text-specific PASS (0.4537 > 0.4475 and
+> 0.4263; control seed 0 clears 0.4512) -- by the same 0.006 over wrong-text p99 as before.
+Did every number move together? No. The target score is byte-identical: fix 1 turns one 'n' into 'x' in a stretch the alignment does not
+reward, and fixes 2-4 only append alternatives. What moved is the value-permutation null (and with it (a), (b), (d)): adding the label
+'1+o' puts one more value (x, a rare letter) into the permuted multiset, which lowers every shuffled score -- in pass B too, where no
+'1+o' token occurs -- so the wider margin over that null is a property of the null's label set, not evidence for the key. (d) turning
+PASS is the same effect (its null p99 fell to 0.330 because z=ff adds two letters per token). The text-specific comparison, the one
+D4-VIVV said matters, did not move (wrong-text p99 0.4475 both times; margin 0.006). Rule 3, third-attempt clause: this is the second
+attempt of the crosswalk instrument on this transcription (D4-VIVMOUS, D2-VIVX) with no gain where it matters; logged in HYPOTHESES.md.
+A further crosswalk-only edit is not run; the next attempt needs new labels from the owner's sign sorter (gap 1) or new material.
+Grades: no clause reads; D0 stands (rule 4a). No reading changed after AUDIT.md (none exists for a reading here). Requests: none (disk
+only). `vivmous.py --check`: see the done line.
