@@ -1,6 +1,6 @@
 # PREREG TT-DRAG -- `tools/running_key.py --drag` known-answer controls (written before any control ran)
 
-Written 8 Oct 2026 ~22:58 UTC (date -u), worker TT-DRAG for LANE TOOLS-TOMO (account 4). Pushed before the controls run.
+Written 8 Oct 2026 22:48 UTC (date -u), worker TT-DRAG for LANE TOOLS-TOMO (account 4). Pushed before the controls run.
 Method: Tomokiyo, runningkey.htm ("Tips"; "Running Key Challenge" / "Solution": Matthew Brown's dictionary attack, words of
 length >= 10, quadgram fitness on the revealed other side, then manual extension). A row is a TRUE placement when the dragged
 word equals the true plaintext or the true key at exactly that offset (either side: under vig the two are symmetric).
@@ -26,3 +26,15 @@ Truth known only inside Brown's 207-letter window; rows outside it are unknown, 
 
 Grade on the shelf: `proven` only if A and B both pass and both nulls collapse; `controlled-only` if A passes and B fails or B is
 not runnable; `weak` ("controlled-only: failed ...") if A fails.
+
+## Addendum, 8 Oct 2026 22:57 UTC (date -u) -- written after Control B ran, before B2 runs
+Control B result (pre-registered line above): FAIL -- the first true in-window placement ranks 272 (pass line: top 20); the
+shuffled null collapses (no true placement in any kept list, seeds 1-5). Diagnosis: only ONE word of the English dictionary
+(4,910 types of >= 10 letters from five novels) occurs anywhere in Brown's 207-letter truth window ("calculated", plaintext
+offset 328, at the window's end) -- B tested the dictionary's coverage as much as the drag. This FAIL stands as B's result.
+Observation not pre-registered, reported as such: rank 1 overall is communicating / yinterviewwit at offset 7, one of the four
+pairs Brown published (runningkey.htm "Solution"); it lies outside the 207-letter window, so it is not counted as a hit.
+- B2 (pre-registered here, before it runs): identical to B except the dictionary adds the word types of tools/data/en18
+  (Madison/Jefferson/Gallatin writings, period diplomatic register). LM unchanged (en only). PASS line: a true in-window
+  placement in the top 20. NULL: shuffled order, seeds 1-5, collapses if none in the top 20. The shelf grade follows B2 only if
+  it passes; otherwise B's FAIL decides and the grade is `controlled-only`.
