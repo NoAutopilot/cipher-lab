@@ -5654,9 +5654,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V2c)'"
+        "AUDIT.md '## AUDIT (LS-V2c)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-F)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 93.3,
@@ -5672,7 +5673,7 @@
       "title": "Eckert 1864: to McCaine at Harper's Ferry for Sheridan, 22 Aug 1864, a train of forges and wagons escorted by the 25th New York Cavalry (E33)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I vols. 39, 43 and ser. III vol. 4 by date and correspondent), the 1864 press in Chronicling America, Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "N3 one audit (LS-V2c, 8 Oct 2026); weak N3 (routine movement message; the regiment's assignment of 24 Aug is in an OR itinerary); sender's signature group unread; second audit to read Augur's letters sent (NARA RG 393) and the 25th New York Cavalry's record",
+      "gap": "N3, first audit LS-V2c 8 Oct 2026; weak N3 (routine movement message; the regiment's assignment of 24 Aug is in an OR itinerary); sender's signature group unread; second audit to read Augur's letters sent (NARA RG 393) and the 25th New York Cavalry's record; second audit AUD2-LS-F 8 Oct 2026 held N3 (1864 press pages read in OCR, OR vols 43 pt 2 and 51 pt 1, Grant Papers vol. 12, Phisterer, Huntington full text: mssEC 18 p.161 refers to the same forges, no copy of E33)",
       "phrases": [
         "Huntington mssEC 19 p.161, pointer 9055, E33"
       ],
@@ -5695,9 +5696,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V5)'"
+        "AUDIT.md '## AUDIT (LS-V5)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-F)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 80.0,
@@ -5713,7 +5715,7 @@
       "title": "Eckert 1864: Meigs to Capt. Thomas, quartermaster, 8 Apr 1864, the steamer Relief to Annapolis for colored troops (E57)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the Meigs letterbooks, the 1864 press pages listed in AUDIT (LS-V5) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; the plan (OR I/35 pt 2 p.37) is in print, the Relief order is not located; SO-ECKERT-E57 queued",
+      "gap": "NARA RG 92/107, the Meigs letterbooks, the rest of the 1864 press page by page and HathiTrust full text unread, JSTOR rows pending, so not N4; the plan (OR I/35 pt 2 p.37) is in print, the Relief order is not located; SO-ECKERT-E57 queued; second audit AUD2-LS-F 8 Oct 2026 held N3 (all 17 press pages of LS-V5's window read in OCR, OR vol. 51 pt 1, Grant Papers vol. 10, fresh phrase pass)",
       "phrases": [
         "Huntington mssEC 19 p.35, pointer 8927, E57"
       ],
@@ -5736,9 +5738,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V5)'"
+        "AUDIT.md '## AUDIT (LS-V5)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-F)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 92.3,
@@ -5754,7 +5757,7 @@
       "title": "Eckert 1864: Washington (General-in-Chief code word) to Sherman, Nashville, 27 Apr 1864, the 11th Michigan Cavalry of no use at Lexington (E59)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the Meigs letterbooks, the 1864 press pages listed in AUDIT (LS-V5) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; Sherman's printed papers searched by phrase only; SO-ECKERT-E59 queued",
+      "gap": "NARA RG 92/107, the Meigs letterbooks, the rest of the 1864 press page by page and HathiTrust full text unread, JSTOR rows pending, so not N4; Sherman's printed papers searched by phrase only; SO-ECKERT-E59 queued; second audit AUD2-LS-F 8 Oct 2026 held N3 (Cleveland Leader 29 Apr and 14 more press pages read in OCR, OR vols 38 pt 4 and 51 pt 1, Grant Papers vol. 10, fresh phrase pass)",
       "phrases": [
         "Huntington mssEC 19 p.59, pointer 8951, E59"
       ],
@@ -5777,9 +5780,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V5)'"
+        "AUDIT.md '## AUDIT (LS-V5)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-F)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 90.9,
@@ -5795,7 +5799,7 @@
       "title": "Eckert 1864: Meigs to Lt Col Biggs, Fort Monroe, 6 Apr 1864, the Spaulding to Hilton Head and the Montauk with two propellers to Annapolis (E62)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the Meigs letterbooks, the 1864 press pages listed in AUDIT (LS-V5) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; weakest of the three: the exchange around it is printed (Meigs 5 Apr, Biggs 5 and 6 Apr), its own wording is not located; SO-ECKERT-E62 queued",
+      "gap": "NARA RG 92/107, the Meigs letterbooks, the rest of the 1864 press page by page and HathiTrust full text unread, JSTOR rows pending, so not N4; weakest of the three: the exchange around it is printed (Meigs 5 Apr, Biggs 5 and 6 Apr), its own wording is not located; SO-ECKERT-E62 queued; second audit AUD2-LS-F 8 Oct 2026 held N3, still the weakest (Biggs's printed reply, received 1.30 p.m., answers its coal and Spaulding clauses; Meigs's own wording not found in OR vol. 51 pt 1, Grant Papers vol. 10, the press or a fresh phrase pass)",
       "phrases": [
         "Huntington mssEC 19 p.29, pointer 8921, E62"
       ],

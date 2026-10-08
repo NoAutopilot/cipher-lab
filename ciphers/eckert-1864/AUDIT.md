@@ -3014,3 +3014,67 @@ auditor (LS-V6) and does not protect either's conclusion. Key source for all six
 - Understatements filled: N2-BL now has an external check (D3); N2-BM has its printed reply; N2-BL and N2-BM were image-checked for the first time.
 - Rows: status.json N2-BL grade N2 (`plaintext_novelty` N2, `mapping_novelty` N3), depth D3, not counted; N2-BI, N2-BJ, N2-BK, N2-BM, O9-AH
   `audit_status` "two audits"; SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-N2BL withdrawn (N2); the other five stay queued (class unchanged).
+
+## AUDIT 2 (second adversarial, AUD2-LS-F)
+
+Verifier AUD2-LS-F (account 4, for the account-3 orchestrator), 8 Oct 2026, 05:37-05:5x UTC by `date -u`; brief
+`.claude/briefs/runs/2026-10-08-acct3-ledger2.md` "AUD2-LS-F / -G". A separate session from the readers (LS-R2c, LS-R5) and the first
+auditors (LS-V2c for E33, LS-V5 for E57, E59, E62); not protecting any of their conclusions. Nothing decoded beyond `--check`. Key source
+for all four: `period` (the War Department's Cipher No. 1 book, key.md = mssEC 41).
+
+### 1. Re-derivation (rule 7) and image check
+- `python3 ciphers/eckert-1864/decode.py --check`: "reading.md is current", exit 0.
+- Huntington IIIF `hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg` for 9055, 8927, 8951, 8921 (scratch,
+  not committed); PIL strip crops of each entry's body (9055 rows 250-1330; 8927 rows 260-1060; 8951 rows 1180-1720; 8921 rows 1760-2640),
+  read by eye against ciphertext.txt:
+  - **E33 (9055)**, all ten lines from "McCaine H. Ferry ... Aug 22 1864" to "Reading - ped Wal - rus. Chisel plane ax Saw": agree.
+  - **E57 (8927)**, header "Geo W. Baldwin (1) navy Plan Progress ... Washn Apr 8th 1864" and all seven body lines ("Julia , For , Pilgrim ,
+    Thomas , Vinton , Unity , If" ... "duty Yoke Meigs Bender his on one"): agree; pencil interlinear glosses ("wanted", "Beecher",
+    "Progress", "over game on file") are the clerk's, not message text, as LS-V5 said.
+  - **E59 (8951)**, header "F S Van Valkenburg ... Washn 1130 am Apl 27 1864" and the five body lines: agree, including "there" struck
+    through after "Efficiency" (the reading omits it).
+  - **E62 (8921)**, lines 4-8 at full resolution ("to take Whist to Hilt on head Unity Give her" ... "any arrivals of Weasel hers
+    Confidential South Meigs Belcher Viola") and lines 1-3 at contact-sheet resolution: agree; margin "93 or dy gps sent 12.30 PM Tinker",
+    the 12.30 tail time the reading carries.
+  No transcription correction.
+
+### 2. Families LS-V2c / LS-V5 did not cover (or could not read), searched here (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| 1864 press, Chronicling America (loc.gov JSON, `dates=` window), **pages read through their ALTO OCR** (LS-V5's OCR fetch had failed) | E57 "steamer Relief Annapolis colored troops" 7-20 Apr: all **17** result pages read (Memphis Appeal, Worcester Spy 13 and 14 Apr, Springfield Weekly Republican, Chicago Tribune 13/14/16/20 Apr, NY Tribune 14 Apr, Natl Intelligencer 20 Apr, Muscatine Journal, NY Herald 15 Apr, St Paul Pioneer, Portland Press, Evening Star 19 Apr, NY Dispatch, Litchfield Enquirer); E59 "Eleventh Michigan Cavalry" 25 Apr-20 May (45 pages, first 15 read, 2 truncated), including LS-V5's Cleveland Morning Leader 29 Apr p.4; E62 "Montauk Spaulding Fortress Monroe" 5-20 Apr (0 pages); E33 "Twenty-fifth New York cavalry Harper's Ferry" 20 Aug-10 Sept (54 pages, 11 read; then loc.gov answered HTTP 429 and the pass stopped there, per the good-citizen rule) | **no hit for any of the four.** E57: every "Relief" hit is a relief society, a Confederate dispatch or an advertisement; nothing about the steamer Relief or colored troops embarking at Annapolis. E59: the Cleveland Leader page is a 4th Michigan Cavalry desertion story; the Evening Star 18 May page carries a Cavalry Bureau horse advertisement (Ekin), not E59. E33: nothing on the forge train or the 25th New York Cavalry |
+| OR volumes the first audits did not search (IA djvu, whole volume, regex on flattened text) | ser. I **vol. 38 pt 4** (`warofrebellion384unit`, Sherman, May 1864; E59), **vol. 51 pt 1** (`warofrebellion511unit`, supplement; all four), **vol. 43 pt 2** (`warofrebellion432unit`; E33, LS-V2c read pt 1 and 2 by narrower terms); re-read vol. 32 pt 3, vol. 33, vol. 35 pt 2, vol. 43 pt 1 with the regexes: Eleventh/11th Michigan Cavalry + Cavalry Bureau/efficiency/impaired/no use/sent to the field; steamer Relief/staunch/Montauk/Spaulding/two propellers/arrivals of steamers/Hilton Head (Apr 4-9); train of forges/forges and other/Twenty-fifth or 25th New York Cavalry/mounted and equipped/First and Third Cavalry Divisions | **no hit for the four texts.** Context only, as the first audits found: I/32 pt 3 has the 11th Michigan Cavalry at Camp Nelson and Lexington under Hobson in March-April ("one of the most efficient regiments in the service", Sturgis's roster report) and Hobson to Col. S. B. Brown, Lexington, 27 Apr (fugitive negroes in his camp) -- the same day as E59, but not its subject; I/33 p.814 Biggs's 6 Apr reply (received 1.30 p.m.) -- one hour after E62's 12.30 send time, and it answers E62's "report your supply of coal" ("Can spare a thousand tons coal") and "orders to Spaulding" ("Spaulding not yet arrived. Will give her orders as soon as she comes in"), i.e. Biggs's reply is printed, Meigs's E62 is not; I/43 pt 1 itinerary (25th NY Cavalry assigned 24 Aug) and pt 2 (the regiment at Smithfield 6 Sept) |
+| Grant Papers (the person the senders reported to; AUD2-LS-G's lesson), IA be-api full text inside lending-only items | vol. 10 (`papersofulyssess0010gran`, Jan-May 1864): "Michigan Cavalry", Montauk, Spaulding, "staunch steamer", Relief Annapolis; vol. 12 (`papersofulyssess0012gran`, Aug-Nov 1864): forges, "25th N.Y. Cav"; two further vol. 12 phrase calls returned a non-JSON (5xx) reply, not retried | vol. 10: only the 7th Michigan Cavalry (Feb 1864), nothing for E57, E59, E62; vol. 12: nothing for E33 |
+| Regimental / state records | Phisterer, *New York in the War of the Rebellion* vol. 2 (`newyorkinwarofre02phisrich`), 25th Cavalry sketch (E33) | context only: "at Washington, D. C., 22d Corps, from July 7, 1864; in the 4th Brigade, 1st Division, Cavalry, Army of Potomac, from August, 1864" -- agrees with E33's regiment leaving Washington for Sheridan's cavalry in late August; not the telegram |
+| Huntington full text (CONTENTdm `CISOSEARCHALL`, coll11) | forges, Montauk (LS-V5's call returned empty; re-run), Spaulding, Thayer | forges: 3 leaves -- 9055 (E33 itself), **9827 = mssEC 18 p.161**, McCaine, 26 Aug 1864 ("The forges coal &c had [?] sent from here ... he will get ready") -- a later telegram that refers to the same forges, not a copy of E33; 10184 (mssEC 10, a raid report, unrelated). Montauk 21 and Spaulding 17 leaf hits by title only (pages in mssEC 05-19, not read one by one; 8920 = mssEC 19 p.28 is the neighbouring leaf of E62's p.29); Thayer 48 (leaves of 1865 books, not read) | no second copy of the four texts found |
+| IA full text, all items (be-api fts), fresh quoted phrases | "of no use at Lexington", "its efficiency is being impaired", "good staunch steamer", "Montauk and two other", "other two propellers", "probably scarce at Annapolis", "report daily any arrivals", "load of colored troops" Annapolis, "train of forges", "forges and other wagons", "Eleventh Michigan Cavalry" Lexington Halleck | only Biggs's 5 Apr reply in five OR copies ("Montauk and two other similar propellers") and unrelated modern uses; nothing for the four texts |
+| Google Books API (key, country=US), fresh quoted phrases | "Michigan Cavalry is of no use"; "Eleventh Michigan Cavalry" "of no use" and "efficiency is being impaired" cavalry 1864 (each 503 once, answered on the one retry); "Relief" "staunch steamer" Annapolis; "call at Annapolis" "colored troops" 1864 Meigs; "Montauk and other two propellers"; "plenty of coal" Annapolis Meigs Biggs 1864; "small train of forges"; "Twenty-fifth New York Cavalry" August 1864 forges; "25th New York Cavalry" "350 men" | loose matches on common words (OR reports of other dates, Army and Navy Gazette, regimental histories, Lee's Bold Plan for Point Lookout on the 25th NY's July 1864 dismounted service); nothing for any of the four texts |
+| OpenAlex, Semantic Scholar, CORE | not re-run: the first audits' name/event queries cover these entries, and every lowering in this round came from print or the press, not scholarship | -- |
+| JSTOR | the first audits' 8 rows (E33 2, E57/E59/E62 6; families i and ii) stand; none added | pending (never blocks) |
+| Unread / unreachable | NARA RG 92 (QMG telegrams sent, Apr 1864), RG 107 (M473), RG 393 (Augur's letters sent); the Meigs letterbooks; Sherman's printed correspondence page by page (*Sherman's Civil War*, 1999; not on IA full text); the 11th Michigan Cavalry's *Record of Service*; the remaining E59 (30) and E33 (43) Chronicling America result pages (loc.gov 429); HathiTrust full text (Cloudflare) | unread |
+
+### 3. Classification (key `period`)
+| entry | class | prior plaintext | depth | % H/C/S (unchanged) | check |
+|---|---|---|---|---|---|
+| E33 to McCaine for Sheridan, 22 Aug 1864 | **N3** (held) | none located | D3 (held) | 93.3 | image all lines, fresh `--check`; OR I/43 itinerary and Phisterer agree with the regiment's move; mssEC 18 p.161 (26 Aug) refers to the same forges |
+| E57 Meigs to Capt. Thomas, quartermaster, 8 Apr 1864 | **N3** (held) | none located | D3 (held) | 80.0 | image all lines; Halleck's 5 Apr memo (OR I/35 pt 2 p.37) prints the plan |
+| E59 Washington (General-in-Chief) to Sherman, 27 Apr 1864 | **N3** (held) | none located | D3 (held) | 92.3 | image all lines; OR I/32 pt 3 places the regiment at Lexington under Hobson that week |
+| E62 Meigs to Biggs, Fort Monroe, 6 Apr 1864 | **N3** (held, weakest) | none located; the reply is printed | D3 (held) | 90.9 | image; OR I/33 p.814 Biggs's reply, received 1.30 p.m., one hour after E62's 12.30 send, answers its coal and Spaulding clauses |
+
+- **All four held at N3**: no prior plaintext or decipherment located after two logged searches. Not N4: NARA RG 92/107/393, the Meigs
+  letterbooks, Sherman's printed correspondence page by page, the remaining Chronicling America pages and HathiTrust full text are unread,
+  and JSTOR rows are pending. No depth raised or lowered; the depth sentences in LS-V2c and LS-V5 section 4 stand (each is a true, specific
+  sentence the reading supports, checked against reading.md; the authentication-distance figures are the first audits', not recomputed here).
+- **E62** stays the weakest: its answer is in print, timed one hour after it, and answers two of its clauses. That is evidence the telegram was
+  sent and received as read, not a printing of it. If Meigs's 6 Apr text turns up in RG 92's letters-sent edition or a Quartermaster's
+  report, it drops to N2/N1. E57 is the same shape one step removed (the plan printed, the order not).
+- Safe sentence (each): "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official
+  Records (ser. I and III by date and correspondent, including the supplement vol. 51 pt 1), the Grant Papers, the 1864 press in Chronicling
+  America (pages read in OCR), the Huntington collection's full text, Internet Archive full text or Google Books (two audits, 8 Oct 2026)."
+  Unsafe: "first", "unpublished", "never printed", "new", "unknown telegram".
+
+### 4. Postmortem
+- No over-claim found in the four rows. LS-V5's press family was a result list, not a read (its OCR fetch failed); this audit read the pages
+  through `page[].url` (text/xml ALTO) on the loc.gov resource JSON, which works where `tile.loc.gov` `ocr.txt` did not -- the route for the
+  next audit. loc.gov rate-limited at about 45 page fetches inside ten minutes; pace one page per 3 s or spread over sessions.
+- Rows: status.json E33, E57, E59, E62 `audit_status` "two audits", audit_refs and gap updated, class and depth unchanged;
+  SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E33/-E57/-E59/-E62 stay queued (no count or class changed).
