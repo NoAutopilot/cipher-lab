@@ -10856,3 +10856,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 06:12 | D1A-PISG worker | claim: fr16045-pisany-rome-1585 f.275v period gloss as second witness, cap 4, box to 07:22 UTC, for LANE DEFAULT-account-1-20261008-0540
 2026-10-08 06:12 | worker D1A-PAG | claim: clairambault296-paget-1713 known-residue list from the sister 1714 key; cap $3, box to 07:12 UTC; for LANE DEFAULT-account-1-20261008-0540
 2026-10-08 06:12 | worker D1A-SRCH2 | claim 06:12 UTC by date -u: print searches fr5761-election-1519 (Reichstagsakten JR1) + fr3975-vieuville-1587 (print_check), cap USD 2.5, box to 07:02 UTC; for LANE DEFAULT-account-1-20261008-0540
+2026-10-08 06:13 | D1A-EVL worker | claim: maurice-rupert-1645 Evelyn printed-pair harvest, cap 3.5, box end 07:22 UTC, for LANE DEFAULT-account-1-20261008-0540
