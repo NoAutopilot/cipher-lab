@@ -101,3 +101,34 @@ evidence column; rows below 0.1 left as they were, not premise-passed). Result: 
 8. hellen-frederick-1752 R1049, $8, p 0.10, NO key in hand (R4376 failed controls; R4377/R4379 Potsdam sheets untried, images not on disk).
 9. hellen-frederick-1752 1763 cluster, $4, p 0.10, NO key in hand (HEL-T2 controls below gate; needs a 1763 table, Add MS 32276 R4381-R4408).
 Also open but not a sibling-table row: fr.16105 ink piece 38 (4 June 1573 second copy), $1, p 0.08, Tomokiyo key in hand (SIBS-READ already handed up fr.16104 piece 52 as VIV52).
+
+# Round 4 (account-3 orchestrator, 8 Oct 2026 13:1x UTC by date -u), from the SIBS-PREMISE list above
+
+Same common rules. Lesson of round 3 (AUD2-LS3-A/B): five of eight first-audit N3 entries fell to N1/N2 at the second audit
+because the reader/first verifier missed (a) the Huntington public transcription of the same pointer, (b) OR ser. III and ORN,
+(c) a same-leaf sibling in another code whose clear text is in OR. Every Eckert read below runs that three-part pre-filter BEFORE
+decoding, and the first verifier repeats it; an entry that fails it is logged N1/N2-likely and not decoded.
+
+## ST-LEDGER-4 (account 1), lane orchestrator, cap $45, box 8 h: Eckert, the three keyed remainders
+Read the ST-LEDGER-3 handoff in STATUS.md first. In order of p per dollar: (1) Cipher No. 9 remainder of mssEC 19 (~33 of ~43;
+key-no9.md, decode_no9.py; O9-AH..BC already done); (2) Cipher No. 2 headquarters entries (~180 of ~201; mssEC 47 key, H;
+decode_no2.py) in filtered batches of 8-10; (3) Cipher No. 1 remainder, filtered (most are in print); (4) further mssEC 18
+(object 10074) pages beyond 21-22 Apr 1864. Readers Sonnet where mechanical, first verifiers Opus in separate sessions (LS-V
+pattern), then one WORK-QUEUE second-audit row per verified batch on another account (accounts 2 or 4; never the account that
+read or first-audited it).
+
+## CEPPO-4702 (account 4), solver, Opus, cap $4, box 60 min: ceppo-nevers-fr3251-1570s fr.4702 f.36r
+Ceppo-Nevers key ranks 1/201 on both passes; f.36r has no gloss (f.37 has). Reconcile the 136 '?' splits against the f.37
+gloss and the crops, re-decode with --check, re-run the judge (currently FAIL, 514 M) with its matched control. Report what was
+found and where it was not found; a PASS goes to a separate verifier.
+
+## MANT-0609 (account 4), worker, Opus, cap $5, box 60 min: sachsstaatsarchiv-manteuffel-1712, Loc. 694/09
+Extend frame_classify to a sample of 694/09 (302 frames, 1713) and the uninventoried 694/08 frames, within the host's per-session
+request limit recorded in NOTES.md; list unglossed cipher frames by rank with the Krauske table (codes 1-401) coverage of each.
+No decoding in this job; the list is the deliverable, with the next read named.
+
+## VIV52-R (account 2), lane orchestrator, cap $30, box 6 h: VIV52 retry
+gallica.bnf.fr answered 403 "you have been blocked" to VIV52 at 12:50 UTC (7 requests). Step 0: ONE reachability request
+(`curl -sS -o /dev/null -w "%{http_code}"` on a canvas info.json); anything but 200 -> one ROOM line, mark the row bounced, stop
+(no retry). If 200: VIV52 steps 2-4 as written above (premise already negative, NOTES "## VIV52"), at most one request per
+1.5 s, one image fetch per canvas region.
