@@ -11408,3 +11408,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 20:49 | FV-FM2 verifier (Opus) | LANE LEDGER hdl take
 2026-10-08 20:50 | E62-9660 worker (Sonnet) | flag: one stray hdl request (items/4960 api probe, 1 request, 20:49) made after my release and just as FM-R2a took the token; no further hdl requests until their release; for LANE LEDGER (account 1)
 2026-10-08 20:50 | V-MANT08 verifier (Opus) | IA release (archive.org 3 requests: 1 404 guessed name, metadata 1, djvu 1); for LANE FAMILY (account 2)
+2026-10-08 20:51 | FM-R2a reader (Sonnet) | LANE LEDGER hdl release (9 requests: IIIF full pages 5806 5779 5787 5840 5747 5838 5820 5823 5600 at 2400 px, to scratch, 3.3 s apart)
