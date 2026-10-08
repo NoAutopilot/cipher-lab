@@ -1025,5 +1025,65 @@ Code-word tokens: H 22.
 
 Code-word tokens: H 13.
 
-Totals over the 149 entries: H 2441, C 23, I 0, M 2.
+**E185 | Page 280 | 5824 | mssEC 25 (obj 5952, pointer 5824), 10 Dec 1864 Ft Monroe, Geo. D. Sheldon to R. O'Brien (Hd Qrs A.J.) and S. H. Beckwith (City Point): two telegrams on one page, forwarding D. D. Porter's order to Commodore Parker (Onondaga) and a second to a ship's commander about the Saugus (FM-R2b; row 5824/2; image-read at 2400 px)**
+
+[Command = Er (-ed, -ing)]er [100] A Parker you S S. onondaga Dutch gape [.] Send the Saw gus down at once  {tail: [signed] [D. D. Porter] {time: 3 PM} Geo D. Sheldon Ft Monroe 10 . 1864 S. H. Beckwith City Point [Command = Er (-ed, -ing)]er E. are Colhoun you S. Ironic lad Saugus [City Point] [.] [Report] Tommy with your vassal without delay at [Breckenridge] town [Road]'s [signed] [D. D. Porter] {time: 3 PM} yours &c Geo. D. Sheldon}
+
+Code-word tokens: H 15.
+
+**E186 | Page 91 | 5635 | mssEC 25 (obj 5952, pointer 5635), 27 Apr 1864 Ft Monroe, Sheldon to S. H. Beckwith, Culpepper CH, for Grant, Butler's telegram on Rowley, the ironclad and Gillmore (FM-R2b; row 5635/0; transcription only)**
+
+Culpepper CH for [Maj Genl U.S. Grant] [.] [Colonel] Rowley has arrived [.] but one I run clad hear yet [,] [3] more to come [,] will not be hear before sund day [.] [Gen Q. A. Gillmore] not before Sat her day if then [.] [6] [Regiment]'s of his [Troops] behind [,] [2] of which are [Near] [Washington]  {tail: [signed] [Maj Gen B. F. Butler] [26] ante Meridian how are you Geo D Sheldon}
+
+Code-word tokens: H 21.
+
+**E187 | Page 255 | 5799 | mssEC 25 (obj 5952, pointer 5799), 29 Oct 1864 Ft Monroe, Sheldon to Caldwell, Hd Qrs A.P., for Gen. M. R. Patrick (FM-R2b; row 5799/1; transcription only)**
+
+for [General] M. R. Patrick [.] In reply to your Wranglam just received I have to say that since the receipt of your first dispatch a copy of each message received at this office signed by or addressed to Schoon maker hasbin given to [Major] Vanren seller who has [Telegraph (-ed, -ing)]d the same to you  {tail: [signed] Sheldon Geo. D. Sheldon}
+
+Code-word tokens: H 5.
+
+**E188 | Page 40 | 5584 | mssEC 25 (obj 5952, pointer 5584), 12 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert, Wistar's Middlesex-Mathews expedition (FM-R2b; row 5584/0; transcription only)**
+
+The [Follow (-ed, -ing)] press [Report] is approved by [Maj Gen B. F. Butler] [.] ["] Wistar with [Infantry] clearing out land pirates in Middlesex & Mathews Counties [.] [Yorktown] twelfth to [Maj Gen B. F. Butler] [.] have just returned left [Infantry] and [Artillery] with prisoners will [Camp] [7] [Mile]'s from Gloucester to night I have about [40] prisoners some badly [Wounded]  {tail: [signed] [General] Wistar Geo D Sheldon}
+
+Code-word tokens: H 19.
+
+**E189 | Page 204 | 5748 | mssEC 25 (obj 5952, pointer 5748), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert, for Rucker (FM-R2b; row 5748/1; transcription only)**
+
+for Rucker [Quartermaster] [.] [Captain] Pitkin wants me to send all [Forage (-ed, -ing)] to James town [Inland [sic: Island]] [.] I have means of doing it until [Steam]ers arrive [,] have [1] [Steam]er can tow [2] schooners and I think the [Forage (-ed, -ing)] should go further [,] to [Fort] how Patton or [West]'s [Today]  {tail: [signed] begs [Quartermaster] {time: 1 PM} Geo D Sheldon}
+
+Code-word tokens: H 19.
+
+**E190 | Page 287 | 5831 | mssEC 25 (obj 5952, pointer 5831), 14 Dec 1864 Ft Monroe, Sheldon to R. O'Brien, Hd Qrs A.J., forwarding J. C. Hicks (FM-R2b; row 5831/0; transcription only)**
+
+[Williamsburg] {time: 2.30 PM} [14] for Davenport [Head Quarters] [.] Just received your despatch have sent for [1] Company of the first [New York] mounted rifles [.] [Captain] obethner [1] company [Of the] [4] Mass [Cavalry] [Captain] Bovee [.] They wilby at Grove [Today] [As soon as] possible  {tail: [signed] J. C. Hicks [Major] [16] [New York] [Artillery] Geo. D. Sheldon}
+
+Code-word tokens: H 22.
+
+**E191 | Page 45 | 5589 | mssEC 25 (obj 5952, pointer 5589), 28 Mar 1864 Ft Monroe, Sheldon to Geo. W. Baldwin, Baltimore, for Gen. Wallace (FM-R2b; row 5589/2; image-read at 2400 px)**
+
+for [Major] [General] [Ram] [Baltimore] [.] I think you had better [Arrest (-ed, -ing)] at once [Colonel] [100] Chestnut Corner of south and pratt streets [Baltimore] and hold him safe [.] please send me by [Tomorrow] nights boat a confident shall member of your staff of high intelligence  {tail: [signed] [Maj Gen B. F. Butler] {time: 12} Geo D Sheldon}
+
+Code-word tokens: H 14.
+
+**E192 | Page 99 | 5643 | mssEC 25 (obj 5952, pointer 5643), 1 May 1864 Ft Monroe, Sheldon to S. H. Beckwith, Culpepper, for Grant, Butler's telegram (FM-R2b; row 5643/0; transcription only)**
+
+for [Maj Genl U.S. Grant] [.] letter and [Telegraph (-ed, -ing)] in regard to come men sing opera shuns receive [.] [11] of truce boat just in [.] all quiet [.] seized [West Point] [Today] [,] [Enemy] [Fortify (-ed, -ing)]ing [Ford (-ed, -ing)]'s [Over the] chick a how many [.] have receipt of dispatch before  {tail: [signed] [Maj Gen B. F. Butler] {time: 7 PM} Cloudy warm damp Geo. D. Sheldon}
+
+Code-word tokens: H 18.
+
+**E193 | Page 240 | 5784 | mssEC 25 (obj 5952, pointer 5784), 19 Sept 1864 Fortress Monroe, Sheldon to Maj. Eckert, Wash'n, for Rucker (FM-R2b; row 5784/0; transcription only)**
+
+Wash'n. [Monroe] {time: 1 PM} [19] for [Brigadier General] Rucker [Washington] [.] My orders were from [Maj Gen B. F. Butler] to provide [Transportation] by the [20] second for about [5700] sick prisoners Toby exchanged at some point [South] [.] exact point and destination unknown to me at present  {tail: [signed] Are see [signed] [Quartermaster] Geo. D. Sheldon}
+
+Code-word tokens: H 18.
+
+**E194 | Page 261 | 5805 | mssEC 25 (obj 5952, pointer 5805), 4 Nov 1864 Butler's Hd Qrs, R. O'Brien to Sheldon, Ft Monroe (FM-R2b; row 5805/2; image-read at 2400 px)**
+
+{time: 2.30 PM} {date: Nov 4} for [Captain] Langdon [1] united states [Artillery] pro [,] [New York] [Monroe] [.] if [General] [Roddy] is gone when you reach [Monroe] open your own letter of instructions & give Corresponding order to the vassals which have no letters [.] use all possible despatch  {tail: [signed] [Major] [General] Barry R OBrien}
+
+Code-word tokens: H 16.
+
+Totals over the 159 entries: H 2608, C 23, I 0, M 2.
 <!-- decode.py: derived block ends -->
