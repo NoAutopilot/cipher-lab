@@ -69,7 +69,7 @@ exit=0
 
 Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct 2026: K=41 provisional, err_2reader 0.10, err_true not measurable).
 - Whole letter, inventory - blocker: not-attempted; 72 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv, owner's sorter needs tiles first; next: `tools/glyph_atlas.py segment`/`cluster` on images/crops so `tools/sign_sorter.py --focus` can show them, ~$2
-- Whole letter, language - blocker: not-attempted; only French homophonic tested (control-backed negative, HYPOTHESES.md); next: homophonic family_run with de16 and a 16th-c. Dutch corpus (none on disk; build first), plus French at a merged inventory K about 33-35, ~$3
+- Whole letter, language - blocker: not-attempted; homophonic K41 now control-backed FAIL in French (fr16, 6-seed control 0.718), German (de1600, 0.777) and Latin (la17, 0.611) and at a merged K38 in French (FAM-11106L); Dutch untested, no 16th-c. Dutch corpus on file; next: build a 16th-c. Dutch letter corpus (archive.org djvu, e.g. GPA/Groen Dutch letters, about 12 min) and run homophonic nl, ~$2
 - Whole letter, design - blocker: not-attempted; multi-sign (syllable/code) is the design prior's nearest class, untested; next: `family_run.py --family syllabary` with its control after the inventory is settled, ~$1
 - Year - blocker: not-attempted; the year 1572 is editorial; next: only once something reads, ~$0.3
 - Sibling Bergh letters - blocker: not-attempted; Opmerkingen of WVO 5628-5631, 9663, 9666 (Bergh, 1574-77) unopened; next: six Huygens requests for a cipher or key mention, ~$0.3
@@ -80,10 +80,10 @@ Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct
 - [x] clear-pages: leaf p1-p3 viewed at native resolution, no gloss or clear copy (FAM-CS11106 Premise check (c)).
 - [x] known-keys: the Nassau keys key_1572.tsv and key_nepveu.tsv were dropped as a design mismatch by KH2-D; no Bergh key on file.
 - [x] print: Groen 1re serie, Gachard III-IV, Kervyn full text, Japikse out of range (FAM-CS11106); Waanders 2022 still unchecked.
-- [ ] key-rebuild: homophonic French K=41 control-backed negative; Dutch/German and merged-inventory runs planned.
+- [ ] key-rebuild: homophonic K41 FAIL with control at gate in fr16, de1600, la17 and merged-K38 fr16 (FAM-11106L); merged-K38 de1600 control below gate (non-test); Dutch needs a corpus first.
 - [ ] image-check: tx/focus.tsv's 72 look-alike positions await an atlas and the owner's sorter.
 - [ ] retry: the syllabary/multi-sign family after the inventory is settled.
-Verdict: keep going: 5 internal gaps; cheapest next: WVO sibling Opmerkingen, ~$0.3, then the nl/de homophonic runs, ~$3
+Verdict: keep going: 5 internal gaps; cheapest next: WVO sibling Opmerkingen, ~$0.3, then a 16th-c. Dutch corpus + homophonic nl, ~$2, then the syllabary/multi-sign family once the inventory is settled
 
 ## While waiting
 
@@ -182,3 +182,42 @@ Not tested: Dutch or German plaintext (the sender's own languages; only the clos
 0 network requests (the PDF was on disk). Four Sonnet vision subagent calls (one per half per pass), one reconciler pass over 7 native
 crops by this worker, four family_run.py runs (about 2 minutes of CPU). Report what was found and where it was not found; novelty is not
 classified here (rule 10). Next for the lane: see Escalation.
+
+## FAM-11106L: homophonic in other languages + a firmer French control (LANE FAMILY, account 2, 8 Oct 2026, 17:56-18:1x UTC by `date -u`)
+
+Prior work, check 1 re-run 17:57 UTC 8 Oct 2026 (checks 2-4 are FAM-CS11106's, above): `grep -rln 11106` over .md/.tsv/.json outside
+sources/ -> the same files FAM-11106T listed plus FAM-11106T's own outputs; last 1,500 ROOM.md lines: FAM-CS11106 claim + done,
+FAM-11106T claim + halfway + done, the lane's wave-4 line, this job's claim. No row for de/la/merged runs in HYPOTHESES.md; no live claim
+by another session. Result: not done.
+
+PREREG-FAM-11106L.md (pushed 42b2fbe78 before any score). All runs: `tools/family_run.py --family homophonic --tokens space
+--param profile=target --param noise=0.10 --measured-error 0.10 --gate 0.6`, restarts 8, cipher tx/ciphertext_oneline.txt (K41) or
+tx/ciphertext_oneline_merged.txt (K38, `tx/merge_inventory.py`, dd->d, yx->y, S->s: the three look-alike pairs both passes split on in
+both directions, >= 7 splits each in tx/focus.tsv). Corpus choices: **de1600, not de16** -- de16 is an 8.5 KB model-composed text, not a
+historical source (tools/data/de16/README.md); de1600 is Bezold's Johann Casimir letters (1575-86) + Briefe und Acten (1599-1611).
+**la17** is 1590-1649, 20-75 years after the letter (no 16th-c. Latin corpus on file). **Dutch skipped**: nl18/nl20 are 18th c. / 1880-1940,
+nl_dev is a modern Bible, nl_repo holds targets' own readings. Spec copies with the matching judge language:
+specs/wvo-11106-bergh-1572-de1600.json, specs/wvo-11106-bergh-1572-la17.json.
+
+| run | language / K | control seeds (recovery) | control mean | target judge (score vs real_p05) | result |
+|---|---|---|---|---|---|
+| 1 | fr16 / 41 | 0.660 0.856 0.332 0.798 0.815 0.846 | 0.718 (5 of 6 >= 0.6) | FAIL -1.332 vs -0.876 (anneal -2201.3) | control-backed negative |
+| 2 | de1600 / 41 | 0.798 0.883 0.650 | 0.777 | FAIL -1.413 vs -0.839 (anneal -2280.1) | control-backed negative |
+| 3 | la17 / 41 | 0.450 0.652 0.730 | 0.611 | FAIL -1.296 vs -0.996 (anneal -2187.7) | control-backed negative (control just at gate) |
+| 5a | fr16 / 38 merged | 0.315 0.867 0.829 | 0.670 | FAIL -1.362 vs -0.876 (anneal -2200.9) | control-backed negative |
+| 5b | de1600 / 38 merged | 0.861 0.702 0.204 | 0.589 | not run | CONTROL BELOW GATE: non-test |
+
+Reading: the 6-seed French control (0.718, one bimodal seed in six) makes FAM-11106T's French negative firm, not weak, per the PREREG
+firmness rule. In every language the target's judge score sits near or below its own shuffled floor (FAM-11106T: -1.457 fr16) and far
+under real_p05, and its best anneal score is worse than every passing control seed's. Every negative is conditional on the provisional
+transcription (72 unsettled look-alike positions; err_true not measurable) and on a single-letter homophonic design; a multi-sign design
+(syllables, code words, the design prior's nearest class) is untested.
+Attempt count (rule 3, third-attempt clause): French homophonic K41 is at attempt 2 (only the seed count changed) and failed again: a
+third run at the same knob is not worth briefing; the next French test needs a settled inventory or a different family. German, Latin and
+merged French K38 are at attempt 1.
+Housekeeping: runs 1-3 wrote their decode to one filename (the tool's tag is drawn from the label's first characters); the la17 decode
+was renamed families/homophonic-1-fam11106l-la17.txt, and the fr16 and de1600 K41 decodes were regenerated with `--decode-tag`
+(rows labelled "decode-file regen"; seed 1 reproduces the same anneal and judge scores exactly).
+
+Requests: 0 network requests (all corpora on disk). No subagents. Seven family_run.py runs, about 8 minutes of CPU.
+Report what was found and where it was not found; novelty is not classified here (rule 10).
