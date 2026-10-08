@@ -482,3 +482,40 @@ Holker papers finding aid read from a person's browser (LoC Cloudflare). Not cha
 Requests: loc.gov 6 (one 503), findingaids.loc.gov 1 + 1 browser (Cloudflare, stopped); web.archive.org 2 (reset);
 be-api.us.archive.org 14; archive.org 3 (advancedsearch 1, djvu 2); googleapis.com/books 5; de-crypt.org 6 curl + 1 browser
 login session (8 files); api.dp.la 1; api.europeana.eu 1; openlibrary.org 1; catalog.hathitrust.org 1; francearchives.gouv.fr 1 browser.
+
+## TT-FREQ (8 Oct 2026)
+
+LANE TOOLS-TOMO (account 4), worker TT-FREQ. Instrument: `tools/freq.py --split-at auto` (Tomokiyo practice 1, a
+code's spelling part in a low letter band: codebreaking.htm "Cipher in Code"; wallisdecipher.htm "numbers up to about 64
+reserved for letters"; ormonde.htm "Reduction of the Problem"). BER-KWIC already ran contacts and repeats on
+berthier-napoleon-1812, and its NOTES chose a split (236/140) by eye, so the proposed-split run comes here (brief). This
+folder's own earlier `--split-at 300` (U1 above) was chosen by hand; no proposed N had been run.
+Gates: `tools/intake_gate_check.py destaing-gerard-1779` -> "open (line 1) -- edition/page or full-text-search citation
+found within 6 lines", exit 0. `tools/prior_work.py destaing-gerard-1779 --item-spec 'item_id=destaing-1779-04-30;...'
+--step-type read --offline` -> exit 4 (LOOK 2-leaf, UNCHECKED 3-solver); both recorded CLEAR with `--record`
+(DEST-COLLATE's three-copy line read and the 3 Oct Premise check; the Bourdeau diff row "skipped"), rerun -> exit 0
+"proceed on the residue: whole item" (UNCHECKED-NET 2 left: the Aymeloglu clone and the editions register, generic).
+
+Command: `python3 tools/freq.py ciphers/destaing-gerard-1779/structure/codes_only.txt --split-at auto` (216 code groups;
+the full ciphertext.txt carries clear-text dates 1779/30/9, which the tool takes as numbers -- range 2..1779 -- so the
+codes-only file is the right input):
+
+    split auto: 216 numeric tokens, range 2..597
+    single  492  gain 15.7  low 95 distinct/205 tokens IC 0.0145 | high 9/11 IC 0.0364
+    band[378,404)  gain 33.5  low 81/173 IC 0.0179 | high 23/43 IC 0.0443
+    gap34(541|575)
+    proposal: N = 492 (best single split, gain 15.7 nats)
+
+Shuffled-VALUE null (each code redrawn uniformly over 2..597, 20 seeds): best single-split gain 0.3-4.4, best band
+gain 2.3-7.9; both target numbers sit above every null seed.
+What it found: (1) no low letter band. The best single split is at the TOP of the range (values >= 492 are sparse:
+11 tokens), i.e. the used code range thins out above about 490, not a spelling part below a word part. (2) One dense
+cluster, 378-403: 9 distinct values carrying 43 of 216 tokens (401 x13, 382 x10, 378 x4, 402 x4, 380 x3, 400 x2,
+403 x2, 393, 395), the three most frequent groups among them. Nine values are too few for a letter alphabet; in a
+one-part code this would be one alphabetical stretch of frequent entries. Not read further; no hypothesis is tested here.
+Where it found nothing: no break below 378 (values 2-377 are used at an even sparse rate); the 34-wide gap 541|575 is the
+largest numeric gap, three tokens above it.
+Control status of the instrument (tools/tests/TT-FREQ-controls.tsv): PASS on Lodewijk van Nassau 4613/4615 (proposed 123,
+true edge 121), FAIL on Tomokiyo's Ormonde case as pre-registered (proposed 85, true edge 90, |err| 5 > 3: the rare
+letters at the top of the band, 84-87, read as code). A proposal is a hypothesis for `--split-at N`, not a key.
+Next step this suggests (not run): `--kwic 401 --sort right` and `--kwic 382` against the Doniol p.774 crib positions, M.
