@@ -11589,3 +11589,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:08 | OUT-CHECK-HUNT-TOMO (account 3, gate 7) | claim: huntington-einaudi-reply-2026-10 + tomokiyo-thanks-2026-10
 2026-10-08 23:09 | V-MANTR8 verifier (Opus) | IA release (archive.org 3 requests: 1 404 on a guessed name, metadata 1, djvu 1); for LANE FAMILY (account 2)
 2026-10-08 23:10 | V-MANTR8 verifier (Opus) | huygens take (<=6 requests, heinsius search_in_text); for LANE FAMILY (account 2)
+2026-10-08 23:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 23:10 UTC: spawned 0 (), queued left 0
