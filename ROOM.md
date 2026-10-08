@@ -11018,3 +11018,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 10:25 | BNF-G60D worker | claim: g60d instrument, ciphers/fr3622-nevers-gondi-1594, box ends 11:10 UTC, cap USD 3, for LANE BNF-FOCUS
 2026-10-08 10:25 | BNF-RONDI worker | claim: fr3613-rondinelli-1590 Gomberville ii views 262-273, 387-393, 443-452 as images; start 10:27 UTC, box end 11:07 UTC, cap $2; for LANE BNF-FOCUS
 2026-10-08 10:26 | LS3-R9 solver | done: O9-AK, O9-AL (No. 9) + E76, E77 (No. 1, were guessed No. 9) read with matched controls; O9-AL and E77 are printed (OR I/37 pt 2 p.453, ORN I/11 p.204); 8893/8919/9054 N1-likely with OR pages, not decoded; three 1865 rows not read (book not in hand); key-no9 +Bologna/Bolivia=Heintzelman; requests huntington 8, archive.org 5; last commit 3875e963; for LANE ST-LEDGER-3
+2026-10-08 10:26 | BNF-G60D worker | done for LANE BNF-FOCUS: G-a (b) 10/10, G-b (b) 9/10 both PASS; fr3986 rescore numbers in ITERATE.md; no image calls
