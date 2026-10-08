@@ -1192,6 +1192,7 @@ tartar to take up ocean wayworners not already
 in service unity I am not advised torch 
 number of whist but am to prepare for
 a large number Webster Bender amo amas amat
+variant: whiskey=Whisky:M
 
 ### E144 | Page 141 | 9034 | 4 Aug 1864, copy to Sherman, from City Point (operator F. S. Van Valkenburg; LS5-R1e, row 9034/0; image-read)
 F. S. Van Valkenburg  Washington Aug 4th 1864
@@ -1222,6 +1223,7 @@ know nothing of Saint mentioned in your dispatch
 of Feeble unity They say Central Wiley is
 not in running order beyond Beaver Dam yoke
 Geo K Lect Princess and A. A. G
+variant: brussells=Brussels:M history's=History's:H
 
 ### E146 | Page 245 | 9139 | 12 Dec 1864 2 PM, Capt. Bruch, Louisville, to Brig. Gen. Allen (LS5-R1e, row 9139/1; image-read)
 No1.
@@ -1321,6 +1323,8 @@ plunge U S pledge pebble inch ordnance plank ossifers prolong
 harsh peach spit zebra F fifth pledge pebble inch parrots
 perfume ossifers publish gas spit walrus pandora Howard raining fast
 R OBrien
+plain: ordnance
+split: pebble
 
 ### E161 | Page 228 | 5772 | mssEC 25 (obj 5952, pointer 5772), 13 July 1864 Baltimore, J. W. Sampson to Sheldon, forwarding Lieut. D. L. Braine's Annapolis telegram (FM-R1; row 5772/0; image-read)
 Baltimore July 13 1864
@@ -1351,6 +1355,7 @@ with subsist hence for age at offal pedlar
 Read die to fall low & a moments
 no tis webster Jacks W Turner palate etc
 R OBrien
+variant: weasler=Weaseler:H
 
 ### E164 | Page 120 | 5664 | mssEC 25 (obj 5952, pointer 5664), 10 May 1864 Bermuda Landing, R. O'Brien to Sheldon (FM-R1; row 5664/0; transcription only)
 Bermuda Landing May 10 . 1864
@@ -1360,6 +1365,7 @@ feeble up plug down paddle up plank down penny
 up plunder down perfume up person down poney compare
 with yours Cant translate your sifer repeat it soon
 R OBrien
+variant: poney=Pony:H
 
 ### E165 | Page 264 | 5808 | mssEC 25 (obj 5952, pointer 5808), 14 Nov 1864 Washington, T. T. Eckert to Sheldon (FM-R1; row 5808/2; transcription only)
 Washington Nov. 14 1864

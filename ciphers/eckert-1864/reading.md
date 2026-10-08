@@ -781,9 +781,9 @@ Code-word tokens: H 11.
 
 **E143 | Page 100 | 8992 | 30 June 1864 3 PM, to Maj. S. Van Vliet, New York (LS5-R1e, row 8992/1; image-read)**
 
-{time: 3 PM} for [Major] S Van Vliet [New York] [.] all the [Steam]ers now in service fit to bring whiskey from [New Orleans] and which can possibly be spared for that service should be dispatched as they become available [.] It is not [Necessary] to take up ocean [Steam]ers not already in service [.] I am not advised [Of the] number of [Troops] but am to prepare for a large number  {tail: [signed] [Qr Master Genl U.S.] amo amas amat}
+{time: 3 PM} for [Major] S Van Vliet [New York] [.] all the [Steam]ers now in service fit to bring [Troops] from [New Orleans] and which can possibly be spared for that service should be dispatched as they become available [.] It is not [Necessary] to take up ocean [Steam]ers not already in service [.] I am not advised [Of the] number of [Troops] but am to prepare for a large number  {tail: [signed] [Qr Master Genl U.S.] amo amas amat}
 
-Code-word tokens: H 14.
+Code-word tokens: H 14, M 1.
 
 **E144 | Page 141 | 9034 | 4 Aug 1864, copy to Sherman, from City Point (operator F. S. Van Valkenburg; LS5-R1e, row 9034/0; image-read)**
 
@@ -793,9 +793,9 @@ Code-word tokens: H 34.
 
 **E145 | Page 151 | 9044 | 12 Aug 1864, Beckwith and McCaine to Lt Col Bowers, copy to Sheridan (LS5-R1e, row 9044/1; image-read)**
 
-[Washington] {date: Aug 12} Imogem For Lieut [Colonel] T S. Bowers AAG [City Point] copy to [P. H. Sheriden] [Winchester] [.] wolves just arrived nick [Follow (-ed, -ing)]ing [.] [1] [Brigade] of History's [Corps] was sent to Early last Friday pause [Division] to which it belongs was under marching orders [.] Fitz Hugh [Lee]'s [Cavalry] was [New York] [Orange C.H.] Wednesday night [10] pause [Longstreet] is in Brussells [Valley] and his [Corps] supposed toby with him [.] melds know nothing of [Force] mentioned in your dispatch of [10] [.] They say Central [Road] is not in running order beyond [Cahawba] Dam  {tail: [signed] Geo K Lect [Captain] and A. A. G}
+[Washington] {date: Aug 12} Imogem For Lieut [Colonel] T S. Bowers AAG [City Point] copy to [P. H. Sheriden] [Winchester] [.] wolves just arrived nick [Follow (-ed, -ing)]ing [.] [1] [Brigade] of [Hill]'s [Corps] was sent to Early last Friday pause [Division] to which it belongs was under marching orders [.] Fitz Hugh [Lee]'s [Cavalry] was [New York] [Orange C.H.] Wednesday night [10] pause [Longstreet] is in [Shenandoah] [Valley] and his [Corps] supposed toby with him [.] melds know nothing of [Force] mentioned in your dispatch of [10] [.] They say Central [Road] is not in running order beyond [Cahawba] Dam  {tail: [signed] Geo K Lect [Captain] and A. A. G}
 
-Code-word tokens: H 30.
+Code-word tokens: H 31, M 1.
 
 **E146 | Page 245 | 9139 | 12 Dec 1864 2 PM, Capt. Bruch, Louisville, to Brig. Gen. Allen (LS5-R1e, row 9139/1; image-read)**
 
@@ -847,7 +847,7 @@ Code-word tokens: H 13, C 1.
 
 **E160 | Page 258 | 5802 | mssEC 25 (obj 5952, pointer 5802), 2 Nov 1864 Hd Qrs A. of J., R. O'Brien to Geo. D. Sheldon, Ft Monroe (FM-R1, 8 Oct 2026; row 5802/2; image-read)**
 
-Geo D Sheldon Ft Monroe {time: 2.30 PM} for martin [.] [Battery] in first napoleon [3] ossifers [110] [Men] [.] [Battery] E third napoleon [3] ossifers [100] & [19] [Men] [.] gloryth [New York] Napoleons [4] ossifers [166] [Men] [.] D [1] U S [9] inch [After the] [2] ossifers [122] [Men] [.] F fifth [9] inch parrots [3] ossifers [116] [Men]  {tail: [signed] [Colonel] Howard raining fast R OBrien}
+Geo D Sheldon Ft Monroe {time: 2.30 PM} for martin [.] [Battery] in first napoleon [3] ossifers [110] [Men] [.] [Battery] E third napoleon [3] ossifers [100] & [19] [Men] [.] [17]th [New York] Napoleons [4] ossifers [166] [Men] [.] D [1] U S [6] [3] inch ordnance [2] ossifers [122] [Men] [.] F fifth [6] [3] inch parrots [3] ossifers [116] [Men]  {tail: [signed] [Colonel] Howard raining fast R OBrien}
 
 Code-word tokens: H 43.
 
@@ -865,15 +865,15 @@ Code-word tokens: H 29.
 
 **E163 | Page 279 | 5823 | mssEC 25 (obj 5952, pointer 5823), 9 Dec 1864 Butler's Hd, R. O'Brien to Sheldon (FM-R1; row 5823/1; transcription only)**
 
-Geo D Sheldon Ft Monroe {time: 11 AM} for [Maj Gen B. F. Butler] [Monroe] [.] I think a large sized weasler or [2] ought toby loaded with subsist hence for age at [Ammunition] [,] Read die to fall low & a moments no tis  {tail: [signed] Jacks W Turner [Brigadier General] etc R OBrien}
+Geo D Sheldon Ft Monroe {time: 11 AM} for [Maj Gen B. F. Butler] [Monroe] [.] I think a large sized [Steam]er or [2] ought toby loaded with subsist hence for age at [Ammunition] [,] Read die to fall low & a moments no tis  {tail: [signed] Jacks W Turner [Brigadier General] etc R OBrien}
 
-Code-word tokens: H 9.
+Code-word tokens: H 10.
 
 **E164 | Page 120 | 5664 | mssEC 25 (obj 5952, pointer 5664), 10 May 1864 Bermuda Landing, R. O'Brien to Sheldon (FM-R1; row 5664/0; transcription only)**
 
-Geo D Sheldon my cifer of [10] Columns says down [6] down [10] up [1] down [8] up [2] down [4] up [7] down [3] up [5] down poney compare with yours Cant translate your sifer repeat it soon R OBrien
+Geo D Sheldon my cifer of [10] Columns says down [6] down [10] up [1] down [8] up [2] down [4] up [7] down [3] up [5] down [9] compare with yours Cant translate your sifer repeat it soon R OBrien
 
-Code-word tokens: H 10.
+Code-word tokens: H 11.
 
 **E165 | Page 264 | 5808 | mssEC 25 (obj 5952, pointer 5808), 14 Nov 1864 Washington, T. T. Eckert to Sheldon (FM-R1; row 5808/2; transcription only)**
 
@@ -905,5 +905,5 @@ G. D. Sheldon "F" Beckwith & Caldwell "U. S." in number [1] [Cipher] please make
 
 Code-word tokens: H 21.
 
-Totals over the 129 entries: H 2038, C 22, I 0, M 0.
+Totals over the 129 entries: H 2041, C 22, I 0, M 2.
 <!-- decode.py: derived block ends -->

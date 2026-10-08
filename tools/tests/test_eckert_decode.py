@@ -69,5 +69,48 @@ class TestGuard(unittest.TestCase):
         self.assertIn("[Field]", r)
 
 
+class TestFixFm1Notes(unittest.TestCase):
+    """FIX-FM1 (8 Oct 2026): per-entry "variant:" / "split:" / "plain:" notes and the ordinal ending, from the
+    FV-FM1 audit of E160/E163/E164. Must catch: a variant spelling (poney = Pony = 9, graded as the note says), a count
+    and calibre written side by side ("six 3-inch"), an ordinal ("Glory" + th = 17th). Must NOT: split a run without
+    the note, or read a variant token that carries no note."""
+    K = {"pony": ("9 (numeral)", "H", "numeral"), "pledge": ("6 (numeral)", "H", "numeral"),
+         "pebble": ("3 (numeral)", "H", "numeral"), "glory": ("17 (numeral)", "H", "numeral"),
+         "weasel": ("Steam", "H", "word")}
+
+    def run_entry(self, lines):
+        return decode.decode_entry(decode.entry_text(["hdr"] + lines), self.K)
+
+    def test_variant_numeral(self):
+        r, c = self.run_entry(["down poney compare", "variant: poney=Pony:H"])
+        self.assertIn("down [9] compare", r)
+        self.assertEqual(c["H"], 1)
+
+    def test_variant_grade_override(self):
+        r, c = self.run_entry(["weasler ok", "variant: weasler=Weaseler:M"])
+        self.assertEqual(r, "[Steam]er ok")
+        self.assertEqual((c["M"], c["H"]), (1, 0))
+
+    def test_no_note_no_variant(self):
+        r, c = self.run_entry(["down poney compare"])
+        self.assertIn("poney", r)
+        self.assertEqual(c["H"], 0)
+
+    def test_split_and_default_sum(self):
+        r, _ = self.run_entry(["pledge pebble inch", "split: pebble"])
+        self.assertEqual(r, "[6] [3] inch")
+        r, _ = self.run_entry(["pledge pebble inch"])
+        self.assertEqual(r, "[9] inch")
+
+    def test_ordinal(self):
+        r, c = self.run_entry(["gloryth Amos"])
+        self.assertEqual(r, "[17]th Amos")
+        self.assertEqual(c["H"], 1)
+
+    def test_th_on_non_numeral_untouched(self):
+        r, _ = self.run_entry(["weaselth"])
+        self.assertEqual(r, "weaselth")
+
+
 if __name__ == "__main__":
     unittest.main()

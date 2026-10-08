@@ -98,12 +98,25 @@ def entry_text(lines):
 
     A line "plain: word word" (the orchestrator's note that these tokens are the sender's plain English although
     they are printed in the book, e.g. "person" in "one additional person") is not text: its words are marked
-    with a trailing backslash so that lookup() leaves them alone."""
+    with a trailing backslash so that lookup() leaves them alone.
+
+    Two further per-entry note lines (FIX-FM1, 8 Oct 2026; the transcription itself is never edited):
+    "variant: surface=Key[:G]" reads the token as written as key row Key (a clerk's spelling variant; G overrides the
+    row's grade, e.g. M for a variant spelling; "'s" and the endings s/ed/ing/er after Key still apply);
+    "split: word" ends a numeral run before that token (a count and a calibre written side by side, "six 3-inch")."""
     plain = set()
+    variant = {}
+    split = set()
     body = []
     for l in lines[1:]:
         if l.startswith("plain:"):
             plain.update(w.lower() for w in l[6:].split())
+        elif l.startswith("variant:"):
+            for pair in l[8:].split():
+                sf, tg = pair.split("=", 1)
+                variant[sf.lower()] = tg if ":" in tg else tg + ":"
+        elif l.startswith("split:"):
+            split.update(w.lower() for w in l[6:].split())
         elif l.strip():
             body.append(l)
     text = " ".join(body)
@@ -114,6 +127,17 @@ def entry_text(lines):
     text = re.sub(r"\s+", " ", text).strip()
     if plain:
         text = " ".join(w + "\\" if w.strip(" .,;:'\"()").lower() in plain else w for w in text.split(" "))
+    if variant or split:
+        out = []
+        for w in text.split(" "):
+            c = w.strip(" .,;:'\"()").lower()
+            if c in split:
+                out.append("|")
+            if c in variant:
+                tg, g = variant[c].rsplit(":", 1)
+                w = f"{w}~{tg}~{g}"
+            out.append(w)
+        text = " ".join(out)
     return text
 
 
@@ -137,6 +161,8 @@ def lookup(core, key, possessive=False):
     for end in ("s", "es", "ed", "d", "ing", "ers", "er"):
         if low.endswith(end) and low[: -len(end)] in key:
             return core[: -len(end)], end + flag, key[low[: -len(end)]]
+    if low.endswith("th") and low[:-2] in key and key[low[:-2]][2] == "numeral":
+        return core[:-2], "th" + flag, key[low[:-2]]  # ordinal: Glory + th = 17th (FIX-FM1)
     if low.endswith("ing") and low[:-3] + "e" in key:
         return core[:-3] + "e", "ing" + flag, key[low[:-3] + "e"]
     return core, flag, None
@@ -220,8 +246,19 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None):
     tail = []
     while i < len(words):
         w = words[i]
-        core = w.strip(" .,;:'\"()")
-        stem, flag, row = lookup(core, key, possessive)
+        if w == "|":  # "split:" note: only ends the numeral run before it
+            i += 1
+            continue
+        ovr = None
+        if "~" in w:  # "variant:" note: surface~Key~Grade
+            surface, target, ovr = w.split("~")
+            w, core = surface, target.strip(" .,;:'\"()")
+            stem, flag, row = lookup(core, key, True)
+            if row is not None and ovr:
+                row = (row[0], ovr, row[2])
+        else:
+            core = w.strip(" .,;:'\"()")
+            stem, flag, row = lookup(core, key, possessive)
         if row is not None and row[2] == "word" and guard is not None and not signed:
             prev = None
             if out and not out[-1].startswith("{") and not out[-1].endswith("}"):
@@ -270,7 +307,10 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None):
         if kind == "numeral":
             j, vals = i, []
             while j < len(words):
-                s2, f2, r2 = lookup(words[j].strip(" .,;:'\"()"), key, possessive)
+                if j == i and ovr is not None:  # a "variant:" token: its row is already resolved above
+                    s2, f2, r2 = stem, flag, row
+                else:
+                    s2, f2, r2 = lookup(words[j].strip(" .,;:'\"()"), key, possessive)
                 if r2 and r2[2] == "numeral":
                     vals.append(int(r2[0].split()[0]))
                     if j > i:

@@ -7220,7 +7220,7 @@
         "names_codes": "0",
         "other": "1 M (whiskey = troops, spelling variant)"
       },
-      "completeness": "14 H of 15 code words",
+      "completeness": "14 H of 15 code words (whiskey M; reading.md carries [Troops] M since FIX-FM1)",
       "unresolved_spans": "",
       "phrases": [
         "Huntington mssEC 19 p.100, pointer 8992, E143"
@@ -7231,7 +7231,7 @@
       ],
       "depth_sentence": "At 3 PM on 30 June 1864 the Quartermaster General tells Major Van Vliet at New York to dispatch, as they become available, all steamers in service fit to bring troops from New Orleans, not to take up ocean steamers not already in service, and that he is to prepare for a large number of troops.",
       "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS5-B); image 10 lines (FV-LS5-B); external: Van Vliet's clear telegram, New York 30 June 1864 1 PM, to the Quartermaster General (Huntington mssEC 10 p.308, pointer 10450) lists steamers sailed for New Orleans and asks 'shall any more Steamers be sent'; code clause Weasel/Wayworn = Steam; matched control LS5-R1e",
-      "depth_note": "14 H of 15 code words"
+      "depth_note": "14 H of 15 code words (whiskey M; reading.md carries [Troops] M since FIX-FM1)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
@@ -7262,7 +7262,7 @@
         "names_codes": "3 M (France, Beaver, Brussells = Shenandoah)",
         "other": "0"
       },
-      "completeness": "29 H of 32 code words (History = Hill added, AUD2-LEDGER-2)",
+      "completeness": "29 H of 32 code words (History = Hill added, AUD2-LEDGER-2; reading.md carries [Hill]'s H and Brussells = Shenandoah M since FIX-FM1)",
       "unresolved_spans": "",
       "phrases": [
         "Huntington mssEC 19 p.151, pointer 9044, E145"
@@ -7550,14 +7550,14 @@
       "reading_version": "FM-R1 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM1) section 3",
       "title": "Eckert 1864 (Fort Monroe ledger): Butler's HQ to Fort Monroe, 2 Nov 1864 2.30 PM, officers, men and guns of five batteries (E160)",
       "line": "Read at grade H with Cipher No. 1: on 2 Nov 1864 Butler's headquarters give Fort Monroe the officers, men and guns of each battery on the list of 1 Nov (Battery M, 1st U.S., Napoleons, 3 officers and 110 men; the 17th New York, Napoleons, 4 and 166; Battery D, 1st U.S., six 3-inch ordnance guns, 2 and 122; Battery F, 5th U.S., six 3-inch Parrotts, 3 and 116); not located in the Official Records (ser. I vols. 42-43), Butler's Book (1892), Butler's printed correspondence (vols. III-V), Chronicling America, Internet Archive full text, Google Books or the Huntington's full-text search (searched 8 Oct 2026).",
-      "gap": "N3: as E162; reading fix pending (decoder sums '6 3-inch' to 9; 'ordnance' plain; 'gloryth' = 17th), AUDIT (FV-FM1) section 3",
+      "gap": "N3: as E162; reading corrected 8 Oct 2026 (FIX-FM1: '6 3-inch' as [6] [3] inch, 'ordnance' plain, 'gloryth' = [17]th), decode.py --check exit 0",
       "depth": "D3",
       "depth_pct": 100.0,
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
       },
-      "completeness": "43 H of 43 code-word groups (ordnance plain, gloryth H)",
+      "completeness": "43 H of 43 code-word groups (ordnance plain, gloryth H; reading.md carries [6] [3] inch and [17]th since FIX-FM1)",
       "unresolved_spans": "",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.258, pointer 5802, E160"
@@ -7568,7 +7568,7 @@
       ],
       "depth_sentence": "On 2 Nov 1864 Butler's chief of artillery reports to Fort Monroe that Battery M, 1st U.S. Artillery has Napoleons, 3 officers and 110 men, and the 17th New York Battery Napoleons, 4 officers and 166 men.",
       "depth_check": "code clause as E162 (17 New York in both, by Glory and Glance); external: Battery M 1st U.S. = six light 12s (Napoleons) sent to New York (OR I/43 pt 2 p.559), Butler's call for Napoleons (OR I/42 pt 3 p.489); antecedent request for the strength of each battery in clear on p.258; matched control FM-R1 (No. 2, No. 9 incoherent; shuffled No. 1 incoherent); AUD2-LEDGER-3: also OR I/42 pt 3 p.490 (2 Nov order sending Battery M, 1st U.S. to embark)",
-      "depth_note": "43 H of 43 code-word groups (ordnance plain, gloryth H)"
+      "depth_note": "43 H of 43 code-word groups (ordnance plain, gloryth H; reading.md carries [6] [3] inch and [17]th since FIX-FM1)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
@@ -7599,7 +7599,7 @@
         "names_codes": "0",
         "other": "0"
       },
-      "completeness": "10 H of 10 code-word groups (weasler = steamer, offal = ammunition)",
+      "completeness": "10 H of 10 code-word groups (weasler = steamer, offal = ammunition; reading.md carries [Steam]er since FIX-FM1)",
       "unresolved_spans": "",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.279, pointer 5823, E163"
@@ -7610,7 +7610,7 @@
       ],
       "depth_sentence": "On 9 Dec 1864 Turner tells Butler at Fort Monroe he thinks one or two large steamers should be loaded with subsistence, forage and ammunition, ready to follow at a moment's notice.",
       "depth_check": "code clause: Weasel(er) = steamer reads here and on 25 Fort Monroe pages; Knave = Butler passim; no external check of the content (D3 withheld); AUD2-LEDGER-3: second context for Weasel(er) = steamer (mssEC 18 p9912); D3 still withheld",
-      "depth_note": "10 H of 10 code-word groups (weasler = steamer, offal = ammunition)"
+      "depth_note": "10 H of 10 code-word groups (weasler = steamer, offal = ammunition; reading.md carries [Steam]er since FIX-FM1)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
@@ -7641,7 +7641,7 @@
         "names_codes": "0",
         "other": "0"
       },
-      "completeness": "11 H of 11 code-word groups (poney = Pony)",
+      "completeness": "11 H of 11 code-word groups (poney = Pony; reading.md carries [9] since FIX-FM1)",
       "unresolved_spans": "",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.120, pointer 5664, E164"
@@ -7652,7 +7652,7 @@
       ],
       "depth_sentence": "On 10 May 1864 O'Brien sends Sheldon the column order of his ten-column cipher, which is exactly the ten-column route of the Cipher No. 1 book, because he cannot translate Sheldon's cipher.",
       "depth_check": "external (non-statistical): the route read from the numeral leaf equals, slot for slot with direction, the ten-column route page of the period book (mssEC 41 p.6, key.md section 6) and Tomokiyo's printed transcription of it (chance 1/10! in order); code clause: numeral words read in every context of the numeral page (AUD2-LEDGER-3)",
-      "depth_note": "11 H of 11 code-word groups (poney = Pony)",
+      "depth_note": "11 H of 11 code-word groups (poney = Pony; reading.md carries [9] since FIX-FM1)",
       "text": "known"
     }
   ],

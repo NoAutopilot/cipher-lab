@@ -2163,3 +2163,36 @@ longest first. Clean 1864 rows by guessed book: No. 1 89, No. 2 65, No. 9 26; 9 
 
 **Not found / limits.** The Huntington check found no cipher copy of a mssEC 19 entry (0 mssEC19-dup): the two ledgers hold different telegrams, as RUN6-ECK saw for 21-22 Apr. Rows under 40 words were not sent to the network checks. Whether a row is on the Huntington site as a different transcription of the same leaf (the same volunteer text twice) was not tested.
 Rule 10: nothing here is a novelty statement. Next for a reader: take `clean-ms18.tsv` 1864 rows in order; the unit price of a reader row is the LS5-R1 rate.
+
+## FIX-FM1 (8 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM1, 20:47-20:54 UTC by `date -u`, offline. Applies the first-audit and second-audit reading corrections (AUDIT.md "AUDIT (FV-FM1)" s.3,
+"AUDIT 2 (AUD2-LEDGER-3)" s.3, "AUDIT (FV-LS5-B)" s.4, "AUDIT 2 (AUD2-LEDGER-2)" Corrections) through the decode path; no reading text was hand-edited.
+Mechanism (decode.py, no transcription line altered): per-entry note lines in ciphertext.txt after the entry body -- `variant: surface=Key[:G]` (a clerk's
+spelling variant of a key row, grade G overriding the row's), `split: word` (ends a numeral run before the token), the existing `plain: word`; and one general
+rule in `lookup()`: an ordinal "th" after a numeral row ("Glory"+th = 17th). Offline tests: tools/tests/test_eckert_decode.py `TestFixFm1Notes` (6 tests, OK).
+
+| Entry | Token | Before | After | Grade before -> after | Source |
+|---|---|---|---|---|---|
+| E160 | "pledge pebble inch" (x2) | `[9] inch` | `[6] [3] inch` (note `split: pebble`) | H, H -> H, H (numerals read; the sum was wrong) | FV-FM1 s.3 |
+| E160 | "ordnance" | `[After the]` (counted H) | plain word (note `plain: ordnance`) | H -> not a code word | FV-FM1 s.3 |
+| E160 | "gloryth" | unread | `[17]th` (ordinal rule) | none -> H | FV-FM1 s.3 |
+| E163 | "weasler" | unread | `[Steam]er` (note `variant: weasler=Weaseler:H`) | none -> H | FV-FM1 s.3; AUD2-LEDGER-3 s.3 |
+| E163 | "offal" | already `[Ammunition]` H | unchanged | H -> H | FV-FM1 s.3 |
+| E164 | "poney" | unread | `[9]` (note `variant: poney=Pony:H`) | none -> H | FV-FM1 s.3; AUD2-LEDGER-3 s.3 |
+| E143 | "whiskey" | unread | `[Troops]` (note `variant: whiskey=Whisky:M`) | none -> M | FV-LS5-B s.4 (graded M: variant spelling) |
+| E145 | "Brussells" | unread | `[Shenandoah]` (note `variant: brussells=Brussels:M`) | none -> M | FV-LS5-B s.4 (M: variant spelling) |
+| E145 | "History's" | unread | `[Hill]'s` (note `variant: history's=History's:H`) | none -> H (exact key spelling + possessive) | AUD2-LEDGER-2 Corrections |
+
+Per-entry decoder counts now: E160 H 43 (was 43: -ordnance +gloryth), E163 H 10 (was 9), E164 H 11 (was 10), E143 H 14 M 1, E145 H 31 M 1 (decoder
+counts include punctuation and numeral tokens, so they differ from the audits' code-word counts 29 H of 32). Totals over the 129 entries: H 2041, C 22, I 0, M 2.
+E162's "inch" ("glance amos perfume inch" = 3 inch) and its 17th New York are unchanged. The E162/E160 gun-type discrepancy (3 inch vs Napoleons) stays recorded, not settled.
+
+`python3 ciphers/eckert-1864/decode.py --check` -> `reading.md is current`, exit 0; `decode_no2.py --check` and `decode_no9.py --check` -> current (the shared
+decoder change leaves both readings byte-identical). `tools/depth_check.py` on the touched status.json rows (results 202, 203, 210, 211, 212): passes, headline
+"unique solves (N3+ and D2+): 65 -- D4 5, D3 36, D2 24"; no depth or class changed (depth_pct figures are the audits', not re-derived here).
+
+Propagation: status.json rows 202, 203, 210, 211, 212 (gap and completeness text; the "reading fix pending" cell removed). Second-opinion prompts
+second-opinions/PROMPT-chatgpt-e160/e163/e164/e143/e145.md already carry the corrected words (six 3-inch, 17th, steamer, [9], troops, Hill's, Valley); no prompt
+path changed, so no SECOND-OPINIONS-QUEUE.tsv edit. SO-ECKERT-E103 and SO-ECKERT-E164 are already `withdrawn` (N2) with their reasons. AUDIT.md untouched.
+One-line suggestion: the `variant:` notes are entry-scoped on purpose -- "whiskey" is also plain in E20 and E-lines 505/1063, whose readings are other workers' to decide.
