@@ -8,6 +8,7 @@
 # interlineation; word[?] = the witnesses disagree or the word is doubtful; " = " marks the clerk's syllable splits.
 # A line "plain: ..." is the orchestrator's note (read by decode.py) that those tokens are plain English although
 # the book prints them as code words. Block header: ### En | ledger page | CONTENTdm pointer | date and addressee.
+# E65: withdrawn, re-filed as N2-BO in ciphertext-no2.txt (Cipher No. 2; LS-FIX, 8 Oct 2026).
 
 ### E1 | Page 16 | 8908 | 5 Mar 1864, to 'Press' at Baltimore (operator Geo. W. Baldwin)
 Geo. W. Baldwin (1) Washn Mar 5th 1864
@@ -683,7 +684,7 @@ its Efficiency <del>there</del> is being impared & that
 it ought to be sent to the field
 youth Jew Tall oaks from little acorns grow
 
-### E60 | Page 111 | 9003 | 16 Jul 1864 10.30 AM, to Grant (code word John), signed President U.S. (no operator on the page)
+### E60 | Page 111 | 9003 | 16 Jul 1864 10.30 AM, Lincoln to John Hay at the Astor House (John is Hay's name in clear), signed President U.S. (no operator on the page)
 10 30 am Washn July 16th 1864
 For John Hay Asthore house unity
 Yours received zebra with the safe
@@ -693,6 +694,7 @@ zodiac If there is pedlar or
 is not any thing stephen affair
 I wish to know it without
 unnecessary delay walrus Bologna
+plain: John
 
 ### E36 | Page 166 | 9060 | 29 Aug 1864 8 PM, to McCaine at Harper's Ferry (sent to Beckwith and McCaine; operator not given)
 8 p. m. McCaine Harpers Fy Washn Aug 29th 1864
@@ -724,17 +726,6 @@ apple = is Zodiac Report your supply of Coal at present
 and that Expected with in a fort = night Report daily
 any arrivals of Weasel hers Confidential Youth Meigs Belcher Viola
 plain: Ann
-
-### E65 | Page 66 | 8958 | 6 May 1864, Col Stager at Cleveland O. (operator not given; mostly plain)
-Col Stager  Wash May 6. 1864
-Cleveland O.
-Growl May 6th Viola for Stager ---- The service requires
-that you shld proceed immy to blubber to make arrangements
-for the transmission & rect. of intelligence between that point
-& the Salems on the altar ---- Shark Canby will
-start for there wedlock afternoon You had better join him
-Pls ans Further instructions will be given you on your way
-Costume
 
 ### E63 | Page 144 | 9036 | 6 Aug 1864 11.30 AM, to Grant (code word Japan), at Monocacy Junction (McCaine, No 1)
 McCaine (No 1) Wash D.C. Aug. 6. 1864 11. am

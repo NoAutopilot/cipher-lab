@@ -819,5 +819,11 @@ Navy Yd [Washington] {time: 2 PM} [16] for [Wilmington]'s The [Advance (-ed, -in
 
 Code-word tokens: H 16.
 
-Totals over the 66 entries: H 1726, C 69, I 59, M 2.
+**N2-BO | Page 66 | 8958 | 6 May 1864, Col Stager at Cleveland O. (Cipher No. 2; operator not given; mostly plain; re-filed from E65, LS-FIX)**
+
+Cleveland O. [Maj Gen B. F. Butler] May 6th {time: 12 midnight PM} for Stager ---- The service requires that you shld proceed immy to [Cairo] to make arrangements for the transmission & rect. of intelligence between that point & the [Force]'s on the [Red R] ---- [General] Canby will start for there [Tomorrow] afternoon You had better join him Pls ans Further instructions will be given you on your way [Secretary of War]
+
+Code-word tokens: H 8.
+
+Totals over the 67 entries: H 1734, C 69, I 59, M 2.
 <!-- decode.py: derived block ends -->

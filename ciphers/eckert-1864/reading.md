@@ -479,11 +479,11 @@ Code-word tokens: H 27.
 
 Code-word tokens: H 12.
 
-**E60 | Page 111 | 9003 | 16 Jul 1864 10.30 AM, to Grant (code word John), signed President U.S. (no operator on the page)**
+**E60 | Page 111 | 9003 | 16 Jul 1864 10.30 AM, Lincoln to John Hay at the Astor House (John is Hay's name in clear), signed President U.S. (no operator on the page)**
 
-For [Maj Genl U.S. Grant] Hay Asthore house [.] Yours received [.] with the safe conduct as you propose without waiting for one by mail from me [.] If there is [,] or is not any thing [In the] affair I wish to know it without unnecessary delay  {tail: [signed] [President U.S.]}
+For John Hay Asthore house [.] Yours received [.] with the safe conduct as you propose without waiting for one by mail from me [.] If there is [,] or is not any thing [In the] affair I wish to know it without unnecessary delay  {tail: [signed] [President U.S.]}
 
-Code-word tokens: H 8.
+Code-word tokens: H 7.
 
 **E36 | Page 166 | 9060 | 29 Aug 1864 8 PM, to McCaine at Harper's Ferry (sent to Beckwith and McCaine; operator not given)**
 
@@ -502,12 +502,6 @@ Code-word tokens: H 6.
 For [Quartermaster] Biggs [.] Send ordrs to Spaulding to proceed to Hilt on head and report to [Quartermaster] for ordrs Send Montauk and other two propellers to Annappleis to take [Troops] to Hilt on head [.] Give her plenty of Coal as it is probably scarce at Anappleis [.] Report your supply of Coal at present and that Expected with in a fortnight Report daily any arrivals of [Steam] hers Confidential  {tail: [signed] Meigs [Qr Master Genl U.S.] {time: 12.30}}
 
 Code-word tokens: H 10.
-
-**E65 | Page 66 | 8958 | 6 May 1864, Col Stager at Cleveland O. (operator not given; mostly plain)**
-
-Cleveland O. [Washington] May 6th {time: 12.30} for Stager ---- The service requires that you shld proceed immy to [City Point] to make arrangements for the transmission & rect. of intelligence between that point & the [Force]'s on the altar ---- [Government] Canby will start for there [Track] afternoon You had better join him Pls ans Further instructions will be given you on your way [Jefferson]
-
-Code-word tokens: H 7.
 
 **E63 | Page 144 | 9036 | 6 Aug 1864 11.30 AM, to Grant (code word Japan), at Monocacy Junction (McCaine, No 1)**
 
@@ -563,5 +557,5 @@ The publicnation of Sand hers despatch was an Enormous blunder Twas done by Tyco
 
 Code-word tokens: H 2.
 
-Totals over the 72 entries: H 1174, C 14, I 0, M 0.
+Totals over the 71 entries: H 1166, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->
