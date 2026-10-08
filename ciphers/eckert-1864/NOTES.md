@@ -2412,3 +2412,43 @@ outreach/huntington-einaudi-reply-2026-10.md, each checked against the source he
   regenerate the headers, run decode.py / decode_no2.py --check, and rename the four document_ids (~USD 1).
 
 - **ECK-PAGEFIX done (8 Oct 2026):** the 29 headers and the whole entries-mssEC19.tsv page column now follow the holder titles (sources/mssEC19, no network; 609 rows changed; 13 non-"Page N" titles are covers/fly leaves/spine only). decode.py, decode_no2.py, decode_no9.py --check exit 0. status.json ids renamed E74 p.177, E76 p.217, N2-BY p.232, E103 p.235; E26 p.159 in PRIOR-WORK-LEAK; the huntington-decipherments list is unaffected (none of the four on it).
+
+## FIX-FM3 (8-9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM3, 23:47-23:5x UTC by `date -u` (8 Oct), offline. Carries the corrections of AUDIT "FV-FM3a" s.3, "FV-FM3c" s.3, "FV-MS18" s.3, the FIX-DEC leftovers and "AUD2-LEDGER-4/-5/-6/-7"
+into the readings through per-entry note lines in ciphertext.txt (transcription lines untouched; no key.md row edited; reading.md only by `decode.py --write`). Three new notes, same family as FIX-FM1's
+(decode.py `entry_text`, tests `TestFixFm3Notes`, 7 tests OK, 22 in the file): `plain-at: word#n` (only the n-th occurrence plain), `gloss: surface=Meaning_words:G` (a meaning from a print or period
+source that no key row has; conflicts go to HYPOTHESES.md, not key.md), `join: word` (a numeral run continues across a plain "and": one hundred and three).
+
+| Entry | Token | Before | After (note) | Grade before -> after | Source |
+|---|---|---|---|---|---|
+| E170 | "tulip" | `[Open]` H | as written (`plain: tulip`) | H -> not counted (audit: M / stop-null) | FV-FM3a s.3 |
+| E170 | "perfume publish and mansion" | `[300] and [50]` | `[350]` (`join: mansion`); the print (snippet OCR) has 360, unresolved, M by the audit | H, H -> H, H | FV-FM3a s.3 |
+| E171 | address-line "Washington" | `[Volunteer]` | as written (`plain-at: washington#1`); the tail Washington stays code | H -> not counted | FIX-DEC leftover; FV-FM3a/FM3b |
+| E171 | "pony harrow pea hem" | `[29] pea hem` | `[9] [20] pea hem` (`split: harrow`) = 9.20 P.M. | H -> H | AUD2-LEDGER-5 "Decoder slips" |
+| E171 | "plug publish and pebble" | `[100] and [3]` | `[103]` (`join: pebble`) | H -> H | AUD2-LEDGER-5 "Decoder slips" |
+| E177 | header "webster" | read as the signature word, body inside `{tail}` | plain (`plain-at: webster#1`); body outside `{tail}`, tail starts at the final "Webster" = [signed] | H -> not counted | FIX-DEC leftover; FV-FM3a s.3 |
+| E187 | "Wranglam" | as written | `[Telegram]` (`gloss: wranglam=Telegram:M`; Wrangle + am) | none -> M | FV-FM3c s.3 |
+| E200 | "Binder", "Frances" | `[New York]'s` header word, signature as written | `[Qr Master Genl U.S.]` and `{time: 12}` (`variant: binder=Bender:I frances=Francis:I`) | none, H -> I, I | FV-MS18 s.3 |
+| E202 | "Hero" | `[Johnston]` H | `[Brig. Gen. R. W. Johnson]` (`gloss: hero=...:C`); conflict logged in HYPOTHESES.md | H -> C | FV-MS18 s.3 |
+| E206 | "orphan" | as written | `[Maj. Gen. Franz Sigel]` (`gloss: orphan=...:C`); no key row, HYPOTHESES.md | none -> C | FV-MS18 s.3 |
+| E207 | "weaslers" | as written | `[Steam]ers` (`variant: weaslers=Weaselers:I`) | none -> I | FV-MS18 s.3 |
+| E209 | "weasler" | as written | `[Steam]er` (`variant: weasler=Weaseler:I`) | none -> I | FV-MS18 s.3 |
+| E167 | signer "Wm breed ford" | as written | unchanged; a `note:` line records Wm. Bradford (plain, I), the holder's "breeds" and operator John Horner; header now names Bradford as sender | M -> I (by the audit; not a decoder count) | AUD2-LEDGER-4 |
+
+Already in the reading before this job, checked and left: E173 Dodge/ordnance/John plain and E174 "begs" (FIX-DEC); E185 William/Hemp plain, Polkaer = Command+er, wileys = Roads; E189 Wilsons/Wharf and E190 Wharf plain;
+E191 Wallace/William plain (all FIX-DEC; the FV-FM3c grade counts 13, 5+1M, 17, 21, 12 are the audits' hand counts of code groups, the decoder counts differ by the plain names it still lists as written).
+No decoder change is possible, so recorded here only: E172 signer "see L Mack Alpine" = C. L. McAlpine (plain) and "I urn", "chairs", "a plation" M; E174 and E177 identities (Biggs, Dodge, Webster) as above.
+AUD2-LEDGER-5/-6/-7 name no reading correction beyond E171's two slips (above) and E175/E176 tulip/sutton M (no per-token grade for a word outside the key; as in FIX-DEC); -4's only one is E167. E190's print citation
+(OR I/42 pt 3 p.1006, word for word, N1) is in AUDIT FV-FM3c s.2 and in the FM-R2b section's verifier line.
+
+Decoder counts per entry now: E170 H 24 (was 25), E171 H 31 (32), E177 H 20 (21), E187 H 5 M 1, E200 H 11 I 2 (decoder H counts the header word differently from the audit's 10 H 2 I), E202 H 18 C 1, E206 H 12 C 1, E207 H 18 I 1, E209 H 13 I 1.
+Totals over the 159 entries: H 2567, C 23, I 4, M 3 (was H 2572, C 21, I 0, M 2).
+
+`python3 ciphers/eckert-1864/decode.py --write` then `--check` -> `reading.md is current`, exit 0; `decode_no2.py --check` -> `reading-no2.md is current`; `decode_no9.py --check` -> `reading-no9.md is current` (the shared
+decoder change leaves both byte-identical). `python3 -m unittest tools.tests.test_eckert_decode` -> 22 tests OK.
+
+Propagation (rule 10): status.json result rows already carry the corrected words (checked E167, E172, E173, E177, E171, E185, E191); the one stale cell, E177's gap text ("decoder puts the body in {tail}"), is corrected.
+The second-opinion prompts (PROMPT-chatgpt-e167/e171/e172/e173/e177/e185/e191.md) already carry Bradford, 9.20 and 103, McAlpine, Kress/Dodge, Dodge/Webster, Commander, Wallace. No SO row exists for E170, E174, E187, E189,
+E190 or E200-E209 (N1/N2), so none to withdraw; E178's is already withdrawn. `tools/depth_check.py` -> passes, "unique solves (N3+ and D2+): 78 -- D4 5, D3 42, D2 31"; no class or depth changed.
+Not done: E108 and E168 "Orphan" (other letters, other directions; see HYPOTHESES.md); E170's 350/360 numeral stays M and unresolved; E171's tail "plunge wine and perfume" figure left as decoded.

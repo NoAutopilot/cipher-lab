@@ -1396,7 +1396,7 @@ to growl and wick to you at that
 place zodiac very Respect fully webster lonesome &c.
 Geo. D. Sheldon
 
-### E167 | Page 274 | 5818 | mssEC 25 (obj 5952, pointer 5818), 6 Dec 1864 New York, John Horner to Sheldon (FM-R1; row 5818/0; transcription only)
+### E167 | Page 274 | 5818 | mssEC 25 (obj 5952, pointer 5818), 6 Dec 1864 New York, Wm. Bradford (sent by the New York operator John Horner) to Sheldon (FM-R1; row 5818/0; transcription only)
 New York Dec 6th 1864
 Geo D Sheldon Ft. Monroe
 forward following to Knox Comdg oyster of
@@ -1414,6 +1414,7 @@ particulars by letter yours Wm breed ford
 address lamp postpone broad Wesport raining here
 John Horner
 plain: john
+note: FIX-FM3 (AUD2-LEDGER-4): signer "Wm breed ford" = Wm. Bradford, master of Butler's dispatch boat Greyhound, plain, graded I (read from context; Butler Corr. V p.367); the holder's public transcription reads "breeds", this transcription keeps FM-R1's "breed" unrepaired; John Horner is the transmitting operator (Plum II p.315). Wesport raining here stays M.
 
 ### E168 | Page 40 | 5584 | mssEC 25 (obj 5952, pointer 5584), 17 Mar 1864 Washington, H. W. Halleck (signed) to Sheldon, text written forward then in reverse word order (FM-R1; row 5584/1; image-read)
 Washington Mar 17 1864
@@ -1464,6 +1465,9 @@ came back pekin her spit have been transferred and
 will leave on boat with Knaves spartans in plug
 hour unity I go to Banditti on Weaseler Babcock
 Geo D Sheldon
+plain: tulip
+join: mansion
+note: FIX-FM3: tulip plain (M; AUDIT FV-FM3a s.3: print has "without fail. One steamer", tulip = stop/null or [?]); Babcock is the signature (plain); perfume publish and mansion = 350 by key.md, print (snippet OCR) 360, unresolved, M.
 
 ### E171 | Page 235 | 5779 | mssEC 25 (obj 5952, pointer 5779), 20 Aug 1864 Ft Monroe, Sheldon to Maj. Eckert, forwarding Col. W. Heine's arrival report (FM-R2a; row 5779/1; image-read)
 Ft Monroe Aug 20 / 64
@@ -1481,6 +1485,10 @@ by lester youth W Heine paradise plunge wine
 and perfume frog washington pekin after none arriving
 Geo. D. Sheldon
 plain: virgin
+plain-at: washington#1
+split: harrow
+join: pebble
+note: FIX-FM3: address-line Washington plain, tail Washington code (AUD FV-FM3a/FM3b); pony harrow = 9.20 (hour and minute, AUD2-LEDGER-5); plug publish and pebble = 103 (the "and" joins one hundred and three).
 
 ### E172 | Page 243 | 5787 | mssEC 25 (obj 5952, pointer 5787), 6 Oct 1864 8 P.M. Ft Monroe, Sheldon to Maj. Eckert, for E. L. Wentz, forwarding a Gen. Ingalls message on a railroad extension; continues on page 244 (FM-R2a; row 5787/2; page 243 image-read, the continuation from the transcription)
 Ft Monroe 8 P. M. Oct. 6 / 64
@@ -1496,6 +1504,7 @@ no chairs pause I can't commence it until
 we get through sending ties to Banjo unless
 you order differently yoke see L Mack Alpine
 Geo. D. Sheldon
+note: FIX-FM3: signer "see L Mack Alpine" = C. L. McAlpine (plain, phonetic); "I urn" probably "iron", "chairs" plain (M), "a plation" M (FV-FM3a s.3).
 
 ### E173 | Page 296 | 5840 | mssEC 25 (obj 5952, pointer 5840), 26 Dec 1864 Ft Monroe, Sheldon to R. O'Brien, Hd. Qrs. A. J., for Gen. Turner (FM-R2a; row 5840/0; image-read)
 Ft Monroe Dec 26 - 1864
@@ -1565,6 +1574,8 @@ Windsor weaselers stop get plank good oceanic weaselers
 and have them ready when flight arrives at
 animal Webster paradise doge many weaselers form flights
 R OBrien
+plain-at: webster#1
+note: FIX-FM3: header Webster (#1) is the addressee Col. Webster, plain; the final "Webster paradise doge" = [signed] Colonel Dodge (FV-FM3a s.3). flight x2 and "many weaselers form flights" M.
 
 ### E178 | Page 294 | 5838 | mssEC 25 (obj 5952, pointer 5838), 20 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, six steamers ordered out in bad weather (FM-R2a; row 5838/2; image-read)
 Ft Monroe Dec 20 - 1864
@@ -1603,6 +1614,7 @@ ton Head Zebra Coal & water for
 voyage out & back full loaded Zodiac
 Utophia Confidential Utophia report progress Yoke Binder
 No 1 F
+variant: binder=Bender:I frances=Francis:I
 
 ### E201 | Page 159 | 9819 | 13 Aug 1864 12.30 PM, McCaine, to Maj. Gen. Sheridan (MS18-R1, mssEC 18 obj 10074 row 9819/2)
 McCaine No 1  Wash D. C. Aug 13. 1864
@@ -1622,6 +1634,7 @@ Hero be relieved and the whole matter of remounts be
 left in charge of Taunton C unity with Plank Officers
 charged with the same duty there is necessarily conflict of
 orders and requisitions yoke Ivory of conner there is so
+gloss: hero=Brig._Gen._R._W._Johnson:C
 
 ### E203 | Page 109 | 9769 | 29 Jun 1864 3 PM, McCaine, to Maj. Gen. Hunter (MS18-R1, mssEC 18 obj 10074 row 9769/0)
 RR McCaine Loup Creek Va  Washn June 29th
@@ -1670,6 +1683,7 @@ to the m - o - n - o - c
 a - c  y. with their s - t
 a t i o n s . walrus
 J C Kelton paradise a a G
+gloss: orphan=Maj._Gen._Franz_Sigel:C
 
 ### E207 | Page 263 | 9923 | 30 Dec 1864 9 PM, Horner, Qr Master Genl (Meigs's word) to Gen. Van Vliet, New York (MS18-R1, mssEC 18 obj 10074 row 9923/3)
 Horner N. Y.  Wash. Dec. 30. 1864
@@ -1684,6 +1698,7 @@ cret as possible ---- If you
 can provide a larger whig to be
 at animal by Monday ---- Ad
 vise me immedy Important Webster belcher
+variant: weaslers=Weaselers:I
 
 ### E208 | Page 43 | 9703 | 12 Apr 1864, Geo. H. Smith, St Louis, to Maj. Gen. Rosecrans, signed Grant's word (MS18-R1, mssEC 18 obj 10074 row 9703/0)
 Geo H Smith St Louis Mo  Washington April 12th 1864
@@ -1707,6 +1722,7 @@ more than plug white the names &
 cap ac ity for further orders ----
 Keep this se - cret Important walrus bender
 No 1.  9 PM
+variant: weasler=Weaseler:I
 
 ### E185 | Page 280 | 5824 | mssEC 25 (obj 5952, pointer 5824), 10 Dec 1864 Ft Monroe, Geo. D. Sheldon to R. O'Brien (Hd Qrs A.J.) and S. H. Beckwith (City Point): two telegrams on one page, forwarding D. D. Porter's order to Commodore Parker (Onondaga) and a second to a ship's commander about the Saugus (FM-R2b; row 5824/2; image-read at 2400 px)
 R. O'Brien H'd. Qrs. A. J.
@@ -1744,6 +1760,7 @@ by or addressed to Schoon maker hasbin
 given to taunton Vanren seller who has
 wreathed the same to you walrus Sheldon
 Geo. D. Sheldon
+gloss: wranglam=Telegram:M
 
 ### E188 | Page 40 | 5584 | mssEC 25 (obj 5952, pointer 5584), 12 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert, Wistar's Middlesex-Mathews expedition (FM-R2b; row 5584/0; transcription only)
 Maj Eckert Di

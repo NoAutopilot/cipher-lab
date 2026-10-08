@@ -7897,7 +7897,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): O'Brien (Hd Qrs A. of J.) for Col. Dodge to Fort Monroe, 8 Dec 1864: steamers Albany, United States and Dupont (E177)",
       "line": "Read at grade H with Cipher No. 1: on 8 Dec 1864 O'Brien, for Colonel Dodge, tells Fort Monroe (for Colonel Webster) that the Albany and United States are coming with horses to be transferred to other steamers, to hold the Dupont, and to ready two ocean steamers; not located in the Official Records ser. I vol. 42 (searched 8 Oct 2026).",
-      "gap": "N3: Grant Papers vol. 13 not reachable on IA; press, Google Books (429) unread; decoder puts the body in {tail} (header 'webster' read as signature); second audit AUD2-LEDGER-5 (8 Oct 2026): N3 D2 held; Grant Papers vol. 13 unreachable by four routes (IA, Google Books 429, MSU PDF 403, HTRC EF 500)",
+      "gap": "N3: Grant Papers vol. 13 not reachable on IA; press, Google Books (429) unread; header 'webster' marked plain by a positional note (FIX-FM3, 9 Oct 2026), the body now reads outside {tail}; second audit AUD2-LEDGER-5 (8 Oct 2026): N3 D2 held; Grant Papers vol. 13 unreachable by four routes (IA, Google Books 429, MSU PDF 403, HTRC EF 500)",
       "depth": "D2",
       "completeness": "about 20 H of code-word groups; 'flight' x2 and the filler 'many weaselers form flights' M; Webster (addressee) and Dodge (signer) plain",
       "phrases": [

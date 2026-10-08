@@ -112,5 +112,52 @@ class TestFixFm1Notes(unittest.TestCase):
         self.assertEqual(r, "weaselth")
 
 
+
+class TestFixFm3Notes(unittest.TestCase):
+    """FIX-FM3 (9 Oct 2026): "plain-at:", "gloss:" and "join:" notes from the FV-FM3a/FM3c/MS18 and AUD2-LEDGER audits.
+    Must catch: the n-th occurrence of a word plain while another stays a code word (E171 Washington, E177 Webster);
+    a printed-source meaning no key row has (E202 Hero = Johnson, E206 Orphan = Sigel) graded as the note says;
+    "one hundred and three" joined across a plain "and" (E171). Must NOT: touch a word with no note, drop an "and"
+    that is not before a joined numeral, or read a gloss token with no note."""
+    K = {"washington": ("Volunteer", "H", "word"), "plug": ("1 (numeral)", "H", "numeral"),
+         "publish": ("100 (numeral)", "H", "numeral"), "pebble": ("3 (numeral)", "H", "numeral"),
+         "pony": ("9 (numeral)", "H", "numeral")}
+
+    def run_entry(self, lines):
+        return decode.decode_entry(decode.entry_text(["hdr"] + lines), self.K)
+
+    def test_plain_at_first_only(self):
+        r, c = self.run_entry(["to Washington then Washington end", "plain-at: washington#1"])
+        self.assertEqual(r, "to Washington then [Volunteer] end")
+        self.assertEqual(c["H"], 1)
+
+    def test_plain_at_absent_means_both_read(self):
+        r, c = self.run_entry(["to Washington then Washington end"])
+        self.assertEqual(r.count("[Volunteer]"), 2)
+
+    def test_gloss_grade_and_meaning(self):
+        r, c = self.run_entry(["that Hero be relieved", "gloss: hero=R._W._Johnson:C"])
+        self.assertEqual(r, "that [R. W. Johnson] be relieved")
+        self.assertEqual((c["C"], c["H"]), (1, 0))
+
+    def test_gloss_needs_note(self):
+        r, c = self.run_entry(["that Hero be relieved"])
+        self.assertEqual(r, "that Hero be relieved")
+
+    def test_join_across_and(self):
+        r, c = self.run_entry(["the plug publish and pebble men", "join: pebble"])
+        self.assertEqual(r, "the [103] men")
+        self.assertEqual(c["H"], 3)
+        r, _ = self.run_entry(["the plug publish and pebble men"])
+        self.assertEqual(r, "the [100] and [3] men")
+
+    def test_join_leaves_other_and(self):
+        r, _ = self.run_entry(["bread and butter plug", "join: pebble"])
+        self.assertEqual(r, "bread and butter [1]")
+
+    def test_split_after_join_independent(self):
+        r, _ = self.run_entry(["pony publish pebble", "split: publish"])
+        self.assertEqual(r, "[9] [103]")
+
 if __name__ == "__main__":
     unittest.main()

@@ -103,10 +103,19 @@ def entry_text(lines):
     Two further per-entry note lines (FIX-FM1, 8 Oct 2026; the transcription itself is never edited):
     "variant: surface=Key[:G]" reads the token as written as key row Key (a clerk's spelling variant; G overrides the
     row's grade, e.g. M for a variant spelling; "'s" and the endings s/ed/ing/er after Key still apply);
-    "split: word" ends a numeral run before that token (a count and a calibre written side by side, "six 3-inch")."""
+    "split: word" ends a numeral run before that token (a count and a calibre written side by side, "six 3-inch").
+
+    Three more (FIX-FM3, 8-9 Oct 2026): "plain-at: word#n" marks only the n-th occurrence (1-based, in reading order)
+    of that word plain (the same word is a code word elsewhere in the entry); "gloss: surface=Meaning_words[:G]"
+    reads a token no key row supplies (a meaning from a printed or period source; underscores are spaces; G defaults
+    to M), rendered "[Meaning]" and graded G; "join: word" lets the numeral run at that token continue across a
+    plain "and" just before it (one hundred and three = 103), the "and" being dropped from the reading."""
     plain = set()
     variant = {}
     split = set()
+    plain_at = {}
+    gloss = {}
+    join = set()
     body = []
     for l in lines[1:]:
         if l.startswith("plain:"):
@@ -117,6 +126,17 @@ def entry_text(lines):
                 variant[sf.lower()] = tg if ":" in tg else tg + ":"
         elif l.startswith("split:"):
             split.update(w.lower() for w in l[6:].split())
+        elif l.startswith("plain-at:"):
+            for t in l[9:].split():
+                wd, n = t.rsplit("#", 1)
+                plain_at.setdefault(wd.lower(), set()).add(int(n))
+        elif l.startswith("gloss:"):
+            for pair in l[6:].split():
+                sf, tg = pair.split("=", 1)
+                m, g = tg.rsplit(":", 1) if ":" in tg else (tg, "M")
+                gloss[sf.lower()] = (m, g)
+        elif l.startswith("join:"):
+            join.update(w.lower() for w in l[5:].split())
         elif l.strip():
             body.append(l)
     text = " ".join(body)
@@ -125,15 +145,28 @@ def entry_text(lines):
     text = re.sub(r"\s+=\s+", "", text)  # "Lock = wood" -> "Lockwood"
     text = re.sub(r"\s+-\s+", "", text)  # "dis - missed" -> "dismissed"
     text = re.sub(r"\s+", " ", text).strip()
+    if plain_at or join:
+        seen, out = {}, []
+        for w in text.split(" "):
+            c = w.strip(" .,;:'\"()").lower()
+            seen[c] = seen.get(c, 0) + 1
+            if c in join and out and out[-1].strip(" .,;:'\"()").lower() == "and":
+                out.pop()
+            if seen[c] in plain_at.get(c, ()):
+                w += "\\"
+            out.append(w)
+        text = " ".join(out)
     if plain:
         text = " ".join(w + "\\" if w.strip(" .,;:'\"()").lower() in plain else w for w in text.split(" "))
-    if variant or split:
+    if variant or split or gloss:
         out = []
         for w in text.split(" "):
             c = w.strip(" .,;:'\"()").lower()
             if c in split:
                 out.append("|")
-            if c in variant:
+            if c in gloss:
+                w = f"{w}~!{gloss[c][0]}~{gloss[c][1]}"
+            elif c in variant:
                 tg, g = variant[c].rsplit(":", 1)
                 w = f"{w}~{tg}~{g}"
             out.append(w)
@@ -252,10 +285,14 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None):
         ovr = None
         if "~" in w:  # "variant:" note: surface~Key~Grade
             surface, target, ovr = w.split("~")
-            w, core = surface, target.strip(" .,;:'\"()")
-            stem, flag, row = lookup(core, key, True)
-            if row is not None and ovr:
-                row = (row[0], ovr, row[2])
+            if target.startswith("!"):  # "gloss:" note: a meaning no key row supplies
+                w = core = surface
+                stem, flag, row = core.strip(" .,;:'\"()"), "", (target[1:].replace("_", " "), ovr, "word")
+            else:
+                w, core = surface, target.strip(" .,;:'\"()")
+                stem, flag, row = lookup(core, key, True)
+                if row is not None and ovr:
+                    row = (row[0], ovr, row[2])
         else:
             core = w.strip(" .,;:'\"()")
             stem, flag, row = lookup(core, key, possessive)
