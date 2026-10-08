@@ -1100,3 +1100,50 @@ plus `431unit` and `433unit` fetched on a wrong guess: `431unit` is I/47 pt 2, `
 (Books API, key and country=US, 200) after 3 malformed URLs (no request sent). No subagents. Report what was found and where it was not found;
 novelty is a verifier's (rule 10): batch flagged for the verifier (LS-V2c). Five of seven entries (E30, E31, E32, E34, E35) are located in OR I/43 pt 1
 by phrase; the filter's `or_cov` had not flagged them.
+
+## LS-R6 (8 Oct 2026, account 1, for LANE ST-LEDGER-2)
+
+Step 2 (script, `ls_r6_no1_1865.py`, output `ls_r6_no1_1865.out`): share of non-function tokens of an entry found in key.md's code-word
+column, volunteer text, same tokenisation for both groups. 1865 priority-1 rows with words >= 40: n=108, median 0.276, p10 0.143
+(of which cipher_guess=1: n=95, median 0.269, p10 0.143). Control, the read 1864 entries E21-E54 (those with a row in the tsv): n=27,
+median 0.353, p10 0.257. Difference -0.077. Verdict: **No. 1 reads 1865 rows** (within the 0.1 line; the p10 is 0.11 lower, so some 1865
+rows will fail). No 1865 entry was read in this job.
+
+Step 1: ten rows of `entries-mssEC19.tsv`, read from the 2400 px IIIF image against the volunteer text, strip crops by `tools/iiif_lines.py`.
+Nine of the ten were guessed Cipher No. 2 or 9 and eight of those are; 8958/66/0 (guessed 2) is Cipher No. 1 vocabulary, mostly plain, so it is E65.
+8907/15/0 holds two telegrams (1 and 4 March), O9-AI and O9-AJ. `decode_no2.py`, `decode_no9.py`, `decode.py` `--write` then `--check` exit 0.
+
+| ID | date | from / to (decoded plain) | H | C | I | M | found in print / not located in |
+|---|---|---|---|---|---|---|---|
+| N2-BG | 20 May 1864 10 PM | Meigs (QMG) to Ingalls: fleet to the Rappahannock for the wounded at Fredericksburg, navy convoy, cavalry on the bluffs Port Royal-Fredericksburg, two steamers for 70 wounded, 3000 bedsteads sent | 48 | 0 | 1 | 1 | not located: OR I/36 pts 2-3 (`warofrebellion362unit`, `363unit`) grep "covered barges", "bed steads", "lighter vessels", "Tappahannock or as near": 0; Google Books (1 query): no hit |
+| N2-BH | 26 Oct 1864 5 PM | Stanton to Sheridan: the 18th Connecticut to New Haven 2 Nov, the 2nd Eastern Shore Maryland to Baltimore 4 Nov, quartermaster to furnish transportation | 29 | 2 | 1 | 2 | in print: OR I/43 pt 2 (`warofrebellion432unit`) p.468 (OCR running head), Townsend to Sheridan, 26 Oct 1864, "desires you to order the Eighteenth Connecticut Volunteers to be at New Haven the 2d of November ...", word for word but the regiments to "be replaced at Martinsburg by others ordered by you from elsewhere" |
+| N2-BI | 24 July 1864 | Meigs to the quartermaster at (Pickford/Bickford on the page): about 1000 cavalry horses on hand, deliveries checked by want of money, 3962 issued since 1 July | 30 | 0 | 1 | 1 | not located: OR I/37 pt 2, I/39 pt 2 (`warofrebellion372unit`, `392unit`) grep "Depreciation of vouchers", "short supply of money", "checked deliveries": 0 |
+| N2-BJ | 4 June 1864 10 PM | Stanton? (signed Secretary of War) to Dana: Lt. Col. Wade, son of the Senator, ex-captain of cavalry, wants a place on Sheridan's staff, Meade knows him | 22 | 0 | 1 | 0 | not located: OR I/36 pts 2-3 grep "pluck and gallantry", "Sheridan's staff": 0; Google Books: no hit |
+| N2-BK | 12 Dec 1864 | Meigs to Sheridan: the Secretary requested to revoke an assignment; is a chief quartermaster to your army needed, who is most capable and worthy | 8 | 2 | 1 | 1 | not located: OR I/43 pt 2 grep "most capable and most worthy", "chief quartermaster to your army": 0; Google Books: no relevant hit (a Sheridan acting-chief-quartermaster snippet of another year/author) |
+| N2-BL | 8 Apr 1864 2.30 PM | Meigs to Holabird, Chief QM Dept of the Gulf, New Orleans: send a vessel loaded with forage to Pensacola to make sure of a supply by 1 May, one also sent from New York | 17 | 0 | 0 | 0 | not located: OR I/34 pt 3 (`warofrebellion343unit`) grep "make sure of a supply": 0 (generic "loaded with forage" hits in four volumes, none of this telegram); Google Books: no hit |
+| N2-BM | 27 July 1864 2 PM | Meigs to a quartermaster ("Palestine"): do you need more mules, about 500 shipped, rest held until I hear, shipments of horses stopped | 10 | 0 | 0 | 1 | not located: OR I/37 pt 2, I/39 pt 2 grep "obliged to stop shipments", "do you need more mules", "under changed circumstances": 0; Google Books: no hit |
+| E65 | 6 May 1864 | (sender not decoded; ledger signature Jefferson?) to Col. Stager at Cleveland: proceed at once to City Point for the transmission of intelligence, Canby will start tomorrow, join him | 7 | 0 | 0 | 3 | not located: OR I/36 pt 2 (`362unit`), I/37 pt 1 (`371unit`) grep "transmission and receipt of intelligence", "you had better join him": 0; Google Books: no hit |
+| O9-AH | 20 Apr 1864 | Meigs? to Capt. G. D. Wise at New York: charter the transports for the expedition with Van Vliet, reach Fort Monroe by the 24th, coaled by the 25th; Butler to move 30,000 men, 2000 horses, 10 batteries, 100 wagons | 14 | 0 | 0 | 0 | not located: OR I/33 (`warofrebellion33unit`) grep "chartered a number of vessels", "fully coaled by the twenty fifth", "thirty thousand men", "fresh for their morning": 0 (Wise/Quartermaster hits are other items); Google Books: no hit |
+| O9-AI | 1 Mar 1864 2.30 PM | to Brig. Gen. Wright, San Francisco, for D. W. Cheeseman, Asst Treasurer, Camden: make no further shipments of gold to London | 3 | 0 | 0 | 2 | not located: Treasury traffic, no Treasury edition read; Google Books ("Make no further shipments of gold to London" Cheeseman): no relevant hit |
+| O9-AJ | 4 Mar 1864 noon | same pair: you were directed on the 1st to ship no more coin; if not too late detain that referred to in your telegram of yesterday; report immediately | 3 | 0 | 0 | 2 | not located: same as O9-AI |
+
+Grades: decoder counts H 191, C 4, I 6 over the eleven blocks (N2-BG..BM, E65, O9-AH..AJ); M by hand 13. Every code word in the ten rows is in a key; no
+entry fell under rule C's 80% line. M items: N2-BG "crowded" read by the decoder as `[Lieut Gen Grant]ed` (a plain word, the ledger spells it out); N2-BH
+"desires" read `[Lookout Valley]'s` and "Haven" read `[Shelbyville]` where the print has "desires" and "New Haven" (both plain, C from OR I/43 pt 2, so the key
+rows for those two words are wrong when the word is plain); "Ell swear" = elsewhere and "ack knoll edge reseat" = acknowledge receipt are the clerk's syllable splits;
+N2-BI the addressee reads "Pickford" on the image, "Bickford" in the volunteer text, and the time word Fanny = 11 AM against the header 10 am; E65 "Wedlock" read `Track`,
+"Salems"/"altar" and "Shark" read `Government` doubtful; O9-AI/AJ the time word Deborah = 3 AM against "noon" in the header of AJ, the date line "Ida" read `[Abingdon]`,
+and "Camden" read `[Maine]` where it is the plain place of the Assistant Treasurer. Image vs volunteer text: no word differed on the strips read, apart from
+N2-BI's addressee, and "Weasel/Wasel", "spoud/spond" (N2-BH, N2-BK) where the image is not clear and the volunteer text was kept. N2-BG's last five lines
+(p.75, pointer 8967) and the closing lines of N2-BM were read from the volunteer text with the first and last words checked on the strip.
+
+Crop commands (S = session scratch; images `hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`, one fetch each): `python3 tools/iiif_lines.py
+--image $S/img/p<pointer>.jpg --out $S/crops/<dir> --prefix p<pointer> --region <x,y,w,h> [--centres <list>] --lines-per-crop <n> --max-width 2400` with 8966 `100,1560,2300,1180`
+centres 90,180,270,365,460,550,645,740,835,930,1030,1120, 3; 8967 `100,150,2300,700` auto, 4; 9104 `100,1330,2300,950` 50+85k, 4; 9011 `100,1600,2300,950`, 4; 8979 `100,240,2300,950`, 4;
+9139 `100,1580,2300,900`, 4; 8925 `100,1250,2300,1000`, 4; 9019 `100,250,2300,800` auto, 4; 8958 `100,200,2300,1050` auto, 4; 8937 `100,230,2300,2480` centres 193+93.6k (k=0..23), 6;
+8907 `100,230,2300,1700` auto, 5. Crops read by the worker, no subagent.
+
+Requests: hdl.huntington.org 11 (IIIF images, 200; 8966 and 9104 also thumbnails from the same file); archive.org 8 (`_djvu.txt` of `warofrebellion33unit`, `343unit`,
+`362unit`, `363unit`, `371unit`, `372unit`, `392unit`, `432unit`) plus 1 be-api fts test; www.googleapis.com 8 (Books API, key, country=US). Report what was
+found and where it was not found; novelty is a verifier's (rule 10): batch flagged for a first verifier (LS-V6). Process note: `tools/room.py "<role>" "<text>" --push <paths>`
+logs the ROOM line and pushes only ROOM.md; the files were pushed by `git add`, `git commit`, `git pull --rebase`, `git push origin HEAD:main` (first three commits b195952b, 6cdb82bd, c356c084).

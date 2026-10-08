@@ -31,7 +31,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8906	14	0			war = ned signed Aqui quote	32	1	9	0	clear	warofrebellion33unit@leaf0(cov14)	14		3
 8906	14	1	A. H. Caldwell (2)  Washn Feb 29th 1864 3 P. M.	A. H. Caldwell (2)		34	11	15	3	2	warofrebellion33unit@leaf0(cov7)	7	N2-O	3
 8906	14	2	S. H Beckwith (2)  Washn Feby 29th 1864 3.30 P. M	S. H Beckwith (2)	possible of his suppers Empress	30	8	14	4	2	none	5	N2-AG	2
-8907	15	0	Br Gen Geo Wright San Francisco  Washn Mar 1st 1864 230 PM	Br Gen Geo Wright San Francisco		85	10	23	6	9	none	4		1
+8907	15	0	Br Gen Geo Wright San Francisco  Washn Mar 1st 1864 230 PM	Br Gen Geo Wright San Francisco		85	10	23	6	9	none	4	LS-R6 O9-AI O9-AJ	1
 8907	15	1	Caldwell "1"  Wash. Mar. 4. 1864	Caldwell "1"	northern neck Sig Journal	37	7	12	1	1	none	3		1
 8908	16	0	Geo. W. Baldwin (1)  Washn Mar 5th 1864	Geo. W. Baldwin (1)		36	11	14	5	1	warofrebellion33unit@leaf0(cov10)	10	E1	3
 8908	16	1	Geo W. Baldwin (1)  Washn Mar 5th 1864 7.40 P. M	Geo W. Baldwin (1)		55	15	20	3	1	warofrebellion33unit@leaf0(cov14)	14	E2	3
@@ -73,7 +73,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8923	31	2	F. S. Van Valkenburg  Vols multiply Parade  Washn D. C. Apr 7th 1864	F. S. Van Valkenburg Vols multiply Parade		127	30	41	7	1	warofrebellion323unit@leaf0(cov55)	55		3
 8924	32	0				227	39	72	8	1	warofrebellion323unit@leaf0(cov132)	132		3
 8925	33	0			T. T. Eckert	58	8	17	3	1	warofrebellion323unit@leaf0(cov22)	22		3
-8925	33	1	Capt Bulkley New Orleans  Washington D. C. Apr. 8th 1864	Capt Bulkley New Orleans		69	19	27	7	2	none	4		1
+8925	33	1	Capt Bulkley New Orleans  Washington D. C. Apr. 8th 1864	Capt Bulkley New Orleans		69	19	27	7	2	none	4	LS-R6 N2-BL	1
 8926	34	0	S. H. Beckwith (2) Porter treason request  Washn Apr. 8th 330 P. M. 1864	S. H. Beckwith (2) Porter treason request	no 15 NY	87	16	42	4	2	warofrebellion323unit@leaf0(cov9)	9	N2-AC	3
 8926	34	1	John Horner N. Y. (9)  Wash'n April 8th 1864 4. P. M.	John Horner N. Y. (9)		66	9	18	9	9	none	4	O9-U	2
 8927	35	0	Geo W. Baldwin (1) navy Plan Progress  Washn Apr. 8th 1864.	Geo W. Baldwin (1) navy Plan Progress	no 38	49	10	11	4	1	none	3	LS-R5 E57	1
@@ -94,7 +94,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8935	43	1	SH Beckwith Culpeper  Washington Apl 19th 1864	SH Beckwith Culpeper		81	21	33	7	2	warofrebellion33unit@leaf0(cov22)	22	N2-AM	3
 8936	44	1	Culpeper  Washn Apl 19th 1864	Culpeper		90	16	38	6	2	warofrebellion343unit@leaf0(cov41)	41	N2-AN	3
 8936	44	2	Jno Horner N. Y.  Wash'n D. C April 19th 1864	Jno Horner N. Y.		95	12	30	11	9	warofrebellion33unit@leaf0(cov47)	47	O9-Y	3
-8937	45	0	John Horner N. Y.  Wash'n D. C. Apr. 20th 1864	John Horner N. Y.		153	21	35	14	9	none	4		1
+8937	45	0	John Horner N. Y.  Wash'n D. C. Apr. 20th 1864	John Horner N. Y.		153	21	35	14	9	none	4	LS-R6 O9-AH	1
 8938	46	0			H	108	10	36	8	clear	none	6		3
 8939	47	1	Horner N. Y.  Washn D. C Apl. 20. 1864	Horner N. Y.	(No 9)	49	4	8	3	clear	none	3	O9-AA	3
 8939	47	2	Horner NY  Wash. Apl. 20. 1864	Horner NY		47	7	10	4	9	none	4	O9-AF	2
@@ -140,7 +140,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8956	64	1	Capt Sam 3rd (1)  Wash'n May 3rd 1864 4 P. M	Capt Sam 3rd (1)		56	20	27	8	1	warofrebellion343unit@leaf0(cov17)	17		3
 8957	65	0	Capt Sam Bruch  Wash May 4th 1864	Capt Sam Bruch		122	22	38	8	1	warofrebellion343unit@leaf0(cov64)	64		3
 8957	65	1	J W Sampson Balto  Washn May 5th 1864 1130 am	J W Sampson Balto		48	20	25	4	1	none	4	LS-R4 E48	1
-8958	66	0	Col Stager  Wash May 6. 1864	Col Stager		60	6	17	2	2	none	4		1
+8958	66	0	Col Stager  Wash May 6. 1864	Col Stager		60	6	17	2	2	none	4	LS-R6 E65	1
 8958	66	1	5 pm  Martinsburg May 7th		Maj Genl	143	10	26	1	clear	warofrebellion371unit@leaf0(cov62)	62		3
 8959	67	0	Jisse Bunnell  Wash'n May 8th 1864 11. am	Jisse Bunnell	No 1  355 PM	162	40	68	6	1	warofrebellion343unit@leaf0(cov45)	45		3
 8959	67	1	OBrien Hd Qrs Butler  Wash May 9. 1864	OBrien Hd Qrs Butler		43	6	9	1	1	none	3	LS-R5 E61	1
@@ -158,7 +158,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8965	73	0	Beckwith 930 pm  Washn May 19th 1864	Beckwith 930 pm		115	34	51	11	2	warofrebellion371unit@leaf0(cov30)	30	N2-AX	3
 8965	73	1	130 PM GD Sheldon F Monroe, Washington May 20th 1864	130 PM GD Sheldon F Monroe,		30	15	15	2	1	none	0		1
 8966	74	1	1.45 p. m  (2)  Wash May 20th 1864	1.45 p. m (2)		116	30	53	12	2	warofrebellion363unit@leaf0(cov25)	25	N2-AY	3
-8966	74	2	A. H. Caldwell Thomas valuable year Wash'n May 20th 1864 10 P. M	A. H. Caldwell Thomas valuable year		97	26	47	8	2	none	3		1
+8966	74	2	A. H. Caldwell Thomas valuable year Wash'n May 20th 1864 10 P. M	A. H. Caldwell Thomas valuable year		97	26	47	8	2	none	3	LS-R6 N2-BG	1
 8967	75	0				105	21	40	3	2	none	6		1
 8967	75	1	10 am Jno Horner  Washn May 21st 1864	10 am Jno Horner		35	11	9	4	1	none	3		1
 8967	75	2	J. C. Van Duzer Nashville  Wash'n May 21st 1864 10 AM	J. C. Van Duzer Nashville		39	20	18	5	1	none	5		1
@@ -185,7 +185,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8977	85	1	7 am JW Wallack Indianapolis  Washn June 1" 1864	7 am JW Wallack Indianapolis		36	6	8	0	1	none	4		1
 8978	86	0	230 pm  Washn June 2d 1864	230 pm		48	19	23	3	2	warofrebellion363unit@leaf0(cov10)	10		3
 8978	86	1	SH Beckwith  Washn June 4th	SH Beckwith		177	35	87	7	2	warofrebellion363unit@leaf0(cov28)	28	N2-BF	3
-8979	87	0	10 pm  Washn June 4th 1864	10 pm		59	16	25	5	2	none	3		1
+8979	87	0	10 pm  Washn June 4th 1864	10 pm		59	16	25	5	2	none	3	LS-R6 N2-BJ	1
 8979	87	1	S. H. Beckwith  Wash'n June 6th 1864 10 AM	S. H. Beckwith		72	16	34	2	2	none	4	N2-T	2
 8980	88	0	S. P. Kimber  Washn June 6th 1864 1230 P. M	S. P. Kimber		162	42	65	12	2	warofrebellion344unit@leaf0(cov56)	56	N2-C	3
 8981	89	0	6 pm SH Beckwith  Washn June 7th 1864	6 pm SH Beckwith		34	11	17	4	1	none	4	N2-I	2
@@ -247,7 +247,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9010	118	0	1 p. m  Washn July 23d 1864	1 p. m	canby refitted wind Lady	236	57	99	7	1	warofrebellion403unit@leaf0(cov74)	74		3
 9011	119	0			no 11 F. M  3. P. M	5	0	2	0	short	none	0		3
 9011	119	1	SH Beckwith Dupont notify  Wash'n July 23rd 1864	SH Beckwith Dupont notify		90	15	33	5	2	warofrebellion392unit@leaf0(cov38)	38		3
-9011	119	2	11 am Bickford  Washn July 24th 1864	11 am Bickford		77	15	32	4	2	none	3		1
+9011	119	2	11 am Bickford  Washn July 24th 1864	11 am Bickford		77	15	32	4	2	none	3	LS-R6 N2-BI	1
 9012	120	1	11 am  Wash July 24th 1864	11 am		224	62	104	19	1	warofrebellion372unit@leaf0(cov41)	41		3
 9013	121	0	S. H. Beckwith  Wash'n July 24th 1864 8. P. M	S. H. Beckwith		56	11	19	3	2	warofrebellion372unit@leaf0(cov12)	12		3
 9013	121	1	R. R. McCaine  Wash'n July 26th 1864 1030 AM	R. R. McCaine		144	37	56	8	1	warofrebellion372unit@leaf0(cov30)	30		3
@@ -261,7 +261,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9017	125	2	R. R. McCaine mmy lost map Washn July 27th 1864	R. R. McCaine mmy lost map		100	24	37	6	1	warofrebellion372unit@leaf0(cov24)	24		3
 9018	126	0			164 (12 M. T.)	56	15	22	3	1	warofrebellion372unit@leaf0(cov13)	13		3
 9018	126	1	SH Beckwith  Washn July 27th 1864	SH Beckwith		87	12	29	3	2	warofrebellion403unit@leaf0(cov36)	36		3
-9019	127	0	2 pm  Washn July 27 1864	2 pm		49	6	19	4	2	none	4		1
+9019	127	0	2 pm  Washn July 27 1864	2 pm		49	6	19	4	2	none	4	LS-R6 N2-BM	1
 9019	127	1	RR McCaine  Washn July 27th 1864	RR McCaine		31	8	9	1	1	warofrebellion372unit@leaf0(cov7)	7		3
 9020	128	0	RR McCaine  Washn 9 pm July 27th 64	RR McCaine		81	18	24	3	1	warofrebellion372unit@leaf0(cov27)	27		3
 9020	128	1	S. H. Beckwith  Washn July 28th 1864	S. H. Beckwith		35	9	19	5	1	none	3		2
@@ -437,7 +437,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9103	211	0			No 1 230 P. m.	3	0	2	0	short	none	0		3
 9103	211	1	Van Duzer Nashville Tenn.  Washn. D. C. Oct 24 1864	Van Duzer Nashville Tenn.		139	43	53	7	1	warofrebellion393unit@leaf0(cov35)	35		3
 9104	212	1	McCaine via H. F  Washn Oct 25th 1864 330 PM	McCaine via H. F	no 5	77	16	36	5	2	warofrebellion432unit@leaf0(cov15)	15		3
-9104	212	2	R. R. McCaine  Wash'n Oct 26th 1864 5 P. M	R. R. McCaine		89	19	50	5	2	none	3		1
+9104	212	2	R. R. McCaine  Wash'n Oct 26th 1864 5 P. M	R. R. McCaine		89	19	50	5	2	none	3	LS-R6 N2-BH	1
 9105	213	0	Beckwith  Washn Oct 26th 1864 1030 P. m	Beckwith		60	17	27	4	2	warofrebellion432unit@leaf0(cov12)	12		3
 9105	213	1	Capt Clomy St Louis  Washn Oct 27th 1864	Capt Clomy St Louis		109	37	47	13	1	warofrebellion414unit@leaf0(cov26)	26		3
 9106	214	1	D. Byington Ft Leavenworth  Wash'n Oct 27th 1864 11. AM	D. Byington Ft Leavenworth	No 2	57	15	18	4	1	warofrebellion414unit@leaf0(cov7)	7		3
@@ -519,7 +519,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9138	246	1	Butler Memphis  Washn Decr 10th 1864	Butler Memphis		61	25	29	6	1	warofrebellion452unit@leaf0(cov13)	13	E20	3
 9138	246	2	Mason Cairo  Washn Decr 10th 1864	Mason Cairo		18	11	8	3	1	none	0		1
 9139	247	1	Capt Bruch Louisvl.  Washn D. C. Dec. 12. 1864	Capt Bruch Louisvl.		117	28	49	8	1	none	6		1
-9139	247	2	R. R. McCaine  Wash'n Dec 12th1864	R. R. McCaine		72	8	24	3	2	none	4		1
+9139	247	2	R. R. McCaine  Wash'n Dec 12th1864	R. R. McCaine		72	8	24	3	2	none	4	LS-R6 N2-BK	1
 9140	248	0	SH Beckwith  Washn Decr 14th 1864	SH Beckwith		70	17	26	3	2	warofrebellion414unit@leaf0(cov21)	21		3
 9140	248	1	W F Richards Boston  Washn Decr 15th 1864	W F Richards Boston	Edwin M Stanton	48	4	10	1	clear	none	6		3
 9140	248	2	John Horner  Washn Decr 15	John Horner	TT Eckert	17	2	6	0	1	none	3		1
