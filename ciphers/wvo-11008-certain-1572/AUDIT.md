@@ -217,3 +217,80 @@ several runs as code values reading in two contexts. The bar rules out both. AUD
 uses no depth word, so no correction is needed there. The status.json row and NOTES line 1 (`open` -> `partial`) are
 the parent's (brief). SO-WVO11008-CERTAIN: the prompt quotes no count, class or depth, so no correction is needed
 (rule 10).
+
+## AUDIT 3 (V-11008KP): the 5194 known-plaintext check carried in, 8 Oct 2026
+
+Verifier V-11008KP (LANE FAMILY-A2c, account 2), 8 Oct 2026 22:39-22:5x UTC by `date -u`; brief
+`.claude/briefs/runs/2026-10-08-ytbiz-family-2209-jobs.md` section V-11008KP. Separate from the solver W11008-KP
+(session_01EFVBhGdpFZLGvbkkfVZFKf); did not decode 11008.
+
+Claim under audit (NOTES.md "## 5194 known-plaintext check (W11008-KP, 8 Oct 2026)"): WVO 5194 (24 June 1572, same
+cover names) read against Groen III p.448 shows the Certain letters use the printed 1572 Orange-Nassau table
+(multiples of 3 = letters, other numbers null); "37 of the 38 decoded letters fall in order inside Groen's text".
+
+**1. Rule 7 and my own check against Groen.** `python3 w5194_gate.py --check` -> `w5194_gate.tsv current`, exit 0;
+`python3 decode.py --check` -> `OK`, exit 0. I fetched Groen III p.448 myself (retroboeken `pages.json?source=3` ->
+`service_archives/01_03/html/archives_01_03_448.html`; the page image URL returned an empty body, so the OCR is the
+only reading of the print). Groen's text at the two anchors reads: "Ceste servira pour vous advertir que, comme je
+suis résolu en campagne, je me trouve toujours en la mesme peine de l'argent ...".
+- R1 (que..suis): decode `comie` against Groen "comme je" -- agrees (LCS 5 of 5).
+- R2 (suis..toujours): Groen prints **"résolu en campagne, je me trouve"** (26 letters). The span in `w5194_gate.py`
+  is "resolu de me mettre d icy a trois jours en campagne je me trouve" (51 letters). The words "de me mettre d'icy
+  à trois jours" are **not in Groen's printed text** as OCR'd, and the OCR runs on without a break at that point.
+  They match the decode plus the clear fragments on the leaf (me, d, a), so the gate's "Groen span" for R2 was
+  partly rebuilt from the leaf, not copied from the print. That makes the R2 number as committed partly circular.
+
+**2. Can the gate pass from the nulls or run lengths alone?** No. The shuffle permutes the 24 letter values among the
+24 letter codes with the null codes fixed, so every shuffled decode has exactly the same number of letters in the
+same positions as the real one (checked: decode length invariant across shuffles). Null share and run length are
+held constant, and only letter identity varies, which is what LCS measures. Re-scored against Groen's text as
+printed (same seed 5194, same 1000 shuffles; scratch script, not committed):
+
+| run | Groen span (as printed) | real LCS | shuffle mean | p95 | p99 | max | shuffles >= real | verdict |
+|---|---|---|---|---|---|---|---|---|
+| R1 | comme je (7) | 5 | 0.85 | 2 | 2 | 4 | 0/1000 | PASS |
+| R2 | resolu en campagne je me trouve (26) | 20 | 7.65 | 10 | 11 | 12 | 0/1000 | PASS |
+| R2 as committed | span incl. "de me mettre d icy a trois jours" (51) | 32 | 10.79 | 14 | 15 | 16 | 0/1000 | (not Groen's text) |
+
+The key-family claim stands on the print alone: 25 of the 38 decoded letters (5 + 20) align in order with Groen's
+printed words, and no shuffle comes within 8 of R2's real score. The sentence "37 of the 38 decoded letters fall in
+order inside Groen's text" over-claims; it should read "against Groen's printed text 25 of 38 align; the remaining
+decoded letters read 'de me mettre d'icy à trois jours', which Groen does not print". Whether Groen abridged the
+sentence or the OCR lost a line is unsettled until someone sees the p.448 image (M).
+
+Interlinear letters on 5194 (descriptive in NOTES): the reconciled `w5194_ciphertext.tsv` also has letters above
+codes that do not match the table (n above 57=t, r above 39=n, m above 37 (a null), a above 31 (a null)), so the
+"often equals the table value" sentence rests on a selection. Leave it uncited until a native-size look settles
+which numeral each letter sits over.
+
+**3. What changes for 11008.**
+- Per-token grades: **no change.** C means read from known plaintext of *this* letter; 11008 is not printed, so 5194's
+  print confirms the table's values (H already) but makes no 11008 token C. The M tokens stay M: run 5 pos 3 (21 = g
+  where vlissinghen needs i) is not explained by 5194 (21 occurs once in R2 and its Groen position is not fixed), and
+  runs 1 and 3 are damaged or unanchored. Counts unchanged: 54 tokens, H 39 / M 15 (NOTES "Reading under the held key";
+  AUDIT 2's depth_pct 80 = 32 of 40 non-null cipher tokens H).
+- Key class: **`period`, unchanged.** 5194 adds a period-use witness: the same table is used by the same two
+  correspondents under the same cover names seven weeks earlier, confirmed against a printed clear text.
+- N-class: **N3, unchanged** (no search in this audit; AUDIT 2's log stands).
+- Depth under `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`: **D1, unchanged.** The bar says a period key does
+  not shrink H(K) to the liberties and an external check is a D3/D4 element that does not replace the clause at D2;
+  the 5194 confirmation is such an external check. The longest H stretch in 11008 is still 15 letters against an AD of
+  at least 28. Outward words stay "fragments read".
+- status.json: no row for this folder found by grep, and neither class nor depth changes, so nothing to update.
+- SO-WVO11008-CERTAIN (queue row 47, `second-opinions/PROMPT-chatgpt.md`): quotes the table and the reading but no
+  5194 claim, count, class or depth; no change (rule 10 propagation checked).
+
+**Safe sentence (AUDIT 2's stands; one clause may be added):** "... give fragments: 'le duc de holstein', 'ermuyden'
+(Arnemuiden) and, with one code off, 'vlissinghen'; the same printed table reads the numerals of the same
+correspondents' letter of 24 June 1572 (WVO 5194) in agreement with Groen van Prinsterer's printed text; no prior
+decipherment or printing of the 12 August letter located after the searches logged in AUDIT.md."
+
+**Unsafe:** "37 of 38 letters agree with Groen"; "the 5194 decipherment" as if this project's (Groen printed the clear
+text, so 5194's plaintext is N1 territory, not a result here); any C grade for an 11008 token; "deciphered".
+
+**4. Postmortem.** The gate was pre-registered with the Groen span fixed "by the two clear anchors", but the R2 span
+in `w5194_gate.py` contains 25 letters Groen does not print. The registered conclusion survives on the printed text
+alone, so the result does not flip, but the committed TSV and the NOTES sentence overstate the agreement. Correction
+owed (solver's file, not changed here): set R2's span in `w5194_gate.py` to Groen's printed words and regenerate.
+
+Requests: resources.huygens.knaw.nl 3 (pages.json source 3, p.448 html, p.448 image -> empty body), >= 2 s apart.

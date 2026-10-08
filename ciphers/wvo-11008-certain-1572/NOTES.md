@@ -99,7 +99,7 @@ Read so far: 39 of 54 tokens at H under the table, confirmed on sibling 5194 (PA
 - run 3 positions 1-2 (two codes under a stain; pos 3-4 now read 36, 38 at H by the native look of 8 Oct 2026) - blocker: illegible; paper damage at native size, images/p1_L07_s1.jpg and the W11008-KP native crop
 - run 1 position 4 ("1?0", middle digit smudged, a three-digit group outside the table either way) - blocker: illegible; native look 8 Oct 2026
 - run 1 positions 1-3 and run 3 read only "c d" / "c m e" (no word) - blocker: too-short; four and six codes with no clear context that narrows them
-- AUDIT.md does not yet carry the 5194 key-family confirmation - blocker: not-attempted; the verifier, not the solver, writes AUDIT.md; next: verifier audit update, ~$1
+- `w5194_gate.py` R2 span is not Groen's printed text (AUDIT 3, V-11008KP) - blocker: not-attempted; the verifier does not edit the solver's gate; next: set R2's span to "resolu en campagne je me trouve" and regenerate w5194_gate.tsv, ~$0.5
 
 ## Escalation (W11008-KP, 8 Oct 2026)
 - [x] siblings: 5194 used as a known-plaintext sibling (PASS); 6222/6223 are clear in Groen with no cipher recorded in WVO
@@ -109,7 +109,7 @@ Read so far: 39 of 54 tokens at H under the table, confirmed on sibling 5194 (PA
 - [n/a] key-rebuild: the table is a period printed table, so nothing needs rebuilding
 - [x] image-check: native look at runs 1 and 3, 8 Oct 2026
 - [n/a] retry: no failed step to retry here
-Verdict: keep going: 1 internal gaps; cheapest next: verifier AUDIT.md update with the 5194 confirmation, ~$1
+Verdict: keep going: 1 internal gaps; cheapest next: correct the R2 Groen span in w5194_gate.py, ~$0.5 (AUDIT.md carries the 5194 confirmation since AUDIT 3, 8 Oct 2026)
 
 Optional, wider than 11008 (one-line suggestion, not a gap): the rest of 5194 (3 pages, about 1,500 numerals) against
 Groen as a full known-plaintext alignment, for null-usage statistics and to check the interlinear letters; ~$6.
@@ -249,7 +249,7 @@ codes only, every other number a null) and Groen's span, against 1000 seeded per
 | R1 | 14 | 5 | comie | comme je | 5 | 0.85 | 2 | 0/1000 | PASS |
 | R2 | 97 | 33 | resouetrecytroiousncampagnfitroue | resolu de me mettre d icy a trois jours en campagne je me trouve | 32 | 10.79 | 14 | 0/1000 | PASS |
 
-Result: **PASS on both runs.** 37 of the 38 decoded letters fall in order inside Groen's text. The Certain letters
+Result: **PASS on both runs.** 37 of the 38 decoded letters fall in order inside Groen's text. **[Corrected by V-11008KP, 8 Oct 2026, AUDIT.md "AUDIT 3": Groen's printed text for R2 is "résolu en campagne, je me trouve"; the span in `w5194_gate.py` adds "de me mettre d icy a trois jours", which Groen does not print. Against the print: 25 of 38 align, R2 LCS 20 vs shuffle p95 10, 0/1000 -- still PASS.]** The Certain letters
 use the printed 1572 Orange-Nassau table (multiples of 3 = letters), and 5194 pads it heavily with nulls: 38 of 111
 numerals are letter codes and 73 are nulls. This confirms the key family for 11008. On 5194 the agreeing values are
 grade C (aligned from print), on top of the H the table already carries. 11008's own reading is unchanged. The
