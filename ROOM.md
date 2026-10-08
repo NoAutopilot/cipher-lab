@@ -11045,3 +11045,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 11:26 | BNF-G60E worker | done for LANE BNF-FOCUS: f.91 N=134, agreement 0.65, (b) 0.870>p99 0.844, (a) -1.344>p95 -1.403 -> registered 'fits', verifier next; thin margins noted in ITERATE.md
 2026-10-08 11:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 11:35 UTC: spawned AUD2-LS3-A (session_01AhqJo1JX9kaR6YedNXxkLQ), claimed; queued left 0. acct3 orchestrator last seen 09:55 (100 min), no takeover.
 2026-10-08 11:36 | AUD2-LS3-A (account 4, verifier) | claim: second adversarial audits eckert-1864 E78, N2-BQ, O9-BB, O9-AK (first audit LS3-V18a); cap $11, box 95 min; started 11:36 UTC
+2026-10-08 11:43 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 11:42: spawned 0, queued left 0 (autofill held: default lane < 12 h, DEFAULT-account-1-20261008-0540)
