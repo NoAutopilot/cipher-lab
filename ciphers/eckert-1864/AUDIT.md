@@ -4829,3 +4829,88 @@ Grant Papers and Basler: not searched (no entry is to or from Grant or Lincoln).
   each retried once), be-api 0. Subagents 0.
 - Rows written in this session: status.json results for E162, E160, E163, E164 (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
   SO-ECKERT-E160, SO-ECKERT-E162, SO-ECKERT-E163, SO-ECKERT-E164 (prompts in second-opinions/); WORK-QUEUE.tsv AUD2-LEDGER-3.
+
+## AUDIT 2 (AUD2-LEDGER-1)
+
+Verifier AUD2-LEDGER-1 (account 3, LANE-VERIFY-2, session_018B8HaALr63JFgbR5EKMUmP), 8 Oct 2026, 19:56-20:3x UTC by `date -u`. Second
+adversarial audit of **E106, E122, E104, E103** (Cipher No. 1, readers LS5-R1c / LS5-R1d, first audit FV-LS5-A, all account 1); a separate
+session from both, not protecting their conclusions. Nothing decoded; `decode.py --check` exit 0 (rule 7). Key source `period` for all four.
+Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md: kept or lowered, never raised.
+
+### Prior-work checks 3-5
+- **Duplicate diff (first step):** pointers 8969 (E106 only), 9053 (E26 1.30 PM to Dix; E122 4 PM), 8907 (O9-AI, O9-AJ to Wright, San
+  Francisco; E104), 9129 (E45 29 Nov to Newport; E56 28 Nov 11 AM to Lamb; E103 28 Nov 10.30 AM) against ciphertext*.txt, reading*.md and
+  status.json: same-pointer siblings are other telegrams (other time, addressee, text). **No duplicate.**
+- `tools/prior_work.py eckert-1864 --item-spec '<shelfmark=Huntington mssEC 19;folio=p<page>;date;sender;recipient>' --step-type second-audit
+  --fetch` (no items.tsv rows for these IDs), per entry, exit 4 each: step LEAD = the target-level live claim of V1-KNOWN (16:02, done line
+  16:16, 16 N0/N1 rows, none of these four): cleared. Edition LEADs: E106 `privateofficialc04butl` (3 windows, Grant-Halleck May traffic, opened
+  by FV-LS5-A, unrelated); E104 `warofrebellion33unit` (4 windows: Humphreys to Meade 4 Mar, opened, p.639, the antecedent). Generic:
+  Tomokiyo UNCHECKED (no folio key), aaymeloglu cache not on disk (UNCHECKED-NET), solver caches not searchable by unit.
+- `--reading <decoded body> --network` (G3), per entry: CLEAR on the OR ser. I vols 32-49 the tool reached (E104/E103: 45 pt 1-2, 46 pts 1-3,
+  47 pts 1-3, 48 pt 1, 49 pts 1-2), ORN I/9-10 and Butler vol. 4; the tool hit its per-item request cap before ia-global and gbooks for E106 and
+  E122 (UNCHECKED-NET); E103's three LEADs are generic phrase noise ("been given to transfer to" in OR I/49, outside +-3 days, unrelated;
+  ia-global 20 items and gbooks 361 volumes on boilerplate phrases). E122's second specific LEAD (from an `--offline` re-run): "rounds of ammunition
+  for them" in OR I/39 pt 3, not within +-3 days (Georgia, autumn 1864): unrelated. The tool does not reach the holder's
+  ledger siblings or by-date reading; those were done by hand:
+- **Holder's transcription (Huntington, local copies sources/mssEC19, 415 pages)**, grepped for Spencer, brigadier, scouts, Northern Neck,
+  Markland, mail, Webster, Humphreys: no clear copy, reply or sibling of any of the four beyond the entries themselves. The 9129 page reads "For
+  Palsy Webster Orders have been given ..." and the same ledger uses "webster" as the signature marker before names throughout Nov 1864 (9123,
+  9124, 9126, 9127, 9129/2, 9138); the reader's rendering ([signed] before the body) and FV-LS5-A's addressee "Webster" (M) are both
+  readings of that one code word. FV-LS5-A's 10 CONTENTdm full-text queries (section 1 above) stand; not repeated (hdl.huntington.org 0).
+- **Families the first audit left unread, run first:**
+
+| # | family / route | query (as run) | result |
+|---|---|---|---|
+| 4 | Papers of U. S. Grant vols 10-12 (Google Books API, key, `country=US`; positive control: "electioneering purposes" Stanton Grant 1864 -> vol. 12, two volume ids, as FV-LS5-A) | E106: "no reinforcements can be sent" (alone, + Papers of U.S.G., + Halleck Hunter 1864), "based on the troops you now have", "troops you now have" Halleck Hunter, "none can go to you" Halleck, "special orders of General Grant" Hunter, Halleck Hunter "May 22, 1864" "not sent", "brigadiers" Hunter Halleck USG "May 23, 1864"; E122: "Spencer rifles" Augur Sheridan, "sufficient for the work", "clean out Mosby" (with `intitle:` -- the control returned 0 with `intitle:`, so those six rows are void and were re-run without it) | no Grant Papers note prints E106, E122 or E104; vol. 11 hits (Halleck 22 July; 26 July) unrelated. E106's sent reply (E9, "Energetic and efficient brigadiers are scarce") is in OR I/37 pt 1 and Hildebrand-type secondaries (*The Shenandoah Valley Campaign of 1864*, 2003; *The Forgotten Fury*, 1996), as FV-LS5-A found; E106 itself not located |
+| 4 | OR I/37 pt 1, by date (`warofrebellion371unit`, local) | Halleck to Hunter 22-24 May | 23 May 10.30 a.m. (E9) and 23 May 9 p.m. ("There are no vacancies of brigadier-general of volunteers ... No one can be appointed till some one else is mustered out") -- the second is a second printed answer to the same request; neither says E106's "no reinforcements ... ordered elsewhere by Grant". E106 not printed |
+| 4/5 | Mosby / Blazer secondaries (Google Books) | "100 Spencer rifles" Augur 1864; "take the contract to clean out Mosby"; Blazer "Spencer rifles" "Harper's Ferry" Augur 1864; "20,000 rounds" Spencer Sheridan Augur 1864 (503); "work they are undertaking" 1864; "100 men are sufficient"; Augur Sheridan Spencer "doubt if" men Mosby; "Headquarters in the Brush" Augur Spencer; Blazer scouts Spencer "August 21, 1864" | Sheridan's request of 20 Aug printed in OR, SHSP 1899, Mosby's *Memoirs* 1917, Brooks 1909, Wert 1991, Stephenson *Headquarters in the Brush* (2001: Blazer's scouts were issued "Spencer's Repeating Rifles ... while lying at Halltown"), Wittenberg *Little Phil* 2002, Munsey's 1905. **Augur's reply (E122) is quoted by none located**: its 20,000 rounds, Harpers Ferry and the doubt about 100 men are in no snippet |
+| 4 | OR I/33, by date 4-7 Mar 1864 (`warofrebellion33unit`, local) | Fredericksburg, scouts, Northern Neck, Rappahannock with Meade/Humphreys | Humphreys 10 a.m. (p.639, the antecedent); Humphreys 7.30 p.m. forwarding Custer's Ely's Ford reconnaissance; Meade 7 Mar 1.30 p.m. to Ingalls (p.651: a Richmond paper on Kilpatrick returning by the Northern Neck; "detach a considerable force to get him by Fredericksburg"). E104 itself not printed; context consistent |
+| 4/5 | Google Books, E104 | "Send scouts down to Fredericksburg" (503, then run: 323 unrelated), "this side of the Rappahannock or on the Northern Neck", Meade Humphreys "March 4, 1864" scouts Fredericksburg "Northern Neck", "scouts" "Northern Neck" Meade Humphreys 1864 Dahlgren (503) | nothing relevant |
+| 4/5 | **OR I/44 (Savannah campaign; `warofrebellion44unit`, local) and I/39 pt 3, read for Sherman's mails, not by phrase** | "mail matter", "mails for", "Markland", "Sherman's mail" | **Hit for E103: OR ser. I vol. 44 p.611, Grant to Sherman, City Point, 3 Dec 1864: "I have directed your mails, which had been previously collected in Baltimore by Colonel Markland, special agent of the Post-Office Department, to be sent as far as the blockading squadron off Savannah ..."**; also p.~765/796 (Markland's December orders). OR I/39 pt 3: Webster at Nashville, 1 Oct 1864, reports "two car-loads of mail for the army" (Webster ran Sherman's rear at Nashville; context for the addressee). Sherman's own "all mail matter for Sherman's army should come to Old Point, via Baltimore" is 7 Apr 1865 to Markland (OR I/47 pt 3, `warofrebellion014703rootrich`), confirming FV-LS5-A's dating |
+| 4/5 | Google Books, E103 | "previously collected in Baltimore" (18: Sherman's *Memoirs* 1875 and later eds., Grant's *Personal Memoirs* 1886, Report of the Postmaster General 1898, compilations); Markland mails Sherman Baltimore "November 28" 1864; Markland "Sherman's army" mails Baltimore Nashville 1864 Dana (0); "Webster" Nashville mails Sherman Baltimore Markland; "Markland" "mail" Sherman Savannah Baltimore "Grant"; "Delivered Under Fire" Markland ...; "Twenty Tons of Mail" Markland; Markland Sherman mail Nashville "sent to Baltimore" 1864 | Grant's 3 Dec letter printed widely; **C. S. Hooper, *Delivered Under Fire: Absalom Markland and Freedom's Mail* (2023)** narrates the collection of Sherman's mail at Baltimore ("twenty tons of mail") -- snippets only, no page, the 28 Nov order itself not seen in a snippet. Dana's 28 Nov telegram not located verbatim |
+| -- | Not searched / unreachable | Grant Papers vol. 13 (Nov 1864-Feb 1865) pages; Dana papers; NARA RG 107/108 letterbooks; Meade papers; press of the day (loc.gov Cloudflare-challenged from this container per V1-LS4B and V1-1862, not re-tried); HathiTrust (Cloudflare); JSTOR (never blocking); Hooper 2023 pages (snippet only) | unread |
+
+### Diffs and classification (key `period`)
+- **E103 vs OR I/44 p.611 (Grant to Sherman, 3 Dec 1864) and Hooper 2023.** Telegram (H, frame in clear on the Huntington page): 28 Nov 1864
+  10.30 AM, Washington, to a brigadier general (name = the "Webster" code word, M), "Orders have been given to transfer to [Baltimore] all mail
+  matter in [10] dead for [Sherman's] [Army]", signed C. A. Dana. Print, five days later: Sherman's mails had been "previously collected in
+  Baltimore" by the Post-Office Department's special agent and were now sent on to Savannah. Shared: Sherman's army's mail, Baltimore, the act of
+  collecting/transferring it there, the same week; missing from print: the date and author of the order, its addressee and the unread "in [10]
+  dead". Every content element of the one-sentence body except who ordered it and to whom is in print, as an outcome. **SUBSTANCE: N3 -> N2**
+  (the E100 kind, V1-LS4B: a relay of a printed arrangement; no prior mapping of this ciphertext to it). The print is also an independent
+  non-statistical check on Baptism = Baltimore and Knapsack = Sherman. Depth kept **D2** (78.6% < 80%, so D3 is unavailable whatever the check).
+  The status.json title "to Brig. Gen. Webster" is softened to "to a brigadier general ('Webster', M)".
+- **E106: N3 (weak) kept, D3 kept.** A second printed answer to the same request (Halleck, 23 May 9 p.m., OR I/37 pt 1) now joins E9; E106's own
+  content (no reinforcements without Grant's special orders; all available troops ordered elsewhere by Grant) is in neither, nor in the Grant
+  Papers snippets. The draft was never sent, which makes print unlikely but is not a search result.
+- **E122: N3 (weak) kept, D3 kept.** The request, its approval and the issue of Spencers to Blazer's scouts at Halltown are printed; the reply's
+  20,000 rounds, Harpers Ferry and Augur's doubt that 100 men suffice are not located.
+- **E104: N3 (weak) kept, D3 kept.** Antecedent (p.639) and the 7 Mar sequel (p.651) printed; the order itself not located.
+
+| ID | N-class | text known? | depth | audit_status |
+|---|---|---|---|---|
+| E106 General-in-Chief to Hunter, 22 May 1864 10.30 PM, not sent | **N3** (weak) | unknown | D3 (kept) | two audits |
+| E122 Augur to Sheridan, 21 Aug 1864 4 PM | **N3** (weak) | unknown | D3 (kept) | two audits |
+| E104 Meade (Washington) to Humphreys, 4 Mar 1864 | **N3** (weak) | unknown | D3 (kept) | two audits |
+| E103 C. A. Dana to a brigadier general, 28 Nov 1864 10.30 AM | **N2** (lowered from N3) | substance known: OR I/44 p.611 (Grant to Sherman, 3 Dec 1864); Sherman's and Grant's memoirs; Hooper 2023 | D2 (kept) | two audits; SO-ECKERT-E103 withdrawn |
+
+- Safe sentence, E103: "Read at grade H with the period Cipher No. 1 book: C. A. Dana's telegram of 28 Nov 1864, 10.30 AM, telling a brigadier
+  general that orders had been given to transfer to Baltimore all mail matter for Sherman's army. Its substance is printed: Grant told Sherman on
+  3 Dec 1864 that his mails had been collected in Baltimore by the Post-Office Department's special agent (Official Records ser. I vol. 44 p.611)."
+  Unsafe: "first", "unpublished", "previously unknown", "to Brig. Gen. Webster" as a fact. Depth sentence (D2, corrected): "On 28 Nov 1864, while
+  Sherman's army was out of contact on its march through Georgia, Dana in Washington told a brigadier general, probably J. D. Webster at Nashville,
+  that orders had been given to transfer its mail matter to Baltimore."
+- Safe sentences, E106, E122, E104: FV-LS5-A's, with "the Papers of Ulysses S. Grant (vols. 10-12, Google Books snippet search) searched 8 Oct
+  2026" added. Not N4 for any: Grant Papers pages, Dana, Meade and Halleck letterbooks, the press of the day, HathiTrust and JSTOR unread.
+- Depth sentences E106, E122, E104 checked against reading.md and the clear words on the transcription: true.
+
+### Postmortem
+- E103 fell to the destination's own volume read for the subject, not the phrase: FV-LS5-A grepped I/44 for a "mail" window with Dana/Baltimore
+  25-30 Nov and stopped at the date edge; Grant's report of the outcome is five days later and shares no phrase with the telegram. For an
+  administrative order (mails, ships, stores), read the outcome in the next week of the destination's volume, as V1-LS4B found for E100.
+- The tool's G3 pass hit its request cap before Google Books/IA for E106 and E122 and picks header phrases ("To Maj Gen David Hunter", "For P H
+  Sheridan 100"); its CLEARs are phrase-only and cannot see a substance print like E103's.
+- Requests: googleapis.com books 48 queries (three 503s, each retried once, the retry also 503 once), plus prior_work.py's own `--network` calls
+  (its cap); archive.org 0 by hand (OR djvu texts read from the tool's cache and sources/ia-fulltext); hdl.huntington.org 0; loc.gov 0. Subagents 0.
+- Rows written: status.json E106, E122, E104 (`audit_status` "two audits", `audit_refs` += this section, gap note), E103 (N2, line, title,
+  depth_sentence, audit fields); SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E103 withdrawn; WORK-QUEUE.tsv AUD2-LEDGER-1 done.

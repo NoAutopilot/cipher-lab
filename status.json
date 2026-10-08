@@ -7313,9 +7313,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS5-A)'"
+        "AUDIT.md '## AUDIT (FV-LS5-A)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS5-A verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7330,7 +7331,7 @@
       "reading_version": "LS5-R1c 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-A) section 3",
       "title": "Eckert 1864: General-in-Chief to Hunter, Cedar Creek, 22 May 1864 10.30 PM, not sent: no reinforcements without Grant's orders (E106)",
       "line": "Read at grade H with the period War Department Cipher No. 1: a telegram of 22 May 1864 to Maj. Gen. Hunter, struck through and marked 'Not sent' in Eckert's ledger; much of the frame is in clear in the Huntington's public transcription, and no prior decipherment or printed text was located in the Official Records (ser. I vol. 37 pt 1), Internet Archive full text, Google Books or the Huntington's full-text search (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame clear in the public transcription of 8969; a draft never transmitted; Grant Papers vol. 10 pages (snippets only), NARA RG 107/108 letterbooks, the press unread",
+      "gap": "N3 (weak): frame clear in the public transcription of 8969; a draft never transmitted; Grant Papers vol. 10 pages (snippets only), NARA RG 107/108 letterbooks, the press unread; second audit AUD2-LEDGER-1 (8 Oct 2026): N3 weak kept, Grant Papers vols 10-12 snippet search added, nothing located",
       "depth": "D3",
       "depth_pct": 81.0,
       "depth_unread": {
@@ -7354,9 +7355,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS5-A)'"
+        "AUDIT.md '## AUDIT (FV-LS5-A)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS5-A verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7371,7 +7373,7 @@
       "reading_version": "LS5-R1d 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-A) section 3",
       "title": "Eckert 1864: Augur to Sheridan, 21 Aug 1864 4 PM, 100 Spencer rifles and 20,000 rounds to Harpers Ferry (E122)",
       "line": "Read at grade H with the period War Department Cipher No. 1: Augur's reply to Sheridan's printed request of 20 Aug 1864 for 100 Spencer rifles (OR ser. I vol. 43 pt 1 p.860); the reply itself was not located in the Official Records (ser. I vol. 43), Internet Archive full text, Google Books or the Huntington's full-text search (searched 8 Oct 2026); its frame is in clear in the Huntington's public transcription.",
-      "gap": "N3 (weak): frame clear in the public transcription of 9053; request and its approval printed; Grant Papers vol. 12 pages, Augur's letterbooks, the press unread",
+      "gap": "N3 (weak): frame clear in the public transcription of 9053; request and its approval printed; Grant Papers vol. 12 pages, Augur's letterbooks, the press unread; second audit AUD2-LEDGER-1 (8 Oct 2026): N3 weak kept, Grant Papers vols 10-12 snippet search added, nothing located",
       "depth": "D3",
       "depth_pct": 81.8,
       "depth_unread": {
@@ -7395,9 +7397,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS5-A)'"
+        "AUDIT.md '## AUDIT (FV-LS5-A)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS5-A verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7412,7 +7415,7 @@
       "reading_version": "LS5-R1c 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-A) section 3",
       "title": "Eckert 1864: Meade (Washington) to Humphreys, 4 Mar 1864, send scouts to Fredericksburg (E104)",
       "line": "Read at grade H with the period War Department Cipher No. 1: Meade's reply to Humphreys's printed report of 4 Mar 1864 on the returning scouts (OR ser. I vol. 33 p.639); the frame is in clear in the Huntington's public transcription, and the reply itself was not located in the Official Records (ser. I vol. 33), Internet Archive full text or Google Books (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame clear in the public transcription of 8907; seven code groups only; Grant Papers vol. 10, Meade papers, the press unread",
+      "gap": "N3 (weak): frame clear in the public transcription of 8907; seven code groups only; Grant Papers vol. 10, Meade papers, the press unread; second audit AUD2-LEDGER-1 (8 Oct 2026): N3 weak kept, Grant Papers vols 10-12 snippet search added, nothing located",
       "depth": "D3",
       "depth_pct": 100.0,
       "depth_unread": {
@@ -7436,24 +7439,25 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-LS5-A)'"
+        "AUDIT.md '## AUDIT (FV-LS5-A)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-LS5-A verifier (account 1)",
       "depth_date": "8 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "8 Oct 2026",
       "kind": "reading",
-      "grade": "N3",
+      "grade": "N2",
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS5-A)' section 4",
+      "plaintext_novelty": "N2",
+      "mapping_novelty": "N2",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (AUD2-LEDGER-1)'",
       "reading_version": "LS5-R1c 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-A) section 3",
-      "title": "Eckert 1864: C. A. Dana to Brig. Gen. Webster, 28 Nov 1864 10.30 AM, Sherman's army's mail to Baltimore (E103)",
-      "line": "Read at grade H with the period War Department Cipher No. 1; no prior decipherment or printed text was located in the Official Records (ser. I vols. 44 and 45), Internet Archive full text, Google Books or the Huntington's full-text search (searched 8 Oct 2026).",
-      "gap": "N3: 'in feeble dead' unsensed; Dana's War Department telegrams of 28 Nov 1864 (NARA RG 107), Post Office records, the press unread",
+      "title": "Eckert 1864: C. A. Dana to a brigadier general ('Webster', M), 28 Nov 1864 10.30 AM, Sherman's army's mail to Baltimore (E103)",
+      "line": "Read at grade H with the period Cipher No. 1 book: C. A. Dana's telegram of 28 Nov 1864, 10.30 AM, telling a brigadier general that orders had been given to transfer to Baltimore all mail matter for Sherman's army. Its substance is printed: Grant told Sherman on 3 Dec 1864 that his mails had been collected in Baltimore by the Post-Office Department's special agent (Official Records ser. I vol. 44 p.611).",
+      "gap": "N2 (AUD2-LEDGER-1, 8 Oct 2026, lowered from N3): substance printed as the outcome, OR I/44 p.611 (Grant to Sherman, 3 Dec 1864), Sherman's and Grant's memoirs, Hooper, Delivered Under Fire (2023); addressee's name is the 'Webster' code word (M)",
       "depth": "D2",
       "depth_pct": 78.6,
       "depth_unread": {
@@ -7469,9 +7473,10 @@
       "documents": [
         "Huntington mssEC 19 p.237, pointer 9129, E103"
       ],
-      "depth_sentence": "On 28 Nov 1864, while Sherman's army is out of contact on its march through Georgia, Dana in Washington tells Brig. Gen. Webster that orders have been given to transfer its mail matter to Baltimore.",
+      "depth_sentence": "On 28 Nov 1864, while Sherman's army was out of contact on its march through Georgia, Dana in Washington told a brigadier general, probably J. D. Webster at Nashville, that orders had been given to transfer its mail matter to Baltimore.",
       "depth_check": "code clause: Knapsack = Sherman (3 uses), Baptism = Baltimore (9 uses); header words Elizabeth = 10.30 AM and Harsh Paddle = 28 equal the header; no external check",
-      "depth_note": "11 H of 14 code-word groups (Webster M)"
+      "depth_note": "11 H of 14 code-word groups (Webster M)",
+      "text": "substance known (OR I/44 p.611, Grant to Sherman 3 Dec 1864)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
