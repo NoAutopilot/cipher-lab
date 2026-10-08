@@ -143,3 +143,17 @@ NOTES/status.json before decoding; a duplicate is recorded as such, not decoded)
 clear: read the clear part as clear, decode only the code words. IDs: E160 onward (No. 1), N2-GA onward (No. 2). File into the book's
 reading file with "(mssEC 25 / obj 5952, pointer P)" as source. hdl token per the wave-2 rule, at most 40 requests. Unit ~0.55 per
 entry. NOTES "## FM-R1 (8 Oct 2026, account 1, for LANE LEDGER)", Remaining gaps / Escalation, gaps_check, decode --check.
+
+---
+
+# Wave 4 (written 8 Oct 2026 19:0x UTC)
+FM-R1 2.62: E160-E169 filed from the Fort Monroe ledger (mssEC 25); only E161 and E166 in print; 8 not located. E62-ALN 3.14 (no new witness).
+## FV-FM1 (Opus 5.5, first verifier, separate from FM-R1; cap $6, box 80 min): E160, E162, E163, E164
+Exactly the FV-LS5-A/B section above (duplicate diff against filed IDs first; own Huntington transcription + CONTENTdm full-text; OR I-III,
+ORN; Grant Papers via Google Books snippet; Basler; press of the day; G3), plus for Fort Monroe traffic: Butler's Private and Official
+Correspondence vols III-V by phrase (IA identifiers in NOTES "## FM-PRE"), and the SENDER's copy -- a telegram received at Fort Monroe
+from the War Department may also sit, sent, in mssEC 19/18 (sources/mssEC19, sources/mssEC18 text on disk). AUDIT.md heading
+"## AUDIT (FV-FM1)"; status.json/SO rows for N3+ only, audit_status "one audit"; depth_check; file_shrink_guard; on N3+ D2+ add WORK-QUEUE
+`AUD2-LEDGER-3` (account-3, Opus 5.5, cap 2.5 per entry). Unit ~1.5 per entry; stop before an entry that would cross 80% of cap or box.
+Handed on, not run by this incarnation: E165, E167, E168, E169 (E165/E168/E169 are key-supplement telegrams; E169 Mint/Mogul conflict in
+HYPOTHESES.md).
