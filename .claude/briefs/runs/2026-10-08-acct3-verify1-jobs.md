@@ -91,3 +91,6 @@ fr3416-nevers-fils-1589 f.35r (N4); sachsstaatsarchiv-manteuffel-1712 694/08 f.4
 ## V1-G3E (account 3), cap $7, box 75 min: huntington-blathwayt-madrid-1728 BLA 186 (N4); antt-linhares-chave m0002 (N3 D2);
 jan-van-nassau-1572-75 WVO 5551 (N3 D2); decode-2678-bnf-colbert127-gravel-1665 (N3 D2); vanbeuningen-dewitt-1657 item 2 (N3, no depth:
 rule its depth under the bar as part of this check)
+
+## Re-addressed (not run on account 3): G3-FR3416 -- fr3416-nevers-fils-1589 f.35r (N4) G3 check per the Fourth wave paragraph; its
+reading (NV02-READ) and audit (VERIFY-NV02) ran on account 3, so the check goes to account 4. Cap $2.5, box 35 min.
