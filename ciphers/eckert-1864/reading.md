@@ -533,5 +533,11 @@ Code-word tokens: H 33.
 
 Code-word tokens: H 14.
 
-Totals over the 67 entries: H 1120, C 14, I 0, M 0.
+**E68 | Page 146 (printed) | 9039 | 7 Aug 1864, to Capt Sam Bruch, Louisville (operator not given)**
+
+[Washington] {time: 12} [7] for [General] Burr [Bridge (-ed, -ing)] [.] Your immediate attention is directed to the following [Telegraph (-ed, -ing)] ["] insert Jones [Cipher] stop You will please see Surgeon Ferry in [5] & hear his statement [.] If you deem his platation trust worthy & important send its substance by [Cipher] [Telegraph (-ed, -ing)] [.] If you think a personal interview with me important Send him here under adequate [Guard (-ed, -ing)] that will take care he does not Escape  {tail: [signed] [Secretary of War] is it all right}
+
+Code-word tokens: H 17.
+
+Totals over the 68 entries: H 1137, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->

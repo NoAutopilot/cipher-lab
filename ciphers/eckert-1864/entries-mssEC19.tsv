@@ -300,7 +300,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9037	145	1	Bickford City Pt.  Wash D. C. Aug. 6 1864.	Bickford City Pt.		80	12	26	2	2	warofrebellion422unit@leaf0(cov42)	42		3
 9037	145	2	C. G. Sholes  Washn D. C. Aug 7th 1864 12M	C. G. Sholes		135	35	51	7	1	warofrebellion385unit@leaf0(cov50)	50		3
 9038	146	0	McCaine H. F  Washn Aug 7th 1864 1230 Pm	McCaine H. F	(192 W) sent (1230 PM) T.	181	37	68	10	1	none	4	LS-R5 E64	1
-9039	147	0	Capt Sam Bruch Louisville  Washn Aug 7th 1864	Capt Sam Bruch Louisville		78	21	27	4	1	none	4		1
+9039	147	0	Capt Sam Bruch Louisville  Washn Aug 7th 1864	Capt Sam Bruch Louisville		78	21	27	4	1	none	4	LS-R7 E68	1
 9039	147	1	F. T. Beckford  Wash'n Aug 9th 930 am 1864	F. T. Beckford		130	26	51	5	2	none	6		1
 9040	148	0				29	9	15	1	2	none	4		1
 9040	148	1	RR McCaine HF  Washn 12pm Aug 9th 64	RR McCaine HF		145	37	43	6	1	none	6		1
@@ -412,7 +412,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9092	200	2	McClaine Strasburg  Washington Oct 12. 1864.	McClaine Strasburg		70	19	26	5	1	warofrebellion432unit@leaf0(cov15)	15		3
 9093	201	0	McCaine  Washn Oct 12th 1864	McCaine		33	9	10	1	1	warofrebellion432unit@leaf0(cov7)	7		3
 9093	201	1	Beckwith No 2  Washn Oct 12th 1864	Beckwith No 2		93	17	37	4	2	warofrebellion393unit@leaf0(cov46)	46		3
-9093	201	2	JW Hallack Ind No 10  Washn Oct 13th 1864	JW Hallack Ind No 10	yourself personally signed Blanchard	70	14	22	4	1	none	4		1
+9093	201	2	JW Hallack Ind No 10  Washn Oct 13th 1864	JW Hallack Ind No 10	yourself personally signed Blanchard	70	14	22	4	1	none	4	LS-R7 E69 key-not-in-hand	1
 9094	202	1	R. C. Clowry St Louis  Washn Oct 13th 1864	R. C. Clowry St Louis	No 2  1 PM	48	13	20	4	1	warofrebellion413unit@leaf0(cov12)	12		3
 9094	202	2	Beckwith City Pt.  Wash Oct. 14. 1864	Beckwith City Pt.		139	17	30	5	2	warofrebellion393unit@leaf0(cov58)	58		3
 9095	203	0			No 1.  1.30 P. m.	64	10	23	2	2	warofrebellion393unit@leaf0(cov16)	16		3
