@@ -1,0 +1,490 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050086">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050086">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3636
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050086_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086">Français 3636 • Anc. 9125 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e96">1 Lettre de « HENRY [III]... à madame Du Bouchaige ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e102">Fol. 2 • 2 « Escrit de HENRY DE LOREINE, duc DE GUISE, adressant à monsieur le duc de Nevers, quand il s'entremist par ordre de Henry troisme avec la roine Catherine de Medicis, pour l'accomodement du roi de Navarre avec luy ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e118">Fol. 6 • 3 Lettre de « HENRY [III]... à monseigneur de Prye, gouverneur de ma ville de Tours... Escript à Paris, le XVIe jour de may 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e134">Fol. 7 • 4 Lettre de « MARIE DE BATARNAY » à madame Du Bouchage. « De Paris, ce XVIe febvrier 1581 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e150">Fol. 9 • 5 Lettre de « F[RANÇOIS] DE MONTMORENCY,... à monseigneur le conte Du Bouchaige, mon oncle ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e163">Fol. 10 • 6 Lettre de FRANÇOIS, « card[inal] DE JOYEUSE,... à madame la contesse Du Bouchage,... De Marmoutier, le 7 may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e176">Fol. 11 • 7 Lettre d' « ANNE [duc] DE JOYEUSE,... à madame la contesse Du Bouchaige ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e194">Fol. 12 • 8 Lettre de MARGUERITE DE LORRAINE, duchesse DE JOYEUSE, « à madame la contesse Du Bouchage ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e217">Fol. 13 • 9 Lettre de FRANÇOIS, cardinal DE JOYEUSE, à sa tante. « De Narbonne, ce 16 de novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e240">Fol. 14 • 10 Lettre de « MARGUERITE DE LORRAINE [duchesse DE JOYEUSE]... à madame la contesse Du Bouchage ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e263">11 Lettre de « NICOLAS [Ier, FUMEE], e[vêque] de Beauvays... De Louviers, ce 17 en janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e272">Fol. 16 • 12 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à monsieur le conte Du Bouchaige,... De Thoulouse, ce XXVe jour de febvrier 1580 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e303">Fol. 17 • 13 Lettre de « M[ARIE] DE LUXEMBOURG [duchesse DE MERCOEUR]... à madame la vydame d'Amyens... De Paris, ce XVIe de jullet 1588 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e339">Fol. 18 • 14 Lettre de « MARGUERITE DE LORRAINE [duchesse DE JOYEUSE]... à madame la contesse Du Bouchage,... De Paris, ce cincquiesme d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e367">Fol. 19, 20 et 21 • 15-17 Trois lettres de « MARGUERITE DE LORRAINE [duchesse DE JOYEUSE]... à madame la contesse Du Bouchage ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e375">Fol. 22 • 18 Lettre de HENRI DE « JOYEUSE,... à madame la vidame d'Amiens... De Thoulouse, le 29me juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e411">Fol. 23 • 19 Lettre de « MARGUERITE DE LORRAINE [duchesse DE JOYEUSE]... à mes tantes, mesdames la vidame et Du Bouchage ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e444">Fol. 24 • 20 Lettre de « MARGUERITE DE LORRAINE », duchesse DE JOYEUSE, à la comtesse Du Bouchage.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e477">Fol. 25 • 21 Lettre de « H[ENRIE] DE SAVOYE [duchesse DE MAYENNE]... à madame la contesse Du Bouchaige,... De Grenoble, ce 13 apvril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e515">Fol. 26 • 22 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à madame la contesse Du Bouchaige,... A Narbonne, le X de novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e548">Fol. 27 • 23 Lettre d'«ANNE DE DAILLON [marquise DE RUFFEC]... De Paris, se XIIe de desambre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e589">Fol. 28 • 24 Lettre de FRANÇOIS, cardinal DE JOYEUSE. « De Picheri, ce 19 de novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e622">Fol. 29 • 25 Lettre d'« YSABEAU DE SAVOYE », comtesse DU BOUCHAGE, à sa fille. « De Montesor, le VIIIe jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e668">Fol. 30 • 26 Lettre du Sr « FAYETTE,... à monseigneur de La Guierche,... A Boullongne, ce XXVIIIme jour de juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e712">Fol. 31 • 27 Lettre de MARGUERITE DE LORRAINE, duchesse DE JOYEUSE, « à ma bonne tante, madame la visdanmes... Ce XVIe jour de novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e748">Fol. 32 • 28 Lettre de « MARGUERITTE DE LORRAINE [duchesse DE JOYEUSE]... à madame la vydame ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e781">Fol. 33 • 29 Lettre de HENRIETTE-CATHERINE DE JOYEUSE « à madame la vidasme ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e819">Fol. 34 • 30 Lettre de CHARLES « DE MONTMORENCY,... à madame la contesse de Bouchaize,... De Montrichard, ce premier juing 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e857">Fol. 35 • 31 État des « gentilzhommes ou cappitaines de marque mortz ou blessez devant la ville d'Issoire, depuys le vingt huictiesme may 1577 que ladicte ville fut assiegée, jusques au dimanche neufiesme jung que l'assault fut donné ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e895">Fol. 36 • 32 Lettre de « FR[ANÇOIS] DE JOYEUSE » à la comtesse Du Bouchage. « De Paris, le 12e novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e931">Fol. 37 • 33 Lettre de FRANÇOIS, cardinal DE JOYEUSE, « à mesdames la vidame de Nançay et Du Bouchage,... De Rome, le 2 may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e964">Fol. 38 • 34 Lettre de « HELLENE DE LA VALETTE » à la comtesse Du Bouchage.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1002">Fol. 39 • 35 Nouvelles de la cour. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1040">Fol. 41 • 36 Lettre d' « ANNE DE JOYEUSE » à la comtesse Du Bouchage. « A Paris, le XX8me mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1076">Fol. 42 • 37 Lettre de « Frere ANGE, cappucin [HENRI DE JOYEUSE]... à madame la vidame... De Paris, ce 30 mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1109">Fol. 43 • 38 Lettre de « FRANÇOIS, car[dinal] DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, le 21 novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1142">Fol. 44 • 39 Lettre de « FRANÇOIS, cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, le 20 janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1175">Fol. 45 • 40 Lettre de GASPARD DE LA CHATRE, Sr DE « NANÇAY,... à monsieur le conte Du Bouchage,... De Paris, ce dernier jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1216">Fol. 46 • 41 Lettre de « FR[ANÇOIS], cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, ce VII novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1249">Fol. 47 • 42 Lettre de « FR[ANÇOIS], cardinal DE JOYEUSE,... à madame la contesse Du Bouchage ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1282">Fol. 48 • 43 Lettre de BERNARD DE NOGARET, Sr DE « LA VALETTE,... à madame la contesse Du Bouchage,... De Paris, ce 15e febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1326">Fol. 49 • 44 Lettre de « Frere ANTOINE SCIPION DE JOYEUSE [chevalier de Malte]... à madame la contesse Du Bouchage,... Du Mans, ce 3 octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1364">Fol. 50 • 45 Lettre de « FRANÇOYS, cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De St Germain, ce 14 novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1400">Fol. 51 • 46 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à madame la contesse du Bouchage,... A Narbonne, le 15 septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1433">Fol. 52 • 47 Lettre de « CLAUDE DE LORRAINE [duc D'AUMALE]... à monseigneur le conte Du Bouchaige ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1471">Fol. 53 • 48 Lettre de « MADELENE DE SAVOYE [duchesse DE MONTMORENCY]... à madame la contesse Du Boschage,... De Chantilly, ce XXXme de mars 1586 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1512">Fol. 54 • 49 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à monsieur le conte Du Bouchage,... A Thoulouse, le 29 aust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1545">Fol. 55 • 50 Lettre de « FR[ANÇOIS], cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, ce 9 aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1578">Fol. 56 • 51 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à madame la contesse Du Bouchage,... A Thoulouse, le 23 septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1611">Fol. 57 • 52 « Lettre de « S[IMON II] DE MAILLE [DE BREZE], archevesque de Tours... à madame la comtesse Du Bouschaige,... De Tours, ce XIIIe avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1652">Fol. 58 • 53 Lettre d'«ANNE DE JOYEUSE,... à monsieur le compte Du Bouschaige,... De Brioude, ce XX3me juin 1577 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1688">Fol. 59 • 54 Lettre de « HENRY [III]... à monsieur de Prye, chevallier de mon ordre... Escript à Lyon, le VIIe jour de septembre 1574 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1729">Fol. 60 • 55 Lettre de GUILLAUME DE « JOYEUSE,... à madame la contesse Du Bouchage,... A Narbonne, le 20 febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1762">Fol. 61 • 56 Lettre d'«ANNE DE JOYEUSE » à « madame ma tente... De Montpellier, ce IIIe aoust 1577 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1793">Fol. 62 • 57 « Cy apres s'ensuyvent les noms des seigneurs, cappitaines et gentilzhommes mortz et blessez devant Yssoire, depuys le commencement du siege jusques au vendredy matin, sixiesme jour de jung 1577 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1826">Fol. 63 • 58 Lettre de « CLAUDE DE BATARNAY,... à monsieur le conte Du Bochage,... De Bordeos, l'osieme de juigl ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1859">Fol. 64 • 59 Lettre de MELCHIOR DES PREZ, Sr DE « MONTPEZAT,... à monsieur le conte Du Bouchage,... De Montrichart, ce VIIIe d'apvril 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1893">Fol. 65 • 60 Lettre de « CHARLES DE MONTMORENCY,... à madame la vidasme d'Amiens, contesse Du Bouchage,... Du camp devant Selles, ce IXe d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1929">Fol. 66 • 61 Lettre de FRANÇOIS, cardinal DE JOYEUSE, « à mesdames la vidame et Du Bouchage,... De Rome, le 28 juin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1957">Fol. 67 • 62 Lettre de FRANÇOIS, cardinal DE JOYEUSE, « à madame la vidame d'Amiens... De Rome, ce dernier de juin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e1985">Fol. 68 • 63 Lettre de « HENRY DE BATARNAY,... à madame la contesse Du Bouchaige,... De Baugé, ce 29me jour d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2016">Fol. 69 • 64 Lettre de FRANÇOIS, cardinal DE JOYEUSE « à mesdames la visdame et Du Bouschage,... De Thoulouse, ce 25 d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2044">Fol. 70 • 65 Lettre de « H[ENRI] DE JOYEUSE,... à madame la vidame d'Amiens... De Tholoze, ce 3me febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2075">Fol. 71 • 66 Lettre de « FR[ANÇOIS], cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, ce 15 janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2098">Fol. 72 • 67 Lettre de « HENRY DE BATARNAY,... à madame la contesse Du Bouchaige,... A Paris, ce 7me juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2119">Fol. 73 • 68 Lettre de « GUY DE DAILLON [comte DU LUDE]... à monsieur le comte Du Bouchage,...Du camp de Brouage, ce XIXme jour d'aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2140">Fol. 74 • 69 Lettre de MARGUERITE DE LORRAINE, duchesse DE JOYEUSE, « à madame la contesse Du Bouchage ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2158">Fol. 76 • 70 Lettre d'«ANNE DE JOYEUSE,... à madame la contesse Du Bouchaige,... De Paris, ce XXVIIIe octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2174">Fol. 77 • 71 Lettre de « CLAUDE DE JOYEUSE [Sr DE SAINT-SAUVEUR].... à madame la contesse Du Bouchaige,... A Paris, ce 17me jour de fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2193">Fol. 78 • 72 Lettre de « CLAUDE DE JOYEUSE [Sr DE SAINT-SAUVEUR]... à madame la contesse Du Bouchaige,... A Saumur, ce 17me jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050086_d0e2207">Fol. 79 • 73 Publication de la vente et «alienation du dommaine dalphinal » du roi, avec l'état des châteaux, terres, rentes, greffes, juridictions et autres droits mis en vente. « Faict à Grenoble, le troysiesme jour du mois d'octobre mil cinq cens quatre vingtz ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3636 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50086r&Cote=Français 3636&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3636 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9125</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">Dépouillement bibliographique</p>
+</div>
+<div class="description-part">
+<span>
+<p>Ce dépouillement bibliographique est réalisé de façon systématique à partir des publications acquises par le département des Manuscrits. Il est issu de chargements périodiques (dernier chargement : février 2021).</p>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">2018</p>
+</div>
+<div class="description-part">
+<span>
+<p>Daniela TOMASINI, <emph render="italic">Nur Freundschaft oder fare affidamento ?</emph>, Berlin : Peter Lang GmbH, 2018, cité p. 227, 228, 229. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb45574185x" class="hrefLink ext">16-IMPR-3562</a>.</p>
+</span>
+</div>
+</div>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Daillon, Gui de, comte du Lude. • Lettres.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Fumée, Nicolas. • Lettres.</p>
+<p>Henri III, roi de France. • Actes et lettres.</p>
+<p>Joyeuse, Anne, duc de, amiral de France. • Actes et lettres.</p>
+<p>Joyeuse, François de, cardinal. • Lettres et actes.</p>
+<p>Joyeuse, Guillaume, vicomte de, maréchal de France. • Lettres.</p>
+<p>Joyeuse, Henri, duc de, maréchal de France. • Actes et lettres.</p>
+<p>Joyeuse, Marguerite de Lorraine, duchesse de. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e96');">1 Lettre de « HENRY [III]... à madame Du Bouchaige ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e102');">2 « Escrit de HENRY DE LOREINE, duc DE GUISE, adressant à monsieur le duc de Nevers, quand il s'entremist par ordre de Henry troisme avec la roine Catherine de Medicis, pour l'accomodement du roi de Navarre avec luy ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e118');">3 Lettre de « HENRY [III]... à monseigneur de Prye, gouverneur de ma ville de Tours... Escript à Paris, le XVIe jour de may 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e134');">4 Lettre de « MARIE DE BATARNAY » à madame Du Bouchage. « De Paris, ce XVIe febvrier 1581 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e150');">5 Lettre de « F[RANÇOIS] DE MONTMORENCY,... à monseigneur le conte Du Bouchaige, mon oncle ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e163');">6 Lettre de FRANÇOIS, « card[inal] DE JOYEUSE,... à madame la contesse Du Bouchage,... De Marmoutier, le 7 may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e176');">7 Lettre d' « ANNE [duc] DE JOYEUSE,... à madame la contesse Du Bouchaige ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e194');">8 Lettre de MARGUERITE DE LORRAINE, duchesse DE JOYEUSE, « à madame la contesse Du Bouchage ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e217');">9 Lettre de FRANÇOIS, cardinal DE JOYEUSE, à sa tante. « De Narbonne, ce 16 de novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e240');">10 Lettre de « MARGUERITE DE LORRAINE [duchesse DE JOYEUSE]... à madame la contesse Du Bouchage ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e263');">11 Lettre de « NICOLAS [Ier, FUMEE], e[vêque] de Beauvays... De Louviers, ce 17 en janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e272');">12 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à monsieur le conte Du Bouchaige,... De Thoulouse, ce XXVe jour de febvrier 1580 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e303');">13 Lettre de « M[ARIE] DE LUXEMBOURG [duchesse DE MERCOEUR]... à madame la vydame d'Amyens... De Paris, ce XVIe de jullet 1588 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e339');">14 Lettre de « MARGUERITE DE LORRAINE [duchesse DE JOYEUSE]... à madame la contesse Du Bouchage,... De Paris, ce cincquiesme d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e367');">15-17 Trois lettres de « MARGUERITE DE LORRAINE [duchesse DE JOYEUSE]... à madame la contesse Du Bouchage ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e375');">18 Lettre de HENRI DE « JOYEUSE,... à madame la vidame d'Amiens... De Thoulouse, le 29me juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e411');">19 Lettre de « MARGUERITE DE LORRAINE [duchesse DE JOYEUSE]... à mes tantes, mesdames la vidame et Du Bouchage ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e444');">20 Lettre de « MARGUERITE DE LORRAINE », duchesse DE JOYEUSE, à la comtesse Du Bouchage.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e477');">21 Lettre de « H[ENRIE] DE SAVOYE [duchesse DE MAYENNE]... à madame la contesse Du Bouchaige,... De Grenoble, ce 13 apvril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e515');">22 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à madame la contesse Du Bouchaige,... A Narbonne, le X de novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e548');">23 Lettre d'«ANNE DE DAILLON [marquise DE RUFFEC]... De Paris, se XIIe de desambre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e589');">24 Lettre de FRANÇOIS, cardinal DE JOYEUSE. « De Picheri, ce 19 de novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e622');">25 Lettre d'« YSABEAU DE SAVOYE », comtesse DU BOUCHAGE, à sa fille. « De Montesor, le VIIIe jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e668');">26 Lettre du Sr « FAYETTE,... à monseigneur de La Guierche,... A Boullongne, ce XXVIIIme jour de juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e712');">27 Lettre de MARGUERITE DE LORRAINE, duchesse DE JOYEUSE, « à ma bonne tante, madame la visdanmes... Ce XVIe jour de novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e748');">28 Lettre de « MARGUERITTE DE LORRAINE [duchesse DE JOYEUSE]... à madame la vydame ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e781');">29 Lettre de HENRIETTE-CATHERINE DE JOYEUSE « à madame la vidasme ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e819');">30 Lettre de CHARLES « DE MONTMORENCY,... à madame la contesse de Bouchaize,... De Montrichard, ce premier juing 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e857');">31 État des « gentilzhommes ou cappitaines de marque mortz ou blessez devant la ville d'Issoire, depuys le vingt huictiesme may 1577 que ladicte ville fut assiegée, jusques au dimanche neufiesme jung que l'assault fut donné ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e895');">32 Lettre de « FR[ANÇOIS] DE JOYEUSE » à la comtesse Du Bouchage. « De Paris, le 12e novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e931');">33 Lettre de FRANÇOIS, cardinal DE JOYEUSE, « à mesdames la vidame de Nançay et Du Bouchage,... De Rome, le 2 may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e964');">34 Lettre de « HELLENE DE LA VALETTE » à la comtesse Du Bouchage.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1002');">35 Nouvelles de la cour. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1040');">36 Lettre d' « ANNE DE JOYEUSE » à la comtesse Du Bouchage. « A Paris, le XX8me mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1076');">37 Lettre de « Frere ANGE, cappucin [HENRI DE JOYEUSE]... à madame la vidame... De Paris, ce 30 mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1109');">38 Lettre de « FRANÇOIS, car[dinal] DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, le 21 novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1142');">39 Lettre de « FRANÇOIS, cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, le 20 janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1175');">40 Lettre de GASPARD DE LA CHATRE, Sr DE « NANÇAY,... à monsieur le conte Du Bouchage,... De Paris, ce dernier jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1216');">41 Lettre de « FR[ANÇOIS], cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, ce VII novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1249');">42 Lettre de « FR[ANÇOIS], cardinal DE JOYEUSE,... à madame la contesse Du Bouchage ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1282');">43 Lettre de BERNARD DE NOGARET, Sr DE « LA VALETTE,... à madame la contesse Du Bouchage,... De Paris, ce 15e febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1326');">44 Lettre de « Frere ANTOINE SCIPION DE JOYEUSE [chevalier de Malte]... à madame la contesse Du Bouchage,... Du Mans, ce 3 octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1364');">45 Lettre de « FRANÇOYS, cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De St Germain, ce 14 novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1400');">46 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à madame la contesse du Bouchage,... A Narbonne, le 15 septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1433');">47 Lettre de « CLAUDE DE LORRAINE [duc D'AUMALE]... à monseigneur le conte Du Bouchaige ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1471');">48 Lettre de « MADELENE DE SAVOYE [duchesse DE MONTMORENCY]... à madame la contesse Du Boschage,... De Chantilly, ce XXXme de mars 1586 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1512');">49 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à monsieur le conte Du Bouchage,... A Thoulouse, le 29 aust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1545');">50 Lettre de « FR[ANÇOIS], cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, ce 9 aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1578');">51 Lettre de GUILLAUME, vicomte DE « JOYEUSE,... à madame la contesse Du Bouchage,... A Thoulouse, le 23 septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1611');">52 « Lettre de « S[IMON II] DE MAILLE [DE BREZE], archevesque de Tours... à madame la comtesse Du Bouschaige,... De Tours, ce XIIIe avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1652');">53 Lettre d'«ANNE DE JOYEUSE,... à monsieur le compte Du Bouschaige,... De Brioude, ce XX3me juin 1577 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1688');">54 Lettre de « HENRY [III]... à monsieur de Prye, chevallier de mon ordre... Escript à Lyon, le VIIe jour de septembre 1574 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1729');">55 Lettre de GUILLAUME DE « JOYEUSE,... à madame la contesse Du Bouchage,... A Narbonne, le 20 febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1762');">56 Lettre d'«ANNE DE JOYEUSE » à « madame ma tente... De Montpellier, ce IIIe aoust 1577 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1793');">57 « Cy apres s'ensuyvent les noms des seigneurs, cappitaines et gentilzhommes mortz et blessez devant Yssoire, depuys le commencement du siege jusques au vendredy matin, sixiesme jour de jung 1577 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1826');">58 Lettre de « CLAUDE DE BATARNAY,... à monsieur le conte Du Bochage,... De Bordeos, l'osieme de juigl ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1859');">59 Lettre de MELCHIOR DES PREZ, Sr DE « MONTPEZAT,... à monsieur le conte Du Bouchage,... De Montrichart, ce VIIIe d'apvril 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1893');">60 Lettre de « CHARLES DE MONTMORENCY,... à madame la vidasme d'Amiens, contesse Du Bouchage,... Du camp devant Selles, ce IXe d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1929');">61 Lettre de FRANÇOIS, cardinal DE JOYEUSE, « à mesdames la vidame et Du Bouchage,... De Rome, le 28 juin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1957');">62 Lettre de FRANÇOIS, cardinal DE JOYEUSE, « à madame la vidame d'Amiens... De Rome, ce dernier de juin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e1985');">63 Lettre de « HENRY DE BATARNAY,... à madame la contesse Du Bouchaige,... De Baugé, ce 29me jour d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2016');">64 Lettre de FRANÇOIS, cardinal DE JOYEUSE « à mesdames la visdame et Du Bouschage,... De Thoulouse, ce 25 d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2044');">65 Lettre de « H[ENRI] DE JOYEUSE,... à madame la vidame d'Amiens... De Tholoze, ce 3me febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2075');">66 Lettre de « FR[ANÇOIS], cardinal DE JOYEUSE,... à madame la contesse Du Bouchage,... De Paris, ce 15 janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2098');">67 Lettre de « HENRY DE BATARNAY,... à madame la contesse Du Bouchaige,... A Paris, ce 7me juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2119');">68 Lettre de « GUY DE DAILLON [comte DU LUDE]... à monsieur le comte Du Bouchage,...Du camp de Brouage, ce XIXme jour d'aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2140');">69 Lettre de MARGUERITE DE LORRAINE, duchesse DE JOYEUSE, « à madame la contesse Du Bouchage ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2158');">70 Lettre d'«ANNE DE JOYEUSE,... à madame la contesse Du Bouchaige,... De Paris, ce XXVIIIe octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2174');">71 Lettre de « CLAUDE DE JOYEUSE [Sr DE SAINT-SAUVEUR].... à madame la contesse Du Bouchaige,... A Paris, ce 17me jour de fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2193');">72 Lettre de « CLAUDE DE JOYEUSE [Sr DE SAINT-SAUVEUR]... à madame la contesse Du Bouchaige,... A Saumur, ce 17me jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050086_d0e2207');">73 Publication de la vente et «alienation du dommaine dalphinal » du roi, avec l'état des châteaux, terres, rentes, greffes, juridictions et autres droits mis en vente. « Faict à Grenoble, le troysiesme jour du mois d'octobre mil cinq cens quatre vingtz ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

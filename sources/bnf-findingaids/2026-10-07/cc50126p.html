@@ -1,0 +1,512 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050126">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050126">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3675
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050126_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126">Français 3675 • Anc. 9169 • Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e126">1 Lettre du « card[inal] DE RICHELIEU,... à monsieur de Bethune,... De Paris, du XXVIe febvrier 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e135">Fol. 2 • 2 « Memoire envoié à monsieur de Bethune par monsieur le cardinal de Richelieu, suivant l'ordre du roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e143">Fol. 3 • 3 Lettre du « cardinal DE RICHELIEU,... à monsieur de Bethune,... De Pontoise, ce XXIIe octobre 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e154">Fol. 4 • 4 Lettre de « LOUIS [XIII]... à monseigneur de Bethunes,... Escrit à St Germain en Laye, le XXIIme octobre 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e168">Fol. 5 • 5 Lettre de « PIERRE, cardinal DE BERULLE,... à monsieur de Bethune,... A Paris, le 28 septembre 1627 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e181">Fol. 7 • 6 Lettre du « cardinal DE RICHELIEU,... à monsieur de Bethune,... De Longjumeau, ce XXIIIIe septembre 1627 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e192">Fol. 9 • 7 Lettre du « cardinal DE RICHELIEU,... à monsieur de Bethune,... A Blois, ce 1er octobre 1627 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e203">Fol. 11 • 8 « Memoire important », démontrant la nécessité de demander des secours au clergé pour terminer la guerre contre les Rochellois et les Anglais. « Du 24 7bre 1627 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e214">Fol. 13 • 9 « Articles envoyez de la court pour obtenir la subvention du clergé, an l'an mil 627 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e227">Fol. 17 • 10 Lettre sur les affaires de Rome et de l'Italie. « De Rome, ce 7 may 1626 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e245">Fol. 19 • 11 Lettre au cardinal de Richelieu, relative à une censure de la Sorbonne qu'il avait laissé publier. « De Rome, ce 8 may 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e253">Fol. 21 • 12 Lettre au cardinal de Richelieu, relative à l'entreprise contre La Rochelle. « De Rome, ce 12 aoust 1626 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e261">Fol. 23 • 13 « Copie de la proposition faicte par les Espagnolz à l'infante veufve de Mantoue pour parvenir à l'accomodement des affaires du Montferrat. Du 14 juing 1628 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e279">Fol. 25 • 14 « Capitolatione proposita dal Sr di Botru sopra le coze del Monferrato ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e300">Fol. 27 • 15 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... A Mantoue, ce 4 d'octobre 1628 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e308">Fol. 30 • 16 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... Mantoue, ce 8 de novembre 1628 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e316">Fol. 33 • 17 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... A Mantoue, ce 22e novembre 1628 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e327">Fol. 35 • 18 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... A Mantoue, ce 7 de desembre 1628 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e335">Fol. 37 • 19 Lettre de CHARLES, duc DE MANTOUE, à M. de Béthune. « Ce 27 decembre, à six heures de nuit ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e343">Fol. 39 • 20 Lettre de « CHARLES, duc DE MANTOUE », à M. de Béthune. « A Mantoue, ce 27 de desembre 1628 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e351">Fol. 43 et 47 • 21-22 Deux lettres de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... Mantoue, 23 de janvier 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e359">Fol. 49 • 23 Lettre de « CHARLES, duc DE MANTOUE », à M. de Béthune. « Mantoue, 7 de febvrier 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e367">Fol. 51 • 24 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur le comte de Bethune,... A Mantoue, 28 febvrier 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e375">Fol. 53 • 25 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit au camp de Set Chatte, le dernier jour de juing 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e386">Fol. 55 • 26 « Declaratio EDMUNDI RICHERII super editione libelli sui de ecclesiastica et politica potestate... anno Domini millesimo sexcentesimo vigesimo nono, die Veneris septima mensis decembris ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e399">27 Procès-verbal de la comparution d'Edmond Richer devant le Châtelet de Paris. « Le vendredy apres midy, septiesme jour de decembre, l'an mil six cens vingt neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e405">28 Attestation d'«ARMAND, card[inal] DE RICHELIEU », relative à la déclaration d'Edmond Richer. « Datum Parisiis, XIIII° kalendas januarii, anno Domini millesimo sexentesimo vigesimo nono ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e411">Fol. 57 • 29 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De St Charte, ce 2e juillet 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e425">Fol. 58 • 30 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De Montpellier, ce XXe juillet 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e436">Fol. 60 • 31 Instructions au nonce de la part du roi Louis XIII.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e447">Fol. 62 • 32 Lettre de « C[LAUDE LE] BOUTHILLIER,... à monseigneur de Bethune,... Au camp de St Chatte, le premier juillet 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e458">Fol. 64 • 33 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... A Fontainebleau, ce 18e septembre 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e469">Fol. 65 • 34 « Copie de la lettre de la main du roy [LOUIS XIII] au pape » Urbain VIII.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e477">35 « Copie de la lettre de la main du roy [LOUIS XIII] à M. le cardinal Barberin,... Escrit au camp de Ledignan, le 28 juing 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e483">Fol. 66 • 36 « Copie de la lettre escrite à Mr le cardinal Barbarin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e494">Fol. 67 • 37 Lettre de « C[LAUDE LE] BOUTHILLIER,... à monseigneur de Bethune,... A Fontainebleau, ce 18 septembre 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e502">Fol. 69 • 38-39 « Copies de lettres du roy [LOUIS XIII] à nostre St pere [Urbain VIII] et à M. le cardinal Barbarin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e513">Fol. 70 • 40-41 « Copies de lettres de la reyne mere [MARIE DE MEDICIS] à nostre St pere [Urbain VIII] et à monsieur le cardinal Barbarin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e524">Fol. 71 • 42 Lettre de « LOUIS [XIII]... à monseigneur de Betune,... Escrit à Fontainebleau, ce 18me septembre 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e535">Fol. 72 • 43 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Betune,... A Fontainebleau, le XVIIIe septembre 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e546">Fol. 73 • 44 Lettre du « cardinal BARBERINO,... à Mr de Bethune,... Monte Cavallo, 18 agosto 1629 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e562">Fol. 75 • 45 « Derniere Copie de la letre du pape [URBAIN VIII] au roy [Louis XIII]... Datum in nostro palatio Quirinali, hac die XVII augusti 1629 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e575">Fol. 77 • 46 « Coppie de la response de l'empereur [FERDINAND II] au roy [Louis XIII], sur l'office passé par son resident, le XXVIIe decembre 1628... Die quinta februarii 1629 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e591">Fol. 79 • 47 « Escriture sur le passage du roy [Louis XIII] à Suse... 16 febbraro 1629 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e599">Fol. 83 • 48 Dépêche, avec chiffre et déchiffrement, relative à l'intention du roi Louis XIII de s'unir avec le pape et la république de Venise pour défendre les intérêts du duc de Mantoue.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e607">Fol. 85 • 49 « Projet de traité du 3 mars 1629 », avec chiffre et déchiffrement.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e615">Fol. 87 • 50 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit au camp de Chaumont, le VIIe jour de mars 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e626">Fol. 88 • 51 Relation du « succes de Suse et des passages... Du VIIe mars 1629, au camp de Chaumont ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e637">Fol. 89 • 52 « Extraict des articles acordez entre le roy [Louis XIII et Charles-Emmanuel, duc] de Savoie,... Le XIe mars 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e648">Fol. 91 • 53 Relation de l'entrevue de Louis XIII et du duc de Savoie. « Du VIe jour d'avril 1629, à Suse ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e659">Fol. 93 • 54 Mémoire relatif aux affaires du roi pendant son séjour à Suze. « Du XXIe apvril 1629, au camp de Suze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e670">Fol. 95 • 55 « Articles de paix entre les deux couronnes [de France et d'Angleterre], accordées par messrs les ambassadeurs de Venize Zorzi Zorzi et Louis Contarini,... Faict à Suse, le 24e jour d'apvril mil six cens vingt neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e697">Fol. 97 • 56 « Letre de l'ampereur [FERDINAND II] à son residant à Venise... Datum Viennae, 7 junii, anno 1629 ». En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e710">Fol. 99 • 57 « Decret de l'ampereur [FERDINAND II] contre le duc de Mantoue », Charles de Nevers. En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e723">Fol. 101 • 58 « Divers partis à proposer par M. le marechal de Crequi, pour l'accommodement de Mantoue et Montferat. Du 9e octobre 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e737">Fol. 105 • 59 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Fontainebleau, ce XIIIe octobre 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e748">Fol. 106 • 60 « Copie de la lettre du Pere [GUILLAUME] LAMORMAIN escrite au Pere Suffran,... Viennae, 24 novembris 1629 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e761">Fol. 108 • 61 « Coppie d'une lettre escripte par [CHARLES DE NEVERS], duc de mantoue, à monseigneur le mareschal de Crequy,... Di Mantova, li 13 decembre 1629 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e769">Fol. 110 • 62 « Copia di lettera dell' imperatore FERDINANDO [II] al papa Urbano [VIII]... Datum Viennae, 24 decembris 1629 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e777">Fol. 113 • 63 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Oulx, le IIIe jour de mars 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e788">Fol. 117 • 64 Lettre de « C[LAUDE LE] BOUTHILLIER,... à monseigneur de Bethune,... A Paris, ce 18e janvier 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e799">Fol. 119 • 65 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De Lion, ce 28 janvier 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e807">Fol. 121 • 66 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... D'Ambrun, ce XIIIIe febvrier 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e818">Fol. 122 • 67 « Proposizioni di capitoli per far la pace, date dal signore cardinale di RICHELIEU, 18 febbraio 1630 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e826">Fol. 124 • 68 « Risposte fatte alle proposizioni del cardinale Richelieu. In Alessandria, 26 febbraio 1630 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e834">Fol. 126 • 69 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De Suze, ce 6e mars 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e845">Fol. 127 • 70 « Memoire de Mr le cardinal DE RICHELIEU pour traiter avec le pape Urbain VIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e856">Fol. 130 • 71 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... Du camp de Pignerol, le 27e mars 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e867">Fol. 132 • 72 « Relation des negotiations [de la France] avec le duc de Savoye, jusques au siege de Pignerol ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e880">Fol. 136 • 73 Mémoire, avec chiffre et déchiffrement, sur les négociations relatives à la restitution de Pignerol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e893">Fol. 138 • 74 « Propositions de Mr le cardinal DE RICHELIEU sur la paix d'Italie, avec les responses sur icelles ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e904">Fol. 142 • 75 « Memoire presenté au roy [Louis XIII] par le nonce », touchant les difficultés des négociations.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e912">Fol. 144 • 76 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... Du camp de Pignerol, ce 16e apvril 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e923">Fol. 145 • 77 « Propositions [du cardinal DE RICHELIEU] pour la paix d'Italie... Du 28e janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e934">Fol. 147 • 78 « Memoire de M. [le duc] DE SAVOYE », pour servir d'instruction à son ambassadeur relativement aux conditions de paix.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e947">Fol. 149 • 79 « Propositions du nunce de Turin sur les affaire[s] du Montferat et Mantouan ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e955">Fol. 151 • 80 « Scrittura formata in Turino dal Sre duca DI SAVOIA et non accettata dal Sre cardinale di Richelieu ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e969">Fol. 153 • 81 « Responce au memoire de M. [le duc] de Savoye ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e977">Fol. 155 • 82 « Capitulationi del marchese SPINOLA, mandate anche a Mantua ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e990">Fol. 157 • 83 « Memoire », avec chiffre et déchiffrement, « touchant la suspension d'armes proposée par M. [le duc] de Savoye ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e998">Fol. 159 • 84 « Suspancion proposée par PENEIROLE, nunce du pape ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e1006">Fol. 161 • 85 « Escript pour porter les choses à l'acommodement de Savoie et Gennes ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e1014">Fol. 163 • 86 Lettre adressée au cardinal de Richelieu, relative à un livre qu'il avait donné à examiner.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e1022">Fol. 169 • 87 « Copia de gli articoli tra il re cristianissimo e il re cattolico ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e1030">Fol. 170 • 88 « Santance de l'ampereur [FERDINAND II] contre [Charles de Nevers], duc de Mantoue... Die vigesima mensis martii, anno Domini 1628 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e1043">Fol. 172 • 89 « Responce du duc DE MANTOUE au general des convantuels... Di Mantova ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e1051">Fol. 174 • 90 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De St Germain, ce 26 novembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050126_d0e1062">Fol. 177 • 91 Don de « vingt un mil livres tournois de rente annuelle » fait par RICHELIEU à l'Académie royale, établie rue Vieille du Temple. Copie.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3675 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50126p&Cote=Français 3675&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059466m">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 32061 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50126p&Cote=MF 32061&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3675 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9169</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 32061. Cote de la matrice (pour commander une reproduction) : R 29463.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059466m" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9059466m.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9059466m.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Bouthillier, Claude, surintendant des finances. • Lettres et actes.</p>
+<p>Clergé. • Impositions, projet d'impôt pour subvenir à la campagne de 1627-1628.</p>
+<p>Ferdinand II, empereur d'Allemagne. • Rapports, avec le duc de Mantoue.</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>Gênes. • Différends avec le duc de Savoie.</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Louis XIII, roi de France. • Relations extérieures et traités, avec la Savoie.</p>
+<p>Mantoue. • Succession du duché.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Richelieu, Armand-Jean du Plessis de, cardinal. • Lettres.</p>
+<p>Richelieu, Armand-Jean du Plessis de, cardinal. • Pièces diverses.</p>
+<p>Richer, Edmond. • Procès.</p>
+<p>Rochelle, La. • Siège de 1627-1628.</p>
+<p>Savoie. • Relations diplomatiques, avec Gênes.</p>
+<p>Suse, Piémont. • Traité de 1629.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e126');">1 Lettre du « card[inal] DE RICHELIEU,... à monsieur de Bethune,... De Paris, du XXVIe febvrier 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e135');">2 « Memoire envoié à monsieur de Bethune par monsieur le cardinal de Richelieu, suivant l'ordre du roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e143');">3 Lettre du « cardinal DE RICHELIEU,... à monsieur de Bethune,... De Pontoise, ce XXIIe octobre 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e154');">4 Lettre de « LOUIS [XIII]... à monseigneur de Bethunes,... Escrit à St Germain en Laye, le XXIIme octobre 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e168');">5 Lettre de « PIERRE, cardinal DE BERULLE,... à monsieur de Bethune,... A Paris, le 28 septembre 1627 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e181');">6 Lettre du « cardinal DE RICHELIEU,... à monsieur de Bethune,... De Longjumeau, ce XXIIIIe septembre 1627 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e192');">7 Lettre du « cardinal DE RICHELIEU,... à monsieur de Bethune,... A Blois, ce 1er octobre 1627 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e203');">8 « Memoire important », démontrant la nécessité de demander des secours au clergé pour terminer la guerre contre les Rochellois et les Anglais. « Du 24 7bre 1627 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e214');">9 « Articles envoyez de la court pour obtenir la subvention du clergé, an l'an mil 627 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e227');">10 Lettre sur les affaires de Rome et de l'Italie. « De Rome, ce 7 may 1626 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e245');">11 Lettre au cardinal de Richelieu, relative à une censure de la Sorbonne qu'il avait laissé publier. « De Rome, ce 8 may 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e253');">12 Lettre au cardinal de Richelieu, relative à l'entreprise contre La Rochelle. « De Rome, ce 12 aoust 1626 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e261');">13 « Copie de la proposition faicte par les Espagnolz à l'infante veufve de Mantoue pour parvenir à l'accomodement des affaires du Montferrat. Du 14 juing 1628 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e279');">14 « Capitolatione proposita dal Sr di Botru sopra le coze del Monferrato ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e300');">15 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... A Mantoue, ce 4 d'octobre 1628 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e308');">16 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... Mantoue, ce 8 de novembre 1628 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e316');">17 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... A Mantoue, ce 22e novembre 1628 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e327');">18 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... A Mantoue, ce 7 de desembre 1628 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e335');">19 Lettre de CHARLES, duc DE MANTOUE, à M. de Béthune. « Ce 27 decembre, à six heures de nuit ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e343');">20 Lettre de « CHARLES, duc DE MANTOUE », à M. de Béthune. « A Mantoue, ce 27 de desembre 1628 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e351');">21-22 Deux lettres de « CHARLES, duc DE MANTOUE,... à monseigneur de Bethune,... Mantoue, 23 de janvier 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e359');">23 Lettre de « CHARLES, duc DE MANTOUE », à M. de Béthune. « Mantoue, 7 de febvrier 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e367');">24 Lettre de « CHARLES, duc DE MANTOUE,... à monseigneur le comte de Bethune,... A Mantoue, 28 febvrier 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e375');">25 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit au camp de Set Chatte, le dernier jour de juing 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e386');">26 « Declaratio EDMUNDI RICHERII super editione libelli sui de ecclesiastica et politica potestate... anno Domini millesimo sexcentesimo vigesimo nono, die Veneris septima mensis decembris ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e399');">27 Procès-verbal de la comparution d'Edmond Richer devant le Châtelet de Paris. « Le vendredy apres midy, septiesme jour de decembre, l'an mil six cens vingt neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e405');">28 Attestation d'«ARMAND, card[inal] DE RICHELIEU », relative à la déclaration d'Edmond Richer. « Datum Parisiis, XIIII° kalendas januarii, anno Domini millesimo sexentesimo vigesimo nono ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e411');">29 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De St Charte, ce 2e juillet 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e425');">30 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De Montpellier, ce XXe juillet 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e436');">31 Instructions au nonce de la part du roi Louis XIII.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e447');">32 Lettre de « C[LAUDE LE] BOUTHILLIER,... à monseigneur de Bethune,... Au camp de St Chatte, le premier juillet 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e458');">33 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... A Fontainebleau, ce 18e septembre 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e469');">34 « Copie de la lettre de la main du roy [LOUIS XIII] au pape » Urbain VIII.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e477');">35 « Copie de la lettre de la main du roy [LOUIS XIII] à M. le cardinal Barberin,... Escrit au camp de Ledignan, le 28 juing 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e483');">36 « Copie de la lettre escrite à Mr le cardinal Barbarin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e494');">37 Lettre de « C[LAUDE LE] BOUTHILLIER,... à monseigneur de Bethune,... A Fontainebleau, ce 18 septembre 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e502');">38-39 « Copies de lettres du roy [LOUIS XIII] à nostre St pere [Urbain VIII] et à M. le cardinal Barbarin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e513');">40-41 « Copies de lettres de la reyne mere [MARIE DE MEDICIS] à nostre St pere [Urbain VIII] et à monsieur le cardinal Barbarin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e524');">42 Lettre de « LOUIS [XIII]... à monseigneur de Betune,... Escrit à Fontainebleau, ce 18me septembre 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e535');">43 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Betune,... A Fontainebleau, le XVIIIe septembre 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e546');">44 Lettre du « cardinal BARBERINO,... à Mr de Bethune,... Monte Cavallo, 18 agosto 1629 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e562');">45 « Derniere Copie de la letre du pape [URBAIN VIII] au roy [Louis XIII]... Datum in nostro palatio Quirinali, hac die XVII augusti 1629 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e575');">46 « Coppie de la response de l'empereur [FERDINAND II] au roy [Louis XIII], sur l'office passé par son resident, le XXVIIe decembre 1628... Die quinta februarii 1629 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e591');">47 « Escriture sur le passage du roy [Louis XIII] à Suse... 16 febbraro 1629 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e599');">48 Dépêche, avec chiffre et déchiffrement, relative à l'intention du roi Louis XIII de s'unir avec le pape et la république de Venise pour défendre les intérêts du duc de Mantoue.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e607');">49 « Projet de traité du 3 mars 1629 », avec chiffre et déchiffrement.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e615');">50 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit au camp de Chaumont, le VIIe jour de mars 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e626');">51 Relation du « succes de Suse et des passages... Du VIIe mars 1629, au camp de Chaumont ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e637');">52 « Extraict des articles acordez entre le roy [Louis XIII et Charles-Emmanuel, duc] de Savoie,... Le XIe mars 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e648');">53 Relation de l'entrevue de Louis XIII et du duc de Savoie. « Du VIe jour d'avril 1629, à Suse ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e659');">54 Mémoire relatif aux affaires du roi pendant son séjour à Suze. « Du XXIe apvril 1629, au camp de Suze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e670');">55 « Articles de paix entre les deux couronnes [de France et d'Angleterre], accordées par messrs les ambassadeurs de Venize Zorzi Zorzi et Louis Contarini,... Faict à Suse, le 24e jour d'apvril mil six cens vingt neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e697');">56 « Letre de l'ampereur [FERDINAND II] à son residant à Venise... Datum Viennae, 7 junii, anno 1629 ». En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e710');">57 « Decret de l'ampereur [FERDINAND II] contre le duc de Mantoue », Charles de Nevers. En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e723');">58 « Divers partis à proposer par M. le marechal de Crequi, pour l'accommodement de Mantoue et Montferat. Du 9e octobre 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e737');">59 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Fontainebleau, ce XIIIe octobre 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e748');">60 « Copie de la lettre du Pere [GUILLAUME] LAMORMAIN escrite au Pere Suffran,... Viennae, 24 novembris 1629 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e761');">61 « Coppie d'une lettre escripte par [CHARLES DE NEVERS], duc de mantoue, à monseigneur le mareschal de Crequy,... Di Mantova, li 13 decembre 1629 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e769');">62 « Copia di lettera dell' imperatore FERDINANDO [II] al papa Urbano [VIII]... Datum Viennae, 24 decembris 1629 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e777');">63 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Oulx, le IIIe jour de mars 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e788');">64 Lettre de « C[LAUDE LE] BOUTHILLIER,... à monseigneur de Bethune,... A Paris, ce 18e janvier 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e799');">65 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De Lion, ce 28 janvier 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e807');">66 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... D'Ambrun, ce XIIIIe febvrier 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e818');">67 « Proposizioni di capitoli per far la pace, date dal signore cardinale di RICHELIEU, 18 febbraio 1630 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e826');">68 « Risposte fatte alle proposizioni del cardinale Richelieu. In Alessandria, 26 febbraio 1630 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e834');">69 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De Suze, ce 6e mars 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e845');">70 « Memoire de Mr le cardinal DE RICHELIEU pour traiter avec le pape Urbain VIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e856');">71 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... Du camp de Pignerol, le 27e mars 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e867');">72 « Relation des negotiations [de la France] avec le duc de Savoye, jusques au siege de Pignerol ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e880');">73 Mémoire, avec chiffre et déchiffrement, sur les négociations relatives à la restitution de Pignerol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e893');">74 « Propositions de Mr le cardinal DE RICHELIEU sur la paix d'Italie, avec les responses sur icelles ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e904');">75 « Memoire presenté au roy [Louis XIII] par le nonce », touchant les difficultés des négociations.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e912');">76 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... Du camp de Pignerol, ce 16e apvril 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e923');">77 « Propositions [du cardinal DE RICHELIEU] pour la paix d'Italie... Du 28e janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e934');">78 « Memoire de M. [le duc] DE SAVOYE », pour servir d'instruction à son ambassadeur relativement aux conditions de paix.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e947');">79 « Propositions du nunce de Turin sur les affaire[s] du Montferat et Mantouan ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e955');">80 « Scrittura formata in Turino dal Sre duca DI SAVOIA et non accettata dal Sre cardinale di Richelieu ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e969');">81 « Responce au memoire de M. [le duc] de Savoye ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e977');">82 « Capitulationi del marchese SPINOLA, mandate anche a Mantua ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e990');">83 « Memoire », avec chiffre et déchiffrement, « touchant la suspension d'armes proposée par M. [le duc] de Savoye ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e998');">84 « Suspancion proposée par PENEIROLE, nunce du pape ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e1006');">85 « Escript pour porter les choses à l'acommodement de Savoie et Gennes ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e1014');">86 Lettre adressée au cardinal de Richelieu, relative à un livre qu'il avait donné à examiner.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e1022');">87 « Copia de gli articoli tra il re cristianissimo e il re cattolico ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e1030');">88 « Santance de l'ampereur [FERDINAND II] contre [Charles de Nevers], duc de Mantoue... Die vigesima mensis martii, anno Domini 1628 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e1043');">89 « Responce du duc DE MANTOUE au general des convantuels... Di Mantova ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e1051');">90 Lettre du « cardinal DE RICHELIEU,... à monseigneur de Bethune,... De St Germain, ce 26 novembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050126_d0e1062');">91 Don de « vingt un mil livres tournois de rente annuelle » fait par RICHELIEU à l'Académie royale, établie rue Vieille du Temple. Copie.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

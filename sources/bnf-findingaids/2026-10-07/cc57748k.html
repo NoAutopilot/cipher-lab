@@ -1,0 +1,516 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057748">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057748">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4698
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057748_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748">Français 4698 • Anc. 9520 • Recueil de pièces originales et de copies concernant l'histoire des années 1585 à 1591.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e147">Fol. 9 • 1 Lettre du duc DE MANTOUE au duc de Nevers. « Di Casale, a XV di maggio 1590 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e161">Fol. 11 et suiv • 2-5 Lettres de « SCIPIONE, cardinale GONZAGA », au duc de Nevers. 1590. En italien. Chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e169">Fol. 19 • 6 Lettre de J.-V. DE GONZAGUE, cardinal, au duc de Nevers. « Di Roma, alli 14 di aprile 1590 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e177">Fol. 21 et 23 • 7-8 Lettres du cardinal SCIPION DE GONZAGUE au duc de Nevers. 1590. En italien. Chiffre et déchiffrement.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e185">Fol. 25 • 9 Lettre du cardinal « CAETANO » au cardinal « Montalto,... Di Parigi, a 23 di febra ro 1590 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e193">Fol. 26 • 10 Lettre de SCIPION, cardinal DE GONZAGUE, au duc de Nevers. « Di Roma, a 24 di marzo 1590 ». En italien. Chiffre, dont une petite partie seulement est déchiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e201">Fol. 28 • 11 Lettre de « FABIO GONZAGA » au duc de Nevers. Mantoue, 11 avril 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e209">Fol. 30 et suiv • 12-16 Lettres de SCIPION, cardinal DE GONZAGUE, au duc de Nevers. 1590. Chiffre. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e217">Fol. 40 • 17-18 Billets de « LODOVICO BIRAGO » au duc de Nevers. Novembre et décembre 1591. Chiffre et déchiffrement. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e225">Fol. 41 et 43 • 19-20 Lettres du duc DE MANTOUE au duc de Nevers. Marmiruolo et Mantoue, juillet et mars 1590. Chiffre et déchiffrement. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e233">Fol. 45 • 21 Lettre de SCIPION, cardinal DE GONZAGUE, au duc de Nevers. « Di Roma, a 8 di maggio 1590 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e241">Fol. 47 • 22 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Cuy, presso Esperné, 1591, il 2 decembre ». En italien. Chiffre et déchiffrement.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e249">Fol. 48 • 23 Lettre de « CAMILLO VOLTA » au duc de Nevers. « Di Roma, li 5 di settembre 1585 ». Chiffre et déchiffrement. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e257">Fol. 52 • 24 Lettre, en italien, sans signature, ni date, ni adresse. Commence par : « Illmo et eccmo sigre ! E cosa, come dice V. Eccza, di gran consideratione l'andata del principe Matthias in Fiandra... » et finit par : «... mal possono star insieme lungo sonno et largo imperio ». Copie inachevée. Vers 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e277">Fol. 57 et suiv • 25-27 Lettres de « LODOVICO BIRAGO » au duc de Nevers. De Villiers près Chalon, Sedan, Langres, décembre et novembre 1591. Chiffre et déchiffrement. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e285">Fol. 63 et suiv • 28-33 Lettres du Sr « HIERONIMO GRIMALDI » au duc de Nevers. Gênes, janvier-avril 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e296">Fol. 81 • 34 Lettre d' « ALFONSO GALVAGHI, presidente di Casale », au duc de Nevers. « Di Casale, alli IX di aprile 1590 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e304">Fol. 82 bis et suiv • 35-37 Lettres de « GIUSEPPE ARNOLFINI,... luchese mercanti in Lione », au duc de Nevers. Lyon, janviermars 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e312">Fol. 89 et suiv • 38-41 Lettres du duc DE NEVERS au duc de Mantoue, son neveu, et au cardinal Scipion de Gonzague. Janvier, mars et avril 1590. En italien. Chiffre et déchiffrement. Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e320">Fol. 102 • 42 Lettre de « FULVIO GONZAGA » au duc de Nevers. Mantoue, 12 avril 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e328">43 Chiffre. Une note de la main du duc Nevers, placée en haut du feuillet 104, où se trouve ce chiffre, porte : « Con la lettera di 16 febraro 1590. R. 9 aprille 1590. Da Parigi ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e334">Fol. 105 • 44 Déchiffrement des passages chiffrés de la lettre contenue aux fol. 17-18 du présent ms., lettre rappelée dans la note qui précède. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e342">Fol. 106 • 45 Lettre de « MARIO VOLTA » au duc de Nevers. Mantoue, 28 février 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e350">Fol. 107 • 46 Lettre de « FABIO GONZAGA » au duc de Nevers. « Di Mantova, a 17 di marzo 1590 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e358">Fol. 108 • 47 Lettre du duc DE NEVERS au cardinal Scipion de Gonzague. Decize, 28 février 1590. En italien. Chiffre. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e366">48 Courte note, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e390">Fol. 111 • 49 Lettre de FRANÇOIS DE GONZAGUE, évêque de Cefalu, au duc de Nevers. Rome, 21 avril 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e398">Fol. 113 • 50 Lettre de « FABIO GONZAGA » au duc de Nevers. Casal, 12 juin 1590. En italien.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e406">51-63 Lettres du duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e412">Fol. 115 • 51 à la duchesse douairière de Mantoue, Éléonore d'Autriche. Nevers, 27 mai 1590. En italien. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e423">Fol. 116 et 118 • 52-53 au cardinal Scipion de Gonzague. Nevers, 27 mars et 27 avril 1590. En italien. Minutes. Le commencement de la seconde manque.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e434">Fol. 120 et 122 • 54-55 au duc de Mantoue. Nevers, 5 janvier et 9 juillet 1590. En italien. Minutes. Chiffre accompagné, pour la première, du déchiffrement.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e445">Fol. 123 et 124 • 56-57 au cardinal Scipion de Gonzague. Nevers, 29 juillet et 6 août 1590. En italien. Minutes.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e456">Fol. 125 et suiv • 58-60 au duc de Mantoue. Nevers, mai et juillet 1590. En italien. Minutes.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e467">Fol. 128 • 61 au cardinal Scipion de Gonzague. Nevers, 28 juillet 1590. En italien. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e478">Fol. 129 et 131 • 62-63 au duc et à la duchesse de Mantoue. Nevers, août et mai 1590. En italien. Minutes.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e489">Fol. 132 • 64 Nouvelles d'Italie adressées au duc de Nevers par GIUSEPPE ARNOLFINI. Juillet 1590. Les lieux d'origine sont Venise, Barcelonnette, Fozzano, Turin. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e497">Fol. 137 • 65 Lettre du duc DE NEVERS au cardinal Scipion de Gonzague. Nevers, 17 mai 1590. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e508">Fol. 138 • 66 Requête adressée au duc de Nevers par le Sr DE PLUVOT, au nom des habitants de Vezelay, pour une prolongation de trêve. 1590.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e519">Fol. 139 et suiv • 67-69 Lettres du duc DE NEVERS au cardinal Scipion de Gonzague et au duc de Mantoue. 1590. En italien. Copies. Chiffre, avec déchiffrement. La fin de la première lettre manque.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e527">Fol. 145 • 70 Lettre de « GIUSEPPE ARNOLFINI » au duc de Nevers. « Da S. Amour, a 24 giugnio 1590 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e535">Fol. 146 • 71 Nouvelles datées d'Anvers, 11 juillet 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e546">Fol. 147 • 72 Lettre d' « ASCANIO ANDREASI » au duc de Nevers. Casal, 9 avril 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e554">Fol. 149 • 73 Lettre, signée : « ASCANIO ANDREASI » et « D. LEONORA PICA DELLA MIRANDOLA ANDREASI », au duc de Nevers. Casal, 9 avril 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e562">Fol. 151 • 74 Lettre du duc DE NEVERS au cardinal Scipion de Gonzague. Nevers, 14 mai 1590. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e570">Fol. 152 • 75 Nouvelles d'Italie, de Suisse, de Brabant et d'Angleterre, adressées par ARNOLFINI au duc de Nevers. Ces nouvelles, datées de Turin, Rome, Bâle, Zurich, Anvers et Londres, sont du 6 au 31 mars 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e578">Fol. 155 • 76 Lettre, signée : « Il protonotario CAPILUPI », adressée par l'intermédiaire de « Guiffredo Arnolfini, a Lione », au duc de Nevers par le destinataire, Scipion, cardinal de Gonzague. « Di Casa, il 12 di maggio 1590 ». En italien.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e586">77-82 Cinq lettres du duc DE NEVERS et une de son fils.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e592">Fol. 157 • 77 au cardinal Scipion de Gonzague. Decize, 19 mars 1590. En italien. Copie. Le commencement manque.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e603">Fol. 158 • 78 « au seigneur Christaphoro Balbani ». Nevers, 27 avril 1590. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e614">Fol. 159 • 79 au SrAscanio Andreasi. Avril 1590. En italien. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e627">Fol. 159 • 80 au Sr « Ascanio Andreasi ». Nevers, 30 avril 1590. En italien. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e641">Fol. 159 • 81 au Sr « presidente Salvagna ». En italien. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e655">Fol. 160 • 82 au duc de Mantoue. Decize, 19 mars 1590. En italien. Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e669">Fol. 161 • 83 Lettre, en italien, adressée au duc de Nevers par « li BONVISI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e690">Fol. 163 et 165 • 84-85 Nouvelles datées de Gênes, Nuremberg, Bade, Bâle, Turin, Venise et Turin. Juin et avril 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e701">Fol. 167 et 169 • 86-87 Lettres de « GIUSEPPE ARNOLFINI » au duc de Nevers. Lyon, 21 février et 20 mars 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e709">Fol. 171 • 88 Nouvelles datées de Turin, 11 et 16 juin 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e720">Fol. 173 • 89 Lettre de « C. PIETR' ANTONIO DE' BENEDETTI » au duc de Nevers. « Di Casale, alli 8 di giugno 1590 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e728">Fol. 174 • 90 Lettre de « CARLO CONTI, vescovo d'Ancona », à son frère, « Lotthario Conti ». 24 décembre 1590. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e736">Fol. 176 • 91 Lettre de GIUSEPPE ARNOLFINI au duc de Nevers. Lyon, 14 mars 1590. En italien.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e744">92-95 Lettres du duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e750">Fol. 177 • 92 au duc de Mantoue. Nevers, 17 avril 1590. En italien. Chiffre. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e761">Fol. 179 • 93 au cardinal Scipion de Gonzague. Nevers, 9 juillet 1590. En italien. Chiffre.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e772">Fol. 181 • 94 au duc de Mantoue. Nevers, 27 juillet 1590. En italien. Copie. Chiffre.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057748_d0e783">Fol. 183 • 95 au cardinal Scipion de Gonzague. Nevers, 18 mai 1590. En italien. Copie.</a></div></div></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4698 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57748k&Cote=Français 4698&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058291p">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 16431 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57748k&Cote=MF 16431&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4698 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9520</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant l'histoire des années 1585 à 1591.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 16431. Cote de la matrice (pour commander une reproduction) : R 153035.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058291p" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9058291p.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9058291p.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Andreazzi, Leonora. • Lettres (1590).</p>
+<p>Arnolfini, Giuseppe, marchand à Lyon. • Lettres.</p>
+<p>Benedetti, Pietr' Antonio de. • Lettres.</p>
+<p>Birague, Louis de. • Actes et lettres.</p>
+<p>Caetano, Enrico, cardinal, légat en France. • Actes et lettres.</p>
+<p>Conti, Carlo, cardinal. • Lettres.</p>
+<p>France. • Pitorre (1531-1626).</p>
+<p>Galpaghi, Alfonso. • Lettre (1590).</p>
+<p>Gonzague, Famille de.</p>
+<p>Gonzague, Vincent Ier de, duc de Mantoue. • Lettres et actes.</p>
+<p>Henri III, roi de France. • Notes et pièces diverses.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Pluvot, De. • Requête (1590).</p>
+<p>Vézelay. • Requête au duc de Nevers.</p>
+<p>Volta, Camillo. • Lettres.</p>
+<p>Volta, Mario. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e147');">1 Lettre du duc DE MANTOUE au duc de Nevers. « Di Casale, a XV di maggio 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e161');">2-5 Lettres de « SCIPIONE, cardinale GONZAGA », au duc de Nevers. 1590. En italien. Chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e169');">6 Lettre de J.-V. DE GONZAGUE, cardinal, au duc de Nevers. « Di Roma, alli 14 di aprile 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e177');">7-8 Lettres du cardinal SCIPION DE GONZAGUE au duc de Nevers. 1590. En italien. Chiffre et déchiffrement.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e185');">9 Lettre du cardinal « CAETANO » au cardinal « Montalto,... Di Parigi, a 23 di febra ro 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e193');">10 Lettre de SCIPION, cardinal DE GONZAGUE, au duc de Nevers. « Di Roma, a 24 di marzo 1590 ». En italien. Chiffre, dont une petite partie seulement est déchiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e201');">11 Lettre de « FABIO GONZAGA » au duc de Nevers. Mantoue, 11 avril 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e209');">12-16 Lettres de SCIPION, cardinal DE GONZAGUE, au duc de Nevers. 1590. Chiffre. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e217');">17-18 Billets de « LODOVICO BIRAGO » au duc de Nevers. Novembre et décembre 1591. Chiffre et déchiffrement. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e225');">19-20 Lettres du duc DE MANTOUE au duc de Nevers. Marmiruolo et Mantoue, juillet et mars 1590. Chiffre et déchiffrement. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e233');">21 Lettre de SCIPION, cardinal DE GONZAGUE, au duc de Nevers. « Di Roma, a 8 di maggio 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e241');">22 Lettre de « LODOVICO BIRAGO » au duc de Nevers. « Da Cuy, presso Esperné, 1591, il 2 decembre ». En italien. Chiffre et déchiffrement.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e249');">23 Lettre de « CAMILLO VOLTA » au duc de Nevers. « Di Roma, li 5 di settembre 1585 ». Chiffre et déchiffrement. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e257');">24 Lettre, en italien, sans signature, ni date, ni adresse. Commence par : « Illmo et eccmo sigre ! E cosa, come dice V. Eccza, di gran consideratione l'andata del principe Matthias in Fiandra... » et finit par : «... mal possono star insieme lungo sonno et largo imperio ». Copie inachevée. Vers 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e277');">25-27 Lettres de « LODOVICO BIRAGO » au duc de Nevers. De Villiers près Chalon, Sedan, Langres, décembre et novembre 1591. Chiffre et déchiffrement. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e285');">28-33 Lettres du Sr « HIERONIMO GRIMALDI » au duc de Nevers. Gênes, janvier-avril 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e296');">34 Lettre d' « ALFONSO GALVAGHI, presidente di Casale », au duc de Nevers. « Di Casale, alli IX di aprile 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e304');">35-37 Lettres de « GIUSEPPE ARNOLFINI,... luchese mercanti in Lione », au duc de Nevers. Lyon, janviermars 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e312');">38-41 Lettres du duc DE NEVERS au duc de Mantoue, son neveu, et au cardinal Scipion de Gonzague. Janvier, mars et avril 1590. En italien. Chiffre et déchiffrement. Copies.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e320');">42 Lettre de « FULVIO GONZAGA » au duc de Nevers. Mantoue, 12 avril 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e328');">43 Chiffre. Une note de la main du duc Nevers, placée en haut du feuillet 104, où se trouve ce chiffre, porte : « Con la lettera di 16 febraro 1590. R. 9 aprille 1590. Da Parigi ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e334');">44 Déchiffrement des passages chiffrés de la lettre contenue aux fol. 17-18 du présent ms., lettre rappelée dans la note qui précède. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e342');">45 Lettre de « MARIO VOLTA » au duc de Nevers. Mantoue, 28 février 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e350');">46 Lettre de « FABIO GONZAGA » au duc de Nevers. « Di Mantova, a 17 di marzo 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e358');">47 Lettre du duc DE NEVERS au cardinal Scipion de Gonzague. Decize, 28 février 1590. En italien. Chiffre. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e366');">48 Courte note, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e390');">49 Lettre de FRANÇOIS DE GONZAGUE, évêque de Cefalu, au duc de Nevers. Rome, 21 avril 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e398');">50 Lettre de « FABIO GONZAGA » au duc de Nevers. Casal, 12 juin 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e406');">51-63 Lettres du duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e489');">64 Nouvelles d'Italie adressées au duc de Nevers par GIUSEPPE ARNOLFINI. Juillet 1590. Les lieux d'origine sont Venise, Barcelonnette, Fozzano, Turin. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e497');">65 Lettre du duc DE NEVERS au cardinal Scipion de Gonzague. Nevers, 17 mai 1590. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e508');">66 Requête adressée au duc de Nevers par le Sr DE PLUVOT, au nom des habitants de Vezelay, pour une prolongation de trêve. 1590.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e519');">67-69 Lettres du duc DE NEVERS au cardinal Scipion de Gonzague et au duc de Mantoue. 1590. En italien. Copies. Chiffre, avec déchiffrement. La fin de la première lettre manque.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e527');">70 Lettre de « GIUSEPPE ARNOLFINI » au duc de Nevers. « Da S. Amour, a 24 giugnio 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e535');">71 Nouvelles datées d'Anvers, 11 juillet 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e546');">72 Lettre d' « ASCANIO ANDREASI » au duc de Nevers. Casal, 9 avril 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e554');">73 Lettre, signée : « ASCANIO ANDREASI » et « D. LEONORA PICA DELLA MIRANDOLA ANDREASI », au duc de Nevers. Casal, 9 avril 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e562');">74 Lettre du duc DE NEVERS au cardinal Scipion de Gonzague. Nevers, 14 mai 1590. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e570');">75 Nouvelles d'Italie, de Suisse, de Brabant et d'Angleterre, adressées par ARNOLFINI au duc de Nevers. Ces nouvelles, datées de Turin, Rome, Bâle, Zurich, Anvers et Londres, sont du 6 au 31 mars 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e578');">76 Lettre, signée : « Il protonotario CAPILUPI », adressée par l'intermédiaire de « Guiffredo Arnolfini, a Lione », au duc de Nevers par le destinataire, Scipion, cardinal de Gonzague. « Di Casa, il 12 di maggio 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e586');">77-82 Cinq lettres du duc DE NEVERS et une de son fils.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e669');">83 Lettre, en italien, adressée au duc de Nevers par « li BONVISI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e690');">84-85 Nouvelles datées de Gênes, Nuremberg, Bade, Bâle, Turin, Venise et Turin. Juin et avril 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e701');">86-87 Lettres de « GIUSEPPE ARNOLFINI » au duc de Nevers. Lyon, 21 février et 20 mars 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e709');">88 Nouvelles datées de Turin, 11 et 16 juin 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e720');">89 Lettre de « C. PIETR' ANTONIO DE' BENEDETTI » au duc de Nevers. « Di Casale, alli 8 di giugno 1590 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e728');">90 Lettre de « CARLO CONTI, vescovo d'Ancona », à son frère, « Lotthario Conti ». 24 décembre 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e736');">91 Lettre de GIUSEPPE ARNOLFINI au duc de Nevers. Lyon, 14 mars 1590. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057748_d0e744');">92-95 Lettres du duc DE NEVERS.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

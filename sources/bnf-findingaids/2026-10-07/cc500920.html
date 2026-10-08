@@ -1,0 +1,497 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050092">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050092">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3641
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050092_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092">Français 3641 • Anc. 9130 • Recueil de lettres originales.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e92">1 Lettre, avec chiffre et déchiffrement, d'«ALEXANDRO FARNESE,... escrita al rey de Spaña... De Brusselas, a 4 de henero 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e98">Fol. 5 • 2 Lettre, avec chiffre et déchiffrement, d'«ALEXANDRO FARNESE » au roi d'Espagne Philippe II. « De Bruselas, a 30 de diziembre 1588 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e106">Fol. 7 • 3 Lettre, avec chiffre, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 20 de agosto 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e119">Fol. 9 • 4 Déchiffrement de la précédente.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e127">Fol. 10 • 5 Lettre, avec chiffre, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 7 de septiembre 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e135">Fol. 12 • 6 Lettre, avec chiffre, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 7 de setiembre 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e143">Fol. 14 • 7 Déchiffrement de la lettre portée sous le n° 5.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e151">Fol. 15 • 8 Lettre, avec chiffre et déchiffrement, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 8 de septiembre 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e159">Fol. 17 • 9 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 21 de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e177">Fol. 20 • 10 Lettre, avec chiffre et déchiffrement, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 20 de septiembre 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e195">Fol. 22 • 11 Lettre, avec chiffre et déchiffrement, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 20 de agosto 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e213">Fol. 24 • 12 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 21 de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e226">Fol. 29 • 13 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 21 de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e234">Fol. 31 • 14 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Amberes, primero de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e242">Fol. 35 • 15 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Amberes, primero de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e250">Fol. 37 • 16 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 11 de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e258">Fol. 39 • 17 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 11 de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e266">Fol. 43 • 18 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Amberes, 12 de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e274">Fol. 45 • 19 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, a XXI de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e282">Fol. 47 • 20 Lettre, avec chiffre et déchiffrement, d'«el conde DE ALVA,... a don Bernardino de Mendoza,... De Palermo, a 9 de junio 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e300">Fol. 49 • 21 Lettre, avec chiffre et déchiffrement, relative au duc de Mayenne et aux affaires de la Ligue, « a don Bernardino de Mendoça,... De Milan, a 24 de agosto 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e318">Fol. 51 • 22 Lettre, avec chiffre et déchiffrement, faisant connaître « comme le duc de Savoye se veult accorder avec ceux de Berne et Geneve soubz l'esperance qu'il a d'envahir le Daulphiné et Provence... à don Bernardino de Mendoça,... Del campo junto à Bona, a 3 de septiembre 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e361">Fol. 53 • 23 Lettre, avec chiffre et déchiffrement, de « don JUAN DE IDIAQUES,... al comendador Inigo de Moreo,... De San Lorenço, a 20 de septiembre 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e379">Fol. 55 • 24 Lettre de don « INIGO DE MANCIADOR,... De S. Lorenço, a 20 de septiembre 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e397">Fol. 55bis • 25 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 21 de abril 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e405">Fol. 57 • 26 « Avisos de Londres, de 3 de avril 1590, de los corriespondientes de David ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e423">Fol. 58 • 27 Lettre, avec chiffre, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 2 de mayo 1590 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e431">Fol. 60 • 28 Lettre, avec chiffre, de « don BERNARDINO DE MENDOÇA,... a don Martin de Idiaquez,... De Paris, 2 de mayo 1590 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e439">Fol. 61 • 29 Déchiffrement de la précédente.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e447">Fol. 63 • 30 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, a 6 de mayo 1590 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e455">Fol. 65 • 31 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA,... a don Martin de Idiaquez,... De Paris, a 6 de mayo 1590 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e463">Fol. 67 • 32 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 6 de mayo 1590 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e471">Fol. 69 • 33 Lettre de « JUAN MYLIO,... al conde de Fuentes,... De Madrid, 26 de otubre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e484">Fol. 71 • 34 Lettre, avec chiffre et déchiffrement, du comte « DE ACUÑA,... a Juan Baptista de Tassis,... De Turin, a 29 de otubre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e502">Fol. 74 • 35 Lettre, avec chiffre et déchiffrement, de « don ANDREA DORIA,... a D. Diego de Ibarra,... De Pegi, a primero de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e520">Fol. 76 • 36 Déchiffrement de la lettre portée au n° 6.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e533">Fol. 77 • 37 Lettre, avec chiffre et déchiffrement, du comte « DE ACUÑA,... a Juan Baptista de Tassis,... De Turin, 7 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e551">Fol. 79 • 38 Lettre, avec chiffre et déchiffrement, d'«el duque DE SESSA,... a don Diego de Ibarra,... De Roma, 9 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e569">Fol. 81 • 39 Lettre, avec chiffre et déchiffrement, de « don ANDREA DORIA,... al señor don Diego de Ibarra,... De Genua, a 10 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e582">Fol. 83 • 40 Lettre, avec chiffre et déchiffrement, du comte « DE ACUÑA,... al conde de Fuentes de Castilla,... De Turin, 12 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e595">Fol. 87 • 41 Lettre, avec chiffre et déchiffrement, du comte « DE ACUÑA,... al conde de Fuentes de Castilla,... De Turin, 14 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e603">Fol. 89 • 42 « Abe (sic) de charta del duque DE PARMA. De Arras, a 23 noviembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e619">Fol. 91 • 43 Lettre, avec chiffre, de « don D[IEGO] DE IBARRA » au roi d'Espagne Philippe II. « De Paris, a 25 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e637">Fol. 95 • 44 Double de la précédente, déchiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e655">Fol. 99 • 45 Lettre, avec chiffre et déchiffrement, de « don D[IEGO] DE IBARRA,... a don Juan de Idiaquez,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e673">Fol. 101 • 46 Double de la précédente, non déchiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e691">Fol. 103 • 47 Lettre, avec chiffre et déchiffrement, de « don D[IEGO] DE IBARRA,... al principe Doria,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e709">Fol. 105 • 48 Lettre, avec chiffre, de « don DI[EGO] DE IBARRA,... al conde de Olivares,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e727">Fol. 107 • 49 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA,... al duque de Sessa,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e745">Fol. 109 • 50 Lettre, avec chiffre, de « don DI[EGO] DE IBARRA,... al conde de Olivares,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e763">Fol. 111 • 51 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA » au roi d'Espagne Philippe II. « De Paris, a primero de diziembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e781">Fol. 113 • 52 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA,... al duque de Feria,... De Paris, a 14 de diziembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e799">Fol. 115 • 53 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA,... al duque de Feria,... De Paris, a 24 de diziembre 1592 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e817">Fol. 117 • 54 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA,... a don Antonio de Cuniga,... De Paris, a 16 de henero 1593 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e835">Fol. 118 • 55 « Avisos de Orleans, de 25 de março 1593 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e853">56 « Otros Avisos de Orleans, de 30 de março 1593 » En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e859">Fol. 120 • 57 Lettre de « don DI[EGO] DE IBARRA » et de « don JUAN DE TASSIS,... En Paris, a primero de abril 1593 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e882">Fol. 124 • 58 Lettre, avec chiffre, d'«el duque DE FERIA,... a don Juan de Ydiaquez,... En Paris, 7 de abril 1593 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e900">Fol. 126 • 59 Lettre, avec chiffre et déchiffrement, relatant la prise de Noyon par le duc de Mayenne et traitant de l'état des affaires de la Ligue. « Da Reims, alli 4 di maggio 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e923">Fol. 128 • 60 Lettre, avec chiffre et déchiffrement, d'«el duque DE SESSA,... a don Diego d'Ibarra,... De Roma, 30 de junio 1593 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e936">Fol. 130 • 61 Lettre, avec chiffre et déchiffrement, du comte « D'ACUÑA,... a Juan Bautista de Tassis,... De Rivoli, a 5 de julio 1593 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e944">Fol. 132 • 62 Lettre, avec chiffre et déchiffrement, du duc DE SESSA au duc de Parme, 9 novembre. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e957">Fol. 134 • 63 Déchiffrement de la lettre portée au n° 52.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e965">Fol. 135 • 64 Déchiffrement de la lettre portée au n° 53.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e973">Fol. 136 • 65 « Deschiffrement d'une lettre de l'ambassadeur d'Espagne à Rome au roi d'Espagne Philippe II ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e981">Fol. 141 • 66 Double de l'extrait porté sous le n° 42.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e994">Fol. 142 • 67 « Avissos de Londres, de 3 de avril 1590 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e1007">Fol. 143 • 68 Instruction, avec chiffre et déchiffrement, donnée par le duc DE MAYENNE et le conseil de la Ligue au doyen Brisson, envoyé à Rome, après la mort du duc de Guise et du cardinal de Lorraine. Double.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e1025">Fol. 145 • 69 « Avisos de SANSON, de Tours, 6 de abril 1589 ». Avec chiffre et déchiffrement. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e1038">Fol. 147 • 70 Double de la lettre portée sous le n° 51.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e1046">Fol. 148 • 71 Copie d'une lettre écrite au pape par le duc DU MAINE et portée par le doyen Brisson. Avec chiffre et déchiffrement.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e1059">Fol. 150 • 72 « Relacion del viaje que hizieron las galeras de la religion de S. Juan que estan a cargo del comendador Segriville ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e1070">Fol. 156 • 73 « Relacion del viaje que hizieron a Berveria las galeras de Malta, yendo a tomar lengua de los andamientos de Tripol ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e1086">Fol. 158 • 74 « Lo que se entiende por cartas de Levante, de 27 de julio 1589 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050092_d0e1102">75 « Lo que se entiende por cartas de Levante, de primero de agosto 1589 ». En espagnol.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3641 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc500920&Cote=Français 3641&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b52508089f">Consulter le document numérisé</a></li></ul><ul class="listeLiens"></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3641 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9130</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b52508089f" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b52508089f.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b52508089f.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Cunha, Comte da. • Lettres.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Ibarra, Don Diego de. • Lettres.</p>
+<p>Ligue, La. • Notes et pièces diverses.</p>
+<p>Mendoza, Bernardino de.</p>
+<p>Mendoza, Bernardino de. • Lettres.</p>
+<p>Orléans. • Notes et pièces diverses.</p>
+<p>Philippe II, roi d'Espagne. • Lettres et actes.</p>
+<p>Trie, Guillaume de.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e92');">1 Lettre, avec chiffre et déchiffrement, d'«ALEXANDRO FARNESE,... escrita al rey de Spaña... De Brusselas, a 4 de henero 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e98');">2 Lettre, avec chiffre et déchiffrement, d'«ALEXANDRO FARNESE » au roi d'Espagne Philippe II. « De Bruselas, a 30 de diziembre 1588 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e106');">3 Lettre, avec chiffre, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 20 de agosto 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e119');">4 Déchiffrement de la précédente.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e127');">5 Lettre, avec chiffre, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 7 de septiembre 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e135');">6 Lettre, avec chiffre, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 7 de setiembre 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e143');">7 Déchiffrement de la lettre portée sous le n° 5.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e151');">8 Lettre, avec chiffre et déchiffrement, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 8 de septiembre 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e159');">9 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 21 de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e177');">10 Lettre, avec chiffre et déchiffrement, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 20 de septiembre 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e195');">11 Lettre, avec chiffre et déchiffrement, de PHILIPPE II, roi d'Espagne, « a don Bernardino de Mendoça, su embaxador en Francia... De San Lorenço, a 20 de agosto 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e213');">12 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 21 de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e226');">13 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 21 de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e234');">14 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Amberes, primero de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e242');">15 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Amberes, primero de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e250');">16 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 11 de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e258');">17 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 11 de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e266');">18 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Amberes, 12 de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e274');">19 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, a XXI de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e282');">20 Lettre, avec chiffre et déchiffrement, d'«el conde DE ALVA,... a don Bernardino de Mendoza,... De Palermo, a 9 de junio 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e300');">21 Lettre, avec chiffre et déchiffrement, relative au duc de Mayenne et aux affaires de la Ligue, « a don Bernardino de Mendoça,... De Milan, a 24 de agosto 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e318');">22 Lettre, avec chiffre et déchiffrement, faisant connaître « comme le duc de Savoye se veult accorder avec ceux de Berne et Geneve soubz l'esperance qu'il a d'envahir le Daulphiné et Provence... à don Bernardino de Mendoça,... Del campo junto à Bona, a 3 de septiembre 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e361');">23 Lettre, avec chiffre et déchiffrement, de « don JUAN DE IDIAQUES,... al comendador Inigo de Moreo,... De San Lorenço, a 20 de septiembre 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e379');">24 Lettre de don « INIGO DE MANCIADOR,... De S. Lorenço, a 20 de septiembre 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e397');">25 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 21 de abril 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e405');">26 « Avisos de Londres, de 3 de avril 1590, de los corriespondientes de David ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e423');">27 Lettre, avec chiffre, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 2 de mayo 1590 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e431');">28 Lettre, avec chiffre, de « don BERNARDINO DE MENDOÇA,... a don Martin de Idiaquez,... De Paris, 2 de mayo 1590 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e439');">29 Déchiffrement de la précédente.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e447');">30 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, a 6 de mayo 1590 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e455');">31 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA,... a don Martin de Idiaquez,... De Paris, a 6 de mayo 1590 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e463');">32 Lettre, avec chiffre et déchiffrement, de « don BERNARDINO DE MENDOÇA » au roi d'Espagne Philippe II. « De Paris, 6 de mayo 1590 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e471');">33 Lettre de « JUAN MYLIO,... al conde de Fuentes,... De Madrid, 26 de otubre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e484');">34 Lettre, avec chiffre et déchiffrement, du comte « DE ACUÑA,... a Juan Baptista de Tassis,... De Turin, a 29 de otubre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e502');">35 Lettre, avec chiffre et déchiffrement, de « don ANDREA DORIA,... a D. Diego de Ibarra,... De Pegi, a primero de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e520');">36 Déchiffrement de la lettre portée au n° 6.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e533');">37 Lettre, avec chiffre et déchiffrement, du comte « DE ACUÑA,... a Juan Baptista de Tassis,... De Turin, 7 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e551');">38 Lettre, avec chiffre et déchiffrement, d'«el duque DE SESSA,... a don Diego de Ibarra,... De Roma, 9 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e569');">39 Lettre, avec chiffre et déchiffrement, de « don ANDREA DORIA,... al señor don Diego de Ibarra,... De Genua, a 10 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e582');">40 Lettre, avec chiffre et déchiffrement, du comte « DE ACUÑA,... al conde de Fuentes de Castilla,... De Turin, 12 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e595');">41 Lettre, avec chiffre et déchiffrement, du comte « DE ACUÑA,... al conde de Fuentes de Castilla,... De Turin, 14 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e603');">42 « Abe (sic) de charta del duque DE PARMA. De Arras, a 23 noviembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e619');">43 Lettre, avec chiffre, de « don D[IEGO] DE IBARRA » au roi d'Espagne Philippe II. « De Paris, a 25 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e637');">44 Double de la précédente, déchiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e655');">45 Lettre, avec chiffre et déchiffrement, de « don D[IEGO] DE IBARRA,... a don Juan de Idiaquez,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e673');">46 Double de la précédente, non déchiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e691');">47 Lettre, avec chiffre et déchiffrement, de « don D[IEGO] DE IBARRA,... al principe Doria,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e709');">48 Lettre, avec chiffre, de « don DI[EGO] DE IBARRA,... al conde de Olivares,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e727');">49 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA,... al duque de Sessa,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e745');">50 Lettre, avec chiffre, de « don DI[EGO] DE IBARRA,... al conde de Olivares,... De Paris, a 26 de noviembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e763');">51 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA » au roi d'Espagne Philippe II. « De Paris, a primero de diziembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e781');">52 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA,... al duque de Feria,... De Paris, a 14 de diziembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e799');">53 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA,... al duque de Feria,... De Paris, a 24 de diziembre 1592 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e817');">54 Lettre, avec chiffre et déchiffrement, de « don DI[EGO] DE IBARRA,... a don Antonio de Cuniga,... De Paris, a 16 de henero 1593 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e835');">55 « Avisos de Orleans, de 25 de março 1593 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e853');">56 « Otros Avisos de Orleans, de 30 de março 1593 » En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e859');">57 Lettre de « don DI[EGO] DE IBARRA » et de « don JUAN DE TASSIS,... En Paris, a primero de abril 1593 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e882');">58 Lettre, avec chiffre, d'«el duque DE FERIA,... a don Juan de Ydiaquez,... En Paris, 7 de abril 1593 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e900');">59 Lettre, avec chiffre et déchiffrement, relatant la prise de Noyon par le duc de Mayenne et traitant de l'état des affaires de la Ligue. « Da Reims, alli 4 di maggio 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e923');">60 Lettre, avec chiffre et déchiffrement, d'«el duque DE SESSA,... a don Diego d'Ibarra,... De Roma, 30 de junio 1593 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e936');">61 Lettre, avec chiffre et déchiffrement, du comte « D'ACUÑA,... a Juan Bautista de Tassis,... De Rivoli, a 5 de julio 1593 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e944');">62 Lettre, avec chiffre et déchiffrement, du duc DE SESSA au duc de Parme, 9 novembre. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e957');">63 Déchiffrement de la lettre portée au n° 52.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e965');">64 Déchiffrement de la lettre portée au n° 53.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e973');">65 « Deschiffrement d'une lettre de l'ambassadeur d'Espagne à Rome au roi d'Espagne Philippe II ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e981');">66 Double de l'extrait porté sous le n° 42.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e994');">67 « Avissos de Londres, de 3 de avril 1590 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e1007');">68 Instruction, avec chiffre et déchiffrement, donnée par le duc DE MAYENNE et le conseil de la Ligue au doyen Brisson, envoyé à Rome, après la mort du duc de Guise et du cardinal de Lorraine. Double.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e1025');">69 « Avisos de SANSON, de Tours, 6 de abril 1589 ». Avec chiffre et déchiffrement. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e1038');">70 Double de la lettre portée sous le n° 51.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e1046');">71 Copie d'une lettre écrite au pape par le duc DU MAINE et portée par le doyen Brisson. Avec chiffre et déchiffrement.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e1059');">72 « Relacion del viaje que hizieron las galeras de la religion de S. Juan que estan a cargo del comendador Segriville ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e1070');">73 « Relacion del viaje que hizieron a Berveria las galeras de Malta, yendo a tomar lengua de los andamientos de Tripol ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e1086');">74 « Lo que se entiende por cartas de Levante, de 27 de julio 1589 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050092_d0e1102');">75 « Lo que se entiende por cartas de Levante, de primero de agosto 1589 ». En espagnol.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

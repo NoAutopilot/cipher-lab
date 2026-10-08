@@ -1,0 +1,476 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057738">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057738">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4688
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057738_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738">Français 4688 • Anc. 9510 • Recueil de pièces originales et de copies concernant la maison de Nevers. De 1567 à 1574.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e120">Fol. 1 • 1 Lettre de « G. PALIANO » au Sr Guazzo, son neveu. « Da Moncalvo, alli 26 di settembre 1567 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e136">Fol. 5 • 2 Réponse de « FULVIA DI CORREGGIO PICA » aux insinuations et aux prétentions du « Sor Luigi », son beaufrère. Cette réponse, datée de La Mirandole, 8 janvier 1570, fut envoyée en copie au duc de Nevers et soumise à son appréciation. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e152">Fol. 7 • 3 Mémoire du duc DE NEVERS pour le Sr Du Tillet, greffier au parlement, concernant une question de préséance. Gaillon, 30 juin 1570. En italien. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e163">Fol. 9 • 4 Lettre du Sr « GUAZZO » au duc de Nevers. « Di Casale, li 12 di luglio 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e174">Fol. 11 et 13 • 5-6 Lettres de « VALERIO SALUZZO DELLA MANTA » au duc de Nevers. Août et décembre 1570. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e182">Fol. 15 et 17 • 7-8 Lettres du Sr « GUAZZO » au duc de Nevers. Casal, 25 mars 1571. Chiffres. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e193">Fol. 27 • 9 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, aux R. P. minimes assemblés à Valence, en Espagne. Ledit duc offre auxdits R. P. un couvent près de Rethel, pour douze religieux de leur ordre. Mars 1571. En latin. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e206">Fol. 29 et suiv • 10-12 Lettres du Sr « GUAZZO » au duc de Nevers. Casal, du 1er au 9 avril 1571. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e220">Fol. 37 • 13 Mémoire du duc DE NEVERS, concernant les agissements du duc de Savoie uni aux Espagnols contre la France en Italie. En italien. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e231">Fol. 38 • 14 Autre mémoire du même, concernant le même objet. 1571. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e239">Fol. 39 et suiv • 15-17 Lettres du Sr « GUAZZO » au duc de Nevers et à « Cesare Ceppo ». Casal, 30 avril et 1er juin 1571. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e253">Fol. 45 • 18 Lettre de « CESARE CEPPO » au duc de Nevers. Mantoue, 30 juillet 1571. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e261">Fol. 47 • 19 Lettre du Sr « GUAZZO » au duc de Nevers. Casal, 14 septembre 1571. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e272">Fol. 51 • 20 Lettre du correcteur général des frères minimes, « GASPARRO PASSARELLO », au duc de Nevers, en réponse à l'offre portée sous le n° 9. « Datum in consessu nostro Valentino, sexto calendas junias 1571 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e288">Fol. 55 • 21 Mémoire, en italien, envoyé au duc de Nevers par le Sr GUAZZO, sur le Sr « Domenico Grillo », qui de simple soldat était parvenu, par des intrigues, à se faire employer en Espagne et ailleurs pour le service du duc de Savoie. 1571.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e305">Fol. 57 • 22 « Qual risoluzione pare per l'honore et per l'utile, che Su Ecca faccia sopra le conditioni et riserve che l'eccmo Sr duca, suo fratello, intende di mettere sopra il legato gia datoli et pagatoli libero ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e322">Fol. 61 • 23 « Discorso di quello s'e trattato intorno ad uno delli cinque capi contenuti nel memoriale dato al Sor duca eccmo... di Mantova,... dal cavalier Guazzo. 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e336">Fol. 65 et suiv • 24-33 Lettres et notes du Sr « GUAZZO » au duc de Nevers. Casal, du 12 décembre 1571 au 28 avril 1572. En italien. Chiffres.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e347">Fol. 87 • 34 « Memoriale sporto al Sr duca eccmo, per servitio dell' eccmo Sr duca di Nevers, li 28 maggio 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e367">Fol. 89 • 35 Lettre de « FRANCESCO BECIO » au duc de Nevers. Casal, 7 juillet 1572. En italien.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e380">36-43 Lettres et notes, en italien, du Sr « GUAZZO ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e389">Fol. 91 • 36 au Sr « Mondino ». Mantoue, 18 juillet 1572.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e403">Fol. 95 et suiv • 37-41 au duc de Nevers. Mantoue, Milan, Grana, du 18 juillet au 11 août 1572.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e414">Fol. 105 • 42 « al SrTheodoro San Giorgio ». Casal, 13 août 1572.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e427">Fol. 107 • 43 au duc de Nevers. Casal, 20 août 1572.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e438">Fol. 113 • 44 Mémoire réduit en trois articles par le Sr GUAZZO, pour montrer la mauvaise foi du duc de Mantoue, qui refusait de payer le legs fait par Marguerite Paléologue au duc de Nevers. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e449">Fol. 115 • 45 Lettre du Sr « GUAZZO » au duc de Nevers. Casal, 20 août 1572. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e460">Fol. 118 • 46 Lettre de « F. BECIO » au duc de Nevers. « Di Casale, li 20 d'agosto del LXXII ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e468">Fol. 120 • 47 Discours joint à une lettre du Sr GUAZZO, du 20 août 1572. Cette lettre du 20 août, qui est indiquée comme marquée du signe de rappel F, n'est pas dans le ms. 4,688. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e479">Fol. 126 • 48 Lettre du Sr « GUAZZO » au duc de Nevers. « Di Casale, l'ultimo d'agosto 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e490">Fol. 128 • 49 « Per aggiungere in fine della secunda lettera che V. Ecca havra da scrivere all eccmo Sr suo fratello. Cette note, de la main du Sr GUAZZO, a pour objet de le faire recommander par le duc de Nevers au duc de Mantoue. 31 août 1572.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e510">Fol. 129 • 50 « Nota delle scritture et lettere che si aspettano che V. Ecca scriva, se cosi parira a lei ». Note, en italien, de la main du Sr GUAZZO, pour le duc de Nevers. 31 août 1572.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e524">Fol. 131 et suiv • 51-58 Lettres du Sr « GUAZZO » au duc de Nevers. Casal et Milan, de septembre 1572 à juin 1573. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e535">Fol. 147 • 59 « Copia del compromesso ultimamente mandato dal Sor duca eccmo DI MANTOVA,... In Quingentole, lo 4 d'agosto 1573 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e549">Fol. 149 • 60 « Coppie de la lectre d'...ADAMO CONARSELIS, vescovo di Posnania », au duc de Nevers. « Di Thu, a li 7 di novembre 1573 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e562">Fol. 151 • 61 Lettre d' « ALISANDRO GONZAGA » au duc de Nevers. « Di Milano, alli 3 de maggio del [15]74 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e570">Fol. 153 • 62 Lettre du Sr « NUVOLONI » au duc de Nevers. « Di Cracovia, il 8 di maggio 1574 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e581">Fol. 155 • 63 Lettre de « LEONORA, duchessa DI MANTOVA », au duc de Nevers. 15 juin 1574. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e589">Fol. 157 • 64 Lettre de « VINCENZO GONZAGA » au duc de Nevers, son oncle. « Di Sachetta, a 15 di giugno del 1574 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e597">Fol. 159 et 160 • 65-66 Lettres du duc DE NEVERS au duc de Mantoue, son frère. Padoue et Praia, 18 et 28 juin 1574. Copies. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e605">Fol. 161 • 67 Lettre du duc DE MANTOUE au duc de Nevers. « Di Revere, a 2 di luglio 1574 ». En italien. Copie.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e613">68-71 Lettres du duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e619">Fol. 161 et 163 • 68-69 au duc de Mantoue, son frère. « Dall' abbatia di Praia, li 6 di luglio 1574 ». En italien. Copies.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057738_d0e630">Fol. 164 et 166 • 70-71 au Sr « Guazzo ». Praia, 6 et 7 juillet 1574. En italien. Copies.</a></div></div></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4688 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57738c&Cote=Français 4688&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4688 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9510</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant la maison de Nevers. De 1567 à 1574.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Ceppo, Cesare. • Lettres.</p>
+<p>Gonzague, Alexandre de. • Lettres.</p>
+<p>Gonzague, Famille de.</p>
+<p>Gonzague, Guillaume de, duc de Mantoue. • Succession, de la duchesse de Mantoue.</p>
+<p>Gonzague, Vincent Ier de, duc de Mantoue. • Lettres et actes.</p>
+<p>Guazzo, Chevalier Stefano, agent du duc de Nevers. • Lettres.</p>
+<p>Mantoue, Marguerite Paléologue, duchesse de. • Succession.</p>
+<p>Minimes, Ordre des.</p>
+<p>Montferrat, Marquisat, puis duché de. • Succession.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Succession, du marquis de Montferrat.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Nuvoloni. • Lettres.</p>
+<p>Saluzzo della Manta, Valerio. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e120');">1 Lettre de « G. PALIANO » au Sr Guazzo, son neveu. « Da Moncalvo, alli 26 di settembre 1567 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e136');">2 Réponse de « FULVIA DI CORREGGIO PICA » aux insinuations et aux prétentions du « Sor Luigi », son beaufrère. Cette réponse, datée de La Mirandole, 8 janvier 1570, fut envoyée en copie au duc de Nevers et soumise à son appréciation. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e152');">3 Mémoire du duc DE NEVERS pour le Sr Du Tillet, greffier au parlement, concernant une question de préséance. Gaillon, 30 juin 1570. En italien. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e163');">4 Lettre du Sr « GUAZZO » au duc de Nevers. « Di Casale, li 12 di luglio 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e174');">5-6 Lettres de « VALERIO SALUZZO DELLA MANTA » au duc de Nevers. Août et décembre 1570. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e182');">7-8 Lettres du Sr « GUAZZO » au duc de Nevers. Casal, 25 mars 1571. Chiffres. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e193');">9 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, aux R. P. minimes assemblés à Valence, en Espagne. Ledit duc offre auxdits R. P. un couvent près de Rethel, pour douze religieux de leur ordre. Mars 1571. En latin. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e206');">10-12 Lettres du Sr « GUAZZO » au duc de Nevers. Casal, du 1er au 9 avril 1571. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e220');">13 Mémoire du duc DE NEVERS, concernant les agissements du duc de Savoie uni aux Espagnols contre la France en Italie. En italien. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e231');">14 Autre mémoire du même, concernant le même objet. 1571. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e239');">15-17 Lettres du Sr « GUAZZO » au duc de Nevers et à « Cesare Ceppo ». Casal, 30 avril et 1er juin 1571. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e253');">18 Lettre de « CESARE CEPPO » au duc de Nevers. Mantoue, 30 juillet 1571. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e261');">19 Lettre du Sr « GUAZZO » au duc de Nevers. Casal, 14 septembre 1571. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e272');">20 Lettre du correcteur général des frères minimes, « GASPARRO PASSARELLO », au duc de Nevers, en réponse à l'offre portée sous le n° 9. « Datum in consessu nostro Valentino, sexto calendas junias 1571 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e288');">21 Mémoire, en italien, envoyé au duc de Nevers par le Sr GUAZZO, sur le Sr « Domenico Grillo », qui de simple soldat était parvenu, par des intrigues, à se faire employer en Espagne et ailleurs pour le service du duc de Savoie. 1571.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e305');">22 « Qual risoluzione pare per l'honore et per l'utile, che Su Ecca faccia sopra le conditioni et riserve che l'eccmo Sr duca, suo fratello, intende di mettere sopra il legato gia datoli et pagatoli libero ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e322');">23 « Discorso di quello s'e trattato intorno ad uno delli cinque capi contenuti nel memoriale dato al Sor duca eccmo... di Mantova,... dal cavalier Guazzo. 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e336');">24-33 Lettres et notes du Sr « GUAZZO » au duc de Nevers. Casal, du 12 décembre 1571 au 28 avril 1572. En italien. Chiffres.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e347');">34 « Memoriale sporto al Sr duca eccmo, per servitio dell' eccmo Sr duca di Nevers, li 28 maggio 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e367');">35 Lettre de « FRANCESCO BECIO » au duc de Nevers. Casal, 7 juillet 1572. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e380');">36-43 Lettres et notes, en italien, du Sr « GUAZZO ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e438');">44 Mémoire réduit en trois articles par le Sr GUAZZO, pour montrer la mauvaise foi du duc de Mantoue, qui refusait de payer le legs fait par Marguerite Paléologue au duc de Nevers. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e449');">45 Lettre du Sr « GUAZZO » au duc de Nevers. Casal, 20 août 1572. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e460');">46 Lettre de « F. BECIO » au duc de Nevers. « Di Casale, li 20 d'agosto del LXXII ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e468');">47 Discours joint à une lettre du Sr GUAZZO, du 20 août 1572. Cette lettre du 20 août, qui est indiquée comme marquée du signe de rappel F, n'est pas dans le ms. 4,688. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e479');">48 Lettre du Sr « GUAZZO » au duc de Nevers. « Di Casale, l'ultimo d'agosto 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e490');">49 « Per aggiungere in fine della secunda lettera che V. Ecca havra da scrivere all eccmo Sr suo fratello. Cette note, de la main du Sr GUAZZO, a pour objet de le faire recommander par le duc de Nevers au duc de Mantoue. 31 août 1572.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e510');">50 « Nota delle scritture et lettere che si aspettano che V. Ecca scriva, se cosi parira a lei ». Note, en italien, de la main du Sr GUAZZO, pour le duc de Nevers. 31 août 1572.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e524');">51-58 Lettres du Sr « GUAZZO » au duc de Nevers. Casal et Milan, de septembre 1572 à juin 1573. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e535');">59 « Copia del compromesso ultimamente mandato dal Sor duca eccmo DI MANTOVA,... In Quingentole, lo 4 d'agosto 1573 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e549');">60 « Coppie de la lectre d'...ADAMO CONARSELIS, vescovo di Posnania », au duc de Nevers. « Di Thu, a li 7 di novembre 1573 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e562');">61 Lettre d' « ALISANDRO GONZAGA » au duc de Nevers. « Di Milano, alli 3 de maggio del [15]74 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e570');">62 Lettre du Sr « NUVOLONI » au duc de Nevers. « Di Cracovia, il 8 di maggio 1574 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e581');">63 Lettre de « LEONORA, duchessa DI MANTOVA », au duc de Nevers. 15 juin 1574. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e589');">64 Lettre de « VINCENZO GONZAGA » au duc de Nevers, son oncle. « Di Sachetta, a 15 di giugno del 1574 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e597');">65-66 Lettres du duc DE NEVERS au duc de Mantoue, son frère. Padoue et Praia, 18 et 28 juin 1574. Copies. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e605');">67 Lettre du duc DE MANTOUE au duc de Nevers. « Di Revere, a 2 di luglio 1574 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057738_d0e613');">68-71 Lettres du duc DE NEVERS.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

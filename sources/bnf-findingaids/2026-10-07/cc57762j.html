@@ -1,0 +1,543 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057762">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057762">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4712
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057762_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762">Français 4712 • Anc. 9534 • Recueil de pièces originales et de copies concernant l'histoire de France, de la fin du XVIe siècle à l'année 1625.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e280">1 Lettre signée : « HENRY ». Adresse : « A ma mere, Mme d'Uzes ». Cette lettre commence (fol. 1) par : « Ma mere, j'ay donné charge à Mr de Turenne,... ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e292">Fol. 2 • 2 Lettre de « CATHERINE » DE MEDICIS à la duchesse de Nevers. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e300">Fol. 3 • 3 Lettre, signée : « LA GUICHE », au duc de Nevers. « Au camp devant Sens, le 2 may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e308">Fol. 4 • 4 Lettre, signée : « DE GONDI », au duc de Nevers. « Montsojon, ce 29 janvier 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e316">Fol. 5 • 5 Lettre des « deputez des XIII cantons du pays des Ligues » au duc de Nevers. « De Solleure, en Suysse, ce jour de Pentecouste 1589 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e324">6 Lettre non signée, avec chiffre et déchiffrement.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e343">7 Lettre, dont la signature est coupée, adressée au roi; commence (fol. 8) par : « Sire, afin d'empescher que l'armée conduite par le Marquis de Warambon ne fît aucun progres plus important au bien de vostre service, j'avois assemblé ce qu'il m'avoit esté possible de bons serviteurs et m'estois advancé vers lad. armée, qui faisoit contenance de vouloir investir Dourlens... ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e355">8 Questions et réponses concernant les agissements du duc de Parme.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e372">Fol. 10 et 11 • 9-10 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e383">Fol. 13 • 11 Fragment de dépêche en clair et en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e391">Fol. 14 • 12 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, en faveur du Sr de Vaudargent, exempt des gardes du roy ». Adressée au « conte de Carli », peu de temps avant le mariage de Charles Ier, roi d'Angleterre, et d'Henriette de France. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e405">Fol. 15 • 13 Requête adressée au roi Henri IV pour le Sr « DE GUYONNELLE ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e416">Fol. 16 • 14 Minute d'une lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à la duchesse, sa femme.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e424">Fol. 18 • 15 Lettre de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e432">16 Copie d'une lettre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e452">Fol. 22 • 17 « Articles du sieur DE CHAMOY, presentées à Monseigneur le mareschal de Biron, lorsqu'il receut le serment de fidelité dud. Sr, et par luy verballement accordez ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e463">18 Placet.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e482">Fol. 25 • 19 « Memoyre et advis pour le donmayne du païs de Piedmont ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e495">20 Copie d'une lettre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e510">21 Lettre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e530">22 Fragments.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e545">Fol. 30 • 23 « Lectres d'office de garde des sceaulx de France pour... Philippes Hurault,... de Chiverny ». Acte de HENRI III. « Donné à Fontainebleau, au mois de septembre 1578 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e553">24 Lettre, du Sr Chalmand (voir ms. 4716, fol. 108), signée d'un monogramme.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e581">25 Maximes de conduite, divisées par paragraphes cotés tantôt C, tantôt C. G. La première maxime, cotée C, commence (fol. 33) par : « Prenez garde de ne rire ny parler à l'oreille devant les gens sotz... ». La dernière maxime, cotée C. G., est telle : « Accarasser à part les Italiens, lorsque les François n'y sont, parler aussi quelquefois à eux, mais par intervalles ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e590">26 Fragment de notes et réflexions sur la conduite à tenir par Henri III pour abattre « les huguenots ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e603">27 « Memoire de quelque propos qui se passoit durant la première ligue ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e616">Fol. 38 • 28 « Livres envoiez au Sr Volte par Bussiere,... 19 settembre [15] 89 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e627">Fol. 39 et 40 • 29-30 Lettres du duc DE NEVERS, LOUIS DE GONZAGUE, au roi Henri III. Clamecy, 11 mai 1589. Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e635">Fol. 41 • 31 Lettre du Sr DE « DINTEVILLE » au duc de Nevers. « Saincte Manehould, le 13 decembre 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e646">Fol. 42 • 32 Minute de lettre de LOUIS DE GONZAGUE, duc DE NEVERS.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e657">Fol. 45 et 47 • 33-34 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, adressées, la première « à Mr Terason, [le] 8 mars 1625 », en faveur de Julio Menocchio, et la seconde « à Mr le cardinal de Savoye », en faveur du « baron de St Gilles ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e674">Fol. 48 • 35 Fin d'une lettre dudit duc DE NEVERS « à M. de C., chevalier de l'ordre de la Milice chrestienne et residant à Rome pour les affaires dudit ordre, au pallais de S. Jean de Latran ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e682">Fol. 49 et 51 • 36-37 Lettres, dont une signée d'un monogramme et l'autre non signée, de CATHERINE DE GONZAGUE et DE CLEVES, à Charles de Gonzague et de Clèves, duc de Nevers, son frère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e690">Fol. 53 • 38 Lettre adressée « à Mr l'archevesque de Reins », par CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e701">Fol. 54 • 39 « Minutte d'une lettre sur la mort d'un filz ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e709">Fol. 55 • 40 Lettre de « CHRISTIEN NICOLAS CATTIUS, chanoine de l'eglise cathedrale de Nostre Dame d'Arras... à S. E. le duc de Nivers et de Retelos, pair de France, grand prieur de l'occident de l'ordre de la Milice christiene, à Paris ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e722">Fol. 57 • 41 Lettre adressée au roi Louis XIII, par CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, pour lui réclamer 50,000 écus, prix de quelques vaisseaux vendus par ledit duc audit roi, lesquels vaisseaux venaient d'être pris par « ceux de la religion... dans le port Louys ». Minutes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e730">42 Mémoire sur les offices et sur le prix qu'ils se vendent.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e745">Fol. 61 • 43 Lettre adressée par CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, « à Mr le prince de Chimay », concernant « les bois que l'on apelle du Chastelet ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e756">Fol. 62 • 44-45 Lettres dudit duc en faveur de l'abbesse d'Avenay, qui avait procès « contre aucuns de la ville de Chaalons, touchant la fondation d'un prieuré qu'elle y a estably ». Minutes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e769">46 Fragment d'une instruction.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e784">Fol. 64 • 47 Lettre, signée : « JOYEUSE », adressée au duc de Nevers. « De Ville sus Tourbe, ce 21 febvrier 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e792">Fol. 65 • 48 Lettre, signée : « VASSE », adressée au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e800">Fol. 66 • 49 Lettre, signée : « LA FOREST BOCHETEL », adressée au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e808">Fol. 67 • 50 Ordre adressé aux « maire et habitans du Grand et Petit Remilly » pour recevoir et loger « les compagnéez du regiment de M. le viconte de Turenne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e816">Fol. 68 • 51 Minute d'une lettre de CHARLES DE GONZAGUE, duc DE NEVERS.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e824">Fol. 69 • 52 Lettre adressée « à Mr le viconte de Brigneul » et signée : « Vostre tres humble... servante, F. DE BATARNAY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e835">Fol. 70 • 53 Requête de « messire ARNAUD SORBIN, dict DE SAINCTE FOY, evesque de Nevers, demandeur en cassation de contract... contre le sieur de Revillon et sa femme, sieurs de la terre et maison des Bordes ». Adressée à « Mrs du conseil privé et d'Estat ». Pièce imprimée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e846">54 Placet du gouverneur de Pignerol au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e859">55 Lettre adressée au duc de Nevers, signée : « LA BLANQUE ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e883">Fol. 73 • 56 Convention arrêtée « entre Mr de Pleuvost, gouverneur... de Vezelay, pour Mr le duc de Mayenne, et Mr de Champlemis, lieutenant general au gouvernement de Nyvernois, en l'absence de Monseigneur le duc de Nyvernois, gouverneur dud. pays et de Champaigne et Brye... Clamecy », vers le 27 septembre 1589.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e900">Fol. 74 et 75 • 57-58 Copies de lettres adressées par LOUIS DE GONZAGUE, duc DE NEVERS, aux habitants d'une ville de Champagne, menacés par Antoine Monbeton, seigneur de St-Pol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e911">Fol. 76 • 59 Lettre du Sr « DE JOYEUSE GRANDPRE » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e928">Fol. 77 • 60 Requête adressée au duc de Nevers par « le Sr DE GRANDPRE, gouverneur de Mouzon, et les habitans dud. Mouzon ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e939">Fol. 78 • 61 Lettre pleine de récriminations de HENRIETTE DE CLEVES, duchesse DE NEVERS, à sa soeur Catherine de Clèves, duchesse de Guise. Vers 1588 ? Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e947">Fol. 79 • 62 « Estat du revenu que le roy a au Piémont ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e963">Fol. 80 • 63 « Attestation des sindictz de Carmagnolles de ce que La Vallette a dict au commissaire et mareschal des logis de la compagnie du Sr Centurion, voullans entrer aud. Carmagnolles et y loger le tiers de lad. compagnie, selon l'intention et vouloir du roy ». 7 janvier 1572. En italien. Copie collationnée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e974">Fol. 84 • 64 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e982">Fol. 85 • 65 Lettre du Sr « GIELIS DE VILLABOS », concernant « une entreprinse sur la Terre Sainte », pour laquelle le duc de Nevers, Ch. de G., pourra compter sur « douze navires equipées ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e996">Fol. 86 et suiv • 66-71 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS. Minutes.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1004">Fol. 86 • La première concerne « le baron de Bolandre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1010">Fol. 87 • La seconde est adressée « à M. de Villiers ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1016">Fol. 88 • La troisième est adressée « à Mr le comte de Rochefort ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1025">Fol. 89 • La quatrième est adressée à la duchesse de Mantoue.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1031">Fol. 89 • La cinquième est adressée « au prince don Vincent ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1037">Fol. 89 • La sixième est adressée au duc de Rethelois, son fils.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1043">Fol. 90 • 72 Lettre de la reine CATHERINE DE MEDICIS au roi Henri III. « Escript à Castelnaudarry, le 4 may 1579 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1051">Fol. 91 • 73 Déchiffrement d'une note adressée, semble-t-il, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1059">Fol. 92 • 74 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à « Mrs d'Aubenton ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1070">Fol. 93 • 75 Lettre de « HUGUES, card. » DE LOUBENS DE VERDALLE, « gran maistre de Malte », au duc de Nevers. « De Malte, ce 24 juillet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1078">Fol. 95 • 76 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à « Mr de S. Pé, consul des François dans les royaume et seigneuries de Portugal », pour désavouer « l'abbé de S. Medard, nommé Rubens, qui prenait en Espagne et en Portugal la qualité d'agent de l'ordre de la Milice chretienne ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1089">Fol. 96 • 77 Lettre du Sr « DE JOYEUSE GRANDPRE », gouverneur de Mouzon, au duc de Nevers.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1103">78-80 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1109">Fol. 97 • La première de ces trois lettres est adressée à « Mrs de Chaalons, sur le sujet du procez » pour « le prioré S. Joseph », procès soutenu contre eux par l'abbesse d'Avenay, Bénédicte de Gonzague-Clèves. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1118">Fol. 98 • La seconde est adressée au roi et concerne le transport des grains hors des frontières du royaume, défendu par édit. Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1124">Fol. 99 • La troisième, dont nous n'avons ici que la fin, parle du duc de Longueville. Minute.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1130">Fol. 100 • 81 Lettre du Sr DE « CHANTLIVAULT » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1144">82 Fragment d'un mémoire qui semblait destiné à détourner le roi de l'achat de la terre de Château-Regnault (Ardennes).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1164">Fol. 104 • 83 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, « à Mrs de Reins ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1175">Fol. 105 • 84 « Forme du serment que preste le prevost des archers de la principaulté d'Arches ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1188">Fol. 106 • 85 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, « à Mrs les bourgsmestres de la cité de Lieges ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1199">Fol. 107 • 86 État de recettes sur revenus publics. Les généralités mentionnées sont Lyon, Paris, Champagne, Bourges, Poitiers, Dauphiné, Marseille, Dijon, Toulouse, Bordeaux, Tours, Caen. Fragment.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1207">Fol. 108 • 87 Acte par lequel le roi HENRI III évoque à sa personne l'instance criminelle commencée contre Jacques de Morogues, Sr Des Landes, pour raison de l'assassinat commis en la personne de Pierre Allyot, appelé le capitaine Pierre. Après 1577. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1221">88 Lettre, signée d'un monogramme, adressée au duc de Nevers, Charles de Gonzague.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1248">Fol. 110 • 89 Mémoire adressé au roi, concernant un projet d'ordonnance sur les procureurs à nommer par chaque élection, pour les causes des particuliers contre le fisc.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1256">90 Fin de lettre de CHARLES DE GONZAGUE, duc DE NEVERS, au duc de Mantoue.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1271">Fol. 114 • 91 Lettre, en faveur de la ville de Varzy, des « maire, gouverneurs, eschevins et gens du conseil de la ville d'Aucerre... à Mr de Champlemiz,... D'Aucere, ce 4 octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1282">Fol. 115 • 92 « Coppie de lectre de Mr D'OCQUERRE au duc de Nevers, « sur le sujet de la deffense de sortir grains hors le royaume ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1293">Fol. 117 • 93 Requête des « esleuz, manans et habitans » du « marquisat de Saluces » au roi Henri III. 1574 ? Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1301">Fol. 119 • 94 Lettre des « gouverneurs et eschevins de la ville de Sezanne » au duc de Nevers. « De Sezanne, ce 22 febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1309">Fol. 121 • 95 « Contrerolleurs. Thoulouse ». Minute d'un état de recettes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1317">Fol. 123 • 96 Lettre de « RENEE DE MARCONNAY » au duc de Nevers. « Grancey... 14 apvril 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057762_d0e1325">Fol. 124 à 126 • 97 « Abregé d'un discours faict avec [S.] S. par aulcuns de ses confidens, apres le despartement de Mr l'evesque de Paris [Pierre de Gondi] de Romme, pour ruyner la maison de France par elle-mesme et rendre ung nouveau roy vassal du pape. Trouvé es papiers et memoires de l'avocat David, avec ung advertissement à tous bons et naturelz François ». 1576.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4712 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57762j&Cote=Français 4712&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058289m">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 15755 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57762j&Cote=MF 15755&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4712 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9534</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant l'histoire de France, de la fin du XVI<emph render="super">e</emph> siècle à l'année 1625.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 15755. Cote de la matrice (pour commander une reproduction) : R 153031.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058289m" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9058289m.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9058289m.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Avenay, Abbaye d'.</p>
+<p>Batarnay, Mme F. de. • Lettre.</p>
+<p>Bochetel, Guillaume. • Actes.</p>
+<p>Carmagnola. • Garnison.</p>
+<p>Chalmand. • Lettres.</p>
+<p>Châlons-sur-Marne. • Procès contre l'abbesse d'Avenay.</p>
+<p>Chamoy, De.</p>
+<p>Champagne. • Notes (1645).</p>
+<p>Champlemys, De la Rivière de, bailli de Nivernais. • Actes et lettres.</p>
+<p>Châteauregnault-sur-Meuse.</p>
+<p>Crussol, Henri de. • Lettre.</p>
+<p>Dinteville, Joachim de Jaucourt, baron de. • Lettres.</p>
+<p>Farnèse, Alexandre, duc de Parme. • Note sur ses agissements.</p>
+<p>Fervaques, Renée de Marconnay, dame de. • Lettres.</p>
+<p>Finances. • Pièces (Henri IV).</p>
+<p>France. • Pitorre (XVIe-XVIIe s.).</p>
+<p>Gielis de Villabos. • Lettre.</p>
+<p>Gonzague, Famille de.</p>
+<p>Grains. • Exportation.</p>
+<p>Guyonnelle, De. • Requête.</p>
+<p>Henri III, roi de France. • Notes et pièces diverses.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>Joyeuse, Claude de, comte de Grandpré. • Lettres.</p>
+<p>La Guiche, Philibert de. • Actes et lettres.</p>
+<p>Ligue, La. • Notes et pièces diverses.</p>
+<p>Longueville, Catherine de Gonzague, duchesse de. • Lettres.</p>
+<p>Loubens, Hugues de, grand-maître de Malte. • Lettres.</p>
+<p>Louis XIII, roi de France. • Notes et pièces diverses.</p>
+<p>Milice Chrétienne, Ordre de la.</p>
+<p>Mouzon, Ardennes. • Requête des habitants.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Offices et charges. • Vénalité.</p>
+<p>Piémont. • Domaine royal.</p>
+<p>Pignerol. • Garnison.</p>
+<p>Pignerol. • Notes et pièces diverses.</p>
+<p>Pleuvost, De, gouverneur de Vézelay. • Convention avec de Champlemis.</p>
+<p>Protestants. • Notes et pièces diverses.</p>
+<p>Retz, Albert de Gondi, duc de, maréchal de France. • Lettres.</p>
+<p>Sézanne, Marne. • Lettres des habitants.</p>
+<p>Suisse. • Relations diplomatiques avec, la France (Henri III).</p>
+<p>Varzy. • Lettre en faveur de la ville.</p>
+<p>Vassé, Lancelot de. • Lettre.</p>
+<p>Viaux, René de, sr de Champlivaut. • Lettres.</p>
+<p>Vuillaucourt, gouverneur de Doullens. • Accusation contre lui.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e280');">1 Lettre signée : « HENRY ». Adresse : « A ma mere, Mme d'Uzes ». Cette lettre commence (fol. 1) par : « Ma mere, j'ay donné charge à Mr de Turenne,... ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e292');">2 Lettre de « CATHERINE » DE MEDICIS à la duchesse de Nevers. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e300');">3 Lettre, signée : « LA GUICHE », au duc de Nevers. « Au camp devant Sens, le 2 may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e308');">4 Lettre, signée : « DE GONDI », au duc de Nevers. « Montsojon, ce 29 janvier 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e316');">5 Lettre des « deputez des XIII cantons du pays des Ligues » au duc de Nevers. « De Solleure, en Suysse, ce jour de Pentecouste 1589 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e324');">6 Lettre non signée, avec chiffre et déchiffrement.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e343');">7 Lettre, dont la signature est coupée, adressée au roi; commence (fol. 8) par : « Sire, afin d'empescher que l'armée conduite par le Marquis de Warambon ne fît aucun progres plus important au bien de vostre service, j'avois assemblé ce qu'il m'avoit esté possible de bons serviteurs et m'estois advancé vers lad. armée, qui faisoit contenance de vouloir investir Dourlens... ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e355');">8 Questions et réponses concernant les agissements du duc de Parme.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e372');">9-10 Lettres de LOUIS DE GONZAGUE, duc DE NEVERS, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e383');">11 Fragment de dépêche en clair et en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e391');">12 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, en faveur du Sr de Vaudargent, exempt des gardes du roy ». Adressée au « conte de Carli », peu de temps avant le mariage de Charles Ier, roi d'Angleterre, et d'Henriette de France. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e405');">13 Requête adressée au roi Henri IV pour le Sr « DE GUYONNELLE ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e416');">14 Minute d'une lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à la duchesse, sa femme.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e424');">15 Lettre de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e432');">16 Copie d'une lettre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e452');">17 « Articles du sieur DE CHAMOY, presentées à Monseigneur le mareschal de Biron, lorsqu'il receut le serment de fidelité dud. Sr, et par luy verballement accordez ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e463');">18 Placet.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e482');">19 « Memoyre et advis pour le donmayne du païs de Piedmont ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e495');">20 Copie d'une lettre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e510');">21 Lettre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e530');">22 Fragments.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e545');">23 « Lectres d'office de garde des sceaulx de France pour... Philippes Hurault,... de Chiverny ». Acte de HENRI III. « Donné à Fontainebleau, au mois de septembre 1578 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e553');">24 Lettre, du Sr Chalmand (voir ms. 4716, fol. 108), signée d'un monogramme.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e581');">25 Maximes de conduite, divisées par paragraphes cotés tantôt C, tantôt C. G. La première maxime, cotée C, commence (fol. 33) par : « Prenez garde de ne rire ny parler à l'oreille devant les gens sotz... ». La dernière maxime, cotée C. G., est telle : « Accarasser à part les Italiens, lorsque les François n'y sont, parler aussi quelquefois à eux, mais par intervalles ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e590');">26 Fragment de notes et réflexions sur la conduite à tenir par Henri III pour abattre « les huguenots ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e603');">27 « Memoire de quelque propos qui se passoit durant la première ligue ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e616');">28 « Livres envoiez au Sr Volte par Bussiere,... 19 settembre [15] 89 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e627');">29-30 Lettres du duc DE NEVERS, LOUIS DE GONZAGUE, au roi Henri III. Clamecy, 11 mai 1589. Copies.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e635');">31 Lettre du Sr DE « DINTEVILLE » au duc de Nevers. « Saincte Manehould, le 13 decembre 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e646');">32 Minute de lettre de LOUIS DE GONZAGUE, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e657');">33-34 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, adressées, la première « à Mr Terason, [le] 8 mars 1625 », en faveur de Julio Menocchio, et la seconde « à Mr le cardinal de Savoye », en faveur du « baron de St Gilles ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e674');">35 Fin d'une lettre dudit duc DE NEVERS « à M. de C., chevalier de l'ordre de la Milice chrestienne et residant à Rome pour les affaires dudit ordre, au pallais de S. Jean de Latran ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e682');">36-37 Lettres, dont une signée d'un monogramme et l'autre non signée, de CATHERINE DE GONZAGUE et DE CLEVES, à Charles de Gonzague et de Clèves, duc de Nevers, son frère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e690');">38 Lettre adressée « à Mr l'archevesque de Reins », par CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e701');">39 « Minutte d'une lettre sur la mort d'un filz ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e709');">40 Lettre de « CHRISTIEN NICOLAS CATTIUS, chanoine de l'eglise cathedrale de Nostre Dame d'Arras... à S. E. le duc de Nivers et de Retelos, pair de France, grand prieur de l'occident de l'ordre de la Milice christiene, à Paris ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e722');">41 Lettre adressée au roi Louis XIII, par CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, pour lui réclamer 50,000 écus, prix de quelques vaisseaux vendus par ledit duc audit roi, lesquels vaisseaux venaient d'être pris par « ceux de la religion... dans le port Louys ». Minutes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e730');">42 Mémoire sur les offices et sur le prix qu'ils se vendent.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e745');">43 Lettre adressée par CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, « à Mr le prince de Chimay », concernant « les bois que l'on apelle du Chastelet ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e756');">44-45 Lettres dudit duc en faveur de l'abbesse d'Avenay, qui avait procès « contre aucuns de la ville de Chaalons, touchant la fondation d'un prieuré qu'elle y a estably ». Minutes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e769');">46 Fragment d'une instruction.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e784');">47 Lettre, signée : « JOYEUSE », adressée au duc de Nevers. « De Ville sus Tourbe, ce 21 febvrier 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e792');">48 Lettre, signée : « VASSE », adressée au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e800');">49 Lettre, signée : « LA FOREST BOCHETEL », adressée au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e808');">50 Ordre adressé aux « maire et habitans du Grand et Petit Remilly » pour recevoir et loger « les compagnéez du regiment de M. le viconte de Turenne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e816');">51 Minute d'une lettre de CHARLES DE GONZAGUE, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e824');">52 Lettre adressée « à Mr le viconte de Brigneul » et signée : « Vostre tres humble... servante, F. DE BATARNAY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e835');">53 Requête de « messire ARNAUD SORBIN, dict DE SAINCTE FOY, evesque de Nevers, demandeur en cassation de contract... contre le sieur de Revillon et sa femme, sieurs de la terre et maison des Bordes ». Adressée à « Mrs du conseil privé et d'Estat ». Pièce imprimée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e846');">54 Placet du gouverneur de Pignerol au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e859');">55 Lettre adressée au duc de Nevers, signée : « LA BLANQUE ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e883');">56 Convention arrêtée « entre Mr de Pleuvost, gouverneur... de Vezelay, pour Mr le duc de Mayenne, et Mr de Champlemis, lieutenant general au gouvernement de Nyvernois, en l'absence de Monseigneur le duc de Nyvernois, gouverneur dud. pays et de Champaigne et Brye... Clamecy », vers le 27 septembre 1589.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e900');">57-58 Copies de lettres adressées par LOUIS DE GONZAGUE, duc DE NEVERS, aux habitants d'une ville de Champagne, menacés par Antoine Monbeton, seigneur de St-Pol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e911');">59 Lettre du Sr « DE JOYEUSE GRANDPRE » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e928');">60 Requête adressée au duc de Nevers par « le Sr DE GRANDPRE, gouverneur de Mouzon, et les habitans dud. Mouzon ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e939');">61 Lettre pleine de récriminations de HENRIETTE DE CLEVES, duchesse DE NEVERS, à sa soeur Catherine de Clèves, duchesse de Guise. Vers 1588 ? Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e947');">62 « Estat du revenu que le roy a au Piémont ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e963');">63 « Attestation des sindictz de Carmagnolles de ce que La Vallette a dict au commissaire et mareschal des logis de la compagnie du Sr Centurion, voullans entrer aud. Carmagnolles et y loger le tiers de lad. compagnie, selon l'intention et vouloir du roy ». 7 janvier 1572. En italien. Copie collationnée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e974');">64 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e982');">65 Lettre du Sr « GIELIS DE VILLABOS », concernant « une entreprinse sur la Terre Sainte », pour laquelle le duc de Nevers, Ch. de G., pourra compter sur « douze navires equipées ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e996');">66-71 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS. Minutes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1043');">72 Lettre de la reine CATHERINE DE MEDICIS au roi Henri III. « Escript à Castelnaudarry, le 4 may 1579 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1051');">73 Déchiffrement d'une note adressée, semble-t-il, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1059');">74 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à « Mrs d'Aubenton ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1070');">75 Lettre de « HUGUES, card. » DE LOUBENS DE VERDALLE, « gran maistre de Malte », au duc de Nevers. « De Malte, ce 24 juillet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1078');">76 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à « Mr de S. Pé, consul des François dans les royaume et seigneuries de Portugal », pour désavouer « l'abbé de S. Medard, nommé Rubens, qui prenait en Espagne et en Portugal la qualité d'agent de l'ordre de la Milice chretienne ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1089');">77 Lettre du Sr « DE JOYEUSE GRANDPRE », gouverneur de Mouzon, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1103');">78-80 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1130');">81 Lettre du Sr DE « CHANTLIVAULT » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1144');">82 Fragment d'un mémoire qui semblait destiné à détourner le roi de l'achat de la terre de Château-Regnault (Ardennes).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1164');">83 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, « à Mrs de Reins ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1175');">84 « Forme du serment que preste le prevost des archers de la principaulté d'Arches ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1188');">85 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, « à Mrs les bourgsmestres de la cité de Lieges ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1199');">86 État de recettes sur revenus publics. Les généralités mentionnées sont Lyon, Paris, Champagne, Bourges, Poitiers, Dauphiné, Marseille, Dijon, Toulouse, Bordeaux, Tours, Caen. Fragment.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1207');">87 Acte par lequel le roi HENRI III évoque à sa personne l'instance criminelle commencée contre Jacques de Morogues, Sr Des Landes, pour raison de l'assassinat commis en la personne de Pierre Allyot, appelé le capitaine Pierre. Après 1577. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1221');">88 Lettre, signée d'un monogramme, adressée au duc de Nevers, Charles de Gonzague.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1248');">89 Mémoire adressé au roi, concernant un projet d'ordonnance sur les procureurs à nommer par chaque élection, pour les causes des particuliers contre le fisc.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1256');">90 Fin de lettre de CHARLES DE GONZAGUE, duc DE NEVERS, au duc de Mantoue.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1271');">91 Lettre, en faveur de la ville de Varzy, des « maire, gouverneurs, eschevins et gens du conseil de la ville d'Aucerre... à Mr de Champlemiz,... D'Aucere, ce 4 octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1282');">92 « Coppie de lectre de Mr D'OCQUERRE au duc de Nevers, « sur le sujet de la deffense de sortir grains hors le royaume ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1293');">93 Requête des « esleuz, manans et habitans » du « marquisat de Saluces » au roi Henri III. 1574 ? Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1301');">94 Lettre des « gouverneurs et eschevins de la ville de Sezanne » au duc de Nevers. « De Sezanne, ce 22 febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1309');">95 « Contrerolleurs. Thoulouse ». Minute d'un état de recettes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1317');">96 Lettre de « RENEE DE MARCONNAY » au duc de Nevers. « Grancey... 14 apvril 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057762_d0e1325');">97 « Abregé d'un discours faict avec [S.] S. par aulcuns de ses confidens, apres le despartement de Mr l'evesque de Paris [Pierre de Gondi] de Romme, pour ruyner la maison de France par elle-mesme et rendre ung nouveau roy vassal du pape. Trouvé es papiers et memoires de l'avocat David, avec ung advertissement à tous bons et naturelz François ». 1576.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

@@ -130,3 +130,32 @@ requires it before any transcription).
 
 Next best attempt and why: BNF-G60 -- f.91 under key no.60 (Bourdeau's transcription, in fr3986), registered gate on
 fr.3987 f.54 (Henri IV to Nevers, interlined decipherment, court hand) first.
+
+## Wave 14 (8 Oct 2026, 13:3x UTC by date -u): fr3622 closed for machines; sweep extended; new top row
+
+fr3622-nevers-gondi-1594: seven attempts, retrospective in its ITERATE.md -- key no.41 excluded by image; key no.60
+untestable by any order-blind statistic at N=135 (BNF-G60R: the word-valued key scores as well on shuffled order);
+waits on the owner's sign sorter or an order-sensitive test. Sega pool: still on the desk row.
+
+Finding-aid sweep extended (tools/bnf_findingaid.py now asks the search again at 100 results per page): Français 3315,
+3413, 3612, 3614, 3616-3619, 3635-3641, 3669, 3675, 3805, 4687, 4688, 4698, 4712 fetched (snapshots in
+sources/bnf-findingaids/2026-10-07/). 28 new cipher-marked items without a decipherment note; after screening:
+- fr.3641 (Spanish embassy intercepts 1589-93): Tomokiyo's phelippes.htm lists the volume letter by letter with
+  interlined decipherments, and Bourdeau's CATALOGUE.md entry 319 names the unread ones (nos.27, 48, 50, 58) -- his
+  candidate; lower priority for this lane.
+- **Q14 (new top row): fr.4698, Nevers-Mantua 1590** -- Nevers to Cardinal Scipione Gonzaga (no.47 f.108, 28 Feb 1590;
+  no.93 f.179, 9 Jul 1590), Nevers to the Duke of Mantua (no.92 f.177, 17 Apr 1590; no.94 f.181, 27 Jul 1590),
+  Scipione Gonzaga to Nevers (nos.2-5, 12-16), all "Chiffre" with no decipherment noted, volume online. Key: Nevers
+  no.35 "Per Cavare 1590" (fr.3995 f.64), with which D. Bourdeau read the sibling fr.3979 ff.92-93 (Duke of Mantua to
+  Nevers, 17 Sept 1590) at 95.1% (cyphersolver targets/gonzaga1590, MIT/CC BY): a held key and a known-answer control.
+  Bourdeau's CATALOGUE.md lists fr.4698 nos.2-5, 47, 92 as his candidate entry 331, not read in his README -- check-solved
+  must confirm with his repository at HEAD and credit him throughout.
+- fr.3669 f.69 (Phélypeaux d'Herbault to Béthune, 1626): already in ciphers/fr3669-bethune-rome-1625 (blocked).
+- fr.3413 nos.53/61/69 "Chiffre", no.62 (Orbais letter): Tomokiyo nevers.htm (no.62 read via the Nevers-Piles cipher);
+  Bourdeau pellevé target covers no.62.
+- fr.3315 no.2-3 (Nevers's cipher sent to the duchess, 1574): key sheets, not letters.
+- fr.4687, fr.4688: in existing folders (fr4687-paleologue-nevers, guazzo-nevers-fr4688-1571-72).
+
+Next best attempt and why: BNF-Q14-CS -- check-solved + premise check on the fr.4698 pool (pools-first rule, held key,
+known-answer sibling), then the first test: key no.35 re-reads Bourdeau's fr.3979 f.92 (gate) before any fr.4698 leaf.
+

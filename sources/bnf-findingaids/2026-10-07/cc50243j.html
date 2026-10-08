@@ -1,0 +1,530 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050243">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050243">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3729-4104</div>
+					<h1>Français 3805
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050243_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243">Français 3805 • Anc. 9300 • Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e127">1 « Double du chifre envoyé par monseigneur Charles de Gonzague, duc de Nevers, à l'abbé Cenamy, à Rome, Mr de Courtavenel y allant, le 20me may 1615 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e139">Fol. 5 • 2 Lettre de l'ambassadeur de France à Rome, au roi. « De Rome, ce 16me aoust 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e150">Fol. 7 • 3 « Forme du serment presté par les gens de Mr le prince de Condé à la monstre faicte pres Crepy en Launois, au mois de septembre 1615 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e166">Fol. 8 • 4 « Articles que Mr de La Faye proposera et promettra à Mrs de l'assemblée de Grenoble, tant en mon nom que des autres princes, officiers de la couronne et seigneurs joints avec moi HENRY DE BOURBON,... Faict à Sedan, le 23e jour d'aoust 1615 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e186">Fol. 9 • 5 Lettre d'«A[CHILLE Ier] DE HARLAY,... De Tours, ce 15 apvril » 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e202">Fol. 10 • 6 Lettre du président « P[IERRE] JEANNIN,... A Bordeaux, ce XVII d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e215">Fol. 11 • 7 « Lettre de HENRY DE BOURBON, prince [DE CONDE], à la royne [Marie de Médicis]... De Mezieres, le XVIII fevrier 1614 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e226">Fol. 18 • 8 Lettre de « LOUIS [XIII]... à monseigneur le comte de Brissac,... Escrit à Paris, le IIIIe jour de febvrier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e237">Fol. 21 et 22 • 9 Deux mémoires sur le passage du « P. Berulle » à Poitiers et à Angoulême. Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e245">Fol. 23 • 10 « Memoire de la part du roy [Louis XIII] sur ce qui s'est passé en son voyage de Caen ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e258">Fol. 25 • 11 « Ordonnance du roy [LOUIS XIII] pour la paix... Faict à Blois, le quatreiesme jour de may mil six cens seize ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e266">Fol. 27 • 12 Articles pour le mariage du roi Louis XIII et d'Anne d'Autriche, en 1612. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e284">Fol. 33 • 13 « Declaration du seigneur HENRY DE FOIX CANDALE, par laquelle il proteste de « vivre et mourir en la confession de foy que font les esglises reformées de France... Faict en Ales, au synode provincial, le Xe janvier 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e300">Fol. 35 • 14 Arrêt du conseil du roi Louis XIII, renvoyant MM. de Nemours et de Nevers devant le parlement pour y terminer leur différend sur la préséance. « Faict au conseil d'Estat du roy, à Compiegne, le IIIIe jour de juing mil six cens vingt quatre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e316">Fol. 36 • 15 « Articles accordés par le roy LOUIS [XIII] à la reine sa mere, en sa faveur, à ceux qui l'ont assistée en ses derniers mouvemens... Faict au Pont de Sé, le unzeiesme aoust mil six cens vingt ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e324">Fol. 38 • 16 « Poinctz et articles [proposés] au duc de Nevers de la part de [Maximilien], electeur de Baviere », par « Jean Salentin Faust de Stromberg, conseiller » dudit électeur, pour « empescher la discorde et desunion de l'Empire et de la France... A Charleville, le 6 d'aoust 1624 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e345">Fol. 40 • 17 Lettre de MAXIMILIEN DE BETHUNE, duc « DE SULLY », au « marquis de Rosny [son fils]... De Montrond, ce 23 aoust 1620 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e358">Fol. 41 • 18 « Extraict du traicté de paix faict à Vervins entre le roy [Henri IV] et le roy d'Espagne ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e376">Fol. 42 • 19 « Coppie de lettre du roy LOUIS [XIII] à Mr de St Luc, gouverneur en Brouage... Escrit à Fontainebleau, le XIIe avril M.VI.C. vingt trois ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e396">Fol. 44 • 20 Requête de CHARLES DE GONZAGUE, duc DE NEVERS, à Louis XIII, afin d'obtenir pour « Benedicte de Gonzague [sa fille] le brevet de nomination » à « l'abbaye d'Avenay ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e410">Fol. 45 • 21 « Les six Articles que chasque evesque de Coyre doibt jurer à la ville et commune, comme aussi à la ligue de la Cadée apres son eslection et confirmation... Donné le 27e octobre en l'an 1582 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e426">Fol. 47 • 22 « Memoire des terres à restituer par le duc » de Savoie à l'État de Milan, à l'Église et à l'Empire. Copie. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e444">Fol. 49 • 23 « Lettre du roy LOUIS [XIII] à monsieur le duc de Mayenne,... Escrit à Paris, ce dix septiesme janvier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e455">Fol. 52 • 24 Requête adressée par « toutes les eglises reformées de France et souveraineté de Bearn » au roi Louis XIII, pour lui « demander la paix ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e473">Fol. 53 • 25 « Declaration du roy LOUIS [XIII] pour la forme quy vouloit quy ce tenit à l'assamblée des notables à Rouen, le 4 decembre 1617 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e486">Fol. 54 • 26 Lettres closes de « LOUIS » XIII, relatives à l'ouverture des États généraux. « Faict à Paris, le XIIIe jour d'octobre 1614 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e497">Fol. 55 • 27 Mémoire du Sr DAVID, avocat au parlement de Paris, demandant la prompte convocation des États généraux, le jugement de François, duc d'Anjou, et l'emprisonnement du roi Henri III. 1576. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e513">Fol. 59 • 28 Déclaration de « CHARLES, cardinal DE BOURBON », par laquelle il se met à la tête de la Ligue. « Donné à Peronne, le dernier jour de mars 1685 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e529">Fol. 63 • 29 « Reception du concile de Trente par ceux du clergé ». Paris, 7 juillet 1615.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e542">Fol. 65 • 30 Pasquinade, sur les affaires d'Italie, où sont appliqués des passages de l'Écriture sainte aux différentes puissances qui étaient intéressées dans ces affaires. En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e555">Fol. 67 • 31 Déclaration de « GONZALO FERNANDEZ DE CORDOVA », gouverneur de Milan, pour le payement des troupes espagnoles. « Da Milano, a XVII genaro de [MD]LX ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e568">Fol. 69 • 32 « Copye de la lettre de [FREDERIC], comte palatin, escripte au duc de Braunswick,... De Sedan, ce 11/21 juillet 1622 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e581">Fol. 70 • 33 Lettre d'«ERNEST, conte DE MANSFELT,... à monsieur le duc de Nevers,... Ce 8/18 aoust 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e594">Fol. 71 • 34 « Escrit du P. DOMINIQUE, carme, au pape ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e605">Fol. 75 • 35 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e623">Fol. 79 • 36 Lettre adressée aux archevêques de Lacédémone, Corinthe, Malvoisie, Christianopolis, Patras, pour leur annoncer que le duc de Nevers préparait une expédition contre les Turcs. En grec vulgaire. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e641">Fol. 81 • 37 « Memoire anvoyé par le duc » DE SAVOIE, relatif à l'exécution du traité d'Asti.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e649">Fol. 83 • 38 « Double du memoire presenté au roy [Louis XIII] par l'ambassadeur de [Ferdinand], duc de Mantoue », exposant les raisons qui ne lui permettent pas de laisser impunis ses sujets rebelles. 1615. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e657">Fol. 85 • 39 Liste des places italiennes comprises dans le traité d'Asti, 1615. Copie. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e665">Fol. 86 • 40 « Lettre des Rochelois à monseigneur le cardinal [de Richelieu]... De La Rochelle, ce vingt troisiesme d'aoust 1628 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e678">41 « Responce d'[ARMAND-JEAN DU PLESSIS], cardinal DE RICHELIEU ». 24 août 1628. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e684">42 Lettre de CHARLES « DE CREQUY à Mr Gilles, intendant de sa maison ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e693">Fol. 88 • 43 Lettre de PHILIPPE DE BETHUNE à « Mr de Brassac ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e709">Fol. 91 • 44 « Article touchant Mr de Rambouillet ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e728">Fol. 91 • 45 Lettre de « G. DE COMAC, a[bbé] DE VILLELOIN,... à monseigneur le duc de Nivernois,... D'Aiguillon, ce 4 octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e744">Fol. 93 • 46 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e752">Fol. 94 • 47 Mémoire de ceux qui « se sont envoyés ofrir » au duc de Nevers « pour servir le roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e760">Fol. 96 • 48 Lettre du duc DE « NEVERS » au roi. « De Nevers, le 15e septanbre 1615 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e771">Fol. 98 • 49 Lettre du duc DE NEVERS à la reine. « De Nevers, le 15me de septanbre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e782">Fol. 100 et 106 • 50 et 51 Deux lettres du duc DE NEVERS au roi.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e790">Fol. 108 • 52 « Coppie de lettre escrite à Mr de Seaux par monseigneur [DE NEVERS] estant à Dezize, le 25 octobre 1615 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e801">Fol. 110 • 53 Lettre de « LOUIS » XIII au duc de Nevers. « Escrit à Abbeville, le XIIe jour de juin 1644 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e812">Fol. 113 • 54 Mémoire adressé à la reine Marie de Médicis, en faveur de la princesse Marie, contre le prince de Mantoue. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e823">Fol. 115 • 55 « Advertissement au roy d'un bon et fidelle Françoys sur les troubles d'Italie. M.DC.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050243_d0e839">Fol. 123 • 56 Épitaphe du président Jean-Jacques de Barillon. En latin.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3805 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50243j&Cote=Français 3805&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9057410m">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 15726 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50243j&Cote=MF 15726&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3805 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9300</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>2018<br/>IRHT, <a title="Consulter ce document" bib="2" target="_blank" href=" http://jonas.irht.cnrs.fr/consulter/manuscrit/detail_manuscrit.php?projet=45695" class="hrefLink ext">Notice du manuscrit Français 3805</a>, dans la base Jonas-IRHT/CNRS.</p>
+</span>
+</div>
+</div><div class="processinfo-class">
+<div class="label-part">
+<p class="processinfo-label">Informations sur le traitement</p>
+</div>
+<div class="description-part">
+<span>
+<p>Ajout de lien vers la base Jonas par Delphine Mercuzot et Mélody Delong, septembre 2018.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 15726. Cote de la matrice (pour commander une reproduction) : R 140156.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9057410m" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9057410m.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9057410m.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Bérulle, Pierre de, cardinal. • Passage à Poitiers et à Angoulême.</p>
+<p>Brèves, François Savary de. • Ambassades en Turquie (1592, 1602).</p>
+<p>Chiffres diplomatiques.</p>
+<p>Condé, Henri II de Bourbon, prince de. • Actes et lettres.</p>
+<p>Créquy, Charles Ier de, maréchal de France. • Lettres.</p>
+<p>États Généraux. • États de 1614.</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>Gonzague, Ferdinand de, cardinal et duc de Mantoue. • Lettres et actes.</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Louis XIII, roi de France. • Notes et pièces diverses.</p>
+<p>Marie de Médicis, reine de France. • Actes et lettres.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Pièces diverses.</p>
+<p>Rouen. • Assemblée des notables (1617).</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e127');">1 « Double du chifre envoyé par monseigneur Charles de Gonzague, duc de Nevers, à l'abbé Cenamy, à Rome, Mr de Courtavenel y allant, le 20me may 1615 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e139');">2 Lettre de l'ambassadeur de France à Rome, au roi. « De Rome, ce 16me aoust 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e150');">3 « Forme du serment presté par les gens de Mr le prince de Condé à la monstre faicte pres Crepy en Launois, au mois de septembre 1615 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e166');">4 « Articles que Mr de La Faye proposera et promettra à Mrs de l'assemblée de Grenoble, tant en mon nom que des autres princes, officiers de la couronne et seigneurs joints avec moi HENRY DE BOURBON,... Faict à Sedan, le 23e jour d'aoust 1615 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e186');">5 Lettre d'«A[CHILLE Ier] DE HARLAY,... De Tours, ce 15 apvril » 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e202');">6 Lettre du président « P[IERRE] JEANNIN,... A Bordeaux, ce XVII d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e215');">7 « Lettre de HENRY DE BOURBON, prince [DE CONDE], à la royne [Marie de Médicis]... De Mezieres, le XVIII fevrier 1614 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e226');">8 Lettre de « LOUIS [XIII]... à monseigneur le comte de Brissac,... Escrit à Paris, le IIIIe jour de febvrier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e237');">9 Deux mémoires sur le passage du « P. Berulle » à Poitiers et à Angoulême. Copies.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e245');">10 « Memoire de la part du roy [Louis XIII] sur ce qui s'est passé en son voyage de Caen ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e258');">11 « Ordonnance du roy [LOUIS XIII] pour la paix... Faict à Blois, le quatreiesme jour de may mil six cens seize ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e266');">12 Articles pour le mariage du roi Louis XIII et d'Anne d'Autriche, en 1612. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e284');">13 « Declaration du seigneur HENRY DE FOIX CANDALE, par laquelle il proteste de « vivre et mourir en la confession de foy que font les esglises reformées de France... Faict en Ales, au synode provincial, le Xe janvier 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e300');">14 Arrêt du conseil du roi Louis XIII, renvoyant MM. de Nemours et de Nevers devant le parlement pour y terminer leur différend sur la préséance. « Faict au conseil d'Estat du roy, à Compiegne, le IIIIe jour de juing mil six cens vingt quatre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e316');">15 « Articles accordés par le roy LOUIS [XIII] à la reine sa mere, en sa faveur, à ceux qui l'ont assistée en ses derniers mouvemens... Faict au Pont de Sé, le unzeiesme aoust mil six cens vingt ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e324');">16 « Poinctz et articles [proposés] au duc de Nevers de la part de [Maximilien], electeur de Baviere », par « Jean Salentin Faust de Stromberg, conseiller » dudit électeur, pour « empescher la discorde et desunion de l'Empire et de la France... A Charleville, le 6 d'aoust 1624 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e345');">17 Lettre de MAXIMILIEN DE BETHUNE, duc « DE SULLY », au « marquis de Rosny [son fils]... De Montrond, ce 23 aoust 1620 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e358');">18 « Extraict du traicté de paix faict à Vervins entre le roy [Henri IV] et le roy d'Espagne ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e376');">19 « Coppie de lettre du roy LOUIS [XIII] à Mr de St Luc, gouverneur en Brouage... Escrit à Fontainebleau, le XIIe avril M.VI.C. vingt trois ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e396');">20 Requête de CHARLES DE GONZAGUE, duc DE NEVERS, à Louis XIII, afin d'obtenir pour « Benedicte de Gonzague [sa fille] le brevet de nomination » à « l'abbaye d'Avenay ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e410');">21 « Les six Articles que chasque evesque de Coyre doibt jurer à la ville et commune, comme aussi à la ligue de la Cadée apres son eslection et confirmation... Donné le 27e octobre en l'an 1582 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e426');">22 « Memoire des terres à restituer par le duc » de Savoie à l'État de Milan, à l'Église et à l'Empire. Copie. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e444');">23 « Lettre du roy LOUIS [XIII] à monsieur le duc de Mayenne,... Escrit à Paris, ce dix septiesme janvier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e455');">24 Requête adressée par « toutes les eglises reformées de France et souveraineté de Bearn » au roi Louis XIII, pour lui « demander la paix ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e473');">25 « Declaration du roy LOUIS [XIII] pour la forme quy vouloit quy ce tenit à l'assamblée des notables à Rouen, le 4 decembre 1617 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e486');">26 Lettres closes de « LOUIS » XIII, relatives à l'ouverture des États généraux. « Faict à Paris, le XIIIe jour d'octobre 1614 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e497');">27 Mémoire du Sr DAVID, avocat au parlement de Paris, demandant la prompte convocation des États généraux, le jugement de François, duc d'Anjou, et l'emprisonnement du roi Henri III. 1576. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e513');">28 Déclaration de « CHARLES, cardinal DE BOURBON », par laquelle il se met à la tête de la Ligue. « Donné à Peronne, le dernier jour de mars 1685 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e529');">29 « Reception du concile de Trente par ceux du clergé ». Paris, 7 juillet 1615.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e542');">30 Pasquinade, sur les affaires d'Italie, où sont appliqués des passages de l'Écriture sainte aux différentes puissances qui étaient intéressées dans ces affaires. En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e555');">31 Déclaration de « GONZALO FERNANDEZ DE CORDOVA », gouverneur de Milan, pour le payement des troupes espagnoles. « Da Milano, a XVII genaro de [MD]LX ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e568');">32 « Copye de la lettre de [FREDERIC], comte palatin, escripte au duc de Braunswick,... De Sedan, ce 11/21 juillet 1622 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e581');">33 Lettre d'«ERNEST, conte DE MANSFELT,... à monsieur le duc de Nevers,... Ce 8/18 aoust 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e594');">34 « Escrit du P. DOMINIQUE, carme, au pape ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e605');">35 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e623');">36 Lettre adressée aux archevêques de Lacédémone, Corinthe, Malvoisie, Christianopolis, Patras, pour leur annoncer que le duc de Nevers préparait une expédition contre les Turcs. En grec vulgaire. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e641');">37 « Memoire anvoyé par le duc » DE SAVOIE, relatif à l'exécution du traité d'Asti.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e649');">38 « Double du memoire presenté au roy [Louis XIII] par l'ambassadeur de [Ferdinand], duc de Mantoue », exposant les raisons qui ne lui permettent pas de laisser impunis ses sujets rebelles. 1615. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e657');">39 Liste des places italiennes comprises dans le traité d'Asti, 1615. Copie. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e665');">40 « Lettre des Rochelois à monseigneur le cardinal [de Richelieu]... De La Rochelle, ce vingt troisiesme d'aoust 1628 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e678');">41 « Responce d'[ARMAND-JEAN DU PLESSIS], cardinal DE RICHELIEU ». 24 août 1628. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e684');">42 Lettre de CHARLES « DE CREQUY à Mr Gilles, intendant de sa maison ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e693');">43 Lettre de PHILIPPE DE BETHUNE à « Mr de Brassac ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e709');">44 « Article touchant Mr de Rambouillet ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e728');">45 Lettre de « G. DE COMAC, a[bbé] DE VILLELOIN,... à monseigneur le duc de Nivernois,... D'Aiguillon, ce 4 octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e744');">46 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e752');">47 Mémoire de ceux qui « se sont envoyés ofrir » au duc de Nevers « pour servir le roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e760');">48 Lettre du duc DE « NEVERS » au roi. « De Nevers, le 15e septanbre 1615 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e771');">49 Lettre du duc DE NEVERS à la reine. « De Nevers, le 15me de septanbre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e782');">50 et 51 Deux lettres du duc DE NEVERS au roi.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e790');">52 « Coppie de lettre escrite à Mr de Seaux par monseigneur [DE NEVERS] estant à Dezize, le 25 octobre 1615 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e801');">53 Lettre de « LOUIS » XIII au duc de Nevers. « Escrit à Abbeville, le XIIe jour de juin 1644 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e812');">54 Mémoire adressé à la reine Marie de Médicis, en faveur de la princesse Marie, contre le prince de Mantoue. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e823');">55 « Advertissement au roy d'un bon et fidelle Françoys sur les troubles d'Italie. M.DC.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050243_d0e839');">56 Épitaphe du président Jean-Jacques de Barillon. En latin.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

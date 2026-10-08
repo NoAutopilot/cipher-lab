@@ -1,0 +1,470 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050085">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050085">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3635
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050085_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085">Français 3635 • Anc. 9124 • Recueil de lettres originales.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e94">1 Lettre de JEAN, « cardinal DE LORRAINE », et de « CLAUDE DE LORRAINE [duc DE GUISE]... à monseigneur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e100">Fol. 3 • 2 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e108">Fol. 5 • 3 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De La Fere, ce XIIIe de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e119">Fol. 7 • 4 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e127">Fol. 9 • 5 Lettre de « LOYS, cardinal DE BOURBON,... à monseigneur le connestable, mon cousin... A Paris, ce XXIe de novembre M.V.C.XIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e141">Fol. 11 • 6 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De La Fere, le XIIme de juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e152">Fol. 13 • 7 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Paris, ce jeudy XIe de febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e163">Fol. 15 • 8 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Sainct Denys en France, le XXme de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e174">Fol. 17 • 9 Lettre de « LOYS, cardinal DE BOURBON,... au roy, mon souverain seigneur... A Lyon, se IIIIe aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e185">Fol. 19 • 10 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De La Fere, ce XVIIe jour de juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e196">Fol. 21 • 11 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De La Fere, le XIIIIe jour du mois de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e207">Fol. 23 • 12 Lettre de « LOYS, cardinal DE BOURBON,... à monseigneur le connestable, mon cousin... De La Fere, ce XXIIIIme d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e218">Fol. 25 • 13 Lettre de « C[HARLES], cardinal DE BOURBON,... à mon bon frere monseigneur le marechal Dampville,... De Paris, ce XVIIIe de febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e229">Fol. 27 • 14 Lettre de « CHARLES, cardinal DE BOURBON,... à monsieur le mareschal de Montmorency,... A Poissy, le VIIIe jour d'octobre 1561 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e240">Fol. 29 • 15 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable, duchesse de Montmorency,... De St Mor, ce Ve de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e254">Fol. 31 • 16 Lettre de JEAN, « cardinal DE LORRAINE,... à monsieur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e262">Fol. 33 • 17 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur de Montmorenci ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e270">Fol. 35 • 18 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre... De Bloys, ce XVIe mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e281">Fol. 37 • 19 Lettre de « LOYS, cardinal DE GUYSE,... à monseigneur le connestable ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e294">Fol. 38 • 20 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... A Fontenebleau, le XXVIe jour de feuvrier 1567 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e305">Fol. 40 • 21 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce XIIIIe de apvril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e316">Fol. 42 • 22 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Paris, ce dernier novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e324">Fol. 44 • 23 Lettre de « C[HARLES], cardinal DE BOURBON,... à madame la connestable... A St Germain des Prez, ce IIIIme jour d'aoust 1569 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e338">Fol. 46 • 24 Lettre de « CHARLES, cardinal DE BOUBBON,... à madame la connestable... A Paris, ce XIIIe jour de febvrier 1568 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e349">Fol. 48 • 25 Lettre de « HIPPOLYTO, cardinale Estense,... à monseigneur de Humieres,... De Fonteynebleau, ce XXIIIIe de juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e365">Fol. 50 et 52 • 26-27 Deux lettres de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e373">Fol. 54 • 28 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce 6e de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e384">Fol. 56 • 29 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce XXVIe de mars».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e395">Fol. 58 • 30 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e403">Fol. 60 • 31 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce XIIe de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e414">Fol. 62 • 32 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce XXIIe de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e425">Fol. 64 • 33 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e433">Fol. 66 • 34 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Paris, ce XVIIe jour de febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e444">Fol. 68 • 35 Lettre de « CHARLES, cardinal DE BOURBON,... à monseigneur le mareschal de Montmorancy,... De Chenonceaux, ce XIXme jour d'apvril 1563 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e455">Fol. 70 • 36 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Montmorancy,... De Nancy, le 20e mars 1603 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e471">Fol. 72 • 37 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... De Nancy, le XVe jour d'apvril 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e482">Fol. 74 • 38 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... De Nancy, le 23e decembre 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e493">Fol. 76 • 39 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Montmorancy,... De Nancy, le 2e janvier 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e504">Fol. 78, 80, 82 et 84 • 40-43 Quatre lettres de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e512">Fol. 86 • 44 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Melun, le XVIIIe jour d'octobre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e523">Fol. 88 • 45 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e531">Fol. 90 • 46 Lettre de JEAN, « cardinal DE LORRAINE,... à monsieur mon homme monseigneur le connestable... Escript à Ennet, le XXVIIIe jour d'octobre 1549 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e542">47 Lettre de LOUIS, « cardinal DE GUISE », et de CLAUDE DE LORRAINE, duc d'«AUBMALLE,... à monseigneur de Montmorency,... Escript à Ennet, ce XXVIIIe jour d'octobre 1549 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e551">Fol. 94 • 48 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre... De Coussy, ce Xe juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e562">Fol. 96 • 49 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Challon, ce XXVIe de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050085_d0e573">Fol. 97 • 50 Lettre de « CHARLES DE LORRAINE,... à monseigneur le connestable ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3635 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50085h&Cote=Français 3635&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3635 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9124</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècles</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Bourbon, Charles de [Charles X], cardinal. • Notes et pièces diverses.</p>
+<p>Bourbon, Louis de, cardinal. • Lettres.</p>
+<p>Este, Louis d', cardinal de Ferrare. • Lettres.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Guise, Claude Ier de Lorraine, comte d'Aumale, duc de. • Actes et lettres.</p>
+<p>Guise, Claude Ier de Lorraine, comte d'Aumale, duc de. • Pièces.</p>
+<p>Guise, Jean de Lorraine, cardinal de. • Lettres.</p>
+<p>Guise, Louis Ier de Lorraine, cardinal de. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e94');">1 Lettre de JEAN, « cardinal DE LORRAINE », et de « CLAUDE DE LORRAINE [duc DE GUISE]... à monseigneur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e100');">2 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e108');">3 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De La Fere, ce XIIIe de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e119');">4 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e127');">5 Lettre de « LOYS, cardinal DE BOURBON,... à monseigneur le connestable, mon cousin... A Paris, ce XXIe de novembre M.V.C.XIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e141');">6 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De La Fere, le XIIme de juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e152');">7 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Paris, ce jeudy XIe de febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e163');">8 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Sainct Denys en France, le XXme de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e174');">9 Lettre de « LOYS, cardinal DE BOURBON,... au roy, mon souverain seigneur... A Lyon, se IIIIe aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e185');">10 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De La Fere, ce XVIIe jour de juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e196');">11 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De La Fere, le XIIIIe jour du mois de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e207');">12 Lettre de « LOYS, cardinal DE BOURBON,... à monseigneur le connestable, mon cousin... De La Fere, ce XXIIIIme d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e218');">13 Lettre de « C[HARLES], cardinal DE BOURBON,... à mon bon frere monseigneur le marechal Dampville,... De Paris, ce XVIIIe de febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e229');">14 Lettre de « CHARLES, cardinal DE BOURBON,... à monsieur le mareschal de Montmorency,... A Poissy, le VIIIe jour d'octobre 1561 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e240');">15 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable, duchesse de Montmorency,... De St Mor, ce Ve de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e254');">16 Lettre de JEAN, « cardinal DE LORRAINE,... à monsieur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e262');">17 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur de Montmorenci ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e270');">18 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre... De Bloys, ce XVIe mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e281');">19 Lettre de « LOYS, cardinal DE GUYSE,... à monseigneur le connestable ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e294');">20 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... A Fontenebleau, le XXVIe jour de feuvrier 1567 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e305');">21 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce XIIIIe de apvril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e316');">22 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Paris, ce dernier novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e324');">23 Lettre de « C[HARLES], cardinal DE BOURBON,... à madame la connestable... A St Germain des Prez, ce IIIIme jour d'aoust 1569 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e338');">24 Lettre de « CHARLES, cardinal DE BOUBBON,... à madame la connestable... A Paris, ce XIIIe jour de febvrier 1568 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e349');">25 Lettre de « HIPPOLYTO, cardinale Estense,... à monseigneur de Humieres,... De Fonteynebleau, ce XXIIIIe de juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e365');">26-27 Deux lettres de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e373');">28 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce 6e de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e384');">29 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce XXVIe de mars».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e395');">30 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e403');">31 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce XIIe de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e414');">32 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Metz, ce XXIIe de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e425');">33 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e433');">34 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Paris, ce XVIIe jour de febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e444');">35 Lettre de « CHARLES, cardinal DE BOURBON,... à monseigneur le mareschal de Montmorancy,... De Chenonceaux, ce XIXme jour d'apvril 1563 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e455');">36 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Montmorancy,... De Nancy, le 20e mars 1603 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e471');">37 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... De Nancy, le XVe jour d'apvril 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e482');">38 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... De Nancy, le 23e decembre 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e493');">39 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Montmorancy,... De Nancy, le 2e janvier 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e504');">40-43 Quatre lettres de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e512');">44 Lettre de « LOYS, cardinal DE BOURBON,... à mon cousin monseigneur le grant maistre... De Melun, le XVIIIe jour d'octobre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e523');">45 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e531');">46 Lettre de JEAN, « cardinal DE LORRAINE,... à monsieur mon homme monseigneur le connestable... Escript à Ennet, le XXVIIIe jour d'octobre 1549 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e542');">47 Lettre de LOUIS, « cardinal DE GUISE », et de CLAUDE DE LORRAINE, duc d'«AUBMALLE,... à monseigneur de Montmorency,... Escript à Ennet, ce XXVIIIe jour d'octobre 1549 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e551');">48 Lettre de JEAN, « cardinal DE LORRAINE,... à monseigneur le grant maistre... De Coussy, ce Xe juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e562');">49 Lettre de « CHARLES, cardinal DE BOURBON,... à madame la connestable... De Challon, ce XXVIe de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050085_d0e573');">50 Lettre de « CHARLES DE LORRAINE,... à monseigneur le connestable ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

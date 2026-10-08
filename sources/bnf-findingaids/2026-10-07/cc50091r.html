@@ -1,0 +1,499 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050091">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050091">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3640
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050091_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091">Français 3640 • Anc. 9129 • Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e107">1 « Copie de la lettre de la reine LOUISE, escritte au roy Henry quatriesme, apres la mort du roy Henry troisiesme son mari... De Chenonceau, le sixiesme septembre mil cinq cens quatre vingtz neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e113">Fol. 3 • 2-3 Deux lettres du roi « HENRI IV,... à monseigneur de Rosny ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e121">Fol. 4 • 4 Lettre de « G[ABRIELLE] D'ESTREES,... à madame la duchesse de Nevers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e134">Fol. 6 • 5 Lettre du Sr « DE CORNAC, abbé DE VILLELOING,... à monsieur le cardinal de Givry,... Avec un discours... d'un conseil particulier tenu à Sainct Germain en Laye, en 1598, par le roy Henry quatriesme, sur le subjet du mariage pretendu de madame la duchesse de Beaufort avec Sa Majesté ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e150">Fol. 40 • 6 « Coppie de lettre escripte par monseigneur CHARLES DE LORRAINE, duc DE MAYENNE, à monsieur de Villars, en faveur de monsieur de Prie,... A Soissons, ce XXIe jour de janvier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e166">Fol. 41 • 7 Relation de la querelle du prince de Joinville avec M. de Bellegarde, au sortir de la maison du Sr Zamet, où le roi était allé coucher, le mardi 10 août 1599.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e182">Fol. 42 • 8 « Brevet de reserve de l'estat de gouverneur de Paris », donné par le roi HENRI IV au Sr de Montigny. « Dix septiesme jour de novembre mil V.C.IIII.XX. dix neuf, le roy estant à Paris ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e202">Fol. 43 • 9 Lettre de « HENRY [IV]... à monseigneur de Montigny,... A Fontainebleau, le XXVIIe jour de septembre 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e213">Fol. 44 • 10 Lettre de « HENRY [IV]... à monseigneur de Montigny,... Escrit à St Germain en Laye, le XXVIe jour de juillet, neuf heures du soir, 1602 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e227">Fol. 44bis • 11 Brevet du roi, autorisant le Sr de Montigny à demander au prévôt des marchands et aux échevins de Paris un hôtel pour se loger lui et ses successeurs au gouvernement de Paris. « XIe janvier M.VI.C. six, le roy estant à Paris ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e249">Fol. 45 • 12 Lettre de POMPONNE DE « BELLIEVRE,... à monsieur de Montigny,... De Paris, le XXVIIe jour de juillet 1602 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e265">Fol. 46 • 13 « Copie de la commission du roy pour faire le proces au marechal de Biron,... Donné à Paris, le XVIIe jour de juin, l'an de grace mil six cens deux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e281">Fol. 48 • 14 « Requeste et suplication faicte au roy par les parens du duc de Biron. Ensemble la responce que le roy leur fist ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e289">Fol. 50 • 15 « Recueil veritable de ce qui s'est passé en la prononciation de l'arrest de deffunct monsieur le duc et marechal de Biron, et execution d'iceluy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e297">Fol. 56 • 16 Lettre du Sr DE « BEAUMONT [ambassadeur en Angleterre]... à monseigneur de Montigny,... De Londres, ce 26 juin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e313">Fol. 57 • 17 « Coppie de la requeste presentée au roy par les jesuites », pour leur rétablissement.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e321">Fol. 61 • 18 Lettre du roi au maréchal de Bouillon, lui ordonnant de venir se justifier des accusations portées contre lui dans le procès du maréchal de Biron. « De Fontainebleau, le XVIIIe novembre 1602 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e337">Fol. 62 • 19 Lettre de « HENRY DE LA TOUR [duc DE BOUILLON]... au roy... A St Ceré, le XXXe novembre 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e356">Fol. 64 • 20 « Coppia della lettera di Fra PAULO, Venitiano,... Di Venetia, il 30 marzo ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e369">21 Épitaphe en latin de Fra Paolo Sarpi.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e384">22 Éloge, en latin, de Fra Paolo.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e397">23 « Dialogus inter Paulum P. M. et M. Paulum Servitam », pièce en vers latins.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e412">24 Trois distiques et un quatrain « in obitum ejusdem M. Pauli ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e418">Fol. 67 • 25 Trois distiques « in effigiem M. Pauli Veneti ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e429">26 Un quatrain et un distique « in equum gradarium pro regno neapolitano ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e435">Fol. 68 • 27 Lettre de « HENRY [IV]... à monseigneur de Montygny,... Ce XVme octobre, à Fontenebleau, au soyr ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e446">Fol. 69 • 28 « Ordonnance du roy sur le faict du conmerce, à cause des trante pour cent ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e459">Fol. 73 • 29 « Articles presentez à Sa Majesté tres chrestienne par le Sr conte de Visques, ambassadeur de Son Altesse de Savoye ; avec les responces que Sa Majesté a faict sur chacun ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e475">Fol. 77 • 30 Lettre du roi HENRI IV, établissant le duc d'Orléans chef d'une compagnie de deux cents hommes d'armes. « Donné à Fontainebleau, le XXVe jour d'avril, l'an de grace mil six cens sept ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e491">Fol. 79 • 31 Lettre de « HENRY [IV]... à monseigneur de Montigny,... Escrit à Fontainebleau, le XXIIe jour de juing 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e502">Fol. 80 • 32 Lettre de « LOUIS DE LA VALETTE [duc D'ÉPERNON]... à monseigneur de Montigny,... Ce XX juillet, à Paris ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e515">Fol. 81 • 33 « Coppie de lettre escripte par monsieur D'ESPERNON à monsieur de Montigny ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e523">34 « Coppie de lettre escripte à monsieur d'Esparnon par monsieur DE MONTIGNY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e529">Fol. 83 • 35 Lettre de « LOUIS DE LAVALETTE [duc D'ÉPERNON]... à monsieur de Montigny,... A Paris, le IIIIe d'aost ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e540">Fol. 85 • 36 Lettre de M. DE « SEAUS,... à monsieur de Montigny,... De Fontainebleau, le XIIe may 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e556">Fol. 87 • 37 « Coppie de lettre escrite au roy par le Sr DE MONTIGNY,... A Mez, le XXme octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e575">Fol. 89 • 38 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... De Paris, le IIII aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e588">Fol. 91 • 39 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... Du mardy Vme aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e599">Fol. 92 • 40 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... A Fontainebleau, le Vme juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e610">Fol. 93 • 41 Lettre de LOUIS « POTIER [DE GEVRE]... à monsieur de Montigny,... De Fontainebleau, le XVIIme jour de juin 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e621">Fol. 95 • 42 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... Du XI aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e629">Fol. 97 • 43 Lettre de LOUIS « POTIER [DE GESVRE]... à monsieur de Montigny,... De Paris, le 6me juillet 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e640">Fol. 98 • 44 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... A Paris, le XXVI aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e648">Fol. 100 • 45 Lettre de LOUIS « POTIER [DE GEVRE]... à monsieur de Montigny,... De Metz, le XXVI mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e656">Fol. 101 • 46 Lettre de « JEAN, comte Palatin... à monsieur de Montigny,... De Deux Ponts, ce 7 de juing 1607, stile ancien ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e669">Fol. 102 • 47 Lettre de « LOTHAIRE, archevesque de Treves,... à monsieur de Montigni,... De Treves, ce XIIIe de juing 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e685">Fol. 103 • 48 Lettre de « FRIDERIC, electeur palatin... à monsieur de Montigny,... De Heidelberg, ce 10e de juillet 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e696">Fol. 104 • 49 Lettre de « A[NNE] D'ESCARS, cardinal DE GIVRY [évêque de Metz]... à monsieur de Montigny,... A Rome, le 1 septembre 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050091_d0e709">Fol. 105 • 50 Lettre du Sr DE « SEAUS,... à monsieur de Montigny,... De Bourdeaux, le XVIe jour de novembre 1607 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3640 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50091r&Cote=Français 3640&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b525187271">Consulter le document numérisé</a></li></ul><ul class="listeLiens"></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3640 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9129</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècles</div>
+<div class="divdid">Vélin et papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original : Français 3640.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b525187271" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b525187271.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b525187271.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Bouillon, Henri de La Tour d'Auvergne, duc de, maréchal de France. • Procès.</p>
+<p>Commerce. • Notes, pièces et recueils divers.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Guise, Charles IV de Lorraine, duc de. • Querelle avec le duc de Bellegarde.</p>
+<p>Jésuites. • Recueils et mélanges.</p>
+<p>Louise de Lorraine, femme de Henri III. • Lettres.</p>
+<p>Naples, Royaume de. • Notes et pièces diverses.</p>
+<p>Prie, René de, baron de Toucy.</p>
+<p>Sarpi, Fra Paolo. • Éloge.</p>
+<p>Sarpi, Fra Paolo. • Épitaphe.</p>
+<p>Sarpi, Fra Paolo. • Poésies.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e107');">1 « Copie de la lettre de la reine LOUISE, escritte au roy Henry quatriesme, apres la mort du roy Henry troisiesme son mari... De Chenonceau, le sixiesme septembre mil cinq cens quatre vingtz neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e113');">2-3 Deux lettres du roi « HENRI IV,... à monseigneur de Rosny ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e121');">4 Lettre de « G[ABRIELLE] D'ESTREES,... à madame la duchesse de Nevers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e134');">5 Lettre du Sr « DE CORNAC, abbé DE VILLELOING,... à monsieur le cardinal de Givry,... Avec un discours... d'un conseil particulier tenu à Sainct Germain en Laye, en 1598, par le roy Henry quatriesme, sur le subjet du mariage pretendu de madame la duchesse de Beaufort avec Sa Majesté ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e150');">6 « Coppie de lettre escripte par monseigneur CHARLES DE LORRAINE, duc DE MAYENNE, à monsieur de Villars, en faveur de monsieur de Prie,... A Soissons, ce XXIe jour de janvier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e166');">7 Relation de la querelle du prince de Joinville avec M. de Bellegarde, au sortir de la maison du Sr Zamet, où le roi était allé coucher, le mardi 10 août 1599.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e182');">8 « Brevet de reserve de l'estat de gouverneur de Paris », donné par le roi HENRI IV au Sr de Montigny. « Dix septiesme jour de novembre mil V.C.IIII.XX. dix neuf, le roy estant à Paris ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e202');">9 Lettre de « HENRY [IV]... à monseigneur de Montigny,... A Fontainebleau, le XXVIIe jour de septembre 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e213');">10 Lettre de « HENRY [IV]... à monseigneur de Montigny,... Escrit à St Germain en Laye, le XXVIe jour de juillet, neuf heures du soir, 1602 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e227');">11 Brevet du roi, autorisant le Sr de Montigny à demander au prévôt des marchands et aux échevins de Paris un hôtel pour se loger lui et ses successeurs au gouvernement de Paris. « XIe janvier M.VI.C. six, le roy estant à Paris ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e249');">12 Lettre de POMPONNE DE « BELLIEVRE,... à monsieur de Montigny,... De Paris, le XXVIIe jour de juillet 1602 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e265');">13 « Copie de la commission du roy pour faire le proces au marechal de Biron,... Donné à Paris, le XVIIe jour de juin, l'an de grace mil six cens deux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e281');">14 « Requeste et suplication faicte au roy par les parens du duc de Biron. Ensemble la responce que le roy leur fist ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e289');">15 « Recueil veritable de ce qui s'est passé en la prononciation de l'arrest de deffunct monsieur le duc et marechal de Biron, et execution d'iceluy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e297');">16 Lettre du Sr DE « BEAUMONT [ambassadeur en Angleterre]... à monseigneur de Montigny,... De Londres, ce 26 juin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e313');">17 « Coppie de la requeste presentée au roy par les jesuites », pour leur rétablissement.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e321');">18 Lettre du roi au maréchal de Bouillon, lui ordonnant de venir se justifier des accusations portées contre lui dans le procès du maréchal de Biron. « De Fontainebleau, le XVIIIe novembre 1602 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e337');">19 Lettre de « HENRY DE LA TOUR [duc DE BOUILLON]... au roy... A St Ceré, le XXXe novembre 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e356');">20 « Coppia della lettera di Fra PAULO, Venitiano,... Di Venetia, il 30 marzo ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e369');">21 Épitaphe en latin de Fra Paolo Sarpi.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e384');">22 Éloge, en latin, de Fra Paolo.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e397');">23 « Dialogus inter Paulum P. M. et M. Paulum Servitam », pièce en vers latins.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e412');">24 Trois distiques et un quatrain « in obitum ejusdem M. Pauli ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e418');">25 Trois distiques « in effigiem M. Pauli Veneti ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e429');">26 Un quatrain et un distique « in equum gradarium pro regno neapolitano ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e435');">27 Lettre de « HENRY [IV]... à monseigneur de Montygny,... Ce XVme octobre, à Fontenebleau, au soyr ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e446');">28 « Ordonnance du roy sur le faict du conmerce, à cause des trante pour cent ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e459');">29 « Articles presentez à Sa Majesté tres chrestienne par le Sr conte de Visques, ambassadeur de Son Altesse de Savoye ; avec les responces que Sa Majesté a faict sur chacun ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e475');">30 Lettre du roi HENRI IV, établissant le duc d'Orléans chef d'une compagnie de deux cents hommes d'armes. « Donné à Fontainebleau, le XXVe jour d'avril, l'an de grace mil six cens sept ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e491');">31 Lettre de « HENRY [IV]... à monseigneur de Montigny,... Escrit à Fontainebleau, le XXIIe jour de juing 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e502');">32 Lettre de « LOUIS DE LA VALETTE [duc D'ÉPERNON]... à monseigneur de Montigny,... Ce XX juillet, à Paris ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e515');">33 « Coppie de lettre escripte par monsieur D'ESPERNON à monsieur de Montigny ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e523');">34 « Coppie de lettre escripte à monsieur d'Esparnon par monsieur DE MONTIGNY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e529');">35 Lettre de « LOUIS DE LAVALETTE [duc D'ÉPERNON]... à monsieur de Montigny,... A Paris, le IIIIe d'aost ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e540');">36 Lettre de M. DE « SEAUS,... à monsieur de Montigny,... De Fontainebleau, le XIIe may 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e556');">37 « Coppie de lettre escrite au roy par le Sr DE MONTIGNY,... A Mez, le XXme octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e575');">38 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... De Paris, le IIII aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e588');">39 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... Du mardy Vme aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e599');">40 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... A Fontainebleau, le Vme juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e610');">41 Lettre de LOUIS « POTIER [DE GEVRE]... à monsieur de Montigny,... De Fontainebleau, le XVIIme jour de juin 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e621');">42 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... Du XI aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e629');">43 Lettre de LOUIS « POTIER [DE GESVRE]... à monsieur de Montigny,... De Paris, le 6me juillet 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e640');">44 Lettre de LOUIS « POTIER DE GEVRE,... à monsieur de Montigny,... A Paris, le XXVI aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e648');">45 Lettre de LOUIS « POTIER [DE GEVRE]... à monsieur de Montigny,... De Metz, le XXVI mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e656');">46 Lettre de « JEAN, comte Palatin... à monsieur de Montigny,... De Deux Ponts, ce 7 de juing 1607, stile ancien ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e669');">47 Lettre de « LOTHAIRE, archevesque de Treves,... à monsieur de Montigni,... De Treves, ce XIIIe de juing 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e685');">48 Lettre de « FRIDERIC, electeur palatin... à monsieur de Montigny,... De Heidelberg, ce 10e de juillet 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e696');">49 Lettre de « A[NNE] D'ESCARS, cardinal DE GIVRY [évêque de Metz]... à monsieur de Montigny,... A Rome, le 1 septembre 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050091_d0e709');">50 Lettre du Sr DE « SEAUS,... à monsieur de Montigny,... De Bourdeaux, le XVIe jour de novembre 1607 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>
