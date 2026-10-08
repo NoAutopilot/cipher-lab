@@ -78,3 +78,49 @@ expected value (P(first cheap test moves it) x value / cost; pools of 2,000+ sig
 
 Spawned 16:21 UTC: FAM-MANT15 session_01KPBKpmZqWfbkT1aviBKAhy (Opus), FAM-HERM session_012WzDikiwfPBMe8fx6Rb8MR (Sonnet), FAM-WVOH
 session_01VJrv6UnrkT7hdhqsD4jAxg (Opus), FAM-POOL session_017eSeTNe93RXnLzuWvfzzwx (Opus). Wave 2 is drawn from FAM-POOL's ranked list.
+
+## Wave 2 (16:5x UTC 8 Oct), from research/FAMILY-POOLS-2026-10-08.md and wave 1
+Wave 1 ledgered (13.45 by get_session). FAM-MANT15 beat its shuffled-key control on 694/09 0015+0016 -> a separate first verifier.
+The 694/08 frame reader (FAMILY-POOLS row 1) waits until FAM-MANTV is off www.archiv.sachsen.de (one worker per host).
+Intake gate 16:5x UTC: `na-suriname-map-1781: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`
+(exit 0); `sachsstaatsarchiv-manteuffel-1712` exit 0 (wave 1). WVO 11106 and DECODE R4333-37 have no folder: check-solved first.
+
+### FAM-MANTV (Opus, cap 5, box 75 min): FIRST VERIFIER, sachsstaatsarchiv-manteuffel-1712 694/09 0015+0016 (and 0052)
+CLAUDE.md "Verifier brief (template)", steps 1-5, on the FAM-MANT15 reading (NOTES.md section "FAM-MANT15-...", folder f0015_09/ and
+f0052_09/). You did not read it; do not protect it. Items: A = 0015+0016 (Gersdorff relation 3 Jan 1713, enclosed to Manteuffel 13 Jan),
+B = 0052. Prior-work checks 1-5 again, in particular check 4 left "unchecked" by the solver: the Gersdorff-side edition and any print of
+Saxon/Polish envoy reports of Jan 1713 (Krauske 1893 NASG; Acta Borussica; Sbornik RIO; Flemming/Manteuffel studies; Stanislas/Leszczynski
+literature) by date and phrase ("ne desesperoit pas", "Stanislas pour roy", "Colliers"). Re-derive: `decode_key.py` / the folder's
+decode.json with `--check`, re-run shuffle_gate_*.py with a fresh seed, and re-read 4 spot tokens against the frames (fetch only frames
+0015, 0016, 0052 once from www.archiv.sachsen.de, <= 6 requests, 1.6 s apart). Depth per .claude/briefs/runs/2026-10-08-acct3-depth-bar.md
+and rule 4a. Write AUDIT.md "## AUDIT (FAM-MANTV)", the status.json row (audit_status, depth fields) as the verifier template says, and,
+at N3+ D2+, the SECOND-OPINIONS-QUEUE.tsv row and one WORK-QUEUE row `AUD2-FAMILY-1` for its second audit on account-3 (cap 5, box 60,
+brief = this section's file + "second adversarial audit of AUDIT (FAM-MANTV)"), named in ROOM for the account-3 orchestrator. Do not decode
+anything beyond the re-derivation; do not touch other targets.
+
+### FAM-CS11106 (Sonnet, cap 2.5, box 60 min): check-solved + Premise check, WVO 11106 (Willem van den Bergh to Willem van Oranje, 19 Sep 1572)
+`.claude/briefs/check-solved.md` in full, including its "## Premise check". Create `ciphers/wvo-11106-bergh-1572/` (NOTES.md with a status
+line from rule 5, sources.tsv, images/ with the 3 WVO PDF images fetched once from resources.huygens.knaw.nl/media/wvo/... with a
+manifest). Sources to name with pages: WVO record 11106 (Inhoud, Opmerkingen, print codes), Groen van Prinsterer Archives 1re serie III-IV
+(Huygens retroboeken full text, by date 19 Sept 1572, "Berghe"/"van den Bergh", Sept 1572 letters to Orange), Japikse Correspondentie, the
+Bergh family literature, DECODE listing, the two solver repositories (cached under sources/), Cryptiana. Premise check: look at all 3
+images for any gloss, decipherment or clear copy, and at WVO letters from van den Bergh to Orange within +-30 days (are any deciphered or
+in the same cipher?). Then run `python3 tools/intake_gate_check.py wvo-11106-bergh-1572` and paste it. No transcription. Huygens host
+<= 60 requests, >= 2.1 s apart.
+
+### FAM-CS4333 (Sonnet, cap 2.5, box 60 min): check-solved + Premise check, DECODE R4333-R4337 (Rusdorff to Axel Oxenstierna, 1628, Riksarkivet)
+`.claude/briefs/check-solved.md` in full, including "## Premise check". Create `ciphers/decode-4333-rusdorff-oxenstierna-1628/` (NOTES.md,
+sources.tsv; record pages from the login-free DECODE listing via `tools/decode_list.py`, de-crypt.org <= 30 requests, 1.5-2 s apart; NO
+login in this job). Sources to name with pages: Rusdorff, *Consilia et negotia politica* (1725) and *Mémoires et négociations secrètes*
+(ed. Cuhn, 1789) on IA/Google Books (country=US) full text, by date and "Oxenstierna"/"Oxenstiern"; AOSB (Rikskanslern Axel Oxenstiernas
+skrifter och brefvexling) ser. II for Rusdorff letters of 1628; the Riksarkivet catalogue note (NAD) if reachable; DECODE's own record
+documents list (any transcription/decryption document attached? "Non-decrypted" is not evidence); the two solver repositories; Cryptiana;
+the DECODE key records R4104/R4120 metadata (dates, holders) as a key lead. Premise check per the template. Run
+`python3 tools/intake_gate_check.py decode-4333-rusdorff-oxenstierna-1628` and paste it. No transcription.
+
+### FAM-SUR373 (Opus, cap 3, box 60 min): na-suriname-map-1781 inv. 373 neighbour sweep (FAMILY-POOLS row 4)
+600 px contact-sheet sweep of NA 1.05.03 inv. 373 scans 0697-0701, 0703-0729, 0731-0745, 0747-0757 (~55 scans) with the folder's existing
+sweep scripts (passes/inv373_sweep_r13/), service.archief.nl IIIF, one at a time, >= 1.5 s apart, descriptive UA. Prior-work check 1 first
+(grep each scan number in the folder and ROOM). Stop rule: list every scan carrying cipher, glossed or not, with a one-line description;
+for each glossed find say which held-out class test in the Remaining gaps it could feed; for each unglossed find say whether the period
+key (inv. 86) could read it. No reading. Update NOTES.md, Remaining gaps / Escalation, gaps_check.
