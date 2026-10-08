@@ -16,3 +16,19 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-3	229v			folio arithmetic	answered CLEAR (recorded)
 2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-4	230r			folio arithmetic	answered CLEAR (recorded)
 2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	unit			louisxiii_davaux.png	manifest	answered CLEAR (recorded)
+2026-10-08 23:20	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	cipher-page	228v			folio arithmetic	owed
+2026-10-08 23:20	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	facing	229r			folio arithmetic	owed
+2026-10-08 23:20	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	before-1	228r			folio arithmetic	owed
+2026-10-08 23:20	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	before-2	227v			folio arithmetic	owed
+2026-10-08 23:20	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	after-2	229v			folio arithmetic	owed
+2026-10-08 23:20	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	after-3	230r			folio arithmetic	owed
+2026-10-08 23:20	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	after-4	230v			folio arithmetic	owed
+2026-10-08 23:20	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	unit			louisxiii_davaux.png	manifest	owed
+2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	cipher-page	228v			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	facing	229r			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	before-1	228r			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	before-2	227v			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	after-2	229v			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	after-3	230r			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	after-4	230v			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	unit			louisxiii_davaux.png	manifest	answered CLEAR (recorded)
