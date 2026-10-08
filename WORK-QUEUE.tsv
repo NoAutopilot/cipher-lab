@@ -368,3 +368,5 @@ V1-F4712	account-3	.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md	Opus 5.5
 AUD2-ES132	account-4	.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md	Opus 5.5	6	75	queued	2026-10-08 16:1x	second audit es132-vargas-mexia-1578 f.89 f.119 unprinted paragraphs (first audit on account 3, so re-addressed here); for acct3-orchestrator / LANE-VERIFY-1
 DEFAULT-account-2-20261008-1613	account-2	.claude/briefs/lane-family.md	Opus 5.5	60	600	claimed session_01XR227ra6tFXMey23e7ENgo 2026-10-08 16:14	2026-10-08 16:13	auto-fill: blast 1 of 1 until 2026-10-10 18:00
 V1-LS4A	account-3	.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md	Opus 5.5	11	95	queued	2026-10-08 16:2x	second audits eckert-1864 E90 E92 N2-BZ pt2 N2-BY (first audits LS4-V1a/V2a, account 1); LANE-VERIFY-1
+V1-G3A	account-3	.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md	Opus 5.5	9	80	queued	2026-10-08 16:4x	G3 checks eckert-1864 E5 N2-M N2-T N2-R N2-AI N2-AJ (two-audit N3/N4, no item-level decoded-phrase search logged); LANE-VERIFY-1
+V1-G3B	account-3	.claude/briefs/runs/2026-10-08-acct3-verify1-jobs.md	Opus 5.5	5	55	queued	2026-10-08 16:4x	G3 checks eckert-1864 N2-BM E78 O9-BB; LANE-VERIFY-1

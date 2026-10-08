@@ -65,3 +65,15 @@ steps) plus this file's common tail. Families the first audits named as unread g
 snippet search reaches PUSG vol. 13, LS4-V2a's lesson; msstate is Cloudflare), the Huntington's own transcription of each pointer and of
 same-leaf siblings, and the press of the day (Chronicling America, +-3 days). G3 on each decoded body. Units 4 x $2.5 + 1 reconciliation.
 Update the four status.json rows (`audit_status` "two audits" or the lowered class) and SO-ECKERT-E90/E92/N2BZ2/N2BY rows if a class moves.
+
+## Third wave (16:4x UTC): G3 checks (prior-work-step.md check 5) on two-audit eckert-1864 N3/N4 items whose audits log no
+item-level decoded-phrase re-search (lane inventory, keyword-level). A G3 job is not a full third audit: per item, take the decoded body
+from reading*.md, run tools/print_check.py with its distinctive phrases plus same-day replies/antecedents (OR ser. I-III and ORN by date
++ both correspondents, Grant/Lincoln papers incl. PUSG notes via Google Books snippets with country=US), the Huntington transcription of
+same-leaf siblings, and the press of the day (Chronicling America +-3 days; loc.gov answered 403 to V1-1862 at 16:2x -- one try, log it
+unreachable if so). SUBSTANCE (two rare entities or numbers shared within +-3 days) is diffed; a print hit lowers the class. Write one
+section "## G3 check (<JOB>)" in AUDIT.md: per item, phrases run, hosts, result, class kept/lowered; update status.json and SO rows only
+where a class moves. Skip (and say so) any item whose reading or audit ran on account 3. Units about $1.2 per item + 1 reconciliation.
+
+## V1-G3A (account 3), cap $9, box 80 min: E5, N2-M, N2-T (the N4s: outward wording rests on them), N2-R, N2-AI, N2-AJ
+## V1-G3B (account 3), cap $5, box 55 min: N2-BM, E78, O9-BB
