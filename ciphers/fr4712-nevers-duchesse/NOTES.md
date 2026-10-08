@@ -4,6 +4,10 @@ Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
 
+> Correction (D2V-F4712, 8 Oct 2026): not undated. The BnF *Catalogue général des manuscrits français, Ancien fonds* t. IV (1895),
+> fr.4712 items 9-10, says the first letter (f.10) "a une partie chiffrée. Elle est datée du i octobre 1592 et est signée d'un
+> monogramme" (IA p1cataloguegnr04bibluoft OCR; the day is not settled, not yet checked on the leaf). See AUDIT.md "AUDIT 1".
+
 Intake (NV-INTAKE, account 2 for the account-3 orchestrator, brief `.claude/briefs/runs/2026-10-03-acct3-nv-intake.md`).
 Source row: NEVERS-VEIN.tsv NV-09. No image read in this job.
 
@@ -412,3 +416,11 @@ Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens 
 - [x] image-check: f.10r read from crops (DUCH-KEY1B), f.13r two blind passes agree on all 34 codes (DUCH-F13)
 - [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
 Verdict: keep going: 2 internal gaps; cheapest next: leaf census of f.13v onward for a glossed sibling, ~$2 (the code 40 third read, ~$1.5, does not touch f.10r)
+
+## D2V-F4712 AUDIT 1 (verifier, account 2, 8 Oct 2026)
+AUDIT.md "## AUDIT 1 (D2V-F4712)": the six f.10r C carries are confirmed as pre-registered (PREREG_duchf13.md 1d4fcd95c, 3 Oct, two
+days before the ASKS 113 answer) and reproduce (`f13_carry.py --check` OK); gate p re-computed 0.023-0.038 under three nulls. Class
+**N3, depth D1** ("fragments read"; class without a reading, not counted); f.13r's gloss table N0 (period gloss on the leaf). Key
+source period. Correction: the BnF 1895 catalogue dates f.10 "i octobre 1592", monogram signature (note under the title). No
+reading changed. SO-F4712-F10 queued. Next for audit 2: Boltanski (2006) on fr.4712 f°10-13, Semantic Scholar/Persée/HAL, one crop of
+the f.10 date line.
