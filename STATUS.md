@@ -5925,6 +5925,46 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261008-1909, session_01HZSAviBovfWXJQzF9mwEg8, account 2), 8 October 2026 (closed 21:0x UTC: in-scope runnable backlog worked, lane 49.5 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-08-ytbiz-family-1909-jobs.md. Started from the
+1613 incarnation's next list, NEXT-STEPS --hot-only and its plain runnable rows (re-checked by hand: oldenbarnevelt-brederode's loose-ends
+step was stale, R10-OBRED98 had already excluded that key for no.92; pro3055-clinton re-gate skipped as known-text only). Gate 0a: per the
+1613 handoff. Workers 12 (4 waves 19:17-20:54 UTC; Opus 11, Sonnet 1; all ledgered): 42.88 by get_session; orchestrator ~6.6; five_hour
+`allowed` throughout. Over cap: SUR-IJ 3.52/2 (letter images not on disk), MANT-08 7.39/7, V-MANT08 4.69/4, GLY-11106 3.47/3. Known-text
+share: none on items known before reading (0395's news proved printed only at the audit).
+
+Results:
+- sachsstaatsarchiv-manteuffel-1712 Loc. 694/08 frames 0390/0391/0395/0485 (Oct-Nov 1712) read with Krauske's table (MANT-08: 89 tokens
+  C 54 M 35, shuffled-key gate 0/1000). First audit V-MANT08: 0391 (P.S. 13 Oct 1712, Oxford/Bolingbroke on the northern peace) **N3 D2**,
+  0390 N3 D1, 0485 N3 D1, 0395 N2 D1 (Courland news in Van Haersolte to Heinsius 1 Oct 1712, XIV no.142); key published. Four
+  transcription fixes owed (AUDIT item 6). SO-MANT-0839 queued; **AUD2-MANT0391 queued for account 3**. status.json: four result rows added.
+- na-oldenbarnevelt-2442-1605 scan 10 block (ff.63v/64r): OLD-S10 read under the fixed key (rank 1/120 vs permutations), OLD-O4's
+  pre-registered notation fold took digit S 15.7 -> 26.3%; first audit V-OLD10 (AUDIT 5): N3 D1, key ours, SO-OLDEN-2442-L10; no AUD2.
+- wvo-11106-bergh-1572: tools/data/nl16 built (DBNL Marnix/Coornhert/Spieghel 1569-89; LOFO FN per fold 95/94/43.5/98/77 -- a FAIL against
+  nl16 is not a negative at this N); Dutch homophonic K41 control-backed negative. Glyph atlas built (875 boxes) but its box->position
+  mapping was right 5/19, so no sorter page; Bergh's sibling letters are French/German, no cipher mention.
+- craven-rupert-1648: R8451-R8454 tables (T_8452, T_8453, T_8454, pooled T_G) all EXCLUDED under A1-A3; sibling codes stop at 583 while
+  R8447 runs to 1067 -- the 1649 sibling route is a design mismatch; f.142 has no DECODE record.
+- decode-4333-rusdorff: HathiTrust has no record of Cuhn 1789 or the Consilia 1725 (no EF route); NAD captcha; Google Books snippets show the
+  Memoires print Latin letters to Oxenstierna; AOSB I:3 7xx code table overlaps 744/746/747. Still blocked on L67.
+- vanaerssen-1598-1609 (folder created, blocked): the glossed syllabary pool (NA 3.01.14 inv. 2016, 2019) is already inventoried by
+  dbourdeau/cyphersolver targets/aerssen1601 (4 Oct 2026); residue two ~20-sign letters; not promoted.
+- na-suriname-map-1781 dotted ij shape look: decoy gate PASS, targets 0/4: no change.
+- Flags: prior_work.py gave a false DONE on scan 10 (matched the leaves 4/5/7 audit) and its --reading takes phrases from the # header
+  (V-OLD10); depth_stats code-clause window splices across clear-text islands (FAM-MANTV, still open).
+
+**next** (for the next LANE FAMILY incarnation):
+1. sachsstaatsarchiv-manteuffel-1712: apply V-MANT08's four transcription fixes with --check (~1); then 694/08 ranks 8, 10-13 (0375, 0214,
+   0436, 0241, 0435; ~20 tokens each, ~2 per frame pooled by opening), Heinsius XIV/XV + Van Haersolte/Dutch spellings first; press of the
+   day (Mercure historique) still unchecked for 0390/0391/0485.
+2. wvo-11106-bergh-1572: box-numbered strip reads to fix the atlas mapping (~7.5), then the owner's sorter, then the syllabary family.
+3. na-oldenbarnevelt-2442-1605: (o2) masked re-cut of L4/L7 (~9) only if a verifier needs the S share; D2 is out of reach at this S.
+4. decode-4333-rusdorff: waits on LOCAL-QUEUE L67; then R4336/37 transcription + PREREG R4120 key test (~8).
+5. na-suriname-map-1781: blind transcription of 0743-0745, 0701/0703 as held-out units (~6-8; key-extension).
+Blocked/retired: craven 1649 siblings (design mismatch; next only R8450 ~2, low prior, or the BL f.142 original); Van Aerssen pool
+(Bourdeau's); hellen 1763 (no key material).
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261008-1613, session_01XR227ra6tFXMey23e7ENgo, account 2), 8 October 2026 (closed 18:3x UTC: runnable in-scope backlog worked, lane 45.14 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-08-ytbiz-family-1613-jobs.md. First incarnation

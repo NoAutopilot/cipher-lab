@@ -7777,6 +7777,127 @@
       "depth_sentence": "On 6 Dec 1864 Horner tells Butler the steamer Russia is 205 feet long, draws 7 1/2 feet and makes no more than 14 miles an hour, and that the Mattawan will not do.",
       "depth_check": "code clause: Knox = Butler, Frog = New York and the numeral page passim; no external check of the content (Russia in the Fort Fisher expedition, ORN I/11, context only); D3 withheld",
       "depth_note": "27 H of 27 code-word groups ('John' of John Horner plain); 'Wm breed ford', 'Wesport raining here' M"
+    },
+    {
+      "date": "8 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANT08)\""
+      ],
+      "novelty": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0390), Manteuffel to Flemming, 10 Oct 1712",
+      "title": "SHStA Dresden Loc. 694/08 frame 0390 (10 Oct 1712): unglossed cipher spans read with Dr. Krauske's 1893 manuscript key table",
+      "grade": "N3 (V-MANT08, first audit), key published (Krauske 1893 manuscript table, credited). MANT-08 pooled 0390/0391/0395/0485: 89 tokens C 54 M 35; shuffled-key gate 0/1000; fr18 judge cannot decide at N=83. Four transcription fixes owed (AUDIT V-MANT08 item 6).",
+      "line": "Fragments read (D1, V-MANT08 8 Oct 2026). Krauske's 1893 table reads 'la treve' and the code for the King of Prussia in Manteuffel's letter of 10 Oct 1712 (Loc. 694/08); no prior plaintext located in the Heinsius correspondence or Droysen.",
+      "completeness": "cipher spans of one frame",
+      "unresolved_spans": "M tokens and transcription fixes listed in AUDIT (V-MANT08)",
+      "depth": "D1",
+      "depth_pct": 80.0,
+      "depth_unread": {
+        "names_codes": "see AUDIT",
+        "other": "M tokens"
+      },
+      "depth_check": "V-MANT08: code 257 in two sentences but no letter-spelled run names it on the item; cipher clause fails (longest C run < 12 vs AD ~127-138)",
+      "decode_status": "Non-decrypted"
+    },
+    {
+      "date": "8 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANT08)\""
+      ],
+      "novelty": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0391), Manteuffel to Flemming, P.S. 13 Oct 1712",
+      "title": "SHStA Dresden Loc. 694/08 frame 0391 (P.S. 13 Oct 1712): unglossed cipher spans read with Dr. Krauske's 1893 manuscript key table",
+      "grade": "N3 (V-MANT08, first audit), key published (Krauske 1893 manuscript table, credited). MANT-08 pooled 0390/0391/0395/0485: 89 tokens C 54 M 35; shuffled-key gate 0/1000; fr18 judge cannot decide at N=83. Four transcription fixes owed (AUDIT V-MANT08 item 6).",
+      "line": "Partially deciphered (D2, V-MANT08 8 Oct 2026). Applying Krauske's 1893 table to the cipher names in Manteuffel's postscript of 13 Oct 1712 (Loc. 694/08) gives Oxford, Bolingbroke and the queen of England in a report of their differing declarations on the northern peace; no prior plaintext located in the searched editions (Heinsius XIV, Droysen IV.1).",
+      "completeness": "cipher spans of one frame",
+      "unresolved_spans": "M tokens and transcription fixes listed in AUDIT (V-MANT08)",
+      "depth": "D2",
+      "depth_pct": 46.7,
+      "depth_unread": {
+        "names_codes": "see AUDIT",
+        "other": "M tokens"
+      },
+      "depth_check": "V-MANT08: code clause met: 217 la reine d'Angleterre in two non-verbatim sentences beside letter-spelled Oxford and Bullinbroug on the same leaf; cipher clause fails",
+      "decode_status": "Partially decrypted",
+      "depth_sentence": "In his postscript of 13 October 1712 Manteuffel reports that Oxford had said the Queen of England was too far off to meddle in pacifying the North and would defer to Hanover's views, while Bolingbroke declared she wanted peace in the North absolutely and that the King of Denmark would be detached from his allies."
+    },
+    {
+      "date": "8 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANT08)\""
+      ],
+      "novelty": "N2",
+      "plaintext_novelty": "N2",
+      "mapping_novelty": "N2",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0395), Manteuffel to Flemming, mid-Oct 1712",
+      "title": "SHStA Dresden Loc. 694/08 frame 0395 (mid-Oct 1712): unglossed cipher spans read with Dr. Krauske's 1893 manuscript key table",
+      "grade": "N2 (V-MANT08, first audit), key published (Krauske 1893 manuscript table, credited). MANT-08 pooled 0390/0391/0395/0485: 89 tokens C 54 M 35; shuffled-key gate 0/1000; fr18 judge cannot decide at N=83. Four transcription fixes owed (AUDIT V-MANT08 item 6).",
+      "line": "Fragments read (D1, V-MANT08 8 Oct 2026). Krauske's table reads 'duc Ferdinand' in a mid-October 1712 letter of Manteuffel's (Loc. 694/08) on Prussia's attempt to obtain Courland, news printed in Van Haersolte's letter to Heinsius of 1 Oct 1712 (Briefwisseling XIV no.142 p.79).",
+      "completeness": "cipher spans of one frame",
+      "unresolved_spans": "M tokens and transcription fixes listed in AUDIT (V-MANT08)",
+      "depth": "D1",
+      "depth_pct": 66.7,
+      "depth_unread": {
+        "names_codes": "see AUDIT",
+        "other": "M tokens"
+      },
+      "depth_check": "V-MANT08: no recurring code; cipher clause fails",
+      "decode_status": "Non-decrypted"
+    },
+    {
+      "date": "8 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT08)\" (first audit, 8 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANT08)\""
+      ],
+      "novelty": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0485), Manteuffel to Flemming, about 12 Nov 1712",
+      "title": "SHStA Dresden Loc. 694/08 frame 0485 (about 12 Nov 1712): unglossed cipher spans read with Dr. Krauske's 1893 manuscript key table",
+      "grade": "N3 (V-MANT08, first audit), key published (Krauske 1893 manuscript table, credited). MANT-08 pooled 0390/0391/0395/0485: 89 tokens C 54 M 35; shuffled-key gate 0/1000; fr18 judge cannot decide at N=83. Four transcription fixes owed (AUDIT V-MANT08 item 6).",
+      "line": "Fragments read (D1, V-MANT08 8 Oct 2026). Krauske's table reads the British envoy Breton's name and 'la Courl[ande]' in Manteuffel's letter of about 12 Nov 1712 (Loc. 694/08); no prior plaintext located in the searched editions.",
+      "completeness": "cipher spans of one frame",
+      "unresolved_spans": "M tokens and transcription fixes listed in AUDIT (V-MANT08)",
+      "depth": "D1",
+      "depth_pct": 57.1,
+      "depth_unread": {
+        "names_codes": "see AUDIT",
+        "other": "M tokens"
+      },
+      "depth_check": "V-MANT08: no recurring code (187, 202 singletons); cipher clause fails",
+      "decode_status": "Non-decrypted"
     }
   ],
   "lanes": [
