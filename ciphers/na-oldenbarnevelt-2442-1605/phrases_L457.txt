@@ -1,0 +1,13 @@
+# OLD-SIBS-V, 8 Oct 2026: phrases from leaves 4/5/7 (reading_L457.txt, decode_L457.py --check OK), spelling as decoded
+fui a uisitar a agustin mexia el cunado del regente
+se dio al demonio diciendo que auia de ser la canongia
+para el doctor cetina o para el doctor sosa
+me pregunto el doctor garai si traia carta
+hice una firma de V.S. en un pliego de papel
+me auia dexado algunas firmas en blanco
+# clear text (not cipher) on a neighbouring leaf, NOTES s.22:
+abadia de lerma donde el duque funda
+poder tener con la rectoria la canongia i cathedra
+quarenta reales del talego
+cobrare de chaues el coste del manteo
+basta ser sobrino de quien es

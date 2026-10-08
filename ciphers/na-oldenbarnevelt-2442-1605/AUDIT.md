@@ -4,6 +4,7 @@ Class (rule 10): **blocks B and C1: N3** (no prior plaintext and no prior deciph
 below). Key source: **ours** (the a=4, e=8, i=3, o=7, u=2 vowel-digit key was recovered by this project's cryptanalysis,
 VX-CT03, 25 Sept 2026; no period key, gloss or published key exists for it as far as searched). Text: not known in print.
 Blocks A and C2 are out of scope (not re-read from the image yet) and are not classified here.
+Leaves 4/5/7 (ff.59v-62r): **N3, D1**, key ours -- see "AUDIT 3" at the end (OLD-SIBS-V, 8 Oct 2026).
 
 Verifier VERIFY-OLD (account 2, LANE-A2PUSH), 3 Oct 2026, 00:02-00:10 UTC. This session did not solve the target, did
 not decode and did not re-read the image. Claim under audit (NOTES.md sections 8-9; brief
@@ -307,3 +308,130 @@ reading. Nothing changed that it carries, so neither is edited.
 **Postmortem.** No over-claim found. One stale count in the brief (B S90 M4; current S89 M5 after R15-OLDUV) and one stale
 command form (bare `apply_key.py --check`), both noted above. Parent follow-up per the brief: status.json row from 2c/2d,
 `tools/depth_check.py`, NOTES line 1 open -> partial.
+
+## AUDIT 3 (verifier OLD-SIBS-V): leaves 4/5/7 (ff.59v-62r), NOTES section 22
+
+Verifier OLD-SIBS-V (account 2, session_01J65Dh51ovVCLtqZM7aCSk6), 8 Oct 2026, 05:12-05:3x UTC by `date -u`. Brief
+`.claude/briefs/runs/2026-10-08-acct4-old-sibs-verify.md`. Separate from OLD-SIBS (account 4) and every earlier solver; this
+session changed no key, ciphertext, override, transcription or reading. Blocks B/C1 classes (N3, D2, AUDIT 2) are kept as they
+are: nothing found here bears on them.
+
+Claim under audit: "the fixed B/C1 key (2=u 3=i 4=a 5=s 6=b 7=o 8=e) reads leaves 004/005/007 as continuous Spanish of the same
+Senisteros letter; the free solve returns the same map; cipher tokens 729, H 0, C 0, S 87, M 642; es1600 judge FAIL -0.99 vs
+real_p05 -0.808", plus section 22's content paragraph.
+
+Depth bar copied before computing (`.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`): CLAUDE.md 4a governs; cipher clause =
+a contiguous H/C/S stretch longer than the AD (about 1.5 x unicity), H(K) = design key space plus every liberty (U wildcards,
+M tokens, repairs, u/v and word-break choices); an unfitted external key does not shrink H(K); the zero-liberty reading is not
+used; an external check is a D3/D4 element, not a D2 substitute; code clause n/a (no code values in this design); D2 = one
+clause plus the verifier's own true, specific sentence.
+
+### 3a. Re-derivation (step 1)
+
+- `python3 scripts/decode_L457.py --check` -> `committed reading matches a fresh run; {'clear': 70, 'M': 642, 'S': 87}`, exit 0.
+- Free solve, second seed: `scripts/solve_digit_subst.py target transcription/ciphertext_L457_solver.tsv --corpus
+  corpus/es16-donquijote/donquijote1605_pg2000_body.txt --restarts 8 --seed 2` -> N=2919, 1487 digit positions, K=7; all 8
+  restarts -6137.26, map 2=u 3=i 4=a 5=s 6=b 7=o 8=e, decoded stream byte-identical to seed 1
+  (`transcription/free_solve_L457_seed2_verify.json`). Confirmed.
+- **Caveat on what the free solve shows (not an over-claim in NOTES, but recorded so it is not over-read):** the solver ran on
+  the reconciled transcription, and the reconciler knew the B/C1 key. The free solve therefore shows the B/C1 map is the
+  language-model optimum *for that transcription*; it is not a key recovery independent of B/C1. The key's independent support
+  remains blocks A+B+C1 (VX-CT03, AUDIT 1-2).
+- Eye-check (native pixels; `images/crops_L457` and direct crops of scans 004/005/007): every token on L4b_27-L4b_31 (the
+  signature passage, 35 tokens, 33 of them M) and on nine lines of f.62r (L7b ~08-24: "theo pussiesse io el dinero asta ...
+  uendiesse uino i selo enuiasse ... despues me dixo [en secreto] llegando a contar el dinero que traian que auia tomado del
+  talego ... quarenta reales ... me han enfadado un poco aunque io no selo he dado a entender de ninguna manera porque basta ser
+  s?b?ino de quien es i la buena amistad que nos ha hecho el regente en esto dela canongia ... que se haga en racon de si
+  cobrare de chaues el coste del manteo i los quarenta reales supuesto que el no saue que V.S. lo saue ...") agrees with the
+  reconciled transcription sign for sign, apart from the items below. About 100 tokens checked in all, nearly all M-graded, against the
+  brief's 10 (this verifier also knew the key, so the check is of sign identity, not a blind read). The digit shapes in this hand (4, 7, 8, 3, 2) are distinct on these lines; the leaf-7 blind-pass split (57.1%)
+  is mostly line identity, as section 22 says: crop `L7b_L18.jpg` does not contain transcription line L7b_18 at all.
+- Doubtful tokens (section 22 names three; none changes the key or the sense):
+  | token | transcription | image (this verifier) | effect |
+  |---|---|---|---|
+  | L4a_05 `gr4nd7` (decode "grando") | `q28 gr4nd7` | first sign g or q, second r or 2; `q24nd7` "quando" fits ("della, que quando lo oio se dio al demonio") | non-word becomes a word; stays M until a blind pass settles it |
+  | L5_1 `s28ss8` (decode "suesse") | `s28ss8` | first sign is the long f with crossbar, the same shape as the f of `c7nf7rm8` beside it: `f28ss8` "fuesse" | likely correction for the solver |
+  | L5_1 `p7r7c2r8` ("porocure") | `p7r7c2r8` | p with an r-loop then 7: `pr7c2r8` "procure" plausible | M |
+  | L7b_18 `s7633n7` ("sobiino") | `s7633n7` | third/fourth signs 6 + an r-like or 3-like stroke: `s76r3n7` "sobrino" not excluded | M |
+  | L7b_10 `t8n4` ("tena") | `t8n4` | a sign may stand between n and 4 (`t8n34` "tenia") | M |
+  Read as suggestions to the solver lane; this verifier does not edit the transcription (brief: no decoding).
+
+### 3b. Leaf identity (step 2)
+
+Confirmed from the images. Pencil folio stamps read 60 (scan 004), 62 (007), 57 (009), 64 (010); one hand on scans 004, 005,
+007, 009-011; scan 011 (f.64v) carries the close "...de Alcalá y d[iciem]bre 23 de 605", the signature "D. Ju[an] Gar[cí]a de
+Senisteros" with paraph and the postscript naming "Ju[an] de la Peña", and its show-through is scan 010's right-page cipher
+reversed. Leaves 4/5/7 are folios of the same letter, not a sibling: section 22's correction of section 1 and OLD-CAT
+(section 21) stands. This deepens the one counted document; it adds no document to any count.
+
+### 3c. Depth (rule 4a, under the bar)
+
+`reading_L457_tokens.tsv`, digit (cipher) tokens: L4 761 (S 79, 10.4%), L5 220 (S 25, 11.4%), L7 521 (S 31, 6.0%); all 1502
+(S 135, **9.0%**). Longest contiguous H/C/S stretch: **7 digit tokens** (L5 "decia como io"); L4 6 ("io hice una"), L7 4.
+The AD with the 642 M words counted as liberties (2.32 bits each, AUDIT 2a's rule) runs to thousands of digits; even B/C1's
+small-liberty AD (24.2-24.4 digits) is not reached. **No cipher clause; code clause n/a. Ruling: D1** ("fragments read") for
+the L4/L5/L7 reading as graded.
+
+Why the ruling is lower than the reading's apparent quality (recorded so D1 is not read as a negative): the M grade here comes
+from the prereg's S rule (a token must match both blind passes), and the blind passes failed largely on crop line identity,
+not on sign identity (3a). The key is the B/C1 key, already at D2 there. The named way up is section 22's step (o2): re-cut
+L4/L7 with `--mask-neighbours` and run two fresh blind passes, then re-grade; a verifier eye-check does not regrade tokens.
+External plausibility (not a D3 element under the bar, not a key check): "Horacio Doria", a cipher-decoded name on f.60r in a
+Toledo-canonry context, was a canon of Toledo in this period (editions of St Teresa's letters, e.g. IA
+`BMC9ObrasDeSantaTeresaDeJessTomoIXEpistolarioIII`: "Horacio Doria era primo del P. Nicolás, y canónigo de Toledo"; Google
+Books `Vd1WAAAAYAAJ`, *El Toledo que vió Cervantes*, 2006: "Horacio Doria, un genovés afincado en España ... accedió a su
+canonjía toledana"). The duke of Lerma did found the colegiata of San Pedro at Lerma at this time (Google Books
+`fhstAQAAIAAJ`, *La Iglesia Colegial de San Pedro en Lerma*, 1981), consistent with the clear-text "Abadia de Lerma donde el
+Duque funda ahora una iglesia collegial". Neither is a check of the cipher reading itself.
+
+Verifier's sentence (not required at D1; written from the image-checked tokens of L4b_27-31, given so a later D2 ruling has it
+in hand): *the writer says that, finding himself pressed, he made a signature of V.S. on a sheet of paper as best he could and
+had a servant of his write out the substance of the letter, telling the servant that V.S. had left him some signatures in
+blank.* (Section 22's word for this is "made"; "forged" is the brief's gloss and is fair to the text, which says he imitated
+V.S.'s signature himself.)
+
+- depth: **D1**; depth_pct: **9.0** (S digit tokens 135/1502; L457 only); depth_unread: 1367 digit tokens M (642 words), almost
+  all ordinary words, not names; depth_check: "longest S stretch 7 digits vs AD >= 24 digits (B/C1 small-liberty floor; far
+  higher with 642 M words); free solve seed 1 and 2 identical map at N=2919 (transcription key-aware); control 100% at N=2919
+  crib noise 0-0.4"; decode_status: "fragments read" (L4/L5/L7). The letter as a whole keeps B/C1's D2.
+
+### 3d. Novelty (step 3)
+
+| family | searched (8 Oct 2026) | result |
+|---|---|---|
+| canonical series / sender editions | AUDIT 1-2 cover CODOIN (es1600 tomos grepped, IA-global), Lonchay-Cuvelier t. I (djvu grep, be-api), Rodríguez Villa 1906, Huygens Oldenbarnevelt retroboeken; section 22 re-grepped Lonchay-Cuvelier for Lerma/collegial/Mexia/Gomara/Garay/Senisteros/Alcalá (Agustín Mexía the councillor only) | not found |
+| phrases in print | `tools/print_check.py` with `phrases_L457.txt` (11 phrases from L4/L5/L7 + one clear-text Lerma phrase) -> `print-check-L457.tsv`, 62 rows, 12 with hits, every hit a scattered-word Google Books match (dictionaries, the 1742 *Cartas*, Lerma colegiata histories, comedias for "basta ser sobrino de quien es"); ia-global 2 phrases HTTP 502, gbooks 2 phrases HTTP 503 (not retried) | not found |
+| names, modern spelling | Google Books (keyed, `country=US`): "Horacio Doria" canonjía Toledo (2, both biography, not this letter), "Juan de la Peña" Alcalá 1605 rector (14, other men), "doctor Cetina" canonjía Alcalá (1, no), "colegial de Lerma" 1605 Alcalá rector canonjía (0), "Sebastián de Chaves" Alcalá estudiante (37, none this matter), Senisteros/Cetina/Mexia + "Horacio Doria" (0/11/5, indexes only), "Agustín Mejía" regente cuñado (1, no); two queries 503 | not found |
+| IA full text | be-api: "Senisteros" (20, all the Latin etymon *senisteros*), "Horacio Doria" Cetina (37, St Teresa editions), "Agustin Mexia" regente canongia (35, other letters), "doctor Garay" cardenal canongia Toledo (37, catalogues of other items) | not found |
+| scholarship | OpenAlex 13 via print_check + 2 direct (0, 0); CORE 2 (noise); CrossRef 3 (noise); Semantic Scholar: print_check's pass 429 throughout, 1 direct keyed query answered (Horacio Doria canon Toledo: 4, none relevant) | not found; S2 partly blocked |
+| holding archive | NA 3.01.14 EAD and printed inventory (AUDIT 1): "Merendeels in cijferschrift", no decipherment recorded | no decipherment |
+| Simancas / PARES | dead host from the cloud (CLAUDE.md host table) | **unreachable** |
+| JSTOR | no new row: AUDIT 2's 4 rows (names, Sigüenza, two B phrases) cover the sender/recipient family; the L457 phrases add nothing JSTOR would index that a cipher-free study of the Toledo canonry would carry better than the names already queued | not queued (does not block N3) |
+
+Requests this session: www.googleapis.com 11 + 14, be-api.us.archive.org 11 + 4, api.openalex.org 13 + 2, api.semanticscholar.org
+1 + 1 (+1 livecheck), api.crossref.org 3, api.core.ac.uk 2 (+ key_livecheck's one call per keyed host).
+
+**Class: N3** (leaves 4/5/7, ff.59v-62r): no prior plaintext or decipherment located after the search logged here and in
+AUDIT 1-2. Not N4 for the same reasons as B/C1 (Simancas side unreachable, sender unidentified, no specialist asked).
+**Key: ours** (the B/C1 vowel-digit key, VX-CT03; 5=s and 6=b are the folder's settled glyph conventions for s and b, A2-OLD /
+PREREG_OLD-PASS2 item 2, not cipher values). Text: not known in print.
+
+| item | class | depth | prior plaintext | prior decipherment | key | evidence | confidence |
+|---|---|---|---|---|---|---|---|
+| inv. 2442, leaves 4/5/7 (ff.59v-62r), 729 cipher words | **N3** | **D1** | none located | none located | ours | cryptanalytic, fixed key, key-aware reconciliation, two blind passes split 31-57%; judge FAIL -0.99 vs -0.808 | moderate on novelty; reading verified by eye on ~100 tokens, graded M by rule |
+
+- **Safe sentence:** "Folios 59v-62r of the same Senisteros letter (Nationaal Archief 3.01.14 inv. 2442) read as Spanish under
+  the vowel-digit key we recovered from its other passages; only fragments are graded as read so far. No prior decipherment or
+  print was located after the search logged in AUDIT.md (N3)."
+- **Unsafe sentence:** "We deciphered a further unpublished letter in which a Spanish cleric forged his patron's signature."
+  (Not a further letter -- the same one; "unpublished" barred below N4; D1 is "fragments read"; "forged" over-states what the
+  writer says, that he imitated the signature "as best he could" under a claimed blank-signature authority.)
+
+### 3e. Postmortem
+
+No over-claim in section 22: it calls the reading "a solver's reading, M-graded where the passes split", keeps status open,
+and corrects the earlier "second ciphered letter" itself. Two points carried here so they are not lost: (1) the free solve's
+agreement with the B/C1 map is partly circular (key-aware reconciliation, 3a) and is not a second key recovery; (2) leaf 5's
+`s28ss8` is very likely `f28ss8` "fuesse", and L4a_05 "grando" likely "quando" -- solver-lane corrections, not made here. The
+brief's "forged a signature" is the brief's wording, not the repo's; the repo's own sentence stands.
+SO row: `SO-OLDEN-2442-L457` queued with `second-opinions/PROMPT-chatgpt-L457.md` (N3 per the verifier template).

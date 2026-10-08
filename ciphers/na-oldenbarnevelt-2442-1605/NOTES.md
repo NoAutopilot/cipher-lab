@@ -1442,6 +1442,11 @@ masked crops, two blind passes + one reconciliation, fixed key, ~$4.5; (o2) re-c
 two blind passes there only if a verifier needs the S share raised (rule 3 third-attempt clause does not apply: the instrument
 changes, masked crops), ~$9; (o3) verifier for blocks L4/L5/L7 (queued as a WORK-QUEUE row, account 2).
 
+**Verifier OLD-SIBS-V (8 Oct 2026, AUDIT.md "AUDIT 3"):** leaves 4/5/7 N3, D1 (S 135 of 1502 digit tokens, 9.0%; longest S
+stretch 7 digits, below the AD), key ours; `--check` exit 0; free solve seed 2 identical map (transcription key-aware, so not an
+independent key recovery); ~100 tokens eye-checked, agree apart from suggested `f28ss8` (L5_1, "fuesse") and `q24nd7`? (L4a_05,
+"quando"); leaf identity confirmed. D2 for these leaves waits on step (o2). SO-OLDEN-2442-L457 queued.
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
