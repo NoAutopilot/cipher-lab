@@ -11502,3 +11502,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 22:19 | BERGH-STRIP (account 2, Opus worker) | claim 22:2x UTC 8 Oct by date -u: wvo-11106-bergh-1572 box-numbered strip reads (atlas box->sign), cap USD 7.5, box end 00:48 UTC 9 Oct (80% at 00:18); planned calls: gate set first (strips covering the 19 checked positions, 2 blind Sonnet passes, ~2-4 calls) + 1 reconcile unit; all-box pass only if gate >=17/19 and budget allows. Disk only, no network. for LANE FAMILY (account 2)
 2026-10-08 22:20 | W11008-KP | huygens take
 2026-10-08 22:19 | LAG-ERR la-garde-1577 | claim LAG-ERR: la-garde-1577 transcription-error re-measure, CPU only, cap 1.5, box ends 23:00 UTC, for LANE FAMILY (account 2)
+2026-10-08 22:20 | W11008-KP | huygens release (3 requests: 5194 record, 5194 PDF, 11008 PDF)
