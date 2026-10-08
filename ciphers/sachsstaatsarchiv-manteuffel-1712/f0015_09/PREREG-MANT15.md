@@ -20,3 +20,10 @@ power at this length and the target result is logged "non-test", not PASS/FAIL.
 Grades: tokens decoded through C rows of key.tsv are C only where the reading is a key application; since this leaf has no
 gloss, every decoded token is graded at most as its key row's grade and the reading as a whole is a key application, not a
 known-answer check. Name identifications are I.
+
+## Addendum (8 Oct 2026, 16:3x UTC, before 0052's passes were read or scored)
+0015+0016 results are in gate.out (computed after this file's first commit 1110da1cd). For 694/09 0052 (f.36 slip, P.S. to
+Manteuffel's letter of 11 Feb 1713) the same statistic, control (1000 shuffled keys, seed 52) and PASS rule apply, on
+f0052_09/ciphertext.tsv; the power control is the same 0085 runs 9+10 result. Codes outside key.tsv (394, 405, 520) are
+dropped from the letter string and stay U; no value is proposed for them (no gloss). The small interlinear numerals over
+the first run are transcribed but are not decoded into the letter string (their role is unsettled).
