@@ -69,6 +69,12 @@ LANG_CORPORA = {
     "it16dip": [DATA / "it16dip" / f for f in ("bub_gb_laRnTtJmsDAC.txt.gz", "bub_gb_ZJMxff7r4LUC.txt.gz",
                 "gri_33125010469852.txt.gz", "letterediprincip01char.txt.gz", "letterediprincip02char.txt.gz",
                 "letterediprincip03char.txt.gz")],
+    # it15 (8 Oct 2026, SFZ-NEXT, account 2): 15th-c. Lombard chancery Italian -- the Italian paragraphs of Osio's
+    # Documenti diplomatici II-III (Visconti documents to 1447) and of Mazzatinti's ASL X (1883) OCR, filtered by
+    # tools/italian_ngram.py's archaic-ratio rule, Pusterla key-unit clear texts excluded -- for the Sforza 1446-47 slips,
+    # which it16dip (16th c.) does not era-match. Six folds, four of them quarters of Osio III: read
+    # tools/data/it15/README.md for the per-fold false-negative spread before trusting a FAIL/PASS.
+    "it15": [DATA / "it15" / f"{i}.txt.gz" for i in ("osio2", "osio3a", "osio3b", "osio3c", "osio3d", "asl")],
     # it19 (2 Oct 2026, A2-CAS7, LANE-A2PUSH account 2): Italian political, historical and epistolary prose of about
     # 1800-1830 -- Botta's Storia d'Italia dal 1789 al 1814 t.I, Colletta's Storia del reame di Napoli, Cuoco's Saggio
     # storico (1806), Foscolo's Epistolario vols 1 and 3 (the latter his London letters of 1816-27), each capped at 650k

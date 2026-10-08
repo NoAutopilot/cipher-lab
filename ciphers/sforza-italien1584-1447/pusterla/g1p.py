@@ -15,7 +15,7 @@ emissions) runs hard EM between consecutive anchors. --stock reruns the gate wit
 
 Also writes key.tsv (pooled), key_<unit>.tsv, align_<unit>.tsv. Readings are SFZ-P's single-reader transcriptions in
 working mnemonics (pusterla_labels.md).
-    python3 ciphers/sforza-italien1584-1447/pusterla/g1p.py [--check] [--stock]
+    python3 ciphers/sforza-italien1584-1447/pusterla/g1p.py [--check] [--stock] [--units=f81,f42]
 """
 import os, re, sys
 import numpy as np
@@ -26,6 +26,9 @@ import stream_align as sa  # noqa: E402
 import g1  # noqa: E402  (SFZ-1's gate; its score() is the statistic)
 
 UNITS = [('f81', 'ciphertext_f81.tsv', 'clear_f80.txt'), ('f42', 'ciphertext_f42.tsv', 'clear_f41.txt')]
+# SFZ-NEXT (8 Oct 2026): units 3-4, two blind Sonnet passes + one reconciliation each (f71/, f67/); f.71's clear side is
+# Osio III no. CCCXCI (print of the original), f.67's the later-hand copy f.66. --units f81,f42 reruns the 7 Oct gate.
+UNITS += [('f71', 'ciphertext_f71.tsv', 'clear_f71_osio.txt'), ('f67', 'ciphertext_f67.tsv', 'clear_f66.txt')]
 CHE_SIGN, CHE = 'g÷', 10  # 'k'
 SEED, NSHUF = 1447, 200
 
@@ -89,9 +92,11 @@ def learn(units, nsym, iters=8, band=12):
     return counts, paths
 
 
-def main(check=False, stock=False):
+def main(check=False, stock=False, only=None):
     U = []
     for name, ct, cl in UNITS:
+        if only and name not in only: continue
+        if not os.path.exists(os.path.join(HERE, ct)): continue
         s = syms(ct); let = text(cl); U.append((name, s, let))
     allsyms = sorted({x for _, s, _ in U for x in s}); ids = {x: i for i, x in enumerate(allsyms)}
     data = {n: (np.array([ids[x] for x in s]), let, anchors(s, let)) for n, s, let in U}
@@ -138,18 +143,19 @@ def main(check=False, stock=False):
     mean = float(np.mean(reals)); verdict = 'PASS' if mean >= 0.60 and allabove else 'FAIL'
     rows.append(f'# learner: {"stream_align.learn (g1.py stock)" if stock else "che-anchored segment EM"}; mean held-out accuracy {mean:.3f}; gate >= 0.60 and every unit > shuffle p95: {verdict}')
     gtxt = '\n'.join(rows) + '\n'
-    gfile = 'gate_g1_stock.tsv' if stock else 'gate_g1.tsv'
+    gfile = ('gate_g1_stock.tsv' if stock else 'gate_g1.tsv') if not only else f'gate_g1_{"_".join(only)}.tsv'
     if check:
-        files = ((gfile, gtxt),) + ((('key.tsv', keytxt),) if not stock else ())
+        files = ((gfile, gtxt),) + ((('key.tsv', keytxt),) if not stock and not only else ())
         bad = [f for f, t in files if not os.path.exists(os.path.join(HERE, f)) or open(os.path.join(HERE, f)).read() != t]
         print('stale: ' + ', '.join(bad) if bad else f'ok: {", ".join(f for f, _ in files)} reproduce')
         return 1 if bad else 0
     open(os.path.join(HERE, gfile), 'w').write(gtxt)
-    if not stock:
+    if not stock and not only:
         open(os.path.join(HERE, 'key.tsv'), 'w').write(keytxt)
     print(gtxt, end='')
     return 0
 
 
 if __name__ == '__main__':
-    sys.exit(main('--check' in sys.argv, '--stock' in sys.argv))
+    only = next((a.split('=', 1)[1].split(',') for a in sys.argv if a.startswith('--units=')), None)
+    sys.exit(main('--check' in sys.argv, '--stock' in sys.argv, only))

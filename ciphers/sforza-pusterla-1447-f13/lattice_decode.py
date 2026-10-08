@@ -18,7 +18,7 @@ Pre-registered before any decode was run (SFZ-P2, 22:5x UTC 7 Oct 2026), not tun
     (tools/judge_plaintext.py, inline spec {"judge": {"corpora": it16dip}}) PASS against real_p05. Both, or FAIL.
 The shuffle loop can change the statistic: a shuffled key changes every decoded letter and the path the lattice picks.
 
-    python3 ciphers/sforza-pusterla-1447-f13/lattice_decode.py [--check]
+    python3 ciphers/sforza-pusterla-1447-f13/lattice_decode.py [--check] [--corpus=it15]
 Writes lattice/{vote.tsv,lattice.tsv,decode.tsv,plain.txt,stats.json}; --check exits 1 if those on disk are stale.
 """
 import collections, json, os, random, statistics, sys, types
@@ -33,6 +33,11 @@ POOL = os.path.join(ROOT, 'ciphers', 'sforza-italien1584-1447', 'pusterla')
 OUT = os.path.join(HERE, 'lattice')
 PASSES = ['ciphertext_f13_passA.tsv', 'ciphertext_f13_passB.tsv', 'ciphertext_f13_passC.tsv']
 LAM, BEAM, NSHUF, SEED = 1.0, 64, 200, 13
+# --corpus it15 (SFZ-NEXT, 8 Oct 2026): the same pipeline with the era-nearer tools/data/it15 model for both the decode LM
+# and the judge, written to lattice_it15/; the default it16dip run and its lattice/ outputs are unchanged.
+CORPUS = next((a.split('=', 1)[1] for a in sys.argv if a.startswith('--corpus=')), 'it16dip')
+if CORPUS != 'it16dip':
+    OUT = os.path.join(HERE, f'lattice_{CORPUS}')
 
 
 def merge_che(seq):
@@ -81,7 +86,7 @@ def build():
 def run():
     vote, lat, gapmaj = build()
     key = kdl.read_key(os.path.join(POOL, 'key.tsv'))
-    model = jp.NgramModel([jp.read_corpus(p) for p in jp.LANG_CORPORA['it16dip']])
+    model = jp.NgramModel([jp.read_corpus(p) for p in jp.LANG_CORPORA[CORPUS]])
     lm = kdl.LM(model, None)
     seq, _ = kdl.viterbi(lat, key, lm, LAM, BEAM)
     t1 = [v[2] for v in vote]
@@ -92,7 +97,7 @@ def run():
         sh.append(model.score(kdl.text_of(kdl.viterbi(lat, k2, lm, LAM, BEAM)[0], k2)))
         sh_t1.append(model.score(kdl.text_of(t1, k2)))
     plain = kdl.text_of(seq, key)
-    spec = {'judge': {'corpora': [os.path.relpath(p, ROOT) for p in jp.LANG_CORPORA['it16dip']]}}
+    spec = {'judge': {'corpora': [os.path.relpath(p, ROOT) for p in jp.LANG_CORPORA[CORPUS]]}}
     stats = {
         'passes': PASSES, 'positions': len(lat), 'gap_majority_columns_dropped': gapmaj,
         'vote_share_hist': dict(collections.Counter(f'{v[3]}/{v[4]}' for v in vote)),
@@ -129,7 +134,7 @@ def main(check=False):
     if check:
         stale = [n for n, t in files.items()
                  if not os.path.exists(os.path.join(OUT, n)) or open(os.path.join(OUT, n), encoding='utf-8').read() != t]
-        print('stale: ' + ', '.join(stale) if stale else 'lattice/ up to date')
+        print('stale: ' + ', '.join(stale) if stale else f'{os.path.basename(OUT)}/ up to date')
         return 1 if stale else 0
     os.makedirs(OUT, exist_ok=True)
     for n, t in files.items():
