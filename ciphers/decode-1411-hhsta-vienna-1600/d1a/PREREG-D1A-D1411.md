@@ -38,3 +38,12 @@ Job D1A-D1411, LANE DEFAULT-account-1-20261008-0540. Question: the 12 substituti
   T21r and T21r_h12 (the score_p5.py statistic, 200 order shuffles seed 1411 p99), before vs after. In-sample for T21r: **no S
   grades move**, whatever the number. Committed numbers.tsv files are not edited (rule 7: earlier readings untouched); the settled
   values go to d1a/settled.tsv.
+
+## Addendum 1 (05:55 UTC 8 Oct 2026, after tile placement, before any blind read)
+- Exemplars: 31 agreed, ok-graded numbers (21 from p.2, 10 from p.5) covering every candidate *digit* of the look-alike pairs
+  (1,2,4,5,6,7,8,9,0, each at least 3 times) rather than 2-3 copies of every whole candidate number (several candidate numbers --
+  93, 61, 96, 54, 45, 51 -- have no agreed ok occurrence in the aligned span). Exemplar accuracy is still exact whole-number reads.
+- D04a: the p.2 tile covers "6" plus the mark after it (the def1411 "#" sign token), because the question is whether p.5's
+  "60" is the same "6"+mark; settlement for D04a reads the reader's description of both tiles, and if the reader sees "6" plus
+  a non-digit mark on both, D04a is S1 with value 6 (the p.5 "0" is the mark). Placement: d1a/bandseg.py groups, worker-checked
+  sheet; montages d1a/montage/montage_1-3.jpg (57 tiles, ids shuffled seed 1411), key d1a/tile_key.tsv (not given to the reader).
