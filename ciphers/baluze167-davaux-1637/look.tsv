@@ -1,0 +1,18 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-08 22:51	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	cipher-page	228r			folio arithmetic	owed
+2026-10-08 22:51	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	facing	227v			folio arithmetic	owed
+2026-10-08 22:51	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	before-2	227r			folio arithmetic	owed
+2026-10-08 22:51	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-1	228v			folio arithmetic	owed
+2026-10-08 22:51	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-2	229r			folio arithmetic	owed
+2026-10-08 22:51	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-3	229v			folio arithmetic	owed
+2026-10-08 22:51	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-4	230r			folio arithmetic	owed
+2026-10-08 22:51	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	unit			louisxiii_davaux.png	manifest	owed
+2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	cipher-page	228r			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	facing	227v			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	before-2	227r			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-1	228v			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-2	229r			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-3	229v			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	after-4	230r			folio arithmetic	answered CLEAR (recorded)
+2026-10-08 22:52	adhoc-b8f5c6	adhoc-b8f5c6:2-leaf:37a3fb	unit			louisxiii_davaux.png	manifest	answered CLEAR (recorded)
