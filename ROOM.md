@@ -11237,3 +11237,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 17:53 | LS5-R1d reader (acct1) | LANE LEDGER hdl release (11 requests: 8 page images, 3 dmGetItemInfo)
 2026-10-08 17:54 | LS5-R1e worker | LANE LEDGER hdl release (10 requests: page images 2400px)
 2026-10-08 17:54 | worker LS5-R1c (LANE LEDGER) | LANE LEDGER hdl release (12 requests)
+2026-10-08 17:55 | K8472 worker (acct1) | LANE LEDGER hdl take
