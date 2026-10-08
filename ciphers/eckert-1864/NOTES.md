@@ -1206,3 +1206,83 @@ Read so far: 108 of 893 mssEC 19 segments read after LS-R5's ten (E55-E64: H 136
 - [x] image-check: crops read by the worker; no subagent.
 - [x] retry: not needed.
 Verdict: keep going: 3 internal gaps; cheapest next: fetch the OR volume for 4-31 Aug 1864 and the Lincoln/Grant editions and locate E55, E60, E63, E64 in print, ~$0.5-1
+
+## LS-R7 (8 Oct 2026, account 1, for LANE ST-LEDGER-2)
+
+Ten priority-1 rows of `entries-mssEC19.tsv` (non-army addressees, McCaine rows skipped) transcribed from the 2400 px page images (strip crops, no subagent; volunteer text as second witness).
+Eight were read: seven in Cipher No. 1 (key.md) as E66, E67, E68, E70, E72, E73, E74 in ciphertext.txt, one in Cipher No. 2 (key-no2.md; header `Coldwell "2"`) as N2-BN in
+ciphertext-no2.txt (the brief's E71 slot; no E71 in ciphertext.txt). Two (E69, E75) are "key not in hand" and are NOT in any ciphertext file (transcriptions below). `decode.py --check`,
+`decode_no2.py --check`, `decode_no9.py --check` exit 0 at the last push. Commits: 4030be9e (E66-E67), f25d36eb (E68, E70, N2-BN), 38b87d9d (E72-E73), 4030c5cd (E74 + tsv); NOTES/print script in the closing commit.
+
+| ID | date | from / to (decoded plain) | H | C | I | M | print |
+|---|---|---|---|---|---|---|---|
+| E66 | 3 Jan 1865 12 M (header written "1864"; see below) | Horner (New York): Wise has called on you for [Waymomers, unread] to take 1000 construction corps US military railroads from Baltimore to Savannah; in addition 4000 troops by steaming from "Banditte" to sea, full coal and water for 15 days; report vessels you can send | 33 | 0 | 1 | 2 | not located (I/45 pt 2 cached; ORN I/12 fetch failed) |
+| E67 | 3 Dec 1864 12.30 PM | H. A. Wise, Chief of Bureau (Navy) to Rear-Adm. D. D. Porter: your telegram to Mr. Fox received; everything done by the Bureau with utmost vigor; when the Baltimore arrives she leaves again with Jeffers and Rodman to assist in fitting out the Louisiana; the Stromboli is on her way with 80 torpedoes and 2 of Beardslee's clock movements | 13 | 1 | 1 | 0 | FOUND, ORN ser. I vol. 11, word for word (see print) |
+| E68 | 7 Aug 1864 | Stanton (Brutus) to Capt. Sam Bruch, Louisville, for General Burr[bridge?]: see Surgeon Ferry in person and hear his statement; if you deem his [plantation?] trustworthy send the substance by cipher telegraph; if important send him here under adequate guard that will take care he does not escape | 17 | 0 | 1 | 2 | not located (I/43 pt 1-2 cached) |
+| N2-BN | 16 Mar 1864 | Brig. Gen. H. W. Benham to Humphreys at the Navy Yard: the patent pontoon bridge train of canvas pontoons will be ready today as ordered in your letter of the [29] ult, [50] chess placed on each chess wagon, additional wagons if still deemed necessary | 16 | 0 | 0 | 2 | not located (I/33 cached) |
+| E70 | 16 Jun 1864 12.20 PM | Geo D. Ramsay, Chf Ord, to Capt. Smith, St Louis: Major Callender, commanding St Louis arsenal, to issue at once to General Carrington at Indianapolis four 12-pdr howitzers with implements and equipment complete, 400 rounds assorted (100 canister) by special messenger; no delay; report the issue by telegraph | 13 | 0 | 1 | 1 | not located (I/36 pt 2 cached; I/39 not cached) |
+| E72 | 23 Sept 1864 10 AM | to Bickford at Harper's Ferry (Brig. Gen., signature code unread): nearly 5000 troops leave here for Winchester this morning; see that transportation is ready on their arrival at your post and afford every facility for a rapid march | 16 | 0 | 0 | 2 | not located (I/43 pt 2 cached) |
+| E73 | 7 Nov 1864 12.30 PM | B. F. Greene, chief clerk for the chief of Bureau (Navy), to S. P. Lee (code Neptune) at Mound City: direct officers [polkers, unread] in your squadron to make all important signals by adding a number [utopia, unread] designated in your order to the signal numbers made and subtracting the same number from those received | 9 | 0 | 0 | 2 | not located (ORN I/26 searched, 3 phrases) |
+| E74 | 11 Sept 1864 8 PM | Stanton (Brutus) to Chas Armond: "The publication of Sand[ers?] despatch was an enormous blunder. 'Twas done by [the] Tycoon without my knowledge. I did not know he had seen it until too late and foresaw the consequences would be very bad. It cannot happen again" (mostly plain; one code word) | 2 | 0 | 1 | 2 | not located (I/43 pt 2 cached) |
+| E69 | 13 Oct 1864 | Halleck? "JW Hallack Ind No 10" to Gov. Morton (Indiana), signed Blanchard: key not in hand | - | - | - | - | - |
+| E75 | 5 Feb 1864 | "Baldwin 10" to Lockwood (Baltimore?): key not in hand | - | - | - | - | - |
+
+Grades: decoder H 104 over E66-E74 (E66 33, E67 14, E68 17, E70 13, E72 16, E73 9, E74 2) plus 16 in N2-BN (H 120 for the eight), C 1 (E67 "tar pedro" = torpedoes, from the print),
+I 5 and M 13 by hand. I: E66 date (header "1864", entry is Jan 1865; see below); E67 "Fox" read [Philadelphia] by the decoder is plain "Mr Fox" (print) so one of its 14 H is not H, counted 13 + I 1; E68 "Burr" + patent read
+"Burr[bridge]" by inference; E70 "Ramsay" read [Effect] by the decoder is the signatory's plain surname; E74 "the" struck through. M: E66 "Weaselira", "Banditte" (vessel name, read plain), unread
+"Waymomers", "Vain fleet"; E68 "Jones", "platation"; N2-BN "Humphreys" read [Wilmington]'s and "the Oliver Ellsworth ult" read [29] ult; E70 "Polkaing" (image and volunteer text disagree: image reads "Packaing"/"Pockaing", volunteer
+"Polkaing"; took "Polkaing"); E72 "Stephen son" read [In the] son, signature "see see Awe gear"; E73 "polkers", "utopia"; E74 "Sand hers", "Coox Edwards". Unread, not graded: E66 "pelton", "counter man dead" (tail); E67 "pedro"
+before print gloss; all plain-spelling names (Jeffers, Rodman, Beardsley, Stromboli, Baltimore, Randall, Chess, Benham). E74 is nearly clear text: its sense is read from the page, not from the key (H 2).
+
+Date of E66: the page (printed 257) opens "Wash. Jan. 2. 1865" and holds the 2 Jan and 3 Jan 1865 entries above it; its own header reads "Jany 3rd 1864". Taken as 3 Jan 1865: the text names Wise (Navy Bureau chief), railroad
+construction corps to Savannah (taken 21 Dec 1864) and the Fort Fisher shipping of early Jan 1865. The clerk's "1864" is the usual January slip; the cipher reading does not depend on it.
+
+Image vs volunteer text (image taken): E66 header "(1)" and a pencil numeral "6" above the first line, no word differs from the volunteer text; E67 interlineation "talbots" after "clock" carried as `<ins>`, "Jedro/pedro" taken
+as "pedro"; E68 "Escape" capitalised; E70 interlineations "dis", "5", "M", "im", "assorted" carried as `<ins>`, struck "Rep" as `<del>`, header time "1220 pm" above the date; E73 header "1230 pm"; E74 struck "the" before "Tycoon"
+(volunteer text keeps it); E72 is in very faint pencil (read from the crops, volunteer text agrees on all 59 words). Page numbers: the pointer's page index (cited as Page 257, 240...)
+differs from the printed page number by 2 (e.g. 9071 = page 179, printed 177); the headers carry the pointer page.
+
+Key-not-in-hand entries. Both carry "10" in the header (E69 "Ind No 10", E75 "Baldwin 10"), use "period" as a word, and have an unusual word order of plain words; E75 also writes its first line as comma-separated words.
+Coverage is not the test here: E69's 10-11 code-word tokens are all read by decode.py (key.md) and by decode_no2.py, but the two keys give different values to the same words ("quarrel" = [Embark] vs [Defeat], "Bishop" = [Atlanta]
+both) and neither gives a sentence ("press the [Embark] on this [Front]"); E75 reads no sentence under key.md, key-no2.md or key-no9.md ("Pauline Quarrel Lock wood" = [Convoy][Embark][Banks]wood /[Camp][Defeat][Dix] /
+[Pemberton][Jackson]). Nothing was guessed and no ciphertext file carries them. Hypothesis, untested: the "10" marks a Cipher No. 10 (Halleck to a governor; Baldwin to a provost-marshal line) not among key.md, key-no2.md, key-no9.md.
+Transcriptions as written (not graded):
+E69 | Page 199 (printed) | 9093 | JW Hallack Ind No 10  Washn Oct 13th 1864 / Mohawk Florence for Gov Morton period / In my letter borne by mister / Mitchell to Quorum Sherman I said / that any Soldiers he could spare /
+for October need not to remain / for November period I therefore cannot / press the quarrel on this reptile / all that the Bishop and quarrel / Sherman feel they can safely do / I however shall be glad of / period Bravo for Dresden and for / yourself personally signed Blanchard
+E75 | Page 7 | 8899 | Baldwin 10  Wash'n D.C. Feby 5th 1864 / For , Pauline , Quarrel , Lock , wood , period , Prison - / ers of War are Expected to leave / Cleve = land = to day and will pass / through Ink You will take measures to /
+have them well Rodneyed while passing through / the city and to prevent any communication / with them Abel Viola How is George
+
+Print (script `ciphers/eckert-1864/ls_r7_printcheck.py`: verbatim ledger phrases, letters only, against the cached OR djvu texts in sources/ia-fulltext/print-check/, nothing added): I/33 (`warofrebellion33unit`), I/36 pt 2
+(`362unit`), I/37 pt 2 (`372unit`), I/43 pt 1 (`431unit`), I/43 pt 2 (`432unit`), I/45 pt 2 (`452unit`), 27 phrases of 2-4 per entry: every phrase specific to an entry is "none"; the six generic hits ("there must be no delay",
+"let me know", "the additional wagons", "until too late", "will you see that", "on their arrival at your", "everything is being done") were opened in context where unclear: all unrelated letters (Augur I/36 pt 2, Wright I/45 pt 2, Confederate wagon returns I/33).
+Navy items: ORN ser. I vol. 11 (IA `officialrecordso0011unse`, scratch only) FOUND E67 word for word, Washington, December 3, 1864 12:30 p.m., Wise to Rear-Admiral D. D. Porter, printed straight after Porter's telegram to Assistant Secretary
+Fox: "Your telegram to Mr. Fox of this a. m. received. Everything is being done by the Bureau with the utmost vigor. The moment the Baltimore arrives she will leave again with Jeffers and Rodman to assist in fitting out the Louisiana.
+The Stromboli is on her way to you with 80 torpedoes on board and 2 of Beardslee's clock movements. If you have not Beardslee near you, let me know." (page number not read by this job; the OCR lacks running heads). The ledger's
+"tar pedro" = "torpedoes" (C) and "Niagara" = Porter (H), "Beardsleys" = Beardslee (clerk's spelling). Key and decode agree with the print on every code word except "Fox" ([Philadelphia] in key.md, plain in print): the three-word code
+"Niagara" etc. are read as the print has them. ORN I/26 (`officialrecordso0026unse`, Mar-Dec 1864 Western Waters, scratch only): E73 phrases "signals by adding", "signal numbers received", "subtracting the same number" none (the 7 Nov 1864
+Porter dispatches there are about other matters). ORN I/25 (`officialrecordso0025char`) is 1863 and was no use for E73. Not searched: OR ser. I vols 39-42 (June-Oct 1864 Grant/Sherman-front correspondence, relevant to E70), ORN I/12 (the fetch returned 163
+bytes, one try), ORN ser. II, Lincoln Collected Works (E68, E74: the "Sanders despatch"), Grant Papers, Stanton papers, the press of the day (E74), Welles diary; Google Books and OpenAlex not run in this job. A miss is a search result, not a verdict (rule 10):
+the batch goes to a verifier (LS-V7) which should search E74 and E68 first (press of 12-13 Sept 1864; Burbridge's Kentucky correspondence of 7-9 Aug 1864).
+
+Crop commands (S = session scratch; images `hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg` fetched once to $S/img; regions from 600 px thumbnails, x4):
+`python3 tools/iiif_lines.py --image $S/img/p<pointer>.jpg --out $S/crops/<pointer> --prefix p<pointer> --region <x,y,w,h> --centres <list> --lines-per-crop 2 --max-width 2400`: 9151 `100,1700,2300,1066` centres 120,260,380,490,610,730,850,960;
+9134 `100,250,2300,1120` 54,150,238,334,430,526,618,714,814,918,1014; 9039 `100,250,2300,920` 54,142,218,298,382,462,542,622,702,782,862 (last line cut, re-cropped by hand 100,1080,2300,170); 9093 `100,1880,2300,886` 52,132,220,312,408,500,588,668,760;
+8985 `100,1640,2300,860` 44,156,244,350,460,552,648,760,830; 8914 `100,240,2300,800` 48,152,232,308,392,488,588,688,740; 9075 `100,1380,2300,740` 40,140,228,320,412,500,588,680; 9118 `100,250,2300,720` 38,142,222,310,398,490,578,678;
+9071 `100,1800,2300,700` 64,160,260,360,452,552,628; 8899 `100,1500,2300,840` 68,200,320,460,580,688,780. Requests: hdl.huntington.org 10 (one 2400 px image each), archive.org 7 (advancedsearch 1, `_djvu.txt` downloads 6: 0025char, 0011unse, 0026unse,
+0026char (HTTP 503, not retried), 0012unse (163-byte error body, not retried), plus 0011/0026 each once), 0 other hosts. Subagents 0.
+
+## Remaining gaps (LS-R7, 8 Oct 2026)
+Read so far: of the ten rows, 8 read (E66, E67, E68, N2-BN as E71, E70, E72, E73, E74); 2 "key not in hand" (E69, E75).
+- E69 and E75 key (header "10", "period" words) - blocker: no-key-material; the three keys in hand give no sentence; next: look in mssEC 37-76 for a cipher book headed "10" / a Halleck-to-governor list, ~$0.5
+- Print location of E66, E68, E70, E72, E73, E74, N2-BN - blocker: not-attempted; OR ser. I vols 39-42, ORN I/12, Grant/Lincoln editions and the press of the day not searched; next: LS-V7 search, ~$1
+- M-graded tokens (E66 "Weaselira", E68 "Jones"/"platation", E72 signature "see see Awe gear", E73 "polkers"/"utopia", E74 "Sand hers"/"Coox Edwards") - blocker: open-codes; no context narrows them; next: LS-V7 image re-read, ~$0.5
+
+## Escalation (LS-R7, 8 Oct 2026)
+- [n/a] siblings: the ten are siblings of E21-E65 already read; E67 now matches ORN I/11 word for word, so the Navy Bureau (Wise) traffic of Dec 1864 is in print, as are the McCaine/Augur items.
+- [x] clear-pages: the ten entries read from the page images, volunteer text as second witness.
+- [x] known-keys: key.md (7), key-no2.md (1); key-no9.md tried on E75 only, no read.
+- [ ] print: six OR volumes and ORN I/11, I/26 searched; OR I/39-42, ORN I/12, Lincoln/Grant editions and the press not.
+- [n/a] key-rebuild: no key change proposed ("Fox" = Philadelphia in key.md is a plain-name collision in E67, one token).
+- [x] image-check: crops read by the worker; no subagent.
+- [x] retry: not needed (E69 and E75 each tried against three keys once).
+Verdict: keep going: 2 internal gaps; cheapest next: LS-V7 verifier on E66-E74 (E67 N1 by print), then a search of mssEC 37-76 for the "10" book for E69 and E75, ~$1.5
