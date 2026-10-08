@@ -1969,3 +1969,10 @@ ref_L07_01_p and ref_L34_02_p (p-labelled signs from the same lines, family p-as
 have a short descender and a bar through the stem; the readers' f (L07:3) is a small looped sign. Whether the tall pair is its own pile is the owner's call. Tomokiyo's key
 column f is not on the page (no crop of the key image cell was on disk). Not published as an artifact; the owner opens the HTML from the repository.
 
+
+## VIV52-R (8 Oct 2026, 14:13 UTC by date -u, account-2 lane orchestrator for acct3-orchestrator): step 0 probe 403, stopped
+Brief: .claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md "## VIV52-R". One reachability request,
+`curl -sS -A "Mozilla/5.0" -o /dev/null -w "%{http_code}" https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009609w/f178/info.json`,
+answered 403 at 14:13:18 UTC (about 80 min after VIV52's block). Per the brief: no retry, steps 2-4 not run, WORK-QUEUE row VIV52-R
+bounced. Gallica requests this job: 1. Next: the ink 52 crops need a container or desk Gallica does not block (e.g. a LOCAL-QUEUE row
+for the owner's browser, or a later cloud retry once the block lifts); premise (VIV52 step 1) stays negative.
