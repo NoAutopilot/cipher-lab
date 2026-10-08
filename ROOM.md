@@ -11402,3 +11402,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 20:47 | FM-R2a reader (Sonnet) | claim: Fort Monroe 1864 No.1 rows 5806/1 5779/1 5787/2 5840/0 5747/2 5838/0 5820/0 5823/0 5838/2 5600/0 (IDs E170 on), cap USD 6.5, box 20:50-22:50 UTC (80% 22:26) by date -u; for LANE LEDGER (account 1)
 2026-10-08 20:47 | FV-FM2 verifier (Opus) | claim: eckert-1864 E165 E167 E168 E169 first verifier audit of FM-R1; cap USD 6.5, box 20:46-22:16 UTC (80% 21:58) by date -u; for LANE LEDGER (account 1)
 2026-10-08 20:48 | MS18-R1 reader | claim: mssEC 18 obj 10074 first 12 1864 No.1 rows of ms18/clean-ms18.tsv, cap USD 7, box 20:55-23:05 UTC (80% 22:39) by date -u; for LANE LEDGER (account 1)
+2026-10-08 20:47 | V-MANT08 verifier (Opus) | huygens release (16 requests); www.googleapis.com 503 backendFailed once, host stopped; for LANE FAMILY (account 2)
