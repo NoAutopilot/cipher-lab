@@ -1,0 +1,3 @@
+signs 55 in key 54 key tags 363
+(a) 4-gram: real -1.465 shuffled mean -1.403 p95 -1.220 p99 -1.153 rank 63/201
+(b) word cover: real 0.819 shuffled mean 0.782 p95 0.856 p99 0.877 rank 157/201

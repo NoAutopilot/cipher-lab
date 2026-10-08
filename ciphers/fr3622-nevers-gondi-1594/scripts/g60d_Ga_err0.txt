@@ -1,0 +1,12 @@
+tags 77 classes {'L': 40, 'S': 26, 'W': 11}
+seed 0: (a) real -0.797 p99 -1.538 P | (b) real 0.942 p99 0.736 mean 0.635 P
+seed 1: (a) real -0.891 p99 -1.554 P | (b) real 0.950 p99 0.740 mean 0.632 P
+seed 2: (a) real -0.902 p99 -1.572 P | (b) real 0.941 p99 0.730 mean 0.623 P
+seed 3: (a) real -0.827 p99 -1.507 P | (b) real 0.923 p99 0.749 mean 0.649 P
+seed 4: (a) real -0.790 p99 -1.575 P | (b) real 0.940 p99 0.724 mean 0.622 P
+seed 5: (a) real -0.874 p99 -1.574 P | (b) real 0.912 p99 0.715 mean 0.607 P
+seed 6: (a) real -0.917 p99 -1.540 P | (b) real 0.942 p99 0.746 mean 0.636 P
+seed 7: (a) real -0.893 p99 -1.521 P | (b) real 0.923 p99 0.737 mean 0.620 P
+seed 8: (a) real -0.847 p99 -1.557 P | (b) real 0.911 p99 0.743 mean 0.635 P
+seed 9: (a) real -0.918 p99 -1.587 P | (b) real 0.909 p99 0.727 mean 0.624 P
+ERR=0.0 N=190: (a) 10/10  (b) 10/10
