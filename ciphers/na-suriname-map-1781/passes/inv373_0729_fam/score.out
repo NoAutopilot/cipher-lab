@@ -1,0 +1,6 @@
+purm_row	as_read	S_target=4/9	S_other_max=3	shuffle_p99=4	g1=False	g2=True	g3=False	MISS
+purm_row	0->o	S_target=4/9	S_other_max=3	shuffle_p99=4	g1=False	g2=True	g3=False	MISS
+purm_run	as_read	S_target=4/9	S_other_max=3	shuffle_p99=4	g1=False	g2=True	g3=False	MISS
+purm_run	0->o	S_target=4/9	S_other_max=3	shuffle_p99=4	g1=False	g2=True	g3=False	MISS
+zeel_row	as_read	S_target=2/9	S_other_max=3	shuffle_p99=3	g1=False	g2=False	g3=False	MISS
+zeel_run	as_read	S_target=2/9	S_other_max=2	shuffle_p99=3	g1=False	g2=False	g3=False	MISS

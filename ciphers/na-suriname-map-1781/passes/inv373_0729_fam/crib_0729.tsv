@@ -1,0 +1,7 @@
+# NA 1.05.03 inv. 373 scan 0729 site-name cribs, FAM-SUR729 (8 Oct 2026), single reader (this worker) on native crops; sign names
+# per the folder's map files ([u-dots] = y with two dots; 0 = the letters' small zero, the maps have no 0 sign; f = [f-loop]).
+# id	gloss	occurrence	signs (space-separated)	plain letters
+purm_row	Purmerent	table row label 4	S 5 o [u-dots] 3 0 7 l [lambda]	p u r m e r e n t
+purm_run	Purmerent	running text line 4-5 (Pur-|merent)	S 5 o [u-dots] 3 0 7 [u-dots] [lambda]	p u r m e r e n t
+zeel_row	Zeelandia	table row label 2	n 3 7 c [delta] [u-dots] r [f-loop] x	z e e l a n d i a
+zeel_run	Zeelandia	running text line 4	n 3 7 c x [u-dots] r 8 [delta]	z e e l a n d i a
