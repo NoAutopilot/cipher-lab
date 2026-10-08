@@ -1369,18 +1369,18 @@ Not a gap any more: no.27, no.35 and no.37 (their word-codes, the 8-glyph rule, 
 Not a gap any more: no.60 f.83r. 3 Oct 2026 (GAPS96, PREREG7): the native top block, read blind turned 180 degrees (the slip is pasted upside down), matches the end of Tomokiyo's no.60 DUMP: LCS 162 of 173 groups (R 0.936) vs shuffled p99 85, no.27 68, no.58 81 -- PASS. The conflict is closed; no.60 is covered by Tomokiyo's published partial reading, so a reading of ours would be N0-type. No grade change.
 - the clear-French frame of no.44 (165 L words) - blocker: waiting-on ASKS row 114 (a person's read); GAPS100, 3 Oct 2026: word sheet built (witness/f67r_person_sheet.md, 98 slots, 165 words, answers in witness/f67r_person_answers.tsv, applied by scripts/f67r_person_sheet.py --apply)
 - Boltanski 2006 (cites the 12 Dec 1589 letter, no.37) - blocker: waiting-on LOCAL-QUEUE L37 (filed 2 Oct 2026); no.37 is now covered by Cabinet Noir, so the row matters only for the print check, not for any reading
-- fr.4715 f.67v, the verso of no.44 (Montholon, 15 Apr 1590), never looked at - blocker: not-attempted; noted in the body at NOTES.md:224, never carried as a step (loose-ends 8 Oct 2026); next: fetch the f.67v canvas once and look for a continuation or cipher, ~$0.3
+Not a gap any more: fr.4715 f.67v, the verso of no.44. Fetched 8 Oct 2026 (D1A-CAN, canvas f150, label '67v'): blank, no continuation, no cipher.
 
 ## Escalation (CABNOIR, 3 Oct 2026)
 - [x] siblings: no.37, no.21, no.39, no.27 and no.28 imaged and their glosses read (GAPS-2 to -13); no.35 seen at 1000 px; no.60 f.83r top block fetched native and matched to Tomokiyo's no.60 DUMP (GAPS96, R 0.936, PASS); Cabinet Noir's published values compared code by code (Premise check above): 6 agree, 1 conflicts (27), 1 conflicts unless the mark differs (99), the rest unconfirmed or compatible
-  - [ ] fetch the f.67v canvas once and look for a continuation or cipher; ~$0.3; source: loose-ends 8 Oct
+  - [x] f.67v fetched once 8 Oct 2026 (D1A-CAN, canvas f150): blank, no continuation or cipher
 - [x] clear-pages: no.44 is about 95 pct clear French (two Sonnet passes + one Fable pass + the GAPS-9 L-word pass); no.37's 16 clear lines transcribed
 - [retired] known-keys: key_vieuville_nevers.tsv applied (--check exit 0); the period key Nevers no.71 (fr.3995 f.133r) read and reconciled 3 Oct 2026 (GAPS-14). Registered gate 1 FAILs on letter coverage (0.758 vs 0.80, 0 conflicts) with glosses 5/5; gate 2 on 8 unseen Cabinet Noir values (GAPS-15) FAILs 4/7 = 0.571 (2 of 3 conflicts notation misses, 1 real). The current instrument is [retired] under rule 3. f.7r new material imaged and read twice (GAPS-16); its G1 leaf control FAILed on the mechanical reconciliation; image reconciliation done 3 Oct 2026 (GAPS82): G1 FAIL 8/30 = 0.267 (A > p99 5); known-answer power check done (GAPS83): the aligner reaches the gate on leaf-like synthetic input 20/20, so the FAILs stand; fixed-key scoring done (GAPS88): PASS, T 235 vs p99 137, 16/19 runs p < 0.01; G2 on f.7r with LCS-anchored gloss words done (GAPS91): NON-TEST, 4 of 11 located, scorable 4 < 8. Instrument retired: key no.71 gated against glosses or printed answer lists with the token-subset match (PREREG, PREREG2, PREREG3/6), closed by PREREG3's clause; only new material (a period gloss over one of the six slot codes) reopens it
 - [x] print: GAPS-8 print check (control found by 4 of 5 instruments; no.44 0 specific hits); Cabinet Noir v1.0 found by GF4-BATCH9 and read here
 - [n/a] key-rebuild: the letter key is proven and a period key exists, so no rebuild is needed
 - [x] image-check: native crops for no.37, no.21, no.39, no.27, no.28 (GAPS-3 to -13)
 - [x] retry: blind visual re-reading of no.37 L06-L14 was retired under rule 3, and the leaf is now covered in public
-Verdict: keep going: 1 internal gaps; cheapest next: fetch the f.67v canvas once and look for a continuation or cipher, ~$0.3 (loose-ends 8 Oct 2026; was: parked: every gap has an outside blocker (GAPS100, 3 Oct 2026: frame waiting-on ASKS 114, the person word sheet; six word-code slots no-key-material; Boltanski waiting-on LOCAL-QUEUE L37; no.60 closed by GAPS96))
+Verdict: parked: every gap has an outside blocker (frame waiting-on ASKS 114, the person word sheet; six word-code slots no-key-material; Boltanski waiting-on LOCAL-QUEUE L37); D1A-CAN 8 Oct 2026 closed the f.67v step (blank)
 
 ## While waiting (GAPS100, 3 Oct 2026)
 The one action that depends on nobody: when a new BnF fr.3993-4715 Nevers leaf or a key sheet is imaged by any lane, grep its gloss pairs for the six no.44 slot codes (.03, .07, .49, .57, .6) before anything else; until then nothing internal is untried.
@@ -1389,3 +1389,14 @@ KH4-A, 7 Oct 2026 (key hunt, one-line suggestion): BnF fr.3977 f.191 (item 71, "
 ROBERT, marquis DE LA VIEUVILLE, au duc de Nevers, 13 aoust 1589"; sources/bnf-aem/cc504266_francais3974-3995.html) is a
 glossed Vieuville letter not named in this folder. It may carry the undocumented dotted word-code layer, so it could
 serve as a known-answer witness. Not fetched.
+
+## D1A-CAN: f.67v (8 Oct 2026, 05:4x UTC)
+
+Worker D1A-CAN, LANE DEFAULT-account-1-20261008-0540. `python3 tools/gallica_folio.py btv1b52509819x --folio 67 --side v`
+(cached manifest): canvas **f150**, label '67v', 4079x5720 native. Fetched once at 1000 px:
+`https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f150/full/1000,/0/default.jpg`, HTTP 200, 1000x1402.
+What is there: **blank** -- no text, no continuation of no.44, no cipher, no docket or address; a faint small round mark at upper
+right (a stamp or offset, not writing) and the usual foxing. The strip at the right edge of the image is the next leaf, f.68r
+(no.45, the cipher "le même que celui du n° 36", a different cipher; column of digit groups), not part of f.67v. No crops cut
+(no cipher on the leaf). This confirms LIKELY-1's inference that no.44 closes on the recto (its date line).
+Requests: gallica.bnf.fr 1 (manifest from cache).

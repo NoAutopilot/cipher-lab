@@ -2184,15 +2184,27 @@ bpt6k6549213m). No leaf tested. Rows: `keyhunt/2026-10-07-KH2A.tsv`.
 
 ## Remaining gaps (loose-ends pass, 8 Oct 2026)
 Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- 1653 band canvases 45, 55, 58, 74 left unfetched by connection resets (55/58/74 partly recovered at NOTES.md:1429-1465; 45 never) - blocker: not-attempted; noted in the body at NOTES.md:1187, never carried as a step (loose-ends 8 Oct 2026); next: refetch canvas 45 (and any of 55/58/74 still missing) once each and look for cipher groups; add a cipher leaf to trial_1653, ~$0.5
+Not a gap any more: 1653 band canvases 45, 55, 58, 74. 55/58/74 were recovered as plain prose (NOTES.md:1429-1465); canvas 45 fetched 8 Oct 2026 (D1A-CAN): folio 26r, blank leaf, faint bleed-through and a docket line at the foot, no cipher groups. Nothing added to trial_1653.
 - f.68 clear/cipher pair (dechiffref68.txt), never used as a second-letter test of key1659's homophones - blocker: not-attempted; noted in the body at AUDIT.md:301, never carried as a step (loose-ends 8 Oct 2026); next: commit the f.68 clear transcription with a second blind pass, align it, and test key1659 rows on the f.68 cipher beside a shuffled-order alignment control of the same length and symbol count, ~$3
 
 ## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: refetch canvas 45 (and any of 55/58/74 still missing) once each and look for cipher groups; add a cipher leaf to trial_1653; ~$0.5; source: loose-ends 8 Oct
+- [x] siblings: canvas 45 fetched 8 Oct 2026 (D1A-CAN, 1 request): f.26r, blank, no cipher; 55/58/74 plain prose (24 Sept); no leaf added to trial_1653
 - [ ] clear-pages: commit the f.68 clear transcription with a second blind pass, align it, and test key1659 rows on the f.68 cipher beside a shuffled-order alignment control of the same length and symbol count; ~$3; source: loose-ends 8 Oct
 - [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 2 internal gaps; cheapest next: refetch canvas 45 (and any of 55/58/74 still missing) once each and look for cipher groups; add a cipher leaf to trial_1653, ~$0.5
+Verdict: keep going: 1 internal gaps; cheapest next: commit the f.68 clear transcription with a second blind pass, align it, and test key1659 rows on the f.68 cipher beside a shuffled-order alignment control of the same length and symbol count, ~$3 (D1A-CAN, 8 Oct 2026: canvas 45 blank, gap closed)
+
+## D1A-CAN: canvas 45 (8 Oct 2026, 05:4x UTC)
+
+Worker D1A-CAN, LANE DEFAULT-account-1-20261008-0540. The 24 Sept walks left canvas 45 unfetched (connection resets twice);
+55, 58 and 74 had already been recovered as plain prose (NOTES.md:1429-1465), so only canvas 45 was fetched.
+`https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060495t/f45/full/1000,/0/default.jpg`, HTTP 200, 1000x1367, one request, no retry.
+Manifest label 'NP'; the leaf carries the folio number **26** at top right. It sits between canvas 43 (f.25, Paris 18 Oct 1658)
+and canvas 46 (blank verso), not in the 1653 band. What is there: a blank recto with faint bleed-through from the other side and
+a short faded docket line, two or three lines, at the foot (not read at 1000 px). **No cipher groups.** No line crops were cut
+(the brief: only if cipher is present). Nothing added to `trial_1653`. Row updated in `walk_37_159.tsv`.
+What was found: a blank leaf. Where it was not found: no cipher on canvas 45; the 1653-band canvas walk (4-159) now has no
+unfetched canvas. Requests: gallica.bnf.fr 1.
