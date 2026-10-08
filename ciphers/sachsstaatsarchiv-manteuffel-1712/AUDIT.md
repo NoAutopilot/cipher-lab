@@ -431,3 +431,121 @@ Prior-work checks 3-5:
 Result: no print hit. **Class kept: N4.** D1 stands (not re-examined). status.json and SO-MANT-F410 are unchanged. Requests:
 archive.org 4 (advancedsearch 2, metadata 1, djvu 1, plus one 404 on a guessed filename), be-api.us.archive.org 2,
 www.googleapis.com 3.
+
+## AUDIT 2 (AUD2-MANT8)
+
+Verifier AUD2-MANT8 (account 3, session_014k9UgQiKu87EKCZt1gq2eA, for LANE-VERIFY-2), 8 Oct 2026, 19:58-20:2x UTC by `date -u`.
+Second adversarial audit of item A only: Loc. 694/09 f.8-8v (URL files 0015+0016), the extract of Gersdorff's Hague relation of
+3 Jan 1713 sent with Manteuffel's letter of 13 Jan 1713 (status.json results[194]). Account check: the reader (FAM-MANT15) and the
+first auditor (FAM-MANTV) were account 2. Account 3 had only run a G3 check on 694/08 f.410 (V1-G3D), never on f.8. Item B (0052)
+has no class and was not audited. Nothing decoded.
+
+**Duplicate diff.** status.json results[194] is the only filed entry for 694/09 f.8-8v / Gersdorff 3 Jan 1713. No other ID in
+NOTES.md or status.json has this pointer, date or addressee. Not a duplicate.
+
+**Re-derivation.** `python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712/f0015_09 --check` gave "reading up to date",
+C 47, M 21, U 1, exit 0. This matches FAM-MANTV. The shuffle gate was not re-run, since FAM-MANTV already re-ran it on a new seed.
+
+**Prior-work checks 3-5.**
+- `tools/prior_work.py ... --item-spec 'shelfmark=SHStA Dresden 10026 Loc. 694/09;folio=8-8v;date=1713-01-03;sender=Gersdorff;recipient=Manteuffel' --step-type second-audit --fetch`
+  exited 4 with these holds:
+  - LEAD 1-own: FAM-MANTV's claim (it is the first audit, already written above), this session's own claim, and MANT-08 (its claim is
+    for 694/08 frames). All three were recorded CLEAR.
+  - UNCHECKED-NET 3-solver: aaymeloglu, no clone. Bourdeau caches: CLEAR.
+  - UNCHECKED-NET 4-editions: no prior_editions.tsv row. Checked by hand (below) and recorded CLEAR.
+  - CONTEXT 3-tomokiyo: spanish.htm "ff.7-9", which is the Reyes Católicos cipher and unrelated.
+- `--reading <scratch>/reading_A.txt --network` (G3, the five readable spans) gave two LEADs, both recorded CLEAR after the snippets
+  were read:
+  - 'de la part de Stanislas': ia-global, 57 items. This is a generic phrase and the items are other texts.
+  - 'la Porte vouloit reconnoitre Stanislas': gbooks, 82 volumes, all loose matches. Nordberg's *Leben Carl des Zwölften* (1751)
+    prints other documents of the same 1712-13 Porte crisis ("la Porte ne veut pas admettre l'Envoïé de Sa Majesté à l'audience").
+    The exact form "reconnoître STANISLAS pour Roi" is Lamberty's text on the 1704 election. There is also the Rákóczi
+    correspondence. None of them carries Gersdorff's sentence.
+- **Families FAM-MANTV left unchecked:**
+  1. **Gersdorff's own Hague letters (Heinsius edition).** Huygens retroboeken `heinsius/search_in_text`, source_id=14 (Deel 14,
+     1 Sept 1712 - 30 Apr 1713, RGP GS 226). 'Gersdorff' gave 23 hits. The edition prints Gersdorff's letters to Heinsius of 12 Sept,
+     12 Oct and 14 Nov 1712, and of 2, 15, 16, 19, 23 and 26 Jan, 1 and 5 Feb, 26 Mar and 14 Apr 1713. **No. 531, 2 Jan 1713 (H.A. 1780),
+     pp.344-345**, written one day before the relation, was read in full (OCR pages). It contains New Year wishes and the arrears of the
+     Saxon troops in English pay, and has nothing on the Porte, Stanislas, Goltz or Colyer. The other Jan 1713 letters were seen only as
+     search snippets (Mainz, troops), which is weaker than a full read. 'Gersdorf' across all 19 volumes gave 10 hits, none in Deel 14.
+     'Goltz' in Deel 14 gave 12 hits; the new hit is **no. 453, Colyer to Heinsius, Pera, 12 Dec 1712, pp.294-295**, with a copy of
+     Goltz's letter to Colyer, Adrianople, 20 Nov 1712. Colyer and Sutton cannot follow the court without orders, but "in hope leefden"
+     that Goltz could undeceive the Sultan, and "de saake wel een anderen tour soude connen nemen". This is close in substance to the
+     cipher's "le dit C. ne desesperoit pas d'en empecher les suites", but it is a later letter than the 12 and 18 Nov letters the leaf
+     cites, and it is not the same sentence. 'papieren' in Deel 14: 6 hits, none about Goltz. 'Stanislaus Goltz': 2 hits (pp.214 and
+     655), both already known.
+     Gersdorff's relation itself is **not in the Heinsius edition**, because it was sent to Dresden and not to Heinsius.
+  2. **Lamberty, *Mémoires pour servir à l'histoire du XVIII siècle* VII and VIII** (IA `memoirespourserv07lamb`, `...08lamb`, be-api
+     fts per identifier). 'Colyer', 'Colier' and 'Goltz' gave 0 in both volumes. 'Gersdorf' gave 0 in VII and 1 in VIII: a resolution
+     on a memorial of 18 Feb 1713 about the troops, which is unrelated. As a control, 'Stanislas' and '"Grand Seigneur" Stanislas
+     Pologne' each answered, so the route works. Negative.
+  3. **Droysen IV.2** (IA `droysen-geschichte-der-preussischen-politik-v-4-no-2`). 'Gersdorf' and 'Gersdorff' gave 0. 'Stanislaus
+     Pforte' gave 1 hit, a general narrative of the Porte and Charles XII. Negative.
+  4. **Sbornik RIO / a Saxon-Polish edition.** The IA advancedsearch lists Sbornik volumes but none indexed by subject. Searches:
+     - Google Books 'Sbornik "Gersdorf" 1713 Haye Stanislas': 0.
+     - IA fts '"Gersdorf" "Colyer"': loose noise.
+     - IA fts '"Goltz" "Colyer" 1712 Adrianople' turned up two sources on the same crisis that do not carry Gersdorff's text:
+       - *The despatches of Sir Robert Sutton, ambassador in Constantinople 1710-1714* (Camden 3rd ser., IA `despatchesofsirr0000unse`).
+         In-item fts: 'Gersdorf' 0, 'Goltz papers' 0. 'Stanislaus envoy' 1 hit, which reads "the Polish Embt and Mons? Crispin, King
+         Stanislaus his Envoy equally under confinement". Crispin as Stanislas's envoy is the same fact as the cipher's "l'envoye";
+         be-api gives no page.
+       - Feldman, *Polska a sprawa wschodnia 1709-1714* (KPBC). 'Gersdorf' 0.
+
+     A volume-by-volume read of Sbornik RIO was not done, so the family is **partly searched**. Sbornik prints Russian diplomats'
+     papers, which is not where a Saxon envoy's relation to Dresden would appear.
+  5. **Press of the day.**
+     - Google Books: '"Mercure historique" 1713 Stanislas Porte "Colyer"' 0; '"Mercure historique et politique" janvier 1713 Stanislas
+       Porte envoyé Mufti' 0; '"Europäische Fama" 1713 Stanislaus Pforte Goltz' 0.
+     - IA: advancedsearch finds no dated 1712-13 Mercure items. The Europäische Fama items (`bub_gb_*`) are undated in their metadata,
+       so the issues were not identified.
+
+     **Partly searched** (V1-G3D's finding repeated). Issue-level reads are unchecked.
+  6. **G3, exact phrases.**
+     - IA fts: '"tout son mieux pour empecher les suites"' 0; '"ne desesperoit pas d en empecher les suites"' 0; '"papiers chez"
+       Colyer Goltz' 0; '"ses papiers chez le comte Colyer"' 0; '"Stanislas pour roi" Porte 1713 Colyer' 0.
+     - Google Books: '"empecher les suites de cette resolution"' gave 354 loose hits (law treatises), none relevant; '"Gersdorf"
+       "3 janvier 1713"' gave 71 loose hits (genealogy), none relevant; '"tout son mieux pour empecher les suites"' got HTTP 503
+       twice (one retry after 20 s, then stopped, per the good-citizen rule) and was run on IA instead (0).
+
+**Correction to the safe sentence (over-claim found).** FAM-MANTV's sentence says "papers kept at the Dutch ambassador Colyer's" is
+news "already printed in Colyer's own letters". Colyer's no. 336 says only that Goltz "heeft alle sijne schrifturen **elders** doen
+verbergen" ("had all his papers hidden elsewhere"). The detail that they were kept at Colyer's comes from the cipher alone, at grade C,
+and is not in the print. FAM-MANTV's own step 5 said this correctly ("agree in substance, Gersdorff names the place as Colyer's"), but
+the safe sentence and status.json `line` dropped the distinction. Corrected sentence below.
+
+**Depth (rule 4a, keep or lower).** D1 kept. Nothing new bears on it:
+- 68.1% C, so D3 is out.
+- The cipher clause fails (longest run 8 vs AD 138).
+- The code clause is not met, with FAM-MANTV's flag on the window tool for a leaf where the cipher runs sit inside clear text.
+- The printed agreements, now Colyer 12 Nov, 18 Nov and 12 Dec and Sutton on Crispin, are an external check on the key application,
+  not a depth clause.
+
+There was no reason to lower to D0: three spans read as specific, externally confirmed facts.
+
+**Classification (rule 10).**
+- **A: N2, confirmed.** Prior plaintext: the substance yes, Gersdorff's wording no.
+  - The substance is in Colyer to Heinsius, 12 and 18 Nov 1712 (Heinsius XIV nos. 336 and 367, pp.213-214 and 236), with related news
+    in no. 453 (12 Dec 1712, pp.294-295), and in Sutton's printed despatches (Crispin as Stanislas's envoy).
+  - Gersdorff's own relation was not found in the Heinsius edition (his printed letters of 2-26 Jan 1713 do not carry it), Lamberty
+    VII-VIII, Droysen IV.2, the Sutton despatches, or the phrase searches.
+  - Sbornik RIO and the press were only partly searched. N1 stays possible only if a Saxon-side edition prints Gersdorff's relations,
+    and none was located.
+- Key: published (Krauske 1893 manuscript table, credited). Prior decipherment: none located. Confidence: medium-high.
+- **Safe sentence (corrected):** "Applying Dr. Krauske's 1893 manuscript key table to the unglossed cipher spans of an extract of
+  Gersdorff's Hague relation of 3 January 1713 (SHStA Dresden, Loc. 694/09 f.8-8v) gives French fragments: the Porte recognising
+  Stanislas as king, his envoy received, and the Polish envoy Goltz's papers kept at the Dutch ambassador Colyer's. The first two items
+  are already printed in Colyer's letters to Heinsius of 12 and 18 November 1712 (Briefwisseling van Anthonie Heinsius XIV, nos. 336,
+  367), which say only that the papers were hidden 'elsewhere'."
+- **Unsafe sentence:** "A previously unread report on the Porte and Stanislas has been deciphered", or "all of its news is already in
+  print".
+- No SECOND-OPINIONS-QUEUE row: the item is N2 D1, below the N3 gate. No row exists for 694/09.
+
+**Postmortem.**
+- The first audit's search found the right other-correspondent source. Its safe sentence then generalised "agree in substance" into
+  "already printed" for a detail the print does not carry. That is a small over-claim of *prior* print, and it would understate this
+  reading if repeated.
+- Families now covered: Heinsius XIV for Gersdorff's own letters, Lamberty, Droysen IV.2 and Sutton. Still open: an issue-level read of
+  the Jan-Feb 1713 Mercure historique and Europäische Fama, and a volume index read of Sbornik RIO (both low yield).
+
+**Requests:** resources.huygens.knaw.nl 7, be-api.us.archive.org 18, archive.org 4, www.googleapis.com 15 (three HTTP 503s, one retry
+each), net calls by prior_work.py (ia-global, gbooks). No 403, 429 or challenge.

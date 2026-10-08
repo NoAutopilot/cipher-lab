@@ -6872,18 +6872,19 @@
       "claim_scope": "recovered-passages",
       "plaintext_novelty": "N2",
       "mapping_novelty": "N2",
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
-      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (FAM-MANTV)\" (N2, D1)",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (FAM-MANTV)\" (N2, D1); \"AUDIT 2 (AUD2-MANT8)\" (N2 confirmed, D1 kept, safe sentence corrected)",
       "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/09 f.8-8v (URL files 0015+0016): extract of Gersdorff's Hague relation of 3 Jan 1713, enclosed with Manteuffel's letter of 13 Jan 1713",
       "title": "SHStA Dresden Loc. 694/09 f.8-8v, Gersdorff relation 3 Jan 1713 (encl. to Manteuffel 13 Jan 1713): unglossed cipher spans read with Dr. Krauske's 1893 manuscript key table",
       "grade": "N2 (FAM-MANTV, first audit), key published (Krauske 1893 manuscript table, credited). 69 tokens: H 0, C 47, M 21, U 1. Shuffled-key gate 0/1000 (seeds 15 and 77113); fr18 judge PASS -0.941 vs real_p05 -1.044. The news of three cipher spans is printed in Colyer's letters to Heinsius of 12 and 18 Nov 1712 (Heinsius Briefwisseling XIV nos. 336, 367).",
-      "line": "Fragments read (D1, FAM-MANTV 8 Oct 2026). Applying Dr. Krauske's 1893 manuscript key table to the unglossed cipher spans of an extract of Gersdorff's Hague relation of 3 January 1713 (SHStA Dresden, Loc. 694/09 f.8-8v) gives French fragments -- the Porte recognising Stanislas as king, his envoy received, papers kept at the Dutch ambassador Colyer's -- whose news is already printed in Colyer's own letters to Heinsius of 12 and 18 November 1712 (Briefwisseling van Anthonie Heinsius XIV, nos. 336, 367).",
+      "line": "Fragments read (D1, FAM-MANTV 8 Oct 2026; kept by AUD2-MANT8). Applying Dr. Krauske's 1893 manuscript key table to the unglossed cipher spans of an extract of Gersdorff's Hague relation of 3 January 1713 (SHStA Dresden, Loc. 694/09 f.8-8v) gives French fragments: the Porte recognising Stanislas as king, his envoy received, and the Polish envoy Goltz's papers kept at the Dutch ambassador Colyer's. The first two items are already printed in Colyer's letters to Heinsius of 12 and 18 November 1712 (Briefwisseling van Anthonie Heinsius XIV, nos. 336, 367), which say only that the papers were hidden 'elsewhere'.",
       "completeness": "47/69 at C",
       "unresolved_spans": "21 M, 1 U (159, identified as Goltz at I from Colyer's letter, not keyed)",
       "audit_refs": [
-        "AUDIT.md AUDIT (FAM-MANTV)"
+        "AUDIT.md AUDIT (FAM-MANTV)",
+        "AUDIT.md AUDIT 2 (AUD2-MANT8)"
       ],
       "depth": "D1",
       "depth_pct": 68.1,
