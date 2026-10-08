@@ -6,6 +6,7 @@ VX-CT03, 25 Sept 2026; no period key, gloss or published key exists for it as fa
 Blocks A and C2 are out of scope (not re-read from the image yet) and are not classified here.
 Leaves 4/5/7 (ff.59v-62r): **N3, D1**, key ours -- see "AUDIT 3" (OLD-SIBS-V, 8 Oct 2026) and "AUDIT 4" (second
 adversarial audit, V1-OLD, 8 Oct 2026: N3 and D1 kept) at the end.
+Scan 10 cipher block (f.64r): **N3, D1**, key ours -- see "AUDIT 5" (V-OLD10, 8 Oct 2026).
 
 Verifier VERIFY-OLD (account 2, LANE-A2PUSH), 3 Oct 2026, 00:02-00:10 UTC. This session did not solve the target, did
 not decode and did not re-read the image. Claim under audit (NOTES.md sections 8-9; brief
@@ -510,3 +511,121 @@ errors), and no specialist or archive has been asked. **Key: ours. Text: not kno
   superseded "different letter" phrasing (corrected in NOTES section 22).
 - Next steps unchanged: (o1) scan 10 cipher block; (o2) masked re-cut + two blind passes for D2; ia-global re-run of the six
   phrases in `phrases_L457_V1OLD.txt` that met host errors (`--only ia-global`, about 6 requests) when be-api answers.
+
+## AUDIT 5 (V-OLD10): scan 10 cipher block (ff.63v/64r right page), NOTES sections 23 and 23a
+
+(The brief named this section "AUDIT 4 (V-OLD10)"; that heading is already taken by V1-OLD's second audit of leaves 4/5/7,
+so it is numbered 5 here.) Verifier V-OLD10 (account 2, LANE FAMILY), 8 Oct 2026, 20:06-20:2x UTC by `date -u`. Brief
+`.claude/briefs/runs/2026-10-08-ytbiz-family-1909-jobs.md` "### V-OLD10". Separate from the solvers (OLD-S10, OLD-O4); this
+session changed no key, ciphertext, transcription, grade or reading. B/C1 (N3, D2) and leaves 4/5/7 (N3, D1) are kept as they
+are; this item is classed beside them.
+
+Claim under audit: "the scan 10 block (23 lines, ff.63v/64r right page) read under the folder's fixed B/C1 key: 191 cipher words
+S 73 M 118 after the PREREG_OLD-O4 fold, digit S 26.3%, longest S stretch 7 digits (AD floor 24.2), fixed key rank 1/120 against
+permuted keys (0.384 vs max 0.363), es1600 judge FAIL", plus section 23's content paragraph.
+
+Depth bar copied before computing (`.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`): CLAUDE.md 4a governs; cipher clause = a
+contiguous H/C/S stretch longer than the AD (about 1.5 x unicity), H(K) = design key space plus every liberty (U wildcards, M
+tokens, repairs, u/v and word-break choices); an unfitted external key does not shrink H(K); the zero-liberty reading is not used;
+an external check is a D3/D4 element, not a D2 substitute; code clause n/a (no code values in this design); D2 = one clause plus
+the verifier's own true, specific sentence.
+
+### 5a. Prior work (before the first step)
+
+`tools/prior_work.py ... --item-spec 'shelfmark=NA 3.01.14 inv. 2442;folio=63v-64r;canvas=10;date=1605-12-23;...' --step-type
+audit --fetch` -> **exit 3 DONE**, which is false: the DONE row points at AUDIT.md:506, the done-line fields of AUDIT 4 (V1-OLD,
+leaves 4/5/7), and AUDIT.md:462 says in so many words that scan 10's block "is still unread (step o1) and is outside this audit".
+Recorded CLEAR with that reason (`--record ...:1-own:88232b`); the two LEAD rows were OLD-S10's own check line and this
+verifier's claim (recorded CLEAR). Rows 3-solver (bourdeau, aaymeloglu) and 4-editions (Lonchay-Cuvelier I, Huygens Bescheiden
+Oldenbarnevelt 1-3) CLEAR, carried from V1-OLD the same day; 3-tomokiyo CONTEXT (other letters). Check 2 (leaf and neighbours):
+carried from OLD-S10 (no gloss or clear copy on scans 8-11); the three crops this verifier read (5b) show none either.
+
+### 5b. Re-derivation and spot-check
+
+- `python3 scripts/decode_L10.py --check` -> `committed reading matches a fresh run; {'clear': 13, 'S': 73, 'M': 118}`, exit 0.
+  `--check --norm s10` -> `{'clear': 13, 'M': 141, 'S': 50}` (OLD-S10's registered counts), exit 0. Both claims reproduce.
+- Eye-check, crops `images/crops_L10/L10_L06.jpg`, `L10_L15.jpg`, `L10_L16.jpg` (27 cipher tokens, this verifier knew the key, so a
+  check of sign identity, not a blind read): L06 `p7r 4b28l4, 2n4 h3j4 d8 2n cl8r3g7 3 d8 2n4 m2g8r` ("por abuela una hija de un
+  clerigo i de una muger"), L15 `c8n h4c4s4d7 d7n g4rc34 d8m8dr4n7 c7ll8g34l d8s4` ("[di]cen ha casado don Garcia de Medrano
+  collegial de Sa-"), L16 `l4m4nc4 n4t2r4l d8 s7r34 d8l h4237 d8 s4nt34g7 3` ("-lamanca natural de Soria del h. de Santiago i")
+  agree with the reconciled transcription sign for sign, 26 of 27. The one doubt: L16 `h4237` ("hauio", M): the image shows a
+  sign with a cross-stroke after the 3 and before the 7, so `h4b3t7` "habito" is likely -- a solver-lane correction (it would
+  lengthen nothing past the AD and changes no sense), not made here.
+- Two grading points the solver flagged or that this verifier finds, recorded so the counts are not over-read: (i) `d7r` "dor"
+  (L12) is the end of "inquisi-dor" split over a line, graded S by the lexicon rule though not a word on its own; (ii) the S-share
+  control's margin is thin (0.384 vs 0.363; the runner-up is the 2/3 u/i swap) and the fold raised the permuted keys' mean too
+  (0.201 -> 0.257), as section 23a says. The lexicon-hit-share control (0.684 vs best permutation 0.553, rank 1 of 120) does not
+  involve the passes and is the stronger evidence for the key on this block. Neither changes the key, which is B/C1's.
+
+### 5c. Depth (rule 4a, under the bar; AD arithmetic)
+
+Base as AUDIT 2a: vowel map 5!, H(K0) = 6.91 bits; R = 1.83 bits per digit (AUDIT 2a's C1 row: U 16.1 from H(K) 29.49).
+Liberties for this block: 118 M words at 2.32 bits each (AUDIT 2a's rule) = 273.8 bits; I 0; the OLD-O4 v->r / (->l fold is a
+pre-registered grading normaliser applied to every key alike (5b), counted 0; word-break joins kept as written, counted 0 (a
+lower bound). H(K) >= 6.91 + 273.8 = 280.7 bits; U = 280.7 / 1.83 = 153 digits; **AD >= 230 digits**. Even the folder's
+small-liberty floor (24.2-24.4 digits, B/C1) is far above the longest contiguous S stretch here, **7 digit tokens** ("de santiago
+i del", L16-L17; 6 under OLD-S10's registered s10 grades). **No cipher clause; code clause n/a. Ruling: D1** ("fragments read").
+
+Why D1 is not a negative: as for leaves 4/5/7 (AUDIT 3c), the M grade comes from the blind-pass S rule (21.2% pass split, partly
+line identity) and the passes' notation, not from the decode; 26 of 27 eye-checked tokens agree with the reconciled reading. The
+named way up is a pair of fresh blind passes written in the r/l notation from the start (section 23a's next step for any block),
+then a re-grade; a verifier's eye-check does not regrade tokens.
+
+Verifier's sentence (not required at D1; written from the eye-checked L06/L15/L16 tokens, so a later D2 ruling has it in hand):
+*the writer reports that a woman of the family concerned had as grandmother the daughter of a clérigo and of a woman married to
+a herrero, and that Don García de Medrano -- a collegial of Salamanca, native of Soria, of the habit of Santiago -- is said to
+have married into the same family.*
+
+External plausibility (not a D3 element under the bar, not a check of the reading): *La casa de Salcedo de Aranguren* (1944,
+Google Books `zCMPRLjKES4C`, snippet only) names an "Inquisidor Salcedo" with family "natural de Oluga u Olvega, en Soria" and a
+Medrano in the same genealogy; García de Medrano of the Consejo Real is a known figure (*Historia del Colegio Viejo de San
+Bartolomé*, 1768, `FqNLAAAAcAAJ`, among the phrase hits). This fits the decoded names and the Soria setting; it is not the letter.
+
+- depth: **D1**; depth_pct: **26.3** (S digit tokens 112/426 under OLD-O4; 15.7 under OLD-S10's registered s10 grades);
+  depth_unread: 314 digit tokens M (118 words), ordinary words and names alike; depth_check: "longest S stretch 7 digits vs AD
+  >= 230 digits (5! map + 118 M words x 2.32 bits; small-liberty floor 24.2); lexicon control rank 1/120 (0.684 vs 0.553); S
+  control rank 1/120 (0.384 vs 0.363); es1600 judge FAIL -1.121 vs real_p05 -0.837, shuffled -2.05 to -2.11"; decode_status:
+  "fragments read" (scan 10 block). The letter as a whole keeps B/C1's D2.
+
+### 5d. Novelty (template step 2)
+
+| family | searched (8 Oct 2026, this session unless stated) | result |
+|---|---|---|
+| canonical series / sender and recipient editions | AUDIT 1-4: CODOIN (es1600 tomos), Lonchay-Cuvelier I (djvu grep), Rodríguez Villa 1906, Huygens Bescheiden Oldenbarnevelt 1-3 (full text, positive control in AUDIT 4); sender and recipient have no identified printed correspondence | not found (carried) |
+| phrases in print (G3) | `tools/print_check.py --phrases phrases_L10_VOLD10.txt` (9 decoded phrases, modern spelling) -> `print-check-VOLD10.tsv`, 36 rows, 13 with hits: ia-global 1 (the bare name "el inquisidor Salcedo": inquisition histories), Google Books 9 (scattered-word matches: Calderón comedias, Fray Luis de Granada, Soria/Segovia nobiliarios, a 1605 Valladolid *Relación* naming Medrano), OpenAlex 1 (Logroño tribunal studies), CrossRef 2 then HTTP 429 for the other 7 (not retried) | not found; CrossRef partly blocked |
+| names / substance | Google Books keyed, `country=US`: "inquisidor Salcedo" Medrano Soria (1: the Salcedo genealogy above), "Garcia de Medrano" Salcedo hermana mayorazgo (1: *Iberian Books*, a title list), "inquisidor Salcedo" colegial Oviedo herrero (0), Salcedo inquisidor herrero clerigo abuela Soria (0), "casa de Salcedo de Aranguren" inquisidor (1, same genealogy) | the clérigo/herrero descent story is not found in print; the genealogy shares two names (Salcedo, Medrano) but no date and no part of the story in its snippets -- a lead for a full-view read, not a print of this letter |
+| prior-work check 5 | `tools/prior_work.py ... --reading reading_L10.txt --network`: took its phrases from the file's `#` header again (as in OLD-S10), so its SUBSTANCE row is a tool artefact; recorded CLEAR with the reason and the print_check run above | artefact; real search above |
+| IA full text | ia-global through print_check (9 phrases) | not found |
+| scholarship | OpenAlex 9 (via print_check), CrossRef 2 answered + 7 blocked (429); Semantic Scholar not run this session (AUDIT 3-4 runs on the same letter) | not found |
+| holding archive | NA 3.01.14 EAD and printed inventory (AUDIT 1): "Merendeels in cijferschrift", no decipherment recorded | no decipherment |
+| solver repositories | dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers clones grepped by V1-OLD the same day (AUDIT 4) | nothing on inv. 2442 (carried) |
+| Simancas / PARES | dead host from the cloud | **unreachable** |
+| JSTOR | not queued: AUDIT 2's rows cover the sender/recipient family | not queued (does not block N3) |
+
+Requests this session: be-api.us.archive.org 9, www.googleapis.com 9 + 6, api.openalex.org 9, api.crossref.org 3 (one 429),
+plus prior_work.py --network's own IA/Google Books calls. No archive host; no subagent calls.
+
+**Class: N3** (scan 10 block, f.64r): no prior plaintext or decipherment located after the search logged here and in AUDIT 1-4.
+Not N4 for the same reasons as B/C1 and leaves 4/5/7 (Simancas side unreachable, sender unidentified, no specialist asked; here
+also CrossRef partly blocked and the Salcedo genealogy not read in full). **Key: ours** (the B/C1 vowel-digit key, VX-CT03).
+Text: not known in print.
+
+| item | class | depth | prior plaintext | prior decipherment | key | evidence | confidence |
+|---|---|---|---|---|---|---|---|
+| inv. 2442, scan 10 block (f.64r, 23 lines), 191 cipher words | **N3** | **D1** | none located | none located | ours | cryptanalytic, fixed B/C1 key, lexicon control rank 1/120; blind passes split 21.2%; judge FAIL -1.121 vs -0.837 | moderate on novelty; reading eye-checked on 27 tokens, 26 agree |
+
+- **Safe sentence:** "The cipher passage on folio 64r of the same Senisteros letter (Nationaal Archief 3.01.14 inv. 2442) reads
+  as Spanish under the vowel-digit key we recovered from its other passages; only fragments are graded as read so far. No prior
+  decipherment or print was located after the search logged in AUDIT.md (N3)."
+- **Unsafe sentence:** "We deciphered a hidden scandal in the ancestry of an Inquisitor and the Medrano family." (D1 is
+  "fragments read"; the passage is the same letter, not a further document; "hidden scandal" goes past what the writer says,
+  which is a question of descent he will not act on without V.S.'s opinion; the persons are not identified beyond their names.)
+
+### 5e. Postmortem
+
+No over-claim in sections 23 and 23a: both keep status open, call the reading "a solver's reading, mostly M-graded", leave depth
+to the verifier, and flag the "dor" fragment and the thin S-control margin themselves. Carried here so they are not lost: (1)
+prior_work.py's DONE for this item was a false match on the leaves 4/5/7 audit, and its `--reading` mode takes phrases from the
+reading file's `#` header (twice now on this target) -- a tool issue for the parent, not fixed here; (2) L16 `h4237` is likely
+`h4b3t7` "habito" (solver lane). SO row: `SO-OLDEN-2442-L10` queued with `second-opinions/PROMPT-chatgpt-L10.md` (N3, CLAUDE.md
+verifier rule). D1, so no WORK-QUEUE AUD2 row (brief: AUD2-FAMILY-1 only at N3+ and D2+).

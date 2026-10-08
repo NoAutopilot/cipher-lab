@@ -1597,6 +1597,10 @@ Files: `scripts/decode_L10.py` (S normaliser, `--scontrol`, `--norm s10`), `read
 block under the OLD-O4 grades (AUDIT, N/D under the depth bar), ~$2.5; (o2) masked re-cut + blind passes on L4/L7, ~$9 -- any
 further block's S test uses the OLD-O4 normaliser from the start (or the passes are told to write the cursive r as r).
 
+**Verifier (V-OLD10, 8 Oct 2026):** step (o3') done -- AUDIT.md "AUDIT 5": scan 10 block **N3, D1** (longest S stretch 7 digits vs
+AD >= 230 digits; small-liberty floor 24.2), key ours; re-derivation exact; 26 of 27 eye-checked tokens agree (L16 `h4237` likely
+`h4b3t7` "habito", solver lane); SO row SO-OLDEN-2442-L10 queued.
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
