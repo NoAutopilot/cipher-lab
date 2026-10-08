@@ -1,0 +1,18 @@
+f8_L01	g co 8 g # N4 D 8 cp t g l l P t N7 t co b g K N1 N7 3 cp N1 Y cu D q N1 g l l N5 N1 cp ca cr N1 8 t c cr cp ca cr N1 t N7 N7 cp N5 q l b t N7 8 8 N1 N2 N1
+f8_L02	b g # cm cr co N7 c cp x t co l l c N3 N8 N1 t g co t co O cu b cm cm K t co b N1 b cp ca cr g d t t co D N1 N2 b N2 l l c d co b N1 N1 g t N1
+f8_L03	N5 g b cm g t g co N8 D l N3 f g # P K c N3 t co N3 N8 cp t t Y t co N13 cp ca cr c q g D N1 f t q N1 O b f b O q N1 # f x
+f8_L04	N4 t co O l N3 g N2 g P b N1 K cm co o N1 P g N1 N2 b Y N8 cu N2 3 d D 8
+f8_L05	N5 cp ca cr c q g D N1 g N7 f t N1 cr co q N1 N2 co N1 O g # N1 D 8 cm
+f8_L06	O # cp ca cr q N6 l N3 N5 g cm g # Y d l l g D t co b x co co
+f8_L07	co t K g D N1 O t b q N8 N2 Y 8 cp ca cr g N4 x l g cp ca cr N1 N1 b
+f8_L08	t # b l N5 N8 D g cm b t cm g P K g Y cm N7 D g N1 N1 N1 O g co g l l cu cp ca cr g # d q d D g # cm g N1 q t t
+f8_L09	t # cp ca cr K N1 O g co N8 cr t g D N1 g N7 cm t O q cp ca cr g d Y O d
+f8_L10	d x q N7 D cu cp ca cr g # N4 K d D d t d Y q N8 g D N1 f N1 O
+f8_L11	t co cm cp cm O cr l l N6 co N1 N3 t cp t g q cm b g cm l l
+f8_L12	co l l t co cm P b c N1 cp ca cr N7 D d D d t d cp g D t co b q K
+f8_L13	D g cm f g # Y c cp cm t x cu l l f N1 b K b N6 g b cm g # N3
+f8_L14	t cp d t t N12 cm g D N1 f b O q b cm cr d co N1 K O l l f
+f8_L15	b q N1 N2 N1 cm t 8 cp N1 q cu b N3 g N1 b Y g 8 N7 8 f
+f8_L16	N8 g D N1 g N7 cm N1 O f g N1 K cm Y N3 b l l t co t q q
+# X-labels: none used (no X1/X2).
+# NOTE: pass is rough on lines 4-16 (crops dense; some lines may have lost signs); lines 04-16 token counts probably undercount.

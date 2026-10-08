@@ -75,7 +75,7 @@ Details, numbers and files are in `../sforza-italien1584-1447/duke/NOTES.md`. In
 
 ## Remaining gaps (SFZ-D, 7 Oct 2026)
 Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units)
-- f.15 decode - blocker: not-attempted; needs a Duke key that passes G1 first (SFZ-NEXT, 8 Oct 2026: unit 4 of its brief not started, it would have crossed 80% of the cap; tools/data/it15 now exists for a judge); next: settle the Duke's sign inventory on f.5+f.8 (TRANSCRIPTION.md, sign sorter or glyph_atlas) with a second blind reader, rerun ../sforza-italien1584-1447/duke/g1_duke.py, ~$4
+- f.15 decode - blocker: not-attempted; needs a Duke key that passes G1 first; SFZ-DUKE (8 Oct 2026) fixed one label convention (../sforza-italien1584-1447/duke/duke_labels.md), ran a second blind Sonnet reader on f.5+f.8 (unusable: skipped about half the signs, err_2reader about 0.3 on full lines; the instrument is retired for this hand) and the dateline-anchored learner on reader A (G1 0.422, FAIL); next: owner sign-sorter packet for f.5+f.8 (tools/sign_sorter.py, dateline run as the check), ~$2, then the owner's sort, then g1_duke.py / g1_duke_anchored.py unchanged
 - f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
 
 ## Escalation (SFZ-D, 7 Oct 2026)
@@ -84,9 +84,9 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [ ] known-keys: Cerioni 1970 / ASMi Visconti cipher registers not checked
 - [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
 - [x] key-rebuild: attempted, G1 FAIL
-- [ ] image-check: alphabet settling + second reader on the Duke's glossed slips
-- [ ] retry: G1, then S3 on f.15
-Verdict: keep going: 2 internal gaps; cheapest next: settle the Duke's sign inventory and a second reader on f.5+f.8, ~$4
+- [ ] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); alphabet settling by the owner's sign sorter, packet not built yet
+- [ ] retry: G1 after the sort (anchored learner on reader A FAIL 0.422, 8 Oct), then S3 on f.15
+Verdict: keep going: 2 internal gaps; cheapest next: build the sign-sorter packet for f.5+f.8, ~$2
 
 ## Requests (SFZ-D, 7 Oct 2026)
 

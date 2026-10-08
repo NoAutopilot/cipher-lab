@@ -1,0 +1,4 @@
+held_out	n_signs	n_null	train_signs	unseen	real	shuffle_mean	shuffle_p95	above_p95
+f8	865	283	37	0	0.359	0.375	0.404	False
+f5	896	324	35	7	0.484	0.376	0.416	True
+# learner: dateline-anchored segment EM (pusterla/g1p.learn), reader A; mean held-out accuracy 0.422; gate >= 0.60 and every unit > shuffle p95: FAIL

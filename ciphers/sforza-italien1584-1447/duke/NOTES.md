@@ -91,3 +91,39 @@ Read so far: 0 of the Duke's unglossed letters read; key gate G1 FAIL at 0.441 m
 - [ ] image-check: alphabet settling and a second reader, above
 - [ ] retry: G1 rerun only after the image-check step
 Verdict: keep going: 2 internal gaps; cheapest next: settle the Duke's sign inventory on f.5+f.8 and a second blind reader, ~$4
+
+## SFZ-DUKE (account 4, 8 Oct 2026, 03:37-03:4x UTC by date -u): label convention, second reader, anchored learner -- G1 still FAIL
+
+Brief `.claude/briefs/runs/2026-10-08-acct3-acct4-small.md` (SFZ-NEXT unit 4). Pre-registration `PREREG-SFZ-DUKE.md`, written
+before any second-reader output or statistic.
+
+1. **One label convention**: `duke_labels.md` (split, never join; the g/8/d/b/P/N1/π clash pairs decided once; `=` as its own
+   token). Every Duke reader uses it; SFZ-D's committed reads (reader A) already follow it, nothing relabelled.
+2. **Second blind reader (B), one Sonnet call per slip**, sheet only, no access to A/keys/copies. f.8 from the committed crops;
+   f.5 from the `--deskew` re-cut of the committed source (`python3 tools/iiif_lines.py --image
+   duke/images/src_ark_12148_btv1b100373864_f9_4000_2280_3420_1300.jpg --out <scratch> --prefix f5 --overlap 0 --max-width 1750
+   --deskew --debug`, no network). Raw outputs kept in `passB_sfzduke/` as the record, **not usable**: both readers
+   self-reported low confidence and skipped about half the signs on most lines (f.8: 12 of 16 lines at 23-30 tokens for
+   48-59 signs in A; f.5: 4 of 14 bands short). On the lines B read at full length, A-B edit distance / A length is
+   0.25-0.27 (f.8 L01-L03), 0.90 (f.8 L08), 0.24-0.37 (f.5, 9 lines): err_2reader about 0.3 even at best, three times the
+   tenth that sends a symbol cipher to a person (CLAUDE.md Usage 6). This is the second blind Sonnet reader on this hand to
+   skip half the signs (SFZ-D's, 7 Oct, same symptom): **the whole-line Sonnet read is retired for this hand** (rule 3
+   third-attempt clause: three calls, same failure), logged untested-by-this-instrument, not a fact about the cipher.
+   So the reconciled AB transcription and the primary pre-registered test **could not be built**; `tools/lookalike_pass.py`
+   was not run (it re-reads splits between two usable passes; there is one).
+3. **Anchored learner (pre-registered secondary, reader A)**: pusterla/g1p.py's che anchor has no Duke counterpart -- no sign
+   sits within 0.02 relative position of the copies' "che" clearly above chance (best f.8: `ce` 6/7, `f` 18/24 vs base 0.53;
+   f.5: `ca` 10/16 vs base 0.36). Anchors used instead: slip start <-> copy start, and the start of the shared final run
+   (`b 3 d t ...`, f.8 L15 / f.5 L14) <-> the copy's "Data Abiate". `g1_duke_anchored.py` -> `gate_g1_anchored.tsv`:
+   f8 0.359 (shuffle mean 0.375, p95 0.404, **below**), f5 0.484 (0.376 / 0.416, above); mean **0.422 vs 0.60: FAIL**
+   (stock learner, run 2: 0.441). A third learner on the same single-reader transcription moves nothing: the limit is the
+   reading, not the learner.
+4. Observation for the next reader (not a key claim): the shared final run is the dateline. Reader A's two copies of it agree
+   sign for sign except that f.8 carries five extra signs (`N1 cm co b co`, f.8 L16 pos 0-4) where its copy reads
+   "undecimo" against f.5's "decimo" -- the run is about 100 signs for about 59 letters, so the dateline is either heavily
+   nulled or not letter-for-letter. It is the best internal check of any future reader of this hand (two independent
+   encipherments of the same text).
+
+Next (not started, per Usage 6 and rule 7): an owner sign-sorter packet for f.5+f.8 (`tools/sign_sorter.py`, piles of the
+Duke's shapes, the dateline run's 2 x 100 signs as the check box), ~$2 to build, then the owner's sort; after it, G1 with
+`g1_duke.py` and `g1_duke_anchored.py` unchanged. Requests: none (no network). Subagents: 2 Sonnet calls.
