@@ -55,3 +55,19 @@ C. Readers: no subagents; read the strip crops yourself. If none of the three ke
  sender's and recipient's printed papers, OR/ORN by date +/- 3 days, IA/Google Books (country=US + key) quoted phrases, OpenAlex/S2/CORE
  with keys, JSTOR-QUEUE rows in both families (never block). status.json rows for N3+ only with audit_status "one audit"; SO row per
  N3+ entry; `tools/depth_check.py` passes; file_shrink_guard before the final push. Do not decode other entries.
+
+---
+
+# Wave 2 (written 8 Oct 2026 04:1x UTC): first verifiers
+Readers done: LS-R5 E55-E64 (5.48), LS-R2c E30-E36 (3.10; E30 E31 E32 E34 E35 located by the reader in OR I/43 pt 1), LS-R6
+N2-BG..N2-BM, E65, O9-AH..O9-AJ (3.85; step 2: "No. 1 reads 1865 rows", median 0.276 vs control 0.353). The readers were Sonnet and
+fast (13-20 min per batch), so each verifier also: image-checks THREE entries' strip crops word for word (not two), the longest entry
+among them, and re-reads from the image every token graded I or M and every word where the reader's NOTES say image and volunteer text
+disagree. For the 1865-row verdict: LS-V6 re-runs LS-R6's step-2 script and says whether the 0.077 gap is within the spread of the
+control (one line, no reading).
+ - LS-V5 (Opus 5.5, cap $6.5, box 90 min): LS-R5's E55-E64. LS-R5 says the Aug 1864 OR volume was not in its cached set (E55 E63 E64
+   unsearched there, E60 Basler unsearched): search those first.
+ - LS-V6 (Opus 5.5, cap $7, box 95 min): LS-R6's N2-BG..BM, E65, O9-AH..AJ (decode_no2.py / decode_no9.py --check too). N2-BH is
+   located by the reader in OR I/43 pt 2 p.468: confirm by script, N1.
+ - LS-V2c (Opus 5.5, cap $4, box 60 min): LS-R2c's E30-E36: confirm the five OR I/43 pt 1 locations by script (N1 if word for word),
+   full search on E33 and E36.
