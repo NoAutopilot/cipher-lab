@@ -1,0 +1,8 @@
+power_0085_r9r10	letters 40	real -1.471	shuffle mean -2.016 p99 -1.596 max -1.461	shuffles>=real 1/1000	PASS	noousauqoneplusgagnesueprduacechangemenu
+pooled_0390_0391_0395_0485	letters 83	real -1.483	shuffle mean -2.013 p99 -1.649 max -1.569	shuffles>=real 0/1000	PASS	kiiklatrevefrxbendoxfordbullpnbrougdetacheroitducferdinandpindeeosscotlacourlbreton
+frame_0390	letters 18	real -1.872	shuffle mean -2.002 p99 -1.361 max -1.188	shuffles>=real 307/1000	reported (not gated)	kiiklatrevefrxbend
+frame_0391	letters 28	real -1.298	shuffle mean -2.019 p99 -1.487 max -1.312	shuffles>=real 0/1000	PASS	oxfordbullpnbrougdetacheroit
+frame_0395	letters 17	real -1.084	shuffle mean -2.015 p99 -1.300 max -1.088	shuffles>=real 0/1000	reported (not gated)	ducferdinandpinde
+frame_0485	letters 20	real -1.411	shuffle mean -2.009 p99 -1.362 max -1.225	shuffles>=real 16/1000	FAIL	eosscotlacourlbreton
+variant_runs_only_no_singletons	letters 79	real -1.440	shuffle mean -2.015 p99 -1.640 max -1.581	shuffles>=real 0/1000	reported (not gated)	latrevefrxbendoxfordbullpnbrougdetacheroitducferdinandpindeeosscotlacourlbreton
+known_answer_0391_r5	real 'detacheroit' edit distance to 'bongremalgre' 12	shuffled keys: min 7 p01 9 median 12	agreement 0/12

@@ -1,0 +1,25 @@
+line	codes	note
+694-08_0390_r1	45	single, '45. me repondit'
+694-08_0390_r2	46	single, 'que 46 etant encore fort bien avec 257'
+694-08_0390_r3	257	single
+694-08_0390_r4	46	single, 'et que 46 ne le pardonneroit de sa vie a 160'
+694-08_0390_r5	160	single
+694-08_0390_r6	45	single, '2. 45 ajouta'
+694-08_0390_r7	110.28.60.35.5.10	interlinear after 'touchant' (struck?): 'qu'il avoit parle [touchant] RUN non seulement a 257'; tok3 60/66 B, tok4 35/33 B, tok5 5/3/8
+694-08_0390_r8	257	single
+694-08_0390_r9	1.26.4.55.35.21.120	'mais aussi a RUN; qu'il doutoit'; tok4 A 55, B 11, zoom ff=55
+694-08_0391_r1	33.4.1.16.60.120	'bien differente. RUN a dit en gros que'; tok2-3 A 41, B 4.1, zoom 4.1
+694-08_0391_r2	217	single, 'que 217 etoit trop loin de s'en meler'
+694-08_0391_r3	266	single, 'aux sentiments de 266'; both passes 268, zoom 26[6|8], 268 not in key
+694-08_0391_r4	55.6.12.44.34.21.40.60.16.67.7	'mais la declaration de RUN a ete bien plus violente'; A 61.24.4.39, B 6.12.44.39; worker sheet 34 at tok5
+694-08_0391_r5	100.35.28.66.72.10.60.33.9.59	'plus facilement, on RUN (bon gre malgre) 227 de se[s] allies'; tok1 100 alt 160; 'y'-glyph = 9 (as 0015); interlinear 'bon gre malgre' inserted with a caret before 227
+694-08_0391_r6	227	single
+694-08_0395_r1	107.120.6.15	'on est a traiter avec RUN'; tok1 107 alt 103; tok3 6 alt 8
+694-08_0395_r2	1.35.60.100.9.21.66.21.120	'RUN, afin qu'il cede ses droits a cette cour'; tok5 y-glyph=9 (A 7, B 4)
+694-08_0395_r3	17.9.21.120.10	'qu'on luy a offert le gouvernement de RUN et d'autres'; tok1 17 (A alt 13), tok2 y-glyph
+694-08_0485_r1	35.16.51	'le meme m'a dit que RUN n'avoit pas encore ecrit'; tok1 35 alt 55
+694-08_0485_r2	187	single, 'qu'il a mande qu'il a vu une fois 187'
+694-08_0485_r3	51.15.33.28	'que les ordres de RUN [ne] sont [encore] assez precis'; missed by both passes (crop edge), worker zoom
+694-08_0485_r4	110.15.16.6.26.12	'que le point de RUN iroit toujours bien'; tok5 A/B 26 (kept), worker zoom alt 46
+694-08_0485_r5	202	single, 'faire valoir aupres de 202'; missed by both passes, worker zoom
+694-08_0485_r6	55.60.35.28.33.21	'je n'ai eu garde de manquer de lire a RUN le passage'; across a line break

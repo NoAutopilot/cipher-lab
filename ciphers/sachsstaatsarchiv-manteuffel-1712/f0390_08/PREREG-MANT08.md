@@ -1,4 +1,4 @@
-# PREREG-MANT08 (MANT-08, 8 Oct 2026, written ~20:25 UTC by date -u, before any blind pass was read or any score computed)
+# PREREG-MANT08 (MANT-08, 8 Oct 2026, written 20:13 UTC by date -u (pushed 738ab3939 at 20:14), before any blind pass was read or any score computed)
 
 Target: Loc. 694/08 URL files 0390 (f.311v-312, letter of 10 Oct 1712), 0391 (f.312v-313, its P.S. "Berl. ce 13 Oct. 1712"),
 0395 (f.316v, Oct 1712; 0396 left = same page), 0485 (f.384v-385, Nov 1712; 0486 left = same page; 0487 is footed "a la lettre de
