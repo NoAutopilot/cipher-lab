@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """E62-ALN (8 Oct 2026): list the residue entries (pages of print/residue/pages_manifest.tsv) that carry >= 1 M token and share
->= --min distinct 6-grams of words with one OR 1862 volume (LS3-R62's re-grep, re-run because its output was scratch).
+>= --min distinct 6-grams (of the ledger words or of the decoded reading) with one OR 1862 volume (LS3-R62's re-grep, re-run because its output was scratch).
 
 Usage: residue_select.py PAGES_DIR OR_DIR [--min 3] > residue_print/selected.tsv
   PAGES_DIR: <pointer>.json per page (as for residue_decode.py); OR_DIR: <ia_identifier>.txt (IA _djvu.txt, not committed).
@@ -11,8 +11,8 @@ import json, re, glob, os, sys, collections, argparse, importlib.util
 from pathlib import Path
 HERE = Path(__file__).resolve().parent
 spec = importlib.util.spec_from_file_location("decode", HERE.parent / "decode.py"); dec = importlib.util.module_from_spec(spec); spec.loader.exec_module(dec)
-ap = argparse.ArgumentParser(); ap.add_argument('pages'); ap.add_argument('ordir'); ap.add_argument('--min', type=int, default=3)
-a = ap.parse_args(); N = 6
+ap = argparse.ArgumentParser(); ap.add_argument('pages'); ap.add_argument('ordir'); ap.add_argument('--min', type=int, default=3); ap.add_argument('--n', type=int, default=6)
+a = ap.parse_args(); N = a.n
 def words(t):
     t = re.sub(r'<deletion>.*?</deletion>|<del>.*?</del>', ' ', t, flags=re.S)
     return [w.lower() for w in re.findall(r"[A-Za-z]+", re.sub(r'<[^>]+>', ' ', t).replace('&', ' and '))]
@@ -36,11 +36,13 @@ for p in sorted(manifest - matched):
         day = dec.parse_day(re.sub(r"\bApl\b", "Apr", e.strip().splitlines()[0])) or last; last = day or last
         r, c = dec.decode_entry(dec.entry_text(e.strip().splitlines()), key, day)
         if not c.get('M'): continue
-        w = words(e); hit = collections.defaultdict(set)
-        for i in range(len(w) - N + 1):
-            g = ' '.join(w[i:i + N]); c2 = idx.get(g)
-            if not c2 or sum(c2.values()) > 8: continue
-            for v in c2: hit[v].add(g)
+        hit = collections.defaultdict(set)
+        # raw ledger words, and the decoded reading (meanings in place of code words: the print has 'Ohio battery', the ledger 'Koran battery')
+        for w in (words(e), words(re.sub(r'\{[^}]*\}', ' ', r))):
+            for i in range(len(w) - N + 1):
+                g = ' '.join(w[i:i + N]); c2 = idx.get(g)
+                if not c2 or sum(c2.values()) > 8: continue
+                for v in c2: hit[v].add(g)
         if not hit: continue
         v, gs = max(hit.items(), key=lambda x: len(x[1]))
         if len(gs) >= a.min: print(f"{p}\t{k}\t{day}\t{c['M']}\t{c['C']}\t{c['I']}\t{v}\t{len(gs)}")
