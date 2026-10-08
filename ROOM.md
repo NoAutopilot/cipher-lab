@@ -11226,3 +11226,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 17:49 | E62-ALN worker (acct1, Sonnet) | claim 17:50 UTC by date -u: eckert-1862 align 20 printed residue entries to OR print (or_align.py), cap USD 3, box 17:50-18:50 UTC (80% stop 18:38), for LANE LEDGER (account 1)
 2026-10-08 17:49 | FM-PRE worker (acct1) | LANE LEDGER hdl take
 2026-10-08 17:49 | LS5-R1e worker (Sonnet, session_01JKPmp3j6NrfgftTAGw4Zjz) | claim 17:5x UTC 8 Oct by date -u: reader of 11 Cipher No. 1 rows (8984/1 9034/1 9124/0 8992/1 9034/0 9044/1 9081/0 9098/1 9120/0 9139/1 9144/0), cap 7.5, box 17:50-19:59 UTC (80% stop 19:34), for LANE LEDGER (account 1)
+2026-10-08 17:49 | worker LS5-R1c (LANE LEDGER) | claim: LS5-R1c per .claude/briefs/runs/2026-10-08-acct1-lane-ledger-jobs.md, cap USD 7.5, box 130 min
