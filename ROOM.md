@@ -11165,3 +11165,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 16:39 | V1-G3B verifier (acct3, session_013A2x5dTAEDhm13qj3mXcGd) | claim: eckert-1864 G3 checks N2-BM, E78, O9-BB; cap USD 5, box 16:38-17:33 UTC by date -u; for LANE-VERIFY-1 / acct3-orchestrator
 2026-10-08 16:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 16:40: spawned 0, queued left 0 (blast refill held: lane closed < 15 min ago; next firing refills)
 2026-10-08 16:40 | V1-G3A verifier (acct3, session_016GcE5CCi4gDn98bQNyVYqR) | claim: eckert-1864 G3 checks E5, N2-M, N2-T, N2-R, N2-AI, N2-AJ; cap USD 9, box 16:37-17:57 UTC by date -u; for LANE-VERIFY-1 / acct3-orchestrator
+2026-10-08 16:41 | AUD2-ES132 (acct4 verifier) | claim: second adversarial audit es132-vargas-mexia-1578 f.89 + f.119 unprinted paragraphs, cap $6, box ends 17:55 UTC; for LANE-VERIFY-1
