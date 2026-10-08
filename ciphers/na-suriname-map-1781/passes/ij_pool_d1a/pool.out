@@ -1,0 +1,11 @@
+0746 before: pairs 27, signs 852, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 758, A 0.920; C1 mean 0.516 p99 0.556 max 0.575 -> SAME SYSTEM (DP)
+0746 after : pairs 27, signs 851, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 760, A 0.920; C1 mean 0.515 p99 0.554 max 0.575 -> SAME SYSTEM (DP); aliased tokens 9
+  0746 A3 -> [ij] (image IJ): n_al 6, agree 6, share 1.000; C1 share mean 0.431 p99 1.000; scan A 0.920 -> 0.920 -> FAIL
+  0746 A4 -> [sh-lig] (image SH): n_al 2, agree 2, share 1.000; C1 share mean 0.038 p99 0.500; scan A 0.920 -> 0.920 -> non-test (n_al < 5)
+0758 before: pairs 11, signs 318, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 284, A 0.947; C1 mean 0.524 p99 0.590 max 0.605 -> SAME SYSTEM (DP)
+0758 after : pairs 11, signs 312, T _069+_070+_073+[sh-lig] (47 codes); keyed aligned 295, A 0.942; C1 mean 0.512 p99 0.574 max 0.597 -> SAME SYSTEM (DP); aliased tokens 10
+  0758 A2 -> [sh-lig] (image SH): n_al 6, agree 5, share 0.833; C1 share mean 0.138 p99 0.667; scan A 0.947 -> 0.942 -> PASS
+  0758 A3 -> [ij] (image ONE): n_al 4, agree 4, share 1.000; C1 share mean 0.409 p99 1.000; scan A 0.947 -> 0.942 -> non-test (n_al < 5)
+# POOLED C1 (control first): draws 1000; n_al per draw median 8 min 4 max 10; class share mean 0.419 p95 0.667 p99 0.800 max 1.000
+# POOLED real: 0746 (6, 6) + 0758 (4, 4) (n_al, agree) -> n_al 10, agree 10, share 1.000 vs C1 p99 0.800; scan checks True/True -> PASS
+# exact tail: share of C1 draws with share >= real: 1/1000
