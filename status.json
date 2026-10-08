@@ -4813,9 +4813,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V1)'"
+        "AUDIT.md '## AUDIT (LS-V1)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D4",
       "depth_pct": 100.0,
@@ -4831,7 +4832,7 @@
       "title": "Eckert 1864: Meigs to Biggs, 19 Apr 1864, steamers chartered for Fort Monroe (E21)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
-      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E21 queued",
+      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E21 queued; second audit AUD2-LS-A 8 Oct 2026 held N3 (1864 press, Olcott's and Fox's printed accounts, OR I/33 read through)",
       "phrases": [
         "Huntington mssEC 19 pp.42-43, pointer 8934-8935"
       ],
@@ -4854,9 +4855,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V1)'"
+        "AUDIT.md '## AUDIT (LS-V1)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -4872,7 +4874,7 @@
       "title": "Eckert 1864: G. V. Fox to Olcott, 2 May 1864, investigate the New York Navy Yard only, not prosecute (E23)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
-      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E23 queued",
+      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E23 queued; second audit AUD2-LS-A 8 Oct 2026 held N3 (1864 press, Olcott's and Fox's printed accounts, OR I/33 read through)",
       "phrases": [
         "Huntington mssEC 19 p.63, pointer 8955"
       ],
@@ -4895,9 +4897,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V1)'"
+        "AUDIT.md '## AUDIT (LS-V1)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D4",
       "depth_pct": 100.0,
@@ -4911,9 +4914,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: Stanton to Dix, 21 Aug 1864, arms for Indiana Copperheads at 42 Walker Street (E26)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (ser. I, II, III and the Navy series by date and correspondent), the senders' and recipients' printed papers, the Huntington collection's full text, Internet Archive full text, Google Books, OpenAlex, CrossRef or CORE (searched 7-8 Oct 2026).",
-      "gap": "NARA RG 107/92/45/59 copies, the senders' and recipients' manuscript papers, the 1864 New York press and HathiTrust full text unread, JSTOR rows pending, so not N4; SO-ECKERT-E26 queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 1 book: Stanton's order to Dix to search No. 42 Walker Street; the seizure it led to, and the facts the order gives, were reported in the New York press on 24 August 1864.",
+      "gap": "N2 (AUD2-LS-A, 8 Oct 2026): substance in the 1864 press (NY Herald 24 Aug 1864 p.4 and others), Stanton's wording not located in print; not counted; SO-ECKERT-E26 withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.159, pointer 9053"
       ],
@@ -4922,14 +4925,14 @@
         "Huntington mssEC 19 p.159, pointer 9053, E26 (Stanton to Dix, 21 Aug 1864)"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "24/24 code words H",
       "unresolved_spans": "none",
       "reading_version": "LS-R1 7 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V1)' section 4",
       "depth_sentence": "Stanton orders Dix to search No. 42 Walker Street, New York, for revolvers and ammunition imported for Copperheads in Indiana, some of which was seized at Indianapolis the night before.",
-      "depth_check": "period key book (mssEC 41) for every value; image crop checked word for word by LS-V1; fresh rule-7 re-derivation; OR I/39 pt 2 p.295 (Carrington, Indianapolis, 24 Aug 1864: revolvers seized, arms en route 'variously disguised') agrees with decoded content",
+      "depth_check": "period key book (mssEC 41) for every value; image crop checked word for word by LS-V1; fresh rule-7 re-derivation; OR I/39 pt 2 p.295 (Carrington, Indianapolis, 24 Aug 1864: revolvers seized, arms en route 'variously disguised') agrees with decoded content; NY Herald 24 Aug 1864 p.4 (32 cases of Savage revolvers seized at No. 42 Walker St, bought for the Sons of Liberty in Indiana, marked 'Stationary', similar arms seized at Indianapolis) agrees (AUD2-LS-A)",
       "depth_note": "code words H 24"
     },
     {

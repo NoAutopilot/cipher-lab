@@ -1884,3 +1884,61 @@ redirects to HathiTrust), quod.lib.umich.edu 1 (403), babel.hathitrust.org 1 (40
 - E29 should not be read as an unlocated text in any outward line: its description is in print (section 4).
 - status.json: one result row per N3 entry (E21, E23, E26, E27, E28); SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E21, -E23, -E26, -E27,
   -E28 with prompts in second-opinions/.
+
+## AUDIT 2 (second adversarial, AUD2-LS-A)
+
+Verifier AUD2-LS-A (account 4, session_01LV7WeHWhnyLBant2EkbE1k, for the account-3 orchestrator), 8 Oct 2026, 00:39-00:5x UTC by
+`date -u`. Scope: **E21, E23, E26** only (the three of LS-V1's five N3 entries in brief runs/2026-10-08-acct3-aud2-ls.md part A). A
+separate session from the solver (LS-R1) and the first auditor (LS-V1); tried to find each text in print, not to confirm LS-V1.
+
+### 1. Re-derivation and image check
+- `python3 ciphers/eckert-1864/decode.py --check`: "reading.md is current", exit 0.
+- 2400 px IIIF images of pointers 8934, 8935, 8955, 9053 (scratch, not committed), entry regions cropped with PIL and read by eye:
+  E21 (p.42 bottom "Geo D. Sheldon Ft Monroe, Washington Apl 19th 1864" through p.43 "Egg Belcher"), E23 (p.63 "Horner, Wash. May 2
+  1864 9 PM", "Rosalie for paradise H. S. Ol- cott Frog ... Sig G. Fox Asst buxton") and E26 (p.159, at quarter scale; LS-V1 had
+  already checked it word for word) agree with ciphertext.txt. E23's seven code words (Rosalie, paradise, Frog x2, Burton, wick,
+  buxton) are those the reading grades H.
+- E21 "Will chart her Warrior": "Warrior" is a vessel name, not an unread code word -- the sibling Cipher No. 9 telegram in
+  reading-no9.md has Meigs telling Van Vliet to "Charter the Warrior and the double decked propellers". Counts unchanged.
+
+### 2. Families LS-V1 did not cover, searched here (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| 1864 press (LS-V1: "New York newspapers Aug-Nov 1864 unread") | IA full text (be-api) `"No. 42 Walker"`, `"42 Walker street"`; loc.gov Chronicling America `"42 Walker" revolvers` 1864 (6 pages); NY Herald 24 Aug 1864 p.4 OCR (loc.gov ALTO full text); Philadelphia *Press* 24 Aug 1864 and *New-York Weekly Tribune* 3 Sep 1864 djvu text (IA `per_the-press_the-press_1864-08-24_1`, `newyorkweekly18640903gree`) | **E26: substance in print.** NY Herald 24 Aug 1864 p.4: "Thirty-two cases, each containing from four to six dozen revolvers, of the Savage Arms Company patent, stored at No. 42 Walker street, were seized on Monday by Marshal Murray. It is stated that these revolvers were part of a lot purchased in this city for the Sons of Liberty in Indiana. The cases were marked 'Stationary.' A quantity of similar arms had been sent from the same store to Indianapolis, where they were also seized." The *Press* and the Weekly Tribune ("were stored at No. 42 Walker-street, where the seizure took place, awaiting shipment") print the same report; Chronicling America also lists the NY Daily Tribune 24 Aug, Davenport Democrat 24 Aug, Ottumwa Courier 25 Aug and Burlington Hawk-Eye 27 Aug 1864 pages (not opened). None prints Stanton's order or says it came from the War Department. E21, E23: nothing |
+| Olcott's own account and the Navy Department's (E23) | Olcott, "The War's Carnival of Fraud", *Annals of the War* (1879; IA `annalsofwar00philrich`, whole essay): quotes Fox's letter of 18 Feb 1864 to "Colonel H. S. Olcott, Special Commissioner, Navy Department" and Stanton's of 21 May 1864, not the 2 May telegram; Fox's letter to Welles communicated to the Senate, March 1865 (*Rebellion Record* vol. 9, IA `rebellionrecord09moor`, Doc. on Olcott): narrative only; Google Books snippets of House Misc. Docs 1876 (Navy Department investigation, Olcott/Veeder papers) and *American Secretaries of the Navy* (1980) | no hit for "investigate only", "not to prosecute", "Solicitor Whiting", "Do not proceed against". The 1876 House Misc. Doc. was seen only in snippet (Olcott's reports of 1864-65 printed there), not read through: unread |
+| OR ser. I vol. 33 read through (E21) | IA `warofrebellion33unit` djvu, every occurrence of Van Vliet, Biggs, Highland Light, Getty, Metamora, Leary, double-decked | context only: p.915 Wise's Philadelphia list of 19 Apr (Matilda, Highland Light, Champion among 17 side-wheel boats) and Meigs to Wise of 16 Apr; no George Leary, Helen Getty, Metamora, Richland, no double-decked barges, no Meigs-to-Biggs of 19 Apr. Annual Report of the Secretary of War / QMG 1865 (Google Books snippets) list Helen Getty and Highland Light among chartered vessels: vessel data, not the telegram |
+| Secondary studies (Sons of Liberty, Navy Yard frauds, Meigs) | Google Books (key, country=US): `"Walker street" revolvers Indianapolis 1864` (hits: Stidger *Treason History* 1903, Klement *Dark Lanterns* 1989, *Democratic Opposition to the Lincoln Administration in Indiana* (1973) -- snippets about the Indianapolis seizure, no Walker St order), `"Indianapolis" "marked stationery" 1864` (Ayer, *The Great Treason Plot in the North*, 1895: Indianapolis testimony), Towne/Surveillance, Olcott Fox Navy Yard, Meigs Biggs Van Vliet April 1864, "Helen Getty" steamer 1864, Metamora "Highland Light" 1864 | no printed text of E21, E23 or E26 |
+| Semantic Scholar (LS-V1: 429) | key, 3 queries (Olcott Navy Yard 1864; Sons of Liberty arms New York 1864 Walker Street; Meigs transports Fort Monroe April 1864) | 2 answered 200, nothing relevant; third 429, not retried |
+| IA full text, all items, fresh quoted phrases | "Van Vliet has chartered", "double-decked steam barges", "three ferry boats and three tugs", "Helen Getty" Metamora Champion, "not to prosecute" Olcott, Olcott "Solicitor Whiting" (hits only Welles diary, read by LS-V1), "Olcott were temporarily obtained" | no text of E21, E23, E26 |
+| JSTOR-QUEUE.tsv | rows 327-332 (LS-V1) cover E21, E23, E26 in families (i) and (ii) | pending, never blocks; no row added |
+| Unreachable / unread | NARA RG 107 (M473), RG 92, RG 45; Stanton, Dix, Fox, Meigs manuscript papers; House Misc. Doc. 1876 read through; chroniclingamerica.loc.gov OCR host (403; the loc.gov ALTO route worked); HathiTrust full text; the Supplement to the OR | unread |
+Requests: be-api.us.archive.org 12, archive.org 9, www.googleapis.com 16, api.semanticscholar.org 3, www.loc.gov 2, tile.loc.gov 1,
+chroniclingamerica.loc.gov 2 (403), hdl.huntington.org 4 (IIIF images).
+
+### 3. Classification (key `period` for all three)
+| ID | LS-V1 | AUDIT 2 | depth | why |
+|---|---|---|---|---|
+| E21 Meigs to Biggs, 19 Apr 1864 | N3 | **N3 (kept)** | D4 kept, 100 (37/37 H) | no printed text; OR I/33 p.915 prints Wise's Philadelphia list, which the telegram summarises in part (Matilda, Highland Light, Champion), but not the telegram, Van Vliet's New York charters (George Leary, Helen Getty, Metamora, Richland, Warrior) or the double-decked cattle barges. Image re-checked here |
+| E23 Fox to Olcott, 2 May 1864 | N3 | **N3 (kept)** | D3 kept, 100 (7/7 H) | Olcott's own 1879 account and Fox's 1865 Senate letter, the two places it would most likely be quoted, do not quote it. Image re-checked here. Not raised to D4: no external check of a decoded value |
+| E26 Stanton to Dix, 21 Aug 1864 | N3 | **N2 (lowered)** | D4 kept, 100 (24/24 H) | the order's whole substance is in the 1864 press: arms bought for the Sons of Liberty in Indiana stored at No. 42 Walker Street awaiting shipment, the cases marked "Stationary", a portion sent from the same store and seized at Indianapolis, the 22 Aug seizure by Marshal Murray (NY Herald 24 Aug 1864 p.4 and others). Stanton's wording is not printed, so this is the E29 kind of N2 (content in print, the telegram itself not located), not N1 |
+
+- **E21, E23 safe sentence (each)**: "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located after
+  two independent searches (7-8 Oct 2026) of the Official Records, the senders' and recipients' printed papers and accounts, the
+  Huntington collection's full text, Internet Archive full text (newspapers included), Google
+  Books and the open scholarship indexes." Unsafe: "first", "unpublished", "never printed", "unknown telegram". Not N4: NARA RG 107/92/45,
+  the manuscript papers and HathiTrust full text are unread and JSTOR rows are pending.
+- **E26 safe sentence**: "Read at grade H with the period Cipher No. 1 book: Stanton's order to Dix to search No. 42 Walker Street; the
+  seizure it led to, and the facts the order gives, were reported in the New York press on 24 August 1864." Unsafe: "unknown order",
+  "previously unread", any outward line that presents the arms at 42 Walker Street as new. **Not counted** (below N3).
+- Depth sentences: LS-V1's stand for E21 and E23 (checked here against the image). E26's stands as written and is now also
+  externally checked against the NY Herald 24 Aug 1864 p.4 (address, Indiana, "Stationary", Indianapolis seizure).
+
+### 4. Postmortem
+- One over-claim corrected: E26 was N3 because the 1864 New York press was on LS-V1's own unread list; the press search took four
+  requests. The phrase searches missed it because the papers print "No. 42 Walker-street" / "No. 42 Walker street" while the queries
+  were "42 Walker street" next to decoded words such as "revolvers". Lesson: for a telegram about an event that would have been
+  public (an arrest, a seizure, a raid), search the press for the event (place and date, the number and street) before setting N3,
+  not only the telegram's wording.
+- status.json: E21, E23 rows `audit_status` "two audits"; E26 row grade N2, `audit_status` "two audits", not counted.
+  SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-E26 withdrawn (N2); its prompt's context line names the Herald report. SO-ECKERT-E21 and -E23
+  unchanged (class and counts unchanged). reading.md summary row for E26 notes the Herald report (decode.py --check still exit 0).
