@@ -1,0 +1,635 @@
+# HMC Calendar of the Stuart Papers vol. VI (1916), introduction, OCR excerpt (archive.org calendarofstuart06grea, _djvu.txt lines 12147-13245, fetched 8 Oct 2026 by D2-GUALT).
+# Unedited OCR. The printed tables are in columns; the OCR reads each column separately, so plaintext terms and their cant names/numbers are NOT paired here. Pairing needs the page image (pp. ~lxxviii-lxxxiv).
+# Lines 12147-12508: 'The following is the cipher used with the King of Sicily' (+ 'Alphabet a double chiffres'). Lines 12509-13245: 'The following is the cipher used with Cardinal Gualterio' (+ 'Key to the figure cipher used with the above cipher', line 13111).
+The  following  is  the  cipher  used  with  the  King  of  Sicily 
+Angleterre 
+Anglois 
+Allemagne 
+Argent 
+Armee 
+Armes 
+Le  Roy  d' Angleterre 
+Le  Roy  Auguste 
+Cardinal  Albani 
+Cardinal  Alberoni 
+Cardinal  Aqua  viva 
+La  Reine  d' Angleterre 
+A 
+Altena. 
+Anati. 
+Aspoli. 
+Arazzo. 
+Alberto. 
+Almona. 
+Mr.  Alba. 
+Mr.  Astali. 
+Mr.  Aquino. 
+Mr.  Armand. 
+Mr.  Alexis. 
+Mr.  Acosta 
+Mr.  Alpiggi. 
+Mr.  Amauri. 
+L'Abbe  du  Bois 
+Milord  Bolingbroke 
+La  Princesse  de  Bade 
+B 
+Mr.  Beretti. 
+Mr.  Balby. 
+M.  Bonerelli. 
+Le  Czar 
+Le  Prince  Cellamare 
+Milord  Cadogan 
+Catholique 
+Mr.  Corsini. 
+M.  Cephali. 
+M.  Carnaro. 
+M.  Casoni. 
+Mr.  Dillon 
+Le  Roy  de  Danemark 
+D 
+Mr.  Delbene. 
+M.  Durazzo. 
+E 
+L'Empereur 
+L'Espagne 
+Le  Roy  d'Espagne 
+L'Escosse 
+Ennemis 
+Prince  Eugene 
+Entreprise 
+Expr6s 
+Entragues  ou  Epinal. 
+M.  Etampes. 
+M.  Egmont. 
+Epinay. 
+Essars. 
+Edelin. 
+Elvas. 
+Elzivir. 
+lxxvii 
+La  France 
+Le  Koy  de  France 
+La  Flandre 
+La  Flote 
+Le  Grand  Due 
+La  guerre 
+Le  Cardinal  Gualterio 
+Le  Comte  de  Gallas 
+L'Elector  d'Hanover 
+Marechal  d'Huxelles 
+La  Hollande 
+L'ltalie 
+L'Irlande 
+Les  Jacobites 
+Le  Due  de  Lorraine 
+Londre 
+Le  Due  de  Modene 
+Milord  Marleborow 
+Les  Ministres 
+Mariage 
+Le  Due  de  Mar 
+Le  Cardinal  de  Noailles 
+Le  Due  de  Noailles 
+Le  Nonce 
+Naples 
+Le  Due  d'Ormond 
+Le  Comte  d' Oxford 
+Le  Pape 
+Le  Cardinal  Paulucci 
+Le  Parlement 
+Les  Protestans 
+La  Paix 
+F 
+Fontana. 
+M.  Frejus. 
+M.  Foresto. 
+M.  Feltro. 
+G 
+M.  Gastaldi. 
+M.  Goddar. 
+M.  Guadagne. 
+M.  Grillon. 
+H 
+Mr.  Herve  on  M.  Hubert. 
+M.  Herman. 
+M.  Houdan. 
+J 
+Icone. 
+Istria. 
+Jourdain. 
+L 
+Mr.  Liberti. 
+M.  Lima. 
+M 
+Mr.  Morati. 
+M.  Maselli. 
+M.  Mazzoni. 
+M.  Monti. 
+M.  Mirabello. 
+N 
+M.  Nivelli. 
+M.  Negrone. 
+M.  Novellara. 
+M.  Nemone. 
+0 
+M.  Olina. 
+M.  Ossoni. 
+P 
+M.  Pico. 
+M.  Panzachi. 
+M.  Pinelli. 
+M.  Petrucci. 
+M.  Poussin. 
+lxxviii 
+Le  Due  de  Parme 
+Le  Comte  de  Provanne 
+Paris 
+Pension 
+Le  Roy  de  Portugal 
+Rome 
+Religion 
+Retablissement 
+M.  Le  Regent  de  France 
+R 
+M.  Pignatelli. 
+M.  Prudent. 
+M.  Pompadour. 
+M.  Palma. 
+M.  Persico. 
+M.  Razilly. 
+M.  Riccardi. 
+M.  Ribera. 
+M.  Ranucci  on 
+M.  Ricanati. 
+Le  Roy  de  Sicile 
+Le  Roy  de  Suede 
+La  Reine  de  Sicile 
+La  Princesse  Sobieski 
+La  Princesse  de  Saxe 
+Succession 
+Milord  Stair 
+Milord  Stanhope 
+Sardaigne 
+La  Suisse 
+M.  SteUa. 
+M.  Sansome,  on 
+M.  Salvador. 
+M.  -Stampa. 
+MM.  Santochi. 
+M.  Spada. 
+M.  Santini. 
+M.  Seissac. 
+M.  Simoni. 
+M.  Saillant. 
+M.  Sanmarino. 
+M.  Saltarel. 
+Les  Tories 
+Cardinal  de  la  Tremoille 
+Mr.  de  Torcy 
+Turin 
+Les  Turques 
+Des  Troupes 
+Mr.  Tarenti. 
+M.  Tanara. 
+M.  Tepoli. 
+M.  Tento. 
+M.  Terracini. 
+M.  Tiberti. 
+Urbino 
+Venise 
+Vienne 
+Marechal  de  Villeroy 
+Marechal  de  Villars 
+Les  Whigs 
+Voiage 
+Vaisseaux 
+Ursini. 
+Velino. 
+Veletri. 
+Mr.  Visa. 
+M.  Valemanni. 
+M.  Warin. 
+M.  Voltera. 
+M.  Vaini. 
+Alphabet  a  double  chiffres. 
+c     d     e     f      g     h      i  k 
+abcdefghiklm 
+48  47    46    45    44    43    42    41    40    39    38  37 
+49  50    51    52    53    54    55    56    57    58    59  60 
+nopqrstuwxyz 
+36  35  34  33  32  31  30  29  28  27  26  25 
+61    62    63    64    65    66    67    68    69    70    71  72 
+lxxix 
+The  following  is  the  cipher  used  with  Cardinal  Gualterio 
+La  Princesse  Anne 
+Les  Anglois 
+Les  Amis  du  Roy  du  Angle- 
+terre 
+Cardinal  Albani 
+Argent 
+Armee 
+Armee  Navalle 
+Armes 
+Adresse 
+Allemans 
+Angleterre 
+Mr.  D.  Alexandre  Albani 
+L'Archeveque  d' Avignon 
+Agent  d' Angleterre 
+Agent  d'Escosse 
+Agent  d'Irlande 
+Alberoni 
+Cardinal  Ac  qua  viva 
+Mr.  Aldrovandi 
+Mr.  Anthoine. 
+Mr.  Adamson. 
+Mr.  Alexandre. 
+Mr.  Abel. 
+Mr.  Arboulin. 
+Mr.  Alliot. 
+Mr.  Ashyon. 
+Mr.  Alby. 
+Mr.  Arnaudin. 
+Mr.  Allardin. 
+Mr.  Arthur. 
+Mr.  d'Allegre. 
+Mr.  Artamont. 
+Mr.  Anat. 
+Mr.  Exent. 
+Mr.  Irois. 
+Mr.  D'Almon. 
+Mr.  Aquin. 
+Mr.  Aldermond. 
+B 
+Le  Due  de  Berry 
+Le  Due  de  Berwick 
+Milord  Bullingbrook 
+Bar  Le  Due 
+Abbe  Borio 
+Mr.  Le  Marquis  Bufalini 
+Le  frere  de   Mr.  Bufalini  \ 
+demeurant  a  Rome  j 
+Bologna 
+Monsieur  Battelli 
+Mr.  de  Bron. 
+Mr.  de  Beaujeu. 
+Mr.  Beaulieu. 
+Beaumont. 
+Mr.  Boyn. 
+Mr.  Buvier. 
+Mr.  Bulau. 
+Mr.  Basle. 
+Mr.  Barieu. 
+C 
+Les  Catholiques 
+Le  Clerge  d' Angleterre 
+Le  College  de  Douay 
+La  Chambre  des  Seigneurs 
+La  Chambre  des  Communes 
+Le  Connetable  Colonna 
+Duca  Cesarini 
+P.  Charle  de  Neubourgh 
+L'Eveque  de  Cavaillon. 
+Cardinal 
+Congregation 
+Consistoire 
+Cour 
+Mr.  Chaumont. 
+Mr.  Caraman. 
+Mr.  Constant. 
+Mr.  Courtin. 
+Mr.  Cramail. 
+Mr.  Cornelio. 
+Mr.  Corbery. 
+Mr.  Colomban. 
+Mr.  Carmon. 
+Mr.  Caral. 
+Mr.  Contoire. 
+Mr.  Constant. 
+Mr.  Covon. 
+lxxx 
+Courrier 
+Comte  Castelblanco 
+Comte  Carminati 
+Czar 
+Mr.  Camocke 
+Mr.  Le  Daufin 
+Douaire  de  la  Reine 
+Mr.  le  Marechal  d'Huxelles 
+Daubanton 
+Douglas 
+Mr.  Dillon 
+L'Empereur 
+Les  Etats  Generaux 
+Les  Eveques 
+L'Ecosse 
+Les  Ecossois 
+Ennemis 
+Les  Elections 
+Eloignement 
+L'Eveque  d'Ellis 
+Ecclesiastique 
+Electeur 
+La  France 
+Les  Francois 
+La  Flandre 
+Flotte 
+Cardinal  Fabroni 
+Mr.  Le  Cardinal  Gualterio 
+L'Abbe  Gaultier 
+La  Guerre 
+Le  Gran  Due 
+Principessa  Guastalla 
+Le  Due  d'Hannover 
+Mr.  d'Hamilton 
+La  Hollanda 
+Mr.  L'Abbe  Houvart 
+Cardinal  Imperiali 
+L'ltalie 
+Mr.  Covin. 
+Mr.  Crosse. 
+Mr.  Carman. 
+Mr.  Caron. 
+Mr.  Colman. 
+D 
+Mr.  Dodar. 
+Mr.  Dormer. 
+Mr.  Husdon. 
+Mr.  Duras. 
+Dougey. 
+Mr.  del  Bene. 
+E 
+Mr.  d'Epinois. 
+Mr.  Ellmor. 
+Mr.  d'Estain. 
+Mr.  d'Enermont. 
+Mr.  Edelin. 
+Mr.  d'Epinal. 
+Mr.  Egmont. 
+Mr.  Evington. 
+Mr.  Erart. 
+Mr.  Econis. 
+Mr.  Elens. 
+F 
+Frioul. 
+Mr.  Forestier. 
+Falsbourg. 
+Mr.  Flemin. 
+Mr.  Fabert. 
+G 
+Mr.  Grammont  on  Gendron. 
+Mr.  Grillon. 
+Mr.  Gordon. 
+Mr.  Gassion. 
+Mr.  Grace. 
+H 
+Mr.  Herman. 
+Mr.  Hennel. 
+Houdan. 
+Mr.  Henri. 
+Mr.  Jesmin. 
+Juliers. 
+lxxxi 
+L'Irlande 
+Imola. 
+Les  Irlandois 
+iv±r.  jenKms. 
+Les  Jacobites 
+ivir.  uanson. 
+i^es  uesuroes 
+ivir.  tiony. 
+La  Lorraine 
+L 
+Liege. 
+Le  Due  de  Lorraine 
+Mr.  .Lambert. 
+AJO  XJ  W\j  KaXj  XJCVLI/j  LLi.1 
+IVTt  Tjji.nnnid 
+T  inn  fir  as 
+Tjinri'hfinrcr 
+wiic  v  <xxi%jl  xuixy 
+Mr  T/i<*f.Ar 
+M 
+Madame  de  Mamtenon 
+Mr.  Menar. 
+Les  Ministres  de  France 
+Mr.  Mornay. 
+Mr.  des  Maretz 
+Mr.  du  Moulin. 
+Milord  Middleton 
+Mr.  Mircour. 
+Milord  Maryborough 
+Mr.  Martin. 
+La  mission 
+Mr.  Mauroy. 
+La  mort 
+Mr.  Monton. 
+Monsieur  Marcolini 
+Mr.  Marenville. 
+Due  de  Mar 
+Mr.  Matre. 
+Marechal  D'Huxelles 
+Mr.  Husdon. 
+TVI  fl.ria.crp 
+XTXCvX  i  t  V  _  V. 
+Mr  Mn.rnnis 
+1.TJI  _L  •    jLYXCvI.  UJ.J.J.O. 
+T)hp  Ac*  TVTnrlATiA 
+XJ  KA.KJ  \JL\j  iUUUUi.lv 
+MV  lVTfl.nrnis 
+I'll.    jJ  L  tv  ILL  UlO. 
+N 
+Le  Cardinal  de  Noailles 
+Mr.  de  Neuville  ou  Nettan- 
+cour. 
+Le  Nonce  en  France 
+Mr.  Nemon. 
+La  Nomination 
+Mr.  Nanteville. 
+in  egotiaDioii 
+ivir.  iNonan. 
+lvir.  iNairne 
+ivir.  iNeuvcon. 
+i^e  iNora 
+Mr.  Panetier. 
+Le  Due  d' Orleans 
+0 
+Mr.  Orroy. 
+Le  Due  d'Ormond 
+Mr.  Osson. 
+Le  Comte  d' Oxford 
+Mr.  Olive. 
+Les  officers  de  sa  Saintete  en 
+Avignon 
+Mr.  Offin. 
+Le  Pape 
+P 
+Mr.  Parton  ou  Pritchard. 
+Le  Cardinal  de  Polignac 
+Mr.  Pinal. 
+Le  Protectorat 
+Mr.  Pimentel. 
+Le  Cardinal  Paulucci 
+Mr.  Pommar. 
+Mr.  de  Pontchartrain 
+Mr.  Poussin. 
+Le  Parlement 
+Mr.  Palme. 
+Wt.  39115. 
+s  / 
+lxxxii 
+Les  Protestants 
+Parti  de  la  Cour 
+La  Paix 
+Mr.  Prieur 
+Pension 
+Passeports 
+Passe  en  Angleterre 
+Pontificat 
+Promotion 
+Propaganda 
+Due  de  Par  me 
+Milord  Peterborou 
+Paris 
+Mr.  Pelisson. 
+Mr.  Parmantier. 
+Mr.  Panetier. 
+Mr.  Picard. 
+Mr.  Plessis. 
+Mr.  Pecourt. 
+Mr.  Preston. 
+Mr.  Pontois. 
+Mr.  Pron. 
+Mr.  Provin. 
+Mr.  Perelli  ou  Porter. 
+Pontai. 
+Poltoa. 
+R 
+Le  Roy  Tres  Chrestien 
+Le  Roy  d'Angleterre 
+La  Reine  d'Angleterre 
+Le  Roy  Catholique 
+Le  Cardinal  de  Rohan 
+Rome 
+Religion 
+Retablessement 
+Roy  Auguste 
+Mr.  Richard. 
+Mr.  Robert  ou  Renaud. 
+Mr.  Raisin. 
+Mr.  Remmon. 
+Mr.  Razilly. 
+Riebour. 
+Mr.  Rolland. 
+Mr.  Rigaut. 
+Mr.  Rugan. 
+S 
+Le  Due  de  Savoy e 
+Le  Roy  de  Suede 
+La  Suisse 
+Milord  Shrewsbury 
+Seurete 
+Succession 
+St.  Germain 
+La  Princesse  Sobieski 
+Secretaire 
+Spagna 
+Princesse  de  Saxe 
+Pere  Salerne 
+Mr.  Sanson. 
+Mr.  Saurois. 
+Salsbourg. 
+Mr.  Sebaste. 
+Mr.  Salmon. 
+Mr.  Saucour. 
+Paussois. 
+Mr.  Sobinay. 
+Mr.  Serluis. 
+Mr.  Spanhaim. 
+Mr.  Stuart. 
+Mr.  Silly. 
+T 
+Mr.  de  Torcy  Mr.  Talmon. 
+Les  Tories  Mr.  Talbot. 
+Le  Cardinal  de  la  Tremoille      Mr.  Tantonville. 
+V 
+L' union     d'Angleterre  et 
+d'Ecosse  Mr.  Urbin. 
+Les  Whigs  Mr.  Waldycke. 
+Versailles  Valogne, 
+Ixxxiii 
+Mr.  Voisin 
+Mr.  le  Vicelegat 
+Venise 
+Urbino 
+Mr.  Valcour. 
+Mr.  Visan. 
+Mr.  Vaucour. 
+Venetia. 
+Key  to  the  figure  cipher  used  with  the  above  cipher. 
+A 
+B 
+C 
+D 
+E 
+F 
+G 
+H 
+I 
+L 
+M 
+74 
+72 
+70 
+68 
+66 
+65 
+62 
+61 
+59 
+57 
+55 
+24 
+22 
+71 
+23 
+20 
+18 
+19 
+17 
+14 
+16 
+15 
+N 
+0 
+P 
+Q 
+R 
+S 
+T 
+V 
+X 
+Y 
+Z 
+53 
+50 
+49 
+47 
+45 
+42 
+39 
+33 
+30 
+28 
+25 
+10 
+12 
+11 
+13 
+26 
+27 
+29 
+31 
+32 
+38 
+37 
