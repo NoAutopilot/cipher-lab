@@ -41,8 +41,11 @@ the clerk's slips ("Prss", "mangled", "For rest").
 | E27 | Judge Advocate L. C. Turner to 'beverage' (unread), New York, 10 Oct 1864 | not located | reads cleanly but the first word "Grunt" (book: Warrenton, one line below Growl = Washington) graded M by hand; addressee word "beverage" not in the book (LS-R1) |
 | E28 | F. W. Seward to Thurlow Weed, New York, 11 Oct 1864 11.30 AM | not located | reads cleanly: Captain Pennock will put a boat of the Mississippi squadron at the disposal of the New York election agents; "Pilgrim[?]" written "Pelgrim" (LS-R1) |
 | E29 | Dana to Dix, New York, 5 Nov 1864 4 PM | not located as a telegram; its content and the wording of the description ("a bulldog look; snuffs up his nose") are in Confederates Downeast (1985), quoting the informant Jones (LS-V1: N2) | reads cleanly: arrest on Monday morning of six named rebel agents, with descriptions (LS-R1) |
+| E37 | J. B. Fry (Provost Marshal General) to Capt. B. F. Manierre, Provost Marshal, 8th District, New York, and to W. E. Dodge, 2 Nov 1864 9.30 AM | not located as a telegram (Google Books: 3 queries; a New York Times Index entry for Manierre and the candidacy, snippet only, LS-R3) | reads cleanly: withdraw at once as a candidate for Congress or resign as provost marshal, I advise the former; the same text sent on to Dodge, candidate for Congress in the 8th District; "Dodge" left plain (book: McMinnville); "Wreath" (answer by Wreath) not in key.md, unread (LS-R3) |
 | E38 | Seward (signed Secretary of State) to John G. Palfrey, Postmaster, Boston, via Horner, New York, 12 Aug 1864 11 PM | not located (Google Books and IA full text, LS-R3) | reads cleanly: a letter with a remittance forwarded from Halifax by way of St Johns by Alex Keith Jr, the rebel agent there, to N. Ferris, No. 10 North Market St, Boston; secure it and forward it to the State Department; "John", "Johns", "watch" left plain (LS-R3) |
 | E39 | Seward (signed Secretary of State) to Abraham Wakeman, Postmaster, New York, 12 Aug 1864 11.30 PM | not located (Google Books and IA full text, LS-R3) | reads cleanly: three remittances by Keith (to Ferris, Boston; J. B. Hunter & Co, New York; Gordon Bruce & Co, New York, for Mitchell Kenner & Co, Montreal) to be secured with information on the addressees; "perfume" printed [3] by the decoder is the book's other row, By the way of (key.md p.18 l.24 R), by hand; "John", "Johns", "Hunter", "person", "trade" left plain (LS-R3) |
+| E40 | Seward to Robert Murray, U.S. Marshal, and George Harrington, Acting Secretary of the Treasury, to Hiram Barney, Collector, New York, 13 Aug 1864 3 PM | not located (Google Books: 2 queries, LS-R3) | reads cleanly: detain the schooner Princess and her cargo for further orders; let the Boston message go forward when these two have taken effect; "Princess" left plain (the schooner; book: Captain); "Seward[?]" (volunteer text "Benard") (LS-R3) |
+| E41 | F. W. Seward to C. A. Seward, 29 Nassau St, New York, 15 Oct 1864 8 PM | not located (Google Books: 1 query, LS-R3) | reads cleanly: W. T. Minor, consul general, Thomas Savage, vice consul general at Havana, Wm Hunter, chief clerk of the State Department, and Tassara, the Spanish minister at Washington; see Mr Evarts and ask him to cooperate with you; "Hunter" left plain (LS-R3) |
 
 Sixteen of the twenty were matched to an Official Records print by the subagent sweep of 26 volume-parts of
 series I on the Internet Archive (or_check in NOTES.md section 4); the four it did not match (E4, E5, E6, E12)
@@ -297,6 +300,12 @@ Code-word tokens: H 15.
 
 Code-word tokens: H 33.
 
+**E37 | Page 216-217 | 9110-9111 | 2 Nov 1864 9.30 AM, to B. F. Manierre, Provost Marshal, New York, and W. E. Dodge (John Horner)**
+
+[Washington] {time: 9.30 AM} {date: Nov 2} for [Captain] Be F. Manerie Provost Mare shall [8] District [New York] [.] Confidential [.] You had better imm'y with draw as a candid eight for Congress or re sign as Provost Mare shall [,] I advise the former [.] Answer by Wreath  {tail: [signed] James Be Fry Pro Mar [General] another to W E Dodge Can did eight for Congress [8] District [New York] [.] Confidential [.] I have [Telegraph (-ed, -ing)]d [Captain] man ear rye as follows ["] you had better with draw immy as a can did ate for congress or reas sign as Provost marsh all [,] I advise the former ["] [signed] Jas B Fry}
+
+Code-word tokens: H 22.
+
 **E38 | Page 152 | 9045 | 12 Aug 1864 11 PM, to John G. Palfrey, Postmaster, Boston, via Horner, New York**
 
 {time: 11 PM} {date: Aug 12} for John G PalFrey Post master Boston ---- A letter containing a remittance was this day forwarded from Halifax [By the way of] St Johns by Alex Keith Jr the [Rebel] agent there to N. Ferris No [10] [North] Mkt St Boston ---- It is very impt to the [Government] to get possession of that letter ---- You will please watch for & secure it & forward to me immedy [At the] State [Department] & [Report] your proceeding to the Post Mr [General]  {tail: [signed] [Secretary of State] ----}
@@ -309,5 +318,17 @@ Code-word tokens: H 13.
 
 Code-word tokens: H 22.
 
-Totals over the 31 entries: H 508, C 11, I 0, M 0.
+**E40 | Page 153 | 9046 | 13 Aug 1864 3 PM, to Robert Murray, U.S. Marshal, and Hiram Barney, Collector, New York (Horner)**
+
+[Washington] {date: Aug 13} {time: 3 PM} For Robt Murray Esq U S D Marshal [New York] Detain the Princess and her cargo for further orders  {tail: [signed] Wm H Seward[?] [Secretary of State] [.] another {time: 3 PM} to Hiram Burney Collect or [New York] [.] Detain Schooner Princess and with aid of U S Mar shall examine her cargo and nick [signed] Geo Harrington Acting [" " Treasury] Let the Boston message go forward when these two have had time to take effect}
+
+Code-word tokens: H 12.
+
+**E41 | Page 203 | 9097 | 15 Oct 1864, to C. A. Seward, New York (John Horner)**
+
+{time: 8 PM} for C A. Seward [29] Nassau St [.] Wm T Minor Consul [General] and Thomas Savage vice Consul [General] Havana stop Wm Hunter chf clk state [Department] and G G Tassara Spanish Minister [Washington] [.] See Mr Evarts and ask to cooper rate with you  {tail: [signed] F W Seward}
+
+Code-word tokens: H 10.
+
+Totals over the 34 entries: H 552, C 11, I 0, M 0.
 <!-- decode.py: derived block ends -->
