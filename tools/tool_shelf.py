@@ -25,6 +25,10 @@ evidence, not existence. Each row of tools/data/tool_shelf.tsv carries:
   evidence  the best known-answer or control result on file, citing the NOTES/HYPOTHESES/LEDGER line
   use_when  the problem a briefer has, in the briefer's words (the match target)
 
+A row's tool cell may name one option of a shared tool ("freq.py --contacts", TOOLS-TOMO 8 Oct 2026), so an instrument
+added as an option (CLAUDE.md Usage 8) is shelved and graded on its own; --check then requires the option string to occur
+in the tool's source, and the folder count needs both the tool's basename and the option in the same file.
+
 The folder count ("cited by N folders") is computed live from ciphers/*/ (*.md, *.py, *.tsv, *.json, *.sh) so it does
 not go stale. Matching is a plain keyword score: use_when words count 3, the tool name 2, its docstring's first 600
 characters 1, after lower-casing and dropping stop words. An untested tool is printed with "run its known-answer check
@@ -93,7 +97,19 @@ def tool_files(root):
     return out
 
 
+def tool_path(tool):
+    """'freq.py --contacts' -> 'freq.py': an option row (TOOLS-TOMO, 8 Oct 2026) shelves one option of a shared tool."""
+    return tool.split()[0] if tool.strip() else tool
+
+
+def tool_option(tool):
+    """'freq.py --contacts' -> '--contacts'; '' for a whole-tool row."""
+    parts = tool.split(None, 1)
+    return parts[1].strip() if len(parts) > 1 else ""
+
+
 def docstring(root, tool):
+    tool = tool_path(tool)
     p = os.path.join(root, "tools", tool)
     if not p.endswith(".py") or not os.path.exists(p):
         return ""
@@ -106,7 +122,9 @@ def docstring(root, tool):
 def citation_counts(root, tools):
     """{tool: number of ciphers/<folder>/ that mention the tool's basename (families: 'families/<name>' or the name)}."""
     counts = {t: set() for t in tools}
-    keys = {t: (os.path.basename(t),) if not t.startswith("families/") else (t, "--family " + t[9:-3]) for t in tools}
+    keys = {t: (os.path.basename(t),) if not t.startswith("families/") else (t, "--family " + t[9:-3]) for t in tools
+            if not tool_option(t)}
+    opts = {t: (os.path.basename(tool_path(t)), tool_option(t)) for t in tools if tool_option(t)}
     files = []
     for ext in CITE_EXT:
         files += glob.glob(os.path.join(root, "ciphers", "*", "**", ext), recursive=True)
@@ -118,6 +136,9 @@ def citation_counts(root, tools):
             continue
         for t, ks in keys.items():
             if folder not in counts[t] and any(k in text for k in ks):
+                counts[t].add(folder)
+        for t, (base, opt) in opts.items():
+            if folder not in counts[t] and base in text and opt in text:
                 counts[t].add(folder)
     return {t: len(v) for t, v in counts.items()}
 
@@ -191,9 +212,15 @@ def cmd_check(root):
         if r["grade"] not in ("n/a", "untested") and r["evidence"].strip() in ("", "-"):
             print("NO evidence for grade %s: %s" % (r["grade"], r["tool"]))
             bad += 1
-        if not os.path.exists(os.path.join(root, "tools", r["tool"])):
+        path = os.path.join(root, "tools", tool_path(r["tool"]))
+        if not os.path.exists(path):
             print("STALE shelf row (no such file): %s" % r["tool"])
             bad += 1
+        elif tool_option(r["tool"]):
+            opt = tool_option(r["tool"]).split()[0]
+            if opt not in open(path, encoding="utf-8", errors="ignore").read():
+                print("STALE shelf row (option %s not in %s): %s" % (opt, tool_path(r["tool"]), r["tool"]))
+                bad += 1
     if bad:
         return 1
     print("tool_shelf: %d rows, every tool shelved, grades valid" % len(shelf))

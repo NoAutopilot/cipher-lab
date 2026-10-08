@@ -58,9 +58,28 @@ check('check fails on an unshelved tool', rc == 1 and 'MISSING shelf row: orphan
 counts = ts.citation_counts(str(tmp), ['digits.py', 'pages.py', 'families/masc.py'])
 check('folder counts are live', counts == {'digits.py': 2, 'pages.py': 0, 'families/masc.py': 1})
 
+# option rows (TOOLS-TOMO, 8 Oct 2026): one option of a shared tool shelved on its own
+(tmp / 'tools' / 'digits.py').write_text('"""Solver for unseparated digit ciphers."""\nap.add_argument("--contacts")\n')
+with open(tmp / 'tools' / 'data' / 'tool_shelf.tsv', 'a') as f:
+    f.write('digits.py --contacts\tinstrument\tproven\tcontact table of frequent groups\tknown-answer 1.0\t-\n')
+(tmp / 'ciphers' / 't4').mkdir()
+(tmp / 'ciphers' / 't4' / 'NOTES.md').write_text('ran digits.py --contacts 20\n')
+rc, out = run('--check', root=tmp)
+check('option row passes --check when the option is in the source', rc == 0 and '4 rows' in out)
+check('option row folder count needs basename and option', ts.citation_counts(str(tmp), ['digits.py --contacts']) ==
+      {'digits.py --contacts': 1})
+rc, out = run('contact table of frequent groups', root=tmp)
+check('query returns the option row', out.startswith('[proven] digits.py --contacts'))
+with open(tmp / 'tools' / 'data' / 'tool_shelf.tsv', 'a') as f:
+    f.write('digits.py --nosuch\tinstrument\tuntested\tx\t-\t-\n')
+rc, out = run('--check', root=tmp)
+check('option row whose option is absent from the source is stale (must block)', rc == 1 and 'option --nosuch' in out)
+(tmp / 'tools' / 'data' / 'tool_shelf.tsv').write_text(hdr + rows + 'digits.py --contacts\tinstrument\tproven\t'
+                                                       'contact table of frequent groups\tknown-answer 1.0\t-\n')
+
 rc, out = run('unseparated digits, no key', root=tmp)
-check('query offers the digit solver first', rc == 0 and out.startswith('[controlled-only] digits.py'))
-check('query prints the live folder count', 'cited by 2 folders' in out)
+check('query offers the digit solver first', rc == 0 and out.startswith('[controlled-only] digits.py '))
+check('query prints the live folder count', 'cited by 3 folders' in out)
 rc, out = run('find cipher pages', root=tmp)
 check('weak grade printed before the tool name', out.startswith('[weak] -- ') and 'pages.py' in out.splitlines()[0])
 rc, out = run('simple substitution', root=tmp)
