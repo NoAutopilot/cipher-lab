@@ -1287,6 +1287,14 @@ Crop commands (S = session scratch; images `hdl.huntington.org/digital/iiif/p160
 9071 `100,1800,2300,700` 64,160,260,360,452,552,628; 8899 `100,1500,2300,840` 68,200,320,460,580,688,780. Requests: hdl.huntington.org 10 (one 2400 px image each), archive.org 7 (advancedsearch 1, `_djvu.txt` downloads 6: 0025char, 0011unse, 0026unse,
 0026char (HTTP 503, not retried), 0012unse (163-byte error body, not retried), plus 0011/0026 each once), 0 other hosts. Subagents 0.
 
+LS-V7 correction note (8 Oct 2026, verifier, see AUDIT.md "## AUDIT (LS-V7)" section 4): E66's "Wise" is Colonel (George D.) Wise, quartermaster at
+Baltimore, not H. A. Wise of the Navy; "Vain fleet" = Van Vliet, "Banditte" = Banditti (Baltimore), "Weaselira" = steamers (Weasel = Steam), and
+Van Vliet's replies of 3 Jan 1865 are printed (OR I/46 pt 2 p.28), which fixes the year. E72 "Stephen son" = Brig. Gen. Stevenson (the decoder's
+[In the] is wrong), signature "see see Awe gear" = C. C. Augur. E73 "polkers" = commanders, "utopia" = Utophia (Parenthesis). E68 "platation" =
+communication, "person" plain (decoder's [5] wrong). E70's image reads "Pockaing". N2-BN "patent" = [Advance] (H; "advance guard train" in the
+printed order), "Humphreys" plain (decoder's [Wilmington] wrong), "Oliver Ellsworth" = 29 (H). E67 N1 (ORN I/11); E72 and E73 N2 (substance
+printed: OR I/43 pt 2 pp.142-143, ORN I/26 pp.209-211); E66, E68, E70, E74 (D1), N2-BN N3 one audit. E69, E75: none of the three keys reads them.
+
 ## Remaining gaps (LS-R7, 8 Oct 2026)
 Read so far: of the ten rows, 8 read (E66, E67, E68, N2-BN as E71, E70, E72, E73, E74); 2 "key not in hand" (E69, E75).
 - E69 and E75 key (header "10", "period" words) - blocker: no-key-material; the three keys in hand give no sentence; next: look in mssEC 37-76 for a cipher book headed "10" / a Halleck-to-governor list, ~$0.5

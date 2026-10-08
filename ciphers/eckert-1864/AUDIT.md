@@ -2816,3 +2816,140 @@ passes it -- so neither verdict is licensed; whether No. 1 reads the 1865 rows i
   rows SO-ECKERT-N2BI, -N2BJ, -N2BK, -N2BL, -N2BM, -O9AH with prompts in second-opinions/. Requests: in the ROOM done line.
 
 Correction carried (LS-FIX, 8 Oct 2026, commit f4dba16ec): E65 withdrawn from ciphertext.txt and re-filed as N2-BO in ciphertext-no2.txt, decoded with key-no2.md; no class change.
+
+## AUDIT (LS-V7)
+
+Verifier LS-V7 (account 1, LANE ST-LEDGER-2, session_01PmcWWeEJMai2xhq5hXiB77), 8 Oct 2026, 04:48-05:2x UTC by `date -u`; a separate session
+from every reader (LS-R7 read these entries), not protecting its conclusions. Scope: LS-R7's batch: **E66, E67, E68, E70, E72, E73, E74**
+(ciphertext.txt, Cipher No. 1, key.md = mssEC 41), **N2-BN** (ciphertext-no2.txt, Cipher No. 2, key-no2.md = mssEC 47), and the two "key not in
+hand" rows E69, E75 (counts only). Nothing decoded beyond re-running the committed scripts and looking code words up in the three key files.
+Key source for every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md.
+
+**ID settled.** The files carry **N2-BN** (ciphertext-no2.txt, reading-no2.md, entries-mssEC19.tsv `already_read` "LS-R7 N2-BN (as E71)"); there is
+no E71 block anywhere, and LS-R7's NOTES table already says N2-BN. "E71" was only the brief's slot; it stays unassigned. No file change needed.
+
+### 1. Re-derivation (rule 7), which book, image check
+- `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check`: exit 0 each.
+- **Which book (LS-V6's E65 lesson).** Each block was decoded under all three keys (key.md, key-no2.md, key-no9.md) with decode.py's own
+  machinery (scratch script, not committed); share-of-tokens alone does not separate the books (LS-V6 section, 0.374 vs 0.353), so the test is
+  which key gives a sentence. H counts No. 1 / No. 2 / No. 9: E66 33/28/11, E67 14/10/4, E68 17/17/4, E70 13/12/3, E72 16/12/5, E73 9/9/3,
+  E74 2/4/0 (the No. 2 "4" reads "Sanders [McLamores Cove] was an enormous blunder" -- nonsense), N2-BN 10/16/3. Under No. 1 every E-block reads as
+  continuous prose with the No. 1 markers (zebra/zodiac/unity = period, yoke/webster/walrus = signed, Growl/Grapes = blind words); under No. 2
+  N2-BN alone does (Coldwell "2" header, Yacht = period, Yawl = signed). **No mis-keyed entry in this batch.**
+- **Image.** 2400 px IIIF images of the eight pointers to scratch; strip crops with the reader's regions, e.g.
+  `python3 tools/iiif_lines.py --image $S/img/p9151.jpg --out $S/crops/9151 --prefix p9151 --region 100,1700,2300,1066 --centres 120,260,380,490,610,730,850,960 --lines-per-crop 2 --max-width 2400`,
+  likewise 9075 `100,1380,2300,740`, 8985 `100,1640,2300,860`, 9118 `100,250,2300,720` (2 lines per crop) and 9039 `100,250,2300,920`, 9071
+  `100,1800,2300,700`, 8914 `100,240,2300,800` (3 lines per crop); two PIL close-ups of 9151 (y 1900-2090) for "Weaselira".
+  Word for word, header to tail: **E66** (9151, the longest, 12 lines), **E72** (9075, 9 lines, faint pencil), **E70** (8985, 10 lines): all agree
+  with ciphertext.txt except E70 line 1, where the image reads **"Pockaing"** (c-k), not "Polkaing" (the volunteer text's form); the transcription is
+  left as is (a reader's file) and the token is graded I below.
+- **M tokens re-read from the image** (E68 9039, E73 9118, E74 9071 lines 1-2 and tail, plus the E66/E72/E70 ones above): every one is written as
+  transcribed ("Jones", "platation", "polkers", "utopia ... utopia)", "Sand hers", "Coox Edwards", "Waymomers", "Weaselira", "Banditte",
+  "Vain fleet", "Stephen son", "see see Awe gear"). What changes is the reading, from the key (section 4).
+
+### 2. Entry located in print: confirmed by script
+| ID | printed at | how confirmed |
+|---|---|---|
+| E67 | **ORN ser. I vol. 11** (Washington, December 3, 1864, 12:30 p.m., H. A. Wise, Chief of Bureau, to Rear-Admiral D. D. Porter), printed after Porter's telegram to Assistant Secretary Fox | IA `officialrecordso0011unse` djvu (scratch): "Your telegram to Mr. Fox of this a. m. received. Everything is being done by the bureau with the utmost vigor. The moment the Baltimore arrives she will leave again with Jeffers and Rodman to assist in fitting out the Louisiana. The Stromboli is on her way to you with [80] torpedoes on board and [2] of Beardslee's clock movements. If you have not Beardslee near you, let me know." Word for word with the ledger (page number not read: the OCR has no running head near it). **N1.** |
+
+### 3. Entries not located: search families (8 Oct 2026)
+Phrases were taken verbatim from the decoded lines (LS-V5's lesson: paraphrase misses prints). Context found on the way is listed as
+context, not as a location of the entry.
+
+| family | searched | result |
+|---|---|---|
+| OR / ORN by date and correspondent, +/- 3 days (IA djvu, whole volume, normalized-text regex; scratch, not committed) | E66: OR I/46 pt 2 (`warofrebellion462unit`, Jan 1865); E68, E70: OR I/39 pt 2 (`warofrebellion392unit`); E72: I/43 pt 2 (cached); E73: ORN I/26 (`officialrecordso0026unse`) and I/27 (`officialrecordso0027unse`); N2-BN: OR I/33 (cached); E74: I/43 pt 2 and I/39 pt 2 | **No entry located.** Context: **E66** -- OR I/46 pt 2 **p.28** prints Van Vliet's two replies from New York of 3 Jan 1865 to Meigs ("There are but few steamers available here at present. The Ericsson ... the Rapidan ...", received 1 p.m. and 5.30 p.m.) and the 2 Jan Stanton-Grant exchange ("there are no transports at Baltimore ... inquiry made as to transports available at New York", "probably 4,000"): the question E66 asks is answered in print, its own text is not. **E72** -- OR I/43 pt 2 **pp.142-143** prints Augur to Sheridan, 22 Sept 1864, 9.45 p.m.: "Four thousand nine hundred and twenty-four men will leave here for Winchester to-morrow morning." **E73** -- ORN I/26 **pp.209-211** prints the Bureau of Navigation's circular to commanders of squadrons of April 1864 (C. H. Davis to Porter, Mississippi Squadron): to mask signals "all succeeding signals will be made by adding 10 to the number as shown and subtracting 10 from the number as read". **N2-BN** -- OR I/33 **pp.616-617** prints Humphreys to Benham, 29 Feb 1864: "cause to be constructed as soon as practicable an advance guard train ... Twenty-four canvas pontoons ... Each chess-wagon loaded with 42 chesses" -- the order N2-BN reports on ("as ordered in your letter of the [29] ult"). **E68** -- Sam Bruch is the military-telegraph officer at Louisville/Cincinnati writing to Eckert, and Burbridge commands the District of Kentucky (I/39 pt 2), nothing on Surgeon Ferry. **E70** -- I/39 pt 2 shows Callender shipping guns from St. Louis (July 1864) and Carrington at Indianapolis, no 16 June ordnance order. OR ser. III vol. 4 (`warofrebellion0304rootrich`) "Item not available" on IA, ser. III vol. 5 an error page: **unreachable** this session. ORN I/12 (`officialrecordso0012unse`) HTTP 500 (as for LS-R7). |
+| Sender's/recipient's printed papers | Lincoln (Basler) and the "Tycoon"/Sanders telegram (E74) via Google Books; Mereness Calendar (Upper Mississippi Valley War Department telegrams; Indiana) for E70 by Google Books queries; Welles diary not opened | no hit (Google Books returned the Mereness Calendar only for a different Carrington item of 8 June 1864); Mereness itself not searched inside |
+| 1864-65 press (loc.gov Chronicling America JSON by date window; the old chroniclingamerica.loc.gov search API now answers 404) | E74 "Sanders despatch Stanton" 8-30 Sept 1864: 7 pages (Richmond Enquirer 13 Sept p.4 read by its OCR XML: a note on Maj. Reid Sanders' death, not the despatch; NY Herald 21 Sept p.5, Fremont Journal 9 Sept p.2, Wilmington Journal 29 Sept p.3, Burlington Free Press 30 Sept p.3 not read); E68 "Surgeon Ferry" Aug 1864: 366 loose pages (not read); N2-BN "canvas pontoon Benham" Mar-Apr 1864: 0; E66, E70, E72, E73 and E74's quoted "enormous blunder": loc.gov timed out (one try each, not retried) | no entry located; pages listed above unread |
+| IA full text, all items (be-api fts) | "was an enormous blunder" Stanton; "Sanders despatch"; "signal numbers made"; "canvas pontoons will be completed"; "surgeon ferry" Burbridge; "construction corps" "coal and water" | no relevant hit (signal manuals only for "signal numbers made") |
+| Google Books API (key, country=US) | 17 phrase queries over the seven entries (3 answered 503, one retry each) | no hit on any entry; for E73 the ORN I/26 circular above |
+| OpenAlex, Semantic Scholar, CORE (keys) | one query per entry each (S2 answered 429 on five, not retried) | nothing relevant |
+| JSTOR | 10 rows appended to JSTOR-QUEUE.tsv for E66, E68, E70, E74, N2-BN, families (i) and (ii) | pending (never blocks) |
+| Unread / unreachable | NARA RG 92 (QMG telegrams sent), RG 107 (M473), RG 156 (Ordnance) and RG 45 (Navy); OR ser. III vols. 4-5; ORN I/12; the press pages listed; HathiTrust full text; Lincoln's Collected Works page search; Stanton Papers | unread |
+
+### 4. Grades (rule 4) after the image and key re-reads
+The reader's M list mostly resolves from the books; the decoder also overgrades four plain words. Per entry, H = decoder H less the plain words
+it read as code; I = a book word in a clerk's spelling or a phonetic split, inferred; plain names are not cipher tokens.
+- **E66** H 33, I 4, M 1. I: "Banditte" = Banditti = **Baltimore** (key.md p.11 l.8; the decoder misses the spelling), so "4000 troops from Baltimore to
+  sea"; "Vain fleet" = **Van Vliet** (Brig. Gen. Stewart Van Vliet, quartermaster at New York, who answers on p.28 of I/46 pt 2); "Weaselira" =
+  Weasel (Steam) + -ers, **steamers** ("report of steamers available in New York", which is the wording of Van Vliet's printed reply); the date
+  (3 Jan 1865, confirmed by the printed reply). M: "Waymomers". "Pandora Wise" is **Colonel** Wise, i.e. Col. George D. Wise, quartermaster at
+  Baltimore (I/46 pt 2: "Colonel Wise is in Baltimore"), **not** H. A. Wise of the Navy Bureau as LS-R7's date note says; the signature Belcher =
+  Qr Master Genl U.S. (H).
+- **E67** H 13, C 1 ("tar pedro" = torpedoes), "Fox" plain. N1.
+- **E68** H 16, I 1, M 1. The decoder's [5] for "person" ("in person") is plain (the block needs a `plain: person` line), so H 17 -> 16. I:
+  "platation" = Plate (**Communicate**) + -ation, "if you deem his **communication** trustworthy" (key.md p.19 l.12; key-no2.md logs "plantation" =
+  communication as C in N2-BC). "Burr" + "patent" (Bridge, H) = Burbridge (a plain name split). M: "Jones" ("insert Jones cipher stop").
+- **E70** H 11, I 1. "Ramsay" read [Effect] is the signer's plain name (H 13 -> 12 as LS-R7 says); "Polkaing" is **"Pockaing"** on the image, so
+  [Commanding] rests on the clerk's slip for Polka (I, H 12 -> 11).
+- **E72** H 15, I 0. "Stephen son" is **Brig. Gen. John D. Stevenson**, commanding at Harper's Ferry (OR I/43 pt 2, I/46 pt 2), a phonetic split:
+  the decoder's [In the] for "Stephen" is wrong (H 16 -> 15). The signature "see see Awe gear" = **C. C. Augur** (phonetic, plain), consistent
+  with Augur's printed telegram of the night before. The tail's Palate ([Brigadier General]) is the clerk's group after the name.
+- **E73** H 8, I 3, M 1. I: "polkers" = Polka + -ers, **commanders**; "utopia" twice = **Utophia = Parenthasis** (key.md p.22 l.17) -- the clerk wrote
+  the parentheses as well. M: "squadron", which the decoder reads [Marine] (Squadron = Marine, key.md p.21 l.25) but which reads better plain in a
+  Navy telegram to a squadron commander.
+- **E74** H 2 (Webster = signed, Brutus = Secretary of War), the rest clear text; "Sand hers" = Sanders (a name, unidentified), "call Coox Edwards"
+  the clerk's tail. LS-R7's own note stands: the sense is read from the page, not from the key.
+- **N2-BN** H 15, I 0. "Humphreys" is plain (**A. A. Humphreys**, Chief of Staff, Army of the Potomac, who wrote the order of 29 Feb): the decoder's
+  [Wilmington] (Humphrey, key-no2.md) is wrong, H 16 -> 15. "Oliver Ellsworth" = 20 + 9 = **29** (H, key-no2.md fly leaf) is right and matches the
+  printed order's date, so LS-R7's M on it is lifted. "The patent pewter whig of Canvass udders" = "The **[Advance] [Bridge] [Train]** of canvas
+  **[Pontoon]s**" (H): the printed order calls it an "advance guard train"; LS-R7's table reading "patent pontoon bridge train" is wrong on "patent".
+  "Oscar brooks" = **[42]** chess per wagon, the printed order's figure.
+- **E69, E75 (key not in hand, counts only).** Over the whole transcriptions: E69 (70 tokens) H 10 under No. 1, 10 under No. 2, 4 under No. 9; E75
+  (46 tokens) 7, 11, 6. None of the three gives a sentence (E69: "press the [Embark]/[Defeat] on this [Front]/[Evacuation]"; E75 "pass through
+  [President of the U.S.]/[Beauregard]"). **None of the three keys reads them**; LS-R7's verdict stands.
+
+### 5. Classification (key `period` for all)
+`depth_pct` = H / (H + I + M) over the message's cipher tokens (plain names, the clerk's tail groups and check words excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E66 QMG (Belcher) to Horner for Van Vliet, New York, 3 Jan 1865 | **N3** | unknown | D3 | 86.8 (33 H of 38) | image, all 12 lines; external: Van Vliet's printed replies (OR I/46 pt 2 p.28) answer it: steamers available at New York, same day |
+| E67 H. A. Wise to Porter, 3 Dec 1864 | N1 | known (ORN I/11) | D4 | 100 (13 H + 1 C of 14) | word for word with the print |
+| E68 Stanton to Bruch, Louisville, for Burbridge, 7 Aug 1864 | **N3** | unknown | D3 | 88.9 (16 H of 18) | M/I lines re-read on the image; external: Bruch the military-telegraph officer and Burbridge commanding the District of Kentucky (OR I/39 pt 2) |
+| E70 Ramsay to Capt. Smith, St Louis, for Callender, 16 Jun 1864 | **N3** | unknown | D3 | 91.7 (11 H of 12) | image, all 10 lines; external: Callender at the St Louis arsenal shipping guns, Carrington at Indianapolis (OR I/39 pt 2) |
+| E72 Augur to Stevenson, Harper's Ferry, 23 Sept 1864 | **N2** | substance known (OR I/43 pt 2 pp.142-143) | D3 | 100 (15 H of 15) | image, all 9 lines; Augur's printed telegram of 22 Sept 9.45 p.m. (same troops, same morning) |
+| E73 Bureau (B. F. Greene) to S. P. Lee, Mound City, 7 Nov 1864 | **N2** | substance known (ORN I/26 pp.209-211) | D2 | 66.7 (8 H of 12) | M/I lines re-read on the image; the Bureau of Navigation circular of April 1864 prints the add/subtract rule |
+| E74 Stanton (Brutus) to Chas Armond, 11 Sept 1864 | **N3** | unknown | D1 | 100 (2 H of 2) | image lines 1-2 and tail; two code words only, the text is clear |
+| N2-BN Benham to Humphreys, 16 Mar 1864 | **N3** | unknown | D3 | 100 (15 H of 15) | image, M lines; external: Humphreys' printed order of 29 Feb (OR I/33 pp.616-617): advance guard train, canvas pontoons, 42 chesses per chess-wagon |
+
+- **N3 (E66, E68, E70, N2-BN; E74 at D1, not a counted solve)**: no prior plaintext or decipherment located after the logged search. Not N4: NARA
+  RG 92/107/156, OR ser. III vols. 4-5, the press pages listed and HathiTrust full text are unread, JSTOR rows pending. Safe sentence (each): "Read
+  at grade H with the period Cipher No. 1 book (No. 2 for N2-BN); no prior decipherment or printed text located in the Official Records (Army and
+  Navy, by date and correspondent), Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026)." Unsafe:
+  "first", "unpublished", "never printed", "unknown telegram".
+- **E66 and N2-BN are weak N3 (the E62/E57 shape)**: the other half of each exchange is printed (Van Vliet's reply; Humphreys' order). A second
+  audit should read the Quartermaster General's and the Engineer Brigade's letters sent, and the Meigs/Benham reports, before either is counted twice.
+- **E72, E73 at N2 (the E49 precedent, AUD2-LS-E)**: the substance is printed -- E72's troop movement by the same sender the evening before, E73's
+  signal rule in the Bureau's own April circular. Not counted.
+- **E74 at D1**: two code words (the signature) are the whole cipher content; no clause above the authentication distance exists. N3 as a text,
+  not a counted solve. "Sanders" and "Chas Armond" unidentified.
+- Depth sentences (D2+, written from the reading, checked against the derived block): **E66** "On 3 Jan 1865 the Quartermaster General's office
+  tells Van Vliet at New York that Colonel Wise has called for steamers to take 1,000 men of the construction corps of the U.S. Military Railroads
+  from Baltimore to Savannah, and that 4,000 more troops are to go from Baltimore to sea with coal and water for fifteen days, destination not
+  reported; he is to report the vessels he can send and dispatch them unless countermanded." **E68** "On 7 Aug 1864 Stanton has Captain Bruch at
+  Louisville pass to General Burbridge an order to see Surgeon Ferry in person and hear his statement, to send its substance by cipher telegraph if
+  he finds the communication trustworthy and important, and to send Ferry to Washington under a guard that will see he does not escape if a personal
+  interview seems important." **E70** "On 16 Jun 1864 the Chief of Ordnance orders Major Callender, commanding the St Louis arsenal, to issue at once
+  to General Carrington at Indianapolis four 12-pounder howitzers with implements and equipments complete and 400 rounds of assorted ammunition,
+  100 of them canister, sent by a special messenger, and to report the issue by telegraph." **E72** "On the morning of 23 Sept 1864 Augur tells
+  Brigadier General Stevenson at Harper's Ferry that nearly 5,000 troops leave Washington for Winchester that morning and that transportation must
+  be ready for their rapid march on arrival." **E73** "On 7 Nov 1864 the Navy's bureau tells S. P. Lee, via Cairo, to have the commanders in his
+  squadron make all important signals by adding a number set in his order to the signal numbers made and subtracting it from those received."
+  **N2-BN** "On 16 Mar 1864 Benham reports to Humphreys that the advance bridge train of canvas pontoons ordered on 29 February will be ready that
+  day, with 50 chess on each chess wagon though they can be reduced to 42, and the additional wagons sent if still needed."
+
+### 6. Postmortem
+- Corrections to LS-R7's section (a note is appended there): E66's Wise is Colonel (George D.) Wise of the Quartermaster's Department at Baltimore,
+  not H. A. Wise of the Navy, and "Vain fleet", "Banditte", "Weaselira" read from the key (Van Vliet, Baltimore, steamers); E72's "Stephen son" is
+  Stevenson and its signature is C. C. Augur; E73's "polkers" and "utopia" are book words (commanders, parenthesis); E68's "platation" is
+  communication and "person" is plain; E70's image reads "Pockaing"; N2-BN's "patent" is [Advance], "Humphreys" plain, "Oliver Ellsworth" = 29 is H.
+  Of LS-R7's 13 M tokens, 11 are resolved here (2 left: E66 "Waymomers", E68 "Jones"), and four decoder H on plain words are withdrawn.
+- Not changed (no decoding in a verifier's brief): ciphertext.txt / reading.md. Next, for a reader, ~$0.3: `plain: person` (E68), `plain: Stephen`
+  (E72), `plain: Humphreys` (N2-BN), `plain: Ramsay` (E70), "Banditte"/"Weaselira"/"polkers"/"utopia" variant rows or plain notes, and E70's
+  "Pockaing" as the image has it.
+- The filter's catch here: 1 of 8 in print word for word (E67, ORN), 2 with their substance printed (E72, E73), 2 with the other side of the
+  exchange printed (E66, N2-BN). Navy traffic (E67, E73) is in ORN, which LS-PRE's or_cov never checked; a Navy row should be checked against ORN
+  before it is read.
+- Rows: status.json one result row per N3 entry (E66, E68, E70, E74, N2-BN), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows
+  SO-ECKERT-E66, -E68, -E70, -E74, -N2BN with prompts in second-opinions/; JSTOR-QUEUE.tsv 10 rows. Requests: in the ROOM done line.

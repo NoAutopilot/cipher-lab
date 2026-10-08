@@ -6059,6 +6059,210 @@
       "depth_sentence": "Captain Wise at the Astor House, New York, is told to work with Major Van Vliet on the vessels chartered for the expedition, all to reach Fort Monroe by the 24th and be coaled by the 25th, because Butler means to move thirty thousand men, two thousand horses, ten batteries and a hundred wagons.",
       "depth_check": "fresh rule-7 re-derivation (LS-V6)",
       "depth_note": "14/14 code words H (mostly in clear)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V7)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 86.8,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_by": "LS-V7 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864-65: the Quartermaster General's office to Van Vliet, New York, 3 Jan 1865, steamers for 1,000 construction-corps men to Savannah and 4,000 troops from Baltimore (E66)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (Army and Navy, by date and correspondent), Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; weak N3: Van Vliet's two replies of 3 Jan 1865 are printed (OR I/46 pt 2 p.28), this question is not located; 'Waymomers' unread; SO-ECKERT-E66 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.257, pointer 9151, E66"
+      ],
+      "document_id": "Huntington mssEC 19 p.257, pointer 9151, E66",
+      "documents": [
+        "Huntington mssEC 19 p.257, pointer 9151, E66"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "33 H + 4 I + 1 M of 38 code words",
+      "unresolved_spans": "Waymomers (M)",
+      "reading_version": "LS-R7 8 Oct 2026 (reading.md), grades as revised in AUDIT (LS-V7) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V7)' section 5",
+      "depth_sentence": "On 3 Jan 1865 the Quartermaster General's office tells Van Vliet at New York that Colonel Wise has called for steamers to take 1,000 men of the construction corps of the U.S. Military Railroads from Baltimore to Savannah, and that 4,000 more troops are to go from Baltimore to sea with coal and water for fifteen days, destination not reported; he is to report the vessels he can send and dispatch them unless countermanded.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V7); image checked, all 12 lines (LS-V7); external: Van Vliet's printed replies of 3 Jan 1865 to Meigs (OR I/46 pt 2 p.28, steamers available at New York) answer this telegram and fix its year",
+      "depth_note": "33 H + 4 I + 1 M of 38 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V7)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 88.9,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_by": "LS-V7 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Stanton via Capt. Bruch, Louisville, to Burbridge, 7 Aug 1864, hear Surgeon Ferry's statement and send him to Washington under guard (E68)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (Army and Navy, by date and correspondent), Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; 'Jones' unread; SO-ECKERT-E68 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.146, pointer 9039, E68"
+      ],
+      "document_id": "Huntington mssEC 19 p.146, pointer 9039, E68",
+      "documents": [
+        "Huntington mssEC 19 p.146, pointer 9039, E68"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "16 H + 1 I + 1 M of 18 code words",
+      "unresolved_spans": "Jones (M)",
+      "reading_version": "LS-R7 8 Oct 2026 (reading.md), grades as revised in AUDIT (LS-V7) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V7)' section 5",
+      "depth_sentence": "On 7 Aug 1864 Stanton has Captain Bruch at Louisville pass to General Burbridge an order to see Surgeon Ferry in person and hear his statement, to send its substance by cipher telegraph if he finds the communication trustworthy and important, and to send Ferry to Washington under a guard that will see he does not escape if a personal interview seems important.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V7); M/I lines checked on the image (LS-V7); external: Sam Bruch the military-telegraph officer reporting to Eckert and Burbridge commanding the District of Kentucky in OR I/39 pt 2",
+      "depth_note": "16 H + 1 I + 1 M of 18 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V7)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 91.7,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V7 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: the Chief of Ordnance to St Louis, 16 Jun 1864, Callender to issue four 12-pounder howitzers and 400 rounds to Carrington at Indianapolis (E70)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 1 book; no prior decipherment or printed text located in the Official Records (Army and Navy, by date and correspondent), Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; the Mereness Calendar not searched inside; SO-ECKERT-E70 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.93, pointer 8985, E70"
+      ],
+      "document_id": "Huntington mssEC 19 p.93, pointer 8985, E70",
+      "documents": [
+        "Huntington mssEC 19 p.93, pointer 8985, E70"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "11 H + 1 I of 12 code words",
+      "unresolved_spans": "none (Pockaing graded I)",
+      "reading_version": "LS-R7 8 Oct 2026 (reading.md), grades as revised in AUDIT (LS-V7) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V7)' section 5",
+      "depth_sentence": "On 16 Jun 1864 the Chief of Ordnance orders Major Callender, commanding the St Louis arsenal, to issue at once to General Carrington at Indianapolis four 12-pounder howitzers with implements and equipments complete and 400 rounds of assorted ammunition, 100 of them canister, sent by a special messenger, and to report the issue by telegraph.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V7); image checked, all 10 lines (LS-V7); external: Callender at the St Louis arsenal and Carrington at Indianapolis in OR I/39 pt 2",
+      "depth_note": "11 H + 1 I of 12 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V7)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D1",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "2",
+        "other": "0"
+      },
+      "depth_by": "LS-V7 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Stanton (Brutus) to Chas Armond, 11 Sept 1864, the publication of Sanders' despatch an enormous blunder (E74; clear text, signature in cipher)",
+      "grade": "N3",
+      "line": "Mostly clear text, signed with two Cipher No. 1 code words read at grade H; no prior printed text located in the Official Records, the 1864 press pages read, Internet Archive full text or Google Books (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; D1: only the signature is in cipher, so not a counted solve; 'Sanders' and the addressee unidentified; five press pages of 9-30 Sept 1864 unread; SO-ECKERT-E74 queued",
+      "phrases": [
+        "Huntington mssEC 19 p.179, pointer 9071, E74"
+      ],
+      "document_id": "Huntington mssEC 19 p.179, pointer 9071, E74",
+      "documents": [
+        "Huntington mssEC 19 p.179, pointer 9071, E74"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "2 H of 2 code words; the rest clear text",
+      "unresolved_spans": "Sand hers, Chas Armond (unidentified names)",
+      "reading_version": "LS-R7 8 Oct 2026 (reading.md), grades as revised in AUDIT (LS-V7) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V7)' section 5",
+      "depth_check": "fresh rule-7 re-derivation (LS-V7); image lines 1-2 and tail (LS-V7)",
+      "depth_note": "2 H of 2 code words; the rest clear text"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (LS-V7)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth": "D3",
+      "depth_pct": 100.0,
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_by": "LS-V7 verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "title": "Eckert 1864: Benham to Humphreys, 16 Mar 1864, the advance bridge train of canvas pontoons ready (N2-BN, Cipher No. 2)",
+      "grade": "N3",
+      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I vol. 33 by date and correspondent), the 1864 press, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "NARA RG 92/107/156, OR ser. III vols. 4-5 (unreachable on IA), the press pages listed in AUDIT (LS-V7) and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; weak N3: Humphreys' order of 29 Feb 1864 that this answers is printed (OR I/33 pp.616-617), the report itself is not located; SO-ECKERT-N2BN queued",
+      "phrases": [
+        "Huntington mssEC 19 p.22, pointer 8914, N2-BN"
+      ],
+      "document_id": "Huntington mssEC 19 p.22, pointer 8914, N2-BN",
+      "documents": [
+        "Huntington mssEC 19 p.22, pointer 8914, N2-BN"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "15 H of 15 code words",
+      "unresolved_spans": "none",
+      "reading_version": "LS-R7 8 Oct 2026 (reading-no2.md), grades as revised in AUDIT (LS-V7) section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V7)' section 5",
+      "depth_sentence": "On 16 Mar 1864 Benham reports to Humphreys that the advance bridge train of canvas pontoons ordered on 29 February will be ready that day, with 50 chess on each chess wagon though they can be reduced to 42, and the additional wagons sent if still needed.",
+      "depth_check": "fresh rule-7 re-derivation (LS-V7); M lines checked on the image (LS-V7); external: Humphreys' printed order of 29 Feb 1864 (OR I/33 pp.616-617: advance guard train, canvas pontoons, 42 chesses per chess-wagon) matches the date [29], [Advance] and [42]",
+      "depth_note": "15 H of 15 code words"
     }
   ],
   "lanes": [
