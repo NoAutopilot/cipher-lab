@@ -1,0 +1,10 @@
+power_0085_r9r10	letters 40	real -1.471	shuffle mean -2.016 p99 -1.596 max -1.461	shuffles>=real 1/1000	PASS	noousauqoneplusgagnesueprduacechangemenu
+pooled_7_frames	letters 89	real -1.643	shuffle mean -2.013 p99 -1.660 max -1.514	shuffles>=real 7/1000	PASS	arnoldsteosandeilamaguerisonlavildesteqvsnkrautblkkkrkrkkrkbeuclingbbenbercstgodarnprbart
+frame_08_0375	letters 16	real -1.810	shuffle mean -2.032 p99 -1.407 max -1.202	shuffles>=real 223/1000	reported (not gated)	arnoldsteosandei
+frame_08_0214	letters 12	real -1.186	shuffle mean -2.026 p99 -1.282 max -1.064	shuffles>=real 4/1000	reported (not gated)	lamaguerison
+frame_08_0436	letters 17	real -1.858	shuffle mean -1.973 p99 -1.142 max -0.942	shuffles>=real 376/1000	reported (not gated)	krautblkkkrkrkkrk
+frame_08_0241	letters 14	real -1.825	shuffle mean -2.025 p99 -1.320 max -1.072	shuffles>=real 285/1000	reported (not gated)	lavildesteqvsn
+frame_08_0435	letters 9	real -1.356	shuffle mean -2.031 p99 -1.133 max -0.952	shuffles>=real 52/1000	reported (not gated)	beuclingb
+frame_08_0065	letters 6	real -0.861	shuffle mean -2.043 p99 -0.941 max -0.815	shuffles>=real 2/1000	reported (not gated)	benber
+frame_09_0070	letters 15	real -1.967	shuffle mean -2.021 p99 -1.343 max -1.095	shuffles>=real 430/1000	reported (not gated)	cstgodarnprbart
+variant_runs_only_no_singletons	letters 81	real -1.711	shuffle mean -2.023 p99 -1.652 max -1.491	shuffles>=real 18/1000	reported (not gated)	arnoldsteosandlamaguerisonlavildesteqvsnkrautblkrkrkrbeuclingbenberstgodarnprbart

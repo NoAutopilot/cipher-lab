@@ -1,0 +1,37 @@
+line	codes	conf	note
+694-08_0375_r1	66.60.21.33.12.120	med	line start ... 'a 51.28' (A high; B 33 alt 35)
+694-08_0375_r2	51.28	med	'a' ... ', et'
+694-08_0375_r3	35.16.57.66.14.100	med	'et' ... 'au'; 57 alt 51, 14 alt 11 (both passes)
+694-08_0375_r4	187	low	'au' ... 'l'on'; 187 on zoom (B alt 107, A alt 184/181)
+694-08_0375_r5	177	med	'(cours) contre 177; mais que nous restions'
+694-08_0375_r6	35	med	'a l'egard de 35, la notre je l'avoue'
+694-08_0375_r7	46	med	'c'est que 46 ressemble a cet enfant'
+694-08_0214_r1	160	med	'et 160 avoit entrepris'
+694-08_0214_r2	110.297	low	'mettre Mons: 110.297 d'icy'; middle digit 9 (A,B) alt 4 (B alt; MANT-0609 zoom read 247 / 2.47)
+694-08_0214_r3	31.66.7.6.35.60.9.51.16.21	med	'qu'on n'attend que ... pour achever l'ouvrage'; 9 = y-glyph; 51 alt 57
+694-08_0214_r4	155	med	'regrette que 155 n'est pas icy'
+694-08_0241_r1	110.5.9.44.120.35.51.28.10.24.5.99.21	med	'la Cour regarde ... que'; 99 = two y-glyphs (A alt 49, B alt 94); 9 tok3 alt 7
+694-08_0241_r2	252	low	'que 252' at line end; alt 232
+694-08_0436_r1	11.60.66.6.28	med	para 4: '... est toujours malade'
+694-08_0436_r2	55.12	med	'55.12 dit hautement qu'il a vole le Roi'
+694-08_0436_r3	11	med	'et que 11, qui le soutient'
+694-08_0436_r4	11	med	'les raisons qui portent 11 a cela'
+694-08_0436_r5	11.60	med	'qu'il seroit 11.60 habile homme'
+694-08_0436_r6	11.60	med	'2) que 11.60 luy a prete de l'argent'
+694-08_0436_r7	11	med	'dans le tems que 11 etoit encore in statu expectationis'
+694-08_0436_r8	11.60	med	'3) que je devine, que 11.60 fait peutetre'
+694-08_0436_r9	150	med	'envers 150, mais' (alt 130)
+694-08_0436_r10	160	med	'mais que 160 ne sembloit pas'
+694-08_0436_r11	230	low	'l'avis que 230 d'icy avoit donne'; code or number unsettled
+694-08_0436_r12	160	med	'que 160 ...'
+694-08_0436_r13	11	med	'voyage avec 11 pour s'envoyer promener'
+694-08_0435_r1	55.35.6.90.44.9.21.7	low	'envoye icy par 55.35.6.90.44.9.21.7, qui luy a aussi procure la lettre de creance'; 44 struck/overwritten; 90 alt 40
+694-08_0435_r2	153	med	'Je n'ai pas ecrit a 153 que le frippon'
+694-08_0435_r3	55	med	'envoye icy par 55'
+694-08_0065_r1	55.35.21.20.10.26	med	'Lr. a ecrit a [blot] 55.35.21.20.10.26, apparemment pour'; A read first group 15 (blot), B 55; zoom 55
+694-09_0070_r1	30	med	'promis 30 a 51.59'
+694-09_0070_r2	51.59	med	59 alt 39
+694-09_0070_r3	7.16.19.120	med	'ingenium de 7.16.19.120'; 19 (A, y-glyph) alt 14 (B)
+694-09_0070_r4	25.26.21	med	'promis a 25.26.21: de contribuer'
+694-09_0070_r5	17.26	med	'La reponse du 17.26: ba: au compliment de'; 'ba' is written in letters
+694-09_0070_r6	20.50.27.28	med	'au compliment de 20.50.27.28: est courte et bonne'
