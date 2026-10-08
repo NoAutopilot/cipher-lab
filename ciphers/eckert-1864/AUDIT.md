@@ -3455,3 +3455,98 @@ Phrases taken verbatim from the decoded lines. Context found on the way is conte
   "opinion" (only that occurrence), "rabbits" in O9-BA line 6, and a note on key-no2.md's Spit row (Near vs Men; check the mssEC 47 page).
 - Rows: status.json one result row per N3 entry (E78, N2-BQ, O9-BA, O9-BB, O9-AK, E76), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows
   SO-ECKERT-E78, -N2BQ, -O9BA, -O9BB, -O9AK, -E76 with prompts in second-opinions/; JSTOR-QUEUE.tsv 12 rows. Requests: in the ROOM done line.
+
+## AUDIT 2 (second adversarial, AUD2-LS3-A)
+
+Verifier AUD2-LS3-A (account 4, WORK-QUEUE row AUD2-LS3-A, session_01AhqJo1JX9kaR6YedNXxkLQ), 8 Oct 2026, 11:36-12:1x UTC by `date -u`; a
+separate session from the readers (LS3-R18: E78, N2-BQ, O9-BB; LS3-R9: O9-AK) and from the first auditor (LS3-V18a), all account 2; not
+protecting any of their conclusions. Scope: **E78, N2-BQ, O9-BB, O9-AK** (LS3-V18a section 5). Nothing decoded beyond `--check`.
+Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. Key source for all four: `period`.
+
+### 1. Re-derivation (rule 7) and image
+- `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check`: exit 0 each (11:38 UTC).
+- Image (Huntington IIIF `hdl.huntington.org/iiif/2/p16003coll11:<pointer>/full/2400,/0/default.jpg`, crops cut with PIL in scratch, not
+  committed). **N2-BQ (9716) had no image check in LS3-V18a** (its section 1 lists 9714, 9717, 8946, 9111): read here, header to tail, two crops
+  (x 150-2250, y 220-700 and 680-1180 of the 2400 px page). Word for word with ciphertext-no2.txt, header "No 2" and "7 PM" included; the image has
+  "that that would" (two "that"), as our file; the Huntington's volunteer transcription drops one. **O9-AK** (8946, crop y 700-1700): word for word,
+  "Goo" as transcribed (a "Gov" reading of the same strokes is possible; plain word, no effect on grades). **E78** (9714, lines 2-8) and **O9-BB**
+  (9717, lines 2-14): spot crops agree with the files; "mangle", "Surgery" as transcribed.
+
+### 2. Families LS3-V18a did not cover, searched first (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| **OR ser. III vol. 5** (brief's lesson: ser. III vols. 4-5 for every entry) | IA `cu31924079575381` djvu (identified as SERIES III VOL V by its running heads), whole-volume normalized regex: 22 phrase patterns over the four entries (e.g. "transportation coming", "omitting land", "ensure a cipher", "expediting the arrival", "destined ports", "Johnson's Island", "friday next", "regiment of militia") | no entry; Johnson's Island appears only in the 1865 annual reports (guards, barracks) |
+| OR ser. III vol. 4, a second copy | IA `cu31924079575365` djvu, same 22 patterns | no entry; its index confirms "Militia for guard duty at Johnson's Island, 234-237, 240, 241", the pages LS3-V18a already read |
+| **OR ser. II vol. 7** (prisoners of war, from Apr 1864; Johnson's Island is a prison) | IA `warofrebellionco0000unse_l7n0` djvu (SERIES II VOLUME VII); "friday next", militia within 80 chars of Johnson's Island, every "April 23-26, 1864" with Heintzelman/Halleck/militia nearby | no entry ("Friday next" is a Missouri retaliation case; 26 Apr is Fort Delaware to Hoffman) |
+| **Holding archive's public transcription** (the D2V-E74 test; not in LS3-V18a's log) | Huntington CONTENTdm `dmGetItemInfo` for 9714, 9716, 9717, 8946 (`transc` field, volunteer transcription, Zooniverse "Decoding the Civil War") | **each entry's clear words are public** (section 3) |
+| Huntington full text (`CISOSEARCHALL`, p16003coll11) | biggs (84), benham (37), tugs (55), johnson's (5), vliet (75), destined (9), expediting (2), estimates (40); AND pairs vliet+tugs (6), biggs+transportation (10), benham+estimates (1), heintzelman+militia (1), benham+confidential (5), schooners+ferry (1); item info read for 4554, 10262, 10305, 9712, 8934, 8939 (4561 empty reply, not retried) | **4554** (mssEC 11 p.113): Humphreys' 2.30 p.m. telegram to Benham of 21 Apr in clear ("use the cipher when replying by Telegraph to confidential communications land Transportation will not be needed the 15th regiment will go with the bridging"); **8934** (mssEC 19 p.42): Meigs to Capt. G. D. Wise, 19 Apr, in clear ("Order all vessels engaged by you and not already sailed to report at Fort Monroe to Colonel H. S. Biggs ... instead of coming to Washington"); **8939** (mssEC 19 p.47): Meigs to Van Vliet, 20 Apr, No. 9 with most words clear ("eight tugs Washn needs six & Ft Monroe two ... Ft Monroe to be first supplied"; "all should be at hammer by twenty fourth"); **10262** (mssEC 10 p.120): a reply on six schooners, barges and tugs that cannot reach Fort Monroe "by the twenty fourth" (Van Vliet's side, header not read); 9712 (20 Apr, to Biggs, cipher), 10305 (7 May, Ohio militia; unrelated). None is any of the four entries |
+| Papers of U. S. Grant vol. 10 (LS3-V18a: "page not read") | be-api fts on `papersofulyssess0010gran`: Benham (1 hit, Rappahannock bridges, OR I/36 pt 2 p.628 note), Johnson's Island (1), Van Vliet (1, Frederick, Burnside's aide), Biggs (0), Heintzelman (1) | none of the four. **Context for O9-AK**: a note quotes Halleck to Grant, **2 May 1864** -- "As fast as I can get militia regiments, I will hurry to the front the present guards at Johnson's Island, &c." -- printed in full at **OR I/36 pt 2 p.328** (`warofrebellion362unit` djvu, read) |
+| Halleck-Heintzelman print, other volumes | IA fts "Colonel Hoffman says that two regiments" (10 copies) | OR I/37 pt 2 p.71: Halleck to Heintzelman, **5 July 1864**, two regiments at Johnson's Island to Washington; a later exchange, not O9-AK |
+| The Mereness Calendar (LS3-V18a lead, O9-AK) | Google Books API (key, country=US): 6 queries, 3 answered 503 (not retried) | snippets only: "... militia to Johnson's Island for duty. W.D. 108 H.D.L.B." stands directly before an entry dated **1864, Aug. 12**, and another snippet lists Militia under "Vol.34 p 41 W.D. 211 H.D.Orders"; the entry's own date is not in any snippet. **Unread**; by its neighbour it is more likely a summer 1864 order than the 25 Apr telegram. Either way the O9-AK class below does not depend on it |
+| 1864 press (loc.gov Chronicling America JSON, `dates=` 21 Apr-5 May) | "omitting land transportation" 0; "expediting the arrival" 0; Biggs transportation Monroe 0; Benham pontoon 0; "Fourteenth New York heavy artillery" 0; "Van Vliet" 29 (not read); "Johnson's Island" militia 11 -- two read through ALTO OCR (Cleveland Morning Leader 29 Apr p.1, Daily Ohio Statesman 29 Apr p.3): Ohio militia call and draft news; "Johnson Island" there is an Arkansas river island; control query "Heintzelman" answered 3 | no entry located; chroniclingamerica.loc.gov's own OCR endpoint answered a Cloudflare challenge once and was not retried |
+| IA full text, fresh exact phrases (be-api) | 12 phrases not in LS3-V18a's set: "regiment of militia at Johnson's", "as soon as relieved send", "Governor of Ohio reports", "is your transportation coming", "stop everything coming up the Potomac", "estimates were sent at once", "not being aware that" + cipher Benham, "I changed the words", "ferry-boats, of barges", "destined ports" Vliet, "I fear delay" Meigs, "which will be needed here" Biggs | 0 hits on every exact phrase from the four bodies; the keyword-ANDed ones return only unrelated texts (Chancellorsville, coffee, lyrics) |
+| JSTOR | families (i) and (ii) already queued by LS3-V18a for all four (JSTOR-QUEUE.tsv rows 411-420) | pending (never blocks) |
+| Unread / unreachable | NARA RG 92 (QMG telegrams sent), RG 107, RG 77; the Meigs Papers Apr 1864 letterbook at LoC (`mss325400076`, 229 images, no OCR; logged by an earlier audit); the Mereness entry's page; the other 27 "Van Vliet" and 9 Johnson's Island press pages; HathiTrust full text | unread |
+
+### 3. The deciding finding: the bodies are public, and two entries' hidden words are given by print
+The Huntington's catalogue record for each pointer carries the entry's clear words verbatim (transcribers K. Peck, M. Underwood; digitised 20/23
+Nov 2015). What the key adds is only the code words. Counted as body words (address, date, time and signature excluded, as for E74 and E81-E84):
+- **N2-BQ** (9716): public text "Your Brooks whiffs of wherry are recd & the estimates were sent at once to Shark Rucker omitting land wayworn tulip
+  whimpers willbe sent as desired I first marked the one referred to confidential but not being aware that would ensure a Pigeon I changed the words
+  so that I presumed they would be safe H. W. Benham". Body code words with content: 2, Telegrams, to day, Transportation, Telegrams, Cipher. **The two
+  that carry the point -- "land [transportation]" and "ensure a [cipher]" -- are the two points of the telegram it answers**, Humphreys to Benham,
+  21 Apr, printed at OR I/33 p.934 and also in clear in the same archive's public transcription (4554): "use the cipher when replying ... land
+  Transportation will not be needed". Reply-plus-printed-question is the E49 shape (AUD2-LS-E: N2, the other half of the exchange in OR), here with
+  the reply's own body public as well. **N2** (lowered from N3).
+- **O9-AK** (8946): public text "Columbus O for bologna ---- The Goo of Cologne reports that by friday next he will have a Stanhope of militia at
+  Johnson's Island ---- as soon as relieved send youth there to the field as previously ordered applause". Body code words: Ohio, Regiment, Troops.
+  The address (Columbus O) gives the state; the substance -- Governor Brough's regiment of militia for guard duty at Johnson's Island so that the
+  veteran regiments there can go to the front, and the order already given -- is printed in OR ser. III vol. 4 pp.234-235, 240-241 (Brough to
+  Stanton 18 Apr, Stanton's authority, Stanton to Heintzelman 21 Apr) and restated by Halleck to Grant on 2 May (OR I/36 pt 2 p.328: "I will hurry
+  to the front the present guards at Johnson's Island"). What the key adds beyond print and the public text is Halleck's name and the words
+  Regiment/Troops in this sentence. **N2** (lowered from N3): substance in print, Halleck's wording of 25 Apr not located in print.
+- **E78** (9714): public text "Is your Whig coming Sugar Wick daily by mangle period At present orders stop every thing coming up Attica and send it
+  to Animal but I have ordered a large quantity of Wherry which will be needed here and Persia you are supplied should be allowed to come here".
+  Body code words with content: Transportation (twice), Interrogation, Report, Potomac, Monroe, As soon as: the places and the object are in code.
+  The standing order E78 refers to is in clear in a public sibling (8934, Meigs to Wise, 19 Apr: vessels to report to Biggs at Fort Monroe
+  instead of coming to Washington), but E78's own instruction -- that the transportation ordered for Washington be let through once Biggs is
+  supplied, and that he report daily -- is not located in print or in a clear sibling. **N3, weak** (the E83/E84 line of LS3-V18b: body public
+  except several content code words).
+- **O9-BB** (9717): public text "Enough Surgery and Propellers period Complete the supply of tugs of Ferry boats of barges and Schooners for both
+  Hammer and Pagoda period There will be much material to move period Steamers Enough to move youth are now Engaged period Devote yourself to
+  Expediting the arrival of vessels at their destined ports period I fear delay which would be most injurious sig M C Meigs Abbot". Body code
+  words: Fort Monroe, Washington, Troops (Surgery M). Most of the order is in clear in the public record; the two destinations are guessable from
+  Meigs's 20 Apr telegram to the same man (8939, "Washn needs six & Ft Monroe two"), which is a different and earlier order, not this one's
+  substance. **N3, weak** (E84 shape). A third audit could reasonably draw the line at N2 for this one; this audit does not, because no text
+  located gives this order's substance.
+
+### 4. Classification and depth
+| ID | N-class | text known? | key | depth | check |
+|---|---|---|---|---|---|
+| E78 QMG (Belcher) to Lt. Col. H. Biggs, 21 Apr 1864 3.30 PM | **N3, weak** (kept; "weak" added) | clear words public (Huntington 9714); code words not | period | D3 kept, 92.3 | clause: Attica = Potomac and Animal = Monroe read in the 20 Apr cipher to Biggs (9712: "down the Attica", "join you at Animal") and here; external: the clear 19 Apr order to Wise (8934) on vessels reporting to Biggs at Fort Monroe instead of Washington; image lines 2-8 |
+| N2-BQ Benham to Humphreys, 21 Apr 1864 7 PM | **N2** (lowered) | substance known: body public (9716) and the hidden points in the printed question (OR I/33 p.934; clear in 4554) | period | D3 kept, 100 | image all 9 lines (first image check of this entry); external: the printed question supplies Cipher and Transportation, matching Pigeon and Wayworn |
+| O9-BB Meigs to Van Vliet, 22 Apr 1864 10 PM | **N3, weak** (kept; "weak" added) | clear words public (9717); three code words not | period | D3 kept, 90.0 | clause: Hammer = Fort Monroe reads in 8939 (20 Apr, "all should be at hammer by twenty fourth", beside "Ft Monroe to be first supplied") and here; Pagoda = Washington in O9-AL; image lines 2-14 |
+| O9-AK Halleck to Heintzelman, 25 Apr 1864 | **N2** (lowered) | substance known: OR III/4 pp.234-241 and OR I/36 pt 2 p.328; body public (8946) | period | D3 kept, 100 | image all lines; Bologna/Bolivia = Heintzelman reads in O9-AL (printed over Halleck's name); youth = Troops in O9-BB |
+
+- Depth is kept, not raised: each has a code clause under the bar (a value reading sensibly in two independent contexts, cited above), >= 80% of
+  cipher tokens H, and a non-statistical external check. A lower N-class does not change what the reading covers.
+- **Safe sentences.** N2-BQ: "Read at grade H with the period Cipher No. 2 book; the telegram's clear words are in the Huntington's public
+  transcription of mssEC 18 p.50, and the two points it answers (use the cipher; no land transportation) are in Humphreys' printed telegram of the
+  same afternoon (OR ser. I vol. 33 p.934); Benham's own wording with its code words read was not located in print." O9-AK: "Read at grade H with the
+  period vocabulary 'No. 9'; the substance (Ohio militia relieving the Johnson's Island guards for the front) is printed in OR ser. III vol. 4
+  pp.234-241 and ser. I vol. 36 pt 2 p.328; Halleck's wording of 25 Apr was not located in print." E78 and O9-BB: LS3-V18a's sentence, with
+  "the clear words are in the Huntington's public transcription; no prior decipherment of the code words or printed text located in the Official
+  Records (Army ser. I, II vol. 7, III vols. 4-5; Navy), the Butler and Grant editions, Internet Archive full text, Google Books, the 1864 press
+  searched, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026)". Unsafe for all four: "first", "unpublished", "unknown telegram", any word
+  implying the clear text was not available.
+- Not N4 for E78 or O9-BB: NARA RG 92/107, the Meigs letterbook and HathiTrust are unread and the JSTOR rows pending.
+
+### 5. Postmortem
+- LS3-V18a's log has no holding-archive transcription family, the test D2V-E74 set the same morning; for these mostly-clear entries it is the
+  first record to read. It also left N2-BQ without an image check. Its "weak" flags were right for N2-BQ and O9-AK; reading the exchange's other
+  half in the archive's own transcription (4554) and Halleck's 2 May letter (OR I/36 pt 2 p.328) turns both into N2.
+- Over-claiming sentences corrected: status.json rows for N2-BQ and O9-AK (grade N3 -> N2, not counted), E78 and O9-BB (gap now "weak N3; clear
+  words public"); SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-N2BQ and SO-ECKERT-O9AK withdrawn (second opinions are queued only at N3 or better);
+  SO-ECKERT-E78 and SO-ECKERT-O9BB stay queued. Readings and ciphertext files unchanged.
+- Requests: hdl.huntington.org 25 (1 empty reply, not retried); archive.org 7; be-api.us.archive.org 21; www.loc.gov 12; chroniclingamerica.loc.gov
+  7 (all non-JSON or a Cloudflare challenge; stopped); googleapis.com 9 (4 answered 503, not retried).

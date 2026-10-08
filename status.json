@@ -6368,9 +6368,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS3-V18a)'"
+        "AUDIT.md '## AUDIT (LS3-V18a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS3-A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 92.3,
@@ -6385,8 +6386,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Quartermaster General's office to Lt. Col. H. Biggs, Fort Monroe, 21 Apr 1864, stop everything coming up the Potomac and send it to Fort Monroe (E78)",
       "grade": "N3",
-      "line": "Read at grade H with the period War Department cipher book (Cipher No. 1); no prior decipherment or printed text located in the Official Records (Army ser. I and III, Navy), the Butler and Grant editions, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "the 21 Apr 1864 QMG telegrams sent; NARA RG 92/107/77, HathiTrust full text and the Huntington Sent volumes page by page unread, JSTOR rows pending, so not N4; one audit (LS3-V18a); SO-ECKERT-E78 queued",
+      "line": "Read at grade H with the period War Department cipher book (Cipher No. 1); the clear words are in the Huntington's public transcription; no prior decipherment of the code words or printed text located in the Official Records (Army ser. I, II vol. 7, III vols. 4-5; Navy), the Butler and Grant editions, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "weak N3 (AUD2-LS3-A, 8 Oct 2026): clear words public in the Huntington transcription; the content code words (places, transportation/troops) not located in print or a clear sibling; the 21 Apr 1864 QMG telegrams sent; NARA RG 92/107/77, HathiTrust full text and the Huntington Sent volumes page by page unread, JSTOR rows pending, so not N4; two audits (LS3-V18a, AUD2-LS3-A); SO-ECKERT-E78 queued",
       "phrases": [
         "Huntington mssEC 18 p.48, pointer 9714, E78"
       ],
@@ -6402,16 +6403,17 @@
       "reading_version": "LS3-R18 8 Oct 2026 (reading.md), grades as revised in AUDIT (LS3-V18a) section 4",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS3-V18a)' section 5",
       "depth_sentence": "On 21 Apr 1864 the Quartermaster General's office asks Lt. Col. H. Biggs, quartermaster at Fort Monroe, whether his transportation is coming and to report daily, telling him that present orders stop everything coming up the Potomac and send it to Fort Monroe, but that a large quantity of transportation ordered for Washington, which will be needed there, should be allowed to come once he is supplied.",
-      "depth_check": "fresh rule-7 re-derivation (LS3-V18a); image all 8 lines from line crops (LS3-V18a); time word Jennie = 3.30 PM agrees with the header; external: Biggs, chief quartermaster at Fort Monroe, in correspondence with the QMG's office (OR I/33 p.814; ORN I/9)",
+      "depth_check": "fresh rule-7 re-derivation (LS3-V18a); image all 8 lines from line crops (LS3-V18a); time word Jennie = 3.30 PM agrees with the header; external: Biggs, chief quartermaster at Fort Monroe, in correspondence with the QMG's office (OR I/33 p.814; ORN I/9); clause: Attica = Potomac, Animal = Monroe read in the 20 Apr cipher to Biggs (Huntington 9712); external (AUD2-LS3-A): Meigs's clear 19 Apr order to Wise (8934), vessels to report to Biggs at Fort Monroe instead of Washington; image lines 2-8 spot-checked",
       "depth_note": "12 H + 1 M of 13 code words"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS3-V18a)'"
+        "AUDIT.md '## AUDIT (LS3-V18a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS3-A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -6425,9 +6427,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: Benham to Humphreys, 21 Apr 1864 7 PM, estimates sent to Rucker without land transportation; the 'confidential' telegram reworded because he did not know it would go in cipher (N2-BQ)",
-      "grade": "N3",
-      "line": "Read at grade H with the period War Department cipher book (Cipher No. 2); no prior decipherment or printed text located in the Official Records (Army ser. I and III, Navy), the Butler and Grant editions, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "weak N3: Humphreys' half of the exchange is printed (OR I/33 p.934); the Engineer Brigade's letters sent (RG 77) and the Grant Papers vol. 10 notes unread; NARA RG 92/107/77, HathiTrust full text and the Huntington Sent volumes page by page unread, JSTOR rows pending, so not N4; one audit (LS3-V18a); SO-ECKERT-N2BQ queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 2 book; the telegram's clear words are in the Huntington's public transcription of mssEC 18 p.50, and the two points it answers (use the cipher; no land transportation) are in Humphreys' printed telegram of the same afternoon (OR ser. I vol. 33 p.934); Benham's own wording with its code words read was not located in print.",
+      "gap": "N2 (lowered by AUD2-LS3-A, 8 Oct 2026): body public in the Huntington transcription of pointer 9716, and its hidden points (cipher, land transportation) are those of Humphreys' printed telegram it answers (OR I/33 p.934; clear in Huntington 4554); not counted; SO-ECKERT-N2BQ withdrawn",
       "phrases": [
         "Huntington mssEC 18 p.50, pointer 9716, N2-BQ"
       ],
@@ -6436,14 +6438,14 @@
         "Huntington mssEC 18 p.50, pointer 9716, N2-BQ"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "9 H of 9 code words",
       "unresolved_spans": "",
       "reading_version": "LS3-R18 8 Oct 2026 (reading-no2.md), grades as revised in AUDIT (LS3-V18a) section 4",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS3-V18a)' section 5",
       "depth_sentence": "At 7 PM on 21 Apr 1864 Benham tells Humphreys that his two telegrams of that day are received, that the estimates went at once to General Rucker without land transportation, that the telegrams will be sent as desired, and that he had marked the earlier one 'confidential' but, not knowing that this would ensure it went in cipher, had changed its words so that they would be safe.",
-      "depth_check": "fresh rule-7 re-derivation (LS3-V18a); time word Minnie = 7 PM agrees with the header; external: Humphreys' printed telegram of 21 Apr 2.40 p.m. (OR I/33 p.934) asks for the cipher on confidential replies and says land transportation will not be needed",
+      "depth_check": "fresh rule-7 re-derivation (LS3-V18a); time word Minnie = 7 PM agrees with the header; external: Humphreys' printed telegram of 21 Apr 2.40 p.m. (OR I/33 p.934) asks for the cipher on confidential replies and says land transportation will not be needed; image all 9 lines read (AUD2-LS3-A, first image check of this entry); Humphreys' question also in clear in Huntington 4554 (AUD2-LS3-A)",
       "depth_note": "9 H of 9 code words"
     },
     {
@@ -6491,9 +6493,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS3-V18a)'"
+        "AUDIT.md '## AUDIT (LS3-V18a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS3-A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 90.0,
@@ -6508,8 +6511,8 @@
       "kind": "reading",
       "title": "Eckert 1864: Meigs to Van Vliet, New York, 22 Apr 1864 10 PM, complete the supply of tugs, ferry boats, barges and schooners for Fort Monroe and Washington (O9-BB)",
       "grade": "N3",
-      "line": "Read at grade H with the period War Department cipher book (the old vocabulary 'No. 9', mssEC 67); no prior decipherment or printed text located in the Official Records (Army ser. I and III, Navy), the Butler and Grant editions, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "the QMG's telegrams sent (RG 92); NARA RG 92/107/77, HathiTrust full text and the Huntington Sent volumes page by page unread, JSTOR rows pending, so not N4; one audit (LS3-V18a); SO-ECKERT-O9BB queued",
+      "line": "Read at grade H with the period War Department cipher book (the old vocabulary 'No. 9', mssEC 67); the clear words are in the Huntington's public transcription; no prior decipherment of the code words or printed text located in the Official Records (Army ser. I, II vol. 7, III vols. 4-5; Navy), the Butler and Grant editions, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
+      "gap": "weak N3 (AUD2-LS3-A, 8 Oct 2026): clear words public in the Huntington transcription; the content code words (places, transportation/troops) not located in print or a clear sibling; the QMG's telegrams sent (RG 92); NARA RG 92/107/77, HathiTrust full text and the Huntington Sent volumes page by page unread, JSTOR rows pending, so not N4; two audits (LS3-V18a, AUD2-LS3-A); SO-ECKERT-O9BB queued",
       "phrases": [
         "Huntington mssEC 18 p.51, pointer 9717, O9-BB"
       ],
@@ -6525,16 +6528,17 @@
       "reading_version": "LS3-R18 8 Oct 2026 (reading-no9.md), grades as revised in AUDIT (LS3-V18a) section 4",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS3-V18a)' section 5",
       "depth_sentence": "At 10 PM on 22 Apr 1864 Meigs tells Major Van Vliet, quartermaster at New York, to complete the supply of tugs, ferry boats, barges and schooners for both Fort Monroe and Washington, says that steamers enough to move the troops are now engaged, and orders him to devote himself to hastening the vessels' arrival, since delay would be most injurious.",
-      "depth_check": "fresh rule-7 re-derivation (LS3-V18a); image all 13 lines from line crops; time word Laura = 10 PM agrees with the header; Abbot = Quartermaster General agrees with the plain signature M C Meigs; external: Fox to Welles 26 Apr on the tugs at New York for Fort Monroe (OR I/33 p.992)",
+      "depth_check": "fresh rule-7 re-derivation (LS3-V18a); image all 13 lines from line crops; time word Laura = 10 PM agrees with the header; Abbot = Quartermaster General agrees with the plain signature M C Meigs; external: Fox to Welles 26 Apr on the tugs at New York for Fort Monroe (OR I/33 p.992); clause (AUD2-LS3-A): Hammer = Fort Monroe reads in Meigs to Van Vliet 20 Apr (Huntington 8939) beside 'Ft Monroe to be first supplied'; image lines 2-14 spot-checked",
       "depth_note": "9 H + 1 M of 10 code words"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS3-V18a)'"
+        "AUDIT.md '## AUDIT (LS3-V18a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS3-A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -6548,9 +6552,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: Halleck to Heintzelman, Columbus, 25 Apr 1864, Ohio militia regiment to be at Johnson's Island by Friday; send the relieved troops to the field (O9-AK)",
-      "grade": "N3",
-      "line": "Read at grade H with the period War Department cipher book (the old vocabulary 'No. 9', mssEC 67); no prior decipherment or printed text located in the Official Records (Army ser. I and III, Navy), the Butler and Grant editions, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "weak N3: the exchange before it is printed (OR III/4 pp.234-241); the Mereness Calendar (1971) entry 'militia to Johnson's Island for duty' unread (if it is this telegram, N2); NARA RG 92/107/77, HathiTrust full text and the Huntington Sent volumes page by page unread, JSTOR rows pending, so not N4; one audit (LS3-V18a); SO-ECKERT-O9AK queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period vocabulary 'No. 9'; the substance (Ohio militia relieving the Johnson's Island guards for the front) is printed in OR ser. III vol. 4 pp.234-241 and ser. I vol. 36 pt 2 p.328, and the telegram's clear words are in the Huntington's public transcription of mssEC 19 p.54; Halleck's wording of 25 Apr was not located in print.",
+      "gap": "N2 (lowered by AUD2-LS3-A, 8 Oct 2026): substance in OR III/4 pp.234-241 (Brough, Stanton, Heintzelman, 18-21 Apr) and OR I/36 pt 2 p.328 (Halleck to Grant, 2 May: 'I will hurry to the front the present guards at Johnson's Island'); body public (Huntington 8946); Mereness Calendar entry unread (snippet places it near Aug 1864); not counted; SO-ECKERT-O9AK withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.54, pointer 8946, O9-AK"
       ],
@@ -6559,14 +6563,14 @@
         "Huntington mssEC 19 p.54, pointer 8946, O9-AK"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "5 H of 5 code words",
       "unresolved_spans": "",
       "reading_version": "LS3-R9 8 Oct 2026 (reading-no9.md), grades as revised in AUDIT (LS3-V18a) section 4",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS3-V18a)' section 5",
       "depth_sentence": "On 25 Apr 1864 Halleck tells Heintzelman at Columbus that the Governor of Ohio reports a regiment of militia will be at Johnson's Island by the coming Friday, and that as soon as the troops there are relieved he is to send them to the field as previously ordered.",
-      "depth_check": "fresh rule-7 re-derivation (LS3-V18a); key row Bologna/Bolivia = Heintzelman re-read by a second eye (mssEC 67 p.[10] l.18); external: Brough-Stanton-Heintzelman exchange of 18-21 Apr on the militia regiment for Johnson's Island (OR III/4 pp.234-241)",
+      "depth_check": "fresh rule-7 re-derivation (LS3-V18a); key row Bologna/Bolivia = Heintzelman re-read by a second eye (mssEC 67 p.[10] l.18); external: Brough-Stanton-Heintzelman exchange of 18-21 Apr on the militia regiment for Johnson's Island (OR III/4 pp.234-241); image all lines read (AUD2-LS3-A)",
       "depth_note": "5 H of 5 code words"
     },
     {
