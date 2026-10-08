@@ -1166,3 +1166,44 @@ X_THETA2 (r, S); L10 `aciofemti·e` -> `acioremti·e`.
    the L10 letters (old and new) finds nothing; unaffected.
 Postmortem: one breach -- a prereg file written but not pushed before the read, because `tools/room.py --push` committed only the ROOM
 line. A prereg push should name the file as a path argument and the worker should paste the commit hash before opening any tile.
+
+## AUDIT (D4V-CEPPO): f.21v D22-CEPPO21 five M -> S tokens (8 Oct 2026, account 4)
+
+Verifier D4V-CEPPO, a session separate from D22-CEPPO21 and every solver, brief `.claude/briefs/runs/2026-10-08-account4-default-0740-jobs.md`,
+for LANE DEFAULT-account-4-20261008-0740. Clock 08:43 UTC at start. Under audit: L04.17, L06.2.1, L06.2.6, L07.9, L09.5 (all S80 = a,
+R-8 "barred 8" from the fr.3252 f.36v gloss), moved M -> S by D22-CEPPO21 (NOTES.md "D22-CEPPO21"). The L10.6 change of D07-CEP21 was
+already endorsed by D07-CEPV (section above) and is not redone. Pre-registration `harvest/f21v/lookalike/PREREG-D4V.md` (fdd41c635,
+pushed before any tile was viewed; round 2 appended and pushed cebd0c4c9 before sheet 2 was viewed).
+
+1. **Rule 7.** `tools/decode_key.py ciphers/ceppo-nevers-fr3251-1570s --check`: "reading up to date", exit 0; f.21v S 195, M 60, I 7, U 5.
+2. **Control that can fail differently (rule 3).** The R-8 call was made blind on shuffled sheets mixing the five targets with plain-8
+   references (L01.32, L11.9) and non-8 decoys from the same leaf and the same cut code: if the shape rule just calls "barred" on
+   whatever sits on a tile, the decoys and plain references fail it while the targets cannot. Files in `harvest/f21v/lookalike/verify/d4v/`.
+   - **Round 1** (`blind_sheet.jpg`, reads `blind_reads.tsv`; decoys = tiles 70 px beside each target): **control FAILED as written**.
+     One decoy (L09.5 +70 px) was called BARRED-8 and the L09.5 target tile was called NOT-8. On unblinding the "decoy" is the L09.5 8
+     itself: D22's stored centre (`cut_r8_tiles.py`, x 650) sits on the neighbour L09.4 (S53, slanted barred oval), 70 px left of the 8.
+     The other four decoys NOT-8, plain refs 2/2 PLAIN-8, barred refs 2/2 BARRED-8, the other four targets BARRED-8. Process note: the
+     round-1 reads were committed locally (099dc47b4) before the key was opened but the push was rejected; they reached git (cc1ccb01c)
+     a minute after the key was opened. Disclosed in the prereg.
+   - **Round 2** (`blind_sheet2.jpg`, reads `blind_reads2.tsv`, pre-registered after round 1): 7 decoys at random band positions >= 110 px
+     from every recorded 8, 2 plain refs, 5 targets (L09.5 re-centred to x 720). **PASS**: decoys 7/7 NOT-8 (a cross, two clear-hand
+     words, lambda, Z, phi/beta, 3), plain refs 2/2 PLAIN-8, targets 5/5 BARRED-8. Caveat: the targets were no longer blind to this
+     reader in round 2 (seen in round 1); round 2 is blind for decoys and references.
+   - **L09.5 placement** (strip P, L09 x 420-1020): slanted barred oval, barred 8, lambda, slanted barred oval, beta; passD L09.4-7 is
+     S53 (t), S80, S23 (n, the lambda), S53 -- the 8 sits where passD has S80. The token is right; only D22's stored tile centre was off
+     (D22 said it recut L09.5 wider; the committed coordinate was not updated). A tile-coordinate defect, not a label defect.
+3. **Score side.** Not re-run as a gate: D22's own placement control (2 et labels at random among the 27 8s, p 0.449) already shows the
+   language score cannot localise et; per-token flips at the five (-0.0037 to -0.0331) favour a, consistent with the shape. The S rests
+   on shape + the glossed witness + the key control (rank 1/201, power 20/20), as for D07-CEPV.
+4. **Ruling, per token.** L04.17 **hold S**; L06.2.1 **hold S**; L06.2.6 **hold S**; L07.9 **hold S** (each BARRED-8 blind in both rounds,
+   their round-1 decoys NOT-8); L09.5 **hold S** (BARRED-8 in round 2 at the corrected centre, placement confirmed by strip P; it rests
+   on round 2 only, since round 1 read the wrong sign at its stored centre). Residual: the R-8 gloss letters were read by one worker (M)
+   and these tiles by one eye per round; the shape distinction itself (bar through the waist vs none) was unambiguous on all ten 8 tiles
+   viewed here.
+5. **Counts.** Verifier-endorsed f.21v S: 157 (D07-CEPV) -> **162 of 267 (60.7%)**. No letter changed (all five were already a), so the
+   reading, the judge (-1.128 FAIL) and SO-CEPPO-F21V are unaffected. Depth **D1 unchanged** (no clause above AD; the five add no word);
+   status.json results[101] and PROGRESS.tsv row 12 updated to 162. Novelty **N3 unchanged** (no reading changed; not re-classified).
+Postmortem: (a) a stored tile coordinate (L09.5) was 70 px off in the solver's committed cut script while its NOTES said the tile had been
+recut -- a reader working from the script alone reads the neighbour; fix proposed, not applied: correct `cut_r8_tiles.py` L09.5 to x 720.
+(b) a round-1 read push was rejected on a fast-forward race; push the reads before opening the key, and paste the remote hash.
+Hosts: none (0 network requests); github push only. Vision: 2 sheet reads by this verifier, no subagent.

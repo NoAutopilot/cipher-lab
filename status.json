@@ -3222,7 +3222,7 @@
       "grade": "N3 after two audits (VERIFY-CEPPO-D2-1 00:27, VERIFY-CEPPO-D2-2 01:22 UTC 29 Sept, held), key published (Tomokiyo, nevers_add1.png). 267 tokens, 179 at S; key rank 1 of 201 on a value-blind re-transcription (z 5.7-6.6, three seeds), power control 20/20. The letter is cited in print (Pascal 1960) for its clear text only; the cipher passages are not printed.",
       "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Cipher passages endorsed by the second audit: tutto da; questa carica ... di qua; credo le ne; ceder uiuendo et seruend[o]; tanto di; fatto; fa dificu[lta]; in diue-se (r, s M). intencione and auanti not endorsed.",
       "document_id": "BnF fr.3251 f.21v (no.11), Birago to Nevers, 12 Oct 1570",
-      "completeness": "157/267 endorsed at S (D07-CEPV, 7 Oct 2026: L10.6 X_THETA2 r; 156 VERIFY-BIRAGO-SMALL; 155 VERIFY-CEPPO-SPLITS; was 146)",
+      "completeness": "162/267 endorsed at S (D4V-CEPPO, 8 Oct 2026: D22-CEPPO21 five S80 held; 157 D07-CEPV, 7 Oct 2026: L10.6 X_THETA2 r; 156 VERIFY-BIRAGO-SMALL; 155 VERIFY-CEPPO-SPLITS; was 146)",
       "unresolved_spans": "the rest at M/I/U; no continuous text",
       "audit_refs": [
         "AUDIT.md VERIFY-CEPPO-D2-1 f.21v",
@@ -3231,13 +3231,13 @@
       ],
       "reading_version": "HARVEST-D2 decode as re-checked by VERIFY-CEPPO-D2-1/2",
       "depth": "D1",
-      "depth_pct": 58.8,
+      "depth_pct": 60.7,
       "depth_unread": {
         "names_codes": "0",
-        "other": "110 at M/I/U"
+        "other": "105 at M/I/U"
       },
       "depth_check": "published key rank 1 of 201; endorsed passages are phrases ('ceder uiuendo et seruend[o]'), no clause above AD on file",
-      "depth_note": "S 157 of 267 (D07-CEPV, 7 Oct 2026; depth D1 unchanged)",
+      "depth_note": "S 162 of 267 (D4V-CEPPO, 8 Oct 2026; depth D1 unchanged)",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
       "decode_status": "Non-decrypted",

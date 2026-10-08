@@ -1045,7 +1045,7 @@ on every folio.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
 - [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: a verifier on the f.21v D22-CEPPO21 S tokens (5; D07-CEP21 L10.6 endorsed by D07-CEPV 7 Oct 2026), then the next f.21v split pair by count; f.21v S10/S26 and S13/S69 read 7 Oct 2026 (D07-CEP21, L10.6 f -> r); f.21v S65/S80 read 6 Oct 2026 (D22-CEPPO21, 5 M -> S); f.36v S76/S58 gloss tiles read by three blind readers (A1B-CEPPO-36V 2 Sonnet, D1-CEPPO 1 Opus, 6 Oct 2026): one tile agrees on "ll" (data conflict with printed z), no rule -- [retired] instrument: blind model reads of the a1b36v tiles; L04.39 and f.36r/f.37r S31/S76 tried 3 Oct 2026 (A1B-CEPPO-87), L04.39 to M, no gloss; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
+Verdict: keep going: 2 internal gaps (f.21v, f.87; f.11r now no-key-material); cheapest next: the next f.21v split pair by count (D22-CEPPO21's five S endorsed by D4V-CEPPO 8 Oct 2026, endorsed S 162/267; D07-CEP21 L10.6 endorsed by D07-CEPV 7 Oct 2026); f.21v S10/S26 and S13/S69 read 7 Oct 2026 (D07-CEP21, L10.6 f -> r); f.21v S65/S80 read 6 Oct 2026 (D22-CEPPO21, 5 M -> S); f.36v S76/S58 gloss tiles read by three blind readers (A1B-CEPPO-36V 2 Sonnet, D1-CEPPO 1 Opus, 6 Oct 2026): one tile agrees on "ll" (data conflict with printed z), no rule -- [retired] instrument: blind model reads of the a1b36v tiles; L04.39 and f.36r/f.37r S31/S76 tried 3 Oct 2026 (A1B-CEPPO-87), L04.39 to M, no gloss; clear-page cribs (f.89r, f.21r) tried 3 Oct 2026, no match
 
 ## CEPPO-WITNESS-PAIRS: f.87 look-alike pairs by the fr.3252 f.36 witness shape rules (3 Oct 2026, account 2 for the account-3 orchestrator)
 
@@ -1497,3 +1497,14 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - fr.4715 f.20 unnamed->Nevers Mar 1571 (Ceppo-Nevers per Tomokiyo) [same-key; not-in-repo] -- fetch canvas, count cipher signs, then key rank test; check length first; ~$2; p 0.04; evidence: ciphers/nevers-birago-fr3251-1572/BIRAGO-POOL.tsv row fr.4715 f.20 'not checked'
 - birago-nevers-1571 (fr.3251 f.119, Nov 1571 numerical cipher, 483 digits) [same-sender; unread] -- none: no key material; needs a new instrument or crib; p 0.02; evidence: folders.tsv open; birago-fr3252 NOTES.md:463 (no key; BIRAGO-NUM 1-3 retired joint anneal)
 - guazzo-nevers-fr4688-1571-72 (Guazzo->Nevers, 25 Mar 1571 ff.15,17) [same-recipient; not-in-repo] -- none: images not located (blocked); p 0.01; evidence: folders.tsv blocked; BIRAGO-POOL.tsv fr.4688 rows (not found on Gallica)
+
+## D4V-CEPPO: verifier on the five D22-CEPPO21 S tokens (8 Oct 2026, account 4)
+
+Verifier session (not a solver), for LANE DEFAULT-account-4-20261008-0740; clock 08:43 UTC at start. Prereg
+`harvest/f21v/lookalike/PREREG-D4V.md` (fdd41c635, round 2 cebd0c4c9). decode --check exit 0 (S 195, M 60, I 7, U 5). Blind R-8 calls
+on shuffled sheets with plain-8 references and non-8 decoys (`harvest/f21v/lookalike/verify/d4v/`): round 1 control FAILED as written
+because D22's stored L09.5 centre (`cut_r8_tiles.py` x 650) is on the neighbour S53, so the "decoy" beside it was the real 8; round 2
+(random decoys, L09.5 at x 720) PASSED: decoys 7/7 NOT-8, plain refs 2/2, targets 5/5 BARRED-8; strip context places L09.5 between
+S53 and S23 as passD has it. All five **hold S**; verifier-endorsed f.21v S 157 -> **162 of 267 (60.7%)**; letters, judge, depth (D1)
+and N3 unchanged; status.json and PROGRESS.tsv updated. Suggestion (not applied): correct L09.5 to x 720 in `cut_r8_tiles.py`.
+Details: AUDIT.md "AUDIT (D4V-CEPPO)". Hosts: none (0 network requests).
