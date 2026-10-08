@@ -761,5 +761,53 @@ Code-word tokens: H 14.
 
 Code-word tokens: H 20.
 
-Totals over the 105 entries: H 1572, C 14, I 0, M 0.
+**E140 | Page 92 | 8984 | 12 June 1864 9.30 PM, to Hunter (operator R. R. McCaine; LS5-R1e, row 8984/1; image-read)**
+
+930 pm Washn June 12th 1864 {time: 9.30 PM} [12] for [Maj. Gen. David Hunter] period It is under stood that [Maj Genl U.S. Grant] is about to [Movement] his [Army] to the Bergson at or near [City Point] [,] & that he will corn tin you to wholed the [Bridge (-ed, -ing)] across the Pare monkey at [Report] Horse to facilitate the [Junction] of your self & [P. H. Sheriden] with the [Army] [Of the] [Potomac] [General-in-Chief] observe checks
+
+Code-word tokens: H 15, C 1.
+
+**E141 | Page 141 | 9034 | 4 Aug 1864 11.30 AM, to Hunter via Monocacy (operator McCaine; LS5-R1e, row 9034/1; image-read)**
+
+[Washington] {date: Aug 4} {time: 11.30 AM} For [Maj. Gen. David Hunter] [Open (-ed, -ing)] I have seen Masks dispatch to you of last evening and think that he should be imm'y [Reinforce (-ed, -ing)]ed by [Cavalry] [.] [P. H. Sheriden]'s [Cavalry] is beginning to arrive and will be sent forward soon  {tail: [signed] [General-in-Chief]}
+
+Code-word tokens: H 11, C 1.
+
+**E142 | Page 230 | 9124 | 16 Nov 1864 11.30 PM, to John Odell care of Bunker, New York (operator John Horner; LS5-R1e, row 9124/0; volunteer text only, image not viewed)**
+
+[Maj Genl U.S. Grant] Odell Care Bunker [New York] [.] You are here by directed to [Arrest (-ed, -ing)] Beverly Tucker where ever found with [In the] United States and turn him over to [Maj Gen Jno A. Dix] toby confined in [Fort] Lafayette By order [Of the] [President of the U.S.]  {tail: [signed] [C. A. Dana] are you well}
+
+Code-word tokens: H 11.
+
+**E143 | Page 100 | 8992 | 30 June 1864 3 PM, to Maj. S. Van Vliet, New York (LS5-R1e, row 8992/1; image-read)**
+
+{time: 3 PM} for [Major] S Van Vliet [New York] [.] all the [Steam]ers now in service fit to bring whiskey from [New Orleans] and which can possibly be spared for that service should be dispatched as they become available [.] It is not [Necessary] to take up ocean [Steam]ers not already in service [.] I am not advised [Of the] number of [Troops] but am to prepare for a large number  {tail: [signed] [Qr Master Genl U.S.] amo amas amat}
+
+Code-word tokens: H 14.
+
+**E144 | Page 141 | 9034 | 4 Aug 1864, copy to Sherman, from City Point (operator F. S. Van Valkenburg; LS5-R1e, row 9034/0; image-read)**
+
+Copy to [Maj Gen W. T. Sherman] ["] From [City Point] {date: Aug 3} For [General-in-Chief] [Washington] [.] [Richmond] dispatch of [Today] contains following ["] Devine {date: Aug 1} {time: 6 PM} [.] Our [Cavalry] under Iverson [Attack (-ed, -ing)]ed the [Enemy] yesterday near Clinton pause the [Drove in Enemys pickets]'s [Command = Er (-ed, -ing)]ed by [General] Stone man were routed and Stone man [75] Officers and about [500] prisoners with [2] [Pieces]'s of [Artillery] [Surrender (-ed, -ing)]ed and have just reached this city [.] the rest of the [Drove in Enemys pickets] [Force] are scattered and flying [Towards] Eatonton  {tail: [signed] [Maj Genl U.S. Grant] ["] that is bad go}
+
+Code-word tokens: H 34.
+
+**E145 | Page 151 | 9044 | 12 Aug 1864, Beckwith and McCaine to Lt Col Bowers, copy to Sheridan (LS5-R1e, row 9044/1; image-read)**
+
+[Washington] {date: Aug 12} Imogem For Lieut [Colonel] T S. Bowers AAG [City Point] copy to [P. H. Sheriden] [Winchester] [.] wolves just arrived nick [Follow (-ed, -ing)]ing [.] [1] [Brigade] of History's [Corps] was sent to Early last Friday pause [Division] to which it belongs was under marching orders [.] Fitz Hugh [Lee]'s [Cavalry] was [New York] [Orange C.H.] Wednesday night [10] pause [Longstreet] is in Brussells [Valley] and his [Corps] supposed toby with him [.] melds know nothing of [Force] mentioned in your dispatch of [10] [.] They say Central [Road] is not in running order beyond [Cahawba] Dam  {tail: [signed] Geo K Lect [Captain] and A. A. G}
+
+Code-word tokens: H 30.
+
+**E146 | Page 245 | 9139 | 12 Dec 1864 2 PM, Capt. Bruch, Louisville, to Brig. Gen. Allen (LS5-R1e, row 9139/1; image-read)**
+
+Capt Bruch Louisvl. Washn D. C. Dec. 12. 1864 {time: 2 PM} [12] for [Brigadier General] Allen Chf [Quartermaster] [Louisville] [.] [General] Donaldson recommends that the manager of [Unite (-ed, -ing)]d States Military Welch's be instructed to take immediate possession [Of the] [Louisville] and [Nashville] [Rail Road] as vitally [Necessary] to sustain the [Army] [.] Do you concur in his opinion or willet be sufficient to place a portion [Of the] US Mil [Rail Road] rolling stock up on that [Road] Stan Will not the [Louisville] and [Nashville] [Rail Road] company be able to do all that is possible and with out the interruption caused by changing hands and temptation [?] Public fright and travel should have prefer ants and if Tartan exclusive use [Of the] [Road] Answer  {tail: [signed] [Qr Master Genl U.S.] awful cold and blowing a gale}
+
+Code-word tokens: H 26.
+
+**E147 | Page 250 | 9144 | 28 Dec 1864 4 PM, to Thomas (operator Capt. Van Duzer; LS5-R1e, row 9144/0; volunteer text only, image not viewed)**
+
+[Washington] {time: 4 PM} [28] For [Maj Gen Geo. H. Thomas] [.] [General] Stone man dispatch is received [.] I would respect fully suggest that supplies forth [Troops] remounting the wrecks of [Maj Gen J. B. Hood (Confederate)]'s [Army] be sent to [East] port or some other [Point] on the [Tennessee] [,] Also that [Troops] not required for this pure suit be sent by water to [General] Dana to assist in [Destroy (-ed, -ing)]ing the [Rail Road]es and supplies in [Mississippi] which may other wise used by Hudson in his Warrick  {tail: [signed] [General-in-Chief] Dont let him up}
+
+Code-word tokens: H 21, C 1.
+
+Totals over the 113 entries: H 1734, C 17, I 0, M 0.
 <!-- decode.py: derived block ends -->

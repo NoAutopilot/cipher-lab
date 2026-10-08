@@ -1,0 +1,66 @@
+X1 tokens=37 no1=20(0.54) no2=15(0.41) no9=3(0.08)
+  no1: H15 C1 I0 M0
+  no2: H13 C1 I0 M0
+  no9: H3 C0 I0 M0
+  no1shuf: H16 C0 I0 M0
+  no2shuf: H13 C1 I0 M0
+X2 tokens=25 no1=14(0.56) no2=10(0.40) no9=3(0.12)
+  no1: H11 C1 I0 M0
+  no2: H9 C0 I0 M0
+  no9: H3 C0 I0 M0
+  no1shuf: H12 C0 I0 M0
+  no2shuf: H9 C0 I0 M0
+X3 tokens=30 no1=13(0.43) no2=14(0.47) no9=4(0.13)
+  no1: H11 C0 I0 M0
+  no2: H13 C0 I0 M0
+  no9: H4 C0 I0 M0
+  no1shuf: H11 C0 I0 M0
+  no2shuf: H13 C0 I0 M0
+X4 tokens=44 no1=15(0.34) no2=14(0.32) no9=4(0.09)
+  no1: H14 C0 I0 M0
+  no2: H13 C0 I0 M0
+  no9: H4 C0 I0 M0
+  no1shuf: H13 C1 I0 M0
+  no2shuf: H13 C0 I0 M0
+X5 tokens=65 no1=36(0.55) no2=29(0.45) no9=8(0.12)
+  no1: H34 C0 I0 M0
+  no2: H27 C0 I0 M0
+  no9: H8 C0 I0 M0
+  no1shuf: H34 C0 I0 M0
+  no2shuf: H27 C0 I0 M0
+X6 tokens=72 no1=33(0.46) no2=30(0.42) no9=8(0.11)
+  no1: H30 C0 I0 M0
+  no2: H26 C0 I0 M0
+  no9: H8 C0 I0 M0
+  no1shuf: H29 C1 I0 M0
+  no2shuf: H26 C0 I0 M0
+X7 tokens=71 no1=12(0.17) no2=15(0.21) no9=3(0.04)
+  no1: H11 C0 I0 M0
+  no2: H12 C0 I0 M0
+  no9: H3 C0 I0 M0
+  no1shuf: H11 C0 I0 M0
+  no2shuf: H12 C0 I0 M0
+X8 tokens=25 no1=13(0.52) no2=11(0.44) no9=6(0.24)
+  no1: H13 C0 I0 M0
+  no2: H11 C0 I0 M0
+  no9: H6 C0 I0 M0
+  no1shuf: H12 C1 I0 M0
+  no2shuf: H11 C0 I0 M0
+X9 tokens=21 no1=7(0.33) no2=6(0.29) no9=2(0.10)
+  no1: H7 C0 I0 M0
+  no2: H6 C0 I0 M0
+  no9: H2 C0 I0 M0
+  no1shuf: H7 C0 I0 M0
+  no2shuf: H5 C1 I0 M0
+X10 tokens=80 no1=29(0.36) no2=31(0.39) no9=8(0.10)
+  no1: H26 C0 I0 M0
+  no2: H29 C0 I0 M0
+  no9: H8 C0 I0 M0
+  no1shuf: H25 C1 I0 M0
+  no2shuf: H29 C0 I0 M0
+X11 tokens=55 no1=24(0.44) no2=23(0.42) no9=4(0.07)
+  no1: H21 C1 I0 M0
+  no2: H20 C0 I0 M0
+  no9: H4 C0 I0 M0
+  no1shuf: H21 C1 I0 M0
+  no2shuf: H20 C0 I0 M0
