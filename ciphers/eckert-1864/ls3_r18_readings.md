@@ -63,3 +63,15 @@ Code-word tokens: H 10.
 {time: 1.30 PM} [Colonel] Webster [Quartermaster] ---- If you have any surplus vessels fit for sea that are not required at your place please send them to [Baltimore] to [Report] to the Chf [Quartermaster] R Ingalls Br Gen & Qm
 
 Code-word tokens: H 6.
+
+**E86 | mssEC 18 p.282, pointer 9948 | 31 Jan 1865 11.30 AM, to Kasson (operator John Horner; no ledger book noted)** (book 1)
+
+[Washington] {time: 11.30 AM} [31] for [Maj Gen Jno A. Dix] [.] Please come to [Washington] at your Earliest Convenience  {tail: [signed] [Secretary of War] very fine day This}
+
+Code-word tokens: H 9.
+
+**O9-BC | mssEC 18 p.362, pointer 10028 | 2 Jun 1865 10.30 AM, to Borgia (operator Stevens, Cin; ledger "9")** (book 9)
+
+[Washington] {time: 10.30 AM} second for Borgia period Suppress all sail of liquor on the lines traveled by [Troops] returning to be mustered out and at rendezvous for discharge until [Troops] are all dispersed sig Ranger Lowes weather
+
+Code-word tokens: H 4.

@@ -957,6 +957,8 @@ key.md grades, oov, OR match), `ec18/matches.tsv`, `ec18/control.tsv`, `ec18/rea
 
 - LS3-R18 (8 Oct 2026, for LANE ST-LEDGER-3), see ciphers/eckert-1864/NOTES.md "## LS3-R18": of the 19 "not found" entries, four of the ten re-searched are in print after all (9730.87, 9731.89, 9908.417, 9939.484; OR vols. 36, 37, 41/45, 46; A3V3's meaning-based 5-gram test missed paraphrase) and 9731.89 is Cipher No. 9, not No. 1; six read from the image as book 1 (E79-E84); 21-22 Apr 1864 pages 48-51 image-read.
 
+LS3-R18b (8 Oct 2026): the last seven keyed entries (9943.494, 9948.507, 10002.578, 10026.621, 10027.623, 10028.625, 10031.632) are worked in ciphers/eckert-1864/NOTES.md "## LS3-R18b"; 10028.625 is a ledger-"9" entry, not book 1.
+
 ## Remaining gaps (finish-or-blocker pass, A3V3-ECK18, 4 Oct 2026)
 Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 155, I 36, M 82 (print/residue, GAPS197 with the GAPS191 key); mssEC 18: 28 fully keyed Cipher No. 1 entries at H 370 from the volunteer text, 9 of them in OR (A3V3-ECK18)
 - residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses folded into key.md (GAPS191), residue regenerated (GAPS197: C 155, I 36, M 82, oov 860); next: a received-ledger pass on mssEC 04-14 (not yet harvested) by the GAPS171 method, ~$2

@@ -22,7 +22,11 @@ import decode  # noqa: E402
 
 BOOKS = {"1": ("key.md", "ciphertext.txt"), "2": ("key-no2.md", "ciphertext-no2.txt"), "9": ("key-no9.md", "ciphertext-no9.txt")}
 ENTRIES = {"E78": "1", "N2-BP": "2", "N2-BQ": "2", "O9-BA": "9", "O9-BB": "9",
-           "E79": "1", "E80": "1", "E81": "1", "E82": "1", "E83": "1", "E84": "1"}
+           "E79": "1", "E80": "1", "E81": "1", "E82": "1", "E83": "1", "E84": "1",
+           # LS3-R18b (8 Oct 2026): E85/E87 carry neither a ledger book label nor a testable time word -> key not in hand, listed for the
+           # statistics only and left out of ls3_r18_readings.md (NOT_CLAIMED); E86 book 1 (time word), O9-BC book 9 (ledger "9" + time word)
+           "E85": "1", "E86": "1", "E87": "1", "O9-BC": "9"}
+NOT_CLAIMED = {"E85", "E87"}
 SEEDS = 200
 
 
@@ -98,6 +102,8 @@ def readings():
     ents = load_entries()
     parts = []
     for eid, chosen in ENTRIES.items():
+        if eid in NOT_CLAIMED:
+            continue
         header, lines = ents[eid]
         reading, counts = decode.decode_entry(decode.entry_text(lines), keys[chosen])
         g = ", ".join(f"{k} {v}" for k, v in counts.items() if v)

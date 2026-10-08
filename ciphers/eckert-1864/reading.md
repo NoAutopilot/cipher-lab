@@ -611,5 +611,23 @@ Code-word tokens: H 10.
 
 Code-word tokens: H 6.
 
-Totals over the 80 entries: H 1244, C 14, I 0, M 0.
+**E85 | mssEC 18 p.277, pointer 9943 | 24 Jan 1865, to Col Webster (operator G D Sheldon; signed H A Wise; no ledger book or hour; KEY NOT IN HAND: neither a label nor a testable time word, reading not claimed)**
+
+{time: 1 PM} [Colonel]  {tail: [signed] [Quartermaster] [Monroe] [Steam]er Nevada milly at [Monroe] in aday or [2] with [Recruits]'s Please order her tooths [Point] immy after they have landed also all other sea going [Steam] vessels that may reach [Monroe] during the next [5] or [6] days [signed] Rucker (another) for Polkar Lynch ship [Force] Lawrence [Norfolk] [Telegraph (-ed, -ing)] recvd No torpedoes [Of the] kind you name are [Available] [Rapidan] will take months to prepare them [.] Besides the Bureau does not know for what purpose these are intended [.] Will not the [Rebel] torpedoes on hand or those on board the Stromboli or those sent [From the] [After the] yard answer [?] [signed] H A Wise chf Bureau}
+
+Code-word tokens: H 28.
+
+**E86 | mssEC 18 p.282, pointer 9948 | 31 Jan 1865 11.30 AM, to Kasson (operator John Horner; no ledger book noted)**
+
+[Washington] {time: 11.30 AM} [31] for [Maj Gen Jno A. Dix] [.] Please come to [Washington] at your Earliest Convenience  {tail: [signed] [Secretary of War] very fine day This}
+
+Code-word tokens: H 9.
+
+**E87 | mssEC 18 p.365, pointer 10031 | 15 Jun 1865 5 PM, to Webster (operator Capt Sam Brook, Lvl; no ledger book; KEY NOT IN HAND: no time word agrees under book 1, reading not claimed)**
+
+[Maj Gen Jno A. Logan] [Louisville] you can [Camp] the [Regiment]'s from the [Army] [Of the] [Potomac] as you propose Send the [Troops]'s for [Maj Gen J. J. Reynolds] to little rock [Arkansas]  {tail: [signed] [Maj Genl U.S. Grant] A raw lines [Brigadier General] Chief of staff right this is}
+
+Code-word tokens: H 13.
+
+Totals over the 83 entries: H 1294, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->

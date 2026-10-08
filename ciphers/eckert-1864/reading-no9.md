@@ -350,5 +350,11 @@ Code-word tokens: H 5.
 
 Code-word tokens: H 9.
 
-Totals over the 40 entries: H 331, C 0, I 0, M 0.
+**O9-BC | mssEC 18 p.362, pointer 10028 | 2 Jun 1865 10.30 AM, to Borgia (operator Stevens, Cin; ledger "9")**
+
+[Washington] {time: 10.30 AM} second for Borgia period Suppress all sail of liquor on the lines traveled by [Troops] returning to be mustered out and at rendezvous for discharge until [Troops] are all dispersed sig Ranger Lowes weather
+
+Code-word tokens: H 4.
+
+Totals over the 41 entries: H 335, C 0, I 0, M 0.
 <!-- decode.py: derived block ends -->
