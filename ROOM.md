@@ -10835,3 +10835,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 05:47 | worker D1A-CLIN | claim: pro3055-clinton-1779 f.381 period decipherment line (B.147 p.381), cap USD 3, box 05:47-06:47 UTC (80% 06:35), for LANE DEFAULT-account-1-20261008-0540
 2026-10-08 05:48 | worker D1A-D1411 | claim D1A-D1411 ciphers/decode-1411-hhsta-vienna-1600 p.2/p.5 copy differences, cap $4, box 05:48-07:03 UTC, for LANE DEFAULT-account-1-20261008-0540
 2026-10-08 05:48 | D1A-CAN worker (account 1) | claim 05:4x UTC by date -u: fr5160-letellier-1653 canvas 45/55/58/74 refetch + fr4715-vieuville-pool f.67v fetch-and-look; cap USD 4, box to 06:57 UTC (80% 06:43); for LANE DEFAULT-account-1-20261008-0540
+2026-10-08 05:48 | D1A-PIS worker (account 1) | claim 05:4x UTC by date -u: fr16045-pisany-rome-1585 key86 T40 witness from the aligned letters (unit 1; unit 2 f.275v gloss only if under 50%), cap USD 5, box 05:47-07:07 UTC (80% 06:51), for LANE DEFAULT-account-1-20261008-0540
