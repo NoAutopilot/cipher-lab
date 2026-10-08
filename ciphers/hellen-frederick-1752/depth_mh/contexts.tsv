@@ -1,0 +1,61 @@
+code	value	grade	line	target	shuffle_p95	shuffle_max	above_p95	flanks	flanks_p95	flanks_above	window	context
+1032	tems	S	L01	-3.522	-2.831	-2.483	False	-3.635	-2.947	False	quil||euletems|son|il||rev	? ? eu le tems ? son ? il
+1032	tems	S	L01	-3.177	-2.935	-2.55	False	-3.526	-2.917	False	ont|||jusqu|temsquelavar	? ? jusqu ? tems que. la va r
+1083	qu'il	S	L01	-3.235	-2.982	-2.49	False	-3.144	-2.885	False	lus||resde|quil||euletems	re s de ? qu'il ? ? eu le
+1083	qu'il	S	L01	-2.954	-2.87	-2.498	False	-3.283	-2.973	False	uilnen||||etquilseflatto	? ? ? et qu'il se fla t to
+1213	lieu	S	L01	-3.503	-2.937	-2.324	False	-3.733	-2.947	False	il||reve|de|lieuqu|memi||en	reve ? de ? lieu qu' ? me mi
+1213	lieu	S	L01	-3.507	-3.064	-2.885	False	-3.561	-3.034	False	ire|et|qui|lieu||||||milleiet	et ? qui ? lieu ? ? ? ?
+1253	mille	S	L01	-3.222	-2.911	-2.395	False	-3.377	-3.03	False	epasseor||milleaffaire|e	or ? ? 2 mille affaire ? et ?
+1253	mille	S	L01	-3.323	-2.927	-2.684	False	-3.248	-2.997	False	t|qui|lieu||||||milleietacher	? ? ? ? mille ie tach er ?
+1257	nouvelle	S	L01	-2.319	-2.813	-2.237	True	-2.906	-2.962	True	tiondunenouvelleparoit||re	la proposition d une nouvelle paroit ? ? re
+1257	nouvelle	S	L01	-2.673	-2.826	-2.415	True	-3.166	-2.897	False	o|||misderenouvellerle||trait	mi s de re nouvelle r le ? ?
+1267	jusqu	S	L01	-3.571	-2.996	-2.597	False	-3.717	-3.034	False	ceque|pu||rjusqu|||||je||quer||de	pu ? ? r jusqu ? ? ? ?
+1267	jusqu	S	L01	-3.245	-2.924	-2.661	False	-3.174	-2.859	False	s|quisont|||jusqu|temsquel	sont ? ? ? jusqu ? tems que. la
+1267	jusqu	S	L01	-3.574	-2.976	-2.431	False	-3.605	-2.958	False	nre||||||par|||et|||jusqu|sansplet	et ? ? ? jusqu ? sans ple ter
+1343	retour	S	L01	-3.577	-2.964	-2.623	False	-3.937	-2.876	False	anquasonretour|avoitsoi	an 2 qua son retour ? avoit soin de
+1343	retour	S	L01	-3.282	-2.799	-2.177	False	-3.42	-2.863	False	rlabaeurretourresetrai	der la ba eur retour re se traite ?
+1355	conven	H	L01	-3.061	-2.977	-2.589	False	-3.277	-3.006	False	ionil|||t|||leconven||que|equil	? ? ? le conven ? ? que ?
+1355	conven	H	L01	-3.091	-2.891	-2.628	False	-3.441	-2.946	False	repar|desconven|qui|sont|r	re par ? des conven ? qui ? sont
+1357	contre.	H	L01	-3.134	-2.939	-2.718	False	-3.48	-2.889	False	teet|er|lacontre||sa|quella	er ? l a contre. ? ? s a
+1362	plus	S	L01	-3.393	-2.889	-2.604	False	-3.697	-3.015	False	ent|sa|lesplus|fi|tset||s|l	? sa ? les plus ? fi ? ts
+1362	plus	S	L01	-3.151	-2.946	-2.363	False	-3.526	-3.126	False	r||de||er|derpluspres||eul|d	? er ? der plus pres ? ? eu
+1368	pres	S	L01	-3.238	-2.911	-2.462	False	-3.444	-2.866	False	r|derpluspres||eul|de||por	er ? der plus pres ? ? eu l
+1368	pres	S	L01	-3.202	-2.867	-2.58	False	-3.518	-2.834	False	incedell|||presqueplees	ll ? ? ? pres que ple es ?
+1421	premier	M	L01	-2.702	-2.908	-2.567	True	-3.106	-2.951	False	r|squedes|premiersjoursil	s que des ? premier s jour s il
+1421	premier	M	L01	-3.402	-2.749	-2.459	False	-3.794	-2.871	False	sont|rasepremierple|||||||d|ordo	sont ? ra se premier ple ? ? ?
+1470	traite	S	L01	-3.092	-2.839	-2.408	False	-3.163	-2.855	False	vellerle||traiteet|er|laco	r le ? ? traite et 2 ? er
+1470	traite	S	L01	-2.811	-2.54	-2.176	False	-3.534	-2.584	False	tourresetraite||	eur retour re se traite ? ?
+1511	toujours	S	L01	-2.85	-2.978	-2.67	True	-3.345	-2.993	False	seflatto|toujoursdell|eret	fla t to ? toujours de ll ? er
+1511	toujours	S	L01	-3.329	-2.953	-2.74	False	-3.783	-2.943	False	ur||ra|sles|||toujours|quisont|||j	les ? ? ? toujours ? qui sont ?
+1511	toujours	S	L01	-2.894	-2.847	-2.545	False	-3.404	-2.934	False	otle|d|||||eretoujourssonde|||||||||erl	? ? er e toujours son de ? ?
+1525	tion	S	L01	-3.543	-3.061	-2.593	False	-3.67	-3.085	False	orite|que||tion|||der||teerp	? que. ? ? tion ? ? ? der
+1525	tion	S	L01	-3.284	-2.951	-2.6	False	-3.394	-2.972	False	soinde||re|tionil|||t|||lecon	? ? re ? tion il ? ? ?
+1525	tion	S	L01	-3.055	-2.937	-2.524	False	-3.733	-2.946	False	rlesex|tationsdesm||do|||m	les ex ? ta tion s de S.M. ?
+802	sont	M	L01	-3.749	-3.043	-2.607	False	-3.941	-3.136	False	tset||s|lui||sontex|que|ces	? lui ? ? sont ex ? que ?
+802	sont	M	L01	-3.58	-2.902	-2.468	False	-3.589	-2.876	False	onven|qui|sont|raseprem	conven ? qui ? sont ? ra se premier
+802	sont	M	L01	-3.57	-2.95	-2.58	False	-3.618	-3.006	False	jours|quisont|||jusqu|tem	? toujours ? qui sont ? ? ? jusqu
+807	avant	H	L01	-3.364	-2.745	-2.501	False	-3.575	-2.89	False	passeteravantsonvoy|||an	? ? passe ter avant son voy ? ?
+807	avant	H	L01	-3.598	-2.978	-2.77	False	-3.745	-2.955	False	es||||||untaor|avant||pour||||quel	un ta or ? avant ? ? pour ?
+820	soin	H	L01	-3.894	-2.898	-2.586	False	-3.746	-2.914	False	iemesoin|sous|sife	ie me soin ? sous ? si
+820	soin	H	L01	-3.406	-2.988	-2.556	False	-3.176	-3.049	False	our|avoitsoinde||re|tion	son retour ? avoit soin de ? ? re
+825	quoique	H	L01	-2.841	-2.85	-2.498	True	-3.355	-3.001	False	de|er|m||quequoiqueprince|||mi	m ? ? que quoique prince ? ? ?
+825	quoique	H	L01	-2.88	-2.857	-2.069	False	-3.207	-2.985	False	roit||reetquoiquesurlesex	? ? re et quoique sur les ex ?
+825	quoique	H	L01	-2.918	-2.84	-2.069	False	-3.261	-2.974	False	les||a|reetquoiquesurlesex	a ? re et quoique sur les ex ?
+843	republique	H	L01	-2.519	-2.814	-2.584	True	-3.435	-2.964	False	sa|quellarepubliqueles||a|reet	a ? quel la republique les ? ? a
+843	republique	H	L01	-2.482	-2.82	-2.638	True	-3.409	-2.859	False	e||sa|quelarepubliqueles||a|repa	a ? que la republique les ? ? a
+850	sans	H	L01	-3.378	-3.009	-2.371	False	-3.337	-2.931	False	r|||et|||jusqu|sanspleterqu	? ? jusqu ? sans ple ter que ces
+850	sans	H	L01	-3.579	-2.837	-2.498	False	-3.445	-2.913	False	mmercere||sanstdes|vase	commerce re ? ? sans t des ? va
+863	province	H	L01	-2.161	-2.681	-2.37	True	-2.756	-2.907	True	quelquesprovincesqueprin	es de quelque s province s que princesse d'Orange ?
+863	province	H	L01	-2.762	-3.063	-2.813	True	-2.932	-3.025	True	pour||||quel|province||erlecomm	? ? quel ? province ? ? er le
+868	pour	H	L01	-3.389	-3.001	-2.635	False	-3.407	-2.94	False	t|deslors||pour|sonconse	lo rs ? ? pour ? son consente ?
+868	pour	H	L01	-3.528	-3.159	-2.97	False	-3.58	-3.164	False	aor|avant||pour||||quel|prov	? avant ? ? pour ? ? ? ?
+884	prince de	H	L01	-3.054	-2.935	-2.585	False	-3.482	-3.045	False	e|||a|agque|||tprincede|l||le|ordre	? ? ? t prince de ? L ? ?
+884	prince de	H	L01	-3.272	-2.937	-2.697	False	-3.91	-2.976	False	erpar||tdu|princederoy|il|tch	? t du ? prince de roy ? il ?
+884	prince de	H	L01	-3.438	-2.894	-2.476	False	-4.059	-2.972	False	rl|misedu|princedelo||qui||t|de	mi se du ? prince de lo ? ? qui
+884	prince de	H	L01	-3.109	-2.922	-2.613	False	-3.609	-2.966	False	projets||s||princedelou|||suivi	? s ? ? prince de lo u ? ?
+884	prince de	H	L01	-2.637	-2.89	-2.47	True	-3.209	-2.896	False	eor|queleprincedell|||presqu	or ? que le prince de ll ? ? ?
+898	quel	H	L01	-2.858	-2.828	-2.542	False	-2.815	-2.901	True	contre||sa|quellarepubl	? s a ? quel la republique les ?
+898	quel	H	L01	-3.037	-3.076	-2.735	True	-2.945	-3.097	True	vant||pour||||quel|province	? ? ? ? quel ? province ? ?
+898	quel	H	L01	-3.542	-2.961	-2.657	False	-3.424	-3.004	False	ecequime||quelcestpar|c	qui me ? ? quel ces t par ?
+900	passe	H	L01	-3.321	-2.918	-2.624	False	-3.161	-2.978	False	is|||desle|d|||||passeteravant	? ? ? ? passe ter avant son voy
+900	passe	H	L01	-3.867	-2.788	-2.252	False	-3.591	-2.944	False	ila||qui||depasseor||millea	qui ? ? de passe or ? ? 2

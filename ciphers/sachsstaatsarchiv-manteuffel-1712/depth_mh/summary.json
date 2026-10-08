@@ -1,0 +1,42 @@
+{
+ "tokens": 216,
+ "grades": {
+  "M": 49,
+  "C": 144,
+  "U": 23
+ },
+ "hcs": 144,
+ "hcs_pct": 66.7,
+ "primary_run": 11,
+ "primary_run_text": "n t r e le s sch v",
+ "secondary_run": 21,
+ "secondary_run_text": "s e a la reine d'Angleterre",
+ "H_model_bits": 2.792,
+ "R": 1.908,
+ "V": 35,
+ "distinct_cipher_codes": 60,
+ "H_design": 307.8,
+ "H_lib": 175.7,
+ "H_K": 483.5,
+ "unicity": 253.4,
+ "AD": 380.1,
+ "AD_R3_4": 213.3,
+ "cipher_clause": false,
+ "stat_i_target": 55,
+ "stat_i_p95": 43,
+ "stat_i_max": 54,
+ "stat_i_pass": true,
+ "n_shuffles": 200,
+ "seeds": "8100-8299",
+ "shuffle": "classes",
+ "cipher_class": "code<=120",
+ "recurring_codes": {
+  "217": {
+   "n_occ": 3,
+   "independent_contexts": 3,
+   "contexts_above_p95": 3,
+   "flanks_above_p95": 3
+  }
+ },
+ "wordlist_size": 7287
+}

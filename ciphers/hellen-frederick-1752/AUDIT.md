@@ -384,3 +384,49 @@ it (the reading did not change, so no propagation is owed under rule 10's revisi
 
 Verifier DEPTH-REGRADE (account 3, session_015eezFKYThEoRKoeamyhxSD), rule 4a / verifier step 3a; nothing decoded or changed. % = cipher tokens graded H/C/S (clear text excluded; counts as the cited reading file or audit gives them, nulls excluded where the file marks them); when evidence for a level is not on file the level below is given.
 - **DECODE R1953 (KHA Prins Willem V inv. 196, now A31-1148): W. B. von der Hellen to Frederic**: **D1** (Non-decrypted; outward "fragments read"), 53.9% (H 152 + S 304 of 846). Check: period key sheet R4369 (152 H) + control-backed attribution (304 S); AUDIT 1: 'No continuous sentence of the letter can be given'. Class without a reading: not counted as a unique solve.
+
+## AUDIT (depth re-check, DEPTH-MH)
+
+Verifier DEPTH-MH (account 1, session_01LMs2EyN5RhSA1321cqQrnZ), 8 Oct 2026 02:43-03:0x UTC by date -u; separate from every
+solver of this item and from DEPTH-REGRADE, VHEL and A3V-VHEL2. Brief: .claude/briefs/runs/2026-10-08-acct3-scout-jobs.md
+"## DEPTH-MH"; bar: .claude/briefs/runs/2026-10-08-acct3-depth-bar.md, copied into PREREG-DEPTH-MH.md and pushed (fdab0b7b)
+before any statistic. Nothing decoded; key, ciphertext, reading and N-class (N3) untouched; R7A-HEL53/R8-HEL image corrections
+not adopted (solver step).
+
+**Rule 7.** `python3 tools/decode_key.py ciphers/hellen-frederick-1752/key_r4369 --check`: tokens 846, H 152, M 16, S 304, U 374,
+"reading up to date", exit 0.
+
+**Statistics** (`python3 tools/depth_stats.py --tokens ciphers/hellen-frederick-1752/key_r4369/reading_R1953_tokens.tsv --key
+ciphers/hellen-frederick-1752/key_r4369/key_decode.tsv --cipher-class 'len<=3' --shuffle all --seeds 8100-8299 --out
+ciphers/hellen-frederick-1752/depth_mh`; outputs in depth_mh/; shuffle = the LR100 design, all values over all codes; the
+'p 0/200' on file is a different statistic and was not reused):
+
+| statistic | target | control (200 value-shuffled keys, seeds 8100-8299) | result |
+|---|---|---|---|
+| longest H/C/S run, values <= 3 letters only | 13 letters ('de me pro cu r er l') | none (key-independent) | -- |
+| same, word-valued H/S tokens let through | 31 letters ('la proposition d une nouvelle paroit') | none | -- |
+| AD = 1.5 x H(K)/R | H(K) = 131 distinct cipher codes x log2(250) = 1043.5 + liberties 2995.2 (16 M, 374 U) = 4038.7 bits; R 1.908; **AD 3175 letters** (1782 at R = 3.4) | -- | **cipher clause fails** |
+| (i) longest decoded stretch segmenting into fr18 words | **48** | p95 67, max 73 | **item control fails** |
+| (ii) 863 'province' (H), 2 contexts | -2.161 / -2.762 | p95 -2.681 / -3.063 | 2/2 above (flanks 2/2) |
+| (ii) 1257 'nouvelle' (S), 3 occurrences, 2 independent contexts | -2.319 / -2.673 | p95 -2.813 / -2.826 | 2/2 above (flanks 1/2) |
+| (ii) 884 'prince de' (H), 5 contexts | | | 1/5 above (flanks 0/5) |
+| (ii) 825 'quoique' (H), 3 contexts by the script, 2 after dropping the verbatim repeat 're et quoique sur les ex' (its two copies differ only in an unread group three places back, so the script's +/-3-code test kept both) | | | 1/2 above (flanks 0) |
+
+Other recurring values (contexts.tsv): 843 'republique' 2/2 above (flanks 0/2; both contexts sit in or next to the repeated
+block, 'a ? que(l) la republique les ? ? a'), 898 'quel', 1421 'premier', 1511 'toujours' at most 1 above; the rest 0.
+
+**Reading of the code-clause candidates** (for the record; not decisive here because the item control failed):
+863: "de quelque s province s que princesse d'Orange" (sensible: 'de quelques provinces que [la] princesse d'Orange') and
+"quel ? province ? ? er le" (one U before, two after; thin). 1257: "la proposition d une nouvelle paroit" (sensible) and
+"mi s de re nouvelle r le ? ? traite" ('...de renouveller le [? ?] traité': the value read as letters inside a longer word).
+
+**Ruling: D1 held** (DEPTH-REGRADE 4 Oct 2026 D1 stands). Under the pre-registered rule the item control (i) must pass before
+any clause admits D2; it fails (48 against p95 67), and the cipher clause fails by two orders of magnitude (13 vs AD 3175).
+depth_pct 53.9 (H 152 + S 304 of 846), unchanged. Outward words: "fragments read".
+What the failure means: statistic (i) has little power for this design. Most values on the sheet are whole French words, so a
+shuffled key also decodes into words and segments easily, while the real reading is full of syllable fragments ('ex', 'ta',
+'tion', 's') around 374 unread groups. This is a weak control for a word-valued syllabary, not evidence that the key is wrong
+(the value-shuffle and PMI order-shuffle results on file still stand on their own statistics). Next step, not run: a
+pre-registered item control suited to the design (e.g. the mean 5-gram score of every keyed window against the same 200
+shuffles), then re-rule 863/1257 under the code clause; about $2, a verifier session.
+Not changed: SO-HEL-R1953 (no count or depth changed).

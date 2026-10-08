@@ -242,3 +242,53 @@ are corroborated by 0574's recurring pair 402.341 'la guerre' and by f0501's 402
 aligner, so it is not an independent witness.
 
 Requests: none (disk only). Vision: 0. Subagents: 0.
+
+## AUDIT (depth re-check, DEPTH-MH)
+
+Verifier DEPTH-MH (account 1, session_01LMs2EyN5RhSA1321cqQrnZ), 8 Oct 2026 02:43-03:0x UTC by date -u; separate from every
+solver of this item and from DEPTH-REGRADE and R9-MANTV. Brief: .claude/briefs/runs/2026-10-08-acct3-scout-jobs.md "## DEPTH-MH";
+bar: .claude/briefs/runs/2026-10-08-acct3-depth-bar.md, copied into PREREG-DEPTH-MH.md and pushed (fdab0b7b) before any
+statistic. Nothing decoded; key, ciphertext, reading and N-class (N4) untouched.
+
+**Rule 7.** `python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --check`: tokens 423, C 202, M 98, U 123,
+"reading up to date", exit 0. Item = the 216 `694-08_0511_f410_` tokens (C 144, M 49, U 23); the 8 `f410u` tokens are outside
+the audited count.
+
+**Statistics** (`python3 tools/depth_stats.py --tokens ciphers/sachsstaatsarchiv-manteuffel-1712/reading_tokens.tsv --key
+ciphers/sachsstaatsarchiv-manteuffel-1712/key.tsv --line-prefix 694-08_0511_f410_ --cipher-class 'code<=120' --shuffle classes
+--seeds 8100-8299 --out ciphers/sachsstaatsarchiv-manteuffel-1712/depth_mh`; outputs in depth_mh/):
+
+| statistic | target | control (200 value-shuffled keys, classes kept, seeds 8100-8299) | result |
+|---|---|---|---|
+| longest H/C/S run, cipher codes 1-120 only (M/U/code break it) | 11 letters ('n t r e le s sch v', M1) | none (key-independent) | -- |
+| same, C nomenclator tokens let through | 21 letters ('s e a la reine d'Angleterre', M2) | none | -- |
+| AD = 1.5 x H(K)/R | H(K) = 60 distinct cipher codes x log2(35) = 307.8 + liberties 175.7 (49 M, 23 U) = 483.5 bits; R = 1.908 (fr18 5-gram held-out H 2.792); unicity 253, **AD 380 letters** (213 at R = 3.4) | -- | **cipher clause fails** (11 vs 380) |
+| (i) longest decoded stretch segmenting into fr18 words | **55** | p95 43, max 54 | **item control passes** |
+| (ii) code 217 'la reine d'Angleterre' (C), 3 occurrences, 3 independent contexts: 8+value+8 window, mean log2 P/letter | -2.806 / -2.533 / -2.815 | p95 -3.764 / -3.746 / -3.705; max -3.136 / -3.300 / -3.021 | **3/3 above p95** |
+| (ii) flanks only (value gapped out) | -3.589 / -2.878 / -3.476 | p95 -4.468 / -4.308 / -4.373 | 3/3 above p95 |
+
+390 Stettin occurs once in the item (no second context); no other code-class value recurs in f.410.
+
+**Code clause, (c) the verifier's reading of each context** (liberties listed):
+1. M2: `r|re|ro q u e l ? s e c|ch o|ou|ous s e a [217] ? ?` -> "... quel[?]se chose à la reine d'Angleterre ..." -- reads as
+   "quelque chose à la reine d'Angleterre" only if the unkeyed group is taken as 'que' and the 'se' before 'chose' is left
+   over: one U, three M, one repair. Weak; not relied on.
+2. L13: `? ? a ? [217] ? t o u ch a n t le|la p r i n c e` -> "... à [?] la reine d'Angleterre [?] touchant le prince". Two U
+   outside the phrase, M le|la and M c. Reads sensibly.
+3. L14 -> M4 (M4 is the band between L14 and L16, NOTES.md (2), so the order is the leaf's): `f i l s|sa ? [217] ? ? n e f e |
+   r|re|ro a r i e n p o|ou|ous u r|re|ro l u i m a i s l u y` -> "... fils [?] la reine d'Angleterre [? ?] ne fera rien pour lui,
+   mais luy ...". Three U, four M. Reads sensibly.
+Contexts 2 and 3 are independent (different codes on both sides, different lines) and both read with 217's meaning, so the code
+clause is met. The C grade on 217 (Krauske's table, 17/17 with the f.468 glosses) is not what meets it; under the bar that
+agreement is a D3/D4 external-check element only.
+
+**Verifier's sentence (written from the reading, no edition used):** "In this postscript the Queen of England is named three
+times: once in a phrase reading 'touchant le prince', and once followed, after two unread groups, by 'ne fera rien pour lui,
+mais luy ...'."
+
+**Ruling: D2** (was D1, DEPTH-REGRADE 4 Oct 2026). Code clause met (217, two sensible independent contexts, 3/3 windows above
+the 200-shuffle p95, flanks-only too) + item control (i) passed (55 vs p95 43, max 54) + the sentence above. Cipher clause not
+met (longest letter run 11 against AD 380). depth_pct 66.7 (C 144 of 216). Outward words: "partially deciphered (about 67% of the
+cipher text)"; DECODE mapping "Partially decrypted". The fr18 judge FAIL near its gate is the ZX-DEC349 shape and was not used.
+Limits: (i) beats the shuffle maximum by one letter only; the ruling rests on one code value; D3 would need >= 80% H/C/S.
+Not changed: SO-MANT-F410 (its prompt quotes no depth and the counts are unchanged).

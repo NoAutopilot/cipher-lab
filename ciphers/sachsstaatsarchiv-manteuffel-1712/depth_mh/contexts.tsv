@@ -1,0 +1,4 @@
+code	value	grade	line	target	shuffle_p95	shuffle_max	above_p95	flanks	flanks_p95	flanks_above	window	context
+217	la reine d'Angleterre	C	694-08_0511_f410_M2	-2.806	-3.764	-3.136	True	-3.589	-4.468	True	l|secosealareinedangleterre|||encharge	o|ou|ous s e a la reine d'Angleterre ? ? ? e
+217	la reine d'Angleterre	C	694-08_0511_f410_L13	-2.533	-3.746	-3.3	True	-2.878	-4.308	True	ntement||a|lareinedangleterre|touchant	? ? a ? la reine d'Angleterre ? t o u
+217	la reine d'Angleterre	C	694-08_0511_f410_L14	-2.815	-3.705	-3.021	True	-3.476	-4.373	True	e|||srnfils|lareinedangleterre||neferari	i l s|sa ? la reine d'Angleterre ? ? n e
