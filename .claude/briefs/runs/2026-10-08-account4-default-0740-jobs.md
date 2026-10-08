@@ -88,3 +88,55 @@ including a decoy/known-answer set from the appendix (atlas PX-BROGLYPH) so the 
 folder's decode (key.tsv unchanged unless the per-unit merge clause of rule 3 is met), --check, grade, NOTES/gaps. Do not run the LM-context
 rescoring (a separate job).
 
+## Wave 2 (spawned as wave-1 slots free, from 08:5x UTC 8 Oct)
+Intake gate 08:4x UTC (each exit 0, "-- edition/page or full-text-search citation found within 6 lines"):
+`decode-2754-bnf-baluze156-1636: open (line 1)`; `fr2980-gramont: partial (line 3)`; `sachsstaatsarchiv-manteuffel-1712: partial (line 1)`;
+`castelcicala-1816: partial (line 1)`; `fr4715-f61-mayenne-1592: partial (line 1)`; `fr16142-noailles-constantinople-1571: partial (line 1)`;
+`fr16104-vivonne-spain-1572: partial (line 1)`; `na-suriname-map-1781: partial (line 1)`.
+
+### D4-B2754 -- decode-2754-bnf-baluze156-1636: f.40 key images against f.157r (solver, Opus; cap 3, box 60 min)
+Escalation l.829 / Verdict l.834: "fetch the f.40 key images and apply them to the 137 tokens of f.157r beside a shuffled-key null of the
+same length and symbol count, ~$1.5 (loose-ends 8 Oct 2026)". Find which f.40 the loose-ends note means (grep the folder and
+LOOSE-ENDS' ROOM line 04:27 8 Oct); fetch it once via Gallica IIIF (tools/gallica_folio.py for the canvas), transcribe the table to a
+key TSV (crop step pasted; one vision unit + check), PREREG the gate (fr17 AND fr judge, per l.844-864, plus shuffled-key null p99) before
+scoring, apply with the folder's decode, report both numbers in HYPOTHESES.md. The Sabran 1636 table is [retired] (l.831): if f.40 turns
+out to be that same table, stop and say so. NOTES/gaps.
+
+### D4-VIV -- fr16104-vivonne-spain-1572: crops of the four f-on-label-p positions for the sign sorter (worker, Opus; cap 2, box 45 min)
+Verdict l.1881: "cheapest next: crops of the four f-on-label-p positions for the sign sorter, ~$1". Locate the four positions from the
+VIV-ANCHOR section (8 Oct), cut native crops (`tools/iiif_lines.py`, command pasted), add them to the folder's sorter inputs / focus.tsv in
+the shape tools/sign_sorter.py expects (read its --help), and file nothing else. No reading change. NOTES/gaps; one ROOM line naming the
+sorter input path for the owner's desk.
+
+### D4-SUR -- na-suriname-map-1781: glossed cipher at inv. 373 scan 0702 (solver, Opus; cap 6, box 100 min)
+NOTES "Action that depends on nobody": transcribe and test the glossed cipher at inv. 373 scan 0702 (two blind passes on line crops + one
+reconciliation, R10-SUR693 method with its own PREREG), ~$5. Fetch the scan once (Nationaal Archief, CLAUDE.md host row; manifest), crop
+step pasted, 3 units x ~1.5, PREREG-D4-SUR.md pushed before scoring, matched control as R10-SUR693 used. Grade per token; --check;
+HYPOTHESES/NOTES/gaps. Do not start 0730/0746/0758 (later jobs).
+
+### D4-GRA -- fr2980-gramont: zb relabel on n9gra4/n12gra (worker, Opus; cap 2, box 40 min)
+Verdict l.1522: "cheapest next: the same relabel rule on n9gra4/n12gra (f.18r L11-L21), ~$0.3, then the plain-z A (f.30) vs R (fr.3040,
+6 leftover unboxed z) half stays a listed conflict". Read l.1495-1510 for the rule; apply it to n9gra4/recon.tsv and
+n12gra/recon_settled.tsv, re-run the folder's scoring/--check, report whether the f.18r PASS moves (it must be the same pre-registered gate).
+NOTES/gaps.
+
+### D4-MANT -- sachsstaatsarchiv-manteuffel-1712: inventory of the 4-digit system across 694/03-06 (worker, Opus; cap 3, box 60 min)
+Verdict l.1639: "cheapest next: the 4-digit system's inventory across 694/03-06 (~$2, separate hypothesis)". From images and tables already
+on disk (R12D-MANT06 noted a separate glossed 4-digit code on 0505/0520), list every leaf with 4-digit groups (leaf, group count, glossed
+y/n) into a TSV; a fetch only where the folder's manifest says an image is missing and the host row allows. No cryptanalysis; name the next
+test with a cost. Leave the 0501 decision to the orchestrator (one line in NOTES). NOTES/gaps.
+
+### D4-ASKS -- three person-side requests the Verdicts name (worker, Opus; cap 3, box 45 min)
+File, each as the folder's Verdict names it, and nothing else: (1) castelcicala-1816: an ASKS.md row and a LOCAL-QUEUE.tsv row for a reading
+or copy of BL Add MS 41525 f.38 (1816-17 Castelcicala-Circello clear-text extracts) as a possible grade-C crib (Premise check (d)); write
+REQUEST.md in the folder. (2) fr4715-f61-mayenne-1592: an ASKS row from family/REQUEST_fr4699.md (Verdict: "the orchestrator files an ASKS
+row", ~$0 -- filed by you for this lane). (3) fr16142-noailles-constantinople-1571: an ASKS row for a person's read of the c262 gloss word
+crops (Verdict l.1732), naming the crop paths. Before each: check ASKS.md / LOCAL-QUEUE.tsv for an existing row on the same item (if one
+exists, cite it in NOTES instead). Rules: CLAUDE.md "Anything blocked on a human goes in ASKS.md"; tools/key_livecheck.py only if a row asks
+for access; LOCAL-QUEUE rows follow tools/local_runner_brief.md's columns and tools/lq_answer_check.py's row kinds; never name the owner,
+no personal data. Update each folder's Remaining gaps ("waiting-on ASKS <n>") and gaps_check.
+
+## Wave 3 (only if spend allows, orchestrator's call)
+### D4-B167 -- baluze167-davaux-1637: two blind passes on the 170 f.229r-v crops + reconciliation (solver, Opus; cap 8, box 120 min)
+Verdict: "cheapest next: two blind passes on the 170 f.229r-v crops plus reconciliation (~$7.5)". Crops on disk (D1A-B167, 8 Oct). Per-page
+subagent calls, one page per call (Usage 6), reconciliation = one more unit. Decode with the folder's key, grade, --check, NOTES/gaps.
