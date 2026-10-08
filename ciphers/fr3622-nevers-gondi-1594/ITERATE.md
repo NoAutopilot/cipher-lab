@@ -51,3 +51,5 @@ minimum glossed-letter count below which the shuffled p99 is declared non-discri
 --ark btv1b90606320 --canvas 99 --out ciphers/fr3987-nevers-revol-1593/images --prefix f54` first (not run). Caution carried: this
 hand-family read 36-55% pass agreement on fr3986/fr3987 f.66 copies, so a 0.60 gate has real chance of failing on reader error,
 which would be logged as a non-test, not a no.60 negative.
+
+| 8 Oct 2026 | lane re-brief | G60 proposal adopted with fixed numbers: span canvas 99 lines 1-8, price check on lines 1-2 (stop if > $5 projected), alignment rule, >= 40 aligned gloss letters, PASS >= 0.60 and > shuffled p99 | -- | -- | registered in .claude/briefs/runs/2026-10-08-ytbiz-bnf-g60b.md | -- |
