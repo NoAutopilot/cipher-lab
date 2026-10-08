@@ -503,5 +503,11 @@ For [Quartermaster] Biggs [.] Send ordrs to Spaulding to proceed to Hilt on head
 
 Code-word tokens: H 10.
 
-Totals over the 62 entries: H 1010, C 13, I 0, M 0.
+**E65 | Page 66 | 8958 | 6 May 1864, Col Stager at Cleveland O. (operator not given; mostly plain)**
+
+Cleveland O. [Washington] May 6th {time: 12.30} for Stager ---- The service requires that you shld proceed immy to [City Point] to make arrangements for the transmission & rect. of intelligence between that point & the [Force]'s on the altar ---- [Government] Canby will start for there [Track] afternoon You had better join him Pls ans Further instructions will be given you on your way [Jefferson]
+
+Code-word tokens: H 7.
+
+Totals over the 63 entries: H 1017, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->

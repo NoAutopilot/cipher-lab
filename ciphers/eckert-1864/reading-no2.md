@@ -807,5 +807,11 @@ Via Cairo Copy via N. Y. (2.30 P. M) [Washington] {date: Apr 8} {time: 2.30 PM} 
 
 Code-word tokens: H 17.
 
-Totals over the 64 entries: H 1700, C 69, I 59, M 2.
+**N2-BM | Page 127 | 9019 | 27 July 1864 2 PM, to Palestine-line addressee (Cipher No. 2; header "2 pm", no addressee in clear; page number printed 127)**
+
+{time: 2 PM} for [Brig. General] In galls [Quarter Master] stop under changed circumstances do you need more mules [?] About [500] have been shipped The rest wilby held till I hear from you we have been obliged to stop shipments of [Horse]'s to you  {tail: [signed] [Quarter[?] Master General] Does the [Infantry] spangled banner}
+
+Code-word tokens: H 10.
+
+Totals over the 65 entries: H 1710, C 69, I 59, M 2.
 <!-- decode.py: derived block ends -->
