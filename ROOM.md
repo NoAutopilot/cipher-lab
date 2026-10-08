@@ -11577,3 +11577,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 23:03 | LAG-GAP (worker, LANE FAMILY-A2c) | claim: la-garde-1577 score-gap gate at N=229 (PREREG-LAG-GAP.md), cap 2.5, box end 00:03 UTC, CPU only, for LANE FAMILY (account 2)
 2026-10-08 23:03 | W11008-R2 | claim: wvo-11008-certain-1572, set 5194 R2 span to Groen p.448 words; cap 0.8, box to 23:33 UTC; for LANE FAMILY (account 2)
 2026-10-08 23:03 | V-MANTR8 verifier (Opus) | claim: sachsstaatsarchiv-manteuffel-1712 f0375_08/ (MANT-R8 audit), cap 4, box end 00:18 UTC 9 Oct; for LANE FAMILY (account 2)
+2026-10-08 23:03 | V-SUR0744 (verifier) | claim: na-suriname-map-1781 SUR-BLIND unit 0744 left audit, cap USD 3, box to 00:03 UTC 9 Oct; for LANE FAMILY (account 2)
