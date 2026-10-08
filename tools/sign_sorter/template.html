@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-08.3"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-08.4"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -51,7 +51,7 @@ h1{font-family:var(--f-display);font-weight:600;font-size:2.1rem;margin:0;text-w
 .opts label{color:var(--muted);display:flex;gap:6px;align-items:center}
 select,input,button{font:inherit;font-size:.85rem}
 button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:5px;padding:4px 10px;cursor:pointer}
-button:hover{border-color:var(--accent)}
+@media (hover:hover){button:hover{border-color:var(--accent)}}
 button:disabled{opacity:.5;cursor:default}
 button:focus-visible,select:focus-visible,input:focus-visible,.t:focus-visible,.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
@@ -80,7 +80,7 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
   font:700 12px/18px var(--f-body);text-align:center;background:var(--ink);color:var(--bg)}
 .t.fq .badge{background:var(--accent);color:#fff}
 .t .badge.ok{cursor:pointer;min-width:24px;height:24px;border-radius:12px;font-size:14px;line-height:24px;top:0;right:0;box-shadow:0 0 0 2px var(--surface)}
-.t .badge.ok:hover{background:var(--ok)}
+@media (hover:hover){.t .badge.ok:hover{background:var(--ok)}}
 .t.kept{border:2px solid var(--ok)}
 .t.ref{border:2px solid var(--ok);opacity:.8}
 .t.ref .badge{background:var(--ok);color:#fff}
@@ -161,7 +161,7 @@ canvas{display:block;max-width:none;height:auto}
 .card .cnt{font-size:.75rem}
 .card .smp{display:flex;flex-wrap:wrap;gap:4px}
 .card .smp img{width:var(--csz,60px);height:var(--csz,60px);object-fit:contain;background:var(--tile);border-radius:3px;border:2px solid transparent;cursor:zoom-in;-webkit-user-drag:none}
-.card .smp img:hover{border-color:var(--accent)}
+@media (hover:hover){.card .smp img:hover{border-color:var(--accent)}}
 .card .smp img{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 .card .put{font-size:.75rem;color:var(--accent);font-weight:600}
 .card .cid.grab{cursor:grab;touch-action:none;-webkit-user-select:none;user-select:none}
@@ -178,7 +178,7 @@ body.traypad #offer{bottom:100px}
 #offer .tiles{margin:0}
 #offer.inbox{position:static;max-width:none;margin:0;box-shadow:none}
 #offer .t{--sz:40px}
-@media (max-width:640px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}
+@media (max-width:640px), (max-height:500px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}
   .pile{scroll-margin-top:var(--barh,70px)} .bigt{width:88px;height:88px} .bigt img{max-width:80px;max-height:80px} #trayGo{padding:8px 8px}}
 /* Fix the cut (owner, 4 Oct 2026): the larger view's bracket box becomes editable */
 .cv.editing canvas{touch-action:pan-y pinch-zoom;cursor:crosshair}
@@ -207,6 +207,37 @@ body.traypad #offer{bottom:100px}
 #dropBar .dropover{border-color:var(--accent);background:var(--accent-soft);outline:3px solid var(--accent)}
 .t.lifted{opacity:.35}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* phone (owner, 8 Oct 2026, iPhone: "I still can't see the strip"): strip and its controls first, the enlarged tile last */
+@media (max-width:640px), (max-height:500px){
+  #ctx .row.top{order:-7;top:-10px}
+  #ctxNav{order:-6}
+  #ctxCv{order:-5;scroll-margin-top:56px}
+  #ctxFixRow,#fixBox{order:-4}
+  #ctxQ{order:-3}
+  #ctxActs,#ctxMsg,#ctxErr{order:-2}
+  #ctxBig{height:min(26dvh,200px)}
+}
+@media (pointer:coarse){select,input[type=text],textarea,#fixBox .nudges select{font-size:16px}}   /* iOS zooms on focus below 16px */
+button,select,summary{touch-action:manipulation}   /* no double-tap zoom on repeated taps (nudge arrows, Next) */
+@media (max-width:640px){.save:not(.err){white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.tabs{flex:1 1 0}}   /* the sticky bar keeps one height */
+
+/* phone, step 2: only the sign stays pinned; the strip and the five buttons scroll with the cards; one row of samples per card */
+@media (max-width:640px), (max-height:500px){
+  .s2stick{display:contents}
+  .s2top{position:sticky;top:var(--bar0,60px);z-index:4;background:var(--bg);padding:6px 0;border-bottom:1px solid var(--line);box-shadow:0 6px 10px -8px rgba(0,0,0,.35)}
+  .s2stick .cv{max-height:none;overflow:visible}
+  .card{--csz:46px}
+  .card .cid.grab{touch-action:manipulation;justify-self:start}
+  #cards{min-height:100vh}   /* the page is long enough at once for the scroll to the sign, while the piles are still being sorted */
+}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+#ctxBig{pointer-events:none;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;-webkit-user-drag:none}
+.t,.card,.bigt{-webkit-tap-highlight-color:transparent}
+@media (pointer:coarse){.pile .tiles,.pile .ph{-webkit-user-select:none;user-select:none}}
+#ctx .box{overscroll-behavior:contain}
+@media (max-width:640px){.how{display:none}}   /* phone: the hint above the piles says the same; saves ~380 px of scrolling */
+@media (pointer:coarse){.t .badge.ok{pointer-events:none}.mouse-only{display:none}} .touch-only{display:none} @media (pointer:coarse){.touch-only{display:inline}}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <div class="wrap">
@@ -223,7 +254,7 @@ body.traypad #offer{bottom:100px}
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <section id="s1">
-    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign: lift your finger to see it larger, or drag it onto a pile (or onto the bar at the bottom: doesn’t belong / trash). Tap the orange <b>?</b> on a questioned sign to approve it. <b>Drag</b> a sign onto another pile (mouse: straight away; phone: hold first). The red <b>✕</b> on a sign (mouse: hover) trashes it: a page edge, shadow or stain, not a sign.</p>
+    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign: lift your finger to see it larger, or drag it onto a pile (or onto the bar at the bottom: doesn’t belong / trash). <span class="mouse-only">Click the orange <b>?</b> on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it, lift, and press “Right pile: keep it”.</span> <b>Drag</b> a sign onto another pile (mouse: straight away; phone: hold first). The red <b>✕</b> on a sign (mouse: hover) trashes it: a page edge, shadow or stain, not a sign.</p>
     <div class="tapmode"><span class="hint">A tap on a sign:</span><span class="seg" role="group" aria-label="What a tap does"><button type="button" id="modeOut" class="on">Takes it out</button><button type="button" id="modeLook">Shows it large</button></span></div>
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
     <details class="opts"><summary>Display options</summary><div class="row">
@@ -269,7 +300,7 @@ body.traypad #offer{bottom:100px}
     <div id="ctxBigW"><img id="ctxBig" alt=""></div>
     <div class="row"><span class="hint" id="ctxS"></span></div>
     <div class="cv" id="ctxCv"><canvas id="ctxC"></canvas></div>
-    <div class="row"><button type="button" id="ctxFix" aria-pressed="false">Fix the cut</button><span class="hint" id="fixState"></span></div>
+    <div class="row" id="ctxFixRow"><button type="button" id="ctxFix" aria-pressed="false">Fix the cut</button><span class="hint" id="fixState"></span></div>
     <div id="fixBox" hidden role="group" aria-label="Fix the cut">
       <div class="row"><button type="button" id="fixSave">Save cut (Enter)</button><button type="button" id="fixCancel">Cancel</button><button type="button" id="fixReset" hidden>Back to the first cut</button></div>
       <details id="fixHelp" open><summary class="hint">How to fix a cut</summary><p class="hint" style="margin:0">Drag an edge of the box, or drag inside it to move the whole box. Drag a round corner handle to move that corner alone
@@ -288,15 +319,16 @@ body.traypad #offer{bottom:100px}
         <label class="hint" for="fixBrushR">Brush <input id="fixBrushR" type="range" min="1" max="30" value="5"> <span id="fixBrushV">5</span> px</label>
         <button type="button" id="fixBrushUndo" disabled>Undo stroke</button><span class="hint" id="fixBrushN"></span></div>
     </div>
-    <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
+    <div class="row" id="ctxNav"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="1" max="8" value="3"></label>
       <span class="seg" id="viewSeg" role="group" aria-label="What the larger view shows" hidden><button type="button" id="viewPage" aria-pressed="true">Whole page</button><button type="button" id="viewStrip" aria-pressed="false">Line strips</button></span>
       <label class="hint" for="ctxNb" id="ctxNbL"><input id="ctxNb" type="checkbox" checked> Lines above and below</label></div>
-    <div class="row"><button type="button" id="ctxOut">Doesn’t belong: take out</button><button type="button" id="ctxKeep">Right pile: keep it</button><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
+    <div class="row" id="ctxActs"><button type="button" id="ctxOut">Doesn’t belong: take out</button><button type="button" id="ctxKeep">Right pile: keep it</button><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
       <button type="button" id="ctxNewB">None of these: new sign</button>
       <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxTrash" title="Not a sign: page edge, shadow, stain (key: Delete)">Trash (not a sign)</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxClose">Close</button></div>
     <p class="hint" id="ctxMsg" aria-live="polite"></p>
     <p class="save err" id="ctxErr" role="alert" hidden></p>
+    <p class="hint" id="ctxDiag"></p>
   </div></div>
 </div>
 <script>
@@ -389,7 +421,7 @@ function attachPress(el, onTap, onHold){
   const cancel = () => { if (t){ clearTimeout(t); t = null; } el.classList.remove('pressing'); };
   el.addEventListener('pointerdown', e => { if (e.button > 0) return; held = false; sx = e.clientX; sy = e.clientY; el.classList.add('pressing'); const pt = e.pointerType;
     clearTimeout(t); t = setTimeout(() => { t = null; held = true; swallowClick = true; el.classList.remove('pressing');
-      if (pt === 'touch' && el._touchArm) el._touchArm(sx, sy); else onHold(); }, 380); });   // touch: lift to drag; lift off unmoved = larger view
+      if (pt === 'touch' && el._touchArm) el._touchArm(sx, sy); else onHold(); }, pt === 'touch' ? 500 : 380); });   // touch: lift to drag; lift off unmoved = larger view
   el.addEventListener('pointermove', e => { if (t && Math.hypot(e.clientX - sx, e.clientY - sy) > 10) cancel(); });
   el.addEventListener('pointerup', cancel); el.addEventListener('pointercancel', cancel); el.addEventListener('pointerleave', cancel);
   el.addEventListener('click', e => { if (held){ held = false; e.preventDefault(); return; } onTap(e); });
@@ -480,6 +512,8 @@ function tileEl(sid, pid, cls){
 // owner 6 Oct 2026: page edges and shadows get cut as signs; one click sends a tile to the not-a-letter pile ("trash")
 function trashTile(sid, pid){ remember([sid]); ensureSpecial('NOT-LETTER'); setDest(sid, 'NOT-LETTER'); hideOffer();
   note_('Trashed ' + sid + ' (not a sign). Undo puts it back.'); renderSome([pid, 'NOT-LETTER']); }
+// drag auto-scroll step per frame: touch gets a gentler ramp and cap (about 720 px/s), so the pile lit under the finger is the one it drops on
+function edgeStep(over, cap){ return COARSE ? Math.min(12, over / 4 + 2) : Math.min(cap, over / 2 + 4); }
 function pileDrag(b, sid, pid){
   // move/up are listened for on the window while a drag runs, so a lost pointer capture (seen in the hosted page,
   // owner 6 Oct 2026: the ghost stuck on screen) can never strand the ghost; Esc or leaving the window cancels.
@@ -493,8 +527,8 @@ function pileDrag(b, sid, pid){
   const mark = () => { const p = pileAt(d.x, d.y); if (p !== d.over){ if (d.over) d.over.classList.remove('dropover');
     if (p && target(p) !== pid) p.classList.add('dropover'); d.over = p; } };
   const loop = () => { if (!d) return; const dbh = dropBarH(), top = barBottom() + 40, bot = window.innerHeight - dbh - 40;
-    if (d.y < top) window.scrollBy(0, -Math.min(28, (top - d.y) / 2 + 4));
-    else if (d.y > bot && d.y < window.innerHeight - dbh) window.scrollBy(0, Math.min(28, (d.y - bot) / 2 + 4));   // not while over the bar
+    if (d.y < top) window.scrollBy(0, -edgeStep(top - d.y, 28));
+    else if (d.y > bot && d.y < window.innerHeight - dbh) window.scrollBy(0, edgeStep(d.y - bot, 28));   // not while over the bar
     mark(); d.raf = requestAnimationFrame(loop); };
   const lift = () => { const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g;
     dropBar(true); d.raf = requestAnimationFrame(loop); place(); };
@@ -646,7 +680,7 @@ function trayDrag(b, sid){
   const pileAt = (x, y) => { const e = document.elementFromPoint(x, y); const p = e && e.closest ? e.closest('.pile') : null; return p && p.dataset.pile ? p : null; };
   const mark = () => { const p = pileAt(d.x, d.y); if (p !== d.over){ if (d.over) d.over.classList.remove('dropover'); if (p) p.classList.add('dropover'); d.over = p; } };
   const loop = () => { if (!d) return; const top = barBottom() + 40, bot = window.innerHeight - 110;
-    if (d.y < top) window.scrollBy(0, -Math.min(28, (top - d.y) / 2 + 4)); else if (d.y > bot && d.y < window.innerHeight - 92) window.scrollBy(0, Math.min(28, (d.y - bot) / 2 + 4));
+    if (d.y < top) window.scrollBy(0, -edgeStep(top - d.y, 28)); else if (d.y > bot && d.y < window.innerHeight - 92) window.scrollBy(0, edgeStep(d.y - bot, 28));
     mark(); d.raf = requestAnimationFrame(loop); };
   b.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0, id: e.pointerId}; try { b.setPointerCapture(e.pointerId); } catch (er) {} });
   b.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
@@ -672,7 +706,7 @@ function setStep(n){
   hideOffer(); renderTray();
   if (n === 2){ ensureVecs().then(() => { if (step === 2) renderS2(); }); renderS2(); }
   if (n === 1) window.scrollTo(0, s1Scroll);
-  else window.scrollTo(0, Math.max(0, $('s2').getBoundingClientRect().top + scrollY - document.querySelector('.bar').offsetHeight - 6));
+  else { const t = PHONE && !$('s2Work').hidden ? $('s2Work') : $('s2'); window.scrollTo(0, Math.max(0, t.getBoundingClientRect().top + scrollY - document.querySelector('.bar').offsetHeight - 6)); }
 }
 $('modeOut').onclick = () => setTapMode('out'); $('modeLook').onclick = () => setTapMode('look'); setTapMode(tapMode);
 $('tab1').onclick = () => setStep(1); $('tab2').onclick = () => setStep(2); $('trayGo').onclick = () => setStep(2); $('s2Back').onclick = () => setStep(1);
@@ -710,7 +744,7 @@ function renderS2(){
   $('s2Q').hidden = !focusQ[sid]; $('s2Q').textContent = focusQ[sid] ? 'Question: ' + focusQ[sid] : '';
   $('s2Prev').disabled = i <= 0; $('s2Next').disabled = i >= L.length - 1;
   $('s2Home').textContent = 'Put back in ' + homeOf[sid];
-  drawLine(sid, $('s2C'), PHONE ? 5 : 3, () => s2Cur === sid && step === 2);
+  drawLine(sid, $('s2C'), PHONE && innerWidth <= 640 ? 5 : 3, () => s2Cur === sid && step === 2);
   const cards = $('cards'); cards.textContent = '';
   if (!vecDone){ cards.textContent = 'Sorting the piles by likeness…'; return; }
   const ps = allPiles().filter(p => !SPECIAL.has(p.id)).map(p => ({...p, members: membersOf(p.id)}))
@@ -740,7 +774,7 @@ function cardDrag(h, pid){
   const move = () => { if (d.ghost){ d.ghost.style.left = (d.x - 40) + 'px'; d.ghost.style.top = (d.y - 20) + 'px'; }
     const c = cardAt(d.x, d.y); if (c !== d.over){ if (d.over) d.over.classList.remove('over'); if (c && c.dataset.pile !== pid) c.classList.add('over'); d.over = c; } };
   const loop = () => { if (!d) return; const top = barBottom() + 24, bot = window.innerHeight - 40;
-    if (d.y < top) window.scrollBy(0, -Math.min(24, (top - d.y) / 2 + 4)); else if (d.y > bot) window.scrollBy(0, Math.min(24, (d.y - bot) / 2 + 4)); move(); d.raf = requestAnimationFrame(loop); };
+    if (d.y < top) window.scrollBy(0, -edgeStep(top - d.y, 24)); else if (d.y > bot) window.scrollBy(0, edgeStep(d.y - bot, 24)); move(); d.raf = requestAnimationFrame(loop); };
   h.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', t: 0};
     if (!d.mouse){ const dd = d; d.t = setTimeout(() => { if (d === dd && !d.on) start(); }, 250); } });
   h.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
@@ -768,7 +802,7 @@ function picDrag(im, sid){
   const move = () => { if (d.ghost){ d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; }
     const c = cardAt(d.x, d.y); if (c !== d.over){ if (d.over) d.over.classList.remove('over'); if (c && c.dataset.pile !== pileOf(sid)) c.classList.add('over'); d.over = c; } };
   const loop = () => { if (!d) return; const top = barBottom() + 24, bot = window.innerHeight - 40;
-    if (d.y < top) window.scrollBy(0, -Math.min(24, (top - d.y) / 2 + 4)); else if (d.y > bot) window.scrollBy(0, Math.min(24, (d.y - bot) / 2 + 4)); move(); d.raf = requestAnimationFrame(loop); };
+    if (d.y < top) window.scrollBy(0, -edgeStep(top - d.y, 24)); else if (d.y > bot) window.scrollBy(0, edgeStep(d.y - bot, 24)); move(); d.raf = requestAnimationFrame(loop); };
   im.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', t: 0};
     if (!d.mouse){ const dd = d; d.t = setTimeout(() => { if (d === dd && !d.on) start(); }, 250); } });
   im.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
@@ -801,7 +835,7 @@ $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i <
   const tile = $('s2Tile'); let drag = null;
   const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
   const loop = () => { if (!drag) return; const y = drag.y, top = barBottom() + 24, bot = window.innerHeight - 50;
-    if (y > bot) window.scrollBy(0, Math.min(24, (y - bot) / 2 + 4)); else if (y < top) window.scrollBy(0, -Math.min(24, (top - y) / 2 + 4));
+    if (y > bot) window.scrollBy(0, edgeStep(y - bot, 24)); else if (y < top) window.scrollBy(0, -edgeStep(top - y, 24));
     mark(); drag.raf = requestAnimationFrame(loop); };
   const mark = () => { const c = cardAt(drag.x, drag.y); if (c !== drag.over){ if (drag.over) drag.over.classList.remove('over'); if (c) c.classList.add('over'); drag.over = c; } };
   tile.addEventListener('pointerdown', e => { if (e.button > 0 || !s2Cur) return; e.preventDefault();
@@ -974,7 +1008,10 @@ function drawLine(sid, c, z, alive){
     const cxm = x + w / 2;
     const x0 = Math.max(0, Math.round(cxm - halfW)), x1 = Math.min(im.naturalWidth, Math.round(cxm + halfW));
     const py = (ia || ib) ? Math.round(h * 0.35) + 4 : padY;   // with neighbour lines shown, keep this strip to its own line
-    const y0 = Math.max(0, y - py), y1 = Math.min(im.naturalHeight, y + h + py);
+    let y0 = Math.max(0, y - py), y1 = Math.min(im.naturalHeight, y + h + py);
+    // phone (8 Oct 2026): a dot or tick at zoom 5 drew a 20-35 px sliver; show at least ~120 css px of the line's height
+    if (PHONE && !ed && !ia && !ib){ const cw = Math.max(120, c.parentElement.clientWidth || 600), minH = Math.min(im.naturalHeight, Math.round(120 * (x1 - x0) / cw));
+      if (y1 - y0 < minH){ y0 = Math.max(0, Math.round((y0 + y1 - minH) / 2)); y1 = Math.min(im.naturalHeight, y0 + minH); y0 = Math.max(0, y1 - minH); } }
     const cv = c.parentElement;
     const cssW = Math.max(120, cv.clientWidth || 600);                  // always fill the box; the slider changes the window
     const s = cssW * Math.min(2, window.devicePixelRatio || 1) / (x1 - x0);
@@ -1004,8 +1041,8 @@ function drawLine(sid, c, z, alive){
   [im, ia, ib].forEach(q => { if (q && !(q.complete && q.naturalWidth)) q.addEventListener('load', draw, {once: true}); }); draw();
 }
 // phone (owner, 8 Oct 2026, Armstrong on a phone: the line under the tile was a sliver): start the larger view closer in
-var PHONE = window.matchMedia && matchMedia('(max-width:640px)').matches, COARSE = window.matchMedia && matchMedia('(pointer:coarse)').matches;
-if (PHONE){ $('ctxZ').value = 5; $('fixHelp').open = false; }
+var PHONE = window.matchMedia && matchMedia('(max-width:640px), (max-height:500px)').matches, COARSE = window.matchMedia && matchMedia('(pointer:coarse)').matches;
+if (PHONE){ $('ctxZ').value = innerWidth > 640 ? 3 : 5; $('fixHelp').open = false; }
 function drawCtx(){ const sid = ctxSid, f = usePage(sid) ? drawRegion : drawLine; f(sid, $('ctxC'), +$('ctxZ').value, () => sid === ctxSid && !$('ctx').hidden); }
 
 // ---- "Whole page" (SORTER-PAGEVIEW; owner, 4 Oct 2026, on Longlee f101v_L32_49: the neighbour lines were trimmed slices with
@@ -1026,7 +1063,7 @@ const usePage = sid => !!(pageView && REG && !regFail && sid && REG.lines[itemBy
 function viewUi(){ const on = !!(REG && !regFail && ctxSid && REG.lines[itemBySid[ctxSid].p]);
   $('viewSeg').hidden = !on; $('viewPage').classList.toggle('on', pageView); $('viewStrip').classList.toggle('on', !pageView);
   $('viewPage').setAttribute('aria-pressed', pageView); $('viewStrip').setAttribute('aria-pressed', !pageView);
-  $('ctxNbL').hidden = on && pageView; }
+  $('ctxNbL').hidden = (on && pageView) || !(ctxSid && nbPages(itemBySid[ctxSid].p).some(Boolean)); }
 function setView(on){ pageView = on; try { localStorage.setItem('sorterPageView', on ? '1' : '0'); } catch (e) {} if (ctxSid) showCtx(ctxSid, pileOf(ctxSid), true); }
 $('viewPage').onclick = () => setView(true); $('viewStrip').onclick = () => setView(false);
 function drawRegion(sid, c, z, alive){
@@ -1301,9 +1338,14 @@ function showCtx(sid, pid, keepList, list, listName){
   $('ctxOut').hidden = cur === 'OUT';
   ['ctxDest', 'ctxAside', 'ctxBad', 'ctxNewB'].forEach(k => { $(k).hidden = false; });   // the person's earlier picks (--refs) can be corrected too (owner, 4 Oct 2026)
   $('ctxS').textContent = 'Cryptogram page ' + it.p + (it.c ? ', cluster ' + it.c + ' (' + clusterMembers[it.c].length + ' tiles)' : '') + (usePage(sid) ? '. The brackets mark this tile on the page as written, with the lines above and below; Zoom shows more or fewer lines.' : '. The brackets mark this tile; its neighbours on the line are shown either side.') + (it.r ? ' You sorted this one earlier: it is an example of the pile and stays where it is.' : '');
-  updateUndo(); fixUi(!!fix); viewUi();
-  $('ctx').hidden = false; drawCtx();
+  updateUndo(); fixUi(!!fix); viewUi(); setTimeout(ctxDiag, 400);
+  $('ctx').hidden = false; if (!keepList) document.querySelector('#ctx .box').scrollTop = 0; drawCtx();
 }
+function ctxDiag(){ const c = $('ctxC'), bx = document.querySelector('#ctx .box'), vv = window.visualViewport, d = $('ctxDiag'); if (!d || $('ctx').hidden) return;
+  const r = c.getBoundingClientRect();
+  d.textContent = 'Page build ' + ((document.querySelector('meta[name="sign-sorter-template"]') || {}).content || '?') + ' · view ' + innerWidth + '×' + innerHeight +
+    (vv ? ' (visible ' + Math.round(vv.height) + ', zoom ' + vv.scale.toFixed(2) + ')' : '') + ' · dpr ' + devicePixelRatio + ' · phone ' + PHONE +
+    ' · strip ' + c.width + '×' + c.height + ' drawn, ' + Math.round(r.height) + ' px shown at y ' + Math.round(r.top) + ' · dialog ' + bx.clientHeight + '/' + bx.scrollHeight; }
 function ctxStep(d){ if (fix) return; const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length){ const s2 = ctxList[i]; showCtx(s2, pileOf(s2), true); } }
 function ctxAdvance(sid){
   const i = ctxList.indexOf(sid);
@@ -1406,6 +1448,11 @@ function markRankDone(){ document.querySelectorAll('#rankTiles > div').forEach(d
 const render0 = render; render = function(){ render0(); markRankDone(); markFocusDone(); };
 if (DATA.refImg){ $('refBox').hidden = false; $('refImg').src = DATA.refImg; $('refCap').textContent = DATA.refCaption || 'Reference sheet'; }
 render();
+try { const y = +localStorage.getItem('sorterY'); if (y > 0) window.scrollTo(0, y); } catch (e) {}   // reopen where the person left off (per browser)
+const keepY = () => { try { if (step === 1 && $('ctx').hidden) localStorage.setItem('sorterY', String(Math.round(scrollY))); } catch (e) {} };
+window.addEventListener('pagehide', keepY); document.addEventListener('visibilitychange', () => { if (document.hidden) keepY(); });
+(function(){ const v = (document.querySelector('meta[name="sign-sorter-template"]') || {}).content || '?';
+  const p = document.createElement('p'); p.className = 'hint'; p.style.margin = '2px 0 0'; p.textContent = 'Page build ' + v; document.querySelector('h1').after(p); })();
 
 updateUndo();
 (async () => {
