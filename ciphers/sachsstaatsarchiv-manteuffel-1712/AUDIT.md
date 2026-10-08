@@ -549,3 +549,134 @@ There was no reason to lower to D0: three spans read as specific, externally con
 
 **Requests:** resources.huygens.knaw.nl 7, be-api.us.archive.org 18, archive.org 4, www.googleapis.com 15 (three HTTP 503s, one retry
 each), net calls by prior_work.py (ia-global, gbooks). No 403, 429 or challenge.
+
+## AUDIT (V-MANT08)
+
+Verifier V-MANT08 (account 2, LANE FAMILY, session_01LGtcNsB7fhJKGzmPRCaMLw), 8 Oct 2026, 20:39-20:5x UTC by `date -u`; a separate
+session from the solver MANT-08 and from every earlier verifier of this target. Brief: .claude/briefs/runs/2026-10-08-ytbiz-family-1909-jobs.md
+"### V-MANT08". Claim under audit: NOTES.md section MANT-08 (f0390_08/): 89 code tokens on SHStA Dresden 10026 Loc. 694/08 URL frames
+0390, 0391, 0395, 0485 read with Krauske's 1893 table (C 54, M 35), pooled shuffled-key gate 0/1000, judge fr18 FAIL at N=83, read in
+context "la treve, Oxford, detacheroit [Danemark], duc Ferdinand [of Courland], la Courl[ande], Breton". Depth rule pre-registered in
+f0390_08/PREREG-V-MANT08.md (pushed 875543f1) before any depth ruling. Nothing decoded beyond the re-derivation; key.tsv, the
+ciphertexts and the readings are untouched.
+
+**Items** (one per letter; frame numbers are URL numbers): A 0390, Manteuffel, Berlin, letter begun 10 Oct 1712 (second leaf);
+B 0391, P.S. of 13 Oct 1712 ("Berl. ce 13 Oct. 1712"); C 0395, a letter of mid-Oct 1712 (between 0391 and the clear Copenhagen
+enclosure of 9 Oct on 0396); D 0485, the letter of (or just before) 12 Nov 1712.
+
+**1. Re-derivation (rule 7).** `python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712/f0390_08 --check`: "reading up
+to date", tokens 89 C 54 M 35, exit 0; the main folder `--check` exit 0. gate.out re-read (seeded script; not re-run): pooled 83 letters
+real -1.483 vs 1000 shuffled keys p99 -1.649, 0/1000 -> PASS, power control 0085 r9+r10 1/1000; per frame 0391 0/1000, 0485 16/1000
+(FAIL), 0390 307/1000 and 0395 0/1000 not gated. The gate says Krauske's table is the right key family for these leaves; it is not a
+reading. The 0391 r5 "known-answer" check is void as the solver says (bon gre malgre is a caret insertion, not a gloss).
+
+**2. Transcription spot check (native frames, 4 requests to www.archiv.sachsen.de, 2 s apart, 200; region crops by
+`tools/iiif_lines.py --image <frame> --region <solver's region> --lines-per-crop 3` plus 2-3x zooms; read by me, no subagent).**
+Tokens compared: 0390 r7 (6), r9 (7); 0391 r1 (6), r4 (11), r5 (10); 0395 r1-r3 (18); 0485 r1-r6 (21): 79 tokens. Agreements: all
+but the three below. Disagreements, for the solver to apply (not applied here):
+- **0391 r4 tok5 is 39, not 34**: the glyph is the folder's own y-shaped 9 ("3y", the same form the solver accepts as 9 in 0391 r5
+  "33.y.59" and in 0395). 39 = i (C), so the run reads b|[a] u l l i n b r|re|ro o|ou|ous u g = **Bullinbroug** as written: no
+  changed token. The solver's "one token I" falls away; pass A's 39 was right.
+- **0390 r9 tok3 is the y-glyph 9, not 4**: 1.26.9.55.35.21.120 = f r i b|[a] e n d. "Fr[ie]s[e]nd[orff]" now needs one changed
+  token (55 -> 57 s), not two; still a hypothesis (I), not a reading.
+- **0391 r5 tok1**: the second glyph has the tall bowl this hand uses for 6 (cf. "16" in r1), so 160 by shape, 100 by sense (d ->
+  "detacheroit"; 160 = Manteuffel makes no sense after "on"). The solver's alt stands; tok1 is M, not C, on the image.
+- **Omissions**: 0391 carries **217 three times**, not once: "et voicy ce que 217 s'est expliqué par ses ministres au sujet des affaires
+  du nord" (line 8), "33.4.1.16.60.120 a dit en gros que 217 etoit trop loin de s'en meler" (line 10, = r2) and "Il a dit que 2[1|2]7
+  vouloit absolument faire la paix dans le nord" (line 14, a corrected group, 217 or 227). runs.tsv has only r2. So the token count is
+  at least 90-91, not 89.
+- 0395 r3 tok1 reads 17 on the image (the same "J"-form 7 as in 107 on the line above), so "pinde" stands as written; Minde[n] needs
+  the changed token (I), as the solver says. 0485 r3 51.15.33.28 and r5 202 (missed by both passes) are on the page as the solver gives.
+
+**3. Prior-work checks 1-5.** `tools/prior_work.py sachsstaatsarchiv-manteuffel-1712 --item-spec 'shelfmark=SHStA Dresden 10026 Loc.
+694/08;folio=frame <f>;date=<d>;sender=Manteuffel;recipient=Flemming' --step-type audit` for f = 0390/0391/0395/0485: exit 4 each; LEADs
+= the FAM-MANTV claim (694/09 only, done), the MANT-08 claim (the solver under audit, done 20:22), this session's claim, and for 0485 the
+generic frame-inventory gap line NOTES.md:1873 -- all recorded CLEAR (prior-work.tsv). UNCHECKED-NET aaymeloglu (no clone) and
+4-editions (no prior_editions.tsv row) answered by hand:
+1. Own work: grep of NOTES/AUDIT/mant0609/ROOM: only inventory lines before MANT-08. CLEAR.
+2. Leaf and neighbours: no interlinear decipherment over any run on the four frames as re-read (the 0390 "touchant" and 0391 "bon gre
+   malgre" interlinears are clear-text insertions, agreed). CLEAR.
+3. Holder/portal/solver caches: offline as the solver; aaymeloglu UNCHECKED.
+4. Editions -- Briefwisseling van Anthonie Heinsius Deel 14 (1 Sept 1712 - 30 Apr 1713, RGP GS 226; Deel 13 ends 31 Aug 1712), Huygens
+   retroboeken `search_in_text`, source_id=14, plus OCR pages (16 requests, 2.2 s apart): 'Bolingbroke' 72 hits (London letters of
+   L'Hermitage/Vrijbergen, Sept-Oct 1712); 'Koerland' 3 (index only: "Ferdinand (Kettler), hertog van Koerland, 79"; "Koerland,
+   hertogdom, 79"); 'Curland', 'Courlande', 'Courland', 'Courlandt', 'Coerlandt', 'Koerlandt' 0; 'Ferdinand' 11 (index); 'Danemarc' 9;
+   'Lintelo' 61 hits over three result pages: his printed Berlin letters run p.57 (Sept) then p.217 (12 Nov 1712) -- **no Lintelo letter
+   of October 1712 is printed**, so the Dutch envoy at Berlin cannot carry 0390/0391/0395's news in this edition. Pages read in full: 42,
+   43, 44, 50, 79.
+   - **p.79, no. 142, Van Haersolte (Dutch envoy in Poland) to Heinsius, 1 Oct 1712 (H.A. 1697)**: "De heer Lölhöffel, resident van de
+     coning van Pruyssen, is gisteren hier aengekomen met brieven van Sijne Majesteijt aen de croonschatsmeester om te faciliteren de
+     cessie van het hartogdom Courlant aen gemelde coning, dog vertrouwe dat die saeck nog veel oppositie sal ontmoeten, dewijl de Polen
+     sustineren dat na aflijvighijt van de tegenwoordige hertog sonder mannelijck oor dit hartogdom aen de republicq vervalt." Diff
+     against C (0395): C says Berlin "is treating with [107] duke Ferdinand so that he cedes his rights to this court" and has offered
+     him "the government of [p i n d e; Minden only by a changed token] and other great advantages". **Agree in substance** on the news
+     the cipher spans carry (Prussia negotiating the cession of Courland's rights to the King, autumn 1712; Ferdinand is the duke whose
+     death without male heir Van Haersolte's Poles invoke). Not in Van Haersolte: the approach to Ferdinand himself and the governorship
+     offer. Date gap about two to three weeks (outside check 5's +-3 days), so this is printed background in substance, not a duplicate
+     of the letter.
+   - p.44, no. 83, L'Hermitage, London, 16 Sept 1712: ships recalled, "il n'est pas à croire qu'on persiste dans le dessein d'envoyer une
+     escadre contre le roy de Danemarc" -- background to B's Bolingbroke declaration (detaching Denmark from its allies), not the same
+     statement. No printed letter found with Oxford's "too far to meddle / defer to Hanover's sentiments" or Bolingbroke's declaration
+     on detaching Denmark.
+   - Droysen, *Geschichte der preußischen Politik* IV.1 (IA `droysen-geschichte-der-preussischen-politik-v-4-no-1`, djvu text, 3 IA
+     requests, fetched once and grepped): positive control passes (Manteuffel quoted nn. 431, 485, 505, 510, 518-520); **no quotation
+     from an Oct-Nov 1712 Manteuffel report**; no autumn-1712 Courland cession passage found by grep ('Curland' 7 hits, all earlier
+     projects; 'Ferdinand' 0 -- the Fraktur OCR is poor, so a negative here is weak). n. 511 has Stanislas wishing Courland as
+     compensation (Arnold's report, 6 Sept 1712) -- background only.
+   - Google Books API (key, country=US): first call answered 503 backendFailed; host stopped per the good-citizen rule. **The press of the
+     day (Mercure historique, Europäische Fama, Oct-Nov 1712) is UNCHECKED by me**; the solver's three Google Books queries (0-11 noise)
+     stand. Acta Borussica BO I by date: not re-run (earlier audits searched it for Manteuffel's reports).
+5. After decode: the solver's `--reading --network` run (ia-global/gbooks noise) stands; the other-correspondent route is item 4 above.
+
+**4. Depth (rule 4a, the 8 Oct depth bar, PREREG-V-MANT08.md).** Cipher clause: the longest all-C stretch on any item is under 12 letters
+against an AD of about 127-138 letters for this key (FAM-MANTV's computation; every r|re|ro and o|ou|ous choice is a liberty): **fails on
+all four**. Code clause, tested on the real clear-text context read from the image (depth_stats windows splice across clear-text islands
+on this shape of leaf, FAM-MANTV's flag), needing >= 2 non-verbatim sentences, a coarse class check and consistency with a letter-spelled
+run of the same item:
+| item | H/C/S % (tool counts) | recurring code | clause | ruling |
+|---|---|---|---|---|
+| A 0390 | 80.0 (C 16 of 20; but 45/46 are letter-valued codes standing for persons, so 60% read in sense) | 257 roi de Prusse x2 ("46 etant encore fort bien avec 257, il ne seroit pas de la prudence de l'attaquer"; "parle touchant la treve non seulement a 257, qui se feroit un fort grand plaisir de pouvoir l'effectuer") | 2 sentences, class OK, but no letter-spelled run on the item names a Prussian minister or the king: condition 3 fails | **D1** |
+| B 0391 | 46.7 (C 14 of 30) | 217 la reine d'Angleterre x2 seen clearly (lines 8, 10; line 14 doubtful) | "217 s'est explique par ses ministres au sujet des affaires du nord" and "[Oxford] a dit en gros que 217 etoit trop loin de s'en meler": two non-verbatim sentences, person class, and both ministers named are spelled letter by letter on the same leaf under the same table (Oxford, Bullinbroug) -- **met** | **D2** |
+| C 0395 | 66.7 | none | -- | **D1** ("duc Ferdinand" reads) |
+| D 0485 | 57.1 | none (187, 202 singletons) | -- | **D1** (Breton, la Courl[ande]) |
+D2 sentence for B (mine, from the reading and the clear text on the image): "In his postscript of 13 October 1712 Manteuffel reports,
+from the contents of a packet for Fabrice that Heusch confided to him, that Oxford had said the Queen of England was too far off to meddle in pacifying the North and
+would defer to Hanover's views on its execution, while Bolingbroke declared far more violently that she wanted peace in the North
+absolutely and that, to get it, the King of Denmark would be detached from his allies whether he liked it or not." (Heusch and Fabrice
+are named in clear at the head of the P.S.; their offices are not identified here.) D3 is out on every item (< 80%
+read in sense, no non-statistical external check that the key reads these runs beyond the clear-text fit). depth_pct for status.json:
+A 80.0 (60.0 in sense), B 46.7, C 66.7, D 57.1.
+
+**5. Classification (rule 10).** Key on every item: **published** (Dr. Krauske's 1893 manuscript table, Loc. 694/10, someone else's
+non-period key, credited). Prior decipherment: none located for any item.
+- **A 0390: N3** -- no prior plaintext located (Heinsius XIV has no Berlin letter of October 1712; Droysen IV.1 quotes no Oct 1712
+  report). Read is thin ("la treve" and codes for the King of Prussia, Manteuffel, two persons). Confidence medium; press unchecked.
+  Safe: "Krauske's 1893 table reads 'la treve' and the code for the King of Prussia in Manteuffel's letter of 10 Oct 1712 (Loc. 694/08);
+  no prior plaintext located in the Heinsius correspondence or Droysen." Unsafe: "Manteuffel's report on the truce deciphered."
+- **B 0391: N3** -- the Oxford/Bolingbroke statements on the northern peace and Denmark were not located in Heinsius XIV (72
+  Bolingbroke hits scanned, London letters read at p.44) or Droysen IV.1; background (British pressure on Denmark, Sept 1712) is printed.
+  Confidence medium (the English and Hanoverian editions of 1712 northern policy -- Bolingbroke's Letters and Correspondence, Klopp's
+  *Fall des Hauses Stuart* XIV, Macpherson's *Original Papers* -- were not searched; a second audit should). Safe: "Applying Krauske's
+  1893 table to the cipher names in Manteuffel's postscript of 13 Oct 1712 (Loc. 694/08) gives Oxford, Bolingbroke and the queen of
+  England in a report of their differing declarations on the northern peace; no prior plaintext located in the searched editions
+  (Heinsius XIV, Droysen IV.1)." Unsafe: "A previously unread report on Bolingbroke has been deciphered."
+- **C 0395: N2** -- the news its cipher spans carry (Berlin negotiating the cession of Courland's rights, autumn 1712) is printed in Van
+  Haersolte to Heinsius, 1 Oct 1712 (Briefwisseling XIV no. 142, p.79); no prior mapping of this ciphertext to it found; the approach to
+  Duke Ferdinand and the governorship offer are not in that letter (the class would rise to N3 only if a later auditor judges those
+  details the substance). Safe: "Krauske's table reads 'duc Ferdinand' in a mid-October 1712 letter of Manteuffel's (Loc. 694/08) on
+  Prussia's attempt to obtain Courland, news printed in Van Haersolte's letter to Heinsius of 1 Oct 1712." Unsafe: "Unknown Prussian
+  designs on Courland revealed."
+- **D 0485: N3** -- Breton and "la Courl[ande]" spans; no prior plaintext located (Heinsius XIV Lintelo 12 Nov 1712, p.217, read by the
+  solver: Meurs, not this). Confidence medium-low (four runs unsettled). Safe: "Krauske's table reads the British envoy Breton's name
+  and 'la Courl[ande]' in Manteuffel's letter of about 12 Nov 1712; no prior plaintext located in the searched editions." Unsafe:
+  "Manteuffel's November report deciphered."
+- Queued: SECOND-OPINIONS-QUEUE row SO-MANT-0839 (A, B, D; C excluded as N2); WORK-QUEUE row AUD2-MANT0391 for account 3 (B only, the
+  only N3+ D2+ item). status.json not edited here (the lane orchestrator copies class, key `published`, depth and depth_pct).
+
+**6. Postmortem and corrections.** Failure caught: the solver's transcription missed two occurrences of 217 on 0391 and read two
+y-glyph 9s as 34 and 4 (the folder's own convention), which made "Bullinbroug" look like it needed a repair; the solver's check 4 read
+Lintelo's hits only to the first page and did not try the duchy's Dutch spellings, which is where the Courland news sat (Van Haersolte,
+Poland, not Berlin). Over-claim found: none outward (the solver wrote "no novelty class" and "not located in what was searched"); the
+NOTES.md line "Bullinbrou[g] ... if tok5 34 (p) is 39 (i) (pass A read 39; one token I)" is now corrected in AUDIT only, the
+transcription fix is the next reader's (NOTES Remaining gaps). Requests this audit: www.archiv.sachsen.de 4, resources.huygens.knaw.nl
+16, archive.org 3, www.googleapis.com 1 (503); no 403/429/challenge.
