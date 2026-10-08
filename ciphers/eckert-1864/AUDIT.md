@@ -4482,3 +4482,127 @@ running heads.
   books about 26 (several 503s, each retried at most once). Subagents 0.
 - Rows written in this session: status.json results for N2-CE, N2-CK, N2-CJ (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
   SO-ECKERT-N2CE, SO-ECKERT-N2CK, SO-ECKERT-N2CJ (prompts in second-opinions/). `tools/depth_check.py`: exit 0.
+
+## AUDIT (FV-LS5-A)
+
+Verifier FV-LS5-A (account 1, for LANE LEDGER), 8 Oct 2026, 18:13-18:4x UTC by `date -u`; a separate session from the readers LS5-R1c and
+LS5-R1d (account 1), not protecting their conclusions. Scope: **E103, E104, E106** (ciphertext.txt, Cipher No. 1, read by LS5-R1c),
+**N2-DB** (ciphertext-no2.txt, Cipher No. 2, LS5-R1c) and **E122** (ciphertext.txt, LS5-R1d). Nothing decoded beyond key look-ups in key.md /
+key-no2.md. Key source for every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for
+eckert-1864, so `judge_plaintext.py` was not run (as the readers recorded).
+
+### 1. Duplicates, prior-work checklist and step 0
+- **Duplicate diff (new first point, FV-LS4-R2b lesson):** pointer, date and addressee of each entry against every filed ID in
+  ciphertext.txt / ciphertext-no2.txt / ciphertext-no9.txt and status.json, plus a phrase grep of each entry's distinctive clear words
+  ("all mail matter", "wolves down", "northern neck", "no weakness can be sent", "operations are to be based", "Bogus dispatches",
+  "great dis", "rounds of olive", "sent you at once", "undertaking"): one block each. Same-pointer siblings are other entries (9129: E45,
+  E56; 8907: O9-AI, O9-AJ; 9053: E26; same-date E31/E32 to McCaine 21 Aug are 7.30 AM and 10 PM, E122 is 4 PM). **No duplicate.**
+- `tools/prior_work.py` (live on main since 18:01; the brief predates it) run per entry with `--item-spec` (date, sender, recipient)
+  `--step-type audit --offline`: exit 4 on each, holds = (a) a target-level live claim by V1-KNOWN (16:02) -- it has a done line at 16:16
+  and covered 16 N0/N1 rows, none of these five: cleared; (b) edition windows in OR I/33 (E104: the Humphreys/Meade exchange of 4 Mar,
+  opened, section 2), the Butler correspondence (E106: Grant-Halleck May windows, opened, unrelated) and OR I/43 pt 2 (N2-DB: a Baltimore
+  October window, unrelated); (c) generic UNCHECKED (no items.tsv rows for these IDs; the aaymeloglu cache not on disk).
+- **Own Huntington transcription** (sources/mssEC19/p<pointer>.json), read first for all five:
+  - 9129 (E103): undecoded; content words Baptism, Knapsack Oyster, Insanity are code.
+  - 8907 (E104): **frame in clear** -- "Dispatch in relation to wolves recd Send wolves down to Carroll & below to ascertain if the rose have
+    any Salem this side of the amen or on the northern neck" -- the substance words (scouts, Fredericksburg, enemy, force, Rappahannock,
+    Meade) are code.
+  - 8969 (E106): **frame in clear**, struck through, "Not sent" on the transcription too; the substance nouns and names are code.
+  - 9090 (N2-DB): **frame in clear** ("Bogus dispatches are for Election-eering purposes being published in Granada & Gregory papers
+    representing a great disaster ..."); the volunteer has "Norris Dwight", the reader's image "Norris Bright".
+  - 9053 (E122): **frame in clear** ("rounds of olive for them will be sent you at once to Camel pos I doubt if a publish men are
+    sufficient for the work they are undertaking ... Augur"); the numbers, the ammunition, the place and the addressee are code.
+- **Huntington CONTENTdm full-text search** (p16003coll11, `CISOSEARCHALL`, 10 queries, 3.2 s apart, under the hdl token): "Spencer
+  rifles" (4: Butler's 25 May request and Ord. cartridges, none E122's), "undertaking" (6: 9053 itself, others unrelated), "mail matter"
+  (15: 9129 itself, others unrelated), "wolves Carroll" (8907 only), "weakness quadroon" (6: 8969 itself, R. O'Brien 19 May 1864 to Butler
+  and its received copy, unrelated), "Bogus" (24: 9090 itself, the May 1864 bogus-proclamation traffic, unrelated), "Mosby Spencer" (2,
+  unrelated), "Humphreys scouts Fredericksburg" (0), "Sherman mail Baltimore" (0), "thirty thousand disaster" (2, unrelated). No other
+  ledger page (sent or received) renders any of the five; no clear reply found in the Huntington full text.
+
+### 2. Located in print, and printed antecedents / replies (G3, prior-work check 5)
+OR volumes as `_djvu.txt`: the cached set in sources/ia-fulltext/print-check (OR I/33, 35 pt 2, 36 pts 1-2, 37 pt 2, 40 pt 3, 43 pt 2, 45
+pt 2, ORN, Butler's correspondence) plus seven fetched once to scratch (`warofrebellion44unit`, `451unit`, `393unit`, `371unit`, `422unit`,
+`423unit`, `431unit_0`; `papersofulyssess0012gran` answered 401); letters-only phrase grep (5 phrases per entry) and date-window reads;
+pages from the running heads.
+
+| ID | finding | where |
+|---|---|---|
+| **N2-DB** | **printed word for word**: "[10 Oct] 1864, 10:30 A.M., Secretary of War Edwin M. Stanton telegraphed to USG. 'Bogus Despatches are for electioneering purposes being published in New York and Philadelphia representing a great disaster and loss of thirty thousand men in your army Friday. Please favor me with a report that I can publish of the true condition of things immediately.' ALS (telegram sent), DNA, RG 107 ..." | The Papers of Ulysses S. Grant vol. 12 (Aug 16-Nov 15, 1864; 1967), a note -- Google Books API snippet (key, country=US), queries "electioneering purposes" Stanton Grant 1864, "representing a great disaster", "report that I can publish": 2-3 hits each, all this volume; page not located from the snippet. Grant's reply, City Point 10 Oct 1864 4.30 PM ("Our entire loss in the enemy's attack on our lines on Friday, the 7th instant, does not exceed 300 ..."), is in OR I/42 pt 3 pp.151-152 without the request. |
+| E104 | antecedent printed: Humphreys to Meade at Washington, HQ Army of the Potomac, 4 Mar 1864 10 a.m. (received 11.20 a.m.): "The scouts sent out have returned ..." (the Dahlgren raid, Frederick's Hall, Hanover Junction) | OR I/33 p.639; E104 ("Dispatch in relation to scouts recd. Send scouts down to Fredericksburg & below ...", signed Meade) is the reply. The reply itself: not located (phrase grep of OR I/33 and the cached set; Google Books "Send scouts down to Fredericksburg", "dispatch in relation to scouts", "Fredericksburg and below to ascertain": unrelated hits only). |
+| E106 | antecedents printed: Hunter to Halleck, Cedar Creek, 22 May 1864 11 p.m., and Hunter's letter of 22 May to the Adjutant-General renewing his telegraphed request of the 21st for two brigadiers ("I had the honor to request last night by telegraph ... that two efficient and energetic brigadiers might be sent immediately") | OR I/37 pt 1 pp.516-517. **The reply actually sent is our own E9** (Halleck to Hunter, 23 May 1864 10.30 a.m., "Energetic and efficient brigadiers are scarce. Name any you want ..."), OR I/37 pt 1 p.525. E106 (22 May 10.30 PM, struck through, "Not sent") is not printed: phrase grep of OR I/37 pt 1 for "no reinforcements can be sent", "operations are to be based on the troops", "ordered elsewhere by General Grant": 0; every Halleck-to-Hunter item of 19-26 May read: none says this. |
+| E122 | antecedent printed: Sheridan to Augur, Charlestown, 20 Aug 1864: "I have 100 men who will take the contract to clean out Mosby's gang. I want 100 Spencer rifles for them. Send them to me if they can be found in Washington ...", with the indorsement "War Department, August 21, 1864. Approved. By order of the Secretary of War: C. A. Dana"; and Halleck to Augur, 20 Aug: "The chief of ordnance has been directed to issue Spencer rifles to detachments ..." | OR I/43 pt 1 p.860 (`warofrebellion431unit_0`); also Google Books snippets of the OR and of Brooks, *Butler and His Cavalry* (1909). E122 (Augur to Sheridan, 21 Aug 4 PM: 100 Spencer rifles with 20,000 rounds to be sent at once to Harpers Ferry; "I doubt if 100 men are sufficient for the work they are undertaking") is the reply. The reply itself: not located (OR I/43 pt 1 and pt 2, Google Books "sufficient for the work they are undertaking", "if 100 men are sufficient", "Spencer rifles" "20,000 rounds" 1864: unrelated hits). |
+| E103 | no antecedent or reply found. Related print, diffed: a notice in the *Army and Navy Journal* (31 Dec 1864) that "all mail matter intended for Sherman's army shall be sent by way of New York"; Sherman's own instruction (1865, Carolinas; Report of the Postmaster General 1898, OR I/47) "Give publicity that all mail matter for Sherman's army should come to Old Point, via Baltimore". Neither is this telegram (other date, other author, other route). | OR I/44 and I/45 pt 1, pt 2 (no "mail" window with Dana/Baltimore 25-30 Nov 1864); Google Books "transfer to Baltimore all mail", "mail matter for General Sherman": unrelated or the 1865 items above. |
+
+be-api (archive.org full text) was flaky this run: the positive control phrase (N2-DA's "Fort Monroe at 8 p. m. on Saturday") returned an
+empty body, so its 0s ("all available troops have been ordered elsewhere") are not counted; the readers' own be-api passes (positive
+controls passed) stand for E103, E104, E106, N2-DB.
+
+### 3. Grade corrections
+- **E104 "wolves" (x2) = H**: key.md row "Wolf | Scout (-ed, -ing) | H" (p.23 l.25); the plural reads "scouts" in both places and the
+  printed antecedent is about the scouts returning. The reader left them unread. E104: 7 H of 7 code groups (Carroll, rose, Salem, amen,
+  Journal, wolves x2), not 5.
+- **N2-DB "Yellow" = Friday reads in place** (the print: "loss of thirty thousand men in your army Friday"): H, not M; "refuse" stands for
+  "loss"; "Norris Bright Summer" = thirty thousand men. Not counted (N1).
+- **E122 "Spencer"** is the plain rifle name (the antecedent: "100 Spencer rifles"), not the key row "Has, or have been, reinforced": a
+  plain word, not a code group (the reader had M). E122: 9 H (Nabob, unity, plug, prolong, harrow, purple, olive, Camel, publish) of 11
+  code groups ("pos", "Joke" unread).
+- E106 as the reader graded (hand): H 15, C 2 (Mutton, Mackerel = Hunter), M 2 (Cedar, tulip), I 1 (Narrow = 20 from the header), "mangle"
+  unread (cf. E9 "Jupiter mangled last evening" = telegraphed): 17 H/C of 21 code groups. Note: the ledger reads "plank pelican" = 2
+  brigades, where Hunter's printed request was for two brigadiers.
+- E103 as the reader graded: 11 H, M 1 (Webster, the key's signature row, here the addressee's name), "dead" and "crazy" unread: 11 H of
+  14 code groups.
+
+### 4. Classification (key `period`)
+`depth_pct` = (H + C) / code-word groups, unread groups counted.
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| N2-DB Stanton to Grant, 10 Oct 1864 10.30/10.50 AM | **N1** | known (Grant Papers vol. 12, note) | not ruled (N1) | - | word for word with the print |
+| **E106** Halleck (General-in-Chief) to Hunter at Cedar Creek, 22 May 1864 10.30 PM, not sent | **N3** (weak: frame clear in the public transcription; a draft never transmitted) | unknown | **D3** | 81.0 (17 H/C of 21) | code clause: Mackerel/Mutton = Hunter reads here and in E9/E13; Beach = Adjutant-General; external: Hunter's printed request of 21-22 May for two brigadiers (OR I/37 pt 1 pp.516-517) and the reply actually sent, E9, 23 May 10.30 AM (OR p.525); matched control LS5-R1c (No. 2, No. 9, shuffled No. 1: no clause) |
+| **E122** Augur to Sheridan (via McCaine, Winchester), 21 Aug 1864 4 PM | **N3** (weak: frame clear in the public transcription; the request and its approval are printed) | unknown | **D3** | 81.8 (9 H of 11) | code clause: Camel = Harpers Ferry (4 uses), Olive = ammunition here and in E26 ("arms and ammunition"); external: Sheridan's printed request for 100 Spencer rifles for 100 men against Mosby, approved 21 Aug (OR I/43 pt 1 p.860), which the numbers 100 and 100 men answer; matched control LS5-R1d (No. 2 4 H 0 clauses, No. 9 0, shuffled 0) |
+| **E104** Meade (Washington) to Humphreys, HQ Army of the Potomac, 4 Mar 1864 | **N3** (weak: frame clear in the public transcription; only seven code groups) | unknown | **D3** | 100 (7 H of 7) | code clause: Salem = force reads here and in E10 ("a large [cavalry] [force] at [Corinth] & Tupelo", the same news as the printed E102); external: Humphreys's printed 10 AM telegram to Meade at Washington on the scouts' return (OR I/33 p.639), which E104 answers; matched control LS5-R1c (No. 2, No. 9, shuffled: nonsense) |
+| **E103** C. A. Dana to Brig. Gen. Webster, 28 Nov 1864 10.30 AM (operator Van Duzer) | **N3** | unknown | **D2** | 78.6 (11 H of 14) | code clause: Knapsack = Sherman (3 uses), Baptism = Baltimore (9 uses); header words Elizabeth = 10.30 AM and Harsh Paddle = 28 equal the header; no external check ("in feeble dead" unsensed) |
+
+- **E106: N3.** Safe sentence: "Read at grade H with the period War Department Cipher No. 1: a telegram of 22 May 1864, 10.30 PM, from the
+  General-in-Chief's office to Maj. Gen. Hunter at Cedar Creek, struck through and marked 'Not sent' in Eckert's ledger, telling Hunter that
+  no reinforcements could be sent to his department without General Grant's special orders and that his operations must be based on the
+  troops he had; much of the frame is in clear in the Huntington's public transcription; no prior decipherment or printed text located in
+  the Official Records (ser. I vol. 37 pt 1), Internet Archive full text, Google Books or the Huntington's full-text search (searched 8 Oct
+  2026)." Unsafe: "first", "unpublished", "never printed". Depth sentence (D3): "On the night of 22 May 1864 Halleck's office drafted, and
+  did not send, a telegram telling Hunter at Cedar Creek that no reinforcements could go to his department without Grant's special orders
+  and that all available troops had been ordered elsewhere by Grant; the reply sent the next morning (E9) instead offered him brigadiers."
+- **E122: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 21 Aug 1864 Maj. Gen. Augur tells Sheridan that 100 Spencer rifles
+  with 20,000 rounds of ammunition will be sent at once to Harpers Ferry, and doubts that 100 men are enough for the work they are
+  undertaking -- the reply to Sheridan's printed request of 20 Aug (OR I/43 pt 1 p.860); the reply itself not located in print (OR ser. I
+  vol. 43, Internet Archive full text, Google Books, the Huntington's full-text search; searched 8 Oct 2026)." Depth sentence (D3): "On 21
+  Aug 1864 Augur answers Sheridan's request for Spencer rifles for a 100-man party against Mosby: 100 rifles and 20,000 rounds are going to
+  Harpers Ferry at once, but he doubts 100 men are enough for the job."
+- **E104: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 4 Mar 1864 Meade, in Washington, answers Humphreys's report on the
+  returning scouts by ordering scouts sent down to Fredericksburg and below to learn whether the enemy has any force this side of the
+  Rappahannock or on the Northern Neck; the frame is in clear in the Huntington's public transcription; the reply not located in OR ser. I
+  vol. 33, Internet Archive full text or Google Books (searched 8 Oct 2026)." Depth sentence (D3): "On 4 Mar 1864, during the end of the
+  Kilpatrick-Dahlgren raid, Meade in Washington tells Humphreys to send scouts to Fredericksburg and below to find out whether the enemy
+  has any force north of the Rappahannock or on the Northern Neck."
+- **E103: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 28 Nov 1864 C. A. Dana tells Brig. Gen. Webster that orders have been
+  given to transfer to Baltimore the mail matter for General Sherman's army; no prior decipherment or printed text located in OR ser. I
+  vols. 44 and 45, Internet Archive full text, Google Books or the Huntington's full-text search (searched 8 Oct 2026)." Depth sentence
+  (D2): "On 28 Nov 1864, while Sherman's army is out of contact on its march through Georgia, Dana in Washington tells Brig. Gen. Webster
+  that orders have been given to transfer its mail matter to Baltimore."
+- Not N4 for any: the Grant Papers vols. 10-12 pages (snippets only), Meade's and Halleck's letterbooks (NARA RG 107/108), the press of
+  the day, HathiTrust and JSTOR are unread.
+- Second audits (account-3 VERIFY lane): E106, E122, E104, E103 -- WORK-QUEUE row AUD2-LEDGER-1. Start with Grant Papers vol. 10 (E106,
+  22-23 May, and E104: its notes print Halleck-Hunter and Meade traffic), vol. 12 (E122), and Dana's War Department telegrams of 28 Nov 1864 (E103).
+
+### 5. Postmortem
+- One of the five "not located" entries is printed word for word (N2-DB, Grant Papers vol. 12): the reader's Google Books query
+  ("bogus dispatches" "electioneering purposes", both phrases ANDed) returned nothing; a single quoted phrase with the correspondents
+  ("electioneering purposes" Stanton Grant 1864) found it at once. Lesson for readers: query one quoted phrase at a time.
+- Three of the four N3s are replies whose antecedents are printed (E104, E106, E122); the antecedent is the external check, and the readers'
+  "not located" was correct for the replies themselves. E106's sent version is our own E9.
+- Corrections for a fix worker (~$0.2): N2-DB "print" column -> Grant Papers vol. 12, N1; N2-DB "Yellow" = Friday H; E104 "wolves" = scouts
+  H (7 H); E122 "Spencer" plain (9 H of 11). No reading changes; `decode.py --check` / `decode_no2.py --check` not re-run here (no file
+  touched).
+- Requests: hdl.huntington.org 10 (CONTENTdm dmQuery, token taken 18:22, released 18:24), archive.org 8 (`_djvu.txt`, one 401),
+  be-api.us.archive.org 5, googleapis.com books about 25 (three 503s, each retried once). Subagents 0.
+- Rows written in this session: status.json results for E106, E122, E104, E103 (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
+  SO-ECKERT-E106, SO-ECKERT-E122, SO-ECKERT-E104, SO-ECKERT-E103 (prompts in second-opinions/); WORK-QUEUE.tsv AUD2-LEDGER-1.
