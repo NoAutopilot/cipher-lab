@@ -467,6 +467,12 @@ Code-word tokens: H 12.
 
 Code-word tokens: H 37.
 
+**E35 | Page 163 | 9057 | 29 Aug 1864, to McCaine at Harper's Ferry (R. R. McCaine, No 3; operator not given)**
+
+[Follow (-ed, -ing)]ing for [Information] [.] The mily Agt at Gal lip old list [Telegraph (-ed, -ing)]'s [18] whore B Rough this morning ramparts ["] I have rely [Vermont] [Information] of [Breckenridge]'s [Advance (-ed, -ing)] into the [Kanawha] [Valley] with [8000] [Men] [By the way of] Lewis bug ["] [Maj Gen S. P. Heintzelman] left for Chicago this morning under your utopia [Secretary of War] utopia order I have [Telegraph (-ed, -ing)]d him [Over the] way [.] I have the slate [Battery] at Paxton Dennison & [3] [Regiment]'s of national [Guard (-ed, -ing)]'s at Gal lip o less no [General] officer [In the] state  {tail: [signed] [Maj Genl U.S. Grant] B Rough}
+
+Code-word tokens: H 30.
+
 **E59 | Page 59 | 8951 | 27 Apr 1864 11.30 AM, to Kitchen (F. S. Van Valkenburg)**
 
 {time: 11.30 PM} {date: Apr 27} for [Maj Gen W. T. Sherman] [Nashville] [.] The [Cavalry] Bureau reports that the [11] [Michigan] [Cavalry] is of no use at Lexington that its Efficiency is being impared & that it ought to be sent to the field  {tail: [signed] [General-in-Chief] Tall oaks from little acorns grow}
@@ -479,5 +485,5 @@ For [Maj Genl U.S. Grant] Hay Asthore house [.] Yours received [.] with the safe
 
 Code-word tokens: H 8.
 
-Totals over the 58 entries: H 950, C 13, I 0, M 0.
+Totals over the 59 entries: H 980, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->
