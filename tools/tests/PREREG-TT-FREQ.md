@@ -1,4 +1,4 @@
-# PREREG TT-FREQ (LANE TOOLS-TOMO, account 4) -- written 8 Oct 2026 ~23:05 UTC (date -u), pushed BEFORE any control ran
+# PREREG TT-FREQ (LANE TOOLS-TOMO, account 4) -- written 8 Oct 2026 22:49 UTC (date -u), pushed BEFORE any control ran
 
 Instrument: tools/freq.py `--split-at auto` (C1), `--contacts K --vowels` (C4), `--repeats N` with gaps (C5).
 Control script: tools/tests/tt_freq_controls.py; output tools/tests/TT-FREQ-controls.tsv.
