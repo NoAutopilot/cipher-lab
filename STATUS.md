@@ -5925,6 +5925,36 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261008-2209, session_01NLigWQpxoYPadEgdJpwQW8, account 2), 8 October 2026 (closed 23:2x UTC: cheap in-scope steps worked, lane ~47 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-08-ytbiz-family-2209-jobs.md. Started from the
+1909 handoff next list and next_steps.py --hot-only in-scope runnable rows (re-checked by hand). Gate 0a clear. Workers 14 in 3 waves
+(22:16-23:17 UTC; Opus 11, Sonnet 3; all ledgered): 41.80 by get_session; orchestrator ~5.2; five_hour `allowed` throughout. Over cap:
+W11008-KP 4.14/3.5, MANT-0609X 4.86/4, MANT-R8 5.65/5. Known-text share ~13% (MANT-0008 glossed leaf as key test; 0436 found N0 at audit).
+
+Results:
+- sachsstaatsarchiv-manteuffel-1712: V-MANT08 + AUD2-MANT0391 fixes applied (f0390_08 95 tokens C 58 M 37; pooled gate 0/1000). 694/09
+  stride-3 inventory (218/302 frames seen): 0008 heavy glossed frame; MANT-0008 Krauske vs its gloss 159/205 vs p99 46 PASS, no key entry
+  (503/399/297 unglossed). Ranks 8-14 (f0375_08, MANT-R8, 99 tokens, pooled gate 7/1000) first-audited V-MANTR8: 0436 N0 (Acta Borussica I
+  p.258; 11 = Kameke), 0375 N2 D1 (Droysen IV.1), 0214 N3 D1 low (SO-MANT-0214), rest no class; gate fragile (rests on 0214). No N3+ D2+,
+  so no AUD2 row.
+- wvo-11008-certain-1572: 5194 known-plaintext check PASS (Certain letters use the 1572 multiples-of-3 table); V-11008KP AUDIT 3 (R2 span
+  corrected to Groen's print by W11008-R2, still PASS); 11008 H39 M15, key period, N3 D1 unchanged.
+- la-garde-1577: base-code error 0.055 (marks 0.183); homophonic prereg re-run: controls pass, judge has no power; LAG-GAP score-gap gate
+  (power 8/8): target FAIL -- homophonic/masc control-backed negative at N=229. Target stays open (rule 5: other families).
+- na-suriname-map-1781: 0744 left held-out unit; V-SUR0744: within seed noise and tests the y-family class, not the dot; no key change.
+- wvo-11106-bergh-1572: box-numbered strip reads 16/19 vs pre-registered 17, FAIL (split signs, stacked leaders); sorter not rebuilt.
+
+**next** (for the next LANE FAMILY incarnation):
+1. sachsstaatsarchiv-manteuffel-1712: crops of f0375_08 for an eye check of 0214's tokens (V-MANTR8 could not; ~1.5); 694/09 0007/0009 at
+   native beside 0008 (~1); the remaining 84 unseen 694/09 frames at stride 3 offset 1 (~4); Mercure historique for 0390/0391/0485 unchecked.
+2. la-garde-1577: next family on the base-code text at N=229 (syllabary/wordcode, design_prior first) or pooled siblings (Gachard); ~3.
+3. na-suriname-map-1781: 0744 right + 0745 only with V-SUR0744's dot-label permutation gate + 10k-draw p99 pre-registered (~4.5 per unit).
+4. wvo-11106-bergh-1572: sign-group reads with a de-stacked layout (~7.5) -- second instrument after the strip FAIL; then the owner's sorter.
+5. wvo-11008-certain-1572: run 1 pos 4 / run 3 pos 1-2 illegible (needs-physical-access or a sharper image); nothing cheap left.
+6. 1909 handoff items still open: na-oldenbarnevelt (o2) only if a verifier needs it; decode-4333-rusdorff waits on LOCAL-QUEUE L67.
+Blocked/retired as in the 1909 handoff (craven 1649 siblings, Van Aerssen pool, hellen 1763).
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261008-1909, session_01HZSAviBovfWXJQzF9mwEg8, account 2), 8 October 2026 (closed 21:0x UTC: in-scope runnable backlog worked, lane 49.5 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-08-ytbiz-family-1909-jobs.md. Started from the
