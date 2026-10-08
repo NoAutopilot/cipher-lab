@@ -413,5 +413,17 @@ Code-word tokens: H 20.
 
 Code-word tokens: H 10.
 
-Totals over the 47 entries: H 738, C 13, I 0, M 0.
+**E30 | Page 157 | 9051 | 20 Aug 1864 10 PM, to McCaine at Harper's Ferry (operator not given)**
+
+[Washington] becky for Nary robert [.] [Major] Waite [8] [Illinois] [Cavalry] [Left] Muddy Branch at {time: 12} [Today] on his [Scout (-ed, -ing)] [Towards] the [Gap]'s [.] He has about [600] & [50] [Men]'s [.] I directed him to carry out the order of [Maj Genl U.S. Grant] which you sent me as farras he could but knot tolet it inter [Fear] with his [Scout (-ed, -ing)]ing stop I have no [Report] from Lazelle Gimlet
+
+Code-word tokens: H 22.
+
+**E31 | Page 157 | 9051 | 21 Aug 1864 7.30 AM, to McCaine at Harper's Ferry (operator not given)**
+
+{time: 7.30 AM} Nary Bob [.] Lazelle has returned and [Report]'s as follows [Quartermaster] There ararat [Warrenton] [2000] [Infantry] and about person william [Cavalry] and a large [Force] [10000] [Men] [Cavalry] & [Infantry] at [Culpepper] [Movement]ing up which [Warrenton] [.] The [Rebel]'s are using the [Road]'s between [Warrenton] and Chester [Gap] & Man ass says [Gap] & passing trains [Troops] & supplies over them constantly ["] sfe doesnt mention howe ascertained these figures [.] He has most probably depended upon [Report]'s of citizens I will learn more definitely & [Information] you  {tail: [signed] Gimblet sent long letter Cumberland issue directed}
+
+Code-word tokens: H 30.
+
+Totals over the 49 entries: H 790, C 13, I 0, M 0.
 <!-- decode.py: derived block ends -->
