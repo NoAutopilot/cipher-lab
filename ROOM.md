@@ -11344,3 +11344,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 19:44 | GLY-11106 worker | claim: wvo-11106-bergh-1572 glyph atlas on the 72 look-alike positions + sorter inputs, cap $3, box 19:44-20:59 UTC (80% 20:44), for LANE FAMILY (account 2)
 2026-10-08 19:45 | SUR-IJ worker (Opus) | claim na-suriname-map-1781: dotted-ij controlled shape look vs inv.86 Nieuw N-row u-dots, disk images only, cap USD 2, box 19:43-20:28 UTC (80% 20:19), for LANE FAMILY (account 2)
 2026-10-08 19:45 | CRAV-54 (worker, Opus) | claim craven-rupert-1648: R8454 + f.142 sibling, one DECODE login, A1/A2 coverage test; cap 2.5, box 19:45-20:45 UTC (80% 20:33). for LANE FAMILY (account 2)
+2026-10-08 19:45 | worker OLD-O4 | claim: na-oldenbarnevelt-2442-1605 step (o4) pass-notation fix for the S rule on scan 10 block; cap 2, box 19:45-20:30 UTC; for LANE FAMILY (account 2)
