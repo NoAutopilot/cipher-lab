@@ -521,5 +521,17 @@ Code-word tokens: H 21.
 
 Code-word tokens: H 35, C 1.
 
-Totals over the 65 entries: H 1073, C 14, I 0, M 0.
+**E66 | Page 257 (printed) | 9151 | 3 Jan 1865 (header written "1864") 12 M, to John Horner, New York**
+
+[Washington] {time: 12} [3] for [Brigadier General] Vain fleet [Quartermaster] [.] I [Telegraph (-ed, -ing)]d last night for [Report] of Weaselira [Available] in [New York] [,] answer not rec'd [.] [Colonel] Wise has called on you for Waymomers to take [1000] [Of the] construction [Corps] US military [Rail Road]'s from [Baltimore] to [Savannah] [.] In addition to this we now need [Steam]ing to take [4000] [Troops] from Banditte to sea [,] destination not [Report]ed [,] should have full coal and water for [15] days [.] [Report] the vessels you can send and dispatch them unless counter man dead before they start  {tail: [signed] [Qr Master Genl U.S.] all sober}
+
+Code-word tokens: H 33.
+
+**E67 | Page 240 (printed) | 9134 | 3 Dec 1864 12.30 PM, no addressee line (operator not given); signed H A Wise, Chief of Bureau**
+
+{time: 12.30} [3] [D. D. Porter] [.] Your [Telegraph (-ed, -ing)] to Mr [Philadelphia] of this am recd [.] Every thing is being done blithe bureau withy utmost vigor The moment the [Baltimore] arrives she will leave again with Jeffers and Rodman to assist in fitting out the [Louisiana] [.] The Stromboli is honor way to you with [80] tar pedro on board and [2] of Beardsleys clock [Movement]'s If you have not Beardsley near you let me know  {tail: [signed] HA Wise chief of Bureau}
+
+Code-word tokens: H 14.
+
+Totals over the 67 entries: H 1120, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->
