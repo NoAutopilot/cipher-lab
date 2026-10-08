@@ -1,0 +1,30 @@
+# Baluze 170 ff.229r-v (letter of 25 Aug 1640, Amiens, bare cipher passage), reconciled by D4-B167 (8 Oct 2026) from two blind
+# Sonnet passes (split 0.233 / 0.255, above the 0.10 gate) and the native crops; see passes/reconciled_b170f229*.tsv for shapes.
+# Letter signs: L:x = letter settled from context in this letter (all graded M by their ?).
+b170f229r L03 | w:se w:pouvoir w:faire w:si w:led w:S. w:Saluius L:a? L:u? L:s? 71'? L:s? 16'? L:c? 66' L:a?
+b170f229r L04 | L:n? 11'? L:p? 66'? L:s? 16'? 73= 19:? 41'? 21'? L:r? L:a? 40' L:c? 13'? L:m? 48' 16'? L:r?
+b170f229r L05 | L:a? L:u? 76' L:m? L:p? L:s? L:e? L:t? L:a? 90' 76' L:n? 76' L:r? 10: 92' L:s? 19'? L:c? L:s?
+b170f229r L06 | 96' 14:? 40' L:l? L:a? L:n? L:g? 65' 81'? w:sur 10: 90' 17'? 32: L:s? 62' L:l? L:s?
+b170f229r L07 | w:desirent 78' L:u? L:c? 30' L:n? L:t? 40' 38' L:n? L:c? 32: 16'? 8: L:s? 23'? L:r? 11'? L:s?
+b170f229r L08 | 86' 10: L:a? L:r? 46'? L:e? L:s? 16'? 44' 51'? L:o? L:u? 16'? 40' L:u? L:t? 66'
+b170f229r L09 | w:Couronne w:ou w:avec 10: 16'? L:u? L:x? 95' 71'? L:m? L:b? 41'?
+b170f229r L10 | w:Ce w:qui w:peut w:le w:plus 16'? L:s? L:p? 40' L:i? 66' L:a? 13? 73= w:est
+b170f229r L11 | 62' L:l? L:s? 81'? L:u? 41'? L:n? L:t? w:que 8: L:t? 68' L:u? 56' L:s? 73' L:i? 95' L:t?
+b170f229r L12 | 38' L:i? L:n? L:c? 76' L:s? L:a? w:M w:de w:Longueville w:et w:soubz w:son
+b170f229r L13 | w:Commandement w:mesmes w:quand 10: L:a? L:r? 46' L:e? L:s? 93' 16'?
+b170f229r L14 | L:u? L:x? 13'? L:u? 68' L:n? 51'? L:s? 71'? 68' L:n? L:t? 95' 71'? L:m? L:b? 41'? w:Comme
+b170f229r L16 | w:de w:s'informaliser w:specialement w:pour w:ce w:qui w:est w:de 14:? 40' L:l? L:a?
+b170f229r L17 | L:n? L:g? 65' 81'? 62' 97' L:a? L:l? 42' L:e? 86' 1= w:et w:qui 95' 66'? 13'? L:i? L:t?
+b170f229r L18 | L:a? L:s? 72' L:s? 75' L:n? 11'? w:outre w:que w:les w:choses w:se w:peuvent w:conduire
+b170f229r L20 | w:des w:diversions w:que w:M w:de w:Longueville w:fera w:que w:si 10: 92' L:s?
+b170f229r L21 | 23: L:s? L:o? L:u? 44' L:n? 16'? L:u? L:x? 97' L:o? L:i? 95' L:t? 38' L:i? L:n? L:c? L:t? L:s?
+b170f229v L01 | w:pour w:la w:Cause w:Commune w:que w:si L:e? L:l? 41'? 71'? 16'? 39' L:s? 76'
+b170f229v L02 | w:par w:la L:t? 68' L:p? L:g? 65' L:n? 16'? 21'? L:r? 46' 76' 16'? 73= w:nous w:m
+b170f229v L03 | 56' L:r? L:d? 68' L:n? L:s? 10: 71'? L:u? L:l? L:s? L:a? L:d? 31'? 66'? L:n? L:t? L:s? w:que 40'
+b170f229v L04 | 97= 96'? 40' 13'? L:o? L:n? L:t? 95' 15:? w:et 4: 71'? 20'? L:u? L:d? 65' 66'? 77'
+b170f229v L05 | 66'? L:r? L:c? 30' 14'? L:n? 16'? 73'? L:n? 13'? L:s? 76' 33' L:n? 76' L:u? 71'? 12:? w:laissant
+b170f229v L06 | 41'? L:n? 51'? 47' 45' L:i? L:s? L:t? 66'? 16'? 40' 10'? L:m? 55' L:g? 51'? w:Vous
+b170f229v L12 | w:Si w:facilement. w:On L:g? 65' 77' L:f? 22' L:e? 65' 41'? 13'? L:m? 76' L:d? 31'?
+b170f229v L13 | 2' L:r? L:s? 76' L:i? L:n? 62' 9: 18' L:i? L:t? 74' L:c? 11'? 16'? L:r? L:a? L:f? 22'? L:n? 16'?
+b170f229v L14 | 43' L:b? 42' 26' L:r? L:a? 47' L:e? L:u? L:x? 100' 61' 73' L:n? L:p? 66'? 16'? s:dd? L:s?
+b170f229v L15 | 71'? L:u? L:r?

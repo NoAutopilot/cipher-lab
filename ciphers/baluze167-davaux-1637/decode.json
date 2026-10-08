@@ -1,5 +1,41 @@
-{"jobs": [{"ciphertext": "ciphertext.txt", "format": "pipe", "key": "key.tsv", "style": "spaced",
-  "reading": "reading.txt", "tokens": "reading_tokens.tsv", "m_sources": [], "m_words": ["red in his table", "bracketed"],
-  "header": ["# Baluze 167 f.157 (known-answer) and the bare passages of Baluze 169 ff.52-53, 97-98, 142, read with Tomokiyo's",
-             "# D'Avaux table (published key, credited). Regenerate: python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check",
-             "# Grades: {grades_sorted}"]}]}
+{
+ "jobs": [
+  {
+   "ciphertext": "ciphertext.txt",
+   "format": "pipe",
+   "key": "key.tsv",
+   "style": "spaced",
+   "reading": "reading.txt",
+   "tokens": "reading_tokens.tsv",
+   "m_sources": [],
+   "m_words": [
+    "red in his table",
+    "bracketed"
+   ],
+   "header": [
+    "# Baluze 167 f.157 (known-answer) and the bare passages of Baluze 169 ff.52-53, 97-98, 142, read with Tomokiyo's",
+    "# D'Avaux table (published key, credited). Regenerate: python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check",
+    "# Grades: {grades_sorted}"
+   ]
+  },
+  {
+   "ciphertext": "ciphertext_b170f229.txt",
+   "format": "pipe",
+   "key": "key.tsv",
+   "style": "spaced",
+   "reading": "reading_b170f229.txt",
+   "tokens": "reading_tokens_b170f229.tsv",
+   "m_sources": [],
+   "m_words": [
+    "red in his table",
+    "bracketed"
+   ],
+   "header": [
+    "# Baluze 170 ff.229r-v bare passage (D4-B167, 8 Oct 2026): provisional reconciled transcription read with Tomokiyo's D'Avaux table",
+    "# (published key, credited). Letter signs and 1-bearing numerals are M (see ciphertext_b170f229.txt). Regenerate:",
+    "# python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check",
+    "# Grades: {grades_sorted}"
+   ]
+  }
+ ]
+}

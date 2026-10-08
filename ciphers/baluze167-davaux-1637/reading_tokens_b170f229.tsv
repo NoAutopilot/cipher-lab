@@ -1,0 +1,367 @@
+line	pos	sign	conf	value	grade
+L03	7	L:a?	?	a	M
+L03	8	L:u?	?	u	M
+L03	9	L:s?	?	s	M
+L03	10	71'?	?	se	M
+L03	11	L:s?	?	s	M
+L03	12	16'?	?	de	M
+L03	13	L:c?	?	c	M
+L03	14	66'		re	H
+L03	15	L:a?	?	a	M
+L04	0	L:n?	?	n	M
+L04	1	11'?	?	ce	M
+L04	2	L:p?	?	p	M
+L04	3	66'?	?	re	M
+L04	4	L:s?	?	s	M
+L04	5	16'?	?	de	M
+L04	6	73=		Bavier	H
+L04	7	19:?	?	pour	M
+L04	8	41'?	?	le	M
+L04	9	21'?	?	fe	M
+L04	10	L:r?	?	r	M
+L04	11	L:a?	?	a	M
+L04	12	40'		la	H
+L04	13	L:c?	?	c	M
+L04	14	13'?	?	co	M
+L04	15	L:m?	?	m	M
+L04	16	48'		mo	H
+L04	17	16'?	?	de	M
+L04	18	L:r?	?	r	M
+L05	0	L:a?	?	a	M
+L05	1	L:u?	?	u	M
+L05	2	76'		te	H
+L05	3	L:m?	?	m	M
+L05	4	L:p?	?	p	M
+L05	5	L:s?	?	s	M
+L05	6	L:e?	?	e	M
+L05	7	L:t?	?	t	M
+L05	8	L:a?	?	a	M
+L05	9	90'		con	H
+L05	10	76'		te	H
+L05	11	L:n?	?	n	M
+L05	12	76'		te	H
+L05	13	L:r?	?	r	M
+L05	14	10:		les	H
+L05	15	92'		dit	H
+L05	16	L:s?	?	s	M
+L05	17	19'?	?	du	M
+L05	18	L:c?	?	c	M
+L05	19	L:s?	?	s	M
+L06	0	96'		et	H
+L06	1	14:?	?	madame	M
+L06	2	40'		la	H
+L06	3	L:l?	?	l	M
+L06	4	L:a?	?	a	M
+L06	5	L:n?	?	n	M
+L06	6	L:g?	?	g	M
+L06	7	65'		ra	H
+L06	8	81'?	?	ve	M
+L06	10	10:		les	H
+L06	11	90'		con	H
+L06	12	17'?	?	di	M
+L06	13	32:		tion	H
+L06	14	L:s?	?	s	M
+L06	15	62'		qui	H
+L06	16	L:l?	?	l	M
+L06	17	L:s?	?	s	M
+L07	1	78'		to	H
+L07	2	L:u?	?	u	M
+L07	3	L:c?	?	c	M
+L07	4	30'		ha	H
+L07	5	L:n?	?	n	M
+L07	6	L:t?	?	t	M
+L07	7	40'		la	H
+L07	8	38'		jo	H
+L07	9	L:n?	?	n	M
+L07	10	L:c?	?	c	M
+L07	11	32:		tion	H
+L07	12	16'?	?	de	M
+L07	13	8:		leur	H
+L07	14	L:s?	?	s	M
+L07	15	23'?	?	fo	M
+L07	16	L:r?	?	r	M
+L07	17	11'?	?	ce	M
+L07	18	L:s?	?	s	M
+L08	0	86'		avec	H
+L08	1	10:		les	H
+L08	2	L:a?	?	a	M
+L08	3	L:r?	?	r	M
+L08	4	46'?	?	me	M
+L08	5	L:e?	?	e	M
+L08	6	L:s?	?	s	M
+L08	7	16'?	?	de	M
+L08	8	44'		lu	H
+L08	9	51'?	?	ne	M
+L08	10	L:o?	?	o	M
+L08	11	L:u?	?	u	M
+L08	12	16'?	?	de	M
+L08	13	40'		la	H
+L08	14	L:u?	?	u	M
+L08	15	L:t?	?	t	M
+L08	16	66'		re	H
+L09	3	10:		les	H
+L09	4	16'?	?	de	M
+L09	5	L:u?	?	u	M
+L09	6	L:x?	?	x	M
+L09	7	95'		en	H
+L09	8	71'?	?	se	M
+L09	9	L:m?	?	m	M
+L09	10	L:b?	?	b	M
+L09	11	41'?	?	le	M
+L10	5	16'?	?	de	M
+L10	6	L:s?	?	s	M
+L10	7	L:p?	?	p	M
+L10	8	40'		la	H
+L10	9	L:i?	?	i	M
+L10	10	66'		re	H
+L10	11	L:a?	?	a	M
+L10	12	13?	?	sued	M
+L10	13	73=		Bavier	H
+L11	0	62'		qui	H
+L11	1	L:l?	?	l	M
+L11	2	L:s?	?	s	M
+L11	3	81'?	?	ve	M
+L11	4	L:u?	?	u	M
+L11	5	41'?	?	le	M
+L11	6	L:n?	?	n	M
+L11	7	L:t?	?	t	M
+L11	9	8:		leur	H
+L11	10	L:t?	?	t	M
+L11	11	68'		ro	H
+L11	12	L:u?	?	u	M
+L11	13	56'		pe	H
+L11	14	L:s?	?	s	M
+L11	15	73'		so	H
+L11	16	L:i?	?	i	M
+L11	17	95'		en	H
+L11	18	L:t?	?	t	M
+L12	0	38'		jo	H
+L12	1	L:i?	?	i	M
+L12	2	L:n?	?	n	M
+L12	3	L:c?	?	c	M
+L12	4	76'		te	H
+L12	5	L:s?	?	s	M
+L12	6	L:a?	?	a	M
+L13	3	10:		les	H
+L13	4	L:a?	?	a	M
+L13	5	L:r?	?	r	M
+L13	6	46'		me	H
+L13	7	L:e?	?	e	M
+L13	8	L:s?	?	s	M
+L13	9	93'		des	H
+L13	10	16'?	?	de	M
+L14	0	L:u?	?	u	M
+L14	1	L:x?	?	x	M
+L14	2	13'?	?	co	M
+L14	3	L:u?	?	u	M
+L14	4	68'		ro	H
+L14	5	L:n?	?	n	M
+L14	6	51'?	?	ne	M
+L14	7	L:s?	?	s	M
+L14	8	71'?	?	se	M
+L14	9	68'		ro	H
+L14	10	L:n?	?	n	M
+L14	11	L:t?	?	t	M
+L14	12	95'		en	H
+L14	13	71'?	?	se	M
+L14	14	L:m?	?	m	M
+L14	15	L:b?	?	b	M
+L14	16	41'?	?	le	M
+L16	8	14:?	?	madame	M
+L16	9	40'		la	H
+L16	10	L:l?	?	l	M
+L16	11	L:a?	?	a	M
+L17	0	L:n?	?	n	M
+L17	1	L:g?	?	g	M
+L17	2	65'		ra	H
+L17	3	81'?	?	ve	M
+L17	4	62'		qui	H
+L17	5	97'		est	H
+L17	6	L:a?	?	a	M
+L17	7	L:l?	?	l	M
+L17	8	42'		li	H
+L17	9	L:e?	?	e	M
+L17	10	86'		avec	H
+L17	11	1=		le Roy	H
+L17	14	95'		en	H
+L17	15	66'?	?	re	M
+L17	16	13'?	?	co	M
+L17	17	L:i?	?	i	M
+L17	18	L:t?	?	t	M
+L18	0	L:a?	?	a	M
+L18	1	L:s?	?	s	M
+L18	2	72'		si	H
+L18	3	L:s?	?	s	M
+L18	4	75'		ta	H
+L18	5	L:n?	?	n	M
+L18	6	11'?	?	ce	M
+L20	9	10:		les	H
+L20	10	92'		dit	H
+L20	11	L:s?	?	s	M
+L21	0	23:		prince	H
+L21	1	L:s?	?	s	M
+L21	2	L:o?	?	o	M
+L21	3	L:u?	?	u	M
+L21	4	44'		lu	H
+L21	5	L:n?	?	n	M
+L21	6	16'?	?	de	M
+L21	7	L:u?	?	u	M
+L21	8	L:x?	?	x	M
+L21	9	97'		est	H
+L21	10	L:o?	?	o	M
+L21	11	L:i?	?	i	M
+L21	12	95'		en	H
+L21	13	L:t?	?	t	M
+L21	14	38'		jo	H
+L21	15	L:i?	?	i	M
+L21	16	L:n?	?	n	M
+L21	17	L:c?	?	c	M
+L21	18	L:t?	?	t	M
+L21	19	L:s?	?	s	M
+L01	6	L:e?	?	e	M
+L01	7	L:l?	?	l	M
+L01	8	41'?	?	le	M
+L01	9	71'?	?	se	M
+L01	10	16'?	?	de	M
+L01	11	39'		ju	H
+L01	12	L:s?	?	s	M
+L01	13	76'		te	H
+L02	2	L:t?	?	t	M
+L02	3	68'		ro	H
+L02	4	L:p?	?	p	M
+L02	5	L:g?	?	g	M
+L02	6	65'		ra	H
+L02	7	L:n?	?	n	M
+L02	8	16'?	?	de	M
+L02	9	21'?	?	fe	M
+L02	10	L:r?	?	r	M
+L02	11	46'		me	H
+L02	12	76'		te	H
+L02	13	16'?	?	de	M
+L02	14	73=		Bavier	H
+L03	0	56'		pe	H
+L03	1	L:r?	?	r	M
+L03	2	L:d?	?	d	M
+L03	3	68'		ro	H
+L03	4	L:n?	?	n	M
+L03	5	L:s?	?	s	M
+L03	6	10:		les	H
+L03	7	71'?	?	se	M
+L03	8	L:u?	?	u	M
+L03	9	L:l?	?	l	M
+L03	10	L:s?	?	s	M
+L03	11	L:a?	?	a	M
+L03	12	L:d?	?	d	M
+L03	13	31'?	?	he	M
+L03	14	66'?	?	re	M
+L03	15	L:n?	?	n	M
+L03	16	L:t?	?	t	M
+L03	17	L:s?	?	s	M
+L03	19	40'		la	H
+L04	0	97=		france	H
+L04	1	96'?	?	et	M
+L04	2	40'		la	H
+L04	3	13'?	?	co	M
+L04	4	L:o?	?	o	M
+L04	5	L:n?	?	n	M
+L04	6	L:t?	?	t	M
+L04	7	95'		en	H
+L04	8	15:?	?	nous	M
+L04	10	4:		il	H
+L04	11	71'?	?	se	M
+L04	12	20'?	?	fa	M
+L04	13	L:u?	?	u	M
+L04	14	L:d?	?	d	M
+L04	15	65'		ra	H
+L04	16	66'?	?	re	M
+L04	17	77'		ti	H
+L05	0	66'?	?	re	M
+L05	1	L:r?	?	r	M
+L05	2	L:c?	?	c	M
+L05	3	30'		ha	H
+L05	4	14'?	?	cu	M
+L05	5	L:n?	?	n	M
+L05	6	16'?	?	de	M
+L05	7	73'?	?	so	M
+L05	8	L:n?	?	n	M
+L05	9	13'?	?	co	M
+L05	10	L:s?	?	s	M
+L05	11	76'		te	H
+L05	12	33'		ho	H
+L05	13	L:n?	?	n	M
+L05	14	76'		te	H
+L05	15	L:u?	?	u	M
+L05	16	71'?	?	se	M
+L05	17	12:?	?	ment	M
+L06	0	41'?	?	le	M
+L06	1	L:n?	?	n	M
+L06	2	51'?	?	ne	M
+L06	3	47'		mi	H
+L06	4	45'		ma	H
+L06	5	L:i?	?	i	M
+L06	6	L:s?	?	s	M
+L06	7	L:t?	?	t	M
+L06	8	66'?	?	re	M
+L06	9	16'?	?	de	M
+L06	10	40'		la	H
+L06	11	10'?	?	ca	M
+L06	12	L:m?	?	m	M
+L06	13	55'		pa	H
+L06	14	L:g?	?	g	M
+L06	15	51'?	?	ne	M
+L12	3	L:g?	?	g	M
+L12	4	65'		ra	H
+L12	5	77'		ti	H
+L12	6	L:f?	?	f	M
+L12	7	22'		fi	H
+L12	8	L:e?	?	e	M
+L12	9	65'		ra	H
+L12	10	41'?	?	le	M
+L12	11	13'?	?	co	M
+L12	12	L:m?	?	m	M
+L12	13	76'		te	H
+L12	14	L:d?	?	d	M
+L12	15	31'?	?	he	M
+L13	0	2'		be	H
+L13	1	L:r?	?	r	M
+L13	2	L:s?	?	s	M
+L13	3	76'		te	H
+L13	4	L:i?	?	i	M
+L13	5	L:n?	?	n	M
+L13	6	62'		qui	H
+L13	7	9:		luy	H
+L13	8	18'		do	H
+L13	9	L:i?	?	i	M
+L13	10	L:t?	?	t	M
+L13	11	74'		su	H
+L13	12	L:c?	?	c	M
+L13	13	11'?	?	ce	M
+L13	14	16'?	?	de	M
+L13	15	L:r?	?	r	M
+L13	16	L:a?	?	a	M
+L13	17	L:f?	?	f	M
+L13	18	22'?	?	fi	M
+L13	19	L:n?	?	n	M
+L13	20	16'?	?	de	M
+L14	0	43'		lo	H
+L14	1	L:b?	?	b	M
+L14	2	42'		li	H
+L14	3	26'		ge	H
+L14	4	L:r?	?	r	M
+L14	5	L:a?	?	a	M
+L14	6	47'		mi	H
+L14	7	L:e?	?	e	M
+L14	8	L:u?	?	u	M
+L14	9	L:x?	?	x	M
+L14	10	100'		faire	I
+L14	11	61'		que	H
+L14	12	73'		so	H
+L14	13	L:n?	?	n	M
+L14	14	L:p?	?	p	M
+L14	15	66'?	?	re	M
+L14	16	16'?	?	de	M
+L14	17	s:dd?	?	?	U
+L14	18	L:s?	?	s	M
+L15	0	71'?	?	se	M
+L15	1	L:u?	?	u	M
+L15	2	L:r?	?	r	M

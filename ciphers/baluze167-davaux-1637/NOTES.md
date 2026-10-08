@@ -830,3 +830,61 @@ signs unlabelled. 170 f.228-229v: f.228r and f.228v reconciled (35 + 119 tokens)
 - [x] image-check: native crops now exist for all five bare passages (170 f.229r-v cut by D1A-B167; one crop per passage eye-checked, bare cipher on each)
 - [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B); 170 f.229 crops re-cut for clipped marks and line starts (D1A-B167)
 Verdict: keep going: 3 internal gaps plus f.228 waiting on the owner's sort; cheapest next: two blind passes on the 170 f.229r-v crops plus reconciliation (~$7.5), or add those lines to the sorter170 rebuild for the owner
+
+## D4-B167 (account 4 worker, for LANE DEFAULT-account-4-20261008-0740), 8 Oct 2026, 09:25-09:3x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-08-account4-default-0740-jobs.md` job D4-B167 (two blind passes on the 170 f.229r-v crops, reconciliation,
+decode with the folder's key). Intake gate (pasted in the brief): `baluze167-davaux-1637: partial (line 1)` exit 0. PREREG
+`d4b167/PREREG-D4B167.md` pushed (99397d087) before any pass. Prompts `d4b167/prompt_pass{A,B}_b170f229{r,v}.txt` (= d1bal170 prompt, one
+image per line). Crop step: D1A-B167's native crops on disk (images/crops/b170f229r_L03-L21, b170f229v_L01-L15), no new crop, no request.
+
+**Passes and gate.** 4 Sonnet calls (one page per call). `tools/reconcile_passes.py` on norm.py output (cipher tokens, marks included):
+| page | signs A / B | agree | split |
+|---|---|---|---|
+| f.229r | 219 / 219 | 168 | 0.233 |
+| f.229v | 149 / 144 | 111 | 0.255 |
+Both above the 0.10 gate (agreement, not accuracy) -> reconciled by eye from the crops, as the PREREG states. After mapping shape names to
+letters (`d4b167/letterdis.py`), 29 + 28 columns remained; the rest were label synonyms (hook/v/wave for one curl sign).
+**What the split is made of.** (1) Every "1" in this hand is a dotted i, so an acute on a numeral containing 1 cannot be told from the
+dot unless it sits on the other digit (16/16', 41/41', 14/14:, 19/19:): those numerals are graded M, valued by the key reading that
+fits. (2) y (= b, "ensemble") vs y+ (= r, "forces"). (3) n-forms: plain n = l ("quils", "Landgrave"), n with an acute = e ("armees").
+(4) Line-start/marks on 46, 62, 66, 23. Pass B's s:t at f.229r L17 is a barred 1 (1= le Roy); pass A's extra "4" in f.229v L13 is part of 74'.
+**This hand departs from the d1bal167 exemplar map** (f.157/f.166 hands): here p = i ("soient", "desplaire"), mm (four minims, no 4) = p
+("pres", "trop"), the 9-like sign = c ("touchant", "jonction"), the underlined 9 = x ("d'eux"), small looped gamma = o, k = o; the
+crossed-4 forms carry a/t/d/f/g. So no letter sign is graded above M, and the f.228 sorter's s:q (D1-BAL170B settled the q-like sign as
+L:q) should be checked against the c reading found here.
+**Reading (reading_b170f229.txt, provisional).** Reconciled sheets `passes/reconciled_b170f229{r,v}.tsv` (shape=letter tokens),
+`ciphertext_b170f229.txt` (pipe), second job in decode.json; `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` ->
+"reading up to date", exit 0. Grades: 366 cipher tokens, H 106, M 258, I 1 (100' faire, key row I), U 1 (the two-dot sign f.229v L14,
+context "predece[ss]eur"). Runs of connected French throughout, e.g. f.229r "touchant la jonction de leurs forces avec les armees de
+l'une ou de l'autre couronne ou avec les deux ensemble"; "Ce qui peut le plus desplaire a [13 73=] est qu'ils veulent que leurs troupes
+soient jointes a M de Longueville et soubz son commandement mesmes quand les armees des deux couronnes seront ensemble"; "madame la
+Landgrave qui est allie[e] avec le Roy et qui en recoit assistance"; f.229v "par la trop grande fermete de [73= Bavier] nous perdrons
+les seuls adherents que la France [...] et il se faudra retirer chacun de son coste honteusement laissant l'ennemi maistre de la
+campagne"; "On gratiffiera le comte d'Heberstein qui luy doit succeder affin de l'obliger a mieux faire que son predecesseur".
+Unsettled spots: f.229r L03-L05 ("a u s se s de c re a n ce pres de Bavier pour le fera l'accommoder au temps"), L10 "a 13 73="
+(key gives "sued Bavier"; the context does not settle it), f.229v L01 "elle se dejuste", L04 "la co o n t en".
+No spec exists for this target, so no judge_plaintext run (rule 7's judge clause applies to targets with a spec); no rule-7 fresh
+re-derivation yet. Rule 4: no reading here is above M for letter signs; 106 numeral tokens are H from Tomokiyo's published table.
+Where not found: Avenel VI (whole-volume grep, earlier worker) prints no Chavigny despatch to d'Avaux of 25 Aug 1640; nothing else searched
+by this job. Requests: none (crops on disk). Subagents: 4 Sonnet calls; reconciliation by this worker from 7 stacked crop views.
+Suggestion (not done): a verifier re-derivation of f.229r-v from the crops, and a re-read of f.228r-v with the c/p/mm values found here.
+
+## Remaining gaps (D4-B167, 8 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: provisional reading (reading_b170f229.txt, 366 tokens, H 106 / M 258).
+168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled. 170 f.228r-v: reconciled (35 + 119 tokens).
+- 168 f.246-247v bare passage - blocker: not-attempted; court-hand exemplars cannot cover the f.247 hand's b/L/K/u forms (D1-BAL167); next: look for a glossed text in the f.246-248 hand (survey.tsv's d'Avaux-side leaves, or the recipient copies of d'Avaux's own ciphered despatches), one 300 px scan of Baluze 168-169 for that hand, ~$3
+- 170 f.228r-v bare passage - blocker: not-attempted; the owner's sorter (sorter170/) is still unanswered, but the f.229 reading now gives this hand's letter values (9-sign c, p i, mm p, n l); next: provisional decode of passes/reconciled_b170f228{r,v}.tsv with those values, marks graded M, same decode.json pattern, ~$2
+- 170 f.229r-v reading - blocker: not-attempted; provisional, letter signs M; next: a verifier's rule-7 fresh re-derivation from the crops and the unsettled spots (f.229r L03-L05, L10 "a 13 73=", f.229v L01, L04), ~$2.5
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census, and N9-BAL's 36-canvas sample of 168 found one unlisted glossed letter (f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (8 Oct 2026, D4-B167)
+- [x] siblings: checked davaux-1633 (different item) and the DECODE records 2756-2762
+- [x] clear-pages: leaf survey done; 61 of 66 cipher letters carry a period interlinear decipherment; c512 is clear and the clear context places F2 on c511 run 2; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.110r numerals agree with it (N9-BAL3); applied to 170 f.229r-v (D4-B167, numerals read connected French)
+- [x] print: Avenel VI whole-volume grep; Tomokiyo's page already prints the cipher text of 169 ff.52, 97, 142
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); f.229 letter values settled from context (D4-B167) give the 170 hand; untried: the same for f.228 and a glossed text in the f.247 hand
+- [x] image-check: native crops exist for all five bare passages; 170 f.229r-v passed twice and reconciled from the crops (D4-B167)
+- [x] retry: c511-512 re-fetched 5 Oct 2026 (N9-BAL); c511 runs cropped and passed (N9-BAL2); c234 cropped and passed (N9-BAL3); c346 cropped (D1-BAL167); 170 f.228r crops re-cut and re-passed (D1-BAL170, D1-BAL170B); 170 f.229 crops re-cut (D1A-B167) and passed (D4-B167)
+Verdict: keep going: 4 internal gaps; cheapest next: provisional decode of 170 f.228r-v with the f.229 letter values (~$2), and a verifier re-derivation of f.229r-v (~$2.5)

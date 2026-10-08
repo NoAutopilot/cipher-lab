@@ -1,0 +1,39 @@
+line	col	A	B	flagged	crop
+b170f229v_L01	3	41'	41	B	
+b170f229v_L01	4	71'	71	B	
+b170f229v_L01	7	s:hook	s:hook|wave		
+b170f229v_L02	4	s:u4	-	A	
+b170f229v_L02	11	46	46'	B	
+b170f229v_L03	2	s:y+	s:y|gam		
+b170f229v_L03	3	s:u4	s:u		
+b170f229v_L03	6	s:wave	s:hook		
+b170f229v_L03	10	s:u4	s:u		
+b170f229v_L03	11	s:wave	s:hook		
+b170f229v_L03	18	s:wave	s:hook		
+b170f229v_L04	2	96'	96		
+b170f229v_L04	5	s:h|gam	s:h		
+b170f229v_L04	12	20'	20		
+b170f229v_L04	13	s:wave	s:hook		
+b170f229v_L05	1	66'	66		
+b170f229v_L05	11	s:wave	s:hook		
+b170f229v_L05	16	s:hook	s:gam		
+b170f229v_L06	1	s:?(ai)	s:?(clipped)		
+b170f229v_L06	3	51'	51?'		
+b170f229v_L06	4	44'	47'		
+b170f229v_L06	6	s:	s:v	A	
+b170f229v_L06	7	s:wave	s:hook		
+b170f229v_L06	16	51	-		
+b170f229v_L12	4	s:m4	s:u4		
+b170f229v_L12	8	41'	41		
+b170f229v_L13	3	s:wave	s:hook		
+b170f229v_L13	7	62	62'		
+b170f229v_L13	8	s:?(9_with_diaeresis)	9:		
+b170f229v_L13	13	4	-		
+b170f229v_L13	16	16	-		
+b170f229v_L13	17	s:y+	16'		
+b170f229v_L13	21	22:	22		
+b170f229v_L14	3	42	42'		
+b170f229v_L14	6	s:y+	s:u4		
+b170f229v_L14	14	s:?(nm)	s:m4	B	
+b170f229v_L14	17	s:?(dots)	-		
+b170f229v_L14	18	s:wave	s:hook		

@@ -1,0 +1,14 @@
+# D4-B167, 8 Oct 2026. Eye reconciliation of passes A/B (d4b167/rec_f229v, split 0.255 > 0.10 gate); conventions as reconciled_b170f229r.tsv.
+# 4uu = 4 with two cross strokes (passes: u4/m4/4u); dd = two dots (A s:?(dots), B nothing). L06 first token clipped in the crop, read from
+# the bottom of L05's crop (4 + dotted i with a stroke). Pass A's extra "4" (L13, inside 74') and extra 16 are not on the leaf.
+line	tokens
+b170f229v_L01	{pour la Cause Commune que si} s:w=e? s:n=l? 41'? 71'? 16'? 39' s:hook=s? 76'
+b170f229v_L02	{par la} s:u4=t? 68' s:mm=p? s:r=g? 65' s:h=n? 16'? 21'? s:y+=r? 46' 76' 16'? 73= {nous m}
+b170f229v_L03	56' s:y+=r? s:u=d? 68' s:h=n? s:hook=s? 10: 71'? s:gam=u? s:n=l? s:hook=s? s:4u=a? s:4uu=d? 31'? 66'? s:h=n? s:u4=t? s:hook=s? {que} 40'
+b170f229v_L04	97= 96'? 40' 13'? s:gam2=o? s:h=n? s:u4=t? 95' 15:? {et} 4: 71'? 20'? s:gam=u? s:4uu=d? 65' 66'? 77'
+b170f229v_L05	66'? s:y+=r? s:9=c? 30' 14'? s:h=n? 16'? 73'? s:h=n? 13'? s:hook=s? 76' 33' s:h=n? 76' s:gam=u? 71'? 12:? {laissant}
+b170f229v_L06	41'? s:h=n? 51'? 47' 45' s:p=i? s:hook=s? s:u4=t? 66'? 16'? 40' 10'? s:m4=m? 55' s:r=g? 51'? {Vous}
+b170f229v_L12	{Si facilement. On} s:r=g? 65' 77' s:4uu=f? 22' s:w=e? 65' 41'? 13'? s:m4=m? 76' s:u=d? 31'?
+b170f229v_L13	2' s:y+=r? s:hook=s? 76' s:p=i? s:h=n? 62' 9: 18' s:p=i? s:u4=t? 74' s:9=c? 11'? 16'? s:y+=r? s:4u=a? s:4uu=f? 22'? s:h=n? 16'?
+b170f229v_L14	43' s:y=b? 42' 26' s:y+=r? s:4u=a? 47' s:w=e? s:gam=u? s:c=x? 100' 61' 73' s:h=n? s:mm=p? 66'? 16'? s:dd=ce? s:hook=s?
+b170f229v_L15	71'? s:gam=u? s:y+=r?

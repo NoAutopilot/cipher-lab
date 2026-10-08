@@ -1,0 +1,220 @@
+line	position	sign	confidence	alt	why
+b170f229r_L03	1	s:4u	H		agree
+b170f229r_L03	2	s:gam	H		agree
+b170f229r_L03	3	s:v	M	B:s:hook	differ
+b170f229r_L03	4	71'	H		agree
+b170f229r_L03	5	s:v	M	B:s:hook	differ
+b170f229r_L03	6	16'	M		agree-flagged
+b170f229r_L03	7	9	H		agree
+b170f229r_L03	8	66'	H		agree
+b170f229r_L03	9	s:4u	H		agree
+b170f229r_L04	1	s:h	H		agree
+b170f229r_L04	2	11'	H		agree
+b170f229r_L04	3	s:ll|m4	M	B:s:m4	differ
+b170f229r_L04	4	66	H		agree
+b170f229r_L04	5	s:v	M	B:s:hook	differ
+b170f229r_L04	6	16'	M	B:16	differ
+b170f229r_L04	7	73=	H		agree
+b170f229r_L04	8	19	H		agree
+b170f229r_L04	9	41'	H		agree
+b170f229r_L04	10	21:	M	B:21'	differ
+b170f229r_L04	11	s:y+	H		agree
+b170f229r_L04	12	s:4u	H		agree
+b170f229r_L04	13	40'	H		agree
+b170f229r_L04	14	9	H		agree
+b170f229r_L04	15	13	H		agree
+b170f229r_L04	16	s:m4	H		agree
+b170f229r_L04	17	48'	H		agree
+b170f229r_L04	18	16	H		agree
+b170f229r_L04	19	s:y	M	B:s:y+	differ
+b170f229r_L05	1	s:4u	H		agree
+b170f229r_L05	2	s:gam	H		agree
+b170f229r_L05	3	76'	H		agree
+b170f229r_L05	4	s:m4	H		agree
+b170f229r_L05	5	s:ll|m4	M	B:s:m4	differ
+b170f229r_L05	6	s:v	M	B:s:hook	differ
+b170f229r_L05	7	s:?(n-like_with_stroke)	M	B:s:u4	differ
+b170f229r_L05	8	s:u4	H		agree
+b170f229r_L05	9	s:4u	H		agree
+b170f229r_L05	10	90'	M	B:96'	differ
+b170f229r_L05	11	76'	H		agree
+b170f229r_L05	12	s:h	H		agree
+b170f229r_L05	13	46'	M	B:76'	differ
+b170f229r_L05	14	s:y	M	B:s:y+	differ
+b170f229r_L05	15	10:	H		agree
+b170f229r_L05	16	92'	H		agree
+b170f229r_L05	17	s:v	M	B:s:hook	differ
+b170f229r_L05	18	19	H		agree
+b170f229r_L05	19	9	H		agree
+b170f229r_L05	20	s:wave	M	B:s:hook	differ
+b170f229r_L06	1	96'	H		agree
+b170f229r_L06	2	14:	M	B:14	differ
+b170f229r_L06	3	40'	H		agree
+b170f229r_L06	4	s:?(n-like)	M	B:s:u4	differ
+b170f229r_L06	5	s:4u	H		agree
+b170f229r_L06	6	s:h	H		agree
+b170f229r_L06	7	s:u4	H		agree
+b170f229r_L06	8	65'	H		agree
+b170f229r_L06	9	81'	H		agree
+b170f229r_L06	10	10:	H		agree
+b170f229r_L06	11	90'	H		agree
+b170f229r_L06	12	17'	H		agree
+b170f229r_L06	13	32:	H		agree
+b170f229r_L06	14	s:v	M	B:s:hook	differ
+b170f229r_L06	15	62'	M	B:62	differ
+b170f229r_L06	16	s:?(n-like)	M	B:s:u4	differ
+b170f229r_L06	17	s:v	M	B:s:hook	differ
+b170f229r_L07	1	78'	H		agree
+b170f229r_L07	2	s:gam	H		agree
+b170f229r_L07	3	9	H		agree
+b170f229r_L07	4	30'	H		agree
+b170f229r_L07	5	s:h	H		agree
+b170f229r_L07	6	s:u4	H		agree
+b170f229r_L07	7	40'	H		agree
+b170f229r_L07	8	38'	H		agree
+b170f229r_L07	9	s:h	H		agree
+b170f229r_L07	10	9	H		agree
+b170f229r_L07	11	32:	H		agree
+b170f229r_L07	12	16	H		agree
+b170f229r_L07	13	8:	H		agree
+b170f229r_L07	14	s:v	M	B:s:hook	differ
+b170f229r_L07	15	23	H		agree
+b170f229r_L07	16	s:y	M	B:s:y+	differ
+b170f229r_L07	17	11'	H		agree
+b170f229r_L07	18	s:v	M	B:s:hook	differ
+b170f229r_L08	1	86'	H		agree
+b170f229r_L08	2	10:	H		agree
+b170f229r_L08	3	s:4u	H		agree
+b170f229r_L08	4	s:y+	H		agree
+b170f229r_L08	5	46	H		agree
+b170f229r_L08	6	s:?(n-like)	M	B:s:u4	differ
+b170f229r_L08	7	s:v	M	B:s:hook	differ
+b170f229r_L08	8	16'	M	B:16	differ
+b170f229r_L08	9	44'	H		agree
+b170f229r_L08	10	51'	M	B:51	differ
+b170f229r_L08	11	s:gam	H		agree
+b170f229r_L08	12	s:loop	H		agree
+b170f229r_L08	13	16'	M	B:16	differ
+b170f229r_L08	14	40'	H		agree
+b170f229r_L08	15	s:gam	H		agree
+b170f229r_L08	16	s:u4	H		agree
+b170f229r_L08	17	66'	H		agree
+b170f229r_L09	1	10:	H		agree
+b170f229r_L09	2	16'	H		agree
+b170f229r_L09	3	s:gam	H		agree
+b170f229r_L09	4	s:c	H		agree
+b170f229r_L09	5	95'	H		agree
+b170f229r_L09	6	71'	H		agree
+b170f229r_L09	7	s:m4	H		agree
+b170f229r_L09	8	s:y	M	B:s:y+	differ
+b170f229r_L09	9	41'	H		agree
+b170f229r_L10	1	16'	H		agree
+b170f229r_L10	2	s:v	M	B:s:hook	differ
+b170f229r_L10	3	s:ll|m4	M	B:s:u4	differ
+b170f229r_L10	4	40'	H		agree
+b170f229r_L10	5	s:p	H		agree
+b170f229r_L10	6	66'	H		agree
+b170f229r_L10	7	s:4u	H		agree
+b170f229r_L10	8	13	H		agree
+b170f229r_L10	9	73=	H		agree
+b170f229r_L11	1	62'	H		agree
+b170f229r_L11	2	s:?(n-like)	M	B:s:u4	differ
+b170f229r_L11	3	s:v	M	B:s:hook	differ
+b170f229r_L11	4	81'	H		agree
+b170f229r_L11	5	s:loop	H		agree
+b170f229r_L11	6	41'	H		agree
+b170f229r_L11	7	s:h	H		agree
+b170f229r_L11	8	s:u4	H		agree
+b170f229r_L11	9	8:	H		agree
+b170f229r_L11	10	s:u4	H		agree
+b170f229r_L11	11	68'	H		agree
+b170f229r_L11	12	s:gam	H		agree
+b170f229r_L11	13	56'	H		agree
+b170f229r_L11	14	s:v	M	B:s:hook	differ
+b170f229r_L11	15	73'	H		agree
+b170f229r_L11	16	s:p	H		agree
+b170f229r_L11	17	95'	H		agree
+b170f229r_L11	18	s:u4	H		agree
+b170f229r_L12	1	38'	H		agree
+b170f229r_L12	2	s:p	H		agree
+b170f229r_L12	3	s:h	H		agree
+b170f229r_L12	4	9	H		agree
+b170f229r_L12	5	76'	H		agree
+b170f229r_L12	6	s:v	M	B:s:hook	differ
+b170f229r_L12	7	s:4u	H		agree
+b170f229r_L13	1	10:	H		agree
+b170f229r_L13	2	s:4u	H		agree
+b170f229r_L13	3	s:y+	H		agree
+b170f229r_L13	4	46'	H		agree
+b170f229r_L13	5	s:?(n-like)	M	B:s:u4	differ
+b170f229r_L13	6	s:v	M	B:s:hook	differ
+b170f229r_L13	7	93'	H		agree
+b170f229r_L13	8	16'	H		agree
+b170f229r_L14	1	s:gam	H		agree
+b170f229r_L14	2	s:c	H		agree
+b170f229r_L14	3	13	H		agree
+b170f229r_L14	4	s:loop	H		agree
+b170f229r_L14	5	68'	H		agree
+b170f229r_L14	6	s:h	H		agree
+b170f229r_L14	7	51'	H		agree
+b170f229r_L14	8	s:v	M	B:s:hook	differ
+b170f229r_L14	9	71'	H		agree
+b170f229r_L14	10	68'	H		agree
+b170f229r_L14	11	s:h	H		agree
+b170f229r_L14	12	s:u4	H		agree
+b170f229r_L14	13	95'	H		agree
+b170f229r_L14	14	71'	H		agree
+b170f229r_L14	15	s:m4	H		agree
+b170f229r_L14	16	s:y	M	B:s:y+	differ
+b170f229r_L14	17	41'	H		agree
+b170f229r_L16	1	14:	M	B:14	differ
+b170f229r_L16	2	40'	H		agree
+b170f229r_L16	3	s:?(n-like)	M	B:s:u4	differ
+b170f229r_L16	4	s:4u	H		agree
+b170f229r_L17	1	s:h	H		agree
+b170f229r_L17	2	s:r	H		agree
+b170f229r_L17	3	65'	H		agree
+b170f229r_L17	4	81'	H		agree
+b170f229r_L17	5	62'	H		agree
+b170f229r_L17	6	97'	H		agree
+b170f229r_L17	7	s:4u	H		agree
+b170f229r_L17	8	s:?(n-like)	M	B:s:u4	differ
+b170f229r_L17	9	42'	H		agree
+b170f229r_L17	10	s:m4	H		agree
+b170f229r_L17	11	86'	H		agree
+b170f229r_L17	12	1=	M	B:s:t	differ
+b170f229r_L17	13	95'	H		agree
+b170f229r_L17	14	66	H		agree
+b170f229r_L17	15	13'	H		agree
+b170f229r_L17	16	s:p	H		agree
+b170f229r_L17	17	s:u4	H		agree
+b170f229r_L18	1	s:4u	H		agree
+b170f229r_L18	2	s:v	M	B:s:hook	differ
+b170f229r_L18	3	72:	M	B:72'	differ
+b170f229r_L18	4	s:v	M	B:s:hook	differ
+b170f229r_L18	5	75'	H		agree
+b170f229r_L18	6	s:h	H		agree
+b170f229r_L18	7	11'	H		agree
+b170f229r_L20	1	10:	H		agree
+b170f229r_L20	2	92'	H		agree
+b170f229r_L20	3	s:v	M	B:s:hook	differ
+b170f229r_L21	1	23:	M	B:23	differ
+b170f229r_L21	2	s:v	M	B:s:hook	differ
+b170f229r_L21	3	s:k	H		agree
+b170f229r_L21	4	s:gam	H		agree
+b170f229r_L21	5	44'	H		agree
+b170f229r_L21	6	s:h	H		agree
+b170f229r_L21	7	16'	H		agree
+b170f229r_L21	8	s:gam	H		agree
+b170f229r_L21	9	9	H		agree
+b170f229r_L21	10	97'	H		agree
+b170f229r_L21	11	s:gam	H		agree
+b170f229r_L21	12	s:p	H		agree
+b170f229r_L21	13	95'	H		agree
+b170f229r_L21	14	s:u4	H		agree
+b170f229r_L21	15	38'	H		agree
+b170f229r_L21	16	s:p	H		agree
+b170f229r_L21	17	s:h	H		agree
+b170f229r_L21	18	9	H		agree
+b170f229r_L21	19	s:u4	H		agree
+b170f229r_L21	20	s:v	M	B:s:hook	differ

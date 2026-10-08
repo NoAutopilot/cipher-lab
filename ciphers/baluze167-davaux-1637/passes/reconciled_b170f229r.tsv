@@ -1,0 +1,24 @@
+# D4-B167, 8 Oct 2026. Eye reconciliation of passes A/B (d4b167/rec_f229r, split 0.233 > 0.10 gate) from the native crops
+# images/crops/b170f229r_L*.jpg. Tokens: numerals as seen (N' acute, N: diaeresis, N= bar); s:<shape>=<letter> letter signs, the letter
+# settled from context in this letter (not from the d1bal167 exemplar map, which this hand contradicts for p, mm, n, 9); trailing ? = M.
+# Every "1" in this hand is a dotted i, so on a numeral containing 1 an acute cannot be told from the dot unless it sits on the other digit:
+# such numerals carry ? (value = the key's marked reading the context fits). New shape names: gam2 = small looped gamma (not the zeta-like
+# gam); 9_ = underlined 9; mm = four minims without a 4; w4 = w with a 4; n = plain n-form; w' = n-form with an acute (passes: n-like).
+line	tokens
+b170f229r_L03	{se pouvoir faire si led S. Saluius} s:4u=a? s:gam=u? s:hook=s? 71'? s:hook=s? 16'? s:9=c? 66' s:4u=a?
+b170f229r_L04	s:h=n? 11'? s:mm=p? 66'? s:hook=s? 16'? 73= 19:? 41'? 21'? s:y+=r? s:4u=a? 40' s:9=c? 13'? s:m4=m? 48' 16'? s:y+=r?
+b170f229r_L05	s:4u=a? s:gam=u? 76' s:m4=m? s:mm=p? s:hook=s? s:w'=e? s:u4=t? s:4u=a? 90' 76' s:h=n? 76' s:y+=r? 10: 92' s:hook=s? 19'? s:9=c? s:hook=s?
+b170f229r_L06	96' 14:? 40' s:n=l? s:4u=a? s:h=n? s:u4=g? 65' 81'? {sur} 10: 90' 17'? 32: s:hook=s? 62' s:n=l? s:hook=s?
+b170f229r_L07	{desirent} 78' s:gam=u? s:9=c? 30' s:h=n? s:u4=t? 40' 38' s:h=n? s:9=c? 32: 16'? 8: s:hook=s? 23'? s:y+=r? 11'? s:hook=s?
+b170f229r_L08	86' 10: s:4u=a? s:y+=r? 46'? s:w'=e? s:hook=s? 16'? 44' 51'? s:gam2=o? s:loop=u? 16'? 40' s:gam=u? s:u4=t? 66'
+b170f229r_L09	{Couronne ou avec} 10: 16'? s:gam=u? s:c=x? 95' 71'? s:m4=m? s:y=b? 41'?
+b170f229r_L10	{Ce qui peut le plus} 16'? s:hook=s? s:mm=p? 40' s:p=i? 66' s:4u=a? 13? 73= {est}
+b170f229r_L11	62' s:n=l? s:hook=s? 81'? s:loop=u? 41'? s:h=n? s:u4=t? {que} 8: s:u4=t? 68' s:gam=u? 56' s:hook=s? 73' s:p=i? 95' s:u4=t?
+b170f229r_L12	38' s:p=i? s:h=n? s:9=c? 76' s:hook=s? s:4u=a? {M de Longueville et soubz son}
+b170f229r_L13	{Commandement mesmes quand} 10: s:4u=a? s:y+=r? 46' s:w'=e? s:hook=s? 93' 16'?
+b170f229r_L14	s:gam=u? s:c=x? 13'? s:loop=u? 68' s:h=n? 51'? s:hook=s? 71'? 68' s:h=n? s:u4=t? 95' 71'? s:m4=m? s:y=b? 41'? {Comme}
+b170f229r_L16	{de s'informaliser specialement pour ce qui est de} 14:? 40' s:n=l? s:4u=a?
+b170f229r_L17	s:h=n? s:r=g? 65' 81'? 62' 97' s:4u=a? s:n=l? 42' s:w4=e? 86' 1= {et qui} 95' 66'? 13'? s:p=i? s:u4=t?
+b170f229r_L18	s:4u=a? s:hook=s? 72' s:hook=s? 75' s:h=n? 11'? {outre que les choses se peuvent conduire}
+b170f229r_L20	{des diversions que M de Longueville fera que si} 10: 92' s:hook=s?
+b170f229r_L21	23: s:hook=s? s:k=o? s:gam=u? 44' s:h=n? 16'? s:gam=u? s:9_=x? 97' s:gam2=o? s:p=i? 95' s:u4=t? 38' s:p=i? s:h=n? s:9=c? s:4u=t? s:hook=s?

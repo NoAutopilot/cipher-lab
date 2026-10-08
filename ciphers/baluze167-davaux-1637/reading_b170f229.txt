@@ -1,0 +1,31 @@
+# Baluze 170 ff.229r-v bare passage (D4-B167, 8 Oct 2026): provisional reconciled transcription read with Tomokiyo's D'Avaux table
+# (published key, credited). Letter signs and 1-bearing numerals are M (see ciphertext_b170f229.txt). Regenerate:
+# python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check
+# Grades: H 106, I 1, M 258, U 1
+b170f229r L03	SE POUVOIR FAIRE SI LED S. SALUIUS a u s se s de c re a
+b170f229r L04	n ce p re s de Bavier pour le fe r a la c co m mo de r
+b170f229r L05	a u te m p s e t a con te n te r les dit s du c s
+b170f229r L06	et madame la l a n g ra ve SUR les con di tion s qui l s
+b170f229r L07	DESIRENT to u c ha n t la jo n c tion de leur s fo r ce s
+b170f229r L08	avec les a r me e s de lu ne o u de la u t re
+b170f229r L09	COURONNE OU AVEC les de u x en se m b le
+b170f229r L10	CE QUI PEUT LE PLUS de s p la i re a sued Bavier EST
+b170f229r L11	qui l s ve u le n t QUE leur t ro u pe s so i en t
+b170f229r L12	jo i n c te s a M DE LONGUEVILLE ET SOUBZ SON
+b170f229r L13	COMMANDEMENT MESMES QUAND les a r me e s des de
+b170f229r L14	u x co u ro n ne s se ro n t en se m b le COMME
+b170f229r L16	DE S'INFORMALISER SPECIALEMENT POUR CE QUI EST DE madame la l a
+b170f229r L17	n g ra ve qui est a l li e avec le Roy ET QUI en re co i t
+b170f229r L18	a s si s ta n ce OUTRE QUE LES CHOSES SE PEUVENT CONDUIRE
+b170f229r L20	DES DIVERSIONS QUE M DE LONGUEVILLE FERA QUE SI les dit s
+b170f229r L21	prince s o u lu n de u x est o i en t jo i n c t s
+b170f229v L01	POUR LA CAUSE COMMUNE QUE SI e l le se de ju s te
+b170f229v L02	PAR LA t ro p g ra n de fe r me te de Bavier NOUS M
+b170f229v L03	pe r d ro n s les se u l s a d he re n t s QUE la
+b170f229v L04	france et la co o n t en nous ET il se fa u d ra re ti
+b170f229v L05	re r c ha cu n de so n co s te ho n te u se ment LAISSANT
+b170f229v L06	le n ne mi ma i s t re de la ca m pa g ne VOUS
+b170f229v L12	SI FACILEMENT. ON g ra ti f fi e ra le co m te d he
+b170f229v L13	be r s te i n qui luy do i t su c ce de r a f fi n de
+b170f229v L14	lo b li ge r a mi e u x faire que so n p re de [s:dd] s
+b170f229v L15	se u r
