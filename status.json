@@ -5818,9 +5818,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V6)'"
+        "AUDIT.md '## AUDIT (LS-V6)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-G)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 96.7,
@@ -5836,7 +5837,7 @@
       "title": "Eckert 1864: Meigs to Ingalls, City Point, 24 July 1864, cavalry horses and the money shortage checking deliveries (N2-BI)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BI queued",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BI queued; second audit AUD2-LS-G 8 Oct 2026 held N3 (OR I/32 pt 3, 35 pt 2, 37 pt 2, 51 pt 1, Grant Papers vols 10-12, Butler, Dana, Sheridan, Heitman, press keyword pass).",
       "phrases": [
         "Huntington mssEC 19 p.119, pointer 9011, N2-BI"
       ],
@@ -5859,9 +5860,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V6)'"
+        "AUDIT.md '## AUDIT (LS-V6)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-G)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 95.7,
@@ -5877,7 +5879,7 @@
       "title": "Eckert 1864: Secretary of War to Dana, 4 June 1864, Lt Col Wade, the Senator's son, for Sheridan's staff (N2-BJ)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BJ queued",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BJ queued; second audit AUD2-LS-G 8 Oct 2026 held N3 (OR I/32 pt 3, 35 pt 2, 37 pt 2, 51 pt 1, Grant Papers vols 10-12, Butler, Dana, Sheridan, Heitman, press keyword pass).",
       "phrases": [
         "Huntington mssEC 19 p.87, pointer 8979, N2-BJ"
       ],
@@ -5900,9 +5902,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V6)'"
+        "AUDIT.md '## AUDIT (LS-V6)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-G)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 90.9,
@@ -5918,7 +5921,7 @@
       "title": "Eckert 1864: Meigs to Sheridan, 12 Dec 1864, a revoked assignment and a chief quartermaster for his army (N2-BK)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BK queued",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BK queued; second audit AUD2-LS-G 8 Oct 2026 held N3 (OR I/32 pt 3, 35 pt 2, 37 pt 2, 51 pt 1, Grant Papers vols 10-12, Butler, Dana, Sheridan, Heitman, press keyword pass). Grant Papers vol. 13 unread (403).",
       "phrases": [
         "Huntington mssEC 19 p.245, pointer 9139, N2-BK"
       ],
@@ -5941,25 +5944,26 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V6)'"
+        "AUDIT.md '## AUDIT (LS-V6)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-G)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth": "D2",
+      "depth": "D3",
       "depth_pct": 100.0,
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
       },
-      "depth_by": "LS-V6 verifier (account 1)",
+      "depth_by": "AUD2-LS-G verifier (account 2)",
       "depth_date": "8 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: Meigs to Col. Holabird, New Orleans, 8 Apr 1864, forage to Pensacola by 1 May (N2-BL)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BL queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 2 book; the order it carries is reported in Meigs's telegram to Grant of the same afternoon, printed in the Official Records (ser. I vol. 32 pt 3 p.300) and the Papers of Ulysses S. Grant vol. 10; N2-BL's own wording was not located in print.",
+      "gap": "N2 (AUD2-LS-G, 8 Oct 2026): substance in OR I/32 pt 3 p.300 (Meigs to Grant, 8 Apr 1864, 3.30 PM) and Grant Papers vol. 10, N2-BL's wording not located in print; not counted; SO-ECKERT-N2BL withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.33, pointer 8925, N2-BL"
       ],
@@ -5968,23 +5972,24 @@
         "Huntington mssEC 19 p.33, pointer 8925, N2-BL"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "17/17 code words H",
       "unresolved_spans": "none",
       "reading_version": "LS-R6 8 Oct 2026 (reading-no2.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V6)' section 5",
       "depth_sentence": "Meigs tells Col. Holabird, chief quartermaster at New Orleans, to send a vessel loaded with forage to Pensacola to make sure of a supply there by 1 May, since forage sent from New York may be delayed by storms.",
-      "depth_check": "fresh rule-7 re-derivation (LS-V6)",
+      "depth_check": "fresh rule-7 re-derivation (LS-V6); external check (AUD2-LS-G): the code words read Colonel, Quarter Master, New Orleans, Forage, 1 and New York agree with Meigs's printed report to Grant (OR I/32 pt 3 p.300); image crop checked word for word (AUD2-LS-G)",
       "depth_note": "17/17 code words H"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V6)'"
+        "AUDIT.md '## AUDIT (LS-V6)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-G)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 100.0,
@@ -6000,7 +6005,7 @@
       "title": "Eckert 1864: Meigs to Ingalls, 27 July 1864, mules shipped and horse shipments stopped (N2-BM)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 2 book; no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BM queued",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-N2BM queued; second audit AUD2-LS-G 8 Oct 2026 held N3 (OR I/32 pt 3, 35 pt 2, 37 pt 2, 51 pt 1, Grant Papers vols 10-12, Butler, Dana, Sheridan, Heitman, press keyword pass). Ingalls's reply printed (OR I/40 pt 3 p.555).",
       "phrases": [
         "Huntington mssEC 19 p.127, pointer 9019, N2-BM"
       ],
@@ -6023,9 +6028,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS-V6)'"
+        "AUDIT.md '## AUDIT (LS-V6)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LS-G)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 100.0,
@@ -6041,7 +6047,7 @@
       "title": "Eckert 1864: to Capt. G. D. Wise, New York, 20 Apr 1864, transports for Butler's expedition (O9-AH)",
       "grade": "N3",
       "line": "Read at grade H with the War Department's older period vocabulary (mssEC 67); no prior decipherment or printed text located in the Official Records (ser. I and III by date and correspondent), the 1864 press through Chronicling America, Internet Archive full text, Google Books, OpenAlex, Semantic Scholar or CORE (searched 8 Oct 2026).",
-      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-O9AH queued",
+      "gap": "NARA RG 92/107, the press page by page, the senders' and recipients' memoirs and HathiTrust full text unread, JSTOR rows pending, so not N4; second audit not yet run; SO-ECKERT-O9AH queued; second audit AUD2-LS-G 8 Oct 2026 held N3 (OR I/32 pt 3, 35 pt 2, 37 pt 2, 51 pt 1, Grant Papers vols 10-12, Butler, Dana, Sheridan, Heitman, press keyword pass).",
       "phrases": [
         "Huntington mssEC 19 p.45, pointer 8937, O9-AH"
       ],

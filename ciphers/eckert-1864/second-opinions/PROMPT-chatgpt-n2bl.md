@@ -1,3 +1,5 @@
+WITHDRAWN 8 Oct 2026 (AUD2-LS-G): the order this telegram carries is printed in Meigs to Grant, 8 Apr 1864, 3.30 p.m., OR ser. I vol. 32 pt 3 p.300 (also Papers of U. S. Grant vol. 10); class N2. Not to be sent.
+
 SECOND OPINION REQUEST, label SO-ECKERT-N2BL
 
 We are an open cipher-research repository (github.com/NoAutopilot/cipher-lab). We have read one American Civil War
