@@ -833,14 +833,14 @@ User-Agent, no 403/429/challenge. No subagents.
 
 ## Remaining gaps (loose-ends pass, 8 Oct 2026)
 Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- the 10 Aug 1598 Van Aerssen key slip and decipherment pairs on scans 31/32 (NA 3.01.14 inv. 2016-2025), on disk, a different correspondence never read - blocker: not-attempted; noted in the body at NOTES.md:819, never carried as a step (loose-ends 8 Oct 2026); next: read the key slip and the decipherment pairs on scans 31/32 with two blind passes and build the syllabary table, beside a synthetic marked-number syllabary control of equal N and K; then test whether it fits no. 92, ~$4
+- a Brederode-side sibling cipher letter with a period gloss in NA 1.01.02 inv. 6016 (image order 261 on) - blocker: not-attempted; named by TX-KEYS and R9-OBRED4/R10-OBRED98 next step 1, never run (corrected by AERS-POOL, 8 Oct 2026: the loose-ends line here named the 10 Aug 1598 Van Aerssen slip, which R10-OBRED98 had already excluded for no. 92 by design on 6 Oct -- a French syllabary of marked one- and two-digit numbers cannot produce no. 92's unmarked three-digit Dutch groups; the live part of that find is the Van Aerssen pool, now ciphers/vanaerssen-1598-1609); next: 400 px contact sheets of inv. 6016 from image order 261, then 1400 px for any numeral page, ~$1.5
 
 ## Escalation (loose-ends pass, 8 Oct 2026)
 - [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] known-keys: read the key slip and the decipherment pairs on scans 31/32 with two blind passes and build the syllabary table, beside a synthetic marked-number syllabary control of equal N and K; then test whether it fits no. 92; ~$4; source: loose-ends 8 Oct
+- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98, 6 Oct 2026); the Buzanval syllabary inv. 2028 excluded likewise (R9-OBRED4 step 0); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3)
 - [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: read the key slip and the decipherment pairs on scans 31/32 with two blind passes and build the syllabary table, beside a synthetic marked-number syllabary control of equal N and K; then test whether it fits no. 92, ~$4
+Verdict: keep going: 1 internal gaps; cheapest next: 400 px contact sheets of NA 1.01.02 inv. 6016 from image order 261 for a glossed Brederode-side sibling, ~$1.5

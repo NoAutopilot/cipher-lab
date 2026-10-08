@@ -1,0 +1,29 @@
+inv	scan	date_on_scan	design	glossed_interlinear	gloss_sheet	rough_signs	source	note
+2016	7-8	(for 7 Jun 1598)	phrase-letter list	-	yes ('bij no 2')	-	R10-OBRED98 (ours, H, scan 7 on disk) + Bourdeau inventory	gloss sheet, not a letter
+2016	9-11	7 Jun 1598	syllabary marked 1-2 digit + phrase letters	none	yes (scans 7-8)	~600	Bourdeau inventory (not seen by this worker)	letter no 2; KNOWN via its gloss sheet (key source, not a target)
+2016	12-13	13 Jun 1598	syllabary + phrase letters	none	yes (scans 15-16)	~250	Bourdeau inventory	letter no 3; KNOWN via gloss sheet
+2016	15-16	(for 13/14 Jun 1598)	phrase-letter list	-	yes ('bij no 3', 'No 4')	-	R10-OBRED98 (scan 16 on disk) + Bourdeau	gloss sheet
+2016	18-19	14 Jun 1598	syllabary + phrase letters	none	yes (scan 16)	~300	Bourdeau inventory	letter no 4; KNOWN via gloss sheet
+2016	21-25	14 Jul 1598	syllabary	all (interlinear)	no	~150+~80	Bourdeau inventory	letter no 5 and continuation; KNOWN
+2016	30-32	10 Aug 1598	syllabary + phrase letters	all/part (interlinear) + slip	yes (slip 'bij no 6')	~330	R10-OBRED98 (ours, H, on disk)	letter no 6; KNOWN
+2016	43	Sept 1598	syllabary (numeral passages on thumbnail)	part?	?	?	R10-OBRED98 thumbnail	Haak no 234/235 (3 and 11 Sept 1598) print cipher decoded (p.474 n.: solution by griffier Aerssen attached)
+2016	46,61,63-64,80-81	24 Sep, 9 Oct, 30 Oct 1598	syllabary	interlinear (per Bourdeau tr_2016_interlinear.md)	?	?	Bourdeau inventory	9 Oct = Haak no 239 p.496-497, cipher printed decoded except 'au 3'
+2017	1	29 May 1599	isolated name code only (21 with cross, x2)	none	no	2	this worker, 1400 px	Haak no 265 p.537-538 printed ('Deze namen in cijferschrift')
+2017	8	19 Aug 1599	isolated name code only (25 with cross, ~3)	none	no	~3	this worker, 1000 px	not in Haak's list (15 Aug = no 268); 25+ = Villeroy per Haak p.604 (no 323)
+2017	2-14 rest	15 Aug, 19 Dec, 31 Dec 1599	none seen	-	-	0	this worker, 1000 px	clear French, names written out
+2018	1-3	31 Dec 1600	none seen	-	-	0	this worker, 1400 px (scan 1)	Haak no 294 printed
+2019	42-43	30 Apr 1601	syllabary (new 1601 series)	none	yes (list A 1-30, scans 46-47)	~420	Bourdeau inventory	KNOWN via list A
+2019	45,48	5 May 1601	syllabary	none	yes (list B 1-18)	~250	Bourdeau inventory	KNOWN via list B
+2019	50-51	11 May 1601	syllabary	all (dense interlinear)	no	~350	Bourdeau inventory	KNOWN; Bourdeau key witness
+2019	56-57	25 May 1601	syllabary	none	no	61-75	Bourdeau inventory	Bourdeau target aerssen1601, read in part (59/61 attested), 4 Oct 2026
+2019	61,66	2 Jun 1601	syllabary run + name codes	none	no	11-14	Bourdeau inventory	Bourdeau sibling, 9/11
+2019	62-63	28 May 1601	syllabary	all (interlinear)	no	~330	Bourdeau inventory	KNOWN; Bourdeau key witness
+2019	77	3 Jul 1601	syllabary? (after new chiffre of 23 Jun 1601)	partial?	?	~20	Bourdeau inventory (not seen by this worker)	not in Haak's list; residue candidate 1
+2019	87	5 Aug 1601	?	?	?	~20	Bourdeau inventory (not seen by this worker)	not in Haak's list; residue candidate 2
+2019	96, after 66	Jun-Dec 1601	isolated name codes (21+, 25+, 95, 10+)	no	no	1-5/page	Bourdeau inventory	95 unsolved in Haak p.605 n.4 (probably Buzanval)
+2020	1-230 (39 sampled)	1602	none seen	-	-	0	this worker, 400 px every 6th + scans 1 and 85 at 1400 px	clear French; Buzanval, Villeroy, Sully written out on scan 1
+2021	1-3	23 May 1605	none seen	-	-	0	this worker, 1400 px (scan 1)	clear
+2022	1-83 (14 sampled)	1606	none seen	-	-	0	this worker, 400 px every 6th + scan 1 at 1400 px	clear at thumbnail scale
+2023	1-3	4 Oct 1607	none seen	-	-	0	this worker, 400 px (scan 1)	clear at thumbnail scale
+2024	1-268 (34 sampled)	1608	none seen	-	-	0	this worker, 400 px every 8th + scan 17 at 1400 px	clear at thumbnail scale; isolated name codes would not show at 400 px
+2025	1-35 (12 sampled)	1609	none seen	-	-	0	this worker, 400 px every 3rd	clear at thumbnail scale
