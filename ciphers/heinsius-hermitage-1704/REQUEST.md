@@ -52,3 +52,7 @@ d'Alonne deciphered (edition Deel 10 no. 1066, 11 July 1710, footnote 1066.1; De
 says the "papier" l'Hermitage asks for is probably the key). The edition prints only the solutions; the originals carry the cipher groups
 beside a period decipherment, which is the comparison that shows whether his 1704 cipher (H.A. 946) and his later one share a key. Priority
 below 946 and 2317. More such letters may exist (NOTES.md, D2-HERM section, 83 unread candidate pages).
+
+### Update, 8 Oct 2026 (FAM-HERM; draft only, not sent)
+
+Reading the 26 formula pages in Deel 10-19 with D2-HERM gives 20 deciphered l'Hermitage letters, 1710-1716 (`deciphered_letters.tsv`). Add beside 946, 1034 and 2317, earliest first: **H.A. 1536** (Jul-Dec 1710: edition nos. 1066, 372, 535, 788), **H.A. 1636** (1711: nos. 904, 687, 698), **H.A. 1726** (1712: nos. 443, 236), then H.A. 1808 (1713), 1867 (1714, already listed), 1925 (1715), 1970 (1716). The edition's printed H.A. number for no. 540 (17 May 1712) reads 2230 in OCR; check before citing. If only one extra volume is ordered, 1536.
