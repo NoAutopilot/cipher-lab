@@ -1509,3 +1509,59 @@ Read so far: 0 of 229 cipher tokens graded H/C/S (no reading exists; homophonic 
 - [x] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells remain
 - [ ] retry: homophonic re-run done at 0.055/0.084 (LAG-HOM: control gates, judge lacks power); next is a different verdict statistic, not another family run
 Verdict: keep going: 3 internal gaps; cheapest next: pre-registered score-gap gate on the homophonic/masc decode at N=229, ~$2
+
+## LAG-GAP: pre-registered score-gap gate on the homophonic/masc decode at N=229 (8 Oct 2026, account 2, LANE FAMILY-A2c, Opus, CPU only)
+
+**Job:** LAG-HOM's named next step (the spec judge FAILs 8 of 9 gated control decodes, so it cannot judge the decode). No
+network beyond git, no vision, no subagents. Prior work: `tools/prior_work.py la-garde-1577 --item-spec 'shelfmark=KHA A
+11/XIV C/M-12;date=1577-11-28;sender=La Garde;recipient=Willem van Oranje' --step-type decode --fetch` -> **exit 4**: LEAD
+1-own (this job's own 23:03 ROOM claim; recorded CLEAR in `prior-work.tsv`), LOOK 2-leaf, UNCHECKED 3-tomokiyo, 3-solver,
+4-editions, UNCHECKED-NET 3-solver. Check 1 by hand: no score-gap row in HYPOTHESES.md, so the step had not been done. Checks
+2-4 are about plaintext prior reading and stay **unchecked**: this job claims no reading (same position as LAG-HOM; gap below).
+
+**Pre-registration:** `PREREG-LAG-GAP.md` (commit 5f9646992, pushed 23:04 UTC before any score was computed). Statistic: the
+homophonic solver's own best score (restarts 8, one solve per text). Target T (solver seed 1) vs (a) 40 matched controls
+(`profile=target`, noise 0.055 and 0.084, seeds 1-20 each) and (b) 40 shuffled targets (family_run `--shuffle-target`
+convention, seeds 1-40). PASS iff T > p95(b) and T >= p05(a). Power check: 10 held-out controls (noise 0.055, seeds 101-110),
+each against p95 of 20 shuffles of its own ciphertext and p05(a); power PASS iff >= 80% of those with recovery >= 0.60 pass.
+
+**Script:** `families/lag_gap.py` (291 solves, 4 processes, 11 min); every score in `families/lag_gap.tsv`; `--report`
+re-prints the read-out from the TSV; `--check` re-runs and diffs (exit code pasted below).
+
+| Set | n | Scores |
+|---|---|---|
+| Target T | 1 | **-572.867** (same decode as LAG-HOM / A2-LAG3) |
+| (a) controls, noise 0.055 | 20 | -565.176 .. -480.089 |
+| (a) controls, noise 0.084 | 20 | -574.007 .. -494.351 |
+| (a) pooled | 40 | p05 **-567.917**; T at the 2.5th percentile |
+| (b) shuffled targets | 40 | -588.626 .. -567.927; p95 **-570.559**; T at the 82.5th percentile |
+| Power: held-out controls (rec >= 0.60) | 8 | **8 of 8 pass** (scores -545.6 .. -456.6 vs own-shuffle p95 -581 .. -568) |
+| Power: held-out controls (rec < 0.60) | 2 | seed 102 (0.576) passes, seed 107 (0.568, -570.314 vs own-shuffle max -570.362) fails; not counted |
+| Gate false-positive on shuffled targets (leave-one-out, descriptive) | 40 | 0 of 40 |
+
+**Read-out (fixed in the prereg):** power **PASS** (8/8), target **FAIL** on both legs (T -572.867 is below the shuffled-target
+p95 -570.559 -- 7 of 40 shuffled targets score higher -- and below the control p05 -567.917). This is a **control-backed
+negative for `homophonic` (K=26, profile=target) and for `masc`, which shares the decode byte-for-byte, on the base codes at
+N=229 at the measured error 0.055 and its 0.084 bracket** (rule 3). It does not exclude other designs: running key (R15-LAGMI's
+Z_MI preferred homophonic over running key, RK-nl margin thin), a nomenclator or code layer, or homophony with a different
+symbol-to-letter profile than `profile=target`. Grades: 0 cipher tokens read (H 0, C 0, S 0, M 0, I 0); no reading. Status
+unchanged (`open`). Nothing for a verifier.
+
+Requests: none (git only). Vision: 0. Files: `PREREG-LAG-GAP.md`, `families/lag_gap.py`, `families/lag_gap.tsv`, one
+HYPOTHESES.md row, `prior-work.tsv`, this section.
+
+## Remaining gaps (LAG-GAP, 8 Oct 2026)
+Read so far: 0 of 229 cipher tokens graded H/C/S (no reading exists; homophonic/masc excluded at N=229 by the LAG-GAP score-gap gate, power 8/8)
+- running-key (and code-layer) family on the base codes - blocker: not-attempted; homophonic/masc now control-backed negatives, running key is the remaining aperiodic design R15-LAGMI could not exclude; next: `tools/family_run.py --family running_key` at 0.055/0.084 with the matched control first, then the same score-gap gate if the control gates, ~$2
+- two M-grade, not image-settled `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: not-attempted; witness reads 18, committed 10; next: crop check from images/06179_p2.png, ~$1.5
+- plaintext prior-work rows (leaf gloss LOOK, Tomokiyo, solver caches, Gachard window) - blocker: not-attempted; prior_work.py exit 4 again on 8 Oct 2026 (LAG-GAP), owed before any decode is called a reading; next: `prior_work.py --fetch` then `--record`, ~$1
+
+## Escalation (LAG-GAP, 8 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells remain
+- [ ] retry: homophonic/masc closed by the LAG-GAP score-gap gate (power PASS, target FAIL); next is a different family (running key), not another homophonic run
+Verdict: keep going: 3 internal gaps; cheapest next: running_key family_run with matched control at 0.055/0.084 plus the LAG-GAP score-gap gate, ~$2
