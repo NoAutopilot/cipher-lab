@@ -1,4 +1,4 @@
-# PREREG-BERGH-STRIP (LANE FAMILY, account 2, 8 Oct 2026, written 22:3x UTC by `date -u`, pushed before any strip is read)
+# PREREG-BERGH-STRIP (LANE FAMILY, account 2, 8 Oct 2026, written 22:2x UTC by `date -u`, pushed before any strip is read)
 
 Question: do box-numbered strip reads give each GLY-11106 atlas box (atlas/signs.tsv) the right sign, where the width/position
 alignment (atlas/map_tx.py -> atlas/boxmap.tsv) gave 5/19 right on GLY-11106's eye-checked contact sheet
