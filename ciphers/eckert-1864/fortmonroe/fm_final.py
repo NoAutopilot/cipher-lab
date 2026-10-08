@@ -26,11 +26,11 @@ def main():
             v = []
             if r["ia_print"]: v.append("print-likely")
             if r["hunt_best"] in ("y", "y+copy", "copy"): v.append("clear-sibling")
-            fv = "+".join(v) if v else ("clean" if r["net"] == "ia+hdl" else "clean-offline" if not r["net"] else "clean-" + r["net"].strip("+"))
+            fv = "+".join(v) if v else ("clean" if "hdl" in r["net"] else "clean-offline")
         r["final_verdict"] = fv; out.append(r)
     with open(os.path.join(HERE, "prefilter-fm-final.tsv"), "w") as f:
-        f.write("# FM-PRE (8 Oct 2026): prefilter-fm.tsv + network checks (fm_final.py). final_verdict clean = offline clean AND be-api phrase and Huntington full text both run and silent; "
-                "clean-offline / clean-ia / clean-hdl = a network check not run for that row (budget or < 40 words). A ranking, not a verdict.\n")
+        f.write("# FM-PRE (8 Oct 2026): prefilter-fm.tsv + network checks (fm_final.py). final_verdict clean = offline clean AND the Huntington full-text check run and silent (the be-api phrase layer failed its own control, 1 of 7, and was stopped after 30 rows; a hit there still counts); "
+                "clean-offline = the Huntington check not run for that row (< 40 words). A ranking, not a verdict.\n")
         f.write("\t".join(cols) + "\n")
         for r in out: f.write("\t".join(str(r.get(c, "")).replace("\t", " ") for c in cols) + "\n")
     book = {"1": 0, "9": 1, "2": 2}

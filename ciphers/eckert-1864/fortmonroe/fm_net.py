@@ -15,7 +15,7 @@ COLS = ["pointer", "entry", "phrase", "ia_result", "ia_print", "hunt_terms", "hu
 
 def load_out():
     if not os.path.exists(OUT): return {}
-    return {(r["pointer"], r["entry"]): r for r in csv.DictReader(open(OUT), delimiter="\t")}
+    return {(r["pointer"], r["entry"]): r for r in csv.DictReader((l for l in open(OUT) if not l.startswith("#")), delimiter="\t")}
 
 def save(d):
     with open(OUT, "w") as f:
@@ -27,16 +27,20 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--scratch", required=True); ap.add_argument("--phase", choices=["ia", "hdl"], required=True)
     ap.add_argument("--budget", type=int, default=215); ap.add_argument("--min-words", type=int, default=40); ap.add_argument("--offline", action="store_true")
+    ap.add_argument("--only", help="comma list pointer/entry (the known-answer control rows of fm_control.py); output net-fm-<phase>-control.tsv, no clean-row filter")
     a = ap.parse_args(argv)
     global OUT
-    OUT = os.path.join(HERE, "net-fm-%s.tsv" % a.phase)
+    OUT = os.path.join(HERE, "net-fm-%s%s.tsv" % (a.phase, "-control" if a.only else ""))
     pl.NEWVOLS = {k: v for k, v in fp.VOLS.items() if os.path.exists(os.path.join(a.scratch, "or", k + ".txt"))}
     pl.CACHE = os.path.join(fp.ROOT, "sources", "ia-fulltext", "print-check", "fm"); os.makedirs(pl.CACHE, exist_ok=True)
     codes, fm = fe.build()
     freq, cov, wc = pl.scan_new(fm, codes, a.scratch, os.path.join(pl.CACHE, "scan_fm.json"))
     pre = {(r["pointer"], r["entry"]): r for r in csv.DictReader((l for l in open(os.path.join(HERE, "prefilter-fm.tsv")) if not l.startswith("#")), delimiter="\t")}
     todo = [e for e in fm if pre[(str(e["pointer"]), str(e["entry_on_page"]))]["verdict"] == "clean" and e["words"] >= a.min_words]
-    print("clean rows >= %d words: %d" % (a.min_words, len(todo)), file=sys.stderr)
+    if a.only:
+        want = {tuple(x.split("/")) for x in a.only.split(",")}
+        todo = [e for e in fm if (str(e["pointer"]), str(e["entry_on_page"])) in want]
+    print("rows: %d" % len(todo), file=sys.stderr)
     out = load_out()
     net = pl.Net(a.offline, a.budget if a.phase == "hdl" else 0, a.budget if a.phase == "ia" else 0)
     net.countfile = os.path.join(pl.CACHE, "requests_%s.json" % a.phase); net.prior = json.load(open(net.countfile)) if os.path.exists(net.countfile) else {}

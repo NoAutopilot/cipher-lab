@@ -30,6 +30,7 @@ pointer	entry	phrase	ia_result	ia_print	hunt_terms	hunt_hits	hunt_best
 5609	2				client lent	none	none
 5610	0				eggs sheldon	9704@10074:u:cov3:full0.09 9709@10074:y+copy:cov13:full0.80 5607@5952:u:cov3:full0.09 5612@5952:u:cov3:full0.09 8934@9302:u:cov3:full0.07	y+copy
 5610	1				windy investigating	none	none
+5612	0				propel geese	8934@9302:y:cov10:full0.22	y
 5616	0				flower tempest	9713@10074:y+copy:cov13:full0.72 4547@4849:u:cov3:full0.05	y+copy
 5616	1				cant biggs	none	none
 5624	0				begs breeze	none	none
@@ -136,8 +137,10 @@ pointer	entry	phrase	ia_result	ia_print	hunt_terms	hunt_hits	hunt_best
 5788	2				oiled beckwith	none	none
 5789	1				sirs risking	none	none
 5790	0				deliver eckert	none	none
+5794	1				languages sorry	none	none
 5796	0				handles carpenters	none	none
 5797	0				taylors weighing	none	none
+5797	1				piloting pause	none	none
 5798	2				tallapoosa montauk	none	none
 5799	1				schoon maker	none	none
 5801	0				varina sheldon	5883@5952:u:cov3:full0.04	u
@@ -210,3 +213,61 @@ pointer	entry	phrase	ia_result	ia_print	hunt_terms	hunt_hits	hunt_best
 5869	1				rambling ditto	none	none
 5870	0				galls ariel	5866@5952:u:cov3:full0.14	u
 5871	0				jars toby	none	none
+5871	1				ditto ariel	5866@5952:u:cov3:full0.10 5870@5952:u:cov3:full0.10	u
+5873	1				oriental nada	none	none
+5877	0				ditto stir	5866@5952:u:cov3:full0.08 5885@5952:u:cov3:full0.06	u
+5877	1				varuna roses	none	none
+5877	2				thames ditto	none	none
+5878	1				beckwith sheldon	4575@4849:u:cov3:full0.02 5780@5952:u:cov3:full0.04 5789@5952:u:cov3:full0.04 4588@4849:u:cov3:full0.01 9276@9302:u:cov3:full0.03 5803@5952:u:cov6:full0.04 9727@10074:u:cov3:full0.02 5804@5952:u:cov3:full0.02 5805@5952:u:cov6:full0.07 5806@5952:u:cov6:full0.04 5810@5952:u:cov6:full0.05	u
+5879	0				rambling stunning	none	none
+5883	0				varina sheldon	5801@5952:u:cov3:full0.05	u
+5885	0				ditto ranger	none	none
+5885	1				wich phlox	none	none
+5886	0				sheldon eckert	none	none
+5887	0				otter stromboli	none	none
+5887	1				ditto berrien	none	none
+5888	0				saugus sheldon	5813@5952:u:cov3:full0.03 5814@5952:u:cov3:full0.03 5824@5952:u:cov3:full0.03 5827@5952:u:cov3:full0.03 5838@5952:u:cov3:full0.05 5887@5952:u:cov3:full0.05 5634@5952:u:cov3:full0.05 9917@10074:u:cov3:full0.02 9944@10074:y+copy:cov24:full0.62	y+copy
+5888	1				toby stair	none	none
+5888	2				ditto lesson	none	none
+5889	2				sheldon boyd	none	none
+5890	2				faster senator	none	none
+5891	1				forgetting missed	none	none
+5895	2				annie sheldon	none	none
+5896	2				mack bayou	none	none
+5897	0				blodget ditto	none	none
+5898	1				sheldon exclusive	8920@9302:u:cov3:full0.03 9953@10074:u:cov3:full0.31	u
+5899	0				ditto dumbarton	none	none
+5902	1				ditto vogdes	none	none
+5902	2				sheldon quietly	9279@9302:u:cov3:full0.03 5647@5952:u:cov3:full0.07	u
+5904	1				kisses ditto	none	none
+5905	0				rambling sheldon	none	none
+5907	1				sheaf owes	none	none
+5908	0				owes comma		
+5912	1				resp tours	none	none
+5914	1				burne wicks	none	none
+5915	0				sheaf ditto	none	none
+5915	1				shun piloting	none	none
+5917	1				rascal gore	none	none
+5918	0				insertion vest	none	none
+5918	1				beckwith sheldon	5803@5952:u:cov3:full0.04 5804@5952:u:cov3:full0.04 5805@5952:u:cov3:full0.09 5806@5952:u:cov3:full0.04	u
+5919	1				beckwith sheldon	5803@5952:u:cov3:full0.03 5804@5952:u:cov3:full0.03 5805@5952:u:cov3:full0.06 5806@5952:u:cov3:full0.03	u
+5919	2				sheldon sumner	none	none
+5920	1				beckwith sheldon	5803@5952:u:cov3:full0.04 5804@5952:u:cov3:full0.04 5805@5952:u:cov3:full0.07 5806@5952:u:cov3:full0.04	u
+5922	1				sheaf ditto	5923@5952:y+copy:cov28:full0.60	y+copy
+5923	1				relays inure	none	none
+5924	0				toby instigation	none	none
+5924	1				canoe beckwith	5816@5952:u:cov3:full0.07	u
+5929	0				montauk mahopac	7818@8066:y:cov13:full0.25	y
+5929	1				beckwith convoy	none	none
+5929	2				ditto champion	none	none
+5930	1				montauk sheldon	none	none
+5931	0				sheldon tonight	9709@10074:u:cov3:full0.05 5787@5952:u:cov3:full0.05 5801@5952:u:cov3:full0.05 5805@5952:u:cov3:full0.05 4210@4435:u:cov3:full0.02 5806@5952:u:cov3:full0.05 5811@5952:u:cov3:full0.06 4238@4435:u:cov3:full0.02	u
+5931	1				gordons summers	none	none
+5933	0				dqrs spoons	none	none
+5933	2				prefers pending	none	none
+5936	0				shun sinclair	none	none
+5937	1				infallible unimpeded	5938@5952:y:cov76:full0.45	y
+5939	1				roderick stepping	8659@8886:y:cov8:full0.31	y
+5941	1				russia illustrate	none	none
+5942	2				inure foray	9211@9302:y+copy:cov88:full0.68	y+copy
+5943	1				geese hampered	none	none

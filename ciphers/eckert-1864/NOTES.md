@@ -1984,3 +1984,98 @@ Read so far: of the 12 rows, 8 filed (E103-E108, N2-DA, N2-DB), 4 step-0 stops (
 - [x] image-check: all 12 pages read against the volunteer text; 9090 corrected from a crop.
 - [x] retry: slow be-api calls were not repeated beyond one pass.
 Verdict: keep going: 3 internal gaps; cheapest next: the verifier phrase search with local OR grep for E103, E104, N2-DB, ~$0.6 per entry
+
+## FM-PRE (8 Oct 2026, account 1, for LANE LEDGER)
+
+A pre-filter of Huntington object 5952, a ranking with stated error rates, not a verdict and not a reading (rule 10); nothing was decoded.
+Every verdict below is conditional on the Huntington volunteer transcription (rule 2): no page image was opened. Intake gate for eckert-1864:
+`partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (pasted in the brief, 17:4x UTC). Scripts and tables in
+`fortmonroe/` (`fm_entries.py`, `fm_prefilter.py`, `fm_control.py`, `fm_net.py`, `fm_final.py`; outputs `entries-fm.tsv`, `prefilter-fm.tsv`,
+`prefilter-fm-final.tsv`, `clean-fm.tsv`, `fm_control.txt`); page text in `sources/fortmonroe/p<pointer>.json` (411 files, 1.7 MB); small response caches in
+`sources/ia-fulltext/print-check/fm/`. The segmenter is `entries_mssEC19.py` with three new options (`--pages-dir`, `--prefix`, `--titled-pages`; the default mode
+re-ran byte for byte against the HEAD version on all 15 columns, 893 rows, 0 differing).
+
+**Prior-work checks (one line each, before the first priced step; `tools/prior_work.py` does not exist, the checklist was run by hand, civil-war adapter).**
+1. Our own work (offline, 8 Oct 17:5x UTC, `git fetch` first): grep "5952", "mssEC 25", "Fort Monroe", "Monroe" in eckert-1862/1864 NOTES and AUDIT, ROOM.md, QUEUE.md,
+   N4-READINGS.md, PRIOR-WORK-SURVIVORS: no read block (ciphertext*.txt) with a pointer in 5541-5951 and no live ROOM claim on the ledger. It was used twice as a
+   *clear second copy*, never as a target: mssEC 25 p.77 and p.79 (pointers 5621 and 5623) are the second ledger copies of E4 and E5 (NOTES line 222-229, N4-READINGS);
+   PF4 (E83 control) found its hit 5811 in "mssEC 25 (the Fort Monroe ledger)". Result: object 5952 = mssEC 25, unread, not claimed.
+2. Holder record (dmGetItemInfo 5952 and dmGetCompoundObjectInfo 5952, 8 Oct): callid mssEC 25, "Fort Monroe Va., Ciphers Received and Sent, February 3d 1864 to
+   April 6th 1865", 400 + 6 pages, 411 page objects (pointers 5541-5951), "Approximately 840 telegrams, 7 of which have been partially or completely crossed out",
+   transcription "provided by the volunteers of Decoding the Civil War (2016-2017)", catlink b1801980. The catalogue record itself
+   (catalog.huntington.org/record=b1801980, one request): status "RARE - PAGE AEON"; "Series two includes four volumes of telegrams sent and received from the Army of
+   the Potomac and Fort Monroe (1862-1865)"; "Approximately 40% of the content was published, after recipient copies, in the Official Records"; "Recipient copies of
+   telegrams are at the National Archives (RG 107 301636 and 301638)" (not reachable from here). The filter flags 412 of 809 (51%), the same order as the holder's 40%.
+3. Sender-family edition: Butler's *Private and Official Correspondence* on IA: vol. III `privateoffice03butlrich` (to Feb 1864), vol. IV `privateoffice04butlrich`
+   (Mar-Aug 1864), vol. V `privateoffice05butlrich` (Aug 1864-1865), full text scanned (the other IA copies of the set were listed, not used). Positive control: entry 5656/0
+   (Sheldon, 5-6 May 1864, 357 words, two telegrams run together by the segmenter) covers 90 plain tokens in vol. IV: it contains Butler's own 5 May dispatch "We have
+   seized Wilson's Wharf ... a hazardous service in face of the enemy ... benj f butler" which vol. IV prints (token-window check, text compared by eye).
+4. Standard editions (IA `_djvu.txt`, one request each, fetched to scratch, not committed): OR I vols 33, 36 pts 1-3, 40 pts 1-3, 42 pts 1-3, 43 pts 1-2, 44, 45 pts 1-2,
+   46 pts 1-3, 51 pts 1-2 (`warofrebellion<vol><part>unit`); OR II/6, 7, 8 (`warofrebellion0206rootrich`, `0207`, `0208`, titles read: "SERIES II--VOLUME VI/VII/VIII");
+   OR III/4, III/5 (`cu31924079575373`, `cu31924079575381`); ORN I/9, I/10, I/11 (`officialrecordso0009unse`, `0010`, `0011`). NOT scanned: ORN I/12 (HTTP 500 twice, the
+   one permitted retry spent; outside the brief's list, which stops at ORN I/11), OR I vols 37-39, 41, 47-50, 52-53 (Fort Monroe traffic of 1864-65 is rare there;
+   untested), the press of the day, Basler/Lincoln, NARA RG 107 recipient copies. Request counts: hdl.huntington.org 249 (5 harvest, 242 full-text, 2 control; limit 250),
+   archive.org downloads 33 (32 returned text, ORN I/12 failed twice) plus 4 advancedsearch calls, be-api 29, catalog.huntington.org 1, no other host.
+
+**Harvest (hdl token held 17:58-18:11 UTC; ROOM lines take/release).** One `dmQuery` with the term "Monroe", `title!find!transc`, 1024 records a page, 3 pages
+(2139 collection hits) returned the transcription of all 411 pages of object 5952 (`parentobject` 5952): 5 requests, not 411. 401 pages carry text (421,004 characters).
+
+**Entries (`entries-fm.tsv`, 809).** Segmented with the mssEC 19 segmenter (a page-top run-on without a header is joined to the last entry of the previous page: 86
+joins); 11 entries carry no parseable date (cover pages and run-ons whose head is on a page not adjacent). Direction by the header's place: 448 sent (header "Ft Monroe"),
+350 received, 11 unknown. Dated entries per month (Feb 1864 -> Apr 1865): 45, 29, 110, 149, 82, 21, 10, 7, 29, 31, 75 (Dec), then 109, 47, 52, 2; 588 in 1864, 210 in 1865. The catalogue's
+"about 840" against 809 segmented: the difference is mostly telegrams the segmenter ran together (5656/0 holds two; header lines missing a month or a day), not missing pages.
+Limits stated: a header the transcriber wrote without a month is undated; "dated" uses the carried year; the ledger carries no "No. N" label on any header (0 of 809).
+
+**Known-answer control, run before the verdicts (rule 3), `fm_control.txt`.** Seven ledger entries found in print independently of the filter -- located from the printed side
+(signature lines "G. D. SHELDON" with a "Fort Monroe" dateline in OR I/36 pts 2-3, then matched to the ledger by date and by reading both texts): 5652/0 (OR I/36-2,
+6 May 1864), 5706/1, 5708/2, 5709/2 (OR I/36-3, 28 May), 5716/1 (29 May), 5722/1 (31 May), 5739/1 (11 June). **The offline cover flags 7 of 7** (cover 8-46 against the line of 7;
+no fix needed). Caveat: all seven are plain-heavy Sheldon telegrams of the telegraph-building weeks, so this bounds recall from above for coded-heavy entries (PF4's miss was
+bodies clear in their own transcription, here the `own` check). Null: every entry's tokens shuffled (seed 20261008) gives cover >= 7 on **0 of 809** (max 6; 0 of 480 at >= 60
+words, where 311 of the real ones reach 7): a flag is not length noise. Cipher-copy check (same telegram in mssEC 19 or elsewhere in this ledger): E4 and E5 are known second
+copies at 5621/1 and 5623/1: flagged against mssEC 19 8941/1 and 8941/2 (shares 0.53 and 0.83), 2 of 2. Network layers: the **be-api phrase layer fails its control, 1 of 7**
+(`net-fm-ia-control.tsv`; six phrases of four "plain" words are mostly code words that read as English, so the phrase is not in the printed text) and was stopped after 30
+rows (0 flagged); the layer is retired for this ledger and the clean verdict does not rest on it (untested-by-this-tool, not refuted); the Huntington full-text layer found the
+E4 copy (8941@9302, y+copy) and missed the E5 copy (the 20-record cap put 8 unrelated "u" hits ahead of it): 1 of 2, so a clean row is a row that nothing found, not a row
+nothing holds. Which check missed on the one control that missed: the phrase choice (rarest four plain words) -- one fix was considered and not built, since any phrase
+common enough to survive the clerk's substitutions returns hundreds of hits (more than the 20-item rule can use).
+
+**Results (`prefilter-fm-final.tsv`; labels overlap).** 809 entries: flagged 495, **clean 239** (>= 40 words, Huntington check run and silent), clean-offline 75 (< 40 words, not
+sent to the network), (of the 495 flagged, 3 also carry the label short). By label: print-likely 412 (cover >= 7: OR I/36-3 64, OR I/33 56, OR I/46-2 53, Butler vol. IV 41, OR I/42-3 26, OR I/43-1 25,
+ORN I/11 21, OR I/36-2 18, and 108 spread over the other volumes), clear-sibling 77 (39 entries clear in their own transcription; 30 with a Huntington hit sharing >= 7 plain 3-gram tokens, 13 of them also
+>= 0.5 of all 3-grams, the hits' parents being this ledger 10, mssEC 18 10, mssEC 11 4, mssEC 10 3, mssEC 19 3, mssEC 12 2, mssEC 13 1; 8 flagged only by a clear same-date neighbour in `dups`), mssEC19-dup 35 (a cipher copy of an mssEC 19 entry, 13 of
+them an entry already read: filed IDs in `dups`), mssEC18-dup 6, FM-internal dup 6. A bare "same date and >= 3 shared rare plain tokens" (227 pairs within this ledger) is
+recorded in `dups` as a near-neighbour and does not exclude a row (same-day traffic on one subject). 1864: 381 flagged, 158 clean, 49 short-clean; 1865: 103, 81, 26.
+**Clean rows by book guess (Naive Bayes trained on the read mssEC 19 entries; a ranking only): No. 1 208, old vocabulary "9" 26, No. 2 5; 153 sent, 86 received; median 65 words;
+132 have >= 60 words.** `clean-fm.tsv` orders them for a reader: book, lowest print cover first, longest first. PF4 and LS-PRE history says about half of such rows are
+in print once decoded (the decoded-text phrase pass is the filter that works), so budget the readers for roughly 100-120 survivors of 239, not 239.
+
+**Does the ledger switch book in 1865 (No. 3 of 25 Dec 1864, No. 4 of 23 Mar 1865, neither in hand)?** No change is visible, but the instrument is weak. The No. 1 period words
+(Unity, Zodiac, Zebra) run 2.8-3.8 per 100 tokens from March 1864 to the last entries (3.68 over the 12 entries, 1,630 tokens, from 23 Mar 1865), with no step at 25 Dec 1864 or at 23 Mar
+1865; the share of non-function tokens in the No. 1 columns of key.md stays 0.31-0.38 per fortnight from Nov 1864 to the end (0.40 on the 1-2 Apr entries of 119 and 241 words); the
+No. 1 signature words (Walrus, Webster, Youth, Yoke) run 0.7-1.4. The comma pair Pedlar/Pekin falls gradually from 1.2-1.5 (Nov 1864) to 0.1-0.3 (Feb-Mar 1865): a drift, not a step.
+The No. 2 share tracks the No. 1 share (0.30-0.34), the non-selectivity LS3-K logged, so the token share cannot rule a second book in; what it does say is that nothing in
+this ledger drops the No. 1 punctuation layer through 2 Apr 1865. **Date of a switch: none found before 6 Apr 1865 (the last entry); untestable by shares, decided only by a test
+read of two 1865 clean rows with key.md.**
+
+**What FM-PRE did not do:** no entry was read, no image opened, no novelty class given (rule 10); the 75 short clean rows and the 11 undated entries were not examined further; the
+dates in the TSVs are the volunteers' (a slip would move an entry out of the +-3-day window of the mssEC 19 comparison); `fm_final.py` keeps the be-api columns for the 30
+rows that ran.
+
+## Remaining gaps (FM-PRE, 8 Oct 2026)
+Read so far: 0 of 809 entries of the Fort Monroe ledger (object 5952 = mssEC 25) read; pre-filter only (239 clean rows >= 40 words, 75 short, 495 flagged in print, clear or a copy).
+- 239 clean rows of `clean-fm.tsv` (208 Cipher No. 1, 26 old vocabulary, 5 No. 2) - blocker: not-attempted; the readers' step 0 (own transcription, Grant Papers/Basler query) and the decoded-text phrase pass are still to run; next: Sonnet readers on the first 36 rows of `clean-fm.tsv` in three batches of 12, ~$0.55 per entry
+- 1865 rows (81 clean) - blocker: not-attempted; whether No. 1 reads them is not established (the token share is non-selective, Nos. 3 and 4 are not in hand); next: test-read the first two 1865 rows of `clean-fm.tsv` with key.md before any 1865 batch, ~$1.1
+- 75 clean-offline rows (< 40 words) and 11 undated entries - blocker: not-attempted; below the line where the network layers were run; next: leave until the 239 are worked
+- ORN I/12, OR I vols 37-39, 41, 47-50, 52-53, the press of the day and Basler/Lincoln for the 239 rows - blocker: not-attempted; ORN I/12 answered HTTP 500 twice on 8 Oct and the others are outside the brief's list; next: the readers' decoded-text phrase pass covers them, ~$0.1 per entry
+- NARA RG 107 recipient copies (301636, 301638) - blocker: needs-physical-access; no route from the cloud (catalog.huntington.org record b1801980 names them), so print in the recipient copies stays unchecked for every clean row
+- be-api phrase layer before reading - blocker: too-short; the plain residue of a coded entry is mostly code words, the layer failed its control (1 of 7) and is retired for this ledger [retired: be-api quoted-phrase search]; a different instrument (the decoded-text phrase pass after reading) is the readers' step
+
+## Escalation (FM-PRE, 8 Oct 2026)
+- [x] siblings: this ledger's neighbouring pages, mssEC 19 and mssEC 18 entries within +-3 days (cipher-copy and rare-token tests), 271 Huntington full-text queries across the collection.
+- [n/a] clear-pages: no decoding in this job; 39 entries clear in their own transcription are flagged `clear`, not read.
+- [n/a] known-keys: nothing decoded; the book guess is a Bayes ranking only.
+- [x] print: OR I/II/III and ORN volumes listed in prior-work check 4 and Butler's Correspondence vols III-V scanned by rare-3-gram cover (7 of 7 known answers, 0 of 809 shuffled); ORN I/12, Basler, the press and NARA not.
+- [n/a] key-rebuild: no key row touched.
+- [ ] image-check: every verdict rests on the volunteer transcription; no page image was opened (rule 2); the readers open the images.
+- [x] retry: ORN I/12 download retried once (500 twice, host not hammered); no other retry needed.
+Verdict: keep going: 4 internal gaps; cheapest next: three Sonnet readers on the first 36 rows of `clean-fm.tsv` (Cipher No. 1, 1864 first), step 0 and the decoded-text phrase pass, ~$0.55 per entry (~$20)

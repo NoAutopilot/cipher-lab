@@ -1,0 +1,4 @@
+# FM-PRE (8 Oct 2026): network checks on the clean rows (fm_net.py); hunt hit = pointer@parentobject:label:cover:share-of-3-grams; a ranking, not a verdict.
+pointer	entry	phrase	ia_result	ia_print	hunt_terms	hunt_hits	hunt_best
+5621	1				camels youths	8941@9302:y+copy:cov31:full0.54	y+copy
+5623	1				whips sheldon	4231@4435:u:cov3:full0.02 4237@4435:u:cov3:full0.02 5617@5952:u:cov3:full0.05 4284@4435:u:cov3:full0.02 5635@5952:u:cov3:full0.05 5899@5952:u:cov3:full0.05 5647@5952:u:cov3:full0.05 9437@9660:u:cov3:full0.02	u
