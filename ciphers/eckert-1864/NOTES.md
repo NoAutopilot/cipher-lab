@@ -956,9 +956,7 @@ it was not found; novelty is a verifier's (rule 10): batch flagged for LS-V1.
 ## ST-LEDGER parked entries (8 Oct 2026 00:2x UTC, LANE ST-LEDGER, account 1)
 The seven priority-1 entries assigned as E30-E36 (pointers/page/entry 9051/159/1, 9051/159/2, 9054/162/1, 9055/163/0, 9056/164/0,
 9057/165/3, 9060/168/1; McCaine in the Shenandoah Valley, Aug 1864) were given to two solver sessions (LS-R2, LS-R2b, 7 Oct 2026); both
-ended without a commit, so nothing of them is on origin and the IDs E30-E36 are unused. They are still unread; next: one solver session
-on them with the LS-R1 method, ~$8, and the reason the two sessions stopped looked at first (session records show only "decode handed
-off" / a refused tool call).
+ended without a commit, so nothing of them is on origin and the IDs E30-E36 are unused. They were read on 8 Oct 2026 as E30-E36: see "## LS-R2c (8 Oct 2026, account 1, for LANE ST-LEDGER-2)" below.
 
 ## LS-R3 (8 Oct 2026, account 1, for LANE ST-LEDGER)
 
@@ -1059,3 +1057,46 @@ Requests: hdl.huntington.org 8 (IIIF images, all 200; the volunteer text came fr
 (djvu I/33, I/36 pt 3, I/37 pt 1, I/39 pt 3, I/40 pt 2, I/42 pt 2, I/43 pt 2, I/44, I/45 pt 1; all 200); be-api.us.archive.org 7
 (fts; one 502, retried once, 200); www.googleapis.com 15 (Books API with key and country=US, all 200). Report what was found and where
 it was not found; novelty is a verifier's (rule 10): batch flagged for LS-V4.
+
+## LS-R2c (8 Oct 2026, account 1, for LANE ST-LEDGER-2)
+
+The seven parked priority-1 entries (McCaine in the Shenandoah Valley, Aug 1864; `entries-mssEC19.tsv` rows 9051/159/1, 9051/159/2, 9054/162/1,
+9055/163/0, 9056/164/0, 9057/165/3, 9060/168/1) read with key.md (Cipher No. 1) as E30-E36 in ciphertext.txt. All seven are Cipher No. 1 and
+key.md reads every code-word token, so key-no2.md and key-no9.md were not needed (the 9060 header "(No 2)" belongs to the next entry on the page).
+`python3 decode.py --write` then `--check` exit 0 after each push (462fdc70 E30-E31, 135c1cad E32-E33 after one rebase over LS-R5, c499cd1f E34,
+e2ab5a1d E35, 9446b901 E36). Rows marked `already_read` with LS-R2c and the ID. The two earlier sessions' stop (LS-R2, LS-R2b) was not
+reproduced: no tool call was refused here; they pushed nothing, so their cause stays unrecorded.
+
+| ID | date | from / to (decoded plain) | H | C | I | M | found in print / not located in |
+|---|---|---|---|---|---|---|---|
+| E30 | 20 Aug 1864 10 PM | Augur (Dept. of Washington) to Sheridan (signed Gimlet): Maj. Waite, 8th Illinois Cavalry, left Muddy Branch at noon, scout toward the Gaps, about 650 men | 22 | 0 | 0 | 0 | OR I/43 pt 1 (`warofrebellion431unit_0`), Augur to Sheridan 20 Aug, "Major Waite, Eighth Illinois Cavalry, left Muddy Branch at 12 m. to-day, on his scout toward the gaps. He has about 650 men. I directed him to carry out the orders of General Grant ..." between running heads 857 and 862 |
+| E31 | 21 Aug 1864 7.30 AM | Augur to Sheridan at Charlestown: Lazelle has returned and reports Warrenton, 2,000 infantry, 500 cavalry, a large force of 10,000 | 30 | 0 | 0 | 0 | OR I/43 pt 1, "Lazelle has returned, and reports as follows ...", with "depended upon reports of citizens. I will learn more definitely and inform you", running heads 871/872 |
+| E32 | 21 Aug 1864 (No 1, 10 PM) | Augur to Sheridan at Charlestown: Lazelle's information on the enemy at Culpeper; Gansevoort, 13th New York Cavalry, scouts tomorrow; 41st New York arrived from Hilton Head, about 400 men | 32 | 0 | 0 | 0 | OR I/43 pt 1, "Lazelle says he received his information concerning the enemy's forces at Culpeper from a citizen who had just left there ... forty-first New York arrived here from Hilton Head to-day, about 400 men. Two more regiments on their way", running heads 872-874; the OCR header there reads "August 27 ... 9.30 p. m." against the ledger's Aug 21 and 10 PM (image: Aug 21; OCR digit on a damaged header line, print page image not opened) |
+| E33 | 22 Aug 1864 | to McCaine at Harper's Ferry: a small train of forges and wagons for the Valley left yesterday; Thayer escorted by 25th New York Cavalry (300 men); a detachment of 375 men | 27 | 0 | 0 | 0 | not located: OR I/43 pts 1-2 (`warofrebellion431unit_0`, `warofrebellion432unit`) grep "small train of", "wagons for your", "forges and other", "Camp Thayer" (the 25th New York Cavalry appears only in the brigade history); Google Books API ("small train of forges" Thayer: 14 hits, none this text) |
+| E34 | 24 Aug 1864 10.30 AM | Augur to Sheridan: no news from the 8th Illinois Cavalry or Gansevoort; a refugee from Culpeper, Fitz Lee's cavalry about 3,000 and part of Longstreet's about 10,000 left to join Early | 37 | 0 | 0 | 0 | OR I/43 pt 1, Augur to Sheridan 24 Aug, "I have no news from the Eighth Illinois Cavalry, or from Gansevoort. A refugee just in from Culpeper, which place he left on Friday last, reports no forces of the enemy there, except a conscripting party ..." |
+| E35 | 29 Aug 1864 | a relay of Gov. Brough's message of 28 Aug: Breckinridge advancing into the Kanawha Valley with 8,000; Heintzelman left for Chicago; one battery at Camp Dennison and three National Guard regiments at Gallipolis | 30 | 0 | 0 | 0 | OR I/43 pt 1, Brough to Stanton, Columbus 28 Aug (received 10 AM 29th), "I have reliable information of Breckinridge's advance into the Kanawha Valley with 8,000, via Lewisburg ... General Heintzelman left for Chicago this morning under your order. I have telegraphed him on the way. I have the State battery at Camp Dennison and three regiments of National Guard at Gallipolis. No general officer in the State", running heads 949/952 |
+| E36 | 29 Aug 1864 8 PM | relay of a dispatch from Columbus to the Secretary of War; reports from Gallipolis; the return of the 100-days men leaves the Valley open; sent to Beckwith and McCaine | 14 | 0 | 0 | 0 | not located: OR I/43 pts 1-2 grep "leaves the valley open", "100-days", "and careful", "Following just received" (only unrelated hits); Google Books (2 queries, 0 hits) |
+
+Grades: the decoder counts H 192, C 0 over E30-E36 (22+30+32+27+37+30+14). I/M by hand 0, but the unread tail words are not graded:
+the clerk's closing group of E32 "ax saw" and E33 "ax saw", E36 "wolves" (written over the struck "signed"), E33 "Camel" (Camp?) and "Quicken ment".
+Plain-word judgements (`plain:` lines): E30 directed; E32 Lazelle, citizen, places; E33 small train, Thayer; E34 Friday, Sperry, stockade,
+letter; E35 Paxton, Dennison, Chicago; E36 careful. Decoded names agree with the printed OR names where located (Augur, Lazelle, Waite,
+Gansevoort, Fitz Lee, Longstreet, Early, Breckinridge, Heintzelman, Brough).
+
+Image vs volunteer text (image taken): E34 "federal out" (volunteer "on"); E33 "No Sir" kept; E30 header line "No 1 10 PM" read from the volunteer text.
+Not every line was read at crop resolution: the displayed crops showed about three of each four lines (E30 and E31 nearly complete, E32
+lines 1-6, E33 lines 1-6, E34 lines 1-4 and 9-14, E35 lines 1-7 and 8-9, E36 lines 1-4); the remaining lines rest on the volunteer text
+checked against the 500 px page view, where the two agreed everywhere visible. The ledger's printed page numbers (157, 160-163, 166) differ from
+the image pages in entries-mssEC19.tsv; block headers carry the printed numbers.
+
+Crop commands (S = session scratch; images `hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`, fetched once each):
+`python3 tools/iiif_lines.py --image $S/img/p<pointer>.jpg --out $S/crops/<dir> --prefix <x> --region <x,y,w,h> --centres <list> --lines-per-crop <n>
+--max-width 2400` with 9051 `100,330,2300,1450` centres 90,210,330,440,550,670,780,900,1025,1140,1255,1350 (3) and `100,1780,2300,1000` 60+100k (3);
+9054 `100,300,2300,800` 75,150,228,300,377,454,530,612,694 (3); 9055 `100,340,2300,900` 70,145,226,308,390,466,543,620,702,778 (3);
+9056 `100,330,2300,1350` 54+79k, k=0..15 (4); 9057 `100,1650,2300,950` 68+80k, k=0..10 (4); 9060 `100,230,2300,620` 56+77k, k=0..6 (4).
+
+Requests: hdl.huntington.org 5 (IIIF images, all 200); archive.org 6 (djvu `warofrebellion431unit_0` I/43 pt 1, `432unit` I/43 pt 2, `372unit` I/37 pt 2,
+plus `431unit` and `433unit` fetched on a wrong guess: `431unit` is I/47 pt 2, `433unit` 503; two advancedsearch calls); www.googleapis.com 3 answered
+(Books API, key and country=US, 200) after 3 malformed URLs (no request sent). No subagents. Report what was found and where it was not found;
+novelty is a verifier's (rule 10): batch flagged for the verifier (LS-V2c). Five of seven entries (E30, E31, E32, E34, E35) are located in OR I/43 pt 1
+by phrase; the filter's `or_cov` had not flagged them.
