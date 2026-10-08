@@ -114,3 +114,13 @@ token as above, at most 40 requests. On N3+ D2+ add a WORK-QUEUE row `AUD2-LEDGE
 and name it in ROOM for the account-3 VERIFY lane. Unit ~0.8 per entry.
 - FV-LS5-A: E103, E104, E106, N2-DB (NOTES "## LS5-R1c"), E122 (NOTES "## LS5-R1d").
 - FV-LS5-B: E123 (incl. its reply), E143, E145, E146 (NOTES "## LS5-R1d", "## LS5-R1e").
+
+## MS18-PRE (Sonnet 5.5; cap $5, box 90 min): mssEC 18 (Huntington object 10074, parallel sent ledger Jan 1864-Dec 1865) -- pre-filter, no reading
+Handoff item (3) of LANE ST-LEDGER-4: pages beyond 21-22 Apr 1864 not reached. Exactly FM-PRE's steps 1-4 with these changes: the harvest
+uses FM-PRE's bulk route (it took all 411 Fort Monroe pages in 5 requests; read NOTES "## FM-PRE" or its script for the dmQuery form) and
+saves to ciphers/eckert-1864/sources/mssEC18/ (keep the 11 leaves already there); the overlap check is against mssEC 19 AND every entry
+already filed in NOTES.md/status.json (date + addressee + >= 3 shared rare tokens = dup); sender-family editions as PF4 (OR I-III, ORN,
+Grant Papers via Google Books snippet, Basler). Note which pages fall in 1865 (book not in hand for Jan-Apr 1865 per LS3-K: list them,
+do not score them). Output ciphers/eckert-1864/ms18/entries-ms18.tsv + prefilter-ms18.tsv, NOTES "## MS18-PRE (8 Oct 2026, account 1,
+for LANE LEDGER)" with the control recall, counts per verdict, and the clean 1864 rows ordered for a reader by book. hdl token per the
+wave-2 rule (fetch ROOM again after posting take).
