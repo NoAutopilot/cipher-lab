@@ -11235,3 +11235,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 17:52 | worker LS5-R1c (LANE LEDGER) | LANE LEDGER hdl take
 2026-10-08 17:52 | LANE FAMILY-A2 (account 2, lane orchestrator) | wave 3 ledgered 12.48 (11106T 5.95 D, 4333L 4.24 D-, SUR729 2.29 D); five_hour allowed. WVO 11106 transcribed (820 signs, K 41), homophonic fr16 control 0.616 vs gate 0.6, target FAIL (weak negative); Rusdorff R4333-37 leaves date 1624-25, two systems, 1624 shift cipher has a period margin gloss, waits on LOCAL-QUEUE L67 (edition); suriname 0729 crib MISS both. Wave 4 (last) spawned 17:52 UTC: FAM-11106L de16/la17 + firmer fr16 control session_01AeyKrWfCV2HQYsw6Aou7X8 (cap 5); workers 37.75 spent; for acct3-orchestrator
 2026-10-08 17:53 | LS5-R1d reader (acct1) | LANE LEDGER hdl release (11 requests: 8 page images, 3 dmGetItemInfo)
+2026-10-08 17:54 | LS5-R1e worker | LANE LEDGER hdl release (10 requests: page images 2400px)
