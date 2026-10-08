@@ -6208,3 +6208,62 @@ The print is also a non-statistical external check on three code words of E96: P
 - Suggestion, not done (brief names E96 only): E97 (no personal description of the Rebel agent at St. Louis) sits in the same affair;
   Horan p.227 names the St. Louis agents (Wm. Kendall, Capt. Lewis Kennerly) without description. Whether that is E97's substance is a
   separate audit; its N3 is not touched here.
+
+## AUDIT 3 (AUD-SIG-E146)
+
+Verifier: account 3, session_01BjKGq37wscDi4tRT9a5KiS (Opus), for LANE-VERIFY-4, 8 Oct 2026 23:39-00:0x UTC 9 Oct (date -u). Step type
+`new-family-audit` (brief: .claude/briefs/runs/2026-10-08-acct1-sig1-jobs.md "## AUD-SIG-E146"). Account 3 did not read or first-audit E146
+(reader LS5-R1e and first auditor FV-LS5-B on account 1; AUD2-LEDGER-2 was a different account-3 session). Nothing decoded; decode.py and
+keys untouched. Claim under audit: E146 at **N3 (weak), D2**, "not located in OR I/45 pt 2 or the other sources searched".
+Item: QMG (signature code Belcher) via Capt. Bruch, Louisville, to Brig. Gen. R. Allen, 12 Dec 1864 2 PM: Donaldson recommends that the
+manager of the US Military Railroads take immediate possession of the Louisville and Nashville Railroad; does Allen concur, or would US Mil.
+Railroad rolling stock on the road suffice; would the company not do all that is possible without the interruption of changing hands; public
+freight and travel should have preference, and if necessary exclusive use of the road. Answer.
+
+### Prior-work checks 3-5
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 9139;folio=245;date=1864-12-12;sender=Meigs;recipient=Allen'
+  --step-type new-family-audit --fetch` (E146 is not an items.tsv row): `verdict step: LEAD`, exit 4, the one LEAD
+  `adhoc-7ce60d:1-own:c26071` = ECK-PAGEFIX's target-level claim on mssEC19 page headers, which has its done line (ROOM 23:08) and does not
+  touch E146's reading: cleared. Plaintext: 3-tomokiyo CLEAR, 3-solver CLEAR (cached), unsolved-ciphers UNCHECKED-NET, 4-editions CLEAR on
+  the cached OR set (date +-1 day, both correspondents, control hit). G3 on the decoded body was run by AUD2-LEDGER-2 (section "G3 tool
+  rerun"): noise only; not re-run (no reading change since).
+
+### New families (the ones owed by FV-LS5-B / AUD2-LEDGER-2 and SIGNIFICANCE-2026-10-08 item 3)
+| Family | Source and route | Query | Result |
+|---|---|---|---|
+| USMRR final report | McCallum's report (1866), printed in OR ser. III vol. 5; IA `cu31924079575381` `_djvu.txt` (the DLI copy `in.ernet.dli.2015.165571` has unusable OCR), local grep, whitespace-normalised | "Louisville and Nashville" (5 hits + 1 OCR "Bail-road"), "possession of the Louisville", "changing hands", "vitally necessary", "rolling-stock upon", "take possession" (8), Guthrie, Donaldson (17) | every L&N hit is McCallum's description of other lines (Nashville and Clarksville via L&N track; L&N rolling stock borrowed by USMRR in 1863 and 1865); no Dec 1864 proposal to take the road; "take possession" hits are unrelated orders. Not printed. |
+| QMG annual report 1865 | Meigs's report for FY ending 30 June 1865, OR III/5 (same file) | as above; Donaldson and Allen passages | Donaldson praised for the Nashville depot and the QM volunteers of 15-16 Dec; nothing on the L&N. OR III/5 p.386 note: Donaldson's own report of 30 June 1865 is "here omitted, see Series I, Vol. LII, Part I, p. 680". |
+| Donaldson's report | OR ser. I vol. 52 pt 1 pp. 680-690 (Donaldson, Nashville, 30 June 1865), IA `warofrebellion521unit` `_djvu.txt` | Louisville, possession, Guthrie, Hood, December, rail | covers Hood's advance, Johnsonville, the Dec 15-16 battle and Irvin's re-equipment; no word of the L&N or of a take-over proposal. Donaldson's FY1864 report in the same volume (pp. 620-622) names the L&N only in the Aug 1864 forage crisis ("put both these roads under the strictest orders to bring forward nothing but Government stores"). |
+| Allen's report | OR I/52 pt 1 pp. 690-691 (Allen, Louisville, 1 July 1865, Addenda) | rail, December, Nashville | general (rolling stock brought from the East over the Ohio at Louisville); nothing on Dec 1864. Same volume prints Allen to Meigs, Louisville, 25 Dec 1864 (bridges at Elizabethtown and Nolin destroyed by Lyon, road useless for a week): a later event on the same road, not E146 or a reply. A transport report at pp. 715-716 (author not checked) praises the L&N among roads "managed ... by the officers and companies controlling them": context consistent with the road staying in company hands. |
+| OR III/4 | IA `cu31924079575373` `_djvu.txt` (cached by FV-LS5-B for E143) | "Louisville and Nashville", "changing hands", "vitally necessary", Guthrie, "December 1x, 1864" | 0 hits on every term; this volume carries no Dec 1864 L&N matter in its OCR. |
+| L&N history: Herr | Kincaid A. Herr, *The Louisville & Nashville Railroad 1850-1963* (1964, the enlarged edition of the 1943 book), IA `bwb_Y0-DUI-667` (lending), be-api full-text search | Meigs, "military railroads", Donaldson, "take possession", seize: 0 each; positive controls Guthrie 1864 and "Federal Government" hit (the latter: wartime train protection 1864-65 and the 1917 federal control) | the proposal is not in Herr's text. The 1943 edition itself not searched (assumed contained in 1964; not verified). |
+| L&N history: Klein | Maury Klein, *History of the Louisville & Nashville Railroad* (1972), IA `historyoflouisvi0000klei`, be-api full-text search (snippets only, no page numbers) | Meigs (pp. 38, 42 by the index: 1862 rate dispute and Guthrie's 1862 damage letter), "military railroads" (index pp. 226-27; text: L&N men who worked for the USMRR "until September"), seize ("legislation had authorized the president to seize any railroad deemed vital for military purposes in an emergency"), J. B. Anderson (1862-63 supply criticism and dismissal), Donaldson 0, McCallum 0, "take possession" 0, "December 1864" 0, Hood 0 | Klein discusses the government's seizure power and the L&N's wartime friction with Meigs, but no snippet touches Donaldson or Dec 1864. The surrounding pages of the "seize" passage were not readable (lending item; be-api gives snippets only), so whether Klein mentions a Dec 1864 threat in other words is **unchecked**. |
+| L&N history: "Lee (2011)" | named in the brief; OpenAlex search (L&N Civil War) and IA advancedsearch | -- | no 2011 L&N title by Lee identified; OpenAlex instead gives Dalton, "A Dagger Through the Heartland: The L&N Railroad in the Civil War" (Gettysburg College Journal of the Civil War Era 8, 2018) and Heier, Accounting History 2010. Dalton: cupola.gettysburg.edu served a Cloudflare challenge to curl and to the browser tool (403), stopped, unread. Heier: paywalled, unread. |
+| Cotterill 1924 | R. S. Cotterill, "The Louisville and Nashville Railroad 1861-1865", AHR 29 (1924) | -- | JSTOR only; two JSTOR-QUEUE rows added: (i) L&N AND (Meigs OR Donaldson) AND (military railroads OR seizure) AND 1864; (ii) the bare phrase "possession of the Louisville and Nashville". Unread. |
+| Phrase search | be-api IA global | "Donaldson recommends that the manager" (2 hits, 20th-c. business ethics), "possession of the Louisville and Nashville" (10: 1861 Confederate occupation, 1865 Supreme Court docket on the Tennessee section, 1903/1926 papers), "caused by changing hands" (3, unrelated) | none is E146 or a reply. |
+| Google Books | keyed, `country=US` | six queries (decoded phrases, Cotterill, Lee 2011) | HTTP 429 on all six and on one retry after 25 s: stopped, **unreachable this session**. |
+
+Not searched / unreachable: NARA RG 92 QMG letters-sent and the USMRR records (no catalog key); HathiTrust; the press of the day (Louisville
+Journal/Democrat, 12-20 Dec 1864); Klein's pages around the seizure passage; Dalton 2018 (Cloudflare); Heier 2010 (paywall); Cotterill 1924
+(JSTOR rows queued); Google Books (429).
+
+### Classification
+| ID | N-class | text known? | depth (kept) | note |
+|---|---|---|---|---|
+| E146 QMG via Bruch to Brig. Gen. Allen, Louisville, 12 Dec 1864 2 PM | **N3** (weak), three audits | unknown; frame clear in the public transcription | D2 (100) | the official reports of all three officers named (Donaldson, Allen, the QMG) and McCallum's USMRR report print nothing of it; Herr's L&N history does not have it; not N4: Klein unread around the seizure passage, Cotterill 1924, Dalton 2018, RG 92 and the press unread |
+
+Key: `period` (War Department Cipher No. 1, Huntington mssEC 41). Depth sentence re-checked against reading.md line 802: true.
+Safe sentence: "The Quartermaster General's 12 Dec 1864 question to Allen on whether the Military Railroads should take possession of the
+Louisville and Nashville Railroad, read at grade H with the period Cipher No. 1; the frame is in clear in the Huntington's public
+transcription; not located in OR I/45 pt 2, in the 1865 reports of Donaldson, Allen and the Quartermaster General or McCallum's USMRR report
+(OR III/5, I/52 pt 1), or in Herr's history of the road (searched 8 Oct 2026)." Unsafe: "unknown to historians of the L&N" (Klein and
+Cotterill not read through), "first decipherment".
+
+### Postmortem
+- No over-claim found in AUDIT.md, status.json or the SO prompt; the SO prompt's "not yet looked properly" list (RG 92, USMRR records,
+  McCallum, company histories) is now partly covered: the prompt is left as filed (still accurate as an adversary's starting list; McCallum
+  and Herr now negative here).
+- Lesson: the QMG annual report in OR III/5 says which subordinate reports it omits and where they are printed (Donaldson's: OR I/52 pt 1
+  p.680) -- read that footnote before treating III/5 as the QM department's whole record.
+- Requests: archive.org 15 (advancedsearch 7, `_djvu.txt` 5 incl. one 404 on a guessed name, metadata 3); be-api.us.archive.org 27 (one 503,
+  retried once); api.openalex.org 3 (keyed); googleapis.com 7 (all 429; stopped); cupola.gettysburg.edu 3 (Cloudflare; stopped). Subagents 0.

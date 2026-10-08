@@ -57,3 +57,13 @@ I checked the audit classes for Chavigny (N3) and E37 (N3) in the repository, an
   and the succession is in Rommel VIII pp. 588-590 -- so the passage adds the decision and its stated purpose eleven weeks earlier, in
   the secretary of state's own despatch to the Hamburg envoy, not the fact of the reward. *Caveat:* the clause rests on letter signs
   graded M; key Tomokiyo's (published); class stays N3 (AAE volumes, the 1640 *Gazette* and Google Books not reached), depth D2.
+- **Quartermaster General to Allen, Louisville, 12 Dec 1864 (eckert-1864 E146), AUD-SIG-E146 (account 3 verifier), 8-9 Oct 2026.** *What it
+  says:* Donaldson recommended that the US Military Railroads take immediate possession of the Louisville and Nashville Railroad as vitally
+  necessary to sustain the army; the Quartermaster General asked Allen whether he agreed, or whether lending USMRR rolling stock would do, and
+  whether the company could not do all that was possible without the interruption of a change of hands, public freight and travel having
+  preference. *What it adds beyond print:* the reports of all three officers named (Donaldson's of 30 June 1865, OR I/52 pt 1 p.680ff;
+  Allen's of 1 July 1865, ibid. p.690; the QMG's in OR III/5) and McCallum's USMRR report (OR III/5) say nothing of it, and Herr's L&N
+  history does not have it; the print shows only the aftermath (Allen to Meigs, 25 Dec 1864: Lyon's raid made the road useless for a week)
+  and a 1865 transport report (p.715) counts the L&N among roads run by their own companies. So the telegram adds a take-over proposal
+  and the Quartermaster General's apparent leaning toward leaving the company in charge, about two weeks before Lyon's raid cut the road. *Caveat:* Klein (1972) discusses the president's power to seize
+  vital roads and was read only by snippet; Cotterill (AHR 1924) and Dalton (2018) unread; class stays N3 (weak), depth D2; key `period`.

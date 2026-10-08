@@ -7285,7 +7285,7 @@
         "AUDIT.md '## AUDIT (FV-LS5-B)'",
         "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-2)'"
       ],
-      "audit_status": "two audits",
+      "audit_status": "three audits",
       "superseded_by": "",
       "depth_by": "FV-LS5-B verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -7299,8 +7299,8 @@
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS5-B)' section 5",
       "reading_version": "LS5-R1e 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-LS5-B) section 4",
       "title": "Eckert 1864: Quartermaster General via Capt. Bruch to Brig. Gen. Allen, Louisville, 12 Dec 1864 2 PM, should the Military Railroads take the Louisville and Nashville (E146)",
-      "line": "Read at grade H with the period War Department Cipher No. 1; the frame is in clear in the Huntington's public transcription (Louisville, Nashville, Railroad, Army and the signature are code); no prior printed text located in OR ser. I vol. 45 pt 2, Internet Archive full text, Google Books or the Huntington's full-text layer (searched 8 Oct 2026).",
-      "gap": "N3 (weak), two audits: frame clear in the public transcription of 9139; 'Tartan', 'Stan' unread; QMG and USMRR records and Cotterill (AHR 1924) unread",
+      "line": "Read at grade H with the period War Department Cipher No. 1; the frame is in clear in the Huntington's public transcription (Louisville, Nashville, Railroad, Army and the signature are code); no prior printed text located in OR ser. I vol. 45 pt 2, the 1865 reports of Donaldson, Allen and the Quartermaster General or McCallum's USMRR report (OR III/5, I/52 pt 1), Herr's history of the L&N, Internet Archive full text or the Huntington's full-text layer (searched 8 Oct 2026).",
+      "gap": "N3 (weak), three audits (AUD-SIG-E146): frame clear in the public transcription of 9139; 'Tartan', 'Stan' unread; Klein 1972 around its seizure passage, Cotterill (AHR 1924, JSTOR rows queued), Dalton 2018, NARA RG 92/USMRR records and the press of the day unread",
       "depth": "D2",
       "depth_pct": 100.0,
       "depth_unread": {
