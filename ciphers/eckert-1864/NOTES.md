@@ -1539,3 +1539,9 @@ E79's substance is in Meigs's clear order of the same hour to Crosman on the sam
 E82 "Grapes" is the blind word, not [Washington], and "In san it he" = Insanity = C. A. Dana (signer); E81 "Weaslers" = steamers (I);
 `ls3_r18_control.py`'s date column tests April headers only (part 2's "date n/n/n" is a non-test; by hand the day numerals agree under
 No. 1 for E79, E80, E81, E83); the 9858 Horner sibling is a parallel order to Van Vliet at New York, not E81's telegram.
+
+Note (LS3-V86, first verifier, 8 Oct 2026; AUDIT.md "## AUDIT (LS3-V86)"): O9-BC is printed word for word in the Urbana Union (Ohio),
+7 June 1865 p.2, as Grant to Hooker, Washington 2 June 1865, inside Special Orders No. 300, Tod Barracks -- N1; Borgia = Hooker and Ranger =
+Grant (C, from the print; candidate rows for key-no9.md). E86's body is clear in the Huntington public transcription of 9948 except Grapes
+(Washington) -- N1, D1. E86's leading "Growl" is the No. 1 blind word, not [Washington]. Next, for a reader, ~$0.2: add Borgia/Ranger rows
+(grade C, citing the Urbana Union) to key-no9.md and mark Growl as the blind word in reading.md.

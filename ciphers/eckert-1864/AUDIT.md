@@ -3550,3 +3550,74 @@ Nov 2015). What the key adds is only the code words. Counted as body words (addr
   SO-ECKERT-E78 and SO-ECKERT-O9BB stay queued. Readings and ciphertext files unchanged.
 - Requests: hdl.huntington.org 25 (1 empty reply, not retried); archive.org 7; be-api.us.archive.org 21; www.loc.gov 12; chroniclingamerica.loc.gov
   7 (all non-JSON or a Cloudflare challenge; stopped); googleapis.com 9 (4 answered 503, not retried).
+
+## AUDIT (LS3-V86)
+
+Verifier LS3-V86 (account 2, for the account-3 orchestrator / LANE ST-LEDGER-3), 8 Oct 2026, 12:13-12:2x UTC by `date -u`; a separate
+session from LS3-R18b (the reader), LS3-V18a and LS3-V18b, not protecting the reader's conclusions. Scope: **E86** (ciphertext.txt, Cipher
+No. 1, key.md) and **O9-BC** (ciphertext-no9.txt, Cipher No. 9, key-no9.md), both read by LS3-R18b. Nothing decoded beyond re-running the
+committed scripts and looking code words up in the key files. Key source for both: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md.
+
+### 1. Re-derivation and the holding archive's own record
+- `decode.py --check`, `decode_no9.py --check`, `decode_no2.py --check`, `ls3_r18_control.py --check`: exit 0 each.
+- Huntington CONTENTdm `dmGetItemInfo/p16003coll11/{9948,10028,10027}` (`transc` field, the volunteer transcription; 3 requests, scratch):
+  - **9948 (p.282), E86**: "John Horner Washn Jany 31st 1865 1130 AM | Growl Florence Laugh Plug for Kasson zebra | Please come to Grapes at
+    your earliest Convenience youth India very fine day this". The whole body is in clear except one code word (Grapes = Washington); the
+    address (Kasson = Maj Gen Jno A. Dix), day (Laugh Plug = 30 + 1 = 31), time (Florence = 11.30 AM, also in clear in the header) and
+    signature (youth India = signed Secretary of War) are what the key adds. Correction: the first word **Growl is the blind word** of the
+    No. 1 route pages (key.md section 1: "Growl" = 9 columns), not [Washington] as the reader's gloss has it -- the same correction LS3-V18b
+    made for E82's "Grapes"; the body "Grapes" is in body position and reads Washington (H).
+  - **10028 (p.362), O9-BC**: ledger "9", "1030 am", "Stevens Cin Washn June 2nd 1865 | Pagan Clara second for Borgia period | Suppress all sail
+    of liquor on the lines traveled by yoke returning to be mustered out and at rendezvous for discharge until youth are all dispensed sig
+    Ranger Lowes weather". The body is in clear except Yoke/Youth = Troops (twice).
+  - **10027 (p.361)**, the Horner NY sibling (label "1"), carries the same telegram the same day under No. 1 ("whist"/"whistle" = Troops), as
+    the reader noted. Both are in public view.
+
+### 2. O9-BC located in print (the press of the day)
+| ID | printed at | how confirmed |
+|---|---|---|
+| O9-BC | **Urbana Union (Urbana, Ohio), 7 June 1865, p.2**, "Our Beer Stopped", inside Special Orders No. 300, Tod Barracks, Columbus, 3 June 1865 (LoC Chronicling America sn85026309/1865-06-07/ed-1/?sp=2); the same phrase hits seven pages of the Daily Ohio Statesman, 6-16 June 1865 (titles only, not read) | LoC full-text OCR read here: "'Washington, June 2, 1865. Major-General Hooker: Suppress all sale of liquor on the lines traveled by troops returning to be mustered out, and at rendezvous for discharge, until troops are all dispersed.' (Signed) U. S. GRANT, Lieut. Gen'l", forwarded from Headquarters Northern Department, Cincinnati, 2 June 1865 |
+
+Word for word with the reading. The print identifies the two code words the reader left unread: **Borgia = Hooker** (Maj. Gen. Joseph Hooker,
+Northern Department, Cincinnati -- consistent with the Cincinnati operator Stevens) and **Ranger = Grant** (signer); both C (from print). The
+two Troops tokens and the time agree with the print (H). "second" (the clerk's message number), "period", "sig", "Lowes weather" (tail filler)
+add nothing. The reader's OR 46-49 pre-filter could not find it: the order is not in those volumes' OCR under "sale of liquor on the lines";
+it was found in the press, which the brief named.
+
+### 3. Search log (8 Oct 2026)
+| family | searched | result |
+|---|---|---|
+| OR ser. I vol. 46 pt 2 (IA `warofrebellion462unit` djvu, whole volume, whitespace-normalized; scratch) | E86: "earliest convenience"; "Dix" within reach of "come to Washington"; every "Washington, January 31, 1865" heading (4: to Grant twice, Lincoln forwarding Grant, to Seward) | E86 not found |
+| OR ser. I vols. 46-49 (the reader's LS3-R18b pre-filter, accepted, not re-run) | both entries' phrases | not found |
+| OR ser. III vol. 5 | IA advancedsearch for the volume (one query) | volume not located by that query; unread |
+| ORN | not searched (neither entry is Navy traffic) | -- |
+| Holding archive: Huntington CONTENTdm `dmGetItemInfo` 9948, 10028, 10027 | `transc` | both bodies in clear (section 1) |
+| 1865 press, LoC Chronicling America (JSON, phrase, 25 May-20 Jun 1865) | "sale of liquor on the lines" | 10 pages; Urbana Union 7 Jun read (O9-BC in print); Daily Ohio Statesman 6, 8, 9, 10, 13, 14, 16 Jun titles only |
+| Unread | E86 in the press (Jan-Feb 1865); OR ser. III vol. 5; Stanton papers; Dix papers; IA/Google Books/OpenAlex phrase passes (not needed for an N1 ruling) | unread |
+
+### 4. Grades and classification (key `period` for both)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| E86 Stanton (Secretary of War) to Maj. Gen. Dix, 31 Jan 1865 11.30 AM | **N1** | known: the body is clear in the Huntington's public transcription of 9948 except "Grapes" (Washington); the key adds Washington, Dix, the day 31 and the signer | D1 | 100 (body/address/signature code words H; Growl = blind word, a book token) | public transcription read against ciphertext.txt; decode `--check` |
+| O9-BC Grant to Hooker, Cincinnati, 2 Jun 1865 10.30 AM | **N1** | known: printed word for word, Urbana Union 7 Jun 1865 p.2; also clear in the public transcriptions of 10028 and 10027 | D4 | 100 (4 H + 2 C: Borgia, Ranger from the print) | word for word with the 1865 print (non-statistical); `decode_no9.py --check` re-derived here |
+
+- **E86 N1** by the D2V-E74 line LS3-V18b stated (body clear in the holding archive's public transcription except at most one code word).
+  D1: the only body code word is Grapes = Washington; it supplies no clause under the depth bar's code-clause test on its own here, and
+  address/date/signature are excluded as for E74. Its book (No. 1) rests on the time and day words, as the reader said; nothing found here
+  contradicts it. Not counted.
+- **O9-BC N1** (plaintext in print in 1865, and the telegram's clear text is public at the holding archive twice). Our reading is an
+  independent re-decipherment of a printed order. D4 is recorded for the record (every token H/C, non-statistical external check, fresh
+  re-derivation); it does not make the item counted. The C-grade value rows Borgia = Hooker and Ranger = Grant are **candidate value
+  rows for key-no9.md**, grade C, from this print (a reader may add them; not done here: no key edits in a verifier's brief).
+- Depth sentence (O9-BC, D2+): "On 2 June 1865 Grant ordered Hooker at Cincinnati to suppress all sale of liquor along the routes of troops
+  returning to be mustered out and at their discharge rendezvous until the troops had all dispersed."
+- No status.json result row, no SECOND-OPINIONS-QUEUE row, no WORK-QUEUE second-audit row: both are N1.
+
+### 5. Postmortem
+- The reader's print filter covered OR 46-49 but neither the holding archive's own transcription (E86, O9-BC: the D2V-E74 lesson again) nor
+  the press (O9-BC: an army order forwarded and printed in a general order in Ohio papers within five days).
+- Corrections to LS3-R18b's section (a note is appended there): E86's leading "Growl" is the blind word, not [Washington]; O9-BC is in
+  print (Urbana Union 7 Jun 1865 p.2), Borgia = Hooker, Ranger = Grant (C); both bodies are clear in the public transcription.
+- Requests: hdl.huntington.org 3 item JSONs; archive.org 2 (one djvu, one advancedsearch); loc.gov 5 (2 search JSON, 1 page JSON, 2 full-text,
+  one of which answered 500); all >= 2 s apart.
