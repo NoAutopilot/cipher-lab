@@ -1,0 +1,898 @@
+# FM-PRE (8 Oct 2026): entries of sources/fortmonroe, a ranking, not a verdict; no calibration against the audits (mssEC 19 entries train the book guess)
+# OR volumes: 
+pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_guess	or_hit	or_cov	already_read	priority
+5545	1	0	Yorktown Feby 3 . 1864		H N Snow	65	5	14	1	clear	none	0		3
+5545	1	1	Ft Monroe Feb 3 . 1864		T T Eckert	76	10	17	6	9	none	0		1
+5546	2	0	Washington Feby 3 . 1864		T. T. Eckert	32	8	13	7	9	none	0		1
+5546	2	1	Newport News Feb 3 1864			108	15	35	11	9	none	0		1
+5547	3	0			Geo D Sheldon	27	5	9	4	9	none	0		1
+5547	3	1	New York Feb. 3 . 1864		John Horner	36	4	11	3	9	none	0		1
+5547	3	2	Hd Qrs A of Potomac Feb 4 1864			86	16	25	12	9	none	0		1
+5548	4	0				78	10	29	5	9	none	0		1
+5548	4	1	Ft Monroe Feb 4 . 1864			64	13	24	5	9	none	0		1
+5549	5	0			Geo D Sheldon	95	13	24	7	9	none	0		1
+5549	5	1	Ft. Monroe Feb 4 1864		Geo D Sheldon	58	9	21	4	9	none	0		1
+5550	6	0	Ft Monroe Feb 4 1864		the weather an attempt at	150	16	43	3	2	none	0		1
+5551	7	0			Geo D Sheldon	34	2	6	1	clear	none	0		3
+5551	7	1	Norfolk Feb 4 . 1864		over	76	5	17	0	clear	none	0		3
+5552	8	0				72	5	10	0	clear	none	0		3
+5552	8	1	Ft. Monroe Feb 4 , 1864			52	5	13	3	9	none	0		1
+5553	9	0			Geo D Sheldon	167	21	46	8	9	none	0		1
+5554	10	0	Washington Feb 5, 1864		T. T. Eckert	68	8	15	6	9	none	0		1
+5554	10	1	Yorktown Feb 5 1864			91	9	23	5	9	none	0		1
+5555	11	0	Washington Feb 5 , 1864		TT Eckert	77	13	26	9	9	none	0		1
+5555	11	1	Ft Monroe Feb 5 . 1864		my front unless the we	53	2	12	2	clear	none	0		3
+5556	12	0	Ft Monroe Feb 5 1864		Geo D Sheldon	127	5	20	1	clear	none	0		3
+5557	13	0	Ft Monroe Feb 5th 1864		Geo D Sheldon	42	6	12	4	9	none	0		1
+5557	13	1	Hd Qrs A of P Feb 5th 1864			22	2	5	1	9	none	0		1
+5557	13	2	Ft. Monroe Feb 5th 1864		Geo D Sheldon	49	4	12	2	9	none	0		1
+5558	14	0	Ft Monroe Feb 6th 1864			168	23	40	13	9	none	0		1
+5559	15	0			Geo D Sheldon	23	7	6	3	2	none	0		1
+5559	15	1	Hd Qrs A of P Feb 6 1864			29	5	9	5	9	none	0		1
+5559	15	2	Ft Monroe Feb 6 1864		Geo D Sheldon	62	7	14	5	2	none	0		1
+5560	16	0	Washington Feb 6 1864		T. T. Eckert	42	3	7	1	clear	none	0		3
+5560	16	1	Ft. Monroe Feb 6 . 1864			105	10	26	4	9	none	0		1
+5561	17	0				67	7	19	4	9	none	0		1
+5561	17	1	Hd Qrs A of P Feb 7th 1864			68	11	15	6	9	none	0		1
+5562	18	0				17	4	4	0	1	none	0		1
+5562	18	1	Ft. Monroe Feb 7th 1864		Geo D Sheldon	33	7	8	4	9	none	0		1
+5562	18	2	New York Feb 8th 1864			75	6	20	3	9	none	0		1
+5563	19	0			121 Col 973 7 WD  John Horner	40	3	2	0	clear	none	0		3
+5563	19	1	Ft. Monroe Feb 8th 1864		Geo D Sheldon	110	27	39	17	9	none	0		1
+5564	20	0			130 Collect  Geo D Sheldon	28	4	6	2	9	none	0		1
+5564	20	1	Ft Monroe Feb 8th 1864		Geo D Sheldon	110	9	23	5	9	none	0		1
+5565	21	0	Norfolk Feb 8th 1864		R O Brien	59	9	9	1	9	none	0		1
+5565	21	1	Ft Monroe Feb 8 . 1864		Geo D Sheldon	80	10	17	0	9	none	0		1
+5566	22	0	22 Monroe Feb 8th 1864			173	26	52	21	9	none	0		1
+5567	23	0				168	20	45	16	9	none	0		1
+5568	24	0			430 collect  Geo D. Sheldon	34	1	5	1	clear	none	0		3
+5568	24	1	Newport News Feb 8th 1864		Lee	42	4	12	1	9	none	0		1
+5568	24	2	New York Feb 9 1864			57	5	8	2	clear	none	0		3
+5569	25	0			John Horner	100	7	17	4	9	none	0		1
+5569	25	1	Balto Feb 9th 1864		GW Baldwin	32	3	8	1	9	none	0		1
+5570	26	0	Ft Monroe Feb 10 . 1864		Geo D Sheldon	51	10	18	6	9	none	0		1
+5570	26	1	Balto Feb 10 1864		GW Baldwin	35	7	11	5	9	none	0		1
+5570	26	2	Balto Feb 11 1864		GW Baldwin	27	4	7	3	9	none	0		1
+5571	27	0	Baltimore Feb 12 1864		Thos T. Eckert	78	7	18	5	9	none	0		1
+5571	27	1	Yorktown Feb 15 , 1864		H. N. Snow	43	3	11	1	9	none	0		1
+5572	28	0	New York Feb 18th 1864		John Horner	67	9	14	4	9	none	0		1
+5572	28	1	Ft Monroe Feb 20 1864		Geo D Sheldon	66	7	19	6	9	none	0		1
+5573	29	0	Ft Monroe Feb 26 / 64		Geo D Sheldon	151	19	36	8	9	none	0		1
+5574	30	0				166	22	52	16	9	none	0		1
+5575	31	0			Geo D Sheldon	19	2	4	2	clear	none	0		3
+5575	31	1	Ft Monroe Feb 29 . 1864		Geo D Sheldon	66	5	10	3	clear	none	0		3
+5575	31	2	Washington Feb 29 1864			42	4	13	3	9	none	0		1
+5576	32	0	Ft. Monroe March 1st  / 64		Geo D Sheldon	66	7	11	3	clear	none	0		3
+5576	32	1	Ft. Monroe Mar 1st 1864		Geo D Sheldon	48	9	13	4	9	none	0		1
+5577	33	0	Ft. Monroe March 3d 1864		Geo D. Sheldon	30	9	9	4	9	none	0		1
+5577	33	1	Ft. Monroe March 3d 1864		Geo D Sheldon	97	27	29	8	1	none	0		1
+5578	34	0	Ft. Monroe Mar 3 1864		Geo. D. Sheldon	129	22	44	3	1	none	0		1
+5579	35	0	Hd. Qrs. A. of. P. March 4th 1864			65	10	16	5	1	none	0		1
+5579	35	1	Washington March 4 , 1864		TT Eckert	89	25	30	10	1	none	0		1
+5580	36	0	GD Sheldon  Wash March 6th	GD Sheldon		32	2	10	0	clear	none	0		3
+5580	36	1	Ft Monroe March 7		Sheldon	25	1	2	0	clear	none	0		3
+5580	36	2	Ft. Monroe Mar 8th 1864		Geo D Sheldon	51	16	17	4	1	none	0		1
+5580	36	3	Hd Qrs A. of. P. March 8 , 1864			35	9	17	3	1	none	0		1
+5581	37	0			Geo D Sheldon	50	13	16	4	1	none	0		1
+5581	37	1	Ft. Monroe Mar 9th 1864		Geo D Sheldon	48	11	14	2	9	none	0		1
+5582	38	0	Hd Qrs A of P Mar. 12th 1864			60	11	19	3	1	none	0		1
+5582	38	1	Ft Monroe Mar 12 1864		Geo D Sheldon	45	16	19	8	1	none	0		1
+5582	38	2	Ft Monroe Mar 12 1864			38	6	6	2	1	none	0		1
+5583	39	0			Geo D Sheldon	52	9	13	2	1	none	0		1
+5583	39	1	Ft Monroe Mar 12 1864		Geo D. Sheldon	48	7	15	3	1	none	0		1
+5583	39	2	Ft Monroe Mar 12 . 1864		Geo D Sheldon	37	6	8	0	1	none	0		1
+5584	40	0	Ft Monroe Mar 12 . 1864		Geo D Sheldon	61	19	22	5	1	none	0		1
+5584	40	1	Washington Mar 17 1864			89	26	36	2	1	none	0		1
+5585	41	0	Washington Mar 17. 1864		Thos T. Eckert	92	12	23	3	1	none	0		1
+5585	41	1	Washington Mar 17 1864			145	37	46	6	1	none	0		1
+5586	42	0			Thos. T. Eckert	152	38	52	6	1	none	0		1
+5587	43	0	Ft. Monroe Mar 17 . 1864		Geo D Sheldon	90	23	34	7	1	none	0		1
+5587	43	1	Norfolk Mar 17. 1864		R OBrien	46	13	24	2	1	none	0		1
+5588	44	0	Washington Mar 18 64		Javelin  Thos T Eckert	121	23	33	4	1	none	0		1
+5588	44	1	Washington Mar 18. 1864		Thos T Eckert	93	21	26	5	1	none	0		1
+5589	45	0	Washington March 27 / 64		44 pd  T. T. Eckert	42	7	15	2	1	none	0		1
+5589	45	1	Ft Monroe Mar 28th 1864		Geo D Sheldon	25	7	6	2	1	none	0		1
+5589	45	2	Ft. Monroe March 28 1864		Geo D Sheldon	56	15	18	4	1	none	0		1
+5590	46	0	Washington April 1 1864		Thos T. Eckert	16	4	4	1	1	none	0		1
+5590	46	1	Chattanooga Mar 31st 1864		J. H. Bunnell	108	39	39	8	1	none	0		1
+5591	47	0	Ft Monroe April 2d 1864		Geo D Sheldon	48	10	12	3	1	none	0		1
+5591	47	1	Ft. Monroe April 2d 1864		Geo D Sheldon	117	16	35	7	1	none	0		1
+5592	48	0	Ft Monroe April 3d 1864		Geo D Sheldon	96	20	30	4	1	none	0		1
+5592	48	1	Washington April 5th 1864		93 pd  Thos T Eckert	87	12	23	2	1	none	0		1
+5593	49	0	Ft. Monroe Apr 5th 1864		Geo D. Sheldon	132	28	45	10	1	none	0		1
+5594	50	0	Ft. Monroe Apl 5 . 1864		Geo D Sheldon	90	28	27	7	1	none	0		1
+5594	50	1	Washington April 6 1864		Thos T. Eckert	87	12	22	6	1	none	0		1
+5595	51	0	Washington April 6 . 1864		Thos T. Eckert	78	14	31	4	1	none	0		1
+5595	51	1	Ft Monroe April 6 . 1864		Thos T Eckert	77	16	19	5	1	none	0		1
+5595	51	2	Ft Monroe April 6th 1864		Geo D Sheldon	55	16	18	4	1	none	0		1
+5596	52	0			Geo D Sheldon	44	9	12	2	1	none	0		1
+5596	52	1	Ft. Monroe Apl 6 . 1864		Geo D Sheldon	94	24	21	5	1	none	0		1
+5596	52	2	GD Sheldon Ft Monroe  Washington Apl 7th 1864	GD Sheldon Ft Monroe		54	15	21	4	1	none	0		1
+5597	53	0	Ft. Monroe Apl 7d 1864		Geo D Sheldon	128	28	36	7	1	none	0		1
+5598	54	0			SH Beckwith	67	10	16	4	1	none	0		2
+5598	54	1	Ft Monroe April 10th		Geo D Sheldon	36	8	9	2	1	none	0		1
+5598	54	2	Ft. Monroe April 10 1864		Geo D Sheldon	51	3	13	0	clear	none	0		3
+5599	55	0	Gettys Station April 10th		Holloway	62	7	13	2	9	none	0		1
+5599	55	1	Washington April 11th 1864 9 A. M.		Thos. T. Eckert	56	9	13	1	1	none	0		1
+5599	55	2	Ft Monroe April 11th 1864		Geo D Sheldon	76	14	22	2	1	none	0		1
+5600	56	0	Ft Monroe April 11th 1864		Geo. D Sheldon	69	17	19	3	1	none	0		1
+5600	56	1	Ft. Monroe April 11th 1864			152	31	47	10	1	none	0		1
+5601	57	0				69	15	25	6	1	none	0		1
+5601	57	1	Washington April 12th 1864		Thos. T. Eckert	106	17	38	3	1	none	0		1
+5602	58	0	Washington Apr 12 1864		Thos. T. Eckert	64	11	24	3	1	none	0		1
+5602	58	1	New York Apr 12 1864		Jno Horner	53	8	13	6	9	none	0		1
+5603	59	0	Annapolis April 12 , 1864		SH Beckwith	75	21	23	5	1	none	0		2
+5603	59	1	Ft Monroe April 13th 1864		Geo D Sheldon	99	5	21	0	clear	none	0		3
+5604	60	0	Ft. Monroe Apr 13 1864		Geo D Sheldon	56	1	10	1	clear	none	0		3
+5604	60	1	Gettys Station Apr 13 1864		for Shaffer the	21	0	3	0	clear	none	0		3
+5605	61	0	Ft Monroe Apr 13 . 1864		Geo D Sheldon	56	11	15	2	1	none	0		1
+5605	61	1	Washington April 13 . 1864		Thos T. Eckert	36	10	12	1	1	none	0		1
+5605	61	2	Ft Monroe Apr 14 1864		Geo D Sheldon	55	15	19	2	1	none	0		1
+5606	62	0	Washington Apr 14 / 64		TT Eckert	54	17	18	4	1	none	0		1
+5606	62	1	Ft. Monroe April 14 1864		Geo D Sheldon	34	8	8	2	1	none	0		1
+5606	62	2	Washington April 14 / 64		Geo D Sheldon	48	6	9	1	clear	none	0		3
+5607	63	0	Ft. Monroe Apr 15 . 1864		Geo D Sheldon	27	8	12	1	1	none	0		1
+5607	63	1	Ft Monroe Apr 16 1864		Geo D Sheldon	48	6	17	2	1	none	0		1
+5607	63	2	Washington April 16 1864		TT Eckert	47	19	20	3	1	none	0		1
+5608	64	0	Ft. Monroe Apr 16 1864		Geo D Sheldon	48	12	15	5	1	none	0		1
+5608	64	1	Ft Monroe April 17th 1864		Geo D Sheldon	132	54	59	15	1	none	0		1
+5609	65	0	Ft Monroe April 17th 1864		Geo D Sheldon	40	10	12	3	1	none	0		1
+5609	65	1	Ft Monroe April 18th 1864		Geo D Sheldon	61	14	15	2	1	none	0		1
+5609	65	2	Ft Monroe April 18 , 1864		Geo D Sheldon	65	18	15	4	1	none	0		1
+5610	66	0	Washington April 18th 1864		TT Eckert	48	16	15	7	1	none	0		1
+5610	66	1	Ft Monroe April 19th 1864		Geo D Sheldon	69	18	23	6	1	none	0		1
+5610	66	2	Maj Eckert Di  Ft Monroe April 19th 1864		Geo D Sheldon	52	18	19	5	1	none	0		1
+5611	67	0	Ft Monroe April 19th 1864		Geo D Sheldon	114	36	36	10	1	none	0		1
+5611	67	1	Ft Monroe April 19th 1864		Geo D Sheldon	114	25	32	10	1	none	0		1
+5612	68	0	Washington April 19th 1864		TT Eckert	157	45	41	9	1	none	0		1
+5612	68	1	Culpepper 8.40 P. M. April 19 / 64		SH Beckwith	76	17	24	3	1	none	0		2
+5613	69	0	Ft. Monroe Apr 19. 1864		Geo D Sheldon	105	25	24	6	1	none	0		1
+5613	69	1	Washington Apr 20 1864		Thos T Eckert	47	15	16	2	1	none	0		1
+5613	69	2	Maj Eckert Di  Ft Monroe April 20 1864		Geo D Sheldon	62	14	19	5	1	none	0		1
+5614	70	0	Ft Monroe Apr 20 1864		Geo D Sheldon	55	8	12	3	1	none	0		1
+5614	70	1	Ft Monroe Apr 20 1864		Geo D Sheldon	21	1	3	0	clear	none	0		3
+5614	70	2	Washington Apr 20 1864			97	18	43	5	1	none	0		1
+5615	71	0				216	136	63	26	1	none	0		1
+5616	72	0			446 pd  TT Eckert	97	46	38	14	1	none	0		1
+5616	72	1	Ft Monroe Apr 20 1864		Geo D Sheldon	76	9	14	2	1	none	0		1
+5617	73	0	Ft. Monroe April 20 1864		Geo D Sheldon	68	16	24	5	1	none	0		1
+5617	73	1	Ft Monroe April 20 1864		Geo D. Sheldon	66	17	17	4	1	none	0		1
+5617	73	2	Washington April 20 1864		T. T. Eckert	35	7	8	2	1	none	0		1
+5618	74	0	Ft Monroe April 21 . 1864		Geo D Sheldon	144	15	29	3	1	none	0		1
+5618	74	1	Ft. Monroe April 21 1864		Geo D Sheldon	50	17	19	8	1	none	0		1
+5619	75	0	Ft Monroe April 21 1864		Geo D Sheldon	136	36	47	13	9	none	0		1
+5619	75	1	Washington April 21  1864		T. T. Eckert	53	17	18	4	9	none	0		1
+5620	76	0	Washington April 21 . 1864		Thos T Eckert	71	12	21	3	1	none	0		1
+5620	76	1	Ft Monroe April 21 1864		Geo D Sheldon	94	27	26	8	1	none	0		1
+5620	76	2	Maj Eckert Di  Monroe April 21 , 1864		Geo D Sheldon	43	15	16	3	1	none	0		1
+5621	77	0	Ft Monroe April 21 1864		Geo D Sheldon	65	17	19	1	1	none	0		1
+5621	77	1	Washington April 21 1864		Thos T Eckert	71	12	17	3	2	none	0		1
+5622	78	0	Ft. Monroe April 22d 1864			244	66	77	13	1	none	0		1
+5623	79	0			Geo D Sheldon	112	23	33	5	9	none	0		1
+5623	79	1	Washington April 22 1864		Thos T Eckert	67	20	22	5	1	none	0		1
+5624	80	0	Ft. Monroe April 22 1864		Geo D Sheldon	76	13	21	5	1	none	0		1
+5624	80	1	Culpepper Apr 22 186		Geo D Sheldon	51	12	13	1	1	none	0		1
+5624	80	2	Washington Apr 22 1864		T. T. Eckert	88	23	23	7	1	none	0		1
+5625	81	0	Ft. Monroe Apr 23. 1864		Geo D Sheldon	104	28	33	7	1	none	0		1
+5625	81	1	Ft. Monroe April 23. 1864		Geo D Sheldon	114	19	43	6	1	none	0		1
+5626	82	0	Ft. Monroe Apr 23 , 1864		Geo D Sheldon	43	14	17	5	1	none	0		1
+5626	82	1	Ft. Monroe Apr 23 , 1864		Geo D Sheldon	60	24	23	1	1	none	0		1
+5626	82	2	Hd. Qrs. A. P. Apr 23 . 1864			81	22	24	2	9	none	0		1
+5627	83	0				76	23	36	3	9	none	0		1
+5627	83	1	Ft. Monroe Apr. 23 , 1864		Geo D Sheldon	34	11	8	2	1	none	0		1
+5627	83	2	Washington April 23d 1864		T. T. Eckert	62	15	21	6	1	none	0		1
+5628	84	0	Ft. Monroe Apr 23 , 1864		Geo D Sheldon	66	10	20	4	1	none	0		1
+5628	84	1	Culpepper Apr 23 1864		SH Beckwith	137	34	37	8	1	none	0		2
+5629	85	0	Ft Monroe Apr 24 1864		Geo D Sheldon	46	11	14	3	1	none	0		1
+5629	85	1	Ft. Monroe Apr 24 1864		Geo D Sheldon	74	24	19	5	1	none	0		1
+5630	86	0	Ft. Monroe April 24"  1864		Geo D Sheldon	123	47	44	12	1	none	0		1
+5630	86	1	Culpepper CH April 24 1864		SH Beckwith	87	28	29	4	1	none	0		2
+5631	87	0	Ft Monroe Apr 24 1864		Geo D Sheldon	111	28	31	9	1	none	0		1
+5631	87	1	Ft Monroe April 24th 1864		Geo D Sheldon	51	9	16	2	1	none	0		1
+5632	88	0	Ft. Monroe Apr 24 . 1864		Geo D Sheldon	69	10	17	6	1	none	0		1
+5632	88	1	Ft Monroe April 25th 1864		Geo D Sheldon	64	7	15	2	1	none	0		1
+5632	88	2	Ft Monroe Apr 25 . 1864		Geo D Sheldon	34	7	5	0	1	none	0		1
+5633	89	0	Washington April 25 . 1864		T. T. Eckert	141	33	38	8	1	none	0		1
+5633	89	1	Ft Monroe Apr 26 . 1864		Geo D Sheldon	27	7	6	2	1	none	0		1
+5634	90	0	Ft Monroe Apr 26 1864		Geo. D. Sheldon	69	17	24	8	1	none	0		1
+5634	90	1	Washington Apr 26 . 1864		T. T. Eckert	63	15	17	2	1	none	0		1
+5634	90	2	Ft Monroe Apr 27 1864		Geo D Sheldon	59	19	24	2	1	none	0		1
+5635	91	0	Ft Monroe Apr 27 1864		Geo D Sheldon	68	21	19	3	1	none	0		1
+5635	91	1	Hd Qrs A. P. Apr 27 1864			61	12	14	2	1	none	0		1
+5635	91	2	Yorktown Apr 27 . 1864		HN Snow	31	2	9	2	clear	none	0		3
+5636	92	0	Yorktown Apr 27 1864		43 W  HN Snow	44	3	6	1	clear	none	0		3
+5636	92	1	Ft Monroe Apr 27 1864		Geo D Sheldon	43	3	8	2	9	none	0		1
+5636	92	2	Ft Monroe Apr 28 1864		Geo D Sheldon	35	11	13	2	1	none	0		1
+5637	93	0	Washington Apr 28 1864		T. T. Eckert	43	0	2	0	clear	none	0		3
+5637	93	1	Ft Monroe Apr 28 1864		Geo D. Sheldon	69	5	12	1	clear	none	0		3
+5637	93	2	Maj Eckert Di  Ft Monroe Apr 28th 1864		Geo D Sheldon	55	20	16	0	1	none	0		1
+5638	94	0	Ft. Monroe Apr 29 . 1864		Geo D Sheldon	34	6	8	0	1	none	0		1
+5638	94	1	Ft Monroe Apr 29 1864		Geo D Sheldon	36	2	5	1	clear	none	0		3
+5638	94	2	Yorktown April 29 1864			56	6	16	0	clear	none	0		3
+5639	95	0			HN Snow	38	5	10	1	9	none	0		1
+5639	95	1	Ft. Monroe Apr 29 1864		Geo D Sheldon	60	16	21	5	1	none	0		1
+5639	95	2	Yorktown Apr 29 1864			53	10	13	0	1	none	0		1
+5640	96	0			Geo Sheldon	152	25	33	5	9	none	0		1
+5641	97	0	Ft Monroe May 1 1864		SH Beckwith	31	9	9	4	1	none	0		2
+5641	97	1	Ft Monroe May 1 1864		S.	53	15	13	4	1	none	0		1
+5641	97	2	Washington May 1 1864		Eckert	40	2	8	0	9	none	0		1
+5642	98	0	Washington May 1 1864		Eckert	91	16	28	5	1	none	0		1
+5642	98	1	Ft Monroe May 1 1864		Geo D Sheldon	26	6	3	0	1	none	0		1
+5642	98	2	Culpepper May 1 1864		SH Beckwith	47	11	13	3	1	none	0		2
+5643	99	0	Ft Monroe May 1 , 1864		Geo. D. Sheldon	56	17	19	5	1	none	0		1
+5643	99	1	Yorktown May 1 . 1864			106	11	23	0	9	none	0		1
+5644	100	0			H. N. Snow	39	4	8	1	9	none	0		1
+5644	100	1	Ft Monroe May 1 . 1864		Geo D Sheldon	61	15	21	3	1	none	0		1
+5644	100	2	Ft Monroe May 2 , 1864		Geo D Sheldon	84	19	28	9	1	none	0		1
+5645	101	0	Ft Monroe May 2 . 1864		Geo D. Sheldon	63	20	22	3	1	none	0		1
+5645	101	1	Washington May 2 . 1864		TT Eckert	61	21	20	5	1	none	0		1
+5645	101	2	Ft Monroe May 2 . 1864		Geo D Sheldon	46	8	13	2	1	none	0		1
+5646	102	0	Hd. Qrs A. of P. May 2 1864			81	9	26	2	1	none	0		1
+5646	102	1	Ft. Monroe May 2 1864		Geo D. Sheldon	89	28	34	10	1	none	0		1
+5647	103	0	Culpeper CH May 2d		S. H. Beckwith	36	9	9	3	1	none	0		2
+5647	103	1	Ft. Monroe May 2 . 1864		Geo D Sheldon	96	28	24	5	1	none	0		1
+5647	103	2	Yorktown May 2 . 1864			39	2	5	0	clear	none	0		3
+5648	104	0			H. N. Snow	27	2	3	1	1	none	0		1
+5648	104	1	Ft. Monroe May 2 1864		Geo D. Sheldon	87	24	20	6	1	none	0		1
+5648	104	2	Yorktown May 3 . 1864			35	2	6	0	clear	none	0		3
+5649	105	0			H. N. Snow	45	6	17	2	1	none	0		1
+5649	105	1	Yorktown May 3 1864		H. N Snow	50	5	11	1	9	none	0		1
+5649	105	2	Ft Monroe May 3d 1864		Geo D Sheldon	51	10	13	3	1	none	0		1
+5650	106	0	Yorktown May 3 , 1864		HN Snow	49	4	12	1	9	none	0		1
+5650	106	1	Hd Qrs A. of P. May 2nd 1864			84	12	25	2	1	none	0		1
+5651	107	0	Culpepper May 2 . 11.30		SH Beckwith	51	9	12	3	1	none	0		2
+5651	107	1	Hd Qrs A of P May 2 1864			76	14	22	3	9	none	0		1
+5652	108	0	Ft. Monroe May 6 1864		103 pd	187	46	52	9	1	none	0		1
+5653	109	0	Jamestown May 7 / 64		R. OBrien	84	15	21	2	9	none	0		1
+5653	109	1	Ft. Monroe May 7th 1864		Geo D Sheldon	77	18	24	6	1	none	0		1
+5654	110	0	Ft Monroe May 8 / 64		Geo D Sheldon	205	55	68	10	1	none	0		1
+5655	111	0			Geo. D. Sheldon	215	52	66	21	1	none	0		1
+5656	112	0				211	48	56	9	9	none	0		1
+5657	113	0			Geo. D. Sheldon	146	27	44	7	1	none	0		1
+5658	114	0			R OBrien	233	47	69	10	1	none	0		1
+5659	115	0	Ft. Monroe May 9th 1864		Geo D Sheldon	140	31	49	9	1	none	0		1
+5659	115	1	Maj Eckert Di  Ft Monroe May 9 1864		Geo D. Sheldon	93	18	30	4	1	none	0		1
+5660	116	0	Washington May 9 1864		Eckert	49	10	14	2	1	none	0		1
+5660	116	1	War Dep't Wash'n May 9 1864	War Dep't	Thos T. Eckert	71	22	24	4	1	none	0		1
+5660	116	2	Washington May 10 1864		TT Eckert	48	5	11	1	9	none	0		1
+5661	117	0	Bermuda Landing May 10th 1864		R O Brien	219	36	57	6	1	none	0		1
+5662	118	0	Ft Monroe May 9th 1864			227	77	88	13	1	none	0		1
+5663	119	0			Geo D Sheldon	82	23	34	4	1	none	0		1
+5663	119	1	Maj Eckert Di  Ft Monroe May 10 1864		Geo Sheldon	121	42	53	9	1	none	0		1
+5664	120	0	Bermuda Landing May 10 . 1864		R OBrien	41	10	4	0	1	none	0		1
+5664	120	1	Ft Monroe May 11 . 1864		Geo. D. Sheldon	136	42	46	9	1	none	0		1
+5664	120	2	Washington May 12 1864		A Stager	30	5	11	0	1	none	0		1
+5665	121	0	Washington May 12 1864		T. T. Eckert	107	29	41	8	1	none	0		1
+5665	121	1	Ft. Monroe May 12th 12 P. M. 1864			111	34	40	7	1	none	0		1
+5666	122	0			Geo D Sheldon	57	16	23	2	1	none	0		1
+5666	122	1	Gen'l Butlers Hd Qrs May 12th 1864		R OBrien	92	10	13	5	9	none	0		1
+5667	123	0	Wash'n 9 A. M. May 13 1864		TT Eckert	96	27	35	5	1	none	0		1
+5667	123	1	From Ft Monroe May 13 , 1864		Geo D. Sheldon	69	24	31	8	1	none	0		1
+5668	124	0	From Genl Grants Hd. Qrs May 7th 1864		Post marked Alexandria May 10th / 64	5	0	1	0	short	none	0		3
+5668	124	1	Maj TT Eckert Wash'n  Received at Ft Monroe by mail May 13th noon / 64	Maj TT Eckert		224	54	64	8	1	none	0		1
+5669	125	0			384 W govt Duplicate  SH Beckwith	132	32	40	6	1	none	0		2
+5669	125	1	Wash'n May 14th 1864		Eckert	30	13	14	1	1	none	0		1
+5670	126	0	Ft. Monroe May 14th 1862		Geo D Sheldon	105	30	36	8	1	none	0		1
+5670	126	1	Ft Monroe May 14th 1864			113	43	46	10	1	none	0		1
+5671	127	0			Geo D Sheldon	33	10	15	2	2	none	0		1
+5671	127	1	Hd Qrs Gen'l Butler may 14 / 64		R OBrien	93	19	25	2	1	none	0		1
+5671	127	2	Gen'l Butlers Hd Qrs 12.50 PM May 14 / 64		R OBrien	59	16	19	3	1	none	0		1
+5672	128	0	Hd Qrs Gen'l Butler May 14th 1864.		R OBrien	78	21	26	6	1	none	0		1
+5672	128	1	War Dept Washn 8.45 P. M. May 14 / 64	War Dept	Thos T Eckert	31	8	13	2	1	none	0		1
+5672	128	2	Gen'l Butlers Hd Qrs. May 15th 1864		R OBrien	56	16	18	3	1	none	0		1
+5673	129	0	Ft Monroe May 15 . 1864		Geo D Sheldon	97	24	30	3	1	none	0		1
+5673	129	1	Ft Monroe May 15th 1864		Geo D Sheldon	31	6	12	2	1	none	0		1
+5673	129	2	Ft Monroe May 16 . 1864		Geo D Sheldon	85	22	24	9	1	none	0		1
+5674	130	0	Ft Monroe May 16 1864		Geo D Sheldon	78	19	20	2	1	none	0		1
+5674	130	1	Ft Monroe May 17 , 1864			143	44	56	7	1	none	0		1
+5675	131	0			Geo D Sheldon	53	13	16	3	1	none	0		1
+5675	131	1	Hd Qrs Gen'l Butler May 17 1864		R OBrien	122	25	38	6	1	none	0		1
+5676	132	0	Wash'n May 18th 1864		TT Eckert	139	25	36	5	1	none	0		1
+5676	132	1	Maj Eckert Di  Hd Qrs Gen'l Butler May 18 . 1864		R OBrien	82	13	16	6	1	none	0		1
+5677	133	0	Ft. Monroe May 18th 1864		Geo D. Sheldon	79	27	30	12	1	none	0		1
+5677	133	1	Ft Monroe May 19th 1864		Geo D Sheldon	106	25	27	11	1	none	0		1
+5678	134	0	War Dept May 19		TT Eckert	141	25	56	6	1	none	0		1
+5678	134	1	Washington May 20 1864 4.45 PM		TT Eckert	75	17	27	5	1	none	0		1
+5679	135	0	Washington May 20 . 1864			29	14	15	2	1	none	0		1
+5679	135	1	Fortress Monroe May 20 / 64		Geo D Sheldon	177	55	61	14	1	none	0		1
+5680	136	0	Hd Qrs Genl Butler May 20 . 1864		R. OBrien	48	14	13	5	1	none	0		1
+5680	136	1	Hd Qrs Gen Butler May 20 1864		R OBrien	77	21	24	9	9	none	0		1
+5680	136	2	War Dep't May 20 1864		TT Eckert	31	8	12	1	1	none	0		1
+5681	137	0	Ft Monroe May 21 1864		Geo D Sheldon	66	25	20	10	1	none	0		1
+5681	137	1	Ft Monroe May 21st 1864		Geo D Sheldon	96	32	33	12	1	none	0		1
+5682	138	0	Hd Qrs Genl Butler May 21 . 1864		R OBrien	120	23	23	6	1	none	0		1
+5682	138	1	Hd Qrs Gen'l Butler May 21 . 1864		R OBrien	68	16	17	2	1	none	0		1
+5683	139	0	Ft Monroe May 22d 1864		Geo D Sheldon	161	50	56	12	1	none	0		1
+5684	140	0	War Dept May 22 . 1864		T. T. Eckert	156	34	45	5	1	none	0		1
+5684	140	1	War Dept May 23 . 1864 12.35 PM		T. T. Eckert	70	31	31	9	1	none	0		1
+5685	141	0	War Dept May 22 1864		Thos T Eckert	99	32	34	9	1	none	0		1
+5685	141	1	Ft. Monroe May 23d 1864			135	48	58	10	1	none	0		1
+5686	142	0			Geo D Sheldon	173	60	65	10	1	none	0		1
+5687	143	0	Genl Butlers Hd Qrs May 23d 1864		R OBrien	113	16	22	4	1	none	0		1
+5687	143	1	Ft. Monroe May 24 1864			73	18	24	3	1	none	0		1
+5688	144	0				250	67	83	11	1	none	0		1
+5689	145	0			Geo D Sheldon	253	59	80	11	1	none	0		1
+5690	146	0	Ft Monroe May 24 . 1864		Geo D Sheldon	119	45	52	9	1	none	0		1
+5690	146	1	Ft Monroe May 24 . 1864			75	27	28	7	1	none	0		1
+5691	147	0			Geo D Sheldon	30	5	11	1	1	none	0		1
+5691	147	1	Wash'n May 24 . 1864		T. T. Eckert	161	60	64	17	1	none	0		1
+5692	148	0	Ft. Monroe May 25th 1864		Geo D Sheldon	96	31	41	7	1	none	0		1
+5692	148	1	Genl Butlers Hd Qrs May 25 1864			98	28	33	5	1	none	0		1
+5693	149	0			163 col  R OBrien	59	10	11	3	1	none	0		1
+5693	149	1	Ft. Monroe May 25 1864		Geo D Sheldon	78	27	27	8	1	none	0		1
+5694	150	0	Ft Monroe May 25 1864		Geo D Sheldon	78	22	25	4	1	none	0		1
+5694	150	1	Washn May 26 . 1864			129	38	51	7	1	none	0		1
+5695	151	0			TT Eckert	28	9	12	3	1	none	0		1
+5695	151	1	Washington May 26th 1864		Geo D Sheldon Ft Monroe	5	0	0	0	short	none	0		3
+5695	151	2	Ft Monroe May 27 1864		Geo D Sheldon	78	21	20	5	2	none	0		1
+5696	152	0	Wash'n May 26 1864			178	15	49	4	clear	none	0		3
+5697	153	0			TT Eckert	23	1	4	0	clear	none	0		3
+5697	153	1	Ft. Monroe May 27 1864		Geo D Sheldon	206	59	73	16	1	none	0		1
+5698	154	0	Genl Butlers Hd Qrs May 26 / 64		R OBrien	34	7	11	1	1	none	0		1
+5698	154	1	Gen Butlers Hd Qrs May 26 1864		R OBrien	39	9	9	2	1	none	0		1
+5698	154	2	Hd Qrs Genl Butler May 26 1864		R OBrien	131	28	40	6	1	none	0		1
+5699	155	0	Ft. Monroe May 27 . 1864		Geo D Sheldon	45	11	12	3	1	none	0		1
+5699	155	1	Wash'n May 27 . 1864		T. T. Eckert	99	16	25	6	9	none	0		1
+5700	156	0	Washn May 27 1864		T. T. Eckert	163	34	51	8	9	none	0		1
+5701	157	0	Washington May 27 1864		T. T. Eckert	188	41	69	14	1	none	0		1
+5701	157	1	Genl Butlers Hd Qrs May 27 1864		R OBrien	45	9	18	3	1	none	0		1
+5702	158	0	Wash'n May 27 1864		Thos T Eckert	127	16	25	2	2	none	0		1
+5703	159	0	Hd Qrs Genl Butler May 27 1864		R. OBrien	113	22	34	6	1	none	0		1
+5703	159	1	Washington May 27 . 1864		T. T. Eckert	48	8	8	0	1	none	0		1
+5704	160	0	Ft Monroe May 27 1864		Geo D Sheldon	70	29	25	4	1	none	0		1
+5704	160	1	Wash'n May 27 1864			140	23	39	5	1	none	0		1
+5705	161	0			TT Eckert	146	24	49	6	1	none	0		1
+5706	162	0	Wash'n May 27 1864		T. T. Eckert	127	30	52	11	1	none	0		1
+5706	162	1	Ft Monroe May 28 1864		Geo D Sheldon	76	15	27	4	1	none	0		1
+5707	163	0	Hd Qrs Genl Butler May 27 .1864		R OBrien	90	13	14	3	9	none	0		1
+5707	163	1	Ft Monroe May 28 1864			113	24	39	3	1	none	0		1
+5708	164	0			Geo D Sheldon	83	20	30	4	1	none	0		1
+5708	164	1	Washington May 28 1864		TT Eckert	48	17	16	3	1	none	0		1
+5708	164	2	Ft Monroe May 28th 1864		Geo D Sheldon	85	29	33	5	1	none	0		1
+5709	165	0	Ft Monroe May 28 . 1864		Geo D Sheldon	42	12	16	4	1	none	0		1
+5709	165	1	Washington May 28  1864		T. T. Eckert	121	20	28	5	9	none	0		1
+5709	165	2	Ft Monroe May 28 . 1864		Geo D Sheldon	39	7	8	0	1	none	0		1
+5710	166	0	Ft Monroe May 28 1864		TT Eckert	102	27	36	5	1	none	0		1
+5710	166	1	Washn May 28 1864		TT Eckert	117	20	39	5	1	none	0		1
+5711	167	0	Wash'n May 28 1864		TT Eckert	89	28	41	7	1	none	0		1
+5711	167	1	Maj Eckert Di  Fortress Monroe May 28 / 64		Geo D Sheldon	59	19	23	6	1	none	0		1
+5711	167	2	Genl Butlers Hd Qrs May 28		OBrien	25	3	5	1	1	none	0		1
+5712	168	0	Ft Monroe May 29 . 1864		Geo D Sheldon	78	26	23	6	1	none	0		1
+5712	168	1	Gen Butlers Hd Qrs May 28 1864		R OBrien	58	13	11	3	1	none	0		1
+5713	169	0	Gen Butlers Hd May 28 / 64		R OBrien	103	25	30	6	1	none	0		1
+5713	169	1	Ft. Monroe May 29 1864		Geo D Sheldon	105	17	28	6	1	none	0		1
+5714	170	0	Gen Butlers Hd Qrs May 29 . 1864		R. OBrien	160	38	48	5	1	none	0		1
+5715	171	0	Ft Monroe May 29 1864		Geo D Sheldon	114	41	44	8	1	none	0		1
+5715	171	1	Washington May 29 1864		T. T. Eckert	95	18	24	4	1	none	0		1
+5716	172	0	Hd Qrs Gen May 29 . 1864		R OBrien	84	22	34	3	1	none	0		1
+5716	172	1	Ft. Monroe May 29 . 1864		Geo D Sheldon	125	26	35	7	1	none	0		1
+5717	173	0	Washington May 29 . 1864			43	6	6	0	9	none	0		1
+5717	173	1	Fortress Monroe May 30th 1864		Geo D. Sheldon	55	24	17	5	1	none	0		1
+5717	173	2	Washington May 30 / 64			95	23	34	5	1	none	0		1
+5718	174	0			T. T. Eckert	84	23	37	4	1	none	0		1
+5718	174	1	To Maj. Eckert Wash'n.  Fortress Monroe May 30th 1864	To Maj. Eckert	Geo. D. Sheldon	123	34	41	11	1	none	0		1
+5719	175	0	Fortress Monroe May 30 / 64		Geo. D. Sheldon	102	20	29	7	1	none	0		1
+5719	175	1	To Caldwell Hd. Qrs A. P.  Fortress Monroe May 30 / 64		Geo. D. Sheldon	51	16	16	3	1	none	0		1
+5720	176	0	Gen Butlers Hd Qrs May 30 1864		R OBrien	32	7	7	2	1	none	0		1
+5720	176	1	Hd Qrs Genl Butler May 30		R OBrien	95	24	32	4	1	none	0		1
+5720	176	2	Washington May 31st 1864		T. T. Eckert	38	11	11	5	9	none	0		1
+5721	177	0	Fortress Monroe May 31 / 64		Geo. D. Sheldon	167	43	54	10	1	none	0		1
+5722	178	0	Washington May 31 , 1864		Thos T Eckert	97	26	22	5	1	none	0		1
+5722	178	1	Ft. Monroe May 31 1864		Geo D Sheldon	69	18	20	4	1	none	0		1
+5723	179	0	Wash'n May 31 1864		TT Eckert	60	14	18	4	1	none	0		1
+5723	179	1	Ft Monroe May 31 . 1864		Geo D Sheldon	121	28	41	7	1	none	0		1
+5724	180	0	Ft Monroe May 31 1864		Geo D Sheldon	52	18	18	6	1	none	0		1
+5724	180	1	Washington May 31st 1864		TT Eckert	58	15	20	6	1	none	0		1
+5724	180	2	Ft. Monroe May 31 . 1864		Geo D. Sheldon	51	11	16	5	1	none	0		1
+5725	181	0	Fortress Monroe June 1st 1864		Geo. D. Sheldon	171	26	46	9	1	none	0		1
+5726	182	0	Fortress Monroe June 1 / 64		Geo D. Sheldon	247	59	74	14	1	none	0		1
+5727	183	0	Ft Monroe June 1st 1864		Geo. D. Sheldon	86	27	27	6	1	none	0		1
+5727	183	1	Fortress Monroe June 2d 1864		(over)	124	26	39	6	1	none	0		1
+5728	184	0			Geo. D. Sheldon	53	9	19	2	9	none	0		1
+5728	184	1	Ft Monroe June 3 / 64		Geo. D. Sheldon	146	31	35	9	1	none	0		1
+5729	185	0			Nashville 8.55 A. M.	3	0	0	0	short	none	0		3
+5729	185	1	Maj Eckert Wash'n  June 3d	Maj Eckert	J. C. Van Duzer	140	50	46	9	1	none	0		1
+5729	185	2	Fortress Monroe June 4 / 64		Geo D. Sheldon	61	17	19	5	1	none	0		1
+5730	186	0	Fortress Monroe June 4 / 64		Geo. D. Sheldon	97	27	39	8	1	none	0		1
+5730	186	1	Fortress Monroe June 4 / 64		Geo. D. Sheldon	78	25	28	5	1	none	0		1
+5731	187	0	White House June 5 / 64		Bickford	34	4	2	0	1	none	0		1
+5731	187	1	Fortress Monroe June 5 / 64		Geo. D. Sheldon	105	28	36	6	1	none	0		1
+5732	188	0	3 am. Washington June 6 / 64	3 am.	TT Eckert	54	18	20	5	1	none	0		1
+5732	188	1	To Maj Eckert Wash'n  Fort Monroe June 6 / 64	To Maj Eckert	Geo. D. Sheldon	52	18	26	5	1	none	0		1
+5733	189	0	Ft. Monroe <deletion>Marc</deletion> June 6th / 64		Geo D Sheldon	206	44	65	6	1	none	0		1
+5734	190	0	Ft Monroe June 8 / 64		Geo D Sheldon	48	24	26	6	1	none	0		1
+5734	190	1	Gen Butlers Hd. Qrs 5.15 A. M. June 9 / 64		R O'Brien	48	9	15	2	1	none	0		1
+5734	190	2	Ft Monroe June 9th 1864		Geo. D. Sheldon	41	20	19	7	1	none	0		1
+5735	191	0	Ft Monroe June 9. 1864		Geo D Sheldon	147	28	38	7	1	none	0		1
+5735	191	1	Fortress Monroe June 9 - 1864		(over)	81	17	24	2	1	none	0		1
+5736	192	0			Geo. D. Sheldon	39	9	12	3	9	none	0		1
+5736	192	1	Ft Monroe June 9 / 64		Geo. D. Sheldon	41	17	20	4	1	none	0		1
+5736	192	2	Ft Monroe June 10th 1864			114	34	36	8	1	none	0		1
+5737	193	0	Ft Monroe June 10 / 64		Geo. D. Sheldon	70	22	27	7	1	none	0		1
+5737	193	1	Ft Monroe June 11 1864		Geo D Sheldon	127	37	35	6	1	none	0		1
+5738	194	0	Ft Monroe June 11 . 1864		Geo D Sheldon	134	35	51	11	1	none	0		1
+5738	194	1	Ft Monroe June 12 1864 3.15 AM		Geo D Sheldon	69	24	23	6	1	none	0		1
+5739	195	0	White House 11 June 1864		Bickford	36	2	8	0	clear	none	0		3
+5739	195	1	Ft. Monroe June 12 1864		Geo D Sheldon	65	15	21	4	1	none	0		1
+5739	195	2	Hd Qrs A. US June 12 1864		SH Beckwith	61	11	16	2	1	none	0		2
+5740	196	0	Washington June 12 , 1864		T. T. Eckert	168	27	43	7	1	none	0		1
+5740	196	1	Ft. Monroe June 12 1864			36	1	9	0	clear	none	0		3
+5741	197	0	Gen Butlers Hd Qrs June 12 / 64		R OBrien	74	11	10	3	1	none	0		1
+5741	197	1	Ft. Monroe June 12 . 1864			131	28	34	5	1	none	0		1
+5742	198	0	Ft Monroe June 12 . 1864		Geo D Sheldon	127	38	42	8	1	none	0		1
+5742	198	1	Gen Butlers Hd Qrs June 12 1864		R OBrien	56	16	15	3	1	none	0		1
+5743	199	0	Gen Butlers Hd Qrs June 12 / 64		R. OBrien	71	13	6	2	1	none	0		1
+5743	199	1	Geo D Sheldon Ft Monroe  Washington June 13 . 1864 4.20 P. M	Geo D Sheldon Ft Monroe	Thos T Eckert	48	13	20	3	1	none	0		1
+5743	199	2	Fortress Monroe June 13 / 64		(over)	36	14	18	2	1	none	0		1
+5744	200	0			Geo. D. Sheldon	45	13	13	2	1	none	0		1
+5744	200	1	Ft. Monroe June 13th 1864		Geo D Sheldon	167	43	48	11	1	none	0		1
+5745	201	0	Ft Monroe June 13 1864		Geo D Sheldon	179	43	61	12	1	none	0		1
+5745	201	1	Washington June 13 1864		T. T. Eckert	42	3	6	1	clear	none	0		3
+5746	202	0	Ft. Monroe June 13 1864		Geo D Sheldon	179	66	69	11	1	none	0		1
+5746	202	1	Washington June 13 . 1864		Thos T. Eckert	47	6	6	0	9	none	0		1
+5747	203	0	Gen Butlers Hd Qrs June 13 / 64		RO Brien	35	8	11	2	1	none	0		1
+5747	203	1	Gen Butlers Hd Qrs June 13 1864		R OBrien	46	11	13	1	1	none	0		1
+5747	203	2	Ft Monroe June 14 1864		Geo D Sheldon	72	25	22	6	1	none	0		1
+5747	203	3	Ft Monroe June 14 1864			12	5	6	2	1	none	0		1
+5748	204	0	Ft Monroe June 14 . 1864		Geo D Sheldon	42	16	18	6	1	none	0		1
+5748	204	1	Ft Monroe June 14 1864		Geo D Sheldon	60	19	20	6	1	none	0		1
+5748	204	2	Fortress Monroe June 14 1864		Geo D Sheldon	87	37	44	9	1	none	0		1
+5749	205	0	Fortress Monroe June 14 - 1864		(over)	232	64	76	12	1	none	0		1
+5750	206	0			Geo. D. Sheldon	93	16	27	5	1	none	0		1
+5750	206	1	Ft Monroe June 14 1864		Geo D Sheldon	51	20	19	9	9	none	0		1
+5751	207	0	Washington June 14 1864		T. T. Eckert	70	15	23	3	1	none	0		1
+5751	207	1	Ft Monroe June 15 / 64		Geo D Sheldon	62	28	29	7	1	none	0		1
+5751	207	2	Washington June 15 / 64		T. T. Eckert	49	9	12	3	1	none	0		1
+5752	208	0	Ft Monroe June 16 / 64		Geo. D. Sheldon	54	16	21	6	1	none	0		1
+5752	208	1	Fortress Monroe June 16 / 64		Geo. D. Sheldon	88	30	32	7	1	none	0		1
+5753	209	0	Fortress Monroe June 16 / 64		Geo D. Sheldon	149	49	61	8	1	none	0		1
+5753	209	1	Fortress Monroe June 17 / 64			59	16	21	6	1	none	0		1
+5754	210	0			Geo. D. Sheldon	92	24	32	9	1	none	0		1
+5754	210	1	White House June 17 / 64		Bickford	28	2	4	0	clear	none	0		3
+5755	211	0	9 P.M. Ft Monroe June 17 / 64		Geo D. Sheldon	216	53	71	14	1	none	0		1
+5756	212	0	Fortress Monroe June 18 / 64		Geo. D. Sheldon	161	41	57	8	1	none	0		1
+5756	212	1	White House June 18 / 64			33	2	5	0	2	none	0		1
+5757	213	0	Wash'n June 18 / 64		T. T. Eckert	54	3	10	1	clear	none	0		3
+5757	213	1	Ft Monroe June 18 / 64			138	32	48	7	1	none	0		1
+5758	214	0				229	46	74	16	1	none	0		1
+5759	215	0			Geo. D. Sheldon	91	35	44	7	1	none	0		1
+5759	215	1	Ft Monroe June 19 / 64		Geo. D. Sheldon	78	21	22	7	1	none	0		1
+5760	216	0	Ft Monroe June 19 / 64		Geo. D. Sheldon	176	47	62	11	1	none	0		1
+5760	216	1	Fortress Monroe June 19th 1864		Dealy	40	10	13	3	1	none	0		1
+5761	217	0	White House June 20 / 64		Bickford	67	3	8	0	clear	none	0		3
+5761	217	1	Ft Monroe June 20th 1864		Geo. D. Sheldon	42	11	14	3	1	none	0		1
+5761	217	2	White House June 20th 1864		Bickford .	37	7	9	0	9	none	0		1
+5762	218	0	Fortress Monroe June 20 / 64		Geo. D. Sheldon	152	42	58	13	9	none	0		1
+5762	218	1	White House June 21 / 64			36	2	2	0	clear	none	0		3
+5763	219	0	Ft Monroe June 20 / 64		Geo. D. Sheldon	62	26	26	9	1	none	0		1
+5763	219	1	Ft Monroe June 20 / 64		Geo. D. Sheldon	79	20	24	5	1	none	0		1
+5763	219	2	Fortress Monroe June 21 / 64		Geo. D. Sheldon	51	14	13	4	1	none	0		1
+5764	220	0	Ft Monroe June 21 / 64		Geo D Sheldon	48	22	22	7	1	none	0		1
+5764	220	1	Ft Monroe June 22 / 64			147	42	55	7	1	none	0		1
+5765	221	0			Geo. D. Sheldon	38	7	9	3	9	none	0		1
+5765	221	1	Fortress Monroe June 22 / 64		Geo. D. Sheldon	114	34	39	10	1	none	0		1
+5766	222	0	Hd. Qr's. A. P. June 22 / 64			54	11	14	4	1	none	0		1
+5766	222	1	Ft Monroe June 23d. 3 A. M.		Geo. D. Sheldon	68	3	10	2	clear	none	0		3
+5767	223	0	Ft Monroe June 24 / 64		Geo. D. Sheldon	41	17	14	4	1	none	0		1
+5767	223	1	Ft Monroe June 27 / 64		Geo. D. Sheldon	42	17	15	7	1	none	0		1
+5767	223	2	Washington July 7th 1864		T. T. Eckert	50	14	16	4	1	none	0		1
+5768	224	0	City Point July 9 / 64		SH Beckwith	47	20	18	3	1	none	0		2
+5768	224	1	Washington July 9 / 64		T. T. Eckert	32	9	9	2	1	none	0		1
+5768	224	2	Ft Monroe July 10 / 64 10.15 A. M.		Geo. D. Sheldon	53	14	18	4	1	none	0		1
+5768	224	3	Ft Monroe July 10th 1864		Geo D Sheldon	31	11	10	1	1	none	0		1
+5769	225	0	Ft Monroe July 10 / 64		Geo D. Sheldon	110	29	33	12	1	none	0		1
+5769	225	1	Ft Monroe July 10 / 64		Geo. D. Sheldon	34	10	15	2	1	none	0		1
+5770	226	0	Ft Monroe July 10 / 64		Geo. D. Sheldon	48	25	20	7	1	none	0		1
+5770	226	1	Fortress Monroe July 12 / 64		Geo. D. Sheldon	104	32	32	5	1	none	0		1
+5771	227	0	Fortress Monroe July 13 / 64		Geo. D. Sheldon	38	14	13	5	1	none	0		1
+5771	227	1	New Castle July 13 / 64		MVB Buell	105	17	31	12	9	none	0		1
+5772	228	0	Baltimore July 13 1864		J. W. Sampson	57	20	22	6	1	none	0		1
+5772	228	1	Gen Butlers Hd Qrs. July 24 / 64		R. O'Brien	55	15	20	3	1	none	0		1
+5772	228	2	Fortress Monroe July 25 / 64			64	33	25	7	1	none	0		1
+5773	229	0			Geo. D. Sheldon	171	85	61	27	1	none	0		1
+5774	230	0	Ft Monroe July 25 / 64		Geo. D. Sheldon	87	22	27	6	1	none	0		1
+5774	230	1	Butlers Hd Qrs July 25 / 64		R. O'Brien	62	15	22	6	1	none	0		1
+5775	231	0	Washington July 27 / 64		Eckert	54	15	12	2	1	none	0		1
+5775	231	1	Baltimore July 30 / 64		J. W. Sampson	55	12	20	7	1	none	0		1
+5775	231	2	Washington July 30th 1864			84	21	31	6	1	none	0		1
+5776	232	0			T. T. Eckert	48	11	21	3	1	none	0		1
+5776	232	1	Washington July 31 / 64		T. T. Eckert	33	9	10	0	1	none	0		1
+5776	232	2	Ft Monroe July 31 / 64		Geo. D. Sheldon	56	17	21	5	1	none	0		1
+5777	233	0	Washington August 7 / 64		T. T. Eckert	44	10	11	4	1	none	0		1
+5777	233	1	Maj. Eckert Wash'n.  Ft. Monroe Aug 8 / 64	Maj. Eckert	Geo. D. Sheldon	68	18	22	5	1	none	0		1
+5777	233	2	Ft Monroe Aug 9 / 64		(over)	60	23	17	4	1	none	0		1
+5778	234	0			Geo D Sheldon	87	13	20	3	1	none	0		1
+5778	234	1	Washington Aug 11th 1864		T. T. Eckert	58	18	23	4	1	none	0		1
+5779	235	0	Washington Aug 11 / 64		T. T. Eckert	55	18	23	6	1	none	0		1
+5779	235	1	Ft Monroe Aug 20 / 64		Geo. D. Sheldon	86	32	32	7	1	none	0		1
+5780	236	0	Fortress Monroe Aug 20 / 64		Geo. D. Sheldon	110	32	42	8	1	none	0		1
+5780	236	1	City Point Va. Aug 27 / 64		S. H. Beckwith	47	15	15	6	1	none	0		2
+5781	237	0	Ft Monroe Aug. 28 / 64		Geo. D. Sheldon	87	30	39	9	1	none	0		1
+5781	237	1	Ft Monroe Aug 28 / 64			97	19	19	3	1	none	0		1
+5782	238	0	Head Qrs A. P. Sept. 1 / 64			48	5	8	0	2	none	0		1
+5782	238	1	Washington Sept. 9 / 64		T. T. Eckert	88	22	32	3	1	none	0		1
+5783	239	0	Ft Monroe Sept. 16 / 64		Geo. D. Sheldon	114	36	44	6	1	none	0		1
+5783	239	1	Fort Monroe Sept 16 / 64		Geo. D. Sheldon	97	29	35	6	1	none	0		1
+5784	240	0	Fortress Monroe Sept 19 / 64		Geo. D.  Sheldon	56	18	15	4	1	none	0		1
+5784	240	1	Ft Monroe Sept. 30 / 64		Geo. D. Sheldon	135	24	37	7	1	none	0		1
+5785	241	0	Ft Monroe Sept. 30 / 64		Geo D. Sheldon	135	32	33	7	1	none	0		1
+5785	241	1	Ft Monroe Oct. 1st 1864		Geo. D. Sheldon	39	9	13	3	1	none	0		1
+5786	242	0	Washington 3 P. M. Oct 4 / 64		Geo. D. Sheldon	123	22	39	9	1	none	0		1
+5786	242	1	Gen Butler's Hd Qrs. Oct 4 / 64		R. O'Brien	31	7	10	1	1	none	0		1
+5787	243	0	Ft Monroe Oct 4 / 64		Geo. D. Sheldon	59	17	21	7	1	none	0		1
+5787	243	1	Ft Monroe Oct. 5 / 64		Geo. D. Sheldon	79	17	26	5	1	none	0		1
+5787	243	2	Ft Monroe 8 P. M. Oct. 6 / 64		over	52	13	17	2	1	none	0		1
+5788	244	0			Geo. D. Sheldon	28	3	8	1	9	none	0		1
+5788	244	1	Washington Oct 6 / 64		T. T. Eckert	63	17	18	3	1	none	0		1
+5788	244	2	Ft Monroe 12 M. Oct 7 / 64		Geo. D. Sheldon	55	16	15	2	1	none	0		1
+5789	245	0	Ft Monroe Oct 7 / 64 2 P. M.		Geo. D. Sheldon	91	32	31	7	1	none	0		1
+5789	245	1	Ft Monroe Oct 8 / 64		Geo. D. Sheldon	95	20	24	4	1	none	0		1
+5790	246	0	Wash'n. Oct 10 / 64		T. T. Eckert	63	11	18	5	1	none	0		1
+5790	246	1	Washington Oct 15 / 64		T. T. Eckert	147	53	54	14	1	none	0		1
+5791	247	0	Washington Oct 15 / 64		Eckert	73	19	24	3	1	none	0		1
+5791	247	1	Washington Oct 15 / 64		T. T. Eckert	91	25	27	4	1	none	0		1
+5792	248	0	Nashville Oct 15 / 64			221	57	85	9	1	none	0		1
+5793	249	0			Eckert	37	7	11	0	9	none	0		1
+5793	249	1	Washington Oct 15 / 64		T. T. Eckert	35	5	10	1	1	none	0		1
+5793	249	2	Washington Oct 15 / 64		T. T. Eckert	61	4	10	0	clear	none	0		3
+5794	250	0	Ft Monroe Oct 16 / 64		Dealy	27	7	6	2	1	none	0		1
+5794	250	1	Ft Monroe Oct 16 / 64		Dealy.	69	16	26	5	1	none	0		1
+5794	250	2	Washington Oct. 17 / 64			55	10	11	2	1	none	0		1
+5795	251	0			T. T. Eckert	135	26	47	3	1	none	0		1
+5796	252	0	Washington Oct 17 / 64		Eckert.	113	26	36	8	1	none	0		1
+5796	252	1	Wash'n. Oct 18 / 64		Di. office	19	3	7	0	1	none	0		1
+5797	253	0	Nashville Oct 17 / 64		J. C. Van Duzer	89	21	28	3	1	none	0		1
+5797	253	1	Nashville Oct 17 / 64			125	30	42	4	1	none	0		1
+5798	254	0			B. B. Glass	73	19	29	2	1	none	0		1
+5798	254	1	Wash'n. Oct. 21 / 64		T. T. Eckert	25	5	6	1	1	none	0		1
+5798	254	2	Ft Monroe Oct 27 / 64		Geo D. Sheldon	78	21	18	7	1	none	0		1
+5799	255	0	Sheldon  Hd Qrs A.P. Oct 29 / 64			38	6	10	0	1	none	0		1
+5799	255	1	Ft Monroe Oct 29 / 64		Geo. D. Sheldon	64	5	18	1	1	none	0		1
+5800	256	0	Wash'n. 1.30 P. M. Oct 31 / 64		T. T. Eckert	90	22	23	3	1	none	0		1
+5800	256	1	City Point Nov 1 1864		S. H. Beckwith	61	15	22	4	1	none	0		2
+5800	256	2	Ft Monroe Nov 1 , 1864		Geo D Sheldon	19	7	6	3	1	none	0		1
+5801	257	0	Ft Monroe Nov 1 . 1864		Geo D Sheldon	55	19	21	5	1	none	0		1
+5801	257	1	Ft Monroe Nov 1 , 1864		Geo D Sheldon	180	46	62	11	1	none	0		1
+5802	258	0	Butters Hd Qrs Nov 1 1864		R OBrien	57	28	26	6	1	none	0		1
+5802	258	1	Ft Monroe Nov 2 1864		Geo D Sheldon	45	11	13	2	1	none	0		1
+5802	258	2	Hd Qrs A. of J. Nov 2 1864		R OBrien	76	43	22	12	1	none	0		1
+5803	259	0	City Point Nov 3 1864		SH Beckwith	67	18	25	4	1	none	0		2
+5803	259	1	Ft Monroe Nov 3 , 1864		Geo D Sheldon	87	15	19	5	1	none	0		1
+5804	260	0	City Point Nov 3 . 1864		SH Beckwith	60	12	20	2	1	none	0		2
+5804	260	1	Ft Monroe Nov 4 1864		Geo D Sheldon	87	12	16	4	1	none	0		1
+5804	260	2	New York Nov 4 . 1864		Jno Horner	30	12	15	2	1	none	0		1
+5805	261	0	Ft Monroe Nov 4 . 1864		Geo D Sheldon	42	12	14	4	1	none	0		1
+5805	261	1	Ft. Monroe Nov 4 . 1864		Geo D Sheldon	98	22	36	5	1	none	0		1
+5805	261	2	Butters Hd Qrs Nov 4 1864		R OBrien	56	17	21	3	1	none	0		1
+5806	262	0	City Point Nov 5		SH Beckwith	55	10	18	4	1	none	0		2
+5806	262	1	Ft Monroe Nov 5 1864		Geo D Sheldon	88	20	23	6	1	none	0		1
+5807	263	0	Ft. Monroe Nov 6 . 1864		Geo D Sheldon	142	30	39	6	1	none	0		1
+5807	263	1	Ft Monroe Nov 6 . 1864		Geo. D. Sheldon	77	32	37	5	1	none	0		1
+5808	264	0			66  John Horner	69	20	25	3	1	none	0		1
+5808	264	1	Ft. Monroe Nov 6 . 1864		Geo D Sheldon	42	19	18	8	1	none	0		1
+5808	264	2	Washington Nov. 14 1864		TT Eckert	40	5	14	0	1	none	0		1
+5809	265	0	Washington Nov 16 , 1864		TT Eckert	63	16	13	5	1	none	0		1
+5809	265	1	Ft Monroe Nov 20 1864		Geo D Sheldon	54	14	22	7	1	none	0		1
+5810	266	0	Ft Monroe Nov 20 1864		Geo D Sheldon	123	30	42	8	1	none	0		1
+5810	266	1	City Point Nov 28 1864		SH Beckwith	33	9	10	3	1	none	0		2
+5811	267	0	Ft Monroe Nov 28 / 64		Geo D Sheldon	35	6	10	1	1	none	0		1
+5811	267	1	Washington Nov 29th 1864		T. T. Eckert	50	11	15	2	1	none	0		1
+5811	267	2	Ft. Monroe Nov 29 . 1864		Geo D Sheldon	47	18	17	3	1	none	0		1
+5812	268	0	Ft. Monroe Nov 29 1864		Geo D Sheldon	70	17	20	7	1	none	0		1
+5812	268	1	Ft Monroe Nov 29 . 1864		Geo D Sheldon	66	18	24	6	1	none	0		1
+5812	268	2	Ft. Monroe Dec 1st 1864		Geo. D. Sheldon	43	10	8	3	1	none	0		1
+5813	269	0	City Point Nov 30 1864		SH Beckwith	64	13	19	2	1	none	0		2
+5813	269	1	Ft Monroe Dec 1st 1864		Geo D Sheldon	35	12	11	4	1	none	0		1
+5813	269	2	Ft. Monroe Dec 1st 1864		Geo D Sheldon	62	8	16	5	1	none	0		1
+5814	270	0	Butlers Hd Qrs Dec 1st 1864		R OBrien	31	7	8	3	1	none	0		1
+5814	270	1	Ft Monroe Dec 1st 1864		Geo D Sheldon	42	8	11	2	1	none	0		1
+5814	270	2	Ft. Monroe Dec 1 . 1864		Geo D Sheldon	51	11	15	4	1	none	0		1
+5815	271	0	Ft. Monroe Dec 1st 1864		Geo D Sheldon	53	11	15	6	9	none	0		1
+5815	271	1	Washington Dec 2 1864		TT Eckert	42	12	11	3	1	none	0		1
+5815	271	2	Washington Dec 3 1864		T. T. Eckert	88	15	27	5	1	none	0		1
+5816	272	0	Hd Qrs Army of James Dec 4		R OBrien	98	23	32	9	1	none	0		1
+5816	272	1	City Point Dec 4 1864		S. H. Beckwith	42	12	12	2	1	none	0		2
+5816	272	2	Butlers Hd Qrs Dec 6th 1864		R OBrien	37	8	7	2	1	none	0		1
+5817	273	0	Hd Qrs A of J Dec 5 1864		R OBrien	57	13	19	3	1	none	0		1
+5817	273	1	Washington Dec. 5th 1864		T. T. Eckert .	70	16	18	4	1	none	0		1
+5817	273	2	Hd Qrs A of James Dec 6th / 64		R OBrien	61	13	18	5	1	none	0		1
+5818	274	0	New York Dec 6th 1864		John Horner	98	29	24	10	1	none	0		1
+5818	274	1	Fortress Monroe Dec 6 / 64		Geo. D. Sheldon	58	15	17	3	1	none	0		1
+5819	275	0	Ft. Monroe Dec 6 1864		Gen D Sheldon	110	23	35	7	1	none	0		1
+5819	275	1	Ft Monroe Dec 7 1864			110	26	34	7	1	none	0		1
+5820	276	0	Bermuda Hundreds Dec 8 . 1864		SH Beckwith	70	36	22	6	1	none	0		2
+5820	276	1	R. OBrien Hd. Qrs A. J.  Ft Monroe Dec 8 . 1864		Geo. D. Sheldon	45	10	10	3	1	none	0		1
+5820	276	2	Ft Monroe Dec 8 1864		Geo D Sheldon	46	10	13	4	1	none	0		1
+5821	277	0	Ft Monroe Dec 8th 1864		Geo D Sheldon	118	18	43	5	1	none	0		1
+5821	277	1	Ft. Monroe Dec 8th 1864		Geo D Sheldon	97	27	37	7	1	none	0		1
+5822	278	0	City Point Dec 8 1864		SH Beckwith	88	16	31	3	1	none	0		2
+5822	278	1	Hd. Qrs. A. of J. Dec. 8 . 1864		R. O'Brien	68	15	21	5	1	none	0		1
+5822	278	2	Butlers Dec 8 1864		R. OBrien	34	9	10	2	1	none	0		1
+5823	279	0	Hd Qrs A of J Dec 8 1864		R OBrien	70	17	21	3	1	none	0		1
+5823	279	1	Butlers Hd Dec 9 . 1864		R OBrien	46	10	11	3	1	none	0		1
+5823	279	2	Ft. Monroe Dec 9 - 1864		Geo D Sheldon	46	9	14	0	1	none	0		1
+5824	280	0	Ft. Monroe Dec 9 1864		Geo D Sheldon	46	15	19	6	1	none	0		1
+5824	280	1	Ft Monroe Dec. 10 - 1864		Geo. D. Sheldon	50	16	13	5	1	none	0		1
+5824	280	2	Ft Monroe Dec. 10 . 1864		Geo. D. Sheldon	69	13	16	7	1	none	0		1
+5825	281	0	Ft Monroe Dec 10 / 64		Geo. D. Sheldon	46	14	13	6	1	none	0		1
+5825	281	1	City Point Dec. 10 - 1864		S. H. Beckwith .	89	24	34	5	1	none	0		2
+5825	281	2	City Point Dec. 10 - 1864			53	11	16	4	1	none	0		1
+5826	282	0			S. H. Beckwith	43	8	13	3	9	none	0		2
+5826	282	1	Ft Monroe Dec. 10 - 1864		Geo. D. Sheldon	116	29	37	11	1	none	0		1
+5826	282	2	City Point Dec. 10 - 1864		SH BecKwith	33	11	10	2	1	none	0		2
+5827	283	0	City Point Dec. 10 - 1864		S. H. Beckwith	36	9	10	4	1	none	0		2
+5827	283	1	Ft Monroe Dec. 10 - 1864		Geo. D. Sheldon	88	25	34	11	1	none	0		1
+5827	283	2	Ft Monroe Dec. 11 - 1864			59	20	23	7	1	none	0		1
+5828	284	0			Geo. D. Sheldon	12	3	4	2	1	none	0		1
+5828	284	1	City Point Dec. 11 - 1864		yoke Jersey S. H. Beckwith	24	7	7	3	1	none	0		2
+5828	284	2	City Point Dec. 11 - 1864		S. H. Beckwith	64	20	23	2	1	none	0		2
+5828	284	3	Ft Monroe Dec 12th 1864		Geo. D. Sheldon	75	17	21	4	1	none	0		1
+5829	285	0	Washington Dec 12th 1864		Acting Pay Mastr Genl	90	12	17	3	1	none	0		1
+5829	285	1	City Point Dec. 13 - 1864		S. H. Beckwith	22	7	5	3	1	none	0		2
+5829	285	2	Ft Monroe Dec. 13 - 1864		Geo. D. Sheldon	43	8	13	5	1	none	0		1
+5830	286	0	Ft Monroe Dec 13 / 64		Geo D Sheldon	27	7	7	3	1	none	0		1
+5830	286	1	Hd. Qrs. A. J. Dec. 13 - 1864		R. O'Brien	129	34	41	11	1	none	0		1
+5831	287	0	Ft Monroe Dec 14 -1864		Geo. D. Sheldon	59	22	23	7	1	none	0		1
+5831	287	1	Ft Monroe Dec. 14 1864			0	0	0	0	short	none	0		3
+5831	287	2	Maj Eckert Washington Ft monroe Dec. 14 - 1864	Maj Eckert		123	39	41	8	1	none	0		1
+5832	288	0			Geo. D. Sheldon	27	8	6	1	9	none	0		1
+5832	288	1	City Point Dec. 14 - 1864		yoke Juno .  S. H Beckwith	75	19	25	4	1	none	0		2
+5832	288	2	Ft Monroe Dec. 14 - 1864		Geo D Sheldon	89	24	26	8	1	none	0		1
+5833	289	0	Ft Monroe Dec 14 / 64		Geo. D. Sheldon	42	10	12	3	1	none	0		1
+5833	289	1	Hd. Qrs. A. of J Dec. 14 - 1864		R. O'Brien	36	9	9	3	1	none	0		1
+5833	289	2	Ft Monroe Dec. 14 / 64		Geo D Sheldon	24	4	3	2	1	none	0		1
+5833	289	3	Ft Monroe Dec. 14 - 1864			38	16	18	6	1	none	0		1
+5834	290	0			Geo. D. Sheldon	24	6	7	2	1	none	0		1
+5834	290	1	Ft Monroe Dec. 14 - 1864			174	49	67	9	1	none	0		1
+5835	291	0			Geo D. Sheldon	140	39	48	7	1	none	0		1
+5835	291	1	Ft Monroe Dec. 17 - 1864		Geo D Sheldon	87	26	28	4	1	none	0		1
+5836	292	0	Ft Monroe Dec. 17 - 1864		Geo. D. Sheldon	241	80	92	11	1	none	0		1
+5837	293	0	Ft Monroe Dec. 17 - 1864		Geo. D. Sheldon	70	20	27	7	1	none	0		1
+5837	293	1	Washington Dec. 17 - 1864		T. T. Eckert.	128	22	38	6	1	none	0		1
+5838	294	0	Ft Monroe Dec 19 . 1864		Geo D. Sheldon	71	22	28	6	1	none	0		1
+5838	294	1	Washington Dec 19 1864		T. T. Eckert	35	6	9	2	1	none	0		1
+5838	294	2	Ft Monroe Dec 20 - 1864		Geo D. Sheldon	70	18	28	5	1	none	0		1
+5839	295	0	Ft Monroe Dec. 20 - 1864		Geo D Sheldon	82	20	27	5	1	none	0		1
+5839	295	1	Washington Dec 22 . 1864		TT Eckert	42	5	6	3	1	none	0		1
+5839	295	2	Ft Monroe Dec 25 1864		Geo D Sheldon	42	7	11	1	1	none	0		1
+5840	296	0	Ft Monroe Dec 26 - 1864		Geo. D. Sheldon	73	22	24	6	1	none	0		1
+5840	296	1	Ft Monroe Dec. 27 - 1864		Geo. D. Sheldon	37	15	14	4	1	none	0		1
+5840	296	2	Ft Monroe Dec. 27 1864			87	21	21	6	1	none	0		1
+5841	297	0				235	50	70	11	1	none	0		1
+5842	298	0			Geo. D. Sheldon	48	18	17	3	1	none	0		1
+5842	298	1	Ft Monroe Dec. 27 - 1864			165	44	63	15	1	none	0		1
+5843	299	0			Geo D. Sheldon	183	19	42	6	clear	none	0		3
+5844	300	0	Ft Monroe Dec 28 . 1864		Geo D Sheldon	249	66	75	14	1	none	0		1
+5845	301	0	Ft Monroe Dec. 29 . 1864		Geo D. Sheldon	129	31	40	9	1	none	0		1
+5845	301	1	Ft Monroe Jany 2 / 65		Geo D. Sheldon	36	9	9	5	9	none	0		1
+5845	301	2	Ft Monroe Jany 3 / 65		Geo D. Sheldon	24	8	6	2	1	none	0		1
+5846	302	0	City Point 11.25 A. M. Jany. 3 / 65		S. H. Beckwith	58	12	18	4	1	none	0		2
+5846	302	1	Ft Monroe Jany 3 / 65		Geo. D. Sheldon	72	16	20	5	1	none	0		1
+5846	302	2	Ft Monroe Jany 3 / 65			75	18	13	5	1	none	0		1
+5847	303	0				77	17	32	7	1	none	0		1
+5847	303	1	Washington Jan. 3 / 65		Webster Ringals.	38	9	11	5	1	none	0		1
+5847	303	2	Ft Monroe Jan 3 / 65			30	10	13	3	1	none	0		1
+5848	304	0			Geo. D. Sheldon	21	4	7	1	1	none	0		1
+5848	304	1	2.25 PM. City Point Jan. 3 / 65		S. H. Beckwith	218	50	71	18	1	none	0		2
+5849	305	0	Ft Monroe Jan. 3 / 65		Geo. D. Sheldon	70	24	33	9	1	none	0		1
+5849	305	1	City Point 4.35 P. M. Jan. 3 / 65		S. H. Beckwith	99	18	32	4	1	none	0		2
+5850	306	0	Ft Monroe Jany 3 / 65		walrus Morgan -  Geo. D. Sheldon	80	24	24	7	1	none	0		1
+5850	306	1	Ft Monroe Jan 3 / 65		Geo. D. Sheldon	53	10	16	1	2	none	0		1
+5850	306	2	Ft Monroe Jan. 3 / 65		Geo. D. Sheldon	60	9	16	4	1	none	0		1
+5851	307	0	Ft Monroe Jan. 3 / 65		Geo. D. Sheldon	81	25	30	9	1	none	0		1
+5851	307	1	Ft Monroe Jan. 3 / 65		S. H. Beckwith	104	23	26	6	1	none	0		2
+5852	308	0	Hd Qrs A. J. Jan 4 / 65		R. O'Brien	36	11	13	4	1	none	0		1
+5852	308	1	City Point Jan 4 / 65		S. H. Beckwith	44	9	10	3	1	none	0		2
+5852	308	2	Ft Monroe Jan 4 / 65		R. O'Brien	71	20	18	5	1	none	0		1
+5853	309	0	Hd Qrs A. J. 2.55 P. M. Jan. 4 / 65		R. O'Brien	111	38	40	8	1	none	0		1
+5853	309	1	Ft Monroe Jan 4 / 65			54	9	15	3	1	none	0		1
+5854	310	0	Ft Monroe Jan 4 / 65		Geo. D. Sheldon	100	15	25	4	1	none	0		1
+5854	310	1	Ft Monroe Jany 4 / 65			121	34	52	12	1	none	0		1
+5855	311	0			youth ringals -  Geo D Sheldon	23	5	5	2	9	none	0		1
+5855	311	1	Ft Monroe Jan 4 / 65		Geo. D. Sheldon	31	6	7	1	1	none	0		1
+5855	311	2	City Point Jan. 4 / 65		S. H. Beckwith	98	17	20	2	1	none	0		2
+5856	312	0	Ft Monroe Jan 4 / 65		R. O'Brien	99	23	29	8	1	none	0		1
+5856	312	1	Washington 10.10 AM Jan 5 / 65		T. T. Eckert	56	15	18	5	1	none	0		1
+5857	313	0	Washington Jan. 5 / 65		T. T. Eckert	76	17	23	5	1	none	0		1
+5857	313	1	1 P. M. Ft Monroe Jan. 5 / 65			72	18	18	5	1	none	0		1
+5857	313	2	City Point Jan. 5 / 65			30	7	13	1	1	none	0		1
+5858	314	0	City Point Jan. 5 / 65		S. H. Beckwith	76	11	17	2	1	none	0		2
+5858	314	1	Ft Monroe Jan. 5 / 65		Geo D Sheldon	49	16	26	6	1	none	0		1
+5858	314	2	City Point Jan 5 / 65		S. H. B.	20	4	5	2	1	none	0		1
+5859	315	0	Washington Jan 5 / 65		T. T. Eckert	56	10	18	4	1	none	0		1
+5859	315	1	Ft Monroe Jan. 5 / 65		Geo. D. Sheldon	51	16	17	5	1	none	0		1
+5859	315	2	Wash'n. 8.30 P. M. Jan. 5 / 65		T. T. Eckert	58	12	17	6	1	none	0		1
+5860	316	0	Ft Monroe Jan 5 / 65		youth Knox  Geo. D. Sheldon	54	19	21	3	1	none	0		1
+5860	316	1	City Point Jany 6 1865		SH Beckwith	79	23	27	6	1	none	0		2
+5860	316	2	Ft Monroe Jan. 6 / 65		Geo. D. Sheldon	42	10	14	3	9	none	0		1
+5861	317	0	Ft Monroe Jan. 6 / 65		yoke Bruno -  Geo. D. Sheldon	56	14	18	4	1	none	0		1
+5861	317	1	Ft Monroe Jan. 6 / 65		Geo D. Sheldon	47	15	18	5	1	none	0		1
+5861	317	2	Ft Monroe Jan. 6 / 65		S. H. Beckwith	66	13	12	3	1	none	0		2
+5862	318	0	Ft. Monroe Jan. 6 . 1865		Geo D Sheldon	37	9	9	2	1	none	0		1
+5862	318	1	City Point Jan 6 / 65		yoke Juno  S. H. Beckwith	145	40	53	7	1	none	0		2
+5862	318	2	City Point Jan 6 / 65		S. H. Beckwith	27	12	9	5	1	none	0		2
+5863	319	0	Ft Monroe Jan. 6 / 65		Geo. D. Sheldon	64	12	14	3	1	none	0		1
+5863	319	1	Ft Monroe Jan 6 / 65		Geo. D. Sheldon	114	19	29	4	1	none	0		1
+5864	320	0	Ft Monroe Jan 7 / 65		Gen D. Sheldon	39	14	16	5	1	none	0		1
+5864	320	1	Ft Monroe Jan 7 / 65		Gen D. Sheldon	48	13	17	5	1	none	0		1
+5864	320	2	City Point Jan. 7 / 65		S. H. Beckwith	73	14	25	5	1	none	0		2
+5865	321	0	Balto. Jan. 6 / 65		J. W. Sampson	258	57	99	20	1	none	0		1
+5866	322	0	Ft Monroe Jan. 7 / 65		Geo. D. Sheldon	79	23	31	7	1	none	0		1
+5866	322	1	Ft Monroe Jan 7 / 65		walrus Bruno.  Geo. D. Sheldon	52	11	14	2	1	none	0		1
+5866	322	2	Ft Monroe Jan. 7 - 1865		Geo.  D. Sheldon	62	19	23	6	1	none	0		1
+5867	323	0	Ft Monroe Jan. 7 / 65		Geo D Sheldon	70	18	24	5	1	none	0		1
+5867	323	1	Ft Monroe Jan. 8 1865		Geo. D. Sheldon	70	20	21	7	1	none	0		1
+5867	323	2	Ft Monroe Jan. 9 - 1865		Geo. D. Sheldon	44	10	15	5	1	none	0		1
+5868	324	0	Baltimore Jan. 7 / 65		J. W. Sampson	81	18	26	7	1	none	0		1
+5868	324	1	Monroe Jan 9 / 65		Geo. D. Sheldon	66	20	22	7	1	none	0		1
+5869	325	0	Washington 2.20 P. M. Jan. 10 / 65		T. T. Eckert	88	18	23	5	1	none	0		1
+5869	325	1	Ft Monroe Jan. 12 - 1865		Geo. D. Sheldon	61	14	18	4	1	none	0		1
+5869	325	2	Ft Monroe Jan. 12 / 65		Geo. D. Sheldon	53	15	13	4	1	none	0		1
+5870	326	0	Ft Monroe Jan. 12 / 65		Geo. D. Sheldon	53	15	20	6	1	none	0		1
+5870	326	1	City Point 4 P. M. Jan 12 / 65		S. H. Beckwith	128	30	43	8	1	none	0		2
+5871	327	0	Ft Monroe Jan. 12 / 65		Geo. D. Sheldon	62	17	19	9	1	none	0		1
+5871	327	1	Ft Monroe Jan. 13 / 65		Geo. D. Sheldon	44	19	16	6	1	none	0		1
+5871	327	2	Ft Monroe Jan. 13 . 1865		walrus Morgan -  Geo. D. Sheldon	34	12	12	4	1	none	0		1
+5872	328	0	Ft Monroe Jan 13 / 65		Geo. D. Sheldon	33	12	9	3	1	none	0		1
+5872	328	1	Ft Monroe Jan 14 / 65		Geo D. Sheldon	32	7	9	2	2	none	0		1
+5872	328	2	Ft Monroe Jan 15 / 65		Geo. D. Sheldon	36	14	10	2	1	none	0		1
+5872	328	3	City Point Jan. 15 / 65		S. H. Beckwith	53	11	11	5	1	none	0		2
+5873	329	0	City Point Jan 15 / 65		S. H. Beckwith	53	12	10	5	1	none	0		2
+5873	329	1	Ft Monroe Jan. 15 / 65		Geo. D. Sheldon	56	23	18	6	1	none	0		1
+5873	329	2	Ft Monroe Jan 16 / 65		Geo D. Sheldon	95	20	26	8	1	none	0		1
+5874	330	0	Ft Monroe Jan. 15 . 1865		Geo. D. Sheldon	201	66	69	15	1	none	0		1
+5874	330	1	3.30 P. M. City Point Jan 15 / 65		S. H. Beckwith	25	7	6	0	1	none	0		2
+5875	331	0	Ft Monroe Jan. 15 / 65		Geo. D. Sheldon	239	44	64	7	1	none	0		1
+5876	332	0	Ft Monroe Jan. 16 / 65		Geo. D. Sheldon	223	81	67	4	1	none	0		1
+5877	333	0	City Point Jan. 16 / 65		S. H. Beckwith	50	22	14	5	1	none	0		2
+5877	333	1	Ft Monroe Jan. 16 / 65		Geo. D. Sheldon	93	27	33	7	1	none	0		1
+5877	333	2	Ft Monroe Jan. 16 / 65		Geo. D. Sheldon	53	16	16	5	1	none	0		1
+5878	334	0			S. H. Beckwith	70	18	23	8	1	none	0		2
+5878	334	1	Ft Monroe Jan. 17 / 65		Geo. D. Sheldon Ft Monroe	106	33	34	10	1	none	0		1
+5879	335	0	Ft Monroe Jan 17 / 63		Geo. D. Sheldon	204	53	71	16	1	none	0		1
+5880	336	0	Ft Monroe Jan. 17 1865		Geo. D. Sheldon	238	73	86	22	1	none	0		1
+5881	337	0	Ft Monroe Jan. 18 - 1865		Geo. D Sheldon	170	32	50	8	1	none	0		1
+5881	337	1	City Point Jan. 18 / 65		S. H. Beckwith	63	11	16	2	1	none	0		2
+5882	338	0	Ft Monroe Jan 19 / 65		S. H. Beckwith	211	55	62	12	1	none	0		2
+5883	339	0	Ft Monroe Jan. 20 / 65		Geo D. Sheldon	42	10	14	3	1	none	0		1
+5883	339	1	Ft Monroe Jan 20 / 65		Geo. D. Sheldon	96	20	23	6	1	none	0		1
+5883	339	2	Washington 3 P. M. Jan. 21 / 65		T. T. Eckert	33	13	9	3	1	none	0		1
+5884	340	0	Ft Monroe Jan 21 / 65		Geo. D. Sheldon	150	29	56	7	1	none	0		1
+5884	340	1	Washington Jan. 21 / 65		T. T. Eckert	62	19	21	7	1	none	0		1
+5885	341	0	Washington Jan 21 / 65		Geo. D. Sheldon	72	19	20	6	1	none	0		1
+5885	341	1	Hd. Qrs. A. J. Jan 23 - 1865		R. O'Brien	56	14	13	4	1	none	0		1
+5886	342	0	Ft Monroe Jan. 24 -1865		Geo. D. Sheldon	51	16	14	2	1	none	0		1
+5886	342	1	Washington Jan. 24 - 1865		T. T. Eckert	38	9	14	3	9	none	0		1
+5886	342	2	Ft Monroe Jan. 24 - 1865		Geo. D. Sheldon	71	14	23	7	1	none	0		1
+5887	343	0	Washington Jan. 24 - 1865		T. T. Eckert	122	31	37	10	1	none	0		1
+5887	343	1	Ft Monroe Jan. 24 - 1865		Geo. D. Sheldon	51	12	14	5	1	none	0		1
+5888	344	0	Washington Jan 25 / 65		T. T. Eckert	62	8	20	6	9	none	0		1
+5888	344	1	City Point Jan. 25 / 65		S. H. Beckwith	64	13	18	2	1	none	0		2
+5888	344	2	City Point Jan 26 / 65		S. H. Beckwith	40	14	10	4	1	none	0		2
+5889	345	0	Washington Jan. 26 / 65		T. T. Eckert.	38	3	3	0	clear	none	0		3
+5889	345	1	Ft Monroe Jan. 26 - 1865		Geo. D. Sheldon	62	7	16	2	1	none	0		1
+5889	345	2	Maj. Eckert - Washington  Ft Monroe Jan. 27 - 1865	Maj. Eckert -	Geo. D. Sheldon	73	26	33	3	1	none	0		1
+5890	346	0	Ft Monroe Jan 27-1865		Geo D. Sheldon	42	9	15	2	1	none	0		1
+5890	346	1	Washington Jan. 27 - 1865		T. T. Eckert	62	10	16	5	1	none	0		1
+5890	346	2	Ft Monroe Jan 29 - 1865		Geo. D. Sheldon	51	9	14	2	1	none	0		1
+5891	347	0	Ft Monroe Jan. 29 - 1865		Geo. D. Sheldon	78	12	16	4	1	none	0		1
+5891	347	1	Annapolis 8 P. M. Jan. 31 - 1865			59	5	13	1	9	none	0		1
+5891	347	2	Ft Monroe Feb. 1 - 1865		Geo. D. Sheldon	44	11	12	4	1	none	0		1
+5892	348	0	Ft Monroe Feb. 1 - 1865		Geo D. Sheldon	30	11	9	4	1	none	0		1
+5892	348	1	City Point Feb. 2 - 1865		S. H. Beckwith	25	3	4	1	1	none	0		2
+5892	348	2	Ft Monroe Feb. 2 - 1865			115	21	29	5	1	none	0		1
+5893	349	0			Geo D Sheldon	164	17	36	3	9	none	0		1
+5893	349	1	Ft Monroe Feb. 2 - 65		Geo D. Sheldon	18	6	8	2	1	none	0		1
+5894	350	0	Washington Feb. 2 / 65		T. T. Eckert	34	11	13	4	1	none	0		1
+5894	350	1	City Point Feb. 2 - 1865		S. H. Beckwith	32	8	11	3	1	none	0		2
+5894	350	2	Ft Monroe Feb. 2 - 1865		Geo. D. Sheldon	108	20	30	5	1	none	0		1
+5895	351	0	Ft Monroe Feb. 2 - 1865		Geo. D. Sheldon	62	18	24	3	1	none	0		1
+5895	351	1	Ft Monroe Feb. 2 - 1865		Geo D. Sheldon	48	12	18	4	1	none	0		1
+5895	351	2	Ft Monroe Feb. 2 - 1865		webster Eckert  Geo. D. Sheldon	41	9	15	2	1	none	0		1
+5896	352	0	City Point Feb. 2 / 65		walrus Juno -  S. H. Beckwith	38	4	13	1	1	none	0		2
+5896	352	1	Ft Monroe Feb. 2 / 65		Geo D Sheldon	39	11	12	2	1	none	0		1
+5896	352	2	Washington Feb. 2 / 65		T. T. Eckert	85	17	28	2	1	none	0		1
+5897	353	0	Ft. Monroe Feb 2 / 65		Geo. D. Sheldon	54	13	15	4	1	none	0		1
+5897	353	1	Ft Monroe Feb. 2 1865		yoke Byron  Geo. D. Sheldon	45	15	14	5	1	none	0		1
+5897	353	2	Ft Monroe Feb. 2 - 1865		Geo. D. Sheldon	62	19	23	5	1	none	0		1
+5898	354	0	Ft Monroe Feb 3 / 65		Geo. D. Sheldon	96	26	36	11	1	none	0		1
+5898	354	1	Washington Feb. 4 1865		T. T. Eckert	41	15	16	6	1	none	0		1
+5899	355	0	Ft Monroe Feb. 4 - 1865		Geo D. Sheldon	54	14	17	2	1	none	0		1
+5899	355	1	Ft Monroe Feb 6 - 1865		Geo. D. Sheldon	162	47	61	13	1	none	0		1
+5900	356	0			Geo D. Sheldon	112	30	36	6	1	none	0		1
+5900	356	1	Ft Monroe Feb. 8 - 1865			119	43	45	6	1	none	0		1
+5901	357	0				250	75	90	13	1	none	0		1
+5902	358	0			Geo. D. Sheldon	66	13	22	4	1	none	0		1
+5902	358	1	Ft Monroe Feb 8 - 1865		add Palate  Geo. D. Sheldon	58	10	15	3	1	none	0		1
+5902	358	2	Hdqrs A. J. Feb 8 / 65		Emerick	42	11	16	3	1	none	0		1
+5903	359	0	Hdqrs A. P. Feb. 9 - 1865			165	26	48	2	1	none	0		1
+5904	360	0	City Point Feb. 9 - 1865		S. H. Beckwith	45	11	16	2	1	none	0		2
+5904	360	1	City Point Feb. 9 - 1865		S. H. Beckwith	116	49	36	10	1	none	0		2
+5905	361	0	Ft Monroe Feb. 10 - 1865		Geo. D. Sheldon	42	13	17	4	1	none	0		1
+5905	361	1	Hdqrs A. J. Feb. 10 - 1865		Emerick .	67	16	25	5	9	none	0		1
+5906	362	0	Ft Monroe Feb 11 - 1865			117	36	41	8	1	none	0		1
+5906	362	1	Ft Monroe Feb 14 - 1865			99	27	28	6	1	none	0		1
+5907	363	0			Geo. D. Sheldon	133	35	57	6	1	none	0		1
+5907	363	1	Ft Monroe Feb. 16 - 1865		Geo. D. Sheldon	57	13	11	2	1	none	0		1
+5908	364	0	Ft Monroe Feb 16 / 65		Geo D. Sheldon	51	11	12	3	1	none	0		1
+5908	364	1	Ft Monroe Feb 17 / 65			137	43	51	10	1	none	0		1
+5909	365	0			C. G. Eddy	53	17	22	4	9	none	0		1
+5909	365	1	Hd. qrs. a. J. Feb. 20 1865		J. H. Emerick	99	12	23	2	1	none	0		1
+5910	366	0			Geo. D. Sheldon	63	16	21	5	1	none	0		1
+5910	366	1	Ft Monroe Feb  20 / 65		Geo. D. Sheldon	27	7	7	2	1	none	0		1
+5910	366	2	Ft Monroe Feb. 21 - 1865			110	47	50	6	1	none	0		1
+5911	367	0			yoke Maxim  Geo. D. Sheldon	96	15	27	6	1	none	0		1
+5911	367	1	Ft Monroe Feb. 22 - 1865		Geo. D. Sheldon	89	13	28	3	1	none	0		1
+5912	368	0	City Point Feb 22 / 65		S. H. Beckwith	89	11	25	3	1	none	0		2
+5912	368	1	Ft Monroe Feb. 22 / 65		Geo. D. Sheldon	43	10	11	5	1	none	0		1
+5912	368	2	Ft Monroe Feb. 23 / 65			65	25	28	5	1	none	0		1
+5913	369	0				251	72	89	12	1	none	0		1
+5914	370	0			Geo. D. Sheldon	73	17	18	2	1	none	0		1
+5914	370	1	Ft Monroe Feb. 23 / 65		Geo D. Sheldon	69	18	16	5	1	none	0		1
+5914	370	2	City Point Mar. 3 / 65		S. H. Beckwith	36	6	9	2	1	none	0		2
+5915	371	0	Ft Monroe Feb. 24 / 65		Geo. D. Sheldon	87	24	28	7	1	none	0		1
+5915	371	1	Ft Monroe Feb. 24 - 1865		Geo. D. Sheldon	118	32	43	6	1	none	0		1
+5916	372	0	Ft Monroe Feb 24 / 65		Geo. D. Sheldon	217	62	68	11	1	none	0		1
+5917	373	0	Maj Eckert  Ft Monroe Feb 25th / 65			142	39	44	5	1	none	0		1
+5917	373	1	Ft Monroe Feb 25 / 65		Geo D Sheldon	76	13	22	6	1	none	0		1
+5918	374	0	Ft Monroe , Va, , Mar. 3d 1865			115	23	32	7	1	none	0		1
+5918	374	1	Ft Monroe Mar 4 / 65			47	11	14	4	1	none	0		1
+5918	374	2	Washington Mar 4		T. T. Eckert	64	18	19	4	1	none	0		1
+5919	375	0	Ft Monroe Mar. 5 - 1865			74	17	20	6	1	none	0		1
+5919	375	1	Ft Monroe Mar 5 / 65			65	18	15	6	1	none	0		1
+5919	375	2	Ft Monroe Mar. 5 - 1865			53	12	15	5	1	none	0		1
+5920	376	0	Ft Monroe Mar. 5 - 1865		Geo D. Sheldon	33	10	14	3	1	none	0		1
+5920	376	1	Ft Monroe Mar 5 / 65			57	19	17	3	1	none	0		1
+5920	376	2	Ft Monroe Mar 5 - 1865			102	35	35	3	1	none	0		1
+5921	377	0			Geo. D. Sheldon	221	49	67	13	1	none	0		1
+5922	378	0	Ft Monroe Mar 5 - 1865		Geo. D. Sheldon	178	53	57	6	1	none	0		1
+5922	378	1	Ft Monroe Mar. 5 - 1865			48	13	14	0	1	none	0		1
+5923	379	0			Geo. D. Sheldon	49	6	10	1	1	none	0		1
+5923	379	1	Ft Monroe Mar. 5 -1865		Geo D. Sheldon	168	40	41	6	1	none	0		1
+5924	380	0	Ft. Monroe Mar. 6 / 65		Geo. D. Sheldon	70	9	11	3	1	none	0		1
+5924	380	1	City Point Mar. 6 - 1865		S. H. Beckwith	57	19	23	2	1	none	0		2
+5924	380	2	Ft Monroe Mar. 8 - 1865			41	10	13	3	1	none	0		1
+5925	381	0	Ft. Monroe Mar 8 / 65			248	53	76	16	1	none	0		1
+5926	382	0	Ft Monroe Mar 8 / 65		Geo D. Sheldon	177	36	52	6	1	none	0		1
+5926	382	1	City Point Mar 9 - 1865		S. H. Beckwith	64	10	13	2	1	none	0		2
+5927	383	0	Ft Monroe Mar. 9 - 1865		Geo. D. Sheldon	71	24	27	4	1	none	0		1
+5927	383	1	Ft Monroe Mar 9 - 1865		Geo. D. Sheldon	89	22	25	5	1	none	0		1
+5928	384	0	Ft Monroe Mar 10 / 65		Geo. D. Sheldon	93	19	24	5	1	none	0		1
+5928	384	1	Washington Mar 10 / 65		T. T. Eckert	50	3	10	1	clear	none	0		3
+5928	384	2	Ft Monroe Mar 11 / 65		Geo. D. Sheldon	18	2	3	0	9	none	0		1
+5929	385	0	Ft Monroe Mar 12 / 65		Geo. D. Sheldon	42	14	18	4	1	none	0		1
+5929	385	1	Ft Monroe Mar. 13 / 65		Geo. D. Sheldon	44	11	10	3	1	none	0		1
+5929	385	2	Ft Monroe Mar 14 - 1865		Geo. D. Sheldon	76	17	25	3	1	none	0		1
+5930	386	0	Ft Monroe Mar. 14 / 65		Geo D. Sheldon	66	18	24	4	1	none	0		1
+5930	386	1	Ft Monroe Mar 14 / 65		Geo D. Sheldon	43	18	22	4	1	none	0		1
+5930	386	2	Hd. qrs. A. J. Mar. 14 / 65		Emerick	36	6	12	4	1	none	0		1
+5931	387	0	1.30 P. M. Washington , Mar. 15 / 65	1.30 P. M.	T. T. Eckert	64	11	20	6	1	none	0		1
+5931	387	1	City Point , Mar. 15 - 1865		S. H. Beckwith	96	27	38	7	1	none	0		2
+5932	388	0	Ft Monroe Mar 15 / 65		Geo D. Sheldon	234	57	68	14	1	none	0		1
+5933	389	0	Ft Monroe Mar 15 / 65		Geo D. Sheldon	90	27	34	11	1	none	0		1
+5933	389	1	Ft Monroe Mar 16 / 65		Geo D. Sheldon	60	17	20	5	1	none	0		1
+5933	389	2	Hd Qrs A. J. Mar. 18 / 65		Emerick .	48	12	17	5	1	none	0		1
+5934	390	0	Ft Monroe Mar. 17- 1865		Geo. D. Sheldon	256	85	112	20	1	none	0		1
+5935	391	0			Jno. Lonergan	164	37	59	11	1	none	0		1
+5935	391	1	H'd. Q'rs. A. J. Mar 20th 1865		J. H. Emerick	72	11	21	6	1	none	0		1
+5936	392	0	Ft Monroe Mar 21 / 65		Geo. D. Sheldon	43	14	14	6	1	none	0		1
+5936	392	1	Ft Monroe Mar 22 / 65			111	31	32	8	1	none	0		1
+5936	392	2	City Point Mar 22 / 65		S. H. Beckwith	36	3	6	1	1	none	0		2
+5937	393	0	Washington Mar. 23 / 65		T. T. Eckert	48	8	16	4	1	none	0		1
+5937	393	1	Ft Monroe Mar. 25 / 65			160	42	64	14	1	none	0		1
+5938	394	0			Geo. D. Sheldon	129	27	51	9	1	none	0		1
+5938	394	1	Ft Monroe Mar 25 / 65			80	22	26	8	1	none	0		1
+5939	395	0			Geo. D. Sheldon	120	31	36	7	1	none	0		1
+5939	395	1	Ft Monroe Mar. 27th 1865		Geo. D. Sheldon	47	9	14	4	1	none	0		1
+5940	396	0	Ft Monroe . Mar 27 / 65			233	48	68	14	9	none	0		1
+5941	397	0				97	25	34	6	1	none	0		1
+5941	397	1	Ft Monroe Mar. 27 - 1865			67	16	21	6	9	none	0		1
+5941	397	2	Ft Monroe Mar 27 / 65			37	11	15	3	9	none	0		1
+5942	398	0	Washington Mar. 28 / 65		TT Eckert	35	5	8	2	1	none	0		1
+5942	398	1	To Maj Eckert , Washington,  From Ft Monroe Mar 29 / 65	To Maj Eckert ,	Geo. D. Sheldon	13	1	3	0	1	none	0		1
+5942	398	2	Washington Mar 29 / 65			124	23	37	6	1	none	0		1
+5943	399	0			walrus Rucker .  Eckert ----	51	11	15	2	1	none	0		1
+5943	399	1	Ft Monroe Mar 29 / 65		Geo. D. Sheldon	42	7	13	1	9	none	0		1
+5943	399	2	City Point April 1 / 65		S. H. Beckwith	119	33	52	9	1	none	0		2
+5944	400	0	Ft Monroe April 2 / 65		Geo. D. Sheldon	241	69	92	19	1	none	0		1
+5951	0	0			February 3d 1864 to April 6th 1865	12	0	2	0	clear	none	0		3

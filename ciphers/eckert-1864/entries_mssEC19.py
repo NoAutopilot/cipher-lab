@@ -19,9 +19,9 @@ def toks(s):
     s = s.replace("’", "'")
     return re.findall(r"[a-z]+", s.lower())
 
-def load_pages():
+def load_pages(pages_dir="sources/mssEC19"):
     out = []
-    for fn in glob.glob(os.path.join(HERE, "sources/mssEC19/p*.json")):
+    for fn in glob.glob(os.path.join(HERE, pages_dir, "p*.json")):
         p = int(os.path.basename(fn)[1:-5]); j = json.load(open(fn))
         out.append((p, j.get("title"), j.get("transc") or ""))
     return sorted(out)
@@ -43,10 +43,14 @@ def is_header(line, prev_blank):
     # no place word: accept a short line that is mostly name + date and follows a blank
     return prev_blank and len(l.split()) <= 12 and m.start() > 3
 
-def segment(pages):
+def segment(pages, base=8892, titled=False):
+    """base: pointer - base = page number (mssEC 19); titled=True takes the page number from a 'Page N' title (object 5952)."""
     entries = []
     for ptr, title, text in pages:
-        page = ptr - 8892
+        page = ptr - base
+        if titled:
+            tm = re.match(r"Page (\d+)$", title or "")
+            page = int(tm.group(1)) if tm else 0
         lines = text.split("\n")
         cur = {"pointer": ptr, "page": page, "header": "", "lines": []}
         idx = 0; prev_blank = True
@@ -217,9 +221,18 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--or-dir", required=True); ap.add_argument("--cache", required=True)
     ap.add_argument("--rerun", action="store_true"); ap.add_argument("--min-cov", type=int, default=MINCOV)
+    ap.add_argument("--pages-dir", default="sources/mssEC19", help="page transcriptions (default mssEC 19); another ledger is segmented and classified "
+                    "with the mssEC 19 entries as the training set, and the calibration against the audits is skipped (FM-PRE, object 5952)")
+    ap.add_argument("--prefix", default="mssEC19", help="output is entries-<prefix>.tsv"); ap.add_argument("--page-base", type=int, default=8892)
+    ap.add_argument("--titled-pages", action="store_true", help="page number from the 'Page N' title instead of pointer - page-base")
     a = ap.parse_args(argv)
     codes = load_vocab()
-    entries = segment(load_pages())
+    other = a.pages_dir != "sources/mssEC19"
+    entries = segment(load_pages(a.pages_dir), a.page_base, a.titled_pages)
+    train = []
+    if other:
+        train = segment(load_pages())
+        for e in train: analyse(e, codes)
     for e in entries:
         analyse(e, codes)
         last = e["lines"][-1] if e["lines"] else ""
@@ -238,6 +251,16 @@ def main(argv=None):
         for e in entries:
             if e["pointer"] == ptr and day_month(e["header"]) == dm and not e["already_read"]:
                 e["already_read"] = kid; break
+    if other:
+        for e in train: e["already_read"] = ""
+        for kid, (ptr, dm) in kb.items():
+            for e in train:
+                if e["pointer"] == ptr and day_month(e["header"]) == dm and not e["already_read"]:
+                    e["already_read"] = kid; break
+        classify(train + entries, codes, None)
+        for e in entries: e["priority"] = priority(e)
+        write_tsv(entries, a, "FM-PRE (8 Oct 2026): entries of %s, a ranking, not a verdict; no calibration against the audits (mssEC 19 entries train the book guess)" % a.pages_dir)
+        return
     classify(entries, codes, None)
     # calibration
     rec_n = rec_h = fh_n = fh_h = 0; rows = []
@@ -257,17 +280,26 @@ def main(argv=None):
            f"false hits {fh_h}/{fh_n} of known not-located entries (min cover {a.min_cov} plain tokens, {N}-grams, window {WINDOW}, max freq {MAXFREQ})")
     print(cal, file=sys.stderr)
     for r in sorted(rows): print("cal", *r, file=sys.stderr)
+    write_tsv(entries, a, None, cal)
+    cnt = collections.Counter((e["priority"], e["cipher_guess"]) for e in entries)
+    print(sorted(cnt.items()), file=sys.stderr)
+
+def write_tsv(entries, a, note, cal=None):
     cols = ["pointer", "page", "entry_on_page", "header", "addressee", "sender_clear", "words", "k1", "k2", "k9",
             "cipher_guess", "or_hit", "or_cov", "already_read", "priority"]
-    with open(os.path.join(HERE, "entries-mssEC19.tsv"), "w") as f:
+    if note:
+        with open(os.path.join(HERE, "fortmonroe", "entries-%s.tsv" % a.prefix), "w") as f:
+            f.write("# %s\n# OR volumes: %s\n" % (note, " ".join(sorted(os.path.basename(x)[:-4] for x in glob.glob(os.path.join(a.or_dir, '*.txt'))))))
+            f.write("\t".join(cols) + "\n")
+            for e in entries: f.write("\t".join(str(e[c]).replace("\t", " ") for c in cols) + "\n")
+        return
+    with open(os.path.join(HERE, "entries-%s.tsv" % a.prefix), "w") as f:
         f.write(f"# LS-PRE (7 Oct 2026): entries of mssEC 19 from sources/mssEC19 volunteer text; OR check = distinct plain-token cover by rare 3-gram hits in one 400-token window of IA _djvu.txt; a ranking, not a verdict.\n")
         f.write(f"# calibration: {cal}\n")
         f.write("# OR volumes: " + " ".join(sorted(os.path.basename(x)[:-4] for x in glob.glob(os.path.join(a.or_dir, '*.txt')))) + "\n")
         f.write("\t".join(cols) + "\n")
         for e in entries:
             f.write("\t".join(str(e[c]).replace("\t", " ") for c in cols) + "\n")
-    cnt = collections.Counter((e["priority"], e["cipher_guess"]) for e in entries)
-    print(sorted(cnt.items()), file=sys.stderr)
 
 
 

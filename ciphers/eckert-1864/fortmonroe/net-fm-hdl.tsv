@@ -1,0 +1,197 @@
+# FM-PRE (8 Oct 2026): network checks on the clean rows (fm_net.py); hunt hit = pointer@parentobject:label:cover:share-of-3-grams; a ranking, not a verdict.
+pointer	entry	phrase	ia_result	ia_print	hunt_terms	hunt_hits	hunt_best
+5560	1				horner insurance	none	none
+5562	2				horner insurance	none	none
+5563	1				classification phase	10164@10550:y:cov63:full0.35	y
+5564	1				horner catherine	none	none
+5570	0				balto mulford	none	none
+5571	0				tense sign	none	none
+5572	0				comr horner	none	none
+5572	1				mack cooks	none	none
+5576	1				horner detective	none	none
+5579	0				represents sheldon	10188@10550:y:cov23:full0.35	y
+5580	3				trick sheldon	5574@5952:u:cov3:full0.04 5577@5952:u:cov3:full0.04 5578@5952:y:cov7:full0.09 5579@5952:y:cov7:full0.09 5581@5952:y+copy:cov23:full0.61 5582@5952:y:cov10:full0.16	y+copy
+5581	1				homans sheldon	none	none
+5582	1				trick sheldon	5578@5952:u:cov4:full0.12 5579@5952:u:cov4:full0.12 5580@5952:u:cov4:full0.23 5581@5952:u:cov4:full0.23	u
+5584	0				spoons pirates	none	none
+5584	1				endless orphan	none	none
+5587	1				endless eckert	5584@5952:u:cov3:full0.07	u
+5589	0				accomac elect	none	none
+5589	2				chestnut sheldon	none	none
+5590	1				charley worsted	4506@4849:y:cov30:full0.18	y
+5594	1				believer hilt	none	none
+5600	0				norwich measles	none	none
+5605	2				sheldon eckert	none	none
+5607	1				sheldon eckert	none	none
+5607	2				eggs sheldon	9704@10074:y+copy:cov13:full0.82	y+copy
+5608	0				formal biggs	10235@10550:y:cov21:full0.35	y
+5609	0				sheldon eckert	none	none
+5609	1				maddox piloted	none	none
+5609	2				client lent	none	none
+5610	0				eggs sheldon	9704@10074:u:cov3:full0.09 9709@10074:y+copy:cov13:full0.80 5607@5952:u:cov3:full0.09 5612@5952:u:cov3:full0.09 8934@9302:u:cov3:full0.07	y+copy
+5610	1				windy investigating	none	none
+5616	0				flower tempest	9713@10074:y+copy:cov13:full0.72 4547@4849:u:cov3:full0.05	y+copy
+5616	1				cant biggs	none	none
+5624	0				begs breeze	none	none
+5626	0				wicks culpepper	none	none
+5629	1				cloudy sheldon	4210@4435:u:cov3:full0.01 5576@5952:u:cov3:full0.04 5580@5952:u:cov3:full0.03 5610@5952:u:cov4:full0.04 4272@4435:u:cov3:full0.01 5613@5952:u:cov4:full0.04	u
+5630	0				geese whittaker	none	none
+5632	0				piloted diamond	none	none
+5635	0				whips culpepper	none	none
+5636	1				chaff stray	5638@5952:y:cov7:full0.17	y
+5637	2				tafft desk	none	none
+5639	1				sheldon eckert	none	none
+5639	2				succeeds conn	none	none
+5641	1				knocks culpepper	5642@5952:u:cov4:full0.08	u
+5641	2				lazy sheldon	none	none
+5643	0				damp chick	none	none
+5644	1				aunt correspond	none	none
+5645	2				knocks beckwith	none	none
+5648	2				orchards chaff	none	none
+5649	1				celebrated secy	none	none
+5649	2				celebrated invited	none	none
+5650	0				chaff lading	none	none
+5659	0				piercing insertion	none	none
+5660	2				timed arbitrary	none	none
+5662	0				wilkeson mattocks	none	none
+5663	1				questioning piloted	none	none
+5664	0				cant compare	none	none
+5666	1				spools maxims	none	none
+5670	1				oiled piloted	5683@5952:u:cov3:full0.02	u
+5682	0				maxims homan	none	none
+5683	0				oiled manhattan	none	none
+5695	2				string ding	none	none
+5697	1				chestnut hominy	none	none
+5699	0				butlers begs	5708@5952:u:cov5:full0.14 5711@5952:u:cov3:full0.05 5743@5952:u:cov4:full0.07 5745@5952:u:cov5:full0.16 5747@5952:y:cov8:full0.14	y
+5699	1				dread deciding	none	none
+5701	1				farquhar sheldon	none	none
+5702	0				mackintosh doren	none	none
+5703	1				insulators spoons	none	none
+5706	0				pint polls	none	none
+5707	0				maxims repairer	none	none
+5709	1				mackintosh homan	none	none
+5712	1				relays homan	4666@4849:y+copy:cov25:full0.62	y+copy
+5717	0				mask pause	none	none
+5722	0				bickford card	none	none
+5724	0				millions sheldon	5738@5952:u:cov3:full0.04	u
+5724	1				wicked saddled	9752@10074:y:cov19:full0.46	y
+5724	2				hominy wicked	none	none
+5729	1				grants pause	none	none
+5732	0				bickford edson	9754@10074:y+copy:cov17:full0.73	y+copy
+5734	0				trents examiner	4695@4849:u:cov3:full0.04	u
+5734	2				farrars toby	none	none
+5736	1				sheldon agawam	none	none
+5740	0				toby guerillas	none	none
+5741	0				whiskey mattox	none	none
+5742	1				scantling biggs	none	none
+5743	0				lively sheldon	4278@4435:u:cov3:full0.01 4295@4435:u:cov3:full0.01 2610@2886:u:cov3:full0.01	u
+5743	1				sheaf begs	none	none
+5744	1				protects mack	none	none
+5746	1				jamestown sheldon	13538@13767:u:cov3:full0.07 13257@13307:u:cov3:full0.07 12577@12844:u:cov3:full0.07	u
+5747	1				quickest biggs	none	none
+5747	2				sawing butlers	none	none
+5748	0				windy cloudy	5610@5952:u:cov3:full0.05 5613@5952:u:cov3:full0.05 4297@4435:u:cov3:full0.03	u
+5748	1				wilsons begs	none	none
+5750	1				farrars lads	none	none
+5751	1				farrars smiths	4715@4849:y:cov12:full0.17	y
+5751	2				lent whiskey	none	none
+5752	0				toby oiled	none	none
+5752	1				nursed whiskey	none	none
+5760	0				toby roses	none	none
+5760	1				rambling sheldon	none	none
+5762	0				smashing touch	4732@4849:y:cov45:full0.30	y
+5764	0				farrars lads	5763@5952:u:cov3:full0.20 5765@5952:u:cov3:full0.15	u
+5767	0				trents toby	none	none
+5767	2				suited lient	none	none
+5768	0				beckwith sheldon	4575@4849:u:cov3:full0.04 5789@5952:u:cov3:full0.07 4588@4849:u:cov3:full0.02 9276@9302:u:cov3:full0.07 5803@5952:u:cov3:full0.07 9727@10074:u:cov3:full0.02 5805@5952:u:cov3:full0.07 5806@5952:u:cov3:full0.07 5810@5952:u:cov3:full0.07	u
+5768	2				sheaf beckwith	none	none
+5769	0				nantucket toby	none	none
+5770	0				sheldon eckert	none	none
+5770	1				plation rick	none	none
+5771	1				beltsville grass	none	none
+5772	0				invalids weighed	none	none
+5772	2				toby undine	5773@5952:y+copy:cov40:full0.74	y+copy
+5774	0				wicks gayle	none	none
+5775	1				hamp biggs	none	none
+5775	2				ashes mack	9805@10074:y:cov38:full0.25	y
+5777	0				mighty sheldon	9815@10074:y+copy:cov14:full0.62	y+copy
+5777	1				expelled whiskey	none	none
+5777	2				insane sisters	none	none
+5778	1				continental sheldon	13595@13767:u:cov3:full0.07 9817@10074:y+copy:cov15:full0.64	y+copy
+5779	1				arago heine	none	none
+5780	0				whips cosmopolitan	none	none
+5780	1				rival roof	5936@5952:u:cov3:full0.07	u
+5781	0				sheldon eckert	5776@5952:u:cov3:full0.04 5777@5952:u:cov3:full0.06	u
+5781	1				wren rival	none	none
+5782	0				wren dragged	none	none
+5782	1				steed kearney	none	none
+5783	1				piloted harpers	9735@10074:u:cov3:full0.01	u
+5784	0				toby sheldon	5789@5952:u:cov3:full0.06	u
+5784	1				tears tours	none	none
+5785	0				nursing alarming	none	none
+5786	0				sheaf sheldon	5854@5952:u:cov3:full0.03 5867@5952:u:cov3:full0.02	u
+5787	0				weybosset perit	none	none
+5787	1				toby galls	5812@5952:u:cov3:full0.03	u
+5787	2				plation toby	none	none
+5788	2				oiled beckwith	none	none
+5789	1				sirs risking	none	none
+5790	0				deliver eckert	none	none
+5796	0				handles carpenters	none	none
+5797	0				taylors weighing	none	none
+5798	2				tallapoosa montauk	none	none
+5799	1				schoon maker	none	none
+5801	0				varina sheldon	5883@5952:u:cov3:full0.04	u
+5802	0				napoleons sheldon	none	none
+5802	1				pause sheldon	5801@5952:u:cov5:full0.19 5701@5952:u:cov3:full0.07	u
+5802	2				raining napoleons	none	none
+5804	1				wicked lizzie	none	none
+5805	2				barry langdon	none	none
+5806	1				stalls capes	none	none
+5808	1				horner perit	none	none
+5808	2				rambling napier	none	none
+5811	2				weybosset idaho	none	none
+5812	0				galls johns	none	none
+5814	1				invented lovely	none	none
+5814	2				dewey sheldon	none	none
+5816	0				tobey funny	none	none
+5818	0				breed horner	none	none
+5819	1				boots chain	none	none
+5820	0				lute idaho	none	none
+5820	2				towers mahopac	none	none
+5822	0				quarreling doesn	none	none
+5822	1				gape german	none	none
+5823	0				flight sheldon	none	none
+5823	1				toby jacks	none	none
+5823	2				deford milly	none	none
+5824	0				boots sheldon	5877@5952:u:cov3:full0.05	u
+5824	2				colhoun gape	none	none
+5826	1				matilda wines	none	none
+5827	2				toby quay	none	none
+5829	0				knocks outlay	none	none
+5829	2				galls mast	none	none
+5831	0				sheldon hicks	none	none
+5831	2				oiled fits	none	none
+5833	0				plated cloudy	none	none
+5833	3				plation spoons	5787@5952:u:cov3:full0.05 5834@5952:y:cov12:full0.40	y
+5838	0				brasses pontoosuc	none	none
+5838	2				sheaf crescent	none	none
+5839	2				brasses dick	5838@5952:u:cov3:full0.05	u
+5840	0				sheldon brien	5822@5952:u:cov3:full0.04 5830@5952:u:cov3:full0.06 5831@5952:u:cov4:full0.08 5833@5952:u:cov4:full0.10 5839@5952:u:cov4:full0.08 5852@5952:u:cov3:full0.06	u
+5847	2				sheaf sheldon	5846@5952:u:cov3:full0.06	u
+5849	0				sheaf ariel	5854@5952:u:cov3:full0.03 5858@5952:u:cov3:full0.10	u
+5849	1				toby versailles	none	none
+5850	1				chess boots	none	none
+5851	0				euterpe varuna	none	none
+5851	1				utah coles	none	none
+5852	1				howl wicked	none	none
+5852	2				russia beckwith	5855@5952:u:cov6:full0.12 5941@5952:u:cov6:full0.09	u
+5853	1				montauk leary	5854@5952:u:cov4:full0.06	u
+5854	0				metropolis montauk	none	none
+5854	1				carrie galls	none	none
+5855	2				howl ditto	none	none
+5856	0				winants hancox	5855@5952:u:cov3:full0.07	u
+5856	1				collector invited	5857@5952:u:cov3:full0.09	u
+5857	0				collector horn	9153@9302:y:cov20:full0.32	y
+5857	1				ditto binney	none	none
+5858	0				blackstone steer	none	none
+5858	1				sheaf ariel	5849@5952:u:cov3:full0.15	u
