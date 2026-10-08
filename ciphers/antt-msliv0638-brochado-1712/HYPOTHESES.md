@@ -16,3 +16,9 @@ Standing: treated as two codes. `key.tsv`: `9± -> r` grade C (unchanged), `9 ->
 Step 2 stripped the ± and reported `9 -> r` at 2/4; those two agreeing occurrences are the two 9± tokens, so that figure
 does not support r for the bare glyph. What would settle it: an image comparison of the 9± glyphs on m0280 against the
 bare 9 on m0290, m0292 and m0275 (folded into the planned doubled-loop image pass, NOTES.md "Remaining gaps").
+
+## D4-BROC (8 Oct 2026): letter 134 doubled-loop sign
+Image pass, not a family run. Control first: m0179-r1 pos 16 (Carta 80 copy single f -> s) read as one doubled-loop sign by
+both blind passes; target m0276-r1 pos 10 read the same; m0275-r1 pos 8 read 55 (two digits) by both. Known-answer gate
+G1 0.939/0.939 (gate 0.85), G2/G3 pass. Standing: `ff -> s`, grade M, 1 witness (PREREG-D4-BROC.md). m0275-r1 pos 31 and
+m0276-r2 pos 16 match no known code (untested-by-this-tool beyond the image; LM run next).

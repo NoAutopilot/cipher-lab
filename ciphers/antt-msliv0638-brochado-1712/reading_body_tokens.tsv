@@ -12,9 +12,9 @@ m0179-r1	10	4	H	s	C
 m0179-r1	11	55	H	p	C
 m0179-r1	12	12	H	r	C
 m0179-r1	13	15	H	o	C
-m0179-r1	14	11	H	p	C
+m0179-r1	14	55	M	p	M
 m0179-r1	15	55	H	p	C
-m0179-r1	16	ff?	H	?	U
+m0179-r1	16	ff	H	s	M
 m0179-r1	17	8	H	i	C
 m0179-r1	18	3	H	t	C
 m0179-r1	19	15	H	o	C
@@ -49,7 +49,7 @@ m0276-r1	6	d	H	o	C
 m0276-r1	7	f	H	s	C
 m0276-r1	8	16	H	f	C
 m0276-r1	9	17	H	a	C
-m0276-r1	10	ff?	H	?	U
+m0276-r1	10	ff	H	s	M
 m0276-r1	11	z	M	r	M
 m0276-r1	12	12	H	r	C
 m0276-r1	13	5	H	c	C
@@ -78,13 +78,13 @@ m0276-r2	18	m	H	n	C
 m0276-r2	19	a	H	t	C
 m0276-r2	20	d	H	o	C
 m0275-r1	1	26	H	u	M
-m0275-r1	2	9	H	i	M
+m0275-r1	2	8	M	i	M
 m0275-r1	3	20	H	l	C
-m0275-r1	4	16	H	f	C
+m0275-r1	4	10	M	h	M
 m0275-r1	5	17	H	a	C
 m0275-r1	6	5	H	c	C
 m0275-r1	7	15	H	o	C
-m0275-r1	8	ff?	M	?	U
+m0275-r1	8	55	H	p	C
 m0275-r1	9	12	H	r	C
 m0275-r1	10	7	H	e	C
 m0275-r1	11	3	H	t	C
