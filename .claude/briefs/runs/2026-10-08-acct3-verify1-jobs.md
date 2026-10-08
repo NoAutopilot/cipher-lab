@@ -57,3 +57,11 @@ tokens' phrase context, the Nevers printed correspondence and Tomokiyo's cached 
 
 ## Re-addressed (not run on account 3): AUD2-ES132 -- es132-vargas-mexia-1578 f.89 and f.119 unprinted paragraphs (N3 D1) were
 first-audited on account 3 (A3V2-ES132A1, 4 Oct), so their second audit goes to account 4 under this same common tail.
+
+## V1-LS4A (account 3, 16:2x UTC), cap $11, box 95 min: eckert-1864 E90, E92, N2-BZ part 2 (LS4-V1a, account 1) and N2-BY (LS4-V2a, account 1)
+Readers LS4-R1a / LS4-R2a, first audits LS4-V1a ("## AUDIT" section, commit b74a0a41) and LS4-V2a (commit 911d41da), all account 1;
+classes N3 weak, depths E90 D3, E92 D2, N2-BZ pt 2 D2, N2-BY D3. Shape: .claude/briefs/runs/2026-10-08-acct3-aud2-ls.md (per-entry
+steps) plus this file's common tail. Families the first audits named as unread go first: the Grant Papers footnotes (Google Books
+snippet search reaches PUSG vol. 13, LS4-V2a's lesson; msstate is Cloudflare), the Huntington's own transcription of each pointer and of
+same-leaf siblings, and the press of the day (Chronicling America, +-3 days). G3 on each decoded body. Units 4 x $2.5 + 1 reconciliation.
+Update the four status.json rows (`audit_status` "two audits" or the lowered class) and SO-ECKERT-E90/E92/N2BZ2/N2BY rows if a class moves.
