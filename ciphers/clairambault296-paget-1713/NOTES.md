@@ -640,3 +640,34 @@ Read so far: 0 of the letter (no image of Clairambault 297 p. 249 exists online;
 - [x] image-check: finding aid read and Gallica SRU run with a control; Clairambault 297 not digitised; btv1b9000759b (296) swept 316/316
 - [n/a] retry: no failed fetch left; every request answered 200
 Verdict: parked: every gap has an outside blocker (the letter is in undigitised Clairambault 297; next step is the BnF reproduction order via the ASKS 49 batch)
+
+## D1A-PAG (8 Oct 2026, 06:12-06:15 UTC by date -u, account 1): residue.tsv with contexts
+
+Brief: apply the 1714 key to the 1714 letters and list the codes that stay open, with context. D4-PAG13 (6 Oct) had already done the
+application; this pass re-ran both checks first (sister `tools/decode_key.py --check`: "tokens 505: H 50, I 7, M 370, S 72, U 6 / reading
+up to date", exit 0; `residue_1714.py --check`: up to date, exit 0 -- the sister key, ciphertext and votes are unchanged since D4-PAG13) and
+added the one piece the brief names that the tables lacked: `residue.tsv`, written by the same `residue_1714.py` (its `--check` now covers
+all three tables). One row per token of every residue code (weak or OPEN: 103 codes, 329 tokens -- 90 weak / 314, 13 OPEN / 15, the
+D4-PAG13 counts), with occurrences, status, key value, letter, leaf:position, whether the token has its own gloss chunk, what it reads as,
+and the two cipher codes either side on the same line with their key values. Disk only, 0 network requests; sister folder not written.
+
+One observation from the contexts, for a verifier, not a reading change: the four-code run 221 46 2 185 occurs twice -- f65R:53-56 (L2,
+gloss chunks se / s / [2] / on, the 2 read as the numeral, grade I, exceptions.tsv) and f66R:167-170 (L2, gloss chunks de / ux / pr / in,
+inside "deux princes"). A repeated four-code run with two different glosses means either the alignment is off by a chunk in one place or
+221/46 are homophones read differently; the f65R reading of 2 as a numeral rests on that alignment. Named as a question in the sister's
+gap list territory (D2-PAGR7 gap 1, unsettled alignment); not acted on here (the sister folder is outside this brief).
+Reading or key: unchanged. Status unchanged: open, parked on the BnF reproduction.
+
+## Remaining gaps (D1A-PAG, 8 Oct 2026)
+Read so far: 0 of the letter (no image of Clairambault 297 p. 249 exists online; 0 cipher signs transcribed); the 1714 key's residue is tabled with contexts (residue.tsv, residue_1714_codes.tsv) for the first test
+- whole letter (Clairambault 297 p. 249, 14 Jan 1713) - blocker: needs-physical-access; Clairambault 297 is not digitised (finding aid has no avecDaoGal marker on d0e934; Gallica SRU dc.source 0 records vs control 296 = 1), so the page needs a BnF reproduction order; next: the parent adds "Clairambault 297 p. 249" to the BnF quote batch already drafted for ASKS 49 (outreach/bnf-manuscrits-arsenal-quote-batch.md), ~$0.5
+
+## Escalation (D1A-PAG, 8 Oct 2026)
+- [x] siblings: sister Paget folder clairambault1225-paget-1714 key applied to its own letters (D4-PAG13) and residue listed with contexts (D1A-PAG): firm 21 codes / 176 tokens, weak 90 / 314, OPEN 13 / 15; residue.tsv
+- [n/a] clear-pages: no image of the letter or its neighbours online to read
+- [n/a] known-keys: no ciphertext of this letter exists on disk to apply a key to; the 1714 key and its residue tables are the first test once the page is reproduced
+- [x] print: Wentworth Papers read (LANE CX); web, three blogs, both solver repositories and Cabinet Noir nothing (GF4-BATCH11)
+- [n/a] key-rebuild: nothing to rebuild from without the ciphertext itself
+- [x] image-check: finding aid read and Gallica SRU run with a control; Clairambault 297 not digitised; btv1b9000759b (296) swept 316/316
+- [n/a] retry: no failed fetch left; every request answered 200
+Verdict: parked: every gap has an outside blocker (the letter is in undigitised Clairambault 297; next step is the BnF reproduction order via the ASKS 49 batch)

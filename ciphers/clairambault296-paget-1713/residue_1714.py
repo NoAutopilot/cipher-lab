@@ -5,6 +5,9 @@ write the residue tables this folder needs for the day Clairambault 297 p.249 (1
 Reads, never writes, ../clairambault1225-paget-1714/{key.tsv, ciphertext.tsv, reading_tokens.tsv, votes.tsv}.
 Writes residue_1714_codes.tsv (one row per code seen in the 1714 letters, plus key codes never seen in them)
 and residue_1714_unglossed.tsv (the cipher tokens with no period gloss chunk of their own, key applied).
+D1A-PAG (8 Oct 2026) adds residue.tsv: one row per token of every residue code (status weak or OPEN), with its
+letter/leaf:position and the cipher codes either side on the same line (key value in brackets), so a 1713 occurrence
+of a residue code can be compared with its 1714 contexts.
 A token is 'glossed' when votes.tsv carries a non-empty value for its (line, position).
 --check exits 1 if either committed table differs from a fresh regeneration (rule 7).
 """
@@ -65,7 +68,30 @@ def build():
     t1 = [['code', 'n_tokens', 'n_glossed', 'n_unglossed', 'letters', 'key_value', 'key_grade',
            'token_grades', 'read_as(value:n; exc=exceptions.tsv image/settle ruling)', 'status', 'positions(*=unglossed)']] + out
     t2 = [['line', 'pos', 'letter', 'code', 'key_value', 'key_grade', 'token_grade', 'read_as', 'code_n_tokens']] + ungl
-    return {'residue_1714_codes.tsv': t1, 'residue_1714_unglossed.tsv': t2}
+    # residue.tsv: per token of each weak/OPEN code, with neighbouring cipher codes on the same line
+    status_of = {r[0]: r[9].split(',')[0] for r in out}
+    lines = collections.OrderedDict()
+    for t in toks:
+        lines.setdefault(t['line'], []).append(t)
+    def kv_s(c):
+        return f"{c}[{key[c]['value'] if c in key else 'OPEN'}]"
+    res = []
+    for ln, ts in lines.items():
+        ts = sorted(ts, key=lambda t: int(t['pos']))
+        for i, t in enumerate(ts):
+            c = t['sign']
+            if status_of.get(c) not in ('weak', 'OPEN'):
+                continue
+            k = (t['line'], t['pos'])
+            prev = ' '.join(kv_s(x['sign']) for x in ts[max(0, i - 2):i]) or '^'
+            nxt = ' '.join(kv_s(x['sign']) for x in ts[i + 1:i + 3]) or '$'
+            res.append([c, by[c]['n'], status_of[c], key[c]['value'] if c in key else 'OPEN', 'L' + letter.get(k, '?'),
+                        f"{t['line']}:{t['pos']}", 'gloss' if votes.get(k, '') not in ('', '?') else 'unglossed',
+                        t['value'], prev, nxt])
+    res.sort(key=lambda r: (numkey(r[0]), r[5]))
+    t3 = [['code', 'occurrences', 'status', 'key_value', 'letter', 'leaf:pos', 'gloss_own', 'read_as',
+           'prev2_codes[key]', 'next2_codes[key]']] + res
+    return {'residue_1714_codes.tsv': t1, 'residue_1714_unglossed.tsv': t2, 'residue.tsv': t3}
 
 def render(t):
     return ''.join('\t'.join(str(c) for c in r) + '\n' for r in t)
