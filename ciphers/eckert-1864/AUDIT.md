@@ -4706,3 +4706,126 @@ Safe sentences (rule 10 wording):
   off a key row is checked against key.md before it is left plain.
 - Requests: hdl.huntington.org 20 (16 CONTENTdm dmQuery, 2 dmGetItemInfo, 2 IIIF images; under the LANE LEDGER token, 3.2 s apart);
   archive.org 10 (`_djvu.txt`, one 500); be-api.us.archive.org 17 (several 502s, each retried once); googleapis.com books 24. Subagents 0.
+
+## AUDIT (FV-FM1)
+
+Verifier FV-FM1 (account 1, for LANE LEDGER), 8 Oct 2026, 19:02-19:2x UTC by `date -u`; a separate session from the reader FM-R1
+(account 1), not protecting its conclusions. Scope: **E160, E162, E163, E164** (ciphertext.txt, Cipher No. 1, read by FM-R1 from the
+Fort Monroe ledger mssEC 25 = Huntington object 5952; NOTES "## FM-R1"). Nothing decoded beyond key look-ups in key.md and one call of
+`decode.number()`. Key source for every item: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists
+for eckert-1864, so `judge_plaintext.py` was not run. Handed on, not audited here: E165, E167, E168, E169.
+
+### 1. Duplicates, prior-work checklist and step 0
+- **Duplicate diff:** pointer, date and addressee of each entry against every `###` header in ciphertext.txt / ciphertext-no2.txt /
+  ciphertext-no9.txt and status.json. Same-date items: E76 (1 Nov 1864 12 M, Butler to W. P. Smith, mssEC 19) and E37 (2 Nov, to
+  Manierre and Dodge): other senders and addressees. E61 (9 May 1864, O'Brien to Knox) is another day and addressee. Pointers 5802, 5823,
+  5664 appear only in E160-E164. **No duplicate.** The sender's own copy: these are O'Brien's telegrams from Butler's headquarters to
+  Sheldon, so the sent copy would sit in an Army of the James ledger, which is not among the Huntington's Eckert volumes; the full-text
+  search below (whole collection p16003coll11, which includes mssEC 18 and 19) finds no second copy.
+- Prior-work checklist (hand run; `tools/prior_work.py` not run): (1) own work: grep of NOTES/AUDIT/HYPOTHESES/ciphertext*/status.json and
+  the ROOM tail: only FM-PRE and FM-R1 name these rows, no live claim; (2) leaf: the Huntington transcription of pages 5801-5805, 5822-5824
+  and 5663-5665 read whole from disk (sources/fortmonroe/), page images not re-read by this verifier; (3) holder: no gloss or decipherment on
+  the pages; (4) editions: section 2; (5) G3 antecedents and replies: below.
+- **Own Huntington transcription, read first (with neighbours):**
+  - 5801-5802 (E162, E160): the requests are in the same ledger, frame in clear. 1 Nov, Sheldon to Lt. Col. Howard, chief of [artillery]:
+    "[Butler] wishes a list of ... best ... batteries ... [3] of them must be Napoleon[s] ... It is very important to get this list at
+    once", signed "Fred Martin [Captain] and C. M."; E162 (1 Nov 12.30) is the answer; 2 Nov, Sheldon to Howard: "Let me know the strength
+    of each battery and the style of [guns] ... please send word at once", signed Fred Martin; E160 (2 Nov 2.30 PM) is that answer.
+    5805 (4 Nov): O'Brien "for [Captain] Langdon, 1 U S Artillery ... if [General] Hawley is gone when you reach [Fort Monroe] open your own
+    letter of instructions".
+  - 5823 (E163): the page before E163 (8 Dec, O'Brien to Sheldon) moves troops and steamers to [Fort Monroe]; E163's body is mostly clear.
+  - 5664 (E164): body clear except the eleven numeral words; the next entries are Sheldon's 11 May report and Stager's 12 May key change.
+- **Huntington CONTENTdm full-text search** (p16003coll11, `CISOSEARCHALL`, 12 queries, 3.2 s apart, under the hdl token 19:05-19:07):
+  "Napoleons" (4: 5802 itself; 7252, 7193, 9146 unrelated), "ossifers" (2: 5802, 5585 unrelated), "Langdon" (5805 only), "parrots" (7: 5802,
+  others unrelated), "weasler" (25: 5823 and other Fort Monroe pages, where it is always a steamer: "the weasler Russia", "weasler
+  Baltic"), "subsist" (18: 5823 only of this traffic), "cifer" (4: 5664, three unrelated), "translate" (11: 5664, others unrelated),
+  "Columns" (160, generic), "Howard Martin" (5801, 5802, 3466 unrelated), "Napoleon pagoda" (5802), "Turner palate" (5823; 9935 =
+  Turner summoned by the Committee on the Conduct of the War, Jan 1865, unrelated). No other page renders any of the four; no clear reply.
+
+### 2. Print: located, antecedents and context
+OR volumes as `_djvu.txt`: cached OR I/36 pt 2, I/43 pts 1-2, ORN I/10, Butler's *Private and Official Correspondence* vols IV-V
+(`privateofficialc04butl`, `privateofficialc05butl`), plus `warofrebellion421unit` and `warofrebellion423unit` (OR I/42 pts 1, 3) fetched
+once to scratch; letters-only phrase grep and date-window reads; pages from the running heads.
+
+| ID | finding | where |
+|---|---|---|
+| E162, E160 | **context printed, the telegrams not**: Butler to Grant, Washington, 2 Nov 1864 1 p.m.: "we should have at least 5,000 good troops and at least two batteries of Napoleons ... They can easily be spared from the Tenth and Eighteenth Corps" (the reason for Sheldon's request); Hawley's report of 6 Nov: "Two batteries, each of six light 12's -- Battery M, First U. S. Artillery (Captain Langdon), and Fourth New Jersey (Captain Doane) -- were sent to Bermuda Landing" to embark for New York, with sealed instructions; Butler from New York: "I have my three (3) batteries on ferry boats"; "Fred Martin, Capt. & C. M." signs for Butler in June 1864 | OR I/42 pt 3 p.489; OR I/43 pt 2 p.559; Butler Corr. V pp.326-327; Butler Corr. IV (June 1864); Butler's Book (1892) no. 85 (Google Books snippet) prints the 2 Nov telegram. Battery M, 1st U.S., light 12-pounders (Napoleons), is the first battery of both E162 and E160. The lists and strengths themselves: not located (OR I/42 pt 3, I/43 pt 2, Butler Corr. V, Google Books "best five batteries" Butler 1864, "batteries of Napoleons" Langdon: unrelated). |
+| E163 | context only: Brig. Gen. John W. Turner is Butler's chief of staff (OR I/42 pt 3 p.707 and passim); the first Fort Fisher expedition is embarking (Butler Corr. V; OR I/42 pt 3, 6-8 Dec). The telegram: not located (OR I/42 pts 1, 3, Butler Corr. V by "subsistence, forage", "moment's notice", "large steamer"; Google Books "ready to follow at a moment's notice" Turner Butler December 1864, "loaded with subsistence, forage and ammunition" 1864: unrelated). | - |
+| E164 | nothing printed found: Google Books "cipher of ten columns", "cant translate your cipher" (unrelated: Cryptology 2012, the 1876 cipher-dispatch hearings); the route itself not compared with Plum, *The Military Telegraph during the Civil War* (1882), or Bates, *Lincoln in the Telegraph Office* (not searched). | - |
+
+Grant Papers and Basler: not searched (no entry is to or from Grant or Lincoln). Press of the day: not searched.
+
+### 3. Grade and reading corrections
+- **E160 "pledge pebble inch ordnance" and "pledge pebble inch parrots" = "6 3-inch ordnance [guns]" and "6 3-inch Parrotts"**, not
+  "[9] inch": `decode.number()` adds 6 + 3 because they are adjacent. "Ordnance" is the plain gun name (the 3-inch ordnance rifle; OR I/42
+  pt 1 "4 3-inch ordnance guns"), not the key row "Ordnance | After the": not a code group. FM-R1's table ("9 inch") is wrong in both
+  places. Fix worker: `decode.py` reads digits before "inch" as separate numbers, or E160 gets an exceptions entry; `--check` after.
+- **E160 "gloryth" = 17th** (Glory = 17, H, with the suffix "th"): "17th New York Napoleons"; FM-R1 left it unread. E162 has the same
+  battery as "glance amos" = 17 New York (Glance = 17). E160: 43 H of 43 code groups (42 decoder-H less "ordnance", plus "gloryth").
+  "pagan in first" is "Battery [M] first" by E162 ("pagoda m plunge united states negro"); "in" is the transcription's, M.
+- **Discrepancy, recorded not settled:** E162 lists the 17th New York as "3 inch" ("glance amos perfume inch"), E160 the next day
+  as "Napoleons" ("gloryth Amos Napoleons"); both readings are H; the ledger itself disagrees, not the key.
+- **E162 "sligs"** = Sligo ("In the") with a stray s: "the best 5 batteries in the Army of [the] James", M. E162: 29 H of 30.
+- **E163 "weasler" = steamer** (key "Weasel | Steam", H, with "-er"; 25 Fort Monroe pages use "weasler/weaseler" for named steamers) and
+  **"offal" = Ammunition** (H, reads in place: "subsistence, forage and ammunition"): H, not M. "for age" (forage), "toby" (to be),
+  "Read die to fall low" (ready to follow), "no tis" (notice) are plain phonetic spellings, not code. E163: 10 H of 10 code groups
+  (Fanny, Knave, Appian, zebra, plank, weasler, offal, pedlar, webster, palate).
+- **E164**: 11 code groups (feeble x2, pledge, plug, paddle, plank, penny, plunder, perfume, person, poney), all H ("poney" = Pony = 9, a
+  spelling variant). Internal check: the ten route numbers are 6, 10, 1, 8, 2, 4, 7, 3, 5, 9, each of 1-10 exactly once, as a ten-column
+  route requires; a random ten draws from 1-10 do this with probability 10!/10^10 = 0.00036. FM-R1's No. 2 decode reads 2 of the 11.
+
+### 4. Classification (key `period`)
+`depth_pct` = (H + C) / code-word groups, unread groups counted.
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E162** O'Brien (for Lt. Col. Howard) to Capt. Fred Martin at Fort Monroe, 1 Nov 1864 12.30 | **N3** | unknown | **D3** | 96.7 (29 H of 30) | code clause: Amos = New York, Pagan/Pagoda = Battery, Negro/Nuptial = Artillery read here, in E160 and passim; external: Butler's printed call of 2 Nov for "two batteries of Napoleons" and Hawley's report that Battery M, 1st U.S. (six light 12s) went to New York (OR I/42 pt 3 p.489; I/43 pt 2 p.559); antecedent request in clear on ledger p.257; matched control FM-R1 (No. 2 26 H incoherent, shuffled No. 1 incoherent) |
+| **E160** the same, 2 Nov 1864 2.30 PM, strength of the batteries | **N3** | unknown | **D3** | 100 (43 H of 43) | code clause as E162 (17 New York in both, by Glory and Glance); external: as E162, Battery M 1st U.S. = Napoleons; antecedent request ("strength of each battery") in clear on p.258; matched control FM-R1 (No. 2, No. 9 incoherent; shuffled No. 1 reads "Kirby Smith ... Ohio") |
+| **E163** Brig. Gen. J. W. Turner (via O'Brien) to Butler at Fort Monroe, 9 Dec 1864 11 AM | **N3** (weak: body largely clear in the public transcription) | unknown | **D2** | 100 (10 H of 10) | code clause: Weasel(er) = steamer reads here and on 25 Fort Monroe pages; Knave = Butler (5664, 5801, passim); no external check of the content (print confirms only Turner's rank and post); D3 withheld |
+| **E164** O'Brien (Bermuda Landing) to Sheldon, 10 May 1864, his cipher's ten-column route | **N3** (weak: body clear except the numerals) | unknown | **D2** | 100 (11 H of 11) | code clause: numeral words read in every context of the key's numeral page; internal: the route is a permutation of 1-10 matching "10 columns"; no external check (Plum, Bates not searched); D3 withheld |
+
+- **E162: N3.** Safe sentence: "Read at grade H with the period War Department Cipher No. 1: on 1 Nov 1864 Butler's headquarters answer
+  Fort Monroe's request for a list of batteries by naming five -- Battery M, 1st U.S. Artillery, Battery E, 3rd U.S. Artillery, the 17th
+  New York, Battery D, 1st U.S. and Battery F, 5th U.S. -- for the troops Butler asked for in New York (his printed telegram of 2 Nov, OR
+  ser. I vol. 42 pt 3 p.489); the telegram itself not located in the Official Records (ser. I vols. 42-43), Butler's printed correspondence,
+  Internet Archive full text, Google Books or the Huntington's full-text search (searched 8 Oct 2026)." Unsafe: "first", "unpublished".
+  Depth sentence (D3): "On 1 Nov 1864, when Butler wanted Napoleon batteries for his New York election command, his headquarters sent Fort
+  Monroe a list of the best five batteries of the Army of the James, headed by Battery M, 1st U.S. Artillery, one of the two batteries that
+  actually went."
+- **E160: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 2 Nov 1864 Butler's headquarters give Fort Monroe the officers and
+  men of each battery on the list of 1 Nov (Battery M, 1st U.S., Napoleons, 3 officers and 110 men; the 17th New York, Napoleons, 4 and
+  166; Battery D, 1st U.S., six 3-inch ordnance guns, 2 and 122; Battery F, 5th U.S., six 3-inch Parrotts, 3 and 116); not located in the
+  Official Records (ser. I vols. 42-43), Butler's printed correspondence, Internet Archive full text, Google Books or the Huntington's
+  full-text search (searched 8 Oct 2026)." Depth sentence (D3): "On 2 Nov 1864 Butler's chief of artillery reports to Fort Monroe that
+  Battery M, 1st U.S. Artillery has Napoleons, 3 officers and 110 men, and the 17th New York Battery Napoleons, 4 officers and 166 men."
+- **E163: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 9 Dec 1864, as the Fort Fisher expedition assembles, Butler's chief
+  of staff Brig. Gen. J. W. Turner advises Butler at Fort Monroe that a large steamer or two be loaded with subsistence, forage and
+  ammunition ready to follow at a moment's notice; much of the body is in clear in the Huntington's public transcription; not located in
+  the Official Records (ser. I vol. 42), Butler's printed correspondence, Internet Archive full text or Google Books (searched 8 Oct 2026)."
+  Depth sentence (D2): "On 9 Dec 1864 Turner tells Butler at Fort Monroe he thinks one or two large steamers should be loaded with
+  subsistence, forage and ammunition, ready to follow at a moment's notice."
+- **E164: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 10 May 1864 Butler's cipher operator R. O'Brien at Bermuda Landing
+  gives Sheldon at Fort Monroe the route of his ten-column cipher (down 6, down 10, up 1, down 8, up 2, down 4, up 7, down 3, up 5, down 9),
+  asks him to compare it with his own, and says he cannot translate Sheldon's cipher; only the numbers are in code in the Huntington's
+  public transcription; not located in Google Books or the Huntington's full-text search (searched 8 Oct 2026)." Depth sentence (D2):
+  "On 10 May 1864 O'Brien sends Sheldon the column order of his ten-column route -- down 6, down 10, up 1, down 8, up 2, down 4, up 7,
+  down 3, up 5, down 9 -- because he cannot translate Sheldon's cipher."
+- Not N4 for any: Plum and Bates (E164), Butler's and Turner's letterbooks (NARA RG 393), the press of the day, HathiTrust and JSTOR are
+  unread; Butler's Book read by snippet only.
+- Second audits (account-3 VERIFY lane): E162, E160 (N3 D3) and E163, E164 (N3 D2) -- WORK-QUEUE row AUD2-LEDGER-3. Start with Plum vol. 1
+  (route ciphers, E164), Butler's Book pp.754ff (E160/E162), and OR I/42 pt 3 for 1-2 Nov and 8-10 Dec 1864 by page.
+
+### 5. Postmortem
+- No over-claim in FM-R1's wording; two reading errors in its table: E160's "9 inch" (twice) is "six 3-inch", from the decoder summing
+  adjacent numerals, and "ordnance" was counted as the code word "After the". Lesson for readers: a numeral before a unit ("inch",
+  "pounder") is a count plus a calibre, not one number; check `decode.number()` output against the sense.
+- Under-reads: "gloryth" (17th), "weasler" (steamer), "offal" (ammunition) were left unread or M although key.md has them; the same lesson
+  as FV-LS5-B (a word one suffix off a key row is checked against key.md before it is left plain).
+- The antecedent requests for E160 and E162 are in clear on the same ledger pages (5801, 5802); FM-R1 did not use them. They name the
+  purpose (Butler's batteries for New York), which the print then confirms.
+- Corrections for a fix worker (~$0.3): E160 numerals and "ordnance", "gloryth"; E163 "weasler", "offal" H; NOTES "## FM-R1" table cells
+  for E160 and E163. `decode.py --check` not re-run here (no reading file touched).
+- Requests: hdl.huntington.org 12 (CONTENTdm dmQuery; token 19:05-19:07), archive.org 2 (`_djvu.txt`), googleapis.com books 11 (two 503s,
+  each retried once), be-api 0. Subagents 0.
+- Rows written in this session: status.json results for E162, E160, E163, E164 (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
+  SO-ECKERT-E160, SO-ECKERT-E162, SO-ECKERT-E163, SO-ECKERT-E164 (prompts in second-opinions/); WORK-QUEUE.tsv AUD2-LEDGER-3.
