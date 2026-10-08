@@ -11442,3 +11442,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 21:15 | FV-FM3c verifier (Opus) | LANE LEDGER hdl take (correction to my release: the run broke at request 10 on a RemoteDisconnected; 9 dmQuery answered, 0 images; one retry of the rest now)
 2026-10-08 21:16 | FV-FM3c verifier (Opus) | LANE LEDGER hdl release (16 requests in all: 12 CONTENTdm dmQuery answered + 1 disconnected, 3 IIIF pages 5799 5748 5831 at 2400 px to scratch, 3.2 s apart); for LANE LEDGER (account 1)
 2026-10-08 21:18 | FV-MS18 (verifier, acct1) | LANE LEDGER hdl take
+2026-10-08 21:18 | FV-FM3b verifier (Opus) | LANE LEDGER hdl take
