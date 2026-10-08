@@ -7779,6 +7779,129 @@
       "depth_note": "27 H of 27 code-word groups ('John' of John Horner plain); 'Wm breed ford', 'Wesport raining here' M"
     },
     {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3a verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3a)' section 4",
+      "reading_version": "FM-R2a 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3a) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "1",
+        "other": "7"
+      },
+      "depth_pct": 65.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): McAlpine (City Point) to E. L. Wentz via Fort Monroe, 6 Oct 1864, extending the military railroad beyond Warren to Peebles House (E172)",
+      "line": "Read at grade H with Cipher No. 1: on 6 Oct 1864 C. L. McAlpine at City Point tells E. L. Wentz, through Fort Monroe, that Meade (via Ingalls) wants the military railroad extended beyond Warren to Peebles House, two miles, and that he cannot begin until the ties for Alexandria are sent; not located in the Official Records ser. I vol. 42, Grant Papers vol. 12 or the Huntington full text (searched 8 Oct 2026).",
+      "gap": "N3: received copy (mssEC 09-11) not on disk; press, Google Books (429) unread; railroad unit 'I urn ... no chairs' M",
+      "depth": "D2",
+      "completeness": "15 H by hand of 16 decoder H ('Washington' in the address an artefact); 'a plation', 'I urn paws', 'no chairs pause' M; signer C. L. McAlpine plain",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.243, pointer 5787, E172"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.243, pointer 5787, E172",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.243, pointer 5787, E172"
+      ],
+      "depth_sentence": "On 6 Oct 1864 the City Point railroad's engineer reported that Meade wanted the railroad pushed two miles past Warren to Peebles House but that work had to wait for the ties going to Alexandria.",
+      "depth_check": "cipher clause '[General] Meade requests the [Rail Road] toby extended beyond Warren to Peebles House [2] [Mile]s'; Shelby/Shelter = General in two contexts; context only: McCallum report (Wentz, McAlpine); page 244 image read; < 80% H, D3 withheld",
+      "depth_note": "15 H by hand of 16 decoder H ('Washington' in the address an artefact); 'a plation', 'I urn paws', 'no chairs pause' M; signer C. L. McAlpine plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3a verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3a)' section 4",
+      "reading_version": "FM-R2a 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3a) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): J. A. Kress (Fort Monroe) to Turner, chief of staff, 26 Dec 1864: Dodge's letter from Beaufort, rations and ordnance for the Fort Fisher expedition (E173)",
+      "line": "Read at grade H with Cipher No. 1: on 26 Dec 1864 John A. Kress at Fort Monroe tells Butler's chief of staff Turner that a letter from Colonel Dodge dated Beaufort the 24th said no troops had landed, that forty days' rations but no ordnance stores had been sent since the expedition sailed, and that there is a large supply of ammunition at New Berne; not located in the Official Records ser. I vol. 42 or Butler's printed correspondence (searched 8 Oct 2026).",
+      "gap": "N3: Grant Papers vol. 13 not reachable on IA; press, Google Books (429), Butler letterbooks unread",
+      "depth": "D2",
+      "completeness": "18 H of 18 code-word groups ('Dodge', 'ordnance', 'John' plain, decoder H wrong on each)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.296, pointer 5840, E173"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.296, pointer 5840, E173",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.296, pointer 5840, E173"
+      ],
+      "depth_sentence": "On 26 Dec 1864 Fort Monroe reported to Butler's headquarters that, by a letter from Beaufort of the 24th, no troops had landed, and that ammunition but no ordnance stores lay ready at New Berne.",
+      "depth_check": "cipher clause 'Letter from [Colonel] Dodge dated [Beaufort] [24] says No [Troops] had landed [.] [40] days [Rations] have been sent since the [Expedition] sailed'; no key-independent check of the content (Beaufort, Dodge, Kress context only, OR I/42 pt 3); D3 withheld; page image read",
+      "depth_note": "18 H of 18 code-word groups ('Dodge', 'ordnance', 'John' plain, decoder H wrong on each)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM3a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM3a verifier (account 1)",
+      "depth_date": "8 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "8 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM3a)' section 4",
+      "reading_version": "FM-R2a 8 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM3a) section 3",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "1",
+        "other": "2"
+      },
+      "depth_pct": 87.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): O'Brien (Hd Qrs A. of J.) for Col. Dodge to Fort Monroe, 8 Dec 1864: steamers Albany, United States and Dupont (E177)",
+      "line": "Read at grade H with Cipher No. 1: on 8 Dec 1864 O'Brien, for Colonel Dodge, tells Fort Monroe (for Colonel Webster) that the Albany and United States are coming with horses to be transferred to other steamers, to hold the Dupont, and to ready two ocean steamers; not located in the Official Records ser. I vol. 42 (searched 8 Oct 2026).",
+      "gap": "N3: Grant Papers vol. 13 not reachable on IA; press, Google Books (429) unread; decoder puts the body in {tail} (header 'webster' read as signature)",
+      "depth": "D2",
+      "completeness": "about 20 H of code-word groups; 'flight' x2 and the filler 'many weaselers form flights' M; Webster (addressee) and Dodge (signer) plain",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.279, pointer 5823, E177"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.279, pointer 5823, E177",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.279, pointer 5823, E177"
+      ],
+      "depth_sentence": "On 8 Dec 1864 Butler's headquarters ordered Fort Monroe to hold the Dupont and to ready two ocean steamers for horses and infantry coming down the James.",
+      "depth_check": "cipher clause 'hold the Dupont at [Monroe] [.] I will send remaining [Infantry] to [Monroe] on [River] [Steam]ers'; Weaseler = Steamer in four contexts; no external check of the content; page image read by FM-R2a",
+      "depth_note": "about 20 H of code-word groups; 'flight' x2 and the filler 'many weaselers form flights' M; Webster (addressee) and Dodge (signer) plain"
+    },
+    {
       "date": "8 Oct 2026",
       "kind": "recovery",
       "key": "published",

@@ -5625,3 +5625,99 @@ Press of the day: not searched.
   second, host stopped). Subagents 0.
 - Rows written in this session: status.json results for E185 and E191 (audit_status "one audit"); SECOND-OPINIONS-QUEUE.tsv
   SO-ECKERT-E185, SO-ECKERT-E191 (prompts in second-opinions/); WORK-QUEUE.tsv AUD2-LEDGER-7.
+
+## AUDIT (FV-FM3a)
+
+Verifier FV-FM3a (account 1, for LANE LEDGER), 8 Oct 2026, 21:12-21:33 UTC by `date -u`; a separate session from the reader FM-R2a
+(account 1), not protecting its conclusions. Scope: **E170, E172, E173, E174, E177** (ciphertext.txt, Cipher No. 1, Fort Monroe ledger
+mssEC 25 = Huntington object 5952; NOTES "## FM-R2a"). Nothing decoded beyond key look-ups in key.md. Key source for every item:
+`period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py`
+was not run. Google Books not called (wave-2 rule: daily quota exhausted). Readings are not edited here (rule 7: corrections in
+section 3 go to the decode path through a FIX job).
+
+### 1. Duplicates and prior-work checklist (hand run; `tools/prior_work.py` not run, no items.tsv for this ledger)
+- **Duplicate diff:** pointer, date and addressee of the five against every `###` header of ciphertext.txt / -no2 / -no9 and
+  status.json: pointers 5806, 5787, 5840, 5747, 5823 occur only in E163 (5823/1, a different entry) and the five's own headers; no
+  same-date entry to the same addressee. **No duplicate.**
+- (1) own work: grep of NOTES/AUDIT/HYPOTHESES/status.json/WORK-QUEUE and the ROOM tail: only FM-PRE and FM-R2a name these rows; no
+  live claim. (2) leaf and neighbours: FM-R2a image-read pages 5806, 5787, 5840, 5747, 5823; this verifier read 5840 (E173, top third)
+  and 5788 (E172's continuation, page 244, which FM-R2a had from the transcription only) at 2400 px: both match the volunteer
+  transcription word for word ("no chairs pause I can't commence it until we get through sending ties to Banjo unless you order
+  differently yoke see L Mack Alpine"; "... supply of olive at flora John A Krees &c."). Neighbours read in the transcription on disk:
+  5805 (Babcock's 4 Nov telegram, printed OR I/42 pt 3 p.506-507), 5806/0 (Bowers's 5 Nov dispatch, printed p.517), 5745-5746 (Benham's
+  and Biggs's 13 June telegrams, both printed OR I/40 pt 2 pp.12-13), 5822 (Beckwith/Dodge 8 Dec), 5788/1-2. No interlinear or clear
+  copy of any of the five on its own page. (3) holder: Huntington transcription is the base; no catalogue gloss. Solver repositories,
+  Tomokiyo: not searched for these pointers (unchecked; Tomokiyo's civilwar pages do not treat mssEC 25 entries individually in the
+  cached copy). (4)/(5) editions and G3: section 2.
+- **Sender's copy:** E172 was sent to Eckert at Washington; the War Department received books (mssEC 09-11) are not on disk: unchecked.
+  The other four are Fort Monroe / Army of the James traffic that does not pass through mssEC 19/18 (word grep of sources/mssEC19 and
+  mssEC18 for Krees, Peebles, Lubey, stalls, Wentz: no matching entry).
+- **Huntington CONTENTdm full-text search** (p16003coll11, CISOSEARCHALL, 8 queries + 2 IIIF pages, under the hdl token 21:26-21:27 UTC):
+  Krees (5840 only), Peebles (5787 only), "Mack Alpine" (5788 only), McAlpine (8624 clear and 5921 cipher, Mar 1865, W. W. Wright asking
+  for McAlpine -- a known-plaintext pair showing `blubber` = City Point, as E172's header word reads), Dupont (12: 5822, 5823, 5851 "A
+  Dupont" = the transport Admiral Du Pont, 5877, others 1863/1865), "ordnance stores" (18, generic), Lubey (5745, 5746, 5747), "without
+  stalls" (5806 only).
+
+### 2. Print (Grant Papers via IA be-api, snippet only, no page; OR as IA `_djvu.txt` grepped locally)
+Volumes: OR I/40 pt 2 (`warofrebellion402unit`), I/42 pts 1-3 (`warofrebellion421unit`, `422unit`, `423unit`, fetched to scratch);
+cached Butler Corr. IV-V, McCallum's report (`reportsofbvtbrig00unit`); Grant Papers vols 10-12 (`papersofulyssess0010gran`-`0012gran`,
+positive control "City Point" returns each); vol. 13 has no IA item under that pattern (`papersofulyssess0000unse` answered one query,
+not identified as vol. 13): Grant Papers for Nov 16 1864 on is **unchecked** (E173, E177). Basler: no Lincoln row. Press: not searched.
+
+| ID | finding | where |
+|---|---|---|
+| **E170** | **FOUND, in print.** Grant Papers vol. 12, in the editors' note to Bowers's telegram to Babcock of 5 Nov 1864 1.15 PM: "[Babcock telegraphed] ... despatch received The horses would all be killed if sent without stalls. Only four peices of artillery remain here and the horses of one battery ... leave tonight without fail. One steamer with 360 Infantry broke down off the Capes last night and came back her men have [been transferred and will leave on] boat with Genl Butlers horses in one hour. I go to Baltimore on steamer." ALS (telegram sent), DNA, RG [107]. The sender is Lt. Col. O. E. Babcock at Fort Monroe (the antecedent, Bowers 1.15 PM, is OR I/42 pt 3 p.517; Babcock's 4 Nov "I shall go to Baltimore to-morrow evening", p.506-507, is the cipher entry 5805 on the page before). | be-api 5 phrase hits in `papersofulyssess0012gran` (snippet, no page) |
+| E172 | not located (OR I/42 pt 3 Oct 4-8 by Ingalls/railroad/extend/Peebles/Wentz; I/42 pt 1; Grant Papers 12 "Peebles railroad", "Wentz": hits are the Sept order to extend the City Point railroad to the Weldon road and Sept Wentz traffic, not this; be-api "extended beyond Warren" 0). Context, independent of the key: McCallum's report lists **E. L. Wentz, chief engineer and general superintendent of military railroads of Virginia to 1 Nov 1864**, and **C. L. McAlpine, engineer of repairs of the City Point railroad** (1864) -- the "see L Mack Alpine" of the signature; the report also records the 18 miles of new railroad built round Petersburg in fall-winter 1864-65. | McCallum report; OR I/42 pt 3 |
+| E173 | not located (OR I/42 pt 3 Dec 24-28 by Beaufort/rations/Turner/Dodge/ordnance; I/42 pt 1; Butler V; be-api "no troops had landed", "no ordnance stores": unrelated). Context: Butler's circular of 25 Dec 1864 (vessels short of coal put into Beaufort; OR I/42 pt 3 pp.1076-1077) and Butler's 27 Dec "could not get out of Beaufort" (pp.1086-1087; pages from the OCR running heads, +-1); **Col. George S. Dodge, chief quartermaster, Army of the James** (pp.394-395, 27 Oct); **Lieut. J. A. Kress, chief ordnance officer, Dept. of Va. and N. C.** (p.736 index entry, 28 Nov) -- the "John A Krees" who signs. | OR I/42 pt 3 |
+| **E174** | **substance in print, not this telegram.** OR I/40 pt 2 p.13: Biggs (Lt. Col. and Quartermaster), Fort Monroe, 13 June 1864, to Col. Shaffer: "By order of General Grant I send all ferry-boats and bridging material to Fort Powhatan ... I have placed the boats in charge of Captain Lubey, Fifteenth New York Engineers, and Captain Robbins, Fiftieth New York Engineers. Am sending nails, spikes, rope, and lumber. Of the latter hope to get about 200,000 feet off to-day." E174 (14 June, signed "Colonel Biggs, Quartermaster") reports the same shipment done ("had previously sent over 200,000 feet of lumber and all ferry boats to Fort Powhatan under charge of Captain Lubey, 15th New York Engineers"); its new sentences are the sawing of 2-inch lumber -- ordered in Grant Papers vol. 11 ("Saw Mill a[t] Fort Monroe to saw all th[e] two inch lumber they can", snippet) -- and the list of vessels for Col. Fuller. The cipher copy of the printed 13 June telegram is the ledger page before (5746: "Sampson boots ... Saco how Patton ... pilgrim Lubey ghost Amos Randolphs ... peach prolong purple feet ... Her man begs"), a known-plaintext check on E174's own groups. | OR I/40 pt 2 p.13; Grant Papers 11 |
+| E177 | not located (OR I/42 pt 3 Dec 7-9 by Dupont/Albany/United States/Webster/ocean steamers; I/42 pt 1 p.981 prints the 8 Dec embarkation as a report (FM-R2a); be-api "hold the Dupont" 0 relevant). Context: the ledger's own 5822 (Beckwith for Dodge, 8 Dec: "if the Rice Dupont & Sedgwick dont arrive I shall send the remaining [troops] to [Monroe] in [river] boats ... George S Dodge [Colonel] Chief [Quartermaster]"); **Col. Webster, chief quartermaster at Fort Monroe** (OR I/42 pt 3 pp.417-418, 28 Oct; p.492, 3 Nov). | OR I/42 pt 3; mssEC 25 p.278 |
+
+Requests: hdl.huntington.org 10; archive.org 5 (4 djvu + 1 advancedsearch); be-api 27 (four 502s, no retry loop); googleapis 0.
+
+### 3. Reading and grade corrections (FM-R2a table, reading.md)
+- **E170:** "tulip" is not "Open": the print has "without fail. One steamer" (tulip plunge = [?] 1; tulip M, or a stop/null). **"Babcock" is
+  the signature** (O. E. Babcock), not a steamer's name: "I go to Baltimore on steamer. Babcock". "alby" = "all be" (print). Numeral
+  conflict: "perfume publish and mansion" = 3 x 100 and 50 = **350** by key.md; the print (snippet OCR) has **360**: unresolved, the
+  numeral graded M (the ALS or the OCR may differ). "Bourse" (after the time word) unread, as on 5805/5806 (route/blind word, M).
+- **E172:** signer **C. L. McAlpine** (City Point railroad), read from "see L Mack Alpine" (plain, phonetic); the header "Blubber pledge" =
+  City Point 6 (key.md; Blubber = City Point confirmed by the 5921/8624 pair). "I urn" is most likely "iron" and "chairs" the plain word
+  (rail chairs): "about 1 1/2 miles of iron ... no chairs" (M, not H). "a plation" (application?) M.
+- **E173:** **"Dodge" is plain** (Col. G. S. Dodge), not Dodge = McMinnville; **"ordnance" is plain** (key.md Ordnance = "After the" gives
+  nonsense here; the same correction FIX-FM1 made for E160); **"John" is plain** (the signer John A. Kress), not John = Grant. "Bible
+  harsh penny" = Beaufort 20+4 = 24. Code groups 18, all H (Fanny, Palsy, Unity x2, Paradise, Bible, Harsh, Penny, Whisky, Zebra, Lampoon,
+  Wales, Roman, Zodiac x2, Shelter, Olive, Flora); decoder H 21 less 3.
+- **E174:** **"begs" is plain** = Biggs, the signer ("youth pandora begs vinton" = [signed] Colonel Biggs [Quartermaster]); "Saco how
+  Patton" = Fort Powhatan (Saco = Fort H, "how Patton" phonetic), confirmed by 5746 and the print. 23 H, 0 M on code groups; the tokens
+  shared with the printed 13 June telegram (Sampson = Ferry, Saco = Fort, peach prolong purple = 200,000, Lubey's rank and regiment) can
+  carry C through that sibling.
+- **E177:** **"webster" in the header is the addressee Col. Webster** (plain), not the signature word: the decoder takes it as the
+  signature and prints the whole body inside `{tail}` (layout artefact for a FIX job). The final "Webster paradise doge" = [signed]
+  Colonel **Dodge** (plain; cf. 5822). "Windsor" = River (H). "flight" (twice) and "many weaselers form flights" M. "the Dupont" = the
+  transport Admiral Du Pont.
+
+### 4. Classes and depth
+| ID | N | depth | basis | safe sentence |
+|---|---|---|---|---|
+| E170 | **N1** | D3 | plaintext printed (Grant Papers vol. 12, from the sent ALS); our mapping is an independent re-decipherment that agrees with the print (one numeral conflict) | "Babcock's 5 Nov 1864 reply (no stalls for the horses; one steamer broke down off the Capes) is printed in The Papers of Ulysses S. Grant vol. 12; our Cipher No. 1 reading of the Fort Monroe ledger copy agrees with it." |
+| E172 | **N3** | D2 | not located in OR I/42 pts 1-3, Grant Papers 12, McCallum, IA full text, Huntington full text | "Read at grade H with Cipher No. 1: on 6 Oct 1864 C. L. McAlpine at City Point tells E. L. Wentz, through Fort Monroe, that Meade (via Ingalls) wants the military railroad extended beyond Warren to Peebles House, two miles, and that he cannot begin until the ties for Alexandria are sent; not located in the Official Records ser. I vol. 42, Grant Papers vol. 12 or the Huntington full text (searched 8 Oct 2026)." |
+| E173 | **N3** | D2 | not located in OR I/42 pts 1, 3, Butler V, IA full text, Huntington; Grant Papers 13 unchecked | "Read at grade H with Cipher No. 1: on 26 Dec 1864 John A. Kress at Fort Monroe tells Butler's chief of staff Turner that a letter from Colonel Dodge dated Beaufort the 24th said no troops had landed, that forty days' rations but no ordnance stores had been sent since the expedition sailed, and that there is a large supply of ammunition at New Berne; not located in the Official Records ser. I vol. 42 or Butler's printed correspondence (searched 8 Oct 2026)." |
+| E174 | **N2** | D3 | substance printed in the sender's own telegram of the day before (OR I/40 pt 2 p.13) and the order behind it (Grant Papers 11); this telegram's text not located | "Biggs's 14 June 1864 report repeats, as done, the lumber and ferry-boat shipment to Fort Powhatan printed in his telegram of 13 June (OR I/40 pt 2 p.13); our reading adds the sawing of two-inch lumber and the list of vessels for Colonel Fuller." |
+| E177 | **N3** | D2 | not located in OR I/42 pts 1, 3, IA full text, Huntington; Grant Papers 13 unchecked | "Read at grade H with Cipher No. 1: on 8 Dec 1864 O'Brien, for Colonel Dodge, tells Fort Monroe (for Colonel Webster) that the Albany and United States are coming with horses to be transferred to other steamers, to hold the Dupont, and to ready two ocean steamers; not located in the Official Records ser. I vol. 42 (searched 8 Oct 2026)." |
+
+Unsafe for all five: "first", "new", "unpublished", "never printed". Depth: E172 cipher clause "[General] Meade requests the [Rail Road]
+toby extended beyond Warren to Peebles House [2] [Mile]s" + Shelter/Shelby = General in two contexts; 15 H, 8 M by hand (< 80%): D2.
+E173: 18/18 code groups H, gaps none but names; no key-independent check of the content (Beaufort, Dodge, Kress context only): D3
+withheld, D2. E177: about 20 H, flight/filler M; no external check: D2. E170: >= 80% H and the print as external check: D3 (D4 needs
+the numeral settled and a fresh re-derivation). E174: all code groups H, external known-plaintext check through 5746 + print: D3.
+Depth sentences (my own): E172 -- "On 6 Oct 1864 the City Point railroad's engineer reported that Meade wanted the railroad pushed two
+miles past Warren to Peebles House but that work had to wait for the ties going to Alexandria." E173 -- "On 26 Dec 1864 Fort Monroe
+reported to Butler's headquarters that, by a letter from Beaufort of the 24th, no troops had landed, and that ammunition but no ordnance
+stores lay ready at New Berne." E177 -- "On 8 Dec 1864 Butler's headquarters ordered Fort Monroe to hold the Dupont and to ready two ocean
+steamers for horses and infantry coming down the James."
+
+### 5. Postmortem
+FM-R2a's "Located in print: none" was wrong for E170: the Grant Papers step 0 was skipped (Google Books 429) and the be-api route
+the wave-2 brief names finds it in two queries. E174's printed sibling (5746) is on the page before and was not looked at because the
+reader listed only same-page neighbours. Corrected: NOTES "## FM-R2a" carries a verifier line below its table. Leads for a FIX job:
+the five sets of corrections in section 3; and the entries 5745, 5746 and 5805, 5806/0 are cipher copies of printed telegrams (known-
+plaintext material, N1 if ever filed).
