@@ -374,6 +374,48 @@ Result first: **misplaced boxes 11/102 (10.8%) before, 0 of the same 11 after; t
 - Re-check (no804/refsheet/eyecheck.tsv, RUN4-MOR block): the 11 flagged + 4 wide + L1.14/L1.40/L1.41; exactly these 18 boxes moved (git diff of boxes.tsv), so no unchecked box changed. 0 wrong, 0 clipped; L2.43 A keeps its left corner trimmed by the 2:1 midpoint cut but is recognisable.
 - Ranking power check moved with it: leave-one-out top-1 on 117 S tokens 0.487 -> 0.513 vs label-shuffle p99 0.128 (nearest_mi.tsv). No reading, no regrade, no key edit (rule 4 grades unchanged).
 
+## TT-CONS (8 Oct 2026)
+
+Worker TT-CONS (LANE TOOLS-TOMO, account 4), 22:52 UTC by date -u. Instrument: `tools/decode_key.py --consistency`
+(Tomokiyo practice 16, breaking.htm: a letter value should read in two or more unrelated words). A report on the
+committed reading; nothing regraded, reading and key unchanged. Gates: `intake_gate_check.py` exit 0; `prior_work.py
+--item-spec 'shelfmark=BL Add MS 32091;folio=213v;...' --step-type read` exit 4, six owed rows answered CLEAR with
+`--record` (prior-work.tsv; the leaf/neighbour look is the 2 Oct Premise check (c) above, this step reads no new text).
+
+The decode.json word_sep `|` marks the page's gaps, not word ends (13 "words", e.g. `orthelordfleminghesdonegreitevilgif`),
+so the word_sep run tests nothing useful (1 of 32 codes in >=2 lexicon words). The run below uses the word segmentation
+already on file in `lexfit.py` (WORDS, Aymeloglu's, 35 words), rendered from reading_tokens.tsv into
+`segment_lexfit.txt` (regenerate from lexfit.py's WORDS spans if the reading changes), with the sco16 lexicon:
+
+```
+python3 tools/decode_key.py ciphers/moray-wood-1568 --consistency --segment ciphers/moray-wood-1568/segment_lexfit.txt --lexicon sco16
+consistency moray-wood-1568 ciphertext.tsv: --segment file (1.000 letter agreement); 35 words; values: 30; in >=2 unrelated words: 16; one stem only: 0; one-word only: 6; no lexicon word: 8; word codes (not tested): 3; null codes: 0
+  grade S: multi 16, one-word 3, no-lexicon-word 2
+  grade M: one-word 3, no-lexicon-word 6
+         c = r      x3    M3         M-only (one word)  words 2, lexicon 1, stems 1: or
+        Ab = i      x2    S2         M-only (one word)  words 2, lexicon 1, stems 1: in
+         p = m      x2    S2         M-only (one word)  words 2, lexicon 1, stems 1: fleming
+         X = u      x2    S2         M-only (one word)  words 2, lexicon 1, stems 1: oure
+        4b = Q      x1    M1         M-only (one word)  words 1, lexicon 1, stems 1: q
+         t = t      x1    M1         M-only (one word)  words 1, lexicon 1, stems 1: et
+        Z5 = y      x3    M3         no-lexicon-word    words 3, lexicon 0, stems 0: carlylr haym teauyis
+        Zz = t      x3    M3         no-lexicon-word    words 2, lexicon 0, stems 0: lattis teauyis
+         P = v      x2    S2         no-lexicon-word    words 2, lexicon 0, stems 0: sufering euil
+         4 = c      x2    S2         no-lexicon-word    words 2, lexicon 0, stems 0: carlylr cummis
+         g = f      x1    M1         no-lexicon-word    words 1, lexicon 0, stems 0: sufering
+         s = p      x1    M1         no-lexicon-word    words 1, lexicon 0, stems 0: spil
+        x3 = e      x1    M1         no-lexicon-word    words 1, lexicon 0, stems 0: teauyis
+        Xs = u      x1    M1         no-lexicon-word    words 1, lexicon 0, stems 0: teauyis
+```
+
+Found: 16 of the 21 S-graded letter codes read in two or more unrelated sco16 words. Five S codes do not: Ab=i, p=m, X=u
+each have one lexicon word (in; fleming; oure) beside a word the lexicon lacks, and P=v (sufering, euil) and 4=c
+(carlylr, cummis) have none; without the lexicon all five are in two words, so the shortfall is in words sco16 does not
+spell (sufering, euil, cummis, carlylr), not a value that reads in one word only. The M-graded codes Z5=y, Zz=t, x3=e
+and Xs=u fall only in the unresolved words (carlylr, haym, lattis, teauyis); the closing clause is where the check finds
+nothing to confirm. Not found: no S code is attested in one word only once the lexicon is dropped (summary row
+in ciphers/_triage/consistency-2026-10-08.tsv). Grades untouched (rule 4).
+
 ## Remaining gaps (RUN4-MOR, 4 Oct 2026; restates READ2-RELABEL's section with gap 1's next step updated)
 Read so far: 117 S, 16 M, 1 I of 134 glyphs (Aymeloglu's key applied to the transcription, image-checked here by GAPS3-GAPS5; decode_key.py --check exit 0); this repository's own re-derived reading is 0 of 134
 - M and I tokens of the postscript (Zz x3, c x2, Z5 x2, g, s, t, x3, Xs, 4b, Eb, o2) - blocker: open-codes; images on disk and read twice blind, judge GAPS6 FAIL cannot decide, lexical fit GAPS7 moved 0, period-key comparisons GAPS8/10/11 and R4930 GAPS12 fixed 0 values; only a second text in this key settles them; reference sheet built (RUN1-MOR) and fit for labelling at 0/11 flagged boxes misplaced (RUN4-MOR, 4 Oct 2026); next: label Wood's no.804 leaf against no804/refsheet/refsheet_classes.png and run the pre-registered crib test no804/no804_crib.py once the leaf is on disk (ASKS row 103), ~$1

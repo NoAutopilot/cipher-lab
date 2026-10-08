@@ -1,0 +1,14 @@
+target	job	segmentation	lexicon	values	multi	one_stem	one_word	no_lexicon_word	word_codes	S_one_word	S_no_lexicon_word	note
+august-van-saksen-1561-64	-	-	-									excluded: named in a live 8 Oct 2026 jobs file or a ROOM claim under 6 h (not run)
+castelcicala-1816	-	-	-									excluded: named in a live 8 Oct 2026 jobs file or a ROOM claim under 6 h (not run)
+clairambault1225-paget-1714	-	-	-									excluded: named in a live 8 Oct 2026 jobs file or a ROOM claim under 6 h (not run)
+espagnol142-mercy-1648	-	-	-									excluded: named in a live 8 Oct 2026 jobs file or a ROOM claim under 6 h (not run)
+fr2980-gramont	-	-	-									excluded: named in a live 8 Oct 2026 jobs file or a ROOM claim under 6 h (not run)
+huntington-blathwayt-madrid-1728	-	-	-									excluded: named in a live 8 Oct 2026 jobs file or a ROOM claim under 6 h (not run)
+decode-1162-modena-ambung-1492	ciphertext.tsv	no word segmentation (no word_sep in decode.json; --segment FILE supplies one)	it16dip									
+hessen-daenemark-1672	ciphertext.tsv	no word segmentation (no word_sep in decode.json; --segment FILE supplies one)	-									
+matignon-mayenne-1586	ciphertext.txt	no word segmentation (no word_sep in decode.json; --segment FILE supplies one)	fr									
+moray-wood-1568	ciphertext.tsv	word_sep '|' + nonsign tokens, clear words, word codes	sco16	32	1	0	9	22	1	U=the(the) Zh=s(sending) o=r(oure) xd=n(sending) Tb=g(sending) Z3=o(oure) F=d(sending) N=i(sending) X=u(oure)	P=v(suferingofqremaneincarlylr orthelordfleminghesdonegreiteuilgiftheq2) Ab=i(suferingofqremaneincarlylr) e=f(suferingofqremaneincarlylr freindisteauyis) M=m(suferingofqremaneincarlylr haym) A=a(suferingofqremaneincarlylr haym) 4=c(suferingofqremaneincarlylr cummis) a=l(suferingofqremaneincarlylr orthelordfleminghesdonegreiteuilgiftheq2) r=h(haym orthelordfleminghesdonegreiteuilgiftheq2) Z2=o(orthelordfleminghesdonegreiteuilgiftheq2 namairto) V=f(orthelordfleminghesdonegreiteuilgiftheq2) p=m(orthelordfleminghesdonegreiteuilgiftheq2 cummis) Tc=t(orthelordfleminghesdonegreiteuilgiftheq2 haomthairlattis)	word_sep | marks page gaps, not word ends
+moray-wood-1568	ciphertext.tsv	--segment file (1.000 letter agreement)	sco16	30	16	0	6	8	3	Ab=i(in) p=m(fleming) X=u(oure)	P=v(sufering euil) 4=c(carlylr cummis)	--segment = lexfit.py WORDS (Aymeloglu segmentation as recorded in the folder)
+moray-wood-1568	ciphertext.tsv	--segment file (1.000 letter agreement)	-	30	24	0	6	0	3	-	-	same, no lexicon
+oxenstierna-gustav-adolf-1632	ciphertext_key.tsv	no word segmentation (no word_sep in decode.json; --segment FILE supplies one)	-									

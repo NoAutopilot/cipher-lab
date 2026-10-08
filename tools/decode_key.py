@@ -90,10 +90,29 @@ finds (a report, not a gate); exit 2 only if the target cannot be loaded. It wri
 A split is a candidate for an image check, never a correction by itself: 26 = i at Mercy r18 and r24 was also two
 digits (2 6, o s), in range and keyed, which only sense and the image could show.
 
+--consistency (8 Oct 2026, TT-CONS; Tomokiyo practice 16, "Breaking a Simple Cipher", sources/cryptiana/web/breaking.htm:
+"occurrences of 9(W) in 'wards' and 'with' and those of 24(O) in 'cooperate' and 'you' are consistent"): for every
+cipher code used in the reading, the distinct words of the reading it falls in. A word is a run of sign values between
+word breaks: the job's word_sep token and any other nonsign token, a clear word, and a word code (a value starting '=',
+listed in word_values, containing a space, or 4+ letters long: it is its own word and is not tested; a 2-3 letter
+value that only ever stands alone as a whole word, such as a sign for 'the', is counted as a word code too); with
+--line-breaks a line end is a break too. A job without word_sep has no word segmentation and is reported as such and
+skipped (--segment FILE, a plain text of the reading with spaces between words, supplies one: its letters are aligned
+to the reading's letters and its word ends are copied onto the tokens). Words are compared after folding case and
+accents, j->i and v->u. "Unrelated" = different stems: two words sharing their first 4 letters (or equal, under 4
+letters) count as ONE stem (cooperate/cooperation, with/without). With --lexicon (a tools/judge_plaintext.py corpus
+code such as en, fr16, es18, or a text file) only words found in that corpus's word types count, so a wrong value --
+which turns its words into non-words -- loses its words; without --lexicon every word counts and the check can only
+show how many contexts a code was READ in, not that they make sense. Categories per code: multi (>=2 unrelated words),
+one-stem (several words, one stem), one-word (reported "M-only (one word)"), no-lexicon-word (none of its words in the
+lexicon). It is meant to catch a letter value that reads in one word only (a value chosen to make one word come out);
+it must NOT flag a code that recurs in two unrelated real words, and it does not regrade anything (rule 4 grades stand;
+this is a report). Exit 0 whatever it finds; 2 if the target cannot be loaded. --consistency-tsv FILE writes the rows.
+
 Test: python3 tools/tests/test_decode_key.py (reproduces fr2980-gramont, fr20140-danzay-1557 and dupuy468-anhalt
 readings from tools/tests/decode_configs/*.json, byte for byte, without writing).
 """
-import argparse, collections, json, os, re, sys
+import argparse, collections, json, os, re, sys, unicodedata
 
 GRADES = 'HCSMIU'
 DEFAULT_UNCERTAIN = ['M', 'm', 'L', 'l', 'low', '?']
@@ -603,6 +622,189 @@ def split_report(target, jobs, tsv=None):
     return rows_out
 
 
+# ---------------------------------------------------------------- consistency (Tomokiyo practice 16)
+
+def fold_word(w):
+    """Case, accents, j->i, v->u folded; letters a-z only (digits kept, so a numeral stays visible)."""
+    w = unicodedata.normalize('NFKD', w.lower().replace('\u00df', 'ss'))
+    w = ''.join(c for c in w if c.isalnum() and not unicodedata.combining(c))
+    return w.replace('j', 'i').replace('v', 'u')
+
+
+def stem_of(w):
+    return w[:4] if len(w) >= 4 else w
+
+
+def load_lexicon(spec):
+    """Word types of a judge_plaintext corpus code (en, fr16, ...) or of a text file, folded like the reading's words."""
+    if not spec:
+        return None
+    if os.path.exists(spec):
+        texts = [open(spec, encoding='utf-8', errors='replace').read()]
+    else:
+        import judge_plaintext
+        if spec not in judge_plaintext.LANG_CORPORA:
+            raise SystemExit(f'--lexicon {spec!r}: neither a file nor a corpus code in judge_plaintext.LANG_CORPORA')
+        texts = [judge_plaintext.read_corpus(p) for p in judge_plaintext.LANG_CORPORA[spec]]
+    out = set()
+    for t in texts:
+        out.update(fold_word(w) for w in re.findall(r"[^\W\d_]+", t))
+    out.discard('')
+    return out
+
+
+def is_word_code(v, job):
+    b = v.lstrip('=')
+    return v.startswith('=') or v in set(job.get('word_values', [])) or ' ' in b or len(b) >= 4
+
+
+def graded_recs(target, job, key_edit=None):
+    """The job's records, graded as run_job grades them; key_edit(key) may alter the key first (controls)."""
+    ct = job.get('ciphertext') or next((f for f in ('ciphertext.tsv', 'ciphertext.txt')
+                                        if os.path.exists(os.path.join(target, f))), 'ciphertext.tsv')
+    path = os.path.join(target, ct)
+    recs = LOADERS[job.get('format') or detect_format(path)](path, job)
+    key = load_keys(target, job.get('key', 'key.tsv'))
+    if key_edit:
+        key = key_edit(key)
+    exc = load_exceptions(os.path.join(target, job.get('exceptions', 'exceptions.tsv')), job)
+    grade_tokens(recs, key, exc, load_votes(target, job), job)
+    return recs, ct
+
+
+def segment_words(recs, job, line_breaks=False, segment_text=None):
+    """(words, how): words = lists of sign records (letter/syllable values only, nulls dropped), or (None, why)."""
+    uv = job.get('unkeyed_value', '?')
+    units = [r for r in recs if r['kind'] == 'sign' and not r.get('null')]
+    if segment_text is not None:
+        import difflib
+        letters, owner = [], []
+        for r in units:
+            v = fold_word(r['value']) if r['value'] != uv else '?'
+            if is_word_code(r['value'], job):
+                continue
+            for ch in v:
+                letters.append(ch); owner.append(r)
+        seg, wid = [], []
+        for i, w in enumerate(segment_text.split()):
+            for ch in fold_word(w):
+                seg.append(ch); wid.append(i)
+        sm = difflib.SequenceMatcher(None, letters, seg, autojunk=False)
+        word_of = {}
+        for op, a1, a2, b1, b2 in sm.get_opcodes():
+            if op == 'equal' or (op == 'replace' and a2 - a1 == b2 - b1):
+                for k in range(a2 - a1):
+                    word_of.setdefault(id(owner[a1 + k]), wid[b1 + k])
+        groups = collections.OrderedDict()
+        for r in units:
+            if id(r) in word_of:
+                groups.setdefault(word_of[id(r)], []).append(r)
+        warn = '' if sm.ratio() >= 0.8 else '; WARNING: under 0.8, the segment text is not this reading'
+        return list(groups.values()), f'--segment file ({sm.ratio():.3f} letter agreement{warn})'
+    sep = job.get('word_sep')
+    if not sep:
+        return None, 'no word segmentation (no word_sep in decode.json; --segment FILE supplies one)'
+    words, cur = [], []
+    def flush():
+        if cur:
+            words.append(list(cur)); cur.clear()
+    for r in recs:
+        if r['kind'] == 'line':
+            if line_breaks:
+                flush()
+        elif r['kind'] in ('dot', 'clear'):
+            flush()
+        elif r['kind'] == 'sign' and not r.get('null'):
+            if is_word_code(r['value'], job):
+                flush()
+            else:
+                cur.append(r)
+    flush()
+    return words, f'word_sep {sep!r} + nonsign tokens, clear words, word codes' + (' + line ends' if line_breaks else '')
+
+
+CONS_CATS = ('multi', 'one-stem', 'one-word', 'no-lexicon-word')
+
+
+def consistency(target, job, lexicon=None, line_breaks=False, segment_text=None, key_edit=None):
+    """Per-code rows and a meta dict (see the --consistency paragraph of the module docstring)."""
+    recs, ct = graded_recs(target, job, key_edit)
+    words, how = segment_words(recs, job, line_breaks, segment_text)
+    meta = dict(ciphertext=ct, how=how, words=None if words is None else len(words),
+                word_codes=len({r['sign'] for r in recs if r['kind'] == 'sign' and not r.get('null')
+                                and is_word_code(r['value'], job)}),
+                nulls=len({r['sign'] for r in recs if r['kind'] == 'sign' and r.get('null')}))
+    if words is None:
+        return None, meta
+    uv = job.get('unkeyed_value', '?')
+    per = collections.OrderedDict()
+    for w in words:
+        text = ''.join('?' if r['value'] == uv else fold_word(r['value'].split('|')[0]) for r in w)
+        for r in w:
+            if r['value'] == uv:
+                continue
+            d = per.setdefault(r['sign'], dict(code=r['sign'], value=r['value'], n=0, grades=collections.Counter(),
+                                               words=collections.Counter()))
+            d['n'] += 1; d['grades'][r['grade']] += 1; d['words'][text] += 1
+    rows = []
+    for d in per.values():
+        ws = list(d['words'])
+        if len(fold_word(d['value'])) >= 2 and ws == [fold_word(d['value'].split('|')[0])]:
+            meta['word_codes'] += 1  # a 2-3 letter word sign ('the') that always stands alone as a word: not tested
+            continue
+        ok = [w for w in ws if '?' not in w and (lexicon is None or w in lexicon)]
+        stems = {stem_of(w) for w in ok}
+        cat = ('multi' if len(stems) >= 2 else 'one-stem' if len(ok) >= 2 else 'one-word' if len(ok) == 1
+               else 'no-lexicon-word' if lexicon is not None else 'one-word')
+        d.update(n_words=len(ws), n_ok=len(ok), n_stems=len(stems), category=cat,
+                 grade=d['grades'].most_common(1)[0][0],
+                 sample=sorted(ok, key=lambda w: -d['words'][w])[:6] or ws[:6])
+        rows.append(d)
+    return rows, meta
+
+
+CONS_TSV_COLUMNS = ['target', 'job', 'code', 'value', 'grade', 'grades', 'n', 'words', 'lexicon_words', 'stems',
+                    'category', 'sample_words']
+
+
+def consistency_report(target, jobs, lexicon=None, line_breaks=False, segment_text=None, tsv=None, show='all'):
+    out = []
+    name = os.path.basename(os.path.normpath(target))
+    for job in jobs:
+        rows, meta = consistency(target, job, lexicon, line_breaks, segment_text)
+        if rows is None:
+            print(f"consistency {name} {meta['ciphertext']}: {meta['how']}; skipped")
+            continue
+        c = collections.Counter(d['category'] for d in rows)
+        print(f"consistency {name} {meta['ciphertext']}: {meta['how']}; {meta['words']} words; "
+              f"values: {len(rows)}; in >=2 unrelated words: {c['multi']}; one stem only: {c['one-stem']}; "
+              f"one-word only: {c['one-word']}" + (f"; no lexicon word: {c['no-lexicon-word']}" if lexicon is not None else '')
+              + f"; word codes (not tested): {meta['word_codes']}; null codes: {meta['nulls']}")
+        by_g = collections.defaultdict(collections.Counter)
+        for d in rows:
+            by_g[d['grade']][d['category']] += 1
+        for g in sorted(by_g, key=lambda g: GRADES.find(g) if g in GRADES else 99):
+            print(f"  grade {g}: " + ', '.join(f'{k} {by_g[g][k]}' for k in CONS_CATS if by_g[g][k]))
+        for d in sorted(rows, key=lambda d: (CONS_CATS.index(d['category']), -d['n'])):
+            if show != 'all' and d['category'] == 'multi':
+                continue
+            flag = 'M-only (one word)' if d['category'] == 'one-word' else d['category']
+            gr = ','.join(f'{g}{k}' for g, k in sorted(d['grades'].items()))
+            print(f"  {d['code']:>8} = {d['value']:<6} x{d['n']:<4} {gr:<10} {flag:<18} "
+                  f"words {d['n_words']}, lexicon {d['n_ok']}, stems {d['n_stems']}: {' '.join(d['sample'])}")
+            
+        for d in rows:
+            out.append([name, meta['ciphertext'], d['code'], d['value'], d['grade'],
+                        ','.join(f'{g}{k}' for g, k in sorted(d['grades'].items())), str(d['n']), str(d['n_words']),
+                        str(d['n_ok']), str(d['n_stems']), d['category'], ' '.join(d['sample'])])
+    if tsv:
+        with open(tsv, 'w', encoding='utf-8') as fh:
+            fh.write('\t'.join(CONS_TSV_COLUMNS) + '\n')
+            for r in out:
+                fh.write('\t'.join(c.replace('\t', ' ') for c in r) + '\n')
+    return out
+
+
 def load_config(target, a):
     if a.config or (os.path.exists(os.path.join(target, 'decode.json')) and not a.ciphertext):
         cfg = json.load(open(a.config or os.path.join(target, 'decode.json'), encoding='utf-8'))
@@ -624,7 +826,30 @@ def main(argv=None):
                     help='report tokens not in the key or outside its confident numeric range, with every split '
                          'into 2-3 key values (writes no reading; exit 0 unless the target cannot be loaded)')
     ap.add_argument('--split-tsv', help='with --split-check: also write the rows to this TSV file')
+    ap.add_argument('--consistency', action='store_true',
+                    help="Tomokiyo practice 16 (breaking.htm): per cipher code, the distinct words of the reading it "
+                         "falls in; 'M-only (one word)' for a code in one word only; words sharing a 4-letter prefix "
+                         "count as one stem (related). A report: regrades nothing; needs word_sep in decode.json or "
+                         "--segment")
+    ap.add_argument('--lexicon', help='with --consistency: count only words found in this corpus (a judge_plaintext '
+                                      'corpus code, e.g. en, fr16, es18, or a text file)')
+    ap.add_argument('--segment', help='with --consistency: a plain text of the reading with spaces between words')
+    ap.add_argument('--line-breaks', action='store_true', help='with --consistency: a line end is a word break')
+    ap.add_argument('--consistency-tsv', help='with --consistency: also write the per-code rows to this TSV file')
+    ap.add_argument('--show', choices=['all', 'flagged'], default='flagged',
+                    help='with --consistency: list every code, or only those not in >=2 unrelated words (default)')
     a = ap.parse_args(argv)
+    if a.consistency:
+        try:
+            jobs = load_config(a.target, a)
+            seg = open(a.segment, encoding='utf-8').read() if a.segment else None
+            consistency_report(a.target, jobs, load_lexicon(a.lexicon), a.line_breaks, seg, a.consistency_tsv, a.show)
+        except SystemExit:
+            raise
+        except Exception as e:
+            print(f'consistency: cannot load {a.target}: {type(e).__name__}: {e}', file=sys.stderr)
+            return 2
+        return 0
     if a.split_check:
         try:
             jobs = load_config(a.target, a)

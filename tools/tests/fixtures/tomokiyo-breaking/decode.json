@@ -1,0 +1,2 @@
+{"ciphertext": "ciphertext.tsv", "key": "key.tsv", "style": "concat", "word_sep": "-", "nonsign": ["-"],
+ "reading": "reading.txt", "tokens": "reading_tokens.tsv"}
