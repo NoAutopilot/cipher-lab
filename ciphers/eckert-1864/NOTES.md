@@ -2333,3 +2333,48 @@ Read so far: of twelve rows, ten filed (E200-E209), two step-0 skips. In print b
 - [x] image-check: nine of nine pages viewed whole at 2400 px.
 - [x] retry: Google Books retried once after a pause, 429 again.
 Verdict: keep going: 2 internal gaps (FV-MS18 grading fixes, the Halifax lead; the addressee codes are no-key-material); cheapest next: the FV-MS18 grading fix job, ~$0.4
+
+## FIX-DEC (8 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-DEC, 21:34-21:42 UTC by `date -u`, offline. Marks the decoder false positives listed in AUDIT (FV-FM2), (FV-FM3a), (FV-FM3b), (FV-FM3c) section 3 as plain
+through the existing entry-level `plain:` note in ciphertext.txt (the transcription lines are untouched; no key.md row deleted or edited). Regenerated with
+`decode.py --write`; `decode.py --check` -> "reading.md is current", exit 0; `decode_no2.py --check` and `decode_no9.py --check` current.
+
+| Entry | `plain:` words | Decoder H before -> after | Audit count |
+|---|---|---|---|
+| E165 | columbia | 6 -> 5 | 5 |
+| E167 | john | 28 -> 27 | 27 |
+| E168 | wallace, submit | H 18 C 2 -> H 16 C 0 | 16 H, 0 C |
+| E169 | maynard macbeth lavender loadstone koran kennet mint mogul (the payload) | 21 -> 13 | 13 |
+| E171 | virgin | 33 -> 32 | 31 (see below) |
+| E173 | dodge ordnance john | 21 -> 18 | 18 |
+| E175 | journal temple tower john | 20 -> 16 | 16 (15 H + tulip M) |
+| E176 | sutton | 36 -> 35 | 35 H + 1 M (sutton is M in the audit; plain here, so the decoder shows it as written) |
+| E178 | hero jersey mary washington prospects webster | 18 -> 11 | 11 |
+| E179 | shelter | 16 -> 15 | 15 |
+| E185 | william hemp | 15 -> 13 | 13 |
+| E189 | wilsons wharf | 19 -> 17 | 17 |
+| E190 | wharf | 22 -> 21 | 21 |
+| E191 | wallace william | 14 -> 12 | 12 |
+
+Unchanged: E174 (the audit's "begs" was already unread), E187 (5 = audit), E170 and E172 (no decoder correction listed), E177, E200-E209 (see below).
+
+Not done, with the reason (a `plain:` note is per word per entry, not per position):
+- **E171 "washington"**: the address-line "Washington" is plain (decoder wrongly reads [Volunteer]), but the same word later in the tail ("frog washington pekin",
+  103rd New York Volunteers) is a genuine code word; plain would remove both. Left as decoded: one false positive remains, decoder H 32 vs the audit's 31.
+- **E177 "webster"**: the header Webster (addressee) is plain, the final "Webster paradise doge" is the signature word; the same ambiguity, so the layout artefact
+  (body printed inside `{tail}`) stays. A positional note (`plain-at:`) would fix both, ~$0.3.
+- **E176 "sutton"** (M in the audit) and **E175 "tulip"** (M): the decoder has no per-token grade for a word outside the key; they read as written.
+- **E200-E209 (FV-MS18)**: that audit lists grading and key-row changes (Orphan/Endless = Sigel, Hero = Johnson in E202 only, Binder = Bender, weasler(s) = steamer),
+  not false positives; they are variants and key rows, not part of this job. Next: `variant:` notes as FIX-FM1, ~$0.4.
+
+## FIX-DEC residue --check (8 Oct 2026, account 1, for LANE LEDGER)
+
+The stale report of E62-9660 (ciphers/eckert-1862/print/residue_decode.py --check) could not be reproduced here: the 58 page texts are not committed and this job had no
+network. Cause found by reading the script: it read EVERY `*.json` in PAGES_DIR with pointer >= 4956 that is not in or_matches.tsv, so a directory also holding other
+jobs' fetches (E62-9660 fetched object 9660 pages with its 59+58 requests) changes the page set, the carried-over `last` date and the totals, with page hashes all still
+equal to the manifest for the 58 committed pages. Fix: `residue_decode.py` reads only the pointers in print/residue/pages_manifest.tsv (a pages dir with extra files
+cannot make the committed readings stale) and prints a stderr warning when a manifest page's sha256 does not match. Test: a synthetic six-page directory plus an extra
+page 9999: `--write` under PYTHONHASHSEED 1 and 2, then `--check` under PYTHONHASHSEED 3 and 4 -> "residue readings are current", exit 0, exit 0 (so the script is
+deterministic across hash seeds; committed pages.tsv/readings.md restored after). **Not verified on the real 58 pages**: whoever next re-fetches them runs `--check`
+twice; if it is still stale with only manifest pages in the directory, the cause is elsewhere (a changed key.md/decode.py/corpus), and this fix did not find it.

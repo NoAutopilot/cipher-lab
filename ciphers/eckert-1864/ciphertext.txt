@@ -1376,6 +1376,7 @@ Goslin and Gazette for Columbia Baker and
 Buffalo for Shelby Stanly Napier and for
 shelter Rousseau native act Knowledge receipt quick
 TT Eckert
+plain: columbia
 
 ### E166 | Page 236 | 5780 | mssEC 25 (obj 5952, pointer 5780), 20 Aug 1864 Fortress Monroe, Sheldon to Maj. Eckert, forwarding a Hilton Head dispatch (FM-R1; row 5780/0; transcription only)
 Fortress Monroe Aug 20 / 64
@@ -1412,6 +1413,7 @@ unity have not seen Sanborne yet unity
 particulars by letter yours Wm breed ford
 address lamp postpone broad Wesport raining here
 John Horner
+plain: john
 
 ### E168 | Page 40 | 5584 | mssEC 25 (obj 5952, pointer 5584), 17 Mar 1864 Washington, H. W. Halleck (signed) to Sheldon, text written forward then in reverse word order (FM-R1; row 5584/1; image-read)
 Washington Mar 17 1864
@@ -1430,6 +1432,7 @@ season submit for Taunton Shelby Lewis
 Wallace also alter General in Chief
 to Taunton Shelter H W Halleck
 answer if this is under stood
+plain: wallace submit
 
 ### E169 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 9 Sept 1864 Washington, T. T. Eckert to Sheldon, Beckwith and Caldwell (FM-R1; row 5782/1; transcription only)
 Washington Sept. 9 / 64
@@ -1446,6 +1449,7 @@ Jas. a mower in Koran and Kennet
 unity in place of McPherson place shelby
 James steed man mint and mogul answer
 T. T. Eckert
+plain: maynard macbeth lavender loadstone koran kennet mint mogul
 
 ### E170 | Page 262 | 5806 | mssEC 25 (obj 5952, pointer 5806), 5 Nov 1864 Ft Monroe, Geo. D. Sheldon to S. H. Beckwith, City Point, reply to Beckwith's dispatch above it (FM-R2a, 8 Oct 2026; row 5806/1; image-read)
 Ft Monroe Nov 5 1864
@@ -1476,6 +1480,7 @@ proceed to Banjo Virgin I a as ordered
 by lester youth W Heine paradise plunge wine
 and perfume frog washington pekin after none arriving
 Geo. D. Sheldon
+plain: virgin
 
 ### E172 | Page 243 | 5787 | mssEC 25 (obj 5952, pointer 5787), 6 Oct 1864 8 P.M. Ft Monroe, Sheldon to Maj. Eckert, for E. L. Wentz, forwarding a Gen. Ingalls message on a railroad extension; continues on page 244 (FM-R2a; row 5787/2; page 243 image-read, the continuation from the transcription)
 Ft Monroe 8 P. M. Oct. 6 / 64
@@ -1503,6 +1508,7 @@ sent yet zodiac No orders were left here about
 it by the Shelter zodiac there is a large
 supply of olive at flora John A Krees &c.
 Geo. D. Sheldon
+plain: dodge ordnance john
 
 ### E174 | Page 203 | 5747 | mssEC 25 (obj 5952, pointer 5747), 14 June 1864 Ft Monroe, Sheldon to R. O'Brien, Butler's Hd. Qrs., answering O'Brien's two telegrams of 13 June on the same page (FM-R2a; row 5747/2; image-read)
 Ft Monroe June 14 1864
@@ -1529,6 +1535,7 @@ at farmer ready for see a waiting
 Pauline open shally send Pontoosuc or Nereus
 with her walrus John Rodgers quite foggy
 Geo D. Sheldon
+plain: journal temple tower john
 
 ### E176 | Page 276 | 5820 | mssEC 25 (obj 5952, pointer 5820), 8 Dec 1864 Bermuda Hundreds, S. H. Beckwith to Sheldon, embarkation list by steamer (FM-R2a; row 5820/0; image-read)
 Bermuda Hundreds Dec 8 . 1864
@@ -1543,6 +1550,7 @@ and mansion Louisa Moore perfume wine weybossett
 person william Montauk marriage spit yoke a
 are sutton lute and a see S
 SH Beckwith
+plain: sutton
 
 ### E177 | Page 279 | 5823 | mssEC 25 (obj 5952, pointer 5823), 8 Dec 1864 Hd Qrs A. of J., R. O'Brien to Sheldon, steamers for Monroe (FM-R2a; row 5823/0; image-read)
 Hd Qrs A of J Dec 8 1864
@@ -1570,6 +1578,7 @@ too severe for any of them but think
 prospects are fair for their getting out tonight
 walrus are see Webster paradise and sheaf vinton
 Geo D. Sheldon
+plain: hero jersey mary washington prospects webster
 
 ### E179 | Page 56 | 5600 | mssEC 25 (obj 5952, pointer 5600), 11 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert, requisition of tents and ferry boats (FM-R2a; row 5600/0; image-read)
 Ft Monroe April 11th 1864
@@ -1582,6 +1591,7 @@ ferry boats and at least pledge measles like city
 of Norwich or George Leary Webster Her man Biggs
 lent paradise and Vincent Laura here we go again
 Geo. D Sheldon
+plain: shelter
 
 ### E200 | Page 36 | 9696 | 6 Apr 1864 12 M, operator Baldwin, to Capt. Thomas, Quartermaster (MS18-R1, mssEC 18 obj 10074 row 9696/0)
 Geo W. Baldwin n d ( 1 )  Washn Apr 6th 1864 12 M
@@ -1710,6 +1720,7 @@ Polkaer E. are Colhoun you S. Ironic lad Saugus
 Black zebra wick Tommy with your vassal without delay
 at Hemp town wileys walrus Niagara Imogene yours &c
 Geo. D. Sheldon
+plain: william hemp
 
 ### E186 | Page 91 | 5635 | mssEC 25 (obj 5952, pointer 5635), 27 Apr 1864 Ft Monroe, Sheldon to S. H. Beckwith, Culpepper CH, for Grant, Butler's telegram on Rowley, the ironclad and Gillmore (FM-R2b; row 5635/0; transcription only)
 S H Beckwith
@@ -1755,6 +1766,7 @@ have plug weaseler can tow plank schooners and I
 think the shade should go further pekin to saco
 how Patton or Wilsons Wharf youth begs Vincent Harriet
 Geo D Sheldon
+plain: wilsons wharf
 
 ### E190 | Page 287 | 5831 | mssEC 25 (obj 5952, pointer 5831), 14 Dec 1864 Ft Monroe, Sheldon to R. O'Brien, Hd Qrs A.J., forwarding J. C. Hicks (FM-R2b; row 5831/0; transcription only)
 R. O'Brien Hd. Qrs. A. J.
@@ -1766,6 +1778,7 @@ penny Mass panama princess Bovee unity They
 wilby at Grove Wharf persia possible yoke
 J. C. Hicks Tappan gas france negro.
 Geo. D. Sheldon
+plain: wharf
 
 ### E191 | Page 45 | 5589 | mssEC 25 (obj 5952, pointer 5589), 28 Mar 1864 Ft Monroe, Sheldon to Geo. W. Baldwin, Baltimore, for Gen. Wallace (FM-R2b; row 5589/2; image-read at 2400 px)
 Geo W Baldwin Baltimore
@@ -1777,6 +1790,7 @@ zebra please send me by whelp nights
 boat a confident shall member of your
 staff of high intelligence Youth Knox Topsy
 Geo D Sheldon
+plain: wallace william
 
 ### E192 | Page 99 | 5643 | mssEC 25 (obj 5952, pointer 5643), 1 May 1864 Ft Monroe, Sheldon to S. H. Beckwith, Culpepper, for Grant, Butler's telegram (FM-R2b; row 5643/0; transcription only)
 SH Beckwith Culpepper

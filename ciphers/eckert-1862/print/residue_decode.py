@@ -21,7 +21,7 @@ code-word windows (each key token's meaning with three words either side), the o
 A page is 'reading ready' (for a separate verifier; not a status, not a novelty claim) when it carries >= 1 key token,
 none graded M, and its decode passes the judge.
 """
-import importlib.util, json, glob, os, re, sys, random, csv, io
+import hashlib, importlib.util, json, glob, os, re, sys, random, csv, io
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -40,6 +40,16 @@ SEED = 1862
 def matched():
     rows = (HERE / "or_matches.tsv").read_text().splitlines()[1:]
     return {int(r.split("\t")[0]) for r in rows if r.split("\t")[0].isdigit()}
+
+
+def manifest():
+    """{pointer: text_sha256} of the committed residue pages (print/residue/pages_manifest.tsv); None if absent.
+    --check reads only these pages: extra files in PAGES_DIR cannot make the committed readings 'stale' (FIX-DEC, 8 Oct 2026)."""
+    f = OUT / "pages_manifest.tsv"
+    if not f.exists():
+        return None
+    rows = [r.split("\t") for r in f.read_text().splitlines()[1:] if r.strip()]
+    return {int(r[0]): r[3] for r in rows if r[0].isdigit()}
 
 
 def entries(text):
@@ -71,15 +81,20 @@ def run(pages_dir):
     shuf = dict(zip(words, perm))  # each code word gets another word's rows (meanings, grades, dates)
     voc = vocab()
     skip = matched()
+    want = manifest()
     pages, rd, ctl = [], [], []
     last = None
     for f in sorted(glob.glob(os.path.join(pages_dir, "*.json")), key=lambda x: int(os.path.basename(x)[:-5])):
         ptr = int(os.path.basename(f)[:-5])
+        if want is not None and ptr not in want:
+            continue  # FIX-DEC: a pages dir shared with other jobs' fetches (E62-9660) changed the page set and the carried date
         try:
             d = json.load(open(f))
         except Exception:
             continue
         text = (d.get("text") or "").strip()
+        if want is not None and text and want[ptr] not in {hashlib.sha256(t.encode()).hexdigest() for t in (text, d["text"])}:
+            print(f"warning: page {ptr} text differs from pages_manifest.tsv (sha256 of the text, raw or stripped)", file=sys.stderr)
         if ptr in skip or not text or ptr < 4956:
             continue
         cnt = {"C": 0, "I": 0, "M": 0}; oov = 0; ne = 0; first = None; prd, pct_ = [], []
