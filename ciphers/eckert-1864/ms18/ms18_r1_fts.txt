@@ -1,0 +1,31 @@
+'Eastern State and North Point': total 0
+'transport colored troops to Hilton Head': total 0
+"will move to-day by Snicker's Gap": total 0
+"Wilson's cavalry division moved out": total 6
+    ['11548984bsb'] | Major-General SupRriDan: General Wilson’s cavalry division moved out eleven miles last night. rovers division
+    ['warrebellionaco08offigoog'] | Major-General Sheridan : General Wilson's cavalry division moved out eleven miles last night. Grover's
+    ['warofrebellion431unit_0'] | Major-General Sheridan : General Wilson’s cavalry division moved out eleven miles last night. Grover’s
+    ['warofrebellionco0043unit'] | Major-General Sheridan : General Wilson’s cavalry division moved out eleven miles last night. Grover’s
+'the whole matter of remounts be left in charge': total 0
+'Cavalry Bureau requests that': total 0
+"Fitz Hugh Lee's cavalry have passed": total 1
+    ['papersofulyssess0012gran'] | insists that Longstreet’s corps & Fitz Hugh Lee’s cavalry have passed through Culpepper on their way to
+'captured one of your trains': total 13
+    ['DTIC_ADA172836'] | that Mosby told him that he had captured one of your trains of seventy or eighty wagons, 
+    ['grayghostsrebelr0000jone'] | Halleck related, “that he had captured one of your trains of 70 or 80 wagons, with 500
+    ['grayghostsrebelr0000unse'] | him,” Halleck related, “that he had captured one of your trains of 70 or 80 wagons, with 500 mules and
+    ['grayghostsrebelr0000jone_l8n7'] | Halleck related, “that he had captured one of your trains of 70 or 80 wagons, with 500
+'Militia raised in the Western States will be placed under your command': total 5
+    ['warofrebellion0038unse_04pt'] | Some 20,000 of the militia raised in the Western States will be placed under your command. I propose to send
+    ['warofrebellionco0038majg'] | Some 20,000 of the militia raised in the Western States will be placed under your command. I propose to send
+    ['unitedstatescon108offigoog'] |  of the militia raised in the Western States will be placed under your command. I propose
+    ['warofrebellion384unit'] |  of the militia raised in the Western States will be placed under your command. I propose
+'ordered to the field as fast as replaced by militia': total 6
+    ['warofrebellion0038unse_04pt'] | The volun- teers should be ordered to the field as fast as replaced by militia. i H. W. HALLECK, Major-General
+    ['warofrebellionco0038majg'] | The volun- teers should be ordered to the field as fast as replaced by militia. H. W. HALLECK, Major-General
+    ['warofrebellion384unit'] | volun¬ teers should be ordered to the field as fast as replaced by militia. H. W. HALLECK, '
+    ['cu31924077730202'] | volun- teers should be ordered to the field as fast as replaced by militia. H. W. HALLECK, Major-General
+'from Parkersburg to the Monocacy with their stations': total 0
+'ocean steamers to report at Fort Monroe': total 0
+'with coal and water for fifteen days': total 0
+'ocean steamer at Baltimore which can': total 0
