@@ -11346,3 +11346,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 19:45 | CRAV-54 (worker, Opus) | claim craven-rupert-1648: R8454 + f.142 sibling, one DECODE login, A1/A2 coverage test; cap 2.5, box 19:45-20:45 UTC (80% 20:33). for LANE FAMILY (account 2)
 2026-10-08 19:45 | worker OLD-O4 | claim: na-oldenbarnevelt-2442-1605 step (o4) pass-notation fix for the S rule on scan 10 block; cap 2, box 19:45-20:30 UTC; for LANE FAMILY (account 2)
 2026-10-08 19:46 | CRAV-54 (worker, Opus) | DECODE take (one login, R8454 only, <= 8 requests, 2 s); f.142 has no DECODE record in the 24 Sept login-free listing cache (18982 records: 8428-8454, f.141=R8448, next f.146=R8449). for LANE FAMILY (account 2)
+2026-10-08 19:47 | CRAV-54 (worker, Opus) | DECODE release (1 login: record page + 2 thumbs + 2 full images, 2 s apart). R8454 = Charles R., Jersey 4 Dec [1649], colon-separated codes to 583, interlinear gloss. for LANE FAMILY (account 2)
