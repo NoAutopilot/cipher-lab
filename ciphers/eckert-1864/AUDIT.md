@@ -4030,3 +4030,66 @@ The E70 result row already carried grade N2, gap and line from AUD2-LS-H, but `p
 `plaintext_novelty_note` citing AUD2-LS-H ('## AUDIT 2 (second adversarial, AUD2-LS-H)' above). Nothing else on E70 touched.
 
 Requests: hdl.huntington.org 1; www.loc.gov 5 searches + 9 item JSON + 9 ALTO pages (tile.loc.gov), 3 s apart, no 429.
+
+## AUDIT 2 (second adversarial, V1-LS4A): E90, E92, N2-BZ part 2, N2-BY
+
+Verifier V1-LS4A (account 3, LANE-VERIFY-1, session_01VYrJ8p7WUjD9KSLwzs1t33), 8 Oct 2026, 16:21-16:5x UTC by `date -u`. A separate session
+from the readers (LS4-R1a, LS4-R2a) and the first auditors (LS4-V1a, LS4-V2a, all account 1); not protecting their conclusions. Nothing decoded;
+`decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` exit 0 (rule 7). Image checks are the first audits' (word for word, both);
+not repeated. Key source for all four: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md (kept or lowered, never raised).
+
+### Prior-work checks 3-5 (search-family log; families the first audits left unread run first)
+| # | family / route | query (as run) | result |
+|---|---|---|---|
+| 1 | our own work: NOTES.md, AUDIT.md, status.json, WORK-QUEUE.tsv, last 1,500 ROOM lines, by pointer + entry id (8965, 8996, 9047, 9126; E90, E92, N2-BZ, N2-BY) | grep | only LS4-R1a/R2a, LS4-V1a/V2a and this job; D4-E5 (7 Oct) read the No. 2 rows of pp.86-104, not 8996/104/1. No DONE marker. |
+| 3 | Huntington public transcription, same-leaf siblings (sources/mssEC19 p8965, p8996, p9047, p9126) | read in full | no clear copy or gloss of any of the four; the sibling entries on each leaf are other code messages (8965: Beckwith 19 May; 8996: McCaine 6 Jul, Beckwith 8 Jul; 9047: Horner 14 Aug 11.10 AM, Lincoln 14 Aug; 9126: Van Duzer 23 Nov, McCaine 24 Nov). |
+| 3 | Huntington CONTENTdm full text (p16003coll11, `CISOSEARCHALL`, sixth segment 1), then `dmGetItemInfo` | "Ricketts Thomas" (21), "Sharpe horse Gordonsville" (0), "Lee Sharpe reliable" (2: 4582, 9047), "City Point Thursday Rawlins" (0); items 4582, 9777, 9781 | 4582 = McEntee to Sharpe, 29 Apr 1864 ("a reliable man ... Gordonsville"): unrelated. **9777 (mssEC p.111) = a sibling QMG telegram, same operator Sampson, "for Capt Thomas", Ricketts's men arriving at Baltimore (dated "June 7" in the volunteer text; July by content), itself in code**: context for E92, not its text. 9781: unrelated. No clear copy of any of the four. |
+| 4 | Papers of Ulysses S. Grant: Google Books API (key, `country=US`) and IA be-api by identifier (vols. 11, 12; vol. 13 not on IA) | GB: "formerly employed by Colonel Sharpe" (503 twice), "W. J. Lee" Sharpe Gordonsville, Leet Bowers Sharpe Gordonsville horse, "Papers of Ulysses S. Grant" Leet Bowers August 14 1864 Sharpe, Grant Rawlins "until Thursday" "City Point" November 22 1864, "will not be at City Point until Thursday", "Thursday" intitle:"Papers of Ulysses S. Grant" Rawlins; be-api vol. 11: "Leet", "not disposed to go out", "Wednesday or Thursday", "men sent by Col Sharpe", "carefully drawn to them", "which way these troops", "passed from Gordonsville and their", "Leet telegraphed", "employed by", "Gordonsville", "horseback", "reliable man", "two hundred dollars"; vol. 12: "horseback", "reliable man"; vol. 13 (be-api): "Thursday" | **vol. 11 prints in a note the antecedent of N2-BZ part 2**: "[Lt. Col.] Theodore S. Bowers telegraphed to Capt. George K. Leet. 'We had some information here yesterday that troops supposed to be over a Regt left Richmond last saturday evening by the Central road going North The attention of the men sent by Col Sharpe should be carefully drawn to them to ascertain which way these troops have passed from Gordonsville and their number' Telegrams received (2 ...)" (be-api snippet, page not given; GB snippet in vol. 1T4fAQAAMAAJ, NO_PAGES). Leet's answer (N2-BZ part 2) is not in the snippets: "not disposed", "reliable man", "two hundred dollars", "Leet telegraphed" 0; "Wednesday or Thursday" and "horseback" hit unrelated letters. Diffed below. Vol. 13 pages for 22 Nov not read (not on IA; GB snippets found nothing for N2-BY's wording). |
+| 4 | Recipient's printed papers (N2-BY): James H. Wilson, *The Life of John A. Rawlins* (1916), IA `lifejohnraw00wilsrich` djvu (1 request) | grep Nov. 20-26, "Thursday" | **p.283, Rawlins to his wife, City Point, 22 Nov 1864: "A despatch just received from the General dated at Washington says he will be back to this place Thursday."** (The 21 Nov letter on p.282 has Grant's despatch "dated to-day at New York City".) Same day, same sender and recipient, same place of sending, same day named: this is N2-BY's substance from the recipient's side. Also be-api, no identifier, "back to this place Thursday": 5 hits, all copies of this book. |
+| 4 | OR by date (E90): IA `warofrebellionco1362unit` djvu (1 request) | "left the James" | **OR I/36 pt 2 p.852**: S. Williams to Torbert, 17 May 1864: "It is understood that General Sheridan left the James River yesterday, on his return to the army." Context (three days earlier, Army of the Potomac to its cavalry), not E90's question or its forage clause. Note: the cached `sources/ia-fulltext/print-check/warofrebellion362unit_djvu.txt.gz` has no "left the James" -- a second mislabelled cache (cf. LS4-V2a on 431unit); logged, not fixed. |
+| 4/5 | 1864 press, loc.gov Chronicling America JSON (`dates=`, +-3 days) then page OCR (word-coordinates `full_text=1`) | N2-BY: "grant city point", 22-26 Nov (14 pages listed); read Evening Star 23 Nov p.2, Daily National Intelligencer 24 Nov p.2, NY Herald 23 Nov p.4 (Daily National Republican 23 Nov p.2: fetch failed, not retried). E90: "sheridan forage white house", 19-23 May (8 pages); read Evening Star 19 May p.2, Daily National Intelligencer 20 May p.3. E92: "ricketts transports baltimore city point", 6-10 Jul (0), "ricketts baltimore", 7-10 Jul (4); read Evening Star 7 and 8 Jul p.1. N2-BZ part 2: "sharpe gordonsville scout", 13-17 Aug (0) | Evening Star 23 Nov 1864 p.2: "General Grant is stopping at Willards' with his staff ... Mr. Beckwith. To-day he had protracted interviews with President Lincoln, Secretary Stanton, and General Halleck. His dispatch boat, the Mary Martin, is lying at the 7th street wharf, in waiting to take him to the front." -- context for N2-BY (Grant in Washington 22-23 Nov), no "Thursday", not its text. Nothing for E90, E92, N2-BZ part 2 on the pages read. |
+| 5 (G3) | decoded-phrase re-search: be-api (no identifier) and Google Books | E90: "Has Sheridan left the James", "forage him by the other line", Biggs "Sheridan left the James" forage, "Sheridan left the James" (5 hits: Custer biography 27 May; OR I/36 pt 2 p.852 above), "by the other line" Sheridan forage (OR I/43 pt 2 Sept 1864, Pittsburgh Gazette 9 May: unrelated); E92: "vessels bringing up Ricketts" (GB 0 relevant; be-api 2: *Banners South* on Ricketts and Bayard in 1862, a 1914 paper), "all steam transports" "port of Baltimore", "port of Baltimore" Ricketts City Point; N2-BZ part 2: "trip to Gordonsville" (10, all later or unrelated), "W. J. Lee" Sharpe (physics papers), "good and reliable man" Sharpe Gordonsville (OR McEntee 29 Apr, unrelated), "not disposed to go out" Sharpe; N2-BY: "back to this place Thursday" (Wilson p.283) | as in the rows above |
+| 5 | Scholarship: OpenAlex (key, header) | one search per entry (Biggs/Sheridan forage May 1864; Ricketts transports Baltimore City Point July 1864; Sharpe Bureau of Military Information Gordonsville Leet; Grant Rawlins telegram November 1864 City Point Thursday) | 0, 1, 0, 5 works: none about these telegrams |
+| -- | Not searched / unreachable | NARA RG 92 / RG 107 (no route); HathiTrust full text (Cloudflare); JSTOR (rows already queued by LS4-V1a/V2a, never blocking); Grant Papers vol. 13 pages (not on IA; msstate Cloudflare per LS4-V1a, not retried); S2, CORE (not run) | unread |
+
+### Diffs (G3: anything sharing two rare entities within +-3 days)
+- **N2-BY vs Rawlins to his wife, 22 Nov 1864 (Wilson 1916 p.283).** Telegram (H): "[Washington] 8 PM 22 [Nov] to Brig. General Rawlins: I will not be at City
+  Point until Thursday. [Grant]". Letter: "A despatch just received from the General dated at Washington says he will be back to this place [City Point]
+  Thursday." Every content element of the telegram -- sender, recipient, day, place of sending, City Point, Thursday -- is in the printed letter; only
+  the wording differs (a report of the despatch, not its text). **SUBSTANCE: N3 -> N2** (the E26/E28/E49/N2-BU kind: content in print, no prior mapping of
+  this ciphertext to it). The letter is also an independent, non-statistical external check on Bridle = City Point and Yankee = Thursday.
+- **N2-BZ part 2 vs Bowers to Leet (Grant Papers vol. 11 note).** Shared: Sharpe's men, Gordonsville, the Bowers-Leet pair, the same day or the day
+  before. Bowers asks that Sharpe's men find out which way the troops passed from Gordonsville and how many; Leet answers that Sharpe's men will not go
+  out before Wednesday or Thursday, and that W. J. Lee offers to ride to Gordonsville tomorrow for a horse and 200 dollars. The antecedent states the
+  question, not the answer: none of N2-BZ part 2's own content (the delay, W. J. Lee, the horse, the 200 dollars, the character reference) is in it or in
+  any vol. 11 snippet run. **Not substance: N3 (weak) kept**, with the printed antecedent named. Limit: be-api returns at most a few highlights per term
+  and no page; the note was not read whole (lending item). A reader of vol. 11 at that note could still lower this.
+- **E90 vs Williams to Torbert, 17 May 1864 (OR I/36 pt 2 p.852)** and Biggs's clear reply (4642, LS4-V1a). Shared: Sheridan, the James, within three
+  days. The print states Sheridan left the James on 16 May (Army of the Potomac's understanding); E90 is the QMG office asking Biggs on 20 May whether he
+  has, and whether to forage him by the other line. Neither prints the question or the forage clause. **N3 (weak) kept.**
+- **E92 vs 9777 (sibling QMG telegram to Thomas) and OR I/40 pt 3 (Grant to Meigs, 6 Jul).** Context only, both already known to LS4-V1a except 9777,
+  which is itself in code. **N3 (weak) kept.**
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth (kept) | note |
+|---|---|---|---|---|
+| E90 QMG office to Col. Biggs, 20 May 1864 1.30 PM | **N3** (weak), two audits | unknown; context in print (OR I/36 pt 2 p.852) and the clear reply in the public transcription (4642) | D3 | not N4: Grant Papers vol. 10-11 pages, RG 92, HathiTrust, JSTOR unread |
+| E92 QMG office to Capt. Thomas, 7 Jul 1864 11 AM | **N3** (weak), two audits | unknown | D2 | sibling 9777 in code; not N4 for the same reasons |
+| N2-BZ part 2 Leet to Bowers, 14 Aug 1864 | **N3** (weak), two audits | unknown; its antecedent (Bowers to Leet) printed in Grant Papers vol. 11, note | D2 | not N4: the vol. 11 note not read whole |
+| N2-BY Grant to Rawlins, 22 Nov 1864 8 PM | **N2** (lowered from N3) | substance known: Wilson, *Life of John A. Rawlins* (1916) p.283 | D3 (now with a second external check) | not counted; SO-ECKERT-N2BY withdrawn |
+
+- Safe sentence, N2-BY: "Read at grade H with the period War Department Cipher No. 2: Grant tells Rawlins on 22 Nov 1864 from Washington that he will not be
+  at City Point until Thursday; Rawlins reported the same despatch in his letter of that day, printed in J. H. Wilson, *The Life of John A. Rawlins* (1916),
+  p.283." Unsafe: "first", "unpublished", "previously unread", any claim that the content was unknown.
+- Safe sentences, E90, E92, N2-BZ part 2: LS4-V1a's, plus for N2-BZ part 2 "... Bowers's request that prompted it is printed in a note of *The Papers of Ulysses
+  S. Grant* vol. 11", and for E90 "... the Official Records (ser. I vol. 36 pt 2 p.852) print that Sheridan had left the James on 16 May". Unsafe as LS4-V1a.
+- Depth sentences: LS4-V1a's (E90, E92, N2-BZ part 2) and LS4-V2a's (N2-BY) checked against the derived blocks in reading.md / reading-no2.md: true.
+
+### Postmortem
+- N2-BY fell to the recipient's own printed papers, the family neither first audit named: for a staff-to-chief telegram, the chief of staff's letters
+  (Wilson 1916 prints Rawlins's daily letters to his wife from City Point) report incoming despatches the same evening. For every Grant-to-Rawlins or
+  Rawlins-to-Grant entry of 1864-65, grep Wilson's *Life of John A. Rawlins* (IA, full text) by date first: one request.
+- LS4-V2a's safe sentence for N2-BY and its status.json `line` said no prior printed text was located; corrected here (status.json row, SO row).
+- Two IA print-check caches are mislabelled (431unit per LS4-V2a, 362unit here); any "OR I/36 pt 2 cached: none" from the cache is suspect.
+- Requests: googleapis.com 15 (two 503s, not retried beyond once); be-api.us.archive.org 26 (3 errors, one retry each); archive.org 3 (1 advancedsearch, 2 djvu);
+  hdl.huntington.org 7 (4 searches, 3 item JSONs), >= 3.2 s apart; www.loc.gov 13 (6 searches, 7 page JSONs); tile.loc.gov 6; api.openalex.org 4.

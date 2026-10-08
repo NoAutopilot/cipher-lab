@@ -6683,9 +6683,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS4-V1a)'"
+        "AUDIT.md '## AUDIT (LS4-V1a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-LS4A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -6701,7 +6702,7 @@
       "title": "Eckert 1864: Quartermaster General's office to Col. Biggs, Fort Monroe, 20 May 1864 1.30 PM, has Sheridan left the James, must we forage him by the other line (E90)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Papers of Ulysses S. Grant (Internet Archive full text), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame clear in the public transcription of 8965; Biggs's clear reply of 6.50 PM (mssEC 11 p.201, pointer 4642) answers it; Grant Papers footnotes, NARA RG 92 and JSTOR unread",
+      "gap": "N3 (weak): frame clear in the public transcription of 8965; Biggs's clear reply of 6.50 PM (mssEC 11 p.201, pointer 4642) answers it; Grant Papers footnotes, NARA RG 92 and JSTOR unread Second audit V1-LS4A (8 Oct 2026): N3 weak kept; context only in OR I/36 pt 2 p.852 (Williams to Torbert, 17 May: Sheridan left the James on 16 May).",
       "phrases": [
         "Huntington mssEC 19 p.73, pointer 8965, E90"
       ],
@@ -6724,9 +6725,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS4-V1a)'"
+        "AUDIT.md '## AUDIT (LS4-V1a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-LS4A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 100.0,
@@ -6742,7 +6744,7 @@
       "title": "Eckert 1864: Quartermaster General's office to Capt. Thomas, Baltimore, 7 Jul 1864 11 AM, return the vessels that brought up Ricketts' troops to City Point with all available steam transports (E92)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Papers of Ulysses S. Grant (Internet Archive full text), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
-      "gap": "N3 (weak): the order's frame is clear in the public transcription of 8996, destination and cargo are code; context printed (Grant to Meigs 6 Jul 1864, OR I/40 pt 3), this order not located; Grant Papers footnotes, NARA RG 92 and JSTOR unread",
+      "gap": "N3 (weak): the order's frame is clear in the public transcription of 8996, destination and cargo are code; context printed (Grant to Meigs 6 Jul 1864, OR I/40 pt 3), this order not located; Grant Papers footnotes, NARA RG 92 and JSTOR unread Second audit V1-LS4A (8 Oct 2026): N3 weak kept; sibling QMG telegram to Thomas (Huntington pointer 9777) is itself in code; press 7-8 Jul read, nothing.",
       "phrases": [
         "Huntington mssEC 19 p.104, pointer 8996, E92"
       ],
@@ -6765,9 +6767,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS4-V1a)'"
+        "AUDIT.md '## AUDIT (LS4-V1a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-LS4A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 95.5,
@@ -6783,7 +6786,7 @@
       "title": "Eckert 1864: Capt. Geo. K. Leet to Lt. Col. Bowers, 14 Aug 1864, Sharpe's men and W. J. Lee's offered ride to Gordonsville (N2-BZ part 2)",
       "grade": "N3",
       "line": "Read at grade H with the period Cipher No. 2 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Papers of Ulysses S. Grant (Internet Archive full text), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
-      "gap": "N3 (weak): about half the body is clear in the public transcription of 9047; the key gives Gordonsville, horse, Wednesday/Thursday, information, tomorrow and 200; the Grant Papers footnotes for 14 Aug 1864 were not read page by page (msstate PDFs Cloudflare-challenged), JSTOR unread",
+      "gap": "N3 (weak): about half the body is clear in the public transcription of 9047; the key gives Gordonsville, horse, Wednesday/Thursday, information, tomorrow and 200; the Grant Papers footnotes for 14 Aug 1864 were not read page by page (msstate PDFs Cloudflare-challenged), JSTOR unread Second audit V1-LS4A (8 Oct 2026): N3 weak kept; Bowers's antecedent request to Leet is printed in a note of Papers of U. S. Grant vol. 11 (be-api snippets, page not read); Leet's answer not in the snippets; the note not read whole.",
       "phrases": [
         "Huntington mssEC 19 p.154, pointer 9047, N2-BZ (second telegram)"
       ],
@@ -6806,9 +6809,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (LS4-V2a)'"
+        "AUDIT.md '## AUDIT (LS4-V2a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-LS4A)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth": "D3",
       "depth_pct": 100.0,
@@ -6822,9 +6826,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: Grant to Rawlins, 22 Nov 1864 8 PM, will not be at City Point until Thursday (N2-BY)",
-      "grade": "N3",
-      "line": "Read at grade H with the period War Department Cipher No. 2; the plain words are in the Huntington's public transcription; no prior decipherment of the code words or printed text located in the Official Records (ser. I vol. 42 pt 3), Internet Archive full text, Google Books (which reaches the Grant Papers vol. 13), OpenAlex or the Huntington's own full-text search (searched 8 Oct 2026).",
-      "gap": "weak N3 (LS4-V2a, 8 Oct 2026): plain words public in the Huntington transcription; Grant Papers vol. 13 pages for 18-24 Nov (not on IA), the press of 22-26 Nov, NARA RG 107 and HathiTrust unread, JSTOR rows pending, so not N4; one audit; SO-ECKERT-N2BY queued",
+      "grade": "N2",
+      "line": "Read at grade H with the period War Department Cipher No. 2: Grant tells Rawlins on 22 Nov 1864 from Washington that he will not be at City Point until Thursday; Rawlins reported the same despatch in his letter of that day, printed in J. H. Wilson, The Life of John A. Rawlins (1916), p.283.",
+      "gap": "N2 (V1-LS4A, 8 Oct 2026): substance in Rawlins's letter of 22 Nov 1864, Wilson, Life of John A. Rawlins (1916) p.283 ('A despatch just received from the General dated at Washington says he will be back to this place Thursday'); Grant's wording not located in print; not counted; SO-ECKERT-N2BY withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.234, pointer 9126, N2-BY"
       ],
@@ -6833,14 +6837,14 @@
         "Huntington mssEC 19 p.234, pointer 9126, N2-BY"
       ],
       "claim_scope": "completed-reading",
-      "plaintext_novelty": "N3",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "completeness": "8 H of 8 code words",
       "unresolved_spans": "",
       "reading_version": "LS4-R2a 8 Oct 2026 (reading-no2.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS4-V2a)' section 5",
       "depth_sentence": "At 8 PM on 22 Nov 1864, from Washington, Grant tells his chief of staff Brig. Gen. Rawlins that he will not be at City Point until Thursday.",
-      "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, LS4-V2a); image all 3 lines from line crops (LS4-V2a); date word Oliver Arnold = 22 agrees with the header; code clause: Bridle = City Point reads in place in a second entry (ciphertext-no2.txt 'for Crowd Bridle'); external: Grant to Stanton 18 Nov 1864 (OR I/42 pt 3) puts him in Washington on Tuesday 22 Nov; matched control LS4-R2a (No. 1, No. 9, three shuffles: 0 of 3 clauses)",
+      "depth_check": "fresh rule-7 re-derivation (decode_no2.py --check, LS4-V2a); image all 3 lines from line crops (LS4-V2a); date word Oliver Arnold = 22 agrees with the header; code clause: Bridle = City Point reads in place in a second entry (ciphertext-no2.txt 'for Crowd Bridle'); external: Grant to Stanton 18 Nov 1864 (OR I/42 pt 3) puts him in Washington on Tuesday 22 Nov; matched control LS4-R2a (No. 1, No. 9, three shuffles: 0 of 3 clauses); second external check: Rawlins's letter of 22 Nov 1864 (Wilson 1916 p.283) reports the despatch from Washington, City Point, Thursday (V1-LS4A)",
       "depth_note": "8 H of 8 code words"
     }
   ],
