@@ -1,5 +1,5 @@
 blocked
-Gomberville 1665 seconde partie (Gallica bpt6k64451005) ContentSearch run whole-volume (Rondinelli, Hercole, Rondin: 0 hits; only Italian letter is view 255, Caetani 15 Feb 1590, read as image) but the Oct-Dec 1590 pages were not read as images by this worker, so blocked, not open.
+Gomberville 1665 seconde partie (Gallica bpt6k64451005) view 262 (printed p.213, Henri IV to Nevers, Camp de Coeures, 10 Nov 1590) read as image by this worker, no Rondinelli; views 263-273, 387-393, 443-452 NOT read (Gallica 503/challenge page from view 263, one retry timed out, stopped), so blocked, not open.
 
 # Hercole Rondinelli to the duc de Nevers, Paris, 11 Nov 1590 -- BnF Français 3613 no.33, fol. 62
 
@@ -29,8 +29,12 @@ Premise (d) update: recipient-side edition searched by OCR for the sender's name
 Next: read views 262-273 and 387-393, 443-452 as images (about 20 requests) or park.
 Gallica requests this job (shared with unit 2): about 39 incl. 1 reset+1 retry.
 
+## BNF-RONDI (8 Oct 2026, 10:27-10:40 UTC by date -u, account 2)
+Instrument: Gallica `ark:/12148/bpt6k64451005/f<N>.highres`. View 262 fetched and read as image: printed p.213, "Autre lettre de S. M. au mesme", Henri IV to Nevers, Camp de Coeures 10 Nov 1590, French, no cipher, no Rondinelli. Rest of the page is the bleed-through of p.214. Views 263 (HTML challenge page, 48 KB), 264 and 265 (HTTP 503 maintenance, 299 B) and one retry of 263 after a 100 s pause (60 s timeout, 0 bytes) all failed; stopped per brief. Not read as images: 263-273, 387-393, 443-452 (28 views). Verdict: blocked (pages cannot be read now), not a negative. Next: re-run views 263-273 first (printed pp.214-224, the 11 Nov 1590 neighbourhood) when Gallica answers, ~11 requests; 387-393 and 443-452 after.
+Requests this job: gallica.bnf.fr 7 (1 reset, 1 HTTP 500 on an IIIF path, 262 ok, 263 challenge, 264-265 503, 263 retry timeout); no other host.
+
 ## Gate
 ```
-ciphers/fr3613-rondinelli-1590: blocked (line 1) -- already terminal, nothing to gate
+fr3613-rondinelli-1590: blocked (line 1) -- already terminal, nothing to gate
 exit 0
 ```
