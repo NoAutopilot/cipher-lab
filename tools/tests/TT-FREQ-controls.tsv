@@ -1,0 +1,7 @@
+# TT-FREQ controls, tools/tests/tt_freq_controls.py; pass lines tools/tests/PREREG-TT-FREQ.md
+check	case	result	detail	null	verdict
+C1	ormonde	single N=85 gain=34.3; band=[41,85) gain=72.2	|err| single=5 band=5 (true edge 90)	value-null: 0/20 seeds land within 3 of 90; null N: ['none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none']	FAIL
+C4	ormonde	sukhotin accuracy 0.800 on 20 top letter tokens; 78 -> V	V-classed: 69=e,45=e,78=o,49=i,65=a,41=a,54=o,59=t	order-null mean 0.545 (min 0.250, max 0.750)	PASS
+C5	ormonde	repeated n-grams >=3: 6; maximal 4, on a repeated word 2 (0.50)	50 49 53=kingx2gaps[300](off-word); 49 53 71=kingx2gaps[78]; 41 53 68=comandx2gaps[13](off-word); 70 57 78 52=fromx2gaps[76]	order-null counts [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 3] (p95 2)	FAIL
+C1	lodewijk-sib	1102 numeric tokens; single N=123 gain=1026.1; band=[1,123) gain=1026.1	|err| single=2 (true edge 121)	value-null: 0/20 seeds within 5; null N: ['none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none']	PASS
+C4	lodewijk-sib	sukhotin accuracy 0.700 on 20 top letter tokens	V-classed: 82=e,81=e,6=o,61=a,83=e,27=s,62=a,7=o,84=e	order-null mean 0.480 (min 0.300, max 0.600)	FAIL

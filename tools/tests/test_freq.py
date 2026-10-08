@@ -23,6 +23,13 @@ Cases covered, all on one 44-token synthetic stream:
 - default (no new flag) output is unchanged: token/distinct count line and
   the top-token table still appear, keeping old callers working.
 
+TT-FREQ (8 Oct 2026) adds: --repeats via ngram_repeats_all (equal to the
+per-length table, gaps, 20,000-token timing, must NOT flag a once-only
+window), fast near-repeats equal to the old quadratic ones, --split-at auto
+(proposes a synthetic letter-band edge; must NOT break a uniform-value
+null), --contacts --vowels (Sukhotin; separates homophonic CV text, must NOT
+separate its shuffled-order copy).
+
 Run: python3 tools/tests/test_freq.py"""
 import os
 import sys
@@ -125,6 +132,80 @@ check("default output still prints a top-tokens table", "top 25 tokens:" in out)
 check("default output has no contacts/kwic/repeats/split header (flags off)",
       "self_succession" not in out and "left_context" not in out)
 
+# --- TT-FREQ (8 Oct 2026): --repeats gaps + refinement, --split-at auto, --contacts --vowels ---
+import random
+import time
+allr = freq.ngram_repeats_all(toks, 2)
+check("ngram_repeats_all matches ngram_repeats at every length",
+      all(allr[L] == freq.ngram_repeats(toks, L) for L in allr) and 4 not in allr)
+check("position gaps of '9 8 7' are [4]", freq.position_gaps(tri[("9", "8", "7")]) == [4])
+check("fast near-repeats == slow near-repeats on the fixture",
+      freq.near_repeats_length3_fast(toks) == freq.near_repeats_length3(toks))
+rnd = random.Random(1)
+rt = [str(rnd.randint(1, 40)) for _ in range(600)]
+check("fast near-repeats == slow near-repeats on 600 random tokens",
+      freq.near_repeats_length3_fast(rt) == freq.near_repeats_length3(rt))
+# perf: 20,000 tokens over 26 symbols with three planted 12-token formulas (full table mode)
+words = [[str(rnd.randint(1, 26)) for _ in range(12)] for _ in range(3)]
+big = []
+while len(big) < 20000:
+    big += rnd.choice(words) if rnd.random() < 0.01 else [str(rnd.randint(1, 26))]
+t0 = time.time()
+allbig = freq.ngram_repeats_all(big, 4)
+el = time.time() - t0
+check(f"--repeats 4 on 20,000 tokens runs in < 5 s ({el:.2f} s)", el < 5.0)
+check("each planted 12-token formula is found at length 12", all(tuple(w) in allbig.get(12, {}) for w in words))
+# worst case for the old loop: a 2,000-token block repeated, --maximal
+big2 = [str(rnd.randint(1, 60)) for _ in range(18000)]
+big2 = big2[:9000] + big2[:2000] + big2[9000:16000]
+t0 = time.time()
+mx = freq.ngram_repeats_all(big2, 10, maximal=True)
+el = time.time() - t0
+check(f"--repeats 10 --maximal on 20,000 tokens with a 2,000-long repeat runs in < 5 s ({el:.2f} s)", el < 5.0)
+check("--maximal reports the planted 2,000-token block once, with gap 9000",
+      2000 in mx and [freq.position_gaps(p) for p in mx[2000].values()] == [[9000]])
+check("--maximal does not list the block's sub-windows", sum(len(v) for L, v in mx.items() if L >= 1000) == 1)
+check("a once-only window is not a repeat (must NOT flag '9 8 6')", ("9", "8", "6") not in allr.get(3, {}))
+
+# split auto: letters 1-30 dense (each ~20x), codes 31-400 sparse (~0.3x) -> N near 31
+band = []
+for v in range(1, 31):
+    band += [str(v)] * rnd.randint(12, 28)
+band += [str(rnd.randint(31, 400)) for _ in range(120)]
+rnd.shuffle(band)
+r = freq.split_auto(band)
+check(f"split auto proposes the letter-band edge 31 within 2 (got {r['singles'][0][1]})",
+      abs(r["singles"][0][1] - 31) <= 2 and r["singles"][0][0] > 10)
+uni = [str(rnd.randint(1, 400)) for _ in range(len(band))]
+ru = freq.split_auto(uni)
+check("split auto must NOT break a uniform-value null (gain < 10)",
+      not ru["singles"] or ru["singles"][0][0] < 10)
+bandn = [str(v) for v in range(20, 40)] + band  # sparse nulls under the band
+rb = freq.split_auto(bandn)
+check("split auto band fit finds an upper edge near 31 under sparse low nulls",
+      rb["band"] is not None and abs(rb["band"][2] - 31) <= 2)
+
+# vowels: synthetic CV text over 5 vowels / 10 consonants, each letter with 2 homophones
+V, C = list("aeiou"), list("bcdfglmnrt")
+codes = {ch: [f"{ch}1", f"{ch}2"] for ch in V + C}
+stream = []
+for _ in range(1500):
+    stream.append(rnd.choice(codes[rnd.choice(C)]))
+    stream.append(rnd.choice(codes[rnd.choice(V)]))
+    if rnd.random() < 0.3:
+        stream.append(rnd.choice(codes[rnd.choice(C)]))
+cls = freq.sukhotin_classes(stream, 30)
+acc = sum((c == "V") == (t[0] in V) for t, c, _ in cls) / len(cls)
+check(f"--vowels separates homophonic vowels from consonants on CV text (acc {acc:.2f} >= 0.9)", acc >= 0.9)
+accs = []
+for _ in range(5):
+    sh = list(stream)
+    rnd.shuffle(sh)
+    cls_s = freq.sukhotin_classes(sh, 30)
+    accs.append(sum((c == "V") == (t[0] in V) for t, c, _ in cls_s) / len(cls_s))
+acc_s = sum(accs) / len(accs)
+check(f"--vowels must NOT separate shuffled-order copies (mean acc over 5 {acc_s:.2f} < 0.8)", acc_s < 0.8)
+
 os.remove(FIXTURE)
 
 if fails:
@@ -134,4 +215,6 @@ print("ok: freq.py --contacts tags suffix-like/prefix-like/neither correctly (co
       "concentration + diversity, not self-succession alone), --kwic sorts on left/right "
       "context, --repeats finds recurring n-grams and near-repeats without double-counting "
       "exact matches, --split-at reports per-side token/distinct/IC, and the default "
-      "(no new flag) report is unchanged.")
+      "(no new flag) report is unchanged; TT-FREQ: --repeats gaps + refinement (20,000 tokens fast), "
+      "--split-at auto proposes the band edge and leaves a uniform null alone, --vowels separates CV text "
+      "and not its shuffle.")

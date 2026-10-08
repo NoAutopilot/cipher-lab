@@ -6,6 +6,8 @@ Usage: python3 tools/freq.py FILE [--sep REGEX] [--top N] [--strip-clear]
        python3 tools/freq.py FILE --kwic TOKEN [--width W] [--sort left|right]
        python3 tools/freq.py FILE --repeats N
        python3 tools/freq.py FILE --split-at N
+       python3 tools/freq.py FILE --split-at auto
+       python3 tools/freq.py FILE --contacts K --vowels
        python3 tools/freq.py FILE --onepart-dict LANG [--onepart-range MIN,MAX] [--top N]
 
 Tokens are split on ';' and whitespace by default. Lines starting with '#'
@@ -38,6 +40,18 @@ concentrated, left-context all-distinct) tags it prefix-like. Tokens with
 fewer than --tag-min (default 3) occurrences are always tagged "neither"
 (too little context to judge concentration/diversity).
 
+--vowels (with --contacts; TT-FREQ, 8 Oct 2026): Tomokiyo's own contact chart
+on the Ormonde cipher (ormonde.htm, "Contact Chart and First Findings") showed
+"78 does not appear together with other high-frequency letters", which made 78
+a vowel ("o"); contact.htm cites Kahn pp.100-102 for the method. --vowels
+runs Sukhotin's contact-matrix vowel algorithm on the K most frequent tokens
+(symmetric adjacency counts, self-contacts zeroed) and prints each token's
+class (V vowel-like / C consonant-like) and its remaining contact sum when
+it was promoted. Meant to catch: the vowel group of a letter cipher, even a
+homophonic one, from contacts alone. Must NOT flag: a shuffled-order copy of
+the same stream (contacts carry no order then; the class/key agreement falls
+to chance -- tools/tests/test_freq.py and tools/tests/PREREG-TT-FREQ.md).
+
 --kwic TOKEN --width W --sort left|right: every occurrence of TOKEN with W
 tokens of context each side, one row per occurrence, sorted on the left
 context (immediate left neighbour first, then outward) or the right context
@@ -46,15 +60,43 @@ context (immediate left neighbour first, then outward) or the right context
 --repeats N: every token n-gram of length >= N that recurs (two or more
 times), for each length starting at N and increasing until a length has no
 repeats at all; each row gives the n-gram, its count and its start
-positions. When N <= 3, a separate "near-repeats" table follows: every pair
+positions, then (TT-FREQ, 8 Oct 2026) the gaps between successive
+positions (Tomokiyo polygram.htm, "Polygram Script": list every recurring
+n-gram of length >= 10 and inspect it; the gaps are what a period or a
+re-used formula shows up in). Lengths are grown by refining the previous
+length's repeat groups by one following token, so each length costs
+O(positions still repeating) and the whole run is not O(N * L^2): 20,000
+tokens run in well under a few seconds (test_freq.py times it). Meant to
+catch: a word or formula enciphered the same way twice. --maximal keeps only
+repeats that cannot be extended left or right with the same positions (one
+row per long repeated block instead of every sub-window; linear in the
+block length). Must NOT flag: a length-N window that occurs once (the
+fixture's "9 8 6"). When N <= 3, a separate "near-repeats" table follows: every pair
 of length-3 windows that differ in exactly one of their three positions
 (a Bazeries-style variably-spelled probable phrase), excluding exact
 repeats (already in the table above).
 
---split-at N: the lowest gap in the sorted distinct numeric values is found
-by eye/a one-off script (not automated here -- see LESSONS-TOMOKIYO.md C1);
-this option takes that N and reports token count, distinct count and index
-of coincidence separately for the tokens below N and at-or-above N.
+--split-at N: reports token count, distinct count and index of coincidence
+separately for the tokens below N and at-or-above N.
+
+--split-at auto (TT-FREQ, 8 Oct 2026; Tomokiyo practice 1, LESSONS-TOMOKIYO.md
+C1: codebreaking.htm "Cipher in Code"; wallisdecipher.htm "Cipher used in the
+First Letter", "low numbers up to about 64 being reserved for single
+letters"; ormonde.htm "Reduction of the Problem", letters in "the range from
+40 to 90", nulls below 40, words above): PROPOSES N, the value where the
+dense low letter band of a nomenclator ends. Counts per integer value over
+the numeric range are fitted as piecewise-constant Poisson rates: (1) the
+best single change point (low dense / high sparse, low-side rate must be the
+higher), reported with the top 3 candidates and their log-likelihood gain
+over one flat rate; (2) the best dense band [A, B) with sparse values on both
+sides (nulls below a letter band, as on Ormonde); (3) the largest numeric gap
+between successive distinct values. Each proposal prints the low block's
+size (distinct values, tokens) and IC beside the high block's. Meant to
+catch: a letter band of frequent, densely used low values under a sparse
+code range. Must NOT flag (prints "no break" when the best gain is under
+--split-min-gain, default 10 nats): values drawn uniformly over the range
+(a shuffled-VALUE null), test_freq.py. A proposal is a hypothesis for
+--split-at N, not a key.
 
 --onepart-dict LANG (Tomokiyo codebreaking.htm "Partial Encoding", "Andre
 Langie's Example"; LESSONS-TOMOKIYO.md C2): a one-part code lists its
@@ -80,6 +122,7 @@ period_code_test.py sits beside this tool for a different family (see
 ciphers/destaing-gerard-1779/onepart_test.py for a worked example).
 """
 import argparse
+import math
 import re
 import signal
 import sys
@@ -181,6 +224,139 @@ def split_stats(toks, split_at):
     low = [t for t in toks if re.match(r"^\d+$", t) and int(t) < split_at]
     high = [t for t in toks if re.match(r"^\d+$", t) and int(t) >= split_at]
     return {"low": side(low), "high": side(high)}
+
+
+def repeat_groups(toks, n_min, maximal=False):
+    """[(length, positions)] for every repeated n-gram of length >= n_min, grown
+    by refinement: a length-(L+1) group is a length-L group split by the token
+    at offset L, so each length costs O(positions still repeating), never
+    O(N * L) tuple building (TT-FREQ, 8 Oct 2026; polygram.htm). With
+    maximal=True only left- and right-maximal repeats are kept, and a group
+    that is not left-maximal (every occurrence preceded by the same token) is
+    dropped at once with all its extensions, so one long repeated block costs
+    O(L), not O(L^2)."""
+    n = len(toks)
+    if n_min < 1 or n_min > n:
+        return []
+
+    def left_max(pos):
+        return pos[0] == 0 or len({toks[i - 1] for i in pos}) > 1
+
+    groups = list(ngram_repeats(toks, n_min).values())
+    if maximal:
+        groups = [g for g in groups if left_max(g)]
+    out = []
+    length = n_min
+    while groups:
+        nxt = []
+        for pos in groups:
+            by = {}
+            for i in pos:
+                if i + length < n:
+                    by.setdefault(toks[i + length], []).append(i)
+            kids = [v for v in by.values() if len(v) >= 2]
+            if maximal:
+                if not any(len(k) == len(pos) for k in kids):
+                    out.append((length, pos))
+                nxt.extend(kids)
+            else:
+                out.append((length, pos))
+                nxt.extend(kids)
+        groups = nxt
+        length += 1
+    return out
+
+
+def ngram_repeats_all(toks, n_min, maximal=False):
+    """{length: {ngram tuple: [start positions]}} built from repeat_groups()."""
+    out = {}
+    for length, pos in repeat_groups(toks, n_min, maximal):
+        out.setdefault(length, {})[tuple(toks[pos[0]:pos[0] + length])] = pos
+    return out
+
+
+def position_gaps(pos):
+    return [b - a for a, b in zip(pos, pos[1:])]
+
+
+def near_repeats_length3_fast(toks):
+    """Same pairs, same order, as near_repeats_length3(), by masking one
+    position at a time and bucketing (linear in N, not quadratic)."""
+    grams = [tuple(toks[i:i + 3]) for i in range(len(toks) - 2)]
+    found = set()
+    for m in range(3):
+        buckets = {}
+        for i, g in enumerate(grams):
+            buckets.setdefault(g[:m] + g[m + 1:], []).append(i)
+        for idx in buckets.values():
+            if len(idx) < 2:
+                continue
+            for a in range(len(idx)):
+                for b in range(a + 1, len(idx)):
+                    i, j = idx[a], idx[b]
+                    if grams[i] != grams[j]:
+                        found.add((i, j))
+    return [(i, grams[i], j, grams[j]) for i, j in sorted(found)]
+
+
+def _seg_ll(c, length):
+    """Poisson log-likelihood (up to a data-only constant) of c events over
+    `length` integer values at the MLE rate c/length."""
+    if c <= 0 or length <= 0:
+        return 0.0
+    return c * math.log(c / length) - c
+
+
+def split_auto(toks, min_side=5, top=3):
+    """Proposed letter-band edges for --split-at auto (see the module
+    docstring). Returns a dict: lo, hi, flat_ll, singles (list of
+    (gain, N)), band ((gain, A, B) or None), gap ((size, below, above) or
+    None). N/A/B are integer values: low block = values < N."""
+    vals = [int(t) for t in toks if re.match(r"^\d+$", t)]
+    res = {"lo": None, "hi": None, "singles": [], "band": None, "gap": None, "n": len(vals)}
+    if len(vals) < 2:
+        return res
+    c = Counter(vals)
+    lo, hi = min(vals), max(vals)
+    res["lo"], res["hi"] = lo, hi
+    distinct = sorted(c)
+    # prefix sums over distinct values; a boundary is "values < d" for d in distinct
+    cum = [0]
+    for d in distinct:
+        cum.append(cum[-1] + c[d])
+    total = cum[-1]
+    flat = _seg_ll(total, hi - lo + 1)
+    res["flat_ll"] = flat
+    singles = []
+    for k in range(min_side, len(distinct) - min_side + 1):
+        nb = distinct[k]
+        cl, ch = cum[k], total - cum[k]
+        ll_, lh_ = nb - lo, hi - nb + 1
+        if cl / ll_ <= ch / lh_:
+            continue
+        singles.append((_seg_ll(cl, ll_) + _seg_ll(ch, lh_) - flat, nb))
+    singles.sort(reverse=True)
+    res["singles"] = singles[:top]
+    best_band = None
+    D = len(distinct)
+    for a in range(0, D - min_side + 1):
+        A = distinct[a]
+        for b in range(a + min_side, D + 1):
+            B = distinct[b] if b < D else hi + 1
+            cm = cum[b] - cum[a]
+            cl, ch = cum[a], total - cum[b]
+            lm, ll_, lh_ = B - A, A - lo, hi + 1 - B
+            rm = cm / lm
+            if (ll_ and cl / ll_ >= rm) or (lh_ and ch / lh_ >= rm):
+                continue
+            g = _seg_ll(cl, ll_) + _seg_ll(cm, lm) + _seg_ll(ch, lh_) - flat
+            if best_band is None or g > best_band[0]:
+                best_band = (g, A, B)
+    res["band"] = best_band
+    gaps = [(distinct[i + 1] - distinct[i], distinct[i], distinct[i + 1]) for i in range(D - 1)]
+    if gaps:
+        res["gap"] = max(gaps)
+    return res
 
 
 FOLD_ACCENTS = str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "é": "e", "è": "e", "ê": "e", "à": "a",
@@ -285,29 +461,61 @@ def print_contacts(toks, k, tag_min, tag_threshold):
         print(f"{r['token']}\t{r['count']}\t{r['pct']:.1f}\t{r['self_succession']}\t{r['tag']}\t{pre}\t{fol}")
 
 
+def sukhotin_classes(toks, k):
+    """Sukhotin's vowel algorithm on the contact matrix of the k most frequent
+    tokens (symmetric adjacency, diagonal zeroed). Returns [(token, 'V'|'C',
+    row_sum_at_promotion_or_final)] in frequency order (TT-FREQ, 8 Oct 2026;
+    contact.htm, ormonde.htm "Contact Chart and First Findings")."""
+    top = [t for t, _ in Counter(toks).most_common(k)]
+    ix = {t: i for i, t in enumerate(top)}
+    m = [[0] * len(top) for _ in top]
+    for a, b in zip(toks, toks[1:]):
+        if a in ix and b in ix and a != b:
+            m[ix[a]][ix[b]] += 1
+            m[ix[b]][ix[a]] += 1
+    sums = [sum(r) for r in m]
+    cls = ["C"] * len(top)
+    when = list(sums)
+    while True:
+        cand = [i for i in range(len(top)) if cls[i] == "C"]
+        if not cand:
+            break
+        i = max(cand, key=lambda j: sums[j])
+        if sums[i] <= 0:
+            break
+        cls[i] = "V"
+        when[i] = sums[i]
+        for j in range(len(top)):
+            if cls[j] == "C":
+                sums[j] -= 2 * m[j][i]
+    return [(top[i], cls[i], when[i]) for i in range(len(top))]
+
+
+def print_vowels(toks, k):
+    print("token\tsukhotin_class\tcontact_sum")
+    for t, c, w in sukhotin_classes(toks, k):
+        print(f"{t}\t{c}\t{w}")
+
+
 def print_kwic(toks, token, width, sort):
     print("pos\tleft_context\ttoken\tright_context")
     for r in kwic_rows(toks, token, width, sort):
         print(f"{r['pos']}\t{' '.join(r['left'])}\t{token}\t{' '.join(r['right'])}")
 
 
-def print_repeats(toks, n_min):
-    print("length\tngram\tcount\tpositions")
-    length = n_min
-    any_found = False
-    while True:
-        reps = ngram_repeats(toks, length)
-        if not reps:
-            break
-        any_found = True
+def print_repeats(toks, n_min, maximal=False):
+    print("length\tngram\tcount\tpositions\tgaps")
+    allr = ngram_repeats_all(toks, n_min, maximal)
+    for length in sorted(allr):
+        reps = allr[length]
         for g, pos in sorted(reps.items(), key=lambda kv: (-len(kv[1]), kv[0])):
-            print(f"{length}\t{' '.join(g)}\t{len(pos)}\t{','.join(map(str, pos))}")
-        length += 1
-    if not any_found:
+            print(f"{length}\t{' '.join(g)}\t{len(pos)}\t{','.join(map(str, pos))}\t"
+                  f"{','.join(map(str, position_gaps(pos)))}")
+    if not allr:
         print(f"(no recurring {n_min}-gram or longer found)")
     if n_min <= 3:
         print("\nnear-repeats (length 3, differ in exactly one position):")
-        near = near_repeats_length3(toks)
+        near = near_repeats_length3_fast(toks)
         if not near:
             print("(none)")
         for i, ga, j, gb in near:
@@ -322,19 +530,59 @@ def print_split(toks, split_at):
     print(f"high(>={split_at})\t{s['high']['tokens']}\t{s['high']['distinct']}\t{s['high']['ic']:.4f}")
 
 
+def print_split_auto(toks, min_gain, min_side):
+    r = split_auto(toks, min_side=min_side)
+    if r["lo"] is None:
+        print("split auto: fewer than 2 numeric tokens")
+        return None
+    print(f"split auto: {r['n']} numeric tokens, range {r['lo']}..{r['hi']}")
+    print("kind\tN\tgain_nats\tlow_distinct\tlow_tokens\tlow_IC\thigh_distinct\thigh_tokens\thigh_IC")
+    rows = [("single", g, n) for g, n in r["singles"]]
+    if r["band"]:
+        g, A, B = r["band"]
+        rows.append((f"band[{A},{B})", g, B))
+    if r["gap"]:
+        size, below, above = r["gap"]
+        rows.append((f"gap{size}({below}|{above})", float("nan"), above))
+    for kind, g, n in rows:
+        s = split_stats(toks, n)
+        print(f"{kind}\t{n}\t{g:.1f}\t{s['low']['distinct']}\t{s['low']['tokens']}\t{s['low']['ic']:.4f}\t"
+              f"{s['high']['distinct']}\t{s['high']['tokens']}\t{s['high']['ic']:.4f}")
+    best = r["singles"][0] if r["singles"] else None
+    if best is None or best[0] < min_gain:
+        print(f"proposal: no break (best single-split gain {best[0] if best else 0:.1f} < {min_gain})")
+        return None
+    print(f"proposal: N = {best[1]} (best single split, gain {best[0]:.1f} nats)")
+    return best[1]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("file")
     ap.add_argument("--sep", default=r"[;\s]+", help="regex used to split tokens")
     ap.add_argument("--top", type=int, default=25)
     ap.add_argument("--strip-clear", action="store_true")
-    ap.add_argument("--contacts", type=int, metavar="K", help="contact table of the K most frequent tokens")
-    ap.add_argument("--kwic", metavar="TOKEN", help="KWIC listing of every occurrence of TOKEN")
+    ap.add_argument("--contacts", type=int, metavar="K",
+                     help="contact table of the K most frequent tokens, left/right neighbour counts "
+                          "(Tomokiyo practice 5: contact.htm, kwic.htm, codebreaking.htm 'Statistical Analysis')")
+    ap.add_argument("--kwic", metavar="TOKEN", help="KWIC listing of every occurrence of TOKEN (Tomokiyo practice 5: kwic.htm 'Sorting a KWIC Index')")
     ap.add_argument("--width", type=int, default=5, help="KWIC context width, tokens each side (default 5)")
     ap.add_argument("--sort", choices=["left", "right"], default="left", help="KWIC sort key (default left)")
-    ap.add_argument("--repeats", type=int, metavar="N", help="recurring token n-grams of length >= N, with positions")
-    ap.add_argument("--split-at", type=int, dest="split_at", metavar="N",
-                     help="report token/distinct/IC separately for groups < N and >= N")
+    ap.add_argument("--repeats", type=int, metavar="N", help="recurring token n-grams of length >= N, with positions and gaps "
+                          "(Tomokiyo practice 6: polygram.htm 'Polygram Script')")
+    ap.add_argument("--split-at", dest="split_at", metavar="N|auto",
+                     help="report token/distinct/IC separately for groups < N and >= N; 'auto' proposes N "
+                          "(Tomokiyo practice 1: codebreaking.htm 'Cipher in Code', wallisdecipher.htm, ormonde.htm)")
+    ap.add_argument("--split-min-gain", type=float, default=10.0, dest="split_min_gain",
+                     help="--split-at auto: min log-likelihood gain (nats) to propose a break (default 10)")
+    ap.add_argument("--split-min-side", type=int, default=5, dest="split_min_side",
+                     help="--split-at auto: min distinct values on each side (default 5)")
+    ap.add_argument("--maximal", action="store_true",
+                     help="with --repeats N: list only maximal repeats (not extendable left or right with the same "
+                          "positions); use on long texts with long repeated blocks")
+    ap.add_argument("--vowels", action="store_true",
+                     help="with --contacts K: Sukhotin vowel/consonant class of the K top tokens from contacts "
+                          "(Tomokiyo contact.htm; ormonde.htm 'Contact Chart and First Findings')")
     ap.add_argument("--tag-min", type=int, default=3, dest="tag_min",
                      help="min count for a --contacts prefix/suffix-like tag (default 3)")
     ap.add_argument("--tag-threshold", type=float, default=0.4, dest="tag_threshold",
@@ -350,6 +598,9 @@ def main():
     did_new = False
     if a.contacts:
         print_contacts(toks, a.contacts, a.tag_min, a.tag_threshold)
+        if a.vowels:
+            print()
+            print_vowels(toks, a.contacts)
         did_new = True
     if a.kwic is not None:
         if did_new:
@@ -359,12 +610,19 @@ def main():
     if a.repeats:
         if did_new:
             print()
-        print_repeats(toks, a.repeats)
+        print_repeats(toks, a.repeats, a.maximal)
         did_new = True
     if a.split_at is not None:
         if did_new:
             print()
-        print_split(toks, a.split_at)
+        if a.split_at == "auto":
+            print_split_auto(toks, a.split_min_gain, a.split_min_side)
+        else:
+            try:
+                n_split = int(a.split_at)
+            except ValueError:
+                ap.error("--split-at takes an integer or 'auto'")
+            print_split(toks, n_split)
         did_new = True
     if a.onepart_dict:
         if did_new:
