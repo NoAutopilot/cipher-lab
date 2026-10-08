@@ -557,5 +557,11 @@ Code-word tokens: H 16.
 
 Code-word tokens: H 9.
 
-Totals over the 71 entries: H 1175, C 14, I 0, M 0.
+**E74 | Page 179 | 9071 | 11 Sept 1864 8 PM, to Chas Armond (signed Brutus; printed page 177)**
+
+The publicnation of Sand hers despatch was an Enormous blunder Twas done by Tycoon without my knowledge I did not know he had seen it until too late and four saw the Consequences would be very bad It Cannot happen again  {tail: [signed] [Secretary of War] call Coox Edwards}
+
+Code-word tokens: H 2.
+
+Totals over the 72 entries: H 1177, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->

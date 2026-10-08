@@ -17,7 +17,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8898	6	0	Lawrence Harpers Ferry  Washington Feby 3rd 1864	Lawrence Harpers Ferry		79	11	33	9	9	warofrebellion33unit@leaf0(cov21)	21	O9-J	3
 8898	6	1	S. H Beckmith 1  Washn Feby 5th 1864	S. H Beckmith 1		28	7	11	1	1	none	4		1
 8899	7	0	G. D. Sheldon Ft Monroe  Washington D. C. Feby 5th 1864	G. D. Sheldon Ft Monroe		65	11	24	9	9	warofrebellion33unit@leaf0(cov23)	23	O9-K	3
-8899	7	1	Baldwin 10  Washn D. C. Feby 5th 1864	Baldwin 10		46	10	18	5	1	none	4		1
+8899	7	1	Baldwin 10  Washn D. C. Feby 5th 1864	Baldwin 10		46	10	18	5	1	none	4	LS-R7 E75 key-not-in-hand	1
 8900	8	0	S. H. Beckwith 1  Washn Feby 8th 1864 230 P. M	S. H. Beckwith 1		90	24	40	6	1	warofrebellion342unit@leaf0(cov22)	22		3
 8900	8	1	Caldwell HdQrs AP  Washington Feby 11th 1864	Caldwell HdQrs AP		25	6	11	2	2	none	3	N2-AK	2
 8901	9	0	S. H. Beckwith "2"  Washn Feby 15th 1864	S. H. Beckwith "2"		209	76	126	17	1	warofrebellion322unit@leaf0(cov21)	21		3
@@ -370,7 +370,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9070	178	2	Capt Smith St Louis Washn 12M Sept 10th 1864	Capt Smith St Louis		41	11	12	2	1	warofrebellion413unit@leaf0(cov24)	24	N2-K	3
 9071	179	0	Beckwith City Point  Washn 12.30 Sept 10th 1864	Beckwith City Point	after them welch Lamb	68	13	26	5	1	warofrebellion422unit@leaf0(cov23)	23		3
 9071	179	1	Capt Smith St Louis  Washn 1 pm Sept 10th 1864	Capt Smith St Louis		32	11	18	3	1	none	5		1
-9071	179	2	Chas Armond  Washn 8 pm Sept 11th 1864	Chas Armond		47	3	14	0	1	none	4		1
+9071	179	2	Chas Armond  Washn 8 pm Sept 11th 1864	Chas Armond		47	3	14	0	1	none	4	LS-R7 E74	1
 9072	180	0	Carey Lexington  Washn Sept 12th 1864	Carey Lexington		28	9	9	1	1	none	3		1
 9072	180	1	Capt Smith St Louis  Washn Sept 12th 1864	Capt Smith St Louis		47	14	13	3	1	warofrebellion413unit@leaf0(cov18)	18		3
 9072	180	2	Washn Sept 12th 1864			116	18	39	3	2	warofrebellion422unit@leaf0(cov62)	62		3
