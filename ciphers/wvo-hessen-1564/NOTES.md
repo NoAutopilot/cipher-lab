@@ -917,3 +917,60 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [ ] image-check: the 33 conflict/unaligned C tiles eye-read blind once, decoy gate FAIL 7/10 (D2-WVO); next: the reference-strip blind read named in Remaining gaps, ~$1.5
 - [n/a] retry: the eye read is the step above, re-tried with a changed instrument (reference strip), not a plain retry
 Verdict: keep going: 2 internal gaps; cheapest next: the reference-strip eye read of the 33 tiles (~$1.5), which also covers k11 "taush" and C03 "voans sp"
+
+## Reference-strip blind eye read of the 33 C tiles (FAM-WVOH, account 2, LANE FAMILY, 8 Oct 2026, 16:22-16:3x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-08-ytbiz-family-1613-jobs.md` job FAM-WVOH. Files in `famwvoh/`. Solver hat: counts only, no
+novelty classification.
+
+Prior-work checks (prior-work-step.md, by hand, before the first priced step):
+1. Our own work: grep of this NOTES.md, HYPOTHESES.md and the last 1,500 ROOM.md lines for the step: D2-WVO ran attempt 1 (FAIL 7/10),
+   D4-WVO left the reference-strip read named and not run; no done marker, no live claim -> not done.
+2. Leaf and neighbours: f.23 carries its own interlinear gloss (KNOWN; this step is a key-correction check on it, not a target
+   reading); the 14 neighbouring WVO PDFs were looked at by D2-WVO (no cipher rows) -> covered, 0 new requests.
+3. Holder/portal: WVO 1109 Opmerkingen already quoted above ("in cijferschrift geschreven bijlage"); DECODE/solver repos per the
+   GF-A2-3 premise check -> covered, 0 new requests.
+4. Edition: Groen I read (1107 printed, 1109 absent) and Demandt II nr. 292 (R8-WVO1111) above -> covered, 0 new requests.
+5. Not applicable (no decode produced).
+
+Attempt count: attempt 2 of the per-tile eye alignment (attempt 1 D2-WVO); the instrument changed (letter-form reference strip).
+`PREREG-FAM-WVOH.md` pushed (90ae70c0a) before any panel was built. Crop step: `famwvoh/build.py` (tile boxes from `sorter/signs.tsv`
++ `sorter/bands.tsv` cut from `images/01109_p3_400full.jpg`, D2-WVO's panel format): `reference_strip.jpg` (8 labelled panels over AGREE
+tiles: d x2 k22, g x2 k19, h x2 k08, i k13, s k09), 43 blind panels Q01-Q43 in `montage_1-4.jpg` (33 targets + 10 fresh decoys, 2 of
+them k22 d; key in `panel_key.tsv`). One blind Opus vision subagent call (`blind_read.tsv`); `scored.tsv` joins both. Panels and
+montages are not committed (folder already over 30 MB); `python3 famwvoh/build.py` from this folder regenerates them byte-for-byte.
+
+- **Decoy gate: 8/10 -> PASS** (pre-registered >= 8/10). Both k22 d decoys read d (attempt 1's whole failure); misses: Q16 k08 h read g,
+  Q30 k20 n read '?'.
+- **Targets: 12 AGREE, 17 CONFLICT, 4 NONE. Eye-adjusted AGREE 171/257** (159 + 12), beside 159/257.
+- **Key change rule (necessary condition: >= 2 target tiles of a sign, >= 2 rows, same CONFLICT letter):** met by k08 -> i (C01, C05)
+  and k03 -> i (C02, C06, C09). Reconciliation (this worker, one look at Q37, Q41, Q43, Q06, Q25 = `reconcile_k03_k08.jpg`, and all 11
+  k03 tiles = `k03_all_tiles.jpg`):
+  - k03: the six tiles read t are one "dH"-like form; the two tiles the reader saw i over (f23_C02_01_014, f23_C09_01_025) are a different
+    "ze"-like form with a closed lower loop; f23_C06_01_009 is a 23x22 px fragment beside a "dH" sign (bad cut); f23_C09_01_031/033 are
+    halves of one "dH". So the k03 conflict is a **pile that mixes two shapes**, not a wrong value for k03: k03 = t stands.
+  - k08: both i-reads are on wide tiles spanning the II sign plus a trailing hook, with the i over the left edge (possible merged cut);
+    k08 = h stands on 9 AGREE tiles.
+  - **No key value changed** (settled/key.tsv and key.tsv untouched). The five tiles went to the owner's sign sorter as focus rows
+    (`sorter/focus.tsv`, FAM-WVOH lines): the k03 split (two tiles, a possible i homophone) and three cuts.
+- Folded items: k11 "taush" (f23_C07_01_016, Q27) read n (gloss a-n-g), as in D2-WVO; k11's five target reads disagree (v, g, a, n, e),
+  so k11 stays M with no value. C03 "voans sp": the reader sees "e-v-o-a-u-s" over C03 idx 6-10 (k14 tile read v, k27 a, k09 s AGREE);
+  k14's two conflicts disagree (v in C03, x in C02), rule not met, k14 = r stands.
+- Other CONFLICTs (single tile or disagreeing letters): k13 (e, m), k13-d (w), k01 (r), k11 (above), k14 (above); logged in `scored.tsv`
+  only.
+- Rule 4 counts unchanged (no key value changed). Network 0 requests; vision 1 Opus subagent call + 1 reconciliation look.
+
+## Remaining gaps (finish-or-blocker pass, FAM-WVOH, 8 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed, three audits); key per the owner's settled signs (settled/key.tsv, 24 C / 23 M); 171/257 tiles AGREE after the gated eye read (159 by aligner + 12 by eye, decoy gate 8/10, FAM-WVOH); crib test FAIL 0/14 vs positive control 5/14 (D4-WVO); decode_key top-level and settled/ --check exit 0
+- alignment slips (17 C conflicts, 4 none after the eye read) - blocker: not-attempted; the gated eye read (FAM-WVOH) traced the two consistent conflicts to a mixed k03 pile (two shapes) and two possibly merged k08 cuts, sent as five focus rows to sorter/focus.tsv; the rest are single-tile or disagreeing reads; next: the owner's sorter pass on those focus rows, then sorter_apply + re-run of the realign/ alignment, ~$1.5
+- k11 in "taush" (C07 idx 14) - blocker: open-codes; k11 is M, five eye reads give five different letters (FAM-WVOH scored.tsv), no context narrows it
+
+## Escalation (FAM-WVOH, 8 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174; R9-WVOX concordance FAIL 0/7), 1069 key (R9-WVOX PASS 8/18); the 14 neighbouring WVO PDFs fetched and looked at, no cipher rows or blocks (D2-WVO)
+- [x] clear-pages: f.23's own interlinear gloss transcribed, reconciled, aligned, verified, re-aligned and re-verified (R9-WVOALIGN, R10-WVOTX, R10-WVOV, WVO-REALIGN, NZ-WVOV)
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
+- [x] key-rebuild: key rebuilt per the owner's settled signs and re-aligned on them (WVO-APPLY, WVO-REALIGN); k28 verified by eye (NZ-WVOV); crib test (D4-WVO)
+- [x] image-check: the 33 tiles eye-read blind with a reference strip, decoy gate PASS 8/10 (FAM-WVOH, PREREG-FAM-WVOH.md); 12 tiles to AGREE, k03 split and k08 cuts to sorter/focus.tsv
+- [ ] retry: re-alignment after the owner's sorter pass on the five FAM-WVOH focus rows (k03 split, k08 cuts), ~$1.5
+Verdict: keep going: 2 internal gaps; cheapest next: the owner's sorter pass on the five sorter/focus.tsv rows from FAM-WVOH, then re-run the realign/ alignment, ~$1.5
