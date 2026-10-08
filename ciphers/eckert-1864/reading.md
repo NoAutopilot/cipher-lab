@@ -629,5 +629,47 @@ Code-word tokens: H 9.
 
 Code-word tokens: H 13.
 
-Totals over the 83 entries: H 1294, C 14, I 0, M 0.
+**E88 | Page 203 | 9097 | 15 Oct 1864, to 'Gertrude' at Baltimore (operator J. W. Sampson; LS4-R1a, row 9097/0)**
+
+{time: 12.30} Lawrence Send your dies Mounted [Cavalry] to [Cavalry] [Depot] Wash for remounts [Telegraph (-ed, -ing)] the number  {tail: [signed] [Chief of Staff]}
+
+Code-word tokens: H 7.
+
+**E89 | Page 229 | 9123 | 15 Nov 1864, to 'Lamb' (no operator in the header; LS4-R1a, row 9123/3)**
+
+{time: 2.30 PM} [15] for [Maj Gen Geo. H. Thomas] [.] How much [Force] and [Artillery] had Gill him [?] [President of the U.S.]
+
+Code-word tokens: H 8.
+
+**E90 | Page 73 | 8965 | 20 May 1864 1.30 PM, to Biggs at Fort Monroe (operator Geo. D. Sheldon; LS4-R1a, row 8965/1)**
+
+{time: 1.30 PM} [20] for [Colonel] Biggs [Monroe] [.] Has [P. H. Sheriden] [Left] the [James] must we [Forage (-ed, -ing)] him by the other line [?]  {tail: [signed] [Qr Master Genl U.S.] Pleasant}
+
+Code-word tokens: H 12.
+
+**E91 | Page 75 | 8967 | 21 May 1864 10 AM, to H. S. Sanford (operator Jno Horner; LS4-R1a, row 8967/1)**
+
+[Washington] {date: May 21} {time: 10 AM} For H S Sanford Brevont Hearse [New York] [.] Please come hither [,] Your depart ure for [Mobile] [As soon as] practicable is deemed Tartan  {tail: [signed] [Secretary of State] Johnnie has gone for a soldier boy}
+
+Code-word tokens: H 11.
+
+**E92 | Page 104 | 8996 | 7 Jul 1864, to Capt. Thomas (operator Sampson, Bueto; LS4-R1a, row 8996/1)**
+
+{time: 11 AM} for Capt Thomas ---- Let the vessels bringing up ricketts [Troops] return at once to [City Point] & send to that place all [Steam] [Transport (-ed, -ing)]'s in US service now [Available] [In the] port of [Baltimore] [.] Despatch!  {tail: [signed] [Qr Master Genl U.S.] ---- ---- ----}
+
+Code-word tokens: H 11.
+
+**E93 | Page 111 | 9003 | 16 Jul 1864, to Polking officer (operator J. C. Van Duzer, Nashville; LS4-R1a, row 9003/2)**
+
+{time: 4 PM} [16] to Polking officer [Nashville] Send immediately to [Louisville] [Kentucky] [2] [Regiment]'s of dis mounted [Cavalry] or [100] days [Men]'s well armed & supplied with [Ammunition]  {tail: [signed] [General-in-Chief]}
+
+Code-word tokens: H 13.
+
+**E94 | Page 138 | 9030 | 1 Aug 1864, to Kasson (operator Jno Horner; LS4-R1a, row 9030/0)**
+
+[Washington]er {time: 10.30 AM} {date: Aug 1} For [Maj Gen Jno A. Dix] [.] The money and pack cage concerning which I [Telegraph (-ed, -ing)]d you on Friday are [In the] Chemical bank and not the bank of Commerce  {tail: [signed] [C. A. Dana] of old nick}
+
+Code-word tokens: H 9.
+
+Totals over the 90 entries: H 1365, C 14, I 0, M 0.
 <!-- decode.py: derived block ends -->
