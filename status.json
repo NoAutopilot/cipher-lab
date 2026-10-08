@@ -6901,9 +6901,10 @@
       "key": "period",
       "audit_refs": [
         "AUDIT.md '## AUDIT (FV-LS4-R1b)'",
-        "AUDIT.md '## AUDIT 2 (second adversarial, V1-LS4B)'"
+        "AUDIT.md '## AUDIT 2 (second adversarial, V1-LS4B)'",
+        "AUDIT.md '## AUDIT 3 (AUD3-E96)'"
       ],
-      "audit_status": "two audits",
+      "audit_status": "three audits",
       "superseded_by": "",
       "depth": "D2",
       "depth_pct": 85.7,
@@ -6917,9 +6918,9 @@
       "date": "8 Oct 2026",
       "kind": "reading",
       "title": "Eckert 1864: C. A. Dana to Baltimore, 5 Nov 1864 11 PM, Colonel William Hamilton reported as a Rebel agent in Baltimore (E96)",
-      "grade": "N3",
-      "line": "Read at grade H with the period Cipher No. 1 book; part of the message is in clear in the Huntington's public transcription, and no prior decipherment of its code words or printed text was located in the Official Records (by date and correspondent), the Huntington's own full-text search or Internet Archive full text (searched 8 Oct 2026).",
-      "gap": "N3 (weak): frame clear in the public transcription of 9116; press of the day (loc.gov Cloudflare-challenged 8 Oct 2026, V1-LS4B), Dana papers, NARA RG 107, OR II/8 and JSTOR unread; second audit V1-LS4B 8 Oct 2026: OR II/8, I/41 pt 4, I/43 pt 2, II/7 by date and G3 phrase re-search found nothing",
+      "grade": "N2",
+      "line": "Read at grade H with the period Cipher No. 1 book: Assistant Secretary of War Dana's 11 PM telegram of 5 Nov 1864 to Baltimore that a Colonel William Hamilton is reported, on what seems trustworthy evidence, as a Rebel agent there. Colonel Wm. Hamilton of Baltimore is printed as a Rebel agent in Judge Advocate General Holt's summary of Francis Jones's confession, in J. D. Horan, Confederate Agent (1954), p.226; no prior mapping of this telegram to that print was located.",
+      "gap": "N2 (AUD3-E96, 8 Oct 2026): substance in Horan, Confederate Agent (1954) p.226 (Holt's 23 Nov 1864 summary of Francis Jones's confession lists 'Baltimore .. Col. Wm. Hamilton' among the Rebel agents in the North); not counted; SO-ECKERT-E96 withdrawn",
       "phrases": [
         "Huntington mssEC 19 p.222, pointer 9116, E96"
       ],
@@ -6936,7 +6937,8 @@
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS4-R1b)' section 4",
       "depth_sentence": "At 11 PM on 5 Nov 1864 Assistant Secretary of War Dana telegraphs to Baltimore that a Colonel William Hamilton is reported, on what seems trustworthy evidence, as a Rebel agent in Baltimore, and warns that if several men answer to the name care must be taken to get the right one.",
       "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS4-R1b); image checked, all 7 lines (FV-LS4-R1b); code clause: Walnut = Rebel reads in E1 and E96, Baptism = Baltimore in E8 and E96; no external check",
-      "depth_note": "12 H of 14 code words (William, persons M)"
+      "depth_note": "12 H of 14 code words (William, persons M)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",

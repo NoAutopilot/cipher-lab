@@ -6146,3 +6146,65 @@ for Fortress Monroe") and his order to Weitzel -- the same embarkation as Ames's
 (request cap). E178 KNOWN-PART only (consistent with the N1 above); gbooks UNCHECKED-NET. E179 KNOWN-PART; eighteen LEADs on the boilerplate
 phrases "soon as possible Will you" and "of General W F Smith" in OR I/32-49 and an Alexandria Gazette of 18 Mar 1864 (ia-global), none within
 +-3 days: unrelated; gbooks blocked (HTTP 429). No class or depth changes from the addendum. Done 22:2x UTC.
+
+## AUDIT 3 (AUD3-E96)
+
+Account 3, LANE-VERIFY-4, session_01TPmSY23LW5PMGtWf9p6oC8, 8 Oct 2026 23:4x UTC (date -u). Fresh session: had not read or audited E96 and
+had seen V1-LS4B only through this file. Claim under audit: research/SIGNIFICANCE-2026-10-08.md line 32, "Colonel William Hamilton, the man
+named in E96, is already listed as a rebel agent in Horan's *Confederate Agent* (1954), so E96 should drop from N3 to N2." Families already
+run by FV-LS4-R1b and V1-LS4B (CONTENTdm, OR/ORN by date, be-api phrases, Google Books, siblings) were not repeated.
+
+### Search log
+| family | what | result |
+|---|---|---|
+| IA advancedsearch (title "confederate agent", creator Horan) | 1 request (1 proxy reset, 1 retry) | three scans of the 1954 edition: `confederateagent0000unse`, `confederateagent0000hora` (both lending-only), `dli.ernet.157117` (Digital Library of India, open) |
+| IA download, `dli.ernet.157117` `_djvu.txt` + `_page_numbers.json` | 2 requests; grep "hamilton", "dana", "arrest", "jones" | **found**, below. Leaf 267 = printed p.226 (page_numbers.json, confidence 100) |
+| tools/prior_work.py --step-type second-audit --fetch (item-spec, mssEC 19 9116, 1864-11-05, Dana/Sampson) | -- | step LEAD only: ECK-PAGEFIX's target-level page-column claim (not this item); plaintext UNCHECKED-NET on the aaymeloglu clone and uncached OR volumes, both covered by AUDIT 1-2 |
+| Google Books snippet | not run: the passage and page are in hand from the scan; reprints not checked | -- |
+
+Requests: archive.org 4 (one reset). No other host.
+
+### The passage (Horan, *Confederate Agent: A Discovery in History*, New York: Crown, 1954, pp.226-227, ch. "The Maine Coast Expedition")
+On 23 Nov 1864 Stanton asked Judge Advocate General Holt for a summary of Francis Jones's confession (taken in Maine by Assistant Judge
+Advocate Turner); Holt's reply, printed in part:
+
+> "He [Jones] reports their names and stations as follows: Portland, Me. .. Major Dudley Harris--alias 'Spencer,' alias 'Barbour' / Boston ..
+> Col. J. D. Martin / New York .. Col. Geo. [..] / Brooklyn, N. Y. ... J. Taylor, tavern-keeper / Philadelphia .. Maj. Ohue Rice /
+> **Baltimore .. Col. Wm. Hamilton** / [p.227] Chicago .. / ... / St Louis .. Wm. Kendall and Capt Lewis Kennerly / ..."
+
+introduced as "many of their principal Agents within our lines ... stationed at various points in the North for purposes of facilitating
+correspondence and communicating with the South". Holt then says his and Turner's investigation showed the confession "accurate and
+truthful"; Horan (p.228) has Stanton reply "Arrest them all" and places the arrests in Baltimore and the other cities on 24 Nov. Earlier
+(p.120) Horan has Stanton hand the matter to Dana and send Turner to Maine, then "agents ... to trail the men named as Rebel agents in
+northern cities".
+
+### Judgment: substance, not only the name
+E96 says (D2 sentence, AUDIT 1): Colonel William Hamilton is reported, on what seems trustworthy evidence, as a Rebel agent in Baltimore; if
+several men answer to the name, care must be taken to get the right one. Horan prints the same proposition -- the same rank, the same name,
+the same city, the same role -- as the content of the evidence itself (Jones's list, judged truthful by Holt and Turner), in a chain that
+runs through Dana. What the print lacks: the 5 Nov telegram to Sampson, its date and hour, and the "several persons answering to the name"
+caution. That is the E100 kind (AUDIT 2: a relay of content printed elsewhere, no prior mapping of this ciphertext to it), so **N3 -> N2**.
+Corroboration that E96 belongs to Jones's list, from the ledger, not the print: the same-day siblings' clear descriptions found by V1-LS4B
+("Dudley Harris", "tavern-keeper, Brooklyn") are the Portland and Brooklyn entries of the same list. Horan's chronology (Holt's summary
+23 Nov, arrests 24 Nov) is later than the ledger's arrest orders of 5 Nov for "Monday morning next"; the ledger shows the War Department
+acting on the list three weeks before Horan's narrative has it, which is a correction to Horan's dating, not a reason to keep N3.
+The print is also a non-statistical external check on three code words of E96: Pandora = Colonel, Walnut = Rebel, Baptism = Baltimore.
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth (kept) | note |
+|---|---|---|---|---|
+| E96 Dana to Sampson (Baltimore), 5 Nov 1864 11 PM | **N2** (lowered from N3) | substance known: Horan 1954 p.226 (Holt's summary of Jones's confession: "Baltimore .. Col. Wm. Hamilton" among the Rebel agents in the North) | D2 (an external check now exists; a raise is left to the depth-bar check, not made here) | not counted; SO-ECKERT-E96 withdrawn |
+
+- Safe sentence, E96: "Read at grade H with the period Cipher No. 1 book: Assistant Secretary of War Dana's 11 PM telegram of 5 Nov 1864 to
+  Baltimore that a Colonel William Hamilton is reported, on what seems trustworthy evidence, as a Rebel agent there. Colonel Wm. Hamilton of
+  Baltimore is printed as a Rebel agent in Judge Advocate General Holt's summary of Francis Jones's confession, in J. D. Horan, *Confederate
+  Agent* (1954), p.226; no prior mapping of this telegram to that print was located." Unsafe: "first", "unpublished", "previously unknown",
+  "identifies a new Confederate agent", any claim that Hamilton's role was unknown.
+- Depth sentence unchanged (true against the reading).
+- Postmortem: AUDIT 1 and 2 searched by phrase ("Colonel William Hamilton" + Baltimore/rebel agent) and did not reach Horan, whose print
+  reads "Col. Wm. Hamilton" in a tabular list; a phrase search on the abbreviated form, or the sibling names (Dudley Harris was searched by
+  V1-LS4B, with 0 relevant hits on be-api), would have found it. Over-claiming sentences corrected: status.json E96 row (grade, text, gap,
+  line, audit_status) and SECOND-OPINIONS-QUEUE.tsv row SO-ECKERT-E96 (withdrawn).
+- Suggestion, not done (brief names E96 only): E97 (no personal description of the Rebel agent at St. Louis) sits in the same affair;
+  Horan p.227 names the St. Louis agents (Wm. Kendall, Capt. Lewis Kennerly) without description. Whether that is E97's substance is a
+  separate audit; its N3 is not touched here.
