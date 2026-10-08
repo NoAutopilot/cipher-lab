@@ -49,3 +49,11 @@ Statistic, controls, seeds and verdict rule exactly as A1 (key-true synthetic = 
 because each is a one-letter sample of its key; random-code C1 p99 over 1..max(code)). Script: test3/coverage_a2.py --check.
 If a table is NOT EXCLUDED: decode R8447 under it with a shuffled-key control (brief CRAV-49). Note recorded before scoring: R8447 carries
 9 of 41 tokens above 269 (T_8452's highest code) and 4 above 557 (T_8453's), so neither table's key can cover the whole letter as sampled.
+
+## Amendment A3 (CRAV-54, 8 Oct 2026 ~20:00 UTC, registered before it is computed): A1 unchanged, two more tables
+Tables: test3/T_8454.tsv (R8454, BL Add MS 18982 f.195, Charles R. to "Deare Cousin", Jersey 4 Dec [1649]; single-reader M pairs from
+the period interlinear gloss) and test3/T_G.tsv (the union of T_8453 and T_8454, T_8453's value kept on a conflict), because R8454 shares
+its key with R8453 ("L. Gerrards Cypher"): of the R8454 codes also in T_8453, most carry the same value (counted in NOTES.md).
+Statistic, controls, seeds and verdict rule exactly as A1/A2 (key-true synthetic = each table enciphering itself, an upper bound; random-code
+C1 p99 over 1..max(code)). Script: test3/coverage_a3.py --check. If a table is NOT EXCLUDED: decode R8447 under it with a shuffled-key control.
+Note recorded before scoring: R8454's highest code is 583; R8447 carries 4 of 41 tokens above 583 (852, 922, 1037, 1067).
