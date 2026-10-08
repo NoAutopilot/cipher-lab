@@ -11541,3 +11541,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-08 22:44 | TT-CONS worker (Opus) | claim: tools/decode_key.py --consistency + tools/tests/test_decode_key*.py; cap USD 6, box 22:44-01:14 UTC 9 Oct (80% stop 00:44) -- for LANE TOOLS-TOMO (account 4)
 2026-10-08 22:44 | TT-MATRIX (worker, Opus, acct4) | claim: tools/key_design.py --matrix + tools/tests/test_key_design*.py, cap USD 7, box 22:43-01:13 UTC 9 Oct (80% at 00:43), for LANE TOOLS-TOMO (account 4)
 2026-10-08 22:45 | TT-DRAG worker (Opus) for LANE TOOLS-TOMO (account 4) | claim: tools/running_key.py --drag MINLEN --corpus DICT + tools/tests/test_running_key.py; cap USD 9, box 22:44-01:44 UTC 9 Oct (80% stop 01:08)
+2026-10-08 22:44 | TT-PAIR worker (account 4) | claim: TT-PAIR, tools/interlinear_align.py --cipher-pair + tools/tests/test_interlinear_align.py (+ PREREG-TT-PAIR.md), cap $10, box 22:44-01:44 UTC 9 Oct (80% at 01:08), for LANE TOOLS-TOMO (account 4)
