@@ -1,0 +1,423 @@
+id	folder	verdict	material	next_step	control	cost_usd	p_counted	blocker	note
+H001	aca-sanfelipe-duran-1718	noise	-	-	-	0	0	none	Images not committed by design; ciphertext.tsv 309 tokens exists; blocker is key material, not images
+H002	antt-linhares-chave	done-later	-	-	-	0	0	none	Superseded: 19 of 21 maco 86 items eye-checked at NOTES.md:1496; only /02 and /09 remain
+H003	antt-linhares-chave	unlock	maco 86 items /02 (126 imgs) and /09 (212 imgs) unopened; thumbnails could miss inline cipher words	DigitArq thumbnail montage of /02 and /09 (3 sessions, stride 1), eye-check for numeral groups	maco 86 /11 known cipher leaf as positive control for the thumbnail scale	3	0.03	none	19 of 21 siblings had zero cipher; family correspondence, Linhares key in hand if any appears
+H004	antt-linhares-chave	noise	-	-	-	0	0	none	Line crops and full pages of m0001-m0006, already transcribed and read (NOTES.md:13-128)
+H005	antt-msliv0638-brochado-1712	noise	-	-	-	0	0	none	Images are cited leaves; unread body leaves m0250-m0269 already carried as a gap at NOTES.md:2272
+H006	armstrong-madison-1808	noise	-	-	-	0	0	none	Bourdeau page listing is a different letter, in a source-file inventory
+H007	armstrong-madison-1808	noise	-	-	-	0	0	none	Doc 7514 is a Senate report on seamen, a different non-cipher letter
+H008	armstrong-madison-1808	unlock	LOC Monroe reel 3: 7 Jan 1806 Armstrong-Monroe four-surface item absent at expected spot; frames 720-739 other material	Search alternate LOC/NYPL surrogate of the 1806 Armstrong-to-Monroe item; check index locator	-	1.5	0.02	none	Different letter from the target; lead only, frames 740-744 are Feb 1806 letter already glossed
+H009	armstrong-madison-1808	noise	-	-	-	0	0	none	Tool description of cribrounds hidden.json, not unread material
+H010	armstrong-madison-1808	noise	-	-	-	0	0	none	THE=972 despatch screened MISS as not the target's code; settled, other solver's table
+H011	armstrong-madison-1808	done-later	-	-	-	0	0	none	Specimen-line shorthand test run at NOTES.md:4224 (H77, FAIL, untested-by-this-tool)
+H012	armstrong-madison-1808	noise	-	-	-	0	0	none	Summary sentence of what would move the target; steps listed elsewhere
+H013	armstrong-madison-1808	noise	-	-	-	0	0	none	Exhaustive roll 14 rejected with reasons at HYPOTHESES.md:110; sampled signature screen
+H014	armstrong-madison-1808	done-later	-	-	-	0	0	none	ARM-POOL2 run and recorded at HYPOTHESES.md:793
+H015	armstrong-madison-1808	done-later	-	-	-	0	0	none	Frame 0033 later fetched; M34-014-0033.jpg and crops_0033 on disk, read at NOTES.md:645
+H016	armstrong-madison-1808	unlock	Brant worksheet reconstructing Livingston WE027 code, LOC Brant Papers Box 37, undigitised	Reading-room request or visit for Box 37 (REQUEST.md); then test family E against the table	Known-answer: WE027 table decoding an attested Livingston dispatch	0	0.03	waiting-on ASKS 77	Key for a different office code; only helps if Armstrong used the same family
+H017	armstrong-madison-1808	noise	-	-	-	0	0	none	15 Feb frame 0024 is a faint-pencil THE=972 letter; NOTES.md:3699 says no decode, other code
+H018	arsenal-dallion-lanmary-1744	done-later	-	-	-	0	0	none	Finding aids fetched later at NOTES.md:62; no Gallica digitisation, blocked on copy
+H019	arsenal-ms6829-1708	noise	-	-	-	0	0	none	Catalogue wording; item not digitised, no key, no sibling; blocked from outside
+H020	arsenal6314-hanau-1635	noise	-	-	-	0	0	none	Unread comment thread belongs to a different letter by date and author
+H021	august-van-saksen-1561-64	done-later	-	-	-	0	0	none	00126 and 00057 later fetched; ciphertext_126.tsv, ciphertext_57.tsv and 00057 pages on disk
+H022	august-van-saksen-1561-64	done-later	-	-	-	0	0	none	53 p2 read by F1 (NOTES.md:255); 364 tokens graded, re-read from native scan
+H023	august-van-saksen-1561-64	done-later	-	-	-	0	0	none	Briefnr 58 fetched and trial-decoded at NOTES.md:356-371
+H024	august-van-saksen-1561-64	done-later	-	-	-	0	0	none	Last five p1 cipher lines of WVO 175 read in A4-AVS175B, gate PASS 0.710
+H025	august-van-saksen-1561-64	noise	-	-	-	0	0	none	Search-log result line: zero unread siblings
+H026	august-van-saksen-1561-64	done-later	-	-	-	0	0	none	Audit text predates F1; p2 image on disk and read (NOTES.md:255)
+H027	august-van-saksen-1561-64	noise	-	-	-	0	0	none	Ritter would only cite a letter; print-edition search log
+H028	baluze103-letellier-marca-1644	noise	-	-	-	0	0	none	Biermann post is Louvois 1690, different item; thread irrelevant
+H029	baluze103-letellier-marca-1644	done-later	-	-	-	0	0	none	R2742 opened by D2-BAL103 5 Oct 2026: holds images and Tomokiyo key table only
+H030	birago-fr3252-1571-72	done-later	-	-	-	0	0	none	f.100r digits transcribed (565) and tested with f.119 (NOTES.md:463, BIRAGO-NUM)
+H031	birago-fr3252-1571-72	done-later	-	-	-	0	0	none	f.117r transcribed S224 M29 and tested under 1572 key (NOTES.md:1831, 1847)
+H032	birago-fr3252-1571-72	noise	-	-	-	0	0	none	Sorter ranking next steps; carried in the folder's own gap register
+H033	birago-fr3252-1571-72	noise	-	-	-	0	0	none	Native crops of f.100r/f.117r etc. cited in NOTES.md, already transcribed
+H034	bl-farnese-cipher	unlock	Ferrerio 1540 polyphonic-syllabic key (Lasry 2025 Fig 5) vs art.4 of Add MS 8716 (1539-40), same cipher family	Read Lasry paper Fig 5 key; order BL copy of 8716 art.4 cipher leaves	Lasry key decoding its own 1540 ASV letters	5	0.02	needs-physical-access	Not digitised; published key exists but no image of our letters
+H035	bl-portugal-bombay-1661	noise	-	-	-	0	0	none	Prestage review page unfetched is a print-edition search gap; letters undigitised, no image
+H036	bl-sacchetti-nunzio-1623	done-later	-	-	-	0	0	none	Quazza vol.1 read by grep 6 Oct 2026 (D22-FTS2), no Sacchetti cipher print
+H037	blitz-ciphers	noise	-	-	-	0	0	none	scope note for cheap test; invented-script pages covered by H039
+H038	blitz-ciphers	noise	-	-	-	0	0	none	quoted crank decipherment claim in comment thread; search log
+H039	blitz-ciphers	unlock	6 page images, invented glyph script (~480-880 signs), no Latin letters, never transcribed	build glyph inventory in sign sorter then transcribe page 1-2 with two blind passes on iiif_lines crops	synthetic invented-script cipher same N and glyph count	6	0.02	no-key-material	Unsolved invented script; no key, no language known; transcription cost high.
+H040	bne20211-ferdinand-1478	noise	-	-	-	0	0	none	other pool items listed by Aymeloglu; scored material not this target
+H041	bne20211-ferdinand-1478	done-later	-	-	-	0	0	none	images later obtained via DECODE and owner screenshots (NOTES.md:345-495)
+H042	bne20211-ferdinand-1478	noise	-	-	-	0	0	none	published-key support test on item 114; already control-backed, not unread material
+H043	borssele-heinsius-1714	noise	-	-	-	0	0	none	image is Veenendaal print page of clear text, not cipher leaf
+H044	bowes-walsingham-1583	noise	-	-	-	0	0	none	calendar running text for letters already read from Surtees clear copies; waits on L44
+H045	bowes-walsingham-1583	noise	-	-	-	0	0	none	footnote about print discrepancy in clear text; not cipher
+H046	bowes-walsingham-1583	noise	-	-	-	0	0	none	search-log non-test line; Hamilton key lead already queued as L56
+H047	bowes-walsingham-1583	noise	-	-	-	0	0	none	audit log of code numbers not found in index; search-log wording
+H048	catokwacopa-1875	noise	-	-	-	0	0	none	unfetched blog comment threads; search-log line, later passes covered Cipherbrain
+H049	catokwacopa-1875	done-later	-	-	-	0	0	none	1879 Fact-or-Fiction post fetched and ads filed at NOTES.md:238 (A2-CAT2)
+H050	censorship-manual-stego	noise	-	-	-	0	0	none	images are printed manual pages and fashion drawing for stego; not unread cipher text
+H051	ceppo-nevers-fr3251-1570s	done-later	-	-	-	0	0	none	key image nevers_add1.png transcribed, KEY-IMG-3251 at NOTES.md:85
+H052	ceppo-nevers-fr3251-1570s	noise	-	-	-	0	0	none	reading note about one unread sign t/z in an endorsed phrase; not new material
+H053	ceppo-nevers-fr3251-1570s	done-later	-	-	-	0	0	none	fr.3252 f.36 Birago letter now has its own folder birago-fr3252-1571-72
+H054	ceppo-nevers-fr3251-1570s	noise	-	-	-	0	0	none	shuffle-control table row for a decoded phrase; not unread
+H055	ceppo-nevers-fr3251-1570s	noise	-	-	-	0	0	none	print-search note on other letter in fr.3251 cited by a bulletin; search log
+H056	ceppo-nevers-fr3251-1570s	noise	-	-	-	0	0	none	test and canvas images of leaves f11/f27/f39/f82 already read under leaf-named files
+H057	ceppo-nevers-fr4702-f36	noise	-	-	-	0	0	none	line crops of f85 for ciphertext_agreed.tsv and passes; transcribed
+H058	clair1161-avis-flandre-1688	noise	-	-	-	0	0	none	small word-code list under Nulles skipped for shape test; negligible tokens
+H059	clair571-estrades-1645	noise	-	-	-	0	0	none	declined rerun of login-free crawl; access log line
+H060	clair577-brienne-estrades-1647	noise	-	-	-	0	0	none	Tomokiyo unsolved-list note on a different letter p.629; search log
+H061	clairambault1225-paget-1714	done-later	-	-	-	0	0	none	stale verdict line; letters since transcribed and decoded (505 tokens, NOTES.md:1378)
+H062	clairambault1225-paget-1714	noise	-	-	-	0	0	none	page images of the two Paget letters; decoded under reading_tokens.tsv
+H063	clairambault296-paget-1713	noise	-	-	-	0	0	none	native crops of non-target volume; probes only
+H064	clairambault296-paget-1713	noise	-	-	-	0	0	none	Depping contents page unread; target parked on undigitised Clairambault 297
+H065	clairambault528-bouillon-1713	unlock	Clairambault 528 ciphered 1713 letter on Bouillon affair, not digitised, never imaged	order BnF reproduction via REQUEST.md; if imaged, transcribe and test against 1713 Clairambault sibling keys	synthetic nomenclator cipher of same length and symbol count	40	0.02	needs-person	Undigitised, lowest-confidence item; may be short annotation; no key on disk.
+H066	clairambault528-bouillon-1713	noise	-	-	-	0	0	none	bibliography search log: Boislisle volume item list not read
+H067	colbert26-lathuillerie-1644	unlock	Other La Thuillerie to Servien Jan-Feb 1648 leaves with numeral cipher groups, no reading yet, same code family as glossed canvas 20-21	apply f.23/f.24 key and sibling gloss values to a glossed sibling leaf (canvas 51 or 30/32) at word grain, two blind passes	shuffled-key and synthetic code+mark control matching leaf N	6	0.2	none	Key partly in hand; D2 needs a stretch beyond unicity; handful of groups per leaf.
+H068	colbert26-lathuillerie-1644	unlock	Gallica canvases 11 and 29 of Part I never fetched (HTTP 500)	retry fetch canvases 11 and 29 once, check if cipher	-	0.3	0.01	none	Likely plain or minor leaves; leaf map says cipher selective.
+H069	colbert26-lathuillerie-1644	noise	-	-	-	0	0	none	process note about files read after commit; not material
+H070	costabili-modena-1491	noise	-	-	-	0	0	none	verifier table: P2 not re-seen in sign-shape check; eye-checked earlier
+H071	costabili-modena-1491	noise	-	-	-	0	0	none	documentary edition MDE III pages not read; print-check search log
+H072	courten-diary	noise	print edition title search	-	-	0	0	none	Search-scope note; no unread cipher material.
+H073	courten-diary	noise	JHC Things Bought PDF	-	-	0	0	none	Fetched later (NOTES:234); about purchase lists, different manuscript, no cipher.
+H074	craven-rupert-1648	noise	17 images f134r/f135v line crops	-	-	0	0	none	Crops cut by iiif_lines per NOTES:53-54; both cipher pages passed A/B (95.3% agree).
+H075	cylob-c1995	noise	Schmeh List of Encrypted Books item 00056	-	-	0	0	none	Only provenance of a '24 symbols' claim; metadata, not cipher material.
+H076	debosnys-1883	unlock	cipherfoundation.org debosnys-ciphers scan set	fetch scan set; compare to our 6 PNGs for sharper/other-copy scans feeding TRANSCRIPTION.md pipeline	error check vs BENCHMARK-TX on existing sign pages	0.5	0.02	none	Possible better scans; key still absent and alphabet unsettled.
+H077	debosnys-1883	done-later	cryptogram 4a/4b	-	-	0	0	none	Fetched in GOLD-4A (NOTES:217); images on disk.
+H078	debosnys-1883	noise	blind pass B on cryptogram 4	-	-	0	0	none	Description of blind-pass procedure, not unread material.
+H079	decode-1162-modena-ambung-1492	done-later	DECODE [transc] attached document	-	-	0	0	none	Doc 3593 period gloss used in MOD1162/VERIFY-MOD1162 (N0).
+H080	decode-1162-modena-ambung-1492	noise	s_IMG_R1162_I5838_P2.jpg	-	-	0	0	none	Small copy of p.2; native P2 cropped and used (NOTES:556-564).
+H081	decode-1411-hhsta-vienna-1600	noise	R1411 absent from Bourdeau repo	-	-	0	0	none	Other-solver search log; R1411 since fetched and cropped.
+H082	decode-1411-hhsta-vienna-1600	done-later	pp.4-9 draft leaves, date line	-	-	0	0	none	Registered in Remaining gaps NOTES:777-780 (p.6 numerals, pp.7-12).
+H083	decode-1411-hhsta-vienna-1600	done-later	P6-P12 full images	-	-	0	0	none	Gaps NOTES:777-780 carry p.6 and pp.7-12 numerals, ~$6 per page.
+H084	decode-2678-bnf-colbert127-gravel-1665	noise	other Gravel 1665 letters	-	-	0	0	none	Sweep found them in clear; only R2678 carries cipher.
+H085	decode-2678-bnf-colbert127-gravel-1665	noise	25 context images	-	-	0	0	none	Clear letters, dockets, overviews and r9c crops; no cipher leaves.
+H086	decode-2754-bnf-baluze156-1636	unlock	Lasry Farnese-to-Sabran key Baluze156 f.40 images (Tomokiyo GL.htm)	fetch BnF_Baluze156_f40 key/decipher images, apply to 137 tokens of f.157r, crib -ANTO (Levanto)	shuffled-key null, same 137-token length and symbol count	1.5	0.04	none	Untested published sibling key; Sabran 1631 key already failed 0/31.
+H087	decode-2754-bnf-baluze156-1636	noise	f.156v address cover	-	-	0	0	none	Clear address leaf of a different letter.
+H088	decode-2754-bnf-baluze156-1636	unlock	Baluze 155 canvases 270-440 and Sabran register fr.4133 unscanned	thumbnail scans of both with contact-sheet triage for sibling cipher pages (about 3 USD per NOTES)	calibrate triage on f.79 known cipher	3	0.03	none	Sibling search only; needs a key for any reading.
+H089	decode-2754-bnf-baluze156-1636	noise	dc8_f157v, f158r	-	-	0	0	none	Verso/following clear pages kept for show-through checks (NOTES:119,421).
+H090	decode-4450-bnf-fr20506-1525	unlock	15 of 18 Decrypted DECODE siblings in fr.20506 not opened	open remaining sibling records and compare their cipher systems to Ranzo's letter+number code	none for fetch; later key transfer needs matched shuffle	1	0.03	none	French-side envoys, different system; sibling-key lead for Ranzo unproven.
+H091	decode-4450-bnf-fr20506-1525	noise	fr20506 canvases and f136r/v, fr2988 f9	-	-	0	0	none	Cipher leaves f136r/v transcribed (749 tokens); others context canvases (NOTES:164,225).
+H092	della-torre-olanda-1690	unlock	letters at ASTo; Hague-side search Staten-Generaal lias Savoije 1690	owner copy enquiry (REQUEST.md) or Nationaal Archief search for same envoy	-	1.5	0.01	needs-person	Unknown whether enciphered; no edition; blocked target.
+H093	destaing-gerard-1779	unlock	three-witness collation of ~230 code numbers (copies A/B/C)	collate A/B/C number by number against Bourdeau transcription, then Holker key lead	known-answer collation on a stretch with known reading	4	0.03	needs-person	Needs private repo scope; key not in hand.
+H094	eckert-1862	noise	No.5 book pages for scold/shower/thrash	-	-	0	0	none	3 words; period book not digitised, 11/14 words read and none match candidates.
+H095	eckert-1862	noise	dated key.md fit wording	-	-	0	0	none	Audit method note on held-out scoring, no unread material.
+H096	eckert-1862	noise	13 mssEC15/67 ledger page images	-	-	0	0	none	Ledger page images used by ec18 work; ledger transcribed elsewhere.
+H097	eckert-1864	noise	pencil glosses above E22/E24	-	-	0	0	none	Later-hand glosses, not ledger text; transcription scope note.
+H098	eckert-1864	noise	pencil glosses above E47	-	-	0	0	none	Later-hand glosses, not ledger text.
+H099	eckert-1864	noise	66 mssEC19/25/41/47 page images	-	-	0	0	none	Ledger pages already transcribed in entries-mssEC19.tsv; manifest covers them.
+H100	erba-2006	noise	other 2006 Erba cryptogram	-	-	0	0	none	Solved at trial; out-of-scope note.
+H101	erba-2006	noise	7 images cryptogram and bible	-	-	0	0	none	Source cryptogram and zooms, re-transcribed from image (NOTES:35-47).
+H102	es132-vargas-mexia-1578	noise	facing pages of other cipher letters	-	-	0	0	none	Gachard says only one other has a clear copy; clear-pages item logged NOTES:96.
+H103	es132-vargas-mexia-1578	noise	BL Add MS 28421, AGS minutes unread	-	-	0	0	none	Novelty-search gaps in AUDIT, not cipher material.
+H104	es132-vargas-mexia-1578	noise	298 line crops f41-f52	-	-	0	0	none	Crops of transcribed Cipher 3 pages; pool test and rule-7 checks done.
+H105	esp318-sicilia-1503	noise	Lasry/Parisi readings of other letters	-	-	0	0	none	Premise-check negative; other letters and key sources only.
+H106	esp318-sicilia-1503	noise	66 f120r line crops	-	-	0	0	none	Crops of the cipher page cut by iiif_lines; ciphertext.tsv and sorter exist.
+H107	espagnol142-mercy-1648	done-later	Gallica/archivesetmanuscrits fetch of Mercy letter	-	-	0	0	none	Gallica images fetched later; f22r/f22v crops on disk, NOTES.md:172 onward
+H108	espagnol142-mercy-1648	noise	abbe title variant flag	-	-	0	0	none	Wording flag about addressee title, not unread cipher
+H109	espagnol142-mercy-1648	done-later	DECODE R958-R965 Brussels chiffres 1647-98	-	-	0	0	none	Fetched later at NOTES.md:893 (U1); images unreadable at thumbnail size, logged
+H110	espagnol142-mercy-1648	noise	one word code [MARK:box] in reading	-	-	0	0	none	Single mark code inside an already-read letter; no key source
+H111	espagnol142-mercy-1648	noise	Cuvelier-Lefevre p.647 different letter	-	-	0	0	none	Print check of a different letter; negative settled and landed
+H112	espagnol142-mercy-1648	noise	target packet H41-H42 unread after control failed	-	-	0	0	none	Control missed its gate so target correctly withheld; settled negative
+H113	espagnol142-mercy-1648	noise	whether code 72 is a two-letter unit	-	-	0	0.005	no-key-material	Needs period key of the office or another letter using 72; none on disk
+H114	espagnol142-mercy-1648	noise	p.647 landed negative	-	-	0	0	none	Audit log line recording settled print-check result
+H115	espagnol142-mercy-1648	noise	N-class reasoning	-	-	0	0	none	Audit classification wording, no unread material
+H116	espagnol142-mercy-1648	noise	f22r/f22v line crops	-	-	0	0	none	Line crops of the transcribed target leaf, names differ from ciphertext.tsv
+H117	fair-game-2010	done-later	Schmeh 2017-06-22 and 2019 posts	-	-	0	0	none	Both posts listed and opened later in NOTES.md:68-72
+H118	fair-game-2010	done-later	Tumblr 2012 post	-	-	0	0	none	Snippet says opened; web-source line, not cipher material
+H119	fair-game-2010	done-later	crib/word-constrained solve	-	-	0	0	none	Run later as R12D-FAIR word-constrained solve in same file
+H120	florence-dieci-responsive	noise	sender name of c127 subscription	-	-	0	0	none	Grade M name detail inside a transcribed letter, not new material
+H121	florence-dieci-responsive	noise	Bourdeau medici1425 is different letter	-	-	0	0	none	Other-solver item for different letter; date conflict logged
+H122	florence-dieci-responsive	noise	77 images Dieci di Balia Responsive	-	-	0	0	none	Source scans/crops of c111, c127 sub-folders already used by NOTES.md
+H123	fr15564-mercoeur-1586	noise	f151 line crops	-	-	0	0	none	Crops of f151 transcribed in f151_read1.tsv and ciphertext_draft.tsv
+H124	fr15575-syllabic-1592-95	unlock	fr.15576 f.2r figure cipher, 5 Jan 1595 Archduke Ernest, canvas 8 estimated	fetch canvas 8 and neighbours at native size, identify f.2r, check cipher type	-	0.5	0.01	no-key-material	No syllabic-1592 key on disk; figure cipher; Tomokiyo has only related leaves
+H125	fr15972-england-ambassadors-1595-1608	noise	3 canvases viewed not native	-	-	0	0	none	Viewed leaves are in clear; blocked target, residue short inline cipher
+H126	fr15972-england-ambassadors-1595-1608	noise	Bodleian hits opened by summary	-	-	0	0	none	Search log line; print Boderie edition read in full elsewhere
+H127	fr16045-pisany-rome-1585	noise	kp86i registered next	-	-	0	0	none	Next step already carried in Remaining gaps register
+H128	fr16045-pisany-rome-1585	noise	279 line crops f244r f75 f275	-	-	0	0	none	Crops of leaves with readings reading_f244r etc. under different names
+H129	fr16092-maisse-1582	done-later	fr.17834 Maisse register	-	-	0	0	none	Chased in access-worker pass at NOTES.md:279
+H130	fr16092-maisse-1582	noise	2 canvases failed 500	-	-	0	0	none	Server fault canvases; all 25 fetched leaves clear French
+H131	fr16092-maisse-1582	noise	2 canvases left unfetched	-	-	0	0	none	Access log line; fetched leaves in clear
+H132	fr16092-maisse-1582	noise	26 probe images	-	-	0	0	none	Clear-text probe thumbnails, no cipher found
+H133	fr16104-vivonne-spain-1572	noise	volume index pages not read	-	-	0	0	none	Print-check caveat in search log, not cipher material
+H134	fr16104-vivonne-spain-1572	noise	ink 50 different letter	-	-	0	0	none	Audit reference to another letter already tracked
+H135	fr16104-vivonne-spain-1572	noise	256 line crops c105 c106 c187	-	-	0	0	none	Line crops of leaves read under PREREG runs, cut with iiif_lines
+H136	fr16106-vivonne-longlee-1579	noise	1 plain crop c110	-	-	0	0	none	Crop of a plain page, clear text
+H137	fr16142-noailles-constantinople-1571	noise	Grandchamp 1569 deciphered by Freville p.80	-	-	0	0	none	Different earlier ambassador and key; Charrière III read for Noailles
+H138	fr16142-noailles-constantinople-1571	noise	Revue de Gascogne different letter	-	-	0	0	none	Audit search-log line for a different letter
+H139	fr16142-noailles-constantinople-1571	noise	owner sign sorter next	-	-	0	0	none	Next step already in register: sorter focus.tsv then fresh PREREG
+H140	fr16142-noailles-constantinople-1571	noise	242 crops c262	-	-	0	0	none	Crops of c262 leaf with gloss and read- files under other names
+H141	fr16144-savary-lancosme-1588	noise	324 crops c370	-	-	0	0	none	Crops cut for L25 c370-c375; step carried in register as not-attempted with cost
+H142	fr2933-salviati-1525	noise	-	-	-	0	0	none	out-of-scope remark in a capture-only brief; later sections analysed it
+H143	fr2933-salviati-1525	noise	-	-	-	0	0	none	comparison of pass disagreement with another letter; wording artifact
+H144	fr2933-salviati-1525	done-later	-	-	-	0	0	none	pass B f.54v finished later; all leaves f.54r-f.57v transcribed
+H145	fr2933-salviati-1525	done-later	-	-	-	0	0	none	blind pass log; f.54v done later
+H146	fr2933-salviati-1525	done-later	-	-	-	0	0	none	f.55r-f.57v transcribed later (NOTES.md:840, 2325-2577, 2682+)
+H147	fr2933-salviati-1525	noise	-	-	-	0	0	none	Meister tables printed as typeset text; not this letter; no scan needed
+H148	fr2933-salviati-1525	noise	-	-	-	0	0	none	control harness log: reader never opened hidden key; process note
+H149	fr2933-salviati-1525	noise	-	-	-	0	0	none	control harness log: hidden key unopened; process note
+H150	fr2933-salviati-1525	noise	-	-	-	0	0	none	blind-pass independence statement; process log
+H151	fr2933-salviati-1525	noise	-	-	-	0	0	none	blind-pass independence statement; process log
+H152	fr2933-salviati-1525	noise	-	-	-	0	0	none	next volume is different correspondence; scope note
+H153	fr2933-salviati-1525	noise	-	-	-	0	0	none	blind-pass independence statement; process log
+H154	fr2933-salviati-1525	noise	-	-	-	0	0	none	blind-pass independence statement; process log
+H155	fr2933-salviati-1525	noise	-	-	-	0	0	none	blind-pass independence statement; process log
+H156	fr2933-salviati-1525	noise	-	-	-	0	0	none	blind-pass independence statement; process log
+H157	fr2933-salviati-1525	noise	-	-	-	0	0	none	control-design comparison text; no unread material
+H158	fr2933-salviati-1525	noise	-	-	-	0	0	none	vol.41 range March-June 1526 out of window; deliberately unread
+H159	fr2933-salviati-1525	done-later	-	-	-	0	0	none	cm family fair search later (NOTES.md:3172); control clears gate, still failed
+H160	fr2933-salviati-1525	done-later	-	-	-	0	0	none	parent-directed next; carried in SALV-HAPAX/F56V sections
+H161	fr2933-salviati-1525	done-later	-	-	-	0	0	none	seven f56v candidates crop-checked in SALV-F56V (NOTES.md:3284)
+H162	fr2933-salviati-1525	unlock	CSP Spain Oct 1525 16-20 calendar text (BHO node 74508) unread; may paraphrase the 16 Oct 1525 Salviati despatch or its clear context	fetch BHO calendar text via Wayback/archive.org djvu of CSP Spain vol 2 and grep Salviati/Toledo 16 Oct; recipient-side clear context only	-	0.3	0.02	none	Access failed 401/reset, not a negative; weak lead, search summary says Salviati not yet at court
+H163	fr2933-salviati-1525	noise	-	-	-	0	0	none	control context sentence on word bigram; not unread material
+H164	fr2933-salviati-1525	noise	-	-	-	0	0	none	images deleted by shrink; regen_images.sh recovers them; f54v-f55r already transcribed
+H406	wallis-emus203-undeciphered	done-later	-	-	-	0	0	none	four undeciphered letters carried in While waiting/Next step; Thurloe grep done 6 Oct
+H407	wallis-emus203-undeciphered	noise	-	-	-	0	0	none	different letter and direction; comparison text
+H408	wallis-emus203-undeciphered	noise	-	-	-	0	0	none	search-log line: Bourdeau note is a different letter
+H409	willem-van-hessen-1567	done-later	-	-	-	0	0	none	briefnr 174 fetched and eye-checked later (OX-WVH, Escalation siblings [x])
+H410	willem-van-hessen-1567	noise	-	-	-	0	0	none	key shape-conflict note, deliberately not merged; data-conflict log
+H411	willem-van-hessen-1567	noise	-	-	-	0	0	none	sibling alphabet mismatch result; not unread material
+H412	willem-van-hessen-1567	noise	-	-	-	0	0	none	print search log: DBNL page is another letter
+H413	willem-van-hessen-1567	noise	-	-	-	0	0	none	print search log; Groen III full-text searched, target original awaits ASKS 31
+H414	wvo-11008-certain-1572	noise	-	-	-	0	0	none	search-log table row: other letters
+H415	wvo-hessen-1564	unlock	free WVO PDFs of 14 neighbouring letters 4 Oct-window (no cipher mention), not fetched	fetch the 14 PDFs, scan for cipher spans; only siblings of f.23, not the target	-	0.5	0.01	none	No cipher remarks in WVO records; main target f.23 already worked; marginal
+H416	wvo-hessen-1564	done-later	-	-	-	0	0	none	single gloss word undecided by eye; carried in NZ-WVOV remaining gaps
+H417	yogtze-1984	noise	-	-	-	0	0	none	six-letter note, slip lost; too short, never deciphered; context sentence
+H418	zbz-busbecq-1587	done-later	-	-	-	0	0	no-key-material	web and blog check done 2 Oct 2026 (NOTES.md:64); live fetch low value
+H419	zeschau-seebach-1841	noise	-	-	-	0	0	none	clear French text of letter, not cipher; deliberately untranscribed
+H420	zeschau-seebach-1841	noise	-	-	-	0	0	none	full-size DECODE images and crops already transcribed (NOTES.md:91-178, 692 digits)
+H165	fr2980-gramont	noise	-	-	-	0	0	none	Search-log line; states unread siblings for key = 0
+H166	fr2980-gramont	done-later	f.30 22 entirely cipher	-	-	0	0	none	f.30 read: 1906 of 1969 signs keyed (NOTES.md:1508 Remaining gaps)
+H167	fr2980-gramont	noise	-	-	-	0	0	none	Print-search log line about a different manuscript folio, not a cipher leaf
+H168	fr2980-gramont	noise	-	-	-	0	0	none	Fraikin 1906 print lead; print search for f.30, f.30 already read
+H169	fr2980-gramont	noise	-	-	-	0	0	none	Different April 1530 letter in print; settled in audit
+H170	fr2980-gramont	noise	-	-	-	0	0	none	Camusat/Simancas print-search caveat; f.30 already read, no cipher material
+H171	fr2980-gramont	noise	-	-	-	0	0	none	Camusat unread is a novelty-audit caveat on printed sources, not cipher
+H172	fr2980-gramont	noise	-	-	-	0	0	none	Verso gap in print-search of Camusat tract, not cipher
+H173	fr2980-gramont	noise	-	-	-	0	0	none	Sibling April letter in print is a different letter; audit wording
+H174	fr2980-gramont	noise	-	-	-	0	0	none	Same sibling-letter audit wording
+H175	fr2980-gramont	noise	-	-	-	0	0	none	Same sibling-letter audit wording
+H176	fr2980-gramont	noise	-	-	-	0	0	none	Control counts text; wording artifact
+H177	fr2980-gramont	noise	-	-	-	0	0	none	Planted-control wording artifact; print is this letter plaintext
+H178	fr2980-gramont	done-later	f.29 item21 f.30 item22 f.31 item23 leaves	-	-	0	0	none	Leaves f.29r/f.30 transcribed in ciphertext.txt/ciphertext_f30.tsv; item23 is clear context
+H179	fr2988-ranzo-1520s	done-later	Ranzo pooled cipher, no key	key-bearing source (Garbino papers) or crib; none located	-	0	0.01	no-key-material	Carried in While waiting; annealer limit, third-attempt clause
+H180	fr2988-ranzo-1520s	noise	-	-	-	0	0	none	ff.9r-10v are a different letter by shared n-gram test; wording artifact
+H181	fr3022-garbino-1528	noise	-	-	-	0	0	none	Crops are clear postscript, transcribed in clear_f47r_ps.tsv (NOTES.md:178)
+H182	fr3151-noailles-1558	noise	-	-	-	0	0	none	Survey of fr.10773 clear copies; result no copy of no.33; genre argument
+H183	fr3151-noailles-1558	done-later	f.60r cipher blocks and margin gloss zooms	-	-	0	0	none	Images cited in NOTES.md:109 and 162 under crop-command names
+H184	fr3151-seure-1558	done-later	f75L 33 lines of cipher	-	-	0	0	none	f75L transcribed by passA/passB/ciphertext_draft; two-reader pass failed gates (NOTES.md:1231)
+H185	fr3198-labbe-1577	noise	-	-	-	0	0	none	f116r is clear French letter, no cipher groups; key sheet not bound (NOTES.md:150ff)
+H186	fr3416-nevers-fils-1589	done-later	clear text around figure runs	-	-	0	0	none	Clear text f.35r transcribed by FILS-CLEAR (clear_f35r.tsv)
+H187	fr3416-nevers-fils-1589	done-later	upper letter and line below L10	-	-	0	0	illegible	Upper letter read by FILS-UPPER/RECON; carried in Remaining gaps
+H188	fr3416-nevers-fils-1589	done-later	f38g f43 f46 line crops	-	-	0	0	none	Crops used by FILS-CLEAR/NOMEN/F38 passes under other file names; f46 crops superseded (NOTES.md:284)
+H189	fr3613-sega-caetani-1591	unlock	Penzi chapter (Classiques Garnier pp.157-173) bibliography, cites editions of Sega letters	get Penzi footnotes via OpenEdition or Google Books snippet to find edition; ~USD 1	-	1	0.02	none	Could name an edition giving plaintext crib for Sega 1591 cipher; folder blocked on edition
+H190	fr3621-dinteville-1592	noise	-	-	-	0	0	none	f.128r is a sibling already aligned to its 1882 print (DIN-PRINT)
+H191	fr3621-dinteville-1592	done-later	f.130 eleven cipher lines	-	-	0	0	none	f.130 527 of 527 tokens decoded with print-aligned key (NOTES.md:954)
+H192	fr3621-dinteville-1592	done-later	fr.3623 f.23r cipher slip with interlinear Italian gloss, same sign family	owner sort in f.23r sign sorter then two passes against settled labels	known-answer: f.128r alignment 0.831 vs shuffle	30	0.15	waiting-on ASKS 112	Carried in register (Remaining gaps); key in hand so best p of batch
+H193	fr3621-dinteville-1592	noise	-	-	-	0	0	none	Search log: Henri IV to Nevers letter is a different letter
+H194	fr3621-dinteville-1592	noise	-	-	-	0	0	none	Print hit is town council letter, clear, different letter
+H195	fr3621-dinteville-1592	done-later	f128 f130 line crops	-	-	0	0	none	Crops of transcribed f.128/f.130; f.130 fully decoded
+H196	fr3669-bethune-rome-1625	noise	-	-	-	0	0	none	Web search log listing unrelated hits; real gaps carried in Remaining gaps
+H197	fr3789-mariedemedicis-savary-1610	noise	-	-	-	0	0	none	f.18v blank/offset leaf, f.19v show-through; no cipher
+H198	fr3789-mariedemedicis-savary-1610	done-later	f17r f19r cipher crops, eyecheck leaves	-	-	0	0	no-key-material	Transcribed in ciphertext.tsv (two blind passes); no key matches (Tomokiyo)
+H199	fr3983-pisany-nevers-1593	noise	-	-	-	0	0	none	Leaf-confirmation thumbnail of f.169; found-solved with period decipherment
+H200	fr3984-sega-memoirs-1593	noise	-	-	-	0	0	none	c23 is a clear Italian letter, different from cipher folios c24/c42
+H201	fr3985-nevers-revol-1593	noise	-	-	-	0	0	none	Search-log line: different correspondence (letter to Messieurs), not our leaves
+H202	fr3985-nevers-revol-1593	unlock	fr3985 f.88 (second letter, c.176) and f.115 (27 Aug, one line): unread key-no.60 cipher, Revol hand	After owner sort (ASKS 102) cut f.88 line crops, two blind passes vs settled Revol-hand list, decode with key60	shuffled-key control + synthetic no.60 cipher same length	6	0.05	waiting-on ASKS 102	Key in hand; Revol-hand sign identification is the blocker; f.88 not a folder
+H203	fr3985-nevers-revol-1593	done-later	-	-	-	0	0	none	Stale Next line; atlas built and failed on Revol hand, carried at fr3986 NOTES.md:517 Escalation
+H204	fr3985-nevers-revol-1593	done-later	-	-	-	0	0	none	fr3988 f.143 now has own folder fr3988-henri4-nevers-1593
+H205	fr3985-nevers-revol-1593	unlock	f88_canvas176.jpg: cipher leaf f.88 uncropped/unread (f176 already read at 40% agreement)	Same as H202: cut lines, blind passes after ASKS 102 sort	shuffled-key control + synthetic no.60 cipher same length	6	0.05	waiting-on ASKS 102	Duplicate of H202; f176 image already transcribed
+H206	fr3986-nevers-revol-1593	done-later	-	-	-	0	0	none	Stale Next line; carried in fr3986 Escalation section, parked on ASKS 102
+H207	fr3986-nevers-revol-1593	noise	-	-	-	0	0	none	Bourdeau issue on a different letter and key; search log
+H208	fr3986-nevers-revol-1593	done-later	-	-	-	0	0	none	Facing clear letter to King; crib test vs item 68 carried in While waiting (AM-REV68)
+H209	fr3986-nevers-revol-1593	done-later	-	-	-	0	0	none	fr3988 f.143 has own folder fr3988-henri4-nevers-1593
+H210	fr3986-nevers-revol-1593	noise	-	-	-	0	0	none	s1/s2 line crops of f.198 verso already passed (ciphertext_v2); recto crops separate
+H211	fr3987-nevers-revol-1593	noise	-	-	-	0	0	none	Neighbouring canvas 120 is a different letter to the King, not cipher-flagged
+H212	fr3987-nevers-revol-1593	unlock	fr3987 f.66 (c.121): 13 cipher lines, ~300 signs, key no.60, Revol hand, passes agree 51%	After ASKS 102 sort, re-read L07-L21 crops against settled Revol-hand list, two blind passes, decode, judge	shuffled-target decode + synthetic no.60 cipher ~300 signs same agreement noise	8	0.08	waiting-on ASKS 102	Largest unread block; no Escalation section in this folder; only gap is shared sorter
+H213	fr3987-nevers-revol-1593	done-later	-	-	-	0	0	none	Stale Next line; superseded by fr3986 atlas work (NOTES.md:517)
+H214	fr3987-nevers-revol-1593	done-later	-	-	-	0	0	none	fr3988 f.143 has own folder fr3988-henri4-nevers-1593
+H215	fr3987-nevers-revol-1593	noise	-	-	-	0	0	none	Line crops for passes already on disk (passes/, ciphertext.tsv)
+H216	fr3989-nevers-revol-1594	done-later	-	-	-	0	0	none	Stale Next line; superseded by fr3986 atlas and ASKS 102
+H217	fr3989-nevers-revol-1594	unlock	fr3989 f.169 (c.340, 12 Mar 1594): short cipher stretches ~114 atoms, only pass B done	After Revol-hand atlas exists run pass A, reconcile, decode; Tomokiyo 'de la diuision' crib	synthetic key60 cipher 110 atoms	3	0.03	waiting-on ASKS 102	Short stretches inside clear French, hand atlas needed first
+H218	fr3990-nevers-henri4-1594	done-later	-	-	-	0	0	none	Stale Next line; superseded by fr3986 atlas work
+H219	fr3990-nevers-henri4-1594	noise	-	-	-	0	0	none	Crops for completed passes A/B and atoms_draft; blocked, 54.8% agreement logged
+H220	fr3993-villeroy-1595	noise	-	-	-	0	0	none	Search-log line: different letter to Messieurs
+H221	fr3993-villeroy-1595	done-later	-	-	-	0	0	none	Stale Next; later Updates (A1B-VILL, TX2, 57-44) in same NOTES.md; While waiting at :1094
+H222	fr3993-villeroy-1595	noise	-	-	-	0	0	none	Different letter (p.732, to Messieurs) from print comparison
+H223	fr3993-villeroy-1595	unlock	BnF fr.3994 f.134 (no.102, Nevers to son, 17 Sept 1595): cipher leaf not digitised	Order BnF reproduction of one leaf (ASKS 111), then pool signs with fr3993	synthetic same-family cipher same length	60	0.02	needs-person	Backlog ask 111, owner quote; may pool with fr3993 signs
+H224	fr3993-villeroy-1595	noise	-	-	-	0	0	none	Debug overlays, rotations and sibling key sheets used in notes
+H225	fr4687-paleologue-nevers	noise	-	-	-	0	0	none	Canvases f5-f15 are clear Italian or faint pages; cipher crops f8-f10 already passed
+H226	fr4712-nevers-duchesse	done-later	-	-	-	0	0	none	Carried at fr4712 NOTES.md:360 and top Verdict (hand question answered by ASKS 113)
+H227	fr4712-nevers-duchesse	noise	-	-	-	0	0	none	Other Gonzague letters looked at, no key applied; scope statement
+H228	fr4712-nevers-duchesse	unlock	fr4712 f.10r: 6 of 37 tokens glossed by f.13r codes, apply as C per ASKS 113	Apply owner's same-writer judgement to 6 carries, re-run decode_key --check	-	1.5	0.02	none	Only 37 tokens; cannot reach D2 alone, key no.1 non-test
+H229	fr4712-nevers-duchesse	noise	-	-	-	0	0	none	s2 line crops of f.10 and f.13r crop used in DUCH-F13 reads
+H230	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	internal shape-class bookkeeping of a settled analysis, no unread material
+H231	fr4715-f61-mayenne-1592	done-later	second Mayenne letter read by Tomokiyo (~85 letters) as extra known-answer set	-	-	0	0.01	none	hypothetical; siblings already read, carried in Escalation siblings
+H232	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	a passed gate result on a second letter, not unread material
+H233	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	judge result statement on already-read second letter
+H234	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	sign-set ambiguity analysis (VBARA/VBARB); not a document
+H235	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	sign-set ambiguity analysis; wording artifact
+H236	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	settled fail of fr.3984 f.176r head pairing, explicitly not a negative; no new material
+H237	fr4715-f61-mayenne-1592	done-later	f.176v L09-L45	-	-	0	0	none	done at NOTES.md:3638-3683 (H177f stages 1-3)
+H238	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	next-step pointer H201/H202 within campaign; internal analysis already in register
+H239	fr4715-f61-mayenne-1592	done-later	L02 insert LL correction	-	-	0	0	none	done at NOTES.md:6260 (A2-F61M merged)
+H240	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	judge-limitation remark in audit about pair-choice test; f.108 already read
+H241	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	audit safe-sentence on fr.3984 f.176r sibling already read and aligned
+H242	fr4715-f61-mayenne-1592	done-later	L02 insert LL correction (audit copy)	-	-	0	0	none	done at NOTES.md:6260 (A2-F61M merged)
+H243	fr4715-f61-mayenne-1592	noise	-	-	-	0	0	none	f108 line crops (f108g/f108h) are cut inputs of passes already read; cited at NOTES.md:1233,1274
+H244	fr4715-vieuville-pool	unlock	fr.4715 f.67v verso of no.44 Montholon 15 Apr 1590	fetch f.67v canvas, check for continuation/cipher (one request, one look)	-	0.3	0.01	none	verso likely blank; date line closes on recto; cheap one-look check
+H245	fr4715-vieuville-pool	noise	-	-	-	0	0	none	statement of gloss counts: leaf qualifies as key witness; no unread material
+H246	fr4715-vieuville-pool	noise	-	-	-	0	0	none	f60r band crops are inputs of failed/read passes (NOTES.md:249-259); f.60r is a clear/gloss leaf
+H247	fr5160-letellier-1653	done-later	align f.86 cipher with f.87 clear	-	-	0	0	none	done: key1659 recovered, 65 groups grade C; see f.67 reading at NOTES.md:1470
+H248	fr5160-letellier-1653	done-later	canvas 173 rest of f.88	-	-	0	0	none	done at NOTES.md:767 (canvas 173 fetched and reconciled)
+H249	fr5160-letellier-1653	done-later	canvas 173	-	-	0	0	none	done at NOTES.md:767-828
+H250	fr5160-letellier-1653	done-later	canvas 173	-	-	0	0	none	done at NOTES.md:767; superseded
+H251	fr5160-letellier-1653	noise	-	-	-	0	0	none	out-of-scope note, f.88 alignment later done at NOTES.md:828
+H252	fr5160-letellier-1653	unlock	canvases 45, 55, 58, 74 unfetched from the 1653 band walk (connection resets)	refetch canvases 45/55/58/74 once each, look for cipher groups, add to trial_1653 if cipher	-	0.5	0.02	none	74/55/58 partly recovered later (NOTES.md:1429-1465); 45 never recovered
+H253	fr5160-letellier-1653	done-later	canvases 45/55/58/74	-	-	0	0	none	carried at NOTES.md:1429-1465; only canvas 45 remains, see H252
+H254	fr5160-letellier-1653	noise	-	-	-	0	0	none	trial applying key1659 to f.67; already read at NOTES.md:1470
+H255	fr5160-letellier-1653	done-later	canvases 31/33 neighbours of canvas 32	-	-	0	0.01	none	canvas walk 37-159 plus later passes; canvas 32 handled at NOTES.md:1340
+H256	fr5160-letellier-1653	unlock	canvas 45 (only unrecovered one of 45/55/58/74)	refetch canvas 45 native, one retry, classify cipher or clear	-	0.3	0.02	none	duplicate of H252; also 55 folio 31 recovered
+H257	fr5160-letellier-1653	noise	-	-	-	0	0	none	f.67/f.68r clear copy aligned at NOTES.md:1642; plain-text duplicate, not new cipher
+H258	fr5160-letellier-1653	noise	-	-	-	0	0	none	out-of-scope pointer; Colbert 26 III sweep later done at NOTES.md:1900,2102,2137
+H259	fr5160-letellier-1653	done-later	Colbert 26 III canvas 441 and unsampled canvases	-	-	0	0	none	done at NOTES.md:2137-2170 (375 of 375 canvases, no cipher)
+H260	fr5160-letellier-1653	done-later	canvas 173 classification	-	-	0	0	none	canvas 173 fetched; done at NOTES.md:767
+H261	fr5160-letellier-1653	noise	-	-	-	0	0	none	search log line: Gallica volume-level note, not unread material
+H262	fr5160-letellier-1653	noise	-	-	-	0	0	none	kind label wording: recovery vs cryptanalytic; no material
+H263	fr5160-letellier-1653	noise	-	-	-	0	0	none	wording: clarifies canvas 131 was a thumbnail misreading
+H264	fr5160-letellier-1653	unlock	f.68 (clear/cipher pair) second-pass decipher text dechiffref68.txt as second-letter test of key1659 homophones	commit f68 clear transcription with second blind pass, align and test key1659 rows on f.68 cipher	control: shuffled-order alignment at same length/symbol count	3	0.04	none	key in hand; f.67 read already; small known-answer extension
+H265	fr5160-letellier-1653	noise	-	-	-	0	0	none	images are canvas thumbs/blank versos and f9r crops used by passes (NOTES.md:59,184,1050)
+H266	fr5761-election-1519	noise	-	-	-	0	0	none	Search-scope log: Franco-Tuscan search, German embassy out of scope; Reichstagsakten search done later (NOTES.md:597).
+H267	fr5761-election-1519	done-later	-	-	-	0	0	none	Pass B done at NOTES.md:220, pass C at 267; key.tsv built, f104 and f110 graded H.
+H268	fr5761-election-1519	noise	-	-	-	0	0	none	f104_L01-L14 are line crops of the key leaf used by passes B/C (NOTES.md:224); already transcribed.
+H269	fr7129-villeroy-bongars-1604	noise	-	-	-	0	0	none	Search log: Anquez-cited 13 Nov 1604 letter is a different letter, not this item.
+H270	fr7129-villeroy-bongars-1604	noise	-	-	-	0	0	none	Recto key tables read complete; verso skipped for image cap; f.274/f.275 keys captured and tested (NOTES.md:804).
+H271	gla-claudiamedici-1633	done-later	GLA Bestand 48 Chiffren units Nr.68/72/77 (Baden key books)	-	-	0	0.003	needs-physical-access	Undigitised per IMG-GLA read at NOTES.md:206; orderable only via LABW; fit to 1633 letters unknown.
+H272	guazzo-nevers-fr4688-1571-72	unlock	BnF fr.4688 ff.15-18 and ff.65-86 Guazzo letters, cipher presence unknown, not digitised	Add folios to next BnF reproduction quote batch (REQUEST.md) for owner to order; then read leaves	same-length same-design synthetic of 16th-c French nomenclator before any negative	0	0.02	needs-person	Owner order needed; NOTES.md:161 carries next step but not in register; key search found nothing digitised.
+H273	heinsius-dopff-1702	noise	-	-	-	0	0	none	Image is printed edition page scan of letter 357 (rule 2 noted at NOTES.md:15); key not found in print.
+H274	heinsius-hermitage-1704	noise	-	-	-	0	0	none	Images are printed-edition page scans (NOTES.md:15, 112); original cipher is physical-only.
+H275	heinsius-vanhaersolte-1703	done-later	-	-	-	0	0	none	All 16 pages read at NOTES.md:312 (R12A-HEIN): editor summaries only, no cipher.
+H276	hellen-frederick-1752	noise	Fagel vol scans 51-65 (1753, B. to St C., 3-digit groups) and 95-101 (Frederick to Michell, 4-digit)	-	-	0	0.005	no-key-material	Different correspondents, not Hellen; Michell DECODE records exist; no key material nearby.
+H277	huntington-blathwayt-madrid-1728	noise	-	-	-	0	0	none	Search-log row: Montgon letters to Bissy are a different correspondence.
+H278	huntington-blathwayt-madrid-1728	noise	-	-	-	0	0	none	BLA179-194 page images are the transcribed cipher leaves, read by passes A/B and keyed (395 groups, 75.6% C).
+H279	hza-hohenlohe-1679	noise	-	-	-	0	0	none	We 5 Bue 1105 (1621) and La 120 Bue 305 (1763-65) are out of period; table at NOTES.md:160-190.
+H280	intercepted-royalist-1646	unlock	BL Add MS 72438 f.104r intercepted royalist letter almost wholly in cipher; DECODE 8725 says Decrypted	Re-probe DECODE 8725 attachments (one browser login) and BL viewer for f.104 image; if image, check Digby key 129 fit	control: Digby key 129 applied to f.9/f.10 stretch of same length	1	0.03	waiting-on BL viewer / DECODE gate	Status conflict unresolved since 20 Sept; BL images offline since 2023; DECODE image gate varies per record.
+H281	jan-van-nassau-1572-75	noise	-	-	-	0	0	none	Scope note; key1572 tested on 5200/5549 in later sections (J-series).
+H282	jan-van-nassau-1572-75	done-later	-	-	-	0	0	none	5207/5213/5218 captured at NOTES.md:120 (C1) and numeral systems tested at :656-679.
+H283	jan-van-nassau-1572-75	done-later	-	-	-	0	0	none	Seven PDFs fetched to images/ at C1 (NOTES.md:120); remaining systems mapped at :656.
+H284	jan-van-nassau-1572-75	done-later	-	-	-	0	0	none	Groen Suppl no.45 (5549) read in J5I/csWV2 (NOTES.md:375,471); Nepveu 1842 text superseded by Groen print.
+H285	jan-van-nassau-1572-75	noise	5200 p2 right block and p3	-	-	0	0.005	none	5200 is found-solved N1 (Groen prints clear); reading cannot reach N3.
+H286	jan-van-nassau-1572-75	done-later	-	-	-	0	0	none	5797 now has its own folder ciphers/lodewijk-van-nassau-1573-74.
+H287	jan-van-nassau-1572-75	noise	-	-	-	0	0	none	5805 sibling already imaged (05805 file); duplicate of non-cipher-flagged letter, precedent note.
+H288	jan-van-nassau-1572-75	noise	-	-	-	0	0	none	Audit search log: Errata/Additions page not read; no decipherment claim found.
+H289	jan-van-nassau-1572-75	noise	-	-	-	0	0	none	Audit lesson text, not a gap.
+H290	jan-van-nassau-1572-75	noise	-	-	-	0	0	none	05033 etc. are captured pages of solved/Groen-printed siblings and targets; inventoried at C1.
+H291	kaliningrad-2015	noise	-	-	-	0	0	none	Reader frequency-count graphic, not cryptogram page.
+H292	kaliningrad-2015	done-later	-	-	-	0	0	none	Polish corpus pl19 built and tested at GOLD-KAL3 (NOTES.md:232).
+H293	konstanz-talleyrand-sieyes-1798	done-later	-	-	-	0	0	none	Live Cipherbrain/Cipher Mysteries checked at CS-A2-A web check (NOTES.md:58).
+H294	la-garde-1577	noise	-	-	-	0	0	none	Search log: WVO correspondent index confirmed only 6179 carries cipher.
+H295	la-garde-1577	done-later	-	-	-	0	0	none	5228 and 5561 fetched and read at ZX2-LAG2 (NOTES.md:608-646); wrong design.
+H296	la-garde-1577	noise	-	-	-	0	0	none	Search log re-confirmation of 11 correspondent hits.
+H297	la-garde-1577	noise	-	-	-	0	0	none	Sibling table statement, settled.
+H298	la-garde-1577	noise	-	-	-	0	0	none	Search log: Groen VI letter DLXXVII is Orange to Jan, not La Garde.
+H299	la-garde-1577	noise	-	-	-	0	0	none	Page PNGs of the three cipher letters plus margin crops; read in passes WC-LAGARDE etc.
+H300	lambeth-bacon-649	unlock	Tosh 2014 QMRO thesis on Anthony Bacon letters, unread (bot-challenged); may cite a decipherment of MS 649	Fetch QMRO handle 9075 via browser tool or CORE/Wayback; grep for ff.490-495 and cipher	-	0.5	0.03	none	Cheap open-access lead; no agent step recorded as left but this one was never run.
+H301	lambeth-bacon-649	done-later	-	-	-	0	0	none	Baconiana 1897 check ran at NOTES.md:166; remaining step needs copy order (REQUEST.md).
+H302	lodewijk-van-nassau-1573-74	noise	5811 p1 L01-L04 salutation	-	-	0	0	none	clear plaintext salutation, not cipher; no key value at stake
+H303	lodewijk-van-nassau-1573-74	noise	5811 p1 salutation gaps	-	-	0	0	none	gap rows are the clear salutation, logged in settlelog05811.tsv
+H304	lodewijk-van-nassau-1573-74	done-later	5801 PDF (Huygens WVO 05801.pdf)	-	-	0	0	none	done: AX2-5801 section, NOTES.md:2513 region; 5801 aligned and used
+H305	lodewijk-van-nassau-1573-74	noise	5811 GAP 59 rows, clear salutation	-	-	0	0	none	same clear salutation; remaining cipher gaps are in Remaining gaps register
+H306	lodewijk-van-nassau-1573-74	noise	Groen 2e serie MCDXLIV hits	-	-	0	0	none	different letter (York to Orange 1681); search-log line
+H307	lope-hurtado-1522	noise	Google Books preview of Kolosova/Hurtado	-	-	0	0	none	host-scope access log line; Kolosova tables carried as L17
+H308	lope-hurtado-1522	noise	Google Books not authorised host	-	-	0	0	none	access log line, no cipher material
+H309	lope-hurtado-1522	noise	aplicaciones.ciencia.gob.es, books.google.co.jp reachability	-	-	0	0	none	reachability log line
+H310	lope-hurtado-1522	noise	brief instruction quote (found-solved rule)	-	-	0	0	none	quoted brief wording, not material
+H311	lope-hurtado-1522	done-later	Kolosova thesis at RODERIC (roderic.uv.es handle 10550/66216)	-	-	0	0	waiting-on LOCAL-QUEUE L17	carried in register: Ko.7/Ko.10 tables, NOTES.md:540 and 463-484 roderic requests
+H311b	lope-hurtado-1522	done-later	same thesis, grep for 9634/9646/9649	-	-	0	0	waiting-on LOCAL-QUEUE L17	carried in register (Remaining gaps, Kolosova tables); roderic bitstream attempted
+H312	lope-hurtado-1522	noise	Charles V 1547 letter press	-	-	0	0	none	different letter, search log
+H313	lope-hurtado-1522	done-later	BNE Primo records MSS/18697/29, 20212/27	-	-	0	0	waiting-on LOCAL-QUEUE L58	done: R8-LOPE2 used Alma SRU instead; capture queued as L58
+H314	lope-hurtado-1522	done-later	DECODE R9634 3 images (ff.14-16)	-	-	0	0	illegible	read by Bourdeau 73%; residual illegible at 1700 px, carried in register
+H315	matignon-mayenne-1586	unlock	fr.15572 f.280v (canvas 291) Cipher-3 leaf, unread; f.279v/280r weak	locate canvas with gallica_folio.py, crop lines, two blind passes, tools/key crib via Tomokiyo opening	synthetic Cipher-3-design text same N and symbol count	3	0.03	no-key-material	Cipher-3 table henryiii_Matignon3.png not on disk; short leaf
+H316	matignon-mayenne-1586	unlock	fr.15571 f.179 Cipher-3 whole leaf, native image on disk, sign count unmeasured	build Cipher-3 table from period decipherments f.189/190, then two blind passes on f179 crops	matched Cipher-3 design control at leaf N	4	0.05	none	native overlay-free image on disk; not-attempted per Remaining gaps
+H317	maurice-rupert-1645	noise	Nicholas to Rupert 11 July letter	-	-	0	0	none	different letter, prose-paraphrased
+H318	maurice-rupert-1645	noise	rows 401-600 of key reconstruction	-	-	0	0	none	letter codes stop at 398; nothing to transcribe
+H319	mccormick-1999	unlock	Cipher Mysteries 2013 post comments 79-163 unread	fetch Wayback copy of post comment pages, grep for claims/reading	-	0.5	0.01	none	2013-2015 comments only; no cipher text, may hold claimed solve
+H320	mccormick-1999	noise	dcode/esascosas/fbi pages no other document	-	-	0	0	none	search log line
+H321	mlh-1976	noise	comment threads no decipherment	-	-	0	0	none	search result log line
+H322	mlh-1976	noise	8 sign tile crops from sorter	-	-	0	0	none	sign tiles of the single strip already transcribed; sorter ASKS 119
+H323	monck-1660	unlock	DECODE record for BL Add MS 32093 f.423 never searched logged-in	browser login once, search Monck/32093 in DECODE	-	0.5	0.02	needs-physical-access	DECODE login works since 24 Sept; BL images offline; no ciphertext yet
+H324	monck-1660	unlock	Bodleian Clarendon State Papers collection 7567 page unfetched	fetch collection page, look for Hyde key sheets	Hyde-Barwick key on 3 shuffled controls once transcribed	0.5	0.01	needs-physical-access	key lead exists (Barwick); letter image unavailable
+H325	moray-wood-1568	done-later	43 DECODE sibling-record images R331/R344/R4930/R8345	-	-	0	0	waiting-on ASKS 103	siblings compared GAPS9/12; thumbnails only; carried in register
+H326	moustier-altars	done-later	Pelling 2013 ciphermysteries post	-	-	0	0	none	done: NOTES.md:2 read in full 2 Apr 2013 post
+H327	moustier-altars	unlock	closer photo of altar 2	site visit or local contact photo	-	0	0.01	needs-physical-access	no online image better; no decipherment to test
+H328	na-janssens-java-1811	done-later	leaf 208 Vanteau tail	-	-	0	0	none	done at NOTES.md:597 section (3), same code confirmed
+H329	na-janssens-java-1811	noise	79 _med leaves 185-221 duplicates	-	-	0	0	none	medium copies of leaves read at _hi; 185/221 plain, 215-217 checked
+H330	na-oldenbarnevelt-2442-1605	noise	16 uuid scan images of invnr 2442	-	-	0	0	none	scans eye-checked, cipher crops read (crops_*); scans 9-11 fetched NOTES.md:654
+H331	na-schonenberg-1678-1716	noise	L01 pos7 notation difference	-	-	0	0	none	one-glyph notation note, passes agree otherwise
+H332	na-suriname-map-1781	done-later	2039/2046/2077 not transcribed against key	-	-	0	0	none	done at NOTES.md:1539,1636 for 2046/2039; 2077 still in Remaining gaps
+H333	na-suriname-map-1781	done-later	inv.86 key sheet native crop	-	-	0	0	none	done at NOTES.md:1198-1214 key_period.tsv 45 signs
+H334	na-suriname-map-1781	noise	struck fragment '; l s h' between L08/L09	-	-	0	0	none	single struck fragment, pass B note
+H335	nevers-birago-fr3251-1572	done-later	no.90 f.184v foot, f.185r, f.185v cipher	-	-	0	0	none	done at NOTES.md:895 (all no.90 cipher read, 966 signs, NEVBIR-185B)
+H336	nevers-birago-fr3251-1572	unlock	no73, no85, fr3252-no77 transcriptions re-test with 0.8/0.2 atlas mix	run the three disk-only re-tests with atlas/topk files	shuffled-text decode of same length and sign count, same mix	1	0.04	none	Transcription-error tuning on letters under a key already in hand; small expected gain.
+H337	nevers-birago-fr3251-1572	unlock	sorter next-list: f.144r L06.1 recut, L05.7 aside etc. ranked by score gain	owner sorts the sortnext.tsv tiles then re-decode f.144r	shuffled f.144r same N/K	0.5	0.03	needs-person	Depends on owner sign-sorter pass; cryptanalytic result only so far.
+H338	nevers-birago-fr3251-1572	noise	-	-	-	0	0	none	AUDIT search-log line: snippets of unrelated letters found while phrase-searching.
+H339	nevers-birago-fr3251-1572	noise	-	-	-	0	0	none	AUDIT search-log line: Tomokiyo Nevers 1592 is another letter and key; nothing unread.
+H339b	nevers-birago-fr3251-1572	noise	-	-	-	0	0	none	Input row had no id (AUDIT.md:917); search-log line on a different Birago letter.
+H340	nevers-birago-fr3251-1572	noise	-	-	-	0	0	none	Leaf images are the transcribed letters' canvases under canvas-based names; folder reads them via harvest crops.
+H341	oldenbarnevelt-brederode-1605	done-later	Den Tex biography on dbnl	-	-	0	0	none	done at NOTES.md:243 (retried, read in full, negative)
+H342	oldenbarnevelt-brederode-1605	unlock	NA 3.01.14 inv.2016-2025 Van Aerssen 1598-1609 partly deciphered originals plus 10 Aug 1598 sleutel (scans 31/32 on disk)	read the 10 Aug 1598 key slip and decipherment pairs on scans 31/32 with two blind passes; build syllabary table	synthetic marked-number syllabary cipher of equal N and K, recover by same pipeline	4	0.08	none	Different correspondence; period-decipherment pool, key slip on disk; not tested whether it fits no. 92.
+H343	oldenbarnevelt-brederode-1605	noise	-	-	-	0	0	none	Images are walked inv.6016 leaves and inv.1490/2016 pages already read or checked (NOTES R9-OBRED4).
+H344	ormond-arran-1678	noise	-	-	-	0	0	none	Image is the HMC page used for the p93 crop at NOTES.md:471-476; a clear print page.
+H345	pollaky-1865-1875	noise	-	-	-	0	0	none	Pre-registered control design text, not unread material.
+H346	pollaky-1865-1875	done-later	gap 3 catokwacopa-1875 spec tests 2-3	-	-	0	0	none	has own folder ciphers/catokwacopa-1875; also carried in Remaining gaps NOTES.md:696
+H347	pollaky-1865-1875	done-later	Clay 1881 pp.256-257 page images	-	-	0	0	none	done at NOTES.md:492 (step 1, print of ad 1); print pages, not cipher
+H348	pro3055-clinton-1779	done-later	rest of 25 Sept 1782 p.123 cipher (B.148)	-	-	0	0	none	carried in register: Remaining gaps NOTES.md:1524 (text known at H from p.102; key check only)
+H349	pro3055-clinton-1779	noise	-	-	-	0	0	none	Attribution difference Clinton vs Robinson; letter printed in VHS II; verifier matter.
+H350	pro3055-clinton-1779	noise	-	-	-	0	0	none	Unread DAR vol.16 calendar page is a print check on an item already read at H, N0.
+H351	pro3055-clinton-1779	noise	-	-	-	0	0	none	Image-adjudication wording on a recorded data conflict (DIGBY/Darby); settled by witness.
+H352	ra-celsing-dohsson-1779	noise	-	-	-	0	0	none	Search-log line; live blogs covered by combined domain-filter search at NOTES.md:107-110.
+H353	ra-crusenstolpe-1809	done-later	Crusenstolpe Portefeuille on Runeberg	-	-	0	0	none	done at NOTES.md:5 (Runeberg full-text OCR search 2 Oct 2026)
+H354	ra-morner-welin	noise	-	-	-	0	0	none	Search-log line; live blogs not fetched, local snapshot grepped; obscure item.
+H355	rah-juan-manuel-1521	unlock	DECODE R9515 (24 Apr, 2 pages), no contemporary decipherment, not fetched	fetch R9515 full-size images; transcribe and decode with Tomokiyo nomenclator, pool with siblings	shuffled/synthetic nomenclator text same N and K	2	0.02	waiting-on ASKS 138	Two pages only; transcription standard unmet pending owner sort; poolable with 27 other letters.
+H356	rah-juan-manuel-1521	noise	-	-	-	0	0	none	Cipher leaf images used via crops_f*_manifest.json (f.34, f.40, f.147, f.194, f.197); names differ.
+H357	rah-morillo-1817	noise	-	-	-	0	0	none	Single-sign gloss reading (51 = r), already graded M and logged in exceptions.
+H358	rah-morillo-1817	noise	-	-	-	0	0	none	Numeric-named images cited at NOTES.md:591-592; item 3 read at C 90/97.
+H359	rah-salazar-soria-sanchez-1524-28	noise	-	-	-	0	0	needs-person	Blocked: no image online, REQUEST.md route; no agent step left (NOTES.md:474).
+H360	rayburn-2004	noise	-	-	-	0	0	none	Commenter's processed enhanced copy; not a source, original 850px image already on disk.
+H361	reddit-oldbook-1600s	noise	-	-	-	0	0	none	Thread consensus: Shelton shorthand in printed Magna Charta, not a cipher.
+H362	riksarkivet-r4282-1628	done-later	4305 key pages / 4275 DECODE records	-	-	0	0	none	done at NOTES.md:557-561 (full-size fetch of 4275 and 4305); folder parked no-key-material
+H363	riksarkivet-r4282-1628	noise	-	-	-	0	0	none	Letter 559 mentions cyphrer but prints no cipher; nothing to transcribe.
+H364	roell-vandedem-1809	done-later	NA 2.01.08 inv.92 minutes (and inv.100)	-	-	0	0	none	done at NOTES.md:351 and R8-ROELL5 (inv.92 searched); inv.100 unfetched, low value
+H365	roell-vandedem-1809	done-later	inv.990 early Feb 1809 test of R1469	-	-	0	0	none	done at NOTES.md:686-725 (R10-ROELL10, scans 1-15, no 9 Feb letter)
+H366	roell-vandedem-1809	noise	-	-	-	0	0	none	inv.164 key-table scans read in NOTES.md:167-281 with crops and prereg; names differ.
+H367	rubin-1953	done-later	2013 photo	-	-	0	0	none	done at NOTES.md:196 (2013 photo fetched, rubin-case-2013.png)
+H368	rubin-1953	noise	-	-	-	0	0	none	Transcription reconciled against FBI file witnesses; remaining doubt needs the physical specimen.
+H369	rubin-1953	noise	-	-	-	0	0	needs-person	Unread Bauer chapter is a print/novelty check, not cipher; owner reader-view row.
+H370	rubin-1953	noise	-	-	-	0	0	none	Images are FBI file pages and the 2013 photo used as witnesses, not extra cipher.
+H371	rumpf-vandebie-heinsius-1716-19	done-later	scans 0003 and 0012 of NA 1.10.29 inv.1233	-	-	0	0	none	Raw scans cropped and read at NOTES.md:252,300; GAPS120 found nomenclator-only
+H372	sachsstaatsarchiv-manteuffel-1712	noise	judge on names/initials list	-	-	0	0	none	Judge limitation on non-prose input; already carried in Remaining gaps, not unread material
+H373	salvago-caraffa-1691	unlock	ASGe Materie politiche items 294 (Cifra) and 299, no edition or image	ASGe copy enquiry per REQUEST.md, or SLSP article-level search	-	1.5	0.02	needs-person	Owner-side enquiry; finding aid read, no digitisation exists
+H374	sanguszkow-mniszech-dunin-1714	unlock	Kornik BK 417 Dunin letters to mother 1713-19, numerical cipher, microfilm Mf 2442, no digital copy	enquiry to Biblioteka Kornicka for microfilm scans, then compare numerals against R7524 key family	-	1	0.02	needs-physical-access	Different correspondence; only possibly the same key family
+H375	sanguszkow-mniszech-dunin-1714	noise	P1 and P3 are the cipher leaves themselves, crops p1_L/p3l_L named in NOTES.md:102,247; diff image is a comparison	-	-	0	0	none	Leaves already cropped and tabled; image-orphan check artifact
+H376	scorpion-1991	unlock	eight oranchak.com scorpion1-8.jpg images, one may be uncrossed scan of S5	fetch the 8 images once and look for an uncrossed S5 row	-	0.3	0.01	none	S5 is 180 signs, below unicity distance anyway
+H377	sforza-pusterla-1447-f13	noise	f13_L*_s1/s2 two-line crops of the already transcribed leaf	-	-	0	0	none	Crops behind passes A/B/C, named in NOTES.md:70; not new material
+H378	siena-concistoro-2308	done-later	DECODE full-size images	-	-	0	0	none	All 24 full-size images fetched later at NOTES.md:327
+H379	siena-concistoro-2308	noise	DECODE thumbnails and ImagesList pages	-	-	0	0	none	Access log line; full-size images fetched later
+H380	siena-concistoro-2308	unlock	image of piece no. 11 for the reader-bias control	one DECODE browser login, fetch R-record image for no. 11, blind labels	blind-label reader-bias control on no. 11	0.5	0.01	none	Control for a sign-stock test only; no reading at stake
+H381	sp105-paget-1693	unlock	SOAS PP MS 4/02 sub-series titles, possible Vienna/Imperial court series	walk /records/PP_MS_4/02 sub-series titles on SOAS catalogue	-	0.5	0.02	none	Named step in body; folders seen are Levant correspondence, weak premise
+H382	sp36-ball-1745	noise	search-log list of non-matching hits	-	-	0	0	none	Search result listing other letters; no unread material
+H383	sp36-ball-1745	noise	Prince Charles 1744 appendix, different letter	-	-	0	0	none	Search hit on a different letter
+H384	sp36-stquentin-pretender-1743	done-later	Stuart Papers Windsor 1743, uncalendared	-	-	0	0	none	Carried in While waiting, NOTES.md:76,89,131; Windsor finding aid step
+H385	sp54-maclean-1745	noise	Murray of Broughton papers, different correspondence	-	-	0	0	none	Editor explicitly says not SP 54/25
+H386	sp77-nicholas-1659	noise	Boswell 1643 letter solved by Pitt	-	-	0	0	none	Different letter and year, solved elsewhere
+H387	sp78-cesy-1628	noise	Halphen 1904 Louis XIII letters 1631-39	-	-	0	0	none	Excluded by date range; introduction check carried in While waiting
+H388	sp78-france-1583	noise	unrelated decipherment pages in search log	-	-	0	0	none	Different letters, search log line
+H389	sp78-yorke-1749	done-later	Hardwicke Papers	-	-	0	0	none	Printed Hardwicke side searched by A2P4-YOR3 (NOTES.md:98,124); BL Add MS 35355 undigitised
+H390	sp81-roe-1638	noise	BL Add MS 4168-4172 catalogue mention	-	-	0	0	none	BL offline since 2023; carried in Remaining gaps NOTES.md:174
+H391	sp81-roe-1638	noise	Akkerman edition snippet, different addressee	-	-	0	0	none	Different addressee; carried in Remaining gaps
+H392	sp81-stanning-1631	noise	Wallenstein letter blog post, different letter	-	-	0	0	none	Different letter, not English
+H393	sp81-wroth-1596	noise	live Cryptiana/Cipherbrain not fetched	-	-	0	0	none	Search log budget line; local snapshot had no Wroth match
+H394	sp87-newcastle-1743	noise	SP 87/13/95 Hyndford to Stair, different pair	-	-	0	0	none	Different correspondence pair
+H395	ss-radio-lippert-1944	noise	SS-Code.jpg original photograph	-	-	0	0	none	Source photo fetched and cited at NOTES.md:36; ciphertext transcribed
+H396	sufi-fiddle	noise	Sufi-Fiddle-cover.png book cover	-	-	0	0	none	Cover image, no cipher text
+H397	taurello-roma-1527	done-later	Sanuto Diarii, Pastor, Gayangos, Boletin RAH	Sanuto vol.46 identifier and Taurello passage search	-	0.5	0.02	none	Carried: named next at NOTES.md:108,142; single dispatch, key unknown
+H398	taurello-roma-1527	done-later	Pastor, Venturi, Balan appendices	-	-	0	0	none	Same gap carried at NOTES.md:107,135
+H399	thurloe-printed	noise	wording: pool keys not yet read a letter outside print	-	-	0	0	none	Status sentence, not unread material
+H400	thurloe-printed	noise	ciphertext.txt untouched	-	-	0	0	none	Brief-scope wording
+H401	thurloe-printed	noise	BHO page not fetched	-	-	0	0	none	Search-log line; letter already N0 printed
+H402	thurloe-printed	noise	BL Add MS 4200 f.76 possible MS copy of printed journal-letter	-	-	0	0	none	Letter N0 printed; a manuscript copy adds no new reading
+H403	thurloe-printed	noise	p275 and p278 printed page images with crops	-	-	0	0	none	Print pages cropped and checked, NOTES.md:2499
+H404	untersberg-code	done-later	Salzburg Museum Hs. 2398 manuscript images	-	-	0	0	none	Images fetched later, NOTES.md:22,541,679 openings read
+H405	untersberg-code	noise	one mis-placed symA zoom box unread	-	-	0	0	none	Minor crop slip in a symA concordance; later passes reread

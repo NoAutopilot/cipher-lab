@@ -2181,3 +2181,18 @@ Unread fetchable siblings: key_1659 0, key_brienne_1647 0, key_brienne_1651 0. S
 (D'Estrades papers: no Gallica link on any), Tomokiyo louisxiv0.htm (Clair. 577/579 cipher letters already reconstructed or listed),
 DECODE lists on disk (R9430 = Clair. 577 key only). Printed clear text for the D'Estrades side: Saint-Leger 1924 (Gallica
 bpt6k6549213m). No leaf tested. Rows: `keyhunt/2026-10-07-KH2A.tsv`.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- 1653 band canvases 45, 55, 58, 74 left unfetched by connection resets (55/58/74 partly recovered at NOTES.md:1429-1465; 45 never) - blocker: not-attempted; noted in the body at NOTES.md:1187, never carried as a step (loose-ends 8 Oct 2026); next: refetch canvas 45 (and any of 55/58/74 still missing) once each and look for cipher groups; add a cipher leaf to trial_1653, ~$0.5
+- f.68 clear/cipher pair (dechiffref68.txt), never used as a second-letter test of key1659's homophones - blocker: not-attempted; noted in the body at AUDIT.md:301, never carried as a step (loose-ends 8 Oct 2026); next: commit the f.68 clear transcription with a second blind pass, align it, and test key1659 rows on the f.68 cipher beside a shuffled-order alignment control of the same length and symbol count, ~$3
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: refetch canvas 45 (and any of 55/58/74 still missing) once each and look for cipher groups; add a cipher leaf to trial_1653; ~$0.5; source: loose-ends 8 Oct
+- [ ] clear-pages: commit the f.68 clear transcription with a second blind pass, align it, and test key1659 rows on the f.68 cipher beside a shuffled-order alignment control of the same length and symbol count; ~$3; source: loose-ends 8 Oct
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 2 internal gaps; cheapest next: refetch canvas 45 (and any of 55/58/74 still missing) once each and look for cipher groups; add a cipher leaf to trial_1653, ~$0.5

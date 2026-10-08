@@ -661,3 +661,17 @@ ASV Vercelli, Fondo Arborio di Gattinara, asking whether the chancellor's papers
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the optional f.2/f.4 initial-letter test this folder names as its cheaper desk-side option (~$3); the Vercelli (Fondo Arborio di Gattinara) inquiry stays owner-side outreach.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- 15 of the 18 Decrypted DECODE sibling records in fr.20506, never opened - blocker: not-attempted; noted in the body at NOTES.md:554, never carried as a step (loose-ends 8 Oct 2026); next: open the 15 records and compare their systems with Ranzo's letter+number code; a key transfer later needs a shuffled-key control of the same length, ~$1
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: open the 15 records and compare their systems with Ranzo's letter+number code; a key transfer later needs a shuffled-key control of the same length; ~$1; source: loose-ends 8 Oct
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: open the 15 records and compare their systems with Ranzo's letter+number code; a key transfer later needs a shuffled-key control of the same length, ~$1

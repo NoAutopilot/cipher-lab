@@ -820,16 +820,18 @@ it was not found; no novelty class.
 Read so far: 0 of 138 f.157r tokens read; six key tests negative with matched controls (two Lasry, Servien 1632, f.146r, f.247, merged f.146r+f.247: 5.122 bpc, 0.700 of shuffles as good); no printed crib (GAPS40); blind homophonic control 0.31 at 128 restarts vs gate 0.6 (GAPS46).
 - f.157r cipher runs (138 tokens, 38 sign types) - blocker: too-short; the blind homophonic control at the target's own N and K plateaus at 0.31 recovery (0.147 at 8 restarts, 0.312 at 32, 0.309 at 128; gate 0.6; HYPOTHESES.md 3 Oct 2026), so a blind solve is below unicity here; only a key or crib reopens it, and every reachable key is negative (Sabran 1636 table retired) and no print carries a crib (GAPS40)
 - fr.4141 Genoa cipher letters (ff.276-591, most of the 17), the likely home of "Mr de ch. g^r"'s own table - blocker: needs-physical-access; the BnF catalogue sub-unit FRBNFEAD000050537_a19860114 reads "Français 4141 Réserver" with no digitised-document link, while the fr.4140 sub-unit links Gallica (read 3 Oct 2026, FT4d)
+- Lasry's Farnese-Sabran key and decipherment images for Baluze 156 f.40 (Tomokiyo GL.htm), never fetched or applied (the Sabran 1631 key read 0/31) - blocker: not-attempted; noted in the body at NOTES.md:207, never carried as a step (loose-ends 8 Oct 2026); next: fetch the f.40 key images and apply them to the 137 tokens of f.157r beside a shuffled-key null of the same length and symbol count, ~$1.5
 
 ## Escalation (GAPS46, 3 Oct 2026)
 - [x] siblings: fr.4140 f.146r key, f.247 key, and the f.247/207/254 sweep
 - [n/a] clear-pages: f.157v and f.158r are plain French with no cipher
 - [x] known-keys: Lasry 1631, Lasry Baluze 156 f.40, Servien 1632, f.146r 1636, f.247 1636 and their merge, all negative with matched controls
+  - [ ] fetch the f.40 key images and apply them to the 137 tokens of f.157r beside a shuffled-key null of the same length and symbol count; ~$1.5; source: loose-ends 8 Oct
 - [x] print: Avenel t.V whole-volume full-text search and Sourdis Correspondance I-III searched, no letter, summary or crib (GAPS40)
 - [retired] key-rebuild: Sabran 1636 table (f.146r, f.247, merged) failed three times on f.157r, rule 3 third-attempt clause; a fr.4141 table reopens it; blind homophonic rebuild measured too-short (GAPS46)
 - [x] image-check: f.157r re-read from native iiif_lines crops, 2 blind Opus passes 90.7% + reconciliation (GAPS35)
 - [n/a] retry: no transient failure to retry this pass
-Verdict: parked: every gap has an outside blocker (too-short at N=138 for a blind solve; fr.4141 needs physical access or a BnF reproduction order)
+Verdict: keep going: 1 internal gaps; cheapest next: fetch the f.40 key images and apply them to the 137 tokens of f.157r beside a shuffled-key null of the same length and symbol count, ~$1.5 (loose-ends 8 Oct 2026; was: parked: every gap has an outside blocker (too-short at N=138 for a blind solve; fr.4141 needs physical access or a BnF reproduction order))
 
 ## While waiting (GAPS46, 3 Oct 2026)
 The one action that depends on nobody: build an era-matched 1620s-1640s French corpus (`tools/data/fr17`: for example

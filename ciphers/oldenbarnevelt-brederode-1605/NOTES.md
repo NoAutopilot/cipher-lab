@@ -830,3 +830,17 @@ gloss (unchanged from R9-OBRED4). (2) Out of this folder's scope, a possible tar
 
 Requests: `service.archief.nl` 34 (1 METS, 27 thumbnails at 400 px, 5 scans at 1400 px, 1 region crop), >= 1.9 s apart, descriptive
 User-Agent, no 403/429/challenge. No subagents.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- the 10 Aug 1598 Van Aerssen key slip and decipherment pairs on scans 31/32 (NA 3.01.14 inv. 2016-2025), on disk, a different correspondence never read - blocker: not-attempted; noted in the body at NOTES.md:819, never carried as a step (loose-ends 8 Oct 2026); next: read the key slip and the decipherment pairs on scans 31/32 with two blind passes and build the syllabary table, beside a synthetic marked-number syllabary control of equal N and K; then test whether it fits no. 92, ~$4
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: read the key slip and the decipherment pairs on scans 31/32 with two blind passes and build the syllabary table, beside a synthetic marked-number syllabary control of equal N and K; then test whether it fits no. 92; ~$4; source: loose-ends 8 Oct
+- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: read the key slip and the decipherment pairs on scans 31/32 with two blind passes and build the syllabary table, beside a synthetic marked-number syllabary control of equal N and K; then test whether it fits no. 92, ~$4

@@ -521,3 +521,17 @@ final`), fetched from a desk browser (fbi.gov answers 403 to the cloud; a LOCAL-
 reads of every line against the spec (~USD 3), which settles 36/86 and any other retype error before any further reading.
 Status stays `open` (no H, C or S tokens). Requests: fbi.gov 2 curl + 1 browser, archives.fbi.gov 1 curl + 1 browser, vault.fbi.gov
 1 curl + 4 browser, web.archive.org 3 (reset), scienceblogs.de 1, web search 2.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- Cipher Mysteries 2013 post, comments 79-163, never read - blocker: not-attempted; noted in the body at NOTES.md:273, never carried as a step (loose-ends 8 Oct 2026); next: fetch a Wayback copy of the comment pages and grep them for a claimed reading or new material, ~$0.5
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: fetch a Wayback copy of the comment pages and grep them for a claimed reading or new material; ~$0.5; source: loose-ends 8 Oct
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: fetch a Wayback copy of the comment pages and grep them for a claimed reading or new material, ~$0.5

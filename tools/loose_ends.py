@@ -32,7 +32,8 @@ What it scans, per ciphers/<folder>/:
 tracked = yes when the same material is named in a register: the folder's "## Escalation" / "## Remaining gaps" /
 "## While waiting" / "## Siblings" sections, its NEXT-STEPS.tsv row, an open WORK-QUEUE.tsv row naming the folder
 (and that row's brief file), or a ROOM.md line naming the folder in the last 7 days. "Same material" is decided by
-the hit's material keys (leaf/scan/folio numbers and ranges, file names, rare words of the sentence): every number key
+a register line citing the hit's own location (file:line, as tools/loose_ends.py's triage lines do), or the hit's
+material keys (leaf/scan/folio numbers and ranges, file names, rare words of the sentence): every number key
 (up to two) must appear in a register sentence that also names one of the hit's words, or, with no number keys, two
 word keys must. It is a heuristic for a model to triage, never a verdict; the 'material' column shows what was
 matched.
@@ -373,7 +374,9 @@ def scan(root, today, only=None):
                 mat = " ".join(h["names"][:12])
             else:
                 nums, words = material_keys(h["sentence"], h.get("anchor"))
-                tracked = is_tracked(nums, words[:8], register)
+                # a register line that cites this hit's own location ("noted in the body at NOTES.md:29") carries it
+                cites = re.search(r'\b%s:%d\b' % (re.escape(h["file"]), h["line"]), register)
+                tracked = bool(cites) or is_tracked(nums, words[:8], register)
                 mat = " ".join(nums[:6]) + (" | " if nums else "") + " ".join(words[:6])
             rows.append([folder, status, "%s:%s" % (h["file"], h["line"]), h["snippet"][:300], h["kind"],
                          "yes" if tracked else "no", mat.strip()])

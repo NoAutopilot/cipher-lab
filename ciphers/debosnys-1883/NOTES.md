@@ -1410,3 +1410,17 @@ No trunks in the collection, no information on them. Possible value: the journal
 writing in his hand (handwriting reference, vocabulary/crib source); neither is the museum's to scan freely (journal not
 owned). No further ask until DEB-RUN has documented its attempts (owner: next message later in the week, from a written
 record of everything tried, so the museum sees the work, not more requests).
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- the cipherfoundation.org Debosnys scan set, never fetched; may be sharper or other-copy scans - blocker: not-attempted; noted in the body at NOTES.md:44, never carried as a step (loose-ends 8 Oct 2026); next: fetch the scan set once and compare with our six PNGs; a sharper copy goes into the TRANSCRIPTION.md pipeline, error measured against BENCHMARK-TX, ~$0.5
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: fetch the scan set once and compare with our six PNGs; a sharper copy goes into the TRANSCRIPTION.md pipeline, error measured against BENCHMARK-TX; ~$0.5; source: loose-ends 8 Oct
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: fetch the scan set once and compare with our six PNGs; a sharper copy goes into the TRANSCRIPTION.md pipeline, error measured against BENCHMARK-TX, ~$0.5

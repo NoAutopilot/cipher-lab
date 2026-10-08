@@ -830,13 +830,15 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - alignment slips (19 C conflicts, 14 C unaligned; the C03 "bekom" and C04 "haben" slips confirmed by eye this job) - blocker: not-attempted; rule 3 third-attempt clause retired tools/interlinear_align.py for this leaf; next: a per-row eye alignment of the 33 conflict/unaligned C tiles against the gloss crops (images/k28v shows the crop recipe) with realign/tile_letters.tsv, writing an eye-aligned tile_letters file, ~$1.5
 - k11 in "taush" (C07 idx 14 under the long s; k11 = c elsewhere) and C03 "voans sp" - blocker: not-attempted; one occurrence each, read once by eye, not settled; next: fold into the per-row eye alignment above, ~$0 extra
 - crib-placement test - blocker: not-attempted; not in this brief; next: the crib-placement test against settled/key.tsv (k28 = b), ~$2
+- the free WVO PDFs of 14 neighbouring letters, never fetched - blocker: not-attempted; noted in the body at NOTES.md:571, never carried as a step (loose-ends 8 Oct 2026); next: fetch the 14 PDFs once and scan them for cipher spans (siblings of f.23 only), ~$0.5
 
 ## Escalation (NZ-WVOV, 7 Oct 2026)
 - [x] siblings: 174 key leaf (NX-WVO174; R9-WVOX concordance FAIL 0/7) and 1069 key (R9-WVOX concordance PASS 8/18)
+  - [ ] fetch the 14 PDFs once and scan them for cipher spans (siblings of f.23 only); ~$0.5; source: loose-ends 8 Oct
 - [x] clear-pages: f.23's own interlinear gloss transcribed, reconciled, aligned, verified, re-aligned and re-verified (R9-WVOALIGN, R10-WVOTX, R10-WVOV, WVO-REALIGN, NZ-WVOV)
 - [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
 - [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
 - [x] key-rebuild: key rebuilt per the owner's settled signs and re-aligned on them (WVO-APPLY, WVO-REALIGN); k28 verified by eye (NZ-WVOV)
 - [x] image-check: all five 1109 pages and four 1107 pages viewed; owner sorted all 258 tiles; k28 tiles and C03/C07/C09 gloss letters looked at against the key
 - [n/a] retry: no step has failed that a retry would change
-Verdict: keep going: 3 internal gaps; cheapest next: a per-row eye alignment of the 33 conflict/unaligned C tiles (~$1.5), then the crib-placement test against settled/key.tsv (~$2)
+Verdict: keep going: 4 internal gaps; cheapest next: a per-row eye alignment of the 33 conflict/unaligned C tiles (~$1.5), then the crib-placement test against settled/key.tsv (~$2) (loose-ends 8 Oct 2026 added 1: fetch the 14 PDFs once and scan them for cipher spans (siblings of f.23 only), ~$0.5)

@@ -4228,3 +4228,17 @@ Reader-free test of the owner's 5 Oct dot-vowel lead (h77/, prereg 06634cff push
 plate V vs Byrom 1796 plate I specimen lines on disk, split-half JSD of a 3 x 3 dot-position histogram -- cross 0.193 vs
 within 0.139, permutation p 0.149 (gate 0.01), Mavor only 12 dots (gate 40). Gate FAIL: Armstrong not scored. Untested by
 this tool at this specimen length, not a negative on any system. No network, no model calls.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- the 7 Jan 1806 Armstrong-Monroe four-surface item, absent at its expected place on LOC Monroe reel 3 (frames 720-739 other material) - blocker: not-attempted; noted in the body at NOTES.md:2015, never carried as a step (loose-ends 8 Oct 2026); next: search another LOC or NYPL surrogate and the reel index for the 1806 item, ~$1.5
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: search another LOC or NYPL surrogate and the reel index for the 1806 item; ~$1.5; source: loose-ends 8 Oct
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: search another LOC or NYPL surrogate and the reel index for the 1806 item, ~$1.5

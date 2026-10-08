@@ -348,3 +348,17 @@ move it: new material (the further Scorpion messages Schmeh mentions), or an S5 
 NEXT-STEPS.tsv still read this folder as `runnable` from the older line "Cheapest next: that blind second-coder test" (section above
 R13-SCORP2C); that test ran on 6 Oct 2026 (R13-SCORP2C). next: no agent step is left on the material in hand (no key material); new material only (the
 further Scorpion messages Schmeh mentions), or an S5 transcription if a later family needs it.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- the eight oranchak.com scorpion1-8.jpg images, never fetched; one may be an uncrossed scan of S5 - blocker: not-attempted; noted in the body at NOTES.md:154, never carried as a step (loose-ends 8 Oct 2026); next: fetch the eight images once and look for an uncrossed S5 row (S5 is 180 signs, below unicity alone), ~$0.3
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: fetch the eight images once and look for an uncrossed S5 row (S5 is 180 signs, below unicity alone); ~$0.3; source: loose-ends 8 Oct
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: fetch the eight images once and look for an uncrossed S5 row (S5 is 180 signs, below unicity alone), ~$0.3

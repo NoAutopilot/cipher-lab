@@ -196,3 +196,17 @@ TNA Discovery /records/v1/details, fetched once each: C6822019 (SP 105/60/121), 
 - Found: the catalogue describes PP MS 4/02/27/01 and 4/02/28/01 only at file level, both titled "I) 50 letters mostly 1693-4" (1693-1694, open, orderable, Paget Box 5 for 27/01), with no scope note and no item list. Their parents name different series: 4/02/27 = "Letters from Smyrna consuls (e.g. William Raye) and merchants 1693-1703" (five folders); 4/02/28 = "Letters from [and drafts to] Aleppo consuls (e.g. H. Hastings) and merchants 1693-1703" (three folders). Neither the file nor the parent records mention Stepney, cipher, cypher, key or Paget-as-recipient (0 hits in the saved pages).
 - Not found: any item-level listing, so whether these files hold Stepney's 1693-94 letters is not answerable from the catalogue; by their series titles they are Levant Company (Smyrna/Aleppo) correspondence, not Vienna despatches, which weakens the earlier web-search-record premise that they would hold the received copy of f.135. The catalogue search for "Stepney" returned only unrelated records (Stepney Green, Addis, Stencl); the Paget hit was the PP MS 4 collection record.
 - Tab: sp105_soas_items.tsv. Folders 4/02/27/02-05 and 4/02/28/02-03 and the Vienna/Stepney series of PP MS 4 (if any; the collection tree at /records/PP_MS_4 was not walked) were not read. Next, if wanted: walk /records/PP_MS_4/02 sub-series titles (~$0.5) for a Vienna/Imperial-court series; otherwise owner-side desk enquiry to special.collections@soas.ac.uk for item-level description. Status unchanged (open).
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- SOAS PP MS 4/02 sub-series titles, never walked (a possible Vienna/Imperial court series) - blocker: not-attempted; noted in the body at NOTES.md:198, never carried as a step (loose-ends 8 Oct 2026); next: walk the /records/PP_MS_4/02 sub-series titles on the SOAS catalogue and list any cipher-bearing Paget letters, ~$0.5
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: walk the /records/PP_MS_4/02 sub-series titles on the SOAS catalogue and list any cipher-bearing Paget letters; ~$0.5; source: loose-ends 8 Oct
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: walk the /records/PP_MS_4/02 sub-series titles on the SOAS catalogue and list any cipher-bearing Paget letters, ~$0.5

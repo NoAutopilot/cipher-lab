@@ -55,3 +55,17 @@ exit 0
 
 ## Edition and key leads added (BNF-SEGA-POOL, 8 Oct 2026)
 DBI "SEGA, Filippo" and "CAETANI, Enrico" Fonti e Bibl. read in full: no edition of Sega's 1591 letters or of Caetani's legation despatches is listed; Manfroni 1893 (Riv. stor. ital. X, archive.org BIBLIOFBK-RIVSTOITA-1893-010-2) grepped whole-number: narrative from Caetani's diary, no 9 Jan 1591 letter, no cipher. ANG complete volume list still not obtained (no Sega or Caetani volume seen). Tomokiyo's Cryptologia article (2017) concerns Farnese/Mayenne letters TO Sega, Jan 1591 (fr.3980), not this letter's cipher. Per Cauare cipher (mantua.htm; Barberini to Sega 1593) is a further untested key candidate beside Meister's Caetani table. Verdict unchanged: blocked. See ciphers/fr3984-sega-memoirs-1593/NOTES.md.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- the bibliography of Penzi's chapter (Classiques Garnier pp.157-173), never read (403); may name an edition of Sega's letters - blocker: not-attempted; noted in the body at NOTES.md:45, never carried as a step (loose-ends 8 Oct 2026); next: read the chapter's footnotes through OpenEdition or a Google Books snippet (country=US) for an edition of the Sega 1591 letters, ~$1
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: read the chapter's footnotes through OpenEdition or a Google Books snippet (country=US) for an edition of the Sega 1591 letters; ~$1; source: loose-ends 8 Oct
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: read the chapter's footnotes through OpenEdition or a Google Books snippet (country=US) for an edition of the Sega 1591 letters, ~$1

@@ -179,3 +179,17 @@ Next action that depends on nobody: unchanged. Test these 13 values against an i
 ## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
 
 next: no agent step is left. The Baconiana Jan 1897 page-image check named above ran 5 Oct 2026 (D2-BACON, section above, 13 values in baconiana-1897-values.tsv). The values are tested only against an image of Lambeth MS 649 ff.490-495, which needs the copy order in REQUEST.md (and Pott's 1896 manuscript via the Francis Bacon Society, ASKS row 122). Who acts: owner. Blocker class: needs-image.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- Tosh's 2014 QMRO thesis on the Anthony Bacon letters, never read (bot-challenged) - blocker: not-attempted; noted in the body at NOTES.md:97, never carried as a step (loose-ends 8 Oct 2026); next: fetch the QMRO thesis (CORE with CORE_API_KEY, or a Wayback copy) and grep for ff.490-495 and cipher/decipher, ~$0.5
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: fetch the QMRO thesis (CORE with CORE_API_KEY, or a Wayback copy) and grep for ff.490-495 and cipher/decipher; ~$0.5; source: loose-ends 8 Oct
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: fetch the QMRO thesis (CORE with CORE_API_KEY, or a Wayback copy) and grep for ff.490-495 and cipher/decipher, ~$0.5

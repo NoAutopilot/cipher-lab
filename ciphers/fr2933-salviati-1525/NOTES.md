@@ -3450,3 +3450,17 @@ service down since 2023; the original was sold in 1968 and its current holder is
 Result: no decipherment or plaintext of the item found; two leads for later steps (fr.3087/Anc.8612 c.163 two cipher
 lines; the Phillipps 7293 letter book as a possible clear copy). Neither changes the status line.
 Requests: archive.org 3 advancedsearch + 3 `_djvu.txt` (200 each), >=2 s apart; github.com 2 shallow clones.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- the CSP Spain vol. 2 calendar text for 16-20 Oct 1525 (BHO node 74508), never read (access failed 401/reset, not a negative) - blocker: not-attempted; noted in the body at NOTES.md:3400, never carried as a step (loose-ends 8 Oct 2026); next: fetch the CSP Spain vol. 2 text (archive.org djvu or a Wayback copy of the BHO page) and grep Salviati/Toledo 16 Oct 1525 for a paraphrase or clear context of the despatch, ~$0.3
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: fetch the CSP Spain vol. 2 text (archive.org djvu or a Wayback copy of the BHO page) and grep Salviati/Toledo 16 Oct 1525 for a paraphrase or clear context of the despatch; ~$0.3; source: loose-ends 8 Oct
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: fetch the CSP Spain vol. 2 text (archive.org djvu or a Wayback copy of the BHO page) and grep Salviati/Toledo 16 Oct 1525 for a paraphrase or clear context of the despatch, ~$0.3

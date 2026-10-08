@@ -73,6 +73,14 @@ def test_must_not_flag_when_escalation_carries_it():
         assert all(not x[2].endswith(":%d" % (SECTION1.count("\n") + 3)) for x in r), r
 
 
+def test_register_citing_hit_location_counts():
+    with tempfile.TemporaryDirectory() as tmp:
+        make(tmp, SECTION1 + "\n## Remaining gaps (8 Oct 2026)\nRead so far: unmeasured; not measured here\n"
+             "- other letter - blocker: not-attempted; noted in the body at NOTES.md:7; next: read it, ~$6\n")
+        r = [x for x in rows(tmp) if "carries-cipher" in x[4]]
+        assert r[0][2] == "NOTES.md:7" and r[0][5] == "yes", r
+
+
 def test_next_steps_and_room_count_as_registers():
     with tempfile.TemporaryDirectory() as tmp:
         make(tmp, SECTION1)

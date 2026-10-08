@@ -1096,3 +1096,17 @@ exhausted at N<=481; next: outside word-code material (a fasc. 2 key/legend with
 NEXT-STEPS.tsv read this folder as `runnable` (7 Oct 2026); the last named step (R13-SIENAWC, 6 Oct 2026) is new material only. next (no key material): no agent step is left on the
 transcripts in hand (ciphertext-only nomenclator route exhausted at N<=481); reopened by a fasc. 2 key sheet or legend with drawn word codes,
 or more ciphertext in the same sign set from a reader other than agent J.
+
+## Remaining gaps (loose-ends pass, 8 Oct 2026)
+Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
+- the image of piece no. 11, never fetched, needed for the reader-bias control - blocker: not-attempted; noted in the body at NOTES.md:1007, never carried as a step (loose-ends 8 Oct 2026); next: one DECODE browser login, fetch the record image for no. 11 and label it blind, ~$0.5
+
+## Escalation (loose-ends pass, 8 Oct 2026)
+- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] known-keys: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+- [ ] image-check: one DECODE browser login, fetch the record image for no. 11 and label it blind; ~$0.5; source: loose-ends 8 Oct
+- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Verdict: keep going: 1 internal gaps; cheapest next: one DECODE browser login, fetch the record image for no. 11 and label it blind, ~$0.5
