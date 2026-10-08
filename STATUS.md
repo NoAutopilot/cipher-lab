@@ -6190,6 +6190,39 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_01BhFrvFs46QaEbT8aTNPN8V, account 1, incarnation 1 of the blast refill), 8 October 2026 (closed 19:5x UTC: past 80% of cap, lane about 56 of 60)
+
+Brief .claude/briefs/lane-ledger.md; jobs .claude/briefs/runs/2026-10-08-acct1-lane-ledger-jobs.md (waves 1-4). Eleven workers 50.43 + orchestrator
+~5.6 by get_session. Five_hour allowed throughout.
+Result (eckert-1864, ONE audit each, not counted until a second): N3 -- E104, E106, E122, E123, E143, E160, E162 (D3); E103, E145, E146,
+E163, E164 (D2). Second audits queued for the account-3 VERIFY lane: AUD2-LEDGER-1 (E103 E104 E106 E122), -2 (E123 E143 E145 E146),
+-3 (E160 E162 E163 E164). N2-DB N1 (Grant Papers 12). In print once decoded (readers): 15 of 24 mssEC 19 entries; 2 of 10 Fort Monroe.
+- mssEC 19 PF4-clean Cipher No. 1 rows: all 34 done (LS5-R1c/d/e): 24 filed (E103-E108, N2-DA, N2-DB, E120-E126, N2-EA, E140-E147), 10 step-0
+  skips. The No. 1 pool of mssEC 19 1864 is spent.
+- Fort Monroe "Ciphers Received and Sent" (obj 5952) = mssEC 25, 809 entries 3 Feb 1864-6 Apr 1865; all 411 pages in 5 hdl requests
+  (ciphers/eckert-1864/sources/fortmonroe). FM-PRE: 412 print-likely, 239 clean >= 40 words (clean-fm.tsv; 136 of them 1864 No. 1/No. 2).
+  FM-R1 read the first 10 (E160-E169): only 2 in print -- the best yield on the board for this family.
+- mssEC 18 (obj 10074): MS18-PRE harvested 400/413 pages, 804 entries; 244 clean (1864: 180 -- No.1 89, No.2 65, No.9 26), 161 in Jan-Apr
+  1865 (pp.261-336, book not in hand). ciphers/eckert-1864/ms18/clean-ms18.tsv is the reader list.
+- Objects 8472 (mssEC 16) and 6254 (mssEC 22): pre-registered 10-entry test, no book in hand reads either -> stop, blocker no-key-material
+  (Aug 1862-Jan 1864 book). 9660 is not a copy of 8472 (two dates).
+- eckert-1862: E62-ALN aligned 11 of 18 printed residue entries (OR 51pt1/53/10/12): 0 new dated witnesses, key.md unchanged.
+**Next** (cost per item from this lane's ledger; read ~0.3-0.45/entry, first audit ~1.4/entry -- price verifiers at 1.5, not 0.8):
+1. Fix worker (Sonnet, ~1): FV-FM1's reading errors in E160 and E163 (AUDIT.md "## AUDIT (FV-FM1)" s.3: E160 "9 inch" = six 3-inch x2, gloryth = 17th;
+   E163 weasler = steamer, offal H), regenerate with decode.py --check, carry into AUDIT.md/SO rows (rule 10 propagation). Also E145/E143 M corrections
+   from FV-LS5-B if not yet applied.
+2. First verifier (Opus, ~6): E165, E167, E168, E169 (Fort Monroe, not located; E165/E168/E169 key-supplement telegrams; E169 Mint/Mogul = Steedman vs
+   key.md McPherson in HYPOTHESES.md).
+3. Fort Monroe readers: the next 126 1864 No.1/No.2 rows of clean-fm.tsv after 5782/1, 10-12 per reader (~0.3/entry), then a first verifier per batch.
+   FM rows are mostly RECEIVED at Fort Monroe: diff against mssEC 19/18 filed IDs first. MS18-PRE notes entries-fm.tsv best_book does not reproduce
+   from HEAD code on 20 rows -- re-run the scorer before choosing the book.
+4. mssEC 18 readers: the 180 clean 1864 rows of ms18/clean-ms18.tsv by book (No.1 89, No.2 65, No.9 26).
+5. eckert-1862: OR vols 9/7/8 alignment of the remaining 7 printed residue entries, ~0.5 (low yield expected); 9660 10-entry book test, ~0.5.
+6. Blocked: 8472/6254 and Jan-Apr 1865 pages (no book in hand; Cipher No. 4 Friedman copy needs a desk browser, LOCAL-QUEUE).
+Lessons: (a) the hdl ROOM token is not atomic -- three readers took it in one minute; re-read ROOM after posting take (wave 2 rule). (b) `room.py "<role>"
+'<text>' --push PATH` pushes only ROOM.md; push other paths with a separate `room.py --push PATH`. (c) bulk dmQuery harvests a 400-page ledger in ~5-11
+requests; host totals then come from the filter layers (MS18-PRE: be-api 300, Google Books 187) -- cap requests per layer in the brief.
+
 ## LANE ST-LEDGER-4 handoff (session_015WegULpZSVGVcFH1h999mf, account 1), 8 October 2026 (closed 16:4x UTC: past 80% of cap, lane about 38.5 of 45)
 
 Brief .claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md (ST-LEDGER-4); worker brief .claude/briefs/runs/2026-10-08-acct1-st-ledger4-workers.md.
