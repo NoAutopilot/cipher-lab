@@ -1354,3 +1354,54 @@ No. 9: no 1865 row has No. 9 as best book; its table is a sample, not the whole 
 
 Matched control, and why the count is weak (rule 3): the control's own best-book call matches the label on 94/153 (No. 1 45/63, No. 2 49/58, No. 9 0/32). The p10-p90 band is not selective: No. 1's band accepts 51/63 No. 1 entries but also 46/58 of the No. 2 entries and 13/32 of the No. 9 entries; No. 2's band accepts 46/58 No. 2, 31/63 No. 1, 6/32 No. 9; No. 9's band accepts 27/32 of its own and 44/63 and 44/58 of No. 1/No. 2 entries. The three books share arbitraries (one template for Nos. 1/2, and 9/10/12 another), so token share cannot tell the books apart: "readable with No. N" is not licensed by this test, and "book not in hand" at 71 of 130 is a low share, not proof of a missing book. Only the No. 2 band separates somewhat from No. 9 entries. Logged as untestable by this instrument at this N; the next step needs a different instrument (decode a handful of 1865 rows with each book and count grammatical clauses with the shuffled-meaning control of the lane brief), not a tighter band.
 Both counts: readable 59 (41 + 18), not in hand 71. No 1865 reading in this job.
+
+## LS3-R9 (8 Oct 2026, account 2, for LANE ST-LEDGER-3)
+
+Ten unread rows of `entries-mssEC19.tsv` that guessed "Cipher No. 9" (old vocabulary). Four read (O9-AK, O9-AL in `ciphertext-no9.txt`; E76, E77 in `ciphertext.txt`, because the rows turned out to be Cipher No. 1);
+three recorded N1-likely from the pre-filter, with page, not decoded; three 1865 rows not read (book not in hand). `decode.py`, `decode_no9.py`, `decode_no2.py` `--write` then `--check` exit 0.
+Tools: `ls3_r9.py` (shares + matched control, output `ls3_r9_controls.txt`), `ls3_r9_printcheck.py` (letters-only phrase grep), `ls3_r9_entries.txt` (working blocks). Images: the four ledger pages fetched once at 2400 px
+(`hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg`), the whole page read by the worker, one eye, no subagent, volunteer text as second witness (no word differs in the four entries);
+key pages 1730, 1734, 1739 (mssEC 67 p.[10], [14], [19]) at 1800/1400 px.
+
+| row | ID | book | vocabulary shares (No.1/No.2/No.9 of N non-function tokens) | clause check chosen vs other two vs shuffled-chosen | H | print |
+|---|---|---|---|---|---|---|
+| 8946/54/2 | O9-AK, 25 Apr 1864, Halleck (signed Applause) to Heintzelman at Columbus O: the Governor of Ohio reports that by Friday next he will have a regiment of militia at Johnson's Island; as soon as relieved send troops there to the field as previously ordered | No. 9 | 6/7/5 of 19 | No.9 5 of 5 code words give the sentence; No.1 0 of 6; No.2 0 of 7; No.9 shuffled 0 of 5 ("Lieutenant ... Goo of (Fort) La Fayette"); No.1 shuffled 0 of 6 | 5 | not located (4 phrases; I/33, I/34 pt 3, I/39 pt 2, I/42 pt 3, ORN I/11 searched) |
+| 9015/123/1 | O9-AL, 26 Jul 1864 12.30 PM, Halleck to Kelley at Cumberland (operator Rom): "[Heintzelman] has been directed to give you all the assistance possible from his Dept" | No. 9 | 7/6/5 of 16 | No.9 5 of 5; No.1 0 of 7; No.2 0 of 4; No.9 shuffled 0 of 5 ("Sec. of the Navy ... Arkansas (river)"); No.1 shuffled 0 of 7 | 5 | FOUND, word for word: OR I/37 pt 2 p.453 (12.30 p. m., Halleck to General Kelley, "General Heintzelman has been directed to give you all the assistance possible from his department") |
+| 9111/219/1 | E76, 1 Nov 1864 12 M, Butler (signed Knox) to W. P. Smith: "Please let me have your special car for self & staff for the first through train to New York. Strictly confidential. Ack receipt care Colonel Hardie" | No. 1 (was guessed No. 9) | 7/7/4 of 23 | No.1 6 of 6; No.9 0 of 4 ("train to Arkansas (river)"); No.2 0 of 7 ("train to Macon"); No.1 shuffled 0 of 6 ("Meridian ... Cleveland ... Geo. H. Thomas") | 6 | not located (3 phrases, I/42 pt 3, I/33 and the cached volumes) |
+| 9143/251/1 | E77, 22 Dec 1864 10.30 PM, G. V. Fox to Commodore Rodgers (operator Sheldon, Ft Monroe, header "No 1"): "Yesterday the fleet were inactive at their destination on account of continued bad weather. This from [Grant]. You may be in time yet" | No. 1 (was guessed No. 9) | 5/6/2 of 20 | No.1: time word = header 10.30 PM, Jersey = Grant, Famish = Norfolk (3 of the 5 decoder values hold; see grades); No.9 0 of 2 (time 8.30 PM against header 10.30); No.2 time matches, other 4 do not (Canby, Jeff Davis, McMinnville); No.1 shuffled 0 of 5 | 3 | FOUND, word for word: ORN I/11 p.204 (Navy Department, 22 Dec 1864, Fox to Commodore John Rodgers, commanding U.S.S. Dictator, Norfolk, "This from General Grant") |
+| 8893/1/1 | not decoded (Halleck to Grant, St Louis, 28 Jan 1864) | - | - | - | - | N1-likely: OR I/32 pt 2 p.244 (1.24 p. m., two brigades of Ewell's corps, Sedgwick; expected raid by Morgan through Stone or Sounding Gap, Anderson) |
+| 8919/27/2 | not decoded (Halleck, Chief of Staff, to Steele via Clowry, Little Rock, 1 Apr 1864) | - | - | - | - | N1-likely: OR I/34 pt 3 p.27 (Washington, April 1, 1864, 11 a. m.) |
+| 9054/162/2 | not decoded (Halleck to Burbridge, Lexington, 22 Aug 1864, via Mattoon) | - | - | - | - | N1-likely: OR I/39 pt 2 p.284 (1.20 a. m.; the ledger header times it 11.30 am, "No 9") |
+| 9168/276/2 | not read (header "No 3", 1 P. M., Beckwith, City Point, 24 Jan 1865) | Nos. 3/4 | - | - | - | key not in hand |
+| 9274/382/0 | not read (header "No 4", Sheldon, Ft Monroe, 4 Sept 1865) | Nos. 3/4 | - | - | - | key not in hand (LS3-K: "book not in hand") |
+| 9283/391/1 | not read (Bates, Boston, 16 Sept 1865; continuation of 9283/391/0, which LS3-K calls "book not in hand") | - | - | - | - | key not in hand |
+
+Page numbers are those of the printed volume read from the djvu text (running heads; the dispatch sits before the next head). Phrases and volumes: `python3 ciphers/eckert-1864/ls3_r9_printcheck.py <scratch *.txt>` (I/32 pt 2, I/34 pt 3, I/39 pt 2, I/42 pt 3 and ORN I/11 were fetched to scratch, not committed). A miss is a search result (rule 10).
+
+Grades (decoder counts; by hand where it differs): O9-AK H 5 (Bologna/Bolivia, Cologne, Stanhope, Youth, Applause); O9-AL H 5 (Pagoda, Viola, Vernon, Bolivia, Applause); E76 H 6 (Francis, France, Zebra, Pandora, Youth, Knox);
+E77 H 3 (Reliance 10.30 PM, Famish, Jersey), I 1 (Fox: decoder's [Philadelphia] is the plain surname, as in E67), M 3 (polkaing, Dick, potato: decoder's "[Command = Er]ing" for "polkaing" is a stem artefact, not a reading; the print has "Commanding U.S.S. Dictator" after Rodgers,
+so these three words probably spell "commanding Dictator", not graded C because the pairing is the worker's).
+Unread, not graded: AK/AL plain-spelling names. Bologna/Bolivia = Heintzelman is a new key row (key-no9.md section 6, mssEC 67 p.[10] l.18, one eye). Data points that agree with it independently: Heintzelman commanded the Northern Department at Columbus (O9-AK's address line), and OR I/37 pt 2 p.453 for O9-AL.
+Rank slip, as in O9-A: "Vernon" reads Maj. Gen. in key-no9.md (O9-AL "Maj. Gen. Kelly"); the print has "General Kelley". Not a data conflict; the printed address gives no rank.
+
+Book assignment note (rule 3): the share columns do not pick the book (key-no9.md is a sample table, 5/19 and 5/16 are small shares for the book that reads); the header word (Pagan/Pagoda/Francis/Reliance) and the sentence under each book do. E76 and E77 were guessed No. 9 by the tsv and are No. 1; the time word agrees with the ledger's own header time in both (Francis = 12 under No. 1 against "12M"; Reliance = 10.30 PM against "10.30 P. M."), which the No. 9 reading breaks (11 AM; 8.30 PM). Control note: LS3-K's p10-p90 band is non-selective (its own matched control), so no 1865 row was read.
+Time-word check: O9-AL's Viola (12.30 PM in No. 9) agrees with the print's "12.30 p. m." (H against a print time, independent of the sentence).
+
+Image vs volunteer text: no word differs in the four read entries. 9143's page shows "10.30 P. M." above the header and "No 1" in pencil at upper left; 8946's second entry has "No 9" pencilled over "David". 9015's "Vernon" appears as "Vermin"/"Vernon" in the volunteer text for two entries; the image reads Vernon, "Kelly".
+
+Requests: hdl.huntington.org 8 (4 ledger pages, 4 mssEC 67 pages; page 1736 fetched but not read), archive.org 5 (`_djvu.txt`: 322unit, 343unit, 392unit, 423unit, ORN 0011unse), 0 other. Subagents 0.
+
+## Remaining gaps (LS3-R9, 8 Oct 2026)
+Read so far: of the ten rows, 4 read (O9-AK, O9-AL, E76, E77); 3 recorded N1-likely with the OR page (8893/1/1, 8919/27/2, 9054/162/2, not decoded); 3 not read (9168/276/2, 9274/382/0, 9283/391/1).
+- Print location of O9-AK and E76 - blocker: not-attempted; the sender-family editions were not searched (OR I/33, I/34 pt 3, I/39 pt 2, I/42 pt 3, ORN I/11 were; Butler's Private and Official Correspondence, Heintzelman/Brough papers were not); next: verifier phrase search, ~$0.5
+- 9168/276/2 ("No 3"), 9274/382/0 ("No 4"), 9283/391/1 (1865, book not in hand) - blocker: no-key-material; Cipher Nos. 3/4 are not in hand and LS3-K's token-share band is non-selective, so the 1865 rows are untestable by that instrument; next: a Huntington reply on the 1865 books, or decode a few 1865 rows under all three books and compare the time word with the header (a different instrument), ~$1
+
+## Escalation (LS3-R9, 8 Oct 2026)
+- [n/a] siblings: the ten are siblings of E21-E77 and O9-A..AJ already read.
+- [x] clear-pages: four entries read from the full-page images, volunteer text second witness.
+- [x] known-keys: all three books run on all four entries, plus shuffled copies.
+- [ ] print: OR I/32 pt 2, I/33, I/34 pt 3, I/37 pt 2, I/39 pt 2, I/42 pt 3 and ORN I/11 searched; Butler and Heintzelman editions not.
+- [x] key-rebuild: one row added (Bologna/Bolivia = Heintzelman), key-no9.md section 6.
+- [x] image-check: mssEC 67 p.[10] read from the 1800 px image; ledger pages from 2400 px images.
+- [n/a] retry: the three 1865 rows are gated by the brief on LS3-K's call, which is "book not in hand".
+Verdict: keep going: 1 internal gap; cheapest next: a verifier phrase search for O9-AK and E76 in the sender-family editions, ~$0.5

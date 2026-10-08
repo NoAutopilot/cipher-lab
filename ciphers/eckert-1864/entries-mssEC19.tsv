@@ -5,7 +5,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8887	-5	0			Sent	7	1	3	0	2	none	0		1
 8888	-4	0			Metropolitan Book Store.	16	1	3	0	1	none	0		1
 8893	1	0	Sheldon F.  Washn Jany 27th 1864	Sheldon F.	to night DH Rucker Vermont	23	7	7	6	9	none	6	O9-E	2
-8893	1	1	Washington Jany 2<deletion>7th 1864			58	11	16	7	9	warofrebellion322unit@leaf0(cov10)	10		3
+8893	1	1	Washington Jany 2<deletion>7th 1864			58	11	16	7	9	warofrebellion322unit@leaf0(cov10)	10	LS3-R9 N1-likely: OR I/32 pt 2 p.244, not decoded	3
 8894	2	0	Geo D. Sheldon  Jany 30th 1864			84	13	26	11	9	none	5	O9-G	2
 8895	3	0	Capt J. P. Willard  Washn Jan 30. 1864.	Capt J. P. Willard	sig Applause very warm here	59	10	19	9	9	warofrebellion322unit@leaf0(cov15)	15	O9-A	3
 8895	3	1	Baldwin  Washn Feby 1st 1864	Baldwin		38	5	10	5	9	warofrebellion33unit@leaf0(cov11)	11	O9-B	3
@@ -59,7 +59,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8917	25	2	S. H. Beckwith (2)  Washn Mar 26th 1864 230 P. M	S. H. Beckwith (2)		80	11	27	5	2	none	4	N2-AB	2
 8918	26	0	Horner N. Y. "9"  Wash. Mar. 28. 1864	Horner N. Y. "9"	H 230 pm	151	15	34	10	9	none	6	O9-W	2
 8919	27	1	J. H. Bunnell (1)  Wash'n Mar 31st 1864 5. P. M	J. H. Bunnell (1)	No 15 P	66	21	32	3	1	warofrebellion323unit@leaf0(cov19)	19	O9-S	3
-8919	27	2	Capt R. C. Clowry (9) Little Rock Ark Wash'n Mar 31st 1864 11. AM	Capt R. C. Clowry (9) Little Rock Ark	sig Applause Chief of Staff	60	15	28	11	9	warofrebellion343unit@leaf0(cov9)	9		3
+8919	27	2	Capt R. C. Clowry (9) Little Rock Ark Wash'n Mar 31st 1864 11. AM	Capt R. C. Clowry (9) Little Rock Ark	sig Applause Chief of Staff	60	15	28	11	9	warofrebellion343unit@leaf0(cov9)	9	LS3-R9 N1-likely: OR I/34 pt 3 p.27, not decoded	3
 8920	28	0	F. S. Van Valkenburg Nashville  Washington April 2d 1864	F. S. Van Valkenburg Nashville	no 1  320 PM	112	24	39	7	1	warofrebellion323unit@leaf0(cov35)	35		3
 8920	28	1	Sheldon Ft Monroe "1"  Washn DC Apl 5. 1864	Sheldon Ft Monroe "1"		80	11	24	2	1	warofrebellion352unit@leaf0(cov36)	36		3
 8921	29	0			330 PM	5	3	1	0	short	none	0		3
@@ -115,7 +115,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 8945	53	0	S. H. Beckwith (2)  Perry you  Wash'n D. C. Apr. 24th 1864 11.30 AM	S. H. Beckwith (2) Perry you	showers return 9 5 1 Jam weather tomorrow 7 3	158	31	71	7	1	warofrebellion33unit@leaf0(cov38)	38	N2-AR	3
 8945	53	1	Geo D. Sheldon  Washington D. C. April 25th 1864	Geo D. Sheldon		98	27	28	7	1	none	4	LS-R3 E42	1
 8946	54	1	Sheldon  Wash Apl 25. 1864	Sheldon		25	7	6	1	1	none	3	O9-AD	2
-8946	54	2	David No 9  Wash Apl 25.1864	David No 9		38	6	11	4	9	none	4		1
+8946	54	2	David No 9  Wash Apl 25.1864	David No 9		38	6	11	4	9	none	4	LS3-R9 O9-AK	1
 8946	54	3	S. H. Beckwith (2) Thomas wonder year Wash'n D. C. Apr 25th 1864	S. H. Beckwith (2) Thomas wonder year		87	22	42	8	2	warofrebellion323unit@leaf0(cov24)	24		3
 8947	55	0				183	43	78	13	2	warofrebellion323unit@leaf0(cov54)	54		3
 8948	56	1	Beckwith  Wash Apl 25. 1864	Beckwith		91	21	37	2	2	none	4	N2-AS	2
@@ -254,7 +254,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9014	122	0			No 8 Ft. M	3	0	1	0	short	none	0		3
 9014	122	1	S. H. Beckwith War brings Miltin weather Wash'n July 26th 1864 11 AM	S. H. Beckwith War brings Miltin weather		187	46	83	8	2	warofrebellion403unit@leaf0(cov54)	54		3
 9015	123	0	T. B. A. Baird  Washn July 26th 1864	T. B. A. Baird		42	11	21	9	9	warofrebellion372unit@leaf0(cov14)	14		3
-9015	123	1	Rom  Wash'n July 26th 1864	Rom	his Dept sign Applause hurry	25	8	10	4	9	none	3		1
+9015	123	1	Rom  Wash'n July 26th 1864	Rom	his Dept sign Applause hurry	25	8	10	4	9	none	3	LS3-R9 O9-AL (N1-likely: OR I/37 pt 2 p.453)	1
 9016	124	0	F. S. Van Valkenburg  Wash'n July 26th 1864 2 PM	F. S. Van Valkenburg		230	32	53	7	1	warofrebellion385unit@leaf0(cov130)	130		3
 9017	125	0	10 pm  Wash July 26th 1864	10 pm		40	7	11	1	1	warofrebellion372unit@leaf0(cov15)	15		3
 9017	125	1	J. W. Sampson Balto  Washn July 24th 1864	J. W. Sampson Balto	shortest notice Webster Italy	32	8	13	1	1	warofrebellion372unit@leaf0(cov11)	11		3
@@ -332,7 +332,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9053	161	2	no1  McCaine Winchester ----  Washington, Aug 21, 1864	no1 McCaine Winchester ----		41	12	8	0	1	none	4		1
 9054	162	0			10. P. M.	3	0	2	0	short	none	0		3
 9054	162	1	McCaine Charlestown Va  Wash DC Aug. 21.1864	McCaine Charlestown Va	No 9  11.30 am	89	27	27	9	1	none	3	LS-R2c E32	1
-9054	162	2	Mattoon Lexington, Ky  Wash Aug 22. 1864	Mattoon Lexington, Ky	with Early Sig abortion	35	4	9	3	9	warofrebellion392unit@leaf0(cov9)	9		3
+9054	162	2	Mattoon Lexington, Ky  Wash Aug 22. 1864	Mattoon Lexington, Ky	with Early Sig abortion	35	4	9	3	9	warofrebellion392unit@leaf0(cov9)	9	LS3-R9 N1-likely: OR I/39 pt 2 p.284, not decoded	3
 9055	163	0	McCaine H Ferry  Washn DC Aug. 22. 1864.	McCaine H Ferry		74	25	19	4	1	none	3	LS-R2c E33	1
 9055	163	1	John Horner  Washn Aug 23d 64	John Horner	TT Eckert	45	5	8	2	1	none	4		1
 9056	164	0	1030 am to McCaine  Wash August 24th 1864	1030 am to McCaine		124	42	46	9	1	none	3	LS-R2c E34	1
@@ -451,7 +451,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9110	218	1	R. R. McCaine  Washn Oct 31st 2 P. M 1864	R. R. McCaine		135	26	43	8	2	warofrebellion432unit@leaf0(cov32)	32		3
 9110	218	2	John Homer N. Y.  Washn Nov 2nd 1864 9 30 am	John Homer N. Y.		79	22	21	7	1	none	3	LS-R3 E37	1
 9111	219	0				30	5	6	1	1	none	3		1
-9111	219	1	12M to Sampson  Washn Nov 1st 1864	12M to Sampson		33	7	13	4	9	none	3		1
+9111	219	1	12M to Sampson  Washn Nov 1st 1864	12M to Sampson		33	7	13	4	9	none	3	LS3-R9 E76	1
 9111	219	2	S. H Beckwith  Washn Nov 2d 1864	S. H Beckwith		138	27	48	6	2	warofrebellion423unit@leaf0(cov57)	57		3
 9112	220	0				5	5	2	0	short	none	0		3
 9112	220	1	John Horner N. Y.  Washn Nov. 3rd 1864 850 p. m	John Horner N. Y.		250	40	80	9	1	warofrebellionco0043unit_i5n6@leaf0(cov116)	116		3
@@ -528,7 +528,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9142	250	0	J. H. Emerick City Point  Washington D. C. Dec. 18. '64	J. H. Emerick City Point		74	16	31	6	2	none	4		1
 9142	250	1	Emerick City Point Va  Washn Dec 19th 1864 12 Noon	Emerick City Point Va		100	16	31	6	2	warofrebellion44unit@leaf0(cov28)	28		3
 9143	251	0			No 1  10.30 P. M.	3	0	2	0	short	none	0		3
-9143	251	1	Sheldon Ft. Monroe  Washn D. C. Dec. 22. 1864	Sheldon Ft. Monroe		34	4	10	2	9	none	4		1
+9143	251	1	Sheldon Ft. Monroe  Washn D. C. Dec. 22. 1864	Sheldon Ft. Monroe		34	4	10	2	9	none	4	LS3-R9 E77 (N1-likely: ORN I/11 p.204)	1
 9143	251	2	McCaine  Wash'n D. C. Dec 23rd 1864 10 am	McCaine		200	28	69	13	2	warofrebellionco0043unit_i5n6@leaf0(cov57)	57		3
 9144	252	0	Capt Van Duzer  Wash'n Dec. 28th 1864 4 PM	Capt Van Duzer		84	21	33	4	1	none	6		1
 9144	252	1	Beckwith 3  Wash'n Dec 29th 1864 1230 P. M	Beckwith 3		141	19	36	3	1	warofrebellion423unit@leaf0(cov41)	41		3
@@ -593,7 +593,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9167	275	3	G. D. Sheldon Ft Monroe  Washn Jany 21st 1865	G. D. Sheldon Ft Monroe		19	8	4	1	1	none	6		1
 9168	276	0			8 P. M	3	0	2	0	short	none	0		3
 9168	276	1	Gen D. Sheldon Ft Monroe  Wash'n Jany 21st 1865	Gen D. Sheldon Ft Monroe		55	19	21	7	1	none	4		1
-9168	276	2	SH Beckwith  Wash'n Jany 24th 1865 12M.	SH Beckwith	No 3  1 P. M.	26	1	8	1	9	none	3		2
+9168	276	2	SH Beckwith  Wash'n Jany 24th 1865 12M.	SH Beckwith	No 3  1 P. M.	26	1	8	1	9	none	3	LS3-R9 not read: header No 3, book not in hand	2
 9168	276	3	Beckwith City Pt  Washn Jan 24. 1865	Beckwith City Pt		78	11	18	2	1	none	6		2
 9169	277	1	S. H. Beckwith  Wash'n Jany 25th 1865	S. H. Beckwith		124	20	32	1	1	warofrebellion462unit@leaf0(cov21)	21		3
 9169	277	2	S. H. Beckwith  Wash'n Jany 25th 1865	S. H. Beckwith		80	14	23	4	1	warofrebellion462unit@leaf0(cov18)	18		3
@@ -849,7 +849,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9272	380	1	12 PM DH Bates Highlands NJ  Wash Sept 2 1865	12 PM DH Bates Highlands NJ		36	6	12	0	1	none	4		1
 9273	381	1	DH Bates Highlands  Washn Sept 2nd 65	DH Bates Highlands		80	7	22	0	1	none	3		1
 9273	381	2	Col OE Babcock Galena Ill  Washn Sept 4" 1865	Col OE Babcock Galena Ill		36	10	16	2	1	none	3		1
-9274	382	0	230 PM Geo D Sheldon Ft Monroe ---- Wash Sept 4" 1865	230 PM Geo D Sheldon Ft Monroe ----	No 4	50	6	12	3	9	none	3		1
+9274	382	0	230 PM Geo D Sheldon Ft Monroe ---- Wash Sept 4" 1865	230 PM Geo D Sheldon Ft Monroe ----	No 4	50	6	12	3	9	none	3	LS3-R9 not read: header No 4, book not in hand	1
 9274	382	1	11 AM Capt JC Van Duzer Nashville Wash Sept 5 1865	11 AM Capt JC Van Duzer Nashville		42	7	17	1	2	none	0		1
 9274	382	2	Capt J. C. Van Duzer Nashville Wash'n Sept 5th 1865	Capt J. C. Van Duzer Nashville		40	4	11	2	1	none	3		1
 9275	383	0	10 am DH Bates West Point Wash Sept 6" 1865	10 am DH Bates West Point		36	8	10	1	1	none	4		1
@@ -870,7 +870,7 @@ pointer	page	entry_on_page	header	addressee	sender_clear	words	k1	k2	k9	cipher_g
 9282	390	1	12 noon DH Bates Newport RI  Wash Sept 14 1865	12 noon DH Bates Newport RI		20	3	2	1	clear	none	3		3
 9282	390	2	10 am DH Bates Boston  Wash Sept 16 1865	10 am DH Bates Boston		35	3	7	1	1	none	3		1
 9283	391	0	5 PM DH Bates Boston  Wash Sept 16 1865	5 PM DH Bates Boston		56	8	17	0	1	none	3		1
-9283	391	1	5 PM DH Bates Boston  Wash Sept 16 1865	5 PM DH Bates Boston		28	2	6	0	9	none	4		1
+9283	391	1	5 PM DH Bates Boston  Wash Sept 16 1865	5 PM DH Bates Boston		28	2	6	0	9	none	4	LS3-R9 not read: book not in hand (LS3-K)	1
 9284	392	1	3 PM JC Gregg Atlanta  Wash Sept 18 1865	3 PM JC Gregg Atlanta		127	32	52	9	1	officialrecordso0009unse@leaf0(cov7)	7		3
 9284	392	2	530 PM DH Bates  Washington Sept 18 '65	530 PM DH Bates		70	9	18	1	1	none	4		1
 9285	393	1	7 PM JD Congdon St Louis  Wash Sept 20 1865	7 PM JD Congdon St Louis		87	10	26	0	1	none	4		1
