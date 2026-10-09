@@ -9229,9 +9229,10 @@
       "key": "published",
       "audit_refs": [
         "AUDIT.md '## AUDIT 1 f.228 (SIG-V228)'",
-        "AUDIT.md '## AUDIT 2 f.228 (AUD2-SIG-228)'"
+        "AUDIT.md '## AUDIT 2 f.228 (AUD2-SIG-228)'",
+        "AUDIT.md '## AUDIT 3 f.228 (UNA3-BAL)'"
       ],
-      "audit_status": "two audits",
+      "audit_status": "three audits",
       "depth": "D2",
       "depth_pct": 36.0,
       "depth_unread": {
@@ -9245,8 +9246,8 @@
       "kind": "reading",
       "title": "Baluze 170 f.228r-v: Chavigny to d'Avaux, Amiens, 25 Aug 1640, cipher passages on the Landgravine of Hesse-Kassel, the dukes of Lüneburg and the enemy",
       "grade": "N3",
-      "line": "Read with Tomokiyo's published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens H, letter signs M); apart from the four words Tomokiyo quotes ('sont mal satisfaits de'), no prior decipherment or printed text located in Avenel VI-VIII, Rommel's Geschichte von Hessen VIII, Charveriat II, the Guebriant histories, Boppe 1887, Internet Archive full text, Bougeant II, the Mercure francois XXIII, Siri VIII, OpenAlex or CrossRef (searched 8-9 Oct 2026, two audits); Google Books could not be searched.",
-      "gap": "AAE Correspondance politique and Chavigny's registers unread; Google Books unsearched in both audits (429, daily quota 9 Oct); JSTOR rows queued; SO-BAL170-F228 queued; 15 mark-read regrades returned to I, not yet applied in the decode files -- applied, they change two values (f.228r 73 Bavier->so, 29 traitte->gu) and the fr17 judge goes from PASS by 0.010 to FAIL by 0.038 (AUD2-SIG-228)",
+      "line": "Read with Tomokiyo's published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens H, letter signs M); apart from the four words Tomokiyo quotes ('sont mal satisfaits de'), no prior decipherment or printed text located in Avenel VI-VIII, Rommel's Geschichte von Hessen VIII, Charveriat II, the Guebriant histories, Boppe 1887, Internet Archive full text, Bougeant II, the Mercure francois XXIII, Siri VIII, Google Books, OpenAlex or CrossRef (searched 8-9 Oct 2026, three audits); the Papiers de Richelieu volume for the Empire 1636-1642 lists no item of this date but was read only in snippet view.",
+      "gap": "Papiers de Richelieu, Empire allemand 1636-1642 (prints Chavigny-d'Avaux despatches from Baluze 168-171): no item of 25 Aug 1640 in its snippeted table of contents, notes unread (LOCAL-QUEUE L71); AAE Correspondance politique and Chavigny's registers unread; SO-BAL170-F228 queued; JSTOR both families answered 8 Oct, no hit. Grade correction applied 9 Oct 00:24 (H 56 / I 27): fr17 FAILs by 0.038, above all 40 shuffled nulls (judge cannot decide)",
       "phrases": [
         "quelque crainte que la langrave et les ducs de Lunebourg",
         "le traitte qu'elle a fait depuis peu avec le Roy"
@@ -9261,9 +9262,9 @@
       "completeness": "154 cipher tokens: H 56, M 70, I 27, U 1 (verifier-corrected from the solver's H 71 / I 12)",
       "unresolved_spans": "f.228r a_L02 '73' unmarked (name unread; Tomokiyo '*'), b_L02 wave sign; f.228v b_L02 '13' (verb before 'avec les ennemis')",
       "reading_version": "SIG-B228B 8 Oct 2026 (reading_b170f228.txt), grades corrected by SIG-V228",
-      "fields_source": "baluze167-davaux-1637/AUDIT.md '## AUDIT 1 f.228 (SIG-V228)' sections 5-6",
+      "fields_source": "baluze167-davaux-1637/AUDIT.md '## AUDIT 1 f.228 (SIG-V228)' sections 5-6, '## AUDIT 2 f.228 (AUD2-SIG-228)', '## AUDIT 3 f.228 (UNA3-BAL)'",
       "depth_sentence": "In cipher Chavigny reports a fear that the Landgravine and the dukes of Lüneburg would [verb unread] with the enemy, so that he and [73=] would each be forced to withdraw to his own side; of the Landgravine he can hardly believe it, given the treaty she has recently made with the King, but he does not say the same of the dukes of Lüneburg.",
-      "depth_check": "cipher clause not met (longest H stretch ~11 letters); code clause: 10: les ('avec les ennemis', 'les ducs de Lunebourg') and 9: luy ('avec luy', 'luy et Bavier') read sensibly; fr17 PASS by 0.010 (SIG-B228B), not independent of the letter-sign labels; no rule-7 fresh re-derivation yet",
+      "depth_check": "cipher clause not met (longest H stretch ~11 letters); code clause met: 10: les ('avec les ennemis', 'les ducs de Lunebourg'); fr17 FAIL by 0.038 on the corrected grades (AUD2-SIG-228), above all 40 shuffled nulls; no rule-7 fresh re-derivation yet",
       "depth_note": "letter signs matched to f.229 exemplars by blind reads with decoy gates at their minimum; 15 Sonnet mark regrades demoted to I by the verifier; held at D2",
       "key_note": "Tomokiyo's table (published, credited) plus our letter-sign shape values from f.229 exemplars",
       "superseded_by": ""

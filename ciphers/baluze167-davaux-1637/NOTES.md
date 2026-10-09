@@ -1236,3 +1236,32 @@ Second audit of f.228r-v: AUDIT.md "## AUDIT 2 f.228 (AUD2-SIG-228)": N3 held (T
 next solver step: withdrawing the 15 sig_marks regrades (H 56 / I 27) is not value-neutral -- f.228r 73= Bavier -> 73 "so" and 29: traitte
 -> 29 "gu", and the fr17 judge then FAILs (-0.956 vs real_p05 -0.918; nulls max -1.172; positive control 3/3): `aud2sig228/judge_corrected.out`.
 Re-run b167228/judge_null.py after applying the grade change.
+
+## UNA3-BAL verifier pointer (9 Oct 2026, account 1, for the account-4 orchestrator), 20:42-21:0x UTC by date -u
+The briefed step (a separate verifier on the f.228 reading) had already been done twice (AUDIT 1 f.228 SIG-V228, AUDIT 2 f.228 AUD2-SIG-228);
+the SIG-B228B Verdict line above was stale. Third audit on the residue only: AUDIT.md "## AUDIT 3 f.228 (UNA3-BAL)". Google Books now searched
+(46 API calls, no hit on the letter's wording): **N3 held, D2 held (about 36%)**. A source family neither audit had searched: *Les papiers de
+Richelieu*, Empire allemand, 1636-1642 (Hartmann, Wild), which prints Chavigny-to-d'Avaux despatches from Baluze 168-171 with `[: :]`
+brackets (by snippet). Its table of contents has no item between Amiens 4 Aug and 13 Sept 1640, so f.228-230 is apparently not printed as an
+item; notes unread. **It does print "Baluze 168, fol. 246-248v°, Kopie"**, the folder's 168 f.246 bare passage: whether its cipher passage
+is printed in clear is open (LOCAL-QUEUE L71). status.json f.228 row's stale `gap`/`depth_check` corrected.
+
+## Remaining gaps (UNA3-BAL, 9 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 about 36% (three audits;
+H 56, M 70, I 27, U 1 of 154; fr17 FAIL by 0.038 on the corrected grades, above all 40 shuffled nulls). 168 f.246-247v: transcribed by two
+blind passes (err_2reader 0.280), letter signs unlabelled; printed as a "Kopie" item in the Papiers de Richelieu 1636-1642 volume (snippet).
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228r-v reading depth - blocker: not-attempted; the letter signs stay M until a shape-level control on this hand; next: a shape-level control (f.228/f.229 letter signs against the glossed Baluze 170 leaves), ~$3
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (9 Oct 2026, UNA3-BAL)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71)
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); untried: a printed clear text of 168 f.246 (L71) or a glossed text in the f.247 hand
+- [x] image-check: native crops exist for all five bare passages; f.229 passed twice and spot-checked; f.228 mark re-reads closed (SIG-B228B gate FAIL, no further machine mark pass)
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228)
+Verdict: keep going: 2 internal gaps; cheapest next: a shape-level control of the f.228/f.229 letter signs against the glossed Baluze 170 leaves (~$3), and the 168 f.246 step once L71 answers

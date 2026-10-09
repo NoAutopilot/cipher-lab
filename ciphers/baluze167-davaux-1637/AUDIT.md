@@ -499,3 +499,80 @@ the letter's text or a decipherment beyond Tomokiyo's fragment.
 - SIG-V228's distinctive phrase "de le traitter" (f.228r) and the SO prompt's "de le traitter" rest on a mark regrade: corrected in
   `second-opinions/PROMPT-chatgpt-b170f228.md` (row SO-BAL170-F228, still queued) and in status.json.
 - Not changed: the reading files, to_pipe.py, decode.py, keys (no decoding in this brief).
+
+## AUDIT 3 f.228 (UNA3-BAL), 9 Oct 2026, 20:42-21:0x UTC by date -u
+
+Verifier: UNA3-BAL (account 1, Opus), for the account-4 orchestrator, brief `.claude/briefs/runs/2026-10-09-account4-orch-unassigned-3.md`
+section "UNA3-BAL". Separate from the solvers (B167-228, SIG-B228, SIG-B228B) and from both earlier f.228 auditors (SIG-V228, AUD2-SIG-228).
+No decoding. Files: `una3bal/` (Google Books API responses as JSON).
+
+### 1. Scope: the briefed step was already done twice
+
+The brief was drawn from NOTES.md's SIG-B228B Verdict line ("a separate verifier on the f.228 reading"), which predates AUDIT 1 f.228
+(SIG-V228) and AUDIT 2 f.228 (AUD2-SIG-228); `tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228r;
+date=1640-08-25;sender=Chavigny;recipient=Avaux;place=Amiens' --step-type second-audit` -> `verdict step: LEAD ... WORK-QUEUE AUD2-SIG-228 done
+2026-10-09 00:36`, exit 4. Answer to the LEAD: a third full audit would repeat both; this audit works only the residue both left open,
+**Google Books** (HTTP 429 in AUD2-SIG-228, daily quota), and re-checks the committed state.
+- State: `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> `ciphertext_b170f228.txt: tokens 154: H 56, I 27, M 70, U 1
+  ... reading up to date`, exit 0 (20:4x UTC). The SIG-V228 grade correction is applied in the files (NOTES "SIG-V228 correction applied").
+- `python3 tools/depth_check.py` exit 0 (20:48 UTC).
+- JSTOR, both families, already answered for f.228: JSTOR-QUEUE.tsv rows (i) "Chavigny AND (Landgrave OR Landgravine) AND (Lunebourg OR
+  Lüneburg) AND 1640 AND (chiffre ...)" and (ii) "\"le traitté qu'elle a fait depuis peu avec le Roy\"", both done 8 Oct 2026, no hit about
+  the letter. SO-BAL170-F228 is queued. No further JSTOR or SO row is needed.
+
+### 2. Google Books (API, key, country=US; 46 calls, 1.6 s apart, all HTTP 200; `una3bal/gbooks*.json`)
+
+| query | result |
+|---|---|
+| `"mal satisfaits" Langrave Lunebourg`; `Chavigny Avaux 1640 Landgrave Lunebourg Amiens`; `"ajustemens raisonnables pour le bien"` | 0 volumes |
+| `"traitte qu'elle a fait depuis peu avec le Roy"`; `"quelque crainte que la Langrave"`; `"contraints de se retirer chacun de leur coste"`; `"Madame la Langrave et les ducs"` | word-scatter hits only (Barbeyrac 1739, Michelet, Bossuet, Avenel's Richelieu letters 1642, *Teutsche Reichs-Archiv*); no snippet carries the letter's wording |
+| `"ducs de Lunebourg" Chavigny 1640` | 1 volume: **Les papiers de Richelieu. Empire allemand, 1636-1642** (Google ids nUsjAQAAIAAJ, qIcMAQAAMAAJ, 6tRnAAAAMAAJ; Anja Hartmann, Adolf Wild; NO_PAGES, snippet only) |
+
+**The edition (a source family neither earlier audit searched).** *Les papiers de Richelieu*, Section politique extérieure, Empire allemand,
+the 1636-1642 volume (Google Books dates the record 1982; editors Anja Hartmann and Adolf Wild per the record). Its snippets show it prints
+Chavigny-to-d'Avaux despatches **from these very volumes**, with German headnotes and `[: ... :]` brackets inside the French text, e.g. no. 142
+"Chavigny an d'Avaux, Rueil 1639 II 19, Paris, BN, Fonds Baluze 169, fol. 191-193, Ausfertigung"; "Baluze 170, fol. 258-259" (Rueil
+1640 XI 10, with "[: le traitté qu ..."); "Baluze 170, fol. 147-148, Konzept"; "Baluze 171, fol. 6-7". What the brackets mark was not seen
+in an explanatory note; that they mark the passages in cipher is an inference from the pattern, not established.
+For **f.228 (Amiens, 25 Aug 1640)** the edition's table of contents, as snippeted, runs "... [no. 183] ... Amiens 1640 VIII 4 ... 411 /
+184 - Ferdinand III. an den Reichstag, Regensburg 1640 IX 13 ... 414" -- no numbered item between 4 Aug and 13 Sept 1640, so the f.228-230
+letter is **apparently not printed as an item**. Queries `"Amiens 1640 VIII 25"`, `"Baluze 170" "fol. 228"`, `"fol. 228-230"`, `"Baluze 170"
+"fol. 229"` returned nothing in this edition (the one `"fol. 228-229"` hit is the 1630-1635 volume, Mantua, unrelated). A quotation in a
+footnote or headnote of another item is **not excluded** (snippet view only). Queued for a page view: LOCAL-QUEUE row L71.
+
+Outside this item (reported, not worked): the same edition prints **"Baluze 168, fol. 246-248v°, Kopie"** with a German headnote (Vienna,
+the Emperor wants no general peace, only to divide Sweden and France). That is the folder's f.246-247v bare passage (168 f.246). Whether the
+cipher passage appears there in clear decides prior work for that passage and may give a clear text for the f.247 hand (the NOTES gap "look for
+a glossed text in the f.246-248 hand"). Also in L71.
+
+### 3. Classification (keep or change)
+
+| item | prior plaintext | prior decipherment | class | key | confidence |
+|---|---|---|---|---|---|
+| Baluze 170 f.228r-v (Chavigny to d'Avaux, Amiens, 25 Aug 1640) | Tomokiyo's four words only; the Papiers de Richelieu 1636-1642 volume has no item of this date by its snippeted table of contents | Tomokiyo's fragment (KNOWN-PART) | **N3 held**, the four-word fragment N1 | published (Tomokiyo) plus ours (letter-sign shape values) | moderate-to-low: the edition's notes are unread (L71), AAE Correspondance politique and Chavigny's registers unread |
+
+Why not N4: a principal edition of exactly this correspondence (the Papiers de Richelieu) is now known and read only by snippet.
+Why not lower: no searched family carries the letter's text.
+
+- **Safe sentence (replaces AUD2-SIG-228's):** "The cipher passages on Baluze 170 f.228r-v (Chavigny to d'Avaux, Amiens, 25 Aug 1640) were
+  read by us with Tomokiyo's published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens at grade
+  H, the letter signs M); apart from the four words Tomokiyo already quotes ('sont mal satisfaits de'), no prior decipherment or printed text
+  was located in Avenel's Richelieu letters, Rommel's *Geschichte von Hessen* VIII, Charvériat, the Guébriant histories, Boppe 1887, Bougeant
+  II, the *Mercure françois* XXIII, Siri VIII, Internet Archive full text, Google Books, OpenAlex or CrossRef (searched 8-9 Oct 2026, three
+  audits); the *Papiers de Richelieu* volume for the Empire 1636-1642 lists no item of this date but was read only in snippet view."
+- **Unsafe sentences:** AUD2-SIG-228's list, plus "Google Books could not be searched" (it was, 9 Oct 2026) and any sentence implying the
+  Papiers de Richelieu were checked in full.
+
+### 4. Depth
+
+No change from AUD2-SIG-228: 56/154 = 36% H/C/S on the committed (corrected) decode; cipher clause not met; code clause met by `10:` "les"
+("avec les ennemis", "les ducs de Lunebourg"). **D2 held**, "partially deciphered (about 36%)". The D2 sentence stands as AUD2-SIG-228 wrote it.
+
+### 5. Postmortem and corrections
+
+- The step was briefed from a Verdict line two audits stale: the SIG-B228B "## Escalation" Verdict was never superseded after AUDIT 1/2 f.228,
+  and NEXT-STEPS.tsv copied it. Corrected by a fresh "## Remaining gaps" / "## Escalation" / Verdict in NOTES.md (UNA3-BAL).
+- status.json f.228 row: `depth_check` still cited "fr17 PASS by 0.010" and "9: luy" as a code example, and `gap` said the regrades were not
+  yet applied and Google Books unsearched; corrected to the committed state (fr17 FAIL by 0.038 after the correction; regrades applied 9 Oct
+  00:24; Google Books searched; Papiers de Richelieu snippet-only).
+- Requests: www.googleapis.com 46 (all 200). No other host.
