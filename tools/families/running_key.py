@@ -4,7 +4,9 @@ Control design: as running_key.py --control: a plaintext window from one corpus 
 a different book as key (both books held out of the models), one message per target message length.
 Solver: running_key.build_models + decode_message, the same call the target gets. Needs at least three corpus
 texts (plain book, key book, one to train on): give the family a directory corpus such as tools/data/de20.
-params: tabula (vig), order (6), beam (3000), per_hyp (10), polish (0/1), discount (0.9). Slow: a 924-letter
+params: tabula (vig), order (6), beam (3000), per_hyp (10), polish (0/1), discount (0.9), noise (0): a share p of
+the control's cipher letters is redrawn at the control ciphertext's own letter frequencies (the homophonic noise recipe
+in the letter domain; LAG-NEXT 9 Oct 2026, so the control can bracket a target's measured transcription error). Slow: a 924-letter
 target at beam 3000 runs for minutes; use beam 200 for a smoke test."""
 import random, types
 import running_key as rk
@@ -36,6 +38,16 @@ def make_control(spec, seed, corpora, params):
         K, _ = draw_window(ktext, n, rng.randrange(10 ** 6))
         msgs.append([rk.A[rk.encipher(tab, rk.IDX[a], rk.IDX[b])] for a, b in zip(P, K)])
         plains.append(P)
+    noise = float(params.get("noise", 0) or 0)
+    if noise:
+        nrng = random.Random(seed + 9000)
+        cnt = {}
+        for m in msgs:
+            for c in m:
+                cnt[c] = cnt.get(c, 0) + 1
+        labels = sorted(cnt)
+        weights = [cnt[c] for c in labels]
+        msgs = [[nrng.choices(labels, weights)[0] if nrng.random() < noise else c for c in m] for m in msgs]
     train = [corpora[i] for i in idx[2:]]
     return msgs, "".join(plains), train
 
