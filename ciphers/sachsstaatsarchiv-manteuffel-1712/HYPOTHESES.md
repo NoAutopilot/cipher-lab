@@ -201,3 +201,19 @@ Exploratory, after scoring (not a gate, not grade-bearing): the key's own decode
 Gate unchanged (24/36 vs p99 9 PASS, `--check` exit 0); no token changed. The y=9 hypothesis is untested here: its only support on this leaf is
 the gloss it would be scored against (circular). V-MANT08's two 4->9 corrections on 0390/0391 are the same confusion on other leaves. Test: a
 pre-registered y-glyph census on leaves whose gloss is not the scoring target (eye63.tsv, NOTES "MANT-EYE63R").
+
+### MANT-0136 (9 Oct 2026, LANE FAMILY-A2f account 2): 694/09 0136 P.S. ("chiffre ... celuy du proces"), PREREG f0136_09/PREREG-MANT-0136.md (committed d339fbe20 before scoring)
+
+| date / job | gate | control | target | verdict |
+|---|---|---|---|---|
+| 9 Oct 2026 MANT-0136 (a), blind gloss pass A | f0136_09/gloss_gate.py --gloss gloss_A.tsv: key.tsv vs the r08 gloss, 1 span, 14 tokens, 13 keyed | key values permuted over codes, 1000 draws, seed 8: mean 1.74, p95 3, p99 4, max 6 | S 9/13 (0.692) | **PASS** |
+| 9 Oct 2026 MANT-0136 (a), blind gloss pass B | same, gloss_B.tsv | mean 1.84, p95 3, p99 4, max 6 | S 8/13 (0.615) | **PASS** |
+| 9 Oct 2026 MANT-0136 (b), unglossed tokens | f0136_09/judge_gate.py: fr18 4-gram of the key.tsv letter decode of tokens outside both gloss spans (62 letters); power control 0085 r9+r10 real -1.471 vs p95 -1.684 PASS | letter values permuted over letter codes, 1000 draws, seed 136: mean -2.017, p95 -1.759, p99 -1.675, max -1.554 | -1.401, 0/1000 permuted >= real | **PASS** |
+
+Grades (grades.tsv): H 0, C 8, S 51, M 15, I 0, U 1 of 75. Rule-4 slots raised (M, not changes to key.tsv): 170 (key 'le') reads in
+sense as a person twice ('faire obtenir a 170 la Livonie pour luy & pour ses descendens'; '170 comme bien d'autres auroit raison d'etre
+sur ses gardes'); 66 = a in 'la Po[66]te a craindre' where sense needs r (worker eye: gloss 'r' under it, unscored); 20 = b in
+'craindr[20]' where sense needs e (worker eye: gloss 'e', unscored); r09 'a ce p[6][29]nce' would need 6 = r, 29 = i ('a ce prince');
+229 glossed 's' in both blind passes, most likely 29 (= s) with a struck 2. r01 (8 codes after 'negociation secrete de') and r02
+(3 codes, subject of "m'en parla") decode to no French under the table: probably names spelt in letters or a nomenclator outside
+key.tsv. Test: two further blind gloss passes at 3x on r07 under a PREREG amendment (would score 66, 20, 120, 26 against a gloss).

@@ -1,0 +1,78 @@
+# gate (a) A PASS, B PASS; gate (b) PASS (power control PASS)
+# tokens 75: H 0, C 8, S 51, M 15, I 0, U 1
+tokid	code	key_value	conf	grade	why
+694-09_0136_r01.1	44	l	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r01.2	16	o|ou|ous	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r01.3	12	l	low	M	low-conf transcription
+694-09_0136_r01.4	8	h	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r01.5	33	o	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r01.6	5	v	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r01.7	35	e	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r01.8	42	l	low	M	low-conf transcription
+694-09_0136_r02.1	39	i	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r02.2	12	l	low	M	low-conf transcription
+694-09_0136_r02.3	7	g	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r03.1	257	Le roi de Prusse	high	M	name/word code (key value shown, identification I)
+694-09_0136_r04.1	170	le	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r04.2	97	la	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r04.3	44	l	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r04.4	39	i	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r04.5	5	v	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r04.6	22	o|a	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r04.7	21	n	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r04.8	9	i	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r04.9	10	e	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r05.1	150	le Roi de Pologne	high	M	name/word code (key value shown, identification I)
+694-09_0136_r06.1	177	le czar	high	M	name/word code (key value shown, identification I)
+694-09_0136_r06.2	21	n	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r06.3	66	a	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r06.4	5	v	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r06.5	16	o|ou|ous	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r06.6	9	i	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r06.7	28	t	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r06.8	17	p	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r06.9	44	l	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.1	6	u	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.2	51	s|sa	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.3	79	la	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.4	34	p	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.5	22	o|a	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.6	66	a	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.7	28	t	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.8	35	e	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.9	50	a	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.10	15	c	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.11	27	r	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.12	66	a	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.13	46	i	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.14	14	n	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.15	120	d	low	M	low-conf transcription
+694-09_0136_r07.16	26	r	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.17	20	b	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.18	170	le	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r07.19	30	c	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r08.1	16	o|ou|ous	high	M	glossed, gloss does not match key value
+694-09_0136_r08.2	31	m	high	M	glossed, gloss does not match key value
+694-09_0136_r08.3	13	m	high	M	glossed, gloss does not match key value
+694-09_0136_r08.4	35	e	high	C	gloss matches key in both blind passes
+694-09_0136_r08.5	55	b|[a]	high	C	gloss matches key in both blind passes
+694-09_0136_r08.6	9	i	high	M	glossed, gloss does not match key value
+694-09_0136_r08.7	2	e	high	C	gloss matches key in both blind passes
+694-09_0136_r08.8	21	n	high	C	gloss matches key in both blind passes
+694-09_0136_r08.9	100	d	high	C	gloss matches key in both blind passes
+694-09_0136_r08.10	50	a	high	C	gloss matches key in both blind passes
+694-09_0136_r08.11	67	u	high	C	gloss matches key in both blind passes
+694-09_0136_r08.12	59	t	high	C	gloss matches key in both blind passes
+694-09_0136_r08.13	27	r	high	M	gloss matches in one pass only
+694-09_0136_r08.14	229		low	U	not in key.tsv
+694-09_0136_r09.1	50	a	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r09.2	15	c	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r09.3	10	e	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r09.4	17	p	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r09.5	6	u	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r09.6	29	s	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r09.7	14	n	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r09.8	30	c	high	S	unglossed letter token; gates (a) both passes and (b) PASS
+694-09_0136_r09.9	35	e	low	M	low-conf transcription
+694-09_0136_r10.1	12	l	low	M	low-conf transcription
+694-09_0136_r11.1	39	i	low	M	low-conf transcription
