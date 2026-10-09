@@ -1,4 +1,4 @@
-# PREREG MQS-PILE-REGISTER (LANE MQS-3, account 4), written 9 Oct 2026 10:3x UTC by date -u, before any control run
+# PREREG MQS-PILE-REGISTER (LANE MQS-3, account 4), written 9 Oct 2026 10:15 UTC by date -u (first draft of this line said 10:3x, wrong), before any control run
 
 Tool: `tools/pile_register.py` (register of held + referenced letters per pool, built on `tools/holder_export.py`'s
 `read_list`/`build_rows`; text timeline; `--refs-scan EDITION.txt --dates DATES.tsv` greps an edition's letters at the
@@ -44,3 +44,28 @@ PASS -> shelf grade `controlled-only` (leads only, never a held/referenced decis
 reading the edition). Miss -> shipped `weak` with both numbers; nothing run on a target from it; not re-briefed.
 
 The register itself (held/referenced classes, timeline, duplicate check) has offline tests only: plumbing.
+
+## Result (9 Oct 2026, 10:17 and 10:18 UTC by date -u)
+
+`python3 tools/tests/mqs_pile_register_control.py` (header parser fixed for OCR month tails and blank lines BEFORE
+the first scan: 62 -> 87 dated letters; no recall had been computed at that point).
+
+| run | G | K | references resolved | recall | null mean | null p95 | gate |
+|---|---|---|---|---|---|---|---|
+| 1 (10:17) | 87 | 9 | 32 | 0.111 (1/9) | 0.060 | 0.222 | FAIL |
+| 2 (10:18, after a bug fix) | 87 | 9 | 33 | 0.111 (1/9) | 0.064 | 0.222 | FAIL |
+
+Run 2 follows a code defect found by the offline tests, not a tuning: the reference regex's trailing context was a
+consuming group, so a second reference inside the first one's 48-character context ('your letter of Oct. 20 and my
+letter of Dec 31') was skipped; it is now a lookahead. Same gate, same seed; the number did not move.
+
+Why it misses (diagnostic, read after the gate): the one hit is Armstrong 25 Oct 1806, named in Bowdoin's 29 Oct reply
+('your letters of the 25th instant'). Of the other eight, the reply names a different letter (Shepard's 19 Jan, not
+printed: a true referenced-but-missing letter the ground truth cannot score), names a range ('from the 18 of June to the
+31 of ...'), or opens with no back-reference. K defined by 'a reply exists' over-counts the letters a reply actually
+names, and K = 9 is too small for the gate to separate from the null at p95 (one hit = 0.111).
+
+Verdict: `--refs-scan` ships shelf grade `weak` with both numbers; it yields leads only; nothing is run on a target
+from it; not re-briefed. The register (held / referenced / held? / timeline / --check) is plumbing, grade n/a, offline
+tests only. A better known answer would be an edition whose editor lists the letters each letter acknowledges (a
+calendar with 'answers X of D' notes), scored per acknowledged letter -- a one-line suggestion, not this job.
