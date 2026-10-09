@@ -8337,9 +8337,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM4)'"
+        "AUDIT.md '## AUDIT (FV-FM4)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-8)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM4 verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -8359,7 +8360,7 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Col. R. C. Webster (Chief QM, Fort Monroe) to Brig. Gen. Rucker, 19 Sept 1864, transport for about 5,700 sick prisoners to be exchanged (E193)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 19 Sept 1864 the chief quartermaster at Fort Monroe, Col. R. C. Webster, told the Washington depot quartermaster that Butler had ordered him to provide transportation by the 22nd for about 5,700 sick prisoners to be exchanged at some point South, destination not yet known. The telegram was not located in the Official Records (ser. I vol. 42 pt 2, ser. II vol. 7), Butler's printed correspondence (vols. IV-V), the Grant Papers vol. 12 or the Huntington's full-text search (searched 8-9 Oct 2026).",
+      "line": "Read at grade H with War Department Cipher No. 1: on 19 Sept 1864 the chief quartermaster at Fort Monroe, Col. R. C. Webster, told the Washington depot quartermaster that Butler had ordered him to provide transportation by the 22nd for about 5,700 sick prisoners to be exchanged at some point South, destination not yet known. The telegram was not located in the Official Records (ser. I vol. 42 pts 2-3, ser. II vol. 7), Butler's printed correspondence (vols. IV-V), the Grant Papers vol. 12 or the Huntington's full-text search (searched 8-9 Oct 2026).",
       "gap": "N3 (weak: the body is mostly clear in the holder's public transcription; the key supplies Butler, transportation, 22nd, 5,700, South, Quartermaster): QMG letters received (RG 92), autumn 1864 exchange literature, press of 19-30 Sept 1864, Google Books (429 on 8 Oct) unread. Depth D2: no external check of the content (OR II/7 Sept exchanges context only); D3 withheld",
       "depth": "D2",
       "completeness": "17 H of 17 code-word groups ('Webster', 'Toby', 'Are see' plain)",
@@ -8371,16 +8372,17 @@
         "Huntington mssEC 25 (obj 5952) p.240, pointer 5784, E193"
       ],
       "depth_sentence": "On 19 Sept 1864 Fort Monroe's chief quartermaster reported that Butler had ordered transport ready by the 22nd for about 5,700 sick prisoners to be exchanged somewhere South.",
-      "depth_check": "code clause: Knox = Butler (E191 and passim), Whig = Transportation, Animal = Monroe passim; signer identified from Butler V (Col. R. C. Webster, Chief Q. M., Fort Monroe); no external check of the content; image checked by FV-FM4; D3 withheld",
+      "depth_check": "code clause: Knox = Butler (E191 and passim), Whig = Transportation, Animal = Monroe passim; signer identified from Butler V (Col. R. C. Webster, Chief Q. M., Fort Monroe); no external check of the content; image checked by FV-FM4; D3 withheld; AUD2-LEDGER-8 (9 Oct 2026): signer re-checked in OR I/42 pt 2 (SO 279, 24 Aug 1864, Webster chief QM of the department); D2 kept",
       "depth_note": "17 H of 17 code-word groups ('Webster', 'Toby', 'Are see' plain)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM4)'"
+        "AUDIT.md '## AUDIT (FV-FM4)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-8)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM4 verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -8390,7 +8392,7 @@
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM4)' section 4",
       "reading_version": "FM-R2b 8 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM4) section 3",
-      "unresolved_spans": "'pro' (line 2); signature 'Barry'",
+      "unresolved_spans": "'pro' (line 2); signature 'Barry' (I: probably Terry, AUD2-LEDGER-8)",
       "depth_unread": {
         "names_codes": "0",
         "other": "1"
@@ -8399,9 +8401,9 @@
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
-      "title": "Eckert 1864 (Fort Monroe ledger): R. O'Brien (Butler's HQ) to Sheldon for Captain Langdon, 1st U.S. Artillery, 4 Nov 1864, open your own letter of instructions if General Hawley is gone (E194)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 4 Nov 1864 Butler's headquarters told Captain Langdon of the 1st U.S. Artillery, shipping for New York, that if General Hawley had already gone when he reached Fort Monroe he should open his own letter of instructions and give the corresponding order to the vessels that had none. Hawley's report in the Official Records (ser. I vol. 43 pt 2) prints the movement and the sealed instructions, not this telegram (searched 8-9 Oct 2026).",
-      "gap": "N3 (weak: the operative sentence is clear in the holder's public transcription; the key supplies Captain, 1st, Artillery, New York, Monroe, General): Battery M 1st U.S. Artillery histories, Hawley papers, New York press 5-15 Nov 1864, Google Books unread; 'pro' and the signature 'Barry' unexplained (M)",
+      "title": "Eckert 1864 (Fort Monroe ledger): Army of the James HQ (signed Maj. Gen. 'Barry', probably Terry; operator R. O'Brien) to Captain Langdon, 1st U.S. Artillery, 4 Nov 1864, open your own letter of instructions if General Hawley is gone (E194)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 4 Nov 1864 the Army of the James headquarters (signed by a major general the ledger writes 'Barry', probably Terry) told Captain Loomis L. Langdon of Battery M, 1st U.S. Artillery, shipping for New York, that if General Hawley had already gone when he reached Fort Monroe he should open his own letter of instructions and give the corresponding order to the vessels that had none. The Official Records (ser. I vol. 42 pt 3, vol. 43 pt 2) print the movement, Langdon's orders of 2 Nov and Hawley's sealed instructions, not this telegram (searched 8-9 Oct 2026).",
+      "gap": "N3 (weak: the operative sentence is clear in the holder's public transcription; the key supplies Captain, 1st, Artillery, New York, Monroe, General): Battery M 1st U.S. Artillery histories, Hawley papers, New York press 5-15 Nov 1864, Google Books unread; 'pro' unexplained (M); signature 'Barry' probably Terry (I)",
       "depth": "D3",
       "completeness": "15 H of 16 code-word groups ('Hawley', 'Barry' plain; 'pro' M)",
       "phrases": [
@@ -8412,7 +8414,7 @@
         "Huntington mssEC 25 (obj 5952) p.261, pointer 5805, E194"
       ],
       "depth_sentence": "On 4 Nov 1864 Captain Langdon's battery, bound for New York in the election-week troop movement, was told to open its own sealed instructions if General Hawley had already sailed from Fort Monroe.",
-      "depth_check": "code clause: France = New York, Appian/Animal = Monroe passim (5807, E193); external (non-statistical): OR I/43 pt 2 Hawley's report (Battery M, 1st U.S. Artillery, Captain Langdon; sealed instructions to each transport; Hawley sailing ahead); image checked by FM-R2b and FV-FM4; matched control FM-R2b",
+      "depth_check": "code clause: France = New York, Appian/Animal = Monroe passim (5807, E193); external (non-statistical): OR I/43 pt 2 Hawley's report (Battery M, 1st U.S. Artillery, Captain Langdon; sealed instructions to each transport; Hawley sailing ahead); image checked by FM-R2b and FV-FM4; matched control FM-R2b; AUD2-LEDGER-8 (9 Oct 2026): second external check OR I/42 pt 3 pp.490, 504, 517 (Langdon's 2 Nov orders, Terry's force list, artillery sails at once); R. O'Brien = USMT operator (p.197); D3 kept",
       "depth_note": "15 H of 16 code-word groups ('Hawley', 'Barry' plain; 'pro' M)"
     },
     {

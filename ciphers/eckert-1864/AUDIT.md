@@ -6427,3 +6427,103 @@ the same plain-name-as-code slip FV-FM3c found in E189/E191), E193's "by the 20t
 in reading.md. The side find on page 5805/0 shows the same page carries a printed sibling (Butler V p.312): a reader of the unfiled rows
 of a page should grep Butler V for the signer's name before decoding. Corrections are carried by FIX (a reading.md regeneration is the
 decoder's, rule 7); this section records them.
+
+## AUDIT 2 (AUD2-LEDGER-8)
+
+Second verifier AUD2-LEDGER-8 (account 3, for LANE-VERIFY-4), 9 Oct 2026, 00:15-00:3x UTC by `date -u`; a separate session from the
+reader FM-R2b and the first auditor FV-FM4 (both account 1), not protecting either's conclusions. Account 3 had read and audited
+neither item before. Scope: **E193, E194**. Nothing decoded; key values looked up in key.md only. Key source for both: `period`.
+Depth keep-or-lower (.claude/briefs/runs/2026-10-08-acct3-depth-bar.md). No spec, so `judge_plaintext.py` not run.
+
+### Prior-work checks 3-5
+- `prior_work.py eckert-1864 --item-spec '...;canvas=5784;date=1864-09-19;sender=Webster;recipient=Rucker' --step-type second-audit
+  --fetch` and the same for 5805 / 1864-11-04 / OBrien / Langdon: exit 4 for both, owing two target-level LEADs (ECK-PAGEFIX, the
+  mssEC 19 page column; HOLDER-EXPORT, the delivery sheet), neither covering these units: CLEAR. Tomokiyo hits are folio-number
+  coincidences (viete.htm f.240, mirabeau.htm/spanish3D.htm f.261): CLEAR. Cached solver files CLEAR; aaymeloglu UNCHECKED-NET (no
+  clone). Editions: cached OR window CLEAR; the two uncached volumes that matter (OR I/42 pts 2-3) fetched this session (below).
+- Duplicate diff: FV-FM4's diff stands (pointers 5784/5805 occur only in E193/E194's own headers). **No duplicate.**
+- **Print, fetched once to scratch:** `warofrebellion422unit_djvu.txt` (OR I/42 pt 2, Aug-Sept 1864) and `warofrebellion423unit_djvu.txt`
+  (OR I/42 pt 3, Oct-Dec 1864) from archive.org (2 requests), normalized letters-only grep. **Positive control on the same volume:**
+  "all but the Iolas" = 1 hit, OR I/42 pt 3 p.506 (the clear text of row 5805/1, below), so a miss in this volume is a test.
+  - E193: "sick prisoners to be exchanged", "5700 sick", "destination unknown", "transportation for about", "to provide transportation"
+    -- 0 in pt 3; pt 2: 0 except one unrelated "provide transportation". **Not located.** Context found: OR I/42 pt 2 p.447 (index
+    "Webster, Ralph C.", SO 279, War Dept., 24 Aug 1864): Col. R. C. Webster relieved at New Berne to replace Col. Herman Biggs as
+    chief quartermaster of the Department of Virginia and North Carolina -- an independent check of FV-FM4's signer identification
+    (Butler V); OR I/42 pt 3 (Butler to Stanton 28 Oct, Webster to Meigs 29 Oct): the Atlantic and Baltic taken "to take the sick
+    prisoners along the coast from Savannah" -- the later, October phase of the same sick-prisoner exchange, not the 19 Sept order.
+  - E194: "open your own letter", "own letter of instructions", "vessels which have no", "which have no letters", "hawley is gone" -- 0 in
+    both volumes. **Not located.** Context found, OR I/42 pt 3: p.490, Hdqrs. Light Artillery Brigade, Tenth Corps, 2 Nov 1864, to
+    **Capt. L. L. Langdon, Commanding Battery M, First U. S. Artillery** (with the Fourth New Jersey): proceed to Bermuda Hundred,
+    report to Brig. Gen. Hawley, "await sailing orders from General Hawley"; p.504, **Alf. H. Terry, Brevet Major-General, Commanding**
+    [Army of the James], to Grant, 3 Nov: the batteries are M, 1st U.S., and 4th New Jersey, "Brig. Gen. J. R. [OCR: J. B.] Hawley goes in command of
+    the whole force"; p.506, Babcock (Fort Monroe, 4 Nov 6.30 p.m.) "General Hawley goes to-night with infantry"; p.517, Grant 5 Nov
+    "(Same to General Terry)" and Bowers to Babcock: "The artillery must go at once and cannot wait to have stalls put in the vessels".
+    p.197 (Vogdes inclosure, 6 Oct 1864): Eckert to operator W. F. Holloway, "relieve **O'Brien** at Norfolk" (index: "O'Brien,
+    Richard"): **R. O'Brien was a U.S. Military Telegraph operator.**
+- **IA full text across the whole corpus** (be-api fts, no identifier): "sick prisoners to be exchanged at some point", "open your own
+  letter of instructions", "5,700 sick prisoners" 0 hits each; the positive control ("all but the Iolas have arrived") answered 503
+  twice (one retry after a pause), so these misses are **without a working control** and are weak. Host then left.
+- **Google Books:** one probe ("open your own letter of instructions", country=US, key) answered 429, daily quota exceeded; stopped,
+  not retried. **Press of the day:** loc.gov Chronicling America JSON (`/collections/chronicling-america/?q=Langdon battery Fortress
+  Monroe&dates=1864-11-04/1864-11-20&fo=json`) answered 403; stopped. New York press 5-15 Nov 1864 and Sept 1864 press: **unchecked**
+  (unreachable this session). QMG letters received (RG 92), Hawley papers (LoC), Battery M histories: not online by any route tried;
+  **unchecked**.
+- **Holder's transcription / same-page siblings (G3):** no new Huntington requests (FV-FM4's 22-request sweep covers "langdon",
+  "hawley", "sick prisoners", "destination unknown", "letter of instructions", "corresponding order"; LANE LEDGER holds the host). Read
+  from disk `sources/fortmonroe/p5805.json`: row 5805/1 (Sheldon to S. H. Beckwith, City Point: "all but the Iolas have arrived and will
+  be off by [2 a.m.] of fifth ... so rough here we had to send boats off Crany [Island] to transfer ... stalls put in ... I shall go to
+  [Baltimore] [to-morrow] evening ... [General] Hawley goes tonight with [infantry] ... letter by morning mail [Signed] Babcock") is
+  **printed word for word, OR I/42 pt 3 p.506** (Babcock to Lieut. Col. Bowers, Fort Monroe, 4 Nov 1864, 6.30 p.m.): an unfiled row,
+  N1 for any future reader. Its header names the City Point operator (Beckwith) where the print names the addressee (Bowers) -- the
+  ledger's operator-to-operator addressing, which bears on E194's "R OBrien" (below).
+
+### Reading checks (key.md, this session)
+E193: Animal = Monroe, Harriet = 1 PM, Hunkey = 19, Palsy = Brigadier General, Grapes = blind, Zebra/Unity = period, Knox = Maj Gen
+B. F. Butler, Whig = Transportation, Harsh = 20, Person/Plunder = 5/7, Waldo/William = 1000/100, Waxy = South, Walrus = Signature,
+Vinton = Quartermaster: all as FV-FM4 states; "by the [twenty] second", "[5,700]" and "[Signed] R. C. Webster, [Quartermaster]" agree.
+**17 H of 17 confirmed.** E194: Henrietta = 2.30 PM, Penny = 4, Pilgrim = Captain, Plug = 1, Negro = Artillery, Pedlar = comma, France =
+New York, Appian/Animal = Monroe, Shelby = General, Taunton = Major, Walrus = Signature: as FV-FM4 states. **Hawley:** key.md has
+Hawley = Roddy (p.15 l.24), but the print puts Brig. Gen. J. R. Hawley in command of exactly this movement and 5805/1 has "Shelby Hawley
+goes tonight" in clear agreement with OR p.506: plain, as FV-FM4 held. **15 H of 15 code groups confirmed; "pro" stays M.**
+
+### Corrections
+1. **E194's sender.** "R OBrien" is the sending operator at Butler's headquarters (Richard O'Brien, U.S. Military Telegraph, OR I/42
+   pt 3 p.197), named in the operator header the way 5805/1 names Beckwith for Bowers -- not the author. The author is the signer.
+2. **E194's signer.** "[Signed] [Major] [General] Barry": on 3-5 Nov 1864, with Butler in New York, the Army of the James was commanded
+   by **Alfred H. Terry, Brevet Major-General** (OR I/42 pt 3 pp.504, 517), who selected the batteries and Hawley for this force. No
+   Major General Barry served there. "Barry" is most probably the clerk's or the operator's slip for **Terry**: grade **I** (inferred,
+   repaired), the image reading "Barry" kept as transcribed (rule: never silently repaired). Title and safe sentence say "Army of the
+   James headquarters" rather than naming O'Brien as the sender.
+3. Langdon's full name from print: Capt. Loomis L. Langdon, Battery M, 1st U.S. Artillery (OR I/42 pt 3 pp.490, 504 index).
+No correction to E193 beyond FV-FM4's.
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E193** | **N3 (weak)** KEPT | unknown | **D2** kept | 100 (17 H of 17) | code clause as FV-FM4; signer now checked twice (Butler V; OR I/42 pt 2 SO 279, 24 Aug 1864); still no external check of the 19 Sept order itself (the Savannah boats of 28-29 Oct are a later phase): D3 withheld |
+| **E194** | **N3 (weak)** KEPT | unknown | **D3** kept | 93.8 (15 H of 16 groups; "pro" M) | external (non-statistical) now two: OR I/43 pt 2 Hawley's report (FV-FM4) and OR I/42 pt 3 p.490 (2 Nov order to Langdon to await Hawley's sailing orders), p.504 (Terry: Battery M with Hawley's force), p.517 (artillery to sail at once); telegram itself not in OR I/42 pt 3 under a working control |
+
+Not raised to N4: Google Books, the press of the day and the IA corpus-wide search were unreachable or uncontrolled this session, and
+RG 92 / Hawley papers are not searchable online.
+
+- **E193: N3 (weak).** Safe sentence (FV-FM4's, with the added search): "Read at grade H with War Department Cipher No. 1: on 19 Sept
+  1864 the chief quartermaster at Fort Monroe, Col. R. C. Webster, told the Washington depot quartermaster that Butler had ordered him
+  to provide transportation by the 22nd for about 5,700 sick prisoners to be exchanged at some point South, destination not yet known.
+  The telegram was not located in the Official Records (ser. I vol. 42 pts 2-3, ser. II vol. 7), Butler's printed correspondence
+  (vols. IV-V), the Grant Papers vol. 12 or the Huntington's full-text search (searched 8-9 Oct 2026)." Unsafe: "first decipherment",
+  "previously unread", "unpublished".
+- **E194: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 4 Nov 1864 the Army of the James
+  headquarters (signed by a major general the ledger writes 'Barry', probably Terry) told Captain Loomis L. Langdon of Battery M, 1st
+  U.S. Artillery, shipping for New York, that if General Hawley had already gone when he reached Fort Monroe he should open his own
+  letter of instructions and give the corresponding order to the vessels that had none. The Official Records (ser. I vol. 42 pt 3,
+  vol. 43 pt 2) print the movement, Langdon's orders of 2 Nov and Hawley's sealed instructions, not this telegram (searched 8-9 Oct
+  2026)." Unsafe: "first decipherment", "previously unread", "O'Brien's telegram".
+  Depth sentence (mine, kept from FV-FM4 in substance): "On 4 Nov 1864 Captain Langdon's battery, bound for New York in the
+  election-week troop movement, was told to open its own sealed instructions if General Hawley had already sailed from Fort Monroe."
+
+### Postmortem
+Both first-audit classes and depths hold. One over-reading carried from the ledger header: the operator's name in a received entry's
+header ("R OBrien") was taken as the sender; the page's own sibling 5805/1, printed with its true addressee, shows the ledger names
+operators in its headers. OR I/42 pt 3 (the department's Oct-Dec correspondence) was not on disk and had not been read by FV-FM4; it
+gave the signer, the operator and a second external check. Requests: archive.org 2 (djvu), be-api 8 (2 x 503), googleapis 1 (429),
+loc.gov 1 (403), Huntington 0.

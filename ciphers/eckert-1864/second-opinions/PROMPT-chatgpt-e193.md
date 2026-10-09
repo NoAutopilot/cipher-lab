@@ -10,9 +10,9 @@ THE ITEM
 - Context we already know: Butler was Commissioner for Exchange; OR ser. II vol. 7 prints the September 1864 exchanges of disabled men through Major Mulford (e.g. Butler to Hoffman, 25 Sept 1864), but not an order for about 5,700. Butler's Private and Official Correspondence vol. V names Col. R. C. Webster as Chief Quartermaster at Fort Monroe.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
-  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM4)").
+  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (sections "AUDIT (FV-FM4)" and "AUDIT 2 (AUD2-LEDGER-8)").
 
-WHERE WE HAVE LOOKED: OR ser. I vol. 42 pt 2, ser. II vol. 7; Butler's Private and Official Correspondence vols. IV-V (local text search); Grant Papers vol. 12 (Internet Archive full text); the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: OR ser. I vol. 42 pts 2-3 (full text), ser. II vol. 7; Butler's Private and Official Correspondence vols. IV-V (local text search); Grant Papers vol. 12 (Internet Archive full text); the Huntington's CONTENTdm full-text search.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
 - Quartermaster General's correspondence (NARA RG 92), Rucker's letters received; the Varina/Aiken's Landing and Savannah exchanges of autumn 1864 in secondary works on prisoner exchange; newspapers of 19-30 Sept 1864; Google Books; HathiTrust; JSTOR.

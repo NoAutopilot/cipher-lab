@@ -6,22 +6,22 @@ reading. Be adversarial: we would rather learn now that it is in print than clai
 
 THE ITEM
 - Source: Thomas T. Eckert Papers, Huntington Library, San Marino, mssEC 25 ("Ciphers Received and Sent", Fort Monroe) p.261 (digital pointer 5805), third entry on the page, E194, headed "Butler's Hd Qrs Nov 4 1864 / Geo D Sheldon Ft. Monroe", https://hdl.huntington.org/digital/collection/p16003coll11/id/5805. Read with War Department Cipher No. 1 (Huntington mssEC 41).
-- Reading: R. O'Brien at Butler's headquarters to Sheldon, Fort Monroe, 4 Nov 1864, 2.30 p.m.: "For [Captain] Langdon, [1st] United States [Artillery] pro[?], [New York], [Monroe]. If [General] Hawley is gone when you reach [Monroe], open your own letter of instructions and give corresponding order to the vessels which have no letters. Use all possible despatch. [Signed] [Major] [General] Barry [sic], R. O'Brien". Bracketed words are code words read from the period key; "pro" and "Barry" are written so in the ledger and are not explained.
-- Context we already know: Brig. Gen. J. R. Hawley's report on the New York election expedition (OR ser. I vol. 43 pt 2) prints that Battery M, 1st U.S. Artillery (Captain Langdon) was to get sea-going vessels and that Hawley gave the senior officer of each transport sealed instructions, then sailed ahead from Fort Monroe. That prints the movement, not this telegram.
+- Reading: Army of the James headquarters ("Butler's Hd Qrs"; R. O'Brien is the sending telegraph operator, OR ser. I vol. 42 pt 3 p.197) to Sheldon, Fort Monroe, 4 Nov 1864, 2.30 p.m.: "For [Captain] Langdon, [1st] United States [Artillery] pro[?], [New York], [Monroe]. If [General] Hawley is gone when you reach [Monroe], open your own letter of instructions and give corresponding order to the vessels which have no letters. Use all possible despatch. [Signed] [Major] [General] Barry [sic], R. O'Brien". Bracketed words are code words read from the period key; "pro" and "Barry" are written so in the ledger; "pro" is not explained, and "Barry" is probably a slip for Brevet Maj. Gen. Alfred H. Terry, commanding the Army of the James in Butler's absence (OR ser. I vol. 42 pt 3 pp.504, 517) -- our inference, please test it.
+- Context we already know: Brig. Gen. J. R. Hawley's report on the New York election expedition (OR ser. I vol. 43 pt 2) prints that Battery M, 1st U.S. Artillery (Captain Langdon) was to get sea-going vessels and that Hawley gave the senior officer of each transport sealed instructions, then sailed ahead from Fort Monroe. That prints the movement, not this telegram. OR ser. I vol. 42 pt 3 p.490 prints Langdon's orders of 2 Nov 1864 (go to Bermuda Hundred, await sailing orders from General Hawley); p.506 prints Babcock's Fort Monroe dispatch of the same evening ("General Hawley goes to-night with infantry"); neither is this telegram.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
-  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM4)").
+  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (sections "AUDIT (FV-FM4)" and "AUDIT 2 (AUD2-LEDGER-8)").
 
-WHERE WE HAVE LOOKED: OR ser. I vol. 43 pt 2; Butler's Private and Official Correspondence vols. IV-V (local text search); Grant Papers vol. 12 (Internet Archive full text); the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: OR ser. I vol. 43 pt 2 and vol. 42 pts 2-3 (full text); Butler's Private and Official Correspondence vols. IV-V (local text search); Grant Papers vol. 12 (Internet Archive full text); the Huntington's CONTENTdm full-text search.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- Regimental or battery histories of the 1st U.S. Artillery (Battery M); Hawley's papers (Library of Congress); Butler's Book (1892); New York newspapers of 5-15 Nov 1864; who "Barry" in the signature could be; Google Books; HathiTrust; JSTOR.
+- Regimental or battery histories of the 1st U.S. Artillery (Battery M); Hawley's papers (Library of Congress); Butler's Book (1892); New York newspapers of 5-15 Nov 1864; whether the signer "Barry" is Terry; Google Books; HathiTrust; JSTOR.
 
 HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path
   `ciphers/eckert-1864/second-opinions/chatgpt-e194-<UTC date>.md`. Do not touch any other file. Do not commit to `main`:
   create a branch named `second-opinion/SO-ECKERT-E194` and open a pull request from it, titled exactly
-  `[SO-ECKERT-E194] second opinion: R. O'Brien (Butler's HQ) to Captain Langdon, open your own letter of instructions, 4 Nov 1864`.
+  `[SO-ECKERT-E194] second opinion: Army of the James HQ to Captain Langdon, open your own letter of instructions, 4 Nov 1864`.
 - The first lines of the file must be this header, filled in:
       label: SO-ECKERT-E194
       model: <your model name and version>
