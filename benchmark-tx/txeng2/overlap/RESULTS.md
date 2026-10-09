@@ -90,8 +90,8 @@ X21 2/1/4; f152r Z 0/1/0; Spinelli 1/1/3; f87 suppl. A 0/3/0, B 0/2/8. Same verd
 
 ## Files and hashes
 
-Commit 7d64322a4 (tool, test, SYSTEM.md, tool_shelf row, units/README mark, per-item JSON/TXT, run_overlap.sh,
+Commit b22ee0a6a (rebased from local 7d64322a4; tool, test, SYSTEM.md, tool_shelf row, units/README mark, per-item JSON/TXT, run_overlap.sh,
 summarise.py): `benchmark-tx/txeng2/overlap/SHA256SUMS` (34 files) sha256
 19629234a6698ffa059c1c8bc6382d6e5d759e6eece957e49ba2a0d4b68c47cc; tools/overlap_audit.py sha256 7bbf2ea8595564ad...,
 tools/tests/test_overlap_audit.py 99c62197b8bdb441..., summary.txt a536fba7413e8c09..., summary_uniform.txt
-a951f30d42a8767f... (full values in SHA256SUMS). This RESULTS.md: next commit, its sha256 in the done line.
+a951f30d42a8767f... (full values in SHA256SUMS). This RESULTS.md: commit 019541aa6 and the citation fix after it; its sha256 in the done line.
