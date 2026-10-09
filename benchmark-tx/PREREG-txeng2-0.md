@@ -226,3 +226,43 @@ with --help, an offline test, a tool_shelf.tsv row and a SYSTEM.md row.
   (the grown-sheet READ) is held on three counts: this baseline re-run, X21b, and TX-RED's review of the corrected section.
 - **Audit (F19).** The register row for X21 carries the circularity caveat; the band-extent lesson is in iiif_lines.py's
   docstring. ERRORMAP's eval class counts are stale after V1/V2 and are re-run read-free (1 opening, counted) by A1.
+
+## Amendment 5 (lane incarnation 2, 9 Oct 2026 19:5x UTC by date -u; after round 6 (X21b, A1, SC1, R3b) and TX-RED pass 4 F20-F23; written BEFORE any eval look, none spent)
+- **X21b (reader model on independent truths).** dev_tune 8/6 p 0.79, dint (fresh blind Opus page pair) 5/3 p 0.73, f36v 4/2
+  p 0.69; pooled 444: Opus 0.074 vs Sonnet 0.090, Opus 17/11, two-sided p 0.345 -> **null, "untested at this N on independent
+  truths"; the reader rule (Opus 5.5 or Fable, never below) stands**. Register caveat (F23): both reference sequences are the
+  Sonnet reconcile, so the Sonnet arm has the segmentation home advantage; the null is, if anything, generous to Sonnet, and
+  "Sonnet not worse" is never read into it.
+- **Prior instrument scores on eval units (F20 adopted).** "Eval looks 0" is a this-campaign count. f178r L01-03 (and
+  f179r L01-03 inside eval_heldout) carry prior scores: passD (4 Oct), TX-VIEWS pilot (4 Oct, pad/s125/warp + 5-way vote),
+  TX-ALTS (4 Oct), TXE-B H and TXE-B2 H2 (9 Oct, geo unit), the taxonomy error list; eval_heldout f178v L13-23 carry the
+  first campaign's eval tables (read-free); Spinelli carries TXE-Q's confirm score (9 Oct) and X1b's recall table; f152r
+  X1b's recall table. One line per unit now sits in benchmark-tx/txeng/units/README.md; the owner paragraph reads "outside
+  both halves, scored by five earlier instruments". The crop rule those reads produced sits in the baseline both arms share;
+  the units stay usable with this history stated.
+- **A1 (sheet audit).** Spinelli atlas v3: 3 mislabelled exemplars (SIX p1_01_025 = ESS h; OMEGABAR p1_03_017 = OMEGADOT g;
+  TEE p1_03_001 = PLUS b); atlas_v4.png (sha256 4ad8c0484ccf65c8...) built read-free, 0 mislabelled on re-cross; every other
+  sheet in use is a printed-key cut or a text list (clean by construction). ERRORMAP re-run (pool 29: majority 10, split 10,
+  all-same 6, minority 3). **B1 is spawned now** (PREREG-txeng2-6 B1: a baseline change, never a gain; one opening, counted).
+- **Where the pool's growth comes from after B1 (F21; declared BEFORE B1's recount).** B1 may remove 3-7 of Spinelli's 12
+  as a baseline change, taking the pool to 22-26; SC1 found the 1572 hand has only f.162r no.82 left (about 1 error for a
+  2-2.5 build: logged queued, not worth building alone); R3b retired the f.23r re-cut. Route chosen: **(a) a second
+  confirm-grade leaf built for the POOL by a separate session (TX-CONFIRM-SET's recipe, account 1: a hand with an
+  independent witness, outside Birago/Ceppo/Dinteville/Spinelli/Vivonne), which keeps S2 whole** -- the ask goes to the
+  orchestrator (account-4) in the lane's check-in line, since the lane cannot build it. **(b)**, a declared split of
+  vivonne1573-f103r-confirm2 (lines 1-18 to the pool, 19-37 kept for S2, with S2's sentence amended to say its hand was
+  touched), is the fallback only, chosen by the orchestrator, never by the lane on its own; until one of them is on file the
+  under-24 rule holds whatever B1 reads.
+- **R3b (F22).** Gate as declared was incomplete (no "and no cipher stroke removed" clause); the worker reached 0/16 gloss
+  letters only by cutting 3-8 cipher strokes per crop and refused to call it a pass. Register verdict: "gate incomplete as
+  declared; worker's reading accepted; untestable by image means; family retired for this leaf (third attempt)". The
+  f.23r masked re-cut needs a person's stroke mask or another witness.
+- **Overlap sentence (F23).** Both reader-model jobs measured the s1/s2 overlap far wider than the typed brief sentence
+  (dev_tune about 425 px at 2x vs about 100 stated; dint 1,100-1,300 px vs 150 stated), and the Sonnet baselines A/B were
+  read under the same sentence. PREREG-txeng2-7 O1 audits read-free whether the baselines' deletions and insertions sit in
+  the overlap zones (dev items read-free; eval items' error positions opened read-free and counted). If they do, correcting
+  the overlap sentence (M16's manifest-generated `--overlap-note`) is a **baseline change, never a gain**, and every pool
+  item's baseline read under a typed sentence gets the manifest note before an instrument is scored on it (declared now).
+- **S2 stays held** (C1 on file, Amendment 2 reviewed by TX-RED, both conditions met): the frozen pipeline today contains no
+  instrument beyond today's, so a look now would spend the single confirm2 look on a null; it is taken when the combined
+  pipeline carries at least one instrument that passed its eval look, or when the programme closes, whichever first.

@@ -14,7 +14,7 @@ than today's, by a paired count (signs fixed minus signs broken) that clears a p
 30% gain, plus one look at a fresh leaf (the confirm2 item) built by someone outside the lane. The first thing we checked was the
 measurement itself: the first campaign's units carried 12-15 errors, which gives a genuine 30%-better instrument about a 1-5% chance
 of passing, so its twenty-three "nothing works" results were mostly non-tests. We rebuilt the pool (a second Birago leaf from its
-decipherment slip; the Spinelli leaf reused) to 29 unflagged errors (a verifier has now checked the Spinelli positions every reader got wrong the same way, flagging 2; the three lines of no.87's recto, which had sat outside both halves, were added as a held-out unit), chose the test from a power table, and ran the controls
+decipherment slip; the Spinelli leaf reused) to 29 unflagged errors (a verifier has now checked the Spinelli positions every reader got wrong the same way, flagging 2; the three lines of no.87's recto, which had sat outside both halves though five earlier instruments had been scored on them, were added as a held-out unit), chose the test from a power table, and ran the controls
 (a planted 30% fixer passes 85% of the time; a no-op, a random change and a worse instrument pass 0%).
 
 Fifteen experiments then ran, each pre-registered, each scored on development lines before any held-out look. None earned a
@@ -30,13 +30,16 @@ within one reader's spread of the per-line call (replicated on a second reader a
 Sonnet single pass on either leaf, which became its own experiment (the reader model, X21): the full two-reader pipeline run with
 Sonnet readers and again with Opus readers on the same crops came out even on the two leaves whose truth is independent of
 both (12 fixed, 14 broken), and the one leaf where Sonnet looked far better turned out to be scored against its own Sonnet
-reading, so that result is set aside and the question is being re-run on independent truths only (X21b).
+reading, so that result was set aside; re-run on independent truths only, the two reader models came out even (Opus ahead 17 to 11, not significant), so the readers stay as they are.
 
 The most useful finding of the last hour came from the verifier, not from an instrument: the sign sheet the readers are
 given for the Spinelli letter shows one of the letter's own h signs as an example of the SIX cell, so three of that leaf's
 twelve remaining errors are the sheet's fault, not the reader's. Because that was found by looking at the answer key, fixing
-the sheet counts as a change to the baseline, never as an instrument's gain; the sheet is being corrected from the published
-key and the baseline re-read under it, and every other machine-built sheet is being checked the same way.
+the sheet counts as a change to the baseline, never as an instrument's gain; the sheet has been corrected (three mislabelled example tiles found and removed; every other sheet in use is cut from a printed key or
+is a text list, so has no such defect), and the Spinelli baseline is being re-read under the corrected sheet. Two more baseline-side
+findings are being checked before any instrument: whether the readers' errors at line seams come from a wrong overlap note in the
+reading instructions, and where the next known-answer material will come from, since the Birago 1572 hand now has no further
+leaf with a period decipherment worth building, and the pool may fall under its floor again once the Spinelli sheet fix lands.
 
 The known-answer material for hands that read at 10-25% is the real bottleneck. Three glossed Dinteville leaves and one Birago
 1591 leaf were fetched from DECODE and built, but a key rebuilt from a gloss cannot score the reads it was built from, and the
@@ -85,4 +88,4 @@ Open: X2b with more labelled tiles of the same hand (new material); the colour m
 gloss leaves from a native image; the grown-sheet read on Spinelli only if X1b's recall table licenses it (then the first eval look).
 
 ## Costs and looks
-31 workers ledgered 173.57 (round 5: TXV-SPIN 4.47, TXE2-MODEL 13.43, TXE2-BOXES 4.19, TXE2-RECUT 2.57, TXE2-PAIR3 0.20 x2) + round 6 (caps 18); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 7.3 at 19:03. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3, V2 1, f178r baseline 1.
+35 workers ledgered 191.84 (round 6: TXE2-MODEL2 9.51, TXE2-SHEETAUDIT 4.62, TXP-SCOUT2 1.71, TXE2-RECUT2 2.43) + round 7 (caps 13); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 12.3 at 19:51. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3, V2 1, f178r baseline 1.
