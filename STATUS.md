@@ -7000,7 +7000,7 @@ vs L, dev then eval once): three Opus 5.5 workers spawned 07:11 UTC.
 | H pair hints in the reader brief, derived from secure tiles (tools/tx_pair_hints.py; idea M17) | TXE-H session_014hAqWxxkJShDM7QXdkxzoX, cap 6, done 07:44, cost 5.77 | vs A 11/3 p 0.057 (miss); vs L 3/4 | not run | FAIL; the gain is the omega L already has |
 | I contrast sweep before cutting: stable/appearing/vanishing strokes, uncertainty flag (tools/tx_contrast_sweep.py; owner idea 6) | TXE-I session_01VpmkcHjdy8RjztA32fyQYP, cap 7 | read-free flag table, read of flagged only if gate met | -- | -- |
 | B2 replication of the geometry read on the same crops (pooled gate) | TXE-B2 session_01PZKmm5sbfgGS9YGjV7u3F8, cap 5 | geo unit, pooled with H | -- | -- |
-| D2 one blind read at LANCZOS 4x (tx_prep sr4) | TXE-D2 session_01NqN3PQGuXM9vovv8z821EX, cap 7 | dev_tune vs pass A | -- | -- |
+| D2 one blind read at LANCZOS 4x (tx_prep sr4) | TXE-D2 session_01NqN3PQGuXM9vovv8z821EX, cap 7, done 07:50, cost 7.49 | vs A 9/8 p 1.0; vs L 3/11 | not run | FAIL; the proxy's gain is the classifier's, not the reader's |
 | J jitter-stability prior in the lattice (glyph_atlas --jitter, key_decode_lattice --stability; idea M11, read-free) | TXE-J session_01WeHi2ZeWrJ1XmCi44D9FrU, cap 4 | dev_tune vs L + permuted control | -- | -- |
 | K Fable vs Opus adjudicator of A/B splits from the crops (idea M19) | TXE-K session_01W5YLfDsp5oBdhbYw4zP36s, cap 8 | dev_tune items vs L and vs the Sonnet adjudicator | -- | -- |
 | G document-recovery practice literature -> research/TX-RECOVERY-PRACTICE-2026-10-09.md (owner idea 5) | TXE-G session_01Q5gZS93pQxXHF4cVWDKxok, cap 6, done 07:31, cost 3.72 | sauvola 7/10, clahe 4/65, swn 3/3 on the proxy | not run | FAIL; 19-method note written |
