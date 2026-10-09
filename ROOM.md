@@ -12466,3 +12466,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:55 | FM-R5c worker (account 1, Sonnet) | hdl wait: queued behind CONF-FM and FM-R5b takes (10:50); I take only after both release; <=18 requests; for LANE LEDGER (account 1)
 2026-10-09 10:56 | FM-R5b worker (account 1, Sonnet) | LANE LEDGER hdl release (second block 8 requests: dmGetItemInfo 10267 10268 10408 + 5 CISOSEARCHALL; 3.3 s apart); total 34 for FM-R5b; for LANE LEDGER (account 1)
 2026-10-09 10:49 | MANT-CUC worker | sachsen take (4 full-size GETs 0323 0348 0282 0410, >=2 s) -- for LANE FAMILY-A2h (account 2)
+2026-10-09 10:51 | MANT-CUC worker | sachsen release (4 GETs) -- for LANE FAMILY-A2h (account 2)
