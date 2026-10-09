@@ -1,0 +1,61 @@
+item	label	conf	second	note
+1	4@l	H		acute stroke over 4
+2	26.	M	25.	6 with dot after
+3	16σ	M	16ρ	1 then 6 with hook
+4	7ρ@n	H		hat over 7ρ
+5	28	H		plain 28
+6	6.	H		6 with dot
+7	25	M	23	2 then 5 shape
+8	7ρ@n	H		hat over 7ρ
+9	6.	H		6 with dot
+10	4@s	H		bar over 4
+11	24+@n	H		hat over 24+
+12	4@s	M	14@s	bar over 4, preceding stroke ambiguous
+13	7ρ@n	H		hat over 7ρ
+14	15+	M	15+@s	no clear mark
+15	15+	M	15+@n	no clear mark
+16	29.	H		dot after 29
+17	16+	H		1 6 cross
+18	6ρ	H		6 with looped tail
+19	23.	H		dot after 23
+20	25.	M	x.	2 5 with dot
+21	16+	H		1 6 cross
+22	18	H		plain 18
+23	35+	H		3 5 cross, underlined
+24	4@n	H		hat over 4
+25	6σ	M	6ρ	6 with hook
+26	24	M	24.	no dot seen after
+27	24ρ	H		looped tail
+28	6.	H		6 with dot
+29	21.	H		2 1 dot
+30	4@l	H		acute over 4
+31	18	H		plain 18
+32	6ρ	H		6 with looped tail
+33	25ρ@s	M	25ρ	bar above
+34	25	M	15	2 5 shape
+35	23+	H		cross after 23
+36	30.	H		no underline
+37	10@s	H		bar over 10
+38	20+	H		cross after 20
+39	8σ	M	88	8 then hook
+40	21.	H		2 1 dot
+41	35+	H		3 5 cross
+42	15+	M	15+@s	no clear mark
+43	4@n	M	4+@n	hat over 4
+44	23+@r	M	23+@m	small v mark above
+45	4@l	H		acute over 4
+46	21.	H		2 1 dot
+47	35.	H		3 5 dot
+48	7σ	M	7ρ	7 with hook
+49	24+	H		cross after 24
+50	20+	H		cross after 20
+51	10	H		plain 10
+52	6ρ	H		looped tail
+53	23@r	H		v mark above
+54	6.	H		6 with dot
+55	26	M	x	cross-struck 2 then 6
+56	7ρ	M	7σ	looped tail
+57	24.	H		dot after 24
+58	21.	H		2 1 dot
+59	28	H		plain 28
+60	23	M	23.	no dot

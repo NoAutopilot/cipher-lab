@@ -1,0 +1,61 @@
+item	label	conf	second	note
+1	23.	H	23	digit 23 with dot
+2	7+@n	H	7+	hat above
+3	4	M	4.	plain 4 no dot
+4	21.	H	11.	21 with dot
+5	21.	H	11.	21 with dot
+6	4@s	H	14@s	bar above 4
+7	4@s	M	14@s	bar over 4
+8	6ρ	H	6σ	looped tail
+9	21.	H	11.	21 with dot
+10	25ρ@s	H	25ρ	bar above
+11	20.	M	20	dot after 20
+12	55.	H		55 with dot
+13	28	H	128	plain 28
+14	29ρ	M	29σ	looped tail
+15	4@n	H	4@l	hat above 4
+16	14ρ@s	M		bar above
+17	28	H	128	plain 28
+18	28	H	128	plain 28
+19	23+@s	H	23+	bar above
+20	15ρ	M	15σ	looped tail
+21	15	H	1	15 plain
+22	6.	M	6	dot after
+23	23.	M	23	dot after
+24	14+	M	11+	cross after 14
+25	20.	M	20	dot after
+26	21.	H	11.	21 with dot
+27	10.	M	10	dot after
+28	23σ	M	23ρ	overstruck hook
+29	4@n	H	4@l	hat above
+30	/	H	/.	slash
+31	6ρ@s	M		bar above
+32	6.	M	6	dot after
+33	14+	M	11+	cross after
+34	10	H	10.	plain 10
+35	7ρ	L	77ρ	struck 7 with loop
+36	10	M	10.	no dot
+37	23+	H	13+	cross after
+38	28	H	128	plain 28
+39	27ρ@s	H		bar above
+40	23.	H	23	dot after
+41	23	L	23.	no visible dot
+42	7ρ	L	77ρ	struck 7 with loop
+43	4	M	4.	plain 4
+44	23+@s	H	23+	bar above
+45	22.	H	22.@s	dot after
+46	6+	M	36+	cross after
+47	4@n	M	4+@n	hat above
+48	6.	M	6	dot after
+49	21.	H	11.	21 with dot
+50	23σ	M	23ρ	overstruck hook
+51	6.	M	6	dot after
+52	4@n	M	4@l	hat above
+53	16.	L	.	1 6 with dot
+54	28	H	128	plain 28
+55	15+	M	15+@n	cross after
+56	18	H	18@s	plain 18
+57	6.	M	6	dot after
+58	4@l	M	4	short stroke above
+59	42	M	72	4 then 2
+60	24.	M	24	dot after

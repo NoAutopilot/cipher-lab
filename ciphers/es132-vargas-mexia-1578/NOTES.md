@@ -896,3 +896,25 @@ Rule 7: `test2.py --page f51v --check` / `--page f52r --check` and `lookalike/sc
 match". Requests: none to any host. Subagent calls: 4 Sonnet (re-read halves). No credentials used. Report only; no novelty classification made.
 One-line suggestion (not done, Usage 7): a planted-tile control (`lookalike_pass.py audit --plant`) on these pages would say whether the
 re-read's A preference is reading or echo (~$1.5).
+
+## Planted-tile audit of the look-alike re-read (ES132-AUDIT, LANE FAMILY-A2i account 2, 9 Oct 2026, 13:43-14:0x UTC by `date -u`)
+Brief ES132-AUDIT (Wave 2). Disk only; no requests to any host. PREREG-ES132AUDIT.md pushed (1e38e67d5) before any score. Prior work: `tools/prior_work.py
+... --step-type audit --fetch` exit 4, the only owed row the lane's own live ROOM claim (target-level LEAD); other rows as in the ES132-LOOK section
+(solver caches CLEAR, editions UNCHECKED-NET, leaf looks CLEAR); a planted-tile run on these pages had not been done (NOTES line 897 was a suggestion).
+Inputs: `lookalike/audit/make_inputs.py` (passes A/B and committed C as line,pos,sign). `tools/lookalike_pass.py audit` seed 1578, k 3, 60 items per
+call from signs where A, B and the committed reading agree, plant 0.05 (3 per call), default label-showing prompt (the only prompt in which a planted wrong
+label can be copied), nothing else changed (the tool's no-sheet line replaced by the notation legend). Crops: the committed RUN5-ES51 half-line crops, not re-cut.
+3 value-blind Sonnet calls (f.51v L11-L25; f.52r L01-L11; f.52r L12-L21). Scored with `audit-score` per call.
+| call | planted flagged / caught | unplanted flagged |
+|---|---|---|
+| f51v_a | 2 / 2 of 3 (catch 0.667) | 0 / 57 |
+| f52r_a | 3 / 3 of 3 (1.000) | 0 / 57 |
+| f52r_b | 2 / 2 of 3 (0.667; one plant answered at conf L, not a flag) | 1 / 57 |
+Pooled: planted catch 7/9 = 0.778 against the pre-registered gate 0.80 -> **NON-TEST** (one plant short; f51v_a and f52r_b exit 3 singly). Unplanted false flags 1/171.
+Missed plants: f51v 20ρ@m (shown) vs 20ρ@r (original, re-read kept the shown label), f52r_b '.' vs 16. (answered 16. at L). Reading: with the wrong label
+shown, the re-reads overturned it to the original on 7 of 9 plants and left 170 of 171 true agreed labels alone, so these re-reads were not a plain copy
+of the shown label; but the gate missed, 9 plants is a small control, and this tests the label-showing prompt, not the earlier hide-passc re-read (whose
+A preference on f.51v, 95/105, therefore stays untested by this tool: not told apart from correlated readers, per the pre-registered rule). Planted catch
+by call also varies 0.67-1.00 on 3 plants each. Committed reading, passD and every PREREG unchanged. Suggestion (not done, Usage 7): a larger plant share
+(0.15) over the same positions would give about 27 plants for the same calls; or the `windows --items` instrument. Subagent calls: 3 Sonnet. No credentials used.
+Report only; no novelty classification made.
