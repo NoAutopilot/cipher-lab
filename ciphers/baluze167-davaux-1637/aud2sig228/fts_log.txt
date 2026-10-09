@@ -1,0 +1,31 @@
+histoiredesguerr002boug Lunebourg ERR <html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<cente
+histoiredesguerr002boug |"mal satisfaits"| 0
+histoiredesguerr002boug |Langrave Lunebourg| 0
+lemercurefranois23unkn |Lunebourg| 1
+    avec la Lan tgravc de Hefle Ôc ieDucdc {{{Lunebourg}}}- Les Comtes Pico- lomini & Hasfcld partent
+    donné de k marche du Duc Geor- ges de {{{Lunebourg}}} comtre les troupes dit General Maior Pfuel
+    deüx regimehs de cavalerie que le Duc de {{{Luneboürg}}} avoit receus durant fa charge de General
+lemercurefranois23unkn |"mal satisfaits"| 0
+lemercurefranois23unkn |Langrave Lunebourg| 0
+memorierecondit03sirigoog |Lunebourg| 0
+memorierecondit03sirigoog |"mal satisfaits"| 0
+memorierecondit03sirigoog Langrave Lunebourg ERR <html><body><h1>503 Service Unavailable</h1>
+No server is available to handle th
+bub_gb_0VQ_AAAAcAAJ_2 |Lunebourg| 1
+    de la Republique d'entendre leurs inaifpa de {{{Lunebourg}}}, 8^ du Utnd- ennemis dans le Sénat. Outre cela
+    porter le premier parole d'acde gens. Les Ducs de {{{Lunebourg}}} commodément. L'obst.ide que avoicnt auflîaflTuré
+bub_gb_0VQ_AAAAcAAJ_2 |"mal satisfaits"| 0
+bub_gb_0VQ_AAAAcAAJ_2 |Langrave Lunebourg| 0
+suitedelintroduc00pufe |Lunebourg| 1
+     piller les maifbns , George , Duc de {{{Lunebourg}}} étant arrive avec l'ar-, méc Danoife chaffade
+    Rorde Danemarq , & par George , Duc de {{{Lunebourg}}}. lï demeura fur la- place plus de trois
+    très peu de Charges dans la maifbn de {{{Lunebourg}}} } & l'on vouloir mortifier tout le refte
+suitedelintroduc00pufe |"mal satisfaits"| 0
+suitedelintroduc00pufe Langrave Lunebourg ERR <html><body><h1>503 Service Unavailable</h1>
+No server is available to handle th
+requests 15
+
+[exited with code 0]

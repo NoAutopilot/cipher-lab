@@ -8514,9 +8514,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/baluze167-davaux-1637",
       "key": "published",
       "audit_refs": [
-        "AUDIT.md '## AUDIT 1 f.228 (SIG-V228)'"
+        "AUDIT.md '## AUDIT 1 f.228 (SIG-V228)'",
+        "AUDIT.md '## AUDIT 2 f.228 (AUD2-SIG-228)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "depth": "D2",
       "depth_pct": 36.0,
       "depth_unread": {
@@ -8530,8 +8531,8 @@
       "kind": "reading",
       "title": "Baluze 170 f.228r-v: Chavigny to d'Avaux, Amiens, 25 Aug 1640, cipher passages on the Landgravine of Hesse-Kassel, the dukes of Lüneburg and the enemy",
       "grade": "N3",
-      "line": "Read with Tomokiyo's published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens H, letter signs M); apart from the four words Tomokiyo quotes ('sont mal satisfaits de'), no prior decipherment or printed text located in Avenel VI-VIII, Rommel's Geschichte von Hessen VIII, Charveriat II, the Guebriant histories, Boppe 1887, Internet Archive full text, OpenAlex or CrossRef (searched 8-9 Oct 2026, one audit).",
-      "gap": "AAE Correspondance politique and Chavigny's registers unread; Google Books unreachable (429) this audit; JSTOR rows queued; one audit (SIG-V228); second audit AUD2-SIG-228 queued; SO-BAL170-F228 queued; 15 mark-read regrades returned to I, not yet applied in the decode files",
+      "line": "Read with Tomokiyo's published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens H, letter signs M); apart from the four words Tomokiyo quotes ('sont mal satisfaits de'), no prior decipherment or printed text located in Avenel VI-VIII, Rommel's Geschichte von Hessen VIII, Charveriat II, the Guebriant histories, Boppe 1887, Internet Archive full text, Bougeant II, the Mercure francois XXIII, Siri VIII, OpenAlex or CrossRef (searched 8-9 Oct 2026, two audits); Google Books could not be searched.",
+      "gap": "AAE Correspondance politique and Chavigny's registers unread; Google Books unsearched in both audits (429, daily quota 9 Oct); JSTOR rows queued; SO-BAL170-F228 queued; 15 mark-read regrades returned to I, not yet applied in the decode files -- applied, they change two values (f.228r 73 Bavier->so, 29 traitte->gu) and the fr17 judge goes from PASS by 0.010 to FAIL by 0.038 (AUD2-SIG-228)",
       "phrases": [
         "quelque crainte que la langrave et les ducs de Lunebourg",
         "le traitte qu'elle a fait depuis peu avec le Roy"

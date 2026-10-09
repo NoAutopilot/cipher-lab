@@ -13,11 +13,11 @@ THE ITEM
   for syllables and words, signs for letters). Tomokiyo already quotes four words from this leaf: "sont mal satisfaits de *".
 - Reading (provisional; letter signs uncertain; clear words of the letter in capitals): f.228r "par ce que Madame la Langrave et les
   d[ucs] ... sont mal satisfaits de [73, unmarked, unread] A CE QUE L'ON NOUS [mande] ... POINT A PROPOS DANS CETTE CONJONCTURE de le
-  traitter de la me[?]me sorte ..."; f.228v "... A TOUS AJUSTEMENS RAISONNABLES POUR LE BIEN ... TESMOIGNE QU'IL A QUELQUE crainte que
+  [29, unmarked, unread]r de la me[?]me sorte ..."; f.228v "... A TOUS AJUSTEMENS RAISONNABLES POUR LE BIEN ... TESMOIGNE QU'IL A QUELQUE crainte que
   la langrave et les ducs de Lunebourg [verb unread] avec les ennemis ET QU'AINSY luy et Bavier soient contraincts de se retirer chacun
   de leur coste. POUR la langrave J'AY PEINE A LE CROIRE VEU le traitte qu'elle a fait DEPUIS PEU avec le Roy, MAIS POUR les ducs de
   Lunebourg C'EST CHOSE QUI N'EST PAS ..."
-  Tomokiyo's table gives code 73 (overbar) as "Bavier"; we suspect the Swedish marshal Banér ("Banier") but have not regraded it.
+  (Corrected 9 Oct 2026, AUD2-SIG-228: "le traitter" on f.228r rested on a mark our audit withdrew.) Tomokiyo's table gives code 73 (overbar) as "Bavier"; we suspect the Swedish marshal Banér ("Banier") but have not regraded it.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/baluze167-davaux-1637/reading_b170f228.txt,
   ciphertext https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/baluze167-davaux-1637/ciphertext_b170f228.txt,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/baluze167-davaux-1637/key.tsv, search log

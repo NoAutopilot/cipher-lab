@@ -1230,3 +1230,9 @@ name stays unread, as Tomokiyo's `*`), f.228r b_L01 "de le traitte r de" -> "de 
 | positive control, f.229 same N, 3 segments | 3/3 PASS | 3/3 PASS |
 The SIG-B228B PASS depended on the withdrawn regrades; the corrected reading is a FAIL 0.038 below gate, above all 40 shuffled nulls. The
 judge is not the depth gate (rule 4a); the verifier's N3/D2 rests on the f.228v clauses, which this correction does not touch.
+
+## AUD2-SIG-228 verifier pointer (9 Oct 2026, account 3, for LANE-VERIFY-4)
+Second audit of f.228r-v: AUDIT.md "## AUDIT 2 f.228 (AUD2-SIG-228)": N3 held (Tomokiyo's four words N1), D2 held (about 36%). For the
+next solver step: withdrawing the 15 sig_marks regrades (H 56 / I 27) is not value-neutral -- f.228r 73= Bavier -> 73 "so" and 29: traitte
+-> 29 "gu", and the fr17 judge then FAILs (-0.956 vs real_p05 -0.918; nulls max -1.172; positive control 3/3): `aud2sig228/judge_corrected.out`.
+Re-run b167228/judge_null.py after applying the grade change.

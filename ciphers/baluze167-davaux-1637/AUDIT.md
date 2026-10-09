@@ -392,3 +392,110 @@ Correction 1 above is now applied to the decode files (NOTES "## SIG-V228 correc
 here. The "claim under audit" judge figure (-0.925 PASS) is superseded: the corrected reading scores **-0.956 vs real_p05 -0.918, FAIL**,
 above all 40 shuffled-key nulls (max -1.172), positive control 3/3. f.228r b_L01 no longer reads "traitter" ("de le gu r de" with the
 unmarked numerals at I). Class and depth as written above are this verifier's; the second audit (AUD2-SIG-228) rules on them with this revision.
+
+## AUDIT 2 f.228 (AUD2-SIG-228), 9 Oct 2026, 00:14-00:4x UTC by date -u
+
+Verifier: AUD2-SIG-228 (account 3, Opus), for LANE-VERIFY-4, brief `.claude/briefs/runs/2026-10-08-acct3-verify4-jobs.md` section
+"AUD2-SIG-228" and WORK-QUEUE row AUD2-SIG-228. Separate from the solvers (B167-228 acct 4, SIG-B228/B228B acct 1) and from the first
+auditor (SIG-V228 acct 1); account 3 neither read nor first-audited f.228. No decoding of the committed files: the grade correction was
+simulated on a scratch copy of the folder. Files: `aud2sig228/`.
+
+### 1. Which reading was audited
+
+SIG-V228 audited **SIG-B228B's reading** (the 4 u4/4u -> a overrides applied): its claim row quotes B228B's counts (H 71 / M 70 / I 12 /
+U 1) and its text quotes B228B's "qu'elle a fait"; `b167228/sig2_shape_map.tsv` and B228B's to_pipe.py change landed on main in
+a38dd34a6 (23:52 UTC, folded into a generically titled commit) before SIG-V228's 3f439fd1e (00:00 UTC). The committed reading is still
+that one: `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> `ciphertext_b170f228.txt: tokens 154: H 71, I 12,
+M 70, U 1 ... reading up to date`, exit 0 (9 Oct 00:16 UTC). No difference to carry.
+
+### 2. The grade correction, re-run
+
+Scratch copy of the folder with `b167228/sig_marks.tsv` emptied to its header, then `b167228/to_pipe.py` and `tools/decode_key.py` on
+the copy (`aud2sig228/reading_b170f228_corrected.txt`): **H 56, I 27, M 70, U 1 of 154**, exactly SIG-V228's corrected counts. The 15
+changed tokens are the 15 sig_marks rows, all H -> I. **But the correction is not value-neutral, as SIG-V228 stated ("values unchanged,
+so the judge numbers are unchanged"):** 13 of the 15 keep their value, two change:
+- f.228r a_L02 `73=` Bavier -> unmarked `73` = "so" (SIG-V228 already said this name is unread);
+- f.228r b_L01 `29:` traitte -> unmarked `29` = "gu": **"point a propos dans cette conjoncture de le traitter de la me[?]me sorte" (SIG-V228's
+  distinctive-phrase list) loses "traitte(r)"**; the f.228r line reads "de le [29]r de la me [?] me so r te". (The f.228v b_L06 `29:?`
+  "le traitte que l le a fait" is not a sig_marks row and is unaffected.)
+- Also I after correction, besides the 73: f.228r c_L01 `86` "avec" (in "avec luy") and f.228r b_L02 `98` "fait", `40` "la".
+
+**Judge on the corrected reading** (`b167228/judge_null.py` unchanged except the token file, fr17 spec d4vb167/judge_spec_fr17.json,
+seed 20261008; `aud2sig228/judge_corrected.py`, `.out`):
+| text | SIG-B228B (as committed) | corrected grades (this audit) |
+|---|---|---|
+| reading_b170f228, U dropped | -0.925 vs real_p05 -0.935, PASS by 0.010, N 294 | **-0.956 vs real_p05 -0.918, FAIL by 0.038**, N 285 |
+| shuffled key, all signs, 20 | max -1.063 | max -1.228 (median -1.340) |
+| shuffled letter-sign values, 20 | max -1.134 | max -1.172 (median -1.244) |
+| positive control, f.229 same N, 3 segments | 3/3 PASS | 3/3 PASS (unchanged) |
+So the fr17 PASS rested on the two value changes the mark regrades made; with the regrades withdrawn the reading FAILs the p05 gate
+narrowly while staying above all 40 shuffled nulls. Per rule 3 (ZX-DEC349) this is "judge cannot decide" near the gate, not a negative,
+and no period gloss of this hand at this length exists to score (SIG-B228B). Any sentence citing "fr17 PASS" for f.228 is withdrawn.
+
+### 3. Prior-work checks 3-5 (pasted)
+
+- `python3 tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228r;date=1640-08-25;sender=Chavigny;recipient=Avaux;place=Amiens' --step-type second-audit --fetch`
+  -> `holds: specific 0 (none); generic 2 (UNCHECKED-NET 2) / verdict plaintext: UNCHECKED-NET / verdict step: CONTEXT / exit 0: proceed on
+  the residue: whole item`. The two generic rows: 3-solver Aymeloglu (no cache) and 4-editions (no prior_editions.tsv row).
+- 3-solver by hand: `git clone --depth 1 github.com/aaymeloglu/unsolved-ciphers` (9 Oct 00:2x), grep "baluze": only
+  `catalogue/decode-catalog.csv` / `decode-records.jsonl` row 2761 "Baluze 170, f.228-230 ... Chavigni France Amyens ... Decrypted" (the DECODE
+  catalogue line, key only per CS-6/AUD1), no reading. Bourdeau caches: CLEAR (tool).
+- G3: `... --reading ciphers/baluze167-davaux-1637/reading_b170f228.txt --network` -> `6-g3 UNCHECKED-NET ... ia-global: not searched (HTTP
+  503)`; `6-g3 UNCHECKED-NET ... gbooks: not searched (blocked: HTTP 429 ...)`; `exit 4`. SIG-V228's G3 had IA global CLEAR (no hits) on
+  the same phrases; this audit adds nothing there.
+- Google Books, one probe as briefed (`"mal satisfaits" Langrave Lunebourg`, country=US, key): **HTTP 429, "Quota exceeded for quota metric
+  'Queries' ... per day"** -- the project's daily quota, not a rate burst; not retried. Google Books stays unsearched for f.228 in both audits.
+
+### 4. Search log (families not repeated from SIG-V228 / AUD-SIG-CHAV; f.228's own words only)
+
+| family | searched (9 Oct 2026) | result |
+|---|---|---|
+| AUD-SIG-CHAV's volumes, for f.228's words | be-api fts `Lunebourg`, `"mal satisfaits"`, `Langrave Lunebourg` in Bougeant II (histoiredesguerr002boug), Mercure françois XXIII (lemercurefranois23unkn), Siri VIII (memorierecondit03sirigoog) | Bougeant: `Lunebourg` 502, other two 0. Mercure XXIII: one page names "la Landgrave de Hesse & le Duc de Lunebourg" in a news report (Piccolomini and Hatzfeld moving) -- context of the 1640 campaign, not the letter; 0 for the phrases. Siri VIII: 0, 0, one 503 |
+| Swedish side (new): Pufendorf | fts in *Suite de l'Introduction à l'histoire* (suitedelintroduc00pufe) and the French Charles Gustave history (bub_gb_0VQ_AAAAcAAJ_2, wrong reign, logged only) | Lunebourg hits concern George of Lüneburg and later events; 0 for "mal satisfaits"; one 503. Pufendorf's *De rebus Suecicis* (IA 10328986bsb etc., Latin) located but not searched (IA began answering 502/503; stopped per the good-citizen rule) |
+| Brunswick-Lüneburg histories (Havemann), Chemnitz | IA advancedsearch by title | no IA item located under those titles; not searched further |
+| Gallica | one SRU probe (`Chavigny` and `Lunebourg` and `Langrave`, before 1700) | HTTP 403 Cloudflare; not retried |
+| scholarship | OpenAlex (key, header): "Lüneburg Hessen-Kassel 1640 Banér France" 0 results; "Amalie Elisabeth Hessen-Kassel Frankreich 1640" 20, none on this letter | not found |
+| AAE Correspondance politique (Allemagne, Hesse) 1640; Chavigny's registers | no online inventory or printed selection located here (same as SIG-V228 and AUD-SIG-CHAV) | unreachable |
+Requests: be-api.us.archive.org 15 (+ G3 via prior_work), archive.org advancedsearch 4, github.com 1 clone, googleapis 1 (+1 by G3),
+gallica 1, api.openalex.org 2. IA answered 502/503 on 4 calls; no further IA requests after that.
+
+### 5. Classification
+
+| item | prior plaintext | prior decipherment | class | key | confidence |
+|---|---|---|---|---|---|
+| Baluze 170 f.228r-v (Chavigny to d'Avaux, Amiens, 25 Aug 1640) | Tomokiyo's four words "sont mal satisfaits de *" only | Tomokiyo's fragment (KNOWN-PART) | **N3 held**, the four-word fragment N1 | published (Tomokiyo) plus ours (letter-sign shape values) | moderate-to-low: Google Books unsearched in both audits (429), IA global unreachable this audit, AAE and Chavigny's registers unread, JSTOR queued |
+
+Why not N4: as SIG-V228, and Google Books has now failed two audits running. Why not lower: no family searched by either audit found
+the letter's text or a decipherment beyond Tomokiyo's fragment.
+
+- **Safe sentence (replaces SIG-V228's):** "The cipher passages on Baluze 170 f.228r-v (Chavigny to d'Avaux, Amiens, 25 Aug 1640) were read
+  by us with Tomokiyo's published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens at grade
+  H, the letter signs M); apart from the four words Tomokiyo already quotes ('sont mal satisfaits de'), no prior decipherment or printed
+  text was located in Avenel's Richelieu letters, Rommel's *Geschichte von Hessen* VIII, Charvériat, the Guébriant histories, Boppe 1887,
+  Bougeant II, the *Mercure françois* XXIII, Siri VIII, Internet Archive full text, OpenAlex or CrossRef (searched 8-9 Oct 2026, two
+  audits); Google Books could not be searched."
+- **Unsafe sentences:** SIG-V228's list, plus: "the reading passes the fr17 language judge" (with the corrected grades it fails by 0.038);
+  "de le traitter de la même sorte" on f.228r (29 is unmarked, unread).
+
+### 6. Depth (keep or lower; depth bar of 8 Oct 2026)
+
+- Tokens re-counted on the corrected decode: **56 / 154 = 36% H/C/S**; M 70, I 27, U 1. Unread names/codes 2 (13 sued|co; 73 unmarked on
+  f.228r), other 1 (U). Unchanged from SIG-V228.
+- Cipher clause: not met (SIG-V228's count; the correction only shortens H stretches).
+- Code clause: re-checked on the corrected decode. `10:` = "les" in "avec les ennemis" (f.228v b_L03; en-ne-mi H) and "les ducs de
+  Lunebourg" (b_L07; du, lu, ne, bo H); neither 10: token is a sig_marks row. **Met.** SIG-V228's second example `9:` = "luy" is weaker
+  than stated: "avec luy" on f.228r c_L01 now rests on an unmarked 86 (I), and "luy et Bavier" on an unmarked 96 "et" (I); it is not
+  needed for the clause.
+- This verifier's sentence (D2), from the corrected reading, letter signs M: "In the cipher of f.228v Chavigny reports a fear that the
+  Landgravine and the dukes of Lüneburg would [verb unread] with the enemy, so that he and Bavier would each have to withdraw to his own
+  side; of the Landgravine he finds it hard to believe, given the treaty she recently made with the King, but not so of the Lüneburg dukes."
+- **Depth: D2 held**, "partially deciphered (about 36%)".
+
+### 7. Postmortem and corrections
+
+- SIG-V228 correction 1 is right in its counts but wrong that it leaves values and the judge unchanged: two values change and the fr17
+  PASS becomes a FAIL by 0.038 (section 2). The solver step SIG-V228 named (grade sig_marks tokens I in to_pipe.py, re-run --check) should
+  also re-run `b167228/judge_null.py` and expect `aud2sig228/judge_corrected.out`.
+- SIG-V228's distinctive phrase "de le traitter" (f.228r) and the SO prompt's "de le traitter" rest on a mark regrade: corrected in
+  `second-opinions/PROMPT-chatgpt-b170f228.md` (row SO-BAL170-F228, still queued) and in status.json.
+- Not changed: the reading files, to_pipe.py, decode.py, keys (no decoding in this brief).
