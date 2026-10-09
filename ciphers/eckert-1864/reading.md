@@ -1295,5 +1295,59 @@ Maj. Eckert Washington Flag ship Malvern Hampton Roads {time: 9.30 AM} [By the w
 
 Code-word tokens: H 24.
 
-Totals over the 194 entries: H 3283, C 29, I 19, M 27, U 10.
+**E250 | Page 226 | 5770 | mssEC 25 (obj 5952, pointer 5770), 12 July 1864 Ft Monroe, Sheldon to Maj. Eckert, forwarding Maj. W. M. Este (A.D.C.) to the Secretary of War on the fight near Silver Spring; a clear period copy stands at pointer 10490, Page 348 (FM-R4a, 9 Oct 2026; row 5770/1; transcription-only, page image not viewed)**
+
+Maj. Eckert [Volunteer] {time: 2 PM} following just received and is forwarded for swede of war [Department] [.] Have her D grass {date: July 12} for [Maj Genl U.S. Grant] [City Point] [.] The [Major] [General] [Command = Er (-ed, -ing)]ing middle [Department] [8] [Corps] ordered me upon my arrival here to learn whether wreathic plation with you was intact [,] to in form that yesterday after noon a [Fight ing Fought] was going on [7] [Mile]'s from [Washington] D see on seventh street road near [Head Quarters] [Has, or have been, reinforced] [,] that he had but [11000] [Troops] all told including Rick its [Men] in [Baltimore]  {tail: [signed] Respectfully [100] M Este [Major] & a D see finis Geo. D. Sheldon}
+
+Code-word tokens: H 30.
+
+**E251 | Page 272 | 5816 | mssEC 25 (obj 5952, pointer 5816), 4 Dec 1864 12.50 PM Hd Qrs Army of the James, R. O'Brien (Butler's office) to Sheldon at Ft Monroe, for Maj. Carney: Col. Saunders's report on property of Stephen Barton (FM-R4a; row 5816/0; image-read)**
+
+1250 PM Geo D Sheldon Ft Monroe {time: 1 PM} for [Major] Carney [Norfolk] [.] Tell [Colonel] Saunders make a [Report] Tobey sent me tomorrows boat of property round him by any officers [,] captured at the time or take from [In the] [Adjt Genl. U.S.] of [Adjt Genl. U.S.]'s ville [North Carolina] [.] say toothing about this [Telegraph (-ed, -ing)] [.] if [Colonel] sanders is not able to make the [Report] himself [,] get the facts and make the [Report] yourself [,] also send me all the books and papers taken from [Adjt Genl. U.S.] [.] make and send these [Report]'s without attracting any observation  {tail: [signed] [Maj Gen B. F. Butler] funny R OBrien}
+
+Code-word tokens: H 24.
+
+**E252 | Page 237 | 5781 | mssEC 25 (obj 5952, pointer 5781), 28 Aug 1864 Ft Monroe, Sheldon to the General-in-Chief, Washington, from Lt. Col. T. D. Hart on the arrival of the 104th Pa. Vols from Hilton Head; trailing second text unread (FM-R4a; row 5781/1; transcription-only)**
+
+{time: 4 PM} for [General-in-Chief] [Washington] [.] I have the honor to [Report] the air rival [Of the] [100] and forth [Regiment] Penn [Junction] I a [Volunteer]'s at this port from Hill ton head  {tail: [signed] Tea D Hart Lieut. [Colonel] [Command = Er (-ed, -ing)]ing [1] ought [4] Penn [Volunteer]'s Geo. D. Sheldon Head Qrs. A. P. 1 / 64 Maj. Eckert "D. I." Sheldon F less is wren be [South] do [North] fairy [Donelson]'s can way will and of think bell nearest D up on danger dragged they of Pierce most will I less and should Labb shore being it up side as [River] of}
+
+Code-word tokens: H 21.
+
+**E253 | Page 245 | 5789 | mssEC 25 (obj 5952, pointer 5789), 8 Oct 1864 Ft Monroe, Sheldon to Maj. Eckert, fever at Morehead City, signed Gilmore (FM-R4a; row 5789/1; transcription-only)**
+
+Maj. Eckert [Volunteer] . More head city [5] [By the way of] [Monroe] [8] to [Major] Eckert [.] your dispatch of [1] received [.] offices all closed Kent is dead water house very ill in hospital here [.] [13] increasing [.] No operators needed here for some weeks as the business now doing isn't of sufficient importance to warrant us in risking the health much less the life of any more men [.] Think I will go [North] by next [Steam]er [.] [Troops] generally are escaping though several prominent off I sirs have died Gilmore Geo. D. Sheldon
+
+Code-word tokens: H 17.
+
+**E254 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 12 Dec 1864 Washington, B. W. Brice (Acting Paymaster General) to Sheldon at Ft Monroe, pay of officers via Maj. Binney; the sent copy with partly clear text is mssEC 18 pointer 9913 Page 247 (FM-R4a; row 5829/0; transcription-only)**
+
+Geo D Sheldon Ft. Monroe {time: 5 PM} Knocks I have directed [Major] Binney toupee [1] months pa to such officers as Yuma designate being those referred to bayou inure telegram of this date [.] money is difficult butty will continue immed'y to Reese supply [Major] Binney for this out lay  {tail: [signed] B or Brice another to [Major] Binney sheaf pay Mr [Norfolk] pa [1] months pay to officers designated by authority of [Maj Gen B. F. Butler] [.] I will make you hole immedy for this outlay B W Brice Acting Pay Mastr Genl}
+
+Code-word tokens: H 11.
+
+**E255 | Page 253 | 5797 | mssEC 25 (obj 5952, pointer 5797), 17 Oct 1864 8 PM Nashville, J. C. Van Duzer to S. H. Beckwith (marked "U. S."), Sherman and Hood at Ship's Gap; in print as Van Duzer to Eckert, OR I/39 pt 3 (FM-R4a; row 5797/0; transcription-only)**
+
+S. H. Beckwith "U. S." {time: 8 PM} [Maj Gen W. T. Sherman] was this morning in ship [Gap] in [Mountain]'s [Enemy] [Surrender (-ed, -ing)]ing [Maj Gen J. B. Hood (Confederate)] who was [North] of him and [Threaten (-ed, -ing)]ing equally bridget port the great trestle near [Report] side and the [Tennessee] [Cross (-ed, -ing)]ing at caperous [Ferry] from [Atlanta] I hear that they are plenty fully supplied [Forage (-ed, -ing)]ing parties being able to supply the garrison entirely bringing in from one trip [400] wagon load [Subsistence] stores [Rail Road] is all right from [Atlanta] to resaca  {tail: [signed] Van are you now boys J. C. Van Duzer}
+
+Code-word tokens: H 20, C 1.
+
+**E256 | Page 208 | 5752 | mssEC 25 (obj 5952, pointer 5752), 16 and 17 June 1864 Ft Monroe, Sheldon to Maj. Eckert: material for Col. Pettus (signed Channing Clapp) and a boat report on the crossing of the James (FM-R4a; row 5752/1; transcription-only)**
+
+Maj. Eckert [Volunteer] [Head Quarters] [Engineer] [Brigade] [Monroe] {time: 12} [16] for [Colonel] W. H. Pettus [Command = Er (-ed, -ing)] [Engineer] [Depot] navy yard [Washington] [Report] Hows is [Abandon (-ed, -ing)]d [.] send material here  {tail: [signed] Channing Clapp A. A [General] All well nothing new Geo. D. Sheldon 1 P. M. Fortress Monroe June 17 / 64 Maj. Eckert [Volunteer] [Captain] of boat that brought down to James town [Inland [sic: Island]] insanity's dispatch says that all the whiskey have [Cross (-ed, -ing)]ed and that [Pontoon] [Bridge (-ed, -ing)] is probably by this time taken up [signed] Day lea nothing later Geo. D. Sheldon}
+
+Code-word tokens: H 24.
+
+**E257 | Page 230 | 5774 | mssEC 25 (obj 5952, pointer 5774), 25 July 1864 2 PM Ft Monroe, Sheldon to J. W. Sampson, Baltimore, for Com. Purviance, light-house inspector: light-ship moved to the Elizabeth River obstructions; a clear copy stands at pointer 4823, Page 382 (FM-R4a; row 5774/0; transcription-only)**
+
+J. W. [Ferry] Baltimore [Monroe] {time: 2 PM} {date: July 25} for [,] door Purviance Light House Inspector [Baltimore] [.] [Captain] Gayle keeper of light ship mouth of york [River] asks to have his vessel moved back to obstruct shuns in [Elizabeth] [River] [,] [Report]'s her present [Position] [Danger] us as [Yorktown] is [Evacuate (-ed, -ing) - ion]ed [.] I know of no service he can render where he now is so far as the [Army] is concerned  {tail: [signed] Her man Biggs Lieutenant [Colonel] and [Quartermaster] nothing new here today -- Geo. D. Sheldon}
+
+Code-word tokens: H 23.
+
+**E258 | Page 237 | 5781 | mssEC 25 (obj 5952, pointer 5781), 28 Aug 1864 4 PM Ft Monroe, from Hilton Head 26 Aug, to Maj. Eckert for the General-in-Chief: the 104th Pa. Vols by the Fulton, signed Foster (FM-R4a; row 5781/0; transcription-only)**
+
+Maj. Eckert Wash'n. Hill ton head August [26] [By the way of] [Monroe] {time: 4 PM} August [28] for [General-in-Chief] [Washington] [.] [General] [,] on the [Steam]er Fulton I send the [100] and [4] Pa [Volunteer]'s [,] [900] [Men] to [Washington] to [Report] to you [.] The [Command = Er (-ed, -ing)]ing off I sir has orders to [Report] by [Telegraph (-ed, -ing)] from [Monroe] and then unless otherwise ordered to proceed direct to [Alexandria] and march thence to [Washington] [.] Very Respect fully your Obedient servant  {tail: [signed] [Maj Gen J. G. Foster] end Geo. D. Sheldon}
+
+Code-word tokens: H 33.
+
+Totals over the 203 entries: H 3486, C 30, I 19, M 27, U 10.
 <!-- decode.py: derived block ends -->
