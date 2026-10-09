@@ -8631,9 +8631,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM6c)'"
+        "AUDIT.md '## AUDIT (FV-FM6c)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-14)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM6c verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -8653,8 +8654,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): R. O'Brien (Butler's Hd Qrs) to Maj. Eckert, 21 May 1864, telegraph operators on the Bermuda Hundred front, Jamestown line impracticable, signal field cord wanted (E242)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 21 May 1864 R. O'Brien, telegraph operator at Butler's headquarters, told Major Eckert in Washington which operators were posted at Bermuda Landing and at Gillmore's and W. F. Smith's headquarters, that the line to Jamestown was impracticable for the present, and asked for a few miles of signal field cord. The telegram was not located in the Official Records (ser. I vols. 36 pts 1-3), Butler's Private and Official Correspondence (vols. III-V), 174 cached volumes or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 (one audit): press of the day, Plum's Military Telegraph and Google Books not searched; second audit queued (AUD2-LEDGER-14)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 21 May 1864 R. O'Brien, telegraph operator at Butler's headquarters, told Major Eckert in Washington which operators were posted at Bermuda Landing and at Gillmore's and W. F. Smith's headquarters, that the line to Jamestown was impracticable for the present, and asked for a few miles of signal field cord. The telegram was not located in the Official Records (ser. I vols. 36 pts 1-3), Butler's Private and Official Correspondence (vols. III-V), Plum's Military Telegraph (1882), 174 cached volumes or the Huntington's full-text search (searched 9 Oct 2026); Plum names the same operators on that front (vol. II pp.131-132, 260).",
+      "gap": "N3 (two audits): Google Books unreachable (429) both audits; NY Herald 22-25 May 1864 not read page by page",
       "depth": "D3",
       "completeness": "18 H of 18 code-word groups; 2 plain words M",
       "phrases": [
@@ -8665,7 +8666,7 @@
         "Huntington mssEC 25 (obj 5952) p.138, pointer 5682, E242"
       ],
       "depth_sentence": "On 21 May 1864 Butler's chief operator reported his operators spread across the Bermuda Hundred front -- Snow at Bermuda Landing, Nichols at Gillmore's, Collings at W. F. Smith's -- working nights under incessant artillery fire, and said the line to Jamestown could not be run for now.",
-      "depth_check": "code clause: Nankin = W. F. Smith, Maxim = Gillmore (Nankin passim), Growl = Washington, Walpole = Rebel passim; external non-statistical: holder's clear copies 4666 (O'Brien 28 May 1864, Homan and Collings) and 7763 (Snow and Huyck), OR I/36 pt 2 p.471 (Jamestown line, 6 May); image checked (FV-FM6c)",
+      "depth_check": "code clause: Nankin = W. F. Smith, Maxim = Gillmore (Nankin passim), Growl = Washington, Walpole = Rebel passim; external non-statistical: holder's clear copies 4666 (O'Brien 28 May 1864, Homan and Collings) and 7763 (Snow and Huyck), OR I/36 pt 2 p.471 (Jamestown line, 6 May); image checked (FV-FM6c); Plum, Military Telegraph II pp.131-132, 260 (all five operators on the Bermuda Hundred front under O'Brien; AUD2-LEDGER-14)",
       "depth_note": "18 H of 18 code-word groups; 2 plain words M"
     },
     {
@@ -8795,9 +8796,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM6c)'"
+        "AUDIT.md '## AUDIT (FV-FM6c)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-14)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM6c verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -8817,8 +8819,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon (Fort Monroe) to S. H. Beckwith, City Point, for Col. G. W. Bradley, 10 Dec 1864, Capt. W. L. James on the steamers Brady, Matilda and Cloud and a vessel for horses (E243)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 10 Dec 1864 Fort Monroe passed to City Point, for Col. G. W. Bradley, chief quartermaster, two messages of Capt. William L. James, assistant quartermaster: the steamer Brady had arrived at 4.15 and gone on to Washington, the Matilda was loading cavalry at Portsmouth for Bermuda Hundred, and a sea-going vessel for horses was wanted at once, the Cloud if she was there. The telegram was not located in the Official Records (ser. I vol. 42 pt 3), the Navy Official Records (ser. I vol. 11), 174 cached volumes or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 (one audit): D2 (external check covers the addressee only); press of the day, Google Books not searched; second audit queued (AUD2-LEDGER-14)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 10 Dec 1864 Fort Monroe passed to City Point, for Col. G. W. Bradley, chief quartermaster, two messages of Capt. William L. James, assistant quartermaster: the steamer Brady had arrived at 4.15 and gone on to Washington, the Matilda was loading cavalry at Portsmouth for Bermuda Hundred, and a sea-going vessel for horses was wanted at once, the Cloud if she was there. The telegram was not located in the Official Records (ser. I vol. 42 pt 3), the Navy Official Records (ser. I vol. 11), 174 cached volumes, Plum's Military Telegraph, the Chronicling America press of 9-20 Dec 1864 (term searches) or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 (two audits): D2 (external check covers the addressee only); Google Books unreachable (429); Chronicling America hit pages mostly unread (429); QM vessel records (RG 92) not searched",
       "depth": "D2",
       "completeness": "26 H of 27 code-word groups ('penny gallant' composition M)",
       "phrases": [

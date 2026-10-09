@@ -8150,7 +8150,7 @@ for a FIX job (decode.py entry notes, rule 7): E251 "Stephen"/"Barton" x3 -> pla
 
 ## AUDIT 2 (AUD2-LEDGER-12)
 
-Second verifier AUD2-LEDGER-12 (account 4, for the account-4 orchestrator; row moved from account 3), 9 Oct 2026, 05:11-05:3x UTC by
+Second verifier AUD2-LEDGER-12 (account 4, for the account-4 orchestrator; row moved from account 3), 9 Oct 2026, 05:11-05:2x UTC by
 `date -u`; a separate session and account from the readers FM-R3a/FM-R3b and the first auditor FV-FM6a (all account 1). Scope: **E219**
 and **E227** only (E217 and E226 are N1 on holder clear copies 10487 and 4711, not second-audited, per the row). Nothing decoded; the
 current reading.md (after FIX-FM6; `decode.py --check` exit 0 at 05:3x) was read against FV-FM6a section 4. Key source: `period`.
@@ -8221,3 +8221,64 @@ Scripts and outputs: `fortmonroe/aud2_ledger12_net.py` + `.out` (IA be-api; its 
 - Postmortem: none against FV-FM6a's readings or classes. Its open items closed here: Grant Papers vol. 12 (be-api, snippet-level),
   Julia Grant's memoirs (be-api), press of 28 Aug-3 Sept and 5-14 Nov 1864 (dated, validated), the Ninth Vermont history. Still open:
   Google Books (429), Grant Papers vol. 12 p.461 and 253n read as pages, NARA RG 92, the Vermont AG report 1865.
+
+## AUDIT 2 (AUD2-LEDGER-14)
+
+Second verifier AUD2-LEDGER-14 (account 4, for the orchestrator (account-4); the row moved from account 3), 9 Oct 2026, 05:11-05:2x UTC by
+`date -u`; a separate session and account from the reader FM-R3d and the first auditor FV-FM6c (both account 1); this session had not read or
+audited E242 or E243 before. Scope: **E242, E243** (E245 is N1 on the holder clear copy 10485 and was not second-audited). Nothing decoded;
+FV-FM6c's key look-ups were not redone. Key source: `period`. Scratch only (texts and JSON under the session scratchpad, nothing committed but
+this section, prior-work.tsv rows and the propagation below).
+
+### Prior-work checks
+- `prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=p.138 pointer 5682;date=1864-05-21;sender=OBrien;recipient=Eckert'
+  --step-type second-audit --offline` and the same for `p.282 pointer 5826;date=1864-12-10;sender=Sheldon;recipient=Beckwith`: exit 4 both;
+  LEAD 1-own = LANE LEDGER's target-level ROOM claim (03:42), which names no unit and does not cover these items; 4-editions CLEAR on the cached
+  OR volumes (date +-1 day, both correspondents, control hit); 3-tomokiyo/3-solver UNCHECKED (no folio key for an ad-hoc unit; unsolved-ciphers
+  not cloned). Rows in prior-work.tsv.
+
+### New searches (the first audit's named gaps)
+- **Plum, *The Military Telegraph during the Civil War* (1882), vols. I-II** (`militarytelegraph01plumrich`, `...02plumrich`, djvu text, 2
+  downloads; the first audit had not searched it). Phrase/name grep: Huyck, Collings, Homan, "field cord", Jamestown, Matilda, Brady.
+  - **E242: telegram not printed.** Context printed: vol. II p.131: with Butler were "chief operator Richard O'Brien, and J. Hervey Nichols and
+    J. W. Collings, assistants. The latter was detailed from the ranks"; p.132: "Field lines were also constructed from Bermuda Hundred to the
+    head-quarters of General Butler on Proctor's Creek, and to both wings of his army ... under the direction of Richard O'Brien"; operating
+    then "O'Brien and Nichols, at Butler's head-quarters; H. N. Snow and W. H. Wilson, detailed from Ohio regiments, at Bermuda Hundred;
+    O. B. Vincent, at General Gilmore's, and at Smith's on the right, near Fort Darling, C. A. Homan"; vol. II p.260: "At Butler's
+    head-quarters, Bermuda Hundred, were Richard O'Brien, J. H. Nichols and Maynard Huyck", and Huyck at the Point of Rocks pontoon station
+    part of the time. So every operator the telegram names (Huyck, Snow, Nichols, Collings, Homan) is a man Plum puts on this front under
+    O'Brien, Snow at Bermuda Hundred as in the telegram, and Collings and Huyck both soldiers detailed as operators (the telegram's "private
+    Huyck ... detailed as operator"). Plum's station list differs from the telegram's for Gillmore's (Vincent, not Nichols) and Smith's (Homan,
+    not Collings); Plum gives no date for that list, and the telegram's 21 May arrangement is the dated one. Context, not the plaintext.
+  - **E243:** Matilda, Brady (steamer), W. L. James: 0 (a be-api `Matilda` probe on vol. II agrees).
+- **Official Records, page text fetched this session:** OR I/36 pt 3 (`warofrebellion363unit`, 20 May-12 June 1864) for O'Brien, Huyck,
+  "field cord"/"signal cord": no hit for the telegram (operator hits are other messages); OR I/42 pt 3 (`warofrebellion423unit`, Oct-Dec 1864)
+  for Matilda, "steamer Brady", W. L. James, Cloud: 0 (Brady hits are Fort Brady and Col. H. J. Brady). 2 downloads.
+- **Grant Papers via IA be-api (snippet only, 10 requests, 1.6 s apart; positive control `Huyck` in Plum vol. II = 1 hit):** vol. 10 (Jan-May
+  1864) "field cord", Huyck, "O'Brien telegraph": 0; vol. 13 is not an IA item (AUD2-LEDGER-10), probed through `papersofulyssess0000unse`
+  and vol. 14 for Matilda, "Brady steamer", "W. L. James": 0; vol. 12 "Bradley quartermaster": 1 hit, other matter (Barnes, 28 Oct, hospital
+  transports). A miss is a search result, not a statement about print.
+- **Press of the day, Chronicling America (www.loc.gov collection JSON, 12 requests incl. one 503 retry; tile.loc.gov full text 2 requests, then
+  HTTP 429 on 2 more: host left, not retried).** Positive control: `"exchanged prisoners" "United States" "Port Royal"`, 14-18 Dec 1864, returns
+  the Cleveland Morning Leader of 16 Dec p.1 that AUD2-LEDGER-11 found (filter works). E242 (21 May-5 June 1864): `"Bermuda Hundred" "field
+  cord"` 0, `"signal cord" Butler` 0, `"incessant artillery" Butler` 0, `"Bermuda Hundred" telegraph Jamestown` 1 (St Paul weekly, 20 May, not
+  this); `Huyck` 503 twice, unreachable. E243 (9-20 Dec 1864): `Matilda cavalry Portsmouth` 0, `"steamer Cloud"` 0, `steamer Brady "Fortress
+  Monroe"` 6 pages (two read in full text: the Daily National Intelligencer 14 Dec p.3 hit is "Brady's Gymnasium", Washington; the others not
+  read after the 429 -- loose term matches across a page, not a phrase), `Bradley quartermaster "City Point"` 7 pages (term matches, not read).
+- **Google Books** (`"field cord" Huyck`, `"steamer Brady" Matilda 1864`, key + `&country=US`): HTTP 429 on the first call; the loop sent the
+  second before stopping (2 calls, both 429). Unreachable this hour.
+- Not repeated: FV-FM6c's 15 CONTENTdm full-text queries (holder transcription, all pointers) and image checks of 5682 and 5826 stand.
+
+### Verdict
+- **E242: N3 holds** (no prior plaintext or decipherment located). **D3 kept** (H 18 of 18; image checked by FV-FM6c); the external check is
+  strengthened, not changed: Plum II pp.131-132, 260 places all five named operators on the Bermuda Hundred front under O'Brien. Safe sentence:
+  FV-FM6c's, with "Plum's *Military Telegraph* (1882)" added to the sources where the telegram was not located and the clause "; Plum names the
+  same operators on that front (vol. II pp.131-132, 260)". Unsafe: any novelty word.
+- **E243: N3 holds.** **D2 kept** (H 26 of 27; the press and Plum add no check of the content, so the first audit's reason for D2 stands).
+  Safe sentence: FV-FM6c's, with "Plum's *Military Telegraph* and the Chronicling America press of 9-20 Dec 1864 (term searches)" added to the
+  places not located. Unsafe: any novelty word; "the press did not report it" (two of 13 hit pages were read).
+- Key `period` for both. Propagated: status.json rows (audit_status "two audits", audit_refs, gap, line, E242 depth_check); SO-ECKERT-E242
+  prompt's context paragraph (Plum added, so the second opinion does not "find" it as prior print).
+- Postmortem: nothing against FV-FM6c's readings or grades. Plum's undated station list naming different operators at Gillmore's and Smith's is
+  a fact for a reader, not a reading error. Still open: Google Books (429), Chronicling America full text of the remaining E243 hit pages (429),
+  the NY Herald 22-25 May 1864 page by page, QM vessel records (RG 92) for the Brady, Matilda and Cloud.
