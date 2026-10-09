@@ -7563,6 +7563,25 @@ TX programme table 19:1x UTC: slot 1 orchestrator 25.1 | slot 2 lane inc. 2 sess
 slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 13.9, pass 4 at 19:41; open F15 (blocking) F16 F17 F18 | slots 4-10: round 5 (5 workers) |
 programme spend so far: lanes 37.0 + workers ~170 + reviewer 13.9 on the account-4 window; eval looks 0.
 
+Check-in 8 and hand-over, 19:43-19:5x UTC 9 Oct (12:43 pm PT): five_hour allowed; orchestrator context ~660k, cost 28.1 -- hands the role to a
+successor at the end of this check-in (hub-seed/SUCCESSOR-PROMPT.md). Owner's asks closed: RETIRED.tsv (208 rows) now carries a reopen
+condition on every row (RETIRED-REOPEN 9.16 D-: 160 overrides from each folder's own record, 52 'unknown: none recorded', 3 not-a-retirement
+flags; `python3 tools/retired.py --check` exit 0); the transcription programme is standing. TX programme since 19:1x: lane incarnation 2
+(12.3) answered F15-F19 -- X21 registered a pooled non-test and re-baselining did not fire; X21b on independent truths (fresh Opus Dinteville
+pair, f.36v pairs, dev lines) is NULL (Opus 17 / Sonnet 11, p 0.35): the reader rule stands, logged untested at this N; X2c cancelled before
+training; Amendment 4 declares f178r L01-03 an eval unit (clerk-sheet truth, 6 of 83 flagged-excluded; caveat: those lines tuned the
+follow-slope crop rule) -> pool 29 under the p<0.05 branch (TX-RED pass 4 is checking exactly that caveat now); R3b: masked re-cut of the
+Dinteville gloss leaves is untestable by image means (gloss rows and cipher strokes overlap in y; tools/gloss_cut.py built and tested) --
+retired for that leaf; A1 sheet audit found 3 mislabelled Spinelli atlas exemplars (SIX = h, OMEGABAR = g, TEE = b) -> atlas v4, B1 Spinelli
+baseline re-run under the corrected sheet next; SC1 scout: the only further Birago 1572 leaf with a period witness is f.162r no.82 (slip on
+f.161v, ~17 scorable signs). Eval looks 0, S2 look 0. AUD2-LEDGER-28 (2.80 D: E325 N3 weak kept) and -29 (3.60 D: E326 N3 weak, D2 -> D3 with
+the check) done, ledgered, archived. Account 1 LEDGER-7 wave 4 (E331-E340 filed, six printed); account 2 FAMILY-A2k closed 19:34 (17 workers
+45.21; all reading spend landed on N0 leaves -- its own handoff says census unglossed runs first); account 3 silent since 02:03. Checks ok;
+keys 6; queue SORTER-RERENDER-A3 only.
+TX programme table 19:5x UTC: slot 1 orchestrator -> successor | slot 2 lane inc. 2 session_011EV9AKeJ4YuU9jjghdUy6F 12.3 (+ workers; check-in
+19:50) | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 13.9, pass 4 running, pass 5 at 20:28; open F16-F19 + whatever pass 4 says on Amendment
+4 | slots 4-10: round 6 (4 workers; B1 next) | programme spend: lanes 42 + workers ~200 + reviewer 14 on the account-4 window; eval looks 0.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

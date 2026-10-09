@@ -103,3 +103,7 @@ STATE DELTA 19:1x UTC 9 Oct: lane incarnation 2 = session_011EV9AKeJ4YuU9jjghdUy
 F16 (pool 23 < 24: no eval look until an 0b item) F17 F18. RETIRED.tsv exists (tools/retired.py; --check must pass after RETIRED-REOPEN
 session_01Jq... lands -- ledger + archive it). AUD2-LEDGER-28 session_016BM5xQpaCaPwYmpcdwFw4P and -29 session_016jr9GDGGMgBeWQgNmvJmj3 live on
 account 4 (ledger + archive on done). Orchestrator hand-over due near 680-700k context: rewrite hub-seed/SUCCESSOR-PROMPT.md state first.
+STATE DELTA 19:5x UTC 9 Oct (hand-over): successor session takes over from session_01VQDEedJCaaN7fFPGcNPUUD (depth 5). Live on account 4: lane
+inc. 2 session_011EV9AKeJ4YuU9jjghdUy6F (round 6; pool 29 under Amendment 4 -- read TX-RED pass 4's verdict on the f178r L01-03 caveat first),
+TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY (pass 5 at 20:28). Nothing else live on account 4 outside the programme. RETIRED.tsv --check exit 0.
+Account 2 lane closed 19:34 (refill at its 20:10 dispatcher); account 1 LEDGER-7 wave 4 closing. See hub-seed/SUCCESSOR-PROMPT.md.

@@ -62,3 +62,12 @@ log the date in CONTRIBUTIONS.md row 59 and the draft header. Never relay the so
 owner decisions 0 fixed / 3 broken'. Reports: OWNER REPORT FORMAT, led by experiments run / dev passes / eval looks (0) / S1-S5 / open
 red-team findings, then the decoding work.
 
+HAND-OVER 19:5x UTC 9 Oct (session_01VQDEedJCaaN7fFPGcNPUUD, context ~660k, cost 28.1 by get_session, eight check-ins 14:50-19:5x): the
+successor (depth 5, created via create_session, titled 'ORCHESTRATOR (account 4) · talk to this one') reads hub-seed/CHECKIN-PROMPT.md (newest
+deltas at the bottom), STATUS.md 'Orchestrator handoff (account 4 ...)' through 'Check-in 8 and hand-over', research/TX-PROGRAM.md and
+research/TX-RED-2026-10-09.md's newest pass; then export CIPHERLAB_ACCOUNT=account-4; arm send_later (40 min) first; post the successor
+check-in line; retitle this session 'ARCHIVED ORCHESTRATOR (account 4) · handed over 19:5x UTC 9 Oct to <id>; do not message', archive it,
+verify, ledger it (cost by get_session, outcome D: eight check-ins, the TX programme opened and run, 10 second audits closed, RETIRED.tsv built,
+the owner's 11:32 am PT report). Nothing of this session's is left unledgered or unarchived except itself. Owner: away until 10 Oct Pacific
+but reading today; ASKS 160 (post the Bourdeau reply) waits on him; reports in the OWNER REPORT FORMAT led by the transcription programme.
+
