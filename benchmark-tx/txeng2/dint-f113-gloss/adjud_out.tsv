@@ -1,0 +1,72 @@
+line	col	sign	conf	viewed	note
+f113e_L02	1	.	M	yes	raised dot before f
+f113e_L02	2	f	H	yes	F-like with bars
+f113e_L02	4	4	M	yes	triangle with flag
+f113e_L02	5	z	M	yes	z/2 shape
+f113_L03	1	NEW:d-shape	H	yes	bowl with rising stroke
+f113_L03	3	p	M	yes	p with loop
+f113_L03	4	NEW:d-shape	M	yes	bowl with rising stroke, prose stem touches
+f113_L03	7	NEW:d-shape	M	yes	bowl with rising stroke
+f113_L03	11	z	H	yes	
+f113_L03	13	4	H	yes	
+f113_L03	18	NEW:d-shape	M	yes	bowl with rising stroke
+f113_L03	22	L	M	yes	bar at base, stem up; no tail below so not t
+f113_L03	23	v'	M	yes	v with rising stroke
+f113_L03	27	sq	M	yes	square with small tick
+f113_L03	32	y	M	yes	psi cup with stem
+f113_L03	33	L	M	yes	inverted T
+f113_L03	34	NEW:d-shape	H	yes	bowl with rising stroke
+f113_L03	35	y	M	yes	psi shape
+f113_L03	38	sq	M	yes	square
+f113_L03	39	L	M	yes	inverted T
+f113_L03	40	NEW:d-shape	H	yes	bowl with rising stroke
+f113_L03	41	y	M	yes	psi shape with stem
+f113_L03	42	sq	M	yes	square with ticks at left
+f113_L03	48	v'	M	yes	v with rising stroke
+f113_L03	50	NEW:d-shape	M	yes	bowl with rising stroke
+f113_L03	56	4	M	yes	open triangle with rising stem not round bowl
+f113_L03	57	v	M	yes	
+f113_L03	58	L	H	yes	inverted T
+f113_L05	2	f	M	yes	slanted stem with bars same shape as cols 20 and 51
+f113_L05	3	v'	M	yes	v with stroke through top
+f113_L05	4	4	H	yes	
+f113_L05	5	x	L	yes	v-like with baseline bar; x or new
+f113_L05	6	.	H	yes	dot before 1
+f113_L05	11	NEW:d-shape	L	yes	bowl with stem rising, prose f descender touches
+f113_L05	13	NEW:d-shape	M	yes	bowl with stroke rising up-right
+f113_L05	18	sq	H	yes	
+f113_L05	20	f	M	yes	slanted stem with bar
+f113_L05	21	v'	M	yes	v with top bar and stem
+f113_L05	24	#	H	yes	
+f113_L05	26	0	M	yes	
+f113_L05	27	z	H	yes	
+f113_L05	28	.	M	yes	small dot between z and 1
+f113_L05	31	NEW:d-shape	M	yes	bowl with rising stem
+f113_L05	36	p	M	yes	
+f113_L05	38	L	H	yes	
+f113_L05	39	-:-	H	yes	
+f113_L05	45	z	H	yes	
+f113_L05	46	.	M	yes	small dot between z and 1
+f113_L05	51	f	M	yes	slanted stem with bars
+f113_L05	56	#	H	yes	
+f113_L05	64	t	M	yes	bar with tail below
+f113_L05	65	#	H	yes	
+f113_L07	1	#	M	yes	two stems with bar
+f113_L07	4	v	L	yes	v; stem touching is prose
+f113_L07	6	v'	L	yes	v with top bar
+f113_L07	7	w	H	yes	
+f113_L07	8	y	M	yes	
+f113_L07	9	f	M	yes	slanted stem with bars
+f113_L07	11	L	M	yes	inverted T
+f113_L07	21	#	M	yes	
+f113_L07	24	9	M	yes	bowl with descender
+f113_L07	31	f	M	yes	
+f113_L07	32	y	M	yes	
+f113_L07	34	z	H	yes	
+f113_L07	35	L	M	yes	
+f113_L07	37	z	H	yes	
+f113_L07	38	NEW:d-shape	M	yes	bowl with rising stroke
+f113_L07	39	1	H	yes	
+f113_L07	41	#	M	yes	
+f113_L07	42	T	L	yes	bar with two legs under prose flourish
+f113_L09	7	v'	M	yes	v with long overbar
