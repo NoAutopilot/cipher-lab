@@ -2425,6 +2425,7 @@ pedlar that he had but fence waldo whistle all
 told including Rick its spit in Baptism youth Respectfully
 William M Este taunton & a D see finis
 Geo. D. Sheldon
+plain: silver spring william
 
 ### E251 | Page 272 | 5816 | mssEC 25 (obj 5952, pointer 5816), 4 Dec 1864 12.50 PM Hd Qrs Army of the James, R. O'Brien (Butler's office) to Sheldon at Ft Monroe, for Maj. Carney: Col. Saunders's report on property of Stephen Barton (FM-R4a; row 5816/0; image-read)
 Hd Qrs Army of James Dec 4
@@ -2485,13 +2486,14 @@ Lucy Knocks I have directed Tappan Binney toupee
 plug months pa to such officers as Yuma
 designate being those referred to bayou inure telegram
 of this date unity money is difficult butty
-will continue immed'y to Reese supply Taunton Binney
+will <del>continue</del> <ins>contrive</ins> immed'y to Reese supply Taunton Binney
 for this out lay walrus B or Brice
 another to Tappan Binney sheaf pay Mr famish
 pa plunge months pay to officers designated by
 authority of Knave Zebra I will make you
 hole immedy for this outlay B W Brice
 Acting Pay Mastr Genl
+variant: knocks=Knox:H
 
 ### E255 | Page 253 | 5797 | mssEC 25 (obj 5952, pointer 5797), 17 Oct 1864 8 PM Nashville, J. C. Van Duzer to S. H. Beckwith (marked "U. S."), Sherman and Hood at Ship's Gap; in print as Van Duzer to Eckert, OR I/39 pt 3 (FM-R4a; row 5797/0; transcription-only)
 Nashville Oct 17 / 64
@@ -2507,6 +2509,7 @@ in from one trip penny publish wagon load
 woolwich stores welch is all right from bishop
 to resaca webster Van are you now boys
 J. C. Van Duzer
+plain: taylors ridge watching white
 
 ### E256 | Page 208 | 5752 | mssEC 25 (obj 5952, pointer 5752), 16 and 17 June 1864 Ft Monroe, Sheldon to Maj. Eckert: material for Col. Pettus (signed Channing Clapp) and a boat report on the crossing of the James (FM-R4a; row 5752/1; transcription-only)
 Fortress Monroe June 16 / 64
@@ -2546,6 +2549,7 @@ render where he now is so far as
 the oyster is concerned webster Her man Biggs
 Lieutenant pandora and vincent nothing new here today --
 Geo. D. Sheldon
+plain: sampson
 
 ### E258 | Page 237 | 5781 | mssEC 25 (obj 5952, pointer 5781), 28 Aug 1864 4 PM Ft Monroe, from Hilton Head 26 Aug, to Maj. Eckert for the General-in-Chief: the 104th Pa. Vols by the Fulton, signed Foster (FM-R4a; row 5781/0; transcription-only)
 Ft Monroe Aug. 28 / 64
@@ -2699,8 +2703,9 @@ I think Wilby quiet zodiac Lieutenant Pandora Smith will
 attend to Tarquin quadrantal matters yoke Knave unity repeat
 this to paradise Smith assistant Barton how are you
 Geo D Sheldon
+gloss: quadrantal=Department(al):C
 
-### E271 | Page 128 | 5641 | mssEC 25 (obj 5952, pointer 5641), 1 May 1864 Ft Monroe, Sheldon to S. H. Beckwith at Culpepper for Grant: one iron-clad arrived, two more due, four gunboats due, Gillmore not yet arrived; a clear period copy stands at pointer 4587, Page 146, and Butler's Private and Official Correspondence IV prints it; trailing second text ("would it meet your views to have new Man at ...", signed S.) not matched to a clear copy (FM-R5a; row 5641/1; transcription-only)
+### E271 | Page 128 | 5641 | mssEC 25 (obj 5952, pointer 5641), 1 May 1864 Ft Monroe, Sheldon to S. H. Beckwith at Culpepper for Grant: one iron-clad arrived, two more due, four gunboats due, Gillmore not yet arrived; a clear period copy stands at pointer 4587, Page 146, and Butler's Private and Official Correspondence IV p.148 prints it (CONF-FM2; not pp.148-149); trailing second text ("would it meet your views to have new Man at ...", signed S.) not matched to a clear copy (FM-R5a; row 5641/1; transcription-only)
 Ft Monroe May 1 1864
 SH Beckwith Culpepper
 for Jersey unity plunge ironic lad arrived pedlar
@@ -2712,6 +2717,7 @@ would it meet your views to have
 new Man at Hastings and Snow at
 animal would please all better am sure
 S.
+variant: knocks=Knox:H
 
 ### E272 | Page 237 | 5768 | mssEC 25 (obj 5952, pointer 5768), 10 July 1864 10.15 AM Ft Monroe, S. H. Beckwith (Hd Qrs U.S.A.) to Sheldon, for Brig. Gen. John A. Rawlins: none of the 19th Corps has arrived, signed J. W. Shaffer (FM-R5a; row 5768/2; image-read at the date line and tail; no clear copy found)
 Ft Monroe July 10 / 64 10.15 A. M.
@@ -2733,6 +2739,7 @@ rose are wicked in some salem at mouth of
 Chicken hominy with Vienna train which I dont believe
 Walrus her man Big Chief Vinton Rosetta warm evening
 Geo D. Sheldon
+plain: chicken
 
 ### E274 | Page 152 | 5645 | mssEC 25 (obj 5952, pointer 5645), 2 May 1864 4.30 PM Ft Monroe, Sheldon to S. H. Beckwith for Gen. Grant: letter from Gillmore, he comes with the last detachment, signed Butler; a clear period copy stands at pointer 4593, Page 152 (FM-R5a; row 5645/2; transcription-only)
 Ft Monroe May 2 . 1864
@@ -2743,6 +2750,7 @@ would bring him here to night or whelp
 morning unity he comes with the last query
 meant walrus Knocks Katy how you get along
 Geo D Sheldon
+variant: knocks=Knox:H
 
 ### E275 | Page 280 | 5824 | mssEC 25 (obj 5952, pointer 5824), 9 Dec 1864 3.30 PM Ft Monroe, Sheldon to Maj. Eckert for Capt. Allen, Quartermaster: no boots to spare, signed Capt. James, Quartermaster (FM-R5a; row 5824/0; image-read, transcription agrees; no clear copy found)
 Ft. Monroe Dec 9 1864
@@ -2753,7 +2761,7 @@ days for boots to whimper plunge Woodbury panama and have
 not yet succeeded in getting them Webster pilgrim James Vincent
 Geo D Sheldon
 
-### E276 | Page 52 | 5582 | mssEC 25 (obj 5952, pointer 5582), 12 Mar 1864 Ft Monroe, Sheldon to Maj. Gen. Pleasonton from Kilpatrick: men all embarked by tomorrow noon, will report in person Tuesday; a clear period copy stands at pointer 4493, Page 52, and OR I/33 prints it (FM-R5a; row 5582/1; transcription-only)
+### E276 | Page 52 | 5582 | mssEC 25 (obj 5952, pointer 5582), 12 Mar 1864 Ft Monroe, Sheldon to Maj. Gen. Pleasonton from Kilpatrick: men all embarked by tomorrow noon, will report in person Tuesday; a clear period copy stands at pointer 4493, Page 52, and OR I/33 p.670 prints it (CONF-FM2) (FM-R5a; row 5582/1; transcription-only)
 Ft Monroe Mar 12 1864
 Lt Caldwell Hd Qrs A. of P.
 from Hastings march flood Fanny for Tappan
@@ -2762,6 +2770,7 @@ all have quarreled by whelp Francis Zebra
 I will white in person on Tuesday
 Youth Jay Kill pay trick palsy Washingtons
 Geo D Sheldon
+plain: person
 
 ### E277 | Page 258 | 5802 | mssEC 25 (obj 5952, pointer 5802), 2 Nov 1864 Ft Monroe, R. O'Brien (Hd Qrs A. of J.) to Sheldon, for Col. Howard, chief of artillery: strength of batteries and style of guns, signed Fred Martin (FM-R5a; row 5802/1; image-read, transcription agrees; no clear copy found)
 Ft Monroe Nov 2 1864
@@ -2773,7 +2782,7 @@ stephen plank last mentioned pagans please send
 word at once Webster Fred Martin pilgrim
 Geo D Sheldon
 
-### E278 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 13 Dec 1864 1 PM Ft Monroe, Sheldon to S. H. Beckwith at City Point for Gen. Ingalls: the few remaining vessels of the fleet to get away this evening (FM-R5a; row 5829/2; image-read, transcription agrees; no clear copy found)
+### E278 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 13 Dec 1864 1 PM Ft Monroe, Col. R. C. Webster (chief QM, Fort Monroe; signed 'R. C. Webster, Colonel and Quartermaster', FV-FM8d) to Gen. Ingalls at City Point, via Sheldon and S. H. Beckwith (operators): most of the fleet left during last night, the few remaining to get away this evening (FM-R5a; row 5829/2; image-read, transcription agrees; no clear copy found)
 Ft Monroe Dec. 13 - 1864
 S. H. Beckwith City Point .
 Harriet for In galls zodiac mast torch
@@ -2782,6 +2791,8 @@ not know when the few remaining will
 get away but I presume this evening .
 youth are see webster paradise and vincent .
 Geo. D. Sheldon
+plain: webster
+graded: mast:I
 
 ### E279 | Page 96 | 5609 | mssEC 25 (obj 5952, pointer 5609), 17 Apr 1864 8 PM Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: Gillmore has no shelter tents, 20,000 asked, signed Butler; a clear period copy stands at pointer 10238, Page 96 (FM-R5a; row 5609/0; transcription-only)
 Ft Monroe April 17th 1864
@@ -2792,6 +2803,7 @@ asking that I be prepared to supply
 him with harrow promise unity the last
 requisition was for him Yoke Knave Nancy
 Geo D Sheldon
+plain: shelter
 
 ### E280 | Page 241 | 5785 | mssEC 25 (obj 5952, pointer 5785), 30 Sept 1864 Ft Monroe, Sheldon to Maj. Eckert, relaying a message from Newbern signed Gilmore: yellow fever prevailing to an alarming extent, sick at Newport Barracks, Vanderhoef to be relieved, men wanted to keep the offices open (FM-R5b; row 5785/0; image-read at 2400 px)
 Maj. Eckert Washn
@@ -2813,6 +2825,7 @@ not very fatal among the whisky who are
 encamped outside the town Please answer immed'y Gilmore
 Geo D. Sheldon
 plain: fever nursing
+unjoin: immediately
 
 ### E281 | Page 162 | 5706 | mssEC 25 (obj 5952, pointer 5706), 27 May 1864 Washington, T. T. Eckert to Geo. Sheldon, Ft Monroe: a detail to cut poles and build line from Gloster to West Point, Bickford to leave Port Royal on the Rappahannock; cable for Gloster and West Point (FM-R5b; row 5706/0; image-read at 2400 px)
 Geo Sheldon
@@ -2834,6 +2847,7 @@ Vernon and have you cable sufficient to spare
 and the machinery for paying it out Sugar
 T. T. Eckert
 plain: white
+plain: axis hope
 
 ### E282 | Page 86 | 5630 | mssEC 25 (obj 5952, pointer 5630), 24 Apr 1864 5 PM Ft Monroe, Sheldon to Maj. Eckert for Qr Mr Gen Meigs: the steamers and tugs reported at Fort Monroe, barges and lighters; signed Herman Biggs; PERIOD CLEAR COPY at holder pointers 10267-10268 (pp.125-126), C-grade known text (FM-R5b; row 5630/0; transcription only, page image fetched but not read)
 Maj Eckert Di
@@ -2852,6 +2866,7 @@ nuptial pacific & Vincent spartans for which requisition has
 been made Yoke Her man begs Lieutenant paradise Vinton
 Geo D Sheldon
 plain: rockland wyoming
+gloss: weasilers=Steamers:C
 
 ### E283 | Page 275 | 5819 | mssEC 25 (obj 5952, pointer 5819), 7 Dec 1864 Ft Monroe, to R. O'Brien Hd Qrs A. of J., for Commander Parker, Onondaga, from Porter: two gunboats down to White Shoal light and Point of Shoals, stop boats at night (FM-R5b; row 5819/1; image-read at 2400 px)
 R OBrien HdQrs a of J
@@ -2867,9 +2882,11 @@ persons in them as prisoners Zodiac Keep a good watch
 ready furry wag weasel up & chain ready tuslip tulip
 give paulding to vassals walrus Niagara how is it now
 plain: white shoal shoals watch
-graded: paulding:M
+plain: anchor persons
+gloss: sharpes=Gap?:I
+graded: tulip:M
 
-### E284 | Page 260 | 5804 | mssEC 25 (obj 5952, pointer 5804), 4 Nov 1864 Ft Monroe, Sheldon to S. H. Beckwith, City Point: whether the men are to be transferred here without authority, Lizzie Baker the only boat reported; Babcock here (FM-R5b; row 5804/1; image-read at 2400 px)
+### E284 | Page 260 | 5804 | mssEC 25 (obj 5952, pointer 5804), 4 Nov 1864 Ft Monroe, Lt. Col. O. E. Babcock to Lt. Col. T. S. Bowers at City Point, via Sheldon and S. H. Beckwith (FV-FM8b; the time word Nelly = 8.30 PM conflicts with the ledger order against 5805, unsettled): whether the men are to be transferred here without authority, Lizzie Baker the only boat reported; Babcock here (FM-R5b; row 5804/1; image-read at 2400 px)
 SH Beckwith City Point
 Nelly for Bourse tulip I do not think the whinny
 wilby transferred here within lampoon paddle ours unless you send
@@ -2880,6 +2897,7 @@ arrive unity Lizzie Baker is the only boat that has
 yet wicked please wreathe me at once whether I shall
 take the boots youth Babcock Lew is here sends respects
 Geo D Sheldon
+graded: tulip:M
 
 ### E285 | Page 254 | 5798 | mssEC 25 (obj 5952, pointer 5798), 27 Oct 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington, for the Secretary of the Navy, from Porter: Tallapoosa, Yantic and Maumee off Montauk Point and steering for Halifax before the Tallahassee (FM-R5b; row 5798/2; image-read at 2400 px)
 Maj. Eckert Washington
@@ -2894,7 +2912,7 @@ with orders to get there before the Tall
 a has see youth Niagara raining here tonight
 Geo D. Sheldon
 
-### E286 | Page 61 | 5605 | mssEC 25 (obj 5952, pointer 5605), 14 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert: whether the 5th New Jersey Battery can be spared from the defences of Washington, else forward the request (FM-R5b; row 5605/2; transcription only, page image fetched but not read)
+### E286 | Page 61 | 5605 | mssEC 25 (obj 5952, pointer 5605), 14 Apr 1864 1 PM Ft Monroe, Maj. Gen. B. F. Butler to the Secretary of War (operators Sheldon and Eckert; clear copy 4529, FV-FM8d): whether the 5th New Jersey Battery can be spared from the defences of Washington, else forward the request (FM-R5b; row 5605/2; transcription only, page image fetched but not read)
 Maj Eckert Di
 for Bruno unity Can the plaster Africa
 pagan be spared to this quadrant Saxon
@@ -2905,7 +2923,7 @@ I should direct this to Japan Pekin
 If so please forward it Webster Knox
 Geo D Sheldon
 
-### E287 | Page 244 | 5788 | mssEC 25 (obj 5952, pointer 5788), 7 Oct 1864 9 AM, Ft Monroe, Sheldon to S. H. Beckwith care Maj. Eckert, Butler's Head Quarters to Lieut. Gen. Grant: the enemy have attacked and driven Kautz back and opened fire on Fort Harrison; IN PRINT OR I/42 pt 3 pp.106-107 and Butler's Private and Official Correspondence V p.231 (FM-R5b; row 5788/2; transcription only, page image fetched but not read)
+### E287 | Page 244 | 5788 | mssEC 25 (obj 5952, pointer 5788), 7 Oct 1864 9 AM, Ft Monroe, Sheldon to S. H. Beckwith care Maj. Eckert, Butler's Head Quarters to Lieut. Gen. Grant: the enemy have attacked and driven Kautz back and opened fire on Fort Harrison; IN PRINT OR I/42 pt 3 p.107 (CONF-FM2; not pp.106-107) and Butler's Private and Official Correspondence V p.231 (FM-R5b; row 5788/2; transcription only, page image fetched but not read)
 S. H. Beckwith Care Maj. Eckert Wash'n
 Knaves snake Emma plunder for Japan unity at pledge
 lampoon plaster this morning the rose have oiled &
@@ -2913,16 +2931,18 @@ driven Kautz back and are now owling on our
 right toward the watkins in strong salem zebra They
 have just tuliped fire upon Saco Harrison walrus Knox
 Geo. D. Sheldon
+split: lampoon
 
 ### E288 | Page 180 | 5724 | mssEC 25 (obj 5952, pointer 5724), 31 May 1864 Ft Monroe, Sheldon to Maj. Eckert for Gen. Taylor, Commissary General: two millions of rations and 1000 head of cattle to White House; signed M. P. Small, Lt Col and C. S. (FM-R5b; row 5724/0; transcription only, page image fetched but not read)
 Maj Eckert Di
 for palate Taylor Commissary Shelby growl unity I am
 prepared to send peach millions Wales and plug purple
-head of Cattle to the white horse zodiac shall Shall
+head of Cattle to the white horse zodiac <del>shall</del> Shall
 I send them youth M P Small Lieutenant pandora
 and C. S. Mary John Potts is good boy
 Geo D Sheldon
 plain: taylor white
+plain: john
 
 ### E289 | Page 270 | 5814 | mssEC 25 (obj 5952, pointer 5814), 1 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert for the Secretary of the Navy, from Porter: orders for Captain Taylor and Lieut. Commander Dewey to appear before a court martial, shall the witnesses leave (FM-R5b; row 5814/2; transcription only, page image fetched but not read)
 Maj Eckert Di
@@ -2930,9 +2950,10 @@ Francis for Burton zodiac orders have come here for
 princess Taylor and Lieutenant Polkaer Dewey to appear before
 a court marshall zebra there is a prospect of
 this squad run leaving here immediately tulip shall the
-witness leave at such a time as this Niagara
+<del>witness</del> <ins>Witnesses</ins> leave at such a time as this Niagara
 Geo D Sheldon
 plain: taylor prospect
+graded: tulip:M
 
 ### E290 | Page 207 | 5751 | mssEC 25 (obj 5952, pointer 5751), 15 June 1864 Washington, T. T. Eckert to G. D. Sheldon Ft Monroe, for Lt Col Biggs: vessels to Fort Powhatan for ferrying troops and trains (signed Meigs in print) (FM-R5c; row 5751/2; image-read at 2400 px)
 Geo D. Sheldon
@@ -2943,7 +2964,8 @@ to saco poe hat ann immed'y every vessel
 which can be use full in salmoning whiskey
 and trains yoke bender this would then another
 T. T. Eckert
-variant: whiskey=Whistle:M
+variant: whiskey=Whisky:C
+plain: ann
 
 ### E291 | Page 178 | 5722 | mssEC 25 (obj 5952, pointer 5722), 31 May 1864 Washington, T. T. Eckert to G. D. Sheldon Ft Monroe: tell Bickford not to build farther than White House; a card cipher for the wire (FM-R5c; row 5722/0; image-read at 2400 px)
 G. D. Sheldon Ft Monroe
@@ -2988,6 +3010,10 @@ shall send the remaining whistle to Animal in Windpipe
 boats and transfer them tooth see going weaslers now
 laying there youth George S Dodge pandora Chief Vinton
 SH Beckwith
+plain: webster dodge apple
+variant: whiskey=Whisky
+gloss: weaslers=Steamers:H
+graded: actor:M
 
 ### E294 | Page 72 | 5616 | mssEC 25 (obj 5952, pointer 5616), 20 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for Gen. Rucker, from Biggs: no steamers to send to sea (FM-R5c; row 5616/1; transcription only, page image not eye-checked)
 Maj Eckert Di
@@ -2999,6 +3025,7 @@ there pedlar or if they are to make short trip
 presume I will have weasler to send them on by
 time you can get them here cant send them far
 Geo D Sheldon
+gloss: weasler=Steamer:C
 
 ### E295 | Page 80 | 5624 | mssEC 25 (obj 5952, pointer 5624), 22 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: assistant quartermasters wanted, signed Butler (FM-R5c; row 5624/0; transcription only, page image not eye-checked)
 Maj Eckert Di
@@ -3010,6 +3037,7 @@ Lieutenant paradise begs at once for duty zodiac if you
 have not any you have some good ones recommended by
 Pandora bugs youth Knave Harriet fine day here good breeze
 Geo D Sheldon
+gloss: palates=brigades:C
 
 ### E296 | Page 283 | 5827 | mssEC 25 (obj 5952, pointer 5827), 11 Dec 1864 Ft Monroe, S. H. Beckwith City Point to Sheldon for Grant: Shepley's scout toward Hicksford and cavalry to South Quay (continues on pointer 5828) (FM-R5c; row 5827/2; image-read at 2400 px)
 S.H. Beckwith City Point.
@@ -3034,7 +3062,7 @@ as we are so much in want of vessels
 Youth Nankin Rebecca how do you like that plan
 Geo D Sheldon
 
-### E298 | Page 250 | 5794 | mssEC 25 (obj 5952, pointer 5794), 16 Oct 1864 Washington, Maj. Eckert for the President, from the Secretary of War: Logan for Hooker's command, Hooker to Missouri (FM-R5c; row 5794/1; transcription only, page image not eye-checked)
+### E298 | Page 250 | 5794 | mssEC 25 (obj 5952, pointer 5794), 16 Oct 1864 sent from Fort Monroe (image 'Ft Monroe Oct 16/64'; FV-FM8c), Maj. Eckert, Washington, for the President, from the Secretary of War (operator Dealy): Logan for Hooker's command, Hooker to Missouri (FM-R5c; row 5794/1; transcription only, page image not eye-checked)
 Maj. Eckert Washington
 Alice for Bolivia grapes unity Have just arrived
 and will go on immed'y unity It has

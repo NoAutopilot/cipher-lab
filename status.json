@@ -9985,7 +9985,7 @@
       "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Maj. W. M. Este (Havre de Grace) via Fort Monroe to Maj. Eckert for the War Department and Grant, 12 July 1864, the fight near Silver Spring (E250)",
       "line": "The Cipher No. 1 ledger copy reads, with the period key, to the period clear copy in the Eckert Papers (Huntington pointer 10490, Page 348, in the holder's public transcription): Este reports a fight seven miles from Washington near Silver Spring and only eleven thousand troops in hand.",
-      "gap": "plain text known from the holder's public transcription of the received clear copy (pointer 10490); no novelty. Decoder slips (Silver Spring, William) pending a FIX worker.",
+      "gap": "plain text known from the holder's public transcription of the received clear copy (pointer 10490); no novelty. Decoder slips (Silver Spring, William) carried into the reading by FIX-FM8 (9 Oct 2026, plain notes).",
       "depth": "D3",
       "completeness": "29 H/C of 29 code-word groups (26 H agreeing with the clear copy, 3 C supplied by it: swede, wreathic, plation)",
       "phrases": [
@@ -10111,9 +10111,9 @@
       "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Butler via Fort Monroe to Grant at Culpeper, 1 May 1864: iron-clads and gunboats, Gillmore not arrived (E271)",
       "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 4587 (Page 146) and Butler IV p.148.",
-      "gap": "plain text known from clear copy 4587 (Page 146) and Butler IV p.148; no novelty. Decoder slip (Knocks = Knox (Butler)) pending a FIX worker.",
+      "gap": "plain text known from clear copy 4587 (Page 146) and Butler IV p.148; no novelty. Decoder slip (Knocks = Knox (Butler)) carried into the reading by FIX-FM8 (9 Oct 2026, variant note).",
       "depth": "D3",
-      "completeness": "11 H agreeing + Knocks = Knox (decoder slip); Sheldon's 3-H operator tail outside the item",
+      "completeness": "12 H agreeing incl. Knocks = Knox (variant note, FIX-FM8); Sheldon's 3-H operator tail outside the item",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.128, pointer 5641, E271"
       ],
@@ -10123,7 +10123,7 @@
       ],
       "depth_sentence": "On 1 May 1864 Butler told Grant from Fort Monroe that one iron-clad had arrived, two more and four gunboats were due, and Gillmore had not yet arrived.",
       "depth_check": "code clause: Sharons = Gunboats, maxim = Gillmore; external non-statistical: clear copy 4587, Butler IV p.148",
-      "depth_note": "11 H agreeing + Knocks = Knox (decoder slip); Sheldon's 3-H operator tail outside the item",
+      "depth_note": "12 H agreeing incl. Knocks = Knox (variant note, FIX-FM8); Sheldon's 3-H operator tail outside the item",
       "text": "known"
     },
     {
@@ -10153,7 +10153,7 @@
       "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Lt Col Biggs via Fort Monroe to the Quartermaster General, 31 May 1864: the Paymonkey and the Chickahominy pontoon report (E273)",
       "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 10376 (Page 234).",
-      "gap": "plain text known from clear copy 10376 (Page 234); no novelty. Decoder slip (plain Chicken) pending a FIX worker.",
+      "gap": "plain text known from clear copy 10376 (Page 234); no novelty. Decoder slip (plain Chicken) carried into the reading by FIX-FM8 (9 Oct 2026, plain note).",
       "depth": "D3",
       "completeness": "11 H agreeing; Chicken is plain (Chickahominy)",
       "phrases": [
@@ -10195,9 +10195,9 @@
       "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Butler via Fort Monroe to Grant, 2 May 1864: Gillmore comes with the last detachment (E274)",
       "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 4593 (Page 152).",
-      "gap": "plain text known from clear copy 4593 (Page 152); no novelty. Decoder slip (Knocks = Knox (Butler)) pending a FIX worker.",
+      "gap": "plain text known from clear copy 4593 (Page 152); no novelty. Decoder slip (Knocks = Knox (Butler)) carried into the reading by FIX-FM8 (9 Oct 2026, variant note).",
       "depth": "D3",
-      "completeness": "8 H agreeing; Knocks = Knox (decoder slip)",
+      "completeness": "9 H agreeing incl. Knocks = Knox (variant note, FIX-FM8)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.152, pointer 5645, E274"
       ],
@@ -10207,7 +10207,7 @@
       ],
       "depth_sentence": "On 2 May 1864 Butler told Grant that Gillmore expected to arrive that night or next morning with the last detachment.",
       "depth_check": "code clause: Maxim = Gillmore, query = detach; external non-statistical: clear copy 4593",
-      "depth_note": "8 H agreeing; Knocks = Knox (decoder slip)",
+      "depth_note": "9 H agreeing incl. Knocks = Knox (variant note, FIX-FM8)",
       "text": "known"
     },
     {
@@ -10237,7 +10237,7 @@
       "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Kilpatrick (Yorktown) via Fort Monroe to Pleasonton, 12 Mar 1864: men embarked by tomorrow noon (E276)",
       "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 4493 (Page 52) and OR ser. I vol. 33 p.670.",
-      "gap": "plain text known from clear copy 4493 (Page 52) and OR ser. I vol. 33 p.670; no novelty. Decoder slip (plain person) pending a FIX worker.",
+      "gap": "plain text known from clear copy 4493 (Page 52) and OR ser. I vol. 33 p.670; no novelty. Decoder slip (plain person) carried into the reading by FIX-FM8 (9 Oct 2026, plain note).",
       "depth": "D3",
       "completeness": "16 H agreeing; person is plain",
       "phrases": [
@@ -10321,7 +10321,7 @@
       "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Lt Col Biggs via Fort Monroe to QMG Meigs, 24 Apr 1864: steamers and tugs reported, barges and lighters (E282)",
       "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 10267-10268 (Pages 125-126).",
-      "gap": "plain text known from clear copy 10267-10268 (Pages 125-126); no novelty. Decoder slip (weasilers = Steamers) pending a FIX worker.",
+      "gap": "plain text known from clear copy 10267-10268 (Pages 125-126); no novelty. Decoder slip (weasilers = Steamers) carried into the reading by FIX-FM8 (9 Oct 2026, gloss note, C).",
       "depth": "D3",
       "completeness": "45 H agreeing + weasilers C (Steamers); Rockland, Wyoming plain",
       "phrases": [
@@ -10363,9 +10363,9 @@
       "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Butler to Grant, 7 Oct 1864 9 AM: Kautz driven back, fire opened on Fort Harrison (E287)",
       "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from OR ser. I vol. 42 pt 3 p.107 and Butler, Private and Official Correspondence V p.231.",
-      "gap": "plain text known from OR ser. I vol. 42 pt 3 p.107 and Butler, Private and Official Correspondence V p.231; no novelty. Decoder slip (6.45 not 51) pending a FIX worker.",
+      "gap": "plain text known from OR ser. I vol. 42 pt 3 p.107 and Butler, Private and Official Correspondence V p.231; no novelty. Decoder slip (6.45 not 51) carried into the reading by FIX-FM8 (9 Oct 2026, split note: [6] [45]).",
       "depth": "D3",
-      "completeness": "19 H agreeing; numerals pledge lampoon plaster = 6.45 (decoder sums to 51)",
+      "completeness": "19 H agreeing; numerals pledge lampoon plaster read [6] [45] = 6.45 (FIX-FM8 split note; formerly summed to 51)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.244, pointer 5788, E287"
       ],
@@ -10375,7 +10375,7 @@
       ],
       "depth_sentence": "At 9 a.m. on 7 October 1864 Butler told Grant that the enemy had driven Kautz back at 6.45 and opened fire on Fort Harrison.",
       "depth_check": "code clause: oiled = attacked, tuliped = opened, Saco = Fort; external non-statistical: OR I/42 pt 3 p.107, Butler V p.231",
-      "depth_note": "19 H agreeing; numerals pledge lampoon plaster = 6.45 (decoder sums to 51)",
+      "depth_note": "19 H agreeing; numerals pledge lampoon plaster read [6] [45] = 6.45 (FIX-FM8 split note; formerly summed to 51)",
       "text": "known"
     },
     {

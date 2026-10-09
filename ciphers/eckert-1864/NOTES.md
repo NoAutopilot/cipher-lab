@@ -3245,3 +3245,46 @@ Lead for readers (sixth time): the clear-word pairs that hit were the obvious on
 FM-R5b's 21 queries did not include them.
 Requests: hdl.huntington.org 32 (one token block 11:47-11:50 UTC: 20 dmQuery, 8 dmGetItemInfo, 4 IIIF pages); archive.org 3 djvu text + 5 be-api
 (one 502, retried once).
+
+## FIX-FM8 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM8, 12:12-12:2x UTC by `date -u`, offline. Carries the reading corrections of AUDIT.md "CONF-FM" s.4, "CONF-FM2" s.4, "FV-FM8a" s.4/6, "FV-FM8b" s.3/5, "FV-FM8c" s.3/5 and "FV-FM8d" s.3/5 into the readings through per-entry note lines in `ciphertext.txt` (transcription lines untouched except three marked `<del>/<ins>` corrections from the page image, listed below; no key.md row edited; reading.md only by `decode.py --write`). One decoder addition: `unjoin: word` (docstring in decode.py), so E280's printed dash in "immediately - wrangle" is not read as the dis - missed join. Prior-work: propagate-revision of already-audited units, offline, the only LEAD the target-level live claim of FIX-FM7 (done): CLEAR.
+
+| Entry | Token / item | Before | After (note) | Grade before -> after | Source |
+|---|---|---|---|---|---|
+| E250 | "Silver spring", "William" | `[Head Quarters] [Has, or have been, reinforced]`, `[100]` | plain | H 30 -> 27 | CONF-FM s.4 |
+| E254 | "continue"; "Knocks" | "continue"; plain | `<del>continue</del> <ins>contrive</ins>` (page image and sent copy 9913); `variant: knocks=Knox:H` = [Maj Gen B. F. Butler] | H 11 -> 12 | FV-FM8a s.4 |
+| E255 | "Taylors ridge watching", "white side" | `[Mountain]'s [Enemy] [Surrender]ing`, `[Report] side` | plain | H 20, C 1 -> H 16, C 1 | CONF-FM s.4 |
+| E257 | address "Sampson" | `[Ferry]` | plain | H 23 -> 22 | CONF-FM s.4 |
+| E270 | "quadrantal" | as written | `gloss ... C` [Department(al)]; "Wilby" = will be already plain | H 18 -> H 18, C 1 | FV-FM8a s.4 |
+| E271, E274 | "Knocks" | plain | `variant ... :H` = Butler | H 14 -> 15; 8 -> 9 | CONF-FM2 s.4 |
+| E273 | "Chicken" | `[Huntsville]` | plain (Chicken hominy = Chickahominy) | H 12 -> 11 | CONF-FM2 s.4 |
+| E275 | whimper = Transport | already `[Transport (-ed, -ing)]` H by the decoder (key row); FM-R5a's hand "[?]" was the reader's, not the decoder's | none needed; "boots" (?boats) stays as written, meaning M, not a counted token | H 14 | FV-FM8a s.4 |
+| E276 | "person" | `[5]` | plain | H 16 -> 15 | CONF-FM2 s.4 |
+| E278 | "webster", "mast" | `[signed]`, plain | webster plain (R. C. Webster, signer), `graded: mast:I` (= Most); header: Col. R. C. Webster to Gen. Ingalls via Sheldon and Beckwith | H 8 -> H 7, I 1 | FV-FM8d s.3 |
+| E279 | "shelter" | `[General]` | plain | H 10 -> 9 | CONF-FM2 s.4 |
+| E280 | "immediately - wrangle" | "immediatelywrangle" | `unjoin: immediately`: [Telegraph] answer to [Monroe] read; "togoto more head" (Morehead) stays plain | H 25 -> 26 | FV-FM8b s.3 |
+| E281 | "axis", "hope" | `[Missouri]`, `[19]` | plain | H 23 -> 21 | FV-FM8b s.3 |
+| E282 | "weasilers" | plain | `gloss ... Steamers:C` | H 45 -> H 45, C 1 | CONF-FM2 s.4 |
+| E283 | "anchor", "persons", "paulding", "tulip", "sharpes" | `[Donelson]`, `[5]s`, left as written (M), `[Open]` H, `[Gap?]` absent | anchor and persons plain; the M `graded: paulding` removed so paulding = [Convoy] H; `graded: tulip:M`; `gloss: sharpes=Gap?:I` | H 22, M 1 -> H 20, I 1, M 1 | FV-FM8b s.3 |
+| E284 | "tulip"; header | `[Open]` H; "Sheldon to Beckwith" | `graded: tulip:M`; header Babcock to Bowers via Sheldon and Beckwith, time-word conflict (Nelly 8.30 PM vs ledger order against 5805) noted, not settled | H 12 -> H 11, M 1 | FV-FM8b s.3 |
+| E287 | "pledge lampoon plaster"; header page | `[51]`; "pp.106-107" | `split: lampoon` = [6] [45]; header OR I/42 pt 3 p.107 | H 19 | CONF-FM2 s.4 |
+| E288 | "John"; "shall Shall" | `[Maj Genl U.S. Grant]`; two Shalls | john plain (filler, not graded); `<del>shall</del> Shall` | H 13 -> 12 | FV-FM8d s.3 |
+| E289 | "tulip"; "witness" | `[Open]` H; "witness" | `graded: tulip:M`; `<del>witness</del> <ins>Witnesses</ins>` (image) | H 8 -> H 7, M 1 | FV-FM8d s.3 |
+| E290 | "whiskey"; "ann" | M (variant Whistle); `{time: 1 AM}` | `variant: whiskey=Whisky:C` (C from the print, OR I/40 pt 2 p.85); ann plain | H 9, M 1 -> H 8, C 1 | CONF-FM2 s.4 |
+| E293 | webster, dodge, apple, whiskey, weaslers, actor | `[Sumter]`, `[McMinnville]`, tail started at Webster, whiskey and weaslers unread | webster, dodge, apple plain; `variant: whiskey=Whisky`; `gloss: weaslers=Steamers:H`; `graded: actor:M` | H 15 -> H 14, M 1 | FV-FM8c s.3 |
+| E294 | "weasler" | plain | `gloss ... Steamer:C` | H 11 -> H 11, C 1 | FV-FM8c s.3 |
+| E295 | "palates" | `[Brigadier General]'s` | `gloss: palates=brigades:C` (the clear copy; the key row is the nearest word the clerk had) | H 17 -> H 16, C 1 | FV-FM8c s.3 |
+| E298 | header place; "Dealy" | "Washington" | header: sent from Fort Monroe (image "Ft Monroe Oct 16/64"), Dealy the operator; the text after the signature word is left in the tail | H 15 | FV-FM8c s.3 |
+| E271, E276 | header pages | "Butler IV prints it"; "OR I/33 prints it" | Butler IV p.148 (not 148-149); OR I/33 p.670 | none | CONF-FM2 s.2 |
+| E286 | header sender | Sheldon to Eckert | Maj. Gen. B. F. Butler to the Secretary of War, 1 PM, clear copy 4529 (reading unchanged, sound, C 15) | none | FV-FM8d s.3 |
+
+Totals line: H 4098, C 32, I 24, M 34, U 10 -> H 4080, C 36, I 26, M 36, U 10 (decoder, 243 entries). Grade counts are the decoder's; the audits' C/H split differs where they count clear-copy C (not regraded here, as FIX-FM7).
+
+**Candidate key rows, listed, NOT written to key.md:** whiskey = troops (C from the 5768 sibling against clear copy 4788, FV-FM8a; also read by E290's print and E293's context; key.md has Whisky and Whistle = Troops, so this is a spelling variant of an existing row, carried here by `variant`); **Tulip = stop** (CONF-FM Part B / FV-FM8d: tulip reads nothing as [Open] in E283, E284, E289; candidate only, those three stay M); weasilers/weasler/weaslers = Steamers (Weasel = Steam plus the clerk's -ers, carried by `gloss`).
+
+Not applied (no existing mechanism supplies it without adding a counted token; the audits say so themselves): E250 "Have her D grass" and other phonetic plain words (left as written); E277 "pause" U 1 (FV-FM8a; "pause" is a ledger-wide unread word, left as is); the 5768 sibling entry (Shaffer to Halleck, 10 July 1864, clear copy 4788, OR I/40 pt 3 p.142) is an unfiled entry for a reader, not filed here.
+
+Propagation (rule 10): status.json rows E250, E271, E273, E274, E276, E282, E287 had "pending a FIX worker" in `gap` and decoder-slip wording in `completeness`/`depth_note`: updated to "carried into the reading by FIX-FM8" and the corrected H counts; the other rows and second-opinions/PROMPT-chatgpt-e254, -e275, -e278, -e280, -e281, -e283, -e284, -e289, -e293 already carried the audited words (checked by grep: contrive, [transport], Most, Dutch [Gap], Babcock to Bowers), so none edited; no SECOND-OPINIONS-QUEUE.tsv row changes.
+
+Checks: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current" exit 0 after `--write`; `decode_no2.py --check` and `decode_no9.py --check` exit 0; `tools/tests/test_eckert_decode.py` OK; `tools/depth_check.py` no eckert-1864 FAIL line; `tools/file_shrink_guard.py` on ciphertext.txt, decode.py, reading.md, status.json: ok, none shrank; `tools/gaps_check.py eckert-1864` keep-going, 0 FAIL.

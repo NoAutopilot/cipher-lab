@@ -119,7 +119,10 @@ def entry_text(lines):
 
     One more (FIX-FM7, 9 Oct 2026): "cut-after: word#n" drops every token after the n-th occurrence of that word (1-based,
     reading order): a struck or cancelled entry that follows the real text on the same leaf (E252's 1 Sept entry),
-    recorded in NOTES.md instead of the reading."""
+    recorded in NOTES.md instead of the reading.
+
+    One more (FIX-FM8, 9 Oct 2026): "unjoin: word" keeps the ' - ' just after that word a printed dash between two
+    words instead of the dis - missed style join (E280 "immediately - wrangle" is two words, not "immediatelywrangle")."""
     plain = set()
     cut_after = None
     variant = {}
@@ -129,6 +132,7 @@ def entry_text(lines):
     join = set()
     merge = []
     graded = {}
+    unjoin = set()
     body = []
     for l in lines[1:]:
         if l.startswith("plain:"):
@@ -155,6 +159,8 @@ def entry_text(lines):
         elif l.startswith("cut-after:"):
             wd, n = l[10:].split()[0].rsplit("#", 1)
             cut_after = (wd.lower(), int(n))
+        elif l.startswith("unjoin:"):
+            unjoin.update(w.lower() for w in l[7:].split())
         elif l.startswith("graded:"):
             for t in l[7:].split():
                 wd, g = t.rsplit(":", 1) if ":" in t else (t, "M")
@@ -166,6 +172,8 @@ def entry_text(lines):
     text = re.sub(r"<deletion>(.*?)</deletion>", r"\1", text)  # a struck-through ending is read as written (polka<deletion>er</deletion> = polkaer, FIX-FM5)
     text = re.sub(r"</?ins>", "", text)
     text = re.sub(r"\s+=\s+", "", text)  # "Lock = wood" -> "Lockwood"
+    for w in unjoin:
+        text = re.sub(r"\b(%s)\s+-\s+" % re.escape(w), r"\1 ", text, flags=re.I)
     text = re.sub(r"\s+-\s+", "", text)  # "dis - missed" -> "dismissed"
     text = re.sub(r"\s+", " ", text).strip()
     if cut_after:
