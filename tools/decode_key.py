@@ -48,6 +48,17 @@ then covers only signs with no vote at all). s_words (3 Oct 2026, READ2-PAG): a 
 entry grades S (cryptanalytic with a control: the value was chosen by a test) where its vote agrees or it has none, and
 disagree_grade (or M) where its vote disagrees; checked before m_words.
 
+--special-scan [--codes a,b] [--min-n 3] [--nulls 50] [--special-tsv F] (9 Oct 2026, MQS-SPECIAL-SIGNS; Lasry, Biermann and
+Tomokiyo 2023 p.111, p.115, Fig. 13 p.126, App. B Fig. B24: repeat-previous, delete-previous and null signs). Per code,
+every occurrence read as each letter of the model, NULL, REPEAT (the previous sign again) or DELETE (the previous sign
+and this one cancelled), scored by the --try window; stat = best minus runner-up. REPEAT/DELETE are flagged only above
+the p95 of the same stat over a shuffled-position null (the code's tokens re-inserted at random slots); NULL at >= 2
+bits per occurrence (a relocation cannot vary NULL: an inserted token reads NULL anywhere). Meant to catch a sign after
+doubled letters (REPEAT) or after a wrong letter (DELETE); must NOT flag an ordinary letter code (D1 decoy 0/10 flagged,
+D2 Danzay H letter codes 1/27 flagged). Controls (tools/tests/PREREG-MQS-SPECIAL-SIGNS.md): REPEAT 8/10, DELETE 10/10
+(k=3: 9/10), NULL 6/10 (weak; Tomokiyo's Danzay nulls hidden: 1/9). A report: a flag is a candidate for an image
+check and --try, never a key edit. decode.json repeat_values / delete_values apply a settled reading of such signs.
+
 decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   ciphertext, key, exceptions, reading, tokens   file names relative to TARGET_DIR
   format        pipe | tsv | rows (default: detected)
@@ -73,6 +84,8 @@ decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
                 (clairambault1225-paget-1714: kind_column 'kind', sign_kinds ['cipher', 'cipher/insertion-clear'])
   nonsign       list of tsv signs that are not cipher tokens (punctuation, a word-break marker): kept in the index,
                 not graded; with it, concat prints them and prints word_sep (e.g. '/') as a space
+  repeat_values, delete_values  values that mean 'repeat the previous sign' / 'cancel the previous sign' (see
+                apply_special; MQS-SPECIAL-SIGNS 9 Oct 2026). Default none: behaviour unchanged.
   defaults (object merged under every job), m_sources, m_words, s_words, votes {file, value_column, word_prefix, strip_prefixes}, voted_grade, unvoted_grade, word_glossed_grade, disagree_grade
 
 --split-check (1 Oct 2026, the espagnol142-mercy-1648 lesson): against a key of values 2-34, four tokens (65, 52,
@@ -449,7 +462,43 @@ def grade_tokens(recs, key, exc, votes, job):
         if g and g in 'HCS' and (r['conf'] in uncertain or '|' in v) and not (exc_kept and '|' not in v):
             g = 'M'
         r['value'], r['grade'], r['null'] = v, g, v in null_values
+    apply_special(recs, job)
     return recs
+
+
+GRADE_ORDER = 'HCSMIU'
+
+
+def apply_special(recs, job):
+    """repeat_values / delete_values (MQS-SPECIAL-SIGNS, 9 Oct 2026; Lasry, Biermann and Tomokiyo 2023 p.111, p.115,
+    App. B Fig. B24). A sign whose key value is in repeat_values reads as the previous sign's value (the previous sign
+    token of the same job, nulls skipped) and takes the worse of the two grades; one in delete_values cancels the
+    previous sign (it becomes a null, 'deleted') and is a null itself. Clear words and dots are not signs and are
+    skipped. With neither list set nothing changes. A repeat or delete with no previous sign reads as unkeyed."""
+    rep, dele = set(job.get('repeat_values', [])), set(job.get('delete_values', []))
+    if not rep and not dele:
+        return
+    ug, uv = job.get('unkeyed_grade', 'U'), job.get('unkeyed_value', '?')
+    prev = []  # stack of earlier sign records that still carry a value
+    for r in recs:
+        if r['kind'] != 'sign':
+            continue
+        if r['value'] in rep:
+            r['special'] = 'repeat'
+            if prev:
+                p = prev[-1]
+                worse = max(r['grade'], p['grade'], key=lambda g: GRADE_ORDER.find(g) if g in GRADE_ORDER else 9)
+                r['value'], r['grade'], r['null'] = p['value'], worse, False
+                prev.append(r)
+            else:
+                r['value'], r['grade'], r['null'] = uv, ug, False
+        elif r['value'] in dele:
+            r['special'], r['null'] = 'delete', True
+            if prev:
+                p = prev.pop()
+                p['null'], p['special'] = True, 'deleted'
+        elif not r.get('null'):
+            prev.append(r)
 
 
 # ---------------------------------------------------------------- rendering
@@ -1143,6 +1192,107 @@ def word_candidates(key, extra=()):
                   | set(extra))
 
 
+# ---------------------------------------------------------------- special signs (--special-scan, MQS-SPECIAL-SIGNS)
+
+SPECIAL_OPS = ('NULL', 'REPEAT', 'DELETE')
+
+
+def streams_from(model, S, window=8):
+    """A Crossword over ready-made streams S (lists of [code, folded value or None]); for synthetic controls."""
+    cw = Crossword.__new__(Crossword)
+    cw.M, cw.W, cw.wpen, cw.wild, cw.C = model, window, 3.0, True, model.bits_per_char
+    cw.S, cw.cur, cw._seg = S, {}, {}
+    cw.count = collections.Counter(t for s in S for t, _ in s if t is not None)
+    return cw
+
+
+def render_special(seq, code, interp):
+    """The window's letters with every token of code read as interp: a folded letter value, NULL (dropped), REPEAT
+    (the previous sign's value again) or DELETE (the previous sign is cancelled, and so is this one); '?' = no value."""
+    out = []
+    for t, v in seq:
+        if t == code and code is not None:
+            if interp == 'NULL':
+                continue
+            if interp == 'REPEAT':
+                out.append(out[-1] if out else '?')
+            elif interp == 'DELETE':
+                if out:
+                    out.pop()
+            else:
+                out.append(interp)
+        elif v != '':
+            out.append('?' if v is None else v)
+    return ''.join(out)
+
+
+def special_scores(cw, S, code, interps):
+    """{interp: summed window score over every occurrence of code in streams S}; a value of 2+ letters pays wpen."""
+    occ = [(k, i) for k, s in enumerate(S) for i, (t, _) in enumerate(s) if t == code]
+    res = {}
+    for it in interps:
+        pen = cw.wpen if it not in SPECIAL_OPS and len(it) > 1 else 0.0
+        res[it] = sum(cw.seg_score(render_special(S[k][max(0, i - cw.W - 1):i + cw.W + 1], code, it)) - pen
+                      for k, i in occ)
+    return res, len(occ)
+
+
+def relocate(S, code, rnd):
+    """Shuffled-position null: code's tokens taken out and put back at random token slots of the same streams."""
+    T = [[e for e in s if e[0] != code] for s in S]
+    n = sum(1 for s in S for e in s if e[0] == code)
+    slots = [(k, i) for k, s in enumerate(T) for i in range(len(s) + 1)]
+    for k, i in sorted(rnd.sample(slots, n), reverse=True):
+        T[k].insert(i, [code, None])
+    return T
+
+
+def special_scan_code(cw, code, letters, nulls=50, seed=0, null_bits=2.0):
+    """One row: the code's best interpretation among letters + NULL/REPEAT/DELETE, stat = best minus the runner-up,
+    and a flag. REPEAT and DELETE are flagged only above the p95 of the same stat over `nulls` relocations; NULL is
+    flagged at >= null_bits per occurrence (a relocation cannot vary it: an inserted token reads NULL anywhere)."""
+    cur = cw.current(code)
+    interps = list(dict.fromkeys(list(letters) + ([lm_fold(cur)] if cur and lm_fold(cur) and cur.upper() != 'NULL'
+                                                   else []) + list(SPECIAL_OPS)))
+    sc, n = special_scores(cw, cw.S, code, interps)
+    order = sorted(sc, key=lambda x: -sc[x])
+    best, second = order[0], order[1]
+    stat = sc[best] - sc[second]
+    row = dict(code=code, n=n, current=cur or '', best=best, second=second, stat=stat, p95=None, flag='')
+    if best == 'NULL' and n and stat / n >= null_bits:
+        row['flag'] = 'NULL'
+    elif best in ('REPEAT', 'DELETE'):
+        rnd, draws = random.Random(seed), []
+        for _ in range(nulls):
+            T = relocate(cw.S, code, rnd)
+            s2, _ = special_scores(cw, T, code, interps)
+            others = max(v for k2, v in s2.items() if k2 != best)
+            draws.append(s2[best] - others)
+        draws.sort()
+        row['p95'] = draws[min(len(draws) - 1, int(0.95 * len(draws)))]
+        if stat > row['p95']:
+            row['flag'] = best
+    return row
+
+
+def special_main(a):
+    """--special-scan: prints one row per code (n >= --min-n, or --codes); a report, writes no key or reading."""
+    jobs = load_config(a.target, a)
+    model = lm_load(a.lm)
+    cw = Crossword(a.target, jobs, model, window=a.window)
+    codes = a.codes.split(',') if a.codes else [c for c, n in cw.count.most_common() if n >= a.min_n]
+    rows = [special_scan_code(cw, c, model.alpha, a.nulls, 0) for c in codes]
+    head = 'code\tn\tcurrent\tbest\tsecond\tstat\tp95_reloc\tflag'
+    lines = [head] + ['\t'.join([r['code'], str(r['n']), r['current'], r['best'], r['second'], f"{r['stat']:.1f}",
+                                  '' if r['p95'] is None else f"{r['p95']:.1f}", r['flag']]) for r in rows]
+    print(f'# special-scan: {len(rows)} codes; lm {a.lm or "fr16"}; window {a.window}; relocation draws {a.nulls}; '
+          f'flags {sum(1 for r in rows if r["flag"])} (candidates for an image check and decode_key --try, never a key edit)')
+    print('\n'.join(lines))
+    if a.special_tsv:
+        open(a.special_tsv, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
+    return 0
+
+
 def load_config(target, a):
     if a.config or (os.path.exists(os.path.join(target, 'decode.json')) and not a.ciphertext):
         cfg = json.load(open(a.config or os.path.join(target, 'decode.json'), encoding='utf-8'))
@@ -1239,7 +1389,17 @@ def main(argv=None):
     ap.add_argument('--steps', type=int, help='with --avalanche: stop after K assignments')
     ap.add_argument('--try-log', help='with --try: append one row per hypothesis to this TSV (real use: '
                                       'ciphers/<t>/crossword_log.tsv; controls: a scratch path)')
+    ap.add_argument('--special-scan', action='store_true',
+                    help='per code, is it a letter, a NULL, a REPEAT-previous or a DELETE-previous sign? REPEAT/DELETE '
+                         'gated on a shuffled-position null (--nulls draws, default 50 here); a report, never a key edit')
+    ap.add_argument('--codes', help='with --special-scan: only these codes, comma-separated')
+    ap.add_argument('--min-n', type=int, default=3, help='with --special-scan: codes with at least N occurrences (3)')
+    ap.add_argument('--special-tsv', help='with --special-scan: also write the rows to this TSV file')
     a = ap.parse_args(argv)
+    if a.special_scan:
+        if a.nulls == 100:
+            a.nulls = 50
+        return special_main(a)
     if a.try_ or a.avalanche:
         return crossword_main(a)
     if a.consistency:

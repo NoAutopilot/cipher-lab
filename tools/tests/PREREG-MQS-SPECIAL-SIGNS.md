@@ -43,3 +43,21 @@ All of K1, K2, K3, D1, D2 pass: shelf grade `controlled-only` for the scan (the 
 Any miss: that op ships `weak` with both numbers, is not re-briefed, and nothing is run on a target from it. The
 decode.json options are plumbing, tested offline (repeat copies the previous value and grade, delete nulls the previous
 sign); no target's decode.json, key, reading, status or AUDIT.md is changed by this job.
+
+## Results (appended after the run, 9 Oct 2026; rows in tools/tests/MQS-SPECIAL-SIGNS-controls.tsv)
+
+Disclosure: one development scan of the unmodified Danzay stream (the D2 material) was printed after this file was
+pushed and before the controls ran, to check the code path; no threshold or statistic was changed after it.
+
+| control | result | gate | verdict |
+|---|---|---|---|
+| K1 REPEAT (synthetic fr18, 638 letters, every doubled letter as ZREP) | 8/10 | >= 8/10 | PASS |
+| K2 DELETE (Danzay, k=6) | 10/10 (k=3: 9/10) | >= 8/10 | PASS (not ceiling-only: k=3 still 9/10) |
+| K3 NULL (Danzay, k=6) | 6/10 (k=3: 7/10) | >= 8/10 | MISS: 4 of 6 misses read NULL best but under 2 bits per occurrence, one read DELETE |
+| D1 decoy, 6 E tokens renamed | 0/10 flagged | <= 1/10 | PASS |
+| D2 Danzay H letter codes n >= 3 | 1/27 flagged (r2, DELETE, stat 25.4 vs p95 -0.5) | <= 10% | PASS |
+| K4 Tomokiyo's nulls hidden (reported) | 1/9 flagged NULL (loop); iii reads NULL best at 1.7 bits/occ, x88 flags DELETE | none | reported |
+
+Outcome: REPEAT and DELETE ship `controlled-only`; NULL ships `weak` with both numbers and is not re-briefed. A DELETE
+flag on an ordinary code is possible (D2: 1/27), and DELETE is the usual runner-up for nulls, so a NULL/DELETE split on
+one code is a candidate for an image check, not an answer. Nothing was run on a target.
