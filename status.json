@@ -2528,16 +2528,16 @@
       "superseded_by": "",
       "fields_source": "huntington-blathwayt-madrid-1728/AUDIT.md first verdict and 'Class per item (second audit)' (N3 each), N4 from '## N4 set (LANE W2 worker B1)'; counts C 20+107+3 and S 0+3+0 of 24+141+7 from reading_tokens.tsv (decode_key --check, AUDIT.md 'propagate-revision (PROP-HUNT, 8 Oct 2026)')",
       "depth": "D2",
-      "depth_pct": 77.3,
+      "depth_pct": 84.3,
       "depth_unread": {
-        "names_codes": "17 U groups (BLA 184 name codes among them)",
-        "other": "22 M"
+        "names_codes": "4 (BLA 186 code 73 after 'l'ambassadeur'; BLA 191(a) date figures 6 and 1210; BLA 184 1259 in the name range)",
+        "other": "23 ordinary words or syllables (13 U, 10 M; DV-BLA bracket check)"
       },
       "depth_sentence": "In BLA 191(a) the writer complains that Mr Keene ('monsieur ken ne') likes him but has no orders concerning him, and asks to be sent some order.",
-      "depth_check": "key of 395 groups from the run's contemporary decipherments (C), leave-one-item-out 0.68-0.91",
-      "depth_note": "C 130 + S 3 of 172 across BLA 184, 186, 191(a) (S = context fill, control precision 0.66; PROP-HUNT 8 Oct 2026, was C 129 at DEPTH-REGRADE)",
-      "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
-      "depth_date": "4 Oct 2026",
+      "depth_check": "key of 388 groups rebuilt from the run's contemporary decipherments (period, C), leave-one-item-out 0.68-0.91; sign reads gated by known-answer 14/14 and 40/41; no AD run (not needed: names/codes criterion fails)",
+      "depth_note": "C 141 + S 4 of 172 across BLA 184, 186, 191(a) (S = context fill, control precision 0.66; UNA2-BLA/UNA3-BLA 9 Oct 2026 reads at 4354 px); by item 191(a) 86.5% D2, 186 83.3% D2, 184 42.9% D1. D3 not met: gaps are mostly ordinary words, not names/codes (DV-BLA, AUDIT.md 'Depth (DV-BLA, 9 Oct 2026)')",
+      "depth_by": "session_01Sm8CAYLGb2ZTxHhhEeMsU7 (DV-BLA)",
+      "depth_date": "9 Oct 2026",
       "decode_status": "Partially decrypted"
     },
     {

@@ -762,3 +762,63 @@ S 4, M 7, U 12 (H/C/S 86.5%); mssBLA 186 (C 20, U 4) and 184 (C 3, M 3, U 1) unc
 status.json (D2, depth_pct 77.3) are the verifier's to revisit (DV-BLA); this worker does not set depth. SECOND-OPINIONS-QUEUE row
 SO-BLATHWAYT-1728's prompt carries no token counts, but its outcome cell does (PROP-HUNT's "C 130, S 3, M 22"; UNA2-BLA missed this): the
 current counts were appended to that cell, prompt not edited.
+
+## Depth (DV-BLA, 9 Oct 2026)
+
+Depth verifier DV-BLA (account 2, session_01Sm8CAYLGb2ZTxHhhEeMsU7, for the account-4 orchestrator; brief
+.claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md "## DV-BLA"), 11:13-11:2x UTC by date -u. A session other than
+the solvers UNA2-BLA and UNA3-BLA; nothing decoded, no token re-graded, no key edit, no search. Read: the UNA2-BLA and UNA3-BLA
+propagate-revision sections above, PROP-HUNT's table, reading_tokens.tsv, reading.txt, key.tsv, PREREG-D3BLA2.md amendments 3-4.
+`python3 tools/decode_key.py ciphers/huntington-blathwayt-madrid-1728 --check` -> "tokens 172: C 141, M 10, S 4, U 17 / reading up
+to date", exit 0. `python3 tools/depth_check.py` (before this edit) -> "unique solves (N3+ and D2+): 106 -- D4 5, D3 63, D2 38",
+exit 0; it checks field consistency only, the level is this verifier's.
+
+**Rule 4a, D3 test, criterion by criterion.**
+
+1. **>= 80% H/C/S: met.** 145 of 172 = 84.3% across the three items (C 141 + S 4); by item, BLA 191(a) 122/141 = 86.5%, BLA 186
+   20/24 = 83.3%, BLA 184 3/7 = 42.9%. Four of the 145 are S (R10-HUNT2's context fill, control precision 0.66): on C alone,
+   141/172 = 82.0%.
+2. **Gaps mostly names/codes: NOT met.** The 27 unread tokens (M 10, U 17), each placed by its one-part-code bracket in key.tsv
+   (the nearest keyed codes below and above) and its line context:
+   - plausibly a name or a number/date code, 4 tokens: BLA 186 p1 73 ("l'ambassadeur [73]", bracket avoit 68 / ambassadeur 78:
+     a title or nation word is likely); BLA 191 p5 L02 6 ("votre lettre du [6]", below vingt 8: a date figure); L03 1210 ("ce
+     [1210] de mars", bracket cinq 1209 / sept 1211: the figure six); BLA 184 L01 1259 (inside the 1240-1259 range R17 took for
+     names, though 1243 'il' and 1250 'hier|c'est' sit in it too).
+   - ordinary words or syllables, 23 tokens: BLA 186 470 (fort 468 / faire 473), 778 (nonobstant 770 / oit 792), 190 (cell 188 /
+     c'est 191, before "te affaire": a 'cet' form is likely); BLA 191 p5 805 (ou 802 / obstin 807), 460 (fais 459 / fait 461),
+     1019 (sec 1018 / si 1020), 711 (majeste 709 / malheur 713), 1118 (tout 1114 / tout 1119), 1052 (semble 1049 / soupcon 1063),
+     836 (pour 835 / pre 838), 585 twice (if 584 / il 588: "j'[585] no re", "l'[585] no ra n ce", a syllable 'ig' is the
+     obvious fit), 222 (conclu 219 / confidence 224); and every M: 7 key ties (1240 x2, 1250 x2, 665, 46, 1018), 385 (gloss
+     split es/et), 386, 1099 -- all syllables or function words.
+   So about 4 of 27 gaps are names or figures and about 23 are ordinary text. "Mostly names/codes" fails; this holds even if 470,
+   778 and 805 were names (7 of 27).
+3. **External check or AD + matched control: held for the values, not needed for the verdict.** The key is `period` (395 -> 388
+   groups rebuilt from the contemporary decipherments of seven sibling items of the same run, leave-one-item-out 0.68-0.91); every C
+   value is a period gloss, which is the non-statistical external source the standards paper lists (DECIPHERMENT-STANDARDS
+   s.5). The known-answer gates (KA 14/14, UNA2-BLA; 40/41, UNA3-BLA) are controls on the sign reads, not on the reading's content.
+   No authentication-distance check with a matched control is on file. It was **not run**: criterion 2 fails on its own, so a
+   passed AD could not lift the depth, and the brief's "run it if it is cheap" was spent on nothing.
+
+**Depth: D2 kept** (not lowered, not raised). depth_pct 77.3 -> **84.3** (145/172 H/C/S; on C alone 82.0). Per item: BLA 191(a)
+D2 (86.5%; clause above the AD, sentence below); BLA 186 D2 (83.3%; the p3 line "Monsieur de Patigno m'en a parle ce soir" is a
+clause, all C); **BLA 184 D1** (3 syllable groups of 7, no clause; "fragments read") -- the row's single depth is carried by
+BLA 191(a) and BLA 186, as DEPTH-REGRADE's row already was. decode_status "Partially decrypted" unchanged.
+
+**Sentence (D2, re-checked against reading.txt BLA191_p5_L06-L07 and L13):** "In BLA 191(a) the writer complains that Mr Keene
+('monsieur ken ne') likes him but has no orders concerning him, and asks to be sent some order." Holds word for word on the
+current reading ("monsieur ken ne m' ame mais il n a aucun ordre des [1019] [711] s pour moi"; "man des moi donc quelque ordre
+pour ma [222]").
+
+**Outward words (rule 4a, D2):** "partially deciphered (about 84%)", with the S caveat for any per-item figure (BLA 191(a):
+"about 87%, four groups filled from context, about one in three such fills expected wrong"; on C alone about 84%). "Largely
+deciphered" is **unsafe** until the ordinary-word gaps fall below the name/figure gaps. "Key identified" holds only in the sense
+the key is period (rebuilt from the run's own decipherments), never for the four S tokens.
+
+**What would move it to D3:** reading the ordinary-word gaps, not more image work -- the 7 key-tie tokens by a key-side
+`decode_key.py --try` (NOTES.md Verdict's cheapest next, ~$1), and the unkeyed ordinary groups (585 x2, 190, 805, 460, 1118,
+222 ...) by a new witness (SP 54/19/98B, TNA copy) or a gated context fill. Once ordinary gaps are fewer than the name/figure gaps
+and >= 80% holds, an AD + matched control (or the period key, if the new values are C) would carry D3.
+
+Propagated: status.json result row (depth_pct, depth_unread, depth_note, depth_check, depth_by, depth_date; depth D2 and sentence
+unchanged). SECOND-OPINIONS-QUEUE row SO-BLATHWAYT-1728: its outcome cell already carries C 141, S 4, M 10, U 17 (UNA3-BLA) and no
+depth figure; nothing changed there. Class N4 per item unchanged (this is a depth pass, not a novelty audit).
