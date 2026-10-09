@@ -205,3 +205,103 @@ like the rows already tabled (Applause l.4).
 | code word | meaning | grade | source |
 |---|---|---|---|
 | Bologna/Bolivia | Heintzelman | H | p.[10] (1730) l.18, Maj. Generals |
+
+## 7. The rest of pp.[20], [21], [23], [24] (NO9-PAGES, 9 Oct 2026, LANE LEDGER, account 1)
+
+Pages p.[20], [21], [23] (pointers 1740, 1741, 1743) fetched at 2000 px from the IIIF server (scratch, regenerable as in section 3),
+p.[24] from the committed ciphers/eckert-1862/images/mssEC67_p1744.jpg; read by the worker, one eye, no subagent. Every line of the
+four pages is now tabled: the 32 lines already in sections 2-6 were re-read and agree in line number and meaning; the 72 below are new.
+They carry the four words that had no row (Swindle and Surgery = Steam Boats, p.[21] l.22; Randolph = Arms, p.[20] l.1; Wedlock =
+Rifle Pits, p.[24] l.1). Adding all 72 rows changes no other token of reading-no9.md (decode_no9.py output diffed before and after).
+
+| code word | meaning | grade | source |
+|---|---|---|---|
+| Randolph/Raymond | Arms | H | p.[20] (1740) l.1 |
+| Ripley/Richland | Cannon | H | p.[20] (1740) l.8 |
+| Ridge/Rome | Convoys | H | p.[20] (1740) l.9 |
+| Rose/Rockland | Coast | H | p.[20] (1740) l.10 |
+| Roland/Rubens | Carbines | H | p.[20] (1740) l.11 |
+| Ramble/Rampant | Deserters | H | p.[20] (1740) l.12 |
+| Rapture/Ravish | Engineers | H | p.[20] (1740) l.13 |
+| Reptile/Ragged | Entrenchments | H | p.[20] (1740) l.14 |
+| Retrench/Review | Earthworks | H | p.[20] (1740) l.15 |
+| Reward/Romance | Forts | H | p.[20] (1740) l.16 |
+| Saco/Salem | Flotilla | H | p.[20] (1740) l.18 |
+| Saginaw/Scotland | Fortifications | H | p.[20] (1740) l.19 |
+| Sandy/Saint | Forage | H | p.[20] (1740) l.20 |
+| Saxon/Savory | Guns | H | p.[20] (1740) l.21 |
+| Sampson/Salmon | Gun Boats | H | p.[20] (1740) l.22 |
+| Saffron/Sable | Harbor | H | p.[20] (1740) l.24 |
+| Shady/Shaker | Island | H | p.[20] (1740) l.26 |
+| Saddle/Shallow | Mortar Boats | H | p.[21] (1741) l.1 |
+| Shannon/Sharon | Marines | H | p.[21] (1741) l.2 |
+| Shark/Spark | Mortars | H | p.[21] (1741) l.3 |
+| Shelby/Shelter | Projectiles | H | p.[21] (1741) l.5 |
+| Shoal/Smoky | Point | H | p.[21] (1741) l.6 |
+| Silver/Snake | Regulars | H | p.[21] (1741) l.7 |
+| Spencer/Spring | Rifled Guns | H | p.[21] (1741) l.11 |
+| Spur/Spruce | Right flank | H | p.[21] (1741) l.13 |
+| Star/Sugar | Siege Guns | H | p.[21] (1741) l.14 |
+| Sulphur/Squash | Smooth bore | H | p.[21] (1741) l.15 |
+| Sweden/Sutton | Scouts | H | p.[21] (1741) l.16 |
+| Smyrna/Sidney | Scouting | H | p.[21] (1741) l.17 |
+| Sligo/Stephen | Scouting Party | H | p.[21] (1741) l.18 |
+| Stanley/Swallow | Sailing Vessels | H | p.[21] (1741) l.19 |
+| Summer/Summit | Skirmishers | H | p.[21] (1741) l.20 |
+| Sylvan/Steuben | Stragglers | H | p.[21] (1741) l.21 |
+| Swindle/Surgery | Steam Boats | H | p.[21] (1741) l.22 |
+| Spunky/Squadron | Volunteers | H | p.[21] (1741) l.25 |
+| Warner/Warsaw | Battle | H | p.[23] (1743) l.4 |
+| Watkins/Watson | Casualties | H | p.[23] (1743) l.6 |
+| Wayland/Wayne | Capture | H | p.[23] (1743) l.7 |
+| Weakness/Webb | Defensive | H | p.[23] (1743) l.8 |
+| Welch/Weldon | Defend | H | p.[23] (1743) l.9 |
+| Wells/Wesley | Diversion | H | p.[23] (1743) l.10 |
+| Wharton/Whip | Division | H | p.[23] (1743) l.11 |
+| Windpipe/Windsor | Flank | H | p.[23] (1743) l.14 |
+| Winthrop/Woodbine | Fall Back | H | p.[23] (1743) l.15 |
+| Woodford/Woodland | Feint | H | p.[23] (1743) l.16 |
+| Woolwich/Wyoming | Fight | H | p.[23] (1743) l.17 |
+| Walrus/Webster | Killed | H | p.[23] (1743) l.18 |
+| Wag/Waltz | Left Wing | H | p.[23] (1743) l.19 |
+| Warden/Warp | Missing | H | p.[23] (1743) l.20 |
+| Waspish/Watchman | Out flank | H | p.[23] (1743) l.21 |
+| Waxend/Waxy | Offensive | H | p.[23] (1743) l.22 |
+| Wayworn/Weasel | Reconnoissance | H | p.[23] (1743) l.23 |
+| Web/Weld | Resist | H | p.[23] (1743) l.25 |
+| Widow/Wedding | Right Wing | H | p.[23] (1743) l.26 |
+| Wedlock/Whack | Rifle Pits | H | p.[24] (1744) l.1 |
+| Weigh/Wheedle | Surprised | H | p.[24] (1744) l.3 |
+| Whelp/Wheaten | Surrounded | H | p.[24] (1744) l.4 |
+| Wherry/Whig | Skirmish | H | p.[24] (1744) l.5 |
+| Whinny/Whisky | Union | H | p.[24] (1744) l.7 |
+| Whist/Whistle | Wounded | H | p.[24] (1744) l.8 |
+| Wrangle/Wreathe | Intercept | H | p.[24] (1744) l.9 |
+| Wriggle/Wrinkle | Cipher | H | p.[24] (1744) l.10 |
+| Weston/Wisdom | Spy | H | p.[24] (1744) l.12 |
+| Washington/Wilcox | Traitor | H | p.[24] (1744) l.13 |
+| Wooster/Worcester | Treasonable | H | p.[24] (1744) l.14 |
+| Winston/Wilkes | Front | H | p.[24] (1744) l.16 |
+| Wicoff/Wilson | Invested | H | p.[24] (1744) l.17 |
+| Wabash/Winona | Intercepted | M | p.[24] (1744) l.18 (second 'Intercept'-like hand after l.9; read Intercepted, uncertain) |
+| Winchester/Williamsport | Embarking | H | p.[24] (1744) l.19 |
+| Woodbury/Waldo | Assault | H | p.[24] (1744) l.20 |
+| Young/Yarmouth | Camp | H | p.[24] (1744) l.21 |
+| Yellow/Yawl | Recruits | H | p.[24] (1744) l.24 |
+
+### Layout of mssEC 67 (for looking up any word)
+
+CONTENTdm object 1750 has 37 images (dmGetCompoundObjectInfo, 9 Oct 2026): covers, pastedowns and fly leaves 1713-1716; title page
+1717-1718; 1719 (labelled "Page [A]") the printed EXPLANATION with "No. 9" written above it and a C. F. Gross stamp; 1720 (labelled
+"Page [B]"; section 1 of this file calls it p.[A]) the TIME page; 1721-1728 pp.1-8, the route pages (commencement words and routes,
+ciphers/eckert-1862/key.md section 2); 1729-1744 pp.[9]-[24], the arbitraries; 1745-1748 back fly leaf, pastedown and cover (blank
+green paper, no handwritten additions seen at 2000 px); 1749 spine. There are no pages after p.[24]: "the rest" of the book is the
+untabled lines of pp.[9]-[19] and the route pages, not further leaves.
+
+Arbitraries: 26 printed lines a page, a printed code word at each end, the meaning handwritten between, so each meaning has two code
+words. The left-hand code words run through the alphabet page by page (p.[9] A..., p.[20] R-S, p.[21] S, p.[22] T-V, p.[23] W, p.[24]
+W-Z); the meanings are grouped by section (p.[9] cabinet and staff, pp.[10]-[11] Maj. Generals, p.[12]-[13] States, p.[14] Rivers,
+p.[15] creeks and Forts, pp.[16]-[18] Places, p.[19] Rebel Generals, pp.[20]-[24] the military vocabulary, alphabetical by meaning
+within each page: p.[20] Arms-Island, p.[21] Mortar Boats-Transports, p.[22] ranks, p.[23] Attack-Right Wing, p.[24] Rifle Pits-Movement).
+To look up a word: take its first letter to the page by the left-hand code-word run, then read the line. A printed line with nothing
+written between (section 3's blank list) has no meaning in this copy.

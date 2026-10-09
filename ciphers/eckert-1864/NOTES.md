@@ -3631,3 +3631,33 @@ A fresh blind re-judge of KEY-TW's two candidate key rows, by a reader that had 
 - Results: Tulip = stop, candidate **9 of 10** read vs control **2 of 10**, Fisher one-sided p = 0.0027. whiskey = Troops, candidate **7 of 7** vs control **2 of 7**, p = 0.0105. Both rows pass: the candidate is clearly above the control.
 - Exception: E319 (5695/2, window 01, "Either Vernon as navigation must remain [stop] for vessels") was unclear as "stop"; key.md's Tulip = Open reads there ("navigation must remain open for vessels"), and NO9-R1's summary of E319 has "navigation open". The section 7 row Tulip = Period (S), applied to every No. 1 entry, would misread E319. A FIX job should give E319's "tulip" a per-entry note (Open, or M) rather than change key.md. No key.md row needs to go back to M on this result.
 - Network: none beyond git. hdl: no take.
+
+## NO9-PAGES (9 Oct 2026, account 1, for LANE LEDGER)
+
+Job: read the rest of the No. 9 key book (mssEC 67, Huntington object 1750) for the words reading-no9.md left untabled. Result: the book has
+no pages after p.[24] (dmGetCompoundObjectInfo: 37 images, 1745-1749 back leaves, pastedown, cover, spine, all blank of writing), so
+"the rest" was the untabled lines of the arbitrary pages already fetched in part. pp.[20], [21], [23] (pointers 1740, 1741, 1743) read
+whole at 2000 px, p.[24] from the committed image; 72 new rows in key-no9.md section 7 (H 71, M 1: Wabash/Winona, read "Intercepted",
+uncertain), plus the book's layout so a later reader can look up any word. The 32 lines already tabled re-read the same.
+
+| token | entry | row found | effect |
+|---|---|---|---|
+| swindle | O9-CA (5570/0) | Swindle/Surgery = Steam Boats, p.[21] l.22 | M -> H: "[Major] Mulford [Steam Boats] [New York] [Baltimore]" |
+| Surgery | O9-BB (9717) | same line | M -> H: "Enough [Steam Boats] and Propellers" |
+| Randolphed | O9-BA (9717) | Randolph/Raymond = Arms, p.[20] l.1 | M -> H: "Has it been [Arms]ed" |
+| wedlock | O9-BA (9717) | Wedlock/Whack = Rifle Pits, p.[24] l.1 | M -> H: "man [Rifle Pits] & [Guards] [Bridge]s" |
+
+`decode_no9.py --write`, `--check` exit 0: totals over 46 entries H 369, C 0, I 0, M 0 (was H 365, M 4). The `graded:` override lines for
+the four tokens were removed from ciphertext-no9.txt with a note line each. Adding all 72 rows changes no other token (output diffed
+before and after). Not re-graded beyond these four; no audit class touched. To propagate (orchestrator/verifier, rule 10): AUDIT.md
+LS3-V18a s.1/s.4 (O9-BA H 5 M 2, O9-BB H 9 M 1) and NO9-R1's O9-CA row (H 6 M 1) now read H 7, H 10, H 7; any SO or status row quoting them.
+
+Requests: hdl.huntington.org 8 (1 dmGetCompoundObjectInfo, 7 IIIF pages 1719, 1740, 1741, 1743, 1745-1747; all 200; images in scratch,
+not committed). No other host. No credentials used.
+
+### Remaining gaps
+- [ ] Wabash/Winona (p.[24] l.18) reads like "Intercept" again (l.9 Wrangle/Wreathe = Intercept); not used by any entry; next: a 4000 px crop of 1744 l.9 and l.18 side by side, ~$0.2.
+- [ ] untabled lines of pp.[9]-[19] and [22] (the name and place pages): no entry needs them now; next: table them whole the same way, one page per unit, ~$0.3 a page.
+
+### Escalation
+Siblings: all four tokens sat in three entries on two leaves, now read. Clear pages: n/a. Known keys: mssEC 67 (H). Print: n/a for key rows. Image check: done for the four rows at 2000 px. Retry: n/a. Verdict: keep going.

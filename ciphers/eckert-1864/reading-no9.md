@@ -340,15 +340,15 @@ Code-word tokens: H 5.
 
 **O9-BA | mssEC 18 p.51, pointer 9717 | 22 Apr 1864 3 PM, to Canby (operator Horner NY; Applause)**
 
-for Br Genl Canby ---- What is the Condition of the 14th NY [Artillery] Has it been Randolphed & drilled as [Infantry] so that it can go into the field or man wedlock & [Guards] [Bridge]'s &c [Halleck] Have you recd No 1
+for Br Genl Canby ---- What is the Condition of the 14th NY [Artillery] Has it been [Arms]ed & drilled as [Infantry] so that it can go into the field or man [Rifle Pits] & [Guards] [Bridge]'s &c [Halleck] Have you recd No 1
 
-Code-word tokens: H 5, M 2.
+Code-word tokens: H 7.
 
 **O9-BB | mssEC 18 p.51, pointer 9717 | 22 Apr 1864 10 PM, to Van Vliet (operator John Horner NY; signed M C Meigs)**
 
-[Washington] April Twenty Second {time: 10 PM} For [Major] Van West [Quartermaster] [New York] period Enough Surgery and Propellers period Complete the supply of tugs of Ferry boats of barges and Schooners for both [(Fort) Monroe] and [Washington] period There will be much material to move period Steamers Enough to move [Troops] are now Engaged period Devote your self to Expediting the arrival of vessels at their destined ports period I fear delay which would be most injurious sig M C Meigs [Quartermaster General]
+[Washington] April Twenty Second {time: 10 PM} For [Major] Van West [Quartermaster] [New York] period Enough [Steam Boats] and Propellers period Complete the supply of tugs of Ferry boats of barges and Schooners for both [(Fort) Monroe] and [Washington] period There will be much material to move period Steamers Enough to move [Troops] are now Engaged period Devote your self to Expediting the arrival of vessels at their destined ports period I fear delay which would be most injurious sig M C Meigs [Quartermaster General]
 
-Code-word tokens: H 9, M 1.
+Code-word tokens: H 10.
 
 **O9-BC | mssEC 18 p.362, pointer 10028 | 2 Jun 1865 10.30 AM, to Borgia (operator Stevens, Cin; ledger "9")**
 
@@ -358,9 +358,9 @@ Code-word tokens: H 4.
 
 **O9-CA | mssEC 25 (obj 5952) p.26, pointer 5570 | 10 Feb 1864, Sheldon at Fort Monroe to G. W. Baldwin at Baltimore (old vocabulary, "Vienna ... Clara"; signed John I Davenport, private secretary)**
 
-Geo W Baldwin Balto [Major] mulford swindle [New York] [Baltimore] period the [Maj. Gen.] desires to know where A F Brengle has gone whom you brought down on flag of truce boat answer immed'y to me signed John I Davenport private secretary to [B. F. Butler] {time: 10.30 AM} Clear and Cool Geo D Sheldon
+Geo W Baldwin Balto [Major] mulford [Steam Boats] [New York] [Baltimore] period the [Maj. Gen.] desires to know where A F Brengle has gone whom you brought down on flag of truce boat answer immed'y to me signed John I Davenport private secretary to [B. F. Butler] {time: 10.30 AM} Clear and Cool Geo D Sheldon
 
-Code-word tokens: H 6, M 1.
+Code-word tokens: H 7.
 
 **O9-CB | mssEC 25 (obj 5952) p.26, pointer 5570 | 10 Feb 1864, G. W. Baldwin at Baltimore to Sheldon at Fort Monroe (old vocabulary, "Abbey ... Rosetta"; signed John E Mulford)**
 
@@ -386,5 +386,5 @@ Maj. Eckert "D. I." Copy to Sheldon following message passed here to [U. S. Gran
 
 Code-word tokens: H 12.
 
-Totals over the 46 entries: H 365, C 0, I 0, M 4.
+Totals over the 46 entries: H 369, C 0, I 0, M 0.
 <!-- decode.py: derived block ends -->
