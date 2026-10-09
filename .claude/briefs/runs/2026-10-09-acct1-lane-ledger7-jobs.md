@@ -60,3 +60,27 @@ mssEC 67 (Huntington object 1750): key-no9.md sections 3-6 hold pp.[1]-[24]; the
 `swindle`; grep for U/M tokens) find its page and row; add those rows to key-no9.md with the page named (grade H = handwritten meaning in mssEC 67). Record the
 book's page layout (alphabetic sections, arbitraries, route words) so a later reader can look up any word. Then `decode_no9.py --write` and `--check` exit 0;
 NOTES "## NO9-PAGES". Do not re-grade entries beyond what the new key rows change; no audit classes.
+
+---
+
+# Wave 2 (written 9 Oct 2026 17:2x UTC; seven_day allowed_warning on every session, continuing per lane-common-blast; lane ~24 of 60 at writing)
+By get_session: FV-FM10a 5.94 (E314 E315 N1, E318 N3 D3; AUD2-LEDGER-26), FV-FM10b 5.36 (E319 E320 N3 D3, E321 N3 D2; AUD2-LEDGER-27), FV-FM10c 5.79 (all five
+No. 9 entries N1), FIX-FM11 1.26, KEY-BLIND 1.30 (Tulip = stop 9/10 vs 2/10, Whiskey = Troops 7/7 vs 2/7: both S rows stand; E319 reads Open), NO9-PAGES 2.42
+(mssEC 67 ends at p.[24]; 72 rows; No. 9 decode M 0). Wave 1 total 22.07. Opus verifiers ran 1.07-1.19x their $5 caps: size at 1.9 per entry.
+
+## FIX-FM12 (Sonnet 5.5; cap $2.5, box 60 min, no network)
+Exactly the FIX-FM11 method above. Sources: AUDIT.md s.5 of "## AUDIT (FV-FM10a)", "(FV-FM10b)" (E319 tulip = Open H as a per-entry note -- KEY-BLIND agrees;
+pony plain; E321 = the FM-R4a "second text on 5781" gap, received copy 12319), "(FV-FM10c)" (O9-BD C 7 H 5 with OR I/37 pt 2 p.293, FM-R7a M 2 withdrawn;
+O9-CC C 3 OR II/6 p.943; decode_no9.py notes through its own mechanism); NOTES "## KEY-BLIND" (E319 note); NOTES "## NO9-PAGES" (propagate the new No. 9
+H counts into AUDIT "LS3-V18a" and NOTES "## NO9-RI" count lines for O9-BA O9-BB O9-CA as a dated correction note, never rewriting the old text). Propagate
+to status.json rows and SO prompts (rule 10). decode.py / decode_no2.py / decode_no9.py --check exit 0; depth_check; file_shrink_guard; NOTES "## FIX-FM12".
+
+## MS18-R2 (Sonnet 5.5, reader; cap $5, box 120 min): mssEC 18 (obj 10074), 10 more No. 1 rows of ms18/clean-ms18.tsv
+Fort Monroe 1864 clean rows are spent; this is the incarnation-6 next item 4. Rows (lowest print cover first; a mechanical grep at 17:2x found none of these
+pointers in ciphertext.txt/NOTES/AUDIT): 10009/1 (1865-05-17), 10010/2, 10058/0 (1865-10-13), 10024/2, 9889/0, 9889/2, 9813/1, 10016/2, 9864/1, 9873/1.
+Method exactly "## MS18-R1" of .claude/briefs/runs/2026-10-08-acct1-lane-ledger2-jobs.md PLUS the FM-R6 additions (ledger6 jobs): the all-pointer CONTENTdm
+clear-copy search on each row's clear words FIRST (readers missed holder copies three times), OR I/46-49 (1865) and I/39-43 (1864) by date + addressee and a
+rare-name full-text grep, Grant Papers via IA be-api. The 1865 rows: paste the HEAD share for No. 1 against key-share-1865.tsv before decoding; a row no book
+reads is recorded "no book in hand", not forced. Images: crops only (tools/iiif_lines.py --image), page text on disk in sources/mssEC18/ first; hdl token rules.
+IDs from E322 (fetch first; take the next free one if taken). NOTES "## MS18-R2 (9 Oct 2026, account 1, for LANE LEDGER)" with a per-row line "in print /
+holder clear copy / not located (sources searched)", Remaining gaps / Escalation, gaps_check, decode --check. Unit ~0.5 per row.
