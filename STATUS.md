@@ -5925,6 +5925,41 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-1510, session_01EhykP6Ezpqa9BSqzwCGsB8, account 2), 9 October 2026 (closed 17:1x UTC: three waves worked, lane ~56.3 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-1510-jobs.md. Started from the
+1310 handoff next list items 1, 2, 4 and the SIBS-PREMISE item 4 (ceppo fr.4702 f.36r). Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct,
+proceeded. Workers 16 in 3 waves (15:17-16:50 UTC; Opus 9, Sonnet 7; all ledgered from get_session, archived): 51.43; orchestrator ~4.9. Account 2
+seven_day `allowed_warning` throughout (continued per blast rules). No Gallica probe this incarnation (no Gallica job). Known-text share ~45%, all key
+tests/builds for the Manteuffel pool and Brochado. Dropped by check 1: wallis-emus203 Thurloe grep (ran 6 Oct), august-van-saksen 53 p2 (read 6 Oct).
+
+Results:
+- sachsstaatsarchiv-manteuffel-1712 (Loc. 694/08): frame census CLOSED at sheet scale (inv08e/f/g: 0133-0503; heavy code-bearing not yet read: 0146,
+  0169, 0174, 0182, 0309, 0317, 0490, 0503). Gloss gates PASS on 0089 (pooled 9/14 vs p99 3; BO I p.208 paraphrase), 0136 (Manteuffel to Flemming
+  18 Jun 1712, 39/55 vs p99 12; BO I p.212 quotes it), 0312+0314 Extrait pair (16 Sept 1712, letter runs 38/49 vs p99 12, name runs 25/34 vs p99 6;
+  not in BO I). 0383 = 4 Oct 1712 P.S. printed in BO I pp.257-258 (print gate PASS). 0290 is glossed (inventory wrong) and FAILs the letter-statistic
+  gloss gate (word/syllable codes 281-674). V-MANTC (verifier): key.tsv 54 C->M (u/t conflict, readings regenerated C 202->199); 19=n not established;
+  0474 63 withdrawn; MANT-FIX: 0494 T134 -> 59; 0176 r01 needs physical access. Held candidates: 321 = Stockholm (one witness), 191 Stenbock (2nd
+  witness), 254 Ilgen, 199, 42 (rule-4 conflict). Acta Borussica BO I prints or paraphrases most dispatches checked: read BO I before decoding.
+- antt-msliv0638-brochado-1712: m0178 holds ONE code run (tail of Carta 79), key gate PASS 0.804 vs p99 0.294, C41 M11 (known text).
+- na-suriname-map-1781: SUR-KB key-blind SPLIT: full split still excluded without the aligner steer; partial splits (f <= 0.75) untested at N=65.
+- heinsius-vanhaersolte-1703: Deel 2 scanned end to end (pp.7-600), no cipher run; parked on the NA reply.
+- ceppo-nevers-fr4702-f36: check-solved verdict blocked (Gomberville 1665 unopenable from the cloud); premise check written.
+- tools/decode_key.py: --check was ignored when a report flag was given; fixed + tools/tests/test_decode_key_check_drift.py. tests/test_decode_key.py
+  has 3 pre-existing FAILs (Danzay reading STALE etc.), not this lane's.
+
+**next** (for the next LANE FAMILY incarnation):
+1. Manteuffel heavy glossed leaves not yet read: 0490, 0503 (0503 may be N9-MANT's leaf -- check 1), 0309, 0317, 0146, 0169, 0174 (~$6-7 Opus each at the
+   observed rate; BO I check first; count tokens on the image before planning).
+2. Manteuffel 0290: a word/syllable-code gloss gate (codes 281-674) instead of the letter statistic, pre-registered (~$3); candidates in f0290_08/.
+3. Manteuffel held codes: a separate verifier pass pooling the 321/191/254/199/42 witnesses across 0136, 0312/0314, 0494 (~$3, disk).
+4. Suriname: more glossed lines are needed before partial splits are testable (no further draws on the 65 lines).
+5. tests/test_decode_key.py 3 pre-existing FAILs (Danzay reading STALE): a cheap Sonnet fix-or-explain job (~$1).
+6. Ceppo fr.4702 f.36r: Gomberville 1665 via a LOCAL-QUEUE row (owner desk) before any reconciliation.
+Excluded this incarnation (other lanes): eckert-*, Huntington ledgers, lodewijk-van-nassau-1573-74, jan-van-nassau-1572-75, decode-*, bne20211, costabili,
+harley-287, fr16144, fr16045-pisany, fr4735-monluc, craven-rupert-1648, sforza-pusterla, baluze167, huntington-blathwayt, ceppo-nevers-fr3251-1570s,
+pro3055-clinton-1779, birago-*, hellen-frederick-1752, ra-karlxi.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-1310, session_01Xvms7TJ6c589BD817Fkatp, account 2), 9 October 2026 (closed 14:3x UTC: three waves worked, lane ~52.5 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-1310-jobs.md. Started from the
