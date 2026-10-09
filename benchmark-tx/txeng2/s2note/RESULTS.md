@@ -76,7 +76,7 @@ committed): s (0) and r (0). The vocabulary gap is small; it does not explain th
    and merging s into S changes no error, only re-alignment. The PREREG's premise that 'S' 0 vs 141 / 's' 81 might be
    notation is answered: it is not, on scored positions.
 2. **z-for-3 and y-for-V were not mapped** because the sheet distinguishes them in so many words; the S2 reads carry no
-   '3' and no 'V' at all (z 54, y 60, per the look's line). Only 4 of passZ_S2b's 75 errors involve a read z on a
+   '3' and no 'V' at all (z 54, y 60, per the look's line). Only 3 of passZ_S2b's 75 errors involve a read z on a
    3/tz truth and 3 a read y; a z->3 / y->V map was not tested and is not added here (rule: no entry after an error is
    seen). That the readers never once used '3' or 'V' though the sheet defines both is a reader-instruction defect for
    the next confirm item's brief, not a correction of this look.
