@@ -1,0 +1,13 @@
+page	offset	small_tokens	codes_140_199	context	eye_read
+144	3022	2 3 2		Willem III en Portland, l e gedeelte, II, nr. 4 2 3 . 2. Charles-Louis de Barbezières, markies de Chemer	footnote ref (Willem III en Portland II nr. 423); not cipher
+163	2598	1 1 1 1 4 3 2		YEAR . Monsieur, Ma dernière à V o t r e 1-xcellence a été du 1 1 , q u o y q u e d a t é e par abus du 1 4 m e de ce mois . 3. Zie hiervóór nr. 413. 2. Dr. Johann Michael von T(h)almann, keizerlijk l	dates/footnote numbers in French clear text ("du 11", "14me de ce mois")
+166	1466	1 3 4		voor rekeninge van hoogstgemelte Zijne Keiz. Maj. 1 te mogen betaalen 3 0 0 . 0 0 0 of 4 0 0 . 0 0 0 gl. welke som den H . r Deutz mij gi	money amounts 300.000/400.000 gl, clear Dutch
+168	152	2 4 1		llem Uien Portland, l c gedeelte, I I , nr. 4 2 4 . Ondert. orig.1 HAREF . Colyer heeft de resolutie e	footnote ref (nr. 424); not cipher
+177	905	5 7 1 8		'haaren laste is in 't werk stellen, o p d a t de 5 7 YEAR , 1 8 die wij rekenen dat de anticipatie der beide 1 0	amounts/years in clear French (57, 18 ...)
+197	3192	1 9 6 2 3		de Opera in Den Haag. Ibi- dem, p . 1 9 6 - 2 0 3 .	page range reference (pp.196-203)
+200	2248	1 9 2 70 1 50 2 9 4 70 2 3 4 1 6 4 1 64 1 5 1 6 4 3		ie sullen c o n n e n sijn: van R o t t e r d a m 1 à 9 0 , 2 à 70, ende 1 à 50 ende van ons Collegie 2 à 9 0 , 4 à 70 ende 2 fregats à 3 4 ; Zeeland 1 à 6 4 ; N o o r d h o l l a n d 1 à 64 ende 1 a 5 0 ; Vriesland 1 à 6 4 behalven 3 branders e n d e 3 b o m b a r d e e r g a l j o	fleet lists in clear Dutch (ships by Rotterdam 1 a 90, 2 a 70 ... gun classes); numbers followed by a-gun-class, not a code run
+204	2569	18 8 4		a m deux-cent chevaux d'artillerie, 80 chariost, 18 piest es de c a n n o n , 8 4 . 0 0 0 de p o u d r e , d o n t il m ' a m a r	artillery/powder counts in clear French
+207	1724	11 2 6		k s e , Willem 111 en Portland, Ie gedeelte, 11, nr. 4 2 6 . Ondert. orig. HAREF . In	footnote ref (nr. 426)
+213	921	1 1 4		pas en état à le faire avant que j*ay touché les 1 1 . 4 0 0 florins d'arrérages, je me trouve forcé, mon	florin arrears 11.400, clear French
+220	2870	1 12 1		1 . Pesters. Mastright, den 12 mey 1 7O.S. Eigenh. orig. H . A . 871.	date (12 may 1703, OCR 1 7O.S.)
+236	1226	1 70 3		Wassenaer. Au camp de Bonne, ce 1 8 de- may 1 70.3. Kigenh. orig. ARA, coll. P.ibst van	date (18 May 1703, OCR 1 70.3)

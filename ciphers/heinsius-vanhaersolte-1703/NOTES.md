@@ -373,7 +373,7 @@ still letters 341, 929, 1017, and its key is still not located in print.
 3. Ask the NA (REQUEST.md) to include H.A. 918 beside H.A. 841, so d'Alonne's decipherment of the 1704 letter can be compared with its cipher.
 
 ## While waiting
-The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: `small_runs.py` over the rest of Deel 2 (pages without a Haersolte hit); pp.7-131 done (HEIN-SR 9 Oct 2026), pp.132-600 remain.
+The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: `small_runs.py` over the rest of Deel 2 (pages without a Haersolte hit); pp.7-251 done (HEIN-SR, HEIN-SR2 9 Oct 2026), pp.252-600 remain.
 
 ## Deel 2 small-number run over unread pages (HEIN-SR, 9 Oct 2026, 10:24-10:4x UTC by date -u)
 
@@ -407,3 +407,39 @@ Read so far: unmeasured, the 1703 cipher extent in print rests on OCR scans of a
 - [n/a] image-check: no run found
 - [ ] retry: pp.132-600
 Verdict: keep going: 1 internal gap; cheapest next: small_runs over Deel 2 pp.132-600 in 120-request batches, ~USD 1.2 each
+
+## Deel 2 small-number run, pp.132-251 (HEIN-SR2, 9 Oct 2026, 13:24-13:3x UTC by date -u)
+
+Brief (LANE FAMILY-A2i, account 2). Same tool, rule, filters and PREREG as HEIN-SR (`small_runs.py` unchanged; `PREREG-HEINSR.md` stands, no new gate).
+Prior-work step: `tools/prior_work.py` exit 4 (target-level own-claim LEADs, a folio-keyed LOOK and UNCHECKED rows that do not apply to a printed-edition OCR
+page run), all five rows recorded CLEAR in `prior-work.tsv`; checks 1-2 by reading this file (HEIN-SR, D2-HEIN: no overlap with pp.132-251); checks 3-4 unchecked
+(the edition is the very text read; no other edition looked up).
+
+Controls (disk, before the target run): positive p.130 (letter 341) fires 1 row, p.398 (letter 1017) fires 1 row; negatives pp.017, 060, 473, 397 fire 0 rows each.
+Target: Deel 2 printed pp.132-251, 120 pages, of which 14 were already on disk (137, 139, 145, 158, 167, 171, 179, 196, 208, 214, 226, 234, 240, 243) and
+106 were fetched once each; all 120 pages are now on disk and scanned. Result: 12 candidate rows on 12 pages (144, 163, 166, 168, 177, 197, 200, 204, 207, 213, 220, 236),
+all eye-read from OCR: footnote/edition references (Willem III en Portland nr. 423/424/426; pp.196-203), dates (12 and 18 May 1703), money, troop and artillery
+counts in clear French/Dutch, and a fleet list on p.200 (ship counts by gun class, clear Dutch). **None is cipher.** Table: `small_runs_HEINSR2.tsv`.
+No page in 132-251 carries a cipher passage of the 1017 kind.
+
+Where it was not found / limits: pp.252-600 not scanned (about 350 pages, of which about 40 on disk from earlier runs). Same rule limits as D2-HEIN (needs three small
+numbers close together; OCR is the only witness). Graded tokens read by us: 0. No key or status change.
+
+Requests: resources.huygens.knaw.nl 106 required page fetches (all 200, >= 2.2 s apart, descriptive UA) plus a small number of duplicate fetches (a few pages, estimated
+under 10) from a second small_runs process I launched by mistake and killed within about a minute; two processes were briefly concurrent against the host (a lapse of
+the one-at-a-time rule; no 429/403 seen). Vision 0, subagents 0, WebSearch 0.
+
+## Remaining gaps (HEIN-SR2, 9 Oct 2026)
+Read so far: unmeasured, the 1703 cipher extent in print rests on OCR scans of about 313 of 594 Deel 2 pages (A2P4 70, D2-HEIN 75 on disk incl. controls, HEIN-SR 118, HEIN-SR2 106 fetched + 14 already held).
+- Deel 2 printed pp.252-600 not scanned for small-number runs - blocker: not-attempted; budget stopped at p.251; next: `small_runs.py --fetch` over pp.252-600 not on disk in 120-request batches, ~USD 1.2 per batch
+- NA original H.A. 841 undigitised - blocker: waiting-on the Nationaal Archief reply to REQUEST.md; the original is not online
+
+## Escalation (HEIN-SR2, 9 Oct 2026)
+- [x] siblings: Deel 3 read (R11A-HEIN3, R12A-HEIN)
+- [x] clear-pages: letters 341, 929, 1017 only
+- [n/a] known-keys: no key located in print
+- [x] print: Deel 2 pp.7-251 now scanned
+- [n/a] key-rebuild: no key material exists
+- [n/a] image-check: no run found
+- [ ] retry: pp.252-600
+Verdict: keep going: 1 internal gap; cheapest next: small_runs over Deel 2 pp.252-600 in 120-request batches, ~USD 1.2 each
