@@ -471,7 +471,7 @@ Waits on: an image of document (b), Nääs 6 May 1677, from Riksarkivet (Verdict
 - Search Riksarkivet's data.riksarkivet.se API for Karl XI-era chancery cipher keys (chifferklaver, Kanslikollegium 1675-1680) so a key is on disk when (b)'s cipher passage arrives; S
 - [done 9 Oct 2026, KARL-REQ] Refresh REQUEST.md's gate line and draft the Riksarkivet copy order in outreach/ (gate 7 check, then an ASKS row), since nothing shows it was ever sent; S
 
-## Copy order drafted (KARL-REQ, account-2 worker for orchestrator account-4, 9 Oct 2026, 10:13-10:3x UTC by date -u)
+## Copy order drafted (KARL-REQ, account-2 worker for orchestrator account-4, 9 Oct 2026, 10:13-10:18 UTC by date -u)
 - Gate: cleared. REQUEST.md's "Gated -- do not send ... blocked on the edition search" was stale: CX2 (25 Sept, item 1) and NX-UNBLOCK (26 Sept)
   settled the Sverges traktater question (no part covers 1648-1723), and RUN1/RUN3/R8-KARL3/R9-KARL4 found no printing of document (b).
   REQUEST.md's gate line now says so, citing those sections. `intake_gate_check.py` passes; `prior_work.py --step-type lookup`: 2 LEADs, both
