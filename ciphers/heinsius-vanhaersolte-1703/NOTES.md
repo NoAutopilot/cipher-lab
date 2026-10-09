@@ -473,3 +473,33 @@ Read so far: unmeasured, the 1703 cipher extent in print rests on OCR scans of a
 - [n/a] image-check: no run found
 - [ ] retry: pp.252-600
 Verdict: keep going: 1 internal gap; cheapest next: small_runs over Deel 2 pp.252-600 in 120-request batches, ~USD 1.2 each
+
+## Deel 2 small-number run, pp.372-491 (HEIN-SR4, 9 Oct 2026, 15:56-16:1x UTC by date -u)
+
+Brief (LANE FAMILY-A2j, account 2). Same tool, rule, filters and PREREG as HEIN-SR/SR2/SR3 (`small_runs.py` unchanged; no new gate).
+Prior-work step: check 1 by reading this file (HEIN-SR3 stopped at 371; pp.372-491 not scanned before); `tools/prior_work.py` not re-run (the HEIN-SR3 rows
+are the same printed-edition OCR page run, recorded CLEAR); checks 3-4 unchecked (the edition is the very text read; no other edition looked up).
+
+Controls (disk, before the target run): positive p.130 (letter 341) 1 row, p.398 (letter 1017) 1 row; negatives pp.017, 060, 473, 397 0 rows each.
+Target: Deel 2 printed pp.372-491, 120 pages (14 held, 106 fetched once each, no fetch failed). Result: 16 candidate rows on 11 pages (386, 387, 390, 398, 400, 404, 458,
+465, 476, 483, 484), all eye-read from OCR: sums, dates, footnote references, Bible-verse references, ship/troop/person counts in clear Dutch/French. The p.398 row is the
+already-known letter 1017 passage (also the positive control page). **No other row is cipher.** Table: `small_runs_HEINSR4.tsv`.
+No page in 372-491 other than 398 carries a cipher passage of the 1017 kind.
+
+Where it was not found / limits: pp.492-600 not scanned. Same rule limits as D2-HEIN (needs three small numbers close together; OCR is the only witness). Graded tokens: 0. No key or status change.
+Requests: resources.huygens.knaw.nl 106 (>= 2.2 s apart, descriptive UA, one process). Vision 0, subagents 0, WebSearch 0.
+
+## Remaining gaps (HEIN-SR4, 9 Oct 2026)
+Read so far: unmeasured, the 1703 cipher extent in print rests on OCR scans of about 553 of 594 Deel 2 pages (HEIN-SR4 added 106 fetched + 14 held).
+- Deel 2 printed pp.492-600 not scanned for small-number runs - blocker: not-attempted; budget of one 120-request batch stopped at p.491; next: `small_runs.py --fetch` over pp.492-600 not on disk, ~USD 1.1
+- NA original H.A. 841 undigitised - blocker: waiting-on the Nationaal Archief reply to REQUEST.md; the original is not online
+
+## Escalation (HEIN-SR4, 9 Oct 2026)
+- [x] siblings: Deel 3 read (R11A-HEIN3, R12A-HEIN)
+- [x] clear-pages: letters 341, 929, 1017 only
+- [n/a] known-keys: no key located in print
+- [x] print: Deel 2 pp.7-491 now scanned
+- [n/a] key-rebuild: no key material exists
+- [n/a] image-check: no run found
+- [ ] retry: pp.492-600
+Verdict: keep going: 1 internal gap; cheapest next: small_runs over Deel 2 pp.492-600 (one batch), ~USD 1.1
