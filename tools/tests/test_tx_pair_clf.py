@@ -84,5 +84,67 @@ def test_truth_refused():
         assert 'truth' not in rows[0] and rows[0]['sid'] == 'f178v_01_001'
 
 
+
+def test_x2b_dev_tune_loo_lines():
+    """X2b: four dev_tune lines of synthetic V/H tiles; L reads T98 everywhere; truth says V = T18 (letter d), H = T98.
+    Leave-one-line-out flips the V tiles and keeps the H ones; each fold's training step never reads the applied line's
+    truth; the eval unit (no shared lines) reads no truth at all; a permuted control runs."""
+    with tempfile.TemporaryDirectory() as d:
+        rng = np.random.default_rng(1)
+        at = os.path.join(d, 'atlas')
+        sig, bms, mp, L, tr, Le = 'sid\tpage\n', [], 'sid\tfol\tline\tpos\tidx\tsign\ttruth\top\tsplit\n', \
+            'line\tpos\tsign\n', '# t\nline\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n', 'line\tpos\tsign\n'
+        for li in range(1, 6):
+            line = f'f178v_L{li:02d}'
+            for k in range(1, 9):
+                kind = 'V' if k % 2 else 'H'
+                sid = f'f178v_{li:02d}_{k:03d}'
+                bms.append(_tile(kind, rng))
+                sig += f'{sid}\tf178v\n'
+                mp += f'{sid}\tf178v\t{line}\t{k}\t{k}\tX\tSECRET\t1:1\ttune\n'
+                if li < 5:
+                    L += f'{line}\t{k}\tT98\n'
+                    tr += f'{line}\t{k}\tT98\t{"T18|T63" if kind == "V" else "T98"}\tx\tscored\t\n'
+                else:
+                    Le += f'{line}\t{k}\tT98\n'
+        _w(os.path.join(at, 'signs.tsv'), sig)
+        np.savez_compressed(os.path.join(at, 'bitmaps.npz'), signs=np.stack(bms), marks=np.zeros((0, 48, 48), np.uint8))
+        _w(os.path.join(at, 'map.tsv'), mp)
+        _w(os.path.join(d, 'units', 'labels_dev_tune.tsv'), L)
+        _w(os.path.join(d, 'units', 'labels_eval_heldout.tsv'), Le)
+        _w(os.path.join(d, 'truth.tsv'), tr)
+        seen = []
+        orig = T.read_truth_lines
+        T.read_truth_lines = lambda p, lines: (seen.append(set(lines)), orig(p, lines))[1]
+        try:
+            base = ['--atlas', at, '--units', os.path.join(d, 'units'), '--map', os.path.join(at, 'map.tsv'), '--out-dir',
+                    os.path.join(d, 'out'), '--touched-dir', os.path.join(d, 'tch'), '--truth', os.path.join(d, 'truth.tsv'),
+                    '--train-domain', 'dev_tune']
+            with contextlib.redirect_stdout(io.StringIO()):
+                assert T.main(['apply', '--unit', 'dev_tune', '--loo-lines'] + base) == 0
+            assert len(seen) == 4 and all(len(s) == 3 for s in seen)
+            out = _rd(os.path.join(d, 'out', 'passX2b_pair2_dev_tune.tsv'))
+            assert len(out) == 32
+            v = [s for _, p, s in out if int(p) % 2]
+            h = [s for _, p, s in out if not int(p) % 2]
+            assert v.count('T18') >= 12 and h.count('T18') == 0, (v, h)
+            seen.clear()
+            with contextlib.redirect_stdout(io.StringIO()):
+                assert T.main(['apply', '--unit', 'eval_heldout'] + base) == 0
+            assert seen == [{f'f178v_L{i:02d}' for i in range(1, 5)}]
+            ev = _rd(os.path.join(d, 'out', 'passX2b_pair2_eval_heldout.tsv'))
+            assert sum(s == 'T18' for _, p, s in ev) >= 3 and all(s == 'T98' for _, p, s in ev if not int(p) % 2)
+            with contextlib.redirect_stdout(io.StringIO()):
+                assert T.main(['control', '--unit', 'dev_tune', '--loo-lines'] + base) == 0
+            assert os.path.exists(os.path.join(d, 'out', 'passX2b_pair2_ctrl5_dev_tune.tsv'))
+            try:
+                T.main(['apply', '--unit', 'eval_heldout', '--loo-lines'] + base)
+                assert False
+            except SystemExit:
+                pass
+        finally:
+            T.read_truth_lines = orig
+
+
 if __name__ == '__main__':
-    test_train_apply_control(); test_truth_refused(); print('ok')
+    test_train_apply_control(); test_truth_refused(); test_x2b_dev_tune_loo_lines(); print('ok')

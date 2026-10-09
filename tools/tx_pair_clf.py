@@ -33,7 +33,27 @@ Subcommands:
                                 (line pos sign, every unit position); with --seed > 0 passX2_pair_ctrl<S>_<U>.tsv; and a
                                 touched.tsv of the positions considered (line pos sid L pair m t out).
   control --unit U              apply with --seed 1..5.
-Never opens a truth file (benchmark-tx/*.truth.tsv, the `truth` column of no87_box_token.tsv).
+Never opens a truth file (benchmark-tx/*.truth.tsv, the `truth` column of no87_box_token.tsv) in the default secure
+training domain.
+
+X2b extension (TXE2-PAIR2, LANE TX-ENGINEER-2 round 3, 9 Oct 2026; PREREG benchmark-tx/PREREG-txeng2-3.md section X2b):
+`--train-domain dev_tune` trains on no.87's OWN dev_tune boxes instead of the secure tiles of other leaves. Rules fixed here
+before any apply:
+  - Truth: read ONLY by read_truth_lines(), which takes the list of training lines and returns rows for those lines only
+    (status 'scored', flag empty; columns line, pos, truth); the apply step never calls it. The truth file is
+    benchmark-tx/birago1572-no87.truth.tsv (truth = the letter's homophone set). The box<->position map is read with
+    read_named (no truth column).
+  - Training tiles of pair a/b: training-line positions with a 1:1 box whose L sign (labels_dev_tune.tsv) is a or b; label
+    a when a is in the truth set and b is not, b when b is and a is not; else (neither, both: a homophone pair) excluded.
+  - Usability: >= 3 tiles per side, spread over >= 2 training lines.
+  - Threshold: leave-one-line-out INSIDE the training lines gives each training tile a held-out p; at each tile m =
+    p(partner of L) - p(L); for t in {0, 0.1, ..., 0.9} net(t) = #(m > t and label = partner) - #(m > t and label = L);
+    t = argmax net (ties -> the larger t); the pair is disabled when max net <= 0. Model then refit on all training lines.
+  - `--loo-lines` (apply/control on the training unit itself): each line h is predicted by a model whose training lines are
+    the unit's other lines (h's truth never read for h's own fold). Without it, training is all dev_tune lines and --unit
+    must be another unit (e.g. eval_heldout), whose truth is never read.
+  - Control (`--seed S`): labels permuted within each pair's training tiles (rng seed S*1000 + fold), then the same rules.
+  - Outputs: passX2b_pair2[_ctrlS]_<unit>.tsv; touched / train report under --touched-dir (benchmark-tx/txeng2/pair2).
 """
 import argparse, csv, os, sys
 from collections import Counter, defaultdict
@@ -247,13 +267,158 @@ def apply_unit(a, seed):
     return 0
 
 
+# ---------------------------------------------------------------- X2b: train on no.87 dev_tune own ink (TXE2-PAIR2)
+D_TRUTH = os.path.join(ROOT, 'benchmark-tx', 'birago1572-no87.truth.tsv')
+DEV_UNIT = 'dev_tune'
+
+
+def read_truth_lines(path, lines):
+    """Training step only: truth rows (line, pos -> set of signs) for the named training lines; scored, unflagged."""
+    lines = set(lines)
+    out = {}
+    with open(path) as f:
+        rows = [l.rstrip('\n').split('\t') for l in f if not l.startswith('#')]
+    head = rows[0]
+    il, ip, it, ist, ifl = (head.index(c) for c in ('line', 'pos', 'truth', 'status', 'flag'))
+    for r in rows[1:]:
+        if r[il] in lines and r[ist] == 'scored' and not (r[ifl] if len(r) > ifl else ''):
+            out[(r[il], r[ip])] = set(r[it].split('|'))
+    return out
+
+
+def box_map(path, lines):
+    return {(r['line'], r['pos']): r['sid'] for r in read_named(path, MAP_COLS) if r['op'] == '1:1' and r['line'] in lines}
+
+
+def fit_pairs_dev(a, train_lines, seed=0, fold=0, report=None):
+    """Train every pair on the given dev_tune lines (truth read for those lines only). Returns {pair: (model, info)}."""
+    sig = rd(os.path.join(a.atlas, 'signs.tsv'))
+    idx = {r['sid']: i for i, r in enumerate(sig)}
+    bm = np.load(os.path.join(a.atlas, 'bitmaps.npz'))['signs']
+    Ld = [r for r in rd(os.path.join(a.units, f'labels_{DEV_UNIT}.tsv')) if r['line'] in set(train_lines)]
+    truth = read_truth_lines(a.truth, train_lines)
+    box = box_map(a.map, set(train_lines))
+    rng = np.random.default_rng(seed * 1000 + fold) if seed else None
+    out = {}
+    for p in PAIRS:
+        pa, pb = p.split('/')
+        X, y, g, lsg = [], [], [], []
+        for r in Ld:
+            if r['sign'] not in (pa, pb):
+                continue
+            k = (r['line'], r['pos'])
+            sid, ts = box.get(k), truth.get(k)
+            if sid is None or sid not in idx or ts is None:
+                continue
+            ina, inb = pa in ts, pb in ts
+            if ina == inb:
+                continue
+            X.append(feats(bm[idx[sid]]))
+            y.append(int(inb))
+            g.append(r['line'])
+            lsg.append(int(r['sign'] == pb))
+        y, g, lsg = np.array(y, int), np.array(g), np.array(lsg, int)
+        if rng is not None and len(y):
+            y = rng.permutation(y)
+        info = dict(fold=fold, pair=p, n_a=int((y == 0).sum()), n_b=int((y == 1).sum()), lines=len(set(g)), t='',
+                    net='', enabled=0, why='')
+        if info['n_a'] < MIN_TILES or info['n_b'] < MIN_TILES or info['lines'] < MIN_LEAVES:
+            info['why'] = 'too few tiles or lines'
+            out[p] = (None, info)
+            continue
+        X = np.stack(X)
+        ph = np.full(len(y), 0.5)
+        for h in sorted(set(g)):
+            tr = g != h
+            if len(set(y[tr])) == 2:
+                ph[~tr] = Model().fit(X[tr], y[tr]).p1(X[~tr])
+        # m = p(partner of L) - p(L); class-1 prob ph
+        p_partner = np.where(lsg == 1, 1 - ph, ph)
+        m = 2 * p_partner - 1
+        partner_lab = 1 - lsg
+        best = None
+        for t in TS:
+            fl = m > t
+            net = int((fl & (y == partner_lab)).sum() - (fl & (y == lsg)).sum())
+            if best is None or net >= best[0]:
+                best = (net, t)
+        net, t = best
+        en = int(net > 0)
+        info.update(t=t, net=net, enabled=en, why='' if en else 'inner leave-one-line-out net <= 0')
+        out[p] = (Model().fit(X, y) if en else None, info)
+    return out, idx, bm
+
+
+INFO2_COLS = ['fold', 'pair', 'n_a', 'n_b', 'lines', 't', 'net', 'enabled', 'why']
+
+
+def apply_dev(a, seed):
+    """Apply step: reads L, the map (no truth) and the models; never calls read_truth_lines for an applied line."""
+    Lu = rd(os.path.join(a.units, f'labels_{a.unit}.tsv'))
+    ulines = sorted({r['line'] for r in Lu})
+    dev_lines = sorted({r['line'] for r in rd(os.path.join(a.units, f'labels_{DEV_UNIT}.tsv'))})
+    if a.loo_lines:
+        if a.unit != DEV_UNIT:
+            raise SystemExit('--loo-lines applies to the training unit itself (dev_tune)')
+        folds = [(i + 1, [h], [l for l in dev_lines if l != h]) for i, h in enumerate(ulines)]
+    else:
+        if set(ulines) & set(dev_lines):
+            raise SystemExit('without --loo-lines the applied unit must not share lines with dev_tune')
+        folds = [(0, ulines, dev_lines)]
+    box = box_map(a.map, set(ulines))
+    reports, out, touched = [], [], []
+    for fold, alines, tlines in folds:
+        assert not set(alines) & set(tlines)
+        res, idx, bm = fit_pairs_dev(a, tlines, seed, fold)
+        reports += [info for _, info in res.values()]
+        for r in Lu:
+            if r['line'] not in alines:
+                continue
+            s = sign = r['sign']
+            cands = []
+            for p, (m, info) in res.items():
+                pa, pb = p.split('/')
+                if m is None or s not in (pa, pb):
+                    continue
+                sid = box.get((r['line'], r['pos']))
+                if sid is None or sid not in idx:
+                    continue
+                p1 = float(m.p1(feats(bm[idx[sid]])[None])[0])
+                partner = pb if s == pa else pa
+                pp = p1 if partner == pb else 1 - p1
+                mg = 2 * pp - 1
+                cands.append((mg - info['t'], partner, p, mg, info['t'], sid))
+            if cands:
+                best = max(cands)
+                if best[0] > 0:
+                    sign = best[1]
+                for c in cands:
+                    touched.append(dict(line=r['line'], pos=r['pos'], sid=c[5], L=s, pair=c[2], m=f'{c[3]:.3f}', t=c[4],
+                                        out=sign))
+            out.append(dict(line=r['line'], pos=r['pos'], sign=sign))
+    order = {(r['line'], r['pos']): i for i, r in enumerate(Lu)}
+    out.sort(key=lambda r: order[(r['line'], r['pos'])])
+    tag = f'ctrl{seed}_' if seed else ''
+    p = os.path.join(a.out_dir, f'passX2b_pair2_{tag}{a.unit}.tsv')
+    wr(p, ['line', 'pos', 'sign'], out)
+    wr(os.path.join(a.touched_dir, f'touched_{tag}{a.unit}.tsv'), ['line', 'pos', 'sid', 'L', 'pair', 'm', 't', 'out'],
+       touched)
+    wr(os.path.join(a.touched_dir, f'train_{tag}{a.unit}.tsv'), INFO2_COLS, reports)
+    Lmap = {(r['line'], r['pos']): r['sign'] for r in Lu}
+    ch = sum(1 for o in out if o['sign'] != Lmap[(o['line'], o['pos'])])
+    en = sum(int(r['enabled']) for r in reports)
+    print(f'X2b unit {a.unit} seed {seed} folds {len(folds)}: pair-folds enabled {en}/{len(reports)}; '
+          f'positions considered {len({(t["line"], t["pos"]) for t in touched})}; changed {ch} -> {p}')
+    return 0
+
+
 def cmd_apply(a):
-    return apply_unit(a, a.seed)
+    return (apply_dev if a.train_domain == DEV_UNIT else apply_unit)(a, a.seed)
 
 
 def cmd_control(a):
     for s in range(1, 6):
-        apply_unit(a, s)
+        (apply_dev if a.train_domain == DEV_UNIT else apply_unit)(a, s)
     return 0
 
 
@@ -272,9 +437,15 @@ def main(argv=None):
             p.add_argument('--units', default=D_UNITS)
             p.add_argument('--map', default=os.path.join(D_ATLAS, 'no87_box_token.tsv'))
             p.add_argument('--out-dir', default=D_OUT)
-            p.add_argument('--touched-dir', default=os.path.join(ROOT, 'benchmark-tx', 'txeng2', 'pair'))
+            p.add_argument('--touched-dir', default=None, help='default benchmark-tx/txeng2/pair (secure) or pair2 (dev_tune)')
+            p.add_argument('--train-domain', choices=('secure', DEV_UNIT), default='secure',
+                           help='secure: S-grade tiles of other leaves (X2); dev_tune: no.87 dev_tune own boxes (X2b)')
+            p.add_argument('--loo-lines', action='store_true', help='X2b: leave-one-line-out over the dev_tune unit')
+            p.add_argument('--truth', default=D_TRUTH, help='X2b training step only (training lines only)')
         p.set_defaults(fn=fn)
     a = ap.parse_args(argv)
+    if getattr(a, 'touched_dir', 1) is None:
+        a.touched_dir = os.path.join(ROOT, 'benchmark-tx', 'txeng2', 'pair2' if a.train_domain == DEV_UNIT else 'pair')
     return a.fn(a)
 
 
