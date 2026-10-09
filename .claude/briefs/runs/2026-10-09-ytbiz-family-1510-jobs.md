@@ -66,3 +66,48 @@ verdict into NOTES.md, run `tools/intake_gate_check.py ceppo-nevers-fr4702-f36` 
 Sessions wave 1 (15:17 UTC): BRO-178 session_01UJTyAAzKE49HXDsEPG5RrW (Opus); V-MANTC session_011zGvgiB3FSzBPiLGok1mSb (Opus); MANT-0089
 session_01D2fMcEwEBfaLu9k4j9Qki6 (Opus); MANT-CEN2 session_01YS2WyAcVpuE5V2xwLMXxoE (Sonnet); HEIN-SR3 session_016e6ryPYQRaip79mnbEQooc (Sonnet);
 CS-4702 session_01DStVvPBbQQijJcisVhcJaG (Sonnet).
+
+Wave 1 results (15:21-15:33): BRO-178 m0178 one run (Carta 79 tail) key gate PASS 0.804 vs p99 0.294, C41 M11; V-MANTC 54 C->M, 19=n not
+established, 0474 63 withdrawn, fixes owed (0494 T134 = 59; 0398/0410 19-vs-14 native re-read; 0176 r01); flag: decode_key.py --check misses
+grade-only drift; MANT-0089 light leaf, pooled gloss PASS 9/14 vs p99 3; MANT-CEN2 0133-0266 inventoried (inv08e), 9 code-bearing; HEIN-SR3
+pp.252-371 no run; CS-4702 blocked (Gomberville 1665 unopenable). Workers 18.09 by get_session. Note: inventory size estimates over-read
+(0089 inventoried 100-140, actually 27 tokens): a leaf worker counts tokens on the fetched image before planning vision calls.
+Intake gate 15:5x UTC: na-suriname-map-1781 exit 0 (partial).
+
+## Wave 2 (15:5x UTC 9 Oct)
+sachsen order: MANT-0136B takes first; MANT-CEN3 next; MANT-FIX last (each waits for the previous "sachsen release" line, works from disk meanwhile).
+
+### MANT-0136B (Opus, cap 5, box 100 min, sachsen take FIRST): sachsstaatsarchiv-manteuffel-1712, Loc. 694/08 frame 0136 (NOT 694/09 0136)
+inv08e.tsv row 0136 (stamp ~102, heavy, code runs in most lines of the right page, small interlinear words above some runs). Exactly the MANT-0474 /
+MANT-0089 procedure (read both NOTES sections and PREREG-MANT0474 / PREREG-MANT0089): premise check (Acta Borussica BO I and Berner 1901 by date/
+names; MANT-0089 found BO I p.208 paraphrasing a dispatch -- check whether 0136's dispatch is paraphrased too), fetch ONCE at native, COUNT tokens
+on the image before planning (0089 was 27, not 100-140); if under ~30 code tokens, read it but pool the gate with 0089 as MANT-0089 did. Crops
+(gloss not in crop), two blind Sonnet code passes + one blind gloss read, reconciliation, PREREG-MANT0136B.md pushed in its own commit before
+scoring, gloss gate (real vs key-shuffle p99). Codes > 401 and 0494's held 231-715 here -> second witnesses reported; key.tsv not above M without
+a passed gate. ~$4.5. Report what was found and where it was not found; do not classify novelty.
+
+### MANT-CEN3 (Sonnet, cap 2.5, box 60 min, sachsen after MANT-0136B's release): 694/08 frames 0268 onward
+As MANT-CEN2 (read its section and inv08e.tsv): the next 50 uncovered 694/08 frames from 0268 (89 remain), same columns and planted controls,
+append to inv08e.tsv (or inv08f.tsv if the header says per-batch). No transcription.
+
+### MANT-FIX (Opus, cap 2.5, box 60 min, sachsen after MANT-CEN3's release, <= 4 GETs): V-MANTC's owed fixes
+AUDIT.md "## V-MANTC" lists them: (1) 0494 T134 = 59 by eye -> fix the transcription, re-run that leaf's --check and gate as committed (report
+old/new); (2) native re-read of the code-19 slots on 0398 and 0410 (19 vs y-shaped 4 = 14): fetch each leaf once at native if the committed crops
+are not native, two blind Sonnet reads of the slot crops (digits only), report; transcription edit only where both reads and your eye agree;
+(3) 0176 r01 '171' vs '17.1' if the native crop settles it; (4) MANT-0089's named 85 vs 55 eye check. Regenerate readings, decode_key --check,
+gaps_check. You did not solve these leaves; do not raise any key grade.
+
+### SUR-KB (Opus, cap 2.5, box 60 min, CPU, disk only): na-suriname-map-1781, key-blind statistic without the aligner steer
+NOTES lines ~3407, 3481, 3507 and the SUR-PARTIAL / SUR-POOLPC sections: build V-SUR0745's key-blind T (no [y-fam] row, no aligner steer) as the
+second-m-sign detector at the pooled 65 lines; PREREG-SURKB.md pushed in its own commit BEFORE any draw, with its own power curve at f = 25/50/
+75/100% computed on planted synthetic splits at the same N (the SUR-PARTIAL scaffold), gate stated in advance; then the real pooled statistic.
+Report power per f and the real result; a test without power >= 0.8 at a given f is a non-test at that f. No key change; to a verifier if it moves.
+
+### TOOL-CHK (Sonnet, cap 1.5, box 45 min, no network): tools/decode_key.py --check misses grade-only drift
+V-MANTC's flag (ROOM 15:27): after a key.tsv grade-only change (54 C->M) on sachsstaatsarchiv-manteuffel-1712, `--check` exited 0 although a fresh
+regeneration differed (C 202 vs 199). Reproduce on a temp copy, fix --check so it compares the graded output (grades and counts), add an offline
+test in tools/tests/ (must catch: grade-only drift; must NOT block: an unchanged regeneration), run the existing decode_key tests and the
+decode_configs reproductions, update SYSTEM.md if its description of --check changes. Do not change any target's committed reading.
+
+### HEIN-SR4 (Sonnet, cap 1.3, box 50 min, huygens take/release): heinsius-vanhaersolte-1703, small_runs Deel 2 pp.372-491
+As HEIN-SR3.
