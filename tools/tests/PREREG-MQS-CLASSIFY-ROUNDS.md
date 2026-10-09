@@ -52,3 +52,12 @@ pages; no no.87 box is trained).
 - C FAIL: option ships `weak`, T reported as a number only, nothing run on any target from it.
 - No further rounds of the owner sort exist on disk (one sort, 3 Oct 2026); multi-round use is the option's
   `round` column, tested offline in tools/tests/test_glyph_atlas.py.
+
+## Result (appended after scoring, 9 Oct 2026; nothing above this line changed after 0b8f1c3f)
+Round 0 reproduced: M1 0.162 (61/376), M2 0.322. Arm C (154 correct half-A labels, scored on 211 half-B signs): M1
+0.204 -> 0.194, gain 0.010, fixed 2 broken 0, sign p 0.50; 20 permuted nulls gain mean -0.003, p95 0.000, max 0.000
+-> **Gate C FAIL** (gain < 0.02, p >= 0.05). Arm T (448 owner labels on atlas boxes, 4 duplicate hits dropped):
+M1 0.162 -> 0.162, gain 0.000; nulls mean -0.0003, p95 0.000 -> **Gate T FAIL**. M2 0.322 in every run. Option ships
+`weak`. Reading: the kNN vote on a no.87 box is dominated by no.87's own 309 tune tiles, so labels added elsewhere
+barely reach it; even correct same-hand labels (arm C) moved 2 of 211 signs. Per-run numbers:
+tools/tests/MQS-CLASSIFY-ROUNDS-results.tsv (regenerate: python3 tools/tests/mqs_classify_rounds_run.py).
