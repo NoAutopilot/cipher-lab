@@ -1,0 +1,189 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T45		H	line start; loop with tall stem rising from top
+L01	2	T33		H	base-barred double hook
+L01	3	T45		H	loop with tall stem
+L01	4	T83		H	back-to-back curves with crossbar
+L01	5	T19		H	pi
+L01	6	T89	T56	M	p-like with loop at top-left, descender
+L01	7	T56	X_NEW	L	numeral-4-like shape; no plain 4 cell
+L01	8	T49	X_NEW	L	numeral-7-like shape, no box at foot
+L01	9	T78		H	bracket plus cross
+L01	10	T63		H	V/gamma
+L01	11	T86	T60	M	two verticals one crossbar
+L01	12	T17		H	t-like
+L01	13	T19		H	pi (s1/s2 overlap)
+L01	14	T58		H	B
+L01	15	T53		H	closed figure-eight lying
+L01	16	T96		H	looped l with tick
+L01	17	T70		H	triangle
+L01	18	T25		H	lambda
+L01	19	T19		H	pi
+L01	20	T83		H	back-to-back curves with crossbar
+L01	21	T60		H	hash, two bars
+L01	22	T80		H	D with loop
+L01	23	T86	T60	M	two verticals one crossbar
+L01	24	T83		H	back-to-back curves
+L01	25	T37		H	barred theta
+L01	26	T85		H	plus
+L01	27	T50		H	omega with long s
+L01	28	T51	T95	M	P/p-like stem crossed with foot stroke; hook above is from line above
+L01	29	T83		H	back-to-back curves
+L01	30	T63		H	V
+L01	31	T45		H	loop with tall stem; line end
+L02	1	T60		H	line start; hash
+L02	2	T45		H	loop with tall stem
+L02	3	T98		H	circle on stem through top and bottom
+L02	4	T25		H	lambda
+L02	5	T90		H	loop with cross on stem above
+L02	6	T97		M	S/ss-like looped shape
+L02	7	T45		H	loop with stem
+L02	8	T65		H	circle with bar below on stem
+L02	9	T86	T60	M	two verticals one crossbar
+L02	10	T76		H	g/9 with tail
+L02	11	T18	T98	M	circle on stem, short tick above
+L02	12	T45		H	loop with stem
+L02	13	T37		H	barred theta
+L02	14	T36		H	circle on long stem
+L02	15	T56		M	curly 4/gamma with hook
+L02	16	T37		H	barred theta
+L02	17	T33		H	base-barred hooks
+L02	18	T45		H	loop with stem
+L02	19	T57		H	diamond with tail
+L02	20	T86	T60	M	two verticals one crossbar
+L02	21	T90		H	loop with cross above
+L02	22	T80		H	D with loop
+L02	23	T49		H	box on stem
+L02	24	T85		H	plus
+L02	25	T83		H	back-to-back curves (s2/s3 overlap)
+L02	26	T25		H	lambda
+L02	27	T53		H	figure-eight lying
+L02	28	T19		H	pi
+L02	29	T83		H	back-to-back curves; sign above is descender from L01
+L02	30	T60		H	hash
+L02	31	T37		H	barred theta; line end
+L03	1	T83		H	line start; back-to-back curves
+L03	2	T45		H	loop with stem
+L03	3	T37		H	barred theta
+L03	4	X_NEW	T46	M	lone numeral 8
+L03	5	X_S		M	plain s shape
+L03	6	T17		H	t-like
+L03	7	T37		H	barred theta
+L03	8	T92	T50	M	omega with inner loop
+L03	9	T55		H	stem with two bars right
+L03	10	T51	T95	M	p-like crossed stem with foot
+L03	11	T19		H	pi
+L03	12	T85		H	plus
+L03	13	T76		H	g/9 with tail
+L03	14	T63		H	V
+L03	15	T37		H	barred theta
+L03	16	T83		M	back-to-back curves; tilde mark above
+L03	17	T92		M	omega with inner loop
+L03	18	T45		H	loop with stem
+L03	19	T60		H	hash
+L03	20	T45		M	loop with stem; small grave tick above
+L03	21	T85		H	plus
+L03	22	T46		H	86 pair
+L03	23	T90		M	loop with crossed stem above, b-like
+L03	24	T53		H	figure-eight lying
+L03	25	T19		H	pi
+L03	26	T58		H	B
+L03	27	T65		H	circle with bar on stem
+L03	28	T52	T64	M	m/n with descending tail
+L03	29	T51	T95	M	p-like crossed stem with foot
+L03	30	T25		H	lambda
+L03	31	T36	T27	M	circle on stem with curl
+L03	32	T66		H	loop top-left on stem with foot
+L03	33	T60		H	hash
+L03	34	T90		M	b-like loop with crossed stem
+L03	35	T17	T24	M	t/e-like; line end
+L05	1	T66		H	line start; q with foot
+L05	2	T57		H	diamond with tail
+L05	3	T55		H	stem with two bars
+L05	4	T90		M	b-like loop with crossed stem
+L05	5	T58		H	B
+L05	6	T37		H	barred theta
+L05	7	T17		H	t-like
+L05	8	T19		H	pi
+L05	9	T64	T38	M	plain m
+L05	10	T25		M	lambda with tilde/loop mark above
+L05	11	T86	T60	M	two verticals one crossbar
+L05	12	T63		H	V
+L05	13	T45		H	loop with stem
+L05	14	T64	T13	M	m with tilde above and dot after
+L05	15	T85		H	plus
+L05	16	T19		H	pi
+L05	17	X_K		H	capital K
+L05	18	T45		H	loop with stem
+L05	19	T76		H	g/9 with tail
+L05	20	T25		H	lambda
+L05	21	T19		M	pi with dot above
+L05	22	T60		H	hash
+L05	23	T86		H	two verticals one crossbar
+L05	24	T89	T56	M	p-like with loop top-left
+L05	25	T92	T96	L	c+e-like looped shape
+L05	26	T19		H	pi
+L05	27	T76		H	g/9 with tail
+L05	28	T52		H	m/n with tail
+L05	29	T54		H	R
+L05	30	T37		H	barred theta
+L05	31	T76		H	g/9 with tail; line end
+L10	1	T53		M	line start; lying eight, open-ish
+L10	2	T86		H	two verticals one crossbar
+L10	3	T18	T98	M	circle on stem, short tick above
+L10	4	T76		M	g/9 heavy ink
+L10	5	T92		H	omega with inner loop
+L10	6	T19		H	pi
+L10	7	T58		H	B
+L10	8	T18	T98	M	circle on stem
+L10	9	T85		H	plus
+L10	10	T53		H	lying eight
+L10	11	T96		H	looped l with tick
+L10	12	T98		H	circle on stem through
+L10	13	T55		H	stem with two bars
+L10	14	T60		H	hash
+L10	15	T55		H	stem with two bars
+L10	16	T15		M	89 pair, no visible tick
+L10	17	T86		H	two verticals one crossbar
+L10	18	T70		H	triangle
+L10	19	T58		H	B heavy ink
+L10	20	T96		H	looped l
+L10	21	T60	T86	M	hash with long stroke through
+L10	22	T45		H	loop with stem
+L10	23	T90		H	loop with cross above
+L10	24	T33		H	base-barred hooks
+L10	25	T19		H	pi
+L10	26	T24		H	epsilon
+L10	27	T37		H	barred theta
+L10	28	T83		H	back-to-back curves
+L10	29	T45		H	loop with stem
+L10	30	T36	T65	M	circle on long stem
+L10	31	T96		M	looped l
+L10	32	?		L	small mark cut by gutter; line end
+L22	1	T53		H	line start; lying eight
+L22	2	T60		H	hash, dot below
+L22	3	T38		H	looped m
+L22	4	T37		H	barred theta
+L22	5	T63		H	V
+L22	6	T96		H	looped l with tick
+L22	7	T70		H	triangle with dot inside
+L22	8	T45		H	loop with stem
+L22	9	X_NEW	T45	L	d shape, stem on right
+L22	10	X_NEW	T45	L	b shape, stem on left
+L22	11	T76		M	g with open lower loop
+L22	12	T19		H	pi
+L22	13	T92		H	omega with inner loop
+L22	14	T45		H	loop with stem
+L22	15	T70		M	triangle with tick below
+L22	16	T33		H	base-barred hooks
+L22	17	T25		H	lambda
+L22	18	T53		H	lying eight
+L22	19	T19		H	pi
+L22	20	T25		H	lambda
+L22	21	T60		H	hash
+L22	22	X_S		M	plain s
+L22	23	T88		H	small o
+L22	24	T90		M	b-like loop with crossed stem
+L22	25	T85		H	plus
+L22	26	T57		H	diamond with tail
+L22	27	T37		H	barred theta
+L22	28	T80		H	D; line end
