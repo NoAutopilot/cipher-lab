@@ -109,3 +109,36 @@ not a model read) for cijfer, gecijferd, sleutel, chiffre, geheimschrift, ontcij
 ciphers/vanbeuningen-dewitt-1657/siblings_ead.tsv (inv.nr, date, title, matched term, digitised y/n from the `<dao>`, already-printed
 pointer if NOTES names one, e.g. the 28 Oct 1657 letters Kernkamp deciphered = known). Do NOT fetch images. NOTES "VB-EAD" with the ranked
 list (unread + digitised + Van Beuningen as sender first) and the next step per row. ~$1.5.
+
+## Wave 2 (07:4x UTC 9 Oct)
+Hosts this wave: sachsen -- MANT-INV08C holds it for its batch; MANT-0109 needs at most one GET (take/release around it, waits for
+INV08C's release or works from disk if 0109 is already there); service.archief.nl / www.nationaalarchief.nl ("NA") VB-SCREEN only.
+
+### MANT-0109 (Opus, cap 5.5, box 100 min): sachsstaatsarchiv-manteuffel-1712, Loc. 694/08 frame 0109 (f.80) as a reading leaf
+MANT-INV08B rank 1 unglossed (mant0608/inv08b.tsv row 0109: two pages, calligraphic clerk hand, ~70-90 tokens, recurring pairs 55.44 x~14 and
+7.60 x~9). Method and gates exactly as NOTES "MANT-0454" (copy its folder layout to f0109_08/; PREREG-MANT-0109.md pushed in its own commit and
+checked on origin BEFORE any pass or score -- it names gate (b) (fr18 4-gram, letter values permuted over letter codes, power at this leaf's
+letter count from the 0085/0136 unglossed windows; power < 0.80 = non-test, stop there and say so), the grading rule and the repeated-pair
+handling). Check 2 includes the facing page and 0108/0110 if on disk. Crops via tools/iiif_lines.py --image (pasted), committed; two blind
+Sonnet passes (A crop order, B reversed), one reconciliation unit. Check 5 (print_check on the decoded + clear phrases; Google Books answers
+today). Units: 1 GET + 2 passes x ~2 calls + reconciliation, ~$5. Report what was found and where it was not found; do not classify novelty.
+
+### MANT-INV08C (Opus, cap 5, box 80 min): sachsstaatsarchiv-manteuffel-1712, Loc. 694/08 offset-2 frames 0267-0499 (the 43 MANT-INV08B left)
+Same method as NOTES "MANT-INV08B" (its sheets_b.py, planted controls, sheet_key, eye check at 1500 px of flagged frames); append to
+mant0608/inv08b.tsv (or inv08c.tsv) and re-rank rank_unglossed_08.tsv. "sachsen take/release" around the batch. No transcription. ~$4.5.
+
+### VB-SCREEN (Opus, cap 6, box 90 min; host service.archief.nl / www.nationaalarchief.nl, "NA" take/release): vanbeuningen-dewitt-1657 siblings
+NOTES "VB-EAD" ranked inv.1537, 1539, 1541 first (autograph Van Beuningen letters to De Witt; digitised; EAD flags no cipher). Prior work
+check 1 per bundle. Route (CLAUDE.md host table, Nationaal Archief row): the item page's embedded drupal-settings-json for the scan list, then
+service.archief.nl IIIF at a small size (<= 400 px wide) one scan at a time, >= 1.5 s apart, <= 120 requests in all. Screen for comma- or
+dot-separated digit runs: first a script (ink-density/row-profile heuristics are optional), then contact sheets of <= 12 thumbnails per
+vision call (~1.5 per call), planted controls on each sheet (two known cipher leaves: images/NL-HaNA_3.01.17_1538_0208/0209 or the cipher leaf
+this folder read, and two known clear leaves 0206/0207). Write vanbeuningen-dewitt-1657/siblings_screen.tsv (inv, scan, digit runs y/n,
+est. groups, date if legible at thumbnail size). Stop at 80% of cap; start with inv.1537 (QUEUE HU7, 15 Mar 1656, may sit there). No
+transcription. ~$5.
+
+### SUR-PARTIAL (Opus, cap 2.5, box 50 min, CPU only): na-suriname-map-1781 partial-split power curve
+NOTES "SUR-POOLPC" next (line ~3480): plant m -> Mx at 25/50/75% of m tokens at the pooled 65 lines on both scaffolds, same statistic, aligner,
+draws and gate as PREREG-SUR-POOLPC; PREREG-SUR-PARTIAL.md pushed in its own commit before any draw. Report detection per level per scaffold
+and what the real pooled NO SPLIT now excludes (the smallest split fraction with power >= 0.80). HYPOTHESES.md row with both numbers; NOTES
+"SUR-PARTIAL"; Remaining gaps/Escalation; gaps_check. ~$2.
