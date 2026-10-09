@@ -1,0 +1,13 @@
+statistic	value
+tokens_stream	54
+units	62
+letters	77
+keyed_cipher_tokens	51
+hits	41
+S_real	0.8039
+null_mean	0.1397
+null_p99	0.2941
+null_max	0.3529
+perms	1000
+seed	178
+gate	PASS

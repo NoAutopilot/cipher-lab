@@ -1,0 +1,9 @@
+m0253_L10 line 1: [C:22]
+m0253_L10 line 2: [C:14] a diligencia, [C:4:5.15.18.13]
+m0253_L10 line 3: [C:14] , [C:5:15.14.15.26.25] Minis-
+m0253_L11 line 1: Art^o 17. Q.^e nao ha duvida [C:5:14.z.4.3.19] Aviso.
+m0253_L11 line 2: [C:12] he parentender q [C:2:x.z] [?] [C:3:19.8.24]
+m0253_L11 line 3: [C:23]
+m0254_L04 line 1: [C:22]
+m0254_L04 line 2: [C:14] G^e P^e[?]
+m0254_L04 line 3: a V. Ex^a m^s. an^s. Londres 7 de Obr. de 1713.

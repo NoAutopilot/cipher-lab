@@ -1,0 +1,6 @@
+line	col	A	B	flagged	crop	both_conf
+m0178_L01-1	8	y	y	B		A:H/B:M
+m0178_L01-1	10	e	e	B		A:H/B:M
+m0178_L01-2	11	ff	ff	B		A:H/B:M
+m0178_L02-1	9	57	57	AB		A:L/B:M
+m0178_L02-1	11	y	y	B		A:H/B:M
