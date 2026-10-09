@@ -6927,6 +6927,41 @@ outreach/sheets/ (the E4 reading is labelled not fit to show) and B's rebuilt bl
 done; (3) put G's anonymous-pile intake proposal (research/MARY-STUART-TALK-2026-10-09.md, "Proposal for the parent", e15ae3424) to the owner; (4) do NOT
 add the TRANSCRIPTION.md owner-labels line: B's unit 4 does not support it (0.260 vs 0.020). Owner asks still open: sorter box editing (MQS-SORTER-BOX),
 BnF pile at 10x coverage (MQS-BNF-S2A..S6), name-and-place tool (weak; needs typed candidates).
+## LANE MQS-2 handoff (session_01KtMrFJc3ZZmcYgUvGJNdCz, account 4, for orchestrator (account-4) and acct3-orchestrator), 9 October 2026 (06:23-08:0x UTC by date -u; workers 46.48 + orchestrator ~7.5 = ~54 of 60 by get_session; five_hour allowed throughout)
+Incarnation 2 of LANE MQS (job DEFAULT-account-4-20261009-0535): a rolling refill over the queued MQS-* follow-up rows from incarnation 1's close, all Opus 5.5.
+From 07:2x UTC held at <=3 live workers at the account-4 orchestrator's request (LANE TX-ENGINEER had the owner's priority). Methods credited to Lasry,
+Biermann and Tomokiyo 2023 (Cryptologia 47:2), Lasry's talk and CTTS throughout. No status, key, reading or AUDIT.md changed; no outreach; nothing
+from debosnys-1883; nothing value-bearing for the owner in the Birago 1572 family. One host exception, logged in ROOM 06:53: one shallow clone of
+github.com/CrypToolProject/CTTS (Apache-2.0) for the file format only (MQS-CTTS-EXPORT).
+**Jobs** (tool and option; control vs null; shelf grade; commit; cost/queued cap):
+| Job | Tool / option | Control vs null | Shelf | Commit | Cost/cap |
+|---|---|---|---|---|---|
+| SPECIAL-SIGNS | decode_key --special-scan, repeat_values/delete_values | REPEAT 8/10, DELETE 10/10 PASS; NULL 6/10 MISS; decoy 0/10 | controlled-only / NULL weak | b185eb09 | 2.31/3 |
+| SEGMENTER | segmenter.py; judge --fragments; --auto-segment | boundary F1 0.805 vs shuffle 0.414 PASS; fragment precision 0.806 < 0.90 FAIL | weak | 1f0c8a01 | 2.43/2.5 |
+| CLASSIFY-ROUNDS | glyph_atlas classify --train-labels/--round | gain 0.010 < 0.02 (null p95 0.000); owner sort 0.000 | weak | 6bba58b4 | 3.11/4 |
+| BNF-S2A | bnf_findingaid --pile --permute (Francais) | fr.2988 rank 1/67; plants 1-2; 26 vs null p95 6 PASS | weak (unchanged) | bfc119d4, d30fe002 | 3.24/3 |
+| LANGS | family_run --langs | known answers 4/4 PASS; fr16 fold spread 1.5-71.5% | controlled-only | d2615e99 | 2.63/2.5 |
+| CTTS-EXPORT | sign_sorter_apply --icons / --ctts-out | round trip 1.000 vs 0.078 / 0.000 | icons controlled-only, ctts weak (not yet opened in CTTS) | 23fc1edb4 | 3.36/2 |
+| TX-CROSSWORD | key-flagged per-sign re-read, no.87 (4th attempt) | err_true 0.045 = base, fixed 1 broken 1 FAIL | weak; untested-by-this-tool, not re-briefed | d0de36fe..75e2acc0 | 4.82/6 |
+| NGRAM-SWEEP | homophonic_anneal --order x --norm sweep | nc2paper fails its null at every order | weak | e05f93e28 | 2.18/2 |
+| BNF-S2B | --pile over non-Francais fonds | fr.2988 rank 1/34; 26 vs p95 13 PASS; 0 bare items; 26 notices image-triage | weak (unchanged) | 8bee4c7f | 3.70/3 |
+| GLYPH-MATCH | glyph_atlas match --exclude-page --shuffle | f117r rank 10/11, margin -0.281 vs p95 +0.010 FAIL | weak | (see done line 07:35) | 3.33/4 |
+| IA-MARKERS | ia_numeral_runs --markers | Labanoff v.6 pp.45-49 not flagged (OCR drops dot rows) FAIL | weak | 346eeb0fa | 2.19/2.5 |
+| ALIAS | decode_key --aliases / --alias-scan | A 200/200 vs 0/200, 4.0 false/10k PASS; B circular | aliases controlled-only, scan weak; prereg pushed late (logged) | (07:16 done line) | 2.65/2 |
+| SHEET-REFUSAL | decipher_sheet refuses open-blind-sort families | 14/14; Birago 1572 refused (ASKS 118), Gramont/Danzay render | n/a (guard) | b0eb2212 | 2.27/1 |
+| BNF-S3 | bnf_findingaid --pile --prior-work | recall 25/29 PASS; folio-shift null 0.383 > 0.25 FAIL | weak (lead, never exclusion) | 92ed94ff2 | 3.02/2 |
+| BASE-MARK | sign_sorter_apply --split-marks; decode_key --merge-mark | 1.000 vs 0.923; 1.000 vs 0.849 | controlled-only (plumbing) | 90c1f6c13 | 3.40/2 |
+| LOOKALIKE-SLIPS | decode_key --lookalike A~B | recall 0.75 vs 0.40 PASS; false flags 0.108 > 0.10 | weak | 5b4f00ea0 | 1.84/2 |
+**Registration:** 11 lines appended to CLAUDE.md Usage 8 under "Mary Stuart method tools, second pass". Checks: system_map_check ok (181 names);
+tool_shelf --check 14 MISSING, none from this lane; rules_sync_check DRIFT 155, identical on the pre-edit CLAUDE.md (not this lane's).
+**Lesson (cost):** an Opus 5.5 worker's floor on this repository is about USD 1.8-2.3 (each session reached ~165-215k tokens of context, CLAUDE.md and the brief included); 9 of 16 rows
+ran over a queued cap of 1-2.5 priced for Sonnet. Price Opus stub rows at >= 3.
+**Next** (still queued on account 4, claim fresh; ~3 each at the Opus floor): 1. MQS-CVD-AUDIT (1.5 queued); 2. MQS-STRUCK; 3. MQS-PARTICIPATION;
+4. MQS-SAMEDAY; 5. MQS-KEY-COMPARE; 6. MQS-CCE-MATRIX; 7. MQS-BNF-S5 (attribution for the top piles; S2A/S2B found no undigitised pile above
+threshold, so its input is fr.3029 and the 26 image-triage notices); blocked: MQS-BNF-S4 (Gallica 403 to cloud since 8 Oct; one probe per
+incarnation), MQS-BNF-S6 (owner's approval of MQS-SCOUT's anonymous-pile intake). Suggested by workers, not queued: route TX-CROSSWORD's 16
+key-flagged no.87 signs to the owner's blind sorter focus list (owner item, after ASKS 118); open the --ctts-out directory once in CTTS (owner
+desk, would lift ctts-out from weak); image look at Clairambault 460, Cinq cents 483, NAF 23094 when Gallica answers (BNF-S2B).
 ## Orchestrator handoff (account 4, session_013CM4Sw1JBAhc5a2KspaERr, Fable, depth 2), from 9 Oct 2026 05:0x UTC, kept current
 
 Takeover: the owner chose account 4 after the account-3 orchestrator (session_0198Cv8ypBfBVfRToKVWx33M) went silent (last signed line 02:03
