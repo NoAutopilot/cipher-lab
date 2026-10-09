@@ -3,6 +3,10 @@
 
   python3 atlas/strips_grp.py            # one window per gate box (same 19 windows as atlas/strips.py --gate)
                                          # -> atlas/strips_grp/gate_NN.png + atlas/strips_grp/key.tsv
+  python3 atlas/strips_grp.py --line L01 L02 ...   # BERGH-ALL1 (9 Oct 2026): whole-line strips, two halves per line, same
+                                         # layout -> atlas/strips_all/Lxx_h1.png, Lxx_h2.png + atlas/strips_all/key.tsv
+                                         # halves shown as x 0-1040 / 1010-2050 (atlas/strips.py --line), but each box is
+                                         # numbered in one half only (centre < 1025 -> h1), so every box gets exactly one number
 
 Differences from atlas/strips.py (whose stacked leader lines let a reader take a neighbour's number, BERGH-STRIP gate_09):
 - the window is drawn twice: a clean copy on top (ink unobscured), the outlined copy below it;
@@ -26,11 +30,12 @@ ROWH, PAD = 58, 10
 OUT = os.path.join(HERE, 'strips_grp')
 
 
-def strip(line, x0, x1, allb, name, keyrows):
+def strip(line, x0, x1, allb, name, keyrows, out_dir=OUT, sel_range=None):
     im = Image.open(os.path.join(FOLDER, 'images/crops', f'p2_{line}.jpg')).convert('RGB')
     x0, x1 = max(0, x0), min(im.width, x1)
     crop = im.crop((x0, 0, x1, im.height)).resize(((x1 - x0) * SCALE, im.height * SCALE), Image.LANCZOS)
-    sel = sorted([b for b in allb if b['page'] == line and x0 <= b['x'] + b['w'] / 2 < x1], key=lambda b: b['x'] + b['w'] / 2)
+    s0, s1 = sel_range or (x0, x1)
+    sel = sorted([b for b in allb if b['page'] == line and s0 <= b['x'] + b['w'] / 2 < s1], key=lambda b: b['x'] + b['w'] / 2)
     fnt = font(28)
     # place each bar+number in the first row where it does not overlap anything already there
     rows, place, centres = [], [], []
@@ -65,7 +70,7 @@ def strip(line, x0, x1, allb, name, keyrows):
         d.rectangle((bx0, ry, bx1, ry + 6), fill=c)
         d.text((tx0, ry + 10), str(i), fill=c, font=fnt)
         keyrows.append((name, i, b['sid']))
-    out.save(os.path.join(OUT, name + '.png'))
+    out.save(os.path.join(out_dir, name + '.png'))
     return len(sel), len(rows)
 
 
@@ -73,8 +78,19 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--half', type=int, default=640, help='window width around the gate box centre (px, line-crop scale)')
     ap.add_argument('--check-key', action='store_true', help='exit 1 unless key.tsv equals atlas/strips/key.tsv')
+    ap.add_argument('--line', nargs='*', default=[], help='whole-line strips for these lines -> atlas/strips_all/ (no gate strips)')
     a = ap.parse_args()
     allb = boxes(); byid = {b['sid']: b for b in allb}; keyrows = []
+    if a.line:
+        out_dir = os.path.join(HERE, 'strips_all'); os.makedirs(out_dir, exist_ok=True)
+        for line in a.line:
+            for h, (x0, x1, s0, s1) in enumerate([(0, 1040, 0, 1025), (1010, 2050, 1025, 99999)], 1):
+                k, nr = strip(line, x0, x1, allb, f'{line}_h{h}', keyrows, out_dir, (s0, s1))
+                print(f'{line}_h{h} {k} boxes, {nr} label rows')
+        open(os.path.join(out_dir, 'key.tsv'), 'w').write('strip\tnum\tsid\n' + ''.join('\t'.join(map(str, r)) + '\n' for r in keyrows))
+        n = len({r[2] for r in keyrows}); nl = sum(1 for b in allb if b['page'] in a.line)
+        print(f'{len(keyrows)} numbered boxes, {n} distinct, of {nl} atlas boxes on these lines')
+        sys.exit(0 if n == len(keyrows) == nl else 1)
     os.makedirs(OUT, exist_ok=True)
     for n, sid in enumerate(GATE, 1):
         b = byid[sid]; c = b['x'] + b['w'] // 2

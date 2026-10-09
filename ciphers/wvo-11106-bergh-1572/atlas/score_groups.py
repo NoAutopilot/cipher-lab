@@ -8,8 +8,28 @@ a hit iff both passes give its group exactly one sign, the same after dropping '
 iff both give FRAG/OTHERLINE, or both put it in a group of >= 2 boxes labelled with one accepted parent sign. Missing = miss.
 atlas/group_sign.tsv (one row per numbered box: the group and label of each pass, agreed or split) is written only on PASS, or with
 --force for inspection; --check exits 1 if it is stale.
+group_sign.tsv carries a `job` column (BERGH-ALL1, 9 Oct 2026): this script owns the BERGH-GRP rows only and keeps every
+other job's rows (atlas/score_all.py) as they are; --check compares the BERGH-GRP rows only.
 """
 import csv, os, sys
+
+HEAD = 'sid\tstrip\tnum\tgroupA\tlabelA\tgroupB\tlabelB\tagreed_label\tstatus\tjob\n'
+
+
+def job_rows(path, job):
+    """(this job's row lines, every other job's row lines) from an existing group_sign.tsv (no job column = BERGH-GRP)."""
+    own, other = [], []
+    if os.path.exists(path):
+        for ln in open(path).read().splitlines(keepends=True)[1:]:
+            f = ln.rstrip('\n').split('\t')
+            (own if (f[9] if len(f) > 9 else 'BERGH-GRP') == job else other).append(ln)
+    return own, other
+
+
+def merge(path, job, lines, first):
+    """Write HEAD + BERGH-GRP rows + other jobs' rows, replacing this job's rows by `lines`."""
+    own, other = job_rows(path, job)
+    open(path, 'w').write(HEAD + (''.join(lines) + ''.join(other) if first else ''.join(other) + ''.join(lines)))
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SIGN = {'L15_01_013': {'3'}, 'L12_01_044': {'r'}, 'L20_01_006': {'4'}, 'L06_01_004': {'y', 'yx'}, 'L20_01_036': {'b'},
@@ -73,10 +93,10 @@ def main():
             lab_same = a is not None and b is not None and a[1] == b[1]
             res[sid] = (s, n, fa, a[2] if a else '-', fb, b[2] if b else '-', ha and hb and lab_same, a is not None and b is not None and a[0] == b[0])
     nk = len(key)
-    out = 'sid\tstrip\tnum\tgroupA\tlabelA\tgroupB\tlabelB\tagreed_label\tstatus\n' + ''.join('\t'.join(r) + '\n' for r in rows)
+    lines = ['\t'.join(r + ['BERGH-GRP']) + '\n' for r in rows]
     path = os.path.join(HERE, 'group_sign.tsv')
     if '--check' in sys.argv:
-        ok = os.path.exists(path) and open(path).read() == out
+        ok = os.path.exists(path) and open(path).readline() == HEAD and job_rows(path, 'BERGH-GRP')[0] == lines
         print('group_sign.tsv', 'current' if ok else 'STALE'); sys.exit(0 if ok else 1)
     hits = sum(v[6] for v in res.values())
     for sid in ORDER:
@@ -85,7 +105,7 @@ def main():
     print(f'gate: {hits}/19 (PASS needs >= 17); A/B agreement (same group and labels) on all {nk} numbered boxes: {agree}/{nk} = '
           f'{agree / nk:.3f}; agreed boxes in groups of >= 2: {multi}/{agree}')
     if hits >= 17 or '--force' in sys.argv:
-        open(path, 'w').write(out); print('wrote', path)
+        merge(path, 'BERGH-GRP', lines, True); print('wrote', path)
 
 
 if __name__ == '__main__':
