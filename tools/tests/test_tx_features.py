@@ -62,3 +62,40 @@ if __name__ == '__main__':
     for k, v in list(globals().items()):
         if k.startswith('test_'):
             v(); print('ok', k)
+
+
+def test_task1_names_no_sheet_or_cell():
+    t = T.task1_text(crops=['a_L01_s1.jpg'], raw='out.tsv')
+    assert 'sign_sheet' not in t and 'T18' not in t and 'cell' not in t.lower(), t
+    assert 'desc=none|short|long' in t
+
+
+def test_comply_cli():
+    d = tempfile.mkdtemp()
+    cells = os.path.join(d, 'c.tsv'); base = os.path.join(d, 'b.tsv'); raw = os.path.join(d, 'r.tsv')
+    ctrl = os.path.join(d, 'k.tsv'); mp = os.path.join(d, 'm.tsv')
+    open(cells, 'w').write('cell\t' + '\t'.join(T.FEATS) + '\nT18\tlong\tnone\t2\t2\t0\tupright\tnone\n'
+                           'T19\tnone\tlong\t1\t0\t0\tleft\tleft\n')
+    open(base, 'w').write('line\tpos\tsign\n' + ''.join(f'f178v_L01\t{i}\tT18\n' for i in range(1, 11)))
+    hdr = 'passage\tpos\t' + '\t'.join(T.FEATS) + '\tconf\tnote\n'
+    a = 'long\tnone\t2\t2\t0\tupright\tnone'; b = 'none\tlong\t1\t0\t0\tleft\tleft'
+    open(raw, 'w').write(hdr + ''.join(f'L01\t{i}\t{a if i % 2 else b}\tH\t\n' for i in range(1, 11)))
+    open(mp, 'w').write('tile\tcell\n1\tT18\n2\tT19\n')
+    open(ctrl, 'w').write(hdr + f'TILES\t1\t{a}\tH\t\nTILES\t2\t{a}\tH\t\n')  # tile 2 wrong on 6 features
+    args = ['comply', '--raw1', raw, '--base', base, '--cells', cells, '--control', ctrl, '--map', mp]
+    assert T.main(args) == 4  # control 1/2 = 0.5 < 0.7
+    open(ctrl, 'w').write(hdr + f'TILES\t1\t{a}\tH\t\nTILES\t2\t{b}\tH\t\n')
+    assert T.main(args) == 0
+    open(raw, 'w').write(hdr + ''.join(f'L01\t{i}\t{a}\tH\t\n' for i in range(1, 11)))  # constant -> (b) fails
+    assert T.main(args) == 4
+
+
+def test_task2_carries_feats():
+    d = tempfile.mkdtemp()
+    cells = os.path.join(d, 'c.tsv'); f1 = os.path.join(d, 'f.tsv'); out = os.path.join(d, 't.md')
+    open(cells, 'w').write('cell\t' + '\t'.join(T.FEATS) + '\nT18\tlong\tnone\t2\t2\t0\tupright\tnone\n')
+    open(f1, 'w').write('passage\tpos\t' + '\t'.join(T.FEATS) + '\tconf\tnote\nL01\t1\tlong\tnone\t2\t2\t2\tupright\tnone\tH\t\n')
+    assert T.main(['task2', '--crops', 'x.jpg', '--signsheet', 's.png', '--cells', cells, '--feats', f1,
+                   '--raw', 'o.tsv', '--out', out]) == 0
+    t = open(out).read()
+    assert 'L01\t1\tlong\tnone\t2\t2\t2+\tupright\tnone' in t and 'mismatch' in t
