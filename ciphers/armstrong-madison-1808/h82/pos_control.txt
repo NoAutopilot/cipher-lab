@@ -1,0 +1,12 @@
+ormonde tokens 343, letter tokens 276
+full length accuracy 0.800
+start 0 len 161 letters_scored 20 acc 0.850 null_mean 0.610
+start 25 len 168 letters_scored 20 acc 0.850 null_mean 0.540
+start 50 len 172 letters_scored 20 acc 0.850 null_mean 0.578
+start 75 len 172 letters_scored 20 acc 0.650 null_mean 0.568
+start 100 len 167 letters_scored 20 acc 0.750 null_mean 0.535
+start 125 len 165 letters_scored 20 acc 0.550 null_mean 0.598
+start 150 len 170 letters_scored 20 acc 0.700 null_mean 0.580
+start 175 len 164 letters_scored 20 acc 0.600 null_mean 0.540
+windows 8  mean acc 0.725  mean null 0.568  windows passing gate 4/8
+CONTROL BELOW GATE

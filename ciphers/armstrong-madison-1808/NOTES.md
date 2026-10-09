@@ -4305,3 +4305,26 @@ with three things this step cannot tell apart:
 It argues against a reading attack that relies on repeated phrases (crib pattern dragging, `--kwic` on repeated formulas,
 `running_key.py --drag`), because the target offers no repeats to anchor on. It leaves H82/H83 (frequency-band instruments,
 order-free) unaffected.
+
+## Campaign step H82 (2026-10-09 00:30 UTC)
+
+New instrument (TOOLS-TOMO, 8 Oct 2026): `tools/freq.py --contacts K --vowels` (Sukhotin vowel/consonant classing from a contact
+chart, Tomokiyo contact.htm). Shelf grade `weak`. It passed its own known-answer case at full length: Ormonde, 0.800 against an
+order-null of 0.545 (tools/tests/TT-FREQ-controls.tsv C4). Question: do the target's 48 low values (132 groups below 100) split into
+vowel-like and consonant-like classes, as a letter band would?
+
+**Positive control first** (CLAUDE.md rule 3, positive-control subsample). The control uses the same Ormonde known answer
+(`tools/tests/tt_freq_controls.py` parser and key), cut to contiguous windows of 132 letter tokens, the target's sub-100
+count. That is the favourable case. In Ormonde nearly every token is a letter and letters sit next to letters. In the target
+the 132 low groups are spread among 237 higher groups and 35 shorthand breaks. The gate is TT-FREQ's pre-registered C4 gate:
+accuracy at least 0.75, and at least 0.15 above the order-null mean. Script and output: `h82/pos_control.py`,
+`h82/pos_control.txt`.
+
+| windows | mean accuracy (20 top letters) | mean order-null | windows passing |
+|---|---|---|---|
+| 8 (step 25 tokens, 161-172 tokens each) | 0.725 | 0.568 | 4 of 8 (accuracy 0.55-0.85) |
+
+**Result: CONTROL BELOW GATE; the target was not run.** At the target's size the instrument does not recover the vowels of a
+known letter cipher reliably, even when the letters are contiguous. A Sukhotin labelling of the target's low band would
+therefore be a non-test at this N, whichever way it fell. Logged "untestable by this instrument at this N", not as a design
+negative. There is no reading and no class change. Vision 0, network 0.
