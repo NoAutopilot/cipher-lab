@@ -1,0 +1,50 @@
+# S2-NOTE normalisation map (TXE2-S2NOTE, 9 Oct 2026). Built read-free from two sources only: benchmark-tx/txeng2/s2read/sheet_SIGNS.md
+# (the S2 readers' sheet) and the label inventory with counts of benchmark-tx/outputs/vivonne1573-f103r-confirm2/committed.tsv.
+# Written and committed before the truth file or any per-position error was opened. Lines starting with # are ignored by tools/tx_bench.py.
+# Considered and NOT mapped (each a distinct glyph on both sides by the sources' own wording):
+#   z vs 3 -- sheet: '3 round-topped 3 with descender (write z only for a flat-topped z)'; committed uses both (3 x68, z x12): a glyph distinction, not notation.
+#   y vs V -- sheet describes y as 'the long swash y / ꝩ that starts with a lead-in stroke from the left' and V as 'a long backslash / V stroke'; committed uses both (y x57, V x61): distinct glyphs.
+#   ':' -- sheet: ': two dots side by side on the line' is ONE sign; committed carries ':' x156 as a sign: same status on both sides, nothing to map, never dropped.
+#   l vs L, p vs P, a vs @ -- the sheet lists each as a separate sign; committed uses both members of each pair.
+#   Z (x4), J (x1), t (x4), i (x2), w (x1) -- committed labels absent from the sheet; the sheet's wording does not say which sheet token they correspond to (Z could be z or 3; J could be j; t has no plain sheet token): left unmapped, listed as missing labels.
+#   committed tokenisation fragments 'non]', '{flourish' + 'cross}' (one sign split in two), and brace descriptors: multi-token or free-text, not a label rename.
+from	to	reason
+s	S	committed inventory has no lowercase s (0) and S x141; the sheet's two s-forms (plain 's' and 'S long s ſ') collapse to the committed's single s-class label S
+H	#	sheet: '#  the double-crossed sign like # / H / ‡' names H as a look of #; committed carries H x1 beside # x107
+a?	a	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is a with an uncertainty mark; notation, not a different sign
+b?	b	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is b with an uncertainty mark; notation, not a different sign
+c?	c	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is c with an uncertainty mark; notation, not a different sign
+d?	d	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is d with an uncertainty mark; notation, not a different sign
+e?	e	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is e with an uncertainty mark; notation, not a different sign
+g?	g	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is g with an uncertainty mark; notation, not a different sign
+h?	h	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is h with an uncertainty mark; notation, not a different sign
+j?	j	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is j with an uncertainty mark; notation, not a different sign
+k?	k	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is k with an uncertainty mark; notation, not a different sign
+l?	l	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is l with an uncertainty mark; notation, not a different sign
+m?	m	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is m with an uncertainty mark; notation, not a different sign
+n?	n	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is n with an uncertainty mark; notation, not a different sign
+o?	o	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is o with an uncertainty mark; notation, not a different sign
+p?	p	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is p with an uncertainty mark; notation, not a different sign
+r?	r	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is r with an uncertainty mark; notation, not a different sign
+s?	S	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is s with an uncertainty mark; notation, not a different sign
+x?	x	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is x with an uncertainty mark; notation, not a different sign
+y?	y	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is y with an uncertainty mark; notation, not a different sign
+z?	z	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is z with an uncertainty mark; notation, not a different sign
+tz?	tz	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is tz with an uncertainty mark; notation, not a different sign
+to?	to	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is to with an uncertainty mark; notation, not a different sign
+3?	3	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is 3 with an uncertainty mark; notation, not a different sign
+#?	#	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is # with an uncertainty mark; notation, not a different sign
+:?	:	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is : with an uncertainty mark; notation, not a different sign
+P?	P	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is P with an uncertainty mark; notation, not a different sign
+S?	S	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is S with an uncertainty mark; notation, not a different sign
+f?	f	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is f with an uncertainty mark; notation, not a different sign
+A?	A	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is A with an uncertainty mark; notation, not a different sign
+@?	@	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is @ with an uncertainty mark; notation, not a different sign
+V?	V	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is V with an uncertainty mark; notation, not a different sign
+R?	R	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is R with an uncertainty mark; notation, not a different sign
+L?	L	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is L with an uncertainty mark; notation, not a different sign
+2?	2	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is 2 with an uncertainty mark; notation, not a different sign
+4?	4	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is 4 with an uncertainty mark; notation, not a different sign
+6?	6	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is 6 with an uncertainty mark; notation, not a different sign
+7?	7	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is 7 with an uncertainty mark; notation, not a different sign
+8?	8	sheet: '?  after a token you are unsure of (e.g. "z?")' -- the token is 8 with an uncertainty mark; notation, not a different sign
