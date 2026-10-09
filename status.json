@@ -10995,6 +10995,47 @@
       "depth_sentence": "On 13 June 1864 Sheldon told Eckert that Butler could protect the line only from City Point to Fort Powhatan, that Bickford would close out the White House line, and that Grant's headquarters had moved.",
       "depth_check": "code clause: Blubber = City Point, Wicoff Vernon = West Point, Knox = Butler read passim; every graded line eye-checked on the page image; external (non-statistical): OR I/40 pt 2 p.372 Eckert to Caldwell 23 June 1864 (Bickford's party left White House; one operator to remain at Fort Powhatan), p.378 Caldwell 24 June, and Humphreys 21 June (Abercrombie at White House, Sheridan near)",
       "depth_note": "30 H + 1 C of 31 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM9b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM9b verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM9b)' section 4",
+      "reading_version": "FM-R6a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM9b) section 3",
+      "unresolved_spans": "none ('most of the [poles]': a word the writer left out)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Sheldon, Fort Monroe, to Maj. Eckert, 27 May 1864: a telegraph line to White House by Gloucester Point, the Mattapony and West Point (E302)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Sheldon at Fort Monroe answered Eckert's question on a telegraph line to White House, proposing to cross at Yorktown to Gloucester Point and run by road to the Mattapony and West Point; the next day's exchanges on the same route are printed in the Official Records (ser. I vol. 36 pt 3), this telegram was not located there, in Grant's or Butler's papers or in the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 one audit (FV-FM9b); not N4: Grant Papers vol. 11 by be-api snippets only, NARA RG 107 and Google Books not searched",
+      "depth": "D3",
+      "completeness": "44 H of 44 code-word groups ('White' x3, 'Chicken', 'pony' x2 plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.153, pointer 5697, E302"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.153, pointer 5697, E302",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.153, pointer 5697, E302"
+      ],
+      "depth_sentence": "On 27 May 1864 Sheldon, the telegraph manager at Fort Monroe, proposed building the line to White House by crossing at Yorktown to Gloucester Point and running by road to the Mattapony and West Point, noting that the old chestnut poles on the railroad were still standing and that he had very little wire.",
+      "depth_check": "code clause: Hagar/Homer = West Point, Hastings = Yorktown, Hebrew/Hindoo = Williamsburg, vernon = Point, lamp spoons = 30 miles; external (non-statistical): OR I/36 pt 3 p.262 Butler to Sheldon 28 May (Gloucester Point, West Point, Mattapony) and Eckert to O'Brien 27 May ('Confer with Sheldon'), pp.280-281 Sheldon to Butler and to Eckert 28 May (Williamsburg, Yorktown, West Point routes)",
+      "depth_note": "44 H of 44 code-word groups ('White' x3, 'Chicken', 'pony' x2 plain)"
     }
   ],
   "lanes": [

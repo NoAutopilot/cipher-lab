@@ -10068,3 +10068,130 @@ zodiac our Whist are in line of pardon". E305: `white` plain (White House). E306
 (writes); drop the closing "16" (marginal count). Header note for E304: clear copy received 4.55 PM.
 Requests: hdl.huntington.org 21 (2 dmGetItemInfo, 15 CONTENTdm queries, 4 IIIF pages); archive.org 4 (2 metadata, 2 djvu downloads); no
 other hosts.
+
+## AUDIT (FV-FM9b)
+
+Verifier FV-FM9b (account 1, for LANE LEDGER), 9 Oct 2026, 14:31-14:5x UTC by `date -u`; a separate session from the reader FM-R6a (account 1),
+not protecting its conclusions. Scope: **E300, E301, E302, E303** (NOTES "## FM-R6a"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 =
+Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all four: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts: `fortmonroe/fv_fm9b_hdl.py` (+ `fv_fm9b_hdl.out`: CONTENTdm full text across all pointers, 13 queries, item info 10435, four page images at
+2400 px to scratch), `fortmonroe/fv_fm9b_print.py` (+ `.out`: letters-only phrase grep over the 164 cached print-check volumes plus OR I/39 pt 3
+`warofrebellion393unit` and OR I/36 pt 3 `warofrebellion363unit` fetched to scratch, 2 archive.org downloads); be-api Grant Papers vol. 11
+(`papersofulyssess0011gran`): `"Gloucester Point" Sheldon` 1 hit (index only, p.87, not this telegram), `chestnut poles` 0, control `Spotsylvania` 1.
+
+### 1. Duplicates, prior work, image
+- **Duplicate diff:** pointers 5639, 5764, 5697, 5797 and the clear-copy pointers 4582, 10435 against every `###` header in ciphertext*.txt and
+  status.json: 5797 also carries E255, which is row **5797/0** (Van Duzer, 17 Oct 8 PM, N1 OR I/39 pt 3 p.334), a different entry from E303 (row
+  5797/1); 5798 carries E285 (row 5798/2, Porter, 27 Oct), not E303's continuation. 4582 and 10435 occur in no header. **No duplicate.**
+- **Prior work:** `tools/prior_work.py eckert-1864 --item ...` refuses (no `ciphers/eckert-1864/items.tsv`), so by hand (civil-war adapter): own work
+  (pointers grepped in ciphertext*, NOTES, AUDIT, status.json: only FM-R6a's own filing); no AUDIT.md/status.json class on any of the four before
+  this section; Tomokiyo and cached solver files have no Eckert ledger items; aaymeloglu not cloned (UNCHECKED-NET, as FV-FM9a).
+- **Image eye check this session** (2400 px pages to scratch; `tools/iiif_lines.py --image --region` crops for 5639 and 5764; on 5697 and 5797
+  the tool found one line on the ruled page, so fixed 370 px bands cut with PIL from an autocontrasted copy): **E300** header + 6 lines + Sheldon,
+  **E301** header + 6 lines, **E302** header + 20 lines (the last three written small at the foot) + Sheldon, **E303** header + the 12 lines on
+  p.253. **The transcription matches the image word for word on all four** (E300 "sweden ... relayed", "perfume Mandate Zodiac", "Talbot"; E301
+  "Washington" in the address line, "Flag ship Malvern Farrars sidney Reliance harrow"; E302 "Chicken hominy", "Glow sister Vernon", "Mattie pony",
+  "Johns venus", "Chesnut"; E303 "snake creek pass", "reese sacky zodiac"). Not eye-checked: E303's tail on p.254 (pointer 5798), "and move
+  according ..." to "B. B. Glass"; the printed text in s.2 covers it.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the hdl token 14:36-14:38 UTC):
+Plymouth evacuated 1 (**4582**), rebels leaving North Carolina 3 (**4582**; 2512, 4555 other dates), Secy of Navy Plymouth 6 (**4582**; others
+other dates), Gloucester Point Mattapony 0, chestnut poles 3 (5697 own; 13721, 13734 = Jan 1865 pole purchases), West Point depot 10 (none a copy
+of E302; 10363 = Butler to Halleck 27 May on West Point as landing), Hood contemplates invasion 0, Roddeys force Tuscumbia 0, Roddys force 0, Ship
+Gap Snake Creek 1 (5797 own), first positive fact 1 (own), Deserters from Hoods army 0, construction corps tunnel Resaca 0.
+- **E300 -> pointer 4582 (Page 141 of the Washington clear telegram book), period clear copy of the whole entry, word for word:** "Apr 29 5.15 PM
+  Fort Monroe Va Apr 29th For Secy Navy ---- I am just informed by Gen Butler that he has information that Plymouth is evacuated and rebels are
+  leaving N.C. (sig) S.P. Lee 2 PM. via Ft Monroe three fifty . Another for Major Eckert . please let me know what I am to do in this moment if
+  any thing no time to spare". FM-R6a searched the cipher words ("plymouth relayed leaving") and so missed it. Lee's telegram is also printed:
+  **ORN ser. I vol. 9 p.707** ("Newport News, Va., April 29, 1864 -- 2 p. m. (Via Fort Monroe 3:30. Received 5:15.)"); OR I/33 p.1009-1010 and
+  Butler IV print Butler's 28 April note to Lee (the source of the news), not the telegram.
+- **E301 -> pointer 10435 (Page 293), clear copy, word for word** (as FM-R6a found): "Ft Monroe June 21st 1864 Flag Ship "Malvern" Farrars Island
+  1030 pm 20th via Ft Monroe 6 pm June 21st for Secy of Navy Washn ---- No change in the naval situation Report from the army Look = out that
+  the rebel Iron clads are taking on board sand in bags ---- S. P. Lee". Printed: **ORN ser. I vol. 10 p.162** ("Flagship Malvern, Farrar's
+  Island, June 20, 1864 -- 10:30 p. m. (Received 7 p. m., 21st.)").
+- **E303 -> printed in two parts, OR ser. I vol. 39 pt 3:** **p.332**, "Nashville, Tenn., October 17, 1864. Maj. Gen. H. W. Halleck, Washington,
+  D. C.: The following dispatch has been received from Major-General Sherman: * The necessary orders have been given for the repair of the
+  railroad. Deserters from Hood's army report his force at about 30,000; the strength of his cavalry force not known. No additional news from
+  the Tennessee River, except that Roddey's force moved from Tuscumbia to Courtland yesterday. Geo. H. Thomas ... (Same to Lieut. Gen. U. S.
+  Grant.)", with the footnote "* See Sherman to Schofield, October 16, 5 p. m., p. 311"; and **p.311**, "Near Villanow, Ga., October 16, 1864
+  -- 5 p. m. Major-General Schofield: We took Ship's Gap to-day, capturing a part of the Twenty-fourth South Carolina. Two corps are represented
+  at La Fayette and one went south from Villanow. They obstructed Snake Creek Pass to delay our trains, but by to-morrow I can move in any
+  direction. I want the first positive fact that Hood contemplates an invasion of Tennessee; invite him to do so. Send him a free pass in.
+  Re-occupy the railroad, and put the construction corps to work to repair the break from the tunnel to Resaca. I will get my trains up here
+  and move according to the best information I can get. W. T. Sherman". E303 is the Grant copy of Thomas's telegram with Sherman's message in
+  full. Differences of the cipher entry from print, plain words only: "no additional move" (print "news"), no "to Courtland", "to invite him
+  ... and with a free pass in" (print "invite him to do so. Send him a free pass in"). FM-R6a's be-api queries on this volume returned 0 (two
+  502s); the djvu text has it.
+- **E302 -> no clear copy and no print of the telegram located.** Context printed in OR I/36 pt 3: p.262, Eckert, Washington, 27 May, to R.
+  O'Brien at Butler's headquarters ("The line from Williamsburg to White House and beyond is of greatest importance ... Confer with Sheldon as
+  to plans and route") and Butler to Sheldon, 28 May ("the telegraph route most easily protected would be across the York at Gloucester Point,
+  thence up to West Point, thence across the Mattapony"); pp.280-281, Sheldon to Butler, 28 May (two routes, "by the old road from Williamsburg
+  direct to White House ... or across at Yorktown and up north side York River, crossing the Mattapony to West Point"), Sheldon to Eckert, 28
+  May (Carr: "the old road from Williamsburg to West Point the best"). These answer the same question as E302 a day later and agree with its
+  readings Williamsburg (Hebrew, Hindoo), Yorktown (Hastings), West Point (Hagar, Homer), O'Brien; E302 itself is not among them. Eckert's
+  question stands clear at pointer 5696 (p.152, the page before). Phrase grep "If White House is made the base of supplies", "chestnut poles",
+  "have not rotted down", "very little wire on hand" 0 in 166 volumes; Grant Papers vol. 11 be-api 0 (above).
+- Not searched: the press of the day (none of the four is a press telegram), Google Books (not probed), NARA RG 107 telegrams, Grant Papers vol. 11
+  beyond be-api snippets (E302).
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E300 (clear copy 4582):** Burton = Secy Navy, unity/Zodiac/Zebra = punctuation, Knave = Gen Butler, sweden = information, relayed =
+  evacuated, Walnuts = rebels, abacus = N.C., Webster = sig, Neptune = S.P. Lee, Helen = 2 PM, peasant = via, Appian = Ft Monroe, Tappan =
+  Major: C. **"perfume Mandate" = three fifty** (the time via Fort Monroe, 3.50; perfume = 3, Mandate = 50 as in E299), not the decoder's
+  "[53]". **Talbot** = Movement (key) where the holder's copy reads "moment" (a slip in the clear copy or its transcription; "this movement"
+  is the sense): H. **C 17, H 1 of 18 code groups.** Note ORN prints "Via Fort Monroe 3:30"; the two period copies read three fifty.
+- **E301 (clear copy 10435):** **"Washington" and "Flag" are plain**, not Volunteer and 11: "Washington" is the address line under "Maj. Eckert"
+  (image), "Flag" opens "Flag ship Malvern". sidney = Island (key row "Inland", decoder adds [sic]; the clear copy reads Island), Reliance = 10.30
+  PM, harrow = 20, peasant = via, appian = Ft Monroe, Libby = 6 PM, harsh plug = 21, Buxton = Secy of Navy, growl = Washn, sligo = In the, wick
+  saxon oyster = Report from the army, walnut = rebel, walrus = signed, Neptune = S. P. Lee, zebra/unity = punctuation: **C 19 of 19 code groups**
+  (21 minus the two slips). "ironic lads" = iron clads (plain, phonetic).
+- **E303 (print OR I/39 pt 3 pp.311, 332):** **"snake" is plain, Snake Creek Pass**, not Snake = Head Quarters (image "snake creek pass"; print
+  "Snake Creek Pass"). Confirmed by print, C: Embrace = Nashville, glory = 17, Kennebec x2 = Sherman, gas = 16, Lucy = 5 PM, wedge = to-day,
+  piloting = capturing, harsh penny = 24, avon = South Carolina, peach = 2, pelton/pelham = Corps, dublin = La Fayette, plug = 1, waxy = south,
+  whelp = to-morrow, handle = Hood, bethel x2 = Tennessee, weldon x2 = railroad, torch = of the, poplars = Deserters, opal = Army, salem x3 =
+  force, laugh purple = 30,000, panama = cavalry, windpipe = River, gregory = Tuscumbia, Lady = Thomas, Judah = Grant ("Same to ... Grant"):
+  36. H (no print counterpart): Julia = 4 PM, Ivory = General-in-Chief, growl = Washington, yoke and walrus = signed, unity x2, pekin, zodiac,
+  zebra = punctuation: 10. **C 36, H 10 of 46 code groups.** "hudsons" = Hood's, "reese sacky" = Resaca, "villanou" = Villanow (plain).
+  "for [General-in-Chief] [Washington]" stands as read (H); the print sends the same text to Halleck, Washington, and Grant.
+- **E302 (no clear copy):** **"White" x3 is plain, White House**, not White = Report (image "White House" each time; FV-FM9a found the same slip in
+  E291). **"Chicken" is plain, Chickahominy** ("Chicken hominy"), not Chicken = Huntsville. **"pony" x2 is plain, Mattapony** ("Mattie pony"),
+  not pony = 9. Rest H, the places agreeing with the printed context: Hagar/Homer = West Point, queenly = Depot, questioned = Destroyed, Hebrew/
+  Hindoo = Williamsburg, peasant = via, torch = Of the, saddled = Guarded, plum/pocket = Cross, Hastings = Yorktown, vernon = Point (Glow sister
+  Vernon = Gloucester Point), wiley/windham = Road, lamp spoons = 30 miles, weldon forbid spoons = railroad 12 miles, welch = railroad, Johns venus
+  = Grant's position, pedlar/pekin = comma, unity/zebra/zodiac = period, sugar = question mark. **H 44 of 44 code groups** (50 minus the six slips). "I think
+  most torch on the welch are standing" reads "most of the [poles] on the railroad", a word the writer left out, not a gap in the key.
+  Read: "If White House is made the base of supplies, West Point will also be made a depot and an office there will be a great convenience.
+  The old line was all destroyed last year, a new line must be built. If it is extended from Williamsburg up the Peninsula either to White
+  House direct or via West Point, the whole line of the Chickahominy must be guarded to protect it from raiders. Why not cross at Yorktown to
+  Gloucester Point, thence by a direct road to the Mattapony, and cross to West Point? Distance from Gloucester Point to the Mattapony about 30
+  miles; road is good and direct; from West Point to White House on railroad 12 miles. I think most of the [poles] on the railroad are standing;
+  they are fine large chestnut poles and have not rotted down. The distance via Gloucester Point is very little more than from Williamsburg up
+  the Peninsula, and by Grant's position the route must be pretty secure; office at Gloucester Point will also be convenient. Have asked O'Brien
+  about material, think he must have considerable; I have very little wire on hand now. Geo D Sheldon."
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E300 | **N1** (text known) | period | D3 (C 17, H 1 of 18; external: holder's clear copy 4582) | plaintext already published by the holder (Huntington transcription, pointer 4582) and, for Lee's message, ORN ser. I vol. 9 p.707 |
+| E301 | **N1** (text known) | period | D3 (C 19/19; external: holder's clear copy 10435) | holder's clear copy, pointer 10435; ORN ser. I vol. 10 p.162 |
+| E303 | **N1** (text known) | period | D3 (C 36, H 10 of 46; external: the print) | OR ser. I vol. 39 pt 3 p.332 (Thomas to Halleck, "Same to ... Grant") with Sherman's message at p.311 |
+| E302 | **N3** | period | **D3** (H 44/44 of code groups; external non-statistical: OR I/36 pt 3 pp.262, 280-281 print the same question and the same routes, places and O'Brien a day later) | no prior plaintext or decipherment located after the search in s.2 |
+
+- Not N4 for E302: Grant Papers vol. 11 by be-api snippets only; NARA RG 107 and the Military Telegraph's own reports not searched; Google Books
+  not probed.
+- **Safe sentences.** E302: "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Sheldon at Fort Monroe answered Eckert's question
+  on a telegraph line to White House, proposing to cross at Yorktown to Gloucester Point and run by road to the Mattapony and West Point; the
+  next day's exchanges on the same route are printed in the Official Records (ser. I vol. 36 pt 3), this telegram was not located there, in
+  Grant's or Butler's papers or in the Huntington's full-text search (searched 9 Oct 2026)." E300, E301: "A clear copy is in the Huntington's own
+  transcription (pointer 4582 / 10435) and Lee's message is printed in ORN; our reading of the cipher entry agrees with it." E303: "The text is
+  printed in the Official Records, ser. I vol. 39 pt 3, pp.311 and 332; our reading of the cipher entry agrees with it."
+- **Unsafe:** any "first", "new", "unpublished" for E302; any novelty at all for E300, E301, E303.
+
+### 5. Fixes for the next FIX job (FIX-FM10; not applied here; reading.md is decode.py output)
+E300: "perfume Mandate" = three fifty (time 3.50), not [53]; header: clear copy at pointer 4582, Page 141 (the header's "no clear copy found" is
+wrong). E301: `Washington` (address) and `Flag` plain, not Volunteer/11. E302: `White` plain x3 (White House); `Chicken` plain (Chickahominy);
+`pony` plain x2 (Mattapony). E303: `snake` plain (Snake Creek Pass); header: printed OR I/39 pt 3 pp.311, 332 (the header's "no print found" is
+wrong).
+Requests: hdl.huntington.org 18 (13 CONTENTdm queries, 1 item info, 4 IIIF pages); archive.org 2 downloads; be-api 3 (2 + 1 control).
