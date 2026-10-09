@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L29	23	m	M	yes	plain three-hump m after curl
+f102r_L29	30	@	H	yes	curl at s1 right edge, same as s2 start
+f102r_L29	31	m	M	yes	m following the curl
+f102r_L29	42	y	L	yes	p-like body with lead stroke after m
+f102r_L30	1	@	H	yes	large curl at line start
+f102r_L30	2	m	M	yes	m after curl
+f102r_L30	5	y	M	yes	y-like swash after m
+f102r_L30	6	{tilde}	M	yes	flat tilde-like stroke with small i
+f102r_L30	16	c	L	yes	small open c-like sign before d
+f102r_L30	23	a	L	yes	small a/c-like sign before d
+f102r_L30	27	@	H	yes	curl at start of s2 segment
+f102r_L30	28	m	M	yes	m after curl
+f102r_L30	31	{dot}	M	yes	dot after tz
+f102r_L30	44	3	L	yes	round-topped descending sign after d
+f102r_L30	51	6	L	yes	6-like loop sign before V
+f102r_L30	53	{dot}	M	yes	final dot at line end

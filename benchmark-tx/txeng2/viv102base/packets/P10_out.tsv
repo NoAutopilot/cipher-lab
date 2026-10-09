@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L24	40	V	M	yes	long backslash stroke joined to next
+f102r_L25	3	y	M	yes	swash y with lead-in stroke
+f102r_L25	13	NONE	M	yes	big left curl belongs to the curled m, no separate a
+f102r_L25	14	{curled m}	M	yes	m with large left flourish loop
+f102r_L25	17	{dot}	M	yes	single dot after tz
+f102r_L25	22	NONE	M	yes	only a tail stroke after 6, no sign
+f102r_L25	26	3	M	yes	round top with descender before o o d
+f102r_L25	36	NONE	M	yes	curl is part of curled m
+f102r_L25	37	{curled m}	M	yes	m with left flourish
+f102r_L25	45	s	L	yes	small s with trailing tail
+f102r_L25	47	c	M	yes	open c shape not closed a
+f102r_L25	48	s	L	yes	s with tail before g
+f102r_L25	52	NONE	M	yes	curl is part of curled m
+f102r_L25	53	{curled m}	M	yes	m with left flourish
+f102r_L25	55	{hook}	L	yes	hooked stroke at right edge after 2
+f102r_L26	2	j	M	yes	j with descender after m

@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L27	50	:	M	yes	small dot pair/mark after final tz at line end
+f102r_L28	3	{dot}	L	yes	single small dot after the 2-like sign
+f102r_L28	7	z	M	yes	flat-topped z after yoo
+f102r_L28	8	c	L	yes	small curl/c-like before d
+f102r_L28	21	a	M	yes	small a-like loop between tz and moo
+f102r_L28	25	z	M	yes	z after moo, flat top
+f102r_L28	27	NONE	M	yes	nothing between tz and g
+f102r_L28	30	NONE	M	yes	curl belongs to following curled m
+f102r_L28	31	{curled m}	M	yes	m with large left curl
+f102r_L28	34	y	L	yes	j/y-like stroke after m
+f102r_L28	35	{tilde}	L	yes	small tilde stroke after y
+f102r_L28	38	y	L	yes	j/y-like stroke after m
+f102r_L28	39	{tilde}	L	yes	small tilde stroke after y
+f102r_L29	8	3	L	yes	round-topped z-like after tz s
+f102r_L29	18	3	M	yes	round-topped 3 after oom
+f102r_L29	22	NONE	M	yes	curl is part of following curled m
