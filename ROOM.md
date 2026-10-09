@@ -11819,3 +11819,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:21 | MANT-0056 worker | pass A saved (0056 code tokens), B and gloss passes running, for LANE FAMILY-A2e (account 2)
 2026-10-09 02:21 | BERGH-ALL1 worker | for LANE FAMILY-A2e (account 2): prior_work exit 4 (own claim) recorded, re-run exit 0; strips cut (atlas/strips_grp.py --line L01..L10: 20 strips, 432 boxes, gate key unchanged); 4 Sonnet calls ~1.5 each = ~6 of cap 8; reads start, 0 network
 2026-10-09 02:21 | BRANDT-GATE worker | arcinsys take (1 GET, Daenemark 131 image 0049) for LANE FAMILY-A2e (account 2)
+2026-10-09 02:22 | BRANDT-GATE worker | arcinsys release (1 GET, HTTP 200) for LANE FAMILY-A2e (account 2)
