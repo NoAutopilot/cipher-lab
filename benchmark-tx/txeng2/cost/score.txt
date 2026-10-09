@@ -1,0 +1,16 @@
+dint-f128-print [dev] err_true 0.318 (27/85) 95% 0.228-0.423 | wrong 17 deleted 1 inserted 9 | excluded 98 | lines missing 0
+  top confusions (truth value <- read): m<-Z x3, o<-9 x3, n<-NEW:z-with-crossbar x2, t<-z x1, i<-T x1, n<-t x1, u<-c x1, i<-1 x1
+split dev: err_true 0.318 (27/85) 95% 0.228-0.423
+paired out_armA.tsv vs passB.tsv on dint-f128-print: 85 common scored signs; base wrong 11, output wrong 18; fixed 3, broken 10; sign test p = 0.0923
+dint-f128-print [dev] err_true 0.235 (20/85) 95% 0.158-0.336 | wrong 16 deleted 0 inserted 4 | excluded 98 | lines missing 0
+  top confusions (truth value <- read): i<-1 x3, m<-Z x2, t<-z x2, n<-4 x2, o<-NEW:c-with-tail x2, n<-4' x1, n<-NEW:R-with-crossbar x1, n<-NEW:r-overbar-with-dagger-below x1
+split dev: err_true 0.235 (20/85) 95% 0.158-0.336
+paired out_armB.tsv vs passB.tsv on dint-f128-print: 85 common scored signs; base wrong 11, output wrong 16; fixed 5, broken 10; sign test p = 0.3018
+dint-f128-print [dev] err_true 0.247 (21/85) 95% 0.168-0.348 | wrong 12 deleted 2 inserted 7 | excluded 98 | lines missing 0
+  top confusions (truth value <- read): n<-t x3, n<-y x2, i<-x x2, e<-<deleted> x1, n<-4 x1, u<-c x1, n<-<deleted> x1, g<-o x1
+split dev: err_true 0.247 (21/85) 95% 0.168-0.348
+paired passA.tsv vs passB.tsv on dint-f128-print: 85 common scored signs; base wrong 11, output wrong 14; fixed 1, broken 4; sign test p = 0.3750
+dint-f128-print [dev] err_true 0.188 (16/85) 95% 0.119-0.284 | wrong 11 deleted 0 inserted 5 | excluded 98 | lines missing 0
+  top confusions (truth value <- read): i<-x x2, n<-0 x1, n<-4 x1, n<-# x1, n<-p x1, g<-0 x1, i<-1 x1, e<-0 x1
+split dev: err_true 0.188 (16/85) 95% 0.119-0.284
+paired passB.tsv vs passB.tsv on dint-f128-print: 85 common scored signs; base wrong 11, output wrong 11; fixed 0, broken 0; sign test p = 1.0000
