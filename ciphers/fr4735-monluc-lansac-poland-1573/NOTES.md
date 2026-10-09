@@ -442,3 +442,39 @@ the null re-picks the max group per shuffle). Statistic: t-faced K07 tiles in X 
 p < 0.05. Secondary: Cohen's kappa of the blind groups against MONLUC-2's A/B (split_c172.tsv `blind`).
 (3) *--try*: only if (1) and (2) pass: scratch copy of ciphertext_c172.tsv with X's tokens relabelled K69, `tools/decode_key.py
 <scratch> --try K69=t` with its own two nulls; accept = M. key.tsv not edited; a transcription relabel only if --try accepts.
+**Result of the blind sort** (one Sonnet call, sheet only; per tile in `f86_k07_sort.tsv`). A "flat-bar Z, no loop" 7 (tiles of
+L02:7, L02:23, L03:45, L03:50, L04:7, L04:27, L04:30); B "curled/hooked top, rounded lower stroke" 6 (L02:1, L02:31, L03:6, L03:39,
+L03:56, L04:22); C "compact angular z, short top tick" 4 (L02:20, L03:19, L03:22, L03:30); ? the K38 tile ("overlapped by an arc and a
+neighbouring sign"). The sorter called A/B "a judgment call" for three tiles and said A, B, C "may be one sign in different hands or
+states". (1) *Split*: yes by the registered count (7/6/4). (2) *Gate*: the K38 tile fell in ?, so X = the group with most t-faced
+tiles = B (t 5 of its 6 aligned; A t 1 of 5; C t 1 of 3); with the max group re-picked per shuffle, **p 0.063, null p95 5 = observed:
+FAIL** (p >= 0.05). (Fixed-X=B p 0.049 is reported only; it is not the registered statistic.) Kappa against MONLUC-2's blind A/B
+(B+C vs A collapsed): 10/14 agree, kappa 0.43. (3) *--try not run* (gate failed, per pre-registration); key.tsv, ciphertext_c172.tsv
+unchanged.
+**Reconciliation (this worker, NOT blind: I knew the faced letters).** At 2x on one sheet, 10 of the 18 tiles show a large open
+C-curl round the Z from lower left (`curl_reader` column), the same construction as the key sheet's K38 cell (C-curl enclosing a z,
+table t) and as the c268 C-curl group that MONLUC-BLIND's sort found and --try read t. The sorter did not treat the curl as part of the
+sign (it grouped on the top stroke). Curl tiles face t 6 of 8 aligned (n 1, s 1); no-curl tiles face t 1 of 6 (g 5); one-sided
+Fisher p 0.051, also short of 0.05, and non-blind -- so this is a lead, not a result. The curl also reproduces MONLUC-2's earlier
+blind A/B on 12 of 14 tiles (A = curl), which suggests MONLUC-2's split was this curl rather than the top stroke. Whether the curl
+belongs to the sign or is a stroke from a neighbour (line above, interlinear gloss) is not settled by these crops.
+Requests: none to any host. Subagents: 1 (Sonnet, blind sort).
+
+## Remaining gaps (MONLUC-F86, 9 Oct 2026)
+Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against its own gloss (MONLUC-KEY), unchanged; c268 lines 1-5 decoded with 10 C-curl tokens relabelled K38 = t (M), ungraded; judge FAIL -1.300.
+- f.86 K07 curl vs plain - blocker: not-attempted; a blind shape sort of the f.86 K07 crops alone split them 7/6/4 but its gate failed (p 0.063) and it did not use the curl; the curl (non-blind) faces t 6/8 vs 1/6, p 0.051; next: one value-blind sorter call asked a binary feature question per tile ("is the centre sign enclosed by a large open curl that joins it?") on wider crops that show where each curl starts, then the same gate with X = curl-present, ~$0.5
+- c268 transcription noise (27% pass disagreement) - blocker: not-attempted; the C-curl part is now corrected; next: tools/lookalike_pass.py on c268 passes A/B with K38 as its own label, then the sorter's focus.tsv for the owner, ~$1
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py)
+- in-volume decipherment of ff.132-138 - blocker: not-attempted; f.139 opening tested and not matched; next: look at ff.140-141 and items 17/18/112-120 for a Monluc 28 Apr text, ~$1
+- rest of c268, c264, c258 and f.210 - blocker: not-attempted; wait on the look-alikes and a calibrated test; next: the 3-unit protocol per 5-10 lines once a positive control passes, ~$3 per leaf
+- ff.211-223, f.87 margin, ff.50/56/60/80 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONLUC-F86, 9 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [ ] clear-pages: remaining clear leaves untested; planned step: ff.140-141 look
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell (MONLUC-KEY), per sign form on f.86 (MONLUC-2) and c268 (MONLUC-K07); the C-curl form matched to the table's K38 (MONLUC-BLIND)
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found
+- [x] key-rebuild: c268 C-curl = K38 = t relabelled in ciphertext_c268.tsv (MONLUC-RELABEL); key.tsv unchanged
+- [ ] image-check: f.86 K07 blind-sorted alone (this pass, gate FAIL); planned step: binary curl-present sort on wider crops
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 5 internal gaps; cheapest next: binary curl-present blind sort of the f.86 K07 tiles on wider crops, ~$0.5

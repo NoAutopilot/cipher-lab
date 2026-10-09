@@ -1,0 +1,21 @@
+# MONLUC-F86 9 Oct 2026: blind Sonnet sort of 18 f.86 tiles (17 K07 + K38 L03:18), sheet by f86_sort_sheet.py seed 886 (scratch only)
+# blind groups: A flat-bar Z (7), B curled/hooked top 2/3 (6), C compact angular z (4), ? K38 overlapped; m2 = MONLUC-2 blind A/B; curl_reader = this worker, NOT blind (knew faced letters): large C-curl round the sign
+tile	line	pos	cell	gloss_faced	blind	m2	curl_reader
+1	L02	1	K07	t	B	A	1
+2	L03	50	K07	g	A	B	0
+3	L02	7	K07	g	A	B	0
+4	L03	22	K07		C	A	1
+5	L04	30	K07	g	A	B	0
+6	L02	23	K07	g	A	B	0
+7	L03	45	K07	t	A	A	1
+8	L04	22	K07	t	B	?	0
+9	L03	18	K38		?		1
+10	L03	19	K07	n	C	A	1
+11	L04	27	K07		A	B	0
+12	L03	6	K07	t	B	A	1
+13	L03	56	K07	g	B	B	0
+14	L03	39	K07	t	B	?	1
+15	L03	30	K07	t	C	?	1
+16	L02	31	K07	t	B	B	1
+17	L02	20	K07	s	C	A	1
+18	L04	7	K07		A	A	0
