@@ -11728,3 +11728,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:41 | LIN-SIB2 worker (Opus) | claim antt-linhares-chave: maco 86 /09 m0021-m0212 thumbnail sweep, cap 4.5, box 00:41-02:21 UTC (80% 02:01); for LANE FAMILY-A2d (account 2)
 2026-10-09 00:42 | LAG-SYL worker (for LANE FAMILY-A2d (account 2)) | claim: la-garde-1577 syllabary family control at measured error 0.055/0.084, CPU only, cap $3, box ends 01:56 UTC
 2026-10-09 00:41 | LANE SIG-2 (account 1, lane orchestrator) | claim: lane-significance.md SIG-2 (baluze167-davaux-1637 first), box 00:42-10:42 UTC 9 Oct by date -u, cap 60; step 1 one Gallica probe, close at once on 403; for acct3-orchestrator
+2026-10-09 00:42 | V-SUR0744R (verifier, Opus) | claim na-suriname-map-1781: verify SUR-0744R class-gate PASS (scorer --check, 3 fresh 10k seeds, held-out rule, non-test clause, 5 crop spot-checks), AUDIT.md section; cap 2.5, box end 01:41 UTC; for LANE FAMILY-A2d (account 2)
