@@ -1,0 +1,110 @@
+X1 tokens=96 no1=40(0.42) no2=43(0.45) no9=18(0.19)
+  no1: H38 C0 I0 M0
+    [Washington] {time: 1 PM} [17] for [West] [Macon] [.] The [Quartermaster] [Department] says that theres plenty of shady at [Port Royal] and all [Available] means [Rhode Island] opera shine to get it to you [.] [Major] Thomas asst [Quartermaster] [,] [Department] [Of the] [South] leaves [New York] [Today] with funds and on your requisite shine will supply your temper airy wants [.] send your esteem mates for funds tooth [Qr Master Genl U.S.] and funds wilby for worded you Ewell remain with that part of your [Command
+  no2: H37 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 1.30 PM} [Across] for [Drove in our Pickets] [Kingsville] unity The [Rifle Pits] [Deserter] says that theres plenty of shady at [Martinsburg] and all [Steele Fdk] means [Bear] opera shine to get it to you [1000] [Our lines] Thomas asst [Rifle Pits] [Cavalry] [Deserter] [Pursue (-ed, -ing)] [Subsist (-ed, -ing)] leaves [Macon] [Troops] with funds and on your requisite shine will supply your temper airy wants [Sunday] send your esteem mates for funds tooth [Secretary of Treasury] and fun
+  no9: H18 C0 I0 M0
+    Growl {time: 1 PM} Glory for [Invested] Dismal unity The [Quartermaster] quadroon says that theres plenty of [Island] at florida and all nutmeg means [Sec. of War] opera shine to get it to you [Movement] Taunton Thomas asst [Quartermaster] pedlar quadrant torch [Offensive] leaves [Arkansas (river)] [Subsistence] with funds and on your requisite shine will supply your temper airy wants [Movement] send your esteem mates for funds tooth belcher and funds wilby for worded you Ewell remain with that part of your polka t
+  no1shuf: H37 C1 I0 M0
+    [Gen J. M. Palmer] {time: 1 PM} [17] for [Itercept [sic] (-ed, -ing)] [Pending] [.] The [Coosa] [Abandon (-ed, -ing)] says that theres plenty of shady at [Wheeler] and all [Kanawha] means [Maj Gen O. O. Howard] opera shine to get it to you [.] [Ferry] Thomas asst [Coosa] [,] [Knoxville] [Goldsboro] [General-in-Chief] leaves [Ford (-ed, -ing)] [Equip] with funds and on your requisite shine will supply your temper airy wants [.] send your esteem mates for funds tooth [Surrender (-ed, -ing)] and funds wilby for worded
+  no2shuf: H37 C0 I0 M0
+    [Aquia Creek] {time: 1.30 PM} [Kelly B F] for [Smith] [Execute (struck: Manifest, written Execute)] unity The [Fredericksburg] [Athens] says that theres plenty of shady at [Horse] and all [Comstock Lt Col C B] means [Bridge (-ed, -ing)] opera shine to get it to you [1000] [Humboldt] Thomas asst [Fredericksburg] [Ferrero [?] E] [Knoxville] [Unite (-ed, -ing)] [La Grange] leaves [Louisville] [Cumberland Gap] with funds and on your requisite shine will supply your temper airy wants [Carter S.P.] send your esteem mates
+X2 tokens=63 no1=34(0.54) no2=27(0.43) no9=13(0.21)
+  no1: H33 C0 I0 M0
+    [Washington] {time: 2.30 PM} [18] for [Major] [General] Pope [.] orders have been made breaking up [Maj Gen S. A. Hurlbut]'s [Division] and as signing [P. H. Sheriden] to [General] [Command = Er (-ed, -ing)] [West] [Of the] Miss <insertion>ark</insertion> [South] [Of the] [Arkansas] [.] Ewell please direct [Maj Gen J. J. Reynolds] to receive orders from [P. H. Sheriden] for the dish [Position] fall [Troops] that Canby Spared from [Arkansas] recollecting that the [Troops] taken with many others are to hopper [8] aga
+  no2: H26 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 2.30 PM} Gradual for [Our pickets] [Helping] Pope unity orders have been made breaking up [Butler B F]'s [Diversion] and as signing [Schenck R C] to [Harbor] Polka [Drove in our Pickets] [Pursue (-ed, -ing)] Miss <insertion>ark</insertion> [Subsist (-ed, -ing)] [Pursue (-ed, -ing)] [Alabama] unity Ewell please direct [McPherson J B] to receive orders from [Schenck R C] for the dish [Re-enforcements] fall [Unite (-ed, -ing)] that Canby Spared from [Oostanoula [sic]] recollecting that th
+  no9: H13 C0 I0 M0
+    Grapes {time: 4 PM} Gradual for Tappan [Projectiles] Pope unity orders have been made breaking up legends quitman and as signing Nabob to [Projectiles] Polka [Invested] torch Miss <insertion>ark</insertion> [Offensive] torch archery unity Ewell please direct montrose to receive orders from Nabob for the dish [Colonel] fall [Wounded] that Canby Spared from arno recollecting that the [Union] taken with many others are to hopper paddle against the [Convoys] [Offensive] of him [Movement] If Monster Canby replaced I wou
+  no1shuf: H33 C0 I0 M0
+    [Colonel] {time: 2.30 PM} [18] for [Secretary of War] [Movement] Pope [.] orders have been made breaking up [Ram]'s [Advance (-ed, -ing)] and as signing [Pemberton] to [Danger] [Maj Gen W. T. Sherman] [Gen C. C. Washburne] [Goldsboro] Miss <insertion>ark</insertion> [General-in-Chief] [Goldsboro] [Surrender (-ed, -ing)] [.] Ewell please direct [Columbus] to receive orders from [Pemberton] for the dish [Reinforcements] fall [Effective] that Canby Spared from [Scout (-ed, -ing)] recollecting that the [Atlanta] taken 
+  no2shuf: H26 C0 I0 M0
+    [Follow (-ed, -ing) [#]] {time: 2.30 PM} Gradual for [Opelika] [Tar R] Pope unity orders have been made breaking up [Ascertain-ed-ing]'s [Wounded] and as signing [Maine] to [Secretary of War] Polka [Van Cleve H P] [Unite (-ed, -ing)] Miss <insertion>ark</insertion> [La Grange] [Unite (-ed, -ing)] [Johnston] unity Ewell please direct [Rapid] to receive orders from [Maine] for the dish [Resisting] fall [Quarter[?] Master General] that Canby Spared from [Mile] recollecting that the [Neuse] taken with many others are t
+X3 tokens=51 no1=13(0.25) no2=14(0.27) no9=4(0.08)
+  no1: H9 C0 I0 M0
+      {tail: [signed] Whitney Gardner Matilda for degrade R . H . [Effect (-ed, -ing)] [Picket (-ed, -ing)] bronze [Shelbyville] orthodox jingle chapin [1000] Hold on tooth houses until justified from Wheel to give them up potash gender yet ascertained that [Battle] means restoration of property or only that portion which gender been libeled bronze If [Maj Genl U.S. Grant] Porter field is in [Picket (-ed, -ing)] he must be celebrated judge charges here to fore frosted fulcrum War Office [Maj Gen B. M. Prentiss] Broadwa
+  no2: H11 C0 I0 M0
+    [Surrounding] Whitney [11] Matilda for [Lexington] R . H . [Entrench (-ed, -ing)] [Retreat (-ed, -ing)] bronze [New York] orthodox jingle chapin purple Hold on tooth houses until justified from Wheel to give them up potash gender yet ascertained that [Attack (-ed, -ing) [#]] means restoration of property or only that portion which gender been [Day]ed bronze If [Imboden] Porter field is in [Retreat (-ed, -ing)] he must be celebrated judge charges here to fore frosted fulcrum War Office [Canby Ed R S] Broadway How ar
+  no9: H4 C0 I0 M0
+    [Killed] Whitney Gardner Matilda for degrade R . H . [Ammunition] [Lieutenant] bronze Girdle orthodox jingle chapin purple Hold on tooth houses until justified from Wheel to give them up potash gender yet ascertained that pardon means restoration of property or only that portion which gender been libeled bronze If John Porter field is in [Lieutenant] he must be celebrated judge charges here to fore frosted fulcrum War Office mastiff Broadway How are you
+  no1shuf: H9 C0 I0 M0
+      {tail: [signed] Whitney Gardner Matilda for degrade R . H . [Troops] [Yorktown] bronze [Vicksburg] orthodox jingle chapin [1000] Hold on tooth houses until justified from Wheel to give them up potash gender yet ascertained that [Texas] means restoration of property or only that portion which gender been libeled bronze If [Diversion] Porter field is in [Yorktown] he must be celebrated judge charges here to fore frosted fulcrum War Office [Guard (-ed, -ing)] Broadway How are you}
+  no2shuf: H10 C0 I0 M1
+    [Tuckers Station] Whitney [11] Matilda for [(Names column: "Page 32", a cross-reference; no meaning in this copy)] R . H . [Smith J E] [Granger R S] bronze [Detach (-ed, -ing)] orthodox jingle chapin purple Hold on tooth houses until justified from Wheel to give them up potash gender yet ascertained that [Army] means restoration of property or only that portion which gender been [Slocum H W]ed bronze If [Communicate (-ed, -ing)] Porter field is in [Granger R S] he must be celebrated judge charges here to fore frost
+X4 tokens=47 no1=14(0.30) no2=12(0.26) no9=3(0.06)
+  no1: H12 C0 I0 M0
+    [Washington] {date: May 28} {time: 11 PM} for [Gen Q. A. Gillmore] Hilton Head [.] [Maj Genl U.S. Grant] has ordered Judge Camp bell [,] R empty Hunt her and Sed don late Secy of War toby sent to suco Pulaski toby held in held in cuss toddy there until further orders [.] they are now at [Richmond] & wilby forwarded many [.] Ewell receive & hold them in safe cuss tady [Secretary of War]
+  no2: H9 C0 I0 M0
+    [Maj Gen B. F. Butler] May harsh paddle {time: 11.30 PM} for [Reynolds J J] Hilton Head [1000] [Imboden] has ordered Judge Camp bell [Cavalry] R empty Hunt her and Sed don late Secy of War toby sent to suco Pulaski toby held in held in cuss toddy there until further orders unity they are now at [Mobile] & wilby forwarded many [Sunday] Ewell receive & hold them in safe cuss tady [Delaware]
+  no9: H3 C0 I0 M0
+    Growl May harsh paddle {time: 9.30 PM} for Maxim Hilton Head [Movement] John has ordered Judge Camp bell pedlar R empty Hunt her and Sed don late Secy of War toby sent to suco Pulaski toby held in held in cuss toddy there until further orders unity they are now at Galway & wilby forwarded many [Movement] Ewell receive & hold them in safe cuss tady Brutus
+  no1shuf: H12 C0 I0 M0
+    [Gen J. M. Palmer] {date: May 28} {time: 11 PM} for [Information] Hilton Head [.] [Diversion] has ordered Judge Camp bell [,] R empty Hunt her and Sed don late Secy of War toby sent to suco Pulaski toby held in held in cuss toddy there until further orders [.] they are now at [Tuscaloosa] & wilby forwarded many [.] Ewell receive & hold them in safe cuss tady [Movement]
+  no2shuf: H9 C0 I0 M0
+    [Aquia Creek] May harsh paddle {time: 11.30 PM} for [Creek] Hilton Head [1000] [Communicate (-ed, -ing)] has ordered Judge Camp bell [Ferrero [?] E] R empty Hunt her and Sed don late Secy of War toby sent to suco Pulaski toby held in held in cuss toddy there until further orders unity they are now at [Stanley D S] & wilby forwarded many [Carter S.P.] Ewell receive & hold them in safe cuss tady [Drove in our Pickets]
+X5 tokens=42 no1=23(0.55) no2=22(0.52) no9=7(0.17)
+  no1: H21 C0 I0 M0
+    {time: 3.30 PM} [5] for [Maj Gen W. S. Rosecrans] [.] . The [Secretary of War] directs the [Arrest (-ed, -ing)] at {time: 10 AM} on Monday morning next [Of the] following named [Rebel] agents and the seizure of their papers [.] Wm Kendall and [Captain] Lewis Kennedy [St Louis] ---- [Maj Genl U.S. Grant] or Wm Ritchie [Force] Joseph [Missouri] James [Lee] New [Maj Gen O. O. Howard] [Missouri] [Colonel] Wm [Ewell]er keep Girardeau [C. A. Dana]
+  no2: H20 C0 I0 M0
+    {time: 3 PM} person for [Negley J S] unity . The [Chalmers] directs the [Porter D D] at {time: 10 AM} on Monday morning next [Pursue (-ed, -ing)] following named [Rail-road] agents and the seizure of their papers unity Wm Kendall and [Battled [?]] [17] Kennedy [Nashville] ---- [Imboden] or Wm Ritchie [Force] Joseph [Kanawha] [14] [Washington] New [Grant U S] [Kanawha] [Casualties] Wm [Trenton]er keep Girardeau [Cheatham]
+  no9: H7 C0 I0 M0
+    {time: 6 PM} person for Moon unity . The Indigo directs the odor at {time: 7 AM} on Monday morning next torch following named [Army] agents and the seizure of their papers unity Wm Kendall and princess Lewis Kennedy Gaul ---- John or Wm Ritchie [Forage] Joseph [Quartermaster General] James Hunter New Madrid [Quartermaster General] pandora Wm Harper keep Girardeau [Baltimore]
+  no1shuf: H21 C0 I0 M0
+    {time: 3.30 PM} [5] for [General in Chief] [.] . The [Goldsboro] directs the [Richmond] at {time: 10 AM} on Monday morning next [Goldsboro] following named [H. P. Van Cleve] agents and the seizure of their papers [.] Wm Kendall and [Encountered enemy in strong force] Lewis Kennedy [East] ---- [Diversion] or Wm Ritchie [Unserviceable] Joseph [Newbern] James [Our scouts report] New [Walker] [Newbern] [Cleveland] Wm [Fear]er keep Girardeau [President of the U.S.]
+  no2shuf: H20 C0 I0 M0
+    {time: 3 PM} person for [Independence] unity . The [Bear] directs the [Engineer] at {time: 10 AM} on Monday morning next [Unite (-ed, -ing)] following named [Killed] agents and the seizure of their papers unity Wm Kendall and [Yazoo] [17] Kennedy [Scatter (-ed, -ing)] ---- [Communicate (-ed, -ing)] or Wm Ritchie [Secretary of War] Joseph [Hunter D] [14] [Fight (-ing, Fought) [#]] New [New Hampshire] [Hunter D] [Banks N P] Wm [Decherd]er keep Girardeau [Volunteering]
+X6 tokens=30 no1=17(0.57) no2=16(0.53) no9=8(0.27)
+  no1: H16 C0 I0 M0
+    {time: 3.30 PM} [5] for [Brigadier General] J F Miller [Nashville] [.] The [Secretary of War] directs the [Arrest (-ed, -ing)] at {time: 10 AM} on Monday morning next [Of the] [Follow (-ed, -ing)]ing named [Rebel] agent and the seizure of his papers [.] [Colonel] Thos T Tunstall [Nashville]  {tail: [signed] [C. A. Dana] stop Tun stall}
+  no2: H15 C0 I0 M0
+    {time: 3 PM} [Failure] for [Ammunition] J F Miller [General in Chief] unity The [Chalmers] directs the [Lee S P] at {time: 10 AM} on Monday morning next [Pursue (-ed, -ing)] [Evacuate (-ed, -ing) [#]]ing named [Rail-road] agent and the seizure of his papers [1000] [Cars] Thos T Tunstall [General in Chief] [100] [Cheatham] stop Tun stall
+  no9: H8 C0 I0 M0
+    {time: 6 PM} plaster for [Yorktown] J F Miller Empress unity The Infant directs the oakum at {time: 7 AM} on Monday morning next torch [Deserters]ing named [Army] agent and the seizure of his papers [Movement] Paradise Thos T Tunstall Embrace [Troops] [Baltimore] stop Tun stall
+  no1shuf: H16 C0 I0 M0
+    {time: 3.30 PM} [5] for [Offensive] J F Miller [Captain] [.] The [Jacksonville] directs the [Tallahatchie] at {time: 10 AM} on Monday morning next [Goldsboro] [Petersburg]ing named [H. P. Van Cleve] agent and the seizure of his papers [.] [Troops] Thos T Tunstall [Jones]  {tail: [signed] [President of the U.S.] stop Tun stall}
+  no2shuf: H15 C0 I0 M0
+    {time: 3 PM} [Evacuation] for [Defeat (-ed, -ing)] J F Miller [Will be] unity The [Across] directs the [Transport (-ed, -ing)] at {time: 10 AM} on Monday morning next [Unite (-ed, -ing)] [Cincinnati]ing named [Killed] agent and the seizure of his papers [1000] [Enemy] Thos T Tunstall [Corinth] [100] [Volunteering] stop Tun stall
+X7 tokens=28 no1=15(0.54) no2=13(0.46) no9=5(0.18)
+  no1: H13 C0 I0 M0
+    [6] {time: 12} For Makent [.] The [Cavalry] Bureau has requested that all [Unserviceable] [Cavalry] [Horse]'s in your [Department] be sent to the [Depot]'s at Gallipolis [Ohio] and Geesbora D C I have directed that every possible effort be made to mount your [Cavalry]  {tail: [signed] [General-in-Chief] over the wave}
+  no2: H11 C0 I0 M0
+    Pledge {time: 12.30 AM} For Makent unity The [Battery] Bureau has requested that all [Union] [Battery] [Impregnable]'s in your [Deserter] be sent to the [Department]'s at Gallipolis [Coosa] and Geesbora D C I have directed that every possible effort be made to mount your [Battery] [100] [Ewell] over the wave
+  no9: H5 C0 I0 M0
+    Pledge {time: 11 AM} For Makent unity The Panama Bureau has requested that all [Arrest] Pacific [River]'s in your Quadroon be sent to the [Joe Johnston]'s at Gallipolis Abner and Geesbora D C I have directed that every possible effort be made to mount your Panama [Troops] Italy over the wave
+  no1shuf: H13 C0 I0 M0
+    [6] {time: 12} For Makent [.] The [Orange C.H.] Bureau has requested that all [Maj Gen F. P. Blair] [Lebanon] [Lafayette]'s in your [Abandon (-ed, -ing)] be sent to the [Fork]'s at Gallipolis [From the] and Geesbora D C I have directed that every possible effort be made to mount your [Orange C.H.]  {tail: [signed] [Right] over the wave}
+  no2shuf: H11 C0 I0 M0
+    Pledge {time: 12.30 AM} For Makent unity The [Davidson J W] Bureau has requested that all [Cleveland] [Effect (-ed, -ing) [#]] [Steam]'s in your [Athens] be sent to the [Invest (-ed, -ing)]'s at Gallipolis [Army] and Geesbora D C I have directed that every possible effort be made to mount your [Davidson J W] [100] [Early] over the wave
+X8 tokens=27 no1=16(0.59) no2=11(0.41) no9=5(0.19)
+  no1: H16 C0 I0 M0
+    [Washington] {time: 7 PM} [22] to pope [St Louis] [.] . [Maj Gen J. J. Reynolds] need not a Co. The whisile from [Arkansas] [.] He can not probably be wall replaced in that state The [Quartermaster] will send you [2700] [Horse]'s as fast as possible  {tail: [signed] [Maj Genl U.S. Grant]}
+  no2: H10 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 7.30 PM} Harsh plank to pope [Nashville] unity . [McPherson J B] need not a Co. The whisile from [Oostanoula [sic]] [1000] He can not probably be wall replaced in that state The [Rations] will send you Harrow postpone prolong [Impregnable]'s as fast as possible [100] [Jeff Davis]
+  no9: H5 C0 I0 M0
+    Growl {time: 1.30 PM} Harsh plank to pope Gaul unity . monster need not a Co. The whisile from Arno [Movement] He can not probably be wall replaced in that state The [Quartermaster] will send you Harrow postpone prolong [River]'s as fast as possible [Troops] Japan
+  no1shuf: H16 C0 I0 M0
+    [Gen J. M. Palmer] {time: 7 PM} [22] to pope [East] [.] . [Convoy] need not a Co. The whisile from [Scout (-ed, -ing)] [.] He can not probably be wall replaced in that state The [Chickamauga] will send you [2700] [Lafayette]'s as fast as possible  {tail: [signed] [Grand Junction]}
+  no2shuf: H10 C0 I0 M0
+    [Aquia Creek] {time: 7.30 PM} Harsh plank to pope [Scatter (-ed, -ing)] unity . [General] need not a Co. The whisile from [Mile] [1000] He can not probably be wall replaced in that state The [Steele Fdk] will send you Harrow postpone prolong [Steam]'s as fast as possible [100] [Valley]
+X9 tokens=27 no1=16(0.59) no2=15(0.56) no9=5(0.19)
+  no1: H13 C1 I0 M0
+    {time: 11.30 AM} [13] for [Maj Genl J. M. Schofield] [Louisville] [.] all [Force]'s that can possible be spared from [Kentucky] should be sent to [Maj Gen Geo. H. Thomas] at [Nashville] to enable him to meet any [Force]'s that [Maj Gen J. B. Hood (Confederate)] may send [North]  {tail: [signed] [General-in-Chief] send copy to Kearney where ever he may be}
+  no2: H12 C0 I0 M0
+    {time: 11.30 AM} Fever for [Pemberton] [Independence] [1000] all [Force]'s that can possible be spared from [Mississippi] should be sent to [H W Halleck] at [General in Chief] to enable him to meet any [Force]'s that Handle may send [Offensive] [Surrendered] [Hardee] send copy to Kearney where ever he may be
+  no9: H5 C0 I0 M0
+    {time: 10 AM} Fever for Kiss Dragon [Movement] all [Flotilla]'s that can possible be spared from Aurora should be sent to Lady at Embrace to enable him to meet any [Forage]'s that Handle may send torrent [Killed] Jordan send copy to Kearney where ever he may be
+  no1shuf: H13 C1 I0 M0
+    {time: 11.30 AM} [13] for [Tombigbee] [Arrest (-ed, -ing)] [.] all [Attack (-ed, -ing)]'s that can possible be spared from [Qr Master Genl U.S.] should be sent to [Maj. Gen. David Hunter] at [Jones] to enable him to meet any [Unserviceable]'s that [Mile] may send [Maj Gen B. M. Prentiss]  {tail: [signed] [Volunteer] send copy to Kearney where ever he may be}
+  no2shuf: H12 C0 I0 M0
+    {time: 11.30 AM} Fever for [Savannah] [Lynchburg] [1000] all [Baton Rouge]'s that can possible be spared from [Maj Gen B. F. Butler] should be sent to [Bellefonte] at [Corinth] to enable him to meet any [Secretary of War]'s that Handle may send [Colonel] [Captain] [Pigeon Mountain] send copy to Kearney where ever he may be
+X10 tokens=26 no1=15(0.58) no2=10(0.38) no9=4(0.15)
+  no1: H12 C0 I0 M0
+    [Washington] [20] {time: 3 PM} for [Maj Gen Geo. H. Thomas] ---- It is [Report]ed here that forrest is [Threaten (-ed, -ing)]ing both Pa [Meridian] Key & [Memphis] ---- If by the assistance of Kearney & [Gen C. C. Washburne] you could drive him [South] it would relieve that part [Of the] Country from all danger [General-in-Chief] No 1
+  no2: H9 C0 I0 M0
+    [Maj Gen B. F. Butler] harsh {time: 3.30 PM} for [H W Halleck] ---- It is [South]ed here that forrest is [Track]ing both Pa [La Grange] Key & [Larkinsville] ---- If by the assistance of Kearney & lavender you could drive him waxy it would relieve that part [Pursue (-ed, -ing)] Country from all danger [Hill] No 1
+  no9: H4 C0 I0 M0
+    Growl harsh {time: 5 PM} for lady ---- It is [Equipage]ed here that forrest is [Surprised]ing both Pa Duke Key & Drill ---- If by the assistance of Kearney & lavender you could drive him [Offensive] it would relieve that part torch Country from all danger Jacob No 1
+  no1shuf: H11 C1 I0 M0
+    [Gen J. M. Palmer] [20] {time: 3 PM} for [Maj. Gen. David Hunter] ---- It is [Camp]ed here that forrest is [Reinforce (-ed, -ing)]ing both Pa [Secretary of War] Key & [Horse] ---- If by the assistance of Kearney & [General-in-Chief] you could drive him [J. S. Negley] it would relieve that part [Goldsboro] Country from all danger [Army] No 1
+  no2shuf: H9 C0 I0 M0
+    [Aquia Creek] harsh {time: 3.30 PM} for [Bellefonte] ---- It is [Washington]ed here that forrest is [Battery]ing both Pa [Boyle J T] Key & [Philadelphia] ---- If by the assistance of Kearney & lavender you could drive him waxy it would relieve that part [Unite (-ed, -ing)] Country from all danger [Huntsville] No 1

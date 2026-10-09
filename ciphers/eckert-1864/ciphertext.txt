@@ -3476,3 +3476,113 @@ Geo D Sheldon
 plain-at: flag#1
 plain-at: farrars#1
 note: FM-R7a: flag ship and Farrars are plain (image-read; printed as 'Flagship Agawam, Farrar's Island'); the telegram is printed in ORN I/10 word for word, so the body readings are C against that print.
+
+### E322 | Page 349 | 10009 | mssEC 18 (obj 10074, pointer 10009; printed page 343), 17 May 1865 Washington, to H. F. Lines at Macon, for Wilson, by Rawlins for Grant: the Quartermaster Dept has stores at Port Royal, Maj. Thomas of the Dept of the South leaves New York today with funds, send estimates, remain with the part of the command left in Georgia, infantry and cavalry to garrison necessary points, see a competent officer has the force returned to Tennessee (MS18-R2; row 10009/1; image-read at 2400 px)
+H. F. Lines Macon  Washington May 17th 1865
+Growl Harriet Glory for Wilson Dismal unity The Vincent quadroon
+says that theres plenty of shady at florida and all
+nutmeg means Aaron opera shine to get it to you
+Zebra Taunton Thomas asst Vincent pedlar quadrant torch waxend leaves
+frog wedge with funds and on your requisite shine will
+supply your temper airy wants Zodiac send your esteem mates
+for funds tooth belcher and funds wilby for worded you
+Ewell remain with that part of your polka that stubby
+stomach in Argus Laution has been so instructed period what
+ever squash saint in addition tooth panama stomach with you
+may be required to garrison what you deem tarquin Vernon
+Toby garrisoned wilby sent you stop See that a compete
+aunt officer has Polk torch salem returned tooth Bethel By
+polka of Jersey yoke John A Rawlins palsey Chief Staff
+plain-at: john#1
+note: MS18-R2: No. 1 (share .42; control median .41, p10 .29, p90 .58). 'John A Rawlins' is the plain signature (image-read), not John = Grant. 'shady', 'opera shine', 'Laution', 'temper airy wants', 'esteem mates' (estimates), 'compete aunt' (competent) are unread or sound-alike spellings; Aaron = Rhode Island does not read (M).
+
+### E323 | Page 350 | 10010 | mssEC 18 (obj 10074, pointer 10010; printed page 344), 18 May 1865 (holder transcription 19th; the image reads 18th) 2.30 PM Washington, to R. C. Clowry for Pope: orders breaking up Hurlbut's division and assigning Sheridan to the command west of the Mississippi, Reynolds to take orders from Sheridan, troops Canby spared from Arkansas; signed Grant (MS18-R2; row 10010/2; image-read at 2400 px)
+R. C. Clowry  Washington May 19th 1865
+Grapes Henrietta Gradual for Tappan Shelter Pope unity orders
+have been made breaking up legends quitman and as
+signing Nabob to Shelby Polka wicoff torch <deletion>Miss</deletion> <insertion>ark</insertion> waxend
+torch archery unity Ewell please direct montrose to receive
+orders from Nabob for the dish venus fall whistle
+that Canby Spared from arno recollecting that the whinny
+taken with many others are to hopper paddle against
+the ridge waxy of him Zebra If Monster Canby
+replaced I would like him to gwinn polka torch
+whisky taken Youth Jupiter
+note: MS18-R2: No. 1 (share .54). Date: image reads 'May 18th' (the 'Henrietta' = 18 date code agrees), the holder transcription says 19th, kept as transcribed. Middle clauses (dish venus fall, whinny, hopper paddle) are unread; the gist is M.
+
+### E324 | Page 364 | 10024 | mssEC 18 (obj 10074, pointer 10024; printed page 358), 28 May 1865 Washington, to Gillmore at Hilton Head, signed by the Secretary of War (Brutus): Grant has ordered Judge Campbell, R. M. T. Hunter and Seddon, late Secretary of War, sent to Fort Pulaski and held in close custody until further orders; they are now at [Galway, key = Richmond] and will be forwarded (MS18-R2; row 10024/2; image-read at 2400 px)
+J. R Gillmore  Wash May 28 1865
+Growl May harsh paddle Sarah for Maxim Hilton Head
+zebra John has ordered Judge Camp bell pedlar R
+empty Hunt her and Sed don late Secy of
+War toby sent to suco Pulaski toby held in held in
+cuss toddy there until further orders unity they are
+now at Galway & wilby forwarded many Zodiac Ewell
+receive & hold them in safe cuss tady Brutus
+note: MS18-R2: No. 1 (share .30, just above the control p10 .29; the sense reads). 'R empty Hunt her' = R. M. T. Hunter, 'Sed don' = Seddon, 'Camp bell' = Campbell are plain, phonetic. Galway = Richmond (key row) is M: the prisoners were at Fort Monroe/Hampton Roads, so the place is not settled. Sibling on the holder page 10022 (28 May 1865, 'Seddon had better go also', cipher, same day).
+
+### E325 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Clowry at St Louis for Maj. Gen. Rosecrans: the Secretary of War directs the arrest at 10 AM on Monday next of the following named rebel agents and the seizure of their papers: Wm Kendall and Capt. Lewis Kennerly (St Louis), John or Wm Ritchie (St Joseph, Mo.), James Hunter (New Madrid, Mo.), Wm Harper (Cape Girardeau); signed Dana (MS18-R2; row 9889/0; image-read at 2400 px)
+Clowry St Louis  Washn Novr 5th 1864
+Jennie person for Moon unity . The Indigo directs the
+odor at Emily on Monday morning next torch following
+named walpole agents and the seizure of their papers
+unity Wm Kendall and princess Lewis Kennedy Gaul ----
+John or Wm Ritchie Saint Joseph Aragon James Hunter
+New Madrid Aragon pandora Wm Harper keep Girardeau Insanity
+plain-at: john#1
+plain-at: saint#1
+plain-at: hunter#1
+plain-at: madrid#1
+plain-at: harper#1
+note: MS18-R2: No. 1 (share .55 vs No. 2 .52, No. 9 .17: the shares do not pick the book, the sense does). Names are plain (image-read; the image has 'Kennerly' where the holder transcription says Kennedy, kept as transcribed). 'Saint Joseph Aragon' = St Joseph, Missouri (Aragon = Missouri key row, H). Same telegram as E326 and a third copy to Louisville (Bruch, pointer 9889/1, not filed here).
+
+### E326 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Capt. Van Duzer at Nashville for Brig. Gen. J. F. Miller: the Secretary of War directs the arrest at 10 AM on Monday next of the following named rebel agent and the seizure of his papers, Col. Thos T. Tunstall of Nashville; signed Dana (the same telegram as E325 and the Louisville copy) (MS18-R2; row 9889/2; image-read at 2400 px)
+Capt Van Duzer Nashville  Washn Nov 5th 1864
+Jennie plaster for Palate J F Miller
+Empress unity The Infant directs the oakum
+at Emily on Monday morning next torch
+rambling named walpole agent and the seizure
+of his papers zebra Paradise Thos T
+Tunstall Embrace yoke Insanity stop Tun stall
+note: MS18-R2: No. 1 (share .57). 'Thos T Tunstall' is plain (image-read, repeated 'Tun stall' at the end); Embrace = Nashville is the key row, H. Palate = Brig. General is H.
+
+### E327 | Page 153 | 9813 | mssEC 18 (obj 10074, pointer 9813; printed page 147), 6 Aug 1864 Washington, to McCaine (addressee 'Makent'), signed General-in-Chief: the Cavalry Bureau asks that all unserviceable cavalry horses in your department be sent to the depots at Gallipolis, Ohio and Giesboro, D.C.; every effort has been directed to mount your cavalry (MS18-R2; row 9813/1; image-read at 2400 px)
+McCaine  Aug 6th 1864
+Pledge Francis For Makent unity The Panama Bureau
+has requested that all waggish Pacific Spartans in
+your Quadroon be sent to the Quotients at
+Gallipolis Abner and Geesbora D C I have
+directed that every possible effort be made to
+mount your Panama yoke Italy over the wave
+note: MS18-R2: No. 1 (share .54; No. 2 .46). 'Gallipolis' and 'Geesbora D C' (Giesboro) are plain (image-read). Pledge Francis / Makent are the addressee's cipher names, unread.
+
+### E328 | Page 356 | 10016 | mssEC 18 (obj 10074, pointer 10016; printed page 350), 22 May 1865 7 PM Washington, to R. C. Clowry at St Louis for Pope, signed Grant: Reynolds need not a Co.[?], the [whistle] from Arkansas; he can probably not well be replaced in that state; the Quartermaster will send you 2700 horses as fast as possible (MS18-R2; row 10016/2; image-read at 2400 px)
+No 1 RC Clowry St Louis  Washington DC May 22 / 65
+Growl Martha Harsh plank to pope Gaul unity .
+monster need not a Co. The whisile from
+Arno Zebra He can not probably be wall
+replaced in that state The Vinton will send
+you Harrow postpone prolong spartans as fast as
+possible Yoke Japan
+note: MS18-R2: No. 1 (share .59, above the control p90 .58). 'need not a Co. The whisile from' is unread (U). 'Harrow postpone prolong' = 2700 (numeral run, H).
+
+### E329 | Page 204 | 9864 | mssEC 18 (obj 10074, pointer 9864; printed page 198), 13 Oct 1864 11.30 AM Washington, to Schofield at Louisville (copy to Burbridge at Lexington and Bruch), signed General-in-Chief (Halleck): all forces that can be spared from Kentucky to be sent to General Thomas at Nashville to meet any force Hood may send north; printed OR I/39 pt 3 p.253 word for word, 'Same to General Burbridge' = send copy to Kearney (MS18-R2; row 9864/1; image-read at 2400 px)
+Carey Lexington & Bruch Lol No 1  Washn Oct 13th 1864
+Florence Fever for Kiss Dragon zebra all Salems that
+can possible be spared from Aurora should be sent
+to Lady at Embrace to enable him to meet
+any Saints that Handle may send torrent walrus Jordan
+send copy to Kearney where ever he may be
+note: MS18-R2: No. 1 (share .59). Printed OR I/39 pt 3 p.253 (Halleck to Schofield, 13 Oct 1864, 11.30 a.m.): the body is C against that print; Kearney = Burbridge by the print's '(Same to General Burbridge)'. Not a key edit (rule 4).
+
+### E330 | Page 213 | 9873 | mssEC 18 (obj 10074, pointer 9873; printed page 207), 20 Oct 1864 3 PM Washington, to Maj. Gen. Thomas at Nashville, signed General-in-Chief (Halleck): Forrest is reported threatening both Paducah and Memphis; if by the assistance of Burbridge and Washburn you could drive him south it would relieve that part of the country; printed OR I/39 pt 3 p.379 word for word (MS18-R2; row 9873/1; image-read at 2400 px)
+Van Duzer Nashville  Wash. Oct. 20. 1864.
+Growl harsh Imogene for lady ---- It is wicked
+here that for - rest is weighing both Pa Duke
+Key & Drill ---- If by the assistance of
+Kearney & lavender you could drive him waxy it
+would relieve that part torch Country from all danger
+Jacob
+plain-at: forrest#1
+plain-at: duke#1
+note: MS18-R2: No. 1 (share .58). Printed OR I/39 pt 3 p.379 (Halleck to Thomas, Washington 20 Oct 1864, 3 p.m.): the body is C against that print; 'Pa Duke Key' = Paducah, Ky is plain, phonetic; Kearney = Burbridge, lavender = Washburn by the print. Not a key edit (rule 4).
