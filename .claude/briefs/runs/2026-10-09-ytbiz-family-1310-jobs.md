@@ -90,3 +90,18 @@ NOTES "HEIN-SR" section and the Remaining gaps bullet "Deel 2 printed pp.132-600
 <= 120 requests; stop at the budget and record the last page); positive control as HEIN-SR (letters 341 and 1017's pages flagged from disk, no refetch).
 Append rows to small_runs_HEINSR.tsv (or a _2 file), NOTES section, update the gap bullet's page range and the Verdict, gaps_check. Any run found:
 page, letter no., sender, date, snippet -- no reading.
+
+## Wave 1b (13:3x UTC 9 Oct)
+Gallica probe (one per incarnation, lane-common-blast): 13:2x UTC, IIIF manifest btv1b9001389d -> HTTP 403. BnF items from disk only.
+
+### ES132-LOOK (Opus, cap 4.5, box 90 min, disk only): es132-vargas-mexia-1578, look-alike pass on f.51v L11-L25 and f.52r (Cipher 3, err 35% / 28%)
+NOTES Remaining gaps bullet "About 29 open Cipher 3 letters" (line ~90): named next "look-alike pass or third reader on f.51v L11-L25 and f.52r (err
+35% / 28%, ~$3)" and TRANSCRIPTION.md (the lookalike pass, not a third full machine pass, is the route above one tenth). Read `tools/lookalike_pass.py
+--help` (confusion -> packet -> value-blind re-read -> reconcile; 2-of-3 rule fixed in the tool), NOTES RUN4-ES50/RUN5-ES51/RUN5-ESFIX, the f.51v and
+f.52r passes (passes/f51v_passA_es50b.tsv / _passB_es50b.tsv or the current pair -- name which, and why), their agreement files, crops on disk and the
+sheet/atlas the passes used. Check 1: confirm no lookalike pass ran on es132 (grep NOTES/ROOM). Steps: confusion over every es132 agreement file;
+packet for f.51v (L11-L25) and f.52r; the re-read by Sonnet subagent calls, value-blind as the tool's prompt is written, one half page per call;
+reconcile -> passD + focus.tsv. Then re-score both pages with the folder's existing test (test1/test2 path the PREREGs name; PREREG_c3_f51v_recut.md and
+PREREG_c3_f52r.md unchanged -- no new gate) on passD vs the earlier pair; report residual (2-of-3, not true error -- say so), and whether gate (b)
+still PASSes with its control in the same run. Do not replace the committed reading unless the PREREG's own rule says to; --check scripts exit 0 at the
+end. focus.tsv rows are for the owner's sorter later (no ASKS row). Units: ~4 re-read calls + 1 reconciliation + CPU, ~$4. gaps_check.
