@@ -3,7 +3,7 @@
 Brief `.claude/briefs/runs/2026-10-09-account4-txe-b.md`; pre-registration `benchmark-tx/PREREG-txeng-2.md` "Instrument B".
 Taxonomy class addressed: 2 (crop geometry), `research/TX-TAXONOMY-2026-10-09.md`.
 
-**Verdict: FAIL on the registered gate.** The read-free dev gate was met. On the geo unit (169 signs), pass H vs pass A:
+**Verdict: FAIL on the registered gate.** The gate as amended before this read landed (PREREG "Amendment", 1e23073e) is p < 0.01; the original was p < 0.05. This result fails both. The read-free dev gate was met. On the geo unit (169 signs), pass H vs pass A:
 fixed 12, broken 4, two-sided sign test p = 0.0768. The gate needs p < 0.05. err_true fell from 0.136 to 0.089, the same
 error count as L (today's best). A gain here would count only for this unit, and the paired test does not establish one.
 
