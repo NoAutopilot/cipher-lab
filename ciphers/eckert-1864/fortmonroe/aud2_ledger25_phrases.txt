@@ -1,0 +1,15 @@
+# AUD2-LEDGER-25 (9 Oct 2026): E307 and E309 decoded phrases (plain-word stretches), plus one positive control per route
+terrible affair at Chambersburg has just reached me
+my mother nearly insane
+sisters are without home clothes or money
+can take charge here in my absence
+as much of my back pay as possible
+it is important that I should hasten
+they can forward by boat to me
+all the steamers that can possibly be spared
+give the names of those you send
+no spare boats here excepting the Illinois
+those collected by order of
+the Illinois is nearly discharged
+# control (Plum vol. 2, known present in its djvu text)
+Herman Frank Waterhouse was convalescing

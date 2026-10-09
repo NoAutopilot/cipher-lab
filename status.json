@@ -11046,9 +11046,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM9d)'"
+        "AUDIT.md '## AUDIT (FV-FM9d)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-25)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM9d verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11068,8 +11069,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): J. R. Gilmore, Newbern, to Maj. Eckert via Fort Monroe, 6-9 Aug 1864: after the burning of Chambersburg asks a week or two's leave; Waterhouse in hospital, McGaughey to take charge (E307)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 6 Aug 1864 J. R. Gilmore, the military telegraph's man at Newbern, N.C., asked Eckert for a week or two's leave because the burning of Chambersburg had left his mother and sisters without home, clothes or money, reported the Newport office closed and Waterhouse dangerously ill in hospital, and proposed McGaughey to take charge; not located in Plum's Military Telegraph (which names all three men), the Official Records or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM9d); not N4: Grant Papers vol. 12 by be-api snippets only, press not searched",
+      "line": "Read at grade H with War Department Cipher No. 1: on 6 Aug 1864 J. R. Gilmore, the military telegraph's man at Newbern, N.C., asked Eckert for a week or two's leave because the burning of Chambersburg had left his mother and sisters without home, clothes or money, reported the Newport office closed and Waterhouse dangerously ill in hospital, and proposed McGaughey to take charge; not located in Plum's Military Telegraph (which names all three men), the Official Records, Butler's papers, the Huntington's full-text search, Internet Archive or Google Books full text (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-FM9d, AUD2-LEDGER-25); not N4: NARA RG 107 and Grant Papers vol. 12 full text not reached, JSTOR rows open",
       "depth": "D3",
       "completeness": "23 H of 23 code-word groups ('Water house', 'Jay are Gilmore' plain; pause/paws plain stop-words)",
       "phrases": [
@@ -11087,9 +11088,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM9d)'"
+        "AUDIT.md '## AUDIT (FV-FM9d)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-25)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM9d verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11109,8 +11111,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Eckert for Brig. Gen. D. H. Rucker to Col. R. C. Webster, chief quartermaster, Fort Monroe, 4 Oct 1864: send every steamer that can be spared; Webster's reply, none but the Illinois (E309)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 4 Oct 1864 Eckert passed to Fort Monroe Brig. Gen. D. H. Rucker's call for every steamer that could be spared, and Col. R. C. Webster answered that he had none but the Illinois and the boats collected by Butler's order; not located in the Official Records (ser. I vol. 42 pt 3), Grant's or Butler's papers or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM9d); not N4: Grant Papers vol. 12 by be-api snippets only, NARA RG 92 and press not searched; Butler V be-api zero uncontrolled",
+      "line": "Read at grade H with War Department Cipher No. 1: on 4 Oct 1864 Eckert passed to Fort Monroe Brig. Gen. D. H. Rucker's call for every steamer that could be spared, and Col. R. C. Webster answered that he had none but the Illinois and the boats collected by Butler's order; not located in the Official Records (ser. I vol. 42 pt 3), Butler's papers, the Grant Papers (vol. 12, by full-text search only), the Huntington's full-text search, Internet Archive or Google Books full text (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-FM9d, AUD2-LEDGER-25); not N4: NARA RG 92/107 and Grant Papers vol. 12 full text not reached, JSTOR rows open",
       "depth": "D3",
       "completeness": "20 H of 20 code-word groups ('are see webster' = R. C. Webster plain; sheaf, thayer, wilby, B plain-phonetic)",
       "phrases": [
@@ -11121,7 +11123,7 @@
         "Huntington mssEC 25 (obj 5952) p.242, pointer 5786, E309"
       ],
       "depth_sentence": "On 4 Oct 1864 Washington asked Fort Monroe's chief quartermaster for every steamer that could be spared, and Col. R. C. Webster replied he had none but the Illinois and the boats collected by Butler's order.",
-      "depth_check": "code clause: paradise/pandora = Colonel, vinton = Quartermaster, weasel = Steam, palate/palsy = Brigadier General, growl = Washington, Knox = Butler, wrangle = Telegraph, wick = Report read; external (non-statistical): OR I/42 pt 3 Col. R. C. Webster, chief quartermaster, Fort Monroe (Oct-Dec 1864); holder 5854 'Are See webster'",
+      "depth_check": "code clause: paradise/pandora = Colonel, vinton = Quartermaster, weasel = Steam, palate/palsy = Brigadier General, growl = Washington, Knox = Butler, wrangle = Telegraph, wick = Report read; external (non-statistical): OR I/42 pt 3 Col. R. C. Webster, chief quartermaster, Fort Monroe (Oct-Dec 1864); holder 5854 'Are See webster'; holder 7734 (Webster at Fort Monroe), 9712/5719 ('chief vinton' = chief quartermaster) (AUD2-LEDGER-25)",
       "depth_note": "20 H of 20 code-word groups ('are see webster' = R. C. Webster plain; sheaf, thayer, wilby, B plain-phonetic)"
     }
   ],

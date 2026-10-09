@@ -10694,3 +10694,89 @@ clause U lifted; live = line; answers E306. E313: none. FM-R7a NOTES "Remaining 
 Lesson for readers: an all-pointer query must print each hit's text; FM-R7a's "W W Shore" query listed 16 pointers, one of them a reachable
 sibling clear copy (10299), but the clear copy 10291 surfaced only on a phrase from the second half ("aid comfort Shore").
 Requests: hdl.huntington.org 17 (13 CONTENTdm queries, 4 IIIF pages); archive.org 4 downloads; be-api 7 (5 answered, 2 x 502).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-25)
+
+Second verifier AUD2-LEDGER-25 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 14:58-15:2x UTC by
+`date -u`; a separate session and account from the reader FM-R6c and the first auditor FV-FM9d (both account 1); this session had not read or
+audited these entries before. Scope: **E307 and E309** (WORK-QUEUE AUD2-LEDGER-25; E308 is N1 on the holder's clear copy 4607, no second audit
+owed). Nothing decoded beyond key look-ups in key.md. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Committed: this section; `fortmonroe/aud2_ledger25_keys.py` + `.out` (key look-up); `fortmonroe/aud2_ledger25_hdl.py` + `.out` (6 CONTENTdm
+queries the first audit did not run, 2 item infos, 3 IIIF pages to scratch); `fortmonroe/aud2_ledger25_phrases.txt` + `aud2_ledger25_sources.tsv`
+(tools/print_check.py input; its TSV kept in scratch, summarised below); `fortmonroe/aud2_ledger25_scholar.py` + `.out` (S2, CORE, Chronicling
+America); `fortmonroe/aud2_ledger25_orhit.py` + `.out` (follow-up of the one print hit); four JSTOR-QUEUE.tsv rows. Re-derivation: `python3
+ciphers/eckert-1864/decode.py --check` -> "reading.md is current".
+
+### 1. Re-derivation, key look-ups and image
+- **Key look-ups (independent, by script):** E307: Flora = Newbern, pledge = 6, peasant = By the way of, appian = Monroe, Julia = 4 PM, pony = 9,
+  tappan = Major, growl = Washington, torch = Of the, unity x5 / zebra x4 / zodiac x2 = Period, plank / peach = 2, wrangle = Telegraph, famish =
+  Norfolk, Webster = Signature: **23 code groups, all H**; the key-row hits on News, home, money, must, week x2, office, water, charge, forward,
+  Hope stand as plain words in the running text (line-indicator/route rows), as the decoder treats them; pause/paws have no key row. E309: Pension
+  / Penny = 4, paradise / pandora = Colonel, vinton x2 = Quartermaster, weaselers = Steam(ers), zebra x2 / zodiac x2 / unity = Period, webster
+  (after "you send") / walrus = Signature, palate / palsy = Brigadier General, growl = Washington, Knox = Maj Gen B. F. Butler, wrangled =
+  Telegraph(ed), wick = Report: **20 code groups, all H**, with the first "Webster" (the addressee, `plain-at: webster#1`) and the third
+  ("are see webster", FV-FM9d's slip) plain. **No disagreement with FV-FM9d's counts (H 23/23, H 20/20).**
+- **Holder support for "sheaf vinton" = chief quartermaster (new):** the holder's own transcriptions of other ledger entries carry the same
+  phonetic-plain + code pairing in other hands of the period: pointer **9712** (20 Apr, "Pandora H Biggs Chief Vinton", i.e. Col. H. Biggs, chief
+  quartermaster) and **5719** ("walrus Biggs chief vincent"); pointer **7734** (City Point, 28 Jan 1865, clear: "please telegh Col Webster or
+  Capt James at Ft Monroe") places Col. Webster at Fort Monroe again. This supports FV-FM9d's "no Vinton" header correction.
+- **Image eye check this session** (IIIF 2400 px, PIL strips autocontrasted, scratch only; `tools/iiif_lines.py --image` run on 5777 found 0
+  lines on the ruled grid, as FM-R6c and FV-FM9d found): 5777 entry 3 (header + 7 grid rows), 5778 top (9 grid rows + Sheldon, including
+  "Jay are Gilmore quite warm this afternoon"; "are" has a struck or overwritten first letter), 5786 entry 1 (6 rows + Eckert) and entry 2 (8 rows).
+  **Every code word of E307 and E309 matches the transcription;** no plain-word slip found beyond FV-FM9d's.
+
+### 2. New searches (families FV-FM9d did not cover, plus a fresh phrase pass)
+- **tools/print_check.py** (13 phrases: 7 E307, 5 E309, 1 control; sources Plum 1882 vol. 2, Butler Correspondence vol. 5, Grant Papers vol. 12,
+  OR I/42 pt 3; plus ia-global, Google Books (country=US, keyed), OpenAlex (keyed), CrossRef). **Controls:** "Herman Frank Waterhouse was
+  convalescing" found exact in Plum vol. 2 djvu, in 6 IA items (all Plum copies) and in Google Books (Plum reprint 2025) -- the routes work.
+  Results: every E307 and E309 phrase **no hits** in Plum vol. 2, Butler V (full djvu grep of the cached text -- this replaces FV-FM9d's
+  uncontrolled be-api zero with a direct text search) and OR I/42 pt 3; ia-global no hits except "my mother nearly insane" (5 modern novels) and
+  "those collected by order of" (an 1842 Commons journal); OpenAlex no hits; Google Books returns only loose-match noise (no 1864 telegraph matter
+  in any top 5) except **"all the steamers that can possibly be spared": 2 OR volumes (Google Books) and 4 IA items** -- followed up
+  (`aud2_ledger25_orhit.out`): the IA highlight is "...soon as possible, and discharge all the steamers that can possibly be spared. Do not
+  understand this as an...", in OR ser. I **vol. 14** (`warofrebellion0014robe`) and its serial-set copies: a different order (to *discharge*
+  steamers) in a different volume, **not E309**. Grant Papers vol. 12: djvu 401, be-api inside the volume no hits on 10 phrases, 2 phrases not
+  searched (502/503), no in-volume positive control -- a weak negative. CrossRef 429 after 2 queries (stopped, not retried).
+- **Huntington CONTENTdm** (6 new CISOSEARCHALL queries, all pointers): "chambersburg insane" 1 (5777 own), "newport closed" 2 (5777 own; 12915
+  another date), "gilmore hasten" 1 (5778 own), "spare boats illinois" 1 (5786 own), "rucker boats" 20 (5786 own; the rest other dates and
+  senders, none a copy of E309), "webster quartermaster steamers" 0. **No clear copy of either telegram** in the holder's transcriptions.
+- **Scholarship:** Semantic Scholar (keyed, 1.1 s): 2 queries 0 results, 2 answered 429 (not retried); CORE v3 (keyed): 4 queries, bag-of-words
+  returns (1864 newspapers titled "Telegraph", Monroe family letters), nothing on Gilmore, Webster or Rucker's steamers. OpenAlex as above.
+- **Press (Chronicling America via loc.gov JSON, 1864):** '"spare boats" Illinois Webster' 0; 'Gilmore operator Newbern Chambersburg mother' 0;
+  'steamer Illinois Fortress Monroe October 1864' 704 keyword pages (not read; no phrase match possible on that route). E307 is a private leave
+  request and E309 an internal quartermaster call: no route by which either would reach the press is known.
+- **Sender's and recipient's printed papers:** Eckert, Sheldon, Gilmore, Rucker and Webster have no printed correspondence that this search or
+  FV-FM9d found; the Union side's printed papers covering the traffic (OR I/42 pt 3, Butler V, Grant 12, Plum) are as above.
+- **JSTOR-QUEUE.tsv:** 4 rows queued 9 Oct 2026 (E307 and E309, families (i) and (ii)); they do not block (24 Sept 2026 rule).
+- **Not searched / unreachable:** NARA RG 92 quartermaster and RG 107 telegram records (no NARA key; catalogue unusable without it); Grant Papers
+  vol. 12 full text (lending-only, djvu 401); the Daily Christian Advocate (E308 only, out of scope); Chambersburg and Newbern local papers of
+  Aug 1864 beyond Chronicling America.
+
+### 3. Class and depth
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E307 | **N3 (held)** | period | **D3 (held)**: H 23 of 23 code groups; external non-statistical: Plum 1882 vol. 2 (Gilmore at Newberne, Waterhouse in hospital at Newport Barracks, McGaughey), holder 5785, 12950, 12960; image re-checked | no prior plaintext or decipherment located after FV-FM9d's search and this one |
+| E309 | **N3 (held)** | period | **D3 (held)**: H 20 of 20 code groups; external non-statistical: OR I/42 pt 3 (Col. R. C. Webster, chief quartermaster, Fort Monroe), holder 5854, 7734 (Webster at Fort Monroe), 9712 / 5719 (the "chief vinton" pairing); image re-checked | no prior plaintext or decipherment located after FV-FM9d's search and this one; the one print hit on its phrase is OR I/14, another order |
+
+- Not N4: NARA RG 92/107 and the Grant Papers vol. 12 full text not reached; JSTOR rows open; the holder's catalogue covers the ledger only at
+  volume level.
+- **Safe sentences** (FV-FM9d's, kept, with this audit's coverage): E307: "Read at grade H with War Department Cipher No. 1: on 6 Aug 1864 J. R.
+  Gilmore, the military telegraph's man at Newbern, N.C., asked Eckert for a week or two's leave because the burning of Chambersburg had left his
+  mother and sisters without home, clothes or money, reported the Newport office closed and Waterhouse dangerously ill in hospital, and proposed
+  McGaughey to take charge; not located in Plum's *Military Telegraph* (which names all three men), the Official Records, Butler's papers, the
+  Huntington's full-text search, Internet Archive or Google Books full text (searched 9 Oct 2026)." E309: "Read at grade H with War Department
+  Cipher No. 1: on 4 Oct 1864 Eckert passed to Fort Monroe Brig. Gen. D. H. Rucker's call for every steamer that could be spared, and Col. R. C.
+  Webster answered that he had none but the Illinois and the boats collected by Butler's order; not located in the Official Records (ser. I vol.
+  42 pt 3), Butler's papers, the Grant Papers (vol. 12, by full-text search only), the Huntington's full-text search, Internet Archive or Google
+  Books full text (searched 9 Oct 2026)."
+- **Unsafe:** any "first", "new", "unpublished", "unread" for E307 or E309; "Chief Quartermaster Vinton" (there is no Vinton).
+
+### 4. Postmortem and fixes
+No over-claim found in E307's or E309's files: status.json rows carry N3/D3 with the gap named. FIX-FM10 (account 1) landed FV-FM9d's s.5
+fixes while this audit ran (propagation note above): re-derived after it, `decode.py --check` "reading.md is current", reading.md now gives E307's
+sender as J. R. Gilmore and E309's addressee as Col. R. C. Webster, chief quartermaster, with "Code-word tokens: H 23" and "H 20" -- the counts
+this audit re-derived by look-up; this audit adds no fix. SECOND-OPINIONS-QUEUE rows SO-ECKERT-E307 / -E309: no count or class changed, left as
+filed (FIX-FM10 already corrected the prompts' words).
+Requests: hdl.huntington.org 11 (6 CISOSEARCHALL, 2 dmGetItemInfo, 3 IIIF); print_check.py: archive.org 3, be-api 26, www.googleapis.com 13,
+api.openalex.org 13, api.crossref.org 3 (429); follow-up: be-api 2, www.googleapis.com 2, archive.org metadata 1; api.semanticscholar.org 4 (2
+429), api.core.ac.uk 4, www.loc.gov 3.
