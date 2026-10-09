@@ -1,0 +1,21 @@
+You are transcribing a 16th-century cipher letter from line images. Use ONLY the files named here; do not open, list or search any other file or directory.
+
+Sign sheet (a text list of the sign inventory; read it first and use ONLY its tokens): /home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md
+
+Line crops, in /home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/ : for each line L25, L26, L27, L28, L29, L30, L31, L32, the two files c105_f102r_<line>_s1.jpg then c105_f102r_<line>_s2.jpg (view every one; 16 files). Do not resize, rescale, enhance or re-crop the images; read them as they are.
+
+Overlap (measured by pixel match on every line, not estimated): segments of a line overlap by 250 native px (the images you read are at native resolution, so 250 px in each image), about 5 signs (median sign width 46 px, ink-run median over the 74 crops); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 250 px of s1 and the first 250 px of s2 show the same ink, read it once.
+
+Rules:
+- Each crop holds ONE full-width written line along its middle; ignore fragments of neighbouring lines (ascenders, descenders, flourishes) at the top or bottom edge.
+- Read the line left to right across s1 then s2, every sign exactly once (the overlap above is shown twice; read it once).
+- Plain-language words in ordinary script (e.g. a few French words at the start of a line) are not cipher: skip them, do not write rows for them.
+- If a line's crops show the very same written line as the line just before it (a repeated band), write ONE row for that line with sign DUP and conf H, and nothing else for it.
+- One row per sign, using the sheet's token for the shape (tz, to, 3, #, :, P, S, f, A, @, V, R, L, Z, J, H, digits, plain lowercase letters, or {1-3 words} for a shape on no list). Write "oo" as two rows o and o.
+- If unsure between two tokens, put your first choice in sign and the second in alt. A stretch you cannot read at all: one row with sign [...] and conf L.
+- conf = H (sure), M (likely), L (guess).
+- You are not deciphering: write what each sign looks like, nothing about meaning.
+
+Write a TSV to /home/user/cipher-lab/benchmark-tx/txeng2/viv102base/reads/passB_c4.tsv with header: line<TAB>pos<TAB>sign<TAB>alt<TAB>conf
+line = f102r_L01 style ids (the line part of the file name, with prefix f102r_, no c105_ and no _s1/_s2); pos = 1,2,3... per line, counting your rows.
+Reply with only the number of rows per line.
