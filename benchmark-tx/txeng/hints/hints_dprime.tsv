@@ -1,0 +1,13 @@
+pair	n_a	n_b	d_descender	d_loops	d_bars	best	d	mean_a	mean_b	status	sentence
+T18/T98	5	18	1.97	0.65	0.15	descender	1.97	0.419	0.194	kept	T18 vs T98: T18's tail goes below the line by about half of its height; T98's only by about a fifth.
+T90/T53	8	43	0.06	0.94	1.64	bars	1.64	1.125	0.233	kept	T90 vs T53: T90 has one long horizontal bar across most of its width; T53 has no long horizontal bars.
+T76/T66	18	0	0.00	0.00	0.00		0.00	0.000	0.000	dropped: too few secure tiles (T76 18, T66 0; need 3)	
+T76/T86	18	24	0.69	1.15	1.59	bars	1.59	0.333	1.000	kept	T76 vs T86: T76 has no long horizontal bars across most of its width; T86 has one long horizontal bar.
+T76/T45	18	42	0.91	0.06	1.18	bars	1.18	0.333	1.095	kept	T76 vs T45: T76 has no long horizontal bars across most of its width; T45 has one long horizontal bar.
+T64/T95	0	1	0.00	0.00	0.00		0.00	0.000	0.000	dropped: too few secure tiles (T64 0, T95 1; need 3)	
+T64/T51	0	0	0.00	0.00	0.00		0.00	0.000	0.000	dropped: too few secure tiles (T64 0, T51 0; need 3)	
+T50/T36	6	20	1.41	2.11	2.46	bars	2.46	0.000	1.050	kept	T50 vs T36: T50 has no long horizontal bars across most of its width; T36 has one long horizontal bar.
+T92/T95	0	1	0.00	0.00	0.00		0.00	0.000	0.000	dropped: too few secure tiles (T92 0, T95 1; need 3)	
+T92/T98	0	18	0.00	0.00	0.00		0.00	0.000	0.000	dropped: too few secure tiles (T92 0, T98 18; need 3)	
+T83/T24	11	0	0.00	0.00	0.00		0.00	0.000	0.000	dropped: too few secure tiles (T83 11, T24 0; need 3)	
+T60/T86	43	24	0.00	2.17	4.01	bars	4.01	1.977	1.000	kept	T60 vs T86: T60 has two long horizontal bars across most of its width; T86 has one long horizontal bar.
