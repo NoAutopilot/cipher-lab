@@ -790,7 +790,8 @@ def main(argv=None):
         print('WARNING: over 15 MB; the Artifact limit is 16 MB', file=sys.stderr)
     if not a.no_preflight:   # SORTER-PREFLIGHT (6 Oct 2026): the gate before publishing; a FAIL is printed, the build stands
         import sorter_preflight
-        sorter_preflight.run(page=a.out, cipher_lines=a.cipher_lines, search=[os.path.dirname(os.path.abspath(a.signs))])
+        sorter_preflight.run(page=a.out, cipher_lines=a.cipher_lines, search=[os.path.dirname(os.path.abspath(a.signs))],
+                             pages_json=a.pages if a.pages.endswith('.json') else None)   # real page colours for the colour check's box test
 
 
 if __name__ == '__main__':

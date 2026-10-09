@@ -1442,7 +1442,7 @@ $('foot').textContent = Object.keys(itemBySid).length + ' tiles, ' + (DATA.blind
   (DATA.skipped ? DATA.skipped + ' tiles from a line outside the page crops are not shown.' : '');
 (function(){ const F = DATA.focus || []; if (!F.length) return;
   const box = $('focus'); box.hidden = false;
-  $('focusNote').textContent = (DATA.focusNote || '') + (DATA.focusNote ? ' ' : '') + 'Tap one to see it on its line. In the piles below these signs have a dashed frame and a "?".';
+  $('focusNote').textContent = (DATA.focusNote || '') + (DATA.focusNote ? ' ' : '') + 'Tap one to see it on its line. In the piles below these signs have a double frame and a "?".';
   const wrap = $('focusTiles');
   const missing = F.filter(f => !itemBySid[f.sid]).map(f => f.sid);
   if (missing.length) $('focusNote').textContent += ' ' + missing.length +
