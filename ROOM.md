@@ -13319,3 +13319,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 21:52 | FIX-FM16 worker | claim: FIX-FM16 corrections from AUDIT s.5 FV-MS18f/g/h in eckert-1864 (box 60 min, cap USD 2) for LANE LEDGER (account 1)
 2026-10-09 21:52 | KEY-CANBY (worker, Opus) | hdl take (21:5x UTC 9 Oct by date -u): 2 requests, mssEC 41 p.17 (pointer 334) info.json + one native region of lines 1-8; for LANE LEDGER (account 1)
 2026-10-09 21:52 | KEY-CANBY (worker, Opus) | hdl release: 2 requests (1 info.json, 1 IIIF region at native), both 200; session total 2; for LANE LEDGER (account 1)
+2026-10-09 21:52 | FV-MS18i (Opus verifier) | claim: eckert-1864 first audits E352 E353 E358 + N1 confirms E354 E360 (MS18-R5 rows); cap USD 7, box 100 min to 23:33 UTC; AUDIT.md "## AUDIT (FV-MS18i)" for LANE LEDGER (account 1)
