@@ -1,0 +1,17 @@
+line	seg	order	gloss	signs	note
+L05	s1	1	Jouir	1 9 m w	sign 2 is a c/ç shape with a descending tail, closest to 9 but may be NEW:c-with-tail; the first 1 sits slightly left of where the gloss starts
+L05	s1	2	+	0 0 v' 0'	the gloss is a single cross with a dot (unexpanded mark); v' = v with a tall vertical stem; 0' = 0 with a tall stem (looks like δ); the span under the cross is uncertain
+L05	s1	3	prendre	w . 1 . f 3 c 0	w could be v with a flourish (s2 shows it as v); gloss starts with p-bar (pr abbreviation)
+L05	s1	4	le	4 1	a small "c" follows "le" in the gloss; it may be the start of the next word
+L05	s1	5	chambz	# T 1 z p f	gloss is abbreviated (cha-/chan- + "bz"), reads roughly "chambre"; p is written as xp
+L05	s1	6	dr	# 1 . m 0	gloss "dr" (de?); boundary between this word and the previous one is uncertain
+L05	s1	7	+	0' y	gloss is a cross (unexpanded mark); 0' = 0 with a tall stem
+L05	s1	8	bssou	a f v 1	gloss "b·ssou" or "b·fou"; letters unclear; may run on into the next gloss word as one name
+L05	s1	9	nafiancl	4 p 0' a a . 1 .	gloss roughly "na+iancl", with a cross/long-s written through it; 4 has a cross stroke below it (4 over t); p is an r/y loop shape and could be NEW
+L05	s1	10	quil	# 0 f v'	v' = v with a tall stem
+L05	s2	11	mia	# T 1	T is drawn slanted and could be x
+L05	s2	12	egraune	m v a sq 3	gloss read as "·egraune"; uncertain
+L05	s2	13	dr	1 . 0'	the gloss cross of the next row sits over 0'
+L05	s2	14	+	-	cross mark in the gloss, directly over the 0' of the previous row
+L05	s2	15	sluth	# y c n 1 :	gloss partly unclear; an ink blot covers the area around n 1, so n is uncertain (could be m) and should be NEW:n-shape; ":" is a colon-like double dot before the clear word
+L05	s2	16	CLEAR:mais	-	clear closing word with a large flourished M; could be "Mars"
