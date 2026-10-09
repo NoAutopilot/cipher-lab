@@ -34,7 +34,7 @@ the candidate piles in sorted order, never which one a read chose).
   24/28, L04 35/29, L05 28/21, L06 26/26, L07 26/27, L08 21/21, p2c L01 26/32, p2c L02 16/19. A connected-component cut
   joins and splits this hand's signs, so a tile is mapped by order and kept **only where the overlay shows every box from
   the line start to the tile is one whole sign** (or the errors before it are visibly one speck plus one two-sign box, L05
-  pos 10). A row-ink-profile column cut on the region images was tried first and dropped (box counts 13-18 per line against
+  pos 10). A row-ink-profile column cut on the region images was tried earlier and dropped (box counts 13-18 per line against
   20-32 positions). One mark is unioned into its tile box on the check (p1c_L08_3, the ring above: `overlay_checks.tsv`
   union_k).
 
@@ -51,9 +51,9 @@ the candidate piles in sorted order, never which one a read chose).
   units built with `tools/sign_sorter.py --title T --signs --labels --pages --focus --no-preflight --no-register` into
   scratch: f152r 1 pile 4 tiles 0 skipped; Spinelli 1 pile 5 tiles 0 skipped (not committed, not published).
 
-## Commits (sha256, first 16 hex)
+## Commits (sha256, leading 16 hex)
 
-Commit 04073a33b: f152r/boxes.tsv 8ba71cb88eefd964, f152r/focus.tsv 4add4aa793ad035b, f152r/labels.tsv e86ede788538e70f,
+Commit ea70b7eb1 (rebased onto origin/main before push): f152r/boxes.tsv 8ba71cb88eefd964, f152r/focus.tsv 4add4aa793ad035b, f152r/labels.tsv e86ede788538e70f,
 f152r/signs.tsv 5a03bb3624589b3f, spinelli/boxes.tsv 9cb544981f300962, spinelli/focus.tsv a90a29e177fe2c41,
 spinelli/labels.tsv 6422eb6d5bfe51d2, spinelli/signs.tsv 14dafed5bc0b9216, overlay_checks.tsv aa5da6f27cf18374,
 spinelli_lineboxes.tsv 8bb39403be4d0ae7, build_boxes.py da83099d54b7952a, spin_join.py 49b4eeb825ed2432, build.sh
