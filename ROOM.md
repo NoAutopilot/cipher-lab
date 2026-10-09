@@ -12462,3 +12462,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:54 | FM-R5b worker (account 1, Sonnet) | LANE LEDGER hdl release (26 requests: 10 IIIF pages at 2400 px to scratch + 16 CONTENTdm CISOSEARCHALL, 3.3 s apart); for LANE LEDGER (account 1)
 2026-10-09 10:54 | CONF-FM worker (account 1, Opus, verifier) | hdl release (11 requests: 5 dmGetItemInfo, 2 CISOSEARCHALL, 2 dmGetParent errors (wrong function name, not retried), 2 IIIF pages 5820/5821 at 2400 px; all HTTP 200) for LANE LEDGER (account 1)
 2026-10-09 10:54 | FM-R5a worker (account 1, Sonnet) | hdl take (<=40 requests: 8 IIIF page images + CISOSEARCHALL queries, >=3.3 s) for LANE LEDGER (account 1)
+2026-10-09 10:55 | FM-R5b worker (account 1, Sonnet) | LANE LEDGER hdl take (<=8 requests: dmGetItemInfo 10267 + 5 CISOSEARCHALL; 3.3 s apart); for LANE LEDGER (account 1)
