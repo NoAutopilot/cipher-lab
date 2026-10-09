@@ -1,0 +1,10 @@
+T1 agrees seed 777: real 95; control mean 33.79, p99 48, max 56, n 2000; p = 0.0005 gate PASS
+T2 reconciled seed 777: scorable 48; real 34; control mean 3.85, p99 13, max 18, n 2000; p = 0.0005; gate PASS
+T2 reconciled, 46 override undone seed 31337: scorable 48; real 33; control mean 3.81, p99 12, max 19, n 2000; p = 0.0005; gate PASS
+T2 blind passA49_u.tsv alone seed 31337: scorable 48; real 33; control mean 3.81, p99 12, max 19, n 2000; p = 0.0005; gate PASS
+T2 blind passB49_u.tsv alone seed 31337: scorable 49; real 30; control mean 3.87, p99 12, max 19, n 2000; p = 0.0005; gate PASS
+UP worker gloss seed 777: real 23; control mean 15.52, p99 19, max 21, n 2000; p = 0.0005; gate PASS
+UP worker gloss, 0021 without split eine seed 31337: real 23; control mean 15.55, p99 19, max 20, n 2000; p = 0.0005; gate PASS
+UP blind glossA20u, 0021 without split eine seed 31337: real 15; control mean 12.91, p99 16, max 17, n 2000; p = 0.0925; gate FAIL
+UP blind glossB20u, 0021 without split eine seed 31337: real 16; control mean 13.44, p99 17, max 18, n 2000; p = 0.0535; gate FAIL
+UP 0020u decoded by C values: e.ne..wische.de...e..r....i.er...ne..c..eren

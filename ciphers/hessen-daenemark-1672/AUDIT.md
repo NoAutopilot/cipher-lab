@@ -230,3 +230,52 @@ not run for that reason.
 
 **Requests:** none (disk only). Vision: 4 looks by this verifier on native crops (2 key-255 table crops, 1 four-line gloss
 montage, 1 zoom/comparison montage); no subagents.
+
+## V-BRANDT (9 Oct 2026, 03:16-03:3x UTC by date -u; LANE FAMILY-A2e, account 2): design audit of BRANDT-GATE and BRANDT-UP (Brandt pool, Dänemark 131)
+
+Verifier: separate session from BRANDT-TX, BRANDT-GATE and BRANDT-UP; disk only, no requests. Script: `dk131_brandt/v_brandt.py` (`--check` against
+`v_brandt.out`): re-runs all three gates at fresh seeds (777, 31337, n 2000) and the blind-input sensitivities below. Solvers' own scripts: `grade_up.py --check`
+OK, `make_pairs.py --check` OK, `score_up.py` reproduces 23 / p99 19 exactly. **N-class not assigned: design audit only** (the template's search steps 2-3 were not run).
+
+**PREREG order (git).** `main` was re-rooted in a squash at 52d3eed54 (02:45:54 UTC), so `git log main` shows BRANDT-TX's and BRANDT-GATE's files all
+"added" at 02:45; the original commits survive on `origin/wip/sorter-tray-2026-10-09` and give the true order: PREREG-BRANDT-TX 50e2da823 01:14:41 <
+alignment results 9727b86a2 01:20:22; PREREG-BRANDT-GATE 13865ab70 02:19:51 < gate scripts + gate_agrees.out ef2edff5f 02:23:40 < ciphertext_0049.tsv,
+gate_0049.out, values_gate.tsv 25281bd61 02:26:02; PREREG-BRANDT-UP + score_up.py c0e98b8fa 02:52:02 < results e865b7e55 02:54:50. **Holds** for all three.
+Not provable from git: that ciphertext_0049.tsv and ciphertext_0020u/0021.tsv were final before scoring (each was first committed with its score); the
+blind passes test below makes that question moot for test 2, not for BRANDT-UP.
+
+| gate | as reported | verifier re-run | holds? |
+|---|---|---|---|
+| BRANDT-GATE test 1, agrees on 0020 | 95 vs max 54, p 0.0005 | 95 vs mean 33.79, p99 48, max 56 (seed 777) | **holds numerically; not independent evidence** (below) |
+| BRANDT-GATE test 2, 0049 held out | 34/48 vs p99 12 | reconciled 34/48 vs p99 13 (seed 777); 46 override undone 33/48 vs p99 12; **blind pass A alone 33/48, blind pass B alone 30/49, both vs p99 12** | **holds**, and does not depend on the worker's reconciliation |
+| BRANDT-UP LCS, 0020 head + 0021 | 23 vs p99 19, p 0.0005 | worker gloss 23 vs p99 19 (seed 777; same without 0021's split "eine"); **blind glossA20u 15 vs p99 16, p 0.093: FAIL; blind glossB20u 16 vs p99 17, p 0.054: FAIL** | **holds only on the worker's gloss reading; not independent evidence** (below) |
+
+1. **Test 1 is a confirmation of an already-seen number, not an independent test.** Its statistic, pairs and alignment parameters are exactly those of
+   BRANDT-TX's `explore_agrees.py`; the real value (95) was on file before PREREG-BRANDT-GATE was written, and the statistic was chosen after the registered
+   CONSISTENT statistic FAILed on the same pairs. Only the control's seed and n changed. Its p-value says the control distribution is stable, not that a fresh
+   prediction came true. It is evidence that the 0020 gloss is aligned to these groups, already shown; it carries no weight beyond BRANDT-TX's exploratory row.
+2. **Test 2 is the independent evidence and it holds.** key_0020.tsv was committed 01:20, 0049 fetched after 02:19; the score passes on each blind Sonnet pass
+   alone, so the 84.8% two-pass agreement and the worker's 10 settled columns do not carry it. The 0049 agreement level is enough for the gate; it is not
+   enough for every per-value grade (item 4).
+3. **BRANDT-UP's LCS gate does not hold as independent evidence.** Both blind passes read margin line 1 as "Mr Hurault" / "Der Hertzogh" and line 2 as
+   "zunt" / "zu[?]"; the worker, with values_gate.tsv in view, settled them to "eine heuraht" / "zwischen", the words the C values spell. On either blind gloss
+   the gate FAILs. The worker's reading may well be right (259 = "Heüraht" is glossed again on 0021; the C values alone decode the head block to
+   "e.ne..wische.de...e..r....i.er...ne..c..eren", which reads as German), but a gloss settled by a reader who knew the key cannot be the known answer
+   that tests that key (rule 3: a control and target must not share the thing being tested). The control itself can differ from the target (permuted
+   letters change the sequence), so this is a contamination problem, not a non-test by construction. Fix: one blind read of margin lines 1-2 by a reader not
+   shown values_gate.tsv or the decode (one Sonnet call, ~1.5), then rescore with score_up.py unchanged.
+4. **The 16 values are gloss-derived, C by rule 4, not S.** Each value's letter is the period decipherer's letter, read off two leaves; the alignment and
+   its gates only license which letter sits over which group. Three of the 16 rest on one 0049 token that the worker settled against a blind pass:
+   **46 = d** (both blind passes read the gloss "a"; the worker's "d" override was made with key_0020 on disk), **35 = a** (pass B read the group 75),
+   **94 = n** (pass B read 44). 46 is regraded **M** (its only out-of-sample witness is contested; 0020 alone, 10/12 d, is in-sample); 35 and 94 stay C on
+   pass A's blind reading, noted. 52 = e rests on 1 occurrence on 0020 plus 1 on 0049, C but thin. **After audit: 15 values C, 9 M.** values_gate.tsv is
+   left unchanged (BRANDT-062 is running on it as a frozen input); the 46 regrade is flagged in ROOM.md for the lane orchestrator to apply.
+5. **Grades.** BRANDT-GATE: 0049's 61 glossed groups are read by the period gloss itself (text known); token grades follow values_gate.tsv minus 46.
+   BRANDT-UP: the 23 C tokens of reading_up.tsv revert to **M** until item 3's blind re-read rescored passes (52 tokens: C 0, M 52); reading_up.tsv is left as
+   the solver's record, corrected here and in NOTES/HYPOTHESES. No S or H token exists in the Brandt pool; no unglossed text has been decoded.
+6. **Depth (rule 4a), Brandt pool:** D1 "fragments read" -- every cipher stretch read so far is read by its own period gloss; under our values only gloss-
+   matched letters, no unglossed clause above the authentication distance. Verifier assessment; status.json not written, `tools/depth_check.py` not run.
+7. **Postmortem:** a known-answer test was scored on a gloss settled by a reader who knew the key; and a re-registered exploratory statistic was counted as a
+   second gate. Rule for the next Brandt job (BRANDT-062): any gloss used as a known answer is settled blind to values_gate.tsv, and only fresh data counts.
+Requests: none. Vision: none. Safe sentence: "A period letter-by-letter gloss on two Brandt leaves (Dänemark 131, 1672) fixes 15 of the cipher's letter
+values; a held-out leaf confirms the 0020 alignment (34/48 vs chance p99 12, also on each blind pass)." Unsafe: "the Brandt cipher is read" / "23 tokens C on 0020's head".
