@@ -1613,3 +1613,93 @@ found; novelty not classified.
 Waits on the Marburg (HStAM) reply for a list-A witness of codes 140/145/146 (ASKS row 48; MAIL-3, 28 Sept 2026).
 - Third blind pass on the two glyphs around code 104 (long-s, ch?), told only that Kurrent ch and long-s occur by numerals: does L2 read 'offentlich sich'. S, ~$0.8, D3-5551's next
 - Align the 4613/4615-circle siblings for any occurrence of 140, 145 or 146 (D3-5551's Remaining gaps). S, ~$1, interlinear_align.py
+
+## JVN-104: third blind pass on the 104 glyphs, and a sibling check for 140/145/146 (9 Oct 2026, account 4, LANE DEFAULT-account-4-20261009-1051)
+
+Worker JVN-104 (Opus), brief `.claude/briefs/runs/2026-10-09-account4-default-1051-jobs.md` J2, from 11:04 UTC by date -u.
+Prior work: `tools/prior_work.py jan-van-nassau-1572-75 --item-spec 'shelfmark=WVO 5551;folio=p3;date=1574-04-17;...' --step-type transcribe --fetch`
+-> verdict plaintext CLEAR; step LEAD 1 (`1-own`, this worker's own claim line), exit 4; recorded CLEAR in prior-work.tsv
+(D3-5551 left the 104 glyphs as a named next step, not done). Every other row CLEAR (8 Oct records).
+
+Image: one fetch of `resources.huygens.knaw.nl/media/wvo/images/05000-05999/05551.pdf` (200), p3 rendered at 300 dpi with
+pdftoppm (2481x3508), scratch only. Crop command:
+`python3 tools/iiif_lines.py --image <scratch>/p3-3.png --region 530,190,1770,220 --out <scratch>/crops --prefix p3 --debug`
+-> 2 line crops (p3_L01, p3_L02). Detail crops (scratch, 300 dpi px): target X3 = (1060,290,1500,400), the stretch
+"103 . [g1] [g2]104 . [g3] 146 . 127"; controls from the body of the same page, same hand: X1 = (950,500,1150,630) "ſich" in
+"laſſen ſich" (body line 2), X2 = (960,730,1090,880) "ſich" in "haben ſich" (body line 4), X4 = (720,500,960,630) "laſſen"
+(negative: long-s with no ch). Order shuffled; the reader is not told which crop is which, nor any expected reading.
+
+**Pre-registered question (written before the call):** does L2 read "offentlich ſich" -- i.e. the glyph pair after 103 is
+Kurrent "ch" (completing "offentli-ch"), the glyph before 104 is long-s, and the glyph between 104 and 146 is Kurrent "ch"
+(so "ſ[104=i]ch")? **Gate:** YES only if the reader (i) reads both positive controls X1 and X2 as "sich"/"ſich", (ii) does
+not read X4 as containing "ch", and (iii) on X3 reads long-s before 104 AND "ch" between 104 and 146. If (i) or (ii) fails,
+the pass is a non-test (the reader cannot see Kurrent ch in this hand). If (i)-(ii) pass and (iii) fails: NO for this pass.
+The glyph after 103 is reported but not part of the gate (D3-5551's three readers split rſ / ꝛſ / ch on it).
+
+### (a) Result: non-test (controls failed)
+
+One Sonnet subagent call (agent ae2602469b5ad1296), five crops (X1-X4 plus the X3 line for context), no other input.
+
+| crop | truth | reader | gate |
+|---|---|---|---|
+| X1 | ſich (control +) | "Pſz"/"Pſt" (med/low) | **fail** (not sich) |
+| X2 | ſich (control +) | "Sch"/"Sef" (low) | **fail** (not sich) |
+| X4 | laſſen (control -) | "Con Pm"/"Cow Pwn" (low) | pass (no ch) |
+| X3 (a) after 103 | ? | "rh" (med); alt ſh, rt | not gated |
+| X3 (b) before 104 | ? | **ſ long-s, attached to the 1** (med-high); alt f | -- |
+| X3 (c) 104-146 | ? | **"ch"** (med) then a separate "ʒ" (tailed z / 3-form, below the line) before 146; alt ſch, sh | -- |
+
+Gate (i) fails on both positive controls, so by the pre-registered rule this pass is a **non-test**: the reader cannot
+see Kurrent "ſich" in this hand on these crops, and its X3 calls license nothing. Recorded for the next reader only:
+(1) it is the fourth reader to put a long-s against 104 (A, B, W on 8 Oct, now this one); (2) it reads "ch" between 104 and
+146 (as W did on 8 Oct; A "ſ[?]h[?]", B "ꝛ"), and adds a fifth mark, a tailed ʒ before 146, that no earlier reader
+listed -- possibly the 4 of 146's own loop or a separate sign; (3) it reads the glyph after 103 as "rh" and notes it has the
+same h-loop as the post-104 "ch", the shape W read as "ch" there too; (4) in the context line it reads **140 as 110**, as
+pass A did on 8 Oct (now 2 readers 110, 4 readers 140; the 25 Sept and 8 Oct reconciliations kept 140). Nothing is
+changed in `ciphertext_5551.tsv`; "offentlich ſich" stays a proposal, 1-2 of 5 readers, no passed control.
+
+### (b) Siblings for 140/145/146
+
+Disk only, no network. `../lodewijk-van-nassau-1573-74/ciphertext_sib.tsv` (4613 and 4615, the two period-glossed
+list-A siblings from which key_full was aligned): 1,102 numeral tokens (4613: 580, 4615: 522), of which 23 in the
+121-151 band (121 x10, 132 x5, 123 x3, 122 x2, 128, 136, 141) and **zero occurrences of 140, 145 or 146**;
+`pairs_sib.tsv` likewise has none. So `tools/interlinear_align.py` has no (group, span) pair carrying these codes and was
+not run: there is nothing to align and nothing for a control to measure (rule 3 control not applicable to a non-run).
+4613 does carry the single 136 behind key_full's 'uingt' (M), already known.
+
+The circle's unglossed list-A letters do carry them (`axnames/still_unread.tsv`: 140 x26 in 4610/4611/5810/5811, 145 x24 in
+4610/4611/5797, 146 x11 in 4610/4611/5797), and the Lodewijk folder's GAPS28/31/33/39 already ran four instruments on
+that band (char-LM, word-segmentation, interlinear_align against Groen's print, a blind local-window read); none licensed
+a value for 140/145/146 (Lodewijk NOTES.md gap 1). Not repeated here.
+
+Two further list-A witnesses on this folder's disk (Jan to Willem, same table: their runs read under key_full), each
+with a period gloss on the leaf but **not at these codes** (context only, nothing graded):
+
+| letter | run | under key_full | gloss on leaf | reading of the code from context |
+|---|---|---|---|---|
+| 5550 (25 Dec 1573) | p2-18 | 103=i[Ihr] 100=h[eur] 21=r **140** 115=l 85=e 36=u 4=n | Ihr / eur over 103, 100 only | "ihr ? leun..." -- 140 NULL or e; undecided |
+| 5557 (31 May 1574) | 10 | b e f e s t i g e + clear 'i' + **145** | Befatzung (pos. approximate) over 91 | "befestige(i)?" -- 145 n, t or NULL; undecided |
+
+Both are single unglossed occurrences, so neither is a C or H witness (rule 4); they do not move 140 or 145 off U.
+5557 run 11 reads "besatzung befestigung" cleanly under key_full, which confirms the key holds for 5557's runs despite
+NOTES line "5552 and 5557 ... postdate the switch (new table)" -- a correction for that line, logged, not edited.
+
+Requests: resources.huygens.knaw.nl 1 (the 5551 PDF, 200, scratch). Subagents: 1 Sonnet blind pass. Report what was found and
+where it was not found; novelty not classified.
+
+## Remaining gaps (JVN-104, 9 Oct 2026)
+Read so far: 22 of 28 letter tokens H/C/S in 5551 (78.6%, D3-5551 recount, unchanged by this pass)
+- 140/145/146 values in 5551 - blocker: waiting-on ASKS row 48 (the Marburg HStAM reply, MAIL-3) for a list-A witness carrying these codes; 4613/4615 carry none (this pass), 5550/5557 carry 140/145 unglossed
+- the two glyphs around 104 (ſ, ch) - blocker: not-attempted; this pass's Sonnet reader failed both same-hand ſich controls, so it was a non-test; next: one blind pass by a reader that first passes a same-hand "ſich" control, e.g. an Opus reader or the owner's sign sorter, ~$1.5
+- 136 null vs 'vingt' - blocker: open-codes; settles only with another list-A occurrence (4613's one 136 is the 'uingt' source)
+- line-end word L2-19 beyond the edge - blocker: illegible; cut by the leaf (D3-5551)
+
+## Escalation (JVN-104, 9 Oct 2026)
+- [x] siblings: 4613/4615 counted (no 140/145/146), 5550/5557 run contexts decoded under key_full, this pass
+- [n/a] clear-pages: 5551 pp.1-4 carry no clear copy of the two cipher lines (D3-5551)
+- [x] known-keys: key.tsv, key_full, key_4614/5801/7205/7206 checked by D3-5551; no C/H value for the three codes
+- [x] print: Groen IV/V/Supplement and Gachard III read (check-solved 25 Sept 2026); nothing for 5551's cipher lines
+- [retired] key-rebuild: band instruments char-LM, word-segmentation, interlinear_align and local-window read retired for this band (Lodewijk GAPS28-39)
+- [ ] image-check: a reader that passes the same-hand ſich control reads the 104 glyphs (planned step above)
+- [x] retry: D3-5551 two passes plus this third pass on the 104 glyphs
+Verdict: keep going: 2 internal gaps; cheapest next: control-first blind read of the 104 glyphs, ~$1.5
