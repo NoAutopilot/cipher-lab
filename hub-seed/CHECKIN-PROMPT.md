@@ -72,3 +72,9 @@ STATE DELTA 15:0x UTC 9 Oct (successor session_01VQDEedJCaaN7fFPGcNPUUD, depth 4
 ledgered (31.25). Account 4 live: DEFAULT-1340 lane (wave 4, its check-in 15:07) + AUD2-LEDGER-22/23/24 (14:47) + AUD2-LEDGER-25 (re-tagged from account 3,
 spawned 14:56, session_01XeXspN1GAqj3QembhYB2cF): the orchestrator ledgers and archives those four on their done lines. Any further AUD2-LEDGER-* row LANE LEDGER
 queues as account-3: re-tag and spawn the same way. Account 2 refill 15:10. Nothing else queued for the orchestrator but SORTER-RERENDER-A3 (account 3 only).
+STATE DELTA 15:1x UTC 9 Oct: owner's decision (relayed 15:0x): LANE TX-ENGINEER-2 opened on account 4 (Fable, cap = the window, brief
+.claude/briefs/runs/2026-10-09-account4-lane-tx-engineer-2.md; round 0 = power audit + headroom pool + gate controls, then 10-15 pre-registered
+experiments; success S1-S5 fixed in the brief). The lane ledgers/archives its own workers; the orchestrator ledgers the lane. TX-CONFIRM-SET-2
+queued for account 1 (its :40 dispatcher). At each check-in: get_session on the lane, read its ROOM check-in line (experiment running, eval
+looks, cost vs window), ping by send_message if silent past its own check-in time, successor from the brief if silent 60 min. The owner report,
+when he asks, leads with the first campaign's result and this lane's round-0 numbers.

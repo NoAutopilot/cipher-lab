@@ -7339,6 +7339,17 @@ wait-only 0 missing; no_cracks NO-NEXT 0 (119 MISSING card rows wait for an acco
 positives, the Sept 23-24 stale-claim tail, no new (h) dropped request since 13:00; ledger_check duplicates pre-existing (lines 426-461). CLOSEST: Blathwayt
 (D2 kept) and the eckert Fort Monroe second audits (a class change there rebuilds the board). Next check-in 15:31.
 
+Owner's decision 15:0x UTC 9 Oct (8:0x am PT), relayed mid-check-in: "point Fable at the results, iterate 10-15 more experiments, keep going;
+make sure it knows what success means and the experiment is set up to be a genuine success, not a failure of our setup". Opened LANE
+TX-ENGINEER-2 (account 4, Fable, cap = the account-4 window, brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer-2.md). The
+brief's reading of the first campaign: with 15 held-out errors in 376 signs and a p<0.01 sign test, an instrument removing a third of the
+errors cleanly could not pass (rule 3's no-headroom shape), so most FAIL rows were non-tests at that N. Round 0 therefore runs before any
+instrument: a power audit of every unit and pool (tools/tx_power.py), a held-out pool grown to >= 60 baseline errors from hands reading at
+8-25% (truth from key + known text only), and the gate's own controls (a planted 30% fix must pass >= 80% of draws; a no-op must pass <= 1%).
+Success is fixed as S1 (held-out error lower on that pool, paired, at the pre-registered p, reported as signs per 1,000), S2 (one look at a
+fresh confirm item built on account 1, TX-CONFIRM-SET-2 queued), S3 (a live letter: tokens the key licenses at S), S4 (sorter doubt list and
+value curve), S5 (cost per 100 signs). Stop rule: the window or 15 experiments plus the combined pipeline, never three null results in a row.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
