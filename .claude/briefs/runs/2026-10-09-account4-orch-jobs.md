@@ -64,3 +64,11 @@ pushed before any score: the known-answer control is CONINGTON/SHIRLEY from PRER
 Also file the LOCAL-QUEUE.tsv row the NEAR row says is missing (kind: newspaper page -- the original Times Agony Column page, 16 May 1865,
 for the owner's local runner: Times Digital Archive or Gale via his library, one page, what to send back = a screenshot of the ad), then
 update the NEAR.md row (numbers, last touched, next step). `python3 tools/near_check.py` must not warn on this row afterwards.
+
+### FIX-E262 (account-1; Opus 5.5; cap 3; box 45 min) -- from AUD2-LEDGER-16's second audit, 9 Oct 05:38 UTC
+eckert-1864 E262 (AUDIT.md "## AUDIT 2 (AUD2-LEDGER-16)"): apply the two corrections the second audit names -- "Whiskey" -> "[Troops]"
+(a code value, bracketed as inferred) and "hoe man" -> "Homan" -- through the folder's own decode layer (print/ or exceptions, never the
+transcription), re-run `decode.py --check` (exit 0), propagate to status.json (depth fields, `tools/depth_check.py` exit 0) and to
+second-opinions/PROMPT-chatgpt-e262.md if it exists, the same shape as the ledger4 jobs file's FIX-FM6 section
+(.claude/briefs/runs/2026-10-09-acct1-lane-ledger4-jobs.md). NOTES "## FIX-E262 (9 Oct 2026, account 1, for orchestrator (account-4))":
+each change, grade before/after, decode --check output; file_shrink_guard on every touched file. No new reading beyond the two fixes.
