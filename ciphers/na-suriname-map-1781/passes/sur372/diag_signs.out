@@ -1,0 +1,38 @@
+oud: tokens 635  C 436  M 199  (68.7% C)
+nieuw: tokens 635  C 462  M 173  (72.8% C)
+
+code	n	oud	nieuw	gloss letters at aligned positions
+3	89	e	e	e:81 -:7 o:1
+[ij]	55	n	n	n:35 m:11 -:8 p:1
+7	41	e	e	e:36 -:5
+[lambda]	38	t	t	t:34 -:4
+o	37	r	r	r:32 n:4 -:1
+[psi]	27	s	s	s:24 -:3
+[hash]	27	o	o	o:27
+r	27	t	t	d:13 t:9 -:5
+[delta]	25	a	a	a:22 -:3
+f	23	i	i	i:18 -:5
+d	22	b	b	e:10 b:7 -:4 t:1
+9	22	i	g	g:16 l:5 -:1  <-- keys differ
+c	20	l	l	l:16 -:4
+w	18	d	d	d:14 -:3 e:1
+y	17	m	m	n:11 -:4 m:2
+4	13	w	w	w:8 n:3 m:1 -:1
+x	13	q	q	a:10 -:3
+k	12	o	o	o:12
+5	12	u	u	u:12
+[sigma]	11	b	b	h:6 -:2 p:1 f:1
+b	11	k	k	k:9 -:2
+h	10	n	n	n:8 -:2
+n	10	z	z	z:10
+e	10	e	e	u:6 -:2 e:2
+t	10	y	y	i:8 -:2
+1	7	?	x	-:5 a:1 p:1  <-- keys differ
+[other:curly]	6	?	?	c:6
+[amp]	5	f	f	f:5
+[sh-lig]	4	?	h	h:3 -:1  <-- keys differ
+a	4	e	e	e:4
+8	4	g	i	i:4  <-- keys differ
+S	2	p	p	p:2
+6	2	s	s	s:1 b:1
+[omega-bar]	1	f	f	f:1

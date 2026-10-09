@@ -1,0 +1,52 @@
+lineA	lineB	op	posA	A	B
+L02	L02	delete	0	4 .	
+L02	L02	replace	3	h	[sh-lig]
+L02	L02	replace	44	h	[sh-lig]
+L04	L03	replace	0	n	w
+L04	L03	replace	17	s	[sh-lig]
+L06	L05	replace	29	g-like loop]	z-like]
+L06	L05	replace	32	g-like loop]	z-like]
+L06	L05	replace	41	&	[amp]
+L08	L07	replace	7	9	g
+L08	L07	replace	33	9	g
+L10	L09	replace	9	t	1
+L10	L09	replace	13	[I-bar]	F
+L10	L09	replace	36	&	[amp]
+L12	L11	replace	23	[ij]	S
+L12	L11	replace	25	[ij]	y
+L14	L13	replace	9	o	0
+L14	L13	replace	15	3	s
+L14	L13	replace	22	[sigma]	[other:long s]
+L14	L13	delete	24	.	
+L14	L13	replace	37	b	6
+L14	L13	replace	41	o	0
+L14	L13	replace	43	b	6
+L14	L13	delete	45	.	
+L14	L13	replace	47	y	[ij]
+L16	L15	replace	19	o	0
+L16	L15	delete	22	.	
+L16	L15	replace	30	o	0
+L16	L15	replace	40	h	[sh-lig]
+L16	L15	replace	44	g-like loop]	z-like]
+L18	L17	replace	21	&	[amp]
+L19	L19	replace	1	o	0
+L19	L19	replace	3	&	[amp]
+L19	L19	replace	8	g-like loop]	z-like]
+L19	L19	replace	29	4	y
+L21	L21	replace	0	o	0
+L21	L21	replace	13	[sigma]	[other:phi-like circle with stroke]
+L21	L21	replace	17	g-like loop]	z-like]
+L21	L21	replace	25	-	—
+L21	L21	replace	29	f	[sh-lig]
+L23	L23	replace	20	9	g
+L23	L23	replace	33	[ij]	y
+L23	L23	replace	39	9	g
+L25	L25	replace	3	&	[amp]
+L25	L25	replace	7	d	3
+L25	L25	replace	11	9	g
+L25	L25	replace	13	e	c
+L25	L25	replace	18	y	[ij]
+L25	L25	replace	35	o	0
+L25	L25	replace	37	y	[ij]
+L27	L27	replace	31	g-like loop]	z-like]
+L27	L27	insert	46		.

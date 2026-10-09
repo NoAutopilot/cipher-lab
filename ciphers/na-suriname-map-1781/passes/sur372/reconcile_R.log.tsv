@@ -1,0 +1,28 @@
+lineB	A	B	R	rule
+L02	4 .			crop look
+L02	h	[sh-lig]	[sh-lig]	crop look: long-s loop sign
+L02	h	[sh-lig]	[sh-lig]	crop look: long-s loop sign
+L03	n	w	w	crop look
+L03	s	[sh-lig]	[sh-lig]	crop look: long-s loop sign
+L09	t	1	1	crop look
+L09	[I-bar]	F		crop look
+L11	[ij]	S	[ij]	crop look
+L11	[ij]	y	[ij]	crop look
+L13	3	s	3	crop look
+L13	[sigma]	[other:long s]	[sigma]	crop look
+L13	.			stray dot (B none)
+L13	b	6	b	crop look
+L13	b	6	b	crop look
+L13	.			stray dot (B none)
+L13	y	[ij]	y	crop look
+L15	.			stray dot (B none)
+L15	h	[sh-lig]	[sh-lig]	crop look: long-s loop sign
+L19	4	y	4	crop look
+L21	[sigma]	[other:phi-like circle with stroke]	[sigma]	crop look
+L21	f	[sh-lig]	f	crop look
+L23	[ij]	y	y	default B
+L25	d	3	d	crop look
+L25	e	c	c	crop look
+L25	y	[ij]	y	crop look
+L25	y	[ij]	y	crop look
+L27		.		stray dot (A none)
