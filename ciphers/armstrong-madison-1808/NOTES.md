@@ -4273,3 +4273,35 @@ draft outreach/armstrong-keyhunt-monroe-papers.md, which the owner sends. Whethe
 unknown (Madison 15 May 1808 says the office lacked the target's cipher, which fits a private Armstrong code but proves nothing).
 No reading, no class change.
 
+
+## Campaign step H81 (2026-10-09 00:28 UTC)
+
+New instrument (TOOLS-TOMO, 8 Oct 2026): `tools/freq.py --repeats 2 --maximal` (Tomokiyo polygram practice 6), never run on
+this target before. Shorthand and star marks (`*`, `**`) are treated as breaks, so the 369 numeral groups fall into 30 segments.
+Scripts: `h81/repeats_null.py` (target vs shuffled-order null), `h81/positive_control.py` (matched simulated letters);
+outputs `h81/output.txt`, `h81/positive_control.txt`. Offline, no vision calls, no network.
+
+| stream | N | repeated bigrams | repeated trigrams |
+|---|---|---|---|
+| target (numerals only, 30 segments) | 369 | 2 ("12 1", "17 1640") | 0 |
+| shuffled-order null, 1,000 draws | 369 | mean 1.86, p95 4 (P(null>=obs) 0.57) | mean 0.01 |
+| simulated letters, ARM-DESIGN designs, en18 plaintext, cut at the target's own 30 breaks, 60 per design | 369 | means 21.9-32.5; minimum over 360 sims 8; p05 12-23 | means 6.2-8.1; >=1 trigram repeat in 95-100% |
+| real THE=972 usage 15 Feb 1808 / 22 Feb 1808 (unsegmented) | 243 / 154 | 15 / 0 | 1 / 0 |
+| real WE028 usage, Erving to Monroe 5 Feb 1806 | 250 | 9 | 3 |
+
+**Result.** The target's ordered repeat structure is at the shuffled-order null: 2 repeated bigrams against a null mean of 1.86,
+no repeated trigram. Every one of the 360 simulated whole-text codes at the target's length and break pattern has at least 8
+repeated bigrams. So the control can tell a repeating word code from shuffled order at this N, and the target falls on the
+shuffled side. Two of the three real same-period usage letters of 150+ groups also repeat more (WE028 9/3, THE=972 15 Feb 15/1).
+The third (THE=972 22 Feb, 154 groups, 0/0) shows that a real letter can be repeat-free at short length.
+
+**What it does and does not say.** This is a structural statistic, not a reading, and no plaintext is claimed. It is consistent
+with three things this step cannot tell apart:
+1. The numerals are not consecutive words of one running text. The shorthand passages may carry the connective words, as
+   ARM-DESIGN's interleaving picture has it, so adjacent numerals are rarely adjacent words.
+2. Variation per occurrence (homophones or variants) is heavier than the hhom_flat model.
+3. The code is not word-level.
+
+It argues against a reading attack that relies on repeated phrases (crib pattern dragging, `--kwic` on repeated formulas,
+`running_key.py --drag`), because the target offers no repeats to anchor on. It leaves H82/H83 (frequency-band instruments,
+order-free) unaffected.

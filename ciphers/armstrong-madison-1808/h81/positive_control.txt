@@ -1,0 +1,9 @@
+target numeral groups 369, segments 30
+stream	n_sims	mean_rep2	mean_rep3	share_rep3>=1	mean_rep4	min_rep2	p05_rep2
+blockwise_WE028	60	21.93	6.17	0.95	1.98	9	13
+onepart	60	21.93	6.17	0.95	1.98	9	13
+the972_partial	60	23.52	6.95	0.97	2.53	8	12
+hdec	60	32.47	7.52	1.00	1.42	16	22
+hhom_flat	60	31.30	7.03	0.98	1.27	21	23
+twopart	60	24.32	8.10	0.98	3.60	13	14
+REAL THE972 1808-08-30_ps (N=49, unsegmented)	1	1	0	0	0

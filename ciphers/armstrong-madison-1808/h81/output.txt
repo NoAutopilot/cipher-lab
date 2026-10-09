@@ -1,0 +1,5 @@
+groups 369  segments 30  marks 35
+n	observed	null_mean	null_p95	P(null>=obs)
+2	2	1.86	4	0.567
+3	0	0.01	0	1.000
+4	0	0.00	0	1.000
