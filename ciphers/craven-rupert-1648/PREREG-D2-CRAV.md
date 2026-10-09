@@ -65,3 +65,29 @@ exactly as A1-A3 (key-true synthetic = the table enciphering itself, an upper bo
 Script: test3/coverage_a4.py --check. If NOT EXCLUDED: decode R8447 under it and report with a shuffled-key control, no reading claimed.
 Note recorded before scoring: R8450's highest glossed code read is 491 (465 'will' on f.177v; one unglossed group '965' on f.178r was not
 read with confidence); R8447 carries 4 tokens above 583 (852, 922, 1037, 1067).
+
+## Amendment A5 -- clear-context crib test (CRAV-CRIB, 9 Oct 2026, 12:4x UTC by date -u; pushed before any score)
+Runs, re-segmented by the clear words between them on the committed line crops (images/f134r_*, f135v_*; read by this worker 9 Oct 2026):
+- R1 "if it may bee done [852 63 42 29 118 / 248 404 1037]. what you commanded" (f134r.1-2 are one run, 8 groups);
+- R2 "what you commanded to bee said to [18? 183h X 409 311h 183] is done" (6 groups, one struck);
+- R3 "your highnes may also write to [40 97 / 52 35 85] & they will" (f135v.1-2, 5 groups: a name, plural "they");
+- R4 "& they will [72 60 52 65 63 / 78 95 77 167 404 68 90 64 99 85 97 / 86 65 29 107 1067 922 429]. I have done alreadie" (23 groups, a verb phrase).
+So the letter carries four runs, not five (the earlier count split R1 and R3 at line ends).
+Design model M2 (from the siblings' shape, T_8450/T_8448: low codes letters, high codes words): every code < 100 is one letter, every code >= 100
+one word or name. M2h: homophones allowed (one code -> one letter, a letter may have several codes). M2i: one-to-one (no homophones).
+Under M2, R3 is a 5-letter name; R2 is all word codes (crib test by letters not possible; recorded as untestable by this instrument);
+R4 is a verb phrase (no specific crib from the clear text); R1's letter fragment [63 42 29] has no named crib.
+Candidate cribs for R3 (fixed now, from the letter's own clear text -- Herbert, Hague -- and the parties at the Hague in Nov 1648 a
+royalist would tell Rupert to write to, "they" read as a body or a household): states, scots, dutch, lords, queen, orange, holland,
+zealand, amsterdam, rotterdam, admiralty, merchants, herbert, hague, jermyn, hyde, culpeper, cottington, hopton, nicholas, batten,
+lauderdale, lanark, ormond, inchiquin, maurice, york, brill, helvoet, french, irish, danes, swede, bohemia, elizabeth, craven.
+Test per crib: S_h = crib letter count == run length (5) under M2h; S_i = S_h and no repeated letter at two distinct codes nor two letters at
+one code under M2i. Controls (rule 3), seed 2026, 1000 draws:
+- C1 shuffled-crib (letters of each crib permuted): within-run S_h/S_i depend only on length and the letter multiset, which a permutation
+  cannot change -- C1 is identical to the target by construction for this statistic; it is computed and reported as a non-test of position.
+- C2 random-word base rate: 1000 words drawn from tools/data/en/*.txt (token frequency, length >= 3): the share passing S_h and S_i is the
+  filter's power; a crib passing a filter that >= 10% of random words pass is not evidence for that crib.
+- C3 position control (the one that can differ): for each S_i survivor, the letters it forces on R4 (codes 52, 85, 97 shared with R3) are
+  scored by English letter-frequency log-likelihood against the same crib's 1000 letter permutations; survivor's percentile reported.
+Outcome: a crib passing S_i AND above C3 p95 is a lead (grade M at most, no key); anything else is "not discriminated". No reading claimed.
+Script: test4/crib_test.py (writes test4/crib_results.tsv; --check re-derives).
