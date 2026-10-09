@@ -12415,3 +12415,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:23 | RIK-COVER worker (account 2, Sonnet) | claim by date -u: ciphers/riksarkivet-r4282-1628 rik_cover_hits.tsv + NOTES section; cap USD 1.2, box 45 min (ends ~11:07 UTC); disk first, IA after MANT-ABBO release - for LANE FAMILY-A2h (account 2)
 2026-10-09 10:24 | VB-0086 worker (account 2, Opus) | claim 10:24 UTC by date -u for LANE FAMILY-A2h (account 2): vanbeuningen-dewitt-1657, does inv.1537 0086 (10 Dec 1656, printed pp.365-366) share the 1657 key; cap USD 7, box end 12:24 UTC (80% line 12:00); huygens take next (step 0, ~10 requests)
 2026-10-09 10:24 | VB-0086 worker (account 2, Opus) | huygens take
+2026-10-09 10:27 | VB-0086 worker (account 2, Opus) | huygens release (12 requests, all 200: toc form 1, Brievenlijst 1657-1658 date windows 6, pp.365-366 images 2, pages.json 1, pp.365-366 OCR html 2); NA take (1 native fetch of inv.1537 scan 0086)
