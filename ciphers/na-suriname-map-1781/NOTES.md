@@ -3880,5 +3880,5 @@ Wollant's *plain* defence memorie of July 1782 (p.24) and Hurter's 1783 report, 
 1775, the 1790 tower, Böhm 1789, the 1835 garden). "Bastion V was behoudens een aanzet afgebroken in 1781" (p.30) agrees with the
 plan. So the "no printed transcription of the 2077 legend located" sentence (AUDIT item 4) now also covers this edition. Part (1) is
 sharpened, not answered: the "1972 Suriname en zijn historie" item is Jos Fontaine, *Zeelandia, de geschiedenis van een fort* (1972),
-deel I of the same series, which Temminck Groll says reproduces many sources in full -- queued as LOCAL-QUEUE L71 for the owner's next
-ILL. No reading, key or class changed here; the next verifier pass (VERIFY5 per the 2 Oct note) cites L41/L71.
+deel I of the same series, which Temminck Groll says reproduces many sources in full -- queued as LOCAL-QUEUE L72 for the owner's next
+ILL. No reading, key or class changed here; the next verifier pass (VERIFY5 per the 2 Oct note) cites L41/L72.
