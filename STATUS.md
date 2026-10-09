@@ -6905,3 +6905,14 @@ First check-in, 05:0x-05:4x UTC 9 Oct (10:0x-10:4x pm PT 8 Oct):
 CLOSEST (blocker line): Mercy f.22 at 488/529 S, D1 under the bar (AD 141 vs longest run 53) -- the owner's decision on the bar convention
 is the only thing between D1 and D2 on record; nothing on disk is unworked. Eckert mssEC 19/25 second audits (AUD2-LEDGER-12..17) are the
 next counts.
+
+Check-in 2, 05:49-05:5x UTC 9 Oct (10:49 pm PT 8 Oct): account 4 five_hour allowed, orchestrator context ~400k. Six account-4 workers
+done, ledgered, archived (AUD2-LEDGER-12 2.91, -13 4.87, -14 2.54, -15 4.62, -16 6.06, DEPTH-STATS-CLEAR 2.02): Eckert E252 and E258
+N3 -> N1 (printed in OR I/43 pt 1), E263 N3 -> N3 weak, the rest held; board completed readings 76 -> 89 as the second audits landed.
+LANE MQS closed 05:14 (orchestrator 8.87 by get_session; its nine worker sessions archived by the orchestrator); 26 MQS-* follow-up rows
+queued on account 4, Sonnet rows raised to Opus 5.5. BERGH-PUB (account 1) published the Bergh 1572 sorter from the owner account,
+https://claude.ai/artifact/SLHhvXfhzZzy9yjLk7BTct, ASKS 155 on the desk. XMATCH-TRIAGE (account 2, session_01WPK2dAF6x9uyLQXdKZ7uFM, done
+05:16): no real leads among 11 nightly hits; cost is account 2's to ledger. FIX-E262 queued (account 1) from AUD2-LEDGER-16's two
+corrections. LANE SIG-5 (account 1) closed 05:14 at ~8 of 60. Account 3 still silent. Desk: three (f) rows fixed in CONTRIBUTIONS.md,
+desk_check's slug match no longer counts a hyphen-suffixed sibling draft, aymeloglu-issue-mercy dated. Next check-in 06:20
+(trig_01XvcxuRPvvvxE74cv1xzkGL).

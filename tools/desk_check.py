@@ -387,7 +387,7 @@ def contributions_rows_for_slug(slug, contributions_text):
         if not line.startswith("| "):
             continue
         if (f"outreach/{slug}.md" in line or f"outreach/mailbox/{slug}.json" in line
-                or re.search(rf'\b{re.escape(slug)}\b', line)):
+                or re.search(rf'(?<![\w-]){re.escape(slug)}(?![\w-])', line)):  # a hyphen-suffixed sibling slug (bodleian-clarendon94-roe-p4) is not this slug (9 Oct 2026)
             rows.append(line)
     return rows
 
