@@ -131,3 +131,34 @@ after 7 Aug 1658 -- also note any 1657-58 letter the edition list lacks; (2) scr
 colons, VB-SCREEN's method with planted controls (cipher 1538_0210/0211, clear 1538_0206/0207 from images/), tile key in a file read after the calls;
 (3) eye-check every flagged scan at 1500 px (<= 6 fetches). Write siblings_screen_1541.tsv (scan, date, sender, cipher y/n/partial, est. groups,
 gloss y/n, printed y/n) and a NOTES section; gaps_check. No transcription, no decode. Requests service.archief.nl <= 130, >= 1.6 s.
+
+## Wave 3 (11:2x UTC 9 Oct)
+Wave 2 results: MANT-CUC pooled 124/175 vs p99 36 PASS (Krauske table holds for Flemming's drafts); LIN-VIEYRA 1897 px leaves 95/255 on disk
+(images/book_hires/); VB-SCREEN2 bundles end early Aug 1658 -- Van Beuningen pool has no unprinted cipher run left.
+
+### LIN-COUNT (Opus, cap 4.5, box 90 min, IA take/release): antt-linhares-chave, the two dictionary counts on the 1897 px scan (new material)
+NOTES Remaining gaps bullets 283219 "cagar" (p.83 col 2, rank 19) and 3241315 "justa" (p.241 col 3, rank 15), the A1B-LIN-ROWS diagnosis (~line 1250:
+setup error on box edges, duplicate headword "Guérra", drop-cap "D") and LIN-VIEYRA. Rule 3: the three instruments failed on the 949 px scan; this is
+the same per-row labelling instrument on NEW material, so it runs only if it passes a fresh calibration. Steps: (1) PREREG-LINCOUNT.md (own commit,
+pushed, checked on origin) BEFORE any label: the calibration set = the agreed key groups whose rank is known (the 33 of A1B-LIN-HOCR or the 7
+columns of A1B-LIN-ROWS, from disk), their leaves fetched at the 1897 px size LIN-VIEYRA used (IA, >= 1.5 s, <= 12 fetches); match rule naming the
+duplicate-headword case (each bold line counts, a repeated word is its own rank) and the drop-cap case (a section initial is not a headword);
+calibration gate (e.g. >= 6 of 7 columns exact, no MISS of +-1 on more than one); (2) boxes set on the full-res image with a debug overlay, crops with
+`tools/iiif_lines.py --image ... --debug` (pasted); blind per-row labels (FLUSH/INDENT/DROPCAP) by Sonnet subagents, one column per call, two blind
+passes; (3) only if calibration passes, label 83/2 and 241/3 the same way and read off ranks 19 and 15. Report the calibration score and, if run,
+the two words; regrade per the bullets' convention (never argue a grade up beyond what the count shows); decode_key.py --check; gaps_check. If
+calibration fails: log the instrument [retired] at 1897 px too, next = a person's count (ASKS row draft text in NOTES, do not file).
+
+### MANT-0176 (Opus, cap 4, box 80 min, sachsen take/release -- after MANT-CUC2's release): sachsstaatsarchiv-manteuffel-1712, 694/08 0176 read
+NOTES line ~2856 (0176, stamp 135, Berl. 2 Juil 1712, est. 30-40 tokens, run 13.66.4.10.26.36 repeated) and abbo_check.tsv (0176 not in AB BO I).
+Prior work: prior_work.py with the leaf's item-spec, then check 4 by date in Droysen IV.1/IV.2 and the IA AB BO I text already searched by MANT-ABBO
+(cite its row). Fetch 0176 (and 0175 if the date line/head is there, <= 2 GETs); line crops with iiif_lines.py --image (pasted); two blind Sonnet
+passes + reconciliation; decode under key.tsv with tools/decode_key.py into f0176_08/ (decode.json as f0454_08's); gate (b) exactly as MANT-0454/
+MANT-0109 ran it (pooled judge vs shuffled-key p95, PREREG own commit first; if too-short, say so and grade all M). Report S/M counts, stretches,
+where not found. Do not classify novelty. Units: 2 GETs + 2 passes + 1 reconciliation + CPU, ~$3.5.
+
+### MANT-CUC2 (Opus, cap 3, box 60 min, sachsen take/release first): sachsstaatsarchiv-manteuffel-1712, 0410 + 0284 clear-under-code and the 173/144 eye check
+NOTES "MANT-CUC" and PREREG-MANTCUC.md (reuse it unchanged; state that in the section). Fetch 0410 and 0284 (sachsen, 2 GETs, then release for MANT-0176),
+same per-leaf protocol (pass A, pass B, blind clear; reconcile); score per leaf and re-pool with 0323/0348/0282. Eye check on the f0282/f0323 crops of the
+runs over "Prince" and "Czar" (codes 173/144 absent from key.tsv) and of 0282's two missed underlines: one look each, recorded in cuc_candidates.tsv's note
+column. key.tsv unchanged. Units: 2 GETs + 6 calls + 1 reconciliation, ~$2.5.
