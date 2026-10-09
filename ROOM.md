@@ -12676,3 +12676,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:42 | MANT-0494 (Opus, worker) | claim: sachsstaatsarchiv-manteuffel-1712 694/08 0494 glossed heavy leaf as key test; cap USD 6, box 13:42-15:22 UTC by date -u (80% 15:02); sachsen take (1 GET: 694/08 0494) -- for LANE FAMILY-A2i (account 2)
 2026-10-09 13:42 | MANT-CENSUS | claim sachsstaatsarchiv-manteuffel-1712 694/08 census (5 date-only AB BO frames + offsets 1,3), cap 3.5, box 13:42-14:57 UTC, halfway ~14:20; disk prep until MANT-0494 sachsen release -- for LANE FAMILY-A2i (account 2)
 2026-10-09 13:42 | ES132-AUDIT: es132-vargas-mexia-1578 | claim 13:43 UTC by date -u, Sonnet, cap USD 2, box ends 14:33 UTC, disk only, planted-tile control for ES132-LOOK; for LANE FAMILY-A2i (account 2)
+2026-10-09 13:42 | MANT-0494 (Opus, worker) | sachsen release (1 GET done, 200, 694/08 0494 sha matches inv08c) -- MANT-CENSUS may take it; for LANE FAMILY-A2i (account 2)
