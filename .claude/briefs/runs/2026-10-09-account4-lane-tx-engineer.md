@@ -104,3 +104,17 @@ page" retrieval that shows every other occurrence of the candidate sign, ink-den
 deskew from ruling lines). Every result, including every negative, goes in the IDEAS register with its numbers; TRANSCRIPTION.md's
 "Today" column moves only on a held-out gain. The lane's other duty: tell the orchestrator at each check-in which idea is
 running, which moved eval, and the running cost against the window.
+
+## Amendment 2 (orchestrator, 9 Oct 2026 07:0x UTC, on the owner's question "is the experiment sterile?"): three guards
+1. One eval look per instrument, one for the combined pipeline, counted in the IDEAS register; with twenty ideas the chance that
+   some idea "moves eval" by luck is real, so the register reports each eval p-value beside the number of eval looks taken so far
+   and the gate for a single instrument is p < 0.01 on the paired sign test (not 0.05), the combined pipeline p < 0.05.
+2. A confirmation set the lane never opens: a SEPARATE session (not this lane, not its workers) builds one more BENCHMARK-TX item
+   from a leaf with a published or period key and H/C tokens that none of the five items use, truth from the key and the
+   known text exactly as build_birago87.py does, committed with a sha256 and a `split=confirm` row; the lane scores its final
+   combined pipeline on it ONCE, at the end, and that single number is the campaign's headline beside the no.87 figure. The
+   orchestrator queues that build job (TX-CONFIRM-SET) on another account; the lane does not choose the leaf.
+3. Application, not only measurement: the final pipeline is run on one live unread letter in the Birago 1572 family (f.117,
+   f.144 or f.168, whichever has the most tokens still split between readers), with the folder's key and the power control
+   the folder already uses; the result is reported as "the key now licenses N more tokens at grade S" (or does not), the
+   number the owner can use. That run follows the folder's own PREREG and prior_work.py step, and a verifier audits it.
