@@ -1,0 +1,482 @@
+{
+ "L": {
+  "signals": [
+   {
+    "combo": "show",
+    "recall": 0.8333333333333334,
+    "share": 0.5014577259475219,
+    "flagged": 172,
+    "tp": 10,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "disagree",
+    "recall": 0.16666666666666666,
+    "share": 0.09037900874635568,
+    "flagged": 31,
+    "tp": 2,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "bandcut",
+    "recall": 0.4166666666666667,
+    "share": 0.17201166180758018,
+    "flagged": 59,
+    "tp": 5,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "thin",
+    "recall": 0.4166666666666667,
+    "share": 0.2303206997084548,
+    "flagged": 79,
+    "tp": 5,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "contrast",
+    "recall": 0.4166666666666667,
+    "share": 0.2099125364431487,
+    "flagged": 72,
+    "tp": 5,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "stab",
+    "recall": 0.08333333333333333,
+    "share": 0.052478134110787174,
+    "flagged": 18,
+    "tp": 1,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "freq",
+    "recall": 0.4166666666666667,
+    "share": 0.3556851311953353,
+    "flagged": 122,
+    "tp": 5,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "latt",
+    "recall": 0.4166666666666667,
+    "share": 0.05539358600583091,
+    "flagged": 19,
+    "tp": 5,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "pair",
+    "recall": 0.9166666666666666,
+    "share": 0.446064139941691,
+    "flagged": 153,
+    "tp": 11,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "pairclf",
+    "recall": 0.16666666666666666,
+    "share": 0.037900874635568516,
+    "flagged": 13,
+    "tp": 2,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "vote",
+    "recall": 0.5,
+    "share": 0.08746355685131195,
+    "flagged": 30,
+    "tp": 6,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "selfcons",
+    "recall": 0.5833333333333334,
+    "share": 0.11370262390670553,
+    "flagged": 39,
+    "tp": 7,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "conf",
+    "recall": 0.5833333333333334,
+    "share": 0.26239067055393583,
+    "flagged": 90,
+    "tp": 7,
+    "wrong": 12,
+    "n": 343
+   },
+   {
+    "combo": "countchk",
+    "recall": 0.5833333333333334,
+    "share": 0.8221574344023324,
+    "flagged": 282,
+    "tp": 7,
+    "wrong": 12,
+    "n": 343
+   }
+  ],
+  "nmin2": {
+   "combo": "n_signals>=2",
+   "recall": 1.0,
+   "share": 0.8309037900874635,
+   "flagged": 285,
+   "tp": 12,
+   "wrong": 12,
+   "n": 343
+  },
+  "nmin3": {
+   "combo": "n_signals>=3",
+   "recall": 1.0,
+   "share": 0.6355685131195336,
+   "flagged": 218,
+   "tp": 12,
+   "wrong": 12,
+   "n": 343
+  },
+  "nmin4": {
+   "combo": "n_signals>=4",
+   "recall": 0.8333333333333334,
+   "share": 0.4577259475218659,
+   "flagged": 157,
+   "tp": 10,
+   "wrong": 12,
+   "n": 343
+  },
+  "best": {
+   "k1_cap0.1": {
+    "combo": "vote",
+    "recall": 0.5,
+    "share": 0.08746355685131195,
+    "flagged": 30,
+    "tp": 6,
+    "wrong": 12,
+    "n": 343
+   },
+   "k1_cap0.15": {
+    "combo": "selfcons",
+    "recall": 0.5833333333333334,
+    "share": 0.11370262390670553,
+    "flagged": 39,
+    "tp": 7,
+    "wrong": 12,
+    "n": 343
+   },
+   "k1_cap0.2": {
+    "combo": "selfcons",
+    "recall": 0.5833333333333334,
+    "share": 0.11370262390670553,
+    "flagged": 39,
+    "tp": 7,
+    "wrong": 12,
+    "n": 343
+   },
+   "k2_cap0.1": {
+    "combo": "vote",
+    "recall": 0.5,
+    "share": 0.08746355685131195,
+    "flagged": 30,
+    "tp": 6,
+    "wrong": 12,
+    "n": 343
+   },
+   "k2_cap0.15": {
+    "combo": "latt+vote",
+    "recall": 0.75,
+    "share": 0.10495626822157435,
+    "flagged": 36,
+    "tp": 9,
+    "wrong": 12,
+    "n": 343
+   },
+   "k2_cap0.2": {
+    "combo": "latt+vote",
+    "recall": 0.75,
+    "share": 0.10495626822157435,
+    "flagged": 36,
+    "tp": 9,
+    "wrong": 12,
+    "n": 343
+   },
+   "k3_cap0.1": {
+    "combo": "vote",
+    "recall": 0.5,
+    "share": 0.08746355685131195,
+    "flagged": 30,
+    "tp": 6,
+    "wrong": 12,
+    "n": 343
+   },
+   "k3_cap0.15": {
+    "combo": "latt+vote+selfcons",
+    "recall": 0.8333333333333334,
+    "share": 0.13994169096209913,
+    "flagged": 48,
+    "tp": 10,
+    "wrong": 12,
+    "n": 343
+   },
+   "k3_cap0.2": {
+    "combo": "latt+vote+selfcons",
+    "recall": 0.8333333333333334,
+    "share": 0.13994169096209913,
+    "flagged": 48,
+    "tp": 10,
+    "wrong": 12,
+    "n": 343
+   }
+  }
+ },
+ "A": {
+  "signals": [
+   {
+    "combo": "show",
+    "recall": 0.8571428571428571,
+    "share": 0.5014577259475219,
+    "flagged": 172,
+    "tp": 18,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "disagree",
+    "recall": 0.47619047619047616,
+    "share": 0.09037900874635568,
+    "flagged": 31,
+    "tp": 10,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "bandcut",
+    "recall": 0.23809523809523808,
+    "share": 0.17201166180758018,
+    "flagged": 59,
+    "tp": 5,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "thin",
+    "recall": 0.47619047619047616,
+    "share": 0.2303206997084548,
+    "flagged": 79,
+    "tp": 10,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "contrast",
+    "recall": 0.38095238095238093,
+    "share": 0.2099125364431487,
+    "flagged": 72,
+    "tp": 8,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "stab",
+    "recall": 0.047619047619047616,
+    "share": 0.052478134110787174,
+    "flagged": 18,
+    "tp": 1,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "freq",
+    "recall": 0.2857142857142857,
+    "share": 0.3556851311953353,
+    "flagged": 122,
+    "tp": 6,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "latt",
+    "recall": 0.5714285714285714,
+    "share": 0.05539358600583091,
+    "flagged": 19,
+    "tp": 12,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "pair",
+    "recall": 0.5238095238095238,
+    "share": 0.446064139941691,
+    "flagged": 153,
+    "tp": 11,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "pairclf",
+    "recall": 0.09523809523809523,
+    "share": 0.037900874635568516,
+    "flagged": 13,
+    "tp": 2,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "vote",
+    "recall": 0.6666666666666666,
+    "share": 0.08746355685131195,
+    "flagged": 30,
+    "tp": 14,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "selfcons",
+    "recall": 0.7619047619047619,
+    "share": 0.11370262390670553,
+    "flagged": 39,
+    "tp": 16,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "conf",
+    "recall": 0.7142857142857143,
+    "share": 0.26239067055393583,
+    "flagged": 90,
+    "tp": 15,
+    "wrong": 21,
+    "n": 343
+   },
+   {
+    "combo": "countchk",
+    "recall": 0.6666666666666666,
+    "share": 0.8221574344023324,
+    "flagged": 282,
+    "tp": 14,
+    "wrong": 21,
+    "n": 343
+   }
+  ],
+  "nmin2": {
+   "combo": "n_signals>=2",
+   "recall": 1.0,
+   "share": 0.8309037900874635,
+   "flagged": 285,
+   "tp": 21,
+   "wrong": 21,
+   "n": 343
+  },
+  "nmin3": {
+   "combo": "n_signals>=3",
+   "recall": 1.0,
+   "share": 0.6355685131195336,
+   "flagged": 218,
+   "tp": 21,
+   "wrong": 21,
+   "n": 343
+  },
+  "nmin4": {
+   "combo": "n_signals>=4",
+   "recall": 0.9047619047619048,
+   "share": 0.4577259475218659,
+   "flagged": 157,
+   "tp": 19,
+   "wrong": 21,
+   "n": 343
+  },
+  "best": {
+   "k1_cap0.1": {
+    "combo": "vote",
+    "recall": 0.6666666666666666,
+    "share": 0.08746355685131195,
+    "flagged": 30,
+    "tp": 14,
+    "wrong": 21,
+    "n": 343
+   },
+   "k1_cap0.15": {
+    "combo": "selfcons",
+    "recall": 0.7619047619047619,
+    "share": 0.11370262390670553,
+    "flagged": 39,
+    "tp": 16,
+    "wrong": 21,
+    "n": 343
+   },
+   "k1_cap0.2": {
+    "combo": "selfcons",
+    "recall": 0.7619047619047619,
+    "share": 0.11370262390670553,
+    "flagged": 39,
+    "tp": 16,
+    "wrong": 21,
+    "n": 343
+   },
+   "k2_cap0.1": {
+    "combo": "vote",
+    "recall": 0.6666666666666666,
+    "share": 0.08746355685131195,
+    "flagged": 30,
+    "tp": 14,
+    "wrong": 21,
+    "n": 343
+   },
+   "k2_cap0.15": {
+    "combo": "latt+selfcons",
+    "recall": 0.8571428571428571,
+    "share": 0.1282798833819242,
+    "flagged": 44,
+    "tp": 18,
+    "wrong": 21,
+    "n": 343
+   },
+   "k2_cap0.2": {
+    "combo": "latt+selfcons",
+    "recall": 0.8571428571428571,
+    "share": 0.1282798833819242,
+    "flagged": 44,
+    "tp": 18,
+    "wrong": 21,
+    "n": 343
+   },
+   "k3_cap0.1": {
+    "combo": "vote",
+    "recall": 0.6666666666666666,
+    "share": 0.08746355685131195,
+    "flagged": 30,
+    "tp": 14,
+    "wrong": 21,
+    "n": 343
+   },
+   "k3_cap0.15": {
+    "combo": "latt+vote+selfcons",
+    "recall": 0.9047619047619048,
+    "share": 0.13994169096209913,
+    "flagged": 48,
+    "tp": 19,
+    "wrong": 21,
+    "n": 343
+   },
+   "k3_cap0.2": {
+    "combo": "latt+vote+selfcons",
+    "recall": 0.9047619047619048,
+    "share": 0.13994169096209913,
+    "flagged": 48,
+    "tp": 19,
+    "wrong": 21,
+    "n": 343
+   }
+  }
+ }
+}

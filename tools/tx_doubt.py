@@ -349,7 +349,7 @@ def cmd_extend(a):
     from tx_compare import unit_lines
     lines = unit_lines(path(a.units), a.unit)
     L_unit = [r for r in rd(a.line_read) if r['line'] in lines]
-    rows = rd(os.path.join(a.out, f'{a.unit}_signals.tsv'))
+    rows = rd(a.table or os.path.join(a.out, f'{a.unit}_signals.tsv'))
     specs = []
     for sp in a.differ or []:
         n, fs = sp.split('=', 1); specs.append((n, 'differ', [rd(f) for f in fs.split(',')]))
@@ -361,7 +361,7 @@ def cmd_extend(a):
     for sp in a.line_flag or []:
         n, f = sp.split('=', 1); specs.append((n, 'line-flag', rd(f)))
     rows, cov = extend_rows(rows, L_unit, specs)
-    out = os.path.join(path(a.out), f'{a.unit}_signals2.tsv')
+    out = os.path.join(path(a.out), f'{a.unit}_{a.suffix}.tsv')
     cols = ['line', 'pos', 'sign'] + signal_cols(rows[0]) + ['n_signals']
     with open(out, 'w', newline='') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n'); w.writerow(cols)
@@ -443,6 +443,8 @@ def main(argv=None):
     m.add_argument('--json'); m.add_argument('--table', help='signal table (default OUT/<unit>_signals.tsv)')
     e = sp.add_parser('extend'); common(e)
     e.add_argument('--line-read', default=D['line_read']); e.add_argument('--units', default=D['units'])
+    e.add_argument('--table', help='input signal table (default OUT/<unit>_signals.tsv)')
+    e.add_argument('--suffix', default='signals2', help='output OUT/<unit>_<suffix>.tsv (default signals2)')
     e.add_argument('--differ', action='append'); e.add_argument('--differ-ref', action='append')
     e.add_argument('--below', action='append'); e.add_argument('--line-flag', action='append')
     li = sp.add_parser('list'); common(li)
