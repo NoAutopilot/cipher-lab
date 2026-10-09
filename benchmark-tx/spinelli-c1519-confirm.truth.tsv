@@ -1,261 +1,261 @@
-# Spinelli c.1519 (Beinecke GEN MSS 109 Filza 163) confirmation item, split=confirm: 2017 published plaintext under the published key (H rows); built by benchmark-tx/build_spinelli_confirm.py. LANE TX-ENGINEER scores this ONCE, at the end.
-line	pos	ref_sign	truth	plain	status
-p1c_L01	1	FOUR			excluded:unaligned
-p1c_L01	2	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p1c_L01	3	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L01	4	THREE		l	excluded:key-M-THREE
-p1c_L01	5	OMEGADOT	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L01	6	THETA	PI|THETA	d	scored
-p1c_L01	7	JHOOK_M2			excluded:unaligned
-p1c_L01	8	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L01	9	HOOK_T3	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L01	10	JHOOK_M2			excluded:unaligned
-p1c_L01	11	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L01	12	NINE_NULLA			excluded:unaligned
-p1c_L01	13	PHI_T		c	excluded:key-M-PHI_T
-p1c_L01	14	ESS	ESS	h	scored
-p1c_L01	15	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p1c_L01	16	HOOK_M	HOOK_M|JHOOK_M2|NINE_M2|SEVEN_I_M2	m	scored
-p1c_L01	17	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L01	18	PI	PI|THETA	d	scored
-p1c_L01	19	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L01	20	SIX			excluded:unaligned
-p1c_L01	21	NINE_NULLA		m	excluded:null-over-letter
-p1c_L01	22	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L01	23	FOUR		m	excluded:null-over-letter
-p1c_L02	1	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L02	2	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L02	3	OMEGADOT	OMEGADOT|PHI_G	g	scored
-p1c_L02	4	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L02	5	HOOK		r	excluded:off-key
-p1c_L02	6	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L02	7	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L02	8	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L02	9	HCURL	DIAMOND|HCURL	n	scored
-p1c_L02	10	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L02	11	DIAMOND	DIAMOND|HCURL	n	scored
-p1c_L02	12	EM	EM|HOOK_U_V	u	scored
-p1c_L02	13	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L02	14	THREE		l	excluded:key-M-THREE
-p1c_L02	15	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p1c_L02	16	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L02	17	EIGHTBAR		w	excluded:off-key
-p1c_L02	18	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L02	19	PHI		t	excluded:off-key
-p1c_L02	20	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L02	21	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L02	22	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p1c_L02	23	ESS			excluded:unaligned
-p1c_L02	24	THREE		l	excluded:key-M-THREE
-p1c_L02	25	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L02	26	PHI_G	OMEGADOT|PHI_G	g	scored
-p1c_L02	27	HOOK_U_V	EM|HOOK_U_V	u	scored
-p1c_L02	28	FOUR			excluded:unaligned
-p1c_L03	1	PLUS	PLUS	b	scored
-p1c_L03	2	HOOK_M			excluded:unaligned
-p1c_L03	3	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L03	4	EIGHT_R	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L03	5	HCURL	DIAMOND|HCURL	n	scored
-p1c_L03	6	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L03	8	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L03	9	SEVEN		i	excluded:off-key
-p1c_L03	10	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L03	11	HCURL	DIAMOND|HCURL	n	scored
-p1c_L03	12	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p1c_L03	13	THETA	PI|THETA	d	scored
-p1c_L03	14	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L03	15	ENN	DEE|ENN|TWO_S2	s	scored
-p1c_L03	16	TWO_P	TEE_P1|TWO_P	p	scored
-p1c_L03	17	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L03	18	OMEGADOT	OMEGADOT|PHI_G	g	scored
-p1c_L03	19	DIAMOND	DIAMOND|HCURL	n	scored
-p1c_L03	20	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L03	21	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L03	22	THREE		e	excluded:key-M-THREE
-p1c_L03	23	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L03	24	SIX		c	excluded:null-over-letter
-p1c_L03	25	ESS	ESS	h	scored
-p1c_L03	26	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L03	27	FOUR			excluded:unaligned
-p1c_L03	28	TEE_P1	TEE_P1|TWO_P	p	scored
-p1c_L03	29	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L03	31	JHOOK		u	excluded:key-M-JHOOK
-p1c_L04	1	PI	PI|THETA	d	scored
-p1c_L04	2	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L04	3	HCURL	DIAMOND|HCURL	n	scored
-p1c_L04	4	PHI_T		c	excluded:key-M-PHI_T
-p1c_L04	5	THREE		l	excluded:key-M-THREE
-p1c_L04	6	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L04	7	DIAMOND	DIAMOND|HCURL	n	scored
-p1c_L04	8	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L04	9	FOUR			excluded:unaligned
-p1c_L04	10	HOOK_T3	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L04	11	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L04	12	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L04	13	HCURL	DIAMOND|HCURL	n	scored
-p1c_L04	14	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p1c_L04	15	TWO_S2	DEE|ENN|TWO_S2	s	scored
-p1c_L04	16	SEVEN_I_M2	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L04	17	NINE_M2	HOOK_M|JHOOK_M2|NINE_M2|SEVEN_I_M2	m	scored
-p1c_L04	18	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L04	19	ENN	DEE|ENN|TWO_S2	s	scored
-p1c_L04	20	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L04	21	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L04	22	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L04	23	THREE		l	excluded:key-M-THREE
-p1c_L04	24	LL	EIGHTBAR_C|HOOK_C|LL	c	scored
-p1c_L04	25	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L04	26	DIAMOND	DIAMOND|HCURL	n	scored
-p1c_L04	27	HOOK		t	excluded:off-key
-p1c_L04	28	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L04	29	SIX			excluded:unaligned
-p1c_L05	1	TEE_P1	TEE_P1|TWO_P	p	scored
-p1c_L05	2	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L05	3	THREE		l	excluded:key-M-THREE
-p1c_L05	4	SIX			excluded:unaligned
-p1c_L05	5	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L05	6	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L05	7	SEVEN		i	excluded:off-key
-p1c_L05	8	DIAMOND	DIAMOND|HCURL	n	scored
-p1c_L05	9	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L05	10	PHI_T		c	excluded:key-M-PHI_T
-p1c_L05	11	SIX		h	excluded:null-over-letter
-p1c_L05	12	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L05	13	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L05	14	PHI_T		d	excluded:key-M-PHI_T
-p1c_L05	15	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L05	16	THREE		l	excluded:key-M-THREE
-p1c_L05	17	SIX			excluded:unaligned
-p1c_L05	18	HOOK			excluded:off-key
-p1c_L05	19	HOOK_T1	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L05	20	EIGHT_R	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L05	21	HOOK_C			excluded:unaligned
-p1c_L05	22	ESS			excluded:unaligned
-p1c_L05	23	SIX			excluded:unaligned
-p1c_L06	1	SIX		i	excluded:null-over-letter
-p1c_L06	2	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L06	3	EIGHTBAR_C		w	excluded:que-rr-marker
-p1c_L06	4	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L06	5	EM	EM|HOOK_U_V	u	scored
-p1c_L06	6	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L06	7	LL	EIGHTBAR_C|HOOK_C|LL	c	scored
-p1c_L06	8	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L06	9	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L06	10	TWO_NULLA			excluded:unaligned
-p1c_L06	11	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L06	12	DIAMOND	DIAMOND|HCURL	n	scored
-p1c_L06	13	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L06	14	TWO_NULLA		l	excluded:null-over-letter
-p1c_L06	15	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L06	16	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p1c_L06	17	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L06	18	HOOK_T3	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L06	19	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L06	20	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L06	21	HOOK_U_V	EM|HOOK_U_V	u	scored
-p1c_L06	22	SIX			excluded:unaligned
-p1c_L06	23	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L06	24	THREE		l	excluded:key-M-THREE
-p1c_L06	25	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L06	26	SIX			excluded:unaligned
-p1c_L07	1	EIGHT_R	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L07	2	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p1c_L07	3	ENN	DEE|ENN|TWO_S2	s	scored
-p1c_L07	4	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L07	5	THREE		l	excluded:key-M-THREE
-p1c_L07	6	EM	EM|HOOK_U_V	u	scored
-p1c_L07	7	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L07	8	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L07	9	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L07	10	DIAMOND	DIAMOND|HCURL	n	scored
-p1c_L07	11	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L07	12	THETA	PI|THETA	d	scored
-p1c_L07	14	LL	EIGHTBAR_C|HOOK_C|LL	c	scored
-p1c_L07	15	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L07	16	ENN	DEE|ENN|TWO_S2	s	scored
-p1c_L07	18	HOOK_T3	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p1c_L07	19	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L07	20	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L07	21	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L07	22	HOOK_M	HOOK_M|JHOOK_M2|NINE_M2|SEVEN_I_M2	m	scored
-p1c_L07	23	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L07	24	TWO_NULLA		l	excluded:null-over-letter
-p1c_L07	25	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L07	26	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L07	27	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p1c_L07	28	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p1c_L08	2	PI	PI|THETA	d	scored
-p1c_L08	3	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p1c_L08	4	EPSILON		k	excluded:key-M-EPSILON
-p1c_L08	5	CIRCLE			excluded:off-key
-p1c_L08	6	TWO_NULLA		l	excluded:null-over-letter
-p1c_L08	7	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L08	9	NINE_E	NINE_E|SEVEN_E	e	scored
-p1c_L08	10	THREE		l	excluded:key-M-THREE
-p1c_L08	11	SIX			excluded:unaligned
-p1c_L08	12	TEE_P1	TEE_P1|TWO_P	p	scored
-p1c_L08	13	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L08	15	THREE		p	excluded:key-M-THREE
-p1c_L08	16	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L08	17	THETA	PI|THETA	d	scored
-p1c_L08	18	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p1c_L08	19	HOOK_M	HOOK_M|JHOOK_M2|NINE_M2|SEVEN_I_M2	m	scored
-p1c_L08	20	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p1c_L08	21	DIAMOND	DIAMOND|HCURL	n	scored
-p1c_L08	22	OMEGABAR	PI|THETA	d	scored
-p1c_L08	23	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p1c_L08	24	EM			excluded:unaligned
-p1c_L08	25	EM	EM|HOOK_U_V	u	scored
-p1c_L08	26	FOUR			excluded:unaligned
-p1c_L08	27	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p2c_L01	1	FOUR			excluded:unaligned
-p2c_L01	2	ENN	DEE|ENN|TWO_S2	s	scored
-p2c_L01	3	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p2c_L01	4	SIX			excluded:unaligned
-p2c_L01	5	NINE_E	NINE_E|SEVEN_E	e	scored
-p2c_L01	6	PLUS	PLUS	b	scored
-p2c_L01	7	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p2c_L01	8	ENN	DEE|ENN|TWO_S2	s	scored
-p2c_L01	9	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p2c_L01	10	OMEGADOT	OMEGADOT|PHI_G	g	scored
-p2c_L01	11	DIAMOND	DIAMOND|HCURL	n	scored
-p2c_L01	12	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p2c_L01	13	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p2c_L01	14	NINE_NULLA			excluded:unaligned
-p2c_L01	15	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p2c_L01	16	THREE		l	excluded:key-M-THREE
-p2c_L01	17	PHI_G	OMEGADOT|PHI_G	g	scored
-p2c_L01	18	EM	EM|HOOK_U_V	u	scored
-p2c_L01	19	TWO_NULLA		b	excluded:null-over-letter
-p2c_L01	20	NINE_E	NINE_E|SEVEN_E	e	scored
-p2c_L01	21	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p2c_L01	22	HCURL	DIAMOND|HCURL	n	scored
-p2c_L01	23	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p2c_L01	24	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored
-p2c_L01	26	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored
-p2c_L01	27	HOOK_R	EIGHT_R|HOOK_R|XCURL	r	scored
-p2c_L01	28	NINE_E	NINE_E|SEVEN_E	e	scored
-p2c_L01	29	THETA	PI|THETA	d	scored
-p2c_L01	30	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p2c_L01	31	PLUS	PLUS	b	scored
-p2c_L01	32	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p2c_L01	33	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p2c_L02	3	HOOK_U_V	DEE|ENN|TWO_S2	s	scored
-p2c_L02	4	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p2c_L02	5	FOUR			excluded:unaligned
-p2c_L02	6	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p2c_L02	7	DIAMOND	DIAMOND|HCURL	n	scored
-p2c_L02	8	PI	PI|THETA	d	scored
-p2c_L02	9	FOUR			excluded:unaligned
-p2c_L02	10	HOOK_A	HOOK_A|OMEGABAR	a	scored
-p2c_L02	11	ESS	EIGHT_R|HOOK_R|XCURL	r	scored
-p2c_L02	12	OMEGABAR	HOOK_A|OMEGABAR	a	scored
-p2c_L02	13	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p2c_L02	14	TWO_S2	DEE|ENN|TWO_S2	s	scored
-p2c_L02	15	EM	EM|HOOK_U_V	u	scored
-p2c_L02	16	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored
-p2c_L02	17	EIGHT		?	excluded:unread-2017
-p2c_L02	18	EIGHT_R		?	excluded:unread-2017
-p2c_L02	19	SEVEN_E	NINE_E|SEVEN_E	e	scored
-p2c_L02	20	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored
-p2c_L02	22	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored
+# Spinelli c.1519 (Beinecke GEN MSS 109 Filza 163) confirmation item, split=confirm: 2017 published plaintext under the published key (H rows); built by benchmark-tx/build_spinelli_confirm.py. LANE TX-ENGINEER scores this ONCE, at the end. Flag column: verifier verdicts from spinelli-c1519-confirm.flags.tsv (TXV-SPIN).
+line	pos	ref_sign	truth	plain	status	flag
+p1c_L01	1	FOUR			excluded:unaligned	
+p1c_L01	2	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p1c_L01	3	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L01	4	THREE		l	excluded:key-M-THREE	
+p1c_L01	5	OMEGADOT	PHI_I|SEVENB|SEVEN_I	i	scored	reading-doubtful
+p1c_L01	6	THETA	PI|THETA	d	scored	
+p1c_L01	7	JHOOK_M2			excluded:unaligned	
+p1c_L01	8	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L01	9	HOOK_T3	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L01	10	JHOOK_M2			excluded:unaligned	
+p1c_L01	11	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L01	12	NINE_NULLA			excluded:unaligned	
+p1c_L01	13	PHI_T		c	excluded:key-M-PHI_T	
+p1c_L01	14	ESS	ESS	h	scored	
+p1c_L01	15	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p1c_L01	16	HOOK_M	HOOK_M|JHOOK_M2|NINE_M2|SEVEN_I_M2	m	scored	
+p1c_L01	17	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L01	18	PI	PI|THETA	d	scored	
+p1c_L01	19	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L01	20	SIX			excluded:unaligned	
+p1c_L01	21	NINE_NULLA		m	excluded:null-over-letter	
+p1c_L01	22	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L01	23	FOUR		m	excluded:null-over-letter	
+p1c_L02	1	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L02	2	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L02	3	OMEGADOT	OMEGADOT|PHI_G	g	scored	
+p1c_L02	4	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L02	5	HOOK		r	excluded:off-key	
+p1c_L02	6	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L02	7	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L02	8	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L02	9	HCURL	DIAMOND|HCURL	n	scored	
+p1c_L02	10	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L02	11	DIAMOND	DIAMOND|HCURL	n	scored	
+p1c_L02	12	EM	EM|HOOK_U_V	u	scored	
+p1c_L02	13	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L02	14	THREE		l	excluded:key-M-THREE	
+p1c_L02	15	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p1c_L02	16	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L02	17	EIGHTBAR		w	excluded:off-key	
+p1c_L02	18	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L02	19	PHI		t	excluded:off-key	
+p1c_L02	20	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L02	21	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L02	22	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p1c_L02	23	ESS			excluded:unaligned	
+p1c_L02	24	THREE		l	excluded:key-M-THREE	
+p1c_L02	25	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L02	26	PHI_G	OMEGADOT|PHI_G	g	scored	
+p1c_L02	27	HOOK_U_V	EM|HOOK_U_V	u	scored	
+p1c_L02	28	FOUR			excluded:unaligned	
+p1c_L03	1	PLUS	PLUS	b	scored	
+p1c_L03	2	HOOK_M			excluded:unaligned	
+p1c_L03	3	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L03	4	EIGHT_R	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L03	5	HCURL	DIAMOND|HCURL	n	scored	
+p1c_L03	6	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L03	8	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L03	9	SEVEN		i	excluded:off-key	
+p1c_L03	10	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L03	11	HCURL	DIAMOND|HCURL	n	scored	
+p1c_L03	12	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p1c_L03	13	THETA	PI|THETA	d	scored	
+p1c_L03	14	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L03	15	ENN	DEE|ENN|TWO_S2	s	scored	
+p1c_L03	16	TWO_P	TEE_P1|TWO_P	p	scored	label-doubtful
+p1c_L03	17	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L03	18	OMEGADOT	OMEGADOT|PHI_G	g	scored	
+p1c_L03	19	DIAMOND	DIAMOND|HCURL	n	scored	
+p1c_L03	20	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L03	21	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L03	22	THREE		e	excluded:key-M-THREE	
+p1c_L03	23	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L03	24	SIX		c	excluded:null-over-letter	
+p1c_L03	25	ESS	ESS	h	scored	
+p1c_L03	26	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L03	27	FOUR			excluded:unaligned	
+p1c_L03	28	TEE_P1	TEE_P1|TWO_P	p	scored	
+p1c_L03	29	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L03	31	JHOOK		u	excluded:key-M-JHOOK	
+p1c_L04	1	PI	PI|THETA	d	scored	
+p1c_L04	2	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L04	3	HCURL	DIAMOND|HCURL	n	scored	
+p1c_L04	4	PHI_T		c	excluded:key-M-PHI_T	
+p1c_L04	5	THREE		l	excluded:key-M-THREE	
+p1c_L04	6	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L04	7	DIAMOND	DIAMOND|HCURL	n	scored	
+p1c_L04	8	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L04	9	FOUR			excluded:unaligned	
+p1c_L04	10	HOOK_T3	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L04	11	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L04	12	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L04	13	HCURL	DIAMOND|HCURL	n	scored	
+p1c_L04	14	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p1c_L04	15	TWO_S2	DEE|ENN|TWO_S2	s	scored	
+p1c_L04	16	SEVEN_I_M2	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L04	17	NINE_M2	HOOK_M|JHOOK_M2|NINE_M2|SEVEN_I_M2	m	scored	
+p1c_L04	18	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L04	19	ENN	DEE|ENN|TWO_S2	s	scored	
+p1c_L04	20	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L04	21	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L04	22	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L04	23	THREE		l	excluded:key-M-THREE	
+p1c_L04	24	LL	EIGHTBAR_C|HOOK_C|LL	c	scored	
+p1c_L04	25	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L04	26	DIAMOND	DIAMOND|HCURL	n	scored	
+p1c_L04	27	HOOK		t	excluded:off-key	
+p1c_L04	28	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L04	29	SIX			excluded:unaligned	
+p1c_L05	1	TEE_P1	TEE_P1|TWO_P	p	scored	
+p1c_L05	2	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L05	3	THREE		l	excluded:key-M-THREE	
+p1c_L05	4	SIX			excluded:unaligned	
+p1c_L05	5	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L05	6	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L05	7	SEVEN		i	excluded:off-key	
+p1c_L05	8	DIAMOND	DIAMOND|HCURL	n	scored	
+p1c_L05	9	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L05	10	PHI_T		c	excluded:key-M-PHI_T	
+p1c_L05	11	SIX		h	excluded:null-over-letter	
+p1c_L05	12	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L05	13	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L05	14	PHI_T		d	excluded:key-M-PHI_T	
+p1c_L05	15	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L05	16	THREE		l	excluded:key-M-THREE	
+p1c_L05	17	SIX			excluded:unaligned	
+p1c_L05	18	HOOK			excluded:off-key	
+p1c_L05	19	HOOK_T1	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L05	20	EIGHT_R	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L05	21	HOOK_C			excluded:unaligned	
+p1c_L05	22	ESS			excluded:unaligned	
+p1c_L05	23	SIX			excluded:unaligned	
+p1c_L06	1	SIX		i	excluded:null-over-letter	
+p1c_L06	2	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L06	3	EIGHTBAR_C		w	excluded:que-rr-marker	
+p1c_L06	4	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L06	5	EM	EM|HOOK_U_V	u	scored	
+p1c_L06	6	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L06	7	LL	EIGHTBAR_C|HOOK_C|LL	c	scored	
+p1c_L06	8	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L06	9	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L06	10	TWO_NULLA			excluded:unaligned	
+p1c_L06	11	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L06	12	DIAMOND	DIAMOND|HCURL	n	scored	
+p1c_L06	13	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L06	14	TWO_NULLA		l	excluded:null-over-letter	
+p1c_L06	15	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L06	16	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p1c_L06	17	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L06	18	HOOK_T3	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L06	19	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L06	20	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L06	21	HOOK_U_V	EM|HOOK_U_V	u	scored	
+p1c_L06	22	SIX			excluded:unaligned	
+p1c_L06	23	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L06	24	THREE		l	excluded:key-M-THREE	
+p1c_L06	25	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L06	26	SIX			excluded:unaligned	
+p1c_L07	1	EIGHT_R	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L07	2	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p1c_L07	3	ENN	DEE|ENN|TWO_S2	s	scored	
+p1c_L07	4	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L07	5	THREE		l	excluded:key-M-THREE	
+p1c_L07	6	EM	EM|HOOK_U_V	u	scored	
+p1c_L07	7	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L07	8	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L07	9	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L07	10	DIAMOND	DIAMOND|HCURL	n	scored	
+p1c_L07	11	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L07	12	THETA	PI|THETA	d	scored	
+p1c_L07	14	LL	EIGHTBAR_C|HOOK_C|LL	c	scored	
+p1c_L07	15	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L07	16	ENN	DEE|ENN|TWO_S2	s	scored	
+p1c_L07	18	HOOK_T3	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p1c_L07	19	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L07	20	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L07	21	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L07	22	HOOK_M	HOOK_M|JHOOK_M2|NINE_M2|SEVEN_I_M2	m	scored	
+p1c_L07	23	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L07	24	TWO_NULLA		l	excluded:null-over-letter	
+p1c_L07	25	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L07	26	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L07	27	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p1c_L07	28	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p1c_L08	2	PI	PI|THETA	d	scored	
+p1c_L08	3	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p1c_L08	4	EPSILON		k	excluded:key-M-EPSILON	
+p1c_L08	5	CIRCLE			excluded:off-key	
+p1c_L08	6	TWO_NULLA		l	excluded:null-over-letter	
+p1c_L08	7	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L08	9	NINE_E	NINE_E|SEVEN_E	e	scored	
+p1c_L08	10	THREE		l	excluded:key-M-THREE	
+p1c_L08	11	SIX			excluded:unaligned	
+p1c_L08	12	TEE_P1	TEE_P1|TWO_P	p	scored	
+p1c_L08	13	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L08	15	THREE		p	excluded:key-M-THREE	
+p1c_L08	16	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L08	17	THETA	PI|THETA	d	scored	
+p1c_L08	18	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p1c_L08	19	HOOK_M	HOOK_M|JHOOK_M2|NINE_M2|SEVEN_I_M2	m	scored	
+p1c_L08	20	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p1c_L08	21	DIAMOND	DIAMOND|HCURL	n	scored	
+p1c_L08	22	OMEGABAR	PI|THETA	d	scored	
+p1c_L08	23	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p1c_L08	24	EM			excluded:unaligned	
+p1c_L08	25	EM	EM|HOOK_U_V	u	scored	
+p1c_L08	26	FOUR			excluded:unaligned	
+p1c_L08	27	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p2c_L01	1	FOUR			excluded:unaligned	
+p2c_L01	2	ENN	DEE|ENN|TWO_S2	s	scored	
+p2c_L01	3	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p2c_L01	4	SIX			excluded:unaligned	
+p2c_L01	5	NINE_E	NINE_E|SEVEN_E	e	scored	
+p2c_L01	6	PLUS	PLUS	b	scored	
+p2c_L01	7	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p2c_L01	8	ENN	DEE|ENN|TWO_S2	s	scored	
+p2c_L01	9	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p2c_L01	10	OMEGADOT	OMEGADOT|PHI_G	g	scored	
+p2c_L01	11	DIAMOND	DIAMOND|HCURL	n	scored	
+p2c_L01	12	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p2c_L01	13	TWO_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p2c_L01	14	NINE_NULLA			excluded:unaligned	
+p2c_L01	15	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p2c_L01	16	THREE		l	excluded:key-M-THREE	
+p2c_L01	17	PHI_G	OMEGADOT|PHI_G	g	scored	
+p2c_L01	18	EM	EM|HOOK_U_V	u	scored	
+p2c_L01	19	TWO_NULLA		b	excluded:null-over-letter	
+p2c_L01	20	NINE_E	NINE_E|SEVEN_E	e	scored	
+p2c_L01	21	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p2c_L01	22	HCURL	DIAMOND|HCURL	n	scored	
+p2c_L01	23	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p2c_L01	24	HOOK_T	HOOK_T|HOOK_T1|HOOK_T3	t	scored	
+p2c_L01	26	EIGHT_O	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	
+p2c_L01	27	HOOK_R	EIGHT_R|HOOK_R|XCURL	r	scored	
+p2c_L01	28	NINE_E	NINE_E|SEVEN_E	e	scored	
+p2c_L01	29	THETA	PI|THETA	d	scored	
+p2c_L01	30	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p2c_L01	31	PLUS	PLUS	b	scored	
+p2c_L01	32	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p2c_L01	33	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p2c_L02	3	HOOK_U_V	DEE|ENN|TWO_S2	s	scored	
+p2c_L02	4	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p2c_L02	5	FOUR			excluded:unaligned	
+p2c_L02	6	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p2c_L02	7	DIAMOND	DIAMOND|HCURL	n	scored	
+p2c_L02	8	PI	PI|THETA	d	scored	
+p2c_L02	9	FOUR			excluded:unaligned	
+p2c_L02	10	HOOK_A	HOOK_A|OMEGABAR	a	scored	
+p2c_L02	11	ESS	EIGHT_R|HOOK_R|XCURL	r	scored	
+p2c_L02	12	OMEGABAR	HOOK_A|OMEGABAR	a	scored	
+p2c_L02	13	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p2c_L02	14	TWO_S2	DEE|ENN|TWO_S2	s	scored	
+p2c_L02	15	EM	EM|HOOK_U_V	u	scored	
+p2c_L02	16	SEVEN_I	PHI_I|SEVENB|SEVEN_I	i	scored	
+p2c_L02	17	EIGHT		?	excluded:unread-2017	
+p2c_L02	18	EIGHT_R		?	excluded:unread-2017	
+p2c_L02	19	SEVEN_E	NINE_E|SEVEN_E	e	scored	
+p2c_L02	20	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	
+p2c_L02	22	PHI_I	PHI_I|SEVENB|SEVEN_I	i	scored	

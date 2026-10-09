@@ -28,6 +28,10 @@ Line ids are the line-crop stems (p1c_L01..p1c_L08, p2c_L01..p2c_L02; crops imag
 Also writes the committed transcription (= the reference sequence, home advantage, scores the conflicts only) as
 benchmark-tx/outputs/spinelli-c1519-confirm/committed.tsv.
 
+Flag column (TXV-SPIN, 9 Oct 2026): verifier verdicts in benchmark-tx/spinelli-c1519-confirm.flags.tsv (FLAG/CORRECT/KEEP as
+build_birago152.py): FLAG -> class in the flag column (tx_bench --exclude-flagged drops it), CORRECT -> truth re-forced and flag
+corrected:<class>, KEEP -> as built.
+
     python3 benchmark-tx/build_spinelli_confirm.py           # (re)build and print counts + sha256
     python3 benchmark-tx/build_spinelli_confirm.py --check   # rebuild in memory; exit 1 if the committed truth or its
                                                              # sha256 file is stale
@@ -41,7 +45,8 @@ TRUTH = os.path.join(OUT, 'spinelli-c1519-confirm.truth.tsv')
 SHA = TRUTH + '.sha256'
 HEADER = ('# Spinelli c.1519 (Beinecke GEN MSS 109 Filza 163) confirmation item, split=confirm: 2017 published plaintext '
           'under the published key (H rows); built by benchmark-tx/build_spinelli_confirm.py. LANE TX-ENGINEER scores this '
-          'ONCE, at the end.\nline\tpos\tref_sign\ttruth\tplain\tstatus\n')
+          'ONCE, at the end. Flag column: verifier verdicts from spinelli-c1519-confirm.flags.tsv (TXV-SPIN).'
+          '\nline\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n')
 DROP_CLASS = {'null-empty': 'excluded:unaligned', 'letter-sign-empty': 'excluded:unaligned',
               'null-took-letter': 'excluded:null-over-letter', 'over-unread-??': 'excluded:unread-2017',
               'unkeyed-empty': 'excluded:off-key', 'unkeyed-took-letter': 'excluded:off-key'}
@@ -65,6 +70,12 @@ def build():
     ct = rd(os.path.join(F, 'ciphertext_v6.tsv'))
     al = rd(os.path.join(F, 'verify2/align_2017_signs.tsv'))
     assert len(ct) == len(al) == 259, (len(ct), len(al))
+    # TXV-SPIN (9 Oct 2026): verifier verdicts per position, as build_birago152.py; FLAG -> flag column, CORRECT -> truth changed
+    flags = {}
+    fp = os.path.join(OUT, 'spinelli-c1519-confirm.flags.tsv')
+    if os.path.exists(fp):
+        for r in rd(fp):
+            flags[(r['line'], int(r['pos']))] = r
     rows, nsc, nex = [], 0, {}
     for c, a in zip(ct, al):
         assert (c['page'], c['line'], c['pos'], c['sign']) == (a['page'], a['line'], a['pos'], a['code']), (c, a)
@@ -89,7 +100,18 @@ def build():
             nsc += 1
         else:
             nex[st] = nex.get(st, 0) + 1
-        rows.append((line, int(c['pos']), sign, truth, plain, st))
+        flag = ''
+        fr = flags.get((line, int(c['pos'])))
+        if fr and st == 'scored':
+            if fr['verdict'] == 'CORRECT':
+                if fr['correct_plain']:
+                    plain = fr['correct_plain']
+                ts = set(by_val.get(plain, set())) | set(filter(None, fr['add_signs'].split('|')))
+                truth = '|'.join(sorted(ts))
+                flag = 'corrected:' + fr['class']
+            elif fr['verdict'] == 'FLAG':
+                flag = fr['class']
+        rows.append((line, int(c['pos']), sign, truth, plain, st, flag))
     text = HEADER + ''.join('\t'.join(map(str, r)) + '\n' for r in rows)
     return text, rows, nsc, nex
 
