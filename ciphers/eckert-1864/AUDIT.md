@@ -9051,3 +9051,139 @@ Wilby, quadrantal); FM-R4a's transcription has "continue" where the page and the
 -> [Department]al; E275 "whimper" -> [Transport] if the decoder misses the inflection. Candidate key row (not written): whiskey = troops (C,
 5768 sibling vs 4788). Unfiled entry for a reader: the 5768 sibling (Shaffer to Halleck 10 July 1864 10.15 AM; clear copy 4788; printed OR
 I/40 pt 3 p.142). No "new" or "first" wording found in FM-R5a's NOTES table.
+
+## AUDIT (FV-FM8c)
+
+Verifier FV-FM8c (account 1, for LANE LEDGER), 9 Oct 2026, 11:16-11:4x UTC by `date -u`; a separate session from the reader FM-R5c (account 1),
+not protecting its conclusions. Scope: **E293, E294, E295, E297, E298** (NOTES "## FM-R5c"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger
+mssEC 25 = Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all five: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts: `fortmonroe/fv_fm8c_hdl.py` (+ `fv_fm8c_hdl.out`, `fv_fm8c_hdl2.out`; CONTENTdm full text across all pointers on clear-word pairs, five
+page images at 2400 px to scratch), `fortmonroe/fv_fm8c_print.py` (+ `.out`; letters-only phrase grep over the 164 cached print-check volumes
+plus ORN I/11 `officialrecordso0011unse`, OR I/42 pt 3 `warofrebellion423unit`, I/39 pt 3 `393unit`, I/41 pts 3-4 `413unit`/`414unit` fetched
+to scratch, 5 archive.org downloads). The ~1,226 holder page transcriptions already on disk (`sources/fortmonroe`, `sources/mssEC18`, `sources/mssEC19`) were grepped
+first (no requests).
+
+### 1. Duplicates, prior work, own transcription and image
+- **Duplicate diff:** pointers 5822, 5616, 5624, 5632, 5794 (and the clear-copy pointers 10253, 10261, 10268 found below) against every `###`
+  header in ciphertext*.txt and status.json: 5822 also carries E265 (row 5822/1, O'Brien for Porter, a different telegram); the rest occur
+  only in their own headers. **No duplicate.**
+- **Prior work:** `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=<date>' --step-type audit
+  --offline`, one run per entry -> exit 4 each, holds: LEAD x1 = target-level live claim (FIX-FM7, names the slug, no unit; does not cover these
+  units); UNCHECKED-NET aaymeloglu (no clone); UNCHECKED editions (no correspondent in items.tsv: done by hand below); Tomokiyo and cached solver
+  files CLEAR. No AUDIT.md/status.json class on any of the five before this section.
+- **Image eye check this session, every graded line** (`tools/iiif_lines.py --image ... --region`, two-line crops, scratch only; the
+  autocorrelation pitch needs `--region` to exclude the colour chart): 5822 entry 1 (all 9 lines), 5616 entry 2 (7 lines), 5624 entry 1
+  (7 lines + Sheldon), 5632 entry 1 (7 lines), 5794 entry 2 (header + 8 lines). **The transcription matches the image word for word on all
+  five**, including E293's "actor" and "Burr muddy", E297's "France" and E298's header **"Ft Monroe Oct 16/64"** (the reader's header says
+  Washington: the telegram goes from Fort Monroe to Maj. Eckert, Washington).
+
+### 2. Holder's full text, internal witnesses and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the hdl token 11:25-11:27 UTC; 19
+queries): western metropolis 2 (5822 own; 5823 = 9 Dec, McCormick has taken the Western Metropolis, Baltic and B. Deford for hospital use),
+baltic annapolis 7 (5822; 5865-5868 = Jan 1865; 3135, 7693, 8508 = 1862-63), river boats 103 (none at 8 Dec 1864 Fort Monroe), dodge webster 8
+(5822; 5852-5856, 5941 = 1865; 7745 other), remaining troops 23 (none 8 Dec 1864), headquarters boat 0, embarking troops dispatch 2 (1863,
+1865), sedgwick dupont rice 1 (own), send to sea 41 (incl. **10253**), short trip 5 (5616, **10253**, 5717, 8846, 5773), port royal biggs 0,
+rucker steamers 18 (incl. 5616, **10253**), experienced assistant 1 (5624), assistant quartermasters 0, efficient experienced 2 (5624,
+**10261**), blockade runner 11 (incl. 5632, **10268**), diamond sold 2 (5632, **10268**), old business 5 (incl. 5632, **10268**), want of
+vessels 13 (incl. 5632, **10268**).
+- **E294 -> pointer 10253 (Page 111 of the Washington clear telegram book; pointer minus page = 10142, as 10239/10267), period clear copy,
+  word for word:** "7 Pm 805 Pm Ft Monroe Va Apl. 20. 1864 for Genl Rucker Qr Mr ---- I have no steamers now that I can send to sea with four
+  or five hundred men ---- If they are bound to Pt Royal I can send them as steamers will be here bound there, or if they are to make short trip
+  presume I will have steamers to send them on by time you can get them here can't send them far Herman Biggs Lt Col QM".
+- **E295 -> pointer 10261 (Page 119, same book), period clear copy:** "1 PM 215 PM Ft. Monroe Va Apl 22 1864 for QrMr Genl = Lt Col Briggs. my
+  Chf Q. m. is much in need of Asst QrMrs, the brigades which arrive are without QrMrs. It is highly important that four efficient &
+  experienced Asst QrMrs be ordered to report to Lt Col Biggs at once for duty ---- if you have not any you have some good ones recommended by
+  Col Biggs B. F. Butler Maj. Genl".
+- **E297 -> pointer 10268 (Page 126, same book), period clear copy:** "1220 AM 25th Ft Monroe Va Apl 24/64 For CA Dana Washn ---- The Diamond a
+  very fast captured blockade runner is I am told about to be sold in New York ---- If she is sold she will certainly be in the old business ----
+  I think she ought to be seized particularly as we are so much in want of vessels sig Gen W F Smith 10PM how do you like that plan" (the
+  holder's transcription marks "W F" as an insertion; "how do you like that plan" is Sheldon's operator chat, copied into the clear book too).
+- **E298 -> printed: OR ser. I vol. 41 pt 4 (`warofrebellion414unit`), the first document of the part (p.1 by its position after the part
+  title; page number not checked on the page image):** "Fortress Monroe, Va., October 16, 1864 -- 3 a.m. (Received 7.05 a.m.) His Excellency
+  A. Lincoln: Have just arrived and will go on immediately. It has occurred to me to propose General Logan for Missouri or else for Hooker's
+  present command, then General Hooker go to Missouri. What is your opinion in respect to this proposition? Expect to reach City Point at 9
+  a.m. Please let me have your answer. E. M. Stanton, Secretary of War." Same telegram; FM-R5c's "none located" came from not fetching I/41
+  pt 4 (its phrase grep had I/39 pt 3 and I/42, not the Missouri volume).
+- **E293 -> no clear copy and no print located.** Context printed in OR I/42 pt 3 (`423unit`, djvu text, page not read): Butler to Colonel
+  Dodge, 7 Dec 1864, "The Baltic is at Annapolis. Get her. We shall need her."; Dodge (Bermuda) to Butler, 7 Dec 1864 10.30 p.m., with Butler's
+  indorsement "Yes. Troops will begin to embark to-morrow."; Lt B. M. Hall's order to apply to "Colonel Dodge, chief quartermaster, for water
+  transportation" at Bermuda Hundred. Internal witness (not a clear copy): 5823, 9 Dec, McCormick (Medical Director) has taken the Western
+  Metropolis, Baltic and B. Deford. Letters-only phrase grep (`fv_fm8c_print.out`, 169 volumes): "Rice Dupont and Sedgwick", "embarking the
+  troops with all possible dispatch", "river boats and transfer them", "Baltic to report to you" 0; "Western Metropolis" only OR I/36 pt 1
+  (another date); OR I/42 pt 3 every "December 8" heading line scanned for Dodge/Webster/Baltic/Metropolis (none); ORN I/11 (Fort Fisher
+  expedition) has no Baltic, Metropolis or Col. Dodge; Butler's Correspondence IV-V (cached) 0.
+- **E294/E295/E297 print:** phrase grep 0 in OR I/33, I/36 pts 1-2, ORN I/9-10, Butler IV-V; "Diamond" in ORN I/9 only in a list of blockade
+  runners (p.251 area); "the Diamond" in OR I/36 pt 2 is the Potomac telegraph steamer (May 1864), other. Not searched: the press of the day
+  (none of the five is a press telegram), Google Books (not probed this session), Basler's Collected Works vol. 8 (E298 already in print).
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E294 (clear copy 10253):** Shelby = Genl (C), Weaselers x2 = steamers (C), pension = four, plaster publish = five hundred, spit = men,
+  flint = Pt Royal, unity/zodiac/pedlar = punctuation (C), plus "weasler" (the decoder leaves it plain) = steamers (C). **C 11 of 11 code
+  groups (+ weasler C).** The ledger omits Biggs's signature (Sheldon's header "from Biggs" carries it).
+- **E295 (clear copy 10261):** Belcher = QrMr Genl, pandora = Lt Col (C), Vinton/vintons/Vincents = Q. m./QrMrs, pension = four, White =
+  report, paradise = Col, Knave = B. F. Butler, Harriet = 1 PM, youth = sig, pekin/pedlar/zodiac = punctuation, all C. **"palates" = brigades
+  in the clear copy** ("the brigades which arrive"), while the key row is Palate = Brigadier General (p.18 l.20): the decoder's "[Brigadier
+  General]'s which arrive" is corrected to **brigades (C)**, the key row noted as the nearest word the clerk had. "Bugs"/"begs" = Biggs
+  (phonetic plain). **C 17 of 17.**
+- **E297 (clear copy 10268):** Image = C. A. Dana, grapes = Washn, piloted = captured, France = New York, Nankin = W. F. Smith, Rebecca =
+  10 PM, youth = sig, unity/zodiac/zebra = punctuation: **C 10 of 10.** "block aid runner" = blockade runner (plain).
+- **E298 (print, OR I/41 pt 4):** Alice = 3 a.m., Bolivia = the President (Lincoln), milk = Logan, Languages and lapland = Hooker, polka =
+  command, Axis = Missouri, black = City Point, Emma = 9 a.m., walrus = sig, Brutus = Secretary of War (Stanton), unity x2/zebra = punctuation,
+  all C; grapes (Washington, not in the print's heading) H. **C 14 + H 1 of 15.** "Miss sorry" = Missouri (phonetic plain), "immed'y" =
+  immediately. **Header correction:** sent from Fort Monroe (image "Ft Monroe Oct 16/64"; print "Fortress Monroe ... 3 a.m."), to Maj. Eckert,
+  Washington, for the President; "Dealy" after the text is the operator W. J. Dealy (E267), not part of the message.
+- **E293 (no witness):** the decoder's tokenisation is wrong in three places, each a plain word the decoder took as a code word:
+  **"Webster" is the addressee, Col. R. C. Webster, QM at Fort Monroe, not the signature word** (the decoder's tail starts there and labels the
+  whole body tail); **"An apple is" = Annapolis** (phonetic split; the decoder's Apple = [Sumter] is a false hit); **"Dodge" = Col. George S.
+  Dodge, chief quartermaster, Army of the James** (OR I/42 pt 3; the decoder's Dodge = [McMinnville] is a false hit). Also "Burr muddy" =
+  Bermuda [Hundred], "ball tick" = Baltic, "tooth see going" = to the sea-going (phonetic plain). Code groups read: paradise = Colonel,
+  wreathed = telegraphed, White = report, snake = Headquarters, quarreling = embarking, whiskey = troops (`variant` Whisky), whistle = troops,
+  Animal = Monroe, Windpipe = River, weaslers = steamers, youth = signature, pandora = Colonel, Vinton = Quartermaster, unity = period: **H 14.
+  "actor" unread** (image as transcribed; not a key row; plausibly "after", an operator's slip, M). Reading: "[Bermuda Hundred, 8 Dec 1864, via
+  City Point (S. H. Beckwith) to Fort Monroe] To Colonel Webster. I telegraphed to Annapolis [actor] for the Baltic to report to you. If she
+  doesn't I shall have to take the Western Metropolis for the headquarters boat. I am embarking the troops with all possible dispatch. If the
+  Rice, Dupont and Sedgwick don't arrive I shall send the remaining troops to Monroe in river boats and transfer them to the sea-going steamers
+  now laying there. Signed George S. Dodge, Colonel and Chief Quartermaster." **H 14 of 15, actor M.**
+
+### 4. Classification (key `period`)
+`depth_pct` = H(or C) / code-word groups (plain names and phonetic words excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E293** Col. George S. Dodge, Chief QM Army of the James (Bermuda Hundred), via Beckwith, City Point, and Sheldon to Col. R. C. Webster, Fort Monroe, 8 Dec 1864 | **N3** | unknown | **D2** | 93.3 (14 H of 15; actor unread, other) | code clause: Quarrel = Embark, Whistle = Troops, Animal = Monroe, Windpipe = River read passim; external (non-statistical): OR I/42 pt 3, Butler to Dodge 7 Dec "The Baltic is at Annapolis. Get her." and "Troops will begin to embark to-morrow"; sibling 5823 (9 Dec) Western Metropolis and Baltic taken for hospital use; one unread non-name gap holds it below D3 (E260 precedent) |
+| **E294** Herman Biggs, Lt Col and QM, via Sheldon to Maj. Eckert for Gen. D. H. Rucker, 20 Apr 1864 7 PM | **N1** (holder's public transcription of the clear copy, pointer 10253) | yes (holder's transcription) | **D3** | 100 (C 11 of 11) | external non-statistical: the period clear copy agrees with every code group |
+| **E295** Maj. Gen. B. F. Butler via Sheldon to Maj. Eckert for the QMG, 22 Apr 1864 1 PM | **N1** (holder's clear copy, pointer 10261) | yes (holder's transcription) | **D3** | 100 (C 17 of 17; palates = brigades) | external non-statistical: the clear copy |
+| **E297** Maj. Gen. W. F. Smith via Sheldon to Maj. Eckert for C. A. Dana, 24 Apr 1864 10 PM | **N1** (holder's clear copy, pointer 10268) | yes (holder's transcription) | **D3** | 100 (C 10 of 10) | external non-statistical: the clear copy |
+| **E298** E. M. Stanton, Fort Monroe, to Lincoln via Maj. Eckert, 16 Oct 1864 3 AM | **N1** (printed OR I/41 pt 4, first document) | yes (OR) | **D3** | 100 (C 14 + H 1 of 15) | external non-statistical: the OR print agrees with every code group |
+
+- **E293: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 8 Dec 1864, as Butler's troops embarked for the Fort Fisher
+  expedition, Col. George S. Dodge, chief quartermaster of the Army of the James, telegraphed Col. R. C. Webster at Fort Monroe that he had sent
+  to Annapolis for the Baltic, would otherwise take the Western Metropolis as the headquarters boat, and, if the Rice, Dupont and Sedgwick did not
+  arrive, would send the remaining troops to Fort Monroe in river boats to transfer to the sea-going steamers there. Not located in the Official
+  Records (ser. I vol. 42 pt 3, by phrase and the 8 Dec headings), ORN ser. I vol. 11, Butler's correspondence or the Huntington's full-text
+  search (searched 9 Oct 2026)." Unsafe: any novelty word; any reading of "actor". Depth sentence (mine): "On 8 Dec 1864 Butler's chief
+  quartermaster told Fort Monroe he was embarking the troops and would shift any left over to the sea-going steamers at Monroe in river boats."
+- **E294: N1.** Safe sentence: "Read at grade C with Cipher No. 1 against the period clear copy in the Eckert Papers (Huntington, pointer
+  10253, p.111): Lt Col Herman Biggs told Gen. Rucker on 20 Apr 1864 that he had no steamers able to go to sea with four or five hundred men."
+  No status.json or SO row (N1).
+- **E295: N1.** Safe sentence: "Read at grade C with Cipher No. 1 against the period clear copy (Huntington, pointer 10261, p.119): Butler's
+  22 Apr 1864 request to the Quartermaster General for four efficient and experienced assistant quartermasters for Lt Col Biggs." No
+  status.json or SO row (N1).
+- **E297: N1.** Safe sentence: "Read at grade C with Cipher No. 1 against the period clear copy (Huntington, pointer 10268, p.126): W. F.
+  Smith's 24 Apr 1864 telegram to C. A. Dana urging that the captured blockade runner Diamond, about to be sold in New York, be seized." No
+  status.json or SO row (N1).
+- **E298: N1.** Safe sentence: "Read at grade C with Cipher No. 1 against the Official Records (ser. I vol. 41 pt 4, first document): Stanton
+  to Lincoln from Fortress Monroe, 16 Oct 1864 3 a.m., proposing Logan for Missouri or for Hooker's command, Hooker then to go to Missouri."
+  No status.json or SO row (N1).
+
+### 5. Postmortem
+FM-R5c's transcription is exact on all five pages; its decoder tokenisation and its print/holder search were not. Four of its five "none
+located" have a witness: three are the FV-FM5c/6a/7b pattern a fifth time (FM-R5c ran 9 holder queries, none on a pair of the entry's
+ordinary clear words; "send to sea", "efficient experienced", "diamond sold" each find the Washington clear book in one query), and E298 is
+printed in the one OR volume the Missouri content points to (I/41 pt 4), which its grep did not include. Over-claims corrected here: E298
+header "Washington" -> sent from Fort Monroe; E295 "[Brigadier General]'s which arrive" -> brigades; E293 "Geo S. [Dodge?]" and the decoder's
+[McMinnville], [Sumter] and Webster-as-signature -> Col. George S. Dodge, Annapolis, Col. R. C. Webster (addressee). Reading corrections for a
+FIX job (rule 7, decode.py entry notes, not applied here): E293 `plain: Webster Dodge apple` (Annapolis, Dodge, Webster), tail start after
+"Chief Vinton", actor unread M; E294 weasler = steamers (`variant:`); E295 palates = brigades (`variant:` or exception, C); E298 header place
+Fort Monroe, "Dealy" = operator. Requests: hdl.huntington.org 24 (19 dmQuery, 5 IIIF pages); archive.org 8 (3 advancedsearch, 5 djvu text).
