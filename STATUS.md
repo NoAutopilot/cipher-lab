@@ -6993,3 +6993,12 @@ vs L, dev then eval once): three Opus 5.5 workers spawned 07:11 UTC.
 | E confusion matrix learnt on dev re-weighting key_decode_lattice (idea M5, no vision call) | TXE-E session_011aJedwsjoakb85C4CPihNW, cap 5 | leave-one-line-out | -- | -- |
 | G document-recovery practice literature -> research/TX-RECOVERY-PRACTICE-2026-10-09.md (owner idea 5) | TXE-G session_01Q5gZS93pQxXHF4cVWDKxok, cap 6 | read-free proxy on the cheap methods | -- | -- |
 Amendments 1-2 (07:0x UTC): cap 150, ideas register research/TX-IDEAS-2026-10-09.md (23 ideas, owner's eight first), single-instrument gate p<0.01, one eval look each (0 taken), confirm item from TX-CONFIRM-SET opened once at the end, final pipeline applied to one unread Birago 1572 letter. Round 3 (cap 20) combines what moved eval, re-scores the whole pipeline on no.87 against 0.045, feeds what still splits to the sorter focus.tsv.
+
+Check-in 4, 07:17-07:2x UTC 9 Oct (fired 15 min late): five_hour allowed on account 4; orchestrator context ~600k, cost 26.6 by
+get_session -- hub-seed/SUCCESSOR-PROMPT.md written; hand-over planned at ~750k. TX-ENGINEER round 2 live: TXE-A compare-don't-recall,
+TXE-B crop geometry, TXE-C thin-stroke pair re-read, TXE-D rendering sweep (white space, darkening, colour, super-resolution), TXE-E
+confusion-matrix lattice, TXE-G document-recovery literature pass (Opus workers, the lane ledgers them). LANE MQS-2 ran 9 jobs
+(SPECIAL-SIGNS, SEGMENTER, CLASSIFY-ROUNDS, BNF-S2A, LANGS, CTTS-EXPORT, TX-CROSSWORD 4th attempt, NGRAM-SWEEP no headroom, ALIAS) and
+has 4 live; it is over the three-worker hold while TX-ENGINEER runs (reminded). Account 2: FAMILY-A2g (incarnation 7) open, NEAR-POLL and
+SHELF-ROWS spawned 07:10. Account 1: VERIFY-HELLEN, SIG-7, TX-CONFIRM-SET queued for its :40 firing. Desk clean. Unassigned rows 18
+(all carry queued or live jobs from this session; the ON column lags the queue by one check-in).
