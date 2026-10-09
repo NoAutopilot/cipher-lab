@@ -13399,3 +13399,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 23:23 | SUR-266 worker | NA take (service.archief.nl / www.nationaalarchief.nl) for LANE FAMILY-A2m (account 2)
 2026-10-09 23:24 | BRO-CT worker (account 2, Opus) | claim antt-msliv0638-brochado-1712: BRO-CT crossed-t glyph compare (3 appendix t + letter 134 m0276-r2 pos 16, 4 decoys, 2 blind looks) and decode_key --try t=l on letter 134; cap 4, box 23:21-00:31 UTC 10 Oct (80% 00:17); disk only, no key.tsv edit; for LANE FAMILY-A2m (account 2)
 2026-10-09 23:24 | VB-EYE worker (Sonnet) | huygens take: ~8 html page requests dewitt pp.439,442-447 -- for LANE FAMILY-A2m (account 2)
+2026-10-09 23:25 | LIN-BFSP2 worker (Sonnet) | claim LIN-BFSP2: antt-linhares-chave print step remainder (Strangford / Sousa Coutinho families, metadata map), cap 2.5, box 23:25-00:25 UTC (80% line 00:13), <=90 requests, for LANE FAMILY-A2m (account 2)
