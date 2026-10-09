@@ -3247,7 +3247,7 @@ agrees with positions 1-6 and reads position 7 as a comma ('bernau'). The verifi
 the library's Mayer (verifier's M hypothesis: Meyerfeldt, HYPOTHESES.md). No SO or AUD2 row (below the N3+ D2+ trigger). Next: apply r04/r01
 transcription fixes and re-run --check + gate (~$0.5); Berner/Bonnesen by date and names; 0177.
 
-## MANT-CUC3 (9 Oct 2026, 13:22-13:4x UTC by date -u, LANE FAMILY-A2i account 2): 694/08 0398 + 0499 clear-under-code
+## MANT-CUC3 (9 Oct 2026, 13:22-13:3x UTC by date -u, LANE FAMILY-A2i account 2): 694/08 0398 + 0499 clear-under-code
 Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-1310-jobs.md "MANT-CUC3". PREREG-MANTCUC.md reused unchanged (scorer mant0608/cuc/cuc_score.py,
 seed 6083, 1,000 permutations, gate real > p99 on both controls); no new gate, no new PREREG.
 Prior work: `tools/prior_work.py sachsstaatsarchiv-manteuffel-1712 --item-spec 'shelfmark=HStA Dresden 10026 Loc. 694/08; frames 0398 0499
