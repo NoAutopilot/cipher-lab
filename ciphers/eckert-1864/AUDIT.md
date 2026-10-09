@@ -8286,7 +8286,7 @@ this section, prior-work.tsv rows and the propagation below).
 ## AUDIT 2 (AUD2-LEDGER-13)
 
 Second verifier AUD2-LEDGER-13 (account 4, session_01GiCAM9m4S4oHTToeoa5q9B, for the account-4 orchestrator; row moved from account 3), 9 Oct
-2026, 05:11-05:4x UTC by `date -u`. Account 4 did not read or first-audit E228, E229 or E240 (readers FM-R3b/FM-R3d and first verifier
+2026, 05:11-05:32 UTC by `date -u`. Account 4 did not read or first-audit E228, E229 or E240 (readers FM-R3b/FM-R3d and first verifier
 FV-FM6b, all account 1). Audited reading: reading.md at origin/main 05:30 UTC (FIX-FM6 applied: E228 `plain: wise`, E229 `plain: herald`, E240
 `variant: peken=pekin`); `decode.py --check` exit 0. Nothing decoded; key `period` for all three. Depth: keep or lower only (depth-bar file).
 Script: `fortmonroe/aud2_l13_hdl.py` (+ `.out`). Print greps inline: ORN I/11 `officialrecordso0011unse` djvu text (scratch); be-api fts
