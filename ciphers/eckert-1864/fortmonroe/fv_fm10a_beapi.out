@@ -1,0 +1,52 @@
+warofrebellion363unit | "Gloucester route" | 0
+warofrebellion363unit | Gloucester Mackintosh | 0
+warofrebellion363unit | Gloucester Yorktown telegraph | 1
+    on the {{{Telegraph}}} road, and was at a point half a mile from the {{{Telegraph}}} road. A
+    is about to {{{telegraph}}} to General Grant, and if you wish it he will {{{telegraph}}} in relation
+    out on strikes the {{{Telegraph}}} road at Carmel Church, and by the {{{Telegraph}}} road thence it is
+    fort, Norfolk, Portsmouth, {{{Yorktown}}}, Will- iamsburg, {{{Gloucester}}} Point, and their dependencies
+    Sheldon, {{{Telegraph}}} Operator, Fort Monroe : I should have no doubt that the {{{telegraph}}} route
+militarytelegraph02plumrich | "porous cups" | 0
+militarytelegraph02plumrich | Gloucester | 1
+    were General Butler's forces, at and near {{{Gloucester}}} Point, Va. , about thirty thousand men ;
+    from Yorktown to General Butler's, at {{{Gloucester}}} Point, where, to deceive the enemy as
+    As soon as the transports started from {{{Gloucester}}} Point, a telegraph building party began
+    along the north bank of the York from {{{Gloucester}}} Point to West Point, submarine cables being
+    In the construction of the line from {{{Gloucester}}} to West Point, Mcintosh's or some other
+militarytelegraph02plumrich | Mackintosh | 0
+militarytelegraph02plumrich | "O'Brien" | 1
+    H. Nye, J. M. o, Oak as, T. F. {{{O'Brien}}}, John E, {{{O'Brien}}}, Richard. Olmstead, John Q. O'Neil
+    I. 96; II, 109. {{{O'Brien}}}, John E., 1, 138, 146; II, 114.131,278. {{{O'Brien}}}. Richard. I. 67.
+    Morrison, Silas C. Burns, W. N. Embree, R. {{{O'Brien}}}, Thos. E. Mo'Reland, J. H. Glazier, J. W.
+    Bunnell, A. H. K A NODE, J. W. Sampson, J. {{{O'Brien}}}, C. L. Snyder, J. H. Emerick, Chas. R. Roberts
+    General Butler were chief operator Kichard {{{O'Brien}}}, and J. Hervey Nichols and J. W. Collings
+papersofulyssess0011gran | Gloucester route | 0
+warofrebellion363unit | "Fort Monroe" | 1
+    Yorktown. OPERATOR, {{{Fort Monroe}}} Office. Headquarters Engineer Brigade, {{{Fort Monroe}}}, Va., May 31,
+    {{{Fort Monroe}}}: Colonel : Lieutenant-General Grant desires the saw-mills at {{{Fort Monroe}}} to
+    General. {{{Fort Monroe}}}, June 12, 1864. Estimate of bridge material now at {{{Fort Monroe}}}. — One
+    Commanding Officer, {{{Fort Monroe}}}, Va. : In case the line between {{{Fort Monroe}}} and White House
+    over there. S. P. LEE, Acting Rear-Admiral. {{{Fort Monroe}}}, Va., May 20, 1864—6 p. m. (Received
+be-api requests 9
+# follow-up (FV-FM10a): context of the 363unit Sheldon hit
+warofrebellion363unit | "I should have no doubt that the telegraph route" | 1
+    Operator, Fort Monroe : {{{I should have no doubt that the telegraph route}}} most easily pro- tected
+warofrebellion363unit | "telegraph route" Sheldon Gloucester | 1
+    the {{{telegraph route}}} most easily pro- tected would be across the York at {{{Gloucester}}} Point
+    on {{{Gloucester}}} side. Operators will be distributed according to orders. G. D. {{{SHELDON}}}. Headquarters
+    this morning. This explains delay. GEO. D. {{{SHELDON}}}, Manager Fort Monroe Military Telegraph. Hdqrs
+    Norfolk, Portsmouth, Yorktown, Will- iamsburg, {{{Gloucester}}} Point, and their dependencies, would consti-
+    thence to Grant’s headquarters. Confer with {{{Sheldon}}} as to plans and route to build upon. Answer
+warofrebellion363unit | "small force" Gloucester telegraph | 1
+    on the {{{Telegraph}}} road, and was at a point half a mile from the {{{Telegraph}}} road. A
+    engineer, {{{telegraph}}}, road and bridge construction, leaves me with a comparatively {{{small force}}} for
+    is about to {{{telegraph}}} to General Grant, and if you wish it he will {{{telegraph}}} in relation
+    out on strikes the {{{Telegraph}}} road at Carmel Church, and by the {{{Telegraph}}} road thence it is
+    Sheldon, {{{Telegraph}}} Operator, Fort Monroe : I should have no doubt that the {{{telegraph}}} route
+warofrebellion363unit | "most easily protected" | 0
+# retry after 502 (FV-FM10a)
+warofrebellion363unit | "Operators will be distributed according to orders" | 1
+    on Gloucester side. {{{Operators will be distributed according to orders}}}. G. D. SHELDON. Headquarters
+warofrebellion363unit | "across the York at Gloucester Point" | 1
+    easily pro- tected would be {{{across the York at Gloucester Point}}}, thence up to West Point,
+warofrebellion363unit | Halleck Sheldon Gloucester | ERROR HTTP Error 502: Bad Gateway

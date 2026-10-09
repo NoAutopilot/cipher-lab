@@ -10907,3 +10907,109 @@ order; 12319, received copy, "terrible" for tremble). NOTES FM-R4a Remaining gap
 E321 in wire order (no new telegram). KEY lane: the Tulip = Period S row needs a context condition (E319 is a counter-example).
 Requests: hdl.huntington.org 20 (17 CONTENTdm queries, 3 IIIF pages, all 200); archive.org 9 downloads (4 answered 500/000 or reset, 1 500 on
 the retry, 4 x 200) + 1 advancedsearch; be-api 12 (5 x 502); www.googleapis.com 7.
+
+## AUDIT (FV-FM10a)
+
+Verifier FV-FM10a (account 1, for LANE LEDGER), 9 Oct 2026, 16:4x-17:1x UTC by `date -u`; a separate session from the readers FM-R7a and FM-R7b,
+not protecting their conclusions. Scope: **E314, E315** (NOTES "## FM-R7a") and **E318** (NOTES "## FM-R7b"); ciphertext.txt, Cipher No. 1, Fort
+Monroe ledger mssEC 25 = Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all three: `period`. No spec exists for
+eckert-1864, so `judge_plaintext.py` was not run. Scripts: `fortmonroe/fv_fm10a_hdl.py` (+ `.out`: 16 CONTENTdm full-text queries across all
+pointers, three page images at 2400 px to scratch), `fortmonroe/fv_fm10a_print.py` (+ `.out`: letters-only phrase grep over the 164 cached
+print-check volumes), `fortmonroe/fv_fm10a_beapi.py` (+ `.out`: be-api queries in OR I/36 pt 3, Plum vol. 2 and Grant Papers vol. 11, with a
+positive control: `"Fort Monroe"` in OR I/36 pt 3 returns 1 doc hit). archive.org downloads of OR I/36 pt 3 and Plum vol. 2 failed (500, then a
+connection reset on the single retry); the host was not hit again. Intake gate: `eckert-1864: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`.
+
+### 1. Duplicates, prior work, image
+- **Duplicate diff:** pointers 5666, 5750, 5709 against every `###` header in ciphertext*.txt and status.json: each occurs only in its own header;
+  no other header names Agawam/Farrar's 13-14 June, porous cups or the Gloucester route. **No duplicate.**
+- **Prior work** (`tools/prior_work.py eckert-1864 --item-spec ... --step-type audit --offline`, one per entry, all exit 4): 1-own LEAD x3 = the
+  slug-level live claims of FIX-FM11, KEY-BLIND and NO9-PAGES, none naming these entries; 3-tomokiyo CLEAR; 3-solver CLEAR (cached), aaymeloglu
+  UNCHECKED-NET (not cloned, as FV-FM9a-e); 4-editions CLEAR for all three. **The editions CLEAR is wrong for E315** (ORN I/10 p.146 prints it, and
+  the holder has a clear copy, below): the tool's date window does not cover ORN or the holder's own clear books.
+- **Image eye check this session, every graded line** (page images at 2400 px to scratch; fixed-height strips of the entry region read at 0.75
+  scale, because `iiif_lines.py --image` finds only 4 bands on these ruled-grid pages, as FM-R6c/FM-R7a found): 5666 entry 2 (13 lines + "R
+  O'Brien"), 5750 entry 2 (header + 5 lines + Sheldon), 5709 entry 2 (header + 13 lines + "T. T. Eckert", including the last two lines FM-R7b did not
+  view). **The transcription matches the image word for word on all three** (E314 "I left done at landing", "bat I regret", "Maxims", "opers";
+  E315 "Smyrna June fever Rebecca peasant / appian female Rosalie for Burton zodiac poplars from Walpole / Ironic lads ... sweden zebra walnut tug",
+  "youth Neptune sprinkle of rain"; E318 "Ivory opinion", "plunge prolong spit Can saddle", "whip", "pause", "Dunn", "Peru Mackintosh", "blissfull &
+  Glazier", "Haven", "homer", "white progress and inform me all blank"). 5750 and 5709 carry the clerk's small word-count numerals over the words.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl token 17:00-17:0x UTC, 16 queries): porous
+cups 9 (5666 own; 8 later operator-ledger leaves 11229-13031, other dates), relay was torn 1 (own), spools burnt 1 (own), taking off Battery 2 (own;
+11823 other), Deserters from rebel 26 (incl. **10415**), confirm previous 6 (5750 own, **10415**; others other dates), tug from bend 4 (5750 own,
+**10415**; 4605/5655 = 6 May Lee telegram), Farrars Island 13 (incl. **10415**), Gloucester route 2 (5709 own; **5713**), Mackintosh arrives 1 (own),
+Homan to Gloucester 3 (5709 own; 5713; 5741 = 12 June), come in circuit 5 (own; others other dates), Embree 44, Logue 16, Glazier 18 (operator
+rosters, none a copy), blissfull 1 (own).
+- **E315 -> pointer 10415 (Page 273 of the Washington clear telegram book, the book of E299's 10239 and E300-E303's 10435), period clear copy, word
+  for word:** "235 AM 15 Ft Monroe June 14 - 64 Flag Ship Agawam Farrars Island June 13th 10 pm via Ft Monroe 14th 9 PM ---- Secy Navy ---- Deserters
+  from rebel Iron clads confirm previous information ---- Rebel tug from Bend above fired a shot or two in this direction this after noon sig SP
+  Lee". **Also printed: ORN ser. I vol. 10 p.146** (`officialrecordso0010unse`, djvu text, running head "146 NORTH ATLANTIC BLOCKADING SQUADRON"
+  directly above the item; page not read on the image): "[Telegram.] Flagship Agawam, Farrar's Island, June 13 -- 10 p.m. (Via Fort Monroe, 14th,
+  9 p.m. Received 2:35 a.m. 15th.) Deserters from rebel ironclads confirm previous information. Rebel tug from bend above fired a shot or two in this
+  direction this afternoon. S. P. Lee, Acting Rear-Admiral. Hon. Gideon Welles, Secretary of Navy." The reader's N1 lead holds, now with the page and
+  the holder copy.
+- **E314 -> no clear copy and no print located.** Its body is written in clear on the page and so is in the Huntington's public transcription of
+  5666; the key adds only "Maxims" (= Gen. Q. A. Gillmore) and two stops. Phrase grep (porous cups, relay was torn to pieces, spools burnt, taking off
+  battery, considerable firing yesterday, office at Gillmore) 0 in 164 volumes (porous cups hits are ORN I/10 torpedo batteries); be-api Plum vol. 2
+  `"porous cups"` 0. Context: Butler IV p.166 prints Butler's 6 May order to "Mr. Richard O'Brien, telegraphic operator" (Jamestown Island line).
+- **E318 -> no clear copy and no print of the telegram located.** Its **context is printed and in the holder's ledger**: OR I/36 pt 3 p.262 (page from
+  AUD2-LEDGER-23; be-api snippet here), Butler to Sheldon, 28 May 1864: "I should have no doubt that the telegraph route most easily protected would
+  be across the York at Gloucester Point, thence up to West Point ..."; the same page of the ledger, row 5709/2 (Sheldon to O'Brien at Butler's HQ, 28
+  May): "since sending my despatch Ivory has given his opinion that the torrent [= North] side of York Windsor is best route as it can be saddled
+  [= guarded] by small force"; and **pointer 5713 row 1** (Sheldon to Eckert, 29 May), whose last clause OR I/36 pt 3 prints (be-api snippet "...
+  on Gloucester side. Operators will be distributed according to orders. G. D. SHELDON", page not seen): "Mack and party with Homan and Collings
+  arrived at Jamestown last night ... They will arrive at Haven [= Yorktown] this afternoon ... Operators will be distributed according to orders" --
+  the answer to E318's own distribution of operators (Collings to Yorktown, Homan to Gloucester, Mackintosh's party). be-api OR I/36 pt 3 `"Gloucester
+  route"` 0, `Gloucester Mackintosh` 0; Plum vol. 2 `Mackintosh` 0 (it prints the Gloucester Point - West Point line and "Mcintosh's or some other"
+  building party); Grant Papers vol. 11 `Gloucester route` 0; phrase grep "100 men can guard", "where a regiment could not", "Mackintosh arrives",
+  "come in circuit", "Homan to Gloucester" 0 in 164 volumes.
+- Not searched: the press of the day (none of the three is a press telegram), Google Books (not probed), Grant Papers beyond be-api snippets, NARA
+  RG 107; OR I/36 pt 3 not read on the page (archive.org download failed; be-api 502 on 2 of 17 queries).
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E315 (clear copy 10415, ORN I/10 p.146):** Smyrna = Island, fever = 13, Rebecca = 10 PM, peasant = By the way of, appian = Monroe, female = 14,
+  Rosalie = 9 PM, Burton = Secretary of Navy, poplars = Deserter(s), Walpole = Rebel, sweden = Information, walnut = Rebel, Neptune = S. P. Lee: **C 13**;
+  zodiac, zebra, youth = punctuation, **H 3**. **C 13 + H 3 of 16.** No reading correction; the copy adds the receipt "2.35 AM 15th". "Ironic lads" =
+  ironclads, plain (phonetic, as written).
+- **E314 (no clear copy):** Maxims = Gen. Q. A. Gillmore H (key), zebra x2 H: **H 3 of 3**; the three "relay" are plain (FM-R7a, right: telegraph
+  relay; image). The rest is clear English. "done" ("I left done at landing") is as written; it may be the repairer Doren named in E320 (lead only, I).
+- **E318 (no clear copy):** **Ivory = General-in-Chief stands at H, the reader's note ("probably 'my'; M") is wrong**: the sibling 5709/2 on the
+  same page reads "Ivory has given his opinion", a person. Who is meant is not settled: the printed 28 May opinion with the same content is Butler's
+  (Knox in this key, so not Ivory), and Ivory's opinion reaches Sheldon through Eckert, so Halleck in Washington is the likelier holder; record the
+  identity as open, the value as H. Plunge prolong spit = 1 100 Men (read "[100] [Men]", i.e. one hundred men), saddle = Guard, whip = Regiment, Peru
+  = As soon as, Haven = Yorktown (supported by 5713: Homan and Collings to arrive at Haven by land; Gloucester is across the York from it), zodiac =
+  stop, homer = West Point (supported by the printed route "thence up to West Point"), white = Report ("white progress"): **H 11 of 11.** "Dunn" =
+  done and "white house" are plain (as rendered). "pause" stays as written (unclear; perhaps "route", not a key word). Reading: "[General-in-Chief's]
+  opinion is that the Gloucester route is the best: one hundred men can guard that line where a regiment could not the other ... let the work be
+  commenced as soon as Mackintosh arrives with his party, and push through fast as can. Send Logue & Embree to Jamestown and hold Blissfull & Glazier
+  ready for White House; send Collings to Yorktown & Homan to Gloucester if office is needed there. Bickford has some operators with him who will be
+  stationed at West Point. Send Cowans with Mackintosh's building party; let him come in circuit twice a day and report progress."
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E315 | **N1** (text known) | period | D3 (C 13 + H 3 of 16; external: holder's clear copy 10415 and ORN I/10 p.146) | plaintext already published by the holder (pointer 10415) and in ORN ser. I vol. 10 p.146 |
+| E314 | **N1** (text known) | period | **D1** (H 3 of 3, one name and two stops; no stretch of cipher above the authentication distance) | the body is written in clear in the ledger and is in the Huntington's public transcription of pointer 5666; the key adds only Gillmore's name |
+| E318 | **N3** (weak: the body is largely clear in the holder's public transcription) | period | **D3** (H 11/11 code groups, no unread gap; external non-statistical: OR I/36 pt 3 p.262 Butler's same route opinion, Sheldon's printed reply "Operators will be distributed according to orders" = ledger 5713/1, which also sends Homan and Collings to Haven = Yorktown) | no prior plaintext or decipherment of this telegram located after the search in s.2 |
+
+- Not N4 for E318: OR I/36 pt 3 read by be-api snippet only, Grant Papers by snippet, press and RG 107 not searched.
+- **Safe sentences.** E318: "Read at grade H with War Department Cipher No. 1: on 28 May 1864 Eckert told Sheldon at Fort Monroe that the
+  General-in-Chief judged the Gloucester route best, since a hundred men could guard it where a regiment could not guard the other, and placed the
+  operators for the York River line (Logue and Embree to Jamestown, Collings to Yorktown, Homan to Gloucester, Bickford's men at West Point); Butler's
+  opinion on the same route and Sheldon's reply are printed in the Official Records (ser. I vol. 36 pt 3), the telegram itself was not located there,
+  in Plum's Military Telegraph, Grant's papers or the Huntington's full-text search (searched 9 Oct 2026)." Depth sentence (D3): "On 28 May 1864
+  Eckert ordered the telegraph line from Fort Monroe to White House built by the Gloucester side of the York, assigned operators to Jamestown,
+  Yorktown, Gloucester and West Point, and told Sheldon to start the work as soon as Mackintosh's building party arrived." E315: "A clear copy is in
+  the Huntington's own transcription (pointer 10415) and the telegram is printed in ORN ser. I vol. 10 p.146; our reading of the cipher entry agrees
+  with both word for word." E314: "The telegram is written in clear in the ledger and is in the Huntington's public transcription (pointer 5666); the
+  key adds only the name Gillmore."
+- **Unsafe:** any "first", "new", "unpublished" for E318; any novelty at all for E314 or E315; "my opinion" for Ivory; naming Halleck as Ivory as fact.
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E318: drop FM-R7b's note "Ivory ... is probably 'my'; M" (Ivory = General-in-Chief, H, identity open; sibling 5709/2); "[100] [Men]" may be rendered
+"one hundred men"; header: image-read whole by FV-FM10a (the reader saw it only to "Cowans"). E315: header may add the clear copy (10415), ORN I/10
+p.146 and the receipt 2.35 AM 15th. E314: none (the "done" = Doren lead goes in NOTES only).
+Requests: hdl.huntington.org 19 (16 CONTENTdm queries, 3 IIIF pages, all 200); archive.org 4 (1 advancedsearch; OR I/36 pt 3 download 500, its one
+retry 500; Plum vol. 2 download reset); be-api 17 (15 answered, 2 x 502).
