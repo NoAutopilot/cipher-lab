@@ -1740,3 +1740,86 @@ recorded here. (c) The leaf ciphertext.tsv files are not decode_key.py inputs; a
 Requests this audit: archive.org 5 (metadata 3, djvu 2; the ROOM release line's '3' undercounts), be-api.us.archive.org 3 (200, 502, 502:
 stopped), books.google.com 24 (search-inside, 2.2 s apart, all 200), www.googleapis.com 7 (200), api.openalex.org 2 (200). Vision: none (2 committed
 crop pairs eyed). No 403, 429 or challenge.
+
+## AUDIT (V-MANT0490)
+
+Verifier V-MANT0490 (account 2, LANE FAMILY-A2k), 9 Oct 2026, 18:45-19:0x UTC by `date -u`. This is a separate session from the solver
+MANT-0490 (session_01JSQGXzU4jxaXKy8aZsseiy) and from MANT-0490L. Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-1815-jobs.md
+"### V-MANT0490". Claim under audit (NOTES "## MANT-0490", commit eb4031655): the 0490 right page (p.392) is a key test, not a reading. Its
+148 code tokens are read by two blind passes and reconciled; the gloss gate PASSes at S 61/92 keyed against a permuted p99 of 22; grades are
+C 61 and M 87; key.tsv is unchanged. Scope: right page only, as committed at eb4031655. MANT-0490L's left-page and gutter work landed at
+c035f5bff (18:55 UTC) while this audit ran. It adds only `_L` files and does not touch any right-page file: `gloss_gate.py --check` is still
+"up to date" on origin/main. The left page is not audited here.
+
+**1. Item.** SHStA Dresden 10026 Loc. 694/08, film frame 0490, right page, page no. 392. Manteuffel to Flemming, Berlin. Dated mid-November
+1712 by its neighbours (0489 = 15 Nov, 0496 = 20 Nov; I). The clear text carries the sense around the codes, for example R10 "160 a fait le
+meme sermon a 120 [gloss Dohna], qui le recut, dit-on" (my eye on crop c0490R10_L01). Every code run but two is glossed between the lines in
+the period hand. The unglossed runs are R15 `10 35 2 14 288` and the R17 tail `29 35`, both M. The R01 line is a full-size line of
+decipherment above R01+R02 ("la paix sans tiers, l'epee a la gloire et au profit du Roy de Prusse", per the blind gloss pass).
+
+**2. Re-derivation (rule 7).** `python3 f0490_08/gloss_gate.py --check` gives "gate.out up to date" (exit 0) at eb4031655 and again at
+origin/main after c035f5bff. The deciding row is S 61/92, control mean 14.08, p99 22, max 25, 0/1000: PASS. The reported row, which includes
+the R01 line, is 96/130 against p99 32: PASS. The script's docstring still says "seed 8" and "--print ... BO I p.212". Both are leftovers
+from the copied f0089_08 script. The code uses seed 490 and has no print_spans.tsv. This is cosmetic and does not change the gate.
+
+**3. Design audit (rule 3).**
+- *PREREG order: verifiable.* d7dec5c20 (18:30:21 UTC) holds only PREREG-MANT0490.md and gloss_gate.py, and it is on origin/main. Passes,
+  ciphertext, spans and gate.out first appear in eb4031655 (18:34:13).
+- *Control.* The control permutes key values over codes. That changes the value-to-code assignment that S measures, so the control can
+  differ from the target. It is not a coverage-type non-test.
+- *Reconciler bias (the main risk).* The reconciler had seen key.tsv and the glosses before settling digits (disclosed in the PREREG).
+  Audit sensitivity `f0490_08/vmant0490_sens.py` -> `vmant0490_sens.out` (`--check` up to date) re-scores the deciding row using each blind
+  pass's raw digits. Same statistic, key, seed 490 and 1000 draws; this is not a registered gate:
+  pass A 53/90 (p99 22) PASS; pass B 58/89 (p99 22) PASS; digits where A = B only 53/84 (p99 21) PASS. **The gate does not depend on the
+  reconciliation.** However, **8 of the 61 C tokens rest on digits the reconciler settled against at least one blind pass.** Most of these
+  are y-shaped glyphs settled as 9 (i) by the MANT-0008 hand convention. At R11 both passes read 4; at R05 pos 2 the reconciler chose 74
+  (sch) between A 77? and B 74?. These 8 C grades are therefore conditional on the y-glyph convention (MANT-YCEN's census, running in
+  parallel). They should be read as C-if-9, not as independent C.
+- *Spans.* Spans are placed by position, by the same key-aware worker. The per-span table in gate.out shows the misses where a span would
+  have been tuned to the key (names abbreviated by the gloss: 160, 257, 150). No sign of tuning, but this cannot be excluded from the files.
+- *Grades.* C counts only matched tokens in the PASSing row. The R01+R02 run (35/38) stays M because it matched only in the reported row,
+  as the PREREG requires. Conservative and correct.
+
+**4. Novelty search log (rule 10).**
+- (a) **Acta Borussica, Behoerdenorganisation I** (1894). IA `diebehrdenorgan01posngoog` _djvu.txt, fetched independently (1 GET). Running
+  heads give Nr. 75-81 for 1-21 Nov 1712 (administrative acts). The only Manteuffel report for November is **Nr. 82, Berlin 23 Nov 1712
+  (p.285)**: ". . . Dhona a trop de complaisance pour le Prince Royal ... Ilgen ...". 0490's right page also names Dohna (120, glossed), so
+  I checked the line: R10 reads "160 a fait le meme sermon a 120, qui le recut, dit-on", which is a different sentence, and no Prince Royal
+  code (865, 283) occurs on the page. Nr. 82 is not this page. A footnote on Grumbkow cites an Austrian envoy, 29 Nov 1712; not this letter.
+- (b)/(c) **Droysen, Geschichte der preussischen Politik IV.1** (IA `droysen-geschichte-der-preussischen-politik-v-4-no-1` djvu, 2
+  requests). Manteuffel is quoted only at Anm. 32 (1706), 401 (Flemming to him, 1709), 431, 510 (a memoire to him, 1712) and 518-520 (27
+  Jan to 19 Feb 1713); there is no mid-November 1712 report. **pp.268-269 ("Preussen in Mecklenburg, November 1712") print the news
+  context**: Steenbock's November moves into Mecklenburg (Damgarten, Rostock, Wismar), Prussian sauvegarde companies at Guestrow and Rostock,
+  and Flemming's armistice with Steenbock. Mecklenburg (288 x2, glossed 'mecklenbourg'), the King of Prussia (257) and a St- name glossed
+  'tr?nbeck' (76) are on the page: **SUBSTANCE printed, wording not**. Berner 1901 was not tried (djvu 500 on 9 Oct, per MANT-0490). Not
+  searched: Bonnesen 1918 for November 1712, Klopp, Sbornik RIO.
+- (d) Holding archive: the frame is in the folder's own fetch manifest (mant0608/fetch_g.tsv); no edition or decipherment is noted in the
+  folder for 0490 beyond MANT-CEN4's inventory row (solver's check 1, re-grepped here: same result).
+- (e) IA full text (be-api): "au profit du Roy de Prusse" 0; "la paix sans tiers" 0; "Manteuffel" "Grumbkow" "Steenbock" 179 (general
+  histories: Waddington, Histoire de Prusse II; Haake's August der Starke; not this letter by title, snippets not read). "fait le meme
+  sermon" got HTTP 502, retried once (502), and the host was stopped: **unchecked**. Google Books API (country=US, key; 3 queries): "la paix
+  sans tiers" Prusse 352 (loose: 1790-1891 French works on Prussia, unrelated by title); Manteuffel Flemming Grumbkow Steenbock 1712
+  Mecklenbourg 0; "le meme sermon" Dohna 121 (loose: ecclesiastical, Macaulay; unrelated).
+- (f) Solver repositories: not cloned (UNCHECKED-NET, as in the solver's prior-work run).
+- (g) Scholarship: not run by API this session. JSTOR: two rows were appended to JSTOR-QUEUE.tsv. Family (i) is sender/subject AND a
+  cipher keyword; family (ii) is the plaintext phrase "la paix sans tiers" with no cipher keyword. Not blocking (N0).
+
+**5. Classification.**
+| item | class | key | text | depth | safe sentence |
+|---|---|---|---|---|---|
+| 0490 right page (148 code tokens) | **N0** | `period` (the leaf's own interlinear decipherment), with Krauske's `published` 1893 table agreeing (gate PASS) | known (the period gloss; news context printed in Droysen IV.1 pp.268-269) | **D1** (depth_pct 41.2, C 61 of 148) | "On the right page of Manteuffel's mid-November 1712 report (SHStA Dresden Loc. 694/08, frame 0490, p.392), Krauske's 1893 table agrees with the leaf's own period interlinear decipherment at 61 of 92 glossed code tokens (permuted-key p99 22); the plaintext is the period gloss, and the news context (Steenbock in Mecklenburg, Prussian sauvegardes, November 1712) is printed in Droysen IV.1 pp.268-269." |
+
+Depth reason: every C token is a gloss match, so the reading is the period decipherment, not ours. The longest matched stretch (G17, 11
+codes) is far below the authentication distance (~127-138 letters, FAM-MANTV). The code clause is not used, for the same reason as
+V-MANT16S: the gloss supplies the values. D1, "fragments read". The 8 conditional C tokens (section 3) do not change the depth.
+Unsafe: "the 0490 report deciphered"; "an unprinted report on Steenbock in Mecklenburg"; "Krauske's key verified independently" (the table
+may itself derive from such glosses); any C count presented as our reading; "unglossed runs read" (R15 and the R17 tail are M).
+No SECOND-OPINIONS-QUEUE row: N0/D1 is below the N3+ D2+ trigger.
+
+**6. Postmortem and corrections.** I found no over-claim in MANT-0490's NOTES section. It says "a key test, not a reading", "search
+results, not novelty verdicts", and makes no novelty claim. Three corrections for the record, without editing the solver's files: (a) 8 of
+the C 61 depend on reconciler-settled digits (mostly the y-glyph 4|9 convention) and are conditional on MANT-YCEN. The gate itself is robust
+(53-58 on blind digits alone). (b) The gloss_gate.py docstring is stale (seed, --print). (c) The solver's BO I check was right that no
+15-20 Nov report is printed; this audit adds that Nr. 82 (23 Nov), which also names Dohna, is a different passage, checked against crop
+R10. Requests this audit: archive.org 3 (BO I djvu, Droysen IV.1 metadata + djvu), be-api.us.archive.org 9 (two 502s on one query, host
+stopped), www.googleapis.com 3. No 403, 429 or challenge.

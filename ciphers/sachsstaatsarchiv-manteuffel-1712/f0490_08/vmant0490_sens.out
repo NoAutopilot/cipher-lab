@@ -1,0 +1,4 @@
+reconciled: S 61/92 keyed; control mean 14.08 p99 22 max 25; PASS (rule as PREREG)
+pass A digits: S 53/90 keyed; control mean 13.72 p99 22 max 24; PASS (rule as PREREG)
+pass B digits: S 58/89 keyed; control mean 13.73 p99 22 max 24; PASS (rule as PREREG)
+A=B only: S 53/84 keyed; control mean 12.95 p99 21 max 23; PASS (rule as PREREG)
