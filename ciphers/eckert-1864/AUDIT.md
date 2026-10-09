@@ -11463,3 +11463,151 @@ line names a non-existent identifier (use `warofrebellion014703rootrich`). Any e
 OR I/47 pt 2.
 Requests: hdl.huntington.org 40 (13 CONTENTdm queries, 22 item info, 5 IIIF, all 200); archive.org 13 (2 advancedsearch, 5 djvu text, 4
 page_numbers, 2 page images, all 200); Google Books API 3.
+
+## AUDIT (FV-MS18b)
+
+Verifier FV-MS18b (account 1, for LANE LEDGER), 9 Oct 2026, 18:16-18:3x UTC by `date -u`; a separate session from the reader MS18-R2, not
+protecting its conclusions. Scope: **E322, E323, E324, E325** (NOTES "## MS18-R2"); ciphertext.txt, Cipher No. 1, Washington sent ledger mssEC 18 =
+Huntington object 10074. Nothing decoded beyond key look-ups in key.md. Key source for all four: `period`. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Scripts: `fortmonroe/fv_ms18b_ledgers.py` (+ `.out`: disk grep of the cached holder transcriptions of mssEC 18 and
+mssEC 19 for each entry's clear words), `fortmonroe/fv_ms18b_print.py` (+ `.out`: letters-only phrase grep of OR I/41 pt 4, I/47 pt 3, I/48 pt 2,
+I/49 pt 2, ser. II vols 7-8, fetched to scratch from archive.org `warofrebellion01xxxxrootrich` / `0208rootrich`, plus the cached ser. II vol. 7),
+`fortmonroe/fv_ms18b_hdl.py` (+ `.out`: 12 CONTENTdm full-text queries across all pointers, four page images at 2400 px to scratch),
+`fortmonroe/fv_ms18b_gb.out` (Google Books API, 10 queries, `country=US`). Intake gate: `eckert-1864: partial (line 3) -- edition/page or
+full-text-search citation found within 6 lines`.
+
+### 1. Duplicates, prior work, image
+- **Duplicate diff:** pointers 10009, 10010, 10024, 9889 against every `###` header in ciphertext*.txt and status.json: each occurs only in its own
+  header (9889 twice: E325 and E326, rows 0 and 2 of the same page). mssEC 19 (the parallel sent book) has no entry of the same date and addressee
+  as E322-E325 (9113 Clowry 5 Nov 1864 is Curtis/Price, 9235 Clowry 17 May 1865 is the Indians at Red Wood, 9242/9243 Clowry 28 May 1865 are
+  Sheridan and cotton). **No duplicate.**
+- **Prior work** (`tools/prior_work.py eckert-1864 --item-spec ... --step-type audit --offline`, one per entry): 1-own LEAD x4 = the slug-level
+  live claims of FIX-FM11, KEY-BLIND, NO9-PAGES and FIX-FM12, none naming these entries; 3-tomokiyo UNCHECKED (E322-E324, no folio key) / CLEAR
+  (E325); 3-solver aaymeloglu UNCHECKED-NET (not cloned, as FV-FM9a-e and FV-FM10a); 4-editions LEAD on OR I/36 pt 2 for E322/E323 (May **1864**
+  windows: the wrong year) and UNCHECKED-NET for every 1865 volume. **The tool's editions verdict is wrong for E322, E323 and E324**: all three are
+  printed (s.2); its date window and cached volumes do not reach 1865.
+- **Image eye check this session, every graded line** (page images at 2400 px to scratch, entry regions cut into strips and read at 0.6 scale,
+  since `iiif_lines.py --image` finds no lines on these ruled pages, as MS18-R2 found). The transcription matches the image except:
+  - **E322 (10009):** "Laution" (l.10) is **not** what the page shows: the word reads "Lantem"/"Lantern" (Lan- + four strokes, no "io"); Lantern =
+    Maj Gen Geo. H. Thomas (key p.17 l.2 L), and the print reads "General Thomas has been so instructed". "palsey" (last line) reads **"palsy"**
+    (Palsy = Brigadier General, key p.18 l.20 R; print "Brigadier-General and Chief of Staff"). "No. 1" is written small above "Macon".
+  - **E323 (10010):** date "May 18th" with "2.30 PM" above it (MS18-R2 right; the print agrees: May 18, 1865, 2.30 p.m.); "Miss" struck and "ark"
+    interlined above it (Ark = Mississippi, key p.10 l.1 R).
+  - **E324 (10024):** line 4 reads "War toby sent to **saco** Pulaski toby held in" and line 5 "cuss toddy there until further orders unity they are":
+    the transcription's **"held in held in" is a doubled phrase not on the page** and **"suco" is "saco"** (Saco = Fort, key p.20 l.18 L). Line 6 reads
+    "now at Galway & welby forwarded **immy**" (the transcription's "many" = imm'y, immediately; print "forwarded immediately").
+  - **E325 (9889):** "Kennerly" on the page (MS18-R2 right; the transcription's "Kennedy" is the holder's misreading; Horan's list below spells
+    Kennerly); "Monday morning next" (the header drops "morning"); "keep Girardeau" = Cape Girardeau (plain, phonetic).
+
+### 2. Holder's full text, sibling ledgers and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl take 18:2x UTC, 12 queries + 4 IIIF pages,
+all 200): plenty of forage 8 (none May 1865 Macon), forage Port Royal 1 (**7927**), Thomas has been so instructed 5 (10009 own; others other dates),
+breaking up Canby 2 (10010 own; 9110 = 31 Oct 1864 McCaine), Sheridan general command 12 (none a copy), Judge Campbell 12 (incl. **7931**, 9231, 8670-
+8689 = April 1865 Richmond reports), Fort Pulaski Seddon 0, rebel agents 4 (none a copy), Kendall Ritchie 1 (9889 own), Cape Girardeau Harper 0,
+Kennerly 0, seizure of their papers 7 (9889 own; **9114**; 9254/9255 later).
+- **No period clear copy of any of the four** in the holder's books.
+- **7927** (object 8066, the received clear book, Page 269): "9 pm 22d Macon Ga May 18th 1865 / 3 pm 18th for Gen Rawlins ---- Telegram 1 pm yesterday
+  received there will be great difficulty navigating Savannah & Ocmulgee ... therefore forage at Port Royal will be hard to get at ..." -- Wilson's
+  answer to E322 (sent 1 PM 17 May, "Harriet"); it confirms shady = forage and the hour.
+- **7931** (object 8066, Page 273): "Richmond May 24th 1865 / 12M For Secy of War ---- Judge Campbell and Mr Siddon are held as prisoners ---- If they
+  are to be confined for any length of time I recommend that they be sent to some fort ... H. W. Halleck Maj Gen." -- the prisoners of E324 were at
+  Richmond, so Galway = Richmond reads; with the cached sibling ledger entries 9230 (mssEC 19, 7 May 1865 to Caldwell, Richmond: "R Empty Hunter & John
+  a Camp bell ... hold them prisoners") and 10022 (mssEC 18, 28 May 1865 to Caldwell, Richmond: "seddon had better go also ... Saco Pull ass sky").
+- **9114** (mssEC 19, Page 220): the same-day order to Davenport, Cincinnati, in another book ("The Arabia directs the arrest at Fanny on Monday
+  morning next of the following named snow Agents and the seizure of their papers ... Morris or Maurice Chicago ... Lieut Thomas Tea Turnstall
+  Cincinnati"), a sibling of E325, E326 and the Louisville copy 9889/1.
+
+**Print** (OR texts fetched to scratch; letters-only grep on corrected phrases, s.3):
+- **E322 -> printed OR ser. I vol. 49 pt 2 p.814** (running head 814 above the item, next head 815 after it; page not read on an image): "HEADQUARTERS
+  ARMIES OF THE UNITED STATES, Washington, May 17, 1865 -- 1 p.m. Bvt. Maj. Gen. J. H. WILSON, Macon, Ga.: The quartermaster's department says that
+  there is plenty of forage at Port Royal and all available means are in operation to get it to you. Major Thomas, assistant quartermaster, Department
+  of the South, leaves New York to-day with funds, and on your requisition will supply your temporary wants. Send your estimate for funds to
+  Quartermaster-General and funds will be forwarded you. You will remain with that part of your command that is to be left in Georgia. General Thomas
+  has been so instructed. Whatever infantry force, in addition to the cavalry left with you, may be required to garrison what you deem necessary
+  points to be garrisoned will be sent you. See that a competent officer has command of the force returned to the Tennessee River. By command of
+  Lieutenant-General Grant: JNO. A. RAWLINS, Brigadier-General and Chief of Staff." Word for word with the decode.
+- **E323 -> printed OR ser. I vol. 48 pt 2 p.492** (head 492 before, 493 after): "WASHINGTON, May 18, 1865 -- 2.30 p.m. Major-General POPE, Saint Louis,
+  Mo.: Orders have been made breaking up **Canby's** division and assigning Sheridan to general command west of the Mississippi, south of the Arkansas.
+  You will please direct Reynolds to receive orders from Sheridan for the disposition of all troops that can be spared from Arkansas, recollecting that
+  the troops taken, with many others, are to operate against the enemy south of him. If Reynolds can be replaced I would like him to go in command of the
+  troops taken. U. S. GRANT, Lieutenant-General."
+- **E324 -> printed OR ser. I vol. 47 pt 3 pp.587-588** (head 587 before the item, head 588 inside it): "WAR DEPARTMENT, Washington City, May 28, 1865 --
+  11.30 p.m. General Q. A. GILLMORE: General Grant has ordered Judge Campbell, R. M. T. Hunter, and Seddon, late Secretary of War, to be sent to Fort
+  Pulaski, to be held in custody there until further orders. They are now at Richmond and will be forwarded immediately. You will receive and hold
+  them in safe custody. EDWIN M. STANTON, Secretary of War." Word for word.
+- **E325 -> the telegram not located.** OR I/41 pt 4 (Nov 1864, Missouri): Kendall = Capt. John Kendall, 16th Kansas; Ritchie = a Colonel Ritchie in a
+  guard dispute (other men); no Kennerly, Girardeau-Harper or "rebel agents" item. Ser. II vols 7 and 8: Kendall = Amos Kendall and W. G. Kendall,
+  no list. OR I/45 pt 1: Lewis H. Kennerly mentioned p.21 (a report, other matter). OR I/39 pt 3 download answered 500 twice (two identifiers, then
+  stopped). Google Books: **the same-day Chicago/Cincinnati order is printed** in an 1892 OR volume (Google Books `urU9AAAAYAAJ`, snippet "...rebel
+  agents and seize their papers: Maj. Morrison Maurice, Chicago, about forty-five years old, wears full whiskers ... has aliases as Samuel Ober, &c.;
+  Capt. Thomas ...", volume and page not identified; likely ser. I vol. 39 pt 3 or 43 pt 2, the latter grepped here with no hit); "Morrison Maurice" +
+  Kennerly / Girardeau / Tunstall: no co-occurring page. **The agents' list itself is printed** in James D. Horan, *Confederate Agent: A Discovery in
+  History* (1954; reprint 2015, Google Books `wtuREQAAQBAJ`, snippet only, page not seen): "He [Jones] reports their names and stations as follows ...
+  Kendall and Capt. Lewis Kennerly St. Joseph, Mo ... John or Wm. Ritchie New Madrid James or Wm. Ritchie Cape Girardeau ... Col. Wm. Harper Memphis
+  ... Capt. Pope Nashville ... Cincinnati ... Maj. Heikermere Col. Thos. J[...]" -- the informant's report from which the 5 Nov orders were drawn,
+  not the telegram (the snippet's place-name order is garbled; it confirms the names and "Col." for Harper).
+- Not searched: Grant Papers vols. 12 and 15 (be-api 502s for the reader; not retried here), Rosecrans or Dana papers, Missouri press of 7-8 Nov 1864,
+  NARA RG 107; Horan's page (snippet only); OR ser. III vol. 5 (503, not retried); OR pages not read on an image.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E322 (OR I/49 pt 2 p.814):** decoder H 37 includes **"Wilson" read as Wilson = West: wrong here** -- it is the plain addressee (print "Bvt. Maj.
+  Gen. J. H. WILSON, Macon"; mssEC 19 9231 "Shelby Wilson" = General Wilson): H 36. Add **Lantern (transcribed "Laution") = Thomas H** and **Palsy
+  (transcribed "palsey") = Brigadier General H** once the transcription is corrected: **H 38**. **Aaron is not Rhode Island**: "Aaron opera shine" =
+  "are in operation" (phonetic, C by print; drop the M). shady = forage (C; the Shade row = Forage is the likely intended word, I), stubby = "is to be",
+  Polk = command, temper airy, esteem mates, compete aunt, worded: **C by print**. No M remains. Reading: as the print, word for word.
+- **E323 (OR I/48 pt 2 p.492):** decoder H 33; add **ark = Mississippi H** (the interlined correction; the decoder renders it plain): H 34.
+  **"legends" = Legend = Maj Gen S. A. Hurlbut (key, H) but the print reads "Canby's division": a data conflict (rule 4), graded M**, the print's Canby
+  being the historically right command (Canby's Military Division of West Mississippi); logged, not settled by me: H 33 + M 1. **"Canby" twice is
+  the phonetic "can be"** (key.md's own note: "canby" = can be), not General Canby: MS18-R2's header "troops Canby spared from Arkansas" is wrong
+  (= "troops that can be spared from Arkansas"), and "If Monster Canby replaced" = "If Reynolds can be replaced". "hopper paddle" = "operate" (Paddle
+  is the numeral 8, used for its sound; the decoder's "[8]" is wrong), dish venus fall = "disposition of all", gwinn = "go in": **C by print**. The
+  "unread middle clauses" are all read.
+- **E324 (OR I/47 pt 3 pp.587-588):** H 12; **Galway = Richmond is H, and C by print** ("They are now at Richmond"; also 7931): MS18-R2's M and its
+  note that "the prisoners were at Fort Monroe/Hampton Roads" are wrong. Add **saco = Fort H** (transcribed "suco"): H 13. "many" = immy (immediately)
+  and "cuss toddy" = custody: C. The header's "held in close custody" over-claims: neither the page nor the print has "close". Time: Sarah = 11 PM
+  (key), the print 11.30 p.m. (the half-hour not in the cipher's time word; M on the half only).
+- **E325 (not located):** H 16, as MS18-R2, with **pandora = Colonel at H** (Horan's list: "Col. Wm. Harper"), not M. Kennerly not Kennedy (image,
+  Horan). Reading: "[3.30 PM] [5] for [Rosecrans]. The [Secretary of War] directs the [arrest] at [10 AM] on Monday morning next [of the] following named
+  [rebel] agents and the seizure of their papers: Wm Kendall and [Captain] Lewis Kennerly, [St Louis]; John or Wm Ritchie, Saint Joseph, [Missouri];
+  James Hunter, New Madrid, [Missouri]; [Colonel] Wm Harper, Cape Girardeau. [C. A. Dana]."
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E322 | **N1** (text known) | period | D3 (H 38 after the two transcription fixes, the rest C by print; external: OR I/49 pt 2 p.814; Wilson's reply, holder 7927) | plaintext printed OR ser. I vol. 49 pt 2 p.814 |
+| E323 | **N1** (text known) | period | D3 (H 33 + M 1 (Legend/Canby conflict), rest C by print; external: OR I/48 pt 2 p.492) | plaintext printed OR ser. I vol. 48 pt 2 p.492 |
+| E324 | **N1** (text known) | period | D3 (H 13 after the saco fix, rest C by print; external: OR I/47 pt 3 pp.587-588; holder 7931) | plaintext printed OR ser. I vol. 47 pt 3 pp.587-588 |
+| E325 | **N3** (weak: the names and most words are clear in the holder's public transcription; the agents' list is printed in Horan 1954 and the same-day Chicago/Cincinnati order in the OR) | period | **D3** (H 16 of 16 code groups, no unread gap; external non-statistical: the sibling 9114 in mssEC 19 with the same order text; Horan's printed list naming Kendall, Capt. Lewis Kennerly, Ritchie, Col. Wm. Harper and the Missouri towns) | the telegram itself (Dana for the Secretary of War to Rosecrans, 5 Nov 1864) not located after the search in s.2 |
+
+- Not N4 for E325: Grant/Rosecrans/Dana papers, Missouri press and NARA RG 107 not searched; the 1892 OR volume carrying the Chicago/Cincinnati order
+  not identified, so its neighbouring items (a possible St Louis copy) were not read; Horan read by snippet only.
+- **Safe sentences.** E325: "Read at grade H with War Department Cipher No. 1: on 5 November 1864 C. A. Dana telegraphed Rosecrans at St Louis that
+  the Secretary of War ordered the arrest at 10 AM on the Monday following of rebel agents in Missouri -- Wm Kendall and Capt. Lewis Kennerly at St
+  Louis, John or Wm Ritchie at St Joseph, James Hunter at New Madrid and Col. Wm Harper at Cape Girardeau -- and the seizure of their papers; the
+  agents' list is printed in Horan's Confederate Agent (1954) and a same-day order for Chicago and Cincinnati in the Official Records, but this
+  telegram was not located there or in the Huntington's full-text search (searched 9 Oct 2026)." Depth sentence (D3): "On 5 November 1864 the War
+  Department ordered Rosecrans to arrest five named rebel agents at St Louis, St Joseph, New Madrid and Cape Girardeau at 10 AM on the following
+  Monday and to seize their papers." E322: "Printed in the Official Records, ser. I vol. 49 pt 2 p.814; our reading of the cipher entry agrees with
+  the print word for word." E323: "Printed in the Official Records, ser. I vol. 48 pt 2 p.492; our reading agrees except that the code word printed
+  as Canby's is Hurlbut's in the key." E324: "Printed in the Official Records, ser. I vol. 47 pt 3 pp.587-588; our reading agrees word for word."
+- **Unsafe:** any novelty for E322-E324; "first", "new", "unpublished" for E325; "General Canby spared troops" (E323); "held in close custody" (E324);
+  "the prisoners were at Fort Monroe" (E324).
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+- **ciphertext.txt E322:** "Laution" -> "Lantern" (image; = Thomas, print) and "palsey" -> "palsy" (image; Brigadier General); `plain-at: wilson#1`
+  (the addressee, not West); note: Aaron opera shine = "are in operation", shady = forage (C by print); header: printed OR I/49 pt 2 p.814; Wilson's
+  reply holder 7927.
+- **ciphertext.txt E323:** render the interlined "ark" as the key word (Ark = Mississippi); note: Canby x2 = "can be", hopper paddle = "operate" (not
+  [8]), legends = Legend: key Hurlbut vs print Canby (M, conflict logged); header: replace "troops Canby spared from Arkansas" with "troops that can be
+  spared from Arkansas", "assigning Sheridan to general command west of the Mississippi, south of the Arkansas", "breaking up Canby's [key: Hurlbut's]
+  division"; printed OR I/48 pt 2 p.492; the date 18 May is also the print's.
+- **ciphertext.txt E324:** "toby held in held in" -> "toby held in" (image); "suco" -> "saco" (image; = Fort); "many" -> "immy" (image); header: drop
+  "close", add printed OR I/47 pt 3 pp.587-588, 11.30 PM; note: Galway = Richmond H/C (drop the M and the Fort Monroe remark; holder 7931).
+- **ciphertext.txt E325:** "Kennedy" -> "Kennerly" (image, Horan); header "Monday next" -> "Monday morning next"; note: pandora = Colonel H (Horan
+  "Col. Wm. Harper"); sibling 9114 (mssEC 19, Cincinnati) and 9889/1 (Louisville).
+- **KEY lane (not key.md here):** Legend = Hurlbut (p.17 l.5 R) used for Canby in E323 against the print; Lantern = Thomas confirmed by print; Wilson = West
+  not meant when Wilson is the addressee.
+- **NOTES (MS18-R2) table:** E322 and E323 "not located" and E324 "not located; sibling 10022" are superseded by s.2; the "OR I/47 pt 3 retry" gap is closed
+  (fetched as `warofrebellion014703rootrich`).
+Requests: hdl.huntington.org 16 (12 CONTENTdm queries, 4 IIIF pages, all 200); archive.org 11 (10 downloads: 7 x 200, ser. III vol. 5 503
+once, I/39 pt 3 500 under two identifiers; 1 advancedsearch); Google Books API 13 (all 200).
