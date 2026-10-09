@@ -1,0 +1,20 @@
+# MANT-UNG blind Sonnet pass A, 694/08 0383, crop order L01..L14 then R01..R14
+crop	line	kind	codes	words_before	words_after	interlinear_above	confidence	alternatives
+f0383L_L03	top	code	7.60.	(line start)	est si bien en cour	NONE	high	
+f0383L_L03	bottom	code	11.	moins que	et d'autres n'y mettent coupe	NONE	high	
+f0383L_L04	top	code	11.	tres puissant	se souvint	NONE	high	
+f0383L_L04	bottom	noncode	7 ou 8	il y a	mois	NONE	high	clear French number
+f0383L_L05	bottom	code	7.60.	l'establissement de	et m'avoit	NONE	high	
+f0383L_L09	bottom	code	7.60.66.55.35.	mettre / (line start)	a sa place	NONE	high	66 or 6.6
+f0383L_L10	top	code	7.60.66.55.35.	(line start)	qui est entierement de sa dependance	NONE	high	
+f0383L_L13	top	code	9.	(line start) de	en quoi il a si bien reussi	NONE	low	y or 9 (possibly letter-like glyph)
+f0383L_L13	bottom	code	9.	en perdant	Tout cela est	NONE	low	y or 9
+f0383L_L14	top	code	55.35.5.9.9.10.60	et mon	m'a assure	NONE	low	55.35.5p.ty.9.10.60; 5 or 3 in middle groups unclear
+f0383R_L01	top	code	9.	que	meme luy l'a conte	NONE	low	y or 9
+f0383R_L01	bottom	code	11.	l'amy de	et qu'il y avoit	NONE	medium	
+f0383R_L02	bottom	code	11.	ceremonie que / cere que	Celuy ci commence	NONE	medium	
+f0383R_L03	bottom	code	7.60.66.55.35.	envoyant	chez le Roi	NONE	high	interlinear 'depuis quelques jours' sits above 'envoyant' just left of the code, not directly above it
+f0383R_L06	top	code	46.	Tout inegal que	soit, je doute	NONE	medium	40 or 46
+f0383R_L06	bottom	code	7.60.6.13.11.	brouillerie sans	qui	NONE	medium	6 or 66; 13 or 15
+f0383R_L08	top	code	39.	bataille decisive contre	cher	NONE	low	34 or 39 or y
+f0383R_L12	top	code	39.	relations qu'a	ce qu'il m'a dit	NONE	low	34 or 39 or y

@@ -1,0 +1,33 @@
+line	pos	sign	conf	value	grade
+r01	0	160	high	Manteuffel	C
+r02	0	257	medium	Le roi de Prusse	C
+r02	1	311	medium	?	U
+r02	2	515	medium	e	M
+r02	3	485	low	?	U
+r02	4	492	medium	?	U
+r02	5	281	medium	?	U
+r03	0	642	medium	?	U
+r03	1	447	low	?	U
+r03	2	635	medium	?	U
+r03	3	155	medium	Flemming	C
+r03	4	674	medium	?	U
+r03	5	333	medium	?	U
+r03	6	281	medium	?	U
+r03	7	563	medium	?	U
+r03	8	281	medium	?	U
+r03	9	583	medium	?	U
+r03	10	240	medium	Pless	C
+r03	11	451	medium	u	M
+r03	12	106	medium	?	U
+r03	13	68	medium	v	C
+r04	0	9	medium	i	C
+r05	0	155	medium	Flemming	C
+r06	0	160	high	Manteuffel	C
+r07	0	170	medium	le	C
+r08	0	257	medium	Le roi de Prusse	C
+r09	0	150	low	le Roi de Pologne	M
+r10	0	160	high	Manteuffel	C
+r11	0	155	medium	Flemming	C
+r12	0	259	low	Ilgen	M
+r13	0	257	medium	Le roi de Prusse	C
+r14	0	160	high	Manteuffel	C

@@ -1,0 +1,49 @@
+# MANT-UNG (9 Oct 2026): HStA Dresden 10026 Loc. 694/08 file 0383 (two pages; stamp 307 on the right page), continuation of 0382's P.S. (BO I pp.257-258).
+# Two blind Sonnet passes (passA_0383.tsv, passB_0383.tsv reversed) + worker reconciliation on native zooms (one unit). page_line = page + line on the page.
+# Not codes: '7 ou 8 mois' (L07), the stamp 307, the vertical margin text of both pages (not transcribed: words; disclosed), L14 'que l? 98' (unclear, not a code group by either pass).
+line	pos	sign	conf	page_line	passA	passB	note
+r01	0	7	high	L05	7.60	7.60	
+r01	1	60	high	L05	7.60	7.60	
+r02	0	9	low	L05	-	y.	y-glyph 9|4
+r03	0	11	high	L06	11	11	
+r04	0	11	high	L07	11	11	
+r05	0	7	high	L09	7.60	7.60	
+r05	1	60	high	L09	7.60	7.60	
+r06	0	9	low	L10	-	-	'pour 9., avec lequel': both passes missed; worker from image; y-glyph
+r07	0	9	low	L13	-	y.	'rendu a 9.'; y-glyph
+r08	0	7	high	L16	7.60.66.55.35	7.60.66.55.35	
+r08	1	60	high	L16	7.60.66.55.35	7.60.66.55.35	
+r08	2	66	high	L16	7.60.66.55.35	7.60.66.55.35	
+r08	3	55	high	L16	7.60.66.55.35	7.60.66.55.35	
+r08	4	35	high	L16	7.60.66.55.35	7.60.66.55.35	
+r09	0	7	high	L17	7.60.66.55.35	7.60.66.55.35	
+r09	1	60	high	L17	7.60.66.55.35	7.60.66.55.35	
+r09	2	66	high	L17	7.60.66.55.35	7.60.66.55.35	
+r09	3	55	high	L17	7.60.66.55.35	7.60.66.55.35	
+r09	4	35	high	L17	7.60.66.55.35	7.60.66.55.35	
+r10	0	9	low	L21	9	y.	y-glyph
+r11	0	9	low	L22	9	y.	y-glyph
+r12	0	55	medium	L23	55.35.5.9.9.10.60	55.35.5.pty.9.10.60	middle two signs '5? 2y' read at 1.5x native: 54|59, 29|24 low
+r12	1	35	medium	L23	55.35.5.9.9.10.60	55.35.5.pty.9.10.60	
+r12	2	54	low	L23	55.35.5.9.9.10.60	55.35.5.pty.9.10.60	
+r12	3	29	low	L23	55.35.5.9.9.10.60	55.35.5.pty.9.10.60	
+r12	4	10	medium	L23	55.35.5.9.9.10.60	55.35.5.pty.9.10.60	
+r12	5	60	medium	L23	55.35.5.9.9.10.60	55.35.5.pty.9.10.60	
+r13	0	9	low	R01	9	y.	y-glyph
+r14	0	11	high	R02	11	11	
+r15	0	11	high	R04	11	11	
+r16	0	7	high	R06	7.60.66.55.35	7.60.66.55.38	35 vs 38 settled 35 (same group as L16/L17) medium
+r16	1	60	high	R06	7.60.66.55.35	7.60.66.55.38	
+r16	2	66	high	R06	7.60.66.55.35	7.60.66.55.38	
+r16	3	55	high	R06	7.60.66.55.35	7.60.66.55.38	
+r16	4	35	medium	R06	7.60.66.55.35	7.60.66.55.38	
+r17	0	9	low	R08	-	y.	y-glyph
+r18	0	46	high	R11	46	46	
+r19	0	7	high	R12	7.60.6.13.11	7.60.6.13.11	6|66, 13|15 medium
+r19	1	60	high	R12	7.60.6.13.11	7.60.6.13.11	
+r19	2	6	medium	R12	7.60.6.13.11	7.60.6.13.11	
+r19	3	13	medium	R12	7.60.6.13.11	7.60.6.13.11	
+r19	4	11	high	R12	7.60.6.13.11	7.60.6.13.11	
+r20	0	11	high	R15	-	-	'11. ne se sentant': both passes missed; worker from image (clear)
+r21	0	39	low	R16	39	39	3y: 39|34
+r22	0	39	low	R26	39	-	3y: 39|34

@@ -1,0 +1,27 @@
+power	at 45 letters: 29/29 = 1.00	TEST
+block_1	letters 1-45	real -2.225	permuted mean -2.025 p95 -1.542 p99 -1.353 max -1.086	permuted>=real 744/1000	FAIL	grikkgriigrabegrabeiibeuserikkgrabeiigrumkkii
+leaf_0383	letters 45	blocks 1	FAIL	grikkgriigrabegrabeiibeuserikkgrabeiigrumkkii
+# whole leaf (reported, no power behind it if L > 62): real -2.225 permuted mean -2.022 p95 -1.584 p99 -1.398 permuted>=real 784/1000
+# per run (reported, not gates): run, letters, score, decoded letters
+r01	2	nan	gr
+r02	1	nan	i
+r03	1	nan	k
+r04	1	nan	k
+r05	2	nan	gr
+r06	1	nan	i
+r07	1	nan	i
+r08	5	-3.328	grabe
+r09	5	-3.328	grabe
+r10	1	nan	i
+r11	1	nan	i
+r12	6	-2.052	beuser
+r13	1	nan	i
+r14	1	nan	k
+r15	1	nan	k
+r16	5	-3.328	grabe
+r17	1	nan	i
+r18	1	nan	i
+r19	5	-3.392	grumk
+r20	1	nan	k
+r21	1	nan	i
+r22	1	nan	i

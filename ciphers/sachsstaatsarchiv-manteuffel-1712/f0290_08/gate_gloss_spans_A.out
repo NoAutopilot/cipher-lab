@@ -1,0 +1,25 @@
+key: key.tsv; spans 9
+== L (gloss pass left page): spans 0; code tokens 0; keyed 0
+S = 0/0 keyed (0.000); control (1000 permutations, seed 290): mean 0.00, p95 0, p99 0, max 0; control >= real 1000/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== R (gloss pass right page): spans 9; code tokens 22; keyed 12
+S = 2/12 keyed (0.167); control (1000 permutations, seed 290): mean 1.84, p95 5, p99 7, max 8; control >= real 511/1000
+GATE (S > p99 and S >= 0.5 x keyed): FAIL
+== pooled (reported): spans 9; code tokens 22; keyed 12
+S = 2/12 keyed (0.167); control (1000 permutations, seed 290): mean 1.84, p95 5, p99 7, max 8; control >= real 511/1000
+GATE (S > p99 and S >= 0.5 x keyed): FAIL
+
+per span (code:op:gloss-letters):
+G01	R	mont	0/1	160:miss:ont
+G02	R	Reve aux guerriers du nord	1/14	642:miss:r 447:miss:e 635:miss:v 155:miss:e 674:miss:a 333:miss:u 281:miss:x 563:miss:g 281:miss:uer 583:miss:rie 240:miss:rsd 451:match:u 106:miss:n 68:miss:ord
+G03	R	Nyen	0/1	9:miss:yen
+G04	R	mant n°a	0/1	160:miss:tna
+G05	R	Roy de Prusse	0/1	257:miss:sse
+G06	R	Manteuffel	1/1	160:match:manteuffel
+G07	R	item	0/1	155:miss:tem
+G08	R	S.M.la	0/1	257:miss:mla
+G09	R	mant	0/1	160:miss:ant
+
+distinct codes: 16; matched on every instance: 1
+unkeyed codes and their slots: 106=n; 281=x,uer; 333=u; 447=e; 563=g; 583=rie; 635=v; 642=r; 674=a
+keyed codes with a non-match slot: 9(i)=miss:yen; 68(v)=miss:ord; 155(Flemming)=miss:e,miss:tem; 160(Manteuffel)=miss:ont,miss:tna,miss:ant; 240(Pless)=miss:rsd; 257(Le roi de Prusse)=miss:sse,miss:mla

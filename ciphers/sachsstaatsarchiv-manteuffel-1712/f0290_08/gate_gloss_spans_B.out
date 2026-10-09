@@ -1,0 +1,27 @@
+key: key.tsv; spans 11
+== L (gloss pass left page): spans 0; code tokens 0; keyed 0
+S = 0/0 keyed (0.000); control (1000 permutations, seed 290): mean 0.00, p95 0, p99 0, max 0; control >= real 1000/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== R (gloss pass right page): spans 11; code tokens 29; keyed 15
+S = 3/15 keyed (0.200); control (1000 permutations, seed 290): mean 2.54, p95 6, p99 9, max 11; control >= real 445/1000
+GATE (S > p99 and S >= 0.5 x keyed): FAIL
+== pooled (reported): spans 11; code tokens 29; keyed 15
+S = 3/15 keyed (0.200); control (1000 permutations, seed 290): mean 2.54, p95 6, p99 9, max 11; control >= real 445/1000
+GATE (S > p99 and S >= 0.5 x keyed): FAIL
+
+per span (code:op:gloss-letters):
+G01	R	mant	0/1	160:miss:ant
+G02	R	a Roy de Prusse fera moyoller une	1/6	257:miss:rus 311:miss:sef 515:match:e 485:miss:yol 492:miss:ler 281:miss:une
+G03	R	Reve aux guerriers du nord	1/14	642:miss:r 447:miss:e 635:miss:v 155:miss:e 674:miss:a 333:miss:u 281:miss:x 563:miss:g 281:miss:uer 583:miss:rie 240:miss:rsd 451:match:u 106:miss:n 68:miss:ord
+G04	R	Neyen	0/1	9:miss:yen
+G05	R	feat	0/1	155:miss:eat
+G06	R	mant. n.a	0/1	160:miss:tna
+G07	R	Roy de Prusse	0/1	257:miss:sse
+G08	R	Manteuffel	1/1	160:match:manteuffel
+G09	R	fem	0/1	155:miss:fem
+G10	R	I.M.sa	0/1	257:miss:msa
+G11	R	mant	0/1	160:miss:ant
+
+distinct codes: 20; matched on every instance: 2
+unkeyed codes and their slots: 106=n; 281=une,x,uer; 311=sef; 333=u; 447=e; 485=yol; 492=ler; 563=g; 583=rie; 635=v; 642=r; 674=a
+keyed codes with a non-match slot: 9(i)=miss:yen; 68(v)=miss:ord; 155(Flemming)=miss:e,miss:eat,miss:fem; 160(Manteuffel)=miss:ant,miss:tna,miss:ant; 240(Pless)=miss:rsd; 257(Le roi de Prusse)=miss:rus,miss:sse,miss:msa

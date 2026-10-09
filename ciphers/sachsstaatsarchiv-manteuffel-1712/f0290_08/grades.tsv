@@ -1,0 +1,35 @@
+# leaf 0290: known-answer gate not PASS; gate (b) too-short (L < 4, not scored)
+# tokens 32: H 0, C 0, S 0, M 18, I 0, U 14
+tokid	code	key_value	conf	grade	why
+r01.0	160	Manteuffel	high	M	name/word code
+r02.0	257	Le roi de Prusse	medium	M	name/word code
+r02.1	311		medium	U	not in key.tsv
+r02.2	515	e	medium	M	no passing gate covers it
+r02.3	485		low	U	not in key.tsv
+r02.4	492		medium	U	not in key.tsv
+r02.5	281		medium	U	not in key.tsv
+r03.0	642		medium	U	not in key.tsv
+r03.1	447		low	U	not in key.tsv
+r03.2	635		medium	U	not in key.tsv
+r03.3	155	Flemming	medium	M	name/word code
+r03.4	674		medium	U	not in key.tsv
+r03.5	333		medium	U	not in key.tsv
+r03.6	281		medium	U	not in key.tsv
+r03.7	563		medium	U	not in key.tsv
+r03.8	281		medium	U	not in key.tsv
+r03.9	583		medium	U	not in key.tsv
+r03.10	240	Pless	medium	M	name/word code
+r03.11	451	u	medium	M	no passing gate covers it
+r03.12	106		medium	U	not in key.tsv
+r03.13	68	v	medium	M	no passing gate covers it
+r04.0	9	i	medium	M	no passing gate covers it
+r05.0	155	Flemming	medium	M	name/word code
+r06.0	160	Manteuffel	high	M	name/word code
+r07.0	170	le	medium	M	no passing gate covers it
+r08.0	257	Le roi de Prusse	medium	M	name/word code
+r09.0	150	le Roi de Pologne	low	M	low-conf transcription
+r10.0	160	Manteuffel	high	M	name/word code
+r11.0	155	Flemming	medium	M	name/word code
+r12.0	259	Ilgen	low	M	low-conf transcription
+r13.0	257	Le roi de Prusse	medium	M	name/word code
+r14.0	160	Manteuffel	high	M	name/word code

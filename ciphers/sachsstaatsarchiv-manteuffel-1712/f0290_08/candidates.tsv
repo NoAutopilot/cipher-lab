@@ -1,0 +1,12 @@
+# MANT-UNG (9 Oct 2026): codes on 694/08 0290 (17 Sept 1712) under the leaf's interlinear notes. Gloss gate (a) FAILed on both blind passes
+# (letter statistic, a lower bound for word/syllable codes), so NOTHING here is above M and nothing enters key.tsv. Slots are the blind passes'
+# note text by position (pass A | pass B), never settled by the worker. status: held = position-only witness; conflict = keyed code whose slot reads otherwise.
+code	run	slot_passA	slot_passB	status	note
+257	r02	(no note read)	a Roy de Prusse	agrees	key 'Le roi de Prusse'; also r08 'Roy de Prusse' (A,B), r13 'S.M.la'|'I.M.sa'
+311 515 485 492 281	r02	(no note read)	fera moyoller une	held	phrase 'fera proposer une' by the worker's eye (not scored); 515 key e (M), 281 recurs in r03
+642 447 635 155 674 333 281 563 281 583 240 451 106 68	r03	Reve aux guerriers du nord	Reve aux guerriers du nord	held/conflict	14 codes under one note ('treve aux ennemis du nord' by the worker's eye); 155 (key Flemming) and 240 (key Pless) and 68 (key v) inside a phrase run: rule-4 conflict or a second table above 230 -- held; 642 447 635 674 333 563 583 106 281 not in key.tsv
+9	r04	Nyen	Neyen	agrees-by-eye	key i, note 'Ilgen' by the worker's eye (the passes' 'Nyen/Neyen'); single-code initial
+155	r05, r11	(none) / item	feat / fem	agrees-by-eye	key Flemming; notes 'flem' by eye
+160	r01, r06, r10, r14	mont, mant n°a, Manteuffel, mant	mant, mant. n.a, Manteuffel, mant	agrees	key Manteuffel
+150	r09	(none)	(none)	position-only	worker eye reads 'le Roy' over it (both passes put that note over the words before); key 'le Roi de Pologne'
+259	r12	(none)	(none)	held	y-glyph 259|254; 254 = MANT-0136B's held Ilgen candidate -- 'que 25y fausse la parole qu'il luy a faite': not a second witness (no note, digit open)

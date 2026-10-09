@@ -1,0 +1,48 @@
+# leaf 0383: known-answer gate PASS; gate (b) FAIL
+# tokens 45: H 0, C 7, S 0, M 38, I 0, U 0
+tokid	code	key_value	conf	grade	why
+r01.0	7	g	high	C	matched under PASSing print gate (c), BO I pp.257-258
+r01.1	60	r|re|ro	high	C	matched under PASSing print gate (c), BO I pp.257-258
+r02.0	9	i	low	M	low-conf transcription (matched the known answer)
+r03.0	11	k	high	C	matched under PASSing print gate (c), BO I pp.257-258
+r04.0	11	k	high	C	matched under PASSing print gate (c), BO I pp.257-258
+r05.0	7	g	high	C	matched under PASSing print gate (c), BO I pp.257-258
+r05.1	60	r|re|ro	high	C	matched under PASSing print gate (c), BO I pp.257-258
+r06.0	9	i	low	M	low-conf transcription (matched the known answer)
+r07.0	9	i	low	M	low-conf transcription
+r08.0	7	g	high	M	no passing gate covers it
+r08.1	60	r|re|ro	high	M	no passing gate covers it
+r08.2	66	a	high	M	no passing gate covers it
+r08.3	55	b|[a]	high	M	no passing gate covers it
+r08.4	35	e	high	M	no passing gate covers it
+r09.0	7	g	high	M	no passing gate covers it
+r09.1	60	r|re|ro	high	M	no passing gate covers it
+r09.2	66	a	high	M	no passing gate covers it
+r09.3	55	b|[a]	high	M	no passing gate covers it
+r09.4	35	e	high	M	no passing gate covers it
+r10.0	9	i	low	M	low-conf transcription
+r11.0	9	i	low	M	low-conf transcription
+r12.0	55	b|[a]	medium	M	no passing gate covers it
+r12.1	35	e	medium	M	no passing gate covers it
+r12.2	54	u	low	M	low-conf transcription
+r12.3	29	s	low	M	low-conf transcription
+r12.4	10	e	medium	M	no passing gate covers it
+r12.5	60	r|re|ro	medium	M	no passing gate covers it
+r13.0	9	i	low	M	low-conf transcription
+r14.0	11	k	high	M	no passing gate covers it
+r15.0	11	k	high	M	no passing gate covers it
+r16.0	7	g	high	M	no passing gate covers it
+r16.1	60	r|re|ro	high	M	no passing gate covers it
+r16.2	66	a	high	M	no passing gate covers it
+r16.3	55	b|[a]	high	M	no passing gate covers it
+r16.4	35	e	medium	M	no passing gate covers it
+r17.0	9	i	low	M	low-conf transcription
+r18.0	46	i	high	M	no passing gate covers it
+r19.0	7	g	high	M	no passing gate covers it
+r19.1	60	r|re|ro	high	M	no passing gate covers it
+r19.2	6	u	medium	M	no passing gate covers it
+r19.3	13	m	medium	M	no passing gate covers it
+r19.4	11	k	high	M	no passing gate covers it
+r20.0	11	k	high	C	matched under PASSing print gate (c), BO I pp.257-258
+r21.0	39	i	low	M	low-conf transcription (matched the known answer)
+r22.0	39	i	low	M	low-conf transcription (matched the known answer)

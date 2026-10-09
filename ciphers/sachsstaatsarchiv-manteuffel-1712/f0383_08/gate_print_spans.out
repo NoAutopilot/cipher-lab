@@ -1,0 +1,25 @@
+key: key.tsv; spans 9
+== L (gloss pass left page): spans 6; code tokens 8; keyed 8
+S = 8/8 keyed (1.000); control (1000 permutations, seed 383): mean 1.09, p95 4, p99 4, max 6; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== R (gloss pass right page): spans 3; code tokens 3; keyed 3
+S = 3/3 keyed (1.000); control (1000 permutations, seed 383): mean 0.37, p95 2, p99 3, max 3; control >= real 12/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== pooled (reported): spans 9; code tokens 11; keyed 11
+S = 11/11 keyed (1.000); control (1000 permutations, seed 383): mean 1.46, p95 5, p99 6, max 7; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+P01	L	Grumbkow	2/2	7:match:g 60:match:r
+P02	L	Ilgen	1/1	9:match:i
+P03	L	Kameke	1/1	11:match:k
+P04	L	Kameke	1/1	11:match:k
+P05	L	Grumbkow	2/2	7:match:g 60:match:r
+P06	L	Ilgen	1/1	9:match:i
+P07	R	Kameke	1/1	11:match:k
+P08	R	Ilgen	1/1	39:match:i
+P09	R	Ilgen	1/1	39:match:i
+
+distinct codes: 5; matched on every instance: 5
+unkeyed codes and their slots: 
+keyed codes with a non-match slot: 

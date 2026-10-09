@@ -1,0 +1,36 @@
+# MANT-UNG (9 Oct 2026): HStA Dresden 10026 Loc. 694/08 file 0290 (right page; stamp 224, 'ce 17 Sept. 1712'), left page blank.
+# Two blind Sonnet passes (passA_0290.tsv crop order, passB_0290.tsv reversed) + worker reconciliation on native zooms of lines 1-5 (one unit). GLOSSED leaf (premise of the brief failed).
+# Not codes: 224 (letter number), 17 / 1712 (date), marginal '66' (top-left, 'No 66'?), marginal vertical text left; l16-l17 'si ... erroroit' clear.
+line	pos	sign	conf	page_line	passA	passB	note
+r01	0	160	high	l01	160	160	gloss over
+r02	0	257	medium	l02	257.311.515.481.492.281	251.311.313.481.492.281	485 settled from zoom (5 vs 1 low); 515 image (B 313)
+r02	1	311	medium	l02	257.311.515.481.492.281	251.311.313.481.492.281	
+r02	2	515	medium	l02	257.311.515.481.492.281	251.311.313.481.492.281	
+r02	3	485	low	l02	257.311.515.481.492.281	251.311.313.481.492.281	
+r02	4	492	medium	l02	257.311.515.481.492.281	251.311.313.481.492.281	
+r02	5	281	medium	l02	257.311.515.481.492.281	251.311.313.481.492.281	
+r03	0	642	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	head 642.447 clipped at band edge, both passes split it; 447 y-glyph (447|449) low
+r03	1	447	low	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	2	635	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	3	155	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	4	674	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	5	333	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	6	281	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	7	563	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	8	281	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	9	583	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	10	240	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	11	451	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	12	106	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r03	13	68	medium	l03	(244).635.155.674.333...68 + 642.4?	(244).635.155.674.333...68 + 642.4?	
+r04	0	9	medium	l04	-	-	both passes missed the code (gloss read, attached to the clipped 642.4? row); from image
+r05	0	155	medium	l05	155	-	gloss 'flem' over (B: 'feat' on a NONE row at this place)
+r06	0	160	high	l05	160	160	
+r07	0	170	medium	l06	170	170	no gloss
+r08	0	257	medium	l10	257	257	
+r09	0	150	low	l13	130	130 (noncode)	'pour 150.'; both passes 130; image 150 (worker) low
+r10	0	160	high	l13	160	160	
+r11	0	155	medium	l22	155	155	
+r12	0	259	low	l25	259	257	y-glyph: 259|254 (254 = MANT-0136B's held Ilgen candidate); not keyed
+r13	0	257	medium	l26	257	257	
+r14	0	160	high	l27	160	160	

@@ -1,0 +1,5 @@
+leaf_0290	letters 2	too-short (L < 4, not scored)	le
+# per run (reported, not gates): run, letters, score, decoded letters
+r07	2	nan	le
+r09	0	nan	
+r12	0	nan	

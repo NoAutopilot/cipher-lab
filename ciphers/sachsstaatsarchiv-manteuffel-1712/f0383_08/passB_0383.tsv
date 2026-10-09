@@ -1,0 +1,25 @@
+# MANT-UNG blind Sonnet pass B, 694/08 0383, reverse order R14..R01 then L14..L01
+crop	line	kind	codes	words_before	words_after	interlinear_above	confidence	alternatives
+R14	bottom	noncode		Maxime/ge	,,,	NONE	high
+f0383R_L12	top	noncode		il avoit	diverge	NONE	low
+f0383R_L09	top	code	39.	bataille decisive contre	char	NONE	medium	3g
+f0383R_L07	top	code	46.	Tout inegal que	soit, je doute	NONE	medium
+f0383R_L07	bottom	code	7.60.6.13.11.	brouillerie sans	qui	NONE	medium	7.60.6.13.11 vs 7.60.66.13.11
+f0383R_L05	bottom	code	y.	credit de	que de faire renaitre	NONE	low	letter y or numeral 9
+f0383R_L04	bottom	code	7.60.66.55.38.	tonvant	chés le Roi	depuis quelques jours (above the preceding words, not directly above the group)	medium	38 vs 35
+f0383R_L03	bottom	code	11.	ce que	(end of line)	NONE	high
+f0383R_L02	top	code	y.	que	meme luy l'a conté	NONE	low	letter y or 9
+f0383R_L02	bottom	code	11.	amy de	, et qu'il y avoit meme ajouté	NONE	high
+f0383R_L01	bottom	code	55.35.5.pty.9.10.60	et mon	m'a assuré	NONE	low	middle groups unclear: 5.?.9.10.60; possible 7.60.66 omitted
+f0383L_L14	top	code	y.	de	, ca quoi il a si bien reussi	NONE	low	letter y or 9
+f0383L_L14	bottom	code	y.	en perdant	Tout cela est	NONE	low	letter y or 9
+f0383L_L11	top	code	7.60.66.55.35.	(line start)	qui est entierement de la dependance	NONE	high
+f0383L_L10	bottom	code	7.60.66.55.35.	(line start)	a sa place	NONE	high
+f0383L_L09	top	code	y.	services qu'il a rendu a	(end of line)	NONE	low	letter y or 9
+f0383L_L09	bottom	noncode	198	au Roi, que	(end of line)	NONE	low	1798/1p8; unclear
+f0383L_L05	bottom	code	7.60.	l'etablissement de	Et m'avoit	NONE	high
+f0383L_L04	top	code	11.	tres puissant.	se souvint	NONE	high
+f0383L_L04	bottom	noncode	7 ou 8	il y a	mois	NONE	high	clear French number
+f0383L_L03	top	code	7.60.	(line start)	est si bien en cour	NONE	high
+f0383L_L03	top	code	y.	grace a son patron	(end of line)	NONE	low	letter y or 9
+f0383L_L03	bottom	code	11.	au moins que	et d'autres n'y mettent	NONE	high

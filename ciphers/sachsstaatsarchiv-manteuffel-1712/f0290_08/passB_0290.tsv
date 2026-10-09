@@ -1,0 +1,21 @@
+# MANT-UNG blind Sonnet pass B, 694/08 0290, reverse crop order L13..L01
+crop	line	kind	codes	words_before	words_after	note_above	confidence	alternatives
+L13	top	code	257	que	fausse la parole qu'il luy a faitement donnée	NONE	medium	259
+L13	bottom	code	257	de se tire par seulement a	que cette pensée vient	I.M.sa	medium	259
+L13	bottom	code	160	de	qui luy a fait comprendre qu'il y avoit de l'infidelité	mant	high	NONE
+L10	bottom	code	155	en écrire auparavant a	NONE	fem	medium	153
+L08	top	noncode	130	pour	NONE	NONE	low	150
+L08	left-margin	noncode	189?	NONE	NONE	NONE	low	NONE
+L07	top	code	160	je doute qu'il se puisse rien faire de plus, a propos de la compter le signe que	NONE	Manteuffel	medium	NONE
+L07	top	code	160	le signe que	NONE	le Roy	low	note over words before the code
+L06	bottom	code	257	le a	Enfin il l'a fait, s'il a bien ou mal	Roy de Prusse	medium	251
+L04	top	code	170	maniere	en faisant	NONE	medium	110
+L03	top	noncode	642.4?	NONE	NONE	Neyen	low	NONE
+L03	bottom	code	160	conter que	pourris en avoir	mant. n.a	medium	NONE
+L03	bottom	code	NONE	au premier	NONE	feat	low	NONE
+L02	top	code	251.311.313.481.492.281	a fait en écrit que	NONE	NONE	low	digits uncertain
+L02	bottom	code	244.635.155.674.333.281.563.281.583.240.451.106.68	au moins	NONE	Reve aux guerriers du nord	low	several digits uncertain
+L01	top	noncode	66	NONE	NONE	NONE	low	NONE
+L01	top	noncode	224	ce 13 sept. 1712	NONE	NONE	medium	page number top right
+L01	bottom	code	160	a fait un pas dont je me contiens de voir le	NONE	mant	medium	100
+L01	bottom	code	NONE	NONE	NONE	a Roy de Prusse fera moyoller une	low	NONE

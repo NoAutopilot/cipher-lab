@@ -1,0 +1,19 @@
+# MANT-UNG blind Sonnet pass A, 694/08 0290, crop order L01..L13
+crop	line	kind	codes	words_before	words_after	note_above	confidence	alternatives
+L01	top	noncode	224	ce 13 sept. 1712		NONE	high	page number top right
+L01	top	noncode	66	(left margin)		nort?	low	marginal; note above illegible
+L01	bottom	code	160	NONE	a fait un pas dont je	mont	medium	100 or 160
+L02	top	code	257.311.515.481.492.281	a fait en toute que	(next line)	NONE	medium	492 or 452
+L02	bottom	code	244.635.155.674.333.281.563.281.583.240.451.106.68	(line start)	au moins	Reve aux guerriers du nord	medium	244 or 214; note reading low
+L03	top	code	642.4?	(partial top)	(next)	Nyen	low	clipped
+L03	bottom	code	160	contenter que	comis en envien	mant n°a	medium	160 or 100
+L04	top	code	155	jours.	peu	NONE	low	clipped partial
+L04	bottom	code	170	maniere	en faisant ce par la	NONE	medium	
+L06	bottom	code	257	le a	Enfin il la fait	Roy de Prusse	medium	237 or 257
+L07	bottom	code	160	le signe que	(end)	Manteuffel	medium	note also "le Roy" over Ic comprens
+L08	top	code	130	pour	(partial)	NONE	low	clipped
+L08	left	noncode	1895	(left margin vertical)		NONE	low	
+L10	bottom	code	155	auparavant a	(end)	item	medium	
+L13	top	code	259	que	fausse la parole	NONE	medium	257 or 259
+L13	middle	code	257	retire par seulement a	que cette pensée	S.M.la	medium	note low
+L13	bottom	code	160	de	qui luy a fait comprendre	mant	medium	
