@@ -43,3 +43,17 @@ the words above L09 belong to L08's gloss. Crop (pasted): `python3 tools/iiif_li
 --region 0,680,3150,175 --out <scratch>/g --prefix f27g --centres 87 --top-margin 87 --bottom-margin 88 --max-width 1700 --debug` ->
 2 segments 1700x175 (overlap 150), each holding the L08 gloss line, L09 figures, the L09 gloss line, and the top of L10's figures.
 S, K and Z are computed on the gloss line BELOW L09 (the band between L09 and L10); the gloss above is transcribed and reported only.
+
+Amendment UNA-NEVF27 (owner-account parent worker for the account-4 orchestrator, 9 Oct 2026, written 06:1x UTC by date -u, before
+the call): the reader changes from 2 blind Sonnet passes to ONE blind Opus 5.5 subagent pass (a different reader, not a re-tune of the
+Sonnet instrument). Everything else is word for word as above: the same two crops `sibling_f27/gloss/f27g_L01_s1.jpg` and `_s2.jpg`
+(crop paths only; no key, no decode, no figures, no passes.tsv, not told the question), the same instruction (clear-text letters
+between/above the figure lines, left to right, '_' gap, '?' illegible, plus the figures under the first and last letter of each gloss
+word), the same statistic S, the same controls K1 (gloss over the frame-1 span vs "onnehorscestes", gate >= 10/14) and K2 (gloss over
+the frame-0 span vs "aumoins", gate >= 5/7), each above its shuffle p95 by `sibling_f27/gloss/score_gloss.py` unchanged (seed
+20261007, 1000 permutations), and the same outcomes A/B/C and grade rule. With one pass, "both passes" reads "the pass"; outcome C
+(pass disagreement) cannot arise. Span assignment (fixed now): the frame-1 span is the gloss text whose own reported figures fall on
+`65 ... 43`; the frame-0 span is the gloss text whose reported figures fall on `32 ... 84`; the scorer is run once on each span text
+(K1 read from its onnehorscestes line, K2 from its aumoins line) and once on the whole gloss line (reported, not gated), as AM-NEVF27
+did (its K1 3/14 was the span figure, its score_out.txt the whole line). If K1 or K2 fails: NON-TEST, S not scored, and blind model
+reads of this gloss are marked [retired] (third reader after two Sonnet passes; rule 3 third-attempt clause), next step a person's read.
