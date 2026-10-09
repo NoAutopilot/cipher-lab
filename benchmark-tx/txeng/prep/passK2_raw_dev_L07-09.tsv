@@ -1,0 +1,90 @@
+passage	pos	sign_id	alt	conf	note
+L07	1	T90		H	line start; cross above oval
+L07	2	T86		H	two verticals, one bar
+L07	3	T60		H	two verticals two bars
+L07	4	T18	T65	H	loop with long stem
+L07	5	T86		H	
+L07	6	T60		H	
+L07	7	T63		H	V
+L07	8	T19		H	pi
+L07	9	T90		H	
+L07	10	T83		H	reversed-3 joined to E
+L07	11	T80		H	D
+L07	12	T76		H	g/9 with long tail
+L07	13	T36	T27	M	loop on stem
+L07	14	T96		M	l-loop with hook stroke top right
+L07	15	T90		H	
+L07	16	T37		H	oval with long bar
+L07	17	T58		H	B
+L07	18	T54		H	R
+L07	19	T86		H	
+L07	20	T60		H	
+L07	21	T53		H	infinity
+L07	22	T86		H	
+L07	23	T18		H	
+L07	24	T85		H	plain cross
+L07	25	T13	T64	M	m with superscript a-like flourish and dot
+L07	26	T37		H	
+L07	27	T36		M	loop on stem
+L07	28	T85		H	
+L07	29	T92		M	C-omega shape joined to next sign
+L07	30	T37		M	small crossed oval; line end
+L08	1	T63		M	heavy V, stray dot above-left; line start
+L08	2	T86		H	
+L08	3	T17		M	t-like
+L08	4	T45		H	stem above oval
+L08	5	T17		M	t-like
+L08	6	T19		H	
+L08	7	T83		H	
+L08	8	T85		H	
+L08	9	T60		H	
+L08	10	T92		M	C-omega with tick after
+L08	11	T80		H	
+L08	12	T64		H	plain m
+L08	13	T37		H	
+L08	14	T33		H	two uprights on base
+L08	15	T45		H	
+L08	16	T60		H	
+L08	17	T18		H	
+L08	18	T19		H	
+L08	19	T25		H	lambda
+L08	20	T56	T51	L	p-loop on stem with two low crossbars
+L08	21	T36		H	
+L08	22	T85		H	
+L08	23	T98		H	stem through narrow oval
+L08	24	T65		H	loop with cross below
+L08	25	T45		H	
+L08	26	T13	T64	M	m with superscript a and dot
+L08	27	T55		M	F-like, short separate stroke above
+L08	28	T18		H	
+L08	29	T96		M	l-loop with hook top right
+L08	30	T11	T46	M	85 shape, no clear tick; line end
+L09	1	T29		H	line start; C joined to o
+L09	2	T84		H	cross over triangle
+L09	3	T18		H	
+L09	4	T96		M	l-loop with hook top right
+L09	5	T83		H	
+L09	6	T37		H	
+L09	7	T33		H	
+L09	8	T86		H	
+L09	9	T13	T64	M	m with superscript a and dot
+L09	10	T52		H	n with z tail
+L09	11	T60		H	
+L09	12	T45		H	
+L09	13	T13	T64	M	heavy m with tilde and dot
+L09	14	T86		H	
+L09	15	T54		H	
+L09	16	T37		H	
+L09	17	T60		H	
+L09	18	T80		H	
+L09	19	T19		H	
+L09	20	T49		H	box top with descending stem
+L09	21	T86		H	
+L09	22	T58		H	
+L09	23	T85		H	
+L09	24	T90		H	
+L09	25	T25		H	
+L09	26	T33		H	
+L09	27	T90		H	
+L09	28	T37		M	small crossed oval
+L09	29	X_S	T97	L	plain long-s shape at margin; line end
