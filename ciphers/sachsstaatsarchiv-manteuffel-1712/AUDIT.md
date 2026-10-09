@@ -1651,7 +1651,7 @@ code is held or keyed in this folder. No novelty class assigned or changed; no r
 
 ## AUDIT (V-MANT16S)
 
-Verifier V-MANT16S (Opus, account 2, LANE FAMILY-A2k), 9 Oct 2026, 18:44-19:0x UTC by `date -u`; a separate session from the solvers MANT-XTR
+Verifier V-MANT16S (Opus, account 2, LANE FAMILY-A2k), 9 Oct 2026, 18:44-18:5x UTC by `date -u`; a separate session from the solvers MANT-XTR
 (0312/0314, LANE FAMILY-A2j) and MANT-0309 (session_01BJv3LLv5CgyEAymkFzuH5U); I had read none of these leaves before this job. Brief:
 .claude/briefs/runs/2026-10-09-ytbiz-family-1815-jobs.md "### V-MANT16S". Claim under audit (NOTES "MANT-XTR" and "MANT-0309"): Loc. 694/08
 frames 0309 (covering dispatch, stamp 240, Berlin 16 Sept 1712, 48 code tokens: C 35, M 13) and 0312 + 0314 (the "Extrait" pair it encloses,
