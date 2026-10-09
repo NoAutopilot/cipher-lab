@@ -1,0 +1,184 @@
+line	kind	text	conf	move	print	print_norm
+L01	W	Tis	-	W	'tIs	tis
+L01	W	sal	-	W	seer	seer
+L01	W	u	-	W	te	te
+L01	W	gelieven	-	W	geloven	gelouen
+L01	W	dat	-	W	dat	dat
+L01	C	257:	H	N1	ambassadeur	ambassadeur
+L01	C	27,41,10:	H	L1	van	uan
+L01	C	114:	H	N3	Churvorst van Brandenburgh	churuorstuanbrandenburgh
+L01	C	59,61,50,21:	H	L1	hier	hier
+L01	C	8,50,51,21:	H	L1	meer	meer
+L02	C	61,23:	H	L1	is	is
+L02	C	12,8:	H	L1	om	om
+L02	C	48,50:	H	L1	de	de
+L02	C	23,39,9,50,10:	H	L1	saken	saken
+L02	C	27,39,10:	H	L1	van	uan
+L02	C	23,36,10:	H	L1	sijn	syn
+L02+L03	C	8,50,51,23,25,51,21:	H	L1	meester	meester
+L03	C	25,50:	H	L1	te	te
+L03	C	48,12,51,10:	H	L1	doen	doen
+L03	C	39,6,23:	H	L1	als	als
+L03	C	12,8:	H	L1	om	om
+L03	C	48,61,50:	H	L1	die	die
+L03	C	27,40,10:	H	L1	van	uan
+L04	C	185:	H	N1	Sweden	sweden
+L04	W	inde	-	W	in	in
+L04	W	welcke	-	W	dewelcke	dewelcke
+L04	W	gelden	-	W	geen	geen
+L04	W	uijtkoomste	-	W	uytkoomste	uytkoomste
+L04	W	te	-	W	te	te
+L04	W	vermaenstds	-	W	verwachten	uerwachten
+L04	W	is	-	W	is	is
+L04	C	23,36,10:	H	L1	Sijn	syn
+L05	C	50,48:	H	L1	Ed	ed
+L05	C	59,50,51,55,25:	H	L1	heeft	heeft
+L05	C	39,50,10:	H	L1	aen	aen
+L05	C	48,50,23,51:	H	L1	dese	dese
+L05	C	59,50,51,21,54,10:	H	L1	heeren	heeren
+L06	C	50,10,48,51:	H	L1	ende	ende
+L06	C	12,10,23:	H	L1	ons	ons
+L06	W	gescrit	-	W	geseit	geseit
+L06	W	dat	-	W	dat	dat
+L06	C	114:	H	N4	de Churvorst van Brandenburgh	dechuruorstuanbrandenburgh
+L06+L07	C	25,57,50,25,21,39,46,25,50,51,21,48,50:	H	L1	'tgetracteerde	tgetracteerde
+L07	C	8,50,25:	H	L1	met	met
+L07	C	185:	H	N1	Sweden	sweden
+L07	W	outvent	-	W	omtrent	omtrent
+L07	W	do	-	W	de	de
+L07	C	25,12,6:	H	L1	tol	tol
+L07	C	61,10,48,50:	H	L2	in de	inde
+L08	C	17,61,6,7,39,27,32:	H	L1	Pillauw	pillauw
+L08	W	niet	-	W	niet	niet
+L08	W	kan	-	W	kan	kan
+L08	W	myn	-	W	nogh	nogh
+L08	W	sal	-	W	sal	sal
+L08	C	10,39,4,[10/40],8,50,10:	M	L1	nakomen	nakomen
+L09	W	noch	-	W	nogh	nogh
+L09	W	ook	-	W	ook	ook
+L09	W	t	-	skip_item		
+L09	W	gelden	-	W	'tgeen	tgeen
+L09	W	belanght	-	W	belanght	belanght
+L09	C	27,50,21,59,50,55,56,50,10:	H	L1	verheffen	uerheffen
+L10	C	27,39,10:	H	L1	van	uan
+L10	C	23,36,10:	H	L1	sijn	syn
+L10	C	6,50,51,10:	H	L1	leen	leen
+L10	C	172:	H	N1	Denemarcken	denemarcken
+L10	C	59,50,51,55,25:	H	L1	heeft	heeft
+L10	C	48,61,25:	H	L1	dit	dit
+L11	C	23,50,51,21:	H	L1	seer	seer
+L11	C	39,50,10,58,50,10,39,8,50,6,36,4:	H	L1	aengenamelijk	aengenamelyk
+L11	W	op	-	W	opgenomen	opgenomen
+L11	W	gronde	-	W	ende	ende
+				skip_word	sigh	sigh
+L12	W	ende	-	W	genegen	genegen
+L12	W	sijst	-	skip_item		
+L12	W	gheorgt	-	skip_item		
+L12	W	verlaedt	-	W	verclaert	uerclaert
+L12	W	en	-	skip_item		
+L12	W	nederlt	-	skip_item		
+L12	C	144:	H	N4	om nevens de Staten-Generael	omneuensdestatengenerael
+L12	C	8,50,25:	H	L1	met	met
+L12	C	119:	H	N3	den Churvorst Brandenburgh	denchuruorstbrandenburgh
+L13	C	25,50:	H	L1	te	te
+L13	C	26,21,39,25,50,21,50,10:	H	L1	tracteren	tracteren
+L13	W	ouck	-	W	over	ouer
+L13	W	de	-	W	de	de
+L13	W	confirmatie	-	W	conservatie	conseruatie
+L13	W	van	-	W	van	uan
+L13	C	23,36,10:	H	L1	zijn	zyn
+L14	C	6,39,10,48,50,10:	H	L1	landen	landen
+L14	C	61,10:	H	L1	in	in
+L14	C	192:	H	N3	Pruyssen indien deselve	pruyssenindiendeselue
+L14	W	midden	-	skip_item		
+L14	W	de	-	skip_item		
+L14	W	slot	-	skip_item		
+L14	C	23,61,57,59:	H	L1	sigh	sigh
+L15	C	23,46,50,61,25:	H	L1	sceit	sceit
+L15	C	27,39,10:	H	L1	van	uan
+L15	C	186:	H	N4	den Coning van Sweden	denconinguansweden
+L15	W	maer	-	W	maer	maer
+L15	W	gemelte	-	W	gemelte	gemelte
+L15	C	257:	H	N3	ambassadeur is soo	ambassadeurissoo
+L15	W	te	-	skip_item		
+L15	W	ser	-	skip_item		
+L16	W	ordre	-	W	verre	uerre
+L16	W	niet	-	W	niet	niet
+L16	W	gelaert	-	W	gelast	gelast
+L16	W	Indien	-	W	Men	men
+L16	W	sal	-	W	sal	sal
+L16	W	sich	-	W	hier	hier
+L16	W	aen	-	W	aen	aen
+L16	C	114:	H	N2	Churvorst Brandenburgh	churuorstbrandenburgh
+L16	W	met	-	W	niet	niet
+L16+L17	C	8,61,23,57,27,10,14,50,10:	H	L1	misgunnen	misgunnen
+L17	W	de	-	W	de	de
+L17	C	23,12,27,29,50,21,39,61,10,61,25,50,61,25:	H	L1	souverainiteit	souuerainiteit
+L17	W	op	-	W	op	op
+L17	W	de	-	skip_item		
+L18	W	midecht	-	W	dewelcke	dewelcke
+L18	W	sij	-	W	hy	hy
+L18	C	25,12,13,57,59:	H	L2	't oogh	toogh
+L18	C	59,50,51,55,25:	H	L1	heeft	heeft
+L18	W	in	-	W	indien	indien
+L18	W	dit	-	skip_item		
+L18	W	dir	-	W	die	die
+L18	W	ende	-	skip_item		
+L19	C	198:	H	N2	met Polen	metpolen
+L19	W	dat	-	W	dat	dat
+L19	W	mij	-	W	my	my
+L19	W	niet	-	W	niet	niet
+L19	W	wel?	-	W	toescheint	toescheint
+L19	W	bedonckt	-	W	bedongen	bedongen
+L19	W	heer	-	W	kan	kan
+L19	W	maeder	-	W	werden	werden
+L19	W	Wij	-	W	Wij	wy
+				skip_word	hebben	hebben
+				skip_word	vooraf	uooraf
+				skip_word	moeten	moeten
+				skip_word	beloven	belouen
+				skip_word	desenaengaende	desenaengaende
+				skip_word	vooralsnogh	uooralsnogh
+				skip_word	niets	niets
+				skip_word	over	ouer
+				skip_word	te	te
+L19	W	sullen	-	W	schryven	schryuen
+L20	C	59,50,51,21:	H	L2	aen de	aende
+				skip_word	Regieringe	regieringe
+				skip_word	ende	ende
+				skip_word	hebben	hebben
+				skip_word	te	te
+				skip_word	minder	minder
+				skip_word	swaerigheit	swaerigheit
+				skip_word	gemaekt	gemaekt
+				skip_word	om	om
+				skip_word	dat	dat
+				skip_word	op	op
+L20	C	32,50,36,8,39:	H	L2	ons te	onste
+				skip_word	nemen	nemen
+				skip_word	dewyle	dewyle
+				skip_word	de	de
+				skip_word	heer	heer
+				skip_word	Weyman	weyman
+L20	W	aldaer	-	W	aldaer	aldaer
+L20	W	van	-	W	van	uan
+L20	W	alles	-	W	alle	alle
+				skip_word	hetgeen	hetgeen
+				skip_word	voorseit	uoorseit
+				skip_word	is	is
+				skip_word	gecircumstantieerde	gecircumstantieerde
+				skip_word	kennisse	kennisse
+L20	W	sulcke	-	W	heeft	heeft
+L20	W	ouder	-	W	gegeven	gegeuen
+L21	W	Soo	-	W	soo	soo
+L21	W	gemelte	-	W	gemelte	gemelte
+L21	C	257:	H	N4	ambassadeur ons heeft geseit	ambassadeuronsheeftgeseit
+L21	W	ende	-	skip_item		
+L21	W	gelooft	-	skip_item		
+L21	W	geslyck	-	skip_item		
+L21	W	ende	-	W	Ende	ende
+L21	W	sullen	-	W	hebbe	hebbe
+L21	W	ick	-	W	ik	ik
+L21	W	niet	-	W	niettemin	niettemin
+L21	W	te	-	skip_item		
+L21	W	min	-	skip_item		

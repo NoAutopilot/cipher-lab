@@ -1,0 +1,157 @@
+line	item	kind	text	conf	gloss_passA	gloss_passB	note
+L01	1	W	Tis	-	-	-	
+L01	2	W	sal	-	-	-	
+L01	3	W	u	-	-	-	
+L01	4	W	gelieven	-	-	-	
+L01	5	W	dat	-	-	-	
+L01	6	C	257:	H	-	-	passes A and B agree
+L01	7	C	27,41,10:	H	-	-	passes A and B agree
+L01	8	C	114:	H	-	Ambr	passes A and B agree
+L01	9	C	59,61,50,21:	H	-	Churf Brandenb	passes A and B agree
+L01	10	C	8,50,51,21:	H	-	andr	passes A and B agree
+L02	1	C	61,23:	H	is	ib	passes A and B agree
+L02	2	C	12,8:	H	om de	-	passes A and B agree
+L02	3	C	48,50:	H	-	de	passes A and B agree
+L02	4	C	23,39,9,50,10:	H	schoy	Schoy	passes A and B agree
+L02	5	C	27,39,10:	H	van	vas	passes A and B agree
+L02	6	C	23,36,10:	H	tys	pys	passes A and B agree
+L02	7	C	8,50,51,23>	H	marthe	martde	passes A and B agree
+L03	1	C	25,51,21:	H	-	to	passes A and B agree
+L03	2	C	25,50:	H	to	doen	passes A and B agree
+L03	3	C	48,12,51,10:	H	dats	alse	image: 4 codes, pass B
+L03	4	C	39,6,23:	H	als	ony	passes A and B agree
+L03	5	C	12,8:	H	om	om	passes A and B agree
+L03	6	C	48,61,50:	H	die	die	passes A and B agree
+L03	7	C	27,40,10:	H	was	was	image: 40, pass B
+L04	1	C	185:	H	soveds	Vorsten	passes A and B agree
+L04	2	W	inde	-	-	-	
+L04	3	W	welcke	-	-	-	
+L04	4	W	gelden	-	-	-	
+L04	5	W	uijtkoomste	-	-	-	
+L04	6	W	te	-	-	-	
+L04	7	W	vermaenstds	-	-	-	
+L04	8	W	is	-	-	-	
+L04	9	C	23,36,10:	H	tys	fyn	passes A and B agree
+L05	1	C	50,48:	H	ed	Ed	passes A and B agree
+L05	2	C	59,50,51,55,25:	H	gwst	Gewt	passes A and B agree
+L05	3	C	39,50,10:	H	ady	aen	passes A and B agree
+L05	4	C	48,50,23,51:	H	dese	dese	passes A and B agree
+L05	5	C	59,50,51,21,54,10:	H	gdney	Gedren	passes A and B agree
+L06	1	C	50,10,48,51:	H	ende	ende	passes A and B agree
+L06	2	C	12,10,23:	H	ons	ons	passes A and B agree
+L06	3	W	gescrit	-	-	-	
+L06	4	W	dat	-	-	-	
+L06	5	C	114:	H	-	Churf Brandenb	passes A and B agree
+L06	6	C	25,57,50,25,21,39,46>	H	-	t getracteerde	image + pass B: 46
+L07	1	C	25,50,51,21,48,50:	H	met	-	passes A and B agree
+L07	2	C	8,50,25:	H	-	met	passes A and B agree
+L07	3	C	185:	H	susads	Vorsten	passes A and B agree
+L07	4	W	outvent	-	-	-	
+L07	5	W	do	-	-	-	
+L07	6	C	25,12,6:	H	tol	tot	passes A and B agree
+L07	7	C	61,10,48,50:	H	juder	juder	image: squeezed at the right margin, colon not visible; gloss "inde" spans these four codes only, so a word end (both passes wrote >)
+L08	1	C	17,61,6,7,39,27,32:	H	pillanus	pillanus	passes A and B agree
+L08	2	W	niet	-	-	-	
+L08	3	W	kan	-	-	-	
+L08	4	W	myn	-	-	-	
+L08	5	W	sal	-	-	-	
+L08	6	C	10,39,4,[10/40],8,50,10:	M	na komds	nakomende	4th code 10 or 40 on the image, unsettled
+L09	1	W	noch	-	-	-	
+L09	2	W	ook	-	-	-	
+L09	3	W	t	-	-	-	
+L09	4	W	gelden	-	-	-	
+L09	5	W	belanght	-	-	-	
+L09	6	C	27,50,21,59,50,55,56,50,10:	H	-	-	passes A and B agree
+L10	1	C	27,39,10:	H	-	Pras	passes A and B agree
+L10	2	C	23,36,10:	H	syn	fyn	passes A and B agree
+L10	3	C	6,50,51,10:	H	leos	leos	passes A and B agree
+L10	4	C	172:	H	dnmnarods	Denemarcks	passes A and B agree
+L10	5	C	59,50,51,55,25:	H	gezt	heert	passes A and B agree
+L10	6	C	48,61,25:	H	det	det	passes A and B agree
+L11	1	C	23,50,51,21:	H	-	sede	passes A and B agree
+L11	2	C	39,50,10,58,50,10,39,8,50,6,36,4:	H	avugdenaemt	?	image: 4 then colon (pass A read 41>)
+L11	3	W	op	-	-	-	
+L11	4	W	gronde	-	-	-	
+L12	1	W	ende	-	-	-	
+L12	2	W	sijst	-	-	-	
+L12	3	W	gheorgt	-	-	-	
+L12	4	W	verlaedt	-	-	-	
+L12	5	W	en	-	-	-	
+L12	6	W	nederlt	-	-	-	
+L12	7	C	144:	H	-	de Staet gent	passes A and B agree
+L12	8	C	8,50,25:	H	-	met de Churf	passes A and B agree
+L12	9	C	119:	H	Sijn	Brand	passes A and B agree
+L13	1	C	25,50:	H	-	-	passes A and B agree
+L13	2	C	26,21,39,25,50,21,50,10:	H	-	-	passes A and B agree
+L13	3	W	ouck	-	-	-	
+L13	4	W	de	-	-	-	
+L13	5	W	confirmatie	-	-	-	
+L13	6	W	van	-	-	-	
+L13	7	C	23,36,10:	H	-	-	passes A and B agree
+L14	1	C	6,39,10,48,50,10:	H	lande	lande	passes A and B agree
+L14	2	C	61,10:	H	-	3 prinsen	passes A and B agree
+L14	3	C	192:	H	prinsh	-	passes A and B agree
+L14	4	W	midden	-	-	-	
+L14	5	W	de	-	-	-	
+L14	6	W	slot	-	-	-	
+L14	7	C	23,61,57,59:	H	sege	heeg	passes A and B agree
+L15	1	C	23,46,50,61,25:	H	godit	godit	passes A and B agree
+L15	2	C	27,39,10:	H	van	van Beuningen	passes A and B agree
+L15	3	C	186:	H	de Con: van Sweden	-	passes A and B agree
+L15	4	W	maer	-	-	-	
+L15	5	W	gemelte	-	-	-	
+L15	6	C	257:	H	Ambr	Amber	passes A and B agree
+L15	7	W	te	-	-	-	
+L15	8	W	ser	-	-	-	
+L16	1	W	ordre	-	-	-	
+L16	2	W	niet	-	-	-	
+L16	3	W	gelaert	-	-	-	
+L16	4	W	Indien	-	-	-	
+L16	5	W	sal	-	-	-	
+L16	6	W	sich	-	-	-	
+L16	7	W	aen	-	-	-	
+L16	8	C	114:	H	Charles Brandenb:	Churf: Brandenb:	passes A and B agree
+L16	9	W	met	-	-	-	
+L16	10	C	8,61,23,57,27,10>	H	mijn gennds	mi? gemunt	image + pass B: 10, continues
+L17	1	C	14,50,10:	H	-	-	passes A and B agree
+L17	2	W	de	-	-	-	
+L17	3	C	23,12,27,29,50,21,39,61,10,61,25,50,61,25:	H	souverain tout	soubterainitent	passes A and B agree
+L17	4	W	op	-	-	-	
+L17	5	W	de	-	-	-	
+L18	1	W	midecht	-	-	-	
+L18	2	W	sij	-	-	-	
+L18	3	C	25,12,13,57,59:	H	t voogt	t voogd	passes A and B agree
+L18	4	C	59,50,51,55,25:	H	Sort	Goet	passes A and B agree
+L18	5	W	in	-	-	-	
+L18	6	W	dit	-	-	-	
+L18	7	W	dir	-	-	-	
+L18	8	W	ende	-	-	-	
+L19	1	C	198:	H	fol	folio	passes A and B agree
+L19	2	W	dat	-	-	-	
+L19	3	W	mij	-	-	-	
+L19	4	W	niet	-	-	-	
+L19	5	W	wel?	-	-	-	
+L19	6	W	bedonckt	-	-	-	
+L19	7	W	heer	-	-	-	
+L19	8	W	maeder	-	-	-	
+L19	9	W	Wij	-	-	-	
+L19	10	W	sullen	-	-	-	
+L20	1	C	59,50,51,21:	H	Gelder	Gelde	passes A and B agree
+L20	2	C	32,50,36,8,39:	H	Wetijnse	Welijnese	passes A and B agree
+L20	3	W	aldaer	-	-	-	
+L20	4	W	van	-	-	-	
+L20	5	W	alles	-	-	-	
+L20	6	W	sulcke	-	-	-	
+L20	7	W	ouder	-	-	-	
+L21	1	W	Soo	-	-	-	
+L21	2	W	gemelte	-	-	-	
+L21	3	C	257:	H	Ambr	Amber	passes A and B agree
+L21	4	W	ende	-	-	-	
+L21	5	W	gelooft	-	-	-	
+L21	6	W	geslyck	-	-	-	
+L21	7	W	ende	-	-	-	
+L21	8	W	sullen	-	-	-	
+L21	9	W	ick	-	-	-	
+L21	10	W	niet	-	-	-	
+L21	11	W	te	-	-	-	
+L21	12	W	min	-	-	-	
