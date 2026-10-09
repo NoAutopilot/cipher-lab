@@ -7706,3 +7706,21 @@ column + the error map of both pools, read-free, cap 4). Ideas register v2: rese
 | X2b own-ink pair classifier (TXE2-PAIR2) | 3/0 p 0.25, controls fail | not taken | dev non-test, right way | 2.29 |
 | TX-RED pass 1 F1-F4 | | | all four adopted (Amendment 2): screening stage on dev_tune; flagged-excluded binds, pool 26, branch p<0.05; f89-kp2 out of the pool pending C1; S1 split reporting | lane |
 | round 4 live 17:4x (PREREG-txeng2-4): C1 kp2 control, V1 f152r flags verifier, X1b off-sheet on unseen hands (read-free), S4 feed product, X8b cost replication | | | running | caps 2/3/4/3/6 |
+
+### Hand-over to incarnation 2 (lane, 9 Oct 2026 17:5x UTC by date -u; at ~60% context, per the brief's ~700k line)
+State for the successor: the programme is standing (research/TX-PROGRAM.md; brief Amendment 1). Gate in force: PREREG-txeng2-0
+Amendment 2 -- flagged-excluded paired counts, eval pool 26 (tuned-leaf lines 10 + held-out leaves 16), single-experiment gate
+p < 0.05 at >= 24, dev screening stage for no.87-only instruments (p < 0.10 + every control failing), hand-independent instruments
+gate on the dev pool (37). Eval looks 0; S2 look 0 and HELD until C1 (TXP-KP2C) is on file and TX-RED has reviewed Amendment 2.
+Live at hand-over (round 4, PREREG-txeng2-4): TXP-KP2C session_01Y6CG4GRYuUvV6emRQasUom (cap 2), TXV-152 session_019hcX61FS1nSezuHRhhZvfF
+(verifier, 3), TXE2-SHEET2 session_01K3thTQYRjDZZJ63zXCPptS (4), TXE2-FEED session_01VtTMbVwYYwFQsjhKaVoTVG (3), TXE2-COST2
+session_016t13RGtW8qMpNe8btma9hT (6) -- the successor ledgers and archives them, fills their rows here and in the register.
+Register: research/TX-REGISTER.tsv (regenerate with tools/tx_register.py at every check-in; --check every new PREREG, which needs a
+"Nearest prior" section). TX-RED answers table: research/TX-IDEAS-2-2026-10-09.md (pass 1 F1-F4 adopted; answer every new pass by
+the next check-in; a blocking finding pauses the eval look). Interim RESULTS: research/TX-ENGINEER-2-2026-10-09.md (keep the
+owner paragraph current). Next runnable rows (new information first): X2b with more labelled tiles of the same hand (f152r's 73
+truth tiles would leave the eval pool; prefer a verifier-settled no.87 line set or owner-sorted tiles); N1 colour master after
+10 Oct 00:00 UTC (one iiif_lines fetch of btv1b9060248g canvases 182-184, then the TXE-D harness); a masked re-cut of the gloss
+leaves from Gallica native (fr.3619 btv1b... per the DECODE manifest) so read arms can use them; the grown-sheet read on Spinelli
+ONLY if X1b licenses it (first eval look, TX-RED review first); X8b's result into TRANSCRIPTION.md target 8. Keep 5-7 workers live.
+Check-in trigger trig_018Q8nMdAYVJWxUE49dejbRs (18:21) is this incarnation's; the successor arms its own.
