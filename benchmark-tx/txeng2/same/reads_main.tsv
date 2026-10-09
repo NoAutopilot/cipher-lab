@@ -1,0 +1,49 @@
+row	pick	conf	note
+1	A	M	phi, stem starts at loop top
+2	B	H	hooked top with two crossbars and foot
+3	B	H	hooked top with two crossbars and foot
+4	A	H	g with dot above right
+5	B	H	ce with a hooked tail
+6	A	L	plain m, no mark above
+7	B	M	square on a stem, matches B's third example
+8	B	H	looped x / alpha shape
+9	B	L	plain m, no mark; A has ticks
+10	B	H	plain oval O
+11	B	H	ce with a hooked tail
+12	A	H	ce with a hooked tail
+13	C	M	q with a foot bar
+14	A	M	cross above a bowl, with base bar
+15	B	H	crossed t with a curled foot
+16	A	L	plain m, no tick; B has ticks
+17	B	H	Ce ligature matches B; A is cS
+18	B	M	loop-stem, no ascender above loop like B
+19	B	H	g-shaped loop over S hook
+20	B	H	D with left hook and base stroke
+21	B	H	figure 8
+22	A	M	9 with long curved tail, not flat
+23	B	H	loop on long stem, pin shape
+24	A	L	m; A and B look alike
+25	neither	H	plain cross, strips are Ce
+26	A	H	t with crossbar and hook
+27	B	H	t with crossbar and hook
+28	B	H	Ce ligature
+29	B	H	looped stem with double crossbars
+30	B	L	m; A and B indistinguishable
+31	neither	L	partial stroke, likely cut m fragment
+32	C	H	open infinity loop shape
+33	B	M	loop on top, stem below only
+34	A	M	filled head q with left foot
+35	A	H	ce-like double curl matches
+36	A	M	frame mostly the 8; 9 overlaps
+37	C	H	cursive 9 with long tail
+38	A	M	loop on top, long stem down
+39	A	L	q plus b-hook, like A's qb variant
+40	B	H	p with double crossbar
+41	C	H	q with flat foot stroke
+42	A	H	ce-like double curl matches
+43	neither	H	inverted-T with two uprights
+44	A	H	reversed-e/e ligature with crossbar
+45	neither	H	open infinity loop shape
+46	A	L	frame includes neighbouring sign; p-cross part
+47	A	H	gj form with long tail
+48	C	H	p with double crossbar
