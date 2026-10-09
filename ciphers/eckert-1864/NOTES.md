@@ -3785,3 +3785,23 @@ Read so far: E326-E330 audited (E327-E330 N1 by print, E326 N3 D2); E329/E330 pr
 - [x] image-check: all five entries eye-checked on the ledger image.
 - [x] retry: none needed (no host refused).
 Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18c) s.5, ~$1
+
+## FIX-FM13 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM13, 19:17-19:2x UTC by `date -u`, offline (git only). Carries AUDIT s.5 of FV-MS18b (E322-E325) and FV-MS18c (E327-E330; E326: none) into ciphertext.txt as headers, note lines and `<del>/<ins>` marks from the audits' image reads, through decode.py's existing mechanisms; reading.md is `--write` output. key.md untouched (Kearney = Burbridge and Makent = Hunter are in AUDIT s.3 as proposals; `gloss:` lines carry them per entry at C). Classes and depths are the verifiers'.
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| E322 | image reads Lantern (= Thomas) and palsy (= Brigadier General) for the holder's Laution, palsey; `plain-at: wilson#1` (addressee, not West); Aaron = "are in" (C), "opera shine" plain, shady = Forage (C); header: printed OR I/49 pt 2 p.814, Wilson's reply holder 7927 | H 37 -> H 37, C 2 |
+| E323 | `<deletion>/<insertion>` -> `<del>/<ins>` so the interlined ark = Mississippi (H) reads; Canby x2 = "can be" (C); hopper+paddle = "operate" (C, not [8]); legends = Hurlbut by the key vs Canby in the print: `gloss ...:M`, conflict logged in HYPOTHESES.md "Legend"; header: "troops that can be spared", "assigning Sheridan to general command west of the Mississippi, south of the Arkansas", "breaking up Canby's [key: Hurlbut's] division", OR I/48 pt 2 p.492 | H 33 -> H 32, C 3, M 1 (ark counted H; Mississippi, not "Miss ark") |
+| E324 | image reads saco (= Fort, H), immy (= immediately, C), one "held in"; Galway = Richmond glossed C (M and Fort Monroe remark withdrawn in the note); header: "close" dropped, OR I/47 pt 3 pp.587-588, 11.30 PM, holder 7931 | H 12 -> H 12, C 2 |
+| E325 | image reads Kennerly; header "Monday morning next", siblings 9114 and 9889/1 | H 16 (as before) |
+| E327 | header: addressee Maj. Gen. David Hunter ('Makent', C by the print), OR I/43 pt 1 p.709; `gloss: makent=...:C`; "unread addressee" note withdrawn | H 13 -> H 13, C 1 |
+| E328 | header gist "need not accompany the troops from Arkansas" (the "[whistle]" and "Co.[?]" dropped), OR I/48 pt 2 p.540; `gloss: whisile=Troops:C`; "a[cc] Co." = accompany plain (note) | H 16 -> H 16, C 1 |
+| E329, E330 | headers: print page confirmed on IA leaves n258 / n384 (FV-MS18c); `gloss: kearney=Maj_Gen_S._G._Burbridge:C` | C 1 -> C 2 (E329); H 11 -> H 11, C 1 (E330) |
+
+Totals over 272 entries: H 4667, C 43, I 25, M 33, S 16, U 10 -> **H 4666, C 54, I 25, M 34, S 16, U 10** (E323 loses one H to the M gloss and gains three C; E322-E324 and E327-E330 gain the C tokens above). The audits' C counts (E327 C 11, E328 all body words C) are by print and are not regraded by the decoder, which counts only the glossed tokens.
+
+Dated correction notes (old text not rewritten): NOTES "## MS18-R2" print lines: E327 ("not located") and E328 ("not located") are printed, OR I/43 pt 1 p.709 and OR I/48 pt 2 p.540; E322 (OR I/49 pt 2 p.814), E323 (OR I/48 pt 2 p.492) and E324 (OR I/47 pt 3 pp.587-588) are printed too (FV-MS18b s.2); the "OR I/47 pt 3 unreachable" line names a non-existent identifier, the volume is `warofrebellion014703rootrich`; any earlier note citing `warofrebellion431unit` as OR I/43 pt 1 means OR I/47 pt 2 (OR I/43 pt 1 is `warofrebellion431unit_0`). The "Remaining gaps (MS18-R2)" lines for E329/E330 eye-check, OR I/47 pt 3 and the E322/E323/E328 open codes are closed by FV-MS18b/c.
+
+Propagation (rule 10): status.json and second-opinions/PROMPT-chatgpt-e325 already read "Monday morning next", Kennerly (per image) and Colonel (pandora); E326 none; E322-E324, E327-E330 are N1 with no status row or SO prompt. No class, depth or SO row touched.

@@ -1709,27 +1709,27 @@ Maj Eckert Di flag ship agawam Farrars [Inland [sic: Island]] {date: June 13} {t
 
 Code-word tokens: H 16.
 
-**E322 | Page 349 | 10009 | mssEC 18 (obj 10074, pointer 10009; printed page 343), 17 May 1865 Washington, to H. F. Lines at Macon, for Wilson, by Rawlins for Grant: the Quartermaster Dept has stores at Port Royal, Maj. Thomas of the Dept of the South leaves New York today with funds, send estimates, remain with the part of the command left in Georgia, infantry and cavalry to garrison necessary points, see a competent officer has the force returned to Tennessee (MS18-R2; row 10009/1; image-read at 2400 px)**
+**E322 | Page 349 | 10009 | mssEC 18 (obj 10074, pointer 10009; printed page 343), 17 May 1865 Washington, to H. F. Lines at Macon, for Wilson, by Rawlins for Grant: the Quartermaster Dept has stores at Port Royal, Maj. Thomas of the Dept of the South leaves New York today with funds, send estimates, remain with the part of the command left in Georgia, infantry and cavalry to garrison necessary points, see a competent officer has the force returned to Tennessee (MS18-R2; FIX-FM13, AUDIT FV-MS18b s.5; row 10009/1; image-read at 2400 px; printed OR I/49 pt 2 p.814, Wilson's reply holder 7927)**
 
-[Washington] {time: 1 PM} [17] for [West] [Macon] [.] The [Quartermaster] [Department] says that theres plenty of shady at [Port Royal] and all [Available] means [Rhode Island] opera shine to get it to you [.] [Major] Thomas asst [Quartermaster] [,] [Department] [Of the] [South] leaves [New York] [Today] with funds and on your requisite shine will supply your temper airy wants [.] send your esteem mates for funds tooth [Qr Master Genl U.S.] and funds wilby for worded you Ewell remain with that part of your [Command = Er (-ed, -ing)] that stubby [Left] in [Georgia] Laution has been so instructed period what ever [Infantry] [Force] in addition tooth [Cavalry] [Left] with you may be required to garrison what you deem [Necessary] [Point] Toby garrisoned wilby sent you stop See that a compete aunt officer has Polk [Of the] [Force] returned tooth [Tennessee] By [Command = Er (-ed, -ing)] of [Maj Genl U.S. Grant]  {tail: [signed] John A Rawlins palsey Chief Staff}
+[Washington] {time: 1 PM} [17] for Wilson [Macon] [.] The [Quartermaster] [Department] says that theres plenty of [Forage] at [Port Royal] and all [Available] means [are in] opera shine to get it to you [.] [Major] Thomas asst [Quartermaster] [,] [Department] [Of the] [South] leaves [New York] [Today] with funds and on your requisite shine will supply your temper airy wants [.] send your esteem mates for funds tooth [Qr Master Genl U.S.] and funds wilby for worded you Ewell remain with that part of your [Command = Er (-ed, -ing)] that stubby [Left] in [Georgia] [Maj Gen Geo. H. Thomas] has been so instructed period what ever [Infantry] [Force] in addition tooth [Cavalry] [Left] with you may be required to garrison what you deem [Necessary] [Point] Toby garrisoned wilby sent you stop See that a compete aunt officer has Polk [Of the] [Force] returned tooth [Tennessee] By [Command = Er (-ed, -ing)] of [Maj Genl U.S. Grant]  {tail: [signed] John A Rawlins [Brigadier General] Chief Staff}
 
-Code-word tokens: H 37.
+Code-word tokens: H 37, C 2.
 
-**E323 | Page 350 | 10010 | mssEC 18 (obj 10074, pointer 10010; printed page 344), 18 May 1865 (holder transcription 19th; the image reads 18th) 2.30 PM Washington, to R. C. Clowry for Pope: orders breaking up Hurlbut's division and assigning Sheridan to the command west of the Mississippi, Reynolds to take orders from Sheridan, troops Canby spared from Arkansas; signed Grant (MS18-R2; row 10010/2; image-read at 2400 px)**
+**E323 | Page 350 | 10010 | mssEC 18 (obj 10074, pointer 10010; printed page 344), 18 May 1865 (holder transcription 19th; the image reads 18th) 2.30 PM Washington, to R. C. Clowry for Pope: orders breaking up Canby's [key: Hurlbut's] division and assigning Sheridan to general command west of the Mississippi, south of the Arkansas, Reynolds to take orders from Sheridan, troops that can be spared from Arkansas; signed Grant (MS18-R2; FIX-FM13, AUDIT FV-MS18b s.5; row 10010/2; image-read at 2400 px; printed OR I/48 pt 2 p.492; the date 18 May is also the print's)**
 
-[Washington] {time: 2.30 PM} [18] for [Major] [General] Pope [.] orders have been made breaking up [Maj Gen S. A. Hurlbut]'s [Division] and as signing [P. H. Sheriden] to [General] [Command = Er (-ed, -ing)] [West] [Of the] Miss <insertion>ark</insertion> [South] [Of the] [Arkansas] [.] Ewell please direct [Maj Gen J. J. Reynolds] to receive orders from [P. H. Sheriden] for the dish [Position] fall [Troops] that Canby Spared from [Arkansas] recollecting that the [Troops] taken with many others are to hopper [8] against the [Enemy] [South] of him [.] If [Maj Gen J. J. Reynolds] Canby replaced I would like him to gwinn [Command = Er (-ed, -ing)] [Of the] [Troops] taken  {tail: [signed] [Maj Genl U.S. Grant]}
+[Washington] {time: 2.30 PM} [18] for [Major] [General] Pope [.] orders have been made breaking up [Maj Gen S. A. Hurlbut (key; the print reads Canby's division)] [Division] and as signing [P. H. Sheriden] to [General] [Command = Er (-ed, -ing)] [West] [Of the] [Mississippi] [South] [Of the] [Arkansas] [.] Ewell please direct [Maj Gen J. J. Reynolds] to receive orders from [P. H. Sheriden] for the dish [Position] fall [Troops] that [can be] Spared from [Arkansas] recollecting that the [Troops] taken with many others are to [operate] against the [Enemy] [South] of him [.] If [Maj Gen J. J. Reynolds] [can be] replaced I would like him to gwinn [Command = Er (-ed, -ing)] [Of the] [Troops] taken  {tail: [signed] [Maj Genl U.S. Grant]}
 
-Code-word tokens: H 33.
+Code-word tokens: H 32, C 3, M 1.
 
-**E324 | Page 364 | 10024 | mssEC 18 (obj 10074, pointer 10024; printed page 358), 28 May 1865 Washington, to Gillmore at Hilton Head, signed by the Secretary of War (Brutus): Grant has ordered Judge Campbell, R. M. T. Hunter and Seddon, late Secretary of War, sent to Fort Pulaski and held in close custody until further orders; they are now at [Galway, key = Richmond] and will be forwarded (MS18-R2; row 10024/2; image-read at 2400 px)**
+**E324 | Page 364 | 10024 | mssEC 18 (obj 10074, pointer 10024; printed page 358), 28 May 1865 Washington, to Gillmore at Hilton Head, signed by the Secretary of War (Brutus): Grant has ordered Judge Campbell, R. M. T. Hunter and Seddon, late Secretary of War, sent to Fort Pulaski and held in custody until further orders; they are now at [Galway, key = Richmond] and will be forwarded (MS18-R2; FIX-FM13, AUDIT FV-MS18b s.5; row 10024/2; image-read at 2400 px; printed OR I/47 pt 3 pp.587-588, 11.30 PM; holder sibling 7931)**
 
-[Washington] {date: May 28} {time: 11 PM} for [Gen Q. A. Gillmore] Hilton Head [.] [Maj Genl U.S. Grant] has ordered Judge Camp bell [,] R empty Hunt her and Sed don late Secy of War toby sent to suco Pulaski toby held in held in cuss toddy there until further orders [.] they are now at [Richmond] & wilby forwarded many [.] Ewell receive & hold them in safe cuss tady [Secretary of War]
+[Washington] {date: May 28} {time: 11 PM} for [Gen Q. A. Gillmore] Hilton Head [.] [Maj Genl U.S. Grant] has ordered Judge Camp bell [,] R empty Hunt her and Sed don late Secy of War toby sent to [Fort] Pulaski toby held in cuss toddy there until further orders [.] they are now at [Richmond] & wilby forwarded [immediately] [.] Ewell receive & hold them in safe cuss tady [Secretary of War]
 
-Code-word tokens: H 12.
+Code-word tokens: H 12, C 2.
 
-**E325 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Clowry at St Louis for Maj. Gen. Rosecrans: the Secretary of War directs the arrest at 10 AM on Monday next of the following named rebel agents and the seizure of their papers: Wm Kendall and Capt. Lewis Kennerly (St Louis), John or Wm Ritchie (St Joseph, Mo.), James Hunter (New Madrid, Mo.), Wm Harper (Cape Girardeau); signed Dana (MS18-R2; row 9889/0; image-read at 2400 px)**
+**E325 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Clowry at St Louis for Maj. Gen. Rosecrans: the Secretary of War directs the arrest at 10 AM on Monday morning next of the following named rebel agents and the seizure of their papers: Wm Kendall and Capt. Lewis Kennerly (St Louis), John or Wm Ritchie (St Joseph, Mo.), James Hunter (New Madrid, Mo.), Wm Harper (Cape Girardeau); signed Dana (MS18-R2; FIX-FM13, AUDIT FV-MS18b s.5; row 9889/0; image-read at 2400 px; siblings 9114 (mssEC 19, Cincinnati) and 9889/1 (Louisville))**
 
-{time: 3.30 PM} [5] for [Maj Gen W. S. Rosecrans] [.] . The [Secretary of War] directs the [Arrest (-ed, -ing)] at {time: 10 AM} on Monday morning next [Of the] following named [Rebel] agents and the seizure of their papers [.] Wm Kendall and [Captain] Lewis Kennedy [St Louis] ---- John or Wm Ritchie Saint Joseph [Missouri] James Hunter New Madrid [Missouri] [Colonel] Wm Harper keep Girardeau [C. A. Dana]
+{time: 3.30 PM} [5] for [Maj Gen W. S. Rosecrans] [.] . The [Secretary of War] directs the [Arrest (-ed, -ing)] at {time: 10 AM} on Monday morning next [Of the] following named [Rebel] agents and the seizure of their papers [.] Wm Kendall and [Captain] Lewis Kennerly [St Louis] ---- John or Wm Ritchie Saint Joseph [Missouri] James Hunter New Madrid [Missouri] [Colonel] Wm Harper keep Girardeau [C. A. Dana]
 
 Code-word tokens: H 16.
 
@@ -1739,29 +1739,29 @@ Code-word tokens: H 16.
 
 Code-word tokens: H 16.
 
-**E327 | Page 153 | 9813 | mssEC 18 (obj 10074, pointer 9813; printed page 147), 6 Aug 1864 Washington, to McCaine (addressee 'Makent'), signed General-in-Chief: the Cavalry Bureau asks that all unserviceable cavalry horses in your department be sent to the depots at Gallipolis, Ohio and Giesboro, D.C.; every effort has been directed to mount your cavalry (MS18-R2; row 9813/1; image-read at 2400 px)**
+**E327 | Page 153 | 9813 | mssEC 18 (obj 10074, pointer 9813; printed page 147), 6 Aug 1864 Washington, to Maj. Gen. David Hunter (addressee 'Makent' = Hunter, C), signed General-in-Chief: the Cavalry Bureau asks that all unserviceable cavalry horses in your department be sent to the depots at Gallipolis, Ohio and Giesboro, D.C.; every effort has been directed to mount your cavalry (MS18-R2; FIX-FM13, AUDIT FV-MS18c s.5; row 9813/1; image-read at 2400 px; printed OR I/43 pt 1 p.709, Halleck to Hunter, 6 Aug 1864)**
 
-[6] {time: 12} For Makent [.] The [Cavalry] Bureau has requested that all [Unserviceable] [Cavalry] [Horse]'s in your [Department] be sent to the [Depot]'s at Gallipolis [Ohio] and Geesbora D C I have directed that every possible effort be made to mount your [Cavalry]  {tail: [signed] [General-in-Chief] over the wave}
-
-Code-word tokens: H 13.
-
-**E328 | Page 356 | 10016 | mssEC 18 (obj 10074, pointer 10016; printed page 350), 22 May 1865 7 PM Washington, to R. C. Clowry at St Louis for Pope, signed Grant: Reynolds need not a Co.[?], the [whistle] from Arkansas; he can probably not well be replaced in that state; the Quartermaster will send you 2700 horses as fast as possible (MS18-R2; row 10016/2; image-read at 2400 px)**
-
-[Washington] {time: 7 PM} [22] to pope [St Louis] [.] . [Maj Gen J. J. Reynolds] need not a Co. The whisile from [Arkansas] [.] He can not probably be wall replaced in that state The [Quartermaster] will send you [2700] [Horse]'s as fast as possible  {tail: [signed] [Maj Genl U.S. Grant]}
-
-Code-word tokens: H 16.
-
-**E329 | Page 204 | 9864 | mssEC 18 (obj 10074, pointer 9864; printed page 198), 13 Oct 1864 11.30 AM Washington, to Schofield at Louisville (copy to Burbridge at Lexington and Bruch), signed General-in-Chief (Halleck): all forces that can be spared from Kentucky to be sent to General Thomas at Nashville to meet any force Hood may send north; printed OR I/39 pt 3 p.253 word for word, 'Same to General Burbridge' = send copy to Kearney (MS18-R2; row 9864/1; image-read at 2400 px)**
-
-{time: 11.30 AM} [13] for [Maj Genl J. M. Schofield] [Louisville] [.] all [Force]'s that can possible be spared from [Kentucky] should be sent to [Maj Gen Geo. H. Thomas] at [Nashville] to enable him to meet any [Force]'s that [Maj Gen J. B. Hood (Confederate)] may send [North]  {tail: [signed] [General-in-Chief] send copy to Kearney where ever he may be}
+[6] {time: 12} For [Maj. Gen. David Hunter] [.] The [Cavalry] Bureau has requested that all [Unserviceable] [Cavalry] [Horse]'s in your [Department] be sent to the [Depot]'s at Gallipolis [Ohio] and Geesbora D C I have directed that every possible effort be made to mount your [Cavalry]  {tail: [signed] [General-in-Chief] over the wave}
 
 Code-word tokens: H 13, C 1.
 
-**E330 | Page 213 | 9873 | mssEC 18 (obj 10074, pointer 9873; printed page 207), 20 Oct 1864 3 PM Washington, to Maj. Gen. Thomas at Nashville, signed General-in-Chief (Halleck): Forrest is reported threatening both Paducah and Memphis; if by the assistance of Burbridge and Washburn you could drive him south it would relieve that part of the country; printed OR I/39 pt 3 p.379 word for word (MS18-R2; row 9873/1; image-read at 2400 px)**
+**E328 | Page 356 | 10016 | mssEC 18 (obj 10074, pointer 10016; printed page 350), 22 May 1865 7 PM Washington, to R. C. Clowry at St Louis for Pope, signed Grant: Reynolds need not accompany the troops from Arkansas; he can probably not well be replaced in that state; the Quartermaster will send you 2700 horses as fast as possible (MS18-R2; FIX-FM13, AUDIT FV-MS18c s.5; row 10016/2; image-read at 2400 px; printed OR I/48 pt 2 p.540, Grant to Pope, 22 May 1865 7 p.m.)**
 
-[Washington] [20] {time: 3 PM} for [Maj Gen Geo. H. Thomas] ---- It is [Report]ed here that forrest is [Threaten (-ed, -ing)]ing both Pa Duke Key & [Memphis] ---- If by the assistance of Kearney & [Gen C. C. Washburne] you could drive him [South] it would relieve that part [Of the] Country from all danger [General-in-Chief]
+[Washington] {time: 7 PM} [22] to pope [St Louis] [.] . [Maj Gen J. J. Reynolds] need not a Co. The [Troops] from [Arkansas] [.] He can not probably be wall replaced in that state The [Quartermaster] will send you [2700] [Horse]'s as fast as possible  {tail: [signed] [Maj Genl U.S. Grant]}
 
-Code-word tokens: H 11.
+Code-word tokens: H 16, C 1.
 
-Totals over the 272 entries: H 4667, C 43, I 25, M 33, S 16, U 10.
+**E329 | Page 204 | 9864 | mssEC 18 (obj 10074, pointer 9864; printed page 198), 13 Oct 1864 11.30 AM Washington, to Schofield at Louisville (copy to Burbridge at Lexington and Bruch), signed General-in-Chief (Halleck): all forces that can be spared from Kentucky to be sent to General Thomas at Nashville to meet any force Hood may send north; printed OR I/39 pt 3 p.253 word for word, 'Same to General Burbridge' = send copy to Kearney (MS18-R2; FIX-FM13, AUDIT FV-MS18c s.5; row 9864/1; image-read at 2400 px; print page eye-checked on IA leaf n258 by FV-MS18c)**
+
+{time: 11.30 AM} [13] for [Maj Genl J. M. Schofield] [Louisville] [.] all [Force]'s that can possible be spared from [Kentucky] should be sent to [Maj Gen Geo. H. Thomas] at [Nashville] to enable him to meet any [Force]'s that [Maj Gen J. B. Hood (Confederate)] may send [North]  {tail: [signed] [General-in-Chief] send copy to [Maj Gen S. G. Burbridge] where ever he may be}
+
+Code-word tokens: H 13, C 2.
+
+**E330 | Page 213 | 9873 | mssEC 18 (obj 10074, pointer 9873; printed page 207), 20 Oct 1864 3 PM Washington, to Maj. Gen. Thomas at Nashville, signed General-in-Chief (Halleck): Forrest is reported threatening both Paducah and Memphis; if by the assistance of Burbridge and Washburn you could drive him south it would relieve that part of the country; printed OR I/39 pt 3 p.379 word for word (MS18-R2; FIX-FM13, AUDIT FV-MS18c s.5; row 9873/1; image-read at 2400 px; print page eye-checked on IA leaf n384 by FV-MS18c)**
+
+[Washington] [20] {time: 3 PM} for [Maj Gen Geo. H. Thomas] ---- It is [Report]ed here that forrest is [Threaten (-ed, -ing)]ing both Pa Duke Key & [Memphis] ---- If by the assistance of [Maj Gen S. G. Burbridge] & [Gen C. C. Washburne] you could drive him [South] it would relieve that part [Of the] Country from all danger [General-in-Chief]
+
+Code-word tokens: H 11, C 1.
+
+Totals over the 272 entries: H 4666, C 54, I 25, M 34, S 16, U 10.
 <!-- decode.py: derived block ends -->
