@@ -1,0 +1,404 @@
+# feed: combo latt+vote4+selfcons first (absent here: selfcons), then n_signals; read-free, no resolution, per tile
+rank	tile	line	pos	tier	n_signals	candidates	question
+1	f178v_13_020	f178v_L13	20	combo	7	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length) Hairline ink: zoom on the tick or tail.
+2	f178v_19_006	f178v_L19	6	combo	7	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length) The band may cut the sign: open the line view.
+3	f178v_20_016	f178v_L20	15	combo	7	T26|T66|T76	Which pile: T26 or T66 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+4	f178v_15_011	f178v_L15	11	combo	5	T51|T64|T92|T95	Which pile: T51 or T64 or T92 or T95? (look at the tail) The band may cut the sign: open the line view.
+5	f178v_19_025	f178v_L19	24	combo	5	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length)
+6	f178v_22_002	f178v_L22	2	combo	5	T60|T86	Which pile: T60 or T86? (the reads split) The band may cut the sign: open the line view.
+7	f178v_22_024	f178v_L22	24	combo	5	T45|T53|T90	Which pile: T45 or T53 or T90? (look for the closed loop) The band may cut the sign: open the line view.
+8	f179r_02_009	f179r_L02	8	combo	5	T24|T83|X_NEW	Which pile: T24 or T83 or X_NEW? (the reads split) Hairline ink: zoom on the tick or tail.
+9	f178v_21_021	f178v_L21	21	combo	4	T26|T45|T66|T76|T86	Which pile: T26 or T45 or T66 or T76 or T86? (look for the loop) Hairline ink: zoom on the tick or tail.
+10	f178v_13_001	f178v_L13	1	combo	3	T27|T36	Which pile: T27 or T36? (the reads split)
+11	f178v_13_007	f178v_L13	7	combo	2	T70|T84	Which pile: T70 or T84? (the reads split)
+12	f178v_17_027	f178v_L17	28	signal	6	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+13	f178v_20_002	f178v_L20	2	signal	6	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+14	f179r_03_019	f179r_L03	17	signal	6	T24|T83	Which pile: T24 or T83? (the reads split) Hairline ink: zoom on the tick or tail.
+15	f178v_13_010	f178v_L13	10	signal	5	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+16	f178v_13_012	f178v_L13	12	signal	5	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+17	f178v_13_024	f178v_L13	24	signal	5	T24|T83	Which pile: T24 or T83? (the reads split) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+18	f178v_14_013	f178v_L14	13	signal	5	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+19	f178v_14_014	f178v_L14	14	signal	5	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split) Hairline ink: zoom on the tick or tail.
+20	f178v_14_021	f178v_L14	21	signal	5	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+21	f178v_16_016	f178v_L16	17	signal	5	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+22	f178v_17_016	f178v_L17	17	signal	5	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+23	f178v_19_008	f178v_L19	8	signal	5	T26	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+24	f178v_21_001	f178v_L21	1	signal	5	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+25	f178v_21_012	f178v_L21	12	signal	5	T60|T86	Which pile: T60 or T86? (the reads split) The band may cut the sign: open the line view.
+26	f178v_21_024	f178v_L21	24	signal	5	T60|T86	Which pile: T60 or T86? (the reads split)
+27	f178v_21_027	f178v_L21	27	signal	5	T60|T86	Which pile: T60 or T86? (the reads split) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+28	f178v_23_017	f178v_L23	17	signal	5	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+29	f178v_23_021	f178v_L23	21	signal	5	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length) Hairline ink: zoom on the tick or tail.
+30	f179r_01_005	f179r_L01	4	signal	5	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split) Hairline ink: zoom on the tick or tail.
+31	f179r_02_032+f179r_02_033	f179r_L02	31	signal	5	T53|T90	Which pile: T53 or T90? (look for the closed loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+32	f179r_03_010	f179r_L03	8	signal	5	T24|T83	Which pile: T24 or T83? (the reads split)
+33	f178v_13_026	f178v_L13	27	signal	4	T52	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+34	f178v_14_001	f178v_L14	1	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view.
+35	f178v_14_025	f178v_L14	25	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+36	f178v_15_007	f178v_L15	7	signal	4	T53|T90	Which pile: T53 or T90? (look for the closed loop) Hairline ink: zoom on the tick or tail.
+37	f178v_15_009	f178v_L15	9	signal	4	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length) The band may cut the sign: open the line view.
+38	f178v_16_012	f178v_L16	13	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+39	f178v_16_024	f178v_L16	25	signal	4	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length) The band may cut the sign: open the line view.
+40	f178v_16_028	f178v_L16	29	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+41	f178v_17_008	f178v_L17	8	signal	4	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split) Hairline ink: zoom on the tick or tail.
+42	f178v_17_012	f178v_L17	12	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+43	f178v_17_015	f178v_L17	16	signal	4	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split)
+44	f178v_17_019	f178v_L17	20	signal	4	T45|T66|T76|T86	Which pile: T45 or T66 or T76 or T86? (look for the loop) The band may cut the sign: open the line view.
+45	f178v_17_024	f178v_L17	25	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+46	f178v_17_028	f178v_L17	29	signal	4	X_EQ	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+47	f178v_18_019	f178v_L18	19	signal	4	T27	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+48	f178v_18_023	f178v_L18	23	signal	4	T96	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+49	f178v_19_012	f178v_L19	11	signal	4	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split) Hairline ink: zoom on the tick or tail.
+50	f178v_19_028	f178v_L19	27	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+51	f178v_20_001	f178v_L20	1	signal	4	X_NEW	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+52	f178v_20_014	f178v_L20	13	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+53	f178v_20_018	f178v_L20	17	signal	4	T13|T51|T64|T95	Which pile: T13 or T51 or T64 or T95? (look at the tail) Hairline ink: zoom on the tick or tail.
+54	f178v_20_019	f178v_L20	18	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+55	f178v_20_026	f178v_L20	25	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+56	f178v_21_005	f178v_L21	5	signal	4	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split) Hairline ink: zoom on the tick or tail.
+57	f178v_21_025	f178v_L21	25	signal	4	T53|T90	Which pile: T53 or T90? (look for the closed loop) Hairline ink: zoom on the tick or tail.
+58	f178v_21_026	f178v_L21	26	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+59	f178v_22_014	f178v_L22	14	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+60	f178v_23_006	f178v_L23	6	signal	4	T45|T66|T76|T86	Which pile: T45 or T66 or T76 or T86? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+61	f178v_23_028	f178v_L23	28	signal	4	T24|T83	Which pile: T24 or T83? (the reads split) Hairline ink: zoom on the tick or tail.
+62	f179r_01_002+f179r_01_003	f179r_L01	2	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view.
+63	f179r_01_006	f179r_L01	5	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+64	f179r_01_017	f179r_L01	16	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+65	f179r_02_010	f179r_L02	9	signal	4	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split) Hairline ink: zoom on the tick or tail.
+66	f179r_02_016	f179r_L02	15	signal	4	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+67	f179r_02_023	f179r_L02	22	signal	4	T24|T83	Which pile: T24 or T83? (the reads split)
+68	f179r_02_024	f179r_L02	23	signal	4	T45|T76	Which pile: T45 or T76? (look for the loop)
+69	f179r_02_031	f179r_L02	30	signal	4	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split)
+70	f179r_03_008+f179r_03_009	f179r_L03	7	signal	4	T85	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+71	f179r_03_011	f179r_L03	9	signal	4	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split) The band may cut the sign: open the line view.
+72	f179r_03_024	f179r_L03	22	signal	4	T53|T90	Which pile: T53 or T90? (look for the closed loop) Hairline ink: zoom on the tick or tail.
+73	f178v_13_002	f178v_L13	2	signal	3	T33	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+74	f178v_13_011	f178v_L13	11	signal	3	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split)
+75	f178v_13_013	f178v_L13	13	signal	3	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+76	f178v_13_017	f178v_L13	17	signal	3	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop) Hairline ink: zoom on the tick or tail.
+77	f178v_13_028	f178v_L13	29	signal	3	T19	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+78	f178v_14_004	f178v_L14	4	signal	3	T96	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+79	f178v_14_006	f178v_L14	6	signal	3	X_NEW	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+80	f178v_14_022	f178v_L14	22	signal	3	T13|T51|T64|T95	Which pile: T13 or T51 or T64 or T95? (look at the tail) Hairline ink: zoom on the tick or tail.
+81	f178v_15_002	f178v_L15	2	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+82	f178v_15_005	f178v_L15	5	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+83	f178v_15_012	f178v_L15	12	signal	3	T33	Which pile does this tile belong in?
+84	f178v_15_013	f178v_L15	13	signal	3	T96	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+85	f178v_15_014	f178v_L15	14	signal	3	T29	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+86	f178v_15_016	f178v_L15	16	signal	3	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split)
+87	f178v_15_017	f178v_L15	17	signal	3	T96	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+88	f178v_15_024	f178v_L15	25	signal	3	T46	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+89	f178v_16_002	f178v_L16	2	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+90	f178v_16_006	f178v_L16	6	signal	3	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split) Hairline ink: zoom on the tick or tail.
+91	f178v_16_008	f178v_L16	9	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+92	f178v_16_011	f178v_L16	12	signal	3	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length)
+93	f178v_16_014	f178v_L16	15	signal	3	T53|T90	Which pile: T53 or T90? (look for the closed loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+94	f178v_16_018	f178v_L16	19	signal	3	T60|T86	Which pile: T60 or T86? (the reads split)
+95	f178v_16_021	f178v_L16	22	signal	3	T60|T86	Which pile: T60 or T86? (the reads split) Hairline ink: zoom on the tick or tail.
+96	f178v_16_022	f178v_L16	23	signal	3	T24|T83	Which pile: T24 or T83? (the reads split) Hairline ink: zoom on the tick or tail.
+97	f178v_17_013	f178v_L17	13	signal	3	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split)
+98	f178v_17_017	f178v_L17	18	signal	3	T24|T83	Which pile: T24 or T83? (the reads split) The band may cut the sign: open the line view.
+99	f178v_17_018	f178v_L17	19	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop)
+100	f178v_17_025	f178v_L17	26	signal	3	T63	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+101	f178v_18_001	f178v_L18	1	signal	3	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+102	f178v_18_002	f178v_L18	2	signal	3	T80	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+103	f178v_18_027	f178v_L18	27	signal	3	T96	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+104	f178v_19_007	f178v_L19	7	signal	3	T52	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+105	f178v_19_013	f178v_L19	12	signal	3	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+106	f178v_19_014	f178v_L19	13	signal	3	T24|T83	Which pile: T24 or T83? (the reads split) Hairline ink: zoom on the tick or tail.
+107	f178v_20_006	f178v_L20	6	signal	3	T52	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+108	f178v_20_010	f178v_L20	9	signal	3	T45|T66|T76|T86	Which pile: T45 or T66 or T76 or T86? (look for the loop) The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+109	f178v_20_013	f178v_L20	12	signal	3	T45|T66|T76|T86	Which pile: T45 or T66 or T76 or T86? (look for the loop) Hairline ink: zoom on the tick or tail.
+110	f178v_20_015	f178v_L20	14	signal	3	T24|T83	Which pile: T24 or T83? (the reads split) Hairline ink: zoom on the tick or tail.
+111	f178v_20_023	f178v_L20	22	signal	3	T53|T90	Which pile: T53 or T90? (look for the closed loop) Hairline ink: zoom on the tick or tail.
+112	f178v_20_028	f178v_L20	27	signal	3	T19	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+113	f178v_21_006	f178v_L21	6	signal	3	T53|T90	Which pile: T53 or T90? (look for the closed loop) Hairline ink: zoom on the tick or tail.
+114	f178v_21_010	f178v_L21	10	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop)
+115	f178v_21_015	f178v_L21	15	signal	3	T24|T83	Which pile: T24 or T83? (the reads split) Hairline ink: zoom on the tick or tail.
+116	f178v_21_017	f178v_L21	17	signal	3	T60|T86	Which pile: T60 or T86? (the reads split)
+117	f178v_22_006	f178v_L22	6	signal	3	T96	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+118	f178v_22_009	f178v_L22	9	signal	3	X_NEW	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+119	f178v_22_013	f178v_L22	13	signal	3	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split)
+120	f178v_22_023	f178v_L22	23	signal	3	T88	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+121	f178v_23_009	f178v_L23	9	signal	3	T53|T90	Which pile: T53 or T90? (look for the closed loop) Hairline ink: zoom on the tick or tail.
+122	f178v_23_012	f178v_L23	12	signal	3	T26	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+123	f178v_23_015	f178v_L23	15	signal	3	T60|T86	Which pile: T60 or T86? (the reads split)
+124	f178v_23_022	f178v_L23	22	signal	3	T96	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+125	f178v_23_027	f178v_L23	27	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+126	f179r_01_001	f179r_L01	1	signal	3	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split)
+127	f179r_01_014	f179r_L01	13	signal	3	T24|T83	Which pile: T24 or T83? (the reads split)
+128	f179r_01_016	f179r_L01	15	signal	3	T24|T83	Which pile: T24 or T83? (the reads split)
+129	f179r_01_018	f179r_L01	17	signal	3	T24|T83	Which pile: T24 or T83? (the reads split)
+130	f179r_01_020	f179r_L01	19	signal	3	T53|T90	Which pile: T53 or T90? (look for the closed loop) Hairline ink: zoom on the tick or tail.
+131	f179r_01_021	f179r_L01	20	signal	3	T24|T83	Which pile: T24 or T83? (the reads split)
+132	f179r_01_022	f179r_L01	21	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+133	f179r_01_024+f179r_01_025	f179r_L01	23	signal	3	T36|T50	Which pile: T36 or T50? (the reads split) The band may cut the sign: open the line view.
+134	f179r_01_026+f179r_01_027	f179r_L01	24	signal	3	T13|T51|T64|T95	Which pile: T13 or T51 or T64 or T95? (look at the tail) Hairline ink: zoom on the tick or tail.
+135	f179r_01_028	f179r_L01	25	signal	3	T96	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+136	f179r_01_031	f179r_L01	28	signal	3	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+137	f179r_01_032	f179r_L01	29	signal	3	T45|T66|T76|T86	Which pile: T45 or T66 or T76 or T86? (look for the loop) The band may cut the sign: open the line view.
+138	f179r_01_036+f179r_01_037	f179r_L01	31	signal	3	T19	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+139	f179r_02_001+f179r_02_002	f179r_L02	1	signal	3	T92|T95|T98	Which pile: T92 or T95 or T98? (the reads split)
+140	f179r_02_005	f179r_L02	4	signal	3	T24|T83	Which pile: T24 or T83? (the reads split)
+141	f179r_02_007	f179r_L02	6	signal	3	T88	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+142	f179r_02_011	f179r_L02	10	signal	3	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+143	f179r_02_014	f179r_L02	13	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop) Hairline ink: zoom on the tick or tail.
+144	f179r_02_028	f179r_L02	27	signal	3	T33	Which pile does this tile belong in? The band may cut the sign: open the line view.
+145	f179r_02_030	f179r_L02	29	signal	3	T19	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+146	f179r_03_001	f179r_L03	1	signal	3	T19	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+147	f179r_03_005	f179r_L03	4	signal	3	T24|T83	Which pile: T24 or T83? (the reads split)
+148	f179r_03_012	f179r_L03	10	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop)
+149	f179r_03_013	f179r_L03	11	signal	3	T45|T66|T76|T86	Which pile: T45 or T66 or T76 or T86? (look for the loop) The band may cut the sign: open the line view.
+150	f179r_03_014	f179r_L03	12	signal	3	T45|T76	Which pile: T45 or T76? (look for the loop)
+151	f179r_03_018	f179r_L03	16	signal	3	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+152	f179r_03_023	f179r_L03	21	signal	3	T60|T86	Which pile: T60 or T86? (the reads split) Hairline ink: zoom on the tick or tail.
+153	f179r_03_027	f179r_L03	25	signal	3	X_NEW	Which pile does this tile belong in? The band may cut the sign: open the line view.
+154	f179r_03_028+f179r_03_029	f179r_L03	26	signal	3	X_NEW	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+155	f179r_03_030+f179r_03_031	f179r_L03	27	signal	3	T54	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+156	f178v_13_004	f178v_L13	4	signal	2	T37	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+157	f178v_13_006	f178v_L13	6	signal	2	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+158	f178v_13_008	f178v_L13	8	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+159	f178v_13_009	f178v_L13	9	signal	2	T37	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+160	f178v_13_014	f178v_L13	14	signal	2	T24|T83	Which pile: T24 or T83? (the reads split)
+161	f178v_13_015	f178v_L13	15	signal	2	T19	Which pile does this tile belong in?
+162	f178v_13_016	f178v_L13	16	signal	2	T33	Which pile does this tile belong in?
+163	f178v_13_018	f178v_L13	18	signal	2	T63	Which pile does this tile belong in?
+164	f178v_13_023	f178v_L13	23	signal	2	T65	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+165	f178v_13_025	f178v_L13	25	signal	2	T96	Which pile does this tile belong in?
+166	f178v_13_026	f178v_L13	26	signal	2	T37	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+167	f178v_14_002	f178v_L14	2	signal	2	T24|T83	Which pile: T24 or T83? (the reads split)
+168	f178v_14_003	f178v_L14	3	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+169	f178v_14_007	f178v_L14	7	signal	2	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length)
+170	f178v_14_008	f178v_L14	8	signal	2	T96	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+171	f178v_14_010	f178v_L14	10	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+172	f178v_14_012	f178v_L14	12	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+173	f178v_14_016	f178v_L14	16	signal	2	T52	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+174	f178v_14_018	f178v_L14	18	signal	2	T24|T83	Which pile: T24 or T83? (the reads split)
+175	f178v_14_020	f178v_L14	20	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+176	f178v_14_023	f178v_L14	23	signal	2	T19	Which pile does this tile belong in?
+177	f178v_14_024	f178v_L14	24	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+178	f178v_15_003	f178v_L15	3	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+179	f178v_15_006	f178v_L15	6	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+180	f178v_15_019	f178v_L15	19	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+181	f178v_15_021	f178v_L15	22	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+182	f178v_15_023	f178v_L15	24	signal	2	T46	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+183	f178v_15_025	f178v_L15	26	signal	2	T85	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+184	f178v_15_026	f178v_L15	27	signal	2	T58	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+185	f178v_15_027	f178v_L15	28	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+186	f178v_15_029	f178v_L15	30	signal	2	T80	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+187	f178v_16_003	f178v_L16	3	signal	2	T45|T66|T76|T86	Which pile: T45 or T66 or T76 or T86? (look for the loop) The band may cut the sign: open the line view.
+188	f178v_16_007	f178v_L16	8	signal	2	T24|T83	Which pile: T24 or T83? (the reads split) Hairline ink: zoom on the tick or tail.
+189	f178v_16_025	f178v_L16	26	signal	2	T96	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+190	f178v_16_027	f178v_L16	28	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+191	f178v_16_030	f178v_L16	31	signal	2	?	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+192	f178v_17_005	f178v_L17	5	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+193	f178v_17_014	f178v_L17	14	signal	2	X_NEW	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+194	f178v_17_014	f178v_L17	15	signal	2	T89	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+195	f178v_17_020	f178v_L17	21	signal	2	T63	Which pile does this tile belong in?
+196	f178v_17_022	f178v_L17	23	signal	2	T33	Which pile does this tile belong in?
+197	f178v_17_026	f178v_L17	27	signal	2	T96	Which pile does this tile belong in?
+198	f178v_18_004	f178v_L18	4	signal	2	T96	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+199	f178v_18_007	f178v_L18	7	signal	2	T29	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+200	f178v_18_015	f178v_L18	15	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+201	f178v_18_017	f178v_L18	17	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+202	f178v_18_021	f178v_L18	21	signal	2	T84	Which pile does this tile belong in? The band may cut the sign: open the line view.
+203	f178v_18_022	f178v_L18	22	signal	2	T89	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+204	f178v_19_001	f178v_L19	1	signal	2	T36|T50	Which pile: T36 or T50? (the reads split) The band may cut the sign: open the line view.
+205	f178v_19_003	f178v_L19	3	signal	2	T42	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+206	f178v_19_005	f178v_L19	5	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+207	f178v_19_017	f178v_L19	16	signal	2	T84	Which pile does this tile belong in?
+208	f178v_19_021	f178v_L19	20	signal	2	T96	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+209	f178v_19_023	f178v_L19	22	signal	2	T46	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+210	f178v_19_024	f178v_L19	23	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+211	f178v_19_026	f178v_L19	25	signal	2	T96	Which pile does this tile belong in? The band may cut the sign: open the line view.
+212	f178v_19_027	f178v_L19	26	signal	2	T54	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+213	f178v_19_029	f178v_L19	28	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+214	f178v_20_005	f178v_L20	5	signal	2	T33	Which pile does this tile belong in?
+215	f178v_20_007	f178v_L20	7	signal	2	T36|T50	Which pile: T36 or T50? (the reads split) Hairline ink: zoom on the tick or tail.
+216	f178v_20_008+f178v_20_009	f178v_L20	8	signal	2	T55	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+217	f178v_20_011	f178v_L20	10	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+218	f178v_20_025	f178v_L20	24	signal	2	T42	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+219	f178v_20_027	f178v_L20	26	signal	2	T36|T50	Which pile: T36 or T50? (the reads split) Hairline ink: zoom on the tick or tail.
+220	f178v_21_002	f178v_L21	2	signal	2	T96	Which pile does this tile belong in? The band may cut the sign: open the line view.
+221	f178v_21_003	f178v_L21	3	signal	2	T42	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+222	f178v_21_007	f178v_L21	7	signal	2	T24|T83	Which pile: T24 or T83? (the reads split) Hairline ink: zoom on the tick or tail.
+223	f178v_21_008	f178v_L21	8	signal	2	T37	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+224	f178v_21_011	f178v_L21	11	signal	2	T49	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+225	f178v_21_014	f178v_L21	14	signal	2	T70	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+226	f178v_21_016	f178v_L21	16	signal	2	T85	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+227	f178v_21_018	f178v_L21	18	signal	2	T42	Which pile does this tile belong in?
+228	f178v_21_020	f178v_L21	20	signal	2	T58	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+229	f178v_21_022	f178v_L21	22	signal	2	T36|T50	Which pile: T36 or T50? (the reads split)
+230	f178v_21_023	f178v_L21	23	signal	2	T19	Which pile does this tile belong in?
+231	f178v_22_001	f178v_L22	1	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+232	f178v_22_003	f178v_L22	3	signal	2	T38	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+233	f178v_22_008	f178v_L22	8	signal	2	T45|T76	Which pile: T45 or T76? (look for the loop)
+234	f178v_22_010	f178v_L22	10	signal	2	T45|T76	Which pile: T45 or T76? (look for the loop)
+235	f178v_22_011	f178v_L22	11	signal	2	T27	Which pile does this tile belong in? The band may cut the sign: open the line view. Hairline ink: zoom on the tick or tail.
+236	f178v_22_012	f178v_L22	12	signal	2	T19	Which pile does this tile belong in?
+237	f178v_22_015	f178v_L22	15	signal	2	T70	Which pile does this tile belong in? The band may cut the sign: open the line view.
+238	f178v_22_018	f178v_L22	18	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+239	f178v_22_019	f178v_L22	19	signal	2	T19	Which pile does this tile belong in?
+240	f178v_22_021	f178v_L22	21	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+241	f178v_22_025	f178v_L22	25	signal	2	T85	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+242	f178v_23_002	f178v_L23	2	signal	2	T80	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+243	f178v_23_004	f178v_L23	4	signal	2	T36|T50	Which pile: T36 or T50? (the reads split) The band may cut the sign: open the line view.
+244	f178v_23_013	f178v_L23	13	signal	2	T84	Which pile does this tile belong in?
+245	f178v_23_016	f178v_L23	16	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+246	f178v_23_018	f178v_L23	18	signal	2	T60|T86	Which pile: T60 or T86? (the reads split)
+247	f178v_23_023	f178v_L23	23	signal	2	T42	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+248	f178v_23_025	f178v_L23	25	signal	2	T45|T66|T76|T86	Which pile: T45 or T66 or T76 or T86? (look for the loop) Hairline ink: zoom on the tick or tail.
+249	f179r_01_007	f179r_L01	6	signal	2	T56	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+250	f179r_01_010	f179r_L01	9	signal	2	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+251	f179r_01_012	f179r_L01	11	signal	2	T45|T76	Which pile: T45 or T76? (look for the loop)
+252	f179r_01_019	f179r_L01	18	signal	2	T45|T76	Which pile: T45 or T76? (look for the loop)
+253	f179r_01_029	f179r_L01	26	signal	2	T37	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+254	f179r_01_030	f179r_L01	27	signal	2	X_NEW	Which pile does this tile belong in? The band may cut the sign: open the line view.
+255	f179r_01_033+f179r_01_034	f179r_L01	30	signal	2	T65	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+256	f179r_02_004	f179r_L02	3	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop) The band may cut the sign: open the line view.
+257	f179r_02_017	f179r_L02	16	signal	2	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+258	f179r_02_020	f179r_L02	19	signal	2	T33	Which pile does this tile belong in?
+259	f179r_02_025	f179r_L02	24	signal	2	T25	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+260	f179r_02_026	f179r_L02	25	signal	2	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+261	f179r_03_002+f179r_03_003	f179r_L03	2	signal	2	T18|T92|T98	Which pile: T18 or T92 or T98? (compare the descender length) The band may cut the sign: open the line view.
+262	f179r_03_022	f179r_L03	20	signal	2	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+263	f179r_03_026	f179r_L03	24	signal	2	X_NEW	Which pile does this tile belong in?
+264	f178v_13_003	f178v_L13	3	signal	1	T97	Which pile does this tile belong in?
+265	f178v_13_005	f178v_L13	5	signal	1	T97	Which pile does this tile belong in?
+266	f178v_13_019	f178v_L13	19	signal	1	T37	Which pile does this tile belong in?
+267	f178v_13_021	f178v_L13	21	signal	1	T37	Which pile does this tile belong in?
+268	f178v_13_022	f178v_L13	22	signal	1	T58	Which pile does this tile belong in?
+269	f178v_14_005	f178v_L14	5	signal	1	T89	Which pile does this tile belong in? The band may cut the sign: open the line view.
+270	f178v_14_011	f178v_L14	11	signal	1	T19	Which pile does this tile belong in?
+271	f178v_14_015	f178v_L14	15	signal	1	T33	Which pile does this tile belong in?
+272	f178v_14_017	f178v_L14	17	signal	1	X_EQ	Which pile does this tile belong in?
+273	f178v_14_019	f178v_L14	19	signal	1	T37	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+274	f178v_14_026	f178v_L14	26	signal	1	T63	Which pile does this tile belong in?
+275	f178v_14_027	f178v_L14	27	signal	1	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+276	f178v_15_001	f178v_L15	1	signal	1	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+277	f178v_15_008	f178v_L15	8	signal	1	T96	Which pile does this tile belong in?
+278	f178v_15_010	f178v_L15	10	signal	1	T37	Which pile does this tile belong in?
+279	f178v_15_015	f178v_L15	15	signal	1	T89	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+280	f178v_15_020	f178v_L15	20	signal	1	T19	Which pile does this tile belong in?
+281	f178v_15_022	f178v_L15	23	signal	1	T89	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+282	f178v_15_028	f178v_L15	29	signal	1	T24|T83	Which pile: T24 or T83? (the reads split)
+283	f178v_16_001	f178v_L16	1	signal	1	T42	Which pile does this tile belong in?
+284	f178v_16_004	f178v_L16	4	signal	1	T65	Which pile does this tile belong in? The band may cut the sign: open the line view.
+285	f178v_16_005	f178v_L16	5	signal	1	T25	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+286	f178v_16_006	f178v_L16	7	signal	1	T37	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+287	f178v_16_010	f178v_L16	11	signal	1	T19	Which pile does this tile belong in?
+288	f178v_16_013	f178v_L16	14	signal	1	T42	Which pile does this tile belong in?
+289	f178v_16_019	f178v_L16	20	signal	1	T36|T50	Which pile: T36 or T50? (the reads split)
+290	f178v_16_020	f178v_L16	21	signal	1	T19	Which pile does this tile belong in?
+291	f178v_16_023	f178v_L16	24	signal	1	T33	Which pile does this tile belong in?
+292	f178v_16_026	f178v_L16	27	signal	1	T19	Which pile does this tile belong in?
+293	f178v_17_003	f178v_L17	3	signal	1	T24|T83	Which pile: T24 or T83? (the reads split)
+294	f178v_17_004	f178v_L17	4	signal	1	T19	Which pile does this tile belong in?
+295	f178v_17_006	f178v_L17	6	signal	1	T63	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+296	f178v_17_007	f178v_L17	7	signal	1	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+297	f178v_17_011	f178v_L17	11	signal	1	T24|T83	Which pile: T24 or T83? (the reads split)
+298	f178v_17_021	f178v_L17	22	signal	1	T85	Which pile does this tile belong in?
+299	f178v_17_023	f178v_L17	24	signal	1	T81	Which pile does this tile belong in?
+300	f178v_18_003	f178v_L18	3	signal	1	T57	Which pile does this tile belong in? The band may cut the sign: open the line view.
+301	f178v_18_005	f178v_L18	5	signal	1	T54	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+302	f178v_18_006	f178v_L18	6	signal	1	T19	Which pile does this tile belong in?
+303	f178v_18_009	f178v_L18	9	signal	1	T24|T83	Which pile: T24 or T83? (the reads split)
+304	f178v_18_010	f178v_L18	10	signal	1	T19	Which pile does this tile belong in?
+305	f178v_18_011	f178v_L18	11	signal	1	T33	Which pile does this tile belong in?
+306	f178v_18_016	f178v_L18	16	signal	1	T52	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+307	f178v_18_020	f178v_L18	20	signal	1	T19	Which pile does this tile belong in?
+308	f178v_18_024	f178v_L18	24	signal	1	T55	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+309	f178v_18_025	f178v_L18	25	signal	1	T70	Which pile does this tile belong in?
+310	f178v_19_002	f178v_L19	2	signal	1	T19	Which pile does this tile belong in?
+311	f178v_19_010+f178v_19_011	f178v_L19	10	signal	1	T58	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+312	f178v_19_015	f178v_L19	14	signal	1	T33	Which pile does this tile belong in?
+313	f178v_19_016	f178v_L19	15	signal	1	T25	Which pile does this tile belong in?
+314	f178v_19_019	f178v_L19	18	signal	1	T19	Which pile does this tile belong in?
+315	f178v_19_022	f178v_L19	21	signal	1	T58	Which pile does this tile belong in?
+316	f178v_19_030	f178v_L19	29	signal	1	T19	Which pile does this tile belong in?
+317	f178v_20_004	f178v_L20	4	signal	1	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+318	f178v_20_012	f178v_L20	11	signal	1	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+319	f178v_20_017	f178v_L20	16	signal	1	T37	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+320	f178v_20_020	f178v_L20	19	signal	1	T33	Which pile does this tile belong in?
+321	f178v_20_021	f178v_L20	20	signal	1	T19	Which pile does this tile belong in?
+322	f178v_20_024	f178v_L20	23	signal	1	T60|T76|T86	Which pile: T60 or T76 or T86? (look for the loop)
+323	f178v_21_004	f178v_L21	4	signal	1	T19	Which pile does this tile belong in?
+324	f178v_21_009	f178v_L21	9	signal	1	T97	Which pile does this tile belong in?
+325	f178v_21_013	f178v_L21	13	signal	1	T85	Which pile does this tile belong in?
+326	f178v_21_019	f178v_L21	19	signal	1	T37	Which pile does this tile belong in?
+327	f178v_22_005	f178v_L22	5	signal	1	T63	Which pile does this tile belong in?
+328	f178v_22_016	f178v_L22	16	signal	1	T33	Which pile does this tile belong in?
+329	f178v_22_020	f178v_L22	20	signal	1	T25	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+330	f178v_22_022	f178v_L22	22	signal	1	X_S	Which pile does this tile belong in?
+331	f178v_22_028	f178v_L22	28	signal	1	T80	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+332	f178v_23_001	f178v_L23	1	signal	1	T53|T90	Which pile: T53 or T90? (look for the closed loop)
+333	f178v_23_003	f178v_L23	3	signal	1	T33	Which pile does this tile belong in?
+334	f178v_23_005	f178v_L23	5	signal	1	T19	Which pile does this tile belong in?
+335	f178v_23_008	f178v_L23	8	signal	1	T58	Which pile does this tile belong in? Hairline ink: zoom on the tick or tail.
+336	f178v_23_010	f178v_L23	10	signal	1	T24|T83	Which pile: T24 or T83? (the reads split)
+337	f178v_23_014	f178v_L23	14	signal	1	T80	Which pile does this tile belong in?
+338	f178v_23_020	f178v_L23	20	signal	1	T19	Which pile does this tile belong in?
+339	f178v_23_029	f178v_L23	29	signal	1	T85	Which pile does this tile belong in?
+340	f179r_01_009	f179r_L01	8	signal	1	T33	Which pile does this tile belong in?
+341	f179r_01_011	f179r_L01	10	signal	1	T57	Which pile does this tile belong in? The band may cut the sign: open the line view.
+342	f179r_01_023	f179r_L01	22	signal	1	T60|T86	Which pile: T60 or T86? (the reads split)
+343	f179r_02_003	f179r_L02	2	signal	1	T19	Which pile does this tile belong in?
+344	f179r_02_008	f179r_L02	7	signal	1	T33	Which pile does this tile belong in?
+345	f179r_02_015	f179r_L02	14	signal	1	T60|T86	Which pile: T60 or T86? (the reads split)
+346	f179r_02_018	f179r_L02	17	signal	1	T58	Which pile does this tile belong in?
+347	f179r_02_019	f179r_L02	18	signal	1	T37	Which pile does this tile belong in?
+348	f179r_02_021	f179r_L02	20	signal	1	T63	Which pile does this tile belong in?
+349	f179r_02_022	f179r_L02	21	signal	1	T37	Which pile does this tile belong in?
+350	f179r_02_027	f179r_L02	26	signal	1	T80	Which pile does this tile belong in?
+351	f179r_02_029	f179r_L02	28	signal	1	T65	Which pile does this tile belong in?
+352	f179r_03_006	f179r_L03	5	signal	1	T80	Which pile does this tile belong in?
+353	f179r_03_015	f179r_L03	13	signal	1	T89	Which pile does this tile belong in?
+354	f179r_03_016	f179r_L03	14	signal	1	T85	Which pile does this tile belong in?
+355	f179r_03_017	f179r_L03	15	signal	1	T58	Which pile does this tile belong in?
+356	f179r_03_020	f179r_L03	18	signal	1	T96	Which pile does this tile belong in?
+357	f179r_03_021	f179r_L03	19	signal	1	X_NEW	Which pile does this tile belong in?
+358	f179r_03_025	f179r_L03	23	signal	1	T80	Which pile does this tile belong in?
+359	f178v_13_027	f178v_L13	28	none	0	T70	Which pile does this tile belong in?
+360	f178v_14_009	f178v_L14	9	none	0	T37	Which pile does this tile belong in?
+361	f178v_15_004	f178v_L15	4	none	0	T63	Which pile does this tile belong in?
+362	f178v_15_018	f178v_L15	18	none	0	T37	Which pile does this tile belong in?
+363	f178v_15_021	f178v_L15	21	none	0	T37	Which pile does this tile belong in?
+364	f178v_16_009	f178v_L16	10	none	0	T54	Which pile does this tile belong in?
+365	f178v_16_015	f178v_L16	16	none	0	T97	Which pile does this tile belong in?
+366	f178v_16_017	f178v_L16	18	none	0	T25	Which pile does this tile belong in?
+367	f178v_16_029	f178v_L16	30	none	0	T25	Which pile does this tile belong in?
+368	f178v_17_001	f178v_L17	1	none	0	T81	Which pile does this tile belong in?
+369	f178v_17_002	f178v_L17	2	none	0	T37	Which pile does this tile belong in?
+370	f178v_17_009	f178v_L17	9	none	0	T37	Which pile does this tile belong in?
+371	f178v_17_010	f178v_L17	10	none	0	T63	Which pile does this tile belong in?
+372	f178v_18_008	f178v_L18	8	none	0	T65	Which pile does this tile belong in?
+373	f178v_18_012	f178v_L18	12	none	0	T80	Which pile does this tile belong in?
+374	f178v_18_013	f178v_L18	13	none	0	T81	Which pile does this tile belong in?
+375	f178v_18_014	f178v_L18	14	none	0	T55	Which pile does this tile belong in?
+376	f178v_18_018	f178v_L18	18	none	0	T49	Which pile does this tile belong in?
+377	f178v_18_026	f178v_L18	26	none	0	T58	Which pile does this tile belong in?
+378	f178v_19_004	f178v_L19	4	none	0	T85	Which pile does this tile belong in?
+379	f178v_19_009	f178v_L19	9	none	0	T25	Which pile does this tile belong in?
+380	f178v_19_018	f178v_L19	17	none	0	T80	Which pile does this tile belong in?
+381	f178v_19_020	f178v_L19	19	none	0	T63	Which pile does this tile belong in?
+382	f178v_20_003	f178v_L20	3	none	0	T25	Which pile does this tile belong in?
+383	f178v_20_022	f178v_L20	21	none	0	T58	Which pile does this tile belong in?
+384	f178v_22_004	f178v_L22	4	none	0	T37	Which pile does this tile belong in?
+385	f178v_22_007	f178v_L22	7	none	0	T70	Which pile does this tile belong in?
+386	f178v_22_017	f178v_L22	17	none	0	T25	Which pile does this tile belong in?
+387	f178v_22_026	f178v_L22	26	none	0	T57	Which pile does this tile belong in?
+388	f178v_22_027	f178v_L22	27	none	0	T37	Which pile does this tile belong in?
+389	f178v_23_007	f178v_L23	7	none	0	T85	Which pile does this tile belong in?
+390	f178v_23_011	f178v_L23	11	none	0	T25	Which pile does this tile belong in?
+391	f178v_23_019	f178v_L23	19	none	0	T63	Which pile does this tile belong in?
+392	f178v_23_024	f178v_L23	24	none	0	T85	Which pile does this tile belong in?
+393	f178v_23_026	f178v_L23	26	none	0	T25	Which pile does this tile belong in?
+394	f179r_01_004	f179r_L01	3	none	0	T58	Which pile does this tile belong in?
+395	f179r_01_008	f179r_L01	7	none	0	T85	Which pile does this tile belong in?
+396	f179r_01_013	f179r_L01	12	none	0	T37	Which pile does this tile belong in?
+397	f179r_01_015	f179r_L01	14	none	0	T85	Which pile does this tile belong in?
+398	f179r_02_006	f179r_L02	5	none	0	T85	Which pile does this tile belong in?
+399	f179r_02_012	f179r_L02	11	none	0	T37	Which pile does this tile belong in?
+400	f179r_02_013	f179r_L02	12	none	0	T70	Which pile does this tile belong in?
+401	f179r_03_004	f179r_L03	3	none	0	T81	Which pile does this tile belong in?
+402	f179r_03_007	f179r_L03	6	none	0	T70	Which pile does this tile belong in?
