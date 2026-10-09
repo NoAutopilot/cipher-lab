@@ -1,0 +1,184 @@
+passage	pos	sign_id	alt	conf	note
+f113e_L02	1	f	t	M	bar-topped stem with second crossbar; before: "Henry"; high dot above prose y read as neighbour-row fragment
+f113e_L02	2	L		H	inverted T
+f113e_L02	3	4		M	open triangle with flag; tail below may be lower-row ink
+f113e_L02	4	z		M	written like figure 2
+f113e_L02	5	0		H	round zero; after: line end
+f113_L03	1	NEW:d-shape		M	round bowl with ascender curving left (delta/d); before: line start
+f113_L03	2	w		H	omega/pi-like
+f113_L03	3	p		M	loop with descender
+f113_L03	4	NEW:d-shape		M	d/delta; cross mark above is upper-row ink
+f113_L03	5	v		H	
+f113_L03	6	sq		H	
+f113_L03	7	NEW:d-shape	t	M	d/delta with crossbar on ascender
+f113_L03	8	.		H	
+f113_L03	9	1		H	
+f113_L03	10	.		H	
+f113_L03	11	z		H	
+f113_L03	12	-:-		H	division sign
+f113_L03	13	4		M	tail below may be lower-row ink
+f113_L03	14	0		H	
+f113_L03	15	w		H	
+f113_L03	16	+		H	
+f113_L03	17	sq		H	
+f113_L03	18	NEW:d-shape		M	
+f113_L03	19	0		H	
+f113_L03	20	c		H	
+f113_L03	21	m		H	m with z-tail
+f113_L03	22	t		M	cross with lower bar
+f113_L03	23	v'		M	v with tall ascender stroke
+f113_L03	24	0		H	
+f113_L03	25	m		H	m with z-tail
+f113_L03	26	c		H	
+f113_L03	27	sq		M	descender below is lower-row ink
+f113_L03	28	#		H	
+f113_L03	29	a		H	alpha
+f113_L03	30	c		H	
+f113_L03	31	w		H	
+f113_L03	32	y		M	psi-like cup on stem, cross stroke faint
+f113_L03	33	L	1	M	upright with foot bar; mark above is upper-row ink
+f113_L03	34	NEW:d-shape		M	
+f113_L03	35	y		H	psi with cross stroke
+f113_L03	36	m		H	m with z-tail
+f113_L03	37	w		H	
+f113_L03	38	sq		M	square with extended top bar
+f113_L03	39	L	1	M	upright with foot bar
+f113_L03	40	NEW:d-shape		M	
+f113_L03	41	y		M	psi with cross stroke
+f113_L03	42	sq		M	open square
+f113_L03	43	0		H	descender below is lower-row ink
+f113_L03	44	c		H	
+f113_L03	45	.		H	
+f113_L03	46	1		H	
+f113_L03	47	.		H	
+f113_L03	48	v'		M	v with tall ascender
+f113_L03	49	0		H	
+f113_L03	50	NEW:d-shape		M	ascender crossed by upper-row p
+f113_L03	51	sq		H	
+f113_L03	52	v		H	
+f113_L03	53	L		H	
+f113_L03	54	0		H	
+f113_L03	55	c		H	
+f113_L03	56	4	NEW:triangle-with-ascender	M	upward triangle with stroke rising right
+f113_L03	57	v		M	large curve over it is upper-row gloss ink
+f113_L03	58	L		M	
+f113_L03	59	w		H	
+f113_L03	60	0		H	
+f113_L03	61	#		H	
+f113_L03	62	v		H	
+f113_L03	63	3		H	
+f113_L03	64	m		H	m with z-tail; after: line end
+f113_L05	1	v		H	before: line start
+f113_L05	2	f	+	M	slanted stroke with crossbar
+f113_L05	3	v'		M	v with ascender
+f113_L05	4	4		H	open triangle with flag
+f113_L05	5	x		M	x with foot stroke
+f113_L05	6	.		M	raised dot
+f113_L05	7	1		H	
+f113_L05	8	.		H	
+f113_L05	9	sq		H	
+f113_L05	10	L		H	
+f113_L05	11	NEW:d-shape		M	ascender crossed by upper-row f
+f113_L05	12	0		H	
+f113_L05	13	NEW:d-shape		H	
+f113_L05	14	c		H	
+f113_L05	15	.		H	
+f113_L05	16	1		H	
+f113_L05	17	.		H	
+f113_L05	18	sq		M	overlapped by upper-row m
+f113_L05	19	v		H	
+f113_L05	20	f	+	M	slanted stroke with crossbar
+f113_L05	21	v'		M	v with ascender, upper-row ink over it
+f113_L05	22	1		H	
+f113_L05	23	.		H	
+f113_L05	24	#		M	long verticals
+f113_L05	25	p		H	
+f113_L05	26	0	0'	M	dot above, maybe upper-row i-dot
+f113_L05	27	z		H	
+f113_L05	28	1		H	
+f113_L05	29	.		H	
+f113_L05	30	NEW:d-shape	t	M	d/delta with crossbar on ascender
+f113_L05	31	m		H	m with z-tail
+f113_L05	32	L		H	
+f113_L05	33	sq		H	
+f113_L05	34	#		H	
+f113_L05	35	p		M	loop with descender
+f113_L05	36	4		H	
+f113_L05	37	L		H	
+f113_L05	38	-:-		M	bar with dot above, lower dot faint
+f113_L05	39	0		H	
+f113_L05	40	w		H	
+f113_L05	41	1		H	
+f113_L05	42	#		H	
+f113_L05	43	0		H	
+f113_L05	44	z		H	
+f113_L05	45	1		H	
+f113_L05	46	.		H	
+f113_L05	47	w		H	
+f113_L05	48	0		H	
+f113_L05	49	f		H	slanted stroke with two bars
+f113_L05	50	3		H	
+f113_L05	51	c		H	
+f113_L05	52	1		H	
+f113_L05	53	v		H	
+f113_L05	54	#	NEW:H-shape	M	two verticals, one long bar
+f113_L05	55	0		H	
+f113_L05	56	sq		H	
+f113_L05	57	.		H	
+f113_L05	58	1		H	
+f113_L05	59	.		H	
+f113_L05	60	c		H	
+f113_L05	61	a		H	alpha
+f113_L05	62	t		M	cross with lower bar
+f113_L05	63	#	NEW:H-shape	M	two verticals with bar
+f113_L05	64	0		H	after: "Je"
+f113_L07	1	#	NEW:H-shape	M	two verticals with bar; before: "estant"
+f113_L07	2	1		H	
+f113_L07	3	sq		H	
+f113_L07	4	v'		M	v with ascender, upper-row cross over it
+f113_L07	5	0		H	
+f113_L07	6	v'		M	large v with tall left stroke
+f113_L07	7	w		M	upper-row cross over it
+f113_L07	8	y		M	psi-like cup on stem
+f113_L07	9	f	+	M	slanted stroke with crossbar
+f113_L07	10	m		H	m with z-tail
+f113_L07	11	L		H	
+f113_L07	12	0		H	dot above likely upper-row
+f113_L07	13	c		H	
+f113_L07	14	1		H	
+f113_L07	15	.		H	
+f113_L07	16	#		H	
+f113_L07	17	.		H	
+f113_L07	18	1		H	
+f113_L07	19	.		H	
+f113_L07	20	sq		H	
+f113_L07	21	#	NEW:H-shape	M	two verticals with bar
+f113_L07	22	v		H	
+f113_L07	23	w		H	
+f113_L07	24	9		M	q/9 with long tail
+f113_L07	25	.		H	
+f113_L07	26	1		H	
+f113_L07	27	.		H	
+f113_L07	28	0		H	dot above likely upper-row
+f113_L07	29	4		H	
+f113_L07	30	1		H	
+f113_L07	31	f		H	slanted with crossbar
+f113_L07	32	y		M	psi with cross stroke
+f113_L07	33	0		H	
+f113_L07	34	z		H	
+f113_L07	35	L		M	foot bar mostly to right
+f113_L07	36	0		H	
+f113_L07	37	z		H	
+f113_L07	38	NEW:d-shape		H	
+f113_L07	39	1	t	M	upright crossed by upper-row t-bar
+f113_L07	40	sq		H	
+f113_L07	41	#	NEW:H-shape	M	two verticals with bar, upper-row ink
+f113_L07	42	T	4	L	two slanted legs under a bar, crossed by upper-row stroke
+f113_L07	43	0		H	after: line end
+f113_L09	1	#		H	before: line start
+f113_L09	2	1		H	
+f113_L09	3	.		H	
+f113_L09	4	#		H	
+f113_L09	5	0		H	
+f113_L09	6	4		H	
+f113_L09	7	v'		M	v with long bar over/right; after: "et"
