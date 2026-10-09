@@ -1,0 +1,851 @@
+line	position	sign	confidence	alt	why
+f42_A01	1	b	H		agree
+f42_A01	2	fo	H		agree
+f42_A01	3	B	H		agree
+f42_A01	4	y	H		agree
+f42_A01	5	:||:	H		agree
+f42_A01	6	to	H		agree
+f42_A01	7	pq	H		agree
+f42_A01	8	d	M	B:g÷	differ
+f42_A01	9	x	H		agree
+f42_A01	10	ae	M	B:go	differ
+f42_A01	11	bo	M	B:coo	differ
+f42_A01	12	a	H		agree
+f42_A01	13	h-	H		agree
+f42_A01	14	h7	H		agree
+f42_A01	15	d'	M	B:-	gap
+f42_A01	16	den	H		agree
+f42_A01	17	mo	H		agree
+f42_A01	18	gto	H		agree
+f42_A01	19	d'	H		agree
+f42_A01	20	ze	H		agree
+f42_A01	21	dt	H		agree
+f42_A01	22	x	H		agree
+f42_A01	23	r	H		agree
+f42_A01	24	pez	H		agree
+f42_A01	25	d	M	B:g	differ
+f42_A01	26	t	H		agree
+f42_A01	27	B	H		agree
+f42_A01	28	y	H		agree
+f42_A01	29	d7	H		agree
+f42_A01	30	y	H		agree
+f42_A01	31	pez	H		agree
+f42_A01	32	H	H		agree
+f42_A02	1	q=	M	B:p÷	differ
+f42_A02	2	d	M	B:g	differ
+f42_A02	3	d'	H		agree
+f42_A02	4	g	M	B:go	differ
+f42_A02	5	V	M	B:t	differ
+f42_A02	6	B	H		agree
+f42_A02	7	V	M	B:-	gap
+f42_A02	8	8	H		agree
+f42_A02	9	bo	M	B:coo	differ
+f42_A02	10	m	H		agree
+f42_A02	11	x	H		agree
+f42_A02	12	b-	M	B:T=	differ
+f42_A02	13	pt	H		agree
+f42_A02	14	m	H		agree
+f42_A02	15	d	M	B:g÷	differ
+f42_A02	16	b-	H		agree
+f42_A02	17	a	H		agree
+f42_A02	18	b-	M	B:b	differ
+f42_A02	19	ht	H		agree
+f42_A02	20	t	M	A:-	gap
+f42_A02	21	b-	M	B:b	differ
+f42_A02	22	fa	H		agree
+f42_A02	23	x	H		agree
+f42_A02	24	q	H		agree
+f42_A02	25	h-	M	B:h	differ
+f42_A02	26	h-	H		agree
+f42_A02	27	T=	H		agree
+f42_A02	28	q	H		agree
+f42_A02	29	fo	H		agree
+f42_A02	30	d7	H		agree
+f42_A02	31	y	H		agree
+f42_A02	32	pez	H		agree
+f42_A02	33	h-	H		agree
+f42_A02	34	a	H		agree
+f42_A02	35	dio	H		agree
+f42_A02	36	d	M	B:g	differ
+f42_A02	37	ht	M	B:bt	differ
+f42_A02	38	t	H		agree
+f42_A03	1	q	H		agree
+f42_A03	2	3	H		agree
+f42_A03	3	h7	H		agree
+f42_A03	4	d	M	B:-	gap
+f42_A03	5	÷	M	B:g÷	differ
+f42_A03	6	g÷	H		agree
+f42_A03	7	e	H		agree
+f42_A03	8	:|:	H		agree
+f42_A03	9	o#	H		agree
+f42_A03	10	p÷	H		agree
+f42_A03	11	h-	M	A:-	gap
+f42_A03	12	b-	M	B:h-	differ
+f42_A03	13	b-	M	B:g	differ
+f42_A03	14	d	M	B:a	differ
+f42_A03	15	to	M	B:h-	differ
+f42_A03	16	b-	M	B:h	differ
+f42_A03	17	h-	H		agree
+f42_A03	18	h	H		agree
+f42_A03	19	+2	H		agree
+f42_A03	20	b	H		agree
+f42_A03	21	h-	H		agree
+f42_A03	22	fa	H		agree
+f42_A03	23	pt	H		agree
+f42_A03	24	x	H		agree
+f42_A03	25	to	H		agree
+f42_A03	26	:|:	H		agree
+f42_A03	27	h-	H		agree
+f42_A03	28	a	H		agree
+f42_A03	29	g	H		agree
+f42_A03	30	pez	H		agree
+f42_A03	31	gto	H		agree
+f42_A03	32	d'	H		agree
+f42_A03	33	a	H		agree
+f42_A04	1	b-	M	B:T=	differ
+f42_A04	2	b	H		agree
+f42_A04	3	coo	H		agree
+f42_A04	4	pq	H		agree
+f42_A04	5	q	H		agree
+f42_A04	6	V	H		agree
+f42_A04	7	b	H		agree
+f42_A04	8	y	H		agree
+f42_A04	9	..	H		agree
+f42_A04	10	pez	H		agree
+f42_A04	11	b	H		agree
+f42_A04	12	d	M	B:g	differ
+f42_A04	13	to	M	B:ht	differ
+f42_A04	14	pq	H		agree
+f42_A04	15	÷	M	B:to	differ
+f42_A04	16	to	H		agree
+f42_A04	17	:|:	H		agree
+f42_A04	18	h-	M	B:h	differ
+f42_A04	19	a	H		agree
+f42_A04	20	ae	M	B:ao	differ
+f42_A04	21	h-	H		agree
+f42_A04	22	H	H		agree
+f42_A04	23	den	H		agree
+f42_A04	24	y	H		agree
+f42_A04	25	÷	H		agree
+f42_A04	26	t	H		agree
+f42_A04	27	:|:	H		agree
+f42_A04	28	3	H		agree
+f42_A04	29	h-	H		agree
+f42_A04	30	d	M	B:g	differ
+f42_A04	31	x	H		agree
+f42_A05	1	d	M	B:g	differ
+f42_A05	2	z-	M	B:z	differ
+f42_A05	3	gto	H		agree
+f42_A05	4	B	M	B:d	differ
+f42_A05	5	h-	H		agree
+f42_A05	6	b	H		agree
+f42_A05	7	÷	H		agree
+f42_A05	8	d	M	B:g	differ
+f42_A05	9	ht	H		agree
+f42_A05	10	bz	H		agree
+f42_A05	11	pq	H		agree
+f42_A05	12	gto	H		agree
+f42_A05	13	h7	H		agree
+f42_A05	14	d	M	B:g	differ
+f42_A05	15	x	H		agree
+f42_A05	16	g	M	A:-	gap
+f42_A05	17	g÷	H		agree
+f42_A05	18	q=	M	B:go	differ
+f42_A05	19	h	H		agree
+f42_A05	20	t	H		agree
+f42_A05	21	bo	M	B:coo	differ
+f42_A05	22	x	H		agree
+f42_A05	23	h-	H		agree
+f42_A05	24	q	H		agree
+f42_A05	25	fo	H		agree
+f42_A05	26	B	M	B:pq	differ
+f42_A05	27	a	H		agree
+f42_A05	28	y	H		agree
+f42_A05	29	b	H		agree
+f42_A05	30	#	M	B:ht	differ
+f42_A05	31	y	H		agree
+f42_A05	32	pez	H		agree
+f42_A05	33	b	H		agree
+f42_A06	1	a	H		agree
+f42_A06	2	fo	H		agree
+f42_A06	3	fto	H		agree
+f42_A06	4	b-	M	B:h7	differ
+f42_A06	5	÷	H		agree
+f42_A06	6	3	H		agree
+f42_A06	7	q	H		agree
+f42_A06	8	b	H		agree
+f42_A06	9	g÷	H		agree
+f42_A06	10	S	H		agree
+f42_A06	11	mo	H		agree
+f42_A06	12	:|:	H		agree
+f42_A06	13	b-	H		agree
+f42_A06	14	d	M	B:g	differ
+f42_A06	15	h7	H		agree
+f42_A06	16	g	M	A:-	gap
+f42_A06	17	gto	H		agree
+f42_A06	18	gt	H		agree
+f42_A06	19	q	H		agree
+f42_A06	20	fo	H		agree
+f42_A06	21	÷	H		agree
+f42_A06	22	q=	M	B:g	differ
+f42_A06	23	+2	H		agree
+f42_A06	24	pez	H		agree
+f42_A06	25	a	H		agree
+f42_A06	26	bz	H		agree
+f42_A06	27	pez	H		agree
+f42_A06	28	b	H		agree
+f42_A06	29	coo	H		agree
+f42_A06	30	b	H		agree
+f42_A06	31	d	M	B:g	differ
+f42_A06	32	x	H		agree
+f42_A07	1	ht	M	B:pt	differ
+f42_A07	2	h7	H		agree
+f42_A07	3	÷	H		agree
+f42_A07	4	=y	M	B:g	differ
+f42_A07	5	g÷	H		agree
+f42_A07	6	h-	H		agree
+f42_A07	7	q=	M	B:go	differ
+f42_A07	8	:|:	H		agree
+f42_A07	9	#	H		agree
+f42_A07	10	p÷	H		agree
+f42_A07	11	B	M	B:pq	differ
+f42_A07	12	So	M	B:fo	differ
+f42_A07	13	e	H		agree
+f42_A07	14	x	H		agree
+f42_A07	15	y	H		agree
+f42_A07	16	to	H		agree
+f42_A07	17	B	H		agree
+f42_A07	18	3	H		agree
+f42_A07	19	:|:	H		agree
+f42_A07	20	:||:	H		agree
+f42_A07	21	h-	H		agree
+f42_A07	22	b	H		agree
+f42_A07	23	x	H		agree
+f42_A07	24	q	H		agree
+f42_A07	25	b	H		agree
+f42_A07	26	fo	H		agree
+f42_A07	27	..	H		agree
+f42_A07	28	x	H		agree
+f42_A07	29	y	H		agree
+f42_A07	30	fa	H		agree
+f42_A07	31	B	H		agree
+f42_A08	1	r	H		agree
+f42_A08	2	÷	H		agree
+f42_A08	3	..	H		agree
+f42_A08	4	h-	H		agree
+f42_A08	5	8	H		agree
+f42_A08	6	dio	H		agree
+f42_A08	7	h	H		agree
+f42_A08	8	h-	H		agree
+f42_A08	9	dio	H		agree
+f42_A08	10	ht	H		agree
+f42_A08	11	x	H		agree
+f42_A08	12	q	H		agree
+f42_A08	13	T=	H		agree
+f42_A08	14	b	H		agree
+f42_A08	15	8	M	B:g	differ
+f42_A08	16	b-	M	B:b	differ
+f42_A08	17	:|:	H		agree
+f42_A08	18	fo	H		agree
+f42_A08	19	÷	H		agree
+f42_A08	20	b-	H		agree
+f42_A08	21	V	H		agree
+f42_A08	22	x	H		agree
+f42_A08	23	h-	H		agree
+f42_A08	24	a	H		agree
+f42_A08	25	8	H		agree
+f42_A08	26	B	H		agree
+f42_A08	27	:||:	H		agree
+f42_A08	28	h-	H		agree
+f42_A08	29	b	H		agree
+f42_A08	30	q	H		agree
+f42_A08	31	to	H		agree
+f42_A08	32	÷	H		agree
+f42_A08	33	8	H		agree
+f42_A09	1	r	H		agree
+f42_A09	2	So	M	B:ao	differ
+f42_A09	3	d	M	B:g	differ
+f42_A09	4	d'	M	B:d7	differ
+f42_A09	5	B	H		agree
+f42_A09	6	g÷	H		agree
+f42_A09	7	b-	H		agree
+f42_A09	8	x	H		agree
+f42_A09	9	3	H		agree
+f42_A09	10	b	H		agree
+f42_A09	11	B	H		agree
+f42_A09	12	fo	H		agree
+f42_A09	13	h-	H		agree
+f42_A09	14	#	H		agree
+f42_A09	15	r	H		agree
+f42_A09	16	pez	H		agree
+f42_A09	17	÷	H		agree
+f42_A09	18	8	H		agree
+f42_A09	19	:|:	H		agree
+f42_A09	20	t	H		agree
+f42_A09	21	y	H		agree
+f42_A09	22	x	H		agree
+f42_A09	23	h-	H		agree
+f42_A09	24	=y	M	B:3	differ
+f42_A09	25	h	H		agree
+f42_A09	26	p÷	H		agree
+f42_A09	27	÷	H		agree
+f42_A09	28	..	H		agree
+f42_A09	29	h-	H		agree
+f42_A09	30	g	M	B:8	differ
+f42_A09	31	h-	H		agree
+f42_A09	32	T=	M	B:h-	differ
+f42_A09	33	:||:	H		agree
+f42_A10	1	a	H		agree
+f42_A10	2	3	H		agree
+f42_A10	3	h7	H		agree
+f42_A10	4	d	M	B:g	differ
+f42_A10	5	:|:	H		agree
+f42_A10	6	z	M	B:h	differ
+f42_A10	7	q	H		agree
+f42_A10	8	S	H		agree
+f42_A10	9	h-	H		agree
+f42_A10	10	x	H		agree
+f42_A10	11	dio	H		agree
+f42_A10	12	d	M	B:g	differ
+f42_A10	13	h7	H		agree
+f42_A10	14	to	H		agree
+f42_A10	15	b-	M	B:b	differ
+f42_A10	16	÷	H		agree
+f42_A10	17	So	M	B:fo	differ
+f42_A10	18	q=	M	B:g	differ
+f42_A10	19	b	H		agree
+f42_A10	20	a	H		agree
+f42_A10	21	g	M	B:-	gap
+f42_A10	22	:|:	M	B:gt	differ
+f42_A10	23	y	H		agree
+f42_A10	24	m	H		agree
+f42_A10	25	a	H		agree
+f42_A10	26	h-	H		agree
+f42_A10	27	q	H		agree
+f42_A10	28	ae	M	B:a	differ
+f42_A10	29	h-	M	B:h	differ
+f42_A10	30	÷	H		agree
+f42_A10	31	fo	H		agree
+f42_A10	32	b-	M	B:b	differ
+f42_A11	1	a	H		agree
+f42_A11	2	y	H		agree
+f42_A11	3	h7	H		agree
+f42_A11	4	q	M	A:-	gap
+f42_A11	5	go	M	B:o	differ
+f42_A11	6	a	H		agree
+f42_A11	7	y	H		agree
+f42_A11	8	:|:	H		agree
+f42_A11	9	m	H		agree
+f42_A11	10	q	H		agree
+f42_A11	11	to	H		agree
+f42_A11	12	b	H		agree
+f42_A11	13	e	H		agree
+f42_A11	14	pez	H		agree
+f42_A11	15	a	M	A:-	gap
+f42_A11	16	a	H		agree
+f42_A11	17	:|:	H		agree
+f42_A11	18	#	H		agree
+f42_A11	19	h-	H		agree
+f42_A11	20	a	H		agree
+f42_A11	21	w:siche	H		agree
+f42_A11	22	fo	H		agree
+f42_A11	23	b-	M	B:b	differ
+f42_A11	24	b	H		agree
+f42_A11	25	a	H		agree
+f42_A11	26	..	H		agree
+f42_A11	27	h-	H		agree
+f42_A11	28	d	M	B:g	differ
+f42_A11	29	fa	H		agree
+f42_A11	30	x	H		agree
+f42_A11	31	3	H		agree
+f42_A12	1	q	H		agree
+f42_A12	2	q=	M	B:go	differ
+f42_A12	3	÷	H		agree
+f42_A12	4	..	H		agree
+f42_A12	5	h-	H		agree
+f42_A12	6	fo	H		agree
+f42_A12	7	B	H		agree
+f42_A12	8	q	H		agree
+f42_A12	9	b-	M	B:h-	differ
+f42_A12	10	x	H		agree
+f42_A12	11	e	H		agree
+f42_A12	12	b	H		agree
+f42_A12	13	B	H		agree
+f42_A12	14	fo	H		agree
+f42_A12	15	h-	H		agree
+f42_A12	16	:||:	H		agree
+f42_A12	17	y	H		agree
+f42_A12	18	pez	H		agree
+f42_A12	19	÷	H		agree
+f42_A12	20	g÷	H		agree
+f42_A12	21	8	H		agree
+f42_A12	22	:|:	H		agree
+f42_A12	23	r	H		agree
+f42_A12	24	#	H		agree
+f42_A12	25	a	H		agree
+f42_A12	26	y	H		agree
+f42_A12	27	÷	H		agree
+f42_A12	28	y	H		agree
+f42_A12	29	q	M	A:-	gap
+f42_A12	30	go	M	B:o	differ
+f42_A12	31	8	H		agree
+f42_A12	32	r	H		agree
+f42_A13	1	a	H		agree
+f42_A13	2	ht	M	B:pt	differ
+f42_A13	3	pq	H		agree
+f42_A13	4	a	H		agree
+f42_A13	5	..	H		agree
+f42_A13	6	q	H		agree
+f42_A13	7	d'	H		agree
+f42_A13	8	d	M	B:-	gap
+f42_A13	9	÷	M	B:g÷	differ
+f42_A13	10	to	H		agree
+f42_A13	11	bo	H		agree
+f42_A13	12	V	H		agree
+f42_A13	13	dio	H		agree
+f42_A13	14	q	H		agree
+f42_A13	15	t	H		agree
+f42_A13	16	zo	M	B:fo	differ
+f42_A13	17	B	H		agree
+f42_A13	18	÷	H		agree
+f42_A13	19	to	H		agree
+f42_A13	20	q	H		agree
+f42_A13	21	S	H		agree
+f42_A13	22	:|:	H		agree
+f42_A13	23	t	H		agree
+f42_A13	24	a	H		agree
+f42_A13	25	d'	H		agree
+f42_A13	26	q	H		agree
+f42_A13	27	ae	M	B:x	differ
+f42_A13	28	8	H		agree
+f42_A13	29	b	H		agree
+f42_A13	30	fo	H		agree
+f42_A13	31	a	H		agree
+f42_A13	32	t	H		agree
+f42_A13	33	x	M	B:y	differ
+f42_A14	1	=y	M	B:3	differ
+f42_A14	2	to	H		agree
+f42_A14	3	÷	H		agree
+f42_A14	4	h	M	B:h-	differ
+f42_A14	5	V	H		agree
+f42_A14	6	b	H		agree
+f42_A14	7	g÷	H		agree
+f42_A14	8	h	M	B:h-	differ
+f42_A14	9	q=	M	B:T=	differ
+f42_A14	10	x	H		agree
+f42_A14	11	8	H		agree
+f42_A14	12	b	H		agree
+f42_A14	13	a	H		agree
+f42_A14	14	3	H		agree
+f42_A14	15	z-	M	B:z	differ
+f42_A14	16	V	H		agree
+f42_A14	17	h-	M	A:-	gap
+f42_A14	18	h-	H		agree
+f42_A14	19	÷	H		agree
+f42_A14	20	gto	H		agree
+f42_A14	21	b	H		agree
+f42_A14	22	h-	H		agree
+f42_A14	23	q	H		agree
+f42_A14	24	go	H		agree
+f42_A14	25	V	H		agree
+f42_A14	26	d'	M	B:8	differ
+f42_A14	27	d	M	B:g	differ
+f42_A14	28	b	H		agree
+f42_A14	29	tuny	H		agree
+f42_A14	30	fto	H		agree
+f42_A14	31	t	H		agree
+f42_A14	32	÷	H		agree
+f42_A14	33	fo	H		agree
+f42_A15	1	B	H		agree
+f42_A15	2	z-	M	B:T=	differ
+f42_A15	3	den	H		agree
+f42_A15	4	y	H		agree
+f42_A15	5	d7	H		agree
+f42_A15	6	y	H		agree
+f42_A15	7	pez	H		agree
+f42_A15	8	:|:	H		agree
+f42_A15	9	8	H		agree
+f42_A15	10	pt	H		agree
+f42_A15	11	÷	H		agree
+f42_A15	12	g÷	H		agree
+f42_A15	13	S	H		agree
+f42_A15	14	coo	H		agree
+f42_A15	15	h-	H		agree
+f42_A15	16	q	H		agree
+f42_A15	17	pq	M	B:pt	differ
+f42_A15	18	y	H		agree
+f42_A15	19	b	H		agree
+f42_A15	20	..	H		agree
+f42_A15	21	t	H		agree
+f42_A15	22	B	H		agree
+f42_A15	23	8	H		agree
+f42_A15	24	q	H		agree
+f42_A15	25	V	H		agree
+f42_A15	26	:|:	H		agree
+f42_A15	27	dio	H		agree
+f42_A15	28	to	H		agree
+f42_A15	29	8	H		agree
+f42_A15	30	d'	H		agree
+f42_A15	31	÷	H		agree
+f42_A16	1	den	H		agree
+f42_A16	2	d	M	B:-	gap
+f42_A16	3	÷	M	B:ht	differ
+f42_A16	4	fto	H		agree
+f42_A16	5	g÷	M	A:-	gap
+f42_A16	6	go	M	B:o	differ
+f42_A16	7	h-	H		agree
+f42_A16	8	÷	M	A:-	gap
+f42_A16	9	3	M	B:y	differ
+f42_A16	10	q	H		agree
+f42_A16	11	fo	H		agree
+f42_A16	12	..	H		agree
+f42_A16	13	H	H		agree
+f42_A16	14	y	H		agree
+f42_A16	15	a	H		agree
+f42_A16	16	V	M	B:q	differ
+f42_A16	17	den	H		agree
+f42_A16	18	L	H		agree
+f42_A16	19	bz	H		agree
+f42_A16	20	zo	H		agree
+f42_A16	21	h	H		agree
+f42_A16	22	q	H		agree
+f42_A16	23	o#	H		agree
+f42_A16	24	b	H		agree
+f42_A16	25	x	H		agree
+f42_A16	26	3	H		agree
+f42_A16	27	÷	H		agree
+f42_A16	28	r	H		agree
+f42_A16	29	:|:	H		agree
+f42_A16	30	V	H		agree
+f42_A16	31	coo	H		agree
+f42_A16	32	p÷	H		agree
+f42_A17	1	ze	H		agree
+f42_A17	2	to	M	B:ht	differ
+f42_A17	3	pq	H		agree
+f42_A17	4	÷	H		agree
+f42_A17	5	q=	M	B:g	differ
+f42_A17	6	V	H		agree
+f42_A17	7	h-	H		agree
+f42_A17	8	ze	H		agree
+f42_A17	9	dt	H		agree
+f42_A17	10	q	H		agree
+f42_A17	11	3	H		agree
+f42_A17	12	a	H		agree
+f42_A17	13	V	M	B:gt	differ
+f42_A17	14	b	H		agree
+f42_A17	15	x	H		agree
+f42_A17	16	fo	H		agree
+f42_A17	17	pq	H		agree
+f42_A17	18	dio	H		agree
+f42_A17	19	S	H		agree
+f42_A17	20	pez	H		agree
+f42_A17	21	e	H		agree
+f42_A17	22	ht	H		agree
+f42_A17	23	B	H		agree
+f42_A17	24	g÷	H		agree
+f42_A17	25	h-	H		agree
+f42_A17	26	dt	H		agree
+f42_A17	27	÷	M	B:-	gap
+f42_A17	28	fto	H		agree
+f42_A17	29	a	H		agree
+f42_A17	30	:||:	H		agree
+f42_A17	31	q	H		agree
+f42_A18	1	d'	H		agree
+f42_A18	2	÷	H		agree
+f42_A18	3	V	H		agree
+f42_A18	4	d'	H		agree
+f42_A18	5	d	M	B:g	differ
+f42_A18	6	a	H		agree
+f42_A18	7	fo	H		agree
+f42_A18	8	V	H		agree
+f42_A18	9	:|:	H		agree
+f42_A18	10	y	H		agree
+f42_A18	11	a	H		agree
+f42_A18	12	8	H		agree
+f42_A18	13	pez	H		agree
+f42_A18	14	a	H		agree
+f42_A18	15	..	H		agree
+f42_A18	16	d'	H		agree
+f42_A18	17	q	M	B:-	gap
+f42_A18	18	p÷	H		agree
+f42_A18	19	ze	H		agree
+f42_A18	20	q	H		agree
+f42_A18	21	V	H		agree
+f42_A18	22	÷	H		agree
+f42_A18	23	+2	H		agree
+f42_A18	24	a	H		agree
+f42_A18	25	8	H		agree
+f42_A18	26	b	H		agree
+f42_A18	27	H	H		agree
+f42_A18	28	ae	M	B:a	differ
+f42_A18	29	h-	H		agree
+f42_A18	30	g÷	H		agree
+f42_A18	31	h	H		agree
+f42_A18	32	pez	H		agree
+f42_A18	33	a	H		agree
+f42_A19	1	to	H		agree
+f42_A19	2	:|:	H		agree
+f42_A19	3	h7	M	B:pq	differ
+f42_A19	4	h-	M	B:h	differ
+f42_A19	5	B	H		agree
+f42_A19	6	g÷	H		agree
+f42_A19	7	d	M	B:g	differ
+f42_A19	8	H	H		agree
+f42_A19	9	y	H		agree
+f42_A19	10	:||:	H		agree
+f42_A19	11	pq	H		agree
+f42_A19	12	x	H		agree
+f42_A19	13	h-	H		agree
+f42_A19	14	dio	H		agree
+f42_A19	15	dt	H		agree
+f42_A19	16	d'	H		agree
+f42_A19	17	b	H		agree
+f42_A19	18	÷	H		agree
+f42_A19	19	den	H		agree
+f42_A19	20	fo	H		agree
+f42_A19	21	d7	H		agree
+f42_A19	22	r	H		agree
+f42_A19	23	x	H		agree
+f42_A19	24	d'	H		agree
+f42_A19	25	÷	H		agree
+f42_A19	26	q=	M	B:go	differ
+f42_A19	27	8	H		agree
+f42_A19	28	pt	H		agree
+f42_A19	29	:|:	H		agree
+f42_A19	30	g÷	H		agree
+f42_A20	1	r	H		agree
+f42_A20	2	H	H		agree
+f42_A20	3	8	M	B:g	differ
+f42_A20	4	y	H		agree
+f42_A20	5	a	H		agree
+f42_A20	6	..	H		agree
+f42_A20	7	t	H		agree
+f42_A20	8	p÷	H		agree
+f42_A20	9	ze	H		agree
+f42_A20	10	a	H		agree
+f42_A20	11	fo	H		agree
+f42_A20	12	÷	H		agree
+f42_A20	13	h-	H		agree
+f42_A20	14	b	H		agree
+f42_A20	15	S	M	B:8	differ
+f42_A20	16	coo	H		agree
+f42_A20	17	to	M	B:pq	differ
+f42_A20	18	a	H		agree
+f42_A20	19	V	H		agree
+f42_A20	20	÷	H		agree
+f42_A20	21	y	H		agree
+f42_A20	22	:|:	H		agree
+f42_A20	23	8	H		agree
+f42_A20	24	y	H		agree
+f42_A20	25	a	H		agree
+f42_A20	26	h	H		agree
+f42_A20	27	pez	H		agree
+f42_A20	28	q	H		agree
+f42_A20	29	g÷	H		agree
+f42_A20	30	d	M	B:g	differ
+f42_A20	31	ht	M	B:bt	differ
+f42_A21	1	z-	M	B:z	differ
+f42_A21	2	x	H		agree
+f42_A21	3	V	H		agree
+f42_A21	4	d'	H		agree
+f42_A21	5	d	M	B:g	differ
+f42_A21	6	b	H		agree
+f42_A21	7	dio	H		agree
+f42_A21	8	dt	H		agree
+f42_A21	9	d'	H		agree
+f42_A21	10	h-	H		agree
+f42_A21	11	fo	H		agree
+f42_A21	12	÷	H		agree
+f42_A21	13	q=	M	B:go	differ
+f42_A21	14	go	H		agree
+f42_A21	15	..	H		agree
+f42_A21	16	h-	H		agree
+f42_A21	17	b	H		agree
+f42_A21	18	q	H		agree
+f42_A21	19	a	H		agree
+f42_A21	20	=y	H		agree
+f42_A21	21	=y	H		agree
+f42_A21	22	..	H		agree
+f42_A21	23	t	H		agree
+f42_A21	24	ht	M	B:bt	differ
+f42_A21	25	B	H		agree
+f42_A21	26	q	M	B:V	differ
+f42_A21	27	b	H		agree
+f42_A21	28	coo	H		agree
+f42_A21	29	h-	H		agree
+f42_A21	30	So	M	B:go	differ
+f42_A22	1	to	M	B:H	differ
+f42_A22	2	z-	M	B:T=	differ
+f42_A22	3	8	H		agree
+f42_A22	4	ze	H		agree
+f42_A22	5	h-	H		agree
+f42_A22	6	3	H		agree
+f42_A22	7	÷	H		agree
+f42_A22	8	V	M	B:q	differ
+f42_A22	9	b	H		agree
+f42_A22	10	d	M	B:g	differ
+f42_A22	11	t	H		agree
+f42_A22	12	ht	H		agree
+f42_A22	13	a	H		agree
+f42_A22	14	gto	H		agree
+f42_A22	15	b	H		agree
+f42_A22	16	h-	H		agree
+f42_A22	17	a	H		agree
+f42_A22	18	V	H		agree
+f42_A22	19	bo	H		agree
+f42_A22	20	q	M	B:V	differ
+f42_A22	21	h-	H		agree
+f42_A22	22	b	H		agree
+f42_A22	23	÷	H		agree
+f42_A22	24	fo	H		agree
+f42_A22	25	8	H		agree
+f42_A22	26	x	H		agree
+f42_A22	27	h	H		agree
+f42_A22	28	zo	M	B:ze	differ
+f42_A22	29	h	H		agree
+f42_A22	30	a	H		agree
+f42_A22	31	o#	H		agree
+f42_A22	32	b	H		agree
+f42_A23	1	B	H		agree
+f42_A23	2	q	M	A:-	gap
+f42_A23	3	go	M	B:o	differ
+f42_A23	4	a	H		agree
+f42_A23	5	8	H		agree
+f42_A23	6	z-	M	B:ze	differ
+f42_A23	7	go	M	B:to	differ
+f42_A23	8	h-	H		agree
+f42_A23	9	:|:	H		agree
+f42_A23	10	..	H		agree
+f42_A23	11	b	H		agree
+f42_A23	12	mo	H		agree
+f42_A23	13	bo	M	B:-	gap
+f42_A23	14	..	H		agree
+f42_A23	15	x	H		agree
+f42_A23	16	d'	H		agree
+f42_A23	17	d'	H		agree
+f42_A23	18	pez	H		agree
+f42_A23	19	V	H		agree
+f42_A23	20	z-	M	B:ze	differ
+f42_A23	21	to	H		agree
+f42_A23	22	B	H		agree
+f42_A23	23	t	H		agree
+f42_A23	24	b-	M	B:T=	differ
+f42_A23	25	:|:	H		agree
+f42_A23	26	q	H		agree
+f42_A23	27	=y	H		agree
+f42_A23	28	g÷	H		agree
+f42_A23	29	fo	H		agree
+f42_A23	30	x	H		agree
+f42_A23	31	to	H		agree
+f42_A23	32	d'	H		agree
+f42_A24	1	d	M	B:-	gap
+f42_A24	2	B	M	B:g	differ
+f42_A24	3	dt	M	B:go	differ
+f42_A24	4	÷	M	B:d'	differ
+f42_A24	5	+2	H		agree
+f42_A24	6	a	H		agree
+f42_A24	7	3	H		agree
+f42_A24	8	pt	H		agree
+f42_A24	9	g	M	A:-	gap
+f42_A24	10	d	M	B:y	differ
+f42_A24	11	y	H		agree
+f42_A24	12	h-	H		agree
+f42_A24	13	x	H		agree
+f42_A24	14	:||:	H		agree
+f42_A24	15	b	H		agree
+f42_A24	16	B	H		agree
+f42_A24	17	q	H		agree
+f42_A24	18	e	M	B:fo	differ
+f42_A24	19	÷	H		agree
+f42_A24	20	pq	H		agree
+f42_A24	21	b	H		agree
+f42_A24	22	h7	H		agree
+f42_A24	23	V	H		agree
+f42_A24	24	pt	H		agree
+f42_A24	25	b	H		agree
+f42_A24	26	h7	M	B:go	differ
+f42_A24	27	h-	H		agree
+f42_A24	28	a	H		agree
+f42_A24	29	h	H		agree
+f42_A24	30	t	H		agree
+f42_A24	31	:|:	H		agree
+f42_A24	32	to	H		agree
+f42_A24	33	x	H		agree
+f42_A24	34	den	H		agree
+f42_A25	1	fo	H		agree
+f42_A25	2	÷	H		agree
+f42_A25	3	S	H		agree
+f42_A25	4	h-	H		agree
+f42_A25	5	b	H		agree
+f42_A25	6	q	H		agree
+f42_A25	7	8	H		agree
+f42_A25	8	T=	M	B:h-	differ
+f42_A25	9	÷	H		agree
+f42_A25	10	pq	M	B:pt	differ
+f42_A25	11	y	H		agree
+f42_A25	12	b	H		agree
+f42_A25	13	#	H		agree
+f42_A25	14	t	H		agree
+f42_A25	15	z-	M	B:ze	differ
+f42_A25	16	fo	H		agree
+f42_A25	17	So	M	B:fo	differ
+f42_A25	18	d	M	B:g	differ
+f42_A25	19	x	H		agree
+f42_A25	20	3	H		agree
+f42_A25	21	a	H		agree
+f42_A25	22	den	H		agree
+f42_A25	23	fo	H		agree
+f42_A25	24	d7	H		agree
+f42_A25	25	y	H		agree
+f42_A25	26	x	H		agree
+f42_A25	27	t	H		agree
+f42_A25	28	÷	H		agree
+f42_A25	29	q=	M	B:go	differ
+f42_A25	30	V	H		agree
+f42_A25	31	ze	H		agree
+f42_A26	1	..	H		agree
+f42_A26	2	pq	H		agree
+f42_A26	3	:|:	H		agree
+f42_A26	4	g÷	H		agree
+f42_A26	5	r	H		agree
+f42_A26	6	÷	H		agree
+f42_A26	7	8	H		agree
+f42_A26	8	y	H		agree
+f42_A26	9	q	H		agree
+f42_A26	10	h	H		agree
+f42_A26	11	pez	H		agree
+f42_A26	12	a	H		agree
+f42_A26	13	y	H		agree
+f42_A26	14	H	H		agree
+f42_A26	15	z	M	A:-	gap
+f42_A26	16	h-	M	B:h	differ
+f42_A26	17	b	H		agree
+f42_A26	18	..	H		agree
+f42_A26	19	t	H		agree
+f42_A26	20	p÷	H		agree
+f42_A26	21	T=	H		agree
+f42_A26	22	a	H		agree
+f42_A26	23	y	H		agree
+f42_A26	24	÷	H		agree
+f42_A26	25	q=	M	B:go	differ
+f42_A26	26	h	H		agree
+f42_A26	27	p÷	H		agree
+f42_A26	28	:|:	H		agree
+f42_A26	29	÷	H		agree
+f42_A26	30	g÷	H		agree
+f42_A26	31	..	H		agree
+f42_A27	1	b	H		agree
+f42_A27	2	coo	H		agree
+f42_A27	3	÷	H		agree
+f42_A27	4	a	H		agree
+f42_A27	5	=y	H		agree
+f42_A27	6	a	H		agree
+f42_A27	7	h-	H		agree
+f42_A27	8	q	H		agree
+f42_A27	9	ae	M	B:go	differ
+f42_A27	10	h-	H		agree
+f42_A27	11	÷	H		agree
+f42_A27	12	y	H		agree
+f42_A27	13	y	H		agree
+f42_A27	14	..	H		agree
+f42_A27	15	t	H		agree

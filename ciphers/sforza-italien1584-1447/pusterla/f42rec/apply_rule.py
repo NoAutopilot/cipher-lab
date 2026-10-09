@@ -5,7 +5,7 @@ output for A = ciphertext_f42_passA_opus.tsv (SFZ-P) and B = ciphertext_f42_pass
 
 Rule (rule-based, no image look): agreed columns kept; a split on a pair the f.71/f.67 reconcilers settled takes their
 majority label -- {d,g} -> g, {T=,b-} -> b-, {q,V} -> V, {h,h-} -> h-, {d,d'} -> d'; every other split and every
-one-sided gap keeps A (a column B alone wrote is dropped). Writes ../ciphertext_f42_reconciled.tsv (one row per line).
+one-sided gap keeps A (a column B alone wrote is dropped). Writes f42rec/ciphertext_f42_reconciled.tsv (one row per line), copied to ../ciphertext_f42.tsv on adoption.
 
     python3 ciphers/sforza-italien1584-1447/pusterla/f42rec/apply_rule.py [--check]
 """

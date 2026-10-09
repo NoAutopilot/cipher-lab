@@ -253,21 +253,51 @@ makes its verdict of unknown reliability). Signature group (independent check): 
 one letter from "depvsterla" (2-unit key, S3; g v -> t is still the difference). reading.txt grades: S 189, M 177, no H, no C
 (was S 188, M 178). **No reading is claimed** (cryptanalytic test output only).
 
-## Remaining gaps (SFZ-READ2, 9 Oct 2026; supersedes SFZ-NEXT's list)
-Read so far: 0 lines read as Italian; lattice decode rank 1/201 on it16dip and it15 under the 4-unit key with f.81 two readers; judge FAIL on both corpora; signature decodes "deptsterla"
-- Pusterla sign-label convention across readers - blocker: not-attempted; f.71 and f.67 reconcilers settled T=/b- opposite ways and f.81 still splits T=/b-, b/b-, n/y; f.42 single reader still writes d where f.71 writes g; next: owner sign sorter on the four slips' T=/b-/h-/d/g/y/d' shapes (focus pairs from f71/rec, f67/rec, pusterla/f81rec disagreements.tsv), then rerun g1p.py and lattice_decode.py, ~$2 plus owner time
-- second reader for key unit f.42 - blocker: not-attempted; SFZ-READ2's blind pass on the two-line crops was not usable (494 of 837 signs, rows lost); next: single-line level crops for f.42, one blind Sonnet pass, reconcile under the SFZ-READ2 rule, rerun g1p.py and lattice_decode.py, ~$2
+## S7: f.42 second reader, key re-pooled (SFZ-F42, account 4, 9 Oct 2026, 12:32-12:4x UTC by date -u)
+
+Worker SFZ-F42 (Opus; one Sonnet subagent), LANE DEFAULT-account-4-20261009-1051, brief J16. Details, prior-work output, the crop
+command and the reconciliation in `../sforza-italien1584-1447/pusterla/NOTES.md`, "Second reader on f.42, single-line crops".
+f.42 blind Sonnet pass on eye-set, slope-followed single-line crops: 81.4% agreement with SFZ-P's Opus read; reconciled under the
+SFZ-READ2 rule and adopted (G1 still PASS): **0.770 -> 0.768** (f42 0.834 -> 0.826, p95 0.410). Four key values changed of 82.
+
+**f.13 under the re-pooled key** (same lam 1.0, beam 64, 200 shuffled keys seed 13; all scripts regenerate with `--check`, exit 0):
+
+| decode | corpus | real | shuffle p95 | shuffle max | rank /201 | judge real_p05 | judge |
+|---|---|---|---|---|---|---|---|
+| lattice, f.81 two readers (S6) | it16dip | -1.120 | -1.207 | -1.148 | 1 | -0.913 | FAIL |
+| lattice, f.81 + f.42 two readers | it16dip | **-1.128** | -1.219 | -1.171 | **1** | -0.926 | FAIL |
+| lattice, f.81 two readers (S6) | it15 | -1.149 | -1.278 | -1.191 | 1 | -0.880 | FAIL |
+| lattice, f.81 + f.42 two readers | it15 | **-1.159** | -1.274 | -1.218 | **1** | -0.877 | FAIL |
+| vote top-1 (S6 -> S7) | it16dip | -1.512 -> -1.521 | -1.673 -> -1.693 | -- | 1 -> 1 | -- | -- |
+| vote top-1 (S6 -> S7) | it15 | -1.629 -> -1.644 | -1.776 -> -1.779 | -- | 1 -> 1 | -- | -- |
+
+Judge outputs (`python3 tools/judge_plaintext.py ciphers/sforza-pusterla-1447-f13/lattice{,_it15}/spec.json --file .../plain.txt`):
+
+    FAIL language: score=-1.128, null_p99=-1.754, real_p05=-0.926, real_median=-0.827, mode=both, N=362
+    FAIL language: score=-1.159, null_p99=-1.835, real_p05=-0.877, real_median=-0.784, mode=both, N=365
+
+Both lattice scores fell slightly while the shuffled-key controls fell more (margin over shuffle max: it16dip 0.028 -> 0.042, it15
+0.042 -> 0.059); rank stays 1/201 on both. The judge still FAILs on both, at 24% / 29% of the way from real_p05 to null_p99 on
+it16dip / it15 (S6: 25% / 28%); it15's fold spread 18-75% still makes its verdict of unknown reliability. Signature group
+unchanged, "deptsterla". reading.txt grades: S 173, M 193, no H, no C (was S 189, M 177: d's key value fell from C to M). The second
+f.42 reader moved nothing toward a reading: the instrument (two readers + convention rule) is now applied to every key slip it can
+reach; the remaining lever is the label convention itself (owner sorter) or more key units. **No reading is claimed**
+(cryptanalytic test output only).
+
+## Remaining gaps (SFZ-F42, 9 Oct 2026; supersedes SFZ-READ2's list)
+Read so far: 0 lines read as Italian; lattice decode rank 1/201 on it16dip and it15 under the 4-unit key with f.81 and f.42 two readers; judge FAIL on both corpora; signature decodes "deptsterla"
+- Pusterla sign-label convention across readers - blocker: not-attempted; f.71 and f.67 reconcilers settled T=/b- opposite ways; f.81 and f.42 still split T=/b-, b/b-, q=/go, n/y; next: owner sign sorter on the four slips' T=/b-/h-/d/g/y/d'/q=/go shapes (focus pairs from f71/rec, f67/rec, pusterla/f81rec, pusterla/f42rec disagreements.tsv), then rerun g1p.py and lattice_decode.py, ~$2 plus owner time
 - f.13 transcription - blocker: not-attempted; A-C err_2reader 29.6%; next: lookalike pass on the T=/b-, d/g, q/V pairs (tools/lookalike_pass.py), ~$2
-- remaining Pusterla siblings f.72, f.75, f.77 with copies f.73/f.74/f.76 - blocker: not-attempted; pairing not eye-checked; next: pair check + two passes + reconciliation per slip (this run's rate), ~$3 each
+- remaining Pusterla siblings f.72, f.75, f.77 with copies f.73/f.74/f.76 - blocker: not-attempted; pairing not eye-checked; next: pair check + two passes + reconciliation per slip, ~$3 each
 - print and novelty search on any decoded text - blocker: not-attempted; nothing reads yet; next: after a judge PASS, tools/print_check.py and a verifier session, ~$3
 - known period key - blocker: not-attempted; no period Pusterla key located yet; next: Cerioni 1970 / ASMi Sforzesco cipher registers key-hunt row, ~$2
 
-## Escalation (SFZ-READ2, 9 Oct 2026)
+## Escalation (SFZ-F42, 9 Oct 2026)
 - [x] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72, f.75, f.77 remain
 - [x] clear-pages: later-hand copies f.80, f.41, f.66 and Osio's print of f.71 used
 - [ ] known-keys: Cerioni 1970 and ASMi Sforzesco cipher registers not checked for a Pusterla 1447 key
 - [x] print: Osio III full-text searched (f.13 absent; f.71's text printed as no. CCCXCI)
-- [x] key-rebuild: key.tsv from four pairs (f.81 two readers), G1 PASS 0.770
-- [ ] image-check: f.42 second reader and label-convention sorting across the four key slips not done
+- [x] key-rebuild: key.tsv from four pairs (f.81 and f.42 two readers), G1 PASS 0.768
+- [ ] image-check: label-convention sorting across the four key slips not done (second readers done for f.81 and f.42)
 - [x] retry: lattice_decode.py under the re-pooled key on it16dip and it15, rank 1/201 both, judge FAIL both
-Verdict: keep going: 6 internal gaps; cheapest next: single-line crops and a second Sonnet reader for f.42, then rerun g1p.py and lattice_decode.py, ~$2
+Verdict: keep going: 5 internal gaps; cheapest next: lookalike pass on f.13's T=/b-, d/g, q/V pairs, ~$2

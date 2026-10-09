@@ -186,19 +186,63 @@ reconciler went T=, f.71's b-), b/b- (12), n/y (10), q/V (9), d/d' (7) -- the f8
 f.81's own d/g split (25 of 161) is now settled to g, matching f.71; f.42 (single reader) still writes d for that shape (d 3.5%,
 g 0.5%) against f.71's g 5.9% / d 1.4%.
 
-## Remaining gaps (SFZ-READ2, 9 Oct 2026; supersedes SFZ-NEXT's list)
-Read so far: 0 unglossed letters read as text; key passes G1 at 0.770 mean held-out accuracy over 4 glossed units (f.81 now two readers)
-- one sign-label convention across the four key slips - blocker: not-attempted; f.71 and f.67 reconcilers settled T=/b- opposite ways, and f.81 still splits T=/b-, b/b-, n/y; next: owner sign sorter on those shapes (focus pairs from f71/rec, f67/rec, f81rec disagreements.tsv), relabel, rerun g1p.py, ~$2 plus owner time
-- second reader for f.42 - blocker: not-attempted; SFZ-READ2's blind pass on the two-line crops lost the row mapping (494 of 837 signs), not usable; next: single-line level crops for f.42 (29 vs 30 lines settled on the debug overlay), one fresh blind Sonnet pass + reconciliation under the same rule, ~$2
+## Second reader on f.42, single-line crops (SFZ-F42, account 4, 9 Oct 2026, 12:32-12:4x UTC by date -u)
+
+Worker SFZ-F42 (Opus; one Sonnet subagent for the read) for LANE DEFAULT-account-4-20261009-1051, brief
+`.claude/briefs/runs/2026-10-09-account4-default-1051-jobs.md` J16. Prior-work step (pasted):
+`python3 tools/prior_work.py sforza-italien1584-1447 --item-spec 'shelfmark=BnF italien 1584;folio=42r;date=1447-02-14;sender=Pietro de Pusterla;recipient=Francesco Sforza' --step-type transcribe --known-answer gate:G1 --fetch`
+-> 3-tomokiyo CLEAR, 3-solver CLEAR (cached) / UNCHECKED-NET (aaymeloglu, no clone), 4-editions UNCHECKED-NET, 2-leaf KNOWN
+(f.41 later-hand clear copy, recorded 11:44) -> "exit 0: KNOWN, known-answer work for consumer gate:G1".
+
+**Crops (scratch only, never committed).** The auto line finder gives 29 bands on this leaf at any distance/prominence tried
+(55-62 / 30-60; its auto pitch 77 px against a real ~73 px), and its centres sit between lines. Settled by eye on a ruler
+render of the source: **27 cipher lines** (L01 opens "Illustris re[x]."; L27 ends in the clear "sempre me recomando..."),
+the clear "febry..." line and the cipher signature group below them; 27 matches SFZ-P's ciphertext_f42.tsv rows A01-A27.
+A fixed-y cut lost the right halves (lines slope up to +44 px across the region), so the cut follows the slope:
+
+    python3 tools/iiif_lines.py --image images/src_ark_12148_btv1b100373864_f39_4250_330_3350_2600.jpg --out <scratch>/f42d --prefix f42 --overlap 0 --max-width 1700 --centres 150,266,360,426,516,594,660,730,820,910,984,1090,1156,1240,1320,1380,1460,1540,1610,1680,1750,1830,1920,2000,2080,2160,2220 --follow-slope 300 --top-margin 12 --bottom-margin 12 --debug
+
+54 crops (27 lines x 2 halves, 1700 x 92-96 px); debug overlay and five crops (L06s2, L07s2, L16s1, L26s2, L27s1) eye-checked: the
+target line is the central row in each.
+
+**Read (1 unit).** One blind Sonnet call shown only pusterla_labels.md and the 54 crop paths: 842 signs, self-confidence ~55%
+(`ciphertext_f42_passB2_sonnet.tsv`; the failed two-line pass stays as `ciphertext_f42_passB_sonnet.tsv`). SFZ-P's single read is
+kept as `ciphertext_f42_passA_opus.tsv`. With `g ÷` joined to `g÷` in both (g1p.py's rule), `tools/reconcile_passes.py --method nw
+--keep-plain` (`f42rec/`): **agreement 692/850 = 81.4%** (f.81 76.0%, f.71 73.8%, f.67 74.3%); 158 disagreement columns. Top splits
+A (Opus) -> B (Sonnet): d -> g 21, q= -> go 7, b- -> b 6, h- -> h 5, go -> o 4, d -> gap 4, b- -> T= 3, z- -> ze/z 6.
+
+**Reconciliation (1 unit), the SFZ-READ2 rule unchanged** (`f42rec/apply_rule.py`, `--check`): agreed 692, settled by the
+f.71/f.67 convention 35, kept from A 110 (graded M), B-only columns dropped 13 -> **837 signs** (`f42rec/ciphertext_f42_reconciled.tsv`,
+now `ciphertext_f42.tsv`). Adoption rule (G1 still PASS): **met, adopted.** A first run without `--keep-plain` dropped the clear word
+`w:siche` (L11) and gave G1 0.772 (f42 0.841); it was rerun with the word kept, and only that run is reported below and on disk.
+
+**G1 (rule 3: real vs 200-shuffle control, both numbers).**
+
+| held out | before (SFZ-READ2) real / p95 | after (SFZ-F42) real / p95 | nulls |
+|---|---|---|---|
+| f81 | 0.768 / 0.420 | 0.768 / 0.407 | 192 |
+| f42 | 0.834 / 0.411 | **0.826** / 0.410 | 110 -> 111 |
+| f71 | 0.686 / 0.403 | 0.686 / 0.403 | 562 |
+| f67 | 0.792 / 0.396 | 0.794 / 0.401 | 126 |
+| mean | 0.770 PASS | **0.768 PASS** | |
+
+Key values changed (4 of 82): L f -> l, So l -> a, ae a -> q, bz e -> c; d (t) fell from C to M (34 -> 15 supporting pairs, the d -> g
+settlement moved f.42's d-shape into g: g t 65 -> 85, C), den i C -> M. All values C or M, no H (rule 4).
+f.42's d/g convention now matches f.71 and f.81 (g); T=/b-, b/b-, q=/go remain the owner-sorter pairs (`f42rec/disagreements.tsv` is a
+fourth focus list).
+
+## Remaining gaps (SFZ-F42, 9 Oct 2026; supersedes SFZ-READ2's list)
+Read so far: 0 unglossed letters read as text; key passes G1 at 0.768 mean held-out accuracy over 4 glossed units (f.81 and f.42 now two readers each)
+- one sign-label convention across the four key slips - blocker: not-attempted; f.71 and f.67 reconcilers settled T=/b- opposite ways; f.81 and f.42 still split T=/b-, b/b-, q=/go, n/y; next: owner sign sorter on those shapes (focus pairs from f71/rec, f67/rec, f81rec, f42rec disagreements.tsv), relabel, rerun g1p.py, ~$2 plus owner time
 - f.72, f.75, f.77 with copies f.73, f.74, f.76 as units 5-7 - blocker: not-attempted; pairing not eye-checked; next: pair check, two passes + reconciliation per slip, ~$3 each
 - Cerioni 1970 / ASMi cipher registers for a period Pusterla key - blocker: not-attempted; no period key located yet; next: a key-hunt row for the lane, ~$2
 
-## Escalation (SFZ-READ2, 9 Oct 2026)
+## Escalation (SFZ-F42, 9 Oct 2026)
 - [x] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72, f.75, f.77 remain
 - [x] clear-pages: later-hand copies f.80, f.41, f.66 used; Osio's print for f.71
 - [ ] known-keys: Cerioni 1970 not checked
 - [x] print: Osio III searched (f.71's text printed)
-- [x] key-rebuild: key.tsv rebuilt from 4 units (f.81 two readers), G1 PASS 0.770
-- [ ] image-check: second reader for f.42 (f.81 done) and a single label convention
-- [x] retry: G1 rerun with the reconciled f.81
-Verdict: keep going: 4 internal gaps; cheapest next: single-line level crops and a second Sonnet reader for f.42, ~$2
+- [x] key-rebuild: key.tsv rebuilt from 4 units (f.81 and f.42 two readers), G1 PASS 0.768
+- [ ] image-check: single label convention across the four slips (owner sorter); second readers done for f.81 and f.42
+- [x] retry: G1 rerun with the reconciled f.42
+Verdict: keep going: 3 internal gaps; cheapest next: f.72/f.73 pair check and two passes as unit 5, ~$3

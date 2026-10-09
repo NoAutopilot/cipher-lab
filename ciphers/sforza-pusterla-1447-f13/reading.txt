@@ -2,28 +2,28 @@
 # per line: decoded letters (signs not in key = _), then sign=value/grade
 f13_L01	rsasfleache
 f13_L01_grades	go=r/M fo=s/S ht=a/M ze=s/M S=f/M h-=l/M ÷=e/S q=a/S g÷=che/S
-f13_L02	mecoreolaartiamiclnfdnorhogsoglo
-f13_L02_grades	3=m/M :|:=e/S h=c/M p÷=o/M zo=r/M H=e/S =y=o/M So=l/M fto=a/M a=a/S t=r/S d=t/S fa=i/S q=a/S e=m/S b=i/S z=c/M So=l/M q==n/M S=f/M to=d/M y=n/M B=o/S go=r/M +2=h/M x=o/S :||:=g/S ze=s/M pq=o/M #=g/M h-=l/M pq=o/M
-f13_L03	tlaeoaemeaeilovisomotetlcooeiaea
-f13_L03_grades	d=t/S h-=l/M ae=a/M bo=e/M p÷=o/M z-=a/M :|:=e/S 3=m/M ÷=e/S a=a/S b-=e/M b=i/S h-=l/M B=o/S 8=v/S b=i/S fo=s/S x=o/S e=m/S pq=o/M gto=t/M ÷=e/S d=t/S So=l/M h=c/M pq=o/M x=o/S bo=e/M b=i/S ht=a/M h7=e/M q=a/S
+f13_L02	mecoreoaaartiamicanfdnorhogsoglo
+f13_L02_grades	3=m/M :|:=e/S h=c/M p÷=o/M zo=r/M H=e/S =y=o/M So=a/M fto=a/M a=a/S t=r/S d=t/M fa=i/S q=a/S e=m/S b=i/S z=c/M So=a/M q==n/M S=f/M to=d/M y=n/M B=o/S go=r/M +2=h/M x=o/S :||:=g/S ze=s/M pq=o/M #=g/M h-=l/M pq=o/M
+f13_L03	tlqeoaemeaeilovisomotetacooeiaea
+f13_L03_grades	d=t/M h-=l/M ae=q/M bo=e/M p÷=o/M z-=a/M :|:=e/S 3=m/M ÷=e/S a=a/S b-=e/M b=i/S h-=l/M B=o/S 8=v/M b=i/S fo=s/S x=o/S e=m/S pq=o/M gto=t/M ÷=e/S d=t/M So=a/M h=c/M pq=o/M x=o/S bo=e/M b=i/S ht=a/M h7=e/M q=a/S
 f13_L04	lofinicoremaiaeiedcgiliodaodichehac
 f13_L04_grades	h-=l/M B=o/S S=f/M dio=i/M q==n/M b=i/S h=c/M B=o/S d'=r/M :|:=e/S e=m/S ht=a/M dt=i/M q=a/S b-=e/M b=i/S ÷=e/S V=d/M o#=c/S #=g/M b=i/S h-=l/M fa=i/S x=o/S to=d/M q=a/S =y=o/M V=d/M b=i/S g÷=che/S +2=h/M a=a/S o#=c/S
 f13_L05	itleeotegoaeerenhavedomicoetmaia
-f13_L05_grades	b=i/S gto=t/M h-=l/M ÷=e/S bo=e/M B=o/S g=t/S :|:=e/S #=g/M x=o/S a=a/S b-=e/M h7=e/M zo=r/M ÷=e/S q==n/M +2=h/M q=a/S 8=v/S h7=e/M V=d/M B=o/S 3=m/M b=i/S h=c/M pez=o/S ÷=e/S pi=t/M e=m/S ht=a/M dio=i/M q=a/S
-f13_L06	ltrodialameatiloeimotegtieroelinme
-f13_L06_grades	So=l/M d=t/S t=r/S x=o/S to=d/M b=i/S ae=a/M h-=l/M q=a/S 3=m/M :|:=e/S a=a/S g=t/S b=i/S h-=l/M B=o/S b-=e/M b=i/S e=m/S pq=o/M d=t/S ÷=e/S :||:=g/S g=t/S dio=i/M T==e/M go=r/M x=o/S bo=e/M So=l/M b=i/S q==n/M 3=m/M ÷=e/S
+f13_L05_grades	b=i/S gto=t/M h-=l/M ÷=e/S bo=e/M B=o/S g=t/S :|:=e/S #=g/M x=o/S a=a/S b-=e/M h7=e/M zo=r/M ÷=e/S q==n/M +2=h/M q=a/S 8=v/M h7=e/M V=d/M B=o/S 3=m/M b=i/S h=c/M pez=o/S ÷=e/S pi=t/M e=m/S ht=a/M dio=i/M q=a/S
+f13_L06	atrodiqlameatiloeimotegtieroeainme
+f13_L06_grades	So=a/M d=t/M t=r/S x=o/S to=d/M b=i/S ae=q/M h-=l/M q=a/S 3=m/M :|:=e/S a=a/S g=t/S b=i/S h-=l/M B=o/S b-=e/M b=i/S e=m/S pq=o/M d=t/M ÷=e/S :||:=g/S g=t/S dio=i/M T==e/M go=r/M x=o/S bo=e/M So=a/M b=i/S q==n/M 3=m/M ÷=e/S
 f13_L07	pltromltrenniantsaoaaodichearlatlel
-f13_L07_grades	..=p/S h-=l/M gto=t/M zo=r/M B=o/S e=m/S h-=l/M d=t/S t=r/S :|:=e/S q==n/M y=n/M b=i/S a=a/S q==n/M g=t/S ze=s/M ht=a/M B=o/S q=a/S a=a/S =y=o/M to=d/M b=i/S g÷=che/S a=a/S t=r/S h-=l/M q=a/S gto=t/M h-=l/M ÷=e/S h-=l/M
-f13_L08	aalecepregocgddaiamadlmetagtiachem
-f13_L08_grades	q=a/S ae=a/M h-=l/M :|:=e/S o#=c/S h7=e/M ..=p/S t=r/S ÷=e/S #=g/M x=o/S h=c/M #=g/M V=d/M to=d/M coo=a/M b=i/S a=a/S e=m/S z-=a/M V=d/M h-=l/M 3=m/M ÷=e/S m=t/M q=a/S #=g/M g=t/S dio=i/M a=a/S g÷=che/S 3=m/M
-f13_L09	eaiaageilelmodosvoarenonvsoocheato
-f13_L09_grades	:|:=e/S coo=a/M b=i/S q=a/S a=a/S #=g/M b-=e/M dio=i/M h-=l/M ÷=e/S So=l/M e=m/S B=o/S V=d/M x=o/S fo=s/S 8=v/S B=o/S fto=a/M t=r/S :|:=e/S y=n/M x=o/S q==n/M 8=v/S ze=s/M B=o/S =y=o/M g÷=che/S z-=a/M d=t/S pq=o/M
-f13_L10	iodatreroeemiiepiniaslchediadlio
-f13_L10_grades	b=i/S B=o/S to=d/M a=a/S d=t/S t=r/S ÷=e/S go=r/M x=o/S :|:=e/S b-=e/M 3=m/M b=i/S dio=i/M b-=e/M ..=p/S dio=i/M r=n/M b=i/S q=a/S fo=s/S h-=l/M g÷=che/S V=d/M b=i/S coo=a/M to=d/M So=l/M b=i/S pez=o/S
+f13_L07_grades	..=p/S h-=l/M gto=t/M zo=r/M B=o/S e=m/S h-=l/M d=t/M t=r/S :|:=e/S q==n/M y=n/M b=i/S a=a/S q==n/M g=t/S ze=s/M ht=a/M B=o/S q=a/S a=a/S =y=o/M to=d/M b=i/S g÷=che/S a=a/S t=r/S h-=l/M q=a/S gto=t/M h-=l/M ÷=e/S h-=l/M
+f13_L08	aqlecepregocgddaiamadlmetagtiachem
+f13_L08_grades	q=a/S ae=q/M h-=l/M :|:=e/S o#=c/S h7=e/M ..=p/S t=r/S ÷=e/S #=g/M x=o/S h=c/M #=g/M V=d/M to=d/M coo=a/M b=i/S a=a/S e=m/S z-=a/M V=d/M h-=l/M 3=m/M ÷=e/S m=t/M q=a/S #=g/M g=t/S dio=i/M a=a/S g÷=che/S 3=m/M
+f13_L09	eaiaageileamodosvoarenonvsoocheato
+f13_L09_grades	:|:=e/S coo=a/M b=i/S q=a/S a=a/S #=g/M b-=e/M dio=i/M h-=l/M ÷=e/S So=a/M e=m/S B=o/S V=d/M x=o/S fo=s/S 8=v/M B=o/S fto=a/M t=r/S :|:=e/S y=n/M x=o/S q==n/M 8=v/M ze=s/M B=o/S =y=o/M g÷=che/S z-=a/M d=t/M pq=o/M
+f13_L10	iodatreroeemiiepiniaslchediadaio
+f13_L10_grades	b=i/S B=o/S to=d/M a=a/S d=t/M t=r/S ÷=e/S go=r/M x=o/S :|:=e/S b-=e/M 3=m/M b=i/S dio=i/M b-=e/M ..=p/S dio=i/M r=n/M b=i/S q=a/S fo=s/S h-=l/M g÷=che/S V=d/M b=i/S coo=a/M to=d/M So=a/M b=i/S pez=o/S
 f13_L11	anvslnesecaeoecheechevegninoiseaodinsl
-f13_L11_grades	a=a/S q==n/M 8=v/S ze=s/M h-=l/M y=n/M H=e/S fo=s/S ÷=e/S h=c/M a=a/S b-=e/M pt=o/M :|:=e/S g÷=che/S :|:=e/S g÷=che/S 8=v/S ÷=e/S #=g/M r=n/M b=i/S q==n/M B=o/S dio=i/M fo=s/S bo=e/M a=a/S x=o/S to=d/M b=i/S q==n/M ze=s/M h-=l/M
+f13_L11_grades	a=a/S q==n/M 8=v/M ze=s/M h-=l/M y=n/M H=e/S fo=s/S ÷=e/S h=c/M a=a/S b-=e/M pt=o/M :|:=e/S g÷=che/S :|:=e/S g÷=che/S 8=v/M ÷=e/S #=g/M r=n/M b=i/S q==n/M B=o/S dio=i/M fo=s/S bo=e/M a=a/S x=o/S to=d/M b=i/S q==n/M ze=s/M h-=l/M
 f13_L12	lnitleotticodiesiadaoro
-f13_L12_grades	h-=l/M y=n/M b=i/S g=t/S h-=l/M bo=e/M x=o/S d=t/S m=t/M b=i/S h=c/M pez=o/S V=d/M dt=i/M ÷=e/S fo=s/S b=i/S a=a/S V=d/M ht=a/M B=o/S go=r/M =y=o/M
+f13_L12_grades	h-=l/M y=n/M b=i/S g=t/S h-=l/M bo=e/M x=o/S d=t/M m=t/M b=i/S h=c/M pez=o/S V=d/M dt=i/M ÷=e/S fo=s/S b=i/S a=a/S V=d/M ht=a/M B=o/S go=r/M =y=o/M
 f13_SIG	deptsterla
-f13_SIG_grades	to=d/M :|:=e/S ..=p/S g=t/S fo=s/S d=t/S ÷=e/S t=r/S h-=l/M a=a/S
-# grades: S 189, M 177, unread 0; no H, no C (cryptanalytic result)
+f13_SIG_grades	to=d/M :|:=e/S ..=p/S g=t/S fo=s/S d=t/M ÷=e/S t=r/S h-=l/M a=a/S
+# grades: S 173, M 193, unread 0; no H, no C (cryptanalytic result)
