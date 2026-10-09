@@ -1,10 +1,10 @@
 # MQS-SORTER: a sign sorter the owner can read, that stays blind, with a measured odd-ones-first view (job B of LANE MQS)
 
 Written 9 Oct 2026 (clock read 00:58 UTC) by the account-3 orchestrator's reconciling session, for one worker on
-**account 4**. Lane brief: `.claude/briefs/runs/2026-10-09-acct3-mqs-lane.md`. Background: research note
+**account 4**; revised 9 Oct 2026 (clock read 01:26 UTC) by the check-and-fix pass. Lane brief: `.claude/briefs/runs/2026-10-09-acct3-mqs-lane.md`. Background: research note
 `research/MARY-STUART-TALK-2026-10-09.md` section (f) and matrix rows M07, M08, M09, M10, M47.
 
-- **Model:** Sonnet (`claude-sonnet-5`). **Cap:** USD 6.5. **Box:** 120 min.
+- **Model:** Sonnet (`claude-sonnet-5`). **Cap:** USD 7.5. **Box:** 130 min.
 - **Goal:** the owner's item 4, lessons from the authors' transcription GUI (CTTS; talk [00:12:45]-[00:13:41]; paper
   p.110-113, Fig. 4), without their one flaw for him: a hue per symbol type. He is red-green colour-blind and is the
   sorter's only human reader. And the sorter must stay **blind first** (TRANSCRIPTION.md: the person sorting is never
@@ -23,12 +23,25 @@ Written 9 Oct 2026 (clock read 00:58 UTC) by the account-3 orchestrator's reconc
 - What fails today (recomputed 9 Oct with scikit-image CIEDE2000 after the Machado 2009 simulation): `--ok #2f6b3a` vs
   `--bad #b3261e` 11.3 (deutan) and 8.7 (protan); `--accent` vs `--bad` 2.7-9.3. The cut editor draws the box, its
   handles and the erased-ink rim in red #b3261e (`drawEdit`, template lines ~1200-1215). The hint text names colours
-  ("Click the orange ?", "The red x", line ~258). Boxing is machine-only (the person cannot add or split a box; out of
-  scope here, a later SORTER-BOX job).
+  ("Click the orange ?", "The red x", line ~258); `sign_sorter.py`'s `--refs` docstring (line 44) and the no.87 page's
+  `--lede` (`ciphers/nevers-birago-fr3251-1572/sorter/no87/build.sh` line 12, "tiles with a green check are the ones you
+  sorted") direct the reader by colour too. Boxing is machine-only (the person cannot add or split a box; out of scope
+  here, a later SORTER-BOX job, which the lane close queues).
+- **The default page is not blind today.** `rank_from_lattice` (sign_sorter.py lines ~317-321) captions every "Most
+  useful first" tile `T45 (top-1) or T24 (decode)?` with a detail line `~N letters change; reader weight NN% on T24`;
+  `--rank-confusion` and `--focus` captions name the machine's alternative pile too, and the no.87 build.sh `--focus-note`
+  calls it "the computer's pick". A decode choice, a top-1 label and a reader weight are machine guesses shown to the
+  sorter (TRANSCRIPTION.md, blind first).
+- **The owner's sort accuracy was measured once, value-blind:** BIR-ADJ's image adjudication sided with the owner on 98
+  of 108 disputed tiles (nevers-birago NOTES.md ~2430-2446; one instrument, every move graded M). BIR-OWNERSORT's ledgered
+  lesson (LEDGER.md line 2543): score an owner's new piles as unknown, never as the parent family (`ownersort.py
+  --new-piles-unknown`).
 
 ## Files
 
-`tools/sign_sorter.py`, `tools/sign_sorter/template.html`, `tools/sign_sorter_apply.py`, `tools/sorter_preflight.py`;
+`tools/sign_sorter.py`, `tools/sign_sorter/template.html`, `tools/sign_sorter_apply.py`, `tools/sorter_preflight.py`,
+`tools/data/sorter_families.tsv` (added: one row per key family, its open blind sorts and when a non-blind page or sheet
+for it was first shown);
 tests `tools/tests/test_sign_sorter_cvd.py`, `tools/tests/test_sign_sorter_blind.py` (added) and the existing
 `test_sign_sorter.py`, `test_sign_sorter_apply.py`, `test_sorter_preflight.py` (extended, never weakened);
 `tools/tests/PREREG-MQS-SORTER.md`; rows in `tools/data/tool_shelf.tsv` and `SYSTEM.md`. **Read-only:**
@@ -38,34 +51,49 @@ are never published by you: the account-3 parent publishes.
 
 ## Units (stop before a unit that would cross 80% of cap or box)
 
-| # | Unit | Estimate |
-|---|---|---|
-| 1 | Blind-first default, the declared non-blind mode, the `mode` export column + tests | USD 1.0 |
-| 2 | Pile sorting by size / mark category (blind-safe) and by value (non-blind only) | 0.6 |
-| 3 | `--oddness-audit` + PREREG + the planted-mislabel control | 0.9 |
-| 4 | Score the owner's no.87 sort with `tx_bench.py` against BENCHMARK-TX | 0.4 |
-| 5 | Palette, cut editor, hint text, per-pile box patterns, `sorter_preflight.py --cvd` + tests (after the MQS-SHEETS "step 1 pushed" ROOM line) | 1.6 |
-| 6 | Rebuild the Birago no.87 sorter in scratch, preflight PASS, one screenshot read (1 vision call) | 0.5 |
-| 7 | Registration | 0.4 |
-| | Total 5.4; cap 6.5 | |
+Minutes are planning estimates, about 80% of the box split by each unit's dollar share (nearest measured rows: the
+TOOLS-TOMO single-option Opus jobs of 8 Oct 2026, 11-18 min and USD 3.75-5.11 each, LEDGER.md lines 3548-3552).
+
+| # | Unit | USD | Min |
+|---|---|---|---|
+| 1 | Blind-first default (captions stripped), the declared non-blind mode with its key-family guard, `sorter_families.tsv`, the `mode` export column + tests | 1.3 | 22 |
+| 2 | Pile sorting by size / mark category (blind-safe) and by value (non-blind only) | 0.6 | 10 |
+| 3 | `--oddness-audit` + PREREG + the planted-mislabel control | 0.9 | 16 |
+| 4 | PREREG the label-map rule, then score the owner's no.87 sort with `tx_bench.py` against BENCHMARK-TX | 0.5 | 9 |
+| 5 | Palette, cut editor, hint text, per-pile box patterns, `sorter_preflight.py --cvd` + tests (after the MQS-SHEETS "step 1 pushed" ROOM line) | 1.8 | 30 |
+| 6 | Rebuild the Birago no.87 sorter in scratch, preflight PASS, one screenshot read (1 vision call) | 0.5 | 9 |
+| 7 | Registration | 0.4 | 8 |
+| | Total 6.0 of cap 7.5; 104 of box 130 | | |
 
 Units 1-4 do not need `tools/cvd_check.py`; do them first. If the MQS-SHEETS line has not appeared when you reach
 unit 5, wait up to 20 minutes (one ROOM check every 5), then write a ROOM flag and stop at unit 4 with a report.
 
 ## Unit 1: blind first
 
-- The default page shows **no key values and no machine value guesses**: no value text, no capitals mapping, no group
-  by value. (Ranking which tiles to ask first, `--rank-lattice`, stays as it is: an order, not a displayed value.)
-  Test `test_sign_sorter_blind.py`: build a page with key and top-k inputs present and assert that none of the key's
-  value strings appear in the page's visible text or display data.
-- A declared non-blind mode, `sign_sorter.py --show-values KEY --blind-sort DB_EXPORT`: refused (non-zero exit, a
-  message naming TRANSCRIPTION.md) unless `--blind-sort` names a saved blind export for the same tiles. The page header
-  then says "Non-blind view: values shown; decisions here are not transcription evidence". In that mode only: values
+- The default page shows **no key values and no machine guesses**: no value text, no capitals mapping, no group by
+  value, and no caption or detail that names a decode choice, a top-1 label or a reader weight. The rank order
+  (`--rank-lattice`, `--rank-confusion`, `--focus`) stays: it is an order, not a displayed value. In blind mode each
+  ranked tile is captioned "Which pile?" with its candidate piles in a seeded random order, never marked "(decode)" or
+  "(top-1)", never with a percentage; a `--focus-note` that calls a placement "the computer's pick" is replaced by a
+  neutral note. A shape-only seed placement (nearest pile by image distance, no key or decode input) is allowed and the
+  page says so; exports already keep seed (`kept`) apart from `moved`.
+- Test `test_sign_sorter_blind.py`, on a fixture key whose values are unique sentinel strings (`QZV01` ... `QZV40`) and
+  a top-k / lattice file with sentinel labels: (1) no sentinel appears anywhere in the HTML or its embedded DATA;
+  (2) no `(decode)`, `top-1` or `reader weight` string appears; (3) no per-tile `value`, `alt`, `why` or `detail` field
+  holds a key-derived string. Must not block: pile ids (shape cluster names) and the rank order itself.
+- A declared non-blind mode, `sign_sorter.py --show-values KEY --key-family NAME --blind-sort DB_EXPORT`: refused
+  (non-zero exit, a message naming TRANSCRIPTION.md) unless `--blind-sort` names a saved blind export for the same tiles
+  **and** `tools/data/sorter_families.tsv` lists no open or unsaved blind sort in the same key family (not only on the
+  same tiles). Seed the register with the Birago 1572 family's open sorts: ASKS.md row 118 and the two unnumbered Birago
+  sorter rows of 2 Oct (f.168 / no.85) and 3 Oct (f.117r). A non-blind page or sheet shown for a family sets that row's
+  `nonblind_shown` date; every export from a later session on that family carries `mode=keyed`. The page header in
+  that mode says "Non-blind view: values shown; decisions here are not transcription evidence". In that mode only: values
   in CAPITALS when the owner set them or the key confirms, lower case for machine and top-k guesses, `_` prefix for
   nulls, `?` for unknown (the same mapping as `decode_key.py --style case`, matrix M10); a "Group by value" view with I/J
   and U/V merged, as a working form of the paper's homophone strip (Fig. 8, p.119).
-- `sign_sorter_apply.py` writes a `mode` column (`blind` or `keyed`) on every exported row, read from the page's data.
-  Its docstring and a test say a `keyed` row is never used as BENCHMARK-TX evidence or adjudication evidence.
+- `sign_sorter_apply.py` writes a `mode` column (`blind` or `keyed`) on every exported row, read from the page's data
+  and from `sorter_families.tsv` (keyed when the family's `nonblind_shown` date is before the sort's start). Its
+  docstring and a test say a `keyed` row is never used as BENCHMARK-TX evidence or adjudication evidence.
 
 ## Unit 2: sorting piles (CTTS habit)
 
@@ -91,37 +119,61 @@ README's tip (segment about 500 symbols, then classify in bulk, category by cate
 ## Unit 4: score the owner's no.87 sort
 
 The owner sorted 248 no.87 tiles on 4 Oct (`ciphers/nevers-birago-fr3251-1572/sorter/no87/owner-sort-2026-10-04/settled_no87.tsv`;
-BIR87-ALIGN gave his piles 0.848 clerk-sheet agreement vs shuffled 0.338, the committed machine labels 0.896).
-TRANSCRIPTION.md says each owner session is scored against BENCHMARK-TX where an item exists, and no.87 is the eval
-item. Run `python3 tools/tx_bench.py` on his labels with `--label-map` (owner pile -> value, from BIR87-ALIGN's C values
-per pile, `harvest/bir87align/`) and `--paired` against the committed machine labels on the same positions; report
-err_true with its interval for both and the paired fixed/broken counts. Set the `sign_sorter.py` shelf grade from that
-(the shelf's own definitions; "owner labels are one strong reader, not ground truth"). If the mapping cannot be built
-honestly, say so and leave the grade `untested`.
+BIR87-ALIGN gave his piles 0.848 clerk-sheet agreement vs shuffled 0.338, the committed machine labels 0.896). The 4 Oct
+page placed every tile by a machine nearest-pile seed and the owner moved some of them (`sorter/no87/README.md`), so this
+scores owner corrections on a machine seed, not an independent blind read. TRANSCRIPTION.md says each owner session is
+scored against BENCHMARK-TX where an item exists, and no.87 is the eval item.
+- **The label map must not come from the clerk sheet.** BIR87-ALIGN's per-pile C values were fitted by aligning the
+  owner's piles to the no.87 clerk sheet, which is BENCHMARK-TX's no.87 truth, so a map taken from them would score a
+  fit against its own truth. Rule, written into `PREREG-MQS-SORTER.md` before the score runs: a **family pile** (a plain
+  sign id, T45) takes that sign's value in the printed 1572 key (`harvest/key_1572_sheet.tsv`); an **owner-made new
+  pile** (a suffixed name such as T60-c or T24-b, or X_NEW-*) is **unknown** (`?`), the `--new-piles-unknown` semantics
+  of BIR-OWNERSORT (LEDGER.md line 2543); a pile whose family has no key value is reported unmapped, never filled from
+  the alignment. (BIR87-ALIGN found every C pile's value equal to its family's printed value, so the rule loses nothing
+  on the C piles.)
+- Run `python3 tools/tx_bench.py` on his labels with that `--label-map` and `--paired` against the committed machine
+  labels on the same positions; report err_true with its interval for both, and the paired fixed/broken counts
+  **separately for tiles the owner moved and tiles he left in their machine-seeded pile**.
+- Set the `sign_sorter.py` shelf grade from that non-circular score (the shelf's own definitions; "owner labels are one
+  strong reader, not ground truth"), with BIR-ADJ's 98 of 108 cited as supporting evidence, and word the evidence "owner
+  corrections on a machine seed, scored against BENCHMARK-TX", never as a blind reader's err_true. If the mapping cannot
+  be built by the rule, say so and leave the grade `untested`.
 
 ## Unit 5: the palette (research note section f; after the MQS-SHEETS line)
 
 - Light tokens from `cvd_check.PALETTES['sorter_light']`: `--ok` blue #0072B2 (check chip, solid border); `--bad` dark
   orange #B35900 (cross chip, dashed border; never a text colour on #f3f1ec, where it reaches 4.28:1); `--warn` a yellow
   #F0E442 tint as fill only, with a '!' chip and a dotted ink border; `--accent` ink #24211c with a double border; grey
-  #767676 for muted marks. Dark tokens from `PALETTES['dark']`: ok #56B4E9, bad #E69F00, ink #ece6dc. Text stays ink.
+  #767676 for muted marks. Dark tokens from `PALETTES['dark']`: ok #56B4E9, bad #E69F00, ink #ece6dc. Text stays ink,
+  **except on a tint, where it is dark ink in both themes** (#24211c light, #1b1916 dark: 12-13:1 on yellow, 7-7.6:1 on
+  sky); the dark theme's light ink on those tints gives only 1.07:1 and 1.86:1, so a dark block that leaves text light on
+  a tint fails the check.
 - The cut editor: no red. Box outline dark orange dashed over a white under-stroke; erased-ink rim dotted ink; handles
   blue squares and circles with white borders (shape tells edge from corner).
-- Hint text names glyphs, never colours ("Click the ? badge", "The x on a sign").
+- Person-facing text names glyphs, never colours ("Click the ? badge", "The x on a sign"): hints, help, the lede, the
+  focus note, ref captions and the `--refs` docstring line ("shown with a green check" becomes "shown with a check").
 - Boxes on the page and region views: each pile's boxes take blue, dark orange or grey crossed with a fill pattern
   (solid, hatch, dots) and carry the pile's short ID (labels on by default), so no two neighbouring piles differ by hue
-  alone; a "show only this pile" filter; the selection outline a thick black-and-white double dashed line.
+  alone; a "show only this pile" filter; the selection outline a thick black-and-white double dashed line. **Every box
+  drawn over a manuscript image gets a white or ink under-stroke**: on a parchment-coloured page (e.g. #d9c7a0) dark
+  orange reaches only 2.91:1 and grey 2.73:1, below the 3:1 mark gate.
 - `sorter_preflight.py --cvd` (and run by default as a fifth check): parse the template's `:root` tokens (light and
-  both dark blocks) and the box palette, run `cvd_check`, and fail on any pair under the gate or any colour word
-  ("red", "green", "orange") in hint text. Tests `test_sign_sorter_cvd.py`: the legacy tokens FAIL (must catch); the
-  updated template PASSES; a template with a red/green pair FAILS; a hint naming "red" FAILS; must not block: the word
-  "green" in a non-hint string (a pile name, a data value) passes.
+  both dark blocks, with each tint's text colour) and the box palette, run `cvd_check`, and also check box colours
+  against the median colour of each page image in `pages.json`, not only against the page background token. Fail on any
+  pair under the gate, any tint whose text is under 4.5:1, or any colour word matched **on word boundaries**
+  (`\bred\b`, `\bgreen\b`, `\borange\b`) in **every person-facing string**: hints, help, lede, focus note, ref
+  captions. Pile names and data values are exempt. Tests `test_sign_sorter_cvd.py`: the legacy tokens FAIL (must catch);
+  the updated template PASSES; a template with a red/green pair FAILS; a dark block with light text on the yellow tint
+  FAILS; a hint naming "red" FAILS; a lede saying "a green check" FAILS; a box colour under 3:1 against a parchment page
+  median FAILS; must not block: "ordered", "required" and "entered" in a hint pass, and "green" in a pile name or a data
+  value passes.
 
 ## Unit 6: rebuild for the owner's eye
 
-Rebuild the Birago no.87 sorter page with `sh ciphers/nevers-birago-fr3251-1572/sorter/no87/build.sh <your scratch>/birago-no87-cvd.html`
-(read-only use of that folder; if the script writes into the folder, copy its steps with outputs to scratch), beside
-the existing page, never over the owner's sort. Run `sorter_preflight.py` (PASS required) and read one screenshot.
+Rebuild the Birago no.87 sorter page in your scratchpad from the steps of
+`ciphers/nevers-birago-fr3251-1572/sorter/no87/build.sh` (read-only use of that folder: copy its steps with outputs to
+scratch), in **blind mode**, with a corrected `--lede` passed as an argument (no colour words: "tiles with a check are
+the ones you sorted") and a neutral `--focus-note`; never edit the owner's folder, never over the owner's sort. Run `sorter_preflight.py` (PASS required) and read one screenshot.
 Put this ASKS.md text in your report (the parent appends it with the link once it publishes the page): "Colour check of
 the sign sorter (MQS-SORTER, 9 Oct 2026): open <link>. Can you tell done / to do / not a letter / bad cut apart without
 reading the chips? yes/no". The owner's answer, not the simulation, is the final test.
@@ -130,13 +182,17 @@ reading the chips? yes/no". The owner's answer, not the simulation, is the final
 
 - tool_shelf rows: `sign_sorter.py --oddness-audit` (instrument; grade from unit 3), the `sign_sorter.py` row's
   evidence and grade from unit 4, `sorter_preflight.py --cvd` (gate).
-- SYSTEM.md: name `--oddness-audit`, `--show-values` and `--cvd` on their tools' rows.
+- SYSTEM.md: name `--oddness-audit`, `--show-values` and `--cvd` on their tools' rows, and `tools/data/sorter_families.tsv`
+  where registers are listed (same commit).
 - CLAUDE.md Usage 8 line (for the orchestrator): "The sign sorter shows no key values or machine guesses by default
-  (TRANSCRIPTION.md, blind first); `sign_sorter.py --show-values` is a declared non-blind mode available only after a
-  blind sort is saved, and its exports carry mode=keyed, never transcription evidence. `sorter_preflight.py` fails any
+  (TRANSCRIPTION.md, blind first: no value, decode choice, top-1 label or reader weight on the page); `sign_sorter.py
+  --show-values` is a declared non-blind mode available only after a blind sort is saved and while no blind sort in the
+  same key family is open (`tools/data/sorter_families.tsv`), and its exports carry mode=keyed, never transcription
+  evidence. `sorter_preflight.py` fails any
   sorter page whose colours fail `tools/cvd_check.py` or whose hints name a colour (MQS-SORTER, 9 Oct 2026)."
-- README common-tail line: "A sorter page is built blind (no values shown); a non-blind page is declared on the page and
-  its decisions are never used as transcription evidence."
+- README common-tail line: "A sorter page is built blind (no values, decode choices or reader weights shown); a non-blind
+  page is declared on the page, never built while a blind sort in the same key family is open, and its decisions are
+  never used as transcription evidence."
 
 ## Common rules (every MQS job; read in full before the first command)
 
