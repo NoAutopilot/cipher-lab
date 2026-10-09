@@ -8374,3 +8374,122 @@ no filed ID; 5813 and 5815 (Porter traffic 1-3 Dec, several printed in ORN I/11)
 Books (429), New York Herald 14-16 Dec page by page.
 Requests: hdl.huntington.org 8 (CONTENTdm, 3.2 s apart, under take/release); archive.org 2 (ORN I/11 djvu, advancedsearch); be-api about 29 (>=1.8 s
 apart); loc.gov about 46 (searches + page JSON + OCR, 2-2.5 s apart; one 503, not retried); googleapis 2 (429, stopped).
+
+## AUDIT 2 (AUD2-LEDGER-16)
+
+Second verifier AUD2-LEDGER-16 (account 4, for orchestrator (account-4); the row moved from account 3), 9 Oct 2026, 05:09-05:4x UTC by
+`date -u`; a separate session from the reader FM-R4b and the first auditor FV-FM7b (both account 1), not protecting either's conclusions.
+This session read and audited none of these items before. Scope: **E260, E262, E263** (E261 and E266 are N1, not for second audit).
+Nothing decoded; key values looked up in key.md only. Key source for all three: `period`. Depth keep-or-lower
+(.claude/briefs/runs/2026-10-08-acct3-depth-bar.md). No spec, so `judge_plaintext.py` not run. Scripts: `fortmonroe/aud2_ledger16_hdl.py`
+(+ `.out`; a second batch of 8 queries run inline, output in `fortmonroe/aud2_ledger16_hdl2.out`), `fortmonroe/aud2_ledger16_or.py` (+ `.out`;
+OR djvu texts I/42 pt 3 `warofrebellion423unit`, I/40 pt 2 `402unit`, I/36 pt 3 `363unit` fetched once to scratch).
+
+### Prior-work checks 3-5
+- **Duplicate diff:** pointers 5787, 5741, 5812 against every `###` header in ciphertext*.txt and status.json: 5787 also carries E172 (row
+  5787/2, another telegram), as FV-FM7b found; 5741 and 5812 only in their own headers. No duplicate. **The second entry on 5812** (Ingalls to
+  Eckert "for Belcher", 29 Nov 1864, "I have directed all Weaselers toby sent to grapes toby in readiness to bring back t[he] ...") is not
+  filed under any ID and is printed in clear: see E263 below.
+- `prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<ptr>' --step-type second-audit --offline` for 5787, 5741,
+  5812: exit 4 each, holds = the LANE LEDGER orchestrator's target-level live claim (closed 04:55, covers no unit), UNCHECKED-NET aaymeloglu
+  (no clone), UNCHECKED editions (no correspondent in items.tsv; done by hand below); Tomokiyo and cached solver files CLEAR.
+- `prior_work.py ... --reading <decoded body> --network` (G3, OR ser. I vols 32-49 and the cached editions): E260 one LEAD, 'be sent to City
+  Point' in OR I/36 pt 2, I/37 pt 2, I/40 pt 3, I/43 pt 2 (all outside +-3 days, a stock phrase): dismissed; the per-item request cap
+  stopped it before vols. 38-49 (UNCHECKED-NET; vol. 42 pt 3 read by window below, vols. 40 and 42 by phrase in FV-FM7b). E262: one near
+  LEAD, 'James would it not be' in I/36 pt 3, outside +-3 days: dismissed; vols. 32-41 CLEAR, 42-49 capped. E263: OR vols. 32-48 CLEAR,
+  **including I/42 pt 3 (`warofrebellion423unit`), which prints the same-day companion at p. 739 (below): the phrase gate cannot see a
+  sibling telegram in other words** -- a must-catch kind for tools/prior_work.py (named to the orchestrator, not changed here). IA global
+  and Google Books: UNCHECKED-NET for all three (request cap).
+- **Huntington CONTENTdm full text, all pointers** (p16003coll11, CISOSEARCHALL, suppressfulltext=1; hdl token 05:13-05:16 UTC, 26 queries,
+  3.2 s apart), on clear-word pairs FV-FM7b did not use:
+  E260: hudson+ingalls 1 (5787 Oct 4 entry only), hudson+steamer 5 (all other: Port Hudson 1863, Capt. Hudson 1865, 13753 "Steamer City of
+  Hudson passed up" Point Lookout 18 Jan [1865]), "such orders were received" 13 (5787 only relevant), webster+comply 3 (5787; 5854 Jan 1865;
+  5738 = Biggs 11 June 1864, other), water+transportation+destitute 0, obrien+ingalls 1 (5658, other), hudson alone 79 (Beckwith/Halleck
+  cipher traffic where Hudson is a code word; 5796 Oct 17 "hudson wharf"; none a copy of E260), ingalls+steamer+ordered+report 1 (7681, Jan
+  1865, other), "almost destitute" 3 (5787; others 1862/1864 other).
+  E262: homan+cable 4 (5707, 5713 context as FV-FM7b; 11895 other), "short notice"+material 2 (5735 O'Brien's own earlier traffic, other),
+  cable+appomattox 1 (5741 only), arriving+considerable 7 (none a copy), "none on hand"+cable 1, "side of the james" 34 (none a copy),
+  troops+arriving+numbers 2, cable+james+obrien 2 (13407 other).
+  E263: "empty steamers" 2 (8568, 10532 other), estimates+buildings 1 (5812 only), "fast as they arrive" 12 (5804 Sheldon 4 Nov, other),
+  howell+ingalls 4 (5849, 5853, 9928 Jan 1865: Howell at City Point with S. H. Beckwith, other), bradley+steamers+washington 0, "bring down
+  troops" 4 (none relevant), howell+steamers 0, material+buildings+erection 1 (5812), sixth corps+steamers+washington 0.
+  **No clear copy of E260, E262 or E263 in the holder's transcription.** Context found: 5787's 4 Oct entry (Webster, via Sheldon, to Eckert
+  for Rucker: sends Perit, Belvidere, ..., Lyon, Hudson, Star ... and asks that they report back to Fort Monroe "after performing the service
+  you require") -- the City of Hudson had gone north for Washington service the day before E260.
+- **OR, read by date window** (`aud2_ledger16_or.out`: every letter in the window touching Ingalls, Webster, Hudson, Bradley, Howell,
+  steamers, transportation, quartermaster, telegraph, cable, Sixth Corps):
+  - E260, OR I/42 pt 3 Union correspondence 4-6 Oct 1864 (pp. 64-102): no Ingalls, Webster or Hudson telegram; nothing on the City of
+    Hudson or Fort Monroe water transportation.
+  - **E263, OR I/42 pt 3 28-30 Nov 1864 (pp. 723-766): p. 739, "Fortress Monroe, Va., November 29, 1864 -- 4 p. m. (Received 4.25 p. m.)
+    General M. C. Meigs, Quartermaster-General: I have directed all steamers to be sent to Washington to be in readiness to bring back the
+    Sixth Corps. Please give corresponding orders. The troops should embark immediately on arrival with artillery. The wagon trains can be
+    embarked afterward at leisure. RUFUS INGALLS, Brigadier-General and Chief Quartermaster."** This is the printed clear text of the
+    second, unfiled entry on 5812 (same sender, same day, "for Belcher" = the QMG), not of E263; but it prints the substance of E263's first
+    sentence (Ingalls sending all steamers to Washington for the troops, here named as the Sixth Corps). FV-FM7b's phrase grep missed it
+    because E263 says "empty steamers ... bring down troops". Also p. 750 (Grant to Meade, 30 Nov: one Sixth Corps division leaves for
+    Washington to embark), pp. 725-726 (Grant to Halleck 28 Nov 6.30 p.m., as FV-FM7b).
+  - E262: 12 June 1864 falls in OR I/36 pt 3 (correspondence 20 May-12 June; I/40 pt 2 starts 13 June -- FV-FM7b's safe sentence cites only
+    vol. 40 pt 2, corrected below). Window 11-12 June read: no O'Brien telegram, nothing on cable for the James or the Appomattox. Context only:
+    p. 756, Sheldon to Butler, Fort Monroe 11 June: "material ready for extension of telegraph from Jamestown Island ... to the Appomattox";
+    the 134th and 163rd Ohio arriving and reporting the same day; p. 770 (Bermuda, 12 June) Biggs calling for all tugs and steamers.
+- **Grant Papers:** vol. 12 (`papersofulyssess0012gran`, be-api) "City of Hudson" 0, Hudson+Ingalls 0; vol. 11 cable+Appomattox 1 (other
+  telegrams; route control: the term is found). **Vol. 13 (16 Nov 1864-20 Feb 1865, E263): unreachable** -- not an IA item (IA identifier
+  sweep: vols 1-12, 14-18 and an undated 0000unse, which be-api shows is not vol. 13); scholarsjunction.msstate.edu lists it
+  (`usg-volumes/31`, `viewcontent.cgi?article=1030`) but the PDF answers a Cloudflare "Just a moment" 403 to curl and to the browser tool
+  (5 requests on the PDF, stopped).
+- **Press:** Chronicling America (loc.gov JSON) "city of hudson" 1-31 Oct 1864: 0 (control "fortress monroe", same window: 275). None of the
+  three is a press telegram.
+- Google Books: not probed (account-3 workers saw 429 all night; the FV-FM7b probe this morning also 429).
+
+### Readings and grades (key.md look-ups; no decoding)
+- **E260:** Eugenia = 9.30 AM, plaster = 5, Knox = Butler, Shelby/Shelter = General, wrangle = Telegraph, white = Report, zodiac/zebra =
+  period, black = City Point, sugar = interrogation, whig = Transportation, optic = At the, paradise = Colonel, Vinton = Quartermaster: all
+  as reading.md, **H 16, M 1 (winton) agreed**. "perm repaired" stays unread (the holder's volunteer transcription has the same two words;
+  two independent transcriptions agree). A hypothesis only, not a reading: "[to report to him] perm[anently when] repaired" would fit the
+  4 Oct entry (the steamer away on service); not graded.
+- **E262:** Bergen = James x2, spit = Men, Knox = Butler, zodiac/zebra/unity = periods, **Whiskey = Whisky = Troops** (key p.24 l.7, as
+  FV-FM7b): H 8 of 8 agreed. reading.md still prints "Whiskey" and "hoe man" (the FIX job FV-FM7b named has not run). The ciphertext.txt
+  header's gloss "rebels(?) arriving" is wrong on the key: **troops** (Union; the OR context is new regiments reaching Bermuda Hundred).
+- **E263:** Animal = Monroe, Jennie = 3.30 PM, princess = Captain, John = Grant, snake = Head Quarters, Blubber = City Point, pandora =
+  Colonel, Weasel = Steam, grapes = Washington, Whist = Troops, stagger = Light, Walrus = Signature, palsy = Brigadier General, Vincent =
+  Quartermaster: **H 17 of 17 agreed**. The printed companion (p. 739) independently confirms Weasel = steam(ers), grapes = Washington and
+  Whist = troops in the same sender's same-day traffic.
+
+### Classification (key `period`)
+| ID | first audit | second audit | depth | basis |
+|---|---|---|---|---|
+| **E260** | N3 D2 | **N3 held** | **D2 kept**, 94.1 | no clear copy (26 new holder queries), OR I/42 pt 3 4-6 Oct read by window, Grant Papers vol. 12, Chronicling America: nothing |
+| **E262** | N3 weak D2 | **N3 (weak) held** | **D2 kept**, 100 | no clear copy; OR I/36 pt 3 11-12 June (the right volume) read: context only (Sheldon 11 June on telegraph extension to the Appomattox) |
+| **E263** | N3 D3 | **N3 (weak)** -- lowered within N3 | **D3 kept**, 100 | OR I/42 pt 3 p. 739 prints Ingalls's same-day telegram to Meigs ordering all steamers to Washington for the Sixth Corps: the order's substance is in print; E263's own text (to Howell, for Col. Bradley; empty steamers sent as they become light; estimates for buildings under erection) is not. Not N2: the printed text is another telegram, and E263's plaintext is not located. Grant Papers vol. 13 unreachable |
+
+- **E260 safe sentence:** "Read at grade H with War Department Cipher No. 1: on 5 Oct 1864 Fort Monroe asked General Butler, through R. O'Brien
+  at his headquarters, whether to obey General Ingalls's claim that the steamer City of Hudson had been ordered to report to him and to send
+  her to City Point, Fort Monroe being almost destitute of water transportation; signed R. C. Webster, Colonel and Quartermaster. Not located
+  in the Official Records (ser. I vol. 42 pt 3, read for 4-6 Oct 1864; vols. 40 and 42 by phrase), the Grant Papers vol. 12, the press
+  (Chronicling America, Oct 1864) or the Huntington's full-text search (searched 9 Oct 2026)." Unsafe: any novelty word.
+- **E262 safe sentence:** "Read at grade H with Cipher No. 1: on 12 June 1864 R. O'Brien at General Butler's headquarters told Major Eckert that
+  troops were arriving in considerable numbers, that everything pointed to work on this side of the James, and asked for men and material at
+  short notice, cable for the James (Butler also wanting one for the Appomattox) and the operator Homan. Not located in the Official Records
+  (ser. I vol. 36 pt 3, read for 11-12 June 1864; vol. 40 pt 2 by phrase), Butler's correspondence or the Huntington's full-text search
+  (searched 9 Oct 2026); most words are plain in the Huntington's public transcription." Unsafe: "rebels arriving"; a named corps.
+- **E263 safe sentence:** "Read at grade H with Cipher No. 1: on 29 Nov 1864 Brig. Gen. Rufus Ingalls, telegraphing from Fort Monroe to Capt.
+  William T. Howell at Grant's headquarters, ordered Colonel Bradley to send all empty steamers to Washington to bring down troops as fast as
+  they unloaded, and asked for estimates of the material still needed for buildings under construction. Ingalls's same-day telegram to
+  Quartermaster General Meigs ordering all steamers to Washington for the Sixth Corps is printed in the Official Records (ser. I vol. 42 pt 3,
+  p. 739); this telegram to Howell was not located there, in the Grant Papers vols. 10-12 or in the Huntington's full-text search (searched
+  9 Oct 2026; Grant Papers vol. 13 unreachable)." Unsafe: any novelty word; "the order is unknown"; omitting the p. 739 companion.
+  Depth sentence kept: "On 29 Nov 1864 Ingalls had the City Point depot quartermaster send every empty steamer to Washington to fetch
+  troops." (true; the OR p. 739 companion says the troops were the Sixth Corps).
+
+### Postmortem
+FV-FM7b's audit holds on readings and grades for all three. Two corrections: (1) E263's "Not located in the Official Records (ser. I vol. 42
+pt 3, by phrase)" was true of E263's words but hid that the same sender's same-day telegram carrying the same order is printed at p. 739 --
+the class falls to N3 (weak) and the safe sentence now names the print; FV-FM7b had read the sibling 5812 entry as an internal witness
+without testing it against the OR, where a phrase grep on E263's own words ("empty steamers", "bring down") could not find it. The lesson is
+the FV-FM5c one carried one step further: test the **sibling entries' clear words**, not only the entry's own, against the print. (2) E262's
+OR citation named vol. 40 pt 2, which starts on 13 June; 12 June is in vol. 36 pt 3 (read here). For a FIX job (not applied here): E262
+`variant: whiskey=Whisky`, hoe man = Homan, ciphertext.txt header "rebels(?)" -> troops; FV-FM7b's other corrections stand. For the lane:
+the unfiled second entry on 5812 is N1 if ever filed (OR I/42 pt 3 p. 739). status.json E260/E262/E263 rows: audit_status "two audits",
+safe lines and gaps updated; E263 grade "N3 (weak)". SO rows E260/E262/E263 already queued; their prompts updated (E263: the p. 739 companion; E260, E262: the windows read).
+Requests: hdl.huntington.org 26; archive.org 4 (3 djvu, 1 metadata) + advancedsearch 2 + be-api 4; scholarsjunction.msstate.edu 8 (listing,
+2 volume-page URLs, PDF by curl 1, browser tool 2, browser context 2: all PDF attempts 403); loc.gov 2; Google Books 0. Time 05:09-05:4x UTC.

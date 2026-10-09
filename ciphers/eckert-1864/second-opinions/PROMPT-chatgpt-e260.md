@@ -12,10 +12,10 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM7b)").
 
-WHERE WE HAVE LOOKED: Official Records ser. I vols. 40 pt 2-3 and 42 pts 2-3 (full text, by phrase and name); Butler's Private and Official Correspondence vols. III-V; Grant Papers vols. 10-12 (snippet search); the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: Official Records ser. I vols. 40 pt 2-3 and 42 pts 2-3 (full text, by phrase and name; vol. 42 pt 3 every letter of 4-6 Oct 1864); Chronicling America, Oct 1864; Butler's Private and Official Correspondence vols. III-V; Grant Papers vols. 10-12 (snippet search); the Huntington's CONTENTdm full-text search.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- Official Records ser. I vol. 42 pt 3 page by page for 4-6 Oct 1864 (Ingalls, Webster, Rucker on transports); Quartermaster General's records (RG 92) on the steamer City of Hudson; Google Books; HathiTrust; JSTOR.
+- Quartermaster General's records (RG 92) on the steamer City of Hudson; Google Books; HathiTrust; JSTOR.
 
 
 HOW TO REPORT (this part is the same for every label)

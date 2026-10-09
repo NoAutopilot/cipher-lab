@@ -12,7 +12,7 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM7b)").
 
-WHERE WE HAVE LOOKED: Official Records ser. I vol. 40 pt 2 and vol. 36 pt 3 (full text, by phrase); Butler's Private and Official Correspondence vols. III-V; the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: Official Records ser. I vol. 40 pt 2 and vol. 36 pt 3 (full text, by phrase; vol. 36 pt 3 every letter of 11-12 June 1864); Butler's Private and Official Correspondence vols. III-V; the Huntington's CONTENTdm full-text search.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
 - Plum, The Military Telegraph during the Civil War (1882) and Bates, Lincoln in the Telegraph Office, on cable for the James in June 1864; the U.S. Military Telegraph reports; Google Books; HathiTrust; JSTOR.

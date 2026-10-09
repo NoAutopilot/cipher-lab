@@ -9353,9 +9353,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM7b)'"
+        "AUDIT.md '## AUDIT (FV-FM7b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-16)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM7b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9375,8 +9376,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon to R. O'Brien for Butler, 5 Oct 1864, Ingalls claims the steamer City of Hudson; Fort Monroe almost destitute of water transportation, signed R. C. Webster (E260)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 5 Oct 1864 Fort Monroe asked General Butler, through R. O'Brien at his headquarters, whether to obey General Ingalls's claim that the steamer City of Hudson had been ordered to report to him and to send her to City Point, Fort Monroe being almost destitute of water transportation; signed R. C. Webster, Colonel and Quartermaster. Not located in the Official Records (ser. I vols. 40 and 42, by phrase), Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3: OR I/42 pt 3 not read page by page for 5 Oct; 'perm repaired' unread (image as transcribed); winton = Vinton M",
+      "line": "Read at grade H with War Department Cipher No. 1: on 5 Oct 1864 Fort Monroe asked General Butler, through R. O'Brien at his headquarters, whether to obey General Ingalls's claim that the steamer City of Hudson had been ordered to report to him and to send her to City Point, Fort Monroe being almost destitute of water transportation; signed R. C. Webster, Colonel and Quartermaster. Not located in the Official Records (ser. I vol. 42 pt 3, read for 4-6 Oct 1864; vols. 40 and 42 by phrase), the Grant Papers vol. 12, the press (Chronicling America, Oct 1864) or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3: second audit AUD2-LEDGER-16 (account 4) 9 Oct 2026 held N3 D2 (26 more holder full-text queries, no clear copy; OR I/42 pt 3 every letter of 4-6 Oct; Grant Papers vol. 12; Chronicling America Oct 1864); 'perm repaired' unread (two transcriptions agree); winton = Vinton M; RG 92 and Google Books unread",
       "depth": "D2",
       "completeness": "16 H of 17 code-word groups (winton M; 'perm repaired' unread, plain)",
       "phrases": [
@@ -9394,9 +9395,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM7b)'"
+        "AUDIT.md '## AUDIT (FV-FM7b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-16)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM7b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9416,8 +9418,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): R. O'Brien (Butler's Hd Qrs) to Maj. Eckert, 12 June 1864, troops arriving in numbers, cable wanted for the James and the Appomattox (E262)",
-      "line": "Read at grade H with Cipher No. 1: on 12 June 1864 R. O'Brien at General Butler's headquarters told Major Eckert that troops were arriving in considerable numbers, that everything pointed to work on this side of the James, and asked for men and material at short notice, cable for the James (Butler also wanting one for the Appomattox) and the operator Homan. Not located in the Official Records (ser. I vol. 40 pt 2, by phrase), Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 (weak): most words are plain in the holder's public transcription; 'Whiskey' = [Troops] and 'hoe man' = Homan await a FIX job (AUDIT FV-FM7b s.3)",
+      "line": "Read at grade H with Cipher No. 1: on 12 June 1864 R. O'Brien at General Butler's headquarters told Major Eckert that troops were arriving in considerable numbers, that everything pointed to work on this side of the James, and asked for men and material at short notice, cable for the James (Butler also wanting one for the Appomattox) and the operator Homan. Not located in the Official Records (ser. I vol. 36 pt 3, read for 11-12 June 1864; vol. 40 pt 2 by phrase), Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026); most words are plain in the Huntington's public transcription.",
+      "gap": "N3 (weak): most words are plain in the holder's public transcription; second audit AUD2-LEDGER-16 (account 4) 9 Oct 2026 held N3 (weak) D2 (no clear copy; OR I/36 pt 3, the volume that holds 12 June, read for 11-12 June: context only); 'Whiskey' = [Troops] and 'hoe man' = Homan, and the ciphertext header's 'rebels(?)' -> troops, await a FIX job",
       "depth": "D2",
       "completeness": "8 H of 8 code-word groups (Whiskey = Whisky = Troops)",
       "phrases": [
@@ -9435,9 +9437,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM7b)'"
+        "AUDIT.md '## AUDIT (FV-FM7b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-16)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM7b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9457,8 +9460,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Rufus Ingalls via Fort Monroe to Capt. W. T. Howell, Grant's Hd Qrs, 29 Nov 1864, Col. Bradley to send all empty steamers to Washington for troops (E263)",
-      "line": "Read at grade H with Cipher No. 1: on 29 Nov 1864 Brig. Gen. Rufus Ingalls, telegraphing from Fort Monroe to Capt. William T. Howell at Grant's headquarters, ordered Colonel Bradley to send all empty steamers to Washington to bring down troops as fast as they unloaded, and asked for estimates of the material still needed for buildings under construction. Not located in the Official Records (ser. I vol. 42 pt 3, by phrase), the Grant Papers vols. 10-12 or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3: Grant Papers vol. 13 not an IA item; OR I/42 pt 3 read by phrase, not page by page for 29 Nov",
+      "line": "Read at grade H with Cipher No. 1: on 29 Nov 1864 Brig. Gen. Rufus Ingalls, telegraphing from Fort Monroe to Capt. William T. Howell at Grant's headquarters, ordered Colonel Bradley to send all empty steamers to Washington to bring down troops as fast as they unloaded, and asked for estimates of the material still needed for buildings under construction. Ingalls's same-day telegram to Quartermaster General Meigs ordering all steamers to Washington for the Sixth Corps is printed in the Official Records (ser. I vol. 42 pt 3, p. 739); this telegram to Howell was not located there, in the Grant Papers vols. 10-12 or in the Huntington's full-text search (searched 9 Oct 2026; Grant Papers vol. 13 unreachable).",
+      "gap": "N3 (weak): second audit AUD2-LEDGER-16 (account 4) 9 Oct 2026 lowered N3 to N3 (weak), D3 kept: OR I/42 pt 3 p. 739 prints Ingalls to Meigs, Fortress Monroe 29 Nov 1864 4 p.m. (the unfiled second entry on 5812), ordering all steamers to Washington for the Sixth Corps -- the order's substance is in print, this telegram's own text is not; Grant Papers vol. 13 unreachable (scholarsjunction PDF Cloudflare 403; not an IA item)",
       "depth": "D3",
       "completeness": "17 H of 17 code-word groups",
       "phrases": [
@@ -9469,7 +9472,7 @@
         "Huntington mssEC 25 (obj 5952) p.268, pointer 5812, E263"
       ],
       "depth_sentence": "On 29 Nov 1864 Ingalls had the City Point depot quartermaster send every empty steamer to Washington to fetch troops.",
-      "depth_check": "code clause: Weasel = Steam (C by holder clear copy 10267 of 5630), Grapes = Washington, Whist = Troops passim; external (non-statistical): OR I/42 pt 3 S.O. No. 120 (City Point, 5 Nov 1864) makes Lt Col G. W. Bradley depot quartermaster at City Point under Ingalls; Grant to Halleck 28 Nov 1864 on moving the Sixth Corps infantry first; sibling entry on 5812 the same day",
+      "depth_check": "code clause: Weasel = Steam (C by holder clear copy 10267 of 5630), Grapes = Washington, Whist = Troops passim; external (non-statistical): OR I/42 pt 3 S.O. No. 120 (City Point, 5 Nov 1864) makes Lt Col G. W. Bradley depot quartermaster at City Point under Ingalls; Grant to Halleck 28 Nov 1864 on moving the Sixth Corps infantry first; sibling entry on 5812 the same day; OR I/42 pt 3 p. 739 (Ingalls to Meigs the same day, printed) confirms steamers/Washington/troops (AUD2-LEDGER-16)",
       "depth_note": "17 H of 17 code-word groups"
     },
     {
