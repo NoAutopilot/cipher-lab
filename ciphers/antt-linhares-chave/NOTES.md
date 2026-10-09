@@ -1719,3 +1719,20 @@ advancedsearch (title query, 34 candidate items, 1 request), then `be-api.us.arc
   unchanged. Requests: archive.org advancedsearch 1; be-api about 68 (including 31 discarded OR-query calls and control tests); no other host; no 429.
 - Next (print step, still open): "Strangford" and "Sousa Coutinho" families on the same items with a positive control each; metadata fetch to map
   the Google scans to volume years; ~$1.
+
+## LIN-BFSP2 (9 Oct 2026): British and Foreign State Papers, Strangford and Couttinho families (print step remainder)
+
+Prior-work (tools/prior_work.py lookup, exit 4): the two LEADs were the LIN-BFSP claim (earlier family, "Linhares") and this job's own claim; neither covers
+these families. 3-tomokiyo/3-solver/4-editions UNCHECKED (no folio-keyed unit). Route and rules as LIN-BFSP: be-api fts, one term per query, one item per call,
+>= 1.7 s apart. Results per item in `bfsp_sweep2.tsv` (beside `bfsp_sweep.tsv`).
+- Controls (item britishandforei05offigoog, 1810 treaties): "Strangford" 1 (passed); "Couttinho" 1 (passed); quoted "Sousa Coutinho" 0 and "Sousa Couttinho" unquoted 1
+  on the same item -- the OCR breaks and respells the name ("Cout- tinho", "Couttinho"), so the "Sousa Coutinho" family FAILED its control and was not run;
+  "Couttinho" stands in for it. "Coutinho" alone: two 502s on its control, not run. "Linhàres" not run (budget).
+- Strangford: 31 items other than the control item: 25 no-hit, 2 hit, 4 unsearched (502 twice: britishandforei10offigoog, britishforeignst4018grea,
+  bub_gb_XJ40AQAAMAAJ_2, bub_gb_pyIgAAAAMAAJ). Hits: britishandforei01offigoog (snippets: "Constantinople, le 25 Octobre, 1823. STRANGFORD" -- a treaty signature) and
+  generalindextob00hertgoog ("Note of Viscount Strangford to the Reis Effendi, Negotiation between ... Russia"). Neither concerns 1808-1812 Linhares/Strangford correspondence.
+- Couttinho: 31 items: 22 no-hit, 0 hit, 9 unsearched (502 twice; listed in the TSV). Together with the control item, 23 answered.
+- Not done: the metadata fetch mapping the Google scans to volume/years (request budget spent, see below); a no-hit is item-level, from an OCR index with 502 gaps
+  (13 item x family cells unsearched), so it says nothing about a letter-by-letter date match. A search result for the log, never a novelty verdict (rule 10).
+- Requests: archive.org be-api about 100 (including retries after 502 and control tests), over the brief's 90 by about 10; advancedsearch 0; no 429.
+- Next (if kept): retry the 13 unsearched cells later; metadata fetch (1 advancedsearch request); ~$0.5.
