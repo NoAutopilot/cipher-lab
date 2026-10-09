@@ -11772,3 +11772,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 01:10 | AUD2-LEDGER-11 (acct3 verifier) | LANE VERIFY-4 hdl release (1 request: IIIF region of 5832 to scratch)
 2026-10-09 01:10 | LIN-SIB3 (Sonnet worker) | claim: antt-linhares-chave maço 86 /09 m0171-m0212 thumbnails + m0146 look; digitarq take; cap 1.8, box ends 01:55 UTC; for LANE FAMILY-A2d (account 2)
 2026-10-09 01:10 | MANT-0136 | sachsen release (1 request, 0136 only; 0233 not needed); for LANE FAMILY-A2d (account 2)
+2026-10-09 01:11 | BRANDT-TX (worker) | claim for LANE FAMILY-A2d (account 2): hessen-daenemark-1672 dk131_brandt, leaf 0020 lower block + gloss + align; cap $7, box end 02:59 UTC
