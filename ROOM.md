@@ -11962,3 +11962,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 04:23 | FV-FM7a verifier (Opus) | LANE LEDGER hdl take (<=20 requests: CONTENTdm CISOSEARCHALL + 3 IIIF pages 5781 5789 5752); for LANE LEDGER (account 1)
 2026-10-09 04:21 | MANT-EYE63R worker (Opus) | sachsen take (one GET, 694/09 0063), for LANE FAMILY-A2f (account 2)
 2026-10-09 04:22 | MANT-EYE63R worker (Opus) | sachsen release (1 GET done), for LANE FAMILY-A2f (account 2)
+2026-10-09 04:23 | standby (owner account) | alive; holder account 3, last line 02:03 (session commits to 03:47)
