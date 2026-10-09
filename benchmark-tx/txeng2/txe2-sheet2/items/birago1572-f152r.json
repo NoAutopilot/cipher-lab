@@ -1,0 +1,42 @@
+{
+ "item": "birago1572-f152r",
+ "truth_for_ref": "benchmark-tx/birago1572-f152r.truth.tsv",
+ "lines": {
+  "f152r_L01": [
+   "benchmark-tx/txeng2/f152r/crops/f152r_L01_s1.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L01_s2.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L01_s3.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L01_s4.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L01_s5.jpg"
+  ],
+  "f152r_L02": [
+   "benchmark-tx/txeng2/f152r/crops/f152r_L02_s1.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L02_s2.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L02_s3.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L02_s4.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L02_s5.jpg"
+  ],
+  "f152r_L03": [
+   "benchmark-tx/txeng2/f152r/crops/f152r_L03_s1.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L03_s2.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L03_s3.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L03_s4.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L03_s5.jpg"
+  ],
+  "f152r_L04": [
+   "benchmark-tx/txeng2/f152r/crops/f152r_L04_s1.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L04_s2.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L04_s3.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L04_s4.jpg",
+   "benchmark-tx/txeng2/f152r/crops/f152r_L04_s5.jpg"
+  ]
+ },
+ "skeleton_pass": "benchmark-tx/outputs/birago1572-f152r/passA.tsv",
+ "passes": [
+  "benchmark-tx/outputs/birago1572-f152r/passA.tsv",
+  "benchmark-tx/outputs/birago1572-f152r/passB.tsv"
+ ],
+ "line_prefix": null,
+ "label_map": null,
+ "band": null
+}

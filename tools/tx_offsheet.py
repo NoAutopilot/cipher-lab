@@ -440,9 +440,11 @@ def grow(cfg, rows, F, base_cells, thr=0.9, min_size=3, out_png=None, out_tsv=No
 
 
 # ---------------------------------------------------------------- recall (scoring)
-def recall(cfg, det_rows, base):
+def recall(cfg, det_rows, base, exclude_flagged=False):
     lm = tb.load_label_map(cfg['label_map']) if cfg.get('label_map') else None
     T = tb.read_tsv(cfg['truth_for_ref'])
+    if exclude_flagged:  # verifier-flagged truth rows counted as excluded (tx_bench --exclude-flagged convention)
+        T = tb.drop_flagged(T)
     if lm:
         T = tb.map_truth(T, lm)
     o = tb.load_output([base], prefix=cfg.get('line_prefix'))
@@ -452,7 +454,11 @@ def recall(cfg, det_rows, base):
     fl = {(r['line'], str(r['pos'])) for r in det_rows if int(r['flagged'])}
     tiled = {(r['line'], str(r['pos'])) for r in det_rows}
     errs = [k for k, v in eb.items() if v]
-    return dict(item=cfg['item'], errors=len(errs), caught=sum(1 for k in errs if k in fl),
+    rfl = {(r['line'], str(r['pos'])) for r in det_rows if int(r['flagged']) and int(r.get('reader_flag') or 0)}
+    return dict(item=cfg['item'], exclude_flagged=bool(exclude_flagged), errors=len(errs),
+                caught=sum(1 for k in errs if k in fl),
+                caught_reader_flag=sum(1 for k in errs if k in rfl),
+                caught_score_only=sum(1 for k in errs if k in fl and k not in rfl),
                 errors_untiled=sum(1 for k in errs if k not in tiled), tiled=len(tiled), flagged=len(fl),
                 share_tiled=round(len(fl) / max(1, len(tiled)), 3), scored=len(eb),
                 flagged_scored=sum(1 for k in eb if k in fl),
@@ -470,6 +476,8 @@ def main(argv=None):
     g.add_argument('--png', required=True); g.add_argument('--tsv', required=True)
     r = sub.add_parser('recall'); r.add_argument('config'); r.add_argument('--det', required=True)
     r.add_argument('--base', required=True)
+    r.add_argument('--exclude-flagged', action='store_true',
+                   help='drop verifier-flagged truth rows (tx_bench convention); report beside the as-measured run')
     args = ap.parse_args(argv)
     if args.cmd == 'detect':
         cfg = json.load(open(args.config))
@@ -488,7 +496,7 @@ def main(argv=None):
         print('grown cells: %d (%s)' % (len(out), ', '.join('%s n=%d' % (c['cell'], c['size']) for c in out)))
     else:
         cfg = json.load(open(args.config))
-        print(json.dumps(recall(cfg, tb.read_tsv(args.det), args.base)))
+        print(json.dumps(recall(cfg, tb.read_tsv(args.det), args.base, args.exclude_flagged)))
 
 
 if __name__ == '__main__':

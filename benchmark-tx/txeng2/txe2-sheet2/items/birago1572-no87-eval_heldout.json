@@ -1,0 +1,84 @@
+{
+ "item": "birago1572-no87-eval_heldout",
+ "truth_for_ref": "benchmark-tx/birago1572-no87.truth.tsv",
+ "lines": {
+  "f178v_L13": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L13_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L13_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L13_s3.jpg"
+  ],
+  "f178v_L14": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L14_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L14_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L14_s3.jpg"
+  ],
+  "f178v_L15": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L15_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L15_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L15_s3.jpg"
+  ],
+  "f178v_L16": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L16_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L16_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L16_s3.jpg"
+  ],
+  "f178v_L17": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L17_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L17_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L17_s3.jpg"
+  ],
+  "f178v_L18": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L18_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L18_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L18_s3.jpg"
+  ],
+  "f178v_L19": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L19_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L19_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L19_s3.jpg"
+  ],
+  "f178v_L20": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L20_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L20_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L20_s3.jpg"
+  ],
+  "f178v_L21": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L21_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L21_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L21_s3.jpg"
+  ],
+  "f178v_L22": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L22_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L22_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L22_s3.jpg"
+  ],
+  "f178v_L23": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L23_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L23_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L23_s3.jpg"
+  ],
+  "f179r_L01": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f179r/f179r_L01_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f179r/f179r_L01_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f179r/f179r_L01_s3.jpg"
+  ],
+  "f179r_L02": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f179r/f179r_L02_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f179r/f179r_L02_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f179r/f179r_L02_s3.jpg"
+  ],
+  "f179r_L03": [
+   "ciphers/nevers-birago-fr3251-1572/harvest/f179r/f179r_L03_s1.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f179r/f179r_L03_s2.jpg",
+   "ciphers/nevers-birago-fr3251-1572/harvest/f179r/f179r_L03_s3.jpg"
+  ]
+ },
+ "skeleton_pass": "benchmark-tx/outputs/birago1572-no87/passA.tsv",
+ "passes": [
+  "benchmark-tx/outputs/birago1572-no87/passA.tsv",
+  "benchmark-tx/outputs/birago1572-no87/passB.tsv"
+ ],
+ "line_prefix": null,
+ "label_map": null,
+ "band": null
+}

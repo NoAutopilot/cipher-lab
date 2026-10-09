@@ -53,6 +53,18 @@ def main():
     assert len(fl) <= int(0.15 * len(rows)), len(fl)
     cells_out = T.grow(cfg, rows, F, cells, thr=0.9, min_size=1)
     assert cells_out and all(c['cell'].startswith('NEW_') for c in cells_out)
+    # recall: baseline = the skeleton read; truth disagrees at the planted X and at pos 2 (pos 2 verifier-flagged)
+    truth2 = os.path.join(tmp, 'truth2.tsv')
+    with open(truth2, 'w') as f:
+        f.write('line\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n')
+        for k, s in enumerate(seq):
+            tv = 'Z' if k in (planted, 1) else s
+            f.write('syn_L01\t%d\t%s\t%s\tx\tscored\t%s\n' % (k + 1, s, tv, 'align-conflict' if k == 1 else ''))
+    cfg2 = dict(cfg, truth_for_ref=truth2)
+    r1 = T.recall(cfg2, rows, passes[0])
+    assert r1['errors'] == 2 and r1['caught'] >= 1 and r1['caught_score_only'] >= 1, r1
+    r2 = T.recall(cfg2, rows, passes[0], exclude_flagged=True)
+    assert r2['errors'] == 1 and r2['exclude_flagged'], r2
     print('test_tx_offsheet: ALL PASS')
 
 

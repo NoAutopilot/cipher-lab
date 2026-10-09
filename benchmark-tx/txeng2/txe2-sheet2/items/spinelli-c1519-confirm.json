@@ -1,0 +1,54 @@
+{
+ "item": "spinelli-c1519-confirm",
+ "truth_for_ref": "benchmark-tx/spinelli-c1519-confirm.truth.tsv",
+ "lines": {
+  "p1c_L01": [
+   "benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg"
+  ],
+  "p1c_L02": [
+   "benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg"
+  ],
+  "p1c_L03": [
+   "benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg"
+  ],
+  "p1c_L04": [
+   "benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg"
+  ],
+  "p1c_L05": [
+   "benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg"
+  ],
+  "p1c_L06": [
+   "benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg"
+  ],
+  "p1c_L07": [
+   "benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg"
+  ],
+  "p1c_L08": [
+   "benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg"
+  ],
+  "p2c_L01": [
+   "benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg"
+  ],
+  "p2c_L02": [
+   "benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg",
+   "benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg"
+  ]
+ },
+ "skeleton_pass": "benchmark-tx/outputs/spinelli-c1519-confirm/passA_txeq.tsv",
+ "passes": [
+  "benchmark-tx/outputs/spinelli-c1519-confirm/passA_txeq.tsv",
+  "benchmark-tx/outputs/spinelli-c1519-confirm/passB_txeq.tsv"
+ ],
+ "line_prefix": null,
+ "label_map": "benchmark-tx/txeng/confirm/collapse_map.tsv",
+ "band": null
+}
