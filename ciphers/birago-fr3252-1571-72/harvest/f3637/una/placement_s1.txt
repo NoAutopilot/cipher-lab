@@ -1,0 +1,1 @@
+changed rows k=20; pool 30 open rule-pair rows; passD_v3 -1.3799; passD_v4 (real) -1.3754; draws n=500 median -1.3818 p95 -1.3672 max -1.3563; p = 121/500 = 0.242

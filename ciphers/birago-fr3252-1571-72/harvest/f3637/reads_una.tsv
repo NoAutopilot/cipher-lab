@@ -1,0 +1,36 @@
+tile	id	line	pos	cands	role	feature_seen	rule	rule_label	applied	note
+4	K3	v36top_L01	18	S69|X_THETA2	K+T	oval crossed by two bars	R-bar	X_THETA2	yes	known answer (gloss r, M) correct; also a split row
+6	K4	v36top_L02	2	S88|S24	K	slanted stem across two horizontals	R-hash	S88	-	known answer (gloss t) correct
+7	K6	v36top_L03	18	S65|S80	K	plain 8, no bar	R-8	S65	-	known answer (gloss et) correct
+10	K2	v36top_L01	5	S80|S65	K	bar through the waist past both sides	R-8	S80	-	known answer (gloss a, C) correct
+27	K1	v36top_L01	3	X_THETA2|S69	K	oval crossed by two bars	R-bar	X_THETA2	-	known answer (gloss r, C) correct
+28	K5	v36top_L03	2	S88|S24	K+T	upright stem across two horizontals	R-hash	S24	no	known answer (gloss t -> S88) WRONG; split row left as is (shape and gloss disagree)
+3	r36_L01.6	r36_L01	6	S80|S65	T	bar through the waist past both sides	R-8	S80	yes
+5	r36_L03.37	r36_L03	37	S80|S65	T	bar through the waist past both sides (8 right of '=' = pos 36 S89)	R-8	S80	yes
+19	r36_L02.37	r36_L02	37	S80|S65	T	the 8 sits at the right edge; the theta's bar runs into it, right side cut	R-8	UNDECIDED	no	edge
+24	r36_L08.8	r36_L08	8	S80|S65	T	the 8 sits at the right edge; the theta's bar runs into it, right side cut	R-8	UNDECIDED	no	edge
+1	v36top_L02.37	v36top_L02	37	S24|S88	T	no hash at the centre (y 261 between lines)	R-hash	UNDECIDED	no	mislocated
+23	v36top_L02.16	v36top_L02	16	S88|S24	T	upright stem across two horizontals	R-hash	S24	yes	R-hash is the side the known answer missed
+30	v36mid_L04.8	v36mid_L04	8	S24|S88	T	slanted stem across two horizontals	R-hash	S88	yes
+31	v36top_L05.16	v36top_L05	16	S24|S88	T	tile cut on the L04 row (y 566)	R-hash	UNDECIDED	no	mislocated
+20	r36_L01.1	r36_L01	1	S54|S74	T	tile cut above the row (y 95)	R-6	UNDECIDED	no	mislocated
+35	r36_L04.31	r36_L04	31	S74|S54	T	flat stroke across the top of the 6	R-6	S54	yes	moderate: may be a ligature
+9	v36top_L01.33	v36top_L01	33	S74|S54	T	teardrop top with a rising stroke, no flat crossbar	R-6	S74	yes
+8	v36top_L04.37	v36top_L04	37	S74|S54	T	blot	R-6	UNDECIDED	no
+21	v36top_L05.26	v36top_L05	26	S74|S54	T	tile cut on the L04 row (y 566)	R-6	UNDECIDED	no	mislocated
+16	v36mid_L02.4	v36mid_L02	4	S74|S54	T	curved top stroke, no flat crossbar	R-6	S74	yes
+26	v36mid_L03.3	v36mid_L03	3	S74|S54	T	top stroke cannot be told from a ligature	R-6	UNDECIDED	no
+32	v36top_L03.8	v36top_L03	8	S69|X_THETA2	T	two bars	R-bar	X_THETA2	yes
+18	v36top_L04.33	v36top_L04	33	S69|X_THETA2	T	two bars (blot on top)	R-bar	X_THETA2	yes
+15	v36top_L05.4	v36top_L05	4	S69|X_THETA2	T	two bars (moderate)	R-bar	X_THETA2	yes
+14	v36top_L05.17	v36top_L05	17	S69|X_THETA2	T	two bars	R-bar	X_THETA2	yes
+25	v36top_L05.37	v36top_L05	37	S69|X_THETA2	T	two bars	R-bar	X_THETA2	yes
+33	v36mid_L02.31	v36mid_L02	31	S69|X_THETA2	T	two bars	R-bar	X_THETA2	yes
+13	v36mid_L03.24	v36mid_L03	24	S69|X_THETA2	T	two bars	R-bar	X_THETA2	yes
+34	v36mid_L06.11	v36mid_L06	11	S69|X_THETA2	T	two bars	R-bar	X_THETA2	yes
+2	v36top_L04.19	v36top_L04	19	S88|X_THETA2	T	oval crossed by two bars	none	(X_THETA2)	no	pair has no pre-registered rule; read reported only
+22	r36_L04.4	r36_L04	4	S23|S97	T	caret cut by the edge	R-dot	UNDECIDED	no	edge
+29	r36_L06.22	r36_L06	22	S23|S97	T	curled-top lambda, no dot	R-dot	S97	yes	moderate
+12	v36mid_L02.19	v36mid_L02	19	S23|S97	T	dot inside the legs	R-dot	S23	yes
+17	v36mid_L02.28	v36mid_L02	28	S23|S97	T	dot between the legs	R-dot	S23	yes
+11	v36mid_L06.3	v36mid_L06	3	S23|S97	T	dot at the foot of the legs	R-dot	S23	yes
