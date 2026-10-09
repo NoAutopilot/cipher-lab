@@ -91,6 +91,21 @@ classify Every box of one page against the labelled boxes of ALL pages (the atla
          labelled now vote with their sorted code, and a later round's correction of a box wins. Must NOT: change
          anything when the file is empty or --round 0 (output identical to no flag), nor accept a box id that is not
          in signs.tsv (exit). Measured on Birago no.87: tools/tests/PREREG-MQS-CLASSIFY-ROUNDS.md, shelf row.
+match    --page NAME=IMAGE[@box] ... [--stored PAGE ...] --exclude-page P ... [--k 140] [--shuffle N] [--positive NAME]
+         (MQS-GLYPH-MATCH, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M03, the second-wave sweep of a sender's
+         and recipient's series for the same glyph set, Lasry, Biermann and Tomokiyo 2023, Cryptologia 47:2, p.108 n.38):
+         image-only shape match of candidate leaves against an atlas. Shapes only: labels.json, cluster names and codes
+         are never read. The atlas signs minus every --exclude-page are re-featured (classify features; scaler and PCA
+         fitted on the atlas only, queries transformed) and re-clustered by k-means (--k, SEED); per cluster a centroid
+         and a radius (the --radius-q quantile of member distances). Each --page is segmented fresh (default segment
+         parameters, whole image); --stored PAGE uses that atlas page's own rows as the query (it must be excluded).
+         IR(leaf) = share of the leaf's signs within the radius of their nearest centroid. --shuffle N re-scores with
+         cluster labels permuted across atlas signs (seeds 1..N; centroids and radii recomputed), the null that can
+         differ because IR is a function of the labels. --positive NAME prints margin = IR(NAME) - max IR(others) and
+         the null margins' p95. Writes --tsv (leaf, n_signs, ir, rank, ir_s1..ir_sN).
+         Catches: a held-out leaf of the atlas's own hand scoring above other hands' leaves. Must NOT: let an excluded
+         page's signs shape the fit (an excluded page's rows never reach scaler, PCA or k-means), nor accept --stored
+         for a page that is still in the atlas (exit). Measured: tools/tests/PREREG-MQS-GLYPH-MATCH.md, shelf row.
 Test: python3 tools/tests/test_glyph_atlas.py (offline: a synthetic page with two sign shapes, one carrying a mark).
 """
 import argparse, collections, csv, json, os, sys
@@ -828,6 +843,85 @@ def strips(a, out, marks):
     print(f'{len(made)} strips -> {a.strips}')
 
 
+def _match_fit(bm, rows, n_pca=40, size_w=3.0):
+    """classify-style features with the scaler and PCA fitted on the atlas only; returns (X_atlas, transform)."""
+    hg = lambda B: np.array([hog(b.astype(float) / 255, orientations=9, pixels_per_cell=(8, 8), cells_per_block=(2, 2))
+                             for b in B])
+    sz = lambda R: np.log(np.array([[float(r['rh']), float(r['rw'])] for r in R]))
+    H = hg(bm)
+    s1 = StandardScaler().fit(H)
+    pca = PCA(n_components=min(n_pca, len(bm) - 1, H.shape[1]), random_state=SEED).fit(s1.transform(H))
+    s2 = StandardScaler().fit(pca.transform(s1.transform(H)))
+    s3 = StandardScaler().fit(sz(rows))
+    tf = lambda B, R: np.hstack([s2.transform(pca.transform(s1.transform(hg(B)))), s3.transform(sz(R)) * size_w])
+    return tf(bm, rows), tf
+
+
+def match_ir(X, lab, Q, q=0.9):
+    """IR: share of query rows within the radius (q-quantile of member distances) of their nearest centroid."""
+    ks = sorted(set(lab))
+    C = np.array([X[lab == k].mean(axis=0) for k in ks])
+    rad = np.array([np.quantile(np.linalg.norm(X[lab == k] - C[i], axis=1), q) if (lab == k).sum() >= 3 else np.nan
+                    for i, k in enumerate(ks)])
+    rad = np.where(np.isnan(rad), np.nanmedian(rad), rad)
+    if not len(Q):
+        return float('nan')
+    d = np.sqrt(((Q[:, None, :] - C[None, :, :]) ** 2).sum(axis=2))
+    j = d.argmin(axis=1)
+    return float((d[np.arange(len(Q)), j] <= rad[j]).mean())
+
+
+def cmd_match(a):
+    rows, bm = read(a.out, 'signs.tsv'), np.load(os.path.join(a.out, 'bitmaps.npz'))['signs']
+    excl = set(a.exclude_page or [])
+    for p in a.stored or []:
+        if p not in excl:
+            sys.exit(f'--stored {p}: that page is still in the atlas; add --exclude-page {p}')
+    keep = [i for i, r in enumerate(rows) if r['page'] not in excl]
+    X, tf = _match_fit(bm[keep], [rows[i] for i in keep])
+    lab = KMeans(n_clusters=min(a.k, len(keep)), n_init=10, random_state=SEED).fit(X).labels_
+    seg = argparse.Namespace(rel=0.78, mark_h=0.55, mark_above=0.3, min_area=0.12, merge_vgap=0.6, debug=False,
+                             shared_mh=None, out=None)
+    queries = []
+    for spec in a.page or []:
+        name, rest = spec.split('=', 1)
+        path, box = (rest.split('@') + [None])[:2]
+        S, _, _, mh = segment_page(name, path, [int(v) for v in box.split(',')] if box else None, seg)
+        queries.append((name, np.array([s['bm'] for s in S]), S))
+        print(f'{name}: {len(S)} signs (median height {mh:.0f}px)')
+    for p in a.stored or []:
+        idx = [i for i, r in enumerate(rows) if r['page'] == p]
+        queries.append((p, bm[idx], [rows[i] for i in idx]))
+    Qs = [tf(B, R) if len(R) else np.zeros((0, X.shape[1])) for _, B, R in queries]
+    real = [match_ir(X, lab, Q, a.radius_q) for Q in Qs]
+    null = []
+    for s in range(1, a.shuffle + 1):
+        pl = np.random.default_rng(s).permutation(lab)
+        null.append([match_ir(X, pl, Q, a.radius_q) for Q in Qs])
+    order = sorted(range(len(queries)), key=lambda i: -real[i])
+    rank = {i: order.index(i) + 1 for i in range(len(queries))}
+    with open(a.tsv, 'w') as f:
+        f.write('\t'.join(['leaf', 'n_signs', 'ir', 'rank'] + [f'ir_s{s + 1}' for s in range(len(null))]) + '\n')
+        for i, (name, _, R) in enumerate(queries):
+            f.write('\t'.join([name, str(len(R)), f'{real[i]:.4f}', str(rank[i])] +
+                               [f'{n[i]:.4f}' for n in null]) + '\n')
+    print(f'atlas: {len(keep)} signs, {len(set(lab))} clusters, excluded {sorted(excl)}')
+    for i in order:
+        print(f'  {rank[i]:2d} {queries[i][0]:>12s} n={len(queries[i][2]):4d} IR={real[i]:.4f}')
+    if a.positive:
+        names = [q[0] for q in queries]
+        if a.positive not in names:
+            sys.exit(f'--positive {a.positive} is not a query')
+        pi = names.index(a.positive)
+        mg = lambda v: v[pi] - max(v[j] for j in range(len(v)) if j != pi)
+        m0 = mg(real)
+        line = f'positive {a.positive}: rank {rank[pi]} of {len(names)}, margin {m0:+.4f}'
+        if null:
+            nm = np.array([mg(n) for n in null])
+            line += f'; null margins mean {nm.mean():+.4f} p95 {np.quantile(nm, 0.95):+.4f} max {nm.max():+.4f}'
+        print(line)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest='cmd', required=True)
@@ -900,6 +994,16 @@ def main(argv=None):
     k.add_argument('--pool', type=int, default=40, help='neighbour pool for codes outside the --knn voters (40)')
     k.add_argument('--holdout', action='append', help='box-id prefix that never votes (repeatable)')
     k.add_argument('--max-w', type=int, default=1800, help='cut a line strip into parts under this width (px)')
+    m = sp.add_parser('match')
+    m.add_argument('--out', required=True, help='the atlas directory (signs.tsv, bitmaps.npz)')
+    m.add_argument('--page', action='append', help='NAME=IMAGE[@x0,y0,x1,y1]: a candidate leaf, segmented fresh')
+    m.add_argument('--stored', action='append', help="an atlas page's own rows as a query (must also be --exclude-page)")
+    m.add_argument('--exclude-page', action='append', help='atlas page left out of the fit (the held-out leaf), repeatable')
+    m.add_argument('--k', type=int, default=140, help='k-means clusters on the atlas (140, the Birago atlas README)')
+    m.add_argument('--radius-q', type=float, default=0.9, help='cluster radius = this quantile of member distances (0.9)')
+    m.add_argument('--shuffle', type=int, default=0, help='shuffled-label null: N label permutations (seeds 1..N)')
+    m.add_argument('--positive', help='query name whose margin over the others is printed')
+    m.add_argument('--tsv', required=True, help='output table')
     r = sp.add_parser('crop')
     r.add_argument('--image', help='a plain image file to cut pixel --box crops from directly')
     r.add_argument('--box', action='append', default=[], help='x0,y0,x1,y1[:label] in --image, repeatable')
@@ -910,7 +1014,7 @@ def main(argv=None):
     r.add_argument('--scale', type=int, default=4, help='upscale factor, cubic interpolation (default 4)')
     a = ap.parse_args(argv)
     {'segment': cmd_segment, 'cluster': cmd_cluster, 'atlas': cmd_atlas, 'classify': cmd_classify,
-     'crop': cmd_crop}[a.cmd](a)
+     'crop': cmd_crop, 'match': cmd_match}[a.cmd](a)
 
 
 if __name__ == '__main__':

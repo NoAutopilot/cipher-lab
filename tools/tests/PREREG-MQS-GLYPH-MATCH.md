@@ -1,4 +1,4 @@
-# PREREG MQS-GLYPH-MATCH (LANE MQS-2, account 4) -- written 9 Oct 2026 07:22 UTC by date -u, pushed before any score
+# PREREG MQS-GLYPH-MATCH (LANE MQS-2, account 4) -- written 9 Oct 2026 07:11 UTC by date -u, pushed before any score
 
 Option under test: `tools/glyph_atlas.py match --out ATLAS --page NAME=IMAGE ... [--exclude-page P ...] [--k 140]
 [--shuffle-labels SEED]` -- an image-only glyph-shape match of candidate leaves against a sign atlas (research/
