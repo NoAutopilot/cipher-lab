@@ -1,0 +1,20 @@
+set	kind	idx	item	chosen	chosen_str	alt	alt_str	margin	resolved
+control	trim	3	franco	end	franc	front	ranco	8.372	True
+control	trim	4	anao	end	a	front	o	2.685	True
+control	trim	6	abicar	end	a	front	r	12.035	True
+control	trim	7	rustico	end	rus	front	ico	13.681	True
+control	trim	8	sillaba	end	si	front	ba	13.084	True
+control	trim	9	acaso	end	a	front	o	7.648	True
+control	trim	10	parecer	end	parece	front	arecer	7.275	True
+control	join	0	aba|guerra	split				4.076	True
+control	join	1	guerra|de	split				6.037	True
+control	join	2	de|franco	split				3.710	True
+control	join	3	franco|anao	join				8.320	True
+control	join	4	anao|com	split				10.798	True
+control	join	5	com|abicar	split				5.420	True
+control	join	6	abicar|rustico	split				9.953	True
+control	join	7	rustico|sillaba	join				12.175	True
+control	join	8	sillaba|acaso	join				7.361	True
+control	join	9	acaso|parecer	split				10.270	True
+control	join	10	parecer|inevitavel	split				4.201	True
+glue	summary		100x26	false_join_rate=0.0932					False
