@@ -1,0 +1,222 @@
+# Alonso Sanchez (imperial ambassador, Venice) -> Charles V, cipher Ko.9. Key source: published -- Satoshi Tomokiyo,
+# Cryptiana, https://cryptiana.web.fc2.com/code/AlonsoSanchez.htm (reconstructed from DECODE R9605, 1522), credited.
+# Built by scripts/build_key.py (SALAZ-KEY, 9 Oct 2026); do not edit by hand. Grade M throughout: a 1522 key, items
+# 4 (1524) and 5 (1528) are 2-6 years later. Not for Lope de Soria (items 1-3: Ko.6 or Ko.16, spanish2C.htm).
+code	value	grade	source	note
+3	d	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+4	e	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+6	l	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter; drawn grey or with ? under l (firm=0)
+9	l	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+9_curl	m	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter; drawn grey or with ? under m (firm=0)
+A	z	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+B	m	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+L	g	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+Lo	s|t	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	Tomokiyo draws this shape under s and t: ambiguous
+P	f|s	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	Tomokiyo draws this shape under f and s: ambiguous
+a_4	i	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+a_o	p	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+alpha	m	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter; drawn grey or with ? under m (firm=0)
+b_hook	b	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+d_loop	c	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+delta_tt	NULL	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+f_cross	e|o	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	Tomokiyo draws this shape under e and o: ambiguous; drawn grey or with ? under e (firm=0)
+g_loop	r	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+g_small	q	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+g_tail	y	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+g_tt	u	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+h6	NULL	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+hash	o	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+j9	q	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+m	u	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+m_o	h	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+n	a	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+o	x	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+oo_linked	d|g	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	Tomokiyo draws this shape under d and g: ambiguous
+q	t	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+tt_4	n	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+tt_bar	p	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+tt_o	NULL	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+venus	s	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+x	h	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+x_stroke	m|x	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	Tomokiyo draws this shape under m and x: ambiguous; drawn grey or with ? under m (firm=0)
+yogh	e	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+yogh_cross	a	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+z	c	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	letter
+q_dbar	s	M	Tomokiyo AlonsoSanchez.png alphabet (shapes.tsv AS rows, R11-RJMSIB eye read)	Tomokiyo: 'a q with double bar is often affixed to a three-letter code' = plural -s
+zid	a(h)un	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zod	ahun	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zud	al	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zef	allende	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zif	algun	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zog	alla	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zug	alli	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zel	antes	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zem	aqui	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zom	aquell	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zen	arma	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+zun	assi	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+yib	bien	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+yuc	buen	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+yag	capitan	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+yig	capitula	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+yeh	carta	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+yoh	causa	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+yom	cierto	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+yon	como	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xa	con	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xeb	cosa	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xuc	concorda	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xed	contra	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xid	cre(h)e	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xod	creo	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xof	da	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xuf	deue	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xig	de	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xog	dezir	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+xel	del	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xil	dello	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+xul	despues	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+va	desponho	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vo	dinero	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vu	di	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vuo	dix	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vec	dize	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vic	dicho	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vuc	do	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vud	ducato	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vag	echo	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+veg	el	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vam	embaxa	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vim	emperador	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vog	en	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vol	entre	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vil	enbia	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vom	esto	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+vum	esta	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+ta	es	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+te	espera	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+teb	espa(g)nol	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+tub	escrevi	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+toc	exercito	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+tid	favor	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+taf	falta	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+tom	francia	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+tum	frances	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+sa	fue	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+sab	gasta	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+sib	galera	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+sac	gente	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+sid	governador	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+sef	guarda	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+sof	guerra	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+suf	ha(s)	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+seg	habra	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+sog	have	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+sug	habla	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+sam	haui	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+re	hombre	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+rac	infante	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+rec	Inglaterra	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+rof	justa	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+rug	la	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pac	lo	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pec	lugar	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pic	luego	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pi	llega	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pad	Marquese Pescara	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+ped	mas	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pid	mal	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pud	magestad	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+paf	menda	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pef	me	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pof	menos	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pag	mente	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pog	mesmo	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+pif	mesor	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+pil	mente	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+pol	mi	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+ne	muy	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+neb	nuestra	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+nuc	nada	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+nod	necessidad	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+nef	ni	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+nuf	no	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+no	nuissa	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+nel	obispo	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+nul	obliga	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+ma	occorie	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+meb	officio	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+maf	otra	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+mud	otro	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+mod	os	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+mef	paz	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+mof	parte	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+muf	parti	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+mig	passe	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+mog	passa	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+mug	palabla	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+mel	parecia	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+mil	para	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+mol	persona	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+mem	pensor	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+lu	por	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lac	principe	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lic	prometi	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lod	principal	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lof	puisio	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+lig	pues	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lug	publico	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lal	publica	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lol	pudi	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lul	qual	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lam	quando	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+lom	quatro	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+ha	quanto	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+ho	que	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+hob	quien	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+hed	rey	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+hid	Rey de Francia	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+haf	Rey de Hungria	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+hof	reyno	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+hig	respuesta	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+hug	recebi	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+ge	rompe	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+gad	se	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+gub	senor	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+goc	secreto	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+geg	si	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+gel	sobre	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+gul	sospecha	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+gam	su	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+gim	suquos	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+fob	tambien	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+fib	tanta	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+fab	tene	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+fic	tiene	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+fod	tenia	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+fud	tiempo	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+faf	todo	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+fug	tres	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+fen	turco	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+dib	ver	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+ded	veni	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+dod	vi	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+def	visorey	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+dif	Visorey de Napoles	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+dog	vimes	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+dal	un	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+del	union	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+do	venecia	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+dol	voluntad	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+dom	vuestra	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+cob	xviii	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+cub	xix	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; bracketed by Tomokiyo (inferred/uncertain, not directly attested)
+cad	xx	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+ced	xxi	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; bracketed by Tomokiyo (inferred/uncertain, not directly attested)
+cid	xxii	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; bracketed by Tomokiyo (inferred/uncertain, not directly attested)
+cod	xxiii	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; bracketed by Tomokiyo (inferred/uncertain, not directly attested)
+cud	xxiv	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
+caf	xxv	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+cig	ya	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+cem	yo	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code
+con	za	M	Tomokiyo AlonsoSanchez.htm nomenclature (sources/cryptiana/keys/AlonsoSanchez_1.tsv)	word code; Tomokiyo's own '?' uncertainty mark
