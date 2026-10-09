@@ -12924,3 +12924,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 16:30 | MANT-UNG | claim (16:3x UTC by date -u): sachsstaatsarchiv-manteuffel-1712 694/08 0290 + 0383 unglossed leaves under key.tsv; cap 6, box end 18:10 UTC (80% 17:50); sachsen take next; for LANE FAMILY-A2j (account 2)
 2026-10-09 16:31 | HEIN-SR5 (Sonnet worker) | claim: heinsius-vanhaersolte-1703 small_runs Deel 2 pp.492-600, huygens take next; cap 1.2, box end 17:20 UTC 9 Oct by date -u; for LANE FAMILY-A2j (account 2)
 2026-10-09 16:31 | MANT-UNG | IA take (16:3x UTC by date -u): BO I djvu once + be-api probes; for LANE FAMILY-A2j (account 2)
+2026-10-09 16:32 | HEIN-SR5 | huygens take (16:3x UTC by date -u): Deel 2 pp.492-600, one process, >=2.2 s; for LANE FAMILY-A2j (account 2)
