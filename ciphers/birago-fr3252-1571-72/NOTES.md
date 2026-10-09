@@ -1906,10 +1906,10 @@ worker's own eye, 5 tile sheets = 5 units).
   covers f.36-37, so no judge run.
 - Hosts: none. Report: what was found and where it was not found; no novelty class.
 
-## Remaining gaps (UNA-BIR3252, 9 Oct 2026)
+## Remaining gaps (UNA2-BIR3252, 9 Oct 2026)
 Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.117r: 279 tokens S 224, M 29, U 26 (D2-B117M); f.100r + f.119: 0 graded of 1,048 digits.
 - f.36-37 period gloss (about 940 glossed signs unread) - blocker: not-attempted; running-line model reads [retired] (Sonnet twice, F36-READ/HARVEST-D; Opus once, F36-GLOSS, known-answer gate at chance); a different instrument is untried: per-sign tiles, two blind passes, known-answer gate first on v36top_L01; next: per-sign tile gloss read, ~$8 (wait until rate limit reads allowed)
-- f.36-37 kept rows at E 0.293 (700 positions, 165 splits) - blocker: not-attempted; line-segment reconciliation [retired] after two attempts (RUN6-BIR3637, BKLOG-0507); per-sign 4x tiles by neighbour context run (UNA-BIR3252, 9 Oct 2026): known-answer gate 5/6 PASS (the miss is R-hash: gloss t read as upright S24), 20 of 30 open rule-pair splits decided and applied to the passD_v4 candidate (all 9 R-bar splits two bars = X_THETA2), key control rank 1/201 x3 (z 6.59/6.71/7.96 vs passD_v3 6.44/6.54/7.90; real -1.3754 vs -1.3799), placement control p 0.242 (not distinguishable from random choices among the same pairs); 9 rule-pair rows undecided (6 tiles cut on the wrong row or at an edge, 2 blot/ligature, 1 known-answer conflict) and 155 splits in pairs with no glossed rule; next: re-cut the 6 mislocated/edge tiles with eye-set x,y (tiles_key.tsv rows 1, 19, 20, 21, 22, 24, 31), disk only, ~$1; the no-rule pairs (S80/X_NEW 23, S30/S73 17, S16/S42 14, S17/S66 12, S13/S45 10, ...) need glossed instances from the f.36-37 gloss read
+- f.36-37 kept rows at E 0.283 (700 positions, 158 splits) - blocker: not-attempted; line-segment reconciliation [retired] after two attempts (RUN6-BIR3637, BKLOG-0507); per-sign 4x tiles by neighbour context, two attempts of one design (UNA-BIR3252, UNA2-BIR3252, 9 Oct 2026): known-answer gate 5/6 PASS both times (the same miss both times: K5 gloss t read as upright S24), 27 of 30 open rule-pair splits decided (20 in passD_v4, 7 more in the passD_v5 candidate), key control rank 1/201 x3 both times (passD_v5 z 6.64/6.78/8.05, real -1.3613), placement control p 0.242 (v3->v4, k 20) / 0.014 (v3->v5, k 27) / 0.104 (v4->v5 increment, k 7 of a 10-row pool); per-sign tiles of these splits [retired] after two attempts (rule 3 third-attempt clause: the 3 left are a blot, a ligature and the K5 conflict, not location); 155 splits in pairs with no glossed rule; next: the no-rule pairs (S80/X_NEW 23, S30/S73 17, S16/S42 14, S17/S66 12, S13/S45 10, ...) need glossed instances from the f.36-37 gloss read (new instrument: per-sign gloss tiles, ~$8)
 - f.47r reader error 0.33 - blocker: not-attempted; S74/S54, S80/S65, S76/S91 one-sided third-reader preference unverified; next: known-answer pair check on the f.36 gloss once the gloss is read, disk only, ~$2
 - f.47r 79 unsettled positions - blocker: not-attempted; sign-sorter focus rows written; next: tools/sign_sorter.py --focus harvest/f47/la/focus.tsv
 - f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so run edges are unchecked; next: eye-check L01-L03 and L17 s1-s2 crops, disk only, ~$1
@@ -1920,15 +1920,15 @@ Read so far: f.36-37: 10 C, 0 S of 947 cipher signs; f.47r: 0 S of about 770; f.
 - Nov 1571 key table - blocker: no-key-material; fr.3995 undated tables all viewed and the sweep is closed (BIRAGO-NUM-KEYEYE, -KEYEYE2, -KEYEYE3, BIRAGO-76): no.73 and no.74 control-backed negatives, no.32, no.33 and no.71 under the coverage floor (no.71 also 1580s), no.75 three-figure codes with League-era names, no.48-51 symbol keys, no.76 a single-sign letter alphabet (digits 1-9 for a-i, symbols and letters for l-z, no 0) with two-figure word codes in a plain and an overlined series (BIRAGO-76); no key table in fr.3995 fits the digit-only 00-59/74-99 token set; the next instrument is new material: a Nov 1571 key in another volume of the Nevers/Birago papers (fr.3252 neighbours, fr.3251, fr.3256, fr.4712-4715 key sheets) located by a catalogue/eye sweep for "chiffre" leaves dated 1571-72
 - fr.3995 no.74 digraph signs 23-27 and no.32 superscript marks - blocker: not-attempted; read at ~0.5x, values not legible; only matters if a letter in either key turns up; next: none unless a matching letter is found
 
-## Escalation (UNA-BIR3252, 9 Oct 2026)
+## Escalation (UNA2-BIR3252, 9 Oct 2026)
 - [x] siblings: fr.3252 f.36-37 witness read whole under the same key (F36-READ); f.100r pooled with f.119 (BIRAGO-NUM); third numerical letter scouted in both volumes, none (BIRAGO-NUM-SCOUT)
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c)); f.37r slip is clear text
 - [x] known-keys: Ceppo-Nevers on f.36-37 and f.47r; 1572 key on f.117r; Nov 1571 system against all 66 digit keys on disk, none at gate, control 6/6 (BIRAGO-NUM-TOOLS); fr.3995 no.73 stat 1.10/-0.39, no.74 0.26/-0.16, no.32 0.79/1.23 (coverage 0.24-0.32) vs gate 3.292, controls 12/12 each (BIRAGO-NUM-KEYEYE, -KEYEYE2); no.71 letters coverage 0.26-0.31, stat -1.09 to 1.65, controls it 12/12, fr 9/12 (BIRAGO-NUM-KEYEYE3); no.76 single-sign letters, not two-figure, crossmatch not applicable (BIRAGO-76)
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
 - [ ] key-rebuild: f.36 gloss by per-sign tiles; f.47r pair check against it; T88=q [x] pre-registered on no.86, FAIL (D2-B117M), next the no.87 clear-sheet check; f.100r + f.119 codes: clear-context code reading run (N8-BIRNUM, untested-by-this-tool at this N), f.138 ruled out as a third letter (RUN6-BIR138); next a numerical letter in another volume
 - [x] image-check: f.36r rows recut and re-read (F36R-REREAD); f.36-37 gloss crops re-cut; f.117r native crops; f.47r native re-cut
-- [ ] retry: kept f.36-37 rows' splits: line-segment reconciliation [retired] (RUN6-BIR3637 one call, BKLOG-0507 four per-page calls; 8 of 193 settled, r37 only); [x] per-sign 4x tiles by neighbour context (UNA-BIR3252: KA 5/6, 20 applied to passD_v4, placement p 0.242); next re-cut the 6 mislocated/edge tiles; f.117r [x] power at the measured post-look-alike error done (D2-B117KAPC: 18/20 at 0.126, 16/20 at 0.183, rank 1/201 on 5/5 seeds), 27 M -> S; f.117r 16 plain-M window read (D2-B117M): 7 M -> S
-Verdict: keep going: 10 internal gaps (f.117r S 224/M 29); cheapest next: re-cut the 6 mislocated/edge f.36-37 rule-pair tiles with eye-set x,y (UNA-BIR3252 tiles_key.tsv), ~$1, disk only; then the f.36-37 gloss by per-sign tiles (~$8) for rules on the no-rule pairs; the Nov 1571 system needs new material (a letter or key sheet in another Nevers/Birago volume)
+- [ ] retry: kept f.36-37 rows' splits: line-segment reconciliation [retired] (RUN6-BIR3637 one call, BKLOG-0507 four per-page calls; 8 of 193 settled, r37 only); per-sign 4x tiles by neighbour context [retired] after two attempts (UNA-BIR3252: KA 5/6, 20 applied to passD_v4, placement p 0.242; UNA2-BIR3252: 7 re-cut at eye-set x,y, KA 5/6, 7 applied to passD_v5, placement p 0.014 cumulative / 0.104 increment); f.117r [x] power at the measured post-look-alike error done (D2-B117KAPC: 18/20 at 0.126, 16/20 at 0.183, rank 1/201 on 5/5 seeds), 27 M -> S; f.117r 16 plain-M window read (D2-B117M): 7 M -> S
+Verdict: keep going: 10 internal gaps (f.117r S 224/M 29); cheapest next: the f.36-37 gloss by per-sign tiles (~$8) for rules on the no-rule pairs (the per-sign split tiles are retired after two attempts, UNA2-BIR3252); the Nov 1571 system needs new material (a letter or key sheet in another Nevers/Birago volume)
 
 ## Siblings (8 Oct 2026)
 
@@ -1956,3 +1956,50 @@ the paths changed (`harvest/f117/decode_txer.json`).
 **No licensed change**: the committed reading, RD7 and the D2-B117KAPC grades stand; the new decode is a record, not a candidate reading.
 Report: found a halved reader disagreement and no judge gain; not found: any clause above AD. Follow-up suggestion (not done): a known-answer
 T76/T66 tile check on no.87 before any re-run.
+
+## UNA2-BIR3252 (9 Oct 2026, 10:12-10:2x UTC by date -u, parent worker for the account-4 orchestrator): attempt 2 of the UNA-BIR3252 tile design, the mislocated/edge tiles re-cut
+
+Brief `.claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md` (UNA2-BIR3252). Disk only, 0 network requests, no subagent (this worker's
+own eye, 2 tile sheets). **Attempt 2 of one design**; a third attempt is closed by rule 3's third-attempt clause.
+- **Prior work:** `tools/prior_work.py birago-fr3252-1571-72 --brief <brief> --step-type crop --offline --known-answer gate:PREREG-UNA2` exit 4
+  (the brief names five folders, so the rows mix items): for this folder the owed rows are the same LOOK (2-leaf gloss/clear-copy) and
+  UNCHECKED-NET (aaymeloglu solver, editions) rows UNA-BIR3252 answered: the leaf's own period gloss IS the known answer used here; editions
+  Gomberville 1665 searched inside (NEVBIR-3252); aaymeloglu unchecked (no local clone). Rows appended to `prior-work.tsv`.
+- **Pre-registration:** `harvest/f3637/PREREG-UNA2.md`, pushed in baa4d73c2 before any tile was cut or read.
+- **Targets:** the brief says 6; the Remaining-gaps line names 7 rows (tiles_key.tsv rows 1, 19, 20, 21, 22, 24, 31); all 7 re-cut.
+- **Location (the one change):** x,y set by eye on 2x ruler strips of the native bands (scratch, not committed), each sign placed by its
+  passD_v4 neighbours. Finding: `cut_lines.BLOCKS` band centres for v36top sit about 50 px above the cipher row (L02 row at y ~372, not 320;
+  L05 at ~672, not 627), which is why attempt 1's row-ink search landed on L01/L04; and on r36_L02 and r36_L08 the target 8 sits right of a
+  theta whose long bar runs on into it (attempt 1 had x on the theta). New x,y in `harvest/f3637/cut_una2_tiles.py` (attempt-1 x,y in comments).
+- **Crops (command, pasted):** `python3 cut_una2_tiles.py` (in `harvest/f3637/`) -> 13 tiles (7 targets + the same K1-K6 at attempt 1's
+  x,y), 150 x 80 native px at 4x, seed 32522, `tiles2/t01-t13.jpg`; blind reads `reads_una2_blind.tsv` pushed in 71cc9ea3d before
+  `tiles2/tiles_key.tsv` was opened; merged `reads_una2.tsv`. Caveat: this reader had seen attempt 1's reads (the KA label set), and the
+  2x location strips show the signs; the feature was judged on the 4x tiles only.
+- **Gate 1 (known answer first): 5/6 = 0.83, PASS** (K1, K2, K3, K4, K6 correct; **K5 wrong again**, the same miss as attempt 1: the
+  v36top_L03 pos 2 hash read upright S24 where the gloss says t = S88). R-hash stays the weak family.
+- **Targets, all 7 decided and applied to `passD_v5.tsv`** (= passD_v4 + these; passD_v4 kept as attempt 1's candidate):
+
+| row | rule | label | feature | note |
+|---|---|---|---|---|
+| v36top_L02.37 | R-hash | S88 | slanted stem, at the vellum edge | R-hash: the family the KA missed |
+| v36top_L05.16 | R-hash | S88 | slanted stem | same |
+| r36_L02.37 | R-8 | S80 | bar through the waist past both sides | the bar is one stroke with the theta's bar to its left |
+| r36_L08.8 | R-8 | S80 | same | same |
+| r36_L01.1 | R-6 | S74 | thin ascender, no flat crossbar | moderate |
+| v36top_L05.26 | R-6 | S74 | tall curved top stroke, no flat crossbar | |
+| r36_L04.4 | R-dot | S97 | curled-top lambda, no dot | moderate (a hat stroke above is the gloss line) |
+
+  Weakest: the two R-8 rows (the rule sees a bar; whether the bar belongs to the 8 or is the theta's bar running on is not separable at 4x)
+  and the two R-hash rows.
+- **E:** before 0.293; **after 0.283 ((40 + 158) / 700)**. A residual after one eye, not a measured per-sign error.
+- **Gate 2, key control** (`decode_control.py passD_v5.tsv --shuffles 200 --windows 20 --err 0.286 --extra X_THETA2=r --seed N`,
+  `harvest/f3637/una2/control_s{1,2,3}.txt`): 742 letters, real key -1.3613; seed 1 z 6.64, seed 2 6.78, seed 3 8.05; rank 1/201 every
+  seed (passD_v4: -1.3754, z 6.59/6.71/7.96); power 20/20 each. Gate met.
+- **Placement control, both ways** (`una_placement_control.py`, now with `--base/--cand`; the default call reproduces attempt 1's p 0.242
+  exactly, `una2/placement_v4_check.txt`): v3 -> v4 (attempt 1, k 20 of 30): p 0.242; **v3 -> v5 (k 27 of 30): p 7/500 = 0.014**
+  (`una2/placement_v3_v5_s1.txt`); v4 -> v5 increment alone (k 7 drawn from the 10 rows still open after attempt 1): real -1.3613 vs draws
+  median -1.3667, p95 -1.3605, **p 52/500 = 0.104** (`una2/placement_v4_v5_s1.txt`). With all 27 shape choices in, they read better under the
+  printed key than random members of the same pairs (p 0.014); the 7-row increment alone is not distinguishable at n=7 in a 10-row pool.
+- **Grades:** no change. No C; `ciphertext_f36_v2.tsv`, the decode inputs and the grades are unchanged; passD_v5 is a candidate whose 27
+  changed rows are S-candidates for a verifier. Nothing decode_key reads changed. No spec covers f.36-37, so no judge run.
+- Hosts: none. Report: what was found and where it was not found; no novelty class.

@@ -1,0 +1,1 @@
+changed rows k=27; pool 30 open rule-pair rows; base passD_v3.tsv -1.3799; cand passD_v5.tsv (real) -1.3613; draws n=500 median -1.3824 p95 -1.3666 max -1.3572; p = 7/500 = 0.014

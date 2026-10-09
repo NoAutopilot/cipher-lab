@@ -1,0 +1,14 @@
+tile	id	line	pos	x	y	cands	role	feature_seen	rule	rule_label	known	result	note
+1	r36_L04.4	r36_L04	4	293	428	S23|S97	T	caret/lambda with a curled hook at the top of the left stroke, no dot inside or beside	R-dot	S97	-	applied to passD_v5	moderate: a hat stroke sits above the tile (gloss line), not a dot
+2	r36_L02.37	r36_L02	37	2480	262	S80|S65	T	8 with a horizontal bar through the waist running well past both sides; the bar continues from the left neighbour's bar	R-8	S80	-	applied to passD_v5	the bar is one stroke with the neighbour's bar
+3	K5	v36top_L03	2	1110	457	S88|S24	K	hash: stem UPRIGHT across two horizontals	R-hash	S24	S88	WRONG	
+4	v36top_L05.16	v36top_L05	16	2240	672	S24|S88	T	hash: stem SLANTED across two horizontals	R-hash	S88	-	applied to passD_v5	
+5	K3	v36top_L01	18	2310	234	S69|X_THETA2	K	oval/8 crossed by two bars	R-bar	X_THETA2	X_THETA2	correct	
+6	v36top_L05.26	v36top_L05	26	2878	670	S74|S54	T	6 with a tall curved rising stroke at the top, no flat crossbar	R-6	S74	-	applied to passD_v5	
+7	K4	v36top_L02	2	1130	336	S88|S24	K	hash: stem SLANTED across two horizontals	R-hash	S88	S88	correct	
+8	r36_L08.8	r36_L08	8	555	1070	S80|S65	T	8 with a horizontal bar through the waist past both sides; the bar continues from the left neighbour's bar	R-8	S80	-	applied to passD_v5	the bar is one stroke with the neighbour's bar
+9	K2	v36top_L01	5	1410	197	S80|S65	K	8 with a bar through the waist past both sides (joined to the left loop)	R-8	S80	S80	correct	
+10	r36_L01.1	r36_L01	1	1988	150	S54|S74	T	6 with a plain thin ascender at the top, no flat crossbar, no blob	R-6	S74	-	applied to passD_v5	moderate (ascender, not a teardrop)
+11	K6	v36top_L03	18	2290	458	S65|S80	K	plain 8, no bar	R-8	S65	S65	correct	
+12	v36top_L02.37	v36top_L02	37	3785	372	S24|S88	T	hash at the vellum edge: stem SLANTED across two horizontals, right ends cut by the edge	R-hash	S88	-	applied to passD_v5	stem fully visible
+13	K1	v36top_L01	3	1230	209	X_THETA2|S69	K	oval/8 crossed by two bars	R-bar	X_THETA2	X_THETA2	correct	
