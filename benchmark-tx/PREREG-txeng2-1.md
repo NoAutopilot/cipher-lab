@@ -40,3 +40,21 @@ are one strong reader, not truth (TRANSCRIPTION.md).
 
 ## Costs
 TXE2-PAIR cap 5 / box 60 min; TXE2-SORT cap 5 / box 60 min. No vision call in either. Readers: none.
+
+## X5 Reader diversity with a learned weighting + X19 deletion detector (TXE2-WEIGHT; Opus 5.5; cap 6; read-free; added 15:5x UTC, before any score)
+X5: tool `tools/tx_weighted_vote.py` (learn / vote / control). Readers = the passes on disk that cover the unit: on dev_tune A, B,
+E (sheet), F (Fable), K2 (sr4), V_s0, V_s1 (and the T_ordered/T_shuffled lines where present); on eval_heldout A, B, E, F. For
+each reader r and read sign s, w(r, s, t) = P(truth = t | r read s), estimated from the dev_tune lines with add-0.5 smoothing
+over the key's signs, LEAVE-ONE-LINE-OUT (a line's own truth never trains the weights that vote on it); per position the chosen
+sign = argmax_t sum_r w(r, s_r, t) (readers that deleted the position contribute a uniform weight); positions are tx_bench's
+aligned truth positions (the same alignment as the taxonomy tool; a reader's read at a position is its aligned sign). Output
+`passX5_weighted_dev_tune.tsv`; gate paired fixed > broken p < 0.05 vs L_dev_tune. Controls: (a) uniform weights (plain
+majority, the TX-VIEWS family) reported beside; (b) weights learnt on permuted truth (5 seeds) must not pass. Prediction
+registered: B's r<-T24 and F's m<-X_NEW biases are down-weighted; all-same-wrong positions do not move. If dev passes: weights
+learnt on ALL dev_tune lines, applied to eval_heldout's A/B/E/F, `passX5_weighted_eval_heldout.tsv` written, NOT scored. Stated
+difference from TX-VIEWS (retired plain re-passes): no new read, a learned per-reader-per-sign weighting of reads that exist.
+X19: `tools/tx_count_check.py`: expected sign count per line from the crop's ink column profile (connected ink runs along x after
+a row-band mask, split at gaps >= a fraction of the median run width, tuned on the dev lines of no.87 only) vs the read's count;
+a line is flagged when |expected - read| >= 1. Read-free measure: recall of lines carrying a deletion or insertion error
+(tx_bench's deleted/inserted) in passA/passB/passZ of no.87 geo + dev_tune, dint passA/F, spinelli passZ, at the share of
+lines flagged; no gate (a doubt signal for X9); shelf row `weak` unless recall >= 0.7 at <= 30% of lines flagged.
