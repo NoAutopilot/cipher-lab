@@ -1,0 +1,2 @@
+host	requests	status
+www.googleapis.com	1	blocked: HTTP 429 on https://www.googleapis.com/books/v1/volumes?q=%22hat%20ihr%20zehen%20tausend%20thaler%20verehrt%22&country=US&maxResults=10

@@ -1,0 +1,12 @@
+== G_A gloss: Lues[?] Hauszelt[?]/Wenss[?] dem hertz[?]o[?]/de Jorck [?]/konigl[?] Maj[?]/princessin zu [?]/golyze[?]/
+groups 0020u 44 0021 8; C-value tokens 25; gloss letters 0020u 60 0021 51
+real LCS 17; control mean 14.33 p99 17 max 18 n 2000; p = 0.0370
+GATE FAIL
+== G_B gloss: Lues Hauszeit[?]/Zuerst dem herz[?]/de Jorck mit/Hertzogin Konigl[?]/princeßin zu n[?]/golyzt[?]/
+groups 0020u 44 0021 8; C-value tokens 25; gloss letters 0020u 69 0021 51
+real LCS 18; control mean 14.64 p99 18 max 20 n 2000; p = 0.0135
+GATE FAIL
+== reference: unchanged score_up.py on committed worker gloss
+groups 0020u 44 0021 8; C-value tokens 25; gloss letters 0020u 74 0021 51
+real LCS 23; control mean 15.58 p99 19 max 20 n 2000; p = 0.0005
+GATE PASS
