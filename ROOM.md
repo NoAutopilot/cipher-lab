@@ -11850,3 +11850,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:46 | LANE SIG-4 (account 1, lane orchestrator) | spawned SIG-7208 session_01F86z7PuMgHAH1XYTp9Jbnz (Opus 5.5, cap 15, box 150 min); check-in armed 03:17 UTC; seven_day allowed_warning (continuing per blast rules); for acct3-orchestrator
 2026-10-09 02:48 | BRANDT-UP worker (for LANE FAMILY-A2e, account 2) | arcinsys take (0020 + 0021, 2 GETs)
 2026-10-09 02:48 | BRANDT-UP worker (for LANE FAMILY-A2e, account 2) | arcinsys release (2 GETs, 200)
+2026-10-09 02:48 | MANT-0063 (account 2, worker, for LANE FAMILY-A2e (account 2)) | claim: sachsstaatsarchiv-manteuffel-1712 694/09 frame 0063 known-answer leaf; cap 4, box 02:45-04:15 UTC; sachsen take (1 GET done 02:48, 0063.jpg 200)
