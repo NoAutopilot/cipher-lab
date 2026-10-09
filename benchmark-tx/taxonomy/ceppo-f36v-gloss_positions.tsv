@@ -1,0 +1,17 @@
+line	pos	plain	truth	ref_sign	pos_class	line_len	line_in_call	seg_edge	band_edge	glued	stroke	erosion	box_w	box_h	n_cov	n_wrong	same_wrong	read_A	read_B	read_D	read_R	read_F	err_A	err_B	err_D	err_R	err_F
+v36top_L01	1	p	S16|S57	S16	first	38	1	-	-	-	-				5	3	0	S16	S42	?	?	S16	0	1	1	1	0
+v36top_L01	2	a	S14|S45|S80|S97	S45	inner	38	1	-	-	-	-				5	0		S45	S45	S45	S45	S45	0	0	0	0	0
+v36top_L01	3	r	S30|S32|S56|S60|X_THETA2	X_THETA2	inner	38	1	-	-	-	-				5	0		X_THETA2	X_THETA2	X_THETA2	X_THETA2	S60	0	0	0	0	0
+v36top_L01	4	l	S40|S71|S84	S84	inner	38	1	-	-	-	-				5	0		S84	S84	S84	S84	S84	0	0	0	0	0
+v36top_L01	5	a	S14|S45|S80|S97	S80	inner	38	1	-	-	-	-				5	3	0	S80	X_NEW	?	?	S80	0	1	1	1	0
+v36top_L01	6	n	S23|S49	S30	inner	38	1	-	-	-	-				5	5	0	S30	S73	?	?	S30	1	1	1	1	1
+v36top_L01	7	d	S55|S89	S89	inner	38	1	-	-	-	-				5	0		S89	S89	S89	S89	S89	0	0	0	0	0
+v36top_L01	8	o	S24|S62|S70	S62	inner	38	1	-	-	-	-				5	0		S62	S62	S62	S62	S62	0	0	0	0	0
+v36top_L01	9	n	S23|S49	S30	inner	38	1	-	-	-	-				5	5	0	S30	S73	?	?	S30	1	1	1	1	1
+v36top_L01	11	i	S17|S34|S93	S17	inner	38	1	-	-	-	-				5	4	1	S66	S66	S66	S66	S17	1	1	1	1	0
+v36top_L01	12	l	S40|S71|S84	S84	inner	38	1	-	-	-	-				5	0		S40	S40	S40	S40	S40	0	0	0	0	0
+v36top_L01	13	s	S10|S26|S77|S91|S94	S26	inner	38	1	-	-	-	-				5	1		S26	S26	S26	S26	<deleted>	0	0	0	0	1
+v36top_L01	15	g	S13	S13	inner	38	1	-	-	-	-				5	0		S13	S13	S13	S13	S13	0	0	0	0	0
+v36top_L01	16	n	S23|S49	S30	inner	38	1	-	-	-	-				5	5	0	S30	S73	?	?	S30	1	1	1	1	1
+v36top_L01	17	o	S24|S62|S70	S70	inner	38	1	-	-	-	-				5	1		S70	S70	S70	S70	S42	0	0	0	0	1
+v36top_L01	18	r	S30|S32|S56|S60|X_THETA2	X_THETA2	inner	38	1	-	-	-	-				5	3	0	S69	X_THETA2	?	?	S60	1	0	1	1	0
