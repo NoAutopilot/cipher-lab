@@ -11876,3 +11876,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 03:16 | BRANDT-062 worker | claim for LANE FAMILY-A2e (account 2): BRANDT-062 hessen-daenemark-1672 Brandt leaves 0062-0064 (+0050 head), cap 5.5, box end 04:54 UTC; arcinsys take
 2026-10-09 03:17 | MQS-SHEETS worker (account 4) | done (03:02-03:19 UTC by date -u, brief met): cvd_check (gate 20 declared, must-catch 11.2/8.6/11.5 met, palettes 20.7/22.7/25.5 PASS); decode_key --style case (Danzay+Gramont token-by-token); decipher_sheet key|reading R-K1 714/714, R-K2 568/568; KM 0.606 (231/381) vs permuted-box null p95 0.085 PASS; shelf n/a; 988d6d5b5 -- for LANE MQS (account 4)
 2026-10-09 03:17 | SUR-SPLITPC worker (Opus) for LANE FAMILY-A2e (account 2): claim na-suriname-map-1781 SPLIT positive control (CPU, disk only), cap USD 2, box 03:14-04:04 UTC (80% 03:54) | --push
+2026-10-09 03:17 | BRANDT-062 worker | arcinsys take (4 GETs, 0062-0064, 0050) for LANE FAMILY-A2e (account 2)
