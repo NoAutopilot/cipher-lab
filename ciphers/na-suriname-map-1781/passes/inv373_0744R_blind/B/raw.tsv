@@ -1,0 +1,45 @@
+crop	kind	text	conf	remarks
+L01	gloss	tusschen door Slippen, welke eenigzint, te vrezen	0.8	
+L01	cipher	[lambda] 5 [psi] [lambda] & 3 y r k [hash] o | [psi] c & 5 9 3 y 4 7 c b d 3 7 y 8 9 n & y [lambda] [psi] [lambda] 7 5 0 3 7	0.35	gaps uncertain; many signs ambiguous
+L02	gloss	zyn, en om te beletten, dat 't eenig Vaartuig	0.7	
+L02	cipher	m d l n t y , | g l [hash] y [lambda] 3 d 7 9 3 [lambda] r 3 l . | r [delta] [lambda] ' 3 0 3 7 y 8 9 5 [delta] . ' o [lambda] 5 t 9	0.35	
+L03	gloss	zonder hindersy kan doorkomen, kan men	0.65	
+L03	cipher	n [hash] [ij] r 3 0 | & & f y r 3 0 8 y 9 | b % . y r k [hash] o b k [hash] [ij] 3 y , | b [delta] y . [ij] 3 l r 3 7	0.35	
+L04	gloss	deze tusschen ruimte of palisaden, of door	0.7	
+L04	cipher	m d [lambda] 5 [psi] & 3 [ij] 0 5 t y [lambda] 7 , [hash] & | & 5 [delta] c & [psi] : r 3 7 0 d l , [hash] & r k [hash] o	0.35	
+L05	gloss	gedraaide takken van boomen of kleyne	0.75	
+L05	cipher	9 3 & 0 [delta] & w 7 [lambda] [delta] b b : | 3 [ij] y . e % . y d k [hash] y 3 l , [hash] w c & 3 [lambda] 3 0 7 & . : d 3 c	0.35	
+L06	gloss	Cabels sluiten tot op de Wal toe. zy dient Iof..	0.6	end of line uncertain
+L06	cipher	[psi] [psi] c 5 t [lambda] 7 y | [lambda] [hash] r [hash] & r 7 4 . ' c [lambda] [hash] 3 . | [psi] t r & 3 y w e 3 0 e [hash]	0.35	
+L07	gloss	volgens binnen waarde met een boogt endens	0.55	
+L07	cipher	' c 9 3 y b | d & y l 3 h 4 % . p o r . [psi] y 3 [lambda] 3 7 y d [hash] 9 [lambda] , 3 y w 5 [psi]	0.3	
+L08	gloss	halve maans gewyse op het noordlangs voort	0.55	
+L08	cipher	$ [delta] c e 3 [ij] [delta] . ' y [psi] 9 3 4 t [psi] [hash] & ' [lambda] | [ij] [delta] . ' [psi] [lambda] c % . y 9 [psi] [lambda] F	0.35	final F capital-like
+L09	gloss	N. Amst. al de distantie van een honderd roeden	0.8	
+L09	cipher	[hash] l n r 3 r & [psi] [lambda] . ' y r & 3 e [delta] [ij] 3 3 y & [hash] [ij] r 7 0 w 0 [hash] 3 w 7 y , [hash] &	0.35	
+L10	gloss	of niet meer heen te loopen, dan zal de distan:	0.65	
+L10	cipher	' & 3 [lambda] [psi] y 3 7 0 & d a y [lambda] d c k [hash] & 3 y , w [delta] y n % . c w 7 r & [psi] [lambda] % . y	0.35	
+L11	gloss	die dezen boom hout uitte maken circa 800	0.65	
+L11	cipher	' r & 3 w & 3 r 3 7 n d o k [hash] y 5 t [lambda] b [hash] y [lambda] [lambda] 7 y % . p b 3 y , & & o p . '	0.3	
+L12	gloss	Roeden voor beide de Rivieren Sultanen	0.55	
+L12	cipher	[delta] 9 [lambda] y [hash] y & 3 0 [lambda] 0 [hash] 3 r 7 y 5 k [hash] o d 3 8 w 7 & d o & 5 ' 8 3 0 7 l	0.3	
+L13	gloss	en Coppenryne zyn. enderhalven ede	0.45	
+L13	cipher	[psi] 5 0 & y [delta] y 3 7 l p k [ij] 3 4 t y 7 n t y . — 3 y r & 7 0 & [delta] c e 3 y 8 3 w 7 0 .	0.3	
+L14	gloss	touw op 140 Vaam gestelt, omtrent 12 touw;	0.65	
+L14	cipher	[lambda] [hash] 5 4 [hash] f , 1 4 0 . 5 4 . ' y 9 3 [psi] [lambda] 7 c y [hash] y [lambda] 0 3 y r . [lambda] 4 % . p c 4	0.35	
+L15	gloss	nodig hebben, haare dikte is wel af te lyden	0.7	
+L15	cipher	[lambda] [hash] 5 4 3 y l k [hash] r & 9 & 3 d 6 7 [ij] , 5 f [delta] . ' 0 3 r f b a 7 8 [psi] 4 3 0 . ' &	0.35	
+L16	gloss	dat Stakte geest, dog van twintig duim	0.55	
+L16	cipher	[lambda] 3 c t r 7 [ij] w . [lambda] y [psi] [lambda] 3 0 b [lambda] 3 9 3 7 & [lambda] , w [hash] 9 5 [delta] y [lambda] 4 & y r 8 9	0.35	
+L17	gloss	kan genoeg dienen.	0.85	
+L17	cipher	r 5 t y b [delta] [ij] 9 3 y [hash] 3 9 | w 8 3 [ij] 7 l	0.4	
+L18	gloss	om deze Cabels te doen dryven, moeten dezelve	0.8	
+L18	cipher	[hash] y r 3 7 n d p % . d 3 c [psi] [lambda] 7 r [hash] 3 y | w o t e 3 [ij] , y k 3 [lambda] 7 y r 3 n 7 c	0.35	
+L19	gloss	ten minsten 3 à 4 maal meer dikte van	0.75	
+L19	cipher	5 & . [lambda] 3 y y & y [psi] [lambda] 3 l r o & o ' [delta] e & 3 o [ij] [delta] r . c y 3 7 0 r & b [lambda] 7 e [delta] [ij]	0.3	
+L20	gloss	hout gegeven worden, ligte taaye Sparren	0.75	
+L20	cipher	d f [hash] 5 [lambda] 9 3 9 7 d 5 3 y | 4 k o r 7 [ij] , c & 9 [lambda] 3 [lambda] [delta] . ' & 3 | [psi] [delta] o o 3 y ,	0.35	
+L21	gloss	ten takken van boomen zyne zeer nuttig, dog	0.65	first word possibly struck through
+L21	cipher	3 l [lambda] r b b | 3 y | e [delta] [ij] | d k [hash] y 3 y | n t [ij] n 3 7 0 | y 5 [lambda] r & 9 , r [hash] 9 w & 3 y	0.35	
+L22	gloss	zeinen wel terdeeg omwonden en zeer voorzien te zyn.	0.6	
+L22	cipher	7 l 4 3 i c [lambda] 7 0 r 3 7 9 [hash] y 4 [hash] y r 7 l 3 h | n . 3 7 0 | 3 k [hash] o | [psi] & 3 y [lambda] 7 n ' l y —	0.3	

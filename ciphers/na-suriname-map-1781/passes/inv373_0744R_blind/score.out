@@ -1,0 +1,12 @@
+# pass A: reader [ij] 20; pairs 22, signs 744; keyed aligned 673, A 0.834; C1 (N=10000, seed 7440) mean 0.485 p99 0.522 max 0.546 -> SAME SYSTEM (DP)
+  (a) CLASS [ij] -> m|n: n_al 18, agree 16, share 0.889; C1 share mean 0.466 p99 0.733; need >= 0.844 -> PASS
+      undotted y -> m|n (descriptive): n_al 64, agree 60, share 0.938
+  (b) DOT: dotted 16/18 (0.889) vs undotted 60/64 (0.938); dot-label permutation (N=10000, seed 7441) mean 0.928 p95 1.000 p99 1.000 -> FAIL; Fisher two-sided p 0.608
+  (c) descriptive: aligned y-family facing gloss m 18, n 58
+# pass B: reader [ij] 20; pairs 22, signs 747; keyed aligned 668, A 0.828; C1 (N=10000, seed 7440) mean 0.487 p99 0.524 max 0.543 -> SAME SYSTEM (DP)
+  (a) CLASS [ij] -> m|n: n_al 19, agree 17, share 0.895; C1 share mean 0.476 p99 0.737; need >= 0.842 -> PASS
+      undotted y -> m|n (descriptive): n_al 70, agree 64, share 0.914
+  (b) DOT: dotted 17/19 (0.895) vs undotted 64/70 (0.914); dot-label permutation (N=10000, seed 7441) mean 0.910 p95 1.000 p99 1.000 -> FAIL; Fisher two-sided p 0.677
+  (c) descriptive: aligned y-family facing gloss m 19, n 62
+UNIT CLASS (a): PASS  [A PASS; B PASS]
+UNIT DOT (b): FAIL  [A FAIL; B FAIL]
