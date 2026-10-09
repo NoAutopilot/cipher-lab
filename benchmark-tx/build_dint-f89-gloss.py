@@ -12,10 +12,18 @@ ciphers/fr3621-dinteville-1592/f128/print_align/align_print.py primary run (syl:
 seg_bonus 0.0, len_prior 1.0, FOLD_FS False), each sign label its own code; '?' in the gloss is the wildcard (a chunk
 containing it is gloss-unread). Leaf key rebuilt from the alignment: per sign, folded chunk counts; majority value,
 count, agree share.
-Scored: chunk is one letter, equals the sign's majority, count >= 2, agree >= 0.75, and -- when the sign (under
-benchmark-tx/dint128_label_map.tsv's reverse labels) is in f128/print_align/key_print.tsv -- key_print's meaning equals
-it. Truth set = every leaf-key sign whose majority is that letter and that passes the same count/agree/key_print test
-(value-level: homophones are interchangeable). Excluded with a class: unaligned, gloss-unread, multi-letter,
+A sign is GOOD when its majority chunk is one letter with count >= 2, agree >= 0.75 and -- when the sign (under
+benchmark-tx/dint128_label_map.tsv's reverse labels) is in f128/print_align/key_print.tsv -- key_print's meaning equals it.
+Scored: the aligned chunk is one letter that has at least one GOOD sign; truth set = every GOOD sign with that letter
+(value-level: homophones are interchangeable). passZ's sign at the position is NOT required to be in the set, so a
+passZ wrong-sign position counts against passZ (the brief: passZ scores 0 on segmentation, not on identity) -- except
+where passZ's sign has that letter as its own majority but is not GOOD (low agree / key_print conflict): excluded, since
+the sign may be a real homophone the leaf is too short to confirm; and where passZ's sign is not GOOD but the letter
+is one of its values seen >= 2 times (excluded:ambiguous-sign: the reader label covers two key signs, e.g. '4' = key_print
+'4' (l) and 'D' (a) under dint128_label_map, or '1' e/i).
+Dots: tools/reconcile_passes.py dropped '.' signs by default (no --keep-dots) when passZ was built, before the gloss was
+read; passZ was not rebuilt after the gloss read, so the item covers non-dot signs only and the passA/passB outputs drop
+their '.' rows too (39 in A, 36 in B). Excluded with a class: unaligned, gloss-unread, multi-letter,
 low-count (< 2), low-agree, key-conflict, off-sheet (X_*, NEW:, ?).
 Flag align-conflict on a scored position whose left or right neighbour aligned to a chunk that conflicts with that
 neighbour's own majority (the alignment's local uncertainty, interlinear_align status 'conflict:*').
@@ -83,7 +91,7 @@ def build(out_root):
         top, n = sorted(cnt.items(), key=lambda kv: (-kv[1], kv[0]))[0]
         key[s] = (top, n, tot, n / tot, cnt)
     rev = {r['to']: r['from'] for r in rd(os.path.join(ROOT, 'benchmark-tx/dint128_label_map.tsv'))}
-    kp = {r['sign']: r['meaning'] for r in rd(KP)}
+    kp = {r['sign']: r['meaning'] for r in csv.DictReader(open(KP, newline=''), delimiter='\t')}  # not rd(): its '#' sign row is data
 
     def kp_of(s):
         b = s.rstrip("'")
@@ -117,16 +125,18 @@ def build(out_root):
             st = 'excluded:unaligned'
         elif len(fc) > 1:
             st = 'excluded:multi-letter'
+        elif s in key and key[s][0] == fc and not good(s):
+            st = 'excluded:low-agree' if kp_of(s) in (None, fc) else 'excluded:key-conflict'  # sign may be a real homophone
+        elif s in key and not good(s) and key[s][4].get(fc, 0) >= 2:
+            st = 'excluded:ambiguous-sign'  # the label covers >1 key sign or value (e.g. 4 = key_print 4 and D)
+        elif by_val.get(fc):
+            truth = '|'.join(sorted(by_val[fc]))  # scored: passZ's sign counts wrong when it is not in the set
         elif s not in key or key[s][2] < 2 or key[s][1] < 2:
             st = 'excluded:low-count'
-        elif key[s][3] < 0.75:
-            st = 'excluded:low-agree'
         elif kp_of(s) is not None and kp_of(s) != key[s][0]:
             st = 'excluded:key-conflict'
-        elif fc != key[s][0]:
-            st = 'excluded:low-agree'  # minority chunk of a sign that passes agree overall
         else:
-            truth = '|'.join(sorted(by_val[fc]))
+            st = 'excluded:low-agree'  # the letter has no sign passing count >= 2, agree >= 0.75 (+ key_print) on this leaf
         flag = ''
         if st == 'scored':
             nb = [status_of[j] for j in (i - 1, i + 1) if 0 <= j < len(status_of) and status_of[j][0] == ln]
@@ -181,7 +191,7 @@ def build(out_root):
     for P in ('A', 'B'):
         lines = defaultdict(list)
         for r in rd(os.path.join(TX, 'pass%s.tsv' % P)):
-            if r['sign_id'] not in ('CLEAR', 'NONE', ''):
+            if r['sign_id'] not in ('CLEAR', 'NONE', '', '.'):  # dots: see the docstring
                 lines[r['passage']].append(r['sign_id'])
         with open(os.path.join(od, 'pass%s.tsv' % P), 'w') as f:
             f.write('line\tpos\tsign\n')
