@@ -7657,4 +7657,9 @@ column + the error map of both pools, read-free, cap 4). Ideas register v2: rese
 | X5 learned reader weighting (TXE2-WEIGHT) | 3/7 p 0.34 (uniform 3/4; permuted controls fail) | not taken | dev-FAIL | 3.20 (with X19) |
 | X19 deletion detector (TXE2-WEIGHT) | flags 83-100% of lines | n/a | FAIL read-free | -- |
 | 0b gloss items (TXP-D89/D98/D113/B23) | f.89 240 scored E 10 (rule rebuilt after first score, gloss-visible); f.98v E 0; f.113 E 0 | f.23r (eval hand) 203 scored, 16 errors only on flagged positions; not pooled | the rebuilt-key recipe scores its own reads right by construction; truth re-derived by TXP-REBUILD (round 2 R) | 18.01 / 12.12 / 12.91 / 12.56 (1.2-1.6x caps) |
-| round 2 live 16:3x (PREREG-txeng2-2): R rebuild, X1 sheet inventory, X3 widened lattice, X4 calibrated confidence, X9/X17 doubt re-tune | | | running | caps 4/7/5/6/4 |
+| R truth re-derivation (TXP-REBUILD) | f89-kp passZ 0.390: 61/87 notation (homophones below the 0.75 rule) | n/a | not pooled; kp2 variant declared (round 3 R2) | 3.23 |
+| X1 sheet inventory (TXE2-SHEET) | detector 0/21 at 15% | not taken | dev-FAIL read-free | 2.96 |
+| X3 widened lattice + word LM (TXE2-LATT) | truth-in-lattice 10/12; fix 4/5 p 1.0 | not taken | dev-FAIL | 2.59 |
+| X4 calibrated confidence (TXE2-CONF) | top-3 holds truth 3/12; weights 2/9 | not taken | dev-FAIL | 6.03 |
+| X9+X17 doubt re-tune (TXE2-DOUBT) | 10/12 at 14.0% PASS | read-free: registered 6/15, substitute 9/15 at 2.9% | sorter feed (S4): eval 2% at 22 decisions | 3.32 |
+| round 3 live 17:1x (PREREG-txeng2-3): R2 kp2 truth, X7 same-sign strips, X12 count-then-read, X13 lattice cells, X8 cost | | | running | caps 3/7/6/6/8 |
