@@ -1,0 +1,187 @@
+passage	pos	sign_id	alt	conf	note
+f113e_L02	1	.		L	raised dot right after prose word, may belong to prose; prose before: "...nny" (word ending in y)
+f113e_L02	2	f	T	M	7-shape with crossbar
+f113e_L02	3	L		H	inverted T; small L above is from row above
+f113e_L02	4	4		M	4 with stroke from row below through it
+f113e_L02	5	z	Z	M	2-shaped z
+f113e_L02	6	0		H	line end
+f113_L03	1	0'		H	delta shape; line start
+f113_L03	2	w		H	
+f113_L03	3	p		H	xp form
+f113_L03	4	0'		M	gloss from row above touches
+f113_L03	5	v		H	
+f113_L03	6	sq		H	
+f113_L03	7	0'	NEW:0' with crossbar on ascender	M	crossbar on ascender
+f113_L03	8	.		H	
+f113_L03	9	1		H	
+f113_L03	10	.		H	
+f113_L03	11	z	Z	M	full-height z
+f113_L03	12	-:-		H	
+f113_L03	13	4		H	gloss 4 below
+f113_L03	14	0		H	
+f113_L03	15	w		H	
+f113_L03	16	+		H	
+f113_L03	17	sq		H	
+f113_L03	18	0'		M	gloss strokes above cross ascender
+f113_L03	19	0		H	
+f113_L03	20	c		H	
+f113_L03	21	m		H	
+f113_L03	22	t	L	M	cross on a base bar
+f113_L03	23	v'	0'	M	v with tall stroke rising
+f113_L03	24	0		H	
+f113_L03	25	m		H	
+f113_L03	26	c		H	
+f113_L03	27	sq		H	gloss stroke below
+f113_L03	28	#		H	
+f113_L03	29	a		H	
+f113_L03	30	c		H	
+f113_L03	31	w		H	
+f113_L03	32	y		H	psi
+f113_L03	33	L	1	M	vertical on base bar
+f113_L03	34	0'		H	
+f113_L03	35	y		M	psi, gloss p above
+f113_L03	36	m		H	
+f113_L03	37	w		H	gloss stroke below crosses
+f113_L03	38	sq	T	M	box with top bar overhanging
+f113_L03	39	L	1	M	vertical on base bar
+f113_L03	40	0'		H	
+f113_L03	41	y	f	L	stem with cross at top and bowl at lower left; crowded
+f113_L03	42	sq	T	M	open box with right leg
+f113_L03	43	0		H	gloss stroke below
+f113_L03	44	c		H	
+f113_L03	45	.		H	
+f113_L03	46	1		H	
+f113_L03	47	.		H	
+f113_L03	48	v'	0'	M	v with tall stroke rising
+f113_L03	49	0		H	
+f113_L03	50	0'		M	gloss crossbar on ascender
+f113_L03	51	sq		H	
+f113_L03	52	v		H	gloss below
+f113_L03	53	L		H	
+f113_L03	54	0		H	
+f113_L03	55	c		H	
+f113_L03	56	0'	4	M	triangular bowl with ascender
+f113_L03	57	v		M	gloss curve from above wraps it
+f113_L03	58	L		H	
+f113_L03	59	w		H	
+f113_L03	60	0		H	
+f113_L03	61	#		H	
+f113_L03	62	v		H	
+f113_L03	63	3		H	
+f113_L03	64	m		H	line end
+f113_L05	1	v		H	line start
+f113_L05	2	#	NEW:not-equal sign (two bars, slanted stroke)	M	two bars crossed by a slant
+f113_L05	3	v'	v	M	v with tall stroke rising
+f113_L05	4	4		M	open triangle; gloss 4 below
+f113_L05	5	NEW:v on a baseline bar	x	L	V sitting on a bar, gloss above touches
+f113_L05	6	.		H	
+f113_L05	7	1		H	
+f113_L05	8	.		H	
+f113_L05	9	sq		H	
+f113_L05	10	L		H	
+f113_L05	11	0'		M	gloss crossbar on ascender
+f113_L05	12	0		H	
+f113_L05	13	0'		H	
+f113_L05	14	c		H	
+f113_L05	15	.		H	
+f113_L05	16	1		H	
+f113_L05	17	.		H	
+f113_L05	18	sq		M	gloss above crosses
+f113_L05	19	v		H	
+f113_L05	20	#	NEW:not-equal sign (two bars, slanted stroke)	M	as pos 2
+f113_L05	21	v	v'	M	gloss above touches
+f113_L05	22	1		H	
+f113_L05	23	.		H	
+f113_L05	24	#		H	long vertical
+f113_L05	25	p		H	
+f113_L05	26	0		H	dot high above it, gloss
+f113_L05	27	z	Z	M	
+f113_L05	28	.		H	
+f113_L05	29	1		H	
+f113_L05	30	.		H	
+f113_L05	31	0'		M	crossbar on ascender
+f113_L05	32	m		H	
+f113_L05	33	L		H	
+f113_L05	34	sq		H	
+f113_L05	35	#		H	
+f113_L05	36	p	9	M	loop on top, gloss below crosses
+f113_L05	37	4		H	
+f113_L05	38	L	1	M	
+f113_L05	39	-:-		H	
+f113_L05	40	0		H	
+f113_L05	41	w		H	
+f113_L05	42	1		H	
+f113_L05	43	#		H	
+f113_L05	44	0		H	
+f113_L05	45	z	Z	M	
+f113_L05	46	.		H	
+f113_L05	47	1		H	
+f113_L05	48	.		H	
+f113_L05	49	w		H	
+f113_L05	50	0		H	
+f113_L05	51	f	#	M	pound-sign shape, gloss above crosses
+f113_L05	52	3		H	
+f113_L05	53	c		H	
+f113_L05	54	1		H	
+f113_L05	55	v		H	
+f113_L05	56	#		H	
+f113_L05	57	0		H	
+f113_L05	58	sq		H	
+f113_L05	59	.		H	
+f113_L05	60	1		H	
+f113_L05	61	.		H	
+f113_L05	62	c		H	
+f113_L05	63	a		H	
+f113_L05	64	t	L	M	base bar with cross
+f113_L05	65	#		H	
+f113_L05	66	0		H	prose after: "la"
+f113_L07	1	#		H	prose before: "estant"
+f113_L07	2	1		H	
+f113_L07	3	sq		H	
+f113_L07	4	v		H	gloss above
+f113_L07	5	0		H	
+f113_L07	6	v	v'	M	v with stem on left; gloss cross above
+f113_L07	7	w		H	
+f113_L07	8	y		H	psi with long descender
+f113_L07	9	#	NEW:not-equal sign (two bars, slanted stroke)	M	two bars crossed by a slant
+f113_L07	10	m		H	
+f113_L07	11	L	t	M	
+f113_L07	12	0		H	dot above is gloss
+f113_L07	13	c		H	
+f113_L07	14	1		H	
+f113_L07	15	.		H	
+f113_L07	16	#		H	
+f113_L07	17	.		H	
+f113_L07	18	1		H	
+f113_L07	19	.		H	
+f113_L07	20	sq		H	
+f113_L07	21	#	II	M	two verticals with bar
+f113_L07	22	v		H	
+f113_L07	23	w		H	
+f113_L07	24	9	p	M	loop with long descender
+f113_L07	25	.		H	
+f113_L07	26	1		H	
+f113_L07	27	.		H	
+f113_L07	28	0		H	gloss accent above
+f113_L07	29	4		H	
+f113_L07	30	1		H	
+f113_L07	31	f		M	f with crossbar
+f113_L07	32	y	4	M	psi-like with descender
+f113_L07	33	0		H	
+f113_L07	34	z	Z	M	2-shaped
+f113_L07	35	L		M	
+f113_L07	36	0		H	
+f113_L07	37	z	Z	M	
+f113_L07	38	0'		M	gloss crosses ascender
+f113_L07	39	1	t	M	gloss bar crosses it
+f113_L07	40	sq		H	
+f113_L07	41	#		H	
+f113_L07	42	NEW:heavy N-shape with overbar, possibly corrected	w	L	dark overwritten sign, gloss stroke through
+f113_L07	43	0		H	line end
+f113_L09	1	#		H	line start
+f113_L09	2	1		H	
+f113_L09	3	.		H	
+f113_L09	4	#		H	
+f113_L09	5	0		H	
+f113_L09	6	4		H	
+f113_L09	7	v		H	prose after: "et"
