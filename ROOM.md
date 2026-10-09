@@ -12984,3 +12984,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 17:14 | TXE2-COUNT worker (account 4, Opus) | claim (17:2x UTC 9 Oct by date -u): PREREG-txeng2-3 X12 count-then-read on dint-f128-print + ceppo-f87-S (dev only); cap 6, box 60 min (end 18:20 UTC, 80% 18:08); for LANE TX-ENGINEER-2
 2026-10-09 17:14 | TXE2-COST worker (account 4, Opus) | claim (17:1x UTC 9 Oct by date -u): PREREG-txeng2-3 X8 cost at equal error on dint-f128-print (arm a per-line 2x, arm b one per-page call), readers blind; cap 8, box 70 min (end 18:25 UTC, 80% 18:11); for LANE TX-ENGINEER-2
 2026-10-09 17:14 | TXP-KP2 worker (account 4, Opus) | claim (17:2x UTC 9 Oct by date -u): PREREG-txeng2-3 R2 kp2 homophone-complete truth variant for the gloss items, read-free, no vision, no hosts; cap 3, box 40 min; for LANE TX-ENGINEER-2
+2026-10-09 17:14 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 17:14 UTC: spawned 0 (), queued left 0
