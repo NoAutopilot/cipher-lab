@@ -1,0 +1,16 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	cipher-page	86r			folio arithmetic	owed
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	facing	85v			folio arithmetic	owed
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	before-2	85r			folio arithmetic	owed
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-1	86v			folio arithmetic	owed
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-2	87r			folio arithmetic	owed
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-3	87v			folio arithmetic	owed
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-4	88r			folio arithmetic	owed
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	cipher-page	86r			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	facing	85v			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	before-2	85r			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-1	86v			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-2	87r			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-3	87v			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-4	88r			folio arithmetic	answered CLEAR (recorded)
