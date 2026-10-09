@@ -115,6 +115,9 @@ Next action that depends on nobody (GAPS157, 3 Oct 2026): pre-register r at resi
 frozen one, then cut and read the unused numerals (p.2 left lower half, p.2 right page) in two blind Opus passes and test
 both tables against the shuffled-target and shifted-rule controls only (controls-vs-decode, no language-judge gate: the
 judge is retired for this leaf, GAPS157). The language reading itself waits on ASKS row 120 (a person's read of the gloss).
+Stale-line note (D1411-R21, 9 Oct 2026, account-4): the step above was already run by DEF1-1411 (5 Oct, section below;
+`def1411/score1411.py --check` re-run 9 Oct 11:26 UTC: "def1411 current", exit 0), so J6 was stopped before any priced step.
+What remains open here is ASKS row 120 and the Remaining gaps below, not this line.
 
 ## GAPS136 step: Cipherbrain Ferdinand III posts (3 Oct 2026, account-4)
 
