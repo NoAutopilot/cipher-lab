@@ -1,0 +1,41 @@
+tile	token	drawing	key_year	box	conf	note
+01	a	henryiii_Vivonne1.png	1574	405,44,419,58	H	small round a with stem
+02	b	henryiii_Vivonne1.png	1574	476,39,490,58	M	tall looped b stroke
+03	d	henryiii_Vivonne1.png	1574	269,22,284,38	H	round body, ascender curls left
+04	e	henryiii_Vivonne1.png	1574	134,22,146,38	M	epsilon-like looped stroke
+05	g	henryiii_Vivonne1.png	1574	110,26,125,40	M	looped g, underline stroke
+06	h	henryiii_Vivonne1.png	1574	70,22,81,38	H	h with tall looped ascender
+07	j	henryiii_Vivonne1.png	1574	199,99,212,117	H	j with descender, dot
+08	k	henryiii_Vivonne1.png	1574	69,42,79,58	H	looped k shape
+09	l	henryiii_Vivonne1.png	1574	136,42,147,56	M	looped l, script l
+10	m	henryiii_Vivonne1.png	1574	88,27,105,37	H	three-hump m
+11	n	henryiii_Vivonne1.png	1574	384,45,396,57	H	two-hump n
+12	o	henryiii_Vivonne1.png	1574	404,27,414,36	M	first of joined o loops
+13	p	henryiii_Vivonne1.png	1574	251,26,261,42	H	p with descender
+14	r	henryiii_Vivonne1.png	1574	386,64,396,75	M	small r before stroke
+15	s	henryiii_Vivonne1.png	1574	3,26,12,36	H	small s curve
+16	t	henryiii_Vivonne1.png	1574	296,22,308,39	M	looped t with dot
+17	x	henryiii_Vivonne1.png	1574	362,27,376,37	H	crossed x stroke
+18	y	henryiii_Vivonne1.png	1574	162,26,174,42	H	y with tail
+19	z	henryiii_Vivonne1.png	1574	1,63,12,76	H	flat-topped z
+20	tz	henryiii_Vivonne1.png	1574	181,25,196,42	H	t joined z descender
+21	to	henryiii_Vivonne1.png	1574	315,22,334,38	H	t then closed loop
+22	3	henryiii_Vivonne1.png	1574	70,80,83,98	H	3 with long descender
+23	#	henryiii_Vivonne1.png	1574	384,24,398,38	H	double-crossed hash sign
+24	:	henryiii_Vivonne1.png	1574	46,27,59,33	H	two dots side by side
+25	P	henryiii_Vivonne1.png	1574	226,26,243,37	H	two uprights, top bar
+26	S	henryiii_Vivonne1.png	1574	24,25,33,40	M	long s stroke, no bar
+27	f	henryiii_Vivonne1.png	1574	202,21,216,41	H	f with crossbar
+28	A	henryiii_Vivonne1.png	1574	44,99,61,115	H	capital A
+29	@	henryiii_Vivonne1.png	1574	472,22,498,39	H	a with large curling loop
+30	V	henryiii_Vivonne1.png	1574	429,42,441,58	M	long down-slanting stroke arrow
+31	R	henryiii_Vivonne1.png	1574	450,24,472,38	M	r-like swash with loop
+32	L	henryiii_Vivonne1.png	1574	340,43,356,58	H	capital L shape
+33	Z	henryiii_Vivonne1.png	1574	227,42,243,58	M	z with descending curl
+34	H	henryiii_Vivonne1.png	1574	110,81,128,98	M	H-like with crossbar, looped
+35	4	henryiii_Vivonne1.png	1574	136,61,147,75	H	digit 4
+36	6	henryiii_Vivonne1.png	1574	205,42,216,58	H	digit 6
+37	7	henryiii_Vivonne1.png	1574	91,42,104,58	H	digit 7
+38	c	henryiii_Vivonne3.png	1580	44,59,58,72	M	open curve, C with tail
+39	2	henryiii_Vivonne3.png	1580	207,39,221,51	H	clear handwritten digit two
+40	8	henryiii_Vivonne6.png	1588	48,28,59,42	H	two stacked loops, figure-eight
