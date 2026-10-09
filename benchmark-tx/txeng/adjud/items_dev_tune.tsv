@@ -1,0 +1,37 @@
+item	line	base_pos	anchor	candA	candB	sonnet	statuses	base_seq
+1	f178v_L01	3	3	T51	T95	T95	split+adj	T95
+2	f178v_L01	8	8	T51	T95	T95	split+adj	T95
+3	f178v_L01	12	12	T86	T60	T86	split+adj	T86
+4	f178v_L01	23	23	T50	T92	T50	split+adj	X_CE
+5	f178v_L02	19	19	T83	T81	T81	split_H_B+adj	T81
+6	f178v_L03	4	4	T50	T92	T50	split+adj	X_CE
+7	f178v_L03	24	24	T11	X_NEW X_S	T11	split+adj,gapA	T11
+8	f178v_L04	4	4	T50	T92	T50	split+adj	X_CE
+9	f178v_L05	7	7	T42	X_NEW	T42	split+adj	T42
+10	f178v_L05	9	9	T13	T64	T64	split_H_B+adj	T64
+11	f178v_L05	11	11	T86	T60	T86	split+adj	T86
+12	f178v_L05	25	25	T50	T92	T50	split+adj	X_CE
+13	f178v_L06	8	8	T29	T24 T88	T29	split+adj,gapA+adj	T29
+14	f178v_L06	26	26	T46	X_NEW	X_NEW	split_H_A+adj	X_NEW
+15	f178v_L06	28	28	T29	T24 T88	T29	split+adj,gapA+adj	T29
+16	f178v_L07	4	4	T18	T98	T18	split_H_A+adj	T18
+17	f178v_L07	23	23	T18	T98	T18	split_H_A+adj	T18
+18	f178v_L07	29	29	T50	T92	T50	split+adj	X_CE
+19	f178v_L08	3	3	T42	X_NEW	T42	split+adj	T42
+20	f178v_L08	5	5	T42	X_NEW	T42	split+adj	T42
+21	f178v_L08	10	10	T50	T92	T50	split+adj	X_CE
+22	f178v_L08	17	17	T18	T98	T18	split_H_A+adj	T18
+23	f178v_L08	20	20	T51	T95	T95	split+adj	T95
+24	f178v_L08	28	28	T18	T98	T18	split_H_A+adj	T18
+25	f178v_L09	1	1	T29	T24 T88	T29	split+adj,gapA+adj	T29
+26	f178v_L09	3	3	T18	T98	T18	split_H_A+adj	T18
+27	f178v_L09	29	29	T46	X_NEW	X_NEW	split_H_A+adj	X_NEW
+28	f178v_L10	3	3	T18	T98	T18	split_H_A+adj	T18
+29	f178v_L10	5	5	T50	T92	T50	split+adj	X_CE
+30	f178v_L10	8	8	T18	T98	T18	split_H_A+adj	T18
+31	f178v_L10	16	16	T46	X_NEW	X_NEW	split_H_A+adj	X_NEW
+32	f178v_L11	4	4	T95	T66	T95	split_H_B+adj	T95
+33	f178v_L11	14	14	T45	T88	T88	split_H_B+adj	T88
+34	f178v_L11	29	29	T60	T86	T60	split_H_A+adj	T60
+35	f178v_L11	31,32	32	T96 T95	T95 T96	T95 T96	gapA+adj,agree,gapB	T95 T96
+36	f178v_L12	28	28	T95	T66	T95	split+adj	T95
