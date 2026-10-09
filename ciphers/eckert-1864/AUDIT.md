@@ -6527,3 +6527,156 @@ header ("R OBrien") was taken as the sender; the page's own sibling 5805/1, prin
 operators in its headers. OR I/42 pt 3 (the department's Oct-Dec correspondence) was not on disk and had not been read by FV-FM4; it
 gave the signer, the operator and a second external check. Requests: archive.org 2 (djvu), be-api 8 (2 x 503), googleapis 1 (429),
 loc.gov 1 (403), Huntington 0.
+
+## AUDIT (FV-FM5b)
+
+Verifier FV-FM5b (account 1, for LANE LEDGER), 9 Oct 2026, 00:28-01:0x UTC by `date -u`; a separate session from the reader FM-R3b
+(account 1), not protecting its conclusions. Scope: **E220, E222, E223, E224, E225** (ciphertext.txt, Cipher No. 1, Fort Monroe ledger
+mssEC 25 = Huntington object 5952; NOTES "## FM-R3b"). Nothing decoded beyond key look-ups in key.md. Key source for all five: `period`.
+Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts: `fortmonroe/fv_fm5b_print.py` (+ `.out`; cached OR/ORN/Butler texts plus OR I/36 pt 3, I/40 pt 2, I/42 pts 2-3 fetched to scratch),
+`fortmonroe/fv_fm5b_beapi.py` (+ `.out`; Grant Papers by identifier, snippet only), `fortmonroe/fv_fm5b_hdl.py` (+ `.out`; CONTENTdm full text
+and two page images to scratch).
+
+### 1. Duplicates, prior-work, own transcription and image
+- **Duplicate diff:** pointers 5811, 5747, 5823, 5701, 5626 against every `###` header in ciphertext*.txt and status.json: 5747 also carries
+  E174 (14 June, Sheldon to O'Brien, row /2 -- the *reply* to E222, a different telegram); 5823 also carries E163 (row /1) and E177 (row /0),
+  both O'Brien to Sheldon, different telegrams. 5811, 5701, 5626 occur only in their own headers. **No duplicate.**
+- **Prior work** (hand checklist; FM-R3b's `prior_work.py` run on 5811/2 stands, exit 4 on target-level live-claim LEADs that do not cover
+  these units): own files CLEAR beyond the siblings named here; no other worker's claim names these five entries in ROOM.
+- **Own transcription** (Huntington volunteer text on disk, `sources/fortmonroe/p<pointer>.json`): matches ciphertext.txt word for word for
+  all five entries, with one header slip: E225's addressee is written **"S. H. Beckwith"** on the page (crop read this session), the
+  volunteer text and ciphertext.txt have "J. H. Beckwith" (recorded, not repaired: ciphertext.txt stays as transcribed).
+- **Image (eye check, this session):** pages 5823 and 5626 fetched at native size (6024x7200) under the hdl token to scratch, cut with
+  `tools/iiif_lines.py --image <page> --out <scratch> --region ... --lines-per-crop 2`: E223 "and B. Deford for an urgent milly terry /
+  Charles McCormick Medical Director Quadrant of Alba Abacus" and E225 "for Elgin Zebra our ...", "John I Davenport Florence Pierce" read as
+  transcribed. FM-R3b had read all nine of its pages whole at 2400 px; E220, E222, E224 were not re-imaged (transcription unchanged).
+- **Sender's/receiver's copies on disk:** mssEC 18 (`sources/mssEC18/p9901.json`, p.235 row 0, Washington 29 Nov 1864, 1 PM) holds the
+  Washington copy of the call that E220 answers: "GD Sheldon Ft Monroe ... Fanny harrow padlock to Pandora **R C Webster vinton Animal**
+  Please send here immediately every nutmeg weaseler and propel her you have sligo service at your upton that canby spared Answer at once
+  and give the names of those you send DH Rucker BrGen" -- addressed to Col. R. C. Webster, [Quartermaster], [Monroe]. The received copy of
+  the same call is on page 5811 itself (signed "Rucker / T. T. Eckert"). No Washington copy of E223 (to Eckert) or a City Point/Culpeper copy
+  of E222, E224, E225 is on disk (they did not pass Washington, or the received books are not transcribed).
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`; under the hdl token 00:38-00:40 UTC, 12 requests): "western metropolis"
+2 (5822, 5823), "deford" 5 (5823; 5852-5854 = Jan 1865 "Bende Ford" traffic; 10218 = Port Royal 1864, "the Ben Deford which will carry one
+thousand"), "ferry boats" 30 (5747 and unrelated pages), "quickest possible" 6 (5747; 9094 9107 9155 5372 5398 other telegrams), "charlottesville"
+40, "number large" 137 (word-OR noise; 5626 among them), "chief engineer" 20 (5701; the rest Comstock, Barnard, Humphreys), "military necessity"
+29, "capacity in all" 18 (5811; 5851 = 3 Jan 1865 Fort Monroe list to Beckwith, H. Livingston, Idaho, Weybosset among others), "livingston" 13
+(5811; 5787 = **4 Oct 1864, Sheldon to Maj. Eckert for Rucker: "will send Perit Belvidere H Livingston ... Weybosset ... Shelter Sedgwick
+tonight ... yoke Are See Webster paradise & vincent"** -- the same Fort Monroe quartermaster answering Rucker the same way, signed "[Signature]
+R. C. Webster, [Colonel] & [Quartermaster]"; 5851; 5769). 5822 (City Point 8 Dec 1864, Dodge to Col. Webster: "if she doesn't I shall have to
+take the Western metropolis for the ... boat") is context for E223. **No clear or received copy of E220, E222, E223, E224 or E225 in the
+holder's full text.**
+
+**Print** (letters-only grep, 168 cached volumes + 4 fetched to scratch, `fv_fm5b_print.out`; IA be-api by identifier, `fv_fm5b_beapi.out`):
+- **E220:** "will send tonight the" 0, "capacity in all" 0 (Civil War volumes), "6,600 men" 0, "names of those you send" 0, "every steamer and
+  propeller" 0; Weybosset (OR I/35 pt 2) and Louisa Moore (OR I/33) are other months. Grant Papers vol. 13: `papersofulyssess0013gran` answered
+  0 for "Rucker", "Webster", "Weybosset", "Western Metropolis" -- the identifier is probably not a real item (Rucker must occur): **Grant Papers
+  vol. 13 unreachable by this route**, as FM-R3b found. **Not located.**
+- **E222:** "send up all ferry" 0, "ferry boats immediately" 0, "hurry up our telegraph" 0. **OR I/40 pt 2 pp.5-6** (`warofrebellion402unit`)
+  prints the **same-page sibling 5747/0** word for word in clear: "General Butler's Headquarters, June 13, 1864 -- 3.40 p.m. (Received 10.10
+  a.m. 14th.) General Benham, Of Engineers: Send all your pontoons and bridge material to Fort Powhatan in the quickest possible form and time,
+  and come to that point yourself. B. F. BUTLER" (the ledger: "for Shelby Ben ham zodiac send all your village and patent material to saco plow
+  rattan immedy sligo possible from and time & come to that point your self Knox"); and p.13 "Fort
+  Monroe, June 13, 1864. Colonel Shaffer, Chief of Staff: By order of General Grant I send all ferry-boats and bridging material to Fort
+  Powhatan ... in charge of Captain Lubey, Fifteenth New York Engineers" -- the quartermaster's execution of what E222 orders. Benham, Fort
+  Monroe 9 a.m., names "Lieutenant-Colonel Biggs, chief quartermaster here". E222 itself (3.30 p.m., to Biggs) is **not located** there, nor in
+  Grant Papers vol. 11 (be-api: "Biggs" 1 item hit, snippets are Grant to Biggs 12 June and Butler's "Lt Col Biggs is so sick" -- not this
+  telegram; "quickest possible" 0; "telegraph party" 0).
+- **E223:** "B. Deford" 0, "urgent military necessity" 0, "Metropolis, Baltic" 0; "Western Metropolis" only OR I/36 pt 1 (May 1864, other use).
+  OR I/40 pt 2 prints Surg. Charles McCormick as Medical Director at Butler's headquarters (FM-R3b). **Not located.**
+- **E224:** "you are ordered to report to General Smith" 0, "as he passes Fort Monroe" 0, "large force to join" 0. Context printed: OR I/36 pt 3
+  p.32 and Butler IV p.239 (circular, 20 May 1864: "General Weitzel is serving as chief engineer in absence, by sickness, of Captain Farquhar");
+  Butler IV (letter to Mrs Butler, late May: "I have made Weitzel Chief Engineer ... Poor Farquhar is most grievously disappointed"); OR I/36 pt 3
+  p.265 (Farquhar, Captain, U.S. Engineers, reporting to W. F. Smith, 27 May) and pp.504-505, 660 (Farquhar with Smith's Eighteenth Corps at Old
+  Church and Cold Harbor, 1-6 June) -- Farquhar did go to Smith, as E224 orders. Grant Papers vol. 11: "Farquhar" snippet is a note "in reguards
+  to the line of the 18 A. C. to Capt Farquhar -- As I leave here tomorrow on account of ill health", not this telegram. **Not located.**
+- **E225: PRINTED.** Grant Papers vol. 10 (`papersofulyssess0010gran`, be-api snippets, three overlapping queries; index entry "Davenport, John I.
+  (U.S. Colored Cav.), 313n"): "On April 23, 11:30 a.m., John I. Davenport, Fort Monroe, telegraphed to USG. 'Our man reports Longstreet at
+  Charlotts- ville five thousand men from his own corps forwarded him a day Think the no large but believe the information' Telegram received,
+  DNA, RG 108, Let- ters Received." (John Y. Simon ed., *The Papers of Ulysses S. Grant* vol. 10, 1982, p.313n -- page from the volume's own
+  index; be-api gives no page locator, so p.313 is the index's, not read on the page.) This is the **received copy of the very telegram**, printed
+  in clear. Not in OR I/33 ("our man reports" 0, "number large" 0, "Charlottsville" 0). Butler IV names Lieut. Davenport as Butler's acting
+  secretary (June 1864). Lee to Davis, 23 Apr 1864 (OR I/33) puts Longstreet "near Cobham" (Albemarle, by Charlottesville) the same day.
+- Google Books: one probe answered 429; host stopped. Basler: not searched (no entry to or from Lincoln). Press of the day: not searched.
+
+### 3. Grade and reading corrections (FM-R3b's table, reading.md)
+- **E220:** the tail **"walrus paradise Webster" = [Signed] [Colonel] Webster** = Col. R. C. Webster, Chief Quartermaster at Fort Monroe:
+  "Webster" is the plain surname, not the code word Webster = Signature (the decoder prints "[signed] [Colonel] [signed]"; FM-R3b's table has
+  the signer as Geo D Sheldon, who is the operator). Evidence: Rucker's call is addressed "R C Webster" (mssEC 18 p.235, 9901/0); the 4 Oct 1864
+  answer on page 5787 is signed "Are See Webster paradise"; FV-FM4 identified the same officer for E193. "melody plague publish" = 60 + 6, x 100 =
+  **6,600** (H, three numeral groups, the 5,700 convention of E193); "spit" = Men (H). Reading: "[2.30 PM] For Rucker, [Washington]. I will
+  send tonight the H. Livingston, Weybosset, Gen'l Sedgwick, Massachusetts, Louisa Moore, Idaho, Montauk and Beaufort. Capacity in all for
+  [6,600] [men]. [Signed] [Colonel] Webster." Code groups: Henrietta, growl, zebra, pekin x3, pedlar x3, unity, melody, plague, publish, spit,
+  walrus, paradise = **16 H of 16**, 0 M (FM-R3b H 15 / M 2).
+- **E222:** sound. "saco how rattan" = [Fort] Powhatan (phonetic plain after the key's Fort; the sibling's "saco plow rattan" is the same place,
+  printed "Fort Powhatan"); "walrus Knox" = [Signed] [Butler] (R. O'Brien is the operator); "they lumber" = the lumber, "from" = form (the printed
+  sibling has "form"); "answer" plain. Code groups paradise, unity, saco x2, zebra, walrus, knox, wrangle = **8 H of 8**; "how rattan" no longer M.
+- **E223:** **"Baltic" is plain** = the transport steamer Baltic, in a list of three vessels ("the Western Metropolis, Baltic and B. Deford"); the
+  decoder's [Chattahoochee] is wrong (the key word Baltic is a river code that cannot stand between two steamer names). "Shelby" in "surgeon
+  Shelby Barns" = Surgeon [General] Barnes (Joseph K. Barnes) H; "polkaing shelter" = [Command]ing [General] H; "tin form" = inform, "milly terry
+  tarquinity" = military necessity (phonetic plain, image-checked). Reading: "For Surgeon [General] Barnes. The [Command]ing [General] directs me
+  to inform you that he has taken the Western Metropolis, Baltic and B. Deford for an urgent military necessity. [Signed] Charles McCormick,
+  Medical Director, [Department] of [Virginia] [and North Carolina]." Code groups Shelby, unity, polka, shelter, pedlar, walrus, quadrant, alba,
+  abacus = **9 H of 9**; Baltic, Western Metropolis, B. Deford, milly terry plain (FM-R3b's 4 M resolved, "Baltic" held **M** only as to which
+  vessel of the name).
+- **E224:** sound. "Weitzell" = Weitzel; "Palsy and Engineer" = [Brigadier General] and [Chief] Engineer. Code groups zodiac x2, nankin x2, salem,
+  jupiter, animal, walrus, palsy = **9 H of 9**.
+- **E225:** the print grades every code group **C**: Elgin? (addressee; the print says "telegraphed to USG", so Elgin = Grant, **I** -- not in key.md),
+  Zebra, wicks = Report(s), hoax = Longstreet, brocade = Charlottesville, Zodiac, plaster woodbury = 5 x 1000 = five thousand, spit = men, Pelton =
+  corps, unity, Sweden = information, Yoke = signature, Florence = 11.30 AM (the print's "11:30 a.m.") = **13 C of 13**, Elgin I, "Pierce" **M**
+  (unexplained trailing word, not in the print). Corrections: the signer is **John I. Davenport** (plain; the decoder reads "John" as [Grant]);
+  FM-R3b's "[information correct]" adds a word the print and the ledger do not have ("believe the information"); the addressee is S. H. Beckwith.
+
+### 4. Classification (key `period`)
+`depth_pct` = H(or C) / code-word groups (plain names the decoder mapped are excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E220** Col. R. C. Webster (Chief QM, Fort Monroe) via Sheldon to Brig. Gen. D. H. Rucker, Washington, 29 Nov 1864 | **N3** (weak: the vessel list is clear in the holder's public transcription; the key supplies 2.30 PM, Washington, 6,600 men, Colonel) | unknown | **D3** | 100 (16 H of 16) | code clause: Melody/Plague/Publish numerals and Spit = Men read in E193-type figures passim, Paradise = Colonel passim; external (non-statistical): Rucker's call in mssEC 18 p.235 (9901/0) to R. C. Webster asking for every steamer and propeller and their names, which E220 answers; 5787 (4 Oct) the same officer's parallel answer |
+| **E222** Butler (operator R. O'Brien) to Sheldon for Lt. Col. Biggs, Fort Monroe, 13 June 1864 3.30 PM | **N3** (weak: the body is clear in the transcription; the key supplies Colonel, Fort, Butler, Telegraph) | unknown | **D3** | 100 (8 H of 8) | code clause: Knox = Butler, Saco = Fort (printed sibling 5747/0 "Fort Powhatan" ... "B. F. Butler"); external (non-statistical): OR I/40 pt 2 pp.5-6 prints the 3.40 PM sibling in clear and p.13 the Fort Monroe quartermaster's execution ("I send all ferry-boats ... to Fort Powhatan"); E174 is the ledger's reply |
+| **E223** Surg. Charles McCormick (Medical Director) via Sheldon to Maj. Eckert for Surgeon General Barnes, 9 Dec 1864 | **N3** (weak: mostly clear) | unknown | **D3** | 100 (9 H of 9) | code clause: Quadrant/Alba/Abacus = Department of Virginia and North Carolina passim; external: OR I/40 pt 2 McCormick as Medical Director at Butler's HQ; 5822 (8 Dec) Dodge to take the Western Metropolis |
+| **E224** Brig. Gen. G. Weitzel (operator R. O'Brien) to Capt. F. U. Farquhar via Sheldon, 27 May 1864 | **N3** (weak: the operative sentence is clear; the key supplies W. F. Smith, force, Grant, Monroe, Brigadier General) | unknown | **D3** | 100 (9 H of 9) | code clause: Nankin = W. F. Smith, Jupiter = Grant passim; external (non-statistical): OR I/36 pt 3 pp.265, 504-505, 660 (Farquhar with Smith's 18th Corps 27 May-6 June); Butler IV / OR I/36 pt 3 p.32 (Weitzel chief engineer in Farquhar's absence) |
+| **E225** Lieut. John I. Davenport (Fort Monroe) via Sheldon to S. H. Beckwith, Culpeper, for Grant, 23 Apr 1864 11.30 AM | **N1** (the plaintext is printed: Grant Papers vol. 10 p.313n, from the received telegram, DNA RG 108; our reading is an independent re-decipherment) | **known** | **D3** | 100 (13 C of 13; Elgin I, Pierce M) | external (non-statistical): the printed received copy agrees with every code value; not D4 (no fresh rule-7 re-derivation) |
+
+- **E220: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 29 Nov 1864 the chief quartermaster at Fort Monroe,
+  Col. R. C. Webster, answered General Rucker's call for every available steamer by naming eight he would send that night (H. Livingston,
+  Weybosset, Gen'l Sedgwick, Massachusetts, Louisa Moore, Idaho, Montauk, Beaufort), capacity in all 6,600 men. The telegram was not located in
+  the Official Records (ser. I vol. 42 pts 2-3), Butler's printed correspondence (vols. IV-V) or the Huntington's full-text search (searched 9 Oct
+  2026); Grant Papers vol. 13 was not reachable." Unsafe: "first decipherment", "previously unread". Depth sentence (mine): "On 29 Nov 1864 Fort
+  Monroe's chief quartermaster told Rucker in Washington he would send eight named steamers that night with room for 6,600 men."
+- **E222: N3 (weak).** Safe sentence: "Read at grade H with Cipher No. 1: at 3.30 p.m. on 13 June 1864 Butler's headquarters ordered Lieutenant-
+  Colonel Biggs at Fort Monroe to send up all ferry-boats at once to Fort Powhatan, and the lumber there in the quickest possible form and time,
+  and asked him to hurry up the telegraph party. The Official Records (ser. I vol. 40 pt 2) print Butler's message of ten minutes later to General
+  Benham from the same ledger page and the quartermaster's report that he was sending the ferry-boats, not this telegram (searched 9 Oct 2026)."
+  Depth sentence (mine): "On 13 June 1864, as the Army of the Potomac crossed the James, Butler ordered every ferry-boat at Fort Monroe up to Fort
+  Powhatan."
+- **E223: N3 (weak).** Safe sentence: "Read at grade H with Cipher No. 1: on 9 Dec 1864 the medical director of the Department of Virginia and
+  North Carolina, Surgeon Charles McCormick, told the Surgeon General that the commanding general had taken the Western Metropolis, the Baltic and
+  the B. Deford for an urgent military necessity (the week the Fort Fisher expedition sailed). Not located in the Official Records (ser. I vol. 42
+  pt 3), Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026)." Depth sentence (mine): "On 9 Dec 1864 the
+  department's medical director reported to the Surgeon General that three steamers, the Western Metropolis, Baltic and B. Deford, had been
+  taken by the commanding general for military necessity."
+- **E224: N3 (weak).** Safe sentence: "Read at grade H with Cipher No. 1: on 27 May 1864 General Weitzel ordered Captain Farquhar to report as
+  chief engineer to General W. F. Smith, who was leaving Bermuda Hundred with a large force to join Grant, as Smith passed Fort Monroe. The
+  Official Records (ser. I vol. 36 pt 3) show Farquhar with Smith's corps in the following days, not this telegram (searched 9 Oct 2026)."
+  Depth sentence (mine): "On 27 May 1864 Captain Farquhar was ordered to join W. F. Smith's force, bound for Grant, as its chief engineer when
+  it passed Fort Monroe."
+- **E225: N1.** Safe sentence: "The telegram is printed in The Papers of Ulysses S. Grant, vol. 10, p.313n (from the received copy, National
+  Archives RG 108); our reading of the Fort Monroe ledger's cipher copy with Cipher No. 1 agrees with that print in every code word." Unsafe:
+  anything implying the content was unknown. Depth sentence (mine): "On 23 Apr 1864 Butler's secretary at Fort Monroe passed Grant a scout's report
+  that Longstreet was at Charlottesville with 5,000 men of his own corps forwarded a day." Not queued for a second opinion (N1).
+
+### 5. Postmortem
+FM-R3b's readings were sound in substance; four slips. (1) E225: the reader found the Grant Papers index entry (p.313n) and listed it as "not
+read"; one be-api phrase query ("our man reports") on the same identifier returns the printed telegram -- a reader who finds an index hit on the
+signer should query a decoded phrase on that identifier before filing. (2) E220's signer: the plain surname Webster read as the code word for
+Signature, the same slip FV-FM4 found in E193 -- the Fort Monroe quartermaster signs "paradise Webster"; a future reader of a Fort Monroe-to-Rucker
+entry should expect Col. R. C. Webster. (3) E223's "Baltic" decoded as a river in a list of steamers. (4) E225's "[information correct]" adds a
+word. E225's ledger header "J. H." for "S. H." Beckwith is a volunteer-transcription slip, recorded not repaired. Side find: row **5747/0**
+(Butler to Benham, 13 June 1864, 3.40 PM, unfiled) is printed in clear in OR I/40 pt 2 pp.5-6: any future reader of it starts from that print
+(N1). Corrections are carried by a FIX job (decode.py entry notes; reading.md is the decoder's, rule 7); this section records them.
+Requests: hdl.huntington.org 12 (one token block, 00:38-00:40 UTC); archive.org 4 (djvu downloads, 2 s apart); be-api 18 (1.6 s apart, no 502);
+Google Books 1 (429, stopped).
