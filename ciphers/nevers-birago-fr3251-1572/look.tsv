@@ -1,0 +1,16 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	cipher-page	178r		f178r_verso177_canvas181.jpg	manifest	owed
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	facing	177v			folio arithmetic	owed
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	before-2	177r			folio arithmetic	owed
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-1	178v		f178v_179r_canvas182.jpg	manifest	owed
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-2	179r		f179v_insert_canvas183.jpg	manifest	owed
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-3	179v			folio arithmetic	owed
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-4	180r			folio arithmetic	owed
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	cipher-page	178r		f178r_verso177_canvas181.jpg	manifest	answered KNOWN (recorded)
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	facing	177v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	before-2	177r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-1	178v		f178v_179r_canvas182.jpg	manifest	answered KNOWN (recorded)
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-2	179r		f179v_insert_canvas183.jpg	manifest	answered KNOWN (recorded)
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-3	179v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-4	180r			folio arithmetic	answered KNOWN (recorded)
