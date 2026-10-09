@@ -18,9 +18,20 @@ a mark colour under 3:1 on its background (#E69F00 on white), light text on a li
 Must NOT flag: sheets_light, sorter_light and dark with their declared tint/text pairs; a palette whose worst pair is
 only just over the gate (WARN is a judgement call, not a failure). Tests: tools/tests/test_cvd_check.py (offline).
 
-CLI: python3 tools/cvd_check.py --palette NAME | --marks '#a,#b' --bg '#fff' [--tints '#t'] [--text '#x'] [--tint-text T:X,...]
+Audit (--audit FILE..., MQS-CVD-AUDIT, 9 Oct 2026). Extracts colour literals from a tool's source or template: hex
+#rgb/#rrggbb anywhere; 3-int tuples on lines that call cv2, in a file that imports cv2 and not PIL ImageDraw, or after --bgr, read as BGR, other tuples as RGB. Keeps the
+chromatic ones (CIE LCh chroma >= 15; neutrals keep their lightness under CVD and are skipped) and flags each pair that
+is distinct in normal vision (dE2000 >= GATE) but under COLLAPSE (10) under protan, deutan or tritan (CVD-COLLAPSE), and
+each red/orange vs green hue pair (RED-GREEN, the project rule). COLLAPSE = 10 is a declared tuning on Okabe-Ito (its
+21 pairs bottom out at 11.1 simulated, and 10 of them fall under the 18 WARN floor, so 18 cannot mean "collapse") plus
+ten problem pairs; held-out control in tools/tests/PREREG-MQS-CVD-AUDIT.md. A lead list for a person, never a verdict:
+it cannot see which colours share a page (a file with light and dark themes pairs across them), which carry meaning,
+or what they sit on (contrast stays with --marks/--bg). Meant to catch: glyph_atlas's cv2 red vs green overlay; tab10
+red vs green. Must NOT flag: Okabe-Ito (0 of 21 pairs); a neutral pair (#ffffff vs #24211c). Exit 0 no flags, 2 flags.
+
+CLI: python3 tools/cvd_check.py --audit FILE [FILE ...] [--bgr] | --palette NAME | --marks '#a,#b' --bg '#fff' [--tints '#t'] [--text '#x'] [--tint-text T:X,...]
 """
-import argparse, itertools, math, sys
+import argparse, itertools, math, re, sys
 
 GATE = 20.0
 WARN_FLOOR = 18.0
@@ -204,13 +215,87 @@ def report(res, label=''):
     return '\n'.join(lines)
 
 
+COLLAPSE = 10.0
+CHROMA_MIN = 15.0
+HEX_RE = re.compile(r'(?<![0-9A-Za-z&])#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})(?![0-9A-Za-z])')
+TUP_RE = re.compile(r'\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)')
+
+
+def lch(hexcol):
+    L, a, b = rgb_to_lab(hexcol)
+    return L, math.hypot(a, b), math.degrees(math.atan2(b, a)) % 360
+
+
+def extract(text, bgr=False):
+    """Return {hex_lower: [line numbers]} for every colour literal in text."""
+    out = {}
+    if 'import cv2' in text and 'ImageDraw' not in text:
+        bgr = True  # a cv2-only file: every colour tuple is BGR
+    for n, line in enumerate(text.splitlines(), 1):
+        for m in HEX_RE.finditer(line):
+            out.setdefault(to_hex(parse_hex(m.group(1))), []).append(n)
+        if 'cv2.' in line or 'col' in line.lower() or 'fill' in line or 'outline' in line:
+            for m in TUP_RE.finditer(line):
+                v = [int(x) for x in m.groups()]
+                if max(v) > 255:
+                    continue
+                if bgr or 'cv2.' in line:
+                    v = v[::-1]
+                out.setdefault('#%02x%02x%02x' % tuple(v), []).append(n)
+    return out
+
+
+def _hue_class(h):
+    if h >= 345 or h < 60:
+        return 'red'
+    if 100 <= h < 175:
+        return 'green'
+    return None
+
+
+def audit_colours(cols):
+    """cols: iterable of hex. Return list of (a, b, kind, detail) flags among chromatic colours."""
+    chrom = sorted({c.lower() for c in cols if lch(c)[1] >= CHROMA_MIN})
+    flags = []
+    for a, b in itertools.combinations(chrom, 2):
+        dn = de2000(rgb_to_lab(a), rgb_to_lab(b))
+        if dn >= GATE:
+            sims = {v: de2000(rgb_to_lab(simulate(a, v)), rgb_to_lab(simulate(b, v))) for v in VISIONS[1:]}
+            v = min(sims, key=sims.get)
+            if sims[v] < COLLAPSE:
+                flags.append((a, b, 'CVD-COLLAPSE', 'normal %.1f, %s %.1f' % (dn, v, sims[v])))
+        ha, hb = _hue_class(lch(a)[2]), _hue_class(lch(b)[2])
+        if {ha, hb} == {'red', 'green'}:
+            flags.append((a, b, 'RED-GREEN', 'hues %.0f / %.0f' % (lch(a)[2], lch(b)[2])))
+    return chrom, flags
+
+
+def audit_file(path, bgr=False):
+    with open(path, encoding='utf-8', errors='replace') as f:
+        found = extract(f.read(), bgr)
+    chrom, flags = audit_colours(found)
+    lines = ['%s: %d colour literals, %d chromatic, %d flags' % (path, len(found), len(chrom), len(flags))]
+    for a, b, k, d in flags:
+        lines.append('  %s %s (line %s) vs %s (line %s): %s' % (k, a, found[a][0], b, found[b][0], d))
+    return flags, '\n'.join(lines)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--palette', choices=sorted(PALETTES))
     ap.add_argument('--marks'); ap.add_argument('--bg'); ap.add_argument('--tints', default='')
     ap.add_argument('--text', default='')
     ap.add_argument('--tint-text', default='', help='TINT:TEXT,TINT:TEXT pairs checked at 4.5:1')
+    ap.add_argument('--audit', nargs='+', metavar='FILE', help='lead list of CVD-collapsing / red-green colour pairs')
+    ap.add_argument('--bgr', action='store_true', help='read every 3-int tuple as BGR (cv2)')
     a = ap.parse_args(argv)
+    if a.audit:
+        n = 0
+        for p in a.audit:
+            fl, txt = audit_file(p, a.bgr)
+            n += len(fl)
+            print(txt)
+        return 2 if n else 0
     if a.palette:
         res = check_palette(a.palette)
     else:

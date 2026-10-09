@@ -1,4 +1,4 @@
-# PREREG MQS-CVD-AUDIT (account 4), written 09:47 UTC 9 Oct 2026 by date -u, pushed before the control runs
+# PREREG MQS-CVD-AUDIT (account 4), written 09:39 UTC 9 Oct 2026 by date -u, pushed before the control runs
 
 Option: `tools/cvd_check.py --audit FILE...` -- extracts colour literals (hex `#rgb`/`#rrggbb` in any file; 3-int tuples
 on cv2 drawing lines read as BGR, other tuples as RGB) from a tool's source or template, keeps the chromatic ones

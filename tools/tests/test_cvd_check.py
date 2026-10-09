@@ -62,4 +62,14 @@ try:
     t(worst < 0.01, 'de2000 agrees with skimage on 20 random pairs (max diff %.4f)' % worst)
 except ImportError:
     print('SKIP skimage not installed')
+# --audit (MQS-CVD-AUDIT): must catch a cv2 BGR red vs green overlay; must not flag Okabe-Ito or neutrals
+found = c.extract('import cv2\ncv2.rectangle(d, a, b, (0, 0, 255), 1)\ncv2.line(d, a, b, (0, 160, 0), 1)\n')
+_, fl = c.audit_colours(found)
+t(set(found) == {'#ff0000', '#00a000'} and any(k == 'CVD-COLLAPSE' for _, _, k, _ in fl)
+  and any(k == 'RED-GREEN' for _, _, k, _ in fl), 'audit catches cv2 BGR red vs green')
+_, fl = c.audit_colours(['#E69F00', '#56B4E9', '#009E73', '#F0E442', '#0072B2', '#D55E00', '#CC79A7'])
+t(not any(k == 'CVD-COLLAPSE' for _, _, k, _ in fl), 'audit does not collapse-flag Okabe-Ito')
+chrom, fl = c.audit_colours(['#ffffff', '#24211c', '#f3f1ec'])
+t(chrom == [] and fl == [], 'audit skips neutrals')
+t(set(c.extract('a{color:#fff;background:#0072B2} &#123; x#123abc')) == {'#ffffff', '#0072b2'}, 'audit hex extraction')
 sys.exit(1 if fails else 0)
