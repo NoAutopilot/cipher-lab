@@ -159,5 +159,52 @@ class TestFixFm3Notes(unittest.TestCase):
         r, _ = self.run_entry(["pony publish pebble", "split: publish"])
         self.assertEqual(r, "[9] [103]")
 
+
+class TestHolderExportNotes(unittest.TestCase):
+    """HOLDER-EXPORT fix (9 Oct 2026): "merge:" and "graded:" notes, and the tokens list, for carrying the audits' hand
+    grades into the derived block (E33 pan-a-ma, E57 Ann/collared I, E68 Jones M, E122 pos/Joke unread).
+    Must catch: a code word the clerk split across a space or a line ("pana. ma" = Panama) read once; a word the audit
+    grades by hand kept as written and counted with that grade (I, M or U); every counted token listed once in reading
+    order. Must NOT: merge the same words when they are not adjacent, touch a word with no note, or change the reading
+    or counts when a tokens list is passed."""
+    K = {"panama": ("Cavalry", "H", "word"), "ann": ("1 AM (time word)", "H", "time"),
+         "harrow": ("20 (numeral)", "H", "numeral"), "peach": ("2 (numeral)", "H", "numeral"),
+         "weasel": ("Steam", "H", "word")}
+
+    def run_entry(self, lines, tokens=None):
+        return decode.decode_entry(decode.entry_text(["hdr"] + lines), self.K, tokens=tokens)
+
+    def test_merge_across_space_and_line(self):
+        r, c = self.run_entry(["for your pan - a.", "ma here", "the pan -", "a ma Division", "merge: pana+ma"])
+        self.assertEqual(r, "for your [Cavalry] here the [Cavalry] Division")
+        self.assertEqual(c["H"], 2)
+
+    def test_merge_needs_adjacent(self):
+        r, c = self.run_entry(["pana went ma", "merge: pana+ma"])
+        self.assertEqual(r, "pana went ma")
+        self.assertEqual(c["H"], 0)
+
+    def test_graded_kept_as_written(self):
+        r, c = self.run_entry(["call at Ann a pol is for collared men", "graded: ann:I collared:I pos:U"])
+        self.assertEqual(r, "call at Ann a pol is for collared men")
+        self.assertEqual((c["I"], c["H"]), (2, 0))
+        r, c = self.run_entry(["insert Jones cipher", "graded: jones"])
+        self.assertEqual((r, c["M"]), ("insert Jones cipher", 1))
+        r, c = self.run_entry(["at pos there", "graded: pos:U"])
+        self.assertEqual((r, c.get("U")), ("at pos there", 1))
+
+    def test_no_note_reads_key(self):
+        r, c = self.run_entry(["call at Ann a pol is"])
+        self.assertIn("{time: 1 AM}", r)
+
+    def test_tokens_list(self):
+        toks = []
+        r, c = self.run_entry(["harrow peach weaselers Jones", "graded: jones:M"], tokens=toks)
+        self.assertEqual(r, "[22] [Steam]ers Jones")
+        self.assertEqual([(t[1], t[2], t[3]) for t in toks],
+                         [("harrow", "20 (numeral)", "H"), ("peach", "2 (numeral)", "H"), ("weaselers", "Steam", "H"),
+                          ("Jones", "", "M")])
+        self.assertEqual(self.run_entry(["harrow peach weaselers Jones", "graded: jones:M"]), (r, c))
+
 if __name__ == "__main__":
     unittest.main()

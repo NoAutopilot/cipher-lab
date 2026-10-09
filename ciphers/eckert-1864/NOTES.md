@@ -2685,3 +2685,22 @@ queued for account 3. Decoder fixes handed to a FIX worker (not applied here): p
 Webster (E237), John and Forks = Fox (E230); E235's dropped first line ("Last friday lonesome ..."), "polk[er]" = Command, "peach lamp plank"
 not [34]; headers E235 (Sheldon to Eckert) and E237 (J. D. Webster, Nashville, to Halleck, repeated via Monroe for Beckwith). Lesson for the
 next Fort Monroe readers: run the holder's full-text search on two or three plain words of each entry before decoding.
+
+## HOLDER-EXPORT fix (9 Oct 2026, 00:41-01:2x UTC by date -u; account 3, for the Huntington delivery)
+The derived blocks of reading.md, reading-no2.md and reading-no9.md still carried decoder readings the audits had corrected by hand, so the
+Huntington delivery copied withdrawn readings. The audits' corrections are now note lines in ciphertext*.txt (each with a `note:` naming the
+AUDIT.md section), and `decode.py` gained two notes: `merge: a+b` (a code word split across a space or line, E33 pan-a-ma = Panama) and
+`graded: word[:G]` (a word kept as written but counted with the audit's grade: plain sound-alikes I, unsettled words M, unread groups U),
+plus an optional `tokens=[]` list on `decode_entry` that tools/holder_export.py reads (tests: tools/tests/test_eckert_decode.py). Carried:
+E33 (wag plain; Panama x2; Reading - ped = Equip; Chisel plane U), E68 (person plain; platation I; Jones M), E96 (William, persons M), E104
+(wolves = Scout x2), E122 (Spencer plain; pos, Joke U), E39 (perfume = By the way of), E40 (Barnard = Secretary of the Treasury; nick U),
+E27 (Grunt M), E59 (Susan M), E47 (Vintur I), E57 (Ann, collared I), E62 (Ann = apple = is I), E66 (Banditte, Vain, fleet, Weaselira I;
+Waymomers M), E78 (mangle M), E106 (Cedar, tulip M; Narrow = 20 I; mangle U), E123 (lady M), E145 (France, Beaver M), E162 (sligs M),
+E172 (address Washington plain), E175 (tulip M), E176 (sutton M), E177 (flight, flights M), E179 (measles M), E37/E43/E50 unread groups U;
+N2-BI (presume plain), N2-BN (Humphreys plain), N2-CE (collected, question plain), N2-BZ (Black M); O9-BA (Randolphed, wedlock M; line 6
+'rabbits' as the image reads, AUDIT.md LS3-V18a s.1), O9-BB (Surgery M). `decode.py --check`, `decode_no2.py --check`, `decode_no9.py
+--check` exit 0. No class, depth or AUDIT.md sentence changed (the readings now say what the audits already said).
+Count differences for a verifier (the token counts now match each code-word list; the audited completeness does not): E33 29 H + 2 U of 31
+(audit 28/30: its 28 adds Reading to the decoder's 27, which still counted 'wag' and missed the two Panamas); E59 11 H + 1 M of 12 (audit
+'12 H + 1 M of 13' counts Susan twice: the decoder's 12 H included it); N2-BZ part 2 19 H + 2 I + 1 M of 22 (audit '21 H of 22': yard and
+stick are I rows of key-no2.md). Not changed in status.json (a verifier's field); the delivery shows the token counts.

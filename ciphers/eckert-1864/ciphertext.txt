@@ -314,6 +314,8 @@ She was going to Norwich Arabia & had
 been teaching Waxy Webster L. C. Turner
 L C Turner Judge Advo.
 plain: harem
+variant: grunt=Grunt:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Grunt' = Warrenton by the book, M: the telegram was sent from Washington (AUDIT.md LS-V1, reading.md summary E27: 14 H of 15, 1 M).
 
 ### E28 | Page 197 | 9091 | 11 Oct 1864 11.30 AM, to Thurlow Weed, New York (Horner)
 Horner N Y. No 1 Washn Oct 11th 1864
@@ -356,6 +358,8 @@ you had better with draw immy as a can did
 ate for congress or reas sign as Provost marsh all
 Pekin I advise the former violet youth Jas B Fry
 plain: Dodge
+graded: wreath:U
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Wreath' unread (22 H of 23).
 
 ### E38 | Page 152 | 9045 | 12 Aug 1864 11 PM, to John G. Palfrey, Postmaster, Boston, via Horner, New York
 Horner (No 1) N. Y. Wash. Aug 12. 1864. 11 PM
@@ -389,6 +393,8 @@ parties to whom they are addressed This wrangle will
 be your authority & you will white to Post
 master shelter webster Byron will call see you soon
 plain: John Johns Hunter person trade
+gloss: perfume=By_the_way_of:H
+note: HOLDER-EXPORT fix 9 Oct 2026: 'perfume' read by the book's other row, Perfume = By the way of (key.md p.18 l.24 R), not the numeral row 3 (NOTES.md LS-R3; reading.md summary E39).
 
 ### E40 | Page 153 | 9046 | 13 Aug 1864 3 PM, to Robert Murray, U.S. Marshal, and Hiram Barney, Collector, New York (Horner)
 Jno Horner N. Y. Washn Aug 13th 1864
@@ -402,6 +408,9 @@ her cargo and nick youth Geo Harrington Acting
 Barnard Let the Boston message go forward when
 these two have had time to take effect
 plain: Princess
+gloss: barnard=Secretary_of_the_Treasury:H
+graded: nick:U
+note: HOLDER-EXPORT fix 9 Oct 2026: Barnard = '" " Treasury' in the book, the ditto standing for 'Secretary of' on the line above (key.md p.10 l.22); 'nick' unread (12 H of 13).
 
 ### E41 | Page 203 | 9097 | 15 Oct 1864, to C. A. Seward, New York (John Horner)
 John Horner N. Y. Washn Oct 15th 1864
@@ -439,6 +448,8 @@ arrange it so that I can have these peach boats
 back here at once I need them to move cattle
 & spaffords up the P monchie windpipe answer Webster Rucker
 plain: White
+graded: waymorners:U
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Waymorners' unread (19 H + 1 C of 21).
 
 ### E44 | Page 230 | 9124 | 15 Nov 1864 8.30 PM, to 'Niagara' at Hampton Roads (operator G. D. Sheldon, Fort Monroe)
 GD Sheldon Ft Monroe Washn Nov 15th 1864 830 PM
@@ -480,6 +491,8 @@ loss unity Order a Purple tons of coal a float
 at Appian if it can be spared to Hil = ton
 Heads Advise me how much you can send that I
 may replace it from the Torrent Yoke Meigs Vinton Shelter
+variant: vintur=Vinton:I
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Vintur' = Vinton (Quartermaster), the clerk's slip, I; the second ledger copy (pointer 5595) has 'vinton' (AUDIT.md LS-V4: 13 H + 1 I).
 
 ### E48 | Page 65 | 8957 | 5 May 1864 11.30 AM, to 'Season Banditti' at Baltimore (operator J. W. Sampson)
 J W Sampson Balto Washn May 5th 1864 1130 am
@@ -507,6 +520,8 @@ Saxon Quadroon Torch Waxy and Persia a dispatch
 preparing by Ivory amirs send her with it
 to Hit on Head zodiac Wick ham of
 sailing youth Meigs Belcher[?] Italys dispatch gone forward
+graded: amirs:U ham:U
+note: HOLDER-EXPORT fix 9 Oct 2026: 'amirs', 'ham' unread (17 H of 19).
 
 ### E51 | Page 204 | 9098 | 21 Oct 1864 11 AM, to Adna Anderson (operator J. C. Van Duzer, Nashville)
 J. C. Van Duzer Washn Oct 21st 1864 11 am
@@ -605,6 +620,11 @@ person spits belonging to plug & pebble pan -
 a ma Quit - mans pedlar all amounted &
 Reading - ped wal - rus. Chisel plane ax saw
 plain: small train Thayer
+plain: wag
+merge: pana+ma
+variant: readingped=Readinged
+graded: chisel:U plane:U
+note: HOLDER-EXPORT fix 9 Oct 2026: 'wag ons' = wagons (plain); 'pan - a. ma', 'pan - a ma' = Panama = Cavalry x2; 'Reading - ped' = Reading (Equip) + ped; signature 'Chisel plane' unread (AUDIT.md LS-V2c s.1 and s.4: 28 H of 30).
 
 ### E55 | Page 163 | 9057 | 26 Aug 1864 11 AM, to Lt. Col. C. H. Howard at Louisville (Capt. Bruch)
 Capt Bruch Washn D. C. Aug 26. 1864. Louisville Ky.
@@ -629,7 +649,8 @@ pol is for a load of collared
 whisky & if not there needed proceed
 to Hil ton Head & report for
 duty Yoke Meigs Bender his on one
-plain: Ann collared
+graded: ann:I collared:I
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Ann' (of Annapolis) and 'collared' (colored) are plain sound-alike words standing where the book has code words, graded I (NOTES.md LS-R5 grades; 8 H + 2 I of 10).
 
 ### E58 | Page 40 | 8932 | 19 Apr 1864, to Grant (code word John; page gives no operator or addressee header)
 Washington Apl 19th 1864
@@ -683,6 +704,8 @@ panama is of no use at Lexington that
 its Efficiency <del>there</del> is being impared & that
 it ought to be sent to the field
 youth Jew Tall oaks from little acorns grow
+variant: susan=Susan:M
+note: HOLDER-EXPORT fix 9 Oct 2026: time word 'Susan' = 11.30 PM by the book against the header 11.30 AM, M (NOTES.md LS-R5 grades; 12 H + 1 M of 13).
 
 ### E60 | Page 111 | 9003 | 16 Jul 1864 10.30 AM, Lincoln to John Hay at the Astor House (John is Hay's name in clear), signed President U.S. (no operator on the page)
 10 30 am Washn July 16th 1864
@@ -725,7 +748,8 @@ plenty of Coal as it is probably scarce at An =
 apple = is Zodiac Report your supply of Coal at present
 and that Expected with in a fort = night Report daily
 any arrivals of Weasel hers Confidential Youth Meigs Belcher Viola
-plain: Ann
+graded: annappleis:I
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Ann = apple = is' (Annapolis) holds the plain sound-alike 'Ann', graded I (NOTES.md LS-R5 grades; 10 H + 1 I of 11).
 
 ### E63 | Page 143 | 9036 | 6 Aug 1864 11.30 AM, to Grant (code word Japan), at Monocacy Junction (McCaine, No 1)
 McCaine (No 1) Wash D.C. Aug. 6. 1864 11. am
@@ -776,6 +800,10 @@ whisky from Banditte to sea Pedlar destination not wicked pekin
 should have full coal and water for ghost days zodiac
 white the vessels you can send and dispatch them unless
 counter man dead before they start yoke Belcher all sober
+variant: banditte=Banditti:I
+gloss: vain=Van:I fleet=Vliet:I weaselira=Steamers:I
+graded: waymomers:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Banditte' = Banditti = Baltimore, 'Vain fleet' = Van Vliet, 'Weaselira' = Weasel (Steam) + -ers = steamers, all I; 'Waymomers' M (AUDIT.md LS-V7 s.4: H 33, I 4, M 1).
 
 ### E67 | Page 240 (printed) | 9134 | 3 Dec 1864 12.30 PM, no addressee line (operator not given); signed H A Wise, Chief of Bureau
 1230 pm  Washn Decr 3d 1864
@@ -802,6 +830,10 @@ pembroke wreathe zebra If you think a personal
 interview with me important Send him here under
 adequate saddle that will take care he does
 not Escape webster Brutus is it all right
+plain: person
+gloss: platation=Communication:I
+graded: jones:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'in person' plain; 'platation' = Plate (Communicate) + -ation, I; 'Jones' M (AUDIT.md LS-V7 s.4: H 16, I 1, M 1).
 
 ### E70 | Page 93 (printed) | 8985 | 16 June 1864 12.20 PM, to Capt Smith, St Louis (signed Geo D Ramsay, Chf Ord)
 Capt Smith St Louis.  Wash. June 16. 1864 1220 pm
@@ -869,6 +901,8 @@ send it to Animal but I have ordered a
 large quantity of Wherry which will be needed here
 and Persia you are supplied should be allowed to
 come here Yoke Belcher Oh for wings of Dove
+graded: mangle:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'mangle' ('by mangle') has no row in any book, M (AUDIT.md LS3-V18a: H 12, M 1).
 
 ### E79 | mssEC 18 p.146, pointer 9812 | 5 Aug 1864 12 pm, to Capt Thomas, Quartermaster (operator Sampson, Balto; signed by the Quartermaster General's word)
 Sampson Balto  Wash 12 pm Aug 5 1864
@@ -1034,6 +1068,8 @@ agent in Baptism zebra If there
 are several persons answering tooth name
 care mustby exercised target the Wesley
 plug youth Insanity
+graded: william:M persons:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'William', 'persons' M, read as the plain name and word (AUDIT.md FV-LS4-R1b: 12 H of 14, William, persons M).
 
 ### E97 | Page 225 | 9119 | 7 Nov 1864, operator Capt. Clowry, St. Louis (LS4-R1b, row 9119/1)
 Capt Clowry St Louis  Washn Nov 7th 1864
@@ -1111,6 +1147,9 @@ with harrow purple rounds of olive for them
 will be sent you at once to Camel pos
 I doubt if a publish men are sufficient
 for the work they are undertaking Joke Augur 
+plain: spencer
+graded: pos:U joke:U
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Spencer' is the plain rifle name (OR I/43 pt 1 p.860); 'pos', 'Joke' unread (AUDIT.md FV-LS5-A s.3: 9 H of 11).
 
 ### E123 | Page 168 | 9062 | 3 Sept 1864 8.30 PM, to Peck (LS5-R1d; row 9062/2; image-read; page = the Huntington's title for 9062, was 170 from the entries index, PROP-HUNT 8 Oct 2026)
 8.30 pm  Washn Sept 3d 1864 
@@ -1122,6 +1161,8 @@ render any service tooth owners or shippers
 whack saddling or niggarding their vessels it
 wilby cheerfully given & you may so
 sweden them walrus Brutus wheres French lady
+variant: lady=Lady:M
+note: HOLDER-EXPORT fix 9 Oct 2026: tail 'French lady' = French [Thomas], M (status.json E123: 16 H of 17).
 
 ### E124 | Page 192 | 9086 | 2 Oct 1864 12 m, Beckwith at City Point, signed Geo K Leet (LS5-R1d; row 9086/1; image-read)
 Beckwith City Pt  Wash Oct 2 1864.
@@ -1224,6 +1265,8 @@ of Feeble unity They say Central Wiley is
 not in running order beyond Beaver Dam yoke
 Geo K Lect Princess and A. A. G
 variant: brussells=Brussels:M history's=History's:H
+variant: france=France:M beaver=Beaver:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'France' (New York) and 'Beaver' (Cahawba; 'Beaver Dam') M with 'Brussells' (AUDIT.md FV-LS5-B s.4 and AUD2-LEDGER-2: H 29, M 3 of 32).
 
 ### E146 | Page 245 | 9139 | 12 Dec 1864 2 PM, Capt. Bruch, Louisville, to Brig. Gen. Allen (LS5-R1e, row 9139/1; image-read)
 No1.
@@ -1271,6 +1314,8 @@ recd Send wolves down to Carroll & below
 to ascertain if the rose have any Salem
 this side of the amen or on the
 northern neck Sig Journal
+variant: wolves=Wolfs
+note: HOLDER-EXPORT fix 9 Oct 2026: 'wolves' x2 = Wolf = Scout (-ed, -ing), H (AUDIT.md FV-LS5-A s.3: 7 H of 7).
 
 ### E105 | Page 178 | 9072 | 12 Sept 1864, operator Carey at Lexington (LS5-R1c; row 9072/0; image-read)
 Carey Lexington  Washn Sept 12th 1864
@@ -1289,6 +1334,9 @@ that all your operations are to be based on
 the whisky you now have zebra all available whist
 have been ordered elsewhere by Jupiter Zodiac none can
 go to you webster Jonah how you like Mackerel
+variant: cedar=Cedar:M tulip=Tulip:M narrow=Harrow:I
+graded: mangle:U
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Cedar', 'tulip' M; 'Narrow' = Harrow = 20 from the header (22d), I; 'mangle' unread (AUDIT.md FV-LS5-A s.3: H 15, C 2, M 2, I 1 of 21).
 
 ### E107 | Page 90 | 8982 | 11 June 1864, Sam Bruch at Louisville (LS5-R1c; row 8982/2; image-read)
 Washn June 11th
@@ -1345,6 +1393,8 @@ states negro pedlar pagan E perfume united states nuptial pekin
 glance amos perfume inch zebra pagan Do plug U S
 negro pedlar pagoda F person same walrus Lieut paradise Howard
 R OBrien
+variant: sligs=Sligo:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'sligs' = Sligo (In the) with a stray s, M (AUDIT.md FV-FM1: 29 H of 30).
 
 ### E163 | Page 279 | 5823 | mssEC 25 (obj 5952, pointer 5823), 9 Dec 1864 Butler's Hd, R. O'Brien to Sheldon (FM-R1; row 5823/1; transcription only)
 Butlers Hd Dec 9 . 1864
@@ -1505,6 +1555,8 @@ we get through sending ties to Banjo unless
 you order differently yoke see L Mack Alpine
 Geo. D. Sheldon
 note: FIX-FM3: signer "see L Mack Alpine" = C. L. McAlpine (plain, phonetic); "I urn" probably "iron", "chairs" plain (M), "a plation" M (FV-FM3a s.3).
+plain-at: washington#1
+note: HOLDER-EXPORT fix 9 Oct 2026: address 'Maj. Eckert Washington' plain, not the code word Washington = Volunteer (status.json E172: 15 H).
 
 ### E173 | Page 296 | 5840 | mssEC 25 (obj 5952, pointer 5840), 26 Dec 1864 Ft Monroe, Sheldon to R. O'Brien, Hd. Qrs. A. J., for Gen. Turner (FM-R2a; row 5840/0; image-read)
 Ft Monroe Dec 26 - 1864
@@ -1545,6 +1597,8 @@ Pauline open shally send Pontoosuc or Nereus
 with her walrus John Rodgers quite foggy
 Geo D. Sheldon
 plain: journal temple tower john
+variant: tulip=Tulip:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'tulip' M (status.json E175: 15 H of 16).
 
 ### E176 | Page 276 | 5820 | mssEC 25 (obj 5952, pointer 5820), 8 Dec 1864 Bermuda Hundreds, S. H. Beckwith to Sheldon, embarkation list by steamer (FM-R2a; row 5820/0; image-read)
 Bermuda Hundreds Dec 8 . 1864
@@ -1559,7 +1613,8 @@ and mansion Louisa Moore perfume wine weybossett
 person william Montauk marriage spit yoke a
 are sutton lute and a see S
 SH Beckwith
-plain: sutton
+graded: sutton:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'sutton' in the closing words M (status.json E176: 35 H of 36).
 
 ### E177 | Page 279 | 5823 | mssEC 25 (obj 5952, pointer 5823), 8 Dec 1864 Hd Qrs A. of J., R. O'Brien to Sheldon, steamers for Monroe (FM-R2a; row 5823/0; image-read)
 Hd Qrs A of J Dec 8 1864
@@ -1576,6 +1631,8 @@ animal Webster paradise doge many weaselers form flights
 R OBrien
 plain-at: webster#1
 note: FIX-FM3: header Webster (#1) is the addressee Col. Webster, plain; the final "Webster paradise doge" = [signed] Colonel Dodge (FV-FM3a s.3). flight x2 and "many weaselers form flights" M.
+graded: flight:M flights:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'flight' and 'flights' M (status.json E177; the closing 'many weaselers form flights' M).
 
 ### E178 | Page 294 | 5838 | mssEC 25 (obj 5952, pointer 5838), 20 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, six steamers ordered out in bad weather (FM-R2a; row 5838/2; image-read)
 Ft Monroe Dec 20 - 1864
@@ -1603,6 +1660,8 @@ of Norwich or George Leary Webster Her man Biggs
 lent paradise and Vincent Laura here we go again
 Geo. D Sheldon
 plain: shelter
+graded: measles:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'measles' M (status.json E179: 15 H of 16).
 
 ### E200 | Page 36 | 9696 | 6 Apr 1864 12 M, operator Baldwin, to Capt. Thomas, Quartermaster (MS18-R1, mssEC 18 obj 10074 row 9696/0)
 Geo W. Baldwin n d ( 1 )  Washn Apr 6th 1864 12 M

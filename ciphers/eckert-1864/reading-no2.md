@@ -785,9 +785,9 @@ Code-word tokens: H 29, C 2, I 1.
 
 **N2-BI | Page 119 | 9011 | 24 July 1864 10 AM, to Pickford (Cipher No. 2; volunteer text Bickford; pencil above "100 w day N.D.")**
 
-{time: 11 AM} [24] for [Brig. General] In gulls [.] about [1000] [Cavalry] [Horse]'s which are on hand with [Artillery] [Horse]'s will be sent immy stop more as they come in [.] Invasion [,] Depreciation of vouchers & certificates & short supply of money have lately checked deliveries of [Horse]'s [.] [3900] & [62] [Cavalry] [Horse]'s have been issued here since [1] July stop Most [Of the] [Troops]ers thus mounted will I [Hotly [?]] ree [Join] [Maj Genl U S Grant]  {tail: [signed] [Quarter[?] Master General]}
+{time: 11 AM} [24] for [Brig. General] In gulls [.] about [1000] [Cavalry] [Horse]'s which are on hand with [Artillery] [Horse]'s will be sent immy stop more as they come in [.] Invasion [,] Depreciation of vouchers & certificates & short supply of money have lately checked deliveries of [Horse]'s [.] [3900] & [62] [Cavalry] [Horse]'s have been issued here since [1] July stop Most [Of the] [Troops]ers thus mounted will I presume ree [Join] [Maj Genl U S Grant]  {tail: [signed] [Quarter[?] Master General]}
 
-Code-word tokens: H 30, I 1.
+Code-word tokens: H 29, I 1.
 
 **N2-BJ | Page 87 | 8979 | 4 June 1864 10 PM, to C. A. Dana (Cipher No. 2; "10 pm", no addressee in clear)**
 
@@ -815,9 +815,9 @@ Code-word tokens: H 10.
 
 **N2-BN | Page 22 | 8914 | 16 Mar 1864, to Humphreys, Navy Yard (Coldwell "2"), signed H. W. Benham Br. Genl**
 
-Navy Yd [Washington] {time: 2 PM} [16] for [Wilmington]'s The [Advance (-ed, -ing) [#]] [Bridge (-ed, -ing)] [Train] of Canvass [Pontoon]'s will be completed ready for use today as ordered in your letter of the [29] ult [.] [50] Chess being placed on Each Chess wagon though they can be reduced to [42] & the additional Wagons need any how if still deemed [Necessary]  {tail: [signed] H. W. Benham Br. Genl.}
+Navy Yd [Washington] {time: 2 PM} [16] for Humphreys The [Advance (-ed, -ing) [#]] [Bridge (-ed, -ing)] [Train] of Canvass [Pontoon]'s will be completed ready for use today as ordered in your letter of the [29] ult [.] [50] Chess being placed on Each Chess wagon though they can be reduced to [42] & the additional Wagons need any how if still deemed [Necessary]  {tail: [signed] H. W. Benham Br. Genl.}
 
-Code-word tokens: H 16.
+Code-word tokens: H 15.
 
 **N2-BO | Page 66 | 8958 | 6 May 1864, Col Stager at Cleveland O. (Cipher No. 2; operator not given; mostly plain; re-filed from E65, LS-FIX)**
 
@@ -889,7 +889,7 @@ Code-word tokens: H 8.
 
 [Washington] Mosis [14] Hamit For [Lieut Gen U.S. Grant] [.] The [Secretary of War] and I concur that you better confer with [Lee] and stipulate for a mutual dish continueants of house burning & other destruction of private property tu and [.] The time and manner of confer ants and particulars of stipulation we have on our part to your convenience and judge ment  {tail: [signed] [President U.S.] another {time: 2 PM} For Lt [Colonel] Bowers [Cairo] [.] [Colonel] Sharpes [Men] are not disposed to go out before [Wednesday] or [Thursday] [,] say they can not obtain [Information] by starting sooner [.] a man named WJLee formerly employed by [Colonel] Sharpe offers to make a trip to [Gordonsville] on [Horse] back starting [Tomorrow] morning if furnished with [Horse] and [200] doll yours [.] [Colonel] Sharpes [Men] represent him to be a good & reliable man [signed] Geo K Leet}
 
-Code-word tokens: H 29, I 2.
+Code-word tokens: H 28, I 2, M 1.
 
 **N2-CA | Page 155 | 9049 | 16 Aug 1864, to Mastiff (operator Chapel; LS4-R1a, row 9049/2; first read as No. 1, re-filed here: tulip, Mastiff)**
 
@@ -917,9 +917,9 @@ Code-word tokens: H 52, C 3, I 3.
 
 **N2-CE | Page 146-147 | 9039, 9040 | 9 Aug 1864 9.30 AM, F. T. Bickford (LS4-R2b; row 9040/0 is the tail of this entry; image-read)**
 
-{date: Aug 9} Enigma For [Brig. General] In galls [.] up on the present report of Officers I think that all the wagons [Of the] [6] [Corps] and [Of the] [Cavalry] which has been sent to this place should [Follow (-ed, -ing) [#]] the [Troops] [,] Their drivers are needed to relieve ours [.] Ship them [As soon as] possible [.] A large number of [Steam]ers has been engaged and ordered to [City Point] to be ready for any [Movement] in [Force] [.] If on their arrival they are not needed there it will be well for them to return to [Monroe] and wait Events Pause Consult however in regard to this with the [Commander] [Of the] [Force]'s on the [James] [.] If [Harrison]ed at [City Point] these boats will be [Available] to meet any [Movement] in [Force] intended to block ade the [River] stop If at [Monroe] they might be kept away from you [.] the [Commander] [Of the] [Troops] should decide this [Defend (-ed, -ing) [#]]  {tail: [signed] [Quarter[?] Master General] Brent [Major] [General] & c}
+{date: Aug 9} Enigma For [Brig. General] In galls [.] up on the present report of Officers I think that all the wagons [Of the] [6] [Corps] and [Of the] [Cavalry] which has been sent to this place should [Follow (-ed, -ing) [#]] the [Troops] [,] Their drivers are needed to relieve ours [.] Ship them [As soon as] possible [.] A large number of [Steam]ers has been engaged and ordered to [City Point] to be ready for any [Movement] in [Force] [.] If on their arrival they are not needed there it will be well for them to return to [Monroe] and wait Events Pause Consult however in regard to this with the [Commander] [Of the] [Force]'s on the [James] [.] If collected at [City Point] these boats will be [Available] to meet any [Movement] in [Force] intended to block ade the [River] stop If at [Monroe] they might be kept away from you [.] the [Commander] [Of the] [Troops] should decide this question  {tail: [signed] [Quarter[?] Master General] Brent [Major] [General] & c}
 
-Code-word tokens: H 39, I 2.
+Code-word tokens: H 37, I 2.
 
 **N2-CF | Page 158 | 9052 | 21 Aug 1864 1 PM (ledger), Beckwith at City Point (LS4-R2b; row 9052/1; image-read)**
 
@@ -987,5 +987,5 @@ Beckwith City Pt Wash DC Oct 10. 64 [Monday] {time: 11 AM} [Lieut Gen U.S. Grant
 
 Code-word tokens: H 13.
 
-Totals over the 94 entries: H 2236, C 81, I 76, M 2.
+Totals over the 94 entries: H 2231, C 81, I 76, M 3.
 <!-- decode.py: derived block ends -->

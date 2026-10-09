@@ -109,13 +109,21 @@ def entry_text(lines):
     of that word plain (the same word is a code word elsewhere in the entry); "gloss: surface=Meaning_words[:G]"
     reads a token no key row supplies (a meaning from a printed or period source; underscores are spaces; G defaults
     to M), rendered "[Meaning]" and graded G; "join: word" lets the numeral run at that token continue across a
-    plain "and" just before it (one hundred and three = 103), the "and" being dropped from the reading."""
+    plain "and" just before it (one hundred and three = 103), the "and" being dropped from the reading.
+
+    Two more (HOLDER-EXPORT fix, 9 Oct 2026; for carrying an audit's hand grades into the derived block):
+    "merge: a+b[+c]" joins consecutive tokens written apart into one token before it is looked up (a code word the clerk
+    split across a space or a line, "pan - a. / ma" = Panama); "graded: word[:G]" leaves the token as written (no key row
+    is applied) but counts it as a code-word token of grade G (default M): a plain sound-alike standing where a code word
+    was expected (I), a token whose status the audit leaves uncertain (M), or a group nobody has read (U)."""
     plain = set()
     variant = {}
     split = set()
     plain_at = {}
     gloss = {}
     join = set()
+    merge = []
+    graded = {}
     body = []
     for l in lines[1:]:
         if l.startswith("plain:"):
@@ -137,6 +145,12 @@ def entry_text(lines):
                 gloss[sf.lower()] = (m, g)
         elif l.startswith("join:"):
             join.update(w.lower() for w in l[5:].split())
+        elif l.startswith("merge:"):
+            merge.extend([p.lower() for p in t.split("+")] for t in l[6:].split())
+        elif l.startswith("graded:"):
+            for t in l[7:].split():
+                wd, g = t.rsplit(":", 1) if ":" in t else (t, "M")
+                graded[wd.lower()] = g
         elif l.strip():
             body.append(l)
     text = " ".join(body)
@@ -145,6 +159,17 @@ def entry_text(lines):
     text = re.sub(r"\s+=\s+", "", text)  # "Lock = wood" -> "Lockwood"
     text = re.sub(r"\s+-\s+", "", text)  # "dis - missed" -> "dismissed"
     text = re.sub(r"\s+", " ", text).strip()
+    for parts in merge:
+        ws, out, i = text.split(" "), [], 0
+        while i < len(ws):
+            seg = ws[i:i + len(parts)]
+            if len(seg) == len(parts) and [x.strip(" .,;:'\"()").lower() for x in seg] == parts:
+                out.append("".join(x.strip(" .,;:'\"()") for x in seg) + seg[-1][len(seg[-1].rstrip(" .,;:'\"()")):])
+                i += len(parts)
+            else:
+                out.append(ws[i])
+                i += 1
+        text = " ".join(out)
     if plain_at or join:
         seen, out = {}, []
         for w in text.split(" "):
@@ -158,7 +183,7 @@ def entry_text(lines):
         text = " ".join(out)
     if plain:
         text = " ".join(w + "\\" if w.strip(" .,;:'\"()").lower() in plain else w for w in text.split(" "))
-    if variant or split or gloss:
+    if variant or split or gloss or graded:
         out = []
         for w in text.split(" "):
             c = w.strip(" .,;:'\"()").lower()
@@ -166,6 +191,8 @@ def entry_text(lines):
                 out.append("|")
             if c in gloss:
                 w = f"{w}~!{gloss[c][0]}~{gloss[c][1]}"
+            elif c in graded:
+                w = f"{w}~=~{graded[c]}"
             elif c in variant:
                 tg, g = variant[c].rsplit(":", 1)
                 w = f"{w}~{tg}~{g}"
@@ -266,11 +293,14 @@ def number(values):
     return total + cur
 
 
-def decode_entry(text, key, possessive=False, guard=None, guarded=None):
+def decode_entry(text, key, possessive=False, guard=None, guarded=None, tokens=None):
     """Return (reading, counts). The tail (signature marker onwards) is set apart in braces.
 
     possessive: see lookup(). guard: a CollisionGuard; a word-kind token it fires on is left as written, ungraded,
-    and (index, word, meaning, rule) is appended to the list `guarded` when one is given. Both off by default."""
+    and (index, word, meaning, rule) is appended to the list `guarded` when one is given. Both off by default.
+    tokens: a list; when given, one (index, word as written, meaning, grade, kind) tuple is appended for every counted
+    code-word token, in reading order (tools/holder_export.py lists the code words from it; meaning '' and kind
+    'as-written' for a "graded:" token). The reading and counts do not depend on it."""
     words = text.split(" ")
     out = []
     counts = {"H": 0, "C": 0, "I": 0, "M": 0}
@@ -285,6 +315,13 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None):
         ovr = None
         if "~" in w:  # "variant:" note: surface~Key~Grade
             surface, target, ovr = w.split("~")
+            if target == "=":  # "graded:" note: kept as written, counted with the audit's grade
+                counts[ovr] = counts.get(ovr, 0) + 1
+                if tokens is not None:
+                    tokens.append((i, surface.strip(" .,;:'\"()"), "", ovr, "as-written"))
+                (tail if signed else out).append(surface)
+                i += 1
+                continue
             if target.startswith("!"):  # "gloss:" note: a meaning no key row supplies
                 w = core = surface
                 stem, flag, row = core.strip(" .,;:'\"()"), "", (target[1:].replace("_", " "), ovr, "word")
@@ -329,6 +366,8 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None):
                     if r2 and r2[2] == "numeral":
                         vals.append(int(r2[0].split()[0]))
                         counts[r2[1]] += 1
+                        if tokens is not None:
+                            tokens.append((j, words[j].strip(" .,;:'\"()"), r2[0], r2[1], r2[2]))
                         j += 1
                     else:
                         break
@@ -341,6 +380,8 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None):
             continue
         meaning, grade, kind = row
         counts[grade] = counts.get(grade, 0) + 1
+        if tokens is not None:
+            tokens.append((i, w.strip(" .,;:'\"()"), meaning, grade, kind))
         if kind == "numeral":
             j, vals = i, []
             while j < len(words):
@@ -352,6 +393,8 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None):
                     vals.append(int(r2[0].split()[0]))
                     if j > i:
                         counts[r2[1]] += 1
+                        if tokens is not None:
+                            tokens.append((j, words[j].strip(" .,;:'\"()"), r2[0], r2[1], r2[2]))
                     j += 1
                 else:
                     break

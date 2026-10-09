@@ -340,15 +340,15 @@ Code-word tokens: H 5.
 
 **O9-BA | mssEC 18 p.51, pointer 9717 | 22 Apr 1864 3 PM, to Canby (operator Horner NY; Applause)**
 
-for Br Genl Canby ---- What is the Condition of the 14th NY [Artillery] Has it been Randolphed & drilled as [Infantry] so that it can go into the field or man wedlock & [Guards] [Bridge] &c [Halleck] Have you recd No 1
+for Br Genl Canby ---- What is the Condition of the 14th NY [Artillery] Has it been Randolphed & drilled as [Infantry] so that it can go into the field or man wedlock & [Guards] [Bridge]'s &c [Halleck] Have you recd No 1
 
-Code-word tokens: H 5.
+Code-word tokens: H 5, M 2.
 
 **O9-BB | mssEC 18 p.51, pointer 9717 | 22 Apr 1864 10 PM, to Van Vliet (operator John Horner NY; signed M C Meigs)**
 
 [Washington] April Twenty Second {time: 10 PM} For [Major] Van West [Quartermaster] [New York] period Enough Surgery and Propellers period Complete the supply of tugs of Ferry boats of barges and Schooners for both [(Fort) Monroe] and [Washington] period There will be much material to move period Steamers Enough to move [Troops] are now Engaged period Devote your self to Expediting the arrival of vessels at their destined ports period I fear delay which would be most injurious sig M C Meigs [Quartermaster General]
 
-Code-word tokens: H 9.
+Code-word tokens: H 9, M 1.
 
 **O9-BC | mssEC 18 p.362, pointer 10028 | 2 Jun 1865 10.30 AM, to Borgia (operator Stevens, Cin; ledger "9")**
 
@@ -356,5 +356,5 @@ Code-word tokens: H 9.
 
 Code-word tokens: H 4.
 
-Totals over the 41 entries: H 335, C 0, I 0, M 0.
+Totals over the 41 entries: H 335, C 0, I 0, M 3.
 <!-- decode.py: derived block ends -->

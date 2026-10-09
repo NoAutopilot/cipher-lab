@@ -291,7 +291,7 @@ Code-word tokens: H 24.
 
 [Warrenton] {time: 12.30} for beverage ---- [2] [Men] [,] Jewett & Siebert [,] came from [Richmond] last week [,] the first going to harem the last to [New York] ---- They are supposed toby [Rebel] agents ---- James Gemmell [Cross (-ed, -ing)]ed the [Potomac] with them & is now in Old Capitol ---- A Miss Gardner was with them ---- She was going to Norwich [Connecticut] & had been teaching [South]  {tail: [signed] L. C. Turner L C Turner Judge Advo.}
 
-Code-word tokens: H 15.
+Code-word tokens: H 14, M 1.
 
 **E28 | Page 197 | 9091 | 11 Oct 1864 11.30 AM, to Thurlow Weed, New York (Horner)**
 
@@ -309,7 +309,7 @@ Code-word tokens: H 33.
 
 [Washington] {time: 9.30 AM} {date: Nov 2} for [Captain] Be F. Manerie Provost Mare shall [8] District [New York] [.] Confidential [.] You had better imm'y with draw as a candid eight for Congress or re sign as Provost Mare shall [,] I advise the former [.] Answer by Wreath  {tail: [signed] James Be Fry Pro Mar [General] another to W E Dodge Can did eight for Congress [8] District [New York] [.] Confidential [.] I have [Telegraph (-ed, -ing)]d [Captain] man ear rye as follows ["] you had better with draw immy as a can did ate for congress or reas sign as Provost marsh all [,] I advise the former ["] [signed] Jas B Fry}
 
-Code-word tokens: H 22.
+Code-word tokens: H 22, U 1.
 
 **E38 | Page 152 | 9045 | 12 Aug 1864 11 PM, to John G. Palfrey, Postmaster, Boston, via Horner, New York**
 
@@ -319,15 +319,15 @@ Code-word tokens: H 13.
 
 **E39 | Page 152 | 9045 | 12 Aug 1864 11.30 PM, to Abraham Wakeman, Postmaster, New York (Horner)**
 
-[Washington] {time: 11.30 PM} [12] for Abraham Wake man P M [New York] [.] A remittance was forwarded this day the [12] by Alex Keith Jr Halifax [By the way of] St John to N Ferris No [10] [North] Mkt St Bos ton [.] Another remittance by the same person to J B Hunter & Co [New York] via St Johns another remittance by same person to Gordon Bruce & Co [New York] [3] St John with directions to this house to ["] ship immy to Mitchell Kenner & Co Montreal [.] These letters with enclosures should at all hazards be secured & forwarded to me with [Information] as to the trade business or occupation [Of the] parties to whom they are addressed This [Telegraph (-ed, -ing)] will be your authority & you will [Report] to Post master [General]  {tail: [signed] [Secretary of State] will call see you soon}
+[Washington] {time: 11.30 PM} [12] for Abraham Wake man P M [New York] [.] A remittance was forwarded this day the [12] by Alex Keith Jr Halifax [By the way of] St John to N Ferris No [10] [North] Mkt St Bos ton [.] Another remittance by the same person to J B Hunter & Co [New York] via St Johns another remittance by same person to Gordon Bruce & Co [New York] [By the way of] St John with directions to this house to ["] ship immy to Mitchell Kenner & Co Montreal [.] These letters with enclosures should at all hazards be secured & forwarded to me with [Information] as to the trade business or occupation [Of the] parties to whom they are addressed This [Telegraph (-ed, -ing)] will be your authority & you will [Report] to Post master [General]  {tail: [signed] [Secretary of State] will call see you soon}
 
 Code-word tokens: H 22.
 
 **E40 | Page 153 | 9046 | 13 Aug 1864 3 PM, to Robert Murray, U.S. Marshal, and Hiram Barney, Collector, New York (Horner)**
 
-[Washington] {date: Aug 13} {time: 3 PM} For Robt Murray Esq U S D Marshal [New York] Detain the Princess and her cargo for further orders  {tail: [signed] Wm H Seward[?] [Secretary of State] [.] another {time: 3 PM} to Hiram Burney Collect or [New York] [.] Detain Schooner Princess and with aid of U S Mar shall examine her cargo and nick [signed] Geo Harrington Acting [" " Treasury] Let the Boston message go forward when these two have had time to take effect}
+[Washington] {date: Aug 13} {time: 3 PM} For Robt Murray Esq U S D Marshal [New York] Detain the Princess and her cargo for further orders  {tail: [signed] Wm H Seward[?] [Secretary of State] [.] another {time: 3 PM} to Hiram Burney Collect or [New York] [.] Detain Schooner Princess and with aid of U S Mar shall examine her cargo and nick [signed] Geo Harrington Acting [Secretary of the Treasury] Let the Boston message go forward when these two have had time to take effect}
 
-Code-word tokens: H 12.
+Code-word tokens: H 12, U 1.
 
 **E41 | Page 203 | 9097 | 15 Oct 1864, to C. A. Seward, New York (John Horner)**
 
@@ -345,7 +345,7 @@ Code-word tokens: H 28.
 
 {time: 5.30 PM} {date: May 29} to [Colonel] Biggs Have you sent the Waymorners Coal up the York & Pair monchie [River]'s[?] about which I [telegraphed] on [27] inst [?] It will be needed at White House at once pause The [Steam]er City of Albany & Ranger [Left] here [Today] for [Monroe] with [General] Benhams [Command = Er (-ed, -ing)] & its [Horse]'s &c Please arrange it so that I can have these [2] boats back here at once I need them to move cattle & [Horse]'s up the P monchie [River] answer  {tail: [signed] Rucker}
 
-Code-word tokens: H 19, C 1.
+Code-word tokens: H 19, C 1, U 1.
 
 **E44 | Page 230 | 9124 | 15 Nov 1864 8.30 PM, to 'Niagara' at Hampton Roads (operator G. D. Sheldon, Fort Monroe)**
 
@@ -367,9 +367,9 @@ Code-word tokens: H 9.
 
 **E47 | Page 30 | 8922 | 6 Apr 1864 3.30 PM, to Lt. Col. Biggs at Fort Monroe (operator Geo. D. Sheldon)**
 
-[Washington] {date: Apr 6} {time: 3.30 PM} For Lt [Colonel] Biggs Vintur [Monroe] Send Salvor to Annapoleis if still at [Monroe] & not under Engagements making the trip a serious loss [.] Order a [1000] tons of coal a float at [Monroe] if it can be spared to Hilton Heads Advise me how much you can send that I may replace it from the [North]  {tail: [signed] Meigs [Quartermaster] [General]}
+[Washington] {date: Apr 6} {time: 3.30 PM} For Lt [Colonel] Biggs [Quartermaster] [Monroe] Send Salvor to Annapoleis if still at [Monroe] & not under Engagements making the trip a serious loss [.] Order a [1000] tons of coal a float at [Monroe] if it can be spared to Hilton Heads Advise me how much you can send that I may replace it from the [North]  {tail: [signed] Meigs [Quartermaster] [General]}
 
-Code-word tokens: H 13.
+Code-word tokens: H 13, I 1.
 
 **E48 | Page 65 | 8957 | 5 May 1864 11.30 AM, to 'Season Banditti' at Baltimore (operator J. W. Sampson)**
 
@@ -387,7 +387,7 @@ Code-word tokens: H 4.
 
 [Washington] [11] {time: 11.30 AM} For [Colonel] Biggs [Quartermaster] [.] Provision and water the Continental to bring whiskey [From the] [Department] [Of the] [South] and [As soon as] a dispatch preparing by [General-in-Chief] amirs send her with it to Hit on Head [.] [Report] ham of sailing  {tail: [signed] Meigs [Qr Master Genl U.S.][?] [General-in-Chief]'s dispatch gone forward}
 
-Code-word tokens: H 17.
+Code-word tokens: H 17, U 2.
 
 **E51 | Page 204 | 9098 | 21 Oct 1864 11 AM, to Adna Anderson (operator J. C. Van Duzer, Nashville)**
 
@@ -433,9 +433,9 @@ Code-word tokens: H 32.
 
 **E33 | Page 161 | 9055 | 22 Aug 1864, to McCaine at Harper's Ferry (operator not given)**
 
-[Washington] August [22] {time: 12.30} for No Sir Ree Bob [.] a small train of forges & other [Surprise (-ed, -ing)] ons for your pana. ma [Left] here yesterday for [Harpers Ferry] Thayer Escorted by the [25] [New York] [Cavalry] [300] & [50] [Men]'s ordered to you & a [Detach (-ed, -ing)] ment of [300] & [75] [Men]'s belonging to [1] & [3] pana ma [Division]'s [,] all amounted & Readingped  {tail: [signed] Chisel plane ax saw}
+[Washington] August [22] {time: 12.30} for No Sir Ree Bob [.] a small train of forges & other wag ons for your [Cavalry] [Left] here yesterday for [Harpers Ferry] Thayer Escorted by the [25] [New York] [Cavalry] [300] & [50] [Men]'s ordered to you & a [Detach (-ed, -ing)] ment of [300] & [75] [Men]'s belonging to [1] & [3] [Cavalry] [Division]'s [,] all amounted & [Equip]ed  {tail: [signed] Chisel plane ax saw}
 
-Code-word tokens: H 27.
+Code-word tokens: H 29, U 2.
 
 **E55 | Page 163 | 9057 | 26 Aug 1864 11 AM, to Lt. Col. C. H. Howard at Louisville (Capt. Bruch)**
 
@@ -453,7 +453,7 @@ Code-word tokens: H 13.
 
 {time: 4 PM} For [Captain] Thomas [Quartermaster] [.] If on Examination Relief is a good staunch [Steam]er let her call at Ann a pol is for a load of collared [Troops] & if not there needed proceed to Hil ton Head & report for duty  {tail: [signed] Meigs [Qr Master Genl U.S.] his on one}
 
-Code-word tokens: H 8.
+Code-word tokens: H 8, I 2.
 
 **E58 | Page 40 | 8932 | 19 Apr 1864, to Grant (code word John; page gives no operator or addressee header)**
 
@@ -477,7 +477,7 @@ Code-word tokens: H 27.
 
 {time: 11.30 PM} {date: Apr 27} for [Maj Gen W. T. Sherman] [Nashville] [.] The [Cavalry] Bureau reports that the [11] [Michigan] [Cavalry] is of no use at Lexington that its Efficiency is being impared & that it ought to be sent to the field  {tail: [signed] [General-in-Chief] Tall oaks from little acorns grow}
 
-Code-word tokens: H 12.
+Code-word tokens: H 11, M 1.
 
 **E60 | Page 111 | 9003 | 16 Jul 1864 10.30 AM, Lincoln to John Hay at the Astor House (John is Hay's name in clear), signed President U.S. (no operator on the page)**
 
@@ -501,7 +501,7 @@ Code-word tokens: H 6.
 
 For [Quartermaster] Biggs [.] Send ordrs to Spaulding to proceed to Hilt on head and report to [Quartermaster] for ordrs Send Montauk and other two propellers to Annappleis to take [Troops] to Hilt on head [.] Give her plenty of Coal as it is probably scarce at Anappleis [.] Report your supply of Coal at present and that Expected with in a fortnight Report daily any arrivals of [Steam] hers Confidential  {tail: [signed] Meigs [Qr Master Genl U.S.] {time: 12.30}}
 
-Code-word tokens: H 10.
+Code-word tokens: H 10, I 1.
 
 **E63 | Page 143 | 9036 | 6 Aug 1864 11.30 AM, to Grant (code word Japan), at Monocacy Junction (McCaine, No 1)**
 
@@ -517,9 +517,9 @@ Code-word tokens: H 35, C 1.
 
 **E66 | Page 257 (printed) | 9151 | 3 Jan 1865 (header written "1864") 12 M, to John Horner, New York**
 
-[Washington] {time: 12} [3] for [Brigadier General] Vain fleet [Quartermaster] [.] I [Telegraph (-ed, -ing)]d last night for [Report] of Weaselira [Available] in [New York] [,] answer not rec'd [.] [Colonel] Wise has called on you for Waymomers to take [1000] [Of the] construction [Corps] US military [Rail Road]'s from [Baltimore] to [Savannah] [.] In addition to this we now need [Steam]ing to take [4000] [Troops] from Banditte to sea [,] destination not [Report]ed [,] should have full coal and water for [15] days [.] [Report] the vessels you can send and dispatch them unless counter man dead before they start  {tail: [signed] [Qr Master Genl U.S.] all sober}
+[Washington] {time: 12} [3] for [Brigadier General] [Van] [Vliet] [Quartermaster] [.] I [Telegraph (-ed, -ing)]d last night for [Report] of [Steamers] [Available] in [New York] [,] answer not rec'd [.] [Colonel] Wise has called on you for Waymomers to take [1000] [Of the] construction [Corps] US military [Rail Road]'s from [Baltimore] to [Savannah] [.] In addition to this we now need [Steam]ing to take [4000] [Troops] from [Baltimore] to sea [,] destination not [Report]ed [,] should have full coal and water for [15] days [.] [Report] the vessels you can send and dispatch them unless counter man dead before they start  {tail: [signed] [Qr Master Genl U.S.] all sober}
 
-Code-word tokens: H 33.
+Code-word tokens: H 33, I 4, M 1.
 
 **E67 | Page 240 (printed) | 9134 | 3 Dec 1864 12.30 PM, no addressee line (operator not given); signed H A Wise, Chief of Bureau**
 
@@ -529,9 +529,9 @@ Code-word tokens: H 14.
 
 **E68 | Page 146 (printed) | 9039 | 7 Aug 1864, to Capt Sam Bruch, Louisville (operator not given)**
 
-[Washington] {time: 12} [7] for [General] Burr [Bridge (-ed, -ing)] [.] Your immediate attention is directed to the following [Telegraph (-ed, -ing)] ["] insert Jones [Cipher] stop You will please see Surgeon Ferry in [5] & hear his statement [.] If you deem his platation trust worthy & important send its substance by [Cipher] [Telegraph (-ed, -ing)] [.] If you think a personal interview with me important Send him here under adequate [Guard (-ed, -ing)] that will take care he does not Escape  {tail: [signed] [Secretary of War] is it all right}
+[Washington] {time: 12} [7] for [General] Burr [Bridge (-ed, -ing)] [.] Your immediate attention is directed to the following [Telegraph (-ed, -ing)] ["] insert Jones [Cipher] stop You will please see Surgeon Ferry in person & hear his statement [.] If you deem his [Communication] trust worthy & important send its substance by [Cipher] [Telegraph (-ed, -ing)] [.] If you think a personal interview with me important Send him here under adequate [Guard (-ed, -ing)] that will take care he does not Escape  {tail: [signed] [Secretary of War] is it all right}
 
-Code-word tokens: H 17.
+Code-word tokens: H 16, I 1, M 1.
 
 **E70 | Page 93 (printed) | 8985 | 16 June 1864 12.20 PM, to Capt Smith, St Louis (signed Geo D Ramsay, Chf Ord)**
 
@@ -573,7 +573,7 @@ Code-word tokens: H 5.
 
 {time: 3.30 PM} For Lt [Colonel] H Biggs [Quartermaster] Is your [Transportation] coming [?] [Report] daily by mangle period At present orders Stop every thing coming up [Potomac] and send it to [Monroe] but I have ordered a large quantity of [Transportation] which will be needed here and [As soon as] you are supplied should be allowed to come here  {tail: [signed] [Qr Master Genl U.S.] Oh for wings of Dove}
 
-Code-word tokens: H 12.
+Code-word tokens: H 12, M 1.
 
 **E79 | mssEC 18 p.146, pointer 9812 | 5 Aug 1864 12 pm, to Capt Thomas, Quartermaster (operator Sampson, Balto; signed by the Quartermaster General's word)**
 
@@ -679,9 +679,9 @@ Code-word tokens: H 3.
 
 **E96 | Page 222 | 9116 | 5 Nov 1864 11 PM, operator J. W. Sampson at Baltimore (LS4-R1b, row 9116/2)**
 
-{time: 11 PM} [5] for Season [.] [Colonel] [100] Hamilton is [Report]ed on what seems trust worthy evidence asa [Rebel] agent in [Baltimore] [.] If there are several [5]s answering tooth name care mustby exercised target the [Right] [1]  {tail: [signed] [C. A. Dana]}
+{time: 11 PM} [5] for Season [.] [Colonel] William Hamilton is [Report]ed on what seems trust worthy evidence asa [Rebel] agent in [Baltimore] [.] If there are several persons answering tooth name care mustby exercised target the [Right] [1]  {tail: [signed] [C. A. Dana]}
 
-Code-word tokens: H 14.
+Code-word tokens: H 12, M 2.
 
 **E97 | Page 225 | 9119 | 7 Nov 1864, operator Capt. Clowry, St. Louis (LS4-R1b, row 9119/1)**
 
@@ -733,15 +733,15 @@ Code-word tokens: H 13.
 
 **E122 | Page 159 | 9053 | 21 Aug 1864 4 PM, McCaine at Winchester, signed Augur (LS5-R1d; row 9053/2; image-read; page = the Huntington's title for 9053, was 161 from the entries index, PROP-HUNT 8 Oct 2026)**
 
-For [P. H. Sheriden] [.] [100] [Has, or have been, reinforced] rife less with [20000] rounds of [Ammunition] for them will be sent you at once to [Harpers Ferry] pos I doubt if a [100] men are sufficient for the work they are undertaking Joke Augur
+For [P. H. Sheriden] [.] [100] Spencer rife less with [20000] rounds of [Ammunition] for them will be sent you at once to [Harpers Ferry] pos I doubt if a [100] men are sufficient for the work they are undertaking Joke Augur
 
-Code-word tokens: H 10.
+Code-word tokens: H 9, U 2.
 
 **E123 | Page 168 | 9062 | 3 Sept 1864 8.30 PM, to Peck (LS5-R1d; row 9062/2; image-read; page = the Huntington's title for 9062, was 170 from the entries index, PROP-HUNT 8 Oct 2026)**
 
 {time: 8.30 PM} for [General] Peck [.] Your [Telegraph (-ed, -ing)] respecting the [Rebel] plot to seize the sound [Steam]ers has been recd & [Communicate (-ed, -ing)]d tooth [Secretary of Navy] [.] If this [Department] can render any service tooth owners or shippers [Towards] [Guard (-ed, -ing)]ing or [Arms]ing their vessels it wilby cheerfully given & you may so [Information] them  {tail: [signed] [Secretary of War] wheres French [Maj Gen Geo. H. Thomas]}
 
-Code-word tokens: H 17.
+Code-word tokens: H 16, M 1.
 
 **E124 | Page 192 | 9086 | 2 Oct 1864 12 m, Beckwith at City Point, signed Geo K Leet (LS5-R1d; row 9086/1; image-read)**
 
@@ -795,7 +795,7 @@ Code-word tokens: H 34.
 
 [Washington] {date: Aug 12} Imogem For Lieut [Colonel] T S. Bowers AAG [City Point] copy to [P. H. Sheriden] [Winchester] [.] wolves just arrived nick [Follow (-ed, -ing)]ing [.] [1] [Brigade] of [Hill]'s [Corps] was sent to Early last Friday pause [Division] to which it belongs was under marching orders [.] Fitz Hugh [Lee]'s [Cavalry] was [New York] [Orange C.H.] Wednesday night [10] pause [Longstreet] is in [Shenandoah] [Valley] and his [Corps] supposed toby with him [.] melds know nothing of [Force] mentioned in your dispatch of [10] [.] They say Central [Road] is not in running order beyond [Cahawba] Dam  {tail: [signed] Geo K Lect [Captain] and A. A. G}
 
-Code-word tokens: H 31, M 1.
+Code-word tokens: H 29, M 3.
 
 **E146 | Page 245 | 9139 | 12 Dec 1864 2 PM, Capt. Bruch, Louisville, to Brig. Gen. Allen (LS5-R1e, row 9139/1; image-read)**
 
@@ -817,9 +817,9 @@ Code-word tokens: H 12.
 
 **E104 | Page 15 | 8907 | 4 Mar 1864, operator Caldwell (HQ Army of the Potomac), for Humphreys (LS5-R1c; row 8907/1; image-read)**
 
-HdQrs AP for Hum phrey Dispatch in relation to wolves recd Send wolves down to [Fredericksburg] & below to ascertain if the [Enemy] have any [Force] this side of the [Rappahannock] or on the northern neck Sig [Maj Genl G. G. Meade]
+HdQrs AP for Hum phrey Dispatch in relation to [Scout (-ed, -ing)]'s recd Send [Scout (-ed, -ing)]'s down to [Fredericksburg] & below to ascertain if the [Enemy] have any [Force] this side of the [Rappahannock] or on the northern neck Sig [Maj Genl G. G. Meade]
 
-Code-word tokens: H 5.
+Code-word tokens: H 7.
 
 **E105 | Page 178 | 9072 | 12 Sept 1864, operator Carey at Lexington (LS5-R1c; row 9072/0; image-read)**
 
@@ -829,9 +829,9 @@ Code-word tokens: H 10.
 
 **E106 | Page 77 | 8969 | 22 May 1864 10.30 PM, R. R. McCaine, entry struck through and marked 'Not sent' (LS5-R1c; row 8969/3; image-read)**
 
-{time: 10.30 PM} Narrow [2] to [Maj. Gen. David Hunter] [Grenada] Creek [Open (-ed, -ing)] your mangle to [Adjt Genl. U.S.] asking for [2] [Brigade] just received Please understand that no [Reinforcements] can be sent to your [Department] without the special orders of [Maj Genl U.S. Grant] & that all your operations are to be based on the [Troops] you now have [.] all available [Troops] have been ordered elsewhere by [Maj Genl U.S. Grant] [.] none can go to you  {tail: [signed] [General-in-Chief] how you like [Maj. Gen. David Hunter]}
+{time: 10.30 PM} [22] to [Maj. Gen. David Hunter] [Grenada] Creek [Open (-ed, -ing)] your mangle to [Adjt Genl. U.S.] asking for [2] [Brigade] just received Please understand that no [Reinforcements] can be sent to your [Department] without the special orders of [Maj Genl U.S. Grant] & that all your operations are to be based on the [Troops] you now have [.] all available [Troops] have been ordered elsewhere by [Maj Genl U.S. Grant] [.] none can go to you  {tail: [signed] [General-in-Chief] how you like [Maj. Gen. David Hunter]}
 
-Code-word tokens: H 17, C 2.
+Code-word tokens: H 15, C 2, I 1, M 2, U 1.
 
 **E107 | Page 90 | 8982 | 11 June 1864, Sam Bruch at Louisville (LS5-R1c; row 8982/2; image-read)**
 
@@ -859,9 +859,9 @@ Code-word tokens: H 22.
 
 **E162 | Page 258 | 5802 | mssEC 25 (obj 5952, pointer 5802), 1 Nov 1864 Butler's Hd Qrs, R. O'Brien to Sheldon (FM-R1; row 5802/0; image-read)**
 
-Geo D Sheldon Ft Monroe {time: 12.30} for [Captain] martin [Monroe] [.] best [5] [Battery]'s sligs [Army] of James [,] Napoleons [,] [Battery] m [1] united states [Artillery] [,] [Battery] E [3] united states [Artillery] [,] [17] [New York] [3] inch [.] [Battery] Do [1] U S [Artillery] [,] [Battery] F [5] same  {tail: [signed] Lieut [Colonel] Howard R OBrien}
+Geo D Sheldon Ft Monroe {time: 12.30} for [Captain] martin [Monroe] [.] best [5] [Battery]'s [In the] [Army] of James [,] Napoleons [,] [Battery] m [1] united states [Artillery] [,] [Battery] E [3] united states [Artillery] [,] [17] [New York] [3] inch [.] [Battery] Do [1] U S [Artillery] [,] [Battery] F [5] same  {tail: [signed] Lieut [Colonel] Howard R OBrien}
 
-Code-word tokens: H 29.
+Code-word tokens: H 29, M 1.
 
 **E163 | Page 279 | 5823 | mssEC 25 (obj 5952, pointer 5823), 9 Dec 1864 Butler's Hd, R. O'Brien to Sheldon (FM-R1; row 5823/1; transcription only)**
 
@@ -919,9 +919,9 @@ Code-word tokens: H 31.
 
 **E172 | Page 243 | 5787 | mssEC 25 (obj 5952, pointer 5787), 6 Oct 1864 8 P.M. Ft Monroe, Sheldon to Maj. Eckert, for E. L. Wentz, forwarding a Gen. Ingalls message on a railroad extension; continues on page 244 (FM-R2a; row 5787/2; page 243 image-read, the continuation from the transcription)**
 
-Maj. Eckert [Volunteer] [City Point] [6] to E. L. Wentz [Alexandria] [.] a plation from [General] In galls to you is just received stating that [General] Meade requests the [Rail Road] toby extended beyond Warren to Peebles House [2] [Mile]'s [.] We have about [1] and [1] half [Mile]'s of I urn paws over no chairs pause I can't commence it until we get through sending ties to [Alexandria] unless you order differently  {tail: [signed] see L Mack Alpine Geo. D. Sheldon}
+Maj. Eckert Washington [City Point] [6] to E. L. Wentz [Alexandria] [.] a plation from [General] In galls to you is just received stating that [General] Meade requests the [Rail Road] toby extended beyond Warren to Peebles House [2] [Mile]'s [.] We have about [1] and [1] half [Mile]'s of I urn paws over no chairs pause I can't commence it until we get through sending ties to [Alexandria] unless you order differently  {tail: [signed] see L Mack Alpine Geo. D. Sheldon}
 
-Code-word tokens: H 16.
+Code-word tokens: H 15.
 
 **E173 | Page 296 | 5840 | mssEC 25 (obj 5952, pointer 5840), 26 Dec 1864 Ft Monroe, Sheldon to R. O'Brien, Hd. Qrs. A. J., for Gen. Turner (FM-R2a; row 5840/0; image-read)**
 
@@ -939,19 +939,19 @@ Code-word tokens: H 23.
 
 Maj T. T. Eckert Di Dictator [Monroe] {time: 8.30 AM} for [Secretary of Navy] [.] main journal brasses cut [1] quarter ovan inch [,] can not go to see under [4] daze [.] will [Report] by mail [.] Temple in Pontoosuc most anxious to [Join (-ed, -ing)] [D. D. Porter] [Open (-ed, -ing)] the money tower Saugus at [Norfolk] ready for see a waiting [Convoy] open shally send Pontoosuc or Nereus with her  {tail: [signed] John Rodgers quite foggy Geo D. Sheldon}
 
-Code-word tokens: H 16.
+Code-word tokens: H 15, M 1.
 
 **E176 | Page 276 | 5820 | mssEC 25 (obj 5952, pointer 5820), 8 Dec 1864 Bermuda Hundreds, S. H. Beckwith to Sheldon, embarkation list by steamer (FM-R2a; row 5820/0; image-read)**
 
 Geo D Sheldon Ft Monroe {time: 9.30 AM} [8] to lute [Colonel] small [.] the second [Division] [Of the] [24] [Corps] will [Embark (-ed, -ing)] as [Follow (-ed, -ing)]'s [,] on [Steam]ers Hayes [300] [Men] sedgwick [600] perritt [400] and [25] C. Thomas [800] [,] Idaho [300] and [50] Louisa Moore [300] weybossett [500] Montauk [80] [Men]  {tail: [signed] a are sutton lute and a see S SH Beckwith}
 
-Code-word tokens: H 35.
+Code-word tokens: H 35, M 1.
 
 **E177 | Page 279 | 5823 | mssEC 25 (obj 5952, pointer 5823), 8 Dec 1864 Hd Qrs A. of J., R. O'Brien to Sheldon, steamers for Monroe (FM-R2a; row 5823/0; image-read)**
 
 Geo D Sheldon Ft Monroe {time: 6.30 PM} for [Colonel] webster [.] albany and united states leaves immediately with [Horse]'s for [Monroe] [.] they wilby taken of & placed on other [Steam]ers [.] hold the Dupont at [Monroe] [.] I will send remaining [Infantry] to [Monroe] on [River] [Steam]ers stop get [2] good oceanic [Steam]ers and have them ready when flight arrives at [Monroe]  {tail: [signed] [Colonel] doge many [Steam]ers form flights R OBrien}
 
-Code-word tokens: H 20.
+Code-word tokens: H 20, M 2.
 
 **E178 | Page 294 | 5838 | mssEC 25 (obj 5952, pointer 5838), 20 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, six steamers ordered out in bad weather (FM-R2a; row 5838/2; image-read)**
 
@@ -963,7 +963,7 @@ Code-word tokens: H 11.
 
 Maj Eckert Di for [Qr Master Genl U.S.] I require [10000] shelter tents at once to fill requisition of [W. F. Smith] also large amount of water [Transportation] drawing not over [9] feet [,] will specify [As soon as] possible [.] will you secure [6] ferry boats and at least [6] measles like city of Norwich or George Leary  {tail: [signed] Her man Biggs lent [Colonel] and [Quartermaster] {time: 5.30 PM} here we go again Geo. D Sheldon}
 
-Code-word tokens: H 15.
+Code-word tokens: H 15, M 1.
 
 **E200 | Page 36 | 9696 | 6 Apr 1864 12 M, operator Baldwin, to Capt. Thomas, Quartermaster (MS18-R1, mssEC 18 obj 10074 row 9696/0)**
 
@@ -1295,5 +1295,5 @@ Maj. Eckert Washington Flag ship Malvern Hampton Roads {time: 9.30 AM} [By the w
 
 Code-word tokens: H 24.
 
-Totals over the 194 entries: H 3303, C 28, I 6, M 3.
+Totals over the 194 entries: H 3294, C 28, I 16, M 21, U 10.
 <!-- decode.py: derived block ends -->

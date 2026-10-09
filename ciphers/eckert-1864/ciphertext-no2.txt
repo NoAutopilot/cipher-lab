@@ -903,6 +903,8 @@ deliveries of silvers tulip Austin Seward Ellsworth Yoke &
 Perkins Arnold pedlar silvers have been issued here since
 Brown July stop Most talbot widowers thus mounted will
 I presume ree sweden Bellows welch Buggy
+plain: presume
+note: HOLDER-EXPORT fix 9 Oct 2026: 'presume' is plain on the image, not the key row Presume = Hotly [?] (AUDIT.md LS-V6 s.1: 29 H + 1 I of 30).
 
 ### N2-BJ | Page 87 | 8979 | 4 June 1864 10 PM, to C. A. Dana (Cipher No. 2; "10 pm", no addressee in clear)
 10 pm  Washn June 4th 1864
@@ -959,6 +961,8 @@ on Each Chess wagon though they can be reduced
 to Oscar brooks & the additional Wagons need any
 how if still deemed Stomach Yawl H. W. Benham
 Br. Genl.
+plain: humphreys
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Humphreys' is the plain addressee (A. A. Humphreys), not Humphrey = Wilmington (AUDIT.md LS-V7 s.4: 15 H of 15).
 
 ### N2-BO | Page 66 | 8958 | 6 May 1864, Col Stager at Cleveland O. (Cipher No. 2; operator not given; mostly plain; re-filed from E65, LS-FIX)
 Col Stager  Wash May 6. 1864
@@ -1081,6 +1085,8 @@ on Silver back starting Wedlock morning if furnished
 with Silver and Arnold Snyder doll yours yacht
 Paxton Sharpes Summer represent him to be a
 good & reliable man Welch Geo K Leet
+variant: black=Black:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Black' = Cairo in Cipher No. 2 (City Point in No. 1; Bowers was at City Point), M (AUDIT.md LS4-V1a s.1 and V1-LS4A: 21 H of 22 in the second telegram).
 
 ### N2-CA | Page 155 | 9049 | 16 Aug 1864, to Mastiff (operator Chapel; LS4-R1a, row 9049/2; first read as No. 1, re-filed here: tulip, Mastiff)
 Chapel  Wash Aug 16th
@@ -1144,6 +1150,8 @@ Optic to meet any Surgery in Salem intended to block
 ade the wallace stop If at Bunyan they might be
 kept away from you yard the Polk Talbot whack should
 decide this question yawl Buggy Brent Spunky Spark & c
+plain: collected question
+note: HOLDER-EXPORT fix 9 Oct 2026: 'If collected at City Point', 'decide this question' plain (AUDIT.md FV-LS4-R2b 'Grade correction, N2-CE': H 37).
 
 ### N2-CF | Page 158 | 9052 | 21 Aug 1864 1 PM (ledger), Beckwith at City Point (LS4-R2b; row 9052/1; image-read)
 Beckwith City Pt.  Wash DC Aug 21.1864  1 PM

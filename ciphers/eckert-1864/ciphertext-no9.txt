@@ -635,8 +635,10 @@ the Condition of the 14th NY
 Rodney Has it been Randolphed &
 drilled as Segment so that it
 can go into the field or
-man wedlock & sexton rabbit &c
+man wedlock & sexton rabbits &c
 applause Have you recd No 1
+graded: randolphed:M wedlock:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Randolphed', 'wedlock' have no No. 9 row, M; line 6 reads 'rabbits' on the image (AUDIT.md LS3-V18a s.1 and s.4: H 5, M 2).
 
 ### O9-BB | mssEC 18 p.51, pointer 9717 | 22 Apr 1864 10 PM, to Van Vliet (operator John Horner NY; signed M C Meigs)
 John Horner NY  Wash'n Apr. 22nd 1864 10 PM
@@ -653,6 +655,8 @@ to Expediting the arrival of vessels
 at their destined ports period I
 fear delay which would be most
 injurious sig M C Meigs Abbot
+graded: surgery:M
+note: HOLDER-EXPORT fix 9 Oct 2026: 'Surgery' has no No. 9 row, M (AUDIT.md LS3-V18a s.4: H 9, M 1).
 
 ### O9-BC | mssEC 18 p.362, pointer 10028 | 2 Jun 1865 10.30 AM, to Borgia (operator Stevens, Cin; ledger "9")
 Stevens "Cin"  Wash'n June 2nd 1865 10.30 am
