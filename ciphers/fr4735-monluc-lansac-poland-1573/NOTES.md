@@ -545,3 +545,64 @@ Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against 
 - [x] image-check: f.86 K07 binary curl sort on wider crops, gate PASS (this pass)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 5 internal gaps; cheapest next: decide a gloss-graded K38 relabel of the 10 f.86 curl-present K07 tokens, ~$0.3
+
+## MONLUC-K38: f.86 curl-present K07 tokens written K38, graded from the f.86 gloss (9 Oct 2026, account 4, Opus, for LANE DEFAULT-account-4-20261009-1340)
+Brief: .claude/briefs/runs/2026-10-09-account4-default-1340-jobs.md J14 (MONLUC-CURL's named next). Disk only (no host requests), no subagents.
+Prior-work step: `python3 tools/prior_work.py fr4735-monluc-lansac-poland-1573 --item-spec 'shelfmark=BnF fr.4735;folio=86r;sender=Monluc;recipient=Charles IX' --step-type key --fetch`
+-> first run exit 4 (one owed row: MONLUC-CURL's own image-check tick, 1-own LEAD), read and recorded CLEAR with `--record` (that pass made
+no relabel; this step is the relabel decision it left open); re-run exit 0 ("proceed on the residue: whole item"), step CLEAR, plaintext
+UNCHECKED-NET (aaymeloglu no local clone).
+**Decision.** MONLUC-CURL's pre-registration made a relabel conditional on a `--try` accept. Its own known-answer control then showed
+`--try` finds 1 of 6 known letters on this 150-token decode, so on f.86 that condition is an instrument that cannot pass (rule 3: a
+control that fails the same way as the target licenses nothing either way). Its reject of K69=t is therefore neither for nor against the
+relabel, and this pass does **not** use `--try` for anything. The relabel rests on two things that are not `--try`: (a) **sign shape**, a
+value-blind binary sort (no line, gloss, cell or value shown) that put 10 f.86 K07 tiles and the f.86 K38 tile in the curl-present
+group, the same construction as the key sheet's K38 cell (C-curl round a z, table t) and as the c268 C-curl group (MONLUC-BLIND,
+--try accept there with both nulls passed; MONLUC-RELABEL); and (b) **the leaf's own period gloss**, which faces those 10 tokens with
+t 7 / n 1 / s 1 / none 1 and faces the not-curl K07 tiles with g 5 of 5 (pre-registered gate p 0.0086, MONLUC-CURL). This is a
+departure from MONLUC-CURL's (3), stated here rather than hidden: that clause named an instrument now shown powerless, and the
+relabel is a transcription correction by shape, not a value learned from --try.
+- **What is relabelled, and why all 10.** The transcription follows the shape, not the gloss: all 10 blind curl-present tokens are
+  written K38 (L02:1, L02:20, L02:31, L03:6, L03:19, L03:22, L03:30, L03:39, L03:45, L04:22). Relabelling only the 7 whose gloss reads
+  t would choose a sign by its value. The U tile (L04:7, edge-cut) and the 6 not-curl tiles stay K07.
+- **Grades (rule 4), from the gloss only.** C where the faced gloss letter is t (7: L02:1, L02:31, L03:6, L03:30, L03:39, L03:45,
+  L04:22); M where it is not (L02:20 faces s, L03:19 faces n, L03:22 faces no gloss letter). No S or H is claimed for any of the 10.
+- **Change.** `check_cells.py` carries a `RELABEL` table applied only when writing `ciphertext_c172.tsv`: the script asserts each old
+  label is K07, writes K38, keeps the old label in `passA`/`passB` and marks `relabel` = `curl-sort` (new column). The alignment, the
+  gloss letter each token faces, `cells_c172.tsv`, `results_cells_c172.json` and `votes_c172.tsv` are computed on the transcription
+  before the relabel and are byte-identical to before (so the relabel cannot move which gloss letter a token faces, and MONLUC-KEY's
+  per-cell numbers stand). key.tsv unchanged; c268 untouched; `conf` unchanged (both passes read the position; they had no K38/K07
+  distinction to disagree on).
+- **Decode, f.86 (150 tokens):** C 76 / M 71 / U 3 -> **C 83 / M 64 / U 3** (`decode_key.py --check`: "reading up to date", exit 0;
+  `check_cells.py --check`: OK, all four outputs current). Ten letters change g -> t, e.g. L02 "gepmuig..." -> "tepmuig...",
+  L03 "...uaugee g fau droi g qu..." -> "...uat tee t fau droi t qu...".
+- **Judge rerun** (`python3 tools/judge_plaintext.py specs/fr4735-monluc-lansac-poland-1573.json --file <letters of reading_c172.txt>`,
+  letters only, `[?vertical_bar]` dropped, N 147; scratch files):
+  ```
+  before: FAIL language: score=-1.864, null_p99=-1.752, real_p05=-0.91, real_median=-0.784, mode=both, N=147
+          ok   words: cover=0.673, min=0.5, real_text_median_cover=0.946
+  after:  FAIL language: score=-1.672, null_p99=-1.752, real_p05=-0.91, real_median=-0.784, mode=both, N=147
+          ok   words: cover=0.701, min=0.5, real_text_median_cover=0.946
+  gloss (gloss_c172_withline1.txt, normalised, N=145, same judge): PASS language: score=-0.894, null_p99=-1.738, real_p05=-0.926
+  ```
+  Still FAIL; the score moves from below the shuffled null's p99 to just above it, far short of real_p05. Reported, not a gate: the
+  table decode still faces the gloss on only 83 of 150 tokens, and judge_n_c172.py's positive control FAILs at this N (Remaining gaps).
+Requests: none to any host. Subagents: 0.
+
+## Remaining gaps (MONLUC-K38, 9 Oct 2026)
+Read so far: unmeasured as a reading; f.86 150 tokens C 83 / M 64 / U 3 against its own gloss (10 curl-present K07 written K38 = t, 7 C, 3 M), judge FAIL -1.672; c268 lines 1-5 decoded with 10 C-curl tokens relabelled K38 = t (M), ungraded; judge FAIL -1.300.
+- c268 transcription noise (27% pass disagreement) - blocker: not-attempted; the C-curl part is now corrected on c268 and f.86; next: tools/lookalike_pass.py on c268 passes A/B with K38 as its own label, then the sorter's focus.tsv for the owner, ~$1
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py)
+- in-volume decipherment of ff.132-138 - blocker: not-attempted; f.139 opening tested and not matched; next: look at ff.140-141 and items 17/18/112-120 for a Monluc 28 Apr text, ~$1
+- rest of c268, c264, c258 and f.210 - blocker: not-attempted; wait on the look-alikes and a calibrated test; next: the 3-unit protocol per 5-10 lines once a positive control passes, ~$3 per leaf
+- ff.211-223, f.87 margin, ff.50/56/60/80 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONLUC-K38, 9 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [ ] clear-pages: remaining clear leaves untested; planned step: ff.140-141 look
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell (MONLUC-KEY), per sign form on f.86 (MONLUC-2) and c268 (MONLUC-K07); the C-curl form matched to the table's K38 (MONLUC-BLIND)
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found
+- [x] key-rebuild: C-curl = K38 written on c268 (MONLUC-RELABEL) and on f.86 (this pass, gloss-graded C 7 / M 3); key.tsv unchanged
+- [x] image-check: f.86 K07 binary curl sort on wider crops, gate PASS (MONLUC-CURL)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 4 internal gaps; cheapest next: tools/lookalike_pass.py on c268 passes A/B with K38 as its own label, ~$1

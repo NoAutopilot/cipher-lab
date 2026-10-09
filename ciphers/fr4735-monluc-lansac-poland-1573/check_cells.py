@@ -30,6 +30,14 @@ from score_c172 import norm, load_key  # noqa: E402
 
 M, X, G = 2, -1, -2
 
+# MONLUC-K38 (9 Oct 2026): the 10 f.86 K07 tokens a value-blind binary sort answered curl-present (MONLUC-CURL, f86_curl_answers.tsv;
+# gate PASS p 0.0086) are written K38 (the key sheet's C-curl z, table t) in ciphertext_c172.tsv only, as a transcription
+# correction. passA/passB keep the old label; relabel = curl-sort. The alignment, cells_c172.tsv, results_cells_c172.json and
+# the gloss letter each token faces are computed on the transcription before this relabel, so the relabel never feeds back into
+# which gloss letter a token faces. Grades then follow decode.json's votes: C where the faced gloss letter is t, M otherwise.
+RELABEL = {(L, i): ('K07', 'K38') for L, i in [('L02', 1), ('L02', 20), ('L02', 31), ('L03', 6), ('L03', 19), ('L03', 22),
+                                               ('L03', 30), ('L03', 39), ('L03', 45), ('L04', 22)]}
+
 
 def load_lines(name='ciphertext.txt'):
     lines = {}
@@ -188,11 +196,16 @@ def main():
         for i, t in enumerate(lines[L], 1):
             ab = settled.get((L, i))
             conf = 'M' if ab or t.startswith('?') else 'H'
-            pos_rows.append(f"{L}\t{i}\t{t}\t{conf}\t{ab[0] if ab else t}\t{ab[1] if ab else t}\t{norm(key.get(t, ''))}\t{faced[k] or ''}\n")
+            rl = ''
+            if (L, i) in RELABEL:  # transcription correction after the alignment: the faced letter is not re-derived from it
+                old, new = RELABEL[(L, i)]
+                assert t == old, (L, i, t, old)
+                t, rl = new, 'curl-sort'
+            pos_rows.append(f"{L}\t{i}\t{t}\t{conf}\t{ab[0] if ab else lines[L][i - 1]}\t{ab[1] if ab else lines[L][i - 1]}\t{norm(key.get(t, ''))}\t{faced[k] or ''}\t{rl}\n")
             if faced[k]:
                 vote_rows.append(f"{L}\t{i}\t{faced[k]}\n")
             k += 1
-    ctsv = 'line\tpos\tsign\tconf\tpassA\tpassB\ttable_value\tgloss_faced\n' + ''.join(pos_rows)
+    ctsv = 'line\tpos\tsign\tconf\tpassA\tpassB\ttable_value\tgloss_faced\trelabel\n' + ''.join(pos_rows)
     vtsv = 'line\tpos\tvalue\n' + ''.join(vote_rows)
     js = json.dumps(res, indent=1) + '\n'
     outs = {HERE / 'cells_c172.tsv': tsv, HERE / 'results_cells_c172.json': js,
