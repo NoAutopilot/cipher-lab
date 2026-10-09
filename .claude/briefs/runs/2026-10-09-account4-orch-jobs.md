@@ -50,3 +50,17 @@ builds the window from the leaf's mixed clear+cipher token stream when the folde
 input format it reads), with an offline test in tools/tests/ on a synthetic island leaf where the two modes must differ, and a SYSTEM.md
 row update. Then re-run it on sachsstaatsarchiv-manteuffel-1712 694/09 0015-16 code 198 and report both windows' p-values side by side in
 the folder's NOTES.md (no regrade: the D1 ruling stands unless a verifier re-rules). `python3 tools/system_map_check.py` must pass.
+
+### NEAR-BLZ (account-1; Opus 5.5; cap 1.5; box 30 min) -- NEAR.md row blitz-ciphers, untouched since 2 Oct (rule 5 / parent duty 0)
+The row's one cheap loose end: the shuffled-target rows for the de20 and en judges (USD 1), so every family row in
+ciphers/blitz-ciphers/HYPOTHESES.md carries the same floor (`tools/family_run.py` on the shuffled target, same N/K/seeds as bBLZ4/bBLZ6).
+Write the two rows beside the originals, one NOTES.md line, and update the NEAR.md row's "last touched" cell and next-step cell ("parked
+until new material: a transcription of pages 1-6's glyph script or a third page in the 7-8 alphabet"); `python3 tools/near_check.py` must
+not warn on this row afterwards. No other family attempt (the authenticity dispute makes further families low-value, the row says so).
+
+### NEAR-POLL (account-2; Opus 5.5; cap 5; box 75 min) -- NEAR.md row pollaky-1865-1875, untouched since 6 Oct
+The row's named next step: the phrase-level LM search on the unread lines 9/12/23/26/29 (~$5) under a pre-registered gate (PREREG-NEAR-POLL.md
+pushed before any score: the known-answer control is CONINGTON/SHIRLEY from PREREG-CATOK23, power and null false-unique reported as there).
+Also file the LOCAL-QUEUE.tsv row the NEAR row says is missing (kind: newspaper page -- the original Times Agony Column page, 16 May 1865,
+for the owner's local runner: Times Digital Archive or Gale via his library, one page, what to send back = a screenshot of the ad), then
+update the NEAR.md row (numbers, last touched, next step). `python3 tools/near_check.py` must not warn on this row afterwards.

@@ -6858,3 +6858,34 @@ outreach/sheets/ (the E4 reading is labelled not fit to show) and B's rebuilt bl
 done; (3) put G's anonymous-pile intake proposal (research/MARY-STUART-TALK-2026-10-09.md, "Proposal for the parent", e15ae3424) to the owner; (4) do NOT
 add the TRANSCRIPTION.md owner-labels line: B's unit 4 does not support it (0.260 vs 0.020). Owner asks still open: sorter box editing (MQS-SORTER-BOX),
 BnF pile at 10x coverage (MQS-BNF-S2A..S6), name-and-place tool (weak; needs typed candidates).
+## Orchestrator handoff (account 4, session_013CM4Sw1JBAhc5a2KspaERr, Fable, depth 2), from 9 Oct 2026 05:0x UTC, kept current
+
+Takeover: the owner chose account 4 after the account-3 orchestrator (session_0198Cv8ypBfBVfRToKVWx33M) went silent (last signed line 02:03
+UTC 9 Oct, last commit 03:47). TAKEOVER line 04:56 by session_01SnKHiQk7k7VPDGhfcPeiVV; this session posted its first check-in 05:01 and
+holds the single-orchestrator role for all accounts (brief: .claude/briefs/runs/2026-10-09-account4-orchestrator-takeover.md; mirror:
+hub-seed/CHECKIN-PROMPT.md, rewritten 05:4x). Check-in trigger: send_later trig_012KyLxQDcnDtXvJK91P23Wo (05:47 UTC), re-armed at every
+firing. Debosnys and the private repository stay account 3's.
+
+First check-in, 05:0x-05:4x UTC 9 Oct (10:0x-10:4x pm PT 8 Oct):
+- Lanes live: account 1 LANE SIG-5 (seven_day allowed_warning); account 2 LANE FAMILY-A2f (five_hour allowed); account 4 LANE MQS closing
+  (all eight MQS jobs done, MQS-LOCK 05:06). Account 3: down; its six queued second audits (AUD2-LEDGER-12..17, eckert-1864) moved to
+  account 4; four spawned from this session at 05:09, two left for the account-4 dispatcher.
+- Orphan check: 11 idle account-4 sessions archived (TOOLS-TOMO lane + 5 workers, LANE DEPTH's 4, AUD2-ES132, AUD2-LS3-A); the last two
+  had no LEDGER row (now 4.66 / 5.89 by get_session). Five open asks addressed to the parent answered in ROOM 05:09.
+- Unassigned progress rows (29, eight folders): jobs file .claude/briefs/runs/2026-10-09-account4-orch-unassigned-jobs.md, eight UNA-*
+  rows queued (accounts 1 and 2); Hellen 1-800 key rebuild (~$30-35) HELD, UNA-HELLEN ($3 adoption with rule-10 propagation) given the go.
+- Orchestrator jobs (.claude/briefs/runs/2026-10-09-account4-orch-jobs.md): BERGH-PUB (account 1: publish the Bergh sorter from the owner
+  account, preflight passes every check but the account one), SORTER-RERENDER-A3 (account 3, when back: Harley 287 and the other account-3
+  owner sorters on old templates), XMATCH-TRIAGE (account 2), DEPTH-STATS-CLEAR (account 4), NEAR-BLZ (account 1), NEAR-POLL (account 2).
+- Desk: desk_check (a) gramont-jstor-waive re-dated (12 JSTOR rows still queued: gramont 4, lodewijk 4, thurloe 4); (f) CONTRIBUTIONS rows
+  for pjm-kreider-reply, armstrong-keyhunt-monroe-papers/nyhs/nypl now name their drafts; bodleian-clarendon94-roe left as mailbox-draft
+  (its CONTRIBUTIONS row records the mailbox draft, not a send).
+- Keys 05:0x: Google Books daily quota 429 and Semantic Scholar 429 (both keyed; Google resets 00:00 UTC).
+- Not doable from account 4: the desk board's cards collection (no_cracks card proposals; 116 MISSING), the mailbox, republishing account-3
+  artifacts.
+- Owner's open decision: DV-MERCY's depth-bar convention (M tokens charged twice; research/DEPTH-AD-2026-10-08.md) -- the bar as
+  pre-registered stands until he decides.
+
+CLOSEST (blocker line): Mercy f.22 at 488/529 S, D1 under the bar (AD 141 vs longest run 53) -- the owner's decision on the bar convention
+is the only thing between D1 and D2 on record; nothing on disk is unworked. Eckert mssEC 19/25 second audits (AUD2-LEDGER-12..17) are the
+next counts.
