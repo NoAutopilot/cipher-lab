@@ -13,6 +13,9 @@ D4-GRA (8 Oct 2026, account 4): same rule, unchanged, extended to f.18r L11-L21:
 as committed by R12D-GRA) -> n12gra/recon_settled.tsv, and n9gra4/recon.tsv in place (it carries no `zb`; its plain `z`
 tokens are in neither sort, so the rule leaves the file unchanged -- logged for the record). Neither sort sampled any
 f18rB row, so on f.18r L11-L21 only reader `zb` moves.
+UNA-GRAM (9 Oct 2026, account 4; PREREG-UNA-GRAM.md, clause written here before any re-score): one more clause -- a
+fr.3040 `z` -> `zh` if UNA-GRAM's per-sign-box sort (unagram/sort_sonnet.tsv, gates G0/G1/G2 passed, unagram/score.out) put
+it in the barred-reference plurality class (C4); its "unclassed" tokens (C5) stay `z`.
 --check exits 1 if a committed recon.tsv differs from what this rule writes. key.tsv is not read or changed:
 `zh` is not in key.tsv, so the registered scorers treat it as an unkeyed wildcard.
 """
@@ -34,6 +37,9 @@ def classes():
     s2 = {r["id"]: r["class"] for r in rd("r12zb2/sort_sonnet.tsv")}
     n9 = {r["line_pos"]: zs.get(i) for i, r in zo.items() if r["src"] == "fr3040"}
     r12 = {r["line_pos"]: s2.get(i) for i, r in oc.items() if r["src"] == "fr3040"}
+    ua = {r["line_pos"]: "UNA-C4" for i, r in ((r["id"], r) for r in rd("unagram/occ.tsv"))
+          if r["set"] == "X" and dict((x["id"], x["class"]) for x in rd("unagram/sort_sonnet.tsv")).get(i) == "C4"}
+    r12.update(ua)  # UNA-GRAM barred calls (logged in the r12zb2 column as UNA-C4)
     return n9, r12
 
 
@@ -48,7 +54,7 @@ def relabel(d, n9, r12, log, inp="recon_prezh.tsv"):
             a, b = n9.get(lp), r12.get(lp)
             if x == "zb":
                 t[k] = "zh"; why = "reader zb"
-            elif x == "z" and (b == "C1" or (b in (None, "OFF") and a == "K2")):
+            elif x == "z" and (b in ("C1", "UNA-C4") or (b in (None, "OFF") and a == "K2")):
                 t[k] = "zh"; why = "sort barred"
             elif x == "z":
                 why = "kept z"

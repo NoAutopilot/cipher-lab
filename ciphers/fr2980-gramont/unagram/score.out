@@ -1,0 +1,21 @@
+('B', 'fr3040') {'C4': 11, 'OFF': 1}
+('P', 'f30') {'OFF': 2, 'C3': 6, 'C8': 1, 'C2': 1}
+('P', 'fr3040') {'C3': 2}
+('X', 'fr3040') {'C5': 2, 'C4': 4}
+('fh', 'f30') {'OFF': 1, 'C2': 5}
+('fh', 'fr3040') {'C2': 5, 'C6': 1}
+('n6', 'f30') {'OFF': 3, 'C1': 2, 'C7': 1}
+('n6', 'fr3040') {'C1': 6}
+G0 OFF 7/54 = 0.13 -> ok
+P plurality ('C3', 0.8, 10) | B plurality ('C4', 1.0, 11)
+G1 fh: plurality C2 0.91 of 11; per-source {'f30': 1.0, 'fr3040': 0.8333333333333334}; z-family share 0.04 -> pass
+G1 n6: plurality C1 0.89 of 9; per-source {'f30': 0.6666666666666666, 'fr3040': 1.0}; z-family share 0.00 -> pass
+G1 PASS
+G2 PASS
+X #23 f18vC_L02 29: C4 -> barred
+X #6 f18vC_L07 8: C4 -> barred
+X #8 f18vC_L10 30: C4 -> barred
+X #10 f18vC_L13 26: C4 -> barred
+X #9 f18vC_L14 18: C5 -> unclassed
+X #5 f18vC_L14 8: C5 -> unclassed
+OUTCOME per-target calls above

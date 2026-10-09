@@ -1563,6 +1563,53 @@ before any pass was run.
   not run because there were no changes to shuffle.
 - Requests: none (images on disk). Subagent calls: 4 (Sonnet), not the 20 planned. Novelty not classified (rule 10).
 
+## UNA-GRAM (9 Oct 2026): the 6 R-aligned fr.3040 plain z by per-sign box: 4 barred, 0 plain, 2 a third shape; key.tsv unchanged (account 4)
+
+Brief `.claude/briefs/runs/2026-10-09-account4-orch-unassigned-jobs.md`, job UNA-GRAM (the Verdict's "cheapest next"). PREREG-UNA-GRAM.md
+pushed (87884f25, 05:45 UTC by date -u; its header first said 05:5x and was corrected to the commit clock in the next commit, nothing
+else changed) before any box was cut. Disk only, no requests to any host. Subagent calls: 1 (Sonnet, blind, sheets only).
+- Prior work: `tools/prior_work.py fr2980-gramont --item-spec 'shelfmark=BnF fr.3040;folio=18v-19r;date=1530-03-28' --step-type transcribe
+  --fetch` exit 2 (KNOWN, no consumer: the plaintext is Le Grand III, which is this test's known answer). Re-run with `--known-answer
+  gate:z-A-vs-R-HYPOTHESES` exit 4 (LEAD = this job's own ROOM claim), recorded CLEAR (prior-work.tsv), re-run exit 0. Hand checks: (1) own
+  work: NOTES/HYPOTHESES/relabel_zh.tsv/ROOM grep -- the 6 were never boxed (OFF in both sorts, or N9-GRAZ K2 vs R12D-GRAZB2 C2); not done.
+  (2) leaf: the plaintext is printed (Le Grand III pp.455-456), the input here, not a stop. (3)-(4) holder/solver and editions: not
+  relevant to a sign-shape check of a known-plaintext letter; unchecked.
+- Targets (n8gra3/recon.tsv, z = A, aligned R by n8gra3/score3.py's aligner): f18vC L02 29, L07 8, L10 30, L13 26, L14 8, L14 18.
+- Tiles (`unagram/occ.py`, `unagram/cut.py` = r12zb2/cut.py with paths only changed): 54 = 6 targets + decoys fh 12 / n6 12 + plain-z
+  refs P 12 + barred-z refs B 12 (fr.3040 tiles R12D-GRAZB2 sorted C1, seeded). The 48 reference/decoy tiles are byte-identical to
+  R12D-GRAZB2's (md5 checked). Eye check of the 6 target overlays (`unagram/check/targets.jpg`), position only: 4 on the intended sign;
+  2 fixed (`unagram/fixes.tsv`): #10 L13 26 and #23 L02 29 were on the following sign, moved -1 run, re-checked.
+- Sorter: one Sonnet call on `unagram/sort_sheet_1-3.jpg` (prompt `unagram/sort_prompt.md`: R12D-GRAZB2's prompt text was not saved, so it
+  follows PREREG-R12D-GRAZB.md's instrument wording; class descriptions `unagram/sort_classes.md`; answer `unagram/sort_sonnet.tsv`).
+  Scored by `unagram/score.py` (`unagram/score.out`):
+
+| set | on-target | plurality class | share |
+|---|---|---|---|
+| decoy fh (f.30 / fr.3040) | 11 | C2 (f-shape) | 0.91 (1.00 / 0.83) |
+| decoy n6 (f.30 / fr.3040) | 9 | C1 (d-like loop) | 0.89 (0.67 on 3 / 1.00 on 6) |
+| plain-z refs P | 10 | C3 (thin sloping z, long base) | 0.80 |
+| barred-z refs B | 11 | C4 (heavy z, tick at upper left) | 1.00 |
+| targets X | 6 | C4 x4, C5 x2 | -- |
+
+  G0 OFF 7/54 = 0.13 (<= 0.20) ok; **G1 PASS** (z-family share of the decoy classes 0.04 / 0.00); **G2 PASS**. Per target: **barred** (C4)
+  f18vC L02 29, L07 8, L10 30, L13 26; **plain** none; **unclassed** (C5, "tall composite, J/T-like with a curl at the bottom left") f18vC
+  L14 8 and L14 18. Caveat as in R12D-GRAZB2: f.30 n6 has only 3 on-target tiles (0.67, passes 0.60 on thin numbers).
+- Relabel: `relabel_zh.py` extended by the registered clause (docstring first): a fr.3040 `z` -> `zh` if UNA-GRAM put it in the barred-
+  reference class (logged `UNA-C4` in relabel_zh.tsv). 4 z -> zh in n8gra3/recon.tsv; `relabel_zh.py --check` exit 0.
+- Re-score, registered `n8gra3/score3.py` (`n8gra3/target_una.json`): pooled f.18v + f.19r top **0.895 on 692 keyed** vs N1 p99 0.325 / N2 p99
+  0.296, PASS -- beside DA1-GRA's **0.889 on 696**. Keyed N fell by 4, so the planted control was re-run at the new N
+  (`n8gra3/control_una.json`): mean 0.878, gate 0.469, PASS. z left as z keyed A, n8gra3: 5 aligned -> A x2, R x2, T x1 (the 2 R are the two
+  C5 tokens). zh pooled over fr.3040 no.6 (n8gra2 + n8gra3 29 -> R x28, gap x1; n12gra 16 -> R x15, gap x1): **45 -> R x43, gap x2**, null
+  all-same 0.000; the registered open-code rule needs all-same, so zh is **not** keyed.
+- Rule 7: `decode.py --check` exit 0, `tools/decode_key.py . --check` exit 0, key.tsv `git diff` empty; f.30 extended reading unchanged
+  (H 1468, C 18, S 181, M 239, U 63). No reading changed, so no judge run.
+- Reading of the result: every fr.3040 z that a shape sort places as plain z reads A, none R; the plain-z A (f.30) vs R (fr.3040) entry is
+  narrowed from 6 tokens to 2, both on f.18v L14 and both of a third shape (neither the barred nor the plain reference class). Not closed
+  under the PREREG (unclassed keeps it open). Next: a person's look at f18vC L14 8 and L14 18 in the sign sorter (is C5 a barred z
+  variant, a misread of another code, or a plain z?), ~$0.5; the sort instrument is not re-run on them.
+
+Novelty not classified (rule 10).
+
 ## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026; updated A2-GRA3, A2-GRA4, A2-GRA5 and A2-GRA6, 3 Oct 2026, and N8-GRA and N8-GRA3, 4 Oct 2026)
 Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18, S 181, M 239; U 63 -- ST moved S -> C by N8-GRA3, 4 Oct 2026; after the ehx split; unchanged by round 3, A2-GRA4), from the eh/CROSS split section above; f.29r reading.txt per its own section.
 - the three cross shapes (CROSSp 5, CROSS2 2, CROSSo 1 occurrence) - blocker: too-short; split by shape and tested 3 Oct 2026 (eh/CROSS split section, test_f30r_split.tsv): C for the pattee fails its control (p 0.762), CROSS2 and CROSSo are below the test's n >= 5, and neither key table keys any of them
@@ -1578,7 +1625,7 @@ Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1468, C 18
 - [x] key-rebuild: eh and CROSS split by shape and the hidden-sign test rerun with its control (A2-GRA3, 3 Oct 2026): ehx = T accepted (grade S, 152.1 bits, p 0.010, recovery 1.00); no cross value passed; round 3 of test_f30r_top.py with ehx = T in the base accepts nothing (A2-GRA4, 3 Oct 2026), third run with only the base changed, so that instrument is retired for the default sign list (rule 3)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
 - [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
-Verdict: keep going: 3 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); R12D-GRA, 6 Oct 2026: the 27 z/zb and d/n6 split slots of f.18r L11-L21 settled by a blind eye pass (all zb, all n6), re-score PASS 0.802 on 298 vs p99 0.339, key.tsv unchanged; zb aligns R in 25 of 27 fr.3040 no.6 occurrences); R12D-GRAZB, 6 Oct 2026: the blind sort of f.30 zb beside fr.3040 barred z was a NON-TEST (decoy control failed: proportional-position ticks land on neighbours); R12D-GRAZB2, 6 Oct 2026: rerun with per-sign boxes, decoy control PASS, outcome DIFFERENT: the f.30 zb is not the fr.3040 barred z, so fr.3040's zb = R does not transfer, zb NULL stands, key.tsv unchanged; the open gaps above are unchanged; DA1-GRA, 7 Oct 2026: the fr.3040 barred z relabelled `zh` in n8gra2/n8gra3 (25 tokens, -> R x24, gap x1; n8gra3 re-score PASS 0.889 on 696), z/zb half of the HYPOTHESES.md z A-vs-R entry closed, key.tsv unchanged; D4-GRA, 8 Oct 2026: the same relabel on f.18r L11-L21 (16 zb -> zh, re-score PASS 0.815 on 298; pooled zh 41 -> R x39, gap x2, not keyed; the 5 plain z there align A x4, S x1), key.tsv unchanged; the plain-z A (f.30) vs R (fr.3040, 6 leftover unboxed z on f.18v/f.19r) half stays a listed conflict; cheapest next: per-sign-box shape check of those 6 R-aligned z with R12D-GRAZB2's method and decoy control (one vision call), ~$1.5; SIG-GRA30, 8 Oct 2026: the native two-pass re-read of the worst 8 f.30 lines stopped at its control (fr.3040 f.18r L11+L15 0.754 < gate 0.757), no f.30 change, reading unchanged
+Verdict: keep going: 3 internal gaps; the z image-check is done (N9-GRAZ, 5 Oct 2026: plain z = A confirmed on f.30, rank 1 of 23 with power controls; the fr.3040 "z -> R" conflict is the barred z, K2, a reader label, key.tsv unchanged); fr.3040 no.6 is now read through against Le Grand III (N9-GRA4, 5 Oct 2026: f.18r L11-L21 PASS 0.812, no open code reached C: HASH 4/7 L, A2 split I/E, v M 9/10); R12D-GRA, 6 Oct 2026: the 27 z/zb and d/n6 split slots of f.18r L11-L21 settled by a blind eye pass (all zb, all n6), re-score PASS 0.802 on 298 vs p99 0.339, key.tsv unchanged; zb aligns R in 25 of 27 fr.3040 no.6 occurrences); R12D-GRAZB, 6 Oct 2026: the blind sort of f.30 zb beside fr.3040 barred z was a NON-TEST (decoy control failed: proportional-position ticks land on neighbours); R12D-GRAZB2, 6 Oct 2026: rerun with per-sign boxes, decoy control PASS, outcome DIFFERENT: the f.30 zb is not the fr.3040 barred z, so fr.3040's zb = R does not transfer, zb NULL stands, key.tsv unchanged; the open gaps above are unchanged; DA1-GRA, 7 Oct 2026: the fr.3040 barred z relabelled `zh` in n8gra2/n8gra3 (25 tokens, -> R x24, gap x1; n8gra3 re-score PASS 0.889 on 696), z/zb half of the HYPOTHESES.md z A-vs-R entry closed, key.tsv unchanged; D4-GRA, 8 Oct 2026: the same relabel on f.18r L11-L21 (16 zb -> zh, re-score PASS 0.815 on 298; pooled zh 41 -> R x39, gap x2, not keyed; the 5 plain z there align A x4, S x1), key.tsv unchanged; the plain-z A (f.30) vs R (fr.3040, 6 leftover unboxed z on f.18v/f.19r) half stays a listed conflict; per-sign-box shape check of those 6 R-aligned z done (UNA-GRAM, 9 Oct 2026: G1/G2 PASS, 4 barred -> zh, 0 plain, 2 a third shape on f.18v L14; n8gra3 re-score PASS 0.895 on 692; pooled zh 45 -> R x43, gap x2, not keyed; key.tsv unchanged); the plain-z conflict now rests on those 2 tokens; cheapest next: a person's sign-sorter look at f18vC L14 8 and L14 18, ~$0.5; SIG-GRA30, 8 Oct 2026: the native two-pass re-read of the worst 8 f.30 lines stopped at its control (fr.3040 f.18r L11+L15 0.754 < gate 0.757), no f.30 change, reading unchanged
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 

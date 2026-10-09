@@ -1,4 +1,4 @@
-# PREREG UNA-GRAM (9 Oct 2026, written 05:5x UTC by date -u, before any box is cut or looked at)
+# PREREG UNA-GRAM (9 Oct 2026, written 05:45 UTC by date -u (header first typed 05:5x, corrected to the commit clock; nothing else changed), before any box is cut or looked at)
 
 Job: UNA-GRAM (`.claude/briefs/runs/2026-10-09-account4-orch-unassigned-jobs.md`). Question: are the 6 fr.3040 no.6 plain `z`
 tokens that still align R after DA1-GRA's relabel (OFF in both earlier sorts, or the sorts disagree) the barred z (`zh`, R x39 /
