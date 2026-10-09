@@ -52,3 +52,27 @@ The first d3bla2_universe.py (commit 3b8babd6, pushed 21:44 UTC; the header time
   BLA188_p3 (11), BLA188_p5 (9), BLA190_p7 (7), BLA188_p4 (4, tied with BLA194_p1 at 4). So the scored set is the sampled columns on
   those four pages (31 of the 40); the 9 on BLA185_p5, 190_p5, 194_p1, 194_p2, 179_p6 are not read (counted as "not covered").
 - Reconciliation = one more unit by me, on the same bands, before any score is printed.
+
+## Amendment 3 -- UNA2-BLA, a different instrument (9 Oct 2026, 09:4x UTC by date -u; before any tile is cut or read, nothing scored)
+Worker UNA2-BLA (account 1; brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md "## UNA2-BLA"). The re-gate above on the
+1200 px copies is [retired] (S 2 < 10, untestable at N; a further attempt at that design would hit rule 3's third-attempt clause). This
+amendment changes the instrument, not a knob: the Huntington IIIF server (hdl.huntington.org/iiif/2/p15150coll7:61005/info.json, read
+9 Oct 2026) gives BLA191 p5 a native 8708 x 11608 px; the listed size 4354 x 5804 (3.6x the 1200 px copy) was fetched as
+images/BLA191_p5_w4354.jpg (recorded in images/manifest.json).
+- Tiles: `python3 tools/iiif_lines.py --image images/BLA191_p5_w4354.jpg` on the L11-L13 strip (command and output pasted in NOTES.md);
+  if it does not separate the three lines, one PIL crop per line, x 1250-4000, eye-set y from the 1200 px positions x 3.628, no upscale.
+- Blind read: one Sonnet subagent call on the three line tiles only (no key, no glosses, no prior reads), digits per group in order.
+  Then one reconciliation by this worker on the same tiles, recording compete=1 for any L12 column where a digit reads plausibly as another
+  (the hand's ')'/'>' = 7 rule holds), before any score is printed.
+- Known-answer set (fixed now): the 14 columns of L11 and L13 whose sign is H and whose token is C in reading_tokens.tsv (L11 pos 4, 6, 7,
+  9, 10, 11; L13 pos 1-8). Answer = the committed group. (The brief says "5 known-answer columns"; the strip carries 14 at no extra cost,
+  so all 14 are used -- more power, same call.) Caveat declared: the committed groups were read at 1200 px and confirmed by context,
+  not by an independent witness; a KA miss can be the old reading's error as well as the blind reader's -- either way it fails the gate.
+- Gate (pre-registered): PASS iff the blind hi-res read equals the answer on >= 13 of 14 KA columns (>= 0.90). The control can fail: the
+  blind reader may misread any KA digit at this resolution.
+- On PASS: each held L12 column (pos 2, 3, 4, 6, 7, 8, 9, 10, 11, 12; d3bla_signs.tsv) becomes sign H iff the blind hi-res digits equal
+  the committed group (= A = B = D3-BLA's blind Z) and compete = 0; pos 5 (1185) is reported, not promoted unless the same holds. Changes
+  go only into settle_image.tsv, then `python3 settle.py && python3 build_key.py && python3 ../../tools/decode_key.py . --check`; values
+  follow PREREG-D3BLA I2 (a key tie that is not one word in two spellings stays M; 585's value stays U). L11 pos 1 (46, key tie) is a
+  key question, not an image one, and is untouched.
+- On FAIL: nothing promoted; logged "hi-res KA FAIL" with the per-column table; the step goes [retired] for this instrument.
