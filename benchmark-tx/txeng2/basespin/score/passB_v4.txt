@@ -1,0 +1,4 @@
+spinelli-c1519-confirm [confirm] err_true 0.119 (23/193) 95% 0.081-0.172 | wrong 19 deleted 2 inserted 2 | excluded 66 | lines missing 0
+  as measured 0.119 (23/193) | flagged excluded 0.110 (21/191) 95% 0.073-0.162 [2 flagged]
+  top confusions (truth value <- read): r<-EIGHT/HOOK? x4, g<-NEW:circle-on-stem x2, u<-NEW:long-s-crossbar x2, i<-PHI/HOOK? x2, t<-SIX/HOOK? x1, i<-EIGHT x1, t<-<deleted> x1, p<-THREE/NEW:barred-yogh? x1
+split confirm: err_true 0.119 (23/193) 95% 0.081-0.172

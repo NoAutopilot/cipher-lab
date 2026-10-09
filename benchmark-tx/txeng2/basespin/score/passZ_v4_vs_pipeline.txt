@@ -1,0 +1,5 @@
+spinelli-c1519-confirm [confirm] err_true 0.057 (11/193) 95% 0.032-0.099 | wrong 8 deleted 0 inserted 3 | excluded 66 | lines missing 0
+  as measured 0.057 (11/193) | flagged excluded 0.047 (9/191) 95% 0.025-0.087 [2 flagged]
+  top confusions (truth value <- read): g<-NEW:circle-on-stem x2, u<-NEW:long-s-crossbar x2, i<-EIGHT x1, p<-THREE x1, s<-JHOOK x1, n<-PHI x1
+split confirm: err_true 0.057 (11/193) 95% 0.032-0.099
+paired passZ_v4.tsv vs passZ_pipeline.tsv on spinelli-c1519-confirm: 193 common scored signs; base wrong 14, output wrong 8; fixed 8, broken 2; sign test p = 0.1094

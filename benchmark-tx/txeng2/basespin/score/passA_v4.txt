@@ -1,0 +1,4 @@
+spinelli-c1519-confirm [confirm] err_true 0.062 (12/193) 95% 0.036-0.105 | wrong 9 deleted 0 inserted 3 | excluded 66 | lines missing 0
+  as measured 0.062 (12/193) | flagged excluded 0.052 (10/191) 95% 0.029-0.094 [2 flagged]
+  top confusions (truth value <- read): u<-JHOOK x2, i<-EIGHT/PHI? x1, i<-PHI/NINE? x1, p<-THREE x1, m<-HOOK/JHOOK? x1, c<-LL/PI? x1, s<-NEW:large-looped-H-flourish x1, n<-PHI x1
+split confirm: err_true 0.062 (12/193) 95% 0.036-0.105

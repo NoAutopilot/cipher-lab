@@ -1,0 +1,17 @@
+line	pos	old_err	new_err	flagged	sheet_defect	change
+p1c_L01	3	1	0			fixed
+p1c_L01	5	1	1	y		
+p1c_L01	14	1	0		y	fixed
+p1c_L01	15	1	0		y	fixed
+p1c_L02	26	0	1			broken
+p1c_L02	27	1	1			
+p1c_L03	4	1	0			fixed
+p1c_L03	16	1	1	y		
+p1c_L03	25	1	0		y	fixed
+p1c_L05	20	1	0			fixed
+p1c_L06	21	1	1			
+p2c_L01	17	0	1			broken
+p2c_L01	27	1	0			fixed
+p2c_L02	3	1	1			
+p2c_L02	7	1	1			
+p2c_L02	11	1	0			fixed
