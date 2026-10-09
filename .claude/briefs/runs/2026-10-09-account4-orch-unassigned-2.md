@@ -98,3 +98,15 @@ confirm the counts and sentences against the files (decode_key --check both page
 and not a key86 value change, and rewrite the carry-over in the verifier's voice (or strike what the files do not support); update the
 item's token counts and depth fields in AUDIT.md/status.json only if your own check changes them (this is a known-text target: Tomokiyo's
 key, the Colbert copy -- N-class unchanged). Rule 10 wording; no reading, no key edit.
+
+## OUT-CHECK-KARL (account 2, Opus 5.5, cap USD 3, box 50 min) -- gate-7 pre-send fact check; a session other than KARL-REQ and KARL-FOLD
+Draft: outreach/riksarkivet-karlxi-1677.md (status drafted; item 1 ra-karlxi-fullmakt-1677 copy order, item 2 ra-celsing-sillen folded in by
+KARL-FOLD 11:15 UTC 9 Oct). Do CLAUDE.md Outreach gate (7) exactly: read the draft against every file and source it cites (both folders'
+NOTES.md, REQUEST.md, AUDIT.md if any; ASKS 132 and 159; CONTRIBUTIONS.md row; the reference codes SE/RA/25.3/4/II/7/B and the ra-celsing
+one; the recipient address on Riksarkivet's own contact page, read today, with the date); try to falsify each factual sentence (counts,
+dates, shelfmarks, names, what was and was not checked, which copies are already in print); confirm outreach/README.md rules 1 (AI-disclosure
+sentence in the first paragraph), 1a (voice: "I" for what the person does, "we" for the agents' work), the subject / recipient / sign-off
+placeholders, and that no personal data is in the file. Write the verdict as a `checked:` line in the draft's header naming what you
+corrected (or "nothing"), set `status: ready` only if it passes, run `python3 tools/send_queue_check.py` on a would-be row and paste the
+output in the done line; do NOT add the SEND-QUEUE row (the orchestrator queues it) and do not send. Then update the ASKS 159 row to a
+self-contained desk-ready sentence (one action, paste-ready) but leave its status word `backlog` (desk ranking is the orchestrator's).
