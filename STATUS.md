@@ -6621,3 +6621,31 @@ Results:
    never had AD computed; Mercy fell when it was).
 4. Not runnable now: hellen 1-800 (no-key-material; ~$30-35 campaign, low prior); fr3416 f.35r (D2 out of reach, DEPTH-MH);
    fr2980 f.30r residue (retired); fr20140-danzay fails the intake gate (status found-solved line); eckert is LANE LEDGER's.
+
+## LANE SIG handoff (SIG-1, session_01Sj9f3TAuMmxN1jSoXezro8, account 1), 8-9 October 2026 (22:40-00:2x UTC by date -u; workers 31.04 + orchestrator 4.64 = 35.68 of 60 by get_session; seven_day allowed_warning throughout; first incarnation)
+Brief .claude/briefs/lane-significance.md; jobs .claude/briefs/runs/2026-10-08-acct1-sig1-jobs.md (waves 1-3). Share of spend on items whose text is
+already known: ~0 (SIG-AVS's 74 re-look, a sibling with a period decipherment, ~$2).
+**Results.**
+- **Baluze 170 f.228r-v** (Chavigny to d'Avaux, Amiens, 25 Aug 1640; first leaf of the letter whose f.229 is the lane's top item): SIG-B228 valued 6 of 7
+  unread shapes by blind exemplar reads (decoy gate 2/3), SIG-B228B the 4 u4/4u signs (a); first verifier SIG-V228: **N3, D2 (~36%), key published + ours**;
+  it withdrew SIG-B228's 15 Sonnet mark regrades (the control tested only present marks) -- applied by the orchestrator 9 Oct: H 56 M 70 I 27 U 1, fr17
+  -0.956 vs real_p05 -0.918 FAIL, above all 40 nulls (max -1.172), positive control 3/3 (b167228/judge_null_v228.out). Content (verifier's): the cipher
+  reports a fear that the Landgravine and the dukes of Lüneburg would [verb unread] with the enemy, and Chavigny's doubt of it for the Landgravine because
+  of her recent treaty with the King. AUD2-SIG-228 (account-3) and SO-BAL170-F228 queued; the revision is carried into AUDIT.md and the SO prompt.
+- **AUD-SIG-CHAV / AUD-SIG-E146** (account 3, done 23:5x): f.229 stays N3 D2 (Eberstein reward in print 9 Nov 1640, Caillet 1912; the despatch adds the
+  decision eleven weeks earlier); E146 stays N3 weak D2 (no print of the take-over proposal located). Both lines in research/SIGNIFICANCE-2026-10-08.md
+  "## Lane SIG additions".
+- **fr2980-gramont f.30**: SIG-GRA30's two-Sonnet-pass + reconciler protocol failed its known-answer control (0.754 < 0.757; on file 0.807): no change.
+- **lodewijk 4612**: global LM-anneal pre-checks FAIL for unigram (SIG-4612) and bigram (SIG-4612B) objectives; with GAPS43's segmentation, the
+  instrument is [retired] for 4612 (rule 3 third attempt).
+- **august-van-saksen**: no further cipher enclosures exist (KH1-D); SIG-AVS's Qf and 74 idx6 sorts failed their controls (stay M).
+**next** (cost per item; blocked items named):
+1. Gallica probe first (one per incarnation; 403 at 23:15 UTC 8 Oct). If 200: (a) SIG-B229D, f.229 letter-sign shape-level control against the glossed
+   Baluze 170 leaves (survey.tsv rows 50-63: ff.63, 124, 130, 145, 233, 239, 258, 300, 320, 322 carry period glosses; none on disk), ~$4 -- raises f.229
+   and f.228 letter signs M -> S if it passes; (b) full-volume sweep of Baluze 167-171 at 300 px for unlisted cipher runs, ~$3; (c) 168 f.246-247 hand
+   exemplars, ~$3. If 403: all three blocked.
+2. f.228 unread verb (v b_L02 13 = sued|co) and the f.228r name (unmarked 73): only a glossed exemplar of 13 / an eye-checked mark settles them; Sonnet
+   mark detection is not an instrument on this hand (SIG-B228B, SIG-V228). Needs 1(a)'s leaves.
+3. Gramont f.30 worst lines: next instrument is the owner's sign sorter (TRANSCRIPTION.md), not more machine passes -- owner-side.
+4. 4612: new material or a different instrument only. Code 146 (5797): band tests retired; open-codes.
+5. august-van-saksen: Qf label-split hypothesis (~$1, low value); otherwise waiting on ASKS 67 / the Dresden reply.
