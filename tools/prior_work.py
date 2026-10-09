@@ -68,6 +68,9 @@ Checks (scope step = the job itself; scope plaintext = the item's text):
    unit with decipherment wording = LEAD. Sentences are classed with a negation lexicon ('no separate dechiffrement',
    'no interlinear gloss on the leaf', 'sans le dechiffrement', 'Non-decrypted') and a partial lexicon ('gedeeltelijk',
    'en partie'). A unit with no folio, R-id or pointer makes the folio-keyed checks UNCHECKED, never CLEAR.
+ 3a active editions (MQS-SCOUT, 9 Oct 2026): `active-edition` rows of prior_portals.tsv (the Mary Stuart - Castelnau corpus, Lasry's
+   second Mary collection) match the item's shelfmark list or keyword regex = LEAD 'active project, contact before work' (the word 'first' is masked by rule 10) with the contact
+   route (never KNOWN or CLEAR); scope and tests in check_active_edition's docstring.
  4 editions (tools/data/prior_editions.tsv, matched by slug glob, year span and correspondents): cached djvu text is
    searched for the date +-1 day (Old and New Style both ways in 1582-1752 unless `calendar` says) with name tokens of
    both correspondents in one window = LEAD edition-hit, with the hit count at +-30 days beside it (KNOWN only by --record
@@ -1040,6 +1043,41 @@ def check_portals(ctx, item, u):
     return rows
 
 
+def active_fields(text):
+    """'a=x; b=y z' -> {'a': 'x', 'b': 'y z'} (the sub-format of an active-edition row's keyed_on and source cells)."""
+    return {k.strip(): v.strip() for k, v in (p.split("=", 1) for p in (text or "").split(";") if "=" in p)}
+
+
+def check_active_edition(ctx, item, u):
+    """3-active-edition (MQS-SCOUT, 9 Oct 2026): `active-edition` rows of prior_portals.tsv name a project preparing an
+    edition of a corpus (shelfmark list and/or keyword regex). A match on the item's shelfmark, or a keyword in its sender,
+    recipient, office, place or shelfmark, is a LEAD 'active project: contact first' with the project's contact route.
+    Catches: fr.2988 f.38 (listed shelfmark); a letter from Castelnau (keyword). Must NOT: an unrelated BnF volume
+    (fr.3413), or a volume whose number merely begins with a listed one (fr.29880); never KNOWN, never CLEAR."""
+    rows = []
+    shelf = item.get("shelfmark") or ""
+    for r in portal_rows(ctx, "active-edition"):
+        k, src = active_fields(r.get("keyed_on")), active_fields(r.get("source"))
+        why = ""
+        for sh in (k.get("shelfmark") or "").split("|"):
+            keys = sm.volume_keys(sh)
+            want = set(pc.norm(sh).split()) - {"bnf", "de"}
+            if (keys and keys & u.vols) or (not keys and want and want <= set(pc.norm(shelf).split())):
+                why = f"shelfmark {sh.strip()}"
+                break
+        if not why and k.get("keyword"):
+            cells = " ".join(item.get(c) or "" for c in ("sender", "recipient", "office", "place", "shelfmark"))
+            m = re.search(k["keyword"], cells, re.I)
+            if m:
+                why = f"keyword {m.group(0)!r}"
+        if why:
+            rows.append(ctx.row(item, "plaintext", "3-active-edition", r.get("portal"), "LEAD",
+                                f"active project, contact the authors before work ({why}): {src.get('project', r.get('portal'))}; contact: "
+                                f"{src.get('contact', 'see the registry row')}; {src.get('url', '')} checked {src.get('date_checked', '')}",
+                                query=why, key=f"active|{r.get('portal')}|{why}"))
+    return rows
+
+
 _TOMO = {}
 
 
@@ -1842,6 +1880,7 @@ def run_item(ctx, item, step):
         rows += check_g3(ctx, item, ctx.a.reading)
     else:
         rows += check_portals(ctx, item, u)
+        rows += check_active_edition(ctx, item, u)
         rows += check_editions(ctx, item)
     leaf_rows, look = check_leaf(ctx, item, u, step)
     rows += leaf_rows

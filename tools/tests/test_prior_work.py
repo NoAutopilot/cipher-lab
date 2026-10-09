@@ -708,5 +708,19 @@ for case, spec, notes in surv:
     check(f"survivor shape {case}: no KNOWN from a sibling's, a calibration's, a sought or a planned gloss",
           code != 2 and "KNOWN         2-leaf" not in out, out)
 
+# ---------------------------------------------------------------- 3a. active-edition rows (MQS-SCOUT, 9 Oct 2026)
+PORTALS = open(os.path.join(REPO, "tools", "data", "prior_portals.tsv"), encoding="utf-8").read()
+for slug, spec, want, label in (
+        ("fx-act1", "shelfmark=BnF fr.2988;folio=38r", True, "fr.2988 f.38 -> active-project LEAD, exit 4"),
+        ("fx-act2", "shelfmark=BnF fr.3413;folio=1r", False, "unrelated BnF fr.3413 -> no active-project row"),
+        ("fx-act3", "shelfmark=BnF fr.29880;folio=1r", False, "fr.29880 (a longer number) is not fr.2988"),
+        ("fx-act4", "shelfmark=BnF Cinq Cents de Colbert 470;folio=12r", True, "Cinq Cents de Colbert 470 (no volume key) matches"),
+        ("fx-act5", "shelfmark=BnF fr.3413;folio=1r;sender=Michel de Castelnau", True, "keyword Castelnau in the sender -> LEAD")):
+    r = repo(target(slug, "Status: partial\n", items=[], extra={"tools/data/prior_portals.tsv": PORTALS}))
+    code, out = run(r, slug, "--item-spec", spec, "--step-type", "decode")
+    has = "3-active-edition" in out and "active project, contact" in out
+    ok = has == want and (code == 4 if want else True) and not re.search(r"\bKNOWN\s+3-active", out)
+    check(f"active-edition: {label}", ok, f"exit {code} {out[-400:]}")
+
 print(f"\n{'all passed' if not fails else f'{fails} FAILED'}")
 sys.exit(1 if fails else 0)

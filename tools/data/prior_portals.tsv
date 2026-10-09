@@ -1,6 +1,7 @@
 # prior_portals.tsv -- portal and solver-repository registry for tools/prior_work.py check 3 (PRIOR-WORK v1, 8 Oct 2026).
+# active-edition rows (MQS-SCOUT, 9 Oct 2026): keyed_on = 'shelfmark=A|B|C; keyword=regex' (either part may be absent), source = 'project=..; contact=..; url=..; date_checked=..'.
 # APPEND-ONLY: add rows, never rewrite one (a correction is a new row with the same portal id; the last row wins). Columns:
-#   portal (id), kind (tomokiyo | decode-listing | decode-record | solver-repo | holder-portal), cache_paths (space-separated,
+#   portal (id), kind (tomokiyo | decode-listing | decode-record | solver-repo | holder-portal | active-edition), cache_paths (space-separated,
 #   relative to the repository root; what v1 reads offline), keyed_on (the item identifier that finds an entry), verdict_rules
 #   (how a matching sentence is classed; a status word alone is never KNOWN or CLEAR), freshness_days (v2: older caches become
 #   UNCHECKED offline), v1 (implemented | registry-only), source.
@@ -15,3 +16,5 @@ hcportal	holder-portal		HCPortal record id	'Partially solved' = KNOWN-PART pendi
 wvo	holder-portal		WVO briefnr	print codes (GPA, GPAS, GSME, LMSAC, DNOK, JC, Japikse nr., Groen, Fruin) = LOOK edition-page, never KNOWN by themselves; 'Collectie Japikse' = CONTEXT unseen-witness	7	registry-only	sources/wvo/NOTES.md
 rah	holder-portal		RAH signatura	'Copia del ... cifrado' / 'Es copia conforme' = LEAD copia; 'Copia, en cifra' = CONTEXT	7	registry-only	sources/salazar-castro-index
 huntington	holder-portal	ciphers/eckert-1864/sources ciphers/eckert-1862	CONTENTdm pointer	the holder's own transcription: no code word = KNOWN; code words = KNOWN-PART (civil-war adapter, check 5)	7	implemented	tools/huntington_transc.py
+mary-castelnau-edition	active-edition		shelfmark=BnF fr.2988|BnF fr.20506|BnF fr.3158|Cinq Cents de Colbert 470; keyword=Marie Stuart|Mary Stuart|Mary Queen of Scots|Castelnau	any item matching = LEAD 'active project: contact first' (not KNOWN: the edition is in preparation, not printed); a decode, read, transcribe or crop step is owed a contact before work	7	implemented	project=Mary Stuart - Castelnau corpus, edition in preparation by E. Paranque, A. Courtney and M. Questier, Routledge 2027; contact=the authors, who invite scholars to contact them (paper p.192); url=Northeastern Global News 21 Aug 2024; date_checked=9 Oct 2026
+lasry-mary-collection	active-edition		keyword=Marie Stuart|Mary Stuart|Mary Queen of Scots|Castelnau	keyword match only (archive not named): LEAD 'active project: contact first'	7	implemented	project=Lasry's second Mary collection, more than 100,000 symbols, archive not named; contact=via the authors of HistoCrypt 2026; url=hdl 10062/122074 PDF p.6 n.8; date_checked=9 Oct 2026
