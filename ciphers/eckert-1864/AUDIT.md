@@ -11611,3 +11611,73 @@ Kennerly 0, seizure of their papers 7 (9889 own; **9114**; 9254/9255 later).
   (fetched as `warofrebellion014703rootrich`).
 Requests: hdl.huntington.org 16 (12 CONTENTdm queries, 4 IIIF pages, all 200); archive.org 11 (10 downloads: 7 x 200, ser. III vol. 5 503
 once, I/39 pt 3 500 under two identifiers; 1 advancedsearch); Google Books API 13 (all 200).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-28)
+
+Second verifier AUD2-LEDGER-28 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 19:07-19:2x UTC by
+`date -u`; a separate session and account from the reader MS18-R2 and the first auditor FV-MS18b (account 1); this session had not read or
+audited this entry before. Scope: **E325** only (WORK-QUEUE AUD2-LEDGER-28; the queue note names "## AUDIT (FV-MS18b)", which is the section that
+carries E325 -- FV-MS18c covers E326 and the Louisville copy). Nothing decoded beyond key look-ups. Key source: `period`. No spec exists for
+eckert-1864, so `judge_plaintext.py` was not run. Committed: this section; `fortmonroe/aud2_ledger28_phrases.txt` + `aud2_ledger28_sources.tsv`
+(tools/print_check.py input; its TSV kept in scratch, summarised below); two JSTOR-QUEUE.tsv rows. Re-derivation: `python3
+ciphers/eckert-1864/decode.py --check` -> "reading.md is current".
+
+### 1. Families the first audit did not cover, and what this pass did
+| Family | FV-MS18b | This pass |
+|---|---|---|
+| The 1892 OR volume of the same-day Chicago order (Google Books `urU9AAAAYAAJ`) | snippet only, volume not identified | **identified**: Books API (country=US, key) -> "The War of the Rebellion ... 1892", 1040 pp.; the snippet text found in IA `warofrebellion393unit` = **OR ser. I vol. 39 pt 3, p.678** (running head "678 KY., SW. VA., TENN., MISS., ALA., AND N. GA. [Chap. LI."; index "Maurice, Morrison (alias Samuel Ober). Mentioned 678") |
+| Items around p.678 and the rest of I/39 pt 3 for a St Louis, Louisville or Nashville copy | not read | read: no Kendall, Kennerly, Ritchie, Hunter, Harper, Tunstall, Garrett or Heikermere item; the only "rebel agents ... seize their papers" text in the volume is p.678 |
+| OR I/41 pt 4 (Missouri, Nov 1864), the 5-8 Nov window | grepped on phrases | re-read by line window (OCR lines ~35400-40500, every 5-8 Nov dateline): no arrest order for these agents, no Dana/Rosecrans relay of it; "Kendall" there = Capt. John Kendall, 16th Kansas; "Colonel Ritchie" = a guard dispute (other men) |
+| Horan, *Confederate Agent* (1954) | Google Books snippet (2015 reprint), page not seen | **read in IA full text** `dli.ernet.157117`: the list is on **p.227** (running head "THE MAINE COAST EXPEDITION 227"), inside Holt's evaluation for Stanton of Francis Jones's confession: "St Louis ... Wm. Kendall and Capt Lewis Kennerly / St Joseph, Mo. ... John or Wm. Ritchie / New Madrid ... James Hunter / Cape Girardeau ... Col. Wm. Harper / Memphis ... Capt. Pope / Nashville ... Col. Thos. J. Tunstall / Cincinnati ... Maj. Heikermere / Louisville ... Capt. M. J. Garrett"; Chicago "Maj. Morris or Maurice, alias Sam Ober", Springfield "Capt. Thos. Sevier, alias Oliver Ditson". FV-MS18b's "the snippet's place-name order is garbled" is right: the IA text pairs each name with exactly the station the cipher gives it. Horan does **not** print the 5 Nov telegram or any 5-6 Nov arrest order (no "Rosecrans", "Dana" or "Monday morning" near p.227) |
+| Secondary St Louis literature | not searched | IA global full text (via print_check ia-global): W. C. Winter, *The Civil War in St. Louis: a guided tour* (1994, `civilwarinstloui0000wint`, lending-only, page not citable): "Jones disclosed William Kendall and Captain Lewis Kennerly as operatives in St [Louis]" -- the Jones list again, not the telegram |
+| Huntington CONTENTdm, phrases not run before | 12 queries | 7 more (`CISOSEARCHALL`, all pointers, 3.3 s apart): Lewis Kennerly 0; New Madrid Hunter 2 (9889 own; 9075 = Beckwith 21 Sept 1864, other matter); Ritchie Joseph agents 1 (9889); Maurice Chicago agents 1 (9114); Sevier Springfield 1 (9114); Garrett Louisville agents 0; rebel agents Rosecrans 0. No clear copy of E325 |
+| Quoted-phrase pass (tools/print_check.py, 6 phrases) | Google Books 10 queries | IA items I/41 pt 4, I/39 pt 3: no hits on every phrase; Horan item: djvu 404 to the tool and be-api 502 on 4 of 6 (read directly instead, above); ia-global: 1 item on "Kendall and Captain Lewis Kennerly" (Winter 1994, above), 502 on 3 phrases, no hits on 2; Google Books: word-matches only (Horan 2015 reprint, county histories), no phrase hit on the order's wording; OpenAlex no hits x7; CrossRef no relevant hit |
+| Scholarship (S2, CORE) | not run | S2 2 queries: no relevant hit (S2 429 once inside print_check); CORE `"Lewis Kennerly"`, `Kennerly AND "rebel agents"`: 0 |
+| JSTOR | not queued | 2 rows queued, families (i) and (ii); never blocking |
+| Unreachable / not searched | -- | Grant Papers, Rosecrans papers (UCLA), Dana papers (LoC), NARA RG 107 telegrams, Missouri press 7-8 Nov 1864, OR ser. II vol. 7 beyond FV-MS18b's grep, Holt's report itself (NARA RG 153, cited by Horan) |
+
+### 2. What p.678 settles, and one chronology note
+- OR I/39 pt 3 p.678: "Headquarters District of Illinois, Springfield, November 6, 1864. Col. B. J. Sweet, Commanding, Chicago: By direction of
+  the Secretary of War you will arrest on Monday morning at 9 o'clock the following rebel agents and seize their papers: Maj. Morrison Maurice,
+  Chicago ... aliases as Samuel Ober, &c.; Capt. Thomas Sevia alias Oliver Ditson, Springfield, Ill., if also in Chicago. Acknowledge receipt.
+  JOHN COOK, Brigadier-General, Commanding." This is a district commander's relay of the Chicago/Springfield order, not E325 and not a copy of
+  it; it confirms independently, in print, the order's date (5-6 Nov 1864), its authority (the Secretary of War), its form ("arrest on Monday
+  morning ... the following rebel agents and seize their papers") and that the stations come from the same Jones list. The cipher's hour (Emily
+  = 10 AM) and the relay's (9 o'clock) differ; the relay's is the district's own setting, not a conflict with the key.
+- Horan narrates Holt's evaluation of Jones's list as requested by Stanton on 23 Nov 1864, with "Arrest them all" and arrests from 24 Nov. The
+  5 Nov sent-ledger entries (E325, E326, the Louisville copy, 9114) and OR I/39 pt 3 p.678 show arrest orders on the same list out by 5-6 Nov.
+  This is a dating point against Horan's narrative, logged for the record; it is not a claim about anything unread.
+
+### 3. Re-derivation and image
+- `decode.py --check`: "reading.md is current". Image (IIIF 9889 at 2400 px, top 40% cut in scratch, not committed; `iiif_lines.py` finds no
+  lines on these ruled pages, as FV-MS18b found): printed page 223; the transcription matches line for line ("Clowry St Louis Washn Novr 5th
+  1864 / Jennie person for Moon unity The Indigo directs the / odor at Emily on Monday morning next torch following / named walpole agents and the
+  seizure of their papers / unity Wm Kendall and princess Lewis Kennerly Gaul -- / John or Wm Ritchie Saint Joseph Aragon James Hunter / New
+  Madrid Aragon pandora Wm Harper keep Girardeau Insanity"), except **"Kennerly" on the page where ciphertext.txt has "Kennedy"** (FV-MS18b s.1
+  and s.5 right; still unapplied). No "Col." in the clear on the page: Harper's rank is the code word pandora, as FV-MS18b graded it.
+- Grades: FV-MS18b's H 16 of 16 code groups (pandora = Colonel H, Horan p.227 "Col. Wm. Harper") stand; no M, no unread gap.
+
+### 4. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E325 | **N3** (kept; weak, bordering N2: the agents' names and stations are printed in Horan 1954 p.227 from Holt's report, and a same-day relay of the companion Chicago order in OR ser. I vol. 39 pt 3 p.678; this telegram to Rosecrans was not located in print) | period | **D3** (kept; 100% of code groups H; external non-statistical: OR I/39 pt 3 p.678 for date, authority and form; Horan p.227 for every name-station pair; holder 9114 the Cincinnati sibling) | the telegram itself not located after s.1 |
+
+- Not N4: Rosecrans, Dana and Grant papers, NARA RG 107/153 and the Missouri press not searched; JSTOR rows open. Not N2: N2 would need the
+  telegram's own text known elsewhere; what is known is its list and its sister order. Not raised to D4: no fresh rule-7 re-derivation session
+  and one transcription fix (Kennedy -> Kennerly) still unapplied.
+- **Safe sentence:** "Read at grade H with War Department Cipher No. 1: on 5 November 1864 C. A. Dana telegraphed Rosecrans at St Louis that the
+  Secretary of War ordered the arrest at 10 AM on the following Monday of rebel agents in Missouri -- Wm Kendall and Capt. Lewis Kennerly at St
+  Louis, John or Wm Ritchie at St Joseph, James Hunter at New Madrid and Col. Wm Harper at Cape Girardeau -- and the seizure of their papers. The
+  agents' list is printed in Horan, Confederate Agent (1954), p.227, and a same-day relay of the companion Chicago order in the Official Records,
+  ser. I vol. 39 pt 3, p.678; this telegram was not located in those, in OR ser. I vol. 41 pt 4, or in the Huntington's full-text search
+  (searched 9 Oct 2026)." Depth sentence (D3): unchanged from FV-MS18b.
+- **Unsafe:** "first", "new", "unpublished" or "previously unread" for E325; "the arrest order is unknown to historians" (its Chicago relay is in
+  the OR and the list in Horan); "the arrests were made on 7 Nov" (nothing read here says whether they were).
+
+### 5. Fixes for the next FIX job (not applied here)
+- ciphertext.txt E325: "Kennedy" -> "Kennerly" (image; Horan p.227) -- FV-MS18b s.5, still open. Header: add "morning" ("Monday morning next").
+- E325 note/header: the same-day Chicago order is a relay in OR ser. I vol. 39 pt 3 p.678 (Cook to Sweet, 6 Nov 1864); Horan's list p.227.
+- status.json /results row for E325: audit_status two audits (done here).
+Requests: googleapis.com 9 (all 200); archive.org 6 (2 djvu, 1 Horan djvu, 2 metadata, 1 advancedsearch; all 200) + print_check's 3;
+be-api.us.archive.org 7 + print_check's 12 (several 502); hdl.huntington.org 8 (7 CONTENTdm + 1 item info) + 1 IIIF page (all 200);
+api.semanticscholar.org 3 + print_check's 2 (one 429); api.core.ac.uk 2; api.openalex.org 7 and api.crossref.org 2 (print_check).

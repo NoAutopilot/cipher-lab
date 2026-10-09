@@ -11339,9 +11339,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18b)'"
+        "AUDIT.md '## AUDIT (FV-MS18b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-28)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11362,7 +11363,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): C. A. Dana, Washington, to Rosecrans, St Louis, 5 Nov 1864: arrest of rebel agents at St Louis, St Joseph, New Madrid and Cape Girardeau (E325)",
       "line": "Read at grade H with War Department Cipher No. 1: on 5 November 1864 C. A. Dana telegraphed Rosecrans at St Louis that the Secretary of War ordered the arrest at 10 AM on the Monday following of rebel agents in Missouri -- Wm Kendall and Capt. Lewis Kennerly at St Louis, John or Wm Ritchie at St Joseph, James Hunter at New Madrid and Col. Wm Harper at Cape Girardeau -- and the seizure of their papers; the agents' list is printed in Horan's Confederate Agent (1954) and a same-day order for Chicago and Cincinnati in the Official Records, but this telegram was not located there or in the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18b), weak: the names and most words are clear in the holder's public transcription, the agents' list is printed (Horan 1954) and a same-day sibling order is printed in an 1892 OR volume not yet identified; not N4: Grant/Rosecrans/Dana papers, Missouri press, NARA RG 107 not searched",
+      "gap": "N3 two audits (FV-MS18b, AUD2-LEDGER-28), weak: the names and most words are clear in the holder's public transcription, the agents' list is printed (Horan 1954) and a same-day sibling order is printed in an 1892 OR volume not yet identified; not N4: Grant/Rosecrans/Dana papers, Missouri press, NARA RG 107 not searched AUD2-LEDGER-28: the Chicago relay is OR ser. I vol. 39 pt 3 p.678; Horan list p.227; this telegram not located.",
       "depth": "D3",
       "completeness": "16 H of 16 code-word groups (names plain)",
       "phrases": [
