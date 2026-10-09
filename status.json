@@ -11551,9 +11551,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18i)'"
+        "AUDIT.md '## AUDIT (FV-MS18i)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-33)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18i verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11573,8 +11574,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1865 (Washington sent ledger): Secretary of War to Bvt. Brig. Gen. E. Barton, Memphis, 23 July 1865: keep the prisoner in close custody, secure his papers, telegraph their substance in cipher; 'the publication signed Canada' not seen (E358)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 23 July 1865 the Secretary of War told Bvt. Brig. Gen. E. Barton at Memphis to keep his prisoner in close custody, secure his papers and telegraph their substance in cipher, adding that he had not seen 'the publication signed Canada'; not located in print (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18i); most words clear in the holder's public transcription; not N4: NARA RG 107 and the assassination investigation files (M599), Papers of Andrew Johnson vol. 8, the July-Aug 1865 press, HathiTrust, JSTOR not searched",
+      "line": "Read at grade H with War Department Cipher No. 1: on 23 July 1865 the Secretary of War told Bvt. Brig. Gen. E. Barton at Memphis to keep his prisoner in close custody, secure his papers and telegraph their substance in cipher, adding that he had not seen 'the publication signed Canada'. The prisoner's arrest and transfer to Washington (Capt. J. G. Ryan, a suspected Lincoln conspirator) were reported in the press in August 1865 and by M. Katz in Civil War Times Illustrated (1982); this telegram was not located in print (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-MS18i, AUD2-LEDGER-33); most words clear in the holder's public transcription; not N4: NARA RG 107 and the assassination investigation files (M599), Katz, 'The Mysterious Prisoner', Civil War Times Illustrated 21 (7), Nov 1982, pp.40-43 (snippet only; may quote the War Department telegrams), HathiTrust, JSTOR not read; second audit (AUD2-LEDGER-33): the case is printed -- the prisoner is Capt. Jonathan George (John G.) Ryan, arrested at Memphis on 19 July 1865 and taken to the Old Capitol Prison on 2 Aug as a suspected Lincoln conspirator (New-York Daily Tribune and Daily National Intelligencer 3 Aug 1865; Memphis Bulletin via Alexandria Gazette 12 Aug 1865; Katz 1982) -- the telegram's text is not; Papers of Andrew Johnson vols 8-9 be-api: no Ryan telegram",
       "depth": "D3",
       "completeness": "15 H of 15 code-word groups (rest plain)",
       "phrases": [
@@ -11585,7 +11586,7 @@
         "Huntington mssEC 18 (obj 10074) p.377, pointer 10043, E358"
       ],
       "depth_sentence": "On 23 July 1865 the Secretary of War ordered the provost marshal at Memphis to hold a newly arrested prisoner incommunicado, secure his papers and report their substance in cipher.",
-      "depth_check": "code clause: harsh pebble = 23 (the header's own date), Nelly = 8.30 PM (the ledger's own hour note), wrangle in pembroke = telegraph in cipher, palsy = Brigadier General, Drum = Memphis, Brutus = Secretary of War; external (non-statistical): holder transcriptions of the received answers 7976 (Barton, 26 July 1865: 'Telegram of twenty three and twenty four reached me', prisoner's papers, cipher memorandum) and 7978 (28 July: Ryan sent to Washington, orders 'executed to the letter')",
+      "depth_check": "code clause: harsh pebble = 23 (the header's own date), Nelly = 8.30 PM (the ledger's own hour note), wrangle in pembroke = telegraph in cipher, palsy = Brigadier General, Drum = Memphis, Brutus = Secretary of War; external (non-statistical): holder transcriptions of the received answers 7976 (Barton, 26 July 1865: 'Telegram of twenty three and twenty four reached me', prisoner's papers, cipher memorandum) and 7978 (28 July: Ryan sent to Washington, orders 'executed to the letter'); second audit (AUD2-LEDGER-33): holder siblings 10043/2 (24 July, Townsend: send Ryan under guard with all papers and a list of witnesses) and 9258/2 (27 July, 'Your action in respect to Ryan is approved'); press of 3 Aug 1865 (Ryan arrested at Memphis 19 July, papers found on him, brought to Washington under guard)",
       "depth_note": "15 H of 15 code-word groups (rest plain)"
     },
     {

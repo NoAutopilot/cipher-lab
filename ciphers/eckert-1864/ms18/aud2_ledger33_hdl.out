@@ -1,0 +1,44 @@
+'Ryan': 35 hits: 9258() 11351() 11354() 11778() 4217() 11551() 12160() 11390() 2511() 11570() 11575() 11589() 11590() 11429() 11597() 11856() 7978() 11866() 11613() 11877() 11632() 2997() 12690() 11646() 12452() 8542() 11249() 8046() 12287() 12478() 5731() 11296() 11717() 11298() 12344()
+'Ryan Memphis': 3 hits: 9258() 4217() 7978()
+'Barton Memphis': 5 hits: 10043() 7976() 7977() 7978() 8791()
+'Memphis prisoner': 1 hits: 7077()
+Traceback (most recent call last):
+  File "/home/user/cipher-lab/ciphers/eckert-1864/ms18/aud2_ledger33_hdl.py", line 26, in <module>
+    d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60)); n += 1
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.13/urllib/request.py", line 1379, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 1335, in do_open
+    r = h.getresponse()
+  File "/usr/lib/python3.13/http/client.py", line 1478, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 312, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+'signed Canada': 7 hits: 11092() 9060() 9619() 10043() 2799() 8035() 7854()
+'Canada publication': 1 hits: 10043()
+'close custody papers': 10 hits: 9286() 8266() 10043() 4994() 8002() 9458() 9459() 9894() 9895() 3507()
+'cipher memorandum': 8 hits: 6064() 8676() 1356(1864; 1865) 7976() 1108(1864; 1865) 7859() 7860() 7862()
+'rebel Secy of war blank orders': 1 hits: 7976()
+'Taunton': 106 hits: 6066() 8194() 6070() 6071() 6073() 9712() 6077() 5799() 8214() 5801() 5805() 5808() 8222() 7191() 8230() 6104() 6107() 9586() 9044() 9587() 6112() 6114() 10009() 5829() 6119() 5837() 5584() 5587() 3823() 10043() 8280() 5615() 5875() 9098() 10062() 6176() 5891() 5892() 5895() 3405() 5901() 9827() 3412() 3413() 3416() 3419() 3422() 5915() 5664() 9845()
+'Barton Townsend': 7 hits: 10086() 5860() 10043() 7976() 7977() 9247() 9251()
+'secure his papers': 55 hits: 2703() 5417() 8641() 4025() 5431() 9986() 6932() 9037() 4222() 10003() 6326() 10011() 9056() 10017() 8690() 10030() 4260() 5485() 2518() 3194() 10043() 4665() 9632() 12635() 4283() 2541() 4681() 8739() 9113() 4690() 4046() 6736() 10472() 4077() 4078() 4884() 4748() 9458() 10492() 12276() 10497() 8559() 8382() 2149() 2152() 10513() 10526() 4403() 4937() 10291()
+requests 8

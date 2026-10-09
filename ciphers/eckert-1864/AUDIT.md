@@ -12749,3 +12749,73 @@ by date window, IA advancedsearch and be-api, S2, CORE, OpenAlex); `aud2_ledger3
   before it is answered.
 Requests: hdl.huntington.org 23 (13 CISOSEARCHALL, 10 item info; all 200); www.googleapis.com 17; www.loc.gov 8 search + 14 page/full-text (all 200);
 archive.org 3 (advancedsearch); be-api.us.archive.org 8 (3 x 502, not retried); api.semanticscholar.org 3; api.core.ac.uk 2; api.openalex.org 2.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-33)
+
+Second verifier AUD2-LEDGER-33 (account 4, for the orchestrator (account-4); row queued by LANE LEDGER-8 (account 1), re-tagged from account 3), 9 Oct
+2026, 22:42-22:5x UTC by `date -u`; a separate session and account from the reader MS18-R5 and the first auditor FV-MS18i (account 1); this session had
+not read or audited E358 before. Scope: **E358** only (E352, E353 N1 and E354, E360 N1 confirms not re-audited, per the row). Nothing decoded beyond key
+look-ups. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3 ciphers/eckert-1864/decode.py
+--check` -> "reading.md is current". Image: not re-checked (FV-MS18i eye-checked every line at 2400 px; the holder's own transcription of 10043, read again
+below, agrees token for token with ciphertext.txt). Committed (`ms18/`): `aud2_ledger33_hdl.py` + `.out`, `aud2_ledger33_info.out` (12 CONTENTdm queries,
+11 item infos); `aud2_ledger33_search.py` + `.out` (Google Books 8, Chronicling America 6, IA advancedsearch 2, S2/CORE/OpenAlex 2 each);
+`aud2_ledger33_ca_pages.py` + `.out` (7 named Chronicling America pages); `aud2_ledger33_gb2.py` + `.out` (8 Google Books follow-ups); `aud2_ledger33_gb3.out`
+(6 Google Books queries restricted by 'Gayoso'; run inline, queries in s.1); `aud2_ledger33_be.out`, `aud2_ledger33_be2.out` (IA be-api, Papers of Andrew
+Johnson vols 8-9; the inline queries are named in s.1); two JSTOR-QUEUE.tsv rows.
+
+### 1. Families FV-MS18i did not cover, and what this pass did
+| Family | FV-MS18i | This pass |
+|---|---|---|
+| Huntington CONTENTdm, new queries (all pointers) | 8 queries (1 on E358: 'publication signed Canada' -> 10043 own) | 12 more: Ryan 35; **Ryan Memphis 3 (9258, 4217, 7978)**; Barton Memphis 5 (10043, 7976-7978, 8791 = FV-MS18i's); Memphis prisoner 1 (7077 = 1863, other); signed Canada 7 (11092 = 1 Apr [1865?] Magruder/Montreal, 9060 = Aug 1864 Leet/C. S. Bell, 7854 = Apr 1865 L. C. Baker/Hughs to Canada, 8035 = 1866 Fenians; 9619, 2799 not opened; none on Ryan); Canada publication 1 (own); close custody papers 10 (10043 own; rest not opened); cipher memorandum 8 (7976; rest not opened); rebel Secy of war blank orders 1 (7976); Taunton 106 (Taunton is a key word; noise); Barton Townsend 7 (9247, 9251 = June 1865 McCulloch/Hilton Head, other; 10086 = 1866, other); secure his papers 55 (noise). Item info read: 10043 (both entries), **9258** (2 entries), 4217, 7077, 10086, 9247, 9251, 7854, 8035, 9060, 11092. **No duplicate or clear copy of E358** |
+| Holder siblings of the same case | 7976-7978 (answers) read; 10043/2 "not read" | **10043/2** (Washington, 24 July 1865, 10.30 a.m., Cipher Opr Memphis, for [Bvt Brig. Gen.] Barton, signed E. D. Townsend A A G; holder transcription): "your [telegram] of [the 23d?] recd ... directs that you send J N Ryand under a sufficient [guard] to this city to be delivered to the custody of [Colonel?] Augur ... Send with him all the papers bearing on his case with a list of witnesses ... acknowledge receipt" (code words left as the holder transcribes them; not decoded here). **9258/2** (mssEC 19 p.364 per entries-mssEC19.tsv; "Somerville Memphis Tenn", Wash July 27 1865, for [Brigadier General] Barten, signed Brutus): "Your action in respect to Ryan is approved ... Spare no pains to find and send forward the witness mentioned in your [telegram] ... Give strict orders to the officer in whose charge he is sent to allow no [communication?] by or with him". Both are the War Department's later orders in the same case, other texts; key-share-1865.tsv already lists 9258/2 as "readable with No. 1" (not read by any reader yet) |
+| Press of the day (Chronicling America, 15 July - 15 Sept 1865) | not searched | 6 queries (28, 21, 4, 942 noise, 0, 14 pages); 7 pages read: **New-York Daily Tribune 3 Aug 1865 p.1** (Washington, 2 Aug: "the mysterious prisoner ... turned out to be not John H. Surratt but John G. Ryan ... heavily ironed and strongly guarded ... confined in the Old Capitol"; "arrested in Memphis on Wednesday, July 19, by Capt. Smith, not on suspicion of being John H. Surratt ... but on the charge of having been engaged in the conspiracy"); **Daily National Intelligencer 3 Aug 1865 p.3** ("THE MYSTERIOUS PRISONER ... HIS NAME IS JOHN G. RYAN, HE IS A SUPPOSED CONSPIRATOR", in charge of Captain Smith, Provost Marshal of Memphis; papers "fully implicating him ... found in his possession"); **Chicago Tribune 3 Aug 1865 p.1** (same AP text, "Jas. H. Ryan", arrested 18 July); **Alexandria Gazette 12 Aug 1865 p.3** quoting the Memphis *Bulletin*: "John S. Ryan ... published a weekly newspaper at Pine Bluff, Arkansas ... captain in the rebel army ... chief detective in the Trans-Mississippi Department. On the 19th of July ult., Ryan appeared in Memphis ... Upon his person were found various documents, which implicated parties of much more prominence than himself ... his immediate transfer, under a strong guard, to Washington". Arkansas State Gazette 29 July p.3 (a letter list), Daily Richmond Whig 21 Aug p.3 (OCR 0 hits), Chicago Tribune 12 Aug p.1 (a Canada passenger list): nothing. **No paper quotes the War Department's telegrams**; 'signed Canada' (June-July 1865) returned 942 pages, all noise in the 12 titles shown, not read further |
+| Modern literature on the prisoner | not searched | Google Books 14 (s.1 rows above and below): **Mark Katz, "The Mysterious Prisoner: Assassination Suspect J. G. Ryan", *Civil War Times Illustrated* 21 (7), Nov 1982, pp.40-43** (`agUQAQAAMAAJ`, snippet only): "Jonathan George Ryan, the mysterious prisoner illegally held incognito in a Federal prison"; the Memphis provost marshal "received an anonymous letter: 'There is a person at the Gayoso House, No. 221 named J.G. Ryan ...'"; *Lincoln Herald* 1983 (`RGsrAQAAIAAJ`) summarises Katz: "the Canadian arrested July 21, 1865"; *America: History and Life* 1985 abstract: "a Canadian immigrant, was arrested and held for four months without charges ... at Memphis"; *Cross-Border Warriors* (1996, `sXDba-2TaNIC`): "a printer from Toronto ... incarcerated for nearly four months without trial as a suspect in Lincoln's death"; *Life and Adventures of Gen. W.A.C. Ryan* (1876, `f31NAAAAYAAJ`): "THE MYSTERIOUS PRISONER. After the war Colonel J. G. gained considerable notoriety by his arrest in the Gayoso hotel, Memphis"; *Papers of Andrew Johnson* (`fKqJFXaF8iUC`, volume not established from the snippet): a calendar note, "A Confederate captain protests that, in spite of his parole, he was arrested in Memphis in July 1865 and placed in prison, 'where I was ironed ...'" (M619 roll 359). Phrase tests on the telegram's clear words, unrestricted and restricted by 'Gayoso': "close and secure custody", "secure custody", "close custody", "signed Canada", "publication signed", "substance or purport", "his papers" cipher, Barton Stanton telegram: **0 relevant hits**. Katz is snippet-only: whether it quotes Stanton's 23 July telegram is **unknown** |
+| Papers of Andrew Johnson vols 8-9 (IA be-api, no login) | vol. 8 not reached | vol. 8 (`papersofandrewjo0008unse`, May-Aug 1865): 'Ryan' **0**; 'Barton' and 'Barton Memphis' answer (positive control: Clara Barton, Memphis notes) -- no E. Barton/Ryan item; vol. 9 (`papersofandrewjo0009john`): 'Ryan Memphis' 1 doc, highlights Memphis only (no Ryan passage shown); 'Ryan Old Capitol' 0. The calendar note above is in a volume not identified here |
+| S2, CORE, OpenAlex | not searched | 2 each (S2 1 x 429): nothing on Ryan or Barton |
+| JSTOR | not queued | 2 rows queued: family (i) Ryan + Memphis + 1865 + Barton/Stanton + Surratt/assassination/Old Capitol; family (ii) the bare phrase "the publication signed Canada"; never blocking |
+| Unreachable / not searched | -- | Katz 1982 full text (Google Books snippet only; *Civil War Times Illustrated* not on IA by this pass); NARA RG 107 (telegrams sent), RG 153 / M599 (assassination investigation files, where Ryan's papers and these telegrams would sit), M619 roll 359 (the protest letter); Memphis *Bulletin* / *Appeal* / *Argus* July 1865 page by page (not in Chronicling America's hits); HathiTrust (Cloudflare); NARA catalog (no key); "the publication signed Canada" not identified |
+
+### 2. Findings
+- **No copy, quotation or printed text of E358 found.** The holder has no duplicate or clear copy (s.1). The press of 3-12 Aug 1865 prints the *case* --
+  a Confederate captain arrested at Memphis on 19 July, papers found on him "implicating parties of much more prominence", sent to Washington under strong
+  guard, lodged in the Old Capitol on 2 Aug as a suspected Lincoln conspirator -- every circumstance E358 and its siblings imply, but none of the War
+  Department's telegrams. That is a print of events, not of this text: it does not make N2.
+- **Prisoner identity corrected.** FV-MS18i (and the SO prompt, ciphertext.txt header, status.json gap) give "J. N. Ryan". The press of 3 Aug 1865 names him
+  "John G. Ryan" (Intelligencer, Tribune), the Memphis *Bulletin* "John S. Ryan", the AP "Jas. H. Ryan"; Katz 1982 and later literature **Jonathan George
+  (J. G.) Ryan**, a Canadian-born printer (Toronto; Pine Bluff, Ark.), captain in the Confederate service (Co. B, 12th Mississippi Cavalry per *Still More
+  Confederate Faces*, snippet). The holder's transcriptions read "J G Regan" (7976) and "J N Ryand" (7977, 10043/2): the "N" is a transcription or clerk's
+  variant. Use "Capt. J. G. Ryan" (I-grade context: by print, not in E358's own text, which names no prisoner). Arrest date: 19 July (press) or 21 July
+  (*Lincoln Herald*'s summary of Katz): recorded, not settled.
+- **"The publication signed Canada"** is not identified. Ryan's Canadian birth is a possible but unproven link; nothing searched prints a piece so signed
+  in June-July 1865. Left open (a lead for M599 and the Memphis press, not a reading question).
+- **Risk to the class.** Katz 1982 is the one known modern treatment written from the record (he quotes the anonymous Gayoso House letter, presumably
+  from M599); he may quote Stanton's telegrams. Until read, it is the most likely place for an N1/N2 to be found.
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E358 | **N3** (kept) | period | **D3** (kept: H 15 of 15 code-word groups, decode --check current; external non-statistical, strengthened: holder siblings 10043/2 (24 July) and 9258/2 (27 July) and the answers 7976-7978; New-York Daily Tribune and Daily National Intelligencer 3 Aug 1865, Memphis *Bulletin* via Alexandria Gazette 12 Aug 1865 on the arrest, the papers found on him and the transfer under guard) | not located after FV-MS18i's search and s.1 |
+
+- Not N4: Katz 1982 (snippet only), NARA RG 107 / RG 153 (M599) / M619, the Memphis press page by page, HathiTrust not read; JSTOR rows open. Not D4: no
+  fresh rule-7 re-derivation session.
+- **Safe sentence:** "Read at grade H with War Department Cipher No. 1: on 23 July 1865 the Secretary of War told Bvt. Brig. Gen. E. Barton at Memphis to
+  keep his prisoner in close custody, secure his papers and telegraph their substance in cipher, adding that he had not seen 'the publication signed
+  Canada'. The prisoner's arrest and transfer to Washington (Capt. J. G. Ryan, a suspected Lincoln conspirator) were reported in the press in August 1865
+  and by M. Katz in Civil War Times Illustrated (1982); this telegram was not located in print (searched 9 Oct 2026)." Depth sentence: FV-MS18i's, unchanged.
+- **Unsafe:** "first", "new", "unpublished", "previously unread"; "the prisoner J. N. Ryan" (the name is J. G.); "the publication signed Canada was Ryan's"
+  (unidentified); "Katz does not quote it" (not read); "Ryan was the assassin John Surratt" (the press of 3 Aug 1865 says he was not).
+
+### 4. Postmortem and fixes (for the next FIX job; reading.md and ciphertext.txt not edited here)
+- FV-MS18i's class, counts and depth stand; its one over-reach is the prisoner's name ("J. N. Ryan", taken from the holder's transcription of 7977 and
+  10043/2 without a print check). Applied here: status.json E358 `audit_status` "two audits", `audit_refs` + this section, `gap`, `line` (safe sentence
+  above), `depth_check`; SO prompt PROMPT-chatgpt-e358.md context line corrected (J. G. Ryan, Katz 1982, the 3 Aug 1865 press) -- the SECOND-OPINIONS-QUEUE
+  row itself is unchanged (no class or count changed).
+- **ciphertext.txt E358 header/note (FIX job):** "the prisoner is not identified" -> "prisoner Capt. J. G. (Jonathan George) Ryan, arrested Memphis 19 July
+  1865, Old Capitol 2 Aug 1865 (New-York Daily Tribune and Daily National Intelligencer 3 Aug 1865; Katz, CWTI Nov 1982) -- context I, not in E358's text";
+  "the Memphis papers and the New York or Memphis press not searched" -> "press of 3-12 Aug 1865 reports the case, not the telegram (AUD2-LEDGER-33)";
+  add the siblings 10043/2 (24 July, Townsend) and 9258/2 (27 July, 'Your action in respect to Ryan is approved'; mssEC 19 p.364, readable with No. 1, not
+  read) as the next entries of the same case for a reader.
+- AUDIT (FV-MS18i) s.2 and s.5 "J. N. Ryan" -> J. G. Ryan (a FIX job's dated note; this section is the correction of record).
+Requests: hdl.huntington.org 24 (12 CISOSEARCHALL, 11 item info, 1 RemoteDisconnected retried once after 20 s), all answered 200 after the retry;
+www.googleapis.com 22; www.loc.gov 6 search + 14 page/full-text (all 200); archive.org 2 (advancedsearch); be-api.us.archive.org 6 (all answered);
+api.semanticscholar.org 2 (1 x 429, not retried); api.core.ac.uk 2; api.openalex.org 2.
