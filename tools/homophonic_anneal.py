@@ -396,6 +396,8 @@ def anneal(seq, model, iters, rng, uni_w, t0=4.0, fixed=None, allowed=None, init
     max_homophones N: no letter ever holds more than N signs in any accepted state; a reassign that would exceed it is
     skipped (ported from subst_hillclimb's max_homo check; this anneal has no greedy polish, so the start key and every
     move carry the check). Must catch: a key piling many signs on e. Must NOT block: a key within the cap (test).
+    Use it with moves="both": on the MQS-SOLVER matched control a cap with reassign moves alone jammed (0.113 vs
+    0.965 uncapped; with both, 0.995), since a full letter blocks every move into it (tools/tests/MQS-SOLVER-controls.tsv).
     gaps: signs kept in the stream as GAP positions (search_gaps: --as-unknown, --min-count, --homophone-budget); they
     are never deleted, and no scored n-gram window spans a gap (fragment splitting, as score()). Must catch: --skip's
     deletion, which joins the neighbours of a marked sign into a false n-gram (test).
@@ -1021,7 +1023,7 @@ def main():
                     help="MQS-SOLVER: reassign (default, unchanged), swap (two signs exchange letters; homophone counts "
                          "fixed at the start) or both (reassign 0.7 / swap 0.3, ported from subst_hillclimb.py)")
     ap.add_argument("--max-homophones", type=int, default=0,
-                    help="MQS-SOLVER: no letter ever holds more than N signs (0 = no cap)")
+                    help="MQS-SOLVER: no letter ever holds more than N signs (0 = no cap); use with --moves both (reassign alone jams)")
     ap.add_argument("--min-count", type=int, default=0,
                     help="MQS-SOLVER: signs seen fewer than N times stay out of the search and decode as ? (gaps)")
     ap.add_argument("--homophone-budget", type=int, default=0,
