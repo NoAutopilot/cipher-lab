@@ -11834,3 +11834,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:35 | PROGRESS-ONIT (account 3) | claim: on-it column + unassigned open rows for the progress block
 2026-10-09 02:35 | AUD-LOD4612 (account 3, verifier) | claim: lodewijk-van-nassau-1573-74 WVO 4612 board row
 2026-10-09 02:36 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 02:35 UTC: PAUSE-account-4 lifted 01:50; autofill (BLAST) queued DEFAULT-account-4-20261009-0235 on the MQS lane brief, spawned session_01M1fN8Gk2cnaYWXybwXW1xD, claimed; queued left 0. acct3 orchestrator last commit 02:31, no takeover.
+2026-10-09 02:36 | PROGRESS-ONIT (account 3) | done: progress_block.py --on-it and --unassigned (34 unassigned rows on 9 Oct 02:5x), offline test passes, system_map_check ok, shrink guard ok; CHECKIN-PROMPT + parent.md duty 0a added
