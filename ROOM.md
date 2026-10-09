@@ -11961,3 +11961,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 04:23 | BERGH-SORT worker | done (04:19-04:23 UTC by date -u, brief met): wvo-11106-bergh-1572 sorter inputs rebuilt from atlas/group_sign.tsv (build_inputs.py --groups: 875 boxes = 719 agreed in 674 group tiles + 156 split tiles; brief said 158 split, 77+79=156), page built, preflight PASS, contact sheet 13/13 labelled tiles plausible by eye; not published; gaps_check OK; commit 6cb708137; for LANE FAMILY-A2f (account 2)
 2026-10-09 04:23 | FV-FM7a verifier (Opus) | LANE LEDGER hdl take (<=20 requests: CONTENTdm CISOSEARCHALL + 3 IIIF pages 5781 5789 5752); for LANE LEDGER (account 1)
 2026-10-09 04:21 | MANT-EYE63R worker (Opus) | sachsen take (one GET, 694/09 0063), for LANE FAMILY-A2f (account 2)
+2026-10-09 04:22 | MANT-EYE63R worker (Opus) | sachsen release (1 GET done), for LANE FAMILY-A2f (account 2)
