@@ -64,3 +64,39 @@ split by direction: Orange -> brothers is list B), "## SIG-4612" / "## SIG-4612B
    grade counts, the reading with M words marked, what the passage says in one paragraph (rule 4a wording), where it was not found; update the
    Escalation siblings bullet and Remaining gaps; HYPOTHESES.md row. Do not classify; the lane sends a reading that clears its gate to a separate
    verifier. Done line with cost by your own estimate (the orchestrator ledgers from get_session).
+
+---
+
+# Wave 2 (written 9 Oct 2026 03:2x UTC by date -u)
+
+SIG-7208 (done 03:08, 9.35): 7208 is KNOWN on its own leaf (period decipherment f.223r), key source only; cribs for 4612 in
+`ciphers/lodewijk-van-nassau-1573-74/sig7208/cribs_4612.tsv`. NOTES Remaining gaps "4612 cipher body" now names this job.
+
+## SIG-4612C (Opus 5.5, solver; cap $7, box 100 min, no network, no vision calls): Lodewijk 4612 v3 -- pre-registered crib-placement test from 7208
+Target lodewijk-van-nassau-1573-74. Read NOTES "## SIG-7208", "## SIG-4612", "## SIG-4612B", the Remaining gaps "4612 cipher body" item, HYPOTHESES.md
+rows for 4612 (H-S: 4612 is key_full's table with some codes reassigned), `sig7208/cribs_4612.tsv`, `ciphertext_4612_v3.tsv`, `decode_4612_v3.json`.
+The global LM-anneal, key_repair and word-segmentation instruments are [retired] for 4612 and are NOT reopened: this job is a different instrument
+(crib placement), justified by new material (7208's known text), per rule 3's third-attempt clause.
+0. Prior work: `python3 tools/prior_work.py lodewijk-van-nassau-1573-74 --item-spec 'shelfmark=KHA A 11;wvo=4612;date=1574-03-06;sender=Lodewijk van Nassau;recipient=Willem van Oranje' --step-type key --fetch`;
+   paste; a DONE on "known-keys" is the false DONE SIG-4612 flagged (a different step) -- note it and proceed.
+1. Pre-register (`sig4612c/PREREG.md`, committed and pushed before any 4612 score) the whole test, e.g.: for each crib word (the topical list
+   from cribs_4612.tsv, spelled in the period variants you fix in advance, >= 6 letters) slide it over every position of the 4612 v3 numeral
+   stream (1-120 codes, nulls 121-138 skipped as key_full does) and record placements where key_full's decode agrees on >= a pre-fixed share
+   of letters; each placement implies code reassignments for the disagreeing positions. Statistic: the number of implied reassignments that
+   are CONSISTENT across >= 2 independent placements (same code -> same letter, no contradiction with C-graded codes elsewhere), or the gain in
+   French-word share of the full 4612 decode after applying only the consistent reassignments.
+   Controls that can fail differently from the target on that statistic (rule 3, AX-5799 lesson):
+   (a) positive/known-answer: the 5811 cut (N=833, printed in Groen, under key_full) with a synthetic H-S perturbation at the reassignment rate
+       the 4612 70.7% share implies, and cribs taken from 5811's own Groen text at matched topical strength (same count, same lengths) -- the
+       procedure must recover >= a pre-fixed share of the planted reassignments with <= a pre-fixed false-reassignment count;
+   (b) off-topic null on 4612 itself: the same number of crib words of matched length drawn from 7205's or 4614's decipherment vocabulary that do
+       not appear in 7208's topics (fix the list in PREREG) -- 200 draws if cheap; the topical cribs must beat the off-topic p95;
+   (c) shuffled-order 4612 (token order permuted, so placements cannot line up) through the same procedure.
+   Gate: (a) passes AND topical > (b) p95 AND topical > (c) p95. If (a) fails: stop, log CONTROL BELOW GATE, target not scored.
+2. Units: implement in `sig4612c/crib_place.py` with an offline test (~$2), control (a) (~$1.5), target + (b)+(c) (~$1.5), NOTES (~$1). Serial CPU.
+3. Only on a PASS: apply the consistent reassignments through a decode config / exceptions file (never hand-edit), `python3 tools/decode_key.py
+   ciphers/lodewijk-van-nassau-1573-74 --config ... --check` exit 0; grade per token (reassigned codes S at most, crib-only placements M); quote
+   the stretches that now read, with M marked. The 276 slots (p1_r05, p1_r21) as "Mastrecht" are a direction-rule lead only, never a value.
+4. NOTES "## SIG-4612C (9 Oct 2026, account 1, for LANE SIG-4)": numbers for (a)/(b)/(c)/target side by side, HYPOTHESES.md row, Remaining gaps
+   item updated (on a FAIL the crib instrument is logged with its attempt count, not retired after one attempt unless its own control failed),
+   gaps_check. Report what was found and where it was not found; do not classify novelty.
