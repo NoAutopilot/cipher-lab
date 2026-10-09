@@ -113,4 +113,17 @@ with tempfile.TemporaryDirectory() as d:
     ss.main(['--signs', str(d / 'rs.tsv'), '--labels', str(d / 'rl.tsv'), '--pages', str(d / 'pages'),
              '--refs', str(d / 'refs.tsv'), '--title', 'T', '--out', str(out)])
     check('--refs reaches the page data', '"r": 1' in out.read_text())
+    # --- template 2026-10-09.1: the questions start in the "Taken out" tray (page option, default on) ---
+    import re as _re
+    tpl = open(ss.TEMPLATE).read()
+    check('template marker is 2026-10-09.1', _re.search(r'<meta name="sign-sorter-template" content="([^"]+)"', tpl).group(1) == '2026-10-09.1')
+    check('template has one __OPTS__ placeholder, read as OPTS.focusToTray', tpl.count('__OPTS__') == 1 and 'OPTS.focusToTray' in tpl)
+    on, off = ss.render(dr, 'T', 'L'), ss.render(dr, 'T', 'L', focus_to_tray=False)
+    check('render(): focus-to-tray on by default, off on request, DATA the same either way',
+          'const OPTS = {"focusToTray": true};' in on and 'const OPTS = {"focusToTray": false};' in off and '__OPTS__' not in on + off
+          and on.split('const DATA = ')[1].split('\n')[0] == off.split('const DATA = ')[1].split('\n')[0])
+    for flag, want in (([], 'true'), (['--no-focus-to-tray'], 'false'), (['--focus-to-tray'], 'true')):
+        ss.main(['--signs', str(d / 'rs.tsv'), '--labels', str(d / 'rl.tsv'), '--pages', str(d / 'pages'), '--title', 'T',
+                 '--out', str(out), '--no-preflight'] + flag)
+        check(f'CLI {" ".join(flag) or "(no flag)"}: focusToTray {want}', f'const OPTS = {{"focusToTray": {want}}};' in out.read_text())
 print('FAILED' if fails else 'ALL PASS'); sys.exit(1 if fails else 0)

@@ -9,7 +9,12 @@ DATA object, <title> and lede, and renders them again with tools/sign_sorter.ren
 focus questions and page strips are carried over byte for byte, so choices the owner already saved in the page's db
 (keyed by sid and pile id) still apply after a republish to the same URL.
 
-    python3 tools/sorter_rerender.py OLD.html --out NEW.html [--title T] [--lede L] [--focus-note N]
+    python3 tools/sorter_rerender.py OLD.html --out NEW.html [--title T] [--lede L] [--focus-note N] [--no-focus-to-tray]
+
+--focus-to-tray (default on; template 2026-10-09.1): the "Check these first" / "Most useful first" tiles open in the "Taken
+out" tray and the page lands on step 2; --no-focus-to-tray keeps them in their piles (the old layout). The option is a page
+setting outside DATA, so DATA is still carried over byte for byte; it is NOT read from OLD.html (a page built with
+--no-focus-to-tray needs the flag again when it is re-rendered).
 
 Exit 2 when the page carries no `const DATA = {...};` line. Offline test: tools/tests/test_sorter_rerender.py.
 Scope: re-renders a page that sign_sorter.py built (any template version); it does NOT re-cut tiles or change piles,
@@ -35,6 +40,8 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('page'); ap.add_argument('--out', required=True)
     ap.add_argument('--title'); ap.add_argument('--lede'); ap.add_argument('--focus-note')
+    ap.add_argument('--focus-to-tray', action=argparse.BooleanOptionalAction, default=True,
+                    help='question tiles start in the "Taken out" tray, page opens on step 2 (default on)')
     a = ap.parse_args(argv)
     got = extract(open(a.page, encoding='utf-8').read())
     if not got:
@@ -42,10 +49,11 @@ def main(argv=None):
     data, title, lede = got
     if a.focus_note is not None:
         data['focusNote'] = a.focus_note
-    out = sign_sorter.render(data, a.title or title, a.lede if a.lede is not None else lede)
+    out = sign_sorter.render(data, a.title or title, a.lede if a.lede is not None else lede, focus_to_tray=a.focus_to_tray)
     open(a.out, 'w', encoding='utf-8').write(out)
     n = sum(len(p['items']) for p in data['piles'])
-    print(f"{len(data['piles'])} piles, {n} tiles, {len(data.get('focus', []))} focus, {len(out) // 1024} KB -> {a.out}")
+    print(f"{len(data['piles'])} piles, {n} tiles, {len(data.get('focus', []))} focus, focus-to-tray {'on' if a.focus_to_tray else 'off'}, "
+          f"{len(out) // 1024} KB -> {a.out}")
     return 0
 
 

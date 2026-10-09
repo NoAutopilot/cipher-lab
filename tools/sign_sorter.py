@@ -6,7 +6,13 @@ settle the alphabet (merge piles, split piles, move single tiles, mark non-lette
       --title "Name Sign Sorter" --out page.html [--lede TEXT] [--data-out data.json]
       [--clusters clusters.tsv | --auto-clusters K] [--atlas labels.json]
       [--rank rank.tsv | --rank-lattice topk.tsv --rank-key key.tsv [--rank-lang it] |
-       --rank-confusion confusion.tsv] [--rank-out rank.tsv] [--focus focus.tsv]
+       --rank-confusion confusion.tsv] [--rank-out rank.tsv] [--focus focus.tsv] [--no-focus-to-tray]
+
+Questions in the tray (template 2026-10-09.1; owner, 9 Oct 2026, Harley 287): by default the --focus tiles ("Check these
+first") and the rank tiles ("Most useful first") open in the "Taken out" tray and the page lands on step 2, one tile at a
+time over the pile cards, its own pile the first card ("it was right" = one tap, saved as a keep). Nothing is written to the
+db until the person acts, and a tile with a saved move or keep is never put back in the tray. --no-focus-to-tray builds the
+old layout (the tiles stay in their piles with a "?"). tools/sorter_rerender.py takes the same flag.
 
 Inputs (the tools/glyph_atlas.py layout, which most targets already have):
   --signs   TSV with sid, page, x, y, w, h (base box of each sign, in the page image's pixels)
@@ -395,7 +401,10 @@ def add_region(data, region_p, out, long_side=4000, quality=60, embed=False):
           f"{len(reg['lines'])} lines", file=sys.stderr)
 
 
-def render(data, title, lede):
+def render(data, title, lede, focus_to_tray=True):
+    """The page HTML. focus_to_tray (template 2026-10-09.1, default on): the "Check these first" / "Most useful first" tiles
+    open in the "Taken out" tray and the page lands on step 2 (CLI --no-focus-to-tray keeps the old in-pile layout). The
+    option is baked into the page as `const OPTS = {...};`, outside DATA, so DATA stays byte for byte what the build made."""
     t = open(TEMPLATE).read()
     esc = lambda s: s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
     data = {k: v for k, v in data.items() if not k.startswith('_')}
@@ -403,7 +412,9 @@ def render(data, title, lede):
         sids = {it['sid'] for p in data.get('piles', []) for it in p.get('items', [])}
         data['focus'] = [f for f in data['focus'] if f.get('sid') in sids]
     # '</' inside the JSON would close the <script> element early (a pile named "</script>", a note); escape it
-    return t.replace('__TITLE__', esc(title)).replace('__LEDE__', esc(lede)).replace('__DATA__', json.dumps(data).replace('</', '<\\/'))
+    opts = json.dumps({'focusToTray': bool(focus_to_tray)})
+    return (t.replace('__TITLE__', esc(title)).replace('__LEDE__', esc(lede)).replace('__OPTS__', opts)
+            .replace('__DATA__', json.dumps(data).replace('</', '<\\/')))
 
 
 def main(argv=None):
@@ -428,6 +439,9 @@ def main(argv=None):
                     '<out stem>_region.jpg beside it (a supporting file to publish with the page)')
     ap.add_argument('--focus', help='TSV sid<TAB>question: tiles shown first in a "Check these first" box')
     ap.add_argument('--focus-note', default='')
+    ap.add_argument('--focus-to-tray', action=argparse.BooleanOptionalAction, default=True,
+                    help='the "Check these first" (and "Most useful first") tiles start in the "Taken out" tray and the page opens on '
+                    'step 2, one tile at a time, its own pile the first card (default on; --no-focus-to-tray: they start in their piles)')
     ap.add_argument('--ref-image', help='a reference sheet (e.g. a published sign table) shown in a collapsible panel above the piles')
     ap.add_argument('--ref-caption', default='Reference sheet', help='heading and credit line for --ref-image')
     ap.add_argument('--ref-width', type=int, default=1400, help='max width in px the reference image is scaled to')
@@ -503,7 +517,7 @@ def main(argv=None):
         add_region(data, a.region, a.out, a.region_long, a.region_quality, a.region_embed)
     if a.data_out:
         json.dump({k: v for k, v in data.items() if not k.startswith('_')}, open(a.data_out, 'w'))
-    html = render(data, a.title, a.lede)
+    html = render(data, a.title, a.lede, focus_to_tray=a.focus_to_tray)
     open(a.out, 'w').write(html)
     n = sum(len(p['items']) for p in data['piles'])
     nc = len({it['c'] for p in data['piles'] for it in p['items'] if 'c' in it})

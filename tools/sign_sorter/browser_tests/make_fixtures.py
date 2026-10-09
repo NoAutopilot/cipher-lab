@@ -6,7 +6,9 @@
 Writes OUT_DIR/plain.html (two pages, piles X / X-DOT / Y in family X and Z in family Z, 8 "Check these first" tiles on
 both pages, so test_qa.js has a cross-page step) and OUT_DIR/cluster.html (the same plus --auto-clusters and a
 --rank-confusion box, which test_cluster_rank.js needs) and OUT_DIR/refs.html (plain + --refs, for test_refs.js) and OUT_DIR/region.html (SORTER-PAGEVIEW: a sloped three-line region cut by
-tools/sorter_recut.py into deskewed strips r_L01-r_L03, built with --region, for test_pageview.js). Shapes are drawn with PIL; no real manuscript is used."""
+tools/sorter_recut.py into deskewed strips r_L01-r_L03, built with --region, for test_pageview.js). Shapes are drawn with PIL; no real manuscript is used.
+Template 2026-10-09.1: plain, refs and cluster are built with --no-focus-to-tray (the in-pile layout the older tests drive);
+OUT_DIR/tray.html is plain on the default (the focus tiles start in the "Taken out" tray), for test_focus_tray.js."""
 import subprocess, sys
 from pathlib import Path
 from PIL import Image, ImageDraw
@@ -35,10 +37,13 @@ focus = ['p1_02', 'p1_05', 'p1_09', 'p2_02', 'p2_06', 'p2_09', 'p1_12', 'p2_12',
 (out / 'confusion.tsv').write_text('label_a\tlabel_b\tn\nX\tY\t9\nX\tX-DOT\t4\nY\tZ\t2\n')
 base = [sys.executable, str(ROOT / 'tools' / 'sign_sorter.py'), '--signs', str(out / 'signs.tsv'), '--labels', str(out / 'labels.tsv'),
         '--pages', str(out / 'pages'), '--focus', str(out / 'focus.tsv'), '--title', 'Fixture sorter', '--lede', 'Synthetic test page.']
-subprocess.run(base + ['--out', str(out / 'plain.html')], check=True)
+subprocess.run(base + ['--no-focus-to-tray', '--out', str(out / 'plain.html')], check=True)
+subprocess.run(base + ['--out', str(out / 'tray.html')], check=True)   # default: questions start in the tray (test_focus_tray.js)
 (out / 'refs.tsv').write_text('sid\np1_01\np1_07\np2_03\n')   # two X, one Y: earlier-pick tiles with a green check, correctable (test_refs.js)
-subprocess.run(base + ['--refs', str(out / 'refs.tsv'), '--out', str(out / 'refs.html')], check=True)
-subprocess.run(base + ['--auto-clusters', '2', '--rank-confusion', str(out / 'confusion.tsv'), '--out', str(out / 'cluster.html')], check=True)
+subprocess.run(base + ['--no-focus-to-tray', '--refs', str(out / 'refs.tsv'), '--out', str(out / 'refs.html')], check=True)
+subprocess.run(base + ['--no-focus-to-tray', '--auto-clusters', '2', '--rank-confusion', str(out / 'confusion.tsv'), '--out', str(out / 'cluster.html')], check=True)
+(out / 'rank.tsv').write_text('sid\tscore\talt\twhy\np1_01\t9\tY\tX or Y?\np1_02\t5\tX\tY or X?\np2_04\t3\tZ\tX or Z?\n')   # two tiles outside the focus list
+subprocess.run(base + ['--rank', str(out / 'rank.tsv'), '--out', str(out / 'tray_rank.html')], check=True)   # tray + a "Most useful first" box
 
 # region.html (SORTER-PAGEVIEW, 4 Oct 2026): three sloped lines on one region image, recut into deskewed strips, "Whole page" view
 sys.path.insert(0, str(ROOT / 'tools')); import numpy as np, sorter_recut as sr

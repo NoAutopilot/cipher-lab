@@ -15,5 +15,6 @@ run test_refs test_refs.js "$OUT/refs.html" "$OUT/test_refs.png"
 run test_pageview test_pageview.js "$OUT/region.html" "$OUT/test_pageview"
 run test_recut_quad test_recut_quad.js "$OUT/plain.html" "$OUT/test_recut_quad" "$OUT/region.html"
 run test_qa test_qa.js "$OUT/plain.html" "$OUT/dump"
+run test_focus_tray test_focus_tray.js "$OUT"   # template 2026-10-09.1: questions start in the tray (tray.html, tray_rank.html, plain.html)
 [ -n "$EXTRA" ] && run "test_qa ($EXTRA)" test_qa.js "$EXTRA"
 exit $fail
