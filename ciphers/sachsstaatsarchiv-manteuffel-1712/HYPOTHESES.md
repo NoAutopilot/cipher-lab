@@ -288,3 +288,15 @@ PREREG-MANTCUC.md (4c5930db8, pushed before scoring); scorer mant0608/cuc/cuc_sc
 | 9 Oct 2026 MANT-CUC | same, 0323 alone | all-codes p99 17; letter p99 19 | 62/82 (0.756) | PASS |
 | 9 Oct 2026 MANT-CUC | same, 0348 alone | all-codes p99 9; letter p99 11 | 36/39 (0.923) | PASS |
 | 9 Oct 2026 MANT-CUC | same, 0282 alone | all-codes p99 8; letter p99 10 | 26/54 (0.481) | PASS on the gate, but under the PREREG's 0.5 rate line; 10 of the 28 misses are two strips where the blind clear pass saw no underline ('-') |
+
+## MANT-0176 (9 Oct 2026, LANE FAMILY-A2h account 2): rule-4 slots from 694/08 0176 (f0176_08/), no key.tsv change
+- r02 '13.66.9.10.26' and r05 '13.66.9.2.26' = 'maier' (10 and 2 both e); the clear text of the same letter names 'la bibliotheque de Maier' in the
+  affair of the commandant of Custrin and the prince's books: one person, M. Who Maier is, is I (not tested). Third digit 9 in both passes (alt 4;
+  MANT-INV08B eye read 4 = x, which would give 'maxer'): low-cost image recheck owed before any identification.
+- r02 trailing 36 (= f) after 'maier' ('que Maier f[?] enverroit'): does not read (M; B alt 56 = not checked against the key by the worker).
+- r03 '51.17.50.[struck].44.120.1000.8.33.60.21' = 's|sa p a l d et h o r n' ('deux colonels, Spald et Horn jusqu'a ...'): two colonels' names, M/I;
+  51 and 17 low on the image (A 51, B 5), 44 low (after a struck stretch). The struck stretch between 50 and 44 is not read.
+- r04 '55.2.27.14.25.6.(7)' = 'b e r n a u (g)' ('jusqu'a Bernau ou je pourrois les faire venir a quelque village'): the place Bernau (by Berlin),
+  I; final 7 low (a stroke before a blot, maybe punctuation).
+- r01 '171.35.62' after 'le vieux' = 'le e [62 null]' does not read; worker's native look reads the last code 26 (and MANT-INV08B 17.41.35.26):
+  the run is unsettled (M) -- who 'le vieux' is stays open.

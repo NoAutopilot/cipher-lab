@@ -1,0 +1,19 @@
+# MANT-0176 blind Sonnet code pass A (crop order L01..L13, crops/ enlarged to 2390 px wide in scratch, one call), 9 Oct 2026; verbatim as returned
+crop	line	numbers	words_before	words_after	confidence	alternatives	struck	interlinear_letters_seen
+L01	top	135	(page head, nothing before)	a Ker. le 2. juil. 1712	medium	could be a folio or letter number rather than a code	no	no
+L01	top	2 (date), 1712 (year)	a Ker. le	juil.	high	-	no	no
+L01	top-left margin	48	(struck marginal text above, "no 81" or similar)	Mons. Peine arriva ici avant hier	medium	"4 8" or "48"; struck text above reads about "no 81"	yes (the struck text above it)	no
+L01	bottom	4	avant hier a	heures	high	-	no	no
+L02	bottom	8	sur le champs les	reg. ordonnées	medium	could be "8" or a letter; a small "m" or "n" sits above the following word	no	yes (small mark above the next word, not above the digit)
+L03	bottom	8	a	heures du même matin	high	-	no	no
+L08	bottom	10 (uncertain, number before it possibly 28 or 16)	(illegible, cut at crop edge)	de la bibliothèque en question	low	16 10, 28 10, 18 10	no	no
+L09	bottom	171.35.62	de vieux	est revenu voir il y a vingt	medium	171.35.62 or 17.1.35.62; trailing digit after 62 smudged	no	no
+L09	bottom	13.66.9.10.26.36	et m'a assuré que	envoyoit (enverroit)	medium	"9" could be "4"; "10" could be "40"	no	no
+L10	top	51.17.50 (before the struck stretch)	deux colonels,	then a struck stretch	low	51.17.50 or 57.17.50	no	no
+L10	top	[struck stretch of about 6 numbers, illegible] 44	51.17.50	120.1000.8.33.60.21	low	could be 40.44 or similar	yes	no
+L10	top	120.1000.8.33.60.21	(after the struck stretch)	jusqu'	medium	1000 might be 100.0; 120 might be 20	no	no
+L10	bottom	22.74.475 (partial, cut at crop edge)	(start of line, cut off)	où je pourrois les faire ve-	low	only lower half of digits visible	no	no
+L11	top	55.2.114.110.? (partial, top edge)	(cut off)	a quelque village et leur porter	low	only lower half of digits visible	no	no
+L12	bottom	13.66.9.2.26.C.	certificat de (preceded by "le")	pour vérifier ce	medium	final "C." may be a letter, not a number; "9" could be "4"	no	no
+L13	-	none	-	-	-	-	-	-
+# Total (pass A's own line): 5 clear dotted code groups plus 2 partial low-confidence groups (22.74.475 on L10; 55.2.114.110 on L11) and 1 struck illegible stretch on L10. No interlinear decipherment seen above or below any code group.

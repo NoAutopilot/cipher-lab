@@ -1,0 +1,38 @@
+# MANT-0176 (9 Oct 2026): HStA Dresden 10026 Loc. 694/08 file 0176 (right page; stamp 135, 'a Berl. le 2 Juil 1712'); left page of the frame blank.
+# Two blind Sonnet passes (passA_0176.tsv crop order, passB_0176.tsv reversed) + worker reconciliation on native 1.5-3x zooms (one unit).
+# Crop defect disclosed: the 2-line bands cut through the line 'a 55.2.27.14.25.6.7 ou je pourrois' (L10/L11 edge): both passes read it in halves;
+# r04 positions 3-7 are settled from the worker's native zoom (conf medium/low). Struck stretch in r03 between 50 and 44 excluded (struck on the page).
+# Not codes: 135 (letter number), 2 / 1712 (date), 48 (marginal, under a struck 'no 5.'), 'a 4 heures', 'a 8 heures', 'les 8 ... ordonnes', 'apres 10 ecus'.
+# No interlinear or sub-linear letters over or under any code group (both passes + worker look): gate (a) n/a.
+line	pos	sign	conf	page	context	note
+694-08_0176_r01	1	171	medium	R	le vieux | est revenu voir	A 171, B 171 (alt 17.1); worker 2x: 171 or 17.1
+694-08_0176_r01	2	35	medium	R	le vieux | est revenu voir	B alt 33
+694-08_0176_r01	3	62	low	R	le vieux | est revenu voir	A and B 62 (B alt 42); worker native look reads 2-then-6 = 26 (MANT-INV08B eye 17.41.35.26): not settled
+694-08_0176_r02	1	13	high	R	m'a assure que | enverroit	
+694-08_0176_r02	2	66	high	R	m'a assure que | enverroit	
+694-08_0176_r02	3	9	medium	R	m'a assure que | enverroit	A and B 9 (alt 4); MANT-INV08B eye 4; worker look: the y-shaped digit, not settled beyond the passes
+694-08_0176_r02	4	10	high	R	m'a assure que | enverroit	A alt 40
+694-08_0176_r02	5	26	high	R	m'a assure que | enverroit	B alt 20
+694-08_0176_r02	6	36	high	R	m'a assure que | enverroit	B alt 56
+694-08_0176_r03	1	51	low	R	deux colonels, | jusqu'	A 51 (alt 57), B 5 (alt 51.7); worker native: 51
+694-08_0176_r03	2	17	low	R	deux colonels, | jusqu'	B alt 7
+694-08_0176_r03	3	50	medium	R	deux colonels, | jusqu'	
+694-08_0176_r03	4	44	low	R	deux colonels, | jusqu'	after a struck stretch (about '1.10' or 'd..10', both passes illegible, struck, excluded); A puts 44 in the struck stretch, B 'maybe 44.120'; worker native: 44 sits after the end of the stroke
+694-08_0176_r03	5	120	high	R	deux colonels, | jusqu'	A alt 20
+694-08_0176_r03	6	1000	high	R	deux colonels, | jusqu'	A alt 100.0, B alt 1020
+694-08_0176_r03	7	8	medium	R	deux colonels, | jusqu'	B alt 6
+694-08_0176_r03	8	33	medium	R	deux colonels, | jusqu'	B alt 35
+694-08_0176_r03	9	60	high	R	deux colonels, | jusqu'	
+694-08_0176_r03	10	21	medium	R	deux colonels, | jusqu'	B alt 24
+694-08_0176_r04	1	55	high	R	a | ou je pourrois les faire venir	both passes 55 (B alt 35)
+694-08_0176_r04	2	2	high	R	a | ou je pourrois les faire venir	
+694-08_0176_r04	3	27	medium	R	a | ou je pourrois les faire venir	passes saw this line only cut at the crop edge (A 114/22.74, B 114/92.74); worker native 3x zoom reads 27.14 clearly
+694-08_0176_r04	4	14	medium	R	a | ou je pourrois les faire venir	as 27
+694-08_0176_r04	5	25	medium	R	a | ou je pourrois les faire venir	passes cut (A 475/110, B 75/10); worker native 25
+694-08_0176_r04	6	6	medium	R	a | ou je pourrois les faire venir	worker native; passes cut
+694-08_0176_r04	7	7	low	R	a | ou je pourrois les faire venir	a final stroke before a blot: '7' or a comma; worker native only
+694-08_0176_r05	1	13	high	R	certificat de | . pour verifier ce	
+694-08_0176_r05	2	66	high	R	certificat de | . pour verifier ce	
+694-08_0176_r05	3	9	medium	R	certificat de | . pour verifier ce	A and B 9 (alt 4)
+694-08_0176_r05	4	2	high	R	certificat de | . pour verifier ce	
+694-08_0176_r05	5	26	high	R	certificat de | . pour verifier ce	B alt 20; followed by 'C.' (A: may be a letter) -- not a code, read as clear

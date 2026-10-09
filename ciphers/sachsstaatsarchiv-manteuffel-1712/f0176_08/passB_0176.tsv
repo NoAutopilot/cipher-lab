@@ -1,0 +1,18 @@
+# MANT-0176 blind Sonnet code pass B (reversed order L13..L01, same enlarged crops, one call), 9 Oct 2026; verbatim as returned
+crop	line	numbers	words_before	words_after	confidence	alternatives	struck	interlinear_letters_seen
+L01	top	48 (ordinary, small, at left margin below a struck "no 51"/"no St")	(margin, before "135")	Mons. Peine	low	"4.8"; struck word above may be "no 5t"	yes (word above is struck, not the 48)	no
+L01	top	135 (ordinary, page or letter number)	(start of line)	a Ver. le 2. juil. 1712	medium	135 or 155	no	no
+L01	top	2 / 1712 (ordinary, date "le 2. juil. 1712")	a Ver. le	(end of line, then "Mons. Peine arriva ici avant hier")	high		no	no
+L01	bottom	4 (ordinary, "a 4. heures")	arriva ici avant hier a	heures	high		no	no
+L02	bottom	8 (ordinary or possibly code, "les 8 ... ordonnés")	sur le champs les	[illegible, may be "rst"] ordonnées	low	may be a word such as "8 rst" rather than a number	no	no
+L03	bottom	8 (ordinary, "a 8 heures")	a	heures du même matin	medium	possibly "a 8" is "à 8"	no	no
+L09	top	171.35.62	le vieux	est revenu hier, il y a deux	medium	171 or 17.1; 35 or 33; 62 or 42; may have 2-digit "l" before 71	no	no
+L09	bottom	13.66.9.10.26.36	et m'a assuré, que	envoyoit	medium	9 or 4; 26 or 20; 36 or 56	no	no
+L10	top	5.17.50 (first group; may read 51.7.50)	Deux colonels,	[struck or overwritten group follows]	low	51.7.50; 5.17.50	no	no
+L10	top	[struck or blotted group, about 10.44 / 1.10.44, partly illegible]	5.17.50.	120.1000	low	cannot read it	yes (strike-through)	no
+L10	top	120.1000 (maybe 44.120.1000)	[struck group]	8.33.60.21	low	44.120.1000; 1000 may be 1020	no	no
+L10	top	8.33.60.21	120.1000.	jusqu'	medium	8 or 6; 33 or 35; 21 or 24	no	no
+L10	bottom	92.74.75 (poss. 22.74.75, heavy ink blot after)	[illegible]	ou je pourroi ter faire ce	low	22.74.75; 92.14.75	no	no
+L11	top	55.2.114.10.? (line cut off at crop edge)	a	pris a quelque village et leur porter	low	55 or 35; 114 or 144; last group(s) cut off	no	no
+L12	bottom	13.66.9.2.26	certificat de	pour verifier ce	high	9 or 4; 26 or 20	no	no
+# Total (pass B's own line): about 33 code numbers; L04-L08 and L13 no numbers; no interlinear letters above or below any code group.
