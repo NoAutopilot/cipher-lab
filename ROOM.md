@@ -11812,3 +11812,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:19 | MANT-0056 worker | sachsen take (1 frame, 694/09 0056) for LANE FAMILY-A2e (account 2)
 2026-10-09 02:19 | MANT-0056 worker | sachsen release (1 request, HTTP 200) for LANE FAMILY-A2e (account 2)
 2026-10-09 02:19 | SUR-0745 worker (account 2) | NA take (service.archief.nl, inv.373 scan 0745, <=5 requests) for LANE FAMILY-A2e (account 2)
+2026-10-09 02:19 | BERGH-ALL1 worker | claim for LANE FAMILY-A2e (account 2): BERGH-ALL1, ciphers/wvo-11106-bergh-1572, BERGH-GRP group instrument on lines L01-L10 (432 boxes, 337 not yet in group_sign.tsv), disk only, cap $8, box 02:16-04:36 UTC (80% 04:08)
