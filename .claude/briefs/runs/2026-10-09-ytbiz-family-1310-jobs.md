@@ -105,3 +105,49 @@ reconcile -> passD + focus.tsv. Then re-score both pages with the folder's exist
 PREREG_c3_f52r.md unchanged -- no new gate) on passD vs the earlier pair; report residual (2-of-3, not true error -- say so), and whether gate (b)
 still PASSes with its control in the same run. Do not replace the committed reading unless the PREREG's own rule says to; --check scripts exit 0 at the
 end. focus.tsv rows are for the owner's sorter later (no ASKS row). Units: ~4 re-read calls + 1 reconciliation + CPU, ~$4. gaps_check.
+
+## Wave 2 (13:4x UTC 9 Oct)
+Wave 1 results: MANT-0177 0176 fix applied, gate holds; 0177 too-short (11 tokens). MANT-CUC3 0398 PASS, 7-leaf pool 156/231 vs p99 38/45; code 19
+conflict logged. BRO-SWEEP: cipher on m0253-m0254 (body original of appendix Carta 123, ~500 tokens; appendix has plaintext only), m0178 second run,
+m0264 inline string. HEIN-SR2 pp.132-251 no cipher. ES132-LOOK residual 0.6%/3.2%, gate (b) holds, echo caveat (no planted control).
+Hosts this wave: www.archiv.sachsen.de ("sachsen": MANT-0494 first, then MANT-CENSUS); everything else disk only.
+
+### BRO-123 (Opus, cap 6, box 100 min, disk only): antt-msliv0638-brochado-1712, m0253-m0254 (Carta 123 body run) against the appendix plaintext
+Known-text by design (the appendix gives Carta 123's plaintext): this is a KEY test and key-extension for letter 134's thin codes, not a reading.
+NOTES BRO-SWEEP section and the Remaining gaps bullets on letter 134's thin/split codes (x z d f 16 9, 24, 2, e, 26) and the two unkeyed signs. Check 1:
+grep NOTES/ciphertext_appendix.tsv/key.tsv for any earlier use of Carta 123's body run (the appendix entry itself was mined, AX-BRO3/AX2-BRO4).
+Steps: (1) crops: the committed images/crops_m0253 / crops_m0254 (check their debug overlays; re-cut with `tools/iiif_lines.py --image ... --debug` only if
+bands miss text, paste the command); (2) two blind Sonnet passes per page (code tokens only, one page or half page per call, the folder's sign
+inventory/atlas as reference; the appendix text never shown to the passes), reconcile with tools/reconcile_passes.py (one more unit);
+(3) PREREG-BRO123.md, own commit, pushed and checked on origin BEFORE scoring: align the reconciled tokens with appendix Carta 123's plaintext
+(tools/interlinear_align.py, or a monotone position alignment if the appendix gives the letter verbatim); statistic = share of tokens whose key.tsv
+value equals the aligned plaintext letter; control = 1,000 permutations of key.tsv values among codes; gate real > p99; (4) only if the gate passes:
+list every occurrence of the letter-134 thin codes and the two unkeyed signs in the pair with its aligned letter (grade C from the period text) in
+`carta123_attest.tsv`; never edit key.tsv -- name codes whose support changes and whether letter 134's tokens on those codes would move (a
+`decode_key.py --try` per code is fine, no key write). Also note body-vs-appendix copy differences. Units: 4 vision calls + 1 reconciliation + CPU,
+~$5. Report what was found and where it was not found; do not classify novelty.
+
+### MANT-0494 (Opus, cap 6, box 100 min, sachsen take/release FIRST): sachsstaatsarchiv-manteuffel-1712, 694/08 0494 glossed heavy leaf as a key test
+Handoff next 2 second half; inventory inv08c.tsv line 46 (stamp 395, left page almost all code, right page 6 runs, gloss over most runs; Breton /
+Queen of England matter as 0474) and NOTES ~line 2912-2926. Check 1: grep NOTES/HYPOTHESES for 0494 and 0474 work (0474's result is the model).
+Fetch 0494 ONCE at native (sachsen, >= 2 s; manifest). Crops: code lines only, the gloss line above NOT in the code crops; gloss crops separately.
+Two blind Sonnet passes over the code crops (half page per call -> 4 calls), one blind Sonnet pass over the gloss crops per page (2 calls), V-BRANDT
+rule (the gloss is read blind and scored per pass, never settled by the worker before scoring); reconcile the code passes (one unit). PREREG-MANT0494.md
+own commit, pushed, checked on origin before scoring: gloss agreement on glossed runs vs 1,000 permutations of key.tsv values, gate real > p99, per
+gloss pass. Codes outside key.tsv (>401 included) with their glossed meaning -> candidates file (grade C from the gloss, never key.tsv). Unglossed long
+runs: decode with key.tsv and report grades only if gate (b) (fr18 permuted-key with power control, as MANT-0176) passes at their N; otherwise
+too-short, no reading. Units: 1 GET + 6 vision calls + 1 reconciliation, ~$5.5; stop before the unglossed-run decode if past 80% of the cap.
+
+### MANT-CENSUS (Sonnet, cap 3.5, box 75 min, sachsen: wait for MANT-0494's "sachsen release"): 694/08 image check of 5 date-only AB BO frames + unseen offsets
+Handoff next 3. (a) The 5 date-only Acta Borussica hits (abbo_check.tsv: 0088, 0114, 0213, 0387, 0426): fetch each ONCE at 1500 px or the size
+MANT-INV08C used, record sender/date/cipher y/n/glossed and whether the leaf matches the printed AB BO letter (date + opening words vs the abbo_check
+snippet) -- a match marks the leaf printed. (b) Then offsets 1 and 3 of the 189 unseen frames (NOTES ~line 2926, frames.tsv), in frame order, at the
+400-600 px contact-sheet size MANT-INV08C used, Sonnet calls of <= 12 tiles with planted controls (one known cipher, one clear frame) and the tile key
+in a file read after; stop at 60 total sachsen requests or 80% of cap. Append to an inventory TSV (inv08d.tsv, same columns as inv08c.tsv) and a NOTES
+section; update the 694/08 inventory gap bullet's counts; gaps_check. No transcription, no decode.
+
+### ES132-AUDIT (Sonnet, cap 2, box 50 min, disk only): es132-vargas-mexia-1578, planted-tile control for ES132-LOOK's re-read
+ES132-LOOK's caveat (f.51v re-read sided with reader A 95/105, no planted control) and NOTES line ~897's suggestion. Run `tools/lookalike_pass.py audit
+--plant 0.05` (read its --help; sample from f.51v L11-L25 and f.52r with the confusion.tsv ES132-LOOK wrote) with value-blind Sonnet re-reads (half page
+per call, <= 3 calls); score with `audit-score`. Report planted-tile recovery and whether the re-read can be told from an echo of reader A. No change
+to the committed reading or passD; NOTES section; gaps_check.
