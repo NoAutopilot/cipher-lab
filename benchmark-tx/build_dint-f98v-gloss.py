@@ -38,6 +38,8 @@ KP = os.path.join(ROOT, 'ciphers/fr3621-dinteville-1592/f128/print_align/key_pri
 ITEM = 'dint-f98v-gloss'
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import interlinear_align as ia  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import truth_variant as tv  # noqa: E402
 ia.FOLD_FS = False
 KPMAP = {'+': ['plus'], '-:-': ['div'], 'a': ['a', 'al'], '4': ['4', 'D']}
 
@@ -63,7 +65,7 @@ def matched(dec, clear):
     return sum(b.size for b in sm.get_matching_blocks() if b.size >= 3) / max(1, len(dec))
 
 
-def build(out_root):
+def build(out_root, variant=None):
     ref = defaultdict(list)
     for r in rd(os.path.join(TX, 'passZ_pipeline.tsv')):
         ref[r['line']].append(r['sign'])
@@ -156,6 +158,9 @@ def build(out_root):
         else:
             nex[st] += 1
         rows.append((ln, pos[ln], sign, truth, ch, st, flag, ast))
+    if variant:  # PREREG-txeng2-2 R (TXP-REBUILD): second truth from a key independent of the reads
+        assert variant == 'keyprint', 'this item builds --variant keyprint only'
+        return tv.write_variant(out_root, ITEM, variant, tv.keyprint_rows(trows, [(r[0], r[1], r[2]) for r in rows], lambda c: '.' in c, fold), ctrl)
     os.makedirs(os.path.join(out_root, 'benchmark-tx'), exist_ok=True)
     tp = os.path.join(out_root, 'benchmark-tx', ITEM + '.truth.tsv')
     with open(tp, 'w') as f:
@@ -191,6 +196,8 @@ def build(out_root):
 
 
 def main():
+    if tv.variant_main(build, ITEM):  # --variant keyprint|jackknife [--check] (PREREG-txeng2-2 R)
+        return
     rels = ['benchmark-tx/%s.truth.tsv' % ITEM, 'benchmark-tx/%s.truth.tsv.sha256' % ITEM,
             'benchmark-tx/txeng2/dint-f98v-gloss/key_f98v.tsv'] + \
            ['benchmark-tx/outputs/%s/%s.tsv' % (ITEM, n) for n in ('passA', 'passB', 'passZ_pipeline')]

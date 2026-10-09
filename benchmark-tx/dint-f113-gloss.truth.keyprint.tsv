@@ -1,0 +1,189 @@
+# align agrees 91/186 = 0.489; GAPS4 control: real rebuilt key matched 0.350 vs 200 value-shuffled keys mean 0.063 max 0.128, rank 1 of 201; key rows rebuilt 24, kept (n>=2, agree>=0.75, key_print-consistent) 14, of which in key_print 14 (all agree by rule); dropped for key_print conflict none
+# variant keyprint (benchmark-tx/truth_variant.py, PREREG-txeng2-2 R): 186 positions, 71 scored, excluded {'excluded:letter-no-keyprint-sign': 11, 'excluded:align-uncertain': 37, 'excluded:unaligned': 53, 'excluded:multi-letter': 13, 'excluded:gloss-unread': 1}
+line	pos	ref_sign	truth	plain	status	flag	align_status
+f113_L03	1	NEW:d-shape		p	excluded:letter-no-keyprint-sign		conflict:auu
+f113_L03	2	w		r	excluded:align-uncertain		agrees
+f113_L03	3	p			excluded:unaligned		null-or-unaligned
+f113_L03	4	NEW:d-shape		est	excluded:multi-letter		conflict:auu
+f113_L03	5	v		a	excluded:align-uncertain		agrees
+f113_L03	6	sq		s	excluded:align-uncertain		agrees
+f113_L03	7	NEW:d-shape	sq	s	scored		conflict:auu
+f113_L03	8	.			excluded:unaligned		null-or-unaligned
+f113_L03	9	1			excluded:unaligned		null-or-unaligned
+f113_L03	10	.	.	e	scored		agrees
+f113_L03	11	z	z	m	scored		agrees
+f113_L03	12	-:-		b	excluded:letter-no-keyprint-sign		agrees
+f113_L03	13	4	4	l	scored		agrees
+f113_L03	14	0	.	e	scored		agrees
+f113_L03	15	w			excluded:unaligned		null-or-unaligned
+f113_L03	16	+	4	l	scored		single
+f113_L03	17	sq			excluded:unaligned		null-or-unaligned
+f113_L03	18	NEW:d-shape			excluded:unaligned		null-or-unaligned
+f113_L03	19	0	.	e	scored		agrees
+f113_L03	20	c			excluded:unaligned		null-or-unaligned
+f113_L03	21	m	a|m	u	scored		agrees
+f113_L03	22	L			excluded:unaligned		null-or-unaligned
+f113_L03	23	v'		rs	excluded:multi-letter		conflict:a
+f113_L03	24	0		e	excluded:align-uncertain		agrees
+f113_L03	25	m	a|m	u	scored		agrees
+f113_L03	26	c			excluded:unaligned		null-or-unaligned
+f113_L03	27	sq		oit	excluded:multi-letter		conflict:s
+f113_L03	28	#		d	excluded:align-uncertain		agrees
+f113_L03	29	a			excluded:unaligned		null-or-unaligned
+f113_L03	30	c	a|m	u	scored		conflict:r
+f113_L03	31	w		r	excluded:align-uncertain		agrees
+f113_L03	32	y	y	o	scored		agrees
+f113_L03	33	L			excluded:unaligned		null-or-unaligned
+f113_L03	34	NEW:d-shape		yp	excluded:multi-letter		conflict:auu
+f113_L03	35	y		o	excluded:align-uncertain		agrees
+f113_L03	36	m	a|m	u	scored		agrees
+f113_L03	37	w	c|w	r	scored		agrees
+f113_L03	38	sq	sq	s	scored		agrees
+f113_L03	39	L		i	excluded:align-uncertain		agrees
+f113_L03	40	NEW:d-shape		opp	excluded:multi-letter		conflict:auu
+f113_L03	41	y		o	excluded:align-uncertain		agrees
+f113_L03	42	sq	sq	s	scored		agrees
+f113_L03	43	0	.	e	scored		agrees
+f113_L03	44	c			excluded:unaligned		null-or-unaligned
+f113_L03	45	.		e	excluded:align-uncertain		agrees
+f113_L03	46	1		t	excluded:letter-no-keyprint-sign		conflict:e
+f113_L03	47	.		?	excluded:gloss-unread		conflict:e
+f113_L03	48	v'		m	excluded:align-uncertain		conflict:a
+f113_L03	49	0			excluded:unaligned		null-or-unaligned
+f113_L03	50	NEW:d-shape		auu	excluded:multi-letter		single
+f113_L03	51	sq			excluded:unaligned		null-or-unaligned
+f113_L03	52	v	4	a	scored		agrees
+f113_L03	53	L			excluded:unaligned		null-or-unaligned
+f113_L03	54	0			excluded:unaligned		null-or-unaligned
+f113_L03	55	c			excluded:unaligned		null-or-unaligned
+f113_L03	56	4		f	excluded:letter-no-keyprint-sign		conflict:l
+f113_L03	57	v		a	excluded:align-uncertain		agrees
+f113_L03	58	L	L|p	i	scored		agrees
+f113_L03	59	w	c|w	r	scored		agrees
+f113_L03	60	0			excluded:unaligned		null-or-unaligned
+f113_L03	61	#	3	d	scored		agrees
+f113_L03	62	v	4	a	scored		agrees
+f113_L03	63	3	3	d	scored		agrees
+f113_L03	64	m	a|m	u	scored		agrees
+f113_L05	1	v	4	a	scored		agrees
+f113_L05	2	f			excluded:unaligned		null-or-unaligned
+f113_L05	3	v'	9	g	scored		conflict:a
+f113_L05	4	4			excluded:unaligned		null-or-unaligned
+f113_L05	5	x	c|w	r	scored		single
+f113_L05	6	.			excluded:unaligned		null-or-unaligned
+f113_L05	7	1			excluded:unaligned		null-or-unaligned
+f113_L05	8	.			excluded:unaligned		null-or-unaligned
+f113_L05	9	sq	sq	s	scored		agrees
+f113_L05	10	L		i	excluded:align-uncertain		agrees
+f113_L05	11	NEW:d-shape		to	excluded:multi-letter		conflict:auu
+f113_L05	12	0		s	excluded:align-uncertain		conflict:e
+f113_L05	13	NEW:d-shape		tp	excluded:multi-letter		conflict:auu
+f113_L05	14	c		r	excluded:align-uncertain		agrees
+f113_L05	15	.		e	excluded:align-uncertain		agrees
+f113_L05	16	1		sag	excluded:multi-letter		conflict:e
+f113_L05	17	.		e	excluded:align-uncertain		agrees
+f113_L05	18	sq			excluded:unaligned		null-or-unaligned
+f113_L05	19	v		de	excluded:multi-letter		conflict:a
+f113_L05	20	f		n	excluded:align-uncertain		agrees
+f113_L05	21	v'		os	excluded:multi-letter		conflict:a
+f113_L05	22	1		t	excluded:letter-no-keyprint-sign		conflict:e
+f113_L05	23	.			excluded:unaligned		null-or-unaligned
+f113_L05	24	#	sq	s	scored		conflict:d
+f113_L05	25	p		i	excluded:align-uncertain		single
+f113_L05	26	0			excluded:unaligned		null-or-unaligned
+f113_L05	27	z	z	m	scored		agrees
+f113_L05	28	.		e	excluded:align-uncertain		agrees
+f113_L05	29	1	3	d	scored		conflict:e
+f113_L05	30	.		e	excluded:align-uncertain		agrees
+f113_L05	31	NEW:d-shape			excluded:unaligned		null-or-unaligned
+f113_L05	32	m			excluded:unaligned		null-or-unaligned
+f113_L05	33	L			excluded:unaligned		null-or-unaligned
+f113_L05	34	sq			excluded:unaligned		null-or-unaligned
+f113_L05	35	#			excluded:unaligned		null-or-unaligned
+f113_L05	36	p			excluded:unaligned		null-or-unaligned
+f113_L05	37	4	4	l	scored		agrees
+f113_L05	38	L	L|p	i	scored		agrees
+f113_L05	39	-:-		b	excluded:letter-no-keyprint-sign		agrees
+f113_L05	40	0	.	e	scored		agrees
+f113_L05	41	w	c|w	r	scored		agrees
+f113_L05	42	1	.	e	scored		agrees
+f113_L05	43	#	3	d	scored		agrees
+f113_L05	44	0			excluded:unaligned		null-or-unaligned
+f113_L05	45	z			excluded:unaligned		null-or-unaligned
+f113_L05	46	.		auo	excluded:multi-letter		conflict:e
+f113_L05	47	1		i	excluded:align-uncertain		conflict:e
+f113_L05	48	.		r	excluded:align-uncertain		conflict:e
+f113_L05	49	w		r	excluded:align-uncertain		agrees
+f113_L05	50	0	.	e	scored		agrees
+f113_L05	51	f	f|r	n	scored		agrees
+f113_L05	52	3	3	d	scored		agrees
+f113_L05	53	c		r	excluded:align-uncertain		agrees
+f113_L05	54	1	4	a	scored		conflict:e
+f113_L05	55	v		a	excluded:align-uncertain		agrees
+f113_L05	56	#		c	excluded:letter-no-keyprint-sign		conflict:d
+f113_L05	57	0		e	excluded:align-uncertain		agrees
+f113_L05	58	sq	sq	s	scored		agrees
+f113_L05	59	.			excluded:unaligned		null-or-unaligned
+f113_L05	60	1			excluded:unaligned		null-or-unaligned
+f113_L05	61	.	.	e	scored		agrees
+f113_L05	62	c	c|w	r	scored		agrees
+f113_L05	63	a			excluded:unaligned		null-or-unaligned
+f113_L05	64	t	z	m	scored		single
+f113_L05	65	#			excluded:unaligned		null-or-unaligned
+f113_L05	66	0	.	e	scored		agrees
+f113_L07	1	#			excluded:unaligned		null-or-unaligned
+f113_L07	2	1	.	e	scored		agrees
+f113_L07	3	sq		s	excluded:align-uncertain		agrees
+f113_L07	4	v		t	excluded:letter-no-keyprint-sign		conflict:a
+f113_L07	5	0			excluded:unaligned		null-or-unaligned
+f113_L07	6	v'		f	excluded:letter-no-keyprint-sign		conflict:a
+f113_L07	7	w		r	excluded:align-uncertain		agrees
+f113_L07	8	y	y	o	scored		agrees
+f113_L07	9	f		n	excluded:align-uncertain		agrees
+f113_L07	10	m		t	excluded:letter-no-keyprint-sign		conflict:u
+f113_L07	11	L		i	excluded:align-uncertain		agrees
+f113_L07	12	0	.	e	scored		agrees
+f113_L07	13	c	c|w	r	scored		agrees
+f113_L07	14	1			excluded:unaligned		null-or-unaligned
+f113_L07	15	.	.	e	scored		agrees
+f113_L07	16	#	3	d	scored		agrees
+f113_L07	17	.			excluded:unaligned		null-or-unaligned
+f113_L07	18	1			excluded:unaligned		null-or-unaligned
+f113_L07	19	.	.	e	scored		agrees
+f113_L07	20	sq		s	excluded:align-uncertain		agrees
+f113_L07	21	#		t	excluded:letter-no-keyprint-sign		conflict:d
+f113_L07	22	v		a	excluded:align-uncertain		agrees
+f113_L07	23	w	c|w	r	scored		agrees
+f113_L07	24	9	9	g	scored		single
+f113_L07	25	.		e	excluded:align-uncertain		agrees
+f113_L07	26	1	4	a	scored		conflict:e
+f113_L07	27	.			excluded:unaligned		null-or-unaligned
+f113_L07	28	0			excluded:unaligned		null-or-unaligned
+f113_L07	29	4	4	l	scored		agrees
+f113_L07	30	1	.	e	scored		agrees
+f113_L07	31	f		n	excluded:align-uncertain		agrees
+f113_L07	32	y	f|r	n	scored		conflict:o
+f113_L07	33	0		e	excluded:align-uncertain		agrees
+f113_L07	34	z	z	m	scored		agrees
+f113_L07	35	L	L|p	i	scored		agrees
+f113_L07	36	0			excluded:unaligned		null-or-unaligned
+f113_L07	37	z			excluded:unaligned		null-or-unaligned
+f113_L07	38	NEW:d-shape		nf	excluded:multi-letter		conflict:auu
+f113_L07	39	1		e	excluded:align-uncertain		agrees
+f113_L07	40	sq			excluded:unaligned		null-or-unaligned
+f113_L07	41	#			excluded:unaligned		null-or-unaligned
+f113_L07	42	T	c|w	r	scored		single
+f113_L07	43	0	.	e	scored		agrees
+f113_L09	1	#	3	d	scored		agrees
+f113_L09	2	1			excluded:unaligned		null-or-unaligned
+f113_L09	3	.	.	e	scored		agrees
+f113_L09	4	#	3	d	scored		agrees
+f113_L09	5	0	.	e	scored		agrees
+f113_L09	6	4	4	l	scored		agrees
+f113_L09	7	v'	4	a	scored		single
+f113e_L02	1	.			excluded:unaligned		null-or-unaligned
+f113e_L02	2	f			excluded:unaligned		null-or-unaligned
+f113e_L02	3	L	L|p	i	scored		agrees
+f113e_L02	4	4	4	l	scored		agrees
+f113e_L02	5	z	z	m	scored		agrees
+f113e_L02	6	0			excluded:unaligned		null-or-unaligned

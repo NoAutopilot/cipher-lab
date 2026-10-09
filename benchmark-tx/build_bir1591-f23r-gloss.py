@@ -37,6 +37,8 @@ from collections import Counter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import interlinear_align as ia  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import truth_variant as tv  # noqa: E402
 
 ia.FOLD_FS = False
 TX = os.path.join(ROOT, 'benchmark-tx/txeng2/bir1591-f23r-gloss')
@@ -69,7 +71,7 @@ def gloss_text(t):
     return re.sub(r'[^A-Za-z?& ]', '', t)
 
 
-def build(out_root):
+def build(out_root, variant=None):
     z = [(r['line'], int(r['pos']), r['sign'].strip()) for r in rd(os.path.join(TX, 'passZ_pipeline.tsv'))]
     gl = {r['line']: r['text'] for r in rd(os.path.join(TX, 'gloss.tsv'))}
     lines = []
@@ -149,6 +151,9 @@ def build(out_root):
             % (agrees, len(trows), agrees / len(trows), real, sum(sh) / len(sh), max(sh), rank, len(key), MIN_N, MIN_AGREE,
                len(sup)))
 
+    if variant:  # PREREG-txeng2-2 R (TXP-REBUILD): line i scored with the key rebuilt from the other lines (grade C-)
+        assert variant == 'jackknife', 'this item builds --variant jackknife only'
+        return tv.write_variant(out_root, ITEM, variant, tv.jackknife_rows(trows, [(r[0], r[1], r[2]) for r in rows], lambda c: WILD in c, fold, off_sheet), ctrl)
     os.makedirs(os.path.join(out_root, 'benchmark-tx'), exist_ok=True)
     tp = os.path.join(out_root, 'benchmark-tx', ITEM + '.truth.tsv')
     with open(tp, 'w', encoding='utf-8') as f:
@@ -192,6 +197,8 @@ OUTS = ['benchmark-tx/%s.truth.tsv' % ITEM, 'benchmark-tx/%s.truth.tsv.sha256' %
 
 
 def main():
+    if tv.variant_main(build, ITEM):  # --variant keyprint|jackknife [--check] (PREREG-txeng2-2 R)
+        return
     if '--check' in sys.argv:
         tmp = tempfile.mkdtemp()
         print(build(tmp))

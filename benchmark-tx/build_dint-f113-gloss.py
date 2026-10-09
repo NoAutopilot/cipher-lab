@@ -37,6 +37,8 @@ ITEM = 'dint-f113-gloss'
 LABEL_KP = {'-:-': 'div', '+': 'plus'}  # reader-table labels -> key_print labels
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import interlinear_align as ia  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import truth_variant as tv  # noqa: E402
 
 ia.FOLD_FS = False
 SEED = True
@@ -61,7 +63,7 @@ def offsheet(s):
     return s.startswith('NEW') or s == '?'
 
 
-def build(out_root):
+def build(out_root, variant=None):
     z = rd(os.path.join(TX, 'passZ_pipeline.tsv'))
     lines = defaultdict(list)
     for r in z:
@@ -167,6 +169,9 @@ def build(out_root):
             nex[st] += 1
         rows.append((ln, idx + 1, s, truth, chunk, st, flag, status))
 
+    if variant:  # PREREG-txeng2-2 R (TXP-REBUILD): second truth from a key independent of the reads
+        assert variant == 'keyprint', 'this item builds --variant keyprint only'
+        return tv.write_variant(out_root, ITEM, variant, tv.keyprint_rows(trows, [(r[0], r[1], r[2]) for r in rows], lambda c: '?' in c, fold), ctrl)
     os.makedirs(os.path.join(out_root, 'benchmark-tx'), exist_ok=True)
     tp = os.path.join(out_root, 'benchmark-tx', ITEM + '.truth.tsv')
     with open(tp, 'w', encoding='utf-8') as f:
@@ -201,6 +206,8 @@ def build(out_root):
 
 
 def main():
+    if tv.variant_main(build, ITEM):  # --variant keyprint|jackknife [--check] (PREREG-txeng2-2 R)
+        return
     if '--check' in sys.argv:
         tmp = tempfile.mkdtemp()
         build(tmp)
