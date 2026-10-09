@@ -1,0 +1,49 @@
+key: key.tsv
+
+######## gloss pass G1 (deciding); spans 11
+== G1 row (a) letter runs (>= 2 codes), 0317: spans 5; code tokens 31; keyed 31
+S = 28/31 keyed (0.903); control (1000 permutations, seed 317): mean 3.53, p95 7, p99 8, max 10; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G1 row (n) name runs (1 code), 0317: spans 6; code tokens 6; keyed 6
+S = 5/6 keyed (0.833); control (1000 permutations, seed 317): mean 0.11, p95 1, p99 1, max 2; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== G1 row (a-all) every span, 0474 statistic (continuity, not deciding), 0317: spans 11; code tokens 37; keyed 37
+S = 31/37 keyed (0.838); control (1000 permutations, seed 317): mean 4.25, p95 8, p99 9, max 12; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span G1 (code:op:gloss-letters; name rows: match 1/0):
+G1-R01	0317	le Czar	1/1	177=le czar
+G1-R02	0317	en alle	5/6	35:match:e 21:match:n 66:match:a 12:match:l 103:match:le 60:null:
+G1-R03	0317	a petersbourg	8/8	66:match:a 17:match:p 10:match:e 28:match:t 2:match:e 60:match:r 51:match:s 55:match:b
+G1-R04	0317	haeckeb.	6/6	8:match:h 50:match:a 15:match:c 11:match:k 35:match:e 55:match:b
+G1-R05	0317	Hack.	4/4	8:match:h 50:match:a 15:match:c 11:match:k
+G1-R06	0317	la Pol	1/1	292=Pologne
+G1-R07	0317	le Roy	1/1	150=le Roi de Pologne
+G1-R08	0317	H.	1/1	8=h
+G1-R09	0317	S.m	0/1	170=le
+G1-R10	0317	le Czar	1/1	177=le czar
+G1-R11	0317	Stettin	5/7	51:match:s 28:match:t 35:match:e 28:match:t 57:miss:t 7:miss:i 21:match:n
+
+######## gloss pass G2 (reported beside G1); spans 11
+== G2 row (a) letter runs (>= 2 codes), 0317: spans 5; code tokens 31; keyed 31
+S = 24/31 keyed (0.774); control (1000 permutations, seed 317): mean 3.30, p95 6, p99 8, max 11; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (n) name runs (1 code), 0317: spans 6; code tokens 6; keyed 6
+S = 3/6 keyed (0.500); control (1000 permutations, seed 317): mean 0.11, p95 1, p99 1, max 2; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== G2 row (a-all) every span, 0474 statistic (continuity, not deciding), 0317: spans 11; code tokens 37; keyed 37
+S = 25/37 keyed (0.676); control (1000 permutations, seed 317): mean 4.00, p95 7, p99 9, max 11; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span G2 (code:op:gloss-letters; name rows: match 1/0):
+G2-R01	0317	le Cran	0/1	177=le czar
+G2-R02	0317	en alle	5/6	35:match:e 21:match:n 66:match:a 12:match:l 103:match:le 60:null:
+G2-R03	0317	a petersbourg	8/8	66:match:a 17:match:p 10:match:e 28:match:t 2:match:e 60:match:r 51:match:s 55:match:b
+G2-R04	0317	haekeb.	5/6	8:match:h 50:match:a 15:miss:e 11:match:k 35:match:e 55:match:b
+G2-R05	0317	Haek.	3/4	8:match:h 50:match:a 15:miss:e 11:match:k
+G2-R06	0317	la Pol	1/1	292=Pologne
+G2-R07	0317	le Roy	1/1	150=le Roi de Pologne
+G2-R08	0317	H.	1/1	8=h
+G2-R09	0317	A m	0/1	170=le
+G2-R10	0317	le Cran	0/1	177=le czar
+G2-R11	0317	Hettin	3/7	51:null: 28:miss:h 35:match:e 28:match:t 57:miss:t 7:miss:i 21:match:n

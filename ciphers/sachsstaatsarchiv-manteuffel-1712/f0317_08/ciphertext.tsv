@@ -1,0 +1,38 @@
+tokid	run	pos	passA	passB	settled	conf	note
+T001	R01	0	177	177	177	high	agree
+T002	R02	0	35	35	35	high	agree
+T003	R02	1	21	21	21	high	agree
+T004	R02	2	06	06	66	low	A 06 (note: may be 66) B 06?; 3x zoom: second glyph a 6 (b-form), first a small closed loop without the 6 ascender; 06 is not a group form on these leaves -- read 66 low, and gate.out is re-run with 06 as a sensitivity row
+T005	R02	3	12	12	12	high	agree
+T006	R02	4	103	103	103	high	agree
+T007	R02	5	60	60	60	high	agree
+T008	R03	0	66	66	66	high	agree
+T009	R03	1	17	17	17	high	agree
+T010	R03	2	10	10	10	high	agree
+T011	R03	3	282	28	28	med	A 282 (one group) B 28 2; 3x zoom: a point after the 8 before the 2 (28.2)
+T012	R03	4		2	2	med	A (in 282) B 2; as R03 pos 3
+T013	R03	5	60	60	60	high	agree
+T014	R03	6	51	51	51	high	agree
+T015	R03	7	55	55	55	high	agree
+T016	R04	0	8	8	8	high	agree
+T017	R04	1	50	50	50	high	agree
+T018	R04	2	15	15	15	high	agree
+T019	R04	3	11	11	11	high	agree
+T020	R04	4	35	35	35	high	agree
+T021	R04	5	55	55	55	high	agree
+T022	R05	0	8	8	8	high	agree
+T023	R05	1	50	50	50	high	agree
+T024	R05	2	15	15	15	high	agree
+T025	R05	3	11	11	11	high	agree
+T026	R06	0	242	242	292	med	A 242? B 242?; middle glyph y-tailed (4|9 glyph question, MANT-YCEN); read 9 as on 0309 (R05/R08 29)
+T027	R07	0	150	150	150	high	agree
+T028	R08	0	8	8	8	high	agree
+T029	R09	0	170	170	170	high	agree
+T030	R10	0	177	177	177	high	agree
+T031	R11	0	51	51	51	high	agree
+T032	R11	1	28	28	28	high	agree
+T033	R11	2	35	35	35	high	agree
+T034	R11	3	28	28	28	high	agree
+T035	R11	4	54	57	57	med	A 57? B 54?; second digit a y-tailed glyph of the same form as the next token, which both passes read 7
+T036	R11	5	7	7	7	high	agree
+T037	R11	6	21	21	21	high	agree

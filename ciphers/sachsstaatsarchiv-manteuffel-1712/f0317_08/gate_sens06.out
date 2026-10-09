@@ -1,0 +1,6 @@
+== G1 row (a) letter runs (>= 2 codes), 0317: spans 5; code tokens 31; keyed 30
+S = 27/30 keyed (0.900); control (1000 permutations, seed 317): mean 3.41, p95 6, p99 8, max 10; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (a) letter runs (>= 2 codes), 0317: spans 5; code tokens 31; keyed 30
+S = 23/30 keyed (0.767); control (1000 permutations, seed 317): mean 3.19, p95 6, p99 8, max 11; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
