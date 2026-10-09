@@ -1117,13 +1117,13 @@ Code-word tokens: H 13, I 1, M 1.
 
 **E226 | Page 204 | 5748 | mssEC 25 (obj 5952, pointer 5748), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert, for Allen: mail boats to Charles City Landing, H. B. Blood (FM-R3b; row 5748/0; image-read at 2400 px)**
 
-[Report] horse [14] {time: 12.30} for [Captain] Allen [Quartermaster] [7] street [Today] [Washington] [.] send the mail boats to Charles City landing on the [James]  {tail: [signed] H B Blood [Captain] A [Quartermaster] Cloudy windy appearance of rain Geo D Sheldon}
+[White House] [14] {time: 12.30} for [Captain] Allen [Quartermaster] [7] street wharf [Washington] [.] send the mail boats to Charles City landing on the [James]  {tail: [signed] H B Blood [Captain] A [Quartermaster] Cloudy windy appearance of rain Geo D Sheldon}
 
-Code-word tokens: H 13.
+Code-word tokens: H 11, I 1.
 
 **E227 | Page 264 | 5808 | mssEC 25 (obj 5952, pointer 5808), 6 Nov 1864 Ft Monroe, Sheldon to John Horner, New York, for Capt. D. Stinson: Ninth Vermont draft (FM-R3b; row 5808/1; image-read at 2400 px)**
 
-[Monroe] November [6] {time: 7.30 PM} for [Captain] D Stinson [Quartermaster] [New York] [150] [Men] ninth [Vermont] will leave here at {time: 8 PM} on Weasler Perit to [Join (-ed, -ing)] their [Regiment]  {tail: [signed] [100] L James [Captain] and [Quartermaster] Geo D Sheldon}
+[Monroe] November [6] {time: 7.30 PM} for [Captain] D Stinson [Quartermaster] [New York] [150] [Men] ninth [Vermont] will leave here at {time: 8 PM} on [Steamer] Perit to [Join (-ed, -ing)] their [Regiment]  {tail: [signed] William L James [Captain] and [Quartermaster] Geo D Sheldon}
 
 Code-word tokens: H 18.
 
@@ -1135,9 +1135,9 @@ Code-word tokens: H 7.
 
 **E229 | Page 289 | 5833 | mssEC 25 (obj 5952, pointer 5833), 14 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington: the press despatch on Foster and Pocotaligo bridge (FM-R3b; row 5833/0; image-read at 2400 px)**
 
-Wash'n The Press Despatch in [New York] [Ewell] of [13] about [Maj Gen J. G. Foster] is wrong up tooth [10] [Maj Gen J. G. Foster] had not [Communicate (-ed, -ing)]d with [Maj Gen W. T. Sherman] nor has Pocotaligo [Bridge (-ed, -ing)] been [Destroy (-ed, -ing)]ed  {tail: [signed] L F Shell done cloudy this morning Geo. D. Sheldon}
+Wash'n The Press Despatch in [New York] Herald of [13] about [Maj Gen J. G. Foster] is wrong [up to the 10th] [Maj Gen J. G. Foster] had not [Communicate (-ed, -ing)]d with [Maj Gen W. T. Sherman] nor has Pocotaligo [Bridge (-ed, -ing)] been [Destroy (-ed, -ing)]ed  {tail: [signed] L F Shell done cloudy this morning Geo. D. Sheldon}
 
-Code-word tokens: H 11.
+Code-word tokens: H 9, M 1.
 
 **E210 | Page 93 | 5637 | mssEC 25 (obj 5952, pointer 5637), 28 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for Capt. H. S. Taft, signal officer, Washington; signer L. B. Norton, chief signal officer (FM-R3a, 9 Oct 2026; row 5637/2; image-read)**
 
@@ -1183,9 +1183,9 @@ Code-word tokens: H 12.
 
 **E217 | Page 226 | 5770 | mssEC 25 (obj 5952, pointer 5770), 10 July 1864 4.30 PM Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General, forwarding Ingalls's City Point message on transports for Gen. Wright's command (FM-R3a; row 5770/0; image-read)**
 
-Maj. Eckert [Volunteer] [City Point] {date: July 10} [By the way of] [Monroe] {time: 4.30 PM} {date: July 10} for [Qr Master Genl U.S.] [Washington] [.] There are [Transport (-ed, -ing)]'s here now for [7000] [Men] [.] [General] Wright has [11000] [Men] [.] I think there wilby [Transport (-ed, -ing)]'s enough for his [Command = Er (-ed, -ing)]  {tail: [signed] Ingalls [Brigadier General] [Quartermaster] Geo. D. Sheldon}
+Maj. Eckert Washington [City Point] {date: July 10} [By the way of] [Monroe] {time: 4.30 PM} {date: July 10} for [Qr Master Genl U.S.] [Washington] [.] There are [Transport (-ed, -ing)]'s here now for [7000] [Men] [.] [General] Wright has [11000] [Men] [.] I think there wilby [Transport (-ed, -ing)]'s enough for his [Command = Er (-ed, -ing)]  {tail: [signed] Ingalls [Brigadier General] [Quartermaster] Geo. D. Sheldon}
 
-Code-word tokens: H 25.
+Code-word tokens: H 24.
 
 **E218 | Page 224 | 5768 | mssEC 25 (obj 5952, pointer 5768), 9 July 1864 6 PM City Point, S. H. Beckwith to Sheldon at Ft Monroe, forwarding Grant's message to the commanding officer, Fort Monroe, on the 19th Corps (FM-R3a; row 5768/0; image-read)**
 
@@ -1195,9 +1195,9 @@ Code-word tokens: H 19.
 
 **E219 | Page 236 | 5780 | mssEC 25 (obj 5952, pointer 5780), 27 Aug 1864 6.30 PM City Point, S. H. Beckwith to Sheldon at Ft Monroe, forwarding Ingalls's message: Gen. Grant to meet his family at Monroe, steamer Greyhound at his disposal (FM-R3a; row 5780/1; image-read)**
 
-Geo. D. Sheldon F {time: 6.30 PM} to [Colonel] are see  {tail: [signed] Chief [Quartermaster] [.] [Maj Genl U.S. Grant] leaves here at {time: 7 PM} to meet his family at [Monroe] [.] on his air rival there place the [Steam] her Greyhound at his dispose all [signed] roof us Ingalls [Brigadier General] S. H. Beckwith}
+Geo. D. Sheldon F {time: 6.30 PM} to [Colonel] are see webster Chief [Quartermaster] [.] [Maj Genl U.S. Grant] leaves here at {time: 7 PM} to meet his family at [Monroe] [.] on his air rival there place the [Steam] her Greyhound at his dispose all  {tail: [signed] roof us Ingalls [Brigadier General] S. H. Beckwith}
 
-Code-word tokens: H 12.
+Code-word tokens: H 11.
 
 **E230 | Page 295 | 5839 | mssEC 25 (obj 5952, pointer 5839), 25 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, for Fox: Rodgers, the brasses are worn again (FM-R3c; row 5839/2; image-read at 2400 px)**
 
@@ -1261,27 +1261,27 @@ Code-word tokens: H 19.
 
 **E240 | Page 240 | 5784 | mssEC 25 (obj 5952, pointer 5784), 30 Sept 1864 6.30 PM Ft Monroe, Sheldon to Maj. Eckert for Brig. Gen. Barnes, Washington, forwarding Surgeon D. W. Hand's report of yellow fever at Newbern (FM-R3d; row 5784/1; image-read at 2400 px)**
 
-Maj. Eckert Wash'n [Monroe] {time: 6.30 PM} [30] for [Brigadier General] [Washington] [.]s Surgeon D W. Hand [Report]'s that yell oh fever is raging in [Newbern] violently peken that he is used up and requires immediate aid [.] I will send him all the Dock Tours I can [,] but the [Wounded] are arriving [Today] in large numbers and I am short myself [.] I Can forward Dock tears from this point with rapidity [.] he must have by this time fall supplies from purveyor in [New York] [.] allow me to suggest a Dock Tour William H. Freeman of [Philadelphia] who has had great experience in the disease asa good man to send to his aid [.] a most rigid quarantine established at this [Post] by the [Command = Er (-ed, -ing)]ing [General] of district E. McClellan &C. Geo. D. Sheldon
+Maj. Eckert Wash'n [Monroe] {time: 6.30 PM} [30] for [Brigadier General] [Washington] [.]s Surgeon D W. Hand [Report]'s that yell oh fever is raging in [Newbern] violently [,] that he is used up and requires immediate aid [.] I will send him all the Dock Tours I can [,] but the [Wounded] are arriving [Today] in large numbers and I am short myself [.] I Can forward Dock tears from this point with rapidity [.] he must have by this time fall supplies from purveyor in [New York] [.] allow me to suggest a Dock Tour William H. Freeman of [Philadelphia] who has had great experience in the disease asa good man to send to his aid [.] a most rigid quarantine established at this [Post] by the [Command = Er (-ed, -ing)]ing [General] of district E. McClellan &C. Geo. D. Sheldon
 
-Code-word tokens: H 21.
+Code-word tokens: H 22.
 
 **E241 | Page 119 | 5663 | mssEC 25 (obj 5952, pointer 5663), 10 May 1864 4.30 PM Ft Monroe, Sheldon to Maj. Eckert for Fulton and Craig: the fight of 9 May near Bermuda Hundred, Kautz at Hicksford, list of wounded offered (FM-R3d; row 5663/1; image-read at 2400 px)**
 
-[Monroe] {date: May 10} {time: 4.30 PM} for Fulton and Craig [.] [Bermuda Hundred] hundreds {date: May 10} [.] [Fight ing Fought]ing Commenced yesterday {time: 12} and Continued till night between [General] Heckmans [Brigade] and several other [Brigade]'s under [W. F. Smith] [,] and [Beauregard]'s [Force]'s he [Command = Er (-ed, -ing)]ing in [5] [.] during the [Fight ing Fought] our [Force]'s drove the [Enemy] back [3] [Mile]'s nearly into [Petersburg] [.] we hold the [Rail Road] between [Richmond] and [Petersburg] [.] [General] Kautz [Cavalry] succeeded in [Destroy (-ed, -ing)]ing some portion of [Petersburg] and [Weldon] [North Carolina] [Rail Road] at Hicks ford [.] [Capture (-ed, -ing)]ed many prisoners [,] [20] go to [Monroe] [Today] including [Captain] and Lieutenant  {tail: [signed] J. C. Rowe [.] here follows list of [Wounded] [Front] [Petersburg] [,] shall I send it in English please answer in time Geo Sheldon}
+[Monroe] {date: May 10} {time: 4.30 PM} for Fulton and Craig [.] [Bermuda Hundred] hundreds {date: May 10} [.] [Fight ing Fought]ing Commenced yesterday {time: 12} and Continued till night between [General] Heckmans [Brigade] and several other [Brigade]'s under [W. F. Smith] [,] and [Beauregard]'s [Force]'s he [Command = Er (-ed, -ing)]ing in person [.] during the [Fight ing Fought] our [Force]'s drove the [Enemy] back [3] [Mile]'s nearly into [Petersburg] [.] we hold the [Rail Road] between [Richmond] and [Petersburg] [.] [General] Kautz [Cavalry] succeeded in [Destroy (-ed, -ing)]ing some portion of [Petersburg] and [Weldon] [North Carolina] [Rail Road] at Hicks ford [.] [Capture (-ed, -ing)]ed many prisoners [,] [20] go to [Monroe] [Today] including [Captain] and Lieutenant  {tail: [signed] J. C. Rowe [.] here follows list of [Wounded] [Front] [Petersburg] [,] shall I send it in English please answer in time Geo Sheldon}
 
-Code-word tokens: H 49, I 1.
+Code-word tokens: H 48, C 1.
 
 **E242 | Page 138 | 5682 | mssEC 25 (obj 5952, pointer 5682), 21 May 1864 3.45 PM Hd Qrs Gen. Butler, R. O'Brien to Maj. Eckert: operators at the Bermuda front, signal field cord wanted (FM-R3d; row 5682/0; image-read at 2400 px)**
 
-3.45 P. M. major I have had private Huyck Camp [3] [New York] detailed as operator for outer line [Entrench (-ed, -ing)]'s [.] Snow is at [Bermuda] landing Nichols at [Gen Q. A. Gillmore]'s Collings at [W. F. Smith]'s & Homan have [.] all have to do considerable night duty & all work cheerfully & well we have incessant [Artillery] practice & considerable musketry [Fight ing Fought]ing without any apparent result except that we must keep considerable [Rebel] force employed [.] all is apparently healthy [.] line to Jamestown impracticable at present [.] [Qr Master Genl U.S.]'s message yesterday came from [Washington] in [2] hours [50] minutes [.] if you have few miles signal field cord to spare it might be useful here in hurried operations this is a very woody country awful road just now R OBrien
+3.45 P. M. major I have had private Huyck Camp [3] [New York] detailed as operator for outer line [Entrench (-ed, -ing)]'s [.] Snow is at Bermuda landing Nichols at [Gen Q. A. Gillmore]'s Collings at [W. F. Smith]'s & Homan have [.] all have to do considerable night duty & all work cheerfully & well we have incessant [Artillery] practice & considerable musketry [Fight ing Fought]ing without any apparent result except that we must keep considerable [Rebel] force employed [.] all is apparently healthy [.] line to Jamestown impracticable at present [.] [Qr Master Genl U.S.]'s message yesterday came from [Washington] in [2] hours [50] minutes [.] if you have few miles signal field cord to spare it might be useful here in hurried operations this is a very woody country awful road just now R OBrien
 
-Code-word tokens: H 18, I 1.
+Code-word tokens: H 18.
 
 **E243 | Page 282 | 5826 | mssEC 25 (obj 5952, pointer 5826), 10 Dec 1864 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Col. G. W. Bradley, chief quartermaster: two messages signed Wm L. James, Capt. and Asst. Quartermaster, steamer Brady, the Matilda, a sea-going steamer for horses (FM-R3d; row 5826/1; image-read at 2400 px)**
 
-S. H. Beckwith City Point. {time: 8 PM} for [Colonel] G. W. Bradley chief [Quartermaster] [City Point] [.] [7] [25] P. M wranglams relative to [Steam]er Brady just received [.] She arrived here at [19] and went on to [Washington] [.] The Matilda is loading with [Cavalry] at Ports mouth for Burr muddy [100]s  {tail: [signed] William L James [Captain] a [Quartermaster] another to same [.] If you have a way suit able togoto see with [Horse]'s please order her here at once [.] would like her to [Report] as early [Tomorrow] morning as possible If the S Cloud is there she would suit Please answer [signed] William L. James [Captain] and assist [Quartermaster] yours Geo. D. Sheldon}
+S. H. Beckwith City Point. {time: 8 PM} for [Colonel] G. W. Bradley chief [Quartermaster] [City Point] [.] [7] [25] P. M wranglams relative to [Steam]er Brady just received [.] She arrived here at [4.15] and went on to [Washington] [.] The Matilda is loading with [Cavalry] at Ports mouth for Burr muddy [100]s  {tail: [signed] William L James [Captain] a [Quartermaster] another to same [.] If you have a way suit able togoto see with [Horse]'s please order her here at once [.] would like her to [Report] as early [Tomorrow] morning as possible If the S Cloud is there she would suit Please answer [signed] William L. James [Captain] and assist [Quartermaster] yours Geo. D. Sheldon}
 
-Code-word tokens: H 27.
+Code-word tokens: H 26.
 
 **E244 | Page 252 | 5796 | mssEC 25 (obj 5952, pointer 5796), 17 Oct 1864 (ledger date) Washington; the message is Schofield (Chattanooga, 17 Oct 3 PM) to C. A. Dana, Hood's movements; addressee line 'Dealy F' unread; in print OR I/39 pt 3 (FM-R3d; row 5796/0; image-read at 2400 px)**
 
@@ -1291,9 +1291,9 @@ Code-word tokens: H 23, C 5.
 
 **E245 | Page 225 | 5769 | mssEC 25 (obj 5952, pointer 5769), 10 July 1864 Ft Monroe, Sheldon to Maj. Eckert for the Secretary of the Navy, forwarding Acting Rear-Adm. S. P. Lee, flagship Malvern, Hampton Roads: pursuit of the Florida (FM-R3d; row 5769/0; image-read at 2400 px)**
 
-Maj. Eckert Washington Flag ship Malvern Hampton Roads {time: 9.30 AM} [By the way of] [Monroe] {time: 11 AM} {date: July 10} for [Secretary of Navy] [Washington] [.] at time of [Telegraph (-ed, -ing)]ing about Depredations of florida I [Telegraph (-ed, -ing)]d [Command = Er (-ed, -ing)] ants at [Philadelphia] [New York] and Boston [.] Have dispatched Jno toby towed to an offing by tug America [.] Have sent Monticello and Mount Vernon under Lieut. [Command = Er (-ed, -ing)]er Adams to cruise together this side Nantucket [.] Have required Shenandoah from Commodore Living stone but fear she will not be ready for a day or [2] [.] State of Georgia here broken down [.] shall dispatch the intelligence to [Beaufort] and block aids off [Wilmington]  {tail: [signed] [S. P. Lee] Yours etc. Geo D. Sheldon}
+Maj. Eckert Washington Flag ship Malvern Hampton Roads {time: 9.30 AM} [By the way of] [Monroe] {time: 11 AM} {date: July 10} for [Secretary of Navy] [Washington] [.] at time of [Telegraph (-ed, -ing)]ing about Depredations of florida I [Telegraph (-ed, -ing)]d [Command = Er (-ed, -ing)] ants at [Philadelphia] [New York] and Boston [.] Have dispatched [Ino] [to be] towed to an offing by tug America [.] Have sent Monticello and Mount Vernon under Lieut. [Command = Er (-ed, -ing)]er Adams to cruise together this side Nantucket [.] Have required Shenandoah from Commodore [Livingston] but fear she will not be ready for a day or [2] [.] State of Georgia here broken down [.] shall dispatch the intelligence to [Beaufort] and [blockades] off [Wilmington]  {tail: [signed] [S. P. Lee] Yours etc. Geo D. Sheldon}
 
-Code-word tokens: H 24.
+Code-word tokens: H 24, I 4.
 
 **E250 | Page 226 | 5770 | mssEC 25 (obj 5952, pointer 5770), 12 July 1864 Ft Monroe, Sheldon to Maj. Eckert, forwarding Maj. W. M. Este (A.D.C.) to the Secretary of War on the fight near Silver Spring; a clear period copy stands at pointer 10490, Page 348 (FM-R4a, 9 Oct 2026; row 5770/1; transcription-only, page image not viewed)**
 
@@ -1409,5 +1409,5 @@ Code-word tokens: H 14.
 
 Code-word tokens: H 12.
 
-Totals over the 213 entries: H 3627, C 30, I 19, M 29, U 10.
+Totals over the 213 entries: H 3620, C 31, I 22, M 30, U 10.
 <!-- decode.py: derived block ends -->

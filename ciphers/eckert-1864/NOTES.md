@@ -2851,3 +2851,26 @@ Bermuda gloss C from the print; E229 "Herald" plain (the New York Herald; decode
 Lead for readers: a Fort Monroe entry addressed "for" private names at a news hour (Fulton and Craig; 5662 "for Samuel Wilkeson, Tribune rooms")
 is a press telegram -- query Chronicling America for the next two days on a rare plain word before filing.
 Requests: hdl.huntington.org 14 (one token block 04:00-04:01 UTC); archive.org 4; be-api 7; loc.gov 15; Google Books 1 (429, stopped).
+
+## FIX-FM6 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM6, 04:22-04:4x UTC by `date -u`, offline. Carries the reading corrections of NOTES "FV-FM6a", AUDIT "FV-FM6b" s.5 and "FV-FM6c" s.5 into the readings through per-entry note lines in ciphertext.txt (transcription lines untouched; no key.md row edited; reading.md only by `decode.py --write`). No decoder change.
+
+| Entry | Token | Before | After (note) | Grade before -> after | Source |
+|---|---|---|---|---|---|
+| E217 | address "Washington" | `[Volunteer]` | as written (`plain`) | H 25 -> 24 | FV-FM6a |
+| E219 | "webster", "Chief" | `[signed] Chief`-tail, "webster" eaten | both as written (`plain`) | H 12 -> 11 | FV-FM6a |
+| E226 | "White horse", "wharf" | `[Report] horse`, `[Today]` | `[White House]` (`merge`+`gloss:I`), wharf plain | H 13 -> H 11, I 1 | FV-FM6a |
+| E227 | "William", "Weasler" | `[100]`, as written | William plain; `[Steamer]` (`gloss:H`) | H 18 -> 18 (no change in count) | FV-FM6a |
+| E228 | "wise" | `wise` already plain in reading | `plain: wise` (decode unchanged) | H 7 | FV-FM6b s.5 |
+| E229 | "Herald", "up tooth feeble" | `[Ewell]`; `up tooth [10]` | Herald plain; `[up to the 10th]` (`merge`+`gloss:M`) | H 11 -> H 9, M 1 | FV-FM6b s.5 |
+| E240 | "peken" | as written | `[,]` (`variant: peken=pekin`) | H 21 -> 22 | FV-FM6b s.5 |
+| E241 | "person"; Bermuda gloss | `[5]`; gloss I | person plain; gloss C (the print) | H 49, I 1 -> H 48, C 1 | FV-FM6b s.5 |
+| E242 | "bermuda" | `gloss: bermuda=Bermuda:I` | `plain: bermuda` (gloss line removed) | H 18, I 1 -> H 18 | FV-FM6c s.5 |
+| E243 | "penny gallant" | `[19]` | `[4.15]` (`merge`+`gloss:H`) | H 27 -> 26 | FV-FM6c s.5 |
+| E245 | "Jno toby", "Living stone", "block aids" | as written | `[Ino] [to be]`, `[Livingston]`, `[blockades]` (`gloss:I`, 4 tokens) | H 24 -> H 24, I 4 | FV-FM6c s.5 |
+
+Not done: E240's "Barnes" (the image has "palsy Barnes grapes"; the word is absent from the transcription, which is never edited; the existing `note:` line keeps it, and no decoder note can insert a word). E245's "blockades" follows the clear copy; Lee's order to Dove says "blockaders" (FV-FM6c). Grade counts above are the decoder's, as in FIX-FM5; before-counts are from the pre-change reading.md (git diff).
+
+`python3 ciphers/eckert-1864/decode.py --write` then `--check` -> `reading.md is current`, exit 0; `decode_no2.py --check` and `decode_no9.py --check` -> current; `python3 -m unittest tools.tests.test_eckert_decode` -> OK.
+Propagation (rule 10): the second-opinions PROMPT-chatgpt-e219/e227/e228/e229/e240/e242/e243 already carry the corrected words (checked by grep: Herald, up to the [10]th, Newbern ... violently, [steamer], 4.15, Barnes, Bermuda); no E217/E226/E241/E245 prompt exists (N1). status.json: three stale phrases updated (E243 reading_version, E229 gap, E240 gap); no class or depth changed. `tools/depth_check.py` -> passes, "unique solves (N3+ and D2+): 90 -- D4 5, D3 51, D2 34".

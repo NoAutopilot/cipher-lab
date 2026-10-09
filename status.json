@@ -8683,7 +8683,7 @@
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM6c)' section 4",
-      "reading_version": "FM-R3d 9 Oct 2026 (reading.md), as corrected in AUDIT (FV-FM6c) section 3 ('penny gallant' = 4.15, not [19])",
+      "reading_version": "FM-R3d 9 Oct 2026 (reading.md), as corrected in AUDIT (FV-FM6c) section 3 ('penny gallant' = 4.15, not [19]); reading.md carries [4.15] since FIX-FM6 9 Oct 2026",
       "unresolved_spans": "'penny gallant' read as the time 4.15 (M for the composition); 'way' before 'suit able' (plain, perhaps a slip)",
       "depth_unread": {
         "names_codes": "0",
@@ -8945,7 +8945,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon to Maj. Eckert, 14 Dec 1864, the New York Herald's despatch on Foster is wrong: no contact with Sherman, Pocotaligo bridge not destroyed (E229)",
       "line": "Read at grade H with Cipher No. 1: on 14 Dec 1864 the Fort Monroe telegraph office told Major Eckert that the press despatch in the New York Herald of the 13th about General Foster was wrong: up to the 10th Foster had not communicated with Sherman, nor had the Pocotaligo bridge been destroyed. The despatch it contradicts is printed in the Washington Evening Star and the New-York Daily Tribune of 13 Dec 1864; this telegram was not located in the Official Records (ser. I vol. 44), the Huntington's full-text search or the press searched (9 Oct 2026).",
-      "gap": "N3: Grant Papers vol. 13 unreachable by identifier; the Herald's own 13 Dec text and the Hilton Head source of the denial unread; 'Herald' is plain (decoder reads [Ewell]); 'up tooth [10]' and the signer 'L F Shell' M",
+      "gap": "N3: Grant Papers vol. 13 unreachable by identifier; the Herald's own 13 Dec text and the Hilton Head source of the denial unread; 'Herald' is plain and 'up to the 10th' is M (both now in reading.md, FIX-FM6 9 Oct 2026); the signer 'L F Shell' M",
       "depth": "D3",
       "completeness": "10 H of 10 code-word groups (Herald plain; 'up tooth' M)",
       "phrases": [
@@ -8986,7 +8986,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Asst. Surg. E. McClellan via Sheldon to Maj. Eckert for Surgeon General Barnes, 30 Sept 1864, yellow fever raging at Newbern, Dr. W. H. Freeman proposed (E240)",
       "line": "Read at grade H with Cipher No. 1: on 30 Sept 1864 the Fort Monroe medical officer E. McClellan forwarded to the Surgeon General Surgeon D. W. Hand's report that yellow fever was raging violently in Newbern and that Hand was used up, offered all the doctors he could spare though wounded were arriving in large numbers, suggested Dr. William H. Freeman of Philadelphia, experienced in the disease, and reported a rigid quarantine at Fort Monroe. Not located in the Official Records (ser. I vol. 42 pts 2-3), Butler's correspondence, the Huntington's full-text search or the press searched (9 Oct 2026); Stanton's bulletin of the same evening reports the epidemic in other words.",
-      "gap": "N3: Surgeon General's letters received (RG 112) and the Medical and Surgical History unread; Grant Papers vol. 12 identifier unverified; 'peken' is 'pekin' (comma) on the image",
+      "gap": "N3: Surgeon General's letters received (RG 112) and the Medical and Surgical History unread; Grant Papers vol. 12 identifier unverified; 'peken' is 'pekin' (comma) on the image, now read so in reading.md (FIX-FM6 9 Oct 2026)",
       "depth": "D3",
       "completeness": "22 H of 22 code-word groups (pekin read from the image)",
       "phrases": [

@@ -1966,6 +1966,9 @@ street wharf growl unity send the mail boats to
 Charles City landing on the Bergen Yoke H B
 Blood pilgrim A Vincent Cloudy windy appearance of rain
 Geo D Sheldon
+plain: wharf
+merge: white+horse
+gloss: whitehorse=White_House:I
 
 ### E227 | Page 264 | 5808 | mssEC 25 (obj 5952, pointer 5808), 6 Nov 1864 Ft Monroe, Sheldon to John Horner, New York, for Capt. D. Stinson: Ninth Vermont draft (FM-R3b; row 5808/1; image-read at 2400 px)
 John Horner New York
@@ -1975,6 +1978,8 @@ ninth Abel will leave here at Nancy
 on Weasler Perit to swindle their wharton
 Youth William L James pilgrim and Vinton
 Geo D Sheldon
+plain: william
+gloss: weasler=Steamer:H
 
 ### E228 | Page 270 | 5814 | mssEC 25 (obj 5952, pointer 5814), 1 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, for the Chief of the Bureau of Ordnance: torpedoes invented by Mr Woods (FM-R3b; row 5814/1; image-read at 2400 px)
 Maj Eckert Di
@@ -1983,6 +1988,7 @@ are the torpid does here the same as those
 invented by Mister Woods sugar If not please send
 me federal of the latter youth Niagara Florence lovely
 Geo D Sheldon
+plain: wise
 
 ### E229 | Page 289 | 5833 | mssEC 25 (obj 5952, pointer 5833), 14 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington: the press despatch on Foster and Pocotaligo bridge (FM-R3b; row 5833/0; image-read at 2400 px)
 Maj. Eckert
@@ -1993,6 +1999,9 @@ feeble Lonesome had not plated with Kidnap
 nor has Pocotaligo patron been questioned Webster
 L F Shell done cloudy this morning
 Geo. D. Sheldon
+plain: herald
+merge: up+tooth+feeble
+gloss: uptoothfeeble=up_to_the_10th:M
 
 ### E210 | Page 93 | 5637 | mssEC 25 (obj 5952, pointer 5637), 28 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for Capt. H. S. Taft, signal officer, Washington; signer L. B. Norton, chief signal officer (FM-R3a, 9 Oct 2026; row 5637/2; image-read)
 Maj Eckert Di  Ft Monroe Apr 28th 1864
@@ -2085,6 +2094,7 @@ unity Shelby Wright has flag woodbury spit
 zodiac I think there wilby whimpers enough
 for his pontiac webster Ingalls palate vincent
 Geo. D. Sheldon
+plain: washington
 
 ### E218 | Page 224 | 5768 | mssEC 25 (obj 5952, pointer 5768), 9 July 1864 6 PM City Point, S. H. Beckwith to Sheldon at Ft Monroe, forwarding Grant's message to the commanding officer, Fort Monroe, on the 19th Corps (FM-R3a; row 5768/0; image-read)
 City Point July 9 / 64
@@ -2104,6 +2114,7 @@ his family at appian zebra on his air
 rival there place the weasel her Greyhound at
 his dispose all yoke roof us Ingalls palate
 S. H. Beckwith
+plain: webster chief
 
 ### E230 | Page 295 | 5839 | mssEC 25 (obj 5952, pointer 5839), 25 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, for Fox: Rodgers, the brasses are worn again (FM-R3c; row 5839/2; image-read at 2400 px)
 Maj Eckert Di
@@ -2295,6 +2306,7 @@ upton by the polkaing shelby of district E. McClellan &C.
 Geo. D. Sheldon
 plain: oh fever william
 note: image (2400 px) reads 'palsy Barnes grapes'; Barnes is missing from the Huntington transcription, left as transcribed
+variant: peken=pekin
 
 ### E241 | Page 119 | 5663 | mssEC 25 (obj 5952, pointer 5663), 10 May 1864 4.30 PM Ft Monroe, Sheldon to Maj. Eckert for Fulton and Craig: the fight of 9 May near Bermuda Hundred, Kautz at Hicksford, list of wounded offered (FM-R3d; row 5663/1; image-read at 2400 px)
 Maj Eckert Di  Ft Monroe May 10 1864
@@ -2311,7 +2323,8 @@ to appian wedge including princess and Lieutenant Webster J. C.
 Rowe zodiac here follows list of Wilkes reptile Gabriel Pekin
 shall I send it in English please answer in time
 Geo Sheldon
-gloss: bermuda=Bermuda_Hundred:I
+gloss: bermuda=Bermuda_Hundred:C
+plain: person
 
 ### E242 | Page 138 | 5682 | mssEC 25 (obj 5952, pointer 5682), 21 May 1864 3.45 PM Hd Qrs Gen. Butler, R. O'Brien to Maj. Eckert: operators at the Bermuda front, signal field cord wanted (FM-R3d; row 5682/0; image-read at 2400 px)
 Hd Qrs Genl Butler May 21 . 1864
@@ -2332,8 +2345,7 @@ miles signal field cord to spare it might
 be useful here in hurried operations this is
 a very woody country awful road just now
 R OBrien
-plain: snow
-gloss: bermuda=Bermuda:I
+plain: snow bermuda
 
 ### E243 | Page 282 | 5826 | mssEC 25 (obj 5952, pointer 5826), 10 Dec 1864 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Col. G. W. Bradley, chief quartermaster: two messages signed Wm L. James, Capt. and Asst. Quartermaster, steamer Brady, the Matilda, a sea-going steamer for horses (FM-R3d; row 5826/1; image-read at 2400 px)
 Ft Monroe Dec. 10 - 1864
@@ -2353,6 +2365,8 @@ Walrus William L. James princess and assist vincent yours
 Geo. D. Sheldon
 plain: william
 split: harsh
+merge: penny+gallant
+gloss: pennygallant=4.15:H
 
 ### E244 | Page 252 | 5796 | mssEC 25 (obj 5952, pointer 5796), 17 Oct 1864 (ledger date) Washington; the message is Schofield (Chattanooga, 17 Oct 3 PM) to C. A. Dana, Hood's movements; addressee line 'Dealy F' unread; in print OR I/39 pt 3 (FM-R3d; row 5796/0; image-read at 2400 px)
 Washington Oct 17 / 64
@@ -2392,6 +2406,9 @@ zebra shall dispatch the intelligence to Bible and
 block aids off Hamlet webster Neptune Yours etc.
 Geo D. Sheldon
 plain: florida georgia america vernon adams washington flag
+merge: block+aids
+merge: living+stone
+gloss: jno=Ino:I toby=to_be:I livingstone=Livingston:I blockaids=blockades:I
 
 ### E250 | Page 226 | 5770 | mssEC 25 (obj 5952, pointer 5770), 12 July 1864 Ft Monroe, Sheldon to Maj. Eckert, forwarding Maj. W. M. Este (A.D.C.) to the Secretary of War on the fight near Silver Spring; a clear period copy stands at pointer 10490, Page 348 (FM-R4a, 9 Oct 2026; row 5770/1; transcription-only, page image not viewed)
 Fortress Monroe July 12 / 64
