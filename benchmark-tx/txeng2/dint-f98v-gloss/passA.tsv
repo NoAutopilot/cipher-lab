@@ -1,0 +1,249 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T	t	M	line start; after prose "Justice"; tall bar with stem, flourish/underline joins it
+L01	2	NEW:tt (two verticals, one crossbar)	#	M	tt form
+L01	3	o	0	M	smallish round
+L01	4	m			z-tail
+L01	5	sq		H	
+L01	6	#		H	
+L01	7	1		H	
+L01	8	z		M	small z with tail
+L01	9	0		H	
+L01	10	0'		H	cross above zero
+L01	11	3	z	M	z/3 with hooked top
+L01	12	1		H	
+L01	13	a		H	alpha form, crossed
+L01	14	L		H	
+L01	15	4		H	
+L01	16	+		H	
+L01	17	0		H	
+L01	18	a		H	
+L01	19	m		M	ink blot on m
+L01	20	NEW:brace (tall curl with descender)	?	L	line end; at crop edge
+L02	1	a		H	line start
+L02	2	m		H	
+L02	3	0		H	
+L02	4	Z	z	M	large z
+L02	5	1		H	
+L02	6	f		H	
+L02	7	1		H	
+L02	8	a		H	plain a
+L02	9	a		H	alpha form
+L02	10	p	x	M	x with loop at top right (xp)
+L02	11	4		H	
+L02	12	sq		H	
+L02	13	v		H	
+L02	14	L	1	M	
+L02	15	0		H	
+L02	16	f		H	
+L02	17	v'	y	M	vertical stroke rising from top bar
+L02	18	4		H	underlined
+L02	19	4		M	triangle with flag, cross/underline below
+L02	20	0		H	
+L02	21	NEW:tt (two verticals, one crossbar)	#	M	tt form
+L02	22	v'	y	M	vertical stroke through top
+L02	23	#		H	double-barred
+L02	24	0		H	interlinear mark below
+L02	25	sq		H	rhombus-like
+L02	26	NEW:tt (two verticals, one crossbar)	#	M	tt form
+L02	27	m		H	
+L02	28	1		H	
+L02	29	w		H	
+L02	30	v		H	
+L02	31	0'		H	stem with cross above
+L02	32	sq		H	
+L02	33	0		H	
+L02	34	y		H	after skipped prose "en fin de ne vous par"; psi cup with cross below
+L02	35	4		H	large
+L02	36	a		H	
+L02	37	m		H	
+L02	38	1		H	
+L02	39	4		H	
+L02	40	0'		H	cross above
+L02	41	+		H	
+L02	42	1		H	line end
+L03	1	m'		M	line start; accent mark above m
+L03	2	1		H	
+L03	3	p		H	xp form
+L03	4	4		H	
+L03	5	+		H	
+L03	6	f		H	
+L03	7	v'		M	vertical stroke above
+L03	8	0		H	
+L03	9	sq		H	
+L03	10	m		H	
+L03	11	L		H	
+L03	12	Z	z	M	large z, no bar
+L03	13	v		H	
+L03	14	y		H	Yf form (Y with cross stroke)
+L03	15	0'		H	cross above
+L03	16	NEW:A (pointed lambda/caret a)	a	L	
+L03	17	m		H	
+L03	18	1		H	
+L03	19	NEW:tt (two verticals, one crossbar)	#	M	tt form
+L03	20	0		H	
+L03	21	4		H	
+L03	22	v		H	
+L03	23	1		H	
+L03	24	sq		H	
+L03	25	m		H	
+L03	26	p		H	xp form
+L03	27	0		H	
+L03	28	y		H	Yf form
+L03	29	#		H	double-barred
+L03	30	w		H	bar extends right
+L03	31	y		H	psi cup form
+L03	32	1		H	
+L03	33	v'		M	stem above
+L03	34	0'		M	tall stem above, crossbar faint
+L03	35	4		H	
+L03	36	m		H	
+L03	37	sq		H	
+L03	38	0		H	
+L03	39	f		H	
+L03	40	t	+	M	cross with lower element; interlinear ink below
+L03	41	1		H	
+L03	42	m		H	
+L03	43	c		H	
+L03	44	3		H	
+L03	45	NEW:theta (0 with bar inside)	0	M	
+L03	46	a'	a	M	accent above, may be gloss mark
+L03	47	y		H	psi cup form
+L03	48	p		H	
+L03	49	w		H	
+L03	50	0		H	
+L03	51	m		M	two humps + z tail
+L03	52	1	.	M	vertical with dot under (!)
+L03	53	Z	z	M	interlinear m below
+L03	54	0'		M	line end; o with stem above
+L04	1	1		H	line start
+L04	2	sq		H	
+L04	3	NEW:tt (two verticals, one crossbar)	#	M	tt form; small marks above
+L04	4	T	t	M	pi shape, one leg rises above bar
+L04	5	0'		H	looped stroke above
+L04	6	c		H	
+L04	7	y		H	psi cup form
+L04	8	p		H	xp form
+L04	9	m		H	
+L04	10	NEW:tt (two verticals, one crossbar)	+	M	cross plus slanted second stroke
+L04	11	a		H	
+L04	12	m		H	
+L04	13	4		H	
+L04	14	v'		M	stem above
+L04	15	NEW:brace (tall curl with descender)	?	L	may be interlinear letter crossing line
+L04	16	sq		H	
+L04	17	m		H	
+L04	18	w		H	
+L04	19	1		H	
+L04	20	NEW:A (pointed lambda/caret a)	a	M	interlinear f below
+L04	21	m		H	
+L04	22	4		H	
+L04	23	.		M	baseline dot
+L04	24	m		H	
+L04	25	0		H	
+L04	26	Z	z	M	
+L04	27	v		H	
+L04	28	m		H	
+L04	29	a		H	alpha form
+L04	30	4		M	triangle form, interlinear cross below
+L04	31	1		H	
+L04	32	sq		H	
+L04	33	#		H	double-barred
+L04	34	0		H	
+L04	35	0'		H	
+L04	36	sq		M	small tick at corner
+L04	37	1		H	
+L04	38	L		H	
+L04	39	f		H	
+L04	40	a		H	
+L04	41	m		H	
+L04	42	0		H	
+L04	43	4		H	
+L04	44	a		M	interlinear B below
+L04	45	m		H	
+L04	46	1		H	
+L04	47	sq'	sq	M	stroke above, may be gloss ink
+L04	48	0	0'	M	page fold line crosses it
+L04	49	v		H	
+L04	50	w		H	line end
+L05	1	m		M	line start; two humps + z tail
+L05	2	p		H	xp form
+L05	3	NEW:tt (two verticals, one crossbar)	#	M	tt form
+L05	4	m		H	gloss words above
+L05	5	4		H	
+L05	6	L		H	
+L05	7	0		H	
+L05	8	w		H	
+L05	9	sq		H	
+L05	10	0'		M	tall stem, no clear cross
+L05	11	w		M	gloss p above crosses it
+L05	12	y		H	psi cup form
+L05	13	NEW:tt (two verticals, one crossbar)	#	M	gloss letters above
+L05	14	.		M	baseline dot
+L05	15	sq		H	
+L05	16	1		M	dot above (maybe gloss)
+L05	17	m		H	
+L05	18	0'		H	cross above
+L05	19	v	y	L	long descender below line
+L05	20	t	L	M	cross on baseline bar
+L05	21	y		H	Yf form
+L05	22	NEW:tt (two verticals, one crossbar)	#	M	accent above
+L05	23	m		H	
+L05	24	NEW:tt (two verticals, one crossbar)	#	M	
+L05	25	NEW:u (open round bowl)	v	M	
+L05	26	1		H	
+L05	27	c		H	
+L05	28	y		M	y-letter form, accent above
+L05	29	f		H	
+L05	30	4		H	
+L05	31	L		H	
+L05	32	0		H	
+L05	33	m		H	
+L05	34	v'		M	stem above
+L05	35	1		H	
+L05	36	y		H	Yf form
+L05	37	v		H	
+L05	38	f		H	
+L05	39	m		H	
+L05	40	#		H	double-barred
+L05	41	1		H	
+L05	42	Z	z	M	
+L05	43	y		H	psi cup form
+L05	44	y		H	Yf form
+L05	45	sq'	sq	M	vertical stroke above left corner
+L05	46	L		H	
+L05	47	0		H	
+L05	48	m		H	
+L05	49	w		H	
+L05	50	#		H	
+L05	51	1		H	line end
+L06	1	v	NEW:v with underbar	M	line start; v with base stroke
+L06	2	m		H	
+L06	3	p		H	xp form
+L06	4	m		H	
+L06	5	w		H	
+L06	6	L		H	
+L06	7	NEW:tt (two verticals, one crossbar)	#	M	
+L06	8	0		H	
+L06	9	4		H	
+L06	10	v		H	
+L06	11	f		H	
+L06	12	y		H	psi cup form
+L06	13	sq		H	
+L06	14	m		H	
+L06	15	4		M	triangle with cross below
+L06	16	NEW:q (round closed loop on stem)	y	M	curl above (gloss?)
+L06	17	w		H	
+L06	18	0		H	
+L06	19	v		H	
+L06	20	-:-		H	
+L06	21	4		H	
+L06	22	1		H	
+L06	23	v		H	
+L06	24	m		H	
+L06	25	NEW:q (round closed loop on stem)	y	M	
+L06	26	0		H	
+L06	27	y		H	Yf form with loop
+L06	28	1		H	
+L06	29	c		H	
+L06	30	v		H	
+L06	31	+	t	M	line end; prose "de penser bonne ..." follows
