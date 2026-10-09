@@ -30,6 +30,13 @@ Checks, all read from the spec's "judge" block (missing keys are skipped):
                 check then folds by keeping only those characters, case-sensitive (an upper-case letter is its own
                 letter), and the 4-gram's add-k runs over len(alphabet) letters instead of 26; the corpora must be
                 written in that alphabet already (tools/data/ru19_soft). Absent: the a-z fold, unchanged.
+  --fragments K (MQS-SEGMENTER, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M18): also list the candidate's
+                plausible fragments (runs of >= K letters that tools/segmenter.py divides wholly into lexicon words, one
+                of >= 5 letters) from the spec's own corpus, beside the same list for a null: --fragments-null FILE, the
+                decode of the shuffled target (ARM-C1 rule; preferred), else 20 letter-shuffles of the candidate
+                (labelled so). A report beside the verdict: it never changes PASS/FAIL or the exit code. Shelf grade weak
+                (tools/tests/PREREG-MQS-SEGMENTER.md: fragment-letter precision 0.806 vs gate 0.90 on a decode with 8 of
+                26 key types wrong; 0/20 false fragments under a wholly wrong key). Must NOT flag: a wholly wrong decode.
 Verdict: PASS if every present check passes; exit 0. Otherwise FAIL, exit 1, with the failing checks named.
 The language model is a plain add-k 4-gram over letters; it is a gate, not a proof.
 """
@@ -428,6 +435,27 @@ def _judge(spec, text):
     return out
 
 
+def fragments_report(spec, text, K, null_text=None, shuffles=20):
+    """--fragments K: the candidate's fragment list (tools/segmenter.py) beside a null's fragment-letter count."""
+    import segmenter
+    j = spec.get("judge", {})
+    corpora = j.get("corpora") or LANG_CORPORA.get(j.get("language", ""), None)
+    if not corpora:
+        return {"K": K, "error": "no language or corpora in the judge block: no lexicon", "list": [], "letters": 0,
+                "null_letters": None, "null_kind": "none"}
+    lex = segmenter.Lexicon.from_texts([read_corpus(p) for p in corpora],
+                                       segmenter.SINGLE.get(str(j.get("language", ""))[:2], {"a"}))
+    fr = segmenter.fragments(text, lex, K)
+    if null_text is not None:
+        nl, kind = sum(x[1] for x in segmenter.fragments(null_text, lex, K)), "shuffled-target decode"
+    else:
+        rnd, L, xs = random.Random(1), list(fold(text)), []
+        for _ in range(shuffles):
+            rnd.shuffle(L); xs.append(sum(x[1] for x in segmenter.fragments("".join(L), lex, K)))
+        nl, kind = f"p95 {pct(sorted(xs), 0.95)} max {max(xs)}", f"{shuffles} letter-shuffles of the candidate"
+    return {"K": K, "list": fr, "letters": sum(x[1] for x in fr), "null_letters": nl, "null_kind": kind}
+
+
 def selftest():
     spec = {"judge": {"language": "en", "letters_min": 60, "letters_max": 400, "cribs": ["STREET"], "min_word_cover": 0.6,
                       "control_samples": 100}}
@@ -492,6 +520,10 @@ def main():
     ap.add_argument("--N", type=int, default=1000, help="--holdout window length in folded letters")
     ap.add_argument("--samples", type=int, default=200, help="--holdout windows per fold and real_p05 control samples")
     ap.add_argument("--alphabet", help="--holdout plaintext alphabet (judge-block 'alphabet' name or literal)")
+    ap.add_argument("--fragments", type=int, metavar="K", help="also list fragments of >= K letters (tools/segmenter.py) "
+                    "beside a null; a report, never changes the verdict")
+    ap.add_argument("--fragments-null", metavar="FILE", help="with --fragments: the decode of the shuffled target "
+                    "(ARM-C1 rule); default 20 letter-shuffles of the candidate")
     a = ap.parse_args()
     if a.selftest:
         selftest(); return
@@ -511,11 +543,23 @@ def main():
         text = "\n".join(l for l in text.splitlines() if not l.lstrip().startswith("#"))
     r = judge(spec, text)
     r["spec"] = spec.get("slug", a.spec)
+    if a.fragments:
+        nt = None
+        if a.fragments_null:
+            nt = "\n".join(l for l in Path(a.fragments_null).read_text(encoding="utf-8").splitlines()
+                           if not l.lstrip().startswith("#"))
+        r["fragments"] = fragments_report(spec, text, a.fragments, nt)
     if a.json:
         print(json.dumps(r, indent=1))
     else:
         for k, v in r["checks"].items():
             print(f"{'ok  ' if v['pass'] else 'FAIL'} {k}: {', '.join(f'{kk}={vv}' for kk, vv in v.items() if kk != 'pass')}")
+        if "fragments" in r:
+            fr = r["fragments"]
+            print(f"fragments K={fr['K']}: {fr['letters']} letters in {len(fr['list'])} fragments vs null "
+                  f"({fr['null_kind']}) {fr['null_letters']} (shelf weak; leads, not readings)")
+            for o, L, ws in fr["list"]:
+                print(f"  @{o} {L} {' '.join(ws)}")
         print("PASS" if r["pass"] else "FAIL", "-", r["spec"], "(a PASS is a gate for a verifier, not a reading; rule 10)")
     sys.exit(0 if r["pass"] else 1)
 

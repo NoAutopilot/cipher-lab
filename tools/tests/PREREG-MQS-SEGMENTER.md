@@ -50,3 +50,21 @@ All of A, B, B0 pass -> shelf grade `ok`; any miss -> `weak` with both numbers, 
 Results are appended below this line, never edited above it.
 
 ## Results
+
+Run 9 Oct 2026 06:33 UTC by date -u, `python3 tools/tests/segmenter_control_mqs.py` (seeds as above; deterministic).
+One crash fix before control B completed (a str passed to random.shuffle in the B0 key draw); control A's numbers were
+printed before the crash and are unchanged by the fix.
+
+- **A (segmentation, fr16 held-out, 20 x 500 letters): PASS.** Mean boundary F1 0.805 (min 0.428) vs letter-shuffle
+  null mean 0.324, max 0.414. Gate F1 >= 0.80 and > null max: met, narrowly (0.805).
+- **B (fragments, key wrong on 8 of 26 types): FAIL.** Fragment-letter precision 0.806 (1912/2373) vs gate 0.90; the
+  decodes' own letter accuracy is 0.697 (reported after the run, not a gate), so listed fragments are richer in right
+  letters than the decode as a whole, but not to the registered bar. Signal: target fragment letters > null p95 in
+  17/20 windows (gate 16: met). Per-window (target, null p95): (88,69) (132,34) (0,0) (67,45) (33,21) (278,64) (0,20)
+  (414,59) (14,0) (123,50) (63,32) (0,48) (34,0) (120,20) (42,20) (252,37) (165,16) (282,12) (138,12) (128,47).
+  The shuffled-decode null is not empty (p95 up to 69 letters): letter-shuffled French-frequency text does chain into
+  runs of short words around one 5-letter word.
+- **B0 (wholly wrong key): PASS.** 0/20 windows list any fragment (gate <= 2).
+
+Outcome (rule above): one gate missed -> `segmenter.py` and both wired options ship at shelf grade **weak**, both
+numbers on the shelf row; not re-briefed; nothing run on a target from it.

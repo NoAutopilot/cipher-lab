@@ -111,7 +111,9 @@ listed in word_values, containing a space, or 4+ letters long: it is its own wor
 value that only ever stands alone as a whole word, such as a sign for 'the', is counted as a word code too); with
 --line-breaks a line end is a break too. A job without word_sep has no word segmentation and is reported as such and
 skipped (--segment FILE, a plain text of the reading with spaces between words, supplies one: its letters are aligned
-to the reading's letters and its word ends are copied onto the tokens). Words are compared after folding case and
+to the reading's letters and its word ends are copied onto the tokens; --auto-segment LEX builds that text with
+tools/segmenter.py from an era lexicon, MQS-SEGMENTER 9 Oct 2026, shelf weak, tools/tests/PREREG-MQS-SEGMENTER.md:
+boundary F1 0.805 on held-out fr16 prose -- it can mis-divide, so a 'one-word' row under it is a lead, not a finding). Words are compared after folding case and
 accents, j->i and v->u. "Unrelated" = different stems: two words sharing their first 4 letters (or equal, under 4
 letters) count as ONE stem (cooperate/cooperation, with/without). With --lexicon (a tools/judge_plaintext.py corpus
 code such as en, fr16, es18, or a text file) only words found in that corpus's word types count, so a wrong value --
@@ -799,6 +801,15 @@ def segment_words(recs, job, line_breaks=False, segment_text=None):
     """(words, how): words = lists of sign records (letter/syllable values only, nulls dropped), or (None, why)."""
     uv = job.get('unkeyed_value', '?')
     units = [r for r in recs if r['kind'] == 'sign' and not r.get('null')]
+    auto = None
+    if isinstance(segment_text, tuple) and segment_text[:1] == ('auto',):  # --auto-segment LEX (MQS-SEGMENTER)
+        if job.get('word_sep'):
+            segment_text = None
+        else:
+            import segmenter
+            letters = ''.join(fold_word(r['value']) for r in units
+                              if r['value'] != uv and not is_word_code(r['value'], job))
+            segment_text, auto = segmenter.divided(letters, segment_text[2]), segment_text[1]
     if segment_text is not None:
         import difflib
         letters, owner = [], []
@@ -823,6 +834,8 @@ def segment_words(recs, job, line_breaks=False, segment_text=None):
             if id(r) in word_of:
                 groups.setdefault(word_of[id(r)], []).append(r)
         warn = '' if sm.ratio() >= 0.8 else '; WARNING: under 0.8, the segment text is not this reading'
+        if auto:
+            return list(groups.values()), f'--auto-segment {auto} (tools/segmenter.py, shelf weak; {sm.ratio():.3f} letter agreement)'
         return list(groups.values()), f'--segment file ({sm.ratio():.3f} letter agreement{warn})'
     sep = job.get('word_sep')
     if not sep:
@@ -1372,6 +1385,9 @@ def main(argv=None):
     ap.add_argument('--lexicon', help='with --consistency: count only words found in this corpus (a judge_plaintext '
                                       'corpus code, e.g. en, fr16, es18, or a text file)')
     ap.add_argument('--segment', help='with --consistency: a plain text of the reading with spaces between words')
+    ap.add_argument('--auto-segment', metavar='LEX', help='with --consistency: a job without word_sep is divided into '
+                    'words by tools/segmenter.py from this lexicon (a judge_plaintext corpus code or a text file); '
+                    'shelf weak (MQS-SEGMENTER); a job with word_sep keeps its own breaks')
     ap.add_argument('--line-breaks', action='store_true', help='with --consistency: a line end is a word break')
     ap.add_argument('--consistency-tsv', help='with --consistency: also write the per-code rows to this TSV file')
     ap.add_argument('--show', choices=['all', 'flagged'], default='flagged',
@@ -1406,6 +1422,9 @@ def main(argv=None):
         try:
             jobs = load_config(a.target, a)
             seg = open(a.segment, encoding='utf-8').read() if a.segment else None
+            if a.auto_segment and seg is None:
+                import segmenter
+                seg = ('auto', a.auto_segment, segmenter.Lexicon.load(a.auto_segment))
             consistency_report(a.target, jobs, load_lexicon(a.lexicon), a.line_breaks, seg, a.consistency_tsv, a.show)
         except SystemExit:
             raise
