@@ -1,0 +1,2 @@
+family	open_blind_sorts	nonblind_shown	note
+nevers-birago-1572	ASKS-118;birago-f168-no85-2026-10-02;birago-f117r-2026-10-03		seeded 9 Oct 2026 (MQS-SORTER) from ASKS.md row 118 and the unnumbered Birago sorter rows of 2 Oct (f.168 / no.85) and 3 Oct (f.117r); open_blind_sorts is a ;-list of sort ids, remove an id when its blind export is saved and landed; nonblind_shown is the UTC date a non-blind page or sheet for the family was first shown (blank = never); exports from a session starting after that date carry mode=keyed

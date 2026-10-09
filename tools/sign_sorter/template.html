@@ -238,11 +238,14 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 #ctx .box{overscroll-behavior:contain}
 @media (max-width:640px){.how{display:none}}   /* phone: the hint above the piles says the same; saves ~380 px of scrolling */
 @media (pointer:coarse){.t .badge.ok{pointer-events:none}.mouse-only{display:none}} .touch-only{display:none} @media (pointer:coarse){.touch-only{display:inline}}
+.pval{font-family:'IBM Plex Mono',monospace;font-weight:600;border:1px solid var(--ink);border-radius:4px;padding:0 5px;margin-right:6px}
+.banner{margin:6px 0;padding:6px 10px;border:2px solid var(--ink);border-radius:6px;font-weight:600}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <div class="wrap">
   <h1>__TITLE__</h1>
   <p class="lede">__LEDE__</p>
+  <p class="banner" id="banner" hidden></p>
   <div class="how">
     <div><b>Step 1 · Clean each pile</b>Look along a pile. <b style="display:inline;text-transform:none;letter-spacing:0">Tap</b> any sign that is not like the others: it moves to the "Taken out" tray at the bottom. Tap it there to put it back. When a pile looks right, press "This pile is done".</div>
     <div><b>See a sign larger</b>Press and hold a sign (or press "View larger" on a pile): it opens on its line, the sign in brackets, with Next and Previous.</div>
@@ -262,7 +265,9 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
       <label for="show">Show <select id="show"><option value="all">All piles</option><option value="todo">Still to do</option><option value="done">Done</option></select></label>
       <span class="seg" role="group" aria-label="Ink darkness"><button type="button" id="ink0" class="on">Ink: normal</button><button type="button" id="ink1">Darker</button><button type="button" id="ink2">Darkest</button></span>
       <label for="order">Order <select id="order"><option value="odd">Odd ones first</option><option value="page">Page order</option></select></label>
-    </div></details>
+      <label for="psort">Sort piles <select id="psort"><option value="size">By size</option><option value="name">By name</option></select></label>
+      <label for="gbv" id="gbvL" hidden><input type="checkbox" id="gbv"> Group by value</label>
+    </div><p class="hint" id="psortHelp">Tip from the CTTS transcription tool (Lasry, Apache-2.0): segment about 500 symbols, then classify in bulk, category by category. Sorting the piles by size or by mark category does the same here.</p></details>
     <section id="rank" hidden><h2 class="ftitle">Most useful first</h2><p class="sub" id="rankNote"></p><div class="tiles" id="rankTiles"></div></section>
     <details id="refBox" class="opts" hidden><summary id="refCap"></summary><div style="overflow:auto;max-height:70vh;background:var(--tile);border-radius:6px;margin-top:6px"><img id="refImg" alt="Reference sheet" style="max-width:none;display:block"></div><p class="hint">Scroll the sheet sideways if it is wide; it stays open while you sort.</p></details>
     <section id="focus" hidden><h2 class="ftitle">Check these first</h2><p class="sub" id="focusNote"></p><div class="tiles" id="focusTiles"></div></section>
@@ -430,12 +435,23 @@ function attachPress(el, onTap, onHold){
 }
 
 function barBottom(){ const r = document.querySelector('.bar').getBoundingClientRect(); return Math.max(0, r.bottom); }
+const VAL = DATA.values || {}, MARKCAT = DATA.markCat || {};
+function pileCmp(a, b){
+  const m = $('psort').value, base = (a.isNew - b.isNew) || (focusPile[b.id] || 0) - (focusPile[a.id] || 0);
+  if (m === 'name') return base || a.id.localeCompare(b.id, undefined, {numeric: true});
+  if (m === 'mark') return base || (MARKCAT[a.id] || '~').localeCompare(MARKCAT[b.id] || '~') || (baseCount[b.id] || 0) - (baseCount[a.id] || 0) || a.id.localeCompare(b.id);
+  if (m === 'value') return base || ((VAL[a.id] || {}).g || '~').localeCompare((VAL[b.id] || {}).g || '~') || a.id.localeCompare(b.id);
+  return base || (baseCount[b.id] || 0) - (baseCount[a.id] || 0) || a.id.localeCompare(b.id);
+}
 function render(){
   const show = $('show').value;
   const piles = allPiles();
   const famTotals = {};
   piles.forEach(p => { famTotals[p.family] = (famTotals[p.family] || 0) + membersOf(p.id).length; });
-  const fams = famOrder.concat(Object.keys(famTotals).filter(f => !(f in baseFam)).sort());
+  let fams = famOrder.concat(Object.keys(famTotals).filter(f => !(f in baseFam)).sort());
+  const gbv = DATA.nonblind && $('gbv').checked, groupOf = p => gbv ? ((VAL[p.id] || {}).g || '?') : p.family;
+  if (gbv){ fams = [...new Set(piles.map(groupOf))].sort(); Object.keys(famTotals).forEach(k => delete famTotals[k]);
+    piles.forEach(p => { famTotals[groupOf(p)] = (famTotals[groupOf(p)] || 0) + membersOf(p.id).length; }); }
   const list = $('list');
   // Keep the person's place: the first pile on screen stays where it was, and a half-typed note survives.
   const ae = document.activeElement;
@@ -446,14 +462,14 @@ function render(){
   list.textContent = '';
   for (const f of fams){
     if (!(f in famTotals)) continue;
-    const ps = piles.filter(p => p.family === f)
+    const ps = piles.filter(p => groupOf(p) === f)
       .map(p => ({...p, members: membersOf(p.id)}))
       .filter(p => p.members.length || asideOf(p.id).length || (p.isNew && !SPECIAL.has(p.id)))
-      .sort((a, b) => (a.isNew - b.isNew) || (focusPile[b.id] || 0) - (focusPile[a.id] || 0) || (baseCount[b.id] || 0) - (baseCount[a.id] || 0) || a.id.localeCompare(b.id))
+      .sort(pileCmp)
       .filter(p => show === 'all' || (show === 'todo' ? !statusOf(p.id) : !!statusOf(p.id)));
     if (!ps.length) continue;
     const sec = document.createElement('section'); sec.className = 'fam';
-    const h = document.createElement('h2'); h.textContent = 'Family ' + f; sec.append(h);
+    const h = document.createElement('h2'); h.textContent = gbv ? 'Value ' + f + (f === 'I' ? ' (I and J)' : f === 'U' ? ' (U and V)' : '') : 'Family ' + f; sec.append(h);
     const sub = document.createElement('p'); sub.className = 'sub';
     sub.textContent = ps.length + ' pile' + (ps.length > 1 ? 's' : '') + ' shown, ' + famTotals[f] + ' tiles in this family'; sec.append(sub);
     ps.forEach(p => sec.append(pileEl(p, piles)));
@@ -575,7 +591,8 @@ function pileEl(p, piles){
   chip.textContent = status === 'same' ? 'done' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
   const big = btn('View larger', false, () => { const m = p.members.concat(aside); if (m.length) showCtx(m[0], p.id); });
   big.className = 'big'; big.title = 'See this pile’s signs larger, on their lines, one at a time';
-  ph.append(nm, ct, chip, big); el.append(ph); el.id = 'pile_' + domKey(p.id); el.dataset.pile = p.id;
+  ph.append(nm); if (DATA.nonblind && VAL[p.id]){ const vv = document.createElement('span'); vv.className = 'pval'; vv.textContent = VAL[p.id].v; vv.title = 'Key value (non-blind view)'; ph.append(vv); }
+  ph.append(ct, chip, big); el.append(ph); el.id = 'pile_' + domKey(p.id); el.dataset.pile = p.id;
   const near = (byBase[p.id] && byBase[p.id].near) || [];
   if (near.length){ const nr = document.createElement('div'); nr.className = 'near'; nr.append('Possibly similar (computer’s guess, often wrong):');
     near.forEach(n => { const b = btn(n, false, () => jumpTo(n)); b.title = 'Jump to pile ' + n; nr.append(b); });
@@ -1405,7 +1422,12 @@ $('ctxZ').oninput = drawCtx; $('ctxNb').onchange = drawCtx;
 try { const n = +localStorage.getItem('sorter:ink'); if (n) $('ink' + n).click(); } catch(e){}
 $('size').oninput = e => document.documentElement.style.setProperty('--sz', e.target.value + 'px');
 $('show').onchange = render;
-$('foot').textContent = Object.keys(itemBySid).length + ' tiles, first piled by our readers’ labels. ' +
+(function(){ const ps = $('psort');
+  if (Object.keys(MARKCAT).length){ const o = document.createElement('option'); o.value = 'mark'; o.textContent = 'By mark category'; ps.append(o); }
+  if (DATA.nonblind){ const o = document.createElement('option'); o.value = 'value'; o.textContent = 'By value (non-blind)'; ps.append(o); $('gbvL').hidden = false;
+    $('banner').hidden = false; $('banner').textContent = DATA.banner || 'Non-blind view: values shown; decisions here are not transcription evidence'; }
+  ps.onchange = render; $('gbv').onchange = render; })();
+$('foot').textContent = Object.keys(itemBySid).length + ' tiles, ' + (DATA.blind ? (DATA.seedNote || 'first piled by nearest pile on the image alone (shape only).') : 'first piled by our readers’ labels.') + ' ' +
   (DATA.skipped ? DATA.skipped + ' tiles from a line outside the page crops are not shown.' : '');
 (function(){ const F = DATA.focus || []; if (!F.length) return;
   const box = $('focus'); box.hidden = false;
@@ -1439,7 +1461,7 @@ function markFocusDone(){ document.querySelectorAll('#focusTiles > div').forEach
     const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + (f.why || '') + (f.detail ? ' ' + f.detail : '');
     const im = document.createElement('img'); im.alt = f.sid; im.src = imgSrc(f.sid); im.draggable = false; b.append(im);
     b.onclick = () => showCtx(f.sid, pileOf(f.sid), false, R.map(x => x.sid).filter(x => itemBySid[x]), 'in "Most useful first"');
-    const k = document.createElement('span'); k.className = 'rk'; k.textContent = '#' + (n + 1) + ' · ' + (+f.score).toFixed(1);
+    const k = document.createElement('span'); k.className = 'rk'; k.textContent = '#' + (n + 1) + (DATA.blind ? '' : ' · ' + (+f.score).toFixed(1));
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.why || (f.alt ? homeOf[f.sid] + ' or ' + f.alt + '?' : '');
     d.append(b, k, c); wrap.append(d); });
 })();

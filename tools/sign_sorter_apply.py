@@ -42,6 +42,13 @@ corners moved one by one) and mask [{r, pts}] (brush strokes over a neighbour's 
 JSON, and new_x .. new_h are then the quad's bounding box. An old {x, y, w, h} doc leaves both cells empty. A recut tile
 keeps its pile and status here; tools/sorter_apply_recuts.py re-crops it and updates signs.tsv. No recuts saved: no file
 is written.
+Mode column (MQS-SORTER, 9 Oct 2026; TRANSCRIPTION.md blind first). Every exported row carries `mode`, `blind` or `keyed`. `keyed` when
+the page was built non-blind (--page PAGE.html: its embedded DATA.mode) or when the key family's `nonblind_shown` date in
+tools/data/sorter_families.tsv (--key-family NAME) is on or before the sort's start (--sort-start YYYY-MM-DD, default the
+earliest `updated` stamp in the db documents). A `keyed` row is never used as BENCHMARK-TX evidence or as adjudication evidence
+(tools/tx_bench.py and the adjudication scripts must drop it). Must NOT mark `keyed`: a blind page, or a family whose
+nonblind_shown date is after the sort's start, or blank, or no --page and no --key-family given (mode `blind`, as every export was
+before this column existed).
 Must NOT be used to write a cluster label the person did not choose: nothing here infers a code from shape."""
 import argparse, csv, glob, json, os, sys
 
@@ -199,6 +206,29 @@ def recut_rows(docs):
     return sorted(out)
 
 
+def page_data(path):
+    """The DATA object embedded in a sign_sorter page (JSON after `const DATA = `), or {} when it cannot be read."""
+    try:
+        txt = open(path, encoding='utf-8').read()
+        i = txt.index('const DATA = ') + len('const DATA = ')
+        return json.JSONDecoder().raw_decode(txt[i:])[0]
+    except (OSError, ValueError):
+        return {}
+
+
+def export_mode(page_mode=None, family=None, sort_start=None, fam_path=None):
+    """`keyed` or `blind` for an export (see the docstring, Mode column)."""
+    if page_mode == 'keyed':
+        return 'keyed'
+    if family and sort_start:
+        fp = fam_path or os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'sorter_families.tsv')
+        if os.path.exists(fp):
+            for r in csv.DictReader(open(fp, newline=''), delimiter='\t'):
+                if r.get('family') == family and (r.get('nonblind_shown') or '').strip() and r['nonblind_shown'].strip() <= sort_start[:10]:
+                    return 'keyed'
+    return 'blind'
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--labels'); ap.add_argument('--db', required=True)
@@ -209,6 +239,9 @@ def main(argv=None):
     ap.add_argument('--atlas-out', help='write the updated atlas labels here instead of in place')
     ap.add_argument('--source', default='', help='one line for the atlas sorter_log (which page, which letter)')
     ap.add_argument('--recuts-out', help='where to write the fixed cuts (default: recuts.tsv beside --out; only when any were saved)')
+    ap.add_argument('--page', help='the sorter page HTML: its embedded mode (blind/keyed) goes into the mode column')
+    ap.add_argument('--key-family', help='key family (tools/data/sorter_families.tsv) for the mode column')
+    ap.add_argument('--sort-start', help='YYYY-MM-DD the sort began (default: earliest `updated` stamp in the db documents)')
     a = ap.parse_args(argv)
     if a.atlas_labels and not a.clusters:
         ap.error('--atlas-labels needs --clusters (which tile is in which atlas cluster)')
@@ -232,8 +265,12 @@ def main(argv=None):
         L = json.load(open(a.atlas_labels))
         summary['atlas'] = write_atlas(L, rows, piles, moves, cdocs, cluster_of, a.source)
         json.dump(L, open(a.atlas_out or a.atlas_labels, 'w'), indent=1, ensure_ascii=False)
+    pd = page_data(a.page) if a.page else {}
+    start = a.sort_start or min((str(d['updated'])[:10] for c in ('piles', 'moves', 'checked') for d in load(a.db, c) if d.get('updated')), default=None)
+    mode = export_mode(pd.get('mode'), a.key_family or pd.get('keyFamily'), start)
+    summary['mode'] = mode
     with open(a.out, 'w', newline='') as f:
-        w = csv.writer(f, delimiter='\t'); w.writerow(['sid', 'old_sign', 'new_sign', 'status']); w.writerows(rows)
+        w = csv.writer(f, delimiter='\t'); w.writerow(['sid', 'old_sign', 'new_sign', 'status', 'mode']); w.writerows(r + (mode,) for r in rows)
     rc = recut_rows(load(a.db, 'recuts'))
     if rc:
         rp = a.recuts_out or os.path.join(os.path.dirname(os.path.abspath(a.out)), 'recuts.tsv')
@@ -242,7 +279,7 @@ def main(argv=None):
         summary['recuts'] = len(rc)
     if a.summary:
         json.dump(summary, open(a.summary, 'w'), indent=1)
-    print(json.dumps({k: summary[k] for k in ('tiles', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts') if k in summary}))
+    print(json.dumps({k: summary[k] for k in ('tiles', 'mode', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts') if k in summary}))
 
 
 if __name__ == '__main__':

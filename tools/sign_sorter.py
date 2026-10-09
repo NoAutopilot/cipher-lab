@@ -74,14 +74,40 @@ Preflight (SORTER-PREFLIGHT, 6 Oct 2026): after the build, tools/sorter_prefligh
 verdict (template, answerable focus box, tiles on the cipher lines, contact sheet <out stem>.preflight.png); a FAIL
 is not published. Give --cipher-lines, or keep cipher_lines.tsv / segment_pages.txt beside --signs; --no-preflight skips it.
 
+Blind first (MQS-SORTER, 9 Oct 2026; TRANSCRIPTION.md: the person sorting is never shown key values or machine guesses):
+  The default page shows no key value, no decode choice, no top-1 label, no reader weight and no score. The rank order stays
+  (an order, not a displayed value). A ranked or focus tile is captioned "Which pile?" with its candidate piles in a seeded
+  random order (--blind-seed), never marked "(decode)" or "(top-1)" and never with a percentage; a --focus-note that calls a
+  placement "the computer's pick" is replaced by a neutral note. A seed placement by nearest pile (shape only, no key or
+  decode input) is allowed and the page says so. Must NOT be blocked: pile ids (shape cluster names) and the rank order.
+  --show-values KEY --key-family NAME --blind-sort DB_EXPORT   declared non-blind mode (key.tsv: sign, value[, status]). Refused
+              (exit 2, naming TRANSCRIPTION.md) unless --blind-sort is a saved blind export (a --db folder with piles/ moves/
+              whose rows are not mode=keyed) and tools/data/sorter_families.tsv lists no open blind sort in that key family.
+              The page says "Non-blind view: values shown; decisions here are not transcription evidence", writes values in
+              CAPITALS when the key confirms (status confirmed/owner or no status column), lower case for status guess/
+              machine/topk, a "_" prefix for nulls, "?" for unknown (decode_key.py --style case), offers "Group by value"
+              (I/J and U/V merged) and "Sort piles by value". Building one stamps the family's nonblind_shown date in the
+              register (pass --no-register to only test). Exports from then on carry mode=keyed (sign_sorter_apply.py).
+  --oddness-audit  known-answer measure of the "Odd ones first" order (see below); prints per seed recall@10% and shuffled p95.
+
 Never feed it restricted material (a holder's scans under RESTRICTED.md): the page carries the images.
 """
-import argparse, base64, csv, io, json, math, os, sys
+import argparse, base64, csv, datetime, io, json, math, os, random, re, sys
 from collections import defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE = os.path.join(HERE, 'sign_sorter', 'template.html')
+FAMILIES = os.path.join(HERE, 'data', 'sorter_families.tsv')
+BLIND_SEED = 20261009
+NONBLIND_BANNER = 'Non-blind view: values shown; decisions here are not transcription evidence'
+NEUTRAL_NOTE = 'Each of these tiles is about as close to two of the piles; which pile is right is for you to say.'
+SEED_NOTE = 'first piled by our readers’ labels; this page shows no key values and no decode choices, so what you decide is blind.'
+SEED_SHAPE_NOTE = ('first piled by nearest pile on the image alone (shape only: no key, no decode, no reader guess); '
+                   'this page shows no key values, so what you decide is blind.')
+# machine guesses a blind page must not carry (a decode choice, a top-1 label, a reader weight, a letters-changed count)
+_MACHINE = re.compile(r"\s*\((?:decode|top-1)\)|\s*reader weight \d+%(?: on \S+)?;?|\s*~\d+ letters change;?", re.I)
+_MACHINE_NOTE = re.compile(r"computer|decode|top-1|reader weight|\bguess|\bpick\b", re.I)
 
 
 def tsv(path):
@@ -281,7 +307,7 @@ def lattice_from_atlas_topk(paths):
     return lat
 
 
-def rank_from_lattice(data, topk, key_p, lang='it', corpus=None, sid_fmt='{line}_{pos:02d}', cap=20, beam=64):
+def rank_from_lattice(data, topk, key_p, lang='it', corpus=None, sid_fmt='{line}_{pos:02d}', cap=20, beam=64, blind=False, seed=BLIND_SEED):
     import key_decode_lattice as kdl
     from judge_plaintext import LANG_CORPORA, NgramModel, read_corpus
     paths = corpus or LANG_CORPORA.get(lang)
@@ -317,14 +343,18 @@ def rank_from_lattice(data, topk, key_p, lang='it', corpus=None, sid_fmt='{line}
         # the readers' pile label, that choice is the alternative (the decode overrode the readers there)
         other = chosen if chosen != pile else alt
         q = f'{pile} (top-1) or {other} (decode)?' if chosen != pile else f'{pile} or {alt}?'
+        if blind:   # an order only: candidates in a seeded random order, no decode choice, no weight, no letters-changed count
+            out.append({'sid': sid, 'score': tot, 'alt': '', 'why': blind_why(sid, [pile, other], seed),
+                        'detail': f'group of {len(vs)} tiles' if len(vs) > 1 else ''})
+            continue
         out.append({'sid': sid, 'score': tot, 'alt': other, 'why': q,
                     'detail': f'~{changed} letters change; reader weight {int(round(pa * 100))}% on {alt}'
                               + (f'; group of {len(vs)} tiles' if len(vs) > 1 else '')})
     out.sort(key=lambda x: (-x['score'], x['sid']))
-    return out[:cap], unmapped
+    return (rank_only(out[:cap]) if blind else out[:cap]), unmapped
 
 
-def rank_from_confusion(data, conf_rows, focus_sids=(), cap=20):
+def rank_from_confusion(data, conf_rows, focus_sids=(), cap=20, blind=False, seed=BLIND_SEED):
     """Fallback tile value (no lattice): see the module docstring, --rank-confusion."""
     pair = defaultdict(dict)
     for r in conf_rows:
@@ -352,9 +382,125 @@ def rank_from_confusion(data, conf_rows, focus_sids=(), cap=20):
         rep = foc[0] if foc else max(items, key=lambda it: it.get('d', 0))
         why = f'{pile} or {alt}?' if alt else f'{pile}?'
         detail = ('readers split here; ' if foc else '') + f'flips {len(items)} tile' + ('s' if len(items) != 1 else '')
+        if blind:
+            why, alt, detail = blind_why(rep['sid'], [pile, alt], seed), '', f'flips {len(items)} tile' + ('s' if len(items) != 1 else '')
         out.append({'sid': rep['sid'], 'score': round(conf * len(items), 3), 'alt': alt, 'why': why, 'detail': detail})
     out.sort(key=lambda x: (-x['score'], x['sid']))
-    return out[:cap]
+    return rank_only(out[:cap]) if blind else out[:cap]
+
+
+def blind_why(sid, cands, seed=BLIND_SEED):
+    """Blind caption: "Which pile? A / B", the candidate piles in a random order seeded by (seed, sid); never marks which one a
+    decode or a top-1 reader chose. Pile ids only (shape cluster names, not key values)."""
+    c = sorted({x for x in cands if x})
+    random.Random(f'{seed}:{sid}').shuffle(c)
+    return 'Which pile? ' + ' / '.join(c) if c else 'Which pile?'
+
+
+def rank_only(rows):
+    """A blind ranked list keeps its order but not its numbers: score = N..1 by position (the page shows no score)."""
+    return [dict(r, score=len(rows) - i) for i, r in enumerate(rows)]
+
+
+def blind_text(t):
+    """Strip decode / top-1 / reader-weight / letters-changed phrases from a person-facing string (a --rank TSV, a focus.tsv question)."""
+    return re.sub(r'\s{2,}', ' ', _MACHINE.sub('', t or '')).strip(' ;')
+
+
+def blind_note(t):
+    """A --focus-note that speaks of "the computer's pick" or a guess is replaced by a neutral note."""
+    return NEUTRAL_NOTE if (t and _MACHINE_NOTE.search(t)) else t
+
+
+def read_families(path=None):
+    path = path or FAMILIES
+    return tsv(path) if os.path.exists(path) else []
+
+
+def nonblind_refusal(family, blind_sort, page_sids, fam_path=None):
+    """None if a declared non-blind page may be built, else the refusal message (TRANSCRIPTION.md, blind first).
+    Needs (1) --blind-sort naming a saved blind export (a --db folder with piles/moves/checked docs, none mode=keyed) that
+    touches this page's tiles or piles, and (2) no open blind sort listed for the key family in sorter_families.tsv."""
+    if not family:
+        return '--show-values needs --key-family NAME (TRANSCRIPTION.md: the person sorting is never shown key values while a blind sort is open)'
+    if not blind_sort or not os.path.isdir(blind_sort):
+        return '--show-values needs --blind-sort DB_EXPORT, a saved blind export for the same tiles (TRANSCRIPTION.md, blind first)'
+    import sign_sorter_apply as ap_
+    docs = {c: ap_.load(blind_sort, c) for c in ('piles', 'moves', 'checked')}
+    if not any(docs.values()):
+        return f'--blind-sort {blind_sort} holds no saved piles/moves/checked documents (TRANSCRIPTION.md, blind first)'
+    if any(d.get('mode') == 'keyed' for ds in docs.values() for d in ds):
+        return f'--blind-sort {blind_sort} is itself a keyed (non-blind) export; it is not a blind sort (TRANSCRIPTION.md)'
+    seen = {d.get('sid') for c in ('moves', 'checked') for d in docs[c]} | {d.get('pile') for d in docs['piles']}
+    if not (seen & set(page_sids)):
+        return f'--blind-sort {blind_sort} names none of this page\'s tiles or piles: not a blind sort of the same tiles (TRANSCRIPTION.md)'
+    for r in read_families(fam_path):
+        if r.get('family') == family and (r.get('open_blind_sorts') or '').strip():
+            return (f'key family {family!r} has open blind sorts ({r["open_blind_sorts"]}) in tools/data/sorter_families.tsv: '
+                    'no non-blind page until they are saved (TRANSCRIPTION.md, blind first)')
+    return None
+
+
+def stamp_nonblind(family, fam_path=None, today=None):
+    """Set the family's nonblind_shown date (first time only); add the row when the family is not listed. Returns the date held."""
+    path = fam_path or FAMILIES
+    rows = read_families(path)
+    cols = ['family', 'open_blind_sorts', 'nonblind_shown', 'note']
+    today = today or datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
+    row = next((r for r in rows if r.get('family') == family), None)
+    if row is None:
+        row = {'family': family, 'open_blind_sorts': '', 'nonblind_shown': '', 'note': ''}; rows.append(row)
+    if not row.get('nonblind_shown'):
+        row['nonblind_shown'] = today
+    with open(path, 'w', newline='') as f:
+        w = csv.DictWriter(f, cols, delimiter='\t', extrasaction='ignore'); w.writeheader(); w.writerows(rows)
+    return row['nonblind_shown']
+
+
+def value_group(v):
+    """Group-by-value key: upper case, I/J and U/V merged (the period alphabet), '_' nulls and '?' unknowns kept apart."""
+    return v.upper().replace('J', 'I').replace('V', 'U') if v[:1] not in ('_', '?') else v[:1]
+
+
+def show_values(data, key_p):
+    """Non-blind only. DATA.values = {pile: {v, g}}: CAPITALS when the key confirms (status confirmed/owner or no status column),
+    lower case for status guess/machine/topk, '_' for a null (value NULL or empty), '?' for a pile with no key row."""
+    key = {}
+    for r in tsv(key_p):
+        sign, val = (r.get('sign') or '').strip(), (r.get('value') or '').strip()
+        if sign:
+            key[sign] = (val, (r.get('status') or r.get('grade') or '').strip().lower())
+    vals = {}
+    for p in data['piles']:
+        row = key.get(p['id']) or key.get(p['family'])
+        if row is None:
+            v = '?'
+        elif row[0].upper() == 'NULL' or not row[0]:
+            v = '_'
+        else:
+            v = row[0].lower() if row[1] in ('guess', 'machine', 'topk', 'top-k') else row[0].upper()
+        vals[p['id']] = {'v': v, 'g': value_group(v)}
+    data['values'] = vals
+    return vals
+
+
+def mark_categories(data, marks_p):
+    """DATA.markCat = {pile: category}: the commonest `kind` (or `mark`/`type`/`category`) of the --marks rows attached to the pile's
+    tiles (among marked tiles only), 'plain' when none. A marks TSV with no such column gives 'marked' / 'plain'."""
+    rows = tsv(marks_p)
+    kind = lambda r: next((r[k] for k in ('kind', 'mark', 'type', 'category') if r.get(k)), 'marked')
+    by = defaultdict(list)
+    for r in rows:
+        if r.get('sid'):
+            by[r['sid']].append(kind(r))
+    cat = {}
+    for p in data['piles']:
+        cnt = defaultdict(int)
+        for it in p['items']:
+            for k in by.get(it['sid'], ()):
+                cnt[k] += 1
+        cat[p['id']] = max(sorted(cnt), key=lambda k: cnt[k]) if cnt else 'plain'
+    data['markCat'] = cat
 
 
 def mark_refs(data, sids):
@@ -447,6 +593,13 @@ def main(argv=None):
     ap.add_argument('--rank-note', default='')
     ap.add_argument('--cipher-lines', help='cipher-line list for the preflight (tools/sorter_preflight.py; default cipher_lines.tsv '
                     'or segment_pages.txt beside --out or --signs)')
+    ap.add_argument('--seed-shape', action='store_true', help='say on the page that the first piling is by nearest pile on the image alone '
+                    '(shape only; use when --labels came from image distance, with no key or decode input)')
+    ap.add_argument('--blind-seed', type=int, default=BLIND_SEED, help='seed for the order of the candidate piles in a blind caption')
+    ap.add_argument('--show-values', metavar='KEY', help='declared non-blind mode: key.tsv (sign, value[, status]); needs --key-family and --blind-sort')
+    ap.add_argument('--key-family', help='key family of this page (tools/data/sorter_families.tsv) for --show-values')
+    ap.add_argument('--blind-sort', metavar='DB_EXPORT', help='a saved blind export (a --db folder) of the same tiles, required by --show-values')
+    ap.add_argument('--no-register', action='store_true', help='with --show-values: do not stamp the family register (tests)')
     ap.add_argument('--no-preflight', action='store_true', help='skip tools/sorter_preflight.py after the build')
     a = ap.parse_args(argv)
     if a.atlas_topk:
@@ -458,8 +611,22 @@ def main(argv=None):
         if not a.atlas_topk:
             ap.error('--rank-lattice with no file needs --atlas-topk')
         a.rank_lattice = a.atlas_topk
+    blind = not a.show_values
+    if a.show_values:
+        sids_ = {r['sid'] for r in tsv(a.labels)}
+        why = nonblind_refusal(a.key_family, a.blind_sort, sids_)
+        if why:
+            print('refused: ' + why, file=sys.stderr); sys.exit(2)
     data = build(a.signs, a.labels, a.pages, a.marks, thumb=a.thumb, clusters=read_clusters(a.clusters) if a.clusters else None,
                  tile_q=a.tile_quality, page_scale=a.page_scale, page_q=a.page_quality)
+    data['blind'] = blind
+    if blind:
+        data['mode'] = 'blind'; data['seedNote'] = SEED_SHAPE_NOTE if a.seed_shape else SEED_NOTE
+    else:
+        data['mode'] = 'keyed'; data['nonblind'] = True; data['banner'] = NONBLIND_BANNER; data['keyFamily'] = a.key_family
+        show_values(data, a.show_values)
+    if a.marks:
+        mark_categories(data, a.marks)
     if a.refs:
         mark_refs(data, [r['sid'] for r in tsv(a.refs)])
     if a.auto_clusters:
@@ -478,25 +645,30 @@ def main(argv=None):
         data['refCaption'] = a.ref_caption
     focus_sids = []
     if a.focus:
-        data['focus'] = [{'sid': r[0], 'q': r[1]} for r in (l.rstrip('\n').split('\t') for l in open(a.focus)) if len(r) >= 2]
-        data['focusNote'] = a.focus_note
+        data['focus'] = [{'sid': r[0], 'q': blind_text(r[1]) if blind else r[1]}
+                         for r in (l.rstrip('\n').split('\t') for l in open(a.focus)) if len(r) >= 2]
+        data['focusNote'] = blind_note(a.focus_note) if blind else a.focus_note
         focus_sids = [f['sid'] for f in data['focus']]
     if a.rank:
         data['rank'] = read_rank(a.rank)
+        if blind:   # an order only: strip machine phrases, keep the candidate piles as a seeded-random "Which pile?"
+            for r_ in data['rank']:
+                r_['why'] = blind_text(r_['why']); r_['detail'] = blind_text(r_['detail']); r_['alt'] = ''
+            data['rank'] = rank_only(data['rank'])
     elif a.rank_lattice:
         if not a.rank_key:
             ap.error('--rank-lattice needs --rank-key')
-        data['rank'], unm = rank_from_lattice(data, a.rank_lattice, a.rank_key, a.rank_lang, a.rank_corpus, a.rank_sid)
+        data['rank'], unm = rank_from_lattice(data, a.rank_lattice, a.rank_key, a.rank_lang, a.rank_corpus, a.rank_sid, blind=blind, seed=a.blind_seed)
         if unm:
             print(f'{unm} lattice positions had no tile of that sid (check --rank-sid)', file=sys.stderr)
     elif a.rank_confusion:
-        data['rank'] = rank_from_confusion(data, tsv(a.rank_confusion), focus_sids)
+        data['rank'] = rank_from_confusion(data, tsv(a.rank_confusion), focus_sids, blind=blind, seed=a.blind_seed)
     if a.rank_out and 'rank' in data and not a.rank:
         with open(a.rank_out, 'w') as f:
             f.write('sid\tscore\talt\twhy\tdetail\n' + ''.join(f"{x['sid']}\t{x['score']}\t{x['alt']}\t{x['why']}\t{x.get('detail', '')}\n"
                                                              for x in data['rank']))
     if 'rank' in data:
-        data['rankNote'] = a.rank_note or ('Scored by ' + ('the decode lattice: expected letters changed if the tile flips'
+        data['rankNote'] = a.rank_note or ('Ordered by how much a placement could change the reading (an order only, no guess shown)' if blind else 'Scored by ' + ('the decode lattice: expected letters changed if the tile flips'
                                            if (a.rank or a.rank_lattice) else
                                            'look-alike confusion x tiles flipped (a triage order, not a reading)'))
     if a.region:
