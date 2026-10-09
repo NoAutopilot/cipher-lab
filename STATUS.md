@@ -7183,3 +7183,9 @@ pass A flagged NEW) -- the honest headline on an unseen item. TXE-R (f.117r live
 ledgered; archived by the orchestrator); the account-4 dispatcher drains the last MQS rows (BNF-S4, KEY-COMPARE live; 6 queued).
 Account 2 FAMILY-A2g: Manteuffel 0109 = Berlin 4 June 1712 letter printed in clear in Acta Borussica (N0); 0453 head found (No. 88,
 29 Oct 1712). Accounts 1 and 2 queues empty (blast auto-fill). Account 3 silent. Desk clean, NEAR clean.
+
+Hand-over, 09:2x UTC 9 Oct (2:2x am PT): session_013CM4Sw1JBAhc5a2KspaERr at ~760k context (cost 47.8 by get_session) hands the
+orchestrator role to a fresh account-4 session created via create_session (depth 3; successor prompt hub-seed/SUCCESSOR-PROMPT.md,
+"State at hand-over" section). No check-in trigger left armed by this session; the successor arms its own. Orphan state at hand-over:
+every account-4 worker and lane of this session ledgered and archived (TX-ENGINEER incarnations 1 and 2 at 58.26 and 5.76; MQS and
+MQS-2 lanes; AUD2-LEDGER-12..17; DEPTH-STATS-CLEAR; MQS-SORTER-BOX); the account-4 dispatcher and DEB-RUN standing sessions stay.
