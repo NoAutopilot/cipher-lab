@@ -1,0 +1,9 @@
+# SUR-0745R crops of NA 1.05.03 inv. 373 scan 0745 RIGHT page (crops not committed: folder over 30 MB; regenerate as below)
+# IIIF base: https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/44b4bee1-3e45-464b-b0e1-a30cd1bfd19c.jp2 (native 5000x4026)
+# region fetched: {base}/2450,100,2550,3880/full/0/default.jpg -> r745.jpg (HTTP 200, 9 Oct 2026 20:2x UTC)
+# crop command: python3 tools/iiif_lines.py --image r745.jpg --region 560,0,1990,3880 --out c --prefix p0745R --centres 140,224,295,359,429,500,568,644,717,781,845,922,984,1069,1142,1231,1307,1391,1469,1552,1647,1744,1834,1926,1980,2053,2127,2205,2276,2343,2421,2505,2582,2662,2730,2822,2907,2985,3075,3164,3231,3336,3398,3489,3558,3654 --lines-per-crop 2 --max-width 2460 --debug
+# (centres from --dry-run --distance 50 --prominence 100: 45 lines, plus 781 added by eye for the short cipher line "5.xy, 3.d" under "drie duim" that the profile merged;
+#  46 lines = 23 gloss+cipher pairs, gloss ABOVE its cipher line, checked by this worker on a contact sheet of all 46 single-line strips at 900 px and on L05)
+# every written line of the right page is in a pair: no plain-only line was found (the brief's "mixes plain-only lines" was a 600 px description)
+crop	content
+L01-L23	one pair each: plain Dutch gloss line above, cipher line below (L15 cipher line carries a marginal plain "1o" numbering at its left)

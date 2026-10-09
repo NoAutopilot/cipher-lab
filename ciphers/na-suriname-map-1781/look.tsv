@@ -28,3 +28,17 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-09 02:19	adhoc-49377c	adhoc-49377c:2-leaf:167124	after-2	746r			folio arithmetic	owed
 2026-10-09 02:19	adhoc-49377c	adhoc-49377c:2-leaf:167124	after-3	746v			folio arithmetic	owed
 2026-10-09 02:19	adhoc-49377c	adhoc-49377c:2-leaf:167124	after-4	747r			folio arithmetic	owed
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	cipher-page	745r			folio arithmetic	owed
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	facing	744v			folio arithmetic	owed
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	before-2	744r			folio arithmetic	owed
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	after-1	745v			folio arithmetic	owed
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	after-2	746r			folio arithmetic	owed
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	after-3	746v			folio arithmetic	owed
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	after-4	747r			folio arithmetic	owed
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	cipher-page	745r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	facing	744v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	before-2	744r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	after-1	745v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	after-2	746r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	after-3	746v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 20:23	adhoc-f61ea0	adhoc-f61ea0:2-leaf:b68970	after-4	747r			folio arithmetic	answered KNOWN (recorded)
