@@ -7062,6 +7062,28 @@ disk qualifies; TX-CONFIRM-SET told to take a known-answer leaf, same hand if no
 recall, adaptive crop band + manifest-generated overlap, thin-stroke 4x re-read; PREREG-txeng-2 pushed before any read. Flag from
 the lane: tools/tool_shelf.py --check fails on families/masc_inj.py and masc_words.py (a7fdb795, another session's commit).
 
+Successor check-in 1, 09:22-09:4x UTC 9 Oct (2:2x-2:4x am PT) by session_01PkUoxUSDziiDv1wCDtqDo4 (Fable, depth 3, via
+create_session): five_hour allowed on account 4; context ~110k. Predecessor session_013CM4Sw1JBAhc5a2KspaERr retitled ARCHIVED,
+archived (verified SESSION_STATUS_ARCHIVED), ledgered 49.71 by get_session. Check-in trigger trig_01RCuWkgfPyVeE9449tH2pvs.
+Keys: Google Books and Semantic Scholar back to 200 (both 429 at 05:0x). Orphan check: 0 orphan sessions; the three
+dispatcher-spawned MQS workers (BNF-S4 0.89 F blocked by Gallica 403, CCE-MATRIX 2.73 D weak, KEY-COMPARE 2.19 D weak) ledgered
+and archived; the (h) tail is the known pre-8-Oct one plus lines already answered. SIG-9 (account 1) bounced/parked: four straight
+Gallica 403s (04:43-08:43); to-do for the first check-in after 10 Oct 00:00 UTC: re-queue ONE Gallica probe each for SIG and
+MQS-BNF-S4. Account 4: the 07:2x "<=3 MQS workers" hold lifted (TX-ENGINEER closed); the dispatcher's 09:34 firing spawned all six
+remaining MQS rows (BNF-S5 session_01F36TpH2jpGzNjQ6WkNjunG, BNF-S6 session_01VttKhsNLLuJR6QfFdAxNWt, PARTICIPATION
+session_01AFhCVXWaJhcyJrXfQjfi4z, STRUCK session_011xDYaFykuW7yuHpaUSXiRt, SAMEDAY session_01FaFVethRwmQX2RqACGHigS, CVD-AUDIT
+session_016n3kAQK5xTQB48WHVu8xCf); WAIT-PASS-4 (session_013nWC4wLf9Z1g6niJryzouL, cap 6) spawned from this session for the 10
+wait-only targets (parent.md duty 0b; brief .claude/briefs/runs/2026-10-09-account4-wait-pass.md) -> 7 live on account 4.
+Unassigned progress rows (18 in six folders): three jobs queued (.claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md):
+UNA2-BIR3252 and UNA2-PISA (account 2, its :10 dispatcher), UNA2-BLA (account 1, its :40 dispatcher; the Blathwayt Verdict line is
+stale after D3-BLA2's UNTESTABLE re-gate -- rewrite + one Huntington larger-image probe); not queued: ceppo (needs Gallica, coverage
+only), fr3416 (a person reads the f.27r L09 gloss: owner card, not writable from account 4), debosnys (account 3's). Account 1:
+TX-TRUTH-VERIFY queued for :40. Account 2: queue had been empty (blast auto-fill); FAMILY-A2g closed 09:00 at cap. Account 3 silent
+(last line 02:03). Desk: desk_check ok, near_check ok, system_map ok, no_cracks: no NO-NEXT rows, card half not doable from
+account 4. USAGE.tsv bars: no reading from accounts 2-4, account 1's 6 days old (the usage mod is not loading in these sessions;
+flagged in ROOM once). Owner's open decisions unchanged: depth-bar convention (DV-MERCY), ASKS 156 (ROOM.md restricted figures).
+No owner report until he asks (10 Oct Pacific): the TX-ENGINEER result stands as written at 08:54 (research/TX-ENGINEER-2026-10-09.md).
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
