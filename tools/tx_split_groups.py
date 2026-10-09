@@ -27,7 +27,12 @@ copied) cuts the core rows into ink pieces at runs of >= GAP blank columns. Writ
               the next pass position as 'under'.
 A line whose piece count at the widest sweep gap still exceeds 1.5 x the median pass count holds ink that is not the
 cipher row (gloss, clear text) and is reported in sweep.tsv but not flagged (rule fixed before any truth was opened).
-No model, no network, no truth file. Scoring is a separate step (tx_bench.py's aligner), after flags.tsv is committed.
+No model, no network, no truth file. Scoring is a separate step, run only after flags.tsv is committed:
+    python3 tools/tx_split_groups.py --score benchmark-tx/dint-f128-print.truth.tsv --label-map benchmark-tx/dint128_label_map.tsv \
+        --pass A=... --pass B=... --pass F=... --out benchmark-tx/txeng/split
+uses tx_bench.py's own align() per pass and lists every inserted output position (caught if flagged) and every deleted
+scored reference position (caught if the output position just before or after the gap is flagged), lines marked unfit
+in sweep.tsv reported apart, and writes events.tsv.
 """
 import argparse, csv, json, os, statistics, sys
 
@@ -243,11 +248,58 @@ def write(path, rows, cols=None):
         w.writeheader(); w.writerows(rows)
 
 
+def score(truth_path, label_map, passes, out):
+    import tx_bench as TB
+    lm = TB.load_label_map(label_map) if label_map else {}
+    truth = TB.map_truth(TB.read_tsv(truth_path), lm) if lm else TB.read_tsv(truth_path)
+    flags = list(csv.DictReader(open(os.path.join(out, 'flags.tsv'), encoding='utf-8'), delimiter='\t'))
+    unfit = {r['line'] for r in csv.DictReader(open(os.path.join(out, 'sweep.tsv'), encoding='utf-8'), delimiter='\t')
+             if r['status'] != 'flagged'}
+    by = {}
+    for r in truth:
+        by.setdefault(r['line'], []).append(r)
+    ev = []
+    for nm, lines in passes.items():
+        fl = {(f['line'], int(float(f['pos']))) for f in flags if f['pass'] == nm}
+        for ln, rows in sorted(by.items()):
+            if ln not in lines:
+                continue
+            rows.sort(key=lambda r: float(r['pos']))
+            ref = [r['ref_sign'] for r in rows]
+            ts = [set(filter(None, r['truth'].split('|'))) for r in rows]
+            outl = [lm.get(sg, sg) for _, sg in lines[ln]]
+            j = 0
+            for ri, osg in TB.align(ref, ts, outl):
+                if ri is None:
+                    j += 1
+                    ev.append(dict(pass_=nm, line=ln, kind='inserted', out_pos=j, sign=osg, caught=int((ln, j) in fl),
+                                   fitted=int(ln not in unfit)))
+                elif osg is None:
+                    if rows[ri]['status'] == 'scored':
+                        ev.append(dict(pass_=nm, line=ln, kind='deleted', out_pos=f'{j}|{j + 1}', sign=ref[ri],
+                                       caught=int((ln, j) in fl or (ln, j + 1) in fl), fitted=int(ln not in unfit)))
+                else:
+                    j += 1
+    rows = [{('pass' if k == 'pass_' else k): v for k, v in e.items()} for e in ev]
+    write(os.path.join(out, 'events.tsv'), rows, ['pass', 'line', 'kind', 'out_pos', 'sign', 'caught', 'fitted'])
+    for nm, lines in passes.items():
+        npos = sum(len(v) for ln, v in lines.items() if ln not in unfit and ln in by)
+        nf = sum(1 for f in flags if f['pass'] == nm)
+        e = [x for x in ev if x['pass_'] == nm and x['fitted']]
+        for kind in ('inserted', 'deleted'):
+            k = [x for x in e if x['kind'] == kind]
+            print(f'pass {nm} {kind}: caught {sum(x["caught"] for x in k)} of {len(k)} (fitted lines); '
+                  f'flag share {nf}/{npos} = {nf / npos:.3f}' if npos else f'pass {nm}: no fitted lines')
+    return ev
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--images', required=True, help='folder with the segment crops and manifest.json')
-    ap.add_argument('--prefix', required=True, help='crop prefix, e.g. f128')
-    ap.add_argument('--lines', required=True, help='comma list of line ids, e.g. L02,L03')
+    ap.add_argument('--score', metavar='TRUTH.tsv', help='score committed flags.tsv against a truth file (after the commit)')
+    ap.add_argument('--label-map', help='tx_bench label map applied to truth and passes when scoring')
+    ap.add_argument('--images', help='folder with the segment crops and manifest.json')
+    ap.add_argument('--prefix', help='crop prefix, e.g. f128')
+    ap.add_argument('--lines', help='comma list of line ids, e.g. L02,L03')
     ap.add_argument('--pass', dest='passes', action='append', default=[], metavar='NAME=TSV',
                     help='a blind pass (line, pos, sign); first one is the alignment reference')
     ap.add_argument('--gaps', default='2-12', help='gap sweep, lo-hi in px (default 2-12)')
@@ -264,6 +316,11 @@ def main():
         passes[nm] = read_pass(p)
     if not passes:
         sys.exit('tx_split_groups: give at least one --pass')
+    if a.score:
+        score(a.score, a.label_map, passes, a.out)
+        return
+    if not (a.images and a.prefix and a.lines):
+        sys.exit('tx_split_groups: --images, --prefix and --lines are required to build flags')
     lines = {}
     for L in a.lines.split(','):
         ln = f'{a.prefix}_{L}'
