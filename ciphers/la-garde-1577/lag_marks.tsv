@@ -8,6 +8,9 @@ TOTAL A-vs-B	112	12	8	3	2	0.029	0.019	0.024	0.022	0.094
 TOTAL A-vs-L1	233	51	12	9	32	0.041	0.145	0.093	0.088	0.139
 TOTAL pooled	345	63	20	12	34	0.037	0.105	0.071	0.067	0.125
 
+v2_vs_settled	n_tokens	settled_cells	doubt_cells	v2_wrong_sure	v2_differs_doubt	central	lower	upper
+v2 (6179+6467)	239	57	16	0	9	0.000	0.000	0.067
+
 unit	cell	A	witness	settled	look	wrong
 6179 p2 A-vs-L1	p2L22.10	10~	10	10	doubt	A
 6179 p2 A-vs-L1	p2L22.12	11^	11	11^	sure	W

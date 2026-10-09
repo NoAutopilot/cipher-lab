@@ -1,0 +1,17 @@
+# la-garde-1577 wordcode seed 1 restarts 8 9 Oct 2026 04:25 UTC; control mean 0.777 (0.741-0.795); score -518.582
+# {"restart_scores": [-518.6, -532.2, -532.4, -535.9, -538.8, -542.0, -542.3, -548.5], "score_per_token": -2.1698, "context_runs": 0, "code_tokens_decoded": 23, "name_types": 0, "code_words": [["de", 23]], "err": 0.071, "vocab_k": 22, "common_a": 0, "code_share": 0.197, "target_code_share": 0.18, "code_types": 22, "extra_code_names": 0, "control_types": 42, "del": 8, "ins": 5, "code": 6, "per_class": {"letters": 0.88, "codes": 0.447, "n_letters": 192, "n_codes": 47, "codes_in_wordlist": 0.894, "codes_hapax": 0.0, "n_hapax": 18, "codes_repeated": 0.724, "n_repeated": 29}}
+enoteurlinslpar DE etedel
+uilleouset DE DE li DE de DE lesdesi
+DE carilieu
+lessaurs
+DE tladuins DE seunete DE uinrlerieie
+neliel DE DE nee DE uensdols
+encaie DE DE neepeuestcia
+eseediticteilleaite
+enle DE dueurcatirespiieune DE
+iec DE ploreslesele
+le DE sueltc
+res DE DE es DE seslrc
+DE ais
+unsui DE
+cesenceesleit

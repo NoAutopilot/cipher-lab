@@ -6,6 +6,7 @@ settled the cell from the image). For each comparison (A vs L1, A vs B) a reader
 cell where its sign differs from the settled sign. Cells where A and its witness agree are assumed right (a shared
 misreading is invisible here, so this is a LOWER bound on one reader's error); split cells whose look was `doubt` are
 reported three ways: dropped (central), charged to both readers (upper), and charged to neither (lower).
+LAG-V2 (9 Oct 2026) adds one row: the committed v2 transcription against the same settles (central/lower/upper).
   python3 lag_marks.py [--check]    writes lag_marks.tsv; --check exits 1 if stale."""
 import os, sys, collections
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -51,6 +52,30 @@ for name, n in N.items():
             tot[k].update(c); totn[k] += n
 for k in ("A-vs-B", "A-vs-L1", "pooled"):
     lines.append(row("TOTAL " + k, totn[k], tot[k]))
+# LAG-V2 (9 Oct 2026): the committed v2 transcription (what build_spec.py feeds the families) against the same settles.
+# Each distinct split cell counted once; denominator = v2's 239 positioned tokens. central drops doubt cells, lower
+# charges no doubt cell, upper charges every doubt cell to v2. Cells all readers agree on are assumed right (lower bound).
+def v2signs(f):
+    m = {}
+    for l in open(os.path.join(HERE, f), encoding="utf-8").read().splitlines()[1:]:
+        c = l.split("\t")
+        if c[0]:
+            m[f"{c[0]}.{c[1]}"] = c[2]
+    return m
+V2 = {"6179": v2signs("ciphertext_6179_v2.tsv"), "6467": v2signs("ciphertext_6467_v2.tsv")}
+nv2 = sum(len(v) for v in V2.values())
+vs = vd = vdw = 0
+for (tag, cell), lk in look.items():
+    v = V2[tag].get(cell)
+    if v is None:
+        sys.exit(f"v2 has no cell {tag} {cell}")
+    if lk[3] == "doubt":
+        vd += 1; vdw += v != lk[2]
+    else:
+        vs += v != lk[2]
+lines.append("")
+lines.append("v2_vs_settled\tn_tokens\tsettled_cells\tdoubt_cells\tv2_wrong_sure\tv2_differs_doubt\tcentral\tlower\tupper")
+lines.append(f"v2 (6179+6467)\t{nv2}\t{len(look)}\t{vd}\t{vs}\t{vdw}\t{vs/(nv2-vd):.3f}\t{vs/nv2:.3f}\t{(vs+vd)/nv2:.3f}")
 out = "\n".join(lines) + "\n\nunit\tcell\tA\twitness\tsettled\tlook\twrong\n" + "".join("\t".join(d) + "\n" for d in detail)
 p = os.path.join(HERE, "lag_marks.tsv")
 if "--check" in sys.argv:

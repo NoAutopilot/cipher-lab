@@ -26,7 +26,7 @@ merged "07~~" -- the image shows a small mark after the second "07" on that line
 not L1's) but not fine enough, at this resolution and without a crop tool, to safely call the small number of
 remaining true numeral-level disagreements (listed below) rather than guess.
 
-Exits 0 always (a reconciliation, not a check); prints the count of H/M rows and the unresolved list.
+Exits 0 when writing (a reconciliation); with --check (LAG-V2, 9 Oct 2026) writes nothing and exits 1 if a v2 file is stale; prints the count of H/M rows and the unresolved list.
 """
 import csv, os, sys, argparse
 
@@ -158,13 +158,21 @@ def reconcile_page(a_rows, other_rows_list, a):
     return out, insertions
 
 
+CHECK = {"mode": False, "stale": []}   # LAG-V2 (9 Oct 2026): --check compares instead of writing
+
+
 def write_v2(rows, insertions, path, witness_names):
+    text = "line\tpos\tgroup\tconf\talt\tnote\n"
+    for r in rows:
+        text += "\t".join([r["line"], r["pos"], r["group"], r["conf"], r["alt"], r["note"]]) + "\n"
+    for wi, s, fl, after in insertions:
+        text += "\t".join(["", "", s, "M", "", f"insertion by {witness_names[wi]} after A idx {after}, not in A"]) + "\n"
+    if CHECK["mode"]:
+        if not os.path.exists(path) or open(path, encoding="utf-8").read() != text:
+            CHECK["stale"].append(os.path.basename(path))
+        return
     with open(path, "w", encoding="utf-8") as f:
-        f.write("line\tpos\tgroup\tconf\talt\tnote\n")
-        for r in rows:
-            f.write("\t".join([r["line"], r["pos"], r["group"], r["conf"], r["alt"], r["note"]]) + "\n")
-        for wi, s, fl, after in insertions:
-            f.write("\t".join(["", "", s, "M", "", f"insertion by {witness_names[wi]} after A idx {after}, not in A"]) + "\n")
+        f.write(text)
 
 
 # Manually confirmed against the source images. Each entry may set a `note` only (the group value already
@@ -185,6 +193,31 @@ CONFIRMED = {
     ("p2L7", "12"): {"group": "24", "note": "WC-LAGARDE 26 Sept 2026: settled 24 (crop clearly shows two-digit 24, not a bare 4) -- agrees with OX-LAG's independent GSME print-edition cross-check (25 Sept 2026) -- images/crops_wc/6467p2_run1_overview.png"},
     ("p2L11", "12"): {"group": "3^", "note": "WC-LAGARDE 26 Sept 2026: settled 3^ (crop clearly shows an overlined 3, the loop opens downward-right unlike 5's upper hook) -- agrees with OX-LAG's independent GSME print-edition cross-check (25 Sept 2026) -- images/crops_wc/6467p2_L11_pos12_final.png"},
 }
+
+
+# LAG-V2 (9 Oct 2026): LAG-MARKS' seven `sure` image settles (lag_marks_look.tsv; one blind Sonnet look per cell on
+# iiif_lines.py crops of the 150 dpi renders, p2L24 re-looked by the LAG-MARKS reconciler) where committed v2 differed.
+# All seven are mark-only (overline / loop present or absent); no base code changes, so families/basecode_cipher.txt is
+# unaffected. Applied to the reconciled cell whatever its note (these cells were literal/digit majorities, not
+# `unresolved`). Keyed per file, since line labels (p2L6...) are not unique across 6179 and 6467.
+LAG_MARKS_SETTLES = {
+    "6179": {
+        ("p2L22", "14"): "14^", ("p2L22", "16"): "15^", ("p2L24", "19"): "11^",
+        ("p3L8", "13"): "23", ("p3L9", "1"): "20",
+    },
+    "6467": {("p2L6", "9"): "9", ("p2L7", "14"): "9"},
+}
+
+
+def apply_lag_marks(rows_ins, unit):
+    rows, ins = rows_ins
+    for r in rows:
+        g = LAG_MARKS_SETTLES[unit].get((r["line"], r["pos"]))
+        if g is not None:
+            old = r["group"]
+            r["group"], r["conf"], r["alt"] = g, "H", ""
+            r["note"] = (f"LAG-MARKS 9 Oct 2026 sure image settle {g} (v2 had {old}); lag_marks_look.tsv; applied LAG-V2")
+    return rows, ins
 
 
 def apply_confirmed_pair(rows_ins):
@@ -215,6 +248,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="exit 1 if a v2 file on disk is stale")
     args = ap.parse_args()
+    CHECK["mode"] = args.check
     a = default_args()
 
     # 6179: p2 three-way (A, B, L1), p3 two-way (A, L1; pass B never reached p3)
@@ -224,8 +258,8 @@ def main():
     a_p3 = [r for r in load_rows(os.path.join(HERE, "ciphertext_6179_passA.tsv")) if r[0].startswith("p3")]
     l1_p3 = [r for r in load_rows(os.path.join(HERE, "ciphertext_6179_L1.tsv")) if r[0].startswith("p3")]
 
-    rows_p2, ins_p2 = apply_confirmed_pair(reconcile_page(a_p2, [b_p2, l1_p2], a))
-    rows_p3, ins_p3 = apply_confirmed_pair(reconcile_page(a_p3, [l1_p3], a))
+    rows_p2, ins_p2 = apply_lag_marks(apply_confirmed_pair(reconcile_page(a_p2, [b_p2, l1_p2], a)), "6179")
+    rows_p3, ins_p3 = apply_lag_marks(apply_confirmed_pair(reconcile_page(a_p3, [l1_p3], a)), "6179")
     summarise(rows_p2, ins_p2, "6179 p2 (A,B,L1)")
     summarise(rows_p3, ins_p3, "6179 p3 (A,L1)")
     write_v2(rows_p2 + rows_p3, [(0 if wi == 0 else 1, s, fl, after) for wi, s, fl, after in ins_p2] +
@@ -239,14 +273,17 @@ def main():
     a_run2 = [r for r in a_all if r[0] in ("p2L10", "p2L11")]
     l1_run1 = [r for r in l1_all if r[0] in ("p2L1", "p2L2", "p2L3")]
     l1_run2 = [r for r in l1_all if r[0] in ("p2L4", "p2L5")]
-    rows_r1, ins_r1 = apply_confirmed_pair(reconcile_page(a_run1, [l1_run1], a))
-    rows_r2, ins_r2 = apply_confirmed_pair(reconcile_page(a_run2, [l1_run2], a))
+    rows_r1, ins_r1 = apply_lag_marks(apply_confirmed_pair(reconcile_page(a_run1, [l1_run1], a)), "6467")
+    rows_r2, ins_r2 = apply_lag_marks(apply_confirmed_pair(reconcile_page(a_run2, [l1_run2], a)), "6467")
     summarise(rows_r1, ins_r1, "6467 run1 (A,L1)")
     summarise(rows_r2, ins_r2, "6467 run2 (A,L1)")
     write_v2(rows_r1 + rows_r2, [(1, s, fl, after) for _, s, fl, after in ins_r1] +
              [(1, s, fl, after) for _, s, fl, after in ins_r2],
              os.path.join(HERE, "ciphertext_6467_v2.tsv"), {1: "L1"})
 
+    if args.check:
+        print("STALE: " + ", ".join(CHECK["stale"]) if CHECK["stale"] else "ok: v2 files match build_v2.py")
+        return 1 if CHECK["stale"] else 0
     print("wrote ciphertext_6179_v2.tsv, ciphertext_6467_v2.tsv")
     return 0
 

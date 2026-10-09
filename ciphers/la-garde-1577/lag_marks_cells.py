@@ -7,8 +7,10 @@ import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import contextlib, io
-with contextlib.redirect_stdout(io.StringIO()):
+_argv, sys.argv = sys.argv, sys.argv[:1]   # LAG-V2 (9 Oct 2026): lag_err's own --check exits at import, which made
+with contextlib.redirect_stdout(io.StringIO()):   # this script's --check always 0; import it without our flags
     import lag_err as le   # re-writes its own deterministic outputs (lag_err.py --check stays 0)
+sys.argv = _argv
 rp, a = le.rp, le.a
 
 def v2map(f):

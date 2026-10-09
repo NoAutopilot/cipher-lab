@@ -1868,3 +1868,91 @@ Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading
 - [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of the 57 split cells from the 150 dpi renders, 16 left doubt (resolution-limited)
 - [ ] retry: syllabary at err 0.13 run (LAG-SYL13: negative does not extend); wordcode never run at the measured error
 Verdict: keep going: 3 internal gaps; cheapest next: lag_syl13 --check plus the v2 marks revision, ~$1.5
+
+## LAG-V2 (9 Oct 2026, account 2, LANE FAMILY-A2f, Opus, disk/CPU only)
+
+**Job:** the handoff's next item 4: v2 revised with LAG-MARKS' 7 sure settles, the `lag_syl13.py --check` LAG-SYL13 left, and
+`wordcode` at the measured error, control first. No network beyond git, no vision, no subagents.
+
+**Prior work** (`tools/prior_work.py la-garde-1577 --item-spec 'shelfmark=KHA A 11/XIV C/M-12;date=1577-11-28;sender=La
+Garde;recipient=Willem van Oranje' --step-type transcribe --offline`; offline because the job is disk-only): **exit 4**, owed
+only LEAD 1-own (this job's own 04:20 claim). Check 1 by hand: `build_v2.py` unchanged since before LAG-MARKS (git log), v2
+still differed from the 7 sure settles, and HYPOTHESES.md had only WC-LAGARDE2's err-0.23 wordcode row -> step not done,
+`--record`ed CLEAR; re-run: **exit 0** ("proceed on the residue: whole item"). Checks 2-4 stand as LAG-MARKS recorded them
+this morning (CONTEXT / CLEAR / CLEAR / KNOWN-PART clear part only); check 5 not applicable (no reading made).
+
+**Step 1: v2 revision (input change, logged).** `build_v2.py` gains `LAG_MARKS_SETTLES` (keyed per letter, since `p2L6`... recur
+across 6179 and 6467), applied after the WC-LAGARDE settles whatever the cell's note: 6179 p2L22.14 `14`->`14^`, p2L22.16
+`15`->`15^`, p2L24.19 `11`->`11^`, p3L8.13 `23^`->`23`, p3L9.1 `20^`->`20`; 6467 p2L6.9 `9~`->`9`, p2L7.14 `9~`->`9`. Each is
+written conf H with a note saying it rests on one blind LAG-MARKS look (`sure`), not two reads. All seven are mark-only, so
+`families/basecode_cipher.txt` (N=229, K=26) is byte-identical; `specs/la-garde-1577.json` was rebuilt (`build_spec.py`):
+still 239 tokens, 48 types, 15 runs; marks 195/39/5 -> 196 bare / 40 overline / 3 loop-crossbar. `build_v2.py --check`
+had no implementation (its docstring said "exits 0 always"); it now compares instead of writing and exits 1 on a stale v2
+(tested by hand-editing one cell: STALE, restored: ok). `lag_marks_cells.py --check` always exited 0 because importing
+`lag_err` with `--check` in `sys.argv` ran lag_err's own check and `sys.exit`ed at import; fixed (argv withheld during the
+import), the TSV regenerated (8 rows' v2 columns now carry the settles), `--check` 0.
+
+**Re-measure.** `lag_err.py` re-run (`--check` 0): the pass-vs-pass rows are unchanged (the passes are unchanged); the
+not-independent pass-A-vs-v2 rows move 6179 5 -> 8 / 193 literal, 6467 2 -> 4 / 46 (v2 now departs from A where the image
+says A is wrong); base rows unchanged (3/193, 2/46). `lag_marks.py` gains one row, the committed v2 against the same settles
+(each of the 57 distinct split cells once, denominator v2's 239 tokens; central drops the 16 doubt cells, upper charges all
+16 to v2):
+
+| Transcription | Wrong on sure cells | Doubt cells (v2 differs from the tentative look) | central | lower | upper |
+|---|---|---|---|---|---|
+| v2 before LAG-V2 | 7 | 16 (9) | 0.031 | 0.029 | 0.096 |
+| **v2 after LAG-V2** | **0** | 16 (9) | **0.000** | 0.000 | **0.067** |
+| one reader (LAG-MARKS, unchanged) | -- | -- | 0.071 | 0.067 | 0.125 |
+
+The v2 figure is not independent of the readers it is built from: a misreading shared by A and its witness is invisible to
+both rows, so neither is a true error; the one-reader 0.071/0.125 stays the figure a control injects (PREREG-LAG-WC).
+
+**Step 2: `lag_syl13.py --check`.** Run against the committed (pre-LAG-V2) spec, from a scratch copy of `tools/` + the
+families folder + `git show HEAD:specs/la-garde-1577.json`, so that it tests whether the committed TSV regenerates from the
+inputs it was computed from (the revised spec changes 7 marks, which the syllabary control's make_control reads).
+**`--check` exit 0** (04:23-04:41 UTC, 250 solves on 4 processes, about 18 min): the 250 re-solved rows are byte-identical to the
+committed `families/lag_syl13.tsv`, so LAG-SYL13's table regenerates from its inputs (rule 7 gap closed). Consequence of step 1,
+logged: `lag_syl.py` and `lag_syl13.py` read the marks-kept spec, so their committed TSVs (T, shuffles, controls) are pinned to
+the pre-LAG-V2 spec (last changed in 46227558d) and a `--check` of either against the revised spec is expected to differ; run
+it as here, against `git show 46227558d:specs/la-garde-1577.json`. `lag_gap.py`/`lag_hom_judgepower.py` read base codes,
+which LAG-V2 did not change.
+
+**Step 3: wordcode, control first** (`PREREG-LAG-WC.md`, pushed 04:24 UTC as 70d747689 before either run):
+
+| Run | Control recovery (seeds 1-3) | Mean | Gate 0.60 | Target |
+|---|---|---|---|---|
+| err 0.071 (one-reader central) | 0.741 / 0.795 / 0.795 | **0.777** | met | best score -518.582; judge **FAIL** (score -1.121, real_p05 -0.994, null_p99 -1.681, N=262) |
+| err 0.125 (upper, the bracket) | 0.481 / 0.753 / 0.347 | **0.527** | **below** | not run (exit 3) |
+
+Per class at 0.071 (tool's breakdown): letters 0.88-0.92, codes 0.07-0.45 (hapax codes 0.000 every seed); the control's
+gate is carried by the letter class, the word-code class is barely read even on the control. Read-out (fixed in the prereg):
+the 0.071 target decode is **descriptive only**; in it every one of the 23 tokens decoded as a code reads the single word
+`de` (`code_words: [["de", 23]]`), a collapse rather than a code layer, and the judge FAILs it between the shuffled null
+and real prose. No reading, grade or coverage claim is made. Coverage: the control loses the gate between 0.071 and 0.125,
+the same crossover shape LAG-SYL13 found for syllabary, so wordcode is testable by this tool only if the true one-reader
+error is near the central figure; a wordcode statement about the target needs the LAG-GAP/LAG-SYL score-gap gate at 0.071
+(pre-registered as an amendment, separate job). This is the second wordcode attempt on this target (WC-LAGARDE2 at 0.23,
+then this at 0.071/0.125), only `err` changed; rule 3's third-attempt clause applies to any further err-only attempt.
+
+Grades: 0 cipher tokens read (H 0, C 0, S 0, M 0, I 0); no reading. Status unchanged (`open`). Requests: github.com (git only).
+Vision 0, subagents 0. Files: `build_v2.py`, `ciphertext_6179_v2.tsv`, `ciphertext_6467_v2.tsv`, `specs/la-garde-1577.json`,
+`lag_err.tsv`, `lag_marks.py/.tsv`, `lag_marks_cells.py/.tsv`, `PREREG-LAG-WC.md`, `families/wordcode-1-codes=marked,err=0.071-
+lagv2wordcodeerr.txt`, HYPOTHESES.md two rows (written by family_run.py), prior-work.tsv, this section.
+
+## Remaining gaps (LAG-V2, 9 Oct 2026)
+Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading exists; homophonic/masc excluded by LAG-GAP; syllabary (regular) excluded at error <= 0.107 by LAG-SYL, not extended to 0.13 by LAG-SYL13; wordcode control gates at err 0.071 but not at 0.125 (LAG-V2), its target decode judge FAIL, descriptive only; coverage of the target undecided: one-reader marks-kept error 0.071 central, 0.125 upper; v2 itself 0.000 central / 0.067 upper against the settles)
+- wordcode score-gap gate at err 0.071 - blocker: not-attempted; LAG-V2's control met the gate at 0.071 (0.777) and failed it at 0.125 (0.527); next: a PREREG-LAG-WC amendment and the LAG-GAP/LAG-SYL-style gate (target vs 40 shuffled targets and 40 controls at 0.071, held-out power check), ~$2.5
+- marks-kept transcription error between 0.107 and 0.125 - blocker: illegible; LAG-MARKS' 16 doubt cells are resolution-limited at 150 dpi and both syllabary (LAG-SYL13) and wordcode (LAG-V2) lose their control gate in that band, so a further control level cannot settle coverage; next: a higher-resolution image of 6179 (KHA original or the WVO PDF at native resolution), then re-settle the doubt cells
+- syllabary T on the revised spec - blocker: not-attempted; LAG-SYL/LAG-SYL13's target score and shuffles were computed on the pre-LAG-V2 spec (7 marks differ); next: re-score T and the 40 shuffled targets on the LAG-V2 spec under Amendment 1's statistic as a PREREG-LAG-SYL amendment, ~$1
+- running-key / code-layer designs at N=229 - blocker: too-short; LAG-NEXT: the running_key control reads 27% with no noise on the target's 15 message lengths; reopens only with more same-system ciphertext (pooling) or a different instrument
+- two `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: illegible; LAG-MARKS looked both at 150 dpi, both doubt; a higher-resolution image is the only route
+
+## Escalation (LAG-V2, 9 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power for running key, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG; Gachard t.5 p.423 calendar summarises the clear part only (LAG-MARKS)
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of the 57 split cells, 16 left doubt (resolution-limited); LAG-V2 carried the 7 sure settles v2 lacked into v2
+- [ ] retry: wordcode run at the measured error (LAG-V2: control gates at 0.071 only); its score-gap gate not yet run
+Verdict: keep going: 2 internal gaps; cheapest next: the syllabary T re-score on the revised spec, ~$1, then the wordcode score-gap gate at err 0.071, ~$2.5

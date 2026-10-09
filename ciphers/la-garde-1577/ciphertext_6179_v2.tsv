@@ -12,9 +12,9 @@ p2L22	10	10~	M	B:16/C:10	digit majority 10, mark disputed
 p2L22	11	11	H		
 p2L22	12	11^	M	C:11	literal majority
 p2L22	13	13	H		
-p2L22	14	14	M	B:14^	literal majority
+p2L22	14	14^	H		LAG-MARKS 9 Oct 2026 sure image settle 14^ (v2 had 14); lag_marks_look.tsv; applied LAG-V2
 p2L22	15	3	M	B:[mark]3	literal majority
-p2L22	16	15	M	B:15^	literal majority
+p2L22	16	15^	H		LAG-MARKS 9 Oct 2026 sure image settle 15^ (v2 had 15); lag_marks_look.tsv; applied LAG-V2
 p2L22	17	17	M	C:19	literal majority
 p2L22	18	12	H		
 p2L22	19	15	H		
@@ -39,7 +39,7 @@ p2L24	15	2^	H
 p2L24	16	6	H		
 p2L24	17	17	M	C:17^	literal majority
 p2L24	18	20^	H		
-p2L24	19	11	M	A:11^	literal majority
+p2L24	19	11^	H		LAG-MARKS 9 Oct 2026 sure image settle 11^ (v2 had 11); lag_marks_look.tsv; applied LAG-V2
 p2L24	20	8	H		
 p2L24	21	11	M	C:11^	literal majority
 p2L24	22	6	H		
@@ -163,7 +163,7 @@ p3L8	9	10	H
 p3L8	10	3	H		
 p3L8	11	9	H		
 p3L8	12	21	H		
-p3L8	13	23^	M	B:23	digit majority 23, mark disputed
+p3L8	13	23	H		LAG-MARKS 9 Oct 2026 sure image settle 23 (v2 had 23^); lag_marks_look.tsv; applied LAG-V2
 p3L8	14	5	H		
 p3L8	15	3	H		
 p3L8	16	[mark]	H		
@@ -176,7 +176,7 @@ p3L8	22	10	H
 p3L8	23	8^	M	B:8	digit majority 8, mark disputed
 p3L8	24	[mark]	H		
 p3L8	25	24^	M	B:24	digit majority 24, mark disputed
-p3L9	1	20^	M	B:20	digit majority 20, mark disputed
+p3L9	1	20	H		LAG-MARKS 9 Oct 2026 sure image settle 20 (v2 had 20^); lag_marks_look.tsv; applied LAG-V2
 p3L9	2	8	H		
 p3L9	3	9	M	B:9^	digit majority 9, mark disputed
 p3L9	4	9^	H		
