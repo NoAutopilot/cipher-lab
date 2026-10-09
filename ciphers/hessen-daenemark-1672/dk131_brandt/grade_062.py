@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """BRANDT-062 grades (PREREG-BRANDT-062.md, gate PASS): per-line LCS traceback of the C-value letters against the line's gloss letters.
 C = C-value token LCS-matched to its line's gloss; M = every other cipher token. Writes reading_062.tsv; --check exits 1 if stale.
---sens drops the worker-settled glosses (L04 'König', L02 'gulden[?]') and reprints the gate."""
+--sens drops the worker-settled glosses (L04 'König', L02 'gulden[?]') and reprints the gate.
+BRANDT-REGRADE 9 Oct 2026: key = values_gate.tsv after V-BRANDT's 46 C->M regrade (15 C). PREREG-BRANDT-062B re-scored the gate on two
+blind gloss passes (score_062b.out: A 19 vs p99 14, B 18 vs p99 14, p 0.0005 each, PASS on both), so C grades stand; placement of the
+gloss over groups (the 'glossed' cover) is still the worker's settled column."""
 import csv, os, re, sys, random
 H = os.path.dirname(os.path.abspath(__file__))
 def norm(s):

@@ -1,0 +1,9 @@
+gloss: gloss62_blindA.tsv; C values 15; lines 6; groups 62; C-value tokens 21; gloss letters 72
+real LCS 19; control mean 9.49 p99 14 max 16 n 2000; p = 0.0005
+GATE PASS
+gloss: gloss62_blindB.tsv; C values 15; lines 6; groups 62; C-value tokens 21; gloss letters 70
+real LCS 18; control mean 8.73 p99 14 max 15 n 2000; p = 0.0005
+GATE PASS
+gloss: worker gloss column; C values 15; lines 6; groups 62; C-value tokens 21; gloss letters 71
+real LCS 19; control mean 8.84 p99 14 max 16 n 2000; p = 0.0005
+GATE PASS

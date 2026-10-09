@@ -1,54 +1,54 @@
 block	idx	value	grade	letter_or_meaning	note
-0020u	1	52	C	e	C value, LCS-matched to gloss
+0020u	1	52	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0020u	2	74	M		not a C value
-0020u	3	94	C	n	C value, LCS-matched to gloss
-0020u	4	56	C	e	C value, LCS-matched to gloss
+0020u	3	94	M	n	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	4	56	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0020u	5	259	M	heuraht (0020u margin + 0021 interlinear)	not a C value
 0020u	6	156	M	z (zwischen; 0049 also z, M)	not a C value
-0020u	7	144	C	w	C value, LCS-matched to gloss
-0020u	8	75	C	i	C value, LCS-matched to gloss
-0020u	9	125	C	s	C value, LCS-matched to gloss
-0020u	10	42	C	c	C value, LCS-matched to gloss
-0020u	11	73	C	h	C value, LCS-matched to gloss
-0020u	12	53	C	e	C value, LCS-matched to gloss
+0020u	7	144	M	w	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	8	75	M	i	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	9	125	M	s	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	10	42	M	c	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	11	73	M	h	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	12	53	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0020u	13	92	M		not a C value
-0020u	14	46	C	d	C value, LCS-matched to gloss
-0020u	15	52	C	e	C value, LCS-matched to gloss
+0020u	14	46	M		not a C value
+0020u	15	52	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0020u	16	95	M		not a C value
 0020u	17	198	M		not a C value
 0020u	18	47	M		not a C value
-0020u	19	53	C	e	C value, LCS-matched to gloss
+0020u	19	53	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0020u	20	74	M		not a C value
 0020u	21	100	M		not a C value
-0020u	22	117	C	r	C value, LCS-matched to gloss
+0020u	22	117	M	r	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0020u	23	79	M		not a C value
 0020u	24	71	M		not a C value
 0020u	25	74	M		not a C value
 0020u	26	129	M		not a C value
 0020u	27	75	M	i	C value, not matched in gloss
 0020u	28	67	M		not a C value
-0020u	29	56	C	e	C value, LCS-matched to gloss
-0020u	30	117	C	r	C value, LCS-matched to gloss
+0020u	29	56	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	30	117	M	r	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0020u	31	272	M		not a C value
 0020u	32	156	M	z (zwischen; 0049 also z, M)	not a C value
 0020u	33	138	M		not a C value
-0020u	34	94	C	n	C value, LCS-matched to gloss
-0020u	35	53	C	e	C value, LCS-matched to gloss
+0020u	34	94	M	n	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	35	53	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0020u	36	64	M		not a C value
 0020u	37	101	M		not a C value
 0020u	38	42	M	c	C value, not matched in gloss
 0020u	39	74	M		not a C value
 0020u	40	76	M		not a C value
-0020u	41	52	C	e	C value, LCS-matched to gloss
-0020u	42	118	C	r	C value, LCS-matched to gloss
-0020u	43	53	C	e	C value, LCS-matched to gloss
-0020u	44	94	C	n	C value, LCS-matched to gloss
+0020u	41	52	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	42	118	M	r	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	43	53	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
+0020u	44	94	M	n	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0021	1	244	M	Gesanter (0021)	not a C value
 0021	2	209	M	Schwedes (0021)	not a C value
-0021	3	53	C	e	C value, LCS-matched to gloss
+0021	3	53	M	e	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0021	4	74	M		not a C value
-0021	5	94	C	n	C value, LCS-matched to gloss
+0021	5	94	M	n	C value, LCS-matched to the worker-settled gloss; M per V-BRANDT (blind gloss FAIL)
 0021	6	54	M		not a C value
 0021	7	259	M	heuraht (0020u margin + 0021 interlinear)	not a C value
 0021	8	196	M	der verwittibten Königin (0021)	not a C value
-# tokens 52: C 23, M 29
+# tokens 52: C 0, M 52

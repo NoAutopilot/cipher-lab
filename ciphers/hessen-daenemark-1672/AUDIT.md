@@ -279,3 +279,8 @@ blind passes test below makes that question moot for test 2, not for BRANDT-UP.
    second gate. Rule for the next Brandt job (BRANDT-062): any gloss used as a known answer is settled blind to values_gate.tsv, and only fresh data counts.
 Requests: none. Vision: none. Safe sentence: "A period letter-by-letter gloss on two Brandt leaves (Dänemark 131, 1672) fixes 15 of the cipher's letter
 values; a held-out leaf confirms the 0020 alignment (34/48 vs chance p99 12, also on each blind pass)." Unsafe: "the Brandt cipher is read" / "23 tokens C on 0020's head".
+
+**BRANDT-REGRADE (9 Oct 2026, solver-side, LANE FAMILY-A2f, account 2): V-BRANDT's corrections applied.** values_gate.tsv 46 C -> M (15 C, 9 M;
+the frozen pre-regrade copy is values_gate_v0.tsv); reading_up.tsv 52 tokens C 0, M 52. BRANDT-062's 0062 gate re-scored per the item 7 rule on two
+blind gloss passes (PREREG-BRANDT-062B.md 50ad16493): A 19 vs p99 14, B 18 vs p99 14, p 0.0005 each, PASS both; reading_062.tsv C 17, M 45 (46 dropped).
+No N-class or depth changed here (a solver job does not assign them).
