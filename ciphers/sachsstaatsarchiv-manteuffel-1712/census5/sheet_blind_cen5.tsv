@@ -1,0 +1,24 @@
+sheet	label	read	note
+1	C1-2	code	dense numeral runs right page (control-like)
+1	C1-1,3,4,5,6,7,8,9,10,11,12	none	clear prose, no code-group line seen at sheet scale
+2	C2-11	code	numeral runs right page (control-like)
+2	C2-3	possible	short group at foot of right page
+2	C2-6	possible	dense two-page text, a few numeral-like strings
+2	C2-1,2,4,5,7,8,9,10,12	none	prose
+3	C3-9	code	control-like dense runs
+3	C3-12	none	archive Beiblatt
+3	C3-5	none	heavily struck-through text (Schwer Lesbar tab), no code groups seen
+3	C3-1,2,3,4,6,7,8,10,11	none	prose (C3-6 = clear control)
+4	C4-11	code	control-like dense short lines
+4	C4-9	possible	left page darker struck/dense block, not a code line
+4	C4-1,2,4,5,6,7,8,10,12	none	prose (C4-3 = clear control)
+5	C5-1	code	control-like dense runs
+5	C5-12	code	inline dotted numeral runs in lower right page (stamp ~128, 6 Juillet 1712 header); no gloss visible at sheet scale
+5	C5-11	possible	right page a few underlined words, no run seen
+5	C5-3,4,5,6,7,8,9,10	none	prose (C5-2 = clear control)
+6	C6-3	code	control-like (numeral lines top of right page)
+6	C6-1,2,4,5,6,7,8,9,11,12	none	prose with strike-throughs (C6-10 = clear control)
+7	C7-1	code	control-like
+7	C7-11	possible	top lines of right page numeral-like groups
+7	C7-2	possible	top of right page possible numerals
+7	C7-3,4,5,6,7,8,10,12	none	prose (C7-9 = clear control)
