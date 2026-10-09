@@ -1,12 +1,13 @@
+# FROZEN copy of values_gate.tsv as BRANDT-GATE wrote it (16 C), kept by BRANDT-REGRADE 9 Oct 2026 as the input of the records that were
+# scored on it: score_up.py (PREREG-BRANDT-UP), score_062.py (PREREG-BRANDT-062), v_brandt.py (V-BRANDT). Current grades: values_gate.tsv.
 # BRANDT-GATE 9 Oct 2026: key_0020.tsv single-letter values tested on 0049 (gate_0049.py). C = top meaning on 0020 (aligned) AND equal
 # to every 0049 gloss of the value, both PREREG-BRANDT-GATE gates PASS; M = absent from 0049 or in disagreement (0049 gloss given).
-# BRANDT-REGRADE 9 Oct 2026: V-BRANDT's regrade applied (46 C -> M): 15 C, 9 M. The pre-regrade file is values_gate_v0.tsv.
 value	letter	grade	n0049	note
 34	a	C	2	
 35	a	C	1	
 42	c	C	3	
 45	c	M	3	key_0020 top t, 0049 gloss c,c,c
-46	d	M	1	V-BRANDT regrade (BRANDT-REGRADE 9 Oct 2026): only 0049 witness contested (both blind passes read gloss a; d was a worker override with key_0020 on disk)
+46	d	C	1	
 52	e	C	1	
 53	e	C	3	
 56	e	C	4	

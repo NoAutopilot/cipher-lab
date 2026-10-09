@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""BRANDT-UP known-answer test (PREREG-BRANDT-UP.md). Reads values_gate.tsv (C rows), ciphertext_0020u.tsv,
+"""BRANDT-UP known-answer test (PREREG-BRANDT-UP.md). Reads values_gate_v0.tsv (C rows; the frozen pre-BRANDT-REGRADE copy of values_gate.tsv), ciphertext_0020u.tsv,
 ciphertext_0021.tsv, gloss_0020u.txt and the gloss column of ciphertext_0021.tsv; prints real LCS, control stats, gate."""
 import csv, random, re, sys, os
 H = os.path.dirname(os.path.abspath(__file__))
@@ -9,7 +9,7 @@ def norm(s):
     return re.sub(r'[^a-z]', '', s)
 def rows(fn):
     return [r for r in csv.DictReader((l for l in open(os.path.join(H, fn)) if not l.startswith('#')), delimiter='\t')]
-key = {r['value']: r['letter'] for r in rows('values_gate.tsv') if r['grade'] == 'C'}
+key = {r['value']: r['letter'] for r in rows('values_gate_v0.tsv') if r['grade'] == 'C'}
 def groups(fn):
     return [r['token'] for r in rows(fn) if re.fullmatch(r'\d+', r['token'])]
 g20 = groups('ciphertext_0020u.tsv'); g21 = groups('ciphertext_0021.tsv')

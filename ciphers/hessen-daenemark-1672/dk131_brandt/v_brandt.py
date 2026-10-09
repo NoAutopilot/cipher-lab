@@ -55,7 +55,7 @@ def main(out):
     def norm(s):
         s = s.lower().replace('ä', 'ae').replace('ö', 'oe').replace('ü', 'ue').replace('ß', 'ss'); s = re.sub(r'\[\?\]', '', s)
         return re.sub(r'[^a-z]', '', s)
-    C = {r['value']: r['letter'] for r in rows('values_gate.tsv') if r['grade'] == 'C'}
+    C = {r['value']: r['letter'] for r in rows('values_gate_v0.tsv') if r['grade'] == 'C'}
     grp = lambda fn: [r['token'] for r in rows(fn) if re.fullmatch(r'\d+', r['token'])]
     g20, g21 = grp('ciphertext_0020u.tsv'), grp('ciphertext_0021.tsv')
     gtxt = lambda fn: norm(''.join(l for l in open(fn) if not l.startswith('#')))
