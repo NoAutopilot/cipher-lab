@@ -689,7 +689,7 @@ Report: what was found and where it was not found; novelty not classified.
 
 ## UNA3-BLA hi-res re-read of the remaining sign-M columns (9 Oct 2026)
 
-Account-1 worker UNA3-BLA, 10:42-11:0x UTC by date -u (brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md "## UNA3-BLA").
+Account-1 worker UNA3-BLA, 10:42-10:53 UTC by date -u (brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md "## UNA3-BLA").
 Pre-registered as PREREG-D3BLA2.md amendment 4 (pushed 9ff01e06d, time fixed dbd8b5dfd, before any tile was cut). `tools/prior_work.py
 huntington-blathwayt-madrid-1728 --derive --step-type lookup --offline`: 0 proposed rows, no LEAD; the last claim on the folder was UNA2-BLA (done).
 
