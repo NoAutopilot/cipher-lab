@@ -1,10 +1,10 @@
 passage	pos	sign_id	conf	note
 L01	1	S40	M	
-L01	2	?	L	split
+L01	2	S54	M	split+adj
 L01	3	S65	H	
 L01	4	S93	H	
 L01	5	S84	H	
-L01	6	?	L	split
+L01	6	S54	L	split+adj
 L01	7	S84	H	
 L01	8	S13	H	
 L01	9	S23	H	
@@ -19,7 +19,7 @@ L01	17	S94	H
 L01	18	S93	H	
 L01	19	S40	M	
 L01	20	S69	H	
-L01	21	?	L	split
+L01	21	S55	M	split+adj
 L01	22	S42	M	
 L01	23	S80	H	
 L01	24	S52	M	
@@ -29,31 +29,31 @@ L02	1	S87	M
 L02	2	S45	M	
 L02	3	S94	H	
 L02	4	S93	H	
-L02	5	?	L	split
+L02	5	S32	L	split+adj
 L02	6	S69	H	
-L02	7	S80	M	split_H_B
+L02	7	S65	L	split_H_B+adj
 L02	8	S49	M	
 L02	9	S89	H	
 L02	10	S93	H	
-L02	11	?	L	split
+L02	11	S76	M	split+adj
 L02	12	S93	M	
-L02	13	?	L	split
+L02	13	S54	L	split+adj
 L02	14	S35	H	
-L02	15	?	L	split
-L02	16	S56	M	split_H_A
+L02	15	S16	M	split+adj
+L02	16	S56	M	split_H_A+adj
 L02	17	S80	H	
-L02	18	?	L	split
+L02	18	S76	M	split+adj
 L02	19	S17	H	
-L02	20	?	L	split
+L02	20	S74	L	split+adj
 L02	21	S61	H	
 L02	22	S52	H	
 L02	23	S22	M	
 L02	24	S75	M	
 L02	25	S23	H	
-L02	26	?	L	split
+L02	26	S31	M	split+adj
 L02	27	S70	H	
 L02	28	S84	H	
-L02	29	?	L	split
+L02	29	S88	L	split+adj
 L02	30	S93	H	
 L02	31	S40	M	
 L02	32	S57	H	
@@ -72,40 +72,40 @@ L03	1	S97	H
 L03	2	S80	H	
 L03	3	S84	H	
 L03	4	S75	H	
-L03	5	?	L	split
+L03	5	S74	M	split+adj
 L03	6	S80	H	
 L03	7	S13	H	
-L03	8	?	L	split
+L03	8	S30	L	split+adj
 L03	9	S45	H	
-L03	10	?	L	split
+L03	10	S54	M	split+adj
 L03	11	S52	H	
-L03	12	?	L	split
+L03	12	S88	M	split+adj
 L03	13	S65	M	
 L03	14	S17	H	
 L03	15	S84	H	
 L03	16	S26	H	
 L03	17	S93	H	
-L03	18	?	L	split
+L03	18	S32	L	split+adj
 L03	19	S23	H	
 L03	20	S62	H	
 L03	21	S69	H	
 L03	22	S75	H	
 L03	23	S73	H	
 L03	24	S94	H	
-L03	25	S88	M	split_H_B
-L03	26	?	L	split
+L03	25	S88	M	split_H_B+adj
+L03	26	S30	L	split+adj
 L03	27	S67	M	
 L03	28	S80	H	
 L03	29	S84	H	
 L03	30	S69	H	
 L03	31	S70	H	
 L03	32	S23	H	
-L03	33	?	L	split
+L03	33	S77	L	split+adj
 L03	34	S62	H	
-L03	35	?	L	split
+L03	35	S65	L	split+adj
 L03	36	S61	H	
 L03	37	S80	H	
-L03	38	S16	M	split_H_B
+L03	38	S16	M	split_H_B+adj
 L03	39	S52	H	
 L03	40	S23	H	
 L03	41	S89	H	
@@ -116,10 +116,10 @@ L03	45	S76	M
 L03	46	S88	H	
 L04	1	S16	M	
 L04	2	S45	H	
-L04	3	S56	M	split_H_A
+L04	3	S56	M	split_H_A+adj
 L04	4	S53	M	
 L04	5	S93	H	
-L04	6	?	L	split
+L04	6	S60	M	split+adj
 L04	7	S35	H	
 L04	8	S84	H	
 L04	9	S80	H	
@@ -128,7 +128,7 @@ L04	11	S32	H
 L04	12	S45	H	
 L04	13	S37	H	
 L04	14	S80	H	
-L04	15	S56	M	split_H_A
+L04	15	S56	M	split_H_A+adj
 L04	16	S70	H	
 L04	17	S66	H	
 L04	18	S87	M	
@@ -139,7 +139,7 @@ L04	22	S23	H
 L04	23	S13	H	
 L04	24	S93	H	
 L04	25	S62	H	
-L04	26	?	L	split
+L04	26	S60	M	split+adj
 L04	27	S23	H	
 L04	28	S88	M	
 L04	29	S45	H	
@@ -151,12 +151,12 @@ L04	34	S93	H
 L04	35	S75	H	
 L04	36	S17	H	
 L04	37	S84	H	
-L04	38	S80	M	split_H_B
-L04	39	?	L	split
+L04	38	S80	M	split_H_B+adj
+L04	39	S49	L	split+adj
 L04	40	S88	M	
-L04	41	?	L	split
+L04	41	S76	M	split+adj
 L04	42	S52	H	
-L04	43	S74	M	split_H_A
+L04	43	S74	M	split_H_A+adj
 L04	44	S75	H	
 L05	1	S23	H	
 L05	2	S35	H	
@@ -168,13 +168,13 @@ L05	7	S73	H
 L05	8	S26	H	
 L05	9	S35	H	
 L05	10	S37	H	
-L05	11	S69	M	split_H_B
+L05	11	S60	L	split_H_B+adj
 L05	12	S75	H	
 L05	13	S76	M	
 L05	14	S80	H	
-L05	15	?	L	split
+L05	15	S74	M	split+adj
 L05	16	S52	H	
-L05	17	?	L	split
+L05	17	S30	L	split+adj
 L05	18	S53	H	
 L05	19	S75	H	
 L05	20	S37	H	
@@ -188,14 +188,14 @@ L05	27	S69	H
 L05	28	S88	M	
 L05	29	S75	H	
 L05	30	S88	H	
-L05	31	?	L	split
+L05	31	S30	L	split+adj
 L05	32	S89	H	
 L05	33	S75	H	
 L05	34	S22	M	
 L05	35	S93	H	
 L05	36	S80	H	
 L05	37	S77	M	
-L05	38	?	L	split
+L05	38	S84	L	split+adj
 L05	39	S61	H	
 L05	40	S47	M	
 L05	41	S23	H	

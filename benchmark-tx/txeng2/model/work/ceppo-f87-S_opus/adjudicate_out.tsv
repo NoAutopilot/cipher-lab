@@ -1,0 +1,37 @@
+passage	pos	sign_id	conf	note
+L01	2	S54	M	b with slanting stroke across top; rejected S77 (small 6)
+L01	6	S54	L	b with top stroke; rejected S77
+L01	21	S55	M	cross with ring above stem; rejected plain +
+L02	5	S32	L	loop with descending curl; rejected S62 (tall beta)
+L02	7	S65	L	8 with dot above, bar from neighbour only touches; rejected S80
+L02	11	S76	M	e-loop plus y tail; rejected S84
+L02	13	S54	L	plain b; rejected S77
+L02	15	S16	M	triangle with tick; rejected S42
+L02	16	S56	M	t3 with cross tick; rejected S52
+L02	18	S76	M	e-loop plus dotted y; rejected S84
+L02	20	S74	L	b with dot; rejected S77
+L02	26	S31	M	looped l with tail; rejected S87
+L02	29	S88	L	double bar crossed; rejected S24
+L03	5	S74	M	tall b with blot at top; rejected S54
+L03	8	S30	L	slash between dots; rejected S49
+L03	10	S54	M	b with bar over top; rejected S77
+L03	12	S88	M	two bars crossed; rejected S24
+L03	18	S32	L	loop with descending curl; rejected S40
+L03	25	S88	M	double bar crossed; rejected S24
+L03	26	S30	L	slash between dots; rejected S49
+L03	33	S77	L	6 with small tick; rejected S74
+L03	35	S65	L	8 with flourish over top; rejected S37
+L03	38	S16	M	triangle; rejected S42
+L04	3	S56	M	t3; rejected S52
+L04	6	S60	M	oval crossed by double bar; rejected S69
+L04	15	S56	M	t3; rejected S52
+L04	26	S60	M	oval with two bars; no new cell needed
+L04	38	S80	M	8 crossed by bar; rejected S65
+L04	39	S49	L	slash between dots; rejected S73
+L04	41	S76	M	e-loop plus y; rejected S91
+L04	43	S74	M	b with blob; rejected S77
+L05	11	S60	L	oval crossed by two bars; rejected S69 and X_THETA2
+L05	15	S74	M	b with blob above; rejected S54
+L05	17	S30	L	slash between dots; rejected S49
+L05	31	S30	L	slash between dots; rejected S49
+L05	38	S84	L	small looped x; rejected S42

@@ -1,0 +1,23 @@
+passage	pos	sign_id	conf	note
+L07	4	T18	M	oval wide, stem below only; T98 is tall narrow with stem above
+L07	23	T18	M	same wide oval stem below; rejected T98
+L07	29	T50	M	omega with left curl/tail, not plain omega; rejected T92
+L08	3	X_NEW	L	t-like: bar crossing stem, hooked foot; T42 has straight stem
+L08	5	X_NEW	L	same t-like hooked foot as pos 3; rejected T42
+L08	10	T50	M	omega with left curl; rejected plain T92
+L08	17	T18	M	wide oval, stem below only; rejected T98
+L08	20	T66	L	hooked top, bar low on stem; neither T51 nor T95 fits well
+L08	28	T18	M	wide oval stem below; rejected T98
+L09	1	T29	M	epsilon joined to small circle as one sign; rejected T24
+L09	2	NONE	M	circle is part of the joined T29 sign, not separate
+L09	4	T18	M	wide oval stem below; rejected T98
+L09	30	T46	L	small 8-like numeral at line end by margin; digit pair unclear
+L10	3	T18	M	wide oval stem below; rejected T98
+L10	5	T50	M	omega with left curl, differs from plain omega T92 at line start
+L10	8	T18	M	wide oval stem below; rejected T98
+L10	16	X_NEW	L	lone 8-like sign before T76; not the two-digit T46
+L11	4	T66	L	hooked top with bar low on stem; rejected T95
+L11	14	T45	M	circle with stem above touching it; rejected plain circle T88
+L11	29	T86	M	two parallel verticals with short bars like agreed T86 nearby; rejected T60
+L11	31	T95	M	separate stem sign with bowl and bar at line end; rejected none
+L12	28	T66	L	hooked top, bar low on stem; T95 vs T66 close
