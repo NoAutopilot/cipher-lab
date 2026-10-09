@@ -6571,6 +6571,28 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_01FeQWmACzMQn2r9uJttmV36, account 1, incarnation 8 of the blast refill), 9 October 2026 (20:40-22:3x UTC by date -u; closed: last planned wave done, lane about 48 of 60; seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-2039; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger8-jobs.md (waves 1-3). Thirteen
+workers 43.70 + orchestrator ~4.4 by get_session. Five_hour allowed; seven_day allowed_warning on every session (not a stop under lane-common-blast).
+Result (eckert-1864; ONE audit each, not counted until a second): N3 D3 -- E333 (weak, facts in ORN I/21), E335, E340, E346, E347, E350, E358; N3 weak -- E349 msg 1.
+Second audits queued: AUD2-LEDGER-30 (E333 E335 E340), -31 (E346), -32 (E347 E349 msg 1 E350), -33 (E358); 31/32 re-tagged to account 4 by that lane.
+N1 at first audit (19): E331 E332 E334 E336-E339 E341-E345 (E344 para 1) E348 E349 msg 2 (Grant Papers 12) E352 E353 E354 E360.
+- Keys: lavender = Washburne 3/3 vs 0/3 (KEY-LAV, reader not blind) and the Tulip Open/Period rule (11/11 No. 1, 108/108 No. 2) are in key.md via FIX-FM15.
+  KEY-CANBY: key p.17 l.5-6 reads Hurlbut (one hand), but all 6 filed No. 1 tokens of Leghorn/Legend/Leopard (E55 E323 E334 E345x3) read Canby, all after 11 May
+  1864; rule-4 record in HYPOTHESES.md, key.md condition proposed in NOTES "## KEY-CANBY", NOT yet applied.
+- Read: mssEC 18 E341-E360 (MS18-R4, MS18-R5). Fixes: FIX-FM14 (AUD2-26..29), FIX-FM15, FIX-FM16; decode/no2/no9 --check exit 0.
+- Yield: the reader's "not located" was wrong for 6 of 13 rows audited (E334 E343 E345 E352 E353 + E349 msg 2); mssEC 18 gives ~1 N3 per 3 rows read.
+**Next** (costs this incarnation: Sonnet read ~0.2/row; Opus first audit ~1.9/entry; N1 confirm ~0.6/entry; Opus key test ~2.2; Sonnet FIX ~1.3):
+1. FIX-FM17 (Sonnet, ~1.5): apply KEY-CANBY's key.md condition (Legend-family = Canby from 11 May 1864, Hurlbut before, H key-book + C print, rule-4 note) and
+   re-grade E55 E323 E334 E345; carry FV-MS18i s.5 (negroes/reward clear words, E358 header with holder 7976-7978) and status.json/SO propagation.
+2. First verifiers on MS18-R5's unlocated rows E351 (Dec 1865, share tie), E355, E356, E357 (label No 2 vs sense No 1), E359: ~1.9 each, two Opus sessions; run the
+   OR print grep by date + addressee FIRST (half the reader's "not located" rows were printed).
+3. E344 para 2 (Eckert-office note, Lamb/Beckwith): D1, unclassified; a KEY or context job only if a sibling note turns up.
+4. mssEC 18 next No. 1 rows after 9770/1 in ms18/clean-ms18.tsv (spares 9674/0, 9886/1, 9676/1, 9769/1; ~180 left): 10 per Sonnet reader (~2).
+5. Blocked (unchanged): 5648/2 5639/2 (no book in hand); Fort Monroe Jan-Apr 1865 and mssEC 18 10058/0 (no 1865 Oct book); 8472, 6254, 9660 (no book; Cipher
+   No. 4 Friedman copy needs a desk browser, LOCAL-QUEUE). Anderson Galleries 1908 catalogue for E305 (LOCAL-QUEUE L70).
+
 ## LANE LEDGER handoff (session_01PkXfi2qevAQ4DhSpGJHhVb, account 1, incarnation 7 of the blast refill), 9 October 2026 (16:40-20:0x UTC by date -u; closed: last planned wave done, lane about 49 of 60; seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-1640; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger7-jobs.md (waves 1-4). Twelve
