@@ -1207,3 +1207,11 @@ Postmortem: (a) a stored tile coordinate (L09.5) was 70 px off in the solver's c
 recut -- a reader working from the script alone reads the neighbour; fix proposed, not applied: correct `cut_r8_tiles.py` L09.5 to x 720.
 (b) a round-1 read push was rejected on a fast-forward race; push the reads before opening the key, and paste the remote hash.
 Hosts: none (0 network requests); github push only. Vision: 2 sheet reads by this verifier, no subagent.
+
+## f.21v grade note (UNA-CEPPO, 9 Oct 2026; solver-side propagation per rule 10, no class or depth change)
+
+L07.34 S26 (s, conf L, grade M) -> X_NEW (unkeyed, grade U) by the R-s witness-shape read on a 4x tile (open-top 2, no loop, no dot;
+the glossed S26 on fr.3252 f.36v has both), with the score preferring U (-1.0886 vs -1.1002; random-drop null p 0.046). **VERIFIER WANTED.**
+L07 now reads `ranoreauantiqualchenartitonleuarm·` (was `...leuarms`); the blind reconciliation above already had an unkeyed sign here.
+f.21v S 195 / M 59 / I 7 / U 6; no S token changed, so the verifier-endorsed S count (162) is unaffected; judge FAIL -1.128 -> -1.113;
+decode --check exit 0. SO-CEPPO-F21V's prompt does not quote L07, so it is unaffected. Details: NOTES.md "UNA-CEPPO (9 Oct 2026)".

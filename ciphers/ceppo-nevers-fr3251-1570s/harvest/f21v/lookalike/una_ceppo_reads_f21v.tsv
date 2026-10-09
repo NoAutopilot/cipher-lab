@@ -1,0 +1,5 @@
+token	passD	conf	read	rule	category	tile	note
+L07.34	S26	L	plain 2 with an open hooked top (no closed loop), no dot, short detached dash at mid-height right of the base; legible at 4x	R-s	OTHER	una_ceppo_tiles/L07.34.jpg	reference: glossed S26 f.36v v36top_L01_s2 idx13 (closed-loop top, dot, long baseline stroke; una_ceppo_tiles/ref_S26_f36v_v36top_L01_s2_idx13.jpg); printed S26/S10 (ref_printed_*.png). Skeleton (2 + baseline stroke) resembles S26, but both diagnostic marks of the glossed form (loop, dot) are absent; the prereg lists 2-with-trailing-dash under OTHER. Read 05:5x UTC 9 Oct 2026 by this worker eye, before any score
+L01.11	S61	M	not cut	none	no rule	-	neither S61 nor S94 glossed in witness_f36
+L05.13	S40	M	not cut	none	no rule	-	neither S40 nor S32 glossed; S32 looped family [retired] for blind reads
+L11.2	X_NEW	L	not cut	none	no rule	-	S25 not glossed; X_NEW has no value
