@@ -3435,3 +3435,39 @@ Requests: hdl.huntington.org 13 under the token (14:03-14:05 UTC; one RemoteDisc
 
 ### Escalation
 Siblings: 4610-4611 (E304). Clear pages: E304 only. Known keys: No. 1 reads all three. Print: Tribune 11 May (E304); E305/E306 unchecked in OR I/40 pt 2 and Plum. Image check: partial. Verdict: keep going.
+## FM-R6c (9 Oct 2026, account 1, for LANE LEDGER)
+
+Three long 1864 rows of the Fort Monroe ledger (Huntington object 5952 = mssEC 25): 5777/2, 5659/0, 5786/0, read as Cipher No. 1 and filed as E307-E309 (`ciphertext.txt` via `fortmonroe/fm_r6c_file.py`; `decode.py --write`, then `--check` exit 0). No No. 2 entry. Scripts and outputs in `fortmonroe/`: `fm_r6c.py` + `fm_r6c_controls.txt` (shares, three-book decode, shuffled control), `fm_r6c_printcheck.py/.out`, `fm_r6c_datescan.py/.out`, `fm_r6c_hdl.py/.out`, `fm_r6c_beapi.py/.out` (partial). Novelty not classified (rule 10).
+
+Shares s1/s2/s9 (FM-PRE scorer at HEAD): 5777/2 .365/.260/.073; 5659/0 .348/.326/.101; 5786/0 .266/.266/.114. best_book 1 on all three. Shares do not pick the book: the book is the one under which the code words read and the shuffled No. 1 / No. 2 fail. The shuffled No. 1 reads the same count of H words (25/33/22) but gives nonsense (Burnside, Goldsboro, Palmer where No. 1 gives Newbern, Monroe, Washington); No. 2 gives Sherman, Tennessee, McMinnville. Under No. 1: Newbern, Monroe, Washington, the Albemarle fight, the Illinois and Knox (= Butler, per CONF-FM2) read.
+
+**Holder search first (all pointers, CISOSEARCHALL, 8 queries).** 5659/0 (E308) has a CLEAR period copy at **pointer 4607** (object 4849, "Page 166", Fort Monroe 3.40 PM 9 May 1864: "The following is just handed in here it is news to me ---- from Newbern May 7th for Carlton and Porter daily Christian advocate ---- a terrific naval engagement in Albemarle Sound is reported ---- the gunboat bombshell was captured back from the rebel and the cotton planter driven off ---- The ram Albemarle fought seven of our Gunboat disabling the rudder and piercing the boiler of one of them. The ram finally retired to the Roanoke apparently uninjured, she is armed with one hundred guns ---- the land attack upon Newberne is apparently over ---- Chaplain White of the providence conference was on an outpost and is supposed to be captured sig J Emory Round supt M Episcopal Mission 3 pm strange we have not heard this"). Our decode of E308 agrees clause for clause (the key words Newbern, captured, Rebel, Ram, Gunboat, Roanoke, 100, Gun, Attack, Out post all match the clear words): a C-type check of Cipher No. 1, filed as a cipher entry with its clear copy named, not as unread. Slips the clear copy exposed, fixed by notes in the entry: "plant" is the Cotton Plant (plain), "white" in Chaplain White is plain; "fool" (Philadelphia in the key) has a dash in the clear copy, M. Pointer 4607 also carries a second telegram (S. P. Lee, Recd 4.30 pm, for Sec. Navy), the sibling of 5659/1, not ours. Nothing found for E307 (the one "Gaughey" hit is pointer 5778, E307's own continuation) or E309 (hits are the entry's own page and unrelated Knox entries 5707, 5728, 9912).
+
+**Prior print (phrase grep over 168 cached/scratch volumes, then date + keyword windows).** Volumes include OR I/33, 36 pt 1-3, 40 pt 3, 42 pt 2-3, 43 pt 1-2, 45 pt 2, ORN I/9 and I/10, Butler III-V. E307: no hit ("McGaughey" in OR I/45 pt 2 is a Maj. John McGaughey, another man). E308: context only, the official reports of the 5-8 May fight (ORN I/10 "Albemarle Sound, May 7, 1864", "Bluff Point, May 8"; OR I/36 pt 2 "Off Roanoke River, May 6"); the telegram as such not found in print, its clear copy is at the holder. E309: none (the 4 Oct 1864 window is empty in OR I/42 pt 3). Grant Papers by be-api: 4 of 9 queries returned before the run stalled and was stopped (no hit for Rucker/steamers, Illinois, Chambersburg-Sheldon, Albemarle-Sheldon). A miss is a search result for the log, not a statement about print.
+
+**Image check** (3 pages at 2400 px, cut into strips with PIL because `iiif_lines.py --image` found 0 lines on the ruled-grid ledger pages; own entry only): 5777 the whole entry from the address to the signature; 5659 from the head to the signature; 5786 from the head to the foot of Sheldon's reply. The transcription matches the image on every line read (the grid is read row by row, as transcribed); "ravished" is an insertion above "captured". E307's last lines (water house ... Jay are Gilmore) are on pointer 5778, not eye-checked. E309 holds two telegrams in the one holder entry (Eckert 3 PM, Sheldon's reply 5.30 PM), filed as entries-fm.tsv builds it.
+
+| row | ID | date, direction, content as read | book / H / M | clause (chosen / No.2 / shuffled) | print found |
+|---|---|---|---|---|---|
+| 5777/2 | E307 | 9 Aug 1864 (from Newbern 6 Aug, 4 PM) Sheldon to Eckert: the Chambersburg affair has reached him, mother nearly insane, sisters without home, clothes or money, must go a week or two, Newport office closed, someone dangerously ill in hospital, asks an operator or two by return boat, Mack Gaughey to take charge, back pay, reply by telegraph | No. 1, H 23, M 1 (Norfolk) | reads / "Sherman", "Tennessee" / "Burnside", "Goldsboro" | none located; personal |
+| 5659/0 | E308 | 9 May 1864 Sheldon to Eckert: the Albemarle fight, from Newbern 7 May for Carlton and Porter, Daily Christian Advocate | No. 1, H 31, M 1 (Philadelphia) | reads / "McMinnville", "Sunday" / "Burnside", "Jeff Davis" | **clear copy at holder pointer 4607** (object 4849, p.166); context ORN I/10 |
+| 5786/0 | E309 | 4 Oct 1864 Eckert (Washington 3 PM) to Sheldon for Col. Webster, Chief Quartermaster Vinton: send all the steamers that can be spared, give the names, signed D H Rucker Brig. Gen.; Sheldon's reply 5.30 PM: no spare boats but the Illinois and those collected by order of Knox, has telegraphed Knox to forward them, the Illinois nearly discharged | No. 1, H 21, M 2 (sheaf, closing signature) | reads / "Cars", "Ammunition" / "Enemy", "Steele Fdk" | none located |
+
+Grades: decoder H 75 over three entries (E307 23, E308 31, E309 21), no I; M by my reading: E307 Norfolk, E308 Philadelphia, E309 sheaf and the closing signature "are see webster pandora and vinton end". C: E308 against clear copy 4607. Plain tails and unread filler U, uncounted. Check: `python3 decode.py --check` exit 0 after `--write`. Requests: hdl.huntington.org 13 (8 CISOSEARCHALL, 3 IIIF pages, 2 dmGetItemInfo); archive.org 4 downloads (2 s apart) + 4 be-api, all 200.
+
+## Remaining gaps (FM-R6c, 9 Oct 2026)
+Read so far: three of three filed (E307-E309).
+- E307 tail (pointer 5778 "water house ... Jay are Gilmore") - blocker: not-attempted; transcription only, not eye-checked; next: one 2400 px strip of pointer 5778, ~$0.15
+- E308 clear copy 4607 - blocker: not-attempted; its page image not viewed (transcription only); next: confirm on the 4607 image and look for the printed source (Daily Christian Advocate 9-10 May 1864), ~$0.4
+- E307 and E309 telegram words - blocker: not-attempted; Grant Papers be-api 5 of 9 queries and Butler IV/V by be-api not run; next: finish fm_r6c_beapi.py, ~$0.3
+- E309 closing signature and the word sheaf - blocker: not-attempted; the sign-off words are unread filler in the key; next: compare with other Webster/Vinton sign-offs (FIX job), ~$0.2
+
+## Escalation (FM-R6c, 9 Oct 2026)
+- [x] siblings: same-page neighbours (5777/1, 5659/1, the S. P. Lee copy at 4607, 5786/1) seen, not filed.
+- [x] clear-pages: 4607 for E308.
+- [x] known-keys: three books plus shuffled No. 1 and No. 2.
+- [x] print: cached OR/ORN/Butler volumes grepped, OR I/42 pt 2-3, I/36 pt 3, Butler III fetched, Grant Papers be-api 4 of 9.
+- [n/a] key-rebuild: no key row is missing for these three.
+- [x] image-check: all three own entries read on the page image except the 5778 tail.
+- [x] retry: none needed.
+Verdict: keep going: 4 internal gaps, cheapest next: 5778 strip, ~$0.15

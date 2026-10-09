@@ -1631,5 +1631,23 @@ Code-word tokens: H 20.
 
 Code-word tokens: H 32, C 1.
 
-Totals over the 250 entries: H 4371, C 39, I 25, M 35, U 10.
+**E307 | Page 233 | 5777 | mssEC 25 (obj 5952, pointer 5777), 9 Aug 1864 Ft Monroe, Sheldon to Maj. Eckert, from Newbern 6 Aug: news of the Chambersburg burning, asks leave of about a week or two, Mack Gaughey to take charge (continues on pointer 5778) (FM-R6c; row 5777/2; image-read at 2400 px)**
+
+[Newbern] August [6] [By the way of] [Monroe] {time: 4 PM} August [9] for [Major] Eckert [Washington] [.] News [Of the] terrible affair at Chambersburg has just reached me [.] My mother nearly insane and sisters are without home clothes or money [.] They need me and I must go to them for a week or [2] [.] Newport office closed [.] (over) water house in hospital dangerously ill [.] Please send an opera tore or [2] by return boat [.] Mack Gaughey can take charge here in my absence [.] Please have as much of my back pay as possible ready for me Shall need every cent pause Hope to get off end of this week paws It is important that I should hasten [.] Reply by [Telegraph (-ed, -ing)] to [Norfolk] paws they can forward by boat to me  {tail: [signed] Jay are Gilmore quite warm this afternoon Geo D Sheldon}
+
+Code-word tokens: H 23.
+
+**E308 | Page 115 | 5659 | mssEC 25 (obj 5952, pointer 5659), 9 May 1864 Ft Monroe, Sheldon to Maj. Eckert, Newbern 7 May for Carlton and Porter, Daily Christian Advocate: the Albemarle fight in Albemarle Sound; clear copy at pointer 4607 (object 4849, p.166) (FM-R6c; row 5659/0; image-read at 2400 px)**
+
+The following is first handed in here it is news to me [.] from [Newbern] {date: May 7} for Carlton and Porter Daily Christian advocate [Philadelphia] [.] a terrific naval Engage meant in Albemarle sound is [Report]ed [.] the [Gunboat] bombshell was [Capture (-ed, -ing)]ed back [From the] [Rebel] and the Cotton plant driven off [.] the [Ram] Albemarle [Fight ing Fought]d <insertion>ravished</insertion> [7] of our [Gunboat]'s disabling the rudder and piercing the boiler of one of them [,] the [Ram] finally retired to the [Roanoke] apparently uninjured [,] she is armed with [100] [Gun]'s [.] the land [Attack (-ed, -ing)] upon [Newbern] is apparently over [.] Chaplain white of the Providence Conference was on an [Out post] and is supposed to be [Capture (-ed, -ing)]ed  {tail: [signed] J. Emory Round Sup't M. E. Mission {time: 3 PM} strange we have not heard this Geo D Sheldon}
+
+Code-word tokens: H 31.
+
+**E309 | Page 242 | 5786 | mssEC 25 (obj 5952, pointer 5786), 4 Oct 1864 Washington 3 PM, Eckert to Sheldon for Col Webster, Chief Quartermaster Vinton, steamers wanted, signed D H Rucker; with Sheldon's reply of 5.30 PM, no spare boats but the Illinois (FM-R6c; row 5786/0; image-read at 2400 px)**
+
+[4] to [Colonel] Webster sheaf [Quartermaster] stop please send here immediately all the [Steam]ers that can possibly B spared from your place [.] thayer needed at once [.] answer and give the names of those you send  {tail: [signed] D H Rucker [Brigadier General] T. T. Eckert 5.30 P. M. Ft Monroe Oct. 4 / 64 Maj. Eckert Wash'n [4] for [Brigadier General] Rucker [Washington] [.] we have no spare boats here excepting the Illinois and those collected by order of [Maj Gen B. F. Butler] [.] I have [Telegraph (-ed, -ing)]d him to know if I may for ward these to you and will [Report] result at once [.] The Illinois is nearly discharged and wilby sent to you at once [signed] are see [signed] [Colonel] and [Quartermaster] end Geo. D. Sheldon}
+
+Code-word tokens: H 21.
+
+Totals over the 253 entries: H 4446, C 39, I 25, M 35, U 10.
 <!-- decode.py: derived block ends -->
