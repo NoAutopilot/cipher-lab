@@ -8631,6 +8631,88 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM6c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM6c verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM6c)' section 4",
+      "reading_version": "FM-R3d 9 Oct 2026 (reading.md), as corrected in AUDIT (FV-FM6c) section 3 (Bermuda Landing plain, not a gloss)",
+      "unresolved_spans": "'Camp' before 'pebble amos' (plain, sense unclear); 'Homan have [.]' (unfinished clause on the page)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "2"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): R. O'Brien (Butler's Hd Qrs) to Maj. Eckert, 21 May 1864, telegraph operators on the Bermuda Hundred front, Jamestown line impracticable, signal field cord wanted (E242)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 21 May 1864 R. O'Brien, telegraph operator at Butler's headquarters, told Major Eckert in Washington which operators were posted at Bermuda Landing and at Gillmore's and W. F. Smith's headquarters, that the line to Jamestown was impracticable for the present, and asked for a few miles of signal field cord. The telegram was not located in the Official Records (ser. I vols. 36 pts 1-3), Butler's Private and Official Correspondence (vols. III-V), 174 cached volumes or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 (one audit): press of the day, Plum's Military Telegraph and Google Books not searched; second audit queued (AUD2-LEDGER-14)",
+      "depth": "D3",
+      "completeness": "18 H of 18 code-word groups; 2 plain words M",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.138, pointer 5682, E242"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.138, pointer 5682, E242",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.138, pointer 5682, E242"
+      ],
+      "depth_sentence": "On 21 May 1864 Butler's chief operator reported his operators spread across the Bermuda Hundred front -- Snow at Bermuda Landing, Nichols at Gillmore's, Collings at W. F. Smith's -- working nights under incessant artillery fire, and said the line to Jamestown could not be run for now.",
+      "depth_check": "code clause: Nankin = W. F. Smith, Maxim = Gillmore (Nankin passim), Growl = Washington, Walpole = Rebel passim; external non-statistical: holder's clear copies 4666 (O'Brien 28 May 1864, Homan and Collings) and 7763 (Snow and Huyck), OR I/36 pt 2 p.471 (Jamestown line, 6 May); image checked (FV-FM6c)",
+      "depth_note": "18 H of 18 code-word groups; 2 plain words M"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM6c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM6c verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM6c)' section 4",
+      "reading_version": "FM-R3d 9 Oct 2026 (reading.md), as corrected in AUDIT (FV-FM6c) section 3 ('penny gallant' = 4.15, not [19])",
+      "unresolved_spans": "'penny gallant' read as the time 4.15 (M for the composition); 'way' before 'suit able' (plain, perhaps a slip)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 96.3,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Sheldon (Fort Monroe) to S. H. Beckwith, City Point, for Col. G. W. Bradley, 10 Dec 1864, Capt. W. L. James on the steamers Brady, Matilda and Cloud and a vessel for horses (E243)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 10 Dec 1864 Fort Monroe passed to City Point, for Col. G. W. Bradley, chief quartermaster, two messages of Capt. William L. James, assistant quartermaster: the steamer Brady had arrived at 4.15 and gone on to Washington, the Matilda was loading cavalry at Portsmouth for Bermuda Hundred, and a sea-going vessel for horses was wanted at once, the Cloud if she was there. The telegram was not located in the Official Records (ser. I vol. 42 pt 3), the Navy Official Records (ser. I vol. 11), 174 cached volumes or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 (one audit): D2 (external check covers the addressee only); press of the day, Google Books not searched; second audit queued (AUD2-LEDGER-14)",
+      "depth": "D2",
+      "completeness": "26 H of 27 code-word groups ('penny gallant' composition M)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.282, pointer 5826, E243"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.282, pointer 5826, E243",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.282, pointer 5826, E243"
+      ],
+      "depth_sentence": "On 10 Dec 1864 the quartermaster at Fort Monroe told City Point that the Matilda was loading cavalry at Portsmouth for Bermuda Hundred and asked for a vessel able to carry horses to sea the next morning.",
+      "depth_check": "code clause: Vincent/Vinton = Quartermaster (three contexts here, passim), Pacific = Cavalry, Spartan = Horse, Black = City Point passim; external: OR I/42 pt 3 S.O. 120 (addressee only); image checked (FV-FM6c)",
+      "depth_note": "26 H of 27 code-word groups ('penny gallant' composition M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
         "AUDIT.md '## AUDIT (FV-FM5b)'",
         "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-10)'"
       ],
