@@ -330,3 +330,13 @@ PREREG-MANTCUC.md (4c5930db8, pushed before scoring); scorer mant0608/cuc/cuc_sc
 |---|---|---|---|
 | 0290's unkeyed codes carry the same note on other leaves | notes shuffled over tokens, 1000 draws, seed 2900: p99 0, min = max = 0 | K 1 (583 only; 0494, no shared word), S 0, both passes | untestable on disk (K<5), non-test (control cannot move) -- not refuted |
 | method check: keyed names on 0290 match their notes elsewhere | p99 3 (A) / 5 (B) | 4/6 (A), 6/7 (B) | PASS (known-answer only) |
+
+## V-MANTH (9 Oct 2026, verifier, LANE FAMILY-A2k account 2): held name/word codes pooled across leaves (AUDIT.md "V-MANTH"); key.tsv unchanged
+
+| code | supporting witnesses | conflicting witnesses | verdict |
+|---|---|---|---|
+| 321 | 0312 A12 'Stockolm'/'Stockhol' (16 Sept 1712; low digits) | 0530 f.425v L_L01 321.237.402... under 'frontiere de la v en bu r' (24 Nov 1712; table identity of 0528-0530 open) | **held, open, M**; not keyed |
+| 191 | Krauske f.4 Stenbock; f.468 x3 'Stenbock' (Dec 1712, control cleared); 0312 A17/A18 'Steinbock' (Sept 1712, gate PASS) | none (spelling only; y-glyph: written '1y1') | M kept (verifier may only lower); raise is the lane's call |
+| 254 | -- | -- | not a separate code: 0136 R10/R13 passes read 259 = key Ilgen (M); the 254 settlement rests on y = 4; second witness for 259 under y = 9, open until the y-glyph census |
+| 199 | none with a value | 0502 F2-13 '1y1y' vs copy f.409v 99 | held, no value, M |
+| 42 | Krauske l; contexts 'plus contre' (0494 L07, f.410 L06), 'mais lu[i]' (0494 L17, f.410 M4) | 0314 R11 n slot in 'la couronne' (both gloss passes) | **conflict, open**: key l C stands, 0314 R11 M; not settled by majority |

@@ -3817,3 +3817,10 @@ statistic is not orthogonal to the shuffle in general; it is degenerate only for
 Grades (rule 4): unchanged from MANT-UNG, C 0 M 18 U 14 on 0290; key.tsv unchanged; candidates.tsv unchanged except a comment line.
 Next: the unkeyed range needs glossed witnesses of codes > 230 from new material (0494's right page is the only other source on disk and
 shares one code with 0290), not a re-tuning of this gate (rule 3 third-attempt clause applies to the letter statistic and now this one).
+
+## V-MANTH (9 Oct 2026, verifier, LANE FAMILY-A2k account 2): held codes 321/191/254/199/42 -- see AUDIT.md "V-MANTH (9 Oct 2026)"
+
+key.tsv unchanged. 321 held (Stockholm 0312 vs 'frontiere' 0530, conflict); 191 Stenbock gains 0312 as a third witness (M kept); 254 is not a
+separate code (0136's passes read 259 = key Ilgen; the 254 rests on y = 4); 199 held, no value; 42 = l stands C, 0314 R11 slot M (one-slot
+conflict). Suggestion: the y-glyph (4|9) census per hand (~$2, disk crops) settles 191/199/254-259 together; run it before holding or keying
+another name code here.
