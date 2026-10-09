@@ -29,3 +29,25 @@ Instrument: pt18 letter 4-gram Viterbi + key prior (PREREG-D4-BROLM.md, scripts/
 shuffled null 0.112), keyed-override precision 0.214 (gate 0.60; decoder 0.782 vs prior-only 0.827). pt17: 0.322 / 0.206.
 CONTROL BELOW GATE both gates, both corpora: target not run. Standing: non-test at this N (untested-by-this-tool), no value
 changed; m0275-r1 pos 31 and m0276-r2 pos 16 -> no-key-material.
+
+## Code 24: h vs e (V-BRO24, 9 Oct 2026)
+Verifier-style key-value check, separate from the solver BRO-123. Every witness below is the same series and direction as
+letter 134 (Brochado, London, to the Utrecht plenipotentiaries; appendix entries 1712 to Carta 123 of 7 Nov 1713; letter
+134 is 22 Oct 1713, between Carta 110 and Carta 123). No witness from another sender, recipient or period.
+
+| value | witnesses (leaf / entry, context in the gloss) | how read | n |
+|---|---|---|---|
+| e | m0284 Carta 71 (grand[e] patranha), m0284 Passage 3a (est[e] velhaco), m0285 Passage 4a, m0286 Carta 74 x2 (esp[e]ro, d[e]stes), m0287 Carta 79 x2 (est[e] v[e]lhaco), m0289 Carta 92 (velhaco [e]stá), m0290 Carta 93 ([e]stá), m0290 Passage 2a x2 (s[e]u, n[e]sse), m0291 Passage 3a (princip[e] de Hanover), m0294 Carta 110 (est[e] velhaco) | gloss, masked DP alignment + key-decoded context (code24_attest.tsv) | 13 |
+| e | m0253-m0254 body copy of Carta 123 | BRO-123 masked alignment (carta123_attest.tsv), 9 C + 3 M | 12 |
+| a | m0287 Carta 79 (Caminho p[a]ra; 'pera' would read e) | gloss | 1 |
+| a | Carta 123 body copy | BRO-123, M | 1 |
+| h | m0284 Passage 2a ("Se lhe fôr de mim"; the cipher decodes s e d ? s o e s d e, not the gloss letter for letter) | DP placement only | 1 |
+| ? | m0286 Carta 74 pos 52, m0289 Carta 92 pos 37, m0290 Passage 2a pos 91 | no stable placement | 3 |
+
+Why key.tsv held h at n=2: scripts/03_align_pairs.py counts a code run only when its span has exactly as many letters as
+tokens; 16 of the 18 appendix uses of 24 sat in runs that failed that test (the key totals 381 tallied uses out of about
+1,500 cipher tokens). A tally bug, not a homophone. Glyph: 24 on m0290 Carta 93 line 1 and on letter 134 m0275 line 3
+(images/broc/m0275_L03.jpg, `55.12.7.3.19.14.x.24.12.y`) is the same two-digit form, distinct from 21 on the same Carta 93 line.
+Standing: `24 -> e`, grade C (25 of 31 tagged uses e, 0.81; key builder rule C at >= 0.65 and n >= 2), same date and
+direction as letter 134, so C applies in letter 134. The single h witness is logged here and not settled by count alone:
+its gloss does not match its cipher letter for letter, so it is not an equal-strength period reading of 24.

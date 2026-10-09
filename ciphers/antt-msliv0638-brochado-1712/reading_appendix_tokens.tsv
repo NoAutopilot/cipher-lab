@@ -483,7 +483,7 @@ Carta 71	20	12		r	C
 Carta 71	21	23		a	C
 Carta 71	22	14		n	C
 Carta 71	23	2		d	M
-Carta 71	24	24		h	M
+Carta 71	24	24		e	C
 Carta 71	25	55		p	C
 Carta 71	26	17		a	C
 Carta 71	27	12		r	C
@@ -511,7 +511,7 @@ Carta 71	48	15		o	C
 Passage 2a	1	4		s	C
 Passage 2a	2	19		e	C
 Passage 2a	3	2		d	M
-Passage 2a	4	24		h	M
+Passage 2a	4	24		e	C
 Passage 2a	5	4		s	C
 Passage 2a	6	15		o	C
 Passage 2a	7	19		e	C
@@ -532,7 +532,7 @@ Passage 3a	8	23		a	C
 Passage 3a	9	19		e	C
 Passage 3a	10	4		s	C
 Passage 3a	11	3		t	C
-Passage 3a	12	24		h	M
+Passage 3a	12	24		e	C
 Passage 3a	13	26		u	M
 Passage 3a	14	19		e	C
 Passage 3a	15	20		l	C
@@ -545,7 +545,7 @@ Passage 4a	2	14		n	C
 Passage 4a	3	c		u	M
 Passage 4a	4	20		l	C
 Passage 4a	5	19		e	C
-Passage 4a	6	24		h	M
+Passage 4a	6	24		e	C
 Passage 4a	7	4		s	C
 Passage 4a	8	4		s	C
 Passage 4a	9	15		o	C
@@ -692,7 +692,7 @@ Carta 73	31	4		s	C
 Carta 74	1	7		e	C
 Carta 74	2	f		s	C
 Carta 74	3	6		c	C
-Carta 74	4	24		h	M
+Carta 74	4	24		e	C
 Carta 74	5	12		r	C
 Carta 74	6	d		o	C
 Carta 74	7	4±		?	U
@@ -728,7 +728,7 @@ Carta 74	36	g		?	U
 Carta 74	37	18		m	C
 Carta 74	38	18		m	C
 Carta 74	39	23		a	C
-Carta 74	40	24		h	M
+Carta 74	40	24		e	C
 Carta 74	41	4		s	C
 Carta 74	42	a		t	C
 Carta 74	43	7		e	C
@@ -740,7 +740,7 @@ Carta 74	48	7		e	C
 Carta 74	49	18		m	C
 Carta 74	50	17		a	C
 Carta 74	51	12		r	C
-Carta 74	52	24		h	M
+Carta 74	52	24		e	C
 Carta 74	53	f		s	C
 Carta 74	54	15		o	C
 Carta 74	55	15		o	C
@@ -812,9 +812,9 @@ Carta 79	28	2		d	M
 Carta 79	29	19		e	C
 Carta 79	30	4		s	C
 Carta 79	31	3		t	C
-Carta 79	32	24		h	M
+Carta 79	32	24		e	C
 Carta 79	33	26		u	M
-Carta 79	34	24		h	M
+Carta 79	34	24		e	C
 Carta 79	35	20		l	C
 Carta 79	36	10		h	C
 Carta 79	37	17		a	C
@@ -836,7 +836,7 @@ Carta 79	52	4		s	C
 Carta 79	53	19		e	C
 Carta 79	54	26		u	M
 Carta 79	55	55		p	C
-Carta 79	56	24		h	M
+Carta 79	56	24		e	C
 Carta 79	57	12		r	C
 Carta 79	58	17		a	C
 Carta 79	59	3		t	C
@@ -1062,7 +1062,7 @@ Carta 92	8	10		h	C
 Carta 92	9	y		a	C
 Carta 92	10	5		c	C
 Carta 92	11	15		o	C
-Carta 92	12	24		h	M
+Carta 92	12	24		e	C
 Carta 92	13	f		s	C
 Carta 92	14	3		t	C
 Carta 92	15	17		a	C
@@ -1087,7 +1087,7 @@ Carta 92	33	y±		?	U
 Carta 92	34	26		u	M
 Carta 92	35	18		m	C
 Carta 92	36	x		d	C
-Carta 92	37	24		h	M
+Carta 92	37	24		e	C
 Carta 92	38	f		s	C
 Carta 92	39	a		t	C
 Carta 92	40	19		e	C
@@ -1155,7 +1155,7 @@ Carta 93	1	19		e	C
 Carta 93	2	14		n	C
 Carta 93	3	17		a	C
 Carta 93	4	18		m	C
-Carta 93	5	24		h	M
+Carta 93	5	24		e	C
 Carta 93	6	f		s	C
 Carta 93	7	3		t	C
 Carta 93	8	y		a	C
@@ -1211,7 +1211,7 @@ Passage 2a	10	25		o	C
 Passage 2a	11	c		u	M
 Passage 2a	12	d		o	C
 Passage 2a	13	f		s	C
-Passage 2a	14	24		h	M
+Passage 2a	14	24		e	C
 Passage 2a	15	26		u	M
 Passage 2a	16	11		p	C
 Passage 2a	17	2		d	M
@@ -1229,7 +1229,7 @@ Passage 2a	28	3		t	C
 Passage 2a	29	17		a	C
 Passage 2a	30	12		r	C
 Passage 2a	31	14		n	C
-Passage 2a	32	24		h	M
+Passage 2a	32	24		e	C
 Passage 2a	33	f		s	C
 Passage 2a	34	7		e	C
 Passage 2a	35	a		t	C
@@ -1288,7 +1288,7 @@ Passage 2a	87	x		d	C
 Passage 2a	88	17		a	C
 Passage 2a	89	10		h	C
 Passage 2a	90	8		i	C
-Passage 2a	91	24		h	M
+Passage 2a	91	24		e	C
 Passage 2a	92	23		a	C
 Passage 2a	93	4		s	C
 Passage 2a	94	26		u	M
@@ -1342,7 +1342,7 @@ Passage 3a	26	14		n	C
 Passage 3a	27	5		c	C
 Passage 3a	28	8		i	C
 Passage 3a	29	55		p	C
-Passage 3a	30	24		h	M
+Passage 3a	30	24		e	C
 Passage 3a	31	x		d	C
 Passage 3a	32	7		e	C
 Passage 3a	33	10		h	C
@@ -1636,7 +1636,7 @@ Carta 110	2	4		s	C
 Carta 110	3	3		t	C
 Carta 110	4	19		e	C
 Carta 110	5	26		u	M
-Carta 110	6	24		h	M
+Carta 110	6	24		e	C
 Carta 110	7	20		l	C
 Carta 110	8	10		h	C
 Carta 110	9	17		a	C

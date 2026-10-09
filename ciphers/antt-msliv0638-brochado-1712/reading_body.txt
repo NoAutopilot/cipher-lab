@@ -9,9 +9,9 @@
 # 'grade' column): a token grades C only when both the code is grade C in key.tsv AND the transcription
 # agreed (conf=H); either one at M pulls the token down to M; an unkeyed code (no key.tsv row, mostly the
 # unresolved ff?/dd?/+? glyphs) grades U, shown as the unkeyed marker below.
-# tokens 111: H 0, C 81, S 0, M 23, I 0, U 7
+# tokens 111: H 0, C 83, S 0, M 21, I 0, U 7
 m0179 m0179-r1 | humfinodesproppsito
 m0180 m0180-r1 | oof·i·l·uislhdcpmu·ic·
 m0276 m0276-r1 | paranosfasrrcrdor
-m0276 m0276-r2 | drproualoshgtal·ento
-m0275 m0275-r1 | uilhacopretendhradilataranossa·ad
+m0276 m0276-r2 | drproualosegtal·ento
+m0275 m0275-r1 | uilhacopretenderadilataranossa·ad

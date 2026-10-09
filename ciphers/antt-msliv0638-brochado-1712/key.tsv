@@ -22,7 +22,7 @@ code	value	n_occurrences	grade	entries	all_observed_letters	note
 21	b	4	C	m0284/Passage 3a;m0291/Carta 96;m0292/Carta 105	"{""b"": 4}"	
 22	i	2	C	m0281/Carta 23;m0289/Carta 91	"{""i"": 2}"	
 23	a	4	C	m0282/Carta 61;m0284/Passage 3a;m0286/Carta 73;m0289/Carta 91	"{""a"": 4}"	
-24	h	2	M	m0284/Passage 2a;m0284/Passage 3a	"{""h"": 1, ""e"": 1}"	
+24	e	31	C	m0284/Carta 71;m0284/Passage 3a;m0285/Passage 4a;m0286/Carta 74;m0287/Carta 79;m0289/Carta 92;m0290/Carta 93;m0290/Passage 2a;m0291/Passage 3a;m0294/Carta 110;m0253-m0254/Carta 123 body	"{""e"": 25, ""a"": 2, ""h"": 1, ""-"": 3}"	"V-BRO24 9 Oct 2026: was h (M, n=2, equal-length-span builder 03_align_pairs.py kept only 2 of 18 appendix uses); re-tally over all 18 appendix uses (code24_attest.tsv, scripts/26_vbro24_tally.py) e 13, a 1 (Carta 79 ""para""), h 1 (m0284 Passage 2a, gloss not letter-for-letter), undecidable 3; plus Carta 123 body copy (carta123_attest.tsv) e 12, a 1; all witnesses same series as letter 134 (Brochado, London, to Utrecht, 1712-7 Nov 1713); HYPOTHESES.md ""Code 24"""
 25	o	4	C	m0281/Carta 23;m0282/Carta 61;m0291/Carta 96	"{""o"": 4}"	
 26	u	17	M	m0282/Carta 58;m0282/Carta 61;m0283/Carta 70;m0284/Passage 3a;m0285/Carta 72;m0286/Carta 73;m0286/Passage 3a;m0287/Carta 79;m0287/Carta 80;m0289/Carta 91;m0292/Carta 105;m0292/Passage 2a	"{""u"": 11, ""v"": 5, ""o"": 1}"	
 52	r	2	C	m0282/Carta 61;m0292/Carta 101	"{""r"": 2}"	
