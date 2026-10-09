@@ -536,3 +536,20 @@ Source: Patrizia Cremonini, "Stato estense - Regno d'Ungheria", *RSU* XVI "Stori
 **Bearing on the lead.** The one surviving key that is near in date and in the Este-Hungary channel is n.1 (1486), a 19th-century reconstruction of Beatrice's cipher for letters to Eleonora, with 12 plaintext phrases listed and b/h/x/y missing. Whether Costabili's 1491 R1166 cipher shares that table is untested here; n.1's alphabet is shown as images 10.1 and 10.2 of the article (not reproduced in the text layer). Not found: any key for Costabili; any Costabili-specific cipher in b.4-7.
 Requests: epa.oszk.hu 1 (200). Other hosts 0.
 Suggestion: view n.1 images 10.1-10.2 (RSU 16 pdf, p.120 area, owner's browser or a crop of the pdf page) and compare its homophone set with R1166's sign inventory under the rule-3 control before any key edit; not run.
+
+## R1163/R1165 slips, fresh short-box reads (COS-BOX2, 9 Oct 2026, from 14:48 UTC by date -u)
+
+Account 4 worker (Opus) for LANE DEFAULT-account-4-20261009-1340, job J15: step 2 of `align/PREREG-COS-SPAN.md` (fdd8bbe51), unchanged.
+Intake gate re-run by the lane at 14:45 (partial, line 1, pass). Prior-work step: `tools/prior_work.py costabili-modena-1491 --item-spec
+'shelfmark=Modena ASMo Amb. Ungheria b.2/20 no.7;decode=R1163;date=1491-03-12' --step-type align --fetch` -> verdict plaintext KNOWN (expected:
+key rebuild from the period clear slips), DECODE KNOWN-PART, Tomokiyo and cached solver files CLEAR, unsolved-ciphers and editions UNCHECKED-NET;
+exit 4 owed only to own-lane live claims (COS-ASMO, COS-SPAN, COS-CREM, this job; the first three have done lines), as for COS-SPAN.
+Images: one DECODE browser login (`tools/decode_browser_login.js 1163 <scratch> --fetch <4 absolute filesrv URLs> --max-files 4 --delay 1800`):
+R1163 P1/P2, R1165 P4/P5, all HTTP 200, sha1 = `images_manifest.tsv`, scratch only, nothing committed.
+Crops (commands before the first reader call): lines as N9-COS2, `python3 tools/iiif_lines.py --image IMG_R1163_I5840_P2.png --region
+540,1530,1720,960 --prefix c63 --ink 90 --prominence 30 --debug`; R1165 P5 region 1400,920,2080,1000 rotated -2.4 deg (`p5_level.png`), `--image
+p5_level.png --prefix c65 --ink 90 --prominence 20`; clear slips `--image IMG_R1163_I5839_P1.png --region 520,1540,1580,920 --prefix k63 --ink 90
+--prominence 30` (L02-L09) and `--image IMG_R1165_I5850_P4.png --region 1140,1120,2360,600 --prefix k65 --ink 90 --prominence 20` (L01-L05).
+Boxes (the PREREG box rule: one crop per run between two breaks, a clear word or a line end): `python3 align/cosbox2_boxes.py <scratch>` ->
+40 box crops, R1163 L01-L09 and R1165 L05-L10, coordinates in `align/cosbox2/boxes.tsv`; break positions read by eye from the debug overlays
+(no sign value used). Every segment of a line is a box (clear runs too), so the reader marks clear words in <> and the anchors survive.
