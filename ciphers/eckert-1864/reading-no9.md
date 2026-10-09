@@ -356,5 +356,29 @@ Code-word tokens: H 9, M 1.
 
 Code-word tokens: H 4.
 
-Totals over the 41 entries: H 335, C 0, I 0, M 3.
+**O9-CA | mssEC 25 (obj 5952) p.26, pointer 5570 | 10 Feb 1864, Sheldon at Fort Monroe to G. W. Baldwin at Baltimore (old vocabulary, "Vienna ... Clara"; signed John I Davenport, private secretary)**
+
+Geo W Baldwin Balto [Major] mulford swindle [New York] [Baltimore] period the [Maj. Gen.] desires to know where A F Brengle has gone whom you brought down on flag of truce boat answer immed'y to me signed John I Davenport private secretary to [B. F. Butler] {time: 10.30 AM} Clear and Cool Geo D Sheldon
+
+Code-word tokens: H 6, M 1.
+
+**O9-CB | mssEC 25 (obj 5952) p.26, pointer 5570 | 10 Feb 1864, G. W. Baldwin at Baltimore to Sheldon at Fort Monroe (old vocabulary, "Abbey ... Rosetta"; signed John E Mulford)**
+
+Geo D Sheldon Ft. M. [B. F. Butler] [(Fort) Monroe] period Brengle is in this City I will find him and wait orders he lives in free derrick [Maryland] signed John E Mulford [Major] &c {time: 6.30 PM} GW Baldwin
+
+Code-word tokens: H 5.
+
+**O9-CC | mssEC 25 (obj 5952) p.26, pointer 5570 | 11 Feb 1864, G. W. Baldwin at Baltimore to Sheldon at Fort Monroe (old vocabulary, "abbey ... Cora"; signed John E Mulford)**
+
+Geo D Sheldon Ft. M [B. F. Butler] have just found Brengle will send him down tonight prisoners not yet arrived John E Mulford [Major] &c {time: 9.30 AM} GW Baldwin
+
+Code-word tokens: H 3.
+
+**O9-CD | mssEC 25 (obj 5952) p.32, pointer 5576 | 1 Mar 1864, Sheldon at Fort Monroe to John Horner at New York, for William Lee, chief detective (old vocabulary, "Vermont ... Midas ... Abbey Gertrude")**
+
+John Horner New York for William Lee Chief detective [Brig. Gen.] Hays office [New York] will try & get a description period in mean time put the letter in office and watch it period It will bring him I know he is expecting it signed [B. F. Butler] {time: 12 noon} cloudy Geo D Sheldon
+
+Code-word tokens: H 4.
+
+Totals over the 45 entries: H 353, C 0, I 0, M 4.
 <!-- decode.py: derived block ends -->

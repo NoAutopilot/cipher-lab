@@ -666,3 +666,52 @@ the lines traveled by yoke returning
 to be mustered out and at
 rendezvous for discharge until youth are
 all dispersed sig Ranger Lowes weather
+
+### O9-CA | mssEC 25 (obj 5952) p.26, pointer 5570 | 10 Feb 1864, Sheldon at Fort Monroe to G. W. Baldwin at Baltimore (old vocabulary, "Vienna ... Clara"; signed John I Davenport, private secretary)
+Ft Monroe Feb 10 . 1864
+Geo W Baldwin Balto
+Vienna mulford swindle midas insanity period
+the Vernon desires to know where
+A F Brengle has gone whom
+you brought down on flag of
+truce boat answer immed'y to me
+signed John I Davenport private secretary
+to audit Clara Clear and Cool
+Geo D Sheldon
+graded: swindle:M
+note: NO9-R1 'swindle' (line 1, between Mulford and Midas) has no row in key-no9.md, which is a sample table: M, not guessed; its mssEC 67 page is a later read.
+note: NO9-R1 9 Oct 2026 image check (5570 at 2400 px, one eye): the line "truce boat answer immed'y to me" has six words on the page, the last read "me" (the first letter is an open O-like loop); the NO9-KEY dump (volunteer text) has "to me one", with "one" not found on the page between "me" and "signed". Plain either way.
+
+### O9-CB | mssEC 25 (obj 5952) p.26, pointer 5570 | 10 Feb 1864, G. W. Baldwin at Baltimore to Sheldon at Fort Monroe (old vocabulary, "Abbey ... Rosetta"; signed John E Mulford)
+Balto Feb 10 1864
+Geo D Sheldon Ft. M.
+Abbey Hammock period Brengle
+is in this City
+I will find him
+and wait orders he
+lives in free derrick
+Camargo signed John E
+Mulford Village &c Rosetta
+GW Baldwin
+
+### O9-CC | mssEC 25 (obj 5952) p.26, pointer 5570 | 11 Feb 1864, G. W. Baldwin at Baltimore to Sheldon at Fort Monroe (old vocabulary, "abbey ... Cora"; signed John E Mulford)
+Balto Feb 11 1864
+Geo D Sheldon Ft. M
+abbey have just found
+Brengle will send him
+down tonight prisoners not
+yet arrived John E
+Mulford Vienna &c Cora
+GW Baldwin
+
+### O9-CD | mssEC 25 (obj 5952) p.32, pointer 5576 | 1 Mar 1864, Sheldon at Fort Monroe to John Horner at New York, for William Lee, chief detective (old vocabulary, "Vermont ... Midas ... Abbey Gertrude")
+Ft. Monroe Mar 1st 1864
+John Horner New York
+for William Lee Chief detective Vermont
+Hays office Midas will try &
+get a description period in mean
+time put the letter in office
+and watch it period It will
+bring him I know he is
+expecting it signed Abbey Gertrude cloudy
+Geo D Sheldon

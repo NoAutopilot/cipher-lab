@@ -3471,3 +3471,30 @@ Read so far: three of three filed (E307-E309).
 - [x] image-check: all three own entries read on the page image except the 5778 tail.
 - [x] retry: none needed.
 Verdict: keep going: 4 internal gaps, cheapest next: 5778 strip, ~$0.15
+
+## NO9-R1 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Reader job on the rows NO9-KEY found readable under Cipher No. 9 (key-no9.md, mssEC 67 sample table). Filed in `ciphertext-no9.txt` (convention of the file: O9-<letters>; the mssEC 25 / obj 5952 Fort Monroe ledger takes the new prefix O9-C) and re-derived with `decode_no9.py --write`, `--check` exit 0 (totals over 45 entries: H 353, C 0, I 0, M 4; this job adds H 18, M 1).
+
+| ID | row | reading | grade | where found |
+|---|---|---|---|---|
+| O9-CA | 5570/0 | 10 Feb 1864, Sheldon (Ft Monroe) to G. W. Baldwin, Baltimore: "[Major] Mulford swindle [New York] [Baltimore]. The [Maj. Gen.] desires to know where A F Brengle has gone whom you brought down on flag of truce boat, answer immediately to me, signed John I Davenport, private secretary to [B. F. Butler]", time word Clara (10.30 AM), weather "Clear and Cool" | H 6, M 1 (swindle: no row in the sample table) | not found in a clear copy (below) |
+| O9-CB | 5570/1 | 10 Feb 1864, Baldwin to Sheldon: "[B. F. Butler] [(Fort) Monroe]. Brengle is in this city, I will find him and wait orders, he lives in Frederick [free derrick] [Maryland], signed John E Mulford [Major] &c", Rosetta (6.30 PM) | H 5 | none |
+| O9-CC | 5570/2 | 11 Feb 1864, Baldwin to Sheldon: "[B. F. Butler] have just found Brengle, will send him down tonight, prisoners not yet arrived, John E Mulford [Major] &c", Cora (9.30 AM) | H 3 | none |
+| O9-CD | 5576/1 | 1 Mar 1864, Sheldon to John Horner, New York, for William Lee, chief detective: "[Brig. Gen.] Hays office [New York] will try and get a description, in mean time put the letter in office and watch it, it will bring him, I know he is expecting it, signed [B. F. Butler] {12 noon}", weather "cloudy" | H 4 | none |
+
+Sense checks (by eye, not a gate): two different code words (Village, Vienna) give Major before Mulford in three places, and the period print calls him "Maj. John E. Mulford, assistant agent of exchange" (OR ser. II vol. 6, IA `warofrebellionco0006unit`, be-api full text); "free derrick" is the clerk's phonetic Frederick, the print names "Mr. Alfred Brengle, of Frederick, Md." in the same volume, so "Maryland" after it is the one code word whose sense an independent print supports. O9-CD: Vermont = Brig. Gen. before "Hays office" agrees with the key (the earlier "Vermont odd" in NO9-KEY is withdrawn for this entry; the Village = Major vs the print's "Brig. Gen." conflict on K. Garrard in reading-no9.md is a different entry and untouched). Meaning-shuffled and No. 1/No. 2 controls are NO9-KEY's (no9_key.out), not re-run here. Grades are H = handwritten meaning in mssEC 67; the readings are a cryptanalytic-free key application, not a novelty claim.
+
+Image check (5570 and 5576 at 2400 px, strips cut with PIL, scratch only; one eye, my own): every word of O9-CA, CB, CC and CD read on the page as transcribed, except O9-CA line 5 "to me one": the page has six words in that row ending "to me" (last word an open O-like loop); the volunteer text's "one" was not found. Filed as "to me" with a note line in ciphertext-no9.txt; plain either way, no grade changes. The time words and signatures (Davenport, Mulford, G W Baldwin, Geo D Sheldon) match.
+
+Clear-copy search: NO9-KEY's 8 CISOSEARCHALL queries (brengle, davenport mulford, mulford brengle, william lee detective, horner detective) found only these pages' own pointers, and 5570/5576 own pointers only; here, be-api full text on IA `warofrebellionco0006unit` (OR ser. II vol. 6) for "Brengle" and a cross-IA "Brengle Mulford flag of truce" query returned the Brengle/Sanitary Commission correspondence of 1863 and Mulford's flag-of-truce boat letters, no print of these four telegrams; 2 be-api requests, not a statement that none exists. Not classified for novelty (rule 10).
+
+Requests: hdl.huntington.org 2 (IIIF 5570, 5576, 3.3 s apart, 200); be-api.us.archive.org 2. No credentials used.
+
+### Remaining gaps
+- [ ] `swindle` (O9-CA, one M token): no row in key-no9.md; next: read the mssEC 67 pages for the S-words (the sample table has no S page) -- name them from the Huntington mssEC 67 page list (object 1750, pp.[1]-[24] fetched at 1000-1400 px in section 3-6 of key-no9.md; the rest unread), ~$1.
+- [ ] a clear or printed copy of the Brengle exchange telegrams: next: OR ser. II vol. 6 page-level for 10-11 Feb 1864 (Mulford/Butler/Brengle) and Butler's Private and Official Correspondence vol. 3, ~$0.5.
+- [ ] image check of the headers only partly (addressee and date lines read, not the margin annotations), ~$0.2.
+
+### Escalation
+Siblings: 5570/0 and the two Baltimore replies on the same leaf read together. Clear pages: none found. Known keys: No. 9 reads all four; No. 1 and No. 2 give nonsense (NO9-KEY). Print: OR ser. II vol. 6 corroborates names, not the text. Image check: done for the words, not the margin notes. Verdict: keep going.
