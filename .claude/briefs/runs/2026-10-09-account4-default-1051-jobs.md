@@ -113,3 +113,36 @@ Myrtle, Mary, Ingress, Camden, Humboldt in the other OR volumes (IA `_djvu.txt`)
 check-solved per `.claude/briefs/check-solved.md` (all six source families, the Required web/blog step and the "## Premise check"
 section), write the verdict at the top of NOTES.md in the gate's format, and re-run the gate; paste both outputs. Do not do the F19
 key-constrained check (that is the next lane's, once the gate passes).
+
+## Wave 3 (written 9 Oct 2026, ~11:4x UTC by date -u; wave 2: 3 of 5 register lines were already done on disk)
+
+Same "Common to every job" and Wave 2 preamble. Each step below was checked by the orchestrator against the folder's own latest
+Remaining gaps / Verdict before briefing; still re-check with prior_work.py check 1 and stop with a ROOM flag if it is done.
+
+### J11 SALAZ-HTRC -- rah-salazar-soria-sanchez-1524-28, Sonnet, cap USD 1.2, box 40 min
+J4's part (a), not run at 11:04-11:07 (HTRC EF API MongoError); the API answered HTTP 200 at 11:4x. Locate the pages of BRAH t.98
+(1931), the Soria catalogue, HathiTrust osu.32435013919725, with `tools/htrc_ef_headwords.py` (cifra, Salazar, Sánchez); page numbers
+only, into NOTES under SALAZ-KEY's section. "htrc take/release", <= 10 requests, >= 1.6 s. One retry after a pause if it errors, then stop.
+
+### J12 SFZ-READ2 -- sforza-pusterla-1447-f13, Opus worker with Sonnet subagents, cap USD 4.5, box 90 min
+NOTES Verdict (SFZ-NEXT, 8 Oct): a second, blind Sonnet reader on the key slips f.81 and f.42 (level crops on disk; one subagent call
+per slip, crops only), reconciled under the f.71/f.67 sign-label convention (2 passes + 1 reconciliation = 3 units), then rerun
+`g1p.py` and `lattice_decode.py` (both corpora) and report the before/after numbers beside their controls. Do not touch the owner-sorter
+gap (label convention) beyond noting which pairs still split.
+
+### J13 MONLUC-K07 -- fr4735-monluc-lansac-poland-1573, Opus, cap USD 2, box 45 min
+NOTES Verdict (MONLUC-2, 7 Oct; then FRESH-0914's K01 sort): count form-A vs form-B '2/Z' (K07) on the c268 lines 1-5 crops on disk
+(`images/c268cipher_L0*_s*.jpg`) against the c268 decode (reading_c268.txt / results_c268.json), and say whether the form split tracks a
+plaintext value (e.g. one form per letter) with a permutation control on the form labels. Disk only.
+
+### J14 SP106-KEY -- sp105-paget-1693, Sonnet, cap USD 1.5, box 45 min
+NOTES Verdict (D2-PRINT4): check SP 106 key templates for Stepney's 1693-94 cipher against the f.123 cipher words (the cataloguer's
+readings in NOTES). Use what is reachable: TNA Discovery API descriptions of SP 106 pieces (<= 20 requests, >= 1.5 s), KEY-OFFICES.tsv /
+KEY-DESIGN.tsv, and `tools/prior_work.py - --interceptor England --year 1693`. Record each piece checked and whether it names Stepney,
+Paget or 1693-94. No images exist (not digitised); a negative is "not found in <pieces>", never a design negative.
+
+### J15 CRAV-8450 -- craven-rupert-1648, Opus, cap USD 3, box 60 min
+NOTES Verdict (CRAV-54): one DECODE login (`tools/decode_browser_login.js`, `--guess-fullsize`) for R8450 (Add MS 18982 ff.177-178),
+"DECODE take/release" in ROOM (BNE-DECODE used one login 11:2x; one per session), images to scratch only; transcribe any glossed
+pairs and run the A1 test exactly as CRAV-54 did on R8454 (same script, same control), then apply to the 40 legible groups only if A1
+admits the table.
