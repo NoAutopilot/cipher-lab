@@ -206,3 +206,33 @@ Read so far: 0 of 42 cipher tokens read (ten sibling and known tables EXCLUDED u
 - [ ] retry: not applicable
 Verdict: keep going: 1 internal gap; cheapest next: clear-context crib test on the five runs, ~$2
 Suggestion (not run, outside this brief): BL f.142 once BL images return; Craven's other letters to Rupert outside Add MS 18982 for a Craven-own key.
+
+## Test 6: clear-context crib test (CRAV-CRIB, LANE DEFAULT-account-4-20261009-1051, 9 Oct 2026 12:32-12:4x UTC by date -u)
+**Prior work (pasted before the first priced step).** `python3 tools/prior_work.py craven-rupert-1648 --item-spec 'shelfmark=BL Add MS 18982;folio=134-135;decode=8447;sender=Craven;recipient=Prince Rupert;date=1648-11-06' --step-type decode --fetch` -> exit 2 (KNOWN, no consumer): KNOWN 3-tomokiyo (unsolved-2026-09-24.htm:743 -- Tomokiyo's line listing R8447 as *unsolved*, no plaintext), LEAD 1-own done-candidate (NOTES.md:150, CRAV-54's R8454 prose), LEAD 1-own live-claim (this worker), CONTEXT 3-tomokiyo/3-decode, UNCHECKED-NET aaymeloglu and 4-editions, CLEAR 3-solver bourdeau, CLEAR 2-leaf. All three KNOWN/LEAD rows recorded CLEAR in prior-work.tsv (`--record`): the KNOWN row is a false hit on an unsolved listing; the clear-pages step is unticked at NOTES.md:201.
+**Runs from the clear context** (read by this worker from the committed line crops images/f134r_L0*, f135v_L0*; no network): R1 "if it may bee done [852 63 42 29 118 / 248 404 1037]. what you commanded" (8 groups; f134r.1-2 are one run); R2 "what you commanded to bee said to [18? 183h X 409 311h 183] is done" (6, all word-range codes); R3 "your highnes may also write to [40 97 / 52 35 85] & they will" (5, all below 100); R4 "& they will [72 ... 429]. I have done alreadie concerning Sr Edward Herbert" (23 groups, a verb phrase). Four runs, not five: the earlier count split R1 and R3 at line ends.
+**Registered test (PREREG-D2-CRAV.md amendment A5, pushed c8ed7a9d4 before scoring).** Model M2 from the siblings' shape (code < 100 a letter, >= 100 a word; M2h homophones allowed, M2i one-to-one). Only R3 carries a letter-level crib slot; R2 is all word codes and R4 has no specific crib, so both are untestable by this instrument. 36 pre-registered R3 cribs (the letter's own clear names, Herbert and Hague, and the parties at the Hague in Nov 1648). Results (test4/crib_results.tsv):
+
+| filter | cribs passing | C1 shuffled-crib | C2 random-word base rate |
+|---|---|---|---|
+| S_h (5 letters) | 9 of 36: scots dutch lords queen hague brill irish danes swede | identical to target (1.0 / 0.0 per crib) by construction | 0.151 |
+| S_i (5 letters, one-to-one) | 4 of 36: dutch lords hague danes | identical by construction | 0.103 |
+| C3 position control (S_i survivors: letters forced on R4 via shared codes 52, 85, 97, English log-likelihood vs the crib's 1000 permutations, p95) | 0 of 4 above p95 (dutch 0.81, lords 0.92, hague 0.86, danes 0.43 percentile) | -- | -- |
+
+C1 cannot differ from the target for a within-run length/repeat statistic (a letter permutation keeps length and multiset; the bCAS/AX-5799 shape in CLAUDE.md rule 3): it is reported as a non-test of position, not as a pass. C2 shows the length+pattern filter passes 10-15% of random English words, at or above the pre-registered 10% line, so surviving it is not evidence for a crib. C3, the one control that can differ, puts no survivor above p95. **Outcome: no crib survives as a lead; nothing graded; 0 of 41 tokens read.** The filter does exclude, under M2 only, every multi-word or long name for R3 (the States, Orange, Holland, Zealand, Amsterdam, Jermyn, Hyde, Culpeper, Hopton, Nicholas, Batten, Lauderdale, Lanark, Ormond, Maurice, York, the Queen of Bohemia, Herbert, Craven) unless high codes or homophones break M2 -- conditional on M2 and on the two-pass transcription; a design with syllable or bigram codes below 100 voids it.
+**Requests:** none (disk only). Script: `python3 test4/crib_test.py --check` (OK).
+
+## Remaining gaps (CRAV-CRIB, 9 Oct 2026)
+Read so far: 0 of 42 cipher tokens read (ten sibling and known tables EXCLUDED under A1; the R3 crib test discriminates nothing at this N)
+- the 40 legible groups - blocker: no-key-material; every DECODE record of Add MS 18982 with glossed pairs from 1645-49 is tested and EXCLUDED, R8447's codes run to 1067 (above every sampled key, max 583), and the clear-context crib test on R3 left no lead above its position control; the one untried sibling, BL f.142 ("heavily ciphered, with deciphering"), has no DECODE record and the BL images are offline
+- the struck group X and the torn 18? on f.134r - blocker: illegible; a blotted strike-out and a tear through the figure on the DECODE image; next: the original, or a BL image if the BL restores its images
+
+## Escalation (CRAV-CRIB, 9 Oct 2026)
+- [x] siblings: R8445/R8446/R8448 (D2-CRAV), R8451-R8453 (CRAV-49), R8454 + Gerrard table (CRAV-54) and R8450 Hyde table (CRAV-8450) EXCLUDED under A1; R8449 has no pairs; f.142 has no DECODE record (BL images offline)
+- [x] clear-pages: R3 crib test run 9 Oct 2026 (test4/), no lead above the position control; R2 and R4 untestable by letter cribs
+- [x] known-keys: Tomokiyo's Nicholas-Rupert letter table EXCLUDED; THE=g4 unpublished; no other Rupert key on disk
+- [n/a] print: no edition prints the letter (Warburton checked 6 Oct 2026); nothing read to recheck against print
+- [n/a] key-rebuild: no key source or partial reading exists to rebuild from (ten tables EXCLUDED)
+- [x] image-check: DECODE full-size images obtained and transcribed 6 Oct 2026
+- [n/a] retry: no failed fetch or blocked host to retry
+Verdict: parked: no-key-material (BL f.142 needs the BL image service; a Craven-own key outside Add MS 18982 not located)
+Suggestion (not run, outside this brief): Craven's other letters to Rupert or to Elizabeth of Bohemia from 1648-50 for a Craven-own key; BL f.142 once BL images return.

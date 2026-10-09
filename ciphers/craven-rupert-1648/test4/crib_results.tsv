@@ -1,0 +1,38 @@
+crib	len	S_h	S_i	C1_shuffled_S_h	C1_shuffled_S_i	C3_score	C3_p95	C3_pctile	R4_letter_codes_forced	outcome
+states	6	0	0	0.0	0.0					fails S_h (length)
+scots	5	1	0	1.0	0.0					fails S_i
+dutch	5	1	1	1.0	1.0	-12.152	-11.315	0.809	..t.........hu...	not discriminated
+lords	5	1	1	1.0	1.0	-11.010	-10.887	0.923	..r.........so...	not discriminated
+queen	5	1	0	1.0	0.0					fails S_i
+orange	6	0	0	0.0	0.0					fails S_h (length)
+holland	7	0	0	0.0	0.0					fails S_h (length)
+zealand	7	0	0	0.0	0.0					fails S_h (length)
+amsterdam	9	0	0	0.0	0.0					fails S_h (length)
+rotterdam	9	0	0	0.0	0.0					fails S_h (length)
+admiralty	9	0	0	0.0	0.0					fails S_h (length)
+merchants	9	0	0	0.0	0.0					fails S_h (length)
+herbert	7	0	0	0.0	0.0					fails S_h (length)
+hague	5	1	1	1.0	1.0	-10.886	-9.595	0.858	..g.........ea...	not discriminated
+jermyn	6	0	0	0.0	0.0					fails S_h (length)
+hyde	4	0	0	0.0	0.0					fails S_h (length)
+culpeper	8	0	0	0.0	0.0					fails S_h (length)
+cottington	10	0	0	0.0	0.0					fails S_h (length)
+hopton	6	0	0	0.0	0.0					fails S_h (length)
+nicholas	8	0	0	0.0	0.0					fails S_h (length)
+batten	6	0	0	0.0	0.0					fails S_h (length)
+lauderdale	10	0	0	0.0	0.0					fails S_h (length)
+lanark	6	0	0	0.0	0.0					fails S_h (length)
+ormond	6	0	0	0.0	0.0					fails S_h (length)
+inchiquin	9	0	0	0.0	0.0					fails S_h (length)
+maurice	7	0	0	0.0	0.0					fails S_h (length)
+york	4	0	0	0.0	0.0					fails S_h (length)
+brill	5	1	0	1.0	0.0					fails S_i
+helvoet	7	0	0	0.0	0.0					fails S_h (length)
+french	6	0	0	0.0	0.0					fails S_h (length)
+irish	5	1	0	1.0	0.0					fails S_i
+danes	5	1	1	1.0	1.0	-10.951	-8.951	0.427	..n.........sa...	not discriminated
+swede	5	1	0	1.0	0.0					fails S_i
+bohemia	7	0	0	0.0	0.0					fails S_h (length)
+elizabeth	9	0	0	0.0	0.0					fails S_h (length)
+craven	6	0	0	0.0	0.0					fails S_h (length)
+#C2 random-word base rate (1000 words, tools/data/en, len>=3): S_h 0.151 S_i 0.103
