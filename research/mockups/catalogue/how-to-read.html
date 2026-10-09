@@ -29,19 +29,51 @@ dt{color:var(--muted)} dd{margin:0;overflow-wrap:anywhere}
 .small{font:13px/1.45 system-ui,sans-serif;color:var(--muted)}
 details summary{cursor:pointer;color:var(--accent);font:14px system-ui,sans-serif}
 section.page{border-top:3px double var(--rule);margin-top:40px;padding-top:8px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font:14px system-ui,sans-serif;margin:12px 0}
+.filters select{font:inherit;padding:2px 4px;max-width:260px}
+table.cat{width:100%;border-collapse:collapse;font:14px/1.4 system-ui,sans-serif}
+table.cat th{text-align:left;border-bottom:2px solid var(--rule);padding:6px 6px;font-weight:600}
+table.cat td{border-bottom:1px solid var(--rule);padding:6px;vertical-align:top}
+blockquote.claim{font-size:1.08rem}
+details{border:1px solid var(--rule);background:var(--card);margin:6px 0;padding:6px 10px}
+details .det{font:14px/1.5 system-ui,sans-serif;padding:4px 0}
+code{font:13px ui-monospace,Menlo,monospace;background:var(--tint);padding:1px 4px;overflow-wrap:anywhere}
+@media (max-width:760px){table.cat thead{display:none}table.cat tr{display:block;border:1px solid var(--rule);background:var(--card);margin:8px 0;padding:4px 8px}
+ table.cat td{display:block;border:0;padding:2px 0}table.cat td:empty{display:none}table.cat td::before{content:attr(data-l) ": ";color:var(--muted);font-size:12px}}
 @media (max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:6px}h1{font-size:1.5rem}}
-</style></head><body><main><nav class="top"><a href="index.html">Catalogue</a><a href="how-to-read.html">How to read this</a><a href="credits.html">Credits</a><a href="https://github.com/NoAutopilot/cipher-lab/tree/main/">Repository</a></nav><p class="mock">Mock-up for review, generated 9 October 2026 from the repository's audit files. Not published, not linked from anywhere; wording and layout are for the owner to judge.</p><h1>How to read this catalogue</h1>
-<h2>Search result (N0 to N5)</h2><p>Before a reading is described anywhere as new, a separate session, not the one that made the
+
+figure.cipher{margin:14px 0;background:var(--card);border:1px solid var(--rule);padding:8px}
+figure.cipher img{display:block;width:100%;height:auto;background:#fff}
+figcaption{font:12px/1.4 system-ui,sans-serif;color:var(--muted);margin-top:6px}
+.strip{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}
+.tk{display:inline-flex;flex-direction:column;align-items:center;min-width:34px;padding:2px 3px 0;border:1px solid var(--rule);border-bottom-width:5px;background:var(--bg)}
+.tk .cs{font:12px ui-monospace,Menlo,monospace;color:var(--muted)}
+.tk .pv{font:600 14px Georgia,serif}
+.tk .gr{font:10px system-ui,sans-serif;color:var(--muted)}
+.legend{font:12px system-ui,sans-serif}.lg{border-bottom:4px solid;padding:0 4px;margin-right:6px}
+.ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px;font:14px system-ui,sans-serif;background:var(--tint);padding:8px 10px}
+.k{color:var(--muted);font-size:12px;display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.two h3{margin:.8em 0 .3em}
+ul.tl{list-style:none;padding:0;margin:0;font:14px/1.45 system-ui,sans-serif}ul.tl li{margin:3px 0}
+.cx{font-size:11px;color:var(--muted);border:1px solid var(--rule);padding:0 4px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 6px}
+.badge{font:13px system-ui,sans-serif;border:1px solid var(--accent);padding:2px 8px;text-decoration:none;color:var(--fg)}
+.bar{display:flex;height:12px;border:1px solid var(--rule)}.bar span{display:block}
+img.thumb{display:block;max-width:220px;height:auto;margin-bottom:3px;background:#fff}
+ul.links{font:14px/1.6 system-ui,sans-serif;padding-left:18px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+</style></head><body><main><nav class="top"><a href="index.html">Catalogue</a><a href="attention.html">Readings worth attention</a><a href="how-to-read.html">How to read this</a><a href="credits.html">Credits</a><a href="https://github.com/NoAutopilot/cipher-lab/tree/main/">Repository</a></nav><p class="mock">Mock-up for review, generated 9 October 2026 from the repository's audit files. Not published, not linked from anywhere; wording and layout are for the owner to judge.</p><h1 id="how">How to read this catalogue</h1>
+<h2 id="n-class">Search result (N0 to N5)</h2><p>Before a reading is described anywhere as new, a separate session, not the one that made the
 reading, searches for it in print: the standard editions and calendars, the writer's and recipient's printed correspondence, the
 holding archive's catalogue, full-text libraries and the scholarship indexes. It logs every source family it searched. The class
 records what that search found; it is a search result, never a claim of discovery.</p><dl><dt>N0</dt><dd>Already known: this item&#x27;s plain text and its decipherment were already on record.</dd><dt>N1</dt><dd>Plain text already in print; our reading is an independent re-decipherment.</dd><dt>N2</dt><dd>Plain text known elsewhere; no earlier mapping of this cipher text to it was found.</dd><dt>N3</dt><dd>No earlier plain text or decipherment located after a logged search.</dd><dt>N4</dt><dd>No prior decipherment located; the principal editions, catalogues and project pages were searched (unpublished or archival work is not excluded).</dd><dt>N5</dt><dd>Confirmed by the holding archive or a specialist.</dd></dl>
 <p>A reading is counted in the catalogue's headline figures only after two such audits, and only from depth D2 up.</p>
-<h2>Depth (D0 to D4)</h2><dl>
+<h2 id="depth">Depth (D0 to D4)</h2><dl>
 <dt>Fragments read (D1)</dt><dd>Scattered words, no connected stretch long enough to rule out chance.</dd>
 <dt>Partially deciphered (D2)</dt><dd>At least one connected clause reads, and the verifier can state one true, specific sentence about the content. The percentage is the share of cipher signs read from a key, a known text or a controlled cryptanalytic step.</dd>
 <dt>Largely deciphered (D3)</dt><dd>80% or more of the cipher signs read that way, the gaps mostly names and code groups, with an outside check.</dd>
 <dt>Deciphered (D4)</dt><dd>Every cipher letter read; only listed name codes left, with a fresh independent re-derivation.</dd></dl>
-<h2>Key</h2><dl>
+<h2 id="key">Key</h2><dl>
 <dt>Key recovered by us</dt><dd>By cryptanalysis, by lining up a plain copy, or by identifying the code book.</dd>
 <dt>Period key</dt><dd>Rebuilt from a decipherment, key sheet or cipher book of the time.</dd>
 <dt>Published key</dt><dd>Someone else's modern key, applied by us and credited on the item page and in the audit.</dd></dl>

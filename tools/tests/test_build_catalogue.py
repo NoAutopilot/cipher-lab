@@ -79,7 +79,7 @@ with tempfile.TemporaryDirectory() as tmp:
     check(not re.search(r"R9-MANTV|VERIFY-X|session_", allhtml), "job name survived into a page")
     check("two blanks read in part" in allhtml, "safe sentence not quoted from AUDIT.md")
     check("first decipherment" not in allhtml, "unsafe sentence quoted")
-    check("<script" not in allhtml and "http://fonts" not in allhtml, "page carries a script or remote asset")
+    check("<script src" not in allhtml and "<link" not in allhtml and "<img" not in allhtml, "page carries a remote script, stylesheet or embedded image")
     check("fragments read" in open([x for x in pages if "bravo" in x][0]).read(), "D1 row not worded 'fragments read'")
     p2 = subprocess.run([sys.executable, "tools/build_catalogue.py", "--out", "docs/catalogue"], cwd=tmp,
                         capture_output=True, text=True, timeout=60)
