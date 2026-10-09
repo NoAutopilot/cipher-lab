@@ -12447,3 +12447,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:49 | UNA3-BLA worker (account 1, Opus) | halfway (10:49 UTC by date -u): p5 KA 40/41 PASS, 4 sign-M columns promoted, BLA186 p1 KA 6/7 FAIL (nothing moved there); cost is the orchestrator get_session reading; 2 Sonnet subagent calls, hdl.huntington.org 2 requests
 2026-10-09 10:50 | FM-R5b worker (account 1, Sonnet) | LANE LEDGER hdl take (<=30 requests: 10 IIIF pages + ~16 CONTENTdm CISOSEARCHALL, 3.3 s apart); for LANE LEDGER (account 1)
 2026-10-09 10:49 | LIN-VIEYRA worker | claim LIN-VIEYRA antt-linhares-chave, cap 1.5, box ends 11:39 UTC, IA take, for LANE FAMILY-A2h (account 2)
+2026-10-09 10:51 | LIN-VIEYRA worker | IA take
