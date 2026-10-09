@@ -8,7 +8,7 @@ No eval look (eval_heldout untouched; no eval item scored). No tool in `tools/` 
 vs L_dev_tune; the registered leave-one-line-out choice the same (4/5, p = 1.00). Shuffled-key control 0/20 passes at every lam_w.
 
 ## Step 1: truth in lattice at L's 12 dev_tune errors (gate before any fix)
-Lattices committed truth-free (7ed569e3e) before step 1 opened truth (bd: `run_latt2.py`, `step1.tsv`, commit after).
+Lattices committed truth-free (7ed569e3e) before step 1 opened truth (`run_latt2.py step1` -> `step1.tsv`, commit a1f3932c9).
 L = `benchmark-tx/outputs/birago1572-no87/labels.tsv`, lines f178v_L01-12: 12 wrong of 343 scored (tx_bench.position_errors;
 matches the PREREG's E = 12). Truth is a set (every homophone of the clerk's letter), so "in lattice" is letter-level.
 
