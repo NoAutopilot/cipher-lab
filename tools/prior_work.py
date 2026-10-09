@@ -144,6 +144,7 @@ import argparse, csv, datetime, fnmatch, glob, gzip, hashlib, importlib.util, js
 TOOLS = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, TOOLS)
 import shelfmark as sm  # noqa: E402
+import calendar_check as cc  # noqa: E402
 import print_check as pc  # noqa: E402
 import next_steps_fresh as nsf  # noqa: E402
 from html2text import Extractor  # noqa: E402
@@ -1315,8 +1316,8 @@ def date_variants(d, calendar=""):
     """[(date, label)]: d +-1 day, plus the other calendar style for 1582-1752 (Old/New Style noted)."""
     out = [(d + datetime.timedelta(days=k), "as written") for k in (-1, 0, 1)]
     if 1582 <= d.year <= 1752:
-        shift = 10 if d.year < 1700 else 11
-        styles = {"os": [shift], "ns": [-shift]}.get((calendar or "").lower(), [shift, -shift])
+        both = [cc.shift_days(d, "os"), cc.shift_days(d, "ns")]      # exact (calendar_check.py): 10 days to Julian 28 Feb 1700, then 11
+        styles = {"os": both[:1], "ns": both[1:]}.get((calendar or "").lower(), both)
         out += [(d + datetime.timedelta(days=s + k), "other style") for s in styles for k in (-1, 0, 1)]
     return out
 
