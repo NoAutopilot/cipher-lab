@@ -140,3 +140,12 @@ frame (3), release; crops committed under f0103_09/, f0046_09/, f0233_09/; two b
 0046 and 0233 may share a call if both are light), reconciliation one more unit; if a leaf shows any interlinear gloss, read it blind twice and
 use it as gate (a) like 0136. Grades per token; check 5 (print_check.py) after decode. NOTES "MANT-UNGL (9 Oct 2026)", gaps_check. Units: ~5 vision
 calls + 1 reconciliation (~1 each at these sizes) + CPU, ~$5. Report what was found and where it was not found; do not classify novelty.
+
+### LAG-RESCORE (Opus, cap 3.5, box 70 min, CPU only): la-garde-1577, syllabary T re-score on the LAG-V2 spec + wordcode score-gap gate
+NOTES "LAG-V2 (9 Oct 2026)" Verdict "cheapest next". (1) Syllabary: the PREREG-LAG-SYL statistic T re-scored on the revised spec (239 tok/48 types)
+with the same family_run.py invocation, seeds, N, corpus; the control at the revised measured error (0.000/0.067 vs settles; also the one-reader
+0.071) -- an Amendment to PREREG-LAG-SYL committed BEFORE the run. (2) Wordcode score-gap gate at err 0.071: PREREG-LAG-WC amendment (statistic =
+target judge score minus the control's mean at the same N/err; gate stated before), committed BEFORE the run; check the control can differ from the
+target on this statistic (rule 3). Note rule 3's third-attempt clause: if this is the third run of the same family with only one knob changed and it
+fails, log the family "untested-by-this-tool at this N" and retire it, not a fourth tuning. HYPOTHESES rows with both numbers, NOTES "LAG-RESCORE
+(9 Oct 2026)", Remaining gaps/Escalation, gaps_check. CPU, ~$2.5.
