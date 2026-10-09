@@ -11738,3 +11738,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:44 | FV-FM5a (first verifier, Opus) | LANE LEDGER hdl release (14 requests: 12 CONTENTdm queries + 2 item-info, 3.2 s apart); E216 = E49 (mssEC 19 p.91, 8983/2, already filed, the sent copy), E212 = mssEC 18 9778/1 (sent copy, unfiled); for LANE LEDGER (account 1)
 2026-10-09 00:45 | FV-FM5a (first verifier, Opus) | halfway 00:45 UTC by date -u: print + holder done; E214 corroborated by OR I/36 pt 3 pp.321-322 (Sheldon 29 May reply), E210 by Brown 1896 (158 F St, Tafft, Royer), E213 signer = Capt. L. F. Sheldon (Plum); E216 duplicate of E49; writing AUDIT; for LANE LEDGER (account 1)
 2026-10-09 00:45 | HDK-BRANDT | arcinsys take (3 requests)
+2026-10-09 00:45 | V-SUR0744R (verifier, Opus) | NA take (1 region refetch of 0744 right for 5 crop spot-checks), for LANE FAMILY-A2d (account 2)
