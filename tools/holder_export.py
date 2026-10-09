@@ -113,8 +113,8 @@ LEDGER_MONTH = re.compile(r"\b(?:Jan|Jany|Feb|Feby|Mar|Mch|Apr|Apl|April|May|Jun
 WASH_RE = re.compile(r"\bWash(?:ington|'n|n|\.)?(?=[\s.,]|$)")
 NOTE_PREFIXES = ("plain:", "variant:", "split:", "plain-at:", "gloss:", "join:", "note:", "#", "<!--")
 NEG_RE = re.compile(r"\b(no prior|not located|not found|neither|unprinted|not printed|nothing|unread|not in the)\b", re.I)
-PRINT_RE = re.compile(r"\b(?:is|are|was|were|been)\s+(?:also\s+)?(?:printed|in print)\b|\bprints\b|"
-                      r"\bprinted (?:in|as|by|under|at)\b|\bin print\b", re.I)
+PRINT_RE = re.compile(r"\bprints\b|\bin print\b|\bprinted\b(?!\s+(?:correspondence|papers|editions?|volumes?|works|"
+                      r"sources|text|accounts?|prints?)\b)", re.I)
 JARGON_RE = re.compile(r"\bAUD|\baudit|\bN[0-5]\b|code clause|\bheld\b|\bweak|\b(?:LS|FM|V1|G3|PROP|FIX)-?[A-Z0-9]|"
                        r"be-api|snippet|decoded|verifier|grade [A-Z]\b", re.I)
 CITE_RE = re.compile(r"\bp\.\s?\d|\bpp\.\s?\d|\b1[5-9]\d\d\b|\bORN?\b|Official Records")
@@ -489,6 +489,18 @@ def sentences(text):
     return [s for s in out if s]
 
 
+def split_top(s):
+    """Split a sentence at ', its ' / ', the ' / ', and its ' outside parentheses only."""
+    out, depth, start = [], 0, 0
+    for i, ch in enumerate(s):
+        depth += (ch == "(") - (ch == ")" and depth > 0)
+        if depth == 0 and s.startswith(", ", i) and re.match(r",\s+(?:its |the |and its )", s[i:]):
+            out.append(s[start:i])
+            start = i + 2
+    out.append(s[start:])
+    return [x.strip() for x in out if x.strip()]
+
+
 def prior_print_sentence(line):
     """One plain sentence: what was searched and that the item was not found there."""
     for s in sentences(line or ""):
@@ -521,8 +533,8 @@ def print_clauses(rec, label="", others=()):
         if not isinstance(v, str):
             continue
         for s in sentences(v):
-            for part in re.split(r",\s+(?=its |the |and its )", s):
-                part = re.sub(r"^.*?\b(?:weak(?:est)?(?: N\d)?|N\d)\s*(?:\([^)]*\))?\s*:\s*", "", part).strip()
+            for part in split_top(s):
+                part = re.sub(r"^[^:]{0,80}?\b(?:weak(?:est)?|N\d)\b[^:]{0,60}:\s*", "", part).strip()
                 part = re.sub(r"^external(?: check)?(?: \([^)]*\))?:\s*", "", part).strip()
                 part = re.sub(r"\s*\([^()]*\)", lambda m: "" if JARGON_RE.search(m.group(0)) else m.group(0), part)
                 if (PRINT_RE.search(part) and not NEG_RE.search(part) and CITE_RE.search(part)
