@@ -1,0 +1,117 @@
+# Huntington mssDE 108(A) p.1 (La Luzerne to Destouches, 16 Jan 1781), split=eval: mssDE 108(B) p.1 period decipherment (Destouches) under the 68/37/55 key (C rows); built by benchmark-tx/build_luzerne108a.py (TX-POOL-LEAF-2). Flag align-conflict = committed group keyed to another value.
+line	pos	ref_sign	truth	plain	status	flag
+p1_L01	1	436	549	nous	scored	align-conflict
+p1_L01	2	895		#	excluded:gloss-unread	
+p1_L01	3	880	880	pres	scored	
+p1_L01	4	86	86	non	scored	
+p1_L01	5	1188		prets	excluded:value-unkeyed	
+p1_L01	6	6	6|884|997	que	scored	
+p1_L01	7	947	725|947	les	scored	
+p1_L01	8	443	443	anglais	scored	
+p1_L01	9	961	961	ont	scored	
+p1_L01	10	744	744	fait	scored	
+p1_L02	1	878	561|878	une	scored	
+p1_L02	2	428	428	des	scored	
+p1_L02	3	72	1131	cent	scored	off-key-ref
+p1_L02	4	444	391|444	te	scored	
+p1_L02	5	1022	339|713|1022	en	scored	
+p1_L02	6	677	677	virginie	scored	
+p1_L02	7	266		ou	excluded:value-unkeyed	
+p1_L02	8	1068	456|1068	ils	scored	
+p1_L02	9	765		#	excluded:gloss-unread	
+p1_L02	10	931	931	y	scored	
+p1_L03	1	72		ent	excluded:value-unkeyed	
+p1_L03	2	932		tout	excluded:value-unkeyed	
+p1_L03	3	617		fort	excluded:value-unkeyed	
+p1_L03	4	1151	10|1086|1151	de	scored	
+p1_L03	5	355	355	ras	scored	
+p1_L03	6	64		va	excluded:value-unkeyed	
+p1_L03	7	915		ge	excluded:value-unkeyed	
+p1_L03	8	940		#	excluded:gloss-unread	
+p1_L03	9	655		suivant	excluded:value-unkeyed	
+p1_L03	10	947	725|947	les	scored	
+p1_L03	11	166		dernieres	excluded:value-unkeyed	
+p1_L04	1	217		nouvelle	excluded:multi-word	
+p1_L04	2	456	456|1068	ils	scored	
+p1_L04	3	961	961	ont	scored	
+p1_L04	4	555	555	re	scored	
+p1_L04	5	789	789	mon	scored	
+p1_L04	6	444	391|444	te	scored	
+p1_L04	7	890	543|890|1004	la	scored	
+p1_L04	8	480	480|832	vi	scored	
+p1_L04	9	832	480|832	vi	scored	
+p1_L04	10	991		er	excluded:multi-word	
+p1_L05	1	80	80|482|484|989	e	scored	
+p1_L05	2	10	10|1086|1151	de	scored	
+p1_L05	3	1157		#	excluded:gloss-unread	
+p1_L05	4	387		#	excluded:gloss-unread	
+p1_L05	5	96	96|824	et	scored	
+p1_L05	6	10	10|1086|1151	de	scored	
+p1_L05	7	165		ba	excluded:value-unkeyed	
+p1_L05	8	626	626	r	scored	
+p1_L05	9	884	6|884|997	que	scored	
+p1_L05	10	125	125|202|331	a	scored	
+p1_L05	11	66		cinq	excluded:value-unkeyed	
+p1_L06	1	366		#	excluded:gloss-unread	
+p1_L06	2	1111		#	excluded:gloss-unread	
+p1_L06	3	1145		lieues	excluded:value-unkeyed	
+p1_L06	4	301		au	excluded:value-unkeyed	
+p1_L06	5	10	10|1086|1151	de	scored	
+p1_L06	6	521		sous	excluded:value-unkeyed	
+p1_L06	7	1086	10|1086|1151	de	scored	
+p1_L06	8	480	480	ri	scored	
+p1_L06	9	656		ch	excluded:value-unkeyed	
+p1_L06	10	789	789	mon	scored	
+p1_L07	1	976		t	excluded:multi-word	
+p1_L07	2	1032		#	excluded:gloss-unread	
+p1_L07	3	1195	529	cette	scored	off-key-ref
+p1_L07	4	527		villeainsi	excluded:multi-word	
+p1_L07	5	997	6|884|997	que	scored	
+p1_L07	6	4		wilm	excluded:value-unkeyed	
+p1_L07	7	4		wilm	excluded:value-unkeyed	
+p1_L07	8	1068	456|1068	ils	scored	
+p1_L07	9	587	587	li	scored	
+p1_L07	10	175	525|1028	ce	scored	off-key-ref
+p1_L07	11	808	808	s	scored	
+p1_L08	1	101		#	excluded:gloss-unread	
+p1_L08	2	818		qui	excluded:value-unkeyed	
+p1_L08	3	961	961	ont	scored	
+p1_L08	4	579		etc	excluded:value-unkeyed	
+p1_L08	5	110		#	excluded:gloss-unread	
+p1_L08	6	1125	1125	si	scored	
+p1_L08	7	446	446	ve	scored	
+p1_L08	8	620	620	ment	scored	
+p1_L08	9	381	381|723|981	le	scored	
+p1_L08	10	321		#	excluded:gloss-unread	
+p1_L08	11	109	109	du	scored	
+p1_L09	1	124		gouvernement	excluded:value-unkeyed	
+p1_L09	2	10	10|1086|1151	de	scored	
+p1_L09	3	677	677	virginie	scored	
+p1_L09	4	628	628	sont	scored	
+p1_L09	5	52		enti	excluded:value-unkeyed	
+p1_L09	6	1167	991	ere	scored	off-key-ref
+p1_L09	7	620	620	ment	scored	
+p1_L09	8	1123		hors	excluded:value-unkeyed	
+p1_L09	9	1151	10|1086|1151	de	scored	
+p1_L09	10	1158		deffense	excluded:value-unkeyed	
+p1_L10	1	363		#	excluded:gloss-unread	
+p1_L10	2	947	725|947	les	scored	
+p1_L10	3	838		#	excluded:gloss-unread	
+p1_L10	4	462		#	excluded:gloss-unread	
+p1_L10	5	802		#	excluded:gloss-unread	
+p1_L10	6	909		#	excluded:gloss-unread	
+p1_L10	7	410		#	excluded:gloss-unread	
+p1_L10	8	402		avec	excluded:value-unkeyed	
+p1_L10	9	880	880	pres	scored	
+p1_L10	10	1025		ci	excluded:value-unkeyed	
+p1_L10	11	519		pi	excluded:value-unkeyed	
+p1_L11	1	1129		ta	excluded:value-unkeyed	
+p1_L11	2	868	868	tion	scored	
+p1_L11	3	599	599	sur	scored	
+p1_L11	4	947	725|947	les	scored	
+p1_L11	5	375		#	excluded:gloss-unread	
+p1_L11	6	480	480	ri	scored	
+p1_L11	7	991		er	excluded:multi-word	
+p1_L11	8	460	460	es	scored	
+p1_L11	9	940		#	excluded:gloss-unread	
+p1_L11	10	1185	394|848|1187	nul	scored	off-key-ref
