@@ -1,0 +1,314 @@
+passage	pos	sign_id	alt	conf	note
+L08	1	m		H	
+L08	2	c		H	
+L08	3	v		H	
+L08	4	m		H	
+L08	5	y		H	
+L08	6	L		H	
+L08	7	c		H	
+L08	8	4		H	
+L08	9	0		H	
+L08	10	#		H	
+L08	11	.		H	
+L08	12	y		H	
+L08	13	Z		H	
+L08	14	p		H	
+L08	15	v		H	
+L08	16	4	t	M	4-shape-with-cross
+L08	17	3		H	
+L08	18	1		H	
+L08	19	z	2	M	z-or-2
+L08	20	v		H	
+L08	21	f		H	
+L08	22	m		H	
+L08	23	sq		H	
+L08	24	m		H	
+L08	25	0'		H	
+L08	26	#		H	
+L08	27	.		H	
+L08	28	1		H	
+L08	29	.		H	
+L08	30	f		H	
+L08	31	m		H	
+L08	32	#		H	
+L08	33	a		H	
+L08	34	c		M	dot-below
+L08	35	L		H	
+L08	36	w		H	
+L08	37	v		H	
+L08	38	sq		M	gloss-stroke-crosses
+L08	39	0'		H	
+L08	40	0		H	
+L08	41	sq		H	
+L08	42	CLEAR		H	de
+L08	43	CLEAR		H	vostre
+L08	44	CLEAR		H	quelle
+L08	45	CLEAR		H	bonne
+L08	46	CLEAR		H	amij
+L09	1	y		H	
+L09	2	w		H	
+L09	3	3		H	
+L09	4	y		H	
+L09	5	4	NEW:variant	M	4-with-cross
+L09	6	f		H	
+L09	7	0		H	
+L09	8	1		H	
+L09	9	sq		M	dark-gloss-stroke-through
+L09	10	L	T	M	
+L09	11	#		H	
+L09	12	p		H	
+L09	13	CLEAR		H	bonne
+L09	14	CLEAR		M	Ingleterre?
+L09	15	CLEAR		H	si
+L09	16	CLEAR		H	bonne
+L09	17	CLEAR		H	plaist
+L09	18	CLEAR		H	Monseigneur
+L09	19	f		H	
+L09	20	y		H	
+L09	21	v		H	
+L09	22	a		H	
+L09	23	m		H	
+L09	24	y		H	
+L09	25	L		H	
+L09	26	#		H	
+L09	27	0	0'	M	dot-above-may-be-gloss
+L09	28	4		H	
+L09	29	4		H	
+L09	30	m		H	
+L09	31	1		H	
+L09	32	f		H	
+L09	33	v		H	
+L09	34	4		H	
+L09	35	0		H	
+L09	36	c		H	
+L09	37	1		H	
+L09	38	z		H	
+L09	39	0		H	
+L09	40	4	NEW:variant	M	4-with-cross
+L09	41	1		H	
+L10	1	0	NEW:variant	M	theta
+L10	2	sq		H	
+L10	3	m		H	
+L10	4	3		H	
+L10	5	1		H	
+L10	6	o	0'	M	vertical-gloss-stroke-above
+L10	7	#		H	
+L10	8	w		M	partly-under-dark-gloss-ink
+L10	9	L		H	
+L10	10	w		H	
+L10	11	0		H	
+L10	12	CLEAR		M	promptement?
+L10	13	v		H	
+L10	14	#		H	
+L10	15	0		H	
+L10	16	m		H	
+L10	17	sq		H	
+L10	18	3		H	
+L10	19	0		H	
+L10	20	#		H	
+L10	21	1		H	
+L10	22	sq		H	
+L10	23	m		H	
+L10	24	0		H	
+L10	25	m		H	
+L10	26	p		H	
+L10	27	4		H	
+L10	28	t	+	M	
+L10	29	0		H	
+L10	30	3		H	
+L10	31	.		H	
+L10	32	1		H	
+L10	33	.		H	
+L10	34	f		H	
+L10	35	0		H	
+L10	36	w		H	
+L10	37	0		H	
+L10	38	#		H	
+L10	39	.		H	
+L10	40	1		H	
+L10	41	.		H	
+L10	42	m		H	
+L10	43	y		H	
+L10	44	L		H	
+L10	45	w		H	
+L10	46	v		H	
+L10	47	m		H	
+L10	48	4		H	
+L10	49	m		H	
+L10	50	c		H	
+L10	51	0		H	
+L10	52	a	CLEAR	M	could-be-clear-word-amij
+L10	53	m		M	
+L10	54	.		L	
+L11	1	Z		H	
+L11	2	y		H	
+L11	3	L		H	
+L11	4	CLEAR		H	ou
+L11	5	CLEAR		H	celluy
+L11	6	CLEAR		H	qu'il
+L11	7	CLEAR		H	bonne
+L11	8	CLEAR		H	plaira
+L11	9	CLEAR		H	ordonner
+L11	10	0'	0	M	stroke-above-may-be-gloss
+L11	11	y		H	
+L11	12	m		H	
+L11	13	c		H	
+L11	14	#		H	
+L11	15	y		H	
+L11	16	z		H	
+L11	17	v		H	
+L11	18	f		H	
+L11	19	3		H	
+L11	20	0		H	
+L11	21	w		H	
+L11	22	4		H	
+L11	23	1		H	
+L11	24	sq		H	
+L11	25	#		H	
+L11	26	m		H	
+L11	27	p		H	
+L11	28	w		H	
+L11	29	v		M	gloss-ink-over
+L11	30	sq		H	
+L11	31	0'	0	M	
+L11	32	.		H	
+L11	33	1		H	
+L11	34	.		H	
+L11	35	sq		H	
+L11	36	0		H	
+L11	37	f		H	
+L11	38	#		H	
+L11	39	y		H	
+L11	40	w		H	
+L11	41	a		H	
+L11	42	m		H	
+L11	43	1	L	M	
+L11	44	4		M	
+L11	45	NEW:8-shape	3	L	last-sign
+L12	1	0		H	
+L12	2	f		H	
+L12	3	v		H	
+L12	4	L		H	
+L12	5	0		H	
+L12	6	f		H	
+L12	7	v		M	gloss-stroke-through
+L12	8	4		H	
+L12	9	0		H	
+L12	10	m		H	
+L12	11	v		M	gloss-stroke-through
+L12	12	c		H	
+L12	13	1		H	
+L12	14	sq		H	
+L12	15	CLEAR		H	de
+L12	16	CLEAR		H	sa
+L12	17	CLEAR		H	majeste
+L12	18	CLEAR		H	d'autant
+L12	19	CLEAR		H	que
+L12	20	CLEAR		H	bonne
+L12	21	CLEAR		H	en
+L12	22	CLEAR		H	france
+L12	23	CLEAR		H	l'instruction
+L12	24	CLEAR		H	particuliere
+L12	25	CLEAR		H	et
+L12	26	CLEAR		H	si
+L12	27	CLEAR		H	bonne
+L12	28	CLEAR		H	plaise
+L13	1	4		H	
+L13	2	v		H	
+L13	3	3		H	
+L13	4	p		H	
+L13	5	t		H	
+L13	6	L		H	
+L13	7	y	0'	M	o-crossed-by-vertical-stroke
+L13	8	0		H	
+L13	9	f		H	
+L13	10	#		H	
+L13	11	L		H	
+L13	12	0		H	
+L13	13	sq		M	dark-gloss-stroke-through
+L13	14	m		H	
+L13	15	w		H	
+L13	16	0		H	
+L13	17	a		H	
+L13	18	m		H	
+L13	19	p		H	
+L13	20	sq		H	
+L13	21	0		H	
+L13	22	.		H	
+L13	23	3		H	
+L13	24	v		H	
+L13	25	m		H	
+L13	26	z	m	M	
+L13	27	v		H	
+L13	28	f		H	
+L13	29	v		H	
+L13	30	a		H	
+L13	31	m		H	
+L13	32	4		H	
+L13	33	p		H	
+L13	34	v		H	
+L13	35	p	NEW:variant	M	p-with-b-attached
+L13	36	f	t	M	overlapped-by-gloss
+L13	37	L		H	
+L13	38	y	NEW:variant	M	psi-without-stem
+L13	39	m		H	
+L13	40	w		H	
+L13	41	sq		H	
+L13	42	a		H	
+L13	43	m		H	
+L13	44	0		H	
+L13	45	#		H	
+L13	46	.		H	
+L13	47	1		H	
+L13	48	.		H	
+L13	49	4		H	
+L13	50	+	t	M	
+L13	51	a		H	
+L13	52	L		H	
+L13	53	a		H	
+L13	54	m		H	
+L13	55	1		H	
+L13	56	+	t	M	
+L14	1	0		H	
+L14	2	f		H	
+L14	3	m		H	
+L14	4	y		H	
+L14	5	L		H	
+L14	6	1		H	
+L14	7	v		H	
+L14	8	0'		H	
+L14	9	4		M	overlapped-by-gloss
+L14	10	Z		H	
+L14	11	v		H	
+L14	12	L		H	
+L14	13	0		H	
+L14	14	sq		H	
+L14	15	m		H	
+L14	16	1		H	
+L14	17	0		H	
+L14	18	sq		H	
+L14	19	m		H	
+L14	20	0'		H	
+L14	21	v		H	
+L14	22	c		H	
+L14	23	4	v'	M	delta-with-stem
+L14	24	T		H	
+L14	25	CLEAR		H	que
+L14	26	CLEAR		H	le
+L14	27	CLEAR		M	prosy?
+L14	28	CLEAR		M	sera?
+L14	29	a		H	
+L14	30	m		H	
+L14	31	0		H	
+L14	32	3		H	
+L14	33	NEW:N-shape	4	L	
+L14	34	L		H	
+L14	35	0		H	
+L14	36	w		H	
+L14	37	CLEAR		H	bonne
+L14	38	CLEAR		H	partie
+L14	39	CLEAR		H	de
+L14	40	CLEAR		H	forcce
+L14	41	CLEAR		H	de
+L14	42	CLEAR		H	mrs
+L14	43	CLEAR		H	de
