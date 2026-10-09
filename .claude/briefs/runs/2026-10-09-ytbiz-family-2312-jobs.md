@@ -76,3 +76,41 @@ the committed state, then the rule-7 re-derivation owed after A3V3-ES132S: regen
 key with the folder's decode script and --check; a difference above the M-graded tokens goes back to the reading (report it, do not paper
 over it). Do not start the 40-candidate two-crop look. If a reading changes, carry it into AUDIT.md per rule 10's propagation paragraph and
 any SECOND-OPINIONS-QUEUE.tsv row for this target. NOTES "## ES132-R7", gaps_check.py after.
+
+## Wave 2 (23:5x UTC 9 Oct)
+Wave 1 results (all done by 23:52, 11.76 by get_session): ES132-R7 both steps already on file (orchestrator briefed from a stale Verdict line --
+lesson: grep the dated sections before briefing); BRO-CT match NOT SUPPORTED, t=l rejected, key unchanged; SUR-266 inv. 266-270 0 cipher in 120
+scans; VB-EYE 0120/0134 plain prose, no unread candidate; MANT-207 no second witness on disk (0151 crop never committed), 0490 G01 fix applied,
+gates unchanged; LIN-BFSP2 Strangford/Couttinho no 1808-12 hit, 13 cells unsearched (be-api 502s). Hosts this wave: sachsen (MANT-0151 only,
+<= 6 GETs); NA (SUR-DENSE only); IA (LIN-BFSP3 only). Every job: prior-work check 1 on its own step FIRST -- if the step is already on file,
+one ROOM line and stop.
+
+### MANT-0151 (Opus, cap 3, box 60 min, sachsen take/release, <= 6 GETs): sachsstaatsarchiv-manteuffel-1712 694/08 frame 0151, code 207 witness
+MANT-207's named next (NOTES ~lines 4300-4334). GAPS207's eye note (4 Oct) read 'le Gr. Chancelier 207' among glossed names on 0151; key.tsv holds
+207 = 'le Gr Tres.' on one witness, so 0151 is either a second witness or a conflict. Fetch 0151 once at the archive's served size (manifest), cut
+the line crop(s) carrying 207 with tools/iiif_lines.py --image (pasted), commit them, two blind Sonnet gloss passes over the 207 group (reader not
+told the candidate values; decoys: two other glossed name codes on the same leaf). Report the blind reads verbatim. Same referent on a different
+letter -> 207 M -> C in key.tsv with both witnesses cited; a different referent -> CLAUDE.md rule 4's conflict paragraph (record sender,
+recipient, date, direction of each witness, log it in HYPOTHESES.md, grade 207 M where the witness does not match), never settled by majority.
+decode_key.py --check after; NOTES "## MANT-0151"; gaps_check.py.
+
+### SUR-DENSE (Sonnet, cap 3, box 75 min, NA take/release, <= 150 requests, >= 1.9 s): na-suriname-map-1781 inv. 370, 371, 378-380 denser screen
+Handoff 2009 next 1, second half (SUR-266 did not reach it). Read NOTES "## SUR-GOV" and "## SUR-266"; screen_gov.tsv lists the scans already
+looked at. Every 10th scan not yet looked at in inv. 370, 371, 378, 379, 380 at 400 px, same contact-sheet controls (one inv. 373 cipher scan +
+one plain scan per sheet; a missed control = re-look), then +-5 around any hit, and glossed yes/no at >= 1200 px on one scan of any run (gloss =
+N0, key test only). Append to screen_gov.tsv (or screen_gov_dense.tsv); NOTES "## SUR-DENSE" with counts per inventory and any UNGLOSSED cipher
+run as the only unread candidate. No transcription.
+
+### LIN-BFSP3 (Sonnet, cap 1.2, box 40 min, IA take/release, be-api >= 2 s, <= 40 requests): antt-linhares-chave BFSP remainder
+LIN-BFSP2's "Next" (NOTES ~line 1738): retry the 13 unsearched item x family cells listed in its TSV (one retry each after a pause on a 502;
+a second 502 = unsearched, logged), then the one advancedsearch metadata fetch that maps the items to volume/years. Same per-family controls as
+LIN-BFSP2. Append to its TSV; NOTES "## LIN-BFSP3". A search result for the log, never a novelty verdict. gaps_check.py.
+
+### ES132-40 (Opus, cap 4, box 70 min, disk only): es132-vargas-mexia-1578 two-crop look at the unsettled f.89 candidates
+The Verdict's cheapest next (line 102, as corrected by ES132-R7). Prior-work check 1 first: grep the dated sections after A3V3-ES132S
+(ES132-RD, ES132-SLIC, ES132-LOOK, ES132-AUDIT, ES132-R7) for any look already run on these candidates; if run, one ROOM line and stop. Else:
+identify the unsettled '?' candidates A3V3-ES132S left (count them; the Verdict says 40), cut two crops each (letter body + duplicate f.93-95
+counterpart) from images on disk (tools/iiif_lines.py --image, pasted), one blind Sonnet look per pair with decoys planted at a known rate
+(ES132-AUDIT's planted-tile method; the control must reach its 0.80 catch gate or the look is a non-test and nothing is applied). Apply only
+settlements the control licenses; re-run the folder's decode/--check and report every token that moved (M stays M unless the gate licenses).
+NOTES "## ES132-40"; gaps_check.py. If a reading changes, carry it into AUDIT.md per rule 10's propagation paragraph.
