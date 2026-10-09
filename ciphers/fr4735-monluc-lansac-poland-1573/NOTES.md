@@ -478,3 +478,29 @@ Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against 
 - [ ] image-check: f.86 K07 blind-sorted alone (this pass, gate FAIL); planned step: binary curl-present sort on wider crops
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 5 internal gaps; cheapest next: binary curl-present blind sort of the f.86 K07 tiles on wider crops, ~$0.5
+
+## MONLUC-CURL: binary curl-present blind sort of the f.86 K07 tiles on wider crops (9 Oct 2026, account 4, Opus, for LANE DEFAULT-account-4-20261009-1340)
+Brief: .claude/briefs/runs/2026-10-09-account4-default-1340-jobs.md J11 (MONLUC-F86's named next). Disk only (no host requests).
+This is the **second blind sort of f.86 K07** (after MONLUC-F86's shape sort); a FAIL is logged under rule 3.
+Prior-work step: `python3 tools/prior_work.py fr4735-monluc-lansac-poland-1573 --item-spec 'shelfmark=BnF fr.4735;folio=86r;sender=Monluc;recipient=Charles IX' --step-type crop --fetch`
+-> first run exit 4 (one owed row: this worker's own live claim, 1-own), recorded CLEAR with `--record`; re-run exit 0 ("proceed on the
+residue: whole item"), step CLEAR, plaintext UNCHECKED-NET (aaymeloglu no local clone).
+Crop step: no `tools/iiif_lines.py` run -- the wider crops are cut with PIL from the committed native region
+`images/src_ark_12148_btv1b9060724s_f172_1230_950_2580_520.jpg` (no Gallica call needed): 180x160 native px round each of the 18 f.86
+centres in blind_k07_sort.tsv (17 K07 + K38 L03:18), 1.5x, autocontrast, white pad at the region edge, corner ticks only (no box over
+the strokes), shuffled seed 1186: `python3 -I ciphers/fr4735-monluc-lansac-poland-1573/f86_curl_sheet.py <scratch>/curl_key.tsv <scratch>/curl_sheet.png`.
+Sheet in scratch only; no image committed. Limitation: L04 tiles sit at the region's bottom edge, so a curl running below y 520 is cut
+(tile of L04:7 most).
+**Pre-registration (pushed before the call).** One Sonnet call sees only the sheet (18 numbered tiles; no line, gloss, cell name, value
+or earlier group) and answers per tile one binary feature question: "is the centre sign (between the corner ticks) joined to or enclosed
+by a large open curved stroke (a C-shaped curl or loop round it, often sweeping under it)? Y / N / U (cannot tell)", with where the
+curl starts. Gate script `f86_curl_gate.py ANSWERS.tsv`:
+(1) *Split*: >= 3 K07 tiles Y and >= 3 N; otherwise "no split", logged, no --try.
+(2) *Gate*: X = the Y tiles (fixed, binary; no max-group re-pick). Statistic: t-faced K07 tiles in X among the 14 K07 tiles with a
+faced letter (gloss_faced: t 7, g 5, s 1, n 1). Null: 10,000 shuffles of the 14 faced letters over the same tiles, seed 1186; PASS if
+p < 0.05. U counts as not-Y. Power note, stated before the call: MONLUC-F86's own non-blind curl reading (t 6/8 vs 1/6) gives p 0.051
+under this same null, so a blind sort that only reproduces it FAILs; a PASS needs a cleaner separation than the reader's.
+Secondary (reported, not gating): the K38 tile's answer (the key sheet's K38 cell is a C-curl round a z, so Y is the expected anchor);
+agreement with `curl_reader` (non-blind).
+(3) *--try*: only if (1) and (2) pass: scratch copy of ciphertext_c172.tsv with X's K07 tokens relabelled K69, `tools/decode_key.py
+<scratch> --try K69=t` with its own two nulls; accept = M. key.tsv not edited; a transcription relabel only if --try accepts.
