@@ -1,0 +1,30 @@
+# CLIN-EYE (9 Oct 2026): eye check of c5:18 and every c6 cell of p123_full_reconciled.tsv on the committed frame
+# images/h1649/img1205_w1600.jpg (the D4-CLIN native column crops were in that session's scratchpad, not on disk; this job was disk only),
+# strips autocontrasted and upscaled 4-8x; two blind Sonnet looks on the six doubt crops. The reconciled TSV is NOT edited (gates not re-scored).
+col	idx	kind	entry_reconciled	underline_reconciled	status	correction	evidence
+c5	18	letter	-6	n	corrected	underline n -> y	single rule directly under "-6" (c5_1 strip; both Sonnet looks: underline yes); ends "furnish"
+c6	1	letter	x23-26	n	corrected (M)	x23-26 -> x23-20	second position figure is a closed oval with no ascender, unlike the looped 6 of c6:14 -16 and c6:17 -6 on the same column; looks: 20 (0 or 6) / 26 (or 20); worker: 0. Grade M, as the 6 is not excluded
+c6	2	letter	-7	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	3	letter	-9	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	4	letter	-11	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	5	letter	-7	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	6	letter	-8	y	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	7	letter	x24-13	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	8	letter	-12	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	9	letter	-31	n	as transcribed (doubt)	-31	first figure flat-topped 3 like the 3 of x23 (look 1: 3 or 8; look 2: 81, 8 could be 3 or 2); no look reads 2. Note: line 24 has 26 letters, so neither 31 nor 81 is on the line; not corrected from the image
+c6	10	letter	-22	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	11	letter	-10	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	12	letter	-13	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	13	letter	-10	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	14	letter	-16	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	15	word	23-1	y	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	16	letter	x29-17	n	as transcribed (doubt)	x29-17	"29" clear on both looks and the worker's; last figure 7 or 4 (look 2: 14). Note: line 29 is "london" (6 letters), so no position 17; not corrected from the image
+c6	17	letter	-6	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	18	letter	-44	n	corrected	underline n -> y	single rule directly under "-44" across the column (both Sonnet looks: underline yes)
+c6	19	letter	x20-32	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	20	letter	-9	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	21	letter	-15	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	22	letter	-36	y	as transcribed	-36 underline y	blot above touches the 3 (3 or 8 per both looks); rule under it confirmed
+c6	23	word	1-18	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	24	clear	25	y	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
+c6	25	skip	-15	n	as transcribed		w1600 strip c6_0/c6_1, worker look: figures and underline as reconciled
