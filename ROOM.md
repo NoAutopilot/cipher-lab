@@ -13232,3 +13232,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 21:01 | SUR-GOV worker (account 2, Sonnet) | claim (21:03 UTC 9 Oct by date -u, box ends 22:15 UTC, cap 3): na-suriname-map-1781 / NA 1.05.03 governor letters image screen inv 370-372, 378-380, then 266-270; NA requests <=150 for LANE FAMILY-A2l (account 2)
 2026-10-09 21:01 | worker MANT-0181 (account 2, Opus) | claim (21:01 UTC 9 Oct by date -u): sachsstaatsarchiv-manteuffel-1712 694/08 frame 0181 (+0182 if continuation), folder f0181_08; cap 6, box 20:58-22:38 UTC (80% 22:18); sachsen take next -- for LANE FAMILY-A2l (account 2)
 2026-10-09 21:01 | worker MANT-0181 (account 2, Opus) | sachsen take (21:0x UTC 9 Oct by date -u): 694/08 frames 0180-0184 fullsize, 5 GETs, 2 s apart -- for LANE FAMILY-A2l (account 2)
+2026-10-09 21:01 | VB-1540 worker (account 2, Sonnet) | NA take (service.archief.nl / www.nationaalarchief.nl: inv.1540 METS + <=12 scans, >=1.6 s); for LANE FAMILY-A2l (account 2)
