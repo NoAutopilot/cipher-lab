@@ -62,3 +62,38 @@ pointer/entry (check each against ciphertext.txt headers first: 9866/3 may be E8
 skip it and say so): 9892/1, 9835/0, 10002/2, 9827/1, 9866/3, 9825/2, 9820/1; then the next in file order after 10056/2: 9811/2, 9779/1, 9843/1, 9895/2
 (stop at ten read). IDs from E341 (fetch first; take the next free one if taken). NOTES "## MS18-R4 (9 Oct 2026, account 1, for LANE LEDGER)" with a per-row
 line "in print / holder clear copy / not located (sources searched)", Remaining gaps / Escalation, gaps_check, decode --check. No audits. Unit ~0.4 per row.
+
+---
+
+# Wave 2 (written 9 Oct 2026 21:2x UTC; seven_day allowed_warning, continuing per lane-common-blast; lane ~17 of 60 at writing)
+By get_session: FV-MS18d 7.16 (E334 N1 OR I/34 pt 4 p.64; E333 E335 E340 N3 D3; AUD2-LEDGER-30), FV-MS18e 3.40 (E331 E332 E336-E339 N1 on page images), FIX-FM14
+0.77, KEY-LAV 2.15 (lavender = Washburne 3/3 vs 0/3; Tulip rule 11/11 + 108/108; E287 misdecode), MS18-R4 2.04 (E341-E350: 4 printed, 6 not located). Wave 1 15.52.
+
+## FIX-FM15 (Sonnet 5.5; cap $3, box 60 min, no network)
+Exactly the FIX-FM14 method (above). Sources: AUDIT.md s.5 of "## AUDIT (FV-MS18d)" (E333-E335 E340: decoder errors black/Colored/Ordnance/Frances, headers with
+print/holder pointers ORN I/21 pp.302-303, holder 4505, 8004/8825; E334 Legend = Hurlbut vs print Canby: a second witness for the HYPOTHESES.md conflict row
+FIX-FM13 opened for E323 -- add it there, rule 4, never settle by majority) and "## AUDIT (FV-MS18e)" (eight decoder overrides, E331 E332 E336-E339 headers with
+the OR page and IA leaf). NOTES "## KEY-LAV": this job MAY add to key.md exactly the rows/wording KEY-LAV proposes there (lavender = Washburne at the grade it
+proposes; the Tulip Open/Period context rule as a note on the two existing rows and in decode.py's existing per-entry/context mechanism), and fix E287
+("tuliped fire") accordingly; nothing else in key.md. Propagate to status.json and SO prompts (rule 10). decode.py / decode_no2.py / decode_no9.py --check exit 0;
+depth_check; file_shrink_guard; NOTES "## FIX-FM15 (9 Oct 2026, account 1, for LANE LEDGER)".
+
+## FV-MS18f, FV-MS18g (Opus 5.5, first verifiers, separate from every reader; cap $6.5 each, box 100 min each)
+Exactly "## FV-MS18d" (wave 1 above) on MS18-R4's six "not located" rows (NOTES "## MS18-R4" names what the reader did and did not search -- Navy and Grant Papers
+were unsearched; the OR print miss rate is real, so grep OR I/37-43 by date + addressee on the or_volumes.tsv IA ids before calling a row unlocated).
+- FV-MS18f: E343 (Sheridan via McCaine, 26 Aug 1864; sender unseen), E345 (Hurlbut / Memphis, 19 Aug 1864; M Hurlbut/Europe), E346 (Stanton to Murray, Halifax
+  agent Keith, 13 Aug 1864; the book share did not establish No. 1 -- test it first and say if another book reads it better). AUDIT.md "## AUDIT (FV-MS18f)".
+- FV-MS18g: E347 (W. P. Smith via Sampson, Grant to Monocacy, 5 Aug 1864), E349 (Meigs to Donaldson, 16 Sept 1864), E350 (Brackett, Planters House, 10 Nov 1864).
+  AUDIT.md "## AUDIT (FV-MS18g)".
+On N3+ D2+ append WORK-QUEUE `AUD2-LEDGER-31` (FV-MS18f) / `AUD2-LEDGER-32` (FV-MS18g) (account-3, Opus 5.5, cap 2.5 per entry; fetch first, take the next free
+number if taken). Unit ~1.9 per entry.
+
+## FV-MS18h (Opus 5.5, first verifier; cap $2.5, box 60 min): N1 confirms of E341, E342, E344, E348
+Exactly "## FV-MS18e" (wave 1 above). The reader's print: E341 OR I/39 pt 3 p.703; E342 I/39 pt 2 p.343; E344 I/39 pt 3 p.274 (paragraph 1 only: paragraph 2,
+the Eckert-office note about copies to Lamb, is U/M and unprinted -- classify the entry as a whole honestly, and say whether paragraph 2 alone carries an N3
+question); E348 I/37 pt 2 (8 July 1864; find the page). AUDIT.md "## AUDIT (FV-MS18h)". If E344 paragraph 2 is N3+ D2+, it rides AUD2-LEDGER-32 or the next free number.
+
+## MS18-R5 (Sonnet 5.5, reader; cap $3, box 100 min): 10 more mssEC 18 No. 1 rows
+Method exactly "## MS18-R4" (wave 1). Rows (next in clean-ms18.tsv order after 9895/2, none in a ciphertext.txt header at 21:2x): 10065/2 (2 Dec 1865 -- HEAD
+share first; "no book in hand" if none reads), 9821/1, 10004/1, 9791/0, 9863/0, 9729/2, 9825/1, 10043/1, 9753/1, 9770/1 (spare: 9674/0, 9886/1). IDs from E351.
+NOTES "## MS18-R5 (9 Oct 2026, account 1, for LANE LEDGER)". No audits. Unit ~0.25 per row.
