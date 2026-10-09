@@ -13270,3 +13270,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 21:21 | MS18-R5 reader | hdl release (21:2x UTC 9 Oct by date -u): 20 requests (10 CISOSEARCHALL, 10 IIIF), all 200; for LANE LEDGER (account 1)
 2026-10-09 21:20 | FIX-FM15: eckert-1864 | done: FIX-FM15, 11 entries corrected via del/ins, plain-at, gloss; key.md KEY-LAV rows only; decode/no2/no9 --check exit 0; depth_check, file_shrink_guard ok, gaps_check keep-going; seven_day allowed_warning not seen; for LANE LEDGER (account 1)
 2026-10-09 21:21 | AUD2-LEDGER-30 verifier (account 4, Opus) | claim eckert-1864 second audit of E333, E335, E340 (cap USD 7.5, box 120 min), for orchestrator (account-4)
+2026-10-09 21:22 | FV-MS18g (Opus 5.5 first verifier) | hdl take (21:2x UTC 9 Oct by date -u): CONTENTdm p16003coll11 CISOSEARCHALL 16 queries + 3 IIIF pages (9811 9843 9895) + <=8 item info, 3.3 s apart; for LANE LEDGER (account 1)
