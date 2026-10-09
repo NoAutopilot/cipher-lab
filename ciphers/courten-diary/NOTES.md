@@ -306,3 +306,9 @@ Next for the target remains the BL imaging request (REQUEST.md), Add MS 4956 wit
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: wait for the BL Imaging reply to the 23 Sept 2026 request (ASKS 13, board card bl-chase), then transcribe Add MS 4956 against Madden's key at f.66 and Sloane MS 4019 f.79, ~$4 per 10 leaves; nothing cloud-side remains before the images. Who acts: outside. Source: this file's last line ("Next for the target remains the BL imaging request (REQUEST.md)"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on the BL Imaging reply for Add MS 4956 and Sloane MS 4019 f.79 (request 23 Sept 2026; ASKS 13).
+- Render sloaneletters.com's Courten letters to Sloane (script-rendered, unread by curl 2 Oct) with browser_fetch.js: names, places and dates as cribs for the diary. S, ~$1, tools/browser_fetch.js
+- Compare the two key descriptions already catalogued (Madden f.66 'J.M. Oct 1854', Sloane 4019 f.79) for what each record says of the system, so the key check is ready on arrival. S, disk only

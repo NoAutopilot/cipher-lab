@@ -108,3 +108,8 @@ check-solved verdict and no "## Premise check". The edition and threads not yet 
 editions, web search and the Cipherbrain/Cryptiana threads (see "Searched" above). SIBS-PREMISE (8 Oct 2026) read only the disk, so it is not a check-solved verdict.
 No reconciliation, decode or judge run was done, and no file other than this section changed. The WORK-QUEUE row is bounced.
 Next: run the check-solved workflow with its Premise check on this folder (~$2-3). Then re-queue CEPPO-4702 unchanged.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on the check-solved verdict with Premise check (intake gate failed 8 Oct 2026, CEPPO-4702); Gomberville 1665 and the Italian Ceppo editions unread.
+- Run check-solved with its Premise check (Gomberville 1665, Italian Ceppo editions, web, Cipherbrain/Cryptiana threads), then intake_gate_check.py. S, ~$2-3, check-solved.md

@@ -95,3 +95,9 @@ No reading on disk -- no ciphertext or reading: status blocked (REQUEST.md). No 
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: open Troyes Ms 2236 via CCFr/Calames for plain copies of the 1659 letters (depends on nobody), ~$1; the images themselves stay with the BnF Arsenal quote batch (ASKS 38, REQUEST.md). Who acts: agent. Source: this file's "Verdict (CS-A2-L, 3 Oct 2026)" While-waiting sentence; written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on a reading-room visit or reproduction of Ms-6334 (REQUEST.md 24 Sept 2026; ASKS 38 Arsenal quote batch); the leaves are not online.
+- Open Troyes Ms 2236 (CCFr/Calames record, 'Copies de lettres de et à Mme la duchesse de Longueville, 1650-1669') for plain copies of the 1659 letters. S, CCFr/Calames fetch
+- Grep Chéruel, Lettres du cardinal Mazarin vols 4-7 (IA djvu) by the cipher letters' dates and 'Longueville', 'Livourne': vols 3 and 9 only were read. S, grep

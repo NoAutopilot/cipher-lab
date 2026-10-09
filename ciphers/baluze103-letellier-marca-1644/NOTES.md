@@ -870,3 +870,9 @@ Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditio
 - [x] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter rebuilt with the 9 tiles in focus and preflight-PASSed (R10-BAL103F, 6 Oct 2026), waiting on republication and the owner's pass
 - [x] retry: fr17 test of 9 = s on f.50 against position and value nulls (R10-BAL103E, 6 Oct 2026): gate FAIL, D -0.042, no change
 Verdict: parked: both gaps wait on the owner's pass over the republished f.50 sorter (account-3 orchestrator republishes; ROOM flag R10-BAL103F)
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on the owner's pass over the republished f.50 sign sorter (ROOM flag R10-BAL103F, 6 Oct 2026): confusable pairs and the 42 ambiguous 9s.
+- Blind-pass and align f.189r with its period decipherment (Gallica btv1b9001389d; DECODE R2744): more known-value 9s than f.171r's six to test the 9 shape split. M, iiif_lines + reconcile_passes
+- Same for f.200 or f.230 (DECODE R2745, R2746) if f.189r still has k_i = 0 (no 9 read as i). M, same tools

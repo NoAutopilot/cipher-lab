@@ -167,3 +167,9 @@ Script `keys/tomo_test.py`, output `keys/tomo_test_out.txt`. Credit: S. Tomokiyo
   lengths is a ~$0.5 snapshot job.
 Status unchanged (`open`). Novelty not classified (rule 10). Requests: cryptiana.web.fc2.com 4, cryptiana.blogspot.com 1, Gallica
 IIIF 4.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on a key: no key exists for the Nov 1571 numerical cipher (Tomokiyo's reply 5 Oct 2026; both of his systems fail with control, TOMO-NUM).
+- Snapshot Tomokiyo's 2024/09 post 'duke-of-nevers-variable-length-figure' (his 'the 1571 instance') for this letter's code lengths. S, ~$0.5, to sources/cryptiana/
+- Decoy-null joint-consistency crib test on the pooled f.119 + f.100r digits (BIRAGO-NUM3's named next step). S, ~$2, family_run.py with control first

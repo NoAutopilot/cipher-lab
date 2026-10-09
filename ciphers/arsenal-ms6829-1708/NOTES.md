@@ -107,3 +107,9 @@ redirect); googleapis 1; github.com 2 shallow clones; WebSearch 6.
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: the images: add Ms-6829 fols 296-301 to the BnF Arsenal reproduction quote batch (ASKS 38, outreach/bnf-manuscrits-arsenal-quote-batch.md) for the owner to order, ~$0 agent cost; once the scan arrives, read the sender's name and transcribe the six leaves, ~$3. Who acts: owner. Source: this file's Verdict (images unreachable; standing gap: read a name from the leaf first); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on the Arsenal reproduction quote for Ms-6829 fols 296-301 (REQUEST.md 24 Sept 2026; ASKS 38 batch, outreach/bnf-manuscrits-arsenal-quote-batch.md); the leaf must give a sender's name first.
+- Grep Martin's Arsenal catalogue vols (IA djvu) for other 'chiffr' items dated Dec 1707-Feb 1708: a sibling or deciphered copy of the 5 Jan 1708 letter. S, ia_numeral_runs/grep
+- Grep the BnF archivesetmanuscrits finding aids for 'déchiffrement' items dated Jan 1708 (War of Spanish Succession court copies, like this recueil's wills): a clear copy filed elsewhere. S, plain POST search

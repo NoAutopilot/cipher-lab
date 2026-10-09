@@ -684,3 +684,8 @@ p.2 l.6, February or September) stays `febr~?` as before, unsettled by this job.
 use them (they could replace the 2x-autocontrast tiles in `clear/focus/focus-sheet.html`). Next step needs a different instrument, not
 a re-tune of this one: a reader of 15th-century Italian chancery hands, or a key-constrained check of the month against the docket
 ("27 febb^o", p.1 l.2) and the dating evidence already in this file.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on a person's read of the 22 doubtful clear-text words (clear/focus/, 6 Oct 2026) and the g/q split (ASKS 144).
+- Key-constrained check of the F19 month (febr~?, p.2 l.6) against the docket '27 febb^o' (p.1 l.2) and the dating evidence in this file (DEC1162-ENHANCE's named next). S, ~$0.5, disk only
