@@ -1,0 +1,47 @@
+tokid	run	pos	passA	passB	settled	conf	note
+T001	A01	0	66	66	66	high	agree
+T002	A01	1	60	60	60	high	agree
+T003	A01	2	21	21	21	high	agree
+T004	A01	3	16	16	16	high	agree
+T005	A01	4	12	12	12	high	agree
+T006	A01	5	12	12	120	low	A/B 12?; a 0 under the ink blot after 12
+T007	A02	0	198	198	198	high	agree
+T008	A03	0	257	257	257	high	agree
+T009	A04	0	187	187	187	high	agree
+T010	A05	0	66	66	66	high	agree
+T011	A05	1	66	66	60	med	A/B 66; second glyph is a small o (0), as in A20 60
+T012	A05	2	21	21	21	high	agree
+T013	A06	0	257	257	257	high	agree
+T014	A07	0	198	198	198	high	agree
+T015	A08	0	177	177	177	high	agree
+T016	A09	0	198	198	198	high	agree
+T017	A10	0	187	187	187	high	agree
+T018	A11	0	198	198	198	low	last digit overwritten/blotted, 8 more likely than 6
+T019	A12	0	321	321	321	low	dark gutter shadow, edge
+T020	A13	0	103	103	103	high	agree
+T021	A13	1	57	57	57	high	agree
+T022	A13	2	35	35	35	high	agree
+T023	A13	3	21	21	21	low	under an ink stroke
+T024	A13	4	66	66	66	high	agree
+T025	A13	5	28	28	28	high	agree
+T026	A14	0	103	103	103	high	agree
+T027	A14	1	284	284	284	high	agree
+T028	A14	2	47	47	47	high	agree
+T029	A14	3	16	16	16	high	agree
+T030	A14	4	60	60	60	high	agree
+T031	A14	5	21	21	21	high	agree
+T032	A15	0	257	257	257	high	agree
+T033	A16	0	57	57	57	high	agree
+T034	A16	1	35	35	35	high	agree
+T035	A16	2	21	21	21	high	agree
+T036	A17	0	191	191	191	high	agree
+T037	A18	0	191	191	191	high	agree
+T038	A19	0	198	198	198	high	agree
+T039	A20	0	66	66	66	high	agree
+T040	A20	1	60	60	60	high	agree
+T041	A20	2	21	21	21	high	agree
+T042	A21	0	198	198	198	high	agree
+T043	A22	0	187	187	187	high	agree
+T044	A23	0	198	198	198	high	agree
+T045	A24	0	187	187	187	high	agree
+T046	A25	0	198	198	198	high	agree

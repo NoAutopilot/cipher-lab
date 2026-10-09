@@ -1,0 +1,22 @@
+crop	codes	note
+R01	198	
+R02	66 60 21 8 33 12 120	
+R03	254	
+R04	198	
+R05	292	
+R06	187	
+R07	110 15 16 6 60 33 14 21 35	
+R08	254	
+R09	292	
+R10	198	
+R11	110 15 33 6 60 16 42 14 10?	last group cut at right strip edge; could be 10 or 16
+R12	202?	middle digit could be 9 (292)
+R13	254	
+R14	292	
+R15	292 66 190?	last could be 170 or 150
+R16	292	
+R17	150?	could be 180 or 130
+R18	254	
+R19	292	
+R20	198	
+R21	187	

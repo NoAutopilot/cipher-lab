@@ -1,0 +1,26 @@
+crop	codes	note
+A01	66 60 21 16 12 12?	last group touches an ink blot; could be 12 or 120
+A02	198
+A03	257
+A04	187
+A05	66 66 21
+A06	257
+A07	198?	right side dark shadow, last digit could be 8 or 3
+A08	177?	faint; first 7 could be 1, middle could be 4/9
+A09	198
+A10	187
+A11	198?	last digit overwritten/blotted; 8 or 6
+A12	321?	dark shadow at right; 21 may be 2/z shape, group could be cut at edge
+A13	103 57 35 21? 66 28	21 partly blotted; 28 followed by letter e (ignored)
+A14	103 284? 47 16 60 21	284 last digit could be 7 or 9; letters de ignored
+A15	257
+A16	57 35 21	21 possibly cut at strip right edge
+A17	191	middle 9 could be 7 or 4
+A18	191?	could be 197
+A19	198
+A20	66 60 21
+A21	198	group followed by comma
+A22	187
+A23	198?	cut at right edge, group may continue
+A24	187
+A25	198
