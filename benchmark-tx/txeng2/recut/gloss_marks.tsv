@@ -1,0 +1,23 @@
+cut	crop	x0	y0	x1	y1	what	kind
+try2_midpoint	f23r_L04_s1.jpg	1570	0	1600	40	q (gloss letter, inside the s1/s2 overlap)	letter
+try2_midpoint	f23r_L04_s2.jpg	150	0	195	40	q (same ink; component rows 0-110 joined to a cipher sign)	letter
+try2_midpoint	f23r_L06_s1.jpg	1575	100	1600	134	a (gloss letter, inside the s1/s2 overlap)	letter
+try2_midpoint	f23r_L06_s2.jpg	200	90	240	134	a (same ink)	letter
+try2_midpoint	f23r_L06_s2.jpg	1105	0	1185	30	fr (gloss letters from the row above)	letter
+try2_midpoint	f23r_L10_s1.jpg	970	0	1005	22	gloss fragment above a sign	fragment
+try2_midpoint	f23r_L10_s2.jpg	25	10	50	42	i with dot (gloss letter)	letter
+try2_midpoint	f23r_L10_s2.jpg	315	0	375	45	up (gloss letters; component rows 0-94 joined to a cipher sign)	letter
+try2_midpoint	f23r_L12_s2.jpg	500	0	535	28	g tail (gloss)	fragment
+try2_midpoint	f23r_L16_s1.jpg	395	0	440	32	g tail (gloss)	fragment
+try2_midpoint	f23r_L02_s1.jpg	1250	105	1295	148	ll stems (gloss ascenders from the row below)	fragment
+try2_midpoint	f23r_L02_s2.jpg	290	105	330	148	l stem (gloss ascender)	fragment
+try2_midpoint	f23r_L02_s2.jpg	1130	105	1205	148	l l stems (gloss ascenders)	fragment
+try2_midpoint	f23r_L04_s2.jpg	790	105	820	148	d stem (gloss ascender)	fragment
+try2_midpoint	f23r_L08_s1.jpg	835	105	875	134	l stem (gloss ascender)	fragment
+try2_midpoint	f23r_L08_s1.jpg	1515	105	1545	134	l stem (gloss ascender)	fragment
+try2_midpoint	f23r_L08_s2.jpg	170	105	205	134	l stem (gloss ascender)	fragment
+try2_midpoint	f23r_L08_s2.jpg	405	105	435	134	l stem (gloss ascender)	fragment
+try2_midpoint	f23r_L08_s2.jpg	920	105	955	134	l stem (gloss ascender)	fragment
+try2_midpoint	f23r_L08_s2.jpg	1405	105	1435	134	l stem (gloss ascender)	fragment
+try2_midpoint	f23r_L14_s2.jpg	0	0	1600	162	plain subscription, no cipher sign (segment would be dropped from any read)	plain
+try2_midpoint	f23r_L16_s2.jpg	0	0	1600	136	plain signature, no cipher sign (segment would be dropped from any read)	plain
