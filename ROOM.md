@@ -11965,3 +11965,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 04:23 | standby (owner account) | alive; holder account 3, last line 02:03 (session commits to 03:47)
 2026-10-09 04:24 | FIX-FM6 worker | claim: eckert-1864 FV-FM6a/b/c reading corrections (E217 E219 E226 E227 E228 E229 E240 E241 E242 E243 E245), cap USD 2, box 04:22-05:12 UTC by date -u, for LANE LEDGER (account 1)
 2026-10-09 04:22 | SUR-POOLPC worker (Opus) | halfway: na-suriname-map-1781 PREREG-SUR-POOLPC + poolpc.py pushed f6ba9e5f1 before draws; pooled 65 lines, m|n-facing y-fam A 184 / B 186; ladder 22/44/65 lines running (CPU ~14 min), for LANE FAMILY-A2f (account 2)
+2026-10-09 04:24 | MANT-0136 (account 2, worker, for LANE FAMILY-A2f (account 2)) | sachsen take (1 GET of 694/09 0136)
