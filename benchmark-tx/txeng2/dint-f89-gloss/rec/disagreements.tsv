@@ -1,0 +1,66 @@
+line	col	A	B	flagged	crop
+L01	6	-		B	
+L01	11	c	a	A	
+L01	20	X_VSTEM	v	AB	
+L01	46	X_VSTEM	v	A	
+L01	52	w	w'	B	
+L01	56	3	z	AB	
+L02	18	1	-	A	
+L02	39	L	-	A	
+L02	40	v	-		
+L02	41	L	1	A	
+L02	50	-	1		
+L03	3	L	1		
+L03	6	0	0'	AB	
+L03	40	x	T	AB	
+L03	41	X_VSTEM	v'	AB	
+L03	48	X_VSTEM	v		
+L04	6	+	1	B	
+L04	8	4	-		
+L04	9	0	-		
+L04	10	m'	-	A	
+L04	13	m'	X_MBASE	AB	
+L04	16	L	1		
+L04	21	L	1		
+L04	29	X_VSTEM	v		
+L05	3	CLEAR	a		
+L05	5	X_OCROSS	X_DELTA	AB	
+L05	7	L	1		
+L05	8	X_OCROSS	X_DELTA		
+L05	11	X_OCROSS	X_DELTA		
+L05	17	X_VSTEM	v		
+L05	22	z	1	A	
+L05	26	y	-		
+L05	27	L	-		
+L05	29	L	1		
+L05	35	c	-	A	
+L05	43	X_VSTEM	v		
+L05	44	9	X_DELTA	AB	
+L05	45	t	X_HBAR	AB	
+L05	49	X_OCROSS	X_DELTA		
+L06	13	-	X_DELTA		
+L06	36	L	1	A	
+L06	38	4	+	A	
+L07	10	0	0'	B	
+L07	17	p'	p	A	
+L07	27	L	1		
+L07	34	L	1		
+L07	39	0	X_DELTA		
+L07	41	Z	z		
+L07	43	L	1		
+L08	1	CLEAR	-	A	
+L08	31	-	a		
+L08	32	a'	c	AB	
+L09	19	X_FBAR	f	A	
+L09	40	X_ZBAR	4	AB	
+L10	6	0'	o	AB	
+L10	28	+	t	AB	
+L10	50	1	-		
+L11	43	0'	X_8	B	
+L13	5	+	t	A	
+L13	25	m	z	AB	
+L13	34	X_EB	p	AB	
+L13	35	X_DDAG	f	AB	
+L14	8	0	0'		
+L14	24	L	T		
+L14	33	X_VSTEM	X_N	AB	

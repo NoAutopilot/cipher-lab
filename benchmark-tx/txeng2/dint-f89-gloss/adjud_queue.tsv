@@ -1,0 +1,172 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+L01	2	uncertain	CLEAR	CLEAR	sq 0 z
+L01	6	disagree	-	sq 0 z	m 4 1
+L01	7	uncertain	m	0 z 	4 1 a
+L01	11	disagree	c | a	4 1 a	c 0 4
+L01	12	uncertain	c	1 a c	0 4 1
+L01	13	uncertain	0	a c c	4 1 sq
+L01	17	uncertain	X_DELTA	4 1 sq	v w X_VSTEM
+L01	20	disagree	X_VSTEM | v	X_DELTA v w	1 X_DELTA 4
+L01	22	uncertain	X_DELTA	w X_VSTEM 1	4 f sq
+L01	23	uncertain	4	X_VSTEM 1 X_DELTA	f sq 3
+L01	36	uncertain	x	m 0 sq	4 y c
+L01	44	uncertain	0'	1 4 p	X_4BAR X_VSTEM 3
+L01	45	uncertain	X_4BAR	4 p 0'	X_VSTEM 3 0
+L01	46	disagree	X_VSTEM | v	p 0' X_4BAR	3 0 1
+L01	49	uncertain	1	X_VSTEM 3 0	y m' w
+L01	52	disagree	w | w'	1 y m'	v 4 m
+L01	56	disagree	3 | z	v 4 m	c 0
+L02	2	uncertain	X_4BAR	1	sq y c
+L02	10	uncertain	X_8	1 a m	X_DELTA p 4
+L02	11	uncertain	X_DELTA	a m X_8	p 4 CLEAR
+L02	14	uncertain	CLEAR	X_DELTA p 4	CLEAR CLEAR p
+L02	15	uncertain	CLEAR	p 4 CLEAR	CLEAR p 1
+L02	16	uncertain	CLEAR	4 CLEAR CLEAR	p 1 X_DELTA
+L02	18	disagree	1 | -	CLEAR CLEAR p	X_DELTA y m
+L02	22	uncertain	c	X_DELTA y m	a' X_4BAR 1
+L02	23	uncertain	a'	y m c	X_4BAR 1 w
+L02	24	uncertain	X_4BAR	m c a'	1 w X_DELTA
+L02	39	disagree	L | -	m p 4	v L v
+L02	40	disagree	v | -	p 4 L	L v L
+L02	41	disagree	L | 1	4 L v	v L c
+L02	43	uncertain	L	v L v	c 4 f
+L02	45	uncertain	4	v L c	f m #
+L02	50	disagree	- | 1	m # v	X_4BAR 9 1
+L03	3	disagree	L | 1	a m	4 X_4BAR 0
+L03	6	disagree	0 | 0'	L 4 X_4BAR	z' sq 4
+L03	7	uncertain	z'	4 X_4BAR 0	sq 4 3
+L03	9	uncertain	4	0 z' sq	3 m p
+L03	29	uncertain	X_COMMA	v # 0	4 1 sq
+L03	40	disagree	x | T	4 0 #	X_VSTEM sq m
+L03	41	disagree	X_VSTEM | v'	0 # x	sq m 0
+L03	48	disagree	X_VSTEM | v	4 + 0	0 X_4BAR X_DELTA
+L03	57	uncertain	CLEAR	v L m	
+L04	6	disagree	+ | 1	y m w	c 4 0
+L04	8	disagree	4 | -	w + c	0 m' 4
+L04	9	disagree	0 | -	+ c 4	m' 4 0
+L04	10	disagree	m' | -	c 4 0	4 0 m'
+L04	13	disagree	m' | X_MBASE	m' 4 0	c m L
+L04	16	disagree	L | 1	m' c m	# m a
+L04	21	disagree	L | 1	m a m	+ v 4
+L04	29	disagree	X_VSTEM | v	y 1 m	c y m
+L04	42	uncertain	CLEAR	y p CLEAR	CLEAR CLEAR CLEAR
+L04	43	uncertain	CLEAR	p CLEAR CLEAR	CLEAR CLEAR CLEAR
+L04	44	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR CLEAR CLEAR
+L04	45	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR CLEAR
+L04	46	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR
+L04	47	uncertain	CLEAR	CLEAR CLEAR CLEAR	
+L05	3	disagree	CLEAR | a	CLEAR CLEAR	sq X_OCROSS y
+L05	5	disagree	X_OCROSS | X_DELTA	CLEAR CLEAR sq	y L X_OCROSS
+L05	7	disagree	L | 1	sq X_OCROSS y	X_OCROSS sq 0
+L05	8	disagree	X_OCROSS | X_DELTA	X_OCROSS y L	sq 0 X_OCROSS
+L05	11	disagree	X_OCROSS | X_DELTA	X_OCROSS sq 0	1 sq m
+L05	17	disagree	X_VSTEM | v	m y p	a m 0
+L05	22	disagree	z | 1	m 0 sq	4 1 w
+L05	26	disagree	y | -	4 1 w	L y L
+L05	27	disagree	L | -	1 w y	y L 0
+L05	29	disagree	L | 1	y L y	0 m sq
+L05	30	uncertain	0	L y L	m sq m
+L05	33	uncertain	m	0 m sq	a c y
+L05	35	disagree	c | -	sq m a	y + a
+L05	39	uncertain	CLEAR	y + a	CLEAR 1 sq
+L05	40	uncertain	CLEAR	+ a CLEAR	1 sq X_VSTEM
+L05	43	disagree	X_VSTEM | v	CLEAR 1 sq	9 t 4
+L05	44	disagree	9 | X_DELTA	1 sq X_VSTEM	t 4 v
+L05	45	disagree	t | X_HBAR	sq X_VSTEM 9	4 v sq
+L05	48	uncertain	sq	t 4 v	X_OCROSS 1 sq
+L05	49	disagree	X_OCROSS | X_DELTA	4 v sq	1 sq 1
+L05	52	uncertain	1	X_OCROSS 1 sq	# p
+L06	1	uncertain	CLEAR		CLEAR CLEAR CLEAR
+L06	3	uncertain	CLEAR	CLEAR CLEAR	CLEAR CLEAR CLEAR
+L06	5	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR CLEAR CLEAR
+L06	10	uncertain	CLEAR	CLEAR CLEAR CLEAR	f T X_DELTA
+L06	11	uncertain	f	CLEAR CLEAR CLEAR	T X_DELTA w
+L06	12	uncertain	T	CLEAR CLEAR f	X_DELTA w 0
+L06	13	disagree	- | X_DELTA	CLEAR f T	w 0 X_DELTA
+L06	20	uncertain	v	v sq X_DELTA	4 y w
+L06	25	uncertain	X_HBAR	y w m	c X_CTAIL #
+L06	27	uncertain	X_CTAIL	m X_HBAR c	# T 1
+L06	34	uncertain	4	3 0 4	m L 4
+L06	36	disagree	L | 1	4 4 m	4 4 0
+L06	38	disagree	4 | +	m L 4	0
+L07	10	disagree	0 | 0'	v X_4BAR m	f 4 y
+L07	17	disagree	p' | p	c w v	X_4BAR 0 y
+L07	27	disagree	L | 1	1 sq m	4 v 0
+L07	34	disagree	L | 1	f m y	0 CLEAR CLEAR
+L07	36	uncertain	CLEAR	y L 0	CLEAR v 0
+L07	39	disagree	0 | X_DELTA	CLEAR CLEAR v	4 Z v
+L07	40	uncertain	4	CLEAR v 0	Z v L
+L07	41	disagree	Z | z	v 0 4	v L 0
+L07	43	disagree	L | 1	4 Z v	0 sq m
+L08	1	disagree	CLEAR | -		m c v
+L08	16	uncertain	4	Z p v	3 1 z
+L08	19	uncertain	z	4 3 1	v f m
+L08	22	uncertain	m	z v f	sq m 0'
+L08	29	uncertain	m	# 1 f	# a a'
+L08	31	disagree	- | a	f m #	a' L w
+L08	32	disagree	a' | c	m # a	L w v
+L08	36	uncertain	sq	L w v	0' 0 sq
+L08	41	uncertain	CLEAR	0 sq CLEAR	CLEAR CLEAR CLEAR
+L08	42	uncertain	CLEAR	sq CLEAR CLEAR	CLEAR CLEAR
+L08	43	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR
+L08	44	uncertain	CLEAR	CLEAR CLEAR CLEAR	
+L09	5	uncertain	4	w 3 y	f 0 1
+L09	9	uncertain	sq	f 0 1	L # p
+L09	10	uncertain	L	0 1 sq	# p CLEAR
+L09	13	uncertain	CLEAR	L # p	CLEAR CLEAR CLEAR
+L09	14	uncertain	CLEAR	# p CLEAR	CLEAR CLEAR CLEAR
+L09	16	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR CLEAR X_FBAR
+L09	18	uncertain	CLEAR	CLEAR CLEAR CLEAR	X_FBAR y v
+L09	19	disagree	X_FBAR | f	CLEAR CLEAR CLEAR	y v a
+L09	27	uncertain	0	y L #	4 4 m
+L09	40	disagree	X_ZBAR | 4	1 z 0	1
+L10	1	uncertain	0		sq m 3
+L10	6	disagree	0' | o	m 3 1	# w L
+L10	8	uncertain	w	1 0' #	L w 0
+L10	12	uncertain	CLEAR	L w 0	v # 0
+L10	28	disagree	+ | t	m p 4	0 3 1
+L10	48	uncertain	a	m c 0	m 1
+L10	49	uncertain	m	c 0 a	1
+L10	50	disagree	1 | -	0 a m	
+L11	1	uncertain	Z		y L CLEAR
+L11	4	uncertain	CLEAR	Z y L	CLEAR CLEAR CLEAR
+L11	5	uncertain	CLEAR	y L CLEAR	CLEAR CLEAR CLEAR
+L11	7	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR CLEAR 0'
+L11	9	uncertain	CLEAR	CLEAR CLEAR CLEAR	0' y m
+L11	10	uncertain	0'	CLEAR CLEAR CLEAR	y m c
+L11	29	uncertain	v	m p w	sq 0' 1
+L11	31	uncertain	0'	w v sq	1 sq 0
+L11	41	uncertain	1	w a m	4 0'
+L11	42	uncertain	4	a m 1	0'
+L11	43	disagree	0' | X_8	m 1 4	
+L12	4	uncertain	L	0 f v	0 f v
+L12	7	uncertain	v	L 0 f	4 0 m
+L12	11	uncertain	v	4 0 m	c 1 sq
+L12	17	uncertain	CLEAR	sq CLEAR CLEAR	CLEAR CLEAR CLEAR
+L12	20	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR CLEAR CLEAR
+L12	22	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR CLEAR CLEAR
+L12	23	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR CLEAR CLEAR
+L12	24	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR CLEAR CLEAR
+L12	27	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR
+L12	28	uncertain	CLEAR	CLEAR CLEAR CLEAR	
+L13	5	disagree	+ | t	v 3 p	L y 0
+L13	7	uncertain	y	p + L	0 f #
+L13	13	uncertain	sq	# L 0	m w 0
+L13	25	disagree	m | z	3 v m	v f v
+L13	32	uncertain	p	a m 4	v X_EB X_DDAG
+L13	34	disagree	X_EB | p	4 p v	X_DDAG L y
+L13	35	disagree	X_DDAG | f	p v X_EB	L y m
+L13	37	uncertain	y	X_EB X_DDAG L	m w sq
+L13	47	uncertain	+	# 1 4	a L a
+L13	53	uncertain	+	a m 1	
+L14	8	disagree	0 | 0'	L 1 v	4 Z v
+L14	9	uncertain	4	1 v 0	Z v L
+L14	23	uncertain	4	0' v c	L CLEAR CLEAR
+L14	24	disagree	L | T	v c 4	CLEAR CLEAR CLEAR
+L14	27	uncertain	CLEAR	L CLEAR CLEAR	CLEAR a m
+L14	28	uncertain	CLEAR	CLEAR CLEAR CLEAR	a m 0
+L14	33	disagree	X_VSTEM | X_N	m 0 3	L 0 w
+L14	37	uncertain	CLEAR	L 0 w	CLEAR CLEAR CLEAR
+L14	39	uncertain	CLEAR	w CLEAR CLEAR	CLEAR CLEAR CLEAR
+L14	42	uncertain	CLEAR	CLEAR CLEAR CLEAR	CLEAR
+L14	43	uncertain	CLEAR	CLEAR CLEAR CLEAR	

@@ -1,0 +1,661 @@
+line	position	sign	confidence	alt	why
+L01	1	CLEAR	H		agree
+L01	2	CLEAR	L		agree-flagged
+L01	3	sq	H		agree
+L01	4	0	H		agree
+L01	5	z	H		agree
+L01	6		M	A:-	gap
+L01	7	m	M		agree-flagged
+L01	8	4	H		agree
+L01	9	1	H		agree
+L01	10	a	H		agree
+L01	11	c	M	B:a	differ
+L01	12	c	L		agree-flagged
+L01	13	0	M		agree-flagged
+L01	14	4	H		agree
+L01	15	1	H		agree
+L01	16	sq	H		agree
+L01	17	X_DELTA	M		agree-flagged
+L01	18	v	H		agree
+L01	19	w	H		agree
+L01	20	X_VSTEM	M	B:v	differ
+L01	21	1	H		agree
+L01	22	X_DELTA	M		agree-flagged
+L01	23	4	M		agree-flagged
+L01	24	f	H		agree
+L01	25	sq	H		agree
+L01	26	3	H		agree
+L01	27	0'	H		agree
+L01	28	+	H		agree
+L01	29	v	H		agree
+L01	30	4	H		agree
+L01	31	1	H		agree
+L01	32	9	H		agree
+L01	33	m	H		agree
+L01	34	0	H		agree
+L01	35	sq	H		agree
+L01	36	x	M		agree-flagged
+L01	37	4	H		agree
+L01	38	y	H		agree
+L01	39	c	H		agree
+L01	40	m	H		agree
+L01	41	1	H		agree
+L01	42	4	H		agree
+L01	43	p	H		agree
+L01	44	0'	M		agree-flagged
+L01	45	X_4BAR	M		agree-flagged
+L01	46	X_VSTEM	M	B:v	differ
+L01	47	3	H		agree
+L01	48	0	H		agree
+L01	49	1	M		agree-flagged
+L01	50	y	H		agree
+L01	51	m'	H		agree
+L01	52	w	M	B:w'	differ
+L01	53	v	H		agree
+L01	54	4	H		agree
+L01	55	m	H		agree
+L01	56	3	M	B:z	differ
+L01	57	c	H		agree
+L01	58	0	H		agree
+L02	1	1	H		agree
+L02	2	X_4BAR	M		agree-flagged
+L02	3	sq	H		agree
+L02	4	y	H		agree
+L02	5	c	H		agree
+L02	6	m	H		agree
+L02	7	1	H		agree
+L02	8	a	H		agree
+L02	9	m	H		agree
+L02	10	X_8	M		agree-flagged
+L02	11	X_DELTA	M		agree-flagged
+L02	12	p	H		agree
+L02	13	4	H		agree
+L02	14	CLEAR	L		agree-flagged
+L02	15	CLEAR	M		agree-flagged
+L02	16	CLEAR	L		agree-flagged
+L02	17	p	H		agree
+L02	18	1	M	B:-	gap
+L02	19	X_DELTA	H		agree
+L02	20	y	H		agree
+L02	21	m	H		agree
+L02	22	c	M		agree-flagged
+L02	23	a'	M		agree-flagged
+L02	24	X_4BAR	M		agree-flagged
+L02	25	1	H		agree
+L02	26	w	H		agree
+L02	27	X_DELTA	H		agree
+L02	28	c	H		agree
+L02	29	y	H		agree
+L02	30	z	H		agree
+L02	31	m	H		agree
+L02	32	0	H		agree
+L02	33	z	H		agree
+L02	34	1	H		agree
+L02	35	f	H		agree
+L02	36	m	H		agree
+L02	37	p	H		agree
+L02	38	4	H		agree
+L02	39	L	M	B:-	gap
+L02	40	v	M	B:-	gap
+L02	41	L	M	B:1	differ
+L02	42	v	H		agree
+L02	43	L	M		agree-flagged
+L02	44	c	H		agree
+L02	45	4	M		agree-flagged
+L02	46	f	H		agree
+L02	47	m	H		agree
+L02	48	#	H		agree
+L02	49	v	H		agree
+L02	50	1	M	A:-	gap
+L02	51	X_4BAR	H		agree
+L02	52	9	H		agree
+L02	53	1	H		agree
+L02	54	w	H		agree
+L03	1	a	H		agree
+L03	2	m	H		agree
+L03	3	L	M	B:1	differ
+L03	4	4	H		agree
+L03	5	X_4BAR	H		agree
+L03	6	0	M	B:0'	differ
+L03	7	z'	M		agree-flagged
+L03	8	sq	H		agree
+L03	9	4	M		agree-flagged
+L03	10	3	H		agree
+L03	11	m	H		agree
+L03	12	p	H		agree
+L03	13	0	H		agree
+L03	14	f	H		agree
+L03	15	X_4BAR	H		agree
+L03	16	1	H		agree
+L03	17	3	H		agree
+L03	18	0	H		agree
+L03	19	#	H		agree
+L03	20	1	H		agree
+L03	21	sq	H		agree
+L03	22	m	H		agree
+L03	23	1	H		agree
+L03	24	X_DELTA	H		agree
+L03	25	4	H		agree
+L03	26	v	H		agree
+L03	27	#	H		agree
+L03	28	0	H		agree
+L03	29	X_COMMA	L		agree-flagged
+L03	30	4	H		agree
+L03	31	1	H		agree
+L03	32	sq	H		agree
+L03	33	L	H		agree
+L03	34	0	H		agree
+L03	35	a	H		agree
+L03	36	w	H		agree
+L03	37	4	H		agree
+L03	38	0	H		agree
+L03	39	#	H		agree
+L03	40	x	M	B:T	differ
+L03	41	X_VSTEM	M	B:v'	differ
+L03	42	sq	H		agree
+L03	43	m	H		agree
+L03	44	0	H		agree
+L03	45	4	H		agree
+L03	46	+	H		agree
+L03	47	0	H		agree
+L03	48	X_VSTEM	M	B:v	differ
+L03	49	0	H		agree
+L03	50	X_4BAR	H		agree
+L03	51	X_DELTA	H		agree
+L03	52	v	H		agree
+L03	53	c	H		agree
+L03	54	v	H		agree
+L03	55	L	H		agree
+L03	56	m	H		agree
+L03	57	CLEAR	M		agree-flagged
+L04	1	CLEAR	H		agree
+L04	2	#	H		agree
+L04	3	y	H		agree
+L04	4	m	H		agree
+L04	5	w	H		agree
+L04	6	+	M	B:1	differ
+L04	7	c	H		agree
+L04	8	4	M	B:-	gap
+L04	9	0	M	B:-	gap
+L04	10	m'	M	B:-	gap
+L04	11	4	H		agree
+L04	12	0	H		agree
+L04	13	m'	M	B:X_MBASE	differ
+L04	14	c	H		agree
+L04	15	m	H		agree
+L04	16	L	M	B:1	differ
+L04	17	#	H		agree
+L04	18	m	H		agree
+L04	19	a	H		agree
+L04	20	m	H		agree
+L04	21	L	M	B:1	differ
+L04	22	+	H		agree
+L04	23	v	H		agree
+L04	24	4	H		agree
+L04	25	+	H		agree
+L04	26	y	H		agree
+L04	27	1	H		agree
+L04	28	m	H		agree
+L04	29	X_VSTEM	M	B:v	differ
+L04	30	c	H		agree
+L04	31	y	H		agree
+L04	32	m	H		agree
+L04	33	a	H		agree
+L04	34	0	H		agree
+L04	35	w	H		agree
+L04	36	4	H		agree
+L04	37	1	H		agree
+L04	38	c	H		agree
+L04	39	y	H		agree
+L04	40	p	H		agree
+L04	41	CLEAR	H		agree
+L04	42	CLEAR	M		agree-flagged
+L04	43	CLEAR	L		agree-flagged
+L04	44	CLEAR	M		agree-flagged
+L04	45	CLEAR	M		agree-flagged
+L04	46	CLEAR	M		agree-flagged
+L04	47	CLEAR	M		agree-flagged
+L05	1	CLEAR	H		agree
+L05	2	CLEAR	H		agree
+L05	3	CLEAR	M	B:a	differ
+L05	4	sq	H		agree
+L05	5	X_OCROSS	M	B:X_DELTA	differ
+L05	6	y	H		agree
+L05	7	L	M	B:1	differ
+L05	8	X_OCROSS	M	B:X_DELTA	differ
+L05	9	sq	H		agree
+L05	10	0	H		agree
+L05	11	X_OCROSS	M	B:X_DELTA	differ
+L05	12	1	H		agree
+L05	13	sq	H		agree
+L05	14	m	H		agree
+L05	15	y	H		agree
+L05	16	p	H		agree
+L05	17	X_VSTEM	M	B:v	differ
+L05	18	a	H		agree
+L05	19	m	H		agree
+L05	20	0	H		agree
+L05	21	sq	H		agree
+L05	22	z	M	B:1	differ
+L05	23	4	H		agree
+L05	24	1	H		agree
+L05	25	w	H		agree
+L05	26	y	M	B:-	gap
+L05	27	L	M	B:-	gap
+L05	28	y	H		agree
+L05	29	L	M	B:1	differ
+L05	30	0	M		agree-flagged
+L05	31	m	H		agree
+L05	32	sq	H		agree
+L05	33	m	M		agree-flagged
+L05	34	a	H		agree
+L05	35	c	M	B:-	gap
+L05	36	y	H		agree
+L05	37	+	H		agree
+L05	38	a	H		agree
+L05	39	CLEAR	M		agree-flagged
+L05	40	CLEAR	L		agree-flagged
+L05	41	1	H		agree
+L05	42	sq	H		agree
+L05	43	X_VSTEM	M	B:v	differ
+L05	44	9	M	B:X_DELTA	differ
+L05	45	t	M	B:X_HBAR	differ
+L05	46	4	H		agree
+L05	47	v	H		agree
+L05	48	sq	L		agree-flagged
+L05	49	X_OCROSS	M	B:X_DELTA	differ
+L05	50	1	H		agree
+L05	51	sq	H		agree
+L05	52	1	M		agree-flagged
+L05	53	#	H		agree
+L05	54	p	H		agree
+L06	1	CLEAR	L		agree-flagged
+L06	2	CLEAR	H		agree
+L06	3	CLEAR	L		agree-flagged
+L06	4	CLEAR	H		agree
+L06	5	CLEAR	M		agree-flagged
+L06	6	CLEAR	H		agree
+L06	7	CLEAR	H		agree
+L06	8	CLEAR	H		agree
+L06	9	CLEAR	H		agree
+L06	10	CLEAR	L		agree-flagged
+L06	11	f	M		agree-flagged
+L06	12	T	L		agree-flagged
+L06	13	X_DELTA	M	A:-	gap
+L06	14	w	H		agree
+L06	15	0	H		agree
+L06	16	X_DELTA	H		agree
+L06	17	v	H		agree
+L06	18	sq	H		agree
+L06	19	X_DELTA	H		agree
+L06	20	v	M		agree-flagged
+L06	21	4	H		agree
+L06	22	y	H		agree
+L06	23	w	H		agree
+L06	24	m	H		agree
+L06	25	X_HBAR	M		agree-flagged
+L06	26	c	H		agree
+L06	27	X_CTAIL	M		agree-flagged
+L06	28	#	H		agree
+L06	29	T	H		agree
+L06	30	1	H		agree
+L06	31	3	H		agree
+L06	32	0	H		agree
+L06	33	4	H		agree
+L06	34	4	M		agree-flagged
+L06	35	m	H		agree
+L06	36	L	M	B:1	differ
+L06	37	4	H		agree
+L06	38	4	M	B:+	differ
+L06	39	0	H		agree
+L07	1	w	H		agree
+L07	2	1	H		agree
+L07	3	m	H		agree
+L07	4	y	H		agree
+L07	5	m	H		agree
+L07	6	f	H		agree
+L07	7	v	H		agree
+L07	8	X_4BAR	H		agree
+L07	9	m	H		agree
+L07	10	0	M	B:0'	differ
+L07	11	f	H		agree
+L07	12	4	H		agree
+L07	13	y	H		agree
+L07	14	c	H		agree
+L07	15	w	H		agree
+L07	16	v	H		agree
+L07	17	p'	M	B:p	differ
+L07	18	X_4BAR	H		agree
+L07	19	0	H		agree
+L07	20	y	H		agree
+L07	21	m	H		agree
+L07	22	p	H		agree
+L07	23	4	H		agree
+L07	24	1	H		agree
+L07	25	sq	H		agree
+L07	26	m	H		agree
+L07	27	L	M	B:1	differ
+L07	28	4	H		agree
+L07	29	v	H		agree
+L07	30	0	H		agree
+L07	31	f	H		agree
+L07	32	m	H		agree
+L07	33	y	H		agree
+L07	34	L	M	B:1	differ
+L07	35	0	H		agree
+L07	36	CLEAR	M		agree-flagged
+L07	37	CLEAR	H		agree
+L07	38	v	H		agree
+L07	39	0	M	B:X_DELTA	differ
+L07	40	4	M		agree-flagged
+L07	41	Z	M	B:z	differ
+L07	42	v	H		agree
+L07	43	L	M	B:1	differ
+L07	44	0	H		agree
+L07	45	sq	H		agree
+L07	46	m	H		agree
+L07	47	1	H		agree
+L07	48	X_DELTA	H		agree
+L07	49	y	H		agree
+L08	1	CLEAR	M	B:-	gap
+L08	2	m	H		agree
+L08	3	c	H		agree
+L08	4	v	H		agree
+L08	5	m	H		agree
+L08	6	y	H		agree
+L08	7	L	H		agree
+L08	8	c	H		agree
+L08	9	4	H		agree
+L08	10	0	H		agree
+L08	11	#	H		agree
+L08	12	y	H		agree
+L08	13	Z	H		agree
+L08	14	p	H		agree
+L08	15	v	H		agree
+L08	16	4	M		agree-flagged
+L08	17	3	H		agree
+L08	18	1	H		agree
+L08	19	z	M		agree-flagged
+L08	20	v	H		agree
+L08	21	f	H		agree
+L08	22	m	M		agree-flagged
+L08	23	sq	H		agree
+L08	24	m	H		agree
+L08	25	0'	H		agree
+L08	26	#	H		agree
+L08	27	1	H		agree
+L08	28	f	H		agree
+L08	29	m	M		agree-flagged
+L08	30	#	H		agree
+L08	31	a	M	A:-	gap
+L08	32	a'	M	B:c	differ
+L08	33	L	H		agree
+L08	34	w	H		agree
+L08	35	v	H		agree
+L08	36	sq	M		agree-flagged
+L08	37	0'	H		agree
+L08	38	0	H		agree
+L08	39	sq	H		agree
+L08	40	CLEAR	H		agree
+L08	41	CLEAR	L		agree-flagged
+L08	42	CLEAR	M		agree-flagged
+L08	43	CLEAR	M		agree-flagged
+L08	44	CLEAR	L		agree-flagged
+L09	1	y	H		agree
+L09	2	w	H		agree
+L09	3	3	H		agree
+L09	4	y	H		agree
+L09	5	4	M		agree-flagged
+L09	6	f	H		agree
+L09	7	0	H		agree
+L09	8	1	H		agree
+L09	9	sq	M		agree-flagged
+L09	10	L	M		agree-flagged
+L09	11	#	H		agree
+L09	12	p	H		agree
+L09	13	CLEAR	M		agree-flagged
+L09	14	CLEAR	L		agree-flagged
+L09	15	CLEAR	H		agree
+L09	16	CLEAR	M		agree-flagged
+L09	17	CLEAR	H		agree
+L09	18	CLEAR	M		agree-flagged
+L09	19	X_FBAR	M	B:f	differ
+L09	20	y	H		agree
+L09	21	v	H		agree
+L09	22	a	H		agree
+L09	23	m	H		agree
+L09	24	y	H		agree
+L09	25	L	H		agree
+L09	26	#	H		agree
+L09	27	0	M		agree-flagged
+L09	28	4	H		agree
+L09	29	4	H		agree
+L09	30	m	H		agree
+L09	31	1	H		agree
+L09	32	f	H		agree
+L09	33	v	H		agree
+L09	34	4	H		agree
+L09	35	0	H		agree
+L09	36	c	H		agree
+L09	37	1	H		agree
+L09	38	z	H		agree
+L09	39	0	H		agree
+L09	40	X_ZBAR	M	B:4	differ
+L09	41	1	H		agree
+L10	1	0	M		agree-flagged
+L10	2	sq	H		agree
+L10	3	m	H		agree
+L10	4	3	H		agree
+L10	5	1	H		agree
+L10	6	0'	M	B:o	differ
+L10	7	#	H		agree
+L10	8	w	M		agree-flagged
+L10	9	L	H		agree
+L10	10	w	H		agree
+L10	11	0	H		agree
+L10	12	CLEAR	L		agree-flagged
+L10	13	v	H		agree
+L10	14	#	H		agree
+L10	15	0	H		agree
+L10	16	m	H		agree
+L10	17	sq	H		agree
+L10	18	3	H		agree
+L10	19	0	H		agree
+L10	20	#	H		agree
+L10	21	1	H		agree
+L10	22	sq	H		agree
+L10	23	m	H		agree
+L10	24	0	H		agree
+L10	25	m	H		agree
+L10	26	p	H		agree
+L10	27	4	H		agree
+L10	28	+	M	B:t	differ
+L10	29	0	H		agree
+L10	30	3	H		agree
+L10	31	1	H		agree
+L10	32	f	H		agree
+L10	33	0	H		agree
+L10	34	w	H		agree
+L10	35	0	H		agree
+L10	36	#	H		agree
+L10	37	1	H		agree
+L10	38	m	H		agree
+L10	39	y	H		agree
+L10	40	L	H		agree
+L10	41	w	H		agree
+L10	42	v	H		agree
+L10	43	m	H		agree
+L10	44	4	H		agree
+L10	45	m	H		agree
+L10	46	c	H		agree
+L10	47	0	H		agree
+L10	48	a	M		agree-flagged
+L10	49	m	M		agree-flagged
+L10	50	1	M	B:-	gap
+L11	1	Z	M		agree-flagged
+L11	2	y	H		agree
+L11	3	L	H		agree
+L11	4	CLEAR	L		agree-flagged
+L11	5	CLEAR	L		agree-flagged
+L11	6	CLEAR	H		agree
+L11	7	CLEAR	M		agree-flagged
+L11	8	CLEAR	H		agree
+L11	9	CLEAR	M		agree-flagged
+L11	10	0'	M		agree-flagged
+L11	11	y	H		agree
+L11	12	m	H		agree
+L11	13	c	H		agree
+L11	14	#	H		agree
+L11	15	y	H		agree
+L11	16	z	H		agree
+L11	17	v	H		agree
+L11	18	f	H		agree
+L11	19	3	H		agree
+L11	20	0	H		agree
+L11	21	w	H		agree
+L11	22	4	H		agree
+L11	23	1	H		agree
+L11	24	sq	H		agree
+L11	25	#	H		agree
+L11	26	m	H		agree
+L11	27	p	H		agree
+L11	28	w	H		agree
+L11	29	v	M		agree-flagged
+L11	30	sq	H		agree
+L11	31	0'	M		agree-flagged
+L11	32	1	H		agree
+L11	33	sq	H		agree
+L11	34	0	H		agree
+L11	35	f	H		agree
+L11	36	#	H		agree
+L11	37	y	H		agree
+L11	38	w	H		agree
+L11	39	a	H		agree
+L11	40	m	H		agree
+L11	41	1	M		agree-flagged
+L11	42	4	M		agree-flagged
+L11	43	0'	M	B:X_8	differ
+L12	1	0	H		agree
+L12	2	f	H		agree
+L12	3	v	H		agree
+L12	4	L	M		agree-flagged
+L12	5	0	H		agree
+L12	6	f	H		agree
+L12	7	v	M		agree-flagged
+L12	8	4	H		agree
+L12	9	0	H		agree
+L12	10	m	H		agree
+L12	11	v	M		agree-flagged
+L12	12	c	H		agree
+L12	13	1	H		agree
+L12	14	sq	H		agree
+L12	15	CLEAR	H		agree
+L12	16	CLEAR	H		agree
+L12	17	CLEAR	M		agree-flagged
+L12	18	CLEAR	H		agree
+L12	19	CLEAR	H		agree
+L12	20	CLEAR	M		agree-flagged
+L12	21	CLEAR	H		agree
+L12	22	CLEAR	M		agree-flagged
+L12	23	CLEAR	M		agree-flagged
+L12	24	CLEAR	M		agree-flagged
+L12	25	CLEAR	H		agree
+L12	26	CLEAR	H		agree
+L12	27	CLEAR	M		agree-flagged
+L12	28	CLEAR	M		agree-flagged
+L13	1	4	H		agree
+L13	2	v	H		agree
+L13	3	3	H		agree
+L13	4	p	H		agree
+L13	5	+	M	B:t	differ
+L13	6	L	H		agree
+L13	7	y	M		agree-flagged
+L13	8	0	H		agree
+L13	9	f	H		agree
+L13	10	#	H		agree
+L13	11	L	H		agree
+L13	12	0	H		agree
+L13	13	sq	M		agree-flagged
+L13	14	m	H		agree
+L13	15	w	H		agree
+L13	16	0	H		agree
+L13	17	a	H		agree
+L13	18	m	H		agree
+L13	19	p	H		agree
+L13	20	sq	H		agree
+L13	21	0	H		agree
+L13	22	3	H		agree
+L13	23	v	H		agree
+L13	24	m	H		agree
+L13	25	m	M	B:z	differ
+L13	26	v	H		agree
+L13	27	f	H		agree
+L13	28	v	H		agree
+L13	29	a	H		agree
+L13	30	m	H		agree
+L13	31	4	H		agree
+L13	32	p	M		agree-flagged
+L13	33	v	H		agree
+L13	34	X_EB	M	B:p	differ
+L13	35	X_DDAG	M	B:f	differ
+L13	36	L	H		agree
+L13	37	y	M		agree-flagged
+L13	38	m	H		agree
+L13	39	w	H		agree
+L13	40	sq	H		agree
+L13	41	a	H		agree
+L13	42	m	H		agree
+L13	43	0	H		agree
+L13	44	#	H		agree
+L13	45	1	H		agree
+L13	46	4	H		agree
+L13	47	+	M		agree-flagged
+L13	48	a	H		agree
+L13	49	L	H		agree
+L13	50	a	H		agree
+L13	51	m	H		agree
+L13	52	1	H		agree
+L13	53	+	M		agree-flagged
+L14	1	0	H		agree
+L14	2	f	H		agree
+L14	3	m	H		agree
+L14	4	y	H		agree
+L14	5	L	H		agree
+L14	6	1	H		agree
+L14	7	v	H		agree
+L14	8	0	M	B:0'	differ
+L14	9	4	M		agree-flagged
+L14	10	Z	H		agree
+L14	11	v	H		agree
+L14	12	L	H		agree
+L14	13	0	H		agree
+L14	14	sq	H		agree
+L14	15	m	H		agree
+L14	16	1	H		agree
+L14	17	0	H		agree
+L14	18	sq	H		agree
+L14	19	m	H		agree
+L14	20	0'	H		agree
+L14	21	v	H		agree
+L14	22	c	H		agree
+L14	23	4	M		agree-flagged
+L14	24	L	M	B:T	differ
+L14	25	CLEAR	H		agree
+L14	26	CLEAR	H		agree
+L14	27	CLEAR	M		agree-flagged
+L14	28	CLEAR	L		agree-flagged
+L14	29	a	H		agree
+L14	30	m	H		agree
+L14	31	0	H		agree
+L14	32	3	H		agree
+L14	33	X_VSTEM	M	B:X_N	differ
+L14	34	L	H		agree
+L14	35	0	H		agree
+L14	36	w	H		agree
+L14	37	CLEAR	M		agree-flagged
+L14	38	CLEAR	H		agree
+L14	39	CLEAR	M		agree-flagged
+L14	40	CLEAR	H		agree
+L14	41	CLEAR	H		agree
+L14	42	CLEAR	M		agree-flagged
+L14	43	CLEAR	L		agree-flagged
