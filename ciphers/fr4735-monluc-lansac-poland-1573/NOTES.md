@@ -262,3 +262,53 @@ descender cut by the region edge).
   is closed as tested (shape question answered: two forms, no letter split licensed at N=15).
 Requests: 0. Subagents: 1 (Sonnet, blind sort).
 
+
+## MONLUC-K07: the '2/Z' form split on c268 lines 1-5 (9 Oct 2026, account 4, Opus, for LANE DEFAULT-account-4-20261009-1051)
+Brief: .claude/briefs/runs/2026-10-09-account4-default-1051-jobs.md J13. Disk only (no host requests), no subagents.
+Prior-work step: `python3 tools/prior_work.py fr4735-monluc-lansac-poland-1573 --item-spec 'shelfmark=BnF fr.4735;folio=138r;date=1573-04-28;sender=Monluc;recipient=Charles IX' --step-type key --fetch`
+-> exit 4, one LEAD (1-own: this worker's own ROOM claim, recorded CLEAR in prior-work.tsv); plaintext CLEAR on the Tomokiyo mirror
+and the cached Bourdeau files, UNCHECKED-NET on aaymeloglu (no local clone; NC-MONL's 7 Oct clone grep found no hit) and UNCHECKED
+on Charriere t. III (no positive control). Nothing in the folder had counted the K07 forms on c268 before this pass.
+- **What the passes call K07 on c268.** Both blind passes (passes/c268_passA.tsv, c268_passB.tsv) have exactly one K07 on lines 1-5
+  (L01:28). The band crops (images/c268cipher_L0*_s*.jpg, native) show it as the flat '2' (form B); it sits in "nespar[g]ne", so it
+  faces g, as the table says.
+- **Form A is on the page, but under another cell.** The peaked, slanted Z with a big C-shaped curl around its left and foot (the
+  left arc in most f.86 form-A crops, images/signs/c172_K07_blind.png) occurs **10 times** on c268 lines 1-5. Pass A filed it
+  as K63 ('3' = u) nine times and K19 ('5' = u) once (L01:32); pass B mostly as K19. One plain heavy '3' with no curl (L03:34, in
+  "q[3]in", where u fits) is a third form (C), kept apart. Positions, as read by this worker from 12 single-sign band crops
+  before any score was computed (labels set by eye, not by a blind sorter): A = L01:32, L02:16, L02:18, L03:10, L04:14, L04:20,
+  L04:24, L04:36, L05:8, L05:13; B = L01:28; C = L03:34. Counts: **form A 10, form B 1, form C 1.**
+- **Form A tracks t** (`k07_c268.py`, `--check` for rule 7; results_k07_c268.json). With form A read as t instead of the table's u,
+  the decode gives "qui nespargne[t] lhon|eur" (L01-L02), "la repu[t]a[t]ion" (L02), "fai[t] parler" (L03), "quil es[t]" (L04).
+  Statistic: mean change in fr16 5-gram log-probability over the 10 form-A positions when the sign is read t = **+5.98**.
+  Controls: (1) the same over 10 random other keyed positions, 10,000 draws: p95 0.32, max 4.17, p = 0.0001; (1b) matched to the
+  table letter, 10 positions drawn from the 9 other u positions (with replacement): p95 -0.79, max 3.88, p = 0.0001; (2) permutation
+  of the A/B/C labels across the 12 instances (66 subsets): p = 0.09, **not significant** (12 instances are too few for this
+  control; the form-B and form-C instances score -1.37 and -8.80 for t, two of the three lowest); (3) best single letter for all
+  form-A positions together, of 21: t +59.8, then s +32.8, l +23.6, i +16.3, u 0. Per instance: 8 of 10 positive for t; L04:20
+  is -14.2 (context "none a[?] aen", unread).
+- **Reading.** On the second leaf the f.86 split holds: flat '2' = g (1 instance), peaked Z = t (10), and the c268 transcription
+  has the Z under the table's u cells, not under K07. So the passes' 27% disagreement on c268 includes a sign the key sheet does not
+  draw. K69 = t now has a second, held-out leaf behind it on the random- and u-matched controls, but the label-permutation control
+  does not pass at N = 12, and the form labels are this reader's, not a blind sort. **key.tsv unchanged**; no grade change; no
+  reading claimed. Depth unchanged (D1 at most).
+Requests: none to any host. Subagents: 0.
+
+## Remaining gaps (MONLUC-K07, 9 Oct 2026)
+Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against its own gloss (MONLUC-KEY), unchanged; c268 lines 1-5 decoded, ungraded.
+- K69 = t (peaked Z with C-curl) as a key entry - blocker: not-attempted; supported on f.86 (p 0.022) and c268 (random and u-matched controls p 0.0001, label permutation p 0.09 at N 12, reader labels); next: a blind Sonnet sort of the 12 c268 crops plus the 17 f.86 crops on one sheet, then relabel K69 in ciphertext_c268.tsv and run decode_key.py --try with its control, ~$1
+- c268 transcription noise (27% pass disagreement) - blocker: not-attempted; part of it is the undrawn Z sign (pass A K63, pass B K19); next: tools/lookalike_pass.py on c268 passes A/B with the Z as its own label, then the sorter's focus.tsv for the owner, ~$1
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py)
+- in-volume decipherment of ff.132-138 - blocker: not-attempted; f.139 opening tested and not matched; next: look at ff.140-141 and items 17/18/112-120 for a Monluc 28 Apr text, ~$1
+- rest of c268, c264, c258 and f.210 - blocker: not-attempted; wait on the look-alikes and a calibrated test; next: the 3-unit protocol per 5-10 lines once a positive control passes, ~$3 per leaf
+- ff.211-223, f.87 margin, ff.50/56/60/80 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONLUC-K07, 9 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [ ] clear-pages: remaining clear leaves untested; planned step: ff.140-141 look
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell (MONLUC-KEY), per sign form on f.86 (MONLUC-2) and on c268 (this pass)
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found
+- [ ] key-rebuild: K69 = t candidate now on two leaves; planned step: blind sort of both leaves' Z crops, then decode_key.py --try
+- [x] image-check: single-sign crops of the '2/Z/3' instances looked at on f.86 (MONLUC-2, FRESH-0914) and on c268 (this pass)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 5 internal gaps; cheapest next: blind sort of the c268 and f.86 Z crops together, then decode_key.py --try K69=t, ~$1

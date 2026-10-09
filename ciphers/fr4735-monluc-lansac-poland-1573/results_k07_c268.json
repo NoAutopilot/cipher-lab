@@ -1,0 +1,59 @@
+{
+ "best_letters_formA": [
+  [
+   "t",
+   59.81
+  ],
+  [
+   "s",
+   32.78
+  ],
+  [
+   "l",
+   23.58
+  ],
+  [
+   "i",
+   16.33
+  ],
+  [
+   "u",
+   0.0
+  ]
+ ],
+ "draws": 10000,
+ "form_A_cells_pass_A": {
+  "K19": 1,
+  "K63": 9
+ },
+ "form_counts": {
+  "A": 10,
+  "B": 1,
+  "C": 1
+ },
+ "label_permutation_subsets": 66,
+ "p_label_permutation": 0.0909,
+ "p_random_positions": 0.0001,
+ "p_u_positions": 0.0001,
+ "per_instance_delta_t": {
+  "1": 16.405,
+  "2": -1.37,
+  "3": 14.802,
+  "4": 11.085,
+  "5": 12.37,
+  "6": -8.803,
+  "7": 3.196,
+  "8": -14.159,
+  "10": 5.483,
+  "11": 3.434,
+  "12": 6.452,
+  "13": 0.746
+ },
+ "random_positions_null_max": 4.173,
+ "random_positions_null_p95": 0.32,
+ "seed": 7,
+ "stat_mean_delta_t_formA": 5.981,
+ "u_positions_null_max": 3.877,
+ "u_positions_null_p95": -0.787,
+ "u_positions_pool": 9
+}
