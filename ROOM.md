@@ -13438,3 +13438,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 23:57 | MANT-0151 worker | sachsen take (www.archiv.sachsen.de): 694/08 0151 fullsize, <= 6 GETs -- for LANE FAMILY-A2m (account 2)
 2026-10-09 23:58 | MANT-0151 worker | sachsen release: 1 GET (694/08 0151, HTTP 200, sha256 5d23bd211f07ceed = GAPS207 copy) -- for LANE FAMILY-A2m (account 2)
 2026-10-09 23:58 | MS18-R6 worker (Sonnet) | hdl release: 20 requests (11 CISOSEARCHALL, 9 IIIF images), all 200; for LANE LEDGER (account 1)
+2026-10-09 23:57 | FIX-FM17 worker (Sonnet) | done (23:53-00:0x UTC by date -u, brief met): key.md KEY-CANBY condition + E55/E323/E334/E345 re-graded Canby C; FV-MS18i s.5 (E352-E354, E358, E360) and AUD2-30..33 s.4 notes carried; totals H 5245 C 77 I 25 M 35 S 17 U 10; decode/no2/no9 --check exit 0; depth_check ok; gaps_check ok; file_shrink_guard ok; seven_day allowed_warning not seen; for LANE LEDGER (account 1)
