@@ -7732,3 +7732,133 @@ it is a different message of the same day, settled by the two clear copies 4787 
 "webster" counted as a signature; E226's "White horse" (White House) and "wharf" were held M; E227's time words were held M though in
 key.md, and "Weasler" not credited. Decoder slips for a FIX job: E217 header "Washington" -> plain; E219 "webster" -> plain (body out of
 the tail); E226 "White horse" -> White House plain, "wharf" plain; E227 "William" -> plain, "Weasler" -> [Steam]er.
+
+## AUDIT (FV-FM7b)
+
+Verifier FV-FM7b (account 1, for LANE LEDGER), 9 Oct 2026, 04:22-04:4x UTC by `date -u`; a separate session from the reader FM-R4b (account 1),
+not protecting its conclusions. Scope: **E260, E261, E262, E263, E266** (NOTES "## FM-R4b"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger
+mssEC 25 = Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all five: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts: `fortmonroe/fv_fm7b_hdl.py` (+ `.out`; CONTENTdm full text across all pointers on clear-word pairs, three page images at 2400 px to
+scratch), `fortmonroe/fv_fm7b_print.py` (+ `.out`; letters-only phrase grep over the 164 cached print-check volumes plus OR I/42 pt 3
+`warofrebellion423unit`, I/40 pt 2 `402unit`, I/36 pt 3 `363unit` fetched to scratch, 3 archive.org downloads). The ~1,226 holder page
+transcriptions already on disk (`sources/fortmonroe`, `sources/mssEC18`, `sources/mssEC19`) were grepped first (no requests).
+
+### 1. Duplicates, prior work, own transcription and image
+- **Duplicate diff:** pointers 5787, 5629, 5741, 5812, 5609 (and the clear-copy pointers 10267, 10239 found below) against every `###` header
+  in ciphertext*.txt and status.json: 5787 also carries E172 (row 5787/2, a different telegram); the rest occur only in their own headers.
+  **No duplicate.**
+- **Prior work:** `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=5741;date=1864-06-12' --step-type audit
+  --offline` -> exit 4, holds: LEAD x2 = target-level live claims (ECK-PAGEFIX, mssEC 19 page column; the LANE LEDGER orchestrator's own
+  claim), neither covers these units; UNCHECKED-NET aaymeloglu (no clone); UNCHECKED editions (no correspondent in items.tsv: done by hand
+  below); Tomokiyo and cached solver files CLEAR. No AUDIT.md/status.json class on any of the five before this section.
+- **Own transcription** (`sources/fortmonroe/p<pointer>.json`) matches ciphertext.txt for all five. **Image eye check this session**
+  (`tools/iiif_lines.py --image`, two-line crops, scratch only): 5787 line "perm repaired zodiac No such orders were received and I" reads as
+  transcribed (E260's "perm repaired" stays unread); 5741 line 1 "Whiskey arriving here in Considerable numbers zodiac Every thing indicates"
+  as transcribed. 5609 not re-cropped: the clear copy below settles E266's disputed words.
+
+### 2. Holder's full text, internal witnesses and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the hdl token 04:27-04:29 UTC; 15
+queries): destitute+water 2 (5787, 5269 = 1863), hudson+comply 1 (5787), farquhar+mules 1 (**10267**), requisition+saddle 5 (5629, 5633,
+11248, 8945, **10267**), pontoon+mules 3 (7688, 8483, **10267**), "considerable numbers" 16 (5741; the rest 1862-65 other traffic),
+mattox 8 (5741; 5656, 5698, 4601, 4662, 10324, 10353, 10432 other), cable+appomattox 1 (5741), erection 4 (5812; 6964, 4299, 5272 other),
+bradley+empty 1 (5812), howell+bradley 2 (5812; 5851 = 3 Jan 1865, steamers ordered to report to Col. Bradley, other), "shelter tents
+instead" 2 (5609, **10239**), tents+webster 5 (5600, 5608, 5609, 10235, **10239**), artillery+horses 68 (none at a Fort Monroe date of
+these entries other than 10239), requested+client 1 (5609).
+- **E261 -> pointer 10267, period clear copy, word for word** (Page 125 of the Washington clear telegram book that holds FV-FM6c's 10485 at
+  Page 343; pointer minus page = 10142 for all three): "Recd 2 pm / Maj. Eckert Ft Monroe Apl 24th 1864 / For Qr. Mr. Genl Meigs On twelfth
+  April I made requisition for one hundred saddle horses for Qr Mr use ---- Capt Farquhar requires one hundred forty mules for pontoon train
+  ---- when can they be furnished? In course of two or three weeks we shall probably need two hundred additional wagons and teams complete,
+  would suggest they be in readiness Her = man Biggs Lieut Colonel and Qr Mr 130 PM". The same page carries the clear copy of 5630 (Biggs,
+  24 Apr, "Following Steamers have reported here" = the ledger's "following weasilers have wicked here").
+- **E266 -> pointer 10239, period clear copy, word for word** (Page 97, same book): "320 P. m Fort Monroe Va Apr. 18th 1864 / For Qr Mr Genl.
+  Ten thousand additional Shelter tents are needed here instead of twenty thousand as required by Lieut Webster. five hundred horses are also
+  needed at once. Please let me know if I can count on the amount of water transportation I asked for and how soon sig Her = man Biggs Lieut
+  Col and Chief Qr Master". The same page has the clear copy of the next ledger entry on 5609 (Butler to the Secretary of War, J. H. Maddox
+  captured with 150 boxes of tobacco).
+- **Internal witnesses (mssEC 25 on disk), not clear copies:** E261: 5633, Eckert to Biggs 25 Apr 1864 (the reply): "your requisition for [100]
+  saddle [horses] was referred to [Cavalry] Bureau ... sent for the mules". E266: 5600 (11 Apr, Biggs: "I require [10000] shelter tents at
+  once"), 5608 (16 Apr, Lt C. D. Webster, A.A.Q.M.: "ordered by [Butler] to require immediately [20000] shelter tents"), 5610 (Eckert, 18 Apr:
+  "[6000] shelter tents will supply [12000] men"). E262: 5707 (O'Brien wants City Point "connected by cable"), 5712/5713 (Homan and Collings
+  with the construction party, 28-29 May) -- "hoe man" is the operator Homan. E263: 5812 second entry (Ingalls to Eckert the same day: "I
+  have directed all [steamers] to be sent to [Washington] to be in readiness to bring back the [6th Corps?] ... The [infantry] should
+  [embark] immediately on arrival"). E260: 5787 first entry (4 Oct, Webster sends the steamer Hudson among others) and third (6 Oct, a
+  message from General Ingalls).
+- **Print:** letters-only phrase grep (`fv_fm7b_print.out`): E260 "city of hudson" only OR I/40 pt 3 (July 1864, other use, as FM-R4b) and
+  Seward's autobiography; E261 "pontoon train" passim (no Farquhar/Biggs/mules context in OR I/33, I/36 pts 1-3), "200 additional wagons" OR
+  I/43 pt 2 (other); E262 0; E263 "process of erection" 0 relevant; E266 "500 artillery horses" OR I/40 pt 2 (Ingalls to Meigs, City Point 28
+  June 1864, other telegram). Context found for E263 in OR I/42 pt 3 (djvu text, page not read): S.O. No. 120, Hdqrs Armies of the U.S., City
+  Point, 5 Nov 1864, "Lieut. Col. George W. Bradley, chief quartermaster Tenth Army Corps, is hereby relieved ... and will report ... to Brig.
+  Gen. Rufus Ingalls ... for assignment as depot quartermaster at City Point"; Grant to Halleck, City Point, 28 Nov 1864 6.30 p.m., "If the
+  Sixth Corps is moved here please send all the infantry before forwarding a single piece of artillery or wagon". Google Books: one probe,
+  HTTP 429, host stopped. Grant Papers vols. 10-12 by be-api were searched by FM-R4b; vol. 13 is not an IA item. Not searched: the press of the
+  day (none of the five is a press telegram); OR I/42 pt 3 page by page for 5 Oct (E260).
+- **Result:** E261 and E266 are **not "not located"**: the holder's own public transcription carries their period clear copies (FM-R4b's
+  12 rare-word CONTENTdm queries missed them; FV-FM5c's lesson again). E260, E262, E263: **no clear copy and no print located.**
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E261 (clear copy 10267):** every code word agrees with the clear copy: Bender = Qr Mr Genl (Meigs), flood = 12, plug publish = 100,
+  Spartans = horses, Vinton = Qr Mr, princess = Capt, plunge prolong lampoon = 140, village = pontoon, plank or perfume = 2 or 3, peach wine =
+  200, Lieutenant pandora = Lieut Colonel, Vincent = Qr Mr, Hannah = 1.30 PM -> **C**. One decoder slip: **"saddle" is plain** (clear: "one
+  hundred saddle horses"; the reply 5633 repeats "saddle [horses]"); the decoder prints [Guard] from key row Saddle = Guard. "the be in
+  readiness" = they be (clear). FM-R4b's two M ("saddle Spartans ... odd") are resolved: **C 24 of 24 code groups, saddle plain.**
+- **E266 (clear copy 10239):** federal promise = 10000, harrow purple = 20000, plaster prolong = 500, Spartans = horses, Whig = transportation,
+  lent pandora = Lieut Col, Vinton = Qr Master, Bender = Qr Mr Genl -> **C**. **"Iron" = soon** ("how soon", clear; not a key row; FM-R4b's
+  U is now C). **"requested by client Webster" (transcription) = "required by Lieut Webster"** (clear copy and image, as FM-R4b saw).
+  **"nuptial" = [Artillery] (H) is not in the clear copy** ("five hundred horses"): kept as the key reads, graded **M** (the Washington clerk
+  may have dropped the word; a conflict to record, not to settle). Count: **C 15 + Iron C of 17 groups, nuptial M.**
+- **E262:** **"Whiskey" = [Troops]** (key row Whisky = Troops, p.24 l.7, the -ey spelling missed by the decoder; FM-R4b's U): "[Troops]
+  arriving here in considerable numbers". **"hoe man" = Homan**, the military telegraph operator who works with Collings in O'Brien's
+  traffic (5671, 5682, 5707, 5712, 5713), not "Herman" as the FM-R4b table glosses it (I, phonetic plain). "apple mattox" = Appomattox
+  (plain), "as" = us. Code groups Whiskey, Bergen x2, spit, Knox, plus periods = **H 8 of 8** (decoder H 7 + Whiskey).
+- **E263:** sound. "William" plain (already a `plain:` note), "Weaselers" = [Steam]ers (Weasel = Steam, confirmed C by the 10267 clear copy
+  of 5630, "Following Steamers"), "become stagger" = become [light] (unloaded), "rough us in galls" = Rufus Ingalls, palsy = [Brigadier General]
+  (Ingalls's rank; S.O. 120). Johns before snake = Grant's (blind/plain possessive form; the decoder renders [Maj Genl U.S. Grant]'s; M as to
+  the token, not the sense). **H 17 of 17.**
+- **E260:** sound. "toby" = to be (phonetic plain), "Are See Webster" = R. C. Webster, Colonel and Quartermaster (FV-FM6a, OR I/42 pt 2
+  p.447), "winton" = Vinton variant (M, as FM-R4b), **"perm repaired" unread** (image as transcribed; 2 plain tokens, other). **H 16 / M 1.**
+
+### 4. Classification (key `period`)
+`depth_pct` = H(or C) / code-word groups (plain names and phonetic words excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E260** Sheldon (Ft Monroe) to R. O'Brien, Butler's Hd Qrs, for Butler, signed R. C. Webster, 5 Oct 1864 9.30 AM | **N3** | unknown | **D2** | 94.1 (16 H of 17; winton M; "perm repaired" unread, other) | code clause: Whig = transportation (C by clear copy 10239 in E266), Black = City Point, Wrangle = telegraph read passim; one unread non-name gap holds it below D3 |
+| **E261** Herman Biggs, Lt Col and QM, via Sheldon to Maj. Eckert for QMG Meigs, 24 Apr 1864 1.30 PM | **N1** (plain text in the holder's public transcription of the clear copy, pointer 10267) | yes (holder's transcription) | **D3** | 100 (C 24 of 24; saddle plain) | external non-statistical: the period clear copy agrees with every code group; Eckert's reply 5633 |
+| **E262** R. O'Brien (Butler's Hd Qrs) to Maj. Eckert, 12 June 1864 | **N3** (weak: most words are plain in the holder's public transcription; the key supplies troops, the James x2, men and Butler) | unknown | **D2** | 100 (8 H of 8; Whiskey = Troops) | code clause: Bergen = James twice here and passim, Knox = Butler passim; context only: 5707 cable, 5712/5713 Homan |
+| **E263** Rufus Ingalls via Sheldon (Ft Monroe) to the Cipher Agent, City Point, for Capt. W. T. Howell, Grant's Hd Qrs, 29 Nov 1864 3.30 PM | **N3** | unknown | **D3** | 100 (17 H of 17) | code clause: Weasel = Steam (C by 10267), Grapes = Washington, Whist = Troops passim; external (non-statistical): OR I/42 pt 3 S.O. 120 (5 Nov 1864) makes Lt Col G. W. Bradley depot QM at City Point under Ingalls; Grant to Halleck 28 Nov on moving the Sixth Corps infantry first; sibling 5812 entry the same day |
+| **E266** Herman Biggs, Lt Col and Chief QM, via Sheldon to Maj. Eckert for the QMG, 18 Apr 1864 3.20 PM | **N1** (holder's clear copy, pointer 10239) | yes (holder's transcription) | **D3** | 94.1 (C 16 of 17; nuptial M) | external non-statistical: the clear copy; Lt C. D. Webster's 20000 demand of 16 Apr (5608) and Eckert's 6000 reply (5610) |
+
+- **E260: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 5 Oct 1864 Fort Monroe asked General Butler, through
+  R. O'Brien at his headquarters, whether to obey General Ingalls's claim that the steamer City of Hudson had been ordered to report to him
+  and to send her to City Point, Fort Monroe being almost destitute of water transportation; signed R. C. Webster, Colonel and Quartermaster.
+  Not located in the Official Records (ser. I vols. 40 and 42, by phrase), Butler's correspondence or the Huntington's full-text search
+  (searched 9 Oct 2026)." Unsafe: any novelty word. Depth sentence (mine): "On 5 Oct 1864 Fort Monroe's quartermaster, short of steamers,
+  asked Butler whether to give up the City of Hudson to Ingalls at City Point."
+- **E261: N1.** Safe sentence: "Read at grade C with War Department Cipher No. 1 against the period clear copy in the Eckert Papers (Huntington,
+  pointer 10267, p.125): Lt Col Herman Biggs's 24 Apr 1864 requisition for 100 saddle horses, 140 mules for Capt. Farquhar's pontoon train and
+  200 wagons." Unsafe: any novelty word; "not located" without naming the clear copy. No status.json or SO row (N1).
+- **E262: N3 (weak).** Safe sentence: "Read at grade H with Cipher No. 1: on 12 June 1864 R. O'Brien at General Butler's headquarters told
+  Major Eckert that troops were arriving in considerable numbers, that everything pointed to work on this side of the James, and asked for
+  men and material at short notice, cable for the James (Butler also wanting one for the Appomattox) and the operator Homan. Not located in
+  the Official Records (ser. I vol. 40 pt 2, by phrase), Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026)."
+  Unsafe: any novelty word; any statement that the troops were a named corps. Depth sentence (mine): "On 12 June 1864 Butler's telegraph chief
+  saw troops pouring in and asked Eckert for men, material and cable for the James and the Appomattox."
+- **E263: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 29 Nov 1864 Brig. Gen. Rufus Ingalls, telegraphing from Fort Monroe to
+  Capt. William T. Howell at Grant's headquarters, ordered Colonel Bradley to send all empty steamers to Washington to bring down troops as
+  fast as they unloaded, and asked for estimates of the material still needed for buildings under construction. Not located in the Official
+  Records (ser. I vol. 42 pt 3, by phrase), the Grant Papers vols. 10-12 or the Huntington's full-text search (searched 9 Oct 2026)." Depth
+  sentence (mine): "On 29 Nov 1864 Ingalls had the City Point depot quartermaster send every empty steamer to Washington to fetch troops."
+- **E266: N1.** Safe sentence: "Read at grade C with Cipher No. 1 against the period clear copy in the Eckert Papers (Huntington, pointer 10239,
+  p.97): Biggs's 18 Apr 1864 request for 10,000 more shelter tents instead of the 20,000 Lt Webster had required, and for 500 horses; the
+  cipher copy adds 'artillery', which the clear copy lacks." No status.json or SO row (N1).
+
+### 5. Postmortem
+FM-R4b read all five soundly in substance; its "not located" for E261 and E266 is the FV-FM5c/FV-FM6a/c pattern a fourth time: rare-word
+CONTENTdm queries (farquhor as spelled in cipher, garvey, mendota) miss the clear copy, which uses the normal spelling (Farquhar) or only
+common words; a pair of the entry's distinctive clear words ANDed (farquhar+mules, "shelter tents instead") finds it in one query. Over-claims
+corrected here: FM-R4b's table gloss "Please send Herman ('hoe man')" -> the operator Homan; "Whiskey" listed as unread -> [Troops]; E266
+"500 artillery horses" -> the clear copy reads "five hundred horses" (artillery M). Reading corrections for a FIX job (rule 7, decode.py entry
+notes, not applied here): E261 `plain: saddle`, "the be" note (they); E266 Iron = soon (C), "requested by client" = required by Lieut
+(clear + image; ciphertext stays as transcribed), nuptial M; E262 Whiskey = Whisky = [Troops] (`variant:`), hoe man = Homan (plain).
+Requests: hdl.huntington.org 20 (15 dmQuery, 3 IIIF pages, 2 failed dmGetParent calls); archive.org 3; Google Books 1 (429).
