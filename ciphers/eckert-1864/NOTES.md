@@ -2874,3 +2874,20 @@ Not done: E240's "Barnes" (the image has "palsy Barnes grapes"; the word is abse
 
 `python3 ciphers/eckert-1864/decode.py --write` then `--check` -> `reading.md is current`, exit 0; `decode_no2.py --check` and `decode_no9.py --check` -> current; `python3 -m unittest tools.tests.test_eckert_decode` -> OK.
 Propagation (rule 10): the second-opinions PROMPT-chatgpt-e219/e227/e228/e229/e240/e242/e243 already carry the corrected words (checked by grep: Herald, up to the [10]th, Newbern ... violently, [steamer], 4.15, Barnes, Bermuda); no E217/E226/E241/E245 prompt exists (N1). status.json: three stale phrases updated (E243 reading_version, E229 gap, E240 gap); no class or depth changed. `tools/depth_check.py` -> passes, "unique solves (N3+ and D2+): 90 -- D4 5, D3 51, D2 34".
+
+## FV-FM7b (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier for E260, E261, E262, E263, E266 (reader FM-R4b); full log in AUDIT.md "## AUDIT (FV-FM7b)". Duplicate diff: none (5787 also
+carries E172, row /2, another telegram). The holder's CONTENTdm full text across all pointers, on pairs of each entry's clear words, found
+**period clear copies of E261 (pointer 10267, p.125) and E266 (pointer 10239, p.97)** in the Washington clear telegram book (the book of
+FV-FM6c's 10485; pointer minus page = 10142): **E261 N1, E266 N1** (C-graded, D3, no status/SO row). **E260 N3 D2** ("perm repaired" unread,
+image as transcribed), **E262 N3 (weak) D2**, **E263 N3 D3** (OR I/42 pt 3: S.O. 120 of 5 Nov 1864 makes Lt Col G. W. Bradley depot QM at
+City Point under Ingalls; Grant to Halleck 28 Nov on the Sixth Corps). Status rows E260, E262, E263; SO-ECKERT-E260/E262/E263 queued;
+WORK-QUEUE AUD2-LEDGER-16.
+Reading corrections for a FIX job (rule 7, decode.py entry notes): E261 "saddle" plain (clear: "one hundred saddle horses"; decoder prints
+[Guard]), "the be" = they; E266 "Iron" = soon (C, clear copy), "requested by client" = required by Lieut (clear copy + image; ciphertext stays
+as transcribed), "nuptial" = [Artillery] M (the clear copy reads "five hundred horses"); E262 "Whiskey" = key row Whisky = [Troops] (decoder
+left it in clear), "hoe man" = Homan, the operator (5671, 5682, 5707, 5712, 5713), not Herman.
+Lead for readers (fourth time, FV-FM5c/6a/6c/7b): query CONTENTdm with two common clear words of the entry ANDed (farquhar+mules, "shelter
+tents instead"), not the rare cipher-side spellings (farquhor): the clear copy spells names normally.
+Requests: hdl.huntington.org 20 (one token block 04:27-04:29 UTC: 15 dmQuery, 3 IIIF pages, 2 dmGetParent calls the API does not support);
+archive.org 3; Google Books 1 (429, stopped).
