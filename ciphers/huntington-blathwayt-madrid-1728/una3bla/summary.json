@@ -1,0 +1,82 @@
+{
+ "pages": {
+  "BLA191_p5": {
+   "ka_hit": 40,
+   "ka_n": 41,
+   "need": 37,
+   "gate": "PASS"
+  },
+  "BLA186_p1": {
+   "ka_hit": 6,
+   "ka_n": 7,
+   "need": 7,
+   "gate": "FAIL"
+  }
+ },
+ "universe": [
+  {
+   "line": "BLA186_p1_L01",
+   "pos": 8,
+   "group": "778",
+   "blind": "778",
+   "compete": 0,
+   "promote_sign_H": false
+  },
+  {
+   "line": "BLA191_p5_L01",
+   "pos": 9,
+   "group": "941",
+   "blind": "941",
+   "compete": 0,
+   "promote_sign_H": true
+  },
+  {
+   "line": "BLA191_p5_L01",
+   "pos": 11,
+   "group": "386",
+   "blind": "386",
+   "compete": 1,
+   "promote_sign_H": false
+  },
+  {
+   "line": "BLA191_p5_L05",
+   "pos": 10,
+   "group": "1099",
+   "blind": "1099",
+   "compete": 1,
+   "promote_sign_H": false
+  },
+  {
+   "line": "BLA191_p5_L06",
+   "pos": 1,
+   "group": "214",
+   "blind": "214",
+   "compete": 0,
+   "promote_sign_H": true
+  },
+  {
+   "line": "BLA191_p5_L07",
+   "pos": 9,
+   "group": "937",
+   "blind": "937",
+   "compete": 0,
+   "promote_sign_H": true
+  },
+  {
+   "line": "BLA191_p5_L11",
+   "pos": 3,
+   "group": "385",
+   "blind": "385",
+   "compete": 0,
+   "promote_sign_H": true
+  },
+  {
+   "line": "BLA191_p5_L12",
+   "pos": 5,
+   "group": "1185",
+   "blind": "1185",
+   "compete": 0,
+   "promote_sign_H": true
+  }
+ ]
+}

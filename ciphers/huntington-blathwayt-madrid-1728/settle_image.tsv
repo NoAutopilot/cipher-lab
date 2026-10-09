@@ -4,19 +4,19 @@ BLA186_p1_L01	8	778	M	reads 7>8 both leading glyphs the hand's 7;passes 758/738
 BLA186_p3_L01	1	737	H	73> final glyph is the hand's 7;passes both 733	
 BLA186_p3_L01	13	593	H	clear	
 BLA191_p5_L01	7	697	H	69> =697	
-BLA191_p5_L01	9	941	M	final stroke reads 1 not >;passes both 947	
+BLA191_p5_L01	9	941	H	UNA3-BLA 9 Oct 2026 (PREREG-D3BLA2 amendment 4, p5 KA 40/41 PASS): 4354 px IIIF copy, blind Sonnet = committed, reconciler no competing digit; was M: final stroke reads 1 not >;passes both 947	
 BLA191_p5_L01	10	270	H	2>0 =270	
 BLA191_p5_L01	11	386	M	first digit overwritten, bold 3 over another figure	
 BLA191_p5_L02	1	137	H	13> =137;passes both 135	
 BLA191_p5_L04	3	1017	H	101>	
 BLA191_p5_L05	8	278	H	2>8 =278;passes both 258	
 BLA191_p5_L05	10	1099	M	second figure small, reads 0;passA 1899 out of range	
-BLA191_p5_L06	1	214	M	middle glyph 1 or 7;passB 274	
+BLA191_p5_L06	1	214	H	UNA3-BLA 9 Oct 2026 (PREREG-D3BLA2 amendment 4, p5 KA 40/41 PASS): 4354 px IIIF copy, blind Sonnet = committed, reconciler no competing digit; was M: middle glyph 1 or 7;passB 274	
 BLA191_p5_L06	3	737	H	clear	
 BLA191_p5_L06	4	647	H	clear	
 BLA191_p5_L06	5	756	H	clear	
 BLA191_p5_L06	10	754	H	clear	
-BLA191_p5_L07	9	937	M	93) final glyph as in 186 p3 737;passes both 933	
+BLA191_p5_L07	9	937	H	UNA3-BLA 9 Oct 2026 (PREREG-D3BLA2 amendment 4, p5 KA 40/41 PASS): 4354 px IIIF copy, blind Sonnet = committed, reconciler no competing digit; was M: 93) final glyph as in 186 p3 737;passes both 933	
 BLA191_p5_L07	10	275	H	clear	
 BLA191_p5_L08	3	1017	H	clear	
 BLA191_p5_L08	7	576	H	clear	
@@ -104,3 +104,4 @@ BLA191_p5_L12	9	758	H	UNA2-BLA 9 Oct 2026 (PREREG-D3BLA2 amendment 3, KA 14/14 P
 BLA191_p5_L12	10	942	H	UNA2-BLA 9 Oct 2026 (PREREG-D3BLA2 amendment 3, KA 14/14 PASS): 4354 px IIIF copy, blind Sonnet = A = B = D3-BLA Z, reconciler no competing digit	
 BLA191_p5_L12	11	754	H	UNA2-BLA 9 Oct 2026 (PREREG-D3BLA2 amendment 3, KA 14/14 PASS): 4354 px IIIF copy, blind Sonnet = A = B = D3-BLA Z, reconciler no competing digit	
 BLA191_p5_L12	12	163	H	UNA2-BLA 9 Oct 2026 (PREREG-D3BLA2 amendment 3, KA 14/14 PASS): 4354 px IIIF copy, blind Sonnet = A = B = D3-BLA Z, reconciler no competing digit	
+BLA191_p5_L12	5	1185	H	UNA3-BLA 9 Oct 2026 (PREREG-D3BLA2 amendment 4, p5 KA 40/41 PASS): 4354 px IIIF copy, blind Sonnet = committed, reconciler no competing digit; was M (passes flagged; D3-BLA blind 1183, UNA2-BLA and UNA3-BLA hi-res blind both 1185)	

@@ -9,7 +9,7 @@ Second audit (AUDIT.md, 24 Sept 2026, worker I): classes confirmed, but BLA 186'
 Papers* 1831, ii 414-15, English extract dated there 3 Sept 1728, writer the Abbé Paretti, cipher line omitted as
 "(Cypher.)"); the class covers only its two cipher lines.
 N4 set (AUDIT.md 'N4 set (LANE W2 worker B1, 24 Sept 2026)'): BLA 186 cipher lines N4, BLA 191(a) N4, BLA 184 N4, "no
-prior decipherment located", readings partial (C 129, M 22, U 21 of 172 then; now C 138, S 3, M 14, U 17 after UNA2-BLA 9 Oct 2026: AUDIT.md
+prior decipherment located", readings partial (C 129, M 22, U 21 of 172 then; now C 141, S 4, M 10, U 17 after UNA3-BLA 9 Oct 2026: AUDIT.md
 'propagate-revision (PROP-HUNT, 8 Oct 2026)'). DECODE Decrypted (1360 records) and
 Cipherbrain negative. Any outward sentence on BLA 186 cites Rose 1831 ii 414-15. Outreach gate 2 open: 6 JSTOR rows
 queued and OpenAlex not run (ASKS row 40).
@@ -376,10 +376,10 @@ Not found-solved: no decipherment of BLA 186's cipher lines, 191(a) or 184 found
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
-- Action that depends on nobody: the 4354 px Huntington IIIF read of the remaining M-sign columns (BLA191 p5 L01/L05-L07, BLA186 p1 L01), ~$1.5 (UNA2-BLA, 9 Oct 2026; the TNA Discovery API search of SP 94/98-100 and SP 36 was run by RUN6-BLATH and R10-HUNTTNA, 5-6 Oct 2026).
+- Action that depends on nobody: a key-side look at the 7 key-tie M tokens (BLA184 1240/1250, 665 co|lo, 1250, 46, 1018) against the six glossed items' contexts with `tools/decode_key.py . --try`, ~$1 (the 4354 px image read of every sign-M column was done by UNA2-BLA and UNA3-BLA, 9 Oct 2026; the TNA Discovery API search of SP 94/98-100 and SP 36 was run by RUN6-BLATH and R10-HUNTTNA, 5-6 Oct 2026).
 
 ## Remaining gaps (GAPSFIX, 4 Oct 2026)
-Read so far: 138 of 172 target tokens at C (80.2%; UNA2-BLA 9 Oct 2026: 8 BLA191 p5 L12 tokens M -> C on a 4354 px IIIF copy, KA gate 14/14 PASS, C 130 -> 138, M 22 -> 14; R8-HUNT 6 Oct 2026: census finished, BLA191 p5 L11 pos3 385 C -> M, C 131 -> 130, M 20 -> 21; R7B-HUNT 6 Oct 2026: counts unchanged, one C value changed (BLA191 p5 L11 pos3 et -> es); earlier: R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), S 3, M 22, U 17, H 0 after R10-HUNT2 (6 Oct 2026; was M 20, U 21; propagated to AUDIT.md by PROP-HUNT 8 Oct 2026); `tools/decode_key.py . --check` 0.
+Read so far: 141 of 172 target tokens at C, 145 at C/S (84.3%; UNA3-BLA 9 Oct 2026: 4 sign-M columns on the 4354 px IIIF copy, p5 KA 40/41 PASS, 941/937/1185 M -> C, 214 M -> S, 385 held (gloss split), BLA186 p1 KA 6/7 FAIL (nothing moved); UNA2-BLA 9 Oct 2026: 8 BLA191 p5 L12 tokens M -> C on a 4354 px IIIF copy, KA gate 14/14 PASS, C 130 -> 138, M 22 -> 14; R8-HUNT 6 Oct 2026: census finished, BLA191 p5 L11 pos3 385 C -> M, C 131 -> 130, M 20 -> 21; R7B-HUNT 6 Oct 2026: counts unchanged, one C value changed (BLA191 p5 L11 pos3 et -> es); earlier: R17 table updated by A4-RFHUN 5 Oct 2026: BLA184 3/7, BLA186 20/24 (849 was already C, value changed), BLA191 p5 108/141), S 3, M 22, U 17, H 0 after R10-HUNT2 (6 Oct 2026; was M 20, U 21; propagated to AUDIT.md by PROP-HUNT 8 Oct 2026); `tools/decode_key.py . --check` 0.
 - 14 of R17's 21 unkeyed groups, those in BLA186/BLA191(a) below the R10 margin (805, 6, 1210, 460, 1019, 711, 1118, 1052, 836, 222, 73, 470, 778, 190) - blocker: open-codes; R10-HUNT2 (6 Oct 2026, attempt 2, PREREG-R10.md) PASSed its gate and filled the 4 groups above margin 2.786 (689 m, 285 do, 1152 v at S; 214 commen at M, its sign conf M); the 14 below the margin have no instrument that clears a control (below-margin control precision is under 0.25); they reopen only with new glossed siblings using these codes
 - BLA184 range 1150/1240/1243/1250/1259 (probable names section) - blocker: open-codes; R17: glosses of this range elsewhere do not fit, the glossed items never use it
 - a contemporary decipherment of BLA191(a) in the State Papers (a copy went to Newcastle, 8 Aug 1729) - blocker: needs-physical-access; R10-HUNTTNA (6 Oct 2026, TNA Discovery API, 20 requests): Marchmont's two covering letters SP 36/13/129 (19 July 1729) and SP 36/14/184 (30 Aug 1729) are catalogued 'The enclosures not forthcoming'; SP 94/99-100 are piece-level only; no item-level decipherment or copy found; none of these pieces is digitised; reopens only with a reading-room or copy check of SP 94/100 and SP 36/14 (owner-side)
@@ -390,9 +390,9 @@ Read so far: 138 of 172 target tokens at C (80.2%; UNA2-BLA 9 Oct 2026: 8 BLA191
 - [x] known-keys: the run's own period glosses give the key (395 groups, grade C)
 - [x] print: TNA SP 94/98-100, SP 98, SP 100, SP 36/13-14 and SP 54 descriptions (RUN6-BLATH 5 Oct; R10-HUNTTNA 6 Oct 2026): no decipherment of BLA191(a) catalogued; HMC Polwarth V search-inside done (H1, 5 Oct 2026)
 - [x] key-rebuild: key.tsv rebuilt from the glosses by build_key.py (R17)
-- [ ] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages (A4-RFHUN, 5 Oct 2026: 849 = parle; 733 -> 737 twice; 250 -> 270 once; descending-glyph doubt logged as a gap); (signs) BLA191 p5 L12 [x] done by UNA2-BLA 9 Oct 2026: the 1200 px re-gate (D3-BLA2, UNTESTABLE at N 20, S 2) is [retired] for the 1200 px copies (instrument: three-reader rule on 1200 px crops); a different instrument -- the Huntington IIIF server's 4354 px size of BLA191 p5 (native 8708 px) -- read L11-L13 blind, known-answer 14/14 PASS (PREREG-D3BLA2 amendment 3), and 8 L12 tokens moved M -> C (26 ai, 591 in, 275 dans, 659 l', 758 no, 942 ra, 754 n, 163 ce); L12 pos 2 1018 (key tie sec|ser) stays M, pos 8 585 stays U, pos 5 1185 reported not promoted (D3-BLA's blind read 1183); still open: the 849 / 7-3 distinctions on the glossed pages; next: the same 4354 px IIIF size for the remaining M-sign columns (BLA191 p5 L01/L05-L07, BLA186 p1 L01; one info.json + one image per page, one blind call), ~$1.5
+- [ ] image-check: 849 on BLA188 and the 7/3 distinctions on the glossed pages (A4-RFHUN, 5 Oct 2026: 849 = parle; 733 -> 737 twice; 250 -> 270 once; descending-glyph doubt logged as a gap); (signs) BLA191 p5 L12 [x] done by UNA2-BLA 9 Oct 2026: the 1200 px re-gate (D3-BLA2, UNTESTABLE at N 20, S 2) is [retired] for the 1200 px copies (instrument: three-reader rule on 1200 px crops); a different instrument -- the Huntington IIIF server's 4354 px size of BLA191 p5 (native 8708 px) -- read L11-L13 blind, known-answer 14/14 PASS (PREREG-D3BLA2 amendment 3), and 8 L12 tokens moved M -> C (26 ai, 591 in, 275 dans, 659 l', 758 no, 942 ra, 754 n, 163 ce); L12 pos 2 1018 (key tie sec|ser) stays M, pos 8 585 stays U, pos 5 1185 reported not promoted (D3-BLA's blind read 1183); UNA3-BLA 9 Oct 2026 (amendment 4): the same instrument on the 8 remaining sign-M columns -- p5 KA 40/41 PASS, 941, 214, 937, 1185 sign H (C 141, S 4, M 10); 385 held (its M is a gloss split, not a sign doubt), 386 (overwritten) and 1099 (0/6) compete; BLA186 p1 KA 6/7 FAIL, 778 unmoved; no sign-M column is left that this instrument has not read; still open: the 849 / 7-3 distinctions on the glossed pages (no target token depends on them); next: a key-side --try on the 7 key-tie M tokens, ~$1
 - [x] retry: context-fill of the 18 unkeyed groups with a BLA185 blanking control (R9-HUNT attempt 1 FAIL; R10-HUNT2 attempt 2 PASS on fresh seeds 4-6, 4 groups filled, 14 stay U)
-Verdict: keep going: 2 internal gaps; the 1200 px re-gate is [retired] (D3-BLA2, rule 3) and its named instrument, the higher-resolution IIIF copy, moved 8 L12 tokens M -> C (UNA2-BLA, 9 Oct 2026; C 138 of 172); cheapest next: the same 4354 px IIIF read for the other M-sign columns (BLA191 p5 L01/L05-L07, BLA186 p1 L01), ~$1.5; that read is also the parallel action (depends on nobody, Huntington IIIF open); later, a TNA reproduction of SP 54/19/98B (Seville, 20 Oct 1729, cipher with contemporary decipherment, same Marchmont channel) to test against key.tsv and the 14 open codes (R10-HUNTTNA, 6 Oct 2026); the State Papers decipherment gap is now needs-physical-access
+Verdict: keep going: 2 internal gaps; the 1200 px re-gate is [retired] (D3-BLA2, rule 3); its named instrument, the 4354 px Huntington IIIF copy, has now read every sign-M column (UNA2-BLA, UNA3-BLA 9 Oct 2026: C 141, S 4, M 10, U 17 of 172; H/C/S 84.3%); the 10 M left are 7 key ties, 385's gloss split and two contested figures (386, 1099), none an image question for this copy; cheapest next: a key-side `decode_key.py --try` on the 7 key-tie tokens, ~$1, which is also the parallel action (depends on nobody); a verifier (DV-BLA) decides depth; later, a TNA reproduction of SP 54/19/98B (Seville, 20 Oct 1729, cipher with contemporary decipherment, same Marchmont channel) to test against key.tsv and the 14 open codes (a TNA copy-service order); the State Papers decipherment gap is needs-physical-access
 
 ## IA-DESK-ALT (account-3 worker, 5 Oct 2026): HMC Polwarth IV and V via Internet Archive
 
@@ -686,3 +686,43 @@ blind reader agrees with them, not that both are right.
 Not done: the 46 key-tie question (L11 pos 1) is a key question, untouched. Suggestion (not done, brief did not name it): the same IIIF size for the
 other M-sign columns.
 Report: what was found and where it was not found; novelty not classified.
+
+## UNA3-BLA hi-res re-read of the remaining sign-M columns (9 Oct 2026)
+
+Account-1 worker UNA3-BLA, 10:42-11:0x UTC by date -u (brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md "## UNA3-BLA").
+Pre-registered as PREREG-D3BLA2.md amendment 4 (pushed 9ff01e06d, time fixed dbd8b5dfd, before any tile was cut). `tools/prior_work.py
+huntington-blathwayt-madrid-1728 --derive --step-type lookup --offline`: 0 proposed rows, no LEAD; the last claim on the folder was UNA2-BLA (done).
+
+**Universe.** The brief's "14 M-sign columns" are 14 M *tokens*. 7 of them are key ties whose sign is already H (BLA184 p1 L02/L03/L04; BLA191 p5
+L01 pos 8 665, L04 pos 4 1250, L11 pos 1 46, L12 pos 2 1018): no image can move a key tie, so they are out of scope. The image universe is the 8
+columns whose sign is M: BLA191 p5 L01 pos 9 941, L01 pos 11 386, L05 pos 10 1099, L06 pos 1 214, L07 pos 9 937, L11 pos 3 385, L12 pos 5 1185, and
+BLA186 p1 L01 pos 8 778 (token U, unkeyed: sign only).
+
+**Host.** BLA191 p5 at 4354 px was already on disk (UNA2-BLA). BLA186 p1: `https://hdl.huntington.org/iiif/2/p15150coll7:61204/info.json` (HTTP 200,
+native 8708 x 11608, listed sizes up to 4354 x 5804); fetched `full/4354,/0/default.jpg` (3.30 MB, images/BLA186_p1_w4354.jpg, manifest.json entry).
+Requests: hdl.huntington.org 2, >= 1.5 s apart, browser UA. Folder images 22 MB.
+
+**Tiles.** `python3 tools/iiif_lines.py --image <scratch>/strip5.jpg --out <scratch>/t5 --prefix p5 --debug` (p5 x 1200-4100, y 800-3650) ->
+"11 lines ... centres (region y): 128 440 657 839 1150 1541 1846 2089 2255 2502 2738" (12 lines expected, pitch irregular: not usable);
+`python3 tools/iiif_lines.py --image <scratch>/strip186.jpg --out <scratch>/t186 --prefix p186 --debug` -> "2 lines ... centres 74 234" (the cipher
+row sits between them). Per the amendment, eye-set PIL crops instead: p5 L01/L05/L06/L07/L11/L12 at page y 940/1880/2100/2340/3295/3545 +- 115,
+halves x 1230-2750 and 2550-4060; BLA186 p1 L01 y 3760-3990, halves x 1150-2550 and 2400-3750; no upscale, neutral names, kept out of the repo.
+
+**Blind read** (one Sonnet call per page, tiles only; una3bla/blind.tsv). Reader's own doubts on the universe: 386 first figure overwritten; 1099
+0/6 (alt 1699); 937 alt 935/933; 385 alt 305; 1185 alt 1183; none on 941 or 214. **Reconciliation** (this worker, same tiles, una3bla/reconcile.tsv,
+pushed 8e881ffce before scoring): compete 1 on 386 (overwritten figure) and 1099 (the small 0 carries a tick, reads plausibly as 6); compete 0 on 941,
+214 (middle stroke as 162's 1, not the ')' 7 of 275), 937 (')' = 7 rule), 385, 1185 (s-shaped 5, unlike this hand's 3) and 778.
+
+**Gate** (`python3 una3bla/score.py`, `--check` 0; una3bla/scored.tsv, summary.json). BLA191 p5: KA **40 of 41** (need 37): **PASS**; the one miss is
+L01 pos 10, committed 270, blind 230 (reader's own doubt 230/270/250). BLA186 p1: KA **6 of 7** (need 7): **FAIL**; the miss is pos 1, committed
+659, blind 69 (reader flags a stroke between 6 and 9). Nothing moved on BLA186 p1 (778 stays sign M, token U).
+Promoted on p5 (blind = committed, compete 0): sign M -> H for L01 pos 9 941, L06 pos 1 214, L07 pos 9 937, L12 pos 5 1185 (settle_image.tsv).
+**Held although the rule would promote it: L11 pos 3 385.** Its M is not a sign doubt (R8-HUNT already read the sign 385 at native size); it records
+385's split glosses (es 6 / et 4, rule 4: not settled by majority). Grading it C because a sharper image confirms the digits would settle a value
+conflict by image, so it stays M. Not promoted: 386, 1099 (compete 1).
+`python3 settle.py && python3 build_key.py && python3 ../../tools/decode_key.py .` -> "tokens 172: C 141, M 10, S 4, U 17"; `--check` exit 0;
+key.tsv unchanged. Token moves: 941 r M -> C, 937 quoyque M -> C, 1185 utile M -> C, 214 commen M -> S (its value comes from R10-HUNT2's context
+fill, grade S; only the sign moved). BLA191(a): C 115 -> 118, S 3 -> 4, M 11 -> 7, U 12 (H/C/S 122/141 = 86.5%); all three items 145/172 = 84.3%.
+Remaining M 10: 7 key ties, 385 (gloss split), 386 (overwritten figure), 1099 (0/6).
+Same caveat as amendment 3: the KA answers are 1200 px reads confirmed by context, not an independent witness.
+Report: what was found and where it was not found; novelty not classified; depth not set (a verifier's call).

@@ -824,5 +824,17 @@
     "size": "4354x5804 (native 8708x11608 per info.json)",
     "date": "1729, Aug. 8",
     "fetched": "9 Oct 2026, UNA2-BLA"
+  },
+  {
+    "item": "BLA186",
+    "page": "p1",
+    "pointer": 61204,
+    "url": "https://hdl.huntington.org/iiif/2/p15150coll7:61204/full/4354,/0/default.jpg",
+    "file": "BLA186_p1_w4354.jpg",
+    "bytes": 3304794,
+    "sha1": "01b37d3e6d28145c20d0b56d615735eff44309ae",
+    "size": "4354x5804 (native 8708x11608 per info.json)",
+    "date": "1728, Sep. 13",
+    "fetched": "9 Oct 2026, UNA3-BLA"
   }
 ]

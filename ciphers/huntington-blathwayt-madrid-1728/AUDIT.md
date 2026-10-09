@@ -750,3 +750,15 @@ higher-resolution re-read", PREREG-D3BLA2 amendment 3) read BLA191 p5 L11-L13 on
 Current counts (supersede the table above): **C 138, S 3, M 14, U 17 of 172**; mssBLA 191(a) p5: C 115, S 3, M 11, U 12 (H/C/S 83.7%); mssBLA 186
 and 184 unchanged; all three H/C/S 141/172 = 82.0% (C alone 80.2%). The depth fields in status.json (D2, depth_pct 77.3) are the verifier's to
 revisit; this worker does not set depth. SECOND-OPINIONS-QUEUE row SO-BLATHWAYT-1728's prompt carries no token counts; nothing to carry there.
+
+## propagate-revision (UNA3-BLA, 9 Oct 2026)
+
+Worker, not a verifier: no class changed. A reading revision after this file was written, carried here per rule 10. UNA3-BLA (NOTES.md "UNA3-BLA
+hi-res re-read of the remaining sign-M columns", PREREG-D3BLA2 amendment 4) read the 8 remaining sign-M columns on the Huntington IIIF 4354 px copies;
+BLA191 p5 known-answer gate 40/41 PASS, BLA186 p1 6/7 FAIL (nothing moved there). Sign M -> H on BLA191 p5 941 (r), 937 (quoyque), 1185 (utile),
+all M -> C, and 214 (commen) M -> S (value from R10-HUNT2's context fill); 385 held at M (gloss split es/et, rule 4); key.tsv unchanged;
+`decode_key.py --check` exit 0. Current counts (supersede the UNA2-BLA paragraph above): **C 141, S 4, M 10, U 17 of 172**; mssBLA 191(a): C 118,
+S 4, M 7, U 12 (H/C/S 86.5%); mssBLA 186 (C 20, U 4) and 184 (C 3, M 3, U 1) unchanged; all three H/C/S 145/172 = 84.3%. The depth fields in
+status.json (D2, depth_pct 77.3) are the verifier's to revisit (DV-BLA); this worker does not set depth. SECOND-OPINIONS-QUEUE row
+SO-BLATHWAYT-1728's prompt carries no token counts, but its outcome cell does (PROP-HUNT's "C 130, S 3, M 22"; UNA2-BLA missed this): the
+current counts were appended to that cell, prompt not edited.
