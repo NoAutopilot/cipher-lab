@@ -150,6 +150,25 @@ def test_stability_prior():
     assert sorted(sh.values()) == sorted(st.values()) and set(sh) == set(st)
 
 
+def test_probs_top3_replaces_hml():
+    """TXE2-CONF: --probs uses the reader's own top-3 distribution; a row without top3 keeps the H/M/L rule; '-' = one reader."""
+    assert K.parse_top3({"top3": "T50:0.7, T92:0.2,T18:0.1"}) == {"T50": 0.7, "T92": 0.2, "T18": 0.1}
+    assert K.parse_top3({"top3": ""}) == {} and K.parse_top3({}) == {}
+    row = {"sign_id": "T50", "alt": "T92", "conf": "H", "top3": "T50:0.6,T92:0.3,T18:0.1"}
+    m = K.reader_mass(row, {}, probs=True)
+    assert abs(m["T50"] - 0.6) < 1e-9 and abs(m["T18"] - 0.1) < 1e-9
+    assert K.reader_mass(row, {}) == K.reader_mass({k: v for k, v in row.items() if k != "top3"}, {})  # off: unchanged
+    with tempfile.TemporaryDirectory() as d:
+        pa = os.path.join(d, "a.tsv")
+        with open(pa, "w") as f:
+            f.write("passage\tpos\tsign_id\talt\tconf\ttop3\tnote\n")
+            f.write("L01\t1\tT50\t\tM\tT50:0.5,T92:0.4,T18:0.1\t\n")
+            f.write("L01\t2\tT11\t\tH\t\t\n")
+        rows, st = K.from_passes(pa, None, None, {}, probs=True)
+        P = {(pos, c): p for _, pos, c, p in rows}
+        assert abs(P[(1, "T92")] - 0.4) < 1e-9 and P[(2, "T11")] == 1.0 and st["positions"] == 2
+
+
 if __name__ == "__main__":
     for n, f in list(globals().items()):
         if n.startswith("test_"):

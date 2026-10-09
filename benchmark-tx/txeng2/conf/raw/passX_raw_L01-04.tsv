@@ -1,0 +1,109 @@
+passage	pos	sign_id	alt	conf	top3	note
+L01	1	T18	T98	M	T18:0.70,T98:0.25,T36:0.05	phi, loop crossed by stem; line start
+L01	2	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar
+L01	3	T51	T65	M	T51:0.65,T65:0.25,T95:0.10	P-shape barred, tall stem
+L01	4	T19		H	T19:0.93,T33:0.04,T42:0.03	pi
+L01	5	T83		H	T83:0.90,T24:0.06,T81:0.04	reversed-e joined to e
+L01	6	T52	T64	M	T52:0.80,T64:0.12,T38:0.08	m with descending hook
+L01	7	T85		H	T85:0.92,T78:0.05,T60:0.03	plain cross
+L01	8	T51	T65	M	T51:0.65,T65:0.25,T95:0.10	P-shape barred, tall stem
+L01	9	T53		H	T53:0.94,T50:0.03,T92:0.03	infinity loop
+L01	10	T45		H	T45:0.85,T90:0.10,T88:0.05	loop with stem up (b-shape)
+L01	11	T38	T64	M	T38:0.75,T64:0.20,T52:0.05	looped m
+L01	12	T86	T60	M	T86:0.60,T60:0.35,T78:0.05	two verticals, single/short bars
+L01	13	T26		M	T26:0.75,T76:0.15,T27:0.10	9 with j-tail
+L01	14	T96		H	T96:0.88,T27:0.07,T66:0.05	looped l with tick
+L01	15	T60	T86	M	T60:0.70,T86:0.27,T78:0.03	sharp sign, two bars
+L01	16	T36	T18	M	T36:0.75,T18:0.15,T98:0.10	ring on stem
+L01	17	T85		H	T85:0.92,T78:0.05,T60:0.03	plain cross
+L01	18	T54		H	T54:0.92,T58:0.05,T80:0.03	R shape
+L01	19	T80		H	T80:0.90,T58:0.07,T54:0.03	D shape
+L01	20	T60	T86	M	T60:0.70,T86:0.27,T78:0.03	sharp sign, two bars
+L01	21	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar
+L01	22	T83		H	T83:0.90,T24:0.06,T81:0.04	reversed-e joined to e
+L01	23	T50	T92	M	T50:0.65,T92:0.30,T53:0.05	omega with curled left
+L01	24	T25		H	T25:0.88,T54:0.07,T63:0.05	lambda
+L01	25	T85		H	T85:0.92,T78:0.05,T60:0.03	plain cross
+L01	26	T13	T64	M	T13:0.70,T64:0.25,T38:0.05	m with mark above
+L01	27	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar; line end
+L02	1	T33		H	T33:0.92,T19:0.05,T55:0.03	inverted pi on base; line start
+L02	2	T19		H	T19:0.93,T33:0.04,T42:0.03	pi
+L02	3	T58		H	T58:0.92,T80:0.06,T46:0.02	B
+L02	4	T53		H	T53:0.94,T50:0.03,T92:0.03	infinity loop
+L02	5	T85		H	T85:0.92,T78:0.05,T60:0.03	plain cross
+L02	6	T63		H	T63:0.93,T25:0.05,T70:0.02	V
+L02	7	T25		H	T25:0.88,T54:0.07,T63:0.05	lambda
+L02	8	T42		H	T42:0.88,T19:0.08,T49:0.04	T with hook top right
+L02	9	T49		M	T49:0.85,T57:0.10,T42:0.05	box on stem
+L02	10	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar
+L02	11	T98	T18	M	T98:0.70,T18:0.25,T36:0.05	tall stem through small loop
+L02	12	T36	T18	M	T36:0.75,T18:0.15,T98:0.10	ring on stem
+L02	13	T19		H	T19:0.93,T33:0.04,T42:0.03	pi
+L02	14	T70		H	T70:0.95,T63:0.03,T57:0.02	triangle
+L02	15	T60	T86	M	T60:0.70,T86:0.27,T78:0.03	sharp sign, two bars
+L02	16	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar
+L02	17	T98	T18	M	T98:0.70,T18:0.25,T36:0.05	tall stem through small loop
+L02	18	T33		H	T33:0.92,T19:0.05,T55:0.03	inverted pi on base
+L02	19	T81		H	T81:0.88,T83:0.08,T24:0.04	x shape
+L02	20	T96		H	T96:0.88,T27:0.07,T66:0.05	looped l with tick
+L02	21	T53		H	T53:0.94,T50:0.03,T92:0.03	infinity loop
+L02	22	T19		H	T19:0.93,T33:0.04,T42:0.03	pi
+L02	23	T64	T38	M	T64:0.70,T38:0.20,T13:0.10	plain m
+L02	24	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar
+L02	25	T33		H	T33:0.92,T19:0.05,T55:0.03	inverted pi on base
+L02	26	T53		H	T53:0.94,T50:0.03,T92:0.03	infinity loop
+L02	27	T19		H	T19:0.93,T33:0.04,T42:0.03	pi; line end
+L03	1	T88		H	T88:0.88,T10:0.07,T45:0.05	lone o; line start
+L03	2	T33		H	T33:0.92,T19:0.05,T55:0.03	inverted pi on base
+L03	3	T86	T60	M	T86:0.60,T60:0.35,T78:0.05	two verticals, single/short bars
+L03	4	T50	T92	M	T50:0.65,T92:0.30,T53:0.05	omega with curled left
+L03	5	T53		H	T53:0.94,T50:0.03,T92:0.03	infinity loop
+L03	6	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar
+L03	7	T76	T26	M	T76:0.75,T26:0.20,T89:0.05	g / 9 with tail down
+L03	8	T19		H	T19:0.93,T33:0.04,T42:0.03	pi
+L03	9	T33		H	T33:0.92,T19:0.05,T55:0.03	inverted pi on base
+L03	10	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar
+L03	11	T98	T18	M	T98:0.70,T18:0.25,T36:0.05	tall stem through small loop
+L03	12	T25		H	T25:0.88,T54:0.07,T63:0.05	lambda
+L03	13	T45		H	T45:0.85,T90:0.10,T88:0.05	loop with stem up (b-shape)
+L03	14	T83		H	T83:0.90,T24:0.06,T81:0.04	reversed-e joined to e
+L03	15	T25		H	T25:0.88,T54:0.07,T63:0.05	lambda
+L03	16	T53		H	T53:0.94,T50:0.03,T92:0.03	infinity loop
+L03	17	T19		H	T19:0.93,T33:0.04,T42:0.03	pi
+L03	18	T97		M	T97:0.85,T50:0.10,T89:0.05	S-like with loop
+L03	19	T60	T86	M	T60:0.70,T86:0.27,T78:0.03	sharp sign, two bars
+L03	20	T85		H	T85:0.92,T78:0.05,T60:0.03	plain cross
+L03	21	T53		H	T53:0.94,T50:0.03,T92:0.03	infinity loop
+L03	22	T19		H	T19:0.93,T33:0.04,T42:0.03	pi
+L03	23	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar
+L03	24	T11	T15	M	T11:0.55,T15:0.30,T46:0.15	85-like digits, no tick seen
+L03	25	T60	T86	M	T60:0.70,T86:0.27,T78:0.03	sharp sign, two bars
+L03	26	T86	T60	M	T86:0.60,T60:0.35,T78:0.05	two verticals, single/short bars; line end
+L04	1	T90	T84	M	T90:0.80,T84:0.12,T45:0.08	loop with cross on stem above; line start
+L04	2	T25		H	T25:0.88,T54:0.07,T63:0.05	lambda
+L04	3	T33		H	T33:0.92,T19:0.05,T55:0.03	inverted pi on base
+L04	4	T50	T92	M	T50:0.65,T92:0.30,T53:0.05	omega with curled left
+L04	5	T86	T60	M	T86:0.60,T60:0.35,T78:0.05	two verticals, single/short bars
+L04	6	T76	T26	M	T76:0.75,T26:0.20,T89:0.05	g / 9 with tail down
+L04	7	T45		H	T45:0.85,T90:0.10,T88:0.05	loop with stem up (b-shape)
+L04	8	T86	T60	M	T86:0.60,T60:0.35,T78:0.05	two verticals, single/short bars
+L04	9	T90	T84	M	T90:0.80,T84:0.12,T45:0.08	loop with cross on stem above
+L04	10	T37		H	T37:0.92,T10:0.05,T29:0.03	theta with long bar
+L04	11	T97		M	T97:0.85,T50:0.10,T89:0.05	S-like with loop
+L04	12	T53		H	T53:0.94,T50:0.03,T92:0.03	infinity loop
+L04	13	T96		H	T96:0.88,T27:0.07,T66:0.05	looped l with tick
+L04	14	T65	T51	M	T65:0.60,T51:0.30,T18:0.10	phi with bar below
+L04	15	T19		H	T19:0.93,T33:0.04,T42:0.03	pi
+L04	16	T18	T98	M	T18:0.70,T98:0.25,T36:0.05	phi, loop crossed by stem
+L04	17	T96		H	T96:0.88,T27:0.07,T66:0.05	looped l with tick
+L04	18	T54		H	T54:0.92,T58:0.05,T80:0.03	R shape
+L04	19	T19		H	T19:0.93,T33:0.04,T42:0.03	pi
+L04	20	T18	T98	M	T18:0.70,T98:0.25,T36:0.05	phi, loop crossed by stem
+L04	21	T52	T64	M	T52:0.80,T64:0.12,T38:0.08	m with descending hook
+L04	22	T89		M	T89:0.82,T45:0.10,T76:0.08	loop-stem with hook (b/9)
+L04	23	T86	T60	M	T86:0.60,T60:0.35,T78:0.05	two verticals, single/short bars
+L04	24	T57		H	T57:0.88,T49:0.08,T70:0.04	diamond on stem
+L04	25	T78	T86	L	T78:0.45,T86:0.40,T60:0.15	H-like with bar extending left
+L04	26	T60	T86	M	T60:0.70,T86:0.27,T78:0.03	sharp sign, two bars
+L04	27	T18	T98	M	T18:0.70,T98:0.25,T36:0.05	phi, loop crossed by stem
+L04	28	T52	T64	M	T52:0.80,T64:0.12,T38:0.08	m with descending hook; line end

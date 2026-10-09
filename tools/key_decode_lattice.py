@@ -23,7 +23,7 @@ Built-in controls (CLAUDE.md rule 3):
     where the real key ranks 1 among the shuffles.
 
 Subcommands
-  from-passes  passA.tsv passB.tsv [--ref ciphertext.tsv] [--confusion confusion.tsv] --out topk.tsv
+  from-passes  passA.tsv passB.tsv|- [--ref ciphertext.tsv] [--confusion confusion.tsv] [--probs] --out topk.tsv
                Synthesizes a top-k TSV (line, pos, cand, score) from two blind line passes (columns passage, pos, sign_id,
                alt, conf). Pre-registered rule (fixed before any known-answer run): reader weight H 1.0 / M 0.6 / L 0.3
                (blank 0.6); a reader's alt gets 0.3 x weight; each read sign spreads 0.15 x weight over its top-3 confusion
@@ -166,7 +166,27 @@ def flip_mass(s, w, flip, spread):
     return {t: spread * w * v / tot for t, v in col.items()}
 
 
-def reader_mass(row, nb, alts_out=None, flip=None, spread=0.3):
+def parse_top3(row):
+    """{cell: p} from a pass row's `top3` column (`T50:0.70,T92:0.25,T18:0.05`, TXE2-CONF 9 Oct 2026), normalised;
+    {} when the column is absent, empty or unparsable."""
+    out = defaultdict(float)
+    for part in (row.get("top3") or "").split(","):
+        c, _, v = part.strip().rpartition(":")
+        try:
+            v = float(v)
+        except ValueError:
+            continue
+        if c and v > 0:
+            out[c.strip()] += v
+    t = sum(out.values())
+    return {c: v / t for c, v in out.items()} if t > 0 else {}
+
+
+def reader_mass(row, nb, alts_out=None, flip=None, spread=0.3, probs=False):
+    if probs:  # TXE2-CONF: the reader's own distribution in place of the H/M/L weight, alt and confusion spread
+        own = parse_top3(row)
+        if own:
+            return dict(own)
     out = defaultdict(float)
     s, alts, conf = split_cands(row)
     w = CONF_W.get(conf, 0.6)
@@ -224,8 +244,9 @@ def short(line):
     return line.split("_")[-1]
 
 
-def from_passes(pa, pb, ref, nb, keep_alts=False, matrix=None, spread=0.3):
-    A, B = read_pass(pa), read_pass(pb)
+def from_passes(pa, pb, ref, nb, keep_alts=False, matrix=None, spread=0.3, probs=False):
+    """pb may be None (one reader). probs=True: rows with a `top3` column contribute that distribution (TXE2-CONF)."""
+    A, B = read_pass(pa), (read_pass(pb) if pb else {})
     matrix = matrix or {}
     flips = [matrix.get("A") or matrix.get(""), matrix.get("B") or matrix.get("")]
     rows = []
@@ -246,7 +267,7 @@ def from_passes(pa, pb, ref, nb, keep_alts=False, matrix=None, spread=0.3):
             m = align(skel, [split_cands(r)[0] for r in prow])
             for j, r in enumerate(prow):
                 if j in m:
-                    for k, v in reader_mass(r, nb, keep[m[j]] if keep_alts else None, flip, spread).items():
+                    for k, v in reader_mass(r, nb, keep[m[j]] if keep_alts else None, flip, spread, probs).items():
                         mass[m[j]][k] += v
                     seen[m[j]] += 1
         for i, ms in enumerate(mass):
@@ -605,8 +626,8 @@ def cmd_from_passes(args):
     if args.matrix_only and not args.confusion_matrix:
         sys.exit("--matrix-only needs --confusion-matrix")
     nb = {} if args.matrix_only else read_confusion(args.confusion)
-    rows, stats = from_passes(args.passA, args.passB, args.ref, nb, args.keep_alts,
-                              read_matrix(args.confusion_matrix), args.spread)
+    rows, stats = from_passes(args.passA, None if args.passB == "-" else args.passB, args.ref, nb, args.keep_alts,
+                              read_matrix(args.confusion_matrix), args.spread, args.probs)
     if args.stability:
         st = read_stability(args.stability, args.box_pos)
         if args.stab_shuffle is not None:
@@ -621,7 +642,10 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
     f = sub.add_parser("from-passes", help="synthesize a top-k TSV from two blind passes")
-    f.add_argument("passA"); f.add_argument("passB")
+    f.add_argument("passA"); f.add_argument("passB", help="second pass, or '-' for one reader")
+    f.add_argument("--probs", action="store_true",
+                   help="TXE2-CONF: a row with a `top3` column (CELL:p,...) contributes that distribution in place of "
+                        "the H/M/L weight, alt and confusion spread; rows without it fall back to the H/M/L rule")
     f.add_argument("--ref"); f.add_argument("--confusion"); f.add_argument("--out", required=True)
     f.add_argument("--keep-alts", action="store_true",
                    help="keep every reader-written alternative (a/b? or the alt column) in the lattice, exempt from "
