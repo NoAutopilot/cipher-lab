@@ -497,3 +497,7 @@ Status unchanged: `blocked` (no image of any item on disk or online).
 Requests per host: data.htrc.illinois.edu 2 (both MongoError); no other network.
 
 Suggestions (not done, brief did not name them): (1) known-answer check of key.tsv on a 1522 sibling with ciphertext and contemporary decipherment -- Bourdeau's `targets/sanchez1522/` (MIT) if it carries a transcription of R9605 or R9613; (2) rerun (a) when the HTRC EF API is back.
+
+## SALAZ-HTRC (9 Oct 2026, 11:46-11:50 UTC by date -u; account 4, Sonnet; LANE DEFAULT-account-4-20261009-1051 job J11)
+
+Status unchanged. Part (a) of SALAZ-KEY, rerun: `python3 tools/htrc_ef_headwords.py osu.32435013919725 --words cifra,cifras,salazar,sanchez,sánchez,soria,mirandola,descifrar,descifrado,cifrada,cifrado --target '' --json` at 11:46 UTC and, after a 60 s pause, once more at 11:48 UTC: both returned the same `reactivemongo ... PrimaryUnavailableException: MongoError['No primary node is available! (Supervisor-1/ef)']` from data.htrc.illinois.edu (a server-side database outage, as at 11:04 and 11:07). Retry spent per the brief; host stopped for this session. No page numbers located. Search result for the log, not a verdict on the volume. Requests: data.htrc.illinois.edu 2 (both MongoError). Next: rerun the same command in a later session once the EF API answers (~USD 0.2); the key.tsv/known-answer work does not wait on it.
