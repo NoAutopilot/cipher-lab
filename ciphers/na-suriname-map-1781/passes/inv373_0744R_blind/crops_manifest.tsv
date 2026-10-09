@@ -1,0 +1,7 @@
+# SUR-0744R crops of NA 1.05.03 inv. 373 scan 0744 RIGHT page (crops not committed: folder over 30 MB; regenerate as below)
+# IIIF base: https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/c4c77b68-a6e2-4472-9b90-d92694b7088c.jp2 (native 4970x4032)
+# region fetched: {base}/2560,100,2400,3800/full/0/default.jpg -> r744.jpg (HTTP 200, 9 Oct 2026 00:2x UTC)
+# crop command: python3 tools/iiif_lines.py --image r744.jpg --region 330,0,2070,3800 --out c --prefix p0744R --centres 112,208,275,372,432,518,590,670,747,833,899,998,1067,1157,1221,1302,1383,1468,1548,1640,1714,1808,1887,1971,2062,2146,2232,2313,2389,2462,2538,2618,2697,2771,2850,2914,2998,3079,3154,3236,3312,3399,3469,3557 --lines-per-crop 2 --debug
+# (centres from --dry-run --distance 45: 44 lines = 22 gloss+cipher pairs, gloss ABOVE its cipher line; pairing checked by eye on L01/L17/L22 and the 1200 px overview)
+crop	content
+L01-L22	one pair each: plain Dutch gloss line above, cipher line below
