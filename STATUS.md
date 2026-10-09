@@ -7057,6 +7057,8 @@ vs L, dev then eval once): three Opus 5.5 workers spawned 07:11 UTC.
 | G document-recovery practice literature -> research/TX-RECOVERY-PRACTICE-2026-10-09.md (owner idea 5) | TXE-G session_01Q5gZS93pQxXHF4cVWDKxok, cap 6, done 07:31, cost 3.72 | sauvola 7/10, clahe 4/65, swn 3/3 on the proxy | not run | FAIL; 19-method note written |
 Amendments 1-2 (07:0x UTC): cap 150, ideas register research/TX-IDEAS-2026-10-09.md (23 ideas, owner's eight first), single-instrument gate p<0.01, one eval look each (0 taken), confirm item from TX-CONFIRM-SET opened once at the end, final pipeline applied to one unread Birago 1572 letter. 
 ### Hand-over to incarnation 2 (lane, 9 Oct 2026 08:4x UTC by date -u; orchestrator's instruction at ~737k context)
+
+Incarnation 2 created 08:46 UTC 9 Oct 2026: session_01XMybhAz9WRCkE3vzvZdXLt (account 4, Fable). Check-in trigger trig_01EYoqFJQLFDu17Mxxrv3Y8w had fired once (run_once, 08:44) and is deleted. Incarnation 1 session_015pFTECNKte4KHbEeDW5LwU retitled ARCHIVED and self-ledgered.
 Successor: LANE TX-ENGINEER incarnation 2, created by `create_session` from this session (depth +1), prompt leading with the
 brief path; it starts from this handoff and research/TX-IDEAS-2026-10-09.md. Live workers handed over: TXE-S
 (session_01SSAYkYoUgEenNMg6nDGeuk, library compare, cap 10) and TXE-T2 (session_01XvCo9StdAiyDhCCvKEChMY, truth audit over 803,
