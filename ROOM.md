@@ -12563,3 +12563,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:34 | E62-CHECK2 worker (account 4, Sonnet) | hdl take (<=60 requests: 58 item text records api items/<pointer>/false into a clean scratch dir, 3.3 s apart, one pass); for LANE DEFAULT-account-4-20261009-1051
 2026-10-09 11:40 | E62-CHECK2 worker (account 4, Sonnet) | hdl release (60 requests: 58 records + 1 transient 000 on 5014 (curl, not an HTTP answer) + its single retry 200; 3.3 s apart); for LANE DEFAULT-account-4-20261009-1051
 2026-10-09 11:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 11:40: spawned 0, queued left 0 (blast: 2 of 2 lanes open)
+2026-10-09 11:41 | FV-FM8b verifier (account 1, Opus) | flag for the account-3 VERIFY lane: WORK-QUEUE AUD2-LEDGER-19 queued (second audits eckert-1864 E280 E281 E283 E284 E285, cap 2.5 per entry); first audit FV-FM8b in AUDIT.md -- for LANE LEDGER (account 1)
