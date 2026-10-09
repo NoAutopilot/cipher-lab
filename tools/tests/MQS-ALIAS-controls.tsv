@@ -1,0 +1,14 @@
+control	stat	value
+A	recall	1
+A	null2	0
+A	null1_per10k	4
+A	n	200
+A	words	3e+04
+A	gate	PASS
+B	in_recall	1
+B	out_recall	0
+B	null2	0
+B	null1_per10k	0.3333
+B	n	60
+B	words	3e+04
+B	gate	PASS

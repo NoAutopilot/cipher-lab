@@ -1,0 +1,15 @@
+# alias_cues_en.tsv (MQS-ALIAS, 9 Oct 2026). Announcement phrases that introduce a codename in English plaintext.
+# Written from general English phrasing before any control was scored (tools/tests/PREREG-MQS-ALIAS.md).
+# Columns: cue (word sequence; the name span follows it), note.
+cue	note
+we shall call	
+we will call	
+i shall call	
+shall be called	
+shall go by the name of	
+goes by the name of	
+under the name of	also ordinary usage
+by the name of	also ordinary usage: expect false flags
+hereafter called	
+henceforth called	
+to be called	

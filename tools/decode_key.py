@@ -59,6 +59,16 @@ D2 Danzay H letter codes 1/27 flagged). Controls (tools/tests/PREREG-MQS-SPECIAL
 (k=3: 9/10), NULL 6/10 (weak; Tomokiyo's Danzay nulls hidden: 1/9). A report: a flag is a candidate for an image
 check and --try, never a key edit. decode.json repeat_values / delete_values apply a settled reading of such signs.
 
+--aliases ALIAS.tsv [--alias-out F] [--alias-tsv F] / --alias-scan LANG / --alias-text FILE (9 Oct 2026, MQS-ALIAS; Lasry,
+Biermann and Tomokiyo 2023 pp.189-190, 'la Tour' = Throckmorton; Browne 1840 via sp54-maclean-1745). A shared alias.tsv
+(alias meaning grade first_use last_use evidence source; 'feigned_name' read as alias, variants 'A, or B') rendered as
+'alias [= meaning, G]' beside each codename, G the identification's own grade; token grades unchanged and the committed
+reading never written. --alias-scan flags announcement phrases (tools/data/alias_cues_<lang>.tsv) with the referent and
+name spans. Meant to catch a whole-word alias and a cue phrase in order; must NOT match inside a longer word
+('morris' in 'morrison', 'la tour' in 'la tourelle'), a short alias (< --alias-min-len letters) inside an undivided
+letter run, or a cue with its words reordered (tools/tests/test_decode_key_alias.py). Controls
+tools/tests/PREREG-MQS-ALIAS.md: --aliases controlled-only, --alias-scan weak (finds only phrasings its cue file carries).
+
 decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   ciphertext, key, exceptions, reading, tokens   file names relative to TARGET_DIR
   format        pipe | tsv | rows (default: detected)
@@ -1306,6 +1316,216 @@ def special_main(a):
     return 0
 
 
+# ---------------------------------------------------------------- aliases (MQS-ALIAS, 9 Oct 2026)
+
+ALIAS_GRADE = re.compile(r'(?<![A-Za-z])([HCSMIU])(?![A-Za-z])')
+ALIAS_VARIANTS = re.compile(r'\s*,\s*or\s+|\s*;\s*|\s+or\s+|\s*/\s*')
+ALIAS_COLUMNS = ['alias', 'meaning', 'grade', 'first_use', 'last_use', 'evidence', 'source']
+
+
+def fold_chars(text):
+    """(folded, srcs): fold_word per character (case, accents, j->i, v->u); every run of non-letters becomes one
+    space. srcs[k] is the index in text of folded character k, so a match can be mapped back to the original."""
+    out, srcs = [], []
+    for i, c in enumerate(text):
+        f = fold_word(c)
+        if f:
+            out.extend(f); srcs.extend([i] * len(f))
+        elif out and out[-1] != ' ':
+            out.append(' '); srcs.append(i)
+    return ''.join(out), srcs
+
+
+def alias_grade(cell):
+    """The identification's own grade: the last standalone H/C/S/M/I/U in the cell ('H-print, alignment I' -> I);
+    M when the cell names none."""
+    m = ALIAS_GRADE.findall(cell or '')
+    return m[-1] if m else 'M'
+
+
+def load_aliases(path):
+    """Rows of an alias table (schema: alias meaning grade first_use last_use evidence source; 'feigned_name' is read
+    as 'alias', so ciphers/sp54-maclean-1745/browne_feigned_names.tsv loads unchanged). An alias cell may list
+    variants ('Watson, or Walker'); each variant becomes its own folded pattern."""
+    header, rows = with_header(path, ('alias', 'feigned_name', 'row'))
+    ia, im, ig = col(header, 'alias', 'feigned_name'), col(header, 'meaning', 'value'), col(header, 'grade')
+    if ia is None or im is None:
+        raise SystemExit(f'aliases: {path}: needs an alias (or feigned_name) and a meaning column')
+    extra = {n: col(header, n) for n in ALIAS_COLUMNS[3:]}
+    out = []
+    for r in rows:
+        cell = lambda i: r[i].strip() if i is not None and i < len(r) else ''
+        if not cell(ia):
+            continue
+        row = dict(alias=cell(ia), meaning=cell(im), grade=alias_grade(cell(ig)),
+                   **{n: cell(i) for n, i in extra.items()})
+        row['variants'] = [v for v in (fold_chars(x)[0].strip() for x in ALIAS_VARIANTS.split(row['alias'])) if v]
+        out.append(row)
+    return out
+
+
+def find_aliases(folded, aliases, bounded=True, min_len=5):
+    """[(start, end, row, variant)] in a folded string. bounded: whole words only (an alias never matches inside a
+    longer word: 'morris' not in 'morrison'). Unbounded (a letter run with no word divisions): spaces are ignored on
+    both sides and a variant of fewer than min_len letters is not looked for (too likely by chance in a run).
+    Overlaps keep the earliest, then the longest."""
+    hits = []
+    if bounded:
+        for row in aliases:
+            for v in row['variants']:
+                for m in re.finditer(r'(?<![a-z0-9])' + re.escape(v) + r'(?![a-z0-9])', folded):
+                    hits.append((m.start(), m.end(), row, v))
+    else:
+        idx = [k for k, c in enumerate(folded) if c != ' ']
+        run = ''.join(folded[k] for k in idx)
+        for row in aliases:
+            for v in row['variants']:
+                v2 = v.replace(' ', '')
+                if len(v2) < min_len:
+                    continue
+                for m in re.finditer('(?=' + re.escape(v2) + ')', run):
+                    hits.append((idx[m.start()], idx[m.start() + len(v2) - 1] + 1, row, v))
+    hits.sort(key=lambda h: (h[0], h[0] - h[1]))
+    kept, end = [], -1
+    for h in hits:
+        if h[0] >= end:
+            kept.append(h); end = h[1]
+    return kept
+
+
+def alias_tag(row):
+    return f" [= {row['meaning']}, {row['grade']}]"
+
+
+def annotate_aliases(text, aliases, bounded=True, min_len=5):
+    """(annotated text, hits): ' [= meaning, G]' inserted after each alias occurrence; the text is otherwise as given."""
+    folded, srcs = fold_chars(text)
+    hits = find_aliases(folded, aliases, bounded, min_len)
+    out, last = [], 0
+    for s, e, row, v in hits:
+        cut = srcs[e - 1] + 1
+        out.append(text[last:cut] + alias_tag(row)); last = cut
+    return ''.join(out) + text[last:], [(srcs[s], srcs[e - 1] + 1, row, v) for s, e, row, v in hits]
+
+
+def alias_lines(recs, job):
+    """[(label, text, char_rec)] per line, a plain view for alias work: sign values run together (nulls dropped,
+    '·' for unkeyed, the first of 'a|b'), a '=word' value, a clear word and the job's word_sep as word breaks.
+    char_rec[k] is the record behind text[k] (None for a break)."""
+    uv = job.get('unkeyed_value', '?')
+    out = []
+    for L in lines_of(recs):
+        text, cr = [], []
+        def put(s, r):
+            text.extend(s); cr.extend([r] * len(s))
+        for r in L['toks']:
+            if r['kind'] == 'clear':
+                put(' ' + r['value'] + ' ', None)
+            elif r['kind'] == 'dot':
+                if job.get('word_sep') and r['sign'] == job.get('word_sep'):
+                    put(' ', None)
+            elif r['kind'] == 'sign' and not r.get('null'):
+                v = r['value'].split('|')[0]
+                if v == uv and r['grade'] == job.get('unkeyed_grade', 'U'):
+                    put('·', r)
+                elif v.startswith('='):
+                    put(' ', None); put(v[1:], r); put(' ', None)
+                else:
+                    put(v, r)
+        out.append((L['label'], ''.join(text), cr))
+    return out
+
+
+def load_alias_cues(lang):
+    """Folded cue word sequences from tools/data/alias_cues_<lang>.tsv (or a path)."""
+    path = lang if os.path.exists(lang) else os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data',
+                                                          f'alias_cues_{lang}.tsv')
+    header, rows = with_header(path, ('cue',))
+    return [c for c in (fold_chars(r[0])[0].strip() for r in rows if r and r[0].strip()) if c]
+
+
+def scan_announcements(folded, cues, bounded=True, before=4, after=4):
+    """[(start, end, cue, referent, name)]: each cue in the folded text, the `before` words ahead of it (the
+    referent: 'monsieur de throckmorton qui') and the `after` words following it (the name span: 'la tour'). bounded:
+    the cue matches whole words in order; unbounded: letters with spaces ignored, and the spans are 16 / 12 letters.
+    Longer cues win over a cue they contain at the same place. A flag is for a person to read, never an alias row."""
+    hits = []
+    if bounded:
+        for c in cues:
+            for m in re.finditer(r'(?<![a-z0-9])' + re.escape(c) + r'(?![a-z0-9])', folded):
+                ref = ' '.join(folded[:m.start()].split()[-before:])
+                name = ' '.join(folded[m.end():].split()[:after])
+                hits.append((m.start(), m.end(), c, ref, name))
+    else:
+        idx = [k for k, ch in enumerate(folded) if ch != ' ']
+        run = ''.join(folded[k] for k in idx)
+        for c in cues:
+            c2 = c.replace(' ', '')
+            for m in re.finditer('(?=' + re.escape(c2) + ')', run):
+                s, e = m.start(), m.start() + len(c2)
+                hits.append((idx[s], idx[e - 1] + 1, c, run[max(0, s - 16):s], run[e:e + 12]))
+    hits.sort(key=lambda h: (h[0], h[0] - h[1]))
+    kept, end = [], -1
+    for h in hits:
+        if h[0] >= end:
+            kept.append(h); end = h[1]
+        elif h[1] <= end:
+            continue
+    return kept
+
+
+def alias_main(a):
+    """--aliases / --alias-scan on a target's reading (each decode.json job) or, with --alias-text, on a plain text.
+    Writes only --alias-out / --alias-tsv (or stdout); never the committed reading or token file."""
+    aliases = load_aliases(a.aliases) if a.aliases else []
+    cues = load_alias_cues(a.alias_scan) if a.alias_scan else []
+    lines = []  # (job name, label, text, char_rec, bounded)
+    if a.alias_text:
+        for k, l in enumerate(open(a.alias_text, encoding='utf-8').read().rstrip('\n').split('\n'), 1):
+            lines.append(('text', str(k), l, None, True))
+    else:
+        for job in load_config(a.target, a):
+            recs, ct = graded_recs(a.target, job)
+            for label, text, cr in alias_lines(recs, job):
+                lines.append((ct, label, text, cr, bool(job.get('word_sep'))))
+    out, rows = [], []
+    for name, label, text, cr, bounded in lines:
+        if a.alias_unbounded:
+            bounded = False
+        if aliases:
+            ann, hits = annotate_aliases(text, aliases, bounded, a.alias_min_len)
+            out.append(ann if a.alias_text else f'{label}\t{ann}')
+            for s, e, row, v in hits:
+                recs_hit = []
+                for k in range(s, e):
+                    if cr and cr[k] is not None and (not recs_hit or recs_hit[-1] is not cr[k]):
+                        recs_hit.append(cr[k])
+                grades = ''.join(r['grade'] for r in recs_hit)  # one letter per token, as decoded
+                rows.append(['alias', name, label, text[s:e], row['alias'], row['meaning'], row['grade'],
+                             grades, row.get('evidence', '')])
+        if cues:
+            folded, srcs = fold_chars(text)
+            for s, e, c, ref, nm in scan_announcements(folded, cues, bounded):
+                rows.append(['announce', name, label, text[srcs[s]:srcs[e - 1] + 1], c, ref, nm, '', ''])
+    if aliases:
+        body = '\n'.join(out) + '\n'
+        if a.alias_out:
+            open(a.alias_out, 'w', encoding='utf-8').write(body)
+        else:
+            sys.stdout.write(body)
+    head = ['kind', 'source', 'line', 'matched', 'alias_or_cue', 'meaning_or_referent', 'grade_or_name',
+            'token_grades', 'evidence']
+    tsv = '\n'.join('\t'.join(r) for r in [head] + rows) + '\n'
+    if a.alias_tsv:
+        open(a.alias_tsv, 'w', encoding='utf-8').write(tsv)
+    elif cues or not aliases:
+        sys.stdout.write(tsv)
+    n_a = sum(r[0] == 'alias' for r in rows)
+    print(f'aliases: {n_a} alias hits, {len(rows) - n_a} announcement flags (rendering only; token grades unchanged)',
+          file=sys.stderr)
+    return 0
+
+
 def load_config(target, a):
     if a.config or (os.path.exists(os.path.join(target, 'decode.json')) and not a.ciphertext):
         cfg = json.load(open(a.config or os.path.join(target, 'decode.json'), encoding='utf-8'))
@@ -1411,7 +1631,22 @@ def main(argv=None):
     ap.add_argument('--codes', help='with --special-scan: only these codes, comma-separated')
     ap.add_argument('--min-n', type=int, default=3, help='with --special-scan: codes with at least N occurrences (3)')
     ap.add_argument('--special-tsv', help='with --special-scan: also write the rows to this TSV file')
+    ap.add_argument('--aliases', metavar='ALIAS.tsv', help='render the reading with "alias [= meaning, G]" after each '
+                    'codename in this table (alias.tsv schema; feigned_name read as alias); writes --alias-out or stdout, '
+                    'never the committed reading; token grades unchanged (MQS-ALIAS)')
+    ap.add_argument('--alias-scan', metavar='LANG', help='flag announcement phrases ("qui s\'apellera entre nous X") '
+                    'from tools/data/alias_cues_LANG.tsv (fr, en, it, es) or a cue file path (MQS-ALIAS)')
+    ap.add_argument('--alias-text', metavar='FILE', help='with --aliases/--alias-scan: work on this plain text instead '
+                    'of the target decode (TARGET is then ignored; pass -)')
+    ap.add_argument('--alias-out', help='with --aliases: write the annotated reading here')
+    ap.add_argument('--alias-tsv', help='with --aliases/--alias-scan: write the hit and flag rows here')
+    ap.add_argument('--alias-min-len', type=int, default=5, help='letters an alias needs to be looked for inside an '
+                    'unbounded letter run (default 5)')
+    ap.add_argument('--alias-unbounded', action='store_true', help='treat every line as one letter run (no word '
+                    'divisions) even when the job has word_sep or the text has spaces')
     a = ap.parse_args(argv)
+    if a.aliases or a.alias_scan:
+        return alias_main(a)
     if a.special_scan:
         if a.nulls == 100:
             a.nulls = 50

@@ -1,0 +1,21 @@
+# alias_cues_fr.tsv (MQS-ALIAS, 9 Oct 2026). Announcement phrases that introduce a codename in the plaintext ("qui
+# s'apellera entre nous la Tour": Lasry, Biermann and Tomokiyo 2023 pp.189-190). Written from general French phrasing
+# before any control was scored (tools/tests/PREREG-MQS-ALIAS.md); the PREREG's out-of-list phrasings are deliberately
+# absent. Matched on folded words (fold_word: case, accents, j->i, v->u; apostrophes split words).
+# Columns: cue (word sequence; the name span follows it), note.
+cue	note
+s apellera entre nous	period spelling, Mary Stuart corpus
+s appellera entre nous	modern spelling
+s apelera entre nous	single p, single l
+s appelera entre nous	single l
+s appellera	without 'entre nous'
+s apellera	without 'entre nous'
+nous appellerons	
+nous apellerons	
+nous nommerons	
+nous nomerons	
+sous le nom de	also ordinary usage: expect false flags
+sera appelle	
+sera nomme	
+appelle entre nous	
+nomme entre nous	
