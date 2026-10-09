@@ -591,6 +591,19 @@ def office_spans(c):
 def comention_counts(pool, index_kept, d):
     """Weighted mentions of each candidate's names in the unmasked edition text (weights by date proximity)."""
     out = {}
+    ck = (id(index_kept), len(index_kept), d)
+    if _MERGED.get('key') == ck:
+        folded = _MERGED['val']
+    else:
+        folded = _merge_index(index_kept, d)
+        _MERGED.update(key=ck, val=folded)
+    return _count_names(pool, folded, out)
+
+
+_MERGED = {}
+
+
+def _merge_index(index_kept, d):
     folded = []
     for e in index_kept:
         y = year(e.get('date', ''))
@@ -601,7 +614,10 @@ def comention_counts(pool, index_kept, d):
     byw = defaultdict(Counter)  # one merged counter per date weight (thousands of index pages stay fast)
     for w, cnt in folded:
         byw[w].update(cnt)
-    folded = list(byw.items())
+    return list(byw.items())
+
+
+def _count_names(pool, folded, out):
     for c in pool:
         names = {fold(n) for n in cand_names(c) if len(fold(n)) >= 4}
         names |= {fold(n.split()[-1]) for n in cand_names(c) if ' ' in n and len(fold(n.split()[-1])) >= 5}
