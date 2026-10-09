@@ -1,0 +1,46 @@
+qid	line	col	kind	reader1	reader2	left_neighbours	right_neighbours	segment	crops
+Q01	L01	26	split	X_S	X_NEW	T60 T33 T85	T37 T83 T63	s3 (approx.)	f117r_L01_s1.jpg,f117r_L01_s2.jpg,f117r_L01_s3.jpg
+Q02	L02	15	split	T76	T66	T19 T60 T18	T50 T19 T60	s2 (approx.)	f117r_L02_s1.jpg,f117r_L02_s2.jpg,f117r_L02_s3.jpg
+Q03	L02	23	split	T81	X_NEW	T45 T60 T25	T37 T49 T86	s3 (approx.)	f117r_L02_s1.jpg,f117r_L02_s2.jpg,f117r_L02_s3.jpg
+Q04	L02	27	split	T98	T18	T37 T49 T86	X_NEW X_NEW	s3 (approx.)	f117r_L02_s1.jpg,f117r_L02_s2.jpg,f117r_L02_s3.jpg
+Q05	L02	28	both-L	X_NEW	X_NEW	T49 T86 T98	X_NEW	s3 (approx.)	f117r_L02_s1.jpg,f117r_L02_s2.jpg,f117r_L02_s3.jpg
+Q06	L03	5	split	T51	T95	T55 T33 T83	T33 T19 T80	s1 (approx.)	f117r_L03_s1.jpg,f117r_L03_s2.jpg,f117r_L03_s3.jpg
+Q07	L03	9	split	T81	X_NEW	T33 T19 T80	T51 T86 T70	s1 (approx.)	f117r_L03_s1.jpg,f117r_L03_s2.jpg,f117r_L03_s3.jpg
+Q08	L03	16	split	T81	X_NEW	T19 T33 T86	T60 T76 T85	s2 (approx.)	f117r_L03_s1.jpg,f117r_L03_s2.jpg,f117r_L03_s3.jpg
+Q09	L03	18	split	T76	T66	T86 T81 T60	T85 T76 T60	s2 (approx.)	f117r_L03_s1.jpg,f117r_L03_s2.jpg,f117r_L03_s3.jpg
+Q10	L03	20	split	T76	T66	T60 T76 T85	T60 T65 T18	s2 (approx.)	f117r_L03_s1.jpg,f117r_L03_s2.jpg,f117r_L03_s3.jpg
+Q11	L03	30	split	-	T27	T90 T90 T52	X_NEW T81	s3 (approx.)	f117r_L03_s1.jpg,f117r_L03_s2.jpg,f117r_L03_s3.jpg
+Q12	L03	31	both-L	X_NEW	X_NEW	T90 T52 T27	T81	s3 (approx.)	f117r_L03_s1.jpg,f117r_L03_s2.jpg,f117r_L03_s3.jpg
+Q13	L03	32	split	T81	-	T52 T27 X_NEW		s3 (approx.)	f117r_L03_s1.jpg,f117r_L03_s2.jpg,f117r_L03_s3.jpg
+Q14	L04	15	split	X_S	X_NEW	T83 T98 T19	T76 T88 T33	s2 (approx.)	f117r_L04_s1.jpg,f117r_L04_s2.jpg,f117r_L04_s3.jpg
+Q15	L04	16	split	T76	T66	T98 T19 X_S	T88 T33 T96	s2 (approx.)	f117r_L04_s1.jpg,f117r_L04_s2.jpg,f117r_L04_s3.jpg
+Q16	L05	1	split	X_S	X_NEW		T51 T33 T98	s1 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q17	L05	10	split	T76	T66	T36 T80 T64	T29 T51 X_NEW	s1 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q18	L05	12	split	T51	T95	T64 T76 T29	X_NEW T80 T60	s2 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q19	L05	13	both-L	X_NEW	X_NEW	T76 T29 T51	T80 T60 T98	s2 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q20	L05	16	split	T98	T36	X_NEW T80 T60	T45 T51 T45	s2 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q21	L05	20	split	X_NEW	T27	T45 T51 T45	T76 T83 T65	s2 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q22	L05	21	split	T76	T66	T51 T45 X_NEW	T83 T65 T19	s2 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q23	L05	29	split	-	T52	T27 T76 T98	X_NEW T45 T95	s3 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q24	L05	30	both-L	X_NEW	X_NEW	T76 T98 T52	T45 T95	s3 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q25	L05	31	split	T45	-	T98 T52 X_NEW	T95	s3 (approx.)	f117r_L05_s1.jpg,f117r_L05_s2.jpg,f117r_L05_s3.jpg
+Q26	L06	12	split	X_S	X_NEW	T53 T83 T45	T51 T33 T98	s2 (approx.)	f117r_L06_s1.jpg,f117r_L06_s2.jpg,f117r_L06_s3.jpg
+Q27	L06	16	split	T76	T66	T51 T33 T98	T60 T90 T51	s2 (approx.)	f117r_L06_s1.jpg,f117r_L06_s2.jpg,f117r_L06_s3.jpg
+Q28	L06	19	split	T51	T95	T76 T60 T90	T81 T86 T96	s2 (approx.)	f117r_L06_s1.jpg,f117r_L06_s2.jpg,f117r_L06_s3.jpg
+Q29	L06	20	split	T81	X_NEW	T60 T90 T51	T86 T96 T64	s2 (approx.)	f117r_L06_s1.jpg,f117r_L06_s2.jpg,f117r_L06_s3.jpg
+Q30	L06	27	split	T76	T66	T45 T98 T90	T80 T76 T76	s3 (approx.)	f117r_L06_s1.jpg,f117r_L06_s2.jpg,f117r_L06_s3.jpg
+Q31	L06	30	split	T76	T66	T76 T80 T76	T98	s3 (approx.)	f117r_L06_s1.jpg,f117r_L06_s2.jpg,f117r_L06_s3.jpg
+Q32	L07	10	split	T86	T60	T45 T33 T85	T53 T25 T86	s1 (approx.)	f117r_L07_s1.jpg,f117r_L07_s2.jpg,f117r_L07_s3.jpg
+Q33	L07	12	split	T25	T54	T85 T86 T53	T86 T49 T19	s2 (approx.)	f117r_L07_s1.jpg,f117r_L07_s2.jpg,f117r_L07_s3.jpg
+Q34	L07	27	split	T18	T36	T63 T37 X_NEW	T86 T81	s3 (approx.)	f117r_L07_s1.jpg,f117r_L07_s2.jpg,f117r_L07_s3.jpg
+Q35	L07	29	split	T81	X_NEW	X_NEW T18 T86		s3 (approx.)	f117r_L07_s1.jpg,f117r_L07_s2.jpg,f117r_L07_s3.jpg
+Q36	L08	16	both-L	X_NEW	X_NEW	T98 T53 T37	T37 T25 T83	s2 (approx.)	f117r_L08_s1.jpg,f117r_L08_s2.jpg,f117r_L08_s3.jpg
+Q37	L08	29	split	-	X_NEW	T45 T92 T53		s3 (approx.)	f117r_L08_s1.jpg,f117r_L08_s2.jpg,f117r_L08_s3.jpg
+Q38	L09	1	both-L	X_NEW	X_NEW		T45 T92 T55	s1 (approx.)	f117r_L09_s1.jpg,f117r_L09_s2.jpg,f117r_L09_s3.jpg
+Q39	L09	3	split	T92	T50	X_NEW T45	T55 T80 T76	s1 (approx.)	f117r_L09_s1.jpg,f117r_L09_s2.jpg,f117r_L09_s3.jpg
+Q40	L09	17	split	T86	T60	T33 T98 T92	T54 T81 T51	s2 (approx.)	f117r_L09_s1.jpg,f117r_L09_s2.jpg,f117r_L09_s3.jpg
+Q41	L09	21	split	-	T96	T54 T81 T51	T45 T65 T85	s2 (approx.)	f117r_L09_s1.jpg,f117r_L09_s2.jpg,f117r_L09_s3.jpg
+Q42	L10	7	split	T85	T86	T57 T80 T57	X_NEW T84 T84		f117r_L10.jpg
+Q43	L10	8	both-L	X_NEW	X_NEW	T80 T57 T85	T84 T84 X_NEW		f117r_L10.jpg
+Q44	L10	9	split	-	T84	T57 T85 X_NEW	T84 X_NEW X_S		f117r_L10.jpg
+Q45	L10	12	split	X_S	-	T84 T84 X_NEW			f117r_L10.jpg

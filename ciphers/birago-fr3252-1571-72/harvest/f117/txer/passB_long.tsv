@@ -1,0 +1,281 @@
+line	pos	sign	conf	alt	note
+f117_L01	1	X_NEW	L		script H with dot at lower left; line start
+f117_L01	2	X_NEW	L		rectangle surmounted by small cross; vertical stroke from line above passes through
+f117_L01	3	X_NEW	L		rectangle with dot inside
+f117_L01	4	T54	M		R with long left tail
+f117_L01	5	T88	H		small o
+f117_L01	6	T49	H		box on stem
+f117_L01	7	T25	H		lambda
+f117_L01	8	T51	H		crossed p-stem
+f117_L01	9	T37	H		theta with bar
+f117_L01	10	T54	M		R; overlap s1/s2 read once
+f117_L01	11	X_NEW	L		empty rectangle, no stem
+f117_L01	12	T33	H		
+f117_L01	13	T45	H		stem with loop at foot
+f117_L01	14	T58	H		B
+f117_L01	15	T88	H		o
+f117_L01	16	T49	H		box on stem
+f117_L01	17	T86	M	T60	# one horizontal
+f117_L01	18	T76	H	T26	9 with tail
+f117_L01	19	X_NEW	L	T46	lone 8
+f117_L01	20	T90	M		circle with cross on top
+f117_L01	21	T98	H		phi; overlap s2/s3 read once
+f117_L01	22	T86	M	T60	# one horizontal
+f117_L01	23	T60	H		# two horizontals
+f117_L01	24	T33	H		
+f117_L01	25	T85	H		plus
+f117_L01	26	X_NEW	L	T66	pound-like long s with foot
+f117_L01	27	T37	H		theta with bar
+f117_L01	28	T83	H		crossed x
+f117_L01	29	T63	M		V/gamma
+f117_L01	30	T45	H		stem with loop; flourish above from line above; line end
+f117_L02	1	T51	H		line start
+f117_L02	2	T85	M		plus; vertical stroke from line above passes through
+f117_L02	3	T86	M	T60	# slanted
+f117_L02	4	T60	H		
+f117_L02	5	T25	H		lambda
+f117_L02	6	T76	M	T26	9 with long tail
+f117_L02	7	T65	H		
+f117_L02	8	T45	H		
+f117_L02	9	T60	M	T86	
+f117_L02	10	T53	H		infinity
+f117_L02	11	T80	H		D; overlap s1/s2 read once
+f117_L02	12	T19	H		pi
+f117_L02	13	T60	H		
+f117_L02	14	T18	M	T36	circle with crossbar and foot
+f117_L02	15	T66	M	T89	q shape with foot
+f117_L02	16	T50	H		omega with S
+f117_L02	17	T19	H		pi
+f117_L02	18	T60	H		
+f117_L02	19	T33	H		
+f117_L02	20	T45	H		
+f117_L02	21	T60	H		overlap s2/s3 read once
+f117_L02	22	T25	H		lambda
+f117_L02	23	X_NEW	L	T53	open 8 / x with loop (recurring shape)
+f117_L02	24	T37	H		
+f117_L02	25	T49	H		
+f117_L02	26	T86	M	T60	
+f117_L02	27	T18	M	T36	circle with stem and foot
+f117_L02	28	X_NEW	L	T42	4-shape with long bar
+f117_L02	29	X_NEW	L	T42	heavy 7; line end
+f117_L03	1	T90	H		line start
+f117_L03	2	T55	H		
+f117_L03	3	T33	H		
+f117_L03	4	T83	H		
+f117_L03	5	T95	M	T51	small p on stem
+f117_L03	6	T33	H		
+f117_L03	7	T19	H		
+f117_L03	8	T80	H		
+f117_L03	9	X_NEW	L	T53	open 8 / x with loop
+f117_L03	10	T51	H		overlap s1/s2 read once
+f117_L03	11	T86	M	T60	
+f117_L03	12	T70	M		slanted triangle
+f117_L03	13	T19	H		
+f117_L03	14	T33	H		
+f117_L03	15	T86	M		
+f117_L03	16	X_NEW	L	T53	open 8 / x with loop
+f117_L03	17	T60	H		
+f117_L03	18	T66	M		q with foot
+f117_L03	19	T85	M		small cross with hook
+f117_L03	20	T66	M		q with foot
+f117_L03	21	T60	M		# ; overlap s2/s3 read once; thin vertical ruling after it ignored
+f117_L03	22	T65	H		
+f117_L03	23	T18	M	T36	circle with stem and foot
+f117_L03	24	T45	H		
+f117_L03	25	X_NEW	L	T46	lone 8
+f117_L03	26	X_S	M	T27	plain s
+f117_L03	27	T90	M		cross over heavy loop
+f117_L03	28	T90	H		
+f117_L03	29	T52	H		
+f117_L03	30	T27	M		s with loop top
+f117_L03	31	X_NEW	L	T53	open 8 / x with loop; line end
+f117_L04	1	T50	H		line start
+f117_L04	2	T45	H		
+f117_L04	3	T88	H		
+f117_L04	4	T33	H		
+f117_L04	5	T80	H		
+f117_L04	6	T51	H		
+f117_L04	7	T86	M	T60	
+f117_L04	8	T92	H		omega
+f117_L04	9	T65	H		
+f117_L04	10	T90	H		overlap s1/s2 read once
+f117_L04	11	T45	H		
+f117_L04	12	T83	H		
+f117_L04	13	T98	H		
+f117_L04	14	T19	M		pi, curly
+f117_L04	15	X_NEW	L	T66	pound-like long s with foot; sup o and dot
+f117_L04	16	T66	M		q
+f117_L04	17	T88	H		
+f117_L04	18	T33	H		
+f117_L04	19	T96	H		
+f117_L04	20	T98	H		
+f117_L04	21	T45	H		overlap s2/s3 read once
+f117_L04	22	T83	H		
+f117_L04	23	T86	M		
+f117_L04	24	T60	H		
+f117_L04	25	T18	M	T36	circle with crossbar and foot
+f117_L04	26	T83	H		
+f117_L04	27	T19	H		
+f117_L04	28	T80	H		
+f117_L04	29	T53	H		line end
+f117_L05	1	X_NEW	L	T66	pound-like long s with foot; line start
+f117_L05	2	T51	H		
+f117_L05	3	T33	H		
+f117_L05	4	T98	H		
+f117_L05	5	T24	M		plain epsilon
+f117_L05	6	T37	H		
+f117_L05	7	T36	H		
+f117_L05	8	T80	H		
+f117_L05	9	T64	H		sup a, dot
+f117_L05	10	T66	M		q
+f117_L05	11	T29	H		overlap s1/s2 read once
+f117_L05	12	T95	M	T51	
+f117_L05	13	X_NEW	L	T45	d with blob at top (recurring)
+f117_L05	14	T80	H		
+f117_L05	15	T60	H		
+f117_L05	16	T36	M	T98	circle with stem below
+f117_L05	17	T45	H		
+f117_L05	18	T51	H		
+f117_L05	19	T45	H		
+f117_L05	20	T27	H		s with loop top
+f117_L05	21	T66	M		q
+f117_L05	22	T83	H		overlap s2/s3 read once
+f117_L05	23	T65	H		
+f117_L05	24	T19	H		pi
+f117_L05	25	T33	H		
+f117_L05	26	T27	M	T57	large s with loop top, swash foot
+f117_L05	27	T76	H		
+f117_L05	28	T98	H		
+f117_L05	29	T52	L		y-like with tail, smudged
+f117_L05	30	X_NEW	L	T45	stem with loop at top and foot (8 on stem)
+f117_L05	31	T95	M		p with foot; line end
+f117_L06	1	T98	H		line start
+f117_L06	2	T80	H		
+f117_L06	3	T19	H		
+f117_L06	4	T60	H		
+f117_L06	5	T98	H		
+f117_L06	6	T63	H		
+f117_L06	7	T45	H		
+f117_L06	8	T92	M	T50	
+f117_L06	9	T53	H		
+f117_L06	10	T83	H		overlap s1/s2 read once
+f117_L06	11	T45	H		
+f117_L06	12	X_NEW	L	T66	pound-like long s with foot
+f117_L06	13	T51	H		
+f117_L06	14	T33	H		
+f117_L06	15	T98	H		
+f117_L06	16	T66	M		q heavy foot
+f117_L06	17	T60	H		
+f117_L06	18	T90	H		
+f117_L06	19	T95	H		
+f117_L06	20	X_NEW	L	T53	open 8 / x with loop
+f117_L06	21	T86	M		
+f117_L06	22	T96	M		overlap s2/s3 read once
+f117_L06	23	T64	H		sup a, dot
+f117_L06	24	T45	H		
+f117_L06	25	T98	H		
+f117_L06	26	T90	M		interlinear swash above ignored
+f117_L06	27	T66	M		
+f117_L06	28	T80	M		
+f117_L06	29	T76	H		
+f117_L06	30	T66	M		
+f117_L06	31	T98	L	T18	ink blot over loop; line end
+f117_L07	1	T88	H		line start
+f117_L07	2	T33	H		
+f117_L07	3	T45	H		
+f117_L07	4	T36	H		
+f117_L07	5	X_NEW	L	T81	X with extra parallel slash
+f117_L07	6	T63	H		
+f117_L07	7	T45	H		
+f117_L07	8	T33	H		
+f117_L07	9	T85	H		
+f117_L07	10	T60	M	T86	overlap s1/s2 read once
+f117_L07	11	T53	H		
+f117_L07	12	T54	M		R with loop
+f117_L07	13	T86	M		
+f117_L07	14	T49	H		
+f117_L07	15	T19	H		
+f117_L07	16	T33	H		
+f117_L07	17	T92	M	T50	
+f117_L07	18	T98	H		
+f117_L07	19	T49	H		
+f117_L07	20	X_K	H		capital K; overlap s2/s3 read once
+f117_L07	21	T51	H		
+f117_L07	22	T80	H		
+f117_L07	23	T86	M		
+f117_L07	24	T63	H		
+f117_L07	25	T37	H		
+f117_L07	26	X_NEW	L	T81	X with extra parallel slash
+f117_L07	27	T36	M	T18	filled loop on stem
+f117_L07	28	T86	M		
+f117_L07	29	X_NEW	L	T53	open 8 / x with loop; line end
+f117_L08	1	T29	H		line start
+f117_L08	2	X_EQ	H		=
+f117_L08	3	T85	H		
+f117_L08	4	T33	H		
+f117_L08	5	T19	H		
+f117_L08	6	T83	H		
+f117_L08	7	T80	H		
+f117_L08	8	T98	H		
+f117_L08	9	T45	H		
+f117_L08	10	T83	H		overlap s1/s2 read once
+f117_L08	11	T50	H		
+f117_L08	12	T45	H		
+f117_L08	13	T98	H		
+f117_L08	14	T53	H		
+f117_L08	15	T37	H		
+f117_L08	16	X_NEW	L	T45	d with blob at top
+f117_L08	17	T37	H		
+f117_L08	18	T25	H		
+f117_L08	19	T83	H		
+f117_L08	20	T45	H		overlap s2/s3 read once
+f117_L08	21	T98	H		
+f117_L08	22	T80	M		
+f117_L08	23	T51	H		
+f117_L08	24	T45	H		
+f117_L08	25	T76	M		
+f117_L08	26	T45	H		
+f117_L08	27	T92	M	T50	
+f117_L08	28	T53	H		
+f117_L08	29	X_NEW	L		lone dot, maybe punctuation; line end
+f117_L09	1	X_NEW	L	T78	cross with o attached right; line start
+f117_L09	2	T45	H		
+f117_L09	3	T50	M	T92	
+f117_L09	4	T55	H		
+f117_L09	5	T80	M		
+f117_L09	6	T76	M	T26	
+f117_L09	7	T70	H		
+f117_L09	8	T29	H		
+f117_L09	9	T98	H		
+f117_L09	10	T80	H		
+f117_L09	11	T51	H		overlap s1/s2 read once
+f117_L09	12	T49	H		
+f117_L09	13	T19	H		
+f117_L09	14	T33	H		
+f117_L09	15	T98	H		
+f117_L09	16	T92	M	T50	
+f117_L09	17	T60	M	T86	
+f117_L09	18	T54	H		
+f117_L09	19	T81	H		
+f117_L09	20	T51	H		
+f117_L09	21	T96	L	T24	overlap s2/s3 read once, partly cut
+f117_L09	22	T45	H		
+f117_L09	23	T65	H		
+f117_L09	24	T85	H		
+f117_L09	25	T60	H		
+f117_L09	26	T53	H		
+f117_L09	27	T88	H		
+f117_L09	28	T33	H		
+f117_L09	29	T80	H		
+f117_L09	30	T51	M		line end
+f117_L10	1	T83	H		line start
+f117_L10	2	T45	H		
+f117_L10	3	T19	M	T33	pi-like
+f117_L10	4	T57	H		
+f117_L10	5	T80	M		
+f117_L10	6	T57	H		
+f117_L10	7	T86	M	T60	
+f117_L10	8	X_NEW	L	T89	large 6 inside a swash loop
+f117_L10	9	T84	M	T70	triangle with bar
+f117_L10	10	T84	L	T70	triangle over cross
+f117_L10	11	X_NEW	L		slash between two dots; line end
