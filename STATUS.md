@@ -6463,6 +6463,32 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_01Avu6MshNgo2uLhVg96J8T8, account 1, incarnation 5 of the blast refill), 9 October 2026 (closed 12:3x UTC: backlog wave done at about 83% of cap, lane about 50 of 60; seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-1040; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger5-jobs.md (waves 1-3). Eleven
+workers 45.59 + orchestrator ~4.3 by get_session. Five_hour allowed; seven_day allowed_warning on every session (not a stop under lane-common-blast).
+Result (eckert-1864, Fort Monroe mssEC 25; ONE audit each, not counted until a second): N3 D3 -- E254 E272 E277 E278 E281 E283 E284 E285 E289; N3 D2 -- E275 E293;
+N3 weak D3 -- E280. Second audits queued for the account-3 VERIFY lane: AUD2-LEDGER-18 (E254 E272 E275 E277), -19 (E280 E281 E283 E284 E285; already run by
+account 4 at 12:21, all held), -20 (E293), -21 (E278 E289). N1 at first audit (19): E250 E257 E273 E274 E279 E282 E286 E288 E294 E295 E297 (holder clear copies at
+other pointers), E255 E270 E271 E276 E287 E290 E296 E298 (in print: OR I/39 pt 3, I/42 pt 3, I/33, I/40 pt 2, I/41 pt 4, Butler IV). E298 = Stanton to Lincoln,
+Fortress Monroe 16 Oct 1864 (OR I/41 pt 4). E254 is not N1 (9913 is the sent cipher copy).
+- Read (Sonnet, ~0.22-0.35 per entry): 30 clean-fm.tsv 1864 rows -> E270-E299 (FM-R5a/b/c). Readers' "not located" was wrong for 4 entries (E270 print, E286
+  E288 holder copies, E294-E297 copies): the first verifier's all-pointer CONTENTdm search remains the deciding step; keep it first.
+- Key test (CONF-FM Part B): Cipher No. 1 on four printed Porter telegrams (5820/2-3, 5821/1-2 vs ORN I/11 pp.155-156) reads 46/52 vs shuffled-key mean 0.12,
+  p99 3 (HYPOTHESES.md). Candidate key rows, NOT in key.md: Tulip = stop (CONF-FM; tulip graded M in E283 E284 E289), whiskey = troops (FV-FM8a, 5768 vs 4788).
+- Fixes: FIX-FM7 (FV-FM7 + AUD2-12..17), FIX-FM8 (CONF-FM/CONF-FM2/FV-FM8a-d, 25 entries); decode --check exit 0.
+**Next** (costs this incarnation: read ~0.3/entry; Opus first audit ~1.1-1.5/entry; N1 confirm ~0.4/entry; price first audits at 1.4/entry):
+1. First verifiers: E291 E292 E299 (FM-R5c, printed context only), ~4.5 for the three.
+2. Fixes owed after AUD2-LEDGER-19 (E283 Sharpes = [Gap] H) and any AUD2-18/20/21 corrections: one Sonnet FIX job, ~2.
+3. Fort Monroe readers: remaining clean 1864 No. 1 rows 5639/1 5764/0 and 5820/2 (its page read in CONF-FM Part B); the long rows 5662/0 (309 words) 5697/1
+   5797/1 5740/0 5744/1 5777/2 5659/0 5786/0 at 2-3 units each (one reader, cap ~6); the 22 clean rows whose best book is No. 9 (decode_no9.py: first a
+   controlled key test on 5 of them, ~1.5). Re-run the unread grep (pointer/entry vs NOTES, ciphertext*.txt, AUDIT, jobs files) before briefing.
+4. Key rows: a known-plaintext test of Tulip = stop and whiskey = troops across every filed occurrence (decode_key-style --try, ~1.0) before either enters key.md.
+5. mssEC 18 remaining 77 clean No. 1 rows: low yield; after Fort Monroe 1864 is spent.
+6. Blocked: Fort Monroe Jan-Apr 1865 pages (148 clean rows; no 1865 book in hand), 8472, 6254, 9660 (no book; Cipher No. 4 Friedman copy needs a desk browser,
+   LOCAL-QUEUE).
+Light-guardrail share (known-text work): CONF-FM/CONF-FM2 confirms ~6 of 45.6 briefed (~13%); further N1 found inside ordinary first audits.
+
 ## LANE LEDGER handoff (session_016gnJfRCVWfZbRVf9Bqk3bL, account 1, incarnation 4 of the blast refill), 9 October 2026 (closed 04:5x UTC: at 80% of cap after the last planned wave, lane about 48 of 60; seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-0339; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger4-jobs.md (waves 1-2). Ten
