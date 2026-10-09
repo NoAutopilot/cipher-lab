@@ -1,0 +1,10 @@
+page	offset	small_tokens	codes_140_199	context	eye_read
+507	2148	23 2 4		n weder in 't leger te sijn en te blijven tot den 23 à 2 4 , als wanneer naer Den Mage sal k o m e n en nae	dates "23 à 24" in clear Dutch; not cipher
+518	416	2 2 1		A Tongres, 2 2 o c t . r e 1 70S. Monsieur, J ' a p p r e n d s	date "22 oct. 1703" in clear French; not cipher
+528	3455	5 1 2		Auuerquerc. Maestricht, den 5 novemb. 1 703. 2. Zie hiervóór nr. 1278.	date/footnote ref (5 novemb. 1703, nr. 1278) in clear; not cipher
+549	1514	2 7 3		A V o o r s t , ce 2 1 e d e n o v e m b r e l 7 0 3 .	date "21 novembre 1703" in clear French; not cipher
+558	2596	4 2 9		ip de Vrijheyd ten anker na gissing Petten O.N.O. 4 1/2 mijlen van ons d e n 2 9 e 9 b c r YEAR . Eigenh. orig. HAREF	sea distance/date (4 1/2 mijlen, 29 8bre) in clear Dutch; not cipher
+561	238	8 8 1		ijn. Uit Londen. Eigenh. orig. H A . 8 8 1 . Hoogh Edele Gestrenge Heer, Gist	archive ref H.A. 881 in clear; not cipher
+562	1290	28 5 6		ed. gelieft te tellen haer schepen tot Toulon tot 28, tot Cadix 5, tot Brest 6, bchalven die tot Port Louis ende andere plaetse	ship counts per port (28, 5, 6) in clear Dutch; not cipher
+575	2685	9 8 7 60 50		e r g e k o m e n , verscheyde oorlogschepen van 9 0 , 8 0 , 7 0 , 60 en 50 stucken leggende in Gunfleet en Duyns van haer	gun counts of ships (90, 80, 70, 60, 50 stucken) in clear Dutch; not cipher
+582	2198	1 1 1		o c k is aangestelt ende g e h o u d e n o p den 1 0 e , 1 I e , e n d e 1 2 e deses binnen Nieumegen en is aldaar gercsol-	dates "10e, 11e, 12e" with OCR spacing in clear Dutch; not cipher

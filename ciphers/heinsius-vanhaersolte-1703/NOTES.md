@@ -373,7 +373,7 @@ still letters 341, 929, 1017, and its key is still not located in print.
 3. Ask the NA (REQUEST.md) to include H.A. 918 beside H.A. 841, so d'Alonne's decipherment of the 1704 letter can be compared with its cipher.
 
 ## While waiting
-The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: `small_runs.py` over the rest of Deel 2 (pages without a Haersolte hit); pp.7-251 done (HEIN-SR, HEIN-SR2 9 Oct 2026), pp.252-600 remain.
+The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: `small_runs.py` over the rest of Deel 2 (pages without a Haersolte hit); pp.7-600 done (HEIN-SR to HEIN-SR5, 9 Oct 2026).
 
 ## Deel 2 small-number run over unread pages (HEIN-SR, 9 Oct 2026, 10:24-10:4x UTC by date -u)
 
@@ -503,3 +503,29 @@ Read so far: unmeasured, the 1703 cipher extent in print rests on OCR scans of a
 - [n/a] image-check: no run found
 - [ ] retry: pp.492-600
 Verdict: keep going: 1 internal gap; cheapest next: small_runs over Deel 2 pp.492-600 (one batch), ~USD 1.1
+
+## Deel 2 small-number run, pp.492-600 (HEIN-SR5, 9 Oct 2026, 16:31-16:4x UTC by date -u)
+
+Brief (LANE FAMILY-A2j, account 2). Same tool, rule, filters and PREREG as HEIN-SR/SR2/SR3/SR4 (`small_runs.py` unchanged; no new gate).
+Prior-work step: check 1 by reading this file (HEIN-SR4 stopped at 491; pp.492-600 not scanned before); `tools/prior_work.py` not re-run (same printed-edition OCR page run, recorded CLEAR in HEIN-SR3); checks 3-4 unchecked (the edition is the very text read; no other edition looked up).
+
+Controls (disk, before the target run): positive p.130 (letter 341) 1 row, p.398 (letter 1017) 1 row; negatives pp.017, 060, 473, 397 0 rows each.
+Target: Deel 2 printed pp.492-600, 109 pages (25 already held, 84 fetched once each, no fetch failed; all 109 now on disk). Result: 9 candidate rows on 9 pages (507, 518, 528, 549, 558, 561, 562, 575, 582), all eye-read from OCR: dates, footnote and archive references, ship/gun counts in clear Dutch/French. **None is cipher.** Table: `small_runs_HEINSR5.tsv`.
+No page in 492-600 carries a cipher passage of the 1017 kind.
+
+Where it was not found / limits: Deel 2 is now scanned end to end by this rule (pp.7-600, OCR only, HEIN-SR to SR5; pages 1-6 front matter). Same rule limits as D2-HEIN (needs three small numbers close together; OCR is the only witness). Graded tokens: 0. No key or status change.
+Requests: resources.huygens.knaw.nl 84 (>= 2.2 s apart, descriptive UA, one process). Vision 0, subagents 0, WebSearch 0.
+
+## Remaining gaps (HEIN-SR5, 9 Oct 2026)
+Read so far: unmeasured, the 1703 cipher extent in print rests on OCR scans of all 594 Deel 2 pages (HEIN-SR5 added 84 fetched + 25 held).
+- NA original H.A. 841 undigitised - blocker: waiting-on the Nationaal Archief reply to REQUEST.md; the original is not online
+
+## Escalation (HEIN-SR5, 9 Oct 2026)
+- [x] siblings: Deel 3 read (R11A-HEIN3, R12A-HEIN)
+- [x] clear-pages: letters 341, 929, 1017 only
+- [n/a] known-keys: no key located in print
+- [x] print: Deel 2 pp.7-600 now scanned
+- [n/a] key-rebuild: no key material exists
+- [n/a] image-check: no run found
+- [x] retry: pp.492-600 done
+Verdict: parked: the one remaining gap is blocked from outside the session (NA reply to REQUEST.md)
