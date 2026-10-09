@@ -11550,6 +11550,47 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18i)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18i verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18i)' section 4",
+      "reading_version": "MS18-R5 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18i) s.3 (no correction)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1865 (Washington sent ledger): Secretary of War to Bvt. Brig. Gen. E. Barton, Memphis, 23 July 1865: keep the prisoner in close custody, secure his papers, telegraph their substance in cipher; 'the publication signed Canada' not seen (E358)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 23 July 1865 the Secretary of War told Bvt. Brig. Gen. E. Barton at Memphis to keep his prisoner in close custody, secure his papers and telegraph their substance in cipher, adding that he had not seen 'the publication signed Canada'; not located in print (searched 9 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18i); most words clear in the holder's public transcription; not N4: NARA RG 107 and the assassination investigation files (M599), Papers of Andrew Johnson vol. 8, the July-Aug 1865 press, HathiTrust, JSTOR not searched",
+      "depth": "D3",
+      "completeness": "15 H of 15 code-word groups (rest plain)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.377, pointer 10043, E358"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.377, pointer 10043, E358",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.377, pointer 10043, E358"
+      ],
+      "depth_sentence": "On 23 July 1865 the Secretary of War ordered the provost marshal at Memphis to hold a newly arrested prisoner incommunicado, secure his papers and report their substance in cipher.",
+      "depth_check": "code clause: harsh pebble = 23 (the header's own date), Nelly = 8.30 PM (the ledger's own hour note), wrangle in pembroke = telegraph in cipher, palsy = Brigadier General, Drum = Memphis, Brutus = Secretary of War; external (non-statistical): holder transcriptions of the received answers 7976 (Barton, 26 July 1865: 'Telegram of twenty three and twenty four reached me', prisoner's papers, cipher memorandum) and 7978 (28 July: Ryan sent to Washington, orders 'executed to the letter')",
+      "depth_note": "15 H of 15 code-word groups (rest plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
         "AUDIT.md '## AUDIT (FV-MS18g)'"
       ],
       "audit_status": "one audit",

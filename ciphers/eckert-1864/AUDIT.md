@@ -12456,3 +12456,160 @@ Requests: hdl.huntington.org 20 (12 CISOSEARCHALL, 8 item info; all 200); archiv
 retried) + 5 advancedsearch + print_check's 3; be-api.us.archive.org 9 (print_check, 2 x 502); www.loc.gov 7 search + 13 page/full-text (1
 IncompleteRead) + tile.loc.gov via the same; chroniclingamerica.loc.gov 2 (403, legacy OCR route, not retried); www.googleapis.com 9 + print_check's 9
 + 4; api.openalex.org 2 + 10; api.semanticscholar.org 3 + 7 (429 on 4); api.core.ac.uk 2; api.crossref.org 1.
+
+## AUDIT (FV-MS18i)
+
+Verifier FV-MS18i (account 1, for LANE LEDGER), 9 Oct 2026, 21:52-22:2x UTC by `date -u`; a separate session from the reader MS18-R5, not protecting its
+conclusions. Scope: first audits of **E352, E353, E358**; N1 confirms of **E354, E360** (NOTES "## MS18-R5"; ciphertext.txt, Cipher No. 1, Washington sent
+ledger mssEC 18 = Huntington object 10074). Nothing decoded beyond key look-ups in key.md. Key source for all five: `period`. No spec exists for eckert-1864,
+so `judge_plaintext.py` was not run. Intake gate (21:5x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Prior work (`tools/prior_work.py eckert-1864 --item-spec 'item_id=E358;ptr=10043;...' --step-type audit --offline`, and the same for E352): exit 4,
+verdict step LEAD, all eleven LEADs target-level ROOM claims (KEY-CANBY, FIX-FM16 on E341-E350, this session), none covering these five; plaintext
+UNCHECKED-NET for E358 (OR volumes not on disk; fetched by hand below; aaymeloglu not cloned). Scripts: `ms18/fv_ms18i_hdl.py` (+ `.out`).
+
+### 0. The reader's print misses
+MS18-R5 called E352 and E353 "not located" after a 164-volume phrase grep. Both are printed, and the right OR texts find them at once on a plain grep by
+date and addressee: **E352** in OR I/43 pt 1 (`warofrebellion431unit_0`, the correct id per ciphers/eckert-1862/ec18/or_volumes.tsv; not in the reader's
+cache, the same wrong-id shape FV-MS18f found for E343); **E353** in OR I/49 pt 2 (`warofrebellion492unit`). The reader's phrase set for E352 used the decoder's
+"[Artillery]es" and "late raid" rather than the print's words (s.3), so a letters-only phrase search could not hit. Also: IA `_page_numbers.json` for
+`warofrebellion372unit` and `warofrebellion431unit_0` is off by one leaf at the pages used here (it maps p.295 to n301 and p.835 to n853; the images show
+n300 = p.295 and n853 = p.836); every page cited below was read on the leaf image, not taken from the map.
+
+### 1. Duplicates and image (own entry, IIIF 2400 px, crops of every graded line)
+- **Duplicate diff:** the five pointers occur only in their own headers and the MS18-R5 notes; mssEC 19 (`entries-mssEC19.tsv`, grepped by date and by
+  Wentz/hostage/Barton/Canada) has only other telegrams on those days (9000, 9001 Beckwith 13 July 1864; 9050 Gates 18 Aug 1864; 9230 Caldwell 7 May 1865)
+  and nothing for 2 July 1864 or 23 July 1865. **No duplicate.**
+- **E352 (9821, p.155):** transcription matches line by line. The header "Lawrence H. Ferry" is the **operator Lawrence at H(arpers) Ferry** (same
+  shape as "JW Sampson", "RR McCaine", "Lines Macon"), not an addressee "Lawrence H. Ferry"; the addressee is in the cipher ("for polking Shelby Camel" =
+  for the Commanding General, Harpers Ferry; print). "12.30 P.M." is written above the date line (Viola, as keyed).
+- **E353 (10004, p.338):** matches; label "No 1"; the hour above the date line reads **7.30 a.m.** to me (the reader: 7.30 or 4.30); "re" at the start of
+  line 5 is written over a struck word.
+- **E354 (9791, p.125):** matches; the word the reader filed "eligo" is, to my eye, **"sligo"** with the clerk's lowercase s (key Sligo = In the; the
+  print reads "in the").
+- **E358 (10043, p.377):** matches, including "Brutus" (signature line, right) and the hour "8.30 p.m." above the date.
+- **E360 (9770, p.104):** matches; "Harlem" is clear on the page; "are you all oak" closes the last line after "webster Jew".
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; one hdl take 21:5x UTC, 21 requests, all 200: 8 queries, 8
+item records, 5 page images). Positive controls: 'Wentz hostages' and 'guided the raiders' hit 9821 (E352's own page), 'publication signed Canada' hit
+10043 (E358's own page). 'reward for Davis' 4 (7898, 7917, 9876, 3952), 'reorganizing rebels' 0, 'Barton prisoner papers' 0, 'Edwards Ferry guerrillas'
+0 and 'Kanawha Valley Breckinridge' 0 (E354/E360's own pages carry code words there; non-tests for those two, which are printed anyway). Item records read:
+- 7898 (Wilson, Macon, 6 May 1865, to the Secretary of War: Brown's call of the Georgia legislature, Davis at Washington Ga.) and 7917 (Wilson, 12 May
+  1865: Clement C. Clay gives himself up, quoting the $100,000 proclamation): **context for E353** (the "Brown" and the reward of the answer), not copies.
+- 9876, 3952: other telegrams. 
+- **7976, 7977, 7978, 8791** (opened for the MS18-R5 lead 'Barton Memphis papers'; received telegrams, Memphis, 26-28 July 1865): 7976 = Bvt Brig. Gen.
+  **E. Barton**, Provost Marshal, to E. D. Townsend, 26 July 1865: "Telegram of twenty three and twenty four reached me at 7 PM yesterday ---- will send J
+  G Regan today with all papers letters and so forth ... no one but my self and the guard have seen him since his arrest ... He has cipher memorandum or
+  dispatches in figures also blank orders of rebel Secy of war"; 7977 (26 July: Capt. Louis P. Smith left by steamer City of Cairo "with J N Ryand and
+  guard of four men"); 7978 (28 July, to the Secretary of War: "Ryan left for Washington at 5 P. M of the twenty sixth. Your orders in regard to him had
+  been previously executed to the letter ... I believe these persons to be accomplices or important witnesses"); 8791 (28 July, Barton on the Parkman
+  Brooks & Co cotton case, unrelated). **E358 is the 23 July telegram 7976 acknowledges**; the prisoner is J. N. Ryan (Regan/Ryand in the holder's
+  transcription); Barton's 24 July order is 10043/2 (not read). These are the answer side of the same case: independent witnesses, not copies.
+
+**Print** (archive.org djvu texts to scratch: OR I/43 pt 1 `warofrebellion431unit_0`, I/48 pt 2 `warofrebellion482unit`, I/49 pt 2 `warofrebellion492unit`,
+ser. II vol. 8 `warofrebellion0208rootrich`; cached I/37 pt 2 `warofrebellion372unit`; page images read for every print cited):
+- **E352 -> printed OR ser. I vol. 43 pt 1 p.836** (leaf n853, head 836; the index's "Wentz, E. L. ... 835" is the next-earlier page reference, the item
+  sits in the middle of p.836): "ADJUTANT-GENERAL'S OFFICE, Washington, August 18, 1864. COMMANDING GENERAL, Harper's Ferry, Va.: The Secretary of War
+  directs that you take and hand over to E. L. Wentz six of the prominent citizen rebels at Harper's Ferry who guided the raiders in their late
+  expeditions. They are to be held as hostages for six negroes taken by the rebels from the railroad force. Report receipt and execution of this order.
+  E. D. TOWNSEND, Assistant Adjutant-General." Clause for clause the ledger (s.3 for three decoder slips).
+- **E353 -> printed OR ser. I vol. 49 pt 2 p.648** (leaf n653, head 648): "WAR DEPARTMENT, Washington City, May 7, 1865--7 p.m. Bvt. Maj. Gen. J. H.
+  WILSON, Macon, Ga.: Instructions have been sent you in regard to Brown. Any other prominent rebel who may take any steps toward reorganizing rebels
+  should be seized immediately and sent to Washington under guard. Your action in respect to the reward for Davis is approved. The President offered a
+  reward of $100,000 for his arrest last week. EDWIN M. STANTON, Secretary of War." Word for word; the item above it (p.647-648) is the President's order
+  to arrest Joseph E. Brown, the "instructions" of the first sentence.
+- **E354 -> printed OR ser. I vol. 37 pt 2 p.295** (leaf n300, head 295): "WASHINGTON, July 13, 1864--4 p.m. Major-General ORD, Baltimore, Md.: The enemy
+  left here last night, and seems to be moving toward Edwards Ferry. General Grant directs that you move out of Baltimore as soon as it becomes evident
+  that the enemy has left your front. Your troops should come by railroad as far as possible, and then march to Washington. The evidence is that the
+  rebels have no troops in the direction of Baltimore, except mounted guerrillas. H. W. HALLECK, Major-General and Chief of Staff." Word for word.
+- **E360 -> printed OR ser. I vol. 37 pt 2 pp.8-9** (leaves n13-n14, heads 8 [inferred, the leaf before 9] and 9): "WASHINGTON, July 2, 1864--10.30 a.m.
+  Major-General HUNTER, West Virginia: General Grant says that such of your forces as are not required to hold the Kanawha Valley should be brought back
+  to the line of the [p.9] Baltimore and Ohio Railroad, so that by operating from that base they can prevent any raid into Maryland. He says that Ewell's
+  corps has returned to his front, but he hears nothing of Breckinridge. H. W. HALLECK, Major-General and Chief of Staff." Word for word; the ledger's
+  closing "are you all oak" is not in the print.
+- **E358 -> not located.** OR ser. II vol. 8 (prisoners, to 1865): 'Ryan' 0, 'Barton' only Judge Barton, Clara Barton, H. C. Barton; 'Canada' near
+  'publication'/'signed' 0. OR I/48 pt 2 and I/49 pt 2: no E. Barton at Memphis, no hit on 'publication signed', 'substance or purport', 'close and
+  secure custody'. The 164 cached texts (the reader's grep, rerun on 'publication  signed', 'Canada  referred', 'substance  or  purport'): 0. Google Books
+  (`country=US`, key; 4 queries): '"J. N. Ryan" Memphis' (117, an Illinois roster and later directories), '"Ryan" Memphis Barton 1865 assassination' (3:
+  the *Papers of Andrew Johnson* vol. 7 index, snippet only, not this telegram; vol. 8, May-Aug 1865, not reached), '"publication signed Canada"' (modern
+  catalogues), '"Barton" provost marshal Memphis Ryan' (noise). IA full text (be-api, all items): '"signed Canada" Memphis' (modern trade papers only);
+  two further queries failed with an empty response and were not retried.
+- Not searched for E358: NARA RG 107 (telegrams sent) and RG 153 / M599 (Lincoln assassination investigation files, where a Memphis prisoner sent to
+  Washington in July 1865 with "cipher memorandum" papers would belong); *Papers of Andrew Johnson* vol. 8 page by page; the Memphis and Washington press
+  of July-Aug 1865; HathiTrust full text; JSTOR. Not searched for the N1 items: Grant Papers, Halleck's letter books (unneeded: print found).
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E352 (OR I/43 pt 1 p.836):** decoder "H 19" includes one wrong token and misses two keyed words:
+  (a) **"negroes"** is clear on the page and in the print ("six negroes"); the decoder applied the key row **Negro = Artillery** to it and printed
+  "[6] [Artillery]es": a decoder slip, the token is **plain "negroes"** (C by print), not a code word;
+  (b) **"rape's" = Rape = Expedition** (key p.20 l.0, H) -> "expeditions" (print "their late expeditions"); the decoder left it plain ("late rape's") and the
+  header's "late raid" is not the text;
+  (c) **"polking" = Polka = Command(-er, -ed, -ing)** (key p.19 l.14, H) -> "Commanding" (print "COMMANDING GENERAL"); with Shelby = General and Camel =
+  Harpers Ferry, the addressee is **the Commanding General, Harper's Ferry**; the header's "to Lawrence H. Ferry" is the operator line (s.1).
+  "Walpole's" = Rebel (H) -> "the rebels" (print); "Saxon Weldon Saint" = from the railroad force (H, print); "pledge torch ... City zens Walnuts at Cancer" =
+  "six of the prominent citizen rebels at Harper's Ferry" (H, print). **H 20** (19 - 1 + 2) **+ C 0 code**, no gap; the clear word "negroes" is C by print.
+- **E353 (OR I/49 pt 2 p.648):** decoder "H 23" includes **two wrong tokens: "reward"** is written clear twice ("in respect tooth reward for", "offered a
+  reward of"; print "the reward for Davis", "a reward of $100,000") and the decoder applied the key row **Reward = Fall (ing Fell) back** (p.20 l.16) to
+  both: plain "reward", C by print. Husband = Jeff Davis (H; print "Davis"), Divine = Macon, Walnut = Rebel, whack = Towards, twinkling = Organize, Grapes =
+  Washington, Shallow = Guard, Ink = President, plug publish promise = 100,000 (1 x 100 x 1000), Odor = Arrest, Yoke Indus = signature Secretary of War
+  (print: Edwin M. Stanton): all H and all as printed. **Time conflict:** Deborah = 8 AM (key TIME page), the ledger's own hour note 7.30 a.m., the print
+  "7 p.m.": three values, recorded, not settled (rule 4; the same shape as Viola = 12.30 AM vs "1230 pm" in AUDIT (FV-MS18f) s.5). Deborah graded **M**
+  here. **H 20 + M 1**, no gap.
+- **E354 (OR I/37 pt 2 p.295):** decoder H 20 + S 1 (Whiskey = Troops, KEY-TW) stand and are confirmed by the print (Whiskey: C by print). "eligo" ->
+  **"sligo" = Sligo = In the** (H; print "in the"), a token the decoder left plain. Italy = General-in-Chief where the print signs "H. W. HALLECK,
+  Major-General and Chief of Staff" (title as keyed; signer C). **H 21 + C 1 (Whiskey)**, no gap.
+- **E358 (not located):** Grapes (blind), harsh pebble = 23 (= the header's own date), Nelly = 8.30 PM (= the ledger's own hour note), palsy = Brigadier
+  General, Drum = Memphis, zebra/unity/zodiac = periods, Sligo = In the, wrangle = Telegraph, pembroke = Cipher, torch = Of the, Brutus = Secretary of War:
+  **H 15 of 15** code groups; 'bar ton' = Barton (Bvt Brig. Gen. E. Barton, Provost Marshal at Memphis, per 7976-7978); the prisoner is J. N. Ryan (7976-7978,
+  not named in E358). Reading as filed, no correction.
+- **E360 (OR I/37 pt 2 pp.8-9):** decoder H 14 + C 1 (Mutton = Hunter) stand. **"Harlem" = Baltimore and Ohio Railroad** (not in key.md; C by print,
+  one occurrence; the decoder left it plain). Jew = General-in-Chief, print signs Halleck, Chief of Staff (title as keyed). "are you all oak" (M) is not in
+  the print: an operator's addition after the signature, graded nothing. Print hour 10.30 a.m.; no time word in the ledger. **H 14 + C 2**, no gap.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| E352 Townsend for the Secretary of War to the Commanding General, Harper's Ferry, 18 Aug 1864 | **N1** (text known) | period | D3 | 100 (20 H) | printed OR I/43 pt 1 p.836, clause for clause, read on the IA page image | "An independent re-decipherment, read with War Department Cipher No. 1, of the Adjutant-General's Office telegram of 18 Aug 1864 ordering hostages taken at Harper's Ferry, printed in OR ser. I vol. 43 pt 1 p.836." |
+| E353 Stanton to Wilson, Macon, 7 May 1865 | **N1** (text known) | period | D3 | 95 (20 H + 1 M time word) | printed OR I/49 pt 2 p.648, word for word | "An independent re-decipherment of Stanton's telegram to Wilson at Macon of 7 May 1865, printed in OR ser. I vol. 49 pt 2 p.648." |
+| E354 Halleck to Ord, 13 July 1864 | **N1** (confirmed) | period | D3 | 100 (21 H + 1 C) | printed OR I/37 pt 2 p.295, word for word | "An independent re-decipherment of Halleck's telegram to Ord of 13 July 1864, 4 p.m., printed in OR ser. I vol. 37 pt 2 p.295." |
+| E358 Secretary of War to Bvt Brig. Gen. E. Barton, Memphis, 23 July 1865 | **N3** | period | D3 | 100 (15/15 H; rest plain) | not located: OR I/48 pt 2, I/49 pt 2, ser. II vol. 8, 164 cached texts, Google Books, IA full text, the holder's full text; the answer side (7976-7978) agrees | "Read at grade H with War Department Cipher No. 1: on 23 July 1865 the Secretary of War told Bvt. Brig. Gen. E. Barton at Memphis to keep his prisoner in close custody, secure his papers and telegraph their substance in cipher, adding that he had not seen 'the publication signed Canada'; not located in print (searched 9 Oct 2026)." |
+| E360 Halleck to Hunter, 2 July 1864 | **N1** (confirmed) | period | D3 | 100 (14 H + 2 C) | printed OR I/37 pt 2 pp.8-9, word for word | "An independent re-decipherment of Halleck's telegram to Hunter of 2 July 1864, printed in OR ser. I vol. 37 pt 2 pp.8-9." |
+
+Not N4 for E358: NARA RG 107 and the assassination investigation files (M599), *Papers of Andrew Johnson* vol. 8, the July-Aug 1865 press, HathiTrust, JSTOR
+unsearched. Unsafe for E358: "first", "new", "unpublished", "never printed". Depth checks: E352 -- code clause "pledge torch prominent City zens Walnuts at
+Cancer" = six of the prominent citizen rebels at Harper's Ferry, external check the print (D3). E353 -- the print, word for word; one time word M by a
+three-way conflict (D3). E354, E360 -- the print (D3; D4 would need a fresh rule-7 re-derivation). E358 -- code clause harsh pebble = 23 = the header's own
+date, Nelly = 8.30 PM = the ledger's own hour note, wrangle in pembroke = telegraph in cipher, Brutus = Secretary of War; external, non-statistical: the
+holder's own transcriptions of the received answers 7976 ("Telegram of twenty three and twenty four reached me", the prisoner's papers, "cipher memorandum
+or dispatches in figures") and 7978 (Ryan sent to Washington, "Your orders in regard to him had been previously executed to the letter") (D3). Depth
+sentences (my own): E352 -- "On 18 Aug 1864 the War Department ordered six prominent citizens of Harper's Ferry who had guided the raiders handed over to
+E. L. Wentz as hostages for six black railroad workers taken by the Confederates." E353 -- "On 7 May 1865 Stanton approved Wilson's handling of the reward
+for Davis and ordered any prominent rebel trying to reorganize rebels in Georgia seized and sent to Washington." E354 -- "On 13 July 1864 Halleck told Ord
+to march his troops from Baltimore to Washington once Early's army had left his front." E358 -- "On 23 July 1865 the Secretary of War ordered the provost
+marshal at Memphis to hold a newly arrested prisoner incommunicado, secure his papers and report their substance in cipher." E360 -- "On 2 July 1864
+Halleck passed on Grant's wish that Hunter bring his forces back from the Kanawha Valley to the Baltimore and Ohio line to cover Maryland."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: MS18-R5 called E352 and E353 "not located"; both are printed (OR I/43 pt 1 p.836; I/49 pt 2 p.648). Causes: the I/43 pt 1 text was not in the
+reader's cache under its right id (`warofrebellion431unit_0`), I/49 pt 2 was not grepped by date and addressee, and E352's phrases were built from two
+decoder slips. Corrections (a verifier does not edit ciphertext.txt or reading.md):
+- E352 header: addressee **the Commanding General, Harper's Ferry** (operator Lawrence, H. Ferry), not "Lawrence H. Ferry"; "late raid" -> "late
+  expeditions"; "[prominent citizens (M) at Harpers Ferry (M)]" -> six of the prominent citizen rebels at Harper's Ferry (H, print); add "printed OR I/43 pt
+  1 p.836". Reading, through decode.py's per-entry mechanism (no key.md edit): **"negroes" plain, not Negro = Artillery**; **rape's = Rape = Expedition**;
+  **polking = Polka = Commanding**. Grades H 20.
+- E353 header: addressee Bvt Maj. Gen. J. H. Wilson; "[Brown, M]" -> Brown (clear; print, Joseph E. Brown); add "printed OR I/49 pt 2 p.648" and the
+  time note (Deborah 8 AM key / ledger 7.30 a.m. / print 7 p.m.). Reading: **"reward" plain twice, not Reward = Fall back**. Grades H 20 + M 1.
+- E354 header: replace "page head not legible" by **p.295**. Reading: "eligo" -> Sligo = In the (H; transcription note "sligo", clerk's lowercase s).
+- E360 header: hour 10.30 a.m. (print); Harlem = Baltimore and Ohio Railroad (C by print, entry note); page confirmed pp.8-9 on the image.
+- E358 header: Barton = Bvt Brig. Gen. E. Barton, Provost Marshal, Memphis; prisoner J. N. Ryan (holder 7976-7978, context); reading unchanged.
+- **Decoder lesson (two entries, three tokens):** decode.py applies a key row to a clear word that happens to equal a code word in the book (Negro,
+  Reward). In both cases the clerk wrote the plain word in the clear and the print confirms it. A KEY or tools job could flag every applied row whose
+  token is a common English word that also fits the sentence in clear; not a key edit.
+- HYPOTHESES.md (rule 4): add the E353 time-word conflict (Deborah 8 AM / 7.30 a.m. / print 7 p.m.) beside the Viola note, for a KEY job.
+- NOTES "## MS18-R5": "Not located in the searched volumes: E351, E352, E353, ..." is wrong for E352 and E353 (above); E354's page is 295 and E360's
+  pp.8-9 are now image-read.
+- Tool lesson: IA `_page_numbers.json` for `warofrebellion372unit` and `warofrebellion431unit_0` is off by one leaf at these pages (s.0); read the head on
+  the leaf.
+
+Requests: hdl.huntington.org 21 (8 CISOSEARCHALL, 8 item info, 5 IIIF 2400 px), all 200; archive.org 14 (4 djvu texts, 3 page_numbers, 7 page images),
+all 200; googleapis.com 4; be-api.us.archive.org 4 (2 answered, 2 empty). Queued: WORK-QUEUE `AUD2-LEDGER-33` (E358), SO-ECKERT-E358.

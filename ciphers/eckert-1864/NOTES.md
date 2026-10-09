@@ -4148,3 +4148,31 @@ One key question: does the No. 1 slot p.17 l.5-6 (Leghorn, Legend, Lehigh, Leopa
 - Found and not found: no second No. 1 copy and no period instruction naming Canby's code word located in the repository's sources; hdl was used for
   the key page only (2 requests). Suggested (not run): fetch mssEC 19 p.163 (pointer 9057) at native size to confirm the E55 interlineation's hand and
   ink against the clerk's; search mssEC 19/18 for any pre-May 1864 No. 1 use of the slot (would test the date split from the other side).
+
+## FV-MS18i (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E352, E353, E358 and N1 confirms of E354, E360 (AUDIT.md "## AUDIT (FV-MS18i)"). **E352 is printed** OR I/43 pt 1 p.836 (Townsend for
+the Secretary of War to the Commanding General, Harper's Ferry, 18 Aug 1864: Wentz hostages; clause for clause): N1. **E353 is printed** OR I/49 pt 2
+p.648 (Stanton to Wilson, Macon, 7 May 1865, 7 p.m.; word for word): N1. **E354** (OR I/37 pt 2 p.295) and **E360** (pp.8-9) confirmed N1 on the page
+images. All four pages read on IA leaf images (the `_page_numbers.json` map is one leaf off at two of them). Decoder slips found by the print: "negroes"
+(E352) and "reward" x2 (E353) are clear words the decoder read through the key rows Negro = Artillery and Reward = Fall back; "rape's" = Rape = Expedition
+and "polking" = Polka = Commanding (E352), "sligo" = In the (E354) are keyed tokens it left plain; "Harlem" = Baltimore and Ohio Railroad (E360, C by print).
+E353's time word Deborah (8 AM) against the ledger note 7.30 a.m. and the print 7 p.m.: a three-way conflict, M. **E358 N3 D3**: not located in print; the
+holder's received answers 7976-7978 (Bvt Brig. Gen. E. Barton, Provost Marshal, Memphis, 26-28 July 1865) acknowledge "telegram of twenty three" and
+name the prisoner J. N. Ryan. `AUD2-LEDGER-33` queued (E358); SO-ECKERT-E358 queued. Fixes in AUDIT s.5, not applied here.
+
+## Remaining gaps (FV-MS18i, 9 Oct 2026)
+Read so far: E352, E353, E354, E358, E360 audited (four N1 by print, read on page images; E358 N3 D3); all five ledger pages eye-checked on crops at 2400 px.
+- E358 second audit and the unsearched families (NARA RG 153/M599, RG 107, Papers of Andrew Johnson vol. 8, Memphis and Washington press July-Aug 1865, HathiTrust, JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER-33; a second audit is a separate session (rule 10)
+- the header and reading fixes of AUDIT (FV-MS18i) s.5 (Commanding General at Harper's Ferry, negroes, expeditions, Commanding, reward, Sligo, Harlem, pages) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- E353 time word Deborah = 8 AM vs ledger 7.30 a.m. vs print 7 p.m., as a HYPOTHESES.md row - blocker: not-attempted; key questions belong to the KEY lane; next: a KEY job beside the Viola note, ~$1
+- E351, E355, E356, E357, E359 (MS18-R5's other unlocated rows) - blocker: not-attempted; not in this brief; next: a first-verifier job like this one, ~$7
+
+## Escalation (FV-MS18i, 9 Oct 2026)
+- [x] siblings: 7976-7978 and 8791 (Barton's received answers, Memphis 26-28 July 1865), 7898 and 7917 (Wilson, Macon, May 1865) read; 10043/2 seen, not read.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 8 queries (positive controls hit own pages) + 8 item reads, no clear copy.
+- [x] known-keys: key.md rows checked for every graded token; no book test needed (all five read in No. 1 and four are printed).
+- [x] print: E352, E353, E354, E360 found and read on page images; E358 not located.
+- [n/a] key-rebuild: no key row edited; slips listed in AUDIT s.5.
+- [x] image-check: all five entries eye-checked on crops.
+- [x] retry: none needed (two be-api queries returned empty, not retried).
+Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18i) s.5, ~$1
