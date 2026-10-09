@@ -1,0 +1,17 @@
+A	0236_c1	Guerra	2	hit	0
+A	0236_c3	Habil	1	hit	0
+A	0146_c1	D	1	hit	0
+A	0276_c2	Memoria	3	hit	0
+A	0261_c2	Lhe	6	hit	0
+A	0265_c2	Lugar	17	undecided	0
+A	0255_c2	Junto	20	hit	0
+pass A: hit 6/7, non-hit 1 -> PASS
+B	0236_c1	Guerra	2	hit	0
+B	0236_c3	Habil	1	hit	0
+B	0146_c1	D	1	undecided	0
+B	0276_c2	Memoria	3	hit	0
+B	0261_c2	Lhe	6	undecided	0
+B	0265_c2	Lugar	17	hit	0
+B	0255_c2	Junto	20	hit	0
+pass B: hit 5/7, non-hit 2 -> FAIL
+GATE FAIL
