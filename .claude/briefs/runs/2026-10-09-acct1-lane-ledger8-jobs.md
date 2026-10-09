@@ -97,3 +97,33 @@ question); E348 I/37 pt 2 (8 July 1864; find the page). AUDIT.md "## AUDIT (FV-M
 Method exactly "## MS18-R4" (wave 1). Rows (next in clean-ms18.tsv order after 9895/2, none in a ciphertext.txt header at 21:1x): 10065/2 (2 Dec 1865 -- HEAD
 share first; "no book in hand" if none reads), 9821/1, 10004/1, 9791/0, 9863/0, 9729/2, 9825/1, 10043/1, 9753/1, 9770/1 (spare: 9674/0, 9886/1). IDs from E351.
 NOTES "## MS18-R5 (9 Oct 2026, account 1, for LANE LEDGER)". No audits. Unit ~0.25 per row.
+
+---
+
+# Wave 3 (written 9 Oct 2026 21:5x UTC; seven_day allowed_warning, continuing per lane-common-blast; lane ~37.5 of 60 at writing; the last planned wave)
+By get_session: FIX-FM15 1.28, FV-MS18f 6.71 (E343 N1 OR I/43 pt 1 p.918, E345 N1 OR I/39 pt 2 pp.269-270, E346 N3 D3; AUD2-LEDGER-31), FV-MS18g 6.14 (E349 msg 2
+N1 Grant Papers 12; E349 msg 1 N3 weak; E347 E350 N3 D3; AUD2-LEDGER-32), FV-MS18h 2.92 (E341 E342 E348 E344 para 1 N1; E344 para 2 D1, unclassified), MS18-R5 1.84
+(E351-E360: E354 E360 printed OR I/37 pt 2, 8 not located). Wave 2 18.89. Note: the cached IA item warofrebellion431unit is OR I/47 pt 2, not I/43 pt 1 (FV-MS18f).
+
+## KEY-CANBY (Opus 5.5; cap $2.5, box 60 min; hdl only for the key-book page)
+Three printed witnesses now read **Canby** where key.md gives Leghorn / Legend / Leopard = Maj Gen S. A. Hurlbut (key.md lines ~489-492, "p.17 l.5-6 (334)"): E323
+(HYPOTHESES.md row from FIX-FM13), E334 (OR I/34 pt 4 p.64, AUDIT FV-MS18d), E345 (OR I/39 pt 2 pp.269-270, three times, AUDIT FV-MS18f). (1) Re-read key book p.17
+lines 5-6 on its page image (object and canvas from key.md / images/manifest.json; <= 6 hdl requests, token rules) and transcribe exactly what is written against
+each word, including any second hand, strike-through or later addition. (2) List every filed occurrence of the three words (ciphertext*.txt), with date, sender,
+addressee and whether a print or holder clear copy exists; tabulate Hurlbut vs Canby by date (Canby took the Military Division of West Mississippi in May 1864)
+and against a control (the same test for two other p.17 name rows). (3) Write the outcome as a rule-4 record in HYPOTHESES.md: which witnesses support which value,
+whether a date or book-edition split explains it; propose key.md wording (grade, condition) in NOTES "## KEY-CANBY (9 Oct 2026, account 1, for LANE LEDGER)". Do
+not edit key.md; do not settle by majority. Unit: one key question.
+
+## FIX-FM16 (Sonnet 5.5; cap $2, box 60 min, no network)
+Exactly the FIX-FM15 method. Sources: AUDIT.md s.5 of "## AUDIT (FV-MS18f)", "(FV-MS18g)" (Relay, Planters, Tomama = Panama = Cavalry, Pleasant on = Pleasonton;
+E349 header: John = Grant, Jolly = Meade C by print; note-to-John header wrong), "(FV-MS18h)" (plain Stanley x3 / duke / Wallace, Platations = communications,
+headers, E348 page OR I/37 pt 2 p.133). Do NOT touch any Leghorn / Legend / Leopard token or key row (KEY-CANBY). Also correct the IA-id mapping FV-MS18f found
+(warofrebellion431unit = OR I/47 pt 2) wherever the readers' cache table or ciphers/eckert-1862/ec18/or_volumes.tsv states otherwise, with a dated note. status.json
+/ SO propagation; decode --check exit 0; depth_check; file_shrink_guard; NOTES "## FIX-FM16".
+
+## FV-MS18i (Opus 5.5, first verifier; cap $7, box 100 min)
+Exactly "## FV-MS18d" (wave 1) plus "## FV-MS18e" for the confirms: N1 confirms of E354 (OR I/37 pt 2, 13 July 1864 Halleck to Ord: find the page) and E360 (OR
+I/37 pt 2 pp.8-9) on page images; first audits of E352 (Ferry / Wentz hostages, 18 Aug 1864), E353 (Wilson at Macon, 7 May 1865: OR I/49 pt 2 first, Davis reward),
+E358 (Memphis for Barton, 23 July 1865; "the publication signed Canada"). AUDIT.md "## AUDIT (FV-MS18i)". N3+ D2+: WORK-QUEUE `AUD2-LEDGER-33` (account-3, Opus 5.5,
+cap 2.5 per entry; next free number if taken). The other five MS18-R5 unlocated rows (E351 E355 E356 E357 E359) wait for the next incarnation.
