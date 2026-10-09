@@ -83,5 +83,23 @@ check(set(c for _, c in lat2) == {'b', 'x'} and lat2[('L1', 'b')] > lat2[('L1', 
 r = rp.main([A2, B2, '--no-write'])
 check(r['agree'] == 2, f"without --keep-alts 'b/x' stays one literal sign, as before (agree {r['agree']}/3)")
 
+# TXE-R header bug (9 Oct 2026): a 'passage  pos  sign_id  alt  conf  note' pass must parse as long format and
+# agree with the same content under 'line pos sign conf'; a long-looking header under an unknown first column
+# must exit non-zero instead of being read as wide (where every line's position cell became its one sign).
+def w_hdr(name, header, rows):
+    p = os.path.join(tmp, name)
+    open(p, 'w').write(header + '\n' + ''.join(f'L01\t{i}\t{s}\t\tH\t\n' for i, s in enumerate(rows, 1)))
+    return p
+P1 = w_hdr('P1.tsv', 'passage\tpos\tsign_id\talt\tconf\tnote', ['a', 'b', 'c', 'd'])
+P2 = w_hdr('P2.tsv', 'line\tpos\tsign\talt\tconf\tnote', ['a', 'b', 'x', 'd'])
+r = rp.main([P1, P2, '--no-write'])
+check((r['agree'], r['cols']) == (3, 4), f"passage/sign_id header parses as long format (agree {r['agree']}/{r['cols']}, want 3/4)")
+P3 = w_hdr('P3.tsv', 'foo\tpos\tsign\talt\tconf\tnote', ['a', 'b', 'c', 'd'])
+try:
+    rp.main([P3, P2, '--no-write'])
+    check(False, 'long-looking header under an unknown first column exits non-zero')
+except SystemExit as e:
+    check(e.code not in (0, None), f'long-looking header under an unknown first column exits non-zero (code {str(e.code)[:60]!r})')
+
 print('reconcile_passes:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)

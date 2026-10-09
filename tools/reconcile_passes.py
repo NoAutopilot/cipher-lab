@@ -11,8 +11,11 @@ the alignment, the reconciler settles only the listed positions from the image.
 
 Pass formats (detected per file):
   wide  'row<TAB>codes' (or no header): a line id, then the line's signs separated by spaces (fr2980-gramont passes).
-  long  header 'line  pos|position  sign|token|group  conf|confidence ...': one sign per row (Danzay, Paleologue,
-        Anhalt passes, and any ciphertext.tsv, so a reconciled file can be the third pass). An optional 'gloss'
+  long  header 'line|passage  pos|position|index  sign|sign_id|token|group|code  conf|confidence ...': one sign per row
+        (Danzay, Paleologue, Anhalt passes, the TXE-R reader-brief form 'passage pos sign_id alt conf note', and any
+        ciphertext.tsv, so a reconciled file can be the third pass). A header carrying those column names under any
+        other first column is refused with a message, never read as wide (TXE-R, 9 Oct 2026: 'passage/sign_id' fell
+        through to the wide parser, which read each position cell as the sign and printed 99.3% for a real 86.6%). An optional 'gloss'
         column (interlinear plaintext glossed above a token, clair349-style) rides along with its token through
         alignment; if any pass has one, ciphertext_draft.tsv gains a 'gloss' column (majority value per aligned
         column, blank where none) and the printed summary adds a gloss-agreement figure over aligned columns
@@ -114,6 +117,12 @@ def norm_sign(t, a):
     return sign, flagged
 
 
+LONG_LINE_COLS = ('line', 'passage')
+LONG_POS_COLS = ('pos', 'position', 'index', 'sign_pos')
+LONG_SIGN_COLS = ('sign', 'sign_id', 'token', 'group', 'code')
+LONG_HEADER_COLS = set(LONG_POS_COLS + LONG_SIGN_COLS + ('conf', 'confidence'))
+
+
 def load_sign_map(path):
     """pass_reading -> canonical, from a TSV with header pass_reading, canonical, ... (extra columns ignored)."""
     rows = [l.rstrip('\n').split('\t') for l in open(path, encoding='utf-8') if l.strip() and not l.startswith('#')]
@@ -128,12 +137,21 @@ def load_pass(path, a):
     rows = [l.rstrip('\n').split('\t') for l in open(path, encoding='utf-8') if l.strip() and not l.startswith('#')]
     out = collections.OrderedDict()
     head = rows[0] if rows else []
-    long_fmt = head and head[0] == 'line' and len(head) >= 3
+    long_fmt = head and head[0] in LONG_LINE_COLS and len(head) >= 3
     has_gloss = False
+    if not long_fmt and head and len(head) >= 3 and any(c in LONG_HEADER_COLS for c in head[1:]):
+        # TXE-R (9 Oct 2026): a 'passage  pos  sign_id ...' header fell through to the wide parser, which read
+        # every line's second cell (the position) as its one sign and reported 99.3% agreement for a real 86.6%.
+        sys.exit(f"reconcile_passes.py: {path}: header {head!r} looks like the long format but its first column "
+                 f"is not one of {LONG_LINE_COLS}; rename it (or rename the sign column to one of {LONG_SIGN_COLS}) "
+                 f"rather than let the wide parser read positions as signs")
     if long_fmt:
-        ci = head.index('line')
-        pi = next(head.index(n) for n in ('pos', 'position', 'index') if n in head)
-        si = next(head.index(n) for n in ('sign', 'token', 'group', 'code') if n in head)
+        ci = 0
+        pi = next((head.index(n) for n in LONG_POS_COLS if n in head), None)
+        si = next((head.index(n) for n in LONG_SIGN_COLS if n in head), None)
+        if pi is None or si is None:
+            sys.exit(f"reconcile_passes.py: {path}: long-format header {head!r} needs a position column "
+                     f"{LONG_POS_COLS} and a sign column {LONG_SIGN_COLS}")
         ki = next((head.index(n) for n in ('conf', 'confidence') if n in head), None)
         gi = head.index('gloss') if 'gloss' in head else None
         ai = head.index('alt') if getattr(a, 'keep_alts', False) and 'alt' in head else None
