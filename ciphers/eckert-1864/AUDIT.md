@@ -9187,3 +9187,171 @@ header "Washington" -> sent from Fort Monroe; E295 "[Brigadier General]'s which 
 FIX job (rule 7, decode.py entry notes, not applied here): E293 `plain: Webster Dodge apple` (Annapolis, Dodge, Webster), tail start after
 "Chief Vinton", actor unread M; E294 weasler = steamers (`variant:`); E295 palates = brigades (`variant:` or exception, C); E298 header place
 Fort Monroe, "Dealy" = operator. Requests: hdl.huntington.org 24 (19 dmQuery, 5 IIIF pages); archive.org 8 (3 advancedsearch, 5 djvu text).
+
+## AUDIT (FV-FM8b)
+
+Verifier FV-FM8b (account 1, for LANE LEDGER), 9 Oct 2026, 11:16-11:5x UTC by `date -u`; a separate session from the reader FM-R5b (account 1),
+not protecting its conclusions. Scope: **E280, E281, E283, E284, E285** (NOTES "## FM-R5b"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger
+mssEC 25 = Huntington object 5952. Nothing decoded beyond key look-ups in key.md (`decode.load_key()`). Key source for all five: `period`. Depth
+under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts: `fortmonroe/fv_fm8b_hdl.py` + `fv_fm8b_hdl2.py` (+ `.out`; CONTENTdm full text across all pointers on 24 clear-word pairs, then
+dmGetItemInfo on the 8 other-pointer hits that could be a clear copy, and the five page images at 2400 px to scratch), `fortmonroe/fv_fm8b_print.py`
+(+ `.out`; letters-only phrase grep over the 164 cached print-check volumes plus six djvu texts fetched to scratch: ORN I/3 `officialrecordso0003unse`,
+ORN I/11 `officialrecordso0011unse`, OR I/36 pt 3 `warofrebellion363unit`, I/42 pt 2 `422unit`, I/42 pt 3 `423unit`, Plum, *The Military Telegraph*
+II, `militarytelegraph02plumrich`), `fortmonroe/fv_fm8b_beapi.py` (+ `.out`; Grant Papers vols. 10 and 12, snippet only). The ~1,226 holder page
+transcriptions on disk (`sources/fortmonroe`, `sources/mssEC18`, `sources/mssEC19`) were grepped first (no requests).
+
+### 1. Duplicates, prior work, own transcription and image
+- **Duplicate diff:** pointers 5785, 5706, 5819, 5804, 5798 against every `###` header in ciphertext*.txt and status.json: each occurs only in its own
+  header (E280, E281, E283, E284, E285). Rare clear words (Tallapoosa, Maumee, Vanderhoef, Lizzie Baker, White Shoal, Gloster, mull fords) occur in
+  ciphertext.txt only in these entries. **No duplicate.** Related filed entry, not a duplicate: **E253** (Gilmore, Morehead City, 8 Oct 1864, offices
+  closed by fever, Kent dead) is the sequel to E280.
+- **Prior work:** `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=<date>' --step-type audit
+  --offline` for each of the five -> exit 4 each, holds: LEAD x1 = a target-level live claim (FIX-*, 10:49, names the slug, no unit; does not cover
+  these entries); UNCHECKED-NET aaymeloglu (no clone); UNCHECKED editions (no correspondent in items.tsv: done by hand below); Tomokiyo and cached
+  solver files CLEAR. No AUDIT.md/status.json class on any of the five before this section.
+- **Own transcription** (`sources/fortmonroe/p<pointer>.json`) matches ciphertext.txt for all five. **Image eye check this session, every line graded**
+  (`tools/iiif_lines.py --image ... --lines-per-crop 3 --distance 60 --prominence 15 --ink 190`: 27-28 lines found per page, debug overlay checked;
+  then entry strips cut from the same scratch images, nothing committed): all five entries read word for word as transcribed, including the words
+  this audit regrades (5706 "axis", "hope", "Wilson pint"; 5819 "anchor trance shore", "persons", "paulding", "tuslip tulip"; 5804 "youth Babcock";
+  5798 "france", "frog leg"). Small details: 5706 is written in an 8-column grid; 5819 and 5804 carry small word-count numerals over the header words
+  (1-11); 5804's "Lew" may be "Lem" (operator chat, not graded).
+
+### 2. Holder's full text, internal witnesses and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the LANE LEDGER hdl token, take 11:20,
+first request after the earlier takes' releases 11:29, release 11:33; 24 queries, then 8 dmGetItemInfo): fever+alarming 1 (5785), fever+fatal 2 (5785,
+13060), change+air 1 (5785), close+offices 3 (5785; 9257, 7968 = July 1865 Fuller/New Orleans, other), morehead+fever 0, cut+poles 12 (none 5706),
+paying+out 9 (5706; others other), detail+axes 0, gloster+cables 1 (5706), white house+connect 2 (5706; 2190 other), white+shoal 6 (5819; 3426-4311 =
+1862-63, other), tow+off 4 (5819; 7780, 12738, 10302 = Mississippi gunboats, other), chain+ready 6 (5819; others other), anchor+shore 2 (5819; 14138),
+parker+onondaga 4 (5819, 5820, 5824, 8544 = Parker to Welles 25 Jan 1865, other), mulford+boats 0, transferred+authority 1 (5804), babcock+respects 1
+(5804), boats+transfer 3 (5822, 6630, 6644, other), halifax 30, tallahassee 6 (5798; 10090/10092 = 1866 cipher, 8729 = Georgia, 12196, 5880 other),
+montauk+point 7 (5798; others other), latitude+steering 1 (5798), miles+shore 19 (none relevant). **No period clear copy of any of the five at
+another pointer** (the FV-FM5c/FV-FM6/FV-FM7b failure mode tested with common-word pairs, as briefed). 13060 (leaf 162, Fort Powhatan, 1 Oct 1864:
+an operator asks Eckert for leave, "my brother an oper in North Carolina has died of yellow fever") is context for E280 only.
+- **Internal witnesses (mssEC 25 on disk), not clear copies:** E284: 5803 (Beckwith to Babcock 3 Nov: the troops are to be transferred at Monroe;
+  Babcock's 3 Nov reply, printed below), 5805 (Babcock to Bowers 4 Nov 6.30 PM, printed below; Sheldon to Horner the same day, "not actually loaded
+  by mull fords"), 5808 (6 Nov, Lt Col John E. Mulford, assistant agent for exchange, to start at once with the Atlantic and Baltic). E283: 5819 first
+  entry (6 Dec, to O'Brien for Butler). E281: 5706 second entry (28 May; printed, below). E280: E253 (8 Oct, filed).
+- **Print, found (each a different text from the cipher entry; none prints the entry itself):**
+  - **E280:** W. R. Plum, *The Military Telegraph during the Civil War* (1882) vol. 2 pp.33-35 (OCR running heads; `militarytelegraph02plumrich`):
+    James R. Gilmore built and ran the Newbern-Morehead City-Newport Barracks-Bachelor's Creek line with operators "Herman Waterhouse, Douglass Kent,
+    Robt. B. Yanderhoof [Vanderhoef], D. C. McGaughey and B. F. Gilmore"; when yellow fever broke out "Herman Frank Waterhouse was convalescing in the
+    hospital at Newport Barracks ... volunteered to nurse [McGaughey]"; McGaughey, Waterhouse and Kent died; "In response to repeated requests for men
+    to take the places of these 'discharged' ones, Mr. Gilmore was ordered by Major Eckert to close the lines". Plum paraphrases the outcome of
+    requests like this one; he does not print or quote the telegram. OR I/33 p.67 names Pvt. Robert B. Vanderhoef, U.S. Military Telegraph operator.
+  - **E281:** OR I/36 pt 3 p.281 prints the **next entry on the same page** (Sheldon to Eckert, Fort Monroe, 28 May 1864: "On consulting General
+    Carr ... practicable to run a telegraph from Gloucester to West Point ...") and p.321 the Army of the Potomac operator's reply of 29 May to Eckert's
+    "dispatch of 27th": "the line need not be extended farther than White House ... cannot tell now where we will meet Bickford". Plum II pp.136-137:
+    McIntosh's party "constructed about twelve miles of line from Gloucester Point", the line "from Gloucester to West Point", F. T. Bickford at White
+    House. E281's own text ("detail of at least [30] [men] with axes ... cut polls ... machinery for paying it out") was not located (OR I/36 pt 3 by
+    phrase: "cut poles", "machinery for paying", "lay cables", "detail of at least" 0 relevant).
+  - **E283:** ORN ser. I vol. 11 pp.153-154, Porter to Commander Parker, Gosport [Norfolk] Navy Yard, **7 Dec 1864** (written instructions): "I
+    telegraphed you to send two vessels there at once ... You must give the light houses at White Shoal and Point of Shoals a careful protection ...
+    take them in tow"; and ORN I/11 p.188, Parker to Porter, Onondaga, Aiken's Landing, 11 Dec 1864: "I found the Hunchback and the Daylight cruising
+    between White Shoal light-house and Point of Shoals, as you had directed in a former telegram". **The sender and the recipient both refer to this
+    telegram in print; its own text is not printed there** (ORN I/11 by phrase: "two gunboats", "tow them off", "hold the persons", "keep a good
+    watch" 0 at 7 Dec).
+  - **E284:** OR I/42 pt 3 p.492 (Babcock to Bowers, Fort Monroe, 3 Nov 1864 7 p.m. = 5803 second entry; Bowers to Babcock, City Point, 3 Nov 9 p.m.,
+    "Provide transportation at Fort Monroe for the infantry. The boats from here are not sea going") and p.506 (Babcock to Bowers, Fort Monroe, 4 Nov
+    6.30 p.m. = 5805 second entry, "So rough here we had to send boats off Craney Island to transfer"); Grant Papers vol. 12 notes quote the same
+    Babcock-Bowers series (be-api snippets). E284 itself ("only boat ... Lizzie Baker", "Mulford's boats just as they are") was not located: OR I/42
+    pt 3 "Lizzie" 5 hits = the tug Lizzie Freeman (Dec), "Mulford" 4 other, "just as they are" 0; Grant Papers vol. 12 "Lizzie Baker" 0, "transferred
+    here" 0. "Lizzie Baker" occurs in OR I/36 pt 2 (May-June 1864, other).
+  - **E285:** ORN ser. I vol. 10 pp.603-604, Porter to Lt. Cdr. James Parker, Maumee, Hampton Roads, **26 Oct 1864** ("orders of same date and tenor"
+    to De Haven, Tallapoosa, and Harris, Yantic): "go in pursuit of the Tallahassee. Keep 40 miles off the coast until you get up to the latitude of
+    Boston, then proceed off the port of Halifax ... see that she does not get in". The 27 Oct telegram itself is not in ORN I/10 (ends 27 Oct;
+    "Montauk" 0 in the text body) or I/11 (begins 28 Oct; "Montauk" only in the vessel list); ORN I/3 0.
+- **Not searched / unreachable:** Google Books (not called); Grant Papers vol. 13; the press of the day (none of the five is a press telegram);
+  Welles's diary (E285, E283 navy traffic).
+- **Result:** no clear copy and no printed text of any of the five; print refers to E283 explicitly and supplies the orders behind E285 and the
+  context of E280, E281 and E284.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E280:** sound. **"togoto more head" = "to go to Morehead"** (Morehead City, N.C., an office on Gilmore's line, Plum II p.33): phonetic plain,
+  grade I; FM-R5b's U resolved: "I am advised by Surgeon to go to Morehead for a change of air". **Decoder slip: "immediately - wrangle"** is printed as
+  "immediatelywrangle" (the hyphen glued the two words); wrangle = [Telegraph] (H) is dropped: "Can [3] [Men] be sent immediately? [Telegraph]
+  answer to [Monroe]". "haveben" = have been; "yell oh" = yellow; fever plain (note exists). Header "Flora harsh postpone peasant appian Mary lamp" =
+  [Newbern] [27] [By the way of] [Monroe] {6.30 PM} [30]: the token grades stand (H); whether "27" is a Newbern dateline (sent 27 Sept, relayed 30) is
+  M as to meaning. Count: **H 26 of 26 code groups** (decoder H 25 + wrangle).
+- **E281:** two decoder misfires on plain English: **"axis" is plain "axes"** ("at least [30] [men] with axes ... to cut polls"; image "axis"; key row
+  Axis = Missouri, p.10 l.2 R, does not fit) and **"hope" is plain** ("by the time he reaches the latter place hope we will be able to connect";
+  key row Hope = 19 does not fit). "Wilson pint" = [West] Point (pint plain, phonetic), "polls" = poles, Sugar = [?]. Count: **H 21 of 21 code groups**
+  (decoder H 23 - axis - hope).
+- **E283:** two decoder misfires and one M raised: **"anchor" is plain** ("permit vessels to anchor [near] shore"; Porter's own 7 Dec instructions:
+  "a vessel anchored close inshore"; key row Anchor = Donelson does not fit); **"persons" is plain** ("hold the persons in them as prisoners"; key
+  row Person = 5 does not fit); **"paulding" = [Convoy]** (key row, H; "give [convoy] to vessels" -- Porter's instructions have the gunboats "guarding
+  vessels at anchor or underway"): FM-R5b's M -> H. "furry wag" = for any [Surprise] (furry phonetic plain, wag H), "weasel up" = [Steam] up,
+  "tuslip" = to slip; **"tulip" = [Open]** reads nothing here (after "chain ready to slip") -> **M**. **"Dutch sharpes Bergen" = Dutch [Gap?] [James]**:
+  sharpes is not a key row; Dutch Gap is where the Onondaga lay (Porter, 7 Dec: "vessels now at Dutch Gap") -> I. "polkaer Parker" = [Commander]
+  Parker, "Ports mouth libby" = Portsmouth {6 PM} (Gosport Navy Yard is at Portsmouth, as Porter's instructions are dated). Count: **H 20, M 1
+  (tulip), I 1 (sharpes) of 22 code groups**.
+- **E284:** header corrections from the image and the siblings: **"youth Babcock" = [Signature] Babcock**, i.e. the message is **Lt. Col. O. E.
+  Babcock's** (Grant's aide, at Fort Monroe 3-5 Nov to ship the troops; 5803, 5805 and OR I/42 pt 3 pp.492, 506 sign the same way), not Sheldon's;
+  "Bourse" = **Lt. Col. T. S. Bowers**, AAG at City Point (phonetic plain; "Mary forth to Bourse" in 5805 is the printed 4 Nov 6.30 p.m. "Lieutenant-
+  Colonel Bowers"), via the cipher operator S. H. Beckwith; "Lew is here sends respects" is operator chat after the signature. "for" in "Nelly for
+  Bourse" is most likely the date ("forth" = 4th in 5805), not the preposition (I). **"pandora mull fords" = [Colonel] Mulford** (Lt. Col. John E.
+  Mulford, assistant agent of exchange, whose flag-of-truce boats were at Fort Monroe, 5808), "toothache" = to take, "wilby" = will be, "boots" =
+  boats. **"tulip" after Bourse = [Open]** reads nothing -> **M** (same use in 5805). **Time conflict, recorded not settled:** Nelly = {8.30 PM}
+  (H), but the ledger writes E284 before the printed 6.30 p.m. message of the same day (5805), which reports all but the Iolas arrived, while E284
+  says only the Lizzie Baker has reported; the time word or the ledger order is out. Count: **H 11, M 1 (tulip) of 12 code groups**.
+- **E285:** sound. "Ham ton wileys" = Hampton [Road]s, "Hallie facts" = Halifax, "Tall a has see" = Tallahassee (phonetic plain). **France and
+  Frog are both [New York]** (key p.14 l.1 L and R, H); "Lampoon spoons" = [40] [Mile]s agrees with Porter's printed order ("Keep 40 miles off the
+  coast"). "leg plaster" = [45] (40 + 5). Count: **H 21 of 21 code groups**.
+
+### 4. Classification (key `period`)
+`depth_pct` = H(or C) / code-word groups (plain names and phonetic words excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E280** Gilmore, Newbern, via Fort Monroe (Sheldon) to Maj. Eckert, 30 Sept 1864 6.30 PM | **N3** (weak: Plum II pp.33-35 gives the substance of Gilmore's requests for men and Eckert's order to close the lines, not this telegram) | no | **D3** | 100 (26 H of 26) | code clause: Spit = Men twice here and passim, Animal/Appian = Monroe; external (non-statistical): Plum II pp.33-35 (Waterhouse at Newport Barracks hospital, Kent, Vanderhoef, Morehead City office, requests for men, lines closed); sequel E253 |
+| **E281** T. T. Eckert, Washington, to Geo. D. Sheldon, Fort Monroe, 27 May 1864 | **N3** | no | **D3** | 100 (21 H of 21) | code clause: Wicoff/Wilson Vernon = West Point, Spit = Men twice; external: OR I/36 pt 3 p.281 (Sheldon's 28 May reply on the Gloucester-West Point line, same page) and p.321 (reply to Eckert's dispatch of 27th: line to White House, Bickford); Plum II pp.136-137 |
+| **E283** D. D. Porter, Portsmouth (Gosport Navy Yard), via Fort Monroe and R. O'Brien to Cdr. W. A. Parker, Onondaga, 7 Dec 1864 6 PM | **N3** (the sender's and recipient's printed letters refer to it -- ORN I/11 pp.153-154, p.188 -- but do not print it) | no (referred to) | **D3** | 90.9 (20 H of 22; tulip M, sharpes I) | external (non-statistical): ORN I/11 pp.153-154 "I telegraphed you to send two vessels there at once", White Shoal and Point of Shoals light-houses; p.188 Hunchback and Daylight "cruising between White Shoal light-house and Point of Shoals, as you had directed in a former telegram"; code clause: Plank Sharons = 2 Gunboats, Niagara = Porter passim |
+| **E284** Lt. Col. O. E. Babcock, Fort Monroe, to Lt. Col. T. S. Bowers, City Point (via S. H. Beckwith), 4 Nov 1864 | **N3** | no | **D3** | 91.7 (11 H of 12; tulip M) | external: OR I/42 pt 3 pp.492, 506 (Babcock-Bowers series of 3-4 Nov on shipping the troops from Fort Monroe), 5808 Mulford's boats; code clause: Whinny/Spit = troops/men, Pandora = Colonel passim (5805 "Webster pandora" = Colonel Webster) |
+| **E285** D. D. Porter, Hampton Roads, via Fort Monroe (Sheldon) to Maj. Eckert for the Secretary of the Navy, 27 Oct 1864 6.30 PM | **N3** | no | **D3** | 100 (21 H of 21) | external (non-statistical): ORN I/10 pp.603-604, Porter's orders of 26 Oct to Maumee, Tallapoosa and Yantic (Tallahassee, Halifax, 40 miles off the coast); code clause: Spoons = Miles four times, Stephen/Sligo = In the |
+
+- **E280: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 30 Sept 1864 Gilmore at Newbern, through Fort Monroe, told
+  Major Eckert that yellow fever was prevailing to an alarming extent, that the operator Waterhouse was sick at Newport Barracks, that Kent would stay
+  only a few days, that Vanderhoef should be relieved and had been advised by the surgeon to go to Morehead for a change of air, and asked for three men
+  or permission to close the offices. Plum, The Military Telegraph (1882) vol. 2 pp.33-35, describes these requests and their outcome but does not print
+  this telegram; it was not located in the Official Records (ser. I vol. 42 pt 2, by phrase) or the Huntington's full-text search (searched 9 Oct 2026)."
+  Unsafe: any novelty word; "unknown episode". Depth sentence (mine): "On 30 Sept 1864 the Newbern telegraph chief, his operators down with yellow
+  fever, asked Eckert for three men or leave to close the offices."
+- **E281: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 27 May 1864 Major Eckert told Sheldon at Fort Monroe to get a detail of at least
+  thirty men with axes to cut poles for a telegraph line from Gloucester to West Point, said that Bickford would leave Port Royal on the Rappahannock
+  with twelve men next morning to build from West Point towards White House on the railroad, and asked whether Sheldon could lay cables at Gloucester
+  and West Point. Sheldon's reply of 28 May is printed in the Official Records (ser. I vol. 36 pt 3, p.281); this telegram was not located there, in
+  Plum's Military Telegraph or the Huntington's full-text search (searched 9 Oct 2026)." Depth sentence (mine): "On 27 May 1864 Eckert ordered a
+  telegraph line cut through from Gloucester to West Point while Bickford's party built on toward White House."
+- **E283: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 7 Dec 1864 Admiral Porter, at Portsmouth, told Commander Parker of the Onondaga
+  to send two gunboats at once to cruise between White Shoal light-house and Point of Shoals night and day, to keep rebel boats off, tow off vessels
+  anchored near shore and hold the men in any boat found in the river as prisoners. Porter's written instructions of the same day (Official Records of
+  the Union and Confederate Navies, ser. I vol. 11, pp.153-154: 'I telegraphed you to send two vessels there at once') and Parker's report of 11 Dec
+  (p.188) refer to this telegram; its text was not located there or in the Huntington's full-text search (searched 9 Oct 2026)." Unsafe: "unknown
+  telegram"; any novelty word. Depth sentence (mine): "On 7 Dec 1864 Porter had Parker post two gunboats between White Shoal light and Point of Shoals
+  to stop rebel boats on the James."
+- **E284: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 4 Nov 1864 Lt. Col. Orville E. Babcock at Fort Monroe told Lt. Col. T. S.
+  Bowers at City Point that the troops could not be transferred there within 48 hours unless he were authorized to take enough of Colonel Mulford's
+  boats as they were, the Lizzie Baker being the only boat yet reported, and asked by telegraph whether to take them. Babcock's other telegrams to
+  Bowers of 3 and 4 Nov are printed in the Official Records (ser. I vol. 42 pt 3, pp.492, 506); this one was not located there, in the Grant Papers
+  vol. 12 (snippet search) or the Huntington's full-text search (searched 9 Oct 2026)." Unsafe: the FM-R5b header "Sheldon to S. H. Beckwith" as the
+  correspondents. Depth sentence (mine): "On 4 Nov 1864 Babcock, shipping troops from Fort Monroe, asked leave to seize Mulford's exchange boats because
+  only one transport had arrived."
+- **E285: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 27 Oct 1864 Admiral Porter, through Fort Monroe, reported to the Secretary of
+  the Navy that the Tallapoosa was near Montauk Point, having run the coast 20 miles off shore, the Yantic in the latitude of New York 40 miles off
+  shore and the Maumee in the same latitude 45 or 50 miles off, all steering for Halifax with orders to get there before the Tallahassee. Porter's
+  orders to the three ships of 26 Oct are printed in the Official Records of the Union and Confederate Navies (ser. I vol. 10, pp.603-604); this
+  telegram was not located there, in vol. 11 or the Huntington's full-text search (searched 9 Oct 2026)." Depth sentence (mine): "On 27 Oct 1864
+  Porter told Welles that three gunboats were racing up the coast to reach Halifax before the Tallahassee."
+
+### 5. Postmortem
+FM-R5b read all five soundly in substance and its "not located" holds for the texts; the clear-copy failure mode of FV-FM5c-FV-FM7b did not recur
+(24 common-word pairs, all pointers, no clear copy). Over-claims and slips corrected here: E284's header names the wrong correspondents (Sheldon to
+Beckwith; the text is Babcock's, to Bowers, via Beckwith); four key rows misfire on plain English and inflate H counts (E281 axis, hope; E283 anchor,
+persons); E283 paulding was graded M though its key row (Convoy) fits; E280's "togoto more head" (Morehead) and the dropped "wrangle" were left unread.
+FM-R5b's "not located (ORN I/10-11 searched)" for E283 and E285 is true of the texts but missed that ORN prints the orders and the reference to the
+E283 telegram: its rare-word phrase grep was right to fail, a date-and-correspondent read of the volume finds them. Reading corrections for a FIX job
+(rule 7, decode.py entry notes; not applied here): E280 `wrangle` after "immediately -" decoded as [Telegraph] (hyphen split), "togoto more head" plain
+(Morehead); E281 `plain: axis hope`; E283 `plain: anchor persons`, `graded: tulip:M` and paulding H (drop `graded: paulding:M`), sharpes I (Gap);
+E284 header to "Lt. Col. O. E. Babcock to Lt. Col. T. S. Bowers via S. H. Beckwith", `graded: tulip:M`, time-word conflict noted; E285 none.
+Requests: hdl.huntington.org 38 (24 dmQuery, 8 dmGetItemInfo, 6 IIIF page fetches, one a retry of 5819 after a dropped connection); archive.org 6
+djvu downloads; be-api 9; Google Books 0.
