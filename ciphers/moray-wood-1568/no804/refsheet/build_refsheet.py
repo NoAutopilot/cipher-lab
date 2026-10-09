@@ -1,3 +1,4 @@
+# promoted to tools/decipher_sheet.py key --mi-panel (MQS-SHEETS, 9 Oct 2026); kept because its outputs are cited
 """RUN1-MOR (account 1, 4 Oct 2026): the no.804 labelling reference sheet (no vision call). Input: the 134 glyph crops
 cut by `tools/glyph_atlas.py crop --image IMG_R8345_I38545_P4.jpg --box ...` from no804/refsheet/boxes.tsv (full-size
 DECODE image kept in the scratchpad, sha1 in images/manifest.json). Output: refsheet_classes.png (one row per glyph class in
