@@ -98,3 +98,14 @@ Mercure historique et politique and Europäische Fama, April-May 1713, for the n
 you know is in that volume). One request at a time, >= 1.5 s; stop the host on 429. Record per check route/query/result in each folder's
 NOTES ("GB-PHRASE"); a hit sharing two rare entities within +-3 days is SUBSTANCE: quote it and flag ROOM for the lane (it goes to the
 verifier). No decode, no class. ~$2.5.
+
+### VB-EAD (Sonnet, cap 2, box 45 min; host www.nationaalarchief.nl, "NA" take/release): vanbeuningen-dewitt-1657 pool, sibling cipher letters
+Supply (c): KEY-OFFICES row for ciphers/vanbeuningen-dewitt-1657/key.tsv (491/517 coded tokens C); NOTES "Remaining gaps" bullet "other Van
+Beuningen letters of 1656-1658 in NA 3.01.17 inv.1536-1541" and the Verdict's cheapest next. Intake gate 07:2x: found-solved, exit 0 (the
+19/29 Sept letter's text is in print; this job looks for UNREAD siblings in the same key). Prior work check 1: grep NOTES/AUDIT for every inv.nr
+you list. Steps: ONE request for the archive's EAD (`www.nationaalarchief.nl/onderzoeken/archief/3.01.17/download/xml`, the route NOTES line
+113 used), saved to sources/na-3.01.17/2026-10-09/ (README with URL, date, sha256; it is a source snapshot, never edited). Grep it (script,
+not a model read) for cijfer, gecijferd, sleutel, chiffre, geheimschrift, ontcijfer and for Beuningen across 1655-1660; write
+ciphers/vanbeuningen-dewitt-1657/siblings_ead.tsv (inv.nr, date, title, matched term, digitised y/n from the `<dao>`, already-printed
+pointer if NOTES names one, e.g. the 28 Oct 1657 letters Kernkamp deciphered = known). Do NOT fetch images. NOTES "VB-EAD" with the ranked
+list (unread + digitised + Van Beuningen as sender first) and the next step per row. ~$1.5.
