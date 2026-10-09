@@ -68,3 +68,5 @@ sorter feed, if it meets its gate; (3) the confirm item read ONCE with today's p
 follow-slope where a line slopes) -- Amendment 2 guard 2 asks for the final pipeline's score on it whatever that pipeline
 is; (4) the live letter f.117r under the folder's own PREREG and power control (guard 3). This section freezes (1)-(4);
 the commit hash of this file at the first round-3 read is named in the ROOM line that starts it.
+
+## Confirm look taken (TXE-Q, 9 Oct 2026 08:38 UTC): spinelli-c1519-confirm err_true 0.088 (17/193, 95% 0.056-0.137), single passes 0.104 / 0.083; counted as the confirm item's one look.
