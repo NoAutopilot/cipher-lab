@@ -82,3 +82,10 @@ and pastes the output, then audits the revision under rule 10 step 4: AUDIT.md's
 SECOND-OPINIONS-QUEUE.tsv row for this target, status.json depth fields (`tools/depth_check.py` exit 0) and NEAR.md's row all carry the
 revised counts (UNA-HELLEN's before/after table in NOTES "UNA-HELLEN (9 Oct 2026)"). Write AUDIT.md "## AUDIT (VERIFY-HELLEN)" with the
 N-class and depth re-stated (lowered on revision if the bar says so) and one true sentence about the content. Do not decode further.
+
+### SHELF-ROWS (account-2; Opus 5.5; cap 2; box 30 min)
+`python3 tools/tool_shelf.py --check` fails: tools/families/cycling_homophonic.py, masc_inj.py and masc_words.py have no row in
+tools/data/tool_shelf.tsv (commit a7fdb795 added them without rows; SYSTEM-MAP rule, CLAUDE.md Usage 8a). Read each file's docstring
+and the HYPOTHESES.md rows that cite it, write the three shelf rows with the grade the evidence on file supports (untested unless a
+control result is cited), a SYSTEM.md row each if system_map_check.py asks, and make `tool_shelf.py --check` and
+`system_map_check.py` both exit 0. No other change.
