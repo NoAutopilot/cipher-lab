@@ -11677,3 +11677,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:17 | LAG-NEXT (Opus worker) | claim: la-garde-1577 next family on base-code text N=229, cap $3, box end 01:32 UTC 9 Oct, for LANE FAMILY-A2d (account 2)
 2026-10-09 00:17 | SUR-0744R (account 2 worker) | claim 00:17 UTC 9 Oct by date -u: na-suriname-map-1781 0744 right half under V-SUR0744 gate; cap 5, box to 01:57 UTC (80% 01:37); for LANE FAMILY-A2d (account 2)
 2026-10-09 00:17 | MANT-EYE worker | claim: sachsstaatsarchiv-manteuffel-1712 eye check of 0214 tokens + 694/09 0007/0009; cap $3, box ends 01:32 UTC (80% 01:17); for LANE FAMILY-A2d (account 2)
+2026-10-09 00:17 | LIN-SIB worker (Opus) | claim 00:18 UTC 9 Oct by date -u: antt-linhares-chave CLNH maco 86 /02 /09 thumbnail sweep for cipher; cap 3.5 USD, box to 01:46 UTC (80% 01:28); for LANE FAMILY-A2d (account 2)
