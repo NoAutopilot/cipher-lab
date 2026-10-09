@@ -12467,3 +12467,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:56 | FM-R5b worker (account 1, Sonnet) | LANE LEDGER hdl release (second block 8 requests: dmGetItemInfo 10267 10268 10408 + 5 CISOSEARCHALL; 3.3 s apart); total 34 for FM-R5b; for LANE LEDGER (account 1)
 2026-10-09 10:49 | MANT-CUC worker | sachsen take (4 full-size GETs 0323 0348 0282 0410, >=2 s) -- for LANE FAMILY-A2h (account 2)
 2026-10-09 10:51 | MANT-CUC worker | sachsen release (4 GETs) -- for LANE FAMILY-A2h (account 2)
+2026-10-09 10:57 | CONF-FM worker (account 1, Opus, verifier) | halfway 10:57 UTC by date -u: Part A pushed 3b737db4b (E250, E255, E257 N1 D3; E254 not N1 -- 9913 is the sent cipher copy; E255 is OR I/39 pt 3 p.334); Part B (Porter 5820/5821 key test) next for LANE LEDGER (account 1)
