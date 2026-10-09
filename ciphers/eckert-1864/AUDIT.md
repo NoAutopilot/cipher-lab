@@ -12379,3 +12379,80 @@ Failure: MS18-R4 called E343 and E345 "not located" on a cached file with the wr
 
 Requests: hdl.huntington.org 13 (8 CISOSEARCHALL, 2 item info, 3 IIIF), all 200; archive.org 15 (8 djvu texts, one 403; 2 page_numbers; 5 page
 images); googleapis.com 6; be-api.us.archive.org 5. Queued: WORK-QUEUE `AUD2-LEDGER-31` (E346), SO-ECKERT-E346.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-30)
+
+Second verifier AUD2-LEDGER-30 (account 4, for the orchestrator (account-4); row queued by LANE LEDGER (account 1)), 9 Oct 2026, 21:21-21:4x UTC by
+`date -u`; a separate session and account from the reader MS18-R3 and the first auditor FV-MS18d (account 1); this session had not read or audited
+these entries before. Scope: **E333, E335, E340** (WORK-QUEUE AUD2-LEDGER-30). Nothing decoded beyond key look-ups. Key source: `period`. No spec
+exists for eckert-1864, so `judge_plaintext.py` was not run. Committed: this section; `ms18/aud2_ledger30_hdl.py` + `.out` (12 CONTENTdm queries
+FV-MS18d did not run, 8 item infos); `ms18/aud2_ledger30_search.py` + `.out` (Google Books, Chronicling America by date window, S2, CORE, OpenAlex);
+`ms18/aud2_ledger30_ca_pages.py` (reads named Chronicling America pages' OCR; page texts kept in scratch, passages quoted below);
+`ms18/aud2_ledger30_phrases.txt` + `aud2_ledger30_sources.tsv` (tools/print_check.py input; its TSV kept in scratch, summarised below); three
+JSTOR-QUEUE.tsv rows. Re-derivation: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current" (after FIX-FM15 carried FV-MS18d s.5).
+Image: not re-checked this session (FV-MS18d eye-checked every graded line at 2400 px; no token below turns on the image).
+
+### 1. Families FV-MS18d did not cover, and what this pass did
+| Family | FV-MS18d | This pass |
+|---|---|---|
+| ORN ser. I vol. 21 pp.302-303 (the E333 source) | read | **re-read** in the volume's djvu text (`officialrecordso0021unse`): Savage's No. 148 also says the gang's original plan was to board "a given steamer (one of the New York and New Orleans line touching at Havana)" and "run her into Mobile", that four went to New York "in the latter part of last month" and three more on the 3d. It describes **Phelps as "very tall and slim"** and **Mouthrey as "thick set, and very strongly built"**: E333's "Phillips is tall and thin, stout built" joins the two (the telegram's wording, not a decoding fault; "stout" for Lasalle agrees). The next item is Seward to Stanton, 27 May (Galveston, other). No Dix reply or arrest in the volume ("Dix" 0 as a name) |
+| New York press, 26 May-2 June 1864 | Chronicling America, titles only | **6 page OCRs read** (`aud2_ledger30_ca_pages.py`; terms Phelps, Lasalle, Mouthr-, Capt. Edwards, "seize a/the/one", "plot to"): New-York Daily Tribune 30 May p.6, 31 May p.6; New York Herald 27 May p.3, 30 May p.6; Chicago Daily Tribune 27 May p.2; Evening Star 27 May p.2: only unrelated Phelpses (a Phelps, Dodge & Co. sale, a passenger list, convention delegates); no report of the plot. Tribune 2 June p.3 did not load (IncompleteRead). OCR-dependent and page-ranked: a weak negative |
+| Baker, *History of the U.S. Secret Service* (1867) | not searched | djvu text (`histsecretservice00bakerich`): Alberger 0, "safe key" 0, Briscoe/Lackey episode not found by grep ("Lynchburg" 1, other); Mouthrey/Lasalle/Phelps/Portuguese 0 |
+| Secretary of the Navy, *Report*, 5 Dec 1864 | not searched | djvu text (`reportofsecre00unit`, 170 KB; the Secretary's report, not the bureau appendices): Berrien 0, "part cannon" 0, Pennock 1 (other) |
+| ORN ser. I vol. 25 | not searched (vol. 26 read) | djvu text (`officialrecordso0025unse`): Berrien 2 (John M. Berrien, Attorney-General 1829, and the index), "part cannon" 0; the volume ends before March 1864 |
+| Huntington CONTENTdm, queries not run before | 14 queries | 12 more (all pointers): Edwards Havana 1 (9745 own); Phelps 13 (none 1864 Havana by item info sample); Horner Havana 3 (9745; **9097** = F. W. Seward to Horner 15 Oct 1864 naming "Thomas Savage vice Consul ... Havana"; **8439** = Dec 1863 order to search the Havana and Panama steamers -- context, other); Turner Dix plot 0; seize steamer New Orleans 1 (8041, other); **Berrien 6** (9693 own; 9942, 9953, 5850 = **J. M. Berrien, Navy Yard, Norfolk/Fort Monroe, Jan-Feb 1865**; 5886/5887 not opened); Pennock Wise powder 1 (4505); Wise ordnance Cairo 2 (4505, 9693); Alberger Hall 1 (10056 own); **safe key 6** (10056 own; **8826**; 10115/10363/5703/9251 other by item info or not opened); **Mrs Alberger 2** (10056, **8828**); Church St Lynchburg 0. No clear copy of E333, E335 or E340 |
+| Lynchburg sting, Sept-Oct 1865 (E340's setting) | holder 10055/8004/8825 only; "inference only" | **holder 8826** (p.348, Lynchburg 29 Sept 1865 2.30 PM, to Gen. Baker): "Genl Curtis has arrested Genl Briscoe ---- I searched him and his effects found the money also the safe Key in the safe after the robbery was committed ---- Lackey will be on Evening train with another key"; **holder 8828** (p.350, Lynchburg 30 Sept 1865, A. S. S. Foote to Eckert): "I have notified Capt. Alberger & others ---- they left on the train this P M & will be in Washn tomorrow morning". **Press** (Chronicling America, `Alberger` 15 Sept-31 Dec 1865: 67 pages; 3 read): *Daily Ohio Statesman* 3 Oct 1865 p.3 and *Cairo Evening Times* 3 Oct 1865 p.1 (the same Washington dispatch): Brevet Brig. Gen. J. C. Briscoe (109th Pennsylvania), commanding at Lynchburg, and the sutler A. W. Lackey, committed to the Old Capitol; Briscoe "took an impression of the safe key with wax"; Alberger "informed the Secretary of War, and two or three of General Baker's officers were sent down"; "Alberger, the honest Quartermaster, is on duty at his old post"; *Norfolk Post* 5 Oct 1865 p.1: "Captain M. H. Alberger" approached by Lackey, false keys made in Philadelphia. Two papers print "Capt. W. A. Alberger"; the holder and the Norfolk Post have M. H. |
+| Quoted-phrase pass (tools/print_check.py, 8 phrases + 1 control) | Google Books by word | Control ("Mouthrey has a Portuguese passport", ORN I/21 p.303): **found** in the listed source (1 exact), ia-global (3 items: ORN I/21 in three scans) and Google Books (2 ORN printings) -- the route works. The 8 decoded phrases: listed sources (ORN I/21, Baker 1867, SecNav 1864) no hits; ia-global no hits on 6, 502 on 2 ("part cannon and part musket", "Get from Hall the safe key ..."); Google Books word-match counts only (hundreds of volumes, none quoting a phrase; the E333 phrase returns ORN volumes on its words); OpenAlex no hits; S2 429 on 4; CrossRef nothing relevant |
+| Google Books, S2, CORE, OpenAlex (targeted) | GB 8 queries | GB 9 (keyed, `country=US`): Mouthrey/Monthny Lasalle -> ORN I/21 only; "Morris H. Alberger" 67 (21st New York Volunteers; later Buffalo/Philadelphia; a 1909 private pension act "late major and quartermaster, United States Volunteers"); "Alberger" Lynchburg 1865 0 relevant; Berrien Pittsburgh powder 0 relevant; S2 3 queries 0 relevant; CORE 2, OpenAlex 2 + print_check's: nothing on the plot, the powder or the sting (OpenAlex: *Gray Ghostbusters* (1988) on the keywords, not opened) |
+| JSTOR | not queued | 3 rows queued (E333 family i; E335 family i; E340 Briscoe/Lackey/Lynchburg); never blocking |
+| Unreachable / not searched | -- | Dix papers (Columbia); Turner-Baker papers (NARA M797); Navy Bureau of Ordnance letter books (NARA RG 74) and Pennock papers; the Briscoe court-martial or commission record (NARA RG 153) and Baker's case files (RG 94/110); the Lynchburg press (not on the route); the New York press page by page; HathiTrust (Cloudflare); NARA catalog (no key) |
+
+### 2. Findings
+- **E333.** The second pass finds nothing that prints the telegram. The N2 test: N2 needs this telegram's own plaintext known elsewhere. What is printed is
+  its source (Savage's dispatch, ORN I/21 pp.302-303), in different words and fuller ("38 to 45 years", "very tall and slim", "thick set"), and the telegram
+  merges and abridges it ("Phillips ... tall and thin, stout built"). That is a source, not a print of the plaintext, so **N3 stands, weak, bordering N2**,
+  as FV-MS18d set it. The telegram is dated 26 May, the day before Seward's printed letter of transmittal to Welles (27 May): the War Department had the
+  dispatch by 26 May by a route not printed here (unsettled, not inferred further).
+- **E335.** No print of the telegram, and no print of the Pennock request (holder 4505) it answers. "Captain Berrien" at Pittsburgh is **not identified**
+  here: the holder's J. M. Berrien of Jan-Feb 1865 is at the Navy Yard, Norfolk/Fort Monroe, and nothing read puts him at Pittsburgh in March 1864. **N3
+  stands.**
+- **E340.** The telegram is not printed, but its setting now is, in the holder's own clear copies and the press of 3-5 Oct 1865: Briscoe's attempt on the
+  Lynchburg quartermaster's safe with false keys, Briscoe searched "and his effects found the money also the safe Key" (8826, 29 Sept), and Alberger
+  going up to Washington by the 30 Sept evening train with "others" (8828), so that he is in Washington on 1 Oct when E340 is sent. FV-MS18d's "that the
+  safe key belonged to L. C. Baker's Lynchburg operation is inference only" is **narrowed**: that the Lynchburg quartermaster's safe and its key were the
+  object of the Briscoe-Lackey plot is printed and in the holder (C-grade context); that the key E340 asks for is that safe's key, wanted in Washington as
+  evidence, stays inference (I). **N3 stands; D3 stands with a stronger external check.**
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E333 | **N3** (kept; weak, bordering N2: every fact is printed in Savage's dispatch, ORN ser. I vol. 21 pp.302-303; the telegram not located) | period | **D3** (kept: H 27 + M 1 of 28 code groups, as FV-MS18d graded and FIX-FM15 carried; external non-statistical: ORN I/21 pp.302-303, re-read) | not located after FV-MS18d's search and s.1 |
+| E335 | **N3** (kept) | period | **D3** (kept: H 16 of 16; external: holder 4505, the telegram it answers) | not located after FV-MS18d's search and s.1 |
+| E340 | **N3** (kept) | period | **D3** (kept: H 8 of 8, rest plain; external non-statistical, strengthened: holder 8826 and 8828, and the Daily Ohio Statesman 3 Oct 1865 p.3, Cairo Evening Times 3 Oct 1865 p.1 and Norfolk Post 5 Oct 1865 p.1 on the Briscoe-Lackey safe plot) | not located after FV-MS18d's search and s.1 |
+
+- Not N4 for any: the Dix, Turner-Baker, Navy Ordnance, Pennock and Briscoe/Baker files, the Lynchburg press and HathiTrust not searched; JSTOR rows open.
+  Not D4: no fresh rule-7 re-derivation session; E333's M token (pause) open.
+- **Safe sentences.** E333 and E335: FV-MS18d's, unchanged (E335 may add "and in the Secretary of the Navy's report of December 1864"). E340: "Read at grade H
+  with War Department Cipher No. 1: on 1 October 1865 Capt. M. H. Alberger, assistant quartermaster at Lynchburg, telegraphed from Washington to Mrs M. H.
+  Alberger at 115 Church Street, Lynchburg, to get the safe key from Hall and bring it with her. It was sent two days after General Briscoe's arrest for an
+  attempt on the Lynchburg quartermaster's safe with false keys, which Alberger had reported (reported in the press of 3-5 October 1865 and in the
+  Huntington's clear copies of 29-30 September); this telegram was not located in print or in the Huntington's full-text search (searched 9 Oct 2026)."
+  Depth sentence (D3): FV-MS18d's, unchanged.
+- **Unsafe:** "first", "new", "unpublished" or "previously unread" for any of the three; E333 "Phillips is stout" as Savage's description (it is
+  Mouthrey's); E333 "the War Department learned of the plot from Seward's letter of 27 May" (the telegram is dated 26 May); E335 identifying Capt. Berrien
+  with J. M. Berrien of the Norfolk Navy Yard; E340 "the safe key was evidence against Briscoe" as read (inference), "Alberger was at Lynchburg on 1 Oct"
+  (8828 puts him in Washington).
+
+### 4. Postmortem and fixes (for the next FIX job; reading.md not edited here)
+- No over-claim found in FV-MS18d's classes or counts. One narrowing: E340's "inference only" note understated what is printed; status.json `gap` and
+  `depth_check` for E340 updated here, and `audit_status` "two audits" with this section in `audit_refs` for all three.
+- **ciphertext.txt E340 header/note:** add "setting: Briscoe-Lackey attempt on the Lynchburg quartermaster's safe (holder 8826, 29 Sept 1865; 8828, 30
+  Sept 1865, Alberger to Washington; Daily Ohio Statesman 3 Oct 1865 p.3, Norfolk Post 5 Oct 1865 p.1)"; keep "the key's purpose is inference".
+- **ciphertext.txt E333 note:** "Phillips ... stout built" joins Savage's Phelps (tall, slim) and Mouthrey (thick set); the telegram's wording, not a decode
+  fault. **E335 note:** Berrien unidentified (holder J. M. Berrien, Norfolk Navy Yard, 1865: not shown to be the same man).
+- SECOND-OPINIONS-QUEUE rows SO-ECKERT-E333/E335/E340: no count or class changed, rows left as filed; the E340 prompt should carry the 8826/8828 and press
+  lines before it is answered.
+Requests: hdl.huntington.org 20 (12 CISOSEARCHALL, 8 item info; all 200); archive.org 6 (5 djvu, 1 x 403 on a guessed OR ser. III vol. 4 id, not
+retried) + 5 advancedsearch + print_check's 3; be-api.us.archive.org 9 (print_check, 2 x 502); www.loc.gov 7 search + 13 page/full-text (1
+IncompleteRead) + tile.loc.gov via the same; chroniclingamerica.loc.gov 2 (403, legacy OCR route, not retried); www.googleapis.com 9 + print_check's 9
++ 4; api.openalex.org 2 + 10; api.semanticscholar.org 3 + 7 (429 on 4); api.core.ac.uk 2; api.crossref.org 1.
