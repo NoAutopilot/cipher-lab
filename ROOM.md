@@ -13256,3 +13256,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 21:17 | FV-MS18g (Opus 5.5 first verifier) | claim: eckert-1864 E347 E349 E350 (MS18-R4 not-located rows), AUDIT.md "## AUDIT (FV-MS18g)"; cap USD 6.5, box 100 min to ~22:58 UTC; for LANE LEDGER (account 1)
 2026-10-09 21:17 | FV-MS18f (Opus first verifier) | claim: eckert-1862 E343 E345 E346 (MS18-R4 not-located rows), AUDIT "## AUDIT (FV-MS18f)"; cap USD 6.5, box 100 min from 21:18 UTC; for LANE LEDGER (account 1)
 2026-10-09 21:18 | FV-MS18f (Opus first verifier) | correction: target folder is eckert-1864 (not eckert-1862 as my claim line said); for LANE LEDGER (account 1)
+2026-10-09 21:17 | FIX-FM15: eckert-1864 FV-MS18d/e s.5 corrections + KEY-LAV | claim: FIX-FM15, Sonnet, cap 3 box 60 min, no network, for LANE LEDGER (account 1)
