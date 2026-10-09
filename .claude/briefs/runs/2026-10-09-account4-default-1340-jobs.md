@@ -118,3 +118,32 @@ the bar and push it before any score; run the four real letters only if the cont
 COS-ASMO (da488a051) named Cremonini 2017 (RSU 16, pp.117-145, EPA pdf) as the next read. Fetch it once (EPA / epa.oszk.hu; good-citizen rule),
 grep it for b.4-7, Ungheria/Hungary, Costabili, cifra/cifrario, 1490-1492, and record what it says about a surviving Este-Hungary cipher key of
 the 1480s-90s (page cited, quote <= 2 lines). Do not commit the pdf. If it is unreachable, log it and stop. Section "## COS-CREM" in NOTES.md.
+
+## Wave 4 (added 14:4x UTC by date -u). Intake gates re-run 14:45: fr4735 partial (line 1), costabili partial (line 1), harley-287 partial
+(line 1), fr16144 partial (line 1), decode-1162 partial (line 3): all pass. Two jobs use DECODE (J15, J16): one login each, take/release
+lines on de-crypt.org, the second waits for the first's release.
+
+### J14 MONLUC-K38 -- fr4735-monluc-lansac-poland-1573, Opus, cap USD 1.5, box 35 min
+MONLUC-CURL (9a7fe7147) passed its pre-registered curl gate (p 0.0086); its --try was a non-test (known-answer control 1/6). Decide, per the
+folder's PREREG and rule 4, whether the 10 f.86 curl-Y tokens can take K38 (= t) graded from f.86's own period gloss (C where the gloss reads t at
+that position, M otherwise), without --try licensing anything. Commit only what the gloss supports, old labels kept; decode --check; judge rerun.
+
+### J15 COS-BOX2 -- costabili-modena-1491, Opus, cap USD 4.5, box 90 min
+COS-SPAN step 2 (not run, cap): fresh short-box reads of the R1163/R1165 slips -- boxes cut at each clear word and line end (1-3 groups), two blind
+Sonnet passes on crops only + your reconciliation (3 units at ~1.5), scored under PREREG-COS-SPAN unchanged (fdd8bbe51) with its matched control.
+A FAIL is the second attempt of this design: log it under rule 3. Images: one DECODE login to scratch (never committed).
+
+### J16 HAR-GLOSS -- harley-287-1587, Opus, cap USD 2.5, box 50 min
+While waiting (WAIT-PASS-5): view the DECODE ff.70r-72v and ff.96-97 images (R8482-R8487, R8496; fetched 5 Oct, never read; re-fetch to scratch with one
+DECODE login if not on disk) for interlinear glosses. Leaf census only: per leaf, glossed yes/no, how many glossed groups, crop coordinates for any
+glossed span, in a TSV. No transcription pass; no sign labels (the f.88r owner sort stays the owner's).
+
+### J17 SAV-BOUCHER -- fr16144-savary-lancosme-1588, Sonnet, cap USD 1.5, box 40 min
+While waiting: grep Boucher's Lettres de Henri III (1587-88 volumes; IA be-api full text, Google Books API with country=US and the key) for a reply
+quoting or naming Savary de Lancosme's 29 Apr 1587 duplicata (Lancosme, Savary, Constantinople, duplicata, chiffre, April-June 1587). Log every
+volume/query and hits with page where the host gives one. Search result only.
+
+### J18 D1162-F19 -- decode-1162-modena-ambung-1492, Opus, cap USD 1.5, box 35 min
+While waiting: the key-constrained check of the F19 month (febr~?, p.2 l.6) against the docket '27 febb^o' (p.1 l.2) and the dating evidence already
+in NOTES (DEC1162-ENHANCE's named next). Disk only. Pre-register what would settle F19 before looking; the clear_text.tsv word changes only if the
+check passes with its control; otherwise log.
