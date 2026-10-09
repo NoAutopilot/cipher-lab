@@ -68,7 +68,7 @@ exit=0
 ## Remaining gaps
 
 Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct 2026: K=41 provisional, err_2reader 0.10, err_true not measurable).
-- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes); alignment labels 5/19, box-numbered strip reads (BERGH-STRIP) 16/19 FAIL, sign-group reads on a de-stacked layout (BERGH-GRP, 9 Oct 2026) **18/19 PASS** against the pre-registered 17 (A/B 0.811), atlas/group_sign.tsv for the 19 gate windows (285 boxes) and, BERGH-ALL1 (9 Oct 2026), whole lines L01-L10 (432 boxes, A/B 0.822, `atlas/strips_grp.py --line`), and BERGH-ALL2 (9 Oct 2026), lines L11-L22 (443 boxes, A/B 0.822), so all 875 boxes now have two group reads (156 split boxes: 77 + 79); sorter page built from the agreed group labels (BERGH-SORT, 9 Oct 2026: 830 tiles, 84 piles, 157 focus questions, sorter_preflight PASS, contact sheet 13/13 labelled tiles plausible by eye), not yet published; next: publication by the account-3 orchestrator (ROOM flag 'BERGH sorter ready for publication'), then the owner's sort and tools/sign_sorter_apply.py, ~$1
+- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes); alignment labels 5/19, box-numbered strip reads (BERGH-STRIP) 16/19 FAIL, sign-group reads on a de-stacked layout (BERGH-GRP, 9 Oct 2026) **18/19 PASS** against the pre-registered 17 (A/B 0.811), atlas/group_sign.tsv for the 19 gate windows (285 boxes) and, BERGH-ALL1 (9 Oct 2026), whole lines L01-L10 (432 boxes, A/B 0.822, `atlas/strips_grp.py --line`), and BERGH-ALL2 (9 Oct 2026), lines L11-L22 (443 boxes, A/B 0.822), so all 875 boxes now have two group reads (156 split boxes: 77 + 79); sorter page built from the agreed group labels (BERGH-SORT, 9 Oct 2026: 830 tiles, 84 piles, 157 focus questions, sorter_preflight PASS, contact sheet 13/13 labelled tiles plausible by eye), published 9 Oct 2026 from the owner account (BERGH-PUB, https://claude.ai/artifact/SLHhvXfhzZzy9yjLk7BTct, ASKS 155); next: the owner's sort and tools/sign_sorter_apply.py, ~$1
 - Whole letter, language - blocker: not-attempted; homophonic K41 now control-backed FAIL in French (fr16, 6-seed control 0.718), German (de1600, 0.777), Latin (la17, 0.611) and Dutch (nl16, 0.681, NL16-11106) and at a merged K38 in French (FAM-11106L); Bergh's six WVO sibling letters 1574-77 are in French (2) and German (4), none Dutch; single-letter homophonic is now negative in all four candidate languages, so the open question is the design, not the language; next: the multi-sign family (below)
 - Whole letter, design - blocker: not-attempted; multi-sign (syllable/code) is the design prior's nearest class, untested; next: `family_run.py --family syllabary` with its control after the inventory is settled, ~$1
 - Year - blocker: not-attempted; the year 1572 is editorial; next: only once something reads, ~$0.3
@@ -80,9 +80,9 @@ Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct
 - [x] known-keys: the Nassau keys key_1572.tsv and key_nepveu.tsv were dropped as a design mismatch by KH2-D; no Bergh key on file.
 - [x] print: Groen 1re serie, Gachard III-IV, Kervyn full text, Japikse out of range (FAM-CS11106); Waanders 2022 still unchecked.
 - [ ] key-rebuild: homophonic K41 FAIL with control at gate in fr16, de1600, la17, nl16 (NL16-11106) and merged-K38 fr16 (FAM-11106L); merged-K38 de1600 control below gate (non-test); the syllabary/multi-sign family is untried.
-- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106); alignment labels 5/19, box-strip reads 16/19 (BERGH-STRIP, FAIL), sign-group reads on a de-stacked layout 18/19 (BERGH-GRP, PASS, 19 gate windows), then lines L01-L10 (BERGH-ALL1, 432 boxes, A/B 0.822) and L11-L22 (BERGH-ALL2, 443 boxes, A/B 0.822): all 875 boxes read; sorter rebuilt from group labels (BERGH-SORT: sorter/bergh_sorter.html, preflight PASS); next publication by the account-3 orchestrator, then the owner's sorter.
+- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106); alignment labels 5/19, box-strip reads 16/19 (BERGH-STRIP, FAIL), sign-group reads on a de-stacked layout 18/19 (BERGH-GRP, PASS, 19 gate windows), then lines L01-L10 (BERGH-ALL1, 432 boxes, A/B 0.822) and L11-L22 (BERGH-ALL2, 443 boxes, A/B 0.822): all 875 boxes read; sorter rebuilt from group labels (BERGH-SORT: sorter/bergh_sorter.html, preflight PASS), published 9 Oct 2026 (BERGH-PUB, https://claude.ai/artifact/SLHhvXfhzZzy9yjLk7BTct, ASKS 155); next: the owner's sort, then tools/sign_sorter_apply.py.
 - [ ] retry: the syllabary/multi-sign family after the inventory is settled.
-Verdict: keep going: 4 internal gaps; cheapest next: publish the group-label sorter built by BERGH-SORT (sorter/bergh_sorter.html, account-3 orchestrator) and apply the owner's sort, ~$1, then the syllabary/multi-sign family once the inventory is settled, ~$1
+Verdict: keep going: 4 internal gaps; cheapest next: the owner's sort on the published group-label sorter (https://claude.ai/artifact/SLHhvXfhzZzy9yjLk7BTct, ASKS 155), then tools/sign_sorter_apply.py, ~$1, then the syllabary/multi-sign family once the inventory is settled, ~$1
 
 ## While waiting
 
@@ -626,3 +626,21 @@ labelled; 4 'split' tiles are a real g/9 question, a y, and two small pieces. GL
 decoding. The page is committed as sorter/bergh_sorter.html (4.9 MB, folder 20 MB) so the publisher need not rebuild it; it regenerates
 from the two commands above (byte identity not tested).
 Report what was found and where it was not found; novelty is not classified here (rule 10).
+
+### Publication (BERGH-PUB, 9 Oct 2026, owner account, 05:43-05:5x UTC by `date -u`)
+
+Brief `.claude/briefs/runs/2026-10-09-account4-orch-jobs.md` "### BERGH-PUB". Published from the owner account so the page opens for the
+owner (an account-4 page is private to account 4, ASKS 145).
+
+- **URL: https://claude.ai/artifact/SLHhvXfhzZzy9yjLk7BTct** (db storage declared; the owner's moves save to the page; db read back empty before any move, 05:46 UTC).
+- `CIPHERLAB_ACCOUNT=owner python3 tools/sorter_preflight.py sorter/bergh_sorter.html --expect-owner-account`: `preflight: PASS` (template
+  2026-10-09.3, 157 focus tiles answerable, 84/84 piles named, 830 tiles on 22 of 22 lines, shape 18 = 2.2% < 5%, colour pass, account owner).
+- Contact sheet sorter/bergh_sorter.preflight.png eyed: every labelled tile's box sits on a sign of its own strip; `fragment`/`split` tiles are
+  small strokes, show-through from the neighbouring line or a page edge, correct for those piles.
+- Headless (playwright, mock db, desktop 1280x900): three random tiles drawn from lettered piles (seed 20261009) -- L10_01_019 pile `4`,
+  L12_01_023 pile `o2`, L04_01_011 pile `3` -- each sits on that sign of its own line in the larger view; "Fix the cut" opens, a widened box
+  saves a db `recuts` doc, Undo removes it; no page errors. A first draw of three hit only `fragment` tiles (show-through at the strip top, a
+  page edge), also correct for that pile. `tools/sign_sorter/browser_tests/test_qa.js` against this page FAILs at its first focus-tile click:
+  the test predates template 2026-10-09.1, which starts the 157 questions in the Taken-out tray (step 2) rather than in the piles; a test lag
+  for the template's owners, not a page fault (the tray itself is covered by test_focus_tray.js on fixtures).
+- Next: the owner's sort (ASKS 155, desk), then `tools/sign_sorter_apply.py --db` on the page's store.
