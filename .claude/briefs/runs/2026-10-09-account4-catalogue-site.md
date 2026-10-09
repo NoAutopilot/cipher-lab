@@ -68,3 +68,13 @@ as unreachable, the N-class and depth with their definitions one click away, who
 the printed edition at the page. Progressive disclosure: plain language first, the evidence expandable, nothing hidden. Index: one row per
 item a search engine and a historian can both read, filterable by century, archive and outcome. The favourites page is "Readings worth a
 historian's attention", each story limited to what its audit licenses.
+
+## Amendment 4 (orchestrator, 22:4x UTC 9 Oct by date -u; the owner's review of v1 at 22:4x UTC)
+"Exceptionally too wordy; show, not tell; connect the cipher to the history and context -- key people, places, moments, events; let me
+see the cipher, or pieces of it, really easily; I'd start there." For v2 (three sample items + index): (1) the cipher first -- 2-3 line
+crops from the folder's images/ at the top of each item page, each with its token-by-token reading underneath (sign -> plain, grade as a
+colour band or mark), the key or reading sheet where tools/decipher_sheet.py has one, the primary image link beside; (2) context as a
+strip, not prose -- who/whom/where/date, the two or three dated events of that week or month, the people and places named in the cipher
+with five words of identity each, all within what the audit and the letter's known context license; (3) prose cut to the safe sentence
+and the gist; everything else a number, a badge, a date or a link; no paragraph over two sentences; (4) index one line per item with a
+thumbnail crop. Embedded crops carry a source and licence line; holders without a recorded PD/CC licence are marked for a public version.
