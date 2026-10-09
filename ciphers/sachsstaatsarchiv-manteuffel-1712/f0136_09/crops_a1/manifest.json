@@ -1,0 +1,100 @@
+{
+ "crops_a1": [
+  {
+   "crop": "a1_r07_1.png",
+   "from": [
+    "crops/f0136_L12.jpg",
+    "crops/f0136_L13.jpg"
+   ],
+   "box_in_0136": [
+    600,
+    2588,
+    1200,
+    2658
+   ],
+   "ops": "stitch, autocontrast cutoff 1, LANCZOS 2.5x",
+   "date": "09 Oct 2026",
+   "job": "MANT-R07"
+  },
+  {
+   "crop": "a1_r07_2.png",
+   "from": [
+    "crops/f0136_L12.jpg",
+    "crops/f0136_L13.jpg"
+   ],
+   "box_in_0136": [
+    1080,
+    2588,
+    1680,
+    2658
+   ],
+   "ops": "stitch, autocontrast cutoff 1, LANCZOS 2.5x",
+   "date": "09 Oct 2026",
+   "job": "MANT-R07"
+  },
+  {
+   "crop": "a1_r07_3.png",
+   "from": [
+    "crops/f0136_L12.jpg",
+    "crops/f0136_L13.jpg"
+   ],
+   "box_in_0136": [
+    1560,
+    2588,
+    2150,
+    2658
+   ],
+   "ops": "stitch, autocontrast cutoff 1, LANCZOS 2.5x",
+   "date": "09 Oct 2026",
+   "job": "MANT-R07"
+  },
+  {
+   "crop": "a1_r08_1.png",
+   "from": [
+    "crops/f0136_L12.jpg",
+    "crops/f0136_L13.jpg"
+   ],
+   "box_in_0136": [
+    600,
+    2646,
+    1200,
+    2728
+   ],
+   "ops": "stitch, autocontrast cutoff 1, LANCZOS 2.5x",
+   "date": "09 Oct 2026",
+   "job": "MANT-R07"
+  },
+  {
+   "crop": "a1_r08_2.png",
+   "from": [
+    "crops/f0136_L12.jpg",
+    "crops/f0136_L13.jpg"
+   ],
+   "box_in_0136": [
+    1080,
+    2646,
+    1680,
+    2728
+   ],
+   "ops": "stitch, autocontrast cutoff 1, LANCZOS 2.5x",
+   "date": "09 Oct 2026",
+   "job": "MANT-R07"
+  },
+  {
+   "crop": "a1_r08_3.png",
+   "from": [
+    "crops/f0136_L12.jpg",
+    "crops/f0136_L13.jpg"
+   ],
+   "box_in_0136": [
+    1560,
+    2646,
+    2150,
+    2728
+   ],
+   "ops": "stitch, autocontrast cutoff 1, LANCZOS 2.5x",
+   "date": "09 Oct 2026",
+   "job": "MANT-R07"
+  }
+ ]
+}
