@@ -1,0 +1,1 @@
+TEST1 agrees: real 95; control mean 33.53, p95 43, p99 48, max 54, n 2000; p = 0.0005; gate PASS
