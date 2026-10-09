@@ -9,6 +9,7 @@ Usage: python3 tools/freq.py FILE [--sep REGEX] [--top N] [--strip-clear]
        python3 tools/freq.py FILE --split-at auto
        python3 tools/freq.py FILE --contacts K --vowels
        python3 tools/freq.py FILE --onepart-dict LANG [--onepart-range MIN,MAX] [--top N]
+       python3 tools/freq.py POOL --tail N [--tail-end end|start|both] [--tail-reps R] [--tail-seed S]
 
 Tokens are split on ';' and whitespace by default. Lines starting with '#'
 are ignored. --strip-clear drops tokens that contain no digit, which removes
@@ -120,9 +121,27 @@ shuffled-range control does, CLAUDE.md rule 3) is run by a separate script
 that calls onepart_dict_bands()/band_for_frac() below, the same way
 period_code_test.py sits beside this tool for a different family (see
 ciphers/destaing-gerard-1779/onepart_test.py for a worked example).
+
+--tail N (MQS-TAIL, 9 Oct 2026; Lasry, Biermann and Tomokiyo 2023, Cryptologia
+47:2, pp.124-125 Fig. 12 and p.137 n.99: month, date, place and enclosure signs
+form one positional class at the close of the Mary Stuart letters): FILE is a
+POOL, one letter per non-blank, non-'#' line. Per sign, its count in the edge
+window of every letter (--tail-end end: the last N tokens; start: the first N;
+both: both) against a shuffled-letter-end null: each letter's window is swapped
+for a random window of the same length elsewhere in the pool (a start whose
+window avoids that letter's own edge windows), --tail-reps replicates
+(default 2000, --tail-seed 1). Prints one TSV row per sign with total >=
+--tail-min-total (default 2): rank, sign, total, edge count, null mean, null
+p95, one-sided p, flag (edge > p95, edge >= 2, p <= 0.05), ranked by p then
+excess. Meant to catch: dateline, place and sign-off signs that concentrate at
+letter ends (Janssens 1811 pool, tools/tests/PREREG-MQS-TAIL.md). Must NOT
+flag: the same pool with each letter shuffled in place (test_freq.py). A flag
+says "positional class candidate", never a value; the Janssens dateline sits at
+the HEAD of several letters, so try --tail-end both before reading a miss.
 """
 import argparse
 import math
+import random
 import re
 import signal
 import sys
@@ -556,6 +575,91 @@ def print_split_auto(toks, min_gain, min_side):
     return best[1]
 
 
+def load_pool(path, sep, strip_clear):
+    """One letter per non-blank, non-'#' line; returns a list of token lists."""
+    letters = []
+    for line in open(path, encoding="utf-8", errors="replace"):
+        if line.startswith("#") or not line.strip():
+            continue
+        toks = [t for t in re.split(sep, line) if t]
+        if strip_clear:
+            toks = [t for t in toks if re.search(r"\d", t)]
+        if toks:
+            letters.append(toks)
+    return letters
+
+
+def _edge_spans(length, n, end):
+    """(start, stop) windows of letter positions counted as its edge."""
+    w = min(n, length)
+    if end == "end":
+        return [(length - w, length)]
+    if end == "start":
+        return [(0, w)]
+    if length <= 2 * n:
+        return [(0, length)]
+    return [(0, n), (length - n, length)]
+
+
+def tail_stats(letters, n, end="end", reps=2000, seed=1, min_total=2):
+    """Edge-window count per sign vs the shuffled-letter-end null (see --tail in the docstring).
+
+    Returns rows (sign, total, obs, null_mean, null_p95, p, flag) sorted by p then excess."""
+    rng = random.Random(seed)
+    total = Counter(t for L in letters for t in L)
+    obs = Counter()
+    spans = [_edge_spans(len(L), n, end) for L in letters]
+    for L, sp in zip(letters, spans):
+        for a, b in sp:
+            obs.update(L[a:b])
+    # candidate null starts per window length: (letter, start) whose window avoids that letter's edges
+    cand = {}
+    def starts_for(w):
+        if w not in cand:
+            c = []
+            for j, L in enumerate(letters):
+                for st in range(0, len(L) - w + 1):
+                    if all(st + w <= a or st >= b for a, b in spans[j]):
+                        c.append((j, st))
+            if not c:  # pool too short to avoid edges: fall back to any window
+                c = [(j, st) for j, L in enumerate(letters) for st in range(0, len(L) - w + 1)]
+            cand[w] = c
+        return cand[w]
+    widths = [b - a for sp in spans for a, b in sp]
+    signs = [s for s, k in total.items() if k >= min_total]
+    sidx = {s: i for i, s in enumerate(signs)}
+    null = [[0] * reps for _ in signs]
+    for r in range(reps):
+        cnt = Counter()
+        for w in widths:
+            j, st = rng.choice(starts_for(w))
+            cnt.update(letters[j][st:st + w])
+        for s, k in cnt.items():
+            i = sidx.get(s)
+            if i is not None:
+                null[i][r] = k
+    rows = []
+    for s in signs:
+        v = sorted(null[sidx[s]])
+        o = obs.get(s, 0)
+        mean = sum(v) / reps
+        p95 = v[min(reps - 1, int(math.ceil(0.95 * reps)) - 1)]
+        p = sum(1 for x in v if x >= o) / reps
+        flag = o > p95 and o >= 2 and p <= 0.05
+        rows.append((s, total[s], o, mean, p95, p, flag))
+    rows.sort(key=lambda r: (r[5], -(r[2] - r[3]), r[0]))
+    return rows
+
+
+def print_tail(letters, n, end, reps, seed, min_total, top):
+    rows = tail_stats(letters, n, end, reps, seed, min_total)
+    print(f"# --tail {n} --tail-end {end}: {len(letters)} letters, {sum(len(L) for L in letters)} tokens, "
+          f"reps {reps}, seed {seed}; flagged {sum(1 for r in rows if r[6])} of {len(rows)} signs tested")
+    print("rank\tsign\ttotal\tedge\tnull_mean\tnull_p95\tp\tflag")
+    for i, (s, t, o, m, q, p, f) in enumerate(rows[:top] if top else rows, 1):
+        print(f"{i}\t{s}\t{t}\t{o}\t{m:.2f}\t{q}\t{p:.4f}\t{'FLAG' if f else ''}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("file")
@@ -591,7 +695,22 @@ def main():
                      help="map --top frequent tokens' range position to a LANG period-vocabulary initial-letter band")
     ap.add_argument("--onepart-range", metavar="MIN,MAX", dest="onepart_range",
                      help="value range for --onepart-dict position mapping (default: file's own min/max numeric token)")
+    ap.add_argument("--tail", type=int, metavar="N",
+                     help="POOL mode (one letter per line): rank signs concentrated in the last N tokens of each "
+                          "letter against a shuffled-letter-end null (MQS-TAIL; Lasry, Biermann and Tomokiyo 2023 Fig. 12)")
+    ap.add_argument("--tail-end", choices=["end", "start", "both"], default="end", dest="tail_end",
+                     help="--tail: which edge of each letter is counted (default end)")
+    ap.add_argument("--tail-reps", type=int, default=2000, dest="tail_reps", help="--tail: null replicates (default 2000)")
+    ap.add_argument("--tail-seed", type=int, default=1, dest="tail_seed", help="--tail: null seed (default 1)")
+    ap.add_argument("--tail-min-total", type=int, default=2, dest="tail_min_total",
+                     help="--tail: list signs with at least this many pool occurrences (default 2)")
     a = ap.parse_args()
+
+    if a.tail:
+        letters = load_pool(a.file, a.sep, a.strip_clear)
+        print_tail(letters, a.tail, a.tail_end, a.tail_reps, a.tail_seed, a.tail_min_total,
+                   a.top if a.top != 25 else 0)
+        return
 
     toks = load_tokens(a.file, a.sep, a.strip_clear)
 

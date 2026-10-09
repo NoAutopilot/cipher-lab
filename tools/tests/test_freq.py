@@ -29,6 +29,9 @@ window), fast near-repeats equal to the old quadratic ones, --split-at auto
 (proposes a synthetic letter-band edge; must NOT break a uniform-value
 null), --contacts --vowels (Sukhotin; separates homophonic CV text, must NOT
 separate its shuffled-order copy).
+MQS-TAIL (9 Oct 2026) adds: --tail (a planted end-of-letter sign ranks 1 and
+is flagged; must NOT flag it once each letter is shuffled in place; the CLI
+reads a one-letter-per-line pool; --tail-end start/both count the head).
 
 Run: python3 tools/tests/test_freq.py"""
 import os
@@ -206,6 +209,47 @@ for _ in range(5):
 acc_s = sum(accs) / len(accs)
 check(f"--vowels must NOT separate shuffled-order copies (mean acc over 5 {acc_s:.2f} < 0.8)", acc_s < 0.8)
 
+# --tail (MQS-TAIL, 9 Oct 2026): 30 letters x 80 tokens over 40 uniform body
+# signs, "MON" planted in the last 3 tokens of 20 letters.
+import subprocess  # noqa: E402
+import tempfile  # noqa: E402
+trnd = random.Random(7)
+body = [f"b{i}" for i in range(40)]
+pool = []
+for i in range(30):
+    L = [trnd.choice(body) for _ in range(80)]
+    if i < 20:
+        L[80 - 1 - trnd.randrange(3)] = "MON"
+    pool.append(L)
+rows = freq.tail_stats(pool, 5, "end", reps=500, seed=1)
+check(f"--tail ranks the planted end sign first and flags it (top {rows[0][0]}, flag {rows[0][6]})",
+      rows[0][0] == "MON" and rows[0][6])
+nflag = 0
+for k in range(10):
+    sh = [list(L) for L in pool]
+    for L in sh:
+        trnd.shuffle(L)
+    r2 = {r[0]: r for r in freq.tail_stats(sh, 5, "end", reps=500, seed=k + 2)}
+    nflag += r2["MON"][6]
+check(f"--tail must NOT flag the planted sign once letters are shuffled in place ({nflag}/10 flagged <= 1)",
+      nflag <= 1)
+head = [list(reversed(L)) for L in pool]
+rs = freq.tail_stats(head, 5, "start", reps=500, seed=1)
+rb = freq.tail_stats(head, 5, "both", reps=500, seed=1)
+re_ = {r[0]: r for r in freq.tail_stats(head, 5, "end", reps=500, seed=1)}
+check("--tail-end start and both find a head-placed sign that end does not",
+      rs[0][0] == "MON" and rb[0][0] == "MON" and not re_["MON"][6])
+with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as fh:
+    fh.write("# pool\n" + "\n".join(" ".join(L) for L in pool) + "\n")
+    pool_path = fh.name
+out = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "freq.py"), pool_path, "--tail", "5",
+                      "--tail-reps", "300"], capture_output=True, text=True).stdout
+os.remove(pool_path)
+lines = [l for l in out.splitlines() if l and not l.startswith("#")]
+check("--tail CLI reads one letter per line and prints MON first with FLAG",
+      "30 letters" in out and lines[0].startswith("rank\tsign") and lines[1].split("\t")[1] == "MON"
+      and lines[1].endswith("FLAG"))
+
 os.remove(FIXTURE)
 
 if fails:
@@ -217,4 +261,4 @@ print("ok: freq.py --contacts tags suffix-like/prefix-like/neither correctly (co
       "exact matches, --split-at reports per-side token/distinct/IC, and the default "
       "(no new flag) report is unchanged; TT-FREQ: --repeats gaps + refinement (20,000 tokens fast), "
       "--split-at auto proposes the band edge and leaves a uniform null alone, --vowels separates CV text "
-      "and not its shuffle.")
+      "and not its shuffle; MQS-TAIL: --tail flags a planted end sign and not its in-letter shuffle.")
