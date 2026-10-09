@@ -55,7 +55,7 @@ decode --check.
 
 ---
 
-# Wave 2 (written 9 Oct 2026 04:2x UTC; seven_day allowed_warning on every session, continuing per lane-common-blast)
+# Wave 2 (written 9 Oct 2026 04:1x UTC; seven_day allowed_warning on every session, continuing per lane-common-blast)
 By get_session: FIX-FM5 1.66, FV-FM6a 6.71 (E219 E227 N3; E217 E226 N1), FV-FM6b 6.28 (E228 weak, E229 E240 N3; E241 N1 Intelligencer), FV-FM6c 5.11
 (E242 E243 N3; E245 N1), FM-R4a 3.28 (E250-E258; 5594/1 = E62; E255 in print; clear copies E250 10490, E254 9913, E257 4823), FM-R4b 4.58 (E260-E269).
 Wave 1 total 27.62. The all-pointer CONTENTdm search found a clear copy for 6 of 23 entries this wave: keep it first.
