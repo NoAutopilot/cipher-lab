@@ -1,0 +1,58 @@
+{
+ "propagation": "cluster",
+ "showable": 371,
+ "tiles_in_clusters": 381,
+ "clusters": 89,
+ "base_wrong": 10,
+ "scored": 371,
+ "base_err": 0.027,
+ "orderings": {
+  "a_doubt": {
+   "to_2pct": "not reached by k=200",
+   "removed_10": -31,
+   "removed_20": -49,
+   "err_10": 0.1105,
+   "err_20": 0.159,
+   "broken_20": 55,
+   "steps": 200
+  },
+  "b_size": {
+   "to_2pct": "not reached by k=200",
+   "removed_10": -46,
+   "removed_20": -55,
+   "err_10": 0.1509,
+   "err_20": 0.1752,
+   "broken_20": 55,
+   "steps": 200
+  },
+  "d_oracle": {
+   "to_2pct": 1,
+   "removed_10": 7,
+   "removed_20": 7,
+   "err_10": 0.0081,
+   "err_20": 0.0081,
+   "broken_20": 0,
+   "steps": 3
+  },
+  "c_random": {
+   "to_2pct": [
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    1,
+    "not reached by k=200"
+   ],
+   "removed_10_mean": -19.1,
+   "removed_20_mean": -34.8,
+   "removed_20_band": [
+    -68,
+    -20
+   ]
+  }
+ }
+}
