@@ -2999,3 +2999,60 @@ Grades: 126 code-word tokens H by decode.py across the ten (18, 14, 15, 12, 8, 1
 
 ### Escalation
 Siblings: the clear copies at 4587, 10376, 4593, 4493, 10238 are the sent copies of five of the ten. Clear pages: none of the five unmatched entries has one. Known keys: No.1 reads all ten. Print: Butler IV and OR I/33 hit; others unchecked at page level. Image check: five of ten done. Verdict: keep going.
+
+## CONF-FM (9 Oct 2026, account 1, for LANE LEDGER; verifier, separate from every reader)
+
+Part A (short-form verifier; AUDIT.md "## AUDIT (CONF-FM)"): **E250** = clear copy 10490 (the whole telegram, Washington's received copy, not
+"the second half"; it supplies swede = information, wreathic = telegraph, plation = com[munication], and "Have her D grass" = Havre de Grace),
+**E257** = clear copy 4823, **E255** = OR I/39 pt 3 **p.334** (not "about 336"): N1, D3, key `period`, status.json rows added (`text: known`),
+no SO rows. **E254: 9913 is Washington's sent copy of the same cipher text, not a clear copy** (precedent E212): N1 not supported, no class
+assigned; holder full text finds no clear copy ("binney outlay" 2 hits, "binney brice" 3 hits, `fortmonroe/conf_fm_q.out`). Decoder slips for a
+FIX worker (not applied): E250 plain Silver Spring and William rendered as code; E255 plain Taylor's Ridge, watching, Whiteside rendered as code;
+E257 address Sampson rendered [Ferry]; E254 Knocks = Knox (Butler, per the sent copy). Prior-work: `tools/prior_work.py ... --step-type audit
+--offline` exit 4 on each (own-work LEAD = the reading audited; 3-solver CLEAR; 4-editions UNCHECKED, run by hand: OR I/39 pt 3 djvu grep).
+
+## CONF-FM key test
+
+Grade C key test, **not a reading**: nothing filed in `ciphertext.txt` or reading.md. Pointers 5820 (entries 2, 3) and 5821 (entries 1, 2) carry
+**four** Porter telegrams of 8 Dec 1864, all printed in ORN ser. I vol. 11 (`officialrecordso0011unse` `_djvu.txt`, 1 request): p.156 "Don't let
+any of the vessels fire at the Howlett battery ..." (5820/2, to Parker); pp.155-156, quoted in Parker's report, "Send the two monitors Mahopac and
+Canonicus down to Hampton Roads ... Station the Mendota at City Point" (5820/3) and "Go down the river yourself ... Send the Miami to City Point
+instead of the Mendota, as ordered by telegraph this morning" (5821/1); p.155 Porter to Grant, "Miami has been ordered to City Point. Three
+gunboats to patrol the river between Pagan Creek, Ragged Island Creek, and Point of Rocks ... 65 rebel sailors, with 10 cart-loads of powder, at
+Smithfield ... They came from Richmond" (5821/2). The brief named two telegrams; the two pages carry four printed ones, all four tested (same
+pages, same method; 5820/1, Beckwith's embarkation list, is E176 and not Porter's). Transcription: the holder's text, eye-checked against
+`tools/iiif_lines.py --image` line crops of both pages (2400 px IIIF, scratch only): no difference found. Entries in
+`fortmonroe/conf_fm_porter_entries.txt`.
+
+Result (`fortmonroe/conf_fm_porter.py` -> `conf_fm_porter.out`; alignment fixed before scoring): **46 of 52** aligned code words read under Cipher
+No. 1 to the printed word; meaning-shuffled key (fm_r4a.py's control, 1000 seeds): **mean 0.12, p99 3, max 6**. Disclosure: the first run scored
+44 because the matcher compared "Road"/"roads" and "Arms"/"arm" literally; the stemmer now drops a trailing s (alignment unchanged). Misses:
+- Tulip x2 (5821/1 "staggers tulip niggard", 5821/2 "blubber tulip perfume"): key Tulip = Open (-ed, -ing); both stand where the print has a full
+  stop, as does the plain word "open" twice ("blubber open let me", "Franklin open these"). **Candidate key row, not written to key.md: Tulip
+  (and plain "open") = stop/period, grade C, two witnesses here; check against 9913's "Negus tulip Pay masters" and E-entries carrying tulip.**
+- "money towers" = "monitors" by sound (key Money = line indicator, Tower = Over the): a decoder collision, not a key row.
+- Pagan x2, Ragged: plain place names (Pagan Creek, Ragged Island Creek) that collide with key words (Pagan = Battery, correct in 5820/2
+  "Howlett battery"; Ragged = Front). Decoder collisions, not key rows.
+Other candidates the print supports and key.md lacks (listed, not written): none beyond Tulip; every other aligned word is an existing key row.
+Part A candidates (clear copy 10490, grade C, one witness each): Wreathic = Telegraph (key has Wreathe), Plation = communication, Swede =
+information.
+
+Requests: hdl.huntington.org 11 under the token (10:50-10:54 UTC; 5 dmGetItemInfo, 2 CISOSEARCHALL, 2 failed dmGetParent calls -- wrong function
+name, not retried -- and 2 IIIF pages); archive.org 2 (`warofrebellion393unit`, `officialrecordso0011unse` djvu text); no other hosts.
+
+## Remaining gaps (CONF-FM, 9 Oct 2026)
+Read so far: E250, E255, E257 confirmed N1 (AUDIT CONF-FM); E254 class open; Cipher No. 1 confirmed on four printed Porter telegrams (46/52).
+- E254 first verification (N2/N3: Butler V, OR I/42 pt 3, Paymaster General's letters) - blocker: not-attempted; outside this brief; next: FV first verifier, ~$1.5
+- decoder slips E250/E254/E255/E257 (AUDIT CONF-FM s.4) - blocker: not-attempted; a verifier does not edit readings; next: FIX worker via decode.py notes, ~$0.8
+- Tulip = stop candidate - blocker: not-attempted; outside this brief (no key edits); next: grep tulip across ciphertext*.txt and clear copies, ~$0.3
+- which ledger holds 10490 and 4823 - blocker: not-attempted; dmGetParent is not the API name; next: one GetParent call each, ~$0.1
+
+## Escalation (CONF-FM, 9 Oct 2026)
+- [x] siblings: clear copies 10490, 4823; sent copy 9913.
+- [x] clear-pages: as above.
+- [x] known-keys: Cipher No. 1 tested on four printed telegrams.
+- [x] print: OR I/39 pt 3 p.334; ORN I/11 pp.155-156.
+- [ ] key-rebuild: Tulip candidate; next: the grep above.
+- [x] image-check: 5820, 5821 line crops; E250/E254/E257 pages not viewed (transcription-only).
+- [x] retry: none needed.
+Verdict: keep going: 4 internal gaps, cheapest next: GetParent for 10490/4823, ~$0.1

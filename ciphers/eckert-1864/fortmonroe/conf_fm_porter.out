@@ -1,0 +1,9 @@
+aligned code words: 52 (P1 7, P2 7, P3 18, P4 20)
+Cipher No. 1 key: 46 of 52 read to the printed word
+  miss P2 'towers': key 'Over the', print 'monitors'
+  miss P3 'tulip': key 'Open (-ed, -ing)', print '.'
+  miss P4 'tulip': key 'Open (-ed, -ing)', print '.'
+  miss P4 'Pagan': key 'Battery', print 'pagan'
+  miss P4 'Ragged': key 'Front', print 'ragged'
+  miss P4 'Pagans': key 'Battery', print 'pagan'
+shuffled-key control (1000 seeds): mean 0.12, p99 3, max 6
