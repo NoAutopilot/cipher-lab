@@ -1,0 +1,60 @@
+qid	label	conf	note
+1	T37	H	circle with horizontal bar
+3	T60	M	slanted hash
+4	T24	H	open epsilon shape
+5	T33	M	double-stem inverted T
+8	T58	H	B shape
+11	T57	H	diamond on tail
+14	T70	H	triangle
+15	T33	H	double-stem inverted T
+17	T33	H	double-stem inverted T
+19	T76	H	g shape
+24	T81	H	x shape
+26	U	L	end of line not visible in crop
+27	T53	M	double loop
+28	T86	M	vertical-stroke hash
+29	T18	M	loop on stem phi
+30	T19	M	pi
+31	T92	M	omega-like
+32	T92	M	omega-like
+33	T65	M	f-with-bar glyph after lambda
+34	T96	H	slanted l
+37	T53	M	double loop
+39	T19	H	pi
+44	T37	H	theta
+45	T19	H	pi
+46	T38	M	m with loop
+51	T83	H	ae ligature
+52	T90	M	b with cross on top
+54	T85	H	plus
+55	T53	H	double loop
+56	T57	H	diamond on tail
+58	T90	M	b with cross on top
+59	T92	M	omega-like
+60	T81	H	x shape
+61	T57	H	diamond on tail
+62	T60	M	slanted hash
+64	T10	H	o-o linked circles
+67	T98	H	phi with bar
+68	T86	M	vertical-stroke hash
+70	T54	H	R shape
+72	T86	M	vertical-stroke hash
+74	T54	H	R shape
+75	T18	M	loop on stem phi
+76	T83	H	ae ligature
+77	T88	H	small circle
+78	T13	H	m with dot and tilde
+80	T57	H	square on tail
+82	T95	M	p-like with tick
+86	T95	M	p-like with tick
+87	T85	H	plus
+90	T45	H	b shape
+92	T42	H	T with tick
+93	T90	M	b with cross on top
+95	T80	H	D shape
+96	T53	H	double loop
+97	T19	H	pi
+101	T85	H	plus
+104	T65	M	f-with-bar glyph after F
+109	T98	H	phi with bar
+110	T45	M	b shape

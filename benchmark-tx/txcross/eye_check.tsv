@@ -1,0 +1,6 @@
+qid	line	pos	from	to	eye	note
+11	f178v_L09	20	T49	T57	disagree	upright square box on a straight stem = T49 shape, not the T57 rotated diamond; reverted
+29	f178v_L06	18	T98	T18	agree	wide round loop, stroke through above and below = T18, not the narrow T98 oval
+33	f178v_L08	20	T95	T65	agree (M)	stem with crossbar(s) below the bowl, T95 has none
+79	f178v_L11	14	T88	T45	agree	loop with a tall ascender stroke = T45, not the bare T88 circle
+80	f178v_L02	9	T49	T57	disagree	same upright box on stem as qid 11 = T49; reverted
