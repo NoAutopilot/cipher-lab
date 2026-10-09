@@ -4,8 +4,8 @@ from PIL import Image
 D = 'ciphers/fr16045-pisany-rome-1585'
 PAGES = {  # page: (crop prefix, s2 x offset in the strip, transcription file)
     'f275r': ('f275rL', 1250, 'tx86e/ciphertext_f275r.tsv'),
-    'f301v': ('f301v', 1000, 'tx87/ciphertext_f301v.tsv'),
-    'f302v': ('f302v', 944, 'tx87b/ciphertext_f302v.tsv'),
+    'f301v': ('f301v', 1000, 'tx87/ciphertext_f301v_preT32.tsv'),
+    'f302v': ('f302v', 944, 'tx87b/ciphertext_f302v_preT32.tsv'),
 }
 def strip(page, line):
     pre, off, _ = PAGES[page]

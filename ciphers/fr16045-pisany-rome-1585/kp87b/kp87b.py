@@ -21,7 +21,7 @@ import kp86, kp86d, kp87a
 from stream_align import nw_score
 
 CLEAR = 'kp87b/colbert_p341_342.txt'
-TOKS = 'tx87b/ciphertext_f302v.tsv'
+TOKS = 'tx87b/ciphertext_f302v_preT32.tsv'  # UNA2-PISA: committed result computed on the pre-edit file
 EXTRA = ['tx87b/passA.tsv', 'tx87b/passB.tsv']
 GLOSS = 'kp87b/gloss_f302v_expanded.txt'
 

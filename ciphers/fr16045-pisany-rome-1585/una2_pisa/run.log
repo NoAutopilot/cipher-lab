@@ -1,0 +1,13 @@
+tx87/ciphertext_f301v.tsv {'tokens': 315, 'dropped': 15, 'decoded_letters': 384, 'score': 0.6302, 'keyshuffle_p99': 0.3959, 'order_p99': 0.4766, 'above_both': True}
+tx87/passA.tsv {'tokens': 315, 'dropped': 10, 'decoded_letters': 377, 'score': 0.6207, 'keyshuffle_p99': 0.4004, 'order_p99': 0.4721, 'above_both': True}
+tx87/passB.tsv {'tokens': 306, 'dropped': 13, 'decoded_letters': 375, 'score': 0.6427, 'keyshuffle_p99': 0.4116, 'order_p99': 0.4827, 'above_both': True}
+una2_pisa/tx87c/ciphertext_f301v.tsv {'tokens': 315, 'dropped': 15, 'decoded_letters': 378, 'score': 0.6561, 'keyshuffle_p99': 0.3997, 'order_p99': 0.4789, 'above_both': True}
+una2_pisa/tx87c/_all_f301v.tsv {'tokens': 315, 'dropped': 15, 'decoded_letters': 374, 'score': 0.6578, 'keyshuffle_p99': 0.3969, 'order_p99': 0.4733, 'above_both': True}
+f301v control 5 /5
+tx87b/ciphertext_f302v.tsv {'tokens': 378, 'dropped': 24, 'decoded_letters': 476, 'score': 0.5903, 'keyshuffle_p99': 0.3891, 'order_p99': 0.4643, 'above_both': True}
+tx87b/passA.tsv {'tokens': 372, 'dropped': 14, 'decoded_letters': 501, 'score': 0.5529, 'keyshuffle_p99': 0.3984, 'order_p99': 0.4571, 'above_both': True}
+tx87b/passB.tsv {'tokens': 366, 'dropped': 21, 'decoded_letters': 463, 'score': 0.5983, 'keyshuffle_p99': 0.3957, 'order_p99': 0.4665, 'above_both': True}
+una2_pisa/tx87c/ciphertext_f302v.tsv {'tokens': 378, 'dropped': 24, 'decoded_letters': 471, 'score': 0.6072, 'keyshuffle_p99': 0.3918, 'order_p99': 0.465, 'above_both': True}
+una2_pisa/tx87c/_all_f302v.tsv {'tokens': 378, 'dropped': 24, 'decoded_letters': 470, 'score': 0.6106, 'keyshuffle_p99': 0.3937, 'order_p99': 0.466, 'above_both': True}
+f302v control 5 /5
+{"f301v": {"G1": true, "G2": true}, "f302v": {"G1": true, "G2": true}} {'relabelled': 11, 'identical_new_n': 11, 'identical_old_la': 0, 'pass': True} PASS True

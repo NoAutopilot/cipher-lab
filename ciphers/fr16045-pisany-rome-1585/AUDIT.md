@@ -220,3 +220,17 @@ Checks:
 Propagation: status.json carries no f.275r row (results 117-119 are f.247r, f.275v, f.302v) -- nothing to change, none added;
 SECOND-OPINIONS-QUEUE.tsv has no row for this target -- nothing to change. NOTES.md's "(e78873a18)" corrected to 709a81b3d.
 Verdict: change consistent with its PREREG and the crops; carried over; no class raised.
+
+## Carry-over UNA2-PISA (9 Oct 2026) -- f.302v T57 -> T32 relabel (audited item C), written by the solver worker; a verifier to check
+
+Written by the worker that made the change (UNA2-PISA, orchestrator account-4 brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md),
+so that rule 10's propagation is not left for a later session; it classes nothing and raises no N-class or depth. Facts only:
+- Change: tx87b/ciphertext_f302v.tsv, 5 tokens T57 -> T32 (L02 o10, L03 o33, L05 o27, L10 o26, L10 o29; 1-based over non-'/' tokens), pre-edit
+  copy tx87b/ciphertext_f302v_preT32.tsv, derivation una2_pisa/apply_t32.py (`--check` exit 0). Same on f.301v (not an audited item), 6 tokens.
+- Reading: reading_f302v_M.txt "la" -> "n" at those 5 places; kp87b/grades_f302v.tsv C 230 -> 235, M 143 -> 138, U 29 unchanged (402 tokens).
+  Audit 1/2's depth row quotes 227 / 146 / 29 with the 3 T31 tokens held at M; on the same holding that reads 232 / 141 / 29 (57.7%), still D1
+  unless a verifier finds otherwise (the longest firm run is not re-measured here).
+- Evidence: una2_pisa/PREREG-UNA2-PISA.md (pushed before any score); gate PASS (NOTES.md "UNA2-PISA"): f.302v 0.5903 -> 0.6072 above key-shuffle
+  p99 0.392 and order p99 0.465, control 5/5 at e 0.335; all 5 relabelled tokens decode n on the leaf's Colbert copy n (0 of 5 identical as la).
+  Labels come from UNA-PISA's blind tile compare (known-answer gate 5/5 on the f.302v call). key86.tsv unchanged.
+- The N0 class and the safe sentence are unaffected (the plaintext is the period margin decipherment and the Colbert copy).

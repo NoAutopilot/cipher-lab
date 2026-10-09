@@ -130,7 +130,7 @@ def identical(ctf, clf, key, newlab):
 
 FIT = [('tx86/ciphertext_f244r.tsv', 'kp86/colbert_p49_50.txt'), ('tx86c/ciphertext_f244v_f245r.tsv', 'kp86b/colbert_p51_52.txt')]
 HELD = [('f275r', 'tx86e/ciphertext_f275r.tsv', 'kp86d/colbert_p121_123.txt', 'Mais croyant que Monsieur de Luxembourg', 0.215),
-        ('f301v', 'tx87/ciphertext_f301v.tsv', 'kp87a/colbert_p338_339.txt', '', 0.192)]
+        ('f301v', 'tx87/ciphertext_f301v_preT32.tsv', 'kp87a/colbert_p338_339.txt', '', 0.192)]
 CELLS = ['T45', 'T47', 'T49', 'T57']
 CAND = list('abcdefghilmnopqrstuxy')
 

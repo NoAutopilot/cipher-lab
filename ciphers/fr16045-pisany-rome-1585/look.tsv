@@ -28,3 +28,17 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-09 06:44	adhoc-b89867	adhoc-b89867:2-leaf:ff42b2	after-2	303v			folio arithmetic	answered KNOWN (recorded)
 2026-10-09 06:44	adhoc-b89867	adhoc-b89867:2-leaf:ff42b2	after-3	304r			folio arithmetic	answered KNOWN (recorded)
 2026-10-09 06:44	adhoc-b89867	adhoc-b89867:2-leaf:ff42b2	after-4	304v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 10:14	adhoc-65c5f3	adhoc-65c5f3:2-leaf:7dd3cb	cipher-page	301v		f301v_L01_s1.jpg	manifest	owed
+2026-10-09 10:14	adhoc-65c5f3	adhoc-65c5f3:2-leaf:7dd3cb	facing	302r			folio arithmetic	owed
+2026-10-09 10:14	adhoc-65c5f3	adhoc-65c5f3:2-leaf:7dd3cb	before-1	301r			folio arithmetic	owed
+2026-10-09 10:14	adhoc-65c5f3	adhoc-65c5f3:2-leaf:7dd3cb	before-2	300v			folio arithmetic	owed
+2026-10-09 10:14	adhoc-65c5f3	adhoc-65c5f3:2-leaf:7dd3cb	after-2	302v		f302v_L01_s1.jpg	manifest	owed
+2026-10-09 10:14	adhoc-65c5f3	adhoc-65c5f3:2-leaf:7dd3cb	after-3	303r			folio arithmetic	owed
+2026-10-09 10:14	adhoc-65c5f3	adhoc-65c5f3:2-leaf:7dd3cb	after-4	303v			folio arithmetic	owed
+2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	cipher-page	302v		f302v_L01_s1.jpg	manifest	owed
+2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	facing	303r			folio arithmetic	owed
+2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	before-1	302r			folio arithmetic	owed
+2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	before-2	301v		f301v_L01_s1.jpg	manifest	owed
+2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	after-2	303v			folio arithmetic	owed
+2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	after-3	304r			folio arithmetic	owed
+2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	after-4	304v			folio arithmetic	owed

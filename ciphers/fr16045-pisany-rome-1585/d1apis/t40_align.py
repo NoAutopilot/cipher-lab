@@ -15,8 +15,8 @@ PAGES = [('f244r', 'tx86/ciphertext_f244r.tsv', 'kp86/colbert_p49_50.txt'),
          ('f247r', 'tx86g/ciphertext_f247r.tsv', 'kp86g/colbert_f247r.txt'),
          ('f275r', 'tx86e/ciphertext_f275r.tsv', 'kp86d/colbert_p121_123.txt'),
          ('f275v', 'tx86f/ciphertext_f275v.tsv', 'kp86f/colbert_f275v.txt'),
-         ('f301v', 'tx87/ciphertext_f301v.tsv', 'kp87a/colbert_p338_339.txt'),
-         ('f302v', 'tx87b/ciphertext_f302v.tsv', 'kp87b/colbert_p341_342.txt')]
+         ('f301v', 'tx87/ciphertext_f301v_preT32.tsv', 'kp87a/colbert_p338_339.txt'),
+         ('f302v', 'tx87b/ciphertext_f302v_preT32.tsv', 'kp87b/colbert_p341_342.txt')]
 KEY = load_key()
 E = np.full((A + 1, A), -1.0); E[np.arange(A), np.arange(A)] = 2.0
 
