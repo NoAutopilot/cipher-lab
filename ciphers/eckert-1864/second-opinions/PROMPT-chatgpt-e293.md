@@ -10,12 +10,12 @@ THE ITEM
 - Context we already know: Official Records ser. I vol. 42 pt 3 prints Butler to Colonel Dodge, 7 Dec 1864 ("The Baltic is at Annapolis. Get her. We shall need her.") and Dodge's note of 7 Dec 10.30 p.m. with Butler's indorsement "Yes. Troops will begin to embark to-morrow." (the first Fort Fisher expedition). The ledger's next page (pointer 5823, 9 Dec) says the medical director has taken the Western Metropolis, Baltic and B. Deford for hospital use.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
-  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM8c)").
+  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (sections "AUDIT (FV-FM8c)" and "AUDIT 2 (AUD2-LEDGER-20)").
 
-WHERE WE HAVE LOOKED: Official Records ser. I vol. 42 pt 3 (full text, by phrase and name, every 8 Dec 1864 heading); Official Records of the Union and Confederate Navies ser. I vol. 11; Butler's Private and Official Correspondence vols. IV-V; the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: Official Records ser. I vol. 42 pt 3 (full text, by phrase and name, every 8 Dec 1864 heading, the index) and pt 1 (reports); the Joint Committee on the Conduct of the War's 1865 report, vol. 2, "Fort Fisher Expedition" (prints Dodge's 7 Dec telegrams naming the Western Metropolis, Admiral DuPont, John Rice and General Sedgewick, but not this one); Official Records of the Union and Confederate Navies ser. I vol. 11; Butler's Private and Official Correspondence vols. IV-V; the Huntington's CONTENTdm full-text search.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- Quartermaster General's records (RG 92) on the transports Baltic, Western Metropolis, Rice, Dupont and Sedgwick, December 1864; Butler's report on the Fort Fisher expedition and the Joint Committee on the Conduct of the War report on it (1865); newspapers of December 1864; Google Books; HathiTrust; JSTOR.
+- Quartermaster General's records (RG 92) on the transports Baltic, Western Metropolis, Rice, Dupont and Sedgwick, December 1864; Papers of Ulysses S. Grant vol. 13 (not full-text searchable on the Internet Archive for us); Butler's Book (1892); newspapers of December 1864; Google Books; HathiTrust; JSTOR.
 
 HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path

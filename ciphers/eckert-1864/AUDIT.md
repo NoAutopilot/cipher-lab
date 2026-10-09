@@ -9355,3 +9355,90 @@ E283 telegram: its rare-word phrase grep was right to fail, a date-and-correspon
 E284 header to "Lt. Col. O. E. Babcock to Lt. Col. T. S. Bowers via S. H. Beckwith", `graded: tulip:M`, time-word conflict noted; E285 none.
 Requests: hdl.huntington.org 38 (24 dmQuery, 8 dmGetItemInfo, 6 IIIF page fetches, one a retry of 5819 after a dropped connection); archive.org 6
 djvu downloads; be-api 9; Google Books 0.
+
+## AUDIT 2 (AUD2-LEDGER-20)
+
+Second verifier AUD2-LEDGER-20 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 11:41-11:5x UTC by
+`date -u`; a separate session and account from the reader FM-R5c and the first auditor FV-FM8c (both account 1); this session had not read or
+audited E293 before. Scope: **E293** only (E294 E295 E297 E298 are N1, no second audit owed). Nothing decoded beyond key look-ups in key.md.
+Key source: `period`. Scratch only for texts and the page image; committed: this section, `fortmonroe/aud2_ledger20_print.py` + `.out`,
+`fortmonroe/aud2_ledger20_hdl.out` (run with FV-FM8c's `fv_fm8c_hdl.py`), the prior-work.tsv rows and the propagation below.
+
+### Prior-work check
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=p.278 pointer 5822;date=1864-12-08;sender=Dodge;
+recipient=Webster' --step-type second-audit --offline` -> exit 4: LEAD 1-own = FIX-FM7's target-level ROOM claim (10:49, names the slug, no
+unit; FIX-FM7's brief covers FV-FM7 and AUD2-LEDGER-12..17 corrections, not E293: does not cover this item); 4-editions CLEAR on the cached OR
+volumes (date +-1 day, both correspondents, control hit); 3-solver UNCHECKED-NET (unsolved-ciphers not cloned) and UNCHECKED (no unit key);
+3-tomokiyo UNCHECKED (no folio key). Rows appended to prior-work.tsv.
+
+### New searches (families the first audit did not cover)
+- **Report of the Joint Committee on the Conduct of the War, 1865, vol. 2, "Fort Fisher Expedition"** (`reportofjointcom02unit`, djvu text,
+  read through Butler's testimony for 6-11 Dec 1864, pp.12-15 by the running heads). Butler read into the record Dodge's two telegrams of
+  **7 Dec** to General Turner ("By telegraph from Bermuda", 11.05 p.m.: boats on hand include "General Sedgewick"; "yet to arrive the Western
+  Metropolis, Admiral DuPont, Starlight, and John Rice"; 7.45 p.m.: "I am now fully prepared to ship the troops"), his own "Colonel Dodge: The
+  Baltic is at Annapolis. Get her, we shall need her" (7 Dec), Weitzel's 8 Dec 9.15 "I am here embarking the troops", and "We had to take a
+  steamer which had put into Fortress Monroe to make out our complement". **E293 (8 Dec, Dodge to Webster) is not printed there**: phrase grep
+  0 for every E293 phrase in `aud2_ledger20_print.out`, and the 8 Dec narrative was read in full. Google Books (key, country=US) returns the
+  same 7 Dec text in the Senate/House printings of the report and in a 1977 reprint titled "Fort Fisher Expedition", not E293.
+- **OR ser. I vol. 42 pt 1** (`warofrebellion421unit`, reports: the first Fort Fisher expedition): Baltic only as a hospital ship (p.197) and
+  carrying the Third Brigade (pp.967, 981 by the index); no Dodge or Webster telegram; E293 phrases 0.
+- **OR ser. I vol. 42 pt 3** (`warofrebellion423unit`, fetched again and read, not only grepped by heading): the index gives "Dodge, George S.
+  Correspondence with Butler 216, 859; Grant 504; Ingalls 392" and "Webster, Ralph C. Correspondence with Butler 418; Grant 1080; QMGO 417,
+  432" -- no Dodge-Webster correspondence and none at the 8 Dec pages; the 7-9 Dec span after p.859 read for Dodge/Webster/transport/boat/
+  embark: only the 7 Dec items FV-FM8c already cites and Weitzel's 8 Dec "embarking the troops". Webster p.1080 is Grant to "Col. R. C. Webster,
+  Fort Monroe", 27 Dec (Lieutenant Porter on the River Queen), other.
+- **Butler, Private and Official Correspondence vol. V** (cached, re-grepped independently): "Col. Webster, Chief Quartermaster, Fort Monroe"
+  passim Oct-Nov 1864 (Atlantic and Baltic hospital transports); the "Du Pont" is a tug (16 Dec, Porter); E293 phrases 0.
+- **Papers of Ulysses S. Grant vol. 13** (`papersofulyssess0013gran`, IA be-api): **unreachable by this route** -- 0 hits for E293 terms and
+  also 0 for the positive controls "Fort Fisher", Weitzel and Baltic, so the item is not full-text indexed there; not a search result.
+- **Huntington CONTENTdm full text** (all pointers, 8 queries on terms FV-FM8c did not use, under the hdl token 11:4x UTC): "john rice" 7
+  (4206, 9442 = Mar 1863; 8503, 7746 = Jan 1865; 5807, 4331, 12766 other), "dupont dodge" 1 (own 5822), "metropolis dodge" 2 (own; 5854 = Jan
+  1865), "starlight dodge" 0, "quarreling whiskey" 1 (own), "tooth see going" 7 (own; 5848-5858 = Jan 1865 operator spellings of the same
+  idiom; 9972, 9282 other), "ball tick" 1 (own), "apple actor" 1 (own). **No second copy (clear or cipher) of E293 at any other pointer.**
+- **IA global full text** (be-api, 4 queries: "Western Metropolis" + "headquarters boat", "Rice, Dupont", Western Metropolis Baltic Dodge,
+  "remaining troops" "river boats"): JCCW and unrelated works only.
+- Not searched: RG 92 (unpublished, needs the archive), newspapers of Dec 1864 (a quartermaster's routing telegram), Butler's Book (1892; the
+  IA download returned an HTML page, not text), Plum's Military Telegraph.
+
+### Grade and reading check
+- **Image** (pointer 5822 at 2400 px, scratch; line 2 cropped): the transcription matches, including "An apple is actor for the ball tick".
+  The last letter of "actor" is an r with a trailing dash on this crop; an n with the same exit stroke cannot be excluded at this resolution.
+- **Key look-ups re-done independently** (key.md): Paradise and Pandora = Colonel, Wreathe = Telegraph (-ed), White = Report, Snake = Head
+  Quarters, Quarrel = Embark (-ing), Whisky and Whistle = Troops, Animal = Monroe, Windpipe = River, Weasel = Steam (weaslers = steamers),
+  Youth = Signature, Vinton = Quartermaster, Unity = Period: **14 H, agreed with FV-FM8c.** Apple = Sumter and Dodge = McMinnville are false
+  hits (plain "An apple is" = Annapolis, "Dodge" the signer): agreed; the 1865 pages of the same ledger write "Dodge" and "Are See Webster"
+  plain for the same two officers (5852-5856, 5866), which supports reading both as plain names here.
+- **"actor": a candidate, not a reading.** key.md has **Acton = Maryland (H, p.9 l.6)**; "Annapolis actor" read as Annapolis [Acton =
+  Maryland] gives "I telegraphed to Annapolis, Maryland, for the Baltic", one letter from the page (r for n) in an operator's hand that
+  writes the place-name code words in plain capitals elsewhere. FV-FM8c's "after" is the other candidate. Grade **M** either way; the image does
+  not settle r vs n. If a FIX job or a third reader accepts Acton, the one gap becomes a name code (rule 4a, D3 needs gaps "mostly
+  names/codes"), so the depth would be re-set by a verifier then, not here.
+- **Boat names (I, from print context, not from the cipher):** "the Rice, Dupont & Sedgwick" = the steamers John Rice, Admiral Du Pont and
+  General Sedgwick, all three in Dodge's own 7 Dec list in the JCCW report (the first two "yet to arrive"; Sedgewick listed as on hand at 11.05
+  p.m. on 7 Dec). The Western Metropolis is also "yet to arrive" there, which fits E293's "if she [the Baltic] doesn't [report], I shall have
+  to take the Western Metropolis for the headquarters boat".
+- **External, non-statistical consistency:** JCCW gives Butler's 7 Dec order to get the Baltic at Annapolis (E293 reports acting on it),
+  Dodge as "Colonel and Quartermaster" at Bermuda (E293's "George S. Dodge, Colonel, Chief Quartermaster"), and Butler's "we had to take a
+  steamer which had put into Fortress Monroe to make out our complement" (E293's plan to transfer the remaining troops to sea-going steamers at
+  Monroe). OR I/42 pt 1 has the Baltic carrying the Third Brigade, so she did join.
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E293** Col. George S. Dodge, Chief QM Army of the James (Bermuda Hundred), via S. H. Beckwith, City Point, and G. D. Sheldon to Col. R. C. Webster, Fort Monroe, 8 Dec 1864 | **N3** (confirmed; not N4: Grant Papers vol. 13 unreachable, Butler's Book and RG 92 unsearched) | unknown | **D2** (unchanged) | 93.3 (14 H of 15; "actor" M, candidate Acton = Maryland) | code clause read passim; external: JCCW 1865 vol. 2 (7 Dec Dodge and Butler telegrams, boat list), OR I/42 pt 3, sibling 5823 |
+
+Safe sentence (FV-FM8c's, with the JCCW added): "Read at grade H with War Department Cipher No. 1: on 8 Dec 1864, as Butler's troops embarked
+for the Fort Fisher expedition, Col. George S. Dodge, chief quartermaster of the Army of the James, telegraphed Col. R. C. Webster at Fort
+Monroe that he had sent to Annapolis for the Baltic, would otherwise take the Western Metropolis as the headquarters boat, and, if the Rice,
+Dupont and Sedgwick did not arrive, would send the remaining troops to Fort Monroe in river boats to transfer to the sea-going steamers there.
+Not located in the Official Records (ser. I vol. 42 pts 1 and 3), the Joint Committee on the Conduct of the War's 1865 report on the Fort Fisher
+expedition (which prints Dodge's telegrams of 7 Dec), ORN ser. I vol. 11, Butler's correspondence or the Huntington's full-text search
+(searched 9 Oct 2026)." Unsafe: any novelty word; "actor" read as a word; the boat names stated as read from the cipher.
+
+### Postmortem
+FV-FM8c's grades, tokenisation fixes and N3 hold. Its one over-statement is by omission: its search log and the SO prompt list the JCCW
+report as a place "not yet looked", and that report is the principal print for the first Fort Fisher expedition's transport telegrams -- it
+prints Dodge's 7 Dec traffic but not E293, so the class stands. Corrections carried below: status.json row (two audits, gap, line), SO prompt
+"WHERE WE HAVE LOOKED". Reading change for a FIX job (rule 7, decode.py entry notes, not applied here): none beyond FV-FM8c's list; add
+"actor = [Acton?] Maryland, M" as a note if the FIX job takes it. Requests: hdl.huntington.org 9 (8 CISOSEARCHALL, 1 IIIF page);
+archive.org 4 djvu downloads (one an HTML page); be-api 11; www.googleapis.com 5 (two "Service temporarily unavailable").

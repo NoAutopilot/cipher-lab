@@ -10462,9 +10462,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8c)'"
+        "AUDIT.md '## AUDIT (FV-FM8c)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-20)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8c verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -10484,8 +10485,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Col. George S. Dodge, Chief QM Army of the James, to Col. R. C. Webster, Fort Monroe, 8 Dec 1864: the Baltic, the Western Metropolis as headquarters boat, embarking the troops (E293)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 8 Dec 1864, as Butler's troops embarked for the Fort Fisher expedition, Col. George S. Dodge, chief quartermaster of the Army of the James, telegraphed Col. R. C. Webster at Fort Monroe that he had sent to Annapolis for the Baltic, would otherwise take the Western Metropolis as the headquarters boat, and, if the Rice, Dupont and Sedgwick did not arrive, would send the remaining troops to Fort Monroe in river boats to transfer to the sea-going steamers there. Not located in the Official Records (ser. I vol. 42 pt 3, by phrase and the 8 Dec headings), ORN ser. I vol. 11, Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM8c); second audit AUD2-LEDGER-20 queued; 'actor' unread (image as transcribed); OR I/42 pt 3 pages for 7-9 Dec not read page by page; Google Books, press, RG 92 not searched",
+      "line": "Read at grade H with War Department Cipher No. 1: on 8 Dec 1864, as Butler's troops embarked for the Fort Fisher expedition, Col. George S. Dodge, chief quartermaster of the Army of the James, telegraphed Col. R. C. Webster at Fort Monroe that he had sent to Annapolis for the Baltic, would otherwise take the Western Metropolis as the headquarters boat, and, if the Rice, Dupont and Sedgwick did not arrive, would send the remaining troops to Fort Monroe in river boats to transfer to the sea-going steamers there. Not located in the Official Records (ser. I vol. 42 pts 1 and 3), the Joint Committee on the Conduct of the War's 1865 report on the Fort Fisher expedition (which prints Dodge's telegrams of 7 Dec), ORN ser. I vol. 11, Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-FM8c, AUD2-LEDGER-20); 'actor' unread, M (candidate Acton = Maryland, key p.9 l.6; image r vs n not settled); not N4: Papers of U. S. Grant vol. 13 unreachable by IA full text, Butler's Book, press and RG 92 not searched",
       "depth": "D2",
       "completeness": "14 H of 15 code-word groups ('actor' unread, plain or slip)",
       "phrases": [
