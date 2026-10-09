@@ -39,3 +39,13 @@ with p = 0.5 (`random.Random(1000 + i)`), the rest `?` -- a half-read letter of 
 - Ceiling check: if null B >= 0.95 the control has no headroom and B is graded weak whatever the margin.
 
 A gate missed ships the option `weak` with both numbers; nothing is run on a target from it.
+
+## Results (09:40 UTC 9 Oct 2026 by date -u, after this file was pushed at 99c73d38a)
+
+`python3 tools/tests/mqs_sameday_control.py` (offline, about 5 s): corpus 101 sender letters 1798-04-27..1802-08-05,
+74 eligible, 60 items.
+- **A FAIL**: true date in the top 10% 0.217 vs null mean 0.170, p95 0.217 (needs > p95 and >= 0.30). The null sits above
+  the expected 0.10: dates in busy weeks win on window size whatever the text. `sameday.py date` ships `weak`.
+- **B PASS**: crib precision 0.432 (41/95) vs null mean 0.270, p95 0.322; ceiling check passed (null < 0.95).
+  `sameday.py rank` ships `controlled-only` (one matched control, English, one sender's edition).
+Not re-run with another setting (rule 3, third-attempt clause; a window-size normalisation for A is a suggestion only).
