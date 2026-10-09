@@ -1939,3 +1939,20 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - ceppo-nevers-fr3251-1570s f.36-37 witness (fr.3252 same volume, 5 Apr 1571, with interlinear) [same-volume; read] -- none: already used; p 0.01; evidence: BIRAGO-POOL.tsv row f.36-37 (already used as witness X_THETA2=r)
 - guazzo-nevers-fr4688-1571-72 (10 items Dec 1571-Apr 1572) [same-recipient; not-in-repo] -- none: images not found; p 0.01; evidence: folders.tsv blocked; BIRAGO-POOL.tsv fr.4688 rows
 - fr.3252 f.70 Birago 19 Oct 1571 and other fr.3251/3252 Sept 1571-Mar 1572 letters [same-sender; read] -- none: no cipher; p 0.0; evidence: BIRAGO-POOL.tsv BIRAGO-NUM-SCOUT rows (all clear text, no cipher)
+
+## TXE-R (9 Oct 2026, 08:26-08:4x UTC by date -u, account-4 worker for LANE TX-ENGINEER): f.117r re-transcribed with today's pipeline -- no licensed change
+
+Brief `.claude/briefs/runs/2026-10-09-account4-txe-r.md`; PREREG `harvest/f117/PREREG-TXE-R.md` (508cf4417, before any read); full record
+`harvest/f117/RESULTS-TXE-R.md`. Disk only. New crops `images/f117_txer/` (`--band-extent 0.1 --mask-neighbours --overlap-note`,
+`--follow-slope 300` on L01-L09, every line falls to the right by 33-125 px; L10 one flat crop), two blind Opus passes (`harvest/f117/txer/
+passA.tsv`, `passB.tsv`), `reconcile_passes.py` (245/283 agree), one Sonnet third reader on 38 splits + 7 both-L rows, new ciphertext
+`harvest/f117/ciphertext_f117_txer.tsv` (the committed `ciphertext_f117_top1.tsv` untouched), decoded under decode_apply.json job 1 with only
+the paths changed (`harvest/f117/decode_txer.json`).
+- (a) err_2reader **0.134** (f.117r's earlier pair 0.25; the brief's 0.56 is f.47r L01-04).
+- (b) tokens 280: **S 207, M 50, U 23** vs the committed RD7 S 190 / M 63 / U 26: +17 net (32 aligned positions newly S, 15 no longer S, nine of
+  them T66 = e where the readers split T76/T66). Against the current D2-B117KAPC grades (S 217) it is 10 fewer.
+- (c) power: 0.134 <= 0.183, licensed on the D2-B117KAPC curve (18/20 at 0.126, 16/20 at 0.183).
+- (d) judge FAIL -1.234 (N=251) vs the committed -1.224: 0.010 worse, so the pre-registered "not worse" gate fails.
+**No licensed change**: the committed reading, RD7 and the D2-B117KAPC grades stand; the new decode is a record, not a candidate reading.
+Report: found a halved reader disagreement and no judge gain; not found: any clause above AD. Follow-up suggestion (not done): a known-answer
+T76/T66 tile check on no.87 before any re-run.

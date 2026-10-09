@@ -1,0 +1,46 @@
+qid	choice	sign	conf	note
+Q01	1	X_S	L	long-s shape with foot and flourish, not on sheet grid
+Q02	2	T66	L	loop top, flat foot flag (not the curled T76 tail)
+Q03	1	T81	M	x with curled arms
+Q04	2	T18	M	loop with cross-bar and stem; no through-line above loop
+Q05	1	X_NEW	H	both agree; four-armed sign with bar, not on sheet
+Q06	2	T95	M	loop top, bar crossing mid-stem
+Q07	1	T81	M	curled x
+Q08	1	T81	M	curled x
+Q09	2	T66	M	flat foot, no left curl
+Q10	2	T66	L	short foot flag
+Q11	2	T27	M	loop top with S body; col30-32 are really two signs after T52
+Q12	other	T81	L	only the curly x remains after the S-loop sign (row is an alignment artefact)
+Q13	none		M	no third sign after the curly x; line ends
+Q14	1	X_S	M	long-s with dot, not on sheet
+Q15	2	T66	L	foot flag flat
+Q16	1	X_S	M	long-s with flourish
+Q17	2	T66	M	heavy flat foot
+Q18	2	T95	M	loop top, foot bar, no crossing through stem
+Q19	1	X_NEW	H	d-like sign with hooked head, not on sheet
+Q20	other	T18	L	loop with bar across top, stem below
+Q21	2	T27	M	loop at right of S-hook body
+Q22	2	T66	M	flat foot
+Q23	2	T52	M	hooked n-like with tail
+Q24	other	T45	L	ring-bottom stem sign; col30 is this, readers shifted
+Q25	none		M	no extra sign; r1 T45 duplicates col30
+Q26	1	X_S	M	long-s flourish
+Q27	2	T66	M	thick flat foot
+Q28	2	T95	M	loop top, short bar across stem
+Q29	1	T81	M	curled x
+Q30	2	T66	M	flat foot
+Q31	2	T66	M	flat foot
+Q32	2	T60	L	wide doubled horizontals; close call with T86
+Q33	1	T25	H	lambda shape
+Q34	1	T18	L	inked loop with stem; bar unclear
+Q35	1	T81	M	curled x
+Q36	1	X_NEW	H	both agree; d-shape with ball head
+Q37	none		M	only a terminal dot, not a sign
+Q38	1	X_NEW	H	both agree; cross with small ring
+Q39	1	T92	M	plain omega, blotted; hook small
+Q40	1	T86	M	tall verticals
+Q41	2	T96	M	e-shaped sign before ring sign
+Q42	2	T86	M	small hash ticks, not plain plus
+Q43	1	X_NEW	H	both agree; large curved enclosure sign
+Q44	2	T84	M	inverted triangle with cross-bar
+Q45	1	X_S	L	terminal s-mark with dot; col11/12 may be one sign
