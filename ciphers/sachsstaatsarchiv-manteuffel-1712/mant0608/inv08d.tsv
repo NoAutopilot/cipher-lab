@@ -1,0 +1,62 @@
+# MANT-CENSUS (9 Oct 2026, LANE FAMILY-A2i account 2): Loc. 694/08 unseen frames 0003-0130 (first 50 of the 190 in frame order; 0108 and 0110 were already in abbo_check.tsv) + planted controls. www.archiv.sachsen.de frames.tsv full-size URLs, 56 requests (50 targets + clear control 0125 + the 5 date-only AB BO frames of the first part), 2.2 s apart, all HTTP 200 image/jpeg; images in scratch only (sha256 prefixes below; re-fetch from images/loc694-08-09/frames.tsv). 5 sheets of 12 tiles (10 targets + a code control + the clear control 0125), sheets_d.py seed 6084, key read after all five were classified. sheet_read = blind read at 600 px; a frame read code or possible was eye-checked at ~1100 px (code column = that result); a sheet "none" is NOT eye-checked (weak evidence: light single codes can be missed).
+loc	frame	kind	sheet_label	sheet_read	code	glossed	density_eye	est_tokens	note	http	sha256_16
+694/08	0510	control+	D1-1	code	y	-			planted control (control+), sheet read code	200 image/jpeg	
+694/08	0006	target	D1-2	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	afef09784999f819
+694/08	0013	target	D1-3	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	35e471397e3c29f1
+694/08	0003	target	D1-4	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	3f6ac5d540053fc1
+694/08	0022	target	D1-5	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	348c5bbc95d987cd
+694/08	0027	target	D1-6	possible	y	n	light	6-8	f.10, Berl. 17 Feb 1712; runs ~12.?.17 and 2?.33.13 at the foot of the right page	200 image/jpeg	b215017facbbb86e
+694/08	0008	target	D1-7	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	ea334f112998eb5f
+694/08	0018	target	D1-8	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	c1ab38510c45ba4c
+694/08	0125	control-	D1-9	none	n	-			planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0016	target	D1-10	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	ccfd3cd31dfd5e73
+694/08	0024	target	D1-11	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	84eef43fe3c6cbfc
+694/08	0010	target	D1-12	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	f88c9df619a4e9df
+694/08	0049	target	D2-1	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	d87d2d87e948e2fe
+694/08	0052	target	D2-2	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	a19308f9036023c0
+694/08	0125	control-	D2-3	none	n	-			planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0047	target	D2-4	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	cc24ce8715c34a58
+694/08	0037	target	D2-5	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	d0639d286d794c3f
+694/08	0042	target	D2-6	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	2ea4c33c071b03f0
+694/08	0579	control+	D2-7	code	y	-			planted control (control+), sheet read code	200 image/jpeg	
+694/08	0029	target	D2-8	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	049bbafa46d49058
+694/08	0044	target	D2-9	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	fe1a398d1fd9ab78
+694/08	0039	target	D2-10	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	67491c4551c84451
+694/08	0034	target	D2-11	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	61e2bea8f3a17a93
+694/08	0032	target	D2-12	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	3c9b112e43d58709
+694/08	0077	target	D3-1	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	669f30c60a580e3d
+694/08	0069	target	D3-2	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	fff69a686d3c3659
+694/08	0054	target	D3-3	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	c1d7f65e684203d7
+694/08	0125	control-	D3-4	none	n	-			planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0062	target	D3-5	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	7ce3ac362f4a88dd
+694/08	0067	target	D3-6	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	6dfd3c9abe15e71a
+694/08	0072	target	D3-7	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	5408262e159d15fa
+694/08	0079	target	D3-8	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	f8d3a61d245af347
+694/08	0074	target	D3-9	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	9420eb02b25d5685
+694/08	0511	control+	D3-10	code	y	-			planted control (control+), sheet read code	200 image/jpeg	
+694/08	0059	target	D3-11	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	d9c4c5b6f08853db
+694/08	0057	target	D3-12	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	40c0ad9ce918e4b4
+694/08	0084	target	D4-1	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	8203f537ca63f29a
+694/08	0096	target	D4-2	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	29145a611ef16ee2
+694/08	0082	target	D4-3	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	8fd080c08d39064e
+694/08	0093	target	D4-4	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	70f634454d16b799
+694/08	0100	target	D4-5	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	38211106d21abdc5
+694/08	0125	control-	D4-6	none	n	-			planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0098	target	D4-7	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	09461910e1b41888
+694/08	0087	target	D4-8	possible	y	partly	light	12-18	stamp 64; runs with 55.44 and 11.60 and a 12.35.60 run in the lower text; small glosses over some	200 image/jpeg	1696c4232c8ec844
+694/08	0106	target	D4-9	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	0665eea73fa7b55a
+694/08	0089	target	D4-10	possible	y	partly	heavy	100-140	stamp 66; digit runs in most lines of both pages (17.1, 55.44, 7.60 and long runs), small words above some	200 image/jpeg	09c68185e455bd65
+694/08	0103	target	D4-11	possible	y	y	medium	50-70	stamp 76; runs with interlinear glosses (a name abbreviation, "Negociation par ...") in the right-page text	200 image/jpeg	f33abfb57ebe99b3
+694/08	0580	control+	D4-12	possible	y	-			planted control (control+), sheet read possible	200 image/jpeg	
+694/08	0113	target	D5-1	possible	y	y	heavy	150-220	stamp 84; dense runs over the lower half of both pages, marginal and interlinear gloss	200 image/jpeg	d7d732532d9dd0c1
+694/08	0120	target	D5-2	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	3620febf0f272e73
+694/08	0116	target	D5-3	possible	y	n	light	5	stamp 33; one run 17.60.39.21.72 in line 4 of the left page	200 image/jpeg	e2033b5204fa5885
+694/08	0128	target	D5-4	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	9197fee1bd773e88
+694/08	0126	target	D5-5	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	0bacf5a3a822736c
+694/08	0510	control+	D5-6	code	y	-			planted control (control+), sheet read code	200 image/jpeg	
+694/08	0123	target	D5-7	possible	y	n	light	8-12	Berl. 11 Jun 1712, stamp 92; runs 17.1.35.44 and 7.60 in the text	200 image/jpeg	ebec6e679242302b
+694/08	0125	control-	D5-8	none	n	-			planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0118	target	D5-9	none	n	-			sheet none; not eye-checked (weak evidence)	200 image/jpeg	1a6c8fa6488156ff
+694/08	0110	target	D5-10	possible	y	n	medium	60-90	f.81, 0109 neighbour; inline groups 7.60 55.44 11.60 1.44 14.23.12.8; ALREADY in abbo_check.tsv (MANT-ABBO), not an unseen frame	200 image/jpeg	027a9b0423080d95
+694/08	0130	target	D5-11	possible	n	-			sheet possible; eye check: no code groups seen at ~1100 px	200 image/jpeg	eb9bd75a2082f448
+694/08	0108	target	D5-12	possible	?	?			already seen: head of 0109 (MANT-0109); sheet read only, not eye-checked here	200 image/jpeg	373dc9a3c2f57967
