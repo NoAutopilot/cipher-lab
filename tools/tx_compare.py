@@ -146,8 +146,9 @@ def box_map(signs, L, lines):
 
 
 # ---------------------------------------------------------------- confidence
-def merged_conf(conf_specs, L):
-    """{(line, pos): conf} from passage-format agreement files (FILE:page), aligned to the line read per line."""
+def merged_conf(conf_specs, L, field='merged_conf'):
+    """{(line, pos): conf} from passage-format agreement files (FILE:page), aligned to the line read per line.
+    field='status' gives the A/B agreement status instead (tools/tx_doubt.py signal `disagree`)."""
     out = {}
     for spec in conf_specs:
         p, page = spec.rsplit(':', 1)
@@ -161,7 +162,7 @@ def merged_conf(conf_specs, L):
             for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
                 if op in ('equal', 'replace') and i2 - i1 == j2 - j1:
                     for k in range(i2 - i1):
-                        out[(line, lab[j1 + k]['pos'])] = rows[i1 + k].get('merged_conf', '')
+                        out[(line, lab[j1 + k]['pos'])] = rows[i1 + k].get(field, '')
     return out
 
 
@@ -281,6 +282,29 @@ def cmd_map(a, signs=None, L=None, lines=None):
     return rows
 
 
+def show_decision(r, b, tk, conf, share=0.6):
+    """TXE-A's show rule for one line-read row r (line, pos, sign) and its box_pos row b -> (cands, why, mapped, sids,
+    cf). why lists 'top1' (atlas held-out top-1 != the line-read sign), 'share' (top-1 share < share), 'conf' (merged
+    confidence M/L, or none on file). Shared with tools/tx_doubt.py (signal `show`)."""
+    key = (r['line'], r['pos'])
+    c = conf.get(key, '')
+    cf = c if c in ('H', 'M', 'L') else 'M'                     # no merged confidence on file -> doubtful
+    sids = b['sid'].split('+') if b and b['sid'] else []
+    mapped = bool(b is not None and b['op'] in ('1:1', '2:1') and sids)
+    cands, why = [r['sign']], []
+    if mapped:
+        t = max((tk[s] for s in sids if s in tk), key=lambda t: int(t['w']), default=None)
+        if t is None:
+            mapped = False
+        else:
+            top = [t.get(f'k{k}', '') for k in (1, 2, 3)]
+            cands += [x for x in top if x and x != '_']
+            if top[0] != r['sign']: why.append('top1')
+            if float(t.get('s1') or 0) < share: why.append('share')
+    if cf in ('M', 'L'): why.append('conf')
+    return cands, why, mapped, sids, cf
+
+
 def cmd_build(a):
     from PIL import Image, ImageDraw
     signs, L = load(a)
@@ -310,23 +334,7 @@ def cmd_build(a):
         if r['line'] not in lines:
             continue
         stats['positions'] += 1
-        key = (r['line'], r['pos'])
-        b = pos2box.get(key)
-        c = conf.get(key, '')
-        cf = c if c in ('H', 'M', 'L') else 'M'                     # no merged confidence on file -> doubtful
-        sids = b['sid'].split('+') if b and b['sid'] else []
-        mapped = b is not None and b['op'] in ('1:1', '2:1') and sids
-        cands, why = [r['sign']], []
-        if mapped:
-            t = max((tk[s] for s in sids if s in tk), key=lambda t: int(t['w']), default=None)
-            if t is None:
-                mapped = False
-            else:
-                top = [t.get(f'k{k}', '') for k in (1, 2, 3)]
-                cands += [x for x in top if x and x != '_']
-                if top[0] != r['sign']: why.append('top1')
-                if float(t.get('s1') or 0) < a.share: why.append('share')
-        if cf in ('M', 'L'): why.append('conf')
+        cands, why, mapped, sids, cf = show_decision(r, pos2box.get((r['line'], r['pos'])), tk, conf, a.share)
         if not mapped:
             stats['unmapped'] += 1
             if cf not in ('M', 'L') or not sids:
