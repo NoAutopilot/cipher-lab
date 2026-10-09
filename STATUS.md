@@ -7453,6 +7453,25 @@ vs controls 2/10, 2/7). Account 2: FAMILY-A2j wave 3 (Manteuffel 0312/0314 Extra
 gate FAIL; 694/08 census closed). Account 3 silent since 02:03. Orphan check: the two known trigger false positives; (f) the lane's worker titles do
 not start with LIVE (convention only, the lane archives them). Checks ok; keys 6 working. Next check-in 17:37.
 
+Owner's decision 17:1x UTC 9 Oct (10:1x am PT): the transcription work continues as a standing programme ("our biggest challenge"): up to 10
+recurring sessions, refilled as others close; a shared memory of what was tried and failed; an adversarial reviewer outside the lane; the
+orchestrator keeps visibility and ownership. Charter: research/TX-PROGRAM.md. Opened 17:17 UTC: TX-RED (session_01WCmiKQwgGMzjVaBrAgxLiY,
+Fable, standing, 45-min passes, brief .claude/briefs/runs/2026-10-09-account4-tx-red.md) and TX-REGISTER (session_01LcsZeDZ7LGv7ZPQrhHzfDE,
+Opus, tools/tx_register.py -> research/TX-REGISTER.tsv with a PREREG --check). LANE TX-ENGINEER-2 brief Amendment 1 (5-7 workers live,
+register regenerated each check-in, every PREREG names its nearest prior and the difference, red-team findings answered by the next check-in,
+new-information experiments ranked first) sent to the lane by message 17:2x.
+TX programme table (kept by the orchestrator at every check-in):
+| slot | session | state 17:2x UTC | cost | last line | open red-team findings |
+|---|---|---|---|---|---|
+| 1 orchestrator | session_01VQDEedJCaaN7fFPGcNPUUD | live, check-in 17:37 | 12.3 | 17:0x | -- |
+| 2 LANE TX-ENGINEER-2 | session_01NmaB9fhuaMSMYexV4NaVsR | live, round 3 (5 workers: TXP-KP2, TXE2-SAME, TXE2-COUNT, TXE2-CELLS, TXE2-COST) | 17.63 + workers | 17:10 | none yet |
+| 3 TX-RED | session_01WCmiKQwgGMzjVaBrAgxLiY | starting (first pass) | -- | -- | -- |
+| 4-10 workers | the lane's five above + TX-REGISTER session_01LcsZeDZ7LGv7ZPQrhHzfDE | 6 live | -- | -- | -- |
+Mercy 1648 (the owner relayed D. Bourdeau's issue-16 comment at 17:1x): that is his 1 Oct 2026 comment, already folded in on 1 Oct
+(corrections.tsv steps 12-16, exceptions.tsv, names credited in NOTES/AUDIT); our reply answering his code-15 question (z at M, three checks)
+is drafted at outreach/bourdeau-issue-mercy-reply.md, gate-7 checked 5 Oct 16:00 UTC, not posted -- now ASKS 160 on the desk (ASKS 8, on the
+desk since 21 Sept with no action, demoted to backlog to keep the cap).
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

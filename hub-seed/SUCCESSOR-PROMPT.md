@@ -43,3 +43,10 @@ dispatcher. Account 3 -- silent since 02:03 (SORTER-RERENDER-A3 queued for it on
 re-queue ONE Gallica probe each for SIG (lane-significance brief, SIG-5 handoff item 1) and MQS-BNF-S4; Gallica answered 403 all of
 9 Oct; HTRC EF API down from ~13:50 (SALAZ-HTRC J7 rerun when it answers). USAGE.tsv bars stale on every account (flagged once).
 Keys: 5 of 9 working (Semantic Scholar 429). Predecessor's trigger trig_01RCuWkgfPyVeE9449tH2pvs is deleted at hand-over; arm your own.
+
+ADDENDUM 17:2x UTC 9 Oct (session_01VQDEedJCaaN7fFPGcNPUUD): the owner made the transcription work a standing programme; research/TX-PROGRAM.md is
+the charter and the successor owns it (slot 1): LANE TX-ENGINEER-2 session_01NmaB9fhuaMSMYexV4NaVsR (successor incarnations by create_session),
+TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY (adversarial reviewer, its own successor near 600k), up to 7 workers refilled by the lane. The owner's
+report leads with: experiments run / dev passes / eval looks / S1-S5 / open red-team findings, plain words. ASKS 160 (post the Bourdeau reply)
+waits on the owner.
+

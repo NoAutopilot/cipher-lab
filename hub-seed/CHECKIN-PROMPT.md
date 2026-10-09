@@ -86,3 +86,9 @@ glosses -- f.98v/f.113 recipes score the pipeline right by construction (flagged
 first three experiments dev-FAIL. TX-CONFIRM-SET-2 done (vivonne1573-f103r-confirm2, account 1 ledgers). Account-4 queue empty but SORTER-RERENDER-A3.
 STATE DELTA 17:0x UTC 9 Oct: TX-ENGINEER-2 round 2: nine experiments dev-FAIL or measured, 0 eval looks; the printed-key truth recipe over-charges
 homophones (f.89 0.39) -- the lane decides the pool rule at its 17:05 check-in. Account 1 LANE LEDGER-7 live (16:42). Five-hour window resets 21:30 UTC.
+STATE DELTA 17:2x UTC 9 Oct (owner's decision): the TX programme (research/TX-PROGRAM.md): up to 10 recurring sessions on account 4 -- orchestrator,
+LANE TX-ENGINEER-2 (5-7 workers, refilled each check-in), TX-RED (session_01WCmiKQwgGMzjVaBrAgxLiY, Fable, adversarial, 45-min passes, successor
+at ~600k), workers. At every check-in: get_session on the lane and TX-RED (ping if silent past their own check-in, successor from the brief at 60
+min silent), read research/TX-REGISTER.tsv's new rows and research/TX-RED-2026-10-09.md's new entry, keep the STATUS 'TX programme table' current,
+hold the gate (no Today move without S1/S2, no eval look without a dev pass, Nearest-prior line on every PREREG). ASKS 160 = the owner posts the
+checked Bourdeau reply (Mercy, issue 16); when he says posted, log the date in CONTRIBUTIONS.md row 59 and the draft header.
