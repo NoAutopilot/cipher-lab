@@ -8769,3 +8769,143 @@ FM-R4a's three "clear copy" claims: two are clear copies (E250, E257) and one is
 already said a sent copy is not a plaintext; the reader's prefilter label "clear sibling" was taken at its word. FM-R4a undersold E250's
 copy ("second half"; it is the whole text) and mis-paged E255 (p.334, not about 336). Decoder slips for a FIX worker (not applied):
 E250 plain Silver Spring, William; E255 plain Taylor's Ridge, watching, Whiteside; E257 plain Sampson; E254 Knocks = Knox (Butler).
+
+## AUDIT (CONF-FM2)
+
+CONF-FM2, 9 Oct 2026 (11:16-11:3x UTC by `date -u`), account 1, for LANE LEDGER; verifier, a session separate from every reader (FM-R5a,
+FM-R5b, FM-R5c). Short-form verifier, exactly CONF-FM Part A's method, for the nine entries whose reader filed a holder clear copy or a
+print location: **E271, E273, E274, E276, E279** (FM-R5a), **E282, E287** (FM-R5b), **E290, E296** (FM-R5c). Key source for all nine:
+`period` (War Department Cipher No. 1, `key.md`, rebuilt from the period cipher book).
+
+### 1. Duplicate diff and prior work
+- Pointers 5641, 5724, 5645, 5582, 5609, 5630, 5788, 5751, 5827: each E-header is the only filed header with that pointer, date and
+  addressee (FM-R5a's diff of the shared pointers 5768/5802/5824/5829/5609 re-read: other entries, other dates). No duplicate.
+- `tools/intake_gate_check.py eckert-1864`: "partial (line 3) -- edition/page or full-text-search citation found within 6 lines".
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=mssEC 25;folio=<ptr>;date=<d>' --step-type audit --offline`, each of the
+  nine: exit 4, "LEAD 1-own live-claim (target-level ... 10:49)" (the readers' own lane, which is what is audited here), "3-solver CLEAR
+  (no cached solver file names this unit)", unsolved-ciphers "UNCHECKED-NET" (no clone), "4-editions UNCHECKED (item names no sender or
+  recipient)" -- the edition check was run by hand below.
+- Holder: `fortmonroe/conf_fm2_hdl.py` (dmGetItemInfo, p16003coll11) for 4587, 10376, 4593, 4493, 10238, 10267, 10268 ->
+  `fortmonroe/conf_fm2_hdl.json` (7 requests, under the ROOM token).
+- Print: OR I/33 (`warofrebellion33unit`), Butler's Private and Official Correspondence IV and V (`privateofficialc04butl`,
+  `privateofficialc05butl`) from `sources/ia-fulltext/print-check/`; OR I/40 pt 2 (`warofrebellion402unit`) and I/42 pt 3
+  (`warofrebellion423unit`) `_djvu.txt` fetched once to scratch; **page images** read for OR I/33 p.670 (leaf n687), I/40 pt 2 p.85
+  (n90), I/42 pt 3 pp.106-107 (n111-n112) and p.971 (n976; IA's `_page_numbers.json` maps p.971 to leaf 979, which is p.973 on the
+  image -- the map is off by two there). Butler IV/V pages are from the OCR running heads only (not image-checked).
+
+### 2. Diff against the clear copy / print (normalised: one case, abbreviations expanded, sound-spellings joined -- rule 3 PX-BRODEC)
+
+**E271 (5641/1) vs pointer 4587, Page 146** (Culpeper received copy, "1215 pm Ft Monroe May 1 1864 / Lt Gen Grant One Iron clad arrived
+Two more now due . Four Gunboats due besides . Gen Gilmore not yet arrived Gen Butler"), and Butler IV **p.148** ("Cipher. Sunday 12, a.m.
+... One iron-clad has arrived, two more now due. Four Gunboats due besides. General Gillmore not yet arrived. Benj. F. Butler"; running
+head 149 follows it, so p.148, not 148-149). **The same telegram.** Code groups 11 + signature: Jersey = Grant, plunge = 1, plank = 2,
+pension = 4, Sharons = Gunboats, maxim = Gillmore, unity/pedlar/zodiac/zebra = stops, Webster = signed: 11 agree; "ironic lad" = Iron clad
+(plain). **Decoder slip:** "Knocks" left plain; it is Knox = Butler (the clear copy's "Gen Butler"), as E254. The trailing text ("would it
+meet your views to have new Man at [Yorktown] and [Snow] at [Monroe] ... S.", 3 H) is Sheldon's own note, in neither copy; unmatched, not
+part of the N1 item.
+
+**E273 (5724/2) vs pointer 10376, Page 234** ("10 pm Ft Monroe May 31st / For Qr Mr Genl Your dispatch recd ---- The Paymonkey is not
+obstructed to White House ---- the enemy are reported in some force at mouth of Chickahominy with Pontoon train which I dont believe Herman
+Biggs chief Qr Mr 930pm"). **The same telegram.** Code groups 12: Belcher = QMG, rose = enemy, wicked = reported, salem = force, Vienna =
+Pontoon, Walrus = signed, Vinton = Quartermaster, Rosetta = 9.30 PM (copy "930pm"), stops: 11 agree. **Decoder slip:** "Chicken" is the
+plain first half of Chickahominy (decoder [Huntsville], key Chicken). Plain: "what house" = White House, "her man Big" = Herman Biggs.
+
+**E274 (5645/2) vs pointer 4593, Page 152** ("Beckwith Culpepper ---- Ft Monroe Va May 2nd 64 430 / For Gen Grant . Letter just received
+from Gen Gillmore which states that he would start yesterday which would bring him here to night or tomorrow morning . He comes with the last
+detachment = ment Benj F Butler Maj Genl"). **The same telegram** (the copy even keeps the cipher's "detach = ment" split). Code groups 8:
+Jupiter = Grant, Maxim = Gillmore, whelp = tomorrow, query = Detach, walrus = signed, Katy = 4.30 PM (copy "430"), stops: 8 agree.
+**Decoder slip:** "Knocks" = Knox = Butler (left plain).
+
+**E276 (5582/1) vs pointer 4493, Page 52** ("Caldwell 'MC' Ft Monroe Va Mar 12th 1864 / Yorktown Mar 12th for Maj Gen Pleasanton My men will
+all have embarked by tomorrow noon I will report in person on Tuesday J. Kilpatrick BrGenl Vols") and **OR I/33 p.670** (image checked: Fort
+Monroe, March 12, 1864, "(Received 12 m.)", to Pleasonton, the same words, signed Kilpatrick, Brigadier-General). **The same telegram.**
+Code groups 16: Hastings = Yorktown, march flood = Mar 12, Tappan Shelby = Maj Gen, spit = men, quarreled = embarked, whelp = tomorrow,
+Francis = noon (12), white = report, Youth = signed, palsy = Brig Gen, Washingtons = Volunteers, stops: agree; Fanny = 11 AM (send time) has
+no counterpart. **Decoder slip:** "person" is plain ("report in person"; decoder [5], key Person = 5). "pleasant on" = Pleasonton.
+
+**E279 (5609/0) vs pointer 10238, Page 96** ("8 Pm / 9 Pm Ft Monroe Apl 17. 1864 / for Qr Mr Genl ---- Gen Gillmore has written saying that
+he has no shelter tents & asking that I be prepared to supply him with twenty thousand ---- The last requisition was for him B. F Butler
+MGenl"). **The same telegram.** Code groups 10: Belcher = QMG, Maxim = Gillmore, harrow promise = 20,000, Yoke = signed, Knave = Butler,
+Nancy = 8 PM (copy "8 Pm"), stops: 9 agree. **Decoder slip:** "shelter" is plain ("shelter tents"; decoder [General], key Shelter).
+
+**E282 (5630/0) vs pointers 10267 (Page 125, third telegram) + 10268 (Page 126, first)** ("5 PM Ft. Monroe Apl. 24 1864 / Qr Mr Gen Meigs
+Following Steamers have reported here , Leary , Getty ---- Metamora ---- Highland Light ---- Rockland ---- Matilda , Pioneer , Key - Port ----
+Govr. Hicks ---- Wyoming, Thomas Jefferson , Portsmouth ---- Kingston ---- Tugs , Tempest , Whittaker , Col Ingalls ---- Fifteen barges Six
+lighters no barges from New York or Philada , none of double decked steam barges ---- I have sent one . steamer to Chesapeake City ordered
+Capt / to telegraph me if more were needed. Condition & progress ---- Transportation should be hurried, also artillery Cavalry & QrMr horses
+for which requisition has been made ---- Herman Biggs Lt Col & QrMr"). **The same telegram, the whole of it.** FM-R5b's count confirmed:
+45 of 47 decoder H agree (Belcher = QMG; wicked = reported; gallant = 15; plague = 6; France = New York; fool = Philadelphia; wayworn =
+steam; plug Weaseler = one steamer; princess = Captain; wreathe = telegraph; wherry = Transportation; nuptial = artillery; pacific = Cavalry;
+Vincent = QrMr; spartans = horses; Yoke = signed; paradise = Colonel; Vinton = QrMr; pandora = Col (of the tug "Col Ingalls"); stops);
+Rockland and Wyoming are plain ship names (already `plain:`). **Decoder slip (new):** "weasilers" in "following weasilers have wicked here"
+is Weasel = Steam + -ers (the copy's "Steamers"; the same group as line 9's "Weaseler", which the decoder does read), left plain -- C from
+the copy. Plain: "to progress" vs the copy's "& progress" (one plain word, no substance). Disagreements in substance: none.
+
+**E287 (5788/2) vs OR I/42 pt 3 p.107** (image checked: the telegram is wholly on p.107, between Parke's 9.30 a.m. and Butler's 10 a.m. to
+Rawlins; not "pp.106-107") ("Headquarters, October 7, 1864 -- 9 a. m. Lieutenant-General Grant, War Department, Washington, D. C.: At 6.45
+this morning the enemy attacked and drove Kautz back, and are now advancing on our right toward the rear in strong force. They have just
+opened fire upon Fort Harrison. Benj. F. Butler") and **Butler V p.231** (running heads 231 before, 232 after; "have attacked and driven
+Kautz back", as the ledger). **The same telegram.** Code groups 19: Knaves = Butler's, snake = Head Quarters, Emma = 9 AM, plunder = 7 (Oct
+7), Japan = Grant, rose = enemy, oiled = attacked, owling = advancing, watkins = rear, salem = force, tuliped = opened, Saco = Fort, walrus =
+signed, Knox = Butler, stops: all agree. **Decoder slip:** "pledge lampoon plaster" = 6, 40, 5 is the time "6.45" (print "At 6.45"); the
+numeral combiner sums it to [51].
+
+**E290 (5751/2) vs OR I/40 pt 2 p.85** (image checked) ("War Department, Washington City, June 15, 1864 -- 1 p. m. Lieut. Col. H. Biggs: If
+you have not already done so, send to Fort Powhatan immediately every vessel which can be useful in ferrying troops and trains. M. C. Meigs,
+Quartermaster-General."). **The same telegram** (the ledger shows Eckert as the Washington operator; the signature group bender = QMG =
+Meigs). Code groups: growl = Washington, ghost = 15 (June 15), harriet = 1 PM, paradise = Colonel, saco = Fort, salmoning = ferrying, yoke =
+signed, bender = QMG: 8 agree; whiskey = troops (decoder M, `variant` Whistle) is **C** from the print. **Decoder slip:** "ann" is the plain
+end of "poe hat ann" = Powhatan (decoder {time: 1 AM}). "lent paradise bugs" = Lt Col Biggs. Tail "this would then another" is operator
+chat.
+
+**E296 (5827/2) vs OR I/42 pt 3 p.971** (image checked) ("Norfolk, Va., December 11, 1864 -- 4.30 p. m. Lieutenant-General Grant: I have sent
+a scout toward Hicksford, also three companies of cavalry in the same direction, also a like force of cavalry and two pieces of artillery to
+South Quay to hold the crossing of the Blackwater and move in the direction of Weldon. Rations and forage will be ready at a moment's notice
+to be at Suffolk if wanted. Geo. F. Shepley, Brigadier-General."). **The same telegram** (the ledger copy goes via Beckwith at City Point and
+omits "will be"; "toby" = to be). Code groups 22: Katy = 4.30 PM, John = Grant, Black = City Point, wolf = scout, pebble = 3, panama/pacific
+= cavalry, salem = force, plank = 2, vermin = pieces, nuptial = artillery, waxy = South, pluming = crossing, tanner = move[ment], Harvey =
+Weldon, wales = Rations, Shade = forage, Genoa = Suffolk, youth = signed, Palsy = Brig Gen, stop: all agree. No slip.
+
+### 3. Classification (key `period`)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E271** Butler via Sheldon to Grant (Culpeper), 1 May 1864 | **N1** (clear copy 4587; Butler IV p.148) | yes | **D3** | 100 (11 H agreeing + Knocks = Knox once read; Sheldon's 3-H tail outside the item) | code clause: Sharons = Gunboats, maxim = Gillmore; external: clear copy 4587, print |
+| **E273** Biggs via Sheldon to the QMG, 31 May 1864 9.30 PM | **N1** (clear copy 10376) | yes | **D3** | 100 (11 H agree + Chicken plain) | code clause: rose = enemy, Vienna = Pontoon; external: clear copy 10376 |
+| **E274** Butler via Sheldon to Grant, 2 May 1864 4.30 PM | **N1** (clear copy 4593) | yes | **D3** | 100 (8 H agree; Knocks = Knox) | code clause: Maxim = Gillmore, query = detach; external: clear copy 4593 |
+| **E276** Kilpatrick (Yorktown) via Fort Monroe to Pleasonton, 12 Mar 1864 | **N1** (clear copy 4493; OR I/33 p.670) | yes | **D3** | 100 (16 H; person plain) | code clause: Hastings = Yorktown, quarreled = embarked; external: clear copy, print |
+| **E279** Butler via Sheldon to the QMG, 17 Apr 1864 8 PM | **N1** (clear copy 10238) | yes | **D3** | 100 (9 H agree; shelter plain) | code clause: harrow promise = 20,000, Maxim = Gillmore; external: clear copy 10238 |
+| **E282** Biggs via Sheldon to QMG Meigs, 24 Apr 1864 5 PM | **N1** (clear copy 10267-10268) | yes | **D3** | 100 (45 H agree + weasilers C; Rockland, Wyoming plain) | code clause: France/fool = New York/Philadelphia, wherry = Transportation; external: clear copy |
+| **E287** Butler to Grant, 7 Oct 1864 9 AM | **N1** (OR I/42 pt 3 p.107; Butler V p.231) | yes | **D3** | 100 (19 H agree; 6.45 slip) | code clause: oiled = attacked, tuliped = opened, Saco = Fort; external: print |
+| **E290** Meigs via Eckert to Lt Col Biggs, 15 June 1864 1 PM | **N1** (OR I/40 pt 2 p.85) | yes | **D3** | 100 (8 H agree + whiskey C; ann plain) | code clause: salmoning = ferrying, bender = QMG; external: print |
+| **E296** Shepley (Norfolk) via Beckwith to Grant, 11 Dec 1864 4.30 PM | **N1** (OR I/42 pt 3 p.971) | yes | **D3** | 100 (22 H agree) | code clause: wolf = scout, Harvey = Weldon, Genoa = Suffolk; external: print |
+
+Safe sentence (each, with its own witness): "Read with War Department Cipher No. 1; the plain text is known from the period clear copy in
+the Eckert Papers (Huntington pointer <n>, in the holder's public transcription) [or: printed in <OR/Butler page>]; our reading is an
+independent re-decipherment of the Fort Monroe cipher copy." Unsafe: any novelty word; "not located in print".
+Depth sentences (mine, one per item):
+- E271: "On 1 May 1864 Butler told Grant from Fort Monroe that one iron-clad had arrived, two more and four gunboats were due, and Gillmore
+  had not yet arrived."
+- E273: "On 31 May 1864 Lt. Col. Biggs told the Quartermaster General that the Paymonkey was not obstructed to White House and that a report of
+  the enemy with a pontoon train at the mouth of the Chickahominy was not believed."
+- E274: "On 2 May 1864 Butler told Grant that Gillmore expected to arrive that night or next morning with the last detachment."
+- E276: "On 12 March 1864 Kilpatrick told Pleasonton from Yorktown that his men would all be embarked by the next noon and that he would report
+  in person on Tuesday."
+- E279: "On 17 April 1864 Butler asked the Quartermaster General to be ready to supply Gillmore with twenty thousand shelter tents."
+- E282: "On 24 April 1864 Biggs listed for Meigs the steamers and tugs that had reported at Fort Monroe and asked that transportation and
+  artillery, cavalry and quartermaster horses be hurried."
+- E287: "At 9 a.m. on 7 October 1864 Butler told Grant that the enemy had driven Kautz back at 6.45 and opened fire on Fort Harrison."
+- E290: "On 15 June 1864 Meigs ordered Biggs to send every vessel useful for ferrying troops and trains to Fort Powhatan."
+- E296: "On 11 December 1864 Shepley reported from Norfolk a scout toward Hicksford and cavalry and two guns sent to South Quay to hold the
+  Blackwater crossing."
+
+None of the nine is a sent cipher copy (each witness is plain text), so no entry is left for a first verifier on that ground.
+status.json: nine rows (`text: known`, key `period`). No SECOND-OPINIONS-QUEUE rows (N1).
+
+### 4. Postmortem
+All nine reader claims hold: every witness is the same telegram. Over-precise or loose page citations corrected: **E287 is OR I/42 pt 3
+p.107** (FM-R5b's "pp.106-107"); **E271 is Butler IV p.148** (not 148-149); **E276 is OR I/33 p.670** (FM-R5a gave no page); E290 p.85
+and E296 p.971 confirmed on the page image (FM-R5c's OCR-line pages were right; IA's page map is off by two at p.971). Decoder slips for a
+FIX worker (not applied here; key.md untouched): **E271, E274** Knocks = Knox (Butler); **E273** plain Chicken (Chickahominy); **E276** plain
+person; **E279** plain shelter; **E282** weasilers = Weasel+ers = Steamers (C); **E287** pledge lampoon plaster = "6.45", not [51]; **E290**
+plain "ann" (Powhatan), not {time: 1 AM}, and whiskey = troops C. The E-headers of E271 ("pp.148-149") and E287 ("pp.106-107") should carry
+the corrected pages when the FIX worker touches them.

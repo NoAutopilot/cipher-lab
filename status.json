@@ -9915,6 +9915,384 @@
       "depth_check": "code clause: baptism = Baltimore, hastings = Yorktown, relayed = evacuated; external non-statistical: clear copy 4823",
       "depth_note": "22 H of 22 code-word groups (20 checked against the clear copy)",
       "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM2)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM2 verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM2)' section 3",
+      "reading_version": "FM-R5a 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM2) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Butler via Fort Monroe to Grant at Culpeper, 1 May 1864: iron-clads and gunboats, Gillmore not arrived (E271)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 4587 (Page 146) and Butler IV p.148.",
+      "gap": "plain text known from clear copy 4587 (Page 146) and Butler IV p.148; no novelty. Decoder slip (Knocks = Knox (Butler)) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "11 H agreeing + Knocks = Knox (decoder slip); Sheldon's 3-H operator tail outside the item",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.128, pointer 5641, E271"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.128, pointer 5641, E271",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.128, pointer 5641, E271"
+      ],
+      "depth_sentence": "On 1 May 1864 Butler told Grant from Fort Monroe that one iron-clad had arrived, two more and four gunboats were due, and Gillmore had not yet arrived.",
+      "depth_check": "code clause: Sharons = Gunboats, maxim = Gillmore; external non-statistical: clear copy 4587, Butler IV p.148",
+      "depth_note": "11 H agreeing + Knocks = Knox (decoder slip); Sheldon's 3-H operator tail outside the item",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM2)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM2 verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM2)' section 3",
+      "reading_version": "FM-R5a 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM2) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Lt Col Biggs via Fort Monroe to the Quartermaster General, 31 May 1864: the Paymonkey and the Chickahominy pontoon report (E273)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 10376 (Page 234).",
+      "gap": "plain text known from clear copy 10376 (Page 234); no novelty. Decoder slip (plain Chicken) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "11 H agreeing; Chicken is plain (Chickahominy)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.234, pointer 5724, E273"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.234, pointer 5724, E273",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.234, pointer 5724, E273"
+      ],
+      "depth_sentence": "On 31 May 1864 Lt. Col. Biggs told the Quartermaster General that the Paymonkey was not obstructed to White House and that a report of the enemy with a pontoon train at the mouth of the Chickahominy was not believed.",
+      "depth_check": "code clause: rose = enemy, Vienna = Pontoon; external non-statistical: clear copy 10376",
+      "depth_note": "11 H agreeing; Chicken is plain (Chickahominy)",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM2)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM2 verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM2)' section 3",
+      "reading_version": "FM-R5a 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM2) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Butler via Fort Monroe to Grant, 2 May 1864: Gillmore comes with the last detachment (E274)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 4593 (Page 152).",
+      "gap": "plain text known from clear copy 4593 (Page 152); no novelty. Decoder slip (Knocks = Knox (Butler)) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "8 H agreeing; Knocks = Knox (decoder slip)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.152, pointer 5645, E274"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.152, pointer 5645, E274",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.152, pointer 5645, E274"
+      ],
+      "depth_sentence": "On 2 May 1864 Butler told Grant that Gillmore expected to arrive that night or next morning with the last detachment.",
+      "depth_check": "code clause: Maxim = Gillmore, query = detach; external non-statistical: clear copy 4593",
+      "depth_note": "8 H agreeing; Knocks = Knox (decoder slip)",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM2)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM2 verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM2)' section 3",
+      "reading_version": "FM-R5a 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM2) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Kilpatrick (Yorktown) via Fort Monroe to Pleasonton, 12 Mar 1864: men embarked by tomorrow noon (E276)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 4493 (Page 52) and OR ser. I vol. 33 p.670.",
+      "gap": "plain text known from clear copy 4493 (Page 52) and OR ser. I vol. 33 p.670; no novelty. Decoder slip (plain person) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "16 H agreeing; person is plain",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.52, pointer 5582, E276"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.52, pointer 5582, E276",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.52, pointer 5582, E276"
+      ],
+      "depth_sentence": "On 12 March 1864 Kilpatrick told Pleasonton from Yorktown that his men would all be embarked by the next noon and that he would report in person on Tuesday.",
+      "depth_check": "code clause: Hastings = Yorktown, quarreled = embarked; external non-statistical: clear copy 4493, OR I/33 p.670",
+      "depth_note": "16 H agreeing; person is plain",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM2)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM2 verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM2)' section 3",
+      "reading_version": "FM-R5a 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM2) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Butler via Fort Monroe to the Quartermaster General, 17 Apr 1864: shelter tents for Gillmore (E279)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 10238 (Page 96).",
+      "gap": "plain text known from clear copy 10238 (Page 96); no novelty. Decoder slip (plain shelter) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "9 H agreeing; shelter is plain",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.96, pointer 5609, E279"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.96, pointer 5609, E279",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.96, pointer 5609, E279"
+      ],
+      "depth_sentence": "On 17 April 1864 Butler asked the Quartermaster General to be ready to supply Gillmore with twenty thousand shelter tents.",
+      "depth_check": "code clause: harrow promise = 20,000, Maxim = Gillmore; external non-statistical: clear copy 10238",
+      "depth_note": "9 H agreeing; shelter is plain",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM2)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM2 verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM2)' section 3",
+      "reading_version": "FM-R5b 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM2) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Lt Col Biggs via Fort Monroe to QMG Meigs, 24 Apr 1864: steamers and tugs reported, barges and lighters (E282)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from clear copy 10267-10268 (Pages 125-126).",
+      "gap": "plain text known from clear copy 10267-10268 (Pages 125-126); no novelty. Decoder slip (weasilers = Steamers) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "45 H agreeing + weasilers C (Steamers); Rockland, Wyoming plain",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.86, pointer 5630, E282"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.86, pointer 5630, E282",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.86, pointer 5630, E282"
+      ],
+      "depth_sentence": "On 24 April 1864 Biggs listed for Meigs the steamers and tugs that had reported at Fort Monroe and asked that transportation and artillery, cavalry and quartermaster horses be hurried.",
+      "depth_check": "code clause: France/fool = New York/Philadelphia, wherry = Transportation; external non-statistical: clear copy 10267-10268",
+      "depth_note": "45 H agreeing + weasilers C (Steamers); Rockland, Wyoming plain",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM2)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM2 verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM2)' section 3",
+      "reading_version": "FM-R5b 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM2) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Butler to Grant, 7 Oct 1864 9 AM: Kautz driven back, fire opened on Fort Harrison (E287)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from OR ser. I vol. 42 pt 3 p.107 and Butler, Private and Official Correspondence V p.231.",
+      "gap": "plain text known from OR ser. I vol. 42 pt 3 p.107 and Butler, Private and Official Correspondence V p.231; no novelty. Decoder slip (6.45 not 51) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "19 H agreeing; numerals pledge lampoon plaster = 6.45 (decoder sums to 51)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.244, pointer 5788, E287"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.244, pointer 5788, E287",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.244, pointer 5788, E287"
+      ],
+      "depth_sentence": "At 9 a.m. on 7 October 1864 Butler told Grant that the enemy had driven Kautz back at 6.45 and opened fire on Fort Harrison.",
+      "depth_check": "code clause: oiled = attacked, tuliped = opened, Saco = Fort; external non-statistical: OR I/42 pt 3 p.107, Butler V p.231",
+      "depth_note": "19 H agreeing; numerals pledge lampoon plaster = 6.45 (decoder sums to 51)",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM2)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM2 verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM2)' section 3",
+      "reading_version": "FM-R5c 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM2) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Meigs via Eckert to Lt Col Biggs at Fort Monroe, 15 June 1864: every vessel to Fort Powhatan (E290)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from OR ser. I vol. 40 pt 2 p.85.",
+      "gap": "plain text known from OR ser. I vol. 40 pt 2 p.85; no novelty. Decoder slip (plain ann; whiskey = troops) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "8 H agreeing + whiskey = troops C; ann is plain (Powhatan)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.207, pointer 5751, E290"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.207, pointer 5751, E290",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.207, pointer 5751, E290"
+      ],
+      "depth_sentence": "On 15 June 1864 Meigs ordered Biggs to send every vessel useful for ferrying troops and trains to Fort Powhatan.",
+      "depth_check": "code clause: salmoning = ferrying, bender = Quartermaster General; external non-statistical: OR I/40 pt 2 p.85",
+      "depth_note": "8 H agreeing + whiskey = troops C; ann is plain (Powhatan)",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM2)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM2 verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM2)' section 3",
+      "reading_version": "FM-R5c 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM2) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Shepley (Norfolk) via City Point to Grant, 11 Dec 1864: scout toward Hicksford, cavalry to South Quay (E296)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the same telegram known from OR ser. I vol. 42 pt 3 p.971.",
+      "gap": "plain text known from OR ser. I vol. 42 pt 3 p.971; no novelty.",
+      "depth": "D3",
+      "completeness": "22 H agreeing",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.283, pointer 5827, E296"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.283, pointer 5827, E296",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.283, pointer 5827, E296"
+      ],
+      "depth_sentence": "On 11 December 1864 Shepley reported from Norfolk a scout toward Hicksford and cavalry and two guns sent to South Quay to hold the Blackwater crossing.",
+      "depth_check": "code clause: wolf = scout, Harvey = Weldon, Genoa = Suffolk; external non-statistical: OR I/42 pt 3 p.971",
+      "depth_note": "22 H agreeing",
+      "text": "known"
     }
   ],
   "lanes": [

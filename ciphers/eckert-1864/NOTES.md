@@ -3148,3 +3148,31 @@ Read so far: ten of ten filed (E290-E299). Printed: E290 (OR I/40 pt 2 p.85), E2
 - [x] image-check: 3 of 10 pages read whole (matches); 7 not read (named above).
 - [x] retry: one Huntington image retry after a RemoteDisconnected.
 Verdict: keep going: 5 internal gaps, cheapest next: image eye-check of the 7 unread pages, ~$0.8
+
+## CONF-FM2 (9 Oct 2026, account 1, for LANE LEDGER; verifier, separate from every reader)
+
+Short-form verifier (AUDIT.md "## AUDIT (CONF-FM2)"), CONF-FM Part A's method, on the nine FM-R5a/b/c entries with a witness: **E271** =
+clear copy 4587 + Butler IV **p.148**; **E273** = clear copy 10376; **E274** = clear copy 4593; **E276** = clear copy 4493 + OR I/33 **p.670**;
+**E279** = clear copy 10238; **E282** = clear copy 10267-10268 (whole text); **E287** = OR I/42 pt 3 **p.107** (not 106-107) + Butler V p.231;
+**E290** = OR I/40 pt 2 p.85; **E296** = OR I/42 pt 3 p.971. All nine the same telegram: N1, D3, key `period`, status.json rows (`text: known`),
+no SO rows. No witness is a sent cipher copy. OR pages read on the page image (IA's page map is off by two at I/42 pt 3 p.971; leaf n976 is
+p.971). Decoder slips for a FIX worker (not applied; key.md untouched): E271/E274 Knocks = Knox (Butler); E273 plain Chicken; E276 plain
+person; E279 plain shelter; E282 weasilers = Steamers (Weasel = Steam); E287 pledge lampoon plaster = 6.45 (decoder [51]); E290 plain "ann"
+(Powhatan) not 1 AM, whiskey = troops C. Prior-work: `tools/prior_work.py ... --step-type audit --offline` exit 4 on each (own-work LEAD =
+the readers' lane; 3-solver CLEAR; 4-editions UNCHECKED, run by hand). Requests: hdl.huntington.org 7 (dmGetItemInfo, under the token);
+archive.org 11 (2 `_djvu.txt`, 3 `_page_numbers.json`, 6 page images, 2 s apart).
+
+## Remaining gaps (CONF-FM2, 9 Oct 2026)
+Read so far: E271 E273 E274 E276 E279 E282 E287 E290 E296 confirmed N1 (AUDIT CONF-FM2).
+- decoder slips E271/E273/E274/E276/E279/E282/E287/E290 and the E271/E287 header page numbers (AUDIT CONF-FM2 s.4) - blocker: not-attempted; a verifier does not edit readings; next: FIX worker via decode.py notes, ~$0.8
+- E271 trailing note "new Man at [Yorktown] and [Snow] at [Monroe]" (Sheldon's own) - blocker: not-attempted; outside this brief; next: CONTENTdm search "new man" / "meet your views", ~$0.3
+
+## Escalation (CONF-FM2, 9 Oct 2026)
+- [x] siblings: clear copies 4587, 10376, 4593, 4493, 10238, 10267-10268.
+- [x] clear-pages: as above.
+- [x] known-keys: Cipher No. 1 agrees with every witness.
+- [x] print: OR I/33 p.670, I/40 pt 2 p.85, I/42 pt 3 pp.107 and 971; Butler IV p.148, V p.231.
+- [x] key-rebuild: no key row needed (all slips are decoder handling, not key values).
+- [x] image-check: OR pages on the page image; ledger images not viewed (transcription-only; the witnesses agree).
+- [x] retry: none needed.
+Verdict: keep going: 2 internal gaps, cheapest next: E271 tail search, ~$0.3
