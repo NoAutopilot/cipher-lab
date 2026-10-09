@@ -38,3 +38,22 @@ The job, in order:
    CANDIDATES.md pushed and say so: the orchestrator then declares route (b).
 Cost rule (Usage 6): two blind passes x (lines / crop) at the README per-pass rate + one reconciliation unit; stop before a unit that
 would cross 80% of the cap or box.
+
+## Amendment 1 (orchestrator, 20:5x UTC 9 Oct by date -u; the owner's direction at 20:4x UTC): the other solvers' solved items are candidates
+The owner's point: items already solved by Tomokiyo (Cryptiana), Bourdeau (dbourdeau/cyphersolver) and Aymeloglu (unsolved-ciphers)
+carry a published key and often a plaintext, and the source manuscript can be looked up from their citations. Add them to step 2's
+candidate search, from the snapshots on disk first (never a live crawl beyond the good-citizen rule):
+- `sources/cryptiana/READABLE.tsv` (13 items Tomokiyo says "can be read with" a named published key: Bayonne 1529 across Clairambault
+  312/313/329/330/331 and fr.3005, Gramont 1530 (ours), Nevers-Piles fr.20974, Colbert 168bis/127, the Manchester Papers key),
+  `sources/cryptiana/CRYPTO-INDEX.tsv` (279 pages with their key tables and shelfmarks) and `sources/cryptiana/keys/`;
+- `sources/cyphersolver/2026-10-0{1,2,3}/` and `sources/cyphersolver-site/` (Bourdeau: about 45 solved folders with keys and
+  transcriptions; MIT code, CC BY text; cite him for every item taken);
+- Aymeloglu's catalogue (LANDSCAPE.md rows; his repository has no licence: cite, never copy).
+The truth rule does not change: a solver's own transcription or decode is a READER, not a witness. An item from these sources enters the
+pool only where the plaintext has a witness independent of any transcription -- a period decipherment on the leaf or elsewhere in the
+volume (Tomokiyo notes Clair.330 f.85 is "deciphered on the previous pdf page", for example), a clerk clear copy, or a printed edition
+of that letter -- and the key is period or published. Where only a published key and a solver's clean decode exist, do NOT build a pool
+item; list the item in CANDIDATES.md under a separate heading "key-only (solver-truth), not pooled" with the solver's name, so the lane
+and TX-RED can decide whether a declared weaker class is ever admitted. Gallica is 403 today: a Gallica-only image source is listed, not
+fetched, and the item is built later; prefer items whose images are already in a ciphers/ folder (ciphers/clair*, ciphers/fr*, ...).
+Prior-work and credit: run `tools/prior_work.py` on each and name the solver in the item's README line (rule 8).
