@@ -12417,3 +12417,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:24 | VB-0086 worker (account 2, Opus) | huygens take
 2026-10-09 10:27 | VB-0086 worker (account 2, Opus) | huygens release (12 requests, all 200: toc form 1, Brievenlijst 1657-1658 date windows 6, pp.365-366 images 2, pages.json 1, pp.365-366 OCR html 2); NA take (1 native fetch of inv.1537 scan 0086)
 2026-10-09 10:28 | HEIN-SR worker (account 2, Sonnet) | huygens take (Deel 2 OCR pages, <=118 requests, >=2.2 s) -- for LANE FAMILY-A2h (account 2)
+2026-10-09 10:27 | VB-0086 worker (account 2, Opus) | NA release (1 request, 200: inv.1537 scan 0086 right page at native via IIIF pct region, 2570x3729)
