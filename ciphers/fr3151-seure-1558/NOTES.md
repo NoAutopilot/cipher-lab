@@ -1239,3 +1239,9 @@ Read so far: 0 tokens read (0 H, 0 C); f81R L01-L20 reconciled (err_R 0.095 agre
 Verdict: keep going: 2 internal gaps; cheapest next: build an owner sign sorter for Tournon fo. 22r from the tv crops and hand it on, then re-run seut2_gate.py on the settled labels, ~$3
 ## Serrao 1969 (ILL, read 6 Oct 2026 by the account-3 orchestrator)
 J. Verissimo Serrao, "Michel de Seure, embaixador frances em Portugal (1557-1559): duas cartas para o seu epistolario", Arquivos do Centro Cultural Portugues 1 (1969) pp.455-458 (copy in cipher-lab-private lit/ill-2026-10-06/). It lists the known Seure epistolary (12 items, Jan-May 1559: Carpentras 490; BnF fr.15871 ff.212-249; the St Petersburg MS printed by Falgairolle 1896; ANTT S. Vicente X 353; editions Matos 1952 pp.274-297 and Falgairolle 1896 pp.49-85) and prints two new letters TO Seure in clear (Henri II 4 Oct 1557, Cardinal of Lorraine 5 Oct 1557; Bibliotheque Thiers ms 287 ff.35-36). It notes a gap "for the second half of 1557 and the whole following year": the fr.3151 Dec 1558 letters (nos.39-44) are not in Serrao's list. Search result for the log: no print of the 1558 cipher letters in Serrao 1969; Matos 1952 and Falgairolle 1896 are the editions to check next if not already read.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on the owner's Morvilliers 1549 sorter answer (D1-SEURES, 6 Oct 2026) and LOCAL-QUEUE L53 (Falgairolle 1896); Serrão 1969 read 6 Oct 2026.
+- Build the owner sign sorter for Tournon fo. 22r from the tv crops (tools/sign_sorter.py, as D1-SEURES did for Morvilliers) and hand it on. S, ~$3, R12A-SEUT2's named next
+- Look for Falgairolle 1896 (Seure's St Petersburg letters, pp.49-85) on IA/Gallica/Google Books full view before L53 answers. S, ~$0.5, advancedsearch + SRU

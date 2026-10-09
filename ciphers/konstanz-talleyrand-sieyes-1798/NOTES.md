@@ -173,3 +173,9 @@ not cite -- a search result, not evidence that no such letter exists. Main text 
 bands (p. 716: arrival in Berlin 20 Jun; p. 720: the Zastrow approaches); not read in full. Where it was not found: Guyot 1911 pp. 716-722
 footnotes (this pass), plus R9-KONS2's ContentSearch over the whole volume. Requests: gallica.bnf.fr 7 (IIIF image API, one native page each,
 >= 3 s apart, all HTTP 200, no 429). Status unchanged: `open`. Next: the Konstanz image (REQUEST.md); else Prusse 223 pièces 105-119 by copy order.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on Stadtarchiv Konstanz copies of P 1839/5, /21, /28, /41 (REQUEST.md, 24 Sept 2026); no image seen, no ciphertext.
+- Grep Pallain 1891 (IA correspondancedi00talluoft) for the Dec 1798 and Feb 1799 printed candidates for P 1839/28 and /41, ready as cribs on arrival (CS-A2-A's 3-27 Dec, 5-17 Feb). S, ~$0.5
+- Run tools/design_prior.py for a French Foreign Ministry key of 1798 so the attack family is chosen before the image arrives. S, ~$0.3, disk only

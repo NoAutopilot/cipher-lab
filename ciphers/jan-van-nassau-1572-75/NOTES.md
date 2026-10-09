@@ -1607,3 +1607,9 @@ Verdict: keep going (one cheap pass on the 104 glyphs; the codes wait on new lis
 
 Requests: resources.huygens.knaw.nl 1 (the PDF). Subagents: 2 Sonnet blind passes. Report what was found and where it was not
 found; novelty not classified.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on the Marburg (HStAM) reply for a list-A witness of codes 140/145/146 (ASKS row 48; MAIL-3, 28 Sept 2026).
+- Third blind pass on the two glyphs around code 104 (long-s, ch?), told only that Kurrent ch and long-s occur by numerals: does L2 read 'offentlich sich'. S, ~$0.8, D3-5551's next
+- Align the 4613/4615-circle siblings for any occurrence of 140, 145 or 146 (D3-5551's Remaining gaps). S, ~$1, interlinear_align.py

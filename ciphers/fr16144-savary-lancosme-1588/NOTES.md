@@ -373,3 +373,9 @@ the owner's sort and is above this job's cap, so per the brief the job stopped h
 [done 3 Oct 2026, SV-SORT: line crops of c370-c375 and c380 cut, overlays checked, sorter built.] Nothing independent of the
 owner's sort remains on this folder: every gap in the Remaining gaps below (4 Oct 2026, A3V3-SAVT) waits on the settled
 alphabet or on physical access to fr.17020.
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on the owner's sort of sorter/index.html for c370-c375 + c380 (ROOM flag 3 Oct 2026) and on physical access to fr.17020 (not digitised, RUN2-SAV 4 Oct 2026).
+- Read Boucher's Lettres de Henri III for 1587-88 (named unread in RUN1-SAV's print rung) for a reply quoting the 29 Apr 1587 duplicata. S, ~$1, IA/Google Books grep
+- Collate L14's c251-252 margin gloss (30 Apr 1586) with Charrière IV's printed letter of that date (date match only so far): clear text vs print, no sign labels needed. S, ~$1, gallica crops

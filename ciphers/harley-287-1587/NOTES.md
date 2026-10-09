@@ -646,3 +646,8 @@ ROOM.md to publish; not published here, ASKS.md not edited.
 Token grades: no token read (H 0, C 0, S 0, M 0, I 0); no key or reading changed, so no decode --check or judge.
 Requests: none (disk only). Credit: the sign code and sign values used for the two passes are D. Bourdeau's
 (github.com/dbourdeau/cyphersolver, MIT / CC BY 4.0).
+
+## While waiting (9 Oct 2026, WAIT-PASS-5)
+
+Waits on the owner's pass over the f.88r sign sorter (sorter/f88r/, handed on by R11A-HAR, 6 Oct 2026); blind machine reads of this hand are retired.
+- View DECODE ff.70r-72v and ff.96-97 (R8482-R8487, R8496; fetched 5 Oct, never read) for interlinear glosses: a glossed leaf reads at 0.144, not 0.50. S, ~$1, decode_browser_login.js
