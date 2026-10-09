@@ -7066,3 +7066,12 @@ extending the geometry win, a read-free doubt detector for the sorter). Lane at 
 LANE MQS-2: 3 live, 9 queued, holding. Account 2 FAMILY-A2g wave 1 done (Manteuffel 0454 audited N2; 0109 f.80 read; van Beuningen
 siblings screened, no all-cipher page in inv.1537). DEB-RUN flag: three 8 Oct ROOM.md lines carry museum-derived Debosnys figures (public,
 in history); ASKS row for the owner (a: fingerprint and leave, b: purge), no quote. Account 3 silent.
+
+TX-ENGINEER interim, 08:2x UTC 9 Oct: seventeen instruments scored, none moves the held-out set (looks spent: 0). The crop-geometry
+pass did not hold on the whole dev set (TXE-N: vs pass A fixed 9 / broken 8, p 1.0); follow-slope cutting is adopted as a crop rule only.
+Recurring finding: the remaining errors are the same wrong sign in both readers and in every presentation (shuffled order 8 of 10 the
+same, two crop sets 13 of 22 identical, adjudicators 0 fixes) -- a reader-knowledge floor on look-alike pairs, not a presentation
+problem. Owner ideas: O1 white space, O2 darkening, O3 cut gate, O5 recovery methods (Sauvola, CLAHE, stroke-width), O6 contrast sweep
+all tested FAIL on dev; O4 colour untestable (sources greyscale, Gallica 403); O7 symbol library ordered now; O8 covered by O7's
+layout (full-pass form already FAIL as TX-SHEET 4 Oct). Ordered too: a read-free audit of the 20 all-pass-wrong positions against the
+truth alignment. Round 3: register report, doubt detector (sorter feed), confirm item once, f.117r live letter. Lane cost ~93 of 150.
