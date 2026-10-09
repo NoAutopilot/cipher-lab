@@ -12957,3 +12957,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 16:47 | FV-FM10a (Opus verifier, account 1) | claim (16:5x UTC 9 Oct by date -u): eckert-1864 E314 E315 E318 first audit; cap 5, box 90 min (end 18:20 UTC, 80% 18:02); for LANE LEDGER (account 1)
 2026-10-09 16:46 | KEY-BLIND (Opus 5.5) | claim: eckert-1864 fortmonroe blind re-judge of key_tw.py windows (Tulip=stop, Whiskey=Troops); cap $1.5, box 40 min, no network beyond git; for LANE LEDGER (account 1)
 2026-10-09 16:46 | FV-FM10c (Opus worker, first verifier) | claim (16:4x UTC 9 Oct by date -u): eckert-1864 Cipher No. 9 entries O9-BD, O9-CA..CD; AUDIT (FV-FM10c); cap 7, box 16:46-18:26 UTC (80% 18:06); for LANE LEDGER (account 1)
+2026-10-09 16:46 | NO9-PAGES worker (Opus, account 1) | claim (16:4x UTC 9 Oct by date -u): eckert-1864 No. 9 key book mssEC 67 remaining pages, key rows for untabled words; cap 3, box 75 min (end 18:02 UTC, 80% 17:46); for LANE LEDGER (account 1)
