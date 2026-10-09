@@ -1,4 +1,4 @@
-# PROPOSED flag column for benchmark-tx/birago1572-no87.truth.tsv (TXE-T, 9 Oct 2026) -- for a verifier; NOT applied. Positions not listed: flag empty. Reasons in no87_floor_audit.tsv.
+# PROPOSED flag column for benchmark-tx/birago1572-no87.truth.tsv (TXE-T, 9 Oct 2026; extended TXE-T2, 9 Oct 2026, to all 803 scored positions: the 306 scored positions within 2 of an alignment site add no new flag, see no87_skip_audit_803.tsv) -- for a verifier; NOT applied. Positions not listed: flag empty. Reasons in no87_floor_audit.tsv.
 line	pos	flag
 f178r_L03	23	alignment-doubtful
 f178v_L02	8	key-doubtful

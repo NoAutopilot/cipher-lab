@@ -1,0 +1,116 @@
+# TXE-T2 (9 Oct 2026): every no.87 alignment site where the clerk letter stream and the 853-sign sequence are not 1:1, rebuilt from harvest/align87/align_real.tsv against pairs.tsv (letters folded as tools/interlinear_align.py plain_letters). skip: clerk letters the aligner jumped before this row; chunkN: N-letter chunk on one sign; null/insert: sign with no clerk letter; excluded:*: the truth file's own non-scored status (excluded:multi-letter-chunk is listed once, as its chunk).
+align_idx	line	pos	kind	detail	status
+0	f178r_L01	1	skip	cheindibella	excluded:span-uncertain
+0	f178r_L01	1	excluded:span-uncertain	g	excluded:span-uncertain
+1	f178r_L01	2	excluded:span-uncertain	u	excluded:span-uncertain
+2	f178r_L01	3	excluded:span-uncertain	a	excluded:span-uncertain
+3	f178r_L01	4	excluded:span-uncertain	r	excluded:span-uncertain
+4	f178r_L01	5	null/insert		excluded:unaligned
+5	f178r_L01	6	null/insert		excluded:unaligned
+6	f178r_L01	7	excluded:span-uncertain	d	excluded:span-uncertain
+7	f178r_L01	8	excluded:span-uncertain	a	excluded:span-uncertain
+8	f178r_L01	9	chunk4	qual	scored
+11	f178r_L01	12	excluded:off-sheet	m	excluded:off-sheet
+50	f178r_L02	20	skip	s	scored
+65	f178r_L03	4	excluded:off-sheet	c	excluded:off-sheet
+66	f178r_L03	5	excluded:off-sheet	a	excluded:off-sheet
+67	f178r_L03	6	skip	r	excluded:off-sheet
+67	f178r_L03	6	excluded:off-sheet	m	excluded:off-sheet
+69	f178r_L03	8	skip	gnolama	scored
+83	f178r_L03	22	chunk6	turino	scored
+84	f178r_L03	23	skip	e	scored
+96	f178r_L03	35	excluded:off-sheet	i	excluded:off-sheet
+108	f178v_L01	12	skip	z	scored
+109	f178v_L01	13	chunk3	per	scored
+123	f178v_L01	27	skip	l	scored
+151	f178v_L03	1	excluded:key-split-T88	q	excluded:key-split-T88
+174	f178v_L03	24	chunk10	carmagnola	scored
+198	f178v_L04	22	chunk3	che	scored
+201	f178v_L04	25	skip	s	scored
+207	f178v_L05	3	skip	s	scored
+208	f178v_L05	4	skip	e	scored
+214	f178v_L05	10	skip	s	scored
+219	f178v_L05	15	skip	l	scored
+221	f178v_L05	17	excluded:off-sheet	p	excluded:off-sheet
+222	f178v_L05	18	skip	p	scored
+228	f178v_L05	24	chunk3	che	scored
+233	f178v_L05	29	skip	i	scored
+243	f178v_L06	8	chunk2	et	scored
+258	f178v_L06	23	skip	t	scored
+261	f178v_L06	26	excluded:off-sheet	h	excluded:off-sheet
+263	f178v_L06	28	chunk9	gonottiet	excluded:multi-letter-chunk
+291	f178v_L07	26	skip	l	scored
+322	f178v_L08	27	skip	l	scored
+325	f178v_L08	30	chunk10	carmagnola	scored
+326	f178v_L09	1	chunk2	et	scored
+327	f178v_L09	2	chunk6	quello	scored
+335	f178v_L09	10	skip	l	scored
+339	f178v_L09	14	skip	l	scored
+354	f178v_L09	29	excluded:off-sheet	r	excluded:off-sheet
+370	f178v_L10	16	excluded:off-sheet	h	excluded:off-sheet
+371	f178v_L10	17	skip	ugo	scored
+372	f178v_L10	18	skip	otti	scored
+387	f178v_L11	1	chunk4	oche	excluded:multi-letter-chunk
+400	f178v_L11	14	excluded:key-split-T88	e	excluded:key-split-T88
+422	f178v_L12	4	null/insert		excluded:unaligned
+428	f178v_L12	10	chunk3	per	scored
+436	f178v_L12	18	skip	s	scored
+440	f178v_L12	22	chunk11	chesuamaest	excluded:multi-letter-chunk
+441	f178v_L12	23	excluded:off-sheet	a	excluded:off-sheet
+450	f178v_L12	32	skip	s	scored
+457	f178v_L13	7	skip	quest	scored
+477	f178v_L13	27	skip	quest	scored
+484	f178v_L14	5	chunk3	che	scored
+485	f178v_L14	6	skip	n	excluded:off-sheet
+485	f178v_L14	6	excluded:off-sheet	o	excluded:off-sheet
+496	f178v_L14	17	excluded:off-sheet	f	excluded:off-sheet
+502	f178v_L14	23	skip	l	scored
+520	f178v_L15	14	chunk2	et	scored
+521	f178v_L15	15	chunk3	che	scored
+529	f178v_L15	23	chunk3	che	scored
+531	f178v_L15	25	chunk8	atholici	excluded:multi-letter-chunk
+567	f178v_L16	31	excluded:off-sheet	l	excluded:off-sheet
+581	f178v_L17	14	excluded:off-sheet	a	excluded:off-sheet
+582	f178v_L17	15	chunk7	ncorche	excluded:multi-letter-chunk
+596	f178v_L17	29	excluded:off-sheet	n	excluded:off-sheet
+600	f178v_L18	4	skip	s	scored
+603	f178v_L18	7	chunk2	et	scored
+616	f178v_L18	20	skip	t	scored
+617	f178v_L18	21	chunk6	quella	excluded:multi-letter-chunk
+618	f178v_L18	22	chunk3	che	scored
+630	f178v_L19	7	skip	a	scored
+631	f178v_L19	8	chunk3	per	scored
+639	f178v_L19	16	chunk2	gg	excluded:multi-letter-chunk
+643	f178v_L19	20	skip	el	scored
+645	f178v_L19	22	chunk2	re	excluded:multi-letter-chunk
+653	f178v_L20	1	excluded:off-sheet	n	excluded:off-sheet
+654	f178v_L20	2	skip	on	scored
+664	f178v_L20	12	null/insert		excluded:unaligned
+665	f178v_L20	13	null/insert		excluded:unaligned
+670	f178v_L20	18	skip	l	scored
+700	f178v_L21	21	skip	t	scored
+708	f178v_L22	2	skip	e	scored
+713	f178v_L22	7	excluded:no-key-sign-for-q	q	excluded:no-key-sign-for-q
+714	f178v_L22	8	skip	u	scored
+715	f178v_L22	9	skip	st	excluded:off-sheet
+715	f178v_L22	9	excluded:off-sheet	o	excluded:off-sheet
+717	f178v_L22	11	skip	ffe	scored
+718	f178v_L22	12	skip	t	scored
+728	f178v_L22	22	skip	fr	excluded:off-sheet
+728	f178v_L22	22	excluded:off-sheet	a	excluded:off-sheet
+729	f178v_L22	23	skip	nza	excluded:key-split-T88
+729	f178v_L22	23	excluded:key-split-T88	e	excluded:key-split-T88
+733	f178v_L22	27	skip	s	scored
+746	f178v_L23	12	chunk3	per	scored
+747	f178v_L23	13	chunk6	quello	scored
+774	f179r_L01	11	skip	s	scored
+790	f179r_L01	27	excluded:off-sheet	m	excluded:off-sheet
+800	f179r_L02	6	excluded:key-split-T88	q	excluded:key-split-T88
+827	f179r_L03	2	null/insert		excluded:unaligned
+838	f179r_L03	13	chunk3	che	scored
+844	f179r_L03	19	excluded:off-sheet	m	excluded:off-sheet
+848	f179r_L03	23	null/insert		excluded:unaligned
+849	f179r_L03	24	null/insert		excluded:unaligned
+850	f179r_L03	25	null/insert		excluded:unaligned
+851	f179r_L03	26	excluded:off-sheet	e	excluded:off-sheet
+852	f179r_L03	27	null/insert		excluded:unaligned
