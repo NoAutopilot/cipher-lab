@@ -7162,6 +7162,19 @@ FAMILY-A2h wave 2 done 12.91 (MANT-CUC: the Krauske table holds on the Flemming 
 -> antt-linhares-chave now the one wait-only row with no parallel action, asked of LANE FAMILY-A2h with a 12:30 default). Account 3 silent.
 Keys unchanged. Next check-in 11:58 (two verifiers live on account 4).
 
+Check-in 6, 11:59-12:0x UTC 9 Oct (4:59 am PT): five_hour allowed; orchestrator context ~530k, cost 18.5. AUD2-LEDGER-18 done 11:58
+(5.37 Q): E254 N3 D3, E272 N3 D3 (check strengthened by OR I/40 pt 3 p.119), E275 N3 D2, E277 N3 D3, all now two audits; corrections
+for a FIX job (E254 signature B. W. Brice; whiskey undecoded in E50 E100 E256 E293) handed to LANE LEDGER by ROOM. AUD2-LEDGER-20 done
+11:56 (4.59 D-, 1.8x its 2.5 cap: the full family sweep for one entry): E293 N3 D2 confirmed, JCCW 1865 vol. 2 and OR I/42 read, not N4.
+AUD2-LEDGER-19 (E280 E281 E283 E284 E285, FV-FM8b's) re-tagged from account 3 and spawned here (session_01C6exXTnwpvsoxi1Kebr7F4).
+Account 4 LANE DEFAULT-1051 wave 3: SFZ-READ2 (sforza f.81 second reader 76%, reconciled G1 0.762 -> 0.770 PASS, f.13 lattice rank 1/201),
+CRAV-8450 (Hyde to Rupert key R8450 glossed, A1 gate EXCLUDED 10/41 vs p01 33), MONLUC-K07 (form A read as t, +5.98 5-gram gain,
+pending), E62-CHECK2 (residue_decode --check 0, stale cause shown), SP106-KEY and SALAZ-HTRC running. Account 2 FAMILY-A2h wave 3 done
+17.76 (LIN-COUNT calibration FAIL at 1897 px, instrument retired; MANT-CUC2 141/207 PASS; MANT-0176 gate (b) PASS S26 M4 U1); Linhares
+While-waiting section added by the lane (no WAIT-PASS-6); V-MANT0176 its last job, then it closes; OUT-CHECK-KARL waits for :10. Account 1
+LANE LEDGER-5 ~40 of 60: FV-FM8b E280-E285 N3 D3 (E284 sender corrected to Babcock), FV-FM8d live. Board rebuilt after the second audits.
+Account 3 silent since 02:03. Next check-in 12:25.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

@@ -52,3 +52,6 @@ audits). Account 4 live: DEFAULT-account-4-20261009-1051 lane (wave 2) + AUD2-LE
 orchestrator; ledger+archive on their done lines). Account 2 queued: OUT-CHECK-KARL (:10); after it passes, the orchestrator queues the
 SEND-QUEUE row (tools/send_queue_check.py first) and promotes ASKS 159 to the desk. AUD2-LEDGER-19 (FV-FM8b's) will be queued for account 3
 by LANE LEDGER: re-tag to account 4 and spawn. antt-linhares-chave wait-only: LANE FAMILY-A2h asked, default WAIT-PASS-6 at 12:30.
+STATE DELTA 12:0x UTC 9 Oct: AUD2-LEDGER-18/20 done on account 4 (E254 E272 E277 N3 D3 two audits; E275, E293 N3 D2); -19 live on account 4
+(session_01C6exXTnwpvsoxi1Kebr7F4). Any further AUD2-LEDGER-* row LANE LEDGER queues for account 3: re-tag to account 4 and spawn. Second-audit
+pricing: ~5 per job whatever the entry count (the family sweep dominates), not 2.5 per entry.
