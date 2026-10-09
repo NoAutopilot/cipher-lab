@@ -650,6 +650,85 @@ Requests: digitalisate-he.arcinsys.de 1 HEAD + 98 GET, 2 s apart, all 200, no ch
 Suggestion (not run, rule 7 of Usage): a check-solved and a breadth spec for "Brandt to Hedwig Sophie 1672 (HStAM 4 f Dänemark
 131 ff. 0020-0064)" as its own target, with the 0049 slip and 0020 margin as known-plaintext pairs for interlinear_align.py.
 
+## HDK-BRANDT check-solved (9 Oct 2026, 00:41-00:5x UTC by date -u; LANE FAMILY-A2d, account 2)
+
+Item: Friedrich von Brandt (Brandenburg resident at Copenhagen) to the Kassel regent Hedwig Sophie, 1672, numeral cipher on HStAM 4 f Staaten D
+Dänemark Nr. 131 leaves 0020 0021 0049 0050 0062 0063 0064 (HDK-131, dk131_inventory.tsv). Considered as one candidate, not a new folder.
+**Verdict word: open** (conditional, see the two gaps below). Nothing found that reads, keys or prints any of these leaves' cipher.
+
+Prior work: `python3 tools/prior_work.py hessen-daenemark-1672 --item-spec 'shelfmark=HStAM 4 f Staaten D Daenemark 131;folio=0020;date=1672-02-27;
+sender=Friedrich von Brandt;recipient=Hedwig Sophie' --step-type lookup --fetch` exit 4: plaintext KNOWN is AUDIT.md:225 (Nr. 125's own class, not this
+volume); LEAD rows = HDK-131's and this claim (neither covers a lookup); 3-tomokiyo CONTEXT hits are other letters' "f.20"; UNCHECKED-NET rows 3-solver /
+4-editions are answered below by hand (`--record` not run: the item-spec is ad hoc, no items.tsv row).
+
+Checks, one line each (route, query, result):
+1. Own work: grep of the folder, HDK-131 section and dk131_inventory.tsv: seven leaves flagged, nothing keyed, nothing decoded, no earlier check-solved on
+   Dänemark 131 (the Premise check GF-A2-1 (c) listed it as unopened). Not already done.
+2. HCPortal: `api.hcportal.eu/api/cryptograms` (3 GETs, Accept: application/json; the paging parameter is ignored, the list returned is the same 1,875 names
+   each time): names matching Dänemark/Denmark/Brandt/Copenhagen/Hessen/Marburg/1672 = `hstam_4_f_daenemark_nr_125_0002-0004` (id 494, Nr. 125, the other
+   item) and `The Copenhagen cryptogram` (id 4, a different item); no Dänemark 131 record. The cached solver-repo copy of the HCPortal keys index
+   (cyphersolver research/catalogue_harvest/hcportal/keys_index.txt) lists only the HStAM 4 d Nr. 1218 keys and nothing from 4 f.
+3. DECODE: no login; cached listings sources/decode/records-*-2026-09-24.tsv grepped for Marburg/HStAM/Hessen/Dänemark/Brandt/Copenhagen: only
+   Hstam_4_d_nr_1218 records (1635-52); key listings only 4 d Nr. 1234-1238 (A2-HDK3, already logged). No record for Dänemark 131 or Brandt (listing date
+   24 Sept 2026, 28 Sept for keys; not re-crawled today).
+4. Solver repositories, fresh shallow clones 9 Oct 2026 (grep only): dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers for daenemark/dänemark/
+   brandt/hedwig/hessen/hesse-kassel/marburg/hstam: cyphersolver hits are CATALOGUE.md #341 (Nr. 125, 4 May 1672), hard_targets.md item 4 (HStAM 4 h
+   Nr. 1411, Malsburg 1636) and the HCPortal/DECODE index files above; unsolved-ciphers hits are DECODE catalogue rows for Hstam_4_d_nr_1218/1236-1238 only.
+   Neither names Dänemark 131, Brandt or Hedwig Sophie; no "next step" line on this item.
+5. Web (4 searches, standard mode): "Friedrich von Brandt Resident Kopenhagen 1672 Hedwig Sophie ... Chiffre"; ""Dänemark 131" OR "Daenemark 131" Staatsarchiv
+   Marburg 4 f Brandt Coppenhagen Chiffre"; ""Friedrich von Brandt" brandenburgischer Resident Kopenhagen 1672 Urkunden und Actenstücke"; "Carl Stuart tragedie
+   König Kopenhagen 1672 Brandt cipher decipherment ... Cipherbrain OR Cryptiana OR ciphermysteries". Hits: Deutsche Biographie entries of Christoph and
+   Eusebius von Brandt (Brandenburg diplomats, Paris and Warsaw, other persons), the 1772 Struensee/Enevold Brandt affair, Riedel/Paderborn PDFs. Nothing on
+   Friedrich von Brandt's 1672 letters or any decipherment of them. Blog site searches were not run separately this pass (the GF-A2-1 "Web and blog check"
+   above covers Cipherbrain, Cryptiana blog and Cipher Mysteries for the folder, 2 Oct 2026, and found nothing on Brandt; Tomokiyo's pages on disk
+   were grepped by prior_work: no Brandt/Dänemark hit): the blog threads are therefore **checked for the folder, not re-read for Brandt**.
+6. Editions, read by this worker from the Internet Archive djvu text (downloaded, grepped; not page-read): *Urkunden und Actenstücke zur Geschichte des Kurfürsten
+   Friedrich Wilhelm von Brandenburg*, vols 7 (urkundenundacten07berluoft), 8 (…08…), 13 (…13…), 19 (…19…), 21 (urkundenundact21berl), 23 pt 2
+   (urkundenundacten2302berluoft). Vol. 13 p. 425 footnote reads "Friedrich v. Brandt, brandenburg. Resident in Kopenhagen" (identity of the sender
+   confirmed, M); vol. 19 prints his reports from Copenhagen of March 1680 and later. Test: lines naming Brandt with Kopenhagen/Coppenhagen/Copenhagen
+   within two lines of a 1671-73 year: **0 hits in all six volumes**; none of them prints a 1672 Brandt letter or a cipher passage of it. Volumes not opened:
+   the remaining ones (1-6, 9-12, 14-18, 20, 22, 24+); the 1672 Danish business may sit in one of those. No edition of the Hessian regent's 1672 chancery
+   or of the Hedwig Sophie correspondence was located (Rommel's Geschichte von Hessen and the Landgraf-Carl-era literature were not opened; an IA
+   full-text query "Hedwig Sophie" Landgräfin Regentschaft 1672 Brandt returned ten keyword-soup hits, none read: not evidence either way).
+7. Scholarship: OpenAlex (key) "Friedrich von Brandt Brandenburg Resident Kopenhagen": the call returned 0 (the first of two queries mis-fired in my shell
+   and is not counted), a second query ("Hedwig Sophie Hessen-Kassel Brandt Copenhagen 1672 cipher", 4 results, all unrelated); Semantic Scholar
+   (key) "Hedwig Sophie Hesse-Kassel regent 1672 Denmark Brandt cipher": total 0. Persée/HAL/CrossRef not queried; JSTOR not queryable from the cloud.
+   Unchecked, not clear.
+
+Premise check (a)-(d):
+(a) Decipherments the folder already mentions: the period decipherment **on the leaves** (below); no separate key sheet found. Also Nr. 125's letter
+    table (key 255) was tested against 0049's glossed groups in HDK-131 and disagrees (1/8).
+(b) Other solvers' working files: none (check 4).
+(c) Physical neighbours: Dänemark 131 is the neighbour of Nr. 125 and was swept in full (HDK-131); the 7 leaves above are the cipher. Its cover (0001) names
+    the whole file "Correspondenz mit dem Chur-Brandenburgischen Residenten zu Coppenhagen Friedrich von Brandt" 1671-74. No bound-in key sheet found in
+    the sweep (91 of 98 leaves none; sheet scale only).
+(d) Recipient side: Hedwig Sophie / the Kassel chancery edition not located (check 6); Brandt's own Brandenburg-side letters are the sender side and
+    are not printed for 1672 in the six volumes read.
+
+What the glossed leaves cover (3 requests to digitalisate-he.arcinsys.de, 2.5 s apart, 200 each; 0020, 0049, 0021 at 3500 px kept in the scratchpad, not
+committed; 1750-px views read, three vision looks; counts are eye estimates, M, +-15%):
+- 0020 (letter of 27 Feb 1672, pr. 9 March): right page carries two cipher blocks, 3 lines at the head (about 44 groups) and 22 lines below (about 300
+  groups), about 340 groups in all, values mostly 32-170 with 198 259 262 272 and 3-digit exceptions. **Every line of the lower block has a marginal
+  gloss written beside it** (running German: "... Herzog de Jorck ... Prinzessin", "der König ist ... ma[sque] ... tragedie vom König in England Carl Stuard
+  agirt ...", ending "der englische Resident hat diese tragedie übel genommen, Ihre Churfl. Durchl. mein gnädigster Herr sehen diese tragedie niemahls zu agiren
+  permittirt" (reading by eye, M); the clear text above it is "Es ist hier eine troupe deutscher Commedianten"). The marginal gloss therefore covers
+  the full run (about 340 of 340 groups at line level), a sense-for-sense decipherment, not a group-for-group one.
+- 0049 (22 June 1672): the slip's 4 lines (about 42 groups) and the foot of the left page (2 lines, about 22 groups), about 64 groups; one letter above each
+  group on line 1 (12 letters, "schwanger wirt") and part of lines 2-3 and the foot ("nochts"?), about 35 of 64 groups glossed (M). Letter-for-letter pairs.
+- 0021 (end of the 27 Feb letter): 3 short inline groups (244; 209 53 74 94 54 259; 196) with interlinear words above them (about 9 groups, glossed y, partly).
+  Correction to the inventory: 0021 was "?" at sheet scale.
+- 0050, 0062, 0063, 0064 not re-opened (budget of <= 10 requests; this job needed 3). Together the seven leaves hold an estimated 600-700 groups; the
+  two clearly glossed leaves and 0021 hold about 410-420 of them (60-70%), all on leaves with a period gloss on the page.
+
+Cheapest first test (not run, no decoding or key building here): the 0049 letter-for-letter pairs (about 35) are too few for a table alone, so
+(1) align 0020's lower block against its marginal gloss with `tools/interlinear_align.py` (hard-EM, sense-for-sense, about 300 groups against about 120
+words; value -> letter/syllable candidates), (2) hold the 0049 pairs out as the independent test (letters for about 35 groups), against a shuffled-gloss
+control and a code+mark synthetic control at the same N and K (rule 3: the control is the design, not only N and K), (3) only if (2) clears, key.tsv for
+Brandt's table and a decode of 0050/0062-0064 with `decode_key.py`. Prerequisite: a two-pass transcription of 0020 (about 340 groups) and 0049 at
+crop scale (crops via `tools/iiif_lines.py --image`), about USD 6-9; the alignment itself about USD 1. Duplicate-effort risk: none found (checks 2-5).
+Class bookkeeping: not a verifier verdict; no novelty claim (rule 10). Requests: arcinsys 3 GET; api.hcportal.eu 3 GET; archive.org 6 GET + 3 fts + 1
+advancedsearch (2 s apart); api.openalex.org 2; api.semanticscholar.org 1; github.com 2 shallow clones; search engine 4.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: unmeasured. No reconciled ciphertext.tsv exists; key.tsv (key 255 letter table, S) and a provisional ciphertext_f4runs.tsv (the two f.4 runs, single-eye, M) exist since 2 Oct 2026 (A2-HDK3), 36 tokens: 31 M, 5 U. The only committed value is 601 = "Dennemarck" (grade C, glossed 3x on f.4; Cheap test 1). Cheap test 1's "~40 code tokens, ~20 distinct values" was a rough count, and it is an undercount. It excluded 625/774/775 as "section counters", but on a 1000-px preview of image 0003 (this pass, adversarial check, M) 774 and 775 stand inline in the prose with bold glosses above or beside them. It also called f.2 "plain", yet image 0002 carries at least one inline glossed code in its last lines. So any "~3 of ~40 (~7%)" figure is not a measurement. Note that images 0002-0004 are HCPortal image numbers, not checked foliation: 0003 has its binding on the right and faces 0004, so it is a verso.
 - ff.2-4 (images 0002-0004), every inline code group that carries a bold interlinear or marginal gloss. On the preview these include 651 (by "Cur Brandenburg"), 653, 229 ("Berlin"), 774, 775 ("Ga. Stadt") and the marginal 625 gloss on 0003; on 0004, 756/768, 229, 427 641 ("herzog von Ploen"), 303, 447 and 834; on 0002 the one group, done 3 Oct 2026 (GAPS152, page 1: 690 with gloss "Bleinenk??l", M, both passes agree on the sign). Image 0003 done 3 Oct 2026 (GAPS155, page 2): 9 groups, all glossed, 9/9 sign agreement: 605 K. Dennemarck, 651 x2 and 653 Kurbrandenburg, 625 (margin gloss unread), 229 Berlin, 690 (recurs from page 1, M), 774 Holland, 775 General-Staaten; held-out check 2/2 vs shuffled-gloss control P=0.11 without the 690 override (4/4, P=0.007, with it): not yet discriminating. Image 0004 done 3 Oct 2026 (GAPS159, page 3): 11 glossed nomenclator pairs (C 8, M 3: 602 Der Konig in Dennemarck, 5756 Franckreich, 601 x2 Dennemarck, 229 Berlin, 681 Cur Brandenb, 768 ?ueco, 437 641 Hertzog von Ploen, 303 alliance, 447 Kayser, 834 Rex Daniae), 47/56 sign agreement before reconciliation; 303 and 229 conflict with key 255; pooled pages 1-3 held-out 8/8 (6/6 without the 690 override) vs shuffled-gloss control mean 0.27-0.37, P<0.0001: discriminating. All three pages are now transcribed and their glosses paired. None of the 0003/0004 codes is pinned code by code - blocker: not-attempted; images at 2600x3944 px are on disk and legible enough that most 3-digit codes visibly carry a gloss, so the gloss coverage is much wider than "1 of 20". Cheap test 1 stopped at a breadth cap, and the iiif_lines.py crop step in its brief (.claude/briefs/runs/2026-09-26-lane-b7-hcp.md, item A) was never pasted. The f4_top/f4_mid crops cited in NOTES are not on disk; done 3 Oct 2026 (GAPS163): merged into ciphertext.tsv (65 groups); key_gloss.tsv holds 18 gloss-pinned nomenclator rows (C 11, M 6, I 1); decode_key --check exit 0, tokens 65: C 9, I 1, M 21, S 30, U 4; nomenclator coverage 23/26, only 625 x2 (p2 margin gloss unread) and the margin 7480 left; done 3 Oct 2026 (GAPS168): the 625 margin gloss reads "[?] Ahlefeldt" (word 2 two eyes M, word 1 unread), key_gloss 625 = [?_Ahlefeldt] M, nomenclator coverage 25/26, only the margin 7480 (probably not a code) left; next: none needed beyond gap 3
@@ -665,6 +744,7 @@ Read so far: unmeasured. No reconciled ciphertext.tsv exists; key.tsv (key 255 l
 - [retired] key-rebuild: instruments run and closed: gloss alignment (GAPS152-163, key_gloss.tsv, done), nomenclator bracketing (GAPS193: alphabetical order a control-backed negative, topical blocks a non-test at K=16), and context fill by a word-bigram model on tools/data/de17 (D4-HDK, 7 Oct 2026, PREREG-D4HDK.md 9a91d4a1d: held-out control on 14 C-grade gloss tokens top-1 0.071, MRR 0.208 below its shuffled-context null p95 0.314, prior-only top-1 0.000: gate FAIL, no target value scored). Earlier text of this item: never tried; planned gloss alignment, bracketing and LM context fill, ~$4. Reopened only by new material (more gloss-pinned codes of the same list, gap 4) or a different instrument (a larger era-matched corpus with the 1672 Danish-court names, or a palaeographer on the 625 margin)
 - [x] image-check: done 3 Oct 2026 (GAPS155 page 2, GAPS159 page 3; confirmed by A4-RFHDK, 5 Oct 2026, from the files, no new fetch). f.4 (image 0004) was re-cut with a pasted `tools/iiif_lines.py --image ... --out images/crops_p3 ... --debug` command (14 crops, overlay `images/crops_p3/p3_lines_debug.jpg`), read in two blind passes and reconciled on native zooms: "6d" = 60 (M), "bb" = 66 (M), "96" confirmed (M, gloss o), run 1 "143" = 113 (M); all four as such in ciphertext.tsv (p3_15.6, p3_16.10, p3_21.2, p3_16.1). The 625/774/775 "section counter" exclusion is withdrawn: all three stand inline as glossed codes (774 Holland C, 775 Gen. Staden C, 625 [?] Ahlefeldt M; GAPS155/GAPS168). The old f4_top/f4_mid crops stay lost and are superseded by crops_p3. No further re-read needed; the full two-pass transcription named as ~$11 is the one GAPS152/155/159 already ran.
 - [x] retry: done 7 Oct 2026 (D4-HDK): no key extension survived its control, so the retry reruns the unchanged key; `tools/decode_key.py ciphers/hessen-daenemark-1672 --check` exit 0, tokens 65: C 9, I 1, M 25, S 28, U 2, reading up to date; no regrade. Earlier text: nothing to retry yet; planned after the gloss read and key-rebuild
+HDK-BRANDT, 9 Oct 2026: Brandt's glossed cipher on Dänemark 131 was checked as a separate candidate (section above): verdict open (conditional on 12 unopened Urkunden und Actenstücke volumes and no Hessian-side edition located), about 60-70% of its estimated 600-700 groups sit on leaves with a period gloss; next in-session step is the 0020 two-pass transcription plus interlinear_align against its marginal gloss with the 0049 pairs held out, about USD 6-9, for the orchestrator to brief as its own target.
 Verdict: keep going: 3 internal gaps. HDK-131, 9 Oct 2026: the full Dänemark 131 sweep found Brandt's own glossed cipher (7 leaves), not this nomenclator, so the siblings rung adds nothing to gap 4. GAPS188, 3 Oct 2026: the print check is done, with 0 phrase hits and N0 held. The nomenclator list itself is blocked: needs-physical-access (the Lyncker files in HStAM, or a Danish-side key in Rigsarkivet). GAPS193, 3 Oct 2026: the bracketing is done. Alphabetical order is a control-backed negative and topical blocks are a non-test at K=16, so the unglossed groups are now open-codes. GAPS199, 3 Oct 2026: the second blind read of the 625 margin word 1 is done. Its decoys read 5/5 and the target disagrees with "Stathalter" (geschehet?/gestellet), so 625 stays M and that instrument is [retired] for this word. R12D-HDKV, 6 Oct 2026: the separate verifier re-derivation is done (decode_key --check exit 0; an independent script keys/r12d_rederive.py agrees on all 65 tokens, 0 diffs; 33/33 letter-table cells used agree with the key 255 f.13 image by eye), and the clear-pages question is answered (glossing hand period, M; AUDIT.md). D4-HDK, 7 Oct 2026: the key-rebuild context fill ran (de17 word-bigram, held-out control FAIL: top-1 0.071, MRR 0.208 vs null p95 0.314), so key-rebuild is [retired] and the retry reran the unchanged key (--check exit 0); no in-session step is left untried; cheapest next: open-codes 625 x2 / 634 / 602 wait on more gloss-pinned codes of the same list, ~$0 in session; the nomenclator list itself stays blocked: needs-physical-access (gap 4: the Lyncker files in HStAM or a Danish-side key)
 
 ## Web and blog check (GF-A2-1, 2 Oct 2026)
