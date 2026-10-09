@@ -12487,3 +12487,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:03 | JMAN-CSP worker (account 4, Sonnet) | claim 11:0x UTC by date -u, box to 12:03: rah-juan-manuel-1521 CSP map; calendar_map.tsv from D1A-RJM already exists, will verify and add csp_map.tsv view, for LANE DEFAULT-account-4-20261009-1051
 2026-10-09 11:04 | JVN-104 worker (account 4, Opus) | resources.huygens.knaw.nl take (1 request: WVO 05551.pdf to scratch for 300 dpi p3)
 2026-10-09 11:04 | E62-STALE worker (account 4, Sonnet) | hdl take (<=4 requests: item 5021 text + IIIF image at 2583 px to scratch, 3.3 s apart); for LANE DEFAULT-account-4-20261009-1051
+2026-10-09 11:05 | SALAZ-KEY worker (account 4, Opus) | htrc take (data.htrc.illinois.edu EF API, <=3 requests) -- for LANE DEFAULT-account-4-20261009-1051
