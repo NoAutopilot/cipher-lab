@@ -10831,6 +10831,88 @@
       "decode_status": "Non-decrypted",
       "depth_by": "session V-MANT0176 (account 2), 9 Oct 2026",
       "depth_date": "9 Oct 2026"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM9a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM9a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM9a)' section 4",
+      "reading_version": "FM-R5c 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM9a) section 3",
+      "unresolved_spans": "'America', 'Denmark', 'Austria'",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "3"
+      },
+      "depth_pct": 86.4,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): T. T. Eckert, Washington, to G. D. Sheldon, Fort Monroe, 31 May 1864: Bickford not to build the line beyond White House; a card cipher for the wire (E291)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 31 May 1864 Eckert told Sheldon at Fort Monroe to stop Bickford building the line beyond White House unless Caldwell asked for it, and described a small card cipher Bickford carried; Sheldon's answer is printed in the Official Records (ser. I vol. 36 pt 3), the telegram itself was not located there, in Grant's or Butler's papers or in the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 one audit (FV-FM9a); America, Denmark, Austria M (the card's line-indicator words, preferred plain); not N4: Grant Papers vol. 11 by be-api snippets only, press and RG 107 not searched",
+      "depth": "D2",
+      "completeness": "19 H + 3 M of 22 code-word groups ('white' is plain, White House)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.178, pointer 5722, E291"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.178, pointer 5722, E291",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.178, pointer 5722, E291"
+      ],
+      "depth_sentence": "On 31 May 1864 Eckert told Fort Monroe to have Bickford stop the telegraph line at White House and explained the card cipher Bickford could use to communicate with Sheldon.",
+      "depth_check": "code clause: Sligo = In the, Pembroke = Cipher, Plate = Communicate, numerals 3 4 6 1 5 2 read passim; external (non-statistical): OR I/36 pt 3 Sheldon to Eckert 31 May 1864 'I understand, and will communicate with Bickford' and HQ AoP 29 May 'line need not be extended farther than White House'; three M card words (not names) hold it below D3",
+      "depth_note": "19 H + 3 M of 22 code-word groups ('white' is plain, White House)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM9a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM9a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM9a)' section 4",
+      "reading_version": "FM-R5c 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM9a) section 3",
+      "unresolved_spans": "'a Pea' (A. P., M)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe to Lt Col M. R. Morgan, Harpers Ferry, 16 Sept 1864: Lt Col Thomas Wilson reports the raid on the cattle herd at Coggins Point; M. P. Small will send 1,200 head (E292)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 16 Sept 1864 Fort Monroe relayed to Lt Col M. R. Morgan at Harpers Ferry Lt Col Thomas Wilson's report that the enemy's raid at Coggins Point had taken the entire herd, 2,486 head, and Lt Col M. P. Small's promise of 1,200 head the next day; not located in the Official Records (ser. I vol. 42 pt 2 prints the raid and the count), Grant's papers or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 one audit (FV-FM9a); 'a Pea' = A. P. (M, phonetic); not N4: Grant Papers vol. 12 by be-api snippets only, NARA commissary records and press not searched",
+      "depth": "D3",
+      "completeness": "25 H of 25 code-word groups ('Wilson' x2 plain; 'a Pea' plain-phonetic M)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.239, pointer 5783, E292"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.239, pointer 5783, E292",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.239, pointer 5783, E292"
+      ],
+      "depth_sentence": "On 16 Sept 1864 the Army of the Potomac's chief commissary reported that the raid at Coggins Point had carried off the entire herd of 2,486 head, and Fort Monroe's commissary promised 1,200 head the next day.",
+      "depth_check": "code clause: Rome = Enemy, piloted = captured, Wreathe = Telegraph, Animal/Appian = Monroe, numerals 2486 and 1200 read; external (non-statistical): OR I/42 pt 2 Wiley to Morgan care of Lt Col M. P. Small, Fort Monroe, 18 Sept 1864, 'the whole herd at Coggins' Point, 2,486 head', and Humphreys 16 Sept naming Colonel Wilson, chief commissary",
+      "depth_note": "25 H of 25 code-word groups ('Wilson' x2 plain; 'a Pea' plain-phonetic M)"
     }
   ],
   "lanes": [

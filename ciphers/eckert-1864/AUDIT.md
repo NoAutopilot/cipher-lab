@@ -9841,3 +9841,114 @@ FV-FM8d's counts** (E278 H 7 of 7; E289 H 7, M 1 of 8).
 - Postmortem: FV-FM8d's readings, classes and depths hold; no reading correction. One over-reach: E289's Dewey was identified as Lt. George
   Dewey without checking his rank on 1 Dec 1864. Still open: NARA RG 125 (whose court martial; from a person or a NARA key), Ingalls's and
   Webster's letter-books (E278), Google Books `"shall the witnesses leave"` (host 503), the press of the day (neither is a press telegram).
+
+## AUDIT (FV-FM9a)
+
+Verifier FV-FM9a (account 1, for LANE LEDGER), 9 Oct 2026, 13:52-14:1x UTC by `date -u`; a separate session from the reader FM-R5c (account 1),
+not protecting its conclusions. Scope: **E291, E292, E299** (NOTES "## FM-R5c"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 =
+Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all three: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts: `fortmonroe/fv_fm9a_hdl.py` (+ `fv_fm9a_hdl.out`, `fv_fm9a_hdl2.out`: CONTENTdm full text across all pointers, three page images at
+2400 px to scratch), `fortmonroe/fv_fm9a_print.py` (+ `.out`: letters-only phrase grep over the 164 cached print-check volumes plus OR I/36 pt 3
+`warofrebellion363unit` and OR I/42 pt 2 `warofrebellion422unit` fetched to scratch, 2 archive.org downloads), `fortmonroe/fv_fm9a_beapi.py`
+(+ `.out`: 6 be-api queries in Grant Papers vols. 11-12 and Butler IV, all 0; a positive control, `"Coggins Point"` in vol. 12, returns 1 doc hit
+with the same parser, as for FM-R5c). The holder page transcriptions on disk (`sources/fortmonroe`, `sources/mssEC18`, `sources/mssEC19`) were
+grepped first: Maddox, Coggins, "cattle herd" only on their own pages; Bickford on mssEC 25 pages 5706-5766 (context, not copies); none in mssEC 18/19.
+
+### 1. Duplicates, prior work, image
+- **Duplicate diff:** pointers 5722, 5783, 5609 (and the clear-copy pointer 10239) against every `###` header in ciphertext*.txt and status.json:
+  each occurs only in its own header. **No duplicate.** Not filed anywhere: **row 5783/0**, the first entry on E292's own page (Fort Monroe 16 Sept
+  1864 to Maj. Eckert, Washington: "the [enemy] at daylight this morning made a raid upon the general herd at Coggins Point and [captured] it entire",
+  signed Thomas Wilson Lt Col and C. S., with "Please forward ... to [Lt Col] M. R. Morgan"): the Washington-bound twin of E292, a lead for a
+  reader, not decoded here.
+- **Prior work:** by hand (civil-war adapter): own work (pointers grepped in ciphertext*, NOTES, AUDIT, status.json, entries-mssEC19.tsv:
+  only FM-R5c's own filing); no AUDIT.md/status.json class on any of the three before this section; Tomokiyo and cached solver files have no
+  Eckert ledger items; aaymeloglu not cloned (UNCHECKED-NET, as FV-FM8a-d).
+- **Image eye check this session, every graded line** (`tools/iiif_lines.py --image ... --region ... --lines-per-crop 2`, scratch only;
+  5722 autocontrasted, the ink is faint): 5722 entry 1 (header + 14 lines + signature), 5783 entry 2 (header + 10 lines + Sheldon), 5609 entry 2
+  (header + 9 lines + Sheldon). **The transcription matches the image word for word on all three** (E291 "white house", "Sligo event",
+  "Coldwell", "America perfume / Denmark penny Austria plaster Dacotah pledge", "Hunkey", "turkey ... harsh"; E292 "Silver a Pea gift",
+  "Cancer zebra", "Thomas Wilson Lieut paradise", "Appian Libby", "forbid wine head tomorrow", "Kernel"; E299 "plunge publish and mandate",
+  "lampoon purple"). E292's page header reads **"Fort Monroe Sept 16/64"**: the entry goes from Fort Monroe to the operator G. J. Lawrence at
+  Harpers Ferry, not from Harpers Ferry.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the hdl token 13:55-13:58 UTC; 17
+queries): Maddox 6 (5609 own; **10239**; 4726 = 18 June, Dana: "the papers in the case of Maddox ... the Tobacco ought to be restored to him";
+14022, 10087, 8858 other Maddoxes), tobacco custody 2 (5609, **10239**), confidential agent 4 (incl. 5609, **10239**), Coggins 3 (5783; 2891, 2923
+= 1862), cattle herd 5 (5783; 10424 = June 1864, Wilson's cavalry guarding the herd; others other dates), entire herd 1 (own), Coggins Point raid 1
+(own), herd near Coggins 0, Bickford card 1 (own), white house Bickford 30 (mssEC 25 pages 5703-5766 and the White House/City Point books, May-June
+1864; none a copy of E291), further orders Coldwell 1 (own), build any farther 1 (own), farther than white house 1 (own), card which you can use 1
+(own), Lines are down 43 and Small Wilson 22 and head tomorrow 156 (no 16 Sept 1864 copy among the snippets).
+- **E299 -> pointer 10239 (Page 97 of the Washington clear telegram book, the same book as E294's 10253 and E297's 10268), period clear copy,
+  word for word:** "3.30 P. M Ft. Monroe Va Apr 18th 2.30 PM For Secy of War . I have captured J H Maddox on the Virginia shore together with one
+  hundred and fifty boxes of Tobacco worth some forty thousand dollars & have him in custody He claims the to be a confidential agent of the War
+  Dept and the Tobacco . What shall I do with him (sig) BF Butler Maj Genl". Same telegram. Context printed: OR I/33 p.269 (Hinks's report: 177
+  boxes "probably worth $40,000", Joseph H. Maddox taken); Butler's Correspondence IV prints Maddox's own March letter (index "Maddox, J. H.").
+  Phrase grep "confidential agent of the War Department", "have him in custody", "what shall I do with him" 0 in 166 volumes.
+- **E291 -> no clear copy and no print of the telegram located.** Its **answer is printed**: OR I/36 pt 3 (`warofrebellion363unit`, djvu text,
+  page not read on the image; FM-R5c gives p.424): "Fort Monroe, Va., May 31, 1864. Major Eckert: I understand, and will communicate with Bickford.
+  Following just received from Homan ... G. D. Sheldon." It answers E291's closing "do you understand" and its "you can use to [communicate] with
+  him". The cause is printed in the same volume: Hd Qrs Army of the Potomac, 29 May 1864, to Maj. T. T. Eckert: "[the] line need not be extended
+  farther than White House ... cannot tell now where we will meet Bickford". Phrase grep "not to build any farther", "Bickford has a card",
+  "cipher which you can use", "getting word from Caldwell/Coldwell" 0 in 166 volumes; be-api Grant Papers vol. 11 `"cipher card"`, `Caldwell
+  Bickford` 0 (FM-R5c: `Bickford` 0).
+- **E292 -> no clear copy and no print of the telegram located.** Context printed in OR I/42 pt 2 (`warofrebellion422unit`, djvu text, page not
+  read on the image; the running head near it reads 899): Humphreys to Davies, 16 Sept 1864 7.40 a.m., "Colonel Wilson, chief commissary of
+  subsistence, reports ... the large cattle herd near Coggins' Point has been attacked"; and **Office of Chief Commissary, City Point, 18 Sept
+  1864, to "Lieut. Col. M. R. Morgan: (Care of Lieut. Col. M. P. Small, chief commissary of subsistence, Fort Monroe, Va.) The enemy got off with
+  the whole herd at Coggins' Point, 2,486 head"** (D. D. Wiley, Capt. and C. S.). That gives Morgan's route through Small at Fort Monroe, Small's
+  post, and the herd count that E292's "harsh pension william and marriage plague head" (= 20 4 100 and 80 6, i.e. two thousand four hundred and
+  eighty-six) reads. Phrase grep "raid on the cattle herd", "captured the entire herd", "lines are down and you will have to order" 0; be-api
+  Grant Papers vol. 12 `"entire herd"`, `Morgan Small commissary`, `"Thomas Wilson"` 0 (FM-R5c: vol. 12 prints Meade's Coggins Point telegrams).
+- Not searched: the press of the day (none of the three is a press telegram), Google Books (not probed), NARA RG 92/RG 192 commissary records
+  (E292), Grant Papers vol. 11 beyond be-api snippets (E291).
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E299 (clear copy 10239):** Bruno = Secy of War, piloted = captured, Alba = Virginia, plunge publish and mandate = one hundred and fifty,
+  lampoon purple = forty thousand, quadroon = Dept, Walrus Knave = (sig) BF Butler Maj Genl, unity/Zebra/zodiac = punctuation: **C 14 of 14.** No
+  reading correction; the clear copy adds the hour, 2.30 PM.
+- **E291 (no clear copy):** **"white house" is plain, White House**, not White = Report: the image has "white house" as prose, the 29 May print
+  says the line "need not be extended farther than White House", and the reader's own summary says White House; the decoder's "[Report] house"
+  is a slip (FIX job: `plain` note). **America, Denmark, Austria graded M, not H:** they stand in the series "America perfume [3], Denmark penny
+  [4], Austria plaster [5], Dacotah pledge [6] & so to Crimea which is Hunkey [19] & turkey which is harsh [20]", where Dacotah, Crimea and turkey
+  have no key row and are left plain: the series is the card's own line-indicator words written in clear, and the decoder's Delaware/Kingsport/
+  Massachusetts give no sense as line indicators. Preferred reading: America, Denmark, Austria (plain), M. Rest H: Sligo = In the, Pembroke =
+  Cipher, plate = Communicate (supported by the printed answer), zebra/unity/zodiac = punctuation, pebble pension plague plug plaster plank =
+  3 4 6 1 5 2 (the card's up/down route), perfume penny plaster pledge Hunkey harsh = 3 4 5 6 19 20. **H 19, M 3 of 22 code groups**; no C (the
+  answer and the 29 May print support content, not words). Unread non-name gaps: none; the three M are the card's own words.
+- **E292 (no clear copy):** **"Wilson" twice is plain, Lt Col Thomas Wilson, chief commissary of subsistence, Army of the Potomac**, not
+  Wilson = West (the decoder's "[West]" is a slip: image "Thomas Wilson Lieut paradise and C. S." and "Lieut paradise Wilson"; OR I/42 pt 2
+  names Colonel Wilson, chief commissary, reporting this raid). **"a Pea" = A. P.** (Army of the Potomac, phonetic plain, M): Silver = Head
+  Quarters and gift = 16 here, and the sibling 5783/0 on the same page opens "Snake [= Head Quarters] a Pea gas [= 16]": "Head Quarters A. P.
+  16". "Kernel" = Colonel (phonetic plain). **"[2400] and [86] head" = 2,486 head**, matching the printed 18 Sept count. Read: "Head Quarters
+  A. P. 16. For Lieut. Colonel Morgan, Harpers Ferry. The enemy made a raid on the cattle herd near Coggins Point & captured the entire herd, 2486
+  head. The lines are down and you will have to order by telegraph from Monroe. [Signed] Thomas Wilson Lieut Colonel and C. S. Add following
+  from Monroe, 6 PM: The above telegram was received from Lieut Colonel Wilson. I will send 1200 head tomorrow. [Signed] M. P. Small Lieut
+  Colonel and C. S." **H 25 of 25 code groups** (27 minus the two Wilson slips), plain-phonetic M 1 (a Pea). Header correction: sent from Fort
+  Monroe (image "Fort Monroe Sept 16/64") to G. J. Lawrence, Harpers Ferry, for Lt Col M. R. Morgan (chief commissary at City Point per the 18 Sept print; at
+  Harpers Ferry per this entry); originated Hd Qrs Army of the Potomac.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E299 | **N1** (text known) | period | D3 (C 14/14; external: holder's clear copy 10239) | plaintext already published by the holder: Huntington transcription of the Washington clear telegram book, pointer 10239 |
+| E291 | **N3** | period | **D2** (H 19 + M 3 of 22 = 86% H; external: printed answer OR I/36 pt 3 and 29 May cause; three M card words, not names, hold it below D3) | no prior plaintext or decipherment located after the search in s.2 |
+| E292 | **N3** | period | **D3** (H 25/25 of code groups; external non-statistical: OR I/42 pt 2 count 2,486 head, Small at Fort Monroe, Wilson chief commissary; one plain-phonetic M "a Pea") | no prior plaintext or decipherment located after the search in s.2 |
+
+- Not N4 for E291/E292: Grant Papers vols. 11-12 searched only by be-api snippets, NARA commissary records and the press not searched.
+- **Safe sentences.** E291: "Read at grade H with War Department Cipher No. 1: on 31 May 1864 Eckert told Sheldon at Fort Monroe to stop
+  Bickford building the line beyond White House unless Caldwell asked for it, and described a small card cipher Bickford carried; Sheldon's
+  answer is printed in the Official Records (ser. I vol. 36 pt 3), the telegram itself was not located there, in Grant's or Butler's papers or in
+  the Huntington's full-text search (searched 9 Oct 2026)." E292: "Read at grade H with War Department Cipher No. 1: on 16 Sept 1864 Fort Monroe
+  relayed to Lt Col M. R. Morgan at Harpers Ferry Lt Col Thomas Wilson's report that the enemy's raid at Coggins Point had taken the entire
+  herd, 2,486 head, and Lt Col M. P. Small's promise of 1,200 head the next day; not located in the Official Records (ser. I vol. 42 pt 2 prints
+  the raid and the count), Grant's papers or the Huntington's full-text search (searched 9 Oct 2026)." E299: "A clear copy is in the
+  Huntington's own transcription (pointer 10239); our reading of the cipher entry agrees with it word for word."
+- **Unsafe:** any "first", "new", "unpublished" for E291/E292; any novelty at all for E299.
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E291: `white` plain (White House); America, Denmark, Austria plain, graded M. E292: `Wilson` plain x2 (Lt Col Thomas Wilson); "a Pea" = A. P.
+(M); header place Fort Monroe -> Harpers Ferry; "[2400] and [86]" may be rendered 2486. E299: none (hour 2.30 PM from 10239 may go in the header).
+Lead, not decoded: row 5783/0 (Wilson's own telegram to Washington, same page).
+Requests: hdl.huntington.org 20 (17 CONTENTdm queries, 3 IIIF pages); archive.org 2 downloads; be-api 7 (6 + 1 control).
