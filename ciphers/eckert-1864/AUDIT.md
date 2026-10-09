@@ -9445,7 +9445,7 @@ archive.org 4 djvu downloads (one an HTML page); be-api 11; www.googleapis.com 5
 
 ## AUDIT 2 (AUD2-LEDGER-18)
 
-Second verifier AUD2-LEDGER-18 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 11:40-12:0x UTC by
+Second verifier AUD2-LEDGER-18 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 11:40-11:57 UTC by
 `date -u`; a separate session and account from the readers FM-R4a (E254) and FM-R5a (E272, E275, E277) and from the first auditor FV-FM8a
 (all account 1); this session had not read or audited these entries before. Scope: **E254, E272, E275, E277** (E270 is N1, not queued).
 Nothing decoded; `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current", exit 0. FV-FM8a's 22 CONTENTdm requests (holder
