@@ -1,0 +1,90 @@
+passage	pos	sign_id	alt	conf	note
+L08	1	sq		H	small square box
+L08	2	f		H	
+L08	3	60		H	
+L08	4	r		H	
+L08	5	m		H	
+L08	6	xr		H	
+L08	7	xb		H	x with bar above
+L08	8	x_		H	x underlined
+L08	9	x		H	
+L08	10	vi	m	M	v followed by a short stroke
+L08	11	f		H	
+L08	12	oo		H	
+L08	13	th		H	o crossed by stroke
+L08	14	hs		H	
+L08	15	f		H	
+L08	16	]		H	open to left
+L08	17	Ib		M	I with cross-bars
+L09	1	f		H	
+L09	2	ps		H	
+L09	3	aab		H	bar above two a
+L09	4	f		H	
+L09	5	60		H	
+L09	6	88x		H	struck 88
+L09	7	x		H	
+L09	8	th		M	small o with crossing stroke
+L09	9	6		H	
+L09	10	aa		H	
+L09	11	44		H	
+L09	12	th	o	M	larger 0 with inner horizontal stroke
+L09	13	ps		H	
+L09	14	34		H	
+L10	1	60		H	short dash before it at line start ignored
+L10	2	f		H	
+L10	3	b	d6	M	loop opening left with stem
+L10	4	f		H	
+L10	5	oo		H	
+L10	6	hs		H	
+L10	7	88		H	
+L10	8	f		H	
+L10	9	88x		H	struck 88
+L10	10	34		H	
+L10	11	48		H	
+L10	12	60		H	
+L10	13	88x		H	struck 88
+L10	14	th		M	o with long horizontal stroke through
+L10	15	f		H	
+L10	16	or		H	at right edge
+L11	1	x+	x	M	ornate x with curls; possible vertical stroke
+L11	2	BLOT	of	L	ink blot over sign; looks like of underneath
+L11	3	88		H	
+L11	4	6		H	
+L11	5	53		H	
+L11	6	34		H	
+L11	7	]		H	open to left
+L11	8	f		H	
+L11	9	6		H	
+L11	10	77		H	
+L11	11	f		H	
+L11	12	or		H	
+L11	13	Ib		H	
+L11	14	Ib+		M	I with extra stroke through
+L11	15	f		M	superscript f written above pos 14 (insertion?)
+L12	1	aa		H	
+L12	2	x		H	large X
+L12	3	q		H	lollipop
+L12	4	ob		H	o with bar above
+L12	5	d6	b	M	bowl at bottom, stem curving over right
+L12	6	x_		M	x underlined, dots beside
+L12	7	x		H	
+L12	8	44		H	
+L12	9	xr		H	looks like xv
+L12	10	aab		H	
+L12	11	34		H	
+L12	12	od		H	circle with dot
+L12	13	ps		H	
+L13	1	rr		H	
+L13	2	m		H	
+L13	3	x		H	
+L13	4	60		H	
+L13	5	q		H	
+L13	6	34		H	
+L13	7	60		H	
+L13	8	44		H	
+L13	9	88x		H	struck 88
+L13	10	th		H	
+L13	11	ob		M	0 with bar below and tick above
+L13	12	b	d6	M	loop opening left
+L13	13	f		H	
+L13	14	or		H	
