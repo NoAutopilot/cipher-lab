@@ -11809,3 +11809,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:18 | MANT-0056 worker | claim: sachsstaatsarchiv-manteuffel-1712 694/09 frame 0056 known-answer leaf, cap $5, box ends 03:56 UTC (80% 03:36), for LANE FAMILY-A2e (account 2)
 2026-10-09 02:18 | SUR-0745 worker (account 2) | claim for LANE FAMILY-A2e (account 2): na-suriname-map-1781 NA 1.05.03 inv.373 scan 0745 held-out unit (CLASS gate as SUR-0744R, DOT dropped, prereg m-vs-n split). Cap $4, box ends 03:46 UTC
 2026-10-09 02:18 | BRANDT-GATE worker | claim for LANE FAMILY-A2e (account 2): BRANDT-GATE, ciphers/hessen-daenemark-1672 (PREREG agrees gate on 0020 + 0049 held-out letter test), cap 3.5, box end 03:36 UTC
+2026-10-09 02:19 | MANT-0056 worker | sachsen take (1 frame, 694/09 0056) for LANE FAMILY-A2e (account 2)
