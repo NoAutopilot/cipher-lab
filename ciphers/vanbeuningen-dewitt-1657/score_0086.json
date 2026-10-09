@@ -1,0 +1,73 @@
+{
+ "scored_tokens": 225,
+ "agreements": 216,
+ "S_real": 0.96,
+ "per_class": {
+  "letter": [
+   212,
+   220
+  ],
+  "name": [
+   4,
+   5
+  ]
+ },
+ "null_mean": 0.0482,
+ "null_p99": 0.2489,
+ "null_max": 0.3689,
+ "gate": "PASS",
+ "excluded_M_items": 1,
+ "unscored_C_items": 2,
+ "M_codes_second_context": [
+  "58",
+  "186"
+ ],
+ "disagreements": [
+  [
+   "8",
+   "m",
+   "m m m m m m m m t"
+  ],
+  [
+   "9",
+   "m",
+   "k"
+  ],
+  [
+   "14",
+   "o",
+   "n"
+  ],
+  [
+   "23",
+   "s",
+   "s s s s s s s s s s z s s s s"
+  ],
+  [
+   "32",
+   "w",
+   "w o"
+  ],
+  [
+   "36",
+   "y",
+   "y y y y y s"
+  ],
+  [
+   "39",
+   "a",
+   "a a a a a a a a a a a a e"
+  ],
+  [
+   "50",
+   "e",
+   "e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e n"
+  ],
+  [
+   "144",
+   "Haer Hoog Mog.",
+   "om nevens de Staten-Generael"
+  ]
+ ],
+ "candidates": 6
+}

@@ -1,0 +1,35 @@
+code	key_value	key_grade	n	agree	print
+4	k	C	1	1	k
+6	l	C	6	6	l l l l l l
+7	l	C	1	1	l
+8	m	C	9	8	m m m m m m m m t
+9	m	C	1	0	k
+10	n	C	26	26	n n n n n n n n n n n n n n n n n n n n n n n n n n
+12	o	C	7	7	o o o o o o o
+13	o	C	1	1	o
+14	o	M	1	0	n
+17	p	C	1	1	p
+21	r	C	9	9	r r r r r r r r r
+23	s	C	15	14	s s s s s s s s s s z s s s s
+25	t	C	17	17	t t t t t t t t t t t t t t t t t
+27	u	C	9	9	u u u u u u u u u
+32	w	C	2	1	w o
+36	y	C	6	5	y y y y y s
+39	a	C	13	12	a a a a a a a a a a a a e
+40	a	C	1	1	a
+41	a	C	1	1	a
+46	c	C	2	2	c c
+48	d	C	10	10	d d d d d d d d d d
+50	e	C	36	35	e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e n
+51	e	C	13	13	e e e e e e e e e e e e e
+54	e	C	1	1	e
+55	f	C	4	4	f f f f
+56	f	C	1	1	f
+57	g	C	4	4	g g g g
+58	g	M	1	1	g
+59	h	C	8	8	h h h h h h h h
+61	i	C	13	13	i i i i i i i i i i i i i
+144	Haer Hoog Mog.	C	1	0	om nevens de Staten-Generael
+172	Denemarcken	C	1	1	Denemarcken
+185	Sweden	C	2	2	Sweden Sweden
+186	Coningh van Sweden	M	1	1	den Coning van Sweden
