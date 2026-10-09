@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L15	12	f	M	yes	crossed f-like with ascender
+f102r_L15	19	x	M	yes	x shape before pi sign
+f102r_L15	21	{curl}	H	yes	large open curl before m
+f102r_L15	23	r	M	yes	r-like with loop after m
+f102r_L15	28	V	M	yes	slanted stroke before y
+f102r_L15	34	s	L	yes	short s after d
+f102r_L15	46	V	M	yes	slanted stroke before y
+f102r_L16	2	V	M	yes	v-like stroke after dots
+f102r_L16	4	NONE	L	yes	no separate o seen
+f102r_L16	8	V	M	yes	v stroke before y
+f102r_L16	10	NONE	L	yes	no o seen between y and s
+f102r_L16	16	Z	M	yes	large Z-like sign
+f102r_L16	30	b	L	yes	b/6 with loop, ambiguous
+f102r_L16	51	f	L	yes	crossed f/4 ambiguous
+f102r_L16	55	V	L	yes	large curl flourish
+f102r_L17	9	g	L	yes	g-like with loop after tz
