@@ -1,0 +1,44 @@
+line	col	sign	conf	viewed	note
+L01	1	T83	H	yes	matches candidate
+L01	2	T84	H	yes	matches candidate
+L01	4	T96	H	yes	matches candidate
+L02	1	T57	H	yes	matches candidate
+L02	3	T17	H	yes	matches candidate
+L02	6	T96	H	yes	matches candidate
+L02	7	T90	H	yes	matches candidate
+L02	11	T98	H	yes	matches candidate
+L02	12	T45	H	yes	matches candidate
+L02	14	X_NEW	M	yes	shape matches no cell (open U-shaped box)
+L02	15	T85	H	yes	plain cross, not T78
+L02	20	T76	H	yes	matches candidate
+L02	21	T95	H	yes	matches candidate
+L02	22	T19	H	yes	matches candidate
+L02	23	T27	H	yes	matches candidate
+L02	29	T86	H	yes	matches candidate
+L03	1	T90	H	yes	matches candidate
+L03	2	T26	H	yes	matches candidate
+L03	4	T92	H	yes	matches candidate
+L03	5	T95	H	yes	matches candidate
+L03	8	T98	M	yes	ellipse with stem through; not T18
+L03	11	T45	H	yes	matches candidate
+L03	15	T17	H	yes	matches candidate
+L03	16	T96	H	yes	matches candidate
+L03	19	T97	H	yes	matches candidate
+L03	20	T86	H	yes	matches candidate
+L03	21	T90	H	yes	matches candidate
+L03	29	T86	H	yes	matches candidate
+L03	30	T90	H	yes	matches candidate
+L03	31	T54	H	yes	matches candidate
+L03	32	T86	M	yes	tall vertical strokes like col 29
+L03	33	T76	H	yes	matches candidate
+L04	1	T86	H	yes	matches candidate
+L04	2	T97	H	yes	matches candidate
+L04	3	T17	H	yes	matches candidate
+L04	4	T96	H	yes	matches candidate
+L04	9	T17	H	yes	matches candidate
+L04	10	T90	H	yes	matches candidate
+L04	13	T17	H	yes	matches candidate
+L04	14	T86	H	yes	matches candidate
+L04	23	T45	H	yes	matches candidate
+L04	24	X_NEW	M	yes	cross-bar with fork; no cell
+L04	25	X_NEW	M	yes	two bars over small box; not T84
