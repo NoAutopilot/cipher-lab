@@ -16,7 +16,7 @@ for p in a.reads:
             toks = []
             for x in (r.get('signs') or '').split():
                 # a NEW:<description> with spaces inside parentheses is one sign (reader wrote "NEW:B-like (B with crossbar)")
-                if toks and toks[-1].startswith('NEW:') and toks[-1].count('(') > toks[-1].count(')'):
+                if toks and toks[-1].startswith('NEW:') and (x.startswith('(') or toks[-1].count('(') > toks[-1].count(')')):
                     toks[-1] += ' ' + x
                 else:
                     toks.append(x)
