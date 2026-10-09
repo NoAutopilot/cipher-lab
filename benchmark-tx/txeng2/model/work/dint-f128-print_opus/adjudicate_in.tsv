@@ -1,0 +1,29 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L03	39	p 4 + 1	f sq 3 y	NEW:c-with-tail	H	9	H		
+L03	54	1 9 4 0	? v ?	NEW:c-with-tail	H	y	H		
+L03	55	9 4 0 ?	v ?	#	H	t	H		
+L03	57	0 ? ? v		(none)		.	H		
+L04	7	0 4 f #	? a ? c	y	H	9	H		
+L04	8	4 f # ?	a ? c v	4'	H	4	H		
+L04	10	# ? ? a	c v w 4	a	H	(none)			
+L04	32	# T v w	1 . sq a	9	H	o	H		
+L04	45	p m o f	? ? ? v	z	H	m	H		
+L04	46	m o f ?	? ? v c	NEW:h-shape	H	NEW:h-like	H		
+L04	47	o f ? ?	? v c v	y	H	hooked	H		
+L04	48	f ? ? ?	v c v L	(none)		sign	H		
+L04	55	v L c #	? ? ? w	NEW:R-with-crossbar	H	Z	H		
+L04	56	L c # ?	? ? w y	t	H	f	H		
+L04	57	c # ? ?	? w y p	z	H	T	H		
+L04	58	# ? ? ?	w y p sq	(none)		m	H		
+L04	63	w y p sq	? ?	(none)		NEW:long	H		
+L04	64	y p sq ?	?	(none)		dash	H		
+L04	65	p sq ? ?		(none)		line-filler	H		
+L05	2	1	m w ? 0'	NEW:c-with-tail	H	9	H		
+L05	5	1 ? m w	0' ? v' ?	(none)		0	H		
+L05	7	m w ? 0'	v' ? w 1	0	H	(none)			
+L05	9	? 0' ? v'	w 1 . f	0'	H	0	H		
+L05	29	# 1 . m	0' y a f	o	H	0	H		
+L05	36	a f v 1	? ? a a	NEW:r-overbar-with-dagger-below	H	4	H		
+L05	37	f v 1 ?	? a a 1	z	H	t	H		
+L05	38	v 1 ? ?	a a 1 .	0'	H	0	H		
+L05	63	y c NEW:n-shape 1		:	H	.	H		

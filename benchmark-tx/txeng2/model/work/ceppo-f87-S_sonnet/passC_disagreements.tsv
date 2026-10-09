@@ -1,0 +1,62 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L01	2	2	S74	M	2	S54	M	split	with top stroke	
+L01	6	6	S74	M	6	S54	M	split		
+L01		9	X_NEW	L				gapB	black dot	
+L01	16	17	S80	M	16	S65	H	split_H_B	with bar	
+L01	17	18	S94	M	17	S55	M	split	with bar	
+L01	21	22	S55	M	21	S94	M	split	cross-stem ring	
+L01					22	S42	M	gapA		
+L01	22				23	S65	H	gapA		
+L01		24	S80	M				gapB	with bar	
+L02	1	1	X_POUND	M	1	X_NEW	M	split	with loop; line start	line start; bar/P-like shape (vertical bar, or P with foot)
+L02	3	3	S94	M	3	S55	M	split	cross	
+L02	7	7	S80	M	7	S65	H	split_H_B	dot bar	
+L02	11	11	S76	L	11	S84	M	split	x j	
+L02	12	12	S22	L	12	X_NEW	M	split	tail	bar/P-like shape (vertical bar, or P with foot)
+L02					13	S93	M	gapA		
+L02	15	15	S42	M	16	S23	M	split	with tick	
+L02					17	X_NEW	M	gapA		bar/P-like shape (vertical bar, or P with foot)
+L02	18	18	S76	M	20	S32	M	split		
+L02	19	19	S17	H	21	S66	M	split_H_A		
+L02	20	20	S54	L	22	S31	M	split	tail	
+L02	21				23	S74	H	gapA		
+L02	27	26	S31	L	29	S94	M	split		
+L02	28	27	S75	L	30	S56	M	split	plus	
+L02	34	33	S69	L	36	S13	M	split	theta	
+L03	2	2	S80	M	2	S65	H	split_H_B		
+L03	5	5	S74	H	5	S54	M	split_H_A		
+L03	6	6	S65	H	6	S80	H	split		
+L03	9	9	S45	M	9	S47	H	split_H_B	dot	
+L03	10	10	S54	M	10	S74	H	split_H_B	barred	
+L03					16	S31	M	gapA		
+L03	18	18	S31	L	19	S32	M	split		
+L03	24	24	S94	M	25	S55	M	split	cross	
+L03	25	25	S24	M	26	S88	H	split_H_B		
+L03	35	35	S54	L	36	S37	H	split_H_B		
+L03	45	45	S76	M	46	S32	M	split	ij	
+L03					47	S66	M	gapA		
+L03	46	46	S24	M	48	S88	H	split_H_B	line end	line end
+L04					3	X_NEW	M	gapA		bar/P-like shape (vertical bar, or P with foot)
+L04	11	11	S25	L	12	S40	M	split		
+L04					17	X_NEW	M	gapA		bar/P-like shape (vertical bar, or P with foot)
+L04	19	19	X_POUND	M	21	X_NEW	M	split	loop	bar/P-like shape (vertical bar, or P with foot)
+L04	21	21	S80	M	23	S65	H	split_H_B	dots	
+L04	29	29	S24	M	31	S88	H	split_H_B		
+L04	34	34	S24	M	36	S88	H	split_H_B		
+L04	38	38	S31	H	40	S84	M	split_H_A		
+L04	42	42	S76	M	44	S32	M	split	ij	
+L04					45	S66	M	gapA		
+L04	44	44	S74	H	47	S54	M	split_H_A		
+L05	2	2	S35	H	2	S25	H	split	tick	
+L05	13	13	S76	M	13	S32	M	split	ij	
+L05					14	S66	M	gapA		
+L05	15	15	S74	H	16	S54	M	split_H_A		
+L05	20	20	S74	M	21	S37	H	split_H_B		
+L05	23	23	S24	M	24	S88	H	split_H_B		
+L05	24	24	S76	M	25	S32	M	split	ij	
+L05					26	S66	M	gapA		
+L05		26	?	L				gapB	fragment at s3 left edge	
+L05	28	29	S24	M	30	S88	H	split_H_B		
+L05	30	31	S24	M	32	S88	H	split_H_B		
+L05	37	38	S74	M	39	S54	M	split		
+L05	39				41	S61	H	gapA		

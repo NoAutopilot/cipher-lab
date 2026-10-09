@@ -1,0 +1,27 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L02	4	4	t	H				gapB		
+L03	9	9	o	H	9	0	H	split		
+L03	21				21	.	H	gapA		
+L03	27	26	t	H				gapB		
+L03	30	29	0'	H	29	0	H	split		
+L03	49	48	0	H	48	o	H	split		
+L03	53	52	t	H	52	4	H	split		
+L03	56	55	m	H	55	w	H	split		
+L04	5	5	t	H	5	#	H	split		
+L04	8	8	T	H	8	p	H	split		
+L04	9	9	y	H	9	a	H	split		
+L04	15	15	t	H	15	f	H	split		
+L04	16				16	v	H	gapA		
+L04	32	31	o	H	32	0	H	split		
+L04	46	45	3	H	46	m	H	split		
+L04	47				47	h	H	gapA		
+L04	54	52	T	H				gapB		
+L04	56	54	n	H	55	f	H	split		
+L05	5	5	o	H	5	0	H	split		
+L05	6				6	0	H	gapA		
+L05	8	7	d	H	8	0	H	split		
+L05	28	27	3	H	28	0	H	split		
+L05	29	28	o	H	29	0	H	split		
+L05	35				35	t	H	gapA		
+L05	37	35	9	H	37	0	H	split		
+L05	38	36	o	H				gapB		

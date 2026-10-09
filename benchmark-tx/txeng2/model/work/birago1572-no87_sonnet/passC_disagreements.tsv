@@ -1,0 +1,42 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L01	3	3	T51	M	3	T95	M	split		
+L01	8	8	T51	M	8	T95	M	split		
+L01	12	12	T86	M	12	T60	M	split		
+L01	23	23	T50	M	23	T92	M	split		
+L02	19	19	T83	M	19	T81	H	split_H_B		
+L03	4	4	T50	M	4	T92	M	split		
+L03	24	24	T11	M	24	X_NEW	L	split		no cell: 8 or t-like shape
+L03					25	X_S	L	gapA		plain s shape
+L04	4	4	T50	M	4	T92	M	split		
+L05	7	7	T42	M	7	X_NEW	L	split		no cell: 8 or t-like shape
+L05	9	9	T13	M	9	T64	H	split_H_B		
+L05	11	11	T86	M	11	T60	M	split		
+L05	25	25	T50	M	25	T92	M	split		
+L06	8	8	T29	M	8	T24	M	split		
+L06	9				9	T88	H	gapA		
+L06	27	26	T46	H	27	X_NEW	L	split_H_A		no cell: 8 or t-like shape
+L06	29	28	T29	M	29	T24	M	split		
+L06	30				30	T88	H	gapA		
+L07	4	4	T18	H	4	T98	M	split_H_A		
+L07	23	23	T18	H	23	T98	M	split_H_A		
+L07	29	29	T50	M	29	T92	M	split		
+L08	3	3	T42	M	3	X_NEW	L	split		no cell: 8 or t-like shape
+L08	5	5	T42	M	5	X_NEW	L	split		no cell: 8 or t-like shape
+L08	10	10	T50	M	10	T92	M	split		
+L08	17	17	T18	H	17	T98	M	split_H_A		
+L08	20	20	T51	M	20	T95	M	split		
+L08	28	28	T18	H	28	T98	M	split_H_A		
+L09	1	1	T29	M	1	T24	M	split	line start; whole page cipher	line start; page is cipher throughout
+L09	2				2	T88	H	gapA		
+L09	4	3	T18	H	4	T98	M	split_H_A		
+L09	30	29	T46	H	30	X_NEW	L	split_H_A	line end	no cell: 8 or t-like shape
+L10	3	3	T18	H	3	T98	M	split_H_A		
+L10	5	5	T50	M	5	T92	M	split		
+L10	8	8	T18	H	8	T98	M	split_H_A		
+L10	16	16	T46	H	16	X_NEW	L	split_H_A		no cell: 8 or t-like shape
+L11	4	4	T95	M	4	T66	H	split_H_B		
+L11	14	14	T45	M	14	T88	H	split_H_B		
+L11	29	29	T60	H	29	T86	M	split_H_A		
+L11	31				31	T95	H	gapA		
+L11		32	T95	M				gapB	line end	
+L12	28	28	T95	H	28	T66	H	split		
