@@ -77,7 +77,7 @@ images/BLA191_p5_w4354.jpg (recorded in images/manifest.json).
   key question, not an image one, and is untouched.
 - On FAIL: nothing promoted; logged "hi-res KA FAIL" with the per-column table; the step goes [retired] for this instrument.
 
-## Amendment 4 -- UNA3-BLA, same instrument as amendment 3 on the remaining sign-M columns (9 Oct 2026, 10:5x UTC by date -u; before any tile is cut or read, nothing scored)
+## Amendment 4 -- UNA3-BLA, same instrument as amendment 3 on the remaining sign-M columns (9 Oct 2026, 10:44 UTC by date -u; before any tile is cut or read, nothing scored)
 Worker UNA3-BLA (account 1; brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md "## UNA3-BLA"). This is the amendment 3
 instrument (Huntington IIIF 4354 px, blind Sonnet read, one reconciliation, known-answer gate) applied to more columns, not a new knob.
 - Universe, fixed now. Of the 14 M tokens in reading_tokens.tsv (C 138, S 3, M 14, U 17), 7 are key ties whose sign is already H
