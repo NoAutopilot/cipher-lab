@@ -22,3 +22,6 @@ sheet	label	read	note
 7	C7-11	possible	top lines of right page numeral-like groups
 7	C7-2	possible	top of right page possible numerals
 7	C7-3,4,5,6,7,8,10,12	none	prose (C7-9 = clear control)
+4b	R2,R3	code	control-like (R3 = light list on left page)
+4b	R10	possible	left page dense with small interlinear marks, no run resolved
+4b	R1,4,5,6,7,8,9	none	prose
