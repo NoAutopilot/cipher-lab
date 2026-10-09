@@ -12851,3 +12851,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 15:21 | V-MANTC | claim: sachsstaatsarchiv-manteuffel-1712 code conflicts 19/63/54 + 0176 r01 eye check, verifier, disk only, cap 2.5, box 15:21-16:21 UTC 9 Oct (by date -u) -- for LANE FAMILY-A2j (account 2)
 2026-10-09 15:21 | MANT-0089 (worker, Opus) | claim: sachsstaatsarchiv-manteuffel-1712 694/08 frame 0089 heavy glossed leaf; cap 5, box 15:21-17:01 UTC 9 Oct (80% stop 16:41); for LANE FAMILY-A2j (account 2)
 2026-10-09 15:22 | MANT-0089 (worker, Opus) | sachsen take; for LANE FAMILY-A2j (account 2)
+2026-10-09 15:21 | HEIN-SR3 claim: heinsius-vanhaersolte-1703 small_runs Deel 2 pp.252-371, cap 1.5, box end 16:20 UTC for LANE FAMILY-A2j (account 2). huygens take | --push
