@@ -175,3 +175,13 @@ Codes above 401 on the leaf: 503 and 399 (G08 run end, after "les forces" is ful
 | date / job | instrument | control | target | verdict |
 |---|---|---|---|---|
 | 9 Oct 2026 MANT-0056 | f0056_09/gloss_gate.py, PREREG-MANT-0056 (PREREG-MANT-0056 written to disk by 02:20 UTC before scoring (gate first run 02:22:59, file mtimes); NOT committed before scoring -- this worker's `tools/room.py "msg" --push <paths>` call committed ROOM.md only, so the file reached git with the results; rule-3 pre-registration breach in form, disclosed here, design copied unchanged from PREREG-MANT-0008): key.tsv vs 694/09 0056's own interlinear gloss, 6 spans, 78 code tokens, 77 keyed | key values permuted over codes, 1000 draws, seed 8: mean 11.61, p95 17, p99 20, max 24 | S 69/77 (0.896) | **PASS**. key.tsv unchanged; no candidate addition qualifies (406 is a null slot only, f0056_09/key_add_0056.tsv) |
+
+## MANT-0063 gate row (9 Oct 2026)
+
+| date / job | instrument | control | target | verdict |
+|---|---|---|---|---|
+| 9 Oct 2026 MANT-0063 | f0063_09/gloss_gate.py, PREREG-MANT-0063 (committed 9020d4bfb at 02:51 UTC by date -u, before the first score at ~02:53): key.tsv vs 694/09 0063's own interlinear gloss, 7 spans (3 French, 4 German), 36 code tokens, 36 keyed | key values permuted over codes, 1000 draws, seed 8: mean 4.75, p95 8, p99 9, max 12 | S 24/36 (0.667) | **PASS**. Secondary (exploratory): French spans 19/22 vs p99 7; German spans 5/14 vs p99 4 (under 0.5 x keyed). key.tsv unchanged; no unkeyed code in any span (f0063_09/key_add_0063.tsv header only) |
+
+Rule-4 conflict (MANT-0063): | 84 | sch (key) | th | 0063 G03 '55.25 / 60.84' under "Barth:" (b a r + th); 55 25 60 matched | conflict, one witness; the gloss is an abbreviated name, so "Barsch" as the key gives it and "Barth" as the glossator wrote it are both plausible; key.tsv unchanged |
+
+Exploratory, after scoring (not a gate, not grade-bearing): the key's own decode of the spans shows the gloss ink sits offset from the codes it glosses (abbreviated gloss, cipher continuing onto the next line): 103 17 26 after the ';' reads "le p r" (= the gloss "le Pr."); 3 66 51 8 50 [24] 28 reads "w a s h a [q] t" (= "Was hat", 24 unexplained); 120 34 15 8 = "d [p] c h" (gloss "Dich"; 34 would be i); 100 25 60 67 83 55 = "d a r u [sch] [b]" (cf. "darumb", 83 would be m); the C2 run 73 54 40 40 11 6 31 43 35 27 21 = "[s] u b [b] k u m m e r n" (cf. "zu bekümmern", 73 would be z, the second 40 e). 29 7 at the run start reads "s [g]" under "Si" (7 would be i). These six slots (7, 24, 34, 40 second instance, 73, 83) are flagged for a native eye re-check (possible misreads 9/7, 39/34, 10/40 not excluded) before any is treated as a rule-4 conflict; key.tsv unchanged.

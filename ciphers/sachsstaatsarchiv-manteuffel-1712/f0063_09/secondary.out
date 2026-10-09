@@ -1,0 +1,3 @@
+# PREREG-MANT-0063 secondary (exploratory, not a gate): same script and control restricted to span subsets (MANT-0063, 9 Oct 2026)
+French spans G01-G03: S 19/22 keyed (0.864); shuffled-key control (1000 draws, seed 8) mean 3.44, p95 6, p99 7, max 9 -> above p99
+German spans G04-G07: S 5/14 keyed (0.357); shuffled-key control mean 1.31, p95 3, p99 4, max 6 -> above p99 but under 0.5 x keyed

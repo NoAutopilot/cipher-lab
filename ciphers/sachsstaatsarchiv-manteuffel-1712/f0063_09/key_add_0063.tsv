@@ -1,0 +1,4 @@
+# Candidate key additions from 694/09 file 0063 (MANT-0063, 9 Oct 2026), per PREREG-MANT-0063: NOT merged into key.tsv by this job.
+# This leaf's own control: S 24/36 keyed vs shuffled-key p99 9 (mean 4.75, max 12), PASS (f0063_09/gate.out).
+# Every code in the 7 glossed spans is already in key.tsv: no unkeyed code, so no candidate addition (header only).
+code	candidate_value	grade	instances	slot	leaf_control	status

@@ -1,0 +1,10 @@
+# 694/09 file 0063 (film label 0064), page 44, Berlin ... Fevr 1713; 7 code-line crops (tools/iiif_lines.py --image; regions in PREREG-MANT-0063.md).
+# Two blind Sonnet passes (passA_0063.tsv, passB_0063.tsv) + worker reconciliation from the image at 3x. conf: high = passes agree; low = settled by the worker. '|' = clear words.
+line	settled	conf_notes
+T1	| 13 |	high ('le 13. dont j'ai eu l'honneur')
+A1	| 29 7 103 60 5 39	high; 103: A '103?', B '103'; worker eye at 2x: '10' with '3' close against '60', settled 103 (low: 10 3 not excluded); run continues on A2
+A2	10 21 28 66 31 50 14 24 6 35 27 | 103 17 26 |	28: A '28?', B '28?/29?'; worker eye 3x: second digit same form as 8 in C1 '28', settled 28; ';' after 27 ends the first run
+B1	| 55 25	high; run continues on B2
+B2	60 84 |	60: A '62?', B '64?'; worker eye 3x: open 6 + 0, settled 60 (low)
+C1	| 3 66 51 8 50 24 28 6 8 1 120 34 15 8 100 25 60 67 83 55	66: A '66?', B '68'; worker eye 3x: same 6+b form as A2 '66', settled 66 (low); 55: both '55?' at page edge, kept; run continues on C2
+C2	73 54 40 40 11 6 31 43 35 27 21 |	high (both passes identical)
