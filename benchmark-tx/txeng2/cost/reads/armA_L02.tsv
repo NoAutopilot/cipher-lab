@@ -1,0 +1,22 @@
+line	seg	order	gloss	signs	note
+L02	s1	1	CLEAR:de		clear text
+L02	s1	2	CLEAR:qualite		clear text
+L02	s1	3	CLEAR:presentement		clear text, split across q1/q2
+L02	s1	4	CLEAR:bien		clear text
+L02	s1	5	CLEAR:darrivee		clear text, read "d'arrive(e)"
+L02	s1	6	CLEAR:ung		clear text
+L02	s1	7	CLEAR:gentilhomme		clear text
+L02	s1	8	CLEAR:qui		clear text
+L02	s1	9	CLEAR:est		clear text
+L02	s1	10	CLEAR:a		clear text
+L02	s1	11	CLEAR:Mr		clear text
+L02	s1	12	CLEAR:de		clear text
+L02	s1	13	CLEAR:Gondy		clear text
+L02	s1	14	CLEAR:qui		clear text
+L02	s2	15	CLEAR:sert		clear text, letters unclear (reads like "Bru"/"sert")
+L02	s2	16	CLEAR:de		clear text
+L02	s2	17	CLEAR:florance		clear text
+L02	s2	18	CLEAR:et		clear text, written like "it"
+L02	s2	19	ma	Z v y	"ma" starts just right of Z, sits mainly over v and the left of y; Z could be under no gloss
+L02	s2	20	-	a p	no gloss directly above; "a p" may be one sign (xp form)
+L02	s2	21	dit	3 L z	last sign z has a flat top, could be 3
