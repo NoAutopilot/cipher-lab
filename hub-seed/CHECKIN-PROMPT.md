@@ -44,3 +44,6 @@ STATE DELTA 10:3x UTC 9 Oct: LANE MQS-3 near close (list spent); BLAST-account-4
 DEFAULT-account-4-* lanes from NEXT-STEPS runnable rows. WAIT-PASS-5 live on account 4 (13 targets). Account 2: KARL-FOLD queued, then
 queue OUT-CHECK-KARL (gate-7 fact check of outreach/riksarkivet-karlxi-1677.md, a session other than KARL-REQ/KARL-FOLD) when it lands;
 UNA2-PISA running. Account 1: UNA3-BLA at :40, then queue DV-BLA (depth verifier). Reading --wait-only: read the WHOLE list, never tail.
+STATE DELTA 11:0x UTC 9 Oct: account 4 live = DEFAULT-account-4-20261009-1051 lane (default-lane.md). Queued account 2: KARL-FOLD, DV-BLA (Blathwayt
+depth verifier: H/C/S 84.3% vs recorded D2; a D3 would be a count change -> board rebuild), V-PISA-C. Then OUT-CHECK-KARL after KARL-FOLD lands.
+CLOSEST: Blathwayt (DV-BLA decides D2/D3). Wait-only 0 missing.

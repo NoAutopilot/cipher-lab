@@ -77,3 +77,24 @@ address, the placeholders, `status: drafted` and NO `checked:` line (gate 7 is a
 KARL after this lands); update ASKS 132 and ASKS 159 to point at the one draft, and the CONTRIBUTIONS.md row. If ASKS 132's own gate is not
 cleared (its NOTES say the item may be in print), hold it out and say so in both ASKS rows instead of folding. Never send; never name the
 owner; no personal data.
+
+## DV-BLA (account 2, Opus 5.5, cap USD 5, box 70 min) -- depth verifier, a session other than UNA2-BLA/UNA3-BLA
+Folder ciphers/huntington-blathwayt-madrid-1728. After UNA2-BLA (09:48) and UNA3-BLA (10:53 UTC 9 Oct) the three items read C 141, S 4, M 10,
+U 17 of 172 (H/C/S 84.3%; BLA191(a) alone 86.5%); status.json still carries D2, depth_pct 77.3, set before those reads. Job (rule 4a, the
+verifier sets depth): re-run `tools/depth_check.py` on the folder; read AUDIT.md (the UNA2/UNA3 propagate-revision sections, the N-class and
+key source), reading_tokens.tsv and the D3-BLA2 PREREG with its amendments 3-4; decide D2 or D3 per rule 4a -- D3 needs >= 80% H/C/S with
+gaps mostly names/codes AND an external check or AD + a matched control: say which one holds here (the six glossed sibling items are a
+period key source; the known-answer gates KA 14/14 and 40/41 are controls on the reads, not on the reading's content -- judge whether an
+authentication-distance check with a matched control is on file or must be run, and run it if it is cheap, <= USD 2 of this cap). Write
+the depth row (depth, depth_pct, depth_sentence, depth_check) into AUDIT.md and status.json, one true specific sentence about the content
+for D2+, and the outward words rule 4a allows; lower, never raise, anything the evidence does not carry. Propagate into the
+SECOND-OPINIONS-QUEUE row SO-BLATHWAYT-1728 if a count or sentence there changes. No key edit, no new reading; rule 10 wording.
+
+## V-PISA-C (account 2, Opus 5.5, cap USD 1.5, box 40 min) -- verifier check of a solver-written AUDIT carry-over
+Folder ciphers/fr16045-pisany-rome-1585. UNA2-PISA (10:34 UTC 9 Oct, commit c0a068c8e) committed 11 T57->T32 relabels on f.301v/f.302v
+(grades C 205->212, 230->235; judge FAIL before and after) and appended a solver-written carry-over to AUDIT.md for item C (f.302v), which
+rule 10 says a verifier checks. Job: read the UNA2-PISA NOTES section, PREREG 9700dc93c, apply_t32.py --check, and the AUDIT.md carry-over;
+confirm the counts and sentences against the files (decode_key --check both pages), confirm the relabel is a transcription-label change
+and not a key86 value change, and rewrite the carry-over in the verifier's voice (or strike what the files do not support); update the
+item's token counts and depth fields in AUDIT.md/status.json only if your own check changes them (this is a known-text target: Tomokiyo's
+key, the Colbert copy -- N-class unchanged). Rule 10 wording; no reading, no key edit.

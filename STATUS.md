@@ -7130,6 +7130,20 @@ had no parallel action (the 09:2x listing had been read with tail, so WAIT-PASS-
 session for all 13. Five finished queue rows closed (TX-TRUTH-VERIFY, UNA2-BLA, WAIT-PASS-4, KARL-REQ, UNA2-BIR3252). Checks: desk, NEAR,
 system map, work_queue ok; open_asks' S6 line is the tool's known quirk (answered 09:5x). Next check-in 10:55.
 
+Check-in 4, 10:55-11:0x UTC 9 Oct (3:55 am PT): five_hour allowed; orchestrator context ~405k, cost 13.7. LANE MQS-3 closed 10:31 and
+archived (3.82 by get_session, ledger row corrected in place; its check-solved pool line applied to check-solved.md). WAIT-PASS-5 done
+2.87 D: 13/13 sections, wait-only now 0 of 147 blocked targets missing a parallel action. Account 4: the dispatcher re-fired at 10:51 and
+auto-filled DEFAULT-account-4-20261009-1051 (default-lane.md, session_01XbUzdRL1vD2sD2Yec1P4FM, told not to take debosnys-1883). Account 2:
+UNA2-PISA done 10:34 -- the T57->T32 relabel re-score PASSED its pre-registered gate (f.301v 0.630->0.656, f.302v 0.590->0.607, both above
+the shuffle p99s, controls 5/5 and 5/5; 11 labels committed; C 205->212 and 230->235; judge still FAIL; key86 unchanged) and left a
+solver-written AUDIT carry-over for f.302v -> V-PISA-C queued (verifier check); KARL-FOLD queued for :10; LANE FAMILY-A2h wave 2 live
+(MANT-CUC, VB-SCREEN2, LIN-VIEYRA; VB-0086 found the 1656 letter shares the 1657 key, 216/225 vs p99 0.249, on printed text). Account 1:
+UNA3-BLA done 10:53 -- 4 more Blathwayt tokens M -> C/S on the native-size image (BLA191 p5 KA 40/41; BLA186 p1 KA 6/7 FAIL, nothing moved
+there; 7 of the 14 M are key ties the image cannot settle): now C 141 S 4 M 10 U 17 of 172, H/C/S 84.3%, status.json still D2 77.3 ->
+DV-BLA queued (account 2, depth verifier, separate session; the next count candidate); LANE LEDGER incarnation 5 live with four workers
+(Fort Monroe clean rows, N1 confirms, FIX-FM7 done). Account 3 silent since 02:03. A stray ROOM line "10:51 | x | y" (a test line by an
+unknown session) is left as is. Keys unchanged (6 of 9 working). Next check-in 11:35.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
