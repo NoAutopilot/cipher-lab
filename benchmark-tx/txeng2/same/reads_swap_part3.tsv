@@ -1,0 +1,17 @@
+row	pick	conf	note
+33	A	M	loop high, long stem below, matches A
+34	B	M	filled-head q, straight stem, foot stroke
+35	B	H	ce-ligature with hook, matches B
+36	B	M	looped 8 with dot; g tail outside
+37	B	H	cursive 9 with long curved tail
+38	B	L	phi-like loop on stem; A similar
+39	B	M	q with b-hook, B's first example
+40	A	H	p over double crossbar, same form
+41	A	M	q straight stem, horizontal foot
+42	C	H	ce-ligature with hook matches C
+43	neither	H	inverted double-T on baseline, no match
+44	B	H	ae-like crossed sign matches B
+45	neither	H	infinity/oo sign, not hash forms
+46	B	L	box spans ae-sign plus p-cross; bad cut
+47	B	H	g with straight j-like descender
+48	B	H	p over double crossbar matches B
