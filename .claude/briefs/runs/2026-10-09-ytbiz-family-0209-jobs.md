@@ -96,3 +96,54 @@ Crop step pasted; one strip set per subagent call; per-unit pricing from BERGH-G
 starting and stop before a unit that would cross 80% of cap or box). Write atlas/group_sign.tsv rows (append, a `job` column BERGH-ALL1),
 NOTES section "BERGH-ALL1 (9 Oct 2026)" with counts, agreement and every box the reader flagged; Remaining gaps update, gaps_check. No sorter
 rebuild, no decoding. The second half is BERGH-ALL2 (next wave or next incarnation).
+
+## Wave 2 (02:5x UTC 9 Oct)
+
+Common-rules addition (wave 1 lesson, MANT-0056): `tools/room.py "msg" --push <paths>` committed ROOM.md only and left the named paths behind
+(the 0009 orchestrator saw the same). Commit PREREG files and results with `git add <paths> && git commit && git push` directly, and check
+`git log -1 --stat` shows the PREREG BEFORE computing any score.
+Hosts this wave: arcinsys (BRANDT-UP only), sachsen (MANT-0063 only); the rest are disk/CPU only.
+
+### BRANDT-UP (Opus, cap 5, box 100 min): hessen-daenemark-1672, Brandt 0020 upper block + 0021 under the gate-passed values
+NOTES "BRANDT-TX" and "BRANDT-GATE"; dk131_brandt/ (values_gate.tsv: 16 values C, 8 M after BRANDT-GATE). Goal: (1) the 0020 upper block (the
+3 lines continuing from L01's clear text, ~20 groups) and the right-page head block above "Es ist hier eine troupe" (~44 groups); (2) leaf 0021
+(arcinsys take, one GET at the largest size; BRANDT-TX/HDK-BRANDT give the URL pattern): its cipher groups and any gloss. Crop with
+tools/iiif_lines.py --image (paste the command; shear as BRANDT-TX's shear_crops.py if lines climb), two blind Sonnet passes per block,
+reconcile_passes.py, settle splits from the image. Then apply only values_gate.tsv's C values (no new values inferred) and report coverage:
+tokens covered by C values, and any gloss over these blocks scored against them (known-answer, not a gate unless pre-registered first and
+committed with git before scoring). Grades: C only for glossed tokens; decoded-by-C-value tokens unglossed are S only if a pre-registered gate
+covers them, else M. Write ciphertext_0020u.tsv / ciphertext_0021.tsv, NOTES section "BRANDT-UP (9 Oct 2026)", Remaining gaps/Escalation,
+gaps_check. Units: 4 passes + 2 reconciliations (~1.5 each) + CPU, ~$4.5 (stop before a unit crossing 80%: do 0020 first, 0021 second).
+
+### MANT-0063 (Opus, cap 4, box 90 min): sachsstaatsarchiv-manteuffel-1712, 694/09 frame 0063 as a known-answer leaf
+As MANT-0056 (wave 1, NOTES "MANT-0056 (9 Oct 2026)", PREREG-MANT-0056.md design) on frame 0063 (p.44, Berl. 15 ..., est. 55-70 tokens,
+moderate gloss). PREREG-MANT-0063.md committed with git BEFORE any score (check git log). "sachsen take", one fetch, crops pasted, two blind
+passes + one gloss pass + reconciliation, gate, key_add_0063.tsv (not merged). NOTES section "MANT-0063 (9 Oct 2026)", gaps_check. ~$3.5.
+
+### V-SUR0745 (Opus verifier, cap 3, box 70 min): na-suriname-map-1781, audit SUR-0745's 0745-left CLASS PASS and SPLIT no-split
+Separate session from the solver. Read NOTES "SUR-0745 (9 Oct 2026)", PREREG-SUR-0745, AUDIT.md (V-SUR0744 / V-SUR0744R sections) and the
+unit's files. Re-run the scoring scripts with --check and fresh seeds (as V-SUR0744R did): does CLASS hold on fresh seeds for both passes; was the
+PREREG committed before the passes (git log); can the SPLIT control differ from the target; is the dot-dropped design the one AUDIT.md's "What
+0744 right and 0745 must" paragraph asked for. Write a dated AUDIT.md section "V-SUR0745 (9 Oct 2026)": holds / does not hold, per gate, with
+numbers; correct any over-claiming sentence. No novelty class change unless the evidence requires it (rule 10; this is a design/gate audit).
+Disk only. ~$2.5.
+
+### BERGH-ALL2 (Opus, cap 6, box 110 min): wvo-11106-bergh-1572, BERGH-GRP group instrument on lines L11-L22
+As BERGH-ALL1 (NOTES "BERGH-ALL1 (9 Oct 2026)"; atlas/strips_grp.py, same prompt, model and reconciliation), on L11-L22 (the rest of the 875
+boxes). Append to atlas/group_sign.tsv with job BERGH-ALL2; NOTES section with counts, A/B agreement, overlap with BERGH-GRP's windows, every
+reader-flagged box. No sorter rebuild, no decoding; the sorter rebuild is a one-line suggestion. Disk only. ~$4.5.
+
+### LAG-SYL13 (Opus, cap 2.5, box 60 min, CPU): la-garde-1577, syllabary control at marks-kept error 0.13
+LAG-MARKS (NOTES "LAG-MARKS (9 Oct 2026)") left the one-reader marks-kept error at 0.071 central / 0.125 upper, undecided against LAG-SYL's
+covered band (<= 0.107). Run the syllabary (regular) family control at injected error 0.13 exactly as LAG-SYL ran 0.055/0.084/0.107/0.183
+(same family_run.py invocation, seeds, N, corpus; PREREG-LAG-SYL.md + Amendment 1; add an Amendment 2 for 0.13, committed with git before
+running). If the control meets the LAG-SYL gate at 0.13, score the target under that gate (family_run.py runs target only after the control
+reads) and log both numbers in HYPOTHESES.md; if it fails, log "control below gate at 0.13" and say what that means for the negative's
+coverage. Do NOT edit the v2 marks transcription (LAG-MARKS flagged 7 sure settles that differ from v2 -- a one-line suggestion). NOTES section,
+Remaining gaps, gaps_check. ~$2.
+
+### CLIN-EYE (Opus, cap 2, box 50 min, disk only): pro3055-clinton-1779, eye check of the c5:18 underline and the c6 cells on existing crops
+NOTES lines about CLIN-RG and D4-CLIN: the alignment design is retired (rule 3 third-attempt clause), so this is a transcription correction only,
+not a re-gate. On the existing p.123 crops (p123_full_reconciled.tsv and the crops it cites), look at c5:18 (is there an underline?) and every c6
+cell at native zoom; two Sonnet looks on doubt. Record each cell: as transcribed / corrected (with the image evidence) in the reconciled TSV's
+notes column or an errata TSV, NOTES section "CLIN-EYE (9 Oct 2026)". Do not re-score either gate. gaps_check. ~$1.5.
