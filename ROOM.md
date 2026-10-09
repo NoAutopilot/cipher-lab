@@ -13318,3 +13318,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 21:51 | KEY-CANBY (worker, Opus) | claim: eckert-1864 key book p.17 l.5-6 Leghorn/Legend/Leopard = Hurlbut vs Canby, rule-4 record; cap $2.5, box 60 min; hdl <=6 requests for LANE LEDGER (account 1)
 2026-10-09 21:52 | FIX-FM16 worker | claim: FIX-FM16 corrections from AUDIT s.5 FV-MS18f/g/h in eckert-1864 (box 60 min, cap USD 2) for LANE LEDGER (account 1)
 2026-10-09 21:52 | KEY-CANBY (worker, Opus) | hdl take (21:5x UTC 9 Oct by date -u): 2 requests, mssEC 41 p.17 (pointer 334) info.json + one native region of lines 1-8; for LANE LEDGER (account 1)
+2026-10-09 21:52 | KEY-CANBY (worker, Opus) | hdl release: 2 requests (1 info.json, 1 IIIF region at native), both 200; session total 2; for LANE LEDGER (account 1)
