@@ -7018,3 +7018,14 @@ confusion-matrix lattice, TXE-G document-recovery literature pass (Opus workers,
 has 4 live; it is over the three-worker hold while TX-ENGINEER runs (reminded). Account 2: FAMILY-A2g (incarnation 7) open, NEAR-POLL and
 SHELF-ROWS spawned 07:10. Account 1: VERIFY-HELLEN, SIG-7, TX-CONFIRM-SET queued for its :40 firing. Desk clean. Unassigned rows 18
 (all carry queued or live jobs from this session; the ON column lags the queue by one check-in).
+
+Check-in 5, 07:59-08:0x UTC 9 Oct: five_hour allowed; orchestrator context ~600k, cost 38.6. TX-ENGINEER round 2 -- eleven instruments
+scored on dev so far, ten FAIL (compare-don't-recall 4/16 wrong way; thin-stroke pair re-read 1/1; confusion-matrix lattice 3/7; rendering
+sweep and 4x read no gain; per-cut quality gate recall 0.43 at 19% flagged; contrast sweep 0.36 at 21%; pair hints 11/3 p 0.057 short of
+0.01; jitter stability 1/4), ONE PASS: crop geometry (TXE-B + replication TXE-B2: vs pass A fixed 27 / broken 8 pooled, p 0.0019 < 0.01,
+err 0.136 -> 0.077 on the geometry units; caveat: 10 of 15 fixes are the one f.178r L03 tail, f.178v unmoved; dependence-aware p 0.013) --
+shelf controlled-only pending eval. Round 2 continues (M7 shuffled-order tiles, M24 feature-first protocol, M20 shifted second crop set
+extending the geometry win, a read-free doubt detector for the sorter). Lane at 555k context, cost 38.4 of 150, 0 eval looks used.
+LANE MQS-2: 3 live, 9 queued, holding. Account 2 FAMILY-A2g wave 1 done (Manteuffel 0454 audited N2; 0109 f.80 read; van Beuningen
+siblings screened, no all-cipher page in inv.1537). DEB-RUN flag: three 8 Oct ROOM.md lines carry museum-derived Debosnys figures (public,
+in history); ASKS row for the owner (a: fingerprint and leave, b: purge), no quote. Account 3 silent.
