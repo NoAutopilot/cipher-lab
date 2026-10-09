@@ -1,0 +1,110 @@
+cote	ark	items	cipher	deciphered	keysheets	named	bare	open_bare	open_named	median_gap	est_signs	est_signs_open	neighbour_trap	digitised	cls	prior_work	ours_items	ours_range	ours_slugs	contact_first
+fr.3029	cc494882	72	7	0	0	1	6	6	1	115	448500	448500	yes	yes	pile		0	0		
+fr.3413	cc49884s	56	5	1	0	1	3	3	1	16	31200	31200		yes	few-bare		0	0		
+fr.6204	cc56099h	15	15	0	0	13	2	2	13	0	0	0		yes	few-bare		0	0		
+fr.3147	cc496090	24	1	0	0	0	1	1	0	0	0	0		yes	few-bare		0	0		
+fr.3254	cc49715d	68	1	0	0	0	1	1	0	0	0	0		yes	few-bare		0	0		
+fr.3350	cc49815k	80	1	0	0	0	1	1	0	0	0	0		unknown	few-bare		0	0		
+fr.3462	cc49937n	15	4	0	3	0	1	1	0	0	0	0		yes	few-bare		0	0		
+fr.4052-4053	cc504728	89	2	1	0	0	1	1	0	0	0	0		unknown	few-bare		0	0		
+fr.2988	cc49442s	50	29	0	0	3	26	0	2	4	67600	0	yes	yes	named-open	Contient notamment des lettres chiffrées de Marie Stuart à l'ambassadeur de France en Angleterre, Michel de Castelnau , entre 1578 et 1584. | Georges Lasry, Norbert Biermann et Satoshi Tomokiyo, "Deci	4	0	_triage decode-4450-bnf-fr20506-1525 fr2988-ranzo-1520s	mary-castelnau-edition
+fr.4715	cc577658	51	44	40	0	3	1	0	0	0	0	0		yes	excluded		4	0	fr4715-f61-mayenne-1592 fr4715-montholon-1589 fr4715-vieuville-pool	
+	cc86298x	23	4	0	0	4	0	0	4	0	0	0		unknown	named-open		0	0		
+F. 2	cc349255	97	5	0	0	5	0	0	5	0	0	0		yes	named-open		0	0		
+esp. 132	cc34747q	75	35	0	0	35	0	0	35	0	0	0		yes	named-open		0	0		
+esp. 336	cc34944b	88	9	0	0	9	0	0	9	0	0	0		yes	named-open		0	0		
+fr.2751	cc49202m	51	1	1	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.2933	cc493855	170	1	0	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.2980	cc494342	55	2	0	0	2	0	0	0	0	0	0		yes	excluded		2	0	fr2980-gramont	
+fr.2984	cc494381	39	7	0	0	7	0	0	7	0	0	0		yes	named-open		0	0		
+fr.2996	cc49450h	25	1	0	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.3005	cc494626	75	1	0	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.3012	cc49470x	68	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3013	cc494715	67	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3015	cc49473n	49	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3019	cc49477m	63	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3022	cc49481c	27	5	0	0	5	0	0	5	0	0	0		yes	named-open		0	0		
+fr.3034	cc494932	68	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3040	cc49499h	32	5	0	0	5	0	0	5	0	0	0		yes	named-open		0	0		
+fr.3045	cc49504m	72	3	0	0	3	0	0	3	0	0	0		yes	named-open		0	0		
+fr.3053	cc49513k	25	16	0	0	16	0	0	15	0	0	0		yes	named-open		1	0	fr2980-gramont	
+fr.3077	cc49539f	31	3	0	0	3	0	0	3	0	0	0		yes	named-open		0	0		
+fr.3078	cc49540g	28	6	0	0	6	0	0	6	0	0	0		yes	named-open		0	0		
+fr.3081	cc49544f	76	1	0	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.3083	cc49546x	26	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3091	cc49554n	47	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3096	cc49559v	67	6	2	0	4	0	0	4	0	0	0		yes	named-open		0	0		
+fr.3126	cc495887	25	1	1	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.3138	cc49600t	32	4	3	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.3142	cc49604s	24	4	2	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3157	cc496207	64	1	0	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.3251	cc49712p	73	14	1	0	13	0	0	8	0	0	0		yes	named-open		5	0	birago-fr3252-1571-72 birago-nevers-1571 ceppo-nevers-fr3251-1570s ceppo-nevers-fr4702-f36 nevers-birago-fr3251-1572	
+fr.3252	cc49713x	90	4	1	0	3	0	0	1	0	0	0		yes	named-open		2	0	birago-fr3252-1571-72	
+fr.3255	cc49716n	66	1	1	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.3315	cc49776w	41	4	2	1	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.3318	cc49779m	34	1	1	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.3321	cc49783c	102	1	1	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.3416	cc49887h	53	4	1	0	3	0	0	2	0	0	0		yes	named-open		1	0	fr3416-nevers-fils-1589	
+fr.3484	cc49952v	40	24	21	0	3	0	0	3	0	0	0		yes	named-open		0	0		
+fr.3516	cc499728	37	19	19	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.3603	cc50053d	42	1	0	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.3612	cc50062c	98	35	32	0	3	0	0	3	0	0	0		unknown	named-open		0	0		
+fr.3613	cc50063m	94	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3614	cc50064v	87	3	1	0	2	0	0	2	0	0	0		unknown	named-open		0	0		
+fr.3615	cc500653	84	8	8	0	0	0	0	0	0	0	0		unknown	excluded		0	0		
+fr.3616	cc50066b	107	5	4	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.3618	cc50068t	125	3	1	2	0	0	0	0	0	0	0		unknown	excluded		0	0		
+fr.3619	cc500692	111	7	6	1	0	0	0	0	0	0	0		unknown	excluded		0	0		
+fr.3620	cc500703	74	1	0	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.3621	cc50071b	108	7	5	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3622	cc50072k	87	1	0	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.3623	cc50073t	83	9	4	0	5	0	0	5	0	0	0		yes	named-open		0	0		
+fr.3624	cc500742	126	3	0	0	3	0	0	3	0	0	0		unknown	named-open		0	0		
+fr.3625	cc500759	94	7	6	0	1	0	0	0	0	0	0		yes	excluded		1	0	fr3625-lauriere-1593	
+fr.3626	cc50076j	62	2	2	0	0	0	0	0	0	0	0		unknown	excluded		0	0		
+fr.3628	cc500781	76	3	3	0	0	0	0	0	0	0	0		unknown	excluded		0	0		
+fr.3630	cc500809	93	6	6	0	0	0	0	0	0	0	0		unknown	excluded		0	0		
+fr.3631	cc50081j	98	5	4	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.3632	cc50082s	87	7	6	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.3633	cc500831	104	20	15	0	5	0	0	5	0	0	0		unknown	named-open		0	0		
+fr.3634	cc500848	122	9	4	0	5	0	0	5	0	0	0		unknown	named-open		0	0		
+fr.3641	cc500920	69	52	43	0	9	0	0	9	0	0	0		yes	named-open		0	0		
+fr.3645	cc50096z	63	4	3	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.3646	cc500976	57	8	6	0	2	0	0	2	0	0	0		unknown	named-open		0	0		
+fr.3654	cc501068	27	14	3	0	11	0	0	11	0	0	0		unknown	named-open		0	0		
+fr.3657	cc50108r	74	1	0	1	0	0	0	0	0	0	0		unknown	excluded		0	0		
+fr.3658	cc501090	73	2	2	0	0	0	0	0	0	0	0		unknown	excluded		0	0		
+fr.3659	cc501101	73	5	4	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.3660	cc501118	69	2	2	0	0	0	0	0	0	0	0		unknown	excluded		0	0		
+fr.3669	cc501207	41	30	29	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.3675	cc50126p	63	6	6	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.3693-3694	cc50138c	239	3	0	0	3	0	0	3	0	0	0		unknown	named-open		0	0		
+fr.3747	cc50193d	139	4	3	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.3758	cc502017	99	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3789	cc50224c	38	3	2	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.3822	cc50262q	71	1	1	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.3854	cc502952	30	3	1	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.3944	cc50393r	28	1	1	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.3974-3995	cc504266	2299	149	104	0	45	0	0	45	0	0	0		unknown	named-open		0	24	birago-fr3252-1571-72 fr15575-syllabic-1592-95 fr2751-dediou-mayenne fr3416-nevers-fils-1589 fr3613-rondinelli-1590 fr3622-nevers-gondi-1594 fr3625-lauriere-1593 fr3975-vieuville-1587 fr3976-nevers-f1	
+fr.4050-4051	cc504711	64	2	0	0	2	0	0	2	0	0	0		unknown	named-open		0	0		
+fr.4102	cc50509p	68	1	0	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.4133-4138	cc505343	197	1	0	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.4687	cc577374	37	2	0	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.4688	cc57738c	31	2	0	0	2	0	0	2	0	0	0		unknown	named-open		0	0		
+fr.4696	cc577463	7	5	5	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.4698	cc57748k	54	17	10	0	7	0	0	7	0	0	0		yes	named-open		0	0		
+fr.4699	cc57749t	51	3	2	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.4700	cc57750v	43	3	1	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.4701	cc577513	14	2	0	0	2	0	0	2	0	0	0		unknown	named-open		0	0		
+fr.4702	cc57752b	49	2	2	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.4703	cc57753k	81	1	0	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.4706	cc577569	38	1	0	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.4707	cc57757j	90	5	2	0	3	0	0	3	0	0	0		unknown	named-open		0	0		
+fr.4708	cc57758s	73	4	2	0	2	0	0	2	0	0	0		unknown	named-open		0	0		
+fr.4712	cc57762j	68	2	1	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.4718	cc577680	88	3	2	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.4734-4736	cc57784f	179	9	8	0	1	0	0	1	0	0	0		unknown	named-open		0	0		
+fr.5160	cc58150z	2	1	1	0	0	0	0	0	0	0	0		yes	excluded		0	0		
+fr.5190	cc58180k	109	4	2	0	2	0	0	2	0	0	0		yes	named-open		0	0		
+fr.5699	cc586479	1	1	0	0	1	0	0	1	0	0	0		yes	named-open		0	0		
+fr.5761	cc587094	2	1	0	0	1	0	0	1	0	0	0		yes	named-open		0	0		

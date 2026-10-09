@@ -39,6 +39,19 @@ Scope (Usage 8a):
   catches  a pile that is a real concentration in one volume (fr.2988: 26 vs a null p95 of a few);
   does NOT pass a set whose bare items are spread thin across volumes (test: an even spread ties its own null), and a
            within-volume order shuffle is not offered (it cannot change `bare`: rule 3, a control that cannot vary).
+  --prior-work (with --pile; MQS-BNF-S3, 9 Oct 2026; disk only): two per-item checks --pile did not call.
+  (1) own work across the repository: top-level *.md and items.tsv of every ciphers/<slug>/ folder and ciphers/_triage/*.md,
+      matched with tools/shelfmark.py match() == 'exact' (folio bound to the volume, never the folio alone; a line naming
+      no volume counts only inside a folder whose slug carries the volume, never in _triage). Skipped: RESTRICTED.md
+      folders, any 'restricted' path, ciphers/debosnys-1883. A hit marks the item ours (columns ours_items, ours_slugs)
+      and takes it out of open_bare/open_named, as a KNOWN does. A range notice (fr.3974-3995: items carry no volume) gets
+      ours? in ours_range and keeps its open counts.
+  (2) prior_work.py check 3a (active edition, MQS-SCOUT): a LEAD on any item sets contact_first; counts and class unchanged.
+  catches  a pile item a folder of ours already names (fr.2988 f.1: ciphers/_triage/bnf-fr2988-f1-fr20506-f146.md);
+           fr.2988 contact_first (the Mary Stuart - Castelnau edition).
+  does NOT mark fr.29880 f.18, fr.3040 f.19, fr.3041 f.18 against a line 'BnF fr.3040 f.18r', or read a RESTRICTED.md
+           folder or debosnys-1883 (tools/tests/test_bnf_findingaid_prior.py). Not a DONE: prior_work.py check 1 stays per-slug.
+           Controls (PREREG-MQS-BNF-S3.md): K1 volume recall, N1 folio shift +37, N2 volume swap; shelf grade on its row.
   --census PHRASE ... --out DIR: one quoted POST per phrase, total + facets + first-page ids (never pages further).
   --local-search IR TERM and --branch-pdf ARK: routes read from /js/pagePresentationIr.js (status in --help).
 
@@ -230,7 +243,7 @@ def title_cote(title):
     return name + m.group(2)
 
 
-def score_volume(s, ark='', root=None, prior=None, portals=True):
+def score_volume(s, ark='', root=None, prior=None, portals=True, prior_work=False):
     title, rows = parse(s)
     cote = title_cote(title)
     for r in rows:
@@ -252,10 +265,20 @@ def score_volume(s, ark='', root=None, prior=None, portals=True):
         trap = bool(clear) and (any(LANG.search(r['text']) for r in clear) or
                                 (len(years) >= 2 and max(years) - min(years) >= 10))
     ov = prior or {}
-    open_items = []
+    open_items, ours, ours_q, slugs = [], 0, 0, set()
+    is_range = len(range_vols(cote)) > 1
     for r in rows:
         if r['kind'] not in ('bare', 'named'):
             continue
+        if prior_work and root and cote and r['f'] is not None:
+            hit = own_hits(cote, r['f'], root)
+            if hit:
+                slugs.update(hit)
+                if is_range:
+                    ours_q += 1
+                else:
+                    ours += 1
+                    continue                              # ours: out of the open counts, as a KNOWN
         st, key = 'open', (cote, r['f'])
         if key in ov:
             st = ov[key][0]
@@ -283,11 +306,77 @@ def score_volume(s, ark='', root=None, prior=None, portals=True):
                 keysheets=n['keysheet'], named=n['named'], bare=n['bare'], open_bare=open_bare,
                 open_named=sum(1 for r in open_items if r['kind'] == 'named'), median_gap=gap,
                 est_signs=len(bare) * gap * GAP_CONST, est_signs_open=open_bare * gap * GAP_CONST,
-                neighbour_trap='yes' if trap else '', digitised=digitised(s), prior_work=' | '.join(pv)[:200], cls=cls)
+                neighbour_trap='yes' if trap else '', digitised=digitised(s), prior_work=' | '.join(pv)[:200], cls=cls,
+                ours_items=ours, ours_range=ours_q, ours_slugs=' '.join(sorted(slugs))[:200],
+                contact_first=(active_edition(cote, [r for r in rows if r['kind'] in ('bare', 'named')], root)
+                               if prior_work and root and cote else ''))
+
+
+SKIP_SLUGS = {'debosnys-1883'}
+_OWN = {}
+
+
+def own_index(root):
+    """volume key -> [(slug, path:line, line, context_vols or None)] over ciphers/*/ top-level *.md + items.tsv (disk)."""
+    if root in _OWN:
+        return _OWN[root]
+    sys.path.insert(0, os.path.join(root, 'tools'))
+    import shelfmark as sm
+    idx, base = {}, os.path.join(root, 'ciphers')
+    for slug in sorted(os.listdir(base)) if os.path.isdir(base) else []:
+        d = os.path.join(base, slug)
+        if (slug in SKIP_SLUGS or 'restricted' in slug.lower() or not os.path.isdir(d)
+                or os.path.exists(os.path.join(d, 'RESTRICTED.md'))):
+            continue
+        fvols = set() if slug.startswith('_') else {v for v in sm.volume_keys(slug) if not v.startswith('hint:')}
+        for fn in sorted(os.listdir(d)):
+            if not (fn.endswith('.md') or fn == 'items.tsv') or 'restricted' in fn.lower():
+                continue
+            for i, line in enumerate(open(os.path.join(d, fn), errors='ignore'), 1):
+                if not re.search(r'\d', line):
+                    continue
+                real = {v for v in sm.volume_keys(line) if not v.startswith('hint:')}
+                keys, ctx = (real, None) if real else (fvols, fvols)
+                for k in keys:
+                    idx.setdefault(k, []).append((slug, '%s/%s:%d' % (slug, fn, i), line, ctx))
+    _OWN[root] = (sm, idx)
+    return _OWN[root]
+
+
+def range_vols(cote):
+    """'fr.3974-3995' -> ['fr.3974', ..., 'fr.3995'] (<= 200); a single cote -> [cote]."""
+    m = re.match(r'^(.*?)(\d+)-(\d+)$', cote or '')
+    if not m or int(m.group(3)) <= int(m.group(2)) or int(m.group(3)) - int(m.group(2)) > 200:
+        return [cote]
+    return ['%s%d' % (m.group(1), n) for n in range(int(m.group(2)), int(m.group(3)) + 1)]
+
+
+def own_hits(cote, folio, root):
+    """-> sorted slugs of ciphers/ folders naming this volume + folio exactly."""
+    sm, idx = own_index(root)
+    out = set()
+    for v in range_vols(cote):
+        u = sm.unit('BnF ' + v, str(folio))
+        for k in u.vols:
+            for slug, where, line, ctx in idx.get(k, []):
+                if slug not in out and sm.match(u, line, context_vols=ctx) == 'exact':
+                    out.add(slug)
+    return sorted(out)
+
+
+def active_edition(cote, rows, root):
+    pw, ctx = _pw_ctx(root)
+    for r in rows or [{'f': None}]:
+        it = pw.item_from_spec('shelfmark=BnF %s' % cote + (';folio=%s' % r['f'] if r.get('f') else ''))
+        hits = pw.check_active_edition(ctx, it, pw.item_unit(it))
+        if hits:
+            return hits[0]['route'] or 'active-edition'
+    return ''
 
 
 PILE_COLS = ['cote', 'ark', 'items', 'cipher', 'deciphered', 'keysheets', 'named', 'bare', 'open_bare', 'open_named',
              'median_gap', 'est_signs', 'est_signs_open', 'neighbour_trap', 'digitised', 'cls', 'prior_work']
+PRIOR_COLS = ['ours_items', 'ours_range', 'ours_slugs', 'contact_first']
 
 
 def read_prior(path):
@@ -300,15 +389,16 @@ def read_prior(path):
     return out
 
 
-def pile(paths, prior=None, tsv=None, root=None, portals=True):
+def pile(paths, prior=None, tsv=None, root=None, portals=True, prior_work=False):
     root = root or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     ov, res = read_prior(prior), []
+    cols = PILE_COLS + (PRIOR_COLS if prior_work else [])
     for p in paths:
         ark = re.match(r'(cc[0-9a-z]+)', os.path.basename(p))
-        res.append(score_volume(open(p, errors='ignore').read(), ark.group(1) if ark else '', root, ov, portals))
+        res.append(score_volume(open(p, errors='ignore').read(), ark.group(1) if ark else '', root, ov, portals, prior_work))
     res = list({r['ark'] or r['cote']: r for r in res}.values())       # one row per notice
     res.sort(key=lambda r: (-r['open_bare'], -r['bare'], r['cote']))
-    lines = ['\t'.join(PILE_COLS)] + ['\t'.join(str(r[c]) for c in PILE_COLS) for r in res]
+    lines = ['\t'.join(cols)] + ['\t'.join(str(r[c]) for c in cols) for r in res]
     if tsv:
         open(tsv, 'w').write('\n'.join(lines) + '\n')
     return res, lines
@@ -432,6 +522,7 @@ def main():
     ap.add_argument('--out', help='--census: output directory (census.tsv, manifest.json, html/)')
     ap.add_argument('--tsv', help='--pile: write the per-volume table here')
     ap.add_argument('--permute', type=int, metavar='N', help='--pile: across-volume permutation null, N permutations')
+    ap.add_argument('--prior-work', action='store_true', help='--pile: own work across ciphers/ (shelfmark exact) + active edition; disk only')
     ap.add_argument('--no-portals', action='store_true', help='--pile: skip the prior_work.py per-item check (fast)')
     ap.add_argument('--save-html', help='directory to keep the fetched notice (fetch once, read from disk after)')
     a = ap.parse_args()
@@ -450,7 +541,7 @@ def main():
         print(branch_pdf(a.branch_pdf))
         return 0
     if a.pile:
-        res, lines = pile(a.pile, a.prior, a.tsv, portals=not a.no_portals)
+        res, lines = pile(a.pile, a.prior, a.tsv, portals=not a.no_portals, prior_work=a.prior_work)
         print('\n'.join(lines))
         if a.permute:
             print(permute_report(a.pile, a.permute))
