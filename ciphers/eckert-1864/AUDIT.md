@@ -9952,3 +9952,119 @@ E291: `white` plain (White House); America, Denmark, Austria plain, graded M. E2
 (M); header place Fort Monroe -> Harpers Ferry; "[2400] and [86]" may be rendered 2486. E299: none (hour 2.30 PM from 10239 may go in the header).
 Lead, not decoded: row 5783/0 (Wilson's own telegram to Washington, same page).
 Requests: hdl.huntington.org 20 (17 CONTENTdm queries, 3 IIIF pages); archive.org 2 downloads; be-api 7 (6 + 1 control).
+
+## AUDIT (FV-FM9c)
+
+Verifier FV-FM9c (account 1, for LANE LEDGER), 9 Oct 2026, 14:28-14:5x UTC by `date -u`; a separate session from the reader FM-R6b (account 1),
+not protecting its conclusions. Scope: **E304, E305, E306** (NOTES "## FM-R6b"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 =
+Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all three: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts: `fortmonroe/fv_fm9c_hdl.py` (+ `.out`: 2 dmGetItemInfo of the E304 clear copy 4610-4611, 15 CONTENTdm full-text queries across all
+pointers, the three ledger pages at 2400 px to scratch; page 5663 fetched once more by hand for E304's tail), `fortmonroe/fv_fm9c_print.py`
+(+ `.out`: letters-only phrase grep over the 164 cached print-check volumes plus OR I/36 pt 3 `warofrebellion363unit` (to 12 June 1864) and
+OR I/40 pt 2 `warofrebellion402unit` (from 13 June 1864) fetched to scratch, with KWIC for Bickford, Sheldon, Perkins, Abercrombie; E304
+phrases run as a positive control).
+
+### 1. Duplicates, prior work, image
+- **Duplicate diff:** pointers 5662, 5663, 5740, 5744 (and 4610, 4611) against every `###` header in ciphertext*.txt and status.json: 5662,
+  5740, 5744 occur only in their own headers (E304, E305, E306); 5663 is E241's page (its second entry, 10 May, a different telegram);
+  4610/4611 occur nowhere as a filed entry. **No duplicate.**
+- **Prior work:** `tools/prior_work.py eckert-1864 --item ...` refuses (no items.tsv row for these pointers), so by hand (civil-war adapter):
+  own work (pointers grepped in ciphertext*, NOTES, AUDIT, status.json, entries-mssEC19.tsv: only FM-R6b's own filing); no AUDIT.md or
+  status.json class on any of the three before this section; Tomokiyo and cached solver files have no Eckert ledger items; aaymeloglu not
+  cloned (UNCHECKED-NET, as FV-FM9a).
+- **Image eye check this session, every graded line** (PIL strips of the 2400 px pages, scratch only; `iiif_lines.py --image` finds no lines
+  on these ruled pages, as FM-R6b found): 5662 all 25 lines and the header ("Ft Monroe May 9th 1864 / Maj Eckert Di"); 5663 the first 8 lines
+  (E304's tail to "Geo D Sheldon"); 5740 header ("Washington June 12 1864 / Geo D Sheldon Ft Monroe") and all 19 lines to "T. T. Eckert";
+  5744 entry 2 header ("Ft Monroe June 13th 1864 / Maj Eckert Di") and all 16 lines to "Geo D Sheldon". The transcription matches the image
+  except **three transcription slips in E304**, all of which bring the cipher into agreement with the clear copy:
+  - 5662 line 3: **"Wadge"**, not "badge" (key Wedge = Today; clear copy "advanced today upon the Enemy").
+  - 5662 last line: **"14" is a marginal line count and the first word is "and"**: "loss penny superb / and spunky" = loss 4 killed and
+    missing, as clear copy and Tribune ("loss four killed and missing"); the reading's "[4] [Killed] 14 [Missing]" is wrong.
+  - 5663 line 3: **"whelp Morning zodiac our Whist are in line of pardon"**, not "whelp morning our in are in line of pardon" (Whist =
+    Troops, zodiac = full stop; clear copy "tomorrow morning, Our troops are in line of battle").
+  E305/E306: "white house" (E305) and "White horse" (E306) are written in clear on the page; E306's closing "16" stands after "back" in the
+  marginal-count position, as the "14" on 5662 (the page's line numbers 1-10 are pencilled above the first and last lines).
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the hdl token 14:33-14:35 UTC):
+axes 13, gloster 4 (5706, 10408, 5740, 5741), many pieces 14, jamestown cable 39, more direct route 8, escort guerillas 2 (5466, 5740),
+powhatan city point 14, perkins party 13 (incl. 5744, 5745, 11842, 11859), obrien 159, closing out 4, circumstances will allow 5, unable to find
+6, sheridan hunter white house 5 (4724, 4725 = Forsyth/Sheridan 18 June; 5754, 5757, 5762 ledger neighbours), headquarters removed 0, cable mile
+long 0. Snippets of every candidate in the clear books (object 4849, 4601-4751) and the West Point/White House operator books (11842-11877) were
+read: **no clear copy of E305 or E306**. 5741 (gloster) and 5745 (perkins party; "Ft Monroe June 13 1864 R OBrien ... for Knox", Sheldon's
+companion telegram to Butler's HQ) are same-week ledger neighbours, not copies.
+- **E304 -> clear copy pointers 4610-4611** (object 4849, pp.169-170, "455 PM Ft Monroe Va May / From Gen Butler Hd Qrs May 9th via Ft Monroe
+  May 10th 3 pm for Samuel Wilkeson Tribune Rooms Washn"), read here word for word from dmGetItemInfo. **Same telegram.** Every code group of
+  the decode agrees with it once the three slips above are corrected. Differences that remain are clerks' variants: "Hickmans" (clear) vs
+  "Heckmans" (cipher); "received today" (clear) vs "received tonight" (cipher, plain); "let this go over from Monroe Monroe" (clear) vs "go over
+  wires from [Monroe]". **Printed:** New-York Daily Tribune 11 May 1864 p.1 (FM-R6b's loc.gov ALTO excerpt on disk,
+  `fortmonroe/fm_r6b_tribune_excerpt.txt`, re-read here: "W. H. K., one of our Peninsula correspondents ... Gen. Butler's headquarters, Monday,
+  May 9, via Fortress Monroe ... lose, four killed and missing"); page image not viewed by me.
+- **E305 (12 June 1864, Eckert to Sheldon) -> no clear copy and no print of the telegram located.** Phrase grep (9 phrases) 0 in 166 volumes.
+  Context printed: OR I/36 pt 3 (`warofrebellion363unit`, djvu text, pages not read on the image) Sheldon to Shepley, 4 June 1864, relaying
+  West Point's report of guards "at each end of the cable" and "38 miles line from here to Gloucester Point"; OR I/40 pt 2 (`warofrebellion402unit`)
+  p.372, Sheldon to Bates, 23 June 1864: "Perkins was too much afraid of guerrillas to run wire half a mile to connect with cable at Jamestown".
+- **E306 (13 June 1864, Sheldon to Eckert) -> no clear copy and no print of the telegram located.** Phrase grep (11 phrases) 0 for the
+  telegram's own wording; generic hits only ("come out right", "circumstances will allow", "unable to find them", "Abercrombie wishes" in OR I/36
+  pt 2, May, another matter). Context printed in OR I/40 pt 2: p.372, Eckert to Caldwell, 23 June 1864, "Bickford, Cowan, Rand, and Painter left
+  White House this morning and will proceed at once to City Point. Shall order one of them to remain at Fort Powhatan"; p.378, Caldwell to
+  Eckert, 24 June, "Have telegraphed Bickford to leave an operator at Fort Powhatan"; Humphreys, 21 June: Abercrombie at White House attacked,
+  "General Sheridan was near at hand". These fit E306's Butler line City Point-Fort Powhatan, Bickford closing out the White House line, and
+  Abercrombie holding White House till Sheridan and Hunter arrive.
+- Not searched: Plum, The Military Telegraph during the Civil War, vol. 2, and Bates, Lincoln in the Telegraph Office, page by page (FM-R6b's
+  one be-api id for Plum was a guess); Grant Papers vol. 11; the press of 12-14 June 1864; NARA RG 107 telegram books; Google Books (not
+  probed).
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E304 (clear copy 4610-4611):** with the image corrections (Wadge = Today; "and" not "14"; zodiac + Whist = . Troops), **C 103 of 103
+  code groups** (decoder's 100 H plus Wedge/Today, zodiac, Whist/Troops, all agreeing with the clear copy). Plain "black water", "darling",
+  "apple Mattocks", "person" agree with the clear copy. No M.
+- **E305 (no clear copy):** **"white house" is plain, White House** (decoder "[Report] house" is a slip, as E291 in FV-FM9a). "break ford" =
+  Bickford, "toby" = to be, "wilby" = will be, "barn" = learn, "gloster" = Gloucester, "C" = see: clerk's phonetic plain, not code. Code groups
+  then **H 19 of 19** (Pembroke = Cipher, Quinces = Destroy, Swindle Salem = Join Force, Wicoff Vernon = West Point, Wilson Vernon = Wilson
+  Point, Saddle = Guard, Opal = Army, Waxy = South, Bergen = James, Peasant Blubber = by way of City Point, punctuation). Read: "Your cipher
+  received. I see that it will be impossible to save all the wire between White House and Wilson Point. Let Bickford save what he can and
+  destroy the rest by cutting it into as many pieces as possible, with axes or otherwise, as he or you may think best, doing it as rapidly as
+  possible to enable him to join the force at Jamestown. The cable at West Point should be taken up and the line from there to Gloucester
+  saved, unless it is decided that Wilson Point is to be held; of this you will be advised from here, or can learn from telegrams passing
+  through your office. In any event act upon your own judgment. Will arrange to have a sufficient guard and escort, but there will be no
+  trouble from guerillas after the army occupies the south side of the James. Glad to know you have found a shorter and more direct route by
+  way of City Point. Sorry weather has prevented your getting cable. T. T. Eckert."
+- **E306 (no clear copy):** **"White horse" is plain, White House** (decoder "[Report] horse" is a slip) and **"whites" is plain, writes**
+  (decoder "[Report]'s" is a slip; "Bickford writes that Grant's headquarters are removed"). **The closing "16" is the clerk's marginal count,
+  not text.** "Fort how patton" = Fort Powhatan, "Burr Moody publish" = Bermuda Hundred (phonetic + Publish = 100), "Mack" a man's name, "cabal"
+  = cable: plain. Code groups then **H 30 + C 1 of 31** (Knox = Butler, Blubber = City Point, Saco = Fort, Vernon = Point, Wick = Report,
+  Peach = 2, Shelby = General, Nabob = Sheridan, Mackerel = Hunter (C), Perfume = 3, Whelp = Tomorrow, Hastings = Yorktown, Wicoff Vernon = West
+  Point, Plug Spoon = 1 Mile, Tarquin = Necessary, Johns Snake = Grant's Head Quarters, Plank = 2, punctuation). No M.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E304 | **N1** (text known) | period | D3 (C 103/103; external: holder's clear copy 4610-4611; no fresh rule-7 re-derivation, so not D4) | plaintext already published: New-York Daily Tribune 11 May 1864 p.1; Washington-received clear copy in the Huntington transcription, pointers 4610-4611 |
+| E305 | **N3** | period | **D3** (H 19/19 code groups; external non-statistical: OR I/36 pt 3 West Point cable and Gloucester line, 4 June; OR I/40 pt 2 p.372 Perkins and the Jamestown cable) | no prior plaintext or decipherment located after the search in s.2 |
+| E306 | **N3** | period | **D3** (H 30 + C 1 of 31 code groups; external non-statistical: OR I/40 pt 2 pp.372, 378 Bickford leaving White House and an operator at Fort Powhatan; Abercrombie at White House, Sheridan near, 20-21 June) | no prior plaintext or decipherment located after the search in s.2 |
+
+- Not N4 for E305/E306: Plum and Bates page by page, Grant Papers vol. 11, the press of 12-14 June and NARA RG 107 not searched.
+- **Depth sentences (mine, from the reading).** E305: "On 12 June 1864 Eckert told Sheldon at Fort Monroe that the wire between White House
+  and Wilson Point could not all be saved and that Bickford should cut up what he could not save, take up the West Point cable and keep the
+  line to Gloucester." E306: "On 13 June 1864 Sheldon told Eckert that Butler could protect the line only from City Point to Fort Powhatan,
+  that Bickford would close out the White House line, and that Grant's headquarters had moved."
+- **Safe sentences.** E305: "Read at grade H with War Department Cipher No. 1: on 12 June 1864 Eckert told Sheldon at Fort Monroe to have
+  Bickford destroy the White House-Wilson Point wire he could not save, take up the West Point cable and save the line to Gloucester; not
+  located in the Official Records (ser. I vols. 36 pt 3 and 40 pt 2 print the surrounding telegraph traffic), Butler's correspondence or the
+  Huntington's full-text search (searched 9 Oct 2026)." E306: "Read at grade H with War Department Cipher No. 1: on 13 June 1864 Sheldon
+  reported from Fort Monroe that Butler could protect the line only from City Point to Fort Powhatan, that Perkins's party was sent to
+  Bermuda Hundred and Bickford would close out the White House line, and that Grant's headquarters had moved; not located in the Official
+  Records (ser. I vol. 40 pt 2 prints the line's later traffic), Butler's correspondence or the Huntington's full-text search (searched 9 Oct
+  2026)." E304: "A clear copy is in the Huntington's own transcription (pointers 4610-4611) and the text was printed in the New-York Daily
+  Tribune of 11 May 1864; our reading of the cipher entry agrees with it word for word once three transcription slips are corrected."
+- **Unsafe:** any "first", "new", "unpublished" for E305/E306; any novelty at all for E304.
+
+### 5. Fixes for the next FIX job (FIX-FM10; not applied here; reading.md is decode.py output)
+E304 (ciphertext.txt transcription, from the image): line "saints owled badge upon" -> "Wadge" (= Wedge, Today); line "14 spunky unity a
+wreathe ..." -> "and spunky unity a wreathe ..." (14 is a marginal count); line "whelp morning our in are in line of pardon" -> "whelp morning
+zodiac our Whist are in line of pardon". E305: `white` plain (White House). E306: `white` plain (White House, written "horse"); `whites` plain
+(writes); drop the closing "16" (marginal count). Header note for E304: clear copy received 4.55 PM.
+Requests: hdl.huntington.org 21 (2 dmGetItemInfo, 15 CONTENTdm queries, 4 IIIF pages); archive.org 4 (2 metadata, 2 djvu downloads); no
+other hosts.
