@@ -1,0 +1,21 @@
+key: key.tsv; spans 5
+== L (gloss pass left page): spans 3; code tokens 7; keyed 5
+S = 2/5 keyed (0.400); control (1000 permutations, seed 89): mean 0.18, p95 1, p99 1, max 2; control >= real 7/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== R (gloss pass right page): spans 2; code tokens 10; keyed 9
+S = 7/9 keyed (0.778); control (1000 permutations, seed 89): mean 0.91, p95 2, p99 3, max 4; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== pooled (reported): spans 5; code tokens 17; keyed 14
+S = 9/14 keyed (0.643); control (1000 permutations, seed 89): mean 1.09, p95 3, p99 3, max 6; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+G01	L	myz	0/4	1366:null: 9:miss:m 10:miss:y 271:miss:z
+G03	L	pf	2/2	17:match:p 1:match:f
+G06	L	L	0/1	13:miss:l
+G10	R	Keuk	2/5	11:match:k 60:null: 35:match:e 0:miss:u 84:miss:k
+G11	R	Krauts	5/5	45:match:k 27:match:r 66:match:a 6:match:u 59:match:t
+
+distinct codes: 17; matched on every instance: 9
+unkeyed codes and their slots: 0=u; 271=z; 1366=0
+keyed codes with a non-match slot: 9(i)=miss:m; 10(e)=miss:y; 13(m)=miss:l; 60(r|re|ro)=null:; 84(sch)=miss:k

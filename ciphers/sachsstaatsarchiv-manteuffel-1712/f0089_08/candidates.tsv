@@ -1,0 +1,9 @@
+code	occurrences_0089	slot	key_value	status	note
+1366	T001	gloss 'myz' (blind pass), run 1366.9.10.271 opening the left page	-	held	written joined; split 13.66 (m a) not tested; gloss start letter m (pass) agrees with 13 = m only under a split
+271	T004	gloss 'myz' tail	-	held	written joined; 27.1 (r f) split not tested
+0	T019	gloss 'Keuk' slot u (alignment)	-	held	bare 0, outside key.tsv; one instance
+84	T020	gloss 'Keuk' slot k	sch	conflict-logged (M)	y-tailed second glyph (4|9 open); worker eye reads the gloss as 'Kreutz' and Acta Borussica BO I p.208 paraphrases the 31 May dispatch naming Creutz: 84=sch would fit a '-tz/-sch' ending, not settled
+59	T025	gloss 'Krauts' slot t	t	agree	key value; matches
+85	T026	unglossed, '85.44 pretend maintenant aussi plus de satisfaction'	st	eye check owed	both passes 85; BO I p.208 says Blaspil raised his claims on Krautt: 55.44 (b l) would fit, 85 vs 55 not settled
+13	T009 T010 T015	gloss 'L?' over T010 (blind), worker eye 'm'	m	M	gloss pass read the tiny letter as L; key m
+17	T005 T007 T011 T013	gloss 'pf' over T005-T006	p	agree at T005	17.1 = 'pf' abbreviation for a person, five instances

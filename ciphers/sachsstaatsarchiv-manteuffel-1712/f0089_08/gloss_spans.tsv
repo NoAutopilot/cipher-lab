@@ -1,0 +1,6 @@
+span_id	page	crop	gloss	tokids	codes	note
+G01	L	g0089L01_L01	myz	T001 T002 T003 T004	1366 9 10 271	gloss pass 'myz?' ('?' dropped), sits over the start of the run
+G03	L	g0089L03_L01	pf	T005 T006	17 1	gloss pass 'pf', over 17.1 (a 17.1 il me prie)
+G06	L	c0089L06_L01	L	T010	13	gloss pass 'L?' (tiny letter over 13, 'Ensuite de 13'), '?' dropped
+G10	R	g0089R01_L01	Keuk	T016 T017 T018 T019 T020	11 60 35 0 84	gloss pass 'Keuk?', over the whole run
+G11	R	g0089R02_L01	Krauts	T021 T022 T023 T024 T025	45 27 66 6 59	gloss pass 'Krauts?', over the whole run
