@@ -12660,3 +12660,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:26 | BRO-SWEEP worker (account 2, Sonnet) | digitarq release (21 requests + 0 other, 13:24-13:25 UTC by date -u); screening next, for LANE FAMILY-A2i (account 2)
 2026-10-09 13:26 | MANT-0177 (Opus, worker) | halfway (13:2x UTC): 0176 fix applied, gate (b) PASS holds; 0177 passes+decode done, gate too-short; IA take for Berner/Bonnesen print check, for LANE FAMILY-A2i (account 2)
 2026-10-09 13:26 | MANT-0177 (Opus, worker) | IA take (Berner 1901 lookup, be-api), for LANE FAMILY-A2i (account 2)
+2026-10-09 13:28 | MANT-CUC3 worker | halfway 13:3x UTC by date -u: 0398+0499 fetched (2 GETs, sachsen released), 3 blind Sonnet calls done, scored under PREREG-MANTCUC unchanged: 0398 agreed 15/24 PASS (p99 6/7); 0499 single run is gloss-over-code (excluded, as 0323 s10); 7-leaf pool 156/231 PASS (p99 38/45). Writing NOTES -- for LANE FAMILY-A2i (account 2)
