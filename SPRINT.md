@@ -138,3 +138,9 @@ From 16:3x UTC 28 Sept, three tracks, all on the owner account (accounts 2 and 3
 2. **The harvest, reopened now** (the breadth freeze ends early for this vein only): HARVEST-A and HARVEST-B work the open KEY-ADJACENT rows with the new web and blog gate first; each reading that clears its control goes to two audits.
 3. **f.61** continues on its momentum (VERIFY-F61-V4, F61-FAMILY-7, the runner).
 Mercy is counted at N4 and its outreach is ready to send; its runner continues cheaply on crib work.
+
+## Campaign added 9 Oct 2026 (owner's decision, 06:4x UTC): TX-ENGINEER
+Reason written down: transcription is the bottleneck on every symbol target (TRANSCRIPTION.md "Why"); the owner asked for a Fable
+session to iterate on the known-answer items, build tools and think outside the box. Brief
+.claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md; cap 60, three gated rounds; scoreboard figure = held-out err_true on
+birago1572-no87 (today 0.045 reconciled + relabels). The 4 Oct model-swap test (TX-FABLE, FAIL) is the baseline, not repeated.
