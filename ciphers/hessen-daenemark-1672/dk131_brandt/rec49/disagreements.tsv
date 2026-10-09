@@ -1,0 +1,11 @@
+line	col	A	B	flagged	crop
+s49_L01	4	35=a	75=a	A	crops49/s49_L01.jpg
+s49_L01	5	94=n	44=n	AB	crops49/s49_L01.jpg
+s49_L01	6	67=g	62=g	B	crops49/s49_L01.jpg
+s49_L01	8	120=r	130=r	B	crops49/s49_L01.jpg
+s49_L02	1	w:inß=-	w:imb=-	AB	crops49/s49_L02.jpg
+s49_L03	4	w:hauss=-	w:hause=-	A	crops49/s49_L03.jpg
+s49_L03	10	101=-	101=c	AB	crops49/s49_L03.jpg
+s49_L03	11	45=c	45=h	B	crops49/s49_L03.jpg
+s49_L03	12	73=h	73=-	B	crops49/s49_L03.jpg
+f49_L02	4	71=h	71=r	AB	crops49/f49_L02.jpg

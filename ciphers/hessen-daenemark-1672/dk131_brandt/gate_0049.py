@@ -13,7 +13,7 @@ rows = [r for r in csv.DictReader((l for l in open('ciphertext_0049.tsv') if not
 data = []
 for r in rows:
     g = fold(r['gloss'])
-    if r['value'].isdigit() and len(g) == 1 and r['value'] in key:
+    if r['value'].isdigit() and len(g) == 1 and g.isalpha() and r['value'] in key:
         data.append((r['line'], r['pos'], r['value'], g))
 def score(k, d): return sum(1 for _, _, v, g in d if k[v] == g)
 N = 2000; rng = random.Random(20261009); vals = sorted(key); lets = [key[v] for v in vals]
@@ -30,7 +30,7 @@ run(data, 'TEST2 0049 held-out letters')
 seen = {('s49_L01', str(i)) for i in range(1, 9)}
 run([x for x in data if (x[0], x[1]) not in seen], 'SENSITIVITY without HDK-131 8 groups (not the gate)')
 print('unscorable glossed groups (value not single-letter keyed):',
-      ' '.join('%s=%s' % (r['value'], fold(r['gloss'])) for r in rows if len(fold(r['gloss'])) == 1 and r['value'] not in key))
+      ' '.join('%s=%s' % (r['value'], fold(r['gloss'])) for r in rows if len(fold(r['gloss'])) == 1 and fold(r['gloss']).isalpha() and r['value'] not in key))
 per = collections.defaultdict(list)
 for _, _, v, g in data: per[v].append(g)
 print('value\tkey0020\tgloss0049\tagree')

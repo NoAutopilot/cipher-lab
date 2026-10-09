@@ -1,0 +1,7 @@
+line	col	A	B	flagged	crop	both_conf
+s49_L01	2	73=h	73=h	B	crops49/s49_L01.jpg	A:H/B:M
+s49_L02	7	156=z	156=z	B	crops49/s49_L02.jpg	A:H/B:M
+s49_L02	12	133=t	133=t	B	crops49/s49_L02.jpg	A:H/B:M
+s49_L04	4	34=a	34=a	B	crops49/s49_L04.jpg	A:H/B:M
+s49_L04	5	86=l	86=l	B	crops49/s49_L04.jpg	A:H/B:M
+f49_L01	1	46=a	46=a	B	crops49/f49_L01.jpg	A:H/B:M

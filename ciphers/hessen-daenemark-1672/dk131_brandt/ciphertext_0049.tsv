@@ -1,0 +1,71 @@
+# Brandt, Copenhagen 22 June 1672, HStAM 4 f Staaten D Daenemark 131 image 0049. BRANDT-GATE 9 Oct 2026: inserted slip (s49, 4 lines) and
+# left-page foot (f49, 2 lines); two blind Sonnet passes on crops49 (passA49/passB49, A top-down, B bottom-up), tools/reconcile_passes.py
+# 56/66 = 84.8% agree, 10 columns settled by the worker from native views of the image. gloss = the letter written over the group.
+# conf: H both passes agree; W settled by the worker from the image; M uncertain. Grades of the reading itself: all M (see NOTES).
+line	pos	value	gloss	conf	note
+s49_L01	1	42	c	H	
+s49_L01	2	73	h	M	
+s49_L01	3	144	w	H	
+s49_L01	4	35	a	W	
+s49_L01	5	94	n	W	
+s49_L01	6	67	g	W	
+s49_L01	7	56	e	H	
+s49_L01	8	120	r	W	
+s49_L01	9	144	w	H	
+s49_L01	10	76	i	H	
+s49_L01	11	117	r	H	
+s49_L01	12	136	t	H	
+s49_L02	1	w:inß	-	W	
+s49_L02	2	126	s	H	
+s49_L02	3	45	c	H	
+s49_L02	4	72	h	H	
+s49_L02	5	34	a	H	
+s49_L02	6	130	t	H	
+s49_L02	7	156	z	M	
+s49_L02	8	91	m	H	
+s49_L02	9	52	e	H	
+s49_L02	10	75	i	H	
+s49_L02	11	125	s	H	
+s49_L02	12	133	t	M	
+s49_L03	1	53	e	H	
+s49_L03	2	118	r	H	
+s49_L03	3	124	s	H	
+s49_L03	4	w:hauss	-	W	
+s49_L03	5	75	i	H	
+s49_L03	6	73	h	H	
+s49_L03	7	123	r	H	
+s49_L03	8	56	e	H	
+s49_L03	9	42	c	H	
+s49_L03	10	101	-	W	"on138." written above the group by the glossing hand; no letter
+s49_L03	11	45	c	W	
+s49_L03	12	73	h	W	
+s49_L04	1	56	e	H	
+s49_L04	2	129	s	H	
+s49_L04	3	73	h	H	
+s49_L04	4	34	a	M	
+s49_L04	5	86	l	M	
+s49_L04	6	130	t	H	
+s49_L04	7	53	e	H	
+s49_L04	8	96	n	H	
+f49_L01	1	46	d	W	both passes read gloss a; native image shows d; worker override
+f49_L01	2	100	o	H	
+f49_L01	3	42	c	H	
+f49_L01	4	130	t	H	
+f49_L01	5	53	e	H	
+f49_L01	6	123	r	H	
+f49_L01	7	96	n	H	
+f49_L01	8	104	o	H	
+f49_L01	9	73	h	H	
+f49_L01	10	131	t	H	
+f49_L01	11	129	s	H	
+f49_L02	1	136	t	H	
+f49_L02	2	104	o	H	
+f49_L02	3	45	c	H	
+f49_L02	4	71	h	M	gloss h/r split; h from the native image (M)
+f49_L02	5	132	t	H	
+f49_L02	6	56	e	H	
+f49_L02	7	117	r	H	
+f49_L02	8	75	i	H	
+f49_L02	9	124	s	H	
+f49_L02	10	135	t	H	
+f49_L02	11	125	s	H	

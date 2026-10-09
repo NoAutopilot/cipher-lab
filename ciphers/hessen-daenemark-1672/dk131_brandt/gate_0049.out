@@ -1,0 +1,28 @@
+TEST2 0049 held-out letters: scorable 48; real 34; control mean 3.76, p99 12, max 20, n 2000; p = 0.0005; gate PASS
+SENSITIVITY without HDK-131 8 groups (not the gate): scorable 42; real 28; control mean 3.37, p99 11, max 15, n 2000; p = 0.0005; gate PASS
+unscorable glossed groups (value not single-letter keyed): 67=g 120=r 136=t 126=s 72=h 156=z 133=t 96=n 96=n 104=o 136=t 104=o 71=h 132=t 135=t
+value	key0020	gloss0049	agree
+34	a	a,a	2/2
+35	a	a	1/1
+42	c	c,c,c	3/3
+45	t	c,c,c	0/3
+46	d	d	1/1
+52	e	e	1/1
+53	e	e,e,e	3/3
+56	e	e,e,e,e	4/4
+73	h	h,h,h,h,h	5/5
+75	i	i,i,i	3/3
+76	g	i	0/1
+86	r	l	0/1
+91	s	m	0/1
+94	n	n	1/1
+100	e	o	0/1
+117	r	r,r	2/2
+118	r	r	1/1
+123	i	r,r	0/2
+124	s	s,s	2/2
+125	s	s,s	2/2
+129	e	s,s	0/2
+130	e	t,t,t	0/3
+131	t	t	1/1
+144	w	w,w	2/2
