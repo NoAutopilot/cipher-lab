@@ -1,0 +1,22 @@
+n_f	4
+n_s	9
+loo_acc	0.615
+null_p95	0.773
+control	FAIL
+target_margin_f_minus_s	-0.4891
+shuffle_margin_2.5	-0.4279
+shuffle_margin_97.5	0.3227
+size_f1	(np.int64(9), np.int64(3))
+size_f2	(np.int64(13), np.int64(12))
+size_f3	(np.int64(14), np.int64(29))
+size_f4	(np.int64(42), np.int64(24))
+size_s1	(np.int64(36), np.int64(24))
+size_s2	(np.int64(5), np.int64(7))
+size_s3	(np.int64(4), np.int64(5))
+size_s4	(np.int64(57), np.int64(43))
+size_s5	(np.int64(13), np.int64(9))
+size_s6	(np.int64(28), np.int64(22))
+size_s7	(np.int64(13), np.int64(8))
+size_s8	(np.int64(28), np.int64(20))
+size_s9	(np.int64(44), np.int64(29))
+size_T	(np.int64(59), np.int64(48))

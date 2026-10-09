@@ -2,6 +2,7 @@
 
 Status: partial
 Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
+(D1162-F19, 9 Oct 2026: f/long-s glyph-template test of the F19 month, pre-registered; its control FAILed twice (0.667, 0.615 vs gate 0.80), untested-by-this-tool, F19 stays febr~?. See "## D1162-F19".)
 (VERIFY-MOD1162, 3 Oct 2026: AUDIT.md -- plaintext of the cipher runs N0, period gloss on the leaf and DECODE doc 3593; the 1168-key finding re-derives and its control holds.)
 (MOD1162, 3 Oct 2026: decode-1168's key read on this letter's cipher groups, gate PASS against a band-shuffled key; the letter's own period gloss gives the plaintext of most groups. See "## MOD1162" below.)
 (DEC1162-ENHANCE, 7 Oct 2026: 22 word crops enhanced, `clear/enhance/`; blind-read known-answer control 2/5 per read against a 4/5 gate, so untested-by-this-tool, no word changed, F19 month still open.)
@@ -688,7 +689,7 @@ a re-tune of this one: a reader of 15th-century Italian chancery hands, or a key
 ## While waiting (9 Oct 2026, WAIT-PASS-5)
 
 Waits on a person's read of the 22 doubtful clear-text words (clear/focus/, 6 Oct 2026) and the g/q split (ASKS 144).
-- Key-constrained check of the F19 month (febr~?, p.2 l.6) against the docket '27 febb^o' (p.1 l.2) and the dating evidence in this file (DEC1162-ENHANCE's named next). S, ~$0.5, disk only
+- Key-constrained check of the F19 month (febr~?, p.2 l.6) against the docket '27 febb^o' (p.1 l.2) and the dating evidence in this file (DEC1162-ENHANCE's named next). S, ~$0.5, disk only -- done D1162-F19 9 Oct 2026: glyph-template control FAIL twice, untested-by-this-tool, F19 unchanged
 
 ## Check-solved refresh (CS-1162, account-4 worker, 9 Oct 2026)
 
@@ -696,3 +697,64 @@ Intake gate FAILed at the start (exit 1) only because later parenthetical notes 
 Freshness pass, 3 web searches (standard mode), 9 Oct 2026: (1) `Beltrame Costabili Esztergom 1492 cifra lettera Eleonora d'Aragona decifrata`; (2) `Modena Archivio di Stato "Ambasciatori Ungheria" busta 2 Costabili 1492 cipher solves Claude OR GPT` (model-solve family); (3) `"Costabili" 1492 Hungary Este envoy cipher letter decipherment Cryptiana OR Cipherbrain OR "Cipher Mysteries"`. No source about a decipherment or plaintext of this letter or any Costabili cipher letter, and no model-solve announcement; hits were the PPKE/Verbum articles and Szakács (already read 24 Sept/3 Oct), Láng *Real Life Cryptology* (2018, not opened, no Costabili in the snippet), MNL page on Caprili's cipher (a different envoy). Not opened this pass: Domokos, Quaderni Estensi 6 (2014), asmo.cultura.gov.it QE6_lavori_domokos.pdf, and Láng's text, as leads for a Costabili/Modena-cipher mention. No decipherment or plaintext of this item located by these queries on 9 Oct 2026.
 prior_work.py (lookup, item-spec): exit 4, the only owed row is this worker's own live claim; tomokiyo/solver-repo rows UNCHECKED for lack of a folio/R-id (not cleared).
 `tools/next_steps.py --wait-only | grep decode-1162`: no line.
+
+## D1162-F19: glyph check of the F19 month (account-4 worker, LANE DEFAULT-account-4-20261009-1340, 9 Oct 2026, 14:48-14:5x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-09-account4-default-1340-jobs.md` "### J18 D1162-F19" (this file's "While waiting" row). Disk only,
+no request to any host. No word of `clear/clear_text.tsv`, no cipher reading, key, grade or gloss changed.
+
+**Pre-registration.** `PREREG-F19.md`, pushed (c7105d89f) before any crop was looked at: slot 1 of the month word (p2_L03 row b) against
+exemplars of **f** and **long s** from settled words of the same main hand, nearest-class-mean NCC on the extracted glyph; control first
+(leave-one-out over the exemplars, gate >= 80% and above the 95th percentile of a 1000-draw label-shuffled null, >= 4 per class); FAIL
+stops the job with F19 left `febr~?`.
+
+**Prior-work step (run late, after the test, disclosed).** `tools/prior_work.py decode-1162-modena-ambung-1492 --item-spec
+'shelfmark=ASMo Amb. Ung. b.2/20;folio=6;date=1492-02-27;sender=Costabili;recipient=Eleonora d Aragona' --step-type read --fetch`:
+exit 4; owed LEAD = CS-1162's target-level claim of 11:25 (its work is the "Check-solved refresh" section above), LOOK = gloss/clear-copy
+check of the leaf (gloss.tsv exists), UNCHECKED = solver caches not searched by unit. None bears on the shape of one clear-text letter,
+and the job changed nothing, but the step should have run before the test.
+
+**Instrument.** `clear/f19/f19_glyph.py` with `clear/f19/exemplars.tsv` (4 f: sforcio, fatti, fatiche, fede; 9 long s: Assaj x2,
+sforcio, se movi, se no, pensiero, sapera, discreto, cusi; boxes placed by eye on 2x ruler views of `images/clear/`, crops committed
+already). Otsu ink, tallest connected component with its x-centre in the box, 16x48, zero-mean unit norm. Output `clear/f19/result.tsv`.
+
+**Control: FAIL twice.**
+
+| run | exemplars | LOO accuracy | null p95 | gate | target score used |
+|---|---|---|---|---|---|
+| 1 (`exemplars_run1.tsv`, `result_run1.tsv`) | 4 f, 8 s (one s not found) | 0.667 | 0.750 | FAIL | no |
+| 2 (one disclosed fix: y bands and x ranges re-placed) | 4 f, 9 s | 0.615 | 0.773 | FAIL | no |
+
+Run 1's component sizes showed the extractor taking 4-13 px fragments of faint strokes, not the letters (sizes in `result_run1.tsv`); one
+fix of the boxes was allowed and re-run; run 2 still extracts fragments (s2, s3, s5, s7, f1 under 15 px tall). Disclosed: run 1 printed the
+target margin before the fix (f minus s -0.60, shuffle band -0.51..0.38); run 2's (-0.49, band -0.43..0.32) is in result.tsv. Neither is
+used: the control is below its gate both times. In this hand the f crossbar is faint or absent on several settled f's (fatiche, fede), so
+f and long s differ by little that a binarised whole-glyph template can see at this crop size.
+
+Verdict: **untested-by-this-tool** (template NCC on binarised glyphs, at this crop resolution). F19 stays `febr~?`.
+
+**Dating evidence, tabulated as context (not votes; PREREG-F19).** Letter's own date line: `27^o febr~? 1491` (the month in question).
+p.1 docket, later hand: `27 febb^o` (a reading of this letter by its docketer, not a separate witness). Archive target strip: `1491 év 02 hó
+27 nap` (a modern reading). DECODE doc 3593 (2020): `Steig. 27 fibr 1491`. Year: 27 Feb 1491 with a 25-March year start is 27 Feb 1492
+modern, three weeks before decode-1168 (20 Mar 1492) and inside busta 2's 1492 run (Vestigia: 16 Jan, 7 Mar, 19 Mar); 27 Sept 1491 would
+fall outside that run. Three readers (docketer, archivist, DOC 3593) against two blind machine passes (R10-DEC1162B, s~tbre/sitre), on one
+word: still a reading question, which this job did not settle.
+
+Suggestion (one line, not done): a palaeographer's read of F19 alongside one dated Costabili letter whose month is not in doubt, or a
+same-hand exemplar of "septembre"/"7bre" from busta 2, would decide it.
+
+## Remaining gaps (D1162-F19, 9 Oct 2026)
+Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 5, U 3); verso has no cipher (DECODE doc 3593 and image 2); 31 g/q tiles built into a sorter page (D2-1162); clear text of both pages transcribed, 42 lines, two blind passes, 29 doubtful words left (R10-DEC1162, R10-DEC1162B); F19 glyph test untested-by-this-tool (D1162-F19)
+- the g/q/sigma shape split (8 signs still '?', M) - blocker: waiting-on ASKS row 144 (the owner's sign sort of sorter/modena-gq-sorter.html); then sign_sorter_apply.py, re-key 1168 with split labels (align/run_align.py), re-run score_g.py and decode_key.py --check here, ~$2
+- the 29 doubtful clear-text words, the signature and the month of the date line - blocker: waiting-on the answer TSV from a person's read of clear/focus/focus-sheet.html (22 cards; built D1-DEC1162F 6 Oct 2026); two machine passes leave them split, the enhanced-read control failed (DEC1162-ENHANCE) and the glyph-template control failed (D1162-F19), so per Usage 6 the next reader is a person or a palaeographer; then apply the answer TSV to clear_text.tsv/doubts_R10B.tsv, ~$0.5
+- code groups `T o` (L01) and `.e.` (L06) - blocker: open-codes; one occurrence each, the L01 gloss is not separable from the letter group's, the L06 sign is unglossed
+
+## Escalation (D1162-F19, 9 Oct 2026)
+- [x] siblings: decode-1168 key applied, gate PASS (G 0.729 vs control p99 0.525; fresh seeds p99 0.525), MOD1162/MOD1162B 3 Oct 2026
+- [x] clear-pages: both pages' clear text transcribed from native crops, two blind passes, R10-DEC1162 and R10-DEC1162B 6 Oct 2026
+- [x] known-keys: decode-1168 key.tsv (period gloss key) is the known key, applied here
+- [x] print: Berzeviczy 1914 checked, letter absent (GF4-BATCH19 3 Oct 2026)
+- [ ] key-rebuild: split g/q into shapes from the owner's sort (sorter/ built D2-1162 5 Oct 2026), then re-key 1168 and re-score here; waits on the sort
+- [x] image-check: full-size p.1 and p.2 re-fetched and cut at native resolution, R10-DEC1162 6 Oct 2026; F19 glyph test D1162-F19 9 Oct 2026 (control FAIL)
+- [n/a] retry: nothing failed that a retry would change
+Verdict: keep going: 1 internal gap; cheapest next: a person's or palaeographer's read of clear/focus/focus-sheet.html (22 cards, F19 among them), then apply its answer TSV (~$0.5); the g/q split waits on ASKS 144

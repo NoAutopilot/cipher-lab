@@ -1,0 +1,15 @@
+id	class	crop	y0	y1	x0	x1	word
+f1	f	p1_L13	15	110	318	345	sforcio (f)
+f2	f	p1_L13	15	110	728	760	fatti
+f3	f	p2_L01	0	80	1262	1295	fatiche
+f4	f	p2_L02	0	80	872	900	fede
+s1	s	p1_L13	15	110	108	126	Assaj (s1)
+s2	s	p1_L13	15	110	122	140	Assaj (s2)
+s3	s	p1_L13	15	110	302	322	sforcio (s)
+s4	s	p2_L01	0	80	433	455	se movi
+s5	s	p2_L01	0	80	627	650	se no
+s6	s	p2_L01	0	80	1012	1036	pensiero
+s7	s	p2_L01	70	150	992	1015	sapera
+s8	s	p2_L02	0	80	1245	1268	discreto
+s9	s	p2_L02	70	148	1520	1540	cusi
+T	?	p2_L03	90	188	160	200	month slot 1 (F19)
