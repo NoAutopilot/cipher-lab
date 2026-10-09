@@ -149,3 +149,26 @@ target judge score minus the control's mean at the same N/err; gate stated befor
 target on this statistic (rule 3). Note rule 3's third-attempt clause: if this is the third run of the same family with only one knob changed and it
 fails, log the family "untested-by-this-tool at this N" and retire it, not a fourth tuning. HYPOTHESES rows with both numbers, NOTES "LAG-RESCORE
 (9 Oct 2026)", Remaining gaps/Escalation, gaps_check. CPU, ~$2.5.
+
+## Wave 4 (05:1x UTC 9 Oct)
+Hosts: archiv.sachsen.de ("sachsen") MANT-0454 only. V-MANT0136 disk + print/edition searches (one worker per host; IA/Google Books one at a time).
+
+### V-MANT0136 (Opus verifier, cap 4, box 80 min): sachsstaatsarchiv-manteuffel-1712, first audit of the 694/09 0136 reading
+Separate session from the solvers (MANT-0136, MANT-R07); do not protect their conclusions. CLAUDE.md "Verifier brief (template)" steps 1-5 in full
+(with .claude/briefs/prior-work-step.md step type `audit`, and check 5 / G3 on the decoded phrases: same-day replies, other correspondents' versions
+of the same news, the press of the day, e.g. Mercure historique et politique / Europäische Fama Apr 1713), plus depth per
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md (rule 4a; tools/depth_check.py). Audit the design too: PREREG-MANT-0136 and -A1 committed before
+their scores (git log order); gate (b)'s permuted-key control CAN differ from the target; the power control at the target's N; the S grade is the
+PREREG's mechanical grade, not per-token certification -- say what fraction of S tokens sit in stretches that read. Re-run every --check. Write
+AUDIT.md "## AUDIT (V-MANT0136)" with N-class, depth, key source (period: Krauske's 1893 table of the period key = `published`/`period` as the
+record supports), safe and unsafe sentence; update status.json per rule 10/4a fields; if N3+ and D2+, append the SECOND-OPINIONS-QUEUE.tsv row and
+a WORK-QUEUE row `AUD2-FAMILY-1` for account-3 (second audit). Rule 10 wording only. ~$3.5.
+
+### MANT-0454 (Opus, cap 5.5, box 110 min): sachsstaatsarchiv-manteuffel-1712, Loc. 694/08 frame 0454 as a reading leaf
+NOTES "MANT-INV08 (9 Oct 2026)" (mant0608/rank_unglossed_08.tsv: 0454 est 60-75 tokens, repeated 11-code run, unglossed or partly glossed).
+Method exactly as MANT-0136 + MANT-R07 (f0136_09/ design): prior-work tool + checks 1-4 first (leaf, neighbours from mant0608/ inventory, the
+document's date/sender from the frame, editions named in the check-solved verdict); PREREG-MANT-0454.md committed BEFORE any score -- gate (a) on any
+glossed run (blind gloss passes, two), gate (b) fr18 permuted-key with the power control subsampled to this leaf's letter count; "sachsen take",
+ONE GET, release; crops committed f0454_08/crops/; two blind Sonnet code passes + (if any gloss) two blind gloss passes, reconciliation one more
+unit; grades per token; check 5 (print_check.py) after decode. NOTES "MANT-0454 (9 Oct 2026)", gaps_check. ~$5. Report what was found and where it
+was not found; do not classify novelty.
