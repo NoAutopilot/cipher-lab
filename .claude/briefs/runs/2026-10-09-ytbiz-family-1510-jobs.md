@@ -146,3 +146,6 @@ As MANT-CEN2/CEN3; append to inv08f.tsv (or inv08g.tsv). That closes the 694/08 
 
 ### HEIN-SR5 (Sonnet, cap 1.2, box 45 min, huygens take/release): heinsius-vanhaersolte-1703, small_runs Deel 2 pp.492-600 (end of Deel 2)
 As HEIN-SR3/SR4. Update the folder's Remaining gaps / Verdict to say Deel 2 is scanned end to end; gaps_check.
+
+Sessions wave 3 (16:27 UTC): MANT-UNG session_01PSQmddUoC3jS12ByGvei56 (Opus); MANT-XTR session_01CoXNN6JxZwohz736UHaTFD (Opus); MANT-CEN4
+session_019XhbjpXJqZqcPNznsX7Ao4 (Sonnet); HEIN-SR5 session_01N6t9DEP6T8fFWxwm5M1LZ5 (Sonnet).
