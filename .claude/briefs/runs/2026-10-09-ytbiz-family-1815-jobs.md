@@ -135,3 +135,6 @@ number, one ROOM line and stop. Otherwise as MANT-0490 (PREREG before scoring, g
 Prefer the UNGLOSSED code groups as the reading target: report glossed and unglossed tokens separately, and give the unglossed span its own
 pre-registered gate (judge at its length with power reported, as MANT-0490L's gutter gate). ~$4.5. Report what was found and where it was not
 found; do not classify novelty.
+
+Sessions wave 3 (18:57 UTC): FIX-YEYE session_01AWL8VfLbJrUDE8CU3Erybd (Opus); MANT-0503 session_01J3MN194KgtMmcuKtNWCFwt (Opus). MANT-YCEN,
+V-MANT16S, MANT-0490L archived. Still running from wave 2: V-MANT0490, MANT-0317, MANT-0310.
