@@ -31,7 +31,7 @@ BENCHMARK-TX.tsv was opened or edited. passZ_pipeline.tsv was opened only by tx_
 | 3 pass A (parts e02061916) | 90adbec3c | passA.tsv | 357d44e9a964d5eef7f16f9c06498284a424c964fcd7f54f2aa7b6fd97c5571a |
 | 3 pass B (part 54c28f74f) | 9e664697a | passB.tsv | c939595fea5ffe7c0756a6a545762112da111fc3a7063a0e0a3227d8ec114ca2 |
 | 4 reconcile + queue + packets | a6160f9ec | SHA256SUMS_packets.txt | (per file in that list) |
-| 4 adjudication P04 + make_passZ.py | (P04 commit) | packets/P04_out.tsv | 9f6c9cdb685a04653f279efdf655daa2568dc2b65dacd9ba123aa8a486f0ceb4 |
+| 4 adjudication P04 + make_passZ.py | 73f1ea94a | packets/P04_out.tsv | 9f6c9cdb685a04653f279efdf655daa2568dc2b65dacd9ba123aa8a486f0ceb4 |
 | 4 adjudication P01-P03 + passZ | a01f061f7 | adjud_out.tsv | 0b37d85af66859021b34ad2c6a28055c6caf7bb40f3419f88f035934b1f2c16f |
 | 4 output | a01f061f7 | benchmark-tx/outputs/gunther8246-p2/passZ_gv2.tsv | a9a11b91d14b4a438e592b39dcfb0404ecc941e9a7f22720b0448dd67199df43 |
 Part and packet sha256s: parts/SHA256SUMS_parts.txt, SHA256SUMS_passes.txt, SHA256SUMS_packets.txt, SHA256SUMS_adjud.txt.
