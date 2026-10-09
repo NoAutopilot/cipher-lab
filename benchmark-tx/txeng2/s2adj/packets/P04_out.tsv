@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f103r_L06	41	s	M	yes	short s before jmg
+f103r_L06	50	s	M	yes	short s before cgd
+f103r_L07	8	:	M	yes	single dot between tz and z
+f103r_L07	11	e	L	yes	e-like with tail before d
+f103r_L07	19	{loop}	L	yes	looped sign after m
+f103r_L07	28	R	M	yes	looped r
+f103r_L07	32	k	M	yes	ascender with loop k
+f103r_L07	35	s	L	yes	short s after A
+f103r_L07	40	s	M	yes	short s after p
+f103r_L07	54	S	L	yes	tall stroke before d tz
+f103r_L08	2	s	M	yes	short s after 6
+f103r_L08	6	b	M	yes	b with bowl
+f103r_L08	12	S	M	yes	tall long s before tzmg
+f103r_L08	16	s	L	yes	small s after mg
+f103r_L08	17	y	M	yes	lead-in swash y
+f103r_L08	23	tz	L	yes	t with descender before doo

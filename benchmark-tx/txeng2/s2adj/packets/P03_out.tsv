@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f103r_L04	44	3	M	yes	round-topped descender
+f103r_L04	45	s	L	yes	short s before p
+f103r_L04	54	V	L	yes	long stroke before #
+f103r_L05	9	d	L	yes	round body with ascender
+f103r_L05	20	s	L	yes	short s after #
+f103r_L05	22	c	L	yes	open small round
+f103r_L05	27	S	L	yes	tall stroke before oo
+f103r_L05	30	V	M	yes	backslash stroke at overlap
+f103r_L05	52	s	L	yes	short s before tz
+f103r_L05	57	NONE	L	yes	no clear extra sign
+f103r_L05	59	NONE	L	yes	line ends at g
+f103r_L06	22	a	M	yes	a with left flourish
+f103r_L06	27	k	L	yes	loop with ascender
+f103r_L06	33	R	L	yes	r-like looped sign
+f103r_L06	36	S	L	yes	tall stroke
+f103r_L06	38	V	L	yes	backslash stroke

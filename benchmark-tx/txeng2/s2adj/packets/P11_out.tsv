@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f103r_L25	41	c	M	yes	small open c before m o o
+f103r_L26	30	c	M	yes	open c after the dots
+f103r_L26	31	m	L	yes	three humps after c, not a looped a
+f103r_L26	35	{crossed x}	L	yes	x with strike through it
+f103r_L26	51	3	M	yes	round-topped with descender
+f103r_L28	6	g	M	yes	closed bowl with tail after o o
+f103r_L28	9	z	M	yes	flat-topped z, no t
+f103r_L28	29	g	L	yes	bowl with tail after s
+f103r_L28	32	y	L	yes	swash with lead-in stroke
+f103r_L28	40	g	M	yes	g after the hash
+f103r_L28	42	z	L	yes	flat-topped z after m
+f103r_L28	47	y	M	yes	long swash y before d
+f103r_L29	21	g	M	yes	g after d o o
+f103r_L29	39	g	L	yes	g after d, before hash
+f103r_L29	45	g	L	yes	g-like with curl between m signs
+f103r_L29	47	tz	L	yes	t-like stroke before d

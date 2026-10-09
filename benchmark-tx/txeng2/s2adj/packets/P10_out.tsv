@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f103r_L22	23	x	M	yes	crossing strokes like x after m, not z/2
+f103r_L23	2	s	M	yes	short s after the g-like start
+f103r_L23	37	NONE	M	yes	nothing between m and to
+f103r_L23	38	to	M	yes	t joined to loop before #
+f103r_L23	50	{theta}	M	yes	circle with bar
+f103r_L24	1	c	M	yes	small c-like opening sign
+f103r_L24	24	{curl}	M	yes	large curl before m
+f103r_L24	26	x	M	yes	x-like between m signs
+f103r_L24	29	{crossed-x}	M	yes	x with extra crossing stroke
+f103r_L24	39	NONE	L	yes	no separate y seen between o o d and tz
+f103r_L24	46	P	M	yes	two uprights with top bar after z
+f103r_L25	7	{et-ligature}	H	yes	et-like ligature
+f103r_L25	8	f	M	yes	crossbar f after ligature
+f103r_L25	10	{hook-loop}	M	yes	hooked loop sign before m o o
+f103r_L25	16	z	M	yes	flat-topped z after m
+f103r_L25	40	{crossed Z}	M	yes	large Z with crossbar before c m o

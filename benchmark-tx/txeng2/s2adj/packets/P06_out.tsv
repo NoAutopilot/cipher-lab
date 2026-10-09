@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f103r_L11	54	y	M	yes	swash-tailed y after R-like sign
+f103r_L12	3	{curl}	M	yes	large loop at line start before m
+f103r_L12	4	m	M	yes	three-hump m after loop
+f103r_L12	5	2	H	yes	digit 2 shape
+f103r_L12	7	{dot}	M	yes	small dot after tz
+f103r_L12	8	V	M	yes	long lead-in swash stroke
+f103r_L12	18	s	M	yes	short s after g, no long descender
+f103r_L12	28	V	L	yes	swash stroke before y
+f103r_L12	30	o	M	yes	round body before s
+f103r_L12	39	s	M	yes	short s between a and #
+f103r_L12	44	3	M	yes	round-topped 3 with descender
+f103r_L13	1	{curl}	M	yes	big curl at line start
+f103r_L13	2	m	M	yes	m after curl
+f103r_L13	3	2	H	yes	digit 2
+f103r_L13	5	{struck_sign}	L	yes	scribbled struck-out sign
+f103r_L13	7	V	M	yes	swash stroke before n

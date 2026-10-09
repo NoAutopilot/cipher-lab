@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f103r_L01	19	s	M	yes	short s no long descender
+f103r_L01	20	z	M	yes	flat-topped z-like
+f103r_L01	23	n	M	yes	two humps after p
+f103r_L01	32	s	M	yes	short s after A
+f103r_L01	42	s	M	yes	small s before g
+f103r_L02	8	r	M	yes	r-like stroke before 6
+f103r_L02	10	h	M	yes	h with loop ascender
+f103r_L02	20	V	M	yes	backslash stroke after oo
+f103r_L02	25	s	M	yes	short s
+f103r_L02	34	NONE	L	yes	no clear extra sign
+f103r_L02	36	c	M	yes	small c shape
+f103r_L02	43	3	M	yes	round-topped 3 before m
+f103r_L03	5	s	M	yes	short s
+f103r_L03	11	f	M	yes	crossbar f after S
+f103r_L03	12	P	L	yes	pi-like uprights with bar
+f103r_L03	13	S	M	yes	tall long s before tz

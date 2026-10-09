@@ -1,0 +1,209 @@
+line	col	packet	A	B	verdict	class	conf	viewed	note
+f103r_L01	19	P01	S	s	s	B	M	yes	short s no long descender
+f103r_L01	20	P01	3	z	z	B	M	yes	flat-topped z-like
+f103r_L01	23	P01	n	R	n	A	M	yes	two humps after p
+f103r_L01	32	P01	S	s	s	B	M	yes	short s after A
+f103r_L01	42	P01	S	s	s	B	M	yes	small s before g
+f103r_L02	8	P01	r	z	r	A	M	yes	r-like stroke before 6
+f103r_L02	10	P01	h	k	h	A	M	yes	h with loop ascender
+f103r_L02	20	P01	V	{hook}	V	A	M	yes	backslash stroke after oo
+f103r_L02	25	P01	S	s	s	B	M	yes	short s
+f103r_L02	34	P01	-	x	NONE	NONE	L	yes	no clear extra sign
+f103r_L02	36	P01	c	{v}	c	A	M	yes	small c shape
+f103r_L02	43	P01	3	2	3	A	M	yes	round-topped 3 before m
+f103r_L03	5	P01	S	s	s	B	M	yes	short s
+f103r_L03	11	P01	-	f	f	B	M	yes	crossbar f after S
+f103r_L03	12	P01	P	f	P	A	L	yes	pi-like uprights with bar
+f103r_L03	13	P01	S	s	S	A	M	yes	tall long s before tz
+f103r_L03	20	P02	d	S	d	A	M	yes	round body curled ascender
+f103r_L03	23	P02	S	s	s	B	M	yes	short s before oo
+f103r_L03	30	P02	S	s	s	B	M	yes	short s before g #
+f103r_L03	36	P02	S	s	s	B	L	yes	small s after V
+f103r_L03	42	P02	n	R	R	B	M	yes	loopy r-like after p
+f103r_L03	52	P02	-	o	o	B	M	yes	small o after y
+f103r_L03	56	P02	S	s	s	B	M	yes	short s before g #
+f103r_L04	2	P02	p	-	p	A	L	yes	descender stroke after Z swash
+f103r_L04	8	P02	-	f	f	B	M	yes	first of two crossbar f
+f103r_L04	9	P02	P	f	f	B	M	yes	second crossbar f
+f103r_L04	16	P02	{2}	z	2	other	L	yes	flat-ish z/2 shape between n and y
+f103r_L04	23	P02	-	tz	tz	B	M	yes	t-z joined after a
+f103r_L04	24	P02	-	m	m	B	M	yes	humps after tz
+f103r_L04	25	P02	-	#	#	B	M	yes	double-crossed after m
+f103r_L04	33	P02	c	e	e	B	L	yes	small open round before l
+f103r_L04	34	P02	L	l	L	A	L	yes	looped l form
+f103r_L04	44	P03	3	2	3	A	M	yes	round-topped descender
+f103r_L04	45	P03	S	s	s	B	L	yes	short s before p
+f103r_L04	54	P03	V	b	V	A	L	yes	long stroke before #
+f103r_L05	9	P03	d	-	d	A	L	yes	round body with ascender
+f103r_L05	20	P03	S	s	s	B	L	yes	short s after #
+f103r_L05	22	P03	c	e	c	A	L	yes	open small round
+f103r_L05	27	P03	S	s	S	A	L	yes	tall stroke before oo
+f103r_L05	30	P03	{hook}	V	V	B	M	yes	backslash stroke at overlap
+f103r_L05	52	P03	S	s	s	B	L	yes	short s before tz
+f103r_L05	57	P03	-	s	NONE	NONE	L	yes	no clear extra sign
+f103r_L05	59	P03	3	-	NONE	NONE	L	yes	line ends at g
+f103r_L06	22	P03	a	d	a	A	M	yes	a with left flourish
+f103r_L06	27	P03	h	k	k	B	L	yes	loop with ascender
+f103r_L06	33	P03	n	R	R	B	L	yes	r-like looped sign
+f103r_L06	36	P03	S	s	S	A	L	yes	tall stroke
+f103r_L06	38	P03	V	o	V	A	L	yes	backslash stroke
+f103r_L06	41	P04	S	s	s	B	M	yes	short s before jmg
+f103r_L06	50	P04	S	s	s	B	M	yes	short s before cgd
+f103r_L07	8	P04	-	:	:	B	M	yes	single dot between tz and z
+f103r_L07	11	P04	e	3	e	A	L	yes	e-like with tail before d
+f103r_L07	19	P04	{loop}	8	{loop}	A	L	yes	looped sign after m
+f103r_L07	28	P04	r	R	R	B	M	yes	looped r
+f103r_L07	32	P04	h	k	k	B	M	yes	ascender with loop k
+f103r_L07	35	P04	S	s	s	B	L	yes	short s after A
+f103r_L07	40	P04	S	s	s	B	M	yes	short s after p
+f103r_L07	54	P04	S	s	S	A	L	yes	tall stroke before d tz
+f103r_L08	2	P04	S	s	s	B	M	yes	short s after 6
+f103r_L08	6	P04	b	8	b	A	M	yes	b with bowl
+f103r_L08	12	P04	S	s	S	A	M	yes	tall long s before tzmg
+f103r_L08	16	P04	S	-	s	other	L	yes	small s after mg
+f103r_L08	17	P04	y	s	y	A	M	yes	lead-in swash y
+f103r_L08	23	P04	tz	g	tz	A	L	yes	t with descender before doo
+f103r_L08	36	P05	S	s	s	B	L	yes	short s before g, no clear long descender
+f103r_L08	38	P05	n	R	R	B	M	yes	looped r-like R before mx
+f103r_L08	42	P05	S	s	s	B	L	yes	short s before g, like col 36
+f103r_L09	24	P05	-	b	b	B	L	yes	small b-like stroke after V before tz
+f103r_L09	44	P05	:	{curl}	{curl}	B	M	yes	curl stroke between x and m
+f103r_L10	21	P05	e	c	e	A	L	yes	loop-topped e-like before doo
+f103r_L10	44	P05	S	s	S	A	L	yes	tall s after mj
+f103r_L10	54	P05	S	s	s	B	L	yes	small s between p R p and p d
+f103r_L11	1	P05	3	z	3	A	M	yes	round-topped 3 with descender
+f103r_L11	3	P05	-	{curl}	{curl}	B	M	yes	large open curl before m
+f103r_L11	4	P05	{curled_m}	m	m	B	L	yes	m after separate curl
+f103r_L11	6	P05	2	-	2	A	M	yes	2 between x and m
+f103r_L11	8	P05	6	b	6	A	M	yes	6-like loop before to
+f103r_L11	14	P05	-	a	a	B	M	yes	small a after pi sign
+f103r_L11	22	P05	V	-	NONE	NONE	L	yes	slash looks like lead-in stroke of y
+f103r_L11	53	P05	r	e	e	B	L	yes	loop-topped e-like after d
+f103r_L11	54	P06	y	n	y	A	M	yes	swash-tailed y after R-like sign
+f103r_L12	3	P06	-	{curl}	{curl}	B	M	yes	large loop at line start before m
+f103r_L12	4	P06	{curled_m}	m	m	B	M	yes	three-hump m after loop
+f103r_L12	5	P06	2	x	2	A	H	yes	digit 2 shape
+f103r_L12	7	P06	{dot}	-	{dot}	A	M	yes	small dot after tz
+f103r_L12	8	P06	V	y	V	A	M	yes	long lead-in swash stroke
+f103r_L12	18	P06	S	s	s	B	M	yes	short s after g, no long descender
+f103r_L12	28	P06	V	-	V	A	L	yes	swash stroke before y
+f103r_L12	30	P06	o	y	o	A	M	yes	round body before s
+f103r_L12	39	P06	S	s	s	B	M	yes	short s between a and #
+f103r_L12	44	P06	3	z	3	A	M	yes	round-topped 3 with descender
+f103r_L13	1	P06	-	{curl}	{curl}	B	M	yes	big curl at line start
+f103r_L13	2	P06	{curled_m}	m	m	B	M	yes	m after curl
+f103r_L13	3	P06	2	x	2	A	H	yes	digit 2
+f103r_L13	5	P06	{struck_sign}	{struck}	{struck_sign}	A	L	yes	scribbled struck-out sign
+f103r_L13	7	P06	V	-	V	A	M	yes	swash stroke before n
+f103r_L13	8	P07	n	y	n	A	M	yes	two humps after H-like struck sign
+f103r_L13	11	P07	{apostrophe}	-	{apostrophe}	A	M	yes	small tick after 3
+f103r_L13	13	P07	L	z	z	B	M	yes	flat-topped z with tail
+f103r_L13	38	P07	3	z	z	B	M	yes	flat top z after R
+f103r_L13	40	P07	o	-	o	A	L	yes	round o after m, three o-like forms
+f103r_L13	47	P07	{dot}	-	{dot}	A	M	yes	small dot after g
+f103r_L14	13	P07	e	c	c	B	M	yes	open round body no loop
+f103r_L14	31	P07	y	n	n	B	M	yes	two humps after e
+f103r_L14	42	P07	e	o	o	B	M	yes	round closed body before y
+f103r_L14	51	P07	y	n	n	B	M	yes	two humps after e
+f103r_L15	3	P07	2	z	z	B	L	yes	flat top with tail
+f103r_L15	23	P07	-	y	y	B	L	yes	swash y after @ flourish
+f103r_L15	36	P07	-	z	z	B	M	yes	z shape before curl
+f103r_L15	37	P07	x	{curl}	{curl}	B	M	yes	open curl stroke before m
+f103r_L15	38	P07	{curled_m}	m	m	B	M	yes	three humps
+f103r_L15	45	P07	V	y	y	B	M	yes	lead-in swash y after s
+f103r_L15	48	P08	2	z	z	B	M	yes	flat-topped z-like before tz
+f103r_L16	4	P08	g	y	y	B	L	yes	swash y/f-like sign after 4 m p
+f103r_L16	9	P08	k	R	k	A	M	yes	k with loop after p
+f103r_L16	10	P08	3	z	3	A	M	yes	round-topped descender sign
+f103r_L16	18	P08	-	y	y	B	M	yes	y swash after V
+f103r_L16	23	P08	g	y	g	A	M	yes	g-like after oo
+f103r_L16	26	P08	S	s	s	B	L	yes	short s before tz
+f103r_L16	47	P08	S	s	s	B	L	yes	short s before z d m
+f103r_L17	16	P08	-	tz	NONE	NONE	M	yes	only # seen after m m
+f103r_L17	36	P08	g	{t-like}	{t-like}	B	M	yes	t-like crossed sign after p g
+f103r_L17	52	P08	2	z	z	B	L	yes	z/2 like sign before m 6
+f103r_L18	12	P08	-	d	d	B	M	yes	large swash d after k g m
+f103r_L18	13	P08	y	o	o	B	M	yes	round o before m @
+f103r_L18	22	P08	8	g	8	A	M	yes	8-like double loop after p
+f103r_L18	29	P08	-	tz	NONE	NONE	M	yes	only # seen after a m m
+f103r_L18	34	P08	2	z	z	B	L	yes	z-like before S s y
+f103r_L18	37	P09	y	d	y	A	M	yes	long swash after z S s
+f103r_L18	39	P09	h	k	h	A	M	yes	looped ascender then hump
+f103r_L18	44	P09	h	k	k	B	L	yes	ascender with loop, before m d
+f103r_L18	49	P09	y	o	y	A	M	yes	swash after d :
+f103r_L18	51	P09	h	k	h	A	L	yes	ascender then hump before oo
+f103r_L19	1	P09	-	{curl}	{curl}	B	M	yes	opening curl before m
+f103r_L19	3	P09	2	z	2	A	L	yes	small 2-like after m
+f103r_L19	12	P09	y	g	g	B	M	yes	descender loop in m x m g s
+f103r_L19	34	P09	s	S	s	A	L	yes	short s-like between 4 and g
+f103r_L20	33	P09	-	o	NONE	NONE	L	yes	no clear extra sign between y and s
+f103r_L21	45	P09	-	{curl}	{curl}	B	M	yes	curl before m 2 m
+f103r_L21	47	P09	2	z	2	A	M	yes	2-like after curl m
+f103r_L21	49	P09	c	{u}	c	A	L	yes	small open c before s g
+f103r_L22	6	P09	s	S	s	A	M	yes	short s between g g and p
+f103r_L22	18	P09	y	-	NONE	NONE	L	yes	no clear sign after V
+f103r_L22	21	P09	-	{curl}	{curl}	B	M	yes	curl before m 2 m
+f103r_L22	23	P10	2	z	x	other	M	yes	crossing strokes like x after m, not z/2
+f103r_L23	2	P10	s	S	s	A	M	yes	short s after the g-like start
+f103r_L23	37	P10	-	2	NONE	NONE	M	yes	nothing between m and to
+f103r_L23	38	P10	to	o	to	A	M	yes	t joined to loop before #
+f103r_L23	50	P10	@	{theta}	{theta}	B	M	yes	circle with bar
+f103r_L24	1	P10	c	{u}	c	A	M	yes	small c-like opening sign
+f103r_L24	24	P10	-	{curl}	{curl}	B	M	yes	large curl before m
+f103r_L24	26	P10	2	z	x	other	M	yes	x-like between m signs
+f103r_L24	29	P10	{crossed-x}	{crossed x}	{crossed-x}	A	M	yes	x with extra crossing stroke
+f103r_L24	39	P10	y	-	NONE	NONE	L	yes	no separate y seen between o o d and tz
+f103r_L24	46	P10	2	x	P	other	M	yes	two uprights with top bar after z
+f103r_L25	7	P10	{et-ligature}	{et ligature}	{et-ligature}	A	H	yes	et-like ligature
+f103r_L25	8	P10	tz	f	f	B	M	yes	crossbar f after ligature
+f103r_L25	10	P10	{hook-loop}	d	{hook-loop}	A	M	yes	hooked loop sign before m o o
+f103r_L25	16	P10	z	tz	z	A	M	yes	flat-topped z after m
+f103r_L25	40	P10	{crossed Z}	tz	{crossed Z}	A	M	yes	large Z with crossbar before c m o
+f103r_L25	41	P11	c	o	c	A	M	yes	small open c before m o o
+f103r_L26	30	P11	c	-	c	A	M	yes	open c after the dots
+f103r_L26	31	P11	m	@	m	A	L	yes	three humps after c, not a looped a
+f103r_L26	35	P11	{crossed X}	{crossed x}	{crossed x}	B	L	yes	x with strike through it
+f103r_L26	51	P11	3	tz	3	A	M	yes	round-topped with descender
+f103r_L28	6	P11	g	y	g	A	M	yes	closed bowl with tail after o o
+f103r_L28	9	P11	z	tz	z	A	M	yes	flat-topped z, no t
+f103r_L28	29	P11	g	y	g	A	L	yes	bowl with tail after s
+f103r_L28	32	P11	g	y	y	B	L	yes	swash with lead-in stroke
+f103r_L28	40	P11	g	y	g	A	M	yes	g after the hash
+f103r_L28	42	P11	z	tz	z	A	L	yes	flat-topped z after m
+f103r_L28	47	P11	g	y	y	B	M	yes	long swash y before d
+f103r_L29	21	P11	g	y	g	A	M	yes	g after d o o
+f103r_L29	39	P11	g	y	g	A	L	yes	g after d, before hash
+f103r_L29	45	P11	g	y	g	A	L	yes	g-like with curl between m signs
+f103r_L29	47	P11	z	tz	tz	B	L	yes	t-like stroke before d
+f103r_L30	18	P12	g	y	g	A	L	yes	g-like with flourish after m
+f103r_L30	21	P12	x	2	2	B	M	yes	digit-2 shape between to and tz
+f103r_L30	27	P12	{crossed Z}	tz	{crossed Z}	A	M	yes	Z with bar after #
+f103r_L30	28	P12	c	a	c	A	L	yes	small open c before m g
+f103r_L31	10	P12	g	y	g	A	L	yes	g with swash after m
+f103r_L31	17	P12	z	tz	z	A	L	yes	flat-topped z between m
+f103r_L31	22	P12	g	-	g	A	L	yes	g near overlap, unclear
+f103r_L31	23	P12	d	y	d	A	L	yes	round body, small ascender
+f103r_L31	24	P12	g	e	g	A	L	yes	g-like descender
+f103r_L31	27	P12	p	x	p	A	L	yes	p with descender
+f103r_L31	29	P12	g	e	g	A	L	yes	g-like
+f103r_L31	36	P12	{crossed Z}	tz	{crossed Z}	A	L	yes	barred Z before c m g
+f103r_L31	37	P12	c	o	c	A	L	yes	open c
+f103r_L32	5	P12	g	y	g	A	L	yes	g after d o o
+f103r_L32	27	P12	g	y	y	B	L	yes	swash y after p m
+f103r_L32	46	P12	c	-	c	A	M	yes	c-like before m x m
+f103r_L32	47	P13	m	@	m	A	L	yes	curl-m cluster before x m d; unclear if loop belongs to the sign
+f103r_L33	19	P13	{loop}	{reverse c}	{loop}	A	M	yes	big closed curl after z S before m a g
+f103r_L33	25	P13	-	f	NONE	NONE	M	yes	only z tail flourish before V; no separate f
+f103r_L35	6	P13	g	y	y	B	M	yes	swash descender after m, before d
+f103r_L35	14	P13	{cross}	4	4	B	L	yes	small crossed 4-like stroke between m and m
+f103r_L35	32	P13	{i}	j	j	B	L	yes	dotted i with descender before p k p
+f103r_L35	42	P13	3	z	z	B	L	yes	flat-ish z with tail before o o k
+f103r_L36	1	P13	e	c	c	B	L	yes	small open c-like first sign
+f103r_L36	17	P13	-	o	o	B	L	yes	round o after d, before o/y run
+f103r_L36	19	P13	g	y	y	B	M	yes	long y swash with lead-in before x
+f103r_L36	37	P13	S	j	S	A	L	yes	tall descending stroke, no crossbar
+f103r_L36	46	P13	x	r	x	A	L	yes	x-like cross after m, before m d #
+f103r_L37	2	P13	o	-	o	A	L	yes	small round o after y
+f103r_L37	14	P13	{loop}	{reverse c}	{reverse c}	B	L	yes	open reverse-c curl before o m
+f103r_L37	42	P13	{loop}	y	y	B	M	yes	swash y shape after m
+f103r_L37	47	P13	#	{crossed X}	{crossed X}	B	L	yes	crossed X-like final flourish after #
