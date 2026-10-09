@@ -1013,6 +1013,8 @@ of each frame before reading it**; its Nr. 64, 72, 82-83, 91-93 extracts cover J
 "V-MANTR8"; the solver's own section is left as written. Requests this audit: books.google.com 34, resources.huygens.knaw.nl 6,
 archive.org 3 (one 404); no 403/429/challenge.
 
+9 Oct 2026 (MANT-EYE, LANE FAMILY-A2d account 2): eye check on crops done (NOTES "MANT-EYE"). 0214: every token matches ciphertext.tsv (blind Sonnet pass + eye), 110.297 stays U. 0375 r3 token 3 read 51 (low; was 57): Eosand run 35.16.51.66.14.100, letter s C -> s|sa M, first-alternative string unchanged; --check exit 0; pooled gate rerun with the same seeds 7/1000 -> 5/1000, PASS unchanged; frame 0375 223 -> 219/1000. N-classes and depth above not re-assessed by this worker.
+
 ## AUDIT 2 (AUD2-MANTR8)
 
 Verifier AUD2-MANTR8 (account 3, LANE-VERIFY-4, session_018nvXsMuGuSPqhPgZGoWDnr), 8 Oct 2026, 23:39-23:5x UTC by `date -u`. Second
@@ -1103,3 +1105,5 @@ NOTES V-MANTR8 is an identification that Stettin rivals; it should be written "S
 www.archiv.sachsen.de 2; be-api.us.archive.org fts 29; archive.org 7 (metadata 5, djvu 2, one 404 on a guessed name); api.openalex.org 8;
 googleapis.com 11 (all 429); library.oapen.org 1 + 3 browser (403/403/429); brill.com 1 (403). Stopped at each block, no loops beyond
 one retry.
+
+9 Oct 2026 (MANT-EYE, LANE FAMILY-A2d account 2): eye check on crops done (NOTES "MANT-EYE"). 0214: every token matches ciphertext.tsv (blind Sonnet pass + eye), 110.297 stays U. 0375 r3 token 3 read 51 (low; was 57): Eosand run 35.16.51.66.14.100, letter s C -> s|sa M, first-alternative string unchanged; --check exit 0; pooled gate rerun with the same seeds 7/1000 -> 5/1000, PASS unchanged; frame 0375 223 -> 219/1000. N-classes and depth above not re-assessed by this worker.

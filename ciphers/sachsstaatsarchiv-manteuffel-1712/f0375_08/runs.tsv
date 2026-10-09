@@ -1,7 +1,7 @@
 line	codes	conf	note
 694-08_0375_r1	66.60.21.33.12.120	med	line start ... 'a 51.28' (A high; B 33 alt 35)
 694-08_0375_r2	51.28	med	'a' ... ', et'
-694-08_0375_r3	35.16.57.66.14.100	med	'et' ... 'au'; 57 alt 51, 14 alt 11 (both passes)
+694-08_0375_r3	35.16.51.66.14.100	low	'et' ... 'au'; MANT-EYE (9 Oct 2026) native eye + blind pass: 51 (no top bar, as 51 in r2; was 57), 14 alt 74 (blind)
 694-08_0375_r4	187	low	'au' ... 'l'on'; 187 on zoom (B alt 107, A alt 184/181)
 694-08_0375_r5	177	med	'(cours) contre 177; mais que nous restions'
 694-08_0375_r6	35	med	'a l'egard de 35, la notre je l'avoue'
