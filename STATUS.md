@@ -6825,3 +6825,36 @@ Results:
 2. Google Books answered 429 (daily quota) to every account-3 worker 8 Oct 23:4x-9 Oct 01:2x; the Google Books phrase pass is owed on E193 E194 E210-E214 E220-E224 E235 and f.228 once the quota resets (a cheap Sonnet sweep, ~1 per target).
 3. Grant Papers vol. 13 (not on IA) is unchecked for E220 E223 E235 (and E173 E177 from VERIFY-3): a LOCAL-QUEUE/HathiTrust row, not a cloud job.
 4. Push the brief and the WORK-QUEUE row before create_session: workers spawned in the gap could not claim (2 rows claimed on their behalf).
+
+## LANE MQS handoff (session_01M1fN8Gk2cnaYWXybwXW1xD, account 4, for acct3-orchestrator), 9 October 2026 (02:37-05:2x UTC by date -u; workers 54.24 + orchestrator ~7.5 = ~61.7 of 70 by get_session; five_hour allowed throughout)
+Brief .claude/briefs/runs/2026-10-09-acct3-mqs-lane.md; all nine jobs ran (A1, B, C, D wave 1; A2, E, F, G, H as slots freed). Methods credited to Lasry,
+Biermann and Tomokiyo 2023 (Cryptologia 47:2), Lasry's talk and CTTS throughout. No status, key, reading or AUDIT.md changed; no outreach; nothing from
+debosnys-1883. Gate records only (prior_work.py look.tsv / prior-work.tsv) were committed into gramont, danzay, eckert and nevers-birago folders by A2
+(91967a336) and B (1d274f4b7): pages still owed a look, no values. Lane fault: the first four spawns (02:40) omitted source_url and were archived at 0.54 (F rows).
+**Jobs** (tool and option; control vs null; shelf grade; commit):
+| Job | Tool / option | Control vs null | Shelf | Commit |
+|---|---|---|---|---|
+| A1 SHEETS | cvd_check.py; decode_key --style case; decipher_sheet.py key\|reading | palettes 20.7/22.7/25.5 vs declared gate 20 (legacy pair fails as must-catch); R-K1 714/714, R-K2 568/568 (regression); KM box-to-token 0.606 vs permuted p95 0.085 PASS | n/a (tools) | 988d6d5b5 |
+| A2 SHEETS-R | renders in outreach/sheets/ | Danzay f35 37 crops 0 failing; Eckert E4 1/8 under ink floor -> E4 reading not fit to show; Gramont 0 tiles (full-res f.29r not on disk) | n/a | 3df433939 |
+| B SORTER | sign_sorter blind-first default, --show-values guard, sorter_preflight --cvd, template 2026-10-09.2 (acct3 merged as 09.3, 558c8ebe2) | oddness recall@10% 0.498 vs gate 0.6 (null 0.130) FAIL; owner no.87 sort err_true 0.260 vs committed reads 0.020 (fixed 0 / broken 48) | weak | 078c9d061..39c197114 |
+| C NAMES | name_candidates.py (cues fr/de/en, frozen pool, --mask-letters) | (a) Lodewijk places rank 13/11 = null p95; (b) Eckert persons 0/10 = null p95: non-tests (untyped candidates; Wikidata 429 x2) | weak | 8f3cee8a7 |
+| D CROSSWORD | decode_key --try/--avalanche/--try-log | K1 Gramont port identical; K3 Danzay letters 19/23 PASS (unigram 2/23); K2 Blathwayt words 58/116, false accept 17/70 FAIL (unigram 20/116) | letters controlled-only; words weak | 41edf2646, 0ce863497 |
+| E BNFPILE | bnf_findingaid --pile/--census | planted pile rank 1/70; labelled bare P1.00/R0.80; held-out pile untested; --branch-pdf HTTP 500 untested | weak | 6167cba6f |
+| F SOLVER | homophonic_anneal --moves both, --max-homophones, --min-count, --as-unknown, --norm nc2paper | matched fr16 control N 800/1500/2600 blind 0.965/0.951/0.947 = no headroom; as-unknown 0.971 vs skip 0.965 under 2xSD | all weak | 0aa8fd5ae..3039f181f |
+| G SCOUT | scout_rubric.py; calendar_check.py; active-edition rows | fr.2988 shape rank 1/34 (old rubric 23); held-out fr.20506 shape 32/34 | n/a | e15ae3424 |
+| H LOCK | family_run --param lock=FILE | K1 fidelity 3/3; K2 lock 0.831 vs blind 0.490 (SD 0.320), 2x restarts 0.766, wrong-key 0.120; gain +0.341 < 2xSD 0.639 FAIL | weak | 8d8f1e02, b345ff17 |
+**Queue rows (step 3a, account-4, stubs .claude/briefs/runs/2026-10-09-ytbiz-mqs-next-*.md):** MQS-SORTER-BOX, MQS-BNF-S2A, MQS-BNF-S2B, MQS-LANGS,
+MQS-SPECIAL-SIGNS, MQS-SEGMENTER (with M24 word division), MQS-CLASSIFY-ROUNDS, MQS-CTTS-EXPORT, MQS-TX-CROSSWORD (letters only: D's word control
+failed; names the three failed no.87 attempts), MQS-BNF-S3, MQS-BNF-S4 (Gallica-gated), MQS-BNF-S5, MQS-BNF-S6, MQS-NGRAM-SWEEP, MQS-GLYPH-MATCH,
+MQS-IA-MARKERS, MQS-ALIAS, MQS-BASE-MARK, MQS-LOOKALIKE-SLIPS, MQS-CCE-MATRIX, MQS-KEY-COMPARE, MQS-PARTICIPATION, MQS-STRUCK, MQS-SAMEDAY, MQS-CVD-AUDIT,
+MQS-SHEET-REFUSAL (26). **Not queued:** the name tool's first target use (no class or language control passed); H (ran).
+Suggested by workers, not queued: re-run C's controls with typed candidates (Wikidata when it answers, or title phrases) and nav text stripped; re-gate H's K2
+on paired-difference SD; a word-level scoring instrument before --try on word nomenclators; prior_work.py known-answer mode should not write into target folders.
+**P3, priced only (not queued):** PILE-REGISTER 1-2, TAIL 2, WITNESS-LABELS 2, HOMOPHONE-PROFILE 2 (only with a two-hand pool), INTERCEPTOR 1; ATTRIB 3
+(only if the owner approves G's anonymous-pile intake).
+**For the account-3 parent (not done here):** (1) publish only the Gramont key + f.29r reading, Danzay f.35 key + reading and Eckert E4 key from
+outreach/sheets/ (the E4 reading is labelled not fit to show) and B's rebuilt blind sorter page as private Artifacts, and append B's ASKS row with the link;
+(2) **hold every Birago 1572 family sheet** (scratch renders only) until ASKS 118 and the 2 Oct (f.168 / no.85) and 3 Oct (f.117r) Birago sorter rows are
+done; (3) put G's anonymous-pile intake proposal (research/MARY-STUART-TALK-2026-10-09.md, "Proposal for the parent", e15ae3424) to the owner; (4) do NOT
+add the TRANSCRIPTION.md owner-labels line: B's unit 4 does not support it (0.260 vs 0.020). Owner asks still open: sorter box editing (MQS-SORTER-BOX),
+BnF pile at 10x coverage (MQS-BNF-S2A..S6), name-and-place tool (weak; needs typed candidates).
