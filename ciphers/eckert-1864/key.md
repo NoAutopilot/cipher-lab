@@ -897,6 +897,8 @@ and the following tables; keep the column order.
 | Zodiac | Period | H | p.24 l.26 (341) L |
 | Zebra | Period | H | p.24 l.26 (341) R |
 
+**Condition on rows Leghorn / Legend / Lehigh / Leopard (KEY-CANBY, 10 Oct 2026; the four rows above stay as the book wrote them, H = Maj Gen S. A. Hurlbut).** In the traffic from 11 May 1864 (Canby to the Military Division of West Mississippi) this slot is used for Maj Gen E. R. S. Canby: 4 entries, 6 tokens, 0 for Hurlbut (E323, E334, E345 by print, C; E55 by the office's interlineation over a clear "Gen Canby", C). Read Canby, grade C where a print agrees and M otherwise, in No. 1 entries dated on or after 11 May 1864; before that date read Hurlbut (H), no occurrence on file. Data conflict (rule 4), not settled by count: witnesses in ciphers/eckert-1864/HYPOTHESES.md "## KEY-CANBY". decode.py does not apply it automatically; each entry carries a `gloss:` line.
+
 ## 4. Numerals (grade H, mssEC 41 leaf "25", pointer 342)
 
 Consecutive numeral words combine the English way ("Harsh Pledge" = 20 + 6 = 26; "Plank Promise Person

@@ -4176,3 +4176,27 @@ Read so far: E352, E353, E354, E358, E360 audited (four N1 by print, read on pag
 - [x] image-check: all five entries eye-checked on crops.
 - [x] retry: none needed (two be-api queries returned empty, not retried).
 Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18i) s.5, ~$1
+
+## FIX-FM17 (10 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM17, 23:53-00:0x UTC by `date -u`, offline (git only). Intake gate line: "eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines" (exit 0). Carries (a) KEY-CANBY, (b) AUDIT (FV-MS18i) s.5 and (c) s.4 of AUD2-LEDGER-30..33 into key.md / ciphertext.txt through decode.py's existing mechanisms (`gloss:`, `plain-at:`, `plain:`, `variant:`, header and note edits). No key row deleted or edited; reading.md only via `decode.py --write`. Classes are the audits' and untouched.
+
+| Source | Entry | Change | Decoder before -> after |
+|---|---|---|---|
+| (a) | key.md | condition note under rows Leghorn / Legend / Lehigh / Leopard (rows unchanged, H = Hurlbut as the book wrote them): Canby from 11 May 1864, C where a print agrees, M otherwise; Hurlbut (H) before that date, no occurrence on file; conflict witnesses in HYPOTHESES.md "## KEY-CANBY" (decode.py applies no date rule; each entry carries a `gloss:`) | none |
+| (a) | E55 | leopard (interlined over clear "Gen Canby") = Canby, C (print OR I/39 pt 2 p.304) | H 11 -> H 10, C 1 |
+| (a) | E323 | legends = Canby, C (print OR I/48 pt 2 p.492) | H 32, C 3, M 1 -> H 32, C 4 |
+| (a) | E334 | Legend = Canby, C (print OR I/34 pt 4 p.64) | H 45, M 1 -> H 45, C 1 |
+| (a) | E345 | leopard, leghorn, legend = Canby x3, C (print OR I/39 pt 2 pp.269-270) | H 24, C 1 -> H 21, C 4 |
+| (b) | E352 | header: Commanding General, Harper's Ferry, six prominent citizen rebels, expeditions, OR I/43 pt 1 p.836; "negroes" plain (`plain-at`), rape's = Rape = Expedition and polking = Polka (Command + ing, shown as the key row's form) by `variant:` | H 19 -> H 20 |
+| (b) | E353 | header: Bvt Maj. Gen. J. H. Wilson, Brown clear, OR I/49 pt 2 p.648, time-word conflict (Deborah 8 AM / ledger 7.30 a.m. / print 7 p.m.); "reward" plain twice (`plain: reward`); Deborah M (`variant:`) | H 23 -> H 20, M 1 |
+| (b) | E354 | header: p.295; eligo = Sligo = In the (`variant:`) | H 20, S 1 -> H 21, S 1 |
+| (b) | E360 | header: 10.30 a.m. (print), pp.8-9 confirmed; Harlem = Baltimore and Ohio Railroad (`gloss` C) | H 14, C 1 -> H 14, C 2 |
+| (b)(c) | E358 | header: Bvt Brig. Gen. E. Barton, Provost Marshal, Memphis, holder 7976-7978; prisoner Capt. J. G. Ryan (context I, not "J. N."); press line; siblings 10043/2 and 9258/2 for a reader | H 15 (no change) |
+| (c) | E333, E335, E340, E346, E347, E349 | notes only (Phillips/Savage/Mouthrey wording; Berrien unidentified; Briscoe-Lackey setting 8826/8828 + press; E346 context 9816/9817/9042, Larabee 2005; E347 "Summers 1951, C context" + Herald/Tribune 10 Aug 1864; E349 Gazette dates, Nashville Daily Union 3 Dec 1864) | none |
+
+Totals over 302 entries: H 5250, C 70, I 25, M 36, S 17, U 10 -> **H 5245, C 77, I 25, M 35, S 17, U 10**.
+
+Decode: `decode.py --write` then `--check` -> "reading.md is current"; `decode_no2.py --check` "reading-no2.md is current", `decode_no9.py --check` "reading-no9.md is current", exit 0. `tools/depth_check.py`: 139 unique solves (D4 5, D3 92, D2 42), exit 0 (no status.json row's counts or class changed: E358 H 15 stands).
+
+Propagation (rule 10): status.json rows for E346, E347, E349, E350, E358 already carry the audits' corrected lines and counts (AUD2-LEDGER-31..33 applied them); none of the entries re-graded here (E55, E323, E334, E345, E352-E354, E360) has a status row or SO prompt except E358, whose PROMPT-chatgpt-e358.md context line now names the prisoner as Ryan with the transcription's "J. N." marked corrected to J. G. E345 and E334 have no SO prompt. Not done: HYPOTHESES.md row for the E353 time-word conflict (a KEY job's, beside the Viola note; named in AUDIT s.5); E351, E355-E357, E359 are other jobs.

@@ -92,5 +92,5 @@ Consolidates the E323 (FIX-FM13), E334 (FIX-FM15) and E345 (FV-MS18f) notes abov
   four witnesses; an edition split is not needed and not excluded.
 - **Status:** conflict recorded, not resolved by count. Values by witness: Hurlbut -- the key book only (undated page, original hand); Canby -- E334, E345
   (x3), E323 (prints, all Washington outgoing to western posts: St Louis x2, Sherman's HQ) and E55 (the office's own interlineation, Washington to Louisville).
-  Proposed key.md wording in NOTES.md "## KEY-CANBY". Script: none (a lookup over ciphertext.txt and AUDIT.md; the counts are re-derivable with
+  Proposed key.md wording in NOTES.md "## KEY-CANBY". **Applied 10 Oct 2026 (FIX-FM17):** key.md carries the date condition as a note under the four unchanged rows; E55, E323, E334, E345 re-graded to Canby, C (print), by per-entry `gloss:`; still a rule-4 conflict record, with these witnesses, not a majority decision. Script: none (a lookup over ciphertext.txt and AUDIT.md; the counts are re-derivable with
   `grep -n -i -w -E "leghorn|legends?|lehigh|leopard" ciphertext.txt`).
