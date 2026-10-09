@@ -1891,6 +1891,9 @@ Geo. D.  Sheldon
 plain-at: webster#1
 plain: toby
 note: FIX-FM4 (AUDIT FV-FM4 s.3): signer "Are see Webster" = R. C. Webster, Chief Quartermaster at Fort Monroe (Butler Corr. V), plain (Webster is a surname here, not the Signature code word; vinton = Quartermaster stays code); "Toby" = to be, plain; "harsh second" = twenty + second = the 22nd (harsh = 20 H, ordinal clear).
+merge: harsh+second
+gloss: harshsecond=22nd:H
+note: FIX-FM5 (AUDIT FV-FM4 s.3): harsh (20) + second = the 22nd, one ordinal; was [20] second.
 
 ### E194 | Page 261 | 5805 | mssEC 25 (obj 5952, pointer 5805), 4 Nov 1864 Butler's Hd Qrs, R. O'Brien to Sheldon, Ft Monroe (FM-R2b; row 5805/2; image-read at 2400 px)
 Geo D Sheldon Ft. Monroe
@@ -1902,6 +1905,8 @@ letters zebra use all possible despatch walrus Taunton Shelby Barry
 R OBrien
 plain: hawley
 note: FIX-FM4 (AUDIT FV-FM4 s.3): Hawley is plain = Brig. Gen. Joseph R. Hawley (5805/1 and 5807 confirm; the decoder's Roddy was wrong); "pro" and signature "Barry" stay M, unexplained.
+gloss: barry=Terry:I
+note: FIX-FM5 (AUD2-LEDGER-8 correction 2): signer 'Barry' on the image is most probably Maj. Gen. Alfred H. Terry (OR I/42 pt 3 pp.504, 517), inferred (I); the transcription keeps 'Barry'. 'R OBrien' is the operator at Butler's Hd Qrs, not the author (AUD2-LEDGER-8 correction 1).
 
 ### E220 | Page 267 | 5811 | mssEC 25 (obj 5952, pointer 5811), 29 Nov 1864 Ft Monroe, Sheldon to Maj. Eckert, for Rucker: the steamers he will send that night, answering Eckert's call of the same day on the page (FM-R3b; row 5811/2; image-read at 2400 px)
 Maj Eckert Di
@@ -1910,6 +1915,8 @@ H Livingston pekin weybosset pedlar Gen'l Sedgwick pekin Massachusetts pedlar
 Louisa Moore pedlar Idaho pekin montauk and Beaufort unity capacity
 in all for melody plague publish spit walrus paradise Webster
 Geo D Sheldon
+plain: webster
+note: FIX-FM5 (AUDIT FV-FM5b s.3): the final 'Webster' is the plain surname of the signer, Col. R. C. Webster, Chief QM Fort Monroe (walrus = signature, paradise = Colonel); Geo D Sheldon is the operator.
 
 ### E222 | Page 203 | 5747 | mssEC 25 (obj 5952, pointer 5747), 13 June 1864 3.30 PM, R. O'Brien (Gen. Butler's Hd Qrs) to Sheldon, for Biggs: ferry boats and lumber to Fort Powhatan (FM-R3b; row 5747/1; image-read at 2400 px)
 3.30 PM
@@ -1927,6 +1934,8 @@ tin form you that he has taken the western metropolis
 pedlar Baltic and B. Deford for an urgent milly terry
 tarquinity walrus Charles McCormick medical Director quadrant of Alba Abacus
 Geo D Sheldon
+plain: baltic
+note: FIX-FM5 (AUDIT FV-FM5b s.3, AUD2-LEDGER-10): 'Baltic' is plain, the Surgeon-General's hospital transport (OR I/42 pt 1 p.197), not the key word Baltic.
 
 ### E224 | Page 157 | 5701 | mssEC 25 (obj 5952, pointer 5701), 27 May 1864 10.30 AM, R. O'Brien (Gen. Butler's Hd Qrs) to Sheldon: Captain Farquhar ordered to report to W. F. Smith as chief engineer (FM-R3b; row 5701/1; image-read at 2400 px)
 1030 AM
@@ -1937,6 +1946,7 @@ salem to join Jupiter as chief Engineer zodiac
 you will report to nankin as he passes
 animal walrus G Weitzell Palsy and Engineer
 R OBrien
+note: FIX-FM5 (AUD2-LEDGER-10 correction 2): checked; the reading already has 'Brigadier General and Engineer' without 'Chief' (palsy and Engineer); no change.
 
 ### E225 | Page 82 | 5626 | mssEC 25 (obj 5952, pointer 5626), 23 Apr 1864 Ft Monroe, Sheldon to S. H. Beckwith, Culpeper, for Grant: a scout's report of Longstreet at Charlottesville, signed John I. Davenport (FM-R3b; row 5626/0; image-read at 2400 px)
 J. H. Beckwith Culpepper
@@ -1945,6 +1955,9 @@ Zodiac plaster woodbury spit from his own Pelton forwarded
 him a day unity Think the number large but
 believe the Sweden Yoke John I Davenport Florence Pierce
 Geo D Sheldon
+plain: john
+graded: elgin:I pierce:M
+note: FIX-FM5 (AUDIT FV-FM5b s.3): signer John I. Davenport is plain (the decoder's John = Grant was wrong); Elgin (addressee, the print says USG) I, not in key.md; Pierce M. Florence = 11.30 AM. The hand-polished '[information correct]' is not in the ledger.
 
 ### E226 | Page 204 | 5748 | mssEC 25 (obj 5952, pointer 5748), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert, for Allen: mail boats to Charles City Landing, H. B. Blood (FM-R3b; row 5748/0; image-read at 2400 px)
 Maj Eckert Di
@@ -2011,6 +2024,9 @@ to growl unity send up such weaselers
 as you have suited for this service
 webster Belcher frorence united state of America
 T. T. Eckert
+variant: frorence=Florence:H
+graded: america:M
+note: FIX-FM5 (AUDIT FV-FM5a s.4): frorence = Florence = 11.30 AM (time word, H; the mssEC 18 sent copy 9778/1 header reads 11.30 AM). 'united state of America' is unexplained after the signature (Delaware does not read): M. Sent copy = mssEC 18 9778/1.
 
 ### E213 | Page 63 | 5607 | mssEC 25 (obj 5952, pointer 5607), 16 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert, surplus telegraph material to go with the Tenth Corps (FM-R3a; row 5607/1; image-read)
 Ft Monroe Apr 16 1864
@@ -2022,6 +2038,9 @@ zodiac The shelby wishes to have the
 material and the superintendent go with the
 Federal Pelham if possible yoke Ell F.
 Geo D Sheldon
+merge: ell+f
+gloss: ellf=L._F._Sheldon:I
+note: FIX-FM5 (AUDIT FV-FM5a s.4, AUD2-LEDGER-9): signer 'Ell F.' = L. F. Sheldon, Capt. Lemuel F. Sheldon, superintendent of military telegraph, Dept. of the South (Plum; OR I/35 pt 2), not G. D. Sheldon; grade I.
 
 ### E214 | Page 159 | 5703 | mssEC 25 (obj 5952, pointer 5703), 27 May 1864 Washington, T. T. Eckert to Sheldon at Ft Monroe, telegraph wire and insulators for West Point (FM-R3a; row 5703/1; image-read)
 Washington May 27 . 1864
@@ -2032,6 +2051,7 @@ point with him enough material to make out
 harrow spoons unity operators sufficient are ordered report
 to you advise me often about the work
 T. T. Eckert
+note: FIX-FM5 (AUDIT FV-FM5a s.4, AUD2-LEDGER-9): checked, no decoder change; 'spoons' = Mile is in key.md (H, p.21 l.26), Bickford is plain.
 
 ### E215 | Page 190 | 5734 | mssEC 25 (obj 5952, pointer 5734), 8 June 1864 Ft Monroe, Sheldon to Maj. Eckert, forwarding Acting Rear-Adm. S. P. Lee's telegram to the Secretary of the Navy from Trent's Reach, 7 June 10 PM (FM-R3a; row 5734/0; image-read)
 Ft Monroe June 8 / 64
@@ -2053,6 +2073,7 @@ to that place immediately every vessel fitted to aid
 in this tanner and in removing stores and wilkes
 to a new bass or Hospital Webster Bender Julia
 Thos T Eckert
+note: FIX-FM5 (AUDIT FV-FM5a s.2/s.4): E216 is the Monroe received copy of E49 (Washington sent copy, mssEC 19 p.91 pointer 8983, dated 12 June 1864, 4.10 PM); no separate class. strong/bass/begs sheaf/on/while horse are plain (Biggs chief, an, White House): 0 M. Julia = 4 PM (H) against the header's 4.20 PM.
 
 ### E217 | Page 226 | 5770 | mssEC 25 (obj 5952, pointer 5770), 10 July 1864 4.30 PM Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General, forwarding Ingalls's City Point message on transports for Gen. Wright's command (FM-R3a; row 5770/0; image-read)
 Ft Monroe July 10 / 64
@@ -2091,6 +2112,9 @@ are worn again in a few ours run unity
 we can not go on in the Dick rater
 tulip I go now Sligo Cuyler Webster John Rodgers
 Geo D Sheldon
+plain: forks john
+graded: tulip:M
+note: FIX-FM5 (AUDIT FV-FM5c s.3): Forks = Fox (plain, phonetic; the decoder's Pensacola is wrong); John (Rodgers) plain; tulip has no counterpart in the clear copy 8479: M; Dick potatoe / Dick rater = Dictator, plain.
 
 ### E231 | Page 190 | 5734 | mssEC 25 (obj 5952, pointer 5734), 9 June 1864 Ft Monroe, Sheldon to Maj. Eckert, for the Secretary of the Navy: S. P. Lee, Agawam, Farrar's Island (FM-R3c; row 5734/2; transcription only)
 Maj. Eckert Washington
@@ -2151,8 +2175,11 @@ up may harrow off Hatteras stating loss weaseler Manhattan
 at sea from Hannibal to Bermudas pedlar large lot
 Cotton picked up topple Hatteras much lightning wind rain
 Geo D Sheldon
+plain: bermuda bermudas
+note: FIX-FM5 (AUDIT FV-FM5c s.3): Bermuda and Bermudas are plain (Bermuda Hundred; the islands), not the key word Bermuda.
 
 ### E235 | Page 287 | 5831 | mssEC 25 (obj 5952, pointer 5831), 14 Dec 1864, received at Ft Monroe, Maj. Eckert to Sheldon, Foster's landing at Tullifinny Creek and exchanged prisoners (FM-R3c; row 5831/2; transcription only)
+
 Last friday lonesome who had landed between Tallifinny
 Creek and Coosawatchie just below Pocotaligo made volcano
 in salem to within publish mansion yards of
@@ -2172,6 +2199,10 @@ william and modest exchanged prisoners left Bravo Monday
 morning arrived herat plunder this morning and left
 immediately for Annapolis youth L. F. Shell done
 Geo. D. Sheldon
+split: lamp plank
+join: mandate modest
+graded: plank:M
+note: FIX-FM5 (AUDIT FV-FM5c s.3): first line 'Last friday lonesome ...' kept (a blank line stands in for the address line decode.py skips); polka<deletion>er</deletion> = Command (H); peach lamp plank = 2 + 30 + 2, plank M, not 34; plug prolong and mandate = 150; pony william and modest = 990; Shell done = Sheldon (plain).
 
 ### E236 | Page 126 | 5670 | mssEC 25 (obj 5952, pointer 5670), 14 May 1864 Ft Monroe, Sheldon to Maj. Eckert, press telegram from Bermuda Hundreds 13 May for Fulton and Craig (FM-R3c; row 5670/1; transcription only)
 Maj Eckert Di
@@ -2190,6 +2221,8 @@ our loss slight Pekin Shelby Ames in vesper to keep
 Holland in Gideon zebra Walnuts at Drurys B Evidently not
 disposed to rapture without weakness Webster Jay C Row out
 Geo D Sheldon
+plain: bermuda darling
+note: FIX-FM5 (AUDIT FV-FM5c s.3): Bermuda and Darling (Fort Darling) are plain, not the key words.
 
 ### E237 | Page 185 | 5729 | mssEC 25 (obj 5952, pointer 5729), 3 June 1864, received at Ft Monroe, Maj. Eckert to Sheldon (copy to Beckwith, Grant's Hd Qrs): Carter's Knoxville telegram on a Hanoverian named Finck, Van Duzer (FM-R3c; row 5729/1; transcription only)
 Copy to Beckwith Gen. Grants Hd. Qr's
@@ -2210,6 +2243,10 @@ except a few guerrillas this side of brandy
 pause he came via columbia avon take joy
 D Webster palsy how is juro progressing now
 J. C. Van Duzer
+plain: columbia webster
+gloss: waly=South:C
+graded: take:M joy:M
+note: FIX-FM5 (AUDIT FV-FM5c s.3): Columbia (S.C.) and Webster (Brig. Gen. J. D. Webster) are plain; waly = South (clear copy 10382, 'South-ward'); 'take joy' unexplained, M.
 
 ### E238 | Page 293 | 5837 | mssEC 25 (obj 5952, pointer 5837), 17 Dec 1864 Washington, Eckert to Sheldon, Fox to Commodore John Rodgers; same words as the Washington sent copy mssEC 19 p.247 (9141/1) and as ORN I/11 pp.197-198: a known-plaintext key test (FM-R3c; row 5837/1; image-read at 2400 px)
 Geo. D. Sheldon Ft Monroe

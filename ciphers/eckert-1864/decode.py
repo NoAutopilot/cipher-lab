@@ -155,6 +155,7 @@ def entry_text(lines):
             body.append(l)
     text = " ".join(body)
     text = re.sub(r"<del>.*?</del>", " ", text)
+    text = re.sub(r"<deletion>(.*?)</deletion>", r"\1", text)  # a struck-through ending is read as written (polka<deletion>er</deletion> = polkaer, FIX-FM5)
     text = re.sub(r"</?ins>", "", text)
     text = re.sub(r"\s+=\s+", "", text)  # "Lock = wood" -> "Lockwood"
     text = re.sub(r"\s+-\s+", "", text)  # "dis - missed" -> "dismissed"

@@ -2704,3 +2704,34 @@ Count differences for a verifier (the token counts now match each code-word list
 (audit 28/30: its 28 adds Reading to the decoder's 27, which still counted 'wag' and missed the two Panamas); E59 11 H + 1 M of 12 (audit
 '12 H + 1 M of 13' counts Susan twice: the decoder's 12 H included it); N2-BZ part 2 19 H + 2 I + 1 M of 22 (audit '21 H of 22': yard and
 stick are I rows of key-no2.md). Not changed in status.json (a verifier's field); the delivery shows the token counts.
+
+## FIX-FM5 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM5, 03:47-04:0x UTC by `date -u`, offline. Carries the corrections of AUDIT "FV-FM5a" s.4, "FV-FM5b" s.3, "FV-FM5c" s.3, E193's "22nd" and "AUD2-LEDGER-8/-9/-10/-11" into the readings through per-entry
+note lines in ciphertext.txt (transcription lines untouched; no key.md row edited; reading.md only by `decode.py --write`). One decoder change: `<deletion>X</deletion>` keeps X (E235's "polka<deletion>er</deletion>" = Command+er was
+left unread; the only occurrence in ciphertext.txt). E235's first line was skipped as an address line: a blank line now stands in for it.
+
+| Entry | Token | Before | After (note) | Grade before -> after | Source |
+|---|---|---|---|---|---|
+| E193 | "harsh second" | `[20] second` | `[22nd]` (`merge: harsh+second`, `gloss: ...=22nd:H`) | H -> H | FV-FM4 s.3 (FIX-FM4 left it) |
+| E194 | signer "Barry" | `[Major] [General] Barry` | `[Terry]` (`gloss: barry=Terry:I`); transcription keeps Barry; R. O'Brien is the operator | none -> I | AUD2-LEDGER-8 |
+| E212 | "frorence", "America" | filler; `[Delaware]` | `{time: 11.30 AM}` (`variant`, H); America as written, M (`graded`) | H 14 -> 14 H + 1 M | FV-FM5a s.4 |
+| E213 | signer "Ell F." | as written | `[L. F. Sheldon]` (`merge`+`gloss:I`) | none -> I | FV-FM5a s.4, AUD2-LEDGER-9 |
+| E214 | "spoons" | `[Mile]'s` H | unchanged (already H; note only) | H 9 | FV-FM5a s.4 |
+| E216 | duplicate of E49 | -- | note only (sent copy mssEC 19 p.91, ptr 8983, 12 June); 0 M | H 12 | FV-FM5a s.2 |
+| E220 | tail "Webster" | `[signed] [Colonel] [signed]` | `[signed] [Colonel] Webster` (`plain`) | H 17 -> 16 | FV-FM5b s.3 |
+| E223 | "Baltic" | `[Chattahoochee]` | `Baltic` (`plain`) | H 10 -> 9 | FV-FM5b s.3, AUD2-LEDGER-10 |
+| E225 | "John", "Elgin", "Pierce" | `[Maj Genl U.S. Grant] I Davenport` | `John I Davenport`; Elgin I, Pierce M (`graded`) | H 14 -> H 13, I 1, M 1 | FV-FM5b s.3 |
+| E230 | "Forks", "John", "tulip" | `[Pensacola]'s`, `[Grant]`, `[Open]` | plain, plain, as written M | H 7 -> H 4, M 1 | FV-FM5c s.3 |
+| E234 | "Bermuda", "Bermudas" | `[White River]` x3 | plain | H 52 -> 50 | FV-FM5c s.3 |
+| E235 | first line, polka+er, 2/30/2, 150, 990 | line dropped; `Soasto polka<deletion>er`; `[34]`; `[100] and [50]`; `[900] and [90]` | `Last friday [Foster] ...`; `[Command]er`; `[2] [30] plank` (plank M); `[150]`; `[990]` | H 43 -> H 44, M 1 | FV-FM5c s.3 |
+| E236 | "Bermuda", "Darling" | `[White River]`, `[Martinsburg]` | plain | H 59 -> 57 | FV-FM5c s.3 |
+| E237 | "columbia", "Webster", "waly", "take joy" | `[Elizabeth City]`, `[signed]`, as written | plain, plain, `[South]` C, M x2 | H 43 -> H 41, C 1, M 2 | FV-FM5c s.3 |
+
+Checked, no change: E210 (confirmed by FV-FM5a), E224 ("Chief" is not in the reading: AUD2-LEDGER-10 correction 2), E222; AUD2-LEDGER-11 names only the F/G initial of the E235 signature (a fact for the decoder, left as transcribed).
+Not done: the audits' prose glosses for "begs sheaf" = Biggs chief and "while horse" = White House (E216) and "Dick potatoe" = Dictator (E230) are phonetic plain words, left as written; E216 and E235 grade counts are the decoder's, not the audits' hand counts.
+
+`python3 ciphers/eckert-1864/decode.py --write` then `--check` -> `reading.md is current`, exit 0; `decode_no2.py --check` -> `reading-no2.md is current`; `decode_no9.py --check` -> `reading-no9.md is current`.
+`python3 -m unittest tools.tests.test_eckert_decode` -> 27 tests OK. Totals over the 194 entries: H 3283, C 29, I 19, M 27, U 10 (were H 3294, C 28, I 16, M 21).
+Propagation (rule 10): status.json rows already carry the corrected words (E194 title names Barry/Terry; E213 depth sentence reworded by AUD2-LEDGER-9); PROMPT-chatgpt-e212/e213/e220/e193/e194/e235 already carry 11.30 AM, Ell F., Webster, twenty-second, Terry, 990;
+PROMPT-chatgpt-e223 updated (Baltic = the hospital transport, AUD2-LEDGER-10). No class changed. `tools/depth_check.py` -> passes, "unique solves (N3+ and D2+): 90 -- D4 5, D3 51, D2 34"; `tools/file_shrink_guard.py` on ciphertext.txt, decode.py, reading.md: ok.
