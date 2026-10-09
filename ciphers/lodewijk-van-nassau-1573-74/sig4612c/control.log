@@ -1,0 +1,20 @@
+4612 v3 baseline word share under key_full (this segmenter): 0.7095; 5811 cut 833 tokens, 96 codes, true share 0.9508
+  calib f=0.05: mean share 0.9160
+  calib f=0.10: mean share 0.8953
+  calib f=0.15: mean share 0.8648
+  calib f=0.20: mean share 0.8379
+  calib f=0.25: mean share 0.8059
+  calib f=0.30: mean share 0.7554
+  calib f=0.35: mean share 0.7113
+  calib f=0.40: mean share 0.6947
+  seed {'seed': 0, 'perturbed': 34, 'cribs_in_cut': 11, 'kept': 10, 'consistent': 10, 'multi': 4, 'recovered': 9, 'false': 1, 'recoverable': 16, 'base': 0.7527, 'G': 0.1297}
+  seed {'seed': 1, 'perturbed': 34, 'cribs_in_cut': 9, 'kept': 9, 'consistent': 12, 'multi': 5, 'recovered': 7, 'false': 5, 'recoverable': 18, 'base': 0.7899, 'G': 0.024}
+  seed {'seed': 2, 'perturbed': 34, 'cribs_in_cut': 8, 'kept': 6, 'consistent': 12, 'multi': 1, 'recovered': 10, 'false': 2, 'recoverable': 19, 'base': 0.6771, 'G': 0.1525}
+  seed {'seed': 3, 'perturbed': 34, 'cribs_in_cut': 8, 'kept': 7, 'consistent': 12, 'multi': 3, 'recovered': 10, 'false': 2, 'recoverable': 16, 'base': 0.7755, 'G': 0.0672}
+  seed {'seed': 4, 'perturbed': 34, 'cribs_in_cut': 9, 'kept': 8, 'consistent': 13, 'multi': 3, 'recovered': 10, 'false': 3, 'recoverable': 19, 'base': 0.6507, 'G': 0.1993}
+  seed {'seed': 5, 'perturbed': 34, 'cribs_in_cut': 7, 'kept': 6, 'consistent': 6, 'multi': 1, 'recovered': 5, 'false': 1, 'recoverable': 15, 'base': 0.7107, 'G': 0.0972}
+  seed {'seed': 6, 'perturbed': 34, 'cribs_in_cut': 5, 'kept': 8, 'consistent': 10, 'multi': 1, 'recovered': 6, 'false': 4, 'recoverable': 16, 'base': 0.7455, 'G': 0.0756}
+  seed {'seed': 7, 'perturbed': 34, 'cribs_in_cut': 9, 'kept': 11, 'consistent': 12, 'multi': 5, 'recovered': 10, 'false': 2, 'recoverable': 17, 'base': 0.7371, 'G': 0.1453}
+  seed {'seed': 8, 'perturbed': 34, 'cribs_in_cut': 7, 'kept': 8, 'consistent': 15, 'multi': 3, 'recovered': 11, 'false': 4, 'recoverable': 17, 'base': 0.7575, 'G': 0.1429}
+  seed {'seed': 9, 'perturbed': 34, 'cribs_in_cut': 9, 'kept': 7, 'consistent': 9, 'multi': 3, 'recovered': 8, 'false': 1, 'recoverable': 15, 'base': 0.7959, 'G': 0.0336}
+CONTROL (a): f=0.35 recall 86/168=0.512 (>=0.50), mean false 2.5 (<=2.0), mean G +0.1067 (>0) -> FAIL (CONTROL BELOW GATE)
