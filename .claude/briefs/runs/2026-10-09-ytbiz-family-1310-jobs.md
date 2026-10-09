@@ -151,3 +151,26 @@ ES132-LOOK's caveat (f.51v re-read sided with reader A 95/105, no planted contro
 --plant 0.05` (read its --help; sample from f.51v L11-L25 and f.52r with the confusion.tsv ES132-LOOK wrote) with value-blind Sonnet re-reads (half page
 per call, <= 3 calls); score with `audit-score`. Report planted-tile recovery and whether the re-read can be told from an echo of reader A. No change
 to the committed reading or passD; NOTES section; gaps_check.
+
+## Wave 3 (13:5x UTC 9 Oct)
+Wave 2 results: BRO-123 key test PASS (S 0.836 vs p99 0.220), thin codes x/d/f/16/2 confirmed at C, code 24 aligns e (9C) against key h (M n=2);
+MANT-0494 left-page gloss PASS 74/99 vs p99 27, 13 right-page codes held; ES132-AUDIT planted catch 7/9 under its 0.80 gate (non-test).
+
+### V-BRO24 (Opus, cap 2.5, box 60 min, disk only; a session separate from BRO-123): antt-msliv0638-brochado-1712, code 24 and letter 134
+Verifier-style check of a key-value claim, not a novelty audit. NOTES Remaining gaps bullet "Letter 134: code 24" (~line 2256), carta123_attest.tsv,
+PREREG-BRO123.md, key.tsv, HYPOTHESES.md, reading_body_tokens.tsv. (1) Re-tally code 24 over every glossed occurrence on disk (appendix entries,
+ciphertext_appendix.tsv, body runs m0177/m0179/m0180, Carta 123's body pair) -- explain why key.tsv holds n=2 for a code that occurs ~20 times
+(tally bug, a split with another glyph, or a genuine homophone/variant); look at 2-3 crops of 24 vs the glyph it might be confused with. (2) Rule 4: if
+the witnesses disagree (h vs e), record which leaves (date, direction) support each value in HYPOTHESES.md, never settle by majority alone; decide the
+grade 24 carries in letter 134 (C only if letter 134's own date/direction matches the supporting witnesses, else M). (3) If the evidence supports a key
+edit, make it with the grade and source column the folder uses, re-run `decode_key.py ciphers/antt-msliv0638-brochado-1712 --check` (regenerate the
+committed reading via the folder's script, so rule 7 holds) and re-run the judge on letter 134 exactly as NEXT-BRO / YX-PTJUDGE ran it (pt18, same
+gloss calibration); paste old and new numbers; grade counts before/after. If not, leave key.tsv and say why. Update the gap bullet; gaps_check.
+Words: a key-value check; no novelty or depth claim.
+
+### MANT-0474 (Opus, cap 6, box 100 min, sachsen: wait for MANT-CENSUS's "sachsen release"; disk prep meanwhile): 694/08 0474 glossed leaf, second witness
+MANT-0494's named next (NOTES ~line 3395): 0474 (stamp 379, same Breton / Queen of England matter) as a second witness for 0494's 13 held right-page
+codes (231-715) and the 54-at-'et' conflict. Same protocol as MANT-0494 exactly (one native GET; code crops without the gloss line; 2 blind code passes
++ 1 blind gloss pass per page; reconcile; PREREG-MANT0474.md own commit on origin BEFORE scoring, gloss agreement vs 1,000 key-value permutations,
+gate real > p99 per gloss pass). Then a cross-leaf table: each held 0494 candidate code, its 0474 occurrences and glossed meaning (agree / disagree /
+absent) -> candidates file, never key.tsv. Unglossed runs: gate (b) as MANT-0494, and say plainly if they only restate gloss phrases. ~$5.5.
