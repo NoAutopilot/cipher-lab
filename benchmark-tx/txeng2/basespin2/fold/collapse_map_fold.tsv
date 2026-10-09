@@ -1,0 +1,40 @@
+from	to
+EIGHTBAR_C	EIGHTBAR
+EIGHT_O	EIGHT
+EIGHT_R	EIGHT
+HOOK_A	HOOK
+HOOK_C	HOOK
+HOOK_M	HOOK
+HOOK_R	HOOK
+HOOK_T	HOOK
+HOOK_T1	HOOK
+HOOK_T3	HOOK
+HOOK_U_V	HOOK
+JHOOK_M2	JHOOK
+NINE_E	NINE
+NINE_M2	NINE
+NINE_NULLA	NINE
+PHI_G	PHI
+PHI_I	PHI
+PHI_T	PHI
+SEVEN_E	SEVEN
+SEVEN_I	SEVEN
+SEVEN_I_M2	SEVEN
+TEE_P1	TEE
+TWO_NULLA	TWO
+TWO_O	TWO
+TWO_P	TWO
+TWO_S2	TWO
+# atlas_v5 rows as B2 fixed them (TXE2-BASE-SPIN2, 9 Oct 2026): KEY_G1 -> PHI (both H35 keymatch passes).
+KEY_G1	PHI
+# Notation fold (LANE TX-ENGINEER-2 incarnation 3, 9 Oct 2026 22:2x UTC by date -u; PREREG-txeng2-0 Amendment 8, TX-RED F36;
+# read-free, no reader or adjudicator re-run; the truth file was not opened). Rule as declared: a new published-cell row folds
+# to that cell's key code in ciphers/spinelli-beinecke-c1515/key.tsv (the Domnina rows, 28 Sept 2026), never from the truth.
+#   KEY_U_V2 (Domnina 2016 U/V sign 2, value u): key.tsv's u rows are EM (U/V sign 1) and HOOK_U_V (H38 shape sort); the
+#   atlas map keys/key_domnina_2016_atlasmap_v6.tsv row HOOK says "v4's merged hook family covers ... U/V sign 2", so the
+#   cell's key code is HOOK_U_V, which this map already collapses to HOOK; tx_bench applies the map as one lookup, so the row
+#   is written as KEY_U_V2 -> HOOK (the collapsed form), the same leniency every HOOK_* read already has.
+#   KEY_SS (Domnina 2016 SS sign 1, value ss): key.tsv carries NO row with value ss (the H35 keymatch passes gave K JHOOK (L),
+#   L NONE (L), so no code was ever assigned to the cell); the declared rule yields no fold and KEY_SS stays unmapped, scoring
+#   as itself. Amendment 8's "expected 5" assumed both names fold; under the rule as declared only KEY_U_V2 does.
+KEY_U_V2	HOOK

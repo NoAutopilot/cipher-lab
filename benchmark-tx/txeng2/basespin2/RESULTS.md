@@ -113,3 +113,31 @@ touched neither.
 | this commit (after the score) | score/*, score_detail.py, RESULTS.md | -- |
 
 No *.truth.tsv and no BENCHMARK-TX.tsv was edited. Nothing was re-read or re-adjudicated after scoring.
+
+## Notation fold (LANE TX-ENGINEER-2 incarnation 3, session_01P46fwsU5VTc1oJiV1sayg5, 9 Oct 2026 22:2x UTC by date -u; PREREG-txeng2-0 Amendment 8, TX-RED F36; read-free)
+Declared in Amendment 8 before this score: the collapse map folds the new cell names to the published cells' key codes from
+`ciphers/spinelli-beinecke-c1515/key.tsv`'s Domnina rows, never from the truth. Applied as `fold/collapse_map_fold.tsv`
+(B2's map + the fold rows, rule in its comment lines; the truth file was not opened, no reader or adjudicator re-run):
+- KEY_U_V2 (U/V sign 2, value u) -> HOOK: key.tsv's u codes are EM (U/V sign 1) and HOOK_U_V; the atlas map's HOOK row
+  (28 Sept) places U/V sign 2 in the merged hook family, so the cell's key code is HOOK_U_V, already collapsed to HOOK
+  (tx_bench applies the map as one lookup, so the row is written to the collapsed form).
+- KEY_SS (SS sign 1, value ss): key.tsv carries no row with value ss (the keymatch passes gave K JHOOK L / L NONE L, so no
+  code was ever assigned), so the declared rule yields no fold; KEY_SS stays unmapped and scores as itself. Amendment 8's
+  "expected 5" assumed both names fold; under the rule as declared only one does.
+```
+passZ_v5 (fold)  err_true 0.057 (11/193) 95% 0.032-0.099 | wrong 8 deleted 0 inserted 3 | flagged excluded 0.047 (9/191) [2 flagged]
+                 top confusions: i<-HOOK x3, t<-TEE, i<-EIGHT, p<-THREE, s<-KEY_SS, n<-EIGHT
+                 paired vs passZ_v4: base wrong 8, output wrong 8; fixed 4, broken 4; p 1.0000
+passA_v5 (fold)  err_true 0.088 (17/193) | wrong 14 | flagged excluded 0.079 (15/191)
+passB_v5 (fold)  err_true 0.047 (9/193)  | wrong 7  | flagged excluded 0.037 (7/191)
+```
+| file | position errors (wrong+deleted), as measured | flagged-excluded |
+|---|---|---|
+| passZ_v4.tsv (old baseline) | 8/193 | 6/191 |
+| passZ_v5.tsv under B2's map | 10/193 | 8/191 |
+| **passZ_v5.tsv under the fold** | **8/193** | **6/191** |
+Spinelli's pool count after the fold: **6** flagged-excluded (Amendment 8 expected 5; the KEY_SS position, p2c_L02.1 read KEY_SS
+against an s-code truth, stays an error under the declared rule). v4 -> v5 under the fold: fixed 4 / broken 4, p 1.0, a
+baseline change either way. Full output: `fold/tx_bench_fold.txt`. Openings of eval truth by this fold: 0 (tx_bench only).
+sha256 of the inputs scored: passZ_v5 b238c10e288370ea4f6536e0ad160288de81c15939658fcad9eef3fe197bcbb5, passZ_v4
+a641e2614b7e9931d22d1885d011a70fd7c3aeb1e25160e7b78534afbc756a70 (both as committed by B1/B2, unchanged).
