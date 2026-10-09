@@ -1,0 +1,5 @@
+line	expected	read	diff	flag
+f128_L02	92	8	+84	1
+f128_L03	2	58	-56	1
+f128_L04	8	60	-52	1
+f128_L05	7	65	-58	1
