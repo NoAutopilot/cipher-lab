@@ -1,0 +1,4 @@
+passage	pos	sign_id	conf	note
+L01	1	S16	M	triangle with curl at top left, no separate X stroke; rejected S42
+L01	5	S65	M	figure 8; crossing bar is the line running through the preceding signs; rejected S80
+L01	14	S66	M	tall z with dot above; rejected S17 (no dot)

@@ -1,0 +1,23 @@
+passage	posA	idA	confA	posB	idB	confB	status	merged	merged_conf
+L01	1	S42	M	1	S42	M	agree	S42	M
+L01	2	S45	H	2	S45	H	agree	S45	H
+L01	3	X_THETA2	M	3	X_THETA2	M	agree	X_THETA2	M
+L01	4	S84	H	4	S84	H	agree	S84	H
+L01	5	S80	H	5	S80	H	agree	S80	H
+L01	6	S49	M	6	S49	M	agree	S49	M
+L01	7	S89	H	7	S89	H	agree	S89	H
+L01	8	S62	H	8	S62	H	agree	S62	H
+L01	9	S49	M	9	S49	M	agree	S49	M
+L01	10	S75	H	10	S75	H	agree	S75	H
+L01	11	S66	H	11	S66	H	agree	S66	H
+L01	12	S40	M	12	S40	M	agree	S40	M
+L01	13	S26	H	13	S26	M	agree	S26	H
+L01	14	S66	M	14	S66	M	agree	S66	M
+L01	15	S13	M	15	S13	M	agree	S13	M
+L01	16	S49	M	16	S49	M	agree	S49	M
+L01	17	S70	M	17	S70	M	agree	S70	M
+L01				18	X_THETA2	M	gapA		
+L01	18	S69	M	19	S95	M	split+adj	S69	M
+L01	19	S87	L				gapB		
+L01	20	S67	M	20	S67	M	agree	S67	M
+L01	21	S25	M	21	S25	L	agree	S25	M

@@ -1,0 +1,20 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S16	S42	M	triangle with left curl; line start
+L01	2	S45		M	c with dot
+L01	3	X_THETA2		M	oval with two bars
+L01	4	S84		M	looped x
+L01	5	S80		M	8 with bar
+L01	6	S73	S49	M	slash between dots
+L01	7	S89		H	double bar
+L01	8	S62		H	beta
+L01	9	S73	S49	M	slash between dots
+L01	10	S75		H	plus
+L01	11	S66		H	z with dot
+L01	12	S40		M	x with tail
+L01	13	S26	S31	M	2 with underline and dot
+L01	14	S66		M	dotted z-like
+L01	15	S13	S95	M	theta small dotted
+L01	16	S73	S49	L	slash with dot
+L01	17	S70		M	v with bar
+L01	18	X_THETA2		M	oval two bars
+L01	19	S94	S95	M	circle with stem; next word fn

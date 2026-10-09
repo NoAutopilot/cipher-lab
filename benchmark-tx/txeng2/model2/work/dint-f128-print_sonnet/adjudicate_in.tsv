@@ -1,0 +1,27 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L02	4	z v y	a f 3 L	t	H	(none)			
+L03	9	y p w m	a # 1 .	o	H	0	H		
+L03	21	f 3 c 1	4 9 1 .	(none)		.	H		
+L03	27	9 1 . f	4 0 ? #	t	H	(none)			
+L03	30	f ? 4 0	# 0 m sq	0'	H	0	H		
+L03	49	w # 0 sq	v L 9 ?	0	H	o	H		
+L03	53	? v L 9	0 y ? v	t	H	4	H		
+L03	56	9 ? 0 y	v	m	H	w	H		
+L04	5	-:- 0 0 4	# y ? ?	t	H	#	H		
+L04	8	4 ? # y	? a c v	T	H	p	H		
+L04	9	? # y ?	a c v w	y	H	a	H		
+L04	15	c v w 4	? 0 # 1	t	H	f	H		
+L04	16	v w 4 ?	0 # 1 f	(none)		v	H		
+L04	32	# T v w	1 . sq a	o	H	0	H		
+L04	46	m o f n	? v c v	3	H	m	H		
+L04	47	o f n ?	v c v L	(none)		h	H		
+L04	54	v L c #	t ? m w	T	H	(none)			
+L04	56	c # ? t	m w y x	n	H	f	H		
+L05	5	1 y m w	? v ? w	o	H	0	H		
+L05	6	y m w ?	v ? w 1	(none)		0	H		
+L05	8	w ? ? v	w 1 . f	d	H	0	H		
+L05	28	# 1 . m	? y a f	3	H	0	H		
+L05	29	1 . m ?	y a f v	o	H	0	H		
+L05	35	a f v 1	y ? ? a	(none)		t	H		
+L05	37	v 1 ? y	? a a 1	9	H	0	H		
+L05	38	1 ? y ?	a a 1 .	o	H	(none)			

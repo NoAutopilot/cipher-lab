@@ -1,0 +1,22 @@
+# TXE2-MODEL2 X21b opus pipeline (reconcile + Sonnet adjudication)
+line	pos	sign
+v36top_L01	1	S42
+v36top_L01	2	S45
+v36top_L01	3	X_THETA2
+v36top_L01	4	S84
+v36top_L01	5	S80
+v36top_L01	6	S49
+v36top_L01	7	S89
+v36top_L01	8	S62
+v36top_L01	9	S49
+v36top_L01	10	S75
+v36top_L01	11	S66
+v36top_L01	12	S40
+v36top_L01	13	S26
+v36top_L01	14	S66
+v36top_L01	15	S13
+v36top_L01	16	S49
+v36top_L01	17	S70
+v36top_L01	18	S69
+v36top_L01	19	S67
+v36top_L01	20	S25

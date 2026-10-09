@@ -1,0 +1,4 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L01	1		S45 X_THETA2 S84 S65	S16	M	S42	M	triangle with left curl; line start	triangle with curl and X stroke; line start
+L01	5	? S45 X_THETA2 S84	S73 S89 S62 S73	S80	M	S65	H	8 with bar	figure 8
+L01	14	S75 S66 S40 S26	S13 S73 S70 X_THETA2	S66	M	S17	L	dotted z-like	tall z with dot above

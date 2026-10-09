@@ -1,0 +1,27 @@
+passage	pos	sign_id	conf	note
+L02	4	NONE	L	cross is stem of y; rejected t
+L03	9	o	M	small round; rejected 0
+L03	21	.	M	dot between 1 and 4
+L03	27	NONE	L	bar belongs to f; rejected t
+L03	30	0'	L	stroke over last circle; rejected plain 0
+L03	49	o	M	small circle after square
+L03	53	4	L	flag-triangle shape; rejected t
+L03	56	m	L	humped tail; weak
+L04	5	#	M	hash look; rejected t
+L04	8	p	L	loop shape; rejected T
+L04	9	y	L	crossed psi; rejected a
+L04	15	f	M	bar on f; rejected t
+L04	16	v	M	downward triangle present
+L04	32	o	M	small circle; rejected 0
+L04	46	m	L	m-like; rejected 3
+L04	47	NONE	L	no separate h seen
+L04	54	T	L	pi-shape
+L04	56	f	L	barred f; rejected n
+L05	5	o	M	small circle
+L05	6	0	L	second circle larger
+L05	8	0'	L	circle with ascender stroke; rejected d
+L05	28	3	L	figure-3 shape
+L05	29	0	L	full circle
+L05	35	NONE	L	cross is part of y; rejected t
+L05	37	0	L	circle; rejected 9
+L05	38	NONE	L	no separate sign
