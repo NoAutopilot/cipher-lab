@@ -84,7 +84,15 @@ soft partner may take that partner, every other sign fixed; stage2_restarts 4, i
 model; the best stage-2 score wins. The control is unchanged (same window, allotment and soft-letter rate as the
 corpus); only the solver differs. Must catch: a solver that reads the base letters but leaves the rare soft letters
 at their hard partners (or the reverse). Must NOT change: soft absent is byte-for-byte the old behaviour. Test:
-tools/tests/test_homophonic_soft.py."""
+tools/tests/test_homophonic_soft.py.
+
+MQS-SOLVER options (9 Oct 2026; Lasry, Biermann and Tomokiyo 2023 App. A; CTTS; homophonic_anneal.anneal/search_gaps
+document each, with what it must catch and must not block): moves=reassign|swap|both, max_homophones=N, min_count=N,
+homophone_budget=K, drop_letters=h, collapse_doubles=1, exclude=FILE (the listed signs stay in the stream as gaps, the
+--as-unknown behaviour), norm=nc2paper (the paper's score; norm=nc2 is the floor-shifted variant, not the paper's).
+They reach the plain solve and the wild= solve; drop_letters/collapse_doubles also reach the control text. Absent,
+every result is byte for byte the old one (tools/tests/test_homophonic_mqs.py). Graded on
+tools/tests/MQS-SOLVER-controls.tsv."""
 import json
 import math
 import random
@@ -225,9 +233,25 @@ def _inject_noise(seq, noise, target_counts, seed):
     return [rng.choices(labels, weights)[0] if rng.random() < noise else s for s in seq]
 
 
+def _mqs(params):
+    """MQS-SOLVER kwargs for ha.solve from --param (module docstring); all defaults when absent."""
+    ex = params.get("exclude", "")
+    return {"moves": str(params.get("moves", "reassign") or "reassign"),
+            "max_homophones": int(params.get("max_homophones", 0) or 0),
+            "min_count": int(params.get("min_count", 0) or 0),
+            "homophone_budget": int(params.get("homophone_budget", 0) or 0),
+            "gaps": ha.read_sign_list(ex) if ex else None}
+
+
+def _text_opts(params):
+    ha.set_text_options(str(params.get("drop_letters", "") or ""),
+                        str(params.get("collapse_doubles", "")) not in ("", "0", "False", "false"))
+
+
 def make_control(spec, seed, corpora, params):
     N, K = params["N"], params["K"]
     ha.set_alphabet(params.get("alphabet"))  # A2P4-KAL4: default (absent) restores the 24-letter fold exactly
+    _text_opts(params)
     if _is_units(params):
         return _make_control_units(corpora, N, K, seed, params)
     text = ha.fold("\n".join(corpora))
@@ -500,6 +524,8 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     global _LAST_UNITS
     _LAST_UNITS = None
     ha.set_alphabet(params.get("alphabet"))
+    _text_opts(params)
+    mq = _mqs(params)
     if _is_units(params):
         # corpora arrive as raw text for the target and as unit strings (the control's held-out rest) for a control
         # a unit string has no whitespace or punctuation; raw corpus text always has spaces
@@ -518,9 +544,9 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         # H25 (28 Sept 2026): every occurrence of a wild sign is its own pseudo-sign, so the anneal gives it a
         # per-position letter under the n-gram model and the unigram KL term (ceiling 1.0 for a family sign)
         seq_w = [f"{x}#{i}" if x in wild else x for i, x in enumerate(seq)]
-        res = ha.solve(seq_w, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), norm=_p(params, "norm", "none"))
+        res = ha.solve(seq_w, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), norm=_p(params, "norm", "none"), **mq)
         sc, key = res[0]
-        dec = "".join(key[x] for x in seq_w)
+        dec = "".join(key.get(x, ha.GAP) for x in seq_w)
         wl = {w: dict(Counter(key[f"{w}#{i}"] for i, x in enumerate(seq) if x == w)) for w in wild if w in seq}
         return dec, sc, {"restart_scores": [round(r[0], 1) for r in res],
                          "key": {k: v for k, v in key.items() if "#" not in k}, "wild_letters": wl}
@@ -542,9 +568,9 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     soft = str(params.get("soft", "") or "")
     if soft:
         return _solve_soft(seq, model, corpora, seed, restarts, params, soft)
-    res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), norm=_p(params, "norm", "none"))
+    res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), norm=_p(params, "norm", "none"), **mq)
     sc, key = res[0]
-    return "".join(key[x] for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res], "key": key}
+    return "".join(key.get(x, ha.GAP) for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res], "key": key}
 
 
 def _solve_soft(seq, model, corpora, seed, restarts, params, soft):
