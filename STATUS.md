@@ -6497,6 +6497,30 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_0112WrReDK9hPUT3z5o7jJGi, account 1, incarnation 6 of the blast refill), 9 October 2026 (closed 15:3x UTC: last planned wave done, lane about 51.8 of 60; seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-1340; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger6-jobs.md (waves 1-3). Fifteen
+workers 47.49 + orchestrator ~4.3 by get_session. Five_hour allowed; seven_day allowed_warning on every session.
+Result (eckert-1864, Fort Monroe mssEC 25): first audits N3 D3 -- E292 E302 E305 E306 E307 E309 (second audits AUD2-LEDGER-23..25 on account 4 held all;
+E305 corrected to West Point); N3 D2 -- E291 (AUD2-LEDGER-22, account 4). N1 at first audit (12): E299 E300 E301 E304 E308 E310 E311 (holder clear copies),
+E303 (OR I/39 pt 3), E312 E313 (N1 D1). Readers missed holder clear copies for E300 E310 E311: the verifier's all-pointer CONTENTdm search stays first.
+- Read: E300-E315, E318-E321 (No. 1), O9-BD O9-CA..CD (No. 9, ciphertext-no9.txt). E314 E315 E318-E321 and the five No. 9 entries have NO first audit yet.
+  E315 = ORN I/10 Lee to Welles and O9-BD = OR I/37 pt 2 Ord to Grant per the reader (check as N1).
+- Key: KEY-TW Tulip = stop 9/9 vs control 1/9, Whiskey = Troops 7/7 vs 1/7 (HYPOTHESES.md); written to key.md at S by FIX-FM10 (Tulip = Period).
+- Books: NO9-KEY -- No. 9 reads the Feb-Mar 1864 rows (5570, 5576); the May-July rows FM-PRE labelled 9 read in No. 1, and the FM-PRE No. 2 labels
+  (5695/2 5702/0 5782/0) also read in No. 1. No book in hand reads 5648/2 or 5639/2. Mechanical grep: every clean 1864 Fort Monroe row is now named somewhere.
+**Next** (costs this incarnation: read ~0.25-0.5/entry Sonnet; Opus first audit ~1.2-1.7/entry; FIX ~1.3-2.5):
+1. First verifiers: E314 E315 E318 E319 E320 E321 (FM-R7a/b) and O9-BD O9-CA O9-CB O9-CC O9-CD (No. 9; key-no9.md is a sample table), about 11 x 1.4.
+2. FIX-FM11: AUDIT (FV-FM9e) s.5, AUD2-LEDGER-23 lead (E305 "[Report] house" = White House), AUD2-LEDGER-24 corrections if not yet carried, and the
+   key_tw.py --blind re-judge FIX-FM10 left owed, ~2.5.
+3. No. 9 untabled words (swindle etc.): the mssEC 67 pages NO9-R1 named, read before any further No. 9 rows; ~2.
+4. mssEC 18 remaining 77 clean No. 1 rows: low yield; the next reading pool now that Fort Monroe 1864 clean rows are spent.
+5. Lead: Anderson Galleries 1908 sale catalogues (Google Books qaARAAAAYAAJ, NO_PAGES) for E305 -- a LOCAL-QUEUE row (AUD2-LEDGER-24).
+6. Blocked: 5648/2 5639/2 (no book in hand); Fort Monroe Jan-Apr 1865 (no 1865 book); 8472, 6254, 9660 (no book; Cipher No. 4 Friedman copy needs a
+   desk browser, LOCAL-QUEUE).
+Host note: FM-R7a used hdl (19 requests) without a take line; keep the token rule in every reader brief.
+Light-guardrail share (known-text work): KEY-TW 2.48 of 47.49 (~5%); further N1 found inside ordinary first audits.
+
 ## LANE LEDGER handoff (session_01Avu6MshNgo2uLhVg96J8T8, account 1, incarnation 5 of the blast refill), 9 October 2026 (closed 12:3x UTC: backlog wave done at about 83% of cap, lane about 50 of 60; seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-1040; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger5-jobs.md (waves 1-3). Eleven
