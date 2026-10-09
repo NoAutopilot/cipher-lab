@@ -8589,3 +8589,84 @@ counting it as searched; an identifier is not a volume. Suggestion (not done, ou
 `sources/ia-fulltext/print-check/` and rename or annotate the 431unit file, then re-run every eckert-1864 N3 entry dated 1 Aug-30 Sept
 1864 that reaches Halleck, Augur or the Department of Washington against it, ~$1.
 Requests: archive.org 8 djvu downloads (one 500, Cornell copy of Davis) + 2 advancedsearch, 2 s apart; hdl.huntington.org 0; Google Books 0.
+
+## AUDIT 2 (AUD2-LEDGER-17)
+
+Second verifier AUD2-LEDGER-17 (account 4, for the orchestrator (account-4)), 9 Oct 2026, 05:38-05:58 UTC by `date -u`; a separate session and
+account from the reader FM-R4b and the first auditor FV-FM7c (both account 1); this session had not read or audited E267-E269 before. Scope:
+**E267, E268, E269**. Nothing decoded; `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current", exit 0. FV-FM7c's key look-ups
+and its 20 CONTENTdm requests (holder full text, all pointers; images of 5742 and 5775) were not redone. Key source: `period`. Scratch only
+(texts, JSON, images under the session scratchpad); committed: this section, `fortmonroe/aud2_ledger17_loc.py` + `.out`, prior-work.tsv rows and
+the propagation below.
+
+### Prior-work checks
+- `prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=p.246 pointer 5790;date=1864-10-10;sender=Eckert;recipient=Dealy'
+  --step-type second-audit --offline`, and the same for `p.198 pointer 5742;date=1864-06-12;sender=OBrien;recipient=Sheldon` and `p.231 pointer
+  5775;date=1864-07-30;sender=Sampson;recipient=Sheldon`: exit 4 all three; LEAD 1-own = LANE LEDGER's target-level ROOM claim (03:42), which names
+  no unit and does not cover these items; 4-editions CLEAR on the cached OR volumes (date +-1 day, both correspondents, control hit); 3-solver
+  UNCHECKED/UNCHECKED-NET (no unit key; unsolved-ciphers not cloned). Rows in prior-work.tsv (a fourth run without correspondents also logged).
+
+### New searches (the first audit's named gaps)
+- **Chronicling America, www.loc.gov advanced form** (`fortmonroe/aud2_ledger17_loc.py` + `.out`, 9 requests incl. one IncompleteRead retry;
+  each window prints its own returned date range). Positive control `Sheridan "Cedar Creek"` 20-24 Oct 1864: 85 pages, all inside the window.
+  - E267 (8-22 Oct 1864): `Stanton Keyport` 4 pages, `"Secretary of War" Keyport` 2 (Evening Star 15 Oct p.2, New York Dispatch 16 Oct p.1),
+    `"Secretary Stanton" "City Point"` 43, `"Secretary Stanton" "Fortress Monroe"` 9, `Stanton Meigs "City Point"` 36 (term matches; not read).
+    **Read in full (tile.loc.gov ALTO full text, 1 request + 1 item JSON): Washington *Evening Star*, Saturday 15 Oct 1864, p.2**, under a
+    heading OCR'd "VI. IT TO THE ARMY OF THE POTOMAC": "This morning, the steamer Keyport, Captain Tolbert, left 6th street wharf for City Point,
+    having on board Secretary Stanton, General Meigs, Surgeon General Barnes, and others. The distinguished party are understood to be bound
+    on a visit to Gen. Grant." (https://www.loc.gov/resource/sn83045462/1864-10-15/ed-1/?sp=2). **This is the event of E267, on 15 Oct.** The
+    telegram itself is not printed there. One difference: the paper says "this morning", the telegram's code Harriet (= 1 PM, H) says 1 p.m.;
+    an afternoon paper's "this morning" for a midday sailing, or a late start, are both possible -- logged, not settled.
+  - E269 (20 Jul-31 Aug 1864): `"light vessel" "York river"` 0, `"light ship" "York river"` 0.
+- **Image, second eye on the 5790 header** (hdl token 05:52-05:53, 1 IIIF request, full 6024 x 7200 to scratch; native crops of both headers side
+  by side). The first header ("Wash'n. Oct 1_ / 64") and the second ("Washington Oct 15 / 64", which the transcription itself reads 15) write
+  the second digit with the same form: a small raised loop closed at the left with a flag stroke at the top running right. **I read the first header as "Oct 15 / 64".** With the Evening Star notice and OR I/43 pt 2 p.363 (Stanton
+  to Grant, 14 Oct: "a visit to-morrow with General Meigs"), the date is settled: **15 Oct 1864**. The transcription's "Oct 10" is a
+  misreading of the digit; the leaf's second entry (15 Oct, "... since you left") is the same day's follow-up.
+- **Gorham, *Life and Public Services of Edwin M. Stanton* (1899), vols. I-II** (`lifepublicservic01gorhuoft`, `lifepublicservic02gorh`, djvu
+  text, 2 downloads): Keyport 0, "City Point" 0 -- the October 1864 visit is not narrated. Thomas and Hyman (1962) and Marvel (2015) not
+  searched (lending-only / not on IA).
+- **Grant Papers via IA be-api (snippet only, 1.6 s apart):** vol. 12 (`papersofulyssess0012gran`, Aug-Nov 1864), positive control `Sheridan`
+  1 hit-set; Keyport 0, Dealy 0, "Surgeon General Barnes" 0. Vol. 11 (`papersofulyssess0011gran`, June-Aug 1864): "inch plank" 1 = Grant to
+  Biggs, Cold Harbor, 12 June ("particularly the 2 inch plank", the OR I/36 pt 3 pp.768-769 order FV-FM7c already cites); `Shaffer plank` the
+  same plus editorial notes on Shaffer as Butler's chief of staff; Biggs 5 snippets (biography, the 12 June order, Butler's 12:20 p.m. note
+  that Biggs is sick); scantling 0. E268's telegram is not printed there.
+- **Light-House Board annual report:** the report for the fiscal year ending 30 June 1865 (in the Secretary of the Treasury's *Report on the
+  Finances*, Dec 1865, `annualreportsec04unkngoog`, djvu text) covers July 1864: its fifth-district section (Chesapeake and tributaries:
+  James River screw-piles, Jordan's Point, Stingray Point, New Point Comfort) has no York River light vessel; whole text: York River 0. The
+  FY 1864 report (Dec 1864) was not located on IA by title search; seven `annualreportlig*` Google scans are 1870s-1880s reports (York River
+  post lights and York Spit only). Navy OR ser. I vol. 10 (cached; NAWB 1864): light-ship/light-vessel/Purviance 0.
+- **Google Books** (key + `&country=US`): HTTP 429 on the first call (`"Keyport" Stanton "City Point" 1864`); stopped, no second call.
+- Requests by host: loc.gov 9 + 2 (item JSON, ALTO text); archive.org 7 metadata + 3 advancedsearch + 11 downloads; be-api 12; hdl.huntington.org 1;
+  googleapis 1 (429).
+
+### Verdict
+- **E267: N3 holds** (no prior plaintext or decipherment located). **Depth D2 -> D3**: H 8 of 8; the date conflict that held FV-FM7c at D2 is
+  resolved (image: header digit 5; press: Keyport sailed 15 Oct with Stanton for City Point), and the Evening Star notice is a non-statistical
+  external check of the content (who, which steamer, where to, which day). Header date: **15 Oct 1864**, graded H for the day from the image
+  plus the print; the sailing hour stays as the key reads it (1 PM, H) with the paper's "this morning" logged. Safe sentence: "Read at grade H
+  with War Department Cipher No. 1: on 15 Oct 1864 Major Eckert told W. J. Dealy, operator at Fort Monroe, that the Secretary of War had left
+  Washington at 1 p.m. on the Keyport for City Point, and asked him to meet him at the wharf at Monroe, deliver his telegrams and take anything
+  he had to send. The Washington Evening Star of 15 Oct 1864 (p.2) reports the Keyport's sailing for City Point with Stanton, Meigs and Barnes;
+  the telegram itself was not located there, in the Official Records (ser. I vols. 42 pts 2-3, 43 pt 2), Gorham's Life of Stanton, the Grant
+  Papers vol. 12, 174 cached volumes, Chronicling America for 8-22 Oct 1864 (term searches) or the Huntington's full-text search (searched
+  9 Oct 2026)." Unsafe: any novelty word; "10 Oct 1864"; "the press did not report the telegram" (most hit pages unread). Depth sentence
+  (FV-FM7c's, kept): "Eckert arranged for the Fort Monroe operator to meet Stanton's steamer Keyport at the wharf on its way to City Point and
+  to act as his telegraph office while he passed."
+- **E268: N3 holds. D3 kept** (H 14 of 14; the clear header's 7.30 P.M. and 12 agree with Minnie and Forbid; OR I/36 pt 3 and Grant Papers
+  vol. 11 print the same-day plank orders, not this telegram). FV-FM7c's two corrections (the noun "plank" is I, the numeral is 2; signed
+  Col. Shaffer, "please hurry me an operator" is O'Brien's own line) agreed: Walrus = Signature stands before "paradise shaffer chief of staff"
+  on the image FV-FM7c read. Safe sentence: FV-FM7c's, with "the Grant Papers vol. 11" added to the places not located. Unsafe: any novelty word.
+- **E269: N3 holds. D3 kept** (H 12 of 12; external check = the holder's 5774/4823 copies of Biggs's 25 July request, whose clear copy also
+  confirms Windsor = River and Stagger = Light). Safe sentence: FV-FM7c's, with "the Light-House Board's report for the year to 30 June 1865
+  and the Chronicling America press of 20 Jul-31 Aug 1864" added to the places not located. Unsafe: any novelty word; "not located" without
+  naming 4823.
+- Key `period` for all three. Propagated: status.json rows (audit_refs, audit_status "two audits", gap; E267 title, line, depth D3, depth_by,
+  depth_check, completeness); SO-ECKERT-E267 prompt (header date, the Evening Star notice and the new searches, so the second opinion does not
+  "find" it as prior print). Not edited here (a FIX worker's, through decode.py's notes): **ciphertext.txt's `### E267` header and reading.md
+  still say "10 Oct 1864"; they should read 15 Oct 1864 (header transcribed "Oct 10", image "Oct 15").** The SO-ECKERT-E268/-E269 prompts
+  are unchanged (nothing found that a second opinion could mistake for prior print).
+- Postmortem: nothing against FV-FM7c's readings or grades; its "10 or 15, not settled from the image" was the right caution, and the press
+  of the day settles it. The reader's "10 Oct 1864" came from the transcription's digit, which a side-by-side crop with the leaf's own "15"
+  shows to be a 5. Still open: the other hit pages of 15-17 Oct (New York Dispatch 16 Oct p.1, Daily National Intelligencer 15 Oct p.3) for
+  the hour of sailing; Google Books (429); the Light-House Board report of Dec 1864.
