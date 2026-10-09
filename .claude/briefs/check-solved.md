@@ -142,3 +142,10 @@ image, key, edition or person, also writes "## While waiting" in NOTES.md naming
 nobody (tools/next_steps.py reads it), and pastes `python3 tools/next_steps.py --wait-only | grep <target>` showing
 no line. Lesson of 3 Oct 2026 (RETRO-2026-10-03-acct3): wait-only rose 25 -> 38 in a day; 23 of the 38 were cleared by
 GF-A2/CS-A2 gate-fix batches whose briefs never asked for the section.
+
+**Pool targets, clear-copy witnesses (orchestrator (account-4), 9 Oct 2026, from LANE MQS-3 / MQS-WITNESS-LABELS; shelf weak, leads never
+verdicts).** Before a pool target (one sender, office and key family) takes a reading from a clear copy or a printed decipherment, run
+`python3 tools/decode_witness.py --criteria-scan <copy>` (was the passage actually sent in cipher, by the criteria in
+tools/data/sent_in_cipher_criteria.tsv; Lasry, Biermann and Tomokiyo 2023 p.131 n.70) and, once a decode exists, `--label-diffs` against it
+(omission / addition / substitution / name-code / spelling-only after normalisation). Both outputs are leads for the verdict's "what was
+read" sentence, not a status; the edition step and the pages read still decide.
