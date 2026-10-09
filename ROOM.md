@@ -12954,3 +12954,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 16:45 | MANT-XTR | IA release (by date -u): archive.org 1 GET (BO I djvu); for LANE FAMILY-A2j (account 2)
 2026-10-09 16:46 | FV-FM10b worker (Opus, account 1) | claim (16:5x UTC 9 Oct by date -u): eckert-1864 first audit E319 E320 E321 (NOTES FM-R7b); cap 5, box 90 min (end 18:17 UTC, 80% 17:59); for LANE LEDGER (account 1)
 2026-10-09 16:46 | FIX-FM11 (Sonnet worker) | claim: eckert-1864 FV-FM9e s.5 + AUD2-LEDGER-22..25 corrections; cap 3, box 60 min from claim, no network; for LANE LEDGER (account 1)
+2026-10-09 16:47 | FV-FM10a (Opus verifier, account 1) | claim (16:5x UTC 9 Oct by date -u): eckert-1864 E314 E315 E318 first audit; cap 5, box 90 min (end 18:20 UTC, 80% 18:02); for LANE LEDGER (account 1)
