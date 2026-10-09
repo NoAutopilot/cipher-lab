@@ -1,0 +1,17 @@
+row	pick	conf	note
+1	1	H	m-shape matches cand 1
+2	none	M	small raised a-like squiggle; not inf, barred theta or x
+3	1	H	barred theta
+4	3	M	loop on plain stem, no crossbar seen; cand 1 (phi) the alternative
+5	2	H	plain cross
+6	none	L	box mostly on dark page-edge band; partial Ce-like sign, not theta; eo (cand 2) unlikely
+7	1	M	upright double-bar hash; cand 2 (slanted) the alternative
+8	1	H	t
+9	2	H	t
+10	3	M	bold slanted hash; cand 2 the alternative
+11	none	L	Ce/ce-ligature sign; cand 1 blank, inf and cand 3 do not fit
+12	none	H	m-shape; candidates 4-like and 7-like do not match
+13	2	M	bold slanted hash; cand 1 the alternative
+14	2	H	phi
+15	3	H	lambda-like
+16	2	H	double-barred stem with top curl

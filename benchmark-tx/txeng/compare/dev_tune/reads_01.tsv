@@ -1,0 +1,17 @@
+row	pick	conf	note
+1	3	M	loop with stem through top and bottom, phi-like; cand 2 stem below only
+2	1	M	stem with two crossbars and top hook
+3	4	H	pi
+4	2	M	same double-crossbar stem sign as row 2
+5	none	M	cursive omega/m-loop; not inf, #, or D
+6	2	M	two verticals, one crossbar
+7	2	H	# with two crossbars
+8	1	H	# two crossbars
+9	2	L	omega-like loop; cand 2 closest, cand 3 blank
+10	1	H	m
+11	none	L	T with curled top bar; cand 1 t nearest but differs
+12	3	H	# two crossbars
+13	1	H	theta-bar
+14	1	H	infinity
+15	3	H	m
+16	3	L	round O; cand 3 blob/o closest, unclear

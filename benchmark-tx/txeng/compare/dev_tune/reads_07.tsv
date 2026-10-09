@@ -1,0 +1,17 @@
+row	pick	conf	note
+1	3	H	plain cross +
+2	2	H	m
+3	1	M	phi with full loop; 2 is thinner ϕ
+4	none	M	boxed is 8-like sign; c/m do not match, 3 blank
+5	none	L	cross over inverted triangle; 1 and 3 differ, 2 blank
+6	2	M	phi with full loop
+7	3	H	barred o (theta)
+8	3	M	upright double-bar #; 2 is slanted
+9	1	H	m
+10	2	H	n with 3 tail
+11	2	M	slanted #
+12	1	L	bad cut: left stroke of m only
+13	none	L	box covers m-like sign; B and # do not match
+14	1	M	upright #; 3 is slanted
+15	3	H	R
+16	2	H	barred o (theta)

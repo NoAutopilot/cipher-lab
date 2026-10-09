@@ -1,0 +1,17 @@
+row	pick	conf	note
+1	2	M	crossed-o (theta) sign; tail of following 9 in box
+2	none	L	box mostly smudge/blank with a small o at left edge; no clear sign
+3	1	M	two verticals with two crossbars (#); cand 3 has one crossbar
+4	1	M	two verticals with single long crossbar (H-like), matches cand 1 not #
+5	1	H	g
+6	2	H	pi
+7	1	L	dark blot only; matches blot candidate, may be ink smudge not a sign
+8	2	H	crossed-o (theta)
+9	1	H	double-stroke Ш with underline
+10	2	H	reversed-epsilon+epsilon ligature
+11	2	L	D with stem; cands 2 and 3 both D-forms, hard to separate
+12	none	M	two circles joined by bar (o-o), not theta or ligature
+13	none	L	box spans two signs (theta + #); bad cut
+14	3	H	phi
+15	3	H	double-bar flag sign
+16	none	M	figure 8; B candidate is a different shape
