@@ -1,0 +1,8 @@
+copy	edition_year	identifier	source	pages	view	pp83_241_reachable_from_cloud
+1	1809	newpocketdiction00viey	archive.org (Toronto/Robarts scan, 400 ppi scribe)	830 images	full view, public	YES: leaves 95 and 255 fetched 9 Oct 2026 at 1897x2152 via iiif.archive.org (the 949 px BookReader derivative is half this); _orig_jp2.tar (468 MB) not fetched
+2	1809	GzchKivL6_EC	Google Books (F. Wingrave, J. Johnson)	826	ALL_PAGES, pdf available per API	NO from cloud: books.google.com page view 403 'Sorry' (1 request on 0mESAAAAIAAJ, 9 Oct 2026; host table already records the block); local-runner row needed
+3	1809	0mESAAAAIAAJ	Google Books (F. Wingrave, J. Johnson)	810	ALL_PAGES, pdf available per API	NO from cloud (same); page count differs from copy 2 (810 vs 826) and from IA (830 images)
+4	1809	nyp.33433075910087 (HathiTrust record 008619429, OCLC 10691917)	HathiTrust, NYPL original, v. 1-2	n/a	Full view (pd)	NO from cloud: babel.hathitrust.org Cloudflare-challenged (host table); bibliographic API answered
+5	1826	x74GAAAAQAAJ	Google Books	864	ALL_PAGES	not tried; later edition, pagination differs -- would not carry the 1809 pp.83/241 headword order
+6	1873	9VhDAAAAYAAJ / novodiccionariop00vieyuoft / nnc1.0043867839	Google Books; IA; HathiTrust (Columbia)	n/a	full view	later edition (Novo diccionario portatil), not the 1809 text
+7	1813	dictionaryportu00vieygoog	archive.org (Google scan)	n/a	full	different work (the full Vieyra dictionary), not the pocket abridgement
