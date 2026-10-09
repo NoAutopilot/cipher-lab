@@ -1,0 +1,89 @@
+passage	pos	sign_id	alt	conf	note
+L04	1	T90		H	line start; cross over oval
+L04	2	T25		H	lambda
+L04	3	T33		M	two short verticals on long base
+L04	4	X_NEW	T17	L	C joined to small e-loop ending in upturned hook (Ce ligature), one sign width
+L04	5	T86		H	two verticals one bar
+L04	6	T76		H	9 with descender
+L04	7	T45		H	stem above oval
+L04	8	T86		H	one bar
+L04	9	T90		M	cross over oval, top cut by crop
+L04	10	T37		H	theta, bar extends both sides
+L04	11	T97		H	ampersand-like crossed loop
+L04	12	T53	T92	M	two joined loops, hooks at top
+L04	13	T96		M	leaning l-loop with stroke up to dot top right
+L04	14	T65		H	circle-pair with cross below
+L04	15	T19		H	pi
+L04	16	T18		H	phi with long stem
+L04	17	T96		M	leaning l-loop with dot stroke
+L04	18	T54		H	R
+L04	19	T19		H	pi
+L04	20	T18		H	phi
+L04	21	T52		H	n with z-tail
+L04	22	T89		M	small loop top-left on stem, bowl bottom-right
+L04	23	T86		H	one bar
+L04	24	T57		H	diamond with descending tail
+L04	25	T86		H	one bar
+L04	26	T60		H	two bars
+L04	27	T18		H	phi
+L04	28	T52		H	n with z-tail; line end
+L05	1	T76	T18	M	line start; q-shape loop with straight descender
+L05	2	T57		H	diamond with tail
+L05	3	T55		H	vertical with two bars right
+L05	4	T90	T45	L	cross on stem with bowl right and foot (crossed b)
+L05	5	T58		H	B
+L05	6	T37		H	theta
+L05	7	T85	X_NEW	L	t-shape: cross with foot curling right
+L05	8	T19		H	pi
+L05	9	T13		M	m with superscript swirl over next sign
+L05	10	T25		H	lambda
+L05	11	T86		H	one bar
+L05	12	T63		H	V
+L05	13	T45		H	stem above oval
+L05	14	T13		M	m with superscript swirl; small dot at baseline after it
+L05	15	T85		H	plus
+L05	16	T19		H	pi
+L05	17	X_K		H	capital K
+L05	18	T45		H	stem above oval
+L05	19	T76		H	9 with long descender
+L05	20	T25		H	lambda
+L05	21	T19		H	pi
+L05	22	T60		H	two bars
+L05	23	T86		H	one bar
+L05	24	T89		M	loop top-left on stem, bowl bottom-right
+L05	25	X_NEW	T17	L	Ce ligature as in L04 pos 4
+L05	26	T19		H	pi
+L05	27	T76		H	9 with long descender
+L05	28	T52		H	n with z-tail
+L05	29	T54		H	R
+L05	30	T37		H	theta
+L05	31	T76		M	9 with descender; line end
+L06	1	T53	T10	M	line start; two touching circles side by side
+L06	2	T45		H	stem above oval
+L06	3	T60		H	two bars
+L06	4	T86		H	one bar
+L06	5	T76		H	9 with long descender
+L06	6	T63		H	V
+L06	7	T19		H	pi
+L06	8	T29		H	epsilon joined by bar to small o
+L06	9	T24	X_NEW	M	plain reversed-3 epsilon, no tail
+L06	10	T37		H	theta
+L06	11	T33		H	two verticals on long base
+L06	12	T19		H	pi
+L06	13	T83		H	crossed back-to-back curves
+L06	14	T80		H	D
+L06	15	T10		H	o-o
+L06	16	T37		H	theta
+L06	17	T60		H	two bars
+L06	18	T18		H	phi
+L06	19	T55		H	vertical with two bars right
+L06	20	T65		H	circle-pair with cross below
+L06	21	T33		M	small, two verticals on base
+L06	22	T27		H	loop on top with S-tail below
+L06	23	T80		H	D
+L06	24	T58		H	B
+L06	25	T80		H	D
+L06	26	T15	T76	M	8 with blob top-right then 9 (89)
+L06	27	T29		H	epsilon-bar-o
+L06	28	T63		H	V
+L06	29	T45		H	stem above oval; line end
