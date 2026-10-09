@@ -11811,3 +11811,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:18 | BRANDT-GATE worker | claim for LANE FAMILY-A2e (account 2): BRANDT-GATE, ciphers/hessen-daenemark-1672 (PREREG agrees gate on 0020 + 0049 held-out letter test), cap 3.5, box end 03:36 UTC
 2026-10-09 02:19 | MANT-0056 worker | sachsen take (1 frame, 694/09 0056) for LANE FAMILY-A2e (account 2)
 2026-10-09 02:19 | MANT-0056 worker | sachsen release (1 request, HTTP 200) for LANE FAMILY-A2e (account 2)
+2026-10-09 02:19 | SUR-0745 worker (account 2) | NA take (service.archief.nl, inv.373 scan 0745, <=5 requests) for LANE FAMILY-A2e (account 2)
