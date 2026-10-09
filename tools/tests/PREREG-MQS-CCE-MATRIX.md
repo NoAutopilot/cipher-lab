@@ -76,3 +76,29 @@ Rule B is the option's default; rule A stays selectable (`--cce-rule gain`). The
 results; each rule's grade follows its own gates.
 
 ## Results (appended after the run)
+
+Disclosure: before the controls ran, the offline tests (tools/tests/test_decode_key_cce.py; fixture seeds 1 and 2, not
+control seeds) were run to check the code path; the fixture result that motivated amendment 1 is stated there. No
+threshold, statistic or gate was changed after any control row. Control seeds 2000-2009, 200 null draws; rows in
+tools/tests/MQS-CCE-MATRIX-controls-gain.tsv (rule A) and MQS-CCE-MATRIX-controls-best.tsv (rule B). Material: Danzay,
+870 tokens; planted 26 (3%) and 17 (2%) tokens per seed.
+
+| gate | rule A (`gain`, registered) | rule B (`best`, amendment 1) | gate |
+|---|---|---|---|
+| K3 (3%) sibling reported contaminating | 5/10 (mean rate 0.154 vs null p95 0.156) | 6/10 (0.044 vs 0.040) | >= 8/10 |
+| K2 (2%) | 3/10 (0.138 vs 0.147) | 3/10 (0.036 vs 0.038) | >= 7/10 |
+| D0 (clean stream) | 1/10 (0.103 vs 0.120) | 1/10 (0.021 vs 0.035) | <= 1/10 |
+| DATE p(S) < p(C); C contaminating | 8/10; 3/10 | 8/10; 2/10 | >= 8/10; <= 1/10 |
+| POS planted flagged (precision, reported) | 177/260 = 0.681 (177/673 = 0.263) | 112/260 = 0.431 (112/196 = 0.571) | >= 0.50 |
+
+Outcome (rule above): **weak** for both rules (rule A misses K3, K2, DATE; rule B misses K3, K2, DATE, POS). Ceiling
+check: neither control is near ceiling (K3 at most 6/10), so the p = 1% row was not run. Reading: at 2-3% of an
+870-token letter (17-26 tokens) the document-level flag rate does not separate the true sibling from its own
+permutations: a planted spot is a wrong letter in prose, so an arbitrary substitute often "improves" it too (rule A),
+and requiring the top letter (rule B) cuts the background four-fold but also cuts recall below half. An unrelated
+sibling C is reported contaminating in 2-3 of 10 contaminated documents, so a dating read from this instrument at
+this length would be wrong about one time in four. The per-code matrix and the per-position rows remain usable as
+candidate lists for an image check (precision 0.57 under rule B), never as a verdict. Not re-briefed (rule 3, outcome
+rule); nothing run on any target; Birago 1572 and Matignon stay closed to this design without new material. What
+would change it: more tokens from one hand and one period (a pool of sibling letters, where the same contaminating
+codes recur), not a further tuning of the threshold on one letter.

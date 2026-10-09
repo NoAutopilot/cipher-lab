@@ -78,6 +78,19 @@ an ordinary occurrence of either code (offline fixture and D-control in tools/te
 pairs come from the person or a glyph atlas, never from this scan. A report: a flag is a candidate for an image check,
 never a key, exception or reading edit. Controls and grade: tools/tests/PREREG-MQS-LOOKALIKE-SLIPS.md.
 
+--error-matrix SIBLING_KEY[,KEY2...] [--cce-rule best|gain] [--cce-min 3.0] [--nulls 200] [--cce-seed 0] [--error-tsv F] (9 Oct 2026, MQS-CCE-MATRIX;
+Biermann, Tomokiyo and Lasry, HistoCrypt 2024, pp.5-8; Lasry, Biermann and Tomokiyo 2023 App. B pp.198-200, Figs B22-B23:
+cross-cipher contamination, a clerk writing some signs from another key of the same office). Per sibling key (key.tsv
+format), every token whose code the sibling keys to a different value is read as the sibling value ONE position at a time
+(the --lookalike gain); flagged at gain >= --cce-min and, under --cce-rule best (default), only where the sibling
+value is also the top letter of the alphabet at that position (--cce-rule gain drops that condition); rate = flagged / examined, against a null of the sibling's values
+permuted among its differing codes (codes where the two keys agree stay fixed); 'contaminating?' when the rate exceeds the
+null p95. Several keys are ranked by p (dating by the contaminating key), each with its per-code matrix (own, sibling,
+n, flagged, mean gain; 'recurrent' at >= 2 flags). Meant to catch a document with a few per cent of tokens enciphered from
+the sibling; must NOT report a clean document or an unrelated sibling as contaminating (offline fixture
+tools/tests/test_decode_key_cce.py). A report: a flag is a candidate for an image check, never a key or reading edit.
+Controls and grade: tools/tests/PREREG-MQS-CCE-MATRIX.md.
+
 Base and mark (MQS-BASE-MARK, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M11; Lasry, Biermann and Tomokiyo 2023
 p.112 n.48, Figs 3-4 p.113: diacritic variants as separate types). A tsv ciphertext with `base` and `mark` columns and no sign
 column (tools/sign_sorter_apply.py --split-marks writes them) reads each sign as 'B' (no mark) or 'B:X'. --merge-mark SPEC
@@ -1461,6 +1474,146 @@ def lookalike_main(a):
     return 0
 
 
+# ---------------------------------------------------------------- cross-cipher contamination (MQS-CCE-MATRIX, 9 Oct 2026)
+
+def cce_sibling(target, path, cw):
+    """A sibling key file (key.tsv format; a path, or a name under TARGET) -> {code: folded value} for the codes
+    of the document that it keys. An ambiguous value 'a|b' reads as its first value, NULL as ''."""
+    p = path if os.path.exists(path) else os.path.join(target, path)
+    if not os.path.exists(p):
+        raise SystemExit(f'--error-matrix: no sibling key {path}')
+    out = {}
+    for c, r in load_key(p).items():
+        if c in cw.count and r['value'] not in ('', '?'):
+            out[c] = cw.fold(r['value'].split('|')[0])
+    return out
+
+
+class CceGains:
+    """--lookalike's one-position gain, memoised per (stream, index, value): the null draws re-read the same
+    positions with other letters, so each window is scored once."""
+
+    def __init__(self, cw):
+        self.cw, self.memo = cw, {}
+
+    def gain(self, k, i, val):
+        key = (k, i, val)
+        if key not in self.memo:
+            self.memo[key] = lookalike_gain(self.cw, k, i, val)
+        return self.memo[key]
+
+    def best(self, k, i):
+        """The highest gain any one letter of the model's alphabet (or the null value '') gives at (k, i)."""
+        key = (k, i, None)
+        if key not in self.memo:
+            gs = [self.gain(k, i, v) for v in list(self.cw.M.alpha) + ['']]
+            self.memo[key] = max(g for g in gs if g is not None)
+        return self.memo[key]
+
+
+def cce_stat(cg, sval, minimum=3.0, rows=None, rule='best'):
+    """(flagged, examined) for sibling values sval: a position is examined when its code has a sibling value
+    different from the position's own value; flagged when the gain is >= minimum and, under rule 'best' (amendment 1
+    of the PREREG), the sibling value is also the top letter at that position (ties count). rows: a list to append to."""
+    cw = cg.cw
+    flagged = examined = 0
+    for k, s in enumerate(cw.S):
+        for i, (t, own) in enumerate(s):
+            if t is None or own is None or t not in sval or sval[t] == own:
+                continue
+            g = cg.gain(k, i, sval[t])
+            if g is None:
+                continue
+            examined += 1
+            fl = g >= minimum and (rule == 'gain' or g >= cg.best(k, i) - 1e-9)
+            flagged += fl
+            if rows is not None:
+                ctx = ''.join(('?' if v is None else v.lower()) for _, v in s[max(0, i - 6):i]) + '[' + \
+                    (own or '-') + '>' + (sval[t] or '-') + ']' + \
+                    ''.join(('?' if v is None else v.lower()) for _, v in s[i + 1:i + 7])
+                rows.append(dict(code=t, stream=k, index=i, own=own, sibling=sval[t], gain=g, flag=fl,
+                                 context=ctx))
+    return flagged, examined
+
+
+def cce_null(cg, sval, minimum=3.0, draws=200, seed=0, rule='best'):
+    """Flag rates with the sibling's values permuted among its codes whose value differs from the code's own
+    current value (codes on which the two keys agree stay fixed), one rate per draw."""
+    cw = cg.cw
+    own = {c: cw.fold(cw.current(c)) if cw.current(c) is not None else None for c in sval}
+    free = sorted(c for c in sval if sval[c] != own[c])
+    vals = [sval[c] for c in free]
+    rnd = random.Random(seed)
+    out = []
+    for _ in range(draws):
+        rnd.shuffle(vals)
+        perm = dict(sval)
+        perm.update(zip(free, vals))
+        f, e = cce_stat(cg, perm, minimum, rule=rule)
+        out.append(f / e if e else 0.0)
+    return out
+
+
+def cce_test(cg, sval, minimum=3.0, draws=200, seed=0, rule='best'):
+    """One sibling key against one document: rate, null p95, p and the per-position rows."""
+    rows = []
+    f, e = cce_stat(cg, sval, minimum, rows, rule)
+    r = f / e if e else 0.0
+    null = sorted(cce_null(cg, sval, minimum, draws, seed, rule))
+    p95 = null[min(len(null) - 1, int(math.ceil(0.95 * len(null))) - 1)] if null else 0.0
+    p = (1 + sum(x >= r for x in null)) / (1 + len(null))
+    mean = sum(null) / len(null) if null else 0.0
+    return dict(flagged=f, examined=e, rate=r, null_mean=mean, null_p95=p95, p=p, contaminating=bool(null) and r > p95,
+                rows=rows)
+
+
+def cce_matrix(rows):
+    """Per code: own value, sibling value, n examined, n flagged, mean gain, recurrent (flagged >= 2)."""
+    by = collections.OrderedDict()
+    for r in rows:
+        by.setdefault((r['code'], r['own'], r['sibling']), []).append(r)
+    out = []
+    for (c, own, sib), rs in by.items():
+        nf = sum(x['flag'] for x in rs)
+        out.append(dict(code=c, own=own, sibling=sib, n=len(rs), flagged=nf,
+                        mean_gain=sum(x['gain'] for x in rs) / len(rs), recurrent=nf >= 2))
+    return sorted(out, key=lambda x: (-x['flagged'], -x['mean_gain']))
+
+
+def error_matrix_main(a):
+    """--error-matrix: one line per sibling key (ranked by p), then the per-code matrix of each. Writes no key or
+    reading; --error-tsv writes every examined position."""
+    jobs = load_config(a.target, a)
+    cw = Crossword(a.target, jobs, lm_load(a.lm), window=a.window)
+    cg = CceGains(cw)
+    res = []
+    for path in [x.strip() for x in a.error_matrix.split(',') if x.strip()]:
+        res.append((path, cce_test(cg, cce_sibling(a.target, path, cw), a.cce_min, a.nulls, a.cce_seed, a.cce_rule)))
+    res.sort(key=lambda x: x[1]['p'])
+    print(f"# error-matrix: {len(res)} sibling key(s); rule {a.cce_rule}: flag = gain >= {a.cce_min} bits{' and the top letter there' if a.cce_rule == 'best' else ''}; null = sibling values permuted "
+          f"among its differing codes, {a.nulls} draws, seed {a.cce_seed}; lm {a.lm or 'fr16'}; window {a.window} "
+          f"(a report: candidates for an image check, never a key or reading edit; shelf: tools/data/tool_shelf.tsv)")
+    print('sibling\tflagged\texamined\trate\tnull_mean\tnull_p95\tp\tverdict')
+    for path, r in res:
+        print(f"{path}\t{r['flagged']}\t{r['examined']}\t{r['rate']:.3f}\t{r['null_mean']:.3f}\t{r['null_p95']:.3f}\t"
+              f"{r['p']:.3f}\t{'contaminating?' if r['contaminating'] else 'not above null'}")
+    for path, r in res:
+        print(f"\n## {path}: per-code matrix ({'all codes' if a.show == 'all' else 'codes with a flag'})")
+        print('code\town\tsibling\tn\tflagged\tmean_gain\trecurrent')
+        for m in cce_matrix(r['rows']):
+            if a.show == 'all' or m['flagged']:
+                print(f"{m['code']}\t{m['own'] or '-'}\t{m['sibling'] or '-'}\t{m['n']}\t{m['flagged']}\t"
+                      f"{m['mean_gain']:.1f}\t{'recurrent' if m['recurrent'] else ''}")
+    if a.error_tsv:
+        lines = ['sibling\tcode\tstream\tindex\town\tsibling_value\tgain\tflag\tcontext']
+        for path, r in res:
+            lines += ['\t'.join([path, x['code'], str(x['stream']), str(x['index']), x['own'] or '-',
+                                 x['sibling'] or '-', f"{x['gain']:.1f}", 'cce?' if x['flag'] else '', x['context']])
+                      for x in r['rows']]
+        open(a.error_tsv, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
+    return 0
+
+
 # ---------------------------------------------------------------- aliases (MQS-ALIAS, 9 Oct 2026)
 
 ALIAS_GRADE = re.compile(r'(?<![A-Za-z])([HCSMIU])(?![A-Za-z])')
@@ -1804,11 +1957,23 @@ def main(argv=None):
     ap.add_argument('--merge-mark', metavar='X[=Y][,..]|*', help='reclassify marks text-wide on B:X signs: X dropped, '
                     'X=Y renamed, * all dropped; warns when two keyed codes collapse (MQS-BASE-MARK)')
     ap.add_argument('--lookalike-tsv', help='with --lookalike: write every examined occurrence to this TSV')
+    ap.add_argument('--error-matrix', metavar='SIBLING_KEY[,KEY2...]', help='cross-cipher contamination: read each '
+                    'position as a sibling key of the same office would, one at a time; flag rate vs a permuted-sibling '
+                    'null, and a per-code error matrix (MQS-CCE-MATRIX; a report, never a key edit)')
+    ap.add_argument('--cce-min', type=float, default=3.0, help='with --error-matrix: flag threshold in bits (3.0)')
+    ap.add_argument('--cce-rule', choices=['best', 'gain'], default='best', help='with --error-matrix: best (default: '
+                    'gain >= --cce-min and the sibling value is the top letter there) or gain (gain alone; weaker, see PREREG)')
+    ap.add_argument('--cce-seed', type=int, default=0, help='with --error-matrix: null seed (0)')
+    ap.add_argument('--error-tsv', help='with --error-matrix: write every examined position to this TSV')
     a = ap.parse_args(argv)
     if a.aliases or a.alias_scan:
         return alias_main(a)
     if a.lookalike:
         return lookalike_main(a)
+    if a.error_matrix:
+        if a.nulls == 100:
+            a.nulls = 200
+        return error_matrix_main(a)
     if a.special_scan:
         if a.nulls == 100:
             a.nulls = 50
