@@ -1,0 +1,10 @@
+# MQS-SOLVER controls, 9 Oct 2026 (tools/tests/PREREG-MQS-SOLVER.md, Amendment 1: every baseline at 800/1500/2600 is 94.7-96.5%, no headroom; no gain claim). Accuracy = letter tokens right / all letter tokens, ? counted wrong. N-rule baselines: N=800 0.9640,0.9624,0.9687; N=1500 0.9421,0.9460,0.9640; N=2600 0.9460,0.9508,0.9451.
+cell	design	change	N	letter_tokens	marked_share	restarts	per_seed_share(1,2,3)	mean	sd	processed_share	gate (PREREG; no headroom: no gain read, all weak)
+base	matched K40 1-2	defaults (--skip marked)	800	639	0.201	8	0.9640,0.9624,0.9687	0.9650	0.0033	1.0000	null/bar
+base_r16	matched	--restarts 16	800	639	0.201	16	0.9640,0.9624,0.9687	0.9650	0.0033	1.0000	null/bar
+swap	matched	--moves swap	800	639	0.201	8	0.9374,0.9311,0.9296	0.9327	0.0041	1.0000	gain -0.0323 vs bar 0.0065: FAIL
+both	matched	--moves both	800	639	0.201	8	0.9640,0.9624,0.9687	0.9650	0.0033	1.0000	gain +0.0000 vs bar 0.0065: FAIL
+cap2	matched	--max-homophones 2 (oracle bound)	800	639	0.201	8	0.0282,0.0673,0.2441	0.1132	0.1150	1.0000	gain -0.8518 vs bar 0.0065: FAIL
+min3	matched	--min-count 3	800	639	0.201	8	0.9640	0.9640	0.0000	0.9875	gain -0.0010 vs bar 0.0065: FAIL
+mis_base	mismatched K52 1-3	defaults	800	639	0.201	8	0.9703,0.9624,0.9624	0.9650	0.0046	1.0000	null/bar
+mis_r16	mismatched	--restarts 16	800	639	0.201	16	0.9703,0.9624,0.9624	0.9650	0.0046	1.0000	null/bar
