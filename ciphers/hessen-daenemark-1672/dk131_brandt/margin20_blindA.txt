@@ -1,0 +1,4 @@
+# BRANDT-MARGIN blind pass A (Sonnet, top-down, cropsM/m20_L01_x4, m20_L02_x4, m20_L01-02_x4 only; no gloss, key, ciphertext or prior pass shown), 9 Oct 2026. Verbatim.
+# LINE1: Lues [?] Hauszelt [?] (alt: Lues Haus zelt / Luer Haußgest); LINE2: Wenss [?] dem hertz[?]o[?] (cut at right edge; word 1 alt Wess/Zwess/Zuess)
+Lues[?] Hauszelt[?]
+Wenss[?] dem hertz[?]o[?]
