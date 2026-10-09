@@ -58,8 +58,14 @@ reachable by the off-sheet shape score alone, because the score adds 0 catches b
 (p2c_L02.7, truth n) is a consensus misread on-sheet: both readers wrote PHI. The detector's blind spot holds here, and
 no grown sheet built from flagged tiles reaches it.
 
+## Commits
+Detect, before recall: 5fdd0ba99 (sha256 of detect.sha256 1945de65f9d51e00443fb11c825e21855cd678cd8d8b5d54dd2e960d12baadcc).
+Recall and tables: 5ea6c38c5 (recall.jsonl 6f6821fbd11f1623e26f080ac8d565344975dfa686fb8ec648fa864399a1a032, errors_v4.tsv
+f4ac1e8c16566025eb1b90bbb34c69cba36a1859ee38306524b5e2efedc7842c).
+
 ## Reading
 Moving to the v4 baseline halves the error pool (14 -> 6 flagged-excluded). Recall rises because the errors atlas_v4 fixed
-were mostly consensus and untiled misses (X1b's 2 deleted h and 3 of its 4 consensus tiles are gone), not because the
-detector improved. Score-only catches went from 1 to 0. As in X1b, the readers' own NEW: flags carry the result, here
+were mostly consensus and untiled misses: X1b's 2 deleted h and 3 of its 4 consensus tiles are no longer in the
+flagged-excluded pool, either fixed by the v4 reads or excluded by a V2 flag (not separated here, post hoc). Recall did
+not rise because the detector improved. Score-only catches went from 1 to 0. As in X1b, the readers' own NEW: flags carry the result, here
 completely. Spinelli only, never a figure for the hand beyond it. N = 6 errors, so the recall's interval is wide.
