@@ -1,0 +1,124 @@
+# MANT-INV08 (9 Oct 2026, LANE FAMILY-A2f account 2): Loc. 694/08 stride-4 inventory of the 376 frames no earlier TSV or NOTES section lists (94 frames, every fourth in file order from 0002) + controls. www.archiv.sachsen.de frames.tsv URLs, 100 requests (94 + 6 controls), >=1.6 s apart, all HTTP 200 image/jpeg. 14 contact sheets of 8-9 (800 px tiles, film header cropped, shuffled seed 608, one known-cipher and one known-clear control per sheet), 4 Sonnet calls; every non-none target eye-checked by the worker at 1500 px. Frame ids are URL file numbers (film stamp = file+1). Grade M; gloss words in notes are the worker eye reading at 1500 px (M), not transcriptions.
+loc	frame	kind	sheet_label	sheet_read	sheet_glossed	sheet_conf	code	glossed	density_eye	est_tokens	note	http	sha256_16
+694/08	0002	target	S12-8	none	-	high	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	22a75eec847704b6
+694/08	0007	target	S4-2	light	n	low	n	-	-	0	f.3 receipt (Beauregard, 1 Feb 1712) + letter end, sums only; sheet false positive	200 image/jpeg	2deab3f8d588220d
+694/08	0012	target	S5-9	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	89d4c45ed524b8bb
+694/08	0017	target	S8-9	none	-	high	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	c319eb65245972e1
+694/08	0023	target	S7-3	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	18822408bdb1c320
+694/08	0028	target	S11-3	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	4fcd88a7cb4eea9f
+694/08	0033	target	S3-8	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	a041654f13e28a86
+694/08	0038	target	S6-1	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	66cdcb5667073975
+694/08	0043	target	S1-2	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	7797e5fc122a44dc
+694/08	0048	target	S12-1	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	8f6d0b076ffda9b5
+694/08	0053	target	S2-1	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	e1d65a7b4b59396b
+694/08	0058	target	S3-4	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	c00e4e3e6a7e45e2
+694/08	0063	target	S11-2	light	?	low	n	-	-	0	f.45 letter, clear; sheet false positive	200 image/jpeg	9565fddc01e3273f
+694/08	0070	target	S3-2	light	y	low	n	-	-	0	draft with deletions, clear; sheet false positive	200 image/jpeg	009b61d0504a6c94
+694/08	0076	target	S6-5	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	9d7cd40459c0c328
+694/08	0080	target	S8-1	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	f664bd7442fc0212
+694/08	0086	target	S10-8	moderate	y	low	y	y	moderate	50-60	f.63 (no 37, Berl. ce 29 Mai 1712): runs 44.33.12.7, 34.66.30.50.28.4.16.21.35.13.17.22.44.16.14.34.25.10, 8.60, 55.44, 11.60 x4; glossed (possessionem Polonie, Cz., Fl., Krauts?)	200 image/jpeg	2f00f430b3b0ec98
+694/08	0092	target	S6-4	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	8acda30ed0173728
+694/08	0097	target	S13-2	none	-	high	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	051770f922139a6e
+694/08	0102	target	S4-8	moderate	?	low	y	y	moderate	40-50	f.75 Flemming to Manteuffel, Carlsbad 7 Juin 1712 (no 28; the other direction): runs 17.26.6 99.10, 177, 17.25.15.58.28.9.16.14.2.13.23.33 44.12.14.39.66.10, 20.12, 11.26 128.6.128, 17.1.60 14.9.7.35.60; glossed (Prusse, le Czar, Troubles de Pologne, Blaspiel Grumbkow, Flemming?)	200 image/jpeg	80217c2e0bbd1bc3
+694/08	0107	target	S3-9	light	?	low	y	n	light	1	single 11 ('je sais que 11. a dit'); unglossed	200 image/jpeg	4ffb730b7983af7e
+694/08	0112	target	S14-1	moderate	y	medium	y	y	moderate	60-75	f.83 (no 38, Berl. ce 5 Juin 1712): ~6 code lines, glossed (notre affaire, Welling, Berlin, une negociation ...)	200 image/jpeg	6b31a99d1ce50857
+694/08	0117	target	S7-8	light	?	low	y	?	light	5-7	ff.~86v-87 (stamp 87, endorsement 'Mr Manteufel Dresden le 11 Juin 1712'): run 17.60.39.21.72 with a possible small word above; 18 single	200 image/jpeg	eea82bdac745f20f
+694/08	0122	target	S14-8	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	6a8cffd541ca7a89
+694/08	0127	target	S7-1	light	?	low	y	n	light	1	f.94 (no 41, Berl. ce 14 Juin 1712): single 44; unglossed	200 image/jpeg	5f0cd831db2c7d3a
+694/08	0132	target	S5-4	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	3c208e902478a8f7
+694/08	0137	target	S8-7	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	3f1faf29910bddd5
+694/08	0142	target	S6-7	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	deae9ba40ba14e3c
+694/08	0147	target	S9-7	light	n	low	y	partial	light	4	ff.~261v-262 (stamp 262): 11 (gloss 'R. m.'), 260, 145.60 (small gloss)	200 image/jpeg	046b047dfe28cf33
+694/08	0152	target	S8-6	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	f0c4205237d1f027
+694/08	0157	target	S8-2	none	-	high	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	2d49f4312f1a1fd2
+694/08	0163	target	S14-5	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	d128f7aabed2431e
+694/08	0168	target	S8-8	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	c60cbc807eb0ab2e
+694/08	0173	target	S1-4	light	n	medium	y	partial	light	10-12	f.132 Flemming to Manteuffel, Dresden 2 Juil 1712: 48 x2, 39, 25.12.1.700.25.7.18?, 3 (gloss 'Welling' over 3 only)	200 image/jpeg	3ad29cc2e3711585
+694/08	0178	target	S10-9	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	a8aa2e68b02f07fa
+694/08	0183	target	S9-5	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	0c8cce4303c57720
+694/08	0188	target	S7-5	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	86ca35cd5a590ec2
+694/08	0193	target	S2-6	light	?	low	n	-	-	0	f.146 newsletter from Seist near Kolding 26 June 1712, footnotes a b c; clear; sheet false positive	200 image/jpeg	39e59d65155e5a7a
+694/08	0198	target	S13-5	moderate	?	low	y	y	moderate	80-100	ff.~149v-150 (stamp 150): different hand (copy of a correspondent's letter?); 6 code lines lower left page, glossed (Wellinx?, notre negociation, Roy de Prusse); one run top of right page 34.33.51.46.52.39.22.21 unglossed	200 image/jpeg	9c1edc6648e62ba5
+694/08	0203	target	S14-4	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	58a5374279519a1b
+694/08	0208	target	S8-5	moderate	?	low	y	y	heavy	110-130	ff.~158v-159 (stamp 159): runs on both pages, gloss over most (le Roy de Suede, Stanislas, Roy en Pol., Roy de Danemarc); 150 187 227 257 recur	200 image/jpeg	fc2c07d28f56c08c
+694/08	0213	target	S13-4	light	?	low	y	n	light	1	f.164 (no 54?, ce 17 Juin 1712) left page: single 46; unglossed	200 image/jpeg	b9738502d5492f4d
+694/08	0220	target	S9-2	moderate	?	low	y	y	moderate	60-80	ff.~169v-170 (stamp 170): ~8 runs on right page + 1 left; glosses (Lutheraner?, Clef, der Hof, la Mademoiselle ..., Roy de Suede); 240 234 170 180 313	200 image/jpeg	e6a560223b42e67d
+694/08	0226	target	S4-5	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	cbe981c7a41298da
+694/08	0232	target	S7-9	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	7f7cbeafc11febb7
+694/08	0237	target	S1-6	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	9d8fdaea9300bbb5
+694/08	0244	target	S1-8	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	978c42251bd1cd74
+694/08	0249	target	S2-9	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	7918af29b3b69c58
+694/08	0254	target	S11-7	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	2130e5afb837ff65
+694/08	0259	target	S9-9	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	7e8eca27dd4ef3a6
+694/08	0264	target	S13-6	light	?	low	n	-	-	0	letter end, clear; sheet false positive	200 image/jpeg	785ddb14e03665d6
+694/08	0269	target	S6-8	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	86384f928b6f9acf
+694/08	0274	target	S4-4	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	1054af62ea465dc6
+694/08	0279	target	S5-2	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	c5e920207c3f2869
+694/08	0284	target	S1-1	light	y	low	y	reverse	light	15	Flemming-hand draft leaf: 29.25.15.60.9.1.46.10.60 above underlined 'laisser', 120.10.5.68.9.60 above underlined 'Devoir'; '1. Bet 90.12' unglossed; clear text under codes, a known answer	200 image/jpeg	5166ea295f06e254
+694/08	0289	target	S4-6	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	44279a1a39b7d4c8
+694/08	0294	target	S5-5	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	90511ef294c7cdca
+694/08	0299	target	S3-5	heavy	y	medium	y	y	heavy	120-150	ff.~231v-232 (stamp 232): paras 6-7, ~15 code lines across both pages; period gloss over most runs (le Roy, le Roy de Suede, Pologne, Courlande); 187 170 257 150 110 120 recur	200 image/jpeg	3b754e5139619951
+694/08	0306	target	S10-7	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	c137177db0ecb64b
+694/08	0310	target	S9-8	moderate	?	low	y	y	light	30-40	ff.~240v-241 (stamp 241): 170 (le Roy), 260 (Kameke), 257, 187, 6.4.66, 30.15.33.31.13.16.120.10.31.35.14.59.66.5.10.30.170, 355, 59.60.355.10; glossed	200 image/jpeg	b9b4c753ce99118e
+694/08	0316	target	S11-6	moderate	n	medium	y	y	moderate	35-45	ff.~244v-245 (stamp 245, damaged): 'Pro mem.' copy of a resolution, numbered points; 198 (Stanislas) 257 170 (le Roy) 202 (la Republique) 150 187 305; runs 110.60.33.92.16.6.25.10, 68.120.12.36.60.1.10.44.100; signature code 56.9.40.35.60 glossed (Beber?); glossed	200 image/jpeg	92fc950dc815b867
+694/08	0320	target	S3-3	light	?	low	n	-	-	0	f.248 copy of a letter of 13 Sept 1712, underlined passage; clear; sheet false positive	200 image/jpeg	999d908637221527
+694/08	0326	target	S6-6	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	b13f7cf83465be4f
+694/08	0330	target	S10-2	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	500a7f21f2c06c71
+694/08	0336	target	S5-6	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	f74becf43622aedc
+694/08	0340	target	S2-5	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	98e8ba3cf8fcc641
+694/08	0346	target	S10-4	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	35dab04c02e5783c
+694/08	0350	target	S11-1	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	6a63c45608a36a5a
+694/08	0356	target	S12-2	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	68e75a9db9c29bb9
+694/08	0360	target	S13-1	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	9854171b47f4ae9e
+694/08	0366	target	S2-7	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	1d045c21247b2e71
+694/08	0372	target	S6-2	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	df7d596c08ecb702
+694/08	0379	target	S12-3	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	595ed8463911ea82
+694/08	0384	target	S1-3	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	210d31a89b8d8e8f
+694/08	0393	target	S5-7	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	249b7bdb896c6e0f
+694/08	0400	target	S10-5	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	e23b2f9b0564cb7a
+694/08	0406	target	S1-9	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	58e51993f5c20fb0
+694/08	0410	target	S4-7	light	?	low	y	reverse	light	15-20	f.326 Flemming to Manteuffel, Greifswald 20 Oct 1712: code groups written ABOVE underlined clear words 'C. de Konigsmarck' (11.16.14.9.7.13.25.60.11) and 'l'Electeur de Han.' (12.2.19.120.2.8.14?): clear text under codes, a known answer (not a gloss over cipher)	200 image/jpeg	c11fb6f9f8b62216
+694/08	0416	target	S9-3	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	cbdd011c6be1d791
+694/08	0420	target	S14-7	light	?	low	y	y	light	25-30	single leaf P.S.: 28.60.33.9.5.1.4.35.13.10.2.103.15.57.79.16.7.1 (prochaine election), 17.60.39.10.66.19.16.10 (Sapieha?), 204, 205; glossed	200 image/jpeg	2d19756716379bbf
+694/08	0426	target	S11-4	moderate	y	low	y	partial	light	11-13	left page (Manteuffel report end, para 7): one run 56.34.28.4.76.4.38.60.54.38 with a small word above (M); right page f.336 Flemming to Manteuffel, Greifswald 23 Oct 1712, single 46 x2	200 image/jpeg	da42dc86ecf6d3da
+694/08	0430	target	S14-6	light	?	low	n	-	-	0	f.339 report, clear; sheet false positive	200 image/jpeg	6896f18b70ebc83a
+694/08	0438	target	S10-6	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	75cdc142001d1051
+694/08	0444	target	S12-7	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	b1edf05f869bda7c
+694/08	0449	target	S7-6	light	?	low	n	-	-	0	f.356 report, clear; sheet false positive	200 image/jpeg	f0dad797256bffde
+694/08	0454	target	S9-1	moderate	y	low	y	n	moderate	60-75	ff.~360v-361 (stamp 361): left page only, UNGLOSSED: 60.35.55.10.44.103; 26.33.82.60.66.73.10.69.51.11.92 (repeated later as 60.33.82.60.66.73.10.69.51.11.92); 198 x6; 150; 187; 257; 60.75.14.16.21.30.35.50; 68.27.21.33.12.120; 25.55.100.9.24.6.10.60	200 image/jpeg	036a486ce5ef810f
+694/08	0459	target	S2-2	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	b3ad7a5d7d0678c1
+694/08	0464	target	S5-1	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	14e5a2eb2014f0e1
+694/08	0469	target	S13-8	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	9f4e36c83fe7cc06
+694/08	0474	target	S12-6	moderate	?	low	y	y	heavy	110-130	ff.~378v-379 (stamp 379): Breton/Reine d'Angleterre report, paras 3-5; ~8 code lines on right page + 2 runs left, gloss over most runs	200 image/jpeg	ac2c36d87223be59
+694/08	0479	target	S7-4	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	798a8b9092161b74
+694/08	0487	target	S4-3	none	-	medium	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	a2455f7d792caea4
+694/08	0492	target	S2-3	light	n	low	y	n	light	4	end of a letter: 11; 35.33.51; unglossed	200 image/jpeg	7bf8d0b2adc20a69
+694/08	0497	target	S3-1	none	-	low	n	-	-		sheet none; not eye-checked (weak evidence)	200 image/jpeg	0d9e838d23b27aa0
+694/08	0005	control+	S3-7	light	?	low	y				control (control+, class from mant0609/seen_before.tsv); sheet: crowded writing with additions, possible number runs at lower part	200 image/jpeg	022bab24bec07eec
+694/08	0005	control+	S10-3	light	?	low	y				control (control+, class from mant0609/seen_before.tsv); sheet: right page dense small writing at top; possible number runs, unclear	200 image/jpeg	022bab24bec07eec
+694/08	0065	control+	S1-7	light	?	low	y				control (control+, class from mant0609/seen_before.tsv); sheet: crowded cramped writing, possible short number runs, hard to tell	200 image/jpeg	09a7be8293938d58
+694/08	0065	control+	S8-4	light	?	low	y				control (control+, class from mant0609/seen_before.tsv); sheet: possible short digit runs mid right page	200 image/jpeg	09a7be8293938d58
+694/08	0125	control-	S1-5	none	-	medium	n				control (control-, class from mant0609/seen_before.tsv); sheet: prose; blank left page	200 image/jpeg	54216fd3d6c80791
+694/08	0125	control-	S4-9	light	n	low	n				control (control-, class from mant0609/seen_before.tsv); sheet: letter 15 June 1712, folio 93; few numbers beyond No references and folio	200 image/jpeg	54216fd3d6c80791
+694/08	0125	control-	S7-7	none	-	medium	n				control (control-, class from mant0609/seen_before.tsv); sheet: prose; left page blank	200 image/jpeg	54216fd3d6c80791
+694/08	0125	control-	S10-1	none	-	medium	n				control (control-, class from mant0609/seen_before.tsv); sheet: left blank; right page letter dated 15 June 1712, plain prose	200 image/jpeg	54216fd3d6c80791
+694/08	0125	control-	S13-7	none	-	medium	n				control (control-, class from mant0609/seen_before.tsv); sheet: letter 1 June 1712, folio 93	200 image/jpeg	54216fd3d6c80791
+694/08	0485	control+	S2-4	moderate	?	low	y				control (control+, class from mant0609/seen_before.tsv); sheet: several short number runs inline in lower paragraphs; possible overwritten words	200 image/jpeg	f62ec7b65cdd77c6
+694/08	0485	control+	S9-4	light	?	low	y				control (control+, class from mant0609/seen_before.tsv); sheet: left page lines near middle and lower show a few number-like runs	200 image/jpeg	f62ec7b65cdd77c6
+694/08	0505	control-	S2-8	moderate	y	low	n				control (control-, class from mant0609/seen_before.tsv); sheet: right page, numbered paragraphs, interlinear words between lines throughout, loo	200 image/jpeg	a2113285606961d1
+694/08	0505	control-	S5-8	none	-	medium	n				control (control-, class from mant0609/seen_before.tsv); sheet: German text, numbered paragraph list only	200 image/jpeg	a2113285606961d1
+694/08	0505	control-	S8-3	none	-	high	n				control (control-, class from mant0609/seen_before.tsv); sheet: German text, numbered list	200 image/jpeg	a2113285606961d1
+694/08	0505	control-	S11-5	none	-	low	n				control (control-, class from mant0609/seen_before.tsv); sheet: right page numbered list with 1) 2) 3) items; no cipher seen	200 image/jpeg	a2113285606961d1
+694/08	0505	control-	S14-2	none	-	low	n				control (control-, class from mant0609/seen_before.tsv); sheet: numbered list, folio 104	200 image/jpeg	a2113285606961d1
+694/08	0510	control+	S4-1	heavy	y	medium	y				control (control+, class from mant0609/seen_before.tsv); sheet: right page, numbered paragraphs with many runs of numbers inline, small words ab	on disk images/loc694-08-09	
+694/08	0510	control+	S11-8	heavy	y	low	y				control (control+, class from mant0609/seen_before.tsv); sheet: right page p.109: numbered paragraphs 1-8 with many lines of dotted number runs,	on disk images/loc694-08-09	
+694/08	0511	control+	S5-3	heavy	n	high	y				control (control+, class from mant0609/seen_before.tsv); sheet: both pages: many lines of dotted number runs (35.16.51...); no interlinear words	on disk images/loc694-08-09	
+694/08	0511	control+	S12-5	heavy	y	medium	y				control (control+, class from mant0609/seen_before.tsv); sheet: left page many full lines of dotted number runs (10+ lines), right page more run	on disk images/loc694-08-09	
+694/08	0579	control+	S6-3	moderate	?	medium	y				control (control+, class from mant0609/seen_before.tsv); sheet: right page: several lines of dotted number runs near top and lower part (25.76.7	on disk images/loc694-08-09	
+694/08	0579	control+	S13-3	moderate	y	medium	y				control (control+, class from mant0609/seen_before.tsv); sheet: right page number run at top (25.75.72 style) and more lines mid/lower; small wo	on disk images/loc694-08-09	
+694/08	0580	control+	S7-2	light	?	low	y				control (control+, class from mant0609/seen_before.tsv); sheet: possible short digit groups plus interlinear-looking marks	on disk images/loc694-08-09	
+694/08	0580	control+	S14-3	light	?	low	y				control (control+, class from mant0609/seen_before.tsv); sheet: a few short number groups (587, 7371); folio 468	on disk images/loc694-08-09	
+694/08	0583	control-	S3-6	none	-	low	n				control (control-, class from mant0609/seen_before.tsv); sheet: faint, show-through prose	200 image/jpeg	4b65984cfc23014e
+694/08	0583	control-	S6-9	none	-	low	n				control (control-, class from mant0609/seen_before.tsv); sheet: faint prose with bleed-through	200 image/jpeg	4b65984cfc23014e
+694/08	0583	control-	S9-6	none	-	low	n				control (control-, class from mant0609/seen_before.tsv); sheet: bleed-through, faint prose; no clear number runs	200 image/jpeg	4b65984cfc23014e
+694/08	0583	control-	S12-4	none	-	low	n				control (control-, class from mant0609/seen_before.tsv); sheet: faint show-through, right blank	200 image/jpeg	4b65984cfc23014e
