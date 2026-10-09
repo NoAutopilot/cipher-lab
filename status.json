@@ -11248,6 +11248,47 @@
       "depth_sentence": "On 1 Sept 1864 Caldwell advised Eckert that the cable should be laid on the north side of the river, needing less cable and less exposed to being dragged up by anchors, since the channel ran nearest the south shore.",
       "depth_check": "code clause: Windsor = River (E319 and passim), Waxy = South, Tremble = North read passim; ciphertext checked by two cipher copies (5781, 12319); no external check of the content located",
       "depth_note": "3 H of 3 code-word groups ('cab bell', 'D do wren' plain-phonetic)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM10a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM10a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM10a)' section 4",
+      "reading_version": "FM-R7b 9 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM10a) section 3 (Ivory = General-in-Chief H, identity open)",
+      "unresolved_spans": "'pause' (as written); who 'Ivory' (General-in-Chief) denotes",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): T. T. Eckert, Washington, to G. D. Sheldon, Fort Monroe, 28 May 1864: the Gloucester route for the York River line; operators to Jamestown, Yorktown, Gloucester and West Point (E318)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 28 May 1864 Eckert told Sheldon at Fort Monroe that the General-in-Chief judged the Gloucester route best, since a hundred men could guard it where a regiment could not guard the other, and placed the operators for the York River line (Logue and Embree to Jamestown, Collings to Yorktown, Homan to Gloucester, Bickford's men at West Point); Butler's opinion on the same route and Sheldon's reply are printed in the Official Records (ser. I vol. 36 pt 3), the telegram itself was not located there, in Plum's Military Telegraph, Grant's papers or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 one audit (FV-FM10a), weak: the body is largely clear in the holder's public transcription; not N4: OR I/36 pt 3 and Grant Papers by be-api snippets only, press and RG 107 not searched",
+      "depth": "D3",
+      "completeness": "11 H of 11 code-word groups ('white house' and 'Dunn' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.165, pointer 5709, E318"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.165, pointer 5709, E318",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.165, pointer 5709, E318"
+      ],
+      "depth_sentence": "On 28 May 1864 Eckert ordered the telegraph line from Fort Monroe to White House built by the Gloucester side of the York, assigned operators to Jamestown, Yorktown, Gloucester and West Point, and told Sheldon to start the work as soon as Mackintosh's building party arrived.",
+      "depth_check": "code clause: Spit = Men, Saddle = Guard, Whip = Regiment, Haven = Yorktown, Homer = West Point, White = Report read passim; external (non-statistical): OR I/36 pt 3 p.262 Butler to Sheldon 28 May 'route most easily protected would be across the York at Gloucester Point, thence up to West Point'; Sheldon's printed reply 'Operators will be distributed according to orders' = ledger 5713/1 (Homan and Collings to Haven = Yorktown); sibling 5709/2 'Ivory has given his opinion that the North side of York River is best route'",
+      "depth_note": "11 H of 11 code-word groups"
     }
   ],
   "lanes": [
