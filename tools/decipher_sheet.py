@@ -41,6 +41,15 @@ in tools/data/sorter_families.tsv (open_blind_sorts non-empty; TRANSCRIPTION.md 
 family is --key-family, else KEY_FAMILY_TARGETS by folder, else the folder holding a key path the job uses. --families TSV reads
 another register (tests). Must catch: the Birago 1572 family (ASKS 118). Must NOT block: Gramont, Danzay (no open sort).
 
+Corrections on the page (MQS-STRUCK-2, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M44; Lasry, Biermann and Tomokiyo
+2023): a token whose decode_key state is 'struck' (crossed out or deleted by the encipherer) is drawn in the reading as a tile with
+a double ink border, its sign in [brackets] and the text label STRUCK; under corrections 'final' (default) its value row says
+"not read" (never decoded), under --corrections original it shows the as-written value with "as written". An overwrite
+('over=OLD>NEW') shows OLD>NEW in the code row with the text label OVER and the value of the mode's reading. Each one is also
+listed under "Corrections on the page" (one callout per token, data-corr="<kind> <line>:<pos>"). Ink and text labels only, no
+meaning by colour (tools/cvd_check.py). --tokens-tsv reads an optional `state` column. Must NOT: add the section, a label or a
+legend line to a sheet with no state on any token (Gramont, Danzay unchanged).
+
 Scope (Usage 8a). Meant to catch: a sheet built from a tile map that places an image at the wrong box (R-K1/KM tests), a stale
 sheet after a key edit (--check), a blank crop (--tile-report). Must NOT flag: a sheet with no swap record (no "or vice versa"
 brace is ever drawn from a key_conflicts-style count file); a target with no boxes (tiles fall back to lines or none, with the
@@ -155,8 +164,14 @@ def tokens_from_tsv(path, key_path=None):
         if ln not in seen:
             seen.add(ln); recs.append(dict(folio='', line=ln, label=ln, pos=None, kind='line'))
         g = r['grade']
-        recs.append(dict(folio='', line=ln, label=ln, pos=int(r['pos']), raw=r['sign'], sign=r['sign'], conf='', gloss=r.get('gloss', ''),
-                         kind='clear' if g == 'clear' else 'sign', value=r['value'], grade=g, null=r['value'] in ('NULL', 'null')))
+        rec = dict(folio='', line=ln, label=ln, pos=int(r['pos']), raw=r['sign'], sign=r['sign'], conf='', gloss=r.get('gloss', ''),
+                   kind='clear' if g == 'clear' else 'sign', value=r['value'], grade=g, null=r['value'] in ('NULL', 'null'))
+        st = (r.get('state') or '').strip()
+        if st == 'struck' or decode_key.OVER_RE.match('{' + st + '}'):  # MQS-STRUCK-2
+            rec['state'] = st
+            if st == 'struck' and g in ('', 'struck'):
+                rec['kind'] = 'struck'
+        recs.append(rec)
     key = {}
     if key_path:
         for r in load_tsv(key_path):
@@ -385,6 +400,8 @@ sup{{font-size:.6em}} .legend span{{margin-right:1em;white-space:nowrap}}
 .mi{{display:flex;align-items:center;gap:6px;margin:3px 0}} .mi img{{height:46px;border:1px solid var(--rule)}}
 """
 
+CORR_CSS = '.tk.corr{border:3px double var(--ink);padding:1px 2px} .lbl{display:block;font:bold .58rem sans-serif;letter-spacing:.04em}\n'
+
 
 def legend_html():
     parts = [f'{token_html("a", g)} = {d}' for g, d in
@@ -564,6 +581,18 @@ def parse_line_range(spec, labels):
     return out
 
 
+def corr_cells(r):
+    """(kind, code-row text, value-row html) for a token carrying a decode_key correction state (MQS-STRUCK-2)."""
+    st = r['state']
+    if st == 'struck':
+        if r['kind'] == 'struck' or not r.get('grade'):
+            return 'struck', '[' + r['sign'] + ']', '<span class="note">not read</span>'
+        return 'struck', '[' + r['sign'] + ']', (token_html(r['value'], r['grade'], bool(r.get('null')), r['sign'])
+                                                + '<span class="lbl">as written</span>')
+    m = decode_key.OVER_RE.match('{' + st + '}')
+    return 'over', f'{m.group(1)}>{m.group(2)}', token_html(r.get('value', ''), r.get('grade', 'U'), bool(r.get('null')), r['sign'])
+
+
 def build_reading_html(ctx):
     recs, key, boxes, a = ctx['recs'], ctx['key'], ctx['boxes'], ctx['args']
     job = ctx['job']
@@ -577,11 +606,11 @@ def build_reading_html(ctx):
         for r in load_tsv(a.annotate):
             ann.setdefault(r['category'], []).append(r)
     lineimg = ctx['line_images']
-    out, non11, unaligned = [], collections.Counter(), []
+    out, non11, unaligned, corr = [], collections.Counter(), [], []
     for L in lines:
         if L['label'] not in sel:
             continue
-        toks = [r for r in L['toks'] if r['kind'] in ('sign', 'clear')]
+        toks = [r for r in L['toks'] if r['kind'] in ('sign', 'clear', 'struck')]
         lkey = L['label'].replace(' ', '_')
         boxed = [boxes.token_box(r) for r in toks if boxes] if boxes else []
         has_boxes = any(boxed)
@@ -615,6 +644,13 @@ def build_reading_html(ctx):
                                                agree=('' if not kv else str(kv == r['value']))))
                 img = f'<img alt="" src="{data_uri(im, 40)}">'
             h = hl.get(r['sign'])
+            st = r.get('state', '')
+            if st:  # MQS-STRUCK-2: the encipherer's own correction, by border and text label
+                k, txt, val = corr_cells(r)
+                corr.append((k, L['label'], r['pos'], txt))
+                out.append(f'<div class="tk corr{cls}" data-corr="{k} {html.escape(L["label"])}:{r["pos"]}">{img}'
+                           f'<span class="lbl">{k.upper()}</span><div class="c">{html.escape(txt)}</div><div class="v">{val}</div></div>')
+                continue
             out.append(f'<div class="tk{cls}">{img}<div class="c">{html.escape(r.get("raw", r["sign"]))}</div>'
                        f'<div class="v">{token_html(r["value"], r["grade"], bool(r.get("null")), r["sign"], h)}</div></div>')
         out.append('</div>')
@@ -626,6 +662,16 @@ def build_reading_html(ctx):
                      + (' (codes only, no tile).' if not lineimg else '.'))
     if non11:
         notes.append('Box-to-token rows not 1:1 (dashed tile border): ' + ', '.join(f'{k} x{v}' for k, v in sorted(non11.items())) + '.')
+    if corr:
+        mode = job.get('corrections', 'final')
+        out.append('<h2>Corrections on the page</h2><p class="note">STRUCK = a sign the encipherer crossed out or deleted, shown in '
+                   '[brackets] with a double border; ' + ('not read' if mode == 'final' else 'read as written (corrections: original)')
+                   + '. OVER = OLD written over as NEW; the reading uses ' + ('NEW' if mode == 'final' else 'OLD (corrections: original)')
+                   + '. Found by the transcriber on the image, not by the decoder.</p>')
+        for k, ln, pos, txt in corr:
+            what = f'sign {txt} crossed out' if k == 'struck' else f'{txt.split(">")[0]} overwritten as {txt.split(">")[1]}'
+            out.append(f'<div class="callout" data-corr="{k} {html.escape(ln)}:{pos}"><b>{k.upper()}</b>{html.escape(ln)} token {pos}: '
+                       f'{html.escape(what)}</div>')
     if ann:
         out.append('<h2>Annotations</h2>')
         for cat in ann:
@@ -675,6 +721,8 @@ def build(a):
         ns = types.SimpleNamespace(config=a.config, ciphertext=None, key=None, exceptions=None, style=None, reading=None, tokens=None)
         jobs = decode_key.load_config(target, ns)
         job = select_job(jobs, a.job)
+        if getattr(a, 'corrections', None):  # MQS-STRUCK-2
+            job = dict(job, corrections=a.corrections)
         recs, key, ct = graded(target, job)
         if a.config:
             note(a.config)
@@ -727,7 +775,7 @@ def build(a):
     head = header_html(ctx, a.mode)
     inm = ''.join(f'<meta name="input-sha256" content="{html.escape(p)} {h}">' for p, h in inputs)
     doc = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-           f'<title>{html.escape(a.title or slug)} {a.mode} sheet</title>{inm}<style>{CSS}</style></head><body>'
+           f'<title>{html.escape(a.title or slug)} {a.mode} sheet</title>{inm}<style>{CSS}{CORR_CSS if 'data-corr=' in body else ''}</style></head><body>'
            f'{head}{body}{footer(slug, a, inputs)}</body></html>')
     return doc, ctx
 
@@ -768,6 +816,8 @@ def main(argv=None):
     ap.add_argument('--key-family', help='sorter key family of this target (default: KEY_FAMILY_TARGETS, then key paths)')
     ap.add_argument('--families', help='sorter family register (default tools/data/sorter_families.tsv; tests)')
     ap.add_argument('--check', action='store_true'); ap.add_argument('--tile-report')
+    ap.add_argument('--corrections', choices=['final', 'original'], help="struck / over=OLD>NEW tokens: 'final' (default) "
+                    "not read / NEW, 'original' as written / OLD (decode_key.py MQS-STRUCK; callouts MQS-STRUCK-2)")
     a = ap.parse_args(argv)
     if a.config:
         a.config = os.path.abspath(a.config)

@@ -75,6 +75,16 @@ settled sign 'B:X' already compound splits on its last ':' and keeps X. tools/de
 Catches: every mark a box carries reaching the export beside its base (round trip on the Birago 1572 atlas, 348 marked of
 4209, PREREG-MQS-BASE-MARK.md). Must NOT: put a mark on a tile it is not attached to (marks.tsv sid), drop a mark already in
 a compound settled label, or change new_sign (the existing columns stay as they were).
+Corrections on the page (MQS-STRUCK-2, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M44; Lasry, Biermann and
+Tomokiyo 2023): the encipherer's own deletions and overwrites. A pile doc with `state: struck` marks every tile sorted into that
+pile (its pile before any merge) as struck; a per-box doc DIR/states/*.json {sid, state} carries 'struck', or 'over' with
+old: OLD (NEW is the tile's settled sign), or the full 'over=OLD>NEW'. A per-box doc wins over its pile. Any saved state adds a
+`state` column to --out (last column), in the exact strings tools/decode_key.py reads (its MQS-STRUCK docstring, state_column);
+--pass-out FILE writes line, pos, sign, state, sid for decode_key.py --format tsv (line/pos from --signs line,pos columns, else
+page and the tile's order on that page in --signs; unsettled tiles read '?', not-letter tiles are left out). Catches: a planted
+struck or overwritten box reaching decode_key and the reading sheet at its own position (round trip, PREREG-MQS-STRUCK-2.md).
+Must NOT: change --out when no state was saved (byte for byte), attach a state doc whose sid is not in --labels (dropped,
+counted in summary states_dropped), or write an unknown state (refused).
 Must NOT be used to write a cluster label the person did not choose: nothing here infers a code from shape."""
 import argparse, csv, glob, json, os, sys
 
@@ -277,6 +287,66 @@ def export_mode(page_mode=None, family=None, sort_start=None, fam_path=None):
 
 
 UNSETTLED = ('not-letter', 'aside', 'bad-cut', 'taken-out')
+
+STATE_RE = __import__('re').compile(r'^over=([^>{}\s]+)>([^>{}\s]+)$')
+
+
+def tile_states(rows, labels, piles, moves, state_docs):
+    """sid -> decode_key state string ('struck' / 'over=OLD>NEW') from pile docs (state: struck) and per-box state docs
+    (MQS-STRUCK-2). Returns (states, dropped). Raises ValueError on an unknown state."""
+    known = {r[0]: r for r in rows}
+    mv = {m['sid']: m['to'] for m in moves if m.get('sid') and m.get('to')}
+    old = {r['sid']: r['sign'] for r in labels}
+    out, drop = {}, 0
+    struck_piles = set()
+    for p in piles:
+        st = p.get('state')
+        if st in (None, ''):
+            continue
+        if st != 'struck':
+            raise ValueError(f"pile {p.get('pile')!r}: a pile can carry state 'struck' only, not {st!r}")
+        struck_piles.add(p['pile'])
+    if struck_piles:
+        for sid, r in known.items():
+            if (mv.get(sid) or old.get(sid)) in struck_piles or r[2] in struck_piles:
+                out[sid] = 'struck'
+    for d in state_docs:
+        sid, st = d.get('sid'), (d.get('state') or '').strip()
+        if sid not in known:
+            drop += 1; continue
+        if st == 'struck':
+            out[sid] = 'struck'
+        elif st == 'over':
+            o, new = str(d.get('old') or '').strip(), known[sid][2]
+            if not o or not new or not STATE_RE.match(f'over={o}>{new}'):
+                raise ValueError(f'state doc {sid}: an overwrite needs old and a settled sign (old={o!r}, sign={new!r})')
+            out[sid] = f'over={o}>{new}'
+        elif STATE_RE.match(st):
+            out[sid] = st
+        else:
+            raise ValueError(f"state doc {sid}: unknown state {st!r} (struck, over with old, or over=OLD>NEW)")
+    return out, drop
+
+
+PASS_COLS = ['line', 'pos', 'sign', 'state', 'sid']
+
+
+def pass_rows(rows, signs, states):
+    """--pass-out rows (decode_key tsv) in --signs order: line/pos from signs.tsv columns, else page and order on it."""
+    by = {r[0]: r for r in rows}
+    out, n = [], {}
+    for sid, s in signs.items():
+        r = by.get(sid)
+        if r is None or r[3] == 'not-letter':
+            continue
+        page = s.get('page', '')
+        n[page] = n.get(page, 0) + 1
+        line = s.get('line') or page
+        pos = s.get('pos') or str(n[page])
+        sign = r[2] if r[2] and r[3] not in UNSETTLED else '?'
+        out.append([line, pos, sign, states.get(sid, ''), sid])
+    return out
+
 ICON_COLS = ['sign', 'file', 'sid', 'n_tiles']
 
 
@@ -469,6 +539,7 @@ def main(argv=None):
     ap.add_argument('--ctts-out', help='write a CTTS working directory here (needs --signs --pages; icons from --icons)')
     ap.add_argument('--split-marks', metavar='MARKS.tsv', help='add base and mark columns from a glyph_atlas marks.tsv (MQS-BASE-MARK)')
     ap.add_argument('--mark-labels', help='with --split-marks: TSV mid|cluster -> mark|label naming each mark')
+    ap.add_argument('--pass-out', help='write line, pos, sign, state, sid for decode_key.py --format tsv (needs --signs; MQS-STRUCK-2)')
     ap.add_argument('--sort-start', help='YYYY-MM-DD the sort began (default: earliest `updated` stamp in the db documents)')
     a = ap.parse_args(argv)
     if a.atlas_labels and not a.clusters:
@@ -497,15 +568,33 @@ def main(argv=None):
     start = a.sort_start or min((str(d['updated'])[:10] for c in ('piles', 'moves', 'checked') for d in load(a.db, c) if d.get('updated')), default=None)
     mode = export_mode(pd.get('mode'), a.key_family or pd.get('keyFamily'), start)
     summary['mode'] = mode
+    try:
+        states, sdrop = tile_states(rows, labels, piles, moves, load(a.db, 'states'))
+    except ValueError as e:
+        ap.error(str(e))
+    if states:
+        summary['states'] = {k: sum(1 for v in states.values() if v.split('=')[0] == k) for k in ('struck', 'over')}
+    if sdrop:
+        summary['states_dropped'] = sdrop
+    sc = (lambda r: (states.get(r[0], ''),)) if states else (lambda r: ())
     with open(a.out, 'w', newline='') as f:
         w = csv.writer(f, delimiter='\t')
         if a.split_marks:
             mt = mark_table(a.split_marks, a.clusters, a.mark_labels)
-            w.writerow(['sid', 'old_sign', 'new_sign', 'status', 'mode', 'base', 'mark'])
-            w.writerows(r + (mode,) + split_base_mark(r[2], mt.get(r[0], [])) for r in rows)
+            w.writerow(['sid', 'old_sign', 'new_sign', 'status', 'mode', 'base', 'mark'] + (['state'] if states else []))
+            w.writerows(r + (mode,) + split_base_mark(r[2], mt.get(r[0], [])) + sc(r) for r in rows)
             summary['marked'] = sum(1 for r in rows if split_base_mark(r[2], mt.get(r[0], []))[1])
         else:
-            w.writerow(['sid', 'old_sign', 'new_sign', 'status', 'mode']); w.writerows(r + (mode,) for r in rows)
+            w.writerow(['sid', 'old_sign', 'new_sign', 'status', 'mode'] + (['state'] if states else []))
+            w.writerows(r + (mode,) + sc(r) for r in rows)
+    if a.pass_out:
+        if not a.signs:
+            ap.error('--pass-out needs --signs (sid, page[, line, pos])')
+        sg = {r['sid']: r for r in csv.DictReader(open(a.signs, newline=''), delimiter='\t')}
+        pr = pass_rows(rows, sg, states)
+        with open(a.pass_out, 'w', newline='') as f:
+            w = csv.writer(f, delimiter='\t'); w.writerow(PASS_COLS); w.writerows(pr)
+        summary['pass_rows'] = len(pr)
     if a.icons or a.ctts_out:
         if not (a.signs and a.pages):
             ap.error('--icons and --ctts-out need --signs and --pages')
@@ -534,7 +623,7 @@ def main(argv=None):
         summary['added_dropped'] = adrop
     if a.summary:
         json.dump(summary, open(a.summary, 'w'), indent=1)
-    print(json.dumps({k: summary[k] for k in ('tiles', 'mode', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts', 'added', 'added_dropped', 'icons', 'ctts_types', 'marked') if k in summary}))
+    print(json.dumps({k: summary[k] for k in ('tiles', 'mode', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts', 'added', 'added_dropped', 'icons', 'ctts_types', 'marked', 'states', 'states_dropped', 'pass_rows') if k in summary}))
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-# PREREG MQS-STRUCK-2 (LANE MQS-3, account 4, 9 Oct 2026, written 10:15 UTC by date -u, before any control ran)
+# PREREG MQS-STRUCK-2 (LANE MQS-3, account 4, 9 Oct 2026, committed 10:08 UTC (commit 9c5f81b3d time; the header first said 10:15, an estimate, corrected 10:12 by date -u -- rule 6), before any control ran)
 
 Job: research/MARY-STUART-TALK-2026-10-09.tsv row M44, second half (the first half, MQS-STRUCK e01966990, gave
 tools/decode_key.py the token states `struck` and `over=OLD>NEW`, a tsv `state` column and --corrections final|original).
@@ -40,5 +40,19 @@ M3: a state doc whose sid is not in the labels is dropped and counted (summary s
 M4: an unknown state ('weird') is refused with a message, never written.
 No Birago 1572 family, no debosnys, no target folder written; temporary directories only.
 
-## Outcome
-(written below after the run, both numbers per seed)
+## Outcome (run 9 Oct 2026, between 10:09 and 10:11 UTC by date -u; `python3 tools/tests/test_struck_roundtrip.py --controls`)
+| seed | planted | K final | K original | final decode accuracy | N1 drop | N2 shuffle |
+|---|---|---|---|---|---|---|
+| 0 | 10 | 10/10 | 10/10 | 1.000 | 0/10 | 0/10 |
+| 1 | 10 | 10/10 | 10/10 | 1.000 | 0/10 | 0/10 |
+| 2 | 10 | 10/10 | 10/10 | 1.000 | 0/10 | 0/10 |
+| 3 | 10 | 10/10 | 10/10 | 1.000 | 0/10 | 0/10 |
+| 4 | 10 | 10/10 | 10/10 | 1.000 | 0/10 | 0/10 |
+
+K 10/10 on 5/5 seeds in both modes (gate 5/5): PASS. Nulls < 10/10 on 5/5 (gate 5/5): PASS. N2 came out 0/10 rather
+than "well under 10": a shuffled state lands on a planted position with the right kind only by chance (about 5/125 per
+struck state) and an overwrite also needs its OLD>NEW at that position. Must-nots M1-M4 PASS (test_struck_roundtrip.py);
+M2 on Gramont: the reading sheet renders byte-identical to the pre-change render apart from the volatile footer (the
+correction CSS is emitted only when a sheet carries a correction, so committed sheets do not go stale under --check).
+cvd_check --audit on the rendered synthetic sheet: 0 flags; every colour in the sheet is in the checked palettes.
+Shelf: `controlled-only` (plumbing). Nothing run on a target.
