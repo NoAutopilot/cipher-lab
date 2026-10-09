@@ -1,0 +1,243 @@
+line	pos	sign	alt	conf
+f102r_L33	1	v	o	M
+f102r_L33	2	o		H
+f102r_L33	3	o		H
+f102r_L33	4	tz		H
+f102r_L33	5	x		H
+f102r_L33	6	:		M
+f102r_L33	7	a		H
+f102r_L33	8	tz		H
+f102r_L33	9	m		H
+f102r_L33	10	o		H
+f102r_L33	11	o		H
+f102r_L33	12	m		H
+f102r_L33	13	d		H
+f102r_L33	14	z	3	M
+f102r_L33	15	d		H
+f102r_L33	16	tz		H
+f102r_L33	17	x		H
+f102r_L33	18	Z		H
+f102r_L33	19	{swash}		H
+f102r_L33	20	s		H
+f102r_L33	21	o		H
+f102r_L33	22	o		H
+f102r_L33	23	d		H
+f102r_L33	24	tz		H
+f102r_L33	25	#		H
+f102r_L33	26	tz		H
+f102r_L33	27	p		H
+f102r_L33	28	#		H
+f102r_L33	29	m		H
+f102r_L33	30	p		H
+f102r_L33	31	R		H
+f102r_L33	32	tz	3	M
+f102r_L33	33	d		H
+f102r_L33	34	p		H
+f102r_L33	35	3		H
+f102r_L33	36	m		H
+f102r_L33	37	g		H
+f102r_L33	38	s		H
+f102r_L33	39	tz		H
+f102r_L33	40	y		H
+f102r_L33	41	m		H
+f102r_L33	42	d		H
+f102r_L33	43	m		H
+f102r_L33	44	p		H
+f102r_L33	45	#		H
+f102r_L33	46	tz		H
+f102r_L33	47	L		H
+f102r_L33	48	c		H
+f102r_L33	49	6		H
+f102r_L33	50	o		H
+f102r_L33	51	o		H
+f102r_L33	52	d		H
+f102r_L33	53	s		H
+f102r_L34	1	o		H
+f102r_L34	2	o		H
+f102r_L34	3	S		H
+f102r_L34	4	p		H
+f102r_L34	5	#		H
+f102r_L34	6	:		H
+f102r_L34	7	m		H
+f102r_L34	8	s		H
+f102r_L34	9	{curl}		M
+f102r_L34	10	m		H
+f102r_L34	11	z	2	M
+f102r_L34	12	d		H
+f102r_L34	13	z	3	M
+f102r_L34	14	tz		H
+f102r_L34	15	m		H
+f102r_L34	16	y	r	M
+f102r_L34	17	y		H
+f102r_L34	18	m		H
+f102r_L34	19	o		H
+f102r_L34	20	o		H
+f102r_L34	21	d		H
+f102r_L34	22	a		H
+f102r_L34	23	S		H
+f102r_L34	24	d		H
+f102r_L34	25	tz		H
+f102r_L34	26	x		H
+f102r_L34	27	c		L
+f102r_L34	28	s		H
+f102r_L34	29	#		H
+f102r_L34	30	R		H
+f102r_L34	31	R		H
+f102r_L34	32	tz		H
+f102r_L34	33	g		H
+f102r_L34	34	m		H
+f102r_L34	35	y		H
+f102r_L34	36	f	S	M
+f102r_L34	37	f	S	M
+f102r_L34	38	d		M
+f102r_L34	39	i		M
+f102r_L34	40	p		M
+f102r_L34	41	k		L
+f102r_L34	42	e		L
+f102r_L34	43	{ampersand}		L
+f102r_L34	44	[...]		L
+f102r_L35	1	S	{beta}	M
+f102r_L35	2	P		H
+f102r_L35	3	y	r	M
+f102r_L35	4	y		H
+f102r_L35	5	s		H
+f102r_L35	6	c	i	M
+f102r_L35	7	s		H
+f102r_L35	8	tz		H
+f102r_L35	9	to		H
+f102r_L35	10	3		H
+f102r_L35	11	o		H
+f102r_L35	12	o		H
+f102r_L35	13	A		H
+f102r_L35	14	m		H
+f102r_L35	15	#		H
+f102r_L35	16	3		H
+f102r_L35	17	m		H
+f102r_L35	18	x		H
+f102r_L35	19	m		H
+f102r_L35	20	y		H
+f102r_L35	21	tz		H
+f102r_L35	22	6	b	M
+f102r_L35	23	{swash}		H
+f102r_L35	24	tz		H
+f102r_L35	25	s		H
+f102r_L35	26	o		H
+f102r_L35	27	o		H
+f102r_L35	28	t	{cross}	L
+f102r_L35	29	4		H
+f102r_L35	30	x		H
+f102r_L35	31	m		H
+f102r_L35	32	o		H
+f102r_L35	33	o		H
+f102r_L35	34	6		H
+f102r_L35	35	to		H
+f102r_L35	36	2	z	M
+f102r_L35	37	tz		H
+f102r_L35	38	3		H
+f102r_L35	39	m		H
+f102r_L35	40	p		H
+f102r_L35	41	s		H
+f102r_L35	42	z	3	M
+f102r_L35	43	#		H
+f102r_L35	44	tz		H
+f102r_L35	45	s		H
+f102r_L35	46	z	3	M
+f102r_L35	47	s		H
+f102r_L35	48	tz		H
+f102r_L35	49	x		H
+f102r_L35	50	{ds		H
+f102r_L35	51	ligature}		L
+f102r_L36	1	g	{q}	M
+f102r_L36	2	y	r	M
+f102r_L36	3	y		H
+f102r_L36	4	m		H
+f102r_L36	5	P		H
+f102r_L36	6	to		H
+f102r_L36	7	2	z	M
+f102r_L36	8	tz		H
+f102r_L36	9	tz		H
+f102r_L36	10	6		H
+f102r_L36	11	g		H
+f102r_L36	12	m		H
+f102r_L36	13	o		H
+f102r_L36	14	o		H
+f102r_L36	15	x		H
+f102r_L36	16	#		H
+f102r_L36	17	S		H
+f102r_L36	18	m		H
+f102r_L36	19	x		H
+f102r_L36	20	d		H
+f102r_L36	21	tz		H
+f102r_L36	22	p		H
+f102r_L36	23	4		H
+f102r_L36	24	a		H
+f102r_L36	25	tz		H
+f102r_L36	26	m		H
+f102r_L36	27	y		H
+f102r_L36	28	m		H
+f102r_L36	29	d		H
+f102r_L36	30	a		H
+f102r_L36	31	d		H
+f102r_L36	32	p		H
+f102r_L36	33	h		H
+f102r_L36	34	tz		H
+f102r_L36	35	{swash}		M
+f102r_L36	36	m		H
+f102r_L36	37	d		H
+f102r_L36	38	m		H
+f102r_L36	39	y		H
+f102r_L36	40	y		H
+f102r_L36	41	d		H
+f102r_L36	42	p		H
+f102r_L36	43	:		H
+f102r_L36	44	m		H
+f102r_L36	45	a		H
+f102r_L36	46	d		H
+f102r_L36	47	b		H
+f102r_L36	48	tz		H
+f102r_L37	1	m		H
+f102r_L37	2	x		H
+f102r_L37	3	:		H
+f102r_L37	4	R	g	L
+f102r_L37	5	tz		H
+f102r_L37	6	a	o	L
+f102r_L37	7	#		H
+f102r_L37	8	{box		H
+f102r_L37	9	loop}		L
+f102r_L37	10	2		H
+f102r_L37	11	d		M
+f102r_L37	12	i		M
+f102r_L37	13	p		M
+f102r_L37	14	f	S	M
+f102r_L37	15	f	S	M
+f102r_L37	16	S	{beta}	M
+f102r_L37	17	s		H
+f102r_L37	18	y	r	M
+f102r_L37	19	y		H
+f102r_L37	20	s		H
+f102r_L37	21	c	i	M
+f102r_L37	22	s		H
+f102r_L37	23	tz		H
+f102r_L37	24	to		H
+f102r_L37	25	a		H
+f102r_L37	26	y		H
+f102r_L37	27	y		H
+f102r_L37	28	d		H
+f102r_L37	29	p		H
+f102r_L37	30	3		H
+f102r_L37	31	tz		H
+f102r_L37	32	:		H
+f102r_L37	33	#		H
+f102r_L37	34	to		H
+f102r_L37	35	2	z	M
+f102r_L37	36	m		H
+f102r_L37	37	o		H
+f102r_L37	38	o		H
+f102r_L37	39	j		H
+f102r_L37	40	m		H
+f102r_L37	41	#		H
+f102r_L37	42	g		H
+f102r_L37	43	s		H
+f102r_L37	44	tz		H
+f102r_L37	45	L		H
+f102r_L37	46	m		H
