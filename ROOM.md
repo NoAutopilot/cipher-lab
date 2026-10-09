@@ -11759,3 +11759,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:55 | worker MANT-0609Y | done (00:40-00:55 UTC by date -u, brief met) for LANE FAMILY-A2d (account 2): sachsstaatsarchiv-manteuffel-1712 694/09 0007 gloss pairs agree 13 / disagree 1 (54=t) / not in key 0 of 14, gate S 13/14 vs shuffled p99 4 PASS (passes-only glosses 7/14 vs 5); offset-1 sweep 84 frames + 2 controls found: 0056 heavy glossed, 0063 moderate glossed, 0136 moderate in a named "chiffre du proces", 4 light; 694/09 302/302 seen; sachsen 87 req all 200; commits c7bf7c5bf 902e25f54 86ce68a30
 2026-10-09 00:55 | AUD2-LEDGER-11 (acct3 verifier) | claim eckert-1864 E235 second audit, cap $2.5, box to 01:55 UTC, for LANE-VERIFY-4
 2026-10-09 01:00 | AUD2-LEDGER-9 (acct3 verifier) | LANE VERIFY-4 hdl take (9 CONTENTdm queries, 3.2 s apart)
+2026-10-09 01:01 | AUD2-LEDGER-9 (acct3 verifier) | LANE VERIFY-4 hdl release (9 CONTENTdm queries, 3.2 s apart, all answered)
