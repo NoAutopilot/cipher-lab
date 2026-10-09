@@ -6988,7 +6988,7 @@ vs L, dev then eval once): three Opus 5.5 workers spawned 07:11 UTC.
 |---|---|---|---|---|
 | A compare-don't-recall (tools/tx_compare.py) | TXE-A session_01WRvxRA2LYbA2Z48bcHaSja, cap 10 | running | -- | -- |
 | B crop geometry (iiif_lines --band-extent/--check-boxes/--overlap-note) | TXE-B session_01KgjZdcCPTEZqpN1MA73hzx, cap 7 | read-free band gate; one read on geo unit vs pass A | -- | -- |
-| C thin-stroke pair re-read (tools/tx_pair_reread.py) | TXE-C session_01Qgc8K1v3akoPFs6oBoTnz6, cap 8, done 07:23 | 0.041 -> 0.041 (fixed 1 / broken 1, p 1.0; 28 selected) | not run | FAIL on dev; selection too small (4 of 14 errors inside it) |
+| C thin-stroke pair re-read (tools/tx_pair_reread.py) | TXE-C session_01Qgc8K1v3akoPFs6oBoTnz6, cap 8, done 07:23, cost 4.36 | 0.041 -> 0.041 (fixed 1 / broken 1, p 1.0; 28 selected) | not run | FAIL on dev; selection too small (4 of 14 errors inside it) |
 | D tile rendering sweep: white space, darkening, colour channels, SR (tools/tx_prep.py; owner ideas 1, 2, 4) | TXE-D session_01VLuSJo5qBusuxzwbfMQoXv, cap 10 | read-free atlas proxy per setting, then one read | -- | -- |
 | E confusion matrix learnt on dev re-weighting key_decode_lattice (idea M5, no vision call) | TXE-E session_011aJedwsjoakb85C4CPihNW, cap 5 | leave-one-line-out | -- | -- |
 | G document-recovery practice literature -> research/TX-RECOVERY-PRACTICE-2026-10-09.md (owner idea 5) | TXE-G session_01Q5gZS93pQxXHF4cVWDKxok, cap 6 | read-free proxy on the cheap methods | -- | -- |
