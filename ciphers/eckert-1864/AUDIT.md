@@ -10195,3 +10195,131 @@ wrong). E301: `Washington` (address) and `Flag` plain, not Volunteer/11. E302: `
 `pony` plain x2 (Mattapony). E303: `snake` plain (Snake Creek Pass); header: printed OR I/39 pt 3 pp.311, 332 (the header's "no print found" is
 wrong).
 Requests: hdl.huntington.org 18 (13 CONTENTdm queries, 1 item info, 4 IIIF pages); archive.org 2 downloads; be-api 3 (2 + 1 control).
+
+## AUDIT (FV-FM9d)
+
+Verifier FV-FM9d (account 1, for LANE LEDGER), 9 Oct 2026, 14:37-15:0x UTC by `date -u`; a separate session from the reader FM-R6c (account 1),
+not protecting its conclusions. Scope: **E307, E308, E309** (NOTES "## FM-R6c"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 =
+Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all three: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate re-run 14:3x
+UTC: "eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines".
+Scripts: `fortmonroe/fv_fm9d_hdl.py` (+ `.out`: CONTENTdm full text across all pointers, item info 4607, five page images at 2400 px to
+scratch), `fortmonroe/fv_fm9d_print.py` (+ `.out`: letters-only phrase grep over the cached print-check volumes plus Plum, *The Military
+Telegraph during the Civil War* vols. 1-2 (`militarytelegraph01plumrich`, `militarytelegraph02plumrich`) and OR I/42 pt 3
+(`warofrebellion423unit`) fetched to scratch, 3 archive.org downloads), `fortmonroe/fv_fm9d_beapi.py` (+ `.out`: IA be-api full text, across IA
+and inside Grant Papers vol. 12 and Butler V; the positive control timed out).
+
+### 1. Duplicates, prior work, image
+- **Duplicate diff:** pointers 5777, 5778, 5659, 5786 (and the clear-copy pointer 4607) against every `###` header in ciphertext*.txt and
+  status.json: each occurs only in its own header (5778 nowhere, as E307's continuation). **No duplicate.** Not filed: row **5786/1**, the next
+  entry on E309's page (Gen. Butler's Hd Qrs, 4 Oct 1864, R. O'Brien to Sheldon, "for pandora Webster ... will send every boat you can possibly
+  spare ... Knox"), Butler's side of the same steamer exchange: a lead for a reader, not decoded here.
+- **Prior work:** by hand (civil-war adapter): own work (pointers grepped in ciphertext*, NOTES, AUDIT, status.json: only FM-R6c's own filing);
+  no AUDIT.md/status.json class on any of the three before this section; Tomokiyo and cached solver files have no Eckert ledger items;
+  aaymeloglu not cloned (UNCHECKED-NET, as FV-FM9a).
+- **Image eye check this session, every graded line** (PIL strips of the 2400 px pages, autocontrasted, scratch only; `iiif_lines.py` finds no
+  lines on the ruled grid, as FM-R6c found): 5777 entry 3 (header "Ft Monroe Aug 9/64 Maj. Eckert Washington" + 6 grid rows), **5778 top (9
+  grid rows + Sheldon; the tail FM-R6c had not eye-checked)**, 5659 entry 1 (header + 14 rows), 5786 entry 1 (header + 6 rows + Eckert) and entry 2
+  (header "Ft Monroe Oct. 4/64 5.30 P.M." + 8 rows), and the clear copy 4607 (top 15 lines). **The transcription matches the image on every
+  code word of the three entries**, with one plain-word slip: **E308 line 1 reads "is just handed in here", not "is first handed in"** (image
+  5659 and the clear copy 4607 agree). On 5778 "Water house" is two words in two grid cells and "Jay are Gilmore" stands as transcribed.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the hdl token 14:40-14:4x UTC; 16
+queries): waterhouse 17 (**5785** = mssEC 25 p.241, Ft Monroe 30 Sept 1864, a later cipher telegram with the same "Flora ... peasant appian ...
+for Tappan Eckert growl" prefix, "waterhouse sick at Newport barracks"; **12948** = Sept, "send a good magnet to Waterhouse at Fort Powhattan";
+others other dates), mcgaughey 3 (5778 own; **12950** = "Newberne NC 23d Sept via Fortress Monroe ... McGaughey has the fever Kent has tendered
+his resignation & Vanderhoefs time has expired J. R Gilmore"; **12960** = "Newberne NC ... Sept 26 Maj Eckert McGaughey is dead ... JR
+Gilmore"), gilmore chambersburg 14 (none a copy), back pay 22 / newport office 6 / operator by return boat 1 (own pointers 5777/5778 only for E307
+text), emory round 2 / providence conference 2 / chaplain white 2 / bombshell 3 / piercing the boiler 2 (5659 own + **4607**), cotton plant 3
+(own + other dates), rucker steamers 18 / webster illinois 6 / spare boats 9 / illinois discharged 2 (5786 own; **5854** = Ft Monroe Jan 1865,
+"pandora Are See webster has the letter", the same "Col R. C. Webster" spelling; others other dates, none a copy of E309).
+- **E308 -> pointer 4607 (object 4849, Page 166, the Washington clear telegram book), period clear copy, read on the image this session:**
+  "3 40 p m Fort Monroe May 9th 1864 The following is just handed in here it is news to me -- from Newbern May 7th for Carlton and Porter daily
+  Christian advocate [faint erased f.. ] -- a terrific naval engage meant in Albemarle Sound is reported - the gunboat Bombshell was captured
+  back from the rebel and the cotton planter driven off - The ram Albemarle fought seven of our Gunboat disabling the rudder and piercing the
+  boiler of one of them, The ram finally retired to the Roanoke apparently uninjured, she is armed with one hundred guns - the land attack upon
+  Newberne is apparently over - Chaplain White of the providence Conference was on an outpost and is supposed to be captured sig J Emory Round
+  supt M Episcopal Mission 3 pm strange we have not heard this". **Same telegram** (date, hour, sender, every clause). Where our entry has the
+  code word **fool** (key: Philadelphia), the Washington clerk began a word, erased it (a faint "f.." remains) and wrote a dash: the clear copy
+  leaves it unread; it does not contradict the key. Print: the 5-8 May fight is in ORN I/9-10 and OR I/36 (context only, FM-R6c); phrase grep
+  "terrific naval engagement", "piercing the boiler", "retired to the Roanoke", "Emory Round", "Daily Christian Advocate" 0 in 167 volumes;
+  be-api across IA: "Emory Round" 10 docs (Methodist conference minutes naming Rev. J. Emory Round; not this dispatch), "Chaplain White"
+  "Providence Conference" 5 (other chaplains), "terrific naval engagement" Albemarle 10 (other events). The Daily Christian Advocate itself was
+  not searched.
+- **E307 -> no clear copy and no print of the telegram located. Its people are printed:** Plum, *Military Telegraph* vol. 2 (1882; IA
+  `militarytelegraph02plumrich`, djvu text, page not read on the image): James R. Gilmore in charge of the North Carolina lines at Newberne, "Charles
+  H. Lithgow, Herman Waterhouse, Douglass Kent, Robt. B. Vanderhoof, D. C. McGaughey and B. F. Gilmore" his operators; "Exposure on a raid against the
+  Weldon Railroad compelled Gilmore to go north to recruit. No sooner had he returned with his brother ... than the yellow fever broke out ...
+  poor McGaughey first. Herman Frank Waterhouse was convalescing in the hospital at Newport Barracks". With the holder's own 5785, 12950 and
+  12960, this fixes the sender: **E307 is J. R. Gilmore's telegram from Newbern, 6 Aug 1864, 4 PM, sent on from Fort Monroe 9 Aug by Sheldon**
+  ("Jay are Gilmore" = J. R. Gilmore, after Webster = Signature; "quite warm this afternoon / Geo D Sheldon" is Sheldon's own note). Phrase grep
+  "terrible affair at Chambersburg", "my mother nearly insane", "Newport office closed", "McGaughey can take charge", "as much of my back pay" 0
+  in 167 volumes; be-api `"J. R. Gilmore" Chambersburg` across IA: 10 docs, none this telegram;
+  one is context: Kittochtinny Historical Society, *Retrospective of the first decade* (IA `retrospectivedec00folt`), "J. R. Gilmore,
+  Chambersburg, Pa., Secretary. April 7, 1908" (a Gilmore of that name at Chambersburg; not shown to be the operator).
+- **E309 -> no clear copy and no print of the telegram located.** Its people are printed: OR I/42 pt 3 (`warofrebellion423unit`, djvu text,
+  pages not read on the image): "Col. R. C. Webster, Fort Monroe" (Grant, 27 Dec 1864), "Colonel Webster, Chief Quartermaster" (28 Oct 1864),
+  index "Webster, Ralph C."; Grant Papers vol. 12 by be-api: "Col Webster has ordered a sufficient number of the sea going steamers now here to
+  be unloaded" (3 Nov 1864, another telegram). No Rucker-steamers telegram of 4 Oct in OR I/42 pt 3 (name KWIC); phrase grep "no spare boats",
+  "excepting the Illinois", "Illinois is nearly discharged", "give the names of those you send" 0 in 167 volumes; be-api Butler V
+  `"no spare boats"` 0 -- **uncontrolled**: the positive-control query (`"Herman Frank Waterhouse"` in Plum vol. 2) did not return before the
+  script's 200 s timeout, so this zero is a search result of unknown power.
+- Not searched: the press of the day and the Daily Christian Advocate of May 1864 (E308 is a press dispatch, but its clear copy already
+  classes it), Google Books (not probed), NARA RG 92 quartermaster records (E309), Grant Papers vol. 12 beyond be-api snippets.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E308 (clear copy 4607):** unity zebra zodiac Pekin pedlar = the clear copy's dashes and stops; fortune = Newbern, plunder = 7 (date),
+  wicked = reported, Shannon/Sharons = gunboat(s), piloted = captured (x2), saxon Walpole = from the rebel, Wallace = ram (x2), raptured =
+  fought, postpone = seven, Baden = Roanoke, plug publish shoals = one hundred guns, oats = attack, Flora = Newberne, turtle = outpost,
+  walrus = sig, imogene = 3 pm: **C 30 of 31 code groups; fool = Philadelphia H (key), not C and not M** (the clear copy leaves it unread, it
+  does not differ; the reader's M is lifted). Reading correction: transcription "first handed in" -> "just handed in" (plain; image + 4607).
+- **E307 (no clear copy):** **"water house" is plain, Waterhouse** (Herman F. Waterhouse, operator at Newport, N.C., in hospital at Newport
+  Barracks per Plum; holder 5785 "waterhouse sick at Newport barracks"), already plain in the reading. **famish = Norfolk H** (key; "Reply by
+  telegraph to Norfolk, they can forward by boat to me" is the Newbern route), the reader's M lifted. Webster = Signature H; "Jay are Gilmore"
+  = J. R. Gilmore (phonetic plain). pause, paws, paws are plain stop-words with no key row (uncounted, as FM-R6c). Read: "[Newbern] August [6]
+  [via] [Monroe] {4 PM} August [9]. For [Major] Eckert, [Washington]. News of the terrible affair at Chambersburg has just reached me. My mother
+  nearly insane and sisters are without home, clothes or money. They need me and I must go to them for a week or [two]. Newport office closed.
+  Waterhouse in hospital dangerously ill. Please send an operator or [two] by return boat. Mack Gaughey can take charge here in my absence.
+  Please have as much of my back pay as possible ready for me; shall need every cent. Hope to get off end of this week. It is important that I
+  should hasten. Reply by [telegraph] to [Norfolk]; they can forward by boat to me. [Signed] J. R. Gilmore." (+ Sheldon: "quite warm this
+  afternoon"). **H 23 of 23 code groups**; no M. Header correction: sender J. R. Gilmore, Newbern, 6 Aug 4 PM; relayed by Sheldon, Fort Monroe,
+  9 Aug.
+- **E309 (no clear copy):** **"are see webster" is plain, R. C. Webster** (Col. Ralph C. Webster, chief quartermaster at Fort Monroe, OR I/42
+  pt 3; holder 5854 "Are See webster"), not are see [signed]: the decoder's third Webster is a slip (FIX job: `plain-at: webster#3`). **"sheaf"
+  = chief (phonetic plain), "vinton" = Quartermaster (key)**: the header's "Chief Quartermaster Vinton" is a misreading; there is no Vinton.
+  thayer = they are, wilby = will be, B = be (phonetic plain); Knox = Maj Gen B. F. Butler (key, as CONF-FM2). Read: "[4]. To [Colonel]
+  Webster, chief [quartermaster]. Please send here immediately all the [steam]ers that can possibly be spared from your place; they are needed
+  at once. Answer and give the names of those you send. [Signed] D. H. Rucker [Brig. Gen.] / T. T. Eckert." and "Ft Monroe Oct. 4/64 5.30 P.M.
+  Maj. Eckert, Wash'n. [4] for [Brig. Gen.] Rucker, [Washington]. We have no spare boats here excepting the Illinois and those collected by
+  order of [Maj. Gen. Butler]. I have [telegraph]ed him to know if I may forward these to you and will [report] result at once. The Illinois is
+  nearly discharged and will be sent to you at once. [Signed] R. C. Webster, [Colonel] and [Quartermaster]. End. Geo. D. Sheldon." **H 20 of 20
+  code groups** (21 minus the Webster slip); no M (the reader's M on sheaf and the closing signature are lifted: both read). Header
+  correction: Eckert for Brig. Gen. D. H. Rucker (Washington) to Col. R. C. Webster, chief quartermaster, Fort Monroe; the 5.30 PM reply is
+  Webster's, sent by Sheldon.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E308 | **N1** (text known) | period | D3 (C 30 + H 1 of 31; external: holder's clear copy 4607) | plaintext already published by the holder: Huntington transcription of the Washington clear telegram book, pointer 4607 |
+| E307 | **N3** | period | **D3** (H 23/23 code groups; external non-statistical: Plum vol. 2 names Gilmore at Newberne, Waterhouse in hospital at Newport Barracks, McGaughey; holder 5785, 12950, 12960) | no prior plaintext or decipherment located after the search in s.2 |
+| E309 | **N3** | period | **D3** (H 20/20 code groups; external non-statistical: OR I/42 pt 3 Col. R. C. Webster, chief quartermaster, Fort Monroe; holder 5854 "Are See webster"; the sibling 5786/1 on the same page) | no prior plaintext or decipherment located after the search in s.2 |
+
+- Not N4 for E307/E309: Grant Papers vol. 12 searched only by be-api snippets, NARA quartermaster records and the press not searched.
+- **Safe sentences.** E307: "Read at grade H with War Department Cipher No. 1: on 6 Aug 1864 J. R. Gilmore, the military telegraph's man at
+  Newbern, N.C., asked Eckert for a week or two's leave because the burning of Chambersburg had left his mother and sisters without home,
+  clothes or money, reported the Newport office closed and Waterhouse dangerously ill in hospital, and proposed McGaughey to take charge; not
+  located in Plum's *Military Telegraph* (which names all three men), the Official Records or the Huntington's full-text search (searched 9 Oct
+  2026)." E309: "Read at grade H with War Department Cipher No. 1: on 4 Oct 1864 Eckert passed to Fort Monroe Brig. Gen. D. H. Rucker's call for
+  every steamer that could be spared, and Col. R. C. Webster answered that he had none but the Illinois and the boats collected by Butler's
+  order; not located in the Official Records (ser. I vol. 42 pt 3), Grant's or Butler's papers or the Huntington's full-text search (searched 9 Oct
+  2026)." E308: "A clear copy is in the Huntington's own transcription (pointer 4607); our reading of the cipher entry agrees with it clause for
+  clause."
+- **Unsafe:** any "first", "new", "unpublished" for E307/E309; any novelty at all for E308.
+
+### 5. Fixes for the next FIX job (FIX-FM10; not applied here; reading.md is decode.py output)
+E307: header sender -> J. R. Gilmore, Newbern, 6 Aug 1864 4 PM, via Fort Monroe 9 Aug (Sheldon relays); note: famish = Norfolk H (reader's M
+withdrawn), 5778 tail eye-checked by FV-FM9d. E308: ciphertext.txt line 1 "first" -> "just" (plain; image 5659 + clear copy 4607); note: fool
+= Philadelphia H, clear copy blank. E309: `plain-at: webster#3` (R. C. Webster); header "Chief Quartermaster Vinton" -> "Col. R. C. Webster,
+chief quartermaster, Fort Monroe" and the 5.30 PM reply is Webster's. Lead, not decoded: row 5786/1 (Butler's Hd Qrs reply, same page).
+Requests: hdl.huntington.org 22 (16 CONTENTdm queries, 1 dmGetItemInfo, 5 IIIF pages); archive.org 3 downloads; be-api 7 (6 answered; the control timed out).
