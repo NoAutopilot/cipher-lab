@@ -429,6 +429,36 @@ Requests: resources.huygens.knaw.nl 106 required page fetches (all 200, >= 2.2 s
 under 10) from a second small_runs process I launched by mistake and killed within about a minute; two processes were briefly concurrent against the host (a lapse of
 the one-at-a-time rule; no 429/403 seen). Vision 0, subagents 0, WebSearch 0.
 
+## Deel 2 small-number run, pp.252-371 (HEIN-SR3, 9 Oct 2026, 15:21-15:4x UTC by date -u)
+
+Brief (LANE FAMILY-A2j, account 2). Same tool, rule, filters and PREREG as HEIN-SR/HEIN-SR2 (`small_runs.py` unchanged; no new gate).
+Prior-work step: `tools/prior_work.py` (step read, --fetch) exit 4: two target-level own-claim LEADs (HEIN-SR, HEIN-SR2 claims, no unit named), a folio-keyed LOOK and
+UNCHECKED solver/Tomokiyo rows that do not apply to a printed-edition OCR page run; all five recorded CLEAR in `prior-work.tsv`. Check 1: pp.252-371 not scanned before
+(HEIN-SR2 stopped at 251); 15 of the 120 pages were already on disk. Checks 3-4: the edition is the very text read; no other edition looked up (unchecked).
+
+Controls (disk, before the target run): positive p.130 (letter 341) 1 row, p.398 (letter 1017) 1 row; negatives pp.017, 060, 473, 397 0 rows each.
+Target: Deel 2 printed pp.252-371, 120 pages (15 held, 105 fetched once each, all 200). Result: 13 candidate rows on 13 pages (255, 259, 261, 282, 289, 290, 298, 300,
+302, 303, 328, 331, 333), all eye-read from OCR: dates, footnote references (Van 't Hoff nr.123/125, Elias), florin sums, troop counts and ship gun counts in clear
+French/Dutch/English. **None is cipher.** Table: `small_runs_HEINSR3.tsv`. No page in 252-371 carries a cipher passage of the 1017 kind.
+
+Where it was not found / limits: pp.372-600 not scanned. Same rule limits as D2-HEIN (needs three small numbers close together; OCR is the only witness). Graded tokens: 0. No key or status change.
+Requests: resources.huygens.knaw.nl 105 (>= 2.2 s apart, descriptive UA, one process). Vision 0, subagents 0, WebSearch 0.
+
+## Remaining gaps (HEIN-SR3, 9 Oct 2026)
+Read so far: unmeasured, the 1703 cipher extent in print rests on OCR scans of about 433 of 594 Deel 2 pages (HEIN-SR3 added 105 fetched + 15 held).
+- Deel 2 printed pp.372-600 not scanned for small-number runs - blocker: not-attempted; next: `small_runs.py --fetch` over pp.372-491 not on disk in 120-request batches, ~USD 1.2 per batch
+- NA original H.A. 841 undigitised - blocker: waiting-on the Nationaal Archief reply to REQUEST.md; the original is not online
+
+## Escalation (HEIN-SR3, 9 Oct 2026)
+- [x] siblings: Deel 3 read (R11A-HEIN3, R12A-HEIN)
+- [x] clear-pages: letters 341, 929, 1017 only
+- [n/a] known-keys: no key located in print
+- [x] print: Deel 2 pp.7-371 now scanned
+- [n/a] key-rebuild: no key material exists
+- [n/a] image-check: no run found
+- [ ] retry: pp.372-600
+Verdict: keep going: 1 internal gap; cheapest next: small_runs over Deel 2 pp.372-600 in 120-request batches, ~USD 1.2 each
+
 ## Remaining gaps (HEIN-SR2, 9 Oct 2026)
 Read so far: unmeasured, the 1703 cipher extent in print rests on OCR scans of about 313 of 594 Deel 2 pages (A2P4 70, D2-HEIN 75 on disk incl. controls, HEIN-SR 118, HEIN-SR2 106 fetched + 14 already held).
 - Deel 2 printed pp.252-600 not scanned for small-number runs - blocker: not-attempted; budget stopped at p.251; next: `small_runs.py --fetch` over pp.252-600 not on disk in 120-request batches, ~USD 1.2 per batch
