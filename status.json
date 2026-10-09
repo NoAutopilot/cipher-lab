@@ -8418,6 +8418,170 @@
       "depth_note": "15 H of 16 code-word groups ('Hawley', 'Barry' plain; 'pro' M)"
     },
     {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM5b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM5b verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM5b)' section 4",
+      "reading_version": "FM-R3b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM5b) section 3",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Col. R. C. Webster (Chief QM, Fort Monroe) via Sheldon to Brig. Gen. D. H. Rucker, 29 Nov 1864, eight steamers sent that night, capacity 6,600 men (E220)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 29 Nov 1864 the chief quartermaster at Fort Monroe, Col. R. C. Webster, answered General Rucker's call for every available steamer by naming eight he would send that night (H. Livingston, Weybosset, Gen'l Sedgwick, Massachusetts, Louisa Moore, Idaho, Montauk, Beaufort), capacity in all 6,600 men. The telegram was not located in the Official Records (ser. I vol. 42 pts 2-3), Butler's printed correspondence (vols. IV-V) or the Huntington's full-text search (searched 9 Oct 2026); Grant Papers vol. 13 was not reachable.",
+      "gap": "N3 (weak: the vessel list is clear in the holder's public transcription; the key supplies 2.30 PM, Washington, 6,600 men, Colonel): Grant Papers vol. 13, QMG/Rucker letters (RG 92), press unread; signer Webster is plain (decoder reads Signature)",
+      "depth": "D3",
+      "completeness": "16 H of 16 code-word groups ('Webster' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.267, pointer 5811, E220"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.267, pointer 5811, E220",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.267, pointer 5811, E220"
+      ],
+      "depth_sentence": "On 29 Nov 1864 Fort Monroe's chief quartermaster told Rucker in Washington he would send eight named steamers that night with room for 6,600 men.",
+      "depth_check": "code clause: Melody/Plague/Publish numerals and Spit = Men passim, Paradise = Colonel passim; external (non-statistical): Rucker's call in mssEC 18 p.235 (9901/0) to R. C. Webster for every steamer and propeller and their names, which E220 answers; 5787 (4 Oct 1864) the same officer's parallel answer; image read by FM-R3b; matched control FM-R3b",
+      "depth_note": "16 H of 16 code-word groups ('Webster' plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM5b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM5b verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM5b)' section 4",
+      "reading_version": "FM-R3b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM5b) section 3",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Butler's headquarters (operator R. O'Brien) to Lt. Col. Biggs via Sheldon, 13 June 1864, send all ferry-boats and lumber to Fort Powhatan (E222)",
+      "line": "Read at grade H with Cipher No. 1: at 3.30 p.m. on 13 June 1864 Butler's headquarters ordered Lieutenant-Colonel Biggs at Fort Monroe to send up all ferry-boats at once to Fort Powhatan, and the lumber there in the quickest possible form and time, and asked him to hurry up the telegraph party. The Official Records (ser. I vol. 40 pt 2) print Butler's message of ten minutes later to General Benham from the same ledger page and the quartermaster's report that he was sending the ferry-boats, not this telegram (searched 9 Oct 2026).",
+      "gap": "N3 (weak: the body is clear in the transcription; the key supplies Colonel, Fort, Butler, Telegraph): Biggs's letterbooks, Grant Papers vol. 11 page-by-page, press unread",
+      "depth": "D3",
+      "completeness": "8 H of 8 code-word groups ('how rattan' = Powhatan, plain phonetic)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.203, pointer 5747, E222"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.203, pointer 5747, E222",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.203, pointer 5747, E222"
+      ],
+      "depth_sentence": "On 13 June 1864, as the Army of the Potomac crossed the James, Butler ordered every ferry-boat at Fort Monroe up to Fort Powhatan.",
+      "depth_check": "code clause: Knox = Butler, Saco = Fort (printed sibling 5747/0 'Fort Powhatan' ... 'B. F. Butler'); external (non-statistical): OR I/40 pt 2 pp.5-6 prints the 3.40 PM same-page sibling in clear, p.13 the Fort Monroe quartermaster's execution; E174 is the ledger's reply; image read by FM-R3b",
+      "depth_note": "8 H of 8 code-word groups ('how rattan' = Powhatan, plain phonetic)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM5b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM5b verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM5b)' section 4",
+      "reading_version": "FM-R3b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM5b) section 3",
+      "unresolved_spans": "which vessel 'Baltic' is (M)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Surg. Charles McCormick (Medical Director, Dept of Va. and N.C.) via Sheldon to Maj. Eckert for Surgeon General Barnes, 9 Dec 1864, Western Metropolis, Baltic and B. Deford taken for military necessity (E223)",
+      "line": "Read at grade H with Cipher No. 1: on 9 Dec 1864 the medical director of the Department of Virginia and North Carolina, Surgeon Charles McCormick, told the Surgeon General that the commanding general had taken the Western Metropolis, the Baltic and the B. Deford for an urgent military necessity (the week the Fort Fisher expedition sailed). Not located in the Official Records (ser. I vol. 42 pt 3), Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 (weak: mostly clear in the transcription): Medical and Surgical History, Surgeon General's letters received, Butler V Dec 1864 page-by-page unread; 'Baltic' plain (decoder reads Chattahoochee)",
+      "depth": "D3",
+      "completeness": "9 H of 9 code-word groups (Baltic, Western Metropolis, B. Deford, 'milly terry' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.279, pointer 5823, E223"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.279, pointer 5823, E223",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.279, pointer 5823, E223"
+      ],
+      "depth_sentence": "On 9 Dec 1864 the department's medical director reported to the Surgeon General that three steamers, the Western Metropolis, Baltic and B. Deford, had been taken by the commanding general for military necessity.",
+      "depth_check": "code clause: Quadrant/Alba/Abacus = Department of Virginia and North Carolina passim; external: OR I/40 pt 2 McCormick as Medical Director at Butler's HQ; 5822 (8 Dec 1864) Dodge to take the Western Metropolis; image crop-checked by FV-FM5b",
+      "depth_note": "9 H of 9 code-word groups (Baltic, Western Metropolis, B. Deford, 'milly terry' plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM5b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM5b verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM5b)' section 4",
+      "reading_version": "FM-R3b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM5b) section 3",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Brig. Gen. G. Weitzel (operator R. O'Brien) to Capt. F. U. Farquhar via Sheldon, 27 May 1864, report to W. F. Smith as chief engineer (E224)",
+      "line": "Read at grade H with Cipher No. 1: on 27 May 1864 General Weitzel ordered Captain Farquhar to report as chief engineer to General W. F. Smith, who was leaving Bermuda Hundred with a large force to join Grant, as Smith passed Fort Monroe. The Official Records (ser. I vol. 36 pt 3) show Farquhar with Smith's corps in the following days, not this telegram (searched 9 Oct 2026).",
+      "gap": "N3 (weak: the operative sentence is clear; the key supplies W. F. Smith, force, Grant, Monroe, Brigadier General): Smith's papers, Grant Papers vol. 11 page-by-page unread",
+      "depth": "D3",
+      "completeness": "9 H of 9 code-word groups",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.157, pointer 5701, E224"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.157, pointer 5701, E224",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.157, pointer 5701, E224"
+      ],
+      "depth_sentence": "On 27 May 1864 Captain Farquhar was ordered to join W. F. Smith's force, bound for Grant, as its chief engineer when it passed Fort Monroe.",
+      "depth_check": "code clause: Nankin = W. F. Smith, Jupiter = Grant passim; external (non-statistical): OR I/36 pt 3 pp.265, 504-505, 660 (Farquhar with Smith's 18th Corps 27 May-6 June); OR I/36 pt 3 p.32 / Butler IV p.239 (Weitzel chief engineer in Farquhar's absence); image read by FM-R3b",
+      "depth_note": "9 H of 9 code-word groups"
+    },
+    {
       "date": "8 Oct 2026",
       "kind": "recovery",
       "key": "published",

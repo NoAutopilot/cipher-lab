@@ -2661,3 +2661,18 @@ Worker FIX-FM4, 00:28-00:4x UTC by `date -u`, offline. Carries AUDIT "FV-FM4" s.
 `python3 ciphers/eckert-1864/decode.py --write` then `--check` -> `reading.md is current`, exit 0; `decode_no2.py --check` and `decode_no9.py --check` current; `python3 -m unittest tools.tests.test_eckert_decode` OK.
 Propagation (rule 10): status.json rows E193/E194 and second-opinions/PROMPT-chatgpt-e193.md / -e194.md already carry R. C. Webster, twenty-second, 5,700 and Hawley (checked); no SO row withdrawn (both N3 weak). No class or depth changed.
 Not done: an ordinal-join for "[20] second" in the rendered reading (decoder feature, not named by the audit).
+
+## FV-FM5b (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier for E220, E222, E223, E224, E225 (reader FM-R3b); full log in AUDIT.md "## AUDIT (FV-FM5b)". Duplicate diff: none (5747 and
+5823 carry other filed rows: E174 is E222's reply; E163/E177 other telegrams). Image 5823 and 5626 eye-checked from `tools/iiif_lines.py --image`
+crops (scratch, not committed): transcription matches, except E225's header is "S. H. Beckwith" on the page (volunteer text "J. H."; recorded,
+not repaired). Results: **E225 N1** (printed from the received copy, Grant Papers vol. 10 p.313n: "Our man reports Longstreet at Charlottsville
+five thousand men from his own corps forwarded him a day Think the no large but believe the information"; every code value agrees, C 13 of 13);
+**E220, E222, E223, E224 N3 (weak) D3**; SO rows SO-ECKERT-E220/E222/E223/E224 queued; WORK-QUEUE AUD2-LEDGER-10.
+Reading corrections for a FIX job (rule 7, decode.py entry notes): E220 "Webster" plain (Col. R. C. Webster, Chief QM Fort Monroe; mssEC 18
+p.235 9901/0 is Rucker's call to him) -- tail "[Signed] [Colonel] Webster", 6600 = melody plague publish H; E222 "how rattan" = Powhatan
+(plain phonetic), signer Butler; E223 "Baltic" plain (steamer, not Chattahoochee), "milly terry tarquinity" = military necessity plain; E225
+"John" plain (signer John I. Davenport, not Grant), "Florence" = 11.30 AM C, "Elgin" = Grant I (from the print's "to USG"), "Pierce" M, drop
+FM-R3b's "[information correct]" -> "information".
+Side find for future readers: row 5747/0 (Butler to Benham, 13 June 1864, 3.40 PM, unfiled) is printed in clear in OR I/40 pt 2 pp.5-6 (N1).
+Requests: hdl.huntington.org 12 (one token block 00:38-00:40 UTC); archive.org 4; be-api 18; Google Books 1 (429, stopped).
