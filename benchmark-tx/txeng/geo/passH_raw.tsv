@@ -1,0 +1,188 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T45		H	line start; stem up, loop at foot
+L01	2	T33		H	double inverted-T
+L01	3	T45		H	stem loop
+L01	4	T83		H	reversed-e joined to e
+L01	5	T19		H	pi
+L01	6	T89	T95	M	%-shape loop with descender
+L01	7	T56	X_NEW	L	digit-4-like
+L01	8	X_NEW	T49	L	digit-7-like open stroke
+L01	9	T78		H	bracket plus cross
+L01	10	T63		H	v
+L01	11	T60	T86	M	two verticals with bars
+L01	12	T17		H	t/c shape
+L01	13	T19		H	pi (overlap s1/s2 counted once)
+L01	14	T58		H	B
+L01	15	T53		H	infinity
+L01	16	T96		H	looped l with tick
+L01	17	T70		H	triangle
+L01	18	T25		H	lambda
+L01	19	T19		H	pi
+L01	20	T83		H	reversed-e e
+L01	21	T60		H	hash
+L01	22	T80		H	D
+L01	23	T86	T60	M	two verticals one bar (overlap s2/s3 counted once)
+L01	24	T83		H	reversed-e e
+L01	25	T37		H	theta with long bar
+L01	26	T85		H	plus
+L01	27	T50		H	omega joined to long s
+L01	28	T51	T95	M	P-loop with crossed stem and foot; hook stroke above line not counted
+L01	29	T83		H	reversed-e e
+L01	30	T63		H	v
+L01	31	T45		H	stem loop; line end
+L02	1	T60		H	line start; hash
+L02	2	T45		H	stem loop
+L02	3	T98		H	circle with stem through
+L02	4	T25		H	lambda
+L02	5	T90		H	stem with crossbar over loop
+L02	6	T97		H	ampersand-like
+L02	7	T45		H	stem loop
+L02	8	T65		H	double-loop with cross stem
+L02	9	T86		H	two verticals one bar
+L02	10	T76		H	g/9
+L02	11	T18		H	phi-like loop on stem
+L02	12	T45		H	stem loop
+L02	13	T37		H	theta barred (overlap s1/s2 counted once)
+L02	14	T36		H	loop on long stem
+L02	15	T52	T56	M	n-like with looping tail
+L02	16	T37		H	theta barred
+L02	17	T33		H	double inverted-T
+L02	18	T45		H	stem loop
+L02	19	T57		H	diamond with tail
+L02	20	T86		H	two verticals one bar
+L02	21	T90		H	cross over loop (overlap s2/s3 counted once)
+L02	22	T80		H	D
+L02	23	T49		H	box on stem
+L02	24	T85		H	plus
+L02	25	T83		H	reversed-e e
+L02	26	T25		H	lambda
+L02	27	T53		H	infinity
+L02	28	T19		H	pi
+L02	29	T83		H	reversed-e e; interlinear P-with-crossed-stem (T51-like) written above, not counted
+L02	30	T60		H	hash
+L02	31	T37		H	theta barred; line end
+L03	1	T83		H	line start; reversed-e e
+L03	2	T45		H	stem loop
+L03	3	T37		H	theta barred
+L03	4	X_NEW	T46	M	single digit 8 (no 5/6/9 after it)
+L03	5	X_S		M	plain s
+L03	6	T17		H	t
+L03	7	T37		H	theta barred
+L03	8	T92		M	omega with inner curl
+L03	9	T55		H	E-on-side/flag
+L03	10	T51	T95	M	P-loop crossed stem with foot
+L03	11	T19		H	pi
+L03	12	T85		H	plus
+L03	13	T76		H	g/9
+L03	14	T63		H	v (overlap s1/s2 counted once)
+L03	15	T37		H	theta barred; tilde above
+L03	16	T83		H	reversed-e e
+L03	17	T92		M	omega with inner curl
+L03	18	T45		H	stem loop
+L03	19	T60		H	hash
+L03	20	T45		H	stem loop with accent tick above
+L03	21	T85		H	plus
+L03	22	T46		H	86 as one cell
+L03	23	T90	T45	M	stem with crossbar, bowl to right (b-shaped)
+L03	24	T53		H	infinity
+L03	25	T19		H	pi (overlap s2/s3 counted once)
+L03	26	T58		H	B
+L03	27	T65	T18	M	double loop on crossed stem
+L03	28	T52		M	n with 3-like tail
+L03	29	T51	T95	M	P-loop crossed stem with foot
+L03	30	T25		H	lambda
+L03	31	T27	T36	M	loop with curved descender
+L03	32	X_NEW	T95	L	q-shape (bowl left of stem) with foot bar
+L03	33	T60		H	hash
+L03	34	T90		M	crossed stem with bowl (b-shaped)
+L03	35	T17		M	small t; line end
+L05	1	X_NEW	T95	L	line start; q with foot bar (as L03 pos32)
+L05	2	T57		H	diamond with long tail
+L05	3	T55		H	flag
+L05	4	T90		H	crossed stem with bowl
+L05	5	T58		H	B
+L05	6	T37		H	theta barred
+L05	7	T17		H	t
+L05	8	T19		H	pi
+L05	9	T13	T64	M	m with tilde flourish to upper right
+L05	10	T25		H	lambda
+L05	11	T86		H	two verticals one bar
+L05	12	T63		H	v
+L05	13	T45		H	stem loop (overlap s1/s2 counted once)
+L05	14	T13		H	m with tilde above; small dot after it
+L05	15	T85		H	plus
+L05	16	T19		H	pi
+L05	17	X_K		H	capital K
+L05	18	T45		H	stem loop
+L05	19	T76		H	g/9
+L05	20	T25		H	lambda
+L05	21	T19		M	pi with dot above
+L05	22	T60		H	hash
+L05	23	T86		H	two verticals one bar (overlap s2/s3 counted once)
+L05	24	T89		H	%-shape with stem
+L05	25	T92	X_NEW	M	c joined to omega-like loop
+L05	26	T19		H	pi
+L05	27	T76		H	g/9
+L05	28	T52		M	n with 3-like tail
+L05	29	T54		H	R
+L05	30	T37		H	theta barred
+L05	31	T76		H	g/9; line end
+L10	1	T53		H	line start; open infinity
+L10	2	T86		H	two verticals one bar
+L10	3	T18		H	phi-like loop on stem
+L10	4	T76		M	heavily inked g/9
+L10	5	T92		M	omega with inner curl
+L10	6	T19		H	pi
+L10	7	T58		H	B
+L10	8	T18		H	phi-like
+L10	9	T85		H	plus
+L10	10	T53		H	infinity
+L10	11	T96		H	looped l with tick
+L10	12	T98		H	circle with stem through
+L10	13	T55		H	flag (overlap s1/s2 counted once)
+L10	14	T60		H	hash
+L10	15	T55		H	flag
+L10	16	T15		H	89 as one cell
+L10	17	T86		H	two verticals one bar
+L10	18	T70		H	triangle
+L10	19	T58		H	B heavily inked
+L10	20	T96		H	looped l
+L10	21	T60		M	hash crossed by stroke of preceding l
+L10	22	T45		H	stem loop
+L10	23	T90		H	cross over loop (overlap s2/s3 counted once)
+L10	24	T33		H	double inverted-T
+L10	25	T19		H	pi
+L10	26	T24		H	epsilon
+L10	27	T37		H	theta barred
+L10	28	T83		H	reversed-e e
+L10	29	T45		H	stem loop
+L10	30	T36	T18	M	loop on long stem
+L10	31	T96		M	looped l; tiny marks after at gutter edge not counted; line end
+L22	1	T53		H	line start; infinity
+L22	2	T60		H	hash with dot below
+L22	3	T38		H	rounded m
+L22	4	T37		H	theta barred
+L22	5	T63		H	v
+L22	6	T96		H	looped l with tick
+L22	7	T70		M	triangle with dot inside
+L22	8	T45		H	stem loop
+L22	9	X_NEW	T96	L	d-shape, bowl with leaning ascender
+L22	10	T45		M	b-shape (bowl right of stem, no loop below)
+L22	11	T76	X_NEW	M	g with closed lower loop
+L22	12	T19		H	pi (overlap s1/s2 counted once)
+L22	13	T92		M	omega with inner curl
+L22	14	T45		H	stem loop
+L22	15	T70		H	triangle
+L22	16	T33		H	double inverted-T
+L22	17	T25		H	lambda
+L22	18	T53		H	infinity
+L22	19	T19		H	pi
+L22	20	T25		H	lambda
+L22	21	T60		H	hash (overlap s2/s3 counted once)
+L22	22	X_S		M	plain s, comma below
+L22	23	T88		H	small o
+L22	24	T90		H	crossed stem with bowl
+L22	25	T85		H	plus
+L22	26	T57		H	diamond with tail
+L22	27	T37		H	theta barred
+L22	28	T80		H	D; line end
