@@ -1,0 +1,20 @@
+# MONLUC-CURL 9 Oct 2026: blind Sonnet binary curl answers (sheet f86_curl_sheet.py seed 1186, scratch only); tile->line/pos from the deterministic key
+line	pos	cell	sheet_tile	curl
+L03	45	K07	1	Y
+L03	56	K07	2	N
+L04	30	K07	3	N
+L03	19	K07	4	Y
+L03	22	K07	5	Y
+L03	39	K07	6	Y
+L02	1	K07	7	Y
+L02	31	K07	8	Y
+L03	18	K38	9	Y
+L03	50	K07	10	N
+L02	7	K07	11	N
+L04	7	K07	12	U
+L02	20	K07	13	Y
+L03	30	K07	14	Y
+L03	6	K07	15	Y
+L04	27	K07	16	N
+L02	23	K07	17	N
+L04	22	K07	18	Y

@@ -504,3 +504,44 @@ Secondary (reported, not gating): the K38 tile's answer (the key sheet's K38 cel
 agreement with `curl_reader` (non-blind).
 (3) *--try*: only if (1) and (2) pass: scratch copy of ciphertext_c172.tsv with X's K07 tokens relabelled K69, `tools/decode_key.py
 <scratch> --try K69=t` with its own two nulls; accept = M. key.tsv not edited; a transcription relabel only if --try accepts.
+**Result of the blind sort** (one Sonnet call, sheet only; per token in `f86_curl_answers.tsv`; gate output from
+`python3 -I f86_curl_gate.py f86_curl_answers.tsv` -- one parsing fix after the call, comment lines skipped, the gate unchanged):
+K07 tiles Y 10 / N 6 / U 1 (L04:7, "bottom cut", the edge tile named above); K38 tile **Y** (the expected anchor).
+(1) *Split*: yes (10 / 6). (2) *Gate*: t-faced in Y **7 of 9** (t 7, n 1, s 1); not-Y t **0 of 5** (g 5 of 5); obs 7, null p95 6,
+**p 0.0086: PASS**. Secondary: agreement with the non-blind `curl_reader` 16/17 -- the blind answer is cleaner than the reader's
+(all 7 t-faced tiles Y, all 5 g-faced tiles not-Y), which is what the power note said a PASS needed.
+(3) *--try* (`python3 -I f86_curl_try.py <scratch>` -> scratch copy of ciphertext_c172.tsv with the 10 Y K07 tokens as K69, then
+`tools/decode_key.py <scratch> --try K69=t`): **K69=t: n 10, statistic -11.5 bits over NULL; null p95 positions -30.5, value class
+-20.1; reject (no better than the runner-up).**
+**Known-answer control on the same decode (added after the target --try, not pre-registered; `f86_curl_try.py <scratch> --control
+CODE --try K69=<table value>`):** every occurrence of a table code whose value the gloss confirms is relabelled K69 and --try asked for
+its true value. K39=u (n 15) +225.1 bits **accept**; K09=i (n 9) reject; K05=e (n 10) reject; K13=o (n 7) reject; K16=r (n 6) reject;
+K26=e (n 9) reject. **1 of 6** known answers found, and that one is u after q. On the f.86 decode (150 tokens, C 76 / M 71 against the
+gloss) --try cannot find a known letter at n 6-15, so its reject of K69=t is a **non-test, not a negative** (rule 3: the control
+fails the same way as the target). Contrast c268 lines 1-5, where the same --try accepted the C-curl = t (MONLUC-BLIND).
+**Decision per pre-registration: no relabel.** (3) required a --try accept; it did not come, so ciphertext_c172.tsv and key.tsv are
+unchanged and f.86 grades unchanged. What stands: a value-blind binary sort on wider crops splits f.86 K07 into curl-present /
+curl-absent, the curl-present tokens face gloss t 7/9 and the plain ones g 5/5 (p 0.0086 against a 10,000-shuffle null), and the
+f.86 K38 tile falls with the curl group -- consistent with MONLUC-BLIND's c268 finding (C-curl Z = table K38 = t) and with MONLUC-2's
+earlier f.86 split. Second blind sort of f.86 K07: first (MONLUC-F86, shape) FAIL p 0.063; this one (binary curl) PASS. The gloss is
+the evidence, so a relabel would rest on the gloss (grade C), not on --try; whether that is enough is a brief's decision, not this pass's.
+Requests: none to any host. Subagents: 1 (Sonnet, blind sort).
+
+## Remaining gaps (MONLUC-CURL, 9 Oct 2026)
+Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against its own gloss (MONLUC-KEY), unchanged; c268 lines 1-5 decoded with 10 C-curl tokens relabelled K38 = t (M), ungraded; judge FAIL -1.300.
+- f.86 K07 curl-present = K38 relabel - blocker: not-attempted; blind binary sort PASS (p 0.0086, t 7/9 vs g 5/5), --try reject is a non-test (known-answer control 1/6); next: a brief deciding whether the gloss-backed sort licenses relabelling the 10 curl-present f.86 K07 tokens K38 (grade C where the gloss faces t), then rerun check_cells.py and decode_key.py --check, ~$0.3
+- c268 transcription noise (27% pass disagreement) - blocker: not-attempted; the C-curl part is now corrected; next: tools/lookalike_pass.py on c268 passes A/B with K38 as its own label, then the sorter's focus.tsv for the owner, ~$1
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py)
+- in-volume decipherment of ff.132-138 - blocker: not-attempted; f.139 opening tested and not matched; next: look at ff.140-141 and items 17/18/112-120 for a Monluc 28 Apr text, ~$1
+- rest of c268, c264, c258 and f.210 - blocker: not-attempted; wait on the look-alikes and a calibrated test; next: the 3-unit protocol per 5-10 lines once a positive control passes, ~$3 per leaf
+- ff.211-223, f.87 margin, ff.50/56/60/80 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONLUC-CURL, 9 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [ ] clear-pages: remaining clear leaves untested; planned step: ff.140-141 look
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell (MONLUC-KEY), per sign form on f.86 (MONLUC-2) and c268 (MONLUC-K07); the C-curl form matched to the table's K38 (MONLUC-BLIND)
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found
+- [ ] key-rebuild: c268 C-curl relabelled K38 (MONLUC-RELABEL); f.86 curl group passes its blind gate but --try is powerless on f.86; planned step: a gloss-graded relabel decision
+- [x] image-check: f.86 K07 binary curl sort on wider crops, gate PASS (this pass)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 5 internal gaps; cheapest next: decide a gloss-graded K38 relabel of the 10 f.86 curl-present K07 tokens, ~$0.3

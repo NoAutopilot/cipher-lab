@@ -9,7 +9,7 @@ faced={}
 for r in csv.reader(open(T+'f86_k07_sort.tsv'),delimiter='\t'):
     if not r or r[0].startswith('#') or r[0]=='tile': continue
     faced[(r[1],r[2])]=(r[3],r[4],r[7])
-ans={(r['line'],r['pos']):r['curl'] for r in csv.DictReader(open(sys.argv[1]),delimiter='\t')}
+ans={(r['line'],r['pos']):r['curl'] for r in csv.DictReader((l for l in open(sys.argv[1]) if not l.startswith('#')),delimiter='\t')}
 k07=[k for k in faced if faced[k][0]=='K07']
 ny=sum(ans[k]=='Y' for k in k07); nn=sum(ans[k]=='N' for k in k07); nu=len(k07)-ny-nn
 print(f'K07 tiles: Y {ny} N {nn} U {nu}; K38 tile answered', [ans[k] for k in faced if faced[k][0]=='K38'])
