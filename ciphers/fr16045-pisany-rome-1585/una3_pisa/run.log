@@ -1,0 +1,6 @@
+tx86e/ciphertext_f275r.tsv {'tokens': 554, 'dropped': 7, 'decoded_letters': 713, 'score': 0.662, 'keyshuffle_p99': 0.4661, 'order_p99': 0.4937, 'above_both': True}
+tx86e/passA.tsv {'tokens': 538, 'dropped': 5, 'decoded_letters': 707, 'score': 0.6308, 'keyshuffle_p99': 0.468, 'order_p99': 0.488, 'above_both': True}
+tx86e/passB.tsv {'tokens': 540, 'dropped': 7, 'decoded_letters': 695, 'score': 0.659, 'keyshuffle_p99': 0.4661, 'order_p99': 0.4921, 'above_both': True}
+una3_pisa/tx/ciphertext_f275r.tsv {'tokens': 554, 'dropped': 7, 'decoded_letters': 713, 'score': 0.6634, 'keyshuffle_p99': 0.4666, 'order_p99': 0.4923, 'above_both': True}
+una3_pisa/tx/_all_f275r.tsv {'tokens': 554, 'dropped': 7, 'decoded_letters': 713, 'score': 0.662, 'keyshuffle_p99': 0.4679, 'order_p99': 0.4923, 'above_both': True}
+f275r control 5 /5
