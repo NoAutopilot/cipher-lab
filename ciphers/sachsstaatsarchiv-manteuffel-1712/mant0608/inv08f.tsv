@@ -1,0 +1,62 @@
+# MANT-CEN3 (9 Oct 2026, LANE FAMILY-A2j account 2): Loc. 694/08 unseen frames 0268-0399 (first 50 of the 89 still uncovered from 0268 on, in frame order) + planted controls. www.archiv.sachsen.de frames.tsv full-size URLs, 51 requests (50 targets + clear control 0125), 2.3 s apart, all HTTP 200 image/jpeg; images in scratch only (re-fetch from images/loc694-08-09/frames.tsv); code controls 0510/0511/0579/0580 read from disk. 5 sheets of 12 tiles (10 targets + code control + clear control 0125), sheets_d.py seed 6086, blind reads saved in sheet_blind_f.tsv before the key sheet_key_f.tsv was opened. sheet_read = blind read at 600 px; every frame read code or possible was eye-checked at ~1100 px (code column = that result; crops census/eye_f1-5.jpg); a sheet "none" is NOT eye-checked (weak evidence: light single codes can be missed). Grade M throughout: eye readings, no transcription.
+loc	frame	kind	sheet_label	sheet_read	code	glossed	density_eye	est_tokens	note	http	sha256_16
+694/08	0280	target	D1-1	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	d4527f32ba8551f6
+694/08	0290	target	D1-2	possible	y	n	medium	30-45	stamp 224, 17 Sept 1712: code run in lines 1-3 of the right page and short groups lower; superscript marks at top, no clear gloss words	200 image/jpeg	de41885c327bbdd8
+694/08	0283	target	D1-3	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	83bd3d25bd1fb4eb
+694/08	0288	target	D1-4	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	ee94411e5413d37f
+694/08	0268	target	D1-5	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	00936be5e3709dd0
+694/08	0278	target	D1-6	possible	n	-	-		sheet possible; cleared at ~1100 px: clear text (stamp 215)	200 image/jpeg	55a283c8e9c219b8
+694/08	0125	control-	D1-7	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0270	target	D1-8	possible	n	-	-		sheet possible; cleared at ~1100 px: clear text, Pro memoria (stamp 208), numbered paragraphs, no code groups seen	200 image/jpeg	a868405a2825f699
+694/08	0286	target	D1-9	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	a4f6b7eaff78ea97
+694/08	0273	target	D1-10	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	be35cf4cb403b18f
+694/08	0276	target	D1-11	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	d5af37276e0a157f
+694/08	0510	control+	D1-12	code	y	-			planted control (control+), sheet read code	disk	914cc03bd531a4fb
+694/08	0579	control+	D2-1	code	y	-			planted control (control+), sheet read code	disk	8dcd15ef969fe268
+694/08	0302	target	D2-2	possible	n	-	-		sheet possible; cleared at ~1100 px: clear text (stamp 234, Charlottenbourg 14 Sept)	200 image/jpeg	83433674f3f97954
+694/08	0298	target	D2-3	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	87876e16d726373a
+694/08	0304	target	D2-4	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	9c07d4532b2e6359
+694/08	0317	target	D2-5	possible	y	partly	medium	30-45	stamp 246, 17 Sept 1712: runs in numbered paragraphs 1-3 with small words above groups	200 image/jpeg	4ddbd09a8a6b877d
+694/08	0314	target	D2-6	code	y	partly	heavy	60-80	stamp 244, Extrait de la resolution (15 Sept 1712): code groups in nearly every line, small words above many groups	200 image/jpeg	862a7a715dd6b2c7
+694/08	0125	control-	D2-7	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0293	target	D2-8	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	39b316642b1a10ff
+694/08	0312	target	D2-9	code	y	partly	heavy	60-80	stamp 242, Extrait de la relation: groups (66.60.21.12.120 etc.) throughout, words above many groups; left leaf: clear marginal note	200 image/jpeg	7fd64420ed115686
+694/08	0309	target	D2-10	possible	y	partly	medium	40-60	stamp 240, 16 Sept 1712: runs in the right-page lines, small words above some groups	200 image/jpeg	26becac5ec11d3e1
+694/08	0296	target	D2-11	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	25d2425a16d14563
+694/08	0307	target	D2-12	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	00589baea1ae7b94
+694/08	0339	target	D3-1	possible	n	-	-		sheet possible; cleared at ~1100 px: clear text (stamp 266)	200 image/jpeg	7b254a150acabe22
+694/08	0324	target	D3-2	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	512612707f052c57
+694/08	0319	target	D3-3	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	92ef3903830647bf
+694/08	0337	target	D3-4	possible	y	n	light	3-6	stamp 264: one short run on the right page (about 17.35.58), clear text otherwise	200 image/jpeg	e9039dcbffc7f193
+694/08	0332	target	D3-5	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	4573082a39b091ba
+694/08	0334	target	D3-6	possible	y	n	light	10-20	stamp 261, 28 Sept 1712: runs low on the right page; left leaf marginal notes clear	200 image/jpeg	6f1b5068d3a0b719
+694/08	0125	control-	D3-7	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0511	control+	D3-8	code	y	-			planted control (control+), sheet read code	disk	bd7feb7abd0c702b
+694/08	0327	target	D3-9	possible	y	n	light	8-14	stamp 255: two short runs (177.120.35 and 15.16.27.49), unglossed, inline	200 image/jpeg	f2705365690913a1
+694/08	0342	target	D3-10	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	fe458bd2675fbe44
+694/08	0322	target	D3-11	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	6361e5ffc48fb159
+694/08	0329	target	D3-12	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	078223ab639c38eb
+694/08	0352	target	D4-1	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	b162e4ea4d3d5749
+694/08	0349	target	D4-2	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	566527ec8eab7ac6
+694/08	0580	control+	D4-3	possible	y	-			planted control (control+), sheet read possible	disk	87b9a48263cf8980
+694/08	0364	target	D4-4	possible	n	-	-		sheet possible; cleared at ~1100 px: clear text (stamp 289)	200 image/jpeg	cd02cac00f36b199
+694/08	0359	target	D4-5	possible	n	-	-		sheet possible; cleared at ~1100 px: clear text (stamp 284)	200 image/jpeg	cba85503920d8b33
+694/08	0344	target	D4-6	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	4920c08e16ddee67
+694/08	0367	target	D4-7	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	71320864ac8857f0
+694/08	0354	target	D4-8	possible	n	-	-		sheet possible; cleared at ~1100 px: clear text (stamp 280)	200 image/jpeg	0092d8e0aa871540
+694/08	0357	target	D4-9	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	ea7ae8a02bf207a9
+694/08	0362	target	D4-10	possible	n	-	-		sheet possible; cleared at ~1100 px: clear text (stamp 287)	200 image/jpeg	a3162d523e5160f5
+694/08	0347	target	D4-11	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	d40577be86b03826
+694/08	0125	control-	D4-12	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0378	target	D5-1	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	bfd8d1ecd8ffbba2
+694/08	0389	target	D5-2	possible	y	n	light	4-8	stamp 311, 10 Oct 1712: single codes inline (46, 45, 150), no run	200 image/jpeg	e062c4c6f271868c
+694/08	0397	target	D5-3	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	73672924afe505d5
+694/08	0383	target	D5-4	code	y	n	medium	25-40	stamp 307: runs low on the right page (7 60.66.55.35 etc.); long marginal text on the left margin is words, not glosses	200 image/jpeg	75f47e96783e0745
+694/08	0373	target	D5-5	possible	y	n	light	8-15	stamp 298: one run (about 41.21.21.5.77) lower left page plus 177.120; unglossed	200 image/jpeg	7572a77bb5e9788a
+694/08	0380	target	D5-6	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	7e9e9b0c8c4f1070
+694/08	0386	target	D5-7	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	9697f4430d03789d
+694/08	0125	control-	D5-8	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0510	control+	D5-9	code	y	-			planted control (control+), sheet read code	disk	914cc03bd531a4fb
+694/08	0388	target	D5-10	possible	n	-	-		sheet possible; cleared at ~1100 px: clear text (stamp 310)	200 image/jpeg	14307700dd076bf9
+694/08	0369	target	D5-11	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	4424bb141e1ef8bc
+694/08	0399	target	D5-12	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	720998446ceaa945
