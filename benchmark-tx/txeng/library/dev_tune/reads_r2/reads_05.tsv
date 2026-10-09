@@ -1,0 +1,25 @@
+row	pick	conf	note
+1	3	H	plain cross
+2	2	H	m
+3	3	M	loop-top phi vs struck phi (2)
+4	3	H	85
+5	2	H	cross over triangle
+6	2	M	loop-top phi vs struck phi (1)
+7	2	H	struck theta
+8	1	L	double-bar hash vs single-bar (2)
+9	2	H	m
+10	1	H	n with 3
+11	1	M	two crossbars
+12	2	M	left part of m-like sign; crop may cut sign
+13	none	M	right half of m-with-tilde; no m candidate
+14	3	M	single crossbar H-like
+15	1	H	R
+16	2	H	struck theta
+17	2	M	two crossbars
+18	1	H	D
+19	2	H	pi
+20	1	M	small faint sign
+21	2	H	plain cross
+22	2	H	cross over o
+23	1	H	lambda
+24	1	H	sha-like

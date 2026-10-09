@@ -1,0 +1,25 @@
+row	pick	conf	note
+1	3	H	plain cross
+2	2	H	m
+3	3	M	phi loop-top vs phi stem-through (2)
+4	3	H	85
+5	2	H	crossed triangle
+6	2	M	phi loop-top vs phi stem-through (1)
+7	2	H	theta
+8	1	M	double-bar hash vs single-bar (2)
+9	2	H	m
+10	1	H	n with tail
+11	1	M	double-bar hash vs single-bar (2)
+12	2	M	heavy m-like sign; nearest m
+13	none	M	heavy m-like sign; not B or hash
+14	3	M	single-bar double-stem vs hash (1)
+15	1	H	R
+16	2	H	theta
+17	2	M	double-bar hash vs single-bar (1)
+18	1	H	D
+19	2	H	pi
+20	1	M	small P-form sign
+21	2	H	plain cross
+22	2	H	circle with cross on top
+23	1	H	lambda
+24	1	H	squared-w sign

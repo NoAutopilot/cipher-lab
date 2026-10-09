@@ -1,0 +1,25 @@
+row	pick	conf	note
+1	3	M	theta with bar; tail below may be next sign
+2	none	L	box mostly dark smudge; only faint 0 visible
+3	1	M	double crossbar hash
+4	2	M	single crossbar double-stem
+5	1	H	g
+6	1	H	pi
+7	none	L	smudge only
+8	2	H	theta
+9	2	H	inverted-pi base sign
+10	2	H	3e ligature
+11	2	H	D
+12	none	M	o-o sign; no o-o candidate offered
+13	3	L	box spans theta and hash; theta at left
+14	4	M	phi-like; could be 2
+15	3	H	F-like sign
+16	none	M	8-shape; no matching candidate (4 blank)
+17	2	H	g
+18	1	H	crossed o
+19	2	H	single crossbar double-stem
+20	3	H	hash
+21	2	M	phi
+22	2	M	single crossbar double-stem
+23	3	H	hash
+24	2	H	pi

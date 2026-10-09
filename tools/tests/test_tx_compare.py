@@ -78,5 +78,46 @@ def test_build_resolve():
         assert [r['sign'] for r in res] == ['TA', 'TC', 'TC'], res
 
 
+def test_library_and_agree():
+    """TXE-S: `library` cuts the printed cell + secure tiles (excluded page never used); `build --library` shows them;
+    `resolve --agree` changes L only where both readers pick the same non-L candidate."""
+    with tempfile.TemporaryDirectory() as d:
+        at, topk, lr, conf, units = setup(d)
+        # printed key image with three cells, key map, secure list (one tile on the excluded page 'tg')
+        pr = Image.new('L', (200, 60), 255); dr = ImageDraw.Draw(pr)
+        dr.ellipse((10, 10, 50, 50), outline=0, width=4); dr.rectangle((70, 10, 110, 50), outline=0, width=4)
+        dr.line((130, 10, 170, 50), fill=0, width=4); pr.save(os.path.join(d, 'print.png'))
+        json.dump([{'id': 'TA', 'box': [5, 5, 55, 55]}, {'id': 'TB', 'box': [65, 5, 115, 55]},
+                   {'id': 'TC', 'box': [125, 5, 175, 55]}], open(os.path.join(d, 'km.json'), 'w'))
+        w(os.path.join(d, 'sec.tsv'), ['sid', 'code', 'page', 'grade'],
+          [('ex_01_001', 'TA', 'ex', 'S'), ('ex_01_002', 'TA', 'ex', 'S'), ('ex_01_003', 'TB', 'ex', 'S'),
+           ('tg_01_002', 'TB', 'tg', 'S')])
+        import numpy as np
+        np.savez(os.path.join(at, 'bitmaps.npz'), signs=np.random.RandomState(0).randint(0, 255, (9, 48, 48)).astype(np.uint8))
+        lib = os.path.join(d, 'lib')
+        counts = tc.main(['library', '--atlas', at, '--out-dir', lib, '--key-map', os.path.join(d, 'km.json'),
+                          '--print-image', os.path.join(d, 'print.png'), '--secure', os.path.join(d, 'sec.tsv'),
+                          '--exclude-page', 'tg'])
+        assert counts == {'TA': (3, 2), 'TB': (2, 1), 'TC': (1, 0)}, counts
+        refs = [r['ref'] for r in rd(os.path.join(lib, 'library.tsv'))]
+        assert 'tg_01_002' not in refs and refs.count('ex_01_001') == 1
+        out = os.path.join(d, 'out')
+        common = ['--atlas', at, '--line-read', lr, '--units', units, '--out', out]
+        tc.main(['build', '--unit', 'u', '--topk', topk, '--conf', f'{conf}:tg', '--exemplars', '', '--exclude-page', 'tg',
+                 '--library', lib] + common)
+        cands = rd(os.path.join(out, 'u', 'sheet_01.tsv'))[0]['cands'].split(',')
+        iB, iC = cands.index('TB') + 1, cands.index('TC') + 1
+        r1, r2 = os.path.join(d, 'r1'), os.path.join(d, 'r2'); os.makedirs(r1); os.makedirs(r2)
+        po = os.path.join(d, 'pass.tsv')
+        for p2, want in ((iB, 'TB'), (iC, 'TC'), ('none', 'TC')):     # agree -> change; disagree / none -> keep L (TC)
+            w(os.path.join(r1, 'reads_01.tsv'), ['row', 'pick', 'conf', 'note'], [(1, iB if want != 'TC' or p2 != iC else iC, 'H', '')])
+            w(os.path.join(r2, 'reads_01.tsv'), ['row', 'pick', 'conf', 'note'], [(1, p2, 'H', '')])
+            res = tc.main(['resolve', '--unit', 'u', '--pass-out', po, '--agree', r1, r2] + common)
+            assert res[1]['sign'] == want, (p2, res)
+        # single reader by the TXE-A rule from a reads folder
+        w(os.path.join(r2, 'reads_01.tsv'), ['row', 'pick', 'conf', 'note'], [(1, iB, 'L', '')])
+        assert tc.main(['resolve', '--unit', 'u', '--pass-out', po, '--reads-dir', r2] + common)[1]['sign'] == 'TB'
+
+
 if __name__ == '__main__':
-    test_build_resolve(); print('ok')
+    test_build_resolve(); test_library_and_agree(); print('ok')

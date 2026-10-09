@@ -1,0 +1,25 @@
+row	pick	conf	note
+1	2	H	circle with cross on top
+2	none	M	Ce ligature; no Ce candidate offered (3 is l-like)
+3	1	M	two verticals, single crossbar
+4	1	H	g with open tail, not the looped variant
+5	2	M	single-crossbar double vertical
+6	3	H	circle with cross on top
+7	1	H	pi
+8	2	H	n with 3-tail
+9	2	M	single-crossbar double vertical
+10	2	M	single crossbar extended both sides
+11	3	H	double crossbar (#)
+12	2	L	closed loop, straight descender; could be 1
+13	1	L	stem with cross and bowl; b-like, nearest is cross-on-circle
+14	1	L	t/L with top flourish; T-flourish nearest, could be none
+15	2	M	italic m matches candidate 2 exemplar
+16	3	L	small, crossbar count unclear
+17	2	H	italic m
+18	none	M	K; candidates are R and g
+19	2	H	g open tail
+20	1	H	double crossbar (#)
+21	2	M	single crossbar
+22	none	M	Ce ligature; candidate 3 empty
+23	1	H	pi
+24	1	H	g open tail

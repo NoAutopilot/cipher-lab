@@ -1,0 +1,25 @@
+row	pick	conf	note
+1	2	H	circle with crossbar stem
+2	none	M	Ce sign; cand 2 blank, 1 and 3 differ
+3	1	M	two verticals, single bar
+4	1	H	open-tail g
+5	2	M	two verticals, single bar
+6	3	H	circle with crossbar stem
+7	1	H	pi
+8	2	H	n with 3 tail
+9	2	M	single bar double-vertical
+10	2	M	single bar double-vertical, long bar
+11	3	H	two-bar hash
+12	1	L	closed bowl q/g; cand 2 is open
+13	1	M	circle/b with crossbar stem
+14	1	L	t-like; cand 1 has no exemplars
+15	2	L	plain m matches cand 2 exemplar; cand 1 no exemplars
+16	3	L	small faint; may be two-bar hash (absent)
+17	2	M	m
+18	none	M	K; cand 1 blank, R and g differ
+19	2	H	open-tail g
+20	1	H	two-bar hash
+21	2	H	single bar double-vertical
+22	none	M	Ce sign; cand 3 blank
+23	1	H	pi
+24	1	H	open-tail g
