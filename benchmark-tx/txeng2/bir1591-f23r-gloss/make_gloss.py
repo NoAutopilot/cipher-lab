@@ -20,6 +20,6 @@ with open(os.path.join(D, 'gloss.tsv'), 'w', encoding='utf-8') as f:
             else:
                 s = S[(g, i1 + 1)]
                 words += s['reading'].split()
-                conf = min(conf, s['conf'], key='HML'.index)
+                conf = max(conf, s['conf'], key='HML'.index)
         above = S[(g, 0)]['reading'] if (g, 0) in S else A[g]['above']
         f.write('f23r_L%s\t%s\t%s\t%s\n' % (g[1:], ' '.join(words), above, conf))

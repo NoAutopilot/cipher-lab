@@ -1,0 +1,333 @@
+# fr.3623 f.23r (DECODE 9452) known answer: the period interlinear decipherment on the leaf (gloss.tsv) aligned to passZ_pipeline.tsv, key rebuilt from this leaf alone; built by benchmark-tx/build_bir1591-f23r-gloss.py
+# align agrees 220/330 = 0.667; GAPS4 control: rebuilt key matched 0.559 vs 200 value-shuffled keys mean 0.040 max 0.091, rank 1 of 201; key rows 30, supported (n>=2, agree>=0.75, one letter, on-sheet) 21
+line	pos	ref_sign	truth	plain	status	flag	align_status
+f23r_L01	1	PSI			excluded:unaligned		null-or-unaligned
+f23r_L01	2	TRIS	THREE	d	scored	align-conflict	conflict:l
+f23r_L01	3	HASH			excluded:unaligned		null-or-unaligned
+f23r_L01	4	Q	PSI|Q	o	scored		agrees
+f23r_L01	5	OS			excluded:unaligned		null-or-unaligned
+f23r_L01	6	NEW:h-shaped hook		p	excluded:off-sheet		agrees
+f23r_L01	7	Q	PSI|Q	o	scored		agrees
+f23r_L01	8	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L01	9	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L01	10	THREE	THREE	d	scored		agrees
+f23r_L01	11	INVT	INVT	i	scored		agrees
+f23r_L01	12	SQ	SQ	s	scored		agrees
+f23r_L01	13	OS	OS	p	scored		agrees
+f23r_L01	14	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L01	15	Z			excluded:unaligned		null-or-unaligned
+f23r_L01	16	HASH	HASH	c	scored		agrees
+f23r_L01	17	CUP		s	excluded:low-agree		conflict:h
+f23r_L01	18	INVT	INVT	i	scored		agrees
+f23r_L01	19	Q	PSI|Q	o	scored		agrees
+f23r_L01	20	TRI	TRI	f	scored		agrees
+f23r_L01	21	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L01	22	DTRIS	DTRIS	t	scored		agrees
+f23r_L01	23	PSI	PSI|Q	o	scored		agrees
+f23r_L01	24	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L01	25	INVT	INVT	i	scored		agrees
+f23r_L01	26	CUP		o	excluded:low-agree		conflict:h
+f23r_L01	27	NEW:loop-x-tail		ces	excluded:multi-letter		conflict:i
+f23r_L01	28	OS	INVT	i	scored	align-conflict	conflict:p
+f23r_L01	29	OMEGA	C|OMEGA	r	scored		agrees
+f23r_L01	30	INVT	INVT	i	scored		agrees
+f23r_L01	31	CUP		i	excluded:low-agree		conflict:h
+f23r_L01	32	PSI	PSI|Q	o	scored		agrees
+f23r_L01	33	Z			excluded:unaligned		null-or-unaligned
+f23r_L01	34	C	C|OMEGA	r	scored		agrees
+f23r_L01	35	INVT	INVT	i	scored		agrees
+f23r_L01	36	HASH	HASH	c	scored		agrees
+f23r_L01	37	O	O	e	scored		agrees
+f23r_L01	38	M	M	u	scored		agrees
+f23r_L01	39	ALPHA		u	excluded:low-agree		agrees
+f23r_L01	40	DTRIS	DTRIS	t	scored		agrees
+f23r_L01	41	Q	PSI|Q	o	scored		agrees
+f23r_L02	1	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L02	2	O	O	e	scored		agrees
+f23r_L02	3	DTRIS			excluded:unaligned		null-or-unaligned
+f23r_L02	4	M			excluded:unaligned		null-or-unaligned
+f23r_L02	5	DOT			excluded:unaligned		null-or-unaligned
+f23r_L02	6	I		d	excluded:low-agree		single
+f23r_L02	7	DOT			excluded:unaligned		null-or-unaligned
+f23r_L02	8	C			excluded:unaligned		null-or-unaligned
+f23r_L02	9	O			excluded:unaligned		null-or-unaligned
+f23r_L02	10	HASH			excluded:unaligned		null-or-unaligned
+f23r_L02	11	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L02	12	Z	X|Z	m	scored		agrees
+f23r_L02	13	PSI	PSI|Q	o	scored		agrees
+f23r_L02	14	NEQ	NEQ	n	scored		agrees
+f23r_L02	15	SQ	SQ	s	scored		agrees
+f23r_L02	16	INVT	INVT	i	scored		agrees
+f23r_L02	17	M	M	u	scored		agrees
+f23r_L02	18	C	C|OMEGA	r	scored		agrees
+f23r_L02	19	NEW:phi		s	excluded:off-sheet		agrees
+f23r_L02	20	INVT	INVT	i	scored		agrees
+f23r_L02	21	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L02	22	PLUS	PLUS|TRIS	l	scored		agrees
+f23r_L02	23	O	O	e	scored		agrees
+f23r_L02	24	C	C|OMEGA	r	scored		agrees
+f23r_L02	25	INVT	INVT	i	scored		agrees
+f23r_L02	26	HASH			excluded:unaligned		null-or-unaligned
+f23r_L02	27	ALPHA			excluded:unaligned		null-or-unaligned
+f23r_L02	28	Q	O	e	scored	align-conflict	conflict:o
+f23r_L02	29	ALPHA		q	excluded:low-agree		conflict:u
+f23r_L02	30	ALPHA		u	excluded:low-agree		agrees
+f23r_L02	31	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L02	32	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L02	33	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L02	34	PLUS	PLUS|TRIS	l	scored		agrees
+f23r_L02	35	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L02	36	Z	X|Z	m	scored		agrees
+f23r_L02	37	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L02	38	NEQ	NEQ	n	scored		agrees
+f23r_L02	39	THREE	THREE	d	scored		agrees
+f23r_L02	40	PSI	PSI|Q	o	scored		agrees
+f23r_L02	41	HASH	HASH	c	scored		agrees
+f23r_L02	42	CUP		h	excluded:low-agree		agrees
+f23r_L02	43	O	O	e	scored		agrees
+f23r_L02	44	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L02	45	DTRIS	DTRI|TRIX	a	scored	align-conflict	conflict:t
+f23r_L02	46	PLUS	PLUS|TRIS	l	scored		agrees
+f23r_L02	47	O	O	e	scored		agrees
+f23r_L02	48	M	M	u	scored		agrees
+f23r_L02	49	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L02	50	M	DTRIS	t	scored	align-conflict	conflict:u
+f23r_L02	51	TRIX	DTRI|TRIX	a	scored		agrees
+f23r_L03	1	PSI	THREE	d	scored	align-conflict	conflict:o
+f23r_L03	2	XI		e	excluded:low-agree		conflict:c
+f23r_L03	3	OS			excluded:unaligned		null-or-unaligned
+f23r_L03	4	SQ	SQ	s	scored		agrees
+f23r_L03	5	M	M	u	scored		agrees
+f23r_L03	6	NEW:loop-x-tail			excluded:unaligned		null-or-unaligned
+f23r_L03	7	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L03	8	NEW:phi		z	excluded:off-sheet		conflict:s
+f23r_L03	9	NEW:phi		z	excluded:off-sheet		conflict:s
+f23r_L03	10	O	O	e	scored		agrees
+f23r_L03	11	OMEGA	C|OMEGA	r	scored		agrees
+f23r_L03	12	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L03	13	NEQ	NEQ	n	scored		agrees
+f23r_L03	14	PSI			excluded:unaligned		null-or-unaligned
+f23r_L03	15	PSI	PSI|Q	o	scored		agrees
+f23r_L03	16	NEW:hook-crossed-tail		n	excluded:off-sheet		agrees
+f23r_L03	17	O	O	e	scored		agrees
+f23r_L03	18	OS	OS	p	scored		agrees
+f23r_L03	19	C	C|OMEGA	r	scored		agrees
+f23r_L03	20	PSI	PSI|Q	o	scored		agrees
+f23r_L03	21	DTRIS	DTRIS	t	scored		agrees
+f23r_L03	22	TRIX	DTRI|TRIX	a	scored		agrees
+f23r_L03	23	XI		c	excluded:low-agree		agrees
+f23r_L03	24	CUP		h	excluded:low-agree		agrees
+f23r_L03	25	O	O	e	scored		agrees
+f23r_L03	26	Z	X|Z	m	scored		agrees
+f23r_L03	27	INVT	INVT	i	scored		agrees
+f23r_L03	28	TRI	TRI	f	scored		agrees
+f23r_L03	29	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L03	30	PSI			excluded:unaligned		null-or-unaligned
+f23r_L03	31	OMEGA	C|OMEGA	r	scored		agrees
+f23r_L03	32	O			excluded:unaligned		null-or-unaligned
+f23r_L03	33	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L03	34	SQ	SQ	s	scored		agrees
+f23r_L03	35	PSI	PSI|Q	o	scored		agrees
+f23r_L03	36	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L03	37	ALPHA			excluded:unaligned		null-or-unaligned
+f23r_L03	38	M	M	u	scored		agrees
+f23r_L03	39	O			excluded:unaligned		null-or-unaligned
+f23r_L03	40	C	C|OMEGA	r	scored		agrees
+f23r_L03	41	OS	OS	p	scored		agrees
+f23r_L03	42	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L03	43	C	C|OMEGA	r	scored		agrees
+f23r_L03	44	DTRIS	DTRIS	t	scored		agrees
+f23r_L03	45	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L03	46	C	C|OMEGA	r	scored		agrees
+f23r_L03	47	SQ	SQ	s	scored		agrees
+f23r_L03	48	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L03	49	DIV	DIV	b	scored		agrees
+f23r_L03	50	TRIX	DTRI|TRIX	a	scored		agrees
+f23r_L04	1	ALPHA			excluded:unaligned		null-or-unaligned
+f23r_L04	2	Q			excluded:unaligned		null-or-unaligned
+f23r_L04	3	DTRIS			excluded:unaligned		null-or-unaligned
+f23r_L04	4	Q			excluded:unaligned		null-or-unaligned
+f23r_L04	5	OS	OS	p	scored		agrees
+f23r_L04	6	C	C|OMEGA	r	scored		agrees
+f23r_L04	7	PSI	PSI|Q	o	scored		agrees
+f23r_L04	8	SQ	SQ	s	scored		agrees
+f23r_L04	9	NEW:phi		s	excluded:off-sheet		agrees
+f23r_L04	10	INVT	INVT	i	scored		agrees
+f23r_L04	11	Z	X|Z	m	scored		agrees
+f23r_L04	12	Q	PSI|Q	o	scored		agrees
+f23r_L04	13	HASH	HASH	c	scored		agrees
+f23r_L04	14	CUP		o	excluded:low-agree		conflict:h
+f23r_L04	15	NEQ	NEQ	n	scored		agrees
+f23r_L04	16	ALPHA		q	excluded:low-agree		conflict:u
+f23r_L04	17	ALPHA		u	excluded:low-agree		agrees
+f23r_L04	18	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L04	19	NEQ	NEQ	n	scored		agrees
+f23r_L04	20	DTRIS	DTRIS	t	scored		agrees
+f23r_L04	21	Q	PSI|Q	o	scored		agrees
+f23r_L04	22	CUP		i	excluded:low-agree		conflict:h
+f23r_L04	23	O			excluded:unaligned		null-or-unaligned
+f23r_L04	24	ALPHA		o	excluded:low-agree		conflict:u
+f23r_L04	25	ALPHA		q	excluded:low-agree		conflict:u
+f23r_L04	26	DTRI			excluded:unaligned		null-or-unaligned
+f23r_L04	27	ALPHA		o	excluded:low-agree		conflict:u
+f23r_L04	28	ALPHA		t	excluded:low-agree		conflict:u
+f23r_L04	29	O	DTRIS	t	scored	align-conflict	conflict:e
+f23r_L04	30	TRIS			excluded:unaligned		null-or-unaligned
+f23r_L04	31	PLUS			excluded:unaligned		null-or-unaligned
+f23r_L04	32	Q	PSI|Q	o	scored		agrees
+f23r_L04	33	HASH	HASH	c	scored		agrees
+f23r_L04	34	CUP		h	excluded:low-agree		agrees
+f23r_L04	35	O	O	e	scored		agrees
+f23r_L04	36	X	X|Z	m	scored		agrees
+f23r_L04	37	Q			excluded:unaligned		null-or-unaligned
+f23r_L04	38	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L04	39	C	C|OMEGA	r	scored		agrees
+f23r_L04	40	O	O	e	scored		agrees
+f23r_L04	41	Z	X|Z	m	scored		agrees
+f23r_L04	42	O	O	e	scored		agrees
+f23r_L04	43	SQ	SQ	s	scored		agrees
+f23r_L04	44	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L04	45	NEW:phi		s	excluded:off-sheet		agrees
+f23r_L04	46	PSI	PSI|Q	o	scored		agrees
+f23r_L04	47	NEQ	NEQ	n	scored		agrees
+f23r_L04	48	Q	PSI|Q	o	scored		agrees
+f23r_L05	1	SQ	SQ	s	scored		agrees
+f23r_L05	2	M	M	u	scored		agrees
+f23r_L05	3	PSI	PSI|Q	o	scored		agrees
+f23r_L05	4	NEW:loop-x-tail			excluded:unaligned		null-or-unaligned
+f23r_L05	5	I			excluded:unaligned		null-or-unaligned
+f23r_L05	6	I		r	excluded:low-agree		conflict:d
+f23r_L05	7	O	HASH	c	scored	align-conflict	conflict:e
+f23r_L05	8	DTRIS	DTRI|TRIX	a	scored	align-conflict	conflict:t
+f23r_L05	9	ALPHA		u	excluded:low-agree		agrees
+f23r_L05	10	Q			excluded:unaligned		null-or-unaligned
+f23r_L05	11	HASH			excluded:unaligned		null-or-unaligned
+f23r_L05	12	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L05	13	NEQ		lli	excluded:multi-letter		conflict:n
+f23r_L05	14	ALPHA		etd	excluded:multi-letter		conflict:u
+f23r_L05	15	Q	O	e	scored	align-conflict	conflict:o
+f23r_L05	16	TRIX	DTRI|TRIX	a	scored		agrees
+f23r_L05	17	TRIS			excluded:unaligned		null-or-unaligned
+f23r_L05	18	OMEGA	C|OMEGA	r	scored		agrees
+f23r_L05	19	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L05	20	SQ	SQ	s	scored		agrees
+f23r_L05	21	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L05	22	HASH	HASH	c	scored		agrees
+f23r_L05	23	CUP			excluded:unaligned		null-or-unaligned
+f23r_L05	24	O			excluded:unaligned		null-or-unaligned
+f23r_L05	25	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L05	26	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L05	27	SQ	SQ	s	scored		agrees
+f23r_L05	28	X			excluded:unaligned		null-or-unaligned
+f23r_L05	29	M	M	u	scored		agrees
+f23r_L05	30	OS	OS	p	scored		agrees
+f23r_L05	31	PLUS	PLUS|TRIS	l	scored		agrees
+f23r_L05	32	INVT	INVT	i	scored		agrees
+f23r_L05	33	HASH	HASH	c	scored		agrees
+f23r_L05	34	Q	PSI|Q	o	scored		agrees
+f23r_L05	35	X	X|Z	m	scored		agrees
+f23r_L05	36	Q			excluded:unaligned		null-or-unaligned
+f23r_L05	37	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L05	38	NEQ	NEQ	n	scored		agrees
+f23r_L05	39	THREE	THREE	d	scored		agrees
+f23r_L05	40	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L05	41	C	C|OMEGA	r	scored		agrees
+f23r_L05	42	DIV	DIV	b	scored		agrees
+f23r_L05	43	Q	PSI|Q	o	scored		agrees
+f23r_L05	44	NEQ	NEQ	n	scored		agrees
+f23r_L05	45	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L05	46	SQ	SQ	s	scored		agrees
+f23r_L05	47	XI		c	excluded:low-agree		agrees
+f23r_L05	48	PSI	PSI|Q	o	scored		agrees
+f23r_L05	49	C	C|OMEGA	r	scored		agrees
+f23r_L05	50	DTRIS	DTRIS	t	scored		agrees
+f23r_L05	51	TRIX	DTRI|TRIX	a	scored		agrees
+f23r_L06	1	SQ	SQ	s	scored		agrees
+f23r_L06	2	M	M	u	scored		agrees
+f23r_L06	3	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L06	4	DTRI	DTRI|TRIX	a	scored		agrees
+f23r_L06	5	SQ	SQ	s	scored		agrees
+f23r_L06	6	DTRIS	DTRIS	t	scored		agrees
+f23r_L06	7	C	C|OMEGA	r	scored		agrees
+f23r_L06	8	TRIX	DTRI|TRIX	a	scored		agrees
+f23r_L06	9	THREE	THREE	d	scored		agrees
+f23r_L06	10	TRIX	DTRI|TRIX	a	scored		agrees
+f23r_L06	11	ALPHA			excluded:unaligned		null-or-unaligned
+f23r_L06	12	Q			excluded:unaligned		null-or-unaligned
+f23r_L06	13	DTRIS	DTRIS	t	scored		agrees
+f23r_L06	14	TRIS			excluded:unaligned		null-or-unaligned
+f23r_L06	15	OMEGA	C|OMEGA	r	scored		agrees
+f23r_L06	16	TRIX	DTRI|TRIX	a	scored		agrees
+f23r_L06	17	XI		r	excluded:low-agree		conflict:c
+f23r_L06	18	CUP		i	excluded:low-agree		conflict:h
+f23r_L06	19	DTRI			excluded:unaligned		null-or-unaligned
+f23r_L06	20	TRIX	DTRI|TRIX	a	scored		agrees
+f23r_L06	21	TRIS			excluded:unaligned		null-or-unaligned
+f23r_L06	22	PLUS	PLUS|TRIS	l	scored		agrees
+f23r_L06	23	PSI	PSI|Q	o	scored		agrees
+f23r_L06	24	NEQ	NEQ	n	scored		agrees
+f23r_L06	25	DOT			excluded:unaligned		null-or-unaligned
+f23r_L06	26	I			excluded:unaligned		null-or-unaligned
+f23r_L06	27	DOT		i	excluded:low-agree		conflict:e
+f23r_L06	28	NEW:h-shaped hook		p	excluded:off-sheet		agrees
+f23r_L06	29	PSI	PSI|Q	o	scored		agrees
+f23r_L06	30	M	M	u	scored		agrees
+f23r_L06	31	NEW:phi		g	excluded:off-sheet		conflict:s
+f23r_L06	32	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L06	33	HASH	HASH	c	scored		agrees
+f23r_L06	34	CUP		h	excluded:low-agree		agrees
+f23r_L06	35	O	O	e	scored		agrees
+f23r_L06	36	Z	X|Z	m	scored		agrees
+f23r_L06	37	NEW:loop-x-tail		i	excluded:off-sheet		agrees
+f23r_L06	38	DTRIS	DTRIS	t	scored		agrees
+f23r_L06	39	C	C|OMEGA	r	scored		agrees
+f23r_L06	40	PSI	PSI|Q	o	scored		agrees
+f23r_L06	41	ALPHA			excluded:unaligned		null-or-unaligned
+f23r_L06	42	Q			excluded:unaligned		null-or-unaligned
+f23r_L06	43	M	M	u	scored		agrees
+f23r_L06	44	DOT			excluded:unaligned		null-or-unaligned
+f23r_L06	45	I			excluded:unaligned		null-or-unaligned
+f23r_L06	46	DOT		e	excluded:low-agree		agrees
+f23r_L06	47	C	C|OMEGA	r	scored		agrees
+f23r_L06	48	DTRIS	DTRI|TRIX	a	scored	align-conflict	conflict:t
+f23r_L06	49	NEQ	NEQ	n	scored		agrees
+f23r_L06	50	NEW:hook-crossed-tail		n	excluded:off-sheet		agrees
+f23r_L06	51	Q	PSI|Q	o	scored		agrees
+f23r_L06	52	NEW:loop-x-tail			excluded:unaligned		null-or-unaligned
+f23r_L06	53	NEQ	X|Z	m	scored	align-conflict	conflict:n
+f23r_L07	1	TRIS			excluded:unaligned		null-or-unaligned
+f23r_L07	2	M	M	u	scored		agrees
+f23r_L07	3	NEW:loop-x-tail			excluded:unaligned		null-or-unaligned
+f23r_L07	4	DTRI			excluded:unaligned		null-or-unaligned
+f23r_L07	5	PSI			excluded:unaligned		null-or-unaligned
+f23r_L07	6	INVT	INVT	i	scored		agrees
+f23r_L07	7	NEW:loop-x-tail			excluded:unaligned		null-or-unaligned
+f23r_L07	8	C			excluded:unaligned		null-or-unaligned
+f23r_L07	9	Q	O	e	scored	align-conflict	conflict:o
+f23r_L08	1	HASH			excluded:unaligned		null-or-unaligned
+f23r_L08	2	O	O	e	scored		agrees
+f23r_L08	3	ALPHA			excluded:unaligned		null-or-unaligned
+f23r_L08	4	Q			excluded:unaligned		null-or-unaligned
+f23r_L08	5	PLUS	PLUS|TRIS	l	scored		agrees
+f23r_L08	6	TRIS	DTRI|TRIX	a	scored	align-conflict	conflict:l
+f23r_L08	7	NEQ	NEQ	n	scored		agrees
+f23r_L08	8	INVT		g	excluded:key-conflict		conflict:i
+f23r_L08	9	OMEGA	C|OMEGA	r	scored		agrees
+f23r_L08	10	DOT		e	excluded:low-agree		agrees
+f23r_L08	11	I		s	excluded:low-agree		conflict:d
+f23r_L08	12	DOT		i	excluded:low-agree		conflict:e
+f23r_L08	13	PSI			excluded:unaligned		null-or-unaligned
+f23r_L08	14	TRIS	PLUS|TRIS	l	scored		agrees
+f23r_L08	15	NEW:loop-x-tail			excluded:unaligned		null-or-unaligned
+f23r_L08	16	TWO			excluded:unaligned		null-or-unaligned
+f23r_L08	17	NEW:small-s			excluded:unaligned		null-or-unaligned
+f23r_L08	18	PSI	PSI|Q	o	scored		agrees
+f23r_L08	19	DTRIS	DTRIS	t	scored		agrees
+f23r_L08	20	M	DTRIS	t	scored	align-conflict	conflict:u
+f23r_L08	21	PSI			excluded:unaligned		null-or-unaligned
+f23r_L08	22	PSI			excluded:unaligned		null-or-unaligned
+f23r_L08	23	OMEGA	DIV	b	scored	align-conflict	conflict:r
+f23r_L08	24	C	C|OMEGA	r	scored		agrees
+f23r_L08	25	O	O	e	scored		agrees
+f23r_L08	26	ALPHA			excluded:unaligned		null-or-unaligned
+f23r_L08	27	Q			excluded:unaligned		null-or-unaligned

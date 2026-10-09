@@ -1,0 +1,31 @@
+sign	meaning	n	agree	share	supported	others
+ALPHA	u	11	4	0.36	no	q:3,o:2,etd:1,t:1
+C	r	15	15	1.00	yes	
+CUP	h	10	4	0.40	no	i:3,o:2,s:1
+DIV	b	2	2	1.00	yes	
+DOT	e	4	2	0.50	no	i:2
+DTRI	a	15	15	1.00	yes	
+DTRIS	t	13	10	0.77	yes	a:3
+HASH	c	8	8	1.00	yes	
+I	d	3	1	0.33	no	r:1,s:1
+INVT	i	13	12	0.92	yes	g:1
+M	u	13	11	0.85	yes	t:2
+NEQ	n	13	11	0.85	yes	lli:1,m:1
+NEW:h-shaped hook	p	2	2	1.00	no	
+NEW:hook-crossed-tail	n	2	2	1.00	no	
+NEW:loop-x-tail	i	15	14	0.93	no	ces:1
+NEW:phi	s	6	3	0.50	no	z:2,g:1
+O	e	16	14	0.88	yes	c:1,t:1
+OMEGA	r	7	6	0.86	yes	b:1
+OS	p	6	5	0.83	yes	i:1
+PLUS	l	6	6	1.00	yes	
+PSI	o	16	15	0.94	yes	d:1
+Q	o	14	11	0.79	yes	e:3
+SQ	s	13	13	1.00	yes	
+THREE	d	4	4	1.00	yes	
+TRI	f	2	2	1.00	yes	
+TRIS	l	12	10	0.83	yes	a:1,d:1
+TRIX	a	9	9	1.00	yes	
+X	m	2	2	1.00	yes	
+XI	c	4	2	0.50	no	e:1,r:1
+Z	m	6	6	1.00	yes	
