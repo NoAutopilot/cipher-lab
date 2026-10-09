@@ -1,0 +1,804 @@
+line	pos	plain	truth	ref_sign	pos_class	line_len	line_in_call	seg_edge	band_edge	glued	stroke	erosion	box_w	box_h	n_cov	n_wrong	same_wrong	read_L	read_A	read_B	read_C	read_E	read_F	read_pad	read_s125	read_warp	read_A_rr	read_B_rr	read_C_rr	err_L	err_A	err_B	err_C	err_E	err_F	err_pad	err_s125	err_warp	err_A_rr	err_B_rr	err_C_rr	n_pass_wrong	n_same_wrong	agree_class	err_class
+f178r_L01	9	qual	T78	T78	inner	31	1	-	-	-	-				12	0		T78	T78	T78	T78	T78	T78	T78	T78	T78	T78	T78	T78	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L01	10	d	T18|T63	T63	inner	31	1	-	-	-	-				12	1		T63	T63	T63	T63	T63	T56	T63	T63	T63	T63	T63	T63	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L01	11	e	T45|T66|T86	T86	inner	31	1	-	-	-	-				12	1		T86	T86	T86	T86	T86	T86	T60	T86	T86	T86	T86	T86	0	0	0	0	0	0	1	0	0	0	0	0	1	0	right	
+f178r_L01	13	o	T19|T52|T55	T19	inner	31	1	-	-	-	-				12	0		T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L01	14	l	T13|T51|T58|T95	T58	inner	31	1	-	-	-	-				12	0		T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L01	15	t	T27|T53|T65	T53	inner	31	1	-	-	-	-				12	0		T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L01	16	i	T25|T52|T80|T96	T96	inner	31	1	-	-	-	-				12	0		T96	T96	T96	T96	T96	T96	T96	T96	T96	T96	T96	T96	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L01	17	g	T70|T88	T70	inner	31	1	-	-	-	-				12	0		T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L01	18	i	T25|T52|T80|T96	T25	inner	31	1	-	-	-	-				12	0		T25	T25	T25	T25	T25	T25	T25	T25	T25	T25	T25	T25	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L01	19	o	T19|T52|T55	T19	inner	31	1	-	-	-	-				12	0		T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L01	20	r	T83|T97	T83	inner	31	1	-	-	-	-				12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f178r_L01	21	n	T60|T76	T60	inner	31	1	-	-	-	-				12	1		T60	T60	T60	T60	T60	T60	T60	T86	T60	T60	T60	T60	0	0	0	0	0	0	0	1	0	0	0	0	1	0	right	
+f178r_L01	22	i	T25|T52|T80|T96	T80	inner	31	1	-	-	-	-				12	1		T80	T80	T80	T80	T80	<deleted>	T80	T80	T80	T80	T80	T80	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L01	23	e	T45|T66|T86	T86	inner	31	1	-	-	-	-				12	4	0	T86	T86	T86	T86	T60	<deleted>	T60	T86	T60	T86	T86	T86	0	0	0	0	1	1	1	0	1	0	0	0	4	0	right	
+f178r_L01	24	r	T83|T97	T83	inner	31	1	-	-	-	-				12	3	0	T83	T83	T24	T83	T83	<deleted>	T83	T83	T83	T83	T24	T83	0	0	1	0	0	1	0	0	0	0	1	0	3	0	right	
+f178r_L01	25	a	T37|T85	T37	inner	31	1	-	-	-	-				12	1		T37	T37	T37	T37	T37	<deleted>	T37	T37	T37	T37	T37	T37	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L01	26	a	T37|T85	T85	inner	31	1	-	-	-	-				12	1		T85	T85	T85	T85	T85	<deleted>	T85	T85	T85	T85	T85	T85	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L01	27	c	T36|T50	T92	inner	31	1	-	-	-	-				12	10	0	T92	T92	T92	T92	T50	<deleted>	T92	T50	T92	T92	T92	T92	1	1	1	1	0	1	1	0	1	1	1	1	10	9	majority-wrong	other
+f178r_L01	28	a	T37|T85	T66	inner	31	1	-	-	-	-				12	11	0	T66	T66	T66	T66	T51	T37	T95	T65	T66	T66	T66	T66	1	1	1	1	1	0	1	1	1	1	1	1	11	8	majority-wrong	other
+f178r_L01	29	r	T83|T97	T83	inner	31	1	-	-	-	-				12	3	0	T83	T83	T24	T83	T83	<deleted>	T83	T83	T83	T83	T24	T83	0	0	1	0	0	1	0	0	0	0	1	0	3	0	right	
+f178r_L01	30	d	T18|T63	T63	inner	31	1	-	-	-	-				12	1		T63	T63	T63	T63	T63	T33	T63	T63	T63	T63	T63	T63	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L01	31	e	T45|T66|T86	T45	last	31	1	-	-	-	-				12	1		T45	T45	T45	T45	T45	?	T45	T45	T45	T45	T45	T45	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L02	1	n	T60|T76	T60	first	31	2	-	-	-	-				12	1		T60	T60	T60	T60	T60	T60	T60	T86	T60	T60	T60	T60	0	0	0	0	0	0	0	1	0	0	0	0	1	0	right	
+f178r_L02	2	e	T45|T66|T86	T45	inner	31	2	-	-	-	-				12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	3	s	T57|T92|T95|T98|X_CE	T98	inner	31	2	-	-	-	-				12	2	1	T98	T98	T98	T98	T98	T98	T98	T18	T18	T98	T98	T98	0	0	0	0	0	0	0	1	1	0	0	0	2	0	right	
+f178r_L02	4	i	T25|T52|T80|T96	T25	inner	31	2	-	-	-	-				12	0		T25	T25	T25	T25	T25	T25	T25	T25	T25	T25	T25	T25	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	5	p	T90	T90	inner	31	2	-	-	-	-				12	0		T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	6	r	T83|T97	T97	inner	31	2	-	-	-	-				12	1		T97	T97	T97	T97	T97	T97	T97	T89	T97	T97	T97	T97	0	0	0	0	0	0	0	1	0	0	0	0	1	0	right	
+f178r_L02	7	e	T45|T66|T86	T45	inner	31	2	-	-	-	-				12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	8	t	T27|T53|T65	T65	inner	31	2	-	-	-	-				12	0		T65	T65	T65	T65	T65	T65	T65	T65	T65	T65	T65	T65	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	9	e	T45|T66|T86	T86	inner	31	2	-	-	-	-				12	2	1	T86	T86	T86	T86	T86	T86	T60	T86	T60	T86	T86	T86	0	0	0	0	0	0	1	0	1	0	0	0	2	0	right	
+f178r_L02	10	n	T60|T76	T76	inner	31	2	-	-	-	-				12	0		T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	11	d	T18|T63	T18	inner	31	2	-	-	-	-				12	1		T18	T18	T18	T18	T18	T36	T18	T18	T18	T18	T18	T18	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L02	12	e	T45|T66|T86	T45	inner	31	2	-	-	-	-				12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	13	a	T37|T85	T37	inner	31	2	-	-	-	-				12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	14	c	T36|T50	T36	inner	31	2	-	-	-	-				12	0		T36	T36	T36	T36	T36	T36	T36	T36	T36	T36	T36	T36	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	15	h	T56|T64	T56	inner	31	2	-	-	-	-				12	3	1	T56	T56	T56	T56	T52	T56	T52	T52	T56	T56	T56	T56	0	0	0	0	1	0	1	1	0	0	0	0	3	0	right	
+f178r_L02	16	a	T37|T85	T37	inner	31	2	-	-	-	-				12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	17	u	T33|T49	T33	inner	31	2	-	-	-	-				12	0		T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	18	e	T45|T66|T86	T45	inner	31	2	-	-	-	-				12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	19	s	T57|T92|T95|T98|X_CE	T70	inner	31	2	-	-	-	-				12	12	1	T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	1	1	1	1	1	1	1	1	1	1	1	1	12	12	all-same-wrong	other
+f178r_L02	20	e	T45|T66|T86	T86	inner	31	2	-	-	-	-				12	3	1	T86	T86	T86	T86	T86	T60	T60	T86	T60	T86	T86	T86	0	0	0	0	0	1	1	0	1	0	0	0	3	0	right	
+f178r_L02	21	p	T90	T90	inner	31	2	-	-	-	-				12	0		T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	22	i	T25|T52|T80|T96	T80	inner	31	2	-	-	-	-				12	1		T80	T80	T80	T80	T80	<deleted>	T80	T80	T80	T80	T80	T80	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L02	23	u	T33|T49	T49	inner	31	2	-	-	-	-				12	2	0	T49	T49	T49	T49	T49	<deleted>	X_NEW	T33	T49	T49	T49	T49	0	0	0	0	0	1	1	0	0	0	0	0	2	0	right	
+f178r_L02	24	a	T37|T85	T85	inner	31	2	-	-	-	-				12	1		T85	T85	T85	T85	T85	<deleted>	T85	T85	T85	T85	T85	T85	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L02	25	r	T83|T97	T83	inner	31	2	-	-	-	-				12	3	0	T83	T83	T24	T83	T83	<deleted>	T83	T83	T83	T83	T24	T83	0	0	1	0	0	1	0	0	0	0	1	0	3	0	right	
+f178r_L02	26	i	T25|T52|T80|T96	T25	inner	31	2	-	-	-	-				12	0		T25	T25	T25	T25	T25	T80	T25	T25	T25	T25	T25	T25	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L02	27	t	T27|T53|T65	T53	inner	31	2	-	-	-	-				12	1		T53	T53	T53	T53	T53	X_EQ	T53	T53	T53	T53	T53	T53	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L02	28	o	T19|T52|T55	T19	inner	31	2	-	-	-	-				12	1		T19	T19	T19	T19	T19	?	T19	T19	T19	T19	T19	T19	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L02	29	r	T83|T97	T83	inner	31	2	-	-	-	-				12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f178r_L02	30	n	T60|T76	T60	inner	31	2	-	-	-	-				12	2	0	T60	T60	T60	T60	T60	<deleted>	T60	T86	T60	T60	T60	T60	0	0	0	0	0	1	0	1	0	0	0	0	2	0	right	
+f178r_L02	31	a	T37|T85	T37	last	31	2	-	-	-	-				12	1		T37	T37	T37	T37	T37	T36	T37	T37	T37	T37	T37	T37	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L03	1	r	T83|T97	T83	first	35	3	-	-	-	-				12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f178r_L03	2	e	T45|T66|T86	T45	inner	35	3	-	-	-	-				12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	3	a	T37|T85	T37	inner	35	3	-	-	-	-				12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	7	a	T37|T85	T37	inner	35	3	-	-	-	-				12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	8	s	T57|T92|T95|T98|X_CE	T92	inner	35	3	-	-	-	-				12	1		T92	T92	T92	T92	T50	T92	T92	T92	T92	T92	T92	T92	0	0	0	0	1	0	0	0	0	0	0	0	1	0	right	
+f178r_L03	9	o	T19|T52|T55	T55	inner	35	3	-	-	-	-				12	0		T55	T55	T55	T55	T55	T55	T55	T55	T55	T55	T55	T55	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	10	l	T13|T51|T58|T95	T65	inner	35	3	-	-	-	-				12	10	0	T65	T65	T65	T65	T51	T95	T49	T65	T65	T65	T65	T65	1	1	1	1	0	0	1	1	1	1	1	1	10	9	majority-wrong	other
+f178r_L03	11	o	T19|T52|T55	T19	inner	35	3	-	-	-	-				12	0		T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	12	a	T37|T85	T85	inner	35	3	-	-	-	-				12	0		T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	13	n	T60|T76	T76	inner	35	3	-	-	-	-				12	0		T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	14	d	T18|T63	T63	inner	35	3	-	-	-	-				12	0		T63	T63	T63	T63	T63	T63	T63	T63	T63	T63	T63	T63	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	15	a	T37|T85	T37	inner	35	3	-	-	-	-				12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	16	r	T83|T97	T83	inner	35	3	-	-	-	-				12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f178r_L03	17	s	T57|T92|T95|T98|X_CE	T92	inner	35	3	-	-	-	-				12	1		T92	T92	T92	T92	T50	T92	T92	T92	T92	T92	T92	T92	0	0	0	0	1	0	0	0	0	0	0	0	1	0	right	
+f178r_L03	18	e	T45|T66|T86	T45	inner	35	3	-	-	-	-				12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	19	n	T60|T76	T60	inner	35	3	-	-	-	-				12	1		T60	T60	T60	T60	T86	T60	T60	T60	T60	T60	T60	T60	0	0	0	0	1	0	0	0	0	0	0	0	1	0	right	
+f178r_L03	20	e	T45|T66|T86	T45	inner	35	3	-	-	-	-				12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	21	a	T37|T85	T85	inner	35	3	-	-	-	-				12	0		T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	22	turino	T46	T46	inner	35	3	-	-	-	-				12	0		T46	T46	T46	T46	T46	T46	T46	T46	T46	T46	T46	T46	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	23	t	T27|T53|T65	T90	inner	35	3	-	-	-	-				12	12	0	T90	T90	T90	T90	<deleted>	T90	T90	<deleted>	T90	T90	T90	T90	1	1	1	1	1	1	1	1	1	1	1	1	12	10	all-wrong-split	look-alike
+f178r_L03	24	t	T27|T53|T65	T53	inner	35	3	-	-	-	-				12	9	1	T53	<deleted>	<deleted>	T53	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	T53	0	1	1	0	1	1	1	1	1	1	1	0	9	0	right	
+f178r_L03	25	o	T19|T52|T55	T19	inner	35	3	-	-	-	-				12	9	1	T19	<deleted>	<deleted>	T19	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	T19	0	1	1	0	1	1	1	1	1	1	1	0	9	0	right	
+f178r_L03	26	l	T13|T51|T58|T95	T58	inner	35	3	-	-	-	-				12	9	0	T58	<deleted>	<deleted>	T58	T42	<deleted>	<deleted>	X_NEW	<deleted>	<deleted>	<deleted>	T58	0	1	1	0	1	1	1	1	1	1	1	0	9	0	right	
+f178r_L03	27	t	T27|T53|T65	T65	inner	35	3	-	-	-	-				12	1		T65	T53	T53	T65	T53	T53	T53	T83	T53	T53	T53	T65	0	0	0	0	0	0	0	1	0	0	0	0	1	0	right	
+f178r_L03	28	o	T19|T52|T55	T52	inner	35	3	-	-	-	-				12	0		T52	T19	T19	T52	T19	T19	T19	T19	T19	T19	T19	T52	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f178r_L03	29	l	T13|T51|T58|T95	T95	inner	35	3	-	-	-	-				12	1		T95	T58	T58	T95	T58	<deleted>	T58	T58	T58	T58	T58	T95	0	0	0	0	0	1	0	0	0	0	0	0	1	0	right	
+f178r_L03	30	i	T25|T52|T80|T96	T25	inner	35	3	-	-	-	-				12	8	1	T25	<deleted>	<deleted>	T25	<deleted>	T80	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	T25	0	1	1	0	1	0	1	1	1	1	1	0	8	0	right	
+f178r_L03	31	c	T36|T50	T96	inner	35	3	-	-	-	-				12	12	0	T96	<deleted>	<deleted>	T96	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	T96	1	1	1	1	1	1	1	1	1	1	1	1	12	3	all-wrong-split	other
+f178r_L03	32	e	T45|T66|T86	T66	inner	35	3	-	-	-	-				12	9	1	T66	<deleted>	<deleted>	T66	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	T66	0	1	1	0	1	1	1	1	1	1	1	0	9	0	right	
+f178r_L03	33	n	T60|T76	T60	inner	35	3	-	-	-	-				12	9	0	T60	<deleted>	<deleted>	T60	<deleted>	T53	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	T60	0	1	1	0	1	1	1	1	1	1	1	0	9	0	right	
+f178r_L03	34	c	T36|T50	T90	inner	35	3	-	-	-	-				12	12	0	T90	<deleted>	<deleted>	T90	<deleted>	T53	<deleted>	<deleted>	<deleted>	<deleted>	<deleted>	T90	1	1	1	1	1	1	1	1	1	1	1	1	12	3	all-wrong-split	other
+f178v_L01	1	d	T18|T63	T18	first	27	1	inner	cut	1:1	thin	0.418	44	106	6	0		T18	T18	T18	T18	T18	T18							0	0	0	0	0	0							0	0	right	
+f178v_L01	2	a	T37|T85	T37	inner	27	1	inner	in	1:1	heavy	0.551	85	55	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L01	3	l	T13|T51|T58|T95	T95	inner	27	1	inner	cut	1:1	heavy	0.586	77	103	6	1		T95	T51	T95	T95	T51	T49							0	0	0	0	0	1							1	0	right	
+f178v_L01	4	o	T19|T52|T55	T19	inner	27	1	inner	cut	1:1	heavy	0.565	69	87	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L01	5	r	T83|T97	T83	inner	27	1	inner	in	1:1	heavy	0.563	89	58	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L01	6	o	T19|T52|T55	T52	inner	27	1	inner	cut	1:1	thin	0.492	80	87	6	0		T52	T52	T52	T52	T52	T52							0	0	0	0	0	0							0	0	right	
+f178v_L01	7	a	T37|T85	T85	inner	27	1	inner	in	1:1	heavy	0.552	67	65	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L01	8	l	T13|T51|T58|T95	T95	inner	27	1	overlap	cut	1:1	heavy	0.589	61	99	6	0		T95	T51	T95	T95	T51	T51							0	0	0	0	0	0							0	0	right	
+f178v_L01	9	t	T27|T53|T65	T53	inner	27	1	overlap	in	1:1	mid	0.501	74	50	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L01	10	e	T45|T66|T86	T45	inner	27	1	overlap	in	1:1	thin	0.417	38	97	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L01	11	z	T10|T38	T38	inner	27	1	overlap	in	1:1	mid	0.549	88	61	6	0		T38	T38	T38	T38	T38	T38							0	0	0	0	0	0							0	0	right	
+f178v_L01	12	e	T45|T66|T86	T86	inner	27	1	overlap	in	1:1	heavy	0.582	78	59	6	1		T86	T86	T60	T86	T86	T86							0	0	1	0	0	0							1	0	right	
+f178v_L01	13	per	T26	T26	inner	27	1	inner	cut	1:1	thin	0.469	57	94	6	0		T26	T26	T26	T26	T26	T26							0	0	0	0	0	0							0	0	right	
+f178v_L01	14	i	T25|T52|T80|T96	T96	inner	27	1	inner	near	1:1	mid	0.522	57	103	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L01	15	n	T60|T76	T60	inner	27	1	inner	in	1:1	heavy	0.647	69	69	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L01	16	c	T36|T50	T36	inner	27	1	inner	cut	2:1	heavy	0.577	38	98	6	0		T36	T36	T36	T36	T36	T36							0	0	0	0	0	0							0	0	right	
+f178v_L01	17	a	T37|T85	T85	inner	27	1	inner	in	1:1	heavy	0.582	61	61	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L01	18	m	T17|T42|T54	T54	inner	27	1	overlap	in	1:1	mid	0.523	77	74	6	0		T54	T54	T54	T54	T54	T54							0	0	0	0	0	0							0	0	right	
+f178v_L01	19	i	T25|T52|T80|T96	T80	inner	27	1	overlap	in	1:1	mid	0.534	71	63	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L01	20	n	T60|T76	T60	inner	27	1	overlap	in	1:1	heavy	0.624	78	59	6	1		T60	T60	T60	T60	T86	T60							0	0	0	0	1	0							1	0	right	
+f178v_L01	21	a	T37|T85	T37	inner	27	1	overlap	in	1:1	mid	0.545	83	61	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L01	22	r	T83|T97	T83	inner	27	1	overlap	in	1:1	mid	0.509	84	58	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L01	23	s	T57|T92|T95|T98|X_CE	X_CE	inner	27	1	inner	in	1:1	thin	0.409	78	64	6	3	1	X_CE	T50	T92	T50	T50	T92							0	1	0	1	1	0							3	0	right	
+f178v_L01	24	i	T25|T52|T80|T96	T25	inner	27	1	inner	in	1:1	heavy	0.599	65	76	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L01	25	a	T37|T85	T85	inner	27	1	inner	in	1:1	heavy	0.573	81	64	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L01	26	l	T13|T51|T58|T95	T13	inner	27	1	inner	in	1:1	thin	0.470	68	53	6	0		T13	T13	T13	T13	T13	T13							0	0	0	0	0	0							0	0	right	
+f178v_L01	27	a	T37|T85	T37	last	27	1	inner	in	1:1	heavy	0.570	95	54	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L02	1	u	T33|T49	T33	first	27	2	inner	in	1:1	mid	0.542	68	51	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L02	2	o	T19|T52|T55	T19	inner	27	2	inner	in	1:1	heavy	0.571	67	54	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L02	3	l	T13|T51|T58|T95	T58	inner	27	2	inner	in	1:1	heavy	0.552	66	69	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L02	4	t	T27|T53|T65	T53	inner	27	2	inner	in	1:1	mid	0.524	76	51	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L02	5	a	T37|T85	T85	inner	27	2	inner	in	1:1	heavy	0.561	73	64	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L02	6	d	T18|T63	T63	inner	27	2	inner	in	1:1	thin	0.482	44	61	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L02	7	i	T25|T52|T80|T96	T25	inner	27	2	inner	in	1:1	mid	0.523	78	71	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L02	8	g	T42|T70|T88	T42	inner	27	2	inner	in	1:1	mid	0.518	71	79	6	0		T42	T42	T42	T42	T42	T42							0	0	0	0	0	0							0	0	right	
+f178v_L02	9	u	T33|T49	T49	inner	27	2	overlap	cut	1:1	heavy	0.553	55	97	6	1		T49	T49	T49	T49	T49	T78							0	0	0	0	0	1							1	0	right	
+f178v_L02	10	a	T37|T85	T37	inner	27	2	overlap	in	1:1	heavy	0.556	75	61	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L02	11	s	T57|T92|T95|T98|X_CE	T98	inner	27	2	overlap	cut	1:1	thin	0.499	44	116	6	1		T98	T98	T98	T98	T98	T18							0	0	0	0	0	1							1	0	right	
+f178v_L02	12	e	T45|T66|T86	T36	inner	27	2	overlap	cut	1:1	mid	0.527	39	108	6	6	1	T36	T36	T36	T36	T36	T36							1	1	1	1	1	1							6	6	all-same-wrong	crop
+f178v_L02	13	o	T19|T52|T55	T19	inner	27	2	overlap	in	1:1	mid	0.518	62	54	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L02	14	g	T70|T88	T70	inner	27	2	inner	in	1:1	heavy	0.607	79	60	6	0		T70	T70	T70	T70	T70	T70							0	0	0	0	0	0							0	0	right	
+f178v_L02	15	n	T60|T76	T60	inner	27	2	inner	in	1:1	heavy	0.669	80	63	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L02	16	a	T37|T85	T37	inner	27	2	inner	near	1:1	mid	0.542	97	86	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L02	17	s	T57|T92|T95|T98|X_CE	T98	inner	27	2	inner	near	1:1	thin	0.497	45	117	6	1		T98	T98	T98	T98	T98	T18							0	0	0	0	0	1							1	0	right	
+f178v_L02	18	u	T33|T49	T33	inner	27	2	overlap	in	1:1	mid	0.529	83	50	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L02	19	b	T81	T81	inner	27	2	overlap	in	1:1	thin	0.438	73	52	6	1		T81	T83	T81	T81	T81	T81							0	1	0	0	0	0							1	0	right	
+f178v_L02	20	i	T25|T52|T80|T96	T96	inner	27	2	overlap	in	1:1	mid	0.517	67	98	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L02	21	t	T27|T53|T65	T53	inner	27	2	overlap	cut	1:1	mid	0.537	76	97	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L02	22	o	T19|T52|T55	T19	inner	27	2	overlap	in	1:1	thin	0.492	68	54	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L02	23	h	T56|T64	T64	inner	27	2	inner	in	1:1	mid	0.525	72	60	6	0		T64	T64	T64	T64	T64	T64							0	0	0	0	0	0							0	0	right	
+f178v_L02	24	a	T37|T85	T37	inner	27	2	inner	in	1:1	mid	0.501	79	59	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L02	25	u	T33|T49	T33	inner	27	2	inner	in	1:1	thin	0.483	78	53	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L02	26	t	T27|T53|T65	T53	inner	27	2	inner	in	1:1	mid	0.504	70	51	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L02	27	o	T19|T52|T55	T19	last	27	2	inner	in	2:1	mid	0.511	59	47	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L03	2	u	T33|T49	T33	inner	26	3	inner	in	1:1	mid	0.508	77	54	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L03	3	e	T45|T66|T86	T86	inner	26	3	inner	in	1:1	heavy	0.573	73	65	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L03	4	s	T57|T92|T95|T98|X_CE	X_CE	inner	26	3	inner	in	1:1	thin	0.450	83	65	6	3	1	X_CE	T50	T92	T50	T50	T92							0	1	0	1	1	0							3	0	right	
+f178v_L03	5	t	T27|T53|T65	T53	inner	26	3	inner	in	1:1	heavy	0.569	77	52	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L03	6	a	T37|T85	T37	inner	26	3	inner	in	1:1	mid	0.514	83	60	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L03	7	n	T60|T76	T76	inner	26	3	inner	cut	1:1	mid	0.527	62	96	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L03	8	o	T19|T52|T55	T19	inner	26	3	overlap	in	1:1	heavy	0.568	59	49	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L03	9	u	T33|T49	T33	inner	26	3	overlap	in	1:1	heavy	0.557	78	57	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L03	10	a	T37|T85	T37	inner	26	3	overlap	in	1:1	mid	0.508	88	58	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L03	11	s	T57|T92|T95|T98|X_CE	T98	inner	26	3	overlap	in	1:1	thin	0.499	41	109	6	1		T98	T98	T98	T98	T98	T18							0	0	0	0	0	1							1	0	right	
+f178v_L03	12	i	T25|T52|T80|T96	T25	inner	26	3	overlap	in	1:1	heavy	0.582	71	71	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L03	13	e	T45|T66|T86	T45	inner	26	3	overlap	in	1:1	thin	0.435	35	97	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L03	14	r	T83|T97	T83	inner	26	3	inner	in	1:1	thin	0.497	86	59	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L03	15	i	T25|T52|T80|T96	T25	inner	26	3	inner	in	1:1	heavy	0.601	80	73	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L03	16	t	T27|T53|T65	T53	inner	26	3	inner	in	1:1	mid	0.506	71	50	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L03	17	o	T19|T52|T55	T19	inner	26	3	inner	in	1:1	thin	0.496	68	54	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L03	18	r	T83|T97	T97	inner	26	3	overlap	in	1:1	thin	0.457	64	69	6	1		T97	T97	T97	T97	T97	T89							0	0	0	0	0	1							1	0	right	
+f178v_L03	19	n	T60|T76	T60	inner	26	3	overlap	in	1:1	heavy	0.597	82	66	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L03	20	a	T37|T85	T85	inner	26	3	overlap	in	1:1	heavy	0.554	74	60	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L03	21	t	T27|T53|T65	T53	inner	26	3	overlap	in	1:1	thin	0.463	69	51	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L03	22	o	T19|T52|T55	T19	inner	26	3	inner	in	1:1	thin	0.496	56	51	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L03	23	a	T37|T85	T37	inner	26	3	inner	in	1:1	heavy	0.573	82	56	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L03	24	carmagnola	T11	T11	inner	26	3	inner	in	2:1	thin	0.486	39	62	6	2	0	T11	T11	X_S	T11	T46	T11							0	0	1	0	1	0							2	0	right	
+f178v_L03	25	n	T60|T76	T60	inner	26	3	inner	in	1:1	heavy	0.645	70	59	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L03	26	e	T45|T66|T86	T86	last	26	3	inner	in	1:1	mid	0.549	66	64	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L04	1	p	T90	T90	first	28	4	inner	in	1:1	mid	0.541	54	105	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L04	2	i	T25|T52|T80|T96	T25	inner	28	4	inner	in	1:1	mid	0.525	71	69	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L04	3	u	T33|T49	T33	inner	28	4	inner	in	1:1	heavy	0.561	65	52	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L04	4	s	T57|T92|T95|T98|X_CE	X_CE	inner	28	4	inner	in	1:1	heavy	0.585	73	62	6	3	1	X_CE	T50	T92	T50	T50	T92							0	1	0	1	1	0							3	0	right	
+f178v_L04	5	e	T45|T66|T86	T86	inner	28	4	inner	in	1:1	heavy	0.635	69	64	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L04	6	n	T60|T76	T76	inner	28	4	inner	cut	1:1	mid	0.542	73	98	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L04	7	e	T45|T66|T86	T45	inner	28	4	inner	near	1:1	mid	0.543	42	95	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L04	8	e	T45|T66|T86	T86	inner	28	4	inner	in	1:1	heavy	0.612	59	59	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L04	9	p	T90	T90	inner	28	4	overlap	cut	1:1	mid	0.545	51	99	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L04	10	a	T37|T85	T37	inner	28	4	overlap	in	1:1	heavy	0.554	83	58	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L04	11	r	T83|T97	T97	inner	28	4	overlap	in	1:1	thin	0.489	61	68	6	1		T97	T97	T97	T97	T97	T89							0	0	0	0	0	1							1	0	right	
+f178v_L04	12	t	T27|T53|T65	T53	inner	28	4	overlap	in	1:1	heavy	0.581	73	50	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L04	13	i	T25|T52|T80|T96	T96	inner	28	4	overlap	near	1:1	thin	0.471	57	97	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L04	14	t	T27|T53|T65	T65	inner	28	4	inner	near	1:1	mid	0.538	74	87	6	0		T65	T65	T65	T65	T65	T65							0	0	0	0	0	0							0	0	right	
+f178v_L04	15	o	T19|T52|T55	T19	inner	28	4	inner	in	1:1	mid	0.506	61	57	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L04	16	d	T18|T63	T18	inner	28	4	inner	cut	1:1	mid	0.546	47	97	6	0		T18	T18	T18	T18	T18	T18							0	0	0	0	0	0							0	0	right	
+f178v_L04	17	i	T25|T52|T80|T96	T96	inner	28	4	inner	in	1:1	mid	0.500	75	87	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L04	18	m	T17|T42|T54	T54	inner	28	4	inner	in	1:1	heavy	0.556	86	68	6	0		T54	T54	T54	T54	T54	T54							0	0	0	0	0	0							0	0	right	
+f178v_L04	19	o	T19|T52|T55	T19	inner	28	4	overlap	in	1:1	heavy	0.639	68	49	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L04	20	d	T18|T63	T18	inner	28	4	overlap	cut	1:1	thin	0.450	44	91	6	0		T18	T18	T18	T18	T18	T18							0	0	0	0	0	0							0	0	right	
+f178v_L04	21	i	T25|T52|T80|T96	T52	inner	28	4	overlap	in	2:1	thin	0.486	49	53	6	0		T52	T52	T52	T52	T52	T52							0	0	0	0	0	0							0	0	right	
+f178v_L04	22	che	T89	T89	inner	28	4	overlap	near	1:1	mid	0.542	58	101	6	0		T89	T89	T89	T89	T89	T89							0	0	0	0	0	0							0	0	right	
+f178v_L04	23	e	T45|T66|T86	T86	inner	28	4	overlap	in	1:1	mid	0.516	73	64	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L04	24	s	T57|T92|T95|T98|X_CE	T57	inner	28	4	inner	cut	1:1	mid	0.530	52	108	6	0		T57	T57	T57	T57	T57	T57							0	0	0	0	0	0							0	0	right	
+f178v_L04	25	e	T45|T66|T86	T86	inner	28	4	inner	in	1:1	thin	0.468	77	55	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L04	26	n	T60|T76	T60	inner	28	4	inner	in	1:1	heavy	0.572	72	64	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L04	27	d	T18|T63	T18	inner	28	4	inner	cut	1:1	mid	0.519	47	93	6	0		T18	T18	T18	T18	T18	T18							0	0	0	0	0	0							0	0	right	
+f178v_L04	28	i	T25|T52|T80|T96	T52	last	28	4	inner	near	1:1	thin	0.457	65	81	6	0		T52	T52	T52	T52	T52	T52							0	0	0	0	0	0							0	0	right	
+f178v_L05	1	e	T45|T66|T86	T76	first	31	5	inner	cut	1:1	heavy	0.602	45	97	6	6	0	T76	T76	T76	T76	T89	T26							1	1	1	1	1	1							6	4	all-wrong-split	crop
+f178v_L05	2	s	T57|T92|T95|T98|X_CE	T57	inner	31	5	inner	cut	1:1	heavy	0.588	48	127	6	0		T57	T57	T57	T57	T57	T57							0	0	0	0	0	0							0	0	right	
+f178v_L05	3	o	T19|T52|T55	T55	inner	31	5	inner	in	1:1	heavy	0.605	50	64	6	0		T55	T55	T55	T55	T55	T55							0	0	0	0	0	0							0	0	right	
+f178v_L05	4	t	T27|T53|T65	T90	inner	31	5	inner	in	1:1	heavy	0.614	59	90	6	6	1	T90	T90	T90	T90	T90	T90							1	1	1	1	1	1							6	6	all-same-wrong	look-alike
+f178v_L05	5	l	T13|T51|T58|T95	T58	inner	31	5	inner	in	1:1	heavy	0.575	62	72	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L05	6	a	T37|T85	T37	inner	31	5	inner	in	1:1	heavy	0.637	85	57	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L05	7	m	T17|T42|T54	T42	inner	31	5	inner	in	1:1	heavy	0.593	38	69	6	2	0	T42	T42	X_NEW	T42	T66	T17							0	0	1	0	1	0							2	0	right	
+f178v_L05	8	o	T19|T52|T55	T19	inner	31	5	inner	in	1:1	mid	0.522	62	56	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L05	9	s	T57|T92|T95|T98|X_CE	T64	inner	31	5	overlap	in	1:1	thin	0.487	77	58	6	6	0	T64	T13	T64	T64	T13	T13							1	1	1	1	1	1							6	3	all-wrong-split	thin
+f178v_L05	10	i	T25|T52|T80|T96	T25	inner	31	5	overlap	in	1:1	thin	0.491	113	87	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L05	11	e	T45|T66|T86	T86	inner	31	5	overlap	cut	1:1	heavy	0.648	67	111	6	1		T86	T86	T60	T86	T86	T86							0	0	1	0	0	0							1	0	right	
+f178v_L05	12	d	T18|T63	T63	inner	31	5	overlap	in	1:1	heavy	0.567	48	61	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L05	13	e	T45|T66|T86	T45	inner	31	5	overlap	cut	1:1	mid	0.533	41	111	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L05	14	l	T13|T51|T58|T95	T13	inner	31	5	inner	in	1:1	mid	0.510	63	56	6	0		T13	T13	T13	T13	T13	T13							0	0	0	0	0	0							0	0	right	
+f178v_L05	15	a	T37|T85	T85	inner	31	5	inner	in	1:1	mid	0.522	67	60	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L05	16	o	T19|T52|T55	T19	inner	31	5	inner	in	1:1	heavy	0.599	57	49	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L05	18	e	T45|T66|T86	T45	inner	31	5	inner	near	1:1	mid	0.535	37	101	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L05	19	n	T60|T76	T76	inner	31	5	inner	near	1:1	thin	0.471	65	88	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L05	20	i	T25|T52|T80|T96	T25	inner	31	5	overlap	in	1:1	heavy	0.603	82	77	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L05	21	o	T19|T52|T55	T19	inner	31	5	overlap	in	1:1	heavy	0.600	60	48	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L05	22	n	T60|T76	T60	inner	31	5	overlap	in	1:1	heavy	0.597	75	63	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L05	23	e	T45|T66|T86	T86	inner	31	5	overlap	in	1:1	mid	0.548	69	61	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L05	24	che	T89	T89	inner	31	5	overlap	in	1:1	thin	0.456	53	99	6	0		T89	T89	T89	T89	T89	T89							0	0	0	0	0	0							0	0	right	
+f178v_L05	25	s	T57|T92|T95|T98|X_CE	X_CE	inner	31	5	inner	in	1:1	thin	0.490	66	59	6	3	1	X_CE	T50	T92	T50	T50	T92							0	1	0	1	1	0							3	0	right	
+f178v_L05	26	o	T19|T52|T55	T19	inner	31	5	inner	in	2:1	thin	0.483	11	28	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L05	27	n	T60|T76	T76	inner	31	5	inner	near	1:1	thin	0.464	58	82	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L05	28	o	T19|T52|T55	T52	inner	31	5	inner	near	1:1	thin	0.464	64	79	6	0		T52	T52	T52	T52	T52	T52							0	0	0	0	0	0							0	0	right	
+f178v_L05	29	m	T17|T42|T54	T54	inner	31	5	inner	in	1:1	heavy	0.552	70	70	6	0		T54	T54	T54	T54	T54	T54							0	0	0	0	0	0							0	0	right	
+f178v_L05	30	a	T37|T85	T37	inner	31	5	inner	cut	1:1	mid	0.516	66	88	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L05	31	n	T60|T76	T76	last	31	5	inner	in	2:1	thin	0.376	23	43	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L06	1	t	T27|T53|T65	T53	first	30	6	inner	in	1:1	mid	0.506	66	53	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L06	2	e	T45|T66|T86	T45	inner	30	6	inner	in	1:1	mid	0.532	40	102	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L06	3	n	T60|T76	T60	inner	30	6	inner	in	1:1	heavy	0.645	77	64	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L06	4	e	T45|T66|T86	T86	inner	30	6	inner	in	1:1	heavy	0.644	66	64	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L06	5	n	T60|T76	T76	inner	30	6	inner	cut	1:1	heavy	0.581	70	93	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L06	6	d	T18|T63	T63	inner	30	6	inner	in	1:1	heavy	0.552	43	56	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L06	7	o	T19|T52|T55	T19	inner	30	6	inner	in	1:1	mid	0.545	61	54	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L06	8	et	T29	T29	inner	30	6	inner	in	1:1	mid	0.513	97	66	6	1		T29	T29	T88	T29	T29	T29							0	0	1	0	0	0							1	0	right	
+f178v_L06	9	f	T24	T24	inner	30	6	overlap	cut	1:1	heavy	0.600	31	22	6	0		T24	T24	T24	T24	T24	T24							0	0	0	0	0	0							0	0	right	
+f178v_L06	10	a	T37|T85	T37	inner	30	6	overlap	in	1:1	mid	0.511	41	70	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L06	11	u	T33|T49	T33	inner	30	6	overlap	in	1:1	mid	0.543	71	52	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L06	12	o	T19|T52|T55	T19	inner	30	6	overlap	in	1:1	mid	0.545	74	54	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L06	13	r	T83|T97	T83	inner	30	6	overlap	in	1:1	mid	0.550	66	51	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L06	14	i	T25|T52|T80|T96	T80	inner	30	6	overlap	in	1:1	heavy	0.572	78	56	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L06	15	z	T10|T38	T10	inner	30	6	overlap	in	1:1	mid	0.551	64	61	6	0		T10	T10	T10	T10	T10	T10							0	0	0	0	0	0							0	0	right	
+f178v_L06	16	a	T37|T85	T37	inner	30	6	inner	in	1:1	mid	0.527	109	49	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L06	17	n	T60|T76	T60	inner	30	6	inner	in	1:1	mid	0.547	152	61	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L06	18	d	T18|T63	T98	inner	30	6	inner	in	1:1	thin	0.465	40	98	6	5	0	T98	T98	T98	T98	T18	T36							1	1	1	1	0	1							5	4	majority-wrong	look-alike
+f178v_L06	19	o	T19|T52|T55	T55	inner	30	6	overlap	cut	1:1	heavy	0.558	63	110	6	0		T55	T55	T55	T55	T55	T55							0	0	0	0	0	0							0	0	right	
+f178v_L06	20	t	T27|T53|T65	T65	inner	30	6	overlap	in	1:1	heavy	0.619	63	91	6	0		T65	T65	T65	T65	T65	T65							0	0	0	0	0	0							0	0	right	
+f178v_L06	21	u	T33|T49	T33	inner	30	6	overlap	in	1:1	thin	0.495	71	51	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L06	22	t	T27|T53|T65	T27	inner	30	6	overlap	cut	1:1	mid	0.530	57	114	6	0		T27	T27	T27	T27	T27	T27							0	0	0	0	0	0							0	0	right	
+f178v_L06	23	i	T25|T52|T80|T96	T80	inner	30	6	overlap	in	1:1	mid	0.527	64	68	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L06	24	l	T13|T51|T58|T95	T58	inner	30	6	overlap	in	1:1	heavy	0.583	55	80	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L06	25	i	T25|T52|T80|T96	T80	inner	30	6	inner	in	1:1	mid	0.528	58	68	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L06	27	u	T33|T49	T76	inner	30	6	inner	in	1:1	mid	0.541	75	79	6	6	0	T76	T76	T76	T76	T15	T15							1	1	1	1	1	1							6	4	all-wrong-split	other
+f178v_L06	29	d	T18|T63	T63	inner	30	6	inner	in	1:1	heavy	0.570	47	58	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L06	30	e	T45|T66|T86	T45	last	30	6	inner	in	1:1	thin	0.468	33	90	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L07	1	p	T90	T90	first	30	7	inner	in	1:1	mid	0.530	55	96	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L07	2	e	T45|T66|T86	T86	inner	30	7	inner	in	1:1	heavy	0.625	81	67	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L07	3	n	T60|T76	T60	inner	30	7	inner	in	1:1	heavy	0.623	72	66	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L07	4	d	T18|T63	T18	inner	30	7	inner	near	1:1	heavy	0.562	47	90	6	1		T18	T18	T98	T18	T18	T18							0	0	1	0	0	0							1	0	right	
+f178v_L07	5	e	T45|T66|T86	T86	inner	30	7	inner	in	1:1	heavy	0.609	78	66	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L07	6	n	T60|T76	T60	inner	30	7	inner	in	1:1	heavy	0.599	89	67	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L07	7	d	T18|T63	T63	inner	30	7	inner	in	1:1	mid	0.529	47	59	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L07	8	o	T19|T52|T55	T19	inner	30	7	inner	in	1:1	mid	0.543	62	56	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L07	9	p	T90	T90	inner	30	7	overlap	cut	1:1	mid	0.524	52	101	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L07	10	r	T83|T97	T83	inner	30	7	overlap	in	1:1	mid	0.526	83	56	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L07	11	i	T25|T52|T80|T96	T80	inner	30	7	overlap	in	1:1	mid	0.506	63	61	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L07	12	n	T60|T76	T76	inner	30	7	overlap	in	1:1	thin	0.458	55	87	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L07	13	c	T36|T50	T36	inner	30	7	overlap	cut	1:1	mid	0.531	37	105	6	0		T36	T36	T36	T36	T36	T36							0	0	0	0	0	0							0	0	right	
+f178v_L07	14	i	T25|T52|T80|T96	T96	inner	30	7	overlap	near	1:1	thin	0.433	56	98	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L07	15	p	T90	T90	inner	30	7	inner	cut	1:1	heavy	0.552	65	97	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L07	16	a	T37|T85	T37	inner	30	7	inner	in	1:1	heavy	0.575	70	59	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L07	17	l	T13|T51|T58|T95	T58	inner	30	7	inner	in	1:1	mid	0.538	80	72	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L07	18	m	T17|T42|T54	T54	inner	30	7	inner	in	1:1	heavy	0.582	86	79	6	0		T54	T54	T54	T54	T54	T54							0	0	0	0	0	0							0	0	right	
+f178v_L07	19	e	T45|T66|T86	T86	inner	30	7	inner	in	1:1	heavy	0.581	72	63	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L07	20	n	T60|T76	T60	inner	30	7	overlap	in	1:1	heavy	0.655	81	70	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L07	21	t	T27|T53|T65	T53	inner	30	7	overlap	in	1:1	thin	0.439	72	84	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L07	22	e	T45|T66|T86	T86	inner	30	7	overlap	in	1:1	mid	0.549	67	62	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L07	23	d	T18|T63	T18	inner	30	7	overlap	in	1:1	mid	0.530	46	85	6	1		T18	T18	T98	T18	T18	T18							0	0	1	0	0	0							1	0	right	
+f178v_L07	24	a	T37|T85	T85	inner	30	7	overlap	in	1:1	heavy	0.596	65	69	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L07	25	l	T13|T51|T58|T95	T13	inner	30	7	inner	in	1:1	thin	0.469	75	56	6	0		T13	T13	T13	T13	T13	T13							0	0	0	0	0	0							0	0	right	
+f178v_L07	26	a	T37|T85	T37	inner	30	7	inner	in	1:1	mid	0.526	53	33	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L07	27	c	T36|T50	T36	inner	30	7	inner	in	1:1	mid	0.550	86	56	6	0		T36	T36	T36	T36	T36	T36							0	0	0	0	0	0							0	0	right	
+f178v_L07	28	a	T37|T85	T85	inner	30	7	inner	cut	1:1	mid	0.512	40	122	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L07	29	s	T57|T92|T95|T98|X_CE	X_CE	inner	30	7	inner	in	1:1	heavy	0.643	65	67	6	3	1	X_CE	T50	T92	T50	T50	T92							0	1	0	1	1	0							3	0	right	
+f178v_L07	30	a	T37|T85	T37	last	30	7	inner	in	2:1	thin	0.386	99	69	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L08	1	d	T18|T63	T63	first	30	8	inner	in	1:1	heavy	0.691	65	70	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L08	2	e	T45|T66|T86	T86	inner	30	8	inner	in	1:1	heavy	0.677	76	63	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L08	3	m	T17|T42|T54	T42	inner	30	8	inner	in	1:1	heavy	0.568	41	71	6	2	0	T42	T42	X_NEW	T42	T66	T17							0	0	1	0	1	0							2	0	right	
+f178v_L08	4	e	T45|T66|T86	T45	inner	30	8	inner	near	1:1	mid	0.550	46	97	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L08	5	m	T17|T42|T54	T42	inner	30	8	inner	in	1:1	heavy	0.561	41	64	6	2	0	T42	T42	X_NEW	T42	T66	T17							0	0	1	0	1	0							2	0	right	
+f178v_L08	6	o	T19|T52|T55	T19	inner	30	8	inner	in	1:1	heavy	0.618	69	54	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L08	7	r	T83|T97	T83	inner	30	8	inner	in	1:1	heavy	0.580	92	56	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L08	8	a	T37|T85	T85	inner	30	8	inner	in	1:1	heavy	0.636	69	62	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L08	9	n	T60|T76	T60	inner	30	8	overlap	in	1:1	heavy	0.646	77	63	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L08	10	s	T57|T92|T95|T98|X_CE	X_CE	inner	30	8	overlap	in	1:1	heavy	0.569	92	65	6	3	1	X_CE	T50	T92	T50	T50	T92							0	1	0	1	1	0							3	0	right	
+f178v_L08	11	i	T25|T52|T80|T96	T80	inner	30	8	overlap	in	1:1	thin	0.452	61	68	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L08	12	h	T56|T64	T64	inner	30	8	overlap	cut	1:1	mid	0.509	72	108	6	0		T64	T64	T64	T64	T64	T64							0	0	0	0	0	0							0	0	right	
+f178v_L08	13	a	T37|T85	T37	inner	30	8	overlap	in	1:1	heavy	0.597	85	56	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L08	14	u	T33|T49	T33	inner	30	8	inner	in	1:1	mid	0.501	85	53	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L08	15	e	T45|T66|T86	T45	inner	30	8	inner	cut	1:1	mid	0.521	41	97	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L08	16	n	T60|T76	T60	inner	30	8	inner	in	1:1	heavy	0.622	68	65	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L08	17	d	T18|T63	T18	inner	30	8	inner	in	1:1	heavy	0.555	51	94	6	1		T18	T18	T98	T18	T18	T18							0	0	1	0	0	0							1	0	right	
+f178v_L08	18	o	T19|T52|T55	T19	inner	30	8	inner	in	1:1	heavy	0.633	68	53	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L08	19	i	T25|T52|T80|T96	T25	inner	30	8	overlap	cut	1:1	heavy	0.563	83	133	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L08	20	l	T13|T51|T58|T95	T95	inner	30	8	overlap	near	1:1	heavy	0.612	63	100	6	0		T95	T51	T95	T95	T51	T51							0	0	0	0	0	0							0	0	right	
+f178v_L08	21	c	T36|T50	T36	inner	30	8	overlap	near	1:1	heavy	0.568	37	99	6	0		T36	T36	T36	T36	T36	T36							0	0	0	0	0	0							0	0	right	
+f178v_L08	22	a	T37|T85	T85	inner	30	8	overlap	cut	1:1	heavy	0.613	70	105	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L08	23	s	T57|T92|T95|T98|X_CE	T98	inner	30	8	overlap	cut	1:1	mid	0.515	48	122	6	1		T98	T98	T98	T98	T18	T98							0	0	0	0	1	0							1	0	right	
+f178v_L08	24	t	T27|T53|T65	T65	inner	30	8	overlap	cut	1:1	heavy	0.577	66	100	6	0		T65	T65	T65	T65	T65	T65							0	0	0	0	0	0							0	0	right	
+f178v_L08	25	e	T45|T66|T86	T45	inner	30	8	inner	cut	1:1	thin	0.460	41	94	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L08	26	l	T13|T51|T58|T95	T13	inner	30	8	inner	in	2:1	mid	0.518	29	53	6	0		T13	T13	T13	T13	T13	T13							0	0	0	0	0	0							0	0	right	
+f178v_L08	27	o	T19|T52|T55	T55	inner	30	8	inner	in	1:1	heavy	0.591	51	55	6	0		T55	T55	T55	T55	T55	T55							0	0	0	0	0	0							0	0	right	
+f178v_L08	28	d	T18|T63	T18	inner	30	8	inner	in	1:1	thin	0.495	48	84	6	1		T18	T18	T98	T18	T18	T18							0	0	1	0	0	0							1	0	right	
+f178v_L08	29	i	T25|T52|T80|T96	T96	inner	30	8	inner	in	1:1	thin	0.426	58	83	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L08	30	carmagnola	T11	T11	last	30	8	inner	in	2:1	thin	0.367	28	59	6	0		T11	T11	T11	T11	T11	T11							0	0	0	0	0	0							0	0	right	
+f178v_L09	1	et	T29	T29	first	29	9	inner	in	1:1	mid	0.506	103	75	6	1		T29	T29	T88	T29	T29	T29							0	0	1	0	0	0							1	0	right	
+f178v_L09	2	quello	T84	T84	inner	29	9	inner	in	1:1	heavy	0.653	69	100	6	0		T84	T84	T84	T84	T84	T84							0	0	0	0	0	0							0	0	right	
+f178v_L09	3	d	T18|T63	T18	inner	29	9	inner	cut	1:1	heavy	0.629	49	89	6	1		T18	T18	T98	T18	T18	T18							0	0	1	0	0	0							1	0	right	
+f178v_L09	4	e	T45|T66|T86	T96	inner	29	9	inner	in	1:1	mid	0.510	73	93	6	6	1	T96	T96	T96	T96	T96	T96							1	1	1	1	1	1							6	6	all-same-wrong	other
+f178v_L09	5	r	T83|T97	T83	inner	29	9	inner	in	1:1	heavy	0.578	93	63	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L09	6	a	T37|T85	T37	inner	29	9	inner	near	1:1	heavy	0.562	85	88	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L09	7	u	T33|T49	T33	inner	29	9	inner	in	1:1	mid	0.522	69	53	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L09	8	e	T45|T66|T86	T86	inner	29	9	overlap	in	1:1	heavy	0.563	76	63	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L09	9	l	T13|T51|T58|T95	T13	inner	29	9	overlap	in	1:1	thin	0.475	75	62	6	0		T13	T13	T13	T13	T13	T13							0	0	0	0	0	0							0	0	right	
+f178v_L09	10	i	T25|T52|T80|T96	T52	inner	29	9	overlap	cut	1:1	heavy	0.605	63	103	6	0		T52	T52	T52	T52	T52	T52							0	0	0	0	0	0							0	0	right	
+f178v_L09	11	n	T60|T76	T60	inner	29	9	overlap	in	1:1	heavy	0.646	87	74	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L09	12	e	T45|T66|T86	T45	inner	29	9	inner	cut	1:1	thin	0.435	48	98	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L09	13	l	T13|T51|T58|T95	T13	inner	29	9	inner	in	1:1	heavy	0.617	26	55	6	0		T13	T13	T13	T13	T13	T13							0	0	0	0	0	0							0	0	right	
+f178v_L09	14	e	T45|T66|T86	T86	inner	29	9	inner	in	1:1	heavy	0.667	43	58	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L09	15	m	T17|T42|T54	T54	inner	29	9	inner	in	1:1	heavy	0.567	68	69	6	0		T54	T54	T54	T54	T54	T54							0	0	0	0	0	0							0	0	right	
+f178v_L09	16	a	T37|T85	T37	inner	29	9	inner	in	1:1	mid	0.544	97	76	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L09	17	n	T60|T76	T60	inner	29	9	inner	in	1:1	heavy	0.568	83	61	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L09	18	i	T25|T52|T80|T96	T80	inner	29	9	overlap	in	1:1	heavy	0.605	76	71	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L09	19	o	T19|T52|T55	T19	inner	29	9	overlap	in	1:1	heavy	0.593	69	65	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L09	20	u	T33|T49	T49	inner	29	9	overlap	in	1:1	heavy	0.628	57	59	6	1		T49	T49	T49	T49	T49	T78							0	0	0	0	0	1							1	0	right	
+f178v_L09	21	e	T45|T66|T86	T86	inner	29	9	overlap	cut	1:1	heavy	0.583	52	131	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L09	22	l	T13|T51|T58|T95	T58	inner	29	9	overlap	in	1:2	heavy	0.589	139	64	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L09	23	a	T37|T85	T85	inner	29	9	-	-	-	-				6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L09	24	p	T90	T90	inner	29	9	inner	in	1:1	heavy	0.607	71	64	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L09	25	i	T25|T52|T80|T96	T25	inner	29	9	inner	in	1:1	heavy	0.562	78	102	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L09	26	u	T33|T49	T33	inner	29	9	inner	in	1:1	heavy	0.607	72	73	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L09	27	p	T90	T90	inner	29	9	inner	in	1:1	heavy	0.576	73	57	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L09	28	a	T37|T85	T37	inner	29	9	inner	in	1:1	thin	0.483	63	102	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L10	1	t	T27|T53|T65	T92	first	32	10	inner	in	1:1	mid	0.546	71	59	6	4	1	T92	T92	T92	T92	T53	T53							1	1	1	1	0	0							4	4	majority-wrong	other
+f178v_L10	2	e	T45|T66|T86	T86	inner	32	10	inner	in	1:1	heavy	0.652	67	62	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L10	3	d	T18|T63	T18	inner	32	10	inner	near	1:1	mid	0.509	46	89	6	1		T18	T18	T98	T18	T18	T18							0	0	1	0	0	0							1	0	right	
+f178v_L10	4	e	T45|T66|T86	T76	inner	32	10	inner	cut	1:1	heavy	0.690	51	129	6	6	0	T76	T76	T76	T76	T89	T26							1	1	1	1	1	1							6	4	all-wrong-split	crop
+f178v_L10	5	s	T57|T92|T95|T98|X_CE	X_CE	inner	32	10	inner	in	1:1	mid	0.516	80	62	6	3	1	X_CE	T50	T92	T50	T50	T92							0	1	0	1	1	0							3	0	right	
+f178v_L10	6	o	T19|T52|T55	T19	inner	32	10	inner	in	1:1	heavy	0.667	53	50	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L10	7	l	T13|T51|T58|T95	T58	inner	32	10	inner	in	1:1	heavy	0.566	73	73	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L10	8	d	T18|T63	T18	inner	32	10	inner	cut	1:1	mid	0.528	48	100	6	2	0	T18	T18	T98	T18	T18	T36							0	0	1	0	0	1							2	0	right	
+f178v_L10	9	a	T37|T85	T85	inner	32	10	overlap	in	1:1	heavy	0.634	66	66	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L10	10	t	T27|T53|T65	T53	inner	32	10	overlap	in	1:1	heavy	0.584	82	52	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L10	11	i	T25|T52|T80|T96	T96	inner	32	10	overlap	in	1:1	mid	0.532	71	96	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L10	12	s	T57|T92|T95|T98|X_CE	T98	inner	32	10	overlap	cut	1:1	heavy	0.567	42	128	6	1		T98	T98	T98	T98	T18	T98							0	0	0	0	1	0							1	0	right	
+f178v_L10	13	o	T19|T52|T55	T55	inner	32	10	overlap	in	1:1	heavy	0.585	51	60	6	0		T55	T55	T55	T55	T55	T55							0	0	0	0	0	0							0	0	right	
+f178v_L10	14	n	T60|T76	T60	inner	32	10	inner	in	1:1	heavy	0.605	85	89	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L10	15	o	T19|T52|T55	T55	inner	32	10	inner	in	1:1	mid	0.539	60	59	6	0		T55	T55	T55	T55	T55	T55							0	0	0	0	0	0							0	0	right	
+f178v_L10	17	n	T60|T76	T76	inner	32	10	inner	in	1:1	thin	0.427	42	55	6	2	1	T76	T76	T76	T76	T15	T15							0	0	0	0	1	1							2	0	right	
+f178v_L10	18	e	T45|T66|T86	T86	inner	32	10	inner	in	1:1	heavy	0.631	64	60	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L10	19	g	T70|T88	T70	inner	32	10	inner	in	1:1	heavy	0.607	70	55	6	0		T70	T70	T70	T70	T70	T70							0	0	0	0	0	0							0	0	right	
+f178v_L10	20	l	T13|T51|T58|T95	T58	inner	32	10	overlap	in	1:1	heavy	0.746	79	66	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L10	21	i	T25|T52|T80|T96	T96	inner	32	10	overlap	near	1:2	mid	0.517	141	127	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L10	22	n	T60|T76	T60	inner	32	10	-	-	-	-				6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L10	23	e	T45|T66|T86	T45	inner	32	10	overlap	near	1:1	thin	0.413	43	101	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L10	24	p	T90	T90	inner	32	10	overlap	in	1:1	thin	0.491	59	94	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L10	25	u	T33|T49	T33	inner	32	10	inner	in	1:1	thin	0.466	79	53	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L10	26	o	T19|T52|T55	T19	inner	32	10	inner	in	1:1	mid	0.545	61	55	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L10	27	f	T24	T24	inner	32	10	inner	in	1:1	thin	0.432	45	67	6	0		T24	T24	T24	T24	T24	T24							0	0	0	0	0	0							0	0	right	
+f178v_L10	28	a	T37|T85	T37	inner	32	10	inner	in	1:1	mid	0.538	78	61	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L10	29	r	T83|T97	T83	inner	32	10	inner	in	1:1	heavy	0.579	82	62	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L10	30	e	T45|T66|T86	T45	inner	32	10	inner	in	1:1	thin	0.431	40	105	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L10	31	c	T36|T50	T98	inner	32	10	inner	cut	1:1	thin	0.498	46	117	6	5	0	T98	T98	T98	T98	T18	T36							1	1	1	1	1	0							5	4	majority-wrong	crop
+f178v_L10	32	i	T25|T52|T80|T96	T96	last	32	10	inner	in	2:1	thin	0.347	20	52	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L11	2	u	T33|T49	T33	inner	32	11	inner	in	1:1	heavy	0.564	67	50	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L11	3	o	T19|T52|T55	T19	inner	32	11	inner	in	1:1	heavy	0.617	59	53	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L11	4	l	T13|T51|T58|T95	T95	inner	32	11	inner	cut	1:1	heavy	0.575	63	102	6	1		T95	T95	T66	T95	T51	T51							0	0	1	0	0	0							1	0	right	
+f178v_L11	5	e	T45|T66|T86	T76	inner	32	11	inner	cut	1:1	thin	0.492	46	94	6	6	0	T76	T76	T76	T76	T89	T76							1	1	1	1	1	1							6	5	all-wrong-split	crop
+f178v_L11	6	s	T57|T92|T95|T98|X_CE	T92	inner	32	11	inner	in	1:1	thin	0.482	70	58	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L11	7	e	T45|T66|T86	T45	inner	32	11	inner	in	1:1	mid	0.515	36	96	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L11	8	n	T60|T76	T60	inner	32	11	inner	in	1:1	heavy	0.613	72	65	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L11	9	z	T10|T38	T10	inner	32	11	overlap	in	1:2	heavy	0.553	117	54	6	0		T10	T10	T10	T10	T10	T10							0	0	0	0	0	0							0	0	right	
+f178v_L11	10	a	T37|T85	T85	inner	32	11	-	-	-	-				6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L11	11	h	T56|T64	T56	inner	32	11	overlap	in	1:1	heavy	0.570	71	67	6	0		T56	T56	T56	T56	T56	T56							0	0	0	0	0	0							0	0	right	
+f178v_L11	12	a	T37|T85	T37	inner	32	11	overlap	cut	1:1	mid	0.519	81	107	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L11	13	u	T33|T49	T33	inner	32	11	overlap	in	1:1	mid	0.515	76	58	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L11	15	r	T83|T97	T83	inner	32	11	inner	cut	1:1	thin	0.445	38	99	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L11	16	e	T45|T66|T86	T86	inner	32	11	inner	in	1:1	mid	0.528	82	57	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L11	17	i	T25|T52|T80|T96	T80	inner	32	11	inner	in	1:2	heavy	0.574	135	66	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L11	18	o	T19|T52|T55	T19	inner	32	11	-	-	-	-				6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L11	19	f	T24	T24	inner	32	11	inner	in	1:1	heavy	0.667	59	55	6	0		T24	T24	T24	T24	T24	T24							0	0	0	0	0	0							0	0	right	
+f178v_L11	20	o	T19|T52|T55	T19	inner	32	11	inner	in	1:1	thin	0.401	55	65	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L11	21	r	T83|T97	T83	inner	32	11	overlap	in	1:1	heavy	0.584	70	54	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L11	22	m	T17|T42|T54	T42	inner	32	11	overlap	in	1:1	mid	0.523	84	55	6	1		T42	T42	T42	T42	T42	X_NEW							0	0	0	0	0	1							1	0	right	
+f178v_L11	23	a	T37|T85	T37	inner	32	11	overlap	in	1:1	thin	0.479	36	63	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L11	24	d	T18|T63	T63	inner	32	11	overlap	in	1:1	mid	0.525	79	61	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L11	25	i	T25|T52|T80|T96	T80	inner	32	11	overlap	in	1:1	thin	0.463	45	57	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L11	26	p	T90	T90	inner	32	11	inner	in	1:1	mid	0.506	69	61	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L11	27	o	T19|T52|T55	T55	inner	32	11	inner	near	1:1	thin	0.471	51	94	6	0		T55	T55	T55	T55	T55	T55							0	0	0	0	0	0							0	0	right	
+f178v_L11	28	t	T27|T53|T65	T53	inner	32	11	inner	in	1:1	mid	0.541	53	56	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L11	29	e	T45|T66|T86	T60	inner	32	11	inner	in	1:1	thin	0.464	69	51	6	3	1	T60	T60	T86	T60	T86	T86							1	1	0	1	0	0							3	3	minority-wrong	thin
+f178v_L11	30	r	T83|T97	T83	inner	32	11	inner	in	1:1	heavy	0.580	61	59	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L11	31	l	T13|T51|T58|T95	T95	inner	32	11	inner	cut	1:1	thin	0.481	87	101	6	0		T95	T95	T95	T95	T51	T51							0	0	0	0	0	0							0	0	right	
+f178v_L11	32	i	T25|T52|T80|T96	T96	last	32	11	inner	in	2:1	thin	0.441	17	37	6	2	0	T96	<deleted>	T96	T96	T96	X_S							0	1	0	0	0	1							2	0	right	
+f178v_L12	1	r	T83|T97	T97	first	32	12	inner	near	1:1	mid	0.501	52	70	6	0		T97	T97	T97	T97	T97	T97							0	0	0	0	0	0							0	0	right	
+f178v_L12	2	i	T25|T52|T80|T96	T96	inner	32	12	inner	in	1:1	thin	0.444	68	84	6	1		T96	T96	T96	T96	T96	T24							0	0	0	0	0	1							1	0	right	
+f178v_L12	3	m	T17|T42|T54	T54	inner	32	12	inner	in	1:1	mid	0.546	79	72	6	0		T54	T54	T54	T54	T54	T54							0	0	0	0	0	0							0	0	right	
+f178v_L12	5	d	T18|T63	T63	inner	32	12	inner	in	1:1	heavy	0.561	53	64	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L12	6	i	T25|T52|T80|T96	T96	inner	32	12	inner	in	1:1	thin	0.468	68	109	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L12	7	a	T37|T85	T37	inner	32	12	inner	in	1:1	mid	0.546	85	59	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L12	8	r	T83|T97	T97	inner	32	12	inner	in	1:1	mid	0.514	62	68	6	0		T97	T97	T97	T97	T97	T97							0	0	0	0	0	0							0	0	right	
+f178v_L12	9	e	T45|T66|T86	T86	inner	32	12	overlap	in	1:1	heavy	0.606	75	61	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L12	10	per	T26	T26	inner	32	12	overlap	near	1:1	mid	0.506	56	87	6	0		T26	T26	T26	T26	T26	T26							0	0	0	0	0	0							0	0	right	
+f178v_L12	11	o	T19|T52|T55	T19	inner	32	12	overlap	in	1:1	heavy	0.647	57	55	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L12	12	e	T45|T66|T86	T86	inner	32	12	overlap	in	1:1	heavy	0.580	66	60	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L12	13	n	T60|T76	T60	inner	32	12	overlap	in	1:1	heavy	0.621	74	61	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L12	14	e	T45|T66|T86	T86	inner	32	12	overlap	in	1:1	heavy	0.581	66	61	6	1		T86	T86	T86	T86	T60	T86							0	0	0	0	1	0							1	0	right	
+f178v_L12	15	c	T36|T50	T36	inner	32	12	inner	cut	1:1	mid	0.551	36	112	6	0		T36	T36	T36	T36	T36	T36							0	0	0	0	0	0							0	0	right	
+f178v_L12	16	e	T45|T66|T86	T45	inner	32	12	inner	cut	1:1	thin	0.404	37	97	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L12	17	s	T57|T92|T95|T98|X_CE	T57	inner	32	12	inner	cut	1:1	mid	0.541	55	115	6	0		T57	T57	T57	T57	T57	T57							0	0	0	0	0	0							0	0	right	
+f178v_L12	18	a	T37|T85	T37	inner	32	12	inner	in	1:1	thin	0.492	71	54	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L12	19	r	T83|T97	T83	inner	32	12	inner	in	1:1	mid	0.510	82	50	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L12	20	i	T25|T52|T80|T96	T80	inner	32	12	overlap	in	1:1	heavy	0.558	83	58	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L12	21	o	T19|T52|T55	T19	inner	32	12	overlap	in	1:1	heavy	0.571	57	53	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L12	24	s	T57|T92|T95|T98|X_CE	T98	inner	32	12	overlap	in	1:1	mid	0.543	40	113	6	0		T98	T98	T98	T98	T98	T98							0	0	0	0	0	0							0	0	right	
+f178v_L12	25	e	T45|T66|T86	T45	inner	32	12	inner	cut	1:1	thin	0.435	39	96	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L12	26	u	T33|T49	T33	inner	32	12	inner	in	1:1	mid	0.514	74	50	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L12	27	o	T19|T52|T55	T19	inner	32	12	inner	in	1:1	mid	0.510	62	49	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L12	28	l	T13|T51|T58|T95	T95	inner	32	12	inner	in	1:1	mid	0.549	59	94	6	1		T95	T95	T66	T95	T51	T51							0	0	1	0	0	0							1	0	right	
+f178v_L12	29	e	T45|T66|T86	T45	inner	32	12	inner	cut	1:1	thin	0.484	41	100	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L12	30	a	T37|T85	T37	inner	32	12	inner	in	1:1	thin	0.448	68	58	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L12	31	s	T57|T92|T95|T98|X_CE	T57	inner	32	12	inner	cut	1:1	thin	0.382	39	105	6	0		T57	T57	T57	T57	T57	T57							0	0	0	0	0	0							0	0	right	
+f178v_L12	32	i	T25|T52|T80|T96	T96	last	32	12	inner	in	2:1	thin	0.241	9	28	6	2	0	T96	T96	T96	T96	<deleted>	X_S							0	0	0	0	1	1							2	0	right	
+f178v_L13	1	c	T36|T50	T27	first	29	13	inner	in	1:1	mid	0.530	75	52	6	4	0	T27	T27	T26	T27	T36	T36							1	1	1	1	0	0							4	3	majority-wrong	other
+f178v_L13	2	u	T33|T49	T33	inner	29	13	inner	in	1:1	thin	0.482	61	69	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L13	3	r	T83|T97	T97	inner	29	13	inner	in	1:1	mid	0.528	84	59	6	0		T97	T97	T97	T97	T97	T97							0	0	0	0	0	0							0	0	right	
+f178v_L13	4	a	T37|T85	T37	inner	29	13	inner	in	1:1	thin	0.450	55	72	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L13	5	r	T83|T97	T97	inner	29	13	inner	in	1:1	heavy	0.566	66	60	6	0		T97	T97	T97	T97	T97	T97							0	0	0	0	0	0							0	0	right	
+f178v_L13	6	e	T45|T66|T86	T86	inner	29	13	inner	in	1:1	heavy	0.564	88	69	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L13	7	o	T19|T52|T55	T70	inner	29	13	inner	near	1:1	mid	0.514	61	100	6	6	1	T70	T70	T70	T70	T70	T70							1	1	1	1	1	1							6	6	all-same-wrong	other
+f178v_L13	8	p	T90	T90	inner	29	13	overlap	in	1:1	heavy	0.578	71	57	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L13	9	a	T37|T85	T37	inner	29	13	overlap	in	1:1	thin	0.429	42	94	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L13	10	e	T45|T66|T86	T45	inner	29	13	overlap	in	1:1	thin	0.423	78	57	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L13	11	s	T57|T92|T95|T98|X_CE	T92	inner	29	13	overlap	in	1:1	mid	0.535	72	63	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L13	12	e	T45|T66|T86	T86	inner	29	13	overlap	cut	1:1	thin	0.444	71	107	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L13	13	p	T90	T90	inner	29	13	inner	in	1:1	mid	0.522	85	60	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L13	14	r	T83|T97	T83	inner	29	13	inner	in	1:1	heavy	0.574	69	54	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L13	15	o	T19|T52|T55	T19	inner	29	13	inner	in	1:1	mid	0.513	72	51	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L13	16	u	T33|T49	T33	inner	29	13	inner	in	1:1	mid	0.533	65	58	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L13	17	e	T45|T66|T86	T86	inner	29	13	inner	in	1:1	thin	0.485	48	57	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L13	18	d	T18|T63	T63	inner	29	13	overlap	in	1:1	mid	0.504	63	59	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L13	19	a	T37|T85	T37	inner	29	13	overlap	in	1:1	heavy	0.574	41	93	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L13	20	d	T18|T63	T98	inner	29	13	overlap	in	1:1	thin	0.488	78	64	6	3	1	T98	T98	T18	T98	T18	T18							1	1	0	1	0	0							3	3	minority-wrong	look-alike
+f178v_L13	21	a	T37|T85	T37	inner	29	13	overlap	in	1:1	heavy	0.567	67	63	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L13	22	l	T13|T51|T58|T95	T58	inner	29	13	overlap	in	1:1	heavy	0.577	70	98	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L13	23	t	T27|T53|T65	T65	inner	29	13	inner	in	1:1	thin	0.478	75	56	6	0		T65	T65	T65	T65	T65	T65							0	0	0	0	0	0							0	0	right	
+f178v_L13	24	r	T83|T97	T83	inner	29	13	inner	cut	1:1	thin	0.417	71	93	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L13	25	i	T25|T52|T80|T96	T96	inner	29	13	inner	in	1:1	mid	0.516	75	63	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L13	26	a	T37|T85	T37	inner	29	13	inner	in	1:2	thin	0.485	105	86	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L13	27	i	T25|T52|T80|T96	T52	inner	29	13	-	-	-	-				6	2	1	T52	T64	T52	T52	T52	T64							0	1	0	0	0	1							2	0	right	
+f178v_L13	28	g	T70|T88	T70	inner	29	13	inner	in	1:1	mid	0.547	70	45	6	0		T70	T70	T70	T70	T70	T70							0	0	0	0	0	0							0	0	right	
+f178v_L13	29	o	T19|T52|T55	T19	last	29	13	inner	in	1:1	thin	0.347	34	46	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L14	1	e	T45|T66|T86	T45	first	27	14	inner	cut	1:1	mid	0.539	35	196	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L14	2	r	T83|T97	T83	inner	27	14	inner	in	1:1	mid	0.522	80	61	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L14	3	n	T60|T76	T60	inner	27	14	inner	in	1:1	heavy	0.572	71	65	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L14	4	i	T25|T52|T80|T96	T96	inner	27	14	inner	in	1:1	thin	0.445	80	87	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L14	5	che	T89	T89	inner	27	14	inner	cut	1:1	mid	0.514	54	120	6	0		T89	T89	T89	T89	T89	T89							0	0	0	0	0	0							0	0	right	
+f178v_L14	7	s	T57|T92|T95|T98|X_CE	T98	inner	27	14	inner	near	1:1	mid	0.522	43	116	6	0		T98	T98	T98	T98	T98	T98							0	0	0	0	0	0							0	0	right	
+f178v_L14	8	i	T25|T52|T80|T96	T96	inner	27	14	inner	in	1:1	thin	0.479	76	96	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L14	9	a	T37|T85	T37	inner	27	14	overlap	in	1:1	heavy	0.589	67	59	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L14	10	n	T60|T76	T60	inner	27	14	overlap	in	1:1	heavy	0.572	83	66	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L14	11	o	T19|T52|T55	T19	inner	27	14	overlap	in	1:1	heavy	0.566	67	53	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L14	12	n	T60|T76	T60	inner	27	14	overlap	in	1:1	heavy	0.602	95	65	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L14	13	e	T45|T66|T86	T45	inner	27	14	overlap	cut	1:1	thin	0.407	36	100	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L14	14	s	T57|T92|T95|T98|X_CE	T92	inner	27	14	inner	in	1:1	thin	0.388	73	62	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L14	15	u	T33|T49	T33	inner	27	14	inner	in	1:1	mid	0.507	70	49	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L14	16	o	T19|T52|T55	T52	inner	27	14	inner	in	1:1	thin	0.472	70	91	6	0		T52	T52	T52	T52	T52	T52							0	0	0	0	0	0							0	0	right	
+f178v_L14	18	r	T83|T97	T83	inner	27	14	overlap	in	1:1	heavy	0.560	91	54	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L14	19	a	T37|T85	T37	inner	27	14	overlap	in	1:1	thin	0.498	91	55	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L14	20	t	T27|T53|T65	T53	inner	27	14	overlap	in	1:1	mid	0.550	79	49	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L14	21	e	T45|T66|T86	T45	inner	27	14	overlap	cut	1:1	thin	0.452	40	93	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L14	22	l	T13|T51|T58|T95	T64	inner	27	14	overlap	in	1:1	thin	0.486	75	58	6	4	1	T64	T64	T64	T64	T13	T13							1	1	1	1	0	0							4	4	majority-wrong	look-alike
+f178v_L14	23	o	T19|T52|T55	T19	inner	27	14	inner	in	1:1	heavy	0.588	66	56	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L14	24	n	T60|T76	T60	inner	27	14	inner	in	1:1	mid	0.524	93	69	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L14	25	e	T45|T66|T86	T45	inner	27	14	inner	cut	1:1	thin	0.474	44	112	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L14	26	d	T18|T63	T63	inner	27	14	inner	in	1:1	mid	0.521	44	59	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L14	27	e	T45|T66|T86	T86	last	27	14	inner	in	1:1	mid	0.545	59	66	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L15	1	p	T90	T90	first	30	15	inner	near	1:1	mid	0.513	50	101	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L15	2	e	T45|T66|T86	T45	inner	30	15	inner	in	1:1	thin	0.463	40	92	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L15	3	n	T60|T76	T60	inner	30	15	inner	near	1:1	heavy	0.605	80	62	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L15	4	d	T18|T63	T63	inner	30	15	inner	in	1:1	mid	0.544	51	67	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L15	5	e	T45|T66|T86	T45	inner	30	15	inner	in	1:1	thin	0.475	41	95	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L15	6	n	T60|T76	T60	inner	30	15	inner	in	1:1	heavy	0.624	82	67	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L15	7	t	T27|T53|T65	T53	inner	30	15	inner	in	1:1	thin	0.497	72	52	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L15	8	i	T25|T52|T80|T96	T96	inner	30	15	inner	in	1:1	mid	0.505	78	90	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L15	9	d	T18|T63	T98	inner	30	15	overlap	cut	1:1	heavy	0.613	44	93	6	5	1	T98	T98	T98	T98	T98	T18							1	1	1	1	1	0							5	5	majority-wrong	crop
+f178v_L15	10	a	T37|T85	T37	inner	30	15	overlap	in	1:1	mid	0.537	80	59	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L15	11	l	T13|T51|T58|T95	T95	inner	30	15	overlap	cut	1:1	heavy	0.561	54	98	6	1		T95	T95	T66	T95	T51	T51							0	0	1	0	0	0							1	0	right	
+f178v_L15	12	u	T33|T49	T33	inner	30	15	overlap	near	1:1	heavy	0.570	80	91	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L15	13	i	T25|T52|T80|T96	T96	inner	30	15	overlap	in	1:1	thin	0.442	68	87	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L15	14	et	T29	T29	inner	30	15	overlap	in	1:1	thin	0.445	100	63	6	1		T29	T29	T88	T29	T29	T29							0	0	1	0	0	0							1	0	right	
+f178v_L15	15	che	T89	T89	inner	30	15	inner	in	1:1	thin	0.483	53	98	6	0		T89	T89	T89	T89	T89	T89							0	0	0	0	0	0							0	0	right	
+f178v_L15	16	s	T57|T92|T95|T98|X_CE	T92	inner	30	15	inner	in	1:1	heavy	0.578	83	63	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L15	17	i	T25|T52|T80|T96	T96	inner	30	15	inner	cut	1:1	thin	0.424	71	102	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L15	18	a	T37|T85	T37	inner	30	15	inner	in	1:1	heavy	0.618	85	57	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L15	19	n	T60|T76	T60	inner	30	15	overlap	in	1:1	heavy	0.557	85	62	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L15	20	o	T19|T52|T55	T19	inner	30	15	overlap	in	1:1	heavy	0.593	55	56	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L15	21	a	T37|T85	T37	inner	30	15	overlap	in	1:2	mid	0.534	180	66	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L15	22	n	T60|T76	T60	inner	30	15	-	-	-	-				6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L15	23	che	T89	T89	inner	30	15	overlap	near	1:1	thin	0.486	57	98	6	0		T89	T89	T89	T89	T89	T89							0	0	0	0	0	0							0	0	right	
+f178v_L15	24	c	T36|T50	T46	inner	30	15	inner	in	1:1	thin	0.440	33	58	6	6	0	T46	T46	T46	T46	T97	<deleted>							1	1	1	1	1	1							6	4	all-wrong-split	thin
+f178v_L15	26	a	T37|T85	T85	inner	30	15	inner	in	1:1	thin	0.475	57	76	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L15	27	l	T13|T51|T58|T95	T58	inner	30	15	inner	in	1:1	thin	0.461	61	71	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L15	28	t	T27|T53|T65	T53	inner	30	15	inner	in	1:1	mid	0.510	72	48	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L15	29	r	T83|T97	T83	inner	30	15	inner	in	1:1	mid	0.514	76	57	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L15	30	i	T25|T52|T80|T96	T80	last	30	15	inner	in	1:1	thin	0.353	38	56	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L16	1	m	T17|T42|T54	T42	first	31	16	inner	in	1:1	mid	0.517	40	66	6	1		T42	T42	T42	T42	T42	X_NEW							0	0	0	0	0	1							1	0	right	
+f178v_L16	2	e	T45|T66|T86	T45	inner	31	16	inner	in	1:1	thin	0.461	43	93	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L16	3	n	T60|T76	T76	inner	31	16	inner	cut	1:1	mid	0.505	57	92	6	1		T76	T76	T76	T76	T89	T76							0	0	0	0	1	0							1	0	right	
+f178v_L16	4	t	T27|T53|T65	T65	inner	31	16	inner	cut	1:1	mid	0.526	68	95	6	0		T65	T65	T65	T65	T65	T65							0	0	0	0	0	0							0	0	right	
+f178v_L16	5	i	T25|T52|T80|T96	T25	inner	31	16	inner	in	1:1	thin	0.487	65	75	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L16	6	s	T57|T92|T95|T98|X_CE	T92	inner	31	16	inner	in	1:2	thin	0.483	162	64	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L16	7	a	T37|T85	T37	inner	31	16	-	-	-	-				6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L16	8	r	T83|T97	T83	inner	31	16	inner	in	1:1	thin	0.462	83	57	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L16	9	e	T45|T66|T86	T45	inner	31	16	overlap	in	1:1	thin	0.488	41	103	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L16	10	m	T17|T42|T54	T54	inner	31	16	overlap	in	1:1	mid	0.532	78	71	6	0		T54	T54	T54	T54	T54	T54							0	0	0	0	0	0							0	0	right	
+f178v_L16	11	o	T19|T52|T55	T19	inner	31	16	overlap	in	1:1	heavy	0.680	67	53	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L16	12	s	T57|T92|T95|T98|X_CE	T98	inner	31	16	overlap	in	1:1	heavy	0.632	44	110	6	0		T98	T98	T98	T98	T98	T98							0	0	0	0	0	0							0	0	right	
+f178v_L16	13	e	T45|T66|T86	T45	inner	31	16	overlap	near	1:1	thin	0.490	40	94	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L16	14	m	T17|T42|T54	T42	inner	31	16	inner	in	1:1	mid	0.500	38	63	6	1		T42	T42	T42	T42	T42	X_NEW							0	0	0	0	0	1							1	0	right	
+f178v_L16	15	p	T90	T90	inner	31	16	inner	cut	1:1	thin	0.493	65	99	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L16	16	r	T83|T97	T97	inner	31	16	inner	in	1:1	mid	0.526	63	54	6	0		T97	T97	T97	T97	T97	T97							0	0	0	0	0	0							0	0	right	
+f178v_L16	17	e	T45|T66|T86	T45	inner	31	16	inner	cut	1:1	thin	0.446	40	96	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L16	18	i	T25|T52|T80|T96	T25	inner	31	16	inner	in	1:1	mid	0.536	74	67	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L16	19	n	T60|T76	T60	inner	31	16	overlap	in	1:1	mid	0.521	86	57	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L16	20	c	T36|T50	T36	inner	31	16	overlap	in	1:1	mid	0.502	41	95	6	0		T36	T36	T36	T36	T36	T36							0	0	0	0	0	0							0	0	right	
+f178v_L16	21	o	T19|T52|T55	T19	inner	31	16	overlap	in	1:1	heavy	0.573	62	48	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L16	22	n	T60|T76	T60	inner	31	16	overlap	in	1:1	thin	0.443	87	63	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L16	23	f	T24	T24	inner	31	16	overlap	in	1:1	thin	0.420	45	60	6	0		T24	T24	T24	T24	T24	T24							0	0	0	0	0	0							0	0	right	
+f178v_L16	24	u	T33|T49	T33	inner	31	16	overlap	in	1:1	mid	0.521	62	54	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L16	25	s	T57|T92|T95|T98|X_CE	T98	inner	31	16	inner	cut	1:1	heavy	0.565	46	121	6	0		T98	T98	T98	T98	T98	T98							0	0	0	0	0	0							0	0	right	
+f178v_L16	26	i	T25|T52|T80|T96	T96	inner	31	16	inner	near	1:1	thin	0.439	63	88	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L16	27	o	T19|T52|T55	T19	inner	31	16	inner	in	1:1	heavy	0.582	59	50	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L16	28	n	T60|T76	T60	inner	31	16	inner	in	1:1	heavy	0.570	74	55	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L16	29	e	T45|T66|T86	T45	inner	31	16	inner	cut	1:1	thin	0.460	42	100	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L16	30	i	T25|T52|T80|T96	T25	inner	31	16	inner	in	1:1	mid	0.522	62	70	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L17	1	b	T81	T81	first	29	17	inner	in	1:1	mid	0.533	64	50	6	0		T81	T81	T81	T81	T81	T81							0	0	0	0	0	0							0	0	right	
+f178v_L17	2	a	T37|T85	T37	inner	29	17	inner	in	1:1	mid	0.510	79	58	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L17	3	r	T83|T97	T83	inner	29	17	inner	in	1:1	mid	0.548	85	53	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L17	4	o	T19|T52|T55	T19	inner	29	17	inner	in	1:1	heavy	0.619	54	53	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L17	5	n	T60|T76	T60	inner	29	17	inner	in	1:1	heavy	0.597	66	56	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L17	6	d	T18|T63	T63	inner	29	17	inner	in	1:1	thin	0.493	49	54	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L17	7	e	T45|T66|T86	T86	inner	29	17	inner	in	1:1	mid	0.530	66	64	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L17	8	s	T57|T92|T95|T98|X_CE	T92	inner	29	17	inner	in	1:1	thin	0.446	83	61	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L17	9	a	T37|T85	T37	inner	29	17	overlap	in	1:1	mid	0.532	81	59	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L17	10	d	T18|T63	T63	inner	29	17	overlap	in	1:1	mid	0.544	53	58	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L17	11	r	T83|T97	T83	inner	29	17	overlap	in	1:1	mid	0.504	78	56	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L17	12	e	T45|T66|T86	T45	inner	29	17	overlap	cut	1:1	thin	0.463	45	94	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L17	13	s	T57|T92|T95|T98|X_CE	T92	inner	29	17	inner	in	1:1	mid	0.547	80	57	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L17	16	s	T57|T92|T95|T98|X_CE	T92	inner	29	17	inner	near	1:1	mid	0.522	47	103	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L17	17	e	T45|T66|T86	T45	inner	29	17	inner	in	1:1	thin	0.447	79	55	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L17	18	r	T83|T97	T83	inner	29	17	inner	cut	1:1	mid	0.502	41	101	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L17	19	e	T45|T66|T86	T45	inner	29	17	overlap	in	1:1	mid	0.505	85	58	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L17	20	n	T60|T76	T76	inner	29	17	overlap	cut	1:1	mid	0.512	38	102	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L17	21	d	T18|T63	T63	inner	29	17	overlap	in	1:1	mid	0.500	64	85	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L17	22	a	T37|T85	T85	inner	29	17	overlap	in	1:1	heavy	0.589	50	59	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L17	23	u	T33|T49	T33	inner	29	17	overlap	in	1:1	mid	0.513	68	66	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L17	24	b	T81	T81	inner	29	17	inner	in	1:1	mid	0.503	63	50	6	0		T81	T81	T81	T81	T81	T81							0	0	0	0	0	0							0	0	right	
+f178v_L17	25	e	T45|T66|T86	T45	inner	29	17	inner	in	1:1	thin	0.487	66	52	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L17	26	d	T18|T63	T63	inner	29	17	inner	cut	1:1	thin	0.409	38	105	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L17	27	i	T25|T52|T80|T96	T96	inner	29	17	inner	in	1:1	mid	0.522	53	63	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L17	28	e	T45|T66|T86	T45	inner	29	17	inner	cut	1:1	thin	0.478	67	107	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L18	1	t	T27|T53|T65	T53	first	27	18	inner	in	1:1	heavy	0.553	63	56	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L18	2	i	T25|T52|T80|T96	T80	inner	27	18	inner	in	1:1	thin	0.475	78	66	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L18	3	s	T57|T92|T95|T98|X_CE	T57	inner	27	18	inner	cut	1:1	heavy	0.556	56	116	6	0		T57	T57	T57	T57	T57	T57							0	0	0	0	0	0							0	0	right	
+f178v_L18	4	i	T25|T52|T80|T96	T96	inner	27	18	inner	in	1:1	thin	0.494	66	98	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L18	5	m	T17|T42|T54	T54	inner	27	18	inner	in	1:1	thin	0.469	79	66	6	0		T54	T54	T54	T54	T54	T54							0	0	0	0	0	0							0	0	right	
+f178v_L18	6	o	T19|T52|T55	T19	inner	27	18	inner	in	1:1	heavy	0.600	65	55	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L18	7	et	T29	T29	inner	27	18	inner	in	1:1	thin	0.486	100	68	6	0		T29	T29	T29	T29	T29	T29							0	0	0	0	0	0							0	0	right	
+f178v_L18	8	t	T27|T53|T65	T65	inner	27	18	overlap	near	1:1	heavy	0.580	78	89	6	0		T65	T65	T65	T65	T65	T65							0	0	0	0	0	0							0	0	right	
+f178v_L18	9	r	T83|T97	T83	inner	27	18	overlap	in	1:1	mid	0.534	91	54	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L18	10	o	T19|T52|T55	T19	inner	27	18	overlap	in	1:1	heavy	0.592	62	49	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L18	11	u	T33|T49	T33	inner	27	18	overlap	in	1:1	mid	0.542	61	53	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L18	12	i	T25|T52|T80|T96	T80	inner	27	18	overlap	in	1:1	heavy	0.553	66	64	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L18	13	b	T81	T81	inner	27	18	inner	in	1:1	mid	0.513	77	45	6	0		T81	T81	T81	T81	T81	T81							0	0	0	0	0	0							0	0	right	
+f178v_L18	14	o	T19|T52|T55	T55	inner	27	18	inner	in	1:1	heavy	0.659	50	53	6	0		T55	T55	T55	T55	T55	T55							0	0	0	0	0	0							0	0	right	
+f178v_L18	15	n	T60|T76	T60	inner	27	18	inner	in	1:1	heavy	0.592	71	60	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L18	16	o	T19|T52|T55	T52	inner	27	18	inner	in	1:1	thin	0.428	69	97	6	0		T52	T52	T52	T52	T52	T52							0	0	0	0	0	0							0	0	right	
+f178v_L18	17	t	T27|T53|T65	T53	inner	27	18	overlap	in	1:1	heavy	0.607	84	53	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L18	18	u	T33|T49	T49	inner	27	18	overlap	in	1:1	mid	0.548	65	92	6	0		T49	T49	T49	T49	T49	T49							0	0	0	0	0	0							0	0	right	
+f178v_L18	19	t	T27|T53|T65	T27	inner	27	18	overlap	in	1:1	thin	0.470	49	108	6	2	0	T27	T76	T27	T27	T27	T89							0	1	0	0	0	1							2	0	right	
+f178v_L18	20	o	T19|T52|T55	T19	inner	27	18	overlap	in	1:1	heavy	0.590	56	56	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L18	22	che	T89	T89	inner	27	18	inner	cut	1:1	thin	0.491	46	111	6	0		T89	T89	T89	T89	T89	T89							0	0	0	0	0	0							0	0	right	
+f178v_L18	23	i	T25|T52|T80|T96	T96	inner	27	18	inner	cut	1:1	thin	0.372	64	100	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L18	24	o	T19|T52|T55	T55	inner	27	18	inner	in	1:1	thin	0.471	52	59	6	0		T55	T55	T55	T55	T55	T55							0	0	0	0	0	0							0	0	right	
+f178v_L18	25	g	T70|T88	T70	inner	27	18	inner	in	1:1	mid	0.514	70	51	6	0		T70	T70	T70	T70	T70	T70							0	0	0	0	0	0							0	0	right	
+f178v_L18	26	l	T13|T51|T58|T95	T58	inner	27	18	inner	near	1:1	mid	0.537	71	72	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L18	27	i	T25|T52|T80|T96	T96	last	27	18	inner	cut	1:1	thin	0.424	63	105	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L19	1	c	T36|T50	T36	first	29	19	inner	cut	1:1	mid	0.510	34	108	6	0		T36	T36	T36	T36	T36	T36							0	0	0	0	0	0							0	0	right	
+f178v_L19	2	o	T19|T52|T55	T19	inner	29	19	inner	near	1:1	mid	0.543	56	56	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L19	3	m	T17|T42|T54	T42	inner	29	19	inner	in	1:1	thin	0.450	43	69	6	1		T42	T42	T42	T42	T42	X_NEW							0	0	0	0	0	1							1	0	right	
+f178v_L19	4	a	T37|T85	T85	inner	29	19	inner	near	1:1	heavy	0.637	78	68	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L19	5	n	T60|T76	T60	inner	29	19	inner	in	1:1	heavy	0.620	87	70	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L19	6	d	T18|T63	T98	inner	29	19	inner	cut	1:1	mid	0.519	45	98	6	3	1	T98	T98	T18	T98	T18	T18							1	1	0	1	0	0							3	3	minority-wrong	crop
+f178v_L19	7	o	T19|T52|T55	T52	inner	29	19	inner	cut	1:1	thin	0.458	60	92	6	0		T52	T52	T52	T52	T52	T52							0	0	0	0	0	0							0	0	right	
+f178v_L19	8	per	T26	T26	inner	29	19	inner	cut	1:1	thin	0.460	55	113	6	0		T26	T26	T26	T26	T26	T26							0	0	0	0	0	0							0	0	right	
+f178v_L19	9	i	T25|T52|T80|T96	T25	inner	29	19	overlap	in	1:1	heavy	0.554	73	78	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L19	10	l	T13|T51|T58|T95	T58	inner	29	19	overlap	in	2:1	thin	0.478	14	38	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L19	11	s	T57|T92|T95|T98|X_CE	T92	inner	29	19	overlap	in	1:1	thin	0.475	89	60	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L19	12	e	T45|T66|T86	T86	inner	29	19	overlap	in	1:1	heavy	0.566	69	73	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L19	13	r	T83|T97	T83	inner	29	19	overlap	in	1:1	thin	0.485	96	63	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L19	14	u	T33|T49	T33	inner	29	19	inner	in	1:1	heavy	0.552	74	57	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L19	15	i	T25|T52|T80|T96	T25	inner	29	19	inner	in	1:1	mid	0.551	76	71	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L19	17	i	T25|T52|T80|T96	T80	inner	29	19	inner	in	1:1	mid	0.543	67	68	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L19	18	o	T19|T52|T55	T19	inner	29	19	overlap	in	1:1	heavy	0.575	72	49	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L19	19	d	T18|T63	T63	inner	29	19	overlap	in	1:1	mid	0.525	51	57	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L19	20	i	T25|T52|T80|T96	T96	inner	29	19	overlap	near	1:1	thin	0.415	64	81	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L19	21	l	T13|T51|T58|T95	T58	inner	29	19	overlap	in	1:1	mid	0.549	63	70	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L19	23	n	T60|T76	T60	inner	29	19	overlap	in	1:1	thin	0.499	65	66	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L19	24	d	T18|T63	T98	inner	29	19	inner	in	1:1	heavy	0.589	45	92	6	3	1	T98	T98	T18	T98	T18	T18							1	1	0	1	0	0							3	3	minority-wrong	look-alike
+f178v_L19	25	i	T25|T52|T80|T96	T96	inner	29	19	inner	cut	1:1	mid	0.515	68	107	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L19	26	m	T17|T42|T54	T54	inner	29	19	inner	in	1:1	thin	0.494	90	74	6	0		T54	T54	T54	T54	T54	T54							0	0	0	0	0	0							0	0	right	
+f178v_L19	27	e	T45|T66|T86	T45	inner	29	19	inner	cut	1:1	thin	0.482	39	108	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L19	28	n	T60|T76	T60	inner	29	19	inner	in	1:1	heavy	0.552	82	68	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L19	29	o	T19|T52|T55	T19	last	29	19	inner	in	1:1	mid	0.509	51	57	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L20	2	s	T57|T92|T95|T98|X_CE	T92	inner	27	20	inner	cut	1:1	thin	0.446	86	62	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L20	3	i	T25|T52|T80|T96	T25	inner	27	20	inner	near	1:1	mid	0.536	67	75	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L20	4	p	T90	T90	inner	27	20	inner	in	1:1	mid	0.528	66	97	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L20	5	u	T33|T49	T33	inner	27	20	inner	in	1:1	heavy	0.601	75	54	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L20	6	o	T19|T52|T55	T52	inner	27	20	inner	cut	1:1	thin	0.455	70	91	6	0		T52	T52	T52	T52	T52	T52							0	0	0	0	0	0							0	0	right	
+f178v_L20	7	c	T36|T50	T50	inner	27	20	overlap	in	1:1	thin	0.451	97	92	6	0		T50	T50	T50	T50	T50	T50							0	0	0	0	0	0							0	0	right	
+f178v_L20	8	o	T19|T52|T55	T55	inner	27	20	overlap	in	2:1	thin	0.466	10	53	6	0		T55	T55	T55	T55	T55	T55							0	0	0	0	0	0							0	0	right	
+f178v_L20	9	n	T60|T76	T76	inner	27	20	overlap	cut	1:1	thin	0.431	61	89	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L20	10	t	T27|T53|T65	T53	inner	27	20	overlap	in	1:1	mid	0.529	71	55	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L20	11	e	T45|T66|T86	T86	inner	27	20	overlap	in	1:1	heavy	0.584	71	62	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L20	14	r	T83|T97	T83	inner	27	20	inner	in	1:1	thin	0.476	91	57	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L20	15	e	T45|T66|T86	T66	inner	27	20	inner	cut	1:1	thin	0.482	54	103	6	4	0	T66	T26	T76	T66	T89	T76							0	1	1	0	1	1							4	0	right	
+f178v_L20	16	a	T37|T85	T37	inner	27	20	inner	in	1:1	thin	0.451	65	61	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L20	17	l	T13|T51|T58|T95	T64	inner	27	20	overlap	in	1:1	thin	0.482	74	57	6	4	1	T64	T64	T64	T64	T13	T13							1	1	1	1	0	0							4	4	majority-wrong	look-alike
+f178v_L20	18	e	T45|T66|T86	T45	inner	27	20	overlap	cut	1:1	thin	0.436	38	99	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L20	19	u	T33|T49	T33	inner	27	20	overlap	in	1:1	thin	0.499	70	53	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L20	20	o	T19|T52|T55	T19	inner	27	20	overlap	in	1:1	mid	0.527	60	51	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L20	21	l	T13|T51|T58|T95	T58	inner	27	20	inner	in	1:1	heavy	0.560	57	69	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L20	22	t	T27|T53|T65	T53	inner	27	20	inner	in	1:1	thin	0.483	69	52	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L20	23	e	T45|T66|T86	T86	inner	27	20	inner	in	1:1	mid	0.527	73	61	6	0		T86	T86	T86	T86	T86	T86							0	0	0	0	0	0							0	0	right	
+f178v_L20	24	m	T17|T42|T54	T42	inner	27	20	inner	near	1:1	thin	0.475	37	67	6	1		T42	T42	T42	T42	T42	X_NEW							0	0	0	0	0	1							1	0	right	
+f178v_L20	25	e	T45|T66|T86	T45	inner	27	20	inner	cut	1:1	thin	0.494	39	95	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L20	26	c	T36|T50	T36	inner	27	20	inner	in	1:1	thin	0.492	37	103	6	0		T36	T36	T36	T36	T36	T36							0	0	0	0	0	0							0	0	right	
+f178v_L20	27	o	T19|T52|T55	T19	last	27	20	inner	in	1:1	thin	0.492	22	44	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L21	1	d	T18|T63	T98	first	27	21	inner	cut	1:1	thin	0.483	41	102	6	5	1	T98	T98	T98	T98	T98	T18							1	1	1	1	1	0							5	5	majority-wrong	crop
+f178v_L21	2	i	T25|T52|T80|T96	T96	inner	27	21	inner	cut	1:1	heavy	0.560	56	94	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L21	3	m	T17|T42|T54	T42	inner	27	21	inner	near	1:1	thin	0.474	41	73	6	1		T42	T42	T42	T42	T42	X_NEW							0	0	0	0	0	1							1	0	right	
+f178v_L21	4	o	T19|T52|T55	T19	inner	27	21	inner	near	1:1	heavy	0.612	67	53	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L21	5	s	T57|T92|T95|T98|X_CE	T92	inner	27	21	inner	in	1:1	thin	0.492	82	60	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L21	6	t	T27|T53|T65	T53	inner	27	21	inner	in	1:1	thin	0.461	84	50	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L21	7	r	T83|T97	T83	inner	27	21	inner	in	1:1	thin	0.486	86	62	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L21	8	a	T37|T85	T37	inner	27	21	overlap	in	1:1	thin	0.439	62	58	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L21	9	r	T83|T97	T97	inner	27	21	overlap	in	1:1	heavy	0.563	41	45	6	0		T97	T97	T97	T97	T97	T97							0	0	0	0	0	0							0	0	right	
+f178v_L21	10	e	T45|T66|T86	T45	inner	27	21	overlap	in	1:1	mid	0.544	66	69	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L21	11	u	T33|T49	T49	inner	27	21	overlap	near	1:1	thin	0.494	47	94	6	0		T49	T49	T49	T49	T49	T49							0	0	0	0	0	0							0	0	right	
+f178v_L21	12	n	T60|T76	T60	inner	27	21	overlap	cut	1:1	mid	0.530	58	103	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L21	13	a	T37|T85	T85	inner	27	21	inner	in	1:1	heavy	0.568	82	61	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L21	14	g	T70|T88	T70	inner	27	21	inner	in	1:1	thin	0.498	70	58	6	0		T70	T70	T70	T70	T70	T70							0	0	0	0	0	0							0	0	right	
+f178v_L21	15	r	T83|T97	T83	inner	27	21	inner	in	1:1	thin	0.459	66	46	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L21	16	a	T37|T85	T85	inner	27	21	inner	in	1:1	thin	0.443	81	54	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L21	17	n	T60|T76	T60	inner	27	21	inner	in	1:1	heavy	0.561	70	52	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L21	18	m	T17|T42|T54	T42	inner	27	21	overlap	in	1:1	heavy	0.595	84	68	6	1		T42	T42	T42	T42	T42	X_NEW							0	0	0	0	0	1							1	0	right	
+f178v_L21	19	a	T37|T85	T37	inner	27	21	overlap	in	1:1	mid	0.526	48	58	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L21	20	l	T13|T51|T58|T95	T58	inner	27	21	overlap	in	1:1	thin	0.427	77	59	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L21	21	a	T37|T85	T76	inner	27	21	overlap	in	1:1	thin	0.470	68	73	6	6	0	T76	T76	T76	T76	T89	T76							1	1	1	1	1	1							6	5	all-wrong-split	thin
+f178v_L21	22	c	T36|T50	T36	inner	27	21	overlap	near	1:1	heavy	0.587	53	107	6	1		T36	T36	T36	T36	T36	T76							0	0	0	0	0	1							1	0	right	
+f178v_L21	23	o	T19|T52|T55	T19	inner	27	21	inner	near	1:1	mid	0.551	37	110	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L21	24	n	T60|T76	T60	inner	27	21	inner	in	1:1	mid	0.530	65	54	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L21	25	t	T27|T53|T65	T53	inner	27	21	inner	in	1:1	thin	0.486	95	68	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L21	26	e	T45|T66|T86	T45	inner	27	21	inner	in	1:1	thin	0.460	72	45	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L21	27	n	T60|T76	T60	last	27	21	inner	cut	1:1	thin	0.488	110	103	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L22	1	t	T27|T53|T65	T53	first	28	22	inner	near	1:1	mid	0.531	62	56	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L22	2	z	T10|T38	T60	inner	28	22	inner	cut	1:1	heavy	0.592	102	68	6	6	1	T60	T60	T60	T60	T60	T60							1	1	1	1	1	1							6	6	all-same-wrong	crop
+f178v_L22	3	z	T10|T38	T38	inner	28	22	inner	in	1:1	thin	0.474	102	58	6	0		T38	T38	T38	T38	T38	T38							0	0	0	0	0	0							0	0	right	
+f178v_L22	4	a	T37|T85	T37	inner	28	22	inner	in	1:1	heavy	0.597	94	63	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L22	5	d	T18|T63	T63	inner	28	22	inner	in	1:1	mid	0.517	52	71	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L22	6	i	T25|T52|T80|T96	T96	inner	28	22	inner	in	1:1	thin	0.389	86	93	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L22	8	e	T45|T66|T86	T45	inner	28	22	overlap	near	1:1	mid	0.512	42	100	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L22	10	e	T45|T66|T86	T45	inner	28	22	overlap	near	1:1	thin	0.499	39	94	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L22	11	t	T27|T53|T65	T27	inner	28	22	overlap	cut	1:1	thin	0.492	53	110	6	1		T27	T27	T27	T27	T27	T89							0	0	0	0	0	1							1	0	right	
+f178v_L22	12	o	T19|T52|T55	T19	inner	28	22	overlap	in	1:1	mid	0.541	63	58	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L22	13	s	T57|T92|T95|T98|X_CE	T92	inner	28	22	inner	in	1:1	mid	0.534	86	66	6	0		T92	T92	T92	T92	T92	T92							0	0	0	0	0	0							0	0	right	
+f178v_L22	14	e	T45|T66|T86	T45	inner	28	22	inner	cut	1:1	thin	0.489	36	107	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L22	15	g	T70|T88	T70	inner	28	22	inner	cut	1:1	mid	0.522	74	92	6	0		T70	T70	T70	T70	T70	T70							0	0	0	0	0	0							0	0	right	
+f178v_L22	16	u	T33|T49	T33	inner	28	22	inner	in	1:1	heavy	0.560	67	53	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L22	17	i	T25|T52|T80|T96	T25	inner	28	22	overlap	in	1:1	heavy	0.565	78	68	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L22	18	t	T27|T53|T65	T53	inner	28	22	overlap	in	1:1	mid	0.532	76	47	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L22	19	o	T19|T52|T55	T19	inner	28	22	overlap	in	1:1	heavy	0.662	53	50	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L22	20	i	T25|T52|T80|T96	T25	inner	28	22	overlap	near	1:1	thin	0.491	85	82	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L22	21	n	T60|T76	T60	inner	28	22	overlap	in	1:1	heavy	0.559	71	62	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L22	24	t	T27|T53|T65	T90	inner	28	22	inner	cut	1:1	mid	0.503	56	88	6	6	0	T90	T90	T45	T90	T90	T90							1	1	1	1	1	1							6	5	all-wrong-split	crop
+f178v_L22	25	a	T37|T85	T85	inner	28	22	inner	in	1:1	thin	0.489	66	67	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L22	26	s	T57|T92|T95|T98|X_CE	T57	inner	28	22	inner	near	1:1	mid	0.503	55	104	6	0		T57	T57	T57	T57	T57	T57							0	0	0	0	0	0							0	0	right	
+f178v_L22	27	a	T37|T85	T37	inner	28	22	inner	in	1:1	heavy	0.581	60	54	6	0		T37	T37	T37	T37	T37	T37							0	0	0	0	0	0							0	0	right	
+f178v_L22	28	i	T25|T52|T80|T96	T80	last	28	22	inner	in	1:1	thin	0.410	52	60	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L23	1	p	T90	T90	first	29	23	inner	in	1:1	mid	0.520	74	96	6	0		T90	T90	T90	T90	T90	T90							0	0	0	0	0	0							0	0	right	
+f178v_L23	2	i	T25|T52|T80|T96	T80	inner	29	23	inner	in	1:1	thin	0.456	79	62	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L23	3	u	T33|T49	T33	inner	29	23	inner	in	1:1	mid	0.517	74	51	6	0		T33	T33	T33	T33	T33	T33							0	0	0	0	0	0							0	0	right	
+f178v_L23	4	c	T36|T50	T36	inner	29	23	inner	cut	1:1	mid	0.549	42	121	6	0		T36	T36	T36	T36	T36	T36							0	0	0	0	0	0							0	0	right	
+f178v_L23	5	o	T19|T52|T55	T19	inner	29	23	inner	in	1:1	heavy	0.556	68	53	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L23	6	n	T60|T76	T76	inner	29	23	inner	cut	1:1	thin	0.492	63	88	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L23	7	a	T37|T85	T85	inner	29	23	inner	in	1:1	mid	0.547	74	64	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L23	8	l	T13|T51|T58|T95	T58	inner	29	23	overlap	in	1:1	thin	0.446	71	68	6	0		T58	T58	T58	T58	T58	T58							0	0	0	0	0	0							0	0	right	
+f178v_L23	9	t	T27|T53|T65	T53	inner	29	23	overlap	in	1:1	thin	0.472	72	48	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L23	10	r	T83|T97	T83	inner	29	23	overlap	in	1:1	mid	0.517	86	56	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L23	11	i	T25|T52|T80|T96	T25	inner	29	23	overlap	in	1:1	mid	0.529	70	68	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L23	12	per	T26	T26	inner	29	23	inner	cut	1:1	thin	0.457	64	90	6	0		T26	T26	T26	T26	T26	T26							0	0	0	0	0	0							0	0	right	
+f178v_L23	13	quello	T84	T84	inner	29	23	inner	in	1:1	heavy	0.571	66	103	6	0		T84	T84	T84	T84	T84	T84							0	0	0	0	0	0							0	0	right	
+f178v_L23	14	i	T25|T52|T80|T96	T80	inner	29	23	inner	in	1:1	heavy	0.698	83	70	6	0		T80	T80	T80	T80	T80	T80							0	0	0	0	0	0							0	0	right	
+f178v_L23	15	n	T60|T76	T60	inner	29	23	inner	in	1:1	heavy	0.610	95	63	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L23	16	t	T27|T53|T65	T53	inner	29	23	inner	in	1:1	heavy	0.577	78	56	6	0		T53	T53	T53	T53	T53	T53							0	0	0	0	0	0							0	0	right	
+f178v_L23	17	e	T45|T66|T86	T45	inner	29	23	overlap	cut	1:1	thin	0.477	40	103	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L23	18	n	T60|T76	T60	inner	29	23	overlap	in	1:1	heavy	0.586	80	66	6	0		T60	T60	T60	T60	T60	T60							0	0	0	0	0	0							0	0	right	
+f178v_L23	19	d	T18|T63	T63	inner	29	23	overlap	in	1:1	mid	0.507	46	60	6	0		T63	T63	T63	T63	T63	T63							0	0	0	0	0	0							0	0	right	
+f178v_L23	20	o	T19|T52|T55	T19	inner	29	23	overlap	in	1:1	heavy	0.586	50	43	6	0		T19	T19	T19	T19	T19	T19							0	0	0	0	0	0							0	0	right	
+f178v_L23	21	d	T18|T63	T98	inner	29	23	overlap	in	1:1	thin	0.474	43	85	6	4	1	T98	T98	T98	T98	T18	T18							1	1	1	1	0	0							4	4	majority-wrong	look-alike
+f178v_L23	22	i	T25|T52|T80|T96	T96	inner	29	23	inner	cut	1:1	thin	0.400	74	89	6	0		T96	T96	T96	T96	T96	T96							0	0	0	0	0	0							0	0	right	
+f178v_L23	23	m	T17|T42|T54	T42	inner	29	23	inner	in	1:1	thin	0.476	33	60	6	1		T42	T42	T42	T42	T42	X_NEW							0	0	0	0	0	1							1	0	right	
+f178v_L23	24	a	T37|T85	T85	inner	29	23	inner	in	1:1	heavy	0.577	69	69	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f178v_L23	25	n	T60|T76	T76	inner	29	23	inner	in	1:1	thin	0.459	82	76	6	0		T76	T76	T76	T76	T76	T76							0	0	0	0	0	0							0	0	right	
+f178v_L23	26	i	T25|T52|T80|T96	T25	inner	29	23	inner	in	1:1	mid	0.543	85	76	6	0		T25	T25	T25	T25	T25	T25							0	0	0	0	0	0							0	0	right	
+f178v_L23	27	e	T45|T66|T86	T45	inner	29	23	inner	near	1:1	thin	0.486	43	92	6	0		T45	T45	T45	T45	T45	T45							0	0	0	0	0	0							0	0	right	
+f178v_L23	28	r	T83|T97	T83	inner	29	23	inner	in	1:1	thin	0.443	50	58	6	0		T83	T83	T83	T83	T83	T83							0	0	0	0	0	0							0	0	right	
+f178v_L23	29	a	T37|T85	T85	last	29	23	inner	in	1:1	mid	0.522	16	21	6	0		T85	T85	T85	T85	T85	T85							0	0	0	0	0	0							0	0	right	
+f179r_L01	1	s	T57|T92|T95|T98|X_CE	T92	first	31	1	edge	in	1:1	thin	0.487	59	67	12	1		T92	T92	T92	T92	T50	T92	T92	T92	T92	T92	T92	T92	0	0	0	0	1	0	0	0	0	0	0	0	1	0	right	
+f179r_L01	2	e	T45|T66|T86	T45	inner	31	1	inner	in	2:1	thin	0.492	15	39	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	3	l	T13|T51|T58|T95	T58	inner	31	1	inner	in	1:1	mid	0.509	63	74	12	0		T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	4	s	T57|T92|T95|T98|X_CE	T92	inner	31	1	inner	in	1:1	thin	0.436	84	56	12	1		T92	T92	T92	T92	T50	T92	T92	T92	T92	T92	T92	T92	0	0	0	0	1	0	0	0	0	0	0	0	1	0	right	
+f179r_L01	5	e	T45|T66|T86	T45	inner	31	1	inner	cut	1:1	thin	0.452	37	99	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	6	h	T56|T64	T56	inner	31	1	inner	in	1:1	thin	0.451	69	86	12	0		T56	T56	T56	T56	T56	T56	T56	T56	T56	T56	T56	T56	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	7	a	T37|T85	T85	inner	31	1	inner	in	1:1	mid	0.523	69	58	12	0		T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	8	u	T33|T49	T33	inner	31	1	inner	in	1:1	thin	0.479	63	56	12	0		T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	9	e	T45|T66|T86	T86	inner	31	1	inner	in	1:1	mid	0.525	67	65	12	2	1	T86	T86	T86	T86	T86	T86	T60	T86	T60	T86	T86	T86	0	0	0	0	0	0	1	0	1	0	0	0	2	0	right	
+f179r_L01	10	s	T57|T92|T95|T98|X_CE	T57	inner	31	1	inner	cut	1:1	mid	0.510	57	121	12	0		T57	T57	T57	T57	T57	T57	T57	T57	T57	T57	T57	T57	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	11	e	T45|T66|T86	T45	inner	31	1	inner	in	1:1	thin	0.494	39	95	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	12	a	T37|T85	T37	inner	31	1	overlap	in	1:1	mid	0.509	85	59	12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	13	f	T24	T24	inner	31	1	overlap	in	1:1	thin	0.488	41	70	12	3	1	T24	T24	X_NEW	T24	T24	T24	T24	T24	X_NEW	T24	X_NEW	T24	0	0	1	0	0	0	0	0	1	0	1	0	3	0	right	
+f179r_L01	14	a	T37|T85	T85	inner	31	1	overlap	in	1:1	mid	0.539	67	65	12	0		T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	15	r	T83|T97	T83	inner	31	1	overlap	in	1:1	mid	0.542	80	55	12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f179r_L01	16	e	T45|T66|T86	T45	inner	31	1	inner	near	1:1	thin	0.462	41	106	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	17	r	T83|T97	T83	inner	31	1	inner	in	1:1	mid	0.520	76	57	12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f179r_L01	18	e	T45|T66|T86	T45	inner	31	1	inner	near	1:1	thin	0.487	37	107	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	19	t	T27|T53|T65	T53	inner	31	1	inner	in	1:1	thin	0.466	71	54	12	0		T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	20	r	T83|T97	T83	inner	31	1	inner	in	1:1	mid	0.512	67	55	12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f179r_L01	21	e	T45|T66|T86	T45	inner	31	1	inner	in	1:1	thin	0.460	39	105	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	22	n	T60|T76	T60	inner	31	1	overlap	in	1:1	heavy	0.620	76	72	12	1		T60	T60	T60	T60	T60	T60	T60	T86	T60	T60	T60	T60	0	0	0	0	0	0	0	1	0	0	0	0	1	0	right	
+f179r_L01	23	c	T36|T50	T36	inner	31	1	overlap	cut	2:1	thin	0.480	36	102	12	0		T36	T36	T36	T36	T36	T36	T36	T36	T36	T36	T36	T36	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	24	h	T56|T64	T64	inner	31	1	overlap	in	2:1	thin	0.305	20	54	12	0		T64	T64	T64	T64	T64	T64	T64	T64	T64	T64	T64	T64	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	25	i	T25|T52|T80|T96	T96	inner	31	1	overlap	in	1:1	thin	0.439	86	101	12	0		T96	T96	T96	T96	T96	T96	T96	T96	T96	T96	T96	T96	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	26	a	T37|T85	T37	inner	31	1	inner	in	1:1	thin	0.445	34	63	12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	28	e	T45|T66|T86	T86	inner	31	1	inner	in	1:1	mid	0.546	37	78	12	2	1	T86	T86	T86	T86	T86	T86	T60	T86	T60	T86	T86	T86	0	0	0	0	0	0	1	0	1	0	0	0	2	0	right	
+f179r_L01	29	n	T60|T76	T76	inner	31	1	inner	cut	1:1	heavy	0.615	87	97	12	0		T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	30	t	T27|T53|T65	T65	inner	31	1	inner	in	2:1	heavy	0.616	60	56	12	0		T65	T65	T65	T65	T65	T65	T65	T65	T65	T65	T65	T65	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L01	31	o	T19|T52|T55	T19	last	31	1	inner	in	2:1	thin	0.227	7	61	12	0		T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	1	s	T57|T92|T95|T98|X_CE	T92	first	31	2	edge	in	2:1	heavy	0.642	53	69	12	1		T92	T92	T92	T92	T50	T92	T92	T92	T92	T92	T92	T92	0	0	0	0	1	0	0	0	0	0	0	0	1	0	right	
+f179r_L02	2	o	T19|T52|T55	T19	inner	31	2	inner	in	1:1	heavy	0.573	61	51	12	0		T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	3	p	T90	T90	inner	31	2	inner	cut	1:1	mid	0.542	57	103	12	0		T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	4	r	T83|T97	T83	inner	31	2	inner	in	1:1	mid	0.548	79	55	12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f179r_L02	5	a	T37|T85	T85	inner	31	2	inner	in	1:1	heavy	0.578	60	57	12	0		T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	7	u	T33|T49	T33	inner	31	2	inner	in	1:1	thin	0.482	50	45	12	0		T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	8	e	T45|T66|T86	T24	inner	31	2	inner	in	1:1	thin	0.415	39	71	12	12	0	T24	T24	X_NEW	T24	T24	T24	T24	T24	X_NEW	T24	X_NEW	T24	1	1	1	1	1	1	1	1	1	1	1	1	12	9	all-wrong-split	thin
+f179r_L02	9	s	T57|T92|T95|T98|X_CE	T92	inner	31	2	inner	in	1:1	thin	0.419	79	60	12	1		T92	T92	T92	T92	T50	T92	T92	T92	T92	T92	T92	T92	0	0	0	0	1	0	0	0	0	0	0	0	1	0	right	
+f179r_L02	10	t	T27|T53|T65	T53	inner	31	2	inner	in	1:1	mid	0.530	74	46	12	0		T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	11	a	T37|T85	T37	inner	31	2	inner	in	1:1	mid	0.518	80	56	12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	12	g	T70|T88	T70	inner	31	2	overlap	in	1:1	heavy	0.555	90	53	12	0		T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	13	e	T45|T66|T86	T45	inner	31	2	overlap	in	1:1	thin	0.442	41	100	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	14	n	T60|T76	T60	inner	31	2	overlap	in	1:1	heavy	0.615	76	64	12	1		T60	T60	T60	T60	T60	T60	T60	T86	T60	T60	T60	T60	0	0	0	0	0	0	0	1	0	0	0	0	1	0	right	
+f179r_L02	15	t	T27|T53|T65	T53	inner	31	2	inner	in	1:1	mid	0.532	149	75	12	0		T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	16	e	T45|T66|T86	T86	inner	31	2	inner	in	1:1	heavy	0.553	68	67	12	2	1	T86	T86	T86	T86	T86	T86	T60	T86	T60	T86	T86	T86	0	0	0	0	0	0	1	0	1	0	0	0	2	0	right	
+f179r_L02	17	l	T13|T51|T58|T95	T58	inner	31	2	inner	in	1:1	mid	0.510	77	58	12	0		T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	18	a	T37|T85	T37	inner	31	2	inner	in	1:1	thin	0.479	62	56	12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	19	u	T33|T49	T33	inner	31	2	inner	in	1:1	mid	0.522	49	58	12	0		T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	20	d	T18|T63	T63	inner	31	2	inner	in	1:1	mid	0.532	86	57	12	0		T63	T63	T63	T63	T63	T63	T63	T63	T63	T63	T63	T63	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	21	a	T37|T85	T37	inner	31	2	overlap	in	1:1	mid	0.511	67	56	12	0		T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	T37	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	22	r	T83|T97	T83	inner	31	2	overlap	in	1:1	mid	0.503	38	93	12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f179r_L02	23	e	T45|T66|T86	T45	inner	31	2	overlap	in	1:1	heavy	0.598	67	76	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	24	i	T25|T52|T80|T96	T25	inner	31	2	overlap	in	1:1	thin	0.467	68	95	12	0		T25	T25	T25	T25	T25	T25	T25	T25	T25	T25	T25	T25	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	25	p	T90	T90	inner	31	2	overlap	in	1:1	heavy	0.603	71	61	12	0		T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	T90	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	26	i	T25|T52|T80|T96	T80	inner	31	2	inner	in	1:1	thin	0.496	69	48	12	0		T80	T80	T80	T80	T80	T80	T80	T80	T80	T80	T80	T80	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	27	u	T33|T49	T33	inner	31	2	inner	cut	1:1	heavy	0.583	69	97	12	0		T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	T33	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	28	t	T27|T53|T65	T65	inner	31	2	inner	in	1:1	mid	0.539	69	50	12	0		T65	T65	T65	T65	T65	T65	T65	T65	T65	T65	T65	T65	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	29	o	T19|T52|T55	T19	inner	31	2	inner	in	1:1	thin	0.477	69	59	12	0		T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L02	30	s	T57|T92|T95|T98|X_CE	T92	inner	31	2	inner	in	1:1	heavy	0.640	57	45	12	1		T92	T92	T92	T92	T50	T92	T92	T92	T92	T92	T92	T92	0	0	0	0	1	0	0	0	0	0	0	0	1	0	right	
+f179r_L02	31	t	T27|T53|T65	T53	last	31	2	inner	near	2:1	thin	0.305	6	62	12	0		T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	1	o	T19|T52|T55	T19	first	27	3	edge	in	1:1	thin	0.424	62	55	12	0		T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	T19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	3	b	T81	T81	inner	27	3	inner	in	1:1	heavy	0.580	68	47	12	0		T81	T81	T81	T81	T81	T81	T81	T81	T81	T81	T81	T81	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	4	r	T83|T97	T83	inner	27	3	inner	in	1:1	thin	0.495	77	54	12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f179r_L03	5	i	T25|T52|T80|T96	T80	inner	27	3	inner	in	1:1	thin	0.492	76	63	12	0		T80	T80	T80	T80	T80	T80	T80	T80	T80	T80	T80	T80	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	6	g	T70|T88	T70	inner	27	3	inner	in	1:1	mid	0.527	74	53	12	0		T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	T70	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	7	a	T37|T85	T85	inner	27	3	inner	in	2:1	mid	0.519	153	63	12	0		T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	8	r	T83|T97	T83	inner	27	3	inner	in	1:1	mid	0.502	74	57	12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f179r_L03	9	s	T57|T92|T95|T98|X_CE	T92	inner	27	3	inner	cut	1:1	thin	0.493	40	95	12	1		T92	T92	T92	T92	T50	T92	T92	T92	T92	T92	T92	T92	0	0	0	0	1	0	0	0	0	0	0	0	1	0	right	
+f179r_L03	10	e	T45|T66|T86	T45	inner	27	3	overlap	in	1:1	thin	0.499	63	72	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	11	n	T60|T76	T76	inner	27	3	overlap	cut	1:1	mid	0.541	39	96	12	0		T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	T76	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	12	e	T45|T66|T86	T45	inner	27	3	overlap	in	1:1	mid	0.549	58	110	12	0		T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	T45	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	13	che	T89	T89	inner	27	3	overlap	in	1:1	heavy	0.585	82	66	12	0		T89	T89	T89	T89	T89	T89	T89	T89	T89	T89	T89	T89	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	14	a	T37|T85	T85	inner	27	3	overlap	in	1:1	heavy	0.554	66	67	12	0		T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	T85	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	15	l	T13|T51|T58|T95	T58	inner	27	3	inner	in	1:1	mid	0.526	70	48	12	0		T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	T58	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	16	t	T27|T53|T65	T53	inner	27	3	inner	in	1:1	mid	0.527	78	53	12	0		T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	17	r	T83|T97	T83	inner	27	3	inner	in	1:1	thin	0.417	55	95	12	2	1	T83	T83	T24	T83	T83	T83	T83	T83	T83	T83	T24	T83	0	0	1	0	0	0	0	0	0	0	1	0	2	0	right	
+f179r_L03	18	i	T25|T52|T80|T96	T96	inner	27	3	inner	in	1:1	heavy	0.567	43	59	12	0		T96	T96	T96	T96	T96	T96	T96	T96	T96	T96	T96	T96	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	20	e	T45|T66|T86	T86	inner	27	3	inner	in	1:1	mid	0.536	79	67	12	2	1	T86	T86	T86	T86	T86	T86	T60	T86	T60	T86	T86	T86	0	0	0	0	0	0	1	0	1	0	0	0	2	0	right	
+f179r_L03	21	n	T60|T76	T60	inner	27	3	overlap	in	1:1	thin	0.376	29	40	12	0		T60	T60	T60	T60	T60	T60	T60	T60	T60	T60	T60	T60	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	
+f179r_L03	22	t	T27|T53|T65	T53	inner	27	3	overlap	in	1:1	thin	0.470	54	48	12	0		T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	T53	0	0	0	0	0	0	0	0	0	0	0	0	0	0	right	

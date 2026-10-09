@@ -1,0 +1,13 @@
+sheet	cell	box	truth_pos	ref_sign	truth	plain	status	verdict
+sheet_truth	T19	f152r_04_028	f152r_L03.27	T19	T19|T52|T55	o	scored	OK
+sheet_truth	T33	f152r_04_023	f152r_L03.22	T33	T33|T49	u	scored	OK
+sheet_truth	T36	f152r_03_018	f152r_L02.18	T36	T45|T66|T86	e	scored	MISLABELLED
+sheet_truth	T45	f152r_04_012	f152r_L03.11	T45	T45|T66|T86	e	scored	OK
+sheet_truth	T49	f152r_03_019	f152r_L02.19	T49	T33|T49	u	scored	OK
+sheet_truth	T58	f152r_04_018	f152r_L03.17	T58	T13|T51|T58|T95	l	scored	OK
+sheet_truth	T76	f152r_03_020	f152r_L02.20	T76		.	excluded:slip-dot	no-truth (excluded:slip-dot)
+sheet_truth	T83	f152r_05_027	f152r_L04.22	T83	T83|T97	r	scored	OK
+sheet_truth	T86	f152r_03_030	f152r_L02.29	T86	T45|T66|T86	e	scored	OK
+sheet_truth	T90	f152r_04_022	f152r_L03.21	T90	T90	p	scored	OK
+sheet_truth	T96	f152r_04_017	f152r_L03.16	T96	T25|T52|T80|T96	i	scored	OK
+sheet_truth	T97	f152r_04_020	f152r_L03.19	T97	T83|T97	r	scored	OK

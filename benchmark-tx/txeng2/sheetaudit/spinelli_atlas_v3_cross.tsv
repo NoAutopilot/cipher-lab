@@ -1,0 +1,155 @@
+sheet	cell	box	truth_pos	v4_code	truth	plain	status	verdict
+atlas.tsv	DIAMOND	p1_07_010	p1c_L07.10	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	DIAMOND	p1_02_011	p1c_L02.11	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	DIAMOND	p1_03_018	p1c_L03.19	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	DIAMOND	p1_08_020	p1c_L08.21	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	DIAMOND	p1_06_012	p1c_L06.12	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	DIAMOND	p1_04_007	p1c_L04.7	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	DIAMOND	p1_04_024	p1c_L04.26	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	DIAMOND	p2L1_01_011	p2c_L01.11	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	DIAMOND	p2L2_01_007	p2c_L02.7	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	DIAMOND	p1_05_007	p1c_L05.8	DIAMOND	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	EIGHT	p1_07_026	p1c_L07.26	EIGHT	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	EIGHT	p2L1_01_026	p2c_L01.26	EIGHT	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	EIGHT	p1_05_008	p1c_L05.9	EIGHT	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	EIGHT	p1_06_023	p1c_L06.23	EIGHT	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	EIGHT	p1_04_017	p1c_L04.18	EIGHT	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	EIGHT	p1_06_006	p1c_L06.6	EIGHT	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	EIGHT	p2L2_01_016	p2c_L02.17	EIGHT		?	excluded:unread-2017	no-truth (excluded:unread-2017)
+atlas.tsv	EIGHT	p2L2_01_017	p2c_L02.18	EIGHT		?	excluded:unread-2017	no-truth (excluded:unread-2017)
+atlas.tsv	EIGHT	p2L1_01_009	p2c_L01.9	EIGHT	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	EIGHT	p1_07_021	p1c_L07.21	EIGHT	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	EIGHTBAR	p1_02_017	p1c_L02.17	EIGHTBAR		w	excluded:off-key	no-truth (excluded:off-key)
+atlas.tsv	EIGHTBAR	p1_06_003	p1c_L06.3	EIGHTBAR		w	excluded:que-rr-marker	no-truth (excluded:que-rr-marker)
+atlas.tsv	EM	p1_08_026	p1c_L08.25	EM	EM|HOOK_U_V	u	scored	OK
+atlas.tsv	EM	p2L1_01_018	p2c_L01.18	EM	EM|HOOK_U_V	u	scored	OK
+atlas.tsv	EM	p1_02_012	p1c_L02.12	EM	EM|HOOK_U_V	u	scored	OK
+atlas.tsv	EM	p1_06_005	p1c_L06.5	EM	EM|HOOK_U_V	u	scored	OK
+atlas.tsv	EM	p2L2_01_014	p2c_L02.15	EM	EM|HOOK_U_V	u	scored	OK
+atlas.tsv	EM	p1_07_006	p1c_L07.6	EM	EM|HOOK_U_V	u	scored	OK
+atlas.tsv	ENN	p2L1_01_008	p2c_L01.8	ENN	DEE|ENN|TWO_S2	s	scored	OK
+atlas.tsv	ENN	p1_07_003	p1c_L07.3	ENN	DEE|ENN|TWO_S2	s	scored	OK
+atlas.tsv	ENN	p1_04_018	p1c_L04.19	ENN	DEE|ENN|TWO_S2	s	scored	OK
+atlas.tsv	ENN	p2L1_01_002	p2c_L01.2	ENN	DEE|ENN|TWO_S2	s	scored	OK
+atlas.tsv	ENN	p1_03_015	p1c_L03.15	ENN	DEE|ENN|TWO_S2	s	scored	OK
+atlas.tsv	ESS	p1_02_022	p1c_L02.23	ESS			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	ESS	p1_05_020	p1c_L05.22	ESS			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	FOUR	p1_01_032	p1c_L01.23	FOUR		m	excluded:null-over-letter	no-truth (excluded:null-over-letter)
+atlas.tsv	FOUR	p1_03_026	p1c_L03.27	FOUR			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	FOUR	p1_08_029	p1c_L08.26	FOUR			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	FOUR	p2L2_01_009	p2c_L02.9	FOUR			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	FOUR	p1_04_009	p1c_L04.9	FOUR			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	FOUR	p1_02_027	p1c_L02.28	FOUR			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	FOUR	p2L2_01_005	p2c_L02.5	FOUR			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	HCURL	p2L1_01_022	p2c_L01.22	HCURL	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	HCURL	p1_04_013	p1c_L04.13	HCURL	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	HCURL	p1_04_003	p1c_L04.3	HCURL	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	HCURL	p1_03_011	p1c_L03.11	HCURL	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	HCURL	p1_02_009	p1c_L02.9	HCURL	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	HCURL	p1_03_005	p1c_L03.5	HCURL	DIAMOND|HCURL	n	scored	OK
+atlas.tsv	HOOK	p1_02_008	p1c_L02.8	HOOK	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	HOOK	p1_03_022	p1c_L03.23	HOOK	HOOK_T|HOOK_T1|HOOK_T3	t	scored	OK
+atlas.tsv	HOOK	p1_02_007	p1c_L02.7	HOOK	HOOK_T|HOOK_T1|HOOK_T3	t	scored	OK
+atlas.tsv	HOOK	p1_04_025	p1c_L04.27	HOOK		t	excluded:off-key	no-truth (excluded:off-key)
+atlas.tsv	HOOK	p2L1_01_024	p2c_L01.24	HOOK	HOOK_T|HOOK_T1|HOOK_T3	t	scored	OK
+atlas.tsv	HOOK	p1_04_010	p1c_L04.10	HOOK	HOOK_T|HOOK_T1|HOOK_T3	t	scored	OK
+atlas.tsv	HOOK	p1_01_020	p1c_L01.9	HOOK	HOOK_T|HOOK_T1|HOOK_T3	t	scored	OK
+atlas.tsv	HOOK	p1_03_008	p1c_L03.8	HOOK	HOOK_T|HOOK_T1|HOOK_T3	t	scored	OK
+atlas.tsv	HOOK	p1_03_002	p1c_L03.2	HOOK			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	HOOK	p1_08_017	p1c_L08.19	HOOK	HOOK_M|JHOOK_M2|NINE_M2|SEVEN_I_M2	m	scored	OK
+atlas.tsv	LL	p1_07_014	p1c_L07.14	LL	EIGHTBAR_C|HOOK_C|LL	c	scored	OK
+atlas.tsv	LL	p1_06_007	p1c_L06.7	LL	EIGHTBAR_C|HOOK_C|LL	c	scored	OK
+atlas.tsv	LL	p1_04_022	p1c_L04.24	LL	EIGHTBAR_C|HOOK_C|LL	c	scored	OK
+atlas.tsv	NINE	p1_02_004	p1c_L02.4	NINE	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	NINE	p1_05_011	p1c_L05.12	NINE	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	NINE	p1_01_023	p1c_L01.12	NINE			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	NINE	p2L1_01_014	p2c_L01.14	NINE			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	NINE	p2L1_01_020	p2c_L01.20	NINE	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	NINE	p1_04_026	p1c_L04.28	NINE	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	NINE	p1_07_011	p1c_L07.11	NINE	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	NINE	p1_02_018	p1c_L02.18	NINE	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	NINE	p1_06_013	p1c_L06.13	NINE	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	NINE	p1_01_022	p1c_L01.11	NINE	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	OMEGABAR	p1_08_012	p1c_L08.13	OMEGABAR	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	OMEGABAR	p1_01_029	p1c_L01.19	OMEGABAR	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	OMEGABAR	p1_06_002	p1c_L06.2	OMEGABAR	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	OMEGABAR	p1_05_012	p1c_L05.13	OMEGABAR	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	OMEGABAR	p1_03_006	p1c_L03.6	OMEGABAR	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	OMEGABAR	p1_05_004	p1c_L05.5	OMEGABAR	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	OMEGABAR	p2L1_01_023	p2c_L01.23	OMEGABAR	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	OMEGABAR	p1_02_016	p1c_L02.16	OMEGABAR	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	OMEGABAR	p1_08_031	p1c_L08.27	OMEGABAR	HOOK_A|OMEGABAR	a	scored	OK
+atlas.tsv	OMEGABAR	p1_03_017	p1c_L03.18	OMEGADOT	OMEGADOT|PHI_G	g	scored	MISLABELLED
+atlas.tsv	OMEGADOT	p1_02_003	p1c_L02.3	OMEGADOT	OMEGADOT|PHI_G	g	scored	OK
+atlas.tsv	OMEGADOT	p2L1_01_010	p2c_L01.10	OMEGADOT	OMEGADOT|PHI_G	g	scored	OK
+atlas.tsv	PHI	p1_08_003	p1c_L08.3	PHI	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	PHI	p1_03_014	p1c_L03.14	PHI	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	PHI	p2L2_01_012	p2c_L02.13	PHI	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	PHI	p1_04_002	p1c_L04.2	PHI	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	PHI	p1_04_011	p1c_L04.11	PHI	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	PHI	p1_07_023	p1c_L07.23	PHI	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	PHI	p2L1_01_007	p2c_L01.7	PHI	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	PHI	p1_01_005	-	-	-	-	not in v4 reconciliation	no-truth (box not a committed sign)
+atlas.tsv	PHI	p1_02_006	p1c_L02.6	PHI	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	PHI	p1_05_019	p1c_L05.21	HOOK			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	PI	p1_04_001	p1c_L04.1	PI	PI|THETA	d	scored	OK
+atlas.tsv	PI	p1_08_002	p1c_L08.2	PI	PI|THETA	d	scored	OK
+atlas.tsv	PLUS	p2L1_01_006	p2c_L01.6	PLUS	PLUS	b	scored	OK
+atlas.tsv	PLUS	p2L1_01_031	p2c_L01.31	PLUS	PLUS	b	scored	OK
+atlas.tsv	SEVEN	p2L1_01_012	p2c_L01.12	SEVEN	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	SEVEN	p1_06_016	p1c_L06.16	SEVEN	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	SEVEN	p1_03_009	p1c_L03.9	SEVEN		i	excluded:off-key	no-truth (excluded:off-key)
+atlas.tsv	SEVEN	p1_05_006	p1c_L05.7	SEVEN		i	excluded:off-key	no-truth (excluded:off-key)
+atlas.tsv	SEVEN	p1_04_006	p1c_L04.6	SEVEN	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	SEVEN	p1_03_019	p1c_L03.20	SEVEN	PHI_I|SEVENB|SEVEN_I	i	scored	OK
+atlas.tsv	SEVEN	p1_03_012	p1c_L03.12	SEVEN	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	SEVEN	p1_07_028	p1c_L07.28	SEVEN	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	SEVEN	p1_02_015	p1c_L02.15	SEVEN	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	SEVEN	p1_07_002	p1c_L07.2	SEVEN	NINE_E|SEVEN_E	e	scored	OK
+atlas.tsv	SIX	p1_06_022	p1c_L06.22	SIX			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	SIX	p2L1_01_004	p2c_L01.4	SIX			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	SIX	p1_01_025	p1c_L01.14	ESS	ESS	h	scored	MISLABELLED
+atlas.tsv	SIX	p1_05_015	p1c_L05.17	SIX			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	SIX	p1_06_001	p1c_L06.1	SIX		i	excluded:null-over-letter	no-truth (excluded:null-over-letter)
+atlas.tsv	SIX	p1_04_027	p1c_L04.29	SIX			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	SIX	p1_05_003	p1c_L05.4	SIX			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	SIX	p1_05_021	p1c_L05.23	SIX			excluded:unaligned	no-truth (excluded:unaligned)
+atlas.tsv	SIX	p1_05_010	p1c_L05.11	SIX		h	excluded:null-over-letter	no-truth (excluded:null-over-letter)
+atlas.tsv	SIX	p1_08_030	-	-	-	-	not in v4 reconciliation	no-truth (box not a committed sign)
+atlas.tsv	TEE	p1_08_011	p1c_L08.12	TEE	TEE_P1|TWO_P	p	scored	OK
+atlas.tsv	TEE	p1_03_001	p1c_L03.1	PLUS	PLUS	b	scored	MISLABELLED
+atlas.tsv	TEE	p1_03_027	p1c_L03.28	TEE	TEE_P1|TWO_P	p	scored	OK
+atlas.tsv	TEE	p1_05_001	p1c_L05.1	TEE	TEE_P1|TWO_P	p	scored	OK
+atlas.tsv	THETA	p1_01_017	p1c_L01.6	THETA	PI|THETA	d	scored	OK
+atlas.tsv	THETA	p1_08_022	-	-	-	-	not in v4 reconciliation	no-truth (box not a committed sign)
+atlas.tsv	THETA	p1_03_013	p1c_L03.13	THETA	PI|THETA	d	scored	OK
+atlas.tsv	THETA	p1_05_013	p1c_L05.14	PHI		d	excluded:key-M-PHI_T	no-truth (excluded:key-M-PHI_T)
+atlas.tsv	THETA	p2L1_01_029	p2c_L01.29	THETA	PI|THETA	d	scored	OK
+atlas.tsv	THETA	p1_07_012	p1c_L07.12	THETA	PI|THETA	d	scored	OK
+atlas.tsv	THREE	p1_03_021	p1c_L03.22	THREE		e	excluded:key-M-THREE	no-truth (excluded:key-M-THREE)
+atlas.tsv	THREE	p1_06_024	p1c_L06.24	THREE		l	excluded:key-M-THREE	no-truth (excluded:key-M-THREE)
+atlas.tsv	THREE	p1_02_014	p1c_L02.14	THREE		l	excluded:key-M-THREE	no-truth (excluded:key-M-THREE)
+atlas.tsv	THREE	p1_04_005	p1c_L04.5	THREE		l	excluded:key-M-THREE	no-truth (excluded:key-M-THREE)
+atlas.tsv	THREE	p1_02_023	p1c_L02.24	THREE		l	excluded:key-M-THREE	no-truth (excluded:key-M-THREE)
+atlas.tsv	THREE	p1_04_021	p1c_L04.23	THREE		l	excluded:key-M-THREE	no-truth (excluded:key-M-THREE)
+atlas.tsv	THREE	p1_07_005	p1c_L07.5	THREE		l	excluded:key-M-THREE	no-truth (excluded:key-M-THREE)
+atlas.tsv	THREE	p2L1_01_016	p2c_L01.16	THREE		l	excluded:key-M-THREE	no-truth (excluded:key-M-THREE)
+atlas.tsv	THREE	p1_01_015	p1c_L01.4	THREE		l	excluded:key-M-THREE	no-truth (excluded:key-M-THREE)
+atlas.tsv	TWO	p1_08_006	p1c_L08.6	TWO		l	excluded:null-over-letter	no-truth (excluded:null-over-letter)
+atlas.tsv	TWO	p1_07_004	p1c_L07.4	TWO	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	TWO	p1_07_024	p1c_L07.24	TWO		l	excluded:null-over-letter	no-truth (excluded:null-over-letter)
+atlas.tsv	TWO	p1_04_015	p1c_L04.15	TWO	DEE|ENN|TWO_S2	s	scored	OK
+atlas.tsv	TWO	p2L2_01_013	p2c_L02.14	TWO	DEE|ENN|TWO_S2	s	scored	OK
+atlas.tsv	TWO	p1_06_014	p1c_L06.14	TWO		l	excluded:null-over-letter	no-truth (excluded:null-over-letter)
+atlas.tsv	TWO	p1_04_023	p1c_L04.25	TWO	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	TWO	p1_06_011	p1c_L06.11	TWO	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	TWO	p1_02_013	p1c_L02.13	TWO	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	TWO	p1_06_015	p1c_L06.15	TWO	EIGHT|EIGHT_O|TWO|TWO_O	o	scored	OK
+atlas.tsv	XCURL	p2L1_01_021	p2c_L01.21	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	OK
+atlas.tsv	XCURL	p2L2_01_019	p2c_L02.20	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	OK
+atlas.tsv	XCURL	p1_06_019	p1c_L06.19	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	OK
+atlas.tsv	XCURL	p1_04_019	p1c_L04.20	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	OK
+atlas.tsv	XCURL	p1_07_020	p1c_L07.20	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	OK
+atlas.tsv	XCURL	p1_06_009	p1c_L06.9	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	OK
+atlas.tsv	XCURL	p2L1_01_032	p2c_L01.32	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	OK
+atlas.tsv	XCURL	p1_02_002	p1c_L02.2	XCURL	EIGHT_R|HOOK_R|XCURL	r	scored	OK
