@@ -1,0 +1,49 @@
+tokid	run	pos	passA	passB	settled	conf	note
+T001	R01	0	198	198	198	high	agree
+T002	R02	0	66	66	66	high	agree
+T003	R02	1	60	60	60	high	agree
+T004	R02	2	21	21	21	high	agree
+T005	R02	3	33	33	33	high	agree
+T006	R02	4	44	44	44	high	agree
+T007	R02	5	120	120	120	high	agree
+T008	R03	0	198	198	198	high	agree
+T009	R04	0	257	257	257	high	agree
+T010	R04	1	259	259	259	med	A 259? B 259; y-tailed last digit (4|9 glyph question as 254/257 on 0314; read 9 as in R05 29)
+T011	R05	0	46	46	46	high	agree
+T012	R05	1	66	66	66	high	agree
+T013	R05	2	55	55	55	high	agree
+T014	R05	3	44	44	44	high	agree
+T015	R05	4	16	16	16	high	agree
+T016	R05	5	21	21	21	high	agree
+T017	R05	6	29	29	29	high	agree
+T018	R05b	0	11	11	11	high	agree
+T019	R05b	1	80	80	80	high	agree
+T020	R06	0			9	med	A NONE (4? at edge) B NONE (4?); one y-tailed glyph + point, same form as the last digit of R05 29 and R08 29 (both passes 29)
+T021	R07	0	66	66	66	high	agree
+T022	R07	1	60	60	60	high	agree
+T023	R07	2	21	21	21	high	agree
+T024	R08	0	60	60	60	high	agree
+T025	R08	1	25	25	25	high	agree
+T026	R08	2	73	73	73	high	agree
+T027	R08	3	26	26	26	high	agree
+T028	R08	4	33	33	33	high	agree
+T029	R08	5	73	73	73	high	agree
+T030	R08	6	35	35	35	high	agree
+T031	R08	7	3	3	3	high	agree
+T032	R08	8	29	29	29	high	agree
+T033	R08	9	11	11	11	high	agree
+T034	R08	10	71	71	71	high	agree
+T035	R09	0	4		9	med	A 4? B NONE; one y-tailed glyph + point, as R06
+T036	R10	0	198	198	198	high	agree
+T037	R11	0	66	66	66	high	agree
+T038	R11	1	60	60	60	high	agree
+T039	R11	2	21	21	21	high	agree
+T040	R12	0	66	66	66	high	agree
+T041	R12	1	60	60	60	high	agree
+T042	R12	2	21	21	21	high	agree
+T043	R13	0	198	198	198	high	agree
+T044	R14	0	66	66	66	high	agree
+T045	R14	1	60	60	60	high	agree
+T046	R14	2	21	21	21	high	agree
+T047	R15	0	198	198	198	high	agree
+T048	R16	0	4		9	med	A 4? B NONE (e 9?); one y-tailed glyph + point, as R06

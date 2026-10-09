@@ -1,0 +1,59 @@
+key: key.tsv
+
+######## gloss pass G1 (deciding); spans 16
+== G1 row (a) letter runs (>= 2 codes), 0309: spans 8; code tokens 40; keyed 40
+S = 35/40 keyed (0.875); control (1000 permutations, seed 309): mean 3.90, p95 9, p99 12, max 15; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G1 row (n) name runs (1 code), 0309: spans 8; code tokens 8; keyed 8
+S = 5/8 keyed (0.625); control (1000 permutations, seed 309): mean 0.10, p95 0, p99 3, max 5; control >= real 9/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== G1 row (a-all) every span, 0474 statistic (continuity, not deciding), 0309: spans 16; code tokens 48; keyed 48
+S = 38/48 keyed (0.792); control (1000 permutations, seed 309): mean 4.82, p95 11, p99 14, max 20; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span G1 (code:op:gloss-letters; name rows: match 1/0):
+G1-R01	0309	Stan:	1/1	198=Stanislas
+G1-R02	0309	arnholt	5/6	66:match:a 60:match:r 21:match:n 33:match:o 44:match:l 120:miss:t
+G1-R03	0309	Stan:	1/1	198=Stanislas
+G1-R04	0309	R.deL.r: à Ryga	0/2	257:miss:rar 259:miss:yga
+G1-R05	0309	Jablonski:	8/9	46:miss:j 66:match:a 55:match:b 44:match:l 16:match:o 21:match:n 29:match:s 11:match:k 80:match:i
+G1-R06	0309	Ilgen	0/1	9=i
+G1-R07	0309	Arnh:	3/3	66:match:a 60:match:r 21:match:n
+G1-R08	0309	Razrozewski	10/11	60:match:r 25:match:a 73:match:z 26:match:r 33:match:o 73:match:z 35:match:e 3:match:w 29:match:s 11:match:k 71:miss:i
+G1-R09	0309	Ilg.	0/1	9=i
+G1-R10	0309	Stan:	1/1	198=Stanislas
+G1-R11	0309	arnh.	3/3	66:match:a 60:match:r 21:match:n
+G1-R12	0309	Arnh.	3/3	66:match:a 60:match:r 21:match:n
+G1-R13	0309	Stan:	1/1	198=Stanislas
+G1-R14	0309	arnh.	3/3	66:match:a 60:match:r 21:match:n
+G1-R15	0309	Stan:	1/1	198=Stanislas
+G1-R16	0309	Ilg.	0/1	9=i
+
+######## gloss pass G2 (reported beside G1); spans 16
+== G2 row (a) letter runs (>= 2 codes), 0309: spans 8; code tokens 40; keyed 40
+S = 36/40 keyed (0.900); control (1000 permutations, seed 309): mean 4.00, p95 9, p99 12, max 15; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (n) name runs (1 code), 0309: spans 8; code tokens 8; keyed 8
+S = 5/8 keyed (0.625); control (1000 permutations, seed 309): mean 0.06, p95 0, p99 1, max 5; control >= real 9/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== G2 row (a-all) every span, 0474 statistic (continuity, not deciding), 0309: spans 16; code tokens 48; keyed 48
+S = 39/48 keyed (0.812); control (1000 permutations, seed 309): mean 4.89, p95 11, p99 14, max 20; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span G2 (code:op:gloss-letters; name rows: match 1/0):
+G2-R01	0309	Stan:	1/1	198=Stanislas
+G2-R02	0309	arnhold	6/6	66:match:a 60:match:r 21:match:n 33:match:o 44:match:l 120:match:d
+G2-R03	0309	Stan:	1/1	198=Stanislas
+G2-R04	0309	R. de Pr. à Ilyen	0/2	257:miss:ail 259:miss:yen
+G2-R05	0309	Jablonski:	8/9	46:miss:j 66:match:a 55:match:b 44:match:l 16:match:o 21:match:n 29:match:s 11:match:k 80:match:i
+G2-R06	0309	Ilyen	0/1	9=i
+G2-R07	0309	Arnh:	3/3	66:match:a 60:match:r 21:match:n
+G2-R08	0309	Razrozewski	10/11	60:match:r 25:match:a 73:match:z 26:match:r 33:match:o 73:match:z 35:match:e 3:match:w 29:match:s 11:match:k 71:miss:i
+G2-R09	0309	Ilg.	0/1	9=i
+G2-R10	0309	Stan:	1/1	198=Stanislas
+G2-R11	0309	arnh.	3/3	66:match:a 60:match:r 21:match:n
+G2-R12	0309	Arnh.	3/3	66:match:a 60:match:r 21:match:n
+G2-R13	0309	Stan:	1/1	198=Stanislas
+G2-R14	0309	arnh.	3/3	66:match:a 60:match:r 21:match:n
+G2-R15	0309	Stan:	1/1	198=Stanislas
+G2-R16	0309	Ily.	0/1	9=i

@@ -1,0 +1,18 @@
+crop	codes	note
+R01	198	"de 198." only, no dot-separated run; 8 as loop with tail
+R02	66 60 21 33 44 120	
+R03	198	"e 198."
+R04	257 259?	second group last digit y-like tail, read 9; trailing mark at right edge is not a number
+R05	46 66 55 44 16 21 29	last group 29 (9 with tail)
+R05b	11 80	trailing mark after final dot is cut off, not readable
+R06	NONE	only word-like scrawl "Ibid"-like plus "4." at right edge; 4? possible: "4" then a dot and a cut-off mark
+R07	66 60 21	
+R08	60 25 73 26 33 73 35 3 29 11 71	25 could be 2s-shape 5; the 35 similar; trailing mark after 71 is a flourish
+R09	4?	single y/4-shaped glyph, could be 9
+R10	198	"de 198." followed by cut-off mark
+R11	66 60 21	a cut-off character follows the final dot
+R12	66 60 21	
+R13	198	
+R14	66 60 21	
+R15	198	
+R16	4?	single y/4-shaped glyph, could be 9

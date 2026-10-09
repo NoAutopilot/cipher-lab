@@ -1,0 +1,18 @@
+crop	codes	note
+R16	NONE	only "e 9?" style French/letter edge, no dotted numbers
+R15	198	single number, 1-9-8
+R14	66 60 21	
+R13	198	
+R12	66 60 21	
+R11	66 60 21	
+R10	198	
+R09	NONE	single "y"-like glyph (maybe 4 or 9?), not clearly a number
+R08	60 25 73 26 33 73 35 3 29 11 71	25 could be 21?; 29 last digit could be 24; final 71 followed by marks
+R07	66 60 21	
+R06	NONE	"4?" glyph at right edge, French word at left
+R05b	11 80	
+R05	46 66 55 44 16 21 29	last 29 could be 24 (hook shape)
+R04	257 259	
+R03	198	
+R02	66 60 21 33 44 120	
+R01	198	

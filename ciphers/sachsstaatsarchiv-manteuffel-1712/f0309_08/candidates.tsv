@@ -1,0 +1,7 @@
+code	key_value	key_grade	occurrences_0309	gloss_G1	gloss_G2	reading	status
+9	i	C	3 (R06, R09, R16; single y-tailed glyph, med)	Ilgen / Ilg. / Ilg.	Ilyen / Ilg. / Ily.	Krauske's own note to 9 is "Ilgen": this leaf uses 9 alone as the name Ilgen three times, glossed so on both blind passes	cross-witness for Krauske's note (name use of a letter code); key.tsv unchanged; row (n) scores it 0 by construction (notation, stated in PREREG)
+259	Ilgen	M	1 (R04 pos 1, y-tailed last digit, med)	(R04 run) R.deL.r: a Ryga	(R04 run) R. de Pr. a Ilyen	G2 places "a Ilyen" over 257.259 ("[le Roi de Prusse] a [Ilgen]"), G1 reads "a Ryga"	one blind pass only; held M, no grade change; a second witness for 259 = Ilgen, weak
+257	Le roi de Prusse	C	1 (R04 pos 0)	R.deL.r:	R. de Pr.	G2's "R. de Pr." = key value abbreviated (notation; row (a) letters cannot match an abbreviation)	consistent, not scored as C
+46	i	C	1 (R05 pos 0)	Jablonski	Jablonski	46 at gloss 'J' (i/j one letter in the period alphabet)	notation, not a conflict
+71	y	C	1 (R08 last)	Razrozewski	Razrozewski	71 = y at the gloss's final 'i' (-ski/-sky spelling)	notation, not a conflict
+120	d	C	1 (R02 last)	arnholt	arnhold	G2 matches d; G1's 't' is its own doubtful reading	consistent
