@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L35	52	{G loop}	M	yes	G-like loop sign with s tail at line end
+f102r_L35	53	NONE	M	yes	only a single comma-like mark after it, not two dots
+f102r_L36	1	g	M	yes	q/g-like sign at line start
+f102r_L36	2	y	M	yes	y with lead-in swash after first sign
+f102r_L36	35	{swash}	M	yes	long sweeping stroke joined to next m
+f102r_L36	39	y	L	yes	y-like swash before d p
+f102r_L37	4	{q}	M	yes	q-like sign with descender after dots
+f102r_L37	8	{boxed sign}	M	yes	square box with inner loop, one sign
+f102r_L37	9	NONE	M	yes	same boxed sign already counted
+f102r_L37	14	k	L	yes	p-then-loop k-like sign after p
+f102r_L37	15	f	L	yes	f-like with crossbar
+f102r_L37	16	f	L	yes	f-like before tall S
+f102r_L37	18	s	M	yes	short s after tall S
+f102r_L37	19	y	L	yes	y swash after s
+f102r_L37	27	y	L	yes	y swash before d p
+f102r_L37	34	NONE	M	yes	only two dots then #

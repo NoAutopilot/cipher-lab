@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L33	19	{swash}	M	yes	large tilde-like swash after Z
+f102r_L33	35	Z	M	yes	flat-topped Z-like before m g s
+f102r_L33	49	6	L	yes	loop sign after c, 6/b ambiguous
+f102r_L34	27	c	M	yes	small c after x before s
+f102r_L34	30	R	M	yes	R after s #
+f102r_L34	35	y	L	yes	m with hooked tail
+f102r_L34	36	f	M	yes	crossbar f, first of ff pair
+f102r_L34	37	f	M	yes	crossbar f, second of pair
+f102r_L34	43	NONE	L	yes	ampersand lies in plain-script text
+f102r_L35	1	{beta}	H	yes	looped beta-like first sign
+f102r_L35	3	y	M	yes	swash y after pi-like P
+f102r_L35	21	{dot}	M	yes	small dot between y and tz
+f102r_L35	23	6	L	yes	loop sign after tz, 6/b ambiguous
+f102r_L35	24	{swash}	M	yes	tilde swash after 6
+f102r_L35	29	t	M	yes	crossed t-like sign before 4
+f102r_L35	39	{dot}	M	yes	dot before 3
