@@ -1,0 +1,46 @@
+(a) No.9 share on clear FM entries 30-70 words: n=26 mean 0.034 p99 0.103
+row 5746/1 N=32 no1=0.188 no2=0.062 no9=0.000 | No.9 > null p99: False | No.9 hits: []
+  no1: H2 C0 I0 M0
+    Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on [South] side of [River] End end Thos T. Eckert
+  no2: H2 C0 I0 M0
+    Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on [Subsist (-ed, -ing)] side of [Subsistence] End end Thos T. Eckert
+  no9: H0 C0 I0 M0
+    Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on waxend side of windpipe End end Thos T. Eckert
+  no9shuf(seed 7): H0
+    Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on waxend side of windpipe End end Thos T. Eckert
+row 5576/1 N=32 no1=0.281 no2=0.219 no9=0.125 | No.9 > null p99: True | No.9 hits: ['vermont', 'midas', 'abbey', 'gertrude']
+  no1: H7 C0 I0 M0
+    [Maj Genl U.S. Grant] Horner New York for [100] Lee Chief detective [Pursue] Hays office [Maj Gen S. P. Heintzelman] will try & get a description period in mean time put the letter in office and [Surrender (-ed, -ing)] it period It will bring him I know he is expecting it signed [Cumberland] {time: 12.30} cloudy Geo D Sheldon
+  no2: H6 C0 I0 M0
+    [Imboden] Horner New York for William Lee Chief detective [Quarter Master] Hays office [Kelly B F] will try & get a description period in mean time put the letter in office and [Scatter (-ed, -ing)] it period It will bring him I know he is expecting it signed [Kentucky] {time: 12 noon AM} cloudy Geo D Sheldon
+  no9: H4 C0 I0 M0
+    John Horner New York for William Lee Chief detective [Brig. Gen.] Hays office [New York] will try & get a description period in mean time put the letter in office and watch it period It will bring him I know he is expecting it signed [B. F. Butler] {time: 12 noon} cloudy Geo D Sheldon
+  no9shuf(seed 7): H4
+    John Horner New York for William Lee Chief detective [Troops] Hays office [Roanoke (river)] will try & get a description period in mean time put the letter in office and watch it period It will bring him I know he is expecting it signed [Sec. of War] {time: 12 noon} cloudy Geo D Sheldon
+row 5581/1 N=30 no1=0.433 no2=0.300 no9=0.133 | No.9 > null p99: True | No.9 hits: ['relayed', 'wedge', 'warwicked', 'venus']
+  no1: H9 C0 I0 M0
+    Maj Eckert Di Our [Out post] near [Suffolk] was [Evacuate (-ed, -ing) - ion]ed in a hurry [Today] and [Retreat]ed to Bowers hill Homans left his Key behind and I sent him another [.] It is not thought the [Enemy] will [Attack (-ed, -ing)] the present [Position] have not heard Homans yet Geo D Sheldon
+  no2: H8 C0 I0 M0
+    Maj Eckert Di Our [( )] near [Natchez] was [Effect (-ed, -ing) [#]]ed in a hurry [Troops] and [Recruit]ed to Bowers hill Homans left his Key behind and I sent him another unity It is not thought the [Equipment] will [Abandon (-ed, -ing)] the present [Re-enforcements] have not heard Homans yet Geo D Sheldon
+  no9: H4 C0 I0 M0
+    Maj Eckert Di Our Turtle near Georgia was [Cavalry]ed in a hurry [Subsistence] and [Cut off]ed to Bowers hill Homans left his Key behind and I sent him another unity It is not thought the ridge will oats the present [Colonel] have not heard Homans yet Geo D Sheldon
+  no9shuf(seed 7): H4
+    Maj Eckert Di Our Turtle near Georgia was [River]ed in a hurry [Joe Johnston] and [Reinforcements]ed to Bowers hill Homans left his Key behind and I sent him another unity It is not thought the ridge will oats the present [Artillery] have not heard Homans yet Geo D Sheldon
+row 5570/0 N=36 no1=0.278 no2=0.361 no9=0.167 | No.9 > null p99: True | No.9 hits: ['vienna', 'midas', 'insanity', 'vernon', 'audit', 'clara']
+  no1: H9 C0 I0 M0
+    Geo W Baldwin Balto [Pontoon] mulford [Join (-ed, -ing)] [Maj Gen S. P. Heintzelman] [C. A. Dana] period the [Point] desires to know where A F Brengle has gone whom you brought down on [11] of truce boat answer immed'y to me one signed [Maj Genl U.S. Grant] I Davenport private secretary to [Rapidan] {time: 5.30 AM} Clear and Cool Geo D Sheldon
+  no2: H13 C0 I0 M0
+    Geo W [Crocker M M] Balto [Rebel] mulford [Move (-ed, -ing)] [Kelly B F] [Cheatham] period the [Reconnoissance] [Lookout Valley]'s to know where A F Brengle has gone whom you brought down on [Acton [sic, ? Action]] of truce boat answer immed'y to me one signed [Imboden] I [Hobson E.H.] private secretary to [Louisiana] {time: 5.30 AM} [Chickamauga Hill] and Cool Geo D Sheldon
+  no9: H6 C0 I0 M0
+    Geo W Baldwin Balto [Major] mulford swindle [New York] [Baltimore] period the [Maj. Gen.] desires to know where A F Brengle has gone whom you brought down on flag of truce boat answer immed'y to me one signed John I Davenport private secretary to [B. F. Butler] {time: 10.30 AM} Clear and Cool Geo D Sheldon
+  no9shuf(seed 7): H6
+    Geo W Baldwin Balto [Telegraphs] mulford swindle [Roanoke (river)] [Philadelphia] period the [Arkansas (river)] desires to know where A F Brengle has gone whom you brought down on flag of truce boat answer immed'y to me one signed John I Davenport private secretary to [Sec. of War] {time: 10.30 AM} Clear and Cool Geo D Sheldon
+row 5649/1 N=31 no1=0.161 no2=0.194 no9=0.032 | No.9 > null p99: False | No.9 hits: ['snow']
+  no1: H3 C0 I0 M0
+    Geo D Sheldon Ft. Monroe for [Philadelphia] asst Secy was Nanken that little party of pleasure to which you were invited will come off Wednesday evening Your friends most Ear next lie desire your presence the [80] Can hardly be Celebrated with own you signs Butler and H. N [Harass (-ed, -ing)]
+  no2: H3 C0 I0 M0
+    Geo D Sheldon Ft. Monroe for [McMinnville] asst Secy was Nanken that little party of pleasure to which you were invited will come off Wednesday evening Your friends most Ear next lie [Lookout Valley] your presence the marriage Can hardly be Celebrated with own you signs Butler and H. N [Intercept (-ed, -ing)]
+  no9: H1 C0 I0 M0
+    Geo D Sheldon Ft. Monroe for Fox asst Secy was Nanken that little party of pleasure to which you were invited will come off Wednesday evening Your friends most Ear next lie desire your presence the marriage Can hardly be Celebrated with own you signs Butler and H. N [Rebels]
+  no9shuf(seed 7): H1
+    Geo D Sheldon Ft. Monroe for Fox asst Secy was Nanken that little party of pleasure to which you were invited will come off Wednesday evening Your friends most Ear next lie desire your presence the marriage Can hardly be Celebrated with own you signs Butler and H. N [Equipage]

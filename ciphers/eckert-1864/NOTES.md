@@ -3374,3 +3374,36 @@ only the clerk's spelling.
   `variant: whiskey=Whisky` notes can go (E290's `:C` stays as the grade there).
 
 Found: both candidates read at every filed occurrence and beat their controls. Not found: a period No. 1 source giving Tulip = Period.
+## NO9-KEY (9 Oct 2026, account 1, LANE LEDGER worker)
+
+Controlled key test of Cipher No. 9 (key-no9.md, the mssEC 67 sample table) on five clean-fm.tsv rows whose best_book is 9,
+shortest 1864 rows with code words (5641/2 was skipped: it is clear; 5717/0 skipped: a route-jumbled entry the decoder does not
+handle). Script `fortmonroe/no9_key.py` (rows dumped by `no9_dump.py` to `no9_entries.txt`, output `no9_key.out`). Controls:
+(a) a share null that can differ from the target, the No. 9 share over 26 clear Fort Monroe entries of 30-70 words (mean 0.034,
+p99 0.103); (b) No. 9 with meanings shuffled (seed 7): the share is identical by construction, so only the decoded sense is compared.
+
+| row | date | share No.1 / No.2 / No.9 | No. 9 > null p99 | sense under No. 9 / No. 1 / No. 2 / No. 9 shuffled | book |
+|---|---|---|---|---|---|
+| 5570/0 | 10 Feb 1864, Sheldon to G. W. Baldwin, Balto | 0.278 / 0.361 / 0.167 | yes | yes / no / no / no | No. 9 |
+| 5576/1 | 1 Mar 1864, Sheldon to John Horner, NY | 0.281 / 0.219 / 0.125 | yes | partial (signed [B. F. Butler] {12 noon}; Vermont = [Brig. Gen.] odd) / no / no / no | No. 9 likely |
+| 5581/1 | 9 Mar 1864, Sheldon to Eckert | 0.433 / 0.300 / 0.133 | yes | no / yes ("Our [Out post] near [Suffolk] was [Evacuated] ... the [Enemy] will [Attack] the present [Position]") / no / no | No. 1 (label wrong) |
+| 5746/1 | 13 June 1864, Eckert to Sheldon | 0.188 / 0.062 / 0.000 | no | no / yes ("work on [South] side of [River]") / no / no | No. 1 (label wrong) |
+| 5649/1 | 3 May 1864, Snow to Sheldon | 0.161 / 0.194 / 0.032 | no | no / no / no / no | none of the three (mostly clear; "Nanken", "Ear next lie" unexplained) |
+
+Corroboration on the same leaf (p.26, pointer 5570): the two Baltimore replies (entries 1-2, not in the five) decode under No. 9 as
+"[B. F. Butler] [(Fort) Monroe] period Brengle is in this city I will find him and wait orders he lives in free derrick [Maryland]
+signed John E Mulford [Major] &c {6.30 PM}" and "[B. F. Butler] have just found Brengle will send him down tonight prisoners not yet
+arrived John E Mulford [Major] &c {9.30 AM}": two different code words (Village, Vienna) both give Major after Mulford, and Vienna
+gives Major again in 5570/0 ("[Major] Mulford"). Not graded here (readings are a later reader's job).
+
+Image check: pages 5570 and 5576 viewed whole at 1600 px by one eye (scratch, not committed): the transcription matches the image on
+every word of 5570/0-2 and 5576/1. 5581, 5746, 5649 transcription only.
+Clear-copy search (CONTENTdm CISOSEARCHALL, hdl token 13:52-13:55 UTC, 8 queries): brengle 1, davenport mulford 1, mulford brengle 1
+(all own 5570); bowers hill homans 1 (own 5581); william lee detective 1, horner detective 1 (own 5576); wistar heckman 0; waxend 35
+(other pointers, a common code word, not opened). No clear period copy at another pointer found for these rows, so no known-plaintext
+check of No. 9 itself was possible; not a statement that none exists.
+
+Rows ready for readers (IDs not filed): 5570/0, 5570/1, 5570/2 (No. 9), 5576/1 (No. 9, partial; key-no9.md is a sample table, so
+untabled words such as "swindle", "cloudy" need mssEC 67 pages read first); 5581/1 and 5746/1 for a No. 1 reader. Pattern to test next:
+the other Feb-Mar 1864 best_book-9 rows (5560/1 5562/2 5564/1 5571/0 5572/0 5572/1), the No. 9 vocabulary's own date range; the
+May-June rows labelled 9 here were not No. 9. The shuffled-meaning sense check is by eye on one seed (one reader); no print search was run.
