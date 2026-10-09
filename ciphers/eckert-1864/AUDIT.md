@@ -9190,7 +9190,7 @@ Fort Monroe, "Dealy" = operator. Requests: hdl.huntington.org 24 (19 dmQuery, 5 
 
 ## AUDIT (FV-FM8b)
 
-Verifier FV-FM8b (account 1, for LANE LEDGER), 9 Oct 2026, 11:16-11:5x UTC by `date -u`; a separate session from the reader FM-R5b (account 1),
+Verifier FV-FM8b (account 1, for LANE LEDGER), 9 Oct 2026, 11:16-11:43 UTC by `date -u`; a separate session from the reader FM-R5b (account 1),
 not protecting its conclusions. Scope: **E280, E281, E283, E284, E285** (NOTES "## FM-R5b"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger
 mssEC 25 = Huntington object 5952. Nothing decoded beyond key look-ups in key.md (`decode.load_key()`). Key source for all five: `period`. Depth
 under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
