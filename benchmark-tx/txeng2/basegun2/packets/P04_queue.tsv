@@ -1,0 +1,11 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+L21	1	uncertain	th | th		f 88x
+L21	7	disagree	t | +	34 g	f oo
+L21	11	uncertain	o | o	oo rf	b f
+L21	15	uncertain	Ol | Ol	f ps	
+L22	3	uncertain	o | o	34 60	m of
+L22	6	uncertain	q | q	m of	f BLOT
+L22	8	uncertain	BLOT | BLOT	q f	88 x+
+L22	11	uncertain	d6 | d6	88 x+	aab 7
+L23	15	uncertain	q | q	f m	f ps
+L24	17	uncertain	8 | 8	L g	

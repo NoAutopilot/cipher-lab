@@ -1,0 +1,59 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+L01	1	uncertain	x+ | x+		34 f
+L01	5	uncertain	53 | 53	f cc	34 f
+L01	15	uncertain	th | th	f ps	x sqt
+L02	12	uncertain	x_ | x_	7 f	f 88
+L03	8	uncertain	Ib | Ib	60 m	zz xb
+L04	4	uncertain	60 | 60	f cc	f 88
+L04	5	disagree	f | NEW:f-with-bars	cc 60	88 cc
+L04	11	uncertain	ps | ps	33 f	m x
+L04	14	uncertain	] | ]	m x	Ib
+L04	15	uncertain	Ib | Ib	x ]	
+L05	4	uncertain	01 | 01	cc aab	6 f
+L05	5	uncertain	6 | 6	aab 01	f aaa
+L05	8	uncertain	L | L	f aaa	phi m
+L05	14	uncertain	ps | ps	f oo	
+L06	13	uncertain	th | th	44 88x	
+L07	6	disagree	th | NEW:d-crossed	48 60	f or
+L08	10	uncertain	vi | vi	x_ x	f oo
+L08	16	uncertain	] | ]	hs f	Ib
+L08	17	uncertain	Ib | Ib	f ]	
+L09	8	uncertain	th | th	88x x	6 aa
+L09	12	uncertain	th | th	aa 44	ps 34
+L10	3	uncertain	b | b	60 f	f oo
+L10	14	uncertain	th | th	60 88x	f or
+L10	16	uncertain	or | or	th f	
+L11	1	disagree	x | x+		BLOT 88
+L11	2	uncertain	BLOT | BLOT	x	88 6
+L11	9	uncertain	6 | 6	] f	77 f
+L11	14	uncertain	Ib+ | Ib+	or Ib	f
+L11	15	uncertain	f | f	Ib Ib+	
+L12	2	disagree	xb | x	aa	q ob
+L12	5	uncertain	d6 | d6	q ob	x_ x
+L12	6	uncertain	x_ | x_	ob d6	x 44
+L13	11	uncertain	ob | ob	88x th	b f
+L13	12	uncertain	b | b	th ob	f or
+L14	12	uncertain	Ib | Ib	88x ps	33 rf
+L14	14	uncertain	rf | rf	Ib 33	f oo
+L15	12	uncertain	th | th	33 m	6 101
+L16	2	uncertain	ob | ob	88	oo b
+L16	4	uncertain	b | b	ob oo	f ps
+L17	10	uncertain	ut | ut	x+ aaa	aab f
+L18	1	uncertain	ob | ob		b x
+L18	2	uncertain	b | b	ob	x oo
+L18	5	uncertain	b | b	x oo	f m
+L18	9	disagree	t | -	m f	f ps
+L18	10	disagree	f | rf	f t	ps ]
+L19	13	uncertain	dd | dd	88 xr	
+L20	13	uncertain	67 | 67	ii b	Ib
+L20	14	disagree	Ib | tb	b 67	
+L21	1	uncertain	th | th		f 88x
+L21	7	disagree	t | +	34 g	f oo
+L21	11	uncertain	o | o	oo rf	b f
+L21	15	uncertain	Ol | Ol	f ps	
+L22	3	uncertain	o | o	34 60	m of
+L22	6	uncertain	q | q	m of	f BLOT
+L22	8	uncertain	BLOT | BLOT	q f	88 x+
+L22	11	uncertain	d6 | d6	88 x+	aab 7
+L23	15	uncertain	q | q	f m	f ps
+L24	17	uncertain	8 | 8	L g	

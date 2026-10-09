@@ -1,0 +1,9 @@
+line	col	A	B	flagged	crop
+L04	5	f	NEW:f-with-bars	AB	
+L07	6	th	NEW:d-crossed	AB	
+L11	1	x	x+	AB	
+L12	2	xb	x	A	
+L18	9	t	-	A	
+L18	10	f	rf	B	
+L20	14	Ib	tb	AB	
+L21	7	t	+	AB	
