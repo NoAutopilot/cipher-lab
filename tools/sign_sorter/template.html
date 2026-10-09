@@ -66,12 +66,12 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .fam .sub{color:var(--muted);font-size:.82rem;margin:0 0 10px}
 .pile{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:6px;padding:10px 12px;margin-top:10px;scroll-margin-top:var(--barh,110px)}
 .pile.flash{outline:3px solid var(--accent);outline-offset:2px}
-.pile.same{border-left:4px solid var(--ok)} .pile.merge{border-left:5px double var(--accent)} .pile.mark{border-left:4px dotted var(--ink)}
+.pile.same{border-left:4px solid var(--ok)} .pile.merge{border-left:4px double var(--accent)} .pile.mark{border-left:4px dotted var(--ink)}
 .ph{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
 .pid{font-family:var(--f-mono);font-weight:600;font-size:.95rem}
 .cnt{color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums}
 .chip{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;padding:1px 7px;border-radius:10px;background:var(--line);color:var(--ink)}
-.chip.same{background:var(--tint-sky);color:var(--on-tint);border:1px solid var(--ok)} .chip.merge{background:var(--accent-soft);color:var(--ink);border:2px double var(--accent)} .chip.mark{background:var(--tint-yellow);color:var(--on-tint);border:1px dotted var(--on-tint)}
+.chip.same{background:var(--tint-sky);color:var(--on-tint);box-shadow:inset 0 0 0 1px var(--ok)} .chip.merge{background:var(--accent-soft);color:var(--ink);box-shadow:inset 0 0 0 1px var(--accent),inset 0 0 0 3px var(--accent-soft),inset 0 0 0 4px var(--accent)} .chip.mark{background:var(--tint-yellow);color:var(--on-tint);outline:1px dotted var(--on-tint);outline-offset:-2px}   /* borders drawn inside: no chip changes size */
 .ph .big{margin-left:auto;font-size:.8rem;padding:2px 8px}
 .tiles{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
 /* tiles: tap and hold, never select text, show a callout or drag the picture */
@@ -81,7 +81,7 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .t.pressing{transform:scale(.92);border-color:var(--accent)}
 .t.out{border:2px dashed var(--bad)}
 .t.out img{opacity:.35}
-.t.fq{border:3px double var(--accent)}
+.t.fq{border:2px solid var(--accent);box-shadow:inset 0 0 0 2px var(--tile),inset 0 0 0 3px var(--accent)}   /* double frame, same size as the dashed one it replaces */
 .t .badge{position:absolute;top:1px;right:1px;min-width:18px;height:18px;border-radius:9px;padding:0 3px;
   font:700 12px/18px var(--f-body);text-align:center;background:var(--ink);color:var(--bg)}
 .t.fq .badge{background:var(--accent);color:var(--bg)}
