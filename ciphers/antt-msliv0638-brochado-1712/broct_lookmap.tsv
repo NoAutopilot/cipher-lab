@@ -1,0 +1,15 @@
+look	label	glyph_id	description
+A	1	D3_m0286_fslash	decoy: slashed f (s)
+A	2	T1_m0281_c15_p78	appendix crossed t, Carta 15 idx78
+A	3	D2_m0281_7	decoy: code 7 (e)
+A	4	T2_m0281_c15_p83	appendix crossed t, Carta 15 idx83
+A	5	T3_m0286_c74_p49	appendix crossed t, Carta 74 idx49
+A	6	D4_m0286_20	decoy: code 20 (l)
+A	7	D1_m0281_4	decoy: code 4 (s), crossed
+B	1	T2_m0281_c15_p83	appendix crossed t, Carta 15 idx83
+B	2	T3_m0286_c74_p49	appendix crossed t, Carta 74 idx49
+B	3	T1_m0281_c15_p78	appendix crossed t, Carta 15 idx78
+B	4	D4_m0286_20	decoy: code 20 (l)
+B	5	D3_m0286_fslash	decoy: slashed f (s)
+B	6	D1_m0281_4	decoy: code 4 (s), crossed
+B	7	D2_m0281_7	decoy: code 7 (e)
