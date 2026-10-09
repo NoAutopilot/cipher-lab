@@ -1,0 +1,5 @@
+aa962d381c2845f30 api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 69136, 'cache_read_input_tokens': 325629, 'output_tokens': 1352}
+abef8942530d83b7b api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 72615, 'cache_read_input_tokens': 325817, 'output_tokens': 4459}
+ad2a11f67b9bc0024 api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 69303, 'cache_read_input_tokens': 325817, 'output_tokens': 1142}
+aed89ab9b48f6a460 api_calls 8 {'input_tokens': 16, 'cache_creation_input_tokens': 76779, 'cache_read_input_tokens': 740715, 'output_tokens': 6497}
+a1de447fb61758dd8 api_calls 6 {'input_tokens': 12, 'cache_creation_input_tokens': 77146, 'cache_read_input_tokens': 530964, 'output_tokens': 10233}

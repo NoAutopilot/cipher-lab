@@ -1,0 +1,47 @@
+line	seg	order	gloss	signs	note
+L02	s2	1	CLEAR:et	-	clear word before the cipher
+L02	s2	2	ma	Z v y a	boundary between ma and dit is approximate; y is a Y/psi with a cross stroke
+L02	s2	3	dit	f 3 L z	last sign could be 3; boundary approximate
+L03	s1	1	auoit	II 4 a c y	4 is the open-triangle form; the gloss sits right of the first signs, so the split is by order/position and approximate
+L03	s1	2	veu	p w m	m has a z-tail
+L03	s1	3	dassister	o a # 1 . sq 0 0 f 3	second a is alpha-like; boundary approximate
+L03	s1	4	a	c	single gloss letter; the sign under it is uncertain
+L03	s1	5	geneue	1 . 4 9 1 . f 4 0 0'	the gloss ends with an f-like or + mark (an unexpanded sign?); 9 could be a q shape
+L03	s2	6	deux	# 0 m sq	
+L03	s2	7	milions	z p 4 + 1 NEW:c-with-tail f	the c-with-tail (ç-like) sign could be a variant of y
+L03	s2	8	dor	sq 3 y	
+L03	s2	9	despagne	w # 0 sq 0 v 1 9 4 0	the gloss stops before the last 5-6 signs; no gloss is visible above "0 v 1 9 4 0"; 4 has an overbar (could be 4')
+L03	s2	10	CLEAR:Il ha laisse	-	
+L03	s2	11	+	NEW:c-with-tail #	a high + above, probably an unexpanded mark; # could be t (double-crossed dagger)
+L03	s2	12	a	v	followed by a dot (.) at the end of the line
+L04	s1	1	bestinon	-:- 0 0 4 f # y 4'	gloss reading uncertain (could be besancon); the last sign is 4 or r with an overbar
+L04	s1	2	quarante	a a c v w 4 f v'	second a is alpha-like; v' is v with a stroke or dot above
+L04	s1	3	onq	0 # 1 f	gloss looks like "onq" or "cinq"; boundary approximate
+L04	s1	4	+	a	unexpanded mark
+L04	s1	5	|	Z	unexpanded mark
+L04	s1	6	mille	m 4 0 v sq	gloss partly unclear (mellep?)
+L04	s1	7	chargez	# T v w 9 1 . sq	9 could be o
+L04	s1	8	qui	a m 1	
+L04	s2	9	doibt	# y p m o	p is written xp-like
+L04	s2	10	eugl	f z NEW:h-shape y	gloss illegible (cuyl/eugl/estre?); the h-like sign is unclear and could be m or a ligature
+L04	s2	11	pewtr	v c v L c	gloss reading uncertain (pouuoir/porter?); boundary approximate
+L04	s2	12	dam	# NEW:R-with-crossbar t z	gloss could be dans; t is the dagger form; z could be 3
+L04	s2	13	+lon	w y p sq	the line ends in a dash (filler)
+L05	s1	1	Iouir	1 NEW:c-with-tail m w 0'	gloss reading uncertain
+L05	s1	2	+	0	could be +i+; mark unexpanded
+L05	s1	3	|	v'	
+L05	s1	4	prendre	0' w 1 . f 3 c 0	first sign is an o with an ascender (0'?)
+L05	s1	5	la	4 1	
+L05	s1	6	cheuaus	# T 1 z p f #	gloss reading uncertain (chenaus/cheuaux?)
+L05	s1	7	de	1 . m	
+L05	s1	8	+	o	unexpanded mark
+L05	s1	9	bessoin	0' y a f v 1	gloss reads "bessoun"
+L05	s2	10	a	NEW:r-overbar-with-dagger-below	composite sign: r/4 with an overbar and a dagger hanging below
+L05	s2	11	tiance	z 0' a a 1 .	z could be 3; gloss reading uncertain
+L05	s2	12	qui	# 0 f	gloss is followed by a comma
+L05	s2	13	|	v'	unexpanded mark (vertical with a cross)
+L05	s2	14	vne	# x 1	x could be T
+L05	s2	15	cheuaune	m v a sq 3 1 . 0'	gloss illegible (chemane/cheuance?); boundary approximate
+L05	s2	16	de	# y	
+L05	s2	17	flore	c NEW:n-shape 1 :	gloss partly lost; n-shape could be m; ":" is two dots after the last sign
+L05	s2	18	CLEAR:Crema	-	clear closing word, could be Cremona
