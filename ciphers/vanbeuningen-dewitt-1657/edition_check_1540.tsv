@@ -1,0 +1,10 @@
+scan	letter_date	endorsement	cipher	printed	printed_clear_over_cipher	evidence
+0036	13 Maart 1658 (dateline, eye 1400px)	none read	yes (11 groups + interlinear gloss, right page)	yes p.423 (13 Maart 1658) + fn 2	yes, as paraphrase (fn 2 gives the gist of the cipher letter's passage; the letter itself cited as R.A. S.G. 7270, to the griffier); full gloss comparison not done: M	w1400_..0036.jpg; images/dewitt_01_423.jpg
+0085	12 Maey 1658 (eye 1400px)	none read	no (prose both pages)	yes p.430 (12 mei 1658), by date only	n/a	w1400_..0085.jpg
+0113	2 Julij 1658 st.n. (eye 1400px)	none read	no (prose, marginal notes left)	yes p.439 (2 juli 1658), by date only	n/a	w1400_..0113.jpg
+0092	May 1658, day unread (19 or 26; 1000px)	none read	no	unknown (p.431 or p.433)	n/a	w1000_..0092.jpg
+0099	Juny 1658, day unread (probably 29; 1000px)	none read	no	unknown (p.438 candidate)	n/a	w1000_..0099.jpg
+0064	24 April 1658	Missive ... van Beuningen ... Coppenhage 24 April 1658	not seen (strip only)	yes p.426 by date	unknown	VB-SCREEN2 sample strip
+0120	19 July 1658	Missive ... 19 July 1658	not seen (strip only)	no printed list entry for 19 Jul 1658 (list: 10, 20, 24 Jul)	unknown	VB-SCREEN2 sample strip
+0134	6 Aug 1658	Missive ... 6 Aug 1658	not seen (strip only)	no printed list entry for 6 Aug 1658 (list: 3 and 7 Aug)	unknown	VB-SCREEN2 sample strip
+0022,0029,0043,0050,0057,0071,0078,0106,0127	not read	none read	no groups seen at 1000px strips (0043 French enclosure, 0071 'Duplicaet' head)	not matched	n/a	VB-SCREEN2 sample strip, top 20% only
