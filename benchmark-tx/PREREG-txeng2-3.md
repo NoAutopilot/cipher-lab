@@ -47,3 +47,23 @@ and per arm the subagent-reported input/output token counts as the cost proxy ->
 reported beside the first campaign's figures (TRANSCRIPTION.md target 8).
 
 Costs: R2 3, X7 7, X12 6, X13 6, X8 8 = 30. No eval look in this round.
+
+## X2b Pair classifier calibrated on the hand's OWN ink (TXE2-PAIR2; Opus 5.5; cap 5; read-free; added 17:2x UTC, before any score)
+Nearest prior: X2 / TXE2-PAIR (secure tiles of other leaves, LOLO 0.95-1.00, dev 1/11 wrong way; its own reading: "a no.87-domain
+calibration set would be a different instrument"), MQS-CLASSIFY-ROUNDS (whole-inventory retrain on owner piles). What is
+different: the training tiles are no.87's own dev_tune boxes with their truth value (new information: the hand's ink at the
+scan scale where the errors live), trained LEAVE-ONE-LINE-OUT across the 12 dev_tune lines (a line's own tiles never train the
+classifier that votes on it), the same feature set and pair list as X2, threshold per pair from the leave-one-line-out margin
+curve on the 11 training lines; applied only at positions whose L sign is a pair member, override above threshold. Dev gate
+paired fixed > broken p < 0.05 vs L_dev_tune. Controls: (a) permuted truth labels within pair (5 seeds) must not pass; (b) the
+X2 secure-tile classifier's result reported beside. If dev passes: train on ALL dev_tune lines, apply to eval_heldout, commit
+the file, do NOT score it (the lane spends the look). Amendment 1 item (4): this brings new information (the hand's own
+labelled ink), not a re-weighting of the same passes. The truth column of no87_box_token.tsv / the truth file is read ONLY
+by the training step for the training lines and by tx_bench at scoring; never by the apply step.
+
+## N1 Colour master of no.87 (M25 / O4, deferred): Gallica probe at 17:2x UTC 9 Oct answered <code below>; a colour fetch is
+allowed from 10 Oct 00:00 UTC (lane rule 7). If it answers then: one `iiif_lines.py --ark ark:/12148/btv1b9060248g --canvas
+182/183/184` fetch at native colour, then tx_prep.py channel/sep/false and tx_recovery.py bleed-through under the read-free atlas
+proxy (the TXE-D harness), ONE blind read of dev_tune at the best rendering paired vs pass A, dev gate p < 0.05. Nearest prior:
+O1/O2/O4/M4 (TXE-D, greyscale sources: a non-test for colour), O5 (TXE-G). What is different: a colour source where every prior
+rendering test was greyscale by construction.
