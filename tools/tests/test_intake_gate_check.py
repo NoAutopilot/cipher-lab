@@ -55,7 +55,7 @@ check_real("antt-linhares-chave", 0, "blocked")
 # this fix `closed-negative` was unrecognised, so find_verdict fell through to the stale `open`
 # correction lower in the file; this is the exact real-repo case of the bug this fix targets.
 check_real("thurloe-barriere-1654", 0, "closed-negative")
-check_real("colbert26-lathuillerie-1644", 0, "open")
+check_real("colbert26-lathuillerie-1644", 0, "partial")  # status open -> partial; expectation updated 9 Oct 2026 (ANON-PILE-RULE)
 
 # two real-repo `partial` verdicts with a citation right on the verdict line -- must pass, exit 0
 # (these were exiting 1 as ambiguous before partial was gated like open, 25 Sept 2026)
@@ -172,15 +172,16 @@ print(("PASS" if ok else "FAIL"), "synthetic open-unreadable-is-not-unread", f"-
 # "not read cover to cover" -- the established repo idiom for a compliant full-text/phrase-search
 # citation (CLAUDE.md's gate names "the pages or full-text search actually read" as sufficient), not
 # an inaccessible edition. Must keep passing at exit 0, not trip the new "not read" negative match.
-check_real("huntington-luzerne-destouches-1781", 0, "open")
+check_real("huntington-luzerne-destouches-1781", 0, "found-solved")  # status moved to found-solved; updated 9 Oct 2026 (ANON-PILE-RULE)
 # 2 Oct 2026 (RETRO-2026-10-02-account4 proposal 2): the two Lambeth folders carry `Status: open` on line 3 with
 # their check-solved citation ("not read cover to cover") only at line 61 / line 49 -- the head-only rule now reads
 # the line-3 word and finds no citation within CONTEXT_LINES of it, exit 1, where it used to skip to the cited
 # `**open.**` lower down. That is the rule working (rule 5: the status word and its citation sit in the head);
 # the folders need their citation carried up beside the status line (a check-solved/GAPS edit, not this tool's).
 # The idiom itself stays pinned by the synthetic case below.
-check_real("lambeth-bacon-649", 1, "open (line 3)")
-check_real("lambeth-casenowe-1586", 1, "open (line 3)")
+# 9 Oct 2026 (ANON-PILE-RULE): both folders have since carried their citation up beside line 3, so they now pass.
+check_real("lambeth-bacon-649", 0, "open (line 3)")
+check_real("lambeth-casenowe-1586", 0, "open (line 3)")
 
 # synthetic: pin the same idiom directly against the negative-phrase regex
 SYNTH_OPEN_NOT_READ_COVER_TO_COVER = (
@@ -425,3 +426,39 @@ code, message = gate.check(BASE.replace("open\n", "found-solved\n", 1))
 assert code == 0 or "Premise" not in message, (code, message)
 print("premise-check tests: ok")
 
+
+# Anonymous-pile path (9 Oct 2026, ANON-PILE-RULE, ASKS 158): holder-based check-solved replaces the edition citation
+# for an unattributed pile; an attributed target cannot use it.
+SECTIONS = WEBP + "\n## Premise check (w, 9 Oct 2026)\n(a) not found (b) not found (c) not found (d) none: no recipient\n"
+HOLDER_OK = ("open\n- **Pile:** anonymous\n- **Holder:** BnF, Français 3029, ff. 12-48, glyph set A (Greek-letter homophones)\n"
+             "Check-solved by holder: DECODE, Cryptiana GL.htm and the unsolved lists, dbourdeau/cyphersolver and "
+             "aaymeloglu/unsolved-ciphers checked, the BnF notice (Présentation, Bibliographie) read; no decipherment.\n"
+             "Edition step: deferred until a sender is named.\n")
+anon_cases = [
+    # must NOT block: a complete holder-based citation on a marked anonymous pile
+    ("anon-pile holder citation complete", HOLDER_OK + SECTIONS, 0, "anonymous pile"),
+    # the verdict-line phrase marks the pile too
+    ("anon-pile marked by verdict phrase", HOLDER_OK.replace("- **Pile:** anonymous\n", "unattributed pile, mostly cipher\n") + SECTIONS, 0, "anonymous pile"),
+    # must catch: an anonymous pile naming no holder-side sources
+    ("anon-pile with no holder sources", "open\n- **Pile:** anonymous\nA pile of cipher letters.\n" + SECTIONS, 1, "DECODE"),
+    ("anon-pile missing deferral and repos", HOLDER_OK.replace("Edition step: deferred until a sender is named.\n", "")
+     .replace("dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers checked, ", "") + SECTIONS, 1, "unsolved-ciphers"),
+    # still needs the web/blog and premise sections
+    ("anon-pile without premise section", HOLDER_OK + WEBP, 1, "Premise check"),
+    # a pasted gate line naming the sources does not count
+    ("anon-pile sources only in a fenced paste", "open\n- **Pile:** anonymous\n```\n" + HOLDER_OK + "```\n" + SECTIONS, 1, "anonymous pile"),
+    # must catch: an attributed target trying the holder path
+    ("attributed target deferring the edition", HOLDER_OK.replace("- **Pile:** anonymous\n", "- **Sender:** Paul de Foix\n") + SECTIONS, 1, "holder path is for anonymous piles"),
+    ("pile marker beside a named sender", HOLDER_OK.replace("- **Pile:** anonymous\n", "- **Pile:** anonymous\n- **Sender:** Paul de Foix\n") + SECTIONS, 1, "a sender is named"),
+    # must NOT block: an attributed target with a full edition citation (unchanged behaviour)
+    ("attributed target with edition citation", BASE + "\n## Premise check (w)\n(a) none\n", 0, "edition/page or full-text-search citation"),
+]
+for name, text, want, needle in anon_cases:
+    code, message = gate.check(text)
+    ok = code == want and needle in message
+    fails += not ok
+    print(("PASS" if ok else "FAIL"), "synthetic", name, f"-> code={code} message={message[:110]!r}")
+if fails:
+    print(f"{fails} failure(s)")
+    sys.exit(1)
+print("anon-pile tests: ok")

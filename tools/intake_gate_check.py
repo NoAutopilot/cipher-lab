@@ -76,6 +76,19 @@ heading inside a fenced paste; a heading with nothing under it but pasted gate o
 "## Web and blog check" section that also quotes an earlier gate FAIL inside it, and the same for "## Premise
 check". Offline tests: tools/tests/test_intake_gate_check.py.
 
+Anonymous-pile path (9 Oct 2026, ANON-PILE-RULE; owner's yes on ASKS 158, CLAUDE.md Pipeline 2 "Anonymous piles"): an
+unattributed, undated, mostly-cipher pile has no sender and so no edition to cite. A target whose NOTES.md head
+(first STATUS_HEAD_LINES lines) carries `- **Pile:** anonymous`, or whose verdict window says "anonymous pile" /
+"unattributed pile", passes the citation step on a HOLDER-based check-solved instead: the window or a "## Check-solved"
+section names a folio range, the glyph set, DECODE, Cryptiana (GL.htm / the unsolved lists), both solver repositories
+(cyphersolver and unsolved-ciphers) and the holder's own notice as read, and records the edition step as "deferred until
+a sender is named". The web/blog and Premise check sections and the not-read test still apply unchanged.
+Must catch: an anonymous pile whose verdict names no holder-side sources read (exit 1, the missing items listed); an
+attributed target -- no pile marker, or a pile marker beside a head `Sender:` line naming someone -- trying to use the
+holder path ("deferred until a sender is named" with no edition citation: exit 1, the normal gate applies).
+Must NOT block: an attributed target with a full edition citation (behaviour unchanged). Offline tests:
+tools/tests/test_intake_gate_check.py ("anon-pile" cases).
+
 Usage:
   tools/intake_gate_check.py <target>
     <target> is either a path (ciphers/<name>) or a bare target name under ciphers/.
@@ -314,6 +327,59 @@ def has_premise_check(notes_text):
     return _has_section(notes_text, PREMISE_HEADING_RE)
 
 
+
+# Anonymous-pile path (9 Oct 2026, ANON-PILE-RULE, ASKS 158). See the module docstring.
+PILE_MARK_RE = re.compile(r'^[\s\-*>]*[*_]*pile[*_]*\s*:?[\s*_]*anonymous\b', re.IGNORECASE)
+PILE_PHRASE_RE = re.compile(r'\b(?:anonymous|unattributed)\s+pile\b', re.IGNORECASE)
+SENDER_LINE_RE = re.compile(r'^[\s\-*>]*[*_]*sender[*_]*\s*:[\s*_]*(.*)$', re.IGNORECASE)
+NO_SENDER_RE = re.compile(r'^\s*(?:$|-+\s*$|\?+|(?:none|unknown|anonymous|unattributed|n/?a|not named|none named)\b)', re.IGNORECASE)
+DEFERRED_RE = re.compile(r'deferred until a sender is named', re.IGNORECASE)
+CHECK_SOLVED_HEADING_RE = re.compile(r'^\s*#+\s*Check-solved\b', re.IGNORECASE)
+FOLIO_RANGE_RE = re.compile(r'\bff?\.\s?\d+\s*[rv]?\s*[-\u2013]\s*\d+|\bfolios?\s+\d+\s*[rv]?\s*[-\u2013]\s*\d+'
+                            r'|\bfo\.\s?\d+\s*[rv]?\s*[-\u2013]\s*\d+', re.IGNORECASE)
+HOLDER_SOURCES = (
+    ("folio range", lambda t: bool(FOLIO_RANGE_RE.search(t))),
+    ("glyph set", lambda t: "glyph set" in t.lower()),
+    ("DECODE", lambda t: bool(re.search(r'\bDECODE\b|de-crypt\.org', t))),
+    ("Cryptiana (GL.htm / unsolved lists)", lambda t: "cryptiana" in t.lower()),
+    ("cyphersolver", lambda t: "cyphersolver" in t.lower()),
+    ("unsolved-ciphers", lambda t: "unsolved-ciphers" in t.lower()),
+    ("holder's notice", lambda t: bool(re.search(r'\bnotice\b|pr[ée]sentation|finding[- ]aid', t, re.IGNORECASE))),
+    ("edition step 'deferred until a sender is named'", lambda t: bool(DEFERRED_RE.search(t))),
+)
+
+
+def pile_status(lines, idx):
+    """('anonymous', None) when the head marks an anonymous pile and names no sender; ('attributed', sender)
+    when a pile marker sits beside a head Sender: line naming someone; (None, None) when not a pile."""
+    head = lines[:STATUS_HEAD_LINES]
+    marked = any(PILE_MARK_RE.match(l) for l in head) or bool(PILE_PHRASE_RE.search(nearby_context(lines, idx)))
+    if not marked:
+        return None, None
+    for l in head:
+        m = SENDER_LINE_RE.match(l)
+        if m and not NO_SENDER_RE.match(m.group(1).strip(" *_")):
+            return "attributed", m.group(1).strip(" *_")
+    return "anonymous", None
+
+
+def holder_citation_text(lines, idx):
+    """The verdict window plus any '## Check-solved' section, quoted gate output removed."""
+    clean = unquoted_lines("\n".join(lines))
+    parts = [nearby_context(clean, idx)]
+    for i, line in enumerate(clean):
+        if CHECK_SOLVED_HEADING_RE.match(line):
+            for body in clean[i + 1:]:
+                if ANY_HEADING_RE.match(body):
+                    break
+                parts.append(body)
+    return "\n".join(parts)
+
+
+def missing_holder_sources(text):
+    return [name for name, test in HOLDER_SOURCES if not test(text)]
+
+
 def resolve_target(target):
     if os.path.isdir(target):
         return target
@@ -353,7 +419,24 @@ def check(notes_text, require_web=True, require_premise=None):
                 f"{word} (line {idx + 1}) names an edition not read ({neg!r} within {CONTEXT_LINES} lines) -- "
                 f"CLAUDE.md's Pipeline intake gate says this must read `blocked` instead"
             )
-    if has_citation_evidence(context):
+    pile, sender = pile_status(lines, idx)
+    holder_ok = False
+    if pile == "anonymous":
+        missing = missing_holder_sources(holder_citation_text(lines, idx))
+        if missing:
+            return 1, (
+                f"{word} (line {idx + 1}) is an anonymous pile but its holder-based check-solved does not name: "
+                f"{', '.join(missing)} -- CLAUDE.md Pipeline 2 'Anonymous piles' (ASKS 158); otherwise `blocked`"
+            )
+        holder_ok = True
+    elif not has_citation_evidence(context) and DEFERRED_RE.search("\n".join(unquoted_lines(notes_text))):
+        why = (f"a sender is named ({sender!r})" if pile == "attributed"
+               else "the head carries no '- **Pile:** anonymous' marker")
+        return 1, (
+            f"{word} (line {idx + 1}) defers the edition step but {why} -- the holder path is for anonymous piles "
+            f"only; the normal gate applies: name the standard edition and the pages or full-text search read"
+        )
+    if holder_ok or has_citation_evidence(context):
         if require_web and not has_web_blog_check(notes_text):
             return 1, (
                 f"{word} (line {idx + 1}) has an edition citation but no logged open-web and blog-comment check "
@@ -368,7 +451,9 @@ def check(notes_text, require_web=True, require_premise=None):
                 f"section -- run check-solved.md's adversarial Premise check (mentioned decipherments opened, other "
                 f"solvers' working files, neighbouring leaves, recipient-side editions) before any first test"
             )
-        msg = f"{word} (line {idx + 1}) -- edition/page or full-text-search citation found within {CONTEXT_LINES} lines"
+        msg = (f"{word} (line {idx + 1}) -- anonymous pile: holder-based check-solved citation found, edition step deferred"
+               if holder_ok else
+               f"{word} (line {idx + 1}) -- edition/page or full-text-search citation found within {CONTEXT_LINES} lines")
         for w in soft_warnings(context):
             msg += f"\n{w}"
         return 0, msg

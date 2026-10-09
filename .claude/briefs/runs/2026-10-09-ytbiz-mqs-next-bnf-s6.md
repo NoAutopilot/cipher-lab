@@ -14,3 +14,4 @@ gate into a pre-registration (`tools/tests/PREREG-MQS-BNF-S6.md`, pushed before 
   or the private repository; no Birago 1572 family value-bearing page for the owner while ASKS 118 is open.
 - **Credit (CLAUDE.md rule 8):** Lasry, Biermann and Tomokiyo 2023 (Cryptologia 47:2) p.101-109, 191; ours
 - **Common rules:** as in `2026-10-09-acct3-mqs-sheets.md` ("Common rules"), with this job's name MQS-BNF-S6.
+- **Precondition met (9 Oct 2026 21:1x UTC, ANON-PILE-RULE):** ASKS 158 answered yes by the owner; the anonymous-pile intake path is in CLAUDE.md Pipeline 2 and tools/intake_gate_check.py (mark the target `- **Pile:** anonymous`); re-queued as MQS-BNF-S6b.
