@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>How to read this</title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#55565c;--rule:#d9d6cf;--card:#ffffff;--accent:#0b3d91;--accent2:#8a4b00;--tint:#eef2fa}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;
+ --card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}}
+:root[data-theme="dark"]{--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;--card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.3rem;margin:1.8em 0 .5em;border-bottom:1px solid var(--rule);padding-bottom:.2em}
+h3{font-size:1.05rem;margin:1.2em 0 .3em}
+a{color:var(--accent)}
+nav.top{font:14px/1.4 system-ui,sans-serif;display:flex;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.lede{color:var(--muted);max-width:44em}
+.mock{font:13px/1.4 system-ui,sans-serif;border:2px dashed var(--accent2);color:var(--fg);padding:8px 12px;margin:12px 0}
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:16px 0}
+.count{background:var(--card);border:1px solid var(--rule);padding:10px 12px}
+.count b{display:block;font-size:1.7rem;font-family:system-ui,sans-serif}
+.count span{font:13px/1.35 system-ui,sans-serif;color:var(--muted)}
+.item{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:10px 14px;margin:10px 0}
+.item h3{margin:0 0 4px}
+.meta{font:13px/1.45 system-ui,sans-serif;color:var(--muted);margin:2px 0}
+.meta b{color:var(--fg);font-weight:600}
+.gist{margin:6px 0 0}
+.gist em{font:12px system-ui,sans-serif;color:var(--muted);font-style:normal}
+blockquote{margin:8px 0;padding:8px 12px;background:var(--tint);border-left:4px solid var(--accent2)}
+dl{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:6px 14px;font:14px/1.45 system-ui,sans-serif}
+dt{color:var(--muted)} dd{margin:0;overflow-wrap:anywhere}
+.small{font:13px/1.45 system-ui,sans-serif;color:var(--muted)}
+details summary{cursor:pointer;color:var(--accent);font:14px system-ui,sans-serif}
+section.page{border-top:3px double var(--rule);margin-top:40px;padding-top:8px}
+@media (max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:6px}h1{font-size:1.5rem}}
+</style></head><body><main><nav class="top"><a href="index.html">Catalogue</a><a href="how-to-read.html">How to read this</a><a href="credits.html">Credits</a><a href="https://github.com/NoAutopilot/cipher-lab/tree/main/">Repository</a></nav><p class="mock">Mock-up for review, generated 9 October 2026 from the repository's audit files. Not published, not linked from anywhere; wording and layout are for the owner to judge.</p><h1>How to read this catalogue</h1>
+<h2>Search result (N0 to N5)</h2><p>Before a reading is described anywhere as new, a separate session, not the one that made the
+reading, searches for it in print: the standard editions and calendars, the writer's and recipient's printed correspondence, the
+holding archive's catalogue, full-text libraries and the scholarship indexes. It logs every source family it searched. The class
+records what that search found; it is a search result, never a claim of discovery.</p><dl><dt>N0</dt><dd>Already known: this item&#x27;s plain text and its decipherment were already on record.</dd><dt>N1</dt><dd>Plain text already in print; our reading is an independent re-decipherment.</dd><dt>N2</dt><dd>Plain text known elsewhere; no earlier mapping of this cipher text to it was found.</dd><dt>N3</dt><dd>No earlier plain text or decipherment located after a logged search.</dd><dt>N4</dt><dd>No prior decipherment located; the principal editions, catalogues and project pages were searched (unpublished or archival work is not excluded).</dd><dt>N5</dt><dd>Confirmed by the holding archive or a specialist.</dd></dl>
+<p>A reading is counted in the catalogue's headline figures only after two such audits, and only from depth D2 up.</p>
+<h2>Depth (D0 to D4)</h2><dl>
+<dt>Fragments read (D1)</dt><dd>Scattered words, no connected stretch long enough to rule out chance.</dd>
+<dt>Partially deciphered (D2)</dt><dd>At least one connected clause reads, and the verifier can state one true, specific sentence about the content. The percentage is the share of cipher signs read from a key, a known text or a controlled cryptanalytic step.</dd>
+<dt>Largely deciphered (D3)</dt><dd>80% or more of the cipher signs read that way, the gaps mostly names and code groups, with an outside check.</dd>
+<dt>Deciphered (D4)</dt><dd>Every cipher letter read; only listed name codes left, with a fresh independent re-derivation.</dd></dl>
+<h2>Key</h2><dl>
+<dt>Key recovered by us</dt><dd>By cryptanalysis, by lining up a plain copy, or by identifying the code book.</dd>
+<dt>Period key</dt><dd>Rebuilt from a decipherment, key sheet or cipher book of the time.</dd>
+<dt>Published key</dt><dd>Someone else's modern key, applied by us and credited on the item page and in the audit.</dd></dl>
+<h2>The one-line gist</h2><p>Marked "(interpretation)": an English paraphrase of what the read passage says, written by the verifier.
+It is not a translation of the whole letter, and unread groups are not guessed.</p>
+<h2>Where this comes from</h2><p>Every page is generated by a script from the repository's audit files and results register; nothing is
+written by hand here. Each item links its primary image, the printed edition where one exists, the audit with its search log, the
+reading and the script that regenerates it.</p></main></body></html>
