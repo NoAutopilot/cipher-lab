@@ -160,3 +160,10 @@ Slots where the gloss reads a value Krauske does not give (rule 4: logged with b
 | 57 | s (C) | a | G02 '15.57.34' under "caprice" (c a p); every other code in G02 matched | conflict, single instance; 57 is also a reader split (57/59 on L02) and 57 misses twice more (G09 v, G12 t), so a misread 50 (= a) is as likely as a key difference |
 | 130 | Walling (M) | 'Roy' by position (G09 '170.130.160.202' under "le Roy et la Pologne") | the DP scores names letters-only, so these name slots are positional only | listed, not scored as conflicts: 130 gloss Roy; 160 (Manteuffel, C) under "et"; 202 (la republique de Pologne, C) under "Pologne" (agrees in substance) |
 Codes above 401 on the leaf: 503 and 399 (G08 run end, after "les forces" is fully spelled) and 297 (G10 run end, after "des troupes") sit under no gloss letters -- no value from this leaf.
+
+### MANT-0609Y (9 Oct 2026, LANE FAMILY-A2d account 2): 694/09 file 0007 gloss pairs vs key.tsv (PREREG f0007_09/PREREG-MANT-0609Y.md)
+| code | key.tsv | gloss reads | witness | status |
+|---|---|---|---|---|
+| 54 | u (C) | t | 0007 G01 '30.10.54.28.35' under "cette" (c e t t e); every other code in the run matched | conflict; second witness for 54 = t after f0008_09 G13-area slot (gate.out "54(u)=miss:t"), while 0008 also reads 54 = u twice (G04, G10). Reader split on 0007: 54 low, alt 59 (= t in key.tsv) under a stray diagonal stroke, so a misread 59 is as likely as a homophone; rule 4: not settled by count, key.tsv unchanged |
+| 39, 46 | i, i (C) | 'Ilg' (worker) / 'Hy' (both blind passes) over single name codes | 0007 b2/b3/b5/b7 | initial agrees under the worker's reading only (single-letter key value vs a name gloss: weak class); under 'Hy' a conflict. Not settled |
+| 44 | l (C) | 'Ld' over a single name code | 0007 b4 | initial agrees (weak class) |

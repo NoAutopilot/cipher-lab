@@ -1,0 +1,12 @@
+# 694/09 URL file 0007 (Aufnahme 0008), "No 1. a Berlin ce 7 janv. 1713". Crops: f0007a region 2140,1420,1460,150 (run after "hasard.");
+# f0007b region 2140,2140,1460,540 (para 2, 9 lines). Two blind Sonnet passes (MANT-0609Y, 9 Oct 2026) + worker reconciliation on 2-4x zooms.
+# conf: high = both passes agree and zoom confirms; low = settled by the worker. '|' = clear text between codes.
+line	tokens	settled
+a1	| 700 30 10 54 28 35 15 33 67 26 387 |	700 (A 700 alt 400, B 700; MANT-EYE eye read 304) low; 54 (A 54 alt 57, B 54 alt 34/59; a stray diagonal stroke crosses the 4) low; 67 (A low, B low alt 61/57) low; A's extra '6' between 26 and 387 not on the 2x zoom (the 6 of 26.); 387 (B alt 337) low
+b1	| 44	end of line, A 47?/44/41, B 44 alt 41/49; zoom 44 low
+b2	| 39 |	A 39 low (3y), B 39 low; zoom 39 (y-tailed 9). The mark before 'dit' under 'avoit' is an insertion caret for the clear word 'avoit', not a code (both passes: non-numeric)
+b3	| 46 |	A 46 high, B 46 low alt 40/49/44; zoom 46
+b4	| 44 |	both 44 high
+b5	| 39 |	both 39 (low, y-tailed 9)
+b6	| 44 |	A 44 high, B 44 low; zoom 44
+b7	| 39 |	both 39 low; at the right margin, 'si 39 y a|voit'

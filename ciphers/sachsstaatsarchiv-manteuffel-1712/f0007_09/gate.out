@@ -1,0 +1,16 @@
+key: key.tsv; spans 6; code tokens in spans 14; keyed 14
+S (codes matched under key) = 13/14 keyed (0.929)
+shuffled-key control (1000 draws, seed 8): mean 1.18, p95 3, p99 4, max 6
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+G01	a1	cette cour	8/9	30:match:c 10:match:e 54:miss:t 28:match:t 35:match:e 15:match:c 33:match:o 67:match:u 26:match:r
+G02	b2	Ilg	1/1	39:match:i
+G03	b3	Ilg	1/1	46:match:i
+G04	b4	Ld	1/1	44:match:l
+G05	b5	Ilg	1/1	39:match:i
+G06	b7	Ilg	1/1	39:match:i
+
+distinct codes: 12; matched on every instance: 11
+unkeyed codes and their slots: 
+keyed codes with a non-match slot: 54(u)=miss:t
