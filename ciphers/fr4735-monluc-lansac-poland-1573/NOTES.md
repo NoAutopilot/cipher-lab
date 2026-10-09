@@ -312,3 +312,66 @@ Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against 
 - [x] image-check: single-sign crops of the '2/Z/3' instances looked at on f.86 (MONLUC-2, FRESH-0914) and on c268 (this pass)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 5 internal gaps; cheapest next: blind sort of the c268 and f.86 Z crops together, then decode_key.py --try K69=t, ~$1
+
+## MONLUC-BLIND: blind sort of the c268 + f.86 '2/Z' crops, then --try K69=t (9 Oct 2026, account 4, Opus, for LANE DEFAULT-account-4-20261009-1051)
+Brief: .claude/briefs/runs/2026-10-09-account4-default-1051-jobs.md J17. Disk only (no host requests).
+Prior-work step: `python3 tools/prior_work.py fr4735-monluc-lansac-poland-1573 --item-spec 'shelfmark=BnF fr.4735;folio=138r;date=1573-04-28;sender=Monluc;recipient=Charles IX' --step-type key --fetch`
+-> exit 0 ("proceed on the residue: whole item"); step CLEAR (1-own: MONLUC-K07's own claim), plaintext UNCHECKED (aaymeloglu no local clone; Charriere t. III no positive control).
+Crop step: no `tools/iiif_lines.py` run is needed -- single-sign crops were cut locally with PIL from the two native regions already on disk
+(f.86: the 17 K07 centres in split_c172.tsv; c268: centres set by eye on a ticked strip of the f268 region, recorded in
+blind_k07_sort.tsv). Crops live in the session scratchpad only; no image is committed.
+**Pool (34 crops):** f.86 the 17 K07 + its one K38 (L03:18); c268 lines 1-5: the 12 MONLUC-K07 instances + its one K38 (L01:9) +
+the three K19 instances MONLUC-K07 did not label (L02:15, L02:37, L04:1) as decoys. K38 is added because the key sheet's K38 cell
+(keysheet_monluc1_ids.png: a C-shaped curl enclosing a 3/z, table value t) looks like the form-A shape; MONLUC-2's sentence "Form A
+matches no cell drawn on the key sheet" is questioned here, to be settled by where the two K38 crops fall.
+**Pre-registration (written and pushed before the call).** One Sonnet call is shown only `blind_sheet.png` (34 tiles numbered 1-34 in
+shuffled order, seed 1709; no line, no gloss, no values, no label names) and asked to sort the centre sign of each tile into shape
+groups. "Form A" = the sorter group holding the most of the 17 crops marked prevA=1 in blind_k07_sort.tsv (MONLUC-2's blind form A on
+f.86, 7; MONLUC-K07's reader form A on c268, 10); a tie for most = undecided, and --try is not run. Every c268 and f.86 token in that
+group (whatever its earlier label) is relabelled K69 in scratch copies of ciphertext_c268.tsv / ciphertext_c172.tsv, and
+`decode_key.py <scratch target> --try K69=t` runs with its own two nulls; accepted = M at most unless the control passes; key.tsv is
+not edited. Secondary (reported, not gating): agreement of the blind groups with prevA (Cohen's kappa) and where the two K38 crops fall.
+**Result of the blind sort** (one Sonnet call, sheet only; groups in blind_k07_sort.tsv column `blind`). The sorter made A "bold Z/2
+body, flat top and bottom bar" (18), B "small thin 3/Z body nested inside a large open C-shaped curl" (11), C "compact blobby body
+with a loop or bowl" (4), ? (1). prevA counts: A 7, **B 10**, so by the pre-registration **form A = group B**. Group B is 11 crops,
+all c268: the 10 MONLUC-K07 reader-A instances exactly (L01:32, L02:16, L02:18, L03:10, L04:14, L04:20, L04:24, L04:36, L05:8,
+L05:13) plus **the c268 K38 (L01:9)**. On c268 the sort separates by shape: the one flat '2' (L01:28) went to A, the plain '3' (L03:34)
+and two plain K19s to C, the stacked K19 (L04:1) to ?. **On f.86 the blind sort does not reproduce MONLUC-2's split:** all 17 f.86
+K07 crops went to A (the 7 MONLUC-2 sorter-A crops with them), and the f.86 K38 went to C. Agreement of blind B with prevA 26/34,
+kappa 0.53. Caveat: f.86 signs are smaller and darker than c268's (scaled crops, autocontrast, vignette); the sorter's descriptions
+are shape descriptions, but a leaf/ink signal cannot be excluded where the split coincides with the leaf, as it does for B.
+**--try** (`blind_try.py OUTDIR [--drop-k38]`, which rebuilds the scratch target from the sort and runs `tools/decode_key.py --try`;
+log `crossword_log.tsv`; window score fr16, two nulls): K69=t on the 11 group-B tokens, statistic **+49.7 bits** over the runner-up
+l, null p95 positions -42.7, value class -49.7: **accept**. Without the K38 token (10): +43.1, p95 -36.6 / -43.1: accept. Rivals
+on the same 10: the table's u -73.3 (reject), s -67.7 (reject). Contexts as decoded: "lesperui[t]", "nespargnen[t] lhoneur",
+"larepu[t]a[t]ion", "fai[t] parler", "laise[t] none a[t]a en[t]" (the L04:20 stretch MONLUC-K07 also found unread), "eopila[t]
+iren[t]".
+**Reading.** On c268 a blind sort and the crossword test agree: the C-curl Z is one sign, it includes the token both passes called K38
+(table t), and it reads t at every occurrence above both nulls. With the key sheet's K38 cell (a C-curl enclosing a 3/z, value t),
+the simplest account is that **"form A / K69" is the table's K38 = t, mis-filed by both c268 passes under K63/K19** -- not an
+undrawn sign; MONLUC-2's "matches no cell on the key sheet" is not supported. This is this worker's comparison of crops with the
+key-sheet image, not a blind test. On f.86 the earlier A/B split of K07 is **not** reproduced blind, so the f.86 'Z = t' evidence
+stays at MONLUC-2's own level (association p 0.022, gain gate 1 of 3). **key.tsv unchanged** (brief: no direct edit). Grade for the
+11 c268 t-tokens: M (no reading asserted; --try's own known-answer control K3 passed for letter values, so S is available to a
+reading pass that relabels them K38 in ciphertext_c268.tsv). Depth unchanged.
+Requests: none to any host. Subagents: 1 (Sonnet, blind sort).
+
+## Remaining gaps (MONLUC-BLIND, 9 Oct 2026)
+Read so far: unmeasured as a reading; f.86 150 tokens C 76 / M 71 / U 3 against its own gloss (MONLUC-KEY), unchanged; c268 lines 1-5 decoded, ungraded; 11 c268 C-curl tokens read t by --try (accept, M).
+- c268 C-curl Z as K38 = t in the transcription - blocker: not-attempted; blind sort and --try agree on c268 lines 1-5; next: relabel the 11 tokens K38 in ciphertext_c268.tsv (passes' K63/K19 kept in columns), rerun score_c268.py and note the change, ~$0.5
+- f.86 K07 Z vs 2 split - blocker: not-attempted; not reproduced by this blind sort (all 17 in one group); next: a blind sort of the f.86 crops alone at one scale with the f.86 K38 beside them, ~$0.5
+- c268 transcription noise (27% pass disagreement) - blocker: not-attempted; part of it is the C-curl sign filed as K63/K19; next: tools/lookalike_pass.py on c268 passes A/B with K38 as its own label, then the sorter's focus.tsv for the owner, ~$1
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py)
+- in-volume decipherment of ff.132-138 - blocker: not-attempted; f.139 opening tested and not matched; next: look at ff.140-141 and items 17/18/112-120 for a Monluc 28 Apr text, ~$1
+- rest of c268, c264, c258 and f.210 - blocker: not-attempted; wait on the look-alikes and a calibrated test; next: the 3-unit protocol per 5-10 lines once a positive control passes, ~$3 per leaf
+- ff.211-223, f.87 margin, ff.50/56/60/80 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONLUC-BLIND, 9 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [ ] clear-pages: remaining clear leaves untested; planned step: ff.140-141 look
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell (MONLUC-KEY), per sign form on f.86 (MONLUC-2) and c268 (MONLUC-K07); the C-curl form matched to the table's K38 (this pass)
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found
+- [ ] key-rebuild: c268 C-curl = K38 = t accepted by --try; planned step: relabel in ciphertext_c268.tsv and rescore
+- [x] image-check: single-sign crops of the '2/Z/3' instances blind-sorted on both leaves together (this pass)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 6 internal gaps; cheapest next: relabel the 11 c268 C-curl tokens K38 in ciphertext_c268.tsv and rescore, ~$0.5
