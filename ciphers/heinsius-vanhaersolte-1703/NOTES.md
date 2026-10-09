@@ -373,5 +373,37 @@ still letters 341, 929, 1017, and its key is still not located in print.
 3. Ask the NA (REQUEST.md) to include H.A. 918 beside H.A. 841, so d'Alonne's decipherment of the 1704 letter can be compared with its cipher.
 
 ## While waiting
-The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that (optional, ~USD 1): run `small_runs.py` over the rest of
-Deel 2 (pages without a Haersolte hit), since a ciphered passage's heading OCR may miss the name; next step 1 is done.
+The NA original (H.A. 841) is undigitised; REQUEST.md stands. Independent of that: `small_runs.py` over the rest of Deel 2 (pages without a Haersolte hit); pp.7-131 done (HEIN-SR 9 Oct 2026), pp.132-600 remain.
+
+## Deel 2 small-number run over unread pages (HEIN-SR, 9 Oct 2026, 10:24-10:4x UTC by date -u)
+
+Brief (LANE FAMILY-A2h, account 2): run `small_runs.py` over Deel 2 pages A2P4-HAER and D2-HEIN did not read. Rule and controls as
+PREREG-D2-HEIN.md; page order and budget in `PREREG-HEINSR.md` (pushed 59b8e71a4 before any new page was fetched). Prior-work step:
+`tools/prior_work.py` exit 4 (own-claim LEAD, single-leaf LOOK and folio-keyed UNCHECKED rows that do not apply to a printed-edition OCR page run); checks 1-2 done by
+reading this NOTES file and the D2-HEIN section (no overlap with these pages); checks 3-4: edition is the very text read, no new edition looked up (unchecked).
+
+Controls (disk, before the target run): positive pp.130 (letter 341) and 398 (letter 1017) each fire once; negatives pp.17, 60, 397, 473 fire 0.
+Target: 118 pages, printed pp.7-131 minus the 7 already on disk (pages 7-131 not held), fetched once each. All 118 requests HTTP 200.
+Result: 4 runs on 4 pages (35, 44, 59, 103), all eye-read from OCR: two dates (20 and 26 January 1703), one troop count, one 14.000/10.000 figure.
+**None is cipher.** Table: `small_runs_HEINSR.tsv`. No letter in these pages carries a cipher passage of the 1017 kind.
+
+Where it was not found / limits: only printed pp.7-131 of Deel 2 were covered; pp.132-600 (about 400 pages not on disk) remain unscanned
+because the budget of 120 requests stopped at p.131 (last page fetched: 131). Same rule limits as D2-HEIN (needs three small numbers close
+together; OCR is the only witness). Graded tokens read by us: 0. No key or status change.
+
+Requests: resources.huygens.knaw.nl 118 (all 200, >= 2.3 s apart, descriptive UA). Vision 0, subagents 0, WebSearch 0.
+
+## Remaining gaps (HEIN-SR, 9 Oct 2026)
+Read so far: unmeasured, the 1703 cipher extent in print rests on OCR scans of about 193 of 594 Deel 2 pages (A2P4 70, D2-HEIN 75 on disk incl. controls, HEIN-SR 118).
+- Deel 2 printed pp.132-600 not scanned for small-number runs - blocker: not-attempted; budget stopped at p.131; next: `small_runs.py --fetch` over pp.132-600 not on disk in 120-request batches, ~USD 1.2 per batch
+- NA original H.A. 841 undigitised - blocker: waiting-on the Nationaal Archief reply to REQUEST.md; the original is not online
+
+## Escalation (HEIN-SR, 9 Oct 2026)
+- [x] siblings: Deel 3 read (R11A-HEIN3, R12A-HEIN)
+- [x] clear-pages: letters 341, 929, 1017 only
+- [n/a] known-keys: no key located in print
+- [x] print: Deel 2 pp.7-131 now scanned
+- [n/a] key-rebuild: no key material exists
+- [n/a] image-check: no run found
+- [ ] retry: pp.132-600
+Verdict: keep going: 1 internal gap; cheapest next: small_runs over Deel 2 pp.132-600 in 120-request batches, ~USD 1.2 each
