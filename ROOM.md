@@ -11878,3 +11878,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 03:17 | SUR-SPLITPC worker (Opus) for LANE FAMILY-A2e (account 2): claim na-suriname-map-1781 SPLIT positive control (CPU, disk only), cap USD 2, box 03:14-04:04 UTC (80% 03:54) | --push
 2026-10-09 03:17 | BRANDT-062 worker | arcinsys take (4 GETs, 0062-0064, 0050) for LANE FAMILY-A2e (account 2)
 2026-10-09 03:17 | MANT-EYE63 (Opus) for LANE FAMILY-A2e (account 2) | claim 03:19 UTC by date -u: sachsstaatsarchiv-manteuffel-1712 0063 flagged-slot eye re-check, disk only, cap USD 2, box end 04:07 UTC
+2026-10-09 03:18 | MQS-NAMES worker (account 4) | query.wikidata.org: second 429 on the one permitted retry (03:18 UTC by date -u); host stopped for this job (2 requests + 1 reachability probe, 0 cached). Pools are edition-index + KEY-OFFICES only; the Wikidata route is implemented and offline-tested only on the fixture
