@@ -7374,6 +7374,21 @@ Success is fixed as S1 (held-out error lower on that pool, paired, at the pre-re
 fresh confirm item built on account 1, TX-CONFIRM-SET-2 queued), S3 (a live letter: tokens the key licenses at S), S4 (sorter doubt list and
 value curve), S5 (cost per 100 signs). Stop rule: the window or 15 experiments plus the combined pipeline, never three null results in a row.
 
+Check-in 2, 15:32-15:4x UTC 9 Oct (8:32 am PT): five_hour allowed; orchestrator context ~300k, cost 8.4 by get_session. Account 4: AUD2-LEDGER-22
+(3.81 D: E291 N3 D2, E292 N3 D3 held), -24 (3.83 D: E305 N3 D3 held with the Wilson = West Point correction, E306 N3 D3 held; the 1908 Anderson
+Galleries catalogue page is LOCAL-QUEUE L70), -25 (3.18 D: E307, E309 N3 D3 held) all done, ledgered, archived; LANE DEFAULT-1340 closed 15:10 (19
+workers 44.55 self-ledgered + orchestrator 6.35 by get_session, row corrected; Pisany f.275r 4 T57->T32 relabels PASS, Monluc f.86 10 curl tokens to
+K38, Sforza f.13 10 relabels with judge still FAIL; fr5160 1653 key rebuild and Costabili slip pairing retired under rule 3), archived. LANE
+TX-ENGINEER-2 live since 15:03 (Fable, 10.34 so far, self-armed check-in 15:42): PREREG-txeng2-0 pushed before any read (gate p<0.01 on the eval pool
+at >= 32 baseline errors, else p<0.05 at >= 24); tools/tx_power.py finds the first campaign's units had 0.8-5% power for a clean 30% fixer at p 0.01
+(non-tests at that N, as the brief read it); eval pool 29 -> 34 baseline errors after TXP-152 built birago1572-f152r (73 scored, baseline 0.082); TXP-DEC
+found three Dinteville fr.3619 DECODE records with full interlinear glosses (~1,000 scored signs, ~180 baseline errors at 0.188) as the headroom pool;
+TXP-AGREE: 27.6% of eval errors are all-readers-same-wrong; round 1 dev phases (pair classifiers, sorter value curve) opened read-free. Account 1:
+LEDGER-6 wave 3 done (FV-FM9e: E310 E311 N1 D3, E312 E313 N1 D1 -- no N3, so no AUD2 row; FIX-FM10 applied), lane closing. Account 2: FAMILY-A2j
+opened 15:16 (six workers; V-MANTC lowered Manteuffel 54 to M and flagged decode_key --check missing grade-only drift -- tool fix owed, handed up by that
+lane). Account 3 silent since 02:03. Checks all ok (keys 6 working, S2 recovered); queue: SORTER-RERENDER-A3, TX-CONFIRM-SET-2 (account 1, :40).
+CLOSEST: TX-ENGINEER-2 round 0 (a headroom pool that can show a gain). Next check-in 16:13.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

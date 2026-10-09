@@ -78,3 +78,6 @@ experiments; success S1-S5 fixed in the brief). The lane ledgers/archives its ow
 queued for account 1 (its :40 dispatcher). At each check-in: get_session on the lane, read its ROOM check-in line (experiment running, eval
 looks, cost vs window), ping by send_message if silent past its own check-in time, successor from the brief if silent 60 min. The owner report,
 when he asks, leads with the first campaign's result and this lane's round-0 numbers.
+STATE DELTA 15:4x UTC 9 Oct: AUD2-LEDGER-22/24/25 and LANE DEFAULT-1340 closed, ledgered, archived; account 4 live = LANE TX-ENGINEER-2 only (round 0:
+eval pool 34 errors, Dinteville fr.3619 DECODE glosses as the headroom pool; its own check-in 15:42, ping if silent 60 min). LOCAL-QUEUE L70 (E305 1908
+catalogue page). Account-4 queue empty (blast lanes=1 default-lane auto-fill will open a DEFAULT lane beside the campaign at the :34 dispatcher).
