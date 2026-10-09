@@ -1,0 +1,8 @@
+cipher tokens 153 letters 285
+REAL cipher-only {'pass': False, 'score': -0.956, 'null_p99': -1.813, 'real_p05': -0.918, 'real_median': -0.777, 'mode': 'both', 'N': 285}
+REAL with clear words {'pass': False, 'score': -0.956, 'null_p99': -1.813, 'real_p05': -0.918, 'real_median': -0.777, 'mode': 'both', 'N': 285}
+all-signs n=20 min -1.407 median -1.340 max -1.228
+letter-signs-only n=20 min -1.362 median -1.244 max -1.172
+POSITIVE f229 tokens 0-153 {'pass': True, 'score': -0.79, 'null_p99': -1.823, 'real_p05': -0.897, 'real_median': -0.779, 'mode': 'both', 'N': 263}
+POSITIVE f229 tokens 153-306 {'pass': True, 'score': -0.86, 'null_p99': -1.806, 'real_p05': -0.899, 'real_median': -0.789, 'mode': 'both', 'N': 266}
+POSITIVE f229 tokens 306-365 {'pass': True, 'score': -0.825, 'null_p99': -1.671, 'real_p05': -0.953, 'real_median': -0.79, 'mode': 'both', 'N': 95}

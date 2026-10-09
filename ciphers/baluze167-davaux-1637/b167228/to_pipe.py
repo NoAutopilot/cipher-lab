@@ -37,8 +37,11 @@ out = ['# Baluze 170 f.228r-v (same letter as f.229, 25 Aug 1640, Amiens, bare c
 unread = collections.Counter()
 # SIG-B228 (8 Oct 2026): numeral marks agreed by two blind reads on line strips (b167228/sig_marks.tsv, prereg_sig.md item 6,
 # control gate 3/4 PASS) replace an unmarked numeral's transcription; keyed by line and numeral occurrence, code checked.
+# SIG-V228 (9 Oct 2026, AUDIT.md '## AUDIT 1 f.228 (SIG-V228)' correction 1): the mark gate's control tested only present marks,
+# and SIG-B228B found Sonnet mark detection unusable on this hand; the 15 regrades are withdrawn (tokens back to I via
+# key_unmarked.tsv). sig_marks.tsv is kept as a record and no longer applied.
 MARK = {}
-if os.path.exists('b167228/sig_marks.tsv'):
+if False and os.path.exists('b167228/sig_marks.tsv'):
     for ln in open('b167228/sig_marks.tsv', encoding='utf-8'):
         if ln.startswith('line\t') or not ln.strip():
             continue

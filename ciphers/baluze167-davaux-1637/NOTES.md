@@ -1213,3 +1213,20 @@ Grade correction for the next solver step (not applied here, no decoding in the 
 "none" controls; the verifier's eye sees no mark on f.228r a_L02 16 and 73 or on c_L01 86). Corrected counts H 56, M 70, I 27, U 1.
 The f.228r "de Bavier" is therefore unread (unmarked 73; Tomokiyo "*"), and the f.228v fear clause's verb is unread ("come to terms" is
 an inference). Next: set to_pipe.py to grade sig_marks tokens I, re-run decode_key --check; second audit AUD2-SIG-228 queued (WORK-QUEUE).
+
+## SIG-V228 correction applied (9 Oct 2026, LANE SIG-1 orchestrator, account 1, 00:24 UTC by date -u)
+Applied AUDIT.md "## AUDIT 1 f.228 (SIG-V228)" correction 1 to the decode path: `b167228/to_pipe.py` no longer applies
+`b167228/sig_marks.tsv` (kept as a record), so the 15 unmarked numerals SIG-B228 had regraded H from two Sonnet mark reads return to I
+through key_unmarked.tsv. `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> reading up to date; **154 cipher tokens:
+H 56, M 70, I 27, U 1**, as the verifier recorded. Values change where the unmarked row differs: f.228r a_L02 "de Bavier" -> "de so" (the
+name stays unread, as Tomokiyo's `*`), f.228r b_L01 "de le traitte r de" -> "de le gu r de". f.228v (the Landgravine/Lunebourg clauses,
+"luy et Bavier" with its transcribed bar) is unchanged.
+**Judge re-run (b167228/judge_null.py unchanged, fr17 spec d4vb167/judge_spec_fr17.json; output `b167228/judge_null_v228.out`):**
+| text | SIG-B228B | after SIG-V228 correction |
+|---|---|---|
+| reading_b170f228 (U dropped) | -0.925 vs real_p05 -0.935, N 294: PASS | **-0.956 vs real_p05 -0.918, N 285: FAIL** |
+| shuffled key, all signs, 20 | max -1.063 | median -1.340, max -1.228 |
+| shuffled letter-sign values only, 20 | max -1.134 | median -1.244, max -1.172 |
+| positive control, f.229 same N, 3 segments | 3/3 PASS | 3/3 PASS |
+The SIG-B228B PASS depended on the withdrawn regrades; the corrected reading is a FAIL 0.038 below gate, above all 40 shuffled nulls. The
+judge is not the depth gate (rule 4a); the verifier's N3/D2 rests on the f.228v clauses, which this correction does not touch.

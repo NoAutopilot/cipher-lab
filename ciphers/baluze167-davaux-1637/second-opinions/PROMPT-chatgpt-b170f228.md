@@ -54,3 +54,7 @@ WHAT TO PUT IN THE FILE
    reason and the source that shows it.
 4. Leads: archives, editions or scholars we should check, with a one-line reason each.
 5. Confidence: one sentence on how sure you are that nothing prior exists, and what would change it.
+
+Revision (9 Oct 2026, before this prompt was answered): after our first audit withdrew 15 numeral-mark regrades, the f.228r phrase quoted
+above as "traitter de la me[?]me sorte" no longer reads "traitter" (those numerals are now read without a mark, giving "gu r"), and the name
+after "sont mal satisfaits de" on f.228r is unread. The f.228v clauses quoted above are unchanged.

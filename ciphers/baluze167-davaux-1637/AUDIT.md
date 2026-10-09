@@ -386,3 +386,9 @@ Why not N4: the AAE and Chavigny's own registers are unread, Google Books was un
   the name there is unread.
 - Over-claim 3: SIG-B228B's "come to terms with the enemy" -- the verb is unread.
 - No novelty wording found in the solver sections. Rule 10: this section alone assigns the class.
+
+### Revision carried in (9 Oct 2026, LANE SIG-1 orchestrator, rule 10 propagation)
+Correction 1 above is now applied to the decode files (NOTES "## SIG-V228 correction applied"): counts H 56 / M 70 / I 27 / U 1 as stated
+here. The "claim under audit" judge figure (-0.925 PASS) is superseded: the corrected reading scores **-0.956 vs real_p05 -0.918, FAIL**,
+above all 40 shuffled-key nulls (max -1.172), positive control 3/3. f.228r b_L01 no longer reads "traitter" ("de le gu r de" with the
+unmarked numerals at I). Class and depth as written above are this verifier's; the second audit (AUD2-SIG-228) rules on them with this revision.

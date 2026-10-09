@@ -9,17 +9,17 @@ a_L02	6	77'		ti	H
 a_L02	7	L:s?	?	s	M
 a_L02	8	98'		fait	H
 a_L02	9	L:s?	?	s	M
-a_L02	10	16'		de	H
-a_L02	11	73=		Bavier	H
-c_L01	0	86'		avec	H
+a_L02	10	16?	?	de	I
+a_L02	11	73?	?	so	I
+c_L01	0	86		avec	I
 c_L01	1	9:		luy	H
 b_L01	6	16		de	I
 b_L01	7	41'		le	H
-b_L01	8	29:		traitte	H
+b_L01	8	29?	?	gu	I
 b_L01	9	L:r?	?	r	M
 b_L01	10	16'		de	H
 b_L02	0	40'		la	H
-b_L02	1	46'		me	H
+b_L02	1	46		me	I
 b_L02	2	s:wave?	?	?	U
 b_L02	3	46'?	?	me	M
 b_L02	4	73'?	?	so	M
@@ -27,32 +27,32 @@ b_L02	5	L:r?	?	r	M
 b_L02	6	76		te	I
 b_L02	8	33:		vous	H
 b_L02	9	L:t?	?	t	M
-b_L02	10	81'		ve	H
+b_L02	10	81?	?	ve	I
 b_L02	11	L:s?	?	s	M
-b_L02	12	98'		fait	H
-b_L02	13	40'		la	H
+b_L02	12	98		fait	I
+b_L02	13	40		la	I
 b_L02	14	L:n?	?	n	M
 b_L02	15	51		ne	I
 b_L02	16	L:e?	?	e	M
-a_L01	0	55'		pa	H
+a_L01	0	55		pa	I
 a_L01	1	L:s?	?	s	M
 a_L01	2	71'		se	H
 a_L01	3	L:e?	?	e	M
 a_L01	4	L:a?	?	a	M
 a_L01	5	L:t?	?	t	M
-a_L01	6	22'		fi	H
+a_L01	6	22		fi	I
 a_L01	7	L:n?	?	n	M
-a_L01	8	62'		qui	H
+a_L01	8	62		qui	I
 a_L01	9	L:l?	?	l	M
 a_L01	10	71'		se	H
-a_L01	11	66'		re	H
+a_L01	11	66		re	I
 a_L01	12	L:n?	?	n	M
 a_L01	13	16		de	I
 a_L01	14	L:m?	?	m	M
 a_L01	15	44'?	?	lu	M
 a_L01	16	L:s?	?	s	M
 a_L02	0	26'		ge	H
-a_L02	1	12'		ci	H
+a_L02	1	12		ci	I
 a_L02	2	41'		le	H
 a_L02	3	L:a?	?	a	M
 b_L01	4	L:c?	?	c	M
@@ -86,7 +86,7 @@ b_L02	16	L:c?	?	c	M
 b_L02	17	13		sued|co	M
 b_L02	18	L:m?	?	m	M
 b_L02	19	48'		mo	H
-b_L03	0	16'		de	H
+b_L03	0	16		de	I
 b_L03	1	L:n?	?	n	M
 b_L03	2	L:t?	?	t	M
 b_L03	3	86'?	?	avec	M
@@ -118,7 +118,7 @@ b_L04	13	66		re	I
 b_L04	14	L:r?	?	r	M
 b_L04	15	L:c?	?	c	M
 b_L04	16	30'		ha	H
-b_L04	17	14'		cu	H
+b_L04	17	14		cu	I
 b_L04	18	L:n?	?	n	M
 b_L04	19	16		de	I
 b_L05	0	8:		leur	H
