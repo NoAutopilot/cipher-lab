@@ -299,3 +299,46 @@ with --help, an offline test, a tool_shelf.tsv row and a SYSTEM.md row.
   under 24, no instrument past dev) and holding it until one does may mean never measuring the product on an unseen hand;
   any later instrument's generalisation then needs a second confirm-class leaf (TX-POOL-LEAF or its successor). The S2 PREREG
   draft now carries that pipeline; its dated freeze line is written only on the orchestrator's decision.
+
+## Amendment 7 (lane incarnation 2, 9 Oct 2026 21:3x UTC by date -u; after round 8 (X1b-v4, A2, REGFIX), TX-POOL-LEAF (account 1), the orchestrator's F28 decision of 21:18 and TX-RED pass 6 F29-F32; written BEFORE any eval look, none spent)
+- **gunther8246-p2 pooled (F31).** Built outside the lane by TX-POOL-LEAF (account 1): WVO 8246 MS p.2, Willem van Oranje's
+  German secretary, 1561 -- a hand, office, language and key family no other item uses; truth = the Japikse 1934 printed
+  decipherment (Koot) aligned over the whole letter (0.900 vs shuffled max 0.311) through a key that is **ours, grade C,
+  rebuilt from the sibling letter 5109** (the dint key_print class; 0b's "period/published key" wording reads "or a key
+  rebuilt from an independent printed decipherment of a sibling" for this item); 372 positions, 317 scored, 15 flagged
+  align-conflict by the build before any reader was scored; baseline passZ (two blind Opus + Sonnet adjudication, committed
+  before the truth was opened) 18/317 as measured, **5/302 flagged-excluded** (13 of the 18 sit on flagged positions and repeat
+  by label: key gaps or encipherer's slips, not misreads). The binding count is flagged-excluded (Amendment 2): the item adds
+  **5**. **Eval pool = eval_heldout 10 + f178r 6 + spinelli 6 + f152r 1 + gunther 5 = 28 >= 24: the under-24 rule lifts**
+  (tuned-letter lines 16; held-out leaves 12). Power at E 28 for a clean 30% fixer at p < 0.05: between 0.827 (E 26) and 0.908
+  (E 29), about 0.88. The branch p < 0.05 at >= 24 does not move. Before the first look on it: (i) a verifier pass V3 on its 15
+  flags from the Japikse print and the WVO scan (PREREG-txeng2-9 V3), (ii) the readers' p.1 calibration sheet -- atlas-built,
+  labelled by the committed reading, the A1 shape -- crossed read-free against the whole-letter alignment (GS1).
+- **Outside-the-frame checks for pool material (the owner's rule of 20:5x; corrects Amendment 5's "the 1572 hand is
+  exhausted", which named only the in-frame scout).** Named now: (1) sources/cryptiana/READABLE.tsv -- 13 Tomokiyo
+  "readable with key X" leaves, key-only except Clair.330 f.85, which carries an in-volume decipherment (Gallica, after 10 Oct
+  00:00 UTC); (2) sources/cyphersolver/* -- three folders unscreened for a clear copy; (3) the 21 clairambault/colbert folders
+  on disk, unscreened for a period decipherment. All three are the TX-POOL-LEAF-2 screen the orchestrator queued for account 1
+  at 21:18; "needs new material" is replaced by "cheapest untried step outside the frame: that screen".
+- **S2 (the orchestrator's decision, 21:18: route (b)).** S2 is the product baseline on an unseen hand as well as the
+  instrument test; taken ONCE as soon as the baseline-side corrections are frozen by a dated line in PREREG-txeng2-S2 (written
+  now: measured overlap sentence, do-not-resize, the folder's text-list sheet, no atlas), readers blind, sha256 before score,
+  a verifier pass on the item's align-conflict flags before the count; reported as "product baseline on an unseen hand",
+  never as an instrument result; any later instrument gets its own eval look on a second confirm-class leaf. The reads are a
+  worker's job (PREREG-txeng2-9 S2-READ, no score); the verifier is a separate session (V-VIV); the single score is the lane's,
+  run once after both land, and it is the campaign's S2 look (1).
+- **X1c retired (F30 adopted).** Against passZ_v4 a grown-sheet read can reach at most 5 of Spinelli's 6 errors (all five
+  NEW-flagged: circle-on-stem, long-s-crossbar, looped-H), and 5 fixed / 0 broken gives p 0.0625 > 0.05 at any pool size: X1c
+  cannot pass the gate even if perfect -- a non-test by construction. Register: "retired: dissolved into a sheet correction;
+  max reachable 5, 5/0 p 0.0625; instrument: grown sheet from the leaf's own NEW tiles; reopen when a leaf whose NEW-flagged
+  errors exceed what 5/0 can carry (>= 6 reachable at the gate in force) enters the pool". The finding is the A1/B1 shape:
+  the Spinelli sheet lacks three cells the published key carries; **B2** adds them to atlas_v4 from Domnina's published table
+  (never from a tile chosen through a truth position) and re-reads the baseline once (a baseline change, one opening;
+  PREREG-txeng2-9 B2); Spinelli's count in the pool is replaced by B2's whichever way it moves.
+- **A2 (sheet audit across every folder).** 34 sheets: the only atlas-built sheets with a truth to cross are Birago 1572's
+  atlas (69 non-eval exemplars: 1 mislabelled, T64 f184v_04_009 vs S T52 -- outside every benchmark unit; handed to the
+  Birago folder's own lane as a one-line note, no edit by this lane) and key no.60's (4 value-conflicts already in its own
+  agreement column); 4 folders read with an atlas-built sheet and no truth to check it (debosnys, salviati, seure, gramont;
+  1,107 tiles) and 2 with a truth uncrossable at box grain (fr5761, clair349). Nothing corrected.
+- **Register (F25 closed).** tools/tx_register.py now parses the lane's row shapes and `--check` fails on any unparsed txeng2
+  row; the one row it flagged at this check-in (txeng2/sheets-all, no Verdict line) is covered by its results-log row below.

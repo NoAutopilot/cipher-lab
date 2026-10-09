@@ -33,3 +33,23 @@ sheet (Vivonne's is a text list: clean by construction, A1); (1c) the reader bri
 committed with its sha256 before any score (Amendment 3); (3a) a verifier pass on the item's align-conflict flags (if any) precedes
 the count (V1/V2's shape), with both figures reported. Step 5 is empty: no instrument passed its eval look. The single score is
 reported as the product's unseen-hand number beside S1, never as a gain.
+
+## FROZEN (lane incarnation 2, session_011EV9AKeJ4YuU9jjghdUy6F, 9 Oct 2026 21:3x UTC by date -u; on the orchestrator's F28 decision of 21:18 UTC, route (b); written BEFORE any read of the item)
+The pipeline that scores once on vivonne1573-f103r-confirm2, fixed now and not changed after any number is seen:
+1. Crops: the folder's committed `ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L??_s{1,2}.jpg` (tools/iiif_lines.py
+   --follow-slope 400, N5-VIVK), checked on an overlay by the reading worker; a cut sign is noted, never re-cut (Gallica 403; the
+   note is reported beside the score). The s1/s2 overlap is MEASURED by pixel match (`tools/overlap_audit.py`, O1's method) per
+   line and written into the reader brief in the `--overlap-note` form; never a typed figure.
+2. Two blind Opus 5.5 passes, reader vocabulary = the committed transcription's label inventory (no --label-map), the folder's
+   value-blind text-list sign sheet (clean by construction, A1), the brief says "do not resize"; one subagent call per <= 8
+   lines (37 lines: 5 calls per pass); readers never see truth, decodes, the builder's passes, labels or align files; each pass
+   committed with its sha256 before the next step.
+3. tools/reconcile_passes.py + ONE Sonnet adjudication of disagreements and uncertain positions from the crops (the folder
+   protocol; TXE-Q's adjud_task.txt as the worked example); passZ_S2.tsv committed with its sha256. No relabel map exists.
+4. The doubt feed (tx_doubt, disagree + latt where inputs exist) listed beside the read, never resolved.
+5. No instrument (none passed its eval look).
+Order: the reading worker (S2-READ) stops after step 4 and never runs tx_bench; a verifier session (V-VIV) decides the item's
+align-conflict flags from the clerk decipherment images and the published key through build_vivonne_confirm2.py's flag column;
+the LANE then runs the single score (`tx_bench ... --paired committed.tsv --exclude-flagged`, both figures, the builder's
+passA/passB beside) ONCE, as the campaign's S2 look (1), and reports it as "product baseline on an unseen hand", never as an
+instrument result or a gain. Prior openings of this item: 0 (the lane has not read its truth, outputs or crops).

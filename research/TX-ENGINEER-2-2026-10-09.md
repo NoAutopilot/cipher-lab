@@ -38,8 +38,12 @@ twelve remaining errors are the sheet's fault, not the reader's. Because that wa
 the sheet counts as a change to the baseline, never as an instrument's gain; the sheet has been corrected (three mislabelled example tiles found and removed; every other sheet in use is cut from a printed key or
 is a text list, so has no such defect), and the Spinelli baseline re-read under the corrected sheet came down from 12 unflagged errors to 6 (8 signs fixed, 2 broken). That
 is a correction of the measuring stick on a leaf the sheet was built from, not a gain of the pipeline on an unseen hand; the one
-number that would be is the confirm2 leaf, still unopened. With the Spinelli count halved the held-out pool sits at 23, one under
-its floor, so no instrument can be scored on it until a further known-answer leaf is built outside this lane (requested). The overlap note in every reading
+number that would be is the confirm2 leaf, still unopened. With the Spinelli count halved the held-out pool fell to 23, one under its
+floor; a further known-answer leaf built outside this lane (a 1561 letter of Willem van Oranje's German secretary, with a printed
+decipherment as its answer key) brings it back to 28, so an instrument can be scored again once its flags have been checked. The
+one grown-sheet instrument that was waiting has been retired before running: at most 5 of the 6 remaining Spinelli errors are
+reachable by it, and 5 fixed with none broken cannot clear the pre-registered test, so it could not pass even if perfect. What
+it found is three missing cells in the Spinelli sheet, which are being added from the published key as a further baseline change. The overlap note in every reading
 instruction turned out to be wrong on every folio but two (the readers measured 350 to 1,100 pixels where the text said 100 to 150),
 but the readers' deletions and insertions do not cluster at the seams, so the sentence is corrected for future briefs and nothing
 is re-read for it.
@@ -54,8 +58,8 @@ What you should do at the sorter: the feed (TXE2-FEED, being written) lists the 
 ## Headline numbers (S1-S5)
 | what | figure | source |
 |---|---|---|
-| S1 held-out gain | no instrument earned an eval look; eval looks spent 0; the pool is 23 unflagged errors (tuned-letter lines: eval_heldout 10 + f178r 6; held-out leaves: Spinelli 6 under the corrected sheet + f152r 1), one under the 24 floor, so no look is possible until a further 0b-rule leaf lands (Amendment 6) | PREREG-txeng2-0 |
-| S2 confirm2 | not looked at (vivonne1573-f103r-confirm2 built by account 1, 1,068 scored; look held until C1 and TX-RED's review of Amendment 2) | PREREG-txeng2-S2 draft |
+| S1 held-out gain | no instrument earned an eval look; eval looks spent 0; the pool is 28 unflagged errors (tuned-letter lines: eval_heldout 10 + f178r 6; held-out leaves: Spinelli 6 under the corrected sheet + f152r 1 + gunther 5), gate p < 0.05 at >= 24 (Amendment 7); nothing is past dev to spend a look on | PREREG-txeng2-0 |
+| S2 confirm2 | FROZEN 21:3x (the orchestrator's decision: the product baseline on an unseen hand); reads running, verifier running, the lane scores once after both; not yet looked at | PREREG-txeng2-S2 FROZEN |
 | S3 live letter | TXE-R (first campaign, same pipeline): f.117r err_2reader 0.134, S 207 vs 190 committed, judge 0.010 worse, no licensed change | ciphers/birago-fr3252-1571-72/harvest/f117/RESULTS-TXE-R.md |
 | S4 sorter | feed: dev 10/12 at 14.0% flagged; eval read-free 9/15 at 2.9% (substitute rule); decisions-to-2% per tile: eval 22 (was 32); whole-cluster propagation destructive (77% purity) | benchmark-tx/txeng2/doubt/, sorter/ |
 | S5 cost | one per-page Opus call at 0.29-0.30x the input tokens of per-line 2x calls, accuracy within reader spread (dint 0.235/0.318 vs 0.318/0.388; Ceppo 0.122 vs 0.166; N=2 readers x 2 hands); both Opus arms worse than the best Sonnet single pass (dint B 0.188, Ceppo A 0.043) | benchmark-tx/txeng2/cost/, cost2/ |
@@ -91,4 +95,4 @@ Open: X2b with more labelled tiles of the same hand (new material); the colour m
 gloss leaves from a native image; the grown-sheet read on Spinelli only if X1b's recall table licenses it (then the first eval look).
 
 ## Costs and looks
-38 workers ledgered 204.12 (round 7: TXE2-BASE-SPIN 6.04, TXE2-OVERLAP 4.22, TXE2-SHRINK-SPIN 2.02) + round 8 (caps 8); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 15.6 at 20:38. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3, V2 1, f178r baseline 1.
+41 workers ledgered 211.02 (round 8: TXE2-SHEET3 1.49, TXE2-SHEETS-ALL 3.42, TXE2-REGFIX 1.99) + round 9 (caps 33); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 19.1 at 21:24. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3, V2 1, f178r baseline 1.
