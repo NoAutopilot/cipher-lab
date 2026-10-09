@@ -40,7 +40,8 @@ pipeline right by construction, keys rebuilt from the reads they score), gate sh
 "control cannot differ" shape (CLAUDE.md rule 3), over-claims in the owner's paragraph. It also reviews the STRATEGY: whether
 the queue is attacking where the error mass is (the first campaign found errors that every reader gets wrong the same way, in
 every presentation -- re-weighting the same passes cannot fix those; new information can) and names the three directions the
-lane is not taking. Findings go in research/TX-RED-2026-10-09.md (one dated entry per pass) and as ROOM lines "flag for LANE
+lane is not taking -- at least one of them from outside the programme's own frame (the other solvers' solved items, print,
+another archive, a person's reading), per .claude/briefs/README.md "Outside the frame before 'blocked'" (owner, 9 Oct 2026). Findings go in research/TX-RED-2026-10-09.md (one dated entry per pass) and as ROOM lines "flag for LANE
 TX-ENGINEER-2 and orchestrator (account-4)"; the lane answers each finding in the ideas register (adopted / rebutted with the
 number / deferred with the reason) by its next check-in; the orchestrator reports open disagreements to the owner. TX-RED never
 runs an experiment, never edits a PREREG, RESULTS, truth or key file.

@@ -213,3 +213,13 @@ applied unchanged, and three named cycle-3 briefs written from it.
 - First command of every cloud worker (5 Oct 2026: RULES-SLIM and MERCY-RAH-REFRESH stalled because the container clone carried a stale local main from 1 Oct): `git fetch origin && git checkout -B main origin/main` before reading or editing anything.
 - Page images: take the largest the host serves -- IIIF full/max, then the viewer's JPEG/TIFF download, then 200-250% zoomed viewer screenshots in overlapping sections, the PDF last (library PDFs are often downsampled; LESSONS.md "Get the largest image", 5 Oct 2026). Record the pixel size used.
 - Private-repo material: a dispatched worker (WORK-QUEUE row for account 1/2) gets only the public repo; clone and add_repo of NoAutopilot/cipher-lab-private are refused there (FER1478-READ2, 5 Oct 2026). A job whose material lives only in the private repo runs from a session that already has it in scope (the orchestrator's own, or one it creates), never as a queued row.
+
+**Outside the frame before "blocked" (owner, 9 Oct 2026 20:5x UTC, after the TX pool-material incident).** A session that inherits
+a problem statement from an earlier session (a brief copied from a prior job, a lane handoff, a reviewer's finding) inherits its
+frame, and reports the frame's edge as a fact about the world: the TX programme called its eval pool "blocked on material the lane
+cannot build" while `sources/cryptiana/READABLE.tsv`, a two-week-old list of other solvers' answer-keyed leaves built for exactly that
+question, sat unread. Rule: before any brief, handoff, ROOM line or report uses "blocked", "material", "exhausted", "needs new
+material" or "nothing left", it names at least three places outside the session's own frame that were checked for the thing it
+lacks -- the other solvers (sources/cryptiana, sources/cyphersolver*, Aymeloglu's catalogue), print, other archives' holdings,
+another target's material, a person's reading -- with what each turned up. No three named places, no blocker word; "cheapest
+untried step outside the frame" instead. The retrospective turns this into a check (Usage 8a) at its next pass.
