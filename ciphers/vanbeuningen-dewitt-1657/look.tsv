@@ -1,0 +1,10 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			dewitt_01_405.jpg	manifest	owed
+2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			dewitt_01_406.jpg	manifest	owed
+2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			NL-HaNA_3.01.17_1538_0206.jpg	manifest	owed
+2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			NL-HaNA_3.01.17_1538_0207.jpg	manifest	owed
+2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			NL-HaNA_3.01.17_1538_0208.jpg	manifest	owed
+2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			NL-HaNA_3.01.17_1538_0209.jpg	manifest	owed
+2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			NL-HaNA_3.01.17_1538_0210.jpg	manifest	owed
+2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			NL-HaNA_3.01.17_1538_0211.jpg	manifest	owed
