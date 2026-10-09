@@ -1,0 +1,14 @@
+pair	n_a	n_b	leaves	lolo_acc	decided	chance	t	enabled	why
+T18/T98	5	18	9	0.636	22	0.783	0.1	0	LOLO accuracy not above chance
+T90/T53	8	43	10	0.806	31	0.843	0.7	0	LOLO accuracy not above chance
+T76/T66	18	0	7					0	too few tiles or leaves
+T76/T86	18	24	8	0.765	17	0.571	0.8	1	
+T76/T45	18	42	11	0.623	53	0.700	0.3	0	LOLO accuracy not above chance
+T64/T95	0	1	1					0	too few tiles or leaves
+T64/T51	0	0	0					0	too few tiles or leaves
+T50/T36	6	20	8	0.812	16	0.769	0.9	1	
+T92/T95	0	1	1					0	too few tiles or leaves
+T92/T98	0	18	8					0	too few tiles or leaves
+T83/T24	11	0	4					0	too few tiles or leaves
+T60/T86	43	24	10	0.654	52	0.642	0.2	1	
+T13/T64	1	0	1					0	too few tiles or leaves
