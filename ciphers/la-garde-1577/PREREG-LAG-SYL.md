@@ -62,3 +62,32 @@ Control calibration (family_run rows in HYPOTHESES.md, 00:4x UTC): mean recovery
   judge on the decode, report it, grade every token S at best, claim no reading in this job, and name a shuffle-decode judge
   check (rule 3, ARM-C1) as the next step. Target stays `open` either way.
 - Scores to families/lag_syl.tsv; `--report` re-prints; `--check` re-runs and diffs (rule 7).
+
+## Amendment 2 (LAG-SYL13, 9 Oct 2026 02:5x UTC; written and pushed before any err-0.13 score is computed)
+
+Why: LAG-MARKS (PREREG-LAG-MARKS.md) left the one-reader marks-kept error at 0.071 central / **0.125 upper**, undecided against
+the band Amendment 1's negative covers (<= 0.107). One more control level, **err 0.13** (the upper, rounded up). Nothing else
+changes: same family, spec input (239 marks-kept tokens), corpora, restarts 8, solver defaults, statistic (score per cipher
+token). The v2 transcription is not edited.
+
+1. **Control calibration**, the LAG-SYL invocation verbatim: `tools/family_run.py specs/la-garde-1577.json --family syllabary
+   --seeds 3 --gate 0.6 --control-only --measured-error 0.13 --param err=0.13`. Mean recovery < 0.60 -> **"control below gate at
+   0.13"**: the syllabary (regular) negative stays conditional on a true marks-kept error <= ~0.11 (between 0.107 and 0.13 the
+   control's gate is crossed, so a target run at the upper error estimate would be outside what the control backs); target not
+   gated at 0.13; stop.
+2. If the mean is >= 0.60, the score-gap gate at 0.13 (`families/lag_syl13.py`, 4 processes):
+   - T and (b) are **Amendment 1's own values** read from the committed `families/lag_syl.tsv` (target solver seed 1, and the
+     40 shuffled targets; deterministic, `lag_syl.py --check` exit 0 at 01:20 UTC). Not re-solved.
+   - (a13) **40 matched controls at err 0.13, seeds 1-40** (40 rather than 20 so p05 is not the sample minimum).
+   - **Coverage gate at 0.13: FAIL iff T < p05(a13)** (T already clears p95(b) in Amendment 1). p05 = ceil(0.05 n)-th order
+     statistic, as lag_syl.py.
+   - **Power at 0.13:** 10 held-out controls at err 0.13, seeds 101-110, each against the p95 of 20 shuffles of its own
+     ciphertext (shuffle seeds 1-20, solver seed k) and p05(a13). Power PASS iff >= 80% of the held-out controls with recovery
+     >= 0.60 pass, and at least 5 such controls exist (else "power undetermined at 0.13", read as power FAIL).
+   - Read-out: power PASS and T < p05(a13) -> the control-backed negative for syllabary (regular) **extends to err 0.13**, which
+     covers LAG-MARKS' upper bound 0.125. Power PASS and T >= p05(a13) -> T is inside the spread of a syllabary read at err
+     0.13 though below it at <= 0.107: the negative **does not extend** to 0.13 and stays conditional on error <= ~0.11; this is
+     **not** a positive (no decode is read, judged or graded in this job; a decode-and-judge with the ARM-C1 shuffle check is
+     the named next step only in that branch). Power FAIL -> "untested-by-this-gate at 0.13", target result not read.
+   - Status stays `open` in every branch. No reading is claimed. Scores to `families/lag_syl13.tsv`; `--report` re-prints;
+     `--check` re-solves and diffs (rule 7).
