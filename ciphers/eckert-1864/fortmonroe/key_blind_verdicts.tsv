@@ -1,0 +1,39 @@
+# KEY-BLIND (9 Oct 2026, account 1, for LANE LEDGER): verdicts on key_tw.py --blind (seed 20261009, 34 windows), written before unmasking.
+# R = the given value reads in context, N = does not, U = unclear. Scored: R counts as a read; N and U do not.
+# Disclosure: key_tw.py has no --help; running it with --help printed the default (unmasked) occurrence listing, so this reader
+# saw the candidate windows before the blind set. The verdicts are judged on context alone, but the read is not fully blind.
+n	mark	note
+00	N	"hold the Dupont at [Troops]" wants a place
+01	U	"must remain [stop] for vessels": a break is possible but forced
+02	R	"colored troops to Hilton Head"
+03	R	clause break before "Energetic and efficient"
+04	N	between two personal names
+05	R	clause break before "the money"
+06	R	end of text
+07	R	clause break before "I go now"
+08	R	"bring troops"
+09	N	before a signature
+10	R	"fit to bring troops from"
+11	R	clause break before "I have seen"
+12	R	"all the troops have"
+13	R	clause break before "I do not think"
+14	R	"without fail. "
+15	N	"preparing by [stop]" needs an object
+16	N	"pay Mr [stop]" needs a name
+17	R	"in salmoning troops and trains"
+18	N	"another to [stop]" needs an object
+19	U	"Thomas [stop] Baptism Unity Confidential": break possible, unclear
+20	R	"immediately. shall the"
+21	R	"pledge for troops" then period word
+22	N	"It is not [stop] to take up" needs an adjective
+23	R	"the troops with all possible dispatch"
+24	N	"The ramble press [stop] is approved" splits subject from verb
+25	R	"any such troops as may be enroute"
+26	R	clause break before "give"
+27	N	"a dispatch from [stop] has just been recd" needs a sender
+28	R	before "end"
+29	N	"to [stop] to you"
+30	N	"Nancy [Troops] was this morning" wants a ship or name
+31	R	clause break before "your mangle"
+32	N	between names
+33	R	"troops arriving here in considerable numbers"
