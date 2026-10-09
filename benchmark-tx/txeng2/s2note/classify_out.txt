@@ -1,0 +1,12 @@
+passZ_S2b.tsv as measured total 316 {'read:=committed ref': 191, 'segmentation:deleted': 56, 'read:other': 48, 'segmentation:inserted': 21}
+passZ_S2b.tsv flagged excluded total 75 {'read:=committed ref': 14, 'read:other': 19, 'segmentation:inserted': 21, 'segmentation:deleted': 21}
+passA_S2.tsv as measured total 312 {'read:=committed ref': 189, 'segmentation:deleted': 61, 'read:other': 44, 'segmentation:inserted': 18}
+passA_S2.tsv flagged excluded total 74 {'read:=committed ref': 13, 'read:other': 19, 'segmentation:deleted': 24, 'segmentation:inserted': 18}
+passB_S2.tsv as measured total 323 {'read:=committed ref': 182, 'segmentation:deleted': 58, 'read:other': 63, 'segmentation:inserted': 20}
+passB_S2.tsv flagged excluded total 77 {'read:=committed ref': 13, 'segmentation:inserted': 20, 'segmentation:deleted': 21, 'read:other': 23}
+passA.tsv as measured total 248 {'read:=committed ref': 231, 'segmentation:deleted': 17}
+passA.tsv flagged excluded total 24 {'read:=committed ref': 16, 'segmentation:deleted': 8}
+passB.tsv as measured total 263 {'read:other': 29, 'read:=committed ref': 219, 'segmentation:inserted': 3, 'segmentation:deleted': 12}
+passB.tsv flagged excluded total 37 {'read:other': 13, 'read:=committed ref': 14, 'segmentation:inserted': 3, 'segmentation:deleted': 7}
+committed.tsv as measured total 236 {'read:=committed ref': 236}
+committed.tsv flagged excluded total 16 {'read:=committed ref': 16}

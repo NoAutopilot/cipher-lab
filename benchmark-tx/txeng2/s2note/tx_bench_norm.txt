@@ -1,0 +1,30 @@
+vivonne1573-f103r-confirm2 [confirm2] err_true 0.301 (322/1068) 95% 0.275-0.330 | wrong 241 deleted 59 inserted 22 | excluded 965 | lines missing 0
+  as measured 0.301 (322/1068) | flagged excluded 0.154 (77/500) 95% 0.125-0.188 [568 flagged]
+  top confusions (truth value <- read): c<-<deleted> x26, s<-d x17, a<-m x7, i<-m x7, e<-d x6, u<-<deleted> x6, a<-: x5, r<-d x5
+split confirm2: err_true 0.301 (322/1068) 95% 0.275-0.330
+paired passZ_S2b.tsv vs committed.tsv on vivonne1573-f103r-confirm2: 1068 common scored signs; base wrong 236, output wrong 300; fixed 3, broken 67; sign test p = 0.0000
+vivonne1573-f103r-confirm2 [confirm2] err_true 0.298 (318/1068) 95% 0.271-0.326 | wrong 235 deleted 64 inserted 19 | excluded 965 | lines missing 0
+  as measured 0.298 (318/1068) | flagged excluded 0.152 (76/500) 95% 0.123-0.186 [568 flagged]
+  top confusions (truth value <- read): c<-<deleted> x26, s<-d x17, a<-m x7, i<-m x7, u<-<deleted> x7, l<-<deleted> x6, e<-d x6, a<-: x5
+split confirm2: err_true 0.298 (318/1068) 95% 0.271-0.326
+paired passA_S2.tsv vs committed.tsv on vivonne1573-f103r-confirm2: 1068 common scored signs; base wrong 236, output wrong 299; fixed 3, broken 66; sign test p = 0.0000
+vivonne1573-f103r-confirm2 [confirm2] err_true 0.308 (329/1068) 95% 0.281-0.336 | wrong 248 deleted 61 inserted 20 | excluded 965 | lines missing 0
+  as measured 0.308 (329/1068) | flagged excluded 0.158 (79/500) 95% 0.129-0.193 [568 flagged]
+  top confusions (truth value <- read): c<-<deleted> x25, s<-d x17, r<-y x9, a<-m x7, i<-m x7, e<-d x6, u<-<deleted> x6, e<-<deleted> x5
+split confirm2: err_true 0.308 (329/1068) 95% 0.281-0.336
+paired passB_S2.tsv vs committed.tsv on vivonne1573-f103r-confirm2: 1068 common scored signs; base wrong 236, output wrong 309; fixed 5, broken 78; sign test p = 0.0000
+vivonne1573-f103r-confirm2 [confirm2] err_true 0.232 (248/1068) 95% 0.208-0.259 | wrong 231 deleted 17 inserted 0 | excluded 965 | lines missing 0
+  as measured 0.232 (248/1068) | flagged excluded 0.048 (24/500) 95% 0.033-0.070 [568 flagged]
+  top confusions (truth value <- read): s<-d x17, a<-: x8, a<-m x7, i<-m x7, u<-<deleted> x7, l<-: x6, e<-d x6, r<-d x5
+split confirm2: err_true 0.232 (248/1068) 95% 0.208-0.259
+paired passA.tsv vs committed.tsv on vivonne1573-f103r-confirm2: 1068 common scored signs; base wrong 236, output wrong 248; fixed 0, broken 12; sign test p = 0.0005
+vivonne1573-f103r-confirm2 [confirm2] err_true 0.246 (263/1068) 95% 0.221-0.273 | wrong 248 deleted 12 inserted 3 | excluded 965 | lines missing 0
+  as measured 0.246 (263/1068) | flagged excluded 0.074 (37/500) 95% 0.054-0.100 [568 flagged]
+  top confusions (truth value <- read): s<-d x17, a<-: x8, a<-m x7, i<-m x7, l<-: x6, e<-d x6, r<-tz x4, u<-tz x4
+split confirm2: err_true 0.246 (263/1068) 95% 0.221-0.273
+paired passB.tsv vs committed.tsv on vivonne1573-f103r-confirm2: 1068 common scored signs; base wrong 236, output wrong 260; fixed 2, broken 26; sign test p = 0.0000
+vivonne1573-f103r-confirm2 [confirm2] err_true 0.221 (236/1068) 95% 0.197-0.247 | wrong 236 deleted 0 inserted 0 | excluded 965 | lines missing 0
+  as measured 0.221 (236/1068) | flagged excluded 0.032 (16/500) 95% 0.020-0.051 [568 flagged]
+  top confusions (truth value <- read): s<-d x17, a<-: x8, a<-m x7, i<-m x7, l<-: x6, e<-d x6, r<-d x5, r<-tz x4
+split confirm2: err_true 0.221 (236/1068) 95% 0.197-0.247
+paired committed.tsv vs committed.tsv on vivonne1573-f103r-confirm2: 1068 common scored signs; base wrong 236, output wrong 236; fixed 0, broken 0; sign test p = 1.0000
