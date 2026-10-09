@@ -52,11 +52,28 @@ Scope (Usage 8a):
   does NOT mark fr.29880 f.18, fr.3040 f.19, fr.3041 f.18 against a line 'BnF fr.3040 f.18r', or read a RESTRICTED.md
            folder or debosnys-1883 (tools/tests/test_bnf_findingaid_prior.py). Not a DONE: prior_work.py check 1 stays per-slug.
            Controls (PREREG-MQS-BNF-S3.md): K1 volume recall, N1 folio shift +37, N2 volume swap; shelf grade on its row.
+  --attribute NOTICE.html ... (MQS-BNF-S5, 9 Oct 2026; disk only): catalogue-side attribution LEADS for pile items, one
+      row per bare or unattributed cipher item: the nearest attributed letters before/after it in item order (sender and
+      recipient keys, folio distance, agree yes/no), the names as papers to search, KEY-OFFICES.tsv rows naming them
+      (a register lookup, not a shape match), the powers the context names and their key depots (M45; paper pp.108-109,
+      188, 191), the language trial set for family_run.py --langs by century, and any neighbour's language printed apart
+      as neighbour:<lang>, never the default. A notice with no item list gives one volume-level row. Every lead is M.
+      --attribute-control: masked known answer (PREREG-MQS-BNF-S5.md): hide each attributed cipher letter's sender,
+      predict it from the preceding attributed letter; N1 within-volume random letter, N2 another volume's letter.
+  catches  a bare item filed inside one sender's run (fr.3029 no.34 f.67 between two La Tremoille letters: agree yes);
+           a folio-less index item placed by its number (fr.3029 nos 49, 66, 68, 72).
+  does NOT give a row to an attributed cipher letter, a deciphered item or a key sheet; promote a neighbour's language;
+           match ROI or a longer name in KEY-OFFICES.tsv (tools/tests/test_bnf_findingaid_attr.py).
+  Result 9 Oct 2026: cipher letters A 0.322 (N 59, 21 volumes) vs N1 mean 0.333 p95 0.407 -> FAIL; shelf weak. Adjacency
+  adds nothing over the volume's sender mix for cipher letters: read the lead as "who writes in this volume", not "who
+  wrote this item". Sign inventory, shape match and a sample read need images (Gallica 403): not built here.
   --census PHRASE ... --out DIR: one quoted POST per phrase, total + facets + first-page ids (never pages further).
   --local-search IR TERM and --branch-pdf ARK: routes read from /js/pagePresentationIr.js (status in --help).
 
 Usage:
   python3 tools/bnf_findingaid.py --pile NOTICE.html [...] [--prior FILE] [--tsv OUT]
+  python3 tools/bnf_findingaid.py --attribute NOTICE.html [...] [--window N] [--tsv OUT]
+  python3 tools/bnf_findingaid.py --attribute-control NOTICE.html [...] [--all-letters] [--permute N]
   python3 tools/bnf_findingaid.py --census "pièce en chiffre" "dépêches chiffrées" --out DIR
   python3 tools/bnf_findingaid.py --cote "Français 3251" --save-html DIR      # search + fetch + TSV to stdout
   python3 tools/bnf_findingaid.py --ark cc49712p --save-html DIR             # skip the search
@@ -430,6 +447,234 @@ def permute_report(paths, n=200, seed=20261009):
 
 
 # ---------------------------------------------------------------------------------------------------------------
+# --attribute: catalogue-side attribution leads for pile items (MQS-BNF-S5, 9 Oct 2026).  Scope in the module docstring.
+# ---------------------------------------------------------------------------------------------------------------
+LETTER = re.compile(r"(?i)^(?:copie|minute|double)?\s*(?:d'une\s+|de\s+la\s+)?lettres?(?:\s+originale)?\s*,?\s*"
+                    r"(?:en\s+chiffre\s*,?\s*)?(?:de|d')\s*(.*)$")
+RECIP = re.compile(r"(?i)(?:\s|«|^)(?:à|au|aux|adress[ée]e\s+(?:à|au)?)\s+(.*)$")
+CAPS = re.compile(r"[A-ZÀ-ÝÇ][A-ZÀ-ÝÇ'\-]{3,}")
+CAPWORD = re.compile(r"\b[A-ZÀ-ÝÇ][a-zà-ÿç]{3,}\b")
+NOT_NAME = {'Lettre', 'Lettres', 'Copie', 'Monseigneur', 'Madame', 'Monsieur', 'Datum', 'Pièce', 'Minute'}
+YEAR = re.compile(r'\b(1[4-8]\d\d)\b')
+POWERS = [  # (power, keyword regex over sender/recipient/title text); France is also the BnF holder
+    ('France', r"\b(roy|roi|reine m[eè]re|dauphin|Henri III|Henri IV|Charles IX|Louise de Savoie|Robertet|Villeroy)\b"),
+    ('Scotland', r"(?i)(reine d.[EÉ]cosse|[EÉ]cosse|Marie Stuart|Stuart)"),
+    ('England', r"(?i)(Angleterre|[EÉ]lisabeth|Elizabeth|Worcester|Cecil|Walsingham|anglais)"),
+    ('Spain', r"(?i)(Espagne|Philippe II|roi catholique|Granvelle|espagnol|Castille)"),
+    ('Papacy', r"(?i)(\bpape\b|l[ée]gat|nonce|Saint-Si[eè]ge|\bRome\b|cardinal)"),
+    ('Venice', r"(?i)(Venise|\bdoge\b|Seigneurie)"),
+    ('Empire', r"(?i)(empereur|\bEmpire\b|Charles Quint|Ferdinand|Maximilien|Vienne)"),
+    ('Florence', r"(?i)(Florence|Toscane|grand.duc|M[ée]dicis)"),
+    ('Milan', r"(?i)(Milan|Sforza)"),
+    ('Savoy', r"(?i)(Savoie|Turin)"),
+]
+DEPOTS = {  # where keys and decipherers' copies of each power sit (M45; a lead to log as a searched family, not a finding)
+    'France': "BnF fr. 'recueils de chiffres' (e.g. fr.6204); Archives des Affaires etrangeres, Memoires et documents; BnF Clairambault",
+    'England': 'TNA SP 106 (ciphers and keys); TNA SP 53 (Mary Queen of Scots); BL Cotton and Harley (Phelippes papers, e.g. Harley 1582)',
+    'Scotland': 'TNA SP 53 and SP 52; NRS (National Records of Scotland); BL Cotton Caligula',
+    'Spain': 'AGS Estado (Simancas) cifras and claves; AHN Estado',
+    'Papacy': 'Archivio Apostolico Vaticano, Segreteria di Stato (Nunziature, cifre)',
+    'Venice': 'ASVe Consiglio dei Dieci, Capi (cifrari, lettere degli ambasciatori)',
+    'Empire': 'HHStA Vienna, Staatenabteilungen and the Geheime Ziffernkanzlei papers',
+    'Florence': 'ASF Mediceo del Principato (cifrari)',
+    'Milan': 'ASMi Sforzesco (cifre)',
+    'Savoy': 'ASTo Corte, Materie politiche (cifre)',
+}
+LANG_SETS = {15: 'it15,fr16,la,es1600,de1600,en', 16: 'fr16,it16dip,es1600,la,de1600,en', 17: 'fr17,it,es17a,la17,de17,en',
+             18: 'fr18,it,es18,la18,nl18,en18', 0: 'fr,it,es,la,de,en'}
+LANG_CODE = {'italien': 'it', 'espagnol': 'es', 'latin': 'la', 'anglais': 'en', 'allemand': 'de', 'flamand': 'nl',
+             'néerlandais': 'nl', 'neerlandais': 'nl', 'portugais': 'pt'}
+
+
+def _fold(s):
+    import unicodedata
+    return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn').upper()
+
+
+def letter_parties(text):
+    """'Lettre de « BONNYVET,... à monseigneur le tresorier Robertet,... »' -> ('BONNYVET', 'ROBERTET').  Sender key =
+    the LAST all-capitals word of 4+ letters in the sender clause after dropping [editorial brackets] (DE LA TREMOILLE ->
+    TREMOILLE, FRANÇOYS SILLY -> SILLY, HENRY [D'ALBRET] -> HENRY), else the last capitalised word; '' when none.
+    Recipient key: ROI for roy/roi, else the last capitalised word of the recipient clause; '' when none."""
+    m = LETTER.match(text.strip())
+    if not m:
+        return '', ''
+    rest = re.sub(r'\[[^\]]*\]', '', m.group(1))
+    mr = RECIP.search(rest)
+    sender_cl = rest[:mr.start()] if mr else rest
+    rec_cl = re.split(r'\.\.\.|,|»|\.\s', mr.group(1))[0] if mr else ''
+    caps = [w.strip("'-") for w in CAPS.findall(sender_cl)]
+    caps = [w for w in caps if len(w) >= 4]
+    if caps:
+        snd = _fold(caps[-1])
+    else:
+        cw = [w for w in CAPWORD.findall(sender_cl) if w not in NOT_NAME]
+        snd = _fold(cw[-1]) if cw else ''
+    if re.search(r'(?i)\b(roy|roi)\b', rec_cl):
+        rcp = 'ROI'
+    else:
+        cw = [w for w in CAPWORD.findall(rec_cl) + [w.strip("'-") for w in CAPS.findall(rec_cl)] if w not in NOT_NAME]
+        rcp = _fold(cw[-1]) if cw else ''
+    return snd, rcp
+
+
+def item_order(rows):
+    """Item order for adjacency: by item number when the foliated rows' numbers rise (the notice's index part lists
+    folio-less items last, e.g. fr.3029 nos 49, 66, 68, 72), else the notice's own order."""
+    def num(r):
+        m = re.match(r'(\d+)', r['no'])
+        return int(m.group(1)) if m else None
+    nums = [num(r) for r in rows if r['folio'] and num(r) is not None]
+    rising = sum(1 for a, b in zip(nums, nums[1:]) if b > a)
+    if nums and all(num(r) is not None for r in rows) and rising >= 0.9 * (len(nums) - 1):
+        return sorted(rows, key=lambda r: (num(r), rows.index(r)))
+    return list(rows)
+
+
+def neighbour_lead(seq, i):
+    """seq: ordered rows with 'snd'/'rcp'; -> (prev row|None, next row|None) nearest attributed letters around i."""
+    prev = next((seq[j] for j in range(i - 1, -1, -1) if seq[j].get('snd')), None)
+    nxt = next((seq[j] for j in range(i + 1, len(seq)) if seq[j].get('snd')), None)
+    return prev, nxt
+
+
+def powers_in(text):
+    return [p for p, rx in POWERS if re.search(rx, text or '')]
+
+
+def keys_on_file(names, root):
+    """KEY-OFFICES.tsv rows whose office or correspondents name one of NAMES (folded, whole word, 4+ letters)."""
+    path, out = os.path.join(root, 'KEY-OFFICES.tsv'), []
+    if not os.path.exists(path):
+        return out
+    names = [n for n in names if n and len(n) >= 4 and n != 'ROI']
+    for line in open(path, encoding='utf-8', errors='ignore'):
+        c = line.rstrip('\n').split('\t')
+        if len(c) < 3 or c[0] == 'key_path':
+            continue
+        hay = _fold(c[1] + ' ' + c[2])
+        if any(re.search(r'\b%s\b' % re.escape(n), hay) for n in names) and c[0] not in out:
+            out.append(c[0])
+    return out
+
+
+def lang_set(years, neighbours_text):
+    cent = (min(years) // 100 + 1) if years else 0
+    trial = LANG_SETS.get(cent, LANG_SETS[0])
+    nb = sorted({LANG_CODE.get(m.group(1).lower(), m.group(1).lower()) for t in neighbours_text for m in [LANG.search(t)] if m})
+    return trial, ','.join('neighbour:' + x for x in nb)
+
+
+ATTR_COLS = ['cote', 'folio', 'no', 'kind', 'text', 'prev_snd', 'prev_rcp', 'prev_dist', 'next_snd', 'next_rcp', 'next_dist',
+             'agree', 'papers', 'keys_on_file', 'powers', 'depots', 'lang_trial', 'lang_neighbour', 'grade']
+
+
+def attribute_volume(s, root, window=0):
+    """-> list of lead rows for the notice's bare/named-unattributed cipher items (volume-level row if no item list)."""
+    title, rows = parse(s)
+    cote = title_cote(title)
+    pres = ' '.join(volume_blocks(s))
+    vyears = [int(y) for y in YEAR.findall(title + ' ' + pres)]
+    if not rows:
+        pw_ = powers_in(title + ' ' + pres)
+        trial, _ = lang_set(vyears, [])
+        return [dict(cote=cote or title[:40], folio='', no='', kind='volume-level', text=(title + ' | ' + pres)[:160],
+                     prev_snd='', prev_rcp='', prev_dist='', next_snd='', next_rcp='', next_dist='', agree='',
+                     papers='', keys_on_file='', powers=' '.join(pw_), depots=' || '.join(DEPOTS[p] for p in pw_),
+                     lang_trial=trial, lang_neighbour='', grade='lead (volume level; image triage first)')]
+    seq = item_order(rows)
+    for r in seq:
+        r['kind'] = classify_item(r)
+        r['snd'], r['rcp'] = letter_parties(r['text'])
+        r['f'] = _folio_num(r['folio'])
+    out = []
+    for i, r in enumerate(seq):
+        if r['kind'] not in ('bare', 'named') or r['snd']:
+            continue
+        p, n = neighbour_lead(seq, i)
+        dist = lambda x: (abs(x['f'] - r['f']) if x and x['f'] is not None and r['f'] is not None else '')
+        if window and all(d == '' or d > window for d in (dist(p), dist(n))):
+            p = n = None
+        names = sorted({x for x in (p and p['snd'], p and p['rcp'], n and n['snd'], n and n['rcp']) if x})
+        ctx = ' '.join(x['text'] for x in (p, n) if x) + ' ' + r['text'] + ' ' + title
+        pw_ = sorted(set(powers_in(ctx) + ['France']), key=[q for q, _ in POWERS].index)
+        years = [int(y) for y in YEAR.findall(ctx)] or vyears
+        span = seq[max(0, i - 3):i + 4]
+        trial, nb = lang_set(years, [x['text'] for x in span if x is not r])
+        agree = 'yes' if p and n and p['snd'] == n['snd'] else ('no' if p and n else '')
+        out.append(dict(cote=cote, folio=r['folio'], no=r['no'], kind=r['kind'], text=r['text'][:80],
+                        prev_snd=p['snd'] if p else '', prev_rcp=p['rcp'] if p else '', prev_dist=dist(p),
+                        next_snd=n['snd'] if n else '', next_rcp=n['rcp'] if n else '', next_dist=dist(n), agree=agree,
+                        papers=' '.join(names), keys_on_file=' '.join(keys_on_file(names, root)), powers=' '.join(pw_),
+                        depots=' || '.join('%s: %s' % (q, DEPOTS[q]) for q in pw_), lang_trial=trial, lang_neighbour=nb,
+                        grade='M lead (neighbours in the notice; never an attribution)'))
+    return out
+
+
+def attribute(paths, root=None, tsv=None, window=0):
+    root = root or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    res, seen = [], set()
+    for p in paths:
+        k = os.path.basename(p)
+        if k in seen:
+            continue
+        seen.add(k)
+        res += attribute_volume(open(p, errors='ignore').read(), root, window)
+    lines = ['\t'.join(ATTR_COLS)] + ['\t'.join(str(r[c]) for c in ATTR_COLS) for r in res]
+    if tsv:
+        open(tsv, 'w').write('\n'.join(lines) + '\n')
+    return res, lines
+
+
+def attribute_control(paths, n=200, seed=20261009, cipher_only=True):
+    """Masked known answer (PREREG-MQS-BNF-S5): hide each attributed letter's sender, predict it from the nearest
+    preceding attributed letter in item order (following if none).  -> dict with A (accuracy), agree precision, N1
+    (within-volume random other letter: mean, p95), N2 (random letter of another volume: mean)."""
+    import random
+    vols, seen = [], set()
+    for p in paths:
+        k = os.path.basename(p)
+        if k in seen:
+            continue
+        seen.add(k)
+        seq = item_order(parse(open(p, errors='ignore').read())[1])
+        for r in seq:
+            r['snd'], r['rcp'] = letter_parties(r['text'])
+        if any(r['snd'] for r in seq):
+            vols.append(seq)
+    tests = []                           # (volume index, position)
+    for vi, seq in enumerate(vols):
+        for i, r in enumerate(seq):
+            if r['snd'] and (CIPHER.search(r['text']) or not cipher_only):
+                tests.append((vi, i))
+    hit = agree_n = agree_hit = 0
+    for vi, i in tests:
+        p, nx = neighbour_lead(vols[vi], i)
+        pred = (p or nx or {}).get('snd', '')
+        hit += pred == vols[vi][i]['snd']
+        if p and nx and p['snd'] == nx['snd']:
+            agree_n += 1
+            agree_hit += p['snd'] == vols[vi][i]['snd']
+    rng, n1, n2 = random.Random(seed), [], []
+    att = [[j for j, r in enumerate(seq) if r['snd']] for seq in vols]
+    for _ in range(n):
+        h1 = h2 = 0
+        for vi, i in tests:
+            pool = [j for j in att[vi] if j != i]
+            if pool:
+                h1 += vols[vi][rng.choice(pool)]['snd'] == vols[vi][i]['snd']
+            ov = rng.choice([v for v in range(len(vols)) if v != vi]) if len(vols) > 1 else vi
+            h2 += vols[ov][rng.choice(att[ov])]['snd'] == vols[vi][i]['snd']
+        n1.append(h1 / max(1, len(tests)))
+        n2.append(h2 / max(1, len(tests)))
+    n1.sort()
+    N = len(tests)
+    return dict(N=N, volumes=len({v for v, _ in tests}), A=hit / max(1, N), agree_n=agree_n,
+                agree_prec=agree_hit / max(1, agree_n), n1_mean=sum(n1) / max(1, n), n1_p95=n1[min(n - 1, int(0.95 * n))],
+                n2_mean=sum(n2) / max(1, n))
+
+
+# ---------------------------------------------------------------------------------------------------------------
 # --census / --local-search / --branch-pdf (MQS-BNFPILE, 9 Oct 2026)
 # ---------------------------------------------------------------------------------------------------------------
 def curl_meta(args):
@@ -515,6 +760,8 @@ def main():
     g.add_argument('--census', nargs='+', metavar='PHRASE', help='count quoted catalogue phrases (needs --out DIR)')
     g.add_argument('--local-search', nargs=2, metavar=('IR', 'TERM'), help='search inside one finding aid')
     g.add_argument('--branch-pdf', metavar='ARK', help='UNTESTED ROUTE (HTTP 500 on 9 Oct 2026)')
+    g.add_argument('--attribute', nargs='+', metavar='NOTICE.html', help='attribution leads for pile items (offline; M leads only)')
+    g.add_argument('--attribute-control', nargs='+', metavar='NOTICE.html', help='masked-letter known answer + nulls (PREREG-MQS-BNF-S5)')
     g.add_argument('--cote')
     g.add_argument('--ark')
     g.add_argument('--html')
@@ -524,6 +771,8 @@ def main():
     ap.add_argument('--permute', type=int, metavar='N', help='--pile: across-volume permutation null, N permutations')
     ap.add_argument('--prior-work', action='store_true', help='--pile: own work across ciphers/ (shelfmark exact) + active edition; disk only')
     ap.add_argument('--no-portals', action='store_true', help='--pile: skip the prior_work.py per-item check (fast)')
+    ap.add_argument('--window', type=int, default=0, help='--attribute: drop neighbours more than N folios away (0 = no limit)')
+    ap.add_argument('--all-letters', action='store_true', help='--attribute-control: mask every attributed letter, not only cipher ones')
     ap.add_argument('--save-html', help='directory to keep the fetched notice (fetch once, read from disk after)')
     a = ap.parse_args()
     if a.census:
@@ -539,6 +788,16 @@ def main():
         return 0
     if a.branch_pdf:
         print(branch_pdf(a.branch_pdf))
+        return 0
+    if a.attribute:
+        res, lines = attribute(a.attribute, tsv=a.tsv, window=a.window)
+        print('\n'.join(lines))
+        return 0
+    if a.attribute_control:
+        r = attribute_control(a.attribute_control, a.permute or 200, cipher_only=not a.all_letters)
+        print('# attribute-control (%s): N %d in %d volumes | A %.3f | agree %d prec %.3f | N1 within-volume mean %.3f p95 %.3f'
+              ' | N2 across-volume mean %.3f' % ('all letters' if a.all_letters else 'cipher letters', r['N'], r['volumes'],
+                                                 r['A'], r['agree_n'], r['agree_prec'], r['n1_mean'], r['n1_p95'], r['n2_mean']))
         return 0
     if a.pile:
         res, lines = pile(a.pile, a.prior, a.tsv, portals=not a.no_portals, prior_work=a.prior_work)

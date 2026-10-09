@@ -63,6 +63,32 @@ with offline catch / must-not-block tests and no control of their own: their gra
 to find anything). Nothing is run on a target from this option beyond listing leads for fr.3029 and the 26 image-triage
 notices.
 
-## Results (filled after scoring; numbers above are not edited)
+## Results (filled after scoring at 09:44 UTC by date -u; numbers above are not edited)
 
-(pending)
+Corpus as run: 140 notices with >= 1 attributed letter (2026-10-07 + 2026-10-09, one per ark filename); the "52 volumes,
+30 cipher letters" pre-count above covered 2026-10-09 only and a narrower letter pattern.
+`python3 tools/bnf_findingaid.py --attribute-control sources/bnf-findingaids/2026-10-0[79]/*.html [--all-letters]`
+
+| Set | N | volumes | A (top-1) | agree n / prec | N1 within-volume mean / p95 | N2 across-volume mean |
+|---|---|---|---|---|---|---|
+| cipher letters (gated) | 59 | 21 | 0.322 | 12 / 0.500 | 0.333 / 0.407 | 0.005 |
+| all letters (reported) | 6,070 | 140 | 0.253 | 1,362 / 0.652 | 0.179 / 0.184 | 0.011 |
+
+Gate: (a) N_c 59 >= 20 yes; (b) N1_c mean 0.333 < 0.95 yes (headroom); (c) A_c 0.322 >= 0.407 + 0.10 **no -> FAIL**.
+A_c sits at the within-volume null's mean: for cipher letters, adjacency in the notice adds nothing over the volume's
+sender mix. Over all letters adjacency beats N1 p95 by 0.069 (under the +0.10 a gate would ask; not gated), and the
+agree case reads 0.652 -- the lead carries some signal for clear letters, none shown for cipher ones. Both nulls can and
+did differ from K1 (N2 0.005 vs N1 0.333 shows the volume mix is most of the signal). Expected values were A_c ~0.5 and
+A_all ~0.65; both came in lower (sender keys are imperfect: first-name-only signatures such as HENRY / CATERINE and
+title-only senders read as separate keys, which lowers K1 and N1 alike).
+
+Shelf: `--attribute` **weak** (FAIL above, not re-briefed); `--attribute-control` weak (the instrument that produced it).
+Read a lead as "who writes in this volume", never as "who wrote this item".
+
+Leads listed (no target changed): fr.3029 -- 7 rows (nos 34 f.67, 49, 59 f.134, 66, 68, 70 f.182, 72); no.34 is the
+only agree=yes (TREMOILLE before and after, 2 folios each side; recipients ROBERTET / ROI); nos 49, 66, 68 sit between
+TREMOILLE and BONNYVET; 70 and 72 follow BONNYVET; KEY-OFFICES.tsv names none of them; powers France only; no year in
+the notice, so the generic trial set; no.59's neighbour is Latin (neighbour:la, not promoted). The 26 S2B image-triage
+notices each give one volume-level row (powers from title/Présentation text: e.g. Dupuy 155 France Spain Papacy Empire
+Florence Savoy; Clair. 460 Spain). Not built (need page images, Gallica 403 to cloud): sign inventory on line crops,
+shape match against keys on file, the sample read -- they stay with S4/S5 when Gallica answers.
