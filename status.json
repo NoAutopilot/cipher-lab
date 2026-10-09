@@ -11298,17 +11298,18 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18c)'"
+        "AUDIT.md '## AUDIT (FV-MS18c)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-29)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-MS18c verifier (account 1)",
+      "depth_by": "AUD2-LEDGER-29 verifier (account 4)",
       "depth_date": "9 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "9 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18c)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-29)' section 4",
       "reading_version": "MS18-R2 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18c) section 3",
       "unresolved_spans": "",
       "depth_unread": {
@@ -11320,9 +11321,9 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): C. A. Dana for the Secretary of War, Washington, to Capt. Van Duzer, Nashville, for Brig. Gen. J. F. Miller, 5 Nov 1864: arrest the rebel agent Col. Thos. T. Tunstall at 10 a.m. Monday next and seize his papers (E326)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 5 Nov 1864 C. A. Dana, for the Secretary of War, ordered the arrest at Nashville at 10 a.m. on Monday 7 Nov of Col. Thomas T. Tunstall as a rebel agent and the seizure of his papers -- one of four copies of the order sent the same day to St Louis, Louisville, Nashville and Baltimore, each naming that command's men; not located in the Official Records (ser. I vols. 39 pt 3, 45; ser. II vol. 7), Google Books or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18c); no external check of the content located (holds D2): the three sibling copies (9889/0 = E325, 9889/1, 9890/0) share the code words; not N4: OR ser. II vol. 8, the Nashville press of 7-9 Nov 1864, NARA RG 107/110, Dana papers and JSTOR not searched",
-      "depth": "D2",
+      "line": "Read at grade H with War Department Cipher No. 1: on 5 Nov 1864 C. A. Dana, for the Secretary of War, telegraphed Capt. Van Duzer at Nashville for Brig. Gen. J. F. Miller to arrest at 10 a.m. on the following Monday the rebel agent Col. Thos. T. Tunstall of Nashville and seize his papers; the agent appears as 'Col. Thos. J. Tunstall, Nashville' in the informant's list printed in Horan's Confederate Agent (1954) p.227 and a same-day relay of the companion Chicago order is in the Official Records (ser. I vol. 39 pt 3 p.678), but this telegram was not located there, in OR ser. II vols. 7-8, Dana's Recollections, the Nashville Daily Union via Chronicling America, or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-MS18c, AUD2-LEDGER-29), weak: the agent's rank, name and station are printed (Horan 1954 p.227, 'Thos. J.' vs the page's 'Thos T') and a same-day sibling order is printed (OR I/39 pt 3 p.678); not N4: NARA RG 107/110/153, Dana and Stanton papers, the Nashville press by eye not searched; JSTOR rows open",
+      "depth": "D3",
       "completeness": "16 H of 16 code-word groups ('Thos T Tunstall' plain)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.223, pointer 9889, E326"
@@ -11331,8 +11332,8 @@
       "documents": [
         "Huntington mssEC 18 (obj 10074) p.223, pointer 9889, E326"
       ],
-      "depth_sentence": "On 5 Nov 1864 the War Department ordered the arrest at Nashville of Col. Thomas T. Tunstall as a rebel agent, with the seizure of his papers, timed for 10 a.m. on Monday 7 Nov.",
-      "depth_check": "code clause: The Infant = Secretary of War, oakum = Arrest, rambling = Following, walpole = Rebel, Emily = 10 AM, Embrace = Nashville read passim (E325 and the sibling copies 9889/1, 9890/0 carry the same clause); ciphertext eye-checked on the ledger image by FV-MS18c; no external check of the content located",
+      "depth_sentence": "On 5 November 1864 the War Department ordered the Nashville command to arrest Col. Thos. T. Tunstall as a rebel agent at 10 a.m. on the following Monday and to seize his papers.",
+      "depth_check": "code clause: The Infant = Secretary of War, oakum = Arrest, rambling = Following, walpole = Rebel, Emily = 10 AM, Embrace = Nashville; external (non-statistical): Horan, Confederate Agent (1954) p.227, the informant's list 'Nashville ... Col. Thos. J. Tunstall'; OR ser. I vol. 39 pt 3 p.678, the same-day Chicago relay ('By direction of the Secretary of War you will arrest on Monday morning ... the following rebel agents and seize their papers'); both read and the ledger image re-checked by AUD2-LEDGER-29",
       "depth_note": "16 H of 16 code-word groups"
     },
     {

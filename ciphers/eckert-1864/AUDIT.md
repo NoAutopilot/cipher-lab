@@ -11681,3 +11681,76 @@ ciphers/eckert-1864/decode.py --check` -> "reading.md is current".
 Requests: googleapis.com 9 (all 200); archive.org 6 (2 djvu, 1 Horan djvu, 2 metadata, 1 advancedsearch; all 200) + print_check's 3;
 be-api.us.archive.org 7 + print_check's 12 (several 502); hdl.huntington.org 8 (7 CONTENTdm + 1 item info) + 1 IIIF page (all 200);
 api.semanticscholar.org 3 + print_check's 2 (one 429); api.core.ac.uk 2; api.openalex.org 7 and api.crossref.org 2 (print_check).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-29)
+
+Second verifier AUD2-LEDGER-29 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 19:07-19:3x UTC by
+`date -u`; a separate session and account from the reader MS18-R2 and the first auditor FV-MS18c (account 1); this session had not read or
+audited this entry before. Scope: **E326** only (WORK-QUEUE AUD2-LEDGER-29). Nothing decoded beyond key look-ups. Key source: `period`. No spec
+exists for eckert-1864, so `judge_plaintext.py` was not run. Committed: this section; `ms18/aud2_ledger29_hdl.py` + `.out` (10 CONTENTdm
+queries the first audit did not run, 5 item infos); `ms18/aud2_ledger29_scholar.py` + `.out` (Google Books, S2, CORE);
+`ms18/aud2_ledger29_phrases.txt` + `aud2_ledger29_sources.tsv` (tools/print_check.py input; its TSV kept in scratch, summarised below); two
+JSTOR-QUEUE.tsv rows. Re-derivation: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current".
+
+### 1. Re-derivation and image
+- `decode.py --check`: current. reading.md E326: H 16 code groups, no M, no unread span, as FV-MS18c graded.
+- **Image eye check this session** (IIIF 9889 at 2400 px; `tools/iiif_lines.py --image ... --region 150,1700,2050,700` found the entry's 7 lines;
+  crops in scratch, not committed): "Capt Van Duzer Nashville Washn Nov 5th 1864 / Jennie plaster for Palate J F Miller [Emp struck] / Empress unity
+  The Infant directs the oakum / at Emily on Monday morning next torch / rambling named walpole agent and the seizure / of his papers zebra
+  Paradise Thos T / Tunstall Embrace yoke Insanity stop Tun stall". **Every token matches ciphertext.txt**; the middle initial is clearly "T" on
+  the page (not "J"; see s.3).
+
+### 2. Families FV-MS18c did not cover, and what this pass did
+| Family | FV-MS18c | This pass |
+|---|---|---|
+| OR ser. II vol. 8 (1865 prisoners/state prisoners) | not searched | full djvu text (`warofrebellion0208rootrich`, 3.8 MB, 104 "Nashville"): "Tunstall" 0, "rebel agent" 0, "seizure of his/their papers" 0, "Monday morning next" 0. Ser. II vol. 7 re-grepped from its own djvu (`warofrebellion0207rootrich`): Tunstall 0 |
+| Horan, *Confederate Agent* (1954) -- the informant Jones's list, found by AUD2-LEDGER-28 for E325 | not searched for E326 | **read in IA full text** (`dli.ernet.157117`, djvu text, the list on p.227 by the page number printed in the text): "Nashville ... **Col. Thos. J. Tunstall**", in the same list as Kendall/Kennerly (St Louis, = E325) and "Louisville ... Capt. M. J. Garrett" (= the Louisville copy 9889/1, "M J Garrett"). The agent's rank, name and station are printed; the telegram is not |
+| OR ser. I vol. 39 pt 3 p.678 -- the same-day Chicago relay | E326 grep only | **re-read this session** in the volume's djvu text (`warofrebellion393unit`): Cook to Sweet, Springfield, 6 Nov 1864: "By direction of the Secretary of War you will arrest on Monday morning at 9 o'clock the following rebel agents and seize their papers: Maj. Morrison Maurice ... Capt. Thomas Sevia alias Oliver Ditson". Not E326; it confirms in print the order's date, authority and form. "Tunstall" 0 in the volume |
+| Nashville press, 7-9 Nov 1864 | not searched | Chronicling America (loc.gov JSON): the route reaches the *Nashville Daily Union* for 5-12 Nov 1864 (17 of the first 50 "Nashville" pages, the positive control); "Tunstall" 1 Nov 1864-31 Jan 1865: 7 pages, all Raleigh and Richmond papers, none Nashville; "Tunstal", "Tunstell" 0; "Tunstall rebel agent", "Col. Tunstall Nashville" 0. OCR-dependent: a weak negative, the Union's pages not read by eye |
+| Dana's own printed papers | not searched | Dana, *Recollections of the Civil War* (1898, `recollectionsofc00danarich` djvu): Tunstall 0, "rebel agent" 0 |
+| Huntington CONTENTdm, phrases not run before | 13 queries | 10 more (`CISOSEARCHALL`, all pointers, 3.3 s): Tunstall 3 (9889 own; 4349/4350 = "Tunstalls station", Va., June 1864); Van Duzer Miller 1, Van Duzer Tunstall 1, Bruch Garrett 1 (9889 own); seizure of his papers 7 (9889, 9890 own; 9844 = Stanton on Smith's pistols, Sept 1864; others not this); Dana arrest Nashville 1 (8519, Parsons, Jan 1865); Secretary of War directs the arrest 1 (9692, Mar 1864, other); rebel agents arrest 0; Sampson Hamilton arrest 0. No clear copy of E326 |
+| Quoted-phrase pass (tools/print_check.py, 5 phrases + 1 control) | Google Books 3 queries | OR II/7 (cached djvu): no hits x5; OR II/8 and I/39 pt 3: djvu unreachable to the tool (500, connection reset) and be-api 502 on part (both read directly instead, above); ia-global: no hits x2, 502 x3; OpenAlex no hits x5; CrossRef no relevant; Google Books: word-matches only (OR volumes, Tunstall genealogy), "Thomas T. Tunstall Nashville rebel agent" 0. The control phrase (OR I/39 pt 3 p.379) was not reached by the tool (502) |
+| Google Books, S2, CORE (targeted) | -- | GB 8 queries (keyed, `country=US`): the ex-consul Thomas T. Tunstall of Alabama (Tangier, Feb 1862; Lincoln *Collected Works* 1953; *The American Consul*; *Lincoln's Minister of Mystery*, 2026) and Alabama Tunstalls; no snippet carries the order or a Nashville arrest. S2: 2 queries 0, 1 x 429; CORE: 1 query unrelated returns, 1 x 500 |
+| JSTOR | not queued | 2 rows queued, families (i) and (ii); never blocking |
+| Unreachable / not searched | -- | NARA RG 107/110 (no NARA key); NARA RG 153 (Holt's report, Horan's source); Dana papers (LoC manuscripts); Stanton papers; the *Nashville Dispatch* and *Press* (not on the route); the Union's pages by eye |
+
+### 3. Findings
+- **The agent is in print by name and station, not the telegram.** Horan p.227 prints "Nashville ... Col. Thos. J. Tunstall" from Holt's
+  evaluation of Jones's confession; E326's clear text on the page is "Thos T". The two disagree on the middle initial; this is a data point, not
+  settled here (Horan's or the OCR's "J" vs the clerk's "T"). FV-MS18c's s.2 pointed to "Thomas T. Tunstall" the ex-consul at Cadiz (OR ser. II
+  vol. 2) as "context for the man"; **nothing read here identifies the Nashville agent with the ex-consul**, and Horan's "Col. Thos. J." argues
+  against assuming it. Corrected below (unsafe sentence).
+- **"Monday 7 Nov" is an inference** (5 Nov 1864 was a Saturday; "Monday morning next"), kept with that label; OR p.678's relay of 6 Nov
+  ("Monday morning at 9 o'clock") fits it. Nothing read says whether Tunstall was arrested.
+- **FV-MS18c's "four copies to St Louis, Louisville, Nashville and Baltimore, each naming that command's men"**: the Baltimore copy (9890/0,
+  "Paradise Wm Hamilton", to Sampson) is not on Jones's list in Horan p.227; it is a fourth order of the same form, not shown here to be a copy
+  of the same list. The wording is acceptable as filed ("each naming that command's men") and left.
+
+### 4. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E326 | **N3** (kept; weak, bordering N2: the agent's rank, name and station are printed in Horan 1954 p.227, and a same-day relay of the companion Chicago order in OR ser. I vol. 39 pt 3 p.678; this telegram was not located in print) | period | **D3** (raised from D2 with the check: 100% of code groups H, no gap; external non-statistical: Horan p.227 "Nashville ... Col. Thos. J. Tunstall" for the name-station pair, OR I/39 pt 3 p.678 for date, authority and form, both read this session; image re-checked) | not located after FV-MS18c's search and s.2 |
+
+- Not N4: NARA RG 107/110/153, Dana and Stanton papers, the Nashville press by eye not searched; JSTOR rows open. Not N2: N2 needs the
+  telegram's own text known elsewhere; what is known is its agent and its sister order. Not D4: no fresh rule-7 re-derivation session; the
+  initial (T/J) conflict open.
+- **Safe sentence:** "Read at grade H with War Department Cipher No. 1: on 5 Nov 1864 C. A. Dana, for the Secretary of War, telegraphed Capt. Van
+  Duzer at Nashville for Brig. Gen. J. F. Miller to arrest at 10 a.m. on the following Monday the rebel agent Col. Thos. T. Tunstall of
+  Nashville and seize his papers. The agent appears as 'Col. Thos. J. Tunstall, Nashville' in the informant's list printed in Horan, Confederate
+  Agent (1954), p.227, and a same-day relay of the companion Chicago order is printed in the Official Records, ser. I vol. 39 pt 3, p.678; this
+  telegram was not located in those, in OR ser. II vols. 7-8, Dana's Recollections, the Nashville Daily Union via Chronicling America, or the
+  Huntington's full-text search (searched 9 Oct 2026)." Depth sentence (D3): "On 5 November 1864 the War Department ordered the Nashville command
+  to arrest Col. Thos. T. Tunstall as a rebel agent at 10 a.m. on the following Monday and to seize his papers."
+- **Unsafe:** "first", "new", "unpublished" or "previously unread" for E326; "the arrest order is unknown to historians"; "Tunstall was arrested
+  on 7 Nov"; identifying the Nashville agent with Thomas T. Tunstall the ex-consul at Cadiz; "the four copies corroborate the key".
+
+### 5. Postmortem and fixes (for the next FIX job; reading.md not edited here)
+- Over-claim corrected: FV-MS18c's "no external check of the content located" (D2) missed Horan p.227 and OR I/39 pt 3 p.678, which its own
+  sibling E325 audit found; depth raised to D3 here with both read. status.json row (depth, depth_check, line, gap, audit_status) updated here.
+- E326 header/note: add "agent listed in Horan 1954 p.227 as 'Col. Thos. J. Tunstall' (page has 'Thos T'); companion Chicago relay OR I/39 pt 3
+  p.678". SECOND-OPINIONS-QUEUE row SO-ECKERT-E326: no count or class changed, row left as filed; its prompt should carry the Horan line before it
+  is answered.
+Requests: hdl.huntington.org 16 (10 CISOSEARCHALL, 5 item info, 1 IIIF; all 200); archive.org 11 (5 djvu, 3 metadata, 2 advancedsearch, 1 file
+list; all 200) + print_check's 2 (500, reset); be-api.us.archive.org 18 (print_check, several 502); www.loc.gov 9 (all 200);
+www.googleapis.com 8 + print_check's 6; api.openalex.org 7 and api.crossref.org 1 (print_check); api.semanticscholar.org 3 + print_check's 3 (429
+on 2); api.core.ac.uk 2 (1 x 500).
