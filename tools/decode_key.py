@@ -109,10 +109,54 @@ lexicon). It is meant to catch a letter value that reads in one word only (a val
 it must NOT flag a code that recurs in two unrelated real words, and it does not regrade anything (rule 4 grades stand;
 this is a report). Exit 0 whatever it finds; 2 if the target cannot be loaded. --consistency-tsv FILE writes the rows.
 
+--try CODE=VALUE[,CODE=VALUE...] / --avalanche (9 Oct 2026, MQS-CROSSWORD; the "crossword" or nomenclature phase of
+Lasry, Biermann and Tomokiyo 2023, pp.115 n.51 and 118-122: a guessed value is checked at every other occurrence, each
+confirmed value opens more words, a guess that fails anywhere is dropped). Promoted from ciphers/fr2980-gramont/
+infer_unkeyed.py (24 Sept 2026: the window score and the greedy loop) and test_f30r_top.py (24 Sept and 3 Oct 2026: the
+best-minus-current statistic, the shuffled-position null and the no-breakage rule); both are kept, their outputs cited.
+  Score of a window: per unbroken segment log2 P + C x length under a character model (C = model bits/char), +-W tokens
+  (--window, 8), a value of two or more letters pays 3 bits, a neighbour with no value is filled with the model's
+  likeliest letter. Model: --lm fr16 (tools/french16_ngram.py, default), fr18, or a corpus folder. No word segmentation
+  is needed, so it also runs where --consistency prints "skipped" (Danzay, Blathwayt).
+  --try: hypotheses held in memory only (key.tsv is never written; tested). Each occurrence is printed in context,
+  unknown codes as <code>, the hypothesis in [brackets]. Statistic = score(VALUE) - score(current value), or - the
+  runner-up among 23 letters + NULL + --words for a code with no value, summed over occurrences; other hypotheses of the
+  same call are in place. Null 1: the same statistic for a pseudo-code at n shuffled positions whose current value
+  equals this code's (100 draws, --nulls). Null 2: the code's own positions read as random values of VALUE's class (a
+  letter: the other letters; a word: the key's values within 1-2 letters of its length). Rule 3: both nulls can move
+  the statistic, because it depends on each occurrence's neighbours (null 1 changes the neighbours, null 2 the value);
+  a coverage-only or order-only null could not. Verdict: undecided at n = 1 (never rejected), when VALUE is the current
+  value (statistic 0, not an error), when a null cannot be built, when the statistic is not above both null p95s, or
+  below the acceptance rule; reject when the statistic is <= 0 or (n >= 4) more than a quarter of the occurrences lose
+  over 3 bits; accept otherwise. --try-log FILE appends time, target, hypothesis, occurrences, statistic, both p95s,
+  verdict and the flag non-blind (real use: ciphers/<t>/crossword_log.tsv; controls: a scratch path).
+  --avalanche: infer_unkeyed's greedy loop over the codes with no value and n >= 2 (fix the code whose best value leads
+  the runner-up by the largest margin, decode, repeat; --steps K), printing code, value, margin, runner-up, n and the
+  acceptance rule (--accept, default margin>=10,n>=5,null=no: fixed on Gramont control draws 0-4). Never writes a key.
+  Meant to catch: a wrong guess for a code that recurs (rejected: the right value reads better at its other
+  occurrences); a blank whose value the context fixes (proposed first). Must NOT flag: a hypothesis equal to the key
+  (zero, undecided), a code seen once (undecided), a true value on a hidden code (not rejected). Offline tests:
+  tools/tests/test_decode_key_try.py.
+  What failed before (read before trusting a verdict): the same instrument's later Gramont runs accepted almost
+  nothing (test_f30r_top.py rounds 1-3, 24 Sept and 3 Oct 2026: HASH and B8 at shuffled-position p 0.61-1.00; E's I
+  rejected by the breakage rule; A2-GRA3 accepted one value, ehx = T, and retired the cross shapes at 5, 2 and 1
+  occurrences). At low n, and on lines not in the model's language, the shuffled-position null cannot separate: the
+  verdict is then "undecided", not a ranking. The 24 Sept control's own limitation (Gramont NOTES.md): "only 25 distinct
+  keyed signs could fill the pool, so the draws repeat signs, and the 103 accepted control proposals are not 103
+  independent trials."
+  Known-answer controls (tools/tests/PREREG-MQS-CROSSWORD.md, per distinct code): K1 Gramont reproduction, 200/200 rows
+  identical to control_f30.tsv on the 24 Sept files (155/200, 50/53) and 210/210 identical to infer_unkeyed.py on
+  today's files (a port check, no power claim); K3 Danzay letters (fr16, 23 letters + NULL), true letter first for
+  19/23 codes (gate 70%, PASS; unigram-only baseline 2/23); K2 Blathwayt words (fr18, true + 9 same-band values),
+  58/116 first (gate 70%, FAIL) and false accepts 17/70 at n >= 5 (gate 10%, FAIL; unigram-only baseline 20/116).
+  Grading: a value accepted by --try enters a key (by a person or a later job) as M; as S only for a single-letter
+  value in a letter cipher of the Danzay/Gramont design (K3 passed); a word or name value stays M (K2 failed); never H
+  or C.
+
 Test: python3 tools/tests/test_decode_key.py (reproduces fr2980-gramont, fr20140-danzay-1557 and dupuy468-anhalt
 readings from tools/tests/decode_configs/*.json, byte for byte, without writing).
 """
-import argparse, collections, json, os, re, sys, unicodedata
+import argparse, collections, json, math, os, random, re, sys, time, unicodedata
 
 GRADES = 'HCSMIU'
 DEFAULT_UNCERTAIN = ['M', 'm', 'L', 'l', 'low', '?']
@@ -835,6 +879,270 @@ def consistency_report(target, jobs, lexicon=None, line_breaks=False, segment_te
     return out
 
 
+# ---------------------------------------------------------------- crossword (--try / --avalanche, MQS-CROSSWORD)
+
+def lm_load(spec=None):
+    """The character model for --try/--avalanche: 'fr16' (default, tools/french16_ngram.py as is), a folder name under
+    tools/data ('fr18'), or a corpus folder path (every *.txt and *.txt.gz in it)."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import french16_ngram
+    if not spec or spec == 'fr16':
+        return french16_ngram.load()
+    d = spec if os.path.isdir(spec) else os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', spec)
+    if not os.path.isdir(d):
+        raise SystemExit(f'--lm: no corpus folder {spec}')
+    return french16_ngram.load(corpus_dir=d)
+
+
+def lm_fold(v):
+    """A key value as the model sees it: '=' and spaces dropped, upper case, accents stripped, J->I, U->V, W->VV."""
+    s = unicodedata.normalize('NFD', v.lstrip('='))
+    s = ''.join(ch for ch in s if unicodedata.category(ch) != 'Mn').upper()
+    return re.sub('[^A-Z]', '', s.replace('J', 'I').replace('U', 'V').replace('W', 'VV'))
+
+
+class Crossword:
+    """Token streams of a target (one per decode.json job, lines run on, dots and nonsign tokens left out) scored
+    under a character model, as ciphers/fr2980-gramont/infer_unkeyed.py scores them (MQS-CROSSWORD, 9 Oct 2026).
+    Each stream entry is [code, value]: value None = no value (unkeyed or hidden), '' = null, else the folded value;
+    a clear word is entry [None, its letters]. A display value ('R', 'NULL', 'COM', 'le') is folded when used."""
+
+    def __init__(self, target, jobs, model, window=8, wpen=3.0, wild=True, key_edit=None):
+        self.M, self.W, self.wpen, self.wild = model, window, wpen, wild
+        self.C = model.bits_per_char
+        self.S, self.cur = [], {}
+        for job in jobs:
+            recs, _ = graded_recs(target, job, key_edit)
+            ug = job.get('unkeyed_grade', 'U')
+            s = []
+            for r in recs:
+                if r['kind'] == 'clear':
+                    s.append([None, lm_fold(r['value'] or '')])
+                elif r['kind'] == 'sign':
+                    v = r['value']
+                    if r['grade'] == ug or v in ('?', None):
+                        fv = None
+                    else:
+                        fv = '' if r.get('null') else lm_fold(v.split('|')[0])
+                        self.cur.setdefault(r['sign'], collections.Counter())[v] += 1
+                    s.append([r['sign'], fv])
+            self.S.append(s)
+        self.count = collections.Counter(t for s in self.S for t, _ in s if t is not None)
+        self._seg = {}
+
+    def current(self, code):
+        """The code's display value in the key (its commonest one over occurrences), or None if it has none."""
+        c = self.cur.get(code)
+        return c.most_common(1)[0][0] if c else None
+
+    def hide(self, codes):
+        """The codes lose their value at every position and in current() (a new dict: copies stay intact)."""
+        codes = set(codes)
+        self.cur = {c: v for c, v in self.cur.items() if c not in codes}
+        for s in self.S:
+            for e in s:
+                if e[0] in codes:
+                    e[1] = None
+
+    def fold(self, v):
+        return '' if v is None or v.upper() == 'NULL' else lm_fold(v)
+
+    def seg_score(self, seg):
+        """infer_unkeyed.seg_score: '?' = no value, filled with the model's likeliest letter (uncharged) when wild."""
+        x = self._seg.get(seg)
+        if x is not None:
+            return x
+        M, C = self.M, self.C
+        if self.wild:
+            out, tot = '', 0.0
+            for ch in seg:
+                h = out[-(M.order - 1):]
+                if ch == '?':
+                    out += max(M.alpha, key=lambda a: M.p(h, a))
+                else:
+                    tot += math.log2(M.p(h, ch)) + C; out += ch
+        else:
+            tot = sum(M.logp(x) + C * len(x) for x in seg.split('?'))
+        self._seg[seg] = tot
+        return tot
+
+    def occ(self, code):
+        return [(k, i) for k, s in enumerate(self.S) for i, (t, _) in enumerate(s) if t == code]
+
+    def window(self, k, i, code, val, assign):
+        cur = ''
+        for t, v in self.S[k][max(0, i - self.W):i + self.W + 1]:
+            if t == code and code is not None:
+                v = val
+            elif t in assign:
+                v = assign[t]
+            cur += '?' if v is None else v
+        return cur
+
+    def occ_scores(self, code, val, assign=None, occ=None):
+        """One score per occurrence: the window's model score with every occurrence of code read as val (a display
+        value), minus wpen for a value of two or more letters (a word sign)."""
+        assign = {c: self.fold(v) if v is not None else None for c, v in (assign or {}).items()}
+        fv = self.fold(val)
+        pen = self.wpen if len(fv) > 1 else 0.0
+        return [self.seg_score(self.window(k, i, code, fv, assign)) - pen for k, i in (occ or self.occ(code))]
+
+    def score(self, code, val, assign=None, occ=None):
+        return sum(self.occ_scores(code, val, assign, occ))
+
+    def ranked(self, code, cands, assign=None, occ=None):
+        """[(score, value)] best first; ties broken as infer_unkeyed breaks them (value string, descending)."""
+        return sorted(((self.score(code, v, assign, occ), v) for v in cands), reverse=True)
+
+
+def avalanche(cw, hidden, cands, steps=None, assign=None):
+    """infer_unkeyed.run: greedy, fix the code whose best value leads the runner-up by the largest margin, decode,
+    repeat. hidden = codes to assign (their positions must carry no value, see Crossword.hide). Returns
+    [(code, value, margin, second, n)] in assignment order. Never writes a key."""
+    assign = dict(assign or {})
+    out, left = [], [s for s in hidden if cw.count[s]]
+    while left and (steps is None or len(out) < steps):
+        best = None
+        for s in left:
+            sc = cw.ranked(s, cands, assign)
+            m = sc[0][0] - sc[1][0]
+            if best is None or m > best[2]:
+                best = (s, sc[0][1], m, sc[1][1])
+        assign[best[0]] = best[1]; out.append(best + (cw.count[best[0]],)); left.remove(best[0])
+    return out
+
+
+def parse_accept(spec):
+    """'margin>=10,n>=5,null=no' -> dict (infer_unkeyed's acceptance rule, fixed on its control draws 0-4)."""
+    r = dict(margin=10.0, n=5, null=False)
+    for part in (spec or '').split(','):
+        part = part.strip()
+        if part.startswith('margin>='):
+            r['margin'] = float(part[8:])
+        elif part.startswith('n>='):
+            r['n'] = int(part[3:])
+        elif part.startswith('null='):
+            r['null'] = part[5:].lower() in ('yes', 'y', 'true', '1')
+    return r
+
+
+def accepted(value, n, margin, rule):
+    return (rule['null'] or value.upper() != 'NULL') and n >= rule['n'] and margin >= rule['margin']
+
+
+def value_class(cw, val, key_values):
+    """Same-class alternatives for the value-class null: a letter -> the model's other letters; a longer value -> the
+    key's other values of folded length within 1 (within 2 from 6 letters)."""
+    fv = cw.fold(val)
+    if len(fv) <= 1:
+        return [a for a in cw.M.alpha if a != fv]
+    band = 1 if len(fv) < 6 else 2
+    seen, out = {fv}, []
+    for v in sorted(key_values):
+        f = cw.fold(v)
+        if f and f not in seen and abs(len(f) - len(fv)) <= band:
+            seen.add(f); out.append(v)
+    return out
+
+
+def try_value(cw, code, val, cands, assign=None, nulls=100, seed=0, rule=None, key_values=()):
+    """--try for one hypothesis code=val, the other hypotheses (assign) in place. Statistic = score(val) minus
+    score(current value), or minus the runner-up among cands when the code has no value; summed over occurrences.
+    null_pos: the same statistic for a pseudo-code at n shuffled positions whose current value equals this code's
+    (for a code with no value: n random valued positions, hidden); null_val: the code's own positions read as random
+    values of val's class. Verdict: accept / reject / undecided (see the module docstring)."""
+    rule = rule or parse_accept('')
+    rnd = random.Random(seed)
+    assign = dict(assign or {}); assign.pop(code, None)
+    occ = cw.occ(code); n = len(occ)
+    cur = cw.current(code)
+    res = dict(code=code, value=val, n=n, current=cur if cur is not None else '')
+
+    def stat_at(occ_, cur_, v, code_=code):
+        if cur_ is not None:
+            ref = cw.occ_scores(code_, cur_, assign, occ_)
+            other = None
+        else:
+            r = [x for x in cw.ranked(code_, cands, assign, occ_) if cw.fold(x[1]) != cw.fold(v)]
+            other = r[0][1] if r else None
+            ref = cw.occ_scores(code_, other, assign, occ_) if other is not None else [0.0] * len(occ_)
+        got = cw.occ_scores(code_, v, assign, occ_)
+        return sum(got) - sum(ref), [a - b for a, b in zip(got, ref)], other
+
+    if n == 0:
+        return dict(res, stat=0.0, p95_pos=None, p95_val=None, verdict='undecided', why='no occurrences')
+    if cur is not None and cw.fold(cur) == cw.fold(val):
+        return dict(res, stat=0.0, p95_pos=None, p95_val=None, verdict='undecided', why='equals the current value')
+    st, per, other = stat_at(occ, cur, val)
+    res.update(stat=st, ref=cur if cur is not None else (other or ''),
+               broken=sum(1 for d in per if d < -3.0))
+    # null 1: shuffled positions of matching base value
+    fcur = None if cur is None else cw.fold(cur)
+    pool = [(k, i) for k, s in enumerate(cw.S) for i, (t, v) in enumerate(s)
+            if t is not None and t != code and t not in assign and v is not None and (fcur is None or v == fcur)]
+    pos = []
+    if len(pool) >= n:
+        for _ in range(nulls):
+            pick = rnd.sample(pool, n)
+            saved = [(k, i, list(cw.S[k][i])) for k, i in pick]
+            for k, i in pick:
+                cw.S[k][i] = ['\x00pseudo', fcur]   # cur None: hidden
+            try:
+                pos.append(stat_at(pick, cur, val, '\x00pseudo')[0])
+            finally:
+                for k, i, e in saved:
+                    cw.S[k][i] = e
+    # null 2: the code's own positions read as random values of val's class
+    alts = [v for v in value_class(cw, val, key_values) if cur is None or cw.fold(v) != fcur]
+    vals = []
+    if alts:
+        for _ in range(nulls):
+            vals.append(stat_at(occ, cur, rnd.choice(alts))[0])
+    q = lambda xs: sorted(xs)[min(len(xs) - 1, int(0.95 * len(xs)))] if xs else None
+    res.update(p95_pos=q(pos), p95_val=q(vals), p_pos=(sum(x >= st for x in pos) / len(pos)) if pos else None,
+               p_val=(sum(x >= st for x in vals) / len(vals)) if vals else None)
+    if n == 1:
+        v, why = 'undecided', 'n = 1'
+    elif st <= 0:
+        v, why = 'reject', 'no better than ' + ('the current value' if cur is not None else 'the runner-up')
+    elif res['broken'] * 4 > n and n >= 4:
+        v, why = 'reject', f"breaks {res['broken']} of {n} occurrences by more than 3 bits"
+    elif not pos or not vals:
+        v, why = 'undecided', 'a null could not be built (too few matching positions or no same-class values)'
+    elif st <= res['p95_pos'] or st <= res['p95_val']:
+        v, why = 'undecided', 'not above both null p95s (low n or text outside the model language)'
+    elif not accepted(val, n, st, rule):
+        v, why = 'undecided', 'below the acceptance rule'
+    else:
+        v, why = 'accept', 'above both nulls and the acceptance rule'
+    res.update(verdict=v, why=why)
+    return res
+
+
+def crossword_contexts(cw, code, val, assign=None, width=None):
+    """One line per occurrence: the decoded window, unknown codes as <code>, the hypothesis in [brackets]."""
+    W = cw.W if width is None else width
+    assign = assign or {}
+    out = []
+    for k, i in cw.occ(code):
+        parts = []
+        for j in range(max(0, i - W), min(len(cw.S[k]), i + W + 1)):
+            t, v = cw.S[k][j]
+            if j == i:
+                parts.append(f'[{val}]')
+            elif t in assign:
+                parts.append(str(assign[t]).lower())
+            else:
+                parts.append(f'<{t}>' if v is None else v.lower() if v else '.')
+        out.append(f'  {k}:{i}  ' + ' '.join(parts))
+    return out
+
+
+def word_candidates(key, extra=()):
+    return sorted({r['value'] for r in key.values() if len(lm_fold(r['value'])) > 1 and '|' not in r['value']}
+                  | set(extra))
+
+
 def load_config(target, a):
     if a.config or (os.path.exists(os.path.join(target, 'decode.json')) and not a.ciphertext):
         cfg = json.load(open(a.config or os.path.join(target, 'decode.json'), encoding='utf-8'))
@@ -843,6 +1151,56 @@ def load_config(target, a):
     job = {k: v for k, v in (('ciphertext', a.ciphertext), ('key', key), ('exceptions', a.exceptions),
                              ('style', a.style), ('reading', a.reading), ('tokens', a.tokens)) if v}
     return [job]
+
+
+def crossword_main(a):
+    """--try / --avalanche (MQS-CROSSWORD). Prints; appends to --try-log only for --try. Never writes key.tsv."""
+    jobs = load_config(a.target, a)
+    model = lm_load(a.lm)
+    cw = Crossword(a.target, jobs, model, window=a.window)
+    key = {}
+    for job in jobs:
+        for c, r in load_keys(a.target, job.get('key', 'key.tsv')).items():
+            key.setdefault(c, r)
+    words = [w for w in (a.words or '').split(',') if w]
+    cands = list(model.alpha) + ['NULL'] + words
+    rule = parse_accept(a.accept)
+    if a.avalanche:
+        hidden = [c for c, n in cw.count.most_common() if cw.current(c) is None and n >= 2 and '?' not in c]
+        print(f'# avalanche: {len(hidden)} codes with no value and n >= 2; candidates {len(cands)}; rule {a.accept}; '
+              f'lm {a.lm or "fr16"}; never written to the key')
+        print('order\tcode\tvalue\tmargin\tsecond\tn\taccepted')
+        for k, (c, v, m, sec, n) in enumerate(avalanche(cw, hidden, cands, a.steps)):
+            print(f'{k}\t{c}\t{v}\t{m:.1f}\t{sec}\t{n}\t{"yes" if accepted(v, n, m, rule) else "no"}', flush=True)
+        return 0
+    hyps = []
+    for part in a.try_.split(','):
+        if '=' not in part:
+            raise SystemExit(f'--try: expected CODE=VALUE, got {part!r}')
+        c, v = part.split('=', 1); hyps.append((c.strip(), v.strip()))
+    kv = sorted({r['value'] for r in key.values() if '|' not in r['value']} | set(words))
+    rows = []
+    for c, v in hyps:
+        others = {c2: v2 for c2, v2 in hyps if c2 != c}
+        r = try_value(cw, c, v, cands, others, a.nulls, 0, rule, kv)
+        f = lambda x: '' if x is None else f'{x:.1f}'
+        print(f"{c}={v}: n {r['n']}, current {r['current'] or '-'}, statistic {f(r.get('stat'))} bits over "
+              f"{r.get('ref') or r['current'] or '-'}; null p95 positions {f(r['p95_pos'])}, value class "
+              f"{f(r['p95_val'])}; {r['verdict']} ({r['why']}) [non-blind]")
+        for l in crossword_contexts(cw, c, v, others):
+            print(l)
+        rows.append(r)
+    if a.try_log:
+        new = not os.path.exists(a.try_log)
+        with open(a.try_log, 'a', encoding='utf-8') as fh:
+            if new:
+                fh.write('time\ttarget\thypothesis\toccurrences\tstatistic\tnull_pos_p95\tnull_val_p95\tverdict\tflag\n')
+            t = time.strftime('%Y-%m-%d %H:%M', time.gmtime())
+            for r in rows:
+                f = lambda x: '' if x is None else f'{x:.1f}'
+                fh.write(f"{t}\t{a.target}\t{r['code']}={r['value']}\t{r['n']}\t{f(r.get('stat'))}\t{f(r['p95_pos'])}\t"
+                         f"{f(r['p95_val'])}\t{r['verdict']}\tnon-blind\n")
+    return 0
 
 
 def main(argv=None):
@@ -868,7 +1226,22 @@ def main(argv=None):
     ap.add_argument('--consistency-tsv', help='with --consistency: also write the per-code rows to this TSV file')
     ap.add_argument('--show', choices=['all', 'flagged'], default='flagged',
                     help='with --consistency: list every code, or only those not in >=2 unrelated words (default)')
+    ap.add_argument('--try', dest='try_', metavar='CODE=VALUE[,CODE=VALUE...]',
+                    help='crossword: test guessed values at every occurrence against two nulls (in memory; the key is '
+                         'never written); prints each occurrence in context and a verdict accept/reject/undecided')
+    ap.add_argument('--avalanche', action='store_true',
+                    help='crossword: greedy queue of proposed values for the codes with no value (never written)')
+    ap.add_argument('--lm', help='with --try/--avalanche: fr16 (default), fr18, or a corpus folder of *.txt(.gz)')
+    ap.add_argument('--window', type=int, default=8, help='with --try/--avalanche: tokens each side (default 8)')
+    ap.add_argument('--nulls', type=int, default=100, help='with --try: draws per null (default 100)')
+    ap.add_argument('--words', help='with --try/--avalanche: extra word-sign candidates, comma-separated (e.g. ET,COM)')
+    ap.add_argument('--accept', default='margin>=10,n>=5,null=no', help='acceptance rule (default %(default)s)')
+    ap.add_argument('--steps', type=int, help='with --avalanche: stop after K assignments')
+    ap.add_argument('--try-log', help='with --try: append one row per hypothesis to this TSV (real use: '
+                                      'ciphers/<t>/crossword_log.tsv; controls: a scratch path)')
     a = ap.parse_args(argv)
+    if a.try_ or a.avalanche:
+        return crossword_main(a)
     if a.consistency:
         try:
             jobs = load_config(a.target, a)

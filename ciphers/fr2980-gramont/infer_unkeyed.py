@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# promoted to tools/decode_key.py --avalanche (MQS-CROSSWORD, 9 Oct 2026); kept because its outputs are cited
 """Propose values for signs key.tsv does not cover, by scoring decoded context under a period French model,
 with a matched control on hidden keyed signs (CLAUDE.md rule 3). Section "f.30 unkeyed signs (24 Sept 2026)".
 

@@ -10,6 +10,9 @@ W->VV, K kept, everything that is not a letter dropped. Words are kept separatel
   m.logp('ILESTIMPOSSIBLE')       # log2 probability of a continuous letter string (no BOS context)
   m.words                         # Counter of folded words
   m.bits_per_char                 # mean -log2 p per char on a held-out 5% of the corpus
+  load(corpus_dir='tools/data/fr18')   # another corpus folder: every *.txt and *.txt.gz in it, same folding;
+                                  # cached per corpus in $CIPHERLAB_LM_CACHE (default ~/.cache/cipher-lab), not in git
+                                  # (MQS-CROSSWORD, 9 Oct 2026, for tools/decode_key.py --try --lm fr18)
 """
 import os, re, gzip, glob, math, pickle, unicodedata, collections, random
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'fr16')
@@ -21,8 +24,13 @@ def fold(s):
     s = s.replace('J', 'I').replace('U', 'V').replace('W', 'VV').replace('Œ', 'OE').replace('Æ', 'AE')
     return s
 
-def corpus_words():
-    for fn in sorted(glob.glob(os.path.join(D, '*_djvu.txt*'))):
+def corpus_files(corpus_dir=None):
+    if corpus_dir is None:
+        return sorted(glob.glob(os.path.join(D, '*_djvu.txt*')))
+    return sorted(glob.glob(os.path.join(corpus_dir, '*.txt')) + glob.glob(os.path.join(corpus_dir, '*.txt.gz')))
+
+def corpus_words(corpus_dir=None):
+    for fn in corpus_files(corpus_dir):
         op = gzip.open if fn.endswith('.gz') else open
         with op(fn, 'rt', encoding='utf-8', errors='replace') as f:
             txt = f.read()
@@ -57,11 +65,22 @@ class Model:
     def logp(self, s):
         return sum(math.log2(self.p(s[max(0, i - self.order + 1):i], s[i])) for i in range(len(s)))
 
-def load(rebuild=False):
-    fn = os.path.join(D, f'model_o{ORDER}.pkl.gz')
+def cache_path(corpus_dir=None):
+    if corpus_dir is None:
+        return os.path.join(D, f'model_o{ORDER}.pkl.gz')
+    d = os.path.abspath(corpus_dir)
+    tag = re.sub('[^A-Za-z0-9]+', '_', d).strip('_')
+    root = os.environ.get('CIPHERLAB_LM_CACHE', os.path.join(os.path.expanduser('~'), '.cache', 'cipher-lab'))
+    os.makedirs(root, exist_ok=True)
+    return os.path.join(root, f'{tag}_o{ORDER}.pkl.gz')
+
+def load(rebuild=False, corpus_dir=None):
+    fn = cache_path(corpus_dir)
     if os.path.exists(fn) and not rebuild:
         with gzip.open(fn, 'rb') as f: return pickle.load(f)
-    m = Model(list(corpus_words()))
+    words = list(corpus_words(corpus_dir))
+    if not words: raise SystemExit(f'french16_ngram: no *.txt / *.txt.gz text in {corpus_dir or D}')
+    m = Model(words)
     with gzip.open(fn, 'wb') as f: pickle.dump(m, f)
     return m
 

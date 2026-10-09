@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# promoted to tools/decode_key.py --try (MQS-CROSSWORD, 9 Oct 2026); kept because its outputs are cited
 """Test the hypotheses for f.30r L01, L02, L11, L12 against the whole of f.29r and f.30, with a shuffled-position
 control. Section "f.30r L01, L02, L11, L12 (24 Sept 2026)" in NOTES.md.
 

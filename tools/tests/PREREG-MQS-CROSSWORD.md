@@ -25,7 +25,7 @@ value no better than a random same-class value cannot clear it. Neither manipula
 Data: `ciphers/fr2980-gramont` f.29r + f.30r-v, fr16, key.tsv only, the infer_unkeyed hidden-sign protocol (draw seeds
 1000+d, d = 0..9, `matched_draw`), candidates = 23 letters + NULL + ET, COM, SS, LL.
 
-Found before running the port (03:12 UTC): `infer_unkeyed.py control` on the **current** files no longer reproduces
+Found before running the port (before 03:08 UTC; corrected from a mistyped 03:12 at 03:12): `infer_unkeyed.py control` on the **current** files no longer reproduces
 its own committed `control_f30.tsv` (draw 0: counts and margins differ, e.g. rs 23 -> 22 occurrences), because
 `ciphertext.txt`, `ciphertext_f30.tsv` and `key.tsv` changed after 24 Sept. So K1 has two parts:
 
@@ -72,3 +72,23 @@ option ships either way and nothing is run on a target from this job.
 ## Results
 
 (appended after the runs, below this line, without editing anything above)
+
+Run 9 Oct 2026, 03:11-03:12 UTC by date -u, after c127ff2dd2 (this file) was pushed. Commands:
+`python3 tools/tests/test_decode_key_try.py --controls K1a <scratch copy of e8567d0a8> | K1b | K2 | K3 --out <scratch>`.
+
+- **K1a: PASS.** 155/200 proposals right, 50/53 accepted-right on draws 5-9 -- and all 200 rows (sign, count, true,
+  proposed, margin, runner-up, correct) identical to the committed `ciphers/fr2980-gramont/control_f30.tsv`. The
+  original script re-run on the same snapshot also reproduces that file byte for byte.
+- **K1b: PASS.** 210/210 rows identical to `infer_unkeyed.py control` on today's files (today's figures: 149/210
+  right, 57/65 accepted-right on draws 5-9; not comparable to 24 Sept, the inputs changed). A port check only: the
+  pool limitation quoted above stands, so K1 licenses no grade.
+- **K3 (Danzay letters, fr16): PASS.** True letter first for 19/23 H letter codes with n >= 5 (82.6%; gate 70%).
+  Unigram-only baseline 2/23 (no ceiling: the context model carries the result). Not gated, reported: 2/23 codes had
+  a wrong top value meeting the acceptance rule (r2 r -> E, 12.7 bits; pib o -> E, 20.5 bits).
+- **K2 (Blathwayt words, fr18): FAIL on both gates.** True value first for 58/116 word codes (50.0%; gate 70%); by
+  folded length 2: 32/51, 3-4: 13/37, 5+: 13/28. False accept 17/70 over the 70 word codes with n >= 5 (24.3%; gate
+  10%). Unigram-only baseline 20/116 (no ceiling). Title/name class (reported only): 0/2 (n >= 5: 1 code, 0 false
+  accepts). Reading: in a word nomenclator the character model across unspaced words does not separate same-length
+  function words (sur -> de, vous -> pour, il -> me); a word value from `--try` stays M.
+- Shelf grades from these: `--try` `fair` for single-letter values (K3), `weak` for word values (K2); `--avalanche`
+  `fair` for letter blanks in a letter cipher (K1 reproduction of the 50/53 rule + K3), with the pool caveat.
