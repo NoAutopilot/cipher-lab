@@ -6260,6 +6260,30 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_01SUrPvi8LCc6ZyHcfTUCKbK, account 1, incarnation 3 of the blast refill), 9 October 2026 (closed 00:5x UTC: past 75% of cap after the last planned wave, lane about 45 of 60; seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261008-2340; jobs .claude/briefs/runs/2026-10-08-acct1-lane-ledger3-jobs.md (waves 1-3). Ten
+workers 41.26 + orchestrator ~3.6 by get_session. Five_hour allowed; seven_day allowed_warning on every session (not a stop under lane-common-blast).
+Result (eckert-1864, Fort Monroe mssEC 25; ONE audit each, not counted until a second): N3 weak -- E194, E210, E213, E214, E220, E222, E223, E224 (D3);
+E193, E212 (D2); N3 -- E235 (D3). Second audits queued for the account-3 VERIFY lane: AUD2-LEDGER-8 (E193 E194), -9 (E210 E212 E213 E214), -10 (E220 E222
+E223 E224), -11 (E235). N1 at first audit: E225 (Grant Papers 10 p.313n), E230 E234 E236 E237 (period clear copies elsewhere in the holder transcription:
+pointers 8479 4647 4625 10382). E216 = duplicate of E49. In print by the readers: E215 E218 E231 E232 E233 E238 (= ORN I/11 pp.197-198, C key test with mssEC 19
+9141) E239 E244 (C; three key conflicts in HYPOTHESES.md); E211 plaintext on the leaf.
+- Read (Sonnet, ~0.35-0.5 per entry, long rows too): Fort Monroe clean-fm.tsv 1864 No. 1 rows 31-64 -> E210-E245 (5587/1 plain, not filed). Yield after a
+  first audit of 15 unlocated entries: 11 N3, 4 N1 + 1 duplicate -- the N1s were all clear copies at OTHER pointers of the holder's own transcription.
+- Fixes: FIX-FM3 (13 corrections in 9 entries E167-E209 via new per-entry note types in decode.py) and FIX-FM4 (E193/E194 plain names); decode --check exit 0.
+**Next** (costs from this incarnation: read ~0.35-0.5/entry; Opus first audit ~1.2-1.4/entry but caps ran 10-40% over -- price 1.5/entry + one entry margin):
+1. Fix worker (Sonnet, ~1.5): FV-FM5a AUDIT s.4, FV-FM5b s.3 (E220 signer R. C. Webster plain, E223 Baltic plain), FV-FM5c decoder slips in NOTES (plain
+   Bermuda/Darling/Columbia/Webster/John; E235 dropped first line), E193 still renders "[20] second" for "22nd" (FIX-FM4 left it); carry into AUDIT/SO rows.
+2. First verifiers (Opus, ~1.5/entry): E217, E219, E226, E227, E228, E229, E240, E241, E242, E243, E245 (11, not yet audited).
+3. Fort Monroe readers: clean-fm.tsv 1864 No. 1/No. 2 rows after the 64 used (~72 left; next 5770/1 5816/0 5781/1 5789/1 5829/0 5797/0 5752/1 5594/1 ...).
+   Add to the reader's step 0: a CONTENTdm full-text search of the holder transcription across ALL pointers for the entry's clear words (FV-FM5c found 4 of 5
+   "not located" entries had a clear period copy at another pointer), not only the same pointer.
+4. Side finds, unfiled (record, do not read): 5805/0 = Butler V p.312; 5614 clear copy at 4551; 5747/0 = OR I/40 pt 2 pp.5-6.
+5. mssEC 18 remaining 77 clean No. 1 rows: low yield (0/10 N3 last incarnation); only after Fort Monroe is spent.
+6. Blocked: 8472, 6254, 9660 and Jan-Apr 1865 pages (no book in hand; Cipher No. 4 Friedman copy needs a desk browser, LOCAL-QUEUE).
+Light-guardrail share (known-text work): about 0 -- no worker was briefed on known-text items; the in-print rows readers found cost ~0.4 each.
+
 ## LANE LEDGER handoff (session_018DE9C1ZwPUGX7qbyQbQgQb, account 1, incarnation 2 of the blast refill), 8 October 2026 (closed 22:0x UTC: at 80% of cap, lane about 48 of 60; seven_day allowed_warning from 21:2x)
 
 Brief .claude/briefs/lane-ledger.md; jobs .claude/briefs/runs/2026-10-08-acct1-lane-ledger2-jobs.md (waves 1-3). Eleven workers 44.67 + orchestrator ~3.3 by
