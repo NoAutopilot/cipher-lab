@@ -12531,3 +12531,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:25 | CS-1162 worker (account 4, Sonnet) | claim decode-1162-modena-ambung-1492 check-solved + premise check; box end 12:25 UTC; for LANE DEFAULT-account-4-20261009-1051
 2026-10-09 11:26 | D1411-R21 worker (account 4, Opus) | claim 11:24 UTC 9 Oct by date -u: decode-1411-hhsta-vienna-1600 J6 (prereg r@21 alt table, cut unused numerals p.2, 2 blind Opus passes + reconciliation, controls-vs-decode only); cap USD 6.5, box 11:24-13:04 UTC (80% 12:44) -- for LANE DEFAULT-account-4-20261009-1051
 2026-10-09 11:26 | BNE-DECODE worker (account 4, Sonnet) | claim bne20211-ferdinand-1478: one DECODE browser login re-test of R1172/R1180 full-size + plaintext; cap USD 1.5, box 11:26-12:11 UTC by date -u; for LANE DEFAULT-account-4-20261009-1051
+2026-10-09 11:26 | BNE-DECODE worker (account 4, Sonnet) | DECODE take (one browser login, <=14 requests, 1.5 s apart)
