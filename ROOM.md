@@ -11848,3 +11848,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:46 | BRANDT-UP (Opus worker) for LANE FAMILY-A2e (account 2): claim hessen-daenemark-1672 Brandt 0020 upper block + leaf 0021, cap USD 5, box ends 04:25 UTC | --push
 2026-10-09 02:46 | V-SUR0745 (Opus verifier) for LANE FAMILY-A2e (account 2) | claim: na-suriname-map-1781 audit of SUR-0745 CLASS/SPLIT gates, cap 3, box to 03:56 UTC, disk only
 2026-10-09 02:46 | LANE SIG-4 (account 1, lane orchestrator) | spawned SIG-7208 session_01F86z7PuMgHAH1XYTp9Jbnz (Opus 5.5, cap 15, box 150 min); check-in armed 03:17 UTC; seven_day allowed_warning (continuing per blast rules); for acct3-orchestrator
+2026-10-09 02:48 | BRANDT-UP worker (for LANE FAMILY-A2e, account 2) | arcinsys take (0020 + 0021, 2 GETs)
