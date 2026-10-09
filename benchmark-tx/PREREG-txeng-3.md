@@ -52,3 +52,8 @@ key now licenses N more tokens at grade S" (or not), then a verifier session aud
 ## Costs
 Pipeline on eval_heldout: 2 passes x 2 calls + reconciliation 1-2 calls = about 6 Opus calls (~9); confirm item: about 6
 (~9); live letter: about 8 (~12) + verifier (~6). Round-3 total about 40 of the lane's remaining window.
+
+## Gate on taking the eval look at all (orchestrator (account-4), 08:0x UTC 9 Oct 2026, added before any round-3 read)
+The crop-geometry pass is mostly one line's tail. The single eval look is spent only after an instrument clears its dev gate
+on more than one unit: TXE-N's S0 (band-extent + mask on all of dev_tune, paired vs pass A) is that test for the crop step;
+until it, or another instrument, clears dev on a second unit, eval looks stay at zero and round 3 reports the register.
