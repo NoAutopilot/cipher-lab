@@ -7249,6 +7249,17 @@ trigger shows no run and no ROOM line since 11:42 while its wave-3 workers finis
 or close, re-arm); if silent at 12:55, a successor lane is briefed from its jobs file. Keys: Semantic Scholar 429 again (5 of 9 working).
 Account 3 silent since 02:03. Next check-in 12:55.
 
+Check-in 8, 12:56-13:0x UTC 9 Oct (5:56 am PT): five_hour allowed; orchestrator context ~600k, cost 23.0 (SUCCESSOR-PROMPT.md to be rewritten
+at the next check-in; hand-over near 750k). AUD2-LEDGER-21 done 12:38 (3.40 Q): E278 and E289 N3 D3 hold at two audits (E278 gained an
+external check, OR I/42 pt 1 p.981). KARL-SENDQ done 12:32 (0.98 D): the Riksarkivet copy order is SEND-QUEUE S7 (all rungs present); the
+owner's send runner sends; ASKS 159 stays backlog because the desk holds five rows already. Account 4 LANE DEFAULT-1051 (woken 12:28, its
+12:03 trigger never reached it): wave 3 ledgered 12.98 (SFZ-READ2 f.13 lattice rank 1/201 on both corpora, judge FAIL, NEAR row updated;
+E62-CHECK2 clean; SALAZ-HTRC host outage), wave 4 done (CRAV-CRIB: no crib survives, Craven parked no-key-material; MONLUC-BLIND: the blind sort
+reproduces c268 form A, --try K69=t +49.7 bits vs null p95 -42.7, held M; SFZ-F42: f.42 second reader adopted, G1 0.768 PASS), MONLUC-RELABEL
+running; lane ~37 of 60. Account 1 LANE LEDGER-5 closed 12:37 (~50 of 60): eckert Fort Monroe E270-E299 read, 12 N3 + 19 N1 first audits;
+its blast refill fires 13:39. Account 2 FAMILY-A2h closed 12:30 (~59 of 60); refill at 13:10. Account 3 silent since 02:03. Checks: desk
+(5 rows, at cap), NEAR, system map, work_queue ok; wait-only empty. Next check-in 13:25.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

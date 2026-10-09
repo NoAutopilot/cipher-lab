@@ -58,3 +58,6 @@ pricing: ~5 per job whatever the entry count (the family sweep dominates), not 2
 STATE DELTA 12:3x UTC 9 Oct: AUD2-LEDGER-19 done; -21 live on account 4; KARL-SENDQ live on account 4 (SEND-QUEUE row for the Riksarkivet draft;
 after it: desk <= 5, ASKS 159 desk). LANE DEFAULT-account-4-1051 silent since 11:42 (trigger 12:03 unfired) -- woken 12:28; successor from
 .claude/briefs/runs/2026-10-09-account4-default-1051-jobs.md if still silent at 12:55. S2 429 again.
+STATE DELTA 13:0x UTC 9 Oct: Riksarkivet copy order = SEND-QUEUE S7 (the owner's send runner; if it is not sent by 10 Oct, it is a desk item once
+a desk slot frees). All AUD2-LEDGER-18..21 done on account 4. Account 4 live: DEFAULT-1051 lane (wave 5). Accounts 1 and 2: lanes closed, blast
+refills at 13:39 / 13:10. Orchestrator context ~600k: rewrite hub-seed/SUCCESSOR-PROMPT.md at the next check-in.
