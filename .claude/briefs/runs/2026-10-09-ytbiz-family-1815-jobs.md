@@ -110,3 +110,7 @@ so far: list each y-shaped digit token with leaf/line/pos/hand (clerk vs Manteuf
 token's value is fixed by gloss or by a known word, record it as a known-answer exemplar. PREREG the rule before applying it (own commit); report a
 per-hand rule with its known-answer accuracy vs a shuffled-label control; no transcription edit unless both your eye and the rule agree, and then
 regenerate readings with --check. Report what was found and where it was not found; do not classify novelty.
+
+Sessions wave 2 (18:39 UTC): V-MANT16S session_01Xz3fF2N1zMfMY9kBWbP5Pn (Opus); V-MANT0490 session_01WA5jDsGmAzLqKDHNJvcVe1 (Opus); MANT-0490L
+session_01Vonz3Lnjze8D87Ry7ayUZu (Opus); MANT-0317 session_01YP499gXR45w7Cf2v1d8ndw (Opus); MANT-0310 session_0112dGUYSmccoBkuoJrANaXr (Sonnet);
+MANT-YCEN session_01CRPuhyAzoJNykjMhxo82fk (Opus). Wave 1 sessions archived.
