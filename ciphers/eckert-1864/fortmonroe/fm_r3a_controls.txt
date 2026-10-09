@@ -1,0 +1,110 @@
+F1 tokens=43 no1=21(0.49) no2=13(0.30) no9=0(0.00)
+  no1: H18 C0 I0 M0
+    for [Captain] H. S Tafft signal officer number [158] F street [Washington] [.] will you please get [From the] [Engineer] [Department] & send to me [12] [Of the] best maps [Of the] peninsula and [South] side [James] [.] hurry up sergeant Royer with my desk  {tail: [signed] L B Norton [Captain] & Chief Signal officer Geo D Sheldon}
+  no2: H10 C0 I0 M0
+    for [Battled [?]] H. S Tafft signal officer number plug publish mandate platina F street [Maj Gen B. F. Butler] unity will you please get [Fear] [Demonstration] [Deserter] & send to me forbid [Pursue (-ed, -ing)] best maps [Pursue (-ed, -ing)] peninsula and waxy side [Pennsylvania] unity hurry up sergeant Royer with my desk [Surrendered] L B Norton [Battled [?]] & Chief Signal officer Geo D Sheldon
+  no9: H0 C0 I0 M0
+    for princess H. S Tafft signal officer number plug publish mandate platina F street grapes unity will you please get Saxon Randolph quadrant & send to me forbid torch best maps torch peninsula and waxy side Bergen unity hurry up sergeant Royer with my desk walrus L B Norton pilgrim & Chief Signal officer Geo D Sheldon
+  no1shuf: H18 C0 I0 M0
+    for [Drove in Enemys pickets] H. S Tafft signal officer number [158] F street [Colonel] [.] will you please get [Secretary of State] [Army] [Knoxville] & send to me [12] [Goldsboro] best maps [Goldsboro] peninsula and [Valley] side [Volunteering] [.] hurry up sergeant Royer with my desk  {tail: [signed] L B Norton [Tullahoma] & Chief Signal officer Geo D Sheldon}
+  no2shuf: H10 C0 I0 M0
+    for [Yazoo] H. S Tafft signal officer number plug publish mandate platina F street [Follow (-ed, -ing) [#]] unity will you please get [King] [Tuscaloosa] [Knoxville] & send to me forbid [Unite (-ed, -ing)] best maps [Unite (-ed, -ing)] peninsula and waxy side [Nashville] unity hurry up sergeant Royer with my desk [Captain] L B Norton [Marietta] & Chief Signal officer Geo D Sheldon
+F2 tokens=35 no1=10(0.29) no2=10(0.29) no9=3(0.09)
+  no1: H9 C0 I0 M0
+    Maj Eckert Di for Fawkes assistant [Secretary of Navy] [.] that little party of pleasure to which you were invited will come off weddings day evening Your friends most Earnestly desire your presence the [80] can hardly be Celebrated without you  {tail: [signed] [Maj Gen B. F. Butler] [Yorktown] {time: 5 PM} A [Telegraph (-ed, -ing)] within a [Telegraph (-ed, -ing)] Geo D Sheldon}
+  no2: H8 C0 I0 M0
+    Maj Eckert Di for Fawkes assistant [Sumter] unity that little party of pleasure to which you were invited will come off [Throwing]'s day evening Your friends most Earnestly [Lookout Valley] your presence the marriage can hardly be Celebrated without you [Surrounding] Knox [Shelbyville] {time: 5.30 PM} A [Valley] within a [Valley] Geo D Sheldon
+  no9: H3 C0 I0 M0
+    Maj Eckert Di for Fawkes assistant [A. E. Burnside] unity that little party of pleasure to which you were invited will come off weddings day evening Your friends most Earnestly desire your presence the marriage can hardly be Celebrated without you Webster Knox [Aquia Creek] {time: 9 PM} A Wrangle within a wreathe Geo D Sheldon
+  no1shuf: H9 C0 I0 M0
+    Maj Eckert Di for Fawkes assistant [Hanover] [.] that little party of pleasure to which you were invited will come off weddings day evening Your friends most Earnestly desire your presence the [80] can hardly be Celebrated without you  {tail: [signed] [Maj Gen Geo. H. Thomas] [Capture (-ed, -ing)] {time: 5 PM} A [Enemy] within a [Bowling Green] Geo D Sheldon}
+  no2shuf: H8 C0 I0 M0
+    Maj Eckert Di for Fawkes assistant [White Oak Ridge] unity that little party of pleasure to which you were invited will come off [Communications]'s day evening Your friends most Earnestly [Ohio] your presence the marriage can hardly be Celebrated without you [Tuckers Station] Knox [West] {time: 5.30 PM} A [Success] within a [Colonel] Geo D Sheldon
+F3 tokens=36 no1=15(0.42) no2=14(0.39) no9=4(0.11)
+  no1: H14 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe Lient [Colonel] Biggs chief [Quartermaster] [Monroe] [.] [Maj Genl U.S. Grant] directs that all available [Transportation] be sent to [City Point] to move [Troops] thence to [Washington] [.] send up such [Steam]ers as you have suited for this service  {tail: [signed] [Qr Master Genl U.S.] frorence united state of [Delaware] T. T. Eckert}
+  no2: H14 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe Lient [Casualties] Biggs chief [Rifle Pits] [Tennessee] [1000] [Imboden] directs that all available [Train] be sent to [Cairo] to move [Unite (-ed, -ing)] thence to [Maj Gen B. F. Butler] unity send up such [Transportation]ers as you have suited for this service [Surrounding] [Secretary of Treasury] frorence [Re-enforce (-ed, -ing)]d state of [Chickamunga [sic]] T. T. Eckert
+  no9: H4 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe Lient pandora Biggs chief [Quartermaster] appian [Movement] Judah directs that all available Whig be sent to [W. S. Sherman] to move whistle thence to growl unity send up such weaselers as you have suited for this service webster Belcher frorence united state of [Sec. of the Navy] T. T. Eckert
+  no1shuf: H14 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe Lient [Cleveland] Biggs chief [Chickamauga] [Fortify (-ed, -ing)] [.] [Florence] directs that all available [Telegraph (-ed, -ing)] be sent to [Red River] to move [Winchester] thence to [Gen J. M. Palmer] [.] send up such [Bragg]ers as you have suited for this service  {tail: [signed] [Surrender (-ed, -ing)] frorence united state of [Athens] T. T. Eckert}
+  no2shuf: H14 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe Lient [Banks N P] Biggs chief [Fredericksburg] [Charleston] [1000] [James] directs that all available [Philadelphia] be sent to [Saturday] to move [Quarter[?] Master General] thence to [Aquia Creek] unity send up such [Front]ers as you have suited for this service [Tuckers Station] [Driven back] frorence [Surrounded]d state of [Pursuit] T. T. Eckert
+F4 tokens=30 no1=6(0.20) no2=8(0.27) no9=2(0.07)
+  no1: H6 C0 I0 M0
+    Maj Eckert Di I came here by [General] Turners directions to receive your instructions concerning material which will become surplus by the new arrangements [.] The [General] wishes to have the material and the superintendent go with the [10] [Corps] if possible  {tail: [signed] Ell F. Geo D Sheldon}
+  no2: H7 C0 I0 M0
+    Maj Eckert Di I came here by [Helping] Turners directions to receive your instructions [Gordons Mill]ing material which will become surplus by the new arrangements [Sunday] The [Harbor] wishes to have the material and the superintendent go with the [Conasauga River] [Corps] if possible [100] Ell F. Geo D Sheldon
+  no9: H2 C0 I0 M0
+    Maj Eckert Di I came here by Shelter Turners directions to receive your instructions concerning material which will become surplus by the new arrangements [Movement] The shelby wishes to have the material and the superintendent go with the Federal Pelham if possible [Troops] Ell F. Geo D Sheldon
+  no1shuf: H6 C0 I0 M0
+    Maj Eckert Di I came here by [Movement] Turners directions to receive your instructions concerning material which will become surplus by the new arrangements [.] The [Danger] wishes to have the material and the superintendent go with the [10] [Repulsed] if possible  {tail: [signed] Ell F. Geo D Sheldon}
+  no2shuf: H7 C0 I0 M0
+    Maj Eckert Di I came here by [Tar R] Turners directions to receive your instructions [Charleston]ing material which will become surplus by the new arrangements [Carter S.P.] The [Secretary of War] wishes to have the material and the superintendent go with the [Winchester] [South Carolina] if possible [100] Ell F. Geo D Sheldon
+F5 tokens=35 no1=12(0.34) no2=5(0.14) no9=3(0.09)
+  no1: H9 C0 I0 M0
+    Geo D Sheldon Ft. Monroe Bickford has [10] [Mile]'s wire [3] miles insulators and [18] [Mile]'s spikes better send to [West] point with him enough material to make out [20] [Mile]'s [.] operators sufficient are ordered report to you advise me often about the work T. T. Eckert
+  no2: H4 C0 I0 M0
+    Geo D Sheldon Ft. Monroe Bickford has feeble [North]'s wire pebble miles insulators and gradual [North]'s spikes better send to [Drove in our Pickets] point with him enough material to make out harrow [North]'s unity operators sufficient are ordered report to you advise me often about the work T. T. Eckert
+  no9: H3 C0 I0 M0
+    Geo D Sheldon Ft. Monroe Bickford has feeble [Transports]'s wire pebble miles insulators and gradual [Transports]'s spikes better send to Wilson point with him enough material to make out harrow [Transports]'s unity operators sufficient are ordered report to you advise me often about the work T. T. Eckert
+  no1shuf: H9 C0 I0 M0
+    Geo D Sheldon Ft. Monroe Bickford has [10] [After the]'s wire [3] miles insulators and [18] [After the]'s spikes better send to [Infantry] point with him enough material to make out [20] [After the]'s [.] operators sufficient are ordered report to you advise me often about the work T. T. Eckert
+  no2shuf: H4 C0 I0 M0
+    Geo D Sheldon Ft. Monroe Bickford has feeble [Country]'s wire pebble miles insulators and gradual [Country]'s spikes better send to [Smith] point with him enough material to make out harrow [Country]'s unity operators sufficient are ordered report to you advise me often about the work T. T. Eckert
+F6 tokens=40 no1=24(0.60) no2=23(0.57) no9=6(0.15)
+  no1: H23 C0 I0 M0
+    Maj. Eckert [Volunteer] Agawam Trents Reach [James] [River] {time: 10 PM} [7] [By the way of] [Monroe] {time: 5.30 PM} [8] for [Secretary of Navy] [Washington] [.] No change [In the] naval situation [.] This days [Richmond] examiner says [Maj Genl U.S. Grant] will [Cross (-ed, -ing)] [James] [River] and operate against [Richmond] on the [South] side  {tail: [signed] [S. P. Lee] &c Geo D Sheldon}
+  no2: H21 C0 I0 M0
+    Maj. Eckert [Wounded] Agawam Trents Reach [Pennsylvania] [Subsistence] {time: 10 PM} plunder [Concentrate (-ed, -ing)] [Tennessee] {time: 5 PM} platina for [McHenry] [Maj Gen B. F. Butler] [1000] No change [Killing] naval situation [Sunday] This days [Mobile] examiner says [Imboden] will [Cross (-ed, -ing) [#]] [Pennsylvania] [Subsistence] and operate against [Mobile] on the [Subsist (-ed, -ing)] side [Surrounding] [Sigel F] &c Geo D Sheldon
+  no9: H6 C0 I0 M0
+    Maj. Eckert Washington Agawam Trents Reach Bergen windpipe {time: 7.30 PM} plunder peasant Appian {time: 10 PM} platina for [A. E. Burnside] growl [Movement] No change sligo naval situation [Movement] This days garden examiner says Judah will pocket Bergen windsor and operate against galway on the waxend side webster [Richmond] &c Geo D Sheldon
+  no1shuf: H23 C0 I0 M0
+    Maj. Eckert [Sumter] Agawam Trents Reach [Volunteering] [Trenton] {time: 10 PM} [7] [Suffolk] [Fortify (-ed, -ing)] {time: 5.30 PM} [8] for [Our lines] [Gen J. M. Palmer] [.] No change [Pearl] naval situation [.] This days [Scatter (-ed, -ing)] examiner says [Florence] will [B. G. Farragut] [Volunteering] [Gen J. T. Boyle] and operate against [Tuscaloosa] on the [J. S. Negley] side  {tail: [signed] [Winchester] &c Geo D Sheldon}
+  no2shuf: H20 C1 I0 M0
+    Maj. Eckert [Martinsburg] Agawam Trents Reach [Nashville] [Fork] {time: 10 PM} plunder [Maj Gen B. F. Butler] [Charleston] {time: 5 PM} platina for [Tunnel Hill] [Aquia Creek] [1000] No change [Etowah] naval situation [Carter S.P.] This days [Beatty J] examiner says [James] will [-] [Nashville] [Presence] and operate against [Stanley D S] on the [La Grange] side [Tuckers Station] [Chattahoochee] &c Geo D Sheldon
+F7 tokens=31 no1=13(0.42) no2=11(0.35) no9=3(0.10)
+  no1: H12 C0 I0 M0
+    for begs sheaf [Quartermaster] [.] on [Expedition] [16000] strong is to [Embark (-ed, -ing)] at while horse [Tomorrow] send to that place immediately every vessel fitted to aid in this [Movement] and in removing stores and [Wounded] to a new bass or Hospital  {tail: [signed] [Qr Master Genl U.S.] {time: 4 PM} Thos T Eckert}
+  no2: H9 C0 I0 M0
+    for begs sheaf [Rations] unity on rape gas [Monday] strong is to [Defeat (-ed, -ing) [#]] at while horse [Throw] send to that place immediately every vessel fitted to aid in this [Over the] and in removing stores and [Wounded] to a new bass or Hospital [Surrounding] [Secretary of Treasury] {time: 4 PM} Thos T Eckert
+  no9: H3 C0 I0 M0
+    for begs sheaf [Quartermaster] unity on rape gas woodbury strong is to [Pemberton] at while horse whelp send to that place immediately every vessel fitted to aid in this tanner and in removing stores and wilkes to a new bass or Hospital Webster Bender {time: 7 PM} Thos T Eckert
+  no1shuf: H11 C1 I0 M0
+    for begs sheaf [North] [.] on [Pensacola] [16000] strong is to [Roddy] at while horse [Maj Genl U.S. Grant] send to that place immediately every vessel fitted to aid in this [Helena] and in removing stores and [Gen A. J. Smith] to a new bass or Hospital  {tail: [signed] [telegraphed] {time: 4 PM} Thos T Eckert}
+  no2shuf: H9 C0 I0 M0
+    for begs sheaf [Steele Fdk] unity on rape gas [Day] strong is to [Ewing] at while horse [Point] send to that place immediately every vessel fitted to aid in this [Artillery] and in removing stores and [Richmond] to a new bass or Hospital [Tuckers Station] [Ammunition] {time: 4 PM} Thos T Eckert
+F8 tokens=38 no1=27(0.71) no2=22(0.58) no9=9(0.24)
+  no1: H25 C0 I0 M0
+    Maj. Eckert [Volunteer] [City Point] {date: July 10} [By the way of] [Monroe] {time: 4.30 PM} {date: July 10} for [Qr Master Genl U.S.] [Washington] [.] There are [Transport (-ed, -ing)]'s here now for [7000] [Men] [.] [General] Wright has [11000] [Men] [.] I think there wilby [Transport (-ed, -ing)]'s enough for his [Command = Er (-ed, -ing)]  {tail: [signed] Ingalls [Brigadier General] [Quartermaster] Geo. D. Sheldon}
+  no2: H21 C0 I0 M0
+    Maj. Eckert [Wounded] [Cairo] July feeble [Concentrate (-ed, -ing)] [Tennessee] {time: 4.30 PM} July [Conasauga River] for [Secretary of Treasury] [Maj Gen B. F. Butler] unity There are [Telegraph (-ed, -ing)]'s here now for postpone [Killed] [Near] unity [Harbor] Wright has [Acton [sic, ? Action]] [Monday] [Near] [Sunday] I think there wilby [Telegraph (-ed, -ing)]'s enough for his [City] [Surrounding] Ingalls [Ammunition] [Rifle Pits] Geo. D. Sheldon
+  no9: H9 C0 I0 M0
+    Maj. Eckert Washington [W. S. Sherman] July feeble peasant appian {time: 8 PM} July federal for Belcher grapes unity There are [Threaten]'s here now for postpone waldo [Transports] unity Shelby Wright has flag woodbury [Transports] [Movement] I think there wilby [Threaten]'s enough for his pontiac webster Ingalls [Yorktown] [Quartermaster] Geo. D. Sheldon
+  no1shuf: H24 C1 I0 M0
+    Maj. Eckert [Sumter] [Gunboat] {date: July 10} [Suffolk] [Fortify (-ed, -ing)] {time: 4.30 PM} {date: July 10} for [Surrender (-ed, -ing)] [Colonel] [.] There are [Atlanta]'s here now for [7000] [Ohio] [.] [Danger] Wright has [11000] [Ohio] [.] I think there wilby [Atlanta]'s enough for his [Brig. Gen. H. H. Lockwood]  {tail: [signed] Ingalls [Offensive] [Chickamauga] Geo. D. Sheldon}
+  no2shuf: H21 C0 I0 M0
+    Maj. Eckert [Martinsburg] [Hatch J P] July feeble [Maj Gen B. F. Butler] [Charleston] {time: 4.30 PM} July [Winchester] for [Driven back] [Follow (-ed, -ing) [#]] unity There are [Subsist (-ed, -ing)]'s here now for postpone [Carr] [Surround] unity [Secretary of War] Wright has [Repulse] [Day] [Surround] [Carter S.P.] I think there wilby [Subsist (-ed, -ing)]'s enough for his [Press] [Tuckers Station] Ingalls [Defeat (-ed, -ing)] [Fredericksburg] Geo. D. Sheldon
+F9 tokens=39 no1=21(0.54) no2=15(0.38) no9=4(0.10)
+  no1: H19 C0 I0 M0
+    Geo D. Sheldon Ft Monroe [City Point] {date: July 9} {time: 6 PM}s for [Command = Er (-ed, -ing)] ing office sir [Monroe] [.] please in form me by [Telegraph (-ed, -ing)] [Of the] arrival [Of the] first [Transport (-ed, -ing)] [Of the] [Advance (-ed, -ing)] [Of the] [19] [Army] [Corps] from [New Orleans]  {tail: [signed] [Maj Genl U.S. Grant] I called at your office few days ago SH Beckwith}
+  no2: H15 C0 I0 M0
+    Geo D. Sheldon Ft Monroe [Cairo] July padlock {time: 6 PM}s for polka ing office sir [Tennessee] unity please in form me by [Valley] [Pursue (-ed, -ing)] arrival [Pursue (-ed, -ing)] first [Telegraph (-ed, -ing)] [Pursue (-ed, -ing)] [Arrest (-ed, -ing)] [Pursue (-ed, -ing)] hope [Washburn C C] [Corps] from [Lynchburg] [Saturday] [Jenkins] I called at your office few days ago SH Beckwith
+  no9: H4 C0 I0 M0
+    Geo D. Sheldon Ft Monroe [W. S. Sherman] July padlock {time: 11 PM}s for polka ing office sir appian unity please in form me by wreathe torch arrival torch first [Threaten] torch orchard torch hope oyster pelton from Emmet [Troops] Juno I called at your office few days ago SH Beckwith
+  no1shuf: H19 C0 I0 M0
+    Geo D. Sheldon Ft Monroe [Gunboat] {date: July 9} {time: 6 PM}s for [Maj Gen W. T. Sherman] ing office sir [Fortify (-ed, -ing)] [.] please in form me by [Bowling Green] [Goldsboro] arrival [Goldsboro] first [Atlanta] [Goldsboro] [Maj Gen Gordon Granger] [Goldsboro] [19] [Delaware] [Fortifications] from [Major]  {tail: [signed] [Abingdon] I called at your office few days ago SH Beckwith}
+  no2shuf: H15 C0 I0 M0
+    Geo D. Sheldon Ft Monroe [Hatch J P] July padlock {time: 6 PM}s for polka ing office sir [Charleston] unity please in form me by [Colonel] [Unite (-ed, -ing)] arrival [Unite (-ed, -ing)] first [Subsist (-ed, -ing)] [Unite (-ed, -ing)] [Loss Losing] [Unite (-ed, -ing)] hope [Hood] [Madison] from [Richmond] [Hardee] [Sparta] I called at your office few days ago SH Beckwith
+F10 tokens=30 no1=15(0.50) no2=12(0.40) no9=6(0.20)
+  no1: H12 C0 I0 M0
+    Geo. D. Sheldon F {time: 6.30 PM} to [Colonel] are see  {tail: [signed] Chief [Quartermaster] [.] [Maj Genl U.S. Grant] leaves here at {time: 7 PM} to meet his family at [Monroe] [.] on his air rival there place the [Steam] her Greyhound at his dispose all [signed] roof us Ingalls [Brigadier General] S. H. Beckwith}
+  no2: H11 C0 I0 M0
+    Geo. D. Sheldon F {time: 6.30 PM} to [Cars] are see [Surrounding] Chief [Rifle Pits] unity [Jeff Davis] leaves here at {time: 7.30 PM} to meet his family at [Tennessee] [1000] on his air rival there place the [Transportation] her Greyhound at his dispose all [100] roof us Ingalls [Ammunition] S. H. Beckwith
+  no9: H6 C0 I0 M0
+    Geo. D. Sheldon F {time: 12 midnight PM} to paradise are see webster Chief [Quartermaster] unity japan leaves here at {time: 1.30 PM} to meet his family at appian [Movement] on his air rival there place the weasel her Greyhound at his dispose all [Troops] roof us Ingalls [Yorktown] S. H. Beckwith
+  no1shuf: H12 C0 I0 M0
+    Geo. D. Sheldon F {time: 6.30 PM} to [Transport (-ed, -ing)] are see  {tail: [signed] Chief [Chickamauga] [.] [Grand Junction] leaves here at {time: 7 PM} to meet his family at [Fortify (-ed, -ing)] [.] on his air rival there place the [Bragg] her Greyhound at his dispose all [signed] roof us Ingalls [Offensive] S. H. Beckwith}
+  no2shuf: H11 C0 I0 M0
+    Geo. D. Sheldon F {time: 6.30 PM} to [Enemy] are see [Tuckers Station] Chief [Fredericksburg] unity [Valley] leaves here at {time: 7.30 PM} to meet his family at [Charleston] [1000] on his air rival there place the [Front] her Greyhound at his dispose all [100] roof us Ingalls [Defeat (-ed, -ing)] S. H. Beckwith

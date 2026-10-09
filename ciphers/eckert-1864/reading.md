@@ -1139,5 +1139,65 @@ Wash'n The Press Despatch in [New York] [Ewell] of [13] about [Maj Gen J. G. Fos
 
 Code-word tokens: H 11.
 
-Totals over the 168 entries: H 2674, C 23, I 4, M 3.
+**E210 | Page 93 | 5637 | mssEC 25 (obj 5952, pointer 5637), 28 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for Capt. H. S. Taft, signal officer, Washington; signer L. B. Norton, chief signal officer (FM-R3a, 9 Oct 2026; row 5637/2; image-read)**
+
+for [Captain] H. S Tafft signal officer number [158] F street [Washington] [.] will you please get [From the] [Engineer] [Department] & send to me [12] [Of the] best maps [Of the] peninsula and [South] side [James] [.] hurry up sergeant Royer with my desk  {tail: [signed] L B Norton [Captain] & Chief Signal officer Geo D Sheldon}
+
+Code-word tokens: H 18.
+
+**E211 | Page 105 | 5649 | mssEC 25 (obj 5952, pointer 5649), 3 May 1864 Ft Monroe, Sheldon to Maj. Eckert for Fox, Asst. Secretary of the Navy, forwarding the 'little party of pleasure' telegram signed Butler, Yorktown 5 PM; the Yorktown copy (H. N. Snow, partly clear, 'Nankin' for the Navy title) stands above it on the page (FM-R3a; row 5649/2; image-read)**
+
+Maj Eckert Di for Fawkes assistant [Secretary of Navy] [.] that little party of pleasure to which you were invited will come off weddings day evening Your friends most Earnestly desire your presence the [80] can hardly be Celebrated without you  {tail: [signed] [Maj Gen B. F. Butler] [Yorktown] {time: 5 PM} A [Telegraph (-ed, -ing)] within a [Telegraph (-ed, -ing)] Geo D Sheldon}
+
+Code-word tokens: H 9.
+
+**E212 | Page 223 | 5767 | mssEC 25 (obj 5952, pointer 5767), 7 July 1864 Washington, T. T. Eckert to Sheldon at Ft Monroe, for Lt. Col. Biggs, chief quartermaster: transportation to City Point, signed Quartermaster General (FM-R3a; row 5767/2; image-read)**
+
+Geo. D. Sheldon Ft Monroe Lient [Colonel] Biggs chief [Quartermaster] [Monroe] [.] [Maj Genl U.S. Grant] directs that all available [Transportation] be sent to [City Point] to move [Troops] thence to [Washington] [.] send up such [Steam]ers as you have suited for this service  {tail: [signed] [Qr Master Genl U.S.] frorence united state of [Delaware] T. T. Eckert}
+
+Code-word tokens: H 14.
+
+**E213 | Page 63 | 5607 | mssEC 25 (obj 5952, pointer 5607), 16 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert, surplus telegraph material to go with the Tenth Corps (FM-R3a; row 5607/1; image-read)**
+
+Maj Eckert Di I came here by [General] Turners directions to receive your instructions concerning material which will become surplus by the new arrangements [.] The [General] wishes to have the material and the superintendent go with the [10] [Corps] if possible  {tail: [signed] Ell F. Geo D Sheldon}
+
+Code-word tokens: H 6.
+
+**E214 | Page 159 | 5703 | mssEC 25 (obj 5952, pointer 5703), 27 May 1864 Washington, T. T. Eckert to Sheldon at Ft Monroe, telegraph wire and insulators for West Point (FM-R3a; row 5703/1; image-read)**
+
+Geo D Sheldon Ft. Monroe Bickford has [10] [Mile]'s wire [3] miles insulators and [18] [Mile]'s spikes better send to [West] point with him enough material to make out [20] [Mile]'s [.] operators sufficient are ordered report to you advise me often about the work T. T. Eckert
+
+Code-word tokens: H 9.
+
+**E215 | Page 190 | 5734 | mssEC 25 (obj 5952, pointer 5734), 8 June 1864 Ft Monroe, Sheldon to Maj. Eckert, forwarding Acting Rear-Adm. S. P. Lee's telegram to the Secretary of the Navy from Trent's Reach, 7 June 10 PM (FM-R3a; row 5734/0; image-read)**
+
+Maj. Eckert [Volunteer] Agawam Trents Reach [James] [River] {time: 10 PM} [7] [By the way of] [Monroe] {time: 5.30 PM} [8] for [Secretary of Navy] [Washington] [.] No change [In the] naval situation [.] This days [Richmond] examiner says [Maj Genl U.S. Grant] will [Cross (-ed, -ing)] [James] [River] and operate against [Richmond] on the [South] side  {tail: [signed] [S. P. Lee] &c Geo D Sheldon}
+
+Code-word tokens: H 23.
+
+**E216 | Page 199 | 5743 | mssEC 25 (obj 5952, pointer 5743), 13 June 1864 4.20 PM Washington, T. T. Eckert to Sheldon at Ft Monroe, for Lt. Col. Biggs: vessels to White House, signed Quartermaster General (FM-R3a; row 5743/1; image-read)**
+
+for begs sheaf [Quartermaster] [.] on [Expedition] [16000] strong is to [Embark (-ed, -ing)] at while horse [Tomorrow] send to that place immediately every vessel fitted to aid in this [Movement] and in removing stores and [Wounded] to a new bass or Hospital  {tail: [signed] [Qr Master Genl U.S.] {time: 4 PM} Thos T Eckert}
+
+Code-word tokens: H 12.
+
+**E217 | Page 226 | 5770 | mssEC 25 (obj 5952, pointer 5770), 10 July 1864 4.30 PM Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General, forwarding Ingalls's City Point message on transports for Gen. Wright's command (FM-R3a; row 5770/0; image-read)**
+
+Maj. Eckert [Volunteer] [City Point] {date: July 10} [By the way of] [Monroe] {time: 4.30 PM} {date: July 10} for [Qr Master Genl U.S.] [Washington] [.] There are [Transport (-ed, -ing)]'s here now for [7000] [Men] [.] [General] Wright has [11000] [Men] [.] I think there wilby [Transport (-ed, -ing)]'s enough for his [Command = Er (-ed, -ing)]  {tail: [signed] Ingalls [Brigadier General] [Quartermaster] Geo. D. Sheldon}
+
+Code-word tokens: H 25.
+
+**E218 | Page 224 | 5768 | mssEC 25 (obj 5952, pointer 5768), 9 July 1864 6 PM City Point, S. H. Beckwith to Sheldon at Ft Monroe, forwarding Grant's message to the commanding officer, Fort Monroe, on the 19th Corps (FM-R3a; row 5768/0; image-read)**
+
+Geo D. Sheldon Ft Monroe [City Point] {date: July 9} {time: 6 PM}s for [Command = Er (-ed, -ing)] ing office sir [Monroe] [.] please in form me by [Telegraph (-ed, -ing)] [Of the] arrival [Of the] first [Transport (-ed, -ing)] [Of the] [Advance (-ed, -ing)] [Of the] [19] [Army] [Corps] from [New Orleans]  {tail: [signed] [Maj Genl U.S. Grant] I called at your office few days ago SH Beckwith}
+
+Code-word tokens: H 19.
+
+**E219 | Page 236 | 5780 | mssEC 25 (obj 5952, pointer 5780), 27 Aug 1864 6.30 PM City Point, S. H. Beckwith to Sheldon at Ft Monroe, forwarding Ingalls's message: Gen. Grant to meet his family at Monroe, steamer Greyhound at his disposal (FM-R3a; row 5780/1; image-read)**
+
+Geo. D. Sheldon F {time: 6.30 PM} to [Colonel] are see  {tail: [signed] Chief [Quartermaster] [.] [Maj Genl U.S. Grant] leaves here at {time: 7 PM} to meet his family at [Monroe] [.] on his air rival there place the [Steam] her Greyhound at his dispose all [signed] roof us Ingalls [Brigadier General] S. H. Beckwith}
+
+Code-word tokens: H 12.
+
+Totals over the 178 entries: H 2821, C 23, I 4, M 3.
 <!-- decode.py: derived block ends -->
