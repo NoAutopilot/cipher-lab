@@ -8909,3 +8909,145 @@ FIX worker (not applied here; key.md untouched): **E271, E274** Knocks = Knox (B
 person; **E279** plain shelter; **E282** weasilers = Weasel+ers = Steamers (C); **E287** pledge lampoon plaster = "6.45", not [51]; **E290**
 plain "ann" (Powhatan), not {time: 1 AM}, and whiskey = troops C. The E-headers of E271 ("pp.148-149") and E287 ("pp.106-107") should carry
 the corrected pages when the FIX worker touches them.
+
+## AUDIT (FV-FM8a)
+
+Verifier FV-FM8a (account 1, for LANE LEDGER), 9 Oct 2026, 11:16-11:4x UTC by `date -u`; a separate session from the readers FM-R4a
+(E254) and FM-R5a (E270, E272, E275, E277) and from CONF-FM, not protecting their conclusions. Scope: **E254, E270, E272, E275, E277**
+(ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952). Nothing decoded beyond key look-ups in key.md.
+Key source for all five: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Scripts and outputs: `fortmonroe/fv_fm8a_hdl.py` + `.out`, `fv_fm8a_hdl_4788.out` (CONTENTdm full text
+across all pointers, five IIIF pages, one item record), `fortmonroe/fv_fm8a_print.py` + `.out` (cached OR/Butler grep, OR I/42 pt 3 fetched
+to scratch, Grant Papers be-api). Images and crops in scratch, not committed.
+
+### 1. Prior work, duplicates, image
+- **prior_work.py** (`--item-spec 'shelfmark=Huntington mssEC 25;canvas=<ptr>;date=...;sender=...;recipient=...' --step-type audit
+  --offline`, one per entry, 11:2x UTC): exit 4 for all five, owing only the target-level LEAD of FIX-FM7's 10:49 claim (done, does not
+  cover these units: CLEAR); 5801 raised an edition-hit LEAD in `warofrebellion432unit` (OR I/43 pt 2; the window is unrelated text; the
+  telegram itself is in OR I/42 pt 3, section 3); 5768 raised one in `warofrebellion403unit` (OR I/40 pt 3): opened and read, section 3.
+  UNCHECKED-NET: aaymeloglu (no clone). Own work: AUDIT.md's verifier section for E160-E164 already paraphrases the clear frame of E277
+  ("Let me know the strength of each battery and the style of [guns] ... please send word at once", as the request E160 answers) from the
+  holder transcription; that is context, not a decipherment of E277's code words.
+- **Duplicate diff:** pointers 5829, 5801, 5768, 5824, 5802 occur in ciphertext*.txt only in their own E-headers and in other entries of
+  the same pages (E278 on 5829; E162/E160 on 5802; E185 on 5824; E218 on 5768), all different telegrams. No filed header has the same
+  date and addressee. **No duplicate.** Not filed anywhere: the second entry on 5768 (Fort Monroe 10 July 1864 10.15 AM, Shaffer to the
+  General-in-Chief, "Appian feeble ghost AM July federal for Indian growl zebra none torch Emmet whiskey have arrived yet walrus Jay W.
+  Shaffer paradise and chief of staff"), E272's sibling, section 2.
+- **Image (all five pages fetched at 2400 px, line crops with `tools/iiif_lines.py --image ... --region ... [--centres ...]`):** every
+  line of the five entries read. The transcription stands word for word except **E254 line 5: the page reads "will Contrive immed'y"**
+  (as the sent copy 9913 "contrive"), not "continue"; and E254's signature line reads "B [W.] Brice" with an ambiguous middle letter
+  (transcribed "or"; 9913 "B W Brice"). E270, E272, E275, E277: as transcribed. E275 "boots" is written so, twice (see section 4).
+
+### 2. Holder's full text
+**Huntington CONTENTdm full text** across all pointers (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1; `fv_fm8a_hdl.py`, under the
+LANE LEDGER hdl token 11:18-11:21 UTC, 16 queries + 5 IIIF pages + 1 dmGetItemInfo = 22 requests, 3.2 s apart):
+- **E254: no clear copy.** "paymaster binney" 0; "brice binney" 3 (5829 itself, 9913 = the sent cipher copy, 5857 a Jan 1865 Binney
+  telegram); "officers designated" 8 (5829, 9913; the others 1863-66 texts unrelated). CONF-FM's finding stands: 9913 is the sent copy of
+  the same cipher text, which confirms the transcription and the time word, not the meanings.
+- **E270: no other copy.** "terry varina" 1 (5801 itself); "leave for washington tonight" 12 (none this text); "repeat this to" 61 (5801;
+  none this text).
+- **E272: no other copy of this telegram; a clear copy of its sibling.** "shaffer rawlins" 1 (5768 itself); "nineteenth corps" 3, "19th
+  corps" 136 (none this text); "shaffer chief of staff" 6: **pointer 4788 (Page 347): "Ft Monroe 10th 15 am July 10th Gen Halleck - none of
+  the New Orleans troops have arrived yet J W Shaffer Col and Chief of staff"** = the received clear copy of the unfiled sibling entry on
+  5768 (same sender, same hour, to Halleck instead of Rawlins, different words). 5769 is Shaffer's 1 PM "Crescent has just arrived".
+- **E275: no other copy.** "boots of any kind" 1 (5824 itself); "allen quartermaster" 0.
+- **E277: no other copy.** "fred martin" 4 (5801, 5802 = the 1 Nov request and E277's own page; 6096, 3234 = 1863 "Fred Myers"/"Carrie
+  Martin"); "chief of artillery" 30, "each battery" 18 (none this text); "style of gun" 0.
+
+### 3. Print
+Cached texts (`sources/ia-fulltext/print-check`, OR I/33, 35-2, 36-1/2, 37-2, 40-3, 43-1/2, 45-2, Butler IV-V) plus OR I/42 pt 3
+(`warofrebellion423unit`, archive.org, 1 request, scratch); IA be-api on Grant Papers vols. 11-13 (8 requests, snippet only); Google Books
+one probe ("no boats of any kind to spare", `country=US`, HTTP 200, 376 unrelated hits). Phrase and name grep (`fv_fm8a_print.py`):
+- **E270 is printed: OR ser. I vol. 42 pt 3 p.481**: "Fort Monroe, November 1, 1864. Major-General Terry, Commanding near Varina: I leave
+  for headquarters to-night. In the meantime all, I think, will be quiet. Lieutenant-Colonel Smith will attend to necessary department
+  matters. BENJ. F. BUTLER, Major-General." Word diff (normalised, PX-BRODEC): agree except **print "headquarters" where the cipher has
+  growl = Washington** (key H; Butler wrote from Washington next day, OR I/42 pt 3 p.489, "I am here in obedience to your orders", so the
+  ledger's word is not wrong; the print's is the edition's or the received copy's). The ledger adds the operator's "Repeat this to [Colonel]
+  Smith, assistant [Adjutant General]" and "how are you", outside the telegram. The print settles the reader's two loose words: "Wilby" =
+  "will be" (plain), "quadrantal" = department (Quadrant = Department, H).
+- **E272 (Shaffer to Rawlins, 10 July 1864 10.15 AM): not located; its sibling and replies are printed.** OR I/40 pt 3 p.142: "General
+  Halleck: None have arrived yet. Fort Monroe, July 10, 1864 -- 10.15 a.m. J. W. S[haffer], Colonel and Chief of Staff" (the sibling, 4788);
+  same page, 1 p.m. Shaffer to Grant "Steamer Crescent has just arrived with troops from New Orleans, and has been ordered to Washington"
+  and Grant's answer "Yes; order them all to Washington"; OR I/37 pt 2 prints the 1 p.m. to Halleck; OR I/40 pt 3 (11 July) Grant's HQ to
+  Shaffer: "How many vessels with the Nineteenth Corps from New Orleans have passed Fort Monroe for Washington". Grant Papers vol. 11
+  (be-api) quotes Rawlins to Shaffer on the 19th Corps vessels; no snippet of this telegram ("none of the Nineteenth" 0, Shaffer "arrived
+  yet" 1 unrelated). Searched: OR I/37 pt 2, I/40 pt 3, I/43 pt 1-2 by Shaffer, Rawlins, "Nineteenth Corps ... arrived".
+- **E254 (Brice to Butler, 12 Dec 1864): not located.** OR I/42 pt 3 (Brice, Binney, "make you whole", "one month's pay"), Butler IV-V,
+  OR I/43 pt 2 (Brice correspondence only with Ladd, p.373; Maj. B. W. Brice as paymaster at Martinsburg, Oct 1864), Grant Papers vol. 13
+  ("Binney paymaster" 0).
+- **E275 (James to Allen, 9 Dec 1864): not located.** OR I/42 pt 3 ("boots/boats of any kind", "transport ... cavalry", Capt. James
+  quartermaster), all cached OR volumes, Grant Papers vol. 13 ("boats of any kind" 0), Google Books (above).
+- **E277 (Martin for Butler to Col. Howard, 2 Nov 1864 10 AM): not located; context printed.** OR I/42 pt 3 p.489 (Butler to Grant,
+  Washington, 2 Nov 1864 1 p.m.: "we should have at least 5,000 good troops and at least two batteries of Napoleons", read here) -- the
+  reason for the request; the answer is E160 on the same page (audited). Not found: "style of gun", "strength of each battery", "Fred
+  Martin" (OR I/42 pt 3, Butler V, Grant Papers vol. 12).
+- Press of the day not searched (none of the five is a press telegram). Solver repositories and Tomokiyo: prior_work.py cached checks CLEAR.
+
+### 4. Grade and reading corrections
+`depth_pct` = H/C over code-word groups (plain words and names excluded), as FV-FM4. Corrections are for a FIX job (reading.md is the
+decoder's, rule 7).
+- **E254:** Lucy = 5 PM, Knocks = Knox = Butler (sound-spelling; 9913 writes "Knox"), Tappan x2 / Taunton = Major, plug / plunge = 1,
+  unity / zebra = period, walrus = signature, famish = Norfolk, Knave = Butler: **H 12 of 12**. Plain: "toupee" = to pay, "Yuma" = you may,
+  "bayou inure" = by you in your, "butty" = but I, "Reese supply" = re-supply, "sheaf pay Mr" = chief paymaster, "hole" = whole, "pa" =
+  pay. **Slips: "continue" -> "contrive" (image and 9913); "Knocks" -> [Butler] (CONF-FM's variant).** Reading: "[5 PM.] [Butler]: I have
+  directed [Major] Binney to pay [1] month's pay to such officers as you may designate, being those referred to by you in your telegram of
+  this date. Money is difficult, but I will contrive immediately to re-supply [Major] Binney for this outlay. [Signed] B. W. Brice. Another,
+  to [Major] Binney, chief paymaster, [Norfolk]: Pay [1] month's pay to officers designated by authority of [Butler]. I will make you whole
+  immediately for this outlay. B. W. Brice, Acting Paymaster General."
+- **E270 (print):** Martha = 7 PM (H, no print counterpart), Appian = Monroe, Taunton = Major, Shelby = General, polkaing = Commanding,
+  trance = Near, unity, zebra, zodiac = period, Shylock = In the meantime, Pandora = Colonel ("Lieutenant Pandora" = Lieutenant-Colonel),
+  Tarquin = Necessary, quadrantal = Department(al), yoke = signature, Knave = Butler: **C 14** (agree with the print); growl = Washington
+  **H 1** (print "headquarters"); unity, paradise = Colonel, Barton = Adjutant General in the operator's repeat instruction: **H 3**; **19 of
+  19 H/C**. **Reading corrections: "Wilby" = will be ("all, I think, will be quiet"), "quadrantal" = department.**
+- **E272:** palsy = Brigadier General, Black = City Point, unity / zebra = period, torch = Of the, hunkey = 19, oyster = Army, pelton = Corps,
+  Jacob = General-in-Chief, wrangled = telegraphed, grapes = Washington, persia = As soon as, yoke = signature, pandora = Colonel: **H 14
+  of 14**; "Sheaf Staff" = chief of staff (plain sound-spelling); "pleasant morning" operator's note. Reading = FM-R5a's ("For [Brig. Gen.]
+  John A. Rawlins, chief of staff, [City Point]. There has none [of the] [19th] [Army] [Corps] arrived yet. [General-in-Chief] has
+  [telegraph]ed to have them sent to [Washington] [as soon as] they arrive. [Signed] J. W. Shaffer, [Colonel] and chief of staff.").
+  **By-product (known plaintext, not a reading of E272):** the sibling entry against its clear copy 4788 (feeble ghost = 10 15, federal =
+  10, Indian = General-in-Chief, torch = of the, Emmet = New Orleans, all H) gives **whiskey = troops** (C; "none of the New Orleans troops
+  have arrived yet"). "Whiskey" is not in key.md; this is a candidate key row for the key's owner (it bears on E256 17 June's M "whiskey"
+  and FIX-E262's [Troops]), not written to key.md here.
+- **E275:** Jennie = 3.30 PM, princess / pilgrim = Captain, Vinton / Vincent = Quartermaster, growl = Washington, zodiac / zebra = period,
+  peach = 2, **whimper = Transport (key.md, H; FM-R5a's "[?]")**, plunge = 1, Woodbury = 1000, panama = Cavalry, webster = signature: **H 14
+  of 14**. "know" = no. The page writes "boots" twice; with "transport 1000 cavalry" the sense is boats (the clerk's sound-spellings are
+  everywhere in this ledger), but the page says boots: the word is left as written, its meaning **M** (not a code token). Reading: "[3.30
+  PM.] [Captain] Allen, [Quartermaster], [Washington]. We have no boots [?boats] of any kind to spare. Have been waiting [2] days for boots
+  [?boats] to [transport] [1] [1000] [cavalry], and have not yet succeeded in getting them. [Signed] [Captain] James, [Quartermaster]."
+- **E277:** Emily = 10 AM, Appian = Monroe, pandora = Colonel, negro = Artillery, pagoda = Battery, smoky = Gun, stephen = In the, plank = 2,
+  pagans = Batteries, webster = signature, pilgrim = Captain: **H 11**; "pause" not in key.md: **U 1**; **11 of 12**. Reading: "[10 AM,
+  Monroe.] For [Colonel] Howard, chief [of artillery]. [pause?] Let me know the strength of each [battery] and the style of [gun] [in the]
+  [2] last mentioned [batteries]. Please send word at once. [Signed] Fred Martin, [Captain]."
+
+### 5. Classification (key `period`)
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E254** B. W. Brice, Acting Paymaster General, Washington, to Butler via Sheldon, Fort Monroe, 12 Dec 1864 5 PM | **N3** | unknown | **D3** | 100 (H 12 of 12) | code clause: Tappan/Taunton = Major, Famish = Norfolk passim; external, non-statistical: the sent copy (mssEC 18 pointer 9913) records the same cipher text (Knox, Lucy, Binney, contrive) independently; image read |
+| **E270** Butler (R. O'Brien) to Maj. Gen. Terry near Varina via Fort Monroe, 1 Nov 1864 7 PM | **N1** (printed, OR ser. I vol. 42 pt 3 p.481) | yes (print) | **D3** | 100 (C 14 + H 5 of 19) | external: the print; growl = Washington vs print "headquarters" (one word, the ledger consistent with OR I/42 pt 3 p.489); image read |
+| **E272** Col. J. W. Shaffer, Fort Monroe, to Brig. Gen. Rawlins, City Point, 10 July 1864 10.15 AM | **N3** | unknown (facts printed, not the text) | **D3** | 100 (H 14 of 14) | code clause: Hunkey Oyster Pelton = 19th Army Corps, Persia = As soon as; external, non-statistical: OR I/40 pt 3 p.142 (Shaffer to Halleck same hour, "None have arrived yet"; Grant: "order them all to Washington") and holder 4788; image read |
+| **E275** Capt. James, Quartermaster, Fort Monroe, to Capt. Allen, Quartermaster, Washington, 9 Dec 1864 3.30 PM | **N3** | unknown | **D2** | 100 (H 14 of 14) | code clause: Whimper = Transport, Woodbury = 1000, Panama = Cavalry; no external non-statistical check found (key-level matched control only: CONF-FM's Porter test 46/52 vs shuffled p99 3); image read |
+| **E277** Capt. Fred Martin for Butler, Fort Monroe, to Col. Howard, chief of artillery, 2 Nov 1864 10 AM | **N3** | unknown (context printed) | **D3** | 92 (H 11 of 12) | code clause: Pagoda/Pagan = Battery, Smoky = Gun, Negro = Artillery; external, non-statistical: OR I/42 pt 3 p.489 (Butler, 2 Nov 1864: "at least two batteries of Napoleons"); the reply E160 on the same page; image read |
+
+Depth sentences (own, from the reading): E254 "On 12 Dec 1864 the Acting Paymaster General, B. W. Brice, told Butler he had ordered Maj.
+Binney, chief paymaster at Norfolk, to pay a month's pay to the officers Butler named, and would re-supply Binney's funds at once." E270
+"On 1 Nov 1864 Butler told Terry he was leaving that night and that Lt. Col. Smith would attend to department business." E272 "At 10.15 AM
+on 10 July 1864 Shaffer told Rawlins that none of the 19th Corps had yet reached Fort Monroe and that Halleck had asked for them to go on
+to Washington." E275 "On 9 Dec 1864 the Fort Monroe quartermaster told Capt. Allen he had none to spare and had waited two days for
+transport for a thousand cavalry." E277 "On 2 Nov 1864 Butler's office asked Col. Howard for the strength of each battery and the guns of the
+last two he had named."
+
+Safe sentences (N3): "Read at grade H with War Department Cipher No. 1 (period key): <reading summary>. The telegram was not located in
+<section 3 sources> or the Huntington's full-text search (searched 9 Oct 2026); <printed context>." E270 (N1): "The Fort Monroe ledger's
+cipher copy reads, with the period key, to Butler's telegram to Terry of 1 Nov 1864 printed in OR ser. I vol. 42 pt 3 p.481." Unsafe for
+all: "first decipherment", "previously unread", "new", "unpublished" (rule 10: N3 only).
+
+### 6. Postmortem
+FM-R5a's "none found" for E270 was a shallow print search: OR I/42 pt 3 was not on disk and was not fetched ("unchecked" in its own
+notes), and the telegram is there under 1 Nov. Lesson (already in FV-FM7a's and AUD2-LEDGER-15's): fetch the OR volume for the entry's
+month before writing "not located". FM-R5a left two key words unread that key.md has (E275 whimper = Transport) or the print settles (E270
+Wilby, quadrantal); FM-R4a's transcription has "continue" where the page and the sent copy have "contrive". Decoder slips for a FIX job
+(decode.py entry notes, rule 7): E254 "continue" -> "contrive" (transcription), "Knocks" -> [Butler]; E270 "Wilby" -> will be, "quadrantal"
+-> [Department]al; E275 "whimper" -> [Transport] if the decoder misses the inflection. Candidate key row (not written): whiskey = troops (C,
+5768 sibling vs 4788). Unfiled entry for a reader: the 5768 sibling (Shaffer to Halleck 10 July 1864 10.15 AM; clear copy 4788; printed OR
+I/40 pt 3 p.142). No "new" or "first" wording found in FM-R5a's NOTES table.
