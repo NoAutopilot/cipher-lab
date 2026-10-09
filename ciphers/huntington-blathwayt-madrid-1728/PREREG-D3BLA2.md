@@ -76,3 +76,32 @@ images/BLA191_p5_w4354.jpg (recorded in images/manifest.json).
   follow PREREG-D3BLA I2 (a key tie that is not one word in two spellings stays M; 585's value stays U). L11 pos 1 (46, key tie) is a
   key question, not an image one, and is untouched.
 - On FAIL: nothing promoted; logged "hi-res KA FAIL" with the per-column table; the step goes [retired] for this instrument.
+
+## Amendment 4 -- UNA3-BLA, same instrument as amendment 3 on the remaining sign-M columns (9 Oct 2026, 10:5x UTC by date -u; before any tile is cut or read, nothing scored)
+Worker UNA3-BLA (account 1; brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md "## UNA3-BLA"). This is the amendment 3
+instrument (Huntington IIIF 4354 px, blind Sonnet read, one reconciliation, known-answer gate) applied to more columns, not a new knob.
+- Universe, fixed now. Of the 14 M tokens in reading_tokens.tsv (C 138, S 3, M 14, U 17), 7 are key ties whose sign is already H
+  (BLA184 p1 L02/L03/L04; BLA191 p5 L01 pos 8 665, L04 pos 4 1250, L11 pos 1 46, L12 pos 2 1018): an image cannot move them and they are
+  out of scope (PREREG-D3BLA I2). The image universe is every column whose sign conf is M in ciphertext_targets.tsv: BLA191 p5 L01 pos 9
+  941, L01 pos 11 386, L05 pos 10 1099, L06 pos 1 214, L07 pos 9 937, L11 pos 3 385, L12 pos 5 1185 (7 columns, all M tokens), and
+  BLA186 p1 L01 pos 8 778 (sign M, token U: unkeyed, so no grade can move; read for the sign only).
+- Pages and fetches: BLA191 p5 is on disk at 4354 px (images/BLA191_p5_w4354.jpg, UNA2-BLA): 0 requests. BLA186 p1 (pointer 61204):
+  one info.json + one image at the largest listed size <= 4354 wide; 2 requests to hdl.huntington.org, >= 1.5 s apart, browser UA.
+- Tiles: `python3 tools/iiif_lines.py --image <strip> --out <scratch>` first (command and output pasted in NOTES.md); if it does not
+  separate the lines, eye-set PIL crops per line, two overlapping halves per line, no upscale, neutral names, kept out of the repo.
+  BLA191 p5 lines L01, L05, L06, L07, L11, L12; BLA186 p1 L01.
+- Blind read: one Sonnet subagent call per page on that page's tiles only (no key, no glosses, no prior reads), digits per group in order.
+  Then one reconciliation by this worker on the same tiles, recording compete=1 for any universe column where a digit reads plausibly as
+  another (the hand's ')'/'>' = 7 rule holds; an overwritten figure is compete=1), before any score is printed.
+- Known-answer set (fixed now): on the read lines, every column whose sign is H and whose token is C, excluding the L12 columns UNA2-BLA
+  itself promoted with this instrument: BLA191 p5 L01 pos 1,3,4,5,6,7,10; L05 pos 1,2,4,5,6,7,8,9,11; L06 pos 2-11; L07 pos 1,2,3,6,7,8,
+  10,11; L11 pos 4,6,7,9,10,11; L12 pos 1 (41 columns); BLA186 p1 L01 pos 1,2,4,5,6,10,11 (7 columns). Answer = committed group. Same caveat
+  as amendment 3: the answers are 1200 px reads confirmed by context, not an independent witness.
+- Gate, per page (pre-registered): PASS iff the blind hi-res read equals the answer on >= 90% of that page's KA columns, rounded up
+  (BLA191 p5 >= 37 of 41; BLA186 p1 7 of 7). Alignment: groups aligned per line by position; a read that drops or adds a group on a line is
+  aligned by Needleman-Wunsch on groups and every KA column it cannot place counts as a miss. A page that FAILs promotes nothing.
+- On PASS of its page: a universe column becomes sign H iff the blind hi-res digits equal the committed group and compete = 0. A blind read
+  that gives a different group (e.g. 947 for 941) is reported, never written as a group change (no second witness). Changes go only into
+  settle_image.tsv, then `python3 settle.py && python3 build_key.py && python3 ../../tools/decode_key.py . --check`; values follow PREREG-D3BLA
+  I2 (a key tie that is not one word in two spellings stays M; unkeyed stays U). key.tsv unchanged.
+- On FAIL: nothing promoted; "hi-res KA FAIL" logged with the per-column table.
