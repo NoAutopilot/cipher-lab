@@ -14,6 +14,15 @@
           [--min-count N] [--homophone-budget K]   rare signs / signs beyond the K most frequent read as ? (CTTS)
           [--drop-letters h] [--collapse-doubles]  letters / doubled letters removed from corpus and model (CTTS)
           [--as-unknown CLASSFILE]  marked signs kept in the stream as gaps; no scored n-gram spans one (never --skip)
+          [--participation CLASSFILE]  after the solve, classify sign types from the blind run (MQS-PARTICIPATION,
+                          9 Oct 2026; paper p.115: misread nomenclature signs 'are usually not part of contiguous
+                          plausible segments'): share of a sign's occurrences inside lexicon-word windows across all
+                          restarts' decodes vs a shuffled-position null (sign labels permuted over the same windows);
+                          signs below the null's --part-alpha quantile are written to CLASSFILE (--as-unknown format).
+                          Catches: unmarked nomenclature signs a homophonic solve forced onto letters. Must NOT flag:
+                          a letter sign whose occurrences sit in words as often as the text's own coverage rate
+                          (tests: tools/tests/test_homophonic_participation.py). A proposal for --as-unknown, never a
+                          key edit; shelf grade in tools/data/tool_shelf.tsv.
           [--alphabet ru-s3p-soft]  a plaintext alphabet other than the 24 folded Latin letters (A2P4-KAL4, 3 Oct 2026)
           [--noise 0.1]   error-tolerant solve: see anneal_noisy (LANE R6 CM2, 25 Sept 2026)
           [--robust 0.1]  bounded-loss n-gram scoring: see RobustModel (LANE R6 CM2)
@@ -884,6 +893,75 @@ def make_marked_control(plain_text, K, N, seed, homs=(1, 2), marked_share=0.0, m
     return seq, p, truth, marked, info
 
 
+def word_windows(dec, lexicon, minlen=3):
+    """MQS-PARTICIPATION: a 0/1 list over the positions of the decoded string `dec`, 1 where the position lies inside
+    an occurrence of a lexicon word of >= minlen letters (all occurrences, overlapping allowed; a GAP never matches)."""
+    lex = {w for w in lexicon if len(w) >= minlen}
+    lens = sorted({len(w) for w in lex})
+    cov = [0] * len(dec)
+    for i in range(len(dec)):
+        for L in lens:
+            if i + L > len(dec):
+                break
+            if dec[i:i + L] in lex:
+                for j in range(i, i + L):
+                    cov[j] = 1
+    return cov
+
+
+def _sign_shares(seq, covs):
+    tot, hit = Counter(), Counter()
+    for cov in covs:
+        for x, c in zip(seq, cov):
+            tot[x] += 1
+            hit[x] += c
+    return {x: hit[x] / tot[x] for x in tot}
+
+
+def participation(seq, decodes, lexicon, minlen=3, shuffles=200, alpha=0.05, min_count=2, seed=1):
+    """MQS-PARTICIPATION (9 Oct 2026; Lasry, Biermann and Tomokiyo 2023 p.112, p.115; research row M43).
+    seq: the cipher signs; decodes: one decoded string per restart (same length as seq). For every sign: the share of
+    its occurrences, pooled over the decodes, that lie inside a lexicon-word window (word_windows). Null: the sign
+    labels are permuted over the positions (each decode's window mask kept) `shuffles` times; a sign's null is the
+    distribution of its share under that permutation, so a sign is compared with signs of its own count placed at
+    random. A sign with count >= min_count whose share falls below the null's alpha quantile is flagged.
+    Returns {sign: {"n", "share", "null_lo", "flag"}} (n = occurrences in seq)."""
+    covs = [word_windows(d, lexicon, minlen) for d in decodes]
+    real = _sign_shares(seq, covs)
+    rng = random.Random(seed + 3000)
+    nulls = {x: [] for x in real}
+    perm = list(seq)
+    for _ in range(shuffles):
+        rng.shuffle(perm)
+        for x, v in _sign_shares(perm, covs).items():
+            nulls[x].append(v)
+    n = Counter(seq)
+    out = {}
+    for x, v in real.items():
+        dist = sorted(nulls[x])
+        lo = dist[int(alpha * len(dist))] if dist else 0.0
+        out[x] = {"n": n[x], "share": round(v, 4), "null_lo": round(lo, 4), "flag": n[x] >= min_count and v < lo}
+    return out
+
+
+def auc(pos, neg):
+    """Mann-Whitney AUC: chance that a random `neg` value exceeds a random `pos` value (ties half). Used with
+    pos = participation shares of truly marked signs, neg = of letter signs: 1.0 = every marked sign lower."""
+    if not pos or not neg:
+        return float("nan")
+    s = sum(1.0 if b > a else 0.5 if b == a else 0.0 for a in pos for b in neg)
+    return s / (len(pos) * len(neg))
+
+
+def write_classfile(path, part, note=""):
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(f"# homophonic_anneal.py --participation (MQS-PARTICIPATION): signs below their shuffled-position null; "
+                f"a proposal for --as-unknown, never a key edit. {note}\n# sign\tn\tshare\tnull_lo\n")
+        for x, r in sorted(part.items(), key=lambda kv: kv[1]["share"]):
+            if r["flag"]:
+                f.write(f"{x}\t{r['n']}\t{r['share']}\t{r['null_lo']}\n")
+
+
 def corpus_vocab(texts, n=100, minlen=2):
     """The n most frequent folded words of at least minlen letters in the corpus texts (solve_nomen's vocab for the
     marked-sign control's word_signs cell)."""
@@ -978,6 +1056,39 @@ def make_profile_control(plain_text, profile_counts, seed, tries=5000):
     raise SystemExit(f"no {N}-letter window of the control text admits an exact partition by the profile after {tries} tries")
 
 
+def part_control(a, texts, model, seq, res, marked, truth, unknown, mq):
+    """--participation on the marked control: AUC of marked vs letter signs' shares, flagged-type precision/recall,
+    flagged-token recall; with --part-null-shuffle the same on a solve of the position-shuffled cipher."""
+    lex = corpus_vocab(texts, a.part_lexicon, a.part_minlen)
+
+    def run(sq, rs):
+        part = participation(sq, ["".join(r[1].get(x, GAP) for x in sq) for r in rs], lex, a.part_minlen,
+                             a.part_shuffles, a.part_alpha, a.part_min_count, a.seed)
+        pos = [r["share"] for x, r in part.items() if x in marked]
+        neg = [r["share"] for x, r in part.items() if x not in marked]
+        fl = {x for x, r in part.items() if r["flag"]}
+        n = Counter(sq)
+        return part, {"auc": round(auc(pos, neg), 4), "flagged": len(fl), "true_flagged": len(fl & marked),
+                      "precision": round(len(fl & marked) / len(fl), 4) if fl else None,
+                      "recall_types": round(len(fl & marked) / max(1, len(marked)), 4),
+                      "recall_tokens": round(sum(n[x] for x in fl & marked) / max(1, sum(n[x] for x in marked)), 4),
+                      "letter_signs_flagged": len(fl - marked)}
+    part, m = run(seq, res)
+    write_classfile(a.participation, part, f"control seed {a.seed}")
+    print(f"participation: AUC {m['auc']}, flagged {m['flagged']} (marked {m['true_flagged']}, letter "
+          f"{m['letter_signs_flagged']}), precision {m['precision']}, type recall {m['recall_types']}, "
+          f"token recall {m['recall_tokens']}")
+    if a.part_null_shuffle:
+        sh = list(seq)
+        random.Random(a.seed + 4000).shuffle(sh)
+        rs = solve(sh, model, a.restarts, a.iters, a.seed, a.uni_weight, norm=a.norm, gaps=unknown or None, **mq)
+        _, mn = run(sh, rs)
+        m["null_shuffled"] = mn
+        print(f"participation null (position-shuffled cipher): AUC {mn['auc']}, flagged {mn['flagged']}, "
+              f"precision {mn['precision']}")
+    return m
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("cipher", nargs="?")
@@ -1041,10 +1152,22 @@ def main():
     ap.add_argument("--marked", default="",
                     help="control mode, MQS-SOLVER: SHARE:TYPES, e.g. 0.3:60 -- about SHARE of the N tokens are TYPES "
                          "marked word signs (make_marked_control)")
-    ap.add_argument("--marked-mode", choices=("skip", "unknown", "wild", "nomen"), default="skip",
+    ap.add_argument("--marked-mode", choices=("skip", "unknown", "wild", "nomen", "plain"), default="skip",
                     help="control mode with --marked: skip (delete the marked signs, the --skip behaviour), unknown "
                          "(gaps, the --as-unknown behaviour), wild (each occurrence its own letter, families/homophonic "
-                         "wild=) or nomen (solve_nomen with word_signs = the marked signs, vocab = corpus_vocab 100)")
+                         "wild=), nomen (solve_nomen with word_signs = the marked signs, vocab = corpus_vocab 100) or plain (the marked "
+                         "signs unannounced: solved as ordinary signs, the --participation control)")
+    ap.add_argument("--participation", metavar="CLASSFILE",
+                    help="MQS-PARTICIPATION: after the solve, write the signs whose lexicon-word participation falls "
+                         "below their shuffled-position null to CLASSFILE (participation(); --as-unknown format)")
+    ap.add_argument("--part-lexicon", type=int, default=300, help="--participation: corpus_vocab top-N words")
+    ap.add_argument("--part-minlen", type=int, default=3, help="--participation: shortest lexicon word counted")
+    ap.add_argument("--part-shuffles", type=int, default=200, help="--participation: label permutations in the null")
+    ap.add_argument("--part-alpha", type=float, default=0.05, help="--participation: null quantile a sign must fall under")
+    ap.add_argument("--part-min-count", type=int, default=2, help="--participation: rarer signs are never flagged")
+    ap.add_argument("--part-null-shuffle", action="store_true",
+                    help="--participation, marked control: also solve the position-shuffled cipher and report its AUC "
+                         "(the gate's null: no words can form, so marked and letter signs should not separate)")
     ap.add_argument("--fix-first", type=int, default=0,
                     help="control mode: hold the signs of the first N positions at their true letters (the matched "
                          "control for a target crib of N letters)")
@@ -1081,6 +1204,10 @@ def main():
             res = solve(sw, model, a.restarts, a.iters, a.seed, a.uni_weight, norm=a.norm, gaps=unknown or None, **mq)
             key = res[0][1]
             dec = [key.get(sw[i], GAP) for i in lpos]
+        elif mode == "plain":
+            res = solve(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, norm=a.norm, gaps=unknown or None, **mq)
+            key = res[0][1]
+            dec = [key.get(seq[i], GAP) for i in lpos]
         else:
             vocab = corpus_vocab(texts)
             res = solve_nomen(seq, model, a.restarts, a.iters, a.seed, a.uni_weight, vocab, word_signs=marked)
@@ -1094,6 +1221,8 @@ def main():
                "share": round(ok / max(1, len(gold)), 4), "processed_share": round(proc, 4), "score": res[0][0],
                "restart_scores": [round(r[0], 1) for r in res], **mq, "norm": a.norm, "uni_weight": a.uni_weight,
                "restarts": a.restarts, "seed": a.seed}
+        if a.participation:
+            out["participation"] = part_control(a, texts, model, seq, res, marked, truth, unknown, mq)
         print(f"control-marked N={len(seq)} letters={len(gold)} K={len(truth)} marked={len(marked)} "
               f"({info['marked_share']:.1%}) mode={mode}: {ok}/{len(gold)} = {ok / max(1, len(gold)):.1%}; "
               f"processed {proc:.1%}")
@@ -1143,6 +1272,14 @@ def main():
                "restart_scores": [round(r[0], 1) for r in res],
                "restart_decodes": ["".join(r[1].get(x, GAP) for x in seq)[:120] for r in res[:4]],
                **({"noise": a.noise, "free": {str(i): l for i, l in sorted(free.items())}} if a.noise else {})}
+        if a.participation:
+            lex = corpus_vocab(texts, a.part_lexicon, a.part_minlen)
+            part = participation(seq, ["".join(r[1].get(x, GAP) for x in seq) for r in res], lex, a.part_minlen,
+                                 a.part_shuffles, a.part_alpha, a.part_min_count, a.seed)
+            write_classfile(a.participation, part, f"target {a.cipher}, seed {a.seed}, restarts {a.restarts}")
+            fl = sorted(x for x, r in part.items() if r["flag"])
+            out["participation"] = {"flagged": fl, "signs": part}
+            print(f"participation: {len(fl)} of {len(part)} signs below their null -> {a.participation}")
         print(f"target N={len(seq)} K={len(set(seq))} best score {sc:.1f}; restarts {out['restart_scores']}")
         print(dec)
     if a.out:

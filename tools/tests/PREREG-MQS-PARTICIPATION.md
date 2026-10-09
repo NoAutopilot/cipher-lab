@@ -32,3 +32,13 @@ Ceiling: this is a classification, not a gain over blind; letter accuracy in pla
 PASS for cell P only if all three hold over seeds 1-3: mean AUC >= 0.75; mean null AUC <= 0.65; mean AUC - mean null AUC
 >= 0.15. Also reported (not gated): flagged precision, type and token recall, letter signs flagged, letter accuracy.
 FAIL ships the option `weak` on tools/data/tool_shelf.tsv with both numbers; not re-briefed; nothing run on a target.
+
+## Results (appended 9 Oct 2026, 09:4x UTC by date -u, after the runs; tools/tests/MQS-PARTICIPATION-controls.tsv)
+- Cell P (25.4% unannounced nomenclature, 150 types): letters read 22.1/45.7/28.2%; AUC 0.354/0.324/0.286, mean 0.321;
+  null AUC mean 0.313; diff +0.008. Flagged 9-11 signs per seed, 1 of them marked each time. **Gate FAIL** (AUC and diff).
+- Cell S (14.9%, 60 types, context only): letters read 95.9-96.3%; AUC mean 0.441 vs null 0.389 (diff +0.052); flagged
+  8-9, 2-3 marked; type recall 0.03-0.05.
+- Reading: the statistic does not separate marked from letter signs even when the solve reads (cell S); AUC < 0.5 in
+  both cells and their nulls, so the pooled share tracks something other than order (sign count is the likeliest; not
+  tested). A plausible cause, not tested: the anneal picks the forced letter of an unannounced sign to fit its
+  neighbours, so the sign is absorbed into word-like segments. Shelf `weak`; not re-briefed; nothing run on a target.
