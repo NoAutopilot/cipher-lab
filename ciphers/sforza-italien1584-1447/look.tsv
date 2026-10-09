@@ -1,0 +1,30 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	cipher-page	81r			folio arithmetic	owed
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	facing	80v			folio arithmetic	owed
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	before-2	80r			folio arithmetic	owed
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	after-1	81v			folio arithmetic	owed
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	after-2	82r			folio arithmetic	owed
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	after-3	82v			folio arithmetic	owed
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	after-4	83r			folio arithmetic	owed
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	cipher-page	42r			folio arithmetic	owed
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	facing	41v			folio arithmetic	owed
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	before-2	41r			folio arithmetic	owed
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	after-1	42v			folio arithmetic	owed
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	after-2	43r			folio arithmetic	owed
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	after-3	43v			folio arithmetic	owed
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	after-4	44r			folio arithmetic	owed
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	cipher-page	81r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	facing	80v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	before-2	80r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	after-1	81v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	after-2	82r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	after-3	82v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-06a853	adhoc-06a853:2-leaf:8e5ffb	after-4	83r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	cipher-page	42r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	facing	41v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	before-2	41r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	after-1	42v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	after-2	43r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	after-3	43v			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 11:44	adhoc-097393	adhoc-097393:2-leaf:fd8e33	after-4	44r			folio arithmetic	answered KNOWN (recorded)

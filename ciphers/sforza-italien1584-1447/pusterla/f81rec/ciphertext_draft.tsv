@@ -1,0 +1,672 @@
+line	position	sign	confidence	alt	why
+f81_L02	1	fo	H		agree
+f81_L02	2	o#	H		agree
+f81_L02	3	t	H		agree
+f81_L02	4	zo	M	B:ze	differ
+f81_L02	5	H	H		agree
+f81_L02	6	V	H		agree
+f81_L02	7	pi	H		agree
+f81_L02	8	q=	H		agree
+f81_L02	9	+2	H		agree
+f81_L02	10	b-	H		agree
+f81_L02	11	b	H		agree
+f81_L02	12	h-	H		agree
+f81_L02	13	So	H		agree
+f81_L02	14	gto	H		agree
+f81_L02	15	d	M	B:d'	differ
+f81_L02	16	y	H		agree
+f81_L02	17	a	H		agree
+f81_L02	18	=y	H		agree
+f81_L02	19	to	H		agree
+f81_L02	20	b-	M	B:b	differ
+f81_L02	21	coo	H		agree
+f81_L02	22	d	M	B:g	differ
+f81_L02	23	B	H		agree
+f81_L02	24	g÷	H		agree
+f81_L02	25	#	H		agree
+f81_L02	26	q	H		agree
+f81_L02	27	b-	H		agree
+f81_L02	28	÷	H		agree
+f81_L02	29	g	M	B:8	differ
+f81_L02	30	z-	H		agree
+f81_L02	31	x	H		agree
+f81_L03	1	S	H		agree
+f81_L03	2	coo	H		agree
+f81_L03	3	d	M	B:g	differ
+f81_L03	4	B	H		agree
+f81_L03	5	h7	M	B:bo	differ
+f81_L03	6	b-	H		agree
+f81_L03	7	gto	H		agree
+f81_L03	8	t	H		agree
+f81_L03	9	a	H		agree
+f81_L03	10	h	H		agree
+f81_L03	11	d	H		agree
+f81_L03	12	:|:	H		agree
+f81_L03	13	3	H		agree
+f81_L03	14	pq	M	B:pi	differ
+f81_L03	15	a	H		agree
+f81_L03	16	to	H		agree
+f81_L03	17	fto	H		agree
+f81_L03	18	y	H		agree
+f81_L03	19	n	H		agree
+f81_L03	20	+2	H		agree
+f81_L03	21	B	H		agree
+f81_L03	22	q	M	B:g	differ
+f81_L03	23	b-	H		agree
+f81_L03	24	zo	M	B:ze	differ
+f81_L03	25	x	H		agree
+f81_L03	26	g÷	H		agree
+f81_L03	27	fo	H		agree
+f81_L03	28	pq	M	B:pi	differ
+f81_L04	1	z-	H		agree
+f81_L04	2	V	H		agree
+f81_L04	3	ht	H		agree
+f81_L04	4	h-	H		agree
+f81_L04	5	q	H		agree
+f81_L04	6	fo	H		agree
+f81_L04	7	pq	M	B:pi	differ
+f81_L04	8	q	H		agree
+f81_L04	9	o	H		agree
+f81_L04	10	dio	H		agree
+f81_L04	11	x	H		agree
+f81_L04	12	den	H		agree
+f81_L04	13	bo	H		agree
+f81_L04	14	T=	H		agree
+f81_L04	15	:|:	H		agree
+f81_L04	16	y	M	B:n	differ
+f81_L04	17	o#	H		agree
+f81_L04	18	t	H		agree
+f81_L04	19	b	H		agree
+f81_L04	20	g	H		agree
+f81_L04	21	:|:	H		agree
+f81_L04	22		M	B:a	differ
+f81_L04	23	d	M	B:g	differ
+f81_L04	24	t	H		agree
+f81_L04	25	x	H		agree
+f81_L04	26	b-	M	B:T=	differ
+f81_L04	27	d	M	B:d'	differ
+f81_L04	28	H	H		agree
+f81_L05	1	T=	M	B:z-	differ
+f81_L05	2	h-	H		agree
+f81_L05	3	So	H		agree
+f81_L05	4	d7	H		agree
+f81_L05	5	ht	H		agree
+f81_L05	6	b	H		agree
+f81_L05	7	V	H		agree
+f81_L05	8	÷	H		agree
+f81_L05	9	b-	H		agree
+f81_L05	10	y	H		agree
+f81_L05	11	a	H		agree
+f81_L05	12	e	H		agree
+f81_L05	13	bo	M	B:coo	differ
+f81_L05	14	b-	M	B:T=	differ
+f81_L05	15	dt	H		agree
+f81_L05	16	h-	H		agree
+f81_L05	17	h7	H		agree
+f81_L05	18	d	M	B:g	differ
+f81_L05	19	h7	H		agree
+f81_L05	20	V	H		agree
+f81_L05	21	o#	H		agree
+f81_L05	22	b	H		agree
+f81_L05	23	a	H		agree
+f81_L05	24	ao	H		agree
+f81_L05	25	h-	H		agree
+f81_L05	26	h-	H		agree
+f81_L05	27	ae	M	B:a	differ
+f81_L05	28	h-	H		agree
+f81_L05	29	b	H		agree
+f81_L06	1	dio	H		agree
+f81_L06	2	d	M	B:g	differ
+f81_L06	3	h7	H		agree
+f81_L06	4	to	H		agree
+f81_L06	5	h-	H		agree
+f81_L06	6	fa	H		agree
+f81_L06	7	b	H		agree
+f81_L06	8	3	H		agree
+f81_L06	9	:|:	H		agree
+f81_L06	10	#	H		agree
+f81_L06	11	h-	M	B:z	differ
+f81_L06	12	h-	M	B:z	differ
+f81_L06	13	x	H		agree
+f81_L06	14	h-	H		agree
+f81_L06	15	a	H		agree
+f81_L06	16	S	H		agree
+f81_L06	17	coo	H		agree
+f81_L06	18	h7	H		agree
+f81_L06	19	V	M	B:q	differ
+f81_L06	20	a	H		agree
+f81_L06	21	pez	H		agree
+f81_L06	22	q=	M	B:g	differ
+f81_L06	23	n	H		agree
+f81_L06	24	q=	M	B:a	differ
+f81_L06	25	fo	H		agree
+f81_L06	26	x	H		agree
+f81_L06	27	..	H		agree
+f81_L06	28	b	H		agree
+f81_L06	29	b-	M	B:T=	differ
+f81_L07	1	g÷	H		agree
+f81_L07	2	V	H		agree
+f81_L07	3	zo	H		agree
+f81_L07	4	3	H		agree
+f81_L07	5	÷	H		agree
+f81_L07	6	V	H		agree
+f81_L07	7	:|:	H		agree
+f81_L07	8	d	M	B:g	differ
+f81_L07	9	z-	H		agree
+f81_L07	10	d	M	B:g	differ
+f81_L07	11	H	H		agree
+f81_L07	12	h-	H		agree
+f81_L07	13	fa	H		agree
+f81_L07	14	b-	H		agree
+f81_L07	15	÷	H		agree
+f81_L07	16	g÷	H		agree
+f81_L07	17	pez	H		agree
+f81_L07	18	o#	H		agree
+f81_L07	19	t	H		agree
+f81_L07	20	fa	H		agree
+f81_L07	21	x	H		agree
+f81_L07	22	V	M	B:q	differ
+f81_L07	23	=y	H		agree
+f81_L07	24	q=	H		agree
+f81_L07	25	+2	H		agree
+f81_L07	26	a	H		agree
+f81_L07	27	b-	H		agree
+f81_L07	28	b	H		agree
+f81_L07	29	V	M	B:q	differ
+f81_L07	30	e	H		agree
+f81_L08	1	a	H		agree
+f81_L08	2	n	H		agree
+f81_L08	3	+2	H		agree
+f81_L08	4	a	H		agree
+f81_L08	5	m	H		agree
+f81_L08	6	x	H		agree
+f81_L08	7	t	H		agree
+f81_L08	8	b-	H		agree
+f81_L08	9	..	H		agree
+f81_L08	10	pez	H		agree
+f81_L08	11	d	M	B:g	differ
+f81_L08	12	a	H		agree
+f81_L08	13	..	H		agree
+f81_L08	14	h-	H		agree
+f81_L08	15	b-	M	B:T=	differ
+f81_L08	16	3	M	B:z	differ
+f81_L08	17	:|:	H		agree
+f81_L08	18	V	H		agree
+f81_L08	19	pt	H		agree
+f81_L08	20	÷	H		agree
+f81_L08	21	g÷	H		agree
+f81_L08	22	:||:	H		agree
+f81_L08	23	b	H		agree
+f81_L08	24	B	H		agree
+f81_L08	25	#	H		agree
+f81_L08	26	z-	H		agree
+f81_L08	27	÷	H		agree
+f81_L08	28	3	H		agree
+f81_L08	29	ht	H		agree
+f81_L09	1	:|:	H		agree
+f81_L09	2	B	H		agree
+f81_L09	3	e	H		agree
+f81_L09	4	÷	H		agree
+f81_L09	5	y	M	B:n	differ
+f81_L09	6	o#	H		agree
+f81_L09	7	d	M	B:d'	differ
+f81_L09	8	b	H		agree
+f81_L09	9	g	H		agree
+f81_L09	10	:|:	H		agree
+f81_L09	11	g÷	H		agree
+f81_L09	12	h-	H		agree
+f81_L09	13	V	M	B:q	differ
+f81_L09	14	t	H		agree
+f81_L09	15	bz	H		agree
+f81_L09	16	ht	H		agree
+f81_L09	17	ht	H		agree
+f81_L09	18	pi	H		agree
+f81_L09	19	x	H		agree
+f81_L09	20	b-	H		agree
+f81_L09	21	y	H		agree
+f81_L09	22	So	H		agree
+f81_L09	23	d	M	B:g	differ
+f81_L09	24	t	H		agree
+f81_L09	25	a	H		agree
+f81_L09	26	b	M	B:t	differ
+f81_L09	27	pq	H		agree
+f81_L09	28	a	H		agree
+f81_L09	29	..	H		agree
+f81_L10	1	h-	H		agree
+f81_L10	2	d	M	B:-	gap
+f81_L10	3	÷	M	B:g÷	differ
+f81_L10	4	V	M	B:q	differ
+f81_L10	5	b-	M	B:b	differ
+f81_L10	6	fo	H		agree
+f81_L10	7	..	H		agree
+f81_L10	8	coo	H		agree
+f81_L10	9	b	H		agree
+f81_L10	10	q=	M	B:z-	differ
+f81_L10	11	h7	H		agree
+f81_L10	12	d	M	B:g	differ
+f81_L10	13	B	H		agree
+f81_L10	14	b-	M	B:T=	differ
+f81_L10	15	pez	H		agree
+f81_L10	16	d	M	B:g	differ
+f81_L10	17	d'	H		agree
+f81_L10	18	x	H		agree
+f81_L10	19	:|:	H		agree
+f81_L10	20	g÷	H		agree
+f81_L10	21	go	H		agree
+f81_L10	22	b-	M	B:b	differ
+f81_L10	23	g	H		agree
+f81_L10	24	y	M	B:n	differ
+f81_L10	25	ht	H		agree
+f81_L10	26	B	H		agree
+f81_L10	27	+2	H		agree
+f81_L10	28	coo	H		agree
+f81_L10	29	b	H		agree
+f81_L11	1	a	H		agree
+f81_L11	2	h7	M	B:pq	differ
+f81_L11	3	fo	H		agree
+f81_L11	4	d	M	B:g	differ
+f81_L11	5	h-	H		agree
+f81_L11	6	fo	H		agree
+f81_L11	7	rho	M	B:r	differ
+f81_L11	8	fa	H		agree
+f81_L11	9	x	H		agree
+f81_L11	10	h-	H		agree
+f81_L11	11	q=	M	B:g	differ
+f81_L11	12	b-	M	B:T=	differ
+f81_L11	13	zo	M	B:ze	differ
+f81_L11	14	V	M	B:q	differ
+f81_L11	15	g÷	H		agree
+f81_L11	16	fo	H		agree
+f81_L11	17	pq	H		agree
+f81_L11	18	o#	H		agree
+f81_L11	19	b	H		agree
+f81_L11	20	d	M	B:g	differ
+f81_L11	21	B	H		agree
+f81_L11	22	y	H		agree
+f81_L11	23	pt	H		agree
+f81_L11	24	V	H		agree
+f81_L11	25	d'	H		agree
+f81_L11	26	÷	H		agree
+f81_L11	27	q=	M	B:g	differ
+f81_L12	1	So	H		agree
+f81_L12	2	d	M	B:g	differ
+f81_L12	3	t	H		agree
+f81_L12	4	B	M	B:8	differ
+f81_L12	5	d'	M	B:d	differ
+f81_L12	6	ze	H		agree
+f81_L12	7	..	H		agree
+f81_L12	8	bz	H		agree
+f81_L12	9	d	M	B:g	differ
+f81_L12	10	x	H		agree
+f81_L12	11	g÷	H		agree
+f81_L12	12	go	H		agree
+f81_L12	13	3	H		agree
+f81_L12	14	z-	H		agree
+f81_L12	15	V	H		agree
+f81_L12	16	h-	H		agree
+f81_L12	17	z	H		agree
+f81_L12	18	b	H		agree
+f81_L12	19	ae	M	B:g	differ
+f81_L12	20	go	M	B:ao	differ
+f81_L12	21	h7	M	B:pq	differ
+f81_L12	22	fo	H		agree
+f81_L12	23	d	M	B:g	differ
+f81_L12	24	b	H		agree
+f81_L12	25	y	M	B:n	differ
+f81_L12	26	h-	H		agree
+f81_L12	27	z-	H		agree
+f81_L13	1	B	H		agree
+f81_L13	2	q	H		agree
+f81_L13	3	b-	M	B:b	differ
+f81_L13	4	3	H		agree
+f81_L13	5	b	H		agree
+f81_L13	6	ht	H		agree
+f81_L13	7	h	M	B:z	differ
+f81_L13	8	V	H		agree
+f81_L13	9	y	M	B:n	differ
+f81_L13	10	h-	H		agree
+f81_L13	11	g÷	H		agree
+f81_L13	12	go	H		agree
+f81_L13	13	q	H		agree
+f81_L13	14	b	H		agree
+f81_L13	15	B	H		agree
+f81_L13	16	fo	H		agree
+f81_L13	17	o#	H		agree
+f81_L13	18	t	H		agree
+f81_L13	19	b	H		agree
+f81_L13	20	T=	H		agree
+f81_L13	21	fa	H		agree
+f81_L13	22	bo	M	B:b-	differ
+f81_L13	23	÷	H		agree
+f81_L13	24	g	M	A:-	gap
+f81_L13	25	ae	M	B:g	differ
+f81_L13	26	z	H		agree
+f81_L13	27	g÷	H		agree
+f81_L13	28	o#	H		agree
+f81_L14	1	pez	H		agree
+f81_L14	2	a	H		agree
+f81_L14	3	fto	H		agree
+f81_L14	4	t	H		agree
+f81_L14	5	b-	H		agree
+f81_L14	6	B	H		agree
+f81_L14	7	8	H		agree
+f81_L14	8	h-	H		agree
+f81_L14	9	t	H		agree
+f81_L14	10	:|:	M	A:-	gap
+f81_L14	11	:b	M	B:b	differ
+f81_L14	12	h-	H		agree
+f81_L14	13	d'	M	B:d	differ
+f81_L14	14	B	H		agree
+f81_L14	15	h-	H		agree
+f81_L14	16	a	H		agree
+f81_L14	17	S	H		agree
+f81_L14	18	coo	H		agree
+f81_L14	19	h7	H		agree
+f81_L14	20	V	H		agree
+f81_L14	21	a	H		agree
+f81_L14	22	V	H		agree
+f81_L14	23	b	H		agree
+f81_L14	24	e	H		agree
+f81_L14	25	d	M	B:g	differ
+f81_L14	26	+2	H		agree
+f81_L14	27	B	H		agree
+f81_L14	28	V	H		agree
+f81_L14	29	dio	H		agree
+f81_L15	1	x	H		agree
+f81_L15	2	8	M	B:g	differ
+f81_L15	3	B	M	B:z-	differ
+f81_L15	4	q=	M	B:z-	differ
+f81_L15	5	8	H		agree
+f81_L15	6	zo	M	B:ze	differ
+f81_L15	7	y	H		agree
+f81_L15	8	g÷	H		agree
+f81_L15	9	z-	M	B:h-	differ
+f81_L15	10	:|:	H		agree
+f81_L15	11	dio	H		agree
+f81_L15	12	fo	H		agree
+f81_L15	13	d	M	B:-	gap
+f81_L15	14	d'	M	B:g	differ
+f81_L15	15	d'	H		agree
+f81_L15	16	d	H		agree
+f81_L15	17	g	M	A:-	gap
+f81_L15	18	a	H		agree
+f81_L15	19	..	H		agree
+f81_L15	20	t	H		agree
+f81_L15	21	ht	H		agree
+f81_L15	22	d	M	B:d'	differ
+f81_L15	23	a	H		agree
+f81_L15	24	q	H		agree
+f81_L15	25	b-	M	B:T=	differ
+f81_L15	26	t	H		agree
+f81_L15	27	b	H		agree
+f81_L15	28	h7	M	B:N1	differ
+f81_L16	1	go	H		agree
+f81_L16	2	y	M	B:n	differ
+f81_L16	3	o#	H		agree
+f81_L16	4	t	H		agree
+f81_L16	5	ze	H		agree
+f81_L16	6	:|:	M	B:÷	differ
+f81_L16	7	h7	M	B:pq	differ
+f81_L16	8	y	M	B:n	differ
+f81_L16	9	d	M	B:g	differ
+f81_L16	10	B	H		agree
+f81_L16	11	bo	M	B:dt	differ
+f81_L16	12	÷	H		agree
+f81_L16	13	V	H		agree
+f81_L16	14	:|:	H		agree
+f81_L16	15	b-	H		agree
+f81_L16	16	h7	M	B:pq	differ
+f81_L16	17	d	M	B:g	differ
+f81_L16	18	ht	H		agree
+f81_L16	19	B	H		agree
+f81_L16	20	b-	H		agree
+f81_L16	21	V	M	B:y	differ
+f81_L16	22	..	H		agree
+f81_L16	23	pz	M	B:pez	differ
+f81_L16	24	x	H		agree
+f81_L16	25	:||:	H		agree
+f81_L17	1	a	H		agree
+f81_L17	2	#	H		agree
+f81_L17	3	h-	H		agree
+f81_L17	4	h-	H		agree
+f81_L17	5	h	M	B:z	differ
+f81_L17	6	V	H		agree
+f81_L17	7	y	H		agree
+f81_L17	8	dio	H		agree
+f81_L17	9	d	M	B:g	differ
+f81_L17	10	b-	H		agree
+f81_L17	11	x	H		agree
+f81_L17	12	g÷	H		agree
+f81_L17	13	h-	H		agree
+f81_L17	14	a	H		agree
+f81_L17	15	3	H		agree
+f81_L17	16	V	M	B:q	differ
+f81_L17	17	÷	H		agree
+f81_L17	18	y	H		agree
+f81_L17	19	d	M	B:g	differ
+f81_L17	20	t	H		agree
+f81_L17	21	x	H		agree
+f81_L17	22	d	M	B:g	differ
+f81_L17	23	+2	H		agree
+f81_L17	24	y	M	B:n	differ
+f81_L17	25	3	H		agree
+f81_L17	26	h-	H		agree
+f81_L17	27	B	H		agree
+f81_L17	28	h-	H		agree
+f81_L18	1	b-	M	B:b	differ
+f81_L18	2	÷	H		agree
+f81_L18	3	S	H		agree
+f81_L18	4	coo	H		agree
+f81_L18	5	d	M	B:g	differ
+f81_L18	6	B	H		agree
+f81_L18	7	..	H		agree
+f81_L18	8	q	H		agree
+f81_L18	9	q=	H		agree
+f81_L18	10	a	H		agree
+f81_L18	11	go	H		agree
+f81_L18	12	h7	M	B:pq	differ
+f81_L18	13	h-	H		agree
+f81_L18	14	y	H		agree
+f81_L18	15	g÷	H		agree
+f81_L18	16	+2	H		agree
+f81_L18	17	q	H		agree
+f81_L18	18	S	H		agree
+f81_L18	19	b-	M	B:b	differ
+f81_L18	20	e	H		agree
+f81_L18	21	a	H		agree
+f81_L18	22	m	H		agree
+f81_L18	23	go	H		agree
+f81_L18	24	z-	M	B:z	differ
+f81_L18	25	go	H		agree
+f81_L18	26	q	M	B:o	differ
+f81_L19	1	g÷	H		agree
+f81_L19	2	h-	H		agree
+f81_L19	3	V	H		agree
+f81_L19	4	÷	H		agree
+f81_L19	5	b-	M	B:b	differ
+f81_L19	6	b	H		agree
+f81_L19	7	a	H		agree
+f81_L19	8	b-	H		agree
+f81_L19	9	b-	M	B:b	differ
+f81_L19	10	÷	H		agree
+f81_L19	11	z-	H		agree
+f81_L19	12	d'	M	B:d	differ
+f81_L19	13	B	M	B:b	differ
+f81_L19	14	a	M	B:g	differ
+f81_L19	15	pez	H		agree
+f81_L19	16	d	M	B:g	differ
+f81_L19	17	t	H		agree
+f81_L19	18	B	H		agree
+f81_L19	19	3	H		agree
+f81_L19	20	ze	H		agree
+f81_L19	21	b-	M	B:b	differ
+f81_L19	22	÷	H		agree
+f81_L19	23	z-	H		agree
+f81_L19	24	V	H		agree
+f81_L19	25	d'	H		agree
+f81_L19	26	÷	H		agree
+f81_L19	27	q	H		agree
+f81_L19	28	V	H		agree
+f81_L19	29	to	H		agree
+f81_L19	30	z-	H		agree
+f81_L19	31	q	H		agree
+f81_L20	1	b-	M	B:b	differ
+f81_L20	2	h	M	B:h-	differ
+f81_L20	3	B	H		agree
+f81_L20	4	q	M	B:V	differ
+f81_L20	5	b	H		agree
+f81_L20	6	z-	H		agree
+f81_L20	7	V	H		agree
+f81_L20	8	h	M	B:g	differ
+f81_L20	9	÷	M	B:a	differ
+f81_L20	10	fo	M	B:to	differ
+f81_L20	11	b-	H		agree
+f81_L20	12	x	H		agree
+f81_L20	13	go	H		agree
+f81_L20	14	gto	H		agree
+f81_L20	15	q	H		agree
+f81_L20	16	N	H		agree
+f81_L20	17	a	H		agree
+f81_L20	18	+2	H		agree
+f81_L20	19	q=	M	B:q	differ
+f81_L20	20	d	H		agree
+f81_L20	21	m	H		agree
+f81_L20	22	B	H		agree
+f81_L20	23	q=	M	B:g	differ
+f81_L20	24	zo	H		agree
+f81_L20	25	÷	H		agree
+f81_L20	26	a	H		agree
+f81_L20	27	b-	M	B:T=	differ
+f81_L20	28	y	H		agree
+f81_L20	29	B	H		agree
+f81_L20	30	q	H		agree
+f81_L21	1	y	M	B:n	differ
+f81_L21	2	b-	H		agree
+f81_L21	3	x	H		agree
+f81_L21	4	S	H		agree
+f81_L21	5	coo	H		agree
+f81_L21	6	ht	H		agree
+f81_L21	7	y	H		agree
+f81_L21	8	g÷	H		agree
+f81_L21	9	h-	H		agree
+f81_L21	10	q	H		agree
+f81_L21	11	fo	H		agree
+f81_L21	12	go	H		agree
+f81_L21	13	z-	H		agree
+f81_L21	14	to	M	A:-	gap
+f81_L21	15	go	M	B:q	differ
+f81_L21	16	q	H		agree
+f81_L21	17	d	H		agree
+f81_L21	18	g÷	H		agree
+f81_L21	19	h-	H		agree
+f81_L21	20	q	H		agree
+f81_L21	21	y	M	B:n	differ
+f81_L21	22	d7	M	B:d	differ
+f81_L21	23	y	M	B:q	differ
+f81_L21	24	pez	H		agree
+f81_L21	25	b	H		agree
+f81_L21	26	q	H		agree
+f81_L21	27	+2	H		agree
+f81_L21	28	a	H		agree
+f81_L21	29	b-	M	B:T=	differ
+f81_L21	30		M	B::|:	differ
+f81_L21	31	+2	H		agree
+f81_L22	1	8	H		agree
+f81_L22	2	a	H		agree
+f81_L22	3	V	H		agree
+f81_L22	4	h	M	B:h-	differ
+f81_L22	5	d	M	B:g	differ
+f81_L22	6	pez	H		agree
+f81_L22	7	÷	H		agree
+f81_L22	8	o#	H		agree
+f81_L22	9	dio	M	B:d'	differ
+f81_L22	10	pq	H		agree
+f81_L22	11	q	H		agree
+f81_L22	12	#	H		agree
+f81_L22	13	a	H		agree
+f81_L22	14	h-	H		agree
+f81_L22	15	b	H		agree
+f81_L22	16	:|:	H		agree
+f81_L22	17	h-	H		agree
+f81_L22	18	q	H		agree
+f81_L22	19	q	H		agree
+f81_L22	20	a	H		agree
+f81_L22	21	T=	M	B:h-	differ
+f81_L22	22	a	H		agree
+f81_L22	23	b-	H		agree
+f81_L22	24	y	H		agree
+f81_L22	25	x	H		agree
+f81_L22	26	h	M	B:h-	differ
+f81_L22	27	fto	M	B:fo	differ
+f81_L22	28	B	H		agree
+f81_L22	29	q	H		agree
+f81_L23	1	ze	H		agree
+f81_L23	2	pi	M	B:pq	differ
+f81_L23	3	to	H		agree
+f81_L23	4	d'	H		agree
+f81_L23	5	a	H		agree
+f81_L23	6	V	H		agree
+f81_L23	7	b-	M	B:b	differ
+f81_L23	8	c	H		agree
+f81_L23	9	q=	M	B:g	differ
+f81_L23	10	h-	H		agree
+f81_L23	11	:|:	H		agree
+f81_L23	12	H	H		agree
+f81_L23	13	fo	H		agree
+f81_L23	14	b-	M	B:T=	differ
+f81_L23	15	B	H		agree
+f81_L23	16	..	H		agree
+f81_L23	17	h-	H		agree
+f81_L23	18	b-	H		agree
+f81_L23	19	d	H		agree
+f81_L23	20	÷	H		agree
+f81_L23	21	m	M	B:n	differ
+f81_L23	22	b	H		agree
+f81_L23	23	g÷	H		agree
+f81_L23	24	y	H		agree
+f81_L23	25	x	H		agree
+f81_L23	26	b-	M	B:T=	differ
+f81_L23	27	pt	H		agree
+f81_L24	1	m	H		agree
+f81_L24	2	B	H		agree
+f81_L24	3	q=	M	B:q	differ
+f81_L24	4	b-	H		agree
+f81_L24	5	ze	H		agree
+f81_L24	6	b-	M	B:b	differ
+f81_L24	7	÷	H		agree
+f81_L24	8	=y	H		agree
+f81_L24	9	So	M	B:b-	differ
+f81_L24	10	q	M	B:V	differ
+f81_L24	11	ae	M	B:g	differ
+f81_L24	12	h-	H		agree
+f81_L24	13	÷	H		agree
+f81_L24	14	fo	H		agree
+f81_L24	15	bo	M	B:b-	differ
+f81_L24	16	..	H		agree
+f81_L24	17	t	H		agree
+f81_L24	18	:|:	H		agree
+f81_L24	19	3	H		agree
+f81_L24	20	÷	H		agree
+f81_L24	21	d	H		agree
+f81_L24	22	bz	H		agree
+f81_L24	23		M	B:N4	differ
+f81_L24	24	q	H		agree
+f81_L24	25	B	H		agree
+f81_L24	26	q=	M	B:q	differ
+f81_L24	27	ht	H		agree
+f81_L25	1	coo	M	B:zo	differ
+f81_L25	2	S	H		agree
+f81_L25	3	b	H		agree
+f81_L25	4	h-	H		agree
+f81_L25	5	q	M	B:b	differ
+f81_L25	6	÷	H		agree
+f81_L25	7	pi	H		agree
+f81_L25	8	b	H		agree
+f81_L25	9	o#	H		agree
+f81_L25	10	V	H		agree
+f81_L25	11	÷	H		agree
+f81_L25	12	S	H		agree
+f81_L25	13	#	H		agree
+f81_L25	14	:|:	M	A:-	gap
+f81_L25	15	dio	M	A:-	gap
+f81_L25	16	N5	M	A:-	gap
