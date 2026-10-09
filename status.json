@@ -11378,6 +11378,129 @@
       "depth_sentence": "On 5 November 1864 the War Department ordered Rosecrans to arrest five named rebel agents at St Louis, St Joseph, New Madrid and Cape Girardeau at 10 AM on the following Monday and to seize their papers.",
       "depth_check": "code clause: Indigo = Secretary of War, Odor = Arrest, Emily = 10 AM, Walpole = Rebel, Gaul = St Louis, Aragon = Missouri, Pandora = Colonel, Insanity = C. A. Dana; external (non-statistical): mssEC 19 pointer 9114, the same-day order to Davenport, Cincinnati ('directs the arrest at [time] on Monday morning next of the following named [rebel] Agents and the seizure of their papers'); Horan, Confederate Agent (1954), the informant's list naming Kendall, Capt. Lewis Kennerly, Ritchie, Col. Wm. Harper and the Missouri towns; image eye-checked by FV-MS18b",
       "depth_note": "16 H of 16 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18d verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18d)' section 4",
+      "reading_version": "MS18-R3 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18d) s.3 (black plain; Sutton per image, transcription sulton; Aurorian = Kentuckian; pause M)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 96.4,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): L. C. Turner for the Secretary of War to Dix, New York, 26 May 1864: plot to seize a New York-New Orleans steamer, three suspects from Havana (E333)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 26 May 1864 L. C. Turner, for the Secretary of War, warned General Dix at New York of a plot to seize a steamer on the New York-New Orleans run and described three suspects from Havana -- Phillips, a Captain Edwards (a Kentuckian formerly in the U.S. Navy) and a Dr Monthny de Lasalle (a Frenchman with a Portuguese passport); the facts are printed in the Havana consul's dispatch in the Official Records of the Navies, ser. I vol. 21 pp.302-303, but this telegram was not located there or in the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18d), weak, bordering N2: every fact is printed in Savage's Havana dispatch No. 148 (ORN ser. I vol. 21 pp.302-303), not the telegram; not N4: Dix and Turner-Baker papers, New York press 26-30 May 1864, HathiTrust, JSTOR not searched",
+      "depth": "D3",
+      "completeness": "27 H + 1 M (pause = period) of 28 code-word groups (names plain)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.79, pointer 9745, E333"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.79, pointer 9745, E333",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.79, pointer 9745, E333"
+      ],
+      "depth_sentence": "On 26 May 1864 the War Department warned General Dix at New York of a rebel plot to seize a steamer on the New York-New Orleans line and described three suspects who had come from Havana.",
+      "depth_check": "code clause: Bruno = Secretary of War, Sutton = Information, Weaseler = Steam(er), France = New York, Eddy = New Orleans, Spit = Men, Stomach = Left, Wells = Right, Aurora = Kentuck(ian), Leg = 40, Lampoon Plaster = 45; external (non-statistical): ORN ser. I vol. 21 pp.302-303 (Savage, Havana, No. 148: New York-New Orleans steamers, ring on the right hand, Edwards a Kentuckian aged 38-45, Mouthrey de Lasalle about 45 with a Portuguese passport)",
+      "depth_note": "27 H + 1 M (pause = period) of 28 code-word groups (names plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18d verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18d)' section 4",
+      "reading_version": "MS18-R3 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18d) s.3 (Ordnance plain; Pen nock per image = Pennock)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): Cmdr Henry A. Wise, Navy Bureau of Ordnance, to Fleet Capt. Pennock, Cairo, 31 Mar 1864: 1,000 barrels of powder via Pittsburgh (E335)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 31 March 1864 Commander Henry A. Wise, Chief of the Navy's Bureau of Ordnance, told Fleet Captain Pennock at Cairo that 1,000 barrels of powder were on their way, consigned first to Captain Berrien at Pittsburgh, who could hold them there if Pennock feared danger; it answers Pennock's telegram of 30 March in the same collection; not located in print (searched 9 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18d); not N4: Navy Bureau of Ordnance letter books (NARA RG 74), Pennock papers, HathiTrust, JSTOR not searched; ORN ser. I vol. 26 grepped, no hit",
+      "depth": "D3",
+      "completeness": "16 H of 16 code-word groups (names plain)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.27, pointer 9693, E335"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.27, pointer 9693, E335",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.27, pointer 9693, E335"
+      ],
+      "depth_sentence": "On 31 March 1864 the Navy's Bureau of Ordnance told Fleet Captain Pennock at Cairo that 1,000 barrels of powder were being forwarded through Pittsburgh, where they could be held if he feared danger.",
+      "depth_check": "code clause: Promise = 1000, Bleaching = Cairo, Princess = Captain, Plate = Communicate, Wrangle = Telegraph; external (non-statistical): holder pointer 4505 (received book p.64), Pennock to Wise, Cairo, 30 Mar 1864, asking that no more than 500 barrels be sent for fear of spies and fire -- the telegram E335 answers",
+      "depth_note": "16 H of 16 code-word groups (names plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18d verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18d)' section 4",
+      "reading_version": "MS18-R3 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18d) s.3 (Francis = 12 M, not France + s)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): Capt. M. H. Alberger, A.Q.M., to Mrs M. H. Alberger, Lynchburg, 1 Oct 1865: bring the safe key from Hall (E340)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 1 October 1865 Capt. M. H. Alberger, assistant quartermaster, telegraphed from Washington to Mrs M. H. Alberger at 115 Church Street, Lynchburg, to get the safe key from Hall and bring it with her; not located in print (searched 9 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18d); post-war private message, most words clear in the holder's public transcription; not N4: Baker's case files (NARA), Lynchburg press Oct 1865, HathiTrust, JSTOR not searched",
+      "depth": "D3",
+      "completeness": "8 H of 8 code-word groups (rest plain)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.390, pointer 10056, E340"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.390, pointer 10056, E340",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.390, pointer 10056, E340"
+      ],
+      "depth_sentence": "On 1 October 1865 Capt. M. H. Alberger telegraphed to Mrs M. H. Alberger at Lynchburg to bring him the safe key from Hall, who could leave the safe open by taking the money papers home each night.",
+      "depth_check": "code clause: Francis = 12 M, Plug Publish Ghost = 115, Dryden = Lynchburg, Pilgrim = Captain, Vinton = Quartermaster; external (non-statistical): holder 10055 (same operator, Francis = 12 m, Captain Alberger), 8004 and 8825 (signed M H Alberger Capt & Q.M. / asst QM, Lynchburg, Sept 1865)",
+      "depth_note": "8 H of 8 code-word groups (rest plain)"
     }
   ],
   "lanes": [

@@ -3952,3 +3952,31 @@ Read so far: ten of ten filed (E341-E350); four printed, six not located; one ro
 - [x] image-check: six unlocated pages read at 2400 px.
 - [x] retry: none needed (no host refused).
 Verdict: keep going: 4 internal gaps; cheapest next: Grant Papers vol. 11 and ORN date searches for E346 and E347, ~$0.4
+
+## FV-MS18d (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E333, E334, E335, E340 (AUDIT.md "## AUDIT (FV-MS18d)"). **E334 is printed** OR I/34 pt 4 p.64 (Halleck to Rosecrans, 27 May 1864,
+2.30 p.m.; word for word, but the print's "Canby" is the key's Legend = Hurlbut: M, second print-checked case after E323): N1. MS18-R3's phrase grep missed it on
+the OCR line-break "Sixty-/eighth" and "U. S.". **E333 N3 D3**: the telegram not located, but every fact is in Savage's Havana dispatch No. 148, ORN ser. I
+vol. 21 pp.302-303 (Edwards a Kentuckian, Mouthrey de Lasalle, "Phelps", New York-New Orleans steamers, the right hand). **E335 N3 D3**: it answers
+Pennock's telegram of 30 Mar 1864 (holder 4505); "Pen rock" is "Pen nock" on the page. **E340 N3 D3**: Capt. Morris H. Alberger, A.Q.M., on L. C. Baker's
+Lynchburg operation (holder 10055, 8004, 8825); "Frances" is the time word Francis = 12 M. Decoder errors found: black (E333), Colored (E334), Ordnance
+(E335) and Frances (E340) read as code words; header errors: "spies", "from France", "left hand" (E333), "to Hurlbut", "signed Infant" (E334). The
+parenthesised words on E333 ((brace), (miles) ...) and the numerals on E335 settle no token (AUDIT s.1). `AUD2-LEDGER-30` queued (E333, E335, E340);
+SO-ECKERT-E333/E335/E340 queued. Fixes are in AUDIT s.5, not applied here.
+
+## Remaining gaps (FV-MS18d, 9 Oct 2026)
+Read so far: E333, E334, E335, E340 audited (E334 N1 by print; E333, E335, E340 N3 D3); all four pages eye-checked on 2400 px crops.
+- E333/E335/E340 second audit and the unsearched families (Dix and Turner-Baker papers, NARA RG 74, Baker case files, NY and Lynchburg press) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER-30; a second audit is a separate session (rule 10)
+- the transcription, plain-at and header fixes of AUDIT (FV-MS18d) s.5 (sulton, black, Aurorian, Colored, Pen nock, Ordnance, Francis) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- Legend = Canby (E323, E334 against the key's Hurlbut) as a HYPOTHESES.md row with a context test - blocker: not-attempted; key questions belong to the KEY lane; next: a KEY job like KEY-TW, ~$1.5
+- OR I/34 pt 4 p.64 read on the page image (the OCR head only) - blocker: not-attempted; outside this verifier's box after the N3 entries; next: one IA page read, ~$0.1
+
+## Escalation (FV-MS18d, 9 Oct 2026)
+- [x] siblings: 9746/1 (Kimber, = OR I/34 pt 4 p.62) and the 30 Sept 1865 Lynchburg entry above E340 seen, not filed.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 14 queries + 8 item reads, no clear copy; 4505, 10055, 8004, 8825 found as context.
+- [x] known-keys: No. 1, No. 2, No. 9 checked for the glosses and numerals; no value matches.
+- [x] print: E334 found; E333's source found (ORN I/21); E335, E340 not located.
+- [n/a] key-rebuild: key rows proposed in AUDIT s.5, not edited (a FIX or KEY job edits key.md).
+- [x] image-check: all four entries eye-checked.
+- [x] retry: none needed (one IA 500 on a duplicate ORN id, the volume fetched under another id).
+Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18d) s.5, ~$1
