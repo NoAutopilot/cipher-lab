@@ -3688,7 +3688,7 @@ Verdict: keep going: 2 internal gaps, cheapest next: O9-BD tail by be-api, ~$0.2
 
 ## FIX-FM12 (9 Oct 2026, account 1, for LANE LEDGER)
 
-Worker FIX-FM12, 17:2x-17:4x UTC by `date -u`, offline (git only). Carries AUDIT s.5 of FV-FM10a, FV-FM10b and FV-FM10c into ciphertext.txt / ciphertext-no9.txt as headers and note lines through decode.py's existing mechanisms; reading.md and reading-no9.md are `--write` output. No key row touched or deleted; classes and depths untouched (the verifiers').
+Worker FIX-FM12, 17:26-17:29 UTC by `date -u`, offline (git only). Carries AUDIT s.5 of FV-FM10a, FV-FM10b and FV-FM10c into ciphertext.txt / ciphertext-no9.txt as headers and note lines through decode.py's existing mechanisms; reading.md and reading-no9.md are `--write` output. No key row touched or deleted; classes and depths untouched (the verifiers').
 
 | Entry | Change | Decoder before -> after |
 |---|---|---|
