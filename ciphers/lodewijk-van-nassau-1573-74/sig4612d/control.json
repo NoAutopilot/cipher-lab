@@ -1,0 +1,221 @@
+{
+ "f": 0.35,
+ "calib": {
+  "0.05": 0.9160264105642257,
+  "0.1": 0.8952581032412965,
+  "0.15": 0.8648259303721488,
+  "0.2": 0.8379351740696279,
+  "0.25": 0.8058823529411765,
+  "0.3": 0.7554021608643458,
+  "0.35": 0.711344537815126,
+  "0.4": 0.6947178871548619
+ },
+ "base_4612": 0.709483793517407,
+ "rows": [
+  {
+   "seed": 0,
+   "kept": 10,
+   "consistent": 10,
+   "admitted": 8,
+   "via_i": 4,
+   "via_ii": 4,
+   "recovered": 7,
+   "false": 1,
+   "recoverable": 16,
+   "base": 0.7527,
+   "G": 0.1381,
+   "false_codes": [
+    [
+     58,
+     "V",
+     "Z",
+     false
+    ]
+   ]
+  },
+  {
+   "seed": 1,
+   "kept": 9,
+   "consistent": 12,
+   "admitted": 6,
+   "via_i": 5,
+   "via_ii": 1,
+   "recovered": 5,
+   "false": 1,
+   "recoverable": 18,
+   "base": 0.7899,
+   "G": 0.0324,
+   "false_codes": [
+    [
+     20,
+     "S",
+     "Q",
+     true
+    ]
+   ]
+  },
+  {
+   "seed": 2,
+   "kept": 6,
+   "consistent": 12,
+   "admitted": 7,
+   "via_i": 1,
+   "via_ii": 6,
+   "recovered": 6,
+   "false": 1,
+   "recoverable": 19,
+   "base": 0.6771,
+   "G": 0.1465,
+   "false_codes": [
+    [
+     58,
+     "V",
+     "Z",
+     false
+    ]
+   ]
+  },
+  {
+   "seed": 3,
+   "kept": 7,
+   "consistent": 12,
+   "admitted": 5,
+   "via_i": 3,
+   "via_ii": 2,
+   "recovered": 5,
+   "false": 0,
+   "recoverable": 16,
+   "base": 0.7755,
+   "G": 0.072,
+   "false_codes": []
+  },
+  {
+   "seed": 4,
+   "kept": 8,
+   "consistent": 13,
+   "admitted": 6,
+   "via_i": 4,
+   "via_ii": 2,
+   "recovered": 5,
+   "false": 1,
+   "recoverable": 19,
+   "base": 0.6507,
+   "G": 0.1753,
+   "false_codes": [
+    [
+     38,
+     "T",
+     "V",
+     true
+    ]
+   ]
+  },
+  {
+   "seed": 5,
+   "kept": 6,
+   "consistent": 6,
+   "admitted": 4,
+   "via_i": 1,
+   "via_ii": 3,
+   "recovered": 3,
+   "false": 1,
+   "recoverable": 15,
+   "base": 0.7107,
+   "G": 0.1032,
+   "false_codes": [
+    [
+     38,
+     "P",
+     "V",
+     true
+    ]
+   ]
+  },
+  {
+   "seed": 6,
+   "kept": 8,
+   "consistent": 10,
+   "admitted": 2,
+   "via_i": 1,
+   "via_ii": 1,
+   "recovered": 2,
+   "false": 0,
+   "recoverable": 16,
+   "base": 0.7455,
+   "G": 0.0792,
+   "false_codes": []
+  },
+  {
+   "seed": 7,
+   "kept": 11,
+   "consistent": 12,
+   "admitted": 6,
+   "via_i": 5,
+   "via_ii": 1,
+   "recovered": 6,
+   "false": 0,
+   "recoverable": 17,
+   "base": 0.7371,
+   "G": 0.1753,
+   "false_codes": []
+  },
+  {
+   "seed": 8,
+   "kept": 8,
+   "consistent": 15,
+   "admitted": 8,
+   "via_i": 3,
+   "via_ii": 5,
+   "recovered": 5,
+   "false": 3,
+   "recoverable": 17,
+   "base": 0.7575,
+   "G": 0.1417,
+   "false_codes": [
+    [
+     3,
+     "V",
+     "N",
+     true
+    ],
+    [
+     58,
+     "V",
+     "Z",
+     false
+    ],
+    [
+     83,
+     "I",
+     "E",
+     true
+    ]
+   ]
+  },
+  {
+   "seed": 9,
+   "kept": 7,
+   "consistent": 9,
+   "admitted": 6,
+   "via_i": 4,
+   "via_ii": 2,
+   "recovered": 5,
+   "false": 1,
+   "recoverable": 15,
+   "base": 0.7959,
+   "G": 0.0528,
+   "false_codes": [
+    [
+     114,
+     "O",
+     "L",
+     true
+    ]
+   ]
+  }
+ ],
+ "pooled_recall": 0.2916666666666667,
+ "mean_false": 0.9,
+ "mean_G": 0.11165,
+ "PASS": false
+}

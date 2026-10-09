@@ -1,0 +1,12 @@
+4612 baseline 0.7095; calibrated f=0.35 (mean share 0.7113)
+  seed {'seed': 0, 'kept': 10, 'consistent': 10, 'admitted': 8, 'via_i': 4, 'via_ii': 4, 'recovered': 7, 'false': 1, 'recoverable': 16, 'base': 0.7527, 'G': 0.1381, 'false_codes': [(58, 'V', 'Z', False)]}
+  seed {'seed': 1, 'kept': 9, 'consistent': 12, 'admitted': 6, 'via_i': 5, 'via_ii': 1, 'recovered': 5, 'false': 1, 'recoverable': 18, 'base': 0.7899, 'G': 0.0324, 'false_codes': [(20, 'S', 'Q', True)]}
+  seed {'seed': 2, 'kept': 6, 'consistent': 12, 'admitted': 7, 'via_i': 1, 'via_ii': 6, 'recovered': 6, 'false': 1, 'recoverable': 19, 'base': 0.6771, 'G': 0.1465, 'false_codes': [(58, 'V', 'Z', False)]}
+  seed {'seed': 3, 'kept': 7, 'consistent': 12, 'admitted': 5, 'via_i': 3, 'via_ii': 2, 'recovered': 5, 'false': 0, 'recoverable': 16, 'base': 0.7755, 'G': 0.072, 'false_codes': []}
+  seed {'seed': 4, 'kept': 8, 'consistent': 13, 'admitted': 6, 'via_i': 4, 'via_ii': 2, 'recovered': 5, 'false': 1, 'recoverable': 19, 'base': 0.6507, 'G': 0.1753, 'false_codes': [(38, 'T', 'V', True)]}
+  seed {'seed': 5, 'kept': 6, 'consistent': 6, 'admitted': 4, 'via_i': 1, 'via_ii': 3, 'recovered': 3, 'false': 1, 'recoverable': 15, 'base': 0.7107, 'G': 0.1032, 'false_codes': [(38, 'P', 'V', True)]}
+  seed {'seed': 6, 'kept': 8, 'consistent': 10, 'admitted': 2, 'via_i': 1, 'via_ii': 1, 'recovered': 2, 'false': 0, 'recoverable': 16, 'base': 0.7455, 'G': 0.0792, 'false_codes': []}
+  seed {'seed': 7, 'kept': 11, 'consistent': 12, 'admitted': 6, 'via_i': 5, 'via_ii': 1, 'recovered': 6, 'false': 0, 'recoverable': 17, 'base': 0.7371, 'G': 0.1753, 'false_codes': []}
+  seed {'seed': 8, 'kept': 8, 'consistent': 15, 'admitted': 8, 'via_i': 3, 'via_ii': 5, 'recovered': 5, 'false': 3, 'recoverable': 17, 'base': 0.7575, 'G': 0.1417, 'false_codes': [(3, 'V', 'N', True), (58, 'V', 'Z', False), (83, 'I', 'E', True)]}
+  seed {'seed': 9, 'kept': 7, 'consistent': 9, 'admitted': 6, 'via_i': 4, 'via_ii': 2, 'recovered': 5, 'false': 1, 'recoverable': 15, 'base': 0.7959, 'G': 0.0528, 'false_codes': [(114, 'O', 'L', True)]}
+CONTROL (a): f=0.35 recall 49/168=0.292 (>=0.30), mean false 0.9 (<=2.0), mean G +0.1116 (>0) -> FAIL (CONTROL BELOW GATE)
