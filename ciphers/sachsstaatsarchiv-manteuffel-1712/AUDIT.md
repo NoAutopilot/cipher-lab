@@ -1331,3 +1331,106 @@ books.google.com 22 (search-within; one blocked answer, host stopped). Vision: n
 Next: (1) read Bonnesen 1918 pp. 62-77 (JSTOR/LOCAL-QUEUE or a library scan) -- the decisive prior-print check for 0454; (2) transcribe 0453's cipher
 groups (two blind passes on line crops, ~$3) -- 60.35.21.33.14.15.10.26 after "toujours dispose a" is a second context for the 'renonc-' run;
 (3) fetch URL 0450-0451 for the letter's date line (2 GETs).
+
+## AUDIT (V-MANT0109)
+
+Verifier V-MANT0109 (account 2, LANE FAMILY-A2g), 9 Oct 2026, 08:05-08:2x UTC by `date -u`; a separate session from the solver MANT-0109
+(07:43-07:57 UTC) and from every earlier verifier; I had not read 0109 before this job. Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-0709-jobs.md
+"### V-MANT0109". Claim under audit (NOTES "MANT-0109"): "694/08 0109 (f.80) both pages read under Krauske's table: 80 tokens, S37 M43 (38 M =
+name-abbreviation groups 55.44 x12, 7.60 x7); gate (b) PASS at 43 letters (real -1.392 vs p95 -1.687, p99 -1.539, 0/1000; power 18/18); reads Kraut,
+Kr., commissioners Feldm. le comte Dona / Printz / Kameke / Ilgen, le grand maitre". Nothing decoded here; key.tsv, ciphertext and reading untouched.
+
+**Depth bar copied before ruling** (.claude/briefs/runs/2026-10-08-acct3-depth-bar.md): CLAUDE.md 4a governs. Cipher clause = a contiguous H/C/S
+stretch longer than AD (~1.5 x unicity, every liberty counted; an unfitted external key does not shrink H(K)). External check = a D3/D4 element,
+never a substitute for the clause at D2. Code clause = a code value that reads sensibly in >= 2 independent contexts; an H/C grade on the value does
+not satisfy it on its own; a verbatim repeated phrase counts once. D2 = one clause plus the verifier's own true, specific sentence about the content,
+written from the reading (an edition may confirm it, never supply it). Otherwise D1.
+
+**0. Step 0 (the solver's owed lookup).** "sachsen take" 08:06, 1 GET (URL file 0108, HTTP 200 image/jpeg, 4339x3865, sha256 prefix 373dc9a3c2f57967;
+film card reads "Aufnahme Einheit 0109", the folder's known one-frame URL/card offset), "sachsen release" 08:06; 0110 not fetched (0108 carries the head).
+Crops committed in f0109_08/v0108/ (`python3 tools/iiif_lines.py --image 0108.jpg --out .../f0109_08/v0108 --region 2130,940,1700,2780 --prefix f0108R
+--lines-per-crop 2 --overlap 60 --distance 55 --prominence 20 --debug`, 15 crops + overlay + manifest.json; full image not committed, folder over 30 MB).
+One blind Sonnet call on the crop paths only (f0109_08/v0108/blind_0108.txt) and my own eye on L01-L02: the right page of URL 0108 is **f.79, the
+letter's first page: "No. 40" (subagent "Ao: 40."), "L. S.", "Berlin ce 4 Juin 1712"**, opening "Je me suis donne plus d'une fois l'honneur d'entretenir
+V.E. des differents de 55.44. 1000 7.60." (1000 = 'et' in key.tsv); its last line ends "qu'il avoit deja preparé conjoin-", which joins 0109's opening
+"-ment avec 11.60.66.6.28". Code runs on f.79 (not decoded): 55.44 x4, 7.60 x4 (incl. "7.60 aiant obtenu l'entree au conseil de guerre"), 46.50.10.64.11.35.44
+("par la protection de ___"). No gloss. The left page of 0108 is the end of the preceding letter (Charlottenburg, Ahlefeldt). So 0109 = ff.79v-80 of
+**Manteuffel to Flemming, Berlin, 4 June 1712 (No. 40)**, read from the image.
+
+**1. Item.** SHStA Dresden 10026 Geheimes Kabinett Loc. 694/08, URL files 0108-0109, ff.79-80, Manteuffel to Flemming, Berlin 4 June 1712. Ciphertext
+f0109_08/ciphertext.tsv, 80 tokens in 24 groups, no gloss. Prior-work tool (`--step-type audit --fetch`, item spec with date 1712-06-04) exit 4: eleven
+LEAD live claims, none covering 694/08 0109 except MANT-0109 itself, recorded CLEAR; tomokiyo CLEAR, solver-cache CLEAR; aaymeloglu and 4-editions
+UNCHECKED-NET (editions by hand below -- and the hand check is where it is found).
+
+**2. Re-derivation (rule 7), from the repository root:** `tools/decode_key.py .../f0109_08 --check` "tokens 80: C 52, M 28 / reading up to date";
+`f0109_08/judge_gate.py --check` "judge_gate.out/token_blocks.tsv up to date"; `f0109_08/grade_0109.py --check` "grades.tsv: up to date". All exit 0.
+Key rows checked: 55 b|[a] M, 44 l C, 7 g C, 60 r|re|ro M, 1000 et C, 284 comte C, 260 Kameke M, 259 Ilgen M (key.tsv).
+
+**3. Transcription check.** Against the print (item 5): Acta Borussica's editor prints the one group he left unresolved as "10. 3. 1. 35. 44. 120. 13"
+-- the same seven codes as MANT-0109's r18 tokens 1-7, **including tok4 = 35** (the solver's low token, alt 55): confirmed. All 24 groups fall at the
+24 name/phrase slots of the printed text in order (12 Blaspil, 7 Grumbkow, 3 Krautt, the commissioners run, le Grand-Maitre): 24/24.
+
+**4. Design audit (rule 3).** PREREG c0294af33 before any pass or score (solver's statement and ROOM; not re-verified commit by commit -- the room.py
+fold caveat applies). Gate (b) can differ from the target (permuted letter values change the letters scored), power measured at L=43 (18/18). PASS stands
+as a statistic; it is moot for novelty because the plaintext is printed.
+
+**5. Novelty search log (rule 10; checks 4-5), by the letter's date.**
+- **Acta Borussica, Behoerdenorganisation I (Schmoller/Krauske, 1894)** -- Google Books search-within ESf8fHFG9ngC (`tools/gbooks_search_within.py`;
+  positive control 'Manteuffel' 20 hits) and IA full text `diebehrdenorgan01posngoog` (found by be-api phrase search '"Blaspil etait un ignorant"', 2 items:
+  that one and `bub_gb_cmQBAAAAYAAJ`): **Nr. 64 (pp. 204-207), "Conflict Blaspils mit Grumbkow und Krautt"**, a royal order of 20 May / 1 June 1712 for a
+  commission, followed by "der folgende Bericht des Saechsischen Gesandten Freiherrn von Manteuffel an den Generalfeldmarschall Grafen von Flemming, Berlin
+  4. Juni 1712" (source note: "Urschrift. Dresden Hauptstaatsarchiv. Vol. CXLV. Loc. 694"), printed in French **in clear with every cipher name resolved**:
+  "Grumbkow ayant obtenu l'entree au conseil de guerre ... par la protection de Jaeckel ... que Blaspil etait un ignorant, un paresseux et un ivrogne ...
+  Grumbkow eut la malice de porter le projet de l'etat susdit qu'il avait deja prepare conjointement avec Krautt, a Blaspil pour qu'il voulut le revoir.
+  Celui-ci lui repond qu'on ne saurait faire d'etat avant que Mr. Krautt ait rendu ses comptes ... Blaspil de son cote se retire tout camus chez lui ...
+  Le Roi la dessus nomme sur le champ Wartensleben le feldmarechal, le comte Dhona, Printzen et Kameke (Ilgen ayant adroitement decline d'en etre) ...
+  le Grand-Maitre sortant de son naturel, entreprit de plaider ... la cause de Blaspil ... que Grumbkow eut ose s'attaquer impunement ... a son commandant."
+  Editor's footnote (p.206): "In der chiffrirten, nicht aufgeloesten Urschrift steht 10. 3. 1. 35. 44. 120. 13. Nach unserem Versuch zur Dechiffrirung ist
+  dies zu uebersetzen: E. W. feldm." (Excellence Wartensleben feldmarechal, or Comte W. f. if 10 is a slip for 15). Footnote p.207: le Grand-Maitre = Paul
+  Anton von Kameke, Grand-Maitre de la garderobe. Excerpt committed: f0109_08/vmant0109_AB_BOI_pp204-207.txt (OCR verbatim, public domain). The same
+  volume quotes further Manteuffel reports on the affair (18 June 1712, pp. 208-213; 4 and 7 Oct 1712, pp. 256-258; 1713, pp. 285-287, 307-321, 356-359).
+- Droysen IV.1 (IA djvu, 2 requests): 'Blaspeil' 1 (Cleve, unrelated), 'Kraut' 2 incl. p. 256 "Die geheimen Verhandlungen, Sommer 1712": "Die beiden
+  Kamekes, der Generalcommissar Kraut waren oben auf" -- not this letter.
+- Check 5 / G3: `tools/print_check.py ... --phrases .../f0109_08/phrases.txt --only gbooks --max-requests 8` (f0109_08/vmant0109_print-check.tsv): the
+  solver's six loose phrases give 2 no hits, 2 HTTP 503, 2 generic-idiom noise (258-341 volumes) -- they miss Acta Borussica because they search the
+  solver's paraphrase, not the names; the name search above is what finds it. books.google.com search-within answered 'blocked' on the second batch
+  ('grand maître', 'Juin 1712'); host stopped.
+- Sibling period gloss: 694/09 0085 (March 1713) carries the interlinear gloss "Grumbkow" over 7.60 (f0085_09/pairs.tsv G1) -- a period witness for
+  7.60 independent of the print. Krauske's table itself has 8.60 Grumbkow (compounds.tsv), not 7.60.
+
+**6. Classification.** Key: **published** (Krauske's 1893 table, credited; the same Krauske co-edited the 1894 volume). Text: **known**.
+Item (694/08 0109, ff.79v-80, all 80 tokens): **N0** -- plaintext and decipherment of this very item already known: Acta Borussica BO I (1894) Nr. 64
+pp. 204-207 prints this letter in clear from the Dresden original with the cipher resolved, and its editor's footnote shows he deciphered the original's
+cipher (and left one group, 10.3.1.35.44.120.13, as "E. W. feldm."). Confidence high (24/24 slot agreement; distinctive clear phrases identical).
+Grades against the print (rule 4, verifier's grade; grades.tsv stays the solver's PREREG grade): 80 tokens **C 80** (H 0, S 0, M 0) -- every group's
+printed value matches the decode letters at its slot (55.44 'bl' = Blaspil x12, 7.60 'gr' = Grumbkow x7, 11.60.66.6.28 = Krautt, 11.26/11.27 'Kr.' =
+Krautt, r18 = E. W. feldm. / le comte / Dhona / Printzen / et / Kameke / Ilgen, r21 = le Grand-Maitre). The two abbreviation groups are therefore C
+(known plaintext), not M; 7.60 also has the 0085 period gloss.
+**Depth (rule 4a, the bar above).** Cipher clause: longest contiguous run 21 letters (r18) against an AD of about 127-138 letters (FAM-MANTV): fails.
+Code clause: 7.60 (Grumbkow) reads sensibly in seven non-verbatim sentences on 0109 ("sans que 7.60 en prit la peine", "Mr 7.60 (qui attendoit dans
+l'antichambre)", "sur quoi 7.60 deploya d'abord sa marchandise", "le zele de 7.60", "l'etat de 7.60 ... fort defectueux", "celuy de 7.60", "que 7.60 eut
+ose"), class person, a subordinate who encroaches on his superior's department; 55.44 likewise in twelve -- **met**. D3: 100% of tokens C plus a
+non-statistical external check (the printed decipherment, group by group, and the 0085 gloss for 7.60) -- **met**. D4 not met: no fresh rule-7
+re-derivation by a session that has seen only the spec and key. **D3**, depth_pct 100.
+**My D3 sentence (written from the reading and the clear text on the crops; the print confirms it):** "In his letter of 4 June 1712 Manteuffel tells
+Flemming how Grumbkow, newly admitted to the Prussian war council, laid before the King a war budget drawn up with Krautt showing the King some 400,000
+thalers in debt, to the discredit of his superior Blaspil, how Blaspil answered with an account showing over 100,000 thalers in hand, and how the King
+named commissioners -- Wartensleben, Dohna, Printzen and Kameke, Ilgen having declined -- the first two of whom upheld Blaspil."
+Safe sentence: "Manteuffel's letter of 4 June 1712 to Flemming (SHStA Dresden Loc. 694/08 ff.79-80), cipher passages re-read with Krauske's 1893 table;
+the letter is printed in clear in Acta Borussica, Behoerdenorganisation I (1894), Nr. 64, pp. 204-207, and our reading agrees with that print at all 24
+cipher groups."
+Unsafe: any wording that the letter or its names were unread, unidentified or newly read; "55.44 and 7.60 not identified" (they are printed as Blaspil
+and Grumbkow); "'ew' unexplained" (printed as "E. W. feldm.", Wartensleben).
+No SECOND-OPINIONS-QUEUE row and no AUD2 WORK-QUEUE row: N0 is below the brief's N3+ trigger.
+
+**7. Postmortem and corrections.** (a) The miss: Acta Borussica BO I was named in the check-solved line, cited in this folder's own status note for f.410,
+and V-MANT0454 logged 'Manteuffel' 20 hits there including p. 204 -- but no step ran the letter's names (here Blaspil/Grumbkow/Krautt) or date against
+the volume before a reading campaign; MANT-0109 honestly left check 4 by date "unchecked". (b) Corrections made: HYPOTHESES.md "MANT-0109" gains a
+V-MANT0109 note (names, 'ew', le Grand-Maitre resolved in print); NOTES.md pointer section; status.json row. (c) **Flag for the lane:** before any
+further reading job on a Manteuffel leaf about Prussian administration (Kraut, Blaspil, Grumbkow, Kameke, the Generalkriegskasse, the 1713 reforms),
+grep the IA djvu of `diebehrdenorgan01posngoog` for the leaf's names and date; the volume prints extracts of these reports. Diplomatic leaves (0391
+Oxford/Heusch, 0454 Rozrazewski) have no hit there ('Heusch' 0, 'Oxford' 0, 'Rozra' 0, 'Stanislas' 0 in the djvu). (d) key.tsv: 55.44 Blaspil and 7.60
+Grumbkow could enter compounds.tsv as C (print + 0085 gloss); not done here (verifier does not edit the key) -- a one-line job for the lane.
+Requests this audit: www.archiv.sachsen.de 1 (200); archive.org 5 (metadata 1, djvu 2, advancedsearch 2); be-api.us.archive.org 2 (the same phrase query twice);
+books.google.com 2 batches of search-within (second batch partly 'blocked', host stopped); www.googleapis.com 6 (two 503). Vision: 1 Sonnet call (0108
+crops) + my own eye on two crops and the reduced frame.

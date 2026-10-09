@@ -268,6 +268,9 @@ unreadable curl (key d); 31 glossed n (key m) and 55 glossed h (key b|[a]) in r0
   key.tsv). The leading '10.3' ('ew') is unexplained (M; not a key change). 35 (e) and 33 (o) are low on the image (alt 55 each).
 - r21 '103.7.60.66.21.120.31.50.9.28.26.10' = 'le grand maitre' ('d'un cote le grand maitre, qui sortant de son naturel ...'): which office-holder is
   meant is I.
+- V-MANT0109 (verifier, 9 Oct 2026): every slot above is resolved in print -- Acta Borussica BO I (1894) Nr. 64 pp. 204-207 prints this letter
+  (Berlin 4 June 1712) in clear: 55.44 = Blaspil, 7.60 = Grumbkow (also the period gloss over 7.60 on 694/09 0085), Kraut = Krautt, r18 = 'E. W. feldm.'
+  (Wartensleben, editor's footnote) le comte Dhona, Printzen et Kameke, Ilgen; r21 le Grand-Maitre = Paul Anton von Kameke. Grade C against the print; see AUDIT.md.
 
 ## MANT-0453 (9 Oct 2026, LANE FAMILY-A2g account 2): rule-4 slots from 694/08 0453 (f0453_08/), no key.tsv change
 - 170 (key.tsv 'le', Krauske's example word 'Roi') at "l'intention de 170 d'ajuster ainsi l'affaire": read in context as 'le Roi' (Augustus) beside

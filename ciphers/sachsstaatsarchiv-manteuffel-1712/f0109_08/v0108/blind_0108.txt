@@ -1,0 +1,15 @@
+# V-MANT0109, 9 Oct 2026: one blind Sonnet call on f0108R_L01..L15 (crop paths only; no key, no context). Verbatim summary of its report.
+# Source: archiv.sachsen.de .../3a83f921-9a43-485f-874b-34653ed59b68/fullsize/0108.jpg (HTTP 200, 4339x3865, sha256 prefix 373dc9a3c2f57967; film card reads "Aufnahme Einheit 0109"); full image not committed (folder over 30 MB), re-fetch from the URL.
+# Crops: python3 tools/iiif_lines.py --image 0108.jpg --out ciphers/sachsstaatsarchiv-manteuffel-1712/f0109_08/v0108 --region 2130,940,1700,2780 --prefix f0108R --lines-per-crop 2 --overlap 60 --distance 55 --prominence 20 --debug
+heading	L01	"Ao: 40." (subagent; possibly "Ano:"; verifier eye "No. 40"), "L. S.", "Berlin ce 4 Juin. 1712." (underlined), folio "79" top right
+run	L02	55.44.	before "des differents de"	high
+run	L02	1000.7.60.	after 55.44.; before "mais je ne me souviens pas vous"	medium (1000 alt 100 + flourish); nothing else between runs
+run	L04	7.60.	before "aiant obtenu l'entree au conseil de guerre"	high
+run	L05	55.44.	after "qui auroit du se faire par"	high
+run	L07	46.50.10.64.11.35.44.	after "par la protection de"; before ", la faveur et la confiance du Roi"	medium (46 alt 40/48; 50 alt 58/56; 64 alt 84)
+run	L07	55.44.	after "persuade l'un et l'autre que"	high
+run	L09	7.60.	after "luy savoir bon gre (: a"	medium-high
+run	L11	55.44.	after "glisse parmi ces insinuations, que"	high
+run	L13	7.60.	after "de conseil de guerre"	high
+gloss	none	no writing above or below any numeral group
+# Not decoded by V-MANT0109 (verifier). Acta Borussica BO I p.204-205 prints this page in clear: Grumbkow / Blaspil / Jaeckel at these slots (see ../vmant0109_AB_BOI_pp204-207.txt).

@@ -9755,6 +9755,40 @@
       "decode_status": "Partially decrypted",
       "depth_by": "session_01TJYftg9fmCzPrt4EvyWECg",
       "depth_date": "9 Oct 2026"
+    },
+    {
+      "date": "9 Oct 2026",
+      "kind": "contribution",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT0109)\" (first audit, 9 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANT0109)\""
+      ],
+      "completeness": "cipher spans of one frame (ff.79v-80; the f.79 cipher on URL 0108 not transcribed)",
+      "novelty": "N0",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "text": "known",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL files 0108-0109, ff.79-80), Manteuffel to Flemming, Berlin 4 June 1712 (No. 40)",
+      "title": "SHStA Dresden Loc. 694/08 frame 0109 (letter of 4 June 1712): cipher spans re-read with Dr. Krauske's 1893 table; printed in Acta Borussica BO I (1894) Nr. 64",
+      "grade": "N0 (V-MANT0109): plaintext and decipherment of this letter printed in Acta Borussica, Behoerdenorganisation I (1894), Nr. 64 pp. 204-207 (names resolved; editor's footnote on group 10.3.1.35.44.120.13 = 'E. W. feldm.'). Key published (Krauske 1893 table, credited). Our reading agrees with the print at 24/24 cipher groups: 80 tokens C 80 against the print (solver's PREREG grade S37 M43).",
+      "line": "Re-read, already in print (N0, D3, V-MANT0109 9 Oct 2026). Krauske's 1893 table applied to Manteuffel's letter of 4 June 1712 (Loc. 694/08 ff.79-80) gives Blaspil, Grumbkow, Krautt and the commissioners; the letter is printed in clear in Acta Borussica, Behoerdenorganisation I (1894), Nr. 64, pp. 204-207, and our reading agrees with it at all 24 cipher groups.",
+      "unresolved_spans": "none against the print; the f.79 (URL 0108) cipher groups are not transcribed",
+      "depth": "D3",
+      "depth_pct": 100,
+      "depth_unread": {
+        "names_codes": "none (55.44 Blaspil, 7.60 Grumbkow, r18 'E. W. feldm.' = Wartensleben, from the print)",
+        "other": "none"
+      },
+      "depth_sentence": "In his letter of 4 June 1712 Manteuffel tells Flemming how Grumbkow, newly admitted to the Prussian war council, laid before the King a war budget drawn up with Krautt showing the King some 400,000 thalers in debt, to the discredit of his superior Blaspil, how Blaspil answered with an account showing over 100,000 thalers in hand, and how the King named commissioners -- Wartensleben, Dohna, Printzen and Kameke, Ilgen having declined -- the first two of whom upheld Blaspil.",
+      "depth_check": "V-MANT0109: code clause met -- 7.60 (Grumbkow) in seven non-verbatim clear-context sentences on 0109, 55.44 in twelve; cipher clause fails (21 letters vs AD ~127-138); D3: 100% C against a non-statistical external check (Acta Borussica BO I Nr. 64 printed decipherment, 24/24 groups; 694/09 0085 period gloss 'Grumbkow' over 7.60); D4 not met (no fresh rule-7 blind re-derivation)",
+      "decode_status": "Partially decrypted",
+      "depth_by": "session_01HTLxe5PqcTKDaUMmL5hXxK",
+      "depth_date": "9 Oct 2026"
     }
   ],
   "lanes": [
