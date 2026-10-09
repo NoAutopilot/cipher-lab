@@ -65,3 +65,7 @@ only; crop step mandatory and pasted), recorded as a crib source in a new NOTES 
 release, <= 6 requests, >= 3 s, via tools/digitarq_fetch.py, manifest entry. If m0200 carries a cipher run, transcribe it only if <= 60 tokens
 (two blind passes + reconciliation + key gate as BRO-178 did); else record and stop. Report what was found and where it was not found; do not
 classify novelty. Update Remaining gaps / Escalation, gaps_check.
+
+Sessions wave 1 (18:20 UTC): MANT-0490 session_01JSQGXzU4jxaXKy8aZsseiy (Opus); MANT-0309 session_01BJv3LLv5CgyEAymkFzuH5U (Opus); MANT-0290W
+session_01FHP39cf4RxHSXw7VXRQznX (Opus); V-MANTH session_01NSARMiUrmcgnS1tJmuWfq2 (Opus); DK-TESTS session_01LqfLtCUjVKDEVkf7HzG15B (Sonnet);
+BRO-0200 session_01WZFYuJpRNbRKrR8HXzLs2C (Opus).
