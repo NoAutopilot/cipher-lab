@@ -3757,3 +3757,31 @@ Read so far: nine of ten filed (E322-E330); one recorded no book in hand.
 - [x] image-check: all nine pages read at 2400 px.
 - [x] retry: one retry on archive.org 503 and none on be-api (502s, stopped per the good-citizen rule).
 Verdict: keep going: 4 internal gaps; cheapest next: OR I/39 pt 3 page eye-check and the OR I/47 pt 3 retry, ~$0.2
+
+## FV-MS18c (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E326, E327, E328 and of E329/E330's print (AUDIT.md "## AUDIT (FV-MS18c)"). **E327 is printed** OR I/43 pt 1 p.709 (Halleck to
+Hunter, 6 Aug 1864; 'Makent' = Hunter, C) and **E328 is printed** OR I/48 pt 2 p.540 (Grant to Pope, 22 May 1865, 7 p.m.; 'whisile' = Whistle =
+Troops, 'a[cc] Co.' = accompany): both N1. E329 (p.253) and E330 (p.379) confirmed on the IA page images: N1. **E326 N3 D2** (not located;
+`AUD2-LEDGER-29` queued; SO-ECKERT-E326 queued). No holder clear copy of any of the five (40 hdl requests). Kearney = Burbridge reads 2/2 print
+occurrences vs 0/47 control (`ms18/fv_ms18c_try.py`); it is already the period instruction of E169, so the proposed key row is H (from 9 Sept 1864)
+with C at E329/E330; Makent = Hunter proposed at C; Lavender needs no change. Not edited here (fixes in AUDIT s.5).
+**Identifier note (already logged by LS4-V2a, AUDIT.md "cached ... warofrebellion431unit ... is mislabelled"; repeated here because MS18-R2
+hit it again):** IA `warofrebellion431unit` is OR I/47 pt 2; OR I/43 pt 1 is `warofrebellion431unit_0`; OR I/47 pt 3 is
+`warofrebellion014703rootrich` -- MS18-R2's `warofrebellion473unit` is not in IA's `warofrebellion*` listing. The full volume map with ids is
+`ciphers/eckert-1862/ec18/or_volumes.tsv`; readers should take ids from it, not guess them. E327's miss came from this.
+
+## Remaining gaps (FV-MS18c, 9 Oct 2026)
+Read so far: E326-E330 audited (E327-E330 N1 by print, E326 N3 D2); E329/E330 print pages eye-checked (MS18-R2's gap closed).
+- E326 print or press of 7-9 Nov 1864 (OR ser. II vol. 8, Nashville press, NARA RG 107/110) - blocker: not-attempted; outside this verifier's cap and box; next: AUD2-LEDGER-29 second audit with these leads, ~$2.5
+- key.md rows Kearney (H, E169; C at E329/E330) and Makent = Hunter (C), and the E327/E328/E329/E330 header and whisile fixes of AUDIT (FV-MS18c) s.5 - blocker: not-attempted; a verifier does not edit key.md or reading.md; next: a FIX job, ~$1
+- OR I/47 pt 3 phrase check of E322-E324 (MS18-R2's gap) under the right id `warofrebellion014703rootrich` - blocker: not-attempted; those entries belong to FV-MS18b; next: FV-MS18b or a FIX job, ~$0.1
+
+## Escalation (FV-MS18c, 9 Oct 2026)
+- [x] siblings: 9889/1 (Louisville) and 9890/0 (Baltimore) seen, not filed.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 13 queries + 22 item reads, no clear copy.
+- [x] known-keys: Kearney/Lavender tested with a control (`ms18/fv_ms18c_try.py`).
+- [x] print: E327, E328 found; E329, E330 confirmed on page images; E326 not located.
+- [n/a] key-rebuild: key rows proposed in AUDIT s.3, not edited (rule 4: a FIX job edits key.md).
+- [x] image-check: all five entries eye-checked on the ledger image.
+- [x] retry: none needed (no host refused).
+Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18c) s.5, ~$1

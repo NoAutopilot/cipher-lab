@@ -11379,7 +11379,7 @@ pt 2, ser. II vol. 7 and the rest of the 164 cached print-check volumes read fro
 - **IA identifiers (a finding for later workers):** `warofrebellion431unit` is OR ser. I **vol. 47 pt 2** (IA metadata `volume` "v.47:2"), not
   43 pt 1; OR I/43 pt 1 is `warofrebellion431unit_0`. The reader's `warofrebellion473unit` (OR I/47 pt 3, "503 twice") is not an IA identifier in
   the `warofrebellion*` listing at all; OR I/47 pt 3 is `warofrebellion014703rootrich` and I/49 pt 2 `warofrebellion492unit` (advancedsearch,
-  18:2x UTC). The 503s were very likely the missing item, not the host.
+  18:2x UTC). The 503s were very likely the missing item, not the host. The 431unit mislabel was already logged by LS4-V2a; the id map is `ciphers/eckert-1862/ec18/or_volumes.tsv`.
 
 ### 2. Holder's full text and print
 **Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, all pointers; hdl take 18:1x-18:2x UTC, 40 requests): Miller Tunstall 1 (own
