@@ -3805,3 +3805,55 @@ Totals over 272 entries: H 4667, C 43, I 25, M 33, S 16, U 10 -> **H 4666, C 54,
 Dated correction notes (old text not rewritten): NOTES "## MS18-R2" print lines: E327 ("not located") and E328 ("not located") are printed, OR I/43 pt 1 p.709 and OR I/48 pt 2 p.540; E322 (OR I/49 pt 2 p.814), E323 (OR I/48 pt 2 p.492) and E324 (OR I/47 pt 3 pp.587-588) are printed too (FV-MS18b s.2); the "OR I/47 pt 3 unreachable" line names a non-existent identifier, the volume is `warofrebellion014703rootrich`; any earlier note citing `warofrebellion431unit` as OR I/43 pt 1 means OR I/47 pt 2 (OR I/43 pt 1 is `warofrebellion431unit_0`). The "Remaining gaps (MS18-R2)" lines for E329/E330 eye-check, OR I/47 pt 3 and the E322/E323/E328 open codes are closed by FV-MS18b/c.
 
 Propagation (rule 10): status.json and second-opinions/PROMPT-chatgpt-e325 already read "Monday morning next", Kennerly (per image) and Colonel (pandora); E326 none; E322-E324, E327-E330 are N1 with no status row or SO prompt. No class, depth or SO row touched.
+
+## MS18-R3 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Ten more No. 1 rows of the sent ledger mssEC 18 (Huntington object 10074, `ms18/clean-ms18.tsv`) read and filed as E331-E340 (`ciphertext.txt`; `decode.py --write` then `--check` exit 0; `decode_no2.py --check`, `decode_no9.py --check` exit 0). Intake gate (19:1x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Scripts and outputs in `ms18/`: `ms18_r3_extract.py`, `ms18_r3.py` + `ms18_r3_controls.txt` (book and controls), `ms18_r3_printcheck.py/.out`, `ms18_r3_loose.py/.out`, `ms18_r3_hdl.py/.out`, `ms18_r3_file.py`. Prior-work lines: own work (git grep of the ten pointers in NOTES/AUDIT/ciphertext at 19:2x): none; siblings: none filed.
+
+**Book per row (HEAD shares No.1/No.2/No.9; control No. 1 p10/median/p90 .286/.412/.575).** X1 10016/1 .35/.26/.09; X2 9808/1 .68/.54/.18; X3 9745/1 .38/.31/.16; X4 9746/0 .66/.54/.22; X5 9693/1 .40/.35/.09; X6 9881/1 .56/.61/.22; X7 9886/0 .52/.50/.27; X8 9888/2 .42/.42/.15; X9 9864/0 .46/.39/.17; X10 10056/2 .37/.28/.09. The share does not pick the book on X6, X7, X8 (No. 1 vs No. 2 within .05); the sense does, and each of those three reads in print as the No. 1 decode. The meaning-shuffled copy of No. 1 gives equal H counts (non-discriminating by construction), so the control is read by sense: shuffled No. 1 gives nonsense on every row. X1 (1865) head share .35 sits between the control p10 and median; read, not forced.
+
+**Holder search first (14 requests: 10 CISOSEARCHALL on clear words and rare names, all pointers; 4 IIIF pages).** No clear period copy of any of the ten. The three hits (9745, 10056, 9864) are the entries' own holder pages.
+
+**Print (letters-only phrase grep over 171 cached/scratch volumes incl. scratch OR I/36 pt 3, 41 pt 4, 43 pt 1, 47 pt 3, 49 pt 2, 34 pt 3-4 on archive.org ids from `ciphers/eckert-1862/ec18/or_volumes.tsv`; loose windows).** Six printed, word for word:
+- E331 (10016/1) OR I/47 pt 3 p.560, Grant to Schofield 22 May 1865, 2 p.m. (ledger 7 PM).
+- E332 (9808/1) OR I/37 pt 2 p.576, Halleck to Hunter 2 Aug 1864, 3.30 p.m.
+- E336 (9881/1) OR I/41 pt 4 p.390, Halleck to Rosecrans 1 Nov 1864, 11.30 a.m.
+- E337 (9886/0) OR I/41 pt 4 p.420, Halleck to Curtis 3 Nov 1864, 12 m.
+- E338 (9888/2) OR I/41 pt 4 p.438, Halleck to Rawlins 5 Nov 1864, 2.30 p.m.
+- E339 (9864/0) OR I/43 pt 1 p.62, Stanton to Sheridan 12 Oct 1864 (sent 9 p.m.).
+Page numbers come from the OCR page heads, not eye-checked on page images. Not located: E333 (9745/1), E334 (9746/0), E335 (9693/1), E340 (10056/2): no phrase and no loose window in the 171 volumes; Navy ORN, the NY press, Dix papers, Ordnance Bureau letter books, and Grant/Halleck-sender-specific editions not searched beyond the OR set. E340 is post-war and a private message.
+
+**Image check** (E333, E334, E335, E340 at 2400 px, own entry only; the six printed rows are confirmed against the print): transcription matches line by line on all four. Findings: E333 and E335 carry period glosses/numerals written over code words and margin notes (E333: (brace), (miles), (smoking), (animal), (propulsion), (distance), (prisoners); E335: small numerals over six words); E340 'Gvt' in the holder transcription reads 'Get' in the image; the segmenter had carried the next entry (H. Seiberg, New Orleans, 7 Oct 1865) into E340's block, cut here.
+
+| row | ID | content as read | book / H / M | printed |
+|---|---|---|---|---|
+| 10016/1 | E331 | 22 May 1865 to Schofield, Raleigh: Johnston may go to Canada through the States, not to return without leave; Grant | No. 1, H 7 | OR I/47/3 p.560 |
+| 9808/1 | E332 | 2 Aug 1864 3.30 PM Halleck to Hunter: Kelley defeated enemy near Cumberland, push Averell forward | No. 1, H 15, C 1 | OR I/37/2 p.576 |
+| 9745/1 | E333 | 26 May 1864 2.40 PM, for Dix: plot to seize a steamer; spies from Havana, Phillips described, Edwards, Lasalle; L. C. Turner | No. 1, H 26 | not located |
+| 9746/0 | E334 | 27 May 1864 2.30 PM for Rosecrans: send four regiments to Hurlbut, dismount cavalry if unmounted | No. 1, H 47 | not located |
+| 9693/1 | E335 | 31 Mar 1864 11.30 AM Wise (Ordnance) to Mason, Cairo: 1000 barrels powder via Berrien at Pittsburgh | No. 1, H 17 | not located |
+| 9881/1 | E336 | 1 Nov 1864 11.30 AM Halleck to Rosecrans: reinforcements to Thomas, A. J. Smith by forced marches | No. 1, H 30, S 1 | OR I/41/4 p.390 |
+| 9886/0 | E337 | 3 Nov 1864 Halleck to Curtis: assume command of Missouri troops, pursue Price | No. 1, H 30 | OR I/41/4 p.420 |
+| 9888/2 | E338 | 5 Nov 1864 Halleck to Rawlins: Cairo regiment, Cape Girardeau, hurry every man to Thomas | No. 1, H 21 | OR I/41/4 p.438 |
+| 9864/0 | E339 | 12 Oct 1864 Stanton to Sheridan: thanks to Torbert, Merritt, Custer | No. 1, H 25 | OR I/43/1 p.62 |
+| 10056/2 | E340 | 1 Oct 1865 to Mrs M. H. Alberger: get the safe key from Hall | No. 1, H 8 | not located |
+
+Grades: decoder H 226, C 1, S 1 over E331-E340 (S and C as printed by decode.py; E332 C 1); C by print for the bodies of E331, E332, E336-E339; M for name/place words noted per entry; no I. Requests: hdl.huntington.org 14 (10 CISOSEARCHALL, 4 IIIF); archive.org downloads 6 (6 x 200, one retry-free follow of the 302); be-api none.
+
+## Remaining gaps (MS18-R3, 9 Oct 2026)
+Read so far: ten of ten filed (E331-E340); six printed, four not located.
+- E333 (plot to seize a steamer, Dix, 26 May 1864) print - blocker: not-attempted; OR I/36 pt 3 / ORN / NY press not hit; next: ORN ser. I vol. 26 and OR ser. II vol. 7 by date + "Phillips", ~$0.2
+- E334 (regiments to Hurlbut, 27 May 1864) print - blocker: not-attempted; I/34 pt 4 held no match but the sibling order is unread; next: OR I/34 pt 4 and I/39 pt 2 by date + addressee Rosecrans, Dept of Missouri sibling 9746/1, ~$0.2
+- E335 (powder, Wise to Mason) - blocker: no-key-material beyond the ledger; Ordnance Bureau letter books are not in the cache; next: Google Books query "Berrien" "Pittsburgh" "powder" 1864 with country=US, ~$0.1
+- E340 (Alberger, Oct 1865) - blocker: not-attempted; private post-war message, outside OR; next: none cheap, held
+- page images of E331, E332, E336-E339 print pages not eye-checked - blocker: not-attempted; the OCR gives page heads only; next: IA page reads for OR I/47/3 p.560, I/37/2 p.576, I/41/4 pp.390, 420, 438, I/43/1 p.62, ~$0.2
+
+## Escalation (MS18-R3, 9 Oct 2026)
+- [x] siblings: none read; the holder pages' neighbouring entries (9746/1 Kimber, 9693/2 McCaine) seen, not filed.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 10 queries, no clear copy.
+- [x] known-keys: three books plus meaning-shuffled copies (count control non-discriminating by construction, read by sense).
+- [x] print: 171 volumes; six prints found.
+- [n/a] key-rebuild: no key row edited; print-derived values (Hudson = Hood, Macbeth = A. J. Smith) are logged in ciphertext notes only.
+- [x] image-check: four unlocated pages read at 2400 px; the six printed rows checked against the print.
+- [x] retry: none needed (no host refused).
+Verdict: keep going: 4 internal gaps; cheapest next: ORN/OR ser. II date search for E333 and E334, ~$0.4

@@ -1763,5 +1763,65 @@ Code-word tokens: H 13, C 2.
 
 Code-word tokens: H 11, C 1.
 
-Totals over the 272 entries: H 4666, C 54, I 25, M 34, S 16, U 10.
+**E331 | Page 356 | 10016 | mssEC 18 (obj 10074, pointer 10016; printed page 350), 22 May 1865 Washington, 7 PM, to Maj. Gen. Schofield at Raleigh, signed Grant: inform General J. E. Johnston he will be permitted to go to Canada through the States as he may select, not to return to the United States without first obtaining leave; printed OR I/47 pt 3 p.560 (headed 2 p.m.) (MS18-R3; row 10016/1; text checked against the print, page not eye-checked)**
+
+{time: 2 PM} [22] [Maj Genl J. M. Schofield] Yuma inform [General] J E [Johnston] that he willbe permitted to go to Can a day thro the states as he may select not to return to the US without first obtaining leave to do so [Maj Genl U.S. Grant] 7 PM
+
+Code-word tokens: H 7.
+
+**E332 | Page 148 | 9808 | mssEC 18 (obj 10074, pointer 9808; printed page 142), 2 Aug 1864 3.30 PM Washington, to McCaine for Maj. Gen. Hunter at Monocacy, signed General-in-Chief (Halleck): General Kelley defeated the enemy last night near Cumberland and drove him back toward Old Town on the Potomac; can you not push forward Averell's cavalry to cut off his retreat; printed OR I/37 pt 2 p.576 (MS18-R3; row 9808/1; text checked against the print, page not eye-checked)**
+
+[Washington] [2] {time: 3.30 PM} For [Maj. Gen. David Hunter] [.] Friend [Defeat (-ed, -ing)]ed the [Enemy] last night [Near] [Jefferson] her land and drove him back [Towards] Old town on the [Potomac] [.] can you not push forward Dovers [Cavalry] to [Cut off] his Warrick [?] [General-in-Chief]
+
+Code-word tokens: H 15, C 1.
+
+**E333 | Page 85 | 9745 | mssEC 18 (obj 10074, pointer 9745; printed page 79), 26 May 1864 2.40 PM Washington, to John Horner (addressee 'Kunkle' = Dix, New York), signed L. C. Turner: the Secretary of War directs me to inform you of a plot to seize a steamer going from France to New Orleans (Eddy = New Orleans); several spies have left Havana and are now in or about New York; one named Phillips left for [New York] in the steamer Havana (Phillips tall, thin, stout built, black moustache, imperial and goatee, diamond ring on little finger of left hand); a Capt. Edwards, aged ?, side whiskers, formerly in our navy; Dr Monthny de Lasalle, a Frenchman, about ? years old, stout, Portuguese passport; more by mail (MS18-R3; row 9745/1; image-read at 2400 px)**
+
+{time: 3 PM} {date: May 26} for [Maj Gen Jno A. Dix] . [.] I am directed by the [Secretary of War] to sulton you that there is a plot to seize a [Steam]er going from [New York] to [New Orleans] [.] That several [Men] have [Left] Havana and are now in or about [New York] [,] [1] named Phillips [Left] for Ditto in the [Steam]er Havanna pause Phillips is tall & thin stout built has [City Point] moustache imperial and goatee wears diamond ring on little finger [Right] hand [.] A [Captain] Edwards is another [1] aged [40] side whiskers a Aurorian formerly in our knavey a Dr Monthny de Lasalle is another is a Frenchman [45] years old stout and has a Portuguese pass port you will learn more by mail of [Today] L C Turner
+
+Code-word tokens: H 26.
+
+**E334 | Page 86 | 9746 | mssEC 18 (obj 10074, pointer 9746; printed page 80), 27 May 1864 2.30 PM Washington, to Capt. Geo. H. Smith (for Maj. Gen. Rosecrans), signed 'Infant' = Secretary of War: send down the Mississippi at once to report to Maj. Gen. Hurlbut the 10th Kansas Volunteer Infantry, 68th US Colored Infantry, 12th Missouri Volunteer Cavalry and 7th Kansas Volunteer Cavalry; if the cavalry cannot be mounted at once they will be dismounted and sent forward as infantry; see they go with proper provisions and supplies; report daily the progress (MS18-R3; row 9746/0; image-read at 2400 px)**
+
+[Washington] {time: 2.30 PM} {date: May 27} for [Maj Gen W. S. Rosecrans] [.] The [Secretary of War] directs that you immediately send down the [Mississippi] [River] to report to [Maj Gen S. A. Hurlbut] the following [Regiment]'s viz [,] the [10] [Kansas] [Volunteer] [Infantry] [,] the [68] U S [Jasper]ed [Infantry] [,] The [12] [Missouri] [Volunteer] [Cavalry] and the [7] [Kansas] [Volunteer] [Cavalry] [.] If the [Cavalry] [Regiment]'s can not be immediately mounted & equipped as [Cavalry] [1] or both will be dismounted and equipped as [Infantry] and sent forward as such [.] You will see that these [Regiment]'s are sent with proper amount of provisions [Ammunition] & other supplies [.] You will [Telegraph (-ed, -ing)] daily to the [Adjt Genl. U.S.] of the [Army] the progress made in forwarding these [Regiment]'s till they all leave your [Department]  {tail: [signed] [General-in-Chief]}
+
+Code-word tokens: H 47.
+
+**E335 | Page 33 | 9693 | mssEC 18 (obj 10074, pointer 9693; printed page 27), 31 Mar 1864 11.30 AM Washington, to W. F. Mason at Cairo, signed Henry A. Wise, Chief of Bureau of Ordnance (T. T. Eckert): Pilgrim [Captain] Penrock at Cairo: your telegram received; 1000 barrels powder, part cannon and part musket, have been ordered to Cairo and are being forwarded; the Bureau decides to let it go and as it has been consigned first to Capt. Berrien at Pittsburgh to be reshipped by him, be pleased to communicate with him and if you apprehend any danger desire him to retain it at Pittsburgh subject to your order (MS18-R3; row 9693/1; image-read at 2400 px)**
+
+[Washington] {date: Mar 31} {time: 11.30 AM} For [Captain] Pen rock [Cairo] [.] Your [Telegraph (-ed, -ing)] received [.] [1000] barrels powder part cannon and part musket have been ordered to [Cairo] and are now being forwarded [.] The Bureau decides to let it go and as it has been con signed first to [Captain] Berrien at Pittsburgh to be reshipped by him be pleased to [Communicate (-ed, -ing)] with him and if you apprehend any danger desire him to retain it at Pittsburgh subject to your order  {tail: [signed] Henry A Wise Chief of Bureau [After the] T. T Eckert}
+
+Code-word tokens: H 17.
+
+**E336 | Page 221 | 9881 | mssEC 18 (obj 10074, pointer 9881; printed page 215), 1 Nov 1864 11.30 AM Washington, to Capt. G. H. Smith at St Louis for Maj. Gen. Rosecrans, signed Halleck: dispatches just received from General Thomas render it imperative that reinforcements be sent to him with all possible dispatch; A. J. Smith should move by forced marches, his men can rest on the steamers; no delay for payments as Hood is crossing the Tennessee; Thomas may want the reinforcements landed at Savannah or Clifton or sent direct to Nashville; consult him by telegraph when the troops reach St Louis; General Grant directs that all available troops in St Louis and vicinity be sent to General Thomas; printed OR I/41 pt 4 p.390 (MS18-R3; row 9881/1; text checked against the print, page not eye-checked)**
+
+{time: 11 AM} [1] for [Maj Gen W. S. Rosecrans] [.] Despatches just received from [Maj Gen Geo. H. Thomas] render it imperative that [Reinforcements] be sent to him with all possible despatch stop [Gen A. J. Smith] should [Movement] by [Force]ed marches his [Men] can rest on the [Steam]ers [.] There should be no delay for payments [.] As Hudson is [Cross (-ed, -ing)]ing the [Tennessee] [Maj Gen Geo. H. Thomas] may want the [Reinforcements] landed at [Savannah] or [Fort Valley] or sent direct to [Nashville] Consult him by [Telegraph (-ed, -ing)] when the [Troops] reach [St Louis] [.] [Maj Genl U.S. Grant] directs that all [Available] [Troops] in [St Louis] & vicinity be sent immy to [Maj Gen Geo. H. Thomas]  {tail: [signed] [General-in-Chief]}
+
+Code-word tokens: H 30, S 1.
+
+**E337 | Page 226 | 9886 | mssEC 18 (obj 10074, pointer 9886; printed page 220), 3 Nov 1864 12 m Washington, to Capt. Clowry at St Louis for Maj. Gen. Curtis, signed Halleck: the Secretary of War directs you assume command of all troops belonging to the Department of the Missouri now serving on the western border of that state and pursue Price toward the Arkansas River or till he reaches the troops of Steele or Reynolds; having completed this duty return the troops to their commands; furnish a copy of this order to the several commanders and to Major-General Rosecrans; regiments of the Department of Arkansas to be sent to General Steele; printed OR I/41 pt 4 p.420 (MS18-R3; row 9886/0; text checked against the print, page not eye-checked)**
+
+{time: 12} [3] for [General] Curtis in field [.] The [Secretary of War] directs that you assume [Command = Er (-ed, -ing)] [Ammunition] [Troops] belonging tooth [Department] of [Missouri] and now serving on the [West] border of that state and [Pursue] Price [Towards] the [Arkansas] or till he reaches the [Troops] of [Maj Gen Fredk Steele] or [Maj Gen J. J. Reynolds] [.] Having completed this duty will return the [Troops] to their respective [Command = Er (-ed, -ing)]'s [.] Ewill furnish a copy of this order tooth several polkers and also to [Maj Gen W. S. Rosecrans] stop [Regiment]'s or [Pensacola]'s of [Regiment]'s belonging to [Department] of [Arkansas] wilby sent to [Maj Gen Fredk Steele]  {tail: [signed] [General-in-Chief] ( 1 )}
+
+Code-word tokens: H 30.
+
+**E338 | Page 228 | 9888 | mssEC 18 (obj 10074, pointer 9888; printed page 222), 5 Nov 1864 2.30 PM Washington, to R. C. Clowry at St Louis for Brig. Gen. Rawlins, signed Halleck: it is reported there is an Illinois regiment at Cairo not required there and under orders for Atlanta; if so order it to Paducah or to Thomas; are there not troops at Cape Girardeau or New Madrid that could be spared; I think every man you can possibly get should be hurried to Thomas; if Beauregard can be checked on the Tennessee River Sherman can begin his own movement at once; printed OR I/41 pt 4 p.438 (MS18-R3; row 9888/2; text checked against the print, page not eye-checked)**
+
+{time: 2.30 PM} [5] for [Brigadier General] Rawlins [.] Its [Report]ed that theres an [Illinois] [Regiment] at [Cairo] not required there and under orders for [Atlanta] if so please order it to Paducah or to [Maj Gen Geo. H. Thomas] as it mabey most needed ---- Are there not some [Troops] at Cape Girardeau & New [Maj Gen O. O. Howard] that could be spared [?] I think every man you can possibly get should be hurried to [Maj Gen Geo. H. Thomas] [.] If [Beauregard] Canby checked on the [Tennessee] [Maj Gen W. T. Sherman] can begin his own [Movement] at once  {tail: [signed] [General-in-Chief] weather clear & cool}
+
+Code-word tokens: H 21.
+
+**E339 | Page 204 | 9864 | mssEC 18 (obj 10074, pointer 9864; printed page 198), 12 Oct 1864 Washington (sent 9 PM), to McCaine for Maj. Gen. Sheridan, signed Infant = Secretary of War (Stanton): this Department again tenders its thanks to you, and through you to Major-General Torbert, Generals Merritt and Custer and the officers and soldiers under their command for the brilliant victory won last Sunday by their gallantry over the rebel cavalry in the Shenandoah Valley; under gallant leaders your cavalry has become the efficient arm in this war that it has proved in other countries; printed OR I/43 pt 1 p.62 (MS18-R3; row 9864/0; text checked against the print, page not eye-checked)**
+
+{time: 8.30 PM} [12] [P. H. Sheriden] [.] This [Department] again tender its thanks to you and through you to [Major] [General] Torbert [General]'s Merritt & Custer and the officers and soldiers under their [Command = Er (-ed, -ing)] forth brilliant victoria [1] <insertion>(won)</insertion> last sunday by their gal entry [Over the] [Rebel] [Cavalry] [In the] [Shenandoah] [Valley] [.] Under [15] leaders your [Cavalry] has become the efficient [Arms] in this war that it has proved in other countries [Donelson] winning bites exploits the admiration [Of the] [Government] and the Country  {tail: [signed] [Secretary of War]}
+
+Code-word tokens: H 25.
+
+**E340 | Page 396 | 10056 | mssEC 18 (obj 10074, pointer 10056; printed page 390), 1 Oct 1865 12 m Washington, to Sampson at Lynchburg, Va., for Mrs M. H. Alberger, Church St: get from Hall the safe key and bring it with you; Hall can leave the safe open by taking the money papers home with him every night; signed M. H. Alberger; the second entry on the page (H. Seiberg, New Orleans, 7 Oct 1865) is not read here (MS18-R3; row 10056/2; image-read at 2400 px)**
+
+[New York]'s for Mrs M H Alberger [115] Church St [Lynchburg] [.] <unclear>Gvt</unclear>from Hall the Safe Key and bring it with you Hall can leave the safe open by taking the money papers home with him Every night Sig M H Alberger [Captain] & a [Quartermaster]
+
+Code-word tokens: H 8.
+
+Totals over the 282 entries: H 4892, C 55, I 25, M 34, S 17, U 10.
 <!-- decode.py: derived block ends -->
