@@ -57,3 +57,11 @@ its key with R8453 ("L. Gerrards Cypher"): of the R8454 codes also in T_8453, mo
 Statistic, controls, seeds and verdict rule exactly as A1/A2 (key-true synthetic = each table enciphering itself, an upper bound; random-code
 C1 p99 over 1..max(code)). Script: test3/coverage_a3.py --check. If a table is NOT EXCLUDED: decode R8447 under it with a shuffled-key control.
 Note recorded before scoring: R8454's highest code is 583; R8447 carries 4 of 41 tokens above 583 (852, 922, 1037, 1067).
+
+## Amendment A4 (CRAV-8450, 9 Oct 2026 ~11:5x UTC by date -u, registered before it is computed): A1 unchanged, one more table
+Table: test3/T_8450.tsv (R8450, BL Add MS 18982 ff.177-178, Edward Hyde to Prince Rupert, The Hague 28 Feb [1648/9]; single-reader M/I pairs
+from the period interlinear gloss). A design of small letter codes (2-87) plus word codes (89-491). Statistic, controls, seeds and verdict rule
+exactly as A1-A3 (key-true synthetic = the table enciphering itself, an upper bound; random-code C1 p99 over 1..max(code)).
+Script: test3/coverage_a4.py --check. If NOT EXCLUDED: decode R8447 under it and report with a shuffled-key control, no reading claimed.
+Note recorded before scoring: R8450's highest glossed code read is 491 (465 'will' on f.177v; one unglossed group '965' on f.178r was not
+read with confidence); R8447 carries 4 tokens above 583 (852, 922, 1037, 1067).
