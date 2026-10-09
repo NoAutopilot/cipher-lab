@@ -1,0 +1,36 @@
+tile	family_seen	feature	rule_label	note
+1	none	loop with tail (S94/S87-like) at the centre; no 8/hash/6/theta/caret within reach	UNDECIDED	no rule-family sign at the centre
+2	theta	oval crossed by two horizontal bars	X_THETA2	upper bar through the oval top, second bar lower running right
+3	8	bar through the waist past both sides (runs on into the next sign)	S80
+4	theta	oval crossed by two bars	X_THETA2
+5	8	8 right of '=', bar through the waist past both sides	S80	8 sits ~45 native px right of the tile centre
+6	hash	two horizontals crossed by a slanted stem	S88	barred 8 at the left edge
+7	8	plain 8, no bar	S65
+8	blot	oval/loop under a heavy ink blot, bars not separable	UNDECIDED
+9	hash|6	left of centre: upright stem across two horizontals; right of centre: 6 with a teardrop top and a rising stroke, no flat crossbar	hash:S24|6:S74	two family signs either side of the centre; the pair family decides which is the target
+10	8	bar through the waist past both sides	S80
+11	caret	caret with a dot at the foot between/beside the legs	S23	z with dot to the left
+12	caret	caret with a dot inside the legs (3 with a dot to its left)	S23	caret ~60 native px right of centre
+13	theta	oval crossed by two parallel bars	X_THETA2
+14	hash|theta	left: slanted stem across two horizontals; right: oval with a blot on top, two bars	hash:S88|theta:X_THETA2
+15	theta	oval crossed by two bars (upper short, lower long)	X_THETA2	moderate: the lower bar may be a ligature from the left sign
+16	hash|6	left: upright stem across two horizontals; right: 6 with a curved top stroke, no flat crossbar	hash:S24|6:S74
+17	caret	caret with a dot between the legs (c-with-dot to the left)	S23
+18	theta	oval with a blot on top, crossed by two bars	X_THETA2	barred 8 under a blot at the left edge
+19	theta	oval crossed by two bars; one bar runs on to an 8 at the right	X_THETA2
+20	none	loop with a tail and a z; no rule-family sign at the centre	UNDECIDED
+21	theta	oval with a blot on top, crossed by two bars	X_THETA2	looks like the same neighbourhood as tile 18
+22	caret	Delta at the centre; a curled-top lambda at the right edge, no dot visible but the sign is cut by the edge	UNDECIDED	edge
+23	hash	upright stem across two horizontals (lambda-like sign to the left)	S24
+24	theta	oval crossed by two bars, between a 3 and an 8	X_THETA2
+25	8|theta	left: 8 with a heavy bar through the waist past both sides; right: oval crossed by two bars	8:S80|theta:X_THETA2
+26	6?	f-like loop and a 6 whose top meets a long stroke from the left; cannot tell a crossbar from the ligature	UNDECIDED
+27	theta	oval crossed by two bars	X_THETA2
+28	hash	upright stem across two horizontals (phi left, 2-with-dot right)	S24
+29	caret	curled-top lambda right of a Delta, no dot inside the legs	S97	moderate: the right leg is cut by the edge
+30	8|hash	left: 8 with a bar through the waist past both sides; right: slanted stem across two horizontals	8:S80|hash:S88
+31	hash	upright stem across two horizontals (blotted oval to the left)	S24
+32	theta	oval with a blot on top, crossed by two bars	X_THETA2
+33	8|theta	left: 8 with a bar through the waist past both sides; centre: oval crossed by two bars	8:S80|theta:X_THETA2
+34	theta	oval crossed by two bars (blotted barred loop to the left)	X_THETA2
+35	6	6 whose top is crossed by a flat horizontal stroke running out to the right	S54	moderate: the stroke may continue into the next sign
