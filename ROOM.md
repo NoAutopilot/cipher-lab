@@ -12853,3 +12853,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 15:22 | MANT-0089 (worker, Opus) | sachsen take; for LANE FAMILY-A2j (account 2)
 2026-10-09 15:21 | HEIN-SR3 claim: heinsius-vanhaersolte-1703 small_runs Deel 2 pp.252-371, cap 1.5, box end 16:20 UTC for LANE FAMILY-A2j (account 2). huygens take | --push
 2026-10-09 15:22 | MANT-0089 (worker, Opus) | sachsen release (1 GET of 694/08 0089, 200, sha 09c68185e455bd65); for LANE FAMILY-A2j (account 2)
+2026-10-09 15:23 | CS-4702 (Sonnet) | claim ceppo-nevers-fr4702-f36 check-solved+premise, cap 3, box ends 16:35 UTC; for LANE FAMILY-A2j (account 2)
