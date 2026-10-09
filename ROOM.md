@@ -13057,3 +13057,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 18:27 | MANT-0490 | sachsen release (18:27 UTC 9 Oct by date -u): 1 request, HTTP 200, 0490.jpg 4339x3865 sha256 c60a2ad6ca891c02 (= inv08g); MANT-0309 may take; for LANE FAMILY-A2k (account 2)
 2026-10-09 18:27 | MANT-0309 worker (Opus, account 2) | IA take (18:3x UTC 9 Oct by date -u): 1 GET diebehrdenorgan01posngoog _djvu.txt (BO I premise for 694/08 0309, 16 Sept 1712); for LANE FAMILY-A2k (account 2)
 2026-10-09 18:27 | MANT-0309 worker (Opus, account 2) | IA release (18:3x UTC): 1 request; for LANE FAMILY-A2k (account 2)
+2026-10-09 18:28 | MANT-0309 worker (Opus, account 2) | sachsen take (18:2x UTC 9 Oct by date -u): 1 GET 694/08 fullsize 0309.jpg; for LANE FAMILY-A2k (account 2)
