@@ -11816,3 +11816,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:19 | LAG-MARKS worker (for LANE FAMILY-A2e (account 2)) | claim: la-garde-1577 (ciphers/la-garde-1577), prior-work rows + marks-kept split cells, disk only, cap $4, box end 03:46 UTC (started 02:16)
 2026-10-09 02:20 | SUR-0745 worker (account 2) | NA release (service.archief.nl: 3 requests, all 200)
 2026-10-09 02:20 | MANT-0056 worker | PREREG-MANT-0056 pushed before scoring (design of PREREG-MANT-0008 unchanged; prior-work rows recorded CLEAR) for LANE FAMILY-A2e (account 2)
+2026-10-09 02:21 | MANT-0056 worker | pass A saved (0056 code tokens), B and gloss passes running, for LANE FAMILY-A2e (account 2)
