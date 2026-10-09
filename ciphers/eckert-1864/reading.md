@@ -1199,5 +1199,65 @@ Geo. D. Sheldon F {time: 6.30 PM} to [Colonel] are see  {tail: [signed] Chief [Q
 
 Code-word tokens: H 12.
 
-Totals over the 178 entries: H 2821, C 23, I 4, M 3.
+**E230 | Page 295 | 5839 | mssEC 25 (obj 5952, pointer 5839), 25 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, for Fox: Rodgers, the brasses are worn again (FM-R3c; row 5839/2; image-read at 2400 px)**
+
+Dick potatoe Chesapeake bay for [Pensacola]'s [.] The brasses are worn again in a few ours run [.] we can not go on in the Dick rater [Open (-ed, -ing)] I go now [In the] Cuyler  {tail: [signed] [Maj Genl U.S. Grant] Rodgers Geo D Sheldon}
+
+Code-word tokens: H 7.
+
+**E231 | Page 190 | 5734 | mssEC 25 (obj 5952, pointer 5734), 9 June 1864 Ft Monroe, Sheldon to Maj. Eckert, for the Secretary of the Navy: S. P. Lee, Agawam, Farrar's Island (FM-R3c; row 5734/2; transcription only)**
+
+[11] ship Agawan Farrars [Inland [sic: Island]] {time: 10.30 PM} [6] [By the way of] [Monroe] {time: 12} [9] for [Secretary of Navy] [Washington] [.] Nothing new to [Communicate (-ed, -ing)] [.] Visited [Army] lines [Today] [.] They are thought toby very strong  {tail: [signed] [S. P. Lee] pleasant day Geo. D. Sheldon}
+
+Code-word tokens: H 18.
+
+**E232 | Page 192 | 5736 | mssEC 25 (obj 5952, pointer 5736), 9 June 1864 Ft Monroe, Sheldon to Maj. Eckert, for the Secretary of the Navy: S. P. Lee, Agawam, gunboats from the Potomac to York River (FM-R3c; row 5736/1; transcription only)**
+
+Agawam [8] [By the way of] [Monroe] {time: 5 AM} [9] for [Secretary of Navy] [Washington] [.] Can the [Department] dispatch several [Gunboat]'s [From the] [Potomac] to York [River] to answer calls from that quarter [?] No change [In the] naval situation here [S. P. Lee] Geo. D. Sheldon
+
+Code-word tokens: H 16.
+
+**E233 | Page 216 | 5760 | mssEC 25 (obj 5952, pointer 5760), 19 June 1864 Ft Monroe, Sheldon to Maj. Eckert, for the General-in-Chief: Foster (Hilton Head, 16 June) on the officers placed under fire at Charleston (FM-R3c; row 5760/0; image-read at 2400 px)**
+
+[Head Quarters] [Department] [Of the] [South] Hilton Head [South] Carolina {date: June 16} [By the way of] [Monroe] {time: 11.30 PM} [19] for [General-in-Chief] [Washington] [.] I have the honor to [Report] that I have [Today] received from [Major] [General] Samuel Jones [Command = Er (-ed, -ing)]ing the [Rebel] [Force]'s in this [Department] [,] a letter stating that [5] [General] officers [Of the] You S A prisoners of war had been placed in [Charleston] toby retained there under our fire [.] against this weak and cruel act I have protested [.] [In the meantime] the fire on the sit tea is continued [.] I respectfully ask that an equal number of [Rebel] officers of equal rank may be sent to me in order that I may place them under the [Enemy]'s fire as long as our officers are exposed in [Charleston] [.] I send [Major] E. N. Strong [In the] [Steam]er {time: 6.30 PM} A Boordman to [Monroe] to await your answer and if my request be granted to bring down the prisoners [.] Copies [Of the] Correspondence wilby mailed to you [As soon as] [Major] strong arrives at [Monroe] [Maj Gen J. G. Foster] Geo. D. Sheldon
+
+Code-word tokens: H 45.
+
+**E234 | Page 139 | 5683 | mssEC 25 (obj 5952, pointer 5683), 22 May 1864 5 PM Ft Monroe, Sheldon to Maj. Eckert: O'Brien on press despatches, Rowe's press telegram on the attacks at Fort Powhatan and Bermuda Hundred (FM-R3c; row 5683/0; image-read at 2400 px)**
+
+{time: 5 PM} OBrien says [Maj Gen B. F. Butler] directs no press despatches sent unless revised and approved by him there [.] Rowe has sent in the following not approved which I forward for your [Information] [.] Yesterday {time: 12} [Rebel] [Cavalry] [Attack (-ed, -ing)]ed [Fort] Powhattan and made [3] successive Charges which were [Repulsed] without much loss on our side [,] [Enemy] lost [Heavy] and badly disorganized [.] [Enemy] wish to obtain possession of heights to obstruct our shipping [.] [White River] Hundreds {date: May 22} [.] at {time: 11 PM} last night [Enemy] in [Force] [Attack (-ed, -ing)]ed [Our lines] [Near] the Centre and after [2] hours hard [Fight ing Fought]ing were [Repulsed] with [Heavy] loss [Killed] [Wounded] and [Capture (-ed, -ing)]ed [.] we hold [Fort] Powhattan with ample [Reinforcements] [.] [Monroe] [22] [,] [Steam]er Dictator from [Newbern] [Report]'s bottle picked up {date: May 20} off Hatteras stating loss [Steam]er Manhattan at sea from [Wilmington] to [White River]'s [,] large lot Cotton picked up [Near] Hatteras much lightning wind rain Geo D Sheldon
+
+Code-word tokens: H 52.
+
+**E235 | Page 287 | 5831 | mssEC 25 (obj 5952, pointer 5831), 14 Dec 1864, received at Ft Monroe, Maj. Eckert to Sheldon, Foster's landing at Tullifinny Creek and exchanged prisoners (FM-R3c; row 5831/2; transcription only)**
+
+Creek and Coosawatchie just below Pocotaligo made [Reconnoissance] in [Force] to within [150] yards of [Rail Road] during which he cut opening through woods Soasto polka<deletion>er</deletion> [Rail Road] with [Siege] [Gun]'s then [Fall (ing Fell) back] about half [Mile] and held his own although [Attack (-ed, -ing)]ed by large [Force] [,] lost about [100] and [50] [Killed] and [Wounded] [.] [Enemy] suffered severely being twice [Repulsed] [.] He was then able to knock fits out of [Rail Road] with [34] pound Parrotts [.] This accounts for break of [Communicate (-ed, -ing)] between [Charleston] and [Savannah] [.] We heard [Heavy] firing in direction of [Savannah] [River] west of [Savannah] on thursday and friday [.] [Steam]er United States with [900] and [90] exchanged prisoners left [Charleston] Monday morning arrived herat [7] this morning and left immediately for Annapolis  {tail: [signed] L. F. Shell done Geo. D. Sheldon}
+
+Code-word tokens: H 43.
+
+**E236 | Page 126 | 5670 | mssEC 25 (obj 5952, pointer 5670), 14 May 1864 Ft Monroe, Sheldon to Maj. Eckert, press telegram from Bermuda Hundreds 13 May for Fulton and Craig (FM-R3c; row 5670/1; transcription only)**
+
+from [White River] hundreds {date: May 13} {time: 8 PM} for Fulton and Craig via [Monroe] [14] may [.] at an Early hour [Maj Gen B. F. Butler] resumed [Advance (-ed, -ing)] [Towards] [Fort] [Martinsburg] [,] reached Kingsland Creek {time: 12} formed line of [Battle] [South] [East] side of Creeks [Right] on [James] monitors and [Gunboat]'s [Near] mouth Creeks within [3] [Mile]'s Drurys bluff [.] {time: 3 PM} [,] [Maj Gen B. F. Butler] super intending [Concentrate (-ed, -ing)]ing [Battery]'s [.] yesterday P M [Advance (-ed, -ing)] [Picket (-ed, -ing)]'s [Capture (-ed, -ing)]ed [Rebel] Courier with dispatches from [Beauregard] to officer in [Command = Er (-ed, -ing)] Drurys B. said ["] Hold your [Position] will [Reinforce (-ed, -ing)] you {time: 4 PM} ["] [.] in [2] hours [Rebel] [Reinforcements] came [,] [Maj Gen B. F. Butler] had sent [Force]'s to turnpike [Attack (-ed, -ing)]ed and drove them back [,] our loss slight [,] [General] Ames in [Position] to keep [Beauregard] in [Petersburg] [.] [Rebel]'s at Drurys B Evidently not disposed to [Fight ing Fought] without [Reinforcements]  {tail: [signed] Jay C Row out Geo D Sheldon}
+
+Code-word tokens: H 59.
+
+**E237 | Page 185 | 5729 | mssEC 25 (obj 5952, pointer 5729), 3 June 1864, received at Ft Monroe, Maj. Eckert to Sheldon (copy to Beckwith, Grant's Hd Qrs): Carter's Knoxville telegram on a Hanoverian named Finck, Van Duzer (FM-R3c; row 5729/1; transcription only)**
+
+[Nashville] {date: June 2} for [General-in-Chief] [Washington] [.] the following has just been received from [Brigadier General] S P Carter ["] [Knoxville] {date: June 2} [.] A Hanoverian named finck who left [Charleston] about the [18] may states that but [2000] were left [In the] city pause some [7000] left with [Beauregard] [.] soon afterwards [Beauregard] ordered [5000] more to join him which composed the [Force] in [Charleston] exclusive [Of the] [2000] [.] finick says the city could be taken by [3000] [Men] if approached [From the] waly ward and [West] ward [.] he left [In the] morning train for [Nashville] [.] he saw no [Troops] except a few guerrillas this side of [Charleston] pause he came via [Elizabeth City] [South Carolina] take joy D  {tail: [signed] [Brigadier General] how is juro progressing now J. C. Van Duzer}
+
+Code-word tokens: H 43.
+
+**E238 | Page 293 | 5837 | mssEC 25 (obj 5952, pointer 5837), 17 Dec 1864 Washington, Eckert to Sheldon, Fox to Commodore John Rodgers; same words as the Washington sent copy mssEC 19 p.247 (9141/1) and as ORN I/11 pp.197-198: a known-plaintext key test (FM-R3c; row 5837/1; image-read at 2400 px)**
+
+[Washington] [17] {time: 8.30 PM} to Come oh door [Maj Genl U.S. Grant] Rodgers us Navy [Command = Er (-ed, -ing)]ing us S Dick Tater [Monroe]'s [D. D. Porter] was sun thursday off hat her as [,] he goes in to [Beaufort] one day so he can hardly leave there before [Tomorrow] [.] you have all the orders we have to give ditto take any vessels you find for convoy and then send off the Nereus [.] till [D. D. Porter] if he finishes well to send what Iron clods and double endears his can spare to [Jno A. Dahlgren] and let you come up to [Alexandria] [.] send full [Report] of your pass sage by mail so we can accept the Ship [.] wishing you may be in time [.] your friend Gevee [Philadelphia] T. T. Eckert.
+
+Code-word tokens: H 20.
+
+**E239 | Page 293 | 5837 | mssEC 25 (obj 5952, pointer 5837), 17 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert for the General-in-Chief, Major J. F. Anderson's arrival from Sherman and Foster (FM-R3c; row 5837/0; image-read at 2400 px)**
+
+[Volunteer] {time: 7.30 AM} for [General-in-Chief] [Washington] [.] I have the honor to [Report] my arrival here this morning at [5] o'clock with despatches from [Maj Gen W. T. Sherman] and [Maj Gen J. G. Foster] [.] I send you in [Cipher] a wranglam from [Maj Gen J. G. Foster] [.] I wilby in [Washington] this pea M with full and detailed dispatches from [Maj Gen W. T. Sherman]  {tail: [signed] [Maj Genl U.S. Grant] F Anderson [Major] Addie See Staff [Maj Gen J. G. Foster] quite pleasant this morning Geo. D. Sheldon}
+
+Code-word tokens: H 19.
+
+Totals over the 188 entries: H 3143, C 23, I 4, M 3.
 <!-- decode.py: derived block ends -->
