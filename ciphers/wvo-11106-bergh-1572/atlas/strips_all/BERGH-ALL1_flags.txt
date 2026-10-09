@@ -1,0 +1,88 @@
+L01_01_004 L01_h1/4 A: S s?
+L01_01_005 L01_h1/5 A: p g?
+L01_01_006 L01_h1/6 B: dd?
+L01_01_008 L01_h1/7 A: S?
+L01_01_014 L01_h1/14 B: z?
+L01_01_034 L01_h2/8 B: g?
+L01_01_041 L01_h2/15 B: g?
+L01_01_044 L01_h2/18 B: z?
+L02_01_003 L02_h1/3 A: t 9?
+L02_01_003 L02_h1/3 B: t g?
+L02_01_005 L02_h1/5 B: g?
+L02_01_011 L02_h1/11 B: g?
+L02_01_021 L02_h1/21 B: s S (cut at edge)
+L02_01_028 L02_h2/7 B: g?
+L02_01_033 L02_h2/12 B: z?
+L02_01_037 L02_h2/16 B: h?
+L02_01_039 L02_h2/18 B: b n (plus above ink)
+L03_01_005 L03_h1/5 B: g?
+L03_01_006 L03_h1/6 B: g?
+L03_01_007 L03_h1/7 B: G?
+L03_01_008 L03_h1/8 B: B (plus above ink)
+L03_01_013 L03_h1/13 B: z?
+L03_01_017 L03_h1/17 B: 9 (plus below ink)
+L03_01_028 L03_h2/4 B: dd?
+L03_01_032 L03_h2/8 B: g?
+L03_01_033 L03_h2/9 B: g?
+L03_01_036 L03_h2/12 B: k r (plus above ink)
+L03_01_037 L03_h2/13 B: g?
+L04_01_009 L04_h1/9 B: S (plus above ink)
+L04_01_014 L04_h1/14 A: S?
+L04_01_014 L04_h1/14 B: S?
+L04_01_025 L04_h2/2 B: b o g (includes above ink)
+L04_01_029 L04_h2/6 A: S?
+L04_01_032 L04_h2/9 B: d l?
+L04_01_033 L04_h2/10 B: dd s (dd arc shares box 12 with s)
+L04_01_034 L04_h2/11 B: dd s (dd arc shares box 12 with s)
+L04_01_035 L04_h2/12 B: dd s (dd arc shares box 12 with s)
+L04_01_040 L04_h2/17 B: dd (plus above ink)
+L05_01_002 L05_h1/2 B: o s g? (includes above ink)
+L05_01_011 L05_h1/11 A: G?
+L05_01_027 L05_h2/4 B: o s (includes above ink)
+L06_01_003 L06_h1/2 B: l?
+L06_01_014 L06_h1/14 A: l? (top of l)
+L06_01_023 L06_h1/23 A: G?
+L06_01_023 L06_h1/23 B: e?
+L06_01_030 L06_h1/30 A: E (lower delta is next line)
+L06_01_037 L06_h2/7 A: b s (box also holds ink of line above)
+L06_01_037 L06_h2/7 B: b s (includes other-line ink)
+L07_01_007 L07_h1/7 A: 7? (crossed form)
+L07_01_007 L07_h1/7 B: 7? (lower ink other line)
+L07_01_008 L07_h1/8 A: 9?
+L07_01_008 L07_h1/8 B: 3?
+L07_01_010 L07_h1/10 A: r?
+L07_01_012 L07_h1/12 B: p? (tail)
+L07_01_013 L07_h1/13 A: g?
+L07_01_023 L07_h1/23 A: yx?
+L07_01_024 L07_h1/24 A: yx?
+L07_01_025 L07_h1/25 A: 3 g?
+L07_01_025 L07_h1/25 B: 3 (includes g of line above)
+L07_01_032 L07_h2/5 A: b (upper g of line above inside box)
+L07_01_032 L07_h2/5 B: b (includes g of line above)
+L07_01_039 L07_h2/12 B: f (includes other-line ink)
+L07_01_042 L07_h2/15 A: u (top flourish maybe dd)
+L08_01_005 L08_h1/5 A: d g?
+L08_01_005 L08_h1/5 B: d g (includes other-line ink)
+L08_01_017 L08_h1/17 A: r? (v-shaped)
+L08_01_037 L08_h2/10 A: FRAG (flourish of struck-out word)
+L08_01_041 L08_h2/14 A: f (maybe t f)
+L08_01_045 L08_h2/18 A: o s?
+L09_01_012 L09_h1/12 A: g? (overstruck)
+L09_01_030 L09_h2/10 B: f?
+L09_01_037 L09_h2/17 B: b?
+L09_01_038 L09_h2/18 B: FRAG (edge)
+L10_01_003 L10_h1/3 B: FRAG?
+L10_01_008 L10_h1/8 A: r? (v-shaped)
+L10_01_010 L10_h1/10 B: 4 (top is other line)
+L10_01_011 L10_h1/11 A: q?
+L10_01_013 L10_h1/13 A: h?
+L10_01_016 L10_h1/16 B: FRAG?
+L10_01_021 L10_h2/1 B: FRAG? (left stub)
+L10_01_026 L10_h2/6 B: m (7 holds g of line above)
+L10_01_027 L10_h2/7 B: m (7 holds g of line above)
+L10_01_030 L10_h2/10 A: FRAG (smear)
+L10_01_030 L10_h2/10 B: FRAG (underline smear)
+L10_01_032 L10_h2/12 A: FRAG (smear)
+L10_01_032 L10_h2/12 B: FRAG (smear)
+L10_01_043 L10_h2/23 B: FRAG (edge)
+L10_01_044 L10_h2/24 B: FRAG (edge)
