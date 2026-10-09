@@ -1,14 +1,14 @@
 # TX-ENGINEER: results of the transcription-engineering campaign (LANE TX-ENGINEER, account 4, Fable; 9 Oct 2026)
 
-DRAFT at 08:4x UTC 9 Oct 2026 by date -u: TXE-S (library compare) and TXE-T2 (truth audit over 803) are still live; their rows
-are marked pending and the file is finalised by incarnation 2 when they report. Brief
+Final, 9 Oct 2026 08:5x UTC by date -u (incarnation 2, session_01XMybhAz9WRCkE3vzvZdXLt; incarnation 1 session_015pFTECNKte4KHbEeDW5LwU
+ran rounds 1-3). Brief
 `.claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md` and its Amendments 1-2; pre-registrations
 `benchmark-tx/PREREG-txeng-2.md`, `PREREG-txeng-3.md`; the ideas register `research/TX-IDEAS-2026-10-09.md`; the taxonomy
 `research/TX-TAXONOMY-2026-10-09.md`; per-instrument results under `benchmark-tx/txeng/<instrument>/RESULTS.md`.
 
 ## For the owner, in plain words
 
-We tried everything on the list, and a few more, against the known answer: 22 instruments in about two hours, each
+We tried everything on the list, and a few more, against the known answer: 23 instruments in about two hours, each
 pre-registered, each scored on the dev lines of Birago no.87 before any held-out look. Nothing beat today's reading at the
 bar we set (p < 0.01 on the paired count). The one thing that moved was the crop: a line that slopes out of its band
 (f.178r L03) is now read in full, which recovers 7 of the 8 signs the old crop cut off; on lines that do not slope the
@@ -20,10 +20,13 @@ the 14 dev errors sits on a split), not in the order the signs are read (8 of 10
 sign), not in the scale, the contrast or the crop (13 of 22 errors are identical across two crop sets; 4x reads, Sauvola,
 CLAHE and stroke thickening leave them). They are glyphs that look like another cell to every reader, in every
 presentation. Showing the reader exemplars beside the glyph made it worse (it swapped right reads for look-alikes, 4
-fixed / 16 broken); hints in the brief did not reach the pairs that matter; and the floor audit found that of the 20
-positions every reader gets wrong, 13 are doubtful on the truth side (alignment slips in the clerk-sheet matching, a few
-clerk readings), so part of what we have been counting as reader error is the benchmark's own. With those 13 excluded,
-today's best read is 0.029, not 0.045 (a verifier has to accept the flags first; they are proposed, not applied).
+fixed / 16 broken), and your symbol library did the same (clean printed cells and the hand's own secure tiles beside each
+glyph, two readers who had to agree before a change: 0 fixed / 7 broken, the two readers agreeing 97.5% of the time because
+the same exemplar pulled them both the same way); hints in the brief did not reach the pairs that matter; and the floor
+audit found that of the 20 positions every reader gets wrong, 13 are doubtful on the truth side (alignment slips in the
+clerk-sheet matching, a few clerk readings), so part of what we have been counting as reader error is the benchmark's own.
+A second audit over all 803 positions found no further doubtful position, so the 13 are the whole of it. With those 13
+excluded, today's best read is 0.029, not 0.045 (a verifier has to accept the flags first; they are proposed, not applied).
 
 What you should do at the sorter: the doubt detector flags 6% of the held-out positions and 9 of the 15 wrong signs are in
 them (a two-signal rule: the two readers disagreed, or the key-constrained lattice disagrees with the read); a four-signal
@@ -74,8 +77,8 @@ inventory, not the reader, is where the next gain is.
 | T | floor audit, read-free | truth | 13 of 20 truth-doubtful; L 0.045 -> 0.029 | n/a | flags proposed for a verifier | 2.54 |
 | Q | confirm item, one look | guard 2 | 0.088 (17/193) | one look | headline | 6.93 |
 | R | live letter f.117r (guard 3) | live | err_2reader 0.134 (old 0.25); S 207 vs 190; judge -1.234 vs -1.224 | n/a | no licensed change | 8.35 |
-| S | cross-target library compare, two-reader-agree | C1 | pending | | | |
-| T2 | truth audit over all 803 | truth | pending | | | |
+| S | cross-target symbol library (printed 1572 cells + the hand's secure tiles) in the compare layout, two-reader-agree override (tx_compare.py library, resolve --agree; owner 7 + 8) | C1 | vs L 0/7 p 0.016 wrong way (0.041 -> 0.073); R1 1/7, R2 0/8; readers agree 117/120 | not run | FAIL; compare family retired (third run at the show rule) | 8.27 |
+| T2 | skipped-letter truth audit over all 803 positions, read-free | truth | 114 sites, 306 positions within 2: 284 clean, 12 conflict-but-clean, 10 TXE-T flags; no new doubtful position | n/a | the 13 flags stand, proposal only (ASKS 157) | 2.44 |
 
 Round 1 (the taxonomy, no reads) is in research/TX-TAXONOMY-2026-10-09.md; the three classes it named carried the mass as
 predicted (C1 half of pass A's errors; C2 a third, of which the sloped tail was the fixable part; C3 half of the mapped
@@ -91,12 +94,21 @@ vocabulary, plain re-passes at scale or under rendering, the lattice as a fixer.
 
 ## Open, for the owner and the next lane
 
-1. A verifier session on `benchmark-tx/taxonomy/truth_flags_proposed.tsv` (TXE-T, extended by TXE-T2): accept or reject
-   each flag, then a `flag` column through `build_birago87.py` and `tx_bench.py --exclude-flagged`. Until then every
-   benchmark figure on no.87 carries up to 13 truth-side errors.
+1. A verifier session on `benchmark-tx/taxonomy/truth_flags_proposed.tsv` (TXE-T; TXE-T2's 803-position sweep,
+   `FLOOR-AUDIT-803.md`, added none): accept or reject each flag (ASKS 157, TX-TRUTH-VERIFY on account 1), then a `flag`
+   column through `build_birago87.py` and `tx_bench.py --exclude-flagged`. Until then every benchmark figure on no.87
+   carries up to 13 truth-side errors.
 2. The sheet inventory: the confirm leaf's two off-sheet shapes and no.87's curled Ce / m-with-foot say the next gain on
    a new hand is a sheet that holds the hand's own forms -- the owner's sort, family-wide, before any machine pass
    (TRANSCRIPTION.md rules already say so; this campaign measured why).
 3. Colour: O4 and the colour half of O5 are untestable on the greyscale sources on disk; one Gallica colour probe when it
    answers (M25).
 4. Dinteville's third class is small marks (dots, primes), not glued groups (M26, low).
+
+## Cost and looks
+
+24 workers, 131.27 of cap 150 (rounds 1-3 under incarnation 1: 22 workers, 120.56; incarnation 2: TXE-S 8.27, TXE-T2 2.44);
+lane orchestrator incarnation 1 58.26, incarnation 2 on its archived session. Eval_heldout looks spent: 0. Confirm-item looks: 1
+(TXE-Q, 0.088). Tool fixed on the way out: `tools/reconcile_passes.py` now reads the `passage pos sign_id` long header TXE-R's
+reader brief used and refuses a long-looking header under any other first column, instead of reading each position cell as the
+sign (99.3% for a real 86.6%); test in `tools/tests/test_reconcile_passes.py`.

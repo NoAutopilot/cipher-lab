@@ -7051,9 +7051,9 @@ vs L, dev then eval once): three Opus 5.5 workers spawned 07:11 UTC.
 | M2 feature-first retest in two calls with a compliance gate (idea M24 retest) | TXE-M2 session_019efEWkgp2uydCcRAiUZNQK, cap 8, done 08:20, cost 4.76 | compliance (c) FAIL 19/51 vs 0.70; no cell call | not run | non-test; M24 retired at this vocabulary |
 | Q round 3, guard 2: confirm item spinelli-c1519-confirm read ONCE with today's pipeline | TXE-Q session_01HMGqtrRCcKjZfJTxC46Aae, cap 12, done 08:38, cost 6.93 | passes 0.104 / 0.083 | ONE look: pipeline 0.088 (17/193, 0.056-0.137); vs committed 1/11 | the headline: a different hand reads at 0.088 with today's pipeline; 8 of 14 errors are sheet-inventory gaps |
 | R round 3, guard 3: live letter fr.3252 f.117r re-transcribed with today's pipeline, decoded under the folder's PREREG and power control | TXE-R session_01PVzzRkDWo1nNw4P8ZAkKJn, cap 15, done 08:41, cost 8.35 | err_2reader 0.134 vs 0.25; S 207 vs 190 (+17 net) | power licensed; judge -1.234 vs -1.224 FAIL | NO LICENSED CHANGE: the committed reading stands; the key does not license more tokens at S by this pipeline |
-| S cross-target symbol library in a two-reader-agree compare layout (owner items 7 and 8; third compare run, retires the family on FAIL) | TXE-S session_01SSAYkYoUgEenNMg6nDGeuk, cap 10 | dev_tune vs L | -- | -- |
+| S cross-target symbol library in a two-reader-agree compare layout (tx_compare.py library + resolve --agree; owner items 7 and 8; third compare run) | TXE-S session_01SSAYkYoUgEenNMg6nDGeuk, cap 10, done 08:40, cost 8.27 | 0.041 -> 0.073 (fixed 0 / broken 7, p 0.016, wrong way); R1 alone 1/7, R2 alone 0/8; readers agree 117/120 | not run | FAIL; compare family retired (rule 3, third attempt at this show rule); library built, 51 codes / 151 tiles, shelf weak |
 | T floor audit: the 20 all-pass-wrong no.87 positions traced to the truth source, read-free; flag column proposed, never an edit | TXE-T session_013aFb7fVnMhWMhEzPxedEvS, cap 6, done 08:36, cost 2.54 | reader-wrong 7, alignment 8, key 1, clerk 4 of 20 | L 0.045 as measured, 0.029 with the 13 doubtful excluded (read-free) | 13 truth flags proposed for a verifier (benchmark-tx/taxonomy/truth_flags_proposed.tsv); the floor is partly the truth's |
-| T2 skipped-letter truth audit over all 803 no.87 positions, read-free; extended flag proposal + ASKS row for a verifier | TXE-T2 session_01XvCo9StdAiyDhCCvKEChMY, cap 6 | per-pass err_true with and without doubtful positions | n/a | -- |
+| T2 skipped-letter truth audit over all 803 no.87 positions, read-free; flag proposal + ASKS row for a verifier | TXE-T2 session_01XvCo9StdAiyDhCCvKEChMY, cap 6, done 08:47, cost 2.44 | 114 alignment sites at 108 positions, 306 scored positions within 2: 284 clean, 12 conflict-but-clean, 10 TXE-T flags; no new doubtful position | n/a (every pass loses the same 13; L 0.045 -> 0.029 if upheld) | 13 flags stand (align 8, clerk 4, key 1), proposal only; ASKS 157 for a verifier (benchmark-tx/taxonomy/FLOOR-AUDIT-803.md); truth untouched |
 | G document-recovery practice literature -> research/TX-RECOVERY-PRACTICE-2026-10-09.md (owner idea 5) | TXE-G session_01Q5gZS93pQxXHF4cVWDKxok, cap 6, done 07:31, cost 3.72 | sauvola 7/10, clahe 4/65, swn 3/3 on the proxy | not run | FAIL; 19-method note written |
 Amendments 1-2 (07:0x UTC): cap 150, ideas register research/TX-IDEAS-2026-10-09.md (23 ideas, owner's eight first), single-instrument gate p<0.01, one eval look each (0 taken), confirm item from TX-CONFIRM-SET opened once at the end, final pipeline applied to one unread Birago 1572 letter. 
 ### Hand-over to incarnation 2 (lane, 9 Oct 2026 08:4x UTC by date -u; orchestrator's instruction at ~737k context)
@@ -7072,6 +7072,30 @@ misreads a `passage/sign_id` header (TXE-R: aligned the pos column, reported 99.
 Costs this incarnation: 23 workers ledgered (C 4.36, A 9.64, E 3.26, G 3.72, B 7.46, D 3.45, F 2.99, H 5.77, D2 7.49, I 2.97,
 B2 3.68, J 4.09, K 10.76, L 7.36, M 4.70, N 9.97, O 3.45, P 2.86, M2 4.76, T 2.54, Q 6.93, R 8.35 = 120.56) + S and T2 live;
 orchestrator cost not exposed while running (read it on the ARCHIVED session). Window: five_hour allowed throughout.
+
+### Close-out (incarnation 2, session_01XMybhAz9WRCkE3vzvZdXLt, 9 Oct 2026 08:49-08:5x UTC by date -u)
+Lane closed. TXE-S and TXE-T2 reported (ROOM 08:40, 08:47), ledgered (8.27 D, 2.44 D), archived; their rows are filled above
+and in research/TX-ENGINEER-2026-10-09.md, which is final (DRAFT line removed). Totals: 24 workers, 131.27 of cap 150
+(incarnation 1: 22 workers 120.56; incarnation 2: 2 workers 10.71); lane orchestrator incarnation 1 58.26 (ledgered by the
+orchestrator), incarnation 2 n/a here (read on the ARCHIVED session). 23 instruments scored (22 + the library compare), none
+clears dev at p<0.01; eval_heldout looks spent 0; the confirm item had its one look (0.088, TXE-Q) and is not reopened; the live
+letter f.117r reported, no licensed change (TXE-R). TRANSCRIPTION.md's Today column does not move. Window: five_hour allowed
+throughout. Fixed in this incarnation: tools/reconcile_passes.py accepts the `passage pos sign_id` long header and refuses a
+long-looking header under an unknown first column instead of reading positions as signs (TXE-R's note: 99.3% for a real 86.6%;
+now 86.6% on the original files), offline test in tools/tests/test_reconcile_passes.py (commit 1d7d56e0).
+Open items, handed up: (1) ASKS 157, a verifier (never TXE-T/T2) on the 13 proposed truth flags in
+benchmark-tx/taxonomy/truth_flags_proposed.tsv -> TX-TRUTH-VERIFY on account 1 (the lane edited no truth file); if upheld, a `flag`
+column through build_birago87.py and `tx_bench.py --exclude-flagged`, both figures printed thereafter. (2) The sorter feed:
+tools/tx_doubt.py's two-signal (6.1% flagged, 9/15) and four-signal (18%, 11/15) lists on eval_heldout, 25 tiles, about three
+sessions of ten at the owner's sorter (TRANSCRIPTION.md item 7). (3) Sheet inventory on a new hand (the confirm leaf's two off-sheet
+shapes, no.87's curled Ce / m-with-foot): the owner's family-wide sort before any machine pass. (4) O4 colour and the colour half
+of O5 untestable on the greyscale sources on disk; one Gallica colour probe when the host answers (M25; Gallica 403 all morning).
+(5) Retired for this hand, not to be re-briefed without a different instrument or new material: the compare family (three runs at
+the show rule: TXE-A, M1b, TXE-S), the feature-first vocabulary (TXE-M/M2), plain re-passes at scale or under rendering, the
+lattice as a fixer. Lesson for the brief templates (both incarnations): a round-1 taxonomy that measures reader *agreement on
+errors* (the same wrong sign across readers and presentations), not only error classes, would have retired the compare,
+rendering and ordering families after one run each; and two readers shown the same exemplars are not independent, so an
+agree rule cannot filter a layout-induced pull.
 
 Round 3 (PREREG-txeng-3 Decision, 08:2x UTC): no instrument moved eval and the crop step did not clear a second unit (TXE-N S0 vs A 9/8), so the eval_heldout look is not spent (looks 0) and the Today column does not move; round 3 = the register report, the doubt detector (TXE-O) as the sorter feed, the confirm item read once (TXE-Q), the live letter f.117r (TXE-R).
 
