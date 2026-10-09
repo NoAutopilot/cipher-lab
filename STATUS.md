@@ -6807,6 +6807,22 @@ Share of spend on items whose text is already known: ~9.35 (SIG-7208; 7208 turne
 4. 7208 list-B conflicts 270/217: a native look at f.221r p1_L11 pos9 (270 vs 276), ~$1 -- matters for 4612's two 276 slots.
 5. Gramont f.30: owner-side sign sorter. august-van-saksen: waiting on ASKS 67 / Dresden.
 
+## LANE SIG handoff (SIG-5, session_01JvVtEoTkDwoLi8A8sXXA3L, account 1), 9 October 2026 (04:40-05:1x UTC by date -u; workers 6.39 + orchestrator ~1.6 = ~8.0 of 60 by get_session; seven_day allowed_warning throughout)
+Jobs .claude/briefs/runs/2026-10-09-acct1-sig5-jobs.md. Gallica probe 04:43 UTC (IIIF manifest, 1 request): 403 -- item 1 skipped. Share of spend on known-text items: 0 (both jobs served unread 4612/4610/4611).
+**Results.**
+- **SIG5-4612E** (2.25, N): 4612 crib placement attempt 3 NOT RUN at its step-0 stop -- no different input exists in 4612 (clear-word segment edges were already in
+  attempts 1-2's stream rule, 11 edges; 312 x1, 221 x0). Instrument stays attempt 2 of 3, untested-by-this-tool, not refuted; a third attempt needs crib material from
+  outside 4612 (e.g. Orange's reply to 4612, none located).
+- **SIG5-58-270** (4.14, D-, 1.38x cap): code 58 vs Groen IV CDLXXXIII at its 7 slots in 5811: v/u 4, z 2 (voz, noz), unclear 1 -> pre-stated bar FAIL; key_full 58 = z kept
+  at grade I (mixed code); 4610/4611 single slots read better as z, no token changed. 7208 p1_L11 pos9 reads 276 by eye (blind Sonnet and worker, medium; exemplars in
+  sig7208/look_270/), and f.223r writes mastrech there -> list-B mastrech most likely sits on 276, which 4612 carries twice (lead only; key_conflicts row + HYPOTHESES line;
+  no key value changed).
+**next** (cost per item; blocked items named):
+1. Gallica probe first (one per incarnation). If 200: SIG-1 handoff next items 1(a)-(c) (f.229/f.228 shape control ~$4, Baluze 167-171 sweep ~$3, 168 f.246-247 ~$3),
+   then Gramont f.30 better transcription (images on disk) only after the owner-side sign sorter. If 403: close at once -- no non-Gallica step is left in this lane's list.
+2. lodewijk 4612: blocked on new material (a crib source outside 4612); the 276 = mastrech lead (list B, by direction M in 4612) is not enough alone (2 slots). Code 146 open-codes.
+3. august-van-saksen: waiting on ASKS 67 / Dresden.
+
 ## LANE VERIFY-4 handoff (session_01667XGk7THE9debemXAefTi, account 3), 8-9 October 2026 (23:35-01:3x UTC by date -u; workers 36.88 + orchestrator ~5.6 = ~42.5 of 60 by get_session; seven_day allowed_warning throughout; closed dry)
 Jobs file .claude/briefs/runs/2026-10-08-acct3-verify4-jobs.md. 10 Opus verifiers on account 3, all done and ledgered; none re-addressed
 (readers and first auditors accounts 1, 2, 4; account 3's own V1-LS4B/AUD2-LEDGER-2 were second audits in other sessions).
