@@ -47,3 +47,11 @@ every sign's count, so the null can read only what sign frequency alone recovers
 - **Shelf:** an order/norm setting with a counted gain is graded `controlled-only` (one synthetic control, no target);
   everything else `weak` with both numbers. Nothing is run on a target from this job; a miss is not re-briefed.
 - No amendment after the first accuracy is read except a stated deviation (logged here, dated) for a run that crashes.
+
+## Deviation 1 (9 Oct 2026, 06:56 UTC by date -u; a crash, the only kind allowed above)
+
+N rule result: N=500 base o3 none u1 = 0.9457, 0.9565, 0.9375 (mean 0.9466) -- above 0.85, no headroom. N=300 crashes
+in `make_marked_control` for every seed ("40 signs cannot fit 19 letters at most 2 per letter": only 19 letters occur
+in 300 tokens of this stretch), so N=200 is infeasible too. No N qualifies: per the rule above, "no headroom at these
+N", every cell is still run and reported at N=500 (the largest feasible N tried), and **no gain is read**. The licence
+gate against the permuted null is still applied per cell (it can fail differently at any N). All shelf grades `weak`.
