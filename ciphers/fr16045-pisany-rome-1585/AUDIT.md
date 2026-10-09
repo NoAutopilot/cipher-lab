@@ -282,3 +282,53 @@ Grades: f.275r C 368 -> 369, M 183 -> 182; f.301v C 212 -> 213, M 102 -> 101; **
 the item C figures above, C 232 / M 141, are counted differently -- the verifier reconciles before propagating to status.json). Pre-edit bytes kept as
 *_preT27.tsv; key86.tsv unchanged. No class or depth change written here; a verifier session to check it and propagate. No SECOND-OPINIONS-QUEUE
 row names this folder (as of the UNA2-PISA carry-over check).
+## AUDIT 4 (V-PISA-T32, 9 Oct 2026) -- verifier check of the PISA-T32 carry-over: f.275r T57 -> T32 relabel (not an audited item)
+
+Verifier session V-PISA-T32 (account 1, for the account-4 orchestrator; brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-3.md
+"V-PISA-T32"), 20:42-21:0x UTC by date -u. Not the solver (PISA-T32), the tile reader (PISA-275R) or UNA3-PISA (live on the same folder; this
+section touches none of its files). Disk only, 0 network, 0 subagent calls. As R12A-PISV did for the T36 relabel, this section checks the
+carry-over above and classes nothing: **f.275r is not an item of AUDIT 1-3** (f.247r, f.275v, f.302v); no N-class, depth or status.json row is
+raised or added.
+
+Checked:
+- PREREG order: pisa_t32/PREREG-PISA-T32.md landed alone in 6a93351c7 (14:27:09 UTC); result.json, per_token.tsv, the relabel, _preT32 and the
+  regenerated reading and grades landed in ab2567bb5 (14:50:54 UTC). G1-G3 were fixed before any score.
+- Transcription label, not key: key86.tsv and key.tsv have an empty git diff 6a93351c7..ab2567bb5, and no commit touches them, tx86e, kp86e,
+  reading_f275r_* or pisa_t32 between ab2567bb5 and the HEAD this audit read (c4dad42c8's parent, 20:4x UTC; UNA3-PISA's candidates then sat
+  in una3_pisa/ only). After that read UNA3-PISA committed a further f.275r change (T47 -> T27, L03 o12; carry-over above): every check below is
+  against the PISA-T32 state (ab2567bb5 bytes), and the UNA3-PISA change is not checked here -- it is its own verifier job.
+- Bytes: tx86e/ciphertext_f275r_preT32.tsv is byte-identical (cmp) to tx86e/ciphertext_f275r.tsv at 6a93351c7. A token diff of _preT32 against the
+  committed file finds exactly 4 changes, each T57 -> T32: L11 o32, L13 o21, L13 o37, L15 o36 (pos 33, 23, 39, 40 counting '/'); token counts per
+  line unchanged (15 lines). The committed file equals pisa_t32/tx86f/ciphertext_f275r.tsv (the scored candidate).
+- The 4 follow from PISA-275R's blind call, mechanically: una_pisa/result.tsv f275r rows L15 p40 (Q10), L13 p39 (Q12), L13 p23 (Q16) best T32 at
+  high, L11 p33 (Q17) best T32 at medium -> SETTLED-T32; the 6 SETTLED-T57 (all high) and the UNSETTLED L10 p12 (low) were left as T57, as the
+  PREREG says. Gate GK 5/5 on that call; the reader saw no label, key value or copy (NOTES PISA-275R). Tiles were not committed and were not
+  re-cut here (Gallica untouched), so this audit did not look at the signs itself; the label rests on the blind call and the worker's montage look.
+- Reproducibility (rule 7): `python3 tx86e/apply_t32.py --check` and `python3 tx86e/apply_t36.py --check` "up to date" exit 0;
+  `python3 tools/decode_key.py ciphers/fr16045-pisany-rome-1585 --ciphertext tx86e/ciphertext_f275r.tsv --key key86.tsv --reading
+  reading_f275r_M.txt --tokens reading_f275r_tokens.tsv --check` "reading up to date" exit 0 (623 tokens: H 554, U 69); `kp86e/t31_grades.py
+  --grade` regenerates kp86e/grades_f275r.tsv with no git diff.
+- Gate numbers re-read from pisa_t32/result.json: reconciled 0.6527 -> 0.6620 vs key-shuffle p99 0.4661 / order p99 0.4937 (the carry-over's
+  0.466 / 0.494, rounded); control 5/5 (0.669-0.739) at err 0.215; G3 4 of 4 relabelled tokens identical to copy n, 0 of 4 under la (under la the
+  alignment put them on '--', '--', 'n-', 'no'; pisa_t32/per_token.tsv). PASS as the PREREG defines it.
+- Caveat the carry-over did not state: the score gain is small against the descriptive nulls -- all 11 T57 -> T32 scores 0.6601, the 200 random
+  4-of-11 draws mean 0.6562, max 0.6606 (share >= ours 0.000), so ours beats the best draw by 0.0014. Unlike f.302v (AUDIT 3) the null is not
+  degenerate and ours tops it, but the margin is thin; the relabel's support is G3 and the blind tile call, as on f.302v.
+- Grades: kp86e/grades_f275r.tsv 6a93351c7 -> ab2567bb5, mine: C 364 -> 368, M 187 -> 183, U 10 (561 sign tokens); the 4 changed rows are exactly the
+  4 relabelled tokens (T57 la M -> T32 n C). The C is the kp86e rule (decoded letter aligns identically to the Colbert copy); the copy also feeds
+  G3, but the selection of the 4 was blind to the copy, so the C is not circular -- it rests on a medium/high-confidence shape label, as R12A-PISV
+  said of the T36 four.
+- Reading change: reading_f275r_M.txt "la" -> "n" at exactly 4 places (L11 "faire n c e"; L13 "[/] n e s s", "a t i o n"; L15 "m n n t").
+- Judge (rule 7), re-run: `python3 tools/judge_plaintext.py specs/fr16045-pisany-rome-1585.json --file ciphers/fr16045-pisany-rome-1585/
+  reading_f275r_M.txt` -> FAIL language score -1.23, null_p99 -1.717, real_p05 -0.928, N=770; words cover 0.862 ok; as PISA-T32 logged.
+- Prior work: `python3 tools/prior_work.py fr16045-pisany-rome-1585 --item-spec 'shelfmark=BnF fr.16045;folio=275r;date=1586-11-04'
+  --step-type propagate-revision --offline` -> plaintext KNOWN (the Colbert 16 copy; key Tomokiyo's, published); the 12 LEADs are the folder's own
+  done escalation markers, CLEAR as in PISA-T32's run; 2 generic UNCHECKED-NET (the aaymeloglu repository and editions), unchanged by a label edit.
+- Audited items unaffected: ab2567bb5 touches only f.275r files, pisa_t32/, NOTES.md and this file; f.247r, f.275v, f.302v counts, N0 and D1
+  stand as AUDIT 1-3 wrote.
+
+Corrections: none -- every factual sentence of the carry-over is supported by the files (two p99s rounded, as noted above).
+Propagation: status.json carries no f.275r row (results 117-119 are f.247r, f.275v, f.302v) -- nothing to change, none added;
+SECOND-OPINIONS-QUEUE.tsv has no row for this folder (grep, 9 Oct) -- nothing to change.
+Verdict: the relabel is a pre-registered transcription-label change with key86 untouched; consistent with its PREREG and the blind call; carried
+over; no class raised.
