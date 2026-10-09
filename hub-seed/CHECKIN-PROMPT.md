@@ -112,3 +112,8 @@ and ledgered (30.87). TX-RED pass 4: no blocking finding; F20-F23 open (F21 -> T
 for the EVAL POOL under 0b rules; if it finds none, the orchestrator declares the fallback, a split of vivonne confirm2 lines 1-18 / 19-37,
 and S2's sentence then says so). Lane inc. 2 check-in 3 from 19:54 (B1 next). Unassigned batch 3 queued (UNA3-PISA, V-PISA-T32 on
 accounts 2/1, UNA3-BAL account 1, UNA3-BIR-VERDICT account 2). Nothing else live on account 4 outside the programme.
+STATE DELTA 20:4x UTC 9 Oct: round 7 done -- B1 Spinelli baseline 0.088 -> 0.057 as measured under atlas_v4 (a baseline change), pool 23
+(under-24 rule fires: no eval look until TX-POOL-LEAF (account 1, queued) lands or the confirm2 split is declared by the orchestrator);
+O1: typed overlap sentences wrong everywhere but seams not an error source. Owner asked for a recap and challenged "material" (answered:
+answer-keyed leaves in unused hands are the scarce set; training on our own readings is circular). TX-REGISTER row 79 (R3b retired) needs
+a reopen condition (flagged to the lane). Account 2 LANE FAMILY-A2l live (20:14). Next orchestrator check-in 21:12.

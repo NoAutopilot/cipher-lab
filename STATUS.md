@@ -7629,6 +7629,27 @@ TX programme table 20:0x UTC: slot 1 orchestrator session_012sGNgiddCpz4QUhQsMyo
 session_011EV9AKeJ4YuU9jjghdUy6F 12.3, check-in 3 running 19:54 | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 16.3, pass 5 at 20:28;
 open F20-F23 (none blocking) | slots 4-10: round 6 closed (4 workers), B1 next; TX-POOL-LEAF queued on account 1 | eval looks 0.
 
+Check-in 2, 20:30-20:4x UTC 9 Oct (1:30 pm PT): five_hour allowed; orchestrator context ~140k, trigger trig_01N4WPeAMaf71j7nLmA761Ba
+(21:12). Owner (20:1x-20:2x PT by the chat): asked for a recap of the transcription programme and challenged "material" as the blocker;
+answered in plain words (the pool needs answer-keyed leaves in unused hands, not ciphers; the search job on account 1 covers every folder
+with a period/published key + known text; training a reader on our 300 folders' own readings would be circular; the two real moves today
+were reference corrections). TX programme: lane inc. 2 (15.6, context 415k) check-in 3 at 19:56 closed round 6 (18.27) and spawned
+round 7 -- B1 Spinelli baseline under atlas_v4 DONE 20:07 (passZ_v4 0.057 as measured / 0.047 flagged-excluded, was 0.088; fixed 8 /
+broken 2 p 0.109; a baseline change, never a gain; pool 29 -> 23, under the 24 rule), O1 overlap audit DONE 20:10 (typed overlap sentences
+wrong on every folio -- f178v 425, dint 1100 px -- but indels at or under chance in the seams: not the error source; corrected sentences
+per folio for the lane's BENCHMARK-TX note column), SHRINK-SPIN DONE 20:04 (Spinelli folder floor 44 MB, all 213 images cited; options
+for the lane); lane check-in 4 at 20:37 writes Amendment 6 (recount, under-24 rule). TX-RED pass 5 running from 20:30 (pass 6 at 21:15;
+context 526k, its own successor near 600k). Experiments run 31 + 3; dev passes 1; eval looks 0; S2 look 0. Register: 107 rows (dev-FAIL
+39, measured 21, non-test 13, retired 6, dev-PASS 1); retired.py --check now 1 of 213 missing -- TX-REGISTER row 79 (R3b retired) names no
+reopen condition: flagged to the lane. TX-POOL-LEAF, V-PISA-T32, UNA3-BAL queued for account 1 (its :40 dispatcher). Account 2: LANE
+FAMILY-A2l opened 20:14 (six workers: Manteuffel census + gutter gate PASS 4/4, Brochado faults, Linhares trim non-test + char scorers
+retired, Suriname 0745 R enters its pool, KEY-OFFICES pools); UNA3-PISA claimed 20:10, UNA3-BIR-VERDICT done 20:15 (row closed; account 2
+ledgers). Account 3 silent since 02:03. Checks: keys 6, desk ok, near ok, wait-only 0, NO-NEXT 0, work_queue 8 known malformed rows.
+ASKS 160 waits on the owner.
+TX programme table 20:4x UTC: slot 1 orchestrator (this session) | slot 2 lane inc. 2 session_011EV9AKeJ4YuU9jjghdUy6F 15.6, check-in 4 at
+20:37 | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 16.3, pass 5 running, pass 6 21:15; open F20-F23 all adopted by the lane | slots
+4-10: round 7 all three done (B1, O1, SHRINK); pool 23, Amendment 6 due; TX-POOL-LEAF queued on account 1 | eval looks 0.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
