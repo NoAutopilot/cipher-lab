@@ -1976,3 +1976,30 @@ Brief: .claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md "## VIV52-R". One re
 answered 403 at 14:13:18 UTC (about 80 min after VIV52's block). Per the brief: no retry, steps 2-4 not run, WORK-QUEUE row VIV52-R
 bounced. Gallica requests this job: 1. Next: the ink 52 crops need a container or desk Gallica does not block (e.g. a LOCAL-QUEUE row
 for the owner's browser, or a later cloud retry once the block lifts); premise (VIV52 step 1) stays negative.
+
+## TX-CONFIRM-SET-2 (9 Oct 2026, 15:44-15:5x UTC by date -u, account-1 worker for orchestrator (account-4)): ink 40 f.103r as BENCHMARK-TX confirm2 item
+Brief: .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer-2.md (S2 guard) with the first campaign brief's "Note for TX-CONFIRM-SET".
+A session outside LANE TX-ENGINEER-2. No reads, no subagent calls, no network; disk only. **LANE TX-ENGINEER-2 and its workers do not open this
+folder, benchmark-tx/vivonne1573-f103r-confirm2.truth.tsv, its outputs or benchmark-tx/build_vivonne_confirm2.py before their single final score.**
+- Why this leaf: a symbol cipher with a published key (Tomokiyo, henryiii_Vivonne1.png) and a period clerk decipherment on separate leaves
+  (ff.104r-108v, no gloss on the cipher leaf), crops and a reconciled transcription already on disk (N5-VIVK), on a hand none of the six
+  benchmark items use. Considered and not taken: fr20140-danzay-1557 f.16/f.24/f.30 (images not on disk, Gallica 403 all of 9 Oct);
+  clair349-este-guise-1556 and decode-1168-modena-costabili-1492 (interlinear decipherment written over the cipher: a reader would see it in
+  the line crops); rah-juan-manuel-1521 (DECODE images not committed, word-code layer); the Dinteville fr.3619/fr.3623 DECODE records
+  (the lane's own scout, decode-scout-2026-10-09.md).
+- Build: `python3 benchmark-tx/build_vivonne_confirm2.py` (recipe in its docstring; `--check` exit 0). 2033 positions (raw tokens of
+  tx/f103r_rec.tsv), 1068 scored, 965 excluded (align-uncertain 310, unaligned 226, off-key 147, key-M 169, letter-off-key 113).
+  Control: f.103r match share under the published key 0.605 vs 200 value-shuffled keys mean 0.426, p95 0.498, max 0.557 (rank 1/201): it
+  passes, but by a narrow margin (Spinelli's was 0.901 vs 0.360).
+- Truth quality, stated plainly: the clerk's hand was read at A/B word agreement 0.66-0.71 (N5-VIVK), so the known text is noisy. Two flags were
+  set at build time, before any reader score: align-conflict 256 (the committed sign decodes to another letter), clerk-split 438 (the two clerk
+  readings differ at that letter); 588 of 1068 flagged. Tightening the neighbour window (0.5 -> 0.7) or requiring both neighbours to match
+  left the conflict share at 0.23-0.24, so the conflicts are not mostly alignment drift; the top one (s <- d, 17) matches VIV-ANCHOR's finding
+  that readers write d for an s homophone (a reader-inventory error class, not only truth noise). The build kept window 0.5 (the value first
+  written); no truth row was edited by hand.
+- Baseline at build (N5-VIVK's blind Sonnet passes, value-level): committed 0.221 (236/1068), passA 0.232, passB 0.246 as measured; passA vs
+  passB paired fixed 26 / broken 14, p 0.081. Flagged-excluded: committed 0.000 by construction, passA 0.017, passB 0.044. The item has the
+  headroom S2 needs (an 8-25% hand); read it with the paired count against today's pipeline and both figures, never the flagged figure alone.
+- prior_work.py: no items.tsv row for f.103r (`--derive` proposed 9 rows, none for ink 40; the pending file was not kept). Novelty is not in
+  question for a benchmark item (key published, text a period clerk decipherment); no N-class assigned (rule 10).
+Requests 0; subagent calls 0. Cost: the orchestrator's get_session reading.
