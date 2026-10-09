@@ -1,0 +1,589 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000058647">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000058647">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 5573-5894</div>
+					<h1>Français 5699
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000058647_info">Informations bibliographiques</a></div><div class="niv0"><div class="withoutChild"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058647">Français 5699 • Regius 10297 • Geste des nobles Francoys</a></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 5699 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc586479&Cote=Français 5699&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Versions numérisées :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b53164670w">Consulter le document numérisé</a></li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b107206690">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 8170 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc586479&Cote=MF 8170&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 5699 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Regius 10297</div>
+<div class="did-unitid">Ancienne cote : Dupuy I 2137</div>
+<div class="did-unitid">Ancienne cote : Rigault II 2632</div>
+<div class="did-unitid">Ancienne cote : François I<emph render="super">er</emph> 169</div>
+<div class="did-label">
+<div class="did-unittitle">
+<emph render="italic">Geste des nobles Francoys</emph>
+</div>
+</div>
+<div class="did-date">XV<emph render="super">e</emph> siècle (milieu, avant 1467)</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+<div class="divdid">France (Poitou ?). Copiste anonyme. Ajouts et gloses autographes de <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb107215143" class="hrefLink ext">Jean d'Angoulême</a> (cf. descriptif du contenu <emph render="italic">infra</emph>).<br/>Lettres ornées (f. 13 : armes ; 18v.). Lettres filigranées, lettres de couleur.<br/>Parchemin,        178 ff.,  210 x 150 mm (just. 140 x 90 mm) Les feuillets 11v.-12 v. et 161v.-177 sont blancs mais préparés.<br/>25 Cahiers, précédés et suivis de 3 gardes volantes de papier (fin du XVIII<emph render="super">e</emph> siècle) : 1 cahier de 4 ff. (1-4 ; f. 1 : ancienne contregarde ; f. 2 : ancienne garde volante), 20 cahiers de 8 ff. (5-164), 1 cahier de 4 ff. (165-168), 1 cahier de 2 ff. (169-170, traces de montages), 1 cahier de 4 ff. (171-174), 1 cahier de 4 ff. (175-178 ; f. 177 : ancienne garde volante ; f. 178 : ancienne contregarde). Piqures. Pas de réclames. Présence d'un système de signatures au crayon à papier (chiffres arabes) correspondant à l'actuelle reliure de la fin du XVIII<emph render="super">e</emph> siècle. Double foliotation, à l'encre brune (milieu du XV<emph render="super">e</emph> siècle) et à l'encre noire, XVII<emph render="super">e</emph> ou XVIII<emph render="super">e</emph> siècle. Titre début XVII<emph render="super">e</emph> siècle au f. 2v. : "Gestes des François descenduz du roy Priam jusque a Charles, filz de Charles sixiesme [rajouté :] et Jeanne la pucelle".<br/>Réglure légères à l'encre noire.        <br/>Reliure de maroquin rouge aux armes royales (fin du XVIII<emph render="super">e</emph> siècle). Reports de l'ancienne reliure de cuir bleu (France, seconde moitié du XV<emph render="super">e</emph> siècle, après 1467), aux f. 1 et 178v. (anciennes contregardes). Tranches dorées et ciselées, armes peintes de la famille d'Angoulême (<emph render="italic">d'azur à trois fleurs de lis d'or, au lambel d'argent, celui du milieu chargé d'un croissant de gueules</emph>, très vraisemblablement Charles d'Angoulême) en gouttière.<br/>Reliure restaurée en 2018 : notamment réalisation d'un nouveau dos de maroquin rouge pour remplacer celui qui avait disparu, tranchefiles refaites à l'identique. Il a été noté que les plats actuels sont de récupération, avec traces de ficelles anciennes (dossier BnF-ADM-2018-004650-01).<br/>Estampille de la Bibliothèque royale au XVII<emph render="super">e</emph> siècle. </div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b53164670w" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b53164670w.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b53164670w.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 8170. Cote de la matrice (pour commander une reproduction) : R 26892.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b107206690" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b107206690.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b107206690.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>Réalisé pour <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb107215143" class="hrefLink ext">Jean d'Angoulême</a> (inventaire après décès 1467, n° 150 : "Autres livres trouvez ez armoyres de Congnac qui ne sont point en l'inventoire ci dessus escript [...]. Item, ung autre livre, en parchemin, de petite marge, couvert d'une peau rouge, relié en tables, escript de lettre brisee, ouquel sont contenus les <emph render="italic">Gestes des rois de France, de la lignee de Priam jusques au roi Charles VI<emph render="super">e</emph>
+</emph>, commençant <emph render="italic">Comme Troye la Grant fut destruicte</emph>, et, au devant, est escript en deux petites fueilles <emph render="italic">La Cornerie du Jugement</emph>, et finissant ou derrier fueillet dudit livre <emph render="italic">bombardes getter</emph>") ; <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12520218b" class="hrefLink ext">Charles d'Angoulême</a> (non identifiable dans son inventaire après décès de 1496) ; <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb16608459q" class="hrefLink ext">bibliothèque personnelle de François I<emph render="super">er</emph>
+</a> (n° 169 au f. 2v., ancienne garde volante) ; <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb16629979c" class="hrefLink ext">librairie royale de Fontainebleau</a> ; ancien fonds royal (Inv. fin XVI<emph render="super">e</emph> siècle, n° 830).<br/>
+</p>
+</span>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>L'attribution du texte à <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12517067g" class="hrefLink ext">Guillaume Cousinot</a>, affirmée par Vallet de Viriville, n'est plus retenue aujourd'hui.</p>
+<p>Contenu : <br/>F. 1 : Programme de ballet (ajout autographe de Jean d'Angoulême). Correspond aux fêtes données à Nancy ou Châlons-en-Champagne en 1445 lors de retrouvailles du comte d'Angoulême avec Charles VII. Commence par "Basse dance de Bourgogne". <br/>F. 3v.-4v. : <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb122003269" class="hrefLink ext">Vaillant</a>, <emph render="italic">Cornerie des anges de Paradis</emph> (ajout autographe de Jean d'Angoulême). Commence par "Quant lez quatre angles corneront".<br/>F. 5-11 : Table du volume, avec renvois aux pages en chiffres arabes (ajouts autographes de Jean d'Angoulême). Cette table est de la même main que le texte lui-même.<br/>F. 13-161 : <emph render="italic">Geste des nobles Francoys</emph>. Commence par "Geste des nobles françoys descenduz de la royalle lignee du noble roy Priam de Troye jusques au noble Charles filz du roy Charles le sixyesme qui tant fut amé des nobles et de touz autres. Comment Troye la grant fut fondee et destruicte" et finit par " il commanda faire ses bombardes gecter".<br/>F. 178 : Diverses annotations, la plupart de la main de Jean d'Angoulême.</p>
+<p>Beaucoup de dates ont été soulignées dans le volume, probablement par Jean d'Angoulême.</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">Fichier Avril</p>
+</div>
+<div class="description-part">
+<span>
+<p>
+<a title="Consulter ce document" bib="2" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b100005084/f606" class="hrefLink ext">Consulter la fiche numérisée (Français 5699)</a>
+</p>
+<p>Le <a title="Consulter ce document" target="_blank" href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc94835t" class="hrefLink ext">fichier Avril</a> a été constitué entre 1968 et les années 1990 par François Avril, conservateur au département des Manuscrits, à partir d’un examen systématique des manuscrits des fonds latin, français (et partiellement N.A.F.) et italiens, dans la perspective de l’élaboration d’un catalogue scientifique des manuscrits enluminés de la BnF.  Cette documentation de travail est tenue à jour et complétée jusqu'en 2003.</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>
+<emph render="bold">Catalogues : </emph>
+<br/>Auguste Vallet de Viriville, "Notice et extraits du manuscrit intitulé : <emph render="italic">Geste des nobles Françoys descendus du roy Pryam</emph>", <emph render="italic">Notices et extraits des manuscrits de la Bibliothèque impériale et autres bibliothèques</emph>, t. 19/2, 1858, p. 139-156.<br/>
+<emph render="italic">Catalogue des manuscrits français</emph>, t. 5, Paris, 1902, p. 70.</p>
+<p>
+<emph render="bold">Texte :</emph>
+<br/>René Planchenault, "La <emph render="italic">Chronique de la Pucelle</emph>", <emph render="italic">Bibliothèque de l'Ecole des chartes</emph>, t. 93, 1932, p. 55-104.</p>
+<p>
+<emph render="bold">Histoire :  </emph>
+<br/>Gustave Dupont-Ferrier, "Jean d'Orléans comte d'Angoulême d'après sa bibliothèque (1467)", dans Achille Luchaire (dir.), <emph render="italic">Mélanges d'histoire du Moyen Âge</emph>, t. 3, 1897, p. 39 et  89.<br/>Michel Hayez, "Un exemple de culture historique au XV<emph render="super">e</emph> siècle : la <emph render="italic">Geste des nobles Françoys</emph>", <emph render="italic">Mélanges d'archéologie et d'histoire de l'Ecole française de Rome</emph>, t. 75, 1963, p. 127-178.<br/>Philippe Contamine, "Une chronique pour un prince ? La <emph render="italic">Geste des nobles François</emph>", dans Chantal Grell, Werner Paravicini et Jürgen Voss (dir.), <emph render="italic">Les princes et l'histoire du XIV<emph render="super">e</emph> au XVIII<emph render="super">e</emph> siècle</emph>, actes du colloque de l'Université de Versailles-Saint-Quentin et de l'Institut historique allemand, Paris/Versailles, 13-16 mars 996, Bonn, 1998, p. 231-241.<br/>Gilbert Ouy, <emph render="italic">La librairie des frères captifs. Les manuscrits de Charles d'Orléans et Jean d'Angoulême</emph>, Turnhout, 2007, p. 68.<br/>Maxence Hermant (dir.), <emph render="italic">Trésors royaux. La bibliothèque de François I<emph render="super">er</emph>
+</emph>, catalogue de l'exposition de Blois, château royal, 4 juillet-18 avril 2015, Rennes, 2015, p. 92.</p>
+</span>
+</div>
+</div><div class="processinfo-class">
+<div class="label-part">
+<p class="processinfo-label">Informations sur le traitement</p>
+</div>
+<div class="description-part">
+<span>
+<p>Notice rédigée par Maxence Hermant (avril 2016)</p>
+</span>
+</div>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<br/>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

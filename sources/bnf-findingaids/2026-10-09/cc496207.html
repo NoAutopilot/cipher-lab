@@ -1,0 +1,512 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049620">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049620">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3157
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049620_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620">Français 3157 • Anc. 8674 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e119">1 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Amboyse, le XXVe jour de fevrier 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e128">Fol. 3 • 2 Lettre de « C[HARLES], cardinal DE LORRAINE », et de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monseigneur le duc de Montmorency,... D'Amboyse, le XXVe jour de fevrier 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e149">Fol. 5 • 3 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monseigneur le duc de Montmorency,... D'Amboyse, le XIXe jour de mars 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e170">Fol. 7 • 4 Lettre d'ANNE DE « MONTMORENCY,... à monsieur le duc de Guyse,... A Orleans, ce XXIIe de janvier 1562 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e196">Fol. 9 • 5 Lettre du duc DE NEMOURS, « JAQUES DE SAVOYE,... à monseigneur de Momorancy, marechal de France ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e224">Fol. 11 • 6 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le connestable... D'Amboyse, ce XXVe jour de fevrier 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e250">Fol. 12 • 7 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Amboyse, le XIXe jour de mars 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e281">Fol. 15 • 8 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monseigneur le marechal de Montmorency,... Du camp de Messac, le dernier jour de janvier 1562 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e304">Fol. 17 • 9 « Double de la lectre escripte aulx courtz de parlement, bailly et seneschaulx... pour le regard des sedicieux », lors de la conjuration d'Amboise.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e332">Fol. 22 • 10 Lettre d'ODET DE COLIGNY, « cardinal DE CHASTILLON,... à monseigneur le duc de Montmorency,... D'Amboise, ce XXVe fevrier 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e363">Fol. 25 • 11 Lettre d'ODET DE COLIGNY, « cardinal DE CHASTILLON,... à monseigneur le duc de Montmorency,... D'Amboise, ce dernier fevrier 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e391">Fol. 28 • 12 Lettre de GASPARD DE COLIGNY, amiral DE « CHASTILLON,... à monseigneur le duc de Montmorency,... D'Amboise, ce premier jour de mars 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e414">Fol. 31 • 13 Lettre, sans date ni signature, concernant « le seigneur Pierre Strossy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e442">Fol. 34 • 14 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le connestable... A Amboise, ce XXVIIIme jour de mars 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e468">Fol. 36 • 15 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monseigneur de Dampville,... A Villiers Costeretz, le VIe jour de septembre 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e494">Fol. 38 • 16 « Departement des compaignyes de la gendarmerye... Faict à Chantilly, le VIe jour d'avril, l'an mil V.C. cinquante neuf ». Signé : « Montmorency ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e523">Fol. 41 • 17 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... Au Plessis de Tours, le XIXe jour d'avril 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e549">Fol. 43 • 18 Lettre du roi « FRANÇOYS » II au « sire de Dampville,... A Chinon, le VIe jour de may 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e575">Fol. 45 • 19 Lettre de « CATERINE » DE MEDICIS au « sire de Montmorency,... De Sainct Germain en Laye, le XXVIIe jour de juillet 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e601">Fol. 47 • 20 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Fontainebleau, le dernier jour de juillet 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e624">Fol. 49 • 21 Lettre de « C[HARLES], cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... A Fontainebleau, le dernier jour de juillet 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e647">Fol. 50 • 22 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Villeneufve St George, le VIIIe jour de septembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e676">Fol. 52 • 23 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... A Villeneufve St George, le VIIIe jour de septembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e705">Fol. 54 • 24 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A St Germain en Laye, le XXVIIe jour de septembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e734">Fol. 56 • 25 Lettre du roi « FRANÇOYS [II]... à... la connestable, duchesse de Montmorency,... A St Germain en Laye, le XXVIIe jour de septembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e768">Fol. 58 • 26 Lettre de « C[HARLES], cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... A St Germain en Laye, le XXVIIe jour de septembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e802">Fol. 59 • 27 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... De Madrit, le Xme jour d'octobre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e833">Fol. 61 • 28 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Thorye, le XVe jour d'octobre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e864">Fol. 62 • 29 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... De Thoury, le XVe octobre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e895">Fol. 64 • 30 Lettre du roi « FRANÇOYS » II aux « cardinal de Chastillon et duc de Montmorency,... A Orleans, le XXIIIIe jour de octobre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e926">Fol. 66 • 31 Lettre de « CATERINE » DE MEDICIS aux « cardinal de Chastillon et duc de Montmorency,... A Orleans, le XXIIIe jour de octobre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e957">Fol. 68 • 32 Lettre de « ROBERTET,... à monseigneur le duc de Montmorency,... D'Orleans, ce XXIIIIe jour d'octobre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e993">Fol. 70 • 33 Lettre du « baillyf de Dijon, HUGUES LE MARLET,... à monseigneur de La Rochepot,... A Dijon, le vingt septiesme jour d'octobre mil cinq cens soixante ». Imprimé, avec signature autographe.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1026">Fol. 72 • 34 Lettre de « CATERINE [DE MEDICIS]... à... monseigneur le connestable... D'Orleans, ce XXVIIIe jour de novembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1057">Fol. 74 • 35 Lettre de « C[HARLES], cardinal DE LORRAINE », et de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... A Orleans, le XXIIIIe jour de octobre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1088">Fol. 77 • 36 Lettre du roi « FRANÇOYS » II au « Sr de Dampville,... A Orleans, le XXVe jour de octobre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1122">Fol. 79 • 37 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le connestable... D'Orleans, ce XIIIe jour de novembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1153">Fol. 81 • 38 Lettre de « C[HARLES], cardinal DE LORRAINE », et de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... D'Orleans, ce XXVIIIe jour de novembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1179">Fol. 82 • 39 Lettre de « ROBERTET,... à monseigneur le duc de Montmorency,... D'Orleans, ce XIIIe jour de novembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1210">Fol. 84 • 40 Arrêt du roi « FRANÇOYS » II concernant le « proces de messire Loys de Bourbon, prince de Condé... Faict à Orleans, le vingtme jour de novembre, l'an mil cinq cens soixante ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1241">Fol. 86 • 41 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le conestable ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1264">Fol. 89 • 42 Nouvelles de la cour de France.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1292">Fol. 93 • 43 Lettre de « CATERINE [DE MEDICIS]... à... monsyeur le conestable ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1315">Fol. 95 • 44 Bref, en italien, de « PIUS papa IIII,... Annae, regni Franciae conestabili... Di Roma, a li otto de genaro 1561 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1343">Fol. 98 • 45 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le connestable ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1366">Fol. 101 • 46 Lettre de « SAINCT ANDRE,... à monseigneur le duc de Montmorency,... A Sainct Germain, ce XXVIe febvrier » 1560.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1397">Fol. 103 • 47 Mémoire contre « la deliberation prinse de donner audiance publicque en plain parlement à ceulx qui veulent faire leur plaincte ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1425">Fol. 106 • 48 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... D'Orleans, le XIIIe jour de novembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1451">Fol. 108 • 49 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... D'Orleans, ce XIXe jour de novembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1477">Fol. 110 • 50 Lettre de « CATERINE » DE MEDICIS au « duc de Montmorency,... A Orleans, le cinqme jour de decembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1503">Fol. 112 • 51 Lettre d'« E[MMANUEL] PHILIBERT [duc DE SAVOIE]... à... monsieur le duc de Montmorency,... De Thurin, le VIIe de juillet 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1534">Fol. 114 • 52 Ordonnance « de par le roy et monseigneur le conte de Villars,... lieutenant general de Sa Majesté en ce païs et gouvernement de Languedoc », contre ceux qui favorisent les « ministres predicantz de Geneve ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1557">Fol. 119 • 53 Lettre de « SAINCT ANDRE,... à monseigneur le duc de Montmorency,... De Bloys, ce XVIIe de novembre » 1559.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1588">Fol. 122 • 54 « Coppie de lettre missive envoyée au roy de Navarre de la part de monseigneur le connestable... De Paris, ce XXVIe septembre » 1560.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1614">Fol. 124 • 55 Lettre de « C[HARLES], cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... De Trente, ce XXIIIIe novembre 1562 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1640">Fol. 127 • 56 Lettre, en italien, du « cardinale DI SERMONETO,... a... monsor il connestabil di Franza... Di Roma, il di XVIIII di novembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1666">Fol. 129 • 57 Lettre, en espagnol, de « RUY GOMEZ DE SILVA,... conte DE MELLITE », au « condestable de Francia... De Toledo, a XXVIII de majo 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1689">Fol. 131 • 58 Bref, en italien, de « PIUS papa IIII,... Annae, regni Franciae connestabili... Romae, die XXVIII julii M.D.LX° ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1712">Fol. 133 • 59 Lettre, en espagnol, « del duque DE ALVA al... monseigneur de Momoranci,... Di Madrid, a primero de enero 1561 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1735">Fol. 135 • 60 Lettre de « SAINCT ANDRE,... à monseigneur le duc de Montmorency,... De Villiers Costeretz, ce VIIe jour de septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1761">Fol. 136 • 61 Lettre, en espagnol, de « RUY GOMEZ DE SILVA [comte DE MELITO]... al... señor el condestable de Francia... De Madrid, a VII de hebrero 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1784">Fol. 138 • 62 Lettre au roi des « depputés des eglises... qui desirent vivre selon la pureté de l'Evangille ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1802">Fol. 141 • 63 Fragment d'une lettre, sans adresse ni signature, sur la cour de France. « Faict à Paris, le XIXe jour de septembre 1563 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1823">Fol. 144 • 64 Lettre des « prevostz, conseillers et senateurs d'Ausbourg, Noremberg et Ulme... à... monseigneur Anne de Montmorency ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1841">Fol. 147 • 65 Lettre du comte DE « VILLARS,... à monsigneur le duc de Montmorenci,... De Beocayre, ce 12 d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1849">Fol. 150 • 66 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Aigues Mortes, ce XVe novembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1860">Fol. 152 • 67 Mémoire en chiffre « du XIIe decembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1871">Fol. 158 • 68 « Double de ce que MARILLAC a escript à monseigneur le connestable » Anne de Montmorency.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1889">Fol. 163 • 69 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Percigny, ce premier jour de decembre 1559 ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1897">70 Poésies françaises touchant l'assemblée des prélats à Poissy, en 1561.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1903">1° « Aux evesques et prelats ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1916">2° « Confessions de plusieurs prelats quand les ministres de la parolle se presenterent pour disputer avec eux ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1929">3° « De la Dispute entre les prelats papistes et les ministres de la parolle de Dieu ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1942">4° « A la reine mere et roy de Navarre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1955">5° « A la reine de Navarre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1968">6° « Pour quelle cause les prelats nyerent seullement ce qu'avoit esté dict par Beze, sans vouloir disputer par l'Escriture ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1981">Fol. 174 • 71 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Lyon, le VIIIme jour de fevrier 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e1992">Fol. 176 • 72 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Aigues Mortes, le XIe novembre 1560 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049620_d0e2003">Fol. 178 • 73 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Montpellier, le XVIIIme jour de novembre 1560 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3157 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc496207&Cote=Français 3157&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90598645">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31452 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc496207&Cote=MF 31452&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3157 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8674</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31452. Cote de la matrice (pour commander une reproduction) : R 4118.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90598645" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b90598645.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b90598645.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Charles IX, roi de France. • Pièces et recueils divers.</p>
+<p>Cour. • Nouvelles (XVIe s.).</p>
+<p>France. • Pitorre (François II).</p>
+<p>François II, roi de France. • Actes et lettres.</p>
+<p>Gendarmerie, gendarmes. • Montres, rôles, états de paiement.</p>
+<p>Guise, Charles de Lorraine, cardinal de, dit le cardinal de Lorraine. • Actes et lettres.</p>
+<p>Guise, François de Lorraine, duc de. • Actes et lettres.</p>
+<p>Montmorency, Anne, duc de, connétable de France. • Lettres et actes.</p>
+<p>Poissy. • Colloque, poésies.</p>
+<p>Protestants. • Notes et pièces diverses (XVIe s.).</p>
+<p>Savoie, Honorat de, comte de Tende, marquis de Villars, amiral de France. • Actes et lettres.</p>
+<p>Savoie, Honorat de, comte de Tende, marquis de Villars, amiral de France. • Pouvoirs à lui donnés pour commander en Guyenne.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e119');">1 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Amboyse, le XXVe jour de fevrier 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e128');">2 Lettre de « C[HARLES], cardinal DE LORRAINE », et de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monseigneur le duc de Montmorency,... D'Amboyse, le XXVe jour de fevrier 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e149');">3 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monseigneur le duc de Montmorency,... D'Amboyse, le XIXe jour de mars 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e170');">4 Lettre d'ANNE DE « MONTMORENCY,... à monsieur le duc de Guyse,... A Orleans, ce XXIIe de janvier 1562 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e196');">5 Lettre du duc DE NEMOURS, « JAQUES DE SAVOYE,... à monseigneur de Momorancy, marechal de France ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e224');">6 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le connestable... D'Amboyse, ce XXVe jour de fevrier 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e250');">7 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Amboyse, le XIXe jour de mars 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e281');">8 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monseigneur le marechal de Montmorency,... Du camp de Messac, le dernier jour de janvier 1562 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e304');">9 « Double de la lectre escripte aulx courtz de parlement, bailly et seneschaulx... pour le regard des sedicieux », lors de la conjuration d'Amboise.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e332');">10 Lettre d'ODET DE COLIGNY, « cardinal DE CHASTILLON,... à monseigneur le duc de Montmorency,... D'Amboise, ce XXVe fevrier 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e363');">11 Lettre d'ODET DE COLIGNY, « cardinal DE CHASTILLON,... à monseigneur le duc de Montmorency,... D'Amboise, ce dernier fevrier 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e391');">12 Lettre de GASPARD DE COLIGNY, amiral DE « CHASTILLON,... à monseigneur le duc de Montmorency,... D'Amboise, ce premier jour de mars 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e414');">13 Lettre, sans date ni signature, concernant « le seigneur Pierre Strossy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e442');">14 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le connestable... A Amboise, ce XXVIIIme jour de mars 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e468');">15 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monseigneur de Dampville,... A Villiers Costeretz, le VIe jour de septembre 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e494');">16 « Departement des compaignyes de la gendarmerye... Faict à Chantilly, le VIe jour d'avril, l'an mil V.C. cinquante neuf ». Signé : « Montmorency ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e523');">17 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... Au Plessis de Tours, le XIXe jour d'avril 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e549');">18 Lettre du roi « FRANÇOYS » II au « sire de Dampville,... A Chinon, le VIe jour de may 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e575');">19 Lettre de « CATERINE » DE MEDICIS au « sire de Montmorency,... De Sainct Germain en Laye, le XXVIIe jour de juillet 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e601');">20 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Fontainebleau, le dernier jour de juillet 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e624');">21 Lettre de « C[HARLES], cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... A Fontainebleau, le dernier jour de juillet 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e647');">22 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Villeneufve St George, le VIIIe jour de septembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e676');">23 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... A Villeneufve St George, le VIIIe jour de septembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e705');">24 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A St Germain en Laye, le XXVIIe jour de septembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e734');">25 Lettre du roi « FRANÇOYS [II]... à... la connestable, duchesse de Montmorency,... A St Germain en Laye, le XXVIIe jour de septembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e768');">26 Lettre de « C[HARLES], cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... A St Germain en Laye, le XXVIIe jour de septembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e802');">27 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... De Madrit, le Xme jour d'octobre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e833');">28 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... A Thorye, le XVe jour d'octobre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e864');">29 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... De Thoury, le XVe octobre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e895');">30 Lettre du roi « FRANÇOYS » II aux « cardinal de Chastillon et duc de Montmorency,... A Orleans, le XXIIIIe jour de octobre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e926');">31 Lettre de « CATERINE » DE MEDICIS aux « cardinal de Chastillon et duc de Montmorency,... A Orleans, le XXIIIe jour de octobre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e957');">32 Lettre de « ROBERTET,... à monseigneur le duc de Montmorency,... D'Orleans, ce XXIIIIe jour d'octobre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e993');">33 Lettre du « baillyf de Dijon, HUGUES LE MARLET,... à monseigneur de La Rochepot,... A Dijon, le vingt septiesme jour d'octobre mil cinq cens soixante ». Imprimé, avec signature autographe.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1026');">34 Lettre de « CATERINE [DE MEDICIS]... à... monseigneur le connestable... D'Orleans, ce XXVIIIe jour de novembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1057');">35 Lettre de « C[HARLES], cardinal DE LORRAINE », et de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... A Orleans, le XXIIIIe jour de octobre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1088');">36 Lettre du roi « FRANÇOYS » II au « Sr de Dampville,... A Orleans, le XXVe jour de octobre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1122');">37 Lettre de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le connestable... D'Orleans, ce XIIIe jour de novembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1153');">38 Lettre de « C[HARLES], cardinal DE LORRAINE », et de « FRANÇOYS DE LORRAINE [duc DE GUISE]... à monsieur le duc de Montmorency,... D'Orleans, ce XXVIIIe jour de novembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1179');">39 Lettre de « ROBERTET,... à monseigneur le duc de Montmorency,... D'Orleans, ce XIIIe jour de novembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1210');">40 Arrêt du roi « FRANÇOYS » II concernant le « proces de messire Loys de Bourbon, prince de Condé... Faict à Orleans, le vingtme jour de novembre, l'an mil cinq cens soixante ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1241');">41 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le conestable ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1264');">42 Nouvelles de la cour de France.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1292');">43 Lettre de « CATERINE [DE MEDICIS]... à... monsyeur le conestable ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1315');">44 Bref, en italien, de « PIUS papa IIII,... Annae, regni Franciae conestabili... Di Roma, a li otto de genaro 1561 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1343');">45 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le connestable ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1366');">46 Lettre de « SAINCT ANDRE,... à monseigneur le duc de Montmorency,... A Sainct Germain, ce XXVIe febvrier » 1560.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1397');">47 Mémoire contre « la deliberation prinse de donner audiance publicque en plain parlement à ceulx qui veulent faire leur plaincte ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1425');">48 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... D'Orleans, le XIIIe jour de novembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1451');">49 Lettre du roi « FRANÇOYS » II au « duc de Montmorency,... D'Orleans, ce XIXe jour de novembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1477');">50 Lettre de « CATERINE » DE MEDICIS au « duc de Montmorency,... A Orleans, le cinqme jour de decembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1503');">51 Lettre d'« E[MMANUEL] PHILIBERT [duc DE SAVOIE]... à... monsieur le duc de Montmorency,... De Thurin, le VIIe de juillet 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1534');">52 Ordonnance « de par le roy et monseigneur le conte de Villars,... lieutenant general de Sa Majesté en ce païs et gouvernement de Languedoc », contre ceux qui favorisent les « ministres predicantz de Geneve ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1557');">53 Lettre de « SAINCT ANDRE,... à monseigneur le duc de Montmorency,... De Bloys, ce XVIIe de novembre » 1559.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1588');">54 « Coppie de lettre missive envoyée au roy de Navarre de la part de monseigneur le connestable... De Paris, ce XXVIe septembre » 1560.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1614');">55 Lettre de « C[HARLES], cardinal DE LORRAINE,... à monsieur le duc de Montmorency,... De Trente, ce XXIIIIe novembre 1562 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1640');">56 Lettre, en italien, du « cardinale DI SERMONETO,... a... monsor il connestabil di Franza... Di Roma, il di XVIIII di novembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1666');">57 Lettre, en espagnol, de « RUY GOMEZ DE SILVA,... conte DE MELLITE », au « condestable de Francia... De Toledo, a XXVIII de majo 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1689');">58 Bref, en italien, de « PIUS papa IIII,... Annae, regni Franciae connestabili... Romae, die XXVIII julii M.D.LX° ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1712');">59 Lettre, en espagnol, « del duque DE ALVA al... monseigneur de Momoranci,... Di Madrid, a primero de enero 1561 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1735');">60 Lettre de « SAINCT ANDRE,... à monseigneur le duc de Montmorency,... De Villiers Costeretz, ce VIIe jour de septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1761');">61 Lettre, en espagnol, de « RUY GOMEZ DE SILVA [comte DE MELITO]... al... señor el condestable de Francia... De Madrid, a VII de hebrero 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1784');">62 Lettre au roi des « depputés des eglises... qui desirent vivre selon la pureté de l'Evangille ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1802');">63 Fragment d'une lettre, sans adresse ni signature, sur la cour de France. « Faict à Paris, le XIXe jour de septembre 1563 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1823');">64 Lettre des « prevostz, conseillers et senateurs d'Ausbourg, Noremberg et Ulme... à... monseigneur Anne de Montmorency ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1841');">65 Lettre du comte DE « VILLARS,... à monsigneur le duc de Montmorenci,... De Beocayre, ce 12 d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1849');">66 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Aigues Mortes, ce XVe novembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1860');">67 Mémoire en chiffre « du XIIe decembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1871');">68 « Double de ce que MARILLAC a escript à monseigneur le connestable » Anne de Montmorency.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1889');">69 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Percigny, ce premier jour de decembre 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1897');">70 Poésies françaises touchant l'assemblée des prélats à Poissy, en 1561.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1981');">71 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Lyon, le VIIIme jour de fevrier 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e1992');">72 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Aigues Mortes, le XIe novembre 1560 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049620_d0e2003');">73 Lettre du comte DE « VILLARS,... à monseigneur le duc de Montmorency,... A Montpellier, le XVIIIme jour de novembre 1560 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,590 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000058099">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000058099">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4925-5232</div>
+					<h1>Français 5109
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000058099_info">Informations bibliographiques</a></div><div class="niv0"><div class="withoutChild"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058099">Français 5109 • Regius 9719(3) • Registre du procès criminel du connétable de Bourbon</a></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 5109 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc58099s&Cote=Français 5109&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b105206411">Consulter le document numérisé</a></li></ul><ul class="listeLiens"></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 5109 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Regius 9719(3)</div>
+<div class="did-unitid">Ancienne cote : Colbert 2548</div>
+<div class="did-label">
+<div class="did-unittitle">
+<emph render="italic">Registre du procès criminel du connétable de Bourbon</emph>
+</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle (entre mai 1528 et juillet 1535)</div>
+<div class="divdid">Paris<br/>
+<br/>Copié dans une écriture de chancellerie par <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb17793230d" class="hrefLink ext">Nicolas de Malon</a>.  <br/>Enluminé par un artiste du <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb17792267h" class="hrefLink ext">Groupe Colaud</a>. Frontispice et page à encadrement.<br/>Parchemin, A+485 ff. (foliotés de 1 à 484, présence d'une 228bis), 325 x 260 mm (just. 230 x 170 mm).<br/>41 cahiers : 1 cahier de 2 ff. (n.f.-A), 19 cahiers de 12 ff. (1-228), 1 cahier de 12 ff. (228bis-239), 19 cahiers de 12 ff. (240-467), 1 cahier de 17 ff. (468-484 ; deux cahiers de 4 ff. (471-474) et 6 ff. (475-480) insérés dans un cahier de 7 ff.), précédés de deux gardes de parchemin et suivis d'une garde de parchemin.<br/>Traces de réclames. Signatures. <br/>Foliotation d'origine à l'encre noire en chiffres romains, complétée par la suite.<br/>Réglure mixte à la pointe sèche et mine de plomb.<br/>Reliure de maroquin rouge aux armes Colbert, tranches dorées, XVII<emph render="super">e</emph> siècle.<br/>Reliure restaurée en 2014 : restauration des coins, des coiffes, des chants et des attaches de nerfs ; réfection à l'identique des tranchefiles, sur septain (dossier BnF-ADM-2014-106617-01).<br/>Estampille de la Bibliothèque royale avant 1735 (modèle Josserand-Bruno, n° 5).</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b105206411" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b105206411.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b105206411.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>Réalisé pour le chancelier <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb149599259" class="hrefLink ext">Antoine Duprat</a> (armes au f. 1 : <emph render="italic">D'or, à la fasce de sable, accompagnée de trois trèfles de sinople, deux en chef et un en pointe</emph>, surmontées d'un chapeau de cardinal) ; <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12428884j" class="hrefLink ext">Jean-Baptiste Colbert</a> ; entré en 1732 avec les manuscrits de celui-ci ; ancien fonds royal.</p>
+</span>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>
+<emph render="bold">Contient</emph> : <br/>F. Av : Frontispice représentant <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb120127827" class="hrefLink ext">François I<emph render="super">er</emph>
+</a> présidant un lit de justice. Architecture portant les armes des douzes pairs de France. Armes de France couronnées et ceintes du collier de l'ordre de Saint-Michel sur la base de celle-ci. <br/>F. 1 : Page de titre : "Registrum processus criminalis ac aliarum expeditionum in suprema parlamenti curia agitatarum contra et adversus Carolum de Borbonio factum fuit per me Nicolaum Malon, notarium et secretarium regis, necnon sue dicti parlamenti curie grapharium criminalem, locorum et dominiorum d'Othis et de Bercy dominum, sub illustrissimo et excellentissimo principe Francisco, Francorum rege, anno Domini millesimo quingentesimo vigesimo septimo". Encadrement portant les armes du chancelier Duprat.<br/>F. 1-477 : Texte du procès. Commence par : "Le quinziesme jour d'aoust, l'an mil cinq cens vingt trois, au lieu de Clery [...]". Finit par : "[...] et le tout selon et en ensuyvant les lectres du roy". S'achève avec une miniature représentant le roi entouré de six pairs.<br/>F. 477v-484 : Table, signée par le notaire "Malon" [Nicolas de Malon].</p>
+<p>Le procès du connétable <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb124575785" class="hrefLink ext">Charles III de Bourbon</a> se déroula de 1523 à 1527. La conclusion, présente dans le manuscrit, ne fut rendue qu'en mai 1528, ce qui nous donne un <emph render="italic">terminus post quem</emph> pour la copie de celui-ci. Le <emph render="italic">terminus ante quem</emph> est donné par la mort du commanditaire du volume, le chancelier Antoine Duprat, en juillet 1535.</p>
+<p>Une autre copie du texte, sur papier, est conservée sous la cote <a title="Consulter ce document" target="_blank" href="/ead.html?id=FRBNFEAD000058097" class="hrefLink">Français 5107</a>.</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">Fichier Avril</p>
+</div>
+<div class="description-part">
+<span>
+<p>
+<a title="Consulter ce document" bib="2" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b100005084/f483" class="hrefLink ext">Consulter la fiche numérisée (Français 5109)</a>
+</p>
+<p>Le <a title="Consulter ce document" target="_blank" href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc94835t" class="hrefLink ext">fichier Avril</a> a été constitué entre 1968 et les années 1990 par François Avril, conservateur au département des Manuscrits, à partir d’un examen systématique des manuscrits des fonds latin, français (et partiellement N.A.F.) et italiens, dans la perspective de l’élaboration d’un catalogue scientifique des manuscrits enluminés de la BnF.  Cette documentation de travail est tenue à jour et complétée jusqu'en 2003.</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">Catalogues :</p>
+</div>
+<div class="description-part">
+<span>
+<p>
+<emph render="italic">Catalogue des manuscrits français</emph>, t. 4, <emph render="italic">Ancien fonds, n<emph render="super">os</emph> 4587-5525</emph>, Paris, 1895, p. 562.</p>
+<p>Camille Couderc, <emph render="italic">Bibliothèque nationale. Album de portraits, d’après les collections du département des Manuscrits</emph>, Paris, [1908], pl. 91.</p>
+<p>Myra D. Orth, <emph render="italic">Renaissance Manuscripts. The Sixteenth Century</emph>, Londres, 2015, t. 2, n° 33.</p>
+</span>
+</div>
+</div>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">Etudes : </p>
+</div>
+<div class="description-part">
+<span>
+<p>Bernard de Montfaucon, <emph render="italic">Les Monumens de la monarchie françoise</emph>, t. 4, Paris, 1732, double page entre les p. 240 et 241.</p>
+<p>Léopold Delisle, <emph render="italic">Le Cabinet des manuscrits de la Bibliothèque impériale</emph>, t. 2, Paris, 1874, p. 396.</p>
+<p>Roger Doucet, <emph render="italic">ÉEude sur le gouvernement de François I<emph render="super">er </emph>dans ses rapports avec le Parlement de Paris</emph>, t. 1, Paris,1921, p. 255-256.</p>
+<p>Astrik L. Gabriel, "An Unknown illuminated page from the statutes of the Order of Saint Michael in the Ambrosiana Library in Milan", dans Francis R. Swietek et John R. Sommerfeldt (dir.), <emph render="italic">Studiosorum speculum. Studies in honor of Louis J. Lekai</emph>, Kalamazoo, 1993, p. 116.</p>
+<p>Vincent J. Pitts, <emph render="italic">The man who sacked Rome. Charles de Bourbon, constable of France, 1490-1527</emph>, New York, 1993, p. 532 et 583.</p>
+<p>Elizabeth A. R. Brown et Richard C. Famiglietti, <emph render="italic">The "Lit de justice". Semantics, ceremonial, and the Parlement of Paris, 1300-1600</emph>, Sigmaringen, 1994, p. 61-64, 68 et 129.</p>
+<p>Marie-Blanche Cousseau, "Les <emph render="italic">Mémoires</emph> de Philippe de Commynes du musée Thomas Dobrée de Nantes : un manuscrit parisien du début du règne de François I<emph render="super">er</emph>", <emph render="italic">Bulletin de la Société archéologique et historique de Nantes et de Loire-Atlantique</emph>, t. 138, 2003, p. 136.</p>
+<p>Philippe Hamon, "François I<emph render="super">er</emph> ou  la mise en scène du pouvoir", dans Bruno Petey-Girard et Magali Vène (dir.), <emph render="italic">François I<emph render="super">er</emph>. Pouvoir et image</emph>, cat. exp., Paris, BnF, 24 mars-21 juin 2015, Paris, 2015, p. 138-139.</p>
+<p>Marie-Blanche Cousseau, <emph render="italic">Étienne Colaud et l'enluminure parisienne sous le règne de François I<emph render="super">er</emph>
+</emph>, Tours / Rennes, 2016, p. 21, 25, 84, 95, 167-168, 169, 171, 172, 210, 213, 215, 218, 221 et 227.</p>
+<p>Maxence Hermant, <emph render="italic">François I<emph render="super">er</emph>. Roi chevalier, roi mécène</emph>, Paris, 2025, p. 89.</p>
+</span>
+</div>
+</div>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">Expositions : </p>
+</div>
+<div class="description-part">
+<span>
+<p>Pierre Gasnault et Jeanne Veyrin-Forrer, <emph render="italic">Guillaume Budé</emph>, cat. exp., Paris, BN, 5-20 avril 1968, Paris, 1968, n° 88 [sous la cote erronée Français 1509].</p>
+<p>Bruno Petey-Girard et Magali Vène (dir.), <emph render="italic">François I<emph render="super">er</emph>. Pouvoir et image</emph>, cat. exp., Paris, BnF, 24 mars-21 juin 2015, Paris, 2015, n° 114.</p>
+</span>
+</div>
+</div>
+</span>
+</div>
+</div><div class="processinfo-class">
+<div class="label-part">
+<p class="processinfo-label">Informations sur le traitement</p>
+</div>
+<div class="description-part">
+<span>
+<p>Notice rédigée par Maxence Hermant (février 2019 ; mise à jour en juin 2026)</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb124575785" class="hrefLink ext">Connétable de Bourbon</a>
+</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<br/>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

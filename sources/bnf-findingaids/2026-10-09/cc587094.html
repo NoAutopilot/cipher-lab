@@ -1,0 +1,516 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000058709">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000058709">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 5573-5894</div>
+					<h1>Français 5761
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000058709_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709">Français 5761 • Anc. 10332(3) • Recueil de copies de lettres et de pièces concernant.</a><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e173">1 Négociations entre François Ier et Henri VIII pour plusieurs points, savoir : le « Fait des Souysses », le « Fait d'Escosse », l'« Article où nostre sainct père [Léon X], l'empereur [Maximilien I] et le roy catholicque [Charles-Quint] sont contrahans avec » le roi François Ier « et le roy d'Angleterre » Henri VIII, et enfin le mariage de François, premier dauphin, avec Marie, princesse d'Angleterre, fille de Henri VIII et de Catherine d'Aragon.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e185">a « Voiage d'Angleterre, pour le mariage de monseigneur le Daulphin, partant d'Angiers monseigneur l'admiral Bonnyvet le dernier juillet 1518 ». Deux lettres du roi FRANÇOIS Ier à Guillaume Gouffier, amiral de Bonnyvet. Ancenis, 3 et 9 août 1518. (Fol. 5). Lettre de GUILLAUME GOUFFIER, amiral DE BONNYVET, audit roi François Ier. Paris, 24 août 1518. (Fol. 5-6). Cinq lettres de GUILLAUME GOUFFIER [amiral DE BONNYVET] et de FRANÇOIS DE ROCHECHOUART, seigneur DE CHANDENIER, au roi François Ier. Paris, 30 août; Abbeville, 5 septembre; Montreuil, 7 septembre; Calais, 15 septembre; Sandwich, 18 septembre 1518. (Fol. 6-11). Lettre du roi FRANÇOIS Ier à l'amiral de Bonnyvet, Etienne Poncher, évêque de Paris, Fr. de Rochechouart, Sr de Chandenier, Nicolas de Neufville, Sr de Villeroy, chargés sous la direction de l'amiral de Bonnyvet, de négocier auprès de Henri VIII et du cardinal d'York les articles énoncés plus haut. Morlaix, 24 septembre 1518. (Fol. 11-12). Lettre desdits négociateurs aud. roi François Ier. Greenwich, 8 octobre 1518. (Fol. 12). Lettre du roi FRANÇOIS Ier auxdits sieurs. « Au Plessis du Ver », le 14 octobre 1518. (Fol. 13-14). « Promesse faicte au roy et royne d'Angleterre, par monseigneur l'admiral pour le mariage de monseigneur le Daulphin et madame la princesse d'Angleterre ». Londres, 2 octobre 1518. (Fol. 14). « Autre promesse des roy et royne d'Angleterre sur ledit mariage ». Londres, 2 oct. 1518. (Fol. 14-15). « Promesse et serment pour l'entretenement du traité de paix, unyon et amytié faictz et concludz aud. voyage » par lesdits négociateurs au nom du roi François Ier. (Fol. 15). Lettre de l'amiral DE BONNYVET et du Sr DE CHANDENIER au roi François Ier. Montreuil, 17 oct. 1518. (Fol. 16-17). Lettres dudit roi auxd. amiral, évêque de Paris, Srs de Chandenier et de Villeroy. Montgeoffroy, 20 octobre 1518. (Fol. 17). Lettre dud. roi à l'amiral de Bonnyvet « particulierement ». Même date. (Fol. 18). Lettre dud. amiral aud. roi. Paris, 28 oct. 1518. (Fol. 18-19).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e227">b « Autres lectres particulières depuis le retour dud. voiage et durant et auparavant icelluy ». Du cardinal d'York, THOMAS WOLSEY, au roi François Ier. Hamptoncourt, 18 août 1518. (Fol. 20). De l'évêque de Paris ET. PONCHER et de N. DE VILLEROY à l'amiral de Bonnyvet. Londres, 3 septembre 1518. (Fol. 20-21). De LOUISE DE SAVOIE, mère de François Ier, à l'amiral de Bonnyvet, pour lui annoncer la mort de la fille aînée dudit roi, appelée Louise comme sa grand'mère. Au Plessis du Ver, 6 octobre 1518. (Fol. 21 v°). Du roi d'Espagne, CHARLES-QUINT, au roi François Ier, touchant la mort de ladite princesse Louise, qui lui était promise en mariage. Saragosse, 30 septembre 1518. (Fol. 22). Du même au « grant maistre » de France, Artus de Gouffier, Sr de Boisy. Même sujet. S. d. (Fol. 22 v°). De l'amiral DE BONNYVET au cardinal d'York. Montreuil, 18 octobre 1518. (Fol. 23). Dudit cardinal audit amiral. Westminster, 10 novembre 1518. (Fol. 23-25). Du roi FRANÇOIS Ier audit cardinal. S. d. (Fol. 25-26).</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e248">2 Négociations entre les agents du roi François Ier et le cardinal d'York, concernant la préparation de l'entrevue des rois de France et d'Angleterre près d'Ardres : « Article d'unes lectres escriptes par monseigneur l'admiral [DE BONNYVET] à monseigneur le duc de Suffort, pour la première vue d'Ardre ». Blois, 5 décembre 1519. (Fol. 30.) « Lectres de monseigneur l'admiral [DE BONNYVET] à monseigneur de La Bastye, ambassadeur pour le roy en Angleterre ». Le 6 janvier 1519-1520. (Fol. 30-32.) « Lectres de mond. seigneur l'admiral [DE BONNYVET] à monseigneur le cardinal d'Yort, legat et chancelier d'Angleterre... A Congnac, le 20e fevrier » 1519-1520. (Fol. 32.) « Autre lectre de mondict Sr l'admiral [DE BONNYVET] à mondict Sr le cardinal d'Yort... A Congnac, le 23e de feuvrier » 1519-1520. (Fol. 32-33.) « Autres lectres de mondict seigneur l'admiral [DE BONNYVET] à mondict Sr le cardinal d'Yort... Le 13e mars » 1519-1520. (Fol. 34-35.) « Double des lectres de monseigneur l'admiral [DE BONNYVET] à monseigneur le cardinal d'Yort... A Bloys, le VIIme jour d'avril 1519-[1520], veille de Pasques ». (Fol. 35-36.) « Autres lectres de mond. seigneur l'admiral [DE BONNYVET] aud. cardinal d'Yort... A Bloys, le 8e jour d'avril [1520], jour de Pasques ». (Fol. 36-37.) « Autre double de lectres du roy [FRANÇOIS Ier] à monseigneur le mareschal de Chastillon,... A Chambort, le 20e jour d'avril 1520 ». (Fol. 37-38.) « Articles pour l'entreveue du roy [François Ier] et du roy d'Angleterre [Henri VIII], faicte à Ardre en l'an 1520... Fait à Londres, le XIIme jour de mars, l'an 1519 »-1520. (Fol. 39-42.) « Double d'aucunes lectres du roy [FRANÇOIS Ier] à monseigneur de La Bastye, son ambassadeur en Angleterre, pour l'affaire de lad. veue ». (Fol. 42-43).</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e296">3 Recueil des négociations « pour le faict de l'empire » recherché par François Ier contre Charles, roi d'Espagne, le futur Charles-Quint, après la mort de l'empereur Maximilien Ier. « Instruction... à ceulx qui vont devers le conte palatin. Messieurs Cordier, conseiller du roy en son grant conseil, et le Sr de La Motheaugroing, l'un des gentilz hommes de la maison dud. Sr, lesquels le roy envoye par devers son très cher et très amé cousin le conte palatin du Rin, prince et electeur de l'empire, après avoir baillé les lectres de creance que led. Sr luy escript, diront par icelles ce qu'il s'ensuit... ». (Fol. 46-50.) « Chiffres desquelz l'on a usé durant le voiage d'Allemagne, faict pour l'empire, deppartiz ainsi qu'i s'ensuit : A monseigneur Cordier et Sr de La Motheaugroing,... A monseigneur de Langjac,... à monseigneur de La Vernade, devers monseigneur de Treves,... Baillé à monseigneur de Lorraine, monseigneur d'Orval, monseigneur de Bazoges, Savonnières, Chasteaubrehant et Salviati, à monseigneur le tresorier Robertet,... à monseigneur de La Guische,... Joachin de Moltzau, devers le marquis de Brandebourg,... Tavannes et de Surie, pardevers le duc de Saxe,... le grant archedyacre de Sens, devers le legat qui est en Allemaigne... maistre François de Bourdeaulx, devers le marquis de Brandebourg ». (Fol. 50-53).</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e320">Fol. 54-102 • a « Lectres du roy [FRANÇOIS Ier] durant ledict voiage » à Jean d'Albret, seigneur d'Orval, Guillaume Gouffier, Sr de Bonnyvet, amiral de France, et au président Guillard, chargés de diriger lesdites négociations, à Luneville, Trèves, Sierck, Nancy, S. Nicolas, Dieuse, Coblenz, depuis le 7 février jusqu'au 5 juillet 1519. Lesdites lettres sont datées de Paris, du 7 février au 12 mars ; du Port de Marly, du 12 au 14 mars ; de S. Germain en Laye, du 19 mars au 21 avril ; de Vincennes, le 25 avril ; de s. Germain en Laye, du 27 avril au 28 mai ; de l'Isle Adam, le 17 juin ; de Melun, le 26 juin ; de S.-Germain en Laye, le 5 juillet 1519. Il s'en trouve une (fol. 77 v°) adressée au pape Léon X, entre le 2 et le 5 avril 1519.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e334">Fol. 104-172 • b « Responces au roy durant ledict voyage » par lesdits négociateurs. Ces réponses sont datées de Lunéville, du 10 février au 9 mars ; de Trèves-Sierck, le 15 mars ; de Lunéville, du 20 mars au 28 mars ; de Nancy, du 1er au 28 avril ; de Lunéville, du 29 avril au 7 mai ; de Dieuse, le 10 mai ; de Coblentz, du 14 mai au 29 juin ; de Nancy, du 4 au 18 juillet 1519.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e345">Fol. 173-179 • c « Voiage d'Allemaigne pour l'empire. A plusieurs Srs particuliers » : Au « cappitaine Francisque »; au frère du comte palatin du Rhin ; à Louise de Savoie ; à « monseigneur Cordier », avant Pàques 1520 ; « au duc Federic de Bavyère »; au comte palatin du Rhin, « à Rucelsen, le jour St Jehan Baptiste » ; au même, « à Rucelsen, le jour de juing » ; « au chancellier du conte Palatin ». Les lettres qui précèdent sont de l'amiral DE BONNYVET. Les deux qui suivent sont de JEAN D'ALBRET, sire D'ORVAL, et dudit amiral ensemble, la première au comte palatin, la seconde à son chancelier, toutes deux datées de « Château Salins, le 15e jour de juillet 1519 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e362">Fol. 183-200 • 4 Négociations de l'année 1522.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e409">Fol. 205-209 • 5 Lettres écrites par le roi FRANÇOIS Ier, « durant le voiage que feirent à Noyon messieurs le grant maistre » de France, Artus Gouffier, « de Boisy, [Etienne Poncher, évêque] de Paris, et [Jacques] Olivier [président au parlement de Paris], où se trouvèrent les depputez du roy catholic » le futur empereur Charles-Quint, concernant entre autres articles le mariage dudit empereur, alors roi d'Espagne, et désigné sous l'appellation de Roi catholique, avec Louise, fille du roi François Ier, la paix avec l'empereur Maximilien, les Vénitiens et la Navarre. Briare, 4 août; Saint Laurent des Eaux, 7 août; le Plessis lez Tours, 11 août 1516.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e426">6 Affaires diverses durant les années 1517-1524.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e432">Fol. 210-213 • a « Double d'une lectre du roy FRANÇOIS Ier à monseigneur le grant maistre de Rhoddes » relative au « plaisir et grant contentement que vous avez fait à monseigneur de Sainct Gilles, tant en son arrivée à Roddes que depuis ; de quoy et de ce que l'avez pourveu de l'isle du Langoust... je vous mercye de bon cueur... A Bloys, le 18e jour de novembre » 1519. « Autre double des lectres de monseigneur le tresorier ROBERTET [FLORIMOND] à monseigneur de Saint Gilles,... A Bloys, le 12e de decembre 1519 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058709_d0e449">Fol. 210-222 • b « Lectres de madame [LOUISE DE SAVOIE] au pappe Léon [X] pour la continuation et entrete[ne]ment de l'amytié d'entre sa saincteté et le roy [François Ier]. A La Fère, le 8e jour de juing 1517 ». Autre lettre de la même au même. Paris, 31 janvier 1518-1519. Lettre de FRANÇOIS Ier audit « pappe, pour la continuacion de la legacion de monseigneur le legat [Adrien Gouffier],... cardinal de Boisy, legat à latere » par tout le royaume. « Escript à Monstreul, le 23e jour de may » 1519. « Double des lectres de monseigneur l'admiral [DE BONNYVET] à monseigneur de Lenssac, ambassadeur pour le roy devers le roy catholicque... A Bloys, le 23e jour de novembre... [1]519 ». Autre lettre intitulée : « Double d'une lectre escripte à monseigneur de Lorrayne par monsieur l'admiral [DE BONNYVET]... A Bloys, le 13e d'avril 1521 ». Autre lettre intitulée : « Double d'une lectres de madame [LOUISE DE SAVOIE] au pappe par Me Mathée, son dataire, qui vint devers le roy, estant devant Pavye [1]524 ». Lettre de LOUISE DE SAVOIE à l'ambassadeur de France à Rome. « A Sainct Just sur Lyon, le 23e jour de novembre. Vostre bonne cousine Loyse ». Et puis : « Robertet ». 1524. Lettre de LOUISE DE SAVOIE à « Me Mathée ».</a></div></div></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 5761 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc587094&Cote=Français 5761&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b52510561g">Consulter le document numérisé</a></li></ul><ul class="listeLiens"></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 5761 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 10332(3)</div>
+<div class="did-unitid">Ancienne cote : de La Mare 169</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de copies de lettres et de pièces concernant.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.223 feuillets cotés 1-223. Les feuillets 1-3 sont occupés par une table sommaire du contenu, Les feuillets 4, 27-29, 44, 45, 103, 180-182, 201-204, 223 sont blancs. Il y a 2 feuillets de garde, l'un en tête, l'autre à la fin, lesquels sont également blancs.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original : Français 5761.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b52510561g" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b52510561g.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b52510561g.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Albret, Jean d', comte de Nevers et de Rethel, sieur d'Orval. • Actes et lettres.</p>
+<p>Angleterre. • Notes et pièces diverses (XVIe s.).</p>
+<p>Ardres. • Entrevue de 1520.</p>
+<p>Bonnivet, Guillaume de Gouffier, sieur de, amiral de France. • Actes et lettres.</p>
+<p>Calais. • Négociations sous François Ier.</p>
+<p>Charles V, ou Charles-Quint, empereur d'Allemagne. • Actes et lettres.</p>
+<p>Charles V, ou Charles-Quint, empereur d'Allemagne. • Pièces diverses.</p>
+<p>Clément VII, pape. • Élection.</p>
+<p>François Ier, roi de France. • Actes et lettres.</p>
+<p>François Ier, roi de France. • Diplomatie et affaires extérieures.</p>
+<p>François Ier, roi de France. • Diplomatie et affaires extérieures, comparaison avec l'Empire (Candidature).</p>
+<p>François Ier, roi de France. • Diplomatie et affaires extérieures, relations avec l'Angleterre.</p>
+<p>Gouffier, Arthus, seigneur de Boissy, duc de Roannais. • Négociations avec les députés de Charles-Quint.</p>
+<p>Guillart, Le Président Charles. • Lettres.</p>
+<p>Henri VIII, roi d'Angleterre. • Relations, avec François Ier.</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12214255s" class="hrefLink ext">Louis XII</a>
+</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12515579c" class="hrefLink ext">Louise de Savoie</a>
+</p>
+<p>Poncher, Étienne de, évêque de Paris. • Lettres.</p>
+<p>Robertet, Florimond, secrétaire des finances. • Actes et lettres.</p>
+<p>Rochechouart, François de, marquis de Chandenier, sénéchal de Toulouse. • Lettres.</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+<p>Wolsey, Thomas, cardinal d'York. • Lettres.</p>
+<p>Wolsey, Thomas, cardinal d'York. • Négociations avec François Ier.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000058709_d0e173');">1 Négociations entre François Ier et Henri VIII pour plusieurs points, savoir : le « Fait des Souysses », le « Fait d'Escosse », l'« Article où nostre sainct père [Léon X], l'empereur [Maximilien I] et le roy catholicque [Charles-Quint] sont contrahans avec » le roi François Ier « et le roy d'Angleterre » Henri VIII, et enfin le mariage de François, premier dauphin, avec Marie, princesse d'Angleterre, fille de Henri VIII et de Catherine d'Aragon.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058709_d0e248');">2 Négociations entre les agents du roi François Ier et le cardinal d'York, concernant la préparation de l'entrevue des rois de France et d'Angleterre près d'Ardres : « Article d'unes lectres escriptes par monseigneur l'admiral [DE BONNYVET] à monseigneur le duc de Suffort, pour la première vue d'Ardre ». Blois, 5 décembre 1519. (Fol. 30.) « Lectres de monseigneur l'admiral [DE BONNYVET] à monseigneur de La Bastye, ambassadeur pour le roy en Angleterre ». Le 6 janvier 1519-1520. (Fol. 30-32.) « Lectres de mond. seigneur l'admiral [DE BONNYVET] à monseigneur le cardinal d'Yort, legat et chancelier d'Angleterre... A Congnac, le 20e fevrier » 1519-1520. (Fol. 32.) « Autre lectre de mondict Sr l'admiral [DE BONNYVET] à mondict Sr le cardinal d'Yort... A Congnac, le 23e de feuvrier » 1519-1520. (Fol. 32-33.) « Autres lectres de mondict seigneur l'admiral [DE BONNYVET] à mondict Sr le cardinal d'Yort... Le 13e mars » 1519-1520. (Fol. 34-35.) « Double des lectres de monseigneur l'admiral [DE BONNYVET] à monseigneur le cardinal d'Yort... A Bloys, le VIIme jour d'avril 1519-[1520], veille de Pasques ». (Fol. 35-36.) « Autres lectres de mond. seigneur l'admiral [DE BONNYVET] aud. cardinal d'Yort... A Bloys, le 8e jour d'avril [1520], jour de Pasques ». (Fol. 36-37.) « Autre double de lectres du roy [FRANÇOIS Ier] à monseigneur le mareschal de Chastillon,... A Chambort, le 20e jour d'avril 1520 ». (Fol. 37-38.) « Articles pour l'entreveue du roy [François Ier] et du roy d'Angleterre [Henri VIII], faicte à Ardre en l'an 1520... Fait à Londres, le XIIme jour de mars, l'an 1519 »-1520. (Fol. 39-42.) « Double d'aucunes lectres du roy [FRANÇOIS Ier] à monseigneur de La Bastye, son ambassadeur en Angleterre, pour l'affaire de lad. veue ». (Fol. 42-43).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058709_d0e296');">3 Recueil des négociations « pour le faict de l'empire » recherché par François Ier contre Charles, roi d'Espagne, le futur Charles-Quint, après la mort de l'empereur Maximilien Ier. « Instruction... à ceulx qui vont devers le conte palatin. Messieurs Cordier, conseiller du roy en son grant conseil, et le Sr de La Motheaugroing, l'un des gentilz hommes de la maison dud. Sr, lesquels le roy envoye par devers son très cher et très amé cousin le conte palatin du Rin, prince et electeur de l'empire, après avoir baillé les lectres de creance que led. Sr luy escript, diront par icelles ce qu'il s'ensuit... ». (Fol. 46-50.) « Chiffres desquelz l'on a usé durant le voiage d'Allemagne, faict pour l'empire, deppartiz ainsi qu'i s'ensuit : A monseigneur Cordier et Sr de La Motheaugroing,... A monseigneur de Langjac,... à monseigneur de La Vernade, devers monseigneur de Treves,... Baillé à monseigneur de Lorraine, monseigneur d'Orval, monseigneur de Bazoges, Savonnières, Chasteaubrehant et Salviati, à monseigneur le tresorier Robertet,... à monseigneur de La Guische,... Joachin de Moltzau, devers le marquis de Brandebourg,... Tavannes et de Surie, pardevers le duc de Saxe,... le grant archedyacre de Sens, devers le legat qui est en Allemaigne... maistre François de Bourdeaulx, devers le marquis de Brandebourg ». (Fol. 50-53).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058709_d0e362');">4 Négociations de l'année 1522.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058709_d0e409');">5 Lettres écrites par le roi FRANÇOIS Ier, « durant le voiage que feirent à Noyon messieurs le grant maistre » de France, Artus Gouffier, « de Boisy, [Etienne Poncher, évêque] de Paris, et [Jacques] Olivier [président au parlement de Paris], où se trouvèrent les depputez du roy catholic » le futur empereur Charles-Quint, concernant entre autres articles le mariage dudit empereur, alors roi d'Espagne, et désigné sous l'appellation de Roi catholique, avec Louise, fille du roi François Ier, la paix avec l'empereur Maximilien, les Vénitiens et la Navarre. Briare, 4 août; Saint Laurent des Eaux, 7 août; le Plessis lez Tours, 11 août 1516.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058709_d0e426');">6 Affaires diverses durant les années 1517-1524.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

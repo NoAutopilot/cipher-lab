@@ -1,0 +1,524 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000058180">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000058180">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4925-5232</div>
+					<h1>Français 5190
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000058180_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180">Français 5190 • Anc. 9786(2) • Recueil de copies de pièces contenant les dépêches et mémoires adressés et reçus par le duc de Rohan, « lieutenant general du roy, en son armée, aux Grisons », du 19 juillet 1635 au 30 décembre 1636.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e144">Fol. 1 et 2 • 1-3 Lettres du duc DE ROHAN, envoyées « par le Sr de La Perche » et datées « du camp de Tiran, le 2e jour d'aoust 1635 : à M. Bouthillier, surintendant ;... à M. le cardinal ;... à M. Servien ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e158">Fol. 2 à 4 • 4-5 « Instructions » du roi LOUIS XIII « à M. de La Thuillerye, du 19 juillet 1635 », envoyées « par Isaac » à M. de Rohan, avec une lettre « de M. BOUTHILLIER, dud. jour ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e166">Fol. 4 • 6 « Lectre du roy [Louis XIII], dud. jour » 19 juillet 1635, au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e174">Fol. 4 à 7 • 7-10 Lettres du duc de Rohan, datées la première et la deuxième du 3 août 1635, la troisième du 9 « par le jeune La Fontan », et la quatrième du 10 août 1635, du camp de Tiran : « à M. Bouthillier le fils ;... à M. Bouthillier, surintendant ;... à M. Servien,... à M. Bouthillier, surintendant ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e182">Fol. 7 • 11 « Lectre de M. BOUTHILLIER fils... du 24 juillet ... 1635 » au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e190">Fol. 7 à 9 • 12-13 Lettres du duc de Rohan, la première « à Mrs les surintendans, du 17 aoust 1635, du camp de Tiran », la seconde « à M. Bouthillier, secrettaire d'Estat », dud. jour.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e201">Fol. 9 et 10 • 14-16 Lettres du « cardinal » DE RICHELIEU, de « M. Bouthillier, surintendant », de « M. SERVIEN », au duc de Rohan, du 26 juillet 1635.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e209">Fol. 10 à 13 • 17-20 Lettres du duc de Rohan « à M. Servien ;,... à messrs les surintendants ;... à M. Bouthillier, surintendant ». Du camp de Tiran, 20 et 25 août 1635.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e220">21-24 Lettres « du roy [Louis XIII] ;... de M. le cardinal de Richelieu] ;... du père JOSEPH ;... de M. Bouthillier ». Des 13 et 14 août 1635.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e226">Fol. 15 et 16 • 25 « Memoire du roy sur les affaires de la Valtelline... Chantilly, le 13e du moys d'aoust 1635. Signé : Louis ». Au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e237">Fol. 16 • 26-28 Lettres « du Sr DE LA BARDE ;... du roy [Louis XIII] ;... de M. DE BULLION ». Du 9 août 1635.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e248">Fol. 17 à 19 • 29-34 Lettres du duc de Rohan « au roy ;... à M. le cardinal [de Richelieu] ;... à Mrs les surintendans ;... à M. Bouthillier, secrettaire d'Estat ;... à M. Servien ;... au père Joseph,... Du 1er septembre 1635. Du camp de Tiran ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e262">Fol. 19 à 21 • 35 « Memoire au roy, touchant l'estat des affaires de ce pays... Faict au camp de Tiran, le 1er de septembre 1635 ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e273">Fol. 21 • 36 Lettre de « M. Bouthillier, surintendant, du 21 aoust 1635 », au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e281">Fol. 22 et 23 • 37 « Memoire touchant les affaires de ce pays. Du camp de Tiran, le 7e septembre 1635 ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e292">Fol. 23 et 24 • 38 Lettre « à M. Bouthillier, du 15 septembre 1635 ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e300">Fol. 24 à 26 • 39-41 Lettres de « M. Bouthillier fils ;... M. Bouthillier, secretaire d'Estat ;... M. Bouthillier fils ». 4 et 7 septembre 1635. Au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e308">Fol. 26 à 30 • 42-48 Lettres du duc de Rohan « touchant le Sr Du Landé et La Salinière : au roy ;... à M. Servien ;... au père Joseph ;... à M. de Bullion, surintendant ;... à M. Boutheiller (sic) père ;... à M. le cardinal [de Richelieu] ;... à M. de Chavigny ». Du 26 septembre 1635.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e322">49-51 Mémoires du duc de Rohan.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e328">49 « pour M. le vicomte de Melun, s'en allant en court, dud. jour 26e septembre » 1635.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e337">50 « touchant le Sr Du Landé et La Saliniere », dudit jour.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e346">Fol. 30 à 34 • 51 « touchant les empeschemens qu'on peut donner au passage des Allemands par le S. Gotard ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e354">Fol. 34 à 37 • 52-56 Lettres au duc de Rohan « du roy [Louis XIII], touchant le Sr d'Antremeaux, du 27 aoust 1635 » ; de « M. de Bullion, du 15 septembre » ; de « M. Servien, dudit jour ;... du Sr de La Barde, du 18 septembre ;... du roy, en faveur de Carlo Marin, resident pour la couronne de Suède en Suisse, du 2e juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e371">Fol. 37 à 39 • 57-60 Lettres du duc de Rohan « au roy [Louis XIII] ;... à M. le cardinal [de Richelieu] ;... à M. Bouthillier, surintendant ;... à M. de Bullion, surintendant ». Du 30 septembre 1635.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e379">Fol. 39 à 41 • 61 « Coppie de lettre de CLAUZEL, escripte de Lucerne, du 14 septembre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e392">Fol. 41 et 42 • 62-64 Lettres du duc de Rohan « à M. le cardinal [de Richelieu] ;... à Mrs les surintendans ;... à M. Servien ». Du 7 octobre 1635.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e403">65-66 Mémoires du même.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e409">63 « des choses necessaires pour ceste armée ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e415">Fol. 42 à 45 • 64 « à M. Servien,... du 7 octobre 1635 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e423">Fol. 45 et 46 • 67 Lettre du même « à M. de Bullion, surintendant, du 9e octobre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e434">Fol. 46 et 47 • 68 Lettre de « M. Bouthillier, surintendant, du 2 octobre... 1635 », au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e442">Fol. 47 à 50 • 69-74 Lettres du duc de Rohan « à Mrs les surintendans, du 19 octobre 1635 ;... à M. Bouthillier, surintendant », même date ; au même, « du 26 octobre » 1635 ; « à M. Servien », même date ; « au roy... du 5e nov. 1635 ;... à M. le cardinal », même date.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e456">Fol. 50 • 75 « Avis pour presenter à M. le cardinal » de Richelieu. 5 novembre 1635. Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e464">Fol. 50 à 52 • 76-79 Lettres du duc de Rohan « à Mrs les surintendans ;... à M. Bouthillier le filz ;... à M. Servien ;... au père Joseph ». 5 novembre 1635.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e475">Fol. 52 à 54 • 80 « Relation de ce qui s'est passé au Val de Fresle, le 31e octobre 1635 ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e486">Fol. 54 à 56 • 81-86 Lettres « du roy [Louis XIII], du 18 oct.;... de M. Bouthillier, surintendant... du 19 octobre 1635 ;... de M. le cardinal [de Richelieu], du 20 octobre ;... de M. de Bullion, surintendant, du 21 octobre ;... de Mrs les surintendans, du 21 octobre 1635 ;... du roy [Louis XIII]... du 24 oct. 1635 ». Au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e497">Fol. 56 et 57 • 87 « Memoire à M. le duc de Rohan, pair de France, lieutenant general du roy en son armée aux Grisons... Faict à S. Germain en Laye, le 26e octobre 1635. Signé : Louis ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e508">Fol. 57 et 58 • 88 Lettre de « M. Bouthillier, surintendant, du 28 octobre 1635 ». Au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e516">Fol. 58 et 59 • 89-91 Lettres du duc de Rohan « au roy... du camp de Tiran... 14 novembre 1635 ;... à M. le cardinal [de Richelieu] ;... à Mrs (sic) Bouthillier père ; à M. Bouthillier fils ; à M. Servien ; à M. de Bullion, surintendant ; au père Joseph ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e530">Fol. 59 à 61 • 92 « Relation de ce qui s'est passé en la deffaite du comte de Serbellon, le 10e novembre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e541">Fol. 61 à 63 • 93-98 « Despesche en court, par M. Lasnier, du 18e novembre 1635, du camp de Tiran » : au roi ; « à M. le cardinal ;... à Mrs les surintendans ;... à M. de Chavigny ;... à M. Servien ;... à père Joseph ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e555">Fol. 63 • 99 « Lettre du roy [Louis XIII], par la voye de M. le duc de Savoye, du dernier d'octobre, receue par le Sr de Lusançon, le 21 novembre 1635 », au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e566">Fol. 63 à 65 • 100-105 « Despeche » du duc de Rohan « en court, par le Sr de Bachevilier, du 23 novembre 1635, du camp de Tiran : au roy ;... à M. le cardinal ;... à père Joseph ;... à Mrs les surintendans ;... à M. de Chavigny ;... à M. Servien ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e580">Fol. 65 et 66 • 106 « Coppie du Memoire et instruction de M. DE SAVOYE au Sr de Lusançon, envoyé vers M. le duc de Rohan, du 10 novembre » 1635.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e591">Fol. 66 à 68 • 107 « Responce au susdit Memoire » par le duc de Rohan. « Fait au camp de Tiran, ce 23 novembre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e599">Fol. 68 et 69 • 108-109 « Despeche en court, par la voye ordinaire, du 7e decembre 1635, du camp de Tiran : à M. Servien ;... à Mrs les surintendans ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e613">Fol. 69 à 71 • 110 « Lettre de M. de Bullion par le Sr Bourguignon, du 3e novembre » 1635. Au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e627">Fol. 71 à 74 • 111-113 « Despesche en court, par la voye ordinaire, du 14e decembre 1635 : à M. de Bullion, surintendant ;... à M. Bouthillier le père ;... à M. Servien ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e638">Fol. 74 à 78 • 114-120 « Despeches de la cour, par le Sr Prioleau : Lettre du roy [Louis XIII] pour faire recognoistre M. de Lecques mareschal ... de camp... Escrit à S. Germain en Laye, le 30e nov. 1635 » ; autre « du roy, pour faire recognoistre M. de La Frezelière, mareschal de camp, dud. jour » ; autre « du roy... », datée « à S. Germain en Laye, le 5e jour de decembre 1635 » ; lettre « de M. Servien, du 4e decembre 1635 » ; autre « de M. Bouthillier père, dud. jour » ; autre « de M. Bouthillier fils, dud. jour » ; autre « du roy, du 11e decembre » 1635. Au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e661">Fol. 78 à 81 • 121 « Memoire du roy. Le Sr duc de Rohan verra par le present memoire les intentions de S. M. sur les propositions qui lui ont esté faites par le Sr de Prioleau, suivant l'ordre dudit Sr duc... Fait à S. Germain en Laye, le 3 decembre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e678">Fol. 81 à 83 • 122-124 « Despesche en court, par le Sr Gaillan, du 3e janvier 1636, du camp de Morbeigno : à M. Bouthillier ;... à M. Servien ;... au P. Joseph ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e692">Fol. 83 à 85 • 125-130 « Despesche en court par le Sr Magnan, du 5e janvier 1636, du camp de Morbeingne : au roy ;... à M. le cardinal ;... à Mrs les surintendans... à M. Servien,... à M. de Chavigny;... au père Joseph ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e709">Fol. 85 à 86 • 131 « Memoire » du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e730">Fol. 86 à 88 • 132-136 « Despeches de la court » au duc de Rohan, « apportées par le Sr de La Houdinière et receues le 10 janvier 1636 : de Mrs les surintendans, du 21 novembre 1635;... de M. Bouthillier le père, du 10e decembre » 1635; « de M. le cardinal, du 27 novembre;... de M. le cardinal, du 7 decembre;... du roy, du 10e decembre » 1635.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e750">Fol. 88 et 89 • 137 « Memoire à M. le duc de Rohan, pair de France, lieutenant general de l'armée du roy aux Grisons, du 11e decembre » 1635 : « Sa Maté a esté bien contente de veoir par la despesche dud. Sr duc, du 23e du moys passé, que M. le duc de Savoye ait pris soing de luy despescher le Sr de Luzançon, afin de concerter avec luy des moyens de faire progrez sur les ennemis dans le Milanois... ». Du roi Louis XIII.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e773">Fol. 90 • 138-140 Lettres au duc de Rohan : « de M. le cardinal, du 11e decembre 1635;... du père Joseph, du 11e decembre 1635;... du roy, du 12 decembre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e792">Fol. 91 • 141 « Memoire des choses necessaires pour la subsistance de l'armée du roy dans la Valteline. Donné par le Sr PRIOLEAU, secretaire de M. le duc de Rohan ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e803">Fol. 91 • 142 « Responces au memoire cy dessus. Pour le premier article est à considerer qu'on fait estat que l'armée est composée de 13 500 hommes, dont il y en a 7 000 Grisons et Suisses et 6 000 Françoys effectifz, ausquelz seuls convient fournir ledit pain... Fait à Paris, le 13e decembre 1635. Signé : Bullion et Bouthillier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e814">Fol. 91 et 92 • 143-144 Lettres « de M. Servien, du 12,... de Mrs les surintendans, du 13 decembre 1635 ». Au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e825">Fol. 92 et 93 • 144 bis « Instruction du roy au Sr de La Houdinière, touchant les fortiffications de la Valteline, du XIe dec. 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e839">Fol. 93 à 95 • 145 « Instruction au Sr de La Houdinière, touchant les affaires de la Valteline et du Milanois. Le roy aiant consideré combien il est important au bien de ses affaires de garentir la Valteline des continuelles entreprises des Espagnols... Fait à S. Germain en Laye, le 11e decembre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e853">Fol. 95 et 96 • 146-147 « Despesche » du duc de Rohan « en court, par M. de Canisy, du 21 janvier 1636 » : au roi; « à M. le cardinal ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e861">Fol. 96 et 97 • 148 « Memoire » du duc de Rohan, envoyé au roi « par M. de Canisy, mareschal de ses camps et armées, sur les affaires de la Valteline, et du dessein proposé pour le Milanois, du 21 janvier 1636. Les Espagnols voyans les Allemands retirez du Tirol, ont bien jugé l'importance de conserver Como et Lecco... ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e869">Fol. 97 et 98 • 149-152 Lettres du duc de Rohan : « à messrs les surintendans;... au P. Joseph;... à M. de Chavigny;... à M. Servien ». 21 janvier 1636.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e880">Fol. 98 et 99 • 153-154 Lettres au duc de Rohan : « du roy, du dernier decembre, reccue le 24 janvier 1636;... de M. de Chavigny, dud. jour ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e888">Fol. 99 et 100 • 155-156 « Despesche en court, par la voye de M. Meliand, du 26 janvier 1636, du camp de Tiran : au roy;... à M. de Chavigny ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e896">Fol. 100 à 102 • 157 « Propositions de Künig, collonel », presentées par « REGNAULT, fils du capitaine Regnault, qui commande les Suisses au fort de Barreaux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e904">Fol. 102 et 103 • 158-160 « Despesche de la court, par la voye ordinaire, du 29e decembre, receue le 28e janvier 1636 » : lettre « du roy;... coppie du memoire envoié au Sr d'Hemery, ambassadeur du roy en Piemont » ; lettre « de M. DE CHAVIGNY, dud. 29 decembre ». Au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e921">Fol. 103 et 104 • 161-162 Lettres au duc de Rohan : « de M. de Chavigny, par l'ordinaire du 7 janvier » 1636, « receue le 28;... de M. Bouthillier, du 8 janvier, receue comme devant ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e929">Fol. 104 à 109 • 163-170 « Despeche en court » du duc de Rohan « par le Sr de La Houdinière, de l'unziesme febvrier 1636 » : lettre « au roy » ; autre « à M. le cardinal ;... memoire à M. le cardinal, touchant le traitté projetté entre les Grisons et Valtelins » ; lettre « au P. Joseph » ; autre « à Mrs les surintendans » ; autre « à M. Servien » ; autre « à M. de Chavigny;... memoire des despenses necessaires pour fortiffier et munir les Grisons et la Valteline ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e943">Fol. 109 et 110 • 171-172 « Lettre, en chiffre, de M. D'EMERY, du 25e janvier, receue le 8e febvrier 1636;... Responce à M. d'Emery, par M. de Rohan ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e957">Fol. 110 • 173 Lettre du duc de Rohan « à M. le cardinal... De Chiavennes, le 11e febvrier 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e968">Fol. 110 et 111 • 174 « Despeche en court, par l'ordinaire du 15 febvrier 1636, à M. Servien ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e976">Fol. 111 • 175 « Lettre du roy, par M. Lanier, du 29 décembre 1635, receue le 25 febvrier 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e984">Fol. 111 et 112 • 176 « Lettre » du duc de Rohan « à M. le cardinal, par la voye ordinaire, du dernier febvrier 1636 ». Cette lettre est datée à la fin : « Du camp de Trabonne, le 1er de mars 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e995">Fol. 112 à 116 • 177-181 « Despesche de la court » au duc de Rohan « par Isaac, receues (sic) le 19e dud. moys » : lettre « du roy » ; autre « de M. Servien, du mesme jour » ; autre « du roy... du 2e mars 1636 » ; autre « de Mrs les surintendans, du 6e mars 1636 » ; autre « de M. de Chavigny, dud. jour ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1018">Fol. 116 à 118 • 182-186 « Despesche en court, par un courrier de M. Lanier, du 24e mars 1636 », du duc de Rohan : lettre « au roy... du camp de Trahonne » ; autre « à M. le cardinal » ; autre « à Mrs les surintendans » ; autre « à M. de Chavigny » ; autre « à M. de Noyers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1032">Fol. 118 à 120 • 187 « Despesche en court » du duc de Rohan, « par le Sr Prioleau, du 12e avril 1636 : relation du combat de La Francesque, advenu le quatriesme d'avril 1636 et jours suivans ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1046">Fol. 120 • 188-189 Lettres au duc de Rohan : « du roy, du 26 febvrier, receue le 12 avril 1636;... de M. DE NOYERS, dud. jour ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1062">Fol. 120 et 121 • 190 « Lettre à M. de Noyers, par la voye ordinaire, du 19 avril 1636 ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1070">Fol. 121 à 125 • 191-198 « Despesche en court, par Isaac, du 27 avril 1636 » : lettre « au roy » ; autre « à M. de Chavigny » ; autre « à Mrs les surintendans » ; autre « à M. le cardinal » ; autre « à M. de Noyers » ; autre « au P. Joseph » ; autre « à M. Bouthillier » ; autre « au roy, portées (sic) par les depputez de la cavalerie et de l'infanterie de l'armée du roy en Valteline ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1084">Fol. 125 et 126 • 199 « Lettre de M. Bouthillier, du 15 avril 1636 », au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1092">Fol. 126 à 129 • 200-202 Lettres du duc de Rohan : lettre « à M. Boutheiller (sic), surintendant, par la voye ordinaire, du 3 mai 1636... du camp de Trahonne » ; autre « à M. de Noyers, par la voye ordinaire, du 10e may 1636, du camp de Trahonne » ; autre « à M. le cardinal, par l'ordinaire, du 10e mai 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1109">Fol. 129 • 203 « Coppie de lettre de M. d'Emery » au duc de Rohan, « de Cazal, du 25 avril, receue le 10e may 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1120">Fol. 129 • 204 « Responce du 10e de may à la susd. lettre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1131">Fol. 130 et 131 • 205-206 « Despesche en court, par la voye ordinaire, du camp de Trahonne, le 17 may 1636 » : lettre « à M. de Noyers » ; autre « à M. Bouthillier, surintendant ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1139">Fol. 131 • 207 « Lettre de M. de Noyers, du 10e may, receue par Isaac, le 25e 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1153">Fol. 132 • 208 « Lettre de M. de Rohan à M. de Noyers, par l'ordinaire, du 28e may 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1164">Fol. 132 et 133 • 209-210 « Lettre de M. Bouthillier, par M. le vicomte de Melun, du 15e may, receue le 5e juin 1636 » ; autre « du roy, du 27e febvrier 1636, par le comte de Vineuil, receue le may 1636 ». Au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1181">Fol. 133 • 211-212 Lettre de M. le duc de Rohan « à M. de Noyers,... par la voye ordinaire, du 6° juin 1636 » ; autre du même, de même date, « à M. Bouthillier, surintendant ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1189">Fol. 133 et 134 • 213 « Relation de ce qui s'est passé au voyage que j'ay fait jusques à Lecco. M. de Savoye m'a faict sçavoir le 24e de may... ». Du duc de Rohan, qui l'adresse à M. Bouthillier, le 6 juin 1636.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1200">Fol. 134 et 135 • 214-215 Au duc de Rohan : « lettre, en chiffre, de M. de Savoye, du 27 may 1636, receue le 6 juin » ; autre, « en chiffre, de M. DE CANISY, dud. jour 27 may 1636, receue le 6 juin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1208">Fol. 135 à 141 • 216-226 Du duc de Rohan : « Responce à la despesche de M. de Savoye, du 27 may, faite le 7e juin 1636 » ; lettre « à M. de Canisy » ; autre « à M. de Savoye » ; autre « à M. d'Hemery » ; autre « à M. le cardinal... du 15e juin 1636 » ; autre « à M. de Noyers, dud. jour » ; autre « à M. Bouthillier, dud. jour » ; autre « à M. de Noyers,... du 21e juin 1636 » ; autre « à M. de Chavigny », dud. jour ; autre « à M. de Noyers,... du 27e juin 1636, du camp de Trahonne » ; autre « à M. de Chavigny », dud. jour.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1228">Fol. 141 à 145 • 227-234 « Despesche de la cour, par le Sr Priolleau », au duc de Rohan, « receues (sic) le 3e juillet 1636 » : lettre « du roy, de Fontainebleau, du 11e juin 1636 » ; autre « du roy, du 13e juin, de Fontainebleau » ; autre « du roy, du 13e juin, de Fontainebleau » ; autre « du roy, du 15, de Fontainebleau » ; autre « du roy, de Fontainebleau, le 16e » ; autre « du père Joseph, de Conflens, le 16 juin » ; autre « de M. de Noyers, de Conflens, ce 16 juin » ; autre « de M. de Chavigny, du 12 juin, de Paris ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1257">Fol. 145 • 235-236 Du duc de Rohan : lettre « à M. de Noyers,... du 6e juillet 1636, du camp de Trahonne » ; autre « à M. de Chavigny, dud. jour » et du même endroit.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1268">Fol. 145 et 146 • 237-239 « Despeche en court, par le Sr Prioleau, du 8 juillet 1636, du camp de Trahonne » : lettre « au roy » ; autre « à M. le cardinal » ; autre « au père Joseph ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1279">Fol. 146 à 148 • 240-241 Au duc de Rohan : « lettre de M. de Savoye, du 28 juin 1636, du camp du Tesin » ; autre « de M. de Hemery,... du 28 juin 1636 ». Ces lettres, dont les originaux étaient en chiffre, sont données ici déchiffrées.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1287">Fol. 148 • 242-243 Réponses du duc de Rohan aux deux letres qui précèdent. 6 juillet 1636.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1295">Fol. 148 et 149 • 244 Du duc de Rohan : « Memoire au Sr Prioleau, pour representer en court ce qui est de mes sentimens sur la depéche de M. de Savoye et de M. d'Hemery,... Fait au camp de Trahonne, ce 8 juillet 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1306">Fol. 150 et 151 • 245-249 « Depeche en court, par la voye ordinaire, du 12 juillet 1636, du camp de Trahonne » : lettre du duc de Rohan « à M. le cardinal » ; autre du même « à M. de Noyers » ; autre du même « à M. de Chavigny » ; autre, déchiffrée, « de M. de Savoye à M. de Rohan,... au camp du Tesin, ce 3 juillet 1636 » ; elle est suivie de « la responce » de M. de Rohan, « du camp de Trahonne, 9 juillet 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1314">Fol. 152 et 153 • 250-252 « Depesche en court par l'ordinaire, du 26 juillet 1636 » : lettre du duc de Rohan « à M. le cardinal » ; autre du même « à M. des Noyers » ; lettre « de M. le duc DE PARME » au duc de Rohan, « du 12e juillet, receue le 24e dud. mois 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1328">Fol. 153 et 154 • 253-254 « Despesche en court par l'ordinaire, du 2e aoust 1636, du camp de Sondrio » : lettre du duc de Rohan « à M. de Chavigny » ; autre « à M. de (sic) Noyers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1342">Fol. 154 et 155 • 255-256 « Despesche en court, par le Sr de Beaulieu, du 9 aoust 1636, du camp de Sondrio » : lettre du duc de Rohan « à M. de Noyers » ; autre « à M. de Chavigny ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1353">Fol. 155 à 157 • 257-259 « Depesche en court par courrier extraordinaire, du 13e aoust 1636, du camp de Sondrio » : lettre du duc de Rohan « à M. le cardinal » ; autre, déchiffrée, « de M. de Savoye, du camp de Castelet, du 21 juillet 1636, receue le 10 aoust » par le duc de Rohan ; autre, déchiffrée, « de M. d'Hemery à M. le duc de Rohan, du camp de Castelet, le 22e juillet 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1367">Fol. 157 à 159 • 260-263 « Despesche de la court, du 3e aoust 1636, apportée par le Sr Prioleau, le 28e dud. mois » : lettre du roi-au duc de Rohan, datée du « chasteau de Boulongne, le 3 aoust » ; lettre de M. « de Chavigny, du 3e » août, au mème ; lettre « de M. le cardinal » au même, « du 3e aoust, de Paris » ; lettre « du roy », datée « du chasteau de Boulongne, le 4e aoust 1636 », au même.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1393">Fol. 159 • 264 Lettre du duc de Rohan « à M. de Chavigny, par l'ordinaire du 20e septembre » 1636.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1404">Fol. 159 à 161 • 265-266 « Despesche en court, par l'ordinaire du 13e septembre 1636 » : lettre du duc de Rohan « à M. de Noyers » ; autre du même « à M. de Chavigny ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1415">Fol. 161 à 165 • 267-274 Lettres adressées au duc de Rohan par « M. de Chavigny, du 2e septembre, receue le 19 » ; par « M. Bouthillier, du 26 aous (sic), receue le 12 sept. 1636 » ; par « M. de Noiers » ; par le « roy,.. de Senlis... 17 aoust, receue le 5 sept. 1636 » ; par « M. Bouthillier, dud. jour » ; par le « roy... à Madrid », le « 2 aoust, receue le 3 sept. 1636 » ; par « M. de Noyers, dud. jour » ; par « M. Bouthiller (sic), du 8 sept., receue le 26 dud ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1432">Fol. 165 • 275 Lettre du duc de Rohan « à M. Bouthillier, du 27e septembre 1636, du camp de Sondrio, par l'ordinaire ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1443">Fol. 166 et 167 • 276-278 « Despesche de la court, du 26 septembre 1636 », au duc de Rohan, « receue par Isaac, le 14e d'octobre 1636 : lettre du roy, du camp de Roye » ; autre « de M. de Noyers, de Maignelay, le 24e septembre » ; « ordonnance... de par le roy... pour refformer les compagnies qui ne seront de plus de 30 hommes, du 26 septembre... au camp de Roye ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1457">Fol. 167 à 171 • 279-284 « Depesche en court » du duc de Rohan, « par lsaac, du 6 oct. 1636 » : lettre « au roy... de Coire »; lettre « à M. le cardinal » ; lettre « à M. de Noyers » ; lettre « à M. de Chavigny » ; lettre « au père Joseph » ; « memoire au roy, touchant l'estat des affaires des Grisons, fait à Coire, le 17e octobre 1636. S. M. se trouvant sollicitée par les vives instances des Grisons de les remettre en possession de la Valteline, me commenda, par sa despesche du 3e decembre 1635, de tascher par toute sorte de moyens d'adjuster les differends desd. Grisons et Valtelins... ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1471">Fol. 171 à 173 • 285-287 « Despesche en court » du duc de Rohan, « par l'ordinaire, du 21e octobre 1636, de Coire » : lettre « à M. de Noyers » ; autre « à M. de Chavigny » ; autre « à M. de La Melleraye ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1482">Fol. 173 • 288 « Lettre du roy, du 28e septembre 1636 », au duc de Rohan, « receue le 20e octobre, escripte du camp devant Roye ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1496">Fol. 173 et 174 • 289-291 « Autre despesche en court du 21 d'octobre, envoyée par le mesme ordinaire, en responce de la lettre du roy du 28e septembre 1636 » : lettre du duc de Rohan « au roy » ; autre du même « à M. de Noyers » ; autre du même « à M. de Chavigny ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1507">Fol. 174 et 175 • 292 « Lettre de M. Bouthillier, escrite d'Amiens, le 13e octobre 1636 », au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1518">Fol. 175 • 293 « Lettre à M. Bouthillier, surintendant, par l'ordinaire, du 4e nov. 1636, de Coire ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1529">Fol. 175 et 176 • 294-297 « Despesche en court du 11e nov. 1636, de Coire, par l'ordinaire » : lettre du duc de Rohan « à M. de Chavigny » ; autre » à M. de Noyers » ; « coppie de lettre en chiffre », dont nous n'avons ici que le déchiffrement, « de M. d'Hemery, du 20e d'octobre, receue le 8e novembre 1636 », au duc de Rohan, dont la réponse suit « du 11e nov. 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1549">Fol. 177 et 178 • 298-299 Au duc de Rohan : « lettre de M. Bouthillier, du 20e octobre 1636, receue le 17 novembre » ; « autre lettre dud. Sr Bouthillier, du 27 octobre, receue led. jour 17 novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1563">Fol. 178 • 300 « Lettre à M. Bouthillier, surinten dant, par l'ordinaire du 18 novembre 1636, de Coire ». Du duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1571">Fol. 178 à 181 • 301-305 « Despesche de la court, par le retour d'Isaac, du 27e octobre, receue le 20e novembre 1636 » : lettre « du roy... Escript au camp de Demuin, le 27e oct. 1636 » ; autre « de M. de Noyers, d'Abeville, du dernier oct. 1636, receue aussy par Isaac, le 20e nov. » ; lettre « de M. Bouthillier, d'Amiens, le 2e nov., par Isaac » ; autre « de M. le cardinal, du 3e nov. 1636, receue par Isaac, escripte d'Amiens »; lettre « de M. Bouthillier, du 4e nov., escripte d'Amiens, receue par Isaac ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1600">Fol. 181 et 182 • 306 Lettre du roi Louis XIII « à nos très chers grands amis, alliez et confederez les landrichter, bourgmaistre, amans et conseil des troys ligues grises... Escrit à Chantilly, le IIIIe jour de novembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1611">Fol. 182 • 307 Lettre « de M. Bouthillier » au duc de Rohan, « par le courrier de M. le cardinal de Lyon, du 9e novembre 1636, receue le 20e dud. moys 1636, escrite d'Amiens », et concernant « la prise de Corbie » sur les Espagnols.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1625">Fol. 182 à 186 • 308 « Traitté faict à Chiavennes entre Mrs des troys ligues et les Valtelins et Comtois leurs subjects, ratiffié à Tosane, en apvril 1636, et par le roy, le 28e octobre aud. an ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1639">Fol. 186 à 189 • 309-313 « Despesche en court, par l'ordinaire, du 25 novembre 1636, de Coire, en responce de celle d'Isaac » : lettre du duc de Rohan « au roy » ; lettre du même « à M. le cardinal » ; autre du même « à M. Bouthillier » ; autre du même « à M. de Noyers » ; « memoire » du même « au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1647">Fol. 189 et 190 • 314-316 « Despesche en court, par le vicomte de Melun, du 29 novembre 1636, de Coire » : lettre du duc de Rohan « à M. de Noyers » ; autre du même « à M. Bouthillier » ; autre du même « au Sr Garnier, envoyée en court ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1658">Fol. 190 • 317 « Lettre » du duc de Rohan « à M. de Noyers, par l'ordinaire du 9 decembre 1636, de Coire ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1666">Fol. 190 et 191 • 318 « Despesche de la court, du 16e novembre, par l'ordinaire, receue le 9e decembre 1636 » : lettre du roi au duc de Rohan. « Escript à Chantilly, le XVIe novembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1683">Fol. 191 et 192 • 319-320 Lettres de M. Bouthillier : la première de Paris, 25 novembre 1636 ; la seconde, du 16 (sic) novembre, toutes deux au duc de Rohan.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1694">Fol. 192 à 200 • 321-329 « Despeche en court, par le Sr Colbert, du 15e decembre 1636 » : lettre du duc de Rohan « au roy » ; lettre du même « à M. de Noyers » ; autre du même « à M. Bouthillier » ; autre du même « à M. le cardinal » ; autre du même « au père Joseph » ; autre du même « à M. de Bulion, surintendant » ; autre du même « à M. de Chavigny » ; « memoire » du même « à Mrs les surintendans » ; « memoire » du même « pour M. Colbert, s'en retournant en court, du 15e decembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1714">Fol. 200 et 201 • 330-331 Lettres « de M. de Noyers » : la première sans date indiquée, la seconde « du 26 novembre », au duc de Rohan, reçues toutes deux le 15e décembre 1636.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1725">Fol. 201 à 206 • 332-335 « Despesches en court, par Isaac, du 27e decembre 1636 » : lettre du duc de Rohan « à M. Bouthillier, surintendant » ; autre du même « à M. de Bullion, surintendant » ; autre du même « à M. de Noyers » ; « memoyre » du même « au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1736">Fol. 206 et 207 • 336 « Lettre de M. Bouthiller (sic) » au duc de Rohan, « du 15 decembre, receue le 29e » décembre 1636.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058180_d0e1750">Fol. 207 et 208 • 337 « Lettre » du duc de Rohan « à M. Bouthillier, par la voye ordinaire, du 30e décembre » 1636.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 5190 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc58180k&Cote=Français 5190&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059471x">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 8162 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc58180k&Cote=MF 8162&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 5190 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9786(2)</div>
+<div class="did-unitid">Ancienne cote : Ant. Faure 257</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de copies de pièces contenant les dépêches et mémoires adressés et reçus par le duc de Rohan, « lieutenant general du roy, en son armée, aux Grisons », du 19 juillet 1635 au 30 décembre 1636.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.208 feuillets, plus les feuillets préliminaires A à E. Les feuillets B et C contiennent une table de notre ms. ; les feuillets D et E sont blancs.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Les mêmes noms d'auteurs étant souvent répétés dans la présente notice, il a paru préférable de n'imprimer chaque nom en capitales que la première fois.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 8162. Cote de la matrice (pour commander une reproduction) : R 35762.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059471x" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9059471x.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9059471x.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Beaulieu, De. • Actes.</p>
+<p>Bouthillier, Claude, surintendant des finances. • Lettres et actes.</p>
+<p>Bouthillier de Chavigny, Léon. • Lettres et actes.</p>
+<p>Bullion, Claude de.</p>
+<p>Canisy, René de Carbonel, marquis de. • Correspondance.</p>
+<p>Clauzel. • Lettres.</p>
+<p>Farnèse, Odoard, duc de Parme. • Actes et lettres.</p>
+<p>Grisons. • Mémoires et pièces.</p>
+<p>La Barde, Jean de, baron de Marolles. • Lettres.</p>
+<p>La Houdinière. • Instructions (1635).</p>
+<p>Particelli d'Émery, Michel. • Lettres.</p>
+<p>Priolo, Benjamin. • Lettres.</p>
+<p>Richelieu, Armand-Jean du Plessis de, cardinal. • Lettres.</p>
+<p>Rohan, Henri, duc de. • Lettres et actes.</p>
+<p>Servien, Abel, secrétaire d'État. • Lettres.</p>
+<p>Val-de-Fresle. • Relation de ce qui s'y est passé en 1635.</p>
+<p>Valteline. • Affaires de la Valteline (XVIe-XVIIe s.).</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e144');">1-3 Lettres du duc DE ROHAN, envoyées « par le Sr de La Perche » et datées « du camp de Tiran, le 2e jour d'aoust 1635 : à M. Bouthillier, surintendant ;... à M. le cardinal ;... à M. Servien ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e158');">4-5 « Instructions » du roi LOUIS XIII « à M. de La Thuillerye, du 19 juillet 1635 », envoyées « par Isaac » à M. de Rohan, avec une lettre « de M. BOUTHILLIER, dud. jour ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e166');">6 « Lectre du roy [Louis XIII], dud. jour » 19 juillet 1635, au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e174');">7-10 Lettres du duc de Rohan, datées la première et la deuxième du 3 août 1635, la troisième du 9 « par le jeune La Fontan », et la quatrième du 10 août 1635, du camp de Tiran : « à M. Bouthillier le fils ;... à M. Bouthillier, surintendant ;... à M. Servien,... à M. Bouthillier, surintendant ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e182');">11 « Lectre de M. BOUTHILLIER fils... du 24 juillet ... 1635 » au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e190');">12-13 Lettres du duc de Rohan, la première « à Mrs les surintendans, du 17 aoust 1635, du camp de Tiran », la seconde « à M. Bouthillier, secrettaire d'Estat », dud. jour.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e201');">14-16 Lettres du « cardinal » DE RICHELIEU, de « M. Bouthillier, surintendant », de « M. SERVIEN », au duc de Rohan, du 26 juillet 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e209');">17-20 Lettres du duc de Rohan « à M. Servien ;,... à messrs les surintendants ;... à M. Bouthillier, surintendant ». Du camp de Tiran, 20 et 25 août 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e220');">21-24 Lettres « du roy [Louis XIII] ;... de M. le cardinal de Richelieu] ;... du père JOSEPH ;... de M. Bouthillier ». Des 13 et 14 août 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e226');">25 « Memoire du roy sur les affaires de la Valtelline... Chantilly, le 13e du moys d'aoust 1635. Signé : Louis ». Au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e237');">26-28 Lettres « du Sr DE LA BARDE ;... du roy [Louis XIII] ;... de M. DE BULLION ». Du 9 août 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e248');">29-34 Lettres du duc de Rohan « au roy ;... à M. le cardinal [de Richelieu] ;... à Mrs les surintendans ;... à M. Bouthillier, secrettaire d'Estat ;... à M. Servien ;... au père Joseph,... Du 1er septembre 1635. Du camp de Tiran ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e262');">35 « Memoire au roy, touchant l'estat des affaires de ce pays... Faict au camp de Tiran, le 1er de septembre 1635 ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e273');">36 Lettre de « M. Bouthillier, surintendant, du 21 aoust 1635 », au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e281');">37 « Memoire touchant les affaires de ce pays. Du camp de Tiran, le 7e septembre 1635 ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e292');">38 Lettre « à M. Bouthillier, du 15 septembre 1635 ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e300');">39-41 Lettres de « M. Bouthillier fils ;... M. Bouthillier, secretaire d'Estat ;... M. Bouthillier fils ». 4 et 7 septembre 1635. Au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e308');">42-48 Lettres du duc de Rohan « touchant le Sr Du Landé et La Salinière : au roy ;... à M. Servien ;... au père Joseph ;... à M. de Bullion, surintendant ;... à M. Boutheiller (sic) père ;... à M. le cardinal [de Richelieu] ;... à M. de Chavigny ». Du 26 septembre 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e322');">49-51 Mémoires du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e354');">52-56 Lettres au duc de Rohan « du roy [Louis XIII], touchant le Sr d'Antremeaux, du 27 aoust 1635 » ; de « M. de Bullion, du 15 septembre » ; de « M. Servien, dudit jour ;... du Sr de La Barde, du 18 septembre ;... du roy, en faveur de Carlo Marin, resident pour la couronne de Suède en Suisse, du 2e juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e371');">57-60 Lettres du duc de Rohan « au roy [Louis XIII] ;... à M. le cardinal [de Richelieu] ;... à M. Bouthillier, surintendant ;... à M. de Bullion, surintendant ». Du 30 septembre 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e379');">61 « Coppie de lettre de CLAUZEL, escripte de Lucerne, du 14 septembre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e392');">62-64 Lettres du duc de Rohan « à M. le cardinal [de Richelieu] ;... à Mrs les surintendans ;... à M. Servien ». Du 7 octobre 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e403');">65-66 Mémoires du même.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e423');">67 Lettre du même « à M. de Bullion, surintendant, du 9e octobre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e434');">68 Lettre de « M. Bouthillier, surintendant, du 2 octobre... 1635 », au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e442');">69-74 Lettres du duc de Rohan « à Mrs les surintendans, du 19 octobre 1635 ;... à M. Bouthillier, surintendant », même date ; au même, « du 26 octobre » 1635 ; « à M. Servien », même date ; « au roy... du 5e nov. 1635 ;... à M. le cardinal », même date.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e456');">75 « Avis pour presenter à M. le cardinal » de Richelieu. 5 novembre 1635. Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e464');">76-79 Lettres du duc de Rohan « à Mrs les surintendans ;... à M. Bouthillier le filz ;... à M. Servien ;... au père Joseph ». 5 novembre 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e475');">80 « Relation de ce qui s'est passé au Val de Fresle, le 31e octobre 1635 ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e486');">81-86 Lettres « du roy [Louis XIII], du 18 oct.;... de M. Bouthillier, surintendant... du 19 octobre 1635 ;... de M. le cardinal [de Richelieu], du 20 octobre ;... de M. de Bullion, surintendant, du 21 octobre ;... de Mrs les surintendans, du 21 octobre 1635 ;... du roy [Louis XIII]... du 24 oct. 1635 ». Au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e497');">87 « Memoire à M. le duc de Rohan, pair de France, lieutenant general du roy en son armée aux Grisons... Faict à S. Germain en Laye, le 26e octobre 1635. Signé : Louis ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e508');">88 Lettre de « M. Bouthillier, surintendant, du 28 octobre 1635 ». Au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e516');">89-91 Lettres du duc de Rohan « au roy... du camp de Tiran... 14 novembre 1635 ;... à M. le cardinal [de Richelieu] ;... à Mrs (sic) Bouthillier père ; à M. Bouthillier fils ; à M. Servien ; à M. de Bullion, surintendant ; au père Joseph ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e530');">92 « Relation de ce qui s'est passé en la deffaite du comte de Serbellon, le 10e novembre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e541');">93-98 « Despesche en court, par M. Lasnier, du 18e novembre 1635, du camp de Tiran » : au roi ; « à M. le cardinal ;... à Mrs les surintendans ;... à M. de Chavigny ;... à M. Servien ;... à père Joseph ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e555');">99 « Lettre du roy [Louis XIII], par la voye de M. le duc de Savoye, du dernier d'octobre, receue par le Sr de Lusançon, le 21 novembre 1635 », au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e566');">100-105 « Despeche » du duc de Rohan « en court, par le Sr de Bachevilier, du 23 novembre 1635, du camp de Tiran : au roy ;... à M. le cardinal ;... à père Joseph ;... à Mrs les surintendans ;... à M. de Chavigny ;... à M. Servien ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e580');">106 « Coppie du Memoire et instruction de M. DE SAVOYE au Sr de Lusançon, envoyé vers M. le duc de Rohan, du 10 novembre » 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e591');">107 « Responce au susdit Memoire » par le duc de Rohan. « Fait au camp de Tiran, ce 23 novembre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e599');">108-109 « Despeche en court, par la voye ordinaire, du 7e decembre 1635, du camp de Tiran : à M. Servien ;... à Mrs les surintendans ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e613');">110 « Lettre de M. de Bullion par le Sr Bourguignon, du 3e novembre » 1635. Au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e627');">111-113 « Despesche en court, par la voye ordinaire, du 14e decembre 1635 : à M. de Bullion, surintendant ;... à M. Bouthillier le père ;... à M. Servien ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e638');">114-120 « Despeches de la cour, par le Sr Prioleau : Lettre du roy [Louis XIII] pour faire recognoistre M. de Lecques mareschal ... de camp... Escrit à S. Germain en Laye, le 30e nov. 1635 » ; autre « du roy, pour faire recognoistre M. de La Frezelière, mareschal de camp, dud. jour » ; autre « du roy... », datée « à S. Germain en Laye, le 5e jour de decembre 1635 » ; lettre « de M. Servien, du 4e decembre 1635 » ; autre « de M. Bouthillier père, dud. jour » ; autre « de M. Bouthillier fils, dud. jour » ; autre « du roy, du 11e decembre » 1635. Au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e661');">121 « Memoire du roy. Le Sr duc de Rohan verra par le present memoire les intentions de S. M. sur les propositions qui lui ont esté faites par le Sr de Prioleau, suivant l'ordre dudit Sr duc... Fait à S. Germain en Laye, le 3 decembre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e678');">122-124 « Despesche en court, par le Sr Gaillan, du 3e janvier 1636, du camp de Morbeigno : à M. Bouthillier ;... à M. Servien ;... au P. Joseph ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e692');">125-130 « Despesche en court par le Sr Magnan, du 5e janvier 1636, du camp de Morbeingne : au roy ;... à M. le cardinal ;... à Mrs les surintendans... à M. Servien,... à M. de Chavigny;... au père Joseph ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e709');">131 « Memoire » du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e730');">132-136 « Despeches de la court » au duc de Rohan, « apportées par le Sr de La Houdinière et receues le 10 janvier 1636 : de Mrs les surintendans, du 21 novembre 1635;... de M. Bouthillier le père, du 10e decembre » 1635; « de M. le cardinal, du 27 novembre;... de M. le cardinal, du 7 decembre;... du roy, du 10e decembre » 1635.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e750');">137 « Memoire à M. le duc de Rohan, pair de France, lieutenant general de l'armée du roy aux Grisons, du 11e decembre » 1635 : « Sa Maté a esté bien contente de veoir par la despesche dud. Sr duc, du 23e du moys passé, que M. le duc de Savoye ait pris soing de luy despescher le Sr de Luzançon, afin de concerter avec luy des moyens de faire progrez sur les ennemis dans le Milanois... ». Du roi Louis XIII.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e773');">138-140 Lettres au duc de Rohan : « de M. le cardinal, du 11e decembre 1635;... du père Joseph, du 11e decembre 1635;... du roy, du 12 decembre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e792');">141 « Memoire des choses necessaires pour la subsistance de l'armée du roy dans la Valteline. Donné par le Sr PRIOLEAU, secretaire de M. le duc de Rohan ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e803');">142 « Responces au memoire cy dessus. Pour le premier article est à considerer qu'on fait estat que l'armée est composée de 13 500 hommes, dont il y en a 7 000 Grisons et Suisses et 6 000 Françoys effectifz, ausquelz seuls convient fournir ledit pain... Fait à Paris, le 13e decembre 1635. Signé : Bullion et Bouthillier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e814');">143-144 Lettres « de M. Servien, du 12,... de Mrs les surintendans, du 13 decembre 1635 ». Au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e825');">144 bis « Instruction du roy au Sr de La Houdinière, touchant les fortiffications de la Valteline, du XIe dec. 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e839');">145 « Instruction au Sr de La Houdinière, touchant les affaires de la Valteline et du Milanois. Le roy aiant consideré combien il est important au bien de ses affaires de garentir la Valteline des continuelles entreprises des Espagnols... Fait à S. Germain en Laye, le 11e decembre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e853');">146-147 « Despesche » du duc de Rohan « en court, par M. de Canisy, du 21 janvier 1636 » : au roi; « à M. le cardinal ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e861');">148 « Memoire » du duc de Rohan, envoyé au roi « par M. de Canisy, mareschal de ses camps et armées, sur les affaires de la Valteline, et du dessein proposé pour le Milanois, du 21 janvier 1636. Les Espagnols voyans les Allemands retirez du Tirol, ont bien jugé l'importance de conserver Como et Lecco... ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e869');">149-152 Lettres du duc de Rohan : « à messrs les surintendans;... au P. Joseph;... à M. de Chavigny;... à M. Servien ». 21 janvier 1636.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e880');">153-154 Lettres au duc de Rohan : « du roy, du dernier decembre, reccue le 24 janvier 1636;... de M. de Chavigny, dud. jour ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e888');">155-156 « Despesche en court, par la voye de M. Meliand, du 26 janvier 1636, du camp de Tiran : au roy;... à M. de Chavigny ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e896');">157 « Propositions de Künig, collonel », presentées par « REGNAULT, fils du capitaine Regnault, qui commande les Suisses au fort de Barreaux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e904');">158-160 « Despesche de la court, par la voye ordinaire, du 29e decembre, receue le 28e janvier 1636 » : lettre « du roy;... coppie du memoire envoié au Sr d'Hemery, ambassadeur du roy en Piemont » ; lettre « de M. DE CHAVIGNY, dud. 29 decembre ». Au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e921');">161-162 Lettres au duc de Rohan : « de M. de Chavigny, par l'ordinaire du 7 janvier » 1636, « receue le 28;... de M. Bouthillier, du 8 janvier, receue comme devant ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e929');">163-170 « Despeche en court » du duc de Rohan « par le Sr de La Houdinière, de l'unziesme febvrier 1636 » : lettre « au roy » ; autre « à M. le cardinal ;... memoire à M. le cardinal, touchant le traitté projetté entre les Grisons et Valtelins » ; lettre « au P. Joseph » ; autre « à Mrs les surintendans » ; autre « à M. Servien » ; autre « à M. de Chavigny;... memoire des despenses necessaires pour fortiffier et munir les Grisons et la Valteline ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e943');">171-172 « Lettre, en chiffre, de M. D'EMERY, du 25e janvier, receue le 8e febvrier 1636;... Responce à M. d'Emery, par M. de Rohan ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e957');">173 Lettre du duc de Rohan « à M. le cardinal... De Chiavennes, le 11e febvrier 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e968');">174 « Despeche en court, par l'ordinaire du 15 febvrier 1636, à M. Servien ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e976');">175 « Lettre du roy, par M. Lanier, du 29 décembre 1635, receue le 25 febvrier 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e984');">176 « Lettre » du duc de Rohan « à M. le cardinal, par la voye ordinaire, du dernier febvrier 1636 ». Cette lettre est datée à la fin : « Du camp de Trabonne, le 1er de mars 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e995');">177-181 « Despesche de la court » au duc de Rohan « par Isaac, receues (sic) le 19e dud. moys » : lettre « du roy » ; autre « de M. Servien, du mesme jour » ; autre « du roy... du 2e mars 1636 » ; autre « de Mrs les surintendans, du 6e mars 1636 » ; autre « de M. de Chavigny, dud. jour ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1018');">182-186 « Despesche en court, par un courrier de M. Lanier, du 24e mars 1636 », du duc de Rohan : lettre « au roy... du camp de Trahonne » ; autre « à M. le cardinal » ; autre « à Mrs les surintendans » ; autre « à M. de Chavigny » ; autre « à M. de Noyers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1032');">187 « Despesche en court » du duc de Rohan, « par le Sr Prioleau, du 12e avril 1636 : relation du combat de La Francesque, advenu le quatriesme d'avril 1636 et jours suivans ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1046');">188-189 Lettres au duc de Rohan : « du roy, du 26 febvrier, receue le 12 avril 1636;... de M. DE NOYERS, dud. jour ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1062');">190 « Lettre à M. de Noyers, par la voye ordinaire, du 19 avril 1636 ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1070');">191-198 « Despesche en court, par Isaac, du 27 avril 1636 » : lettre « au roy » ; autre « à M. de Chavigny » ; autre « à Mrs les surintendans » ; autre « à M. le cardinal » ; autre « à M. de Noyers » ; autre « au P. Joseph » ; autre « à M. Bouthillier » ; autre « au roy, portées (sic) par les depputez de la cavalerie et de l'infanterie de l'armée du roy en Valteline ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1084');">199 « Lettre de M. Bouthillier, du 15 avril 1636 », au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1092');">200-202 Lettres du duc de Rohan : lettre « à M. Boutheiller (sic), surintendant, par la voye ordinaire, du 3 mai 1636... du camp de Trahonne » ; autre « à M. de Noyers, par la voye ordinaire, du 10e may 1636, du camp de Trahonne » ; autre « à M. le cardinal, par l'ordinaire, du 10e mai 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1109');">203 « Coppie de lettre de M. d'Emery » au duc de Rohan, « de Cazal, du 25 avril, receue le 10e may 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1120');">204 « Responce du 10e de may à la susd. lettre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1131');">205-206 « Despesche en court, par la voye ordinaire, du camp de Trahonne, le 17 may 1636 » : lettre « à M. de Noyers » ; autre « à M. Bouthillier, surintendant ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1139');">207 « Lettre de M. de Noyers, du 10e may, receue par Isaac, le 25e 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1153');">208 « Lettre de M. de Rohan à M. de Noyers, par l'ordinaire, du 28e may 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1164');">209-210 « Lettre de M. Bouthillier, par M. le vicomte de Melun, du 15e may, receue le 5e juin 1636 » ; autre « du roy, du 27e febvrier 1636, par le comte de Vineuil, receue le may 1636 ». Au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1181');">211-212 Lettre de M. le duc de Rohan « à M. de Noyers,... par la voye ordinaire, du 6° juin 1636 » ; autre du même, de même date, « à M. Bouthillier, surintendant ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1189');">213 « Relation de ce qui s'est passé au voyage que j'ay fait jusques à Lecco. M. de Savoye m'a faict sçavoir le 24e de may... ». Du duc de Rohan, qui l'adresse à M. Bouthillier, le 6 juin 1636.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1200');">214-215 Au duc de Rohan : « lettre, en chiffre, de M. de Savoye, du 27 may 1636, receue le 6 juin » ; autre, « en chiffre, de M. DE CANISY, dud. jour 27 may 1636, receue le 6 juin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1208');">216-226 Du duc de Rohan : « Responce à la despesche de M. de Savoye, du 27 may, faite le 7e juin 1636 » ; lettre « à M. de Canisy » ; autre « à M. de Savoye » ; autre « à M. d'Hemery » ; autre « à M. le cardinal... du 15e juin 1636 » ; autre « à M. de Noyers, dud. jour » ; autre « à M. Bouthillier, dud. jour » ; autre « à M. de Noyers,... du 21e juin 1636 » ; autre « à M. de Chavigny », dud. jour ; autre « à M. de Noyers,... du 27e juin 1636, du camp de Trahonne » ; autre « à M. de Chavigny », dud. jour.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1228');">227-234 « Despesche de la cour, par le Sr Priolleau », au duc de Rohan, « receues (sic) le 3e juillet 1636 » : lettre « du roy, de Fontainebleau, du 11e juin 1636 » ; autre « du roy, du 13e juin, de Fontainebleau » ; autre « du roy, du 13e juin, de Fontainebleau » ; autre « du roy, du 15, de Fontainebleau » ; autre « du roy, de Fontainebleau, le 16e » ; autre « du père Joseph, de Conflens, le 16 juin » ; autre « de M. de Noyers, de Conflens, ce 16 juin » ; autre « de M. de Chavigny, du 12 juin, de Paris ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1257');">235-236 Du duc de Rohan : lettre « à M. de Noyers,... du 6e juillet 1636, du camp de Trahonne » ; autre « à M. de Chavigny, dud. jour » et du même endroit.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1268');">237-239 « Despeche en court, par le Sr Prioleau, du 8 juillet 1636, du camp de Trahonne » : lettre « au roy » ; autre « à M. le cardinal » ; autre « au père Joseph ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1279');">240-241 Au duc de Rohan : « lettre de M. de Savoye, du 28 juin 1636, du camp du Tesin » ; autre « de M. de Hemery,... du 28 juin 1636 ». Ces lettres, dont les originaux étaient en chiffre, sont données ici déchiffrées.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1287');">242-243 Réponses du duc de Rohan aux deux letres qui précèdent. 6 juillet 1636.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1295');">244 Du duc de Rohan : « Memoire au Sr Prioleau, pour representer en court ce qui est de mes sentimens sur la depéche de M. de Savoye et de M. d'Hemery,... Fait au camp de Trahonne, ce 8 juillet 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1306');">245-249 « Depeche en court, par la voye ordinaire, du 12 juillet 1636, du camp de Trahonne » : lettre du duc de Rohan « à M. le cardinal » ; autre du même « à M. de Noyers » ; autre du même « à M. de Chavigny » ; autre, déchiffrée, « de M. de Savoye à M. de Rohan,... au camp du Tesin, ce 3 juillet 1636 » ; elle est suivie de « la responce » de M. de Rohan, « du camp de Trahonne, 9 juillet 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1314');">250-252 « Depesche en court par l'ordinaire, du 26 juillet 1636 » : lettre du duc de Rohan « à M. le cardinal » ; autre du même « à M. des Noyers » ; lettre « de M. le duc DE PARME » au duc de Rohan, « du 12e juillet, receue le 24e dud. mois 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1328');">253-254 « Despesche en court par l'ordinaire, du 2e aoust 1636, du camp de Sondrio » : lettre du duc de Rohan « à M. de Chavigny » ; autre « à M. de (sic) Noyers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1342');">255-256 « Despesche en court, par le Sr de Beaulieu, du 9 aoust 1636, du camp de Sondrio » : lettre du duc de Rohan « à M. de Noyers » ; autre « à M. de Chavigny ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1353');">257-259 « Depesche en court par courrier extraordinaire, du 13e aoust 1636, du camp de Sondrio » : lettre du duc de Rohan « à M. le cardinal » ; autre, déchiffrée, « de M. de Savoye, du camp de Castelet, du 21 juillet 1636, receue le 10 aoust » par le duc de Rohan ; autre, déchiffrée, « de M. d'Hemery à M. le duc de Rohan, du camp de Castelet, le 22e juillet 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1367');">260-263 « Despesche de la court, du 3e aoust 1636, apportée par le Sr Prioleau, le 28e dud. mois » : lettre du roi-au duc de Rohan, datée du « chasteau de Boulongne, le 3 aoust » ; lettre de M. « de Chavigny, du 3e » août, au mème ; lettre « de M. le cardinal » au même, « du 3e aoust, de Paris » ; lettre « du roy », datée « du chasteau de Boulongne, le 4e aoust 1636 », au même.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1393');">264 Lettre du duc de Rohan « à M. de Chavigny, par l'ordinaire du 20e septembre » 1636.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1404');">265-266 « Despesche en court, par l'ordinaire du 13e septembre 1636 » : lettre du duc de Rohan « à M. de Noyers » ; autre du même « à M. de Chavigny ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1415');">267-274 Lettres adressées au duc de Rohan par « M. de Chavigny, du 2e septembre, receue le 19 » ; par « M. Bouthillier, du 26 aous (sic), receue le 12 sept. 1636 » ; par « M. de Noiers » ; par le « roy,.. de Senlis... 17 aoust, receue le 5 sept. 1636 » ; par « M. Bouthillier, dud. jour » ; par le « roy... à Madrid », le « 2 aoust, receue le 3 sept. 1636 » ; par « M. de Noyers, dud. jour » ; par « M. Bouthiller (sic), du 8 sept., receue le 26 dud ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1432');">275 Lettre du duc de Rohan « à M. Bouthillier, du 27e septembre 1636, du camp de Sondrio, par l'ordinaire ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1443');">276-278 « Despesche de la court, du 26 septembre 1636 », au duc de Rohan, « receue par Isaac, le 14e d'octobre 1636 : lettre du roy, du camp de Roye » ; autre « de M. de Noyers, de Maignelay, le 24e septembre » ; « ordonnance... de par le roy... pour refformer les compagnies qui ne seront de plus de 30 hommes, du 26 septembre... au camp de Roye ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1457');">279-284 « Depesche en court » du duc de Rohan, « par lsaac, du 6 oct. 1636 » : lettre « au roy... de Coire »; lettre « à M. le cardinal » ; lettre « à M. de Noyers » ; lettre « à M. de Chavigny » ; lettre « au père Joseph » ; « memoire au roy, touchant l'estat des affaires des Grisons, fait à Coire, le 17e octobre 1636. S. M. se trouvant sollicitée par les vives instances des Grisons de les remettre en possession de la Valteline, me commenda, par sa despesche du 3e decembre 1635, de tascher par toute sorte de moyens d'adjuster les differends desd. Grisons et Valtelins... ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1471');">285-287 « Despesche en court » du duc de Rohan, « par l'ordinaire, du 21e octobre 1636, de Coire » : lettre « à M. de Noyers » ; autre « à M. de Chavigny » ; autre « à M. de La Melleraye ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1482');">288 « Lettre du roy, du 28e septembre 1636 », au duc de Rohan, « receue le 20e octobre, escripte du camp devant Roye ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1496');">289-291 « Autre despesche en court du 21 d'octobre, envoyée par le mesme ordinaire, en responce de la lettre du roy du 28e septembre 1636 » : lettre du duc de Rohan « au roy » ; autre du même « à M. de Noyers » ; autre du même « à M. de Chavigny ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1507');">292 « Lettre de M. Bouthillier, escrite d'Amiens, le 13e octobre 1636 », au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1518');">293 « Lettre à M. Bouthillier, surintendant, par l'ordinaire, du 4e nov. 1636, de Coire ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1529');">294-297 « Despesche en court du 11e nov. 1636, de Coire, par l'ordinaire » : lettre du duc de Rohan « à M. de Chavigny » ; autre » à M. de Noyers » ; « coppie de lettre en chiffre », dont nous n'avons ici que le déchiffrement, « de M. d'Hemery, du 20e d'octobre, receue le 8e novembre 1636 », au duc de Rohan, dont la réponse suit « du 11e nov. 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1549');">298-299 Au duc de Rohan : « lettre de M. Bouthillier, du 20e octobre 1636, receue le 17 novembre » ; « autre lettre dud. Sr Bouthillier, du 27 octobre, receue led. jour 17 novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1563');">300 « Lettre à M. Bouthillier, surinten dant, par l'ordinaire du 18 novembre 1636, de Coire ». Du duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1571');">301-305 « Despesche de la court, par le retour d'Isaac, du 27e octobre, receue le 20e novembre 1636 » : lettre « du roy... Escript au camp de Demuin, le 27e oct. 1636 » ; autre « de M. de Noyers, d'Abeville, du dernier oct. 1636, receue aussy par Isaac, le 20e nov. » ; lettre « de M. Bouthillier, d'Amiens, le 2e nov., par Isaac » ; autre « de M. le cardinal, du 3e nov. 1636, receue par Isaac, escripte d'Amiens »; lettre « de M. Bouthillier, du 4e nov., escripte d'Amiens, receue par Isaac ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1600');">306 Lettre du roi Louis XIII « à nos très chers grands amis, alliez et confederez les landrichter, bourgmaistre, amans et conseil des troys ligues grises... Escrit à Chantilly, le IIIIe jour de novembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1611');">307 Lettre « de M. Bouthillier » au duc de Rohan, « par le courrier de M. le cardinal de Lyon, du 9e novembre 1636, receue le 20e dud. moys 1636, escrite d'Amiens », et concernant « la prise de Corbie » sur les Espagnols.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1625');">308 « Traitté faict à Chiavennes entre Mrs des troys ligues et les Valtelins et Comtois leurs subjects, ratiffié à Tosane, en apvril 1636, et par le roy, le 28e octobre aud. an ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1639');">309-313 « Despesche en court, par l'ordinaire, du 25 novembre 1636, de Coire, en responce de celle d'Isaac » : lettre du duc de Rohan « au roy » ; lettre du même « à M. le cardinal » ; autre du même « à M. Bouthillier » ; autre du même « à M. de Noyers » ; « memoire » du même « au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1647');">314-316 « Despesche en court, par le vicomte de Melun, du 29 novembre 1636, de Coire » : lettre du duc de Rohan « à M. de Noyers » ; autre du même « à M. Bouthillier » ; autre du même « au Sr Garnier, envoyée en court ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1658');">317 « Lettre » du duc de Rohan « à M. de Noyers, par l'ordinaire du 9 decembre 1636, de Coire ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1666');">318 « Despesche de la court, du 16e novembre, par l'ordinaire, receue le 9e decembre 1636 » : lettre du roi au duc de Rohan. « Escript à Chantilly, le XVIe novembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1683');">319-320 Lettres de M. Bouthillier : la première de Paris, 25 novembre 1636 ; la seconde, du 16 (sic) novembre, toutes deux au duc de Rohan.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1694');">321-329 « Despeche en court, par le Sr Colbert, du 15e decembre 1636 » : lettre du duc de Rohan « au roy » ; lettre du même « à M. de Noyers » ; autre du même « à M. Bouthillier » ; autre du même « à M. le cardinal » ; autre du même « au père Joseph » ; autre du même « à M. de Bulion, surintendant » ; autre du même « à M. de Chavigny » ; « memoire » du même « à Mrs les surintendans » ; « memoire » du même « pour M. Colbert, s'en retournant en court, du 15e decembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1714');">330-331 Lettres « de M. de Noyers » : la première sans date indiquée, la seconde « du 26 novembre », au duc de Rohan, reçues toutes deux le 15e décembre 1636.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1725');">332-335 « Despesches en court, par Isaac, du 27e decembre 1636 » : lettre du duc de Rohan « à M. Bouthillier, surintendant » ; autre du même « à M. de Bullion, surintendant » ; autre du même « à M. de Noyers » ; « memoyre » du même « au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1736');">336 « Lettre de M. Bouthiller (sic) » au duc de Rohan, « du 15 decembre, receue le 29e » décembre 1636.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058180_d0e1750');">337 « Lettre » du duc de Rohan « à M. Bouthillier, par la voye ordinaire, du 30e décembre » 1636.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

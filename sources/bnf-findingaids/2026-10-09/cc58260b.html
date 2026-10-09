@@ -1,0 +1,560 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000058260">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000058260">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 5233-5572</div>
+					<h1>Français 5271
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000058260_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260">Français 5271 • Anc. 9824(7) • Formulaire de chancellerie (incomplet du commencement), composé à peu près exclusivement de lettres de rois de France du XIVe et du XVe siècles (de Jean le Bon à Charles VII).</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e184">Fol. 29 • « Recompensacion de dommaine pour domaine à Eglisez ». Pièce incomplète du commencement. Chinon. Septembre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e190">Fol. 34 v° • « Eschange fait par le roy Charles » V « avec la contesse d'Artois, de Jailly, ou bailliage de Troies, à l'encontre de Saint Florentin en icellui bailliage ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e196">Fol. 36 • « Eschange de certaines terres et seigneuries faittes (sic) entre le roy... CHARLES » V ? « et l'evesque de Gap ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e205">Fol. 39 • « Transport de Vie[r]zon à monseigneur de Reims, en deducion de grant sonme que le roy... CHARLES » VII « li doit ». Poitiers, 7 août 1425.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e216">Fol. 40 v° • « Confirmacion et approbacion du roy... CHARLES » VII « du transport et don de Vie[r]zon, fait par l'arcevesque de Reims, et à l'euvre et accroissement du mariage de sa niepce avec le sire de Vauvert ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e222">Fol. 44 • Privilège de JEAN LE BON en faveur de l'abbaye de St-Denis. En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e233">Fol. 49 • « Carta quod consules Lemovicenses possint tenere feoda velut nobiles ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e239">Fol. 50 • « Ottroy aux Jacobins de Sens d'un cymentière ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e255">Fol. 50 v° • Série de pièces relatives au collège de Navarre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e261">Fol. 57 • « Lectre de foy et hommage faiz à monseigneur de Guienne,... LOUIS » DE FRANCE, fils de Charles VI, « à cause de la terre et viconté de Mortaigne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e267">Fol. 60 • « Baillie de homme par le roy à l'evesque d'Aucerre, pour lui faire hommage à cause de la conté d'Aucerre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e273">Fol. 60 v° • « Sommation du roy CHARLES VI à Guillaume de Bavière, comte d'Ostrevant, de lui faire la foy et hommage du comté d'Ostrevant. 1391 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e279">Fol. 60 v° • « Super eodem au duc Aubert de Bavière, avec l'exécutoire... au bailli de Vermandois ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e291">Fol. 67 • Pièces relatives à la levée de la taille.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e297">Fol. 73 • « Aide miz suz sel pour aider à la fortifficacion de Chinon ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e308">Fol. 74 • « Continuacion de creue sur sel pour Celles en Berry ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e317">Fol. 74 v° • « Prorrogacion d'ung aide à Chinon ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e323">Fol. 78 v° • « Povoir à messire Philibert de Bercy, cappitaine de La Guierche en Touraine, de mectre suz l'apetissement du vin vendu en groz et à détail ès villes eux retrayans oud. chastel, pour l'emparement d'iceluy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e329">Fol. 79 • Collations de bénéfices.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e335">Fol. 80 v° • Prébendes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e341">Fol. 87 v° • Présentations à une cure.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e347">Fol. 89 v° • Dons de chapelles.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e353">Fol. 92 • Maladreries et léproseries.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e359">Fol. 94 v° • Bourse du collège de Champagne.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e365">Fol. 94 v° • Bourses du collège de Navarre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e371">Fol. 95 v° • Nominations diverses.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e377">Fol. 101 • Surrogations.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e383">Fol. 101 v° • Licenccs d'élire.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e389">Fol. 102 v° • Dons de fruits de bénéfices.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e395">Fol. 108 v° • Curatelles.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e401">Fol. 111 • Emprisonnements.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e407">Fol. 111 v° • Élargissements.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e413">Fol. 113 v° • Louveterie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e419">Fol. 115 • Loutrerie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e425">Fol. 115 v° • Compulsoires, exécutoires et contraintes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e431">Fol. 131 v° • Visites de forteresses.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e437">Fol. 133 • « Lettre de faire visiter denrées et de faire payer amende à ceulx qui vendent mauvaisez denrées ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e443">Fol. 133 v° • « Recouvrements ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e449">Fol. 134 v° • « Recouvrement et reprinse de terres données ou Daulphiné, selon la révocacion sollempnelment faitte à l'assemblée des troix estas des royaulme et Daulphiné ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e458">Fol. 138 v° • « Certification de monseigneur... LOYS », duc « DE GUIENNE », 3e fils de Charles VI, « d'avoir délivré prisonnier à son joyeux advenement » en la « ville de Vernon ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e467">Fol. 139 • « Rex... KAROLUS » V « omnibus certificat et asserit » Johannam, « reginam Jherusalem » et « Sicilie, esse consanguineam suam, inhibendo ne quis contra ipsam aliquod attemptare presumat ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e473">Fol. 139 v° • « Approbations : Que aucun ne soit tenu pour infame, à qui ung chien a mengié l'oreille ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e482">Fol. 142 v° • « Déclarations... sur le debat de l'office du vicomte de Conches,... sur les offices de grenetier de Bourges ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e488">Fol. 145 • « Vidimus ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e494">Fol. 146 • « Consentements : de absolucione quorumdam qui inimicis regni victualia... ministraverint... quod celestini religiosi habeant mense quolibet unam bursam ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e500">Fol. 147 • « Tollerances ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e506">Fol. 149 v° • « Sermens ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e512">Fol. 150 • « Mutacions ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e518">Fol. 151 • Rétablissement de l'atelier monétaire du Puy en Velay.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e529">Fol. 151 v° • Restauration d'hôpital à St-Quentin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e538">Fol. 152 • « Limitations et divisions ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e544">Fol. 154 v° • « Substitutions » : le sire de Mouy substitué au sire de Boquereaux dans l'office de bailli de Vermandois.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e550">Fol. 155 • « Ratifications » : pièces relatives aux rapports avecle saint siège.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e556">Fol. 158 • « Significations ou Significamus ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e562">Fol. 160 v° • « Recommendatoires ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e568">Fol. 161 v° • « Exortoire ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e574">Fol. 163 • « Lettres du roy CHARLES VI aux Anglois les priant de venger la mort de leur roy Richard, qui avoit été misérablement tué, 1406 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e580">Fol. 163 v° • « Semblables lettres en françois aux precedens, qui sont en latin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e586">Fol. 164 v° • « Rogat rex quandam villam », Aix la Chapelle, « ut de reliquiis corporis cujusdam sancti », S. Charlemagne, « sibi mittant ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e592">Fol. 165 • « Rex... KAROLUS,... rogat priorem et diffinitores capituli generalis Cartusiensis, ut orent Deum pro ipso ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e598">Fol. 166 v° • « Insinuatoire et notificatoire : Lictera super appellacionibus per barones, gentes ducatus Acquitanie, a principe Gallie et Acquitanie, filio regis Anglie, interpositis et emissis, racione gravaminum eisdem collatorum, directis principi Juliacensi et pluribus aliis regibus et principibus christianis, ad ostendendum justam causam regis » KAROLI « ad regnum Anglie guerram super hoc inferendam ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e604">Fol. 169 • « Instrumens... Johannes Le Boursier, miles... confessus fuit se debere... domino Georgio de Suliaco, militi... summam mille regalium auri ». 20 août 1432.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e610">Fol. 173 v° • « Nomina baillivorum et senescallorum regni... ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e616">Fol. 175 • Sur les lettres royaux.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e622">Fol. 176 v° • « De litteris missivis seu clausis ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e628">Fol. 179 • Lettres sur faits de chasse.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e634">Fol. 180 • Tarif de chancellerie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e640">Fol. 181 • « Cy commence le Livre de l'audience, où les notaires font le serment et mettent leurs seings manuels... ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e651">Fol. 185 • Autre suite de formules.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e657">Fol. 201 • « Deffiances du duc de Guerles contre le roy de France ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e663">Fol. 201 • « Deffiances envoiées par le roy de France au duc de Juliers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e669">Fol. 203 v° • « Instructions abrégées pour avoir cognoissance du stile de parlement et des manières de procéder en la cour de France ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e675">Fol. 204 • « Quelz sont les pers de France et quelle prérogative ilz ont ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e681">Fol. 205 • Collations de bénéfices et de prébendes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e687">Fol. 206 • Nouvelle suite de formules.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e693">Fol. 212 • « Chapitre de diverses lettres diffuses ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e699">Fol. 221 • « Lettres de finances ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e705">Fol. 230 • « Lictera per quam rex concessit et voluit quod prior et fratres ordinis Celestinorum Parisius habeant et capiant per manum audienciarii regis, sub emolumento sigilli regis cancellarie, quod habent notarii et secretarii regis seu consueverunt habere racione officii notariatus, quolibet mense unam bursam sicut unus dictorum notariorum et secretariorum... ». Acte de CHARLES V, donné à Paris en décembre 1368.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e711">Fol. 232 • « Rotulus notariorum regiorum », pièce relative à une « fraternitas » des clercs et notaires royaux, suivie des noms de ceux « qui ad premissa voluerunt se consentire ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e717">Fol. 233 • Acte de CHARLES VI, daté de Paris, 20 avril 1402. Il donne pour demeure aux prevôts de Paris présent et avenir, son « petit chastellet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058260_d0e723">Fol. 238 • Actes relatifs aux gardes et sauvegardes.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 5271 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc58260b&Cote=Français 5271&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90604893">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 32727 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc58260b&Cote=MF 32727&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 5271 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9824(7)</div>
+<div class="did-unitid">Ancienne cote : Colbert 1343</div>
+<div class="did-label">
+<div class="did-unittitle">Formulaire de chancellerie (incomplet du commencement), composé à peu près exclusivement de lettres de rois de France du XIV<emph render="super">e</emph> et du XV<emph render="super">e</emph> siècles (de Jean le Bon à Charles VII).</div>
+</div>
+<div class="did-date">XV<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.247 feuillets. Les feuillets actuels 29 à 247 portent une ancienne pagination en chiffres romains, comprenant les numéros 564 à 630, 630 bis, 631 à 763 et 765 à 782. Les feuillets 1 à 28 sont occupés par une table de pièces, avec renvois à des feuillets cotés de 556 à 758 (par erreur 748). Les feuillets 182, 183, 226 à 229 et 234 à 237 sont blancs.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="accessrestrict-class">
+<div class="label-part">
+<p class="commonBam-label">Conditions d'accès</p>
+</div>
+<div class="description-part">
+<span>
+<p>En raison de son état de conservation, la consultation de ce document est soumise à autorisation, sur demande motivée.</p>
+</span>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Un grand nombre de ces lettres paraissent extraites de registres cotés <emph render="italic">g</emph>[rand ?] <emph render="italic">p</emph>. ou <emph render="italic">g</emph>[rand ? <emph render="italic">pa</emph>, — <emph render="italic">m</emph>[oyen ?] <emph render="italic">p</emph>., — <emph render="italic">pe</emph>[tit ?] <emph render="italic">p</emph>. ou <emph render="italic">pe</emph>[tit ?] <emph render="italic">pa</emph>, — <emph render="italic">C</emph> et <emph render="italic">O</emph>.</p>
+</span>
+</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>Jac.-Aug. de Thou.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 32727. Cote de la matrice (pour commander une reproduction) : R 66905.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90604893" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b90604893.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b90604893.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">Dépouillement bibliographique</p>
+</div>
+<div class="description-part">
+<span>
+<p>Ce dépouillement bibliographique est réalisé de façon systématique à partir des publications acquises par le département des Manuscrits. Il est issu de chargements périodiques (dernier chargement : février 2021).</p>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">2019</p>
+</div>
+<div class="description-part">
+<span>
+<p>Thomas FALMAGNE, « Une troisième version du catalogue des manuscrits de Jacques-Auguste de Thou retrouvée à New York », dans <emph render="italic">Bulletin du Bibliophile</emph>, 2020, n° 2, p. 294-320. — P-47.</p>
+</span>
+</div>
+</div>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Charles V, roi de France. • Actes, lettres et mandements.</p>
+<p>Charles VI, roi de France. • Actes, lettres et mandements.</p>
+<p>Charles VII, roi de France. • Actes, lettres et mandements.</p>
+<p>Clermont-Ferrand. • Foires.</p>
+<p>Foires et marchés. • Notes et pièces diverses.</p>
+<p>Formulaires. • Chancellerie des rois de France (XIVe-XVe s.).</p>
+<p>Guerche-sur-Creuse, La, Indre-et-Loire.</p>
+<p>Jailly. • Pièce (Charles V).</p>
+<p>Jean II Le Bon, roi de France. • Actes et lettres.</p>
+<p>Paris. • Collège de Navarre.</p>
+<p>Paris. • Collège de Navarre, bourses.</p>
+<p>Pont-Perrin, Mayenne. • Foires.</p>
+<p>Saint-Florentin, Yonne. • Échange entre Charles V et la comtesse d'Artois.</p>
+<p>Saint-Georges-de-Rex, Deux-Sèvres. • Foires.</p>
+<p>Saint-Quentin. • Hôpital.</p>
+<p>Vernon, Eure. • Notes et pièces diverses.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e184');">« Recompensacion de dommaine pour domaine à Eglisez ». Pièce incomplète du commencement. Chinon. Septembre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e190');">« Eschange fait par le roy Charles » V « avec la contesse d'Artois, de Jailly, ou bailliage de Troies, à l'encontre de Saint Florentin en icellui bailliage ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e196');">« Eschange de certaines terres et seigneuries faittes (sic) entre le roy... CHARLES » V ? « et l'evesque de Gap ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e205');">« Transport de Vie[r]zon à monseigneur de Reims, en deducion de grant sonme que le roy... CHARLES » VII « li doit ». Poitiers, 7 août 1425.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e216');">« Confirmacion et approbacion du roy... CHARLES » VII « du transport et don de Vie[r]zon, fait par l'arcevesque de Reims, et à l'euvre et accroissement du mariage de sa niepce avec le sire de Vauvert ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e222');">Privilège de JEAN LE BON en faveur de l'abbaye de St-Denis. En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e233');">« Carta quod consules Lemovicenses possint tenere feoda velut nobiles ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e239');">« Ottroy aux Jacobins de Sens d'un cymentière ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e255');">Série de pièces relatives au collège de Navarre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e261');">« Lectre de foy et hommage faiz à monseigneur de Guienne,... LOUIS » DE FRANCE, fils de Charles VI, « à cause de la terre et viconté de Mortaigne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e267');">« Baillie de homme par le roy à l'evesque d'Aucerre, pour lui faire hommage à cause de la conté d'Aucerre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e273');">« Sommation du roy CHARLES VI à Guillaume de Bavière, comte d'Ostrevant, de lui faire la foy et hommage du comté d'Ostrevant. 1391 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e279');">« Super eodem au duc Aubert de Bavière, avec l'exécutoire... au bailli de Vermandois ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e291');">Pièces relatives à la levée de la taille.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e297');">« Aide miz suz sel pour aider à la fortifficacion de Chinon ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e308');">« Continuacion de creue sur sel pour Celles en Berry ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e317');">« Prorrogacion d'ung aide à Chinon ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e323');">« Povoir à messire Philibert de Bercy, cappitaine de La Guierche en Touraine, de mectre suz l'apetissement du vin vendu en groz et à détail ès villes eux retrayans oud. chastel, pour l'emparement d'iceluy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e329');">Collations de bénéfices.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e335');">Prébendes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e341');">Présentations à une cure.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e347');">Dons de chapelles.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e353');">Maladreries et léproseries.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e359');">Bourse du collège de Champagne.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e365');">Bourses du collège de Navarre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e371');">Nominations diverses.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e377');">Surrogations.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e383');">Licenccs d'élire.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e389');">Dons de fruits de bénéfices.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e395');">Curatelles.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e401');">Emprisonnements.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e407');">Élargissements.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e413');">Louveterie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e419');">Loutrerie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e425');">Compulsoires, exécutoires et contraintes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e431');">Visites de forteresses.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e437');">« Lettre de faire visiter denrées et de faire payer amende à ceulx qui vendent mauvaisez denrées ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e443');">« Recouvrements ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e449');">« Recouvrement et reprinse de terres données ou Daulphiné, selon la révocacion sollempnelment faitte à l'assemblée des troix estas des royaulme et Daulphiné ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e458');">« Certification de monseigneur... LOYS », duc « DE GUIENNE », 3e fils de Charles VI, « d'avoir délivré prisonnier à son joyeux advenement » en la « ville de Vernon ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e467');">« Rex... KAROLUS » V « omnibus certificat et asserit » Johannam, « reginam Jherusalem » et « Sicilie, esse consanguineam suam, inhibendo ne quis contra ipsam aliquod attemptare presumat ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e473');">« Approbations : Que aucun ne soit tenu pour infame, à qui ung chien a mengié l'oreille ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e482');">« Déclarations... sur le debat de l'office du vicomte de Conches,... sur les offices de grenetier de Bourges ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e488');">« Vidimus ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e494');">« Consentements : de absolucione quorumdam qui inimicis regni victualia... ministraverint... quod celestini religiosi habeant mense quolibet unam bursam ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e500');">« Tollerances ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e506');">« Sermens ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e512');">« Mutacions ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e518');">Rétablissement de l'atelier monétaire du Puy en Velay.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e529');">Restauration d'hôpital à St-Quentin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e538');">« Limitations et divisions ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e544');">« Substitutions » : le sire de Mouy substitué au sire de Boquereaux dans l'office de bailli de Vermandois.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e550');">« Ratifications » : pièces relatives aux rapports avecle saint siège.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e556');">« Significations ou Significamus ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e562');">« Recommendatoires ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e568');">« Exortoire ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e574');">« Lettres du roy CHARLES VI aux Anglois les priant de venger la mort de leur roy Richard, qui avoit été misérablement tué, 1406 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e580');">« Semblables lettres en françois aux precedens, qui sont en latin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e586');">« Rogat rex quandam villam », Aix la Chapelle, « ut de reliquiis corporis cujusdam sancti », S. Charlemagne, « sibi mittant ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e592');">« Rex... KAROLUS,... rogat priorem et diffinitores capituli generalis Cartusiensis, ut orent Deum pro ipso ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e598');">« Insinuatoire et notificatoire : Lictera super appellacionibus per barones, gentes ducatus Acquitanie, a principe Gallie et Acquitanie, filio regis Anglie, interpositis et emissis, racione gravaminum eisdem collatorum, directis principi Juliacensi et pluribus aliis regibus et principibus christianis, ad ostendendum justam causam regis » KAROLI « ad regnum Anglie guerram super hoc inferendam ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e604');">« Instrumens... Johannes Le Boursier, miles... confessus fuit se debere... domino Georgio de Suliaco, militi... summam mille regalium auri ». 20 août 1432.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e610');">« Nomina baillivorum et senescallorum regni... ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e616');">Sur les lettres royaux.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e622');">« De litteris missivis seu clausis ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e628');">Lettres sur faits de chasse.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e634');">Tarif de chancellerie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e640');">« Cy commence le Livre de l'audience, où les notaires font le serment et mettent leurs seings manuels... ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e651');">Autre suite de formules.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e657');">« Deffiances du duc de Guerles contre le roy de France ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e663');">« Deffiances envoiées par le roy de France au duc de Juliers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e669');">« Instructions abrégées pour avoir cognoissance du stile de parlement et des manières de procéder en la cour de France ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e675');">« Quelz sont les pers de France et quelle prérogative ilz ont ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e681');">Collations de bénéfices et de prébendes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e687');">Nouvelle suite de formules.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e693');">« Chapitre de diverses lettres diffuses ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e699');">« Lettres de finances ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e705');">« Lictera per quam rex concessit et voluit quod prior et fratres ordinis Celestinorum Parisius habeant et capiant per manum audienciarii regis, sub emolumento sigilli regis cancellarie, quod habent notarii et secretarii regis seu consueverunt habere racione officii notariatus, quolibet mense unam bursam sicut unus dictorum notariorum et secretariorum... ». Acte de CHARLES V, donné à Paris en décembre 1368.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e711');">« Rotulus notariorum regiorum », pièce relative à une « fraternitas » des clercs et notaires royaux, suivie des noms de ceux « qui ad premissa voluerunt se consentire ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e717');">Acte de CHARLES VI, daté de Paris, 20 avril 1402. Il donne pour demeure aux prevôts de Paris présent et avenir, son « petit chastellet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058260_d0e723');">Actes relatifs aux gardes et sauvegardes.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

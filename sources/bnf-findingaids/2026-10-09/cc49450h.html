@@ -1,0 +1,503 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049450">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049450">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 2754-3068</div>
+					<h1>Français 2996
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049450_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450">Français 2996 • Anc. 8521 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e84">1 Lettre de la reine « CLAUDE,... à monseigneur Du Bouchage,... De Paris, le XXIXe decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e93">Fol. 2 • 2 Lettre de « MARGUERITE [DE VALOIS, reine de Navarre]... à madame Du Bouchaige ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e106">Fol. 3 • 3 Lettre de « CHARLES [duc D'ALENÇON]... à monseigneur Du Bouchaige,... De Saint Mor des Fossez, le premier jour d'avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e119">Fol. 4 • 4 « Coppie » de lettres patentes de FRANÇOIS Ier, contenant « la transaction faicte avec Charles, duc d'Allençon, touchant la conté d'Armignac... Donné à Compiengne, ou mois de fevrier, l'an de grace mil cinq cens et quatorze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e135">Fol. 6 • 5 Copie de lettres patentes de « CHARLES, duc D'ALLENÇON », sur le même sujet. « Donné à Paris, ou mois de fevrier, l'an mil cinq cens et quatorze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e148">Fol. 10 • 6 Lettre de « FRANÇOYS [Ier]... à monseigneur Du Bouchaige,... A Dijon, le XXe jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e162">Fol. 11 • 7 Lettre, en espagnol, de CHARLES-QUINT « al rey de Francia... De Toledo, a XIII de deziembre M.D.XLVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e175">Fol. 12 • 8 Lettre de « P. LOYSI FARNESE » au roi. « Da Roma, il di VI di agosto, del XXXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e188">Fol. 13 • 9 Lettre de « P. LOYSI FARNESE,... al connestabile di Francia... Da Roma, il di VI di agosto del XXXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e196">Fol. 14 • 10 Lettre d'ODET DE COLIGNY, « cardinal DE CHASTILLON,... à monseigneur le conestable... De Chantylly, ce dernier jour d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e209">Fol. 15 • 11 Lettre de PHILIPPE CHABOT, seigneur DE « BRYON, amiral de France, à monseigneur le connestable... De Buzançois, le XXIXe jour d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e225">Fol. 16 • 12 Lettre, en italien, de RODOLPHE PIO, « cardinale DI CARPI,... à monseigneur le conestable de France... Da Roma, alli VII di agosto 1538 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e238">Fol. 17 • 13 Lettre de RENE, « batar de Savoye... à monseigneur De Bouchaige,... A Ardre, le XVIIIe de juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e254">Fol. 20 • 14 Lettre de « PHILIPPES [DE LA CHAMBRE], cardinal DE BOULONGNE,... au roy... A Rome, ce XXIVe de janvier 1547 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e270">Fol. 23 • 15 Lettre de « BOYSY,... à monseigneur Du Bouchage,... A Nantes, ce VIIe jour d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e286">Fol. 24 • 16 Lettre de « BONNYVET,... à monseigneur Du Bouchaige,... A Paris, le IXe jour de decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e302">Fol. 25 • 17 Lettre de « LOYS DE BOURBON,... à monseigneur Du Bouschaige,... De Champigney, ce IIIIe jour d'avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e323">Fol. 25 • 18 Lettre d'A[NTOINE DU PRAT], « cardinal DE SENS, legat et chancellier... à monseigneur le general de Normandye,... A Nantoillet, le Xe de septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e344">Fol. 26 • 19 État de l'armée navale de l'empereur Charles-Quint.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e357">Fol. 28 • 20 Lettre d'«AD[RIEN] DE PISSELEU,... à monseigneur le connestable... De Hesdin, ce XXIIIIe jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e373">Fol. 30 • 21 Lettre d'«AD[RIEN] DE PISSELEU,... à madame la duchesse d'Estampes,... De Hesdin, ce XXIIIIe de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e384">Fol. 31 • 22 Lettre de « GUILLART,... au roy... A Rome, le XVe jour de fevrier 1546 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e405">Fol. 35 • 23 Extraits des procès criminels faits à « Jehan de Poictiers, seigneur de Sainct Vallier,... Charles de Bourbon,... René Gentil,... Guillaume Poyet,... l'admiral Chabot ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e438">Fol. 52 • 24 Lettre de « A. MONLUC,... à monseigneur le connestable... De Rome, ce VIIIe d'aoust mil V.C.XXXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e457">Fol. 53 • 25 Dépêche en chiffre de « DE MORVILLIER,... au roy... De Venize, le XXIIIIe jour de janvier 1546 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e473">Fol. 58 • 26 Lettre, en latin, envoyée d'Allemagne au roi François Ier. « 19 februarii 1547 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e489">Fol. 61 • 27 Lettre, en latin, de « JACOBUS STURMIUS,... au roy... Argentorati, decima nona januarii 1546 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049450_d0e502">Fol. 64 • 28 Prophétie en latin pour le règne de François Ier.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 2996 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49450h&Cote=Français 2996&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060087w">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31296 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49450h&Cote=MF 31296&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 2996 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8521</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31296. Cote de la matrice (pour commander une reproduction) : R 3815.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060087w" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9060087w.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9060087w.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Allemagne. Histoire intérieure. • Nouvelles.</p>
+<p>Armagnac. • Notes et pièces diverses.</p>
+<p>Burmius. • Lettre.</p>
+<p>Claude de France, femme de François Ier. • Actes et lettres.</p>
+<p>François Ier, roi de France. • Actes et lettres.</p>
+<p>François Ier, roi de France. • Notes, pièces et recueils divers.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e84');">1 Lettre de la reine « CLAUDE,... à monseigneur Du Bouchage,... De Paris, le XXIXe decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e93');">2 Lettre de « MARGUERITE [DE VALOIS, reine de Navarre]... à madame Du Bouchaige ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e106');">3 Lettre de « CHARLES [duc D'ALENÇON]... à monseigneur Du Bouchaige,... De Saint Mor des Fossez, le premier jour d'avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e119');">4 « Coppie » de lettres patentes de FRANÇOIS Ier, contenant « la transaction faicte avec Charles, duc d'Allençon, touchant la conté d'Armignac... Donné à Compiengne, ou mois de fevrier, l'an de grace mil cinq cens et quatorze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e135');">5 Copie de lettres patentes de « CHARLES, duc D'ALLENÇON », sur le même sujet. « Donné à Paris, ou mois de fevrier, l'an mil cinq cens et quatorze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e148');">6 Lettre de « FRANÇOYS [Ier]... à monseigneur Du Bouchaige,... A Dijon, le XXe jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e162');">7 Lettre, en espagnol, de CHARLES-QUINT « al rey de Francia... De Toledo, a XIII de deziembre M.D.XLVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e175');">8 Lettre de « P. LOYSI FARNESE » au roi. « Da Roma, il di VI di agosto, del XXXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e188');">9 Lettre de « P. LOYSI FARNESE,... al connestabile di Francia... Da Roma, il di VI di agosto del XXXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e196');">10 Lettre d'ODET DE COLIGNY, « cardinal DE CHASTILLON,... à monseigneur le conestable... De Chantylly, ce dernier jour d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e209');">11 Lettre de PHILIPPE CHABOT, seigneur DE « BRYON, amiral de France, à monseigneur le connestable... De Buzançois, le XXIXe jour d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e225');">12 Lettre, en italien, de RODOLPHE PIO, « cardinale DI CARPI,... à monseigneur le conestable de France... Da Roma, alli VII di agosto 1538 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e238');">13 Lettre de RENE, « batar de Savoye... à monseigneur De Bouchaige,... A Ardre, le XVIIIe de juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e254');">14 Lettre de « PHILIPPES [DE LA CHAMBRE], cardinal DE BOULONGNE,... au roy... A Rome, ce XXIVe de janvier 1547 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e270');">15 Lettre de « BOYSY,... à monseigneur Du Bouchage,... A Nantes, ce VIIe jour d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e286');">16 Lettre de « BONNYVET,... à monseigneur Du Bouchaige,... A Paris, le IXe jour de decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e302');">17 Lettre de « LOYS DE BOURBON,... à monseigneur Du Bouschaige,... De Champigney, ce IIIIe jour d'avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e323');">18 Lettre d'A[NTOINE DU PRAT], « cardinal DE SENS, legat et chancellier... à monseigneur le general de Normandye,... A Nantoillet, le Xe de septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e344');">19 État de l'armée navale de l'empereur Charles-Quint.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e357');">20 Lettre d'«AD[RIEN] DE PISSELEU,... à monseigneur le connestable... De Hesdin, ce XXIIIIe jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e373');">21 Lettre d'«AD[RIEN] DE PISSELEU,... à madame la duchesse d'Estampes,... De Hesdin, ce XXIIIIe de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e384');">22 Lettre de « GUILLART,... au roy... A Rome, le XVe jour de fevrier 1546 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e405');">23 Extraits des procès criminels faits à « Jehan de Poictiers, seigneur de Sainct Vallier,... Charles de Bourbon,... René Gentil,... Guillaume Poyet,... l'admiral Chabot ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e438');">24 Lettre de « A. MONLUC,... à monseigneur le connestable... De Rome, ce VIIIe d'aoust mil V.C.XXXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e457');">25 Dépêche en chiffre de « DE MORVILLIER,... au roy... De Venize, le XXIIIIe jour de janvier 1546 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e473');">26 Lettre, en latin, envoyée d'Allemagne au roi François Ier. « 19 februarii 1547 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e489');">27 Lettre, en latin, de « JACOBUS STURMIUS,... au roy... Argentorati, decima nona januarii 1546 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049450_d0e502');">28 Prophétie en latin pour le règne de François Ier.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

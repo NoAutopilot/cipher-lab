@@ -1,0 +1,470 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050138">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050138">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3693-3694</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050138_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138">Français 3693-3694 • Anc. 9192 • « Ambassade de Mr [JEAN VARIGNIEZ] DE BLAINVILLE, ambassadeur extraordinaire en Angleterre, 1625 et 1626 ».</a><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e104">Français 3693 • Tome I.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e108">1 « Lettre du roy de la Grande Bretagne [CHARLES Ier] au roy [Louis XIII], du 3e juillet 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e120">2 « Lettre du roy de la Grande Bretagne au roy, apportée par Mrs de Chevreuse et de La Ville aux Clercs, du IXe juillet 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e132">Fol. 2 • 3 « Lettre du roy de la Grande Bretagne au roy, du 30e juillet 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e143">4 « Proclamation contre les catholicques d'Angleterre, du 4e aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e152">Fol. 3 • 5 « Lettre de Mr [DE CAROUGE], comte DE TILLIERES, à monsieur de La Ville aux Clercs, du 12e aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e166">6 « Lettre du roy [LOUIS XIII] au roy de la Grande Bretagne, du 12e aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e175">Fol. 4 • 7 « Lettre du roy au comte de Tillieres, du XIIe aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e186">Fol. 5 • 8 « Lettre du roy à Mr l'evesque de Mande, du XIIe aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e200">Fol. 6 • 9 « Lettre de Mr [DE CAROUGE], comte DE TILLIERES, à Mr de La Ville aux Clercs, du 15e aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e217">10 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clercs, du 15 aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e226">11 « Lettre du seiziesme aoust 1625, escripte par Mr le comte DE TILLIERES à Mr de La Ville aux Clercs ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e238">Fol. 7 • 12 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, et » de M. DE CAROUGE, « comte DE TILLIERES, au roy, du 15 aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e246">13 « Advis en chiffre, envoié par M. [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e252">14 « Lettre du roy [LOUIS XIII] à Mrs l'evesque de Mande et comte de Tillieres, du 23 aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e261">Fol. 9 • 15 « Lettre de Mr le cardinal [DE RICHELIEU] à Mr de La Ville aux Clercs, du XXIe aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e278">16 « Lettre du [Sr DE CAROUGE], comte DE TILLIERES, au roy, du XVIIIe aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e290">17 « Lettre de Mr le comte DE TILLIERES à Mr de La Ville aux Clercs, du XVIIIe aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e305">Fol. 11 • 18 « Lettre à Mr de La Ville aux Clercs, escripte par Mr le cardinal DE RICHELIEU, du 23 aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e319">19 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, au roy, du XVIIIe aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e328">Fol. 12 • 20 « Lettre de Mr l'evesque de Mande à Mr de La Ville aux Clercs, du XVIIIe aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e345">21 « Lettre de Mr le cardinal DE RICHELIEU à Mr de La Ville aux Clercs, du 26 aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e357">22 « Advis en chiffre donné à Mr le cardinal de Richelieu par Mr l'evesque de Mande, receu le 26 aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e369">Fol. 13 • 23 « Lettre de Mr le cardinal DE RICHELIEU à Mr de La Ville aux Clercs, du XXVIIe aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e386">Fol. 14 • 24 « Lettre de Mr le cardinal DE RICHELIEU à Mr de La Ville aux Clercs, du 25 aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e400">25 « Lettre du roy [LOUIS XIII] à Mr l'evesque de Mande, du 26 aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e409">Fol. 15 • 26 « Lettre en chiffre de Mr l'evesque de Mande à Mr le cardinal de Richelieu, receue le 29 aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e423">Fol. 16 • 27 « Advis de ce qui se passa au parlement d'Angleterre au mois d'aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e431">Fol. 18 • 28 « Lettre de Mr le cardinal DE RICHELIEU à Mr de La Ville aux Clercs, du 30e aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e448">29 « Lettre de Mr [DE CAROUGE], comte DE TILLIERES, à Mr de La Ville aux Clercs, du 30e aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e463">30 « Lettre de Mr [DE CAROUGE], comte DE TILLIERES, au roi, du dernier aoust 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e472">Fol. 21 • 31 « Lettre du dict Sr comte [DE TILLIERES] au Sr de La Ville aux Clercs, du IIIe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e489">32 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, au roy ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e495">Fol. 22 • 33 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, à M. de La Ville aux Clercs, du 5e septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e506">Fol. 23 • 34 « Instructions baillées à M. de Blainville, allant ambassadeur extraordinaire en Angleterre, le IIIe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e517">Fol. 33 • 35 « Lettre du roy [LOUIS XIII] au roy de la Grande Bretagne par Mr de Blainville, du IIIe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e531">36 « Lettre du roy [LOUIS XIII] au duc de Bouquinquant, du IIIe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e540">Fol. 34 • 37 « Lettre du roy [LOUIS XIII] au comte de Tillieres, du IIIe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e551">38 « Lettre du roy [LOUIS XIII] à Mr l'evesque de Mande, du 3e septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e563">Fol. 35 • 39 « Lettre du roy [LOUIS XIII] au roy de la Grande Bretagne, en faveur de Mr Seton, du 4e septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e577">40 « Memoire baillé par Mr D'OQUERRE sur les affaires de Mansfeld, du 10e septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e589">Fol. 36 • 41 « Lettre du roy [LOUIS XIII] à Mr de Blainville par le secretaire Boutard, du 10e septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e603">Fol. 40 • 42 « Lettre du roy [LOUIS XIII] au Sr de Blainville, du XIe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e617">Fol. 41 • 43 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr l'evesque de Mande, du seize septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e628">44 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr le comte de Tillieres, du seize septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e637">Fol. 42 • 45 « Seconde Instruction baillée à Mr de Blainville, du XVIIe de septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e651">Fol. 44 • 46 « Lettre escripte par le roy [LOUIS XIII] au duc de Bouquinquant, le XVIIe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e662">47 « Lettre du roy [LOUIS XIII] à Mr de Blainville, le XXIe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e674">Fol. 45 • 48 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du XXVe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e688">Fol. 46 • 49 « Lettre du duc DE BOUQUINQUANT au roy, receue le 25 septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e696">50 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clercs, le XXIIe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e708">51 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du 27 septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e714">Fol. 47 • 52 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clercs, du 27 septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e725">Fol. 48 • 53 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr l'evesque de Mande, du 4 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e736">54 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS audit sieur evesque de Mande, du 4e octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e745">Fol. 49 et 50 • 55-56 Deux lettres « du roy [LOUIS XIII] à Mr de Blainville, du 4e octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e759">Fol. 51 • 57 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Blainville, du 14 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e770">58 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Blainville, du 4e octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e782">Fol. 52 • 59 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clercs, du 17 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e793">Fol. 53 • 60 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS, à Mr de Blainville, du 7e octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e807">Fol. 54 • 61 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du VIIIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e818">Fol. 54 et 55 • 62-63 Deux lettres « de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clercs, du VIIIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e832">64 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à M. de La Ville aux Clercs, du XXIXe septembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e841">65 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clercs, du 16 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e850">Fol. 56 • 66 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clercs, du 16 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e861">Fol. 57 • 67 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du XVIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e872">Fol. 58 • 68 « Lettre de DE BLAINVILLE à Mr de La Ville aux Clercs, du XIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e886">Fol. 59 • 69 « Lettre de Mr DE BLAINVILLE au dict sieur de La Ville aux Clercs ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e897">70 « Lettre de Mr [DE CAROUGE], comte DE TILLIERES, à Mr de La Ville aux Clercs, du 26 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e909">Fol. 60 • 71 « Lettre de Mr DE MANTY à Mr de Blainville ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e923">Fol. 61 • 72 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clercs, du XXIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e937">Fol. 62 • 73 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clers, du XXIIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e951">74 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clers ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e963">Fol. 63 • 75 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du XXIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e977">Fol. 65 • 76 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr l'evesque de Mande, du 21e octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e991">Fol. 66 • 77 « Lettre de Mr DE LA VILLE AUX CLERCS à Mr de Blainville, du XXI octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1005">Fol. 67 • 78 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du XXIIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1016">Fol. 72 • 79 « Lettre de Mr DE BLAINVILLE au roy, du 25 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1027">Fol. 75 • 80 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clers, le XXVIIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1044">81 « Lettre de Mr [DE CAROUGE], comte DE TILLIERES, à Mr de La Ville aux Clercs, du 27 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1056">Fol. 76 • 82 « Lettre de [CHARLES Ier], roy de la Grande Bretagne, au roy, du XVIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1070">83 « Lettre du Sr CONVOY, secretaire d'Estat d'Angleterre, à Mr de La Ville aux Clercs, du XVIIIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1085">Fol. 77 • 84 « Memoire baillé par [DOMINIQUE] DE VIC ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1093">Fol. 78 • 85 « Lettre du roy LOUIS [XIII] au roy d'Angleterre, du VIIIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1104">86 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS au secretaire Cannove, du VIIIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1113">Fol. 79 • 87 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du VIIIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1127">Fol. 80 • 88 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Mande, du 5e novembre 1625. A St Germain en Laye ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1144">Fol. 82 • 89 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Blainville, du VIIIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1158">Fol. 83 • 90 « Responce du roy LOUIS [XIII] aux deux lettres envoyées à Sa Majesté par le sieur de Blainville, du VIIIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1169">Fol. 87 • 91 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clercs, du 30 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1180">Fol. 89 • 92 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du 30e octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1191">Fol. 91 • 93 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du dernier octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1205">94 « Memoire de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1211">Fol. 92 • 95 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clercs, du dernier octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1222">Fol. 93 • 96 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du dernier octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1230">97 « Lettre du roy [LOUIS XIII], escripte à Mr de Blainville, le XIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1242">Fol. 95 • 98 « Lettre de Mr DE LA VILLE AUX CLERCS à Mr de Mande, du Xe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1259">99 Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS, à Mr de Blainville, le XI novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1268">Fol. 96 • 100 « Memoire baillé par Mr DE BLAINVILLE au roy de la Grande Bretagne, receu le XVe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1282">Fol. 98 • 101 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT, évêque] de Mande, à Mr de La Ville aux Clercs, receue le XVe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1296">102 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clercs du 5 novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1305">Fol. 99 • 103 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du VIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1316">Fol. 100 • 104 « Lettre du sieur DE BOURLEMAKY à Mr de La Ville aux Clercs, le XXVIIIe octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1330">Fol. 101 • 105 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr l'evesque de Mande, du 29 novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1341">Fol. 102 • 106 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du 19 novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1352">Fol. 103 • 107 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Blainville, du XIXe novembre 1625. A St Germain en Laye ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1369">Fol. 104 • 108 « Memoire envoié à Mr de Blainville, resolu par le roy, le XVIIIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1383">Fol. 106 • 109 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clercs, du XVIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1397">110 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, le XVIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1406">Fol. 108 • 111 « Lettre du duc DE BOUQUINQUANT au roy ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1414">112 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du XIe decembre, à Paris, 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1426">Fol. 109 • 113 « Lettre escripte par [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr l'evesque de Mande, du deux decembre, à Paris, 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1437">Fol. 110 • 114 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Blainville, du 2e decembre 1625, à Paris ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1451">Fol. 111 • 115 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du XIXe jour de novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1462">Fol. 115 • 116 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clercs, du 4e decembre 1625 ».</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1476">Français 3694 • Tome II.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1480">1 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du XXVIIe jour de novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1489">Fol. 7 • 2 « Memoire envoyé en Angleterre, receu le 5e jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1500">3 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clers, du 28e novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1515">Fol. 8 • 4 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT, évêque] de Mande, à Mr de La Ville aux Clercs, du 24e novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1529">Fol. 10 • 5 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clers, du XXVIe novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1543">Fol. 11 • 6 « Lettre de [CHARLES Ier], roy d'Angleterre, au roy, du XX novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1554">7 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERS à M. de Blainville, du sixiesme jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1560">Fol. 12 • 8 « Lettre de [HENRI AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERS à Mr de Mande, du Ve jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1574">Fol. 13 • 9 « Lettre du roy [LOUIS XIII], escritte à Mr de Blainville, le Ve jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1588">Fol. 16 • 10 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clers, du XXIX novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1599">11 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clers, du 29 9bre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1611">Fol. 17 • 12 « Lettre de Mr DE MANTY à Mr de Blainville, du XXVIII novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1625">Fol. 18 • 13 « Memoire de Mr DE MANTY à Mr Le Chevallier, des choses principales qu'il doibt representer à Mr le marquis de Blainville, ambassadeur extraordinaire pour le roy aupres le roy de la Grande Bretagne ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1642">Fol. 20 • 14 « Lettre du Sr DE MANTY à Mr de Blainville, du 4e jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1659">Fol. 21 • 15 « Lettre de Mr DE MANTY à Mr de Blainville, du V decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1673">16 « Proposition donnée aux capitaines des vaisseaux anglois ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1679">Fol. 22 • 17 « Lettre de Mr DE MANTY à Mr de Blainville, du XIe decembre 1625, touschant les vaisseaux hollandois ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1696">Fol. 23 • 18 « Memoire de Mr DE MANTY à monseigneur l'ambassadeur ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1707">Fol. 24 • 19 « Lettre du roy à Mr de Blainville, du 14 decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1718">Fol. 25 • 20 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE, marquis] DE LA VILLE AUX CLERCS, à Mr l'evesque de Mande, du 14 decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1729">Fol. 27 • 21 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clers,... De Hamptoncourt, ce deuxe jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1743">22 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à monsieur de La Ville aux Clercs,... De Hamptoncourt, ce 4e jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1752">23 « Declaration de [CHARLES Ier], roy d'Angleterre, contre les catholicques anglois. A Reding, ce XIe jour de novembre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1764">Fol. 29 • 24 « Responce de [CHARLES Ier], roy de la Grande Bretagne, sur les demandes du roy ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1775">Fol. 30 • 25 « Lettre du Sr BOURLEMAKI à Mr de Blainville,... De Londres, ce 23 novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1789">Fol. 32 • 26 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clercs, du 3e decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1803">Fol. 33 • 27 « Addition à la precedente lettre de Mr l'evesque de Mande ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1814">28 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du XI octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1820">Fol. 36 • 29 « Lettre du roy [LOUIS XIII] à Mr DE MANTY, du XXVI decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1831">Fol. 37 • 30 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Blainville, du XXVI decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1842">Fol. 38 • 31 « Lettre du roy à Mr DE BLAINVILE, du 18 octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1853">Fol. 41 • 32 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr l'evesque de Mande, du 18e jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1867">Fol. 42 • 33 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Blainville, du 19e jour d'octobre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1881">Fol. 43 • 34 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du 18 decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1889">Fol. 45 • 35 « Lettre de Mr DE BLAINVILLE au roy, du XXIIe jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1903">Fol. 46 • 36 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, à Mr de La Ville aux Clercs, du 4 decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1914">Fol. 47 • 37 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE à Mr de La Ville aux Clercs, du XIIIe jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1928">Fol. 48 • 38 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du XIX decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1942">39 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du XVIII decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1954">Fol. 49 • 40 « Lettre de Mr DE BLAINVILLE au roy, du XXIXe jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1968">Fol. 52 • 41 « Lettre de Mr DE BLAINVILLE au roy ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1979">42 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du XXIX decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e1991">Fol. 53 • 43 « Lettre du roy LOUIS [XIII] à Mr de Blainville, du 4e jour de janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2005">Fol. 54 • 44 « Lettre de Mr LUCAS à monseigneur de La Ville aux Clercs, du 30e jour de decembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2019">Fol. 55 • 45 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Mande, du 3 de janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2030">Fol. 56 • 46 « Lettre du roy LOUIS [XIII] à Mr de Blainville, du quatriesme janvier 1626, en responces des siennes du 29 du passé et de la creance du Sr Marandé, qui les a rendues et a esté ouy de sa part ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2044">Fol. 57 • 47 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr l'evesque de Mande, du 4 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2055">Fol. 58 • 48 « Lettre de [DANIEL DE LA MOTHE DU PLESSIS-HOUDANCOURT], evesque de Mande, sans datte, receue le 6 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2063">Fol. 60 • 49 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du 4e jour de janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2074">Fol. 61 • 50 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du 4e jour de janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2091">Fol. 62 • 51 « Lettre de Mr DE BLAINVILLE au roy, du 2 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2102">Fol. 64 • 52 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du 2 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2116">53 « Lettre de Mr DE BLAINVILLE au roy, du 7 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2125">Fol. 65 • 54 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du 7e jour de janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2142">Fol. 66 • 55 « Lettre du roy LOUIS [XIII] à Mr de Blainville, du XI janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2153">Fol. 67 • 56 « Lettre de [HENRIETTE-MARIE], royne d'Angleterre, au roy, du 7 janvier 1626, receue le 20 par les Srs de Hollande et Charleton, ambassadeurs extraordinaires ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2164">57 « Lettre de [CHARLES Ier], roy d'Angleterre, au roy, du 30 decembre 1625, receue le 20 janvier 1626, par les Srs comte de Hollande et Charleton, ambassadeurs extraordinaires ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2176">Fol. 68 • 58 « Lettre du roy [LOUIS XIII] à Mr l'evesque de Mande, du XIe jour de janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2190">Fol. 68bis • 59 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Mande, du XI janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2201">Fol. 69 • 60 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du 18 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2209">Fol. 71 • 61 « Lettre de Mr DE BLAINVILLE au roy, du 18 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2220">62 « Article tiré d'une depesche du roy, du XI novembre 1625 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2226">Fol. 72 • 63 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, le XI janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2240">64 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du XXVI janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2249">Fol. 74 • 65 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS à Mr de Blainville, du XXV janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2260">Fol. 75 • 66 « Lettre du Sr BURLEMAKY à Mr de La Ville aux Clercs, du XVII janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2274">67 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du 17 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2280">Fol. 77 • 68 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du XVIe janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2297">69 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du XXVIe de janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2309">Fol. 78 • 70 « Lettre de [HENRI-AUGUSTE DE LOMENIE BRIENNE] DE LA VILLE AUX CLERCS au Sr Burlemaky », du 26 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2320">71 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du XX janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2326">Fol. 79 • 72 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du 18 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2340">73 « Lettre de Mr DE BLAINVILLE au roy, du XXVI janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2349">Fol. 82 • 74 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du 26 janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2363">Fol. 83 • 75 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du XXVII janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2377">76 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du premier jour de febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2386">Fol. 87 • 77 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, du dernier janvier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2394">Fol. 88 et 89 • 78-79 Deux lettres « de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du dernier janvier 1626».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2408">80 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du sixiesme febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2417">Fol. 90 • 81 « Lettre de Mr DE LA VILLE AUX CLERCS à Mr de Blainville, du 7 febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2431">Fol. 91 • 82 « Lettre du Sr BURLEMAK à Mr de La Ville aux Clercs, du 4 febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2445">83 « Lettre du Sr BURLEMAK à Mr de Blainville ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2457">Fol. 92 • 84 « Acte envoyé par Mrs les surintendans de France, touchant l'affaire des navires anglois ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2468">Fol. 93 • 85 « Lettre de Mr DE MARILLAC à Mr de Bourlemaky, sur l'affaire des vaisseaux anglois ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2482">Fol. 94 • 86 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du XIII febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2493">Fol. 96 • 87 « Lettre au roy de [JEAN VARIGNIEZ] DE BLAINVILLE, du 2 febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2501">Fol. 97 • 88 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du 3 febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2515">89 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du 2 febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2527">90 « Lettre de Mr DE BLAINVILLE au roy, du 4 febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2536">Fol. 98 • 91 « Acte des marchands françois certifians l'industrie qui leur est rendue en Angleterre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2544">Fol. 99 • 92 « Lettre de Mr DE BLAINVILLE à Mr de La Ville aux Clercs, du 4 febvrier 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2558">93 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du 3 mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2567">Fol. 100 • 94 « Lettre du roy à Mr de Blainville, du VIIIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2581">95 « Lettre de Mr PHELIPPEAUX [D'HERBAUT] à Mr de Blainville, du VIIIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2596">Fol. 101 • 96 « Lettre de Mr PHELIPPEAUX [D'HERBAUT] à Mr de Blainville, du VIIIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2613">Fol. 102 • 97 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du XIIIIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2627">Fol. 104 • 98 « Lettre de Mr PHELIPPEAUX [D'HERBAUT] à Mr de Blainville, du XIIIIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2644">Fol. 106 • 99 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy... De Grenuche, ce XVIIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2655">Fol. 107 • 100 Lettre de M. DE BLAINVILLE « à Mr d'Herbault,... De Grenuche, le XVIIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2669">101 Lettre de M. DE BLAINVILLE « à Mr le comte de Soissons, dudict Grenuche, ledict jour ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2678">Fol. 108 • 102 Lettre de M. DE BLAINVILLE « à monseigneur le cardinal de Richelieu, du dict Grenuche, le dix septiesme mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2686">103 Lettre de M. DE BLAINVILLE « à Mr l'evesque de Mande, du XVIIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2698">Fol. 109 • 104 « Lettre de [JEAN VARIGNIEZ] DE BLAINVILLE au roy, escripte de Grenuche, le XXI mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2706">Fol. 110 • 105 Lettre de M. DE BLAINVILLE « à Mr PHELIPPEAUX D'HERBAULT. De Grenuche, le XXIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2720">Fol. 111 • 106 Lettre de M. DE BLAINVILLE « à la royne mere. Dudict Grenuche, le XXIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2731">107 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du XXe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2743">Fol. 112 • 108 « Lettre de Mr DE PHELIPPEAUX [D'HERBAUT] à Mr de Blainville, du XXe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2760">Fol. 113 • 109 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du 24e mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2774">110 « Lettre de Mr PHELIPPEAUX HERBAULT à Mr de Blainville, du XXIIIIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2789">Fol. 114 • 111 Lettre de Mr PHELIPEAUX à Mr de Blainville, du XXXe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2806">Fol. 115 • 112 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du IIIe avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2820">Fol. 116 • 113 « Lettre de Mr D'HERBAULT à Mr de Blainville, du IIIe avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2837">114 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du Ve avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2849">115 « Lettre de Mr [RAIMOND PHELIPPEAUX] D'HERBAULT à Mr de Blainville, du VIIIe avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2864">Fol. 117 • 116 « Lettre du roy [LOUIS XIII] à Mr de Blainville, du XVIIIe jour d'avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2878">Fol. 118 • 117 « Lettre de Mr PHELIPPEAUX D'HERBAULT à Mr de Blainville, le 18 avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2892">Fol. 119 • 118 Lettre de JEAN VARIGNIEZ DE BLAINVILLE « à monsieur de La Ville aux Clercs,... Grenuche, le XXIe mars 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2903">Fol. 120 • 119 Lettre de M. DE BLAINVILLE « à monsieur le duc de Chaulnes. Dudict Grenuche, ledict jour ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2911">120 Lettre de M. DE BLAINVILLE « au roy ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2917">121 Lettre de M. DE BLAINVILLE « à Mr d'Herbault ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2926">Fol. 121 • 122 Lettre de M. DE BLAINVILLE « à monseigneur le cardinal de Richelieu ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2934">123 Lettre de M. DE BLAINVILLE « au roy, dudict Grenuche, le IIIe avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2943">Fol. 122 • 124 Lettre de M. DE BLAINVILLE « à Mr d'Herbault, dudit jour IIIe avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2957">125 Lettre de M. DE BLAINVILLE « au roy. De Londres, le VIIIe avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2966">126 Lettre de M. DE BLAINVILLE « à monseigneur d'Herbault. De Londres, du VIIIe avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2975">Fol. 123 • 127 Lettre de M. DE BLAINVILLE « à monseigneur le cardinal de Richelieu, dudict jour VIIIe avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2986">128 Lettre de M. DE BLAINVILLE « à monseigneur le duc d'Elboeuf, dudict jour ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2992">129 Lettre de M. DE BLAINVILLE « à monsieur de Montmorency, dudict jour ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e2998">130 Lettre de M. DE BLAINVILLE « à monsieur de Bouteville, dudict jour ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e3004">Fol. 124 • 131 Lettre de M. DE BLAINVILLE « à Mr le mareschal de Bassompierre, dudict jour ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e3015">132 Lettre de M. DE BLAINVILLE « à monsieur de Barada, dudict jour ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e3021">133 Lettre de M. DE BLAINVILLE « à Mr le president de Druis. De Londres, le VIIIe avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e3033">Fol. 125 • 134 Lettre de M. DE BLAINVILLE « à Mr de Paloiseau De Londres, du 10e avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e3047">135 Lettre de M. DE BLAINVILLE « à Mr de Soubise, dudict jour ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e3056">136 Lettre de M. DE BLAINVILLE « à Mr le chevalier de Razilly, dudict jour ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e3065">137 Lettre de M. DE BLAINVILLE « au roy. De Londres, du 29 avril 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050138_d0e3071">Fol. 126 • 138 Lettre de M. DE BLAINVILLE « à Mr d'Herbault. De Londres, dudict jour 29 avril 1626 ».</a></div></div></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3693-3694<br/>Cette cote ne correspond pas à une unité matérielle communicable. Veuillez sélectionner un document réservable parmi les niveaux inférieurs.</span></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3693-3694 
+							</div>
+<div class="did-unitid">Ancienne cote : Anc. 9192</div>
+<div class="did-label">
+<div class="did-unittitle">« Ambassade de M<emph render="super">r</emph> [JEAN VARIGNIEZ] DE BLAINVILLE, ambassadeur extraordinaire en Angleterre, 1625 et 1626 ».</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Angleterre. • Notes et pièces diverses (1625).</p>
+<p>Blainville, Jean de Varigniez, seigneur de. • Ambassade, en Angleterre (1625-1626).</p>
+<p>Conway, Lord Edward, secrétaire d'État d'Angleterre. • Lettres.</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>Le Veneur de Tillières, Tannegui, sieur de Carouges, petit-fils de Le Veneur de Tillières, Tannegui, sieur de Carouges. • Lettres.</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Pays-Bas. • Recueils (XVIIe s.).</p>
+<p>Phélypeaux d'Herbaut, Raymond. • Lettres.</p>
+<p>Richelieu, Armand-Jean du Plessis de, cardinal. • Lettres.</p>
+<p>Rome, Cour de. • Relations diplomatiques avec, la France.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050138_d0e104');">Français 3693 (cote) • Tome I.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050138_d0e1476');">Français 3694 (cote) • Tome II.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

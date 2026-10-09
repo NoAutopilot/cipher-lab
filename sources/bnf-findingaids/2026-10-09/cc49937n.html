@@ -1,0 +1,510 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049937">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049937">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3462
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049937_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937">Français 3462 • Anc. 8961 • Recueil d'une lettre originale et de copies de pièces.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e114">1 Lettre originale de « MARIE [DE MEDICIS]... à monseigneur de Breves, ambassadeur à Rome... Escript à Paris, le XXVIIIe jour de janvier 1614 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e123">Fol. 3 • 2 Mémoire sur la situation des réformés « d'Avignon ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e131">Fol. 8 • 3 « Instruction pour obtenir de Sa Saincteté la ratification du traicté » relatif aux réformés « d'Avignon et païs de Venayssin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e139">Fol. 13 • 4 Mémoire sur l'affaire des réformés d'Avignon, présenté au pape par l'ambassadeur de France. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e147">Fol. 17 • 5 Procès-verbal de l'information faite par le Sr « Anathoille Willemot, advocat fiscal au siege d'Orgelet... sur les entreprises du Sr baron de Luz sur le conté de Bourgongne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e176">Fol. 19 • 6 Lettre du Sr « DE DORTANT,... De Dortan, ce XIe jour de novembre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e195">Fol. 20 • 7 Enquête du baron de Luz dans la Bresse et le Bugey.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e218">Fol. 23 • 8 Procès-verbal de l'enquête faite par le Sr « de Paviet de Ferrieres » relativement aux menées du « conte de Chavinte, gouverneur du comté de Bourgongne » en Bresse. « Le neufiesme de novembre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e239">Fol. 25 • 9 Lettre du Sr « DAMOT,... A Bourg, ce XIIme novembre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e258">Fol. 26 • 10 « Lettre escripte au parlement de Dôle par le baron DE LUZ ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e271">Fol. 28 • 11 Bref du pape GREGOIRE XIII. « Donné à Rome, le septieme febvrier 1579 ». Traduction.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e284">Fol. 29 • 12 Bref du pape CLEMENT VIII. « Datum Romae... die X maii M.D.CIII ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e297">Fol. 30 • 13 « Plaintes de ceux de la religion [d'Avignon], et des responces que l'on pourroit leur representer ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e308">Fol. 31 et 32 • 14 Bref du pape « Paul V » concernant les affaires d'Avignon. « Donné à Rome, 6 sept. 1613, à Sainte Marie Majour ». Deux traductions.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e316">Fol. 33 et 34 • 15 Deux copies d'un bref du pape Paul V concernant les affaires d'Avignon. « Datum Romae... die sexta septembris 1613 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e324">Fol. 35 • 16 Extraits des livres XXI et XXIII des Histoires de Paul Émile. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e337">Fol. 36 • 17 « Articles accordez entre les solliciteurs françoys de court de Rome », pour le « remboursement de 4120 escuz... au Sr Gueffier,... A Rome, ce 22 juillet 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e351">Fol. 38 • 18 La même pièce en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e362">Fol. 42 • 19 Lettre de l'ambassadeur de France à Rome au pape.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e370">Fol. 43 • 20 Traité en italien intitulé : « Che la religion christiana ha fiorito fin' da principio nella Francia, et s'è conservata nelli suoi principi et re sempre incorr etta ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e383">Fol. 68 • 21 Discours sur le cérémonial des « jurnées ou dietes imperialles... 1580 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e401">Fol. 72 • 22 Fragment de « Nouvelles aportées par Rascalon, et la relation faicte par luy au nom du conte Palatin electeur ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e412">Fol. 76 • 23 « Manifeste du duc DE LORRAINE » sur la dissolution de son mariage.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e425">Fol. 80 • 24 Lettres patentes de « LOUIS XIII », relatives à l'«assiette du douaire de la royne regente [Marie de Médicis]... Donné à Paris », le 25 juillet 1611.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e443">Fol. 88 • 25 « Harangue du roy de la Grande Bretagne [CHARLES Ier] aux Estats assemblez en la ville de Wessimynster ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e459">26 « Harangue du garde des sceaux de la Grande Bretagne en l'assemblée des Estats, le 27 mars 1628 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e465">Fol. 91, 101, 103 et 106 • 27 Quatre chiffres avec clefs.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e473">Fol. 102 • 28 « Double du chiffre envoyé à monseigneur de Villeroy, en 1614 », avec clef.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e486">Fol. 104 • 29 « Chiffre reformé pour Levant, duquel a esté envoyé un double à monseigneur de Breves, ambassadeur, en avril 1604 », avec clef.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049937_d0e499">Fol. 105 • 30 « Chiffre à monseigneur de Fresnes », avec clef.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3462 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49937n&Cote=Français 3462&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058227h">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 16478 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49937n&Cote=MF 16478&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3462 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8961</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil d'une lettre originale et de copies de pièces.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 16478. Cote de la matrice (pour commander une reproduction) : R 153422.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058227h" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9058227h.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9058227h.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Angleterre. • Notes et pièces diverses.</p>
+<p>Avignon. • Notes et pièces diverses.</p>
+<p>Avignon. • Protestants.</p>
+<p>Chiffres diplomatiques.</p>
+<p>Chiffres diplomatiques. • Clefs.</p>
+<p>Diètes. • Cérémonial.</p>
+<p>Empereurs d'Allemagne. • Diètes impériales, cérémonial.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Marie de Médicis, reine de France. • Actes et lettres.</p>
+<p>Paul V, pape. • Brefs, relatifs aux affaires d'Avignon.</p>
+<p>Rascalon, Guillaume de. • Mission en Allemagne.</p>
+<p>Rome, Cour de. • Relations diplomatiques avec, la France.</p>
+<p>Thierry, Augustin. • Monuments de l'histoire du tiers-état.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e114');">1 Lettre originale de « MARIE [DE MEDICIS]... à monseigneur de Breves, ambassadeur à Rome... Escript à Paris, le XXVIIIe jour de janvier 1614 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e123');">2 Mémoire sur la situation des réformés « d'Avignon ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e131');">3 « Instruction pour obtenir de Sa Saincteté la ratification du traicté » relatif aux réformés « d'Avignon et païs de Venayssin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e139');">4 Mémoire sur l'affaire des réformés d'Avignon, présenté au pape par l'ambassadeur de France. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e147');">5 Procès-verbal de l'information faite par le Sr « Anathoille Willemot, advocat fiscal au siege d'Orgelet... sur les entreprises du Sr baron de Luz sur le conté de Bourgongne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e176');">6 Lettre du Sr « DE DORTANT,... De Dortan, ce XIe jour de novembre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e195');">7 Enquête du baron de Luz dans la Bresse et le Bugey.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e218');">8 Procès-verbal de l'enquête faite par le Sr « de Paviet de Ferrieres » relativement aux menées du « conte de Chavinte, gouverneur du comté de Bourgongne » en Bresse. « Le neufiesme de novembre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e239');">9 Lettre du Sr « DAMOT,... A Bourg, ce XIIme novembre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e258');">10 « Lettre escripte au parlement de Dôle par le baron DE LUZ ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e271');">11 Bref du pape GREGOIRE XIII. « Donné à Rome, le septieme febvrier 1579 ». Traduction.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e284');">12 Bref du pape CLEMENT VIII. « Datum Romae... die X maii M.D.CIII ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e297');">13 « Plaintes de ceux de la religion [d'Avignon], et des responces que l'on pourroit leur representer ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e308');">14 Bref du pape « Paul V » concernant les affaires d'Avignon. « Donné à Rome, 6 sept. 1613, à Sainte Marie Majour ». Deux traductions.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e316');">15 Deux copies d'un bref du pape Paul V concernant les affaires d'Avignon. « Datum Romae... die sexta septembris 1613 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e324');">16 Extraits des livres XXI et XXIII des Histoires de Paul Émile. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e337');">17 « Articles accordez entre les solliciteurs françoys de court de Rome », pour le « remboursement de 4120 escuz... au Sr Gueffier,... A Rome, ce 22 juillet 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e351');">18 La même pièce en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e362');">19 Lettre de l'ambassadeur de France à Rome au pape.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e370');">20 Traité en italien intitulé : « Che la religion christiana ha fiorito fin' da principio nella Francia, et s'è conservata nelli suoi principi et re sempre incorr etta ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e383');">21 Discours sur le cérémonial des « jurnées ou dietes imperialles... 1580 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e401');">22 Fragment de « Nouvelles aportées par Rascalon, et la relation faicte par luy au nom du conte Palatin electeur ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e412');">23 « Manifeste du duc DE LORRAINE » sur la dissolution de son mariage.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e425');">24 Lettres patentes de « LOUIS XIII », relatives à l'«assiette du douaire de la royne regente [Marie de Médicis]... Donné à Paris », le 25 juillet 1611.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e443');">25 « Harangue du roy de la Grande Bretagne [CHARLES Ier] aux Estats assemblez en la ville de Wessimynster ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e459');">26 « Harangue du garde des sceaux de la Grande Bretagne en l'assemblée des Estats, le 27 mars 1628 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e465');">27 Quatre chiffres avec clefs.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e473');">28 « Double du chiffre envoyé à monseigneur de Villeroy, en 1614 », avec clef.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e486');">29 « Chiffre reformé pour Levant, duquel a esté envoyé un double à monseigneur de Breves, ambassadeur, en avril 1604 », avec clef.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049937_d0e499');">30 « Chiffre à monseigneur de Fresnes », avec clef.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

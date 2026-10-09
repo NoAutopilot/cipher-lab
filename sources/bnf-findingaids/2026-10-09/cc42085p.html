@@ -1,0 +1,553 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000042085">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000042085">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 762-1070</div>
+					<h1>          Français          1054
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000042085_info">Informations bibliographiques</a></div><div class="niv0"><div class="withoutChild"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000042085">Français 1054 • Regius 7339(2) • Le vie des sains, traduction française anonyme de la Legenda aurea de Jacques de Voragine avec interpolations d'Honorius d'Autun</a></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 1054 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc42085p&Cote=Français 1054&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058072n">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 35689 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc42085p&Cote=MF 35689&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 1054 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Regius 7339(2)</div>
+<div class="did-label">
+<div class="did-unittitle">
+<emph render="italic">Le vie des sains</emph>, traduction française anonyme de la <emph render="italic">Legenda aurea</emph> de Jacques de Voragine avec interpolations d'Honorius d'Autun</div>
+</div>
+<div class="did-date">1450 (colophon, f. 400v)</div>
+<div class="divdid">Tournai<br/>
+<br/>
+<emph render="italic">Littera cursiva</emph> ; deux mains se partagent la copie : la première pour les ff. 1-31 et 43-428, l'autre pour les ff. 32-42.<br/>Initiales simples et titres courants en rouge ; rehauts et soulignements en rouge.<br/>Papier. 4 gardes + 428 feuillets + 3 gardes. 287 x 202 mm (justif. 190 x 122, f. 91r).<br/>Filigrane « lettre P », proche de Briquet n° 8590 (Saint Omer, 1450) ; papier différent pour les ff. 32-42. Foliotation moderne au recto dans la marge supérieure ; signatures des cahiers. <br/>Réglure à la pointe sèche pour les ff. 1-31 et 43-428, à l'encre brune pour les ff. 32-42.<br/>Estampilles « Bibliothecae regiae » aux ff. 1r et 428v (Josserand-Bruno type B, 32 mm, en service au premier quart du XVIII<emph render="super">e</emph> s.).<br/>Reliure en veau fauve aux armes de France sur les plats, chiffre de Louis XV au dos.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>Au f. 400v, après la <emph render="italic">Vie de saint Félix</emph> (<emph render="italic">in Pincis</emph>), un colophon indique que la traduction a été achevée par un moine de Saint-Nicolas-des-Près à <span class="bam-link">
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb12037700p" class="hrefLink ext">Tournai</a>
+</span> le 25 août 1450, fête de saint Louis et <emph render="italic">translatio</emph> de saint Éleuthère (fête propre au diocèse de Tournai, cf. H. Grotefend, <emph render="italic">Zeitrechnung</emph>, s.v. « Eleutherii ep. Tornacen. », <a title="Consulter ce document" target="_blank" href=" https://bilder.manuscripta-mediaevalia.de/gaeste/grotefend/h_e.htm" class="hrefLink ext">en ligne</a>) : « Escript et complet el monastere de saint Nicholai des Pres les Tournai en l'an de grace mil IIIIc et chinquante le jour saint Lois et Eleuthere glorieus confessors de Jhesucrist », suivi, en grosses lettres, de : « Translaté par ung povre pecheur et petit clerc duquel dieu par les merites des sains nommes en cheste legende d'or et de tous aultres voeulle connoistre le nom et le resjoir de la douche vois de vie. Venes benois el regne a vous prepare de Dieu. Amen ». Le manuscrit continue au feuillet suivant avec la <emph render="italic">Vie de saint Marcel pape</emph>.</p>
+<p>Plusieurs annotations (XV<emph render="super">e</emph>-XVI<emph render="super">e</emph> s.) aux feuillets 2r et 428v, dont au f. 2r une signature « Jehan Bayon (?) » suivie par une quittance (mention de prise de blé ?) faisant réfèrence à la paroisse de Saint-Nicolas. </p>
+<p>Comme l'indiquent l'ex-libris et l'ancienne cote sur le contreplat antérieur (« Codex Bigotianus, 73 »), le manuscrit provient de la collection de la <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb16709199j" class="hrefLink ext">famille Bigot</a>, entrée à la Bibliothèque du Roi en 1706 (cf. Delisle, <emph render="italic">Cab. des mss.</emph>, I, 322-329). </p>
+</span>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>
+<emph render="bold">f. 1r-428v</emph>. « Le vie des sains », traduction française anonyme de la <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb11950306s" class="hrefLink ext">Legenda aurea</a> de <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb11908402k" class="hrefLink ext">Jacques de Voragine</a> avec interpolations du <emph render="italic">Speculum Ecclesia</emph> d'<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb120059720" class="hrefLink ext">Honorius d'Autun</a>. Les vies des saints sont classées dans l’ordre de l’année liturgique.</p>
+<p>prologue f. 1r-2r : « [L]e universel tamps de le vie presente est devisés en .iiii., ch'est en tamps de deviation renovation... — ...quartement des festes venans el tamps de peregrination lequel tamps l'eglise represente depuis le octave de pentecouste desi al advent » suivi par « Fin du prologue de le vie des sains, s'ensuivent les capitles, et primes ».</p>
+<p>f. 2v-4v : tables, avec titre et numéro des articles en chiffres romains, renvoyant à la numérotation des articles dans le corps du texte, dans le coin supérieur des feuillets.</p>
+<p>f. 6v-428v : « Le advent de Dieu est celebre par .iiii. sepmaines pour signifier que sont .iiii. advent... — …desquels furent fais mout de miracles et se font de jour en jour ».</p>
+<p>Les feuillets 5-6r, 47v-48r et 106v sont blancs.</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>
+<emph render="bold">Inventaires et catalogues</emph>
+<br/>— <emph render="italic">Catalogue des manuscrits français. Tome premier : Ancien fonds</emph>, Paris, Firmin Didot, 1868, pp. 179-180, n° 1054. <br/>— Léopold Delisle, <emph render="italic">Bibliotheca Bigotiana manuscripta. Catalogue des manuscrits rassemblés au XVIIe siècle par les Bigot, mis en vente au mois de juillet 1706, aujourd'hui conservés à la Bibliothèque nationale</emph>, Rouen, Doissel, 1877, p. 24, n° 73. <br/> —Anne-Françoise Leurquin et Marie-Laure Savoye, notice de "Paris, Bibliothèque nationale de France, Manuscrits, fr. 01054" dans la base Jonas-IRHT/CNRS [permalink : <a title="Consulter ce document" bib="2" target="_blank" href="http://jonas.irht.cnrs.fr/manuscrit/73176" class="hrefLink ext">http://jonas.irht.cnrs.fr/manuscrit/73176</a>, consultation du 24/04/2026]<br/>— <emph render="italic">Arlima</emph>, notice du manuscrit Français 1054 [permalink : <a title="Consulter ce document" bib="2" target="_blank" href="https://arlima.net/no/7795" class="hrefLink ext">https://arlima.net/no/7795</a>, consultation du 24/04/2026].</p>
+<p>
+<emph render="bold">Etudes et citations</emph>
+<br/>— Brenda Dunn-Lardeau, « Etude autour d'une Légende dorée (Lyon, 1476) » in Travaux de Linguistique et de Littérature, 24/1 (1986), pp. 257-258. <br/> — Olivier Collet et Sylvanie Messerli, <emph render="italic">Vies médiévales de Marie-Madeleine</emph>, Turnhout : Brepols, 2008, cité dans les sources.       <br/> — Martina Di Febo, Les versions en prose du Purgatoire de saint Patrice en ancien français, Paris, Champion, 2013 (Classiques français du Moyen Age, 172), p. 198. <br/> — Jean Miélot, <emph render="italic">Vie de sainte Katherine</emph>, édition critique par Maria Colombo Timelli, Paris : Classiques Garnier, 2015, cité p. 241. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb44357428r" class="hrefLink ext">8-IMPR-12120</a>.<br/>— Geneviève Hasenhohr et Anne-Françoise Labie-Leurquin, « Traductions et commentaires médiévaux du <emph render="italic">Pater</emph> en langue d’oïl : inventaire provisoire », dans Francesco Siri (dir.), <emph render="italic">Le Pater noster au XII<emph render="super">e</emph> siècle : lectures et usages</emph>, Turnhout : Brepols, 2015, p. 235-248, cité p. 236. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb44309650x" class="hrefLink ext">8-IMPR-12162</a>.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 35689. Cote de la matrice (pour commander une reproduction) : R 235743.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058072n" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9058072n.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9058072n.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="processinfo-class">
+<div class="label-part">
+<p class="processinfo-label">Informations sur le traitement</p>
+</div>
+<div class="description-part">
+<span>
+<p>Notice rédigée par Graziella Pastore (avril 2026).</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Barlaam et Josaphat.</p>
+<p>Jacques de Voragine, ou de Varazzo. • Légende dorée.</p>
+<p>Traduction de la Légende dorée.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<br/>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

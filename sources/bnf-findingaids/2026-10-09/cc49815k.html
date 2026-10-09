@@ -1,0 +1,474 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049815">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049815">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3350
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049815_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815">Français 3350 • Anc. 8853 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e104">1 Lettre de « HENRY [III]... à mon cousin le duc de Nyvernois,... A St Germain en Laye, le XXIIe jour de janvier 1581 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e116">Fol. 2 • 2 Lettres closes de « HENRY » III aux « maire, eschevins, bourgeois et habitans de la Charité... A St Germain en Laye, le XXIIe jour de janvier 1581 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e135">Fol. 3 • 3 Lettre du Sr « ANCEL,... à monseigneur... le duc de Nyvernois, prince [de] Mantoue et Rethelois,... De Prague, le IIIe jour de janvier 1581 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e154">Fol. 6 • 4 Lettre du Sr « BRULART,... à monseigneur... le duc de Nivernoys,... De Chenonceau, ce XXVe jour de janvier 1851 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e173">Fol. 10 • 5 Lettre de « CATERINE [DE MEDICIS]... à ma cousine madame de Nevers,... De Chatelereau, set IIIe d'avril 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e184">Fol. 11 • 6 Lettre de « HENRY [III]... à mon cousin le duc de Nemours et de Genevoys,... A Blois, le XIIe jour d'avril 1581 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e195">Fol. 13 • 7 Lettre de « CATERINE [DE MEDICIS]... à ma cousin madame de Nevers,... De Bonel, cet XVIIIme de may 1581 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e206">Fol. 15 • 8 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Chenonceaulx, cet VIIme d'avril 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e217">Fol. 17 • 9 Lettre de « CATERINE [DE MEDICIS]... à ma cousine madame de Nevers,... De Chenonceaulx, cet XIIIIme d'avril 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e228">Fol. 19 • 10 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Chenonceaulx, cet XIIIIme d'avril 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e239">Fol. 21 • 11 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Chenonceaulx, cet XVme d'avril 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e250">Fol. 23 • 12 Lettre de « CATERINE [DE MEDICIS]... à ma cousine madame de Nevers,... De Chenonceaulx, cet X3e d'avril 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e261">Fol. 24 • 13 Lettre de « HENRY [III]... à mon oncle le duc de Nemours,... A Paris, le XXIIIe jour d'apvril 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e272">Fol. 26 • 14 Mémoire contre le duc de Mantoue. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e280">Fol. 28 • 15 Lettre de VINCENT, « principe DI MANTOVA,... al... Sr duca di Nevers,... Di Mantova, a 23 d'agosto 1582 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e296">Fol. 30 • 16 Lettre de VINCENT, « principe DI MANTOVA,... al... signor duca di Nevers,... Di Mantova, a 13 d'ottobre 1582 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e304">Fol. 33 • 17 Lettre de « LUIGI, cardinale D'ESTE,... à monsieur..: le duc de Nevers,... A Tivolly, le penultime d'octobre 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e322">Fol. 35 • 18 Lettre de VINCENT, « principe DI MANTOVA,... al... signor duca di Nevers,... Di Mantova, a 15 di decembre 1582 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e330">Fol. 37 • 19 Lettre du Sr « SALVAT,... à monseigneur... le duc de Nivernois et Rhettellois,... De Mantoue, le seiziesme decembre 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e346">Fol. 40 • 20 « Dispute arrivée au conseil privé du roy, luy presant, entre les chancelier et court de parlement de Roan... 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e364">Fol. 42 • 21 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à monsieur... le duc de Nevers, mon frere... De Nimes, ce 25 de jenvier 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e382">Fol. 44 • 22 Lettre de « HENRY [III]... à mon cousin monsieur le prince de Mantoue ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e390">Fol. 45 • 23 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le prince de Mantoue,... De Paris, ce XXVIme de jenvier 1583 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e406">Fol. 46 • 24 Lettre, en italien, de LOUIS DE GONZAGUE, duc DE NEVERS, au prince de Mantoue. « A Parigi, il ultimo di gennaro 1583 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e414">Fol. 47 • 25 « Coppie de l'estat du roy en la generalité de Moulins... Au conseil du roy tenu à Chartres... le premier jour de febvrier mil cinq cens quatre vingtz trois. Signé : HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e422">Fol. 49 • 26 Instruction du roi « à monsieur [Paul Hurault, Sr] de Messe, son ambassadeur à Venize... 1583, 16 febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e436">Fol. 53 • 27 Lettre du duc DE NEVERS à « monsieur de Ruffey,... De Nevers, ce 17 mars 1583 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e459">28 Lettre de « Mr DE RUFFEY » au duc de Nevers. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e468">Fol. 54 • 29 Lettre de M. DE « SAINTE-MARIE » au duc de Nevers. « A Paris, ce VIIIIe mars 1583 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e494">Fol. 56 • 30 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Paris, cet XXIIme de mars 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e515">Fol. 57 • 31 Lettre de « CHARLES DE BOURBON [comte DE SOISSONS]... à monsieur... le duc de Nevers,... De Paris, ce 22 mars 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e538">Fol. 59 • 32 Lettre de « HENRY [III]... à mon cousin le duc de Nyvernois,... De Paris, le XXIIIe jour de mars 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e559">Fol. 61 • 33 Lettre de NICOLAS « DE NEUFVILLE [Sr DE VILLEROY]... à monseigneur... le duc de Nivernois,... De Paris, le XXIIIe jour de mars 1587 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e588">Fol. 63 • 34 Lettre de VINCENT, « principe DI MANTOVA,... all' illmo... signor duca di Nevers,... Di Mantova, li 24 di marzo 1583 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e614">Fol. 66 • 35 Lettre de « HENRY DE BOURBON,... à monsieur... le duc de Nevers,... De Sainct Jehan, ce 26 jour de mars 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e632">Fol. 68 • 36 Lettre écrite par le duc DE NEVERS à la reine. « Nevers, 1583, 27 mars ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e650">Fol. 69 • 37 Réponse du duc DE MANTOUE à « l'escrit baillé par Mr de Maisse,... et... attestation que le Sr Salvat n'a volu attendre pour veoir M. le duc... In Revere, a X di marzo 1583 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e679">Fol. 70 • 38 « Coppie d'une lettre escripte par monseigneur [DE NEVERS], de sa main, à monseigneur de Villeroy,... De Nevers, ce 27 mars 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e697">Fol. 72 • 39 Instructions du roi « au Sr de Maisse,... son ambassadeur à Venize », envoyé vers le duc de Mantoue.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e721">Fol. 74 • 40 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le premier jour de avril 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e739">Fol. 77 • 41 Lettre de M. D'«AMBLY,... à monseigneur [le duc de Nevers]... D'Ambly, le IIIIe apvril 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e765">Fol. 79 • 42 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le XIIIe jour de avril 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e786">Fol. 82 • 43 Lettre de « CATHERINE [DE MEDICIS]... à mon cousin le prince de Portian,... A Chenonceau, ce XVIme jour d'avril 1583 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e807">Fol. 83 • 44 Lettre de CATHERINE DE CLEVES, princesse de Portien, « à monsieur... le deuc de Nivernois ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e830">Fol. 85 • 45 « Coppie de la lectre que le roy a escript à monsieur le prince de Mantoue,... A Paris, le XXVIe jour d'apvril 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e856">Fol. 87 • 46 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le XXVIIe jour de avril 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e877">Fol. 89 • 47 Lettre de « CHARLES DE BOURBON,... à monsieur... le duc de Nevers,... De Paris, ce 2 may 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e900">Fol. 92 • 48 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le cinqe jour de mai 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e921">Fol. 95 • 49 Lettre de « CATERINE [DE MEDICIS]... à ma cousine madame de Nevers,... De Parys, cet VIme de may 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e942">Fol. 97 • 50 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le VIIe jour de mai 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e963">Fol. 100 • 51 « Copie » de lettre du duc DE NEVERS « à M. de Ruffey, 7 may 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e981">Fol. 102 • 52 Lettre de « FRANÇOYS DE BOURBON [prince DE CONTI]... à monsieur... le duc de Nevers,... A Bonnestable, le XIIIe mai 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1007">Fol. 104 • 53 « Lectre du roy... CHARLES (sic, au lieu de HENRI III) » au « prince de Portian,... A Paris, XIXe may 1583 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1031">Fol. 106 • 54 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le XXIIe jour de mai 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1052">Fol. 110 • 55 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Seynt Mort de Fusés, cet dernyer jour deu moys de may 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1070">Fol. 112 • 56 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Monceaulx, cet XIme de jouyn 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1091">Fol. 113 • 57 Lettre du duc DE NEVERS à la reine. « De La Chappelle d'Angillon, ce 12 juing 1583 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1109">Fol. 114 • 58 Lettre du duc DE NEVERS à « monsieur Pinart,... De la Chappelle, ce 12 jung 1583 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1127">Fol. 115 • 59 Lettre de « Frater FRANCISCUS GONZAGA,... ordinis Fratrum minorum generalis... Romae, die XV junii 1587 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1150">Fol. 118 • 60 Lettre de « CATERINE [DE MEDICIS]... à mon consin monsieur de Nevers,... De Mesiere ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1168">Fol. 119 • 61 Lettre de « HENRY [III]... à mon cousin le duc de Nivernois,... A Maisieres, le IIIme jour de juillet 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1189">Fol. 120 • 62 Projet de règlement pour les affaires du duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1212">Fol. 125 • 63 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Paris, cet IIIme de haust 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1233">Fol. 127 • 64 Lettre de M. « DE NEUFVILLE,... à monseigneur le duc de Nevers,... De Paris, le VIIe jour de aoust 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1254">Fol. 131 • 65 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Villeroi, ce IXe jour de septembre 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1275">Fol. 134 • 66 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De St Mort, cet troysieme d'octobre 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1296">Fol. 135 • 67 Lettre de « HENRY [III]... à mon cousin le duc de Nivernois,... Aux Mesnuz, le Ve jour d'octobre 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1317">Fol. 136 • 68 Lettre de « JACQUES [VI], r[oi d'Écosse]... De Alirudhous, ce 15 jour de novembre 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1340">Fol. 138 • 69 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon cousin monseigneur le duc de Nevers,... A Chasteau Thierry, le XXIIIIe jour de novembre 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1366">Fol. 141 • 70 Lettres patentes de « HENRY » III, nommant chancelier de France le garde des sceaux « Philippes Hurault, vicomte de Chiverny,... A St Germain en Laye, le vingt sixieme jour de novembre... mil cinq cens quatre vingtz trois ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1387">Fol. 143 • 71 Indulgence octroyée par le pape GREGOIRE XIII en faveur de ceux qui visiteront l'église « du S. Presepe pres... du chasteau de Gaillon... A Rome... l'an... mil cinq cens quatre vingts un, le treiziesme septembre », publiée par « Claude de Sainctes,... evesque d'Evreux... A Condé... l'an... mil cinq cens quatre vingts et trois, le vingt huictiesme de novembre ». ù Imprimé.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1415">Fol. 145 • 72 « Coppie de lectres patentes octroiées à madame d'Angoulesme, pour jouir du domaine de Ponthieu en recompance du duché de Chastelerault... A Fontainebleau, au mois d'aoust... mil V.C.IIII.XX.II ». Signé : « HENRY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1449">Fol. 146 • 73 « Coppie de 2 lectres escrittes de la main de monseigneur [le duc DE NEVERS], l'une au roy de Navarre, et l'autre à monseigneur le prince de Condé,... 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1467">Fol. 148 • 74 Lettre de « HENRY DE BOURBON,... à monsieur mon frere... le duc de Nyvernoys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1485">Fol. 150 • 75 Lettre de « HENRY [III]... à mon cousin le duc de Nevers,... A St Germain en Laye, le XIIe jour de janvier 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1509">Fol. 151 • 76 Lettre de M. « DE NEUFVILLE » au duc de Nevers. « De St Germain, ce XVIe de janvier 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1533">Fol. 152 • 77 Lettre de « HENRY [roi DE NAVARRE]... à mon cousin monsieur le duc de Nivernoys,... De Pau, ce VIIIe jour de mars 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1549">Fol. 153 • 78 « Coppie du memoire baillé à Me Toussaintz pour faire faire à Liege 24 serrures avec leurs clefz... 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1570">Fol. 155 • 79 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon cousin monseigneur le duc de Nivernoys,... A Chasteau Thierry, le XXIIIIe jour de mars 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1591">Fol. 157 • 80 Lettre de « HENRY DE BOURBON,... à monsieur mon frere... le duc de Nevers,... A St Jehan d'Angely, le XXme jour de juing 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1605">Fol. 159 • 81 Lettre de « PIETRO FRANCESCO SAPIENTE,... al... cavagliero Guazzo,... Di Casale, li XVI di luglio 1584 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1618">Fol. 161 • 82 Commission du roi « HENRY [III]... à Nicollas Moreau, maistre en nostre chambre des comptes, et Clavier Gaultier, maistre particullier de nos eaux et forestz, à Chasteau Thierry », pour le « bail et adjudication » des « terres vaines et vagues, communes, marestz, landes, palludz, brussailles », dépendant de « Chasteau Thierry, Chastillon, Espernay et Sezannes... A Fontainebleau, le XIXe jour de juillet... mil V.C. quatre vingtz quatre ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1652">Fol. 162 • 83 Ordre donné par le duc de « Nyvernois [FRANÇOIS Ier DE CLEVES]... gouverneur... en Champaigne, Brie et Luxembourg... aux cappitaine... maire, eschevins, manans et habitans... de Rethel... De Rethel, le XIIeme jour d'aoust mil V.C. cinquante trois ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1684">Fol. 164 • 84 « Coppie de lectre escripte par monseigneur [le duc DE NEVERS] au pappe... Di Pariggi, il 29 d'agosto 1584 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1697">Fol. 165 • 85 Lettre des « gens du conseil et des comptes à Nevers... à messieurs... les president Seguier et conseillier Ladmongnon,... A Nevers, le VIIme septembre 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1713">Fol. 166 • 86 Lettre de « HENRY DE BOURBON,... à monsieur mon frere... le duc de Nevers,... A St Jehan d'Angely, l'onzieme de decembre 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1729">Fol. 168 • 87 Lettre de « CLAUDIO AQ[UAVIVA]... generale dei Gesuiti... al... signore duca di Nevers,... Di Roma, a II di decembre 1584 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049815_d0e1737">Fol. 170 • 88 Lettre en chiffre.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3350 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49815k&Cote=Français 3350&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3350 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8853</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="controlaccess-class">
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Chiffres diplomatiques.</p>
+<p>Condé, Henri II de Bourbon, prince de. • Actes et lettres.</p>
+<p>Gonzague, Vincent Ier de, duc de Mantoue. • Lettres et actes.</p>
+<p>Henri III, roi de France. • Actes et lettres.</p>
+<p>Henri III, roi de France. • Notes et pièces diverses.</p>
+<p>Henri IV, roi de France. • Actes et lettres.</p>
+<p>Mantoue. • Succession du duché.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e104');">1 Lettre de « HENRY [III]... à mon cousin le duc de Nyvernois,... A St Germain en Laye, le XXIIe jour de janvier 1581 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e116');">2 Lettres closes de « HENRY » III aux « maire, eschevins, bourgeois et habitans de la Charité... A St Germain en Laye, le XXIIe jour de janvier 1581 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e135');">3 Lettre du Sr « ANCEL,... à monseigneur... le duc de Nyvernois, prince [de] Mantoue et Rethelois,... De Prague, le IIIe jour de janvier 1581 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e154');">4 Lettre du Sr « BRULART,... à monseigneur... le duc de Nivernoys,... De Chenonceau, ce XXVe jour de janvier 1851 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e173');">5 Lettre de « CATERINE [DE MEDICIS]... à ma cousine madame de Nevers,... De Chatelereau, set IIIe d'avril 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e184');">6 Lettre de « HENRY [III]... à mon cousin le duc de Nemours et de Genevoys,... A Blois, le XIIe jour d'avril 1581 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e195');">7 Lettre de « CATERINE [DE MEDICIS]... à ma cousin madame de Nevers,... De Bonel, cet XVIIIme de may 1581 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e206');">8 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Chenonceaulx, cet VIIme d'avril 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e217');">9 Lettre de « CATERINE [DE MEDICIS]... à ma cousine madame de Nevers,... De Chenonceaulx, cet XIIIIme d'avril 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e228');">10 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Chenonceaulx, cet XIIIIme d'avril 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e239');">11 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Chenonceaulx, cet XVme d'avril 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e250');">12 Lettre de « CATERINE [DE MEDICIS]... à ma cousine madame de Nevers,... De Chenonceaulx, cet X3e d'avril 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e261');">13 Lettre de « HENRY [III]... à mon oncle le duc de Nemours,... A Paris, le XXIIIe jour d'apvril 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e272');">14 Mémoire contre le duc de Mantoue. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e280');">15 Lettre de VINCENT, « principe DI MANTOVA,... al... Sr duca di Nevers,... Di Mantova, a 23 d'agosto 1582 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e296');">16 Lettre de VINCENT, « principe DI MANTOVA,... al... signor duca di Nevers,... Di Mantova, a 13 d'ottobre 1582 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e304');">17 Lettre de « LUIGI, cardinale D'ESTE,... à monsieur..: le duc de Nevers,... A Tivolly, le penultime d'octobre 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e322');">18 Lettre de VINCENT, « principe DI MANTOVA,... al... signor duca di Nevers,... Di Mantova, a 15 di decembre 1582 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e330');">19 Lettre du Sr « SALVAT,... à monseigneur... le duc de Nivernois et Rhettellois,... De Mantoue, le seiziesme decembre 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e346');">20 « Dispute arrivée au conseil privé du roy, luy presant, entre les chancelier et court de parlement de Roan... 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e364');">21 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à monsieur... le duc de Nevers, mon frere... De Nimes, ce 25 de jenvier 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e382');">22 Lettre de « HENRY [III]... à mon cousin monsieur le prince de Mantoue ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e390');">23 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le prince de Mantoue,... De Paris, ce XXVIme de jenvier 1583 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e406');">24 Lettre, en italien, de LOUIS DE GONZAGUE, duc DE NEVERS, au prince de Mantoue. « A Parigi, il ultimo di gennaro 1583 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e414');">25 « Coppie de l'estat du roy en la generalité de Moulins... Au conseil du roy tenu à Chartres... le premier jour de febvrier mil cinq cens quatre vingtz trois. Signé : HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e422');">26 Instruction du roi « à monsieur [Paul Hurault, Sr] de Messe, son ambassadeur à Venize... 1583, 16 febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e436');">27 Lettre du duc DE NEVERS à « monsieur de Ruffey,... De Nevers, ce 17 mars 1583 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e459');">28 Lettre de « Mr DE RUFFEY » au duc de Nevers. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e468');">29 Lettre de M. DE « SAINTE-MARIE » au duc de Nevers. « A Paris, ce VIIIIe mars 1583 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e494');">30 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Paris, cet XXIIme de mars 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e515');">31 Lettre de « CHARLES DE BOURBON [comte DE SOISSONS]... à monsieur... le duc de Nevers,... De Paris, ce 22 mars 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e538');">32 Lettre de « HENRY [III]... à mon cousin le duc de Nyvernois,... De Paris, le XXIIIe jour de mars 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e559');">33 Lettre de NICOLAS « DE NEUFVILLE [Sr DE VILLEROY]... à monseigneur... le duc de Nivernois,... De Paris, le XXIIIe jour de mars 1587 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e588');">34 Lettre de VINCENT, « principe DI MANTOVA,... all' illmo... signor duca di Nevers,... Di Mantova, li 24 di marzo 1583 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e614');">35 Lettre de « HENRY DE BOURBON,... à monsieur... le duc de Nevers,... De Sainct Jehan, ce 26 jour de mars 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e632');">36 Lettre écrite par le duc DE NEVERS à la reine. « Nevers, 1583, 27 mars ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e650');">37 Réponse du duc DE MANTOUE à « l'escrit baillé par Mr de Maisse,... et... attestation que le Sr Salvat n'a volu attendre pour veoir M. le duc... In Revere, a X di marzo 1583 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e679');">38 « Coppie d'une lettre escripte par monseigneur [DE NEVERS], de sa main, à monseigneur de Villeroy,... De Nevers, ce 27 mars 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e697');">39 Instructions du roi « au Sr de Maisse,... son ambassadeur à Venize », envoyé vers le duc de Mantoue.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e721');">40 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le premier jour de avril 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e739');">41 Lettre de M. D'«AMBLY,... à monseigneur [le duc de Nevers]... D'Ambly, le IIIIe apvril 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e765');">42 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le XIIIe jour de avril 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e786');">43 Lettre de « CATHERINE [DE MEDICIS]... à mon cousin le prince de Portian,... A Chenonceau, ce XVIme jour d'avril 1583 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e807');">44 Lettre de CATHERINE DE CLEVES, princesse de Portien, « à monsieur... le deuc de Nivernois ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e830');">45 « Coppie de la lectre que le roy a escript à monsieur le prince de Mantoue,... A Paris, le XXVIe jour d'apvril 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e856');">46 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le XXVIIe jour de avril 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e877');">47 Lettre de « CHARLES DE BOURBON,... à monsieur... le duc de Nevers,... De Paris, ce 2 may 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e900');">48 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le cinqe jour de mai 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e921');">49 Lettre de « CATERINE [DE MEDICIS]... à ma cousine madame de Nevers,... De Parys, cet VIme de may 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e942');">50 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le VIIe jour de mai 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e963');">51 « Copie » de lettre du duc DE NEVERS « à M. de Ruffey, 7 may 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e981');">52 Lettre de « FRANÇOYS DE BOURBON [prince DE CONTI]... à monsieur... le duc de Nevers,... A Bonnestable, le XIIIe mai 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1007');">53 « Lectre du roy... CHARLES (sic, au lieu de HENRI III) » au « prince de Portian,... A Paris, XIXe may 1583 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1031');">54 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Paris, le XXIIe jour de mai 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1052');">55 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Seynt Mort de Fusés, cet dernyer jour deu moys de may 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1070');">56 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Monceaulx, cet XIme de jouyn 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1091');">57 Lettre du duc DE NEVERS à la reine. « De La Chappelle d'Angillon, ce 12 juing 1583 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1109');">58 Lettre du duc DE NEVERS à « monsieur Pinart,... De la Chappelle, ce 12 jung 1583 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1127');">59 Lettre de « Frater FRANCISCUS GONZAGA,... ordinis Fratrum minorum generalis... Romae, die XV junii 1587 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1150');">60 Lettre de « CATERINE [DE MEDICIS]... à mon consin monsieur de Nevers,... De Mesiere ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1168');">61 Lettre de « HENRY [III]... à mon cousin le duc de Nivernois,... A Maisieres, le IIIme jour de juillet 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1189');">62 Projet de règlement pour les affaires du duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1212');">63 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De Paris, cet IIIme de haust 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1233');">64 Lettre de M. « DE NEUFVILLE,... à monseigneur le duc de Nevers,... De Paris, le VIIe jour de aoust 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1254');">65 Lettre de M. « DE NEUFVILLE,... à monseigneur... le duc de Nevers,... De Villeroi, ce IXe jour de septembre 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1275');">66 Lettre de « CATERINE [DE MEDICIS]... à mon cousin monsieur de Nevers,... De St Mort, cet troysieme d'octobre 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1296');">67 Lettre de « HENRY [III]... à mon cousin le duc de Nivernois,... Aux Mesnuz, le Ve jour d'octobre 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1317');">68 Lettre de « JACQUES [VI], r[oi d'Écosse]... De Alirudhous, ce 15 jour de novembre 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1340');">69 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon cousin monseigneur le duc de Nevers,... A Chasteau Thierry, le XXIIIIe jour de novembre 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1366');">70 Lettres patentes de « HENRY » III, nommant chancelier de France le garde des sceaux « Philippes Hurault, vicomte de Chiverny,... A St Germain en Laye, le vingt sixieme jour de novembre... mil cinq cens quatre vingtz trois ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1387');">71 Indulgence octroyée par le pape GREGOIRE XIII en faveur de ceux qui visiteront l'église « du S. Presepe pres... du chasteau de Gaillon... A Rome... l'an... mil cinq cens quatre vingts un, le treiziesme septembre », publiée par « Claude de Sainctes,... evesque d'Evreux... A Condé... l'an... mil cinq cens quatre vingts et trois, le vingt huictiesme de novembre ». ù Imprimé.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1415');">72 « Coppie de lectres patentes octroiées à madame d'Angoulesme, pour jouir du domaine de Ponthieu en recompance du duché de Chastelerault... A Fontainebleau, au mois d'aoust... mil V.C.IIII.XX.II ». Signé : « HENRY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1449');">73 « Coppie de 2 lectres escrittes de la main de monseigneur [le duc DE NEVERS], l'une au roy de Navarre, et l'autre à monseigneur le prince de Condé,... 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1467');">74 Lettre de « HENRY DE BOURBON,... à monsieur mon frere... le duc de Nyvernoys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1485');">75 Lettre de « HENRY [III]... à mon cousin le duc de Nevers,... A St Germain en Laye, le XIIe jour de janvier 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1509');">76 Lettre de M. « DE NEUFVILLE » au duc de Nevers. « De St Germain, ce XVIe de janvier 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1533');">77 Lettre de « HENRY [roi DE NAVARRE]... à mon cousin monsieur le duc de Nivernoys,... De Pau, ce VIIIe jour de mars 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1549');">78 « Coppie du memoire baillé à Me Toussaintz pour faire faire à Liege 24 serrures avec leurs clefz... 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1570');">79 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon cousin monseigneur le duc de Nivernoys,... A Chasteau Thierry, le XXIIIIe jour de mars 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1591');">80 Lettre de « HENRY DE BOURBON,... à monsieur mon frere... le duc de Nevers,... A St Jehan d'Angely, le XXme jour de juing 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1605');">81 Lettre de « PIETRO FRANCESCO SAPIENTE,... al... cavagliero Guazzo,... Di Casale, li XVI di luglio 1584 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1618');">82 Commission du roi « HENRY [III]... à Nicollas Moreau, maistre en nostre chambre des comptes, et Clavier Gaultier, maistre particullier de nos eaux et forestz, à Chasteau Thierry », pour le « bail et adjudication » des « terres vaines et vagues, communes, marestz, landes, palludz, brussailles », dépendant de « Chasteau Thierry, Chastillon, Espernay et Sezannes... A Fontainebleau, le XIXe jour de juillet... mil V.C. quatre vingtz quatre ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1652');">83 Ordre donné par le duc de « Nyvernois [FRANÇOIS Ier DE CLEVES]... gouverneur... en Champaigne, Brie et Luxembourg... aux cappitaine... maire, eschevins, manans et habitans... de Rethel... De Rethel, le XIIeme jour d'aoust mil V.C. cinquante trois ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1684');">84 « Coppie de lectre escripte par monseigneur [le duc DE NEVERS] au pappe... Di Pariggi, il 29 d'agosto 1584 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1697');">85 Lettre des « gens du conseil et des comptes à Nevers... à messieurs... les president Seguier et conseillier Ladmongnon,... A Nevers, le VIIme septembre 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1713');">86 Lettre de « HENRY DE BOURBON,... à monsieur mon frere... le duc de Nevers,... A St Jehan d'Angely, l'onzieme de decembre 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1729');">87 Lettre de « CLAUDIO AQ[UAVIVA]... generale dei Gesuiti... al... signore duca di Nevers,... Di Roma, a II di decembre 1584 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049815_d0e1737');">88 Lettre en chiffre.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

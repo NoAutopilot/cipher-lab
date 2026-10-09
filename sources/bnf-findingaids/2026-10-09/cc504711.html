@@ -1,0 +1,468 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050471">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050471">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3729-4104</div>
+					<h1>Français 4050-4051</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050471_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471">Français 4050-4051 • Anc. 9037(2 et 3), Baluze 469 et 470 • Recueil de lettres et pièce originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit. Ces pièces sont comprises entre les années 1507 et 1609, et concernent principalement la maison de Montmorency.</a><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e95">Français 4050 • Anc. 9037(2), Baluze 469 • Tome I.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e99">1 Lettre de « HENRY » II, dauphin, à « Mr le grand maistre... De Paris, le XVIe jour de decembre » 1536.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e111">Fol. 3 • 2 Lettre de « J. BRETON DE VILANDRY,... à monsgr le grand mestre, mareschal de France... Escript à Suzanne, le XIe jour de novembre mil V.C.XXXVII ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e128">Fol. 5 • 3 Lettre des « gens tenans le parlement du roy à Thoulouse... à monsgr [Antoine Du Prat], cardinal, [archevêque] de Sens... Escript à Thoulouse, en parlement, le XVIe de juillet » 1528.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e142">Fol. 7 • 4 Lettre d'HERCULE DE GONZAGUE, « car[dinale] di Mantova... al gran maestro di Franza... Di Roma, il X di genaro del M.D.XXXI ». En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e150">Fol. 9 • 5 Lettre d'ANNE DE « MONTMORENCY,... à Mr le marquis de Saluces,... Escript à Fontainebleau, le XXVIIIe de mars mil V.C.XX.VII ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e167">Fol. 11 • 6 Lettre de « MICHEL ANTOYNE DE SALUCES,... De ce camp de Vabres, ce IIe jour de decembre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e178">Fol. 14 • 7 Lettre d'« il nuntio del papa appreso l'imperator... al gran mastro... Di Axais (Aix en Provence), alli VII de settembre 1536 ». En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e186">Fol. 21 • 8 « Traicté faict avec le roy d'Angleterre [Henri VIII] pres le village appellé Camp, es confins d'Ardres et Guynes », par les plénipotentiaires du roi François Ier, Claude d'Annebault, Pierre Remon et Guillaume Bochetel. « Le VIIe juing 1546 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e200">Fol. 32 • 9 Lettre de « C[LAUDE] D'ANNEBAULT,... à monsgr le grand maistre... De Thurin, ce dernier de juing ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e211">Fol. 34 • 10 Lettre de « P[HILIPPE] DE VILLERS L'ILE ADAM, [grand] maistre de Rhodes... à monsgr de Clermont, lieutenant de Languedoc... De Villefranque, le dernier jour de novembre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e222">Fol. 36 • 11 Lettre des « gens tenans à Rouen le parlement du roy... à monsgr le grand maistre... De Rouen, en parlement, ce XXIIe jour de decembre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e236">Fol. 38 • 12 Lettre des « gens tenans la court de parlement de Bourdeaux... à Mr le grand maistre... Escript à Bourdeaulx, en parlement, ce second jour d'avril ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e247">Fol. 40 • 13 Lettre d'ANNE « DE MONTMORENCY » au roi. « Du camp pres Suze, le XXVIe d'octobre... 1537 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e258">Fol. 43 • 14 Lettre de « P[HILIPPE] DE VILLERS L'ILE ADAM,... à monsgr le grand maistre... De Lyon, ce XVIIe jour de septembre ».</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e272">15 à 17 Trois lettres de « CHARLES » D'EGMONT, duc DE GUELDRE.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e278">Fol. 45 • 15 « à monsgr le grant maistre Anne de Montmorency,... D'Arnhem, ce IIe jour de novembre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e295">Fol. 47 • 16 « à Guillaume de Ympel,... D'Arnhem, ce VIIIe d'avril 1533 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e309">Fol. 49 • 17 En chiffre. S. a. n. l. n. d.</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e317">Fol. 52 • 18 « Instructions à Guillaume de Geys, de ce qu'il a à dire au roy et à messgrs de son conseil de la part de Mr DE HUMYERES, son lieutenant general en Piedmont... Faict au camp d'Albe, ce XIIIIe juillet [M]V.C.XXXVII ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e337">Fol. 56 • 19 Lettre de PIERRE DU TERRAIL DE « BAYART,... à monsgr le mareschal de Montmorancy,... A Moyxens, le XXe de septembre ».</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e351">20 et 21 Deux lettres de « FRANÇOIS, marquis DE SALUCES ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e357">Fol. 58 • 20 « à monseigneur le grant maistre, Anne de Montmorency,... En Ast, ce XXe may ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e371">Fol. 60 • 21 « à Mr le conte de Pontresme,... De Salucez, le XVIe jour de juing ».</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e388">Fol. 62 • 22 Lettre de « J[EAN] DE HUMYERES,... à Mr le mareschal de Montmorency,... A Peronne, ce VIIIe jour d'octobre » 1544.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e402">Fol. 64 • 23 Lettre de CLAUDE GOUFFIER, seigneur DE « BOYSY,... à Mr le grand maistre... A Estampes, ce mecredy matin XXIXe d'aoust » 1526.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e416">Fol. 66 • 24 Lettre de « PHILIPPUS DE PLATEA, episcopus sedunensis, prefectus et comes Vallesii,... magno Francie magistro... Seduni, ex castro nostro Majorie, ipso die festo Sti Johannis 1528 ». En latin.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e427">Fol. 68 • 25 Lettre de « CLAUDE [DE LORRAINE, duc DE GUISE]... à Mr le grand maistre... De Bar, le IXe jour de febvrier ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e441">Fol. 70 • 26 Lettre du Sr « DE POMMERAYE,... au roy... De Malynnes, le deuxe de fevrier ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e455">Fol. 73 • 27 Lettre du Sr « DE CARPI au roy... De Rome, ce XVIe de septembre M.V.C.XXVI ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e472">Fol. 76 • 28 Engagement pris par les ducs de Bavière, Guillaume et Louis, de n'employer que pour la guerre l'argent que le roi François I???er doit verser entre leurs mains. « Datum in urbe nostra Monachio, die VIa februarii » 1534. En latin.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e486">Fol. 77 • 29 Acte par lequel les ducs de Bavière, Guillaume et Louis, reconnaissent avoir reçu du roi François Ier une somme de cent mille écus. « Datum in urbe nostra Monachio, die vigesima secunda mensis maii » 1534. En latin.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e497">Fol. 79 • 30 Lettre, en chiffre, de HIERONIMO RANZO.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e505">Fol. 84 • 31 Lettre de « FRANÇOYS DE SALUCES,... à Mr le grant maistre... Escript en Ast, le XVIe may » 1528.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e519">Fol. 89 • 32 Lettre de « POMPONIO TRIVULCIO,... à monsgr le grant maistre... Escript à Lyon, le Xe jour de janvyer ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e533">Fol. 92 • 33 Réponses faites au nom d'Anne de Montmorency, « grand maistre » de France, aux questions posées par LOUIS DE FLANDRES, Sr DE PRAET, ambassadeur de l'empereur Charles-Quint vers le roi François Ier, sur l'exécution de certains articles du traité de Cambrai. 1531.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e547">Fol. 95 • 34 Lettre de « GUILLAUME POYET,... à monsgr le grant maistre... A Espaigny, la vigille de Nouel ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e558">Fol. 98 • 35 « Compagnies de gens de guerre des ordonnances du roy nostre sire estans en son service en l'année 1530 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e566">Fol. 101 • 36 Lettre de « JEHAN DE LEVIS,... au roy... De vostre maison de La Garde, ce XXXe d'octobre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e577">Fol. 105 • 37 Lettre des « gens tenans la court de parlement en Provence... à monsgr le grant maistre... D'Aix, ce XIIIme de fevrier ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e591">Fol. 107 • 38 Lettre des « gens des trois estatz du pays de Languedoc... à monsgr le grand maistre... A Montpellier, le XXIIe de decembre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e605">Fol. 110 • 39 Lettre des « ambassadeurs de villes et pays de noz ligues, assemblez à Badde », au roi de France. « Le XXVe de mars » 1530. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e616">Fol. 113 • 40 Lettre de « MICHEL ANTOYNE DE SALUCES,... à monsgr le grant maistre... De Vauguiere, ce XVIIe jour de septembre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e630">Fol. 116 • 41 « Instructions pour le Sr de... que le roy [François Ier] envoye presentement par devers le roy d'Angleterre [Henri VIII] et le cardinal d'York ».</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e644">Français 4051 • Anc. 9037(3), Baluze 470 • Tome II.</a><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e648">1 à 17 Dix-sept lettres de « G[UILLAUME] DE MONTMORENCY ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e654">Fol. 1 à 3 • 1 à 3 à son fils, Anne de Montmorency. Entre 1522 et 1530.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e665">Fol. 4 • 4 à son fils, François de Montmorency, seigneur « de La Rochepot,... Escript à Sainct Germain, ce XXXe jour de janvier ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e682">Fol. 5 à 17 • 5 à 17 à son fils, Anne de Montmorency. Entre 1522 et 1531.</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e693">Fol. 18 • 18 Lettre de « LOYSE DE MONTMORENCY » à son frère Anne de Montmorency. « A Jonzas, ce XIIIe juing » 1530.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e704">Fol. 19 à 21 • 19 à 21 Trois lettres de « G[UILLAUME] DE MONTMORENCY » à son fils, Anne de Montmorency. Entre 1526 et 1530.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e712">Fol. 23 • 22 Lettre de « LOYSE DE MONTMORENCY » à son frère, Anne de Montmorency. « A Chastillon »-sur-Loing. 1524.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e720">Fol. 24 à 30 • 23 à 29 Sept lettres de « G[UILLAUME] DE MONTMORENCY » à son fils, Anne de Montmorency. Entre 1522 et 1531.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e728">Fol. 31 • 30 Lettre de l'amiral « C[HARLES] DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France. « A Vigny, le 27 octobre 1600 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e736">Fol. 32 • 31 Lettre de « MAGDALENE DE MONTMORENCY [religieuse à Fontevrault]... à madame la connestable, duchesse de Montmorency [sa mère]... A Fontevrault ».</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e744">32 à 44 Treize lettres de « G[UILLAUME] DE MONTMORENCY ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e750">Fol. 33 à 39 • 32 à 38 à son fils, Anne de Montmorency. Entre 1522 et 1531.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e761">Fol. 40 • 39 à son fils, François de Montmorency, seigneur de La Rochepot. Vers 1524.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e775">Fol. 41 à 43 • 40 à 42 à son fils, Anne de Montmorency. Entre 1526 et 1531.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e786">Fol. 44 • 43 au roi François Ier. « Escript à Chantilly, ce cincquiesme may » 1531.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e799">Fol. 45 • 44 à son fils, Anne de Montmorency. « Escript à Chantilly, ce XXVe jour de juing 1523.</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e813">Fol. 46 • 45 Lettre de « GABRIEL DE MONTMORENCY [baron DE MONTBERON]... à madame la conestable, duche[sse] de Montmorency [sa mère]... D'Anguien, ce XXVme de juin 1558 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e824">Fol. 47 • 46 Lettre de « G[UILLAUME] DE MONTMORENCY » à son fils, Anne de Montmorency. Entre 1526 et 1531.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e832">47 « Lettre de « F[RANÇOIS] DE MONTMORENCY », baron DE LA ROCHEPOT, à son frère, Anne de Montmorency. « A Serrans, ce XXIIe fevrier » 1524.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e841">Fol. 50 • 48 Lettre de « M[ARGUERITE] DE MONTMORENCY », dame DE GAESBECK, à Guillaume de Montmorency, son oncle. « Haulx, le XIe de decenber, anno » 1507.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e852">Fol. 51 • 49 Lettre de « GUILLAUME DE MONTMORENCY » à Madeleine de Savoie, duchesse de Montmorency, sa mère. Avant 1567 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e860">Fol. 52 • 50 Lettre de l'amiral « C[HARLES] DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France. « De Vigny, ce Xe novembre 1607 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e871">Fol. 53 • 51 Lettre de « H[ENRI] DE MONTMORENCY » à son frère, François de Montmorency, maréchal de France. « De Mello, ce XXVIIe jullet 1561 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e882">Fol. 54 • 52 Lettre de « C[HARLOTTE] DE MONTMORANCY » à son père le connétable Henri de Montmorency. Cette lettre est suivie d'n???ne apostille de CHARLES DE VALOIS, comte D'AUVERGNE. Vers 1591 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e890">Fol. 55 • 53 Lettre de l'amiral « CHARLES DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France. « De Paris, le VIIe decembre 1597 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e901">Fol. 56 • 54 Lettre de « F[LORIS] DE MONTMORENCY », baron DE MONTIGNY, à Madeleine de Savoie, duchesse de Montmorency, sa cousine. « De Cambrey, le 16 jullet 1558 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e909">Fol. 57 et 58 • 55 et 56 Deux lettres de l'amiral « C[HARLES] DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France, 9 novembre 1608 et mars 1603.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e917">Fol. 59 • 57 Lettre de « F[RANÇOIS] DE MONTMORENCY », maréchal de France, à sa mère, Madeleine de Savoie, duchesse de Montmorency. « De Bloys, ce XVIIe julliet 1562 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e928">Fol. 60 • 58 Lettre de l'amiral « C[HARLES] DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France. « Juillet 1596 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e936">Fol. 61 • 59 Lettre de FRANÇOIS DE « MONTMORENCY, [baron DE] FOSSEUX », au connétable Henri, duc de Montmorency, son cousin. « Juing 1600 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e944">Fol. 62 • 60 Lettre de l'amiral « C[HARLES] DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France. « A Vigny, le IIIe octobre 1596 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e955">Fol. 63 • 61 Lettre de « R. DE COMMENGE,... gouverneur de la citadelle de Metz », au connétable Henri, duc de Montmorency. « En la citadelle de Metz, le deuxiesme mars 1596 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e963">Fol. 64 à 71 • 62 à 69 Huit lettres de l'amiral « C[HARLES] DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France. Des 13 mai 1599, 8 août 1603, 21 mai 1608, septembre 1603, 3 janvier 1608, 21 décembre 1607, 12 août 1609, février 1605.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e971">Fol. 72 • 70 Lettre de « G[UILLAUME] DE MONTMORENCY » à son fils, Anne de Montmorency. « Escript à Chantilly, ce cincquiesme may » 1531.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e979">Fol. 73 et 74 • 71 et 72 Deux lettres de l'amiral « C[HARLES] DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France. Des 5 mai 1609 et 21 mai 1605.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e987">73 Lettre de « LOYSE DE MONTMORENCY » à son frère, Anne de Montmorency. 1522.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e993">Fol. 76 à 78 • 74 à 76 Trois lettres de « H[ENRY] DE MONTMORENCY » à sa mère, Madeleine de Savoie, duchesse de Montmorency. Des 8 avril 1557, 17 février 1557, 1er février 1557.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e1004">Fol. 79 • 77 Lettre de « C[HARLES] DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France. « De Vigny, ce 5e septembre 1599 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e1015">Fol. 80 • 78 Acte par lequel HENRI, duc DE « MONTMORENCY », connétable de France, ordonne le règlement de la solde à payer, chaque mois, aux « cinquante hommes de guerre, arquebusiers à cheval, ordonnés pres [la] personne de [son gendre, Anne de Levis], duc de Ventadour, lieutenant general pour le roy en Languedoc... Faict à Ronay, le XIIe septembre » 1594.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e1026">Fol. 81 • 79 Lettre de « H[ENRI] DE MONTMORENCY » à son frère François, duc de Montmorency, « premier mareschal de France... De Paris, ce IXe jour de may 1568 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e1037">Fol. 82 • 80 Lettre de « G[UILLAUME] DE MONTMORENCY » à son fils, Anne de Montmorency. « Escript à Chantilly, ce dernier jour d'apvril » 1523.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e1045">Fol. 83 • 81 Lettre de FRANÇOIS DE « MONTMORENCY, [baron DE] FOSSEUX », au connétable Henri, duc de Montmorency, son cousin. « Decembre 1600 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e1053">Fol. 84 • 82 Lettre de l'amiral « C[HARLES] DE MONTMORENCY » à son frère Henri, duc de Montmorency, connétable de France. « A Paris, ce 12 juillet 1607 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050471_d0e1061">Fol. 85 • 83 Lettre de « G[UILLAUME] DE MONTMORENCY » à son fils, Anne de Montmorency. « Escript de Chantilly, ce XVIe decembre » 1529.</a></div></div></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4050-4051<br/>Cette cote ne correspond pas à une unité matérielle communicable. Veuillez sélectionner un document réservable parmi les niveaux inférieurs.</span></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4050-4051 
+							</div>
+<div class="did-unitid">Ancienne cote : Anc. 9037(2 et 3), Baluze 469 et 470</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et pièce originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit. Ces pièces sont comprises entre les années 1507 et 1609, et concernent principalement la maison de Montmorency.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècles</div>
+<div class="divdid">Vélin et papier.2 volumes.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Bourassol, Jean de. • Lettres.</p>
+<p>Bourrassol, Jean de. • Lettres.</p>
+<p>François Ier, roi de France. • Diplomatie et affaires extérieures, instructions diverses.</p>
+<p>François Ier, roi de France. • Diplomatie et affaires extérieures, relations avec l'Angleterre.</p>
+<p>Lévis, Jean de, sieur de Châteaumorand. • Lettres.</p>
+<p>Miroir historial.</p>
+<p>Montmorency, Maison de.</p>
+<p>Toulouse. • Parlement, lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050471_d0e95');">Français 4050 (cote) • Tome I.</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000050471_d0e644');">Français 4051 (cote) • Tome II.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

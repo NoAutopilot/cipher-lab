@@ -1,0 +1,511 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049471">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049471">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 2754-3068</div>
+					<h1>Français 3013
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049471_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471">Français 3013 • Anc. 8538 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e124">1 Lettre de « HENRY [D'ALBRET, roi de Navarre]... à mon cousin monseigneur le grant mestre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e130">2 Lettre, en italien, de « MAXIMILIANO [SFORZA, duc de Milan]... al' illustrissimo... signor gran maestro... Cremonae, XIII junii M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e136">Fol. 3 • 3 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le mareschal de Montmorency, mon nepveu... De Romme, le XIX septembre 1523 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e149">Fol. 5 • 4 Lettre, en italien, de « THEODORO TRIVULTIO,... al re [François Ier]... De Genova, alli XXX di aprile M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e165">Fol. 7 • 5 Lettre, en italien, d'«HANIBALLE GONZAGA,... al christianissimo re... Da Novelara, alli XIIII dijuglio M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e183">Fol. 11 • 6 Lettre de « PEDRO NAVARRO,... à monseigneur... le grant maistre, mareschal de France... Escript en gallere, au port de Savonne, le premier jour de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e201">Fol. 13 • 7 Lettre, en italien, d'«il vescovo di Lodi... à monseigneur... gran metre... Di Murano in Venetia, alli XV di agosto M.D.XXIX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e219">Fol. 19 • 8 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, le IIe de juin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e240">Fol. 21 • 9 Lettre, en italien, de « FRANCISCUS [SFORZA, duc de Milan]... reverendissimo... domino Gaspari, equiti Landriano, consiliario et oratori nostro dilectissimo... Cremone, XVIIIa 9bris 1526 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e269">Fol. 22 • 10 « Copia di lettere venute da Granata, di 9 di ottobre 1526 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e292">Fol. 24 • 11 Lettre, en italien, d'«ANTONIO DORIA,... allo illustrissimo... monsignor lo gran maestro... Da Marsegia, a li XV de agosto M.D.XXVIIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e315">Fol. 27 • 12 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo... monsignor lo gran maestro di Franza... Di Carignano, a li 14 octobre 1536 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e338">Fol. 29 • 13 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo... monseigneur lo maestro di Franza, luocotenente di S. Mta... Di Carignano, a li 15 d'ottobre 1536 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e364">Fol. 31 • 14 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo... monseigneur il gran maestro di Franza... Di Carignano, il XIII octobre 1536 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e387">Fol. 33 • 15 Lettre, en italien, d'«ALESANDRO DI PEPULI, PHILIPPO DI PEPULI, HIERONYMO DI PEPULI,... allo illustrissimo... monsignor il gran mestro del re christianissimo... De Bologna, alli 20 de ottobre M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e425">Fol. 35 • 16 Lettre de « POMPONIO TRIVULTIO,... à monseigneur le grant maistre... Escript à Lyon, le XVIIe jour de janvyer ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e451">Fol. 37 • 17 Lettre, en italien, de « GREGORIO CASALE,... Da Roma, alli 24 di marzo 1531 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e479">Fol. 40 • 18 Lettre, en italien, de « GREGORIO CASALE,... Da Roma, alli 24 di marzo M.D.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e507">Fol. 43 • 19 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo... monseigneur lo gran maestro di Franza... De Venetia, l'ottavo de zugno 1530 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e530">Fol. 46 • 20 Lettre, en espagnol, de « los consellers de Barcelona » à « lo señor... capita de Lengadoc... De Barcelona, a XXXI de juliol any mil D.XXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e553">Fol. 49 • 21 Lettre, en italien, adressée à « l'illustrissimo... D. Julio de Sancto Severino, regio capitaneo et consiliario... In Gisies, a li XIIII di agosto M.D.XXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e574">Fol. 52 • 22 Lettre, en italien, de « JANUS LASCARIS,... In Vicenza, a di XIIII de agosto M.D.XXII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e597">Fol. 55 • 23 Lettre, en italien, d'«el datario... a monsignor... el gran maestro... Da Roma, alli XIX de juio M.D.XXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e628">Fol. 57 • 24 Lettre, en italien, de « JOVANNE CLEMENTE STANGHA,... allo illustrissimo... monsignore el gran maestro... Data in Paris, alli 22 aprile del 1531 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e651">Fol. 60 • 25 Lettre, en italien, d'«el datario... a monsignor... el gran mastro... Da Roma, alli XXI di aprile M.D.XXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e677">Fol. 62 • 26 Lettre, en espagnol, de « l'obispo de Ciguença... al muy noble señor, museñor de Clermunt, teniente de governador de Llenguadoc... De Monçon, a X de junio de M.D.XXVIII° ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e700">Fol. 65 • 27 Lettre, en italien, de « THEODORO TRIVULTIO,... a monsignor... il gran maestro de Franza... Da Alexandria, allo ultimo de febraro M.D.XXVIIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e718">Fol. 67 • 28 Lettre de « THEODORO TRIVULTIO,... à monseigneur... le grant maistre... De Lyon, ce XIXe de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e739">Fol. 69 • 29 Lettre de « POMPONIO TRIVULTIO,... au roy... Escript à Lyon, le XXIIme jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e760">Fol. 71 • 30 Lettre d'«UGO DI PEPOLI,... à monseigneur... de Monmorancy, mareschal de France... De Olege, ce dernier jour de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e778">Fol. 73 • 31 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce XVIIme jour [de] janvyer ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e789">Fol. 75 • 32 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce IIe de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e800">Fol. 77 • 33 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce XXIIIe may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e811">Fol. 80 • 34 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce XVIIe may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e822">Fol. 83 • 35 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce XIe jour d'apvril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e833">Fol. 86 • 36 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grantmaistre... Escript à Lyon, le cinquiesme du moys de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e841">Fol. 89 • 37 Fragment, en italien, sur la république de Venise et le duché de Barri.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e857">Fol. 91 • 38 Lettre, en italien, de « PIRRHO GONZAGA,... al re [François Ier]... Da Orivieto, al' ultimo di Xbre M.D.XXVII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e876">Fol. 93 • 39 Lettre, en italien, d'«ANTONIO DORIA,... a lo illustrissimo... el signor... gran maestro [di] Franza... Da Genova, al primo d'agosto M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e889">Fol. 95 • 40 Lettre, en italien, d'«ANSALDO DE GRIM[A]LDO,... allo illustrissimo... monsignor gran maistro de Franza... Scritta in Orvietto, a di II junio M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e902">Fol. 97 • 41 Lettre, en italien, de « GALEATIO VESCONTE,... al' illustrissimo signor Pomponio Trivultio, governador de Lione... Dal Campo a Loesa, al primo de settembre 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e915">Fol. 99 • 42 Lettre, en italien, avec chiffre, de « BILIA,... al signor JO. Francesco Zaberna, oratore de lo... duca de Milano... De Burgos, XXII novembre M.D.XXVII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e938">Fol. 102 • 43 Lettre, en italien et en chiffre, de « JO. ANTONIO BILIA,... al' illustrissimo signore... el signore duca de Milano... De Burgos, XXII novembris 1527 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e956">Fol. 105 • 44 Lettre, en italien, de « JOACHIN [DE VAULX]... allo illustrissimo... signor [gran maestro] di Francia... Scritta de Viterbo, el XVI d'agosto 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e974">Fol. 108 • 45 Lettre, en latin, de « JOHANNES DIESBACH, locumtenens illustrissimi domini marescalli de Momoransi, capitaney generalis exercitus Helveciorum et alii capitaney totius lige Elveciorum de presente in exercitu regio existentes... illustrissimo principi, domino duci Veneciarum et magnificis dominis senatoribus venetis... In felicibus castris regiis apud Abietem Grassum, die primo martii 1524 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e997">Fol. 110 • 46 Lettre, en italien, de « JOACHIN [DE VAULX]... allo illustrissimo... signor gran maestro di Francia... Da Cales, el XVIIII genaro 1530 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1015">Fol. 113 • 47 Lettre, en italien, de « JOAN BAPTISTA DA PONT,... à monseigneur... le grant maestre de France... In Lode, a li 23 de zugno 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1038">Fol. 115 • 48 Lettre, en italien, de « BALDASSARTE » et de « CARDUCCI,... [all'] illustrissimo... signore monsignor il gran mastro di Francia... D'Angulem, il giorno XXXI julii M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1066">Fol. 117 • 49 Lettre, en italien, de « SIMONE DE THEBALDI,... allo illustrissimo... signore monsignor de Momoransi, gran mastro de Francia... In Barletta, a di XVIII de mayo 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1089">Fol. 119 • 50 Lettre, en italien, de « JOACHIN [DE VAULX]... al' illusfrissimo... signor gran maestro de Francia... Da Londra, XXIIII ottobre M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1107">Fol. 121 • 51 Lettre, en italien, de « JOACHIN [DE VAULX]... al' illustrissimo... signor gran maestro de Francia... D'Amptoncort, lo VIII ottobre M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1125">Fol. 123 • 52 Lettre, en italien, de « PETRO BIRAGO,... al' illustrissimo... monsignor maresial de Memoransi,... In Ferara, octavi junii 1525 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1143">Fol. 125 • 53 Lettre, en italién, de « LODOVICO CATO,... al magnifico... signor... de Sormano,... A Bordeos, alli V di junio M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1166">Fol. 127 • 54 Lettre, en italien, de « GALEATIO VESCONTE,... In Lione, a li XXIIII octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1184">Fol. 129 • 55 Lettre, en italien, de « GALEATIO VESCONTE,... à monseigneur... le grant maistre de France... Dato in Alexandria, a li XX de aprile ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1202">Fol. 131 • 56 Lettre, en italien, de « GALEATIO VESCONTE,... allo illustrissimo signore gran maestro... In Lyon, alli 29 settembris ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1220">Fol. 133 • 57 Lettre, en italien, de « OTTAVIANO GRIMALDO,... al' illustrissimo... signor maresial de Montmoranci,... Scritta in Venetia, a di XXVIIIImo zenaro ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1241">Fol. 135 • 58 Lettre, en italien, de « MAXIMILIANO [SFORZA, duc de Milan]... à monseigneur le grant mestre de France ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1259">Fol. 137 • 59 « Extratto di cyfra... De Lodi, XIX avost ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1267">Fol. 139 • 60 Lettre d'«el secretario veneto... allo illustrissimo... mons. el gran maestro... Da Bles, alli 2 octobre 1526 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1275">Fol. 142 • 61 « Extraict de la lettre cinquiesme du seigneur OCTAVYAN GRIMALDO, ordonnée lui expedier par messeigneurs les commissaires ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1293">Fol. 144 • 62 Lettre de « MICHEL ANTHOINE DE SALLUCES,... au roy [François Ier]... A Sainct Pierre, le Vme jour d'octobre... V.C.XXIIII ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1320">Fol. 146 • 63 Lettre de « RENZO DE CERE,... à monseigneur le grand maistre de France... De Ligerne, ce VIIIme jour de fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1341">Fol. 148 • 64 Nouvelles d'Italie, lettre écrite « de Lodi, 13 marzo 1529 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1359">Fol. 151 • 65 Lettre, en italien, de « JOACHIN [DE VAULX]... al' illustrissimo... signor gran maestro de Francia... Fatta et X novembre M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1367">Fol. 154 • 66 Lettre, en italien, de « JOACHIN [DE VAULX]... all' illustrissimo [signor gran maestro de Fran]cia... Da Vinetia, el XV luglio 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1375">Fol. 157 • 67 Lettre, en italien, de « JACOBO NOMISCHIO,... Da Napoli, a 21 magio 1529... Copia... intercetta in Puglia ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1388">Fol. 160 • 68 Lettre de « JOANNA... DE GONZAGA,... allo illustrissimo... mons. di Momoransi,... In Bozolo, al XII de febraro del 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049471_d0e1401">69 Lettre de « GLAUDE DE DURRE,... au roy... Escript en vostre ville de Marseille, ce XVIIIe de decembre ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3013 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc494715&Cote=Français 3013&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060138r">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31312 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc494715&Cote=MF 31312&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3013 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8538</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31312. Cote de la matrice (pour commander une reproduction) : R 3835.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060138r" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9060138r.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9060138r.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Durre, Claude, seigneur du Puy Saint-Martin. • Lettres.</p>
+<p>Espagne. Histoire intérieure. • Lettres et nouvelles.</p>
+<p>François Ier, roi de France. • Actes et lettres.</p>
+<p>François Ier, roi de France. • Notes, pièces et recueils divers.</p>
+<p>Henri II d'Albret, roi de Navarre. • Lettres et actes.</p>
+<p>Montmorency, Anne, duc de, connétable de France. • Lettres et actes.</p>
+<p>Rangone, Guido. • Lettres.</p>
+<p>Rome, Cour de. • Cardinal dataire, lettres.</p>
+<p>Sforza, Maximilien, duc de Milan. • Actes et lettres.</p>
+<p>Sigüenza, Duc de. • Lettre.</p>
+<p>Trivulce, Pomponio. • Lettres.</p>
+<p>Trivulce, Théodore, cardinal. • Lettres.</p>
+<p>Vaux, Joachim de, ambassadeur à Venise. • Lettres.</p>
+<p>Visconti, Galeazzo. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e124');">1 Lettre de « HENRY [D'ALBRET, roi de Navarre]... à mon cousin monseigneur le grant mestre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e130');">2 Lettre, en italien, de « MAXIMILIANO [SFORZA, duc de Milan]... al' illustrissimo... signor gran maestro... Cremonae, XIII junii M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e136');">3 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le mareschal de Montmorency, mon nepveu... De Romme, le XIX septembre 1523 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e149');">4 Lettre, en italien, de « THEODORO TRIVULTIO,... al re [François Ier]... De Genova, alli XXX di aprile M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e165');">5 Lettre, en italien, d'«HANIBALLE GONZAGA,... al christianissimo re... Da Novelara, alli XIIII dijuglio M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e183');">6 Lettre de « PEDRO NAVARRO,... à monseigneur... le grant maistre, mareschal de France... Escript en gallere, au port de Savonne, le premier jour de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e201');">7 Lettre, en italien, d'«il vescovo di Lodi... à monseigneur... gran metre... Di Murano in Venetia, alli XV di agosto M.D.XXIX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e219');">8 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, le IIe de juin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e240');">9 Lettre, en italien, de « FRANCISCUS [SFORZA, duc de Milan]... reverendissimo... domino Gaspari, equiti Landriano, consiliario et oratori nostro dilectissimo... Cremone, XVIIIa 9bris 1526 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e269');">10 « Copia di lettere venute da Granata, di 9 di ottobre 1526 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e292');">11 Lettre, en italien, d'«ANTONIO DORIA,... allo illustrissimo... monsignor lo gran maestro... Da Marsegia, a li XV de agosto M.D.XXVIIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e315');">12 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo... monsignor lo gran maestro di Franza... Di Carignano, a li 14 octobre 1536 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e338');">13 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo... monseigneur lo maestro di Franza, luocotenente di S. Mta... Di Carignano, a li 15 d'ottobre 1536 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e364');">14 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo... monseigneur il gran maestro di Franza... Di Carignano, il XIII octobre 1536 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e387');">15 Lettre, en italien, d'«ALESANDRO DI PEPULI, PHILIPPO DI PEPULI, HIERONYMO DI PEPULI,... allo illustrissimo... monsignor il gran mestro del re christianissimo... De Bologna, alli 20 de ottobre M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e425');">16 Lettre de « POMPONIO TRIVULTIO,... à monseigneur le grant maistre... Escript à Lyon, le XVIIe jour de janvyer ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e451');">17 Lettre, en italien, de « GREGORIO CASALE,... Da Roma, alli 24 di marzo 1531 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e479');">18 Lettre, en italien, de « GREGORIO CASALE,... Da Roma, alli 24 di marzo M.D.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e507');">19 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo... monseigneur lo gran maestro di Franza... De Venetia, l'ottavo de zugno 1530 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e530');">20 Lettre, en espagnol, de « los consellers de Barcelona » à « lo señor... capita de Lengadoc... De Barcelona, a XXXI de juliol any mil D.XXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e553');">21 Lettre, en italien, adressée à « l'illustrissimo... D. Julio de Sancto Severino, regio capitaneo et consiliario... In Gisies, a li XIIII di agosto M.D.XXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e574');">22 Lettre, en italien, de « JANUS LASCARIS,... In Vicenza, a di XIIII de agosto M.D.XXII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e597');">23 Lettre, en italien, d'«el datario... a monsignor... el gran maestro... Da Roma, alli XIX de juio M.D.XXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e628');">24 Lettre, en italien, de « JOVANNE CLEMENTE STANGHA,... allo illustrissimo... monsignore el gran maestro... Data in Paris, alli 22 aprile del 1531 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e651');">25 Lettre, en italien, d'«el datario... a monsignor... el gran mastro... Da Roma, alli XXI di aprile M.D.XXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e677');">26 Lettre, en espagnol, de « l'obispo de Ciguença... al muy noble señor, museñor de Clermunt, teniente de governador de Llenguadoc... De Monçon, a X de junio de M.D.XXVIII° ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e700');">27 Lettre, en italien, de « THEODORO TRIVULTIO,... a monsignor... il gran maestro de Franza... Da Alexandria, allo ultimo de febraro M.D.XXVIIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e718');">28 Lettre de « THEODORO TRIVULTIO,... à monseigneur... le grant maistre... De Lyon, ce XIXe de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e739');">29 Lettre de « POMPONIO TRIVULTIO,... au roy... Escript à Lyon, le XXIIme jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e760');">30 Lettre d'«UGO DI PEPOLI,... à monseigneur... de Monmorancy, mareschal de France... De Olege, ce dernier jour de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e778');">31 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce XVIIme jour [de] janvyer ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e789');">32 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce IIe de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e800');">33 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce XXIIIe may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e811');">34 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce XVIIe may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e822');">35 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grant maistre... Escript à Lyon, ce XIe jour d'apvril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e833');">36 Lettre de « POMPONIO TRIVULTIO,... à monseigneur... le grantmaistre... Escript à Lyon, le cinquiesme du moys de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e841');">37 Fragment, en italien, sur la république de Venise et le duché de Barri.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e857');">38 Lettre, en italien, de « PIRRHO GONZAGA,... al re [François Ier]... Da Orivieto, al' ultimo di Xbre M.D.XXVII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e876');">39 Lettre, en italien, d'«ANTONIO DORIA,... a lo illustrissimo... el signor... gran maestro [di] Franza... Da Genova, al primo d'agosto M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e889');">40 Lettre, en italien, d'«ANSALDO DE GRIM[A]LDO,... allo illustrissimo... monsignor gran maistro de Franza... Scritta in Orvietto, a di II junio M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e902');">41 Lettre, en italien, de « GALEATIO VESCONTE,... al' illustrissimo signor Pomponio Trivultio, governador de Lione... Dal Campo a Loesa, al primo de settembre 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e915');">42 Lettre, en italien, avec chiffre, de « BILIA,... al signor JO. Francesco Zaberna, oratore de lo... duca de Milano... De Burgos, XXII novembre M.D.XXVII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e938');">43 Lettre, en italien et en chiffre, de « JO. ANTONIO BILIA,... al' illustrissimo signore... el signore duca de Milano... De Burgos, XXII novembris 1527 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e956');">44 Lettre, en italien, de « JOACHIN [DE VAULX]... allo illustrissimo... signor [gran maestro] di Francia... Scritta de Viterbo, el XVI d'agosto 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e974');">45 Lettre, en latin, de « JOHANNES DIESBACH, locumtenens illustrissimi domini marescalli de Momoransi, capitaney generalis exercitus Helveciorum et alii capitaney totius lige Elveciorum de presente in exercitu regio existentes... illustrissimo principi, domino duci Veneciarum et magnificis dominis senatoribus venetis... In felicibus castris regiis apud Abietem Grassum, die primo martii 1524 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e997');">46 Lettre, en italien, de « JOACHIN [DE VAULX]... allo illustrissimo... signor gran maestro di Francia... Da Cales, el XVIIII genaro 1530 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1015');">47 Lettre, en italien, de « JOAN BAPTISTA DA PONT,... à monseigneur... le grant maestre de France... In Lode, a li 23 de zugno 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1038');">48 Lettre, en italien, de « BALDASSARTE » et de « CARDUCCI,... [all'] illustrissimo... signore monsignor il gran mastro di Francia... D'Angulem, il giorno XXXI julii M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1066');">49 Lettre, en italien, de « SIMONE DE THEBALDI,... allo illustrissimo... signore monsignor de Momoransi, gran mastro de Francia... In Barletta, a di XVIII de mayo 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1089');">50 Lettre, en italien, de « JOACHIN [DE VAULX]... al' illusfrissimo... signor gran maestro de Francia... Da Londra, XXIIII ottobre M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1107');">51 Lettre, en italien, de « JOACHIN [DE VAULX]... al' illustrissimo... signor gran maestro de Francia... D'Amptoncort, lo VIII ottobre M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1125');">52 Lettre, en italien, de « PETRO BIRAGO,... al' illustrissimo... monsignor maresial de Memoransi,... In Ferara, octavi junii 1525 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1143');">53 Lettre, en italién, de « LODOVICO CATO,... al magnifico... signor... de Sormano,... A Bordeos, alli V di junio M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1166');">54 Lettre, en italien, de « GALEATIO VESCONTE,... In Lione, a li XXIIII octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1184');">55 Lettre, en italien, de « GALEATIO VESCONTE,... à monseigneur... le grant maistre de France... Dato in Alexandria, a li XX de aprile ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1202');">56 Lettre, en italien, de « GALEATIO VESCONTE,... allo illustrissimo signore gran maestro... In Lyon, alli 29 settembris ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1220');">57 Lettre, en italien, de « OTTAVIANO GRIMALDO,... al' illustrissimo... signor maresial de Montmoranci,... Scritta in Venetia, a di XXVIIIImo zenaro ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1241');">58 Lettre, en italien, de « MAXIMILIANO [SFORZA, duc de Milan]... à monseigneur le grant mestre de France ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1259');">59 « Extratto di cyfra... De Lodi, XIX avost ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1267');">60 Lettre d'«el secretario veneto... allo illustrissimo... mons. el gran maestro... Da Bles, alli 2 octobre 1526 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1275');">61 « Extraict de la lettre cinquiesme du seigneur OCTAVYAN GRIMALDO, ordonnée lui expedier par messeigneurs les commissaires ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1293');">62 Lettre de « MICHEL ANTHOINE DE SALLUCES,... au roy [François Ier]... A Sainct Pierre, le Vme jour d'octobre... V.C.XXIIII ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1320');">63 Lettre de « RENZO DE CERE,... à monseigneur le grand maistre de France... De Ligerne, ce VIIIme jour de fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1341');">64 Nouvelles d'Italie, lettre écrite « de Lodi, 13 marzo 1529 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1359');">65 Lettre, en italien, de « JOACHIN [DE VAULX]... al' illustrissimo... signor gran maestro de Francia... Fatta et X novembre M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1367');">66 Lettre, en italien, de « JOACHIN [DE VAULX]... all' illustrissimo [signor gran maestro de Fran]cia... Da Vinetia, el XV luglio 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1375');">67 Lettre, en italien, de « JACOBO NOMISCHIO,... Da Napoli, a 21 magio 1529... Copia... intercetta in Puglia ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1388');">68 Lettre de « JOANNA... DE GONZAGA,... allo illustrissimo... mons. di Momoransi,... In Bozolo, al XII de febraro del 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049471_d0e1401');">69 Lettre de « GLAUDE DE DURRE,... au roy... Escript en vostre ville de Marseille, ce XVIIIe de decembre ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

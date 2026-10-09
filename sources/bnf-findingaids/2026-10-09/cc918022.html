@@ -1,0 +1,462 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000091802">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000091802">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Cinq cents de Colbert</div>
+					<h1>Cinq cents de Colbert 470-473</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000091802_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802">Cinq cents de Colbert 470-473 • Recueil de la correspondance originale adressée à Michel de Castelnau de Mauvissiere, commissaire général près de l'armée des réîtres du comte Palatin Casimir (1568), gouverneur de Saint-Dizier (1569), ambassadeur en Angleterre (1575-1585).</a><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e72">Cinq cents de Colbert 470 • I</a><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e129">Lettres signées.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e133">p. 1, 3, 9, etc. • « Henry de Lorraine, » duc de Guise, 1584-1585 [6 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e139">p. 24, 77, 99, etc. • « Henry » III, 1584-1589 [11 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e145">p. 27, 33, 37, etc. • « Marie » ou « Marie R. » Stuart, 1584-1586 [25 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e151">p. 47 • Jacques, roi d'Écosse, copie</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e157">p. 75, 103 • « Caterine » de Médicis, 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e163">p. 95 • Passeport pour l'ambassadeur de France signé : « R. Leycester, Howard, F. Knollys, Fra. Walsyngham, » etc., 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e169">p. 151, 153, 159 • « Elizabeth, R. » d'Angleterre, 1585 [3 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e175">p. 187, 199, 213 • « M. de Castelnau, » 1585 [3 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e181">p. 247, 249, 253 • « Françoys, » duc d'Anjou [3 lettres]</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e187">p. 267 • Traité de Cateau-Cambrésis, 1559</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e193">p. 307, 308 • Deux pièces chiffrées</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e199">Cinq cents de Colbert 471 • II</a><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e258">Lettres signées.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e262">p. 1-28 • « J[ehan] Casimir, » comte Palatin du Rhin, 1568-1571 [5 lettres et quittances]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e268">p. 29, 37, 45, etc. • « Charles » IX, 1568-1571 [7 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e274">p. 33, 43, 63, etc. • « Caterine » de Médicis, 1570-1583 [21 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e280">p. 55 • « Volradt Manscfelt, Johann van Dorse, » au nom des réîtres, 1570</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e286">p. 59, 69, 75, etc. • « Henry » III, duc d'Anjou, puis roi, 1570-1583 [29 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e292">p. 165, 169 • « Graff Barbi, » colonel de réîtres, 1574</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e298">p. 223, 243, 257, etc. • « Marie » Stuart, 1577-1583 [8 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e304">p. 271 • « François, » duc d'Anjou, 1582</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e310">p. 285 • Claude « Pinart, » secrétaire d'État, 1583</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e316">p. 91 • « Ce sont les articles de la capitulation faicte par la royne mère du Roy avec le sr de Bassompierre pour la levée qu'il fera présentement en Allemaigne de six cens chevaulx pistolliers... » Paris, 18 juin 1574</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e325">p. 193 • « Estat du paiement... pour raison du licentiement de Messieurs les contes de Barby et Westerbourg, colonnelz de deux régimentz d'iceulx réittres, » 1575</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e331">p. 247 • « Remonstrances de la royne d'Escosse douairière de France touchant le droict qui luy appartient de la succession de la coronne d'Angleterre, » 1581</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e337">Cinq cents de Colbert 472 • III</a><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e480">Lettres signées.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e484">p. 1-8, 253, etc. • Jacques « Bochetel, » sieur de La Forest, beau-père de Castelnau de Mauvissière, sans date [4 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e490">p. 9, 11, 19, etc. • Nicolas « De Neufville » de Villeroy, secrétaire d'État, 1575-1588 [25 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e496">p. 13 • « Galeotto Magalotti, » 1559</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e502">p. 17 • « de Cossé » Brissac, 1570</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e508">p. 49 • « Ja[cques Beaton,] archevesque de Glasgo, » 1577</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e514">p. 53, 59, 63, 67 • « Sigongnes, » gouverneur de Dieppe, 1577</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e520">p. 55 • « B[ernardin] de Sainct François, é[vêque] de Bayeulx, » 1577</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e526">p. 71 • « de Bellefleur, » 1577</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e532">p. 75 • « Henry » III, 1577</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e538">p. 77 • Michel « de Seurre, » 1577</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e544">p. 81 • Jean « de Morvillier, » 1577</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e550">p. 85 • « Filippo Corsini, » 1578</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e556">p. 119 • « Lodovico Gonzaga, » duc de Nevers, 1583</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e562">p. 133 • Martel de « Bacqueville, » 1584</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e568">p. 135, 153, 307 • « d'Assas, » 1585-1588</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e574">p. 141, 245, 349, etc. • « J[ean] de Vulcob, » 1585 et suiv. [10 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e580">p. 145, 225 • « Bernard de Girard du Haillan, » 1585-1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e586">p. 149 • « de Chaulnes, » 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e592">p. 157, 261 • « J. Bodin, » 1585-1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e598">p. 159, 181, 154 • « Allex[andro] Teregli, » Londres, 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e604">p. 163 • docteur « Ruy Loppez, » 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e610">p. 167, 185, 213, etc. • « Christophe de Castelnau, » dit Mauvissière l'aîné, neveu de Michel de Castelnau, 1585 et suiv. [9 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e616">p. 171, 403 • « Fontaines, » vice-amiral de Bretagne, 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e622">p. 175 • « Edouardo Dymola, » (?), Londres, 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e628">p. 189 • « Arnault, » 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e634">p. 193, 373 • « A. Bochetel, » dame de La Mothe, tante de Michel de Castelnau, 1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e640">p. 201 • « de Courcelles, » ambassadeur en Écosse, 1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e646">p. 205 • « Bremen, » 1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e652">p. 209 • Louis de Saint-Gelais de « Lanssac, » 1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e658">p. 221 • « Antonio Damigua, » (?) Londres, 1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e664">p. 227 • « Boysmayslé, » (?) 1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e670">p. 243 • Michel de Castelnau à Walsingham</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e676">p. 249 • « Scoryo, » Londres, 1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e682">p. 257, 377, 379, etc. • « Françoys de Castelnau, » frère de Michel, 1587 et suiv. [9 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e688">p. 265, 327 • Guillaume « de L'Aubespine Chateauneuf, » ambassadeur en Angleterre, 1586-1589</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e694">p. 267 • « Amadis Jamyn, » 1587</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e700">p. 275, 279, 281, etc. • François de Cassillac, sieur de « Sessac, » 1587 et suiv. [11 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e706">p. 277 • « de Morogues, » 1587</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e712">p. 301 • « J[ean] Louis [de Nogaret] de La Valette, » duc d'Épernon, 1588</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e718">p. 321 • « Deslandes, » 1588</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e724">p. 323 • « Ursin » (Christophe Juvénal des Ursins, marquis de Trainel, seigneur de Doue), 1588</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e730">p. 331 • de « Maryvaulx, » 1591</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e736">p. 333 • « Mauvissière, » neveu de Michel de Castelnau, 1592</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e742">p. 401 • « Jean Portaill, Honoré Maure, » obligés de Michel de Castelnau</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e748">p. 407 • Dumas « de La Chesnaye »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e754">p. 423 • de « Souvré »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e760">p. 425 • « Bueil »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e766">p. 427 • « Michel Rogere, lieutenant en l'admirauté de Fescamp »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e772">p. 431 • « Esanville, » Greenwich</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e778">p. 435, 437 • « Janne de Gondy, prieure de Poissy »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e784">p. 439 • « Fonses »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e790">p. 441 • « Racan, » 1586</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e796">p. 129 • Testament de François, duc d'Anjou, 8 juin 1584, copie contemporaine</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e802">p. 335 • Description de portraits peints du Roi et des Ligueurs</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e808">p. 337 • « Mémoire de mes bagues, » celles de Michel de Castelnau</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e814">p. 343 • « Mémoire des sommes dûes par le Trésor à Michel de Castelnau, qui est demeuré dix ans et trois mois ambassadeur en Angleterre », 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e820">p. 347 • Chiffre de sa correspondance</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091802_d0e826">Cinq cents de Colbert 473 • IV « Registre des lettres escrites par le roy Henri IIIe et la reyne Catherine de Médicis, sa mère, à Monsieur de Castelnau, sieur de Mauvissière, pendant son ambassade d'Angleterre, depuis l'année 1580 jusques en l'an 1584. »</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Cinq cents de Colbert 470-473<br/>Cette cote ne correspond pas à une unité matérielle communicable. Veuillez sélectionner un document réservable parmi les niveaux inférieurs.</span></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Cinq cents de Colbert 470-473 
+							</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de la correspondance <emph render="italic">originale</emph> adressée à Michel de Castelnau de Mauvissiere, commissaire général près de l'armée des réîtres du comte Palatin Casimir (1568), gouverneur de Saint-Dizier (1569), ambassadeur en Angleterre (1575-1585).</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.4 volumes.In-folio.Reliure les trois premiers volumes en veau gr., le quatrième en maroquin rouge, aux armes de Colbert, entourées du double collier des Ordres.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="controlaccess-class">
+<p>ÉLISABETH D'ANGLETERRE • lettres</p>
+<p>PALATIN DU RHIN, Casimir, comte</p>
+<p>SAINT-DIZIER</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000091802_d0e72');">Cinq cents de Colbert 470 (cote) • I</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000091802_d0e199');">Cinq cents de Colbert 471 (cote) • II</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000091802_d0e337');">Cinq cents de Colbert 472 (cote) • III</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000091802_d0e826');">Cinq cents de Colbert 473 (cote) • IV « Registre des lettres escrites par le roy Henri IIIe et la reyne Catherine de Médicis, sa mère, à Monsieur de Castelnau, sieur de Mauvissière, pendant son ambassade d'Angleterre, depuis l'année 1580 jusques en l'an 1584. »</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

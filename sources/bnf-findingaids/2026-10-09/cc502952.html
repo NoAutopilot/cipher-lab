@@ -1,0 +1,499 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050295">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050295">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3729-4104</div>
+					<h1>Français 3854
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050295_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295">Français 3854 • Anc. 9353 • Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e109">1 Protestation des princes, ducs et autres grands seigneurs du royaume réunis, à Paris, contre le cardinal Mazarin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e115">Fol. 5 • 2 Lettre d'ANTOINE III, maréchal duc « DE GRAMONT,... à monseigneur le prince de Conty,... Du quartier de Vileré, ce 2 septembre 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e128">Fol. 8 • 3 Lettre de « LOUIS [XIII]... au cappitaine Seguin,... Escript à St Germain en Laye, le XXVIIe janvier 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e147">Fol. 10 • 4 « Instruction D'ARMAND DE BOURBON [prince DE CONTI] pour Mr de Laigue, pour aller traicter en Flandre... Faict à Paris, ce 3e jour de fevrier 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e171">Fol. 13 • 5 Lettre de l'archiduc « LEOPOLD GUIL[LAUME, gouverneur des Pays-Bas]... à monsieur le prince de Conti,... De Bruxelles, le 10 de febvrier 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e179">Fol. 15 • 6 Instruction d'«ARMAND DE BOURBON », prince DE CONTI, à Mr le marquis de Noirmoutier, « pour traicter avec monseigneur l'archiduc [Léopold-Guillaume], du 10 febvrier 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e190">Fol. 17 • 7 Instruction d'«ARMAND DE BOURBON », prince DE CONTI, à monsieur de Bréquigny, envoyé vers l'archiduc Léopold-Guillaume. « A Paris, ce 25 febvrier 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e198">Fol. 19 • 8 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à madame la mareschalle d'Effiat,... A Paris, ce 6e febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e214">Fol. 20 • 9 « Tres humble Remonstrance du parlement au roy et à la reyne regente... A Paris, en parlement, le 21 janvier 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e230">Fol. 35 • 10 Lettre des « gens tenans la cour de parlement de Paris » au parlement de Rouen, « ce 18 janvier 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e246">Fol. 37 • 11 Lettre de l'archiduc « LEOPOLD GUIL » LAUME au prince de Conti. « De Valenciennes, le 9 de mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e259">Fol. 39 • 12 Réponse de l'archiduc LEOPOLD-GUILLAUME aux propositions qui lui avaient été faites de la part du prince de Conti. « En Valencianas, a 15 de marzo 1549 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e272">Fol. 41 • 13 Autre réponse de l'archiduc LEOPOLD-GUILLAUME aux propositions du prince de Conti. « En la villa de Landresie, a veinte y ocho de marzo de mill seiscientos y quarenta y nueve años ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e285">Fol. 43 • 14 « Declaration du roy LOUIS [XIV], par laquelle les princes, ducs, seigneurs et leurs adherans qui ont pris les armes contre son service, sont declarez criminelz de leze majesté, s'ils ne se rendent pres de sa personne dans trois jours apres la publication d'icelle... Donné à St Germain en Laye, le 23 jour de janvier, l'an de grace 1649 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e306">Fol. 45 • 15 « Lettre du roy, envoyée aux gouverneurs des provinces de ce royaume, sur les mouvemens de Paris... Fait à Saint Germain en Laye, le trente septembre 1648 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e327">Fol. 49 • 16 et 17 « Placars imprimés », contenant l'apologie du cardinal Mazarin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e350">Fol. 54 • 18 Réponse de l'archiduc LEOPOLD-GUILLAUME aux propositions du prince de Conti. « En Landrechies, a 28 de março 1649 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e368">Fol. 57 • 19 Passeport donné par le roi « LOUIS » XIV au duc de Brissac. « Donné à St Germain en Layé, le XVIe mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e395">Fol. 59 • 20 « Discours prononcé en presence du roy, par le sieur FOURNIER, president en l'eslection et premier eschevin de la ville de Paris, deputé d'icelle vers Sa Majesté, le huictieme jour de janvier mil six cens quarante neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e416">Fol. 63 • 21 Pouvoir donné par « ARMAND DE BOURBON », prince DE CONTI, à messieurs les duc de Brissac, comte de Maure, Mrs de Barriere et de Gressy, pour prendre part à « la conference qui se tiendra à Ruel ou ailleurs », et « traitter » des « interets » des princes et des parlements unis « pour le soulagement des peuples... Faict à Paris, ce 17 mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e432">Fol. 65 • 22 Instruction d'«ARMAND DE BOURBON », prince DE CONTI, à monsieur de Noirmoustier.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e440">Fol. 67 • 23 « Copie de lettre de monsieur le prince DE CONTI à S. A. [l'archiduc Léopold Guillaume, gouverneur des Pays-Bas]... A Paris, ce 10 de mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e448">Fol. 69 • 24 Passeport donné par « ARMAND DE BOURBON », prince DE CONTI, à « Mr le comte de Bethune,... Faict à Paris, le 19e jour de mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e462">Fol. 71 • 25 Lettre d'«ARMAND DE BOURBON », prince DE CONTI, à M. de Brissac. « A Paris, ce XXIIe mars 1649, à deux heures apres midy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e473">Fol. 73 • 26 Mémoire d'«ARMAND DE BOURBON », prince DE CONTI, pour les députés de la conférence de Ruel. « A Paris, ce 25 mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e481">Fol. 75 • 27 Déclaration d'«ARMAND DE BOURBON », prince DE CONTI, sur l'état des négociations entamées à Ruel.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e489">Fol. 77 • 28 Protestation des princes et autres seigneurs du royaume pour confirmer leur union ensemble et avec le parlement de Paris. « Faict à Paris, le 25 mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e497">Fol. 79 • 29 Lettre du « mareschal [PHILIPPE] DE LA MOTTE » HOUDANCOURT et de FRANÇOIS DE VENDOME, « duc DE BEAUFORT », à monsieur de Brissac. « A Paris, ce 29e mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e523">Fol. 81, 83 et 86 • 30 à 32 Trois lettres d'«ARMAND DE BOURBON », prince DE CONTI, aux députés à la conférence de Ruel.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e531">Fol. 88 • 33 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à monsieur le duc de Brissac,... A Paris, ce 17 mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e544">Fol. 90 • 34 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à monsieur le marquis de Noirmoustier,... A Paris, ce 22 mars 1649, au soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e552">Fol. 92 et 95 • 35 et 36 Deux lettres du Sr DE « ST AMAN,... à monsieur Sarrazin, secretaire de Mr le prince de Conti ». 1649.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e569">Fol. 99 • 37 Manifeste de MM. LOUIS DE LA TREMOILLE, marquis DE NOIRMOUSTIER, et DE LAIGUE sur ce qui s'est passé lorsqu'ils furent envoyés vers l'archiduc gouverneur des Pays-Bas, pour y traiter de la part du prince de Conti.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e587">Fol. 104 • 38 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... monsieur le duc de Brissac,... Ce 7e apvril 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e603">Fol. 107 • 39 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à monsieur de Legue,... Ce 7e apvril 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e614">Fol. 109 • 40 Lettre d'«A[RMAND] DE BOURBON [prince DE CONTI]... à monsieur le marquis de Noirmoustier,... De Paris, ce 2e d'avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e625">Fol. 113 • 41 Mémoire, avec chiffre, du prince DE CONTI. « A Paris, ce 26 mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e633">Fol. 115 • 42 Mémoire, avec chiffre, d'«ARMAND DE BOURBON [prince DE CONTI]... A Paris, ce 27 mars 1649 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e641">Fol. 117 • 43 Mémoire, avec chiffre et déchiffrement, du prince de Conti, pour un de ses envoyés auprès de l'archiduc gouverneur des Pays-Bas.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e649">Fol. 122 • 44 Lettre au prince de Conti pour le prier de se hâter de conclure avec l'archiduc gouverneur des Pays-Bas. « A une lieue de Soissons, ce 1 avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e657">Fol. 124 • 45 Lettre du prince DE CONTI à la duchesse de Longueville, sa soeur.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e665">Fol. 126 • 46 Lettre annonçant que les députés du parlement ont ordre de se joindre à ceux du prince de Conti pour demander l'éloignement du cardinal Mazarin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e673">Fol. 128 • 47 Lettre au prince de Conti pour lui annoncer les offres de secours faites par l'archiduc gouverneur des Pays-Bas.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050295_d0e681">Fol. 131 • 48 Résumé des faits qui donnent « lieu de croire que la conferance [de Ruel] se rompra ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3854 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc502952&Cote=Français 3854&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b52520094g">Consulter le document numérisé</a></li></ul><ul class="listeLiens"></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3854 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9353</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original : Français 3854.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b52520094g" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b52520094g.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b52520094g.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Conti, Armand de Bourbon, prince de. • Lettres.</p>
+<p>Conti, François de Bourbon, prince de. • Lettres.</p>
+<p>France. • Pitorre (Louis XIV).</p>
+<p>Fronde. • Notes, pièces et recueils divers.</p>
+<p>La Trémoille, Louis de, duc de Noirmoutiers. • Mission (1649).</p>
+<p>Léopold-Guillaume, archiduc d'Autriche. • Négociations (1649).</p>
+<p>Louis XIV, roi de France. • Actes et lettres.</p>
+<p>Louis XIV, roi de France. • Recueils et pièces diverses.</p>
+<p>Mazarin, Jules, cardinal. • Pièces diverses.</p>
+<p>Pays-Bas. • Relations, avec la France.</p>
+<p>Saint-Amant, Marc-Antoine Gérard, sr de. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e109');">1 Protestation des princes, ducs et autres grands seigneurs du royaume réunis, à Paris, contre le cardinal Mazarin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e115');">2 Lettre d'ANTOINE III, maréchal duc « DE GRAMONT,... à monseigneur le prince de Conty,... Du quartier de Vileré, ce 2 septembre 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e128');">3 Lettre de « LOUIS [XIII]... au cappitaine Seguin,... Escript à St Germain en Laye, le XXVIIe janvier 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e147');">4 « Instruction D'ARMAND DE BOURBON [prince DE CONTI] pour Mr de Laigue, pour aller traicter en Flandre... Faict à Paris, ce 3e jour de fevrier 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e171');">5 Lettre de l'archiduc « LEOPOLD GUIL[LAUME, gouverneur des Pays-Bas]... à monsieur le prince de Conti,... De Bruxelles, le 10 de febvrier 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e179');">6 Instruction d'«ARMAND DE BOURBON », prince DE CONTI, à Mr le marquis de Noirmoutier, « pour traicter avec monseigneur l'archiduc [Léopold-Guillaume], du 10 febvrier 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e190');">7 Instruction d'«ARMAND DE BOURBON », prince DE CONTI, à monsieur de Bréquigny, envoyé vers l'archiduc Léopold-Guillaume. « A Paris, ce 25 febvrier 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e198');">8 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à madame la mareschalle d'Effiat,... A Paris, ce 6e febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e214');">9 « Tres humble Remonstrance du parlement au roy et à la reyne regente... A Paris, en parlement, le 21 janvier 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e230');">10 Lettre des « gens tenans la cour de parlement de Paris » au parlement de Rouen, « ce 18 janvier 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e246');">11 Lettre de l'archiduc « LEOPOLD GUIL » LAUME au prince de Conti. « De Valenciennes, le 9 de mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e259');">12 Réponse de l'archiduc LEOPOLD-GUILLAUME aux propositions qui lui avaient été faites de la part du prince de Conti. « En Valencianas, a 15 de marzo 1549 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e272');">13 Autre réponse de l'archiduc LEOPOLD-GUILLAUME aux propositions du prince de Conti. « En la villa de Landresie, a veinte y ocho de marzo de mill seiscientos y quarenta y nueve años ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e285');">14 « Declaration du roy LOUIS [XIV], par laquelle les princes, ducs, seigneurs et leurs adherans qui ont pris les armes contre son service, sont declarez criminelz de leze majesté, s'ils ne se rendent pres de sa personne dans trois jours apres la publication d'icelle... Donné à St Germain en Laye, le 23 jour de janvier, l'an de grace 1649 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e306');">15 « Lettre du roy, envoyée aux gouverneurs des provinces de ce royaume, sur les mouvemens de Paris... Fait à Saint Germain en Laye, le trente septembre 1648 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e327');">16 et 17 « Placars imprimés », contenant l'apologie du cardinal Mazarin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e350');">18 Réponse de l'archiduc LEOPOLD-GUILLAUME aux propositions du prince de Conti. « En Landrechies, a 28 de março 1649 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e368');">19 Passeport donné par le roi « LOUIS » XIV au duc de Brissac. « Donné à St Germain en Layé, le XVIe mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e395');">20 « Discours prononcé en presence du roy, par le sieur FOURNIER, president en l'eslection et premier eschevin de la ville de Paris, deputé d'icelle vers Sa Majesté, le huictieme jour de janvier mil six cens quarante neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e416');">21 Pouvoir donné par « ARMAND DE BOURBON », prince DE CONTI, à messieurs les duc de Brissac, comte de Maure, Mrs de Barriere et de Gressy, pour prendre part à « la conference qui se tiendra à Ruel ou ailleurs », et « traitter » des « interets » des princes et des parlements unis « pour le soulagement des peuples... Faict à Paris, ce 17 mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e432');">22 Instruction d'«ARMAND DE BOURBON », prince DE CONTI, à monsieur de Noirmoustier.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e440');">23 « Copie de lettre de monsieur le prince DE CONTI à S. A. [l'archiduc Léopold Guillaume, gouverneur des Pays-Bas]... A Paris, ce 10 de mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e448');">24 Passeport donné par « ARMAND DE BOURBON », prince DE CONTI, à « Mr le comte de Bethune,... Faict à Paris, le 19e jour de mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e462');">25 Lettre d'«ARMAND DE BOURBON », prince DE CONTI, à M. de Brissac. « A Paris, ce XXIIe mars 1649, à deux heures apres midy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e473');">26 Mémoire d'«ARMAND DE BOURBON », prince DE CONTI, pour les députés de la conférence de Ruel. « A Paris, ce 25 mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e481');">27 Déclaration d'«ARMAND DE BOURBON », prince DE CONTI, sur l'état des négociations entamées à Ruel.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e489');">28 Protestation des princes et autres seigneurs du royaume pour confirmer leur union ensemble et avec le parlement de Paris. « Faict à Paris, le 25 mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e497');">29 Lettre du « mareschal [PHILIPPE] DE LA MOTTE » HOUDANCOURT et de FRANÇOIS DE VENDOME, « duc DE BEAUFORT », à monsieur de Brissac. « A Paris, ce 29e mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e523');">30 à 32 Trois lettres d'«ARMAND DE BOURBON », prince DE CONTI, aux députés à la conférence de Ruel.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e531');">33 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à monsieur le duc de Brissac,... A Paris, ce 17 mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e544');">34 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à monsieur le marquis de Noirmoustier,... A Paris, ce 22 mars 1649, au soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e552');">35 et 36 Deux lettres du Sr DE « ST AMAN,... à monsieur Sarrazin, secretaire de Mr le prince de Conti ». 1649.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e569');">37 Manifeste de MM. LOUIS DE LA TREMOILLE, marquis DE NOIRMOUSTIER, et DE LAIGUE sur ce qui s'est passé lorsqu'ils furent envoyés vers l'archiduc gouverneur des Pays-Bas, pour y traiter de la part du prince de Conti.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e587');">38 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... monsieur le duc de Brissac,... Ce 7e apvril 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e603');">39 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à monsieur de Legue,... Ce 7e apvril 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e614');">40 Lettre d'«A[RMAND] DE BOURBON [prince DE CONTI]... à monsieur le marquis de Noirmoustier,... De Paris, ce 2e d'avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e625');">41 Mémoire, avec chiffre, du prince DE CONTI. « A Paris, ce 26 mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e633');">42 Mémoire, avec chiffre, d'«ARMAND DE BOURBON [prince DE CONTI]... A Paris, ce 27 mars 1649 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e641');">43 Mémoire, avec chiffre et déchiffrement, du prince de Conti, pour un de ses envoyés auprès de l'archiduc gouverneur des Pays-Bas.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e649');">44 Lettre au prince de Conti pour le prier de se hâter de conclure avec l'archiduc gouverneur des Pays-Bas. « A une lieue de Soissons, ce 1 avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e657');">45 Lettre du prince DE CONTI à la duchesse de Longueville, sa soeur.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e665');">46 Lettre annonçant que les députés du parlement ont ordre de se joindre à ceux du prince de Conti pour demander l'éloignement du cardinal Mazarin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e673');">47 Lettre au prince de Conti pour lui annoncer les offres de secours faites par l'archiduc gouverneur des Pays-Bas.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050295_d0e681');">48 Résumé des faits qui donnent « lieu de croire que la conferance [de Ruel] se rompra ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,509 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050201">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050201">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3729-4104</div>
+					<h1>Français 3758
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050201_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201">Français 3758 • Anc. 9256 • « Recueil de diverses lettres, instructions et autres memoires de l'année mil six cens trente cinq ».</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e109">1 « Lettre du roy [LOUIS XIII]... à Mr le mareschal de Chastillon,... Escript à Paris, le 14 febvrier 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e118">2 « Lettre d'[ABEL] SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 14 febvrier 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e127">3 « Pouvoir de Mr le mareschal DE CHASTILLON pour commander l'armée que le roy faisoit assembler en Lorraine... Donné à Paris, le XVIIIe jour de febvrier, l'an de grace mil six cens trente cinq ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e139">Fol. 3 • 4 « Controolle des trouppes qui vont aux environs de St Dizier, et de leurs logemens, donné à M. le mareschal de Chastillon ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e150">Fol. 4 • 5 « Lettre de [FREDERIC-HENRI DE NASSAU], prince D'ORENGE, à Mr le mareschal de Chastillon, escripte de La Haye, le 18e mars 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e169">6 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Chantilly, le XXXe jour de mars 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e181">Fol. 5 • 7 « Lettre d'[ABEL] SERVIEN à Mr le mareschal de Chastillon, escripte à Paris, le mesme jour XXXe mars 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e195">8-9 Deux lettres « du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escrit à Escouan, le XXX mars 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e204">10 « Lettre d'[ABEL] SERVIEN à Mr le mareschal de Chastillon, escripte à Paris, le dernier mars 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e213">Fol. 6 • 11 « Lettre de [GASPARD III DE COLIGNY], mareschal DE CHASTILLON, à Mr Servien, escripte du Pont à Mousson, le premier d'apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e224">12 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escrite à St Germain en Laye, le 3e jour d'avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e239">Fol. 7 • 13 « Lettre de [GASPARD III DE COLIGNY], mareschal DE CHASTILLON, au roy, escripte du Pont à Mousson, le cinquiesme avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e247">14 « Lettre de [GASPARD III DE COLIGNY], mareschal DE CHASTILLON, à Mr Servien. Du mesme jour, 5 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e256">Fol. 9 • 15 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à St Germain en Laye, le cinquiesme avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e270">Fol. 10 • 16 « Lettre de [JACQUES NOMPAR DE CAUMONT, duc et] mareschal DE LA FORCE, à Mr le mareschal de Chastillon, escripte de Metz, le cinquiesme apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e281">Fol. 11 • 17 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à St Germain en Laye, le 9 d'apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e295">Fol. 12 • 18 « Ordre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Faict à St Germain en Laye, le IXe jour d'apvril M.VI.C.XXXV ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e315">Fol. 13 • 19 « Lettre d'[ABEL] SERVIEN à Mr le mareschal de Chastillon, escripte de Ruel, le 9 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e326">Fol. 14 • 20 « Lettre de Mr le mareschal DE CHASTILLON à Mr le mareschal de Brezé, escripte du Pont à Mousson, le 9 avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e340">21 « Estat de l'armée de Mrs les mareschaux de Chastillon et de Brezé, envoyé par Mr Servien ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e352">Fol. 16 • 22 « Estat des trouppes dont sera composée l'armée que le roy faict assembler en Lorraine soubz le commandement du Sr Thibault, avecq les lieux de leur rendez vous. Envoyé par monseigneur Servien à monsieur le mareschal de La Force ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e363">Fol. 17 • 23 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du Pont à Mousson, le 9 avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e377">Fol. 18 • 24 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à St Germain en Laye, le dixiesme jour d'avril mil six cens trente cinq ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e391">25 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte à Ruel, le dixiesme apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e403">Fol. 19 • 26 « Lettre de Mgr le cardinal duc DE RICHELIEU à Mr le mareschal de Chastillon, escripte de Ruel, le unziesme avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e417">27 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du Pont à Mousson, le 12 avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e429">Fol. 20 • 28 « Memoire envoyé à Mr Servien », concernant les « troupes qui ont servy en Allemaigne soubz Mr de Rohan, qui ont ordre de se rendre à Mezieres, le 22me de ce mois d'apvril... Faict au Pont à Mousson, le 12 avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e451">Fol. 22 • 29 « Commission à Mr de Miromenil pour la charge d'intendant de la justice, police et finances, en l'armée commandée par Mrs les mareschaux de Chastillon et de Brezé,... Donné à St Germain en Laye, le quatorziesme jour d'avril, l'an de grace mil six cens trente cinq ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e471">Fol. 24 • 30 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Paris, le XVIme jour d'avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e485">31 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Paris, le dix septiesme apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e494">Fol. 26 • 32 « Lettre du roy [LOUIS XIII] à Mr le mareschal de La Force,... Escript à Paris, le 17me apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e508">33 « Commission à Mrs les mareschaux de Chastillon, de La Force et de Brezé pour procedder au jugement du Sr Des Chapelles, cy devant gouverneur de la ville et chasteau de Circk... Donné à Paris, le seiziesme jour d'apvril mil six cens trente cinq ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e520">Fol. 27 • 34 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Paris, le 17 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e541">35 Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Paris, le dix septiesme jour d'apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e550">Fol. 28 • 36 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Verdun, le 19 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e564">Fol. 30 • 37 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Senlis, ce vingtiesme apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e575">38 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte du Bois le Vicomte, le dixiesme apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e587">Fol. 32 • 39 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 21 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e601">40 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Compiengne, le vingt deuxiesme jour d'apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e610">Fol. 34 • 41 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 22 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e624">Fol. 35 • 42 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Verdun, le vingt troisiesme avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e638">Fol. 36 • 43 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Compiegne, le 23 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e654">44 « Lettre de Mr PAW, ambassadeur extraordinaire de Mrs les Estats à Mr le mareschal de Chastillon, escripte de Paris, le 23 d'apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e669">Fol. 37 • 45 « Instruction aux Srs de Chastillon et de Brezé, mareschaux de France et lieutenans generaulx pour le roy en son armée... Faict à Compiengne, le vingt troisiesme avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e680">Fol. 39 • 46 « Traitté d'alliance de ligue offensifve et deffencifve entre le roy et les Srs les Estats generaux des provinces unies du Païs Bas... Faict à Paris, le huictiesme de febvrier 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e696">Fol. 50 • 47 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Compiengne, le 14 d'apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e707">Fol. 51 • 48 « Lettre de Mr SERVIEN à Mrs les mareschaulx de Chastillon et de Brezé, escripte de Paris, le 14 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e721">49 « Lettre de Mr le mareschal DE CHASTILLON au roy, escripte de Verdun, le XXIIIIme apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e733">Fol. 52 • 50 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Verdun, le 24 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e747">Fol. 53 • 51 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Compiengne, le vingt sixiesme apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e761">Fol. 54 • 52 « Lettre de monseigneur le mareschal de Chastillon à monseigneur Servien, escripte de Verdun, le 26 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e769">Fol. 56 • 53 « Estat des troupes dont doibt estre composée l'armée des mareschaux de Chastillon et de Brezé. Envoyé à Mr Servien,... Faict à Verdun, le vingt sixiesme apvril mil six cens trente cinq ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e780">Fol. 57 • 54 « Lettre du roy à Mr le mareschal de Chastillon,... Escript à Compiengne, le 28e jour d'apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e794">55 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Compiengne, le 28 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e806">Fol. 58 • 56 « Instruction » de « LOUIS [XIII] aux Srs de Chastillon et de Brezé, du 28 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e817">Fol. 61 • 57 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Compiengne, le 29 avril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e831">Fol. 62 • 58 « Responce du roy [LOUIS XIII] au memoire envoyé par le mareschal de Chastillon, adressée aux Srs mareschaux de Chastillon et de Brezé,... Faict à Compiegne, le 29 apvril 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e842">Fol. 64 • 59 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Mezieres, le 2 may 1635 «.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e856">Fol. 66 • 60 « Lettre de Mr SERVIEN à Mrs les mareschaulx de Chastillon et de Brezé, escripte de Peronne, le quatriesme may mil six cens trente cinq ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e870">Fol. 69 • 61 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte du mesme lieu et en mesme datte que la preceddente ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e884">62 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Peronne, le 5 may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e893">Fol. 70 • 63 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Peronne, le cinquiesme may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e907">64 « Lettre de Mrs les mareschaulx DE CHASTILLON et DE BREZE à Mr Servien, escripte de Mezieres, le 6 may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e919">Fol. 72 • 65 « Lettre particuliere de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Mezieres, le 6 may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e933">Fol. 73 • 66 « Lettre d'[HONORE D'ALBERT], duc DE CHAULNES, à Mr le mareschal de Chastillon, escripte de Peronne, le 6 may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e949">67 « Responce du roy [LOUIS XIII] à la despesche de Mrs les mareschaux de Chastillon et de Brezé, du 6 may 1635... Faict à St Quentin, le septiesme may mil six cens trente cinq ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e961">Fol. 75 • 68 « Extraict » d'une lettre « du Sr BRASSET, dernier apvril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e977">69 Extrait d'une lettre du « Sr BRASSET, 26 apvril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e986">Fol. 76 • 70-72 Trois lettres « de Mr SERVIEN à Mrs les mareschaux de Chastillon et de Brezé. De Sainct Quentin, le 7e may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1003">Fol. 77 • 73 « Lettre de Mrs les mareschaux DE CHASTILLON et DE BREZE à Mr Servien, escripte de Mezieres, le 9 may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1017">Fol. 79 • 74 « Arrest du conseil de guerre de l'armée de Sa Majesté commandée par Mrs les mareschaux de Chastillon et de Brezé, contre le sieur Des Chappelles, cy devant gouverneur de la ville et chasteau de Circk... Le 9me may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1031">Fol. 80 • 75 « Lettre de Mr SERVIEN à [Mrs les] mareschaux de Chastillon et de Brezé, escripte de Sainct Quentin, le 9 may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1045">Fol. 81 • 76 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Sainct Quentin, le 10 may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1059">Fol. 82 • 77 « Estat des troupes qui composent l'armée du roy commandée par Mrs les mareschaux de Chastillon et de Brezé ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1070">Fol. 83 • 78 « Lettre de Mr le mareschal DE CHASTILLON à Mr le mareschal de Brezé, escripte du village de Geponsart, le XI may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1084">Fol. 85 • 79 « Lettre de Mr OXENTERN, grand chancellier de la couronne de Suede, à Mr le mareschal de Chastillon, escripte de La Haye, le 28 may 1635 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1108">80 « Lettre de Mgr GUILLAUME, landgrave DE HESSEN, à Mr le mareschal de Chastillon, escripte de Cassel, le premier de juin 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1120">Fol. 86 • 81 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Chasteauthierry, le dernier jour de may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1131">Fol. 88 • 82 « Lettre de Mgr le cardinal duc DE RICHELIEU à Mrs les mareschaux de Chastillon et de Brezé, escripte de Condé, le XXX may 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1145">83 « Lettre de Mr SERVIEN à Mrs les mareschaux de Chastillon et de Brezé, escripte de Condé en Brie, le 1er juing 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1160">Fol. 89 • 84 « Lettre particuliere de Mr SERVIEN à Mr le mareschal de Chastillon, de mesme datte que la precedente ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1174">85 « Lettre de Mr le mareschal DE CHASTILLON au roy, escripte du camp de Ejden, le 1 juin 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1183">Fol. 91 • 86 « Lettre de Mr le mareschal DE CHASTILLON à Mgr le cardinal duc de Richelieu, escripte du camp d'Eisden, le 1er juin 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1200">87 « Estat des trouppes de l'armée de Mrs les Estatz et de la separation qui a esté faicte de leur cavalerie ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1209">Fol. 93 • 88 « Lettre d'ARNAULD D'ANDILLY à Mr le mareschal de Chastillon, escripte d'Espinal, le 5 juing 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1225">89 « Lettre de Mgr le cardinal duc DE RICHELIEU à Mr le mareschal de Chastillon, escripte de Bois le Vicomte, le 8 juing 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1237">Fol. 94 • 90 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Monceaux, le 9e jour de juing 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1251">Fol. 95 • 91 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Bois le Vicomte, le 9 juing 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1265">Fol. 96 • 92 « Lettre de [FERDINAND], electeur de Coloigne, à Mrs les mareschaux de Chastillon et de Brezé,... Datae in civitate nostra Bonnensi, 9 junii anno 1635 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1281">Fol. 97 • 93 « Lettre des consulz et senat de la cité de Cologne à Mrs les mareschaux de Chastillon et de Brezé,... Datae 13 junii anno 1635 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1297">94 « Lettre de [LOUIS DE NOGARET], cardinal DE LA VALLETTE, à Mr le mareschal de Chastillon, escripte du camp devant Porentru, le XI juin 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1306">95 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du camp de Brasen, le XIIII juing 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1318">Fol. 101 • 96 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 20 juing 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1332">Fol. 102 • 97 « Declaration du roy [LOUIS XIII]... Donné à Chasteauthierry, le sixiesme jour de juing, l'an de grace mil six cens trente cinq ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1340">Fol. 108 • 98 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du camp devant Louvain, le 17 juin 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1354">Fol. 111 • 99 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 30 juin 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1368">Fol. 113 • 100 « Lettre », avec chiffre, « du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escrit à Fontainebleau, le dernier de juing 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1379">Fol. 118 • 101 « Lettre à Mgr le cardinal duc de Richelieu, escripte du camp de Buggemon, le 14 juillet 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1395">Fol. 119 • 102 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du camp de Buggemon, le 14 juillet 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1409">Fol. 122 • 103 « Lettre de Mr le mareschal DE CHASTILLON à Mgr le cardinal duc de Richelieu, escripte de Nimmeghen, le 3 d'aoust 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1423">Fol. 123 • 104 « Lettre », avec chiffre, « de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Nimmeghen, le 3e d'aoust 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1440">Fol. 128 • 105 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Chantilly, le 1 jour d'aoust 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1451">106 « Lettre de Mgr le cardinal duc DE RICHELIEU à Mr le mareschal de Chastillon, escripte de Ruel, le 31 juillet 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1463">Fol. 129 • 107 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Ruel, le 1er aoust 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1480">Fol. 130 • 108 « Extraict des logemens de l'armée de Sa Majesté commandée par Mrs les mareschaux de Chastillon et de Brezé ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1491">Fol. 132 • 109 « Lettre de Mr le mareschal DE CHASTILLON à Mr le prince d'Orange, escripte de Paris, le cinquiesme octobre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1505">Fol. 135 • 110 « Lettre de Mr le mareschal DE CHASTILLON à Mr le lantgrave de Hessen, escripte de Paris, le 5 octobre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1519">111 « Lettre de Mr le mareschal DE CHASTILLON à Mr Oxenstern, chancellier de la couronne de Suede, escripte de Paris, le 5 octobre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1531">Fol. 136 • 112 « Estat des troupes dont sera composée l'armée du roy en Picardie, commandée par Mrs les mareschaux de Chaulnes et de Chastillon. Donné par Mr Servien à Mr de Chastillon, s'en allant en Picardie ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1551">Fol. 137 • 113 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du camp d'Outrebois, le 15 octobre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1565">Fol. 140 • 114 « Lettre de Mrs les mareschaux DE CHAULNES et DE CHASTILLON au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1581">Fol. 142 • 115 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon. Escript à St Germain en Laye, le XXVIIe octobre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1598">116 « Lettre de monseigneur SERVIEN à Mr le mareschal de Chastillon, escripte de Ruel, le 17 octobre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1607">Fol. 143 • 117 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte d'Amiens, le 1er novembre 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050201_d0e1624">Fol. 144 • 118 « Lettre de Mr le mareschal DE CHASTILLON à Mr d'Aersens, seigneur de Sommersdik, escrite de Paris, le 21 novembre 1635 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3758 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc502017&Cote=Français 3758&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058223v">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 16480 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc502017&Cote=MF 16480&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3758 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9256</div>
+<div class="did-label">
+<div class="did-unittitle">« Recueil de diverses lettres, instructions et autres memoires de l'année mil six cens trente cinq ».</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 16480. Cote de la matrice (pour commander une reproduction) : R 153328.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9058223v" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9058223v.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9058223v.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Coligny, Gaspard II de, dit 1'amiral de Châtillon. • Actes et lettres.</p>
+<p>Coligny, Gaspard II de, dit 1'amiral de Châtillon. • Instructions.</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>La Force, Jacques Nompar de Caumont, duc de, maréchal de France. • Pièces.</p>
+<p>La Valette, Louis de Nogaret d'Épernon, cardinal de. • Lettres.</p>
+<p>Lorraine. • Recueils (XVIIe s.).</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Maillé, Urbain de, marquis de Brézé, maréchal de France.</p>
+<p>Maillé, Urbain de, marquis de Brézé, maréchal de France. • Lettres.</p>
+<p>Pays-Bas. • Recueils (1635-1638).</p>
+<p>Richelieu, Armand-Jean du Plessis de, cardinal. • Lettres.</p>
+<p>Servien, Abel, secrétaire d'État. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e109');">1 « Lettre du roy [LOUIS XIII]... à Mr le mareschal de Chastillon,... Escript à Paris, le 14 febvrier 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e118');">2 « Lettre d'[ABEL] SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 14 febvrier 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e127');">3 « Pouvoir de Mr le mareschal DE CHASTILLON pour commander l'armée que le roy faisoit assembler en Lorraine... Donné à Paris, le XVIIIe jour de febvrier, l'an de grace mil six cens trente cinq ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e139');">4 « Controolle des trouppes qui vont aux environs de St Dizier, et de leurs logemens, donné à M. le mareschal de Chastillon ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e150');">5 « Lettre de [FREDERIC-HENRI DE NASSAU], prince D'ORENGE, à Mr le mareschal de Chastillon, escripte de La Haye, le 18e mars 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e169');">6 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Chantilly, le XXXe jour de mars 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e181');">7 « Lettre d'[ABEL] SERVIEN à Mr le mareschal de Chastillon, escripte à Paris, le mesme jour XXXe mars 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e195');">8-9 Deux lettres « du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escrit à Escouan, le XXX mars 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e204');">10 « Lettre d'[ABEL] SERVIEN à Mr le mareschal de Chastillon, escripte à Paris, le dernier mars 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e213');">11 « Lettre de [GASPARD III DE COLIGNY], mareschal DE CHASTILLON, à Mr Servien, escripte du Pont à Mousson, le premier d'apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e224');">12 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escrite à St Germain en Laye, le 3e jour d'avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e239');">13 « Lettre de [GASPARD III DE COLIGNY], mareschal DE CHASTILLON, au roy, escripte du Pont à Mousson, le cinquiesme avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e247');">14 « Lettre de [GASPARD III DE COLIGNY], mareschal DE CHASTILLON, à Mr Servien. Du mesme jour, 5 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e256');">15 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à St Germain en Laye, le cinquiesme avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e270');">16 « Lettre de [JACQUES NOMPAR DE CAUMONT, duc et] mareschal DE LA FORCE, à Mr le mareschal de Chastillon, escripte de Metz, le cinquiesme apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e281');">17 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à St Germain en Laye, le 9 d'apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e295');">18 « Ordre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Faict à St Germain en Laye, le IXe jour d'apvril M.VI.C.XXXV ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e315');">19 « Lettre d'[ABEL] SERVIEN à Mr le mareschal de Chastillon, escripte de Ruel, le 9 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e326');">20 « Lettre de Mr le mareschal DE CHASTILLON à Mr le mareschal de Brezé, escripte du Pont à Mousson, le 9 avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e340');">21 « Estat de l'armée de Mrs les mareschaux de Chastillon et de Brezé, envoyé par Mr Servien ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e352');">22 « Estat des trouppes dont sera composée l'armée que le roy faict assembler en Lorraine soubz le commandement du Sr Thibault, avecq les lieux de leur rendez vous. Envoyé par monseigneur Servien à monsieur le mareschal de La Force ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e363');">23 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du Pont à Mousson, le 9 avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e377');">24 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à St Germain en Laye, le dixiesme jour d'avril mil six cens trente cinq ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e391');">25 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte à Ruel, le dixiesme apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e403');">26 « Lettre de Mgr le cardinal duc DE RICHELIEU à Mr le mareschal de Chastillon, escripte de Ruel, le unziesme avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e417');">27 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du Pont à Mousson, le 12 avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e429');">28 « Memoire envoyé à Mr Servien », concernant les « troupes qui ont servy en Allemaigne soubz Mr de Rohan, qui ont ordre de se rendre à Mezieres, le 22me de ce mois d'apvril... Faict au Pont à Mousson, le 12 avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e451');">29 « Commission à Mr de Miromenil pour la charge d'intendant de la justice, police et finances, en l'armée commandée par Mrs les mareschaux de Chastillon et de Brezé,... Donné à St Germain en Laye, le quatorziesme jour d'avril, l'an de grace mil six cens trente cinq ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e471');">30 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Paris, le XVIme jour d'avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e485');">31 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Paris, le dix septiesme apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e494');">32 « Lettre du roy [LOUIS XIII] à Mr le mareschal de La Force,... Escript à Paris, le 17me apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e508');">33 « Commission à Mrs les mareschaux de Chastillon, de La Force et de Brezé pour procedder au jugement du Sr Des Chapelles, cy devant gouverneur de la ville et chasteau de Circk... Donné à Paris, le seiziesme jour d'apvril mil six cens trente cinq ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e520');">34 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Paris, le 17 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e541');">35 Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Paris, le dix septiesme jour d'apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e550');">36 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Verdun, le 19 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e564');">37 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Senlis, ce vingtiesme apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e575');">38 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte du Bois le Vicomte, le dixiesme apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e587');">39 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 21 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e601');">40 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Compiengne, le vingt deuxiesme jour d'apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e610');">41 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 22 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e624');">42 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Verdun, le vingt troisiesme avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e638');">43 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Compiegne, le 23 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e654');">44 « Lettre de Mr PAW, ambassadeur extraordinaire de Mrs les Estats à Mr le mareschal de Chastillon, escripte de Paris, le 23 d'apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e669');">45 « Instruction aux Srs de Chastillon et de Brezé, mareschaux de France et lieutenans generaulx pour le roy en son armée... Faict à Compiengne, le vingt troisiesme avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e680');">46 « Traitté d'alliance de ligue offensifve et deffencifve entre le roy et les Srs les Estats generaux des provinces unies du Païs Bas... Faict à Paris, le huictiesme de febvrier 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e696');">47 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Compiengne, le 14 d'apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e707');">48 « Lettre de Mr SERVIEN à Mrs les mareschaulx de Chastillon et de Brezé, escripte de Paris, le 14 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e721');">49 « Lettre de Mr le mareschal DE CHASTILLON au roy, escripte de Verdun, le XXIIIIme apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e733');">50 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Verdun, le 24 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e747');">51 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Compiengne, le vingt sixiesme apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e761');">52 « Lettre de monseigneur le mareschal de Chastillon à monseigneur Servien, escripte de Verdun, le 26 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e769');">53 « Estat des troupes dont doibt estre composée l'armée des mareschaux de Chastillon et de Brezé. Envoyé à Mr Servien,... Faict à Verdun, le vingt sixiesme apvril mil six cens trente cinq ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e780');">54 « Lettre du roy à Mr le mareschal de Chastillon,... Escript à Compiengne, le 28e jour d'apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e794');">55 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Compiengne, le 28 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e806');">56 « Instruction » de « LOUIS [XIII] aux Srs de Chastillon et de Brezé, du 28 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e817');">57 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Compiengne, le 29 avril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e831');">58 « Responce du roy [LOUIS XIII] au memoire envoyé par le mareschal de Chastillon, adressée aux Srs mareschaux de Chastillon et de Brezé,... Faict à Compiegne, le 29 apvril 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e842');">59 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Mezieres, le 2 may 1635 «.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e856');">60 « Lettre de Mr SERVIEN à Mrs les mareschaulx de Chastillon et de Brezé, escripte de Peronne, le quatriesme may mil six cens trente cinq ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e870');">61 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte du mesme lieu et en mesme datte que la preceddente ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e884');">62 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Peronne, le 5 may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e893');">63 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Peronne, le cinquiesme may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e907');">64 « Lettre de Mrs les mareschaulx DE CHASTILLON et DE BREZE à Mr Servien, escripte de Mezieres, le 6 may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e919');">65 « Lettre particuliere de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Mezieres, le 6 may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e933');">66 « Lettre d'[HONORE D'ALBERT], duc DE CHAULNES, à Mr le mareschal de Chastillon, escripte de Peronne, le 6 may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e949');">67 « Responce du roy [LOUIS XIII] à la despesche de Mrs les mareschaux de Chastillon et de Brezé, du 6 may 1635... Faict à St Quentin, le septiesme may mil six cens trente cinq ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e961');">68 « Extraict » d'une lettre « du Sr BRASSET, dernier apvril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e977');">69 Extrait d'une lettre du « Sr BRASSET, 26 apvril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e986');">70-72 Trois lettres « de Mr SERVIEN à Mrs les mareschaux de Chastillon et de Brezé. De Sainct Quentin, le 7e may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1003');">73 « Lettre de Mrs les mareschaux DE CHASTILLON et DE BREZE à Mr Servien, escripte de Mezieres, le 9 may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1017');">74 « Arrest du conseil de guerre de l'armée de Sa Majesté commandée par Mrs les mareschaux de Chastillon et de Brezé, contre le sieur Des Chappelles, cy devant gouverneur de la ville et chasteau de Circk... Le 9me may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1031');">75 « Lettre de Mr SERVIEN à [Mrs les] mareschaux de Chastillon et de Brezé, escripte de Sainct Quentin, le 9 may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1045');">76 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Sainct Quentin, le 10 may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1059');">77 « Estat des troupes qui composent l'armée du roy commandée par Mrs les mareschaux de Chastillon et de Brezé ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1070');">78 « Lettre de Mr le mareschal DE CHASTILLON à Mr le mareschal de Brezé, escripte du village de Geponsart, le XI may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1084');">79 « Lettre de Mr OXENTERN, grand chancellier de la couronne de Suede, à Mr le mareschal de Chastillon, escripte de La Haye, le 28 may 1635 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1108');">80 « Lettre de Mgr GUILLAUME, landgrave DE HESSEN, à Mr le mareschal de Chastillon, escripte de Cassel, le premier de juin 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1120');">81 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Chasteauthierry, le dernier jour de may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1131');">82 « Lettre de Mgr le cardinal duc DE RICHELIEU à Mrs les mareschaux de Chastillon et de Brezé, escripte de Condé, le XXX may 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1145');">83 « Lettre de Mr SERVIEN à Mrs les mareschaux de Chastillon et de Brezé, escripte de Condé en Brie, le 1er juing 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1160');">84 « Lettre particuliere de Mr SERVIEN à Mr le mareschal de Chastillon, de mesme datte que la precedente ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1174');">85 « Lettre de Mr le mareschal DE CHASTILLON au roy, escripte du camp de Ejden, le 1 juin 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1183');">86 « Lettre de Mr le mareschal DE CHASTILLON à Mgr le cardinal duc de Richelieu, escripte du camp d'Eisden, le 1er juin 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1200');">87 « Estat des trouppes de l'armée de Mrs les Estatz et de la separation qui a esté faicte de leur cavalerie ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1209');">88 « Lettre d'ARNAULD D'ANDILLY à Mr le mareschal de Chastillon, escripte d'Espinal, le 5 juing 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1225');">89 « Lettre de Mgr le cardinal duc DE RICHELIEU à Mr le mareschal de Chastillon, escripte de Bois le Vicomte, le 8 juing 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1237');">90 « Lettre du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escript à Monceaux, le 9e jour de juing 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1251');">91 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Bois le Vicomte, le 9 juing 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1265');">92 « Lettre de [FERDINAND], electeur de Coloigne, à Mrs les mareschaux de Chastillon et de Brezé,... Datae in civitate nostra Bonnensi, 9 junii anno 1635 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1281');">93 « Lettre des consulz et senat de la cité de Cologne à Mrs les mareschaux de Chastillon et de Brezé,... Datae 13 junii anno 1635 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1297');">94 « Lettre de [LOUIS DE NOGARET], cardinal DE LA VALLETTE, à Mr le mareschal de Chastillon, escripte du camp devant Porentru, le XI juin 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1306');">95 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du camp de Brasen, le XIIII juing 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1318');">96 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 20 juing 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1332');">97 « Declaration du roy [LOUIS XIII]... Donné à Chasteauthierry, le sixiesme jour de juing, l'an de grace mil six cens trente cinq ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1340');">98 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du camp devant Louvain, le 17 juin 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1354');">99 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Paris, le 30 juin 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1368');">100 « Lettre », avec chiffre, « du roy [LOUIS XIII] à Mrs les mareschaux de Chastillon et de Brezé,... Escrit à Fontainebleau, le dernier de juing 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1379');">101 « Lettre à Mgr le cardinal duc de Richelieu, escripte du camp de Buggemon, le 14 juillet 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1395');">102 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du camp de Buggemon, le 14 juillet 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1409');">103 « Lettre de Mr le mareschal DE CHASTILLON à Mgr le cardinal duc de Richelieu, escripte de Nimmeghen, le 3 d'aoust 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1423');">104 « Lettre », avec chiffre, « de Mr le mareschal DE CHASTILLON à Mr Servien, escripte de Nimmeghen, le 3e d'aoust 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1440');">105 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon,... Escript à Chantilly, le 1 jour d'aoust 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1451');">106 « Lettre de Mgr le cardinal duc DE RICHELIEU à Mr le mareschal de Chastillon, escripte de Ruel, le 31 juillet 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1463');">107 « Lettre de Mr SERVIEN à Mr le mareschal de Chastillon, escripte de Ruel, le 1er aoust 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1480');">108 « Extraict des logemens de l'armée de Sa Majesté commandée par Mrs les mareschaux de Chastillon et de Brezé ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1491');">109 « Lettre de Mr le mareschal DE CHASTILLON à Mr le prince d'Orange, escripte de Paris, le cinquiesme octobre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1505');">110 « Lettre de Mr le mareschal DE CHASTILLON à Mr le lantgrave de Hessen, escripte de Paris, le 5 octobre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1519');">111 « Lettre de Mr le mareschal DE CHASTILLON à Mr Oxenstern, chancellier de la couronne de Suede, escripte de Paris, le 5 octobre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1531');">112 « Estat des troupes dont sera composée l'armée du roy en Picardie, commandée par Mrs les mareschaux de Chaulnes et de Chastillon. Donné par Mr Servien à Mr de Chastillon, s'en allant en Picardie ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1551');">113 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte du camp d'Outrebois, le 15 octobre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1565');">114 « Lettre de Mrs les mareschaux DE CHAULNES et DE CHASTILLON au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1581');">115 « Lettre du roy [LOUIS XIII] à Mr le mareschal de Chastillon. Escript à St Germain en Laye, le XXVIIe octobre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1598');">116 « Lettre de monseigneur SERVIEN à Mr le mareschal de Chastillon, escripte de Ruel, le 17 octobre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1607');">117 « Lettre de Mr le mareschal DE CHASTILLON à Mr Servien, escripte d'Amiens, le 1er novembre 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050201_d0e1624');">118 « Lettre de Mr le mareschal DE CHASTILLON à Mr d'Aersens, seigneur de Sommersdik, escrite de Paris, le 21 novembre 1635 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,508 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049477">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049477">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 2754-3068</div>
+					<h1>Français 3019
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049477_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477">Français 3019 • Anc. 8544 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e109">1 Lettre du roi « HENRY » VIII au « seigneur de Montmorency, grand maistre de France... De Hamptoncourt, le dernier jour de septembre l'an mil V.C. et trente ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e118">Fol. 3 • 2 Lettre de « HENRY [D'ALBRET, roi de Navarre] au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e131">Fol. 6 • 3 Lettre de « HENRY [D'ALBRET] à monseigneur le grant maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e139">Fol. 8 • 4 Lettre d' « ODET DE FOYX,... à monseigneur le grant maistre... A Civita de Chieti, le XXIe de fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e155">Fol. 11 • 5 Lettre d'« ODET DE FOYX,... à monseigneur le grant maistre... Du camp devant Naples, le XXVIe jour de juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e166">Fol. 12 • 6 Lettre d'«ODET DE FOYX,... à monseigneur le grant maistre... Au camp devant Naples, ce XVme jour de may ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e177">Fol. 13 • 7 Lettre d'«ODET DE FOYX,... à monseigneur le grant maistre... Au camp devant Naples, ce XVme jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e188">Fol. 15 • 8 Lettre de « LOYSE [DE SAVOIE] à monseigneur le grant maistre... A Bloys, ce VIIIme jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e204">Fol. 17 • 9 Lettre du comte « DE CARPI,... à monseigneur le grant maistre... De Paris, ce XIme de janvyer ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e220">Fol. 20 • 10 Lettre de « G[ABRIEL], cardinal DE GRAMONT,... à monseigneur le grant maistre... A Rome, le 31e jour d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e233">Fol. 26 • 11 « Double du deschiffrement de la lectre de monseigneur de Tarbe [G. DE GRAMONT]... A Boulongne, le XXVIIIe jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e244">Fol. 32 • 12 Lettre du duc DE « NORTFOLK,... à monseigneur de Montmorency,...A Grenewiche, le quatriesme jour de aprille ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e257">Fol. 34 • 13 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le mareschal de Montmorency,... De Romme, le XXV de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e275">Fol. 36 • 14 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le grant maistre... De Lyon, ce XXVe d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e296">Fol. 38 • 15 Lettre « P. DE VILLERS L'YLE ADAM,... à monseigneur le grant maistre... De Nevers, ce IIIIe jour de febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e317">Fol. 40 • 16 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le grant maistre... De Nice, le XXVIIIme de decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e338">Fol. 42 • 17 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le grant maistre... De Londres, ce XVIIIme de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e359">Fol. 45 • 18 « Responce faicte sur les instructions apportées par monseigneur Defors,... Faict à Bloys, le XXIIIe jour de mars, l'an mil cinq cens vingt et neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e378">Fol. 51 • 19 Memoire de « PIERRE STROSSY » sur les troupes italiennes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e391">Fol. 54 • 20 Lettre de « MICHEL ANTOYNE DE SALUCES,... à monseigneur le grant maistre... A Parme, ce XXIe jour de fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e412">Fol. 56 • 21 Lettre de « CHARLES [duc DE SAVOIE]... à monseigneur le grant maistre... A Chambery, le XXIe de janvyer ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e433">Fol. 58 • 22 Lettre de « LOYS [DE LONGUEVILLE]... à monseigneur le grant maistre... De Chaudun, ce VIIIe jour de fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e454">Fol. 60 • 23 Copie d'une lettre, en espagnol, de « Don ANTONIO DE LEYBA,... De Milan, XXVII de mayo ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e472">Fol. 62 • 24 Lettre de FREDERIC II, « marquis DE MANTOUE », au « grant maistre de France... A Marmireul, le XVIIIme jour d'aoust mil cinq cens XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e493">Fol. 64 • 25 Lettre de l'amiral « BONNYVET,... à monseigneur le mareschal de Montmorency,... A Sainct Germain, le deuxme jour d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e514">Fol. 67 • 26 Mémoire sur les ligues suisses. « Fait à Fribourg, le derrenier jour de mars, l'an mil cinq cens vingt et neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e522">Fol. 73 • 27 Lettre en chiffre de « V° HIERONIMO RANZO ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e535">Fol. 77 • 28 Lettre de « GALIOT [DE GENOUILLAC]... à monseigneur le grant maistre... De Lonzac, ce VIe may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e556">Fol. 79 • 29 Lettre de « COSME CLAUSSE,... à monseigneur le grant maistre... De Pedrasse, ce XVIIme jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e577">Fol. 81 • 30 Lettre de « GEORGES D'ARMAIGNAC, e[vesque] de Roudez... De Venise, le XXVIIe avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e598">Fol. 84 • 31 Lettre de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à monseigneur le grant maistre... A Rome, le XVe jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e609">Fol. 86 • 32 Lettre de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à Madame... A Burgues, le XXIIme jour de novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e620">Fol. 88 • 33 Lettre d'« YZERNAY,... au roy... A Gennes, le IIIIme jour de juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e636">Fol. 91 • 34 Lettre de « JEHAN [STUART, duc D'ALBANY]... à monseigneur le grant maistre... De Bys, le XXIIe jour de febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e652">Fol. 93 • 35 Lettre, en italien, de « THEODORO TRIVULTIO » au roi. « De Lyone, al p° de novembre M.D.XXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e665">Fol. 94 • 36 « Reporto de homo novamente venuto da Genova... al re... » (document chiffré).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e673">Fol. 97 • 37 Lettre de « GEORGES D'ARMAIGNAC, evesque de Roudez, DE SELVE, evesque de Lavaur... De Venze, ce XVIe novembre mil V.C.XXXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e702">Fol. 100 • 38 « Coppie de la lectre escripte par le roy... à messrs de Morette et de Tarbe,... A Bloys, le XXIIIIe jour de mars mil V.C.XXIX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e719">Fol. 103 • 39 Lettre de « POMPONIO TRIVULTIO,... au roy... A Lyon, le XVIIIme jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e740">Fol. 106 • 40 Lettre de « MONTEJEHAN,... à monseigneur de Montmorancy,... A Lyon, le cinqme jour de decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e761">Fol. 109 • 41 Projet de traité, en latin, entre Louise de Savoie et Henri VIII.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e779">Fol. 112 • 42 Copie d'une lettre, en italien, écrite au roi François Ier. « Da Londra, XVIII februario M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e790">Fol. 116 • 43 Lettre de « CLAUDE [DE LORRAINE, duc] DE GUISE,... à monseigneur le grant maistre... De Saincte Mennehould, le XXVIe jour de juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e811">Fol. 119 • 44 Lettre de « MORETTE » au roi François Ier. « A Manthoue, le XIe avril mil V.C.XXIX». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e838">Fol. 126 • 45 « Copia de lettera scritta alla chrma Ma el II d'aprile, mandata a Bayona a monsignore illme gran maestro... M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e855">Fol. 129 • 46 Lettre sur le divorce du roi d'Angleterre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e863">Fol. 131 • 47 Lettre de « ROBERTET,... à monseigneur le grant maistre... De Bourdeaulx, ce XVIme jour de juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e884">Fol. 134 • 48 Lettre de « l'advoyé et conseil de la ville de Frybourg... à monseigneur le grant maistre... Le XXe de may, anno V.C..XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e910">Fol. 136 • 49 Lettre de « THEODORO TRIVULTIO,... a monsignor gran maestro... Dei Casteleto de Genova, alli V de julio M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e918">Fol. 138 • 50 Lettre de « CLAUDE [DE LORRAINE, duc DE GUISE]... à monseigneur le connestable... De Monstierendel, le penultime jour de decembre V.C.XLII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e934">Fol. 140 • 51 Lettre de l'amiral PHILIPPES CHABOT, seigneur DE « BRYON,... à monseigneur le grant maistre... Le XIme jour de may mil V.C.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e953">Fol. 142 • 52 Lettre, en italien, d'«OCTAVIO URSINO,... à Madame... In campo del re, a di 22 di octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e966">Fol. 145 • 53 Lettre du « consilium antianorum communis Janue... Data Janue, die XXVII martis 1505 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e974">Fol. 147 • 54 Lettre de « FREDERIC [électeur palatin]... au roy... De Spira, le XXVI du moys d'agost 1526 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e987">Fol. 149 • 55 Lettre de « F[RANÇOIS], cardinal DE TOURNON,... De Lyon, ce XVme de novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1003">Fol. 151 • 56 Lettre de « F[RANÇOIS, cardinal] DE TOURNON, archevesque de Bourges.... à monseigneur le grant maistre... De Paris, ce vendredy XIme jour de juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1014">Fol. 153 • 57 « Double de la lectre de POMMERAYE, escripte au roy... De Malignes, ce VIIIe jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1035">Fol. 153 • 58 Copie d'une lettre de « monseigneur DE VELLY ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1053">Fol. 159 • 59 Lettre de « MICHEL ANTOYNE [DE SALUCES]... à monseigneur le grant maistre... Du camp devant Milan, ce XXVIme jour de septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1069">Fol. 162 • 60 Procès-verbal au sujet des cartels échangés entre François Ier et Charles-Quint. 1527. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1090">Fol. 171 • 61 « Inventaire des pieces baillées par monseigneur le chancellier à monseigneur d'Izernay, escuyer, vallet de chambre ordinaire du roy, procureur ordonné et depputé par ledit seigneur avec monseigneur de Boisrigault, pour le recouvrement de la somme de cent mil escuz d'or, somme pieça mise et depposée par le roy... entre les mains des ducz de Bavieres ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1116">Fol. 174 • 62 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo signore monsignore gran maestro... Di Pinarollo, a li XXVIII marzo M.D.XXXVII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1129">Fol. 177 • 63 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo Sr lo Sr conte di Pontremoli,... Di Pinarollo, a li VIII zenaro 1537 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1143">Fol. 180 • 64 Instructions de « JAMES » Ier, roi d'Écosse, « pour maistre Robert Cokbourne,... Edinburgh, le Xe jour d'octobre, l'an mille V.C. et VII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1170">Fol. 182 • 65 Lettre de « RENE DE COSSE, Sr DE BRISSAC,... à monseigneur le grant maistre... De Pedrasse, ce XXIIIme jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1189">Fol. 185 • 66 Lettre d'ANNE DE « MONTMORENCY,... à monseigneur de La Rochepot,... D'Abbeville, le XXVe jour de juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049477_d0e1205">Fol. 187 • 67 Lettre de « COSME CLAUSSE,... à monseigneur le grant maistre... De Pedrasse, ce XXIIIIme jour de mars ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3019 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49477m&Cote=Français 3019&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059994n">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31318 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49477m&Cote=MF 31318&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3019 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8544</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31318. Cote de la matrice (pour commander une reproduction) : R 3920.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059994n" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9059994n.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9059994n.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Angleterre. Histoire extérieure. • France, Traités.</p>
+<p>François Ier, roi de France. • Actes et lettres.</p>
+<p>François Ier, roi de France. • Notes, pièces et recueils divers.</p>
+<p>Gênes. • Notes et pièces diverses.</p>
+<p>Gramont, Gabriel de, évêque de Tarbes, cardinal. • Actes et lettres.</p>
+<p>Henri VIII, roi d'Angleterre. • Actes et lettres.</p>
+<p>Lautrec, Odet de Foix, comte de. • Actes et lettres.</p>
+<p>Palatin, Frédéric II, électeur. • Lettres.</p>
+<p>Suisse. • Relations diplomatiques avec, la France (François Ier).</p>
+<p>Trivulce, Théodore, cardinal. • Lettres.</p>
+<p>Villiers de L'Isle-Adam, Philippe, grand-maître de Rhodes. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e109');">1 Lettre du roi « HENRY » VIII au « seigneur de Montmorency, grand maistre de France... De Hamptoncourt, le dernier jour de septembre l'an mil V.C. et trente ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e118');">2 Lettre de « HENRY [D'ALBRET, roi de Navarre] au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e131');">3 Lettre de « HENRY [D'ALBRET] à monseigneur le grant maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e139');">4 Lettre d' « ODET DE FOYX,... à monseigneur le grant maistre... A Civita de Chieti, le XXIe de fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e155');">5 Lettre d'« ODET DE FOYX,... à monseigneur le grant maistre... Du camp devant Naples, le XXVIe jour de juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e166');">6 Lettre d'«ODET DE FOYX,... à monseigneur le grant maistre... Au camp devant Naples, ce XVme jour de may ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e177');">7 Lettre d'«ODET DE FOYX,... à monseigneur le grant maistre... Au camp devant Naples, ce XVme jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e188');">8 Lettre de « LOYSE [DE SAVOIE] à monseigneur le grant maistre... A Bloys, ce VIIIme jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e204');">9 Lettre du comte « DE CARPI,... à monseigneur le grant maistre... De Paris, ce XIme de janvyer ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e220');">10 Lettre de « G[ABRIEL], cardinal DE GRAMONT,... à monseigneur le grant maistre... A Rome, le 31e jour d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e233');">11 « Double du deschiffrement de la lectre de monseigneur de Tarbe [G. DE GRAMONT]... A Boulongne, le XXVIIIe jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e244');">12 Lettre du duc DE « NORTFOLK,... à monseigneur de Montmorency,...A Grenewiche, le quatriesme jour de aprille ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e257');">13 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le mareschal de Montmorency,... De Romme, le XXV de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e275');">14 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le grant maistre... De Lyon, ce XXVe d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e296');">15 Lettre « P. DE VILLERS L'YLE ADAM,... à monseigneur le grant maistre... De Nevers, ce IIIIe jour de febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e317');">16 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le grant maistre... De Nice, le XXVIIIme de decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e338');">17 Lettre de « P. DE VILLERS L'YLE ADAM,... à monseigneur le grant maistre... De Londres, ce XVIIIme de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e359');">18 « Responce faicte sur les instructions apportées par monseigneur Defors,... Faict à Bloys, le XXIIIe jour de mars, l'an mil cinq cens vingt et neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e378');">19 Memoire de « PIERRE STROSSY » sur les troupes italiennes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e391');">20 Lettre de « MICHEL ANTOYNE DE SALUCES,... à monseigneur le grant maistre... A Parme, ce XXIe jour de fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e412');">21 Lettre de « CHARLES [duc DE SAVOIE]... à monseigneur le grant maistre... A Chambery, le XXIe de janvyer ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e433');">22 Lettre de « LOYS [DE LONGUEVILLE]... à monseigneur le grant maistre... De Chaudun, ce VIIIe jour de fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e454');">23 Copie d'une lettre, en espagnol, de « Don ANTONIO DE LEYBA,... De Milan, XXVII de mayo ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e472');">24 Lettre de FREDERIC II, « marquis DE MANTOUE », au « grant maistre de France... A Marmireul, le XVIIIme jour d'aoust mil cinq cens XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e493');">25 Lettre de l'amiral « BONNYVET,... à monseigneur le mareschal de Montmorency,... A Sainct Germain, le deuxme jour d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e514');">26 Mémoire sur les ligues suisses. « Fait à Fribourg, le derrenier jour de mars, l'an mil cinq cens vingt et neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e522');">27 Lettre en chiffre de « V° HIERONIMO RANZO ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e535');">28 Lettre de « GALIOT [DE GENOUILLAC]... à monseigneur le grant maistre... De Lonzac, ce VIe may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e556');">29 Lettre de « COSME CLAUSSE,... à monseigneur le grant maistre... De Pedrasse, ce XVIIme jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e577');">30 Lettre de « GEORGES D'ARMAIGNAC, e[vesque] de Roudez... De Venise, le XXVIIe avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e598');">31 Lettre de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à monseigneur le grant maistre... A Rome, le XVe jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e609');">32 Lettre de « G[ABRIEL] DE GRAMONT, evesque de Tarbe... à Madame... A Burgues, le XXIIme jour de novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e620');">33 Lettre d'« YZERNAY,... au roy... A Gennes, le IIIIme jour de juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e636');">34 Lettre de « JEHAN [STUART, duc D'ALBANY]... à monseigneur le grant maistre... De Bys, le XXIIe jour de febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e652');">35 Lettre, en italien, de « THEODORO TRIVULTIO » au roi. « De Lyone, al p° de novembre M.D.XXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e665');">36 « Reporto de homo novamente venuto da Genova... al re... » (document chiffré).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e673');">37 Lettre de « GEORGES D'ARMAIGNAC, evesque de Roudez, DE SELVE, evesque de Lavaur... De Venze, ce XVIe novembre mil V.C.XXXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e702');">38 « Coppie de la lectre escripte par le roy... à messrs de Morette et de Tarbe,... A Bloys, le XXIIIIe jour de mars mil V.C.XXIX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e719');">39 Lettre de « POMPONIO TRIVULTIO,... au roy... A Lyon, le XVIIIme jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e740');">40 Lettre de « MONTEJEHAN,... à monseigneur de Montmorancy,... A Lyon, le cinqme jour de decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e761');">41 Projet de traité, en latin, entre Louise de Savoie et Henri VIII.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e779');">42 Copie d'une lettre, en italien, écrite au roi François Ier. « Da Londra, XVIII februario M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e790');">43 Lettre de « CLAUDE [DE LORRAINE, duc] DE GUISE,... à monseigneur le grant maistre... De Saincte Mennehould, le XXVIe jour de juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e811');">44 Lettre de « MORETTE » au roi François Ier. « A Manthoue, le XIe avril mil V.C.XXIX». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e838');">45 « Copia de lettera scritta alla chrma Ma el II d'aprile, mandata a Bayona a monsignore illme gran maestro... M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e855');">46 Lettre sur le divorce du roi d'Angleterre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e863');">47 Lettre de « ROBERTET,... à monseigneur le grant maistre... De Bourdeaulx, ce XVIme jour de juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e884');">48 Lettre de « l'advoyé et conseil de la ville de Frybourg... à monseigneur le grant maistre... Le XXe de may, anno V.C..XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e910');">49 Lettre de « THEODORO TRIVULTIO,... a monsignor gran maestro... Dei Casteleto de Genova, alli V de julio M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e918');">50 Lettre de « CLAUDE [DE LORRAINE, duc DE GUISE]... à monseigneur le connestable... De Monstierendel, le penultime jour de decembre V.C.XLII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e934');">51 Lettre de l'amiral PHILIPPES CHABOT, seigneur DE « BRYON,... à monseigneur le grant maistre... Le XIme jour de may mil V.C.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e953');">52 Lettre, en italien, d'«OCTAVIO URSINO,... à Madame... In campo del re, a di 22 di octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e966');">53 Lettre du « consilium antianorum communis Janue... Data Janue, die XXVII martis 1505 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e974');">54 Lettre de « FREDERIC [électeur palatin]... au roy... De Spira, le XXVI du moys d'agost 1526 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e987');">55 Lettre de « F[RANÇOIS], cardinal DE TOURNON,... De Lyon, ce XVme de novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1003');">56 Lettre de « F[RANÇOIS, cardinal] DE TOURNON, archevesque de Bourges.... à monseigneur le grant maistre... De Paris, ce vendredy XIme jour de juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1014');">57 « Double de la lectre de POMMERAYE, escripte au roy... De Malignes, ce VIIIe jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1035');">58 Copie d'une lettre de « monseigneur DE VELLY ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1053');">59 Lettre de « MICHEL ANTOYNE [DE SALUCES]... à monseigneur le grant maistre... Du camp devant Milan, ce XXVIme jour de septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1069');">60 Procès-verbal au sujet des cartels échangés entre François Ier et Charles-Quint. 1527. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1090');">61 « Inventaire des pieces baillées par monseigneur le chancellier à monseigneur d'Izernay, escuyer, vallet de chambre ordinaire du roy, procureur ordonné et depputé par ledit seigneur avec monseigneur de Boisrigault, pour le recouvrement de la somme de cent mil escuz d'or, somme pieça mise et depposée par le roy... entre les mains des ducz de Bavieres ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1116');">62 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo signore monsignore gran maestro... Di Pinarollo, a li XXVIII marzo M.D.XXXVII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1129');">63 Lettre, en italien, de « GUIDO RANGONE,... al' illustrissimo Sr lo Sr conte di Pontremoli,... Di Pinarollo, a li VIII zenaro 1537 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1143');">64 Instructions de « JAMES » Ier, roi d'Écosse, « pour maistre Robert Cokbourne,... Edinburgh, le Xe jour d'octobre, l'an mille V.C. et VII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1170');">65 Lettre de « RENE DE COSSE, Sr DE BRISSAC,... à monseigneur le grant maistre... De Pedrasse, ce XXIIIme jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1189');">66 Lettre d'ANNE DE « MONTMORENCY,... à monseigneur de La Rochepot,... D'Abbeville, le XXVe jour de juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049477_d0e1205');">67 Lettre de « COSME CLAUSSE,... à monseigneur le grant maistre... De Pedrasse, ce XXIIIIme jour de mars ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

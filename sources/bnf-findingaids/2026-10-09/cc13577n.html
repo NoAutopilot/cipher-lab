@@ -1,0 +1,665 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000013577">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000013577">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 9561-15369 [Supplément français] > Français 12460-13203</div>
+					<h1>          Français          12473
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000013577_info">Informations bibliographiques</a></div><div class="niv0"><div class="withoutChild"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013577">Français 12473 • Vat. 3204 • Chansonnier provençal [Chansonnier K].</a></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 12473 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc13577n&Cote=Français 12473&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b60007960">Consulter le document numérisé</a></li></ul><ul class="listeLiens"></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 12473 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Vat. 3204</div>
+<div class="did-unitid">Ancienne cote : Supplément français n° 2032</div>
+<div class="did-label">
+<div class="did-unittitle">Chansonnier provençal        [Chansonnier K].      </div>
+</div>
+<div class="did-date">        2e moitié du XIII        <emph render="">e</emph>        s.      </div>
+<div class="divdid">Padoue-Venise          . 78 initiales historiées correspondant à chaque poète et 9 initiales peintes sur fonds d'or ciselé, la plupart avec antennes; celle du f.          <emph render="bold">X</emph>          n'a pas été réalisée. Initiales alternativement bleues et rouges à filigranes et antennes rouges et bleus, certains formant encadrement (          <emph render="bold">64</emph>          ). Petites lettres et pieds de mouche bleus et rouges. Rubriques. Titres-courants rouges et bleus composés de la lettre "Q" pour quaternus et d'un chiffre romain indiquant l'ordre des cahiers de la 2e partie (          <emph render="bold">1-188</emph>          ). Taches d'encre bleue ou rouge identique à celle utilisée pour la décoration.        <br/>Parchemin.          XIII + 188 ff. à deux colonnes précédés d'une contregarde de parchemin du XVIIIe s. et suivis d'une garde et d'une contregarde de parchemin moderne ajoutées à l'occasion de la restauration de la reliure en 1981. Composition des cahiers. 26 cahiers: un cahier de 2 ff. (          <emph render="bold">I-II</emph>          ) et un cahier de 7 ff. (          <emph render="bold">III-IX</emph>          ) qui est étaient sans doute à l'origine constitués d'un f. de garde (          <emph render="bold">I</emph>          ) et d'un cahier de 8 ff. correspondant à la table (          <emph render="bold">
+<emph render="">II-IX</emph>
+</emph>          ); un cahier de 4 ff. correspondant au texte déjà copié aux ff.          <emph render="bold">158-159v</emph>          dont l'illustration n'a pas été réalisée (          <emph render="bold">X-XIII</emph>          ); vingt-trois cahiers numérotés de I à XXIII contenant le texte des poèmes: cahiers 1-16 de 8 ff. (          <emph render="bold">1-128</emph>          ) comportant tous au verso du dernier feuillet une réclame ornée à l'encre noire ou à l'encre rouge (          <emph render="bold">120v</emph>          ), cahier 17 de 7 ff. (          <emph render="bold">129-137</emph>          ) et cahier 18 de 11 ff. (          <emph render="bold">138-148</emph>          ) ne comportant pas de réclame, cahiers 19-23 de 8 ff. (          <emph render="bold">149-188</emph>          ) comportant tous au verso du dernier feuillet à l'exception du dernier une réclame ornée à l'encre noire. Il manque sans lacune un feuillet en tête des cahiers 17 et 18.                  Réglure à la mine de plomb sur deux colonnes. Ff.          <emph render="bold">XII-XIIIv</emph>          et          <emph render="bold">186-188</emph>          blancs.  Foliotation en chiffres arabes (XVIe s. ?) de 1 à 185 (          <emph render="bold">1-188</emph>          ) ajoutée aussi dans la table en tête du volume.        340 x 235 mm (just. 230 x 160 mm).<br/>          Reliure italienne de maroquin rouge à décor doré sur les plats constitué d'un double encadrement de filets et de deux roulettes rehaussé d'un fleuron au quatre coins, et au dos de filets et d'une roulette soulignant chacun des sept entrenerfs; dans le dernier entrenerf, armes du          cardinal Angelo Maria Querini, O. S. B. (1680-1755)          , pour qui la reliure a été exécutée avant 1731; dans le premier entrenerf, cote "3204", portée par le ms. à la Bibliothèque Vaticane;dans les entrenerfs suivants les armes du pape          Clément XII (Lorenzo Corsini, 1652-1740)          . Tranches dorées.        <br/>          Estampilles de la Bibliothèque nationale correspondant aux années 1792-1802 (          <emph render="bold">1</emph>          ) et 1852-1870 (          <emph render="bold">82, 185v</emph>          ).        </div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>        Sans doute décoré dans le même atelier que le ms. BnF français 854 dont le style et les coloris sont à peu près identiques, le manuscrit présente, comme le français 854, de nombreuses ressemblances avec le ms. Vat. lat. 5232 de la Bibliothèque Vaticane; cf. E. Monaci, Facsimili di antichi manoscritti, Rorne, 1881-1892, n° 1, pl. 1-2.        <br/>        Ce manuscrit, après avoir appartenu à François Pétrarque, est passé dans la        bibliothèque de la famille d'Este        où le cardinal        Bembo        l'a lu et annoté (        <emph render="bold">4v, 12, 19, 48v</emph>        , etc.). Il a appartenu au collectionneur vénitien        Andrea Mocenigo        , puis à        Fulvio Orsini        . Il a par la suite fait partie de la bibliothèque du        cardinal Querini        ; nommé cardinal bibliothécaire par le pape Clément XII le 4 septembre 1730, le cardinal Querini a fait donation de sa bibliothèque à la Bibliothèque Vaticane le 21 juin 1731; ce ms. n'a manifestement pas fait partie de la transaction passée en 1745 par le cardinal Querini en vue de récupérer ses livres. On le trouve enfin parmi les 500 manuscrits saisis à la        Bibliothèque Vaticane        en juillet 1797 et transportés à Paris en vertu du traité de Tolentino (19 février 1797). Comme l'indiquent les trois notes inscrites au verso du 1er f. de garde, "Ricuperato ai 14 ottobre 1815, [signé] Ginnasi", "Della Biblioteca parigina, [signé] Angeloni Frasinate (Luigi Angeloni)" et "Riconuscioto non utile a l'Italia e prezioso p. la Francia, fu restituto alla Biblioteca ai 17 ottobre 1815, [signé] Ginnasi", le volume a été officiellement rendu aux représentants du pape en 1815 avec les autres manuscrits provenant de la Bibliothèque Vaticane, puis, comme le ms. BnF français 12474, qui est aussi un recueil de chansons de troubadours, il a immédiatement été offert en don à la France, en raison de l'esprit de conciliation dont        Pie VII        était animé à l'égard de        Louis XVIII        . On lit au f.        <emph render="bold">II</emph>        la cote de la Bibliothèque Vaticane: "Cod. vatic. 3204".      </p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b60007960" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b60007960.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b60007960.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>        F.        <emph render="bold">Iv</emph>        . Titre de la main de Fulvio Orsini: "Poesie di cento venti poeti provenzali tocco nelle margini di mano del Petrarca e del Bembo in perg. in fogl. Ful URS.".        <br/>        F.        <emph render="bold">II-IXv</emph>        . Table des poèmes, avec renvoi à l'encre rouge aux numéros des cahiers et à ceux des poèmes dans chaque cahier, indiqués en chiffres romains.        <br/>        F.        <emph render="bold">X-XIv</emph>        . Texte des poèmes déjà copiés aux ff.        <emph render="bold">158-159v</emph>        , cf. la mention de la main de Fulvio Orsini "Sono questi due fogli replicati al fogl. 158-59" (        <emph render="bold">X</emph>        ). Non terminé.        <br/>        F.        <emph render="bold">1-185</emph>        . Poèmes.        <br/>        Corrections et additions contemporaines de la copie. Nombreuses notes de plusieurs mains, passim. Indication de prix (?) "de. XXXVI gr. X s. […]VI" (        <emph render="bold">188v</emph>        ).      </p>
+<p>        78 initiales historiées, la plupart avec antennes, correspondant à chaque poète        <br/>        F. 1 (Peire d'Auvergne), 2v (Peire Rogier), 4 (Giraut de Borneil et les deux chanteurs qui l'accompagnent), 15v (Bernard de Ventadour), 22 (Gaucelm Faidit et sa femme Guilielma Monja), 27 (Peire Vidal), 33 (Arnaut de Mareuil, clerc), 36 (Perdigon jouant de la viole), 37 (Aimeric de Péguillan à cheval), 42 (Peirol à cheval), 46 (Foiquet de Marseille, évêque de Toulouse), 50 (Arnaut Daniel), 52v (Raimon de Miraval, à cheval, quittant un château), 57 (Pons de Chapteuil armé, à cheval), 60 (Raimbaut de Vaqueiras à cheval, vu de face, devant un château), 62 (Guilhem de Saint-Didier), 64v (le moine Gausbert de Puycibot), 66 (Raimon Jordan), 67v (Giraudo Io Ros à cheval, vu de face), 68v (Peire Raimon de Toulouse), 71 (Rigaut de Barbezieux, armé et à cheval), 73 (Gui d'Ussel à cheval, quittant un château), 75 (Lanfranc Cigala), 79 (Bonifaci Calvo), 82 (Bertolome Zorzi), 86v (Ue Brunec, clerc), 88 (Guilhem Adémar à cheval), 89v (Guilhem de Cabestanh à cheval), 91 (Elias Cairel), 93 (Peire de Maensac à cheval), 93v (2) (Sahl d'Escola), (fleire del Foi), 94 (2) (Alphonse Il, roi d'Aragon, en armure, à cheval), (Raimon de las Salas), 94v (Blacatz à cheval), 95 (2) (Guilhem Figueira), (Peire Guilhem de Toulouse, moine), 95v (Ricas Novas), 96v (2) (Guilhem de Balaun), (Daude de Prades, chanoine), 98v (Cadenet), 102 (Marcabru), 107v (2) (Jordan Bonel), (Jaufre Rudel à cheval), 108 (Peire de Valeira), 108v (3) (Ricaut de Tarascon à cheval), (Bertran del Poget à cheval), (Aimeric de Sarlat), 109 (Sordel de Mantoue), 1 1 0 (Montaigna Çot), 1 1 Ov (Na Castelloza, poétesse), 1 1 1 (Aimeric de Belenoi), 113v (Uc de Saint Circ), 116v (Elias de Bajols, moine), 117v (Guilhem de la Tor), 119 (Cercamon), 119v (Albertet de Sisteron), 121 (le moine de Montaudon), 123 (Pistoleta), 124v (Adémar Io Negre), 125 (Guilhem Magret), 125v (2) (Elias Fonsalada), (Azalais de Porcairagues, poétesse), 126 (Bérengier de Palazol à cheval), 126v (2) (Uc de Pena), (la comtesse de Die), 127 (Peire Brémon Io Tor@t), 127v (Gauceran de Saint Leidier, armé à cheval), 128 (3) (Gausbert Amiel armé et à cheval, vu de face), (Guillaume IX d'Aquitaine), (Guiraut de Calanson), 129 (Guilhem Rainoi à cheval), 129v (Raimbaud d'Orange), 133 (Peire Milon), 138 (Savaric de Mauléon à cheval), 149 (Peire Cardenal), 160 (Bertran de Born armé, à cheval), 178 (Guilhem de Berguedan à cheval). Au f. X, la place a été réservée pour une initiale. 9 initiales ornées, ff. 171v, 175 (2), 175v, 176, 176v (2), 177 et 180v.      </p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">Fichier Avril</p>
+</div>
+<div class="description-part">
+<span>
+<p>
+<a title="Consulter ce document" bib="2" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b100005084/f1084" class="hrefLink ext">Consulter la fiche numérisée (Français 12473)</a>
+</p>
+<p>Le <a title="Consulter ce document" target="_blank" href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc94835t" class="hrefLink ext">fichier Avril</a> a été constitué entre 1968 et les années 1990 par François Avril, conservateur au département des Manuscrits, à partir d’un examen systématique des manuscrits des fonds latin, français (et partiellement N.A.F.) et italiens, dans la perspective de l’élaboration d’un catalogue scientifique des manuscrits enluminés de la BnF.  Cette documentation de travail est tenue à jour et complétée jusqu'en 2003.</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>        catalogues:        <br/>        texte: Le chansonnier est recensé sous le sigle K dans les éditions.        <br/>        Bertoni (G.), "Le postille del Bembo sul cod. provençale K", Studi remanzi editi a cura di E. Monaci, 1, Rome, 1903, p. 1-32. Brunel (C.), Bibliographie des manuscrits littéraires en ancien provençal, Paris, 1935, n° 179. D'Arco Avalle (S.), La Letteratura medievale in lingua d'oc nella sua tradizione manoscritta, Turin, 1961. De Lollis (C.), "Ricerche intorno a canzonieri provenzali di eruditi italiani del sec. XVI", Romania, XVII (1889), p. 465-468. Dizionario biografico dei Italiani, I, 1961, p. 242-249 (Angeloni). Folène (J.), "Tradizione e cultura trobadorica nelle corti e nelle città Venete", Storia della cultura veneta, 1, Dalle origini al trecento, Venise, 1976, p. 456-468. Jeanroy (A.), Bibliographie sommaire des chansonniers provençaux, Paris, 1916, p. 8. Meyer (P.), Romania, XXXIII (1904), pp. 134-135. Pillet (A.) et Carstens (H.), Bibliographie der Troubadours, Halle, 1933, p. XV. Thomas (A.), "Les manuscrits provençaux et français de Marc-Antoine Dominicy", Romania, XVII (1888), p. 406; "Sur le sort de quelques manuscrits de la famille d'Este", Romania, XVIII (1889), p. 296-298.        <br/>        codicologie et décor: Anglade (J.), "Miniatures des chansonniers provençaux", Romania, L (1924), p. 596-598.Avril (F.) et Gousset (M.-T.), avec la collaboration de C. Rabel, Manuscrits enluminés d'origine italienne, 2, XIIIe siècle, Paris, 1984, p. 1-3 et n° 15. Degenhart (B.) et Schmitt (A.), Corpus der italianischen Zeichnungen 1300-1400, II, Venedig; Addenda zu Süd- und Mittelitalien, Berlin, 1980, 1, p. 27, 37.        <br/>        histoire: Delisle (L.), "Les archives du Vatican", Journal des Savants, août 1892, p. 498. Nolhac (P. de), "La bibliothèque de Fulvio Orsini", Bibliothèque de l'École des Hautes Études, fasc. 74 (1887), p. 314. Bignami-Odier (Jeanne), La Bibliothèque Vaticane de Sixte IV à Pie XI…, Vatican, 1973, p. 162-163, 174 et 303 (Studi e Testi 272). Josserand (P.) et Bruno (J.), "Les estampilles du département des Imprimés de la B. N.", Mélanges d’histoire du livre et des bibliothèques offerts à F. Calot, Paris, 1960, p. 277, n° 17 et p. 289 n° 36. Laffitte (M.-P.), "La Bibliothèque nationale et les conquêtes artistiques de la Révolution et de l'Empire: les manuscrits d'Italie (1796-1815)", Bulletin du Bibliophile, 1989/2, p. 302-307.      </p>
+<p>
+<br/>1957<br/>Cité p. 272<br/>Rita LEJEUNE, "Le troubadour Rigaut de Barbezieux", tiré à part de <emph render="italic">Mélanges de linguistique et de littérature romanes à la mémoire d'Istvan Frank, </emph>Saarbruck : Universität de Saarlandes (1957), p. 270-295.<br/>
+<emph render="italic">MSS [8° pièce 7815</emph>
+<br/>
+</p>
+<p>        2011        <br/>          Veronica DELL'AGOSTINO, "Nuove considerazioni sul "Frammento romegialli"", extrait de          <emph render="italic">Rivista di storia della miniatura</emph>          , ISSN 1126-4772, n°15 (2011), p. 101-113 + ill. en coul. p.  12 ; étudié p. 102-107 ; ill. p. 104 et 106 ; cité p. 111, n. 24        </p>
+<p>        1984        <br/>          François AVRIL et Marie-Thérès GOUSSET,          <emph render="italic">Manuscrits enluminés d'origine italienne. II. XIIIe siècle</emph>          , Paris : Bibliothèque nationale, 1984, N°15, p. 15-16        </p>
+<p>        2008        <br/>          Ursula Peters,          <emph render="italic">Das Ich im Bild : Die Figur des Autors in volkssprachigen Bilderhandschriften des 13. bis 16. Jahrhunderts</emph>          , Böhlau, 2008        </p>
+<p>        2008        <br/>          Jean-Loup Lemaitre et Françoise Vielliard,          <emph render="italic">Portraits de troubadours : Initiales du chansonnier provençal A (Biblioteca Apostolica Vaticana, Vat. Lat. 5232)</emph>          , Città del Vaticano : Biblioteca Apostolica Vaticana, 2008        </p>
+<p>        2009        <br/>          Matteo Motolese, Paolo Procaccioli, Emilio Russo,          <emph render="italic">Autografi dei letterati italiani : il cinquecento</emph>          , tome 1, Rome : Salerno Editrice, 2009        </p>
+<p>        2010        <br/>          Portraits de troubadours. Initiales du chansonnier provençal A (Biblioteca Apostolica Vaticana, Vat. Latin 5232) publiées par Jean-Loup LEMAÎTRE et Françoise VIELLIARD, avec la collaboration de Louis DUVAL-ARNOULD, et le concours du Centre Trobar. Biblioteca apostolica Vaticana, Città del Vaticano, 2008,126p.,  C.R. par N. HENRARD, extrait de          <emph render="italic">Scriptorium</emph>          , T. 63, 2009, p.87-88, B224        </p>
+<p>        2011        <br/>          Veronica DELL'AGOSTINO, "Nuove considerazioni sul 'frammento Romegialli'",          <emph render="italic">Revista di storia della miniatura</emph>          15, 2001, pp. 101-113        </p>
+<p>        2012        <br/>          Federica Toniolo et Gennaro Toscano,          <emph render="italic">Miniatura. Lo sguardo e la parola : Studi in onore di Giordana Maria Canova</emph>          , SilvanaEditoriale, 2012        </p>
+<p>
+<br/>2015<br/>
+<emph render="italic">Miscellanea Bibliothecae Apostolicae Vaticanae XXI, </emph>Città del Vaticano : Biblioteca Apostolica Vaticana, 2015.<br/>
+<emph render="italic">MSS [4 IMPR 3646</emph>
+<br/>
+</p>
+<p>
+<br/>2016<br/>Cité p. 114<br/>
+<emph render="italic">Richard Coeur de Lion. Entre mythe et réalités, </emph>Gand : Snoeck, 2016.<br/>
+<emph render="italic">MSS [C 3551</emph>
+</p>
+<p>
+<br/>2016<br/>Cité p. 123-125-127<br/>ACADEMIA NAZIONALE DEI LINCEI, <emph render="italic">I Libri che hanno fatto l'Europa. Manoscritti latini e romanzi da Carlo Magno all'invenzionze della stampa. Biblioteche corsiniana e romane, </emph>Roma : Bardi Edizione, 2016.<br/>
+<emph render="italic">MSS [4 IMPR 3658</emph>
+</p>
+<p>
+<br/>2017<br/>Cité p. 119<br/>Miriam CABRE, "Politique et courtoisie à l'automne des troubadours", Extrait de <emph render="italic">Cahiers de civilisation médiévale, </emph>n°60, (2017), p. 113-124.<br/>
+<emph render="italic">MSS [P-135 (2017-60)</emph>
+</p>
+</span>
+</div>
+</div><div class="processinfo-class">
+<div class="label-part">
+<p class="processinfo-label">Informations sur le traitement</p>
+</div>
+<div class="description-part">
+<span>
+<p>Notice rédigée par M.-P. Laffitte, d'après Portraits de troubadours : initiales des chansonniers provençaux I et K (Paris, BNF, ms. fr. 854 et 12473) / publiées par Jean-Loup Lemaître et Françoise Vielliard ; avec la collaboration de Marie-Thérèse Gousset, Marie-Pierre Laffitte et Philippe Palasi, Ussel-Paris, 2006 (Mémoires et documents sur le Bas-Limousin).</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>        Fac similé : "        <emph render="italic">Intavulare", tavole di canzonieri romanzi. I, Canzonieri provenzali. 2, Bibliothèque nationale de France, I (fr. 854), K (fr. 12473)</emph>        , a cura di Walter Meliga, Modena : E. Mucchi, 2001        <br/>        809.02 INTA 1,2      </p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">Dépouillement bibliographique</p>
+</div>
+<div class="description-part">
+<span>
+<p>Ce dépouillement bibliographique est réalisé de façon systématique à partir des publications acquises par le département des Manuscrits. Il est issu de chargements périodiques (dernier chargement : février 2021).</p>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">2005</p>
+</div>
+<div class="description-part">
+<span>
+<p>Mario EUSEBI, <emph render="italic">Saggi di filologia romanza</emph>, dir. Eugenio Burgio, Florence : Ed. del Galluzzo, 2005, manuscrit [108], cité p. 201-207, 213-215, 228, 236. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb41420020b" class="hrefLink ext">8-IMPR-12165</a>.</p>
+</span>
+</div>
+</div>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">2013</p>
+</div>
+<div class="description-part">
+<span>
+<p>Sarah KAY, <emph render="italic">Parrots and nightingales. Troubadour quotations and the development of European poetry</emph>, Philadelphia : University of Pennsylvania press, 2013, cité p. 406. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb43821787r" class="hrefLink ext">8-IMPR-12961</a>.</p>
+</span>
+</div>
+</div>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">2015</p>
+</div>
+<div class="description-part">
+<span>
+<p>Chiara PONCHIA, <emph render="italic">Frammenti dell'Aldià : miniature trecentesche della Divina commedia</emph>, Padova : Il Poligrafo casa editrice, 2015, cité p. 203. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb44506407v" class="hrefLink ext">8-IMPR-12722</a>.</p>
+</span>
+</div>
+</div>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">2016</p>
+</div>
+<div class="description-part">
+<span>
+<p>Silvio MELANI, <emph render="italic">Per sen de Trobar : l'opera lirica di Daude de Pradas</emph>, Turnhout : Brepols publishers n. v., 2016, utilisé pour l'édition sous le sigle K. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb450935097" class="hrefLink ext">8-IMPR-12562</a>.</p>
+<p>Teresa D'URSO Alessandra PERICCIOLI SAGGESE, Guiseppa Z. ZANICHELLI (dir.), <emph render="italic">Il libro miniato e il suo committente per la ricostruzione delle biblioteche ecclesiastiche del Medioevo italiano (secoli XI-XIV)</emph>, Padova : Il Poligrafo casa editrice, 2016, cité p. 414. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb45258361h" class="hrefLink ext">8-IMPR-12869</a>.</p>
+</span>
+</div>
+</div>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">2017</p>
+</div>
+<div class="description-part">
+<span>
+<p>SAPIENZA, <emph render="italic">CRITICA DEL TESTO,Volume XX, n° 1</emph>, Roma : Viella, 2017, cité p. 240. — P-267 (2017-20, 1).</p>
+<p>Alexander SCHUBERT, <emph render="italic">Richard Löwenherz : König - Ritter - Gefangener</emph>, Regensburg : Schnell und Steiner, 2017, cité p. 88. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb45419932b" class="hrefLink ext">4-IMPR-3760</a>.</p>
+<p>Alexander SCHUBERT, <emph render="italic">Richard Löwenherz : König - Ritter - Gefangener</emph>, Regensburg : Schnell und Steiner, 2017, cité p. 118. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb45419932b" class="hrefLink ext">4-IMPR-3760</a>.</p>
+<p>Alexander SCHUBERT, <emph render="italic">Richard Löwenherz : König - Ritter - Gefangener</emph>, Regensburg : Schnell und Steiner, 2017, cité p. 330. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb45419932b" class="hrefLink ext">4-IMPR-3760</a>.</p>
+<p>Alexander SCHUBERT<emph render="italic">Richard Löwenherz : König - Ritter - Gefangener</emph>, Regensburg : Schnell und Steiner, 2017, cité p. 330. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb45419932b" class="hrefLink ext">4-IMPR-3760</a>.</p>
+<p>Alessio DECARIA e Claudio LAGOMARSINI (dir.), <emph render="italic">I confini della lirica tempi, luoghi, tradizione della poesia romanza</emph>, Florence : SISMEL - Edizione del Galluzzo, 2017, cité p. 98 n. 100-1 n. 117-9, 120 e n. 122, 124, 126-7. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb453265885" class="hrefLink ext">8-IMPR-12907</a>.</p>
+<p>Armando PETRUCCI, <emph render="italic">Letteraturia italiana : una storia attraverso la scrittura</emph>, Roma : Carocci editor, 2017, cité p. 155. — <a title="Consulter ce document" bib="2" target="_blank" href="https://catalogue.bnf.fr/ark:/12148/cb45352576t" class="hrefLink ext">8-IMPR-12908</a>.</p>
+</span>
+</div>
+</div>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">2018</p>
+</div>
+<div class="description-part">
+<span>
+<p>Sylvie LEFÈVRE et Jean-René VALETTE (dir.), <emph render="italic">Romania : revue consacrée à l'étude des langues et des littératures romanes</emph>, Paris : Société des amis de la Romania, 2018, tome 136, cité p. 472. — PER ROMA 2018 3-4.</p>
+</span>
+</div>
+</div>
+<div class="bibliography-class">
+<div class="label-part">
+<p class="bibliography-label">2024</p>
+</div>
+<div class="description-part">
+<span>
+<p>Laurent Macé, ""Voilà l'abeile qui rôde". Foulque de Marseille, évêque de Toulouse (1205-1231)", dans Laure Barthet (dir.), <emph render="italic">Cathares. Toulouse dans la croisade</emph>, cat. exp., Toulouse, musée Saint-Raymond, couvent des Jacobins, 5 avril 2024-5 janvier 2025, Paris / Toulouse, 2024, p. 225.</p>
+</span>
+</div>
+</div>
+</span>
+</div>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<br/>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

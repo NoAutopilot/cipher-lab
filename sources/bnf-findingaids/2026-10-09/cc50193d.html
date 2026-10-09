@@ -1,0 +1,484 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050193">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050193">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3729-4104</div>
+					<h1>Français 3747
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050193_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193">Français 3747 • Anc. 9241 • Recueil de copies de pièces.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e161">1 Lettre de « F. MIGUEL DE LA CONCEPCION à madama de Luina,... De Madrid, a doze de junio de mill y seis sientos y trienta quatro años ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e167">2 « Traduction de la precedente lettre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e173">Fol. 2 • 3 Lettre de MADELEINE DE SILLY, dame « DU FARGIS, à la reyne... 1634 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e186">4 Lettre de madame DU « FARGIS à la reyne... Ce 15 avril 1634 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e192">Fol. 3 • 5 Lettre de « FRANCISCO DE GALARETTA à la reyne... De Brusselas, a 15 de abril 1634 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e205">6 Lettre de « la reyne [ANNE D'AUTRICHE] au cardinal infant... En San Jerman, a 11 de enero 1635 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e211">7 Lettre de « la reyne au cardinal infant... En Paris, a 26 de enero 1635 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e217">8 Lettre de « la reyne à Galarette,... En Paris, a 28 de abril 1635 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e223">Fol. 4 • 9 Lettre de « NICOLAS MARINI BENEVENTE à Du Moulin, 20 decembre 1634 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e246">Fol. 4 et 5 • 10-13 Quatre lettres de GUILLAUME « CRAFTZ à madame de Chevreuse ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e254">Fol. 6 • 14 « Extraict des lettres de GUILL[AUME] CRAFTZ, Anglois. De Calais, le 5 fevrier 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e272">15 « Extraict des trois lettres en chiffre de G. CRAFTZ. De Calais, le 5 fevrier 1635 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e278">Fol. 7 • 16 Lettre du « duc [DE LORRAINE, NICOLAS] FRANÇOIS à made [Nicole] de Lorraine. A Florence, le 7 aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e299">17 « Extraict d'une lettre de MONTAGUT à B. 20 aoust 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e305">Fol. 8 • 18 Lettre de HENRIETTE-MARIE DE FRANCE, « reyne d'Angleterre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e328">Fol. 8 et 9 • 19-20 Deux lettres de GUILLAUME « CRAFTZ à made de Chevreuse ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e339">Fol. 10 • 21-22 Deux « Lettres de [HENRIETTE DE LORRAINE], princesse de Phalsbourg... 19 juin, à Bruxelle ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e357">Fol. 11 • 23 Lettre de « la princesse de Falsbourg, 5 may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e370">Fol. 12 • 24 Lettre de « la princesse de Phalsbourg à Roussin, 26 avril, de Bruxelle ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e378">Fol. 13 • 25 « Lettre de made la princesse MARGUERITE [DE LORRAINE, duchesse d'Orléans] à monsieur de Lorraine ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e399">26 Lettre de CHARLES II DE LORRAINE, duc « d'Elbeuf, à Mr de Lorraine ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e408">27 Lettre de « la princesse MARGUERITE DE LORRAINE [duchesse d'Orléans] à la reyne de la Grande Bretagne... De Bruxelle, ce 21 fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e414">Fol. 14 • 28 « Avis touchant le cardinal de Richelieu ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e427">29 Lettre de CHARLES D'ANGENNES, Sr DU « FARGIS, à sa femme ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e436">Fol. 15 • 30 Lettre de MADELEINE DE SILLY, « dame DU FARGIS, à son mary ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e444">31 Lettre de « Me DU FARGIS à son mary, 27 aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e453">Fol. 16 • 32 Lettre d'intrigues politiques. « Ce 10e septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e469">Fol. 16bis • 33 Lettre de madame DU « FARGIS à la reyne, 13 septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e477">Fol. 17 • 34 « Lettre de [madame DU] FARGIS pour la reine, du 27 septembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e490">35 Lettre de madame DU « FARGIS à la reyne, 27 septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e496">Fol. 18 • 36 Lettre de « Me DU FARGIS à la reyne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e507">Fol. 19 • 37 Lettre du marquis de « MIRABEL à la reyne, 29 septembre ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e520">38-39 Deux lettres de madame DU « FARGIS à la reyne, 18 octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e526">Fol. 20 • 40 Lettre du marquis de « MIRABEL à la reyne, du 30 octobre ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e539">41 Lettre de madame DU « FARGIS à la reyne, premier novembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e545">42 Lettre de madame DU « FARGIS à la reyne, du 8 novembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e551">Fol. 21 • 43 Lettre de madame DU « FARGIS à la reyne, du 23 novembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e559">44 Lettre du marquis de « MIRABEL à la reyne, 22 novembre 1636 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e565">45 Lettre de madame DU « FARGIS à la reyne, du 22 novembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e571">Fol. 22 • 46 « Lettre de la reine [ANNE D'AUTRICHE] à [madame DU] Fargis ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e579">47 Lettre de madame DU « FARGIS à la reyne, du 1er decembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e588">48 Lettre de madame DU « FARGIS à la reyne... 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e594">Fol. 23 • 49 Lettre de « la reyne [ANNE D'AUTRICHE] à Mirabel, 24 decembre 1636 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e602">50 Lettre de « la reyne à [madame Du] Fargis, 24 decembre 1636 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e608">Fol. 24 • 51 Lettre de madame DU « FARGIS à la reyne, 29 novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e616">52 Lettre, avec chiffre et déchiffrement, de madame DU « FARGIS à la reyne, 6 decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e622">53 Lettre du marquis DE « MIRABEL à la reyne ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e628">54 Lettre de « l'infant[FERDINAND], cardinal[archevêque de Tolède], à la reyne, 6 decembre 1636 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e634">Fol. 25 • 55 Lettre, avec chiffre et déchiffrement, de madame DU « FARGIS à la reyne, 20 decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e642">56 Lettre de madame DU « FARGIS à la reyne, 13 janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e648">Fol. 26 • 57 Lettre « à madame Gastinois,... Ce septiesme fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e659">58 Lettre de madame DU « FARGIS à la reyne, 31 janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e665">59 Lettre de madame DU « FARGIS à la reyne, 7 fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e671">60 Lettre de madame « A. DE SALLES,... à madame de Gastinoy,... Ce 4 fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e677">Fol. 27 • 61 Lettre de la reine ANNE D'AUTRICHE.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e695">62 Lettre de « M[ARIE] DE ROHAN, [duchesse] DE CHEVREUSE, à la reyne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e701">63 Lettre de M. DE « MONTEGU à la reyne d'Angleterre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e707">Fol. 28 • 64-65 Deux billets qui paraissent avoir été écrits par Mme DU FARGIS à la reine.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e723">66 Lettre de madame DU « FARGIS à la reyne... Bruxelles, 28 fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e729">Fol. 29 • 67 Lettre de madame DU « FARGIS à la reyne, 7 mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e737">68 Lettre de la reine ANNE D'AUTRICHE « pour [madame Du] Fargis. Ce 26 fevrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e743">69 Lettre de la reine « pour Mirabel ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e749">Fol. 30 • 70 Lettre, avec chiffre et déchiffrement, de madame DU « FARGIS à la reyne d'Angleterre... 14 mars 1637 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e757">71 Lettre du marquis de « MIRABEL à la reyne, du 27 mars ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e763">Fol. 31 • 72 Lettre de FERDINAND, « cardinal infant [archevêque de Tolède], à la reyne... A 28 de março 1637 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e771">73 Lettre de « MIRABEL à la reyne, 3 avril 1637 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e777">Fol. 32 • 74 Lettre de « la reyne [ANNE D'AUTRICHE] à [madame Du] Fargis, 6 mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e785">75 Lettre de madame DU «FARGIS à la royne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e791">Fol. 33 • 76 Lettre de « la reyne [ANNE D'AUTRICHE] à Mirabel, 15 avril ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e799">77 Lettre de « la reyne à [madame Du] Fargis, 15 avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e805">78 Lettre du « duc [NICOLAS] FRANÇOIS DE LORRAINE à made la duchesse [Nicole]... A Munich, ce 21 avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e814">79 Lettre du « duc [NICOLAS] FRANÇOIS [DE LORRAINE] à Desrogers,... A Munich, 21 avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e820">Fol. 34 • 80 Lettre de « la princesse CLAUDE, femme du duc [Nicolas] François de Lorraine,... Munich, dernier avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e833">81 Lettre du Sr « HENNEQUIN à Desrogers,... A Munich, dernier avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e842">82 « Lettre de madame [NICOLE, duchesse] DE LORRAINE, au duc François ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e848">83 Lettre de « madame [NICOLE] DE LORRAINE à la princesse Claude, femme du duc François ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e854">Fol. 35 • 84 Lettre de « la reyna [ANNE D'AUTRICHE] al cardinale infante... A 30 de abril ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e867">85 Lettre de « la reyne à Mirabel, 30 avril 1637 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e873">86 Lettre de « la reyne à [madame Du] Fargis, 30 avril 1637 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e879">87 Lettre de « l'infant [FERDINAND, cardinal, archevêque de Tolède] à la reyne, 30 avril ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e885">Fol. 36 • 88 Lettre de madame DU « FARGIS à la reyne, 2 may 1637 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e893">89 Lettre de madame DU « FARGIS à la reyne, 9 may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e899">Fol. 37 • 90 Lettre de « la reyne à [madame Du] Fargis, 22 may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e907">91 Lettre de madame DU « FARGIS à la reyne, 18 avril 1637 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e913">Fol. 38 • 92 Lettre de madame DU « FARGIS à la reyne, 23 may. Bruxelles, 1637 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e921">93 Lettre du Sr « DARGOUGES ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e930">Fol. 39 • 94 Lettre de madame DU « FARGIS à la reyne, Bruxelles, 30 may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e938">95 Lettre de « l'infant [FERDINAND, cardinal, archevêque de Tolède] à la reyne... A 7 de junio 1637 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e944">96 Lettre du marquis DE « MIRABEL à la reyne, 7 juin ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e950">Fol. 40 • 97 Lettre de « la reyne [ANNE D'AUTRICHE] à [madame Du] Fargis, XI juin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e958">98 Lettre du marquis DE « MIRABEL à [madame de] Chevreuse ou à la reyne. 27 juin ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e964">99 Lettre de madame DU « FARGIS à la reyne, 27 juin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e970">Fol. 41 • 100 Lettre de « la reyne [ANNE D'AUTRICHE] à [madame Du] Fargis, 9 juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e978">101 Avis à la reine mère et au cardinal infant. « 20 juin 1637 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e984">102 « Lettre du marquis DE MIRABEL au comte duc [d'Olivarès]. De Bruxelles, 25 juin 1637 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e990">103 « Copia de carta de la reyna [ANNE D'AUTRICHE] al cardinale infante... A 22 de mayo ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e996">Fol. 42 • 104 Lettre de « la reyna al cardinal infante... A 23 julio ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1004">105 Lettre de « la reyne à Mirabel,... A 23 de juliet ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1010">106 Lettre de « la reyne à [madame Du] Fargis, 23 juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1016">Fol. 43 • 107 Lettre de madame DU « FARGIS à la reyne... Bruxelles, ce 15 aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1024">108 Lettre du Sr « GERBIER à Auger,... Bruxelles, 26 decembre 1637 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1033">Fol. 44 • 109 Lettre du Sr « WINDEBANK à Leister, 12 novembre 1637. De Hamptoncourt ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1049">110 Lettre de nouvelles. « De Paris, le 3 juillet 1637 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1055">Fol. 45 • 111 Lettre du Sr « MESMIN ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1071">Fol. 48 • 112 Lettre de HENRI D'ESCOUBLEAU DE « SOURDIS, arche[vêque] de Bourdeaux... à Mr le cardinal de Richelieu,... Paris, ce 16 janvier 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1082">Fol. 49 • 113 Lettre d'ARMAND DUPLESSIS, « cardinal DE RICHELIEU, à monsieur de Bourdeaux, du 16 janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1090">114 « Instruction à Mr de Bourdeaux, 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1099">Fol. 54 • 115 Lettre de Mr DE « SOURDIS, archevesque de Bordeaux... à monsieur le cardinal de Richelieu,... De Nantes, ce premier mars 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1110">Fol. 55 • 116 Lettre de Mr DE « SOURDIS, arch[evêque] de Bordeaux... à Mr le cardinal de Richelieu,... De Nantes, ce 2e mars 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1127">117 Lettre de Mr DE « SOURDIS, [archevêque] de Bordeaux... à Mr le cardinal de Richelieu,... De Brest, ce 8 mars 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1139">Fol. 56 • 118 Lettre de « Mr [DE] SOURDIS, arch[evêque] de Bordeaux, à M. le cardinal de Richelieu,... De Nantes, ce 17 mars 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1150">Fol. 57 • 119 Lettre de M. DE « SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A La Rochelle, 2 mars 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1161">Fol. 59 • 120 Lettre du cardinal DE RICHELIEU « à Mr de [Sourdis, archevêque] de Bordeaux... Dernier mars 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1172">Fol. 62 • 121 Lettre de « Mr DE SOURDIS, arche[vêque] de Bordeaux, à Mr le cardinal de Richelieu,... A Bordeaux, ce 1er avril 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1189">Fol. 67 • 122 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... Bordeaux, ce 10e avril 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1206">Fol. 69 • 123 Lettre de « Mr AMELOT DE BEAULIEU à Mr le cardinal de Richelieu,... De La Rochelle, ce 22me avril 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1228">Fol. 70 • 124 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A La Rochelle, le 20 apvril 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1242">Fol. 75 • 125 « Memoire instructif à monsieur le marquis d'Alluye ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1255">Fol. 78 • 126 « Project du dessein general des trois armées de mer, Languedoc et de Guienne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1268">Fol. 81 • 127 « Memoire pour respondre aux despesches de Mr [de Sourdis, archevêque] de Bourdeaux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1279">Fol. 86 • 128 Lettre de Mr « DE SOURDIS, arch[evêque] de Bourdeaux,... A Sainct Martin de Ré, le 28 apvril 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1290">Fol. 87 • 129 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A St Martin de Ré, le 7e may 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1310">Fol. 92 • 130 « Coppie de la lettre de Mr le prince [DE CONDE], escritte à l'archevesque de Bourdeaux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1326">Fol. 93 • 131 « Coppie de la lettre escritte par Mr [DE SOURDIS, archevêque] de Bordeaux, à Mr le prince [de Condé] ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1340">Fol. 94 • 132 Lettre de Mr « DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'amiral, à la rade St Martin de Ré, le 15 may 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1357">Fol. 97 • 133 « Ordre et amathelotage des vaisseaux de l'armée navalle du roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1365">Fol. 100 • 134 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... De Belle Isle, le 20e may 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1382">Fol. 103 • 135 « Rendez vous de l'armée navalle, pour les vaisseaux hollandois ou autres qui voudroient joindre ladicte armée... Faict à bord de l'admiral, en la rade de Belle Isle, le 15 may 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1390">Fol. 105 • 136 Lettre de « Mr le cardinal DE RICHELIEU à Mr [l'archevêque] de Bordeaux... 20 juin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1404">Fol. 106 • 137 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A la rade de la Courongne, ce 14 juin 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1418">Fol. 109 • 138 « Relation de la Courongne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1429">Fol. 111 • 139 Lettre de « Mr AMELOT BEAULIEU à Mr le cardinal de Richelieu,... Du bort de la Couronne, à Belle Isle, le 29 juin 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1448">Fol. 114 • 140 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A la rade de Belle Isle, le 30e juin 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1465">Fol. 118 • 141 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1479">Fol. 119 • 142 « Articles présentés par le Sr MENILLET, touchant l'armée navalle dont il plaira à Son Eminence [le cardinal de Richelieu] donner resolution à monsieur de Bordeaux... Faict à Abbeville, ce 7 juillet 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1495">Fol. 120 • 143 « Responces aux propositions faictes au roy par le sieur de Menillet de la part de mons. l'archevesque de Bordeaux... Faict à Abbeville, le 7 juillet 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1503">Fol. 124 • 144 « Lettre de Mr le cardinal DE RICHELIEU à Mr [l'archevêque] de Bordeaux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1517">Fol. 125 • 145 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... Au bord de l'amiral, à la rade de Belle Isle, ce 3e juillet 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1534">Fol. 126 • 146 Lettre de « Mr DE SOURDIS, archev[êque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'admiral, en la rade de Belle Isle, le dernier juillet 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1548">Fol. 130 • 147 « Estat des fondz qui sont necessaires pour le desarmement de l'année 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1561">Fol. 132 • 148 « Estat des sommes qui devoient estre envoyées... par le tresorier de l'extraordinaire des guerres, pour la subsistance de trente cinq compagnies des regimens de la couronne et des vaisseaux, embarquez par commandement du roy sur son armée navalle, selon l'estat expedié par Mr Desnoyers, le deuxiesme de febvrier 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1577">Fol. 134 • 149 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à M. le cardinal de Richelieu,... A bord de l'admiral, en la rade, le 18e aoust 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1591">Fol. 137 • 150 « Dessein de se fortifier par les François à La Redde [Laredo]... De Saint Ogne [Santoña], le 18 aoust 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1604">Fol. 140 • 151 Lettre de PHILIPPE IV, roi d'Espagne, à « dom Juan Debon de Silva,... De Madrid, a 4 de julio de 1639 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1612">Fol. 141 • 152 « Relation de ce qui s'est passé en l'armée du roy en son retour à la mer » entre Laredo et Santoña. Août 1639.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1625">Fol. 156 • 153 Lettre de « Mr le cardinal DE RICHELIEU à Mr [l'archevêque] de Bordeaux... 28 aoust 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1639">Fol. 159 • 154 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'admiral, à la rade de St Ogne [Santoña], 22 aoust 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1656">Fol. 160 • 155 Lettre de « Mr le cardinal DE RICHELIEU à Mr [l'archevêque] de Bordeaux,... 17 septembre 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1670">Fol. 161 • 156 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'admiral, en la rade de St Ogne [Santoña], le 26 aoust 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1687">Fol. 164 • 157 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'admiral, en la rade de Belisle, le 15 septembre 1639 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050193_d0e1701">Fol. 166 • 158 Lettre de « Mr DE SOURDIS, arch[evêque]e de Bordeaux, à Mr le cardinal de Richelieu,... A Brest, ce 26 septembre 1639 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3747 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50193d&Cote=Français 3747&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3747 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9241</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de copies de pièces.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Anne d'Autriche, reine de France. • Actes et lettres.</p>
+<p>Argouges, François d'. • Lettres.</p>
+<p>Chevreuse, Marie de Rohan, duchesse de. • Lettres.</p>
+<p>Craftz, Guillaume. • Lettres.</p>
+<p>Du Fargis, Charles d'Angennes, sieur. • Actes et lettres.</p>
+<p>Du Fargis, Madeleine de Silly de la Rochepot, dame d'Angennes. • Lettres.</p>
+<p>Espagne. Histoire extérieure. • Relations, avec la France.</p>
+<p>Ferdinand d'Autriche, cardinal-infant, archevêque de Tolède. • Lettres.</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>Gerbier. • Lettre.</p>
+<p>Guyenne. • Armée.</p>
+<p>Hennequin, L. • Lettres.</p>
+<p>La Concepcion, F. Miguel de. • Lettres.</p>
+<p>Languedoc. • Armée.</p>
+<p>Lorraine, Nicole, duchesse de. • Lettres.</p>
+<p>Marine. • Recueils (XVIIe s.).</p>
+<p>Philippe IV, roi d'Espagne. • Actes et lettres.</p>
+<p>Richelieu, Armand-Jean du Plessis de, cardinal. • Lettres.</p>
+<p>Richelieu, Armand-Jean du Plessis de, cardinal. • Pièces diverses.</p>
+<p>Salles, A. dame de. • Lettre.</p>
+<p>Sourdis, François de, cardinal. • Pièces diverses.</p>
+<p>Sourdis, Henri de, archevêque de Bordeaux. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e161');">1 Lettre de « F. MIGUEL DE LA CONCEPCION à madama de Luina,... De Madrid, a doze de junio de mill y seis sientos y trienta quatro años ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e167');">2 « Traduction de la precedente lettre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e173');">3 Lettre de MADELEINE DE SILLY, dame « DU FARGIS, à la reyne... 1634 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e186');">4 Lettre de madame DU « FARGIS à la reyne... Ce 15 avril 1634 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e192');">5 Lettre de « FRANCISCO DE GALARETTA à la reyne... De Brusselas, a 15 de abril 1634 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e205');">6 Lettre de « la reyne [ANNE D'AUTRICHE] au cardinal infant... En San Jerman, a 11 de enero 1635 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e211');">7 Lettre de « la reyne au cardinal infant... En Paris, a 26 de enero 1635 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e217');">8 Lettre de « la reyne à Galarette,... En Paris, a 28 de abril 1635 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e223');">9 Lettre de « NICOLAS MARINI BENEVENTE à Du Moulin, 20 decembre 1634 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e246');">10-13 Quatre lettres de GUILLAUME « CRAFTZ à madame de Chevreuse ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e254');">14 « Extraict des lettres de GUILL[AUME] CRAFTZ, Anglois. De Calais, le 5 fevrier 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e272');">15 « Extraict des trois lettres en chiffre de G. CRAFTZ. De Calais, le 5 fevrier 1635 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e278');">16 Lettre du « duc [DE LORRAINE, NICOLAS] FRANÇOIS à made [Nicole] de Lorraine. A Florence, le 7 aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e299');">17 « Extraict d'une lettre de MONTAGUT à B. 20 aoust 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e305');">18 Lettre de HENRIETTE-MARIE DE FRANCE, « reyne d'Angleterre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e328');">19-20 Deux lettres de GUILLAUME « CRAFTZ à made de Chevreuse ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e339');">21-22 Deux « Lettres de [HENRIETTE DE LORRAINE], princesse de Phalsbourg... 19 juin, à Bruxelle ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e357');">23 Lettre de « la princesse de Falsbourg, 5 may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e370');">24 Lettre de « la princesse de Phalsbourg à Roussin, 26 avril, de Bruxelle ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e378');">25 « Lettre de made la princesse MARGUERITE [DE LORRAINE, duchesse d'Orléans] à monsieur de Lorraine ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e399');">26 Lettre de CHARLES II DE LORRAINE, duc « d'Elbeuf, à Mr de Lorraine ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e408');">27 Lettre de « la princesse MARGUERITE DE LORRAINE [duchesse d'Orléans] à la reyne de la Grande Bretagne... De Bruxelle, ce 21 fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e414');">28 « Avis touchant le cardinal de Richelieu ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e427');">29 Lettre de CHARLES D'ANGENNES, Sr DU « FARGIS, à sa femme ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e436');">30 Lettre de MADELEINE DE SILLY, « dame DU FARGIS, à son mary ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e444');">31 Lettre de « Me DU FARGIS à son mary, 27 aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e453');">32 Lettre d'intrigues politiques. « Ce 10e septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e469');">33 Lettre de madame DU « FARGIS à la reyne, 13 septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e477');">34 « Lettre de [madame DU] FARGIS pour la reine, du 27 septembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e490');">35 Lettre de madame DU « FARGIS à la reyne, 27 septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e496');">36 Lettre de « Me DU FARGIS à la reyne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e507');">37 Lettre du marquis de « MIRABEL à la reyne, 29 septembre ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e520');">38-39 Deux lettres de madame DU « FARGIS à la reyne, 18 octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e526');">40 Lettre du marquis de « MIRABEL à la reyne, du 30 octobre ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e539');">41 Lettre de madame DU « FARGIS à la reyne, premier novembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e545');">42 Lettre de madame DU « FARGIS à la reyne, du 8 novembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e551');">43 Lettre de madame DU « FARGIS à la reyne, du 23 novembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e559');">44 Lettre du marquis de « MIRABEL à la reyne, 22 novembre 1636 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e565');">45 Lettre de madame DU « FARGIS à la reyne, du 22 novembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e571');">46 « Lettre de la reine [ANNE D'AUTRICHE] à [madame DU] Fargis ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e579');">47 Lettre de madame DU « FARGIS à la reyne, du 1er decembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e588');">48 Lettre de madame DU « FARGIS à la reyne... 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e594');">49 Lettre de « la reyne [ANNE D'AUTRICHE] à Mirabel, 24 decembre 1636 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e602');">50 Lettre de « la reyne à [madame Du] Fargis, 24 decembre 1636 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e608');">51 Lettre de madame DU « FARGIS à la reyne, 29 novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e616');">52 Lettre, avec chiffre et déchiffrement, de madame DU « FARGIS à la reyne, 6 decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e622');">53 Lettre du marquis DE « MIRABEL à la reyne ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e628');">54 Lettre de « l'infant[FERDINAND], cardinal[archevêque de Tolède], à la reyne, 6 decembre 1636 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e634');">55 Lettre, avec chiffre et déchiffrement, de madame DU « FARGIS à la reyne, 20 decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e642');">56 Lettre de madame DU « FARGIS à la reyne, 13 janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e648');">57 Lettre « à madame Gastinois,... Ce septiesme fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e659');">58 Lettre de madame DU « FARGIS à la reyne, 31 janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e665');">59 Lettre de madame DU « FARGIS à la reyne, 7 fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e671');">60 Lettre de madame « A. DE SALLES,... à madame de Gastinoy,... Ce 4 fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e677');">61 Lettre de la reine ANNE D'AUTRICHE.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e695');">62 Lettre de « M[ARIE] DE ROHAN, [duchesse] DE CHEVREUSE, à la reyne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e701');">63 Lettre de M. DE « MONTEGU à la reyne d'Angleterre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e707');">64-65 Deux billets qui paraissent avoir été écrits par Mme DU FARGIS à la reine.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e723');">66 Lettre de madame DU « FARGIS à la reyne... Bruxelles, 28 fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e729');">67 Lettre de madame DU « FARGIS à la reyne, 7 mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e737');">68 Lettre de la reine ANNE D'AUTRICHE « pour [madame Du] Fargis. Ce 26 fevrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e743');">69 Lettre de la reine « pour Mirabel ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e749');">70 Lettre, avec chiffre et déchiffrement, de madame DU « FARGIS à la reyne d'Angleterre... 14 mars 1637 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e757');">71 Lettre du marquis de « MIRABEL à la reyne, du 27 mars ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e763');">72 Lettre de FERDINAND, « cardinal infant [archevêque de Tolède], à la reyne... A 28 de março 1637 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e771');">73 Lettre de « MIRABEL à la reyne, 3 avril 1637 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e777');">74 Lettre de « la reyne [ANNE D'AUTRICHE] à [madame Du] Fargis, 6 mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e785');">75 Lettre de madame DU «FARGIS à la royne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e791');">76 Lettre de « la reyne [ANNE D'AUTRICHE] à Mirabel, 15 avril ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e799');">77 Lettre de « la reyne à [madame Du] Fargis, 15 avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e805');">78 Lettre du « duc [NICOLAS] FRANÇOIS DE LORRAINE à made la duchesse [Nicole]... A Munich, ce 21 avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e814');">79 Lettre du « duc [NICOLAS] FRANÇOIS [DE LORRAINE] à Desrogers,... A Munich, 21 avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e820');">80 Lettre de « la princesse CLAUDE, femme du duc [Nicolas] François de Lorraine,... Munich, dernier avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e833');">81 Lettre du Sr « HENNEQUIN à Desrogers,... A Munich, dernier avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e842');">82 « Lettre de madame [NICOLE, duchesse] DE LORRAINE, au duc François ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e848');">83 Lettre de « madame [NICOLE] DE LORRAINE à la princesse Claude, femme du duc François ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e854');">84 Lettre de « la reyna [ANNE D'AUTRICHE] al cardinale infante... A 30 de abril ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e867');">85 Lettre de « la reyne à Mirabel, 30 avril 1637 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e873');">86 Lettre de « la reyne à [madame Du] Fargis, 30 avril 1637 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e879');">87 Lettre de « l'infant [FERDINAND, cardinal, archevêque de Tolède] à la reyne, 30 avril ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e885');">88 Lettre de madame DU « FARGIS à la reyne, 2 may 1637 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e893');">89 Lettre de madame DU « FARGIS à la reyne, 9 may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e899');">90 Lettre de « la reyne à [madame Du] Fargis, 22 may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e907');">91 Lettre de madame DU « FARGIS à la reyne, 18 avril 1637 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e913');">92 Lettre de madame DU « FARGIS à la reyne, 23 may. Bruxelles, 1637 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e921');">93 Lettre du Sr « DARGOUGES ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e930');">94 Lettre de madame DU « FARGIS à la reyne, Bruxelles, 30 may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e938');">95 Lettre de « l'infant [FERDINAND, cardinal, archevêque de Tolède] à la reyne... A 7 de junio 1637 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e944');">96 Lettre du marquis DE « MIRABEL à la reyne, 7 juin ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e950');">97 Lettre de « la reyne [ANNE D'AUTRICHE] à [madame Du] Fargis, XI juin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e958');">98 Lettre du marquis DE « MIRABEL à [madame de] Chevreuse ou à la reyne. 27 juin ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e964');">99 Lettre de madame DU « FARGIS à la reyne, 27 juin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e970');">100 Lettre de « la reyne [ANNE D'AUTRICHE] à [madame Du] Fargis, 9 juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e978');">101 Avis à la reine mère et au cardinal infant. « 20 juin 1637 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e984');">102 « Lettre du marquis DE MIRABEL au comte duc [d'Olivarès]. De Bruxelles, 25 juin 1637 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e990');">103 « Copia de carta de la reyna [ANNE D'AUTRICHE] al cardinale infante... A 22 de mayo ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e996');">104 Lettre de « la reyna al cardinal infante... A 23 julio ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1004');">105 Lettre de « la reyne à Mirabel,... A 23 de juliet ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1010');">106 Lettre de « la reyne à [madame Du] Fargis, 23 juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1016');">107 Lettre de madame DU « FARGIS à la reyne... Bruxelles, ce 15 aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1024');">108 Lettre du Sr « GERBIER à Auger,... Bruxelles, 26 decembre 1637 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1033');">109 Lettre du Sr « WINDEBANK à Leister, 12 novembre 1637. De Hamptoncourt ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1049');">110 Lettre de nouvelles. « De Paris, le 3 juillet 1637 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1055');">111 Lettre du Sr « MESMIN ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1071');">112 Lettre de HENRI D'ESCOUBLEAU DE « SOURDIS, arche[vêque] de Bourdeaux... à Mr le cardinal de Richelieu,... Paris, ce 16 janvier 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1082');">113 Lettre d'ARMAND DUPLESSIS, « cardinal DE RICHELIEU, à monsieur de Bourdeaux, du 16 janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1090');">114 « Instruction à Mr de Bourdeaux, 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1099');">115 Lettre de Mr DE « SOURDIS, archevesque de Bordeaux... à monsieur le cardinal de Richelieu,... De Nantes, ce premier mars 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1110');">116 Lettre de Mr DE « SOURDIS, arch[evêque] de Bordeaux... à Mr le cardinal de Richelieu,... De Nantes, ce 2e mars 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1127');">117 Lettre de Mr DE « SOURDIS, [archevêque] de Bordeaux... à Mr le cardinal de Richelieu,... De Brest, ce 8 mars 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1139');">118 Lettre de « Mr [DE] SOURDIS, arch[evêque] de Bordeaux, à M. le cardinal de Richelieu,... De Nantes, ce 17 mars 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1150');">119 Lettre de M. DE « SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A La Rochelle, 2 mars 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1161');">120 Lettre du cardinal DE RICHELIEU « à Mr de [Sourdis, archevêque] de Bordeaux... Dernier mars 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1172');">121 Lettre de « Mr DE SOURDIS, arche[vêque] de Bordeaux, à Mr le cardinal de Richelieu,... A Bordeaux, ce 1er avril 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1189');">122 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... Bordeaux, ce 10e avril 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1206');">123 Lettre de « Mr AMELOT DE BEAULIEU à Mr le cardinal de Richelieu,... De La Rochelle, ce 22me avril 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1228');">124 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A La Rochelle, le 20 apvril 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1242');">125 « Memoire instructif à monsieur le marquis d'Alluye ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1255');">126 « Project du dessein general des trois armées de mer, Languedoc et de Guienne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1268');">127 « Memoire pour respondre aux despesches de Mr [de Sourdis, archevêque] de Bourdeaux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1279');">128 Lettre de Mr « DE SOURDIS, arch[evêque] de Bourdeaux,... A Sainct Martin de Ré, le 28 apvril 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1290');">129 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A St Martin de Ré, le 7e may 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1310');">130 « Coppie de la lettre de Mr le prince [DE CONDE], escritte à l'archevesque de Bourdeaux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1326');">131 « Coppie de la lettre escritte par Mr [DE SOURDIS, archevêque] de Bordeaux, à Mr le prince [de Condé] ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1340');">132 Lettre de Mr « DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'amiral, à la rade St Martin de Ré, le 15 may 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1357');">133 « Ordre et amathelotage des vaisseaux de l'armée navalle du roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1365');">134 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... De Belle Isle, le 20e may 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1382');">135 « Rendez vous de l'armée navalle, pour les vaisseaux hollandois ou autres qui voudroient joindre ladicte armée... Faict à bord de l'admiral, en la rade de Belle Isle, le 15 may 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1390');">136 Lettre de « Mr le cardinal DE RICHELIEU à Mr [l'archevêque] de Bordeaux... 20 juin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1404');">137 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A la rade de la Courongne, ce 14 juin 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1418');">138 « Relation de la Courongne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1429');">139 Lettre de « Mr AMELOT BEAULIEU à Mr le cardinal de Richelieu,... Du bort de la Couronne, à Belle Isle, le 29 juin 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1448');">140 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A la rade de Belle Isle, le 30e juin 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1465');">141 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1479');">142 « Articles présentés par le Sr MENILLET, touchant l'armée navalle dont il plaira à Son Eminence [le cardinal de Richelieu] donner resolution à monsieur de Bordeaux... Faict à Abbeville, ce 7 juillet 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1495');">143 « Responces aux propositions faictes au roy par le sieur de Menillet de la part de mons. l'archevesque de Bordeaux... Faict à Abbeville, le 7 juillet 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1503');">144 « Lettre de Mr le cardinal DE RICHELIEU à Mr [l'archevêque] de Bordeaux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1517');">145 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... Au bord de l'amiral, à la rade de Belle Isle, ce 3e juillet 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1534');">146 Lettre de « Mr DE SOURDIS, archev[êque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'admiral, en la rade de Belle Isle, le dernier juillet 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1548');">147 « Estat des fondz qui sont necessaires pour le desarmement de l'année 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1561');">148 « Estat des sommes qui devoient estre envoyées... par le tresorier de l'extraordinaire des guerres, pour la subsistance de trente cinq compagnies des regimens de la couronne et des vaisseaux, embarquez par commandement du roy sur son armée navalle, selon l'estat expedié par Mr Desnoyers, le deuxiesme de febvrier 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1577');">149 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à M. le cardinal de Richelieu,... A bord de l'admiral, en la rade, le 18e aoust 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1591');">150 « Dessein de se fortifier par les François à La Redde [Laredo]... De Saint Ogne [Santoña], le 18 aoust 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1604');">151 Lettre de PHILIPPE IV, roi d'Espagne, à « dom Juan Debon de Silva,... De Madrid, a 4 de julio de 1639 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1612');">152 « Relation de ce qui s'est passé en l'armée du roy en son retour à la mer » entre Laredo et Santoña. Août 1639.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1625');">153 Lettre de « Mr le cardinal DE RICHELIEU à Mr [l'archevêque] de Bordeaux... 28 aoust 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1639');">154 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'admiral, à la rade de St Ogne [Santoña], 22 aoust 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1656');">155 Lettre de « Mr le cardinal DE RICHELIEU à Mr [l'archevêque] de Bordeaux,... 17 septembre 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1670');">156 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'admiral, en la rade de St Ogne [Santoña], le 26 aoust 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1687');">157 Lettre de « Mr DE SOURDIS, arch[evêque] de Bordeaux, à Mr le cardinal de Richelieu,... A bord de l'admiral, en la rade de Belisle, le 15 septembre 1639 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050193_d0e1701');">158 Lettre de « Mr DE SOURDIS, arch[evêque]e de Bordeaux, à Mr le cardinal de Richelieu,... A Brest, ce 26 septembre 1639 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

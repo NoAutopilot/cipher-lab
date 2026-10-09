@@ -1,0 +1,511 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049559">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049559">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3096
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049559_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559">Français 3096 • Anc. 8621 • Recueil de lettres et de pièces originales.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e124">1 Lettre de « FRANÇOYS [Ier]... à monseigneur de Prie,... Escript à Sainct Germain en Laye, le XXVIe jour de mars ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e136">Fol. 2 • 2 Lettre des « gens du parlement de Daulphiné... au roy... Escript à Grenoble, ce XVIme jour de juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e152">Fol. 3 • 3 Lettre, en italien, de « GALEOTTO PICO,... [comte DE LA] MIRANDOLLE,... à monsor... de Vigliandri,... Della Mirandola, a II di luglio di [M.D.]XXXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e168">Fol. 4 • 4 Lettre de « M. DE MORETTE,... au roy... Escript à Marceille ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e184">Fol. 8 • 5 Lettre de « POMPONIO TRIVULTIO,... au roy [François Ier]... Escript à Lyon, le XIIIme jour d'aoust... 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e203">Fol. 11 • 6 Lettre de « RENZO DE CERE,... au roy [François Ier]... De Barlecte, ce XXme jour de febvrier... 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e227">Fol. 12 • 7 Lettre de « M. le commandeur MORETTE,... au roy [François Ier]... A Savonne, le IXe jour d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e251">Fol. 14 • 8 Lettre de LOUIS DE « BREZE,... grant seneschal... au roy... Escript à Evreux, ce VIme jour de novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e272">Fol. 16 • 9 Lettre de M. « DE MORETTE,... au roy... A Savonne, le XXVe jour d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e293">10 « Memoria por monsor DE VAULX ». En français et en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e302">Fol. 19 • 11 Lettre de M. « DE MORETTE,... au roy... De Savonne, le XXVme jour d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e323">Fol. 20 • 12 Lettre de « GLAUDE DURRE,... [Sr] DU PUY,... au roy... Escript en la bastide du Sr de Septemes, pres Marseille, ce XXIIme jour de juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e355">Fol. 22 • 13 Lettre, en italien, de « GALEATIO VESCONTE,... al christianissimo re [François Ier]... A li VI de ottobre 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e381">Fol. 23 • 14 Lettre, en italien, de « GALEATIO VESCONTE,... allo illustrissimo... gran maestro di Franza... Da Lyone, alli VII di decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e404">Fol. 25 • 15 « Extraict abregé des payemens faictz aux bendes de lansquenetz du duc de Virtenberg, pour le moys de juillet mil V.C.XXXVII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e445">Fol. 27 • 16 Lettre, en italien, de « FRANCESCO PETRUCCI,... allo illustrissimo... el Sor conte Alberto de Carpi,... Di Firenze, ad di primo di marzo M.D.XXVIIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e476">Fol. 31 • 17 Lettre de M. « DE MORETTE,... au roy... A Savonne, le XXIXe jour d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e502">Fol. 33 • 18 Lettre de GEORGES « DE SELVE, evesque de Lavaur... à monseigneur... de Villandry, secretaire des commandemens du roy et de ses finances... De Venise, ce XVme de juillet 1534 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e533">Fol. 35 • 19 Lettre de M. « DE MORETTE,... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e556">Fol. 37 • 20 Lettre de « CASTILLON,... au roy [François Ier]... D'Alexandrie, se dernier jour de mars... 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e582">Fol. 39 • 21 Lettre de « GASPAR SORMANO,... à monseigneur... le grant maistre... De Ferrare, le XVIIe jour de septambre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e608">Fol. 41 • 22 Lettre de JEAN DE LANGEAG, « evesque d'Avranches,... à monseigneur... de Villandry,... Escript à Venise, le XIIIe d'octobre... 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e639">Fol. 43 • 23 Lettre de « POMPONIO TRIVULTIO,... au roy [François Ier]... Escript à Lyon, le XIIIIme jour de febvrier... mil V.C.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e676">Fol. 45 • 24 « Memoire de ce que demandent les personnaiges italyens qui sont en ceste court ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e704">Fol. 47 • 25 Lettre de JEAN DE LANGEAC, « evesque d'Avranches... à monseigneur... de Villandry, conseiller du roy, general de ses finances... Escript à Veronne, le XVIIIe mars... 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e735">Fol. 49 • 26 Dépêche, en latin, au roi François Ier, lui donnant des nouvelles d'Allemagne et de la guerre que soutenait l'empereur Charles-Quint contre les Turcs. « Die XXa octobris M.D.XXXII ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e779">Fol. 51 • 27 Dépêche, en italien, « a monsre de Vilandri,... Da Pavia, a li 6 di ottobre 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e815">Fol. 53 • 28 Lettre, en latin, de « JOANNES FINIRUS, cancellarius Hassie... à monseigneur de Langey,... Date Cassellis, 15 februarii anno [M.D.]XXXIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e848">Fol. 55 • 29 Lettre, en italien, de « LEONARD RUMBO,... ad monsignore de Villandri, secretario de finanza del re christianissimo... Da Venetia, a di 20 aprile 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e881">Fol. 57 • 30 Lettre des « consulz et deputez par le conseil de Marselle... au roy... De Marselle, ce VIIIe jour d'avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e917">Fol. 59 • 31 Lettre de « RENZO DE CERE,... à monseigneur l'evesque d'Avranches, ambassadeur pour le roy à Venise... De Barlecte, ce XXme jour de fevrier... mil V.C.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e951">Fol. 62 • 32 Lettre, en italien, de « LEONARD RUMBO,... al re christianissimo [François Ier]... De Cassale Savase, XX octobre 1530 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e987">Fol. 66 • 33 Lettre, en italien, de « CAMILLO URSINO,... In Ascoli, ultimo ottobre 1528... Copia ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1025">34 Lettre, en italien, des « camerarius et antepositi regie terre Amatricae... all' escellente monseigneur Visconte, ambassator del christianissimo re... Ex regia terra Amatrice, 28 octobre 1528... Copia ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1031">Fol. 67 • 35 Lettre, en italien, de « JO. VINCENTIO FRANCHO,... allo illustrissimo Sor... monsigr Visconte, ambasciator del christianissimo re... In La Matrice, a di 30 de octobre 1528... Copia ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1065">Fol. 68 • 36 Lettre de LAZARE « DE BAYF,... à monseigneur... de Villandry, conseiller et secretaire des commandemens du roy... De Haguene, ce VIIIe jour de juing ». 1540.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1101">Fol. 69 • 37 Lettre, en italien, de « MARAVELIA,... a monsre... de Vilandri, secretario del [re] christianissimo ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1137">Fol. 70 • 38 Lettre, en italien, « del Sre RENZO [DE CERE]. A l'Acquila, a li 19 de agosto ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1168">39 Lettre, en italien, « del Sre RENZO [DE CERE]. A l'Acquila, alli 17 de agosto ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1177">Fol. 72 • 40 Lettre, en italien, de « JOACHIN [DE VAULX]... al illustrissimo... gran maestro de Francia... Da Londra, XVII mazo M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1210">Fol. 76 • 41 Lettre de GEORGES « DE SELVE, e[vêque] de Lavaur... à monseigneur... de Villandry, secretaire des commandemens du roy et de ses finances... De Venise, ce XIIme de febvrier 1535 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1246">Fol. 77 • 42 Lettre de GEORGES « DE SELVE, e[vêque] de Lavaur », à « monseigneur de Villandry, secretaire des commandemens du roy et de ses finances... De Venise, ce XVIe de may 1534 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1287">Fol. 78 • 43 Lettre, en italien, de « JOACHIN... DE VAULX » au grand maître de France. « Da Roma, el XIII di novembre 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1320">Fol. 81 • 44 Lettre, en italien, de JEAN DE LANGEAC, « e[vêque] d'Avranches », et de « JOACHIN... DE VAULX », au roi François Ier. « Da Vinecia, el XII de maggio 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1356">Fol. 87 • 45 Lettre de « DANGERANT,... [Sr] DE BOZRIGAULT,... au roy [François Ier]... De Soleurre, le penultime fevrier... mil V.C.XXXIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1401">Fol. 89 • 46 Lettre, en italien, de « JANUS MARIA FREGOSO,... al crestianissimo re [François Ier]... Verone, die XVIII marcii 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1442">Fol. 91 • 47 Lettre chiffrée, en italien, de « GALEAS VISCONTE,... al christianissimo re [François Ier]... Datum in campo, in la pieve de Loccate, a li XII de giugno M.D.XXIX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1478">Fol. 93 • 48 « Extraict des registres du grand conseil du roy, du Ve jour de jung mil V.C.XXVIII », concernant « Pierre Bernier, huissier du conseil, detenu prisonnier en la conciergerie de Rouen ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1520">Fol. 96 • 49 Lettres patentes du roi « FRANÇOYS » Ier en faveur de « Loys de Breszé,... grant seneschal de Normandie ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1554">Fol. 98 • 50 Lettre, en italien, de « CAMILLO URSINO,... al escellente monseigneur Visconte, ambassator del christianissimo re... Data in Ascoli, alli 28 d'ottobre 1528... Copia ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1592">51 Lettre, en italien, de « PIETRO SANCTA CROCE,... al molto escellente Sor il signr viconte di Torrena, ambassator del christianissimo [re]... Data in Spoleti, die ultimo octobris 1528... Copia ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1604">Fol. 99 • 52 Lettre, en italien, d'« el conte DE MONTORIO DE L'AQUILA,... allo illustrissimo Sr... monseigneur el vesconte de Tureno,... Spoleti, ultimo octobris 1528... Copia ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1640">53 Lettre, en italien, de « JOANNE VICENZO FRANCO,... al illustrissimo Sr Jo. Franco de Aquila,... In La Matrice, a di 29 ottobre 1528... Copia ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1649">Fol. 100 • 54 Lettre, en italien, de « GREGORIO CASALE,... allo illustrissimo... mons. lo gran mastro di Francia... Di Roma, alli IIII di maggio M.D.XXIX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1682">Fol. 102 • 55 Lettre, en italien, de « PAULO PORTO,... à monss... de Villandri,... Di Venetia, alli VIII di ottubrio M.D.XXIX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1715">Fol. 104 • 56 Dépêche d'Italie, en italien. « Di Bologna, alli XXII marzo ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1748">Fol. 105 • 57 Lettre, en italien, de « LEONARD RUMBO,... al re christianissimo [François Ier]... De Casale, X novembre 1530 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1784">Fol. 107 • 58 Lettre, en italien, de l'«episcopus Laudensis... al re cristianissimo [François Ier]... Murani, 19 junii 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1820">Fol. 109 • 59 « Responce faicte par le gouverneur de Savonne aux commissaires de Gennes sur la reddition dudict Savonne », acte en latin, signé : « MARCUS TULLIUS DE LAURENTIIS, notarius et cancellarius ». 4 août 1528.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1856">Fol. 111 • 60 « Aviso da Viterbo, alli 3 de agosto », envoyé par « POMPONIO » TRIVULCE.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1884">61 « Aviso da Florentia, de 5 de agosto », envoyé par « POMPONIO » TRIVULCE.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1890">Fol. 113 • 62 Lettre en italien, avec chiffre et déchiffrement, de « GASPAR SORMANO,... al re [François Ier]... Da Ferrara, 22 marzo 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1916">Fol. 115 • 63 Lettre, en italien, avec chiffre, de GASPAR « SORMANO » et de « JOACHIN... DE VAULX » au roi François Ier. « Da Ferrara, penultimo de febraro M.D.XXVIIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1945">Fol. 117 • 64 Lettre, en italien, de JEAN DE LANGEAC, « e[vêque] d'Avranches », et de « JOACHIN... DE VAULX », au roi François Ier. « Da Vinecia, el VI di magio 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1974">Fol. 119 • 65 Lettre, en italien, avec chiffre, de « GASPAR SORMANO » et de JOACHIN « DE VAULX » au roi François Ier. « Da Ferrara, alli XXIII febraro M.D.XXVIIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e1995">Fol. 121 • 66 Lettre, en italien, avec chiffre, de « GASPAR SORMANO » et de « JOACHIN » DE VAULX au roi François Ier. « Da Ferrara, alli 23 febraro 1529... Duplicata ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2016">Fol. 124 • 67 Lettre avec chiffre et déchiffrement : « Doppio de lettere scritte per mi GASPAR SORMANO al Sr duca d'Urbino ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2032">Fol. 125 • 68 « Copia de la lettera al Sr Rienzo,... Da Roma, IX de ottobre 1528 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2043">Fol. 129 • 69 Lettre, en italien, de « GREGORIO CASALE,... allo illustrissimo... mons. lo gran mastro di Francia... In Bologna, alli XVIII di ottobre M.D.XXX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2056">Fol. 131 • 70 « Coppie des lectres escriptes par monseigneur [LAZARE] DE BAYF au roy... De Venize, ce XVme juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2072">Fol. 133 • 71 Lettres patentes du roi « FRANÇOYS » Ier, en faveur des marchands de Genes. « Donné à Fontainebleau... octobre mil V.C.XXVIII ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2086">Fol. 135 • 72 « Advertissemens touchant les affaires du royaulme de Napples ». Avril 1529. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2099">Fol. 137 • 73 Extrait d'une lettre de Gênes du XI avril. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2107">Fol. 138 • 74 « Copia d'una [lettera] del Sor GIOVANNE PAULO DA CERE, di X di maggio 1530. De Pisa, al abbate di Negro, commissario del papa in Lucca ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2123">Fol. 140 • 75 Notes sur les affaires d'Italie, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049559_d0e2136">Fol. 144 • 76 Lettres patentes du roi « FRANÇOIS [Ier]... touchant les mortes payes de Picardye ». Minute.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3096 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49559v&Cote=Français 3096&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060015d">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31394 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49559v&Cote=MF 31394&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3096 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8621</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31394. Cote de la matrice (pour commander une reproduction) : R 4055.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060015d" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9060015d.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9060015d.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Cere, Renzo de. • Lettres.</p>
+<p>Charles V, ou Charles-Quint, empereur d'Allemagne. • Pièces diverses.</p>
+<p>Du Solier, Charles, sieur de Morette. • Lettres.</p>
+<p>Franco, Joanne Vincento. • Lettres.</p>
+<p>François Ier, roi de France. • Actes et lettres.</p>
+<p>François Ier, roi de France. • Notes, pièces et recueils divers.</p>
+<p>Gênes. • Marchands.</p>
+<p>Gênes. • Notes et pièces diverses.</p>
+<p>Italie. • Affaires d'Italie (XVe-XVIe s.).</p>
+<p>Langeac, Jean de, évêque d'Avranches. • Lettres et actes.</p>
+<p>Sormano, Gaspar. • Lettres.</p>
+<p>Trivulce, Pomponio. • Lettres.</p>
+<p>Vaux, Joachim de, ambassadeur à Venise. • Lettres.</p>
+<p>Visconti, Galeazzo. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e124');">1 Lettre de « FRANÇOYS [Ier]... à monseigneur de Prie,... Escript à Sainct Germain en Laye, le XXVIe jour de mars ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e136');">2 Lettre des « gens du parlement de Daulphiné... au roy... Escript à Grenoble, ce XVIme jour de juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e152');">3 Lettre, en italien, de « GALEOTTO PICO,... [comte DE LA] MIRANDOLLE,... à monsor... de Vigliandri,... Della Mirandola, a II di luglio di [M.D.]XXXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e168');">4 Lettre de « M. DE MORETTE,... au roy... Escript à Marceille ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e184');">5 Lettre de « POMPONIO TRIVULTIO,... au roy [François Ier]... Escript à Lyon, le XIIIme jour d'aoust... 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e203');">6 Lettre de « RENZO DE CERE,... au roy [François Ier]... De Barlecte, ce XXme jour de febvrier... 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e227');">7 Lettre de « M. le commandeur MORETTE,... au roy [François Ier]... A Savonne, le IXe jour d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e251');">8 Lettre de LOUIS DE « BREZE,... grant seneschal... au roy... Escript à Evreux, ce VIme jour de novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e272');">9 Lettre de M. « DE MORETTE,... au roy... A Savonne, le XXVe jour d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e293');">10 « Memoria por monsor DE VAULX ». En français et en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e302');">11 Lettre de M. « DE MORETTE,... au roy... De Savonne, le XXVme jour d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e323');">12 Lettre de « GLAUDE DURRE,... [Sr] DU PUY,... au roy... Escript en la bastide du Sr de Septemes, pres Marseille, ce XXIIme jour de juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e355');">13 Lettre, en italien, de « GALEATIO VESCONTE,... al christianissimo re [François Ier]... A li VI de ottobre 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e381');">14 Lettre, en italien, de « GALEATIO VESCONTE,... allo illustrissimo... gran maestro di Franza... Da Lyone, alli VII di decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e404');">15 « Extraict abregé des payemens faictz aux bendes de lansquenetz du duc de Virtenberg, pour le moys de juillet mil V.C.XXXVII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e445');">16 Lettre, en italien, de « FRANCESCO PETRUCCI,... allo illustrissimo... el Sor conte Alberto de Carpi,... Di Firenze, ad di primo di marzo M.D.XXVIIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e476');">17 Lettre de M. « DE MORETTE,... au roy... A Savonne, le XXIXe jour d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e502');">18 Lettre de GEORGES « DE SELVE, evesque de Lavaur... à monseigneur... de Villandry, secretaire des commandemens du roy et de ses finances... De Venise, ce XVme de juillet 1534 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e533');">19 Lettre de M. « DE MORETTE,... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e556');">20 Lettre de « CASTILLON,... au roy [François Ier]... D'Alexandrie, se dernier jour de mars... 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e582');">21 Lettre de « GASPAR SORMANO,... à monseigneur... le grant maistre... De Ferrare, le XVIIe jour de septambre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e608');">22 Lettre de JEAN DE LANGEAG, « evesque d'Avranches,... à monseigneur... de Villandry,... Escript à Venise, le XIIIe d'octobre... 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e639');">23 Lettre de « POMPONIO TRIVULTIO,... au roy [François Ier]... Escript à Lyon, le XIIIIme jour de febvrier... mil V.C.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e676');">24 « Memoire de ce que demandent les personnaiges italyens qui sont en ceste court ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e704');">25 Lettre de JEAN DE LANGEAC, « evesque d'Avranches... à monseigneur... de Villandry, conseiller du roy, general de ses finances... Escript à Veronne, le XVIIIe mars... 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e735');">26 Dépêche, en latin, au roi François Ier, lui donnant des nouvelles d'Allemagne et de la guerre que soutenait l'empereur Charles-Quint contre les Turcs. « Die XXa octobris M.D.XXXII ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e779');">27 Dépêche, en italien, « a monsre de Vilandri,... Da Pavia, a li 6 di ottobre 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e815');">28 Lettre, en latin, de « JOANNES FINIRUS, cancellarius Hassie... à monseigneur de Langey,... Date Cassellis, 15 februarii anno [M.D.]XXXIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e848');">29 Lettre, en italien, de « LEONARD RUMBO,... ad monsignore de Villandri, secretario de finanza del re christianissimo... Da Venetia, a di 20 aprile 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e881');">30 Lettre des « consulz et deputez par le conseil de Marselle... au roy... De Marselle, ce VIIIe jour d'avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e917');">31 Lettre de « RENZO DE CERE,... à monseigneur l'evesque d'Avranches, ambassadeur pour le roy à Venise... De Barlecte, ce XXme jour de fevrier... mil V.C.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e951');">32 Lettre, en italien, de « LEONARD RUMBO,... al re christianissimo [François Ier]... De Cassale Savase, XX octobre 1530 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e987');">33 Lettre, en italien, de « CAMILLO URSINO,... In Ascoli, ultimo ottobre 1528... Copia ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1025');">34 Lettre, en italien, des « camerarius et antepositi regie terre Amatricae... all' escellente monseigneur Visconte, ambassator del christianissimo re... Ex regia terra Amatrice, 28 octobre 1528... Copia ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1031');">35 Lettre, en italien, de « JO. VINCENTIO FRANCHO,... allo illustrissimo Sor... monsigr Visconte, ambasciator del christianissimo re... In La Matrice, a di 30 de octobre 1528... Copia ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1065');">36 Lettre de LAZARE « DE BAYF,... à monseigneur... de Villandry, conseiller et secretaire des commandemens du roy... De Haguene, ce VIIIe jour de juing ». 1540.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1101');">37 Lettre, en italien, de « MARAVELIA,... a monsre... de Vilandri, secretario del [re] christianissimo ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1137');">38 Lettre, en italien, « del Sre RENZO [DE CERE]. A l'Acquila, a li 19 de agosto ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1168');">39 Lettre, en italien, « del Sre RENZO [DE CERE]. A l'Acquila, alli 17 de agosto ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1177');">40 Lettre, en italien, de « JOACHIN [DE VAULX]... al illustrissimo... gran maestro de Francia... Da Londra, XVII mazo M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1210');">41 Lettre de GEORGES « DE SELVE, e[vêque] de Lavaur... à monseigneur... de Villandry, secretaire des commandemens du roy et de ses finances... De Venise, ce XIIme de febvrier 1535 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1246');">42 Lettre de GEORGES « DE SELVE, e[vêque] de Lavaur », à « monseigneur de Villandry, secretaire des commandemens du roy et de ses finances... De Venise, ce XVIe de may 1534 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1287');">43 Lettre, en italien, de « JOACHIN... DE VAULX » au grand maître de France. « Da Roma, el XIII di novembre 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1320');">44 Lettre, en italien, de JEAN DE LANGEAC, « e[vêque] d'Avranches », et de « JOACHIN... DE VAULX », au roi François Ier. « Da Vinecia, el XII de maggio 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1356');">45 Lettre de « DANGERANT,... [Sr] DE BOZRIGAULT,... au roy [François Ier]... De Soleurre, le penultime fevrier... mil V.C.XXXIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1401');">46 Lettre, en italien, de « JANUS MARIA FREGOSO,... al crestianissimo re [François Ier]... Verone, die XVIII marcii 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1442');">47 Lettre chiffrée, en italien, de « GALEAS VISCONTE,... al christianissimo re [François Ier]... Datum in campo, in la pieve de Loccate, a li XII de giugno M.D.XXIX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1478');">48 « Extraict des registres du grand conseil du roy, du Ve jour de jung mil V.C.XXVIII », concernant « Pierre Bernier, huissier du conseil, detenu prisonnier en la conciergerie de Rouen ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1520');">49 Lettres patentes du roi « FRANÇOYS » Ier en faveur de « Loys de Breszé,... grant seneschal de Normandie ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1554');">50 Lettre, en italien, de « CAMILLO URSINO,... al escellente monseigneur Visconte, ambassator del christianissimo re... Data in Ascoli, alli 28 d'ottobre 1528... Copia ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1592');">51 Lettre, en italien, de « PIETRO SANCTA CROCE,... al molto escellente Sor il signr viconte di Torrena, ambassator del christianissimo [re]... Data in Spoleti, die ultimo octobris 1528... Copia ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1604');">52 Lettre, en italien, d'« el conte DE MONTORIO DE L'AQUILA,... allo illustrissimo Sr... monseigneur el vesconte de Tureno,... Spoleti, ultimo octobris 1528... Copia ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1640');">53 Lettre, en italien, de « JOANNE VICENZO FRANCO,... al illustrissimo Sr Jo. Franco de Aquila,... In La Matrice, a di 29 ottobre 1528... Copia ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1649');">54 Lettre, en italien, de « GREGORIO CASALE,... allo illustrissimo... mons. lo gran mastro di Francia... Di Roma, alli IIII di maggio M.D.XXIX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1682');">55 Lettre, en italien, de « PAULO PORTO,... à monss... de Villandri,... Di Venetia, alli VIII di ottubrio M.D.XXIX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1715');">56 Dépêche d'Italie, en italien. « Di Bologna, alli XXII marzo ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1748');">57 Lettre, en italien, de « LEONARD RUMBO,... al re christianissimo [François Ier]... De Casale, X novembre 1530 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1784');">58 Lettre, en italien, de l'«episcopus Laudensis... al re cristianissimo [François Ier]... Murani, 19 junii 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1820');">59 « Responce faicte par le gouverneur de Savonne aux commissaires de Gennes sur la reddition dudict Savonne », acte en latin, signé : « MARCUS TULLIUS DE LAURENTIIS, notarius et cancellarius ». 4 août 1528.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1856');">60 « Aviso da Viterbo, alli 3 de agosto », envoyé par « POMPONIO » TRIVULCE.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1884');">61 « Aviso da Florentia, de 5 de agosto », envoyé par « POMPONIO » TRIVULCE.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1890');">62 Lettre en italien, avec chiffre et déchiffrement, de « GASPAR SORMANO,... al re [François Ier]... Da Ferrara, 22 marzo 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1916');">63 Lettre, en italien, avec chiffre, de GASPAR « SORMANO » et de « JOACHIN... DE VAULX » au roi François Ier. « Da Ferrara, penultimo de febraro M.D.XXVIIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1945');">64 Lettre, en italien, de JEAN DE LANGEAC, « e[vêque] d'Avranches », et de « JOACHIN... DE VAULX », au roi François Ier. « Da Vinecia, el VI di magio 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1974');">65 Lettre, en italien, avec chiffre, de « GASPAR SORMANO » et de JOACHIN « DE VAULX » au roi François Ier. « Da Ferrara, alli XXIII febraro M.D.XXVIIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e1995');">66 Lettre, en italien, avec chiffre, de « GASPAR SORMANO » et de « JOACHIN » DE VAULX au roi François Ier. « Da Ferrara, alli 23 febraro 1529... Duplicata ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2016');">67 Lettre avec chiffre et déchiffrement : « Doppio de lettere scritte per mi GASPAR SORMANO al Sr duca d'Urbino ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2032');">68 « Copia de la lettera al Sr Rienzo,... Da Roma, IX de ottobre 1528 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2043');">69 Lettre, en italien, de « GREGORIO CASALE,... allo illustrissimo... mons. lo gran mastro di Francia... In Bologna, alli XVIII di ottobre M.D.XXX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2056');">70 « Coppie des lectres escriptes par monseigneur [LAZARE] DE BAYF au roy... De Venize, ce XVme juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2072');">71 Lettres patentes du roi « FRANÇOYS » Ier, en faveur des marchands de Genes. « Donné à Fontainebleau... octobre mil V.C.XXVIII ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2086');">72 « Advertissemens touchant les affaires du royaulme de Napples ». Avril 1529. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2099');">73 Extrait d'une lettre de Gênes du XI avril. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2107');">74 « Copia d'una [lettera] del Sor GIOVANNE PAULO DA CERE, di X di maggio 1530. De Pisa, al abbate di Negro, commissario del papa in Lucca ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2123');">75 Notes sur les affaires d'Italie, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049559_d0e2136');">76 Lettres patentes du roi « FRANÇOIS [Ier]... touchant les mortes payes de Picardye ». Minute.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

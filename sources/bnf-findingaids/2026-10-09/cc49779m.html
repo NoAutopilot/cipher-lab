@@ -1,0 +1,512 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049779">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049779">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3318
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049779_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779">Français 3318 • Anc. 8821 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e106">1 « Ce que... Otto von Hoevel, Jahn von Zesthain, Hubert Languet, Heinrich von Schrisspissheim, Heinrich von der Luhr, Wilhelm Rudolf Geckbachel » ont « exposé à Sa Majesté [Charles IX], de la part des princes protestants de la Germanie ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e112">Fol. 4 • 2 Lettre de « CATERINE [DE MEDICIS]... à monsieur Brulart, segreteyre d'Estast » ; suivie d'une lettre dudit « BRULART,... De Paris » et « S. Germain en Laye... XXe jour de juillet 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e123">Fol. 5 • 3 Lettre de « CATERINE [DE MEDICIS]... à monseigneur Brulart,... A Paris, ce IIIe decembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e134">Fol. 7 • 4 Lettre de « AUGUSTE, electeur [de Saxe]... au roy [Charles IX]... De Dressen, ce 20 janvier 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e147">Fol. 9 • 5 Lettre de « CATERINE [DE MEDICIS]... à monseigneur Brulart,... Escrit à Poictiers, le IIme jour de decembre 1575 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e158">Fol. 10 • 6 Lettre de « E[MMANUEL] PHILIBERT [duc DE SAVOIE]... à monseigneur Brulart,... Escript à Turin ; ce IIII 7bre 1575 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e174">Fol. 12 • 7 Lettre de « CATERINE[DE MEDICIS]... à monseigneur Brulart,... Escrit à Poictiers, le XVIe jour de decembre 1575 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e185">Fol. 13 • 8 Lettre de « CATERINE[DE MEDICIS]... à monseigneur Brulart,... Escript à Bloys, ce XXIIe octobre 1575 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e196">Fol. 14 • 9 « Les Moiens que la royne, mere du roy... CATERINE DE MEDICIS]... propose pour satisfaire et faire fournir au duc Jehan Casimir les deniers qui lui ont esté promictz... Faict à Sens, le XVIme jour de may 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e207">Fol. 16 • 10 Lettre du Sr « DE MORVILLIER,... à la royne, mere du roy [Catherine de Médicis]... De Bloys, le XI d'avril 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e223">Fol. 23 • 11 Lettre de « CHARLES » IX à « monseigneur de Vulcob,... Escript au chasteau de Boulongne, le XVIe jour de juing 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e239">Fol. 24 • 12 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Vulcob, gentilhomme ordinaire de la chambre du roy... Escript à Paris, le XVIIme jour de juing 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e250">Fol. 25 • 13 Lettre de « BRULART,... à monseigneur de Vulcob,... De Paris, ce XVIIe jour de juing 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e261">Fol. 26 • 14 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le XVIIe jour de juing 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e272">Fol. 27 • 15 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le XVIIe jour de may 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e283">Fol. 29 • 16 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le XVIIIe jour de juillet 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e294">Fol. 31 • 17 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le IXe jour de may 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e305">Fol. 32 • 18 Lettre, avec chiffre et déchiffrement, de « CHARLES [IX]... à monseigneur de Vulcob,... Escript à St Ligier, le VIIe jour de mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e319">Fol. 34 • 19 Note de CHARLES IX sur les affaires de Pologne.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e337">Fol. 35 • 20 Lettre de « BRULART,... à monseigneur de Vulcob,... De Paris, ce XIIIIe jour de juing 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e353">Fol. 37 • 21 Lettre de « BRULART,... à monsieur de Vulcob,... De Paris, ce XIXe jour de juillet 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e364">Fol. 39 • 22 Lettre de « BRULART,... à monsieur de Vulcob,... De Paris, ce deuxiesme jour de juing 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e372">Fol. 40 • 23 « Memoire » de « CHARLES [IX] au Sr de Schombert » [envoyé vers l'électeur de Saxe]... Faict à Chenonceau, le XXVIIIe jour d'aoust 1571 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e396">Fol. 42 • 24 Lettre de « BRULART,... à monseigneur de Vulcob,... De Paris, ce XVIIe jour de may 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e407">Fol. 43 • 25 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le XVe jour de may 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e418">Fol. 44 • 26 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Vulcob,... Escript à Paris, le deuxe jour de juing 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e429">Fol. 45 • 27 Lettre de HENRI II « à Mr le mareschal de Brissac, du XXIIIe decembre 1558 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e448">Fol. 47 • 28 Lettre de HENRI II « au Sr don Francisque d'Est, du Xme de decembre 1558 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e462">Fol. 49 • 29 Lettre de HENRI II « à M. de Burye, du XXIIIe decembre 1558 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e473">Fol. 51 • 30 Lettre de HENRI II « à monseigneur d'Angoulesme ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e481">Fol. 53 • 31 Lettre de « Mr le cardinal au Sr Don Francisque d'Est, du Xe decembre 1558 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e498">Fol. 54 • 32 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le deuxiesme jour de may 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e506">Fol. 55 • 33 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le VIIIe jour de juing 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e517">Fol. 56 • 34 Lettre de « BRULART,... à monsieur de Vulcob,... De Paris, ce deuxe jour d'avril 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e528">Fol. 57 • 35 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Vulcob,... Escript à Paris, le XXe jour de juillet 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e539">Fol. 58 • 36 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Vulcob,... Escript au chasteau de Boulongne, le XVIe jour de juing 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049779_d0e550">Fol. 59 • 37 Lettre de « HENRY [duc D'ANJOU]... à monseigneur de Vulcob,... Escript au chasteau de Boulongne, le XVIe jour de juing 1572 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3318 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49779m&Cote=Français 3318&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060207j">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31607 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49779m&Cote=MF 31607&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3318 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8821</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31607. Cote de la matrice (pour commander une reproduction) : R 4417.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060207j" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9060207j.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9060207j.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Brûlart, Nicolas, marquis de Sillery, chancelier de France. • Actes et lettres.</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Charles IX, roi de France. • Actes et lettres.</p>
+<p>France. • Pitorre (Henri III).</p>
+<p>Geckbachel, Wilhelm Rudolf.</p>
+<p>Henri II, roi de France. • Actes et lettres.</p>
+<p>Henri III, roi de France. • Actes et lettres.</p>
+<p>Henri III, roi de France. • Notes et pièces diverses.</p>
+<p>Hoevel, Otto von.</p>
+<p>Languet, Hubert.</p>
+<p>Luhr, Heinrich von der.</p>
+<p>Schrisspissheim, Heinrich von.</p>
+<p>Zesthain, Jahn von. • Mission auprès de Charles IX.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e106');">1 « Ce que... Otto von Hoevel, Jahn von Zesthain, Hubert Languet, Heinrich von Schrisspissheim, Heinrich von der Luhr, Wilhelm Rudolf Geckbachel » ont « exposé à Sa Majesté [Charles IX], de la part des princes protestants de la Germanie ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e112');">2 Lettre de « CATERINE [DE MEDICIS]... à monsieur Brulart, segreteyre d'Estast » ; suivie d'une lettre dudit « BRULART,... De Paris » et « S. Germain en Laye... XXe jour de juillet 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e123');">3 Lettre de « CATERINE [DE MEDICIS]... à monseigneur Brulart,... A Paris, ce IIIe decembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e134');">4 Lettre de « AUGUSTE, electeur [de Saxe]... au roy [Charles IX]... De Dressen, ce 20 janvier 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e147');">5 Lettre de « CATERINE [DE MEDICIS]... à monseigneur Brulart,... Escrit à Poictiers, le IIme jour de decembre 1575 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e158');">6 Lettre de « E[MMANUEL] PHILIBERT [duc DE SAVOIE]... à monseigneur Brulart,... Escript à Turin ; ce IIII 7bre 1575 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e174');">7 Lettre de « CATERINE[DE MEDICIS]... à monseigneur Brulart,... Escrit à Poictiers, le XVIe jour de decembre 1575 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e185');">8 Lettre de « CATERINE[DE MEDICIS]... à monseigneur Brulart,... Escript à Bloys, ce XXIIe octobre 1575 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e196');">9 « Les Moiens que la royne, mere du roy... CATERINE DE MEDICIS]... propose pour satisfaire et faire fournir au duc Jehan Casimir les deniers qui lui ont esté promictz... Faict à Sens, le XVIme jour de may 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e207');">10 Lettre du Sr « DE MORVILLIER,... à la royne, mere du roy [Catherine de Médicis]... De Bloys, le XI d'avril 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e223');">11 Lettre de « CHARLES » IX à « monseigneur de Vulcob,... Escript au chasteau de Boulongne, le XVIe jour de juing 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e239');">12 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Vulcob, gentilhomme ordinaire de la chambre du roy... Escript à Paris, le XVIIme jour de juing 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e250');">13 Lettre de « BRULART,... à monseigneur de Vulcob,... De Paris, ce XVIIe jour de juing 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e261');">14 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le XVIIe jour de juing 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e272');">15 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le XVIIe jour de may 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e283');">16 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le XVIIIe jour de juillet 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e294');">17 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le IXe jour de may 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e305');">18 Lettre, avec chiffre et déchiffrement, de « CHARLES [IX]... à monseigneur de Vulcob,... Escript à St Ligier, le VIIe jour de mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e319');">19 Note de CHARLES IX sur les affaires de Pologne.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e337');">20 Lettre de « BRULART,... à monseigneur de Vulcob,... De Paris, ce XIIIIe jour de juing 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e353');">21 Lettre de « BRULART,... à monsieur de Vulcob,... De Paris, ce XIXe jour de juillet 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e364');">22 Lettre de « BRULART,... à monsieur de Vulcob,... De Paris, ce deuxiesme jour de juing 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e372');">23 « Memoire » de « CHARLES [IX] au Sr de Schombert » [envoyé vers l'électeur de Saxe]... Faict à Chenonceau, le XXVIIIe jour d'aoust 1571 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e396');">24 Lettre de « BRULART,... à monseigneur de Vulcob,... De Paris, ce XVIIe jour de may 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e407');">25 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le XVe jour de may 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e418');">26 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Vulcob,... Escript à Paris, le deuxe jour de juing 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e429');">27 Lettre de HENRI II « à Mr le mareschal de Brissac, du XXIIIe decembre 1558 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e448');">28 Lettre de HENRI II « au Sr don Francisque d'Est, du Xme de decembre 1558 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e462');">29 Lettre de HENRI II « à M. de Burye, du XXIIIe decembre 1558 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e473');">30 Lettre de HENRI II « à monseigneur d'Angoulesme ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e481');">31 Lettre de « Mr le cardinal au Sr Don Francisque d'Est, du Xe decembre 1558 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e498');">32 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le deuxiesme jour de may 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e506');">33 Lettre de « HENRY [III]... à monseigneur de Vulcob,... Escript à Paris, le VIIIe jour de juing 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e517');">34 Lettre de « BRULART,... à monsieur de Vulcob,... De Paris, ce deuxe jour d'avril 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e528');">35 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Vulcob,... Escript à Paris, le XXe jour de juillet 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e539');">36 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Vulcob,... Escript au chasteau de Boulongne, le XVIe jour de juing 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049779_d0e550');">37 Lettre de « HENRY [duc D'ANJOU]... à monseigneur de Vulcob,... Escript au chasteau de Boulongne, le XVIe jour de juing 1572 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

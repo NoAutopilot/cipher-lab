@@ -1,0 +1,507 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049715">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049715">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3254
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049715_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715">Français 3254 • Anc. 8763 • Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e89">1 « Lettre de « CHARLES [IX]... à monseigneur de Matignon,... lieutenant general en Normandye... Escript à Angers, le XIe jour de janvier 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e98">Fol. 2 • 2 Lettres closes de « CHARLES [IX]... à nostre amé et feal le bailly d'Alençon... Donné à Melleun, le VIIe jour de juillet 1562 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e109">Fol. 3 • 3 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Angiers, le XIe jour de janvier 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e120">Fol. 4 • 4 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Angers, le XIIIIe jour de janvier 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e131">Fol. 5 • 5 Instructions du roi CHARLES IX aux gouverneurs des provinces touchant « l'entretenement des gens de guerre... Faict à Angers, le XIIIIe janvier 1570 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e142">Fol. 9 • 6 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Angiers, le Xe jour de febvrier 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e153">Fol. 10 • 7 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... De Durestal, ce XIXe jour de mars 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e164">Fol. 11 • 8 Lettre de « HENRY [duc D'ANJOU]... à... monseigneur de Matignon,... Escript à Durestail, le XIXme jour de mars 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e175">Fol. 12 • 9 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Succinyan, le XVIme jour de may 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e186">Fol. 13 • 10 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Argentan, le XXme jour de jung 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e197">Fol. 14 • 11 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Boisfevrier,... Escript à Argentan... juung 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e205">Fol. 15 • 12 Lettre de « HENRY [duc D'ANJOU]... à... monseigneur de Matignon,... Escript à Paris, le dernier jour d'aoust 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e213">Fol. 16 • 13 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Escouen, le XIIIe jour d'octobre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e224">Fol. 17 • 14 Lettre de « CHARLES IX... à monseigneur de Matignon,... Escript à St Germain des Prez, le Vme jour de novembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e238">Fol. 18 • 15 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Teng le Moustier en Vallaige, le XXe jour de novembre 1570 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e249">Fol. 19 • 16 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... A. Fontainebleau, le XIIIe jour de may 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e260">Fol. 20 • 17 Lettre de « BRULART,... à monsieur de Matignon,... De Fontainebleau, ce XIIIIe jour de may 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e276">Fol. 21 • 18 Lettre de CHARLES IX « à monseigneur de Matignon,... De Paris, ce dernier jour de juillet 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e284">Fol. 23 • 19 Lettre de « HENRY [duc D'ANJOU]... à... monseigneur de Matignon,... Escript à Paris, ce XXIIme jour de aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e295">Fol. 24 • 20 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XXIIIIe jour d'aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e306">Fol. 25 • 21 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Paris, le XXVIIe aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e317">Fol. 27 • 22 Lettre de « HENRY [duc D'ANJOU]... à monseigneur de Matignon,... Escript à Paris, le XXVIIe jour d'aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e328">Fol. 28 • 23 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XXVIIIe jour d'aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e339">Fol. 30 • 24 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le dernier jour d'aoust 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e347">Fol. 31 • 25 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le Vme jour de septembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e358">Fol. 32 • 26 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XIIIe jour de septembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e369">Fol. 34 • 27 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escrit à Paris, le XXIIe jour de septembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e380">Fol. 35 • 28 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XXVe jour de sepbre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e394">Fol. 36 • 29 Lettre de « HENRY [duc D'ANJOU]... à monseigneur de Matignon. Escript à Paris, le vingt cinquiesme jour de septembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e402">Fol. 37 • 30 Lettre de « BRULART,... à monsieur de Matignon,... De Paris, ce XXVIIe jour de septembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e413">Fol. 38 • 31 Lettre de « CHARLES IX... à monseigneur de Matignon,... Escript à Paris, le VIe jour d'octobre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e424">Fol. 39 • 32 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le VIIIe jour de octobre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e435">Fol. 40 • 33 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le Ve jour de nobre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e449">Fol. 42 • 34 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XIe jour de novembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e460">Fol. 43 • 35 Lettre de « HENRY [duc D'ANJOU]... à monseigneur de Matignon,... Escript à Paris, le XXVe jour de novembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e471">Fol. 44 • 36 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Paris, le XXIIme jour de decembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e482">Fol. 45 • 37 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XXIXe jour de decembre 1572 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e493">Fol. 46 • 38 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le IIIIe jour de janvier 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e504">Fol. 47 • 39 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escrit à Paris, le XXVIIIe jour de janvier 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e515">Fol. 48 • 40 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Paris, ce XVe jour de febvrier 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e526">Fol. 49 • 41 Lettre de « PINART,... à monseigneur de Matignon,... De Paris, le XXIIIe fevrier 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e542">Fol. 50 • 42 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à St Ligier, le IIe jour de mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e556">Fol. 51 • 43 Lettre de « PINART,... à monseigneur de Matignon,... De St Ligier, le IIe jour de mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e570">Fol. 53 • 44 Lettres closes de « CHARLES [IX]... à nostre amé et feal le bailly d'Alençon... Donné à Fontainebleau, le XVIe jour de mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e581">Fol. 54 • 45 Lettres closes de « CHARLES [IX]... à nostre amé et feal le bailly de Caen... Donné à Fontainebleau, le XVIe jour de mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e592">Fol. 55 • 46 Lettres closes de « CHARLES [IX]... à nostre amé et feal le bailly de Constantin,... Donné à Fontainebleau, le XVIe jour de mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e603">Fol. 56 • 47 Lettre de « CATERINE [DE MEDICIS]... à monseigneur le mareschal de Matignon,... Escript à L'Isle Bouchart, ce XVIe mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e614">Fol. 57 • 48 Lettre de « PINART,... à monsieur de Matignon,... De Fontainebleau, le XVIe mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e625">Fol. 58 • 49 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, le XVIIIe jour de mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e636">Fol. 59 • 50 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... De Fontainebleau, ce XXIe jour de mars 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e647">Fol. 60 • 51 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXIe jour d'avril 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e658">Fol. 61 • 52 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXVIIe jour d'avril 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e669">Fol. 62 • 53 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXIIIIe jour de may 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e680">Fol. 63 • 54 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXVe jour de may 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e691">Fol. 64 • 55 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Fontainebleau, le XVIIIe jour de may 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e702">Fol. 65 • 56 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXVIIIe may 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e713">Fol. 66 • 57 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, ce XVIIIe jour de may 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e724">Fol. 67 • 58 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Monceaulx, le XIIIIe jour de juing 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e735">Fol. 68 • 59 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Monceaulx, le XVIe jour de jung 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e746">Fol. 69 • 60 Lettre de « PINART,... à monseigneur de Mattignon,... De Victry le François, ce dernier jour d'octobre 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e754">Fol. 70 • 61 Copie d'une lettre de « CHARLES IX,... à mon cousin le duc de Buillon,... lieutenant general en Normandye... Escript à Victry le François, le XIIe jour de novembre 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e765">Fol. 72 • 62 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Chaalons en Champaigne, le XXIIIIe jour de novembre 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e776">Fol. 73 • 63 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Chaalons, le XXIXe jour de novembre 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e787">Fol. 74 • 64 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Chaallons en Champagne, le IIe jour de decembre 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e798">Fol. 75 • 65 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Soissons, le XVIIe jour de decembre 1573 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e809">Fol. 76 • 66 Lettre en chiffre au roi.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e817">Fol. 80 • 67 Copie d'une lettre de François « de Corneillan, evesque de Roddez... De Roddez, ce VIIIe may 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049715_d0e833">Fol. 82 • 68 Lettre du Sr « DE LA CERVELLE,... à monseigneur le duc d'Aumalle,... Du chasteau de Pontorson, ce mercredy douzme jour d'aoust ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3254 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49715d&Cote=Français 3254&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060249w">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31544 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49715d&Cote=MF 31544&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3254 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8763</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31544. Cote de la matrice (pour commander une reproduction) : R 4309.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060249w" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9060249w.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9060249w.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Ban et Arrière-Ban. • Pièces diverses.</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Charles IX, roi de France. • Actes et lettres.</p>
+<p>Chiffres diplomatiques, en italien.</p>
+<p>France. • Pitorre (Charles IX).</p>
+<p>Henri III, roi de France. • Anjou, actes et lettres.</p>
+<p>Matignon, Jacques de Goyon, sr de, comte de Thorigny, maréchal de France. • Correspondance à lui adressée.</p>
+<p>Pinart, Claude, sr de Cramailles, secrétaire d'État. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e89');">1 « Lettre de « CHARLES [IX]... à monseigneur de Matignon,... lieutenant general en Normandye... Escript à Angers, le XIe jour de janvier 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e98');">2 Lettres closes de « CHARLES [IX]... à nostre amé et feal le bailly d'Alençon... Donné à Melleun, le VIIe jour de juillet 1562 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e109');">3 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Angiers, le XIe jour de janvier 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e120');">4 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Angers, le XIIIIe jour de janvier 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e131');">5 Instructions du roi CHARLES IX aux gouverneurs des provinces touchant « l'entretenement des gens de guerre... Faict à Angers, le XIIIIe janvier 1570 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e142');">6 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Angiers, le Xe jour de febvrier 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e153');">7 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... De Durestal, ce XIXe jour de mars 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e164');">8 Lettre de « HENRY [duc D'ANJOU]... à... monseigneur de Matignon,... Escript à Durestail, le XIXme jour de mars 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e175');">9 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Succinyan, le XVIme jour de may 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e186');">10 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Argentan, le XXme jour de jung 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e197');">11 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Boisfevrier,... Escript à Argentan... juung 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e205');">12 Lettre de « HENRY [duc D'ANJOU]... à... monseigneur de Matignon,... Escript à Paris, le dernier jour d'aoust 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e213');">13 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Escouen, le XIIIe jour d'octobre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e224');">14 Lettre de « CHARLES IX... à monseigneur de Matignon,... Escript à St Germain des Prez, le Vme jour de novembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e238');">15 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Teng le Moustier en Vallaige, le XXe jour de novembre 1570 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e249');">16 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... A. Fontainebleau, le XIIIe jour de may 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e260');">17 Lettre de « BRULART,... à monsieur de Matignon,... De Fontainebleau, ce XIIIIe jour de may 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e276');">18 Lettre de CHARLES IX « à monseigneur de Matignon,... De Paris, ce dernier jour de juillet 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e284');">19 Lettre de « HENRY [duc D'ANJOU]... à... monseigneur de Matignon,... Escript à Paris, ce XXIIme jour de aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e295');">20 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XXIIIIe jour d'aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e306');">21 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Paris, le XXVIIe aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e317');">22 Lettre de « HENRY [duc D'ANJOU]... à monseigneur de Matignon,... Escript à Paris, le XXVIIe jour d'aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e328');">23 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XXVIIIe jour d'aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e339');">24 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le dernier jour d'aoust 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e347');">25 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le Vme jour de septembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e358');">26 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XIIIe jour de septembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e369');">27 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escrit à Paris, le XXIIe jour de septembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e380');">28 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XXVe jour de sepbre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e394');">29 Lettre de « HENRY [duc D'ANJOU]... à monseigneur de Matignon. Escript à Paris, le vingt cinquiesme jour de septembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e402');">30 Lettre de « BRULART,... à monsieur de Matignon,... De Paris, ce XXVIIe jour de septembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e413');">31 Lettre de « CHARLES IX... à monseigneur de Matignon,... Escript à Paris, le VIe jour d'octobre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e424');">32 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le VIIIe jour de octobre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e435');">33 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le Ve jour de nobre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e449');">34 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XIe jour de novembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e460');">35 Lettre de « HENRY [duc D'ANJOU]... à monseigneur de Matignon,... Escript à Paris, le XXVe jour de novembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e471');">36 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Paris, le XXIIme jour de decembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e482');">37 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le XXIXe jour de decembre 1572 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e493');">38 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Paris, le IIIIe jour de janvier 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e504');">39 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escrit à Paris, le XXVIIIe jour de janvier 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e515');">40 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Paris, ce XVe jour de febvrier 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e526');">41 Lettre de « PINART,... à monseigneur de Matignon,... De Paris, le XXIIIe fevrier 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e542');">42 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à St Ligier, le IIe jour de mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e556');">43 Lettre de « PINART,... à monseigneur de Matignon,... De St Ligier, le IIe jour de mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e570');">44 Lettres closes de « CHARLES [IX]... à nostre amé et feal le bailly d'Alençon... Donné à Fontainebleau, le XVIe jour de mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e581');">45 Lettres closes de « CHARLES [IX]... à nostre amé et feal le bailly de Caen... Donné à Fontainebleau, le XVIe jour de mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e592');">46 Lettres closes de « CHARLES [IX]... à nostre amé et feal le bailly de Constantin,... Donné à Fontainebleau, le XVIe jour de mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e603');">47 Lettre de « CATERINE [DE MEDICIS]... à monseigneur le mareschal de Matignon,... Escript à L'Isle Bouchart, ce XVIe mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e614');">48 Lettre de « PINART,... à monsieur de Matignon,... De Fontainebleau, le XVIe mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e625');">49 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, le XVIIIe jour de mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e636');">50 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... De Fontainebleau, ce XXIe jour de mars 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e647');">51 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXIe jour d'avril 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e658');">52 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXVIIe jour d'avril 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e669');">53 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXIIIIe jour de may 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e680');">54 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXVe jour de may 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e691');">55 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Fontainebleau, le XVIIIe jour de may 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e702');">56 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, le XXVIIIe may 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e713');">57 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Fontainebleau, ce XVIIIe jour de may 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e724');">58 Lettre de « CATERINE [DE MEDICIS]... à monseigneur de Matignon,... Escript à Monceaulx, le XIIIIe jour de juing 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e735');">59 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Monceaulx, le XVIe jour de jung 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e746');">60 Lettre de « PINART,... à monseigneur de Mattignon,... De Victry le François, ce dernier jour d'octobre 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e754');">61 Copie d'une lettre de « CHARLES IX,... à mon cousin le duc de Buillon,... lieutenant general en Normandye... Escript à Victry le François, le XIIe jour de novembre 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e765');">62 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Chaalons en Champaigne, le XXIIIIe jour de novembre 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e776');">63 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Chaalons, le XXIXe jour de novembre 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e787');">64 Lettre de « CHARLES [IX]... à monseigneur de Mattignon,... Escript à Chaallons en Champagne, le IIe jour de decembre 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e798');">65 Lettre de « CHARLES [IX]... à monseigneur de Matignon,... Escript à Soissons, le XVIIe jour de decembre 1573 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e809');">66 Lettre en chiffre au roi.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e817');">67 Copie d'une lettre de François « de Corneillan, evesque de Roddez... De Roddez, ce VIIIe may 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049715_d0e833');">68 Lettre du Sr « DE LA CERVELLE,... à monseigneur le duc d'Aumalle,... Du chasteau de Pontorson, ce mercredy douzme jour d'aoust ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

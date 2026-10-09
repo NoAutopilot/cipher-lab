@@ -1,0 +1,525 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050509">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050509">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3729-4104</div>
+					<h1>Français 4102
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050509_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509">Français 4102 • Anc. 9253(4), Baluze 493 • Recueil de copies de pièces relatives aux guerres de religion sous Louis XIII.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e188">1 « Memoires des choses les plus notables advenues en haut et bas Languedoc et haute Guyenne soubs la conduitte du duc Henri de Rohan, durant les troubles des années 1621 et 1622, jusques à la paix ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e197">Fol. 15 • 2 « Declaration du roy LOUYS [XIII] pour la paix accordée à ceux de la religion... Donné à Montpellier, le vingtiesme jour d'octobre mil six cent vingt deux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e205">Fol. 16 • 3 « Brevet pour la levée des restes et impositions faictes durant la guerre ». 14 octobre 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e213">4 « Brevet sur la nomination des depputés generaux de l'année 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e219">Fol. 17 • 5 « Brevet general accordé à ceux de la religion, en suitte de la declaration precedente ». 24 octobre 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e232">6 « Brevet accordé aux villes de Nismes, Castres, Uzez et Milhau pour la moityé des fortifications nouvelles ». 25 octobre 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e238">Fol. 18 • 7 « Brevet particulier accordé à la ville de Montpellier ». 18 octobre 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e251">8 Lettre de CHARLES D'ALBERT, duc et connétable « DE LUINES,... à monsieur le duc de Rohan,... De Chizé, le dernier may 1621 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e257">Fol. 19 • 9 Lettre de « HENRY [duc] DE ROHAN,... à monsieur le duc de Luines, pair et connestable de France... De Tonneins, juin 1621 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e265">Fol. 20 • 10 « Lettre du connestable [CHARLES D'ALBERT, duc] DE LUINES, au duc de Rohan,... Du camp devant St Jean, ce unzieme juin 1621 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e276">11 « Responce du duc DE ROHAN,... De Montauban, le 20 juin 1621 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e282">12 « Instruction baillée par le duc [HENRI] DE ROHAN au baron de St Angel, sur la proposition qu'il a faicte audit duc de la part du connestable de Luines ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e291">Fol. 21 • 13 « Lettre du duc [HENRI] DE ROHAN à l'assemblée generalle, par laquelle il luy donne advis des propositions qui luy ont esté faites par le baron de St Angel, de la part du connestable de Luines,... De Montauban, le 20e??? juin 1621 ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e305">14 et 15 Deux lettres de MAXIMILIEN DE BETHUNE, « duc DE SUILLY,... à monseigneur le duc DE ROHAN ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e311">14 « De Cadenac, ce 18e juillet 1621 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e320">Fol. 22 • 15 « De Cadenac, ce 28e juillet 1621 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e336">16 « Lettre du connestable DE LUINES au duc de Rohan,... De Tonneins, ce 6 aoust 1621 ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e342">17 et 18 Deux lettres du « duc DE SUILLY au duc de Rohan ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e348">17 «De Cadenac, ce unziesme aoust 1621 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e354">Fol. 23 • 18 « Du camp devant Montauban, ce 22 aoust 1621 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e362">19 « Responce du duc DE ROHAN au duc de Suilly,... De Millau, ce 27 aoust 1621 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e368">Fol. 24 • 20 « Lettre du roy d'Angleterre, JACQUES [Ier], au duc de Rohan,... A nostre palais de Theobalds, ce 18 juillet 1621 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e384">Fol. 25 • 21 « Propositions de la part du roy [Louis XIII] touchant la paix, avec les responces qui furent remises es mains de l'ambassadeur du roy de la Grande Bretaigne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e392">Fol. 26 • 22 « Submissions conseillées à ceux de Montauban ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e400">23 « Extrait des actes de l'assemblée generalle des eglizes reformées de France et souveraineté de Bearn. Du 7 janvier 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e406">Fol. 27 • 24 « Coppie de la requeste que l'assemblée vouloit presenter au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e414">Fol. 28 • 25 « Lettre de l'assemblée generalle à l'ambassadeur d'Angleterre... De La Rochelle, ce 10 janvier 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e422">Fol. 29 • 26 « Instruction donnée par [JEAN DE BEAUDEAN, comte DE] « PARABERE, aux sieurs de Chauffepied et de Sivort, envoyez par luy à La Rochelle, par permission du roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e446">27 « Memoire donné par le duc DE ROHAN au sieur Des Isles, pour communicquer à Mr de Bleinville, passant à la cour pour aler à La Rochelle; avec les responces en marge ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e455">Fol. 30 • 28 « Discours fait par le sieur DES ISLES à l'assemblée generalle, sur ce qui c'est passé en Lenguedoc ; avec la demande qu'il fait d'un pouvoir pour le duc de Rohan, pour traitter de la paix ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e463">Fol. 33 • 29 « Pouvoir de l'assemblée generalle, donné au duc de Rohan pour traitter de la paix... 21 janvier 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e471">Fol. 34 • 30 Lettre de FRANÇOIS DE BONNE, duc DE « LESDIGUIERES,... à monseigneur le duc de Rohan,... De Vallance, le 10 febvrier 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e484">31 « Memoires et instructions pour le Sr Des Isles, deputé par le duc DE ROHAN vers le duc Desdiguieres et la province de Vivaretz... Faict à Montpellier, le 6 mars 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e493">Fol. 35 • 32 « Negotiation du sieur DES ISLES avec le duc Desdiguieres, touchant Bays sur Bays et Le Pouzin, et jusques à l'entrevue des ducs de Rohan et Desdiguieres ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e501">Fol. 38 • 33 Extrait des actes de l'assemblée provincialle tenue à La Salle », le 31 mai 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e514">Fol. 39 • 34 « Articles convenus entre les ducs de Rohan et de Lesdiguieres,... Fait à Laval en Languedoc, le 3 jour d'avril 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e522">Fol. 40 • 35 « Autres Articles convenus en suitte des precedans.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e530">Fol. 41 • 36 « Lettre du duc DE ROHAN au roy [Louis XIII], sur le sujet de la conference d'entre luy et le duc Desdiguieres,... De Barjac, ce 4 d'apvril 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e538">37 « Extraict des registres des conseilz tenuz en la maison commune de la ville de La Rochelle, du lundy 27 septembre 1622, par lequel est donné pouvoir au duc de Rohan de demander la paix et la conclure ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e544">Fol. 42 • 38 « Lettre du roy d'Angleterre Jacques [Ier] au duc de Rohan,... De nostre cour à Teobaldes, ce 15 septembre 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e560">39 « Entreprise descouverte sur la ville de Castres ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e566">Fol. 43 • 40 « Commission donnée par le duc DE ROHAN au provost general, pour informer » de la trahison des consuls de Castres qui avaient voulu livrer la ville entre les mains du roi. « Donné à Castres, le dix neufiesme jour de septembre, l'an mil six cens vingt un ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e577">41 « Audition de maistre Denis Maltret, advocat en la cour, et premier consul de la presante ville de Castres... Fait à Castres, le dix neufiesme septembre mil six cens vingt un ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e583">Fol. 44 • 42 « Proces verbal du provost... general de l'armée » du « duc de Rohan,... L'an mil six cens vingt un, le dix neufiesme jour du moys de septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e591">Fol. 46 • 43 « Patantes du roy LOUYS [XIII], en faveur du Sr Maltret, par lesquelles il appert de la verité de ce dont il est accuzé... Donné à Beziers, le dixiesme jour du moys d'aoust, l'an de grace mil six cens vingt deux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e602">Fol. 47 • 44 « Discours touchant l'assamblée du cercle, composée de cincq provinces, savoir : haut Languedoc et haute Guyenne, bas Languedoc, Sevenes et Gevaudan, Vivaretz et Dauphiné ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e610">45 « Extrait des actes et registres de la maison consulaire de Nismes... Du mardy seiziesme jour de novembre » 1621.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e616">Fol. 48 • 46 « Extrait des actes et registres de la maison consulaire de Nismes... Du Vendredy treziesme jour du moys de may » 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e629">47 «Aprobation du duc DE ROHAN des actes cy dessus... Donné à Nismes, le vingt ungniesme jour de may » 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e635">48 « Coppie des memoyres et instructions trouvées entre les mains du Sr de Tortolon, lorsqu'il feust arresté prisonnier à Valerangue ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e644">Fol. 49 • 49 Lettre de l'assamblée du bas Languedoc à l'assamblée generalle, pour l'advertir de la nommination qu'ilz ont faitte du duc de Rohan pour leur general... De Sommieres, janvier 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e652">50 « Autre Lettre de l'assamblée du bas Languedoc à l'assamblée generalle, pour l'assamblée du cercle... De Sommieres, janvier 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e658">Fol. 50 • 51 « Memoires de l'assamblée du bas Languedoc, pour la revocquation du cercle ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e666">Fol. 51 • 52 « Lettre de l'assamblée des Sevenes et Gevaudan à l'assamblée generalle, pour la nomination qu'ils ont faitte du duc de Rohan pour leur general, et pour la revocation du cercle... Allez, le 27 janvier 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e674">Fol. 52 • 53 « Memoires de l'assamblée provincialle des Sevenes et Gevaudan, pour la revocation du cercle... Allez, ce 27 janvier 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e682">54 « Memoires du duc DE ROHAN, pour la revocation du cercle ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e688">Fol. 53 • 55 « Audition » de « Pierre Rabat, docteur en theologie, ministre de la parolle de Dieu, en l'eglize de Castagnolz... Du mardy troisiesme jour de may mil six cens vingt deux, à Montpellier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e699">Fol. 56 • 56 « Extrait des actes de l'assamblée provincialle des eglizes reformée[s] de la province du bas Languedoc, tenue en la ville de Nismes... commancée le 25 may 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e707">Fol. 57 • 57 « Extrait des actes de l'assamblée provincialle des Sevenes, convocquée en la ville d'Allez par monseigneur le duc de Rohan, chef et general des eglizes reformée[s] de France, le septiesme de septembre mil six cens vingt deux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e720">Fol. 58 • 58 « Discours touchant l'assamblée de Lunel ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e738">59 « Articles proposés par le Sr de Bensillon, de la part de Mr de Chastillon ; avec les responces en marge du duc DE ROHAN ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e750">Fol. 59 • 60 « Instructions envoyées par le duc DE ROHAN à ses agents des trois villes ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e758">Fol. 60 • 61 « Memoires et instructions pour messieurs du Puy, juge de Puy Laurens et Daneau, pasteur de Castres, de la part de la province du haut Languedoc ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e766">Fol. 61 • 62 « Envoy des ducs de Bouillon et de La Trimouille vers le duc de Rohan ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e784">Fol. 62 • 63 Lettre de « HENRY DE LA TOUR,... duc DE BOUILLON, au duc de Rohan,... De Sedan, le premier de juin 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e797">64 Lettre de « HENRY DE LA TRIMOUILLE [duc DE THOUARS]... au duc de Rohan,... A Sedan, ce premier de juin 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e803">65 « Promesse du duc DE ROHAN aux ducs de Bouillon et de La Trimouille,... Fait au Vigan, le quatorziesme juillet, l'an mil cinq cens vingt deux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e809">Fol. 63 • 66 « Proceiz fait à Bimart, sur la depesche surprise du president Du Faure, et sa confession ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e827">67 « Lettre de creance du presidant DU FAURE au Sr Galepin, qui se tenoit à Beaucaire... De Frontignan, ce 19 juillet 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e836">68 « Lettre en chiffre du presidant DU FAURE à Galepin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e842">69 « Memoire du presidant DU FAURE, trouvé à Giraut ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e848">Fol. 64 • 70 « Lettre de creance du presidant DU FAURE,... à monseigneur de Montauban, gouverneur du Montellimar... De Frontignan, ce 20 juillet 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e861">71 « Instruction » du Sr « GOUVERNET,... à Giraut, pour entretenir Montauban ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e870">Fol. 65 • 72 « Procez verbal de Bimart, fait sur la question ». 26 juillet 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e878">Fol. 66 • 73 « Jugement et condamnation à mort de Bimart ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e891">74 « Lettre du roy d'Angleterre JACQUES [Ier]... au duc de Rohan,... De Royston, le 13 novembre 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e900">Fol. 66 et 67 • 75 « Extraict des actes de l'assamblée generalle des eglises reformée[s] de France et souveraineté de Bearn, tenant à La Rochelle », 9 et 10 novembre 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e908">Fol. 67 • 76 « Lettre du duc DE BOUILLON au duc de Rohan, sur la paix... De Sedan, ce 9 novembre 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e921">Fol. 68 • 77 « Lettre du duc DE LA TRIMOUILLE au duc de Rohan,... Le 8e de novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e937">Fol. 69 • 78 « Lettre de la ville de La Rochelle au duc de Rohan,... A La Rochelle, ce 25 novembre 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e945">Fol. 70 • 79 « Suittes de la paix ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e953">80 et 81 Deux lettres du « roy... LOUYS » XIII.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e959">Fol. 72 • 80 « au Srde Valençay,... Escript à Lion, le 18e jour de decembre 1622 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e975">81 « à monseigneur Arnaud, Me de camp du regiment de Champagne... Escript à Lion, le 18e de decembre 1622 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e990">Fol. 73 • 82 « Articles presantez au roy [Louis XIII] par les deputez generaux ; avec les responces en marge ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e998">Fol. 76 • 83 « Memoires envoiez au roy [Louis XIII] par le duc DE ROHAN, touchant les affaires du bas Languedoc, le 6 janvier 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1006">84 « Lettre du roy LOUIS [XIII] au duc de Rohan,... Escript à Paris, le 17 janvier 1622 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1012">Fol. 78 • 85 Lettre de RAIMOND « PHELIPEAUX D'HERBAUT, secretaire d'Estat, au duc de Rohan,... De Paris, le 16e de janvier 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1023">86 « Lettre du duc DE ROHAN au roy... De Montauban, le 29 janvier 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1029">Fol. 79 • 87 « Responce du roy LOUYS [XIII] au duc de Rohan,... Escript à Paris, le 20 febvrier 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1037">88 « Lettre du Sr D'HERBAUT au duc de Rohan,... A Paris, ce 20 febvrier 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1046">Fol. 80 • 89 « Instructions baillées par le duc DE ROHAN à Des Isles, s'en allant en cour pour le subjet de sa detention... Fait à Montpellier, le 26e de febvrier 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1057">Fol. 81 • 90 « Autres Instructions audit Sr Des Isles pour le mesme sujet... Fait à Montpellier, le 27e febvrier 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1071">91 « Lettre du roy [LOUIS XIII] au duc de Rohan, touchant sa liberté... Escript à Paris, le 4e jour de mars 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1080">Fol. 82 • 92 « Lettre du Sr D'HERBAUT au duc de Rohan, sur sa liberté... A Paris, ce 4 mars 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1091">Fol. 83 • 93 « Responce du duc DE ROHAN au roy, touchant sa liberté... A Nismes, ce 15e de mars 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1102">94 « Memoire baillé par le duc DE ROHAN à Limouziniere, pour porter à la duchesse de Rohan, sa femme ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1108">Fol. 84 • 95 « Lettre du roy LOUYS [XIII] au duc de Rohan,... A Paris, le 15 jour de mars 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1116">96 « Lettre du Sr D'HERBAUT au duc de Rohan,... A Paris, ce 15 mars 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1125">Fol. 85 • 97 « Lettre du roy LOUYS [XIII] au duc de Rohan,... A Paris, le 25 mars 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1133">98 « Lettre du Sr D'HERBAUT au duc de Rohan,... A Paris, ce 25 mars 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1142">Fol. 86 • 99 « Lettre du duc DE ROHAN au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1150">Fol. 86 et 87 • 100 et 101 Deux memoires envoyés par « le duc DE ROHAN à Esperandieu ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1158">102 et 103 Deux lettres du « duc DE ROHAN ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1164">102 « au roy [Louis XIII]... De Castres, ce 8e juin 1623 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1176">Fol. 88 • 103 « à la reine mere [Marie de Médicis]... De Castres, ce 8 juin 1623 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1187">Fol. 89 et 92 • 104 et 105 « Deux Memoires du duc DE ROHAN », l'un pour « le restablissement de la chambre dans Castres », l'autre « pour la sortye des gens de guerre de Montpellier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1195">Fol. 94 • 106 « Instructions du duc DE ROHAN, envoyées à Des Isles pour le restablissement de la chambre dans Castres ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1203">Fol. 96 • 107 « Lettre du duc DE ROHAN aux deputez generaux sur ce qu'on veut mypartir les consulats en Rouergue ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1211">Fol. 97 • 108 « Lettre du roy LOUYS [XIII] au duc de Rohan, pour luy deffendre son entremise sur l'execution de la paix... Escript à St Germain en Laye, le 13 jeuillet 1623 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1222">Fol. 98 • 109 « Lettre du Sr D'HERBAUT au duc de Rohan,... De St Germain en Laye, ce 13 juillet 1623 ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1236">110 et 111 Deux lettres du « duc DE ROHAN ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1242">Fol. 99 • 110 « au roy [Louis XIII]... De Castres, ce 27e juillet 1623 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1256">Fol. 100 • 111 « au Srd'Herbault,... De Castres, ce 26 juillet 1623 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1269">Fol. 101 • 112 « Ordonnance des commissaires envoiez en l'an mil six cents pour l'execution de l'edit, touchant le consulat de Pasmiers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1282">Fol. 102 • 113 « Arrest du conseil du roy, donné en l'an mil six cens deux, pour decider l'affaire du consulat de Pasmiers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1290">Fol. 104 • 114 « Lettre du duc DE ROHAN aux deputez generaux, pour leur remonstrer l'importance de l'affaire de Pasmiers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1298">115 « Acte extorqué d'une partie des habitans de la ville de Montpellier, pour demander une citadelle et renoncer au brevet obtenu du roy par la paix ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1304">Fol. 105 • 116 « Harangue du Sr MANIALD, deputé general, pour empescher la citadelle de Montpellier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1320">117 « Le Conseil de la citadelle de Montpellier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1326">Fol. 114 • 118 « Raisons de la paix faitte devant Montpelier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1334">Fol. 118 • 119 « Brevet acordé à ceux de la religion, en l'année 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1342">Fol. 120 • 120 « Autre Brevet de la mesme année ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1350">121 « Estat des deniers que le roy Henry [IV] veut et entend estre payez pour la solde des gens de guerre, estats et entretenement de gouverneurs estans en garnison es villes et places baillées en garde à ceux de la religion pretendue refformée... Rennes, 14 may 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1356">Fol. 122 • 122 « Estat de la somme employée en l'estat public, tant deçà que delà les monts... Rennes, 12 may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1364">Fol. 123 • 123 « Estat des restes qui sont outre l'estat public et doivent estre payez par rescriptions... Rennes, le 17 may 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1372">124 « Estat des places ausquelles le roy veut qu'il soit entretenu des hommes, ores qu'elles ne soyent ny en l'un ny en l'autre estat, et ce par les gouverneurs des places commandées cy dessoubz... Rennes, le 18 may 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1378">Fol. 124 • 125 « Distribution de 23,200 livres hors l'estat des garnisons, pour laquelle le roy faict delivrer les rescriptions ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1386">126 « Estat des garnisons de Dauphiné ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1392">Fol. 125 • 127 « Antien petit Estat ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1400">128 « Augmentation du petit estat ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1406">129 « Pentions ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1412">Fol. 127 • 130 « Brevet pour la tenue des synodes, colloques et consistoires ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1430">131 « Brevet pour l'assamblée generalle de Ste Foy, en l'an 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1439">132 « Brevet accordé à ceux de la religion pour la tenue de l'assamblée generalle de Chastellerault, en l'an 1604 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1445">Fol. 128 • 133 « Brevet accordé à ceux de la religion, en l'an 1605, pour la prolongation des places de seureté ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1453">134 « Brevet pour l'explication du temps que doit commancer les huit années, durant lesquelles ceux de la religion doivent avoir des places de seureté ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1459">Fol. 130 • 135 « Memoires de ce qui s'est passé en ceste guerre, depuis le commencement de l'année 1625 jusques à la paix, accordée le cinqe de febvrier 1626 et ratiffiée au moys de mars suivant ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1470">Fol. 136 • 136 « Declaration du roy LOUIS [XIV] faicte pour la pacification de ses subjects... Donné à Paris, au mois de mars 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1478">Fol. 138 • 137 « Brevet » de décharge « des fortiffications faictes sans [la] permission » du roi « es villes tenues » par les protestants « ez provinces de Languedoc et Guyenne, depuis le premier jour de janvier 1625 jusques à la publication de la paix ».</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1486">138 et 139 Deux Lettres du « duc DE ROHAN ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1492">Fol. 139 • 138 « au roy d'Angleterre [Charles Ier], du 24 avril 1625, sur les affaires du temps ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1505">Fol. 143 • 139 « à MM. les Estats de Hollande, du 28 avril 1625 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1516">Fol. 145 • 140 « Acte de l'assemblée provinciale du haut Languedoc et haute Guyenne, du 1er de juin 1625, par laquelle le duc de Rohan est prié de reprendre la charge de general des eglises reformées à luy cy devant donnée par l'assemblée generalle de La Rochelle ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1527">Fol. 146 • 141 « Articles du traicté entre messeigneurs de Rohan et de Soubize et messrs les mayre, eschevins, conseillers, pairs, bourgeois et habitans de la ville de La Rochelle, sur le faict de l'union de ladicte ville aux armes et desseings desdicts seigneurs... Faict au camp, au chasteau d'Oleron, le dixseptiesme jour de may 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1538">Fol. 150 • 142 « Protestation du duc DE ROHAN, faicte à l'assemblée des quatre collocques, sur l'acceptation de la paix; avec la responce de l'assemblée, du 23e aoust 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1549">143 « Articles presentez au roy par les depputez des communaultez de ceux de la religion, et les responces, en juillet 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1555">Fol. 153 • 144 « Acte d'acceptation de la paix, faict en l'assemblée tenue à Millau, le premier de novembre 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1563">145 « Acte d'acceptation de la paix par l'assemblée tenue à Castres, le dixe janvier 1626, confirmant celuy de l'assemblée tenue à Millau, le premier de novembre 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1572">Fol. 154 • 146 Lettre des Srs « HOLLANDE et D. CARLETON,... ambassadeurs extraordinaires du roy de la Grande Bretaigne, au duc de Rohan,... De Paris, ce unziesme febvrier 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1593">Fol. 155 • 147 « Acte des ambassadeurs extraordinaires du roy de la Grande Bretaigne... Faict à Paris, ce unziesme jour de febvrier 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1606">148 « Lettre de « FRANÇOIS D'ARSENS, ambassadeur extraordinaire des Estats, au duc de Rohan,... De Paris, ce 18 de febvrier 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1612">Fol. 156 • 149 « Ratiffication de la paix conclue en court par [les] deputez... des eglises reformées de France... le cinq de febvrier 1626, et approuvée à Nismes le 21 mars 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1620">Fol. 157 • 150 « Declaration des motifs et raisons qui ont obligé Mr le duc de Rohan de constituer prisonniers quelques habitans de la ville de Castres, le 6 janvier 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1631">151 et 152 Deux sonnets.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1648">153 « Memoires ou journal du siege de Montpellier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1657">154 « Ode à monseigneur le duc de Rohan ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1674">155 « Sonnet sur l'estat presant de Montpelier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1683">156 « Memoires du siege de Briatexte et des choses plus remarquables faittes durant iceluy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1692">157 « Entreprise de Sommieres, escripte par Mr DE ST BLANCARD, 5 juillet 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050509_d0e1707">158 « Le Siege du Mas d'Azil et ce qui s'est passé en Fois durant les derniers troubles de l'année 1625, escrit par Mr DE ST BLANCARD ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4102 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50509p&Cote=Français 4102&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9007662n">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 8676 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50509p&Cote=MF 8676&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4102 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9253(4), Baluze 493</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de copies de pièces relatives aux guerres de religion sous Louis XIII.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 8676. Cote de la matrice (pour commander une reproduction) : R 111664.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9007662n" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9007662n.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9007662n.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Angleterre. • Notes et pièces diverses (XVIIe s.).</p>
+<p>Bimart. • Procès.</p>
+<p>Bouillon, Henri de La Tour d'Auvergne, duc de, maréchal de France. • Actes et lettres.</p>
+<p>Castres, Tarn. • Protestants.</p>
+<p>Cévennes. • Protestants.</p>
+<p>Dauphiné. • Troupes.</p>
+<p>Des Isles, envoyé du duc de Rohan vers le duc de Lesdiguières.</p>
+<p>Gertrude-Rachel, Sœur. • Discours.</p>
+<p>Gouvernet. • Instruction.</p>
+<p>Guyenne. • Armée.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>Languedoc. • Protestants.</p>
+<p>Louis XIII, roi de France. • Protestants.</p>
+<p>Maltret, Denis, consul de Castres.</p>
+<p>Mas-D'Azil, Le, Ariège. • Siège.</p>
+<p>Millau. • Protestants.</p>
+<p>Montauban. • Protestants.</p>
+<p>Montpellier. • Protestants.</p>
+<p>Nîmes. • Protestants.</p>
+<p>Phélypeaux d'Herbaut, Raymond. • Lettres.</p>
+<p>Protestants. • Notes et pièces diverses (XVIIe s.).</p>
+<p>Rochelle, La. • Protestants.</p>
+<p>Rohan, Henri, duc de. • Lettres et actes.</p>
+<p>Saint-Blancard, Jacques de. • Entreprise de Sommières (1625).</p>
+<p>Saint-Blancard, Jacques de. • Siège du Mas d'Azil.</p>
+<p>Sommières, Gard.</p>
+<p>Soubise, Benjamin de Rohan, sr de. • Accord avec les habitants de La Rochelle.</p>
+<p>Vivarais. • Protestants.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e188');">1 « Memoires des choses les plus notables advenues en haut et bas Languedoc et haute Guyenne soubs la conduitte du duc Henri de Rohan, durant les troubles des années 1621 et 1622, jusques à la paix ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e197');">2 « Declaration du roy LOUYS [XIII] pour la paix accordée à ceux de la religion... Donné à Montpellier, le vingtiesme jour d'octobre mil six cent vingt deux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e205');">3 « Brevet pour la levée des restes et impositions faictes durant la guerre ». 14 octobre 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e213');">4 « Brevet sur la nomination des depputés generaux de l'année 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e219');">5 « Brevet general accordé à ceux de la religion, en suitte de la declaration precedente ». 24 octobre 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e232');">6 « Brevet accordé aux villes de Nismes, Castres, Uzez et Milhau pour la moityé des fortifications nouvelles ». 25 octobre 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e238');">7 « Brevet particulier accordé à la ville de Montpellier ». 18 octobre 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e251');">8 Lettre de CHARLES D'ALBERT, duc et connétable « DE LUINES,... à monsieur le duc de Rohan,... De Chizé, le dernier may 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e257');">9 Lettre de « HENRY [duc] DE ROHAN,... à monsieur le duc de Luines, pair et connestable de France... De Tonneins, juin 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e265');">10 « Lettre du connestable [CHARLES D'ALBERT, duc] DE LUINES, au duc de Rohan,... Du camp devant St Jean, ce unzieme juin 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e276');">11 « Responce du duc DE ROHAN,... De Montauban, le 20 juin 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e282');">12 « Instruction baillée par le duc [HENRI] DE ROHAN au baron de St Angel, sur la proposition qu'il a faicte audit duc de la part du connestable de Luines ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e291');">13 « Lettre du duc [HENRI] DE ROHAN à l'assemblée generalle, par laquelle il luy donne advis des propositions qui luy ont esté faites par le baron de St Angel, de la part du connestable de Luines,... De Montauban, le 20e??? juin 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e305');">14 et 15 Deux lettres de MAXIMILIEN DE BETHUNE, « duc DE SUILLY,... à monseigneur le duc DE ROHAN ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e336');">16 « Lettre du connestable DE LUINES au duc de Rohan,... De Tonneins, ce 6 aoust 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e342');">17 et 18 Deux lettres du « duc DE SUILLY au duc de Rohan ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e362');">19 « Responce du duc DE ROHAN au duc de Suilly,... De Millau, ce 27 aoust 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e368');">20 « Lettre du roy d'Angleterre, JACQUES [Ier], au duc de Rohan,... A nostre palais de Theobalds, ce 18 juillet 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e384');">21 « Propositions de la part du roy [Louis XIII] touchant la paix, avec les responces qui furent remises es mains de l'ambassadeur du roy de la Grande Bretaigne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e392');">22 « Submissions conseillées à ceux de Montauban ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e400');">23 « Extrait des actes de l'assemblée generalle des eglizes reformées de France et souveraineté de Bearn. Du 7 janvier 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e406');">24 « Coppie de la requeste que l'assemblée vouloit presenter au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e414');">25 « Lettre de l'assemblée generalle à l'ambassadeur d'Angleterre... De La Rochelle, ce 10 janvier 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e422');">26 « Instruction donnée par [JEAN DE BEAUDEAN, comte DE] « PARABERE, aux sieurs de Chauffepied et de Sivort, envoyez par luy à La Rochelle, par permission du roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e446');">27 « Memoire donné par le duc DE ROHAN au sieur Des Isles, pour communicquer à Mr de Bleinville, passant à la cour pour aler à La Rochelle; avec les responces en marge ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e455');">28 « Discours fait par le sieur DES ISLES à l'assemblée generalle, sur ce qui c'est passé en Lenguedoc ; avec la demande qu'il fait d'un pouvoir pour le duc de Rohan, pour traitter de la paix ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e463');">29 « Pouvoir de l'assemblée generalle, donné au duc de Rohan pour traitter de la paix... 21 janvier 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e471');">30 Lettre de FRANÇOIS DE BONNE, duc DE « LESDIGUIERES,... à monseigneur le duc de Rohan,... De Vallance, le 10 febvrier 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e484');">31 « Memoires et instructions pour le Sr Des Isles, deputé par le duc DE ROHAN vers le duc Desdiguieres et la province de Vivaretz... Faict à Montpellier, le 6 mars 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e493');">32 « Negotiation du sieur DES ISLES avec le duc Desdiguieres, touchant Bays sur Bays et Le Pouzin, et jusques à l'entrevue des ducs de Rohan et Desdiguieres ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e501');">33 Extrait des actes de l'assemblée provincialle tenue à La Salle », le 31 mai 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e514');">34 « Articles convenus entre les ducs de Rohan et de Lesdiguieres,... Fait à Laval en Languedoc, le 3 jour d'avril 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e522');">35 « Autres Articles convenus en suitte des precedans.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e530');">36 « Lettre du duc DE ROHAN au roy [Louis XIII], sur le sujet de la conference d'entre luy et le duc Desdiguieres,... De Barjac, ce 4 d'apvril 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e538');">37 « Extraict des registres des conseilz tenuz en la maison commune de la ville de La Rochelle, du lundy 27 septembre 1622, par lequel est donné pouvoir au duc de Rohan de demander la paix et la conclure ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e544');">38 « Lettre du roy d'Angleterre Jacques [Ier] au duc de Rohan,... De nostre cour à Teobaldes, ce 15 septembre 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e560');">39 « Entreprise descouverte sur la ville de Castres ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e566');">40 « Commission donnée par le duc DE ROHAN au provost general, pour informer » de la trahison des consuls de Castres qui avaient voulu livrer la ville entre les mains du roi. « Donné à Castres, le dix neufiesme jour de septembre, l'an mil six cens vingt un ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e577');">41 « Audition de maistre Denis Maltret, advocat en la cour, et premier consul de la presante ville de Castres... Fait à Castres, le dix neufiesme septembre mil six cens vingt un ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e583');">42 « Proces verbal du provost... general de l'armée » du « duc de Rohan,... L'an mil six cens vingt un, le dix neufiesme jour du moys de septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e591');">43 « Patantes du roy LOUYS [XIII], en faveur du Sr Maltret, par lesquelles il appert de la verité de ce dont il est accuzé... Donné à Beziers, le dixiesme jour du moys d'aoust, l'an de grace mil six cens vingt deux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e602');">44 « Discours touchant l'assamblée du cercle, composée de cincq provinces, savoir : haut Languedoc et haute Guyenne, bas Languedoc, Sevenes et Gevaudan, Vivaretz et Dauphiné ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e610');">45 « Extrait des actes et registres de la maison consulaire de Nismes... Du mardy seiziesme jour de novembre » 1621.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e616');">46 « Extrait des actes et registres de la maison consulaire de Nismes... Du Vendredy treziesme jour du moys de may » 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e629');">47 «Aprobation du duc DE ROHAN des actes cy dessus... Donné à Nismes, le vingt ungniesme jour de may » 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e635');">48 « Coppie des memoyres et instructions trouvées entre les mains du Sr de Tortolon, lorsqu'il feust arresté prisonnier à Valerangue ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e644');">49 Lettre de l'assamblée du bas Languedoc à l'assamblée generalle, pour l'advertir de la nommination qu'ilz ont faitte du duc de Rohan pour leur general... De Sommieres, janvier 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e652');">50 « Autre Lettre de l'assamblée du bas Languedoc à l'assamblée generalle, pour l'assamblée du cercle... De Sommieres, janvier 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e658');">51 « Memoires de l'assamblée du bas Languedoc, pour la revocquation du cercle ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e666');">52 « Lettre de l'assamblée des Sevenes et Gevaudan à l'assamblée generalle, pour la nomination qu'ils ont faitte du duc de Rohan pour leur general, et pour la revocation du cercle... Allez, le 27 janvier 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e674');">53 « Memoires de l'assamblée provincialle des Sevenes et Gevaudan, pour la revocation du cercle... Allez, ce 27 janvier 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e682');">54 « Memoires du duc DE ROHAN, pour la revocation du cercle ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e688');">55 « Audition » de « Pierre Rabat, docteur en theologie, ministre de la parolle de Dieu, en l'eglize de Castagnolz... Du mardy troisiesme jour de may mil six cens vingt deux, à Montpellier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e699');">56 « Extrait des actes de l'assamblée provincialle des eglizes reformée[s] de la province du bas Languedoc, tenue en la ville de Nismes... commancée le 25 may 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e707');">57 « Extrait des actes de l'assamblée provincialle des Sevenes, convocquée en la ville d'Allez par monseigneur le duc de Rohan, chef et general des eglizes reformée[s] de France, le septiesme de septembre mil six cens vingt deux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e720');">58 « Discours touchant l'assamblée de Lunel ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e738');">59 « Articles proposés par le Sr de Bensillon, de la part de Mr de Chastillon ; avec les responces en marge du duc DE ROHAN ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e750');">60 « Instructions envoyées par le duc DE ROHAN à ses agents des trois villes ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e758');">61 « Memoires et instructions pour messieurs du Puy, juge de Puy Laurens et Daneau, pasteur de Castres, de la part de la province du haut Languedoc ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e766');">62 « Envoy des ducs de Bouillon et de La Trimouille vers le duc de Rohan ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e784');">63 Lettre de « HENRY DE LA TOUR,... duc DE BOUILLON, au duc de Rohan,... De Sedan, le premier de juin 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e797');">64 Lettre de « HENRY DE LA TRIMOUILLE [duc DE THOUARS]... au duc de Rohan,... A Sedan, ce premier de juin 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e803');">65 « Promesse du duc DE ROHAN aux ducs de Bouillon et de La Trimouille,... Fait au Vigan, le quatorziesme juillet, l'an mil cinq cens vingt deux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e809');">66 « Proceiz fait à Bimart, sur la depesche surprise du president Du Faure, et sa confession ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e827');">67 « Lettre de creance du presidant DU FAURE au Sr Galepin, qui se tenoit à Beaucaire... De Frontignan, ce 19 juillet 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e836');">68 « Lettre en chiffre du presidant DU FAURE à Galepin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e842');">69 « Memoire du presidant DU FAURE, trouvé à Giraut ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e848');">70 « Lettre de creance du presidant DU FAURE,... à monseigneur de Montauban, gouverneur du Montellimar... De Frontignan, ce 20 juillet 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e861');">71 « Instruction » du Sr « GOUVERNET,... à Giraut, pour entretenir Montauban ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e870');">72 « Procez verbal de Bimart, fait sur la question ». 26 juillet 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e878');">73 « Jugement et condamnation à mort de Bimart ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e891');">74 « Lettre du roy d'Angleterre JACQUES [Ier]... au duc de Rohan,... De Royston, le 13 novembre 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e900');">75 « Extraict des actes de l'assamblée generalle des eglises reformée[s] de France et souveraineté de Bearn, tenant à La Rochelle », 9 et 10 novembre 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e908');">76 « Lettre du duc DE BOUILLON au duc de Rohan, sur la paix... De Sedan, ce 9 novembre 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e921');">77 « Lettre du duc DE LA TRIMOUILLE au duc de Rohan,... Le 8e de novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e937');">78 « Lettre de la ville de La Rochelle au duc de Rohan,... A La Rochelle, ce 25 novembre 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e945');">79 « Suittes de la paix ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e953');">80 et 81 Deux lettres du « roy... LOUYS » XIII.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e990');">82 « Articles presantez au roy [Louis XIII] par les deputez generaux ; avec les responces en marge ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e998');">83 « Memoires envoiez au roy [Louis XIII] par le duc DE ROHAN, touchant les affaires du bas Languedoc, le 6 janvier 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1006');">84 « Lettre du roy LOUIS [XIII] au duc de Rohan,... Escript à Paris, le 17 janvier 1622 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1012');">85 Lettre de RAIMOND « PHELIPEAUX D'HERBAUT, secretaire d'Estat, au duc de Rohan,... De Paris, le 16e de janvier 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1023');">86 « Lettre du duc DE ROHAN au roy... De Montauban, le 29 janvier 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1029');">87 « Responce du roy LOUYS [XIII] au duc de Rohan,... Escript à Paris, le 20 febvrier 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1037');">88 « Lettre du Sr D'HERBAUT au duc de Rohan,... A Paris, ce 20 febvrier 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1046');">89 « Instructions baillées par le duc DE ROHAN à Des Isles, s'en allant en cour pour le subjet de sa detention... Fait à Montpellier, le 26e de febvrier 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1057');">90 « Autres Instructions audit Sr Des Isles pour le mesme sujet... Fait à Montpellier, le 27e febvrier 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1071');">91 « Lettre du roy [LOUIS XIII] au duc de Rohan, touchant sa liberté... Escript à Paris, le 4e jour de mars 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1080');">92 « Lettre du Sr D'HERBAUT au duc de Rohan, sur sa liberté... A Paris, ce 4 mars 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1091');">93 « Responce du duc DE ROHAN au roy, touchant sa liberté... A Nismes, ce 15e de mars 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1102');">94 « Memoire baillé par le duc DE ROHAN à Limouziniere, pour porter à la duchesse de Rohan, sa femme ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1108');">95 « Lettre du roy LOUYS [XIII] au duc de Rohan,... A Paris, le 15 jour de mars 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1116');">96 « Lettre du Sr D'HERBAUT au duc de Rohan,... A Paris, ce 15 mars 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1125');">97 « Lettre du roy LOUYS [XIII] au duc de Rohan,... A Paris, le 25 mars 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1133');">98 « Lettre du Sr D'HERBAUT au duc de Rohan,... A Paris, ce 25 mars 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1142');">99 « Lettre du duc DE ROHAN au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1150');">100 et 101 Deux memoires envoyés par « le duc DE ROHAN à Esperandieu ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1158');">102 et 103 Deux lettres du « duc DE ROHAN ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1187');">104 et 105 « Deux Memoires du duc DE ROHAN », l'un pour « le restablissement de la chambre dans Castres », l'autre « pour la sortye des gens de guerre de Montpellier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1195');">106 « Instructions du duc DE ROHAN, envoyées à Des Isles pour le restablissement de la chambre dans Castres ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1203');">107 « Lettre du duc DE ROHAN aux deputez generaux sur ce qu'on veut mypartir les consulats en Rouergue ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1211');">108 « Lettre du roy LOUYS [XIII] au duc de Rohan, pour luy deffendre son entremise sur l'execution de la paix... Escript à St Germain en Laye, le 13 jeuillet 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1222');">109 « Lettre du Sr D'HERBAUT au duc de Rohan,... De St Germain en Laye, ce 13 juillet 1623 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1236');">110 et 111 Deux lettres du « duc DE ROHAN ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1269');">112 « Ordonnance des commissaires envoiez en l'an mil six cents pour l'execution de l'edit, touchant le consulat de Pasmiers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1282');">113 « Arrest du conseil du roy, donné en l'an mil six cens deux, pour decider l'affaire du consulat de Pasmiers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1290');">114 « Lettre du duc DE ROHAN aux deputez generaux, pour leur remonstrer l'importance de l'affaire de Pasmiers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1298');">115 « Acte extorqué d'une partie des habitans de la ville de Montpellier, pour demander une citadelle et renoncer au brevet obtenu du roy par la paix ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1304');">116 « Harangue du Sr MANIALD, deputé general, pour empescher la citadelle de Montpellier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1320');">117 « Le Conseil de la citadelle de Montpellier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1326');">118 « Raisons de la paix faitte devant Montpelier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1334');">119 « Brevet acordé à ceux de la religion, en l'année 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1342');">120 « Autre Brevet de la mesme année ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1350');">121 « Estat des deniers que le roy Henry [IV] veut et entend estre payez pour la solde des gens de guerre, estats et entretenement de gouverneurs estans en garnison es villes et places baillées en garde à ceux de la religion pretendue refformée... Rennes, 14 may 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1356');">122 « Estat de la somme employée en l'estat public, tant deçà que delà les monts... Rennes, 12 may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1364');">123 « Estat des restes qui sont outre l'estat public et doivent estre payez par rescriptions... Rennes, le 17 may 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1372');">124 « Estat des places ausquelles le roy veut qu'il soit entretenu des hommes, ores qu'elles ne soyent ny en l'un ny en l'autre estat, et ce par les gouverneurs des places commandées cy dessoubz... Rennes, le 18 may 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1378');">125 « Distribution de 23,200 livres hors l'estat des garnisons, pour laquelle le roy faict delivrer les rescriptions ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1386');">126 « Estat des garnisons de Dauphiné ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1392');">127 « Antien petit Estat ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1400');">128 « Augmentation du petit estat ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1406');">129 « Pentions ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1412');">130 « Brevet pour la tenue des synodes, colloques et consistoires ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1430');">131 « Brevet pour l'assamblée generalle de Ste Foy, en l'an 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1439');">132 « Brevet accordé à ceux de la religion pour la tenue de l'assamblée generalle de Chastellerault, en l'an 1604 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1445');">133 « Brevet accordé à ceux de la religion, en l'an 1605, pour la prolongation des places de seureté ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1453');">134 « Brevet pour l'explication du temps que doit commancer les huit années, durant lesquelles ceux de la religion doivent avoir des places de seureté ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1459');">135 « Memoires de ce qui s'est passé en ceste guerre, depuis le commencement de l'année 1625 jusques à la paix, accordée le cinqe de febvrier 1626 et ratiffiée au moys de mars suivant ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1470');">136 « Declaration du roy LOUIS [XIV] faicte pour la pacification de ses subjects... Donné à Paris, au mois de mars 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1478');">137 « Brevet » de décharge « des fortiffications faictes sans [la] permission » du roi « es villes tenues » par les protestants « ez provinces de Languedoc et Guyenne, depuis le premier jour de janvier 1625 jusques à la publication de la paix ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1486');">138 et 139 Deux Lettres du « duc DE ROHAN ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1516');">140 « Acte de l'assemblée provinciale du haut Languedoc et haute Guyenne, du 1er de juin 1625, par laquelle le duc de Rohan est prié de reprendre la charge de general des eglises reformées à luy cy devant donnée par l'assemblée generalle de La Rochelle ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1527');">141 « Articles du traicté entre messeigneurs de Rohan et de Soubize et messrs les mayre, eschevins, conseillers, pairs, bourgeois et habitans de la ville de La Rochelle, sur le faict de l'union de ladicte ville aux armes et desseings desdicts seigneurs... Faict au camp, au chasteau d'Oleron, le dixseptiesme jour de may 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1538');">142 « Protestation du duc DE ROHAN, faicte à l'assemblée des quatre collocques, sur l'acceptation de la paix; avec la responce de l'assemblée, du 23e aoust 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1549');">143 « Articles presentez au roy par les depputez des communaultez de ceux de la religion, et les responces, en juillet 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1555');">144 « Acte d'acceptation de la paix, faict en l'assemblée tenue à Millau, le premier de novembre 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1563');">145 « Acte d'acceptation de la paix par l'assemblée tenue à Castres, le dixe janvier 1626, confirmant celuy de l'assemblée tenue à Millau, le premier de novembre 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1572');">146 Lettre des Srs « HOLLANDE et D. CARLETON,... ambassadeurs extraordinaires du roy de la Grande Bretaigne, au duc de Rohan,... De Paris, ce unziesme febvrier 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1593');">147 « Acte des ambassadeurs extraordinaires du roy de la Grande Bretaigne... Faict à Paris, ce unziesme jour de febvrier 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1606');">148 « Lettre de « FRANÇOIS D'ARSENS, ambassadeur extraordinaire des Estats, au duc de Rohan,... De Paris, ce 18 de febvrier 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1612');">149 « Ratiffication de la paix conclue en court par [les] deputez... des eglises reformées de France... le cinq de febvrier 1626, et approuvée à Nismes le 21 mars 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1620');">150 « Declaration des motifs et raisons qui ont obligé Mr le duc de Rohan de constituer prisonniers quelques habitans de la ville de Castres, le 6 janvier 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1631');">151 et 152 Deux sonnets.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1648');">153 « Memoires ou journal du siege de Montpellier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1657');">154 « Ode à monseigneur le duc de Rohan ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1674');">155 « Sonnet sur l'estat presant de Montpelier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1683');">156 « Memoires du siege de Briatexte et des choses plus remarquables faittes durant iceluy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1692');">157 « Entreprise de Sommieres, escripte par Mr DE ST BLANCARD, 5 juillet 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050509_d0e1707');">158 « Le Siege du Mas d'Azil et ce qui s'est passé en Fois durant les derniers troubles de l'année 1625, escrit par Mr DE ST BLANCARD ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

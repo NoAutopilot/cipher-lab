@@ -40,3 +40,24 @@ K1 and K2 are pass/fail reproduction and plant checks, not rates; no restart dim
 Both numbers for every gate; every volume with open_bare >= 1 listed with digitised flag; class `pile` volumes that are
 not digitised are handed to S2B for the ONE batched REQUEST.md (ASKS 38 pattern) -- this session writes no REQUEST.md.
 A volume-level notice with no item list is `image-triage`, never a negative.
+
+## Results (9 Oct 2026, 06:47-06:5x UTC by date -u; written after the runs, gates unchanged)
+Fetched: 61 new notices + 13 already cached, 10 cotes with no exact-title match in the simple search (fr.256, 300, 306,
+797, 1110, 1386, 4736, 5160, 23203, 24281: not a negative, not looked up further); 146 requests to
+archivesetmanuscrits.bnf.fr, all answered, no 403/429/challenge. Log: `sources/bnf-findingaids/2026-10-09/s2a-fetch-log.json`
+(the first 5 GETs, cc349255 cc49473n cc49477m cc494882 cc494932, ran in an aborted first start and are counted in 146).
+Table: `sources/bnf-findingaids/2026-10-09/s2a-pile.tsv` (66 volumes + fr.2988; portals on).
+- K1: fr.2988 bare 26, open_bare 0, rank 1 of 67 by bare -> PASS (reproduction only).
+- K2: base notice drawn = cc504728 (fr.4052-4053). 10-item plant open_bare 11, class pile, rank 1 of 67; 5-item plant
+  open_bare 6, class pile, rank 2 of 67 -> PASS (gate rank <= 5 both).
+- N1: with fr.2988, real max bare 26 vs null (200 perms, 54 volumes with items, 3,383 items) p50 4, p95 6, max 8 -> PASS.
+  Planted-10 without fr.2988: real 11 vs null p50 3, p95 5, max 7 -> PASS.
+Target set: one volume reaches class pile (open_bare >= 5): **fr.3029** (cc494882), 6 bare items ("Lettre en chiffre."
+nos 34 f.67, 70 f.182; "Lettres en chiffre." nos 49, 66, 68, 72 without folio in the notice), scattered across the volume,
+neighbour trap set, digitised yes -- an image-triage item for S4, not a reproduction-request item; its est_signs
+(448,500, median gap 115) is an artefact of a scattered pile and the one-point gap constant, not an estimate to use.
+Six volumes are few-bare (1-2): fr.6204 (its 2 "bare" are "Chiffre(s) anonyme(s)" in a "Recueil de chiffres
+diplomatiques" -- key sheets read as bare, a scorer miss of the known key-sheet kind), fr.3147, 3254, 3350, 3462,
+4052-4053. Eighteen notices carry no item list (image-triage, never a negative). No undigitised pile above threshold
+from this session for S2B's batched REQUEST.md. Shelf grade of --pile stays weak (C5).
+Reproduce: `python3 tools/bnf_findingaid.py --pile <the 66 notices in s2a-pile.tsv> sources/bnf-findingaids/2026-10-09/cc49442s.html --permute 200`.

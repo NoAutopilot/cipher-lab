@@ -1,0 +1,519 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050262">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050262">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3729-4104</div>
+					<h1>Français 3822
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050262_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262">Français 3822 • Anc. 9316 • Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e122">1 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOIE]... à madame de Nemours,... A Moustiers, ce 24e d'aoust 1628 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e131">Fol. 3 • 2 Lettre de « V[ITTORE-]AMEDEO [duc DE SAVOIE]... à madame de Nemours ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e144">Fol. 5 • 3 Lettre de « V[ITTORE-] AMEDEO [DE SAVOIE], prince de Piemont... à monsieur le duc de Nemours ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e152">Fol. 7 • 4 Lettre de « C[HARLES-] EMANUEL », duc DE SAVOIE, au duc de Nemours. « De Turin, ce 24 novembre 1628 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e160">Fol. 8 • 5 Lettre de « J[EAN-] FRANÇOIS [DE SALES], e[vêque] de Geneve... Annessy, le XIX auvril 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e178">Fol. 9 • 6 Lettre de « C[HARLES-] EMANUEL », duc DE SAVOIE, à « monseigneur le duc de Nemours,... Aviliane, ce 29 avril 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e186">Fol. 10 • 7 Lettre de « M[AURICE], cardinal DE SAVOYE,... à monsieur le duc de Nemours,... Turin, ce 3 may 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e204">Fol. 11 • 8 Lettre de « V[ITTORE-]AMEDEO » DE SAVOIE, prince de Piémont, au duc de Nemours. « De Thurin, ce 28 juillet 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e222">Fol. 13 • 9 Lettre de « V[ITTORE-]AMEDEO [DE SAVOIE, prince de Piémont]... à monseigneur de Nemours ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e240">Fol. 15 • 10 Lettre de « V[ITTORE-]AMEDEO [DE SAVOIE, prince de Piémont]... à monsieur de Nemours,... A Chambery, ce 3 de novembre 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e258">Fol. 18 • 11 Lettre de l'archiduchesse « ISABEL » CLAIRE-EUGENIE, gouvernante des Pays-Bas, à la duchesse de Nemours. « De Brusselas, a 28 de noviembre 1629 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e281">Fol. 21 • 12 Lettre de « J[EAN-]FRANÇOIS [DE SALES], e[vêque] de Geneve », à la duchesse de Nemours. « A Annessy, le 28 febvrier 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e299">Fol. 24 • 13 Lettre de « V[ITTORE-]AMEDEO [DE SAVOIE, prince de Piémont]... à la chambre des comptes de Savoye,... De Turin, ce 16e may 1630 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e320">Fol. 26 • 14 « Responces aux calomnies advancées à S. A. Sme [de Savoie] contre Me Jean André Pavy d'Annessy ». 1630.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e349">Fol. 28 • 15 Lettre du Sr « CARRON, secretaire de l'ordre [de l'Annonciade]... à monseigneur le duc de Nemours,... De Savillan, ce 26 julliet 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e375">Fol. 30 • 16 Lettre de « HENRY DE SAVOYE [duc DE NEMOURS]... à monsieur de Mepieux,... De Paris, ce 20 aoust 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e403">Fol. 32 • 17 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOYE]... à madame de Nemours,... De la montagne de Thurin, ce 4e septembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e434">Fol. 34 • 18 Lettre de « V[ITTORE-]AMEDEO [duc DE SAVOIE]... à monsieur le duc de Nemours,... A Sanfré, ce 28 de setembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e462">Fol. 36 • 19 Lettre de « V[ITTORE-]AMEDEO [duc DE SAVOIE]... à madame la duchesse de Nemours,... A Sanfré, ce 28 de setembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e490">Fol. 39 • 20 Lettre du Sr « CARRON [secrétaire de l'ordre de l'Annonciade]... A Sanfré, le 29 de septembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e521">Fol. 42 • 21 Lettre du Sr « CARRON » au duc de Nemours. « A Sanfré, ce 29 setembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e552">Fol. 44 • 22 Lettre de « CHRESTIENNE » DE FRANCE, duchesse DE SAVOIE, au duc de Nemours. « A Sanfré, ce 30 de settembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e580">Fol. 46 • 23 Lettre de « CHRESTIENNE » DE FRANCE, duchesse DE SAVOIE, à la duchesse de Nemours. « A Sanfré, ce 30 de setembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e608">Fol. 48 • 24 Lettre du comte de « VERUE » au duc de Nemours. « De Rive, ce 2me 8bre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e647">Fol. 50 • 25 Lettre de la reine « MARIE [DE MEDICIS]... à mon nepveu le duc de Nemours,... A Lyon, le IXe octobre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e683">Fol. 51 • 26 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, au duc de Nemours. « De Villeneufve, ce 29 de novembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e711">Fol. 52 • 27 Lettre du prince « THOMAS » FRANÇOIS DE SAVOIE à « madame de Nemours,... A Villeneufve d'Ast, ce pr Xbre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e745">Fol. 54 • 28 Lettre de « CHRESTIENNE » DE FRANCE, duchesse DE SAVOIE, à « monseigneur le duc de Nemours,... A Querasque, ce 3 de decembre 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e773">Fol. 55 • 29 Lettre de « FRANCESCO D'ESTE,... duc de Modene... al Sr duca di Nemurs,... Di Reggio, li 10 gennaio 1631 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e804">Fol. 57 • 30 Lettre d'ALBERT D'AQUAVIVA D'ARAGON, duc D'«ATRYE,... En Rome, ce 15 mars 1631 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e837">Fol. 58 • 31 Lettre de « V[ITTORE-]AMEDEO, duc DE SAVOYE,... à mon cousin le duc de Nemours,... A Querasque, ce IIIe d'avril 1631 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e868">Fol. 60 • 32 « Articolo segreto della pace... tra il sigr duca di Savoya et il sigr duca di Mantova... In Cherasco, li 6 aprile 1631 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e905">Fol. 61 • 33 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOIE]... à madame ma cousine la duchesse de Nemours,... A Queras, ce 27 may 1631 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e933">Fol. 63 • 34 Lettre du Sr « CARRON », secrétaire de l'ordre de l'Annonciade, au duc de Nemours. « A Turin, ce 14 d'octobre 1631 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e964">Fol. 65 • 35 Lettre du prince « THOMAS » FRANÇOIS DE SAVOIE à la duchesse de Nemours. « A Carignan, ce 25e de juin 1631 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e990">Fol. 67 • 36 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « Mr le duc de Nemours,... A Moncalier, ce 29 de juin 1631 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1016">Fol. 69 • 37 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame la duchesse de Nemours,... A Moncalier, ce 29 de juin 1631 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1039">Fol. 70 • 38 Lettre d'ABEL DE « SERVIEN,... à monseigneur le duc de Nemours,... A Virieus, le 7 8bre 1631 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1070">Fol. 72 • 39 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... De Carignan, ce 4e janvier 1632 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1096">Fol. 74 • 40 Lettre de « M[AURICE], cardinal DE SAVOYE,... à madame de Nemours,... De Turin, le 14 fevrier 1632 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1119">Fol. 76 • 41 Lettre de « V[ITTORE-]AMEDEO [duc DE SAVOIE]... à madame la duchesse de Nemours,... A Turin, ce 3 de mars 1632 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1142">Fol. 79 • 42 Lettre de « M[AURICE], cardinal DE SAVOYE », au duc de Nemours. « Turin, le 13 may 1632 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1165">Fol. 81 • 43 Lettre de « CHRESTIENNE [DE FRANCE, duchesse DE SAVOIE]... à monsieur le duc de Nemours, mon cousin... De Turin, ce 2me de may 1632 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1186">Fol. 83 • 44 « Ratiffication » par HENRI DE SAVOIE, duc DE NEMOURS, d'un don de trente mille livres tournois par lui fait à « François de Sainct Hubert, escuier, sieur de La Gastine », en reconnaissance du soin qu'il avait pris de ses affaires. « Faict et passé à Paris... l'an mil six cens trente deux, le vingt sixiesme jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1207">Fol. 87 • 45 Lettre du Sr DE « ST SIMON » au duc de Nemours. « A Pont Favergé, ce 13 juin 1632 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1236">Fol. 88 • 46 Lettre de « J[EAN-]FRANÇOIS [DE SALES], e[vêque] de Geneve », à la duchesse de Nemours. « A Annessy, le 28 juillet 1632 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1254">Fol. 90 • 47 Lettre d'ARMAND-JEAN DU PLESSIS, « cardinal DE RICHELIEU,... à madame la duchesse de Nemours,... De Fontainebleau, ce 2e juing 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1280">Fol. 92 • 48 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « monsieur de Nemours,... De Mirefleurs, ce 22e juing 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1301">Fol. 94 • 49 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... De Mirefleurs, ce 22e juing 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1322">Fol. 96 • 50 Lettre de « J[EAN-]FRANÇOIS [DE SALES], e[vêque] de Geneve », à la duchesse de Nemours. « A Clairmont, le premier juillet 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1340">Fol. 98 • 51 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... De Turin, ce 2e 7bre 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1364">Fol. 100 • 52 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à madame de Nemours,... De Turin, ce 30e de septembre 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1385">Fol. 102 • 53 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOIE]... à made la duchesse de Nemours,... De Chambery, ce 12e de novembre 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1409">Fol. 104 • 54 Lettre de « CATERINE D[E] S[AVOIE]... à madame de Nemours, ma cousine... A Turin, le 14me decembre 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1435">Fol. 105 • 55 Lettre de « MARIE D[E] S[AVOIE]... à madame de Nemours, ma cousine... A Turin, le 14me Xbre 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1464">Fol. 107 • 56 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... Turin, ce 15 Xbre 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1485">Fol. 109 • 57 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOIE]... à made la duchesse de Nemours,... De Chambery, ce 24e de decembre 1633 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1509">Fol. 111 • 58 Lettre de « CHRESTIENNE [DE FRANCE, duchesse DE SAVOIE]... à madame la duchesse de Nemours, ma cousine... Turin, ce 4 febvrier 1634 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1522">Fol. 113 • 59 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... De Turin, ce 5e febvrier 1634 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1533">Fol. 115 • 60 Lettre du prince « THOMAS » FRANÇOIS DE SAVOIE à la duchesse de Nemours. « De Chambery, ce 15 de fevrier 1634 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1546">Fol. 117 • 61 Lettre de la princesse « MATILDE DE SAVOYE,... à madame la duchesse de Nemours,... De Turin, ce 22e juillet 1634 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1567">Fol. 119 • 62 Lettre de « CHRESTIENNE » DE FRANCE, duchesse DE SAVOIE, à « m[adame] de Nemours,... Du Valentin, le 3 aoust 1637 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1580">Fol. 120 • 63 Lettre de « V[ITTORE-]AMEDEO » DE SAVOIE, prince de Piémont, au duc « de Nemours ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1588">Fol. 121 • 64 Lettre de « V[ITTORE-]AMEDEO » DE SAVOIE, prince de Piémont, au « duc de Nemours ». 1627.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1596">Fol. 122 • 65 Protestation de fidélité à la reine Marie de Médicis.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1614">Fol. 123 • 66 État de payement de gens de guerre. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1632">Fol. 124 • 67 Petit Mémoire adressé à M. « de Villeroy » pour le prier de rappeler au roi Louis XIII qu'il a promis de mettre l'abbaye de Saint-Évroul à la disposition du duc de Nemours.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1643">Fol. 125 • 68 Mémoire pour un agent du roi Louis XIII auprès du duc de Savoie. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1661">Fol. 126 • 69 Lettre de CHARLES DE BOURBON, « conte DE SOISSONS,... à monseigneur le duc de Nemours ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1679">Fol. 127 • 70 Minute d'une lettre de HENRI DE SAVOIE, duc DE NEMOURS, au duc de Savoie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1692">Fol. 128 • 71 « Instruction » donnée par le duc DE NEMOURS à « monsieur de Crocq, estant à Turin » près le duc de Savoie. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1710">Fol. 130 • 72 « Coppie de lettre escritte par [HENRI DE LORRAINE, duc] DU MAINE, à monsgr d'Aumalle ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1736">Fol. 132 • 73 Lettre, avec chiffre et déchiffrement, relative au différend du duc de Nemours avec le duc de Savoie, adressée « à monsieur Bertelot, conseiller et secretaire ordinaire » du duc de Nemours.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1749">Fol. 136 • 74 « Memoyres pour messeigneurs les ducs de Guize et de Montheleon », relatifs aux affaires de Savoie, à eux adressés par « HENRY DE SAVOYE [duc DE NEMOURS]... Ce 1 d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050262_d0e1762">Fol. 138 • 75 Lettre adressée au « duc de Nemours », pour lui annoncer le rétablissement d'un de ses neveux.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3822 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50262q&Cote=Français 3822&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9057424n">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 11439 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50262q&Cote=MF 11439&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3822 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9316</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Lire dans l'ordre suivant : Fol. 132, 134, 133.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 11439. Cote de la matrice (pour commander une reproduction) : R 135456.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9057424n" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9057424n.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9057424n.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Atri, Duché d'. • Lettres des ducs.</p>
+<p>Caron, secrétaire de l'Ordre de l'Annonciade. • Lettre.</p>
+<p>Christine de France, duchesse de Savoie. • Actes et lettres.</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Louis XIII, roi de France. • Notes et pièces diverses.</p>
+<p>Nemours, Henri de Savoie, marquis de Saint-Sorlin, puis duc de. • Actes et lettres.</p>
+<p>Nemours, Henri de Savoie, marquis de Saint-Sorlin, puis duc de. • Pièces.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Actes et lettres.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Différend avec le duc de Nemours.</p>
+<p>Savoie, Maurice de, cardinal. • Lettres.</p>
+<p>Savoie, Thomas-François de, prince de Carignan. • Lettres.</p>
+<p>Savoie, Victor-Amédée Ier, duc de. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e122');">1 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOIE]... à madame de Nemours,... A Moustiers, ce 24e d'aoust 1628 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e131');">2 Lettre de « V[ITTORE-]AMEDEO [duc DE SAVOIE]... à madame de Nemours ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e144');">3 Lettre de « V[ITTORE-] AMEDEO [DE SAVOIE], prince de Piemont... à monsieur le duc de Nemours ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e152');">4 Lettre de « C[HARLES-] EMANUEL », duc DE SAVOIE, au duc de Nemours. « De Turin, ce 24 novembre 1628 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e160');">5 Lettre de « J[EAN-] FRANÇOIS [DE SALES], e[vêque] de Geneve... Annessy, le XIX auvril 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e178');">6 Lettre de « C[HARLES-] EMANUEL », duc DE SAVOIE, à « monseigneur le duc de Nemours,... Aviliane, ce 29 avril 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e186');">7 Lettre de « M[AURICE], cardinal DE SAVOYE,... à monsieur le duc de Nemours,... Turin, ce 3 may 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e204');">8 Lettre de « V[ITTORE-]AMEDEO » DE SAVOIE, prince de Piémont, au duc de Nemours. « De Thurin, ce 28 juillet 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e222');">9 Lettre de « V[ITTORE-]AMEDEO [DE SAVOIE, prince de Piémont]... à monseigneur de Nemours ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e240');">10 Lettre de « V[ITTORE-]AMEDEO [DE SAVOIE, prince de Piémont]... à monsieur de Nemours,... A Chambery, ce 3 de novembre 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e258');">11 Lettre de l'archiduchesse « ISABEL » CLAIRE-EUGENIE, gouvernante des Pays-Bas, à la duchesse de Nemours. « De Brusselas, a 28 de noviembre 1629 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e281');">12 Lettre de « J[EAN-]FRANÇOIS [DE SALES], e[vêque] de Geneve », à la duchesse de Nemours. « A Annessy, le 28 febvrier 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e299');">13 Lettre de « V[ITTORE-]AMEDEO [DE SAVOIE, prince de Piémont]... à la chambre des comptes de Savoye,... De Turin, ce 16e may 1630 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e320');">14 « Responces aux calomnies advancées à S. A. Sme [de Savoie] contre Me Jean André Pavy d'Annessy ». 1630.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e349');">15 Lettre du Sr « CARRON, secretaire de l'ordre [de l'Annonciade]... à monseigneur le duc de Nemours,... De Savillan, ce 26 julliet 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e375');">16 Lettre de « HENRY DE SAVOYE [duc DE NEMOURS]... à monsieur de Mepieux,... De Paris, ce 20 aoust 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e403');">17 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOYE]... à madame de Nemours,... De la montagne de Thurin, ce 4e septembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e434');">18 Lettre de « V[ITTORE-]AMEDEO [duc DE SAVOIE]... à monsieur le duc de Nemours,... A Sanfré, ce 28 de setembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e462');">19 Lettre de « V[ITTORE-]AMEDEO [duc DE SAVOIE]... à madame la duchesse de Nemours,... A Sanfré, ce 28 de setembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e490');">20 Lettre du Sr « CARRON [secrétaire de l'ordre de l'Annonciade]... A Sanfré, le 29 de septembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e521');">21 Lettre du Sr « CARRON » au duc de Nemours. « A Sanfré, ce 29 setembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e552');">22 Lettre de « CHRESTIENNE » DE FRANCE, duchesse DE SAVOIE, au duc de Nemours. « A Sanfré, ce 30 de settembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e580');">23 Lettre de « CHRESTIENNE » DE FRANCE, duchesse DE SAVOIE, à la duchesse de Nemours. « A Sanfré, ce 30 de setembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e608');">24 Lettre du comte de « VERUE » au duc de Nemours. « De Rive, ce 2me 8bre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e647');">25 Lettre de la reine « MARIE [DE MEDICIS]... à mon nepveu le duc de Nemours,... A Lyon, le IXe octobre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e683');">26 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, au duc de Nemours. « De Villeneufve, ce 29 de novembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e711');">27 Lettre du prince « THOMAS » FRANÇOIS DE SAVOIE à « madame de Nemours,... A Villeneufve d'Ast, ce pr Xbre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e745');">28 Lettre de « CHRESTIENNE » DE FRANCE, duchesse DE SAVOIE, à « monseigneur le duc de Nemours,... A Querasque, ce 3 de decembre 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e773');">29 Lettre de « FRANCESCO D'ESTE,... duc de Modene... al Sr duca di Nemurs,... Di Reggio, li 10 gennaio 1631 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e804');">30 Lettre d'ALBERT D'AQUAVIVA D'ARAGON, duc D'«ATRYE,... En Rome, ce 15 mars 1631 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e837');">31 Lettre de « V[ITTORE-]AMEDEO, duc DE SAVOYE,... à mon cousin le duc de Nemours,... A Querasque, ce IIIe d'avril 1631 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e868');">32 « Articolo segreto della pace... tra il sigr duca di Savoya et il sigr duca di Mantova... In Cherasco, li 6 aprile 1631 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e905');">33 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOIE]... à madame ma cousine la duchesse de Nemours,... A Queras, ce 27 may 1631 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e933');">34 Lettre du Sr « CARRON », secrétaire de l'ordre de l'Annonciade, au duc de Nemours. « A Turin, ce 14 d'octobre 1631 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e964');">35 Lettre du prince « THOMAS » FRANÇOIS DE SAVOIE à la duchesse de Nemours. « A Carignan, ce 25e de juin 1631 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e990');">36 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « Mr le duc de Nemours,... A Moncalier, ce 29 de juin 1631 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1016');">37 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame la duchesse de Nemours,... A Moncalier, ce 29 de juin 1631 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1039');">38 Lettre d'ABEL DE « SERVIEN,... à monseigneur le duc de Nemours,... A Virieus, le 7 8bre 1631 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1070');">39 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... De Carignan, ce 4e janvier 1632 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1096');">40 Lettre de « M[AURICE], cardinal DE SAVOYE,... à madame de Nemours,... De Turin, le 14 fevrier 1632 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1119');">41 Lettre de « V[ITTORE-]AMEDEO [duc DE SAVOIE]... à madame la duchesse de Nemours,... A Turin, ce 3 de mars 1632 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1142');">42 Lettre de « M[AURICE], cardinal DE SAVOYE », au duc de Nemours. « Turin, le 13 may 1632 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1165');">43 Lettre de « CHRESTIENNE [DE FRANCE, duchesse DE SAVOIE]... à monsieur le duc de Nemours, mon cousin... De Turin, ce 2me de may 1632 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1186');">44 « Ratiffication » par HENRI DE SAVOIE, duc DE NEMOURS, d'un don de trente mille livres tournois par lui fait à « François de Sainct Hubert, escuier, sieur de La Gastine », en reconnaissance du soin qu'il avait pris de ses affaires. « Faict et passé à Paris... l'an mil six cens trente deux, le vingt sixiesme jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1207');">45 Lettre du Sr DE « ST SIMON » au duc de Nemours. « A Pont Favergé, ce 13 juin 1632 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1236');">46 Lettre de « J[EAN-]FRANÇOIS [DE SALES], e[vêque] de Geneve », à la duchesse de Nemours. « A Annessy, le 28 juillet 1632 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1254');">47 Lettre d'ARMAND-JEAN DU PLESSIS, « cardinal DE RICHELIEU,... à madame la duchesse de Nemours,... De Fontainebleau, ce 2e juing 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1280');">48 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « monsieur de Nemours,... De Mirefleurs, ce 22e juing 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1301');">49 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... De Mirefleurs, ce 22e juing 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1322');">50 Lettre de « J[EAN-]FRANÇOIS [DE SALES], e[vêque] de Geneve », à la duchesse de Nemours. « A Clairmont, le premier juillet 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1340');">51 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... De Turin, ce 2e 7bre 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1364');">52 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à madame de Nemours,... De Turin, ce 30e de septembre 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1385');">53 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOIE]... à made la duchesse de Nemours,... De Chambery, ce 12e de novembre 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1409');">54 Lettre de « CATERINE D[E] S[AVOIE]... à madame de Nemours, ma cousine... A Turin, le 14me decembre 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1435');">55 Lettre de « MARIE D[E] S[AVOIE]... à madame de Nemours, ma cousine... A Turin, le 14me Xbre 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1464');">56 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... Turin, ce 15 Xbre 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1485');">57 Lettre du prince « THOMAS [-FRANÇOIS DE SAVOIE]... à made la duchesse de Nemours,... De Chambery, ce 24e de decembre 1633 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1509');">58 Lettre de « CHRESTIENNE [DE FRANCE, duchesse DE SAVOIE]... à madame la duchesse de Nemours, ma cousine... Turin, ce 4 febvrier 1634 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1522');">59 Lettre de « V[ITTORE-]AMEDEO », duc DE SAVOIE, à « madame de Nemours,... De Turin, ce 5e febvrier 1634 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1533');">60 Lettre du prince « THOMAS » FRANÇOIS DE SAVOIE à la duchesse de Nemours. « De Chambery, ce 15 de fevrier 1634 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1546');">61 Lettre de la princesse « MATILDE DE SAVOYE,... à madame la duchesse de Nemours,... De Turin, ce 22e juillet 1634 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1567');">62 Lettre de « CHRESTIENNE » DE FRANCE, duchesse DE SAVOIE, à « m[adame] de Nemours,... Du Valentin, le 3 aoust 1637 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1580');">63 Lettre de « V[ITTORE-]AMEDEO » DE SAVOIE, prince de Piémont, au duc « de Nemours ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1588');">64 Lettre de « V[ITTORE-]AMEDEO » DE SAVOIE, prince de Piémont, au « duc de Nemours ». 1627.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1596');">65 Protestation de fidélité à la reine Marie de Médicis.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1614');">66 État de payement de gens de guerre. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1632');">67 Petit Mémoire adressé à M. « de Villeroy » pour le prier de rappeler au roi Louis XIII qu'il a promis de mettre l'abbaye de Saint-Évroul à la disposition du duc de Nemours.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1643');">68 Mémoire pour un agent du roi Louis XIII auprès du duc de Savoie. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1661');">69 Lettre de CHARLES DE BOURBON, « conte DE SOISSONS,... à monseigneur le duc de Nemours ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1679');">70 Minute d'une lettre de HENRI DE SAVOIE, duc DE NEMOURS, au duc de Savoie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1692');">71 « Instruction » donnée par le duc DE NEMOURS à « monsieur de Crocq, estant à Turin » près le duc de Savoie. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1710');">72 « Coppie de lettre escritte par [HENRI DE LORRAINE, duc] DU MAINE, à monsgr d'Aumalle ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1736');">73 Lettre, avec chiffre et déchiffrement, relative au différend du duc de Nemours avec le duc de Savoie, adressée « à monsieur Bertelot, conseiller et secretaire ordinaire » du duc de Nemours.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1749');">74 « Memoyres pour messeigneurs les ducs de Guize et de Montheleon », relatifs aux affaires de Savoie, à eux adressés par « HENRY DE SAVOYE [duc DE NEMOURS]... Ce 1 d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050262_d0e1762');">75 Lettre adressée au « duc de Nemours », pour lui annoncer le rétablissement d'un de ses neveux.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

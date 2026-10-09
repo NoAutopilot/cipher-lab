@@ -1,0 +1,510 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050393">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050393">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3729-4104</div>
+					<h1>Français 3944
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050393_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393">Français 3944 • Anc. 8664(2), Baluze 142 • Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e117">Fol. 3 • 1 Lettre de « T[HEODORE] GODEFROY,... à monseigneur de Bullion, conseiller du roy en son conseil d'Estat... De Paris, le 13 octobre 1629 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e125">2 Lettre de CHARLES II, roi de Jérusalem et de Sicile, par lesquelles il réunit le « comté de Piedmont aux comtez de Provence et de Forcalquier... Datum Neapoli, anno Domini millesimo trecentesimo sexto, die 14 februarii ». En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e131">Fol. 6 • 3 « Acte de prise de possession du comté de Piedmont pour et au nom de Robert, duc de Calabre, comte de Piedmont, depuis roy de Sicile... à luy escheu par succession... de son pere le roy Charles I, l'an 1308 ». En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e139">4 Traité « des droicts du roy sur plusieurs seigneuries et terres possedées par le duc de Savoye ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e148">5 « Discours sur les usurpations des ducz de Savoye ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e157">Fol. 39 • 6 « Traicté de paix et d'alliance entre Jean II, roy de France, et son fils aisné Charles, dauphin de Viennois, d'une part, et Amedée VI, comte de Savoye, d'autre. A Paris, l'an 1354, le 5 janvier ». En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e170">Fol. 53 • 7 Analyse d'un « Arrest du parlement de Paris... l'an 1390, le 10 may », maintenant le roi en la possession du marquisat de Saluces. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e183">Fol. 55 • 8 « Advis des deputez du roy Charles IX et de Philebert Emanuel, duc de Savoye, touchant les differens qui estoyent entre lesdicts princes pour le regard de Nice, plusieurs villes et places de Piedmont, et autres terres et seigneuries. A Lyon, l'an 1561 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e191">Fol. 59 • 9 « Permissions des roys CHARLES [VII], LOUIS [XI] et FRANÇOIS Ier, accordées aux ducs de Savoye pour prendre deux pour cent sur les marchandises qui passent es mers de Nisse et Villefranche ». En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e232">Fol. 65 • 10 « Traicté de Turin », conclu entre le roi de France Henri III et Emmanuel Philibert, duc de Savoie, le 14 décembre 1574. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e250">Fol. 75 • 11 « Traitté entre le roy Henry IIII et Charles Emanuel, duc de Savoye... Fait à Paris, le XXVIIe jour de febvrier 1600 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e266">Fol. 81 • 12 Mémoire relatif aux difficultés survenues dans l'exécution du traité conclu à Lyon entre Henri IV et le duc de Savoie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e274">Fol. 83 • 13 « Projects sur les affaires de Piedmont » après le traité de Lyon du mois de février 1601.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e282">Fol. 93 • 14 Lettre de CHARLES « DE BEAUCLERC [D'ACHERES]... à monseigneur de Bullion,... De Fontainebleau, le XXIXe juillet 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e303">Fol. 95 • 15 Minute d'une lettre de « LOUIS [XIII]... pour envoier à M. de Bulion,... Escrit à Fontainebleau, ce XXIXe juillet 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e314">Fol. 97 • 16 Lettre de « LOUIS [XIII]... à mon cousin le duc Desdiguieres,... Escrit à Fontainebleau, le XIIe jour de juillet 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e325">Fol. 99 • 17 Lettre, avec chiffre et déchiffrement, de RAIMOND « PHELIPEAUX [D'HERBAUT]... à monsieur de Bullion,... A Fontaynebleau, ce XXIXe juillet 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e341">Fol. 101 • 18 Lettre de HENRI DE « SCHONBERG [comte DE NANTEUIL]... à monsieur de Bullion,... De Fontainebleau, ce 25 7bre 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e357">Fol. 102 • 19 Lettre de « LOUIS [XIII]... à mon cousin le duc Desdiguieres,... Escrit à Fontainebleau, le XVIIIe jour d'aoust 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e368">Fol. 104 • 20 Lettre de « LOUIS [XIII]... à mon cousin le duc de Lesdiguieres,... Escrit à Set Germain en Laye, le XXIIII jour de novembre 1625 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e379">Fol. 106 • 21 « Memoire de M. le conestable [FRANÇOIS DE BONNE, duc DE LESDIGUIERES], adressant au Sr de St Sauveur, pour estre presenté au roy et à messieurs de son conseil », le 3 septembre 1625. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e398">Fol. 108 • 22 « Responce » de « LOUIS [XIII]... sur le memoire envoyé par M. le conestable, le IIIe septembre... Faict à Fontaynebleau, le XVIe jour de septembre M.VI.C. vingt cinq ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e417">Fol. 110 • 23 Mémoire relatif au « domaine de Versoy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e430">Fol. 112 • 24 Note sur l'«accommodement des differens entre le duc de Savoye et la republique de Gennes ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e448">Fol. 114 • 25 « Coppie d'un memoire de demande presenté à M. [le duc] de Savoye, du XVe novembre, avec ses responses sur iceluy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e459">Fol. 116 • 26 « Extrait des lettres de M. SERVIEN, du 18me novembre, escrites au roy et à M. Bouthillier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e475">27 « Extrait d'une depesche de [M. D'ANGENNES, marquis DE RAMBOUILLET], ambassadeur du roy en Espagne, du 3me 9bre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e487">Fol. 119 • 28 Déclaration de guerre faite par LOUIS XIII contre le duc de Savoie. « Donné au camp de Chambery, le 21 may 1630 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e503">Fol. 120 • 29 « Articles » de paix « proposés » au nom du duc de Savoie « par le Sr Massariny, en la presence de M. le cardinal de Bagne, à messieurs le mareschal de Crequy, de Bullion et de Chasteauneuf, deputez de la part du roy » de France, 1630. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e514">Fol. 124 • 30 Mémoire concernant les « places et territoire de Pinerol et de La Perouse ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e532">Fol. 176 • 31 Mémoire justificatif pour le duc de Savoie, relativement à l'exécution du traité de paix.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e540">Fol. 180 • 32 Articles du « traitté de mariage de madame Elizabet avec le roy d'Espagne, Philipes » II. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e558">Fol. 184 • 33 Contrat de « mariage d'entre les ducs Emanuel Philibert de Savoye et madame Marguerite de France... Faict et passé à l'hostel des Tournelles à Paris... le 27e jour de juing 1559 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050393_d0e574">Fol. 188 et 191 • 34 et 35 Deux lettres relatives aux intrigues et aux menées de l'Espagne contre la France, vers 1630. Copie.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3944 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50393r&Cote=Français 3944&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059448p">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 8145 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50393r&Cote=MF 8145&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3944 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8664(2), Baluze 142</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 8145. Cote de la matrice (pour commander une reproduction) : R 55094.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059448p" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9059448p.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9059448p.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Charles II, roi de Naples et de Sicile, comte d'Anjou et de Provence. • Réunion du Piémont au comté de Provence.</p>
+<p>Chiffres diplomatiques.</p>
+<p>Espagne. Histoire extérieure. • Relations (Louis XIII).</p>
+<p>Forcalquier. • Réunion au comté de Piémont.</p>
+<p>Godefroy, Théodore. • Lettres.</p>
+<p>Henri IV, roi de France. • Relations, avec la Savoie.</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Louis XIII, roi de France. • Relations extérieures et traités, avec la Savoie.</p>
+<p>Nice. • Notes et pièces diverses.</p>
+<p>Pérouse, LA, Piémont. • Restitution à la Savoie (1574).</p>
+<p>Piémont. • Notes et pièces diverses.</p>
+<p>Rambouillet, Charles d'Angennes, marquis de. • Lettres.</p>
+<p>Savoie. • Pièces diverses.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e117');">1 Lettre de « T[HEODORE] GODEFROY,... à monseigneur de Bullion, conseiller du roy en son conseil d'Estat... De Paris, le 13 octobre 1629 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e125');">2 Lettre de CHARLES II, roi de Jérusalem et de Sicile, par lesquelles il réunit le « comté de Piedmont aux comtez de Provence et de Forcalquier... Datum Neapoli, anno Domini millesimo trecentesimo sexto, die 14 februarii ». En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e131');">3 « Acte de prise de possession du comté de Piedmont pour et au nom de Robert, duc de Calabre, comte de Piedmont, depuis roy de Sicile... à luy escheu par succession... de son pere le roy Charles I, l'an 1308 ». En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e139');">4 Traité « des droicts du roy sur plusieurs seigneuries et terres possedées par le duc de Savoye ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e148');">5 « Discours sur les usurpations des ducz de Savoye ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e157');">6 « Traicté de paix et d'alliance entre Jean II, roy de France, et son fils aisné Charles, dauphin de Viennois, d'une part, et Amedée VI, comte de Savoye, d'autre. A Paris, l'an 1354, le 5 janvier ». En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e170');">7 Analyse d'un « Arrest du parlement de Paris... l'an 1390, le 10 may », maintenant le roi en la possession du marquisat de Saluces. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e183');">8 « Advis des deputez du roy Charles IX et de Philebert Emanuel, duc de Savoye, touchant les differens qui estoyent entre lesdicts princes pour le regard de Nice, plusieurs villes et places de Piedmont, et autres terres et seigneuries. A Lyon, l'an 1561 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e191');">9 « Permissions des roys CHARLES [VII], LOUIS [XI] et FRANÇOIS Ier, accordées aux ducs de Savoye pour prendre deux pour cent sur les marchandises qui passent es mers de Nisse et Villefranche ». En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e232');">10 « Traicté de Turin », conclu entre le roi de France Henri III et Emmanuel Philibert, duc de Savoie, le 14 décembre 1574. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e250');">11 « Traitté entre le roy Henry IIII et Charles Emanuel, duc de Savoye... Fait à Paris, le XXVIIe jour de febvrier 1600 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e266');">12 Mémoire relatif aux difficultés survenues dans l'exécution du traité conclu à Lyon entre Henri IV et le duc de Savoie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e274');">13 « Projects sur les affaires de Piedmont » après le traité de Lyon du mois de février 1601.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e282');">14 Lettre de CHARLES « DE BEAUCLERC [D'ACHERES]... à monseigneur de Bullion,... De Fontainebleau, le XXIXe juillet 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e303');">15 Minute d'une lettre de « LOUIS [XIII]... pour envoier à M. de Bulion,... Escrit à Fontainebleau, ce XXIXe juillet 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e314');">16 Lettre de « LOUIS [XIII]... à mon cousin le duc Desdiguieres,... Escrit à Fontainebleau, le XIIe jour de juillet 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e325');">17 Lettre, avec chiffre et déchiffrement, de RAIMOND « PHELIPEAUX [D'HERBAUT]... à monsieur de Bullion,... A Fontaynebleau, ce XXIXe juillet 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e341');">18 Lettre de HENRI DE « SCHONBERG [comte DE NANTEUIL]... à monsieur de Bullion,... De Fontainebleau, ce 25 7bre 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e357');">19 Lettre de « LOUIS [XIII]... à mon cousin le duc Desdiguieres,... Escrit à Fontainebleau, le XVIIIe jour d'aoust 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e368');">20 Lettre de « LOUIS [XIII]... à mon cousin le duc de Lesdiguieres,... Escrit à Set Germain en Laye, le XXIIII jour de novembre 1625 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e379');">21 « Memoire de M. le conestable [FRANÇOIS DE BONNE, duc DE LESDIGUIERES], adressant au Sr de St Sauveur, pour estre presenté au roy et à messieurs de son conseil », le 3 septembre 1625. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e398');">22 « Responce » de « LOUIS [XIII]... sur le memoire envoyé par M. le conestable, le IIIe septembre... Faict à Fontaynebleau, le XVIe jour de septembre M.VI.C. vingt cinq ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e417');">23 Mémoire relatif au « domaine de Versoy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e430');">24 Note sur l'«accommodement des differens entre le duc de Savoye et la republique de Gennes ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e448');">25 « Coppie d'un memoire de demande presenté à M. [le duc] de Savoye, du XVe novembre, avec ses responses sur iceluy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e459');">26 « Extrait des lettres de M. SERVIEN, du 18me novembre, escrites au roy et à M. Bouthillier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e475');">27 « Extrait d'une depesche de [M. D'ANGENNES, marquis DE RAMBOUILLET], ambassadeur du roy en Espagne, du 3me 9bre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e487');">28 Déclaration de guerre faite par LOUIS XIII contre le duc de Savoie. « Donné au camp de Chambery, le 21 may 1630 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e503');">29 « Articles » de paix « proposés » au nom du duc de Savoie « par le Sr Massariny, en la presence de M. le cardinal de Bagne, à messieurs le mareschal de Crequy, de Bullion et de Chasteauneuf, deputez de la part du roy » de France, 1630. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e514');">30 Mémoire concernant les « places et territoire de Pinerol et de La Perouse ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e532');">31 Mémoire justificatif pour le duc de Savoie, relativement à l'exécution du traité de paix.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e540');">32 Articles du « traitté de mariage de madame Elizabet avec le roy d'Espagne, Philipes » II. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e558');">33 Contrat de « mariage d'entre les ducs Emanuel Philibert de Savoye et madame Marguerite de France... Faict et passé à l'hostel des Tournelles à Paris... le 27e jour de juing 1559 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050393_d0e574');">34 et 35 Deux lettres relatives aux intrigues et aux menées de l'Espagne contre la France, vers 1630. Copie.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

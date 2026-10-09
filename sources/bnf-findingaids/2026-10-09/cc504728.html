@@ -1,0 +1,466 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050472">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050472">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3729-4104</div>
+					<h1>Français 4052-4053</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050472_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472">Français 4052-4053 • Anc. 9037(4 et 5), Baluze 471 et 472 • Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit. De 1539 à 1614.</a><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e86">Français 4052 • Tome I.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e90">1 Lettre de « CHARLES DE BOURBON,... prince DE LA ROCHE SUR ION,... à monseigneur de Sipierre, gouverneur et lieutenant general pour le roy au gouvernement d'Orleanois et Berry... Le XIe d'apvril 1562 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e99">Fol. 2 • 2 Lettre d'«E[MMANUEL] PHILIBERT [duc DE SAVOIE]... à Monsieur [frère du roi]... De Rivoles, ce XXVme decembre ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e110">Fol. 4 • 3 Lettre d'«HIP[POLYTE D'EST], cardinal DE FERRARE,... à monseigneur de Sipierre,... D'Amboyse, ce XIIIIe jour d'avril 1563 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e121">Fol. 6 • 4 Lettre de « F[LORIMOND] ROBERTET [secrétaire d'État]... à monseigneur de Sipierre,... De Chenonceau, ce XIIIIe d'avril 1563 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e132">Fol. 8 • 5 « Estat des parties et sommes de deniers ordonnées par le roy [François II] au tresorier de l'exercice de la guerre de Piedmont, Me Christophle Moreau,... pour trois mois entiers commenceans le premier jour d'aoust dernier et finissant le dernier jour du mois d'octobre [1559]... Faict à Chastellerault, le XXIIIme novembre » 1559.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e146">Fol. 13 • 6 « C'est le Roolle de messrs les officiers de la justice d'Orleans, prevost des mareschaulx, cappitaines du guet, leurs officiers, ensemble les cinquanteniers de messrs de ladicte ville, qui supplient monseigneur de Sipierre, gouverneur... d'Orleans... pouvoir porter armes, nonobstant les deffenses ». En marge les réponses de RENE DE SAVOIE DE SIPIERRE.</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e160">7 et 8 Deux lettres de « GABRIEL SYMEON,... à monseigneur le prevost de Paris [Antoine Duprat], à Nantoillet ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e166">Fol. 15 • 7 « De Anet, XXVIII apvril 1554 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e174">Fol. 17 • 8 « De l'Isle Dan, le dernier apvril 1554 ».</a></div></div></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e182">9 à 12 Quatre lettres d'«ANTOINE] DUPRAT,... à monsieur le prevost de Paris », son père.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e188">Fol. 19 • 9 « De Compiegne, le XXI may » 1554.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e196">Fol. 21 • 10 « De Metz, ce XIIe jour de novembre » 1552.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e207">Fol. 23 • 11 « Du camp devant Crevecueur, le premier jour d'aoust » 1554.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e215">Fol. 25 • 12 « D'Amiens, le XXIIIIe jour de juillet » 1553.</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e226">Fol. 27 • 13 Lettre de « GABRIEL SYMEON » au prévot de Paris, Antoine Duprat. « De Paris, le XVII d'octobre 1552 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e234">Fol. 28 • 14 « Genealogia divae Catarinae Medices, Francorum reginae ». En latin.</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e242">15 à 17 Trois lettres d'«A[NTOINE] DUPRAT,... à monsieur le prevost de Paris », son père.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e248">Fol. 29 • 15 « De Poix, le XII may » 1555.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e256">Fol. 31 • 16 « De Compiengne, le XIIII juillet » 1553.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e264">Fol. 33 • 17 « Du camp devant Ranty, le XIIII jour d'aoust » 1554.</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e272">Fol. 35 • 18 Lettre de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à monsieur mon frere, monseigneur le prevost de Paris... De Trente, le XXVIIIe jour d'avril 1546 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e283">Fol. 37 • 19 Lettre de CHARLES DE COSSE « BRISSAC [maréchal de France]... à Sarred, l'un de mes secretaires... A Thurin, le XIIe janvier 1551 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e294">Fol. 38 • 20 Lettre de « GUILLAUME DUPRAT, évêque de Clermont... à monseigneur mon frere, monseigneur le prevost de Paris, à Nantoilhet... De Paris, ce jour IIIe decembre 1552 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e305">Fol. 39 • 21 et 22 Extraict des lettres escriptes par [LOUIS PREVOST] DE SANSAC au roy et à monseigneur le connestable ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e313">Fol. 40 • 23 Lettre de CHARLES DE COSSE « BRISSAC [maréchal de France]... à Sarred, mon secretaire... De Thurin, ce penultieme jour de decembre 1551 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e321">Fol. 41 • 24 Lettre d'«ARTUS DE COSSE » DE GONNOR « à Mr de Seret, solisiteur à la court pour monseigneur le mareschal de Brissac,... De Qer (Quiers), se XVIII d'octobre » 1551.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e332">Fol. 42 • 25 Lettre de CHARLES DE COSSE « BRISSAC [maréchal de France]... à Mr Sarred,... A Quiers, le XVIIe fevrier » 1552.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e346">Fol. 43 • 26 Formule d'excuse, à propos d'un différend survenu entre deux gentilshommes français de l'armée du duc de Montmorency, à Turin.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e354">Fol. 44 • 27 Lettre de « GABRIEL SYMEON,... à monsgr le prevost de Paris, à Nantoillet... De Compiegne, le XVIII de may 1554 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e365">Fol. 45 • 28 Double incomplet de la formule portée sous le n° 24.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e373">Fol. 46 • 29 Lettre de CHARLES DE COSSE BRISSAC, maréchal de France, au roi. « De Quiers, ce XXVIIIe may 1554 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e384">Fol. 47 • 30 Lettre de « GABRIEL SYMEON,... à monsgr le prevost de Paris... De Compiegne, le XXIII de may 1554 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e395">Fol. 50 • 31 Lettre du connétable ANNE DE « MONTMORENCY,... à Mr de Nantoillet, prevost de Paris... De St Germain en Laye, le XXIIe jour de juing 1553 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e412">Fol. 51 à 53 • 32 à 34 Trois lettres de « GABRIEL SYMEON,... à monsgr le prevos de Paris... De Compiegne », les 20, 26 et 28 « may 1554 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e423">Fol. 54 • 35 Supplique adressée au roi, au nom de « Me ROGER d'ASPREMONT, pour obtenir la mise en possession immédiate des prieurés de « Pynel et doyenné de L'Isle en Jourdan, vaccant par le decez de feu Me Jehan de Baulac ». Minute. A la suite, apostille de « C., cardinal DE LORRAINE ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e437">Fol. 55 • 36 Lettre de « GABRIEL SYMEON,... à monseigneur le prevost de Paris ». Juin 1553.</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e445">37 à 39 Trois lettres de CHARLES DE COSSE « BRISSAC [maréchal de France]... à Sarred, mon secretaire ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e451">37 « A Thurin, le XXIXe janvier 1551 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e460">Fol. 56 à 58 • 38 et 39 « De Santhia, ce XVIe febvrier 1555 ».</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e471">Fol. 59 • 40 « L'Offre que faict l'abbé Bourgarel, s'il plaist au roy de renouveller toutes et chascunes les munitions des vivres du roy en Piedmont, à ses propres despens ». En marge les responses du roy François I. « Faict à St Germain en Laye, le XXVIe jour d'apvril » 1543.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e485">Fol. 60 • 41 « Marché... passé... entre Mr de Bothieres, lieutenant general du roy deçà les montz, et Mr Melquior Borgarel », en conséquence desdits articles. « Faict à Carignen, ce dixneufiesme de may » 1543.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e499">Fol. 64 • 42 Lettre d'«A[NTOINE] DUPRAT » au prévôt de Paris, son père. « Escrit à St Miez, ce VIIe jour d'octobre » 1552.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e513">Fol. 65, 67, 69 • 43 à 45 Trois lettres d'«ODET DE SELVE,... à Mr Sarred,... De Venize », les 18 « decembre 1551 », 17 et 7 « janvier » 1552.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e524">Fol. 71 • 46 Lettre de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à Mr le prevost de Paris, à Nantoillet... De Trante, ce XIIIIe janvyer 1546 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e538">Fol. 73 • 47 Lettre d'«A[NTOINE] DUPRAT » DE NANTOILLET « à Mrs Du Monceaulx et Lecoq, à Paris... De Nantoillet, ce IXe decembre ».</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e552">48 et 49 Deux lettres de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à Mr le prevost de Paris ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e561">48 « De Trente, le dernier jour de fevrier 1545 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e567">Fol. 75 et 77 • 49 « De Padoue, le IXe jour de decembre 1545 ».</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e578">Fol. 79 • 50 Lettre de RENE DE SAVOIE DE « SIPIERRE,... à Mr Sarred,... Du camp devant Orleans, le XVe febvrier 1563 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e592">Fol. 81 • 51 Lettre de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à Mr le prevost de Paris... De Trente, le XIIe decembre 1546 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e606">Fol. 83 et 85 • 52 et 53 Deux lettres de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à Mr le prevost de Paris... De Trente », les 5 « mars » et 9 « juillet 1546 ».</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e617">54 à 57 Quatre lettres, en italien, de « FRANCESCO BERNARDINO VIMERCATO ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e623">Fol. 87 • 54 « à monseigneur de Beauregard,... Da Turino, il 3 d'aprile 1550 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e634">Fol. 89 • 55 « à monseigneur Sarredi,... Da Turino, il 3 d'april 1550 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e645">Fol. 91 • 56 « à monseigneur de Beauregard,... Da Turino, l'ultimo di marzo 1551 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e656">Fol. 93 • 57 « à monseigneur Sarredi,... Da Turino, l'ultimo di marzo 1551 ».</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e667">Fol. 95 • 58 Lettre d'«HIPPO[LITO] FRANCESCO DA ESTE,... al duca d'Angio,... Di Ferrara, li IX di febbrajo » 1567. En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e675">Fol. 97 • 59 Lettre de CHARLES DE COSSE « BRISSAC [maréchal de France]... à Mr le chancellier... De Paris, le XXIXe jour de janvier 1562 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e689">Fol. 99 • 60 « Coppie du breve » du pape JULES III, « contenant le refuz important provision pour [Étienne] de Bayon [commandeur de L'Hôpital], et habilitation du procureur du roy à fere declairer nul le tiltre contre [Jean] de Barbanson,... Datum Rome, apud S. Petrum, die X februarii 1553 ». En latin.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e697">Fol. 101 • 61 « Estat de ce que monte pour ung mois le paiement des gens de guerre à pied italiens nouvellement levez en Piedmont ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e705">Fol. 103 • 62 Lettre d'ANNE DE « MONTMORENCY,... conestable » de France, « à monseigneur [le duc d'Anjou]... De Chantilly, ce IIIIe mars 1567 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e716">Fol. 105 • 63 Lettre des « officiers et eschevins de la ville de Gien... à monsgr de Sipierre, gouverneur d'Orleans... De Gien, ce IXe avril apres Pasques 1563 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e730">Fol. 108 • 64 Ordonnance de « FRANÇOIS » Ier, par laquelle il confirme des priviléges précédemment accordés à l'Université de Paris pour l'entrée libre du bétail à pied fourché. 17 décembre 1539. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e741">Fol. 111 • 65 Lettre de « JACQUES DE SAVOYE [duc DE NEMOURS]... à Mr de Sipierre,... Du camp de St Genyes, le XIXe jour de janvier 1562 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e758">Fol. 112 • 66 Lettre de CHARLES DE COSSE « BRISSAC [maréchal de France]... à Sarred,... De Paris, le XXIXe jour de janvier 1562 ». A la suite, quelques lignes du Sr « BILLIAD ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e772">Fol. 113 • 67 Lettre de « HENRY DE LENONCOURT,... à Mr le prevost de Paris... De Nanthueil, le XIXe juillet ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e786">Fol. 114 • 68 Lettre de « GABRIEL SYMEON,... à monsgr le prevost de Paris... De Compiegne, le XXIIIIe de may 1554 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e800">Fol. 115 • 69 Placet présenté au roi, en faveur d'« un homme d'armes de la compaignye » du « duc de Nivernoys ». A la suite, quelques lignes de « FRANÇOYS DE CLEVES [duc DE NEVERS]... Au camp pres de Monsterul... XVIII d'oust ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e808">Fol. 116 • 70 Lettre de LOUIS DE S. GELAIS DE « LANSSAC,... à Mr Sarret,... De Trente, ce XIIe jour de janvier 1562 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e822">Fol. 117 • 71 Lettre d'«ANNE » D'EST « à Mr le prevost de Paris... De Renne, ce VIIIe juillet ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e836">Fol. 118 • 72 Lettre de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à Mr le prevost de Paris... De Trente, le dernier jour d'avril » 1546.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e847">Fol. 119 • 73 et 74 Deux lettres relatives à la guerre faite par les impériaux autour de Metz et de Hesdin. 3 et 4 novembre 1552. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e855">Fol. 120 • 75 Lettre de « F[RANÇOIS BOHIER], e[vêque] de St Malo... à Mr le prevost de Paris... De Huismes, ce VIIIe jour de decembre 1554 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e872">Fol. 121 • 76 Lettre de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à Mr le prevost de Paris... De Trente, le premier jour de janvier 1546 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e883">Fol. 122 • 77 Lettre de « G[UILLAUME] DUPRAT » GONDOLE à son cousin « le prevost de Paris... De ce camp à Cercan, ce VIIe aoust ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e894">Fol. 123 à 125 • 78 à 80 Liste des membres des chambres « nouvelle... du dommayne » et « des enquestes ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e902">Fol. 126 • 81 Lettre de « PHILIPPUS A MONTLEVRAINO » à Antoine Du Prat. « Ex edibus tuis Nantovilliacis, 3° nonas januarii 1552 ». En latin.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e910">Fol. 127 • 82 Lettre d'ODET DE COLIGNY, « cardinal DE CHASTILLON,... à Mr le prevost de Paris... De Ferrieres, ce IIe jour de febvrier » 1547.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e924">Fol. 128 • 83 Lettre de « F. [NICOLAS DUPRAT, baron] D'ANSSIENVILLE,... grant prieur de France... à Mr le prevost de Paris... De Soysy le Temple, ce XXIXe janvier ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e938">Fol. 129 • 84 Lettre de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à Mr le prevost de Paris... De Venize, ce XXIIIe juillet 1546 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e952">Fol. 130 • 85 Lettre de « FRANCESCO BERNARDINO VIMERCATO,... à Mr Sarred,... De Quiers, ce XXVIIIe de janvier 1552 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e966">Fol. 131 • 86 Lettre de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à Mr le prevost de Paris... De Trente, le XXVIIIe jour de janvier 1595 ».</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e980">87 et 88 Deux lettres de RENE DE SAVOIE DE « SIPIERRE,... à Mr Sarred ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e989">Fol. 132 • 87 « De Baurdeaulx, ce XIIIe avril 1565 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1000">Fol. 133 • 88 « De Monceaulx, ce XXIXe jour de septembre 1559 ».</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1011">Fol. 134 • 89 Lettre de CHARLES DE COSSE « BRISSAC [maréchal de France]... à Sarred,... Escrit à Rouen, ce XXe jour de fevrier 1562 ». A la suite, quelques lignes du Sr « BILLIAD ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1025">Fol. 135 • 90 Lettre de « CHARLES DE BOURBON, prince DE LA ROCHE-SUR-ION,... à Mr de Scipierre,... D'Amboyse, ce VIe apvril ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1039">Fol. 136 • 91 Lettre de RENE DE SAVOIE DE « SIPIERRE,... à Mr Sarred,... Du camp devant Orleans, ce XXIIIe febvrier 1563 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1053">Fol. 137 • 92 Lettre de « G[UILLAUME] DUPRAT, e[vêque] de Clermont... à Mr le prevost de Paris... De Crosieux, le XX d'avril » 1547.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1064">Fol. 139 • 93 Lettre de CHARLES DE COSSE DE « BRISSAC [maréchal de France]... à Mr Sarred,... De Rouen, le XIe jour de fevrier 1562 ». A la suite, quelques lignes du Sr BILLIAD.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1081">Fol. 141 • 94 « Abregé de ce qui a esté ordonné estant es villes de Bourges, Yssouldun et Vierzon, les XVII, XVIII, XIX et XXIes jours d'avril 1563, après Pasques ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1092">Fol. 145 • 95 Lettre de JACQUES D'ALBON DE « SAINCT ANDRE [maréchal de France]... à Mr de Nantoillet,... De Bloys, ce VIIIe jour de janvier ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1106">Fol. 147 • 96 Ordonnance de HENRI IV pour l'érection de « la viconté de Rohan » en duché et prairie. « Donné à Fontainebleau, au mois d'avril » 1603.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1114">Français 4053 • Tome II.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1118">1 « Parties pour monsgr le dauphin, fournyes par Dominique Lichany, marchant fournissant l'argenterie dudict Sr, durant le quartier d'avril, may et juing » 1547. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1130">Fol. 6 • 2 Manifeste de LOUIS DE BOURBON, prince DE CONDE, adressé au parlement de Rouen, sur « l'occasion qui [lui] a fait prendre les armes... Escrit à Orleans, ce XXVIIIe avril 1562 ». Ce manifeste est précédé d'une lettre de créance pour le Sr de « S. M. », chargé de présenter ledit manifeste au parlement de Rouen. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1144">Fol. 8 • 3 Réponse faite aux réformés de « la viconté d'Argentan » par « JACQUES VIOLE et JEHAN DE LA GUESLE », concernant l'exercice de la religion prétendue réformée en la ville d'Argentan. « Faict à Argentan, le VIIIe d'octobre » 1563.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1155">Fol. 12 • 4 Arrêté d'«IGNACE COURTOIS, bailly de Montargis », contre les synodes et assemblées de ceux de la religion réformée, 3 septembre 1564. Copie.</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1163">5 à 10 Six lettres de JACQUES DE MATIGNON, lieutenant général du roi en Normandie.</a><div class="nivX closed"><div class="childInfo closed" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1169">5 et 6 « au roy » Charles IX.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:60px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1178">Fol. 14 • 5 « A Lonray, le XXVIIIe d'avril 1565 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:60px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1189">Fol. 16 • 6 « A Alençon, le XXIIe de septembre 1568 ». Copie.</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1200">Fol. 18 • 7 « à toutes les vicontes » de Normandie. « A Bayeulx, le XXVIIIe avril 1569.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1217">Fol. 19 • 8 au duc de Bouillon. « A Lonray, le XXVIe janvier 1570 ». Copie.</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1231">9 et 10 « au roy » Charles IX.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:60px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1240">Fol. 20 • 9 « A Alençon, le XIIIIe decembre 1572 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:60px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1251">Fol. 22 • 10 « May 1573 ». Minute.</a></div></div></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1259">Fol. 24 • 11 Mandement de JACQUES DE MATIGNON « à tous cappitaines, chefs de guerre et aultres serviteurs du roy », de se saisir de certains rebelles faits prisonniers à la prise de Domfront, et qui depuis s'étaient évadés contre la foi jurée. Copie.</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1267">12 à 15 Quatre lettres de JACQUES DE MATIGNON « au roy » Charles IX.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1273">Fol. 26 • 12 « VIIe de juing 1573 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1284">Fol. 28 • 13 « XXIe de juing 1573 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1295">Fol. 30 • 14 « Au camp de Dompfront, ce XXVIIIe de may 1574 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1306">Fol. 31 • 15 « Du IIe juing 1574 ». Minute.</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1317">Fol. 32 • 16 Lettres patentes du roi HENRI III aux trésoriers généraux des finances en la généralité de Caen, concernant la prorogation et l'extension des octrois antérieurement concédés sur le sel qui « fait descente au havre de la dicte ville... Donné à Paris, le XIIe d'avril » 1575. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1328">Fol. 33 • 17 Arrêté des trésoriers généraux en la généralité de Caen, pour la mise à exécution desdites lettres. « Donné le XIIIe juing » 1575. Copie.</a></div></div><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1339">18 et 19 Deux lettres de JACQUES DE « MATIGNON,... au roy » Charles IX.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1345">Fol. 36 • 18 « A Caen, le XIIIe jour de febvrier 1576 ». Minute.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1356">Fol. 38 • 19 « Du VIIIe febvrier 1579 ». Minute.</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1367">Fol. 39 • 20 Lettre du Sr « DE RUFFEC,... à Mr le prince de Condé,... De Ruffec, ce Ve d'avril 1579 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1384">Fol. 40 • 21 Lettre de JACQUES DE MATIGNON « au roy... Du XIXe may 1579 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1395">Fol. 41 • 22 « Commission » par laquelle « JACQUES DE MATIGNON, mareschal de France », donne au « cappitaine Terrou » le commandement d'une compagnie « en garnison à Villefranche de Rouergue... Faict à Bordeaux, le XXVe juing » 1587.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1406">Fol. 43 • 23 « Commission » par laquelle JACQUES « DE MATIGNON » remet entre les mains du Sr « de Merville, grand seneschal de Guienne... la garde du chasteau et ville de Thonnenx... A Marmande, le XXIIIe septembre 1587 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1420">Fol. 45 • 24 Lettre du roi HENRI III « à Mr Daffis, premier president à Bourdeaux... Escript à Paris, le XXVIe jour de janvier 1588 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1434">Fol. 47 • 25 Procès-verbal des résolutions prises par les consuls, juge, procureur du roi et jurats de Marmande à l'encontre d'un certain capittaine Bourgeois, qui, au mépris des injonctions du maréchal de Matignon, s'obstinait à rester dans ladite ville et à y entretenir des relations avec ceux du parti contraire. 27 avril 1588.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1442">Fol. 49 • 26 Règlement établi par le maréchal DE MATIGNON pour l'entretien d'une garnison à « Villeneufve d'Agennois... Faict à St Macquaire, le [26] juing » 1589. Copie. En marge, observations des consuls de ladite ville.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1453">Fol. 51 • 27 Lettre au maréchal de Matignon, concernant Villeneuve d'Agen et Agen. 7 janvier 1591.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1461">Fol. 52 • 28 Dépêche secrète.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1469">Fol. 53 • 29 Lettre d'excuses adressée par les habitants d'Alençon au duc d'Alençon. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1477">Fol. 55 • 30 Procès-verbal d'une « monstre faicte devant la place des Chartreux lez Bordeaux » par « FRANÇOIS DE GIRARD DU HAILLAN » et « PIERRE FORTAGE », le 13 août 1593.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1485">Fol. 57 • 31 Prorogation de trêve établie par « les depputés des seneschaulcées, villes et communaultés de Guienne... Faict » à « Loubit de Lomaigne, le [9] febvrier » 1594. Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1493">Fol. 58 • 32 Lettre de HENRI DE « SCHONBERG,... à monseigneur le viscomte de Brigeuil,... De Paris, ce 8e mars » 1614.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1504">Fol. 59 • 33 Lettre, en chiffre, avec déchiffrement, touchant les Srs de Ste-Catherine et de La Roussière.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1518">Fol. 61 • 34 Vingt-quatre chiffres avec leurs clefs.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050472_d0e1526">Fol. 108 à 112, 114, 116, 118, 120 • 35 à 43 Neuf pièces chiffrées, dont quelques-unes avec déchiffrement.</a></div></div></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4052-4053<br/>Cette cote ne correspond pas à une unité matérielle communicable. Veuillez sélectionner un document réservable parmi les niveaux inférieurs.</span></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4052-4053 
+							</div>
+<div class="did-unitid">Ancienne cote : Anc. 9037(4 et 5), Baluze 471 et 472</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit. De 1539 à 1614.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.2 volumes.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Brissac, Charles Ier de Cossé, comte de, maréchal de France. • Lettres et actes.</p>
+<p>Duprat, Antoine, cardinal et chancelier de France. • Actes et lettres.</p>
+<p>Duprat, Guillaume, évêque de Clermont. • Lettres.</p>
+<p>François Ier, roi de France. • Actes et lettres.</p>
+<p>Simeoni, Gabriel. • Lettres.</p>
+<p>Vimercato, Francisco-Bernardino. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050472_d0e86');">Français 4052 (cote) • Tome I.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050472_d0e1114');">Français 4053 (cote) • Tome II.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

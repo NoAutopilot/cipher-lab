@@ -1,0 +1,508 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049609">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049609">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3147
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049609_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609">Français 3147 • Anc. 8666 • Recueil de lettres et de pièces originales.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e104">1 Lettre du roi « HENRY » II au connétable Anne de Montmorency.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e110">Fol. 3 • 2 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le conestable deuc de Monmoransi ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e118">Fol. 5 • 3 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le duc de Montmorancy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e126">Fol. 7 • 4 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le connestable ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e134">Fol. 9 • 5 Lettre d'HENRY [D'ALBRET]... roy de Navarre... à... monseigneur le grand maistre... De Perigueux, le XIIIIe jour de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e150">Fol. 12 • 6 Lettre d'« ANTOYNE [DE BOURBON, roi de Navarre]... A Nerac, le XIe jour de juing 1556 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e166">Fol. 13 • 7 Lettre non signée ni datée, « à... monseigneur le duc de Montmorancy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e179">Fol. 16 • 8 Lettre, en italien, de « PIETRO STROZI,... a monsignore il duca di Momoransi,... Di Stabbia, alli XVIII di gennaro M.D.LVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e192">Fol. 18 • 9 « Sommaire du contenu ou traicté de paix faict entre le roy [Henri II] et le roy d'Angleterre. Du moys de mars V.C.XLIX ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e213">Fol. 21 • 10 Mémoire « sur le faict de Ferrare ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e221">Fol. 24 • 11 « Promesses faictes... au roy [Henri II]... le VIIIe du moys mars 1548... par monseigneur DE VAULDEMONT, NICOLAS DE LORRAINE ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e242">Fol. 26 • 12 « Double de la responce faicte par le roy [HENRI II] à monseigneur le duc de Ferrare,... Fait à Bloys, le XIXe jour d'avril, l'an M.V.C. cinquante six ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e256">Fol. 29 • 13 Mémoire sur l'affaire de Parme.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e267">Fol. 32 • 14 « Les Poinctz de la capitulacion passée avec monseigneur le duc de Ferrare ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e283">Fol. 35 • 15 Mémoire en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e291">Fol. 38 • 16 Nouvelles « de Rome, le XVIIe mars 1559... à monseigneur le duc de Montmorency ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e302">Fol. 43 • 17 « Proclamation de la royne d'Angletterre [ÉLISABETH]... sur l'observation de la paix avecques les royaulmes de France et Escosse... Londres... 1559 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e325">Fol. 46 • 18 « Reglement pour les gens de pied estans en Piedmont ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e333">Fol. 51 • 19 Adresse des gens de « la ville de Gennes » au roi Henri II.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e351">Fol. 56 • 20 Offres de Charles, cardinal de Lorraine, « à monseigneur d'Auzanes, lieutenant pour le roy à Metz... A Nancy, le XVIIIe jour de juillet 1565 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e372">Fol. 59 • 21 Lettre de « COSME CLAUSSE,... à monseigneur le grand maistre... De Mirande, ce dimanche IIIe jour d'avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e393">Fol. 62 • 22 Lettre de « RENEE DE FRANCE,... à... monseigneur le duc de Montmorency,... De Ferrare, le VIIe jour d'octobre 1554 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e414">Fol. 64 • 23 Lettre de « JEHAN [DE BOURBON, comte D'ENGHIEN]... à monseigneur de Humyeres,... De Reims, ce XVIe de juing 1557 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e440">Fol. 66 • 24 « Estat des compaignies de la gendarmerie ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e448">Fol. 69 • 25 Lettre de « MARGUERITE DE FRANCE [duchesse de Savoye]... à... monseigneur le duc de Montmorency,... De Verseil, ce XXe febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e469">26 Lettre de l'« e[vêque] d'Avranches... à monseigneur le grand maistre... A Venyse, le XIe jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e478">Fol. 74 • 27 « Memoire de monseigneur de Morvillier » pour le roi et le connétable.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e491">Fol. 77 • 28 Lettre d'ANNE DE « MONTMORENCY,... à monseigneur de La Pommeraye,... De Lymours, ce XXIe jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e507">Fol. 79 • 29 « Double de lettre du legat... cardinalis POLUS,... al... Sr Santa Croce, nuncio... Di Bruxelles, alli 26 d'aprile 1554 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e521">Fol. 81 • 30 Lettre de « CLAUDE DE TANDE,... à monseigneur le duc de Montmorency,... A Villeneuve, le XXIe d'octobre 1563 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e537">Fol. 84 • 31 « Cappitullation accordée par les gouverneur, cappitaines et soldatz de Mariembourg », lors de la reddition de la ville en la puissance du roi.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e555">Fol. 86 • 32 Lettre de FRANÇOIS « DE MONTMORENCY,... à monseigneur le duc de Montmorency,... De Sainct Omer, ce dernier de juing 1553 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e568">Fol. 88 • 33 Lettre d'ANNE DE « MONTMORENCY,... à monseigneur de Humyeres,... De Challons sur Saonne, le XXe de juillet 1548 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e584">Fol. 90 • 34 Lettre de « l'advoyer, petit et grand conseil de la ville et canton de Soleurre en Suisse... à monseigneur le duc de Mommerancy,... De Solleure, ce XIIIIe jour de novembre 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049609_d0e600">Fol. 92 • 35 Lettre du baron DE « SAINT BLANCART,... à monseigneur le grant maistre... De Marselle, le XVIIIe jour de may ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3147 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc496090&Cote=Français 3147&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90602650">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31443 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc496090&Cote=MF 31443&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3147 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8666</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31443. Cote de la matrice (pour commander une reproduction) : R 4108.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b90602650" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b90602650.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b90602650.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Avranches. • Évêché, lettre de l'évêque.</p>
+<p>Castro, Duchesse de. • Lettres (1553).</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Gendarmerie, gendarmes. • Montres, rôles, états de paiement.</p>
+<p>Gênes. • Notes et pièces diverses.</p>
+<p>Henri II, roi de France. • Actes et lettres.</p>
+<p>Henri IV, roi de France. • Actes et lettres.</p>
+<p>Montmorency, Anne, duc de, connétable de France. • Lettres et actes.</p>
+<p>Piémont. • Armée.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e104');">1 Lettre du roi « HENRY » II au connétable Anne de Montmorency.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e110');">2 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le conestable deuc de Monmoransi ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e118');">3 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le duc de Montmorancy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e126');">4 Lettre de « CATERINE [DE MEDICIS]... à... monsieur le connestable ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e134');">5 Lettre d'HENRY [D'ALBRET]... roy de Navarre... à... monseigneur le grand maistre... De Perigueux, le XIIIIe jour de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e150');">6 Lettre d'« ANTOYNE [DE BOURBON, roi de Navarre]... A Nerac, le XIe jour de juing 1556 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e166');">7 Lettre non signée ni datée, « à... monseigneur le duc de Montmorancy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e179');">8 Lettre, en italien, de « PIETRO STROZI,... a monsignore il duca di Momoransi,... Di Stabbia, alli XVIII di gennaro M.D.LVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e192');">9 « Sommaire du contenu ou traicté de paix faict entre le roy [Henri II] et le roy d'Angleterre. Du moys de mars V.C.XLIX ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e213');">10 Mémoire « sur le faict de Ferrare ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e221');">11 « Promesses faictes... au roy [Henri II]... le VIIIe du moys mars 1548... par monseigneur DE VAULDEMONT, NICOLAS DE LORRAINE ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e242');">12 « Double de la responce faicte par le roy [HENRI II] à monseigneur le duc de Ferrare,... Fait à Bloys, le XIXe jour d'avril, l'an M.V.C. cinquante six ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e256');">13 Mémoire sur l'affaire de Parme.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e267');">14 « Les Poinctz de la capitulacion passée avec monseigneur le duc de Ferrare ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e283');">15 Mémoire en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e291');">16 Nouvelles « de Rome, le XVIIe mars 1559... à monseigneur le duc de Montmorency ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e302');">17 « Proclamation de la royne d'Angletterre [ÉLISABETH]... sur l'observation de la paix avecques les royaulmes de France et Escosse... Londres... 1559 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e325');">18 « Reglement pour les gens de pied estans en Piedmont ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e333');">19 Adresse des gens de « la ville de Gennes » au roi Henri II.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e351');">20 Offres de Charles, cardinal de Lorraine, « à monseigneur d'Auzanes, lieutenant pour le roy à Metz... A Nancy, le XVIIIe jour de juillet 1565 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e372');">21 Lettre de « COSME CLAUSSE,... à monseigneur le grand maistre... De Mirande, ce dimanche IIIe jour d'avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e393');">22 Lettre de « RENEE DE FRANCE,... à... monseigneur le duc de Montmorency,... De Ferrare, le VIIe jour d'octobre 1554 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e414');">23 Lettre de « JEHAN [DE BOURBON, comte D'ENGHIEN]... à monseigneur de Humyeres,... De Reims, ce XVIe de juing 1557 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e440');">24 « Estat des compaignies de la gendarmerie ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e448');">25 Lettre de « MARGUERITE DE FRANCE [duchesse de Savoye]... à... monseigneur le duc de Montmorency,... De Verseil, ce XXe febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e469');">26 Lettre de l'« e[vêque] d'Avranches... à monseigneur le grand maistre... A Venyse, le XIe jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e478');">27 « Memoire de monseigneur de Morvillier » pour le roi et le connétable.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e491');">28 Lettre d'ANNE DE « MONTMORENCY,... à monseigneur de La Pommeraye,... De Lymours, ce XXIe jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e507');">29 « Double de lettre du legat... cardinalis POLUS,... al... Sr Santa Croce, nuncio... Di Bruxelles, alli 26 d'aprile 1554 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e521');">30 Lettre de « CLAUDE DE TANDE,... à monseigneur le duc de Montmorency,... A Villeneuve, le XXIe d'octobre 1563 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e537');">31 « Cappitullation accordée par les gouverneur, cappitaines et soldatz de Mariembourg », lors de la reddition de la ville en la puissance du roi.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e555');">32 Lettre de FRANÇOIS « DE MONTMORENCY,... à monseigneur le duc de Montmorency,... De Sainct Omer, ce dernier de juing 1553 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e568');">33 Lettre d'ANNE DE « MONTMORENCY,... à monseigneur de Humyeres,... De Challons sur Saonne, le XXe de juillet 1548 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e584');">34 Lettre de « l'advoyer, petit et grand conseil de la ville et canton de Soleurre en Suisse... à monseigneur le duc de Mommerancy,... De Solleure, ce XIIIIe jour de novembre 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049609_d0e600');">35 Lettre du baron DE « SAINT BLANCART,... à monseigneur le grant maistre... De Marselle, le XVIIIe jour de may ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

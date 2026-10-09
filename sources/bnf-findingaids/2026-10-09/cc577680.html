@@ -1,0 +1,520 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057768">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057768">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4718
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057768_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768">Français 4718 • Anc. 9540 • Recueil de pièces originales et de copies concernant l'histoire de France, durant l'année 1592.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e294">Fol. 1 • 1 Lettre de « CHARLES, cardinal DE BOURBON »-CONDE, au duc de Nevers. « De Louviers, ce 16 janvier 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e302">2 « Recueil de la guerre de Piedmont pour Monseigneur et Mme la duchesse de Nyvernoys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e337">Fol. 6 et suiv • 3-5 Lettres en chiffre, dont la seconde est signée : « VINCENZIO BADALOCCHIO ». 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e359">Fol. 12 • 6 Lettre, en partie autographe, de J., baron DE « DINTEVILLE », au duc de Nevers. « Langres, 5 juillet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e367">Fol. 13 • 7 Lettre de CHARLES DE PERUSSE « DES CARS, e[vêque], duc de Lengres », au duc de Nevers. 11 juillet 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e375">Fol. 14 • 8 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. Langres, 13 juillet 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e383">Fol. 15 • 9 Lettre de « VINCENT DI BERNARDINI » au duc de Nevers. « De Lion, le 16 julliet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e391">Fol. 17 • 10 Lettre en chiffre, avec déchiffrement, de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 17 julliet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e399">Fol. 18 • 11 Lettre, signée : « POSSE », adressée au duc de Nevers. « Compiegne, 17 juillet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e407">Fol. 19 • 12 Lettre de « HENRY DE LA TOUR [duc DE BOUILLON] à Mr d'Ambly,... A Sedan, ce 20 juillet 1592 ». Copie collationnée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e418">Fol. 20 • 13 Ordre du « baron DE NEUFVIZ, lieutenant general pour [le] duc de Nemours es pays et duché de Bourbonnoys... aux habitans de la parroisse de Gimoilles », d'apporter à « Sancoings les deniers des tailles ». Sancoins, 20 juillet 1592. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e426">Fol. 21 • 14 Lettre de J., baron DE DINTEVILLE, au duc de Nevers. Langres, 8 juillet 1592. Chiffre et déchiffrement.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e434">Fol. 22 • 15 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, « à Mrs de Langres... 24 juillet 1593 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e445">Fol. 24 • 16 Lettre de CHARLES D' « HUMYERES » au duc de Nevers. « Ce 26 juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e456">Fol. 26 • 17 Préparatifs pour le siège d'Épernay par le roi Henri IV : — Ordre de campement des troupes, « du dimanche 26 juillet 1592 », et du lendemain 27.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e470">Fol. 27 • 18 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à « Mrs de Langres... De Leschelle, ce 27 aoust 1592 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e481">Fol. 29 • 19 Lettre, signée : « POSSE », adressée au duc de Nevers. « A Sedan, ce 27 juillet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e494">Fol. 31 • 20 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « Langres, 28 juillet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e502">Fol. 32 • 21 Lettre « de Mr DE LA CHASTRE » au duc de Mayenne. « Orleans, 29 juillet 1592 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e513">Fol. 34 • 22 Lettre de « C[LAUDE] DE VERGY,... conte DE CHAMPLITE », au duc de Nevers. « Gray, 30 juillet 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e521">23 « Memoire de Mr DE CHANLEMY, du mois d'aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e540">Fol. 38 • 24 Lettre, signée : « POSSE », adressée au duc de Nevers. « A Sedan, ce 4 aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e548">Fol. 39 • 25 Acte par lequel « BALTAZAR GOBELIN », trésorier général de l'épargne, déclare consentir à l'entérinement de lettres du roi Henri IV en faveur de Charles de Birague, capitaine de 50 hommes d'armes. « Donné à Mante, le 4 juillet 1591 ». Copie collationnée.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e556">Fol. 40 • 26 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. Langres, 5 août 1592.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e564">Fol. 40 • Un post-scriptum, en chiffre avec déchiffrement, concerne la rançon promise par l'abbé de St-Antoine de Viennois, fait prisonnier par les gens du roi à Champlitte, en Franche-Comté. Cet abbé de St-Antoine de Viennois était de la maison « de Lanjac », lit-on fol. 12 du présent ms., et, dit Dinteville (ibid, « la court de parlement de Dole s'en veulle remuer, pour estre chose qu'i veulle atribuer contre la neutralité ». Voir aussi fol. 43.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e579">Fol. 41 • 27 Lettre, signée : « DAMPIERRE », adressée au duc de Nevers. 7 août 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e587">Fol. 43 • 28 « Coppie de la lectre escrite au roy par Mr DE DINTEVILLE,... De Lengres, le 8 aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e598">Fol. 44 • 29 Lettre, signée : « DE BROSSE », au duc de Nevers. « Mouzon, 12 aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e614">Fol. 46 • 30 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « Langres, 12 aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e622">Fol. 47 • 31 Lettre de « VINCENT DI BERNARDINI » au duc de Nevers. Lyon, 11 août 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e633">Fol. 49 • 32 Lettre, signée : « BEAUVOIR LA NOCLE », adressée au duc de Nevers. « De Londres, ce 21 aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e641">Fol. 51 • 33 « Lettre du roy... HENRY [IV] à Mr de Dinteville,... Du camp devant Provins, le 25 aoust 1592 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e652">Fol. 51 • 34 « Copie de lectre de Mr DE GESVRE à M. de Dinteville,... Du camp devant Provins, le dernier aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e663">Fol. 52 • 35 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 26 aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e671">Fol. 53 • 36 « Copie d'arrest de la chambre des comptes sur la veriffication du don des 150,000 escus », don accordé par le roi Henri III pour le mariage de Henri d'Orléans, duc de Longueville, avec Catherine de Gonzague et de Clèves, fille aînée de L. de Gonzague, duc de Nevers, et ratifié par le roi Henri IV, le 25 mars 1592. Tours, 28 août 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e679">Fol. 55 • 37 « Copie de lectre du roy HENRY [IV] à Mr de Dinteville, du 30 aoust 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e690">Fol. 56 • 38 Lettre de CHARLES DE GONZAGUE et DE CLEVES à sa mère, Henriette de Clèves, duchesse de Nevers. « Escrit dessus le corselet de Mr d'Oysonville, le 12 septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e701">Fol. 57 • 39 Lettre de J., baron DE DINTEVILLE, au duc de Nevers. « De Langres, le 3 septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e709">Fol. 58 • 40 « Lectre de Mr le mareschal D'AUMONT à Mr de Dinteville,... Au camp d'Ervy, le 3 septembre 1592 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e723">Fol. 59 • 41 Lettre de « P. DE THOMASSIN » au duc de Nevers. « De Chaalons, le 5 septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e731">Fol. 60 • 42 Lettre du Sr DE « LA ROCHEPOT » au duc de Nevers. « Montmiral, ce 8 septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e747">Fol. 62 et 63 • 43-44 Lettres de J., baron DE « DINTEVILLE », au duc de Nevers. Langres, 13 septembre 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e755">Fol. 64 • 45 « Articles postillez de la responce de Mme [la duchesse DE NEVERS] et renvoyez à Mr de Champlemys ». Ces articles, dont nous n'avons ici que la copie, sont au nombre de 15 et portent pour titre : « Articles de la composition entre les Srs ... » ; ils se terminent par la mention : « Faict et deliberé au bureau de l'hostel de ville d'Auxerre, au conseil y estably, le 14 septembre 1592. Signé : COGNARD ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e772">Fol. 66 • 46 Lettre des habitants de Langres au roi Henri IV. « De Lengres, ce 17 septembre 1593 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e780">Fol. 67 • 47 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 17 septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e788">Fol. 68 • 48 Lettre de « N [ICOLAS] BRULART,... Sr DE SILLERY,... à Monseigneur le duc de Nivernois et de Rethelois,... De Soleurre, ce 21 septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e799">Fol. 69 • 49 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 23 septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e807">Fol. 70 • 50 « Extraict du conseil tenu à Nevers, en la presence de Mme [la duchesse de Nevers], Mrs de Champlemys, de Champloiseau, de Montholon, Bolacre, de Romenay et Marchant, le 24 septembre 1592, sur la proposition faicte par M. de Schomberg de se faire engager du domaine... pour la somme de 80,000 escutz et tel que l'on le vouldra à la bienseance de Madame, pour aprez eschanger led. domaine engagé pour 80,000 escutz avec la terre de Lesparre, estimée seulement 60,000 escutz ». Cet extrait est signé : « DE LACHASSAIGNE ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e821">Fol. 71 • 51 « Brief discours de ce qui s'est passé en Piedmont, despuis le 26 septembre, que l'armée du roy, commandée par Mr de Lesdiguieres, y est entrée, jusques au 5 octobre 1592 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e832">Fol. 73 • 52 Lettre de « Mr DE LA CHAPPELLE, F. DES URSINS,... à Monseigneur le duc de Nivernois et de Retelois,... De Neuilly, ce 27 septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e848">Fol. 75 • 53 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « Langres, dernier septembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e859">54 Memoire.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e880">Fol. 79 • 55 Lettre d' « ANNE D'EST », duchesse douairière DE GUISE et DE NEMOURS, au duc de Nevers. « De Paris, ce 3 octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e888">Fol. 81 • 56 Lettre de « C[HARLES] DES CARS, e[vêque], duc de Lengres », au duc de Nevers. « De Mussy, ce 6 octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e899">Fol. 83 • 57 Ordonnance du roi HENRI IV pour « l'entretenement de l'armée de Champaigne... Faict au camp devant Rouen, le 4 avril 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e907">Fol. 85 • 58 Accord entre « les Srs de Guionnelle et habitans de Chaumont, d'une part, et les Srs conte et habitans de Chastelvillain, d'autre part... 7 octobre 1592 ». Copie faite « pour Monseigneur de Nevers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e921">Fol. 87 • 59 Copie d'une lettre de L. DE GONZAGUE, duc DE NEVERS, aux membres de son conseil et de sa chambre des comptes à Nevers, concernant des pièces à lui apportées par « Me Anthoine Coquille ». Paris, 11 avril 1582. Copie collationnée par BARRE, notaire royal en ladite chambre, le 10 octobre 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e932">Fol. 88 • 60 Lettre du comte DE CHATEAUVILLAIN, « DADIACETO », au duc de Nevers. « A Chasteauvillain, le 11 octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e940">Fol. 89 • 61 Lettre de « P. DE THOMASSIN » au duc de Nevers. « A Chaalons, ce 11 octobre 1592 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e948">Fol. 90 • 62 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 12 octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e956">Fol. 91 • 63 Requête des habitants de la ville et élection de Clamecy au roi Henri IV, pour être déchargés des tailles qu'ils restent devoir sur l'année 1592 et sur les années précédentes. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e967">Fol. 91 • 64 Ordonnance du roi HENRI IV, sur ladite requête. S. Denis, 17 octobre 1592. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e978">Fol. 93 • 65 Lettre, signée : « Frere ROGIER GYRARD, prieur des freres Augustins de Paris », au duc de Nevers. « Du couvent des Augustins, ce 12 octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e986">Fol. 94 • 66 Lettre de « VINCENT DI BERNARDINI » au duc de Nevers. « De Lion, le 13 octobre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e994">Fol. 96 • 67 Lettre de « C[HARLES] DES CARS, e[vêque], duc de Lengres », au duc de Nevers. « De Mussy, ce 17 octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1002">Fol. 97 • 68 « Tableau des marchandises et denrées desquelles le roy permect le commerce libre, qui seront conduictes à Paris et aultres villes rebelles, tant par eaue que par terre par la ville de Corbeil, aux condictions cy apres declarées... Faict au conseil du roy, tenu à S. Denis en France, le 20 octobre 1592 ». Copie collationnée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1010">Fol. 101 et 102 • 69-70 Lettres de J., baron DE « DINTEVILLE », au duc de Nevers. 23 et 24 octobre 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1018">Fol. 103 • 71 Lettre de L. DE GONZAGUE, duc DE NEVERS, au roi Henri IV. « De Nogent, le 30 octobre 1592 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1026">Fol. 104 • 72 Lettre, signée : « DE CARDONE », au duc de Nevers. « De vostre Anglure, le 31 octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1039">Fol. 105 • 73 Copie d'une lettre de CHARLES DE LORRAINE, duc DE MAYENNE, au roi d'Espagne Philippe II. « De Paris, le 26e nov. 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1050">Fol. 107 • 74 Lettre du roi HENRI IV à « Mr de Thomassin, commandant pour [son] service à Chaalons... A S. Denis, le 3 novembre 1592 ». Copie collationnée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1061">Fol. 109 • 75 Lettre de L. DE GONZAGUE, duc DE NEVERS, au Sr de Dinteville. St-Denis, 6 novembre 1592. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1075">Fol. 111 • 76 Lettre du duc DE « GUYSE », CHARLES DE LORRAINE, à « M. Pelissier,... Au camp de S. Falle, le 8 novanbre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1083">Fol. 113 • 77 Lettre de L. DE GONZAGUE, duc DE NEVERS, « à Mr de Brosses,... De S. Denis, ce 4 novembre 1592 ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1094">Fol. 114 • 78 Lettre, signée : « BRULART », au duc de Nevers. 8 novembre 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1102">Fol. 116 • 79 Lettre du comte DE « CHAULNES » au duc de Nevers. « Noyon, ce 9 novembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1110">Fol. 117 • 80 Lettre de « P. DE THOMASSIN » au duc de Nevers. « A Chaalons, ce 13 novembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1118">Fol. 118 • 81 Lettre de « N [ICOLAS] B [RULART]... à Monseigneur le duc de Nivernois,... De Soleure, ce 16 novembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1129">Fol. 119 • 82 Lettre de « P. DE THOMASSIN » au duc de Nevers. « De Chaalons, ce 17 novembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1137">Fol. 120 • 83 Lettre, signée : « ROULLY », au duc de Nevers. « De Lengres, ce 10 novembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1145">Fol. 121 • 84 Lettre de « P. DE THOMASSIN » au duc de Nevers. « Chalons, 28 (?) aould 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1153">Fol. 122 • 85 Lettre, signée : « GIVRY », au duc de Nevers. « Du 26e n » ovembre (?) 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1164">Fol. 124 • 86 « Copie de brevet pour Mr de Tannerre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1185">Fol. 125 • 87 Lettre, signée : « GIVRY », au duc de Nevers. « De Chastres, le 25 nov. » 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1193">Fol. 127 • 88 Arrêt des « gens des comptes du roy tenans la court des monnoies » à Tours, concernant l'enregistrement de lettres du roi Henri IV ordonnant la translation à Nevers de la monnaie établie à Bourges. Tours, 27 novembre 1592. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1201">Fol. 128 • 89 « Coppie d'arrest et commission de la transferation des eslections de Gyen et Clamecy », de la généralité d'Orléans (transférée à Blois) « en la generalité de Sanxerre », et de l'élection de Châtillon-sur-Indre, de la généralité de Bourges en la généralité d'Orléans. Étampes, 22 novembre 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1209">Fol. 130 • 90 « Coppie d'arrest du conseil », concernant le même objet. Étampes, 24 novembre 1592.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1217">Fol. 131 • 91 Lettre de « HENRY D'ORLEANS », duc DE LONGUEVILLE, au duc de Nevers. « Escrit à Corbie, le 5 decembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1225">Fol. 133 • 92 Lettre de « ROGIER DE BELLEGARDE » au duc de Nevers. « A Louviers, ce 6 déc ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1233">Fol. 134 • 93 « Estat de la vaisselle d'argent de Monseigneur [le duc de Nevers], qui a esté vendue... au mois de nov. 90... par son commandement, pour le payement des Suisses du regiment de Souleurre, qui estoient avec luy en Champaigne ». Minute.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1250">94-95 Lettres de LOUIS DE GONZAGUE.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1256">Fol. 135 • 94 « à... Mr le general... de Corbet,... De Chartres, ce 19 decembre 1592 ». Copie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1270">Fol. 135 • 95 à « Mrd'Arquien ». Même date. Copie.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1283">Fol. 136 • 96 Lettre de « HENRY D'ORLEANS, [duc] DE LONGUEVILLE », au « duc de Nevers,... Ce 29 decembre 1592 ». St Valery ?.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1294">Fol. 137 • 97 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « A Lengres, ce 29 decembre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057768_d0e1302">Fol. 138 • 98 Lettre adressée de Paris, le 31 décembre 1592, au commandeur « de Dyou, ambassadeur de France à Rome » pour la Ligue.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4718 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc577680&Cote=Français 4718&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4718 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9540</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant l'histoire de France, durant l'année 1592.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Le fol. 11 est blanc. Il y a un onglet entre les fol. 138 et 139.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Anglure, Anne d', baron de Givry. • Actes et lettres.</p>
+<p>Aumont, Jean d', maréchal de France, comte de Châteauroux. • Actes et lettres.</p>
+<p>Beauvoir-la Nocle, Jean de la Fin, sieur de. • Lettres.</p>
+<p>Bellegarde, Roger II de Saint-Lary, duc de. • Lettres.</p>
+<p>Bernardini, Vincent de. • Lettres.</p>
+<p>Bouillon, Henri de La Tour d'Auvergne, duc de, maréchal de France. • Actes et lettres.</p>
+<p>Bourbon, Charles de [Charles X], cardinal. • Actes et lettres.</p>
+<p>Brûlart, Nicolas, marquis de Sillery, chancelier de France. • Actes et lettres.</p>
+<p>Champagne. • Notes (1592).</p>
+<p>Champlemys, De la Rivière de, bailli de Nivernais. • Mémoire.</p>
+<p>Clamecy.</p>
+<p>Commerce. • Denrées, circulation.</p>
+<p>Corbeil.</p>
+<p>Dadjacete, Scipion, comte de Châteauvillain, duc d'Atri.</p>
+<p>Des Cars, Charles de Peyrusse-, évêque de Poitiers, puis de Langres. • Lettres.</p>
+<p>Dinteville, Joachim de Jaucourt, baron de. • Lettres.</p>
+<p>Dornecy. • Prise (1592).</p>
+<p>Épernay. • Siège (1592).</p>
+<p>France. • Pitorre (1592).</p>
+<p>Gesvres, Louis Potier, marquis de. • Lettres.</p>
+<p>Girard, Roger, prieur des Augustins de Paris. • Lettre (1592).</p>
+<p>Gobelin, Balthazar, trésorier de l'Épargne. • Actes.</p>
+<p>Gonzague, Famille de.</p>
+<p>Guerre. • Pièces (1592).</p>
+<p>Guise, Anne d'Este, duc de Nemours et de. • Actes et lettres.</p>
+<p>Guise, Charles IV de Lorraine, duc de. • Actes et lettres.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>Humières, Charles d', marquis d'Ancre. • Lettres.</p>
+<p>Inventaires. • Nevers (Maison de).</p>
+<p>La Châtre, Claude de, baron de Maisonfort, maréchal de France. • Actes et lettres.</p>
+<p>Langres. • Échevinage, lettres et actes des échevins.</p>
+<p>Lesparre. • Pièces.</p>
+<p>Ligue, La. • Notes et pièces diverses.</p>
+<p>Longueville, Henri Ier d'Orléans, duc de. • Lettres.</p>
+<p>Longueville, Henri Ier d'Orléans, duc de. • Notes et pièces diverses.</p>
+<p>Mayenne, Charles de Lorraine, marquis, puis duc de. • Actes et lettres.</p>
+<p>Neufvy des Barres, Louis de. • Acte.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Maison, inventaire de ses meubles.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Picot, Louis, comte de Dampierre. • Lettres.</p>
+<p>Piémont. • Gouvernement et gouverneurs, de 1592.</p>
+<p>Possé de Brosse. • Lettres.</p>
+<p>Rouilly. • Lettres.</p>
+<p>Tannerre, De. • Brevet.</p>
+<p>Thomassin, P. de, gouverneur de Châlons. • Lettres.</p>
+<p>Traisnel, François Jouvenel des Ursins, marquis de. • Lettres.</p>
+<p>Vergy, Claude de, comte de Champlitte. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e294');">1 Lettre de « CHARLES, cardinal DE BOURBON »-CONDE, au duc de Nevers. « De Louviers, ce 16 janvier 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e302');">2 « Recueil de la guerre de Piedmont pour Monseigneur et Mme la duchesse de Nyvernoys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e337');">3-5 Lettres en chiffre, dont la seconde est signée : « VINCENZIO BADALOCCHIO ». 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e359');">6 Lettre, en partie autographe, de J., baron DE « DINTEVILLE », au duc de Nevers. « Langres, 5 juillet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e367');">7 Lettre de CHARLES DE PERUSSE « DES CARS, e[vêque], duc de Lengres », au duc de Nevers. 11 juillet 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e375');">8 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. Langres, 13 juillet 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e383');">9 Lettre de « VINCENT DI BERNARDINI » au duc de Nevers. « De Lion, le 16 julliet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e391');">10 Lettre en chiffre, avec déchiffrement, de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 17 julliet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e399');">11 Lettre, signée : « POSSE », adressée au duc de Nevers. « Compiegne, 17 juillet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e407');">12 Lettre de « HENRY DE LA TOUR [duc DE BOUILLON] à Mr d'Ambly,... A Sedan, ce 20 juillet 1592 ». Copie collationnée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e418');">13 Ordre du « baron DE NEUFVIZ, lieutenant general pour [le] duc de Nemours es pays et duché de Bourbonnoys... aux habitans de la parroisse de Gimoilles », d'apporter à « Sancoings les deniers des tailles ». Sancoins, 20 juillet 1592. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e426');">14 Lettre de J., baron DE DINTEVILLE, au duc de Nevers. Langres, 8 juillet 1592. Chiffre et déchiffrement.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e434');">15 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, « à Mrs de Langres... 24 juillet 1593 ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e445');">16 Lettre de CHARLES D' « HUMYERES » au duc de Nevers. « Ce 26 juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e456');">17 Préparatifs pour le siège d'Épernay par le roi Henri IV : — Ordre de campement des troupes, « du dimanche 26 juillet 1592 », et du lendemain 27.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e470');">18 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à « Mrs de Langres... De Leschelle, ce 27 aoust 1592 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e481');">19 Lettre, signée : « POSSE », adressée au duc de Nevers. « A Sedan, ce 27 juillet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e494');">20 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « Langres, 28 juillet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e502');">21 Lettre « de Mr DE LA CHASTRE » au duc de Mayenne. « Orleans, 29 juillet 1592 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e513');">22 Lettre de « C[LAUDE] DE VERGY,... conte DE CHAMPLITE », au duc de Nevers. « Gray, 30 juillet 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e521');">23 « Memoire de Mr DE CHANLEMY, du mois d'aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e540');">24 Lettre, signée : « POSSE », adressée au duc de Nevers. « A Sedan, ce 4 aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e548');">25 Acte par lequel « BALTAZAR GOBELIN », trésorier général de l'épargne, déclare consentir à l'entérinement de lettres du roi Henri IV en faveur de Charles de Birague, capitaine de 50 hommes d'armes. « Donné à Mante, le 4 juillet 1591 ». Copie collationnée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e556');">26 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. Langres, 5 août 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e579');">27 Lettre, signée : « DAMPIERRE », adressée au duc de Nevers. 7 août 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e587');">28 « Coppie de la lectre escrite au roy par Mr DE DINTEVILLE,... De Lengres, le 8 aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e598');">29 Lettre, signée : « DE BROSSE », au duc de Nevers. « Mouzon, 12 aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e614');">30 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « Langres, 12 aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e622');">31 Lettre de « VINCENT DI BERNARDINI » au duc de Nevers. Lyon, 11 août 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e633');">32 Lettre, signée : « BEAUVOIR LA NOCLE », adressée au duc de Nevers. « De Londres, ce 21 aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e641');">33 « Lettre du roy... HENRY [IV] à Mr de Dinteville,... Du camp devant Provins, le 25 aoust 1592 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e652');">34 « Copie de lectre de Mr DE GESVRE à M. de Dinteville,... Du camp devant Provins, le dernier aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e663');">35 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 26 aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e671');">36 « Copie d'arrest de la chambre des comptes sur la veriffication du don des 150,000 escus », don accordé par le roi Henri III pour le mariage de Henri d'Orléans, duc de Longueville, avec Catherine de Gonzague et de Clèves, fille aînée de L. de Gonzague, duc de Nevers, et ratifié par le roi Henri IV, le 25 mars 1592. Tours, 28 août 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e679');">37 « Copie de lectre du roy HENRY [IV] à Mr de Dinteville, du 30 aoust 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e690');">38 Lettre de CHARLES DE GONZAGUE et DE CLEVES à sa mère, Henriette de Clèves, duchesse de Nevers. « Escrit dessus le corselet de Mr d'Oysonville, le 12 septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e701');">39 Lettre de J., baron DE DINTEVILLE, au duc de Nevers. « De Langres, le 3 septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e709');">40 « Lectre de Mr le mareschal D'AUMONT à Mr de Dinteville,... Au camp d'Ervy, le 3 septembre 1592 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e723');">41 Lettre de « P. DE THOMASSIN » au duc de Nevers. « De Chaalons, le 5 septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e731');">42 Lettre du Sr DE « LA ROCHEPOT » au duc de Nevers. « Montmiral, ce 8 septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e747');">43-44 Lettres de J., baron DE « DINTEVILLE », au duc de Nevers. Langres, 13 septembre 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e755');">45 « Articles postillez de la responce de Mme [la duchesse DE NEVERS] et renvoyez à Mr de Champlemys ». Ces articles, dont nous n'avons ici que la copie, sont au nombre de 15 et portent pour titre : « Articles de la composition entre les Srs ... » ; ils se terminent par la mention : « Faict et deliberé au bureau de l'hostel de ville d'Auxerre, au conseil y estably, le 14 septembre 1592. Signé : COGNARD ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e772');">46 Lettre des habitants de Langres au roi Henri IV. « De Lengres, ce 17 septembre 1593 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e780');">47 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 17 septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e788');">48 Lettre de « N [ICOLAS] BRULART,... Sr DE SILLERY,... à Monseigneur le duc de Nivernois et de Rethelois,... De Soleurre, ce 21 septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e799');">49 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 23 septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e807');">50 « Extraict du conseil tenu à Nevers, en la presence de Mme [la duchesse de Nevers], Mrs de Champlemys, de Champloiseau, de Montholon, Bolacre, de Romenay et Marchant, le 24 septembre 1592, sur la proposition faicte par M. de Schomberg de se faire engager du domaine... pour la somme de 80,000 escutz et tel que l'on le vouldra à la bienseance de Madame, pour aprez eschanger led. domaine engagé pour 80,000 escutz avec la terre de Lesparre, estimée seulement 60,000 escutz ». Cet extrait est signé : « DE LACHASSAIGNE ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e821');">51 « Brief discours de ce qui s'est passé en Piedmont, despuis le 26 septembre, que l'armée du roy, commandée par Mr de Lesdiguieres, y est entrée, jusques au 5 octobre 1592 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e832');">52 Lettre de « Mr DE LA CHAPPELLE, F. DES URSINS,... à Monseigneur le duc de Nivernois et de Retelois,... De Neuilly, ce 27 septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e848');">53 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « Langres, dernier septembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e859');">54 Memoire.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e880');">55 Lettre d' « ANNE D'EST », duchesse douairière DE GUISE et DE NEMOURS, au duc de Nevers. « De Paris, ce 3 octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e888');">56 Lettre de « C[HARLES] DES CARS, e[vêque], duc de Lengres », au duc de Nevers. « De Mussy, ce 6 octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e899');">57 Ordonnance du roi HENRI IV pour « l'entretenement de l'armée de Champaigne... Faict au camp devant Rouen, le 4 avril 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e907');">58 Accord entre « les Srs de Guionnelle et habitans de Chaumont, d'une part, et les Srs conte et habitans de Chastelvillain, d'autre part... 7 octobre 1592 ». Copie faite « pour Monseigneur de Nevers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e921');">59 Copie d'une lettre de L. DE GONZAGUE, duc DE NEVERS, aux membres de son conseil et de sa chambre des comptes à Nevers, concernant des pièces à lui apportées par « Me Anthoine Coquille ». Paris, 11 avril 1582. Copie collationnée par BARRE, notaire royal en ladite chambre, le 10 octobre 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e932');">60 Lettre du comte DE CHATEAUVILLAIN, « DADIACETO », au duc de Nevers. « A Chasteauvillain, le 11 octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e940');">61 Lettre de « P. DE THOMASSIN » au duc de Nevers. « A Chaalons, ce 11 octobre 1592 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e948');">62 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « De Langres, le 12 octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e956');">63 Requête des habitants de la ville et élection de Clamecy au roi Henri IV, pour être déchargés des tailles qu'ils restent devoir sur l'année 1592 et sur les années précédentes. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e967');">64 Ordonnance du roi HENRI IV, sur ladite requête. S. Denis, 17 octobre 1592. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e978');">65 Lettre, signée : « Frere ROGIER GYRARD, prieur des freres Augustins de Paris », au duc de Nevers. « Du couvent des Augustins, ce 12 octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e986');">66 Lettre de « VINCENT DI BERNARDINI » au duc de Nevers. « De Lion, le 13 octobre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e994');">67 Lettre de « C[HARLES] DES CARS, e[vêque], duc de Lengres », au duc de Nevers. « De Mussy, ce 17 octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1002');">68 « Tableau des marchandises et denrées desquelles le roy permect le commerce libre, qui seront conduictes à Paris et aultres villes rebelles, tant par eaue que par terre par la ville de Corbeil, aux condictions cy apres declarées... Faict au conseil du roy, tenu à S. Denis en France, le 20 octobre 1592 ». Copie collationnée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1010');">69-70 Lettres de J., baron DE « DINTEVILLE », au duc de Nevers. 23 et 24 octobre 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1018');">71 Lettre de L. DE GONZAGUE, duc DE NEVERS, au roi Henri IV. « De Nogent, le 30 octobre 1592 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1026');">72 Lettre, signée : « DE CARDONE », au duc de Nevers. « De vostre Anglure, le 31 octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1039');">73 Copie d'une lettre de CHARLES DE LORRAINE, duc DE MAYENNE, au roi d'Espagne Philippe II. « De Paris, le 26e nov. 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1050');">74 Lettre du roi HENRI IV à « Mr de Thomassin, commandant pour [son] service à Chaalons... A S. Denis, le 3 novembre 1592 ». Copie collationnée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1061');">75 Lettre de L. DE GONZAGUE, duc DE NEVERS, au Sr de Dinteville. St-Denis, 6 novembre 1592. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1075');">76 Lettre du duc DE « GUYSE », CHARLES DE LORRAINE, à « M. Pelissier,... Au camp de S. Falle, le 8 novanbre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1083');">77 Lettre de L. DE GONZAGUE, duc DE NEVERS, « à Mr de Brosses,... De S. Denis, ce 4 novembre 1592 ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1094');">78 Lettre, signée : « BRULART », au duc de Nevers. 8 novembre 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1102');">79 Lettre du comte DE « CHAULNES » au duc de Nevers. « Noyon, ce 9 novembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1110');">80 Lettre de « P. DE THOMASSIN » au duc de Nevers. « A Chaalons, ce 13 novembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1118');">81 Lettre de « N [ICOLAS] B [RULART]... à Monseigneur le duc de Nivernois,... De Soleure, ce 16 novembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1129');">82 Lettre de « P. DE THOMASSIN » au duc de Nevers. « De Chaalons, ce 17 novembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1137');">83 Lettre, signée : « ROULLY », au duc de Nevers. « De Lengres, ce 10 novembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1145');">84 Lettre de « P. DE THOMASSIN » au duc de Nevers. « Chalons, 28 (?) aould 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1153');">85 Lettre, signée : « GIVRY », au duc de Nevers. « Du 26e n » ovembre (?) 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1164');">86 « Copie de brevet pour Mr de Tannerre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1185');">87 Lettre, signée : « GIVRY », au duc de Nevers. « De Chastres, le 25 nov. » 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1193');">88 Arrêt des « gens des comptes du roy tenans la court des monnoies » à Tours, concernant l'enregistrement de lettres du roi Henri IV ordonnant la translation à Nevers de la monnaie établie à Bourges. Tours, 27 novembre 1592. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1201');">89 « Coppie d'arrest et commission de la transferation des eslections de Gyen et Clamecy », de la généralité d'Orléans (transférée à Blois) « en la generalité de Sanxerre », et de l'élection de Châtillon-sur-Indre, de la généralité de Bourges en la généralité d'Orléans. Étampes, 22 novembre 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1209');">90 « Coppie d'arrest du conseil », concernant le même objet. Étampes, 24 novembre 1592.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1217');">91 Lettre de « HENRY D'ORLEANS », duc DE LONGUEVILLE, au duc de Nevers. « Escrit à Corbie, le 5 decembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1225');">92 Lettre de « ROGIER DE BELLEGARDE » au duc de Nevers. « A Louviers, ce 6 déc ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1233');">93 « Estat de la vaisselle d'argent de Monseigneur [le duc de Nevers], qui a esté vendue... au mois de nov. 90... par son commandement, pour le payement des Suisses du regiment de Souleurre, qui estoient avec luy en Champaigne ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1250');">94-95 Lettres de LOUIS DE GONZAGUE.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1283');">96 Lettre de « HENRY D'ORLEANS, [duc] DE LONGUEVILLE », au « duc de Nevers,... Ce 29 decembre 1592 ». St Valery ?.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1294');">97 Lettre de J., baron DE « DINTEVILLE », au duc de Nevers. « A Lengres, ce 29 decembre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057768_d0e1302');">98 Lettre adressée de Paris, le 31 décembre 1592, au commandeur « de Dyou, ambassadeur de France à Rome » pour la Ligue.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

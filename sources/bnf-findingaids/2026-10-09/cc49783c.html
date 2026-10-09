@@ -1,0 +1,515 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049783">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049783">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3069-3380</div>
+					<h1>Français 3321
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049783_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783">Français 3321 • Anc. 8824 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e121">1 « Instruction » de « CATERINE [DE MEDICIS]... à monsieur de Matignon », pour « requerir, en particullier et sans assemblée d'estatz, ceulx de l'Eglise, de la noblesse et du tiers estat du... païs de Normandie, d'accorder la somme de cent mil livres tournois... oultre et pardessus les tailles... ordinaires... Faict à Paris, le XVIe jour de jung 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e130">Fol. 3 • 2 Lettre de « HENRY [III]... à monseigneur de Matignon,... Escript à Lyon, le XIme jour de septembre 1574 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e141">Fol. 4 • 3 Copie de « lectres du roy... HENRY [III]... à monseigneur [l'abbé] de Cisteaux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e159">Fol. 4 • 4 Copie de « lectres de monseigneur le cardinal... CHARLES DE LORRAYNE,... à monseigneur de Cisteaux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e177">5 Copie d'une lettre de « monseigneur de Cisteaux [NICOLAS BOUCHERAT] au cardinal de Lorrayne... De Viterbe ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e183">Fol. 5 • 6 Copie d'une « lectre de monseigneur de Cisteaux au roy » Henri III.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e196">Fol. 6 • 7 Copie d'une lettre de « monseigneur de Cisteaux à la roine mere » Catherine de Médicis.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e204">Fol. 7 • 8 Copie d'une lettre de « monseigneur de Cisteaux au cardinal de Lorraine ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e212">Fol. 9 • 9 Copie d'une lettre de « monseigneur de Cisteaux à monsieur [Nicolas de Neuville, Sr] de Villeroy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e223">Fol. 10 • 10 Copie d'une lettre de « monsieur de Cisteaux au roy » Henri III.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e231">Fol. 10 • 11 Copie d'une lettre de « monseigneur de Cisteaux à monseigneur d'Angers », Guillaume V Ruzé.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e239">12 Copie d'une lettre de « monseigneur de Cisteaux à monseigneur le cardinal de Guyse », Louis de Lorraine.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e245">Fol. 11 • 13 Copie d'une lettre de « monseigneur de Cisteaux à monseigneur de Morvillier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e253">14 Copie d'une lettre de « monsieur de Cisteaux à la royne », Catherine de Médicis.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e259">Fol. 12 • 15 Copie d'une lettre de « monseigneur de Cisteaux au roy » Henri III.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e267">16 Copie d'une lettre de « monseigneur de Cisteaux à monseigneur le cardinal de Guyse ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e273">Fol. 14 • 17 Copie d'une « lectre du roy [HENRI III] à monseigneur de Lysle, ambassadeur en Levant... De Lion ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e281">18 Copie d'une « lectre du roy [HENRI III] pour l'assemblée des estas de Languedoc et Villenefve les Avignon... Donné à Lion, le III novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e287">19 Copie d'une « lectre du roy [HENRI III] au sieur André [de Birague]... Donné à Lion, le VIII octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e293">Fol. 15 • 20 Copie d'une « lectre du roy [HENRI III] à monsieur de Savoie », Emmanuel-Philibert.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e301">21 Copie d'une lettre du « roy [HENRI III] à monsieur de Savoye,... Donné à Lion ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e307">22 Copie d'une « lectre du roy [HENRI III] à monseigneur le marechal Dampville », Henri I de Montmorency.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e313">Fol. 16 • 23 Copie d'une « lectre de la royne... CATHERINE [DE MEDICIS]... à monseigneur de Gordes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e321">Fol. 17 • 24 « Roolle des conseillers du conseil privé du roy [Henri III] depuys son retour de Pollongne... Faict à Lyon, le XVIIe jour de septembre M.V.C. LXXIIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e335">Fol. 19 • 25 « Compte de la recepte et despence faicte par... Arnoul,... Du Ferrier,... conseiller du roy en son privé conseil et son ambassadeur à Venize, des deniers que la royne, mere du roy [Catherine de Médicis], regente... a envoiez par deça pour le service de Sa Majesté... Faict à Venize, ce dernier jour de juillet mil V.C.LXXIIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e351">Fol. 23 • 26 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon oncle monsieur de Monpensier [Louis de Bourbon]... A Londres, le XVIe janvier... 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e362">Fol. 25 • 27 Lettre de « CHARLES, caral DE BOURBON,... à monseigneur le duc de Nevers,... De Grenoble, ce IIIIe de aust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e381">Fol. 28 • 28 Lettre de « CHARLES, caral DE BOURBON,... à Mr le duc de Nivernoys,... De Grenoble, ce XXIIIe de juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e398">Fol. 30 • 29 Lettre de « HENRY [III]... à mon oncle le duc de Montpencier,... Escript à Dieppe, le XXVIIIe jour de juing 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e409">Fol. 34 • 30 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon oncle, monsieur de Montpansier,... A Anvers, le XXe jour de fevrier... 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e420">Fol. 35 • 31 « Instruction » de « HENRY [III]... à monseigneur le duc de Montpensier, pair de France, gouverneur et lieutenant general pour Sa Majesté en Bretaigne... Faict à Paris, le deuxiesme jour de septembre 1576 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e433">Fol. 38 • 32 Lettre des « maire, eschevins et pairs de La Rochelle... à monseigneur le duc de Montpensier,... De La Rochelle, ce premier jour de febvrier 1578 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e446">Fol. 40 • 33 « Articles accordez entre messieurs de... La Hunodaye,... et de Fontaines pour le deppartement de la lieutenance generalle du gouvernement de Bretaigne, par l'advis de monseigneur le duc de Montpencier,... Loys de Bourbon,... Faict à Nantes, le XIIIe jour d'apvril mil cinq cens soixante et dix huict ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e472">Fol. 42 • 34 Lettre de « HENRY [III]... à mon cousin le prince Daulphin [François de Bourbon], gouverneur et mon lieutenant general en Daulphiné... Escript à Paris, le VIe jour de may 1579 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e483">Fol. 44 • 35 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, duc de Montpensier,... De Turin, ce 28 julliet 1579 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e491">Fol. 46 • 36 Lettre de « HENRY [III]... à mon oncle le duc de Monpensier,... Escript à Paris, le dernier jour de aoust 1579 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e499">Fol. 47 • 37 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... Escript à Paris, le XVIIe jour de septembre 1579 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e510">Fol. 50 • 38 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon oncle, monsieur le duc de Monpansier,... De Bourgeul, se XVIIII avril... M.DXXC ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e518">Fol. 52 • 39 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le duc de Montpensier,... Escript à Paris, le XIIe juing 1580 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e529">Fol. 53 • 40 Lettre de « EMANUEL [PHILIBERT]... à monsieur mon cousin, monsieur le duc de Montpensier,... De Turin, ce 24 septembre 1580 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e542">Fol. 55 • 41 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... Escript à Ollinville, le XXIe jour d'octobre 1580 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e553">Fol. 56 • 42 Lettre de « HENRY [DE NAVARRE]... à monsieur mon oncle, monsieur de Montpensier,... Mars MDXXCI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e561">Fol. 59 • 43 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon oncle, monsieur le duc de Monpansier,... De Cadilac, se X de mars... 1581 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e569">Fol. 61 • 44 Lettre de « MARGUERITE [DE VALOIS]... à mon oncle, monsieur le duc de Monpansier,... mars MDXXCI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e582">Fol. 64 • 45 Lettre de « HENRY [III]... à mon oncle, monsieur le duc de Montpancyer,... Avril MDXXCI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e590">Fol. 66 • 46 Lettre de « CATERINE [DE MEDICIS]... à monsieur de Monpansiier,... De Chenonceaulx, cet XXVIIIme de may 1580 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e601">Fol. 67 • 47 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... Escript à Paris, le XXe jour de febvrier 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e612">Fol. 69 • 48 Lettre de « CATERINE [DE MEDICIS]... à ma cousine, madame de Montpensier [Catherine de Lorraine]... De Paris, cet XXVIIme de febvrier 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e623">Fol. 70 • 49 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... De Paris, le XXVIIe jour de febvrier 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e634">Fol. 71 • 50 Lettre de « HENRY [III]... à mon oncle le duc de Montpentier,... Escript à Paris, le VIe jour de mars 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e645">Fol. 72 • 51 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à monsieur le duc de Montpensier,... A Mesle, ce XIIIIme jour de mars 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e661">Fol. 74 • 52 Lettre de « FRANÇOIS DE BOURBON,... à monseigneur [le duc de Montpensier]... D'Anvers, ce XVIIIe jour de mars 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e677">Fol. 76 • 53 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... Escript à Paris, le XXVIIIe jour de mars 1582 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e688">Fol. 78 • 54 Lettre de « HENRY [III]... à mon oncle, monsieur de Montpancyer,... Aoust MDXXCII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e696">Fol. 79 • 55 Lettre de « HENRY DE BOURBON » à monseigneur de Matignon.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e704">Fol. 80 • 56 Lettre de « HENRY [III]... à mon cousin le Sr de Matignon,... Escript le XIe jour d'aoust 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e718">Fol. 81 • 57 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le Sr de Matignon,... Escript à Bresle lez Beauvais, le XXVe jour d'aoust 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e732">Fol. 84 • 58 Lettre de « CATERINE [DE MEDICIS]... à mon cousin, monsieur le marychal de Matignon,... De St Germeyn, cet XVIIIIme d'octobre 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e746">Fol. 85 • 59 Lettre de « HENRY [DE NAVARRE]... à mon cousin, monseigneur de Matignon,... Du Mont de Marsan, ce VIIe jour de decembre 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e757">Fol. 86 • 60 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le Sr de Matignon,... Escript à St Germain en Laye, le XVIIe jour de decembre 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e774">Fol. 88 • 61 Lettre de « CATERINE [DE MEDICIS]... à mon cousin, monsieur le marichal de Matignon,... De St Germyn en Lay, cet XXIIIIme de decembre 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e788">Fol. 89 • 62 Lettre de « HENRY [III]... à mon cousin le Sr de Mattignon,... Escript à Paris, le XXIe jour de mars 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e802">Fol. 90 • 63 Lettre de NICOLAS « DE NEUFVILLE [Sr DE VILLEROY]... à monseigneur de Mattignon, mareschal de France... De Sainct Maur des Fossez, le XIe jour de juing 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e821">Fol. 92 • 64 Lettre de M. « DE NEUFVILLE,... à monseigneur de Matignon,... De Paris, le XIIIIe mars 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e832">Fol. 94 • 65 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le Sr de Matignon,... Escrit à Fontainebleau, le XXXe jour de juillet 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e846">Fol. 95 • 66 Lettre de « HENRY [DE NAVARRE]... à mon cousin, monsieur de Mathignon,... A Pau, le second jour de febvrier 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e854">Fol. 96 • 67 Lettre de « HENRY [DE NAVARRE]... à mon cousin, monsieur de Mathignon,... A Pau, le IXe jour de febvrier 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e865">Fol. 97 • 68 Lettre de « HENRY » III au roi de Navarre. « Escript à Paris, le IXe jour de janvier 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e876">Fol. 98 • 69 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le Sr de Matignon,... Escript à Paris, le XIIIe jour de mars 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e890">Fol. 100 • 70 Lettre de « CATERINE [DE MEDICIS]... à mon cousin, monsieur le marichal de Matignon,... De Paris, cet XXme de fevryer 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e901">Fol. 101 • 71 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à mon cousin, monsieur de Matignon,... A Tonins, le dix de mars 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e914">Fol. 102 • 72 Lettre signée « DC », avec chiffre et déchiffrement, sur les tentatives faites par Catherine de Médicis pour rétablir la paix.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e922">Fol. 104 • 73 Lettre de « HENRY [DE NAVARRE]... à mon cousin, monseigneur de Matignon,... De Nerac, ce VIme d'avril 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e933">Fol. 105 • 74 Lettre de « HENRY » III à monseigneur de Matignon. « De Paris, le VIIIe jour d'avril 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e944">Fol. 106 • 75 Lettre de « HENRY » III sur les mouvements d'armes qui se préparent en France. « De Paris, le VIIIe jour d'avril 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e955">Fol. 107 • 76 Lettre de « HENRY [DE NAVARRE]... à mon cousyn, monsieur le marechal de Matygnon,... De Bragerac, le XXIIIIe d'avril 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e966">Fol. 109 • 77 Lettre de « CATERINE [DE MEDICIS]... à mon cousin, monsieur le marichal de Matignon,... D'Esperné, cet XVme de jeuyn 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e977">Fol. 110 • 78 Lettre de « HENRY [III]... à mon cousin le Sr de Mattignon,... Escript à Paris, le premier jour de may 1587 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e988">Fol. 112 • 79 Lettre de « HENRY [III]... à mon cousin le Sr de Matignon,... Escript à Paris, en mon conseil, le VIIe jour d'octobre 1587 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1002">Fol. 113 • 80 Lettre de « HENRY [III]... à mon cousin le Sr de Matignon,... Escript au camp de Pitivier, le XIIIe jour d'octobre 1587 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1016">Fol. 114 • 81 Lettre de « HENRY » III à monseigneur de Matignon. « Escript à Rouen, le IIIe jour de juillet 1588 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1027">82 Lettre de « HENRY [IV] à mon cousin le Sr de Matignon,... Escript au camp de Buchy, ce XVIIIe jour de fevrier 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1039">Fol. 117 • 83 Fragment de copie de lettre de Henri III, adressée au Sr de Longlée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1060">84 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, au Sr de « Longlée,... Escript à Paris, le IX d'aust 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1069">85 Copie d'une lettre « de ladicte dame royne au roy [Henri III]... De Paris, le IXe jour d'aust 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1078">86 Copie d'une lettre de CATHERINE DE MEDICIS « au Sr Hieronime de Gondy, ayant la charge de la conduicte des ambassadeurs... Escript à La Fere, le XIIIIe jour d'aoust 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1090">87 Copie d'une lettre « de monsieur PINART à Mr de Longlée, resident en Espaigne pour le service du roy [Henri III]... De Bresle lez Beauvais, le XXVIe jour d'aoust 1583 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1102">88 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à Gaillon, le VIe septembre 1583 ». ù Lire dans l'ordre suivant : Fol. 118 V° et 121.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1111">Fol. 119 • 89 Copie d'une lettre « du roy [HENRI III] au roy d'Espaigne [Philippe II]... Escript à St Germain en Laye, le XXVme novembre 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1130">90 Copie d'une lettre « de la royne, mere du roy [CATHERINE DE MEDICIS] audict Sr roy d'Espaigne... A St Germain en Laye, lesdicts jour et an ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1142">91 Copie d'un « passeport baillé... de par le roy [Henri III]... au Sr Taxis pour aller en Flandres, sortant de la charge qu'il avoit pres du roy... Donné à St Germain en Laye, le XXVme novembre 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1157">92 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... De St Germain en Laye, le XIme jour de decembre 1584 ». ù Lire dans l'ordre suivant : Fol. 119 V° et 123.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1169">Fol. 120 • 93 Copie d'une lettre « de la reyne mere », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à Paris, le XVme novembre 1587 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1180">94 Copie d'une lettre de CATHERINE DE MEDICIS à « monseigneur de Longlée,... Escript à Paris, le XXIIIme novembre 1587 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1189">Fol. 121 • 95 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... Escript à Chenonceau, le Xme octobre 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1200">Fol. 122 • 96 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à Chenonceau, lesdicts jour et an ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1208">97 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... Escript à St Germain en Laye, le XIXme novembre 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1220">98 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... De St Germain en Laye, le XXIme novembre 1584 ». ù Lire dans l'ordre suivant : Fol. 122 V° et 119.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1232">Fol. 123 • 99 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à St Germain en Laye, le XIIme decembre 1584 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1246">Fol. 123 • 100 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... Escript à Paris, le XIme de janvier 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1257">101 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS à « monseigneur de Longlée,... Escript à Paris, le XIme janvier 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1266">Fol. 125 • 102 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... Escript à Paris, le XIIIme janvier 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1277">Fol. 126 • 103 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à Paris, le XIIIme janvier 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1288">104 Copie d'une lettre de HENRI III à « monseigneur de Longlée,... Escript à Paris, le XXIme jour de febvrier 1585 ». ù Lire dans l'ordre suivant : Fol. 126, 120.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049783_d0e1297">Fol. 127 • 105 Lettre de « CHARLES GONZAGUE CLEVES » à « madame [de Nevers]... De Lalanne, ce 10 may 1598 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3321 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49783c&Cote=Français 3321&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060212v">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31609 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49783c&Cote=MF 31609&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3321 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 8824</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31609. Cote de la matrice (pour commander une reproduction) : R 4420.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9060212v" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9060212v.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9060212v.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Anjou, François de Valois, duc d'Alençon, puis duc d'. • Actes et lettres.</p>
+<p>Boucherat, Nicolas, abbé de Citeaux, Actes. • Lettres.</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Conseil du Roi. • Rôle des conseillers de Henri III.</p>
+<p>Flandre. • Notes, pièces et recueils divers.</p>
+<p>France. • Pitorre (Henri III).</p>
+<p>Henri III, roi de France. • Actes et lettres.</p>
+<p>Henri III, roi de France. • Notes et pièces diverses.</p>
+<p>Henri IV, roi de France. • Actes et lettres.</p>
+<p>Matignon, Jacques de Goyon, sr de, comte de Thorigny, maréchal de France. • Correspondance à lui adressée.</p>
+<p>Matignon, Jacques de Goyon, sr de, comte de Thorigny, maréchal de France. • Instructions.</p>
+<p>Normandie. • Pièces diverses.</p>
+<p>Robertet, Florimond, baron d'Alluye. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e121');">1 « Instruction » de « CATERINE [DE MEDICIS]... à monsieur de Matignon », pour « requerir, en particullier et sans assemblée d'estatz, ceulx de l'Eglise, de la noblesse et du tiers estat du... païs de Normandie, d'accorder la somme de cent mil livres tournois... oultre et pardessus les tailles... ordinaires... Faict à Paris, le XVIe jour de jung 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e130');">2 Lettre de « HENRY [III]... à monseigneur de Matignon,... Escript à Lyon, le XIme jour de septembre 1574 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e141');">3 Copie de « lectres du roy... HENRY [III]... à monseigneur [l'abbé] de Cisteaux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e159');">4 Copie de « lectres de monseigneur le cardinal... CHARLES DE LORRAYNE,... à monseigneur de Cisteaux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e177');">5 Copie d'une lettre de « monseigneur de Cisteaux [NICOLAS BOUCHERAT] au cardinal de Lorrayne... De Viterbe ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e183');">6 Copie d'une « lectre de monseigneur de Cisteaux au roy » Henri III.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e196');">7 Copie d'une lettre de « monseigneur de Cisteaux à la roine mere » Catherine de Médicis.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e204');">8 Copie d'une lettre de « monseigneur de Cisteaux au cardinal de Lorraine ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e212');">9 Copie d'une lettre de « monseigneur de Cisteaux à monsieur [Nicolas de Neuville, Sr] de Villeroy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e223');">10 Copie d'une lettre de « monsieur de Cisteaux au roy » Henri III.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e231');">11 Copie d'une lettre de « monseigneur de Cisteaux à monseigneur d'Angers », Guillaume V Ruzé.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e239');">12 Copie d'une lettre de « monseigneur de Cisteaux à monseigneur le cardinal de Guyse », Louis de Lorraine.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e245');">13 Copie d'une lettre de « monseigneur de Cisteaux à monseigneur de Morvillier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e253');">14 Copie d'une lettre de « monsieur de Cisteaux à la royne », Catherine de Médicis.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e259');">15 Copie d'une lettre de « monseigneur de Cisteaux au roy » Henri III.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e267');">16 Copie d'une lettre de « monseigneur de Cisteaux à monseigneur le cardinal de Guyse ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e273');">17 Copie d'une « lectre du roy [HENRI III] à monseigneur de Lysle, ambassadeur en Levant... De Lion ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e281');">18 Copie d'une « lectre du roy [HENRI III] pour l'assemblée des estas de Languedoc et Villenefve les Avignon... Donné à Lion, le III novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e287');">19 Copie d'une « lectre du roy [HENRI III] au sieur André [de Birague]... Donné à Lion, le VIII octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e293');">20 Copie d'une « lectre du roy [HENRI III] à monsieur de Savoie », Emmanuel-Philibert.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e301');">21 Copie d'une lettre du « roy [HENRI III] à monsieur de Savoye,... Donné à Lion ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e307');">22 Copie d'une « lectre du roy [HENRI III] à monseigneur le marechal Dampville », Henri I de Montmorency.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e313');">23 Copie d'une « lectre de la royne... CATHERINE [DE MEDICIS]... à monseigneur de Gordes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e321');">24 « Roolle des conseillers du conseil privé du roy [Henri III] depuys son retour de Pollongne... Faict à Lyon, le XVIIe jour de septembre M.V.C. LXXIIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e335');">25 « Compte de la recepte et despence faicte par... Arnoul,... Du Ferrier,... conseiller du roy en son privé conseil et son ambassadeur à Venize, des deniers que la royne, mere du roy [Catherine de Médicis], regente... a envoiez par deça pour le service de Sa Majesté... Faict à Venize, ce dernier jour de juillet mil V.C.LXXIIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e351');">26 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon oncle monsieur de Monpensier [Louis de Bourbon]... A Londres, le XVIe janvier... 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e362');">27 Lettre de « CHARLES, caral DE BOURBON,... à monseigneur le duc de Nevers,... De Grenoble, ce IIIIe de aust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e381');">28 Lettre de « CHARLES, caral DE BOURBON,... à Mr le duc de Nivernoys,... De Grenoble, ce XXIIIe de juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e398');">29 Lettre de « HENRY [III]... à mon oncle le duc de Montpencier,... Escript à Dieppe, le XXVIIIe jour de juing 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e409');">30 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon oncle, monsieur de Montpansier,... A Anvers, le XXe jour de fevrier... 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e420');">31 « Instruction » de « HENRY [III]... à monseigneur le duc de Montpensier, pair de France, gouverneur et lieutenant general pour Sa Majesté en Bretaigne... Faict à Paris, le deuxiesme jour de septembre 1576 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e433');">32 Lettre des « maire, eschevins et pairs de La Rochelle... à monseigneur le duc de Montpensier,... De La Rochelle, ce premier jour de febvrier 1578 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e446');">33 « Articles accordez entre messieurs de... La Hunodaye,... et de Fontaines pour le deppartement de la lieutenance generalle du gouvernement de Bretaigne, par l'advis de monseigneur le duc de Montpencier,... Loys de Bourbon,... Faict à Nantes, le XIIIe jour d'apvril mil cinq cens soixante et dix huict ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e472');">34 Lettre de « HENRY [III]... à mon cousin le prince Daulphin [François de Bourbon], gouverneur et mon lieutenant general en Daulphiné... Escript à Paris, le VIe jour de may 1579 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e483');">35 Lettre de « E[MMANUEL] PHILIBERT,... à monsieur mon cousin, duc de Montpensier,... De Turin, ce 28 julliet 1579 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e491');">36 Lettre de « HENRY [III]... à mon oncle le duc de Monpensier,... Escript à Paris, le dernier jour de aoust 1579 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e499');">37 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... Escript à Paris, le XVIIe jour de septembre 1579 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e510');">38 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon oncle, monsieur le duc de Monpansier,... De Bourgeul, se XVIIII avril... M.DXXC ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e518');">39 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le duc de Montpensier,... Escript à Paris, le XIIe juing 1580 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e529');">40 Lettre de « EMANUEL [PHILIBERT]... à monsieur mon cousin, monsieur le duc de Montpensier,... De Turin, ce 24 septembre 1580 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e542');">41 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... Escript à Ollinville, le XXIe jour d'octobre 1580 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e553');">42 Lettre de « HENRY [DE NAVARRE]... à monsieur mon oncle, monsieur de Montpensier,... Mars MDXXCI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e561');">43 Lettre de « FRANÇOYS [duc D'ALENÇON]... à mon oncle, monsieur le duc de Monpansier,... De Cadilac, se X de mars... 1581 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e569');">44 Lettre de « MARGUERITE [DE VALOIS]... à mon oncle, monsieur le duc de Monpansier,... mars MDXXCI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e582');">45 Lettre de « HENRY [III]... à mon oncle, monsieur le duc de Montpancyer,... Avril MDXXCI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e590');">46 Lettre de « CATERINE [DE MEDICIS]... à monsieur de Monpansiier,... De Chenonceaulx, cet XXVIIIme de may 1580 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e601');">47 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... Escript à Paris, le XXe jour de febvrier 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e612');">48 Lettre de « CATERINE [DE MEDICIS]... à ma cousine, madame de Montpensier [Catherine de Lorraine]... De Paris, cet XXVIIme de febvrier 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e623');">49 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... De Paris, le XXVIIe jour de febvrier 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e634');">50 Lettre de « HENRY [III]... à mon oncle le duc de Montpentier,... Escript à Paris, le VIe jour de mars 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e645');">51 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à monsieur le duc de Montpensier,... A Mesle, ce XIIIIme jour de mars 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e661');">52 Lettre de « FRANÇOIS DE BOURBON,... à monseigneur [le duc de Montpensier]... D'Anvers, ce XVIIIe jour de mars 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e677');">53 Lettre de « HENRY [III]... à mon oncle le duc de Montpensier,... Escript à Paris, le XXVIIIe jour de mars 1582 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e688');">54 Lettre de « HENRY [III]... à mon oncle, monsieur de Montpancyer,... Aoust MDXXCII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e696');">55 Lettre de « HENRY DE BOURBON » à monseigneur de Matignon.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e704');">56 Lettre de « HENRY [III]... à mon cousin le Sr de Matignon,... Escript le XIe jour d'aoust 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e718');">57 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le Sr de Matignon,... Escript à Bresle lez Beauvais, le XXVe jour d'aoust 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e732');">58 Lettre de « CATERINE [DE MEDICIS]... à mon cousin, monsieur le marychal de Matignon,... De St Germeyn, cet XVIIIIme d'octobre 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e746');">59 Lettre de « HENRY [DE NAVARRE]... à mon cousin, monseigneur de Matignon,... Du Mont de Marsan, ce VIIe jour de decembre 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e757');">60 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le Sr de Matignon,... Escript à St Germain en Laye, le XVIIe jour de decembre 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e774');">61 Lettre de « CATERINE [DE MEDICIS]... à mon cousin, monsieur le marichal de Matignon,... De St Germyn en Lay, cet XXIIIIme de decembre 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e788');">62 Lettre de « HENRY [III]... à mon cousin le Sr de Mattignon,... Escript à Paris, le XXIe jour de mars 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e802');">63 Lettre de NICOLAS « DE NEUFVILLE [Sr DE VILLEROY]... à monseigneur de Mattignon, mareschal de France... De Sainct Maur des Fossez, le XIe jour de juing 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e821');">64 Lettre de M. « DE NEUFVILLE,... à monseigneur de Matignon,... De Paris, le XIIIIe mars 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e832');">65 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le Sr de Matignon,... Escrit à Fontainebleau, le XXXe jour de juillet 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e846');">66 Lettre de « HENRY [DE NAVARRE]... à mon cousin, monsieur de Mathignon,... A Pau, le second jour de febvrier 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e854');">67 Lettre de « HENRY [DE NAVARRE]... à mon cousin, monsieur de Mathignon,... A Pau, le IXe jour de febvrier 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e865');">68 Lettre de « HENRY » III au roi de Navarre. « Escript à Paris, le IXe jour de janvier 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e876');">69 Lettre de « CATERINE [DE MEDICIS]... à mon cousin le Sr de Matignon,... Escript à Paris, le XIIIe jour de mars 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e890');">70 Lettre de « CATERINE [DE MEDICIS]... à mon cousin, monsieur le marichal de Matignon,... De Paris, cet XXme de fevryer 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e901');">71 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à mon cousin, monsieur de Matignon,... A Tonins, le dix de mars 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e914');">72 Lettre signée « DC », avec chiffre et déchiffrement, sur les tentatives faites par Catherine de Médicis pour rétablir la paix.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e922');">73 Lettre de « HENRY [DE NAVARRE]... à mon cousin, monseigneur de Matignon,... De Nerac, ce VIme d'avril 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e933');">74 Lettre de « HENRY » III à monseigneur de Matignon. « De Paris, le VIIIe jour d'avril 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e944');">75 Lettre de « HENRY » III sur les mouvements d'armes qui se préparent en France. « De Paris, le VIIIe jour d'avril 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e955');">76 Lettre de « HENRY [DE NAVARRE]... à mon cousyn, monsieur le marechal de Matygnon,... De Bragerac, le XXIIIIe d'avril 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e966');">77 Lettre de « CATERINE [DE MEDICIS]... à mon cousin, monsieur le marichal de Matignon,... D'Esperné, cet XVme de jeuyn 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e977');">78 Lettre de « HENRY [III]... à mon cousin le Sr de Mattignon,... Escript à Paris, le premier jour de may 1587 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e988');">79 Lettre de « HENRY [III]... à mon cousin le Sr de Matignon,... Escript à Paris, en mon conseil, le VIIe jour d'octobre 1587 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1002');">80 Lettre de « HENRY [III]... à mon cousin le Sr de Matignon,... Escript au camp de Pitivier, le XIIIe jour d'octobre 1587 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1016');">81 Lettre de « HENRY » III à monseigneur de Matignon. « Escript à Rouen, le IIIe jour de juillet 1588 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1027');">82 Lettre de « HENRY [IV] à mon cousin le Sr de Matignon,... Escript au camp de Buchy, ce XVIIIe jour de fevrier 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1039');">83 Fragment de copie de lettre de Henri III, adressée au Sr de Longlée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1060');">84 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, au Sr de « Longlée,... Escript à Paris, le IX d'aust 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1069');">85 Copie d'une lettre « de ladicte dame royne au roy [Henri III]... De Paris, le IXe jour d'aust 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1078');">86 Copie d'une lettre de CATHERINE DE MEDICIS « au Sr Hieronime de Gondy, ayant la charge de la conduicte des ambassadeurs... Escript à La Fere, le XIIIIe jour d'aoust 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1090');">87 Copie d'une lettre « de monsieur PINART à Mr de Longlée, resident en Espaigne pour le service du roy [Henri III]... De Bresle lez Beauvais, le XXVIe jour d'aoust 1583 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1102');">88 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à Gaillon, le VIe septembre 1583 ». ù Lire dans l'ordre suivant : Fol. 118 V° et 121.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1111');">89 Copie d'une lettre « du roy [HENRI III] au roy d'Espaigne [Philippe II]... Escript à St Germain en Laye, le XXVme novembre 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1130');">90 Copie d'une lettre « de la royne, mere du roy [CATHERINE DE MEDICIS] audict Sr roy d'Espaigne... A St Germain en Laye, lesdicts jour et an ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1142');">91 Copie d'un « passeport baillé... de par le roy [Henri III]... au Sr Taxis pour aller en Flandres, sortant de la charge qu'il avoit pres du roy... Donné à St Germain en Laye, le XXVme novembre 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1157');">92 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... De St Germain en Laye, le XIme jour de decembre 1584 ». ù Lire dans l'ordre suivant : Fol. 119 V° et 123.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1169');">93 Copie d'une lettre « de la reyne mere », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à Paris, le XVme novembre 1587 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1180');">94 Copie d'une lettre de CATHERINE DE MEDICIS à « monseigneur de Longlée,... Escript à Paris, le XXIIIme novembre 1587 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1189');">95 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... Escript à Chenonceau, le Xme octobre 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1200');">96 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à Chenonceau, lesdicts jour et an ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1208');">97 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... Escript à St Germain en Laye, le XIXme novembre 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1220');">98 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... De St Germain en Laye, le XXIme novembre 1584 ». ù Lire dans l'ordre suivant : Fol. 122 V° et 119.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1232');">99 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à St Germain en Laye, le XIIme decembre 1584 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1246');">100 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... Escript à Paris, le XIme de janvier 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1257');">101 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS à « monseigneur de Longlée,... Escript à Paris, le XIme janvier 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1266');">102 Copie d'une lettre « du roy » HENRI III à « monseigneur de Longlée,... Escript à Paris, le XIIIme janvier 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1277');">103 Copie d'une lettre « de la royne, mere du roy », CATHERINE DE MEDICIS, à « monseigneur de Longlée,... Escript à Paris, le XIIIme janvier 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1288');">104 Copie d'une lettre de HENRI III à « monseigneur de Longlée,... Escript à Paris, le XXIme jour de febvrier 1585 ». ù Lire dans l'ordre suivant : Fol. 126, 120.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049783_d0e1297');">105 Lettre de « CHARLES GONZAGUE CLEVES » à « madame [de Nevers]... De Lalanne, ce 10 may 1598 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>
