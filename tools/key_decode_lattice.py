@@ -34,6 +34,21 @@ Subcommands
                --keep-alts (TX-ALTS, 4 Oct 2026): a sign_id written `a/b?` (DECRYPT convention) is first choice a with
                alternative b at the alt weight, and every reader-written alternative stays in the lattice (exempt from
                the 0.02 floor and the top-4 cut). Without it, a/b? is still parsed but alternatives may be cut.
+               --confusion-matrix M.tsv [--spread S] [--matrix-only] (TXE-E, 9 Oct 2026; TX-IDEAS M5): M.tsv (columns true, read,
+               p, optional pass = A/B) is P(read | true) learnt by `learn-confusion`; each read sign r adds, for every true
+               sign t with p(r|t) > 0, candidate t with weight S x weight(reader) x p(r|t) / sum_t p(r|t) (a Bayes flip
+               with a flat prior over the signs that could have produced r), on top of the fixed rule; S default 0.3.
+               --matrix-only drops the confusion_1572 spread (a disagreement count, not an error rate) and keeps the flip.
+               Lesson it answers: half of pass A's errors on Birago no.87 are the same wrong sign in both readers, and only
+               27 of 97 errors had the truth anywhere in the two-pass lattice (TX-DECODE).
+  learn-confusion PASS.tsv [PASS2.tsv ...] --truth TRUTH.tsv --lines L... --out M.tsv [--key KEY.tsv] [--line-prefix P]
+               [--per-pass] [--shuffle-offdiag SEED]
+               estimates P(read | true) over the named lines only, from tools/tx_bench.py's per-position alignment of each
+               pass line to the truth's reference skeleton (scored positions; a truth `|`-set splits a miss's count
+               equally over its members; deletions are not counted), add-0.5 smoothing over the sheet's cells (the key's
+               signs, --key; else every sign seen). It reads truth, so it is run ONLY on tune lines; the lines it learnt
+               from are written in M.tsv's '#' header. --shuffle-offdiag SEED permutes each true row's off-diagonal cells
+               (same row mass): the rule-3 control matrix. Prints the top off-diagonal mass.
   decode       topk.tsv --key key.tsv (--lang L | --corpus F...) [--truth truth.tsv] [--shuffles N] [--power-err E]
                [--out-prefix P] writes P.decode.tsv (line pos top1 chosen value prior changed), P.plain.txt, P.json.
 
@@ -120,11 +135,35 @@ def split_cands(row):
     return first, alts, conf
 
 
-def reader_mass(row, nb, alts_out=None):
+def read_matrix(p):
+    """{pass or '': {read: {true: p}}} from a learn-confusion M.tsv ('#' lines are header comments)."""
+    M = defaultdict(lambda: defaultdict(dict))
+    if not p:
+        return M
+    rows = csv.DictReader((l for l in open(p, encoding="utf-8") if not l.startswith("#")), delimiter="\t")
+    for r in rows:
+        v = float(r["p"])
+        if v > 0:
+            M[(r.get("pass") or "").strip()][r["read"]][r["true"]] = v
+    return M
+
+
+def flip_mass(s, w, flip, spread):
+    """Bayes flip of read sign s: {true t: spread x w x p(s|t) / sum_t p(s|t)} (flat prior over t)."""
+    col = (flip or {}).get(s)
+    if not col:
+        return {}
+    tot = sum(col.values())
+    return {t: spread * w * v / tot for t, v in col.items()}
+
+
+def reader_mass(row, nb, alts_out=None, flip=None, spread=0.3):
     out = defaultdict(float)
     s, alts, conf = split_cands(row)
     w = CONF_W.get(conf, 0.6)
     out[s] += w
+    for t, v in flip_mass(s, w, flip, spread).items():
+        out[t] += v
     for alt in alts:
         out[alt] += ALT_F * w
         if alts_out is not None:
@@ -176,8 +215,10 @@ def short(line):
     return line.split("_")[-1]
 
 
-def from_passes(pa, pb, ref, nb, keep_alts=False):
+def from_passes(pa, pb, ref, nb, keep_alts=False, matrix=None, spread=0.3):
     A, B = read_pass(pa), read_pass(pb)
+    matrix = matrix or {}
+    flips = [matrix.get("A") or matrix.get(""), matrix.get("B") or matrix.get("")]
     rows = []
     if ref:
         order, R = ref_lines(ref)
@@ -191,12 +232,12 @@ def from_passes(pa, pb, ref, nb, keep_alts=False):
     for ln in order:
         skel = skel_of[ln]; mass = [defaultdict(float) for _ in skel]; seen = [0] * len(skel)
         keep = [set() for _ in skel]
-        for P in (A, B):
+        for P, flip in zip((A, B), flips):
             prow = P.get(key_of[ln], [])
             m = align(skel, [split_cands(r)[0] for r in prow])
             for j, r in enumerate(prow):
                 if j in m:
-                    for k, v in reader_mass(r, nb, keep[m[j]] if keep_alts else None).items():
+                    for k, v in reader_mass(r, nb, keep[m[j]] if keep_alts else None, flip, spread).items():
                         mass[m[j]][k] += v
                     seen[m[j]] += 1
         for i, ms in enumerate(mass):
@@ -409,8 +450,112 @@ def cmd_decode(args):
     print(json.dumps(out, indent=1))
 
 
+def learn_confusion(passes, truth_rows, lines, prefix=None, signs=None, per_pass=False, smooth=0.5):
+    """counts[(pass, true, read)] over the scored positions of `lines`, aligned with tx_bench.align; returns
+    (rows [(pass, true, read, p)], stats). P(read | true) = (n + smooth) / (N_true + smooth x |signs|)."""
+    import tx_bench
+    lines = set(lines)
+    by = defaultdict(list)
+    for r in truth_rows:
+        if r["line"] in lines:
+            by[r["line"]].append(r)
+    cnt = defaultdict(float); seen = set(signs or [])
+    stats = {"lines": len(by), "positions": 0, "misses": 0, "deleted": 0}
+    for i, pp in enumerate(passes):
+        tag = "AB"[i] if per_pass and i < 2 else (str(i + 1) if per_pass else "")
+        P = read_pass(pp)
+        for ln, rows in by.items():
+            rows.sort(key=lambda r: float(r["pos"]))
+            pk = ln if ln in P else (ln[len(prefix) + 1:] if prefix and ln.startswith(prefix + "_") else short(ln))
+            out = [split_cands(r)[0] for r in P.get(pk, [])]
+            if not out:
+                continue
+            ref = [r["ref_sign"] for r in rows]
+            ts = [set(filter(None, r["truth"].split("|"))) for r in rows]
+            for ri, osg in tx_bench.align(ref, ts, out):
+                if ri is None or rows[ri]["status"] != "scored":
+                    continue
+                if osg is None:
+                    stats["deleted"] += 1
+                    continue
+                stats["positions"] += 1
+                seen.add(osg); seen.update(ts[ri])
+                if osg in ts[ri]:
+                    cnt[(tag, osg, osg)] += 1
+                else:
+                    stats["misses"] += 1
+                    for t in ts[ri]:
+                        cnt[(tag, t, osg)] += 1 / len(ts[ri])
+    signs = sorted(signs or seen)
+    tags = sorted({k[0] for k in cnt}) or [""]
+    out = []
+    for tag in tags:
+        for t in signs:
+            N = sum(cnt.get((tag, t, r), 0) for r in signs)
+            for r in signs:
+                out.append((tag, t, r, (cnt.get((tag, t, r), 0) + smooth) / (N + smooth * len(signs))))
+    stats["signs"] = len(signs)
+    return out, stats
+
+
+def shuffle_offdiag(rows, seed):
+    """permute each (pass, true) row's off-diagonal p values among its own off-diagonal cells (row mass kept)."""
+    rnd = random.Random(seed)
+    grp = defaultdict(list)
+    for i, (tag, t, r, p) in enumerate(rows):
+        if t != r:
+            grp[(tag, t)].append(i)
+    rows = list(rows)
+    for idx in grp.values():
+        vals = [rows[i][3] for i in idx]; rnd.shuffle(vals)
+        for i, v in zip(idx, vals):
+            rows[i] = rows[i][:3] + (v,)
+    return rows
+
+
+def write_matrix(rows, out, header):
+    per = any(tag for tag, *_ in rows)
+    with open(out, "w", encoding="utf-8") as f:
+        for h in header:
+            f.write("# " + h + "\n")
+        f.write(("pass\t" if per else "") + "true\tread\tp\n")
+        for tag, t, r, p in rows:
+            f.write((tag + "\t" if per else "") + f"{t}\t{r}\t{p:.6f}\n")
+
+
+def top_offdiag(rows, n=12):
+    """off-diagonal cells ranked by p(read | true) minus the row's smoothing floor."""
+    floor = defaultdict(lambda: 1.0)
+    for tag, t, r, p in rows:
+        floor[(tag, t)] = min(floor[(tag, t)], p)
+    ex = [(p - floor[(tag, t)], tag, t, r, p) for tag, t, r, p in rows if t != r and p > floor[(tag, t)] + 1e-12]
+    return sorted(ex, reverse=True)[:n]
+
+
+def cmd_learn_confusion(args):
+    import tx_bench
+    truth = tx_bench.read_tsv(args.truth)
+    signs = sorted(read_key(args.key)) if args.key else None
+    rows, stats = learn_confusion(args.passes, truth, args.lines, args.line_prefix, signs, args.per_pass, args.smooth)
+    hdr = ["learn-confusion (tools/key_decode_lattice.py, TXE-E): P(read | true), add-%g smoothing over %d signs"
+           % (args.smooth, stats["signs"]),
+           "learnt from lines: " + " ".join(args.lines),
+           "passes: " + " ".join(args.passes) + "; truth: " + args.truth]
+    if args.shuffle_offdiag is not None:
+        rows = shuffle_offdiag(rows, args.shuffle_offdiag)
+        hdr.append("CONTROL: off-diagonal cells permuted within each true row, seed %d" % args.shuffle_offdiag)
+    write_matrix(rows, args.out, hdr)
+    stats["top_offdiag"] = ["%s%s<-%s p %.3f (excess %.3f)" % (tag + ":" if tag else "", t, r, p, e)
+                            for e, tag, t, r, p in top_offdiag(rows)]
+    print(json.dumps(stats, indent=1))
+
+
 def cmd_from_passes(args):
-    rows, stats = from_passes(args.passA, args.passB, args.ref, read_confusion(args.confusion), args.keep_alts)
+    if args.matrix_only and not args.confusion_matrix:
+        sys.exit("--matrix-only needs --confusion-matrix")
+    nb = {} if args.matrix_only else read_confusion(args.confusion)
+    rows, stats = from_passes(args.passA, args.passB, args.ref, nb, args.keep_alts,
+                              read_matrix(args.confusion_matrix), args.spread)
     write_topk(rows, args.out)
     print(json.dumps(stats))
 
@@ -424,6 +569,17 @@ def main(argv=None):
     f.add_argument("--keep-alts", action="store_true",
                    help="keep every reader-written alternative (a/b? or the alt column) in the lattice, exempt from "
                         "the 0.02 floor and the top-4 cut (TX-ALTS)")
+    f.add_argument("--confusion-matrix", help="learn-confusion M.tsv: add the Bayes-flip candidates (TXE-E)")
+    f.add_argument("--spread", type=float, default=0.3, help="flip weight S (default 0.3)")
+    f.add_argument("--matrix-only", action="store_true", help="replace the confusion_1572 spread with the flip")
+    lc = sub.add_parser("learn-confusion", help="P(read | true) from passes + truth on named (tune) lines")
+    lc.add_argument("passes", nargs="+"); lc.add_argument("--truth", required=True)
+    lc.add_argument("--lines", nargs="+", required=True); lc.add_argument("--out", required=True)
+    lc.add_argument("--key", help="key TSV: its signs are the sheet's cells for smoothing")
+    lc.add_argument("--line-prefix", help="page prefix of the truth lines (f178v) when pass lines are bare L01")
+    lc.add_argument("--per-pass", action="store_true", help="one matrix per pass (column pass = A, B)")
+    lc.add_argument("--smooth", type=float, default=0.5)
+    lc.add_argument("--shuffle-offdiag", type=int, default=None, help="control: permute off-diagonal cells (seed)")
     d = sub.add_parser("decode", help="lattice decode + controls")
     d.add_argument("topk"); d.add_argument("--key", required=True)
     d.add_argument("--lang", default="it"); d.add_argument("--corpus", nargs="*")
@@ -436,7 +592,7 @@ def main(argv=None):
     d.add_argument("--power-len", type=int, default=0, help="synthetic window length in signs (default: the lattice's)")
     d.add_argument("--out-prefix")
     a = ap.parse_args(argv)
-    (cmd_decode if a.cmd == "decode" else cmd_from_passes)(a)
+    {"decode": cmd_decode, "from-passes": cmd_from_passes, "learn-confusion": cmd_learn_confusion}[a.cmd](a)
 
 
 if __name__ == "__main__":

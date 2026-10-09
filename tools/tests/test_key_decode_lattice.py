@@ -82,6 +82,48 @@ def test_keep_alts_exempts_alternatives_from_cut():
     assert "E" in m and abs(sum(m.values()) - 1) < 1e-9 and max(m, key=m.get) == "A"
 
 
+def test_flip_mass_bayes_and_matrix_only(tmp_path=None):
+    # TXE-E: read T98 is produced by true T98 (0.6) and by true T18 (0.3): the flip gives T18 1/3 of S x w
+    M = {"T98": {"T98": 0.6, "T18": 0.3}}
+    f = K.flip_mass("T98", 1.0, M, 0.3)
+    assert abs(f["T18"] - 0.1) < 1e-9 and abs(f["T98"] - 0.2) < 1e-9
+    m = K.finish(K.reader_mass({"sign_id": "T98", "conf": "H"}, {}, None, M, 0.3))
+    assert max(m, key=m.get) == "T98" and m["T18"] > 0.02
+    assert K.flip_mass("ZZ", 1.0, M, 0.3) == {}
+
+
+def _write(path, text):
+    open(path, "w").write(text)
+
+
+def test_learn_confusion_counts_and_shuffle():
+    import tempfile, os
+    d = tempfile.mkdtemp()
+    tr = os.path.join(d, "t.tsv"); pa = os.path.join(d, "a.tsv")
+    T = lambda ln, sig, sets: "".join("%s\t%d\t%s\t%s\tx\tscored\n" % (ln, i + 1, a, b) for i, (a, b) in
+                                      enumerate(zip(sig, sets)))
+    R = lambda ln, sig: "".join("%s\t%d\t%s\t\tH\n" % (ln, i + 1, a) for i, a in enumerate(sig))
+    _write(tr, "line\tpos\tref_sign\ttruth\tplain\tstatus\n" + T("p_L01", "ABABA", "ABABA")
+           + T("p_L02", "ABCBA", ["A", "B", "C|D", "B", "A"]) + T("p_L03", "ABABA", "ABABA"))
+    _write(pa, "passage\tpos\tsign_id\talt\tconf\n" + R("L01", "AAABA") + R("L02", "ABBBA") + R("L03", "BBBBB"))
+    import tx_bench
+    rows, st = K.learn_confusion([pa], tx_bench.read_tsv(tr), ["p_L01", "p_L02"], "p", ["A", "B", "C", "D"])
+    assert st["lines"] == 2 and st["positions"] == 10 and st["misses"] == 2  # p_L03 (not named) is never counted
+    P = {(t, r): p for _, t, r, p in rows}
+    # true B: 4 reads, 1 as A -> (1 + .5) / (4 + 2); truth set C|D read B: 0.5 count each -> (.5 + .5) / (.5 + 2)
+    assert abs(P[("B", "A")] - 1.5 / 6) < 1e-9 and abs(P[("C", "B")] - 1.0 / 2.5) < 1e-9
+    assert all(abs(sum(p for (t, r), p in P.items() if t == x) - 1) < 1e-9 for x in "ABCD")
+    sh = K.shuffle_offdiag(rows, 3)
+    for t in "ABCD":
+        assert abs(sum(p for _, tt, r, p in sh if tt == t) - 1) < 1e-9
+        assert [p for _, tt, r, p in sh if tt == t and r == t] == [P[(t, t)]]
+    out = os.path.join(d, "m.tsv")
+    K.write_matrix(rows, out, ["learnt from lines: p_L01"])
+    assert open(out).readline().startswith("# learnt from lines: p_L01")
+    M = K.read_matrix(out)
+    assert abs(M[""]["A"]["B"] - P[("B", "A")]) < 1e-9
+
+
 if __name__ == "__main__":
     for n, f in list(globals().items()):
         if n.startswith("test_"):
