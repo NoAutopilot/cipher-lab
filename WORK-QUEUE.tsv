@@ -486,3 +486,4 @@ TXE-D	account-4	.claude/briefs/runs/2026-10-09-account4-txe-d.md	claude-opus-5-5
 TXE-E	account-4	.claude/briefs/runs/2026-10-09-account4-txe-e.md	claude-opus-5-5	5	75	claimed session_011aJedwsjoakb85C4CPihNW 2026-10-09 07:18	2026-10-09 07:17	LANE TX-ENGINEER idea confusion-matrix lattice M5; spawned by the lane
 TXE-G	account-4	.claude/briefs/runs/2026-10-09-account4-txe-g.md	claude-opus-5-5	6	75	claimed session_01Q5gZS93pQxXHF4cVWDKxok 2026-10-09 07:18	2026-10-09 07:17	LANE TX-ENGINEER idea recovery literature O5; spawned by the lane
 TXE-F	account-4	.claude/briefs/runs/2026-10-09-account4-txe-f.md	claude-opus-5-5	8	100	claimed session_01NEHCNrxFTVSDYkGPgLwJaC 2026-10-09 07:26	2026-10-09 07:26	LANE TX-ENGINEER idea O3 per-cut quality gate (owner item 3); spawned by the lane
+TXE-H	account-4	.claude/briefs/runs/2026-10-09-account4-txe-h.md	claude-opus-5-5	6	90	queued	2026-10-09 07:30	LANE TX-ENGINEER idea M17 pair hints in the reader brief; spawned by the lane
