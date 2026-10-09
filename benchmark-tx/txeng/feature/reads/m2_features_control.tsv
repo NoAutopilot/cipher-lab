@@ -1,0 +1,52 @@
+passage	pos	desc	asc	bars	loops	dots	lean	tail	conf	note
+TILES	1	none	none	1	2	0	upright	none	H	two loops joined by horizontal stroke
+TILES	2	short	none	0	1	0	upright	left	M	small loop top left, curved stroke down hooking left
+TILES	3	none	none	0	1	0	upright	none	H	small single loop
+TILES	4	none	long	0	1	0	upright	none	H	vertical stem rising from heart-shaped loop
+TILES	5	none	none	0	0	1	right	right	M	three-arch stroke with separate wavy mark above right
+TILES	6	none	short	0	1	0	upright	right	M	small loop on top of stem, foot stroke at base
+TILES	7	none	none	1	0	0	upright	right	H	open C with flat top stroke
+TILES	8	none	none	1	1	0	upright	none	M	epsilon-like curve joined by stroke to loop at right
+TILES	9	none	none	0	0	0	upright	none	H	three-arch stroke
+TILES	10	short	none	0	1	0	upright	right	H	diamond loop with tail down curving right
+TILES	11	none	none	1	2	0	upright	none	M	upright stem with two closed bowls
+TILES	12	none	none	1	0	0	upright	right	M	epsilon curve with horizontal base stroke
+TILES	13	none	none	0	2	1	right	none	M	two joined looped figures, separate tick upper left
+TILES	14	none	none	0	0	0	upright	none	H	two strokes meeting at bottom point
+TILES	15	none	long	1	1	0	upright	none	H	stem crossed by short bar, loop at base
+TILES	16	short	none	0	0	0	upright	right	M	arched stroke ending in zigzag tail down right
+TILES	17	long	none	0	1	0	upright	left	H	loop on top, zigzag stroke below ending left
+TILES	18	long	none	0	1	0	upright	none	H	loop at top right of long vertical stem
+TILES	19	none	none	1	1	0	upright	none	H	large closed bowl with flat top and curled start
+TILES	20	none	none	0	2	0	upright	none	M	two joined looped figures side by side
+TILES	21	none	none	0	2	0	upright	none	H	two loops side by side touching
+TILES	22	long	none	0	1	0	upright	none	H	loop on top of long stem
+TILES	23	none	none	2	0	0	upright	left	H	vertical stem with two horizontal bars to right, foot left
+TILES	24	none	none	0	0	0	upright	none	H	two crossing curved strokes
+TILES	25	none	none	0	2	0	upright	none	M	small loop top left, larger loop lower right
+TILES	26	none	none	1	1	0	upright	none	M	curves crossing with loop lower left and bar right
+TILES	27	short	none	0	1	0	upright	left	H	loop with descending tail hooking left
+TILES	28	none	none	0	2	1	right	none	M	two joined figures, looped left one, tick upper left
+TILES	29	none	short	0	0	0	upright	left	M	double-arch stroke rising into S-curve
+TILES	30	long	none	0	0	0	right	left	M	angular zigzag with curved descender ending left
+TILES	31	none	none	0	1	0	upright	none	M	arched strokes with inner loop
+TILES	32	long	none	1	2	0	upright	none	H	two loops on top of crossed stem
+TILES	33	none	none	1	1	0	upright	right	M	bowl with flat top and leg out to right
+TILES	34	long	none	1	1	0	upright	none	H	rectangular loop on top of stem
+TILES	35	none	none	0	0	0	upright	none	H	double-arch stroke opening upward
+TILES	36	none	none	2	0	0	upright	none	M	bracket shape joined to cross
+TILES	37	long	none	1	0	0	upright	none	H	top bar with curl right over vertical stem
+TILES	38	none	short	1	1	0	upright	none	H	stem crossed by bar above downward triangle
+TILES	39	none	none	1	0	0	upright	none	H	top bar on two legs
+TILES	40	none	none	1	2	0	upright	none	H	oval split by long horizontal bar
+TILES	41	none	none	0	0	0	right	right	M	slanted stroke curving down and out right
+TILES	42	none	none	1	1	0	upright	none	H	closed triangle with flat base
+TILES	43	none	none	1	0	0	upright	none	H	simple cross
+TILES	44	short	short	0	1	0	upright	none	M	vertical stem through small loop
+TILES	45	none	none	0	1	0	right	right	M	looped figure with curled top, slanted
+TILES	46	long	none	0	2	0	upright	none	H	loop split by vertical stem continuing down
+TILES	47	none	none	1	0	0	upright	none	M	vertical stem with diagonal strokes and crossbar
+TILES	48	none	none	0	0	0	right	right	H	diagonal stroke with leg branching left
+TILES	49	none	none	2	0	0	upright	none	H	two verticals crossed by two bars
+TILES	50	none	none	1	0	0	upright	none	H	three short uprights on long base bar
+TILES	51	none	none	1	0	0	upright	none	H	two verticals crossed by one bar
