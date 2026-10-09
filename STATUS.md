@@ -7605,3 +7605,7 @@ column + the error map of both pools, read-free, cap 4). Ideas register v2: rese
 | X2 pair classifiers (TXE2-PAIR) | 1/11 p 0.0063 wrong way | not taken (0 looks) | dev-FAIL | 2.19 |
 | X6 sorter curve (TXE2-SORT) | measurement: cluster propagation destructive; per-tile doubt feed 3-6 of 7-27 in 20 | read-free sim | measured | 3.48 (with X20) |
 | X20 owner decisions (TXE2-SORT) | 0/3 p 0.25 | not taken | dev-FAIL | -- |
+| X5 learned reader weighting (TXE2-WEIGHT) | 3/7 p 0.34 (uniform 3/4; permuted controls fail) | not taken | dev-FAIL | 3.20 (with X19) |
+| X19 deletion detector (TXE2-WEIGHT) | flags 83-100% of lines | n/a | FAIL read-free | -- |
+| 0b gloss items (TXP-D89/D98/D113/B23) | f.89 240 scored E 10 (rule rebuilt after first score, gloss-visible); f.98v E 0; f.113 E 0 | f.23r (eval hand) 203 scored, 16 errors only on flagged positions; not pooled | the rebuilt-key recipe scores its own reads right by construction; truth re-derived by TXP-REBUILD (round 2 R) | 18.01 / 12.12 / 12.91 / 12.56 (1.2-1.6x caps) |
+| round 2 live 16:3x (PREREG-txeng2-2): R rebuild, X1 sheet inventory, X3 widened lattice, X4 calibrated confidence, X9/X17 doubt re-tune | | | running | caps 4/7/5/6/4 |
