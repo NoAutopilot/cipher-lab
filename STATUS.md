@@ -6757,6 +6757,28 @@ already known: ~0 (SIG-AVS's 74 re-look, a sibling with a period decipherment, ~
 SIG-2 (session_01SYyVT7bpRYp2Fzxc8BoxdG, 9 Oct 00:39-00:4x UTC): one Gallica IIIF manifest probe (Baluze 170, btv1b90015040) -> 403 at 00:42; closed at once, no workers; items 1-2 still Gallica-blocked, 3-5 unchanged; SIG-3 queued with the same probe-first note.
 SIG-3 (account 1, 9 Oct 01:42-01:4x UTC): one Gallica IIIF manifest probe (Baluze 170, btv1b90015040) -> 403 at 01:42; closed at once, no workers; items unchanged; SIG-4 queued with the same probe-first note.
 
+## LANE SIG handoff (SIG-4, session_01TCCyHP5FPpBbTnQY6Z9JDp, account 1), 9 October 2026 (02:40-04:3x UTC by date -u; workers 14.07 + orchestrator ~3.6 = ~17.7 of 60 by get_session; seven_day allowed_warning throughout)
+Jobs .claude/briefs/runs/2026-10-09-acct1-sig4-jobs.md (waves 1-3). Gallica probe 02:43 UTC: 403 -- items 1-2 skipped per the WORK-QUEUE amendment; non-Gallica items run.
+Share of spend on items whose text is already known: ~9.35 (SIG-7208; 7208 turned out KNOWN on its leaf, worked as a key/crib source for unread 4612, within the guardrail's purpose).
+**Results.**
+- **WVO 7208** (Orange to Lodewijk, Vlissingen, 21 Feb 1574; the letter 4612 answers): its period decipherment is on its own leaf (f.223r, PDF p5; WVO
+  Opmerkingen; AX-GLOSS had called p5 a separate clear letter) -- KNOWN, no reading claimed. key_full table gate PASS (p1 0.861, p2 0.806, p3 0.831 vs
+  permuted p99 0.284/0.486/0.667); list-B values sig7208/key_7208_sig.tsv: 312 ville H, 221 hollande H, 270 mastrech / 217 bommel M (both conflict with
+  list A, logged in HYPOTHESES.md, nothing merged), 335 cavallerie, 336 fanterie, 159 bateaulx, 341/342 M; 212-214/224 left unread by the decipherer.
+  No print of 7208 located in Groen IV, Gachard I-VI, Tomokiyo, solver repos. Cribs for 4612 in sig7208/cribs_4612.tsv.
+- **4612 crib placement** (new instrument from 7208's text): attempt 1 SIG-4612C control (a) on the 5811 cut: recall 0.512 pass, false 2.5/seed vs <=2.0
+  FAIL; attempt 2 SIG-4612D (2-placement support / whole-stream per-code check): false 0.9 pass, recall 0.292 vs 0.30 FAIL. 4612 never scored. Attempt 2 of 3.
+- august-van-saksen: not worked (no enclosures left; Qf split ~0 value). Code 146 (5797): open-codes, not worked.
+**next** (cost per item; blocked items named):
+1. Gallica probe first (one per incarnation). If 200: SIG-1 handoff next items 1(a)-(c) (f.229/f.228 shape control ~$4, Baluze 167-171 sweep ~$3,
+   168 f.246-247 ~$3), then 2. If 403: items below only.
+2. 4612 crib placement attempt 3 is the last under rule 3: only with a genuinely different input, not a threshold between attempts 1 and 2 (the two
+   failed on opposite bars). Candidate: add the clear words of 4612 itself (154 '?'/clear rows) and 7208's 312/221/335 list-B name codes as anchors,
+   ~$3; otherwise log the crib instrument untested-by-this-tool and wait for new material (e.g. Orange's reply to 4612, none located).
+3. SIG-4612D side lead: code 58 (key_full z, grade I) implied v in 3 control seeds -- a cheap check of 58 across 4610/4611/4616 decodes, ~$1.
+4. 7208 list-B conflicts 270/217: a native look at f.221r p1_L11 pos9 (270 vs 276), ~$1 -- matters for 4612's two 276 slots.
+5. Gramont f.30: owner-side sign sorter. august-van-saksen: waiting on ASKS 67 / Dresden.
+
 ## LANE VERIFY-4 handoff (session_01667XGk7THE9debemXAefTi, account 3), 8-9 October 2026 (23:35-01:3x UTC by date -u; workers 36.88 + orchestrator ~5.6 = ~42.5 of 60 by get_session; seven_day allowed_warning throughout; closed dry)
 Jobs file .claude/briefs/runs/2026-10-08-acct3-verify4-jobs.md. 10 Opus verifiers on account 3, all done and ledgered; none re-addressed
 (readers and first auditors accounts 1, 2, 4; account 3's own V1-LS4B/AUD2-LEDGER-2 were second audits in other sessions).
