@@ -1,0 +1,24 @@
+key: key.tsv; spans 8
+== L (gloss pass left page): spans 1; code tokens 11; keyed 11
+S = 11/11 keyed (1.000); control (1000 permutations, seed 474): mean 1.59, p95 3, p99 4, max 5; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== R (gloss pass right page): spans 7; code tokens 71; keyed 69
+S = 60/69 keyed (0.870); control (1000 permutations, seed 474): mean 11.69, p95 17, p99 19, max 22; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== pooled (reported): spans 8; code tokens 82; keyed 80
+S = 71/80 keyed (0.887); control (1000 permutations, seed 474): mean 13.29, p95 19, p99 21, max 24; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+G01	L	la Religion de notre Ennemy Royal [?]	11/11	110:match:la 60:match:r 35:match:e 44:match:l 9:match:i 7:match:g 39:match:i 33:match:o 21:match:n 120:match:d 10:match:e
+G02	R	de sortir de la galere ou nous sommes embarquez	17/19	120:match:d 35:match:e 51:match:s 33:match:o 60:match:r 28:match:t 39:match:i 26:match:r 100:match:d 10:match:e 110:match:la 7:match:g 63:miss:a 103:match:le 27:match:r 2:match:e 10:match:e 6:match:u 246:miss:ez
+G03	R	une Religion [?]	4/7	6:match:u 1:miss:n 10:match:e 60:match:r 24:miss:eli 7:match:g 4:miss:ion
+G04	R	le Roy	0/1	150:miss:roi
+G05	R	le Pr: Royal [?] Lon[?]	5/6	103:match:le 34:match:p 26:match:r 51:miss:all 16:match:o 14:match:n
+G06	R	fils dans les sentimens de nôtre charmant Docteur Luther	21/24	36:match:f 39:match:i 12:match:l 29:match:s 120:match:d 103:match:le 51:match:s 35:match:e 21:match:n 28:match:t 39:match:i 2:match:e 20:miss:ns 100:match:d 35:match:e 32:match:n 22:match:o 57:miss:t 60:match:r 2:match:e 81:miss:ch 50:match:a 27:match:r 43:match:m
+G07	R	nos	3/3	21:match:n 33:match:o 51:match:s
+G08	R	Ennemis et de nos alliez	10/11	10:match:e 14:match:n 32:match:n 2:match:e 13:match:m 34:miss:i 29:match:s 100:match:d 35:match:e 14:match:n 16:match:o
+
+distinct codes: 39; matched on every instance: 28
+unkeyed codes and their slots: 63=a; 246=ez
+keyed codes with a non-match slot: 1(f)=miss:n; 4(x)=miss:ion; 20(b)=miss:ns; 24(q)=miss:eli; 34(p)=miss:i; 51(s|sa)=miss:all; 57(s)=miss:t; 81(k)=miss:ch; 150(le Roi de Pologne)=miss:roi

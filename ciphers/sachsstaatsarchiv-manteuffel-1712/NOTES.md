@@ -2217,7 +2217,7 @@ Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 
 - 694/08 0454 unglossed leaf - blocker: open-codes; DONE (MANT-0454, 9 Oct 2026: 62 code tokens, two blind passes + reconciliation, no gloss; gate (b) fr18 permuted-key PASS at N=52 letters (real -1.659 vs p95 -1.693, power 11/11); H0 C0 S46 M16 I0 U0; reads 'rebelle', 'Rozrasewsky' x2, 'renonce a', 'Arnold', 'abdiquer' round Stanislas); 0452-0453 fetched and audited (V-MANT0454, 9 Oct 2026: no date line on 0452-0454, mid-Oct to early Nov 1712 by position (I); N2, D2, key published; 0453 right page carries unread cipher groups incl. 60.35.21.33.14.15.10.26 after 'toujours dispose a'); next: read Bonnesen 1918 pp. 62-77 for prior print (LOCAL/JSTOR or library), then 0453's cipher groups (2 blind passes, ~$3), then URL 0450-0451 for the date (2 GETs, ~$1.5); letter date and 0453 DONE (MANT-0453, 9 Oct 2026: No. 88, Berl. 29 Oct 1712, head on URL 0451 f.358; 0453 10 groups 22 tokens, 'crosse', 'renoncer', 150 x3, 257 x2, 198, 170, 187; gate (b) too-short at L=16 (power 0.67) and pooled L=68 (no control window); H0 C0 S0 M22)
 - 694/08 0109 unglossed two-page leaf (f.80) and 0176 (stamp 135, Berl. 2 Juil 1712) - blocker: open-codes; 0176 DONE (MANT-0176, 9 Oct 2026: 31 code tokens in 5 runs, two blind passes + reconciliation, no gloss; gate (b) fr18 permuted-key TEST (power 37/38 at 32 letters) PASS, real -1.288 vs p95 -1.670 p99 -1.543, 0/1000; H0 C0 S26 M4 I0 U1; reads 'Maier' x2 (also in the leaf's clear text), 'deux colonels, (Sp)ald et Horn jusqu'a Bernau'; r01 after 'le vieux' unread; MANT-0177, 9 Oct 2026: AUDIT 8(c) fix applied (r04 pos 7 comma, r01 pos 3 26), gate (b) PASS holds -1.277 vs p95 -1.665 0/1000, S27 M3 U0; 0177 read: 11 tokens, Bernau again, 'pf' x2 and 'm' abbreviations, gate (b) too-short (power 0.47), M 11; next: eye check of 0176 r01 '171' vs '17.1' in f0176_08/crops, ~$0.3); 0109 DONE and found in print (V-MANT0109, 9 Oct 2026: N0, the letter of 4 June 1712 is printed in clear in Acta Borussica BO I Nr. 64 pp. 204-207; MANT-0109, 9 Oct 2026: 80 code tokens in 24 groups, both pages, 4 blind calls agree on every group, no gloss; gate (b) fr18 permuted-key TEST (power 18/18 at 43 letters) PASS, real -1.392 vs p95 -1.687 p99 -1.539, 0/1000; H0 C0 S37 M43 I0 U0 (38 M = name-abbreviation groups 55.44 x12, 7.60 x7); reads 'Kraut', commissioners 'Feldm. le comte Dona, Printz, Kameke, Ilgen', 'le grand maitre'; letter's first page and date unseen); 0176 not-attempted; next: 0176 read with key.tsv, ~$3; 0108 for 0109's first page/date, 1 GET ~$1.5
 - 694/08 clear-under-code leaves 0323, 0282, 0348, 0398 (+0499, and 0284/0410 from MANT-INV08) - blocker: open-codes; 0323/0348/0282 DONE (MANT-CUC, 9 Oct 2026: blind code passes A/B + blind clear pass per leaf, PREREG-MANTCUC; pooled agreed 124/175 letter-class codes match the clear words under key.tsv vs permuted-key p99 29 (all codes) / 36 (letter codes), 0/1000, PASS; 0323 62/82, 0348 36/39 PASS; 0282 26/54 PASS on gate, under the 0.5 line (two missed underlines in the blind clear pass); 173/144 over 'Prince'/'Czar' absent from key.tsv, image check owed; key.tsv unchanged, 60 candidate rows in mant0608/cuc/cuc_candidates.tsv); next: eye check of the candidate rows (~$1), 0410 + 0284 and the eye check DONE (MANT-CUC2, 9 Oct 2026: 0410 8/17, 0284 9/15 PASS per leaf; pooled 5 leaves 141/207 vs p99 33/40 PASS; 173/144 are misreads of 177 = le czar); next: 0398/0499 (~$2.5); earlier note: one known-answer key check of their ~250 code-over-clear tokens against key.tsv (line crops of the code runs and the clear words, 2 blind passes + reconciliation, score per code vs a shuffled-key control), ~$5 (MANT-INV08C, 9 Oct 2026: codes written above underlined clear words, e.g. 'Alliance Deffensive' x4, 'Secretaire' x2, 'Ministre' x2, 'la Treve' x2, 'Stettin', 'Mr. Britton', 'la jalousie des Polonois'; M at sight) 0398/0499 DONE (MANT-CUC3, 9 Oct 2026: 0398 agreed 15/24 vs permuted p99 6/7 PASS; 0499's run is gloss-over-code, excluded; 7-leaf pool 156/231 vs p99 38/45, 0/1000, PASS; code 19 = n has two clear-word witnesses (0398 s02, 0410 s02) against Krauske's non-valeur -- a verifier's data conflict, M); next: verifier look at 19 and 0499's 110/160, ~$1.5
-- 694/08 glossed heavy leaves 0494, 0474, 0313, 0447 (nomenclator range above 401) - blocker: open-codes; 0494 DONE (MANT-0494, 9 Oct 2026: 244 tokens, left-page gloss gate PASS S 74/99 vs permuted p99 27, right page too short (7 keyed); the >=15-token runs taken as unglossed decode to the gloss phrases run on across lines, known text; 13 codes 340-715 under right-page notes held in f0494_08/candidates.tsv, key.tsv unchanged); next: 0474 (stamp 379, same Breton matter, right-page nomenclator codes) as a second witness for the held right-page codes, 1 GET + 6 vision calls, ~$5.5
+- 694/08 glossed heavy leaves 0494, 0474, 0313, 0447 (nomenclator range above 401) - blocker: open-codes; 0494 DONE (MANT-0494, 9 Oct 2026: 244 tokens, left-page gloss gate PASS S 74/99 vs permuted p99 27, right page too short (7 keyed); the >=15-token runs taken as unglossed decode to the gloss phrases run on across lines, known text; 13 codes 340-715 under right-page notes held in f0494_08/candidates.tsv, key.tsv unchanged); 0474 DONE (MANT-0474, 9 Oct 2026: 132 tokens, letter range plus 150/246/303; gloss gate left 11/11 vs p99 4 PASS, right 60/69 vs p99 19 PASS; none of 0494's 13 held codes 231-715 occurs on 0474 (no second witness); 44 and 54 read l and u on 0474, not 0494's c/et slots; 63 (Krauske null) at 'a' logged as a rule-4 conflict; f0474_08/candidates.tsv, key.tsv unchanged); next: 0313 and 0447 (same Breton matter, 0447 right-page long runs) as further glossed witnesses for the held codes (~$5.5 each), and a 0494 image check of T036 54/59
 
 ## Escalation (3 Oct 2026)
 - [x] siblings: Loc. 694/03, /04, /06 opened (R12D-MANTSIB, 6 Oct 2026: 390/310/538 frames, frames.tsv each; stride-20 sample 63 frames: 694/06 0290 0510 0530 cipher and glossed, same key family as Krauske (31 66 14 47 50, 160, 187, 227 agree, M), codes seen <=289 plus one 939; no glossed nomenclator-range leaf; Loc. 695/03 (1716) carries Feldmann's 1925 key slip, a different system); stride-5 screen of 694/06 0480-0538 DONE (R12D-MANT06, 6 Oct 2026: 13 frames, 10 cipher-bearing, 7 glossed; Krauske-family glosses agree again (227, 177, 170, 291, M); no glossed code in f.410's range, 609 once unglossed; a second, 4-digit name code glossed on 0505/0520 (5249 Konig von D., 5765 Manteuffel), not Krauske's); next: inventory of the 4-digit system's glossed groups across 694/03-06 (~$2), a separate hypothesis ; 4-digit inventory DONE (D4-MANT, 8 Oct 2026: 694/03 0010 10 groups + 694/04 0170-0171 7 groups, unglossed, 2727/1016 recur 1706-07; 694/06 0504 17 groups glossed + 0519-0521 ~150-250 groups glossed per name; 4229/5249/1900 consistent across leaves; d4mant/inventory_4digit.tsv); next: stride-5 screen of 694/03-04 around 0010/0170 for more 4-digit leaves (~$1.5), then 694/06 0519-0521 transcription with glosses as known answers (~$16), premise check first
@@ -3438,3 +3438,58 @@ Requests: www.archiv.sachsen.de 56 (all 200, 2.2 s apart, "sachsen take/release"
 images, worker eye only (no subagents). No novelty class; status unchanged (partial).
 Next: the heavy glossed leaves 0113 and 0089 (and 0103) beside 0494/0474 as known-answer candidates (~$4.5 each, premise check first); 0110 is 0109's neighbour (MANT-0109
 already read 0109 only); the rest of the unseen list from 0133 (~$3 for the next 50, 55 requests).
+
+## MANT-0474 (9 Oct 2026, 14:01-14:1x UTC by date -u, LANE FAMILY-A2i account 2): Loc. 694/08 frame 0474 (stamp 379) glossed leaf, second witness for MANT-0494
+
+Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-1310-jobs.md "MANT-0474" (MANT-0494's named next). A key test and a cross-leaf check, not
+a reading: the leaf's own interlinear period gloss makes its glossed text KNOWN.
+
+Prior work: `tools/prior_work.py sachsstaatsarchiv-manteuffel-1712 --item-spec 'shelfmark=10026 Loc. 694/08;folio=0474;sender=Manteuffel;
+recipient=Flemming' --step-type key --fetch` exit 4: 8 LEAD live claims (target-level, all on other frames or this job), recorded CLEAR;
+re-run exit 0 (UNCHECKED-NET: unsolved-ciphers not cloned; editions core-only). Check 1 by hand (grep 0474 in NOTES, HYPOTHESES, AUDIT,
+mant0608, ROOM): only inventory rows (inventory_stride4.tsv, rank_glossed_08.tsv, abbo_check.tsv 'n' in Acta Borussica BO I) -- never
+worked. Check 2: the gloss on the leaf is the known answer (the job's point). Checks 3-4 not needed for a key test (no plaintext claimed).
+Check 5 not run (no reading; the gate (b) decode is the gloss's own text).
+
+Image: mant0608/fetch.tsv URL for 0474, www.archiv.sachsen.de, 1 request, HTTP 200, 4345x3860, sha256 prefix ac2c36d87223be59 (=
+MANT-INV08's; film card "Aufnahme Einheit 0475"). The leaf is mostly clear text; code: one run on the left page (para 3, 'la premiere
+ouverture regardera ...'), ten lines on the right page (paras 4-5). Crops (committed, f0474_08/crops/, manifest.json):
+`python3 tools/iiif_lines.py --image 0474.jpg --region 2150,1440,1200,940 --centres 85,125,240,290,425,470,530,585,630,705,885 --out f0474_08/crops --prefix c0474R --debug`,
+`... --region 1250,1560,890,360 --centres 76,312 --prefix c0474L`, gloss strips `... --region 2150,1440,1200,940 --centres 50,225,405,450,510,610,680
+--prefix g0474R` and `... --region 1250,1560,890,360 --centres 282 --prefix g0474L` (centres by eye; code bands carry gloss ink at their top edge,
+readers told to skip it).
+
+Passes: 4 blind Sonnet code calls (A and B per page, B in reverse order): passA_L/R.tsv, passB_L/R.tsv; 2 blind Sonnet gloss calls (gloss_L.tsv,
+gloss_R.tsv; V-BRANDT rule, used verbatim). Reconciliation (this worker, 2x zooms, before any span or score, key not consulted for digits):
+f0474_08/ciphertext.tsv, 132 tokens; passes agree except at 20 places. Both passes stopped short of R01's tail (24 22 31 53, worker eye only,
+low) and both read R03 as '6 10 00' (eye 6.1.10.60 .. 24.7.4; B put 9.7.4 in the next band). Left as both passes read where the eye doubts:
+T036 10 (16?), T099 32 (22?), T119 34 (see below).
+
+Gate (PREREG f0474_08/PREREG-MANT0474.md, pushed 44f641f53 and checked on origin before scoring): f0474_08/gloss_gate.py (0494's statistic,
+seed 474; `--check` passes): **left-page gloss pass S 11/11 keyed vs permuted p99 4 (mean 1.6), 0/1000 -> PASS; right-page gloss pass S 60/69
+vs p99 19 (mean 11.7), 0/1000 -> PASS; pooled 71/80 vs p99 21 PASS (reported).** Spans: G01 'la Religion de notre [Prince] Royal' 11/11
+(the gloss pass read 'Ennemy'); G02 'de sortir de la galere ou nous sommes embarquez' 17/19; G06 'fils dans les sentimens de notre charmant
+Docteur Luther' 21/24; G07 'nos' 3/3; G08 'Ennemis et de nos alliez' 10/11; G04 150 vs 'le Roy' misses only by the key's long form ('le Roi
+de Pologne'), as 227 on 0494.
+
+Gate (b) (f0474_08/judge_gate.py, copy of 0494's, seed 474) on the two >= 15-token runs taken as unglossed (R01 tail + R02, R08): power 37/38 at
+32 letters, real -1.226 vs permuted p99 -1.495, 0/1000 PASS -- but they decode to 'uqomdesembarques' and 'antdncteurluuher', the run-on of
+the gloss phrases '(ou nous) sommes embarquez' and '(charm)ant Docteur Luther'. Known text, not a reading; as on 0494, the positional spans
+are too narrow and the gloss S is a lower bound.
+
+Cross-leaf table (f0474_08/candidates.tsv): **none of MANT-0494's 13 held right-page codes (715, 295, 340, 475, 410, 403, 431, 384, 499, 419,
+375, 583, 548, 408, 231, 357, 581, 561, 540) occurs on 0474**, whose code is letter range plus 150 (le Roi de Pologne), 246 and 303 (Pape):
+no second witness, they stay held. 44: 0474 reads l at a bracketed slot (key value), not 0494's 'c'. 54: all three 0474 instances read u
+inside gloss-given text (embarques, docteur luther), not 0494's 'et' -- consistent with 0494 T036 being a misread 59. 34: p at 'Pr' (key
+value); a second instance T119 sits at 'i' in 'Ennemis' -- post-score eye check: the glyph is the y-tailed 9 the passes read as 9 in the next
+token '29', so most likely 39 (i), a misread, not a conflict (ciphertext.tsv left as read, scored as read). 0474's own: 63 (Krauske null,
+'non valeurs?', M) at 'a' in 'galere' between matched 7 (g) and 103 (le), a rule-4 conflict logged, key unchanged (settled 7.63 from A 76? /
+B 7.63?, low); 246 unkeyed, one instance, under 'ou [nous] sommes' by position, held.
+
+Grades (rule 4, 132 code tokens): C 71 (matched under the PASSing gloss passes); S 32 (gate (b) letter tokens, text also given by the gloss);
+M 29 (11 unmatched in spans, 8 left-page tail, 33.24, R10 tail 7, 303). H 0.
+
+Key extension: none; key.tsv unchanged. Requests: www.archiv.sachsen.de 1 (200). Vision: 6 Sonnet calls + worker reconciliation. No novelty
+class; status unchanged (partial).
+Next: 0313 and 0447 (same Breton / Queen matter per MANT-INV08C; 0447's right page has long glossed runs) as further witnesses for 0494's held
+codes (~$5.5 each); one native look at 0494 T036 (54 vs 59) and 0474 T119 (34 vs 39), disk crops already committed (~$0.3).

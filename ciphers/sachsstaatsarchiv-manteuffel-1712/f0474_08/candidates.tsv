@@ -1,0 +1,17 @@
+# MANT-0474 (9 Oct 2026): second-witness table for MANT-0494's held/conflict codes (f0494_08/candidates.tsv) and 0474's own codes outside key.tsv or conflicting with it. Grade C from the gloss at most; NEVER entered in key.tsv.
+# 0474 gloss gate: left pass 11/11 vs p99 4 PASS; right pass 60/69 vs p99 19 PASS (gate.out). Gate (b) runs (judge/) decode to continuations of the gloss phrases (known text).
+# status: absent = code not on 0474 (no second witness); agree/disagree = 0474 slot vs 0494 slot; candidate/conflict/held as in PREREG-MANT0494
+code	f0494_slot	f0494_status	n_on_0474	f0474_tokids	f0474_slot	cross_leaf	note
+715	deux	held	0		-	absent	0474's code is letter range plus 150, 246, 303 only
+295	envoye	held	0		-	absent	
+340 475 410	nostre lettre	held	0		-	absent	
+403 431 384 499 419 375 583 548 408	l ont moins menté	held	0		-	absent	none of the nine on 0474
+231 583	court	held	0		-	absent	
+357 581 561 40 540	ira a Spandow	held	0		-	absent	(40 = b not on 0474 either)
+44	c (Colhowl)	held/conflict	2	T004 T128	l (G01 'la Religion', matched); T128 unglossed tail	disagree	0474 supports key 44 = l at a bracketed slot; 0494's 'c' slot not repeated
+34	Hyen	held/conflict	3	T017 T066 T119	p (G05 'Pr', matched); i (G08 'Ennemis', miss); T017 unglossed	disagree	T066 supports key 34 = p; T119 sits at 'i' in 'Ennemis' between matched 13(m) and 29(s) -- a second conflict, or a misread 39 (the hand's y-tailed 9; 39 = i matched at T007/T026/T072/T081): post-score eye check (3x zoom, worker): its second digit is the same y-tailed glyph both passes read as 9 in the next token '29', and unlike the closed 4 of '14' in the same run -- most likely 39 (i), i.e. a misread, not a conflict; ciphertext.tsv left as both passes read it (scored as read)
+54	et (Détaché)	conflict	3	T052 T103 T107	u (gate (b) runs: 'embarques' q-u-e-s, 'docteur luther' teur/lu)	disagree	all three 0474 instances read u under key.tsv inside text the gloss gives (known text, gate (b) PASS); 0474 does not support 0494's 'et' slot -- consistent with 0494 T036 being a misread 59
+63	-	-	1	T032	a (G02 'galere': 7 g, 63, 103 le)	conflict	key.tsv 63 = null (Krauske brace 61-63 'non valeurs?', M); on 0474 it sits at 'a' bracketed by matched 7(g) and 103(le). Rule 4 conflict, both witnesses kept; settled 7.63 from A 76? / B 7.63? (low)
+246	-	-	1	T038	ez (G02 span edge) / 'nous' by position	held	unkeyed; the DP slot at the span edge is an artefact (the gloss runs on into the gate (b) run); by position it sits under 'ou [nous] sommes' -- one instance, positional only
+150	-	-	1	T064	le Roy (G04)	note	key 150 = le Roi de Pologne vs gloss 'le Roy': abbreviation normalisation miss (as 227 on 0494), not a conflict
+303	-	-	1	T132	unglossed	note	key 303 = Pape ('faire instruire 303 de son intention'); M, no gloss

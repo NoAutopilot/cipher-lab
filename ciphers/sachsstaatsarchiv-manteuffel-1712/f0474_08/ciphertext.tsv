@@ -1,0 +1,133 @@
+tokid	crop	passA	passB	settled	conf	note
+T001	c0474L_L02	110	110	110	high	agree
+T002	c0474L_L02	60	60	60	high	agree
+T003	c0474L_L02	35	35	35	high	agree
+T004	c0474L_L02	44	44	44	high	agree
+T005	c0474L_L02	9?	9?	9	low	agree (both ?)
+T006	c0474L_L02	7	7	7	high	agree
+T007	c0474L_L02	39	39	39	high	agree
+T008	c0474L_L02	33	33	33	high	agree
+T009	c0474L_L02	21	21	21	high	agree
+T010	c0474L_L02	120?	120	120	low	agree (both ?)
+T011	c0474L_L02	10	10	10	high	agree
+T012	c0474L_L02	14	14	14	high	agree
+T013	c0474L_L02	16	16	16	high	agree
+T014	c0474L_L02	28	28	28	high	agree
+T015	c0474L_L02	26	26	26	high	agree
+T016	c0474L_L02	2	2	2	high	agree
+T017	c0474L_L02	34	34	34	high	agree
+T018	c0474L_L02	27	27	27	high	agree
+T019	c0474L_L02	60	60	60	high	agree
+T020	c0474R_L01	120	120	120	high	agree
+T021	c0474R_L01	35	35	35	high	agree
+T022	c0474R_L01	51	51	51	high	agree
+T023	c0474R_L01	33	33	33	high	agree
+T024	c0474R_L01	60	60	60	high	agree
+T025	c0474R_L01	28	28	28	high	agree
+T026	c0474R_L01	39	39	39	high	agree
+T027	c0474R_L01	26	26	26	high	agree
+T028	c0474R_L01	100	100	100	high	agree
+T029	c0474R_L01	10	10	10	high	agree
+T030	c0474R_L01	110	110	110	high	agree
+T031	c0474R_L01	76?	7	7	low	A 76? (one group) vs B 7.63?; eye 7.63
+T032	c0474R_L01	-	63?	63	low	see 7
+T033	c0474R_L01	103	103	103	high	agree
+T034	c0474R_L01	27	27	27	high	agree
+T035	c0474R_L01	2	2	2	high	both 10; eye could be 16 (doubt, left as read)
+T036	c0474R_L01	10	10	10	high	agree
+T037	c0474R_L01	6	6	6	high	agree
+T038	c0474R_L01	46?	246?	246	low	A 46? B 246?; eye 246
+T039	c0474R_L01	67?	67?	67	low	agree (both ?)
+T040	c0474R_L01	2477310?	-	24	low	both passes stopped before this tail (A wrote one blurred group); worker eye only; 4/9 doubt
+T041	c0474R_L01	-	-	22	low	worker eye only
+T042	c0474R_L01	-	-	31	low	worker eye only; interlinear 58 written above 31-53 (a number gloss/correction?)
+T043	c0474R_L01	-	-	53	low	worker eye only
+T044	c0474R_L02	35	35	35	high	agree
+T045	c0474R_L02	51	51	51	high	agree
+T046	c0474R_L02	35	35	35	high	agree
+T047	c0474R_L02	31	31	31	high	agree
+T048	c0474R_L02	55	55	55	high	agree
+T049	c0474R_L02	25	25	25	high	agree
+T050	c0474R_L02	60	60	60	high	agree
+T051	c0474R_L02	24	24	24	high	agree
+T052	c0474R_L02	54	54	54	high	agree
+T053	c0474R_L02	10	10	10	high	agree
+T054	c0474R_L02	29	29	29	high	agree
+T055	c0474R_L03	6?	6?	6	low	both 6?
+T056	c0474R_L03	-	-	1	low	both passes missed; eye 6.1.10.60
+T057	c0474R_L03	10?	10?	10	low	both 10?
+T058	c0474R_L03	00?	00?	60	low	both 00?; eye 60
+T059	c0474R_L03	-	9?	24	low	B read 9.7.4 into the next band (A missed); eye 24 (4/9 doubt); struck/unclear ink under the gloss between 60 and 24 not read
+T060	c0474R_L03	-	7	7	low	B only
+T061	c0474R_L03	-	4	4	low	B only
+T062	c0474R_L04	33	33	33	high	agree
+T063	c0474R_L04	24	24	24	high	agree
+T064	c0474R_L05	150	150	150	high	agree
+T065	c0474R_L06	103	103	103	high	agree
+T066	c0474R_L06	34	34	34	high	agree
+T067	c0474R_L06	26	26	26	high	agree
+T068	c0474R_L06	51?	5?	51	low	A 51? B 5?; eye 5|1 -> 51 (low)
+T069	c0474R_L06	16?	16?	16	low	agree (both ?)
+T070	c0474R_L06	14?	14?	14	low	agree (both ?)
+T071	c0474R_L07	36?	76	36	low	A 36? B 76; eye 36
+T072	c0474R_L07	39?	37	39	low	A 39? B 37; eye 39 (y-tail 9)
+T073	c0474R_L07	12	12	12	high	agree
+T074	c0474R_L07	29	29	29	high	agree
+T075	c0474R_L07	120	120	120	high	agree
+T076	c0474R_L07	103	103	103	high	agree
+T077	c0474R_L07	51	51	51	high	agree
+T078	c0474R_L07	35	35	35	high	agree
+T079	c0474R_L07	21	21	21	high	agree
+T080	c0474R_L07	28	28	28	high	agree
+T081	c0474R_L07	39	39	39	high	agree
+T082	c0474R_L07	2	2	2	high	agree
+T083	c0474R_L07	20	20	20	high	agree
+T084	c0474R_L07	100	100	100	high	agree
+T085	c0474R_L07	35	35	35	high	agree
+T086	c0474R_L07	32	32	32	high	agree
+T087	c0474R_L07	22	22	22	high	agree
+T088	c0474R_L07	57	57	57	high	agree
+T089	c0474R_L07	60	60	60	high	agree
+T090	c0474R_L07	2	2	2	high	agree
+T091	c0474R_L07	81	81	81	high	agree
+T092	c0474R_L07	50	50	50	high	agree
+T093	c0474R_L07	27	27	27	high	agree
+T094	c0474R_L07	43	43	43	high	agree
+T095	c0474R_L08	25?	25?	25	low	agree (both ?)
+T096	c0474R_L08	14?	14?	14	low	agree (both ?)
+T097	c0474R_L08	54?	38?	28	low	A 54? B 38?; eye 28
+T098	c0474R_L08	53	53	53	high	agree
+T099	c0474R_L08	32	32	32	high	both 32; eye 22 possible (doubt, left as read)
+T100	c0474R_L08	30	30	30	high	agree
+T101	c0474R_L08	28	28	28	high	agree
+T102	c0474R_L08	10	10	10	high	agree
+T103	c0474R_L08	54	54	54	high	agree
+T104	c0474R_L08	26	26	26	high	agree
+T105	c0474R_L08	42	42	42	high	agree
+T106	c0474R_L08	67	67	67	high	agree
+T107	c0474R_L08	54	54	54	high	agree
+T108	c0474R_L08	-	8?	8	low	B 8?, A missed; eye 8
+T109	c0474R_L08	10	10	10	high	agree
+T110	c0474R_L08	60	60	60	high	agree
+T111	c0474R_L09	21	21	21	high	agree
+T112	c0474R_L09	33	33	33	high	agree
+T113	c0474R_L09	51	51	51	high	agree
+T114	c0474R_L10	10	10	10	high	agree
+T115	c0474R_L10	14	14	14	high	agree
+T116	c0474R_L10	32	32	32	high	agree
+T117	c0474R_L10	2	2	2	high	agree
+T118	c0474R_L10	13	13	13	high	agree
+T119	c0474R_L10	34	34	34	high	agree
+T120	c0474R_L10	29	29	29	high	agree
+T121	c0474R_L10	100	100	100	high	agree
+T122	c0474R_L10	35	35	35	high	agree
+T123	c0474R_L10	14	14	14	high	agree
+T124	c0474R_L10	16	16	16	high	agree
+T125	c0474R_L10	58	58	58	high	agree
+T126	c0474R_L10	25	25	25	high	agree
+T127	c0474R_L10	12	12	12	high	agree
+T128	c0474R_L10	44	44	44	high	agree
+T129	c0474R_L10	46	46	46	high	agree
+T130	c0474R_L10	35	35	35	high	agree
+T131	c0474R_L10	89	89	89	high	agree
+T132	c0474R_L11	303	303	303	high	agree

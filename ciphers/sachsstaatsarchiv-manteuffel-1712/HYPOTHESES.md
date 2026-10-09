@@ -313,3 +313,5 @@ PREREG-MANTCUC.md (4c5930db8, pushed before scoring); scorer mant0608/cuc/cuc_sc
   before anything is read there (no transcription change by this job beyond the brief's two fixes).
 - 0177 r03 '13' alone ('si 13 vouloit peut-etre me tromper') = 'm': one-code abbreviation, most likely the 'maier' of 0176 r02/r05 (13 = m is that
   name's first sign). M; who it is stays open (V-MANT0176's Meyerfeldt hypothesis neither supported nor weakened by 0177).
+
+- MANT-0474 (9 Oct 2026): code 63 -- key.tsv null (Krauske 1893 f.3, brace 61-63 'non valeurs?', M) vs 694/08 0474 (stamp 379, Manteuffel to Flemming, ~Nov 1712) period gloss 'galere', where 63 sits at 'a' between matched 7 (g) and 103 (le); one instance, token low (A 76? / B 7.63?). Rule-4 conflict logged, both witnesses kept, key.tsv unchanged (f0474_08/candidates.tsv).

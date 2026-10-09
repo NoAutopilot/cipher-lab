@@ -1,0 +1,7 @@
+power	at 32 letters: 37/38 = 0.97	TEST
+block_1	letters 1-32	real -1.226	permuted mean -2.008 p95 -1.621 p99 -1.495 max -1.282	permuted>=real 0/1000	PASS	uqomdesembarquesantdncteurluuher
+leaf_0474	letters 32	blocks 1	PASS	uqomdesembarquesantdncteurluuher
+# whole leaf (reported, no power behind it if L > 62): real -1.226 permuted mean -2.007 p95 -1.663 p99 -1.535 permuted>=real 0/1000
+# per run (reported, not gates): run, letters, score, decoded letters
+r01tail_r02	16	-1.048	uqomdesembarques
+r08	16	-1.438	antdncteurluuher
