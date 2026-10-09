@@ -377,3 +377,36 @@ with --help, an offline test, a tool_shelf.tsv row and a SYSTEM.md row.
   step is that Gallica probe.
 - **Hand-over.** This incarnation hands over to incarnation 3 at this check-in (context about 560k); incarnation 3 runs the
   S2 score after S2-ADJ, the notation fold and the Amendment 9 recount after B3.
+
+## Amendment 9 (lane incarnation 3, session_01P46fwsU5VTc1oJiV1sayg5, 9 Oct 2026 22:2x UTC by date -u; after the Spinelli notation fold and B3's stop (TXE2-BASE-GUN); written BEFORE any eval look and BEFORE the S2 score, neither taken; the S2 line is added below by a dated line when the score is run)
+- **Spinelli notation fold (Amendment 8, F36), run read-free.** `benchmark-tx/txeng2/basespin2/fold/collapse_map_fold.tsv`
+  (B2's map + the fold rows; rule in its comment lines; the truth was not opened, nothing re-read). KEY_U_V2 folds to HOOK:
+  key.tsv's u rows are EM (U/V sign 1) and HOOK_U_V, and the 28 Sept atlas map's HOOK row places U/V sign 2 in the merged hook
+  family, so the cell's key code is HOOK_U_V, already collapsed to HOOK. KEY_SS does NOT fold: key.tsv carries no row with
+  value ss (the keymatch passes never assigned the cell a code), so the declared rule yields nothing and KEY_SS scores as
+  itself. passZ_v5 under the fold: 8/193 as measured, **6/191 flagged-excluded** (B2's map: 10 / 8; v4: 8 / 6); v4 -> v5 under
+  the fold fixed 4 / broken 4, p 1.0, a baseline change either way. Amendment 8's "expected 5" assumed both names fold; the
+  pool takes **6** (the rule as declared, not the expectation). BENCHMARK-TX notes: the Spinelli base is passZ_v5 scored
+  under the fold map; `tools/tx_bench.py ... --label-map benchmark-tx/txeng2/basespin2/fold/collapse_map_fold.tsv`.
+- **B3 stopped before any read (TXE2-BASE-GUN, 22:15): the pre-registered treatment was wrong for 4 of the 6 tiles.** The
+  worker enlarged the six GS1 exemplars: d6 (p1cal_L03.16, L06.14), Ib (L05.14) and 34 (L06.17) are drawn as labelled -- the
+  disagreement is between the key and the print alignment (a key gap or homophone, d6 = c / Ib = s, and an alignment or
+  encipherment question at 34 = e), the same label-level patterns the build already flags as align-conflict on p.2 -- while
+  xb (L08.15, a plain x, no bar) and ps (L09.14, a p with no s joined) are shape slips whose relabels to x and p fit both the
+  image and the key. A value-blind sheet's labels are shapes: relabelling the four by the print's letter would teach readers
+  wrong shapes. **Decision (option b): B3b** -- the sheet is corrected on the two shape slips only (xb -> x at L08.15, ps -> p
+  at L09.14), the four key-vs-print tiles stay as drawn and are recorded as "shape correct, value disputed" in a sheet
+  changelog (readers never see values, so nothing a reader sees changes for them), the d6/Ib/34 conflicts are handed to the
+  gunther folder's own lane as a one-line key question in its NOTES.md (no key edit by this lane), and the fresh two-pass
+  baseline, reconcile, packet-shape adjudication and ONE score run as B3 declared (a baseline change, never a gain; one
+  opening; PREREG-txeng2-11 B3b). GS1's lesson for the brief templates: a value-level cross (key value vs print letter)
+  names candidate sheet defects; only an image check of the tile decides a relabel, and the relabel is to a shape label.
+  Until B3b is on file, gunther's count stays 5 under V3's flags and no look is spent on it.
+- **Pool after this amendment:** eval_heldout 10 + f178r 6 + spinelli **6** (fold) + f152r 1 + gunther 5 (pending B3b) =
+  **28**; the under-24 rule stays lifted; gate p < 0.05 at >= 24; no instrument past dev; eval looks 0; S2 look 0 (owed on
+  passZ_S2b after S2-ADJ, PREREG-txeng2-S2 "Protocol repair", F34 clause).
+- **Refill (TX-PROGRAM slot rule).** Runnable now: B3b only. Gated until 10 Oct 00:00 UTC: the Gallica probe (N1 colour
+  master btv1b9060248g canvases 182-184; the fr.16105 clerk pages ff.104-108 for a confirm2 image verifier; the five
+  Gallica-held pool candidates in benchmark-tx/txpool/CANDIDATES.md). Gated on material outside the lane: X2b/X2c (no
+  non-pool labelled ink of the 1572 hand), E-162r (built only with other new material), the owner's sorter session on the
+  boxed eval tiles (owner-side). The slot count runs below 5 while no further row is runnable; that is reported, not padded.
