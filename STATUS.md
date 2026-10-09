@@ -7003,6 +7003,7 @@ vs L, dev then eval once): three Opus 5.5 workers spawned 07:11 UTC.
 | D2 one blind read at LANCZOS 4x (tx_prep sr4) | TXE-D2 session_01NqN3PQGuXM9vovv8z821EX, cap 7, done 07:50, cost 7.49 | vs A 9/8 p 1.0; vs L 3/11 | not run | FAIL; the proxy's gain is the classifier's, not the reader's |
 | J jitter-stability prior in the lattice (glyph_atlas --jitter, key_decode_lattice --stability; idea M11, read-free) | TXE-J session_01WeHi2ZeWrJ1XmCi44D9FrU, cap 4 | dev_tune vs L + permuted control | -- | -- |
 | K Fable vs Opus adjudicator of A/B splits from the crops (idea M19) | TXE-K session_01W5YLfDsp5oBdhbYw4zP36s, cap 8 | dev_tune items vs L and vs the Sonnet adjudicator | -- | -- |
+| L shuffled-order tiles vs ordered, same tiles (idea M7) | TXE-L session_01WgWbWjKJb6vbkHiMtofZ2R, cap 7 | shuffled vs ordered paired on the same positions | -- | -- |
 | G document-recovery practice literature -> research/TX-RECOVERY-PRACTICE-2026-10-09.md (owner idea 5) | TXE-G session_01Q5gZS93pQxXHF4cVWDKxok, cap 6, done 07:31, cost 3.72 | sauvola 7/10, clahe 4/65, swn 3/3 on the proxy | not run | FAIL; 19-method note written |
 Amendments 1-2 (07:0x UTC): cap 150, ideas register research/TX-IDEAS-2026-10-09.md (23 ideas, owner's eight first), single-instrument gate p<0.01, one eval look each (0 taken), confirm item from TX-CONFIRM-SET opened once at the end, final pipeline applied to one unread Birago 1572 letter. Round 3 (cap 20) combines what moved eval, re-scores the whole pipeline on no.87 against 0.045, feeds what still splits to the sorter focus.tsv.
 
