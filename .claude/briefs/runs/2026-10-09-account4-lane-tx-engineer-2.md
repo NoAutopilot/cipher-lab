@@ -111,3 +111,20 @@ verdict; RESULTS in research/TX-ENGINEER-2-2026-10-09.md with one plain-language
 defined as, whether it was reached, on how many signs, what he should do at the sorter) and the S1-S5 numbers; TRANSCRIPTION.md
 "Today" column moved only on S1/S2; a LEARN line for the brief templates. The orchestrator reports to the owner only from that
 file, in the OWNER REPORT FORMAT, when he asks.
+
+## Amendment 1 (orchestrator, 9 Oct 2026 17:2x UTC, on the owner's decision to continue as a standing programme)
+The owner continues this as the project's biggest challenge, with up to 10 recurring sessions on it, refilled as others close,
+a shared memory of what was tried and failed, and an adversarial reviewer outside the lane. research/TX-PROGRAM.md is the
+charter; this lane is slot 2. Changes to this brief: (1) keep 5-7 experiment or build workers live while the register has a
+runnable row, refilling at every check-in (never below 5 while the window allows); the stop rule stays the window, not a count
+of nulls. (2) `research/TX-REGISTER.tsv` (tools/tx_register.py, being built by TX-REGISTER) is the one memory: regenerate it at
+every check-in, and from the moment it exists every new PREREG carries a "Nearest prior" line naming the register ids it is
+nearest to and one sentence of what is different (`tools/tx_register.py --check PREREG.md` passes before the experiment
+spawns). (3) TX-RED (brief 2026-10-09-account4-tx-red.md) reviews every PREREG and RESULTS and posts "flag for LANE
+TX-ENGINEER-2 and orchestrator (account-4)" lines: answer each finding in research/TX-IDEAS-2-2026-10-09.md (adopted / rebutted
+with the number / deferred with the reason) by your next check-in; a blocking finding on a running experiment pauses its eval
+look until answered. (4) The strategy question TX-RED will press: the error mass that every reader gets wrong the same way
+cannot be fixed by re-weighting, re-ordering or re-presenting the same passes; experiments that bring NEW information (a
+better image, a sibling leaf, the key's own marks, the owner's tiles, a different segmentation) rank above those that do not,
+at equal cost. (5) Your ROOM check-in line now also names: workers live / slots free, register rows added, red-team findings
+open. Everything else in this brief stands (S1-S5, the gate, one eval look per experiment, the confirm2 item untouched).
