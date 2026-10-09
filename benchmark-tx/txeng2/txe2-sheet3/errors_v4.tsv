@@ -1,0 +1,7 @@
+line	pos	truth	plain	reads	consensus	rank_share	flagged	cls
+p1c_L02	26	OMEGADOT|PHI	g	PHI|NEW:circle-on-stem		0.376	1	reader-flag
+p1c_L02	27	EM|HOOK	u	JHOOK|NEW:long-s-crossbar		0.464	1	reader-flag
+p1c_L06	21	EM|HOOK	u	JHOOK|NEW:long-s-crossbar		0.144	1	reader-flag
+p2c_L01	17	OMEGADOT|PHI	g	PHI|NEW:circle-on-stem		0.368	1	reader-flag
+p2c_L02	3	DEE|ENN|TWO	s	NEW:large-looped-H-flourish|JHOOK/NEW:long-slant-stroke?		0.004	1	reader-flag
+p2c_L02	7	DIAMOND|HCURL	n	PHI|PHI	PHI	0.38	0	consensus-on-sheet

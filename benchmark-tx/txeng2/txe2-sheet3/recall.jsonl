@@ -1,0 +1,2 @@
+{"item": "spinelli-c1519-confirm", "exclude_flagged": false, "errors": 8, "caught": 5, "caught_reader_flag": 5, "caught_score_only": 0, "errors_untiled": 0, "tiled": 250, "flagged": 37, "share_tiled": 0.148, "scored": 193, "flagged_scored": 27, "share_scored": 0.14, "chance_P": 0.0021}
+{"item": "spinelli-c1519-confirm", "exclude_flagged": true, "errors": 6, "caught": 5, "caught_reader_flag": 5, "caught_score_only": 0, "errors_untiled": 0, "tiled": 250, "flagged": 37, "share_tiled": 0.148, "scored": 191, "flagged_scored": 27, "share_scored": 0.141, "chance_P": 0.0003}
