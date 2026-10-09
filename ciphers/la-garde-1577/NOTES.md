@@ -1956,3 +1956,83 @@ Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading
 - [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of the 57 split cells, 16 left doubt (resolution-limited); LAG-V2 carried the 7 sure settles v2 lacked into v2
 - [ ] retry: wordcode run at the measured error (LAG-V2: control gates at 0.071 only); its score-gap gate not yet run
 Verdict: keep going: 2 internal gaps; cheapest next: the syllabary T re-score on the revised spec, ~$1, then the wordcode score-gap gate at err 0.071, ~$2.5
+
+## LAG-RESCORE (9 Oct 2026, account 2, LANE FAMILY-A2f, Opus, CPU only)
+
+**Job:** LAG-V2's Verdict "cheapest next": (1) the syllabary statistic T re-scored on the LAG-V2 spec; (2) the wordcode
+score-gap gate at err 0.071. No network beyond git, no vision, no subagents. Box 05:00-06:10 UTC.
+
+**Prior work** (`tools/prior_work.py la-garde-1577 --item-spec 'shelfmark=KHA A 11/XIV C/M-12;date=1577-11-28;sender=La
+Garde;recipient=Willem van Oranje' --step-type decode --offline`): **exit 4**, owed only LEAD 1-own (this job's 05:00 claim).
+Check 1 by hand: HYPOTHESES.md had no syllabary row on the revised spec and no wordcode gate row -> `--record`ed CLEAR; re-run
+**exit 0** ("proceed on the residue: whole item"). Checks 2-4 stand as LAG-MARKS recorded them (CONTEXT / CLEAR / CLEAR /
+KNOWN-PART clear part only); check 5 not applicable (no reading).
+
+**Pre-registration:** `PREREG-LAG-SYL.md` Amendment 3 and `PREREG-LAG-WC.md` Amendment 1, one commit d2810fa83 pushed 05:03 UTC
+(headers say "05:1x"; the clock read 05:03) before any score. Power shuffles were cut from 20 to 10 per held-out control to fit
+the box (own-shuffle p95 = the maximum of 10, a stricter bar), stated in both amendments.
+
+**(1) Syllabary on the revised spec.** Calibration (Amendment 1 invocation, `--control-only --seeds 3`): err 0 **0.932**, 0.067
+**0.842**, 0.071 **0.874**, all gate 0.60 met. Gate (`families/lag_sylv2.py`, 211 solves, 4 processes, 05:04-05:21 UTC):
+
+| Set | n | Per-token score |
+|---|---|---|
+| T (revised spec; was -2.9171 on the pre-LAG-V2 spec) | 1 | **-2.9422** |
+| (a) err 0.084+0.107, seeds 1-20 each | 40 | -2.9153 .. -2.6121, **p05 -2.9092**; T below all 40 |
+| (a71) err 0.071, seeds 1-20 (beside) | 20 | -2.9391 .. -2.5847, p05 -2.9391; T below all 20; recovery mean 0.732 |
+| (b) shuffled targets | 40 | -3.0235 .. -2.9208, **p95 -2.9421**; T at the 92.5th percentile |
+| Power, err 0.107 (rec >= 0.60) | 6 | **6 of 6 pass** -> PASS (all 10 pass, 4 below 0.60 not counted) |
+| Shuffled false-positive (leave-one-out) | 40 | 0 |
+
+Read-out (Amendment 3): power PASS, target **FAIL** -> the LAG-SYL control-backed negative for syllabary (regular assignment)
+**holds on the revised spec** at error <= 0.107, and against the 0.071 controls alone. On the revised spec T also falls just
+below the shuffle p95 (it cleared every shuffle on the old spec), so the 7 mark settles moved T down, not up. Coverage
+unchanged: LAG-SYL13 showed the negative does not extend to 0.13, so it covers the target only if the true one-reader
+marks-kept error is <= ~0.11 (central 0.071 inside, upper 0.125 outside).
+
+**(2) Wordcode score-gap gate at err 0.071** (`families/lag_wcgap.py`, 191 solves, 4 processes, 05:26-05:44 UTC). Statistic J
+= the spec judge's language score of the decode (LAG-V2's target decode reproduced at J = -1.121 before the run). Rule 3 check
+(in the amendment): J is computed on the decode, so a control whose layer is read can score above the target; it is not
+orthogonal to the manipulation.
+
+| Set | n | J |
+|---|---|---|
+| T | 1 | **-1.1214** |
+| (a) controls err 0.071, seeds 1-40 | 40 | -1.1191 .. -0.9314, **p05 -1.1124**, mean -1.0345; recovery mean **0.603**, 27/40 >= 0.60 |
+| (b) shuffled targets (the ARM-C1 leg) | 40 | -1.1960 .. -1.0685, **p95 -1.0845** |
+| gap J(T) - mean J(a) | | **-0.0869** (PASS needed >= -0.0779) |
+| ARM-C1: shuffled decodes >= p05(a) | 40 | 8 of 40; leave-one-out false-positive **2 of 40** (void above 2) -> judge usable, at its limit |
+| Power, err 0.071 (rec >= 0.60) | 6 | **6 of 6 pass** -> PASS (seed 110, rec 0.259, fails; not counted) |
+
+Read-out (Amendment 1): power PASS, target **FAIL** -> **control-backed negative for wordcode (`codes=marked`) at N=239 for
+one-reader error up to 0.071 only**. Three cautions, all in the numbers: J(T) sits 0.002 under the lowest of 40 controls, so the
+margin is thin; on 40 seeds the 0.071 control's recovery mean is 0.603, at the gate (LAG-V2's 3-seed 0.777 was the lucky end),
+so 0.071 is already at this control's crossover, as 0.13 was for syllabary (LAG-SYL13); and the target J lies inside the
+shuffled-target spread (67.5th percentile), i.e. this solver's decode of the real text scores no better than its decodes of
+structure-free orderings. Not a negative at 0.125 (control below gate, LAG-V2). This is the third wordcode attempt on this text
+(WC-LAGARDE2 err 0.23; LAG-V2 err 0.071/0.125; this gate); any further err-only attempt with this tool is retired (rule 3,
+third-attempt clause).
+
+**Rule 7:** both scripts carry `--check` (re-solve and diff, deterministic by seed); neither was re-run inside the box (17 and 18
+min each). Named below. `--report` re-prints each table from the committed TSV.
+
+Grades: 0 cipher tokens read (H 0, C 0, S 0, M 0, I 0); no reading. Status unchanged (`open`). Requests: github.com (git only).
+Vision 0, subagents 0. Files: `PREREG-LAG-SYL.md` A3, `PREREG-LAG-WC.md` A1, `families/lag_sylv2.py/.tsv`,
+`families/lag_wcgap.py/.tsv`, HYPOTHESES.md five rows (three by family_run.py), prior-work.tsv, this section.
+
+## Remaining gaps (LAG-RESCORE, 9 Oct 2026)
+Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading exists; homophonic/masc excluded by LAG-GAP; syllabary (regular) excluded at error <= 0.107 by LAG-SYL, re-confirmed on the LAG-V2 spec by LAG-RESCORE, not extended to 0.13 by LAG-SYL13; wordcode (codes=marked) excluded at error <= 0.071 only by LAG-RESCORE, thin margin; coverage of the target undecided: one-reader marks-kept error 0.071 central, 0.125 upper)
+- marks-kept transcription error between 0.071 and 0.125 - blocker: illegible; LAG-MARKS' 16 doubt cells are resolution-limited at 150 dpi; syllabary loses its control gate between 0.11 and 0.13 and wordcode is already at its crossover at 0.071, so only a lower measured error can settle coverage; next: a higher-resolution image of 6179 (KHA original or the WVO PDF at native resolution), then re-settle the doubt cells
+- rule-7 checks of lag_sylv2 and lag_wcgap - blocker: not-attempted; neither 17-18 min re-solve fitted the box; next: `python3 ciphers/la-garde-1577/families/lag_sylv2.py --check` and `lag_wcgap.py --check` (CPU, ~35 min), ~$0.7
+- running-key / code-layer designs at N=229 - blocker: too-short; LAG-NEXT: the running_key control reads 27% with no noise on the target's 15 message lengths; reopens only with more same-system ciphertext (pooling) or a different instrument
+- two `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: illegible; LAG-MARKS looked both at 150 dpi, both doubt; a higher-resolution image is the only route
+
+## Escalation (LAG-RESCORE, 9 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power for running key and wordcode, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG; Gachard t.5 p.423 calendar summarises the clear part only (LAG-MARKS)
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of 57 split cells, 16 left doubt (resolution-limited); LAG-V2 carried the 7 sure settles into v2
+- [x] retry: syllabary re-scored on the revised spec (negative holds, <= 0.107); wordcode score-gap gate at 0.071 run (negative, <= 0.071 only); wordcode err-only retries [retired], instrument tools/families/wordcode.py via family_run.py (third attempt; control below gate at 0.125), reopens only with a different instrument or pooled ciphertext
+Verdict: keep going: 1 internal gap; cheapest next: lag_sylv2/lag_wcgap --check, ~$0.7; then a higher-resolution image of 6179 for the doubt cells
