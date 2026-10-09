@@ -741,3 +741,12 @@ phrase is the file's own `#` header ("H C 130 S M", Google Books 359 volumes on 
 does not skip comment lines or line labels (flagged to the lane). Re-run on a header-free copy holding only BLA 186's two lines
 ("l'ambassadeur a ete fort te affaire. Monsieur de Patigno m'en a parle ce soir"): ia-global CLEAR (no hits); gbooks UNCHECKED-NET
 (HTTP 503, not retried); exit 4 owes only UNCHECKED-NET rows (4-editions, gbooks). No SUBSTANCE or LEAD from the tool. Class unchanged.
+
+## propagate-revision (UNA2-BLA, 9 Oct 2026)
+
+Worker, not a verifier: no class changed. A reading revision after this file was written, carried here per rule 10. UNA2-BLA (NOTES.md "UNA2-BLA
+higher-resolution re-read", PREREG-D3BLA2 amendment 3) read BLA191 p5 L11-L13 on the Huntington IIIF 4354 px copy; known-answer gate 14/14 PASS;
+8 L12 tokens moved M -> C (26 ai, 591 in, 275 dans, 659 l', 758 no, 942 ra, 754 n, 163 ce); key.tsv unchanged; `decode_key.py --check` exit 0.
+Current counts (supersede the table above): **C 138, S 3, M 14, U 17 of 172**; mssBLA 191(a) p5: C 115, S 3, M 11, U 12 (H/C/S 83.7%); mssBLA 186
+and 184 unchanged; all three H/C/S 141/172 = 82.0% (C alone 80.2%). The depth fields in status.json (D2, depth_pct 77.3) are the verifier's to
+revisit; this worker does not set depth. SECOND-OPINIONS-QUEUE row SO-BLATHWAYT-1728's prompt carries no token counts; nothing to carry there.

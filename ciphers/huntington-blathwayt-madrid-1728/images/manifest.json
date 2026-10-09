@@ -812,5 +812,17 @@
     "sha1": "729b4bf191731cfdd741edcc768bba25f910b0c8",
     "date": "[c. 1729]",
     "catalogue_note": "In cipher, deciphered in French."
+  },
+  {
+    "item": "BLA191",
+    "page": "p5",
+    "pointer": 61005,
+    "url": "https://hdl.huntington.org/iiif/2/p15150coll7:61005/full/4354,/0/default.jpg",
+    "file": "BLA191_p5_w4354.jpg",
+    "bytes": 4348806,
+    "sha1": "130df26d4be231e248f127bde895c232018ea396",
+    "size": "4354x5804 (native 8708x11608 per info.json)",
+    "date": "1729, Aug. 8",
+    "fetched": "9 Oct 2026, UNA2-BLA"
   }
 ]
