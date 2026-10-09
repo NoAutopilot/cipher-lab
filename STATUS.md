@@ -5925,6 +5925,45 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-1815, session_01HjAHKrpYotLhWiRH8gMHxL, account 2), 9 October 2026 (closed 19:3x UTC: four waves worked, lane ~51 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-1815-jobs.md. Started from the
+1510 handoff next list items 1, 2, 3, 5 and the next_steps --hot-only parallel action for antt-msliv0638. Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. Workers 17 in 4 waves (18:20-19:28 UTC; Opus 15, Sonnet 2; all ledgered from get_session, archived): 45.21;
+orchestrator ~6. Account 2 seven_day `allowed_warning` throughout (continued per blast rules). No Gallica probe (no Gallica job). Known-text share:
+effectively all reading spend (~30) went to leaves that turned out N0 by their own period gloss -- key tests and witnesses for the pool, above the
+guardrail's fifth; said here for the orchestrator. ledger_check exit 1 is pre-existing (duplicate ids at LEDGER lines 426-438).
+
+Results (sachsstaatsarchiv-manteuffel-1712, Loc. 694/08 unless noted):
+- 0490 (page 392, mid-Nov 1712): right page 148 tokens, gloss gate PASS 61/92 vs p99 22 (V-MANT0490: N0 D1, holds on blind-pass digits alone; 8 of
+  C 61 rest on y=9); left page 52 tokens gate PASS 24/42 (V-MANT0490L: N0 D1, L05 33 C->M). Gutter run (38 letters): the reader's fr18 judge PASS was
+  VOIDED by V-MANT0490L (shuffled-target decodes pass 19/200 > 10/200) and the run is followed by its own clear rendering -> grades C 23 S 0 M 67 of 90.
+- 0309 (16 Sept 1712) = covering dispatch of the 0312/0314 Extrait pair, gate PASS 35/40, C35 M13; V-MANT16S: 0309 + 0312/0314 N0 D1, key period;
+  matter in Droysen IV.1 p.267 and Bonnesen 1918 pp.65-73 (not these letters). 0317 (17 Sept) a separate dispatch, gate PASS 28/31, C28 M9 (not
+  verified). 0310 heavy glossed code continuing 0309 (look only); 0311 short clear note. 0503 = re-photograph of 0502 (already read; inv08g row
+  should say so).
+- 0290 word codes 281-674: keyed-word class PASS; unkeyed class untestable on disk (K=1) -> non-test, not refuted.
+- Held codes (V-MANTH): 321 rule-4 conflict (Stockholm vs frontiere); 191 Stenbock M; 254 = 259 Ilgen (M); 199 held; 42 = l C.
+- y-glyph census (MANT-YCEN): y = 9 PASS 20/21 known-answer slots vs null p99 7. FIX-YEYE applied 0490 G01 r1.7 29->28, 0494 T019 4->9, 0136
+  T060/T064 254->259 (gates still PASS); 0063 slots held (circular support).
+- tools/tests/test_decode_key.py green (stale decode_configs snapshots for antt-linhares-chave and rah-canada-1869 synced; no reading changed).
+- antt-msliv0638 m0200/m0277/m0278: already done 6 Oct (R11A-BRO); next_steps parallel line repointed.
+No N3+ item this incarnation, so no SO row and no AUD2 row.
+
+**next** (for the next LANE FAMILY incarnation):
+1. Manteuffel: the pool's glossed leaves are N0 by construction. Before any further leaf read, a cheap census (~$1.5 Sonnet, from inventories +
+   committed crops) of 694/08-09 leaves whose code runs carry NO interlinear gloss and NO following clear rendering -- only those are unread material.
+   Then read the top one under key.tsv with the shuffled-target judge control in the reader's own PREREG (~$5).
+2. 0490 gutter: gate (a) with the leaf's own clear rendering as the gloss span (~$0.3, V-MANT0490L's named next) -- a key test, not a reading.
+3. 0317 first verifier only if the census in item 1 finds nothing better (it will be N0 by gloss; ~$3).
+4. inv08g.tsv row 0503: mark "= 0502, read" (~$0.1, any worker touching the folder).
+5. Remaining glossed heavy leaves 0146, 0169, 0174, 0182 are witnesses for held codes only (199, 321): read one only if it carries 199 or 321 by the
+   inventory/premise check (~$5 each).
+6. Carried from 1510: Suriname (more glossed lines needed), Ceppo fr.4702 (Gomberville 1665 via LOCAL-QUEUE), heinsius (NA reply).
+Excluded this incarnation (other lanes): as the 1510 list (eckert-*, Huntington ledgers, lodewijk/jan-van-nassau, decode-*, bne20211, costabili,
+harley-287, fr16144, fr16045-pisany, fr4735-monluc, craven-rupert-1648, sforza-pusterla, baluze167, huntington-blathwayt, ceppo-nevers-fr3251-1570s,
+pro3055-clinton-1779, birago-*, hellen-frederick-1752, ra-karlxi).
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-1510, session_01EhykP6Ezpqa9BSqzwCGsB8, account 2), 9 October 2026 (closed 17:1x UTC: three waves worked, lane ~56.3 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-1510-jobs.md. Started from the
