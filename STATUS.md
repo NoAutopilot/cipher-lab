@@ -7404,6 +7404,20 @@ FAMILY-A2j wave 2 (Manteuffel 0136 gloss + Acta Borussica print gates PASS, 64 t
 TOOL-CHK). Account 3 silent since 02:03. Orphan check: only the known trigger false positives, five (b) rows on sessions already archived and
 ledgered by their lane, the Oct 1-3 stale-claim tail; no new dropped request. Checks ok; keys 6 working. Next check-in 16:55.
 
+Check-in 4, 16:55-17:0x UTC 9 Oct (9:55 am PT): five_hour allowed (window reset 16:30; next reset 21:30 UTC); orchestrator context ~385k, cost
+12.3. Account 4 live: LANE TX-ENGINEER-2 only (17.63 + workers; its check-in 3 at 17:05). The lane took the by-construction flag: TXP-REBUILD
+re-derived the gloss items' truth from the independent printed key (f.89 passZ 0.390, f.98v 0.515, f.113 0.465 -- far above the 10-20% predicted,
+61 of 87 f.89 'errors' are homophones the printed key's sign set does not hold, so that recipe over-charges; the lane decides the pool rule at
+17:05) and the jackknife on fr.3623 f.23r (0.241). Round 2 experiments all dev-FAIL so far: X1 sheet-inventory detector (0/21 recall, errors are
+on-sheet look-alikes), X3 widened lattice (truth-in-lattice rises to 10/12 but word rescoring fixes 4 / breaks 5; shuffled-key passes 0/20), X4
+calibrated confidence (underconfident every bin, truth in top-3 at 3/12 of errors), X9 doubt re-tune (dev 10/12 at 14% flagged, but eval read-free
+6/15 because two signals have no eval inputs; a substitute vote reaches 9/15 at 2.9%). Nine experiments run or measured (X2 X5 X20 X19 X6 X1 X3 X4
+X9); eval looks taken 0. TX-CONFIRM-SET-2 row marked done (vivonne1573-f103r-confirm2 in BENCHMARK-TX.tsv). Account 1: LANE LEDGER-7 opened 16:42
+(first audits E314-E321 and the No. 9 entries; NO9-PAGES tabled mssEC 67 whole, No. 9 H 369 M 0; KEY-BLIND: Tulip = stop 9/10, whiskey = Troops 7/7
+vs controls 2/10, 2/7). Account 2: FAMILY-A2j wave 3 (Manteuffel 0312/0314 Extrait pair gloss gates PASS, 0383 printed in Acta Borussica, 0290 gloss
+gate FAIL; 694/08 census closed). Account 3 silent since 02:03. Orphan check: the two known trigger false positives; (f) the lane's worker titles do
+not start with LIVE (convention only, the lane archives them). Checks ok; keys 6 working. Next check-in 17:37.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

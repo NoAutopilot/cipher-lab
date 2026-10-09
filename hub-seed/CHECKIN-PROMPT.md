@@ -84,3 +84,5 @@ catalogue page). Account-4 queue empty (blast lanes=1 default-lane auto-fill wil
 STATE DELTA 16:2x UTC 9 Oct: TX-ENGINEER-2 round 0 closed (gate p<0.01 at 34 eval errors, controls PASS); headroom items from Dinteville fr.3619
 glosses -- f.98v/f.113 recipes score the pipeline right by construction (flagged to the lane 16:2x; expect a recipe fix or the items marked non-test);
 first three experiments dev-FAIL. TX-CONFIRM-SET-2 done (vivonne1573-f103r-confirm2, account 1 ledgers). Account-4 queue empty but SORTER-RERENDER-A3.
+STATE DELTA 17:0x UTC 9 Oct: TX-ENGINEER-2 round 2: nine experiments dev-FAIL or measured, 0 eval looks; the printed-key truth recipe over-charges
+homophones (f.89 0.39) -- the lane decides the pool rule at its 17:05 check-in. Account 1 LANE LEDGER-7 live (16:42). Five-hour window resets 21:30 UTC.
