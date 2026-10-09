@@ -70,3 +70,28 @@ Rows: 5784/1 5663/1 5682/0 5826/1 5796/0 5769/0. Method exactly "## FM-R3a, FM-R
 duplicate diff). Long rows: price 2 units (~1.1) each; stop before a row that would cross 80% of cap or box. 5784/1 shares a page with FM-R2b's 5784/0
 (E193, under FV-FM4): read only your own entry. IDs E240 onward (No. 1), N2-NA onward (No. 2). NOTES "## FM-R3d (9 Oct 2026, account 1, for LANE LEDGER)",
 Remaining gaps / Escalation, gaps_check, decode --check.
+
+---
+
+# Wave 3 (written 9 Oct 2026 00:2x UTC; seven_day allowed_warning on every session, continuing per lane-common-blast)
+By get_session: FV-FM4 5.52 (E193 N3 weak D2, E194 N3 weak D3; AUD2-LEDGER-8 queued; reading fixes for a FIX job), FM-R3a 3.77 (E210-E219; E215 E218 in
+print, E211 plaintext on the leaf), FM-R3b 3.48 (E220 E222-E229, none located), FM-R3c 3.22 (E230-E239; E231-E233 E238 E239 in print), FM-R3d 3.00
+(E240-E245; E244 in print, three key conflicts logged).
+
+## FIX-FM4 (Sonnet 5.5; cap $1.5, box 40 min, no network): FV-FM4's reading fixes
+AUDIT.md "## AUDIT (FV-FM4)": E193 Webster / R. C. plain, "22nd", E194 Hawley plain -- exactly the FIX-FM3 method (entry-level notes, decode.py
+--write then --check exit 0, propagate to status.json and second-opinions/PROMPT-chatgpt-e193.md / -e194.md). NOTES "## FIX-FM4 (9 Oct 2026, account 1, for
+LANE LEDGER)"; depth_check; file_shrink_guard.
+
+## FV-FM5a, FV-FM5b, FV-FM5c (Opus 5.5, first verifiers, separate sessions from the readers; cap $6.5 each, box 90 min each)
+Exactly "## FV-FM4" above (wave 1: duplicate diff; own Huntington transcription + CONTENTdm full text; OR I-III, ORN; Grant Papers via IA be-api by
+identifier, snippet-only; Butler's Private and Official Correspondence III-V; press of the day; G3 with decoded phrases; the sender's copy in mssEC 19/18 on
+disk; the rare-name OR grep FV-FM3c's E190 lesson added; eye-check lines the reader did not image-check). The reader's own "Remaining gaps" for your entries
+are your first print leads. AUDIT.md headings "## AUDIT (FV-FM5a)" etc.; status.json/SO rows for N3+ only, audit_status "one audit"; depth_check;
+file_shrink_guard. On N3+ D2+ append WORK-QUEUE `AUD2-LEDGER-9` (FV-FM5a), `-10` (FV-FM5b), `-11` (FV-FM5c) (account-3, Opus 5.5, cap 2.5 per entry) and
+name it in ROOM for the account-3 VERIFY lane. hdl at most 30 requests each under the token (wave-2 rule); be-api answered 502 to readers this hour --
+one retry after a pause, then log it unreachable. Unit ~1.3 per entry; stop before an entry that would cross 80% of cap or box.
+- FV-FM5a: E210, E212, E213, E214, E216 (NOTES "## FM-R3a"). E211 (plaintext on the leaf) is not audited; E217, E219 handed on.
+- FV-FM5b: E220, E222, E223, E224, E225 (NOTES "## FM-R3b"; E222/E224/E225 have printed context named there -- decide whether it is the same telegram).
+- FV-FM5c: E230, E234, E235, E236, E237 (NOTES "## FM-R3c"; FM-R3c eye-checked only 4 of 9 pages -- eye-check your entries' lines first).
+Handed on, not briefed this wave: E217, E219, E226-E229, E240-E243, E245 (first audit, ~1.3 each).
