@@ -375,6 +375,91 @@ def rel(p):
     return p if r.startswith("..") else r
 
 
+# ---------------------------------------------------------------- --langs (MQS-LANGS, 9 Oct 2026)
+LAST = {}
+
+
+def _strip_langs(argv):
+    out, skip = [], False
+    for x in argv:
+        if skip:
+            skip = False
+            continue
+        if x == "--langs":
+            skip = True
+            continue
+        if x.startswith("--langs="):
+            continue
+        out.append(x)
+    return out
+
+
+def lang_margin(lang, decode_path):
+    """Judge one decode under one language's own corpus: (score, real_p05, margin) or None."""
+    import tempfile
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+        json.dump({"judge": {"language": lang}}, f)
+        sp = f.name
+    try:
+        r = subprocess.run([sys.executable, os.path.join(TOOLS, "judge_plaintext.py"), sp, "--file", decode_path, "--json"],
+                           capture_output=True, text=True)
+        lg = json.loads(r.stdout)["checks"]["language"]
+        return lg["score"], lg["real_p05"], round(lg["score"] - lg["real_p05"], 3)
+    except Exception:
+        return None
+    finally:
+        os.unlink(sp)
+
+
+def rank_langs(rows):
+    """rows: dicts with lang, gated, margin. Gated languages with a margin ranked by margin, highest first; the rest
+    are listed after, unranked (rank None). Pure function, tested offline."""
+    ok = sorted([r for r in rows if r.get("gated") and r.get("margin") is not None], key=lambda r: -r["margin"])
+    for i, r in enumerate(ok, 1):
+        r["rank"] = i
+    rest = [dict(r, rank=None) for r in rows if r not in ok]
+    return ok + rest
+
+
+def run_langs(a, argv):
+    """Choose the language by trial (Lasry, Biermann and Tomokiyo 2023, Cryptologia 47:2, pp.112-115; research row M15):
+    one family run per language, each with its own matched control from that language's LANG_CORPORA entry (rule 3),
+    each target decode judged in the same language; ranked by margin = score - real_p05. A language whose control
+    misses --gate is listed, not ranked. Meant to catch: a letter whose language was assumed from its neighbours
+    (Birago no.87 is Italian although the volume is French). Must NOT do: rank a language whose own control failed,
+    or rank a shuffled text above zero margin (tools/tests/MQS-LANGS-controls.tsv)."""
+    langs = [x.strip() for x in a.langs.split(",") if x.strip()]
+    bad = [l for l in langs if l not in jp.LANG_CORPORA]
+    if bad:
+        print(f"--langs: not in LANG_CORPORA: {', '.join(bad)}", file=sys.stderr)
+        return 2
+    if a.corpus:
+        print("--langs sets the corpus per language; drop --corpus", file=sys.stderr)
+        return 2
+    base = _strip_langs(argv)
+    rows = []
+    for L in langs:
+        LAST.clear()
+        sub = base + [f"--corpus={p}" for p in jp.LANG_CORPORA[L]] + ["--decode-tag", f"lang{L}"]
+        sub += ["--label", (a.label + " " if a.label else "") + f"langs:{L}"] if "--label" not in base else []
+        print(f"=== --langs: {L} ===")
+        rc = main(sub)
+        row = {"lang": L, "control": LAST.get("control"), "gated": LAST.get("gated", False), "margin": None,
+               "score": None, "real_p05": None, "rc": rc}
+        if LAST.get("decode"):
+            m = lang_margin(L, LAST["decode"])
+            if m:
+                row["score"], row["real_p05"], row["margin"] = m
+        rows.append(row)
+    print("\nLANGS ranking (margin = judge score - real_p05 in the decode's own language; >= 0 clears that language's "
+          "real-text 5th percentile)")
+    print("rank\tlang\tcontrol_mean\tgated\tscore\treal_p05\tmargin")
+    for r in rank_langs(rows):
+        c = "-" if r["control"] is None else f"{r['control']:.3f}"
+        print(f"{r['rank'] or '-'}\t{r['lang']}\t{c}\t{'yes' if r['gated'] else 'no'}\t{r['score']}\t{r['real_p05']}\t{r['margin']}")
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("spec")
@@ -407,9 +492,14 @@ def main(argv=None):
     ap.add_argument("--decode-tag", default="", metavar="TAG",
                     help="extra suffix on the decode filename (R15-KAL13, 6 Oct 2026: two --cipher files with the same "
                          "family/params/corpus, e.g. convention A and B, otherwise write one decode file); omitted = old name")
+    ap.add_argument("--langs", default=None, metavar="L1,L2,...",
+                    help="choose the language by trial (MQS-LANGS): run the family once per LANG_CORPORA key, each with its "
+                         "own matched control, judge each decode in its own language and rank by score - real_p05")
     ap.add_argument("--dry-run", action="store_true", help="print the plan (N, K, corpora, paths) and run nothing")
     a = ap.parse_args(argv)
 
+    if a.langs:
+        return run_langs(a, argv if argv is not None else sys.argv[1:])
     if BANNED.search(a.label):
         print("--label carries a rule 10 word (solved/new/first/unpublished); reword it", file=sys.stderr)
         return 2
@@ -561,6 +651,7 @@ def main(argv=None):
         row = append_row(out, [date, a.family, par, f"{seeds[0]}-{seeds[-1]}" if len(seeds) > 1 else seeds[0], ctl,
                               "not run (CONTROL BELOW GATE)", "-", f"no (gate {a.gate})", a.label or "-"])
         print(f"CONTROL BELOW GATE: mean {mean:.3f} < {a.gate}; target not run; row appended to {rel(out)}")
+        LAST.update(control=mean, gated=False, decode=None)
         return 3
     # 2. target
     tp = dict(params)
@@ -585,6 +676,7 @@ def main(argv=None):
     print(f"TARGET best score {sc:.3f}; decode -> {rel(dpath)}; judge: {verdict}")
     append_row(out, [date, a.family, par, a.seed, ctl, f"{sc:.3f}", verdict + label_note, f"yes (gate {a.gate})", a.label or "-"])
     print(f"row appended to {rel(out)}")
+    LAST.update(control=mean, gated=True, decode=dpath)
     return 0
 
 

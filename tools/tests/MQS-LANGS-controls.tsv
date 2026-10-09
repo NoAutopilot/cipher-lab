@@ -1,0 +1,37 @@
+# MQS-LANGS controls, 9 Oct 2026 (PREREG tools/tests/PREREG-MQS-LANGS.md, commit 961c797e). family masc, restarts 8, 3 control seeds, gate 0.6;
+# synthetic monoalphabetic encipherment of period-key plaintexts (Birago no.87 clerk sheet, Italian; Gramont f.29r, French). margin = judge score - real_p05 in the decode's own language.
+case	N	lang	control_mean	gated	score	real_p05	margin	rank	gate_item	gate_result
+KA-IT	1014	it16dip	0.996	yes	-0.869	-0.908	0.039	1	1: top it/it16dip and fr,fr16 < 0	PASS
+KA-IT	1014	it	0.921	yes	-0.879	-0.916	0.037	2	1: top it/it16dip and fr,fr16 < 0	PASS
+KA-IT	1014	fr16	0.772	yes	-1.113	-0.948	-0.165	3	1: top it/it16dip and fr,fr16 < 0	PASS
+KA-IT	1014	fr	0.974	yes	-1.103	-0.86	-0.243	4	1: top it/it16dip and fr,fr16 < 0	PASS
+KA-IT	1014	la18	0.799	yes	-1.237	-0.972	-0.265	5	1: top it/it16dip and fr,fr16 < 0	PASS
+KA-IT	1014	es17c	0.998	yes	-1.273	-0.849	-0.424	6	1: top it/it16dip and fr,fr16 < 0	PASS
+KA-IT	1014	en	0.998	yes	-1.497	-0.855	-0.642	7	1: top it/it16dip and fr,fr16 < 0	PASS
+KA-FR	575	fr16	0.98	yes	-0.968	-0.934	-0.034	1	2: top fr/fr16	PASS (top margin itself below 0)
+KA-FR	575	fr	0.828	yes	-0.998	-0.881	-0.117	2	2: top fr/fr16	PASS (top margin itself below 0)
+KA-FR	575	la18	0.99	yes	-1.244	-0.989	-0.255	3	2: top fr/fr16	PASS (top margin itself below 0)
+KA-FR	575	it	0.991	yes	-1.289	-0.977	-0.312	4	2: top fr/fr16	PASS (top margin itself below 0)
+KA-FR	575	it16dip	0.98	yes	-1.325	-0.905	-0.42	5	2: top fr/fr16	PASS (top margin itself below 0)
+KA-FR	575	es17c	0.696	yes	-1.494	-0.86	-0.634	6	2: top fr/fr16	PASS (top margin itself below 0)
+KA-FR	575	en	0.994	yes	-1.541	-0.878	-0.663	7	2: top fr/fr16	PASS (top margin itself below 0)
+NULL-IT	1014	la18	0.799	yes	-1.325	-0.972	-0.353	1	3: max margin < 0	PASS
+NULL-IT	1014	fr16	0.772	yes	-1.374	-0.948	-0.426	2	3: max margin < 0	PASS
+NULL-IT	1014	it16dip	0.996	yes	-1.427	-0.908	-0.519	3	3: max margin < 0	PASS
+NULL-IT	1014	it	0.921	yes	-1.547	-0.916	-0.631	4	3: max margin < 0	PASS
+NULL-IT	1014	fr	0.974	yes	-1.551	-0.86	-0.691	5	3: max margin < 0	PASS
+NULL-IT	1014	es17c	0.998	yes	-1.754	-0.849	-0.905	6	3: max margin < 0	PASS
+NULL-IT	1014	en	0.998	yes	-1.884	-0.855	-1.029	7	3: max margin < 0	PASS
+NULL-FR	575	la18	0.99	yes	-1.332	-0.989	-0.343	1	3: max margin < 0	PASS
+NULL-FR	575	fr16	0.98	yes	-1.326	-0.934	-0.392	2	3: max margin < 0	PASS
+NULL-FR	575	it	0.991	yes	-1.472	-0.977	-0.495	3	3: max margin < 0	PASS
+NULL-FR	575	it16dip	0.98	yes	-1.445	-0.905	-0.54	4	3: max margin < 0	PASS
+NULL-FR	575	fr	0.828	yes	-1.466	-0.881	-0.585	5	3: max margin < 0	PASS
+NULL-FR	575	es17c	0.696	yes	-1.695	-0.86	-0.835	6	3: max margin < 0	PASS
+NULL-FR	575	en	0.994	yes	-1.753	-0.878	-0.875	7	3: max margin < 0	PASS
+fr16-holdout	500	catherine t.1	-	-	-	-0.946	fn 15.0%	-	descriptive	spread 2.5-69.0%, blended 28.8%
+fr16-holdout	500	catherine t.2	-	-	-	-0.879	fn 69.0%	-	descriptive	
+fr16-holdout	500	marguerite	-	-	-	-0.965	fn 2.5%	-	descriptive	
+fr16-holdout	1000	catherine t.1	-	-	-	-0.944	fn 11.0%	-	descriptive	spread 1.5-71.5%, blended 28.0%
+fr16-holdout	1000	catherine t.2	-	-	-	-0.873	fn 71.5%	-	descriptive	
+fr16-holdout	1000	marguerite	-	-	-	-0.945	fn 1.5%	-	descriptive	

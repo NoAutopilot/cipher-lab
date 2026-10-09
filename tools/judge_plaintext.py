@@ -65,6 +65,11 @@ LANG_CORPORA = {
              DATA / "en18" / "writingsofjamesm0008unse.txt.gz", DATA / "en18" / "writingsofthomas09jeffiala.txt.gz"],
     "de": [DATA / "de16" / "composed_enhg.txt"],
     "fr": [DATA / "fr16" / "lettresdecatheri01cathuoft_djvu.txt.gz"],
+    # fr16 (9 Oct 2026, MQS-LANGS): all three tools/data/fr16 files (Catherine de Medicis t.1, t.2; Marguerite de
+    # Valois), so a leave-one-file-out fold spread can be measured (rule 3). "fr" keeps its one file so no existing
+    # French judge figure moves; per-fold spread in tools/tests/MQS-LANGS-controls.tsv.
+    "fr16": [DATA / "fr16" / f for f in ("lettresdecatheri01cathuoft_djvu.txt.gz", "lettresdecatheri02cathuoft_djvu.txt.gz",
+                                         "lettresindites00marg_djvu.txt.gz")],
     "it": [DATA / "it16" / "alcuneletteredip00ferr.txt", DATA / "it16" / "delleletterefam02seghgoog.txt",
            DATA / "it16" / "lettereinedited00tassgoog.txt", DATA / "it16" / "lettereinedited01cibrgoog.txt",
            DATA / "it16" / "lettereineditedi01carouoft.txt", DATA / "it16" / "letterescrittea01vanzgoog.txt"],

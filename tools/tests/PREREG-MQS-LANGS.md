@@ -52,3 +52,9 @@ expected outlier.
 
 No target is decoded; no status, key, reading or AUDIT.md changes; no host requests. The synthetic runs write into
 a scratch slug (`_mqs_langs_test`) that is removed after; results go to tools/tests/MQS-LANGS-controls.tsv.
+
+## Correction (06:5x UTC by date -u)
+
+The heading's '06:4x' was not read from the clock; `date -u` read 06:35 when the known-answer inputs were built,
+and the file was pushed (961c797e) before that, before any scoring. The fr16 outlier expectation was wrong: the
+outlier fold is Catherine t.2 (fn 69-72%), not Marguerite (fn 1.5-2.5%). Results: tools/tests/MQS-LANGS-controls.tsv.
