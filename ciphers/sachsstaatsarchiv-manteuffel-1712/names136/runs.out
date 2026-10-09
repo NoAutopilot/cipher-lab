@@ -1,0 +1,81 @@
+== C1
+window: wellpng
+4640 forms; best welling fit 5 (6 agree, 1 disagree) at f468_g13:1; ties 1; P 0.000; candidate: False
+  welling	5	6/1	f468_g13:1
+  walling	3	5/2	f468_g13:1
+  elle	2	3/1	f468_g13:2
+  kell	2	3/1	f468_g13:1
+  zell	2	3/1	f468_g13:1
+  all	1	2/1	f468_g13:2
+== C2
+window: liv?nie
+4640 forms; best livonie fit 6 (6 agree, 0 disagree) at 694-09_0136_r04:3; ties 1; P 0.000; candidate: True
+  livonie	6	6/0	694-09_0136_r04:3
+  livonia	4	5/1	694-09_0136_r04:3
+  livre	3	3/0	694-09_0136_r04:3
+  veni	3	3/0	694-09_0136_r04:5
+  coni	2	2/0	694-09_0136_r04:6
+  laubanie	2	4/2	694-09_0136_r04:3
+== N1
+window: ?iendaut
+4640 forms; best cependant fit 3 (5 agree, 2 disagree) at 694-09_0136_r08:5; ties 8; P 0.002; candidate: False
+  cependant	3	5/2	694-09_0136_r08:5
+  dau	3	3/0	694-09_0136_r08:9
+  intendant	3	5/2	694-09_0136_r08:5
+  pendant	3	5/2	694-09_0136_r08:6
+  rien	3	3/0	694-09_0136_r08:5
+  tien	3	3/0	694-09_0136_r08:5
+== T1-strict
+window: l?lhovel
+4640 forms; best hotel fit 3 (4 agree, 1 disagree) at 694-09_0136_r01:4; ties 1; P 0.000; candidate: False
+  hotel	3	4/1	694-09_0136_r01:4
+  home	2	3/1	694-09_0136_r01:4
+  howe	2	3/1	694-09_0136_r01:4
+  lil	2	2/0	694-09_0136_r01:1
+  lol	2	2/0	694-09_0136_r01:1
+  over	2	3/1	694-09_0136_r01:5
+== T1-var
+window: l?lhovel
+7894 forms; best lolhovel fit 7 (7 agree, 0 disagree) at 694-09_0136_r01:1; ties 1; P 0.000; candidate: True
+  lolhovel	7	7/0	694-09_0136_r01:1
+  lolhofel	5	6/1	694-09_0136_r01:1
+  hove	4	4/0	694-09_0136_r01:4
+  hotel	3	4/1	694-09_0136_r01:4
+  ove	3	3/0	694-09_0136_r01:5
+  rovel	3	4/1	694-09_0136_r01:4
+== T2
+window: ilg
+4640 forms; best ilg fit 3 (3 agree, 0 disagree) at 694-09_0136_r02:1; ties 1; P 0.000; candidate: False
+  ilg	3	3/0	694-09_0136_r02:1
+  ile	1	2/1	694-09_0136_r02:1
+  ils	1	2/1	694-09_0136_r02:1
+  ali	-1	1/2	694-09_0136_r02:1
+  all	-1	1/2	694-09_0136_r02:1
+  alt	-1	1/2	694-09_0136_r02:1
+== T3
+window: lolh
+4640 forms; best lol fit 3 (3 agree, 0 disagree) at 694-09_0103_r04:1; ties 1; P 0.000; candidate: False
+  lol	3	3/0	694-09_0103_r04:1
+  col	1	2/1	694-09_0103_r04:1
+  hol	1	2/1	694-09_0103_r04:1
+  lil	1	2/1	694-09_0103_r04:1
+  loc	1	2/1	694-09_0103_r04:1
+  loi	1	2/1	694-09_0103_r04:1
+== T4-fr
+window: a?epusn?e
+48554 forms; best acceptantle fit 3 (5 agree, 2 disagree) at 694-09_0136_r09:1; ties 6; P 0.000; candidate: False
+  acceptantle	3	5/2	694-09_0136_r09:1
+  aceprince	3	5/2	694-09_0136_r09:1
+  aetepublie	3	5/2	694-09_0136_r09:1
+  aurefus	3	4/1	694-09_0136_r09:1
+  aurepos	3	4/1	694-09_0136_r09:1
+  jenepus	3	4/1	694-09_0136_r09:1
+== T4-names
+window: a?epusn?e
+4640 forms; best depu fit 3 (3 agree, 0 disagree) at 694-09_0136_r09:2; ties 2; P 0.000; candidate: False
+  depu	3	3/0	694-09_0136_r09:2
+  repu	3	3/0	694-09_0136_r09:2
+  abbe	2	2/0	694-09_0136_r09:1
+  acte	2	2/0	694-09_0136_r09:1
+  adle	2	2/0	694-09_0136_r09:1
+  afie	2	2/0	694-09_0136_r09:1
