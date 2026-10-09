@@ -1,0 +1,16 @@
+# SUR-POOLPC: units inv373_0744_blind_sb, inv373_0744R_blind, inv373_0745L_blind; K=300 C1 draws per synthetic unit, master seed 20261010
+# pass A real m|n-facing y-family tokens: inv373_0744_blind_sb lines 21 m 15 n 40; inv373_0744R_blind lines 22 m 18 n 58; inv373_0745L_blind lines 22 m 15 n 38; pooled lines 65 m 48 n 136
+# scaffold A: lines 65, gloss letters 2266, p_del 0.090, p_ins 0.108; face m {'[y-fam]': 48, 'k': 1, 'λ': 1, '[psi]': 1}; face n {'[y-fam]': 136, 'l': 45, '4': 9, '[psi]': 6}
+# pass B real m|n-facing y-family tokens: inv373_0744_blind_sb lines 21 m 14 n 38; inv373_0744R_blind lines 22 m 19 n 62; inv373_0745L_blind lines 22 m 14 n 39; pooled lines 65 m 47 n 139
+# scaffold B: lines 65, gloss letters 2264, p_del 0.090, p_ins 0.110; face m {'[y-fam]': 47, 'λ': 2, 'k': 1, 'c': 1}; face n {'[y-fam]': 139, 'l': 46, '4': 9, '[psi]': 6}
+  lines 22 A H1: units 200; y on m mean 1.0, on n mean 43.3; S mean 0.977; p99.5 mean 0.944; verdicts {'NO SPLIT SHOWN': 47, 'LEANS n': 153}; LEANS n rate 0.765
+  lines 22 B H1: units 200; y on m mean 0.9, on n mean 44.2; S mean 0.980; p99.5 mean 0.950; verdicts {'LEANS n': 143, 'NO SPLIT SHOWN': 57}; LEANS n rate 0.715
+  lines 44 A H1: units 200; y on m mean 2.2, on n mean 87.1; S mean 0.975; p99.5 mean 0.899; verdicts {'LEANS n': 200}; LEANS n rate 1.000
+  lines 44 B H1: units 200; y on m mean 1.8, on n mean 87.8; S mean 0.980; p99.5 mean 0.910; verdicts {'LEANS n': 200}; LEANS n rate 1.000
+  lines 65 A H1: units 200; y on m mean 2.9, on n mean 129.4; S mean 0.978; p99.5 mean 0.880; verdicts {'LEANS n': 200}; LEANS n rate 1.000
+  lines 65 A H0: units 50; y on m mean 47.3, on n mean 128.8; S mean 0.732; p99.5 mean 0.858; verdicts {'NO SPLIT SHOWN': 49, 'LEANS m': 1}; LEANS n rate 0.000
+  lines 65 B H1: units 200; y on m mean 2.8, on n mean 130.1; S mean 0.979; p99.5 mean 0.886; verdicts {'LEANS n': 200}; LEANS n rate 1.000
+  lines 65 B H0: units 50; y on m mean 46.1, on n mean 129.7; S mean 0.738; p99.5 mean 0.863; verdicts {'NO SPLIT SHOWN': 50}; LEANS n rate 0.000
+DETECTION lines 22: A 0.765 B 0.715
+DETECTION lines 44: A 1.000 B 1.000
+DETECTION lines 65: A 1.000 B 1.000 -> GATE PASS

@@ -1,0 +1,9 @@
+# SUR-POOLPC: units inv373_0744_blind_sb, inv373_0744R_blind, inv373_0745L_blind; K=300 C1 draws per synthetic unit, master seed 20261010
+# pass A real m|n-facing y-family tokens: inv373_0744_blind_sb lines 21 m 15 n 40; inv373_0744R_blind lines 22 m 18 n 58; inv373_0745L_blind lines 22 m 15 n 38; pooled lines 65 m 48 n 136
+# scaffold A: lines 65, gloss letters 2266, p_del 0.090, p_ins 0.108; face m {'[y-fam]': 48, 'k': 1, 'λ': 1, '[psi]': 1}; face n {'[y-fam]': 136, 'l': 45, '4': 9, '[psi]': 6}
+# pass B real m|n-facing y-family tokens: inv373_0744_blind_sb lines 21 m 14 n 38; inv373_0744R_blind lines 22 m 19 n 62; inv373_0745L_blind lines 22 m 14 n 39; pooled lines 65 m 47 n 139
+# scaffold B: lines 65, gloss letters 2264, p_del 0.090, p_ins 0.110; face m {'[y-fam]': 47, 'λ': 2, 'k': 1, 'c': 1}; face n {'[y-fam]': 139, 'l': 46, '4': 9, '[psi]': 6}
+# REAL pooled SPLIT, C1 10000 deranged-gloss draws, seed 20261010
+  pass A: y on m 48, n 136; S 0.739; C1 mean 0.778 p0.5 0.681 p99.5 0.870 -> NO SPLIT SHOWN
+  pass B: y on m 47, n 139; S 0.747; C1 mean 0.788 p0.5 0.695 p99.5 0.876 -> NO SPLIT SHOWN
+UNIT pooled SPLIT: NO SPLIT SHOWN
