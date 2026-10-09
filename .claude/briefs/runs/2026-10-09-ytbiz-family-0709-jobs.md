@@ -142,3 +142,25 @@ NOTES "SUR-POOLPC" next (line ~3480): plant m -> Mx at 25/50/75% of m tokens at 
 draws and gate as PREREG-SUR-POOLPC; PREREG-SUR-PARTIAL.md pushed in its own commit before any draw. Report detection per level per scaffold
 and what the real pooled NO SPLIT now excludes (the smallest split fraction with power >= 0.80). HYPOTHESES.md row with both numbers; NOTES
 "SUR-PARTIAL"; Remaining gaps/Escalation; gaps_check. ~$2.
+
+## Wave 3 (07:5x UTC 9 Oct)
+Hosts: sachsen -- MANT-0453 only (INV08C released 07:49); IA / HathiTrust EF / Google Books -- BONNESEN only.
+
+### MANT-0453 (Opus, cap 5, box 90 min): sachsstaatsarchiv-manteuffel-1712, Loc. 694/08 frame 0453 cipher + the letter's date (0450-0451)
+V-MANT0454's next (2) and (3) (AUDIT.md "AUDIT (V-MANT0454)" line ~1229 and ~1331): 0453 right page para 3 carries code groups nobody has read;
+0452/0453 have no date line. Steps: prior work (check 1: grep 0453 in the folder); "sachsen take", GET 0450 and 0451 (2 GETs; 0452/0453 are
+already on disk in f0454_08/ from V-MANT0454), "sachsen release"; find the letter's head and date (eye, then line crops where needed).
+Then 0453 as a reading unit by MANT-0454's method in f0453_08/: PREREG-MANT-0453.md pushed in its own commit before any pass, gate (b) with a
+power control at this unit's letter count (power < 0.80 = non-test: say so and stop at the transcription); two blind Sonnet passes on committed
+crops; grades; check 5. If 0453 belongs to the same letter as 0454, say so with the evidence, and add 0453's letter count to a pooled gate
+(b) only if the PREREG named that pooling before scoring. ~$4.5. Report what was found and where it was not found; do not classify novelty.
+
+### BONNESEN (Sonnet, cap 2, box 45 min; lookup): Sten Bonnesen, Studier över August II:s utrikespolitik 1712-1715, del I (Lund 1918) pp.62-77
+V-MANT0454's next (1): the decisive prior-print check for 0454 (Rozrazewski sent by Stanislas to Berlin, Arnold, abdication). Find a full-text
+or page-image copy: IA advancedsearch (title/creator), HathiTrust bibliographic API (Chrome UA) then HTRC Extracted Features per-page token
+counts for "Rozrazewski"/"Rozražewski"/"Arnold"/"abdi*" to locate pages (EF works even for search-only volumes), Google Books (GS3SAAAAMAAJ;
+country=US, key) snippet search for the 0454 phrases' entities; Lund University / LUP open copy. Positive control: a word you know is on
+p.68-70 by the snippet V-MANT0454 saw. Write a NOTES section "BONNESEN" in the Manteuffel folder: per route what was reachable, which pages
+mention the entities, and any quoted text (snippets verbatim). If no route reads the pages, write a LOCAL-QUEUE.tsv row (owner's browser:
+HathiTrust full view or Google Books page view of pp.62-77) per tools/local_runner_brief.md format, quoting the key_livecheck line for Google
+Books. Do not decode; do not change AUDIT.md (the verifier's class is changed only by a verifier). ~$1.5.
