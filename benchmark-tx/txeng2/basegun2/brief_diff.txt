@@ -1,0 +1,17 @@
+36c36
+<   `ps` (a long descending p joined to s), `hs` (h joined to s), `xr` (x joined to r; may look like "xv"), `rf` (a small t or r
+---
+>   `p` (a long descending looped p alone, no s joined), `ps` (a long descending p joined to s), `hs` (h joined to s), `xr` (x joined to r; may look like "xv"), `rf` (a small t or r
+diff --git a/benchmark-tx/txpool/gunther8246-p2/sheet/calibration.tsv b/benchmark-tx/txpool/gunther8246-p2/sheet/calibration.tsv
+index 6cf610f67..95403f993 100644
+--- a/benchmark-tx/txpool/gunther8246-p2/sheet/calibration.tsv
++++ b/benchmark-tx/txpool/gunther8246-p2/sheet/calibration.tsv
+@@ -7,6 +7,6 @@ p1cal_L04.jpg	cc ob a xb zz 34 od cc 44_ 60 f b r oo ] vt ps xm
+ p1cal_L05.jpg	f 88x 34 or d f 88 z aab f or hs rr Ib 7 f 8 tau aab
+ p1cal_L06.jpg	hs f ps aaa zz r oo d x+ rf ob 6 fb d6 xr_ 4000 34
+ p1cal_L07.jpg	44 60 88 tau f ps 53 48 34 d f cc or r 3 01 88 xr
+-p1cal_L08.jpg	dd rr f ps v ob + 7 34 cc d f 88 m xb L ] f ps
+-p1cal_L09.jpg	dd 34 or d f cc 98 bbb ro th Ol hs oo ps
++p1cal_L08.jpg	dd rr f ps v ob + 7 34 cc d f 88 m x L ] f ps
++p1cal_L09.jpg	dd 34 or d f cc 98 bbb ro th Ol hs oo p
+ p1cal_L10.jpg	88 f 34 ps th m hs xr aab f tn 34 f 88x 7 88

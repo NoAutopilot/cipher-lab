@@ -251,3 +251,5 @@ Japikse, *Correspondentie Willem den Eerste*, **230-233, nr. 236**. This is an e
 insertions in spaced type, per H. Koot's earlier identification). Not fetched or imaged this pass. Not a
 candidate. Confirms this whole two-letter Günther van Schwarzburg circle is fully print-solved by the same 1934
 edition; no further WVO rows for this correspondent appear in the 73-row set.
+
+- Key question handed on (9 Oct 2026, TXE2-BASE-GUN2 for LANE TX-ENGINEER-2; no key edit): on MS p.1 the Japikse print alignment reads d6 = c (p1L03.16, p1L06.14; 6/6 on p.2 per benchmark-tx/txeng2/gunflags/RESULTS.md), Ib = s (p1L05.14) and 34 = e (p1L06.17), values key.tsv does not give these shapes (image check: shapes correct, benchmark-tx/txeng2/basegun/RESULTS.md); for this folder's lane to settle as key gap, homophone or slip.
