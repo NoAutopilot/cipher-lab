@@ -9442,3 +9442,101 @@ prints Dodge's 7 Dec traffic but not E293, so the class stands. Corrections carr
 "WHERE WE HAVE LOOKED". Reading change for a FIX job (rule 7, decode.py entry notes, not applied here): none beyond FV-FM8c's list; add
 "actor = [Acton?] Maryland, M" as a note if the FIX job takes it. Requests: hdl.huntington.org 9 (8 CISOSEARCHALL, 1 IIIF page);
 archive.org 4 djvu downloads (one an HTML page); be-api 11; www.googleapis.com 5 (two "Service temporarily unavailable").
+
+## AUDIT 2 (AUD2-LEDGER-18)
+
+Second verifier AUD2-LEDGER-18 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 11:40-12:0x UTC by
+`date -u`; a separate session and account from the readers FM-R4a (E254) and FM-R5a (E272, E275, E277) and from the first auditor FV-FM8a
+(all account 1); this session had not read or audited these entries before. Scope: **E254, E272, E275, E277** (E270 is N1, not queued).
+Nothing decoded; `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current", exit 0. FV-FM8a's 22 CONTENTdm requests (holder
+full text, all pointers) were not redone. Key source: `period`. Committed: this section, `fortmonroe/aud2_ledger18_print.py` + `.out`,
+prior-work.tsv rows and the propagation below; texts and images in scratch only.
+
+### 1. Prior-work checks
+`prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=p.<page> pointer <ptr>;date=...;sender=...;recipient=...'
+--step-type second-audit --offline` for 5829 (Brice/Butler, 1864-12-12), 5768 (Shaffer/Rawlins, 1864-07-10), 5824 (James/Allen, 1864-12-09),
+5802 (Martin/Howard, 1864-11-02), 11:41 UTC: all four LEAD 1-own = FIX-FM7's target-level claim (10:49; names no unit, does not cover these
+items: CLEAR); 4-editions CLEAR on the cached OR volumes except 5768's LEAD in `warofrebellion403unit` (E. S. Parker / Rawlins to Shaffer,
+11 July, "How many vessels ...": opened, it is the HQ's follow-up, not this telegram, section 2); 3-solver UNCHECKED-NET (unsolved-ciphers not
+cloned). Rows in prior-work.tsv.
+
+### 2. New searches (the first audit's and the queue row's named gaps)
+Script `fortmonroe/aud2_ledger18_print.py` (+ `.out`): OR I/42 pt 3 (`warofrebellion423unit`, djvu text, fetched once to scratch) split into
+pages on its running heads; every page carrying the entry's date grepped with a term list per entry and the hits read in context (a scripted
+page-by-page pass, not a full human read of every page); OR I/40 pt 3 (cached); Butler's Book (1892, `autobiographyan00butlgoog`, djvu text).
+- **E254 (12 Dec 1864):** OR I/42 pt 3 pp.969-990 (all pages dated 12 Dec): Brice 0, Binney 0, "paymaster" 0, "month's pay" 0, "make you
+  whole" 0, "outlay" 0; whole volume: Brice 0, Binney 0, paymaster 1 (an unrelated order). Butler's Book: Brice 0, Binney 0 (its paymaster
+  passages are 1862 New Orleans and a July 1864 hospital loan). **Not located.**
+- **E272 (10 July 1864):** **OR I/40 pt 3 p.119** (djvu running heads; read in context): "City Point, Va., July 9, 1864. (Received 6 p.m.) [OCR "C p. in."]
+  Commanding Officer, Fortress Monroe: Please inform me by telegraph of the arrival of the first transport with the advance of the Nineteenth
+  Army Corps from New Orleans. U. S. GRANT" and, next, "Washington, July 9, 1864 -- 11.30 p.m. Commanding Officer, Fortress Monroe: Troops
+  arriving from New Orleans will be sent immediately forward to Washington. H. W. HALLECK, Major-General and Chief of Staff." **These are the
+  two telegrams E272 answers and reports:** Grant's request (E272 goes to Grant's HQ, for Rawlins, "There has none of the 19th Army Corps
+  arrived yet") and Halleck's order ("[General-in-Chief] has [telegraph]ed to have them sent to [Washington] [as soon as] they arrive"). Jacob
+  = General-in-Chief is a key word printed before March 1864; here, as in the sibling (Indian = General-in-Chief, clear copy 4788 "Gen
+  Halleck"), it names Halleck. OR I/40 pt 3 p.142 (the sibling to Halleck, Shaffer's 1 p.m., Grant's "order them all to Washington") and p.173
+  (Rawlins to Shaffer, 11 July) as FV-FM8a. Grant Papers vol. 11 (`papersofulyssess0011gran`, lending-only, djvu 403; IA be-api, 12 queries,
+  snippets only): `Shaffer`, `"Nineteenth Corps"`, `"New Orleans" Shaffer`, `"July 10, 1864" Shaffer`, `"arrived yet"` (one 502, one retry:
+  Hancock's rations, unrelated), `"have them sent"` 0, `"19th Corps" "Fort Monroe"`, `"none of the" "19th"`, `Crescent` (index, 204n),
+  `"ought to be sent to Fort Monroe"`, `"send no more of the 19th"`: editorial notes quote Rawlins's 11 July query, a list of New Orleans
+  vessels passing Fort Monroe, Halleck's "instructions ought to be sent to Fort Monroe directing the 19th Corps as they reach there to be sent
+  [on]", and Grant's "I will telegraph to Fort Monroe to send no more of the 19th corps here"; no snippet of this telegram's words. Butler's
+  Book: "New Orleans troops" 0. **The telegram itself is not located; the two telegrams it answers and reports are printed (p.119).**
+- **E275 (9 Dec 1864):** OR I/42 pt 3 pp.886-925 (all pages dated 9 Dec): boats (1, the rams at Dutch Gap), transportation (2, Second Corps
+  trains), Allen (2, Col. Allen of the Sixth Corps lines), "Captain James" 0, Webster 0, "to spare" 0; pp.850-1000 "waiting for transport",
+  "no boats", "Capt. ... Allen" 0. Context only: p.938, Butler at Fort Monroe 10 Dec 11.45 a.m. to Grant, "Has been blowing a gale ever since
+  we arrived ... We are all ready waiting for the navy" (the Fort Fisher expedition's transports at Fort Monroe, 8-13 Dec); its ledger copy is
+  the next entry on E275's own page (5824), filed separately. Butler's Book: "boats of any kind" 0. **Not located.**
+- **E277 (2 Nov 1864, 10 AM):** OR I/42 pt 3 pp.480-505: Howard (1, Lt. Col. John B. Howard, quartermaster, 3 Nov; not this Howard), "Fred
+  Martin" 0, "style of gun" 0. Printed sequel the same day: **p.489** Butler (Washington, 1 p.m.) "at least two batteries of Napoleons", and
+  Grant to Terry (City Point, 5 p.m.) "Send a good large brigade of infantry, with two batteries of Napoleon guns, to report to General Butler,
+  at New York, at once"; **p.504** Terry to Grant, 3 Nov: "The batteries are: Battery M, First U. S. Artillery, Fourth New Jersey Battery" --
+  Battery M, 1st U.S. is the first of the five batteries Lt. Col. Howard listed to Capt. Martin on 1 Nov (E162, same page), whose "[2] last
+  mentioned" E277 asks about and whose strengths E160 (2.30 PM) gives. Butler's Book (appendix, beside its No. 85, "See page 754") prints Butler's 2 Nov telegram and
+  Grant to Terry, both marked "[Cipher.]"; "Fred Martin" 0, "Colonel Howard" 0. **Not located.** One correction to FV-FM8a's wording: p.489's
+  1 p.m. telegram is not "the reason for the request" -- E277 (10 AM) and E162 (1 Nov 12.30) come before it; the print is the same day's
+  sequel, and the order of E162 -> E277 -> E160 -> p.489 -> p.504 is consistent.
+- **Image, second eye** (hdl token 11:45-11:53, 3 IIIF pages at 2400 px to scratch; line crops by `tools/iiif_lines.py --image ... --region`):
+  5829 line 5 reads **"Contrive"** (agree FV-FM8a; transcription "continue" wrong); the signature line reads "B W. Brice" (a small "w." where
+  the transcription has "or"); the header reads "Dec 12th 1864". 5824 lines 1 and 3: **"boots"** both times (agree). 5802 line 2: **"pause"**
+  plainly written (agree; not in key.md, nearest rows Paulding/Pauline = Convoy, Postpone = 7, none a plausible slip); line 4 "plank" (= 2).
+- Requests by host: hdl.huntington.org 3; archive.org 6 (one empty first download, one advancedsearch, OR I/42 pt 3, Butler's Book, one
+  metadata, one 403 djvu probe); be-api 12 (one 502); Google Books 0.
+
+### 3. Key look-ups (independent)
+Every code word of the four entries looked up again in key.md: all as FV-FM8a, H, with one correction: **"whiskey" is in key.md** as
+`| Whisky | Troops | H | p.24 l.7 (341) R |`. FV-FM8a's "'Whiskey' is not in key.md; this is a candidate key row" is wrong: the 5768 sibling
+against its clear copy 4788 is a C-grade confirmation of an existing H row, not a candidate row (it still bears on E256 17 June's M "whiskey",
+which should read [Troops] H). Pagans = Pagan (Battery, H); wrangled = Wrangle (Telegraph, H); Knocks = Knox (Butler, H, sound-spelling).
+
+### 4. Verdict (key `period` for all four)
+- **E254: N3 holds. D3 kept** (H 12 of 12). The external check FV-FM8a names (sent copy 9913) is the same cipher text, so it checks the
+  transcription and the time word, not the meanings; D3 rests also on the code clause above the authentication distance and the key-level
+  matched control (CONF-FM, Porter test 46/52 vs shuffled p99 3). Safe sentence: FV-FM8a's, with "OR ser. I vol. 42 pt 3 (every page dated
+  12 Dec 1864) and Butler's Book (1892)" among the places not located. Unsafe: any novelty word; "Brice's telegram is printed".
+- **E272: N3 holds. D3 kept, check strengthened**: OR I/40 pt 3 p.119 prints Grant's request to Fortress Monroe to report the first arrival
+  and Halleck's order sending the New Orleans troops on to Washington, which E272 answers and reports. Safe sentence: "Read at grade H with
+  War Department Cipher No. 1: at 10.15 AM on 10 July 1864 Col. J. W. Shaffer at Fort Monroe told Brig. Gen. Rawlins at Grant's headquarters
+  that none of the 19th Army Corps had arrived yet and that Halleck had telegraphed to have them sent to Washington as soon as they arrived.
+  The telegram was not located in the Official Records (ser. I vols. 37 pt 2, 40 pt 3), the Grant Papers vol. 11 full-text search, Butler's
+  Book or the Huntington's full-text search (searched 9 Oct 2026); OR I/40 pt 3 prints the two telegrams it answers (p.119: Grant's request,
+  Halleck's order), Shaffer's same-hour telegram to Halleck and Grant's answer (p.142)." Unsafe: any novelty word; "General-in-Chief = Grant".
+- **E275: N3 holds. D2 kept** (H 14 of 14; no external non-statistical check of its content found; Fort Monroe's transports were taken up by
+  the Fort Fisher expedition that week, context only). "boots" stays as written, meaning M. Safe sentence: FV-FM8a's, with "OR ser. I vol. 42
+  pt 3 (every page dated 9 Dec 1864) and Butler's Book" among the places not located. Unsafe: any novelty word; "boats" without "[?]".
+- **E277: N3 holds. D3 kept** (H 11 of 12, "pause" U, image-confirmed). External, non-statistical: OR I/42 pt 3 p.489 and p.504 print that two
+  Napoleon batteries went from the Army of the James with Butler's force, one of them Battery M, 1st U.S. Artillery, from the list E162 gives.
+  Safe sentence: FV-FM8a's, with "pp.489 and 504" for "p.489" and "Butler's Book" among the places not located. Unsafe: any novelty word;
+  "requested because of Butler's 1 p.m. telegram".
+- Propagated: status.json rows (audit_refs, audit_status "two audits", gap, E272 depth_check and line); SO-ECKERT-E272 and -E277 prompts (the
+  printed telegrams, so a second opinion does not "find" them as prior print of these texts); SO-ECKERT-E254/-E275 prompts (the added
+  not-located sources). Not edited here (a FIX job's, decode.py entry notes, rule 7): FV-FM8a's list stands (E254 "continue" -> "contrive",
+  "Knocks" -> [Butler]; E275 "whimper" -> [Transport] if missed); plus **E254 signature "B or Brice" -> "B. W. Brice"** (image) and **E256
+  17 June "whiskey" M -> [Troops] H** (key.md row Whisky, confirmed C by 5768 sibling vs 4788). The same spelling miss leaves "whiskey" undecoded in reading.md for E50, E100, E256 and E293 (key.md spells the
+  row "Whisky"); a FIX job checks each in context (E100 "transport[ed] whiskey to Hilton Head" reads as troops) and adds a decode.py variant
+  note, not a key.md edit.
+- Postmortem: FV-FM8a's readings and grades hold. Two errors in its notes, both small: the whiskey key row exists (a spelling-variant grep
+  would have found "Whisky"); p.489 was called the reason for a request made three hours earlier. Its D3 for E254 leans on a check that only
+  covers transcription; it survives on the code clause and the key-level control. Still open: the Paymaster General's letter books (E254);
+  Rawlins's received telegrams (E272); the Quartermaster General's Washington depot records for Capt. Allen (E275); the Army of the James
+  chief of artillery's report (E277); the press of the day (not searched, none is a press telegram).

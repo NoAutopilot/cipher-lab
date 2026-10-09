@@ -9524,9 +9524,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8a)'"
+        "AUDIT.md '## AUDIT (FV-FM8a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-18)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9546,8 +9547,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): B. W. Brice, Acting Paymaster General, to Butler via Sheldon at Fort Monroe, 12 Dec 1864: Maj. Binney to pay a month's pay to the officers Butler designates (E254)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 12 Dec 1864 the Acting Paymaster General, B. W. Brice, told Butler he had directed Maj. Binney, chief paymaster at Norfolk, to pay one month's pay to the officers Butler designated, and would re-supply Binney at once. The telegram was not located in the Official Records (ser. I vols. 42 pt 3, 43 pt 2), Butler's Private and Official Correspondence IV-V, the Grant Papers vol. 13 full-text search or the Huntington's full-text search (searched 9 Oct 2026); the Washington sent copy (mssEC 18 pointer 9913) records the same cipher text.",
-      "gap": "N3: Butler's own 12 Dec request and the Paymaster General's letter books unread; OR I/42 pt 3 page by page for 12 Dec not read. Depth D3.",
+      "line": "Read at grade H with War Department Cipher No. 1: on 12 Dec 1864 the Acting Paymaster General, B. W. Brice, told Butler he had directed Maj. Binney, chief paymaster at Norfolk, to pay one month's pay to the officers Butler designated, and would re-supply Binney at once. The telegram was not located in the Official Records (ser. I vols. 42 pt 3, 43 pt 2), Butler's Private and Official Correspondence IV-V, the Grant Papers vol. 13 full-text search or the Huntington's full-text search (searched 9 Oct 2026; OR I/42 pt 3 page by page for the date and Butler's Book (1892) added by the second audit); the Washington sent copy (mssEC 18 pointer 9913) records the same cipher text.",
+      "gap": "N3: Butler's own 12 Dec request and the Paymaster General's letter books unread (OR I/42 pt 3 every 12 Dec page and Butler's Book searched, AUD2-LEDGER-18). Depth D3.",
       "depth": "D3",
       "completeness": "12 H of 12 code-word groups (Binney, Brice plain; sound-spellings plain)",
       "phrases": [
@@ -9565,9 +9566,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8a)'"
+        "AUDIT.md '## AUDIT (FV-FM8a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-18)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9587,8 +9589,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Col. J. W. Shaffer, Fort Monroe, to Brig. Gen. Rawlins, City Point, 10 July 1864 10.15 AM: none of the 19th Corps arrived yet (E272)",
-      "line": "Read at grade H with War Department Cipher No. 1: at 10.15 AM on 10 July 1864 Shaffer told Rawlins that none of the 19th Army Corps had arrived yet and that the General-in-Chief had telegraphed to have them sent to Washington as soon as they arrived. The telegram was not located in the Official Records (ser. I vols. 37 pt 2, 40 pt 3), the Grant Papers vol. 11 full-text search or the Huntington's full-text search (searched 9 Oct 2026); OR I/40 pt 3 p.142 prints Shaffer's same-hour telegram to Halleck ('None have arrived yet') and Grant's answer.",
-      "gap": "N3: Grant Papers vol. 11 page read for 10 July not done (snippet only); Rawlins's received books unread. Depth D3.",
+      "line": "Read at grade H with War Department Cipher No. 1: at 10.15 AM on 10 July 1864 Col. J. W. Shaffer at Fort Monroe told Brig. Gen. Rawlins at Grant's headquarters that none of the 19th Army Corps had arrived yet and that Halleck had telegraphed to have them sent to Washington as soon as they arrived. The telegram was not located in the Official Records (ser. I vols. 37 pt 2, 40 pt 3), the Grant Papers vol. 11 full-text search, Butler's Book or the Huntington's full-text search (searched 9 Oct 2026); OR I/40 pt 3 prints the two telegrams it answers (p.119: Grant's request, Halleck's order), Shaffer's same-hour telegram to Halleck and Grant's answer (p.142).",
+      "gap": "N3: Rawlins's received telegrams unread; Grant Papers vol. 11 snippet-only (lending-only). Depth D3.",
       "depth": "D3",
       "completeness": "14 H of 14 code-word groups",
       "phrases": [
@@ -9599,16 +9601,17 @@
         "Huntington mssEC 25 (obj 5952) p.237, pointer 5768, E272"
       ],
       "depth_sentence": "At 10.15 AM on 10 July 1864 Shaffer told Rawlins that none of the 19th Corps had yet reached Fort Monroe and that Halleck had asked for them to go on to Washington.",
-      "depth_check": "code clause: Hunkey Oyster Pelton = 19th Army Corps, Persia = As soon as; external, non-statistical: OR I/40 pt 3 p.142 (Shaffer to Halleck same hour; Grant: order them all to Washington) and holder clear copy 4788 of the sibling; image read",
+      "depth_check": "code clause: Hunkey Oyster Pelton = 19th Army Corps, Persia = As soon as; external, non-statistical: OR I/40 pt 3 p.119 (Grant's request to Fortress Monroe and Halleck's 9 July 11.30 p.m. order, which E272 answers and reports; AUD2-LEDGER-18); OR I/40 pt 3 p.142 (Shaffer to Halleck same hour; Grant: order them all to Washington) and holder clear copy 4788 of the sibling; image read",
       "depth_note": "14 H of 14 code-word groups"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8a)'"
+        "AUDIT.md '## AUDIT (FV-FM8a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-18)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9628,8 +9631,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Capt. James, Quartermaster, Fort Monroe, to Capt. Allen, Quartermaster, Washington, 9 Dec 1864: none to spare, waiting two days for transport for 1,000 cavalry (E275)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 9 Dec 1864 Capt. James at Fort Monroe told Capt. Allen in Washington that he had no 'boots' (the page's word; boats by the sense) of any kind to spare and had waited two days for transport for 1,000 cavalry. The telegram was not located in the Official Records (ser. I vol. 42 pt 3), the Grant Papers vol. 13 full-text search, Google Books or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3: the Quartermaster General's Fort Monroe correspondence and OR I/42 pt 3 page by page for 9 Dec unread. Depth D2 (no external check).",
+      "line": "Read at grade H with War Department Cipher No. 1: on 9 Dec 1864 Capt. James at Fort Monroe told Capt. Allen in Washington that he had no 'boots' (the page's word; boats by the sense) of any kind to spare and had waited two days for transport for 1,000 cavalry. The telegram was not located in the Official Records (ser. I vol. 42 pt 3), the Grant Papers vol. 13 full-text search, Google Books or the Huntington's full-text search (searched 9 Oct 2026; OR I/42 pt 3 page by page for the date and Butler's Book (1892) added by the second audit).",
+      "gap": "N3: the Quartermaster General's Washington depot records for Capt. Allen unread (OR I/42 pt 3 every 9 Dec page and Butler's Book searched, AUD2-LEDGER-18). Depth D2: no external check of the content.",
       "depth": "D2",
       "completeness": "14 H of 14 code-word groups; 'boots' (x2, plain, as written) M in meaning",
       "phrases": [
@@ -9647,9 +9650,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8a)'"
+        "AUDIT.md '## AUDIT (FV-FM8a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-18)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9670,7 +9674,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Capt. Fred Martin for Butler, Fort Monroe, to Col. Howard, chief of artillery, 2 Nov 1864 10 AM: strength of each battery and style of guns (E277)",
       "line": "Read at grade H with War Department Cipher No. 1: on 2 Nov 1864 Capt. Fred Martin for Butler asked Col. Howard, chief of artillery, for the strength of each battery and the style of gun in the two last mentioned batteries, at once. The telegram was not located in the Official Records (ser. I vol. 42 pt 3), Butler's Private and Official Correspondence V, the Grant Papers vol. 12 full-text search or the Huntington's full-text search (searched 9 Oct 2026); OR I/42 pt 3 p.489 prints Butler's request of the same day for two batteries of Napoleons.",
-      "gap": "N3: Butler's Book (1892) and Langdon's battery records unread. Depth D3.",
+      "gap": "N3: the Army of the James chief of artillery's papers unread. Depth D3.",
       "depth": "D3",
       "completeness": "11 H of 12 code-word groups ('pause' not in key.md, unread)",
       "phrases": [
@@ -9681,7 +9685,7 @@
         "Huntington mssEC 25 (obj 5952) p.258, pointer 5802, E277"
       ],
       "depth_sentence": "On 2 Nov 1864 Butler's office asked Col. Howard for the strength of each battery and the guns of the last two he had named.",
-      "depth_check": "code clause: Pagoda/Pagan = Battery, Smoky = Gun, Negro = Artillery; external, non-statistical: OR I/42 pt 3 p.489 (Butler to Grant, 2 Nov 1864: at least two batteries of Napoleons); the reply E160 on the same page; image read",
+      "depth_check": "code clause: Pagoda/Pagan = Battery, Smoky = Gun, Negro = Artillery; external, non-statistical: OR I/42 pt 3 p.489 (Butler to Grant, 2 Nov 1864: at least two batteries of Napoleons); the reply E160 on the same page; image read; OR I/42 pt 3 p.504 (Terry, 3 Nov: Battery M, 1st U.S. Artillery, from E162's list, sent with Butler's force; AUD2-LEDGER-18)",
       "depth_note": "11 H of 12 code-word groups ('pause' not in key.md, unread)"
     },
     {
