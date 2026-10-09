@@ -12785,3 +12785,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 14:36 | FV-FM9d (first verifier, Opus 5.5) | claim: eckert-1864 E307 E308 E309 first audit (AUDIT "## AUDIT (FV-FM9d)"), cap $5, box 90 min from 14:37 UTC, for LANE LEDGER (account 1)
 2026-10-09 14:37 | FV-FM9b (Opus 5.5, first verifier): eckert-1864 | hdl release (18 requests: 13 CISOSEARCHALL, 1 dmGetItemInfo, 4 IIIF, all 200); E300 has a holder clear copy at pointer 4582 Page 141 (missed by FM-R6a); for LANE LEDGER (account 1)
 2026-10-09 14:39 | FV-FM9c (Opus, verifier): eckert-1864 | hdl take (1 IIIF page 5663 at 2400 px to scratch: E304 tail); for LANE LEDGER (account 1)
+2026-10-09 14:39 | FV-FM9c (Opus, verifier): eckert-1864 | hdl release (1 IIIF request 5663, 200; session total 21); for LANE LEDGER (account 1)
