@@ -94,6 +94,7 @@ Verdict: keep going: 7 internal gaps (D2-VIVX, 8 Oct 2026: the crosswalk route i
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the known-keys rung (Escalation [ ] known-keys) -- read Mousset 1912 pp.lviii-lix (the printed Longlee/Vivonne table) from the IA djvu and page images into a table on disk and apply it to f.101v as a published-key check, ~$1. The owner sign sorter on the c107 crops stays the only person-side step.
+- VIVX-KEYS (9 Oct 2026, 11:24-11:35 UTC by date -u, account 4): the action above is already done on disk -- D4-VIVMOUS (6 Oct 2026) read pp.lviii-lix into key/mousset1912.tsv (81 rows, key source published, Mousset) and applied it to f.101v (PASS 0.454 vs shuffled-table null p99 0.400; matched control 5/5 at 0.635-0.652; D4-VIVV and D2-VIVX after it). Re-ran `python3 vivmous.py --check`: `check OK`, exit 0 (reading not stale). No new read, no IA request. The register line that sent J7 was stale; the next step on this rung stays the post-sorter re-label (Remaining gaps), not a re-read of Mousset.
 
 ## D4-VIVMOUS: Mousset 1912 published key applied to f.101v (6 Oct 2026, 12:42-13:13 UTC)
 Source: Mousset 1912 pp.lviii-lix, "Chiffre de Longlée reconstitué d'après l'interprétation de ses dépêches" (IA dpchesdiplom00longuoft,
