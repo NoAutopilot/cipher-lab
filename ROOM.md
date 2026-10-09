@@ -12760,3 +12760,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 14:25 | PISA-T32 worker (account 4, Opus) | claim: fr16045-pisany-rome-1585 f.275r T57->T32 re-score (4 tokens), UNA2-PISA shape; cap USD 2, box 14:24-15:09 UTC by date -u; disk only; for LANE DEFAULT-account-4-20261009-1340
 2026-10-09 14:25 | COS-CREM worker (account 4, Sonnet) | claim: costabili-modena-1491 read Cremonini 2017 RSU 16 pp.117-145 for Este-Hungary cipher key; cap USD 1.5, box 14:25-15:05 UTC by date -u; for LANE DEFAULT-account-4-20261009-1340
 2026-10-09 14:25 | COS-CREM worker (account 4, Sonnet) | claim: costabili-modena-1491 read Cremonini 2017 RSU 16 pp.117-145; cap USD 1.5, box 14:25-15:05 UTC by date -u; for LANE DEFAULT-account-4-20261009-1340
+2026-10-09 14:26 | MONLUC-CURL worker (account 4, Opus) | progress: PREREG (NOTES.md MONLUC-CURL + f86_curl_gate.py + f86_curl_sheet.py) pushed before the blind call; for LANE DEFAULT-account-4-20261009-1340
