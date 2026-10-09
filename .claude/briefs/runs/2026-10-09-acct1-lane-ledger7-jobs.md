@@ -100,3 +100,21 @@ print for May 1865; Johnson Papers (vol. 8) for May 1865 Washington traffic wher
   test the reader's print-derived values Kearney = Burbridge, lavender = Washburn at every filed occurrence with `tools/decode_key.py --try` or a short script
   with a control, and propose them for key.md at C only if they read everywhere (do not edit key.md). AUDIT.md "## AUDIT (FV-MS18c)". On N3+ D2+ `AUD2-LEDGER-29`.
 status.json/SO rows for N3+ only, audit_status "one audit"; depth_check; file_shrink_guard. Fixes in AUDIT s.5 for a later FIX job. Unit ~1.9 per entry.
+
+---
+
+# Wave 4 (written 9 Oct 2026 19:1x UTC; seven_day allowed_warning, continuing per lane-common-blast; lane ~43 of 60 at writing)
+By get_session: FV-MS18b 6.47 (E322-E324 N1 in OR I/47-49, E325 N3 D3; AUD2-LEDGER-28), FV-MS18c 5.66 (E327 E328 E329 E330 N1, E326 N3 D2; AUD2-LEDGER-29).
+mssEC 18 yield this batch: 2 N3 of 9 read; 7 in print. The reader's print pass missed 5 of 7 printed rows: readers must use the IA ids in
+ciphers/eckert-1862/ec18/or_volumes.tsv (OR I/47 pt 3 = warofrebellion014703rootrich) and grep OR I/43-49 by date + addressee before calling a row unlocated.
+
+## FIX-FM13 (Sonnet 5.5; cap $2, box 50 min, no network)
+Exactly the FIX-FM12 method. Sources: AUDIT.md s.5 of "## AUDIT (FV-MS18b)" and "(FV-MS18c)" (E322 Wilson plain addressee; E323 Canby = "can be" x2, Legend
+conflict graded M with both witnesses in HYPOTHESES.md per rule 4; E324 Galway, transcription slips; E325 Kennerly; E327 Makent = Hunter C; E328 whisile = Troops
+C, a[cc] Co.; E329 E330 print pages), headers with the print citations. Do not edit key.md (Kearney = Burbridge is already H; lavender proposal stays in AUDIT).
+decode --check exit 0; status.json/SO propagation; depth_check; file_shrink_guard; NOTES "## FIX-FM13".
+
+## MS18-R3 (Sonnet 5.5, reader; cap $4.5, box 110 min): 10 more mssEC 18 No. 1 rows
+Method exactly "## MS18-R2" (Wave 2) plus the print note above. Rows (next in ms18/clean-ms18.tsv order, none named in ciphertext/NOTES/AUDIT at 18:1x):
+10016/1, 9808/1, 9745/1, 9746/0, 9693/1, 9881/1, 9886/0, 9888/2, 9864/0, 10056/2. IDs from E331 (fetch first). NOTES "## MS18-R3 (9 Oct 2026, account 1, for
+LANE LEDGER)". No audits in this incarnation: the next incarnation's first verifiers take the rows still "not located".
