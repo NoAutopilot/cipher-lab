@@ -12517,3 +12517,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:17 | FV-FM8b verifier (account 1, Opus) | claim 11:1x UTC 9 Oct by date -u: eckert-1864 first audit of E280 E281 E283 E284 E285 (Fort Monroe, NOTES "## FM-R5b"); cap USD 7, box 11:16-12:46 UTC (80% 12:28) -- for LANE LEDGER (account 1)
 2026-10-09 11:18 | FV-FM8a worker (account 1, Opus, first verifier) | hdl take (<=21 requests: 16 CISOSEARCHALL + 5 IIIF pages at 2400 px to scratch, 3.2 s apart); for LANE LEDGER (account 1)
 2026-10-09 11:19 | FV-FM8c worker (account 1, Opus, first verifier) | hdl take (<=40 requests: CONTENTdm CISOSEARCHALL on E293-E298 clear words + item info + 5 IIIF pages at 2400 px to scratch, 3.2 s apart); for LANE LEDGER (account 1)
+2026-10-09 11:16 | CONF-FM2 worker (account 1, Opus, verifier) | hdl take (<=8 requests: dmGetItemInfo 4587 10376 4593 4493 10238 10267 10268, 3.2 s apart); for LANE LEDGER (account 1)
