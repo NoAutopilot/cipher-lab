@@ -1,0 +1,87 @@
+{
+ "n_person_codes_n2": 25,
+ "sample": [
+  "Lafitte",
+  "Lantern",
+  "Lapland",
+  "Lawn",
+  "Lonesome",
+  "Mars",
+  "Meriden",
+  "Midas",
+  "Monarch",
+  "Moscow"
+ ],
+ "pools": {
+  "Lafitte": {
+   "sha256": "1e146bdbf127397dd5286f2bb24d0bb1cf5fe92f970f14f682e49d00bfee3889",
+   "pool": 5940,
+   "pages_kept": 13592,
+   "pages_masked": 0,
+   "n_contexts": 2
+  },
+  "Lantern": {
+   "sha256": "45322d3666f2b8faac2c713c3e847cf6b2cca671459d4d07d12bfa20623ce2fe",
+   "pool": 5925,
+   "pages_kept": 13381,
+   "pages_masked": 211,
+   "n_contexts": 8
+  },
+  "Lapland": {
+   "sha256": "5c0212853eedca804a31f7384ecf8930b993bdd0e4f2fdecd37cd9bd365aaa97",
+   "pool": 5905,
+   "pages_kept": 13186,
+   "pages_masked": 406,
+   "n_contexts": 5
+  },
+  "Lawn": {
+   "sha256": "3eff15980dc36d9ee45cabc876935bd81f35ec40c8031e4d645aa80672d1f337",
+   "pool": 5937,
+   "pages_kept": 13569,
+   "pages_masked": 23,
+   "n_contexts": 5
+  },
+  "Lonesome": {
+   "sha256": "d086863e27d75d667ffffcab9e18d5f0eb3dedf5093637612ae6828f8dee8a70",
+   "pool": 5912,
+   "pages_kept": 13345,
+   "pages_masked": 247,
+   "n_contexts": 6
+  },
+  "Mars": {
+   "sha256": "70edfca3d70e4e0b0eeff6ca1d0ba65fe8ab66767558f8180d824657fd8890e8",
+   "pool": 5878,
+   "pages_kept": 12858,
+   "pages_masked": 734,
+   "n_contexts": 2
+  },
+  "Meriden": {
+   "sha256": "5f57fd9c7cacdeb8d1f8ff3b71c69f2f1b1a961fa1bdfe2ef737cf1bc0f29f5d",
+   "pool": 5905,
+   "pages_kept": 13177,
+   "pages_masked": 415,
+   "n_contexts": 9
+  },
+  "Midas": {
+   "sha256": "3ec595c6ce599a55509b17f5164320ff5dcabbff4ce4971cbc83b2d6932c15e9",
+   "pool": 5938,
+   "pages_kept": 13586,
+   "pages_masked": 6,
+   "n_contexts": 10
+  },
+  "Monarch": {
+   "sha256": "7057e68a7b787450705df771fa429a253733a314dc4a7b908c927c60a79d606c",
+   "pool": 5901,
+   "pages_kept": 13159,
+   "pages_masked": 433,
+   "n_contexts": 3
+  },
+  "Moscow": {
+   "sha256": "4ea12862b8059c6275a9eebc02c1ed47b03fcc3ab88da06546fefac8dbc7cf79",
+   "pool": 5930,
+   "pages_kept": 13428,
+   "pages_masked": 164,
+   "n_contexts": 7
+  }
+ }
+}

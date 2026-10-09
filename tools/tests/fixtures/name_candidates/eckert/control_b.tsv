@@ -1,0 +1,11 @@
+code	meaning	n_contexts	pool	coverage	truth_rank	truth_score	null_p95	beats_p95	decoy_beat_share	top5
+Lafitte	Averill W W	2	5940	False	None	None	None	None	0.0	General | Have | Mentioned | Mayor | Commanding
+Lantern	Augur C C	8	5925	True	520	3.3094	3.3094	False	0.03	General | Have | Mentioned | Commanding | Mayor
+Lapland	Banks N P	5	5905	True	847	2.9375	2.9375	False	0.08	General | Have | Mentioned | Commanding | Mayor
+Lawn	Burnside A E	5	5937	True	403	3.507	3.507	False	0.06	General | Have | Mentioned | Mayor | Commanding
+Lonesome	Gillmore Q A	6	5912	True	488	3.3667	3.3667	False	0.02	General | Have | Mentioned | Mayor | Commanding
+Mars	Dana C A	2	5878	True	898	2.8888	2.8888	False	0.03	General | Have | Mentioned | Commanding | Mayor
+Meriden	Hunter D	9	5905	True	393	3.4993	3.4993	False	0.06	General | Have | Mentioned | Commanding | Mayor
+Midas	Kelly B F	10	5938	True	1406	2.5119	2.5119	False	0.09	General | Have | Mentioned | Mayor | Commanding
+Monarch	Meade G G	3	5901	True	339	3.5904	3.5904	False	0.02	General | Have | Mentioned | Commanding | Mayor
+Moscow	Ord E O C	7	5930	False	None	None	None	None	0.0	General | Have | Mentioned | Commanding | Mayor

@@ -140,3 +140,15 @@ true places 13th and 11th behind DBNL page boilerplate ("Over", "Collectie", "Zo
 names, i.e. the index pool step needs the site chrome stripped. Logged "untested-by-this-run" for the context features,
 not refuted; the next instrument step is typed candidates (Wikidata when it answers, or a gazetteer), not another
 run of this pool. Shelf grade: weak.
+
+## Result, control (b) (scored 03:59 UTC, `fixtures/name_candidates/eckert/control_b.tsv`, pool sha256 in pools.json)
+
+Eckert 1864, 10 sampled person code words (English, H): coverage 8/10 (Averill, Ord absent); covered ranks 339-1406
+of ~5,900; every covered true score equals its own context-null p95 (0/8 above); decoy beat share 0.02-0.09.
+**Gate: FAIL, 0/10 (>= 5 needed).** Same mechanism as (a): bare index surnames carry no type or title, so the context
+terms are 0 under real and null contexts alike -- a non-test of the context features, not a negative on them; the
+ranking is co-mention only, topped by OR prose words ("General", "Have", "Mentioned", "Mayor"). Shelf grade: weak.
+Nothing is licensed: no French set qualified, the German places gate (a) and the English persons gate (b) both failed.
+Next instrument step (not this job): typed candidates -- Wikidata when it answers, or a gazetteer/title-phrase typing
+step for index names ("General X", "à X") -- and stripping site chrome from the edition text, then re-run (a) and (b)
+unchanged against new frozen pools.
