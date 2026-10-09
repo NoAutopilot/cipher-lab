@@ -118,3 +118,11 @@ running, which moved eval, and the running cost against the window.
    f.144 or f.168, whichever has the most tokens still split between readers), with the folder's key and the power control
    the folder already uses; the result is reported as "the key now licenses N more tokens at grade S" (or does not), the
    number the owner can use. That run follows the folder's own PREREG and prior_work.py step, and a verifier audits it.
+
+Note for TX-CONFIRM-SET (orchestrator, 07:0x UTC 9 Oct): the lane's round 1 found no third hand on disk with both a known answer
+and two raw blind passes (gramont f.29r: no two raw passes, no period key; fr.3252 f.117: passes but no known answer). The
+confirmation item needs a known answer only (the lane's pipeline produces the reads): prefer a leaf outside the five items' hands
+with a period decipherment, clerk clear sheet or printed plaintext plus a period/published key (check KEY-OFFICES.tsv and the
+folders with `C`-graded tokens: Thurloe printed pairs, Lodewijk 4610/4611/4616 are digits so no; a symbol cipher is required);
+if none exists, take another Birago 1572 letter with its own clerk clear sheet (same recipe as no.87, NEVBIR-87ALIGN), say so in
+the row, and the headline then reads "confirmed on a second leaf of the same hand", never "on a new hand".

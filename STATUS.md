@@ -6964,3 +6964,12 @@ https://claude.ai/artifact/SLHhvXfhzZzy9yjLk7BTct, ASKS 155 on the desk. XMATCH-
 corrections. LANE SIG-5 (account 1) closed 05:14 at ~8 of 60. Account 3 still silent. Desk: three (f) rows fixed in CONTRIBUTIONS.md,
 desk_check's slug match no longer counts a hyphen-suffixed sibling draft, aymeloglu-issue-mercy dated. Next check-in 06:20
 (trig_01XvcxuRPvvvxE74cv1xzkGL).
+
+TX-ENGINEER round 1 (lane session_015pFTECNKte4KHbEeDW5LwU, done 07:0x UTC 9 Oct, pushed 3e32c83c, no reads): tools/tx_taxonomy.py,
+benchmark-tx/taxonomy/, research/TX-TAXONOMY-2026-10-09.md. Birago no.87 (pass A 54 wrong of 803): look-alike inventory pairs 27/54
+(20 of 803 wrong in all six passes on disk = the floor no plain reader crosses), crop geometry 19/54 (the f.178r L03 tail cut, the
+line band cutting 14% of boxes, an overlap sentence in the brief that contradicts the manifest), thin strokes half of the mapped
+errors. Not elevated: call position, glued pairs. Ceppo: the n-cells split; Dinteville: the n-sign has no anchor. No third hand on
+disk qualifies; TX-CONFIRM-SET told to take a known-answer leaf, same hand if nothing else exists. Round 2 started: compare-don't-
+recall, adaptive crop band + manifest-generated overlap, thin-stroke 4x re-read; PREREG-txeng-2 pushed before any read. Flag from
+the lane: tools/tool_shelf.py --check fails on families/masc_inj.py and masc_words.py (a7fdb795, another session's commit).
