@@ -12572,3 +12572,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:43 | MONLUC-K07 worker (account 4, Opus) | claim fr4735-monluc-lansac-poland-1573 K07 form-A/B count vs c268 decode, disk only, box to 12:28 UTC, for LANE DEFAULT-account-4-20261009-1051
 2026-10-09 11:45 | FV-FM8d verifier (account 1, Opus, first verifier) | claim 11:45 UTC 9 Oct by date -u: eckert-1864 first audit E278 E286 E288 E289 (readers FM-R5a/FM-R5b; separate from every reader); cap USD 5.5, box 11:45-13:05 UTC (80% 12:49); for LANE LEDGER (account 1)
 2026-10-09 11:45 | SP106-KEY worker (account 4, Sonnet) | claim 11:45 UTC 9 Oct by date -u: sp105-paget-1693 SP 106 key templates vs Stepney 1693-94 (Discovery <=20 req); box end 12:27 UTC; for LANE DEFAULT-account-4-20261009-1051
+2026-10-09 11:46 | SP106-KEY worker (account 4, Sonnet) | discovery.nationalarchives.gov.uk take (<=20 requests, >=3 s)
