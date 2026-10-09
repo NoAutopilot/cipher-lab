@@ -67,3 +67,13 @@ reference code SE/RA/25.3/4/II/7/B and the exact document, `status: drafted`, no
 session); add the CONTRIBUTIONS.md row and a `backlog` ASKS.md row (self-contained: one link, one action, what comes back); (4) if not
 cleared, say in REQUEST.md and NOTES.md exactly which edition page would settle it and queue that as the next step. Never send; never
 name the owner; no personal data.
+
+## KARL-FOLD (account 2, Opus 5.5, cap USD 2.5, box 45 min) -- from KARL-REQ's flag (rule 1c, 10:18 UTC)
+KARL-REQ drafted outreach/riksarkivet-karlxi-1677.md (status drafted, no checked: line) and flagged that ASKS 132 (ra-celsing: a copy
+order to the same recipient, Riksarkivet, never drafted) must be folded into the same message or held. Decision: fold. Job: read ASKS
+132 and the ra-celsing folder's REQUEST.md/NOTES.md; add the ra-celsing item to the Riksarkivet draft as a second numbered request in the
+same message (reference code, document, pages/leaves, what is wanted), keeping outreach/README.md rules 1 and 1a, the single recipient
+address, the placeholders, `status: drafted` and NO `checked:` line (gate 7 is a separate session, queued by the orchestrator as OUT-CHECK-
+KARL after this lands); update ASKS 132 and ASKS 159 to point at the one draft, and the CONTRIBUTIONS.md row. If ASKS 132's own gate is not
+cleared (its NOTES say the item may be in print), hold it out and say so in both ASKS rows instead of folding. Never send; never name the
+owner; no personal data.

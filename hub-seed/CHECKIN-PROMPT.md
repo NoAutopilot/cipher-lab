@@ -40,3 +40,7 @@ STRUCK-2 first) live from this session; ASKS 158 = the owner's decision on anony
 moved 8 tokens to C (H/C/S 82%), UNA3-BLA queued on account 1, then queue DV-BLA (depth verifier, separate session) when it lands.
 TX-TRUTH-VERIFY: no.87 measured error 0.045 -> 0.042, 0.029 flagged-excluded (owner report line). Account-1/2 worker costs are theirs to
 ledger; record results in STATUS only.
+STATE DELTA 10:3x UTC 9 Oct: LANE MQS-3 near close (list spent); BLAST-account-4 brief now default-lane.md, so the dispatcher/auto-fill opens
+DEFAULT-account-4-* lanes from NEXT-STEPS runnable rows. WAIT-PASS-5 live on account 4 (13 targets). Account 2: KARL-FOLD queued, then
+queue OUT-CHECK-KARL (gate-7 fact check of outreach/riksarkivet-karlxi-1677.md, a session other than KARL-REQ/KARL-FOLD) when it lands;
+UNA2-PISA running. Account 1: UNA3-BLA at :40, then queue DV-BLA (depth verifier). Reading --wait-only: read the WHOLE list, never tail.

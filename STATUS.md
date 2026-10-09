@@ -7099,6 +7099,22 @@ ledger (not visible here). Account 4: LANE-TX-ENGINEER's queue row closed late (
 LANE-MQS-3-account-4 was added by hand and spawned from this session (STRUCK-2 first; S6 and Gallica-bound rows out). Queue: account 1
 UNA3-BLA (:40), account 2 UNA2-BIR3252, UNA2-PISA, KARL-REQ (:10). Desk/NEAR/work_queue checks ok. Next check-in 10:25.
 
+Check-in 3, 10:25-10:3x UTC 9 Oct (3:25 am PT): five_hour allowed; orchestrator context ~360k, cost 10.8. LANE MQS-3 (account 4,
+session_01An6QVEiGnTrULNnQG5xqvG) ran its whole list in 20 minutes: STRUCK-2 3.14 (sorter_apply struck/over states + decipher_sheet
+callouts, 10/10 vs 0/10), CVD-FIX 2.09 (glyph_atlas overlays and dashboard colours, cvd_check audit 6 -> 0), TAIL 2.44 (freq.py --tail,
+controlled-only), WITNESS-LABELS (decode_witness --label-diffs, gates missed, weak), INTERCEPTOR (prior_work --interceptor, 4/4 vs 0/16,
+controlled-only), PILE-REGISTER (pile_register.py, --refs-scan FAIL vs null, weak); the lane ledgers and archives its own workers and
+closes when the last reports. BLAST-account-4 now points at .claude/briefs/default-lane.md (the MQS brief's list is spent), so the next
+account-4 lane is a default lane from NEXT-STEPS runnable rows. Account 2 (its 10:11 dispatcher): UNA2-BIR3252 done 10:19 -- 7 tiles
+decided into a passD_v5 candidate, KA 5/6, E 0.293 -> 0.283, grades unchanged, the tile design now [retired] after two attempts, next the
+f.36-37 gloss per-sign tiles ~$8; KARL-REQ done 10:18 -- ra-karlxi REQUEST.md gate CLEARED, Riksarkivet copy order drafted
+(outreach/riksarkivet-karlxi-1677.md, status drafted, no checked: line), ASKS 159 backlog, flag: ASKS 132 (ra-celsing, same recipient) is
+folded into the same message by KARL-FOLD (queued), then OUT-CHECK-KARL (gate 7, separate session); UNA2-PISA running; LANE FAMILY-A2h
+(DEFAULT-account-2-20261009-1010) open with four workers. Account 1: UNA3-BLA queued for :40. Account 3 silent. Wait-only: 13 rows still
+had no parallel action (the 09:2x listing had been read with tail, so WAIT-PASS-4 covered only ten); WAIT-PASS-5 spawned from this
+session for all 13. Five finished queue rows closed (TX-TRUTH-VERIFY, UNA2-BLA, WAIT-PASS-4, KARL-REQ, UNA2-BIR3252). Checks: desk, NEAR,
+system map, work_queue ok; open_asks' S6 line is the tool's known quirk (answered 09:5x). Next check-in 10:55.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
