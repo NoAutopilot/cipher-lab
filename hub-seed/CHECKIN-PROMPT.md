@@ -129,3 +129,8 @@ due. AUD2-LEDGER-31/32 live on account 4 from the orchestrator (ledger + archive
 Tomokiyo GL.htm); the anonymous-pile intake path is in CLAUDE.md. Account-4 workers show seven_day allowed_warning (spawning continues).
 STATE DELTA 22:0x UTC 9 Oct: TX-RED inc. 2 = session_019mC2iYWnDXZQipquND2vZE (inc. 1 ledgered 21.24, archived). Pass 7 F33 BLOCKS the S2 score until
 the frozen adjudication is run (lane told); F34-F36 open. Lane inc. 2 hand-over to inc. 3 due.
+STATE DELTA 22:4x UTC 9 Oct: S2 LOOK TAKEN 22:22:57 UTC -- unseen-hand product baseline 0.150 (flagged-excluded) to 0.296 (as measured), both
+above 5%: the owner's number exists and is not 5%. Lane inc. 3 session_01P46fwsU5VTc1oJiV1sayg5. Owner's build zone: PRIVATE mock-ups only
+(never public): CATALOGUE-SITE-1 v1 at https://claude.ai/artifact/7Yh9bZpbgyVUrgM9kGuAnm (v2 in progress), EXHIBIT-1
+session_016E4oYJoEa1g7x68DPWsUbV (three museum displays). SCOUT-BOURDEAU-WEB queued account 1. AUD2-LEDGER-33 live on account 4
+session_01TKVSDAd9vYmihZgUsgL9ch. Accounts 1 and 2 lanes closed 22:3x, refilling. seven_day allowed_warning on account 4 (resets Mon).

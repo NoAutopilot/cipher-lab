@@ -7765,6 +7765,31 @@ the S2 score (the frozen step-3 adjudication was not executed: passZ_S2 is pass 
 22:0x to run the adjudication as frozen before the score (or report "pass A with 9 adjudications", never the frozen pipeline); F34 (TXV-VIV
 flags decided without the clerk image), F35 (gunther sheet 6 mislabelled exemplars: B3 before a look), F36 (B2's leak: check v5 labels).
 
+Check-in 5, 22:38-22:4x UTC 9 Oct (3:38 pm PT; clock-read): five_hour allowed on this session, seven_day allowed_warning on every
+account-4 worker (resets Mon 12 Oct 20:00 UTC; spawning continues per BUDGETS). THE OWNER'S NUMBER: the S2 look was taken at 22:22:57 UTC by
+lane incarnation 3 (session_01P46fwsU5VTc1oJiV1sayg5; inc. 2 ledgered 29.41 and archived by it) on passZ_S2b after the frozen adjudication
+(TX-RED F33 repaired): the product baseline on an unseen hand (vivonne1573-f103r-confirm2, 1,068 scored) is a BRACKET of 0.150
+flagged-excluded (75/500) to 0.296 as measured (316/1068); the builder's own passes 0.048/0.074 beside; both ends above 5%: no unseen
+hand reads at 5% under today's pipeline. Round 10-11: S2-NOTE classified the 75 errors (segmentation 42, read 33, notation 0); B3b
+gunther baseline 0.051 / 0.020 (a baseline change); DV1 built vivonne1573-f102r-dev (dev item, 1,008 scored). TX-RED inc. 2 (9.4) pass 8
+F38-F42 logged, next 22:51. Owner-side today (3:0x-3:3x pm PT): a public catalogue like Bourdeau's -> withdrawn to a PRIVATE MOCK-UP
+("don't post anything publicly; mock-ups I can look over"): CATALOGUE-SITE-1 v1 built (research/mockups/catalogue-2026-10-09.html,
+164 item pages, counts = board 19/124/19/1/6) and published to the owner's private artifact https://claude.ai/artifact/7Yh9bZpbgyVUrgM9kGuAnm;
+his review: "exceptionally too wordy; show not tell; connect to the history, key people, places, moments; let me see the cipher" ->
+Amendment 4 (v2 in progress, same worker) and EXHIBIT-1 spawned (session_016E4oYJoEa1g7x68DPWsUbV: three museum-style displays, Gramont
+1530 / Manteuffel 1712 / Nassau 1573, cipher hero crops, PD portraits via the Commons API, dated moment strip, try-it signs, proof badges;
+three-layer reading lines: cipher, own language with grades, English translation). He asked whether we ever took Bourdeau's web target
+list as targets: 38 of his top 60 already in our queue/notes; SCOUT-BOURDEAU-WEB queued for account 1 (22 unmatched rows scored, image-
+online ones queued, reproduction candidates listed; snapshot sources/cyphersolver-site/catalogue-2026-10-09.html). AUD2-LEDGER-31 (2.60 D,
+E346 N3 D3 kept) and -32 (2.68 D, E347/E349(1)/E350 N3 D3 kept) ledgered and archived; AUD2-LEDGER-33 (E358) re-tagged and spawned
+session_01TKVSDAd9vYmihZgUsgL9ch. Account 1 LEDGER-8 closed 22:3x (E333-E358 audited; KEY-CANBY rule-4 record); account 2 FAMILY-A2l
+closed 22:29 (no reading beat its control on unread text; Suriname inv. 372 letter is glossed, N0); both refill at their dispatchers;
+account 3 silent since 02:03. Checks: system_map FAIL fixed here (POOLS-2026-10-09-A2l.tsv row added), retired --check 1 missing (lane),
+desk/near/wait-only/NO-NEXT ok. ASKS 156 default (a) still to apply; ASKS 160 waits on the owner.
+TX programme table 22:4x UTC: slot 1 orchestrator | slot 2 lane inc. 3 session_01P46fwsU5VTc1oJiV1sayg5, check-in 22:50 | slot 3 TX-RED
+inc. 2 session_019mC2iYWnDXZQipquND2vZE 9.4, pass 9 at 22:51; open F38-F42 | slots 4-10: round 11 (BASE-GUN2 done, S2NOTE done, VIV102 done)
+| eval looks 0; S2 look 1 (TAKEN: 0.150-0.296 bracket, product baseline on an unseen hand).
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
