@@ -12931,3 +12931,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 16:34 | TXP-REBUILD worker (account 4, Opus) | claim (16:3x UTC 9 Oct by date -u): PREREG-txeng2-2 R truth re-derivation (keyprint for dint f89/f98v/f113, jackknife for bir1591-f23r), read-free, no vision; cap 4, box 50 min (end 17:28 UTC, 80% 17:18); for LANE TX-ENGINEER-2
 2026-10-09 16:33 | MANT-UNG | IA release (16:4x UTC): 3 archive.org GETs (BO I djvu 500 then 200, Berner djvu 500 -- stopped); sachsen take (16:4x UTC by date -u): 694/08 0290 + 0383, 2 GETs; for LANE FAMILY-A2j (account 2)
 2026-10-09 16:35 | MANT-UNG | sachsen release (16:4x UTC by date -u): 2 GETs done; MANT-XTR may take; for LANE FAMILY-A2j (account 2)
+2026-10-09 16:33 | MANT-XTR (Opus worker) | claim: sachsstaatsarchiv-manteuffel-1712, 694/08 0312+0314 Extrait pair, glossed gate; cap $7, box 16:31-18:21 UTC (80% 17:59); sachsen after MANT-UNG release; for LANE FAMILY-A2j (account 2)
