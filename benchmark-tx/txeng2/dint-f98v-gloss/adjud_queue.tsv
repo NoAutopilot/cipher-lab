@@ -1,0 +1,81 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+L01	1	uncertain	T		NEW:tt (two verticals, one crossbar) o
+L01	2	disagree	NEW:tt (two verticals, one crossbar) II	T	o m
+L01	3	uncertain	o	T NEW:tt (two verticals, one crossbar)	m sq
+L01	4	uncertain	m	NEW:tt (two verticals, one crossbar) o	sq #
+L01	8	disagree	z Z	# 1	0 0'
+L01	10	uncertain	0'	z 0	3 1
+L01	11	disagree	3 m	0 0'	1 a
+L01	19	uncertain	m	0 a	NEW:brace (tall curl with descender)
+L01	20	disagree	NEW:brace (tall curl with descender) 3	a m	
+L02	3	uncertain	0	a m	Z 1
+L02	4	uncertain	Z	m 0	1 f
+L02	10	uncertain	p	a a	4 sq
+L02	12	uncertain	sq	p 4	v L
+L02	14	uncertain	L	sq v	0 f
+L02	15	disagree	0 o	v L	f v'
+L02	17	disagree	v' v	0 f	4 4
+L02	19	uncertain	4	v' 4	0 NEW:tt (two verticals, one crossbar)
+L02	21	disagree	NEW:tt (two verticals, one crossbar) II	4 0	v' #
+L02	22	disagree	v' v	0 NEW:tt (two verticals, one crossbar)	# 0
+L02	26	disagree	NEW:tt (two verticals, one crossbar) II	0 sq	m 1
+L02	35	uncertain	4	0 y	a m
+L03	1	disagree	m' m		1 p
+L03	7	disagree	v' v	+ f	0 sq
+L03	12	uncertain	Z	m L	v y
+L03	14	uncertain	y	Z v	0' NEW:A (pointed lambda/caret a)
+L03	16	disagree	NEW:A (pointed lambda/caret a) a	y 0'	m 1
+L03	19	disagree	NEW:tt (two verticals, one crossbar) II	m 1	0 4
+L03	28	uncertain	y	p 0	# w
+L03	32	uncertain	1	w y	v' 0'
+L03	33	disagree	v' v	y 1	0' 4
+L03	34	uncertain	0'	1 v'	4 m
+L03	38	disagree	0 o	m sq	f t
+L03	40	uncertain	t	0 f	1 m
+L03	45	disagree	NEW:theta (0 with bar inside) NEW:0 with horizontal bar inside (theta)	c 3	a' y
+L03	46	disagree	a' a	3 NEW:theta (0 with bar inside)	y p
+L03	50	disagree	0 o	p w	m 1
+L03	51	uncertain	m	w 0	1 Z
+L03	52	uncertain	1	0 m	Z 0'
+L03	53	uncertain	Z	m 1	0'
+L03	54	uncertain	0'	1 Z	
+L04	3	disagree	NEW:tt (two verticals, one crossbar) #	1 sq	T 0'
+L04	4	disagree	T t	sq NEW:tt (two verticals, one crossbar)	0' c
+L04	10	disagree	NEW:tt (two verticals, one crossbar) II	p m	a m
+L04	14	disagree	v' -	m 4	NEW:brace (tall curl with descender) sq
+L04	15	disagree	NEW:brace (tall curl with descender) v	4 v'	sq m
+L04	20	disagree	NEW:A (pointed lambda/caret a) a	w 1	m 4
+L04	24	disagree	0 o	4 m	Z v
+L04	25	uncertain	Z	m 0	v m
+L04	29	uncertain	4	m a	1 sq
+L04	30	disagree	1 L	a 4	sq #
+L04	35	uncertain	sq	0 0'	1 L
+L04	43	uncertain	a	0 4	m 1
+L04	46	disagree	sq' sq	m 1	0 v
+L04	47	disagree	0 0'	1 sq'	v w
+L05	1	uncertain	m		p NEW:tt (two verticals, one crossbar)
+L05	3	disagree	NEW:tt (two verticals, one crossbar) II	m p	m 4
+L05	10	uncertain	0'	w sq	w y
+L05	11	uncertain	w	sq 0'	y NEW:tt (two verticals, one crossbar)
+L05	13	disagree	NEW:tt (two verticals, one crossbar) II	w y	sq 1
+L05	15	uncertain	1	NEW:tt (two verticals, one crossbar) sq	m 0'
+L05	18	disagree	v NEW:Gamma with long descender	m 0'	t y
+L05	19	uncertain	t	0' v	y NEW:tt (two verticals, one crossbar)
+L05	20	uncertain	y	v t	NEW:tt (two verticals, one crossbar) m
+L05	21	disagree	NEW:tt (two verticals, one crossbar) II	t y	m NEW:tt (two verticals, one crossbar)
+L05	23	disagree	NEW:tt (two verticals, one crossbar) II	NEW:tt (two verticals, one crossbar) m	NEW:u (open round bowl) 1
+L05	24	disagree	NEW:u (open round bowl) NEW:u shape with hook	m NEW:tt (two verticals, one crossbar)	1 c
+L05	27	uncertain	y	1 c	f 4
+L05	33	disagree	v' v	0 m	1 y
+L05	35	uncertain	y	v' 1	v f
+L05	41	uncertain	Z	# 1	y y
+L05	43	uncertain	y	Z y	sq' L
+L05	44	disagree	sq' sq	y y	L 0
+L06	1	disagree	v NEW:v over long baseline		m p
+L06	6	uncertain	L	m w	NEW:tt (two verticals, one crossbar) 0
+L06	7	disagree	NEW:tt (two verticals, one crossbar) II	w L	0 4
+L06	15	uncertain	4	sq m	NEW:q (round closed loop on stem) w
+L06	16	disagree	NEW:q (round closed loop on stem) y	m 4	w 0
+L06	25	disagree	NEW:q (round closed loop on stem) y	v m	0 y
+L06	27	uncertain	y	NEW:q (round closed loop on stem) 0	1 c
+L06	31	uncertain	+	c v	

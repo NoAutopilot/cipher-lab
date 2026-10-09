@@ -1,0 +1,18 @@
+You settle doubtful signs in a transcription of a 16th-century symbol cipher. Use ONLY the files named here; open no other file.
+
+Sign labels (exact labels; NEW:<short description> for a shape that fits none):
+  II two vertical strokes (Roman two) | # double-barred cross / hash | 1 single vertical stroke | . a dot written between signs
+  0 round zero, full size | o small round o (clearly smaller than 0) | 0' zero with a stroke or accent over it | + plus / cross
+  t cross with a lower bar (dagger) | T pi/tau shape (bar with two legs) | a alpha/a shape | c c shape | 3 figure 3
+  z z shape (small) | Z large z | 4 figure 4 / open triangle with flag | 9 figure 9 | f f with a cross-bar (like ƒ / £)
+  p p / rho with a loop (sometimes xp) | y psi/phi shape | w w / omega shape | m m with a z-tail (ɱ) | v v / downward triangle
+  sq small square | L inverted T / ⊥ | x x shape | -:- division sign
+  Overbars or dots that are part of a sign: suffix ' (prime), e.g. 0' or v'.
+  Earlier readers also used: NEW:tt (two verticals crossed by ONE bar, vs # with two bars), NEW:A (pointed caret a),
+  NEW:brace (tall curl with descender), NEW:q (round closed loop on a stem), NEW:theta (0 with a bar inside), NEW:u (open bowl).
+Line crops: /home/user/cipher-lab/benchmark-tx/txeng2/dint-f98v-gloss/crops/read/f98v_<line>_s1.jpg and _s2.jpg for lines L01..L06 (12 files), at 2x. Segments overlap by 200 px (about 9 signs): the last 200 px of s1 and the first 200 px of s2 show the same ink, count it once. Each crop holds its line along the middle; ignore fragments of other writing at the top or bottom edge (a stroke above a sign may be stray ink from the writing above, not a prime). L01 begins with ordinary French handwriting (prose) before the cipher run; L02 has a stretch of prose in the middle of its run; L06 ends with prose; skip prose.
+Queue: /home/user/cipher-lab/benchmark-tx/txeng2/dint-f98v-gloss/adjud_queue.tsv -- one row per doubtful position: line, col (the sign's position counting cipher signs from the left of the line's cipher run, from 1, prose not counted), kind (disagree = two earlier readers differ; uncertain = they agree but one marked it doubtful), candidates (readings the two readers gave; "-" means a reader had no sign there), left_neighbours and right_neighbours (the signs just before and after it, as landmarks).
+
+View EVERY crop of every line before answering. For each row, find the sign using the neighbours, compare its shape with the labels, and choose: one of the candidates, any other label if the shape plainly fits it better, a NEW:<description> if none fits, or NONE if there is no sign there (or the ink is not part of the cipher). If a box plainly holds two signs, write both labels separated by a space. You do not know and must not guess what any sign means.
+
+Write /home/user/cipher-lab/benchmark-tx/txeng2/dint-f98v-gloss/adjud_out.tsv with header line<TAB>col<TAB>sign<TAB>conf<TAB>viewed<TAB>note (conf H/M/L; viewed = yes if you looked at that sign in the crop), one row per queue row, same order. Write no other file except enlarged copies of crops under /tmp/adjud_zoom/ if useful, and run no git. Reply only with the row count and how many rows you changed from the first candidate.

@@ -1,0 +1,247 @@
+line	position	sign	confidence	alt	why
+L01	1	T	M		agree-flagged
+L01	2	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L01	3	o	M		agree-flagged
+L01	4	m	M		agree-flagged
+L01	5	sq	H		agree
+L01	6	#	H		agree
+L01	7	1	H		agree
+L01	8	z	M	B:Z	differ
+L01	9	0	H		agree
+L01	10	0'	M		agree-flagged
+L01	11	3	M	B:m	differ
+L01	12	1	H		agree
+L01	13	a	H		agree
+L01	14	L	H		agree
+L01	15	4	H		agree
+L01	16	+	H		agree
+L01	17	0	H		agree
+L01	18	a	H		agree
+L01	19	m	M		agree-flagged
+L01	20	NEW:brace (tall curl with descender)	M	B:3	differ
+L02	1	a	H		agree
+L02	2	m	H		agree
+L02	3	0	M		agree-flagged
+L02	4	Z	M		agree-flagged
+L02	5	1	H		agree
+L02	6	f	H		agree
+L02	7	1	H		agree
+L02	8	a	H		agree
+L02	9	a	H		agree
+L02	10	p	M		agree-flagged
+L02	11	4	H		agree
+L02	12	sq	M		agree-flagged
+L02	13	v	H		agree
+L02	14	L	M		agree-flagged
+L02	15	0	M	B:o	differ
+L02	16	f	H		agree
+L02	17	v'	M	B:v	differ
+L02	18	4	H		agree
+L02	19	4	M		agree-flagged
+L02	20	0	H		agree
+L02	21	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L02	22	v'	M	B:v	differ
+L02	23	#	H		agree
+L02	24	0	H		agree
+L02	25	sq	H		agree
+L02	26	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L02	27	m	H		agree
+L02	28	1	H		agree
+L02	29	w	H		agree
+L02	30	v	H		agree
+L02	31	0'	H		agree
+L02	32	sq	H		agree
+L02	33	0	H		agree
+L02	34	y	H		agree
+L02	35	4	M		agree-flagged
+L02	36	a	H		agree
+L02	37	m	H		agree
+L02	38	1	H		agree
+L02	39	4	H		agree
+L02	40	0'	H		agree
+L02	41	+	H		agree
+L02	42	1	H		agree
+L03	1	m'	M	B:m	differ
+L03	2	1	H		agree
+L03	3	p	H		agree
+L03	4	4	H		agree
+L03	5	+	H		agree
+L03	6	f	H		agree
+L03	7	v'	M	B:v	differ
+L03	8	0	H		agree
+L03	9	sq	H		agree
+L03	10	m	H		agree
+L03	11	L	H		agree
+L03	12	Z	M		agree-flagged
+L03	13	v	H		agree
+L03	14	y	M		agree-flagged
+L03	15	0'	H		agree
+L03	16	NEW:A (pointed lambda/caret a)	M	B:a	differ
+L03	17	m	H		agree
+L03	18	1	H		agree
+L03	19	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L03	20	0	H		agree
+L03	21	4	H		agree
+L03	22	v	H		agree
+L03	23	1	H		agree
+L03	24	sq	H		agree
+L03	25	m	H		agree
+L03	26	p	H		agree
+L03	27	0	H		agree
+L03	28	y	M		agree-flagged
+L03	29	#	H		agree
+L03	30	w	H		agree
+L03	31	y	H		agree
+L03	32	1	M		agree-flagged
+L03	33	v'	M	B:v	differ
+L03	34	0'	M		agree-flagged
+L03	35	4	H		agree
+L03	36	m	H		agree
+L03	37	sq	H		agree
+L03	38	0	M	B:o	differ
+L03	39	f	H		agree
+L03	40	t	M		agree-flagged
+L03	41	1	H		agree
+L03	42	m	H		agree
+L03	43	c	H		agree
+L03	44	3	H		agree
+L03	45	NEW:theta (0 with bar inside)	M	B:NEW:0 with horizontal bar inside (theta)	differ
+L03	46	a'	M	B:a	differ
+L03	47	y	H		agree
+L03	48	p	H		agree
+L03	49	w	H		agree
+L03	50	0	M	B:o	differ
+L03	51	m	M		agree-flagged
+L03	52	1	M		agree-flagged
+L03	53	Z	M		agree-flagged
+L03	54	0'	M		agree-flagged
+L04	1	1	H		agree
+L04	2	sq	H		agree
+L04	3	NEW:tt (two verticals, one crossbar)	M	B:#	differ
+L04	4	T	M	B:t	differ
+L04	5	0'	H		agree
+L04	6	c	H		agree
+L04	7	y	H		agree
+L04	8	p	H		agree
+L04	9	m	H		agree
+L04	10	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L04	11	a	H		agree
+L04	12	m	H		agree
+L04	13	4	H		agree
+L04	14	v'	M	B:-	gap
+L04	15	NEW:brace (tall curl with descender)	M	B:v	differ
+L04	16	sq	H		agree
+L04	17	m	H		agree
+L04	18	w	H		agree
+L04	19	1	H		agree
+L04	20	NEW:A (pointed lambda/caret a)	M	B:a	differ
+L04	21	m	H		agree
+L04	22	4	H		agree
+L04	23	m	H		agree
+L04	24	0	M	B:o	differ
+L04	25	Z	M		agree-flagged
+L04	26	v	H		agree
+L04	27	m	H		agree
+L04	28	a	H		agree
+L04	29	4	M		agree-flagged
+L04	30	1	M	B:L	differ
+L04	31	sq	H		agree
+L04	32	#	H		agree
+L04	33	0	H		agree
+L04	34	0'	H		agree
+L04	35	sq	M		agree-flagged
+L04	36	1	H		agree
+L04	37	L	H		agree
+L04	38	f	H		agree
+L04	39	a	H		agree
+L04	40	m	H		agree
+L04	41	0	H		agree
+L04	42	4	H		agree
+L04	43	a	M		agree-flagged
+L04	44	m	H		agree
+L04	45	1	H		agree
+L04	46	sq'	M	B:sq	differ
+L04	47	0	M	B:0'	differ
+L04	48	v	H		agree
+L04	49	w	H		agree
+L05	1	m	M		agree-flagged
+L05	2	p	H		agree
+L05	3	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L05	4	m	H		agree
+L05	5	4	H		agree
+L05	6	L	H		agree
+L05	7	0	H		agree
+L05	8	w	H		agree
+L05	9	sq	H		agree
+L05	10	0'	M		agree-flagged
+L05	11	w	M		agree-flagged
+L05	12	y	H		agree
+L05	13	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L05	14	sq	H		agree
+L05	15	1	M		agree-flagged
+L05	16	m	H		agree
+L05	17	0'	H		agree
+L05	18	v	M	B:NEW:Gamma with long descender	differ
+L05	19	t	M		agree-flagged
+L05	20	y	M		agree-flagged
+L05	21	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L05	22	m	H		agree
+L05	23	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L05	24	NEW:u (open round bowl)	M	B:NEW:u shape with hook	differ
+L05	25	1	H		agree
+L05	26	c	H		agree
+L05	27	y	M		agree-flagged
+L05	28	f	H		agree
+L05	29	4	H		agree
+L05	30	L	H		agree
+L05	31	0	H		agree
+L05	32	m	H		agree
+L05	33	v'	M	B:v	differ
+L05	34	1	H		agree
+L05	35	y	M		agree-flagged
+L05	36	v	H		agree
+L05	37	f	H		agree
+L05	38	m	H		agree
+L05	39	#	H		agree
+L05	40	1	H		agree
+L05	41	Z	M		agree-flagged
+L05	42	y	H		agree
+L05	43	y	M		agree-flagged
+L05	44	sq'	M	B:sq	differ
+L05	45	L	H		agree
+L05	46	0	H		agree
+L05	47	m	H		agree
+L05	48	w	H		agree
+L05	49	#	H		agree
+L05	50	1	H		agree
+L06	1	v	M	B:NEW:v over long baseline	differ
+L06	2	m	H		agree
+L06	3	p	H		agree
+L06	4	m	H		agree
+L06	5	w	H		agree
+L06	6	L	M		agree-flagged
+L06	7	NEW:tt (two verticals, one crossbar)	M	B:II	differ
+L06	8	0	H		agree
+L06	9	4	H		agree
+L06	10	v	H		agree
+L06	11	f	H		agree
+L06	12	y	H		agree
+L06	13	sq	H		agree
+L06	14	m	H		agree
+L06	15	4	M		agree-flagged
+L06	16	NEW:q (round closed loop on stem)	M	B:y	differ
+L06	17	w	H		agree
+L06	18	0	H		agree
+L06	19	v	H		agree
+L06	20	-:-	H		agree
+L06	21	4	H		agree
+L06	22	1	H		agree
+L06	23	v	H		agree
+L06	24	m	H		agree
+L06	25	NEW:q (round closed loop on stem)	M	B:y	differ
+L06	26	0	H		agree
+L06	27	y	M		agree-flagged
+L06	28	1	H		agree
+L06	29	c	H		agree
+L06	30	v	H		agree
+L06	31	+	M		agree-flagged

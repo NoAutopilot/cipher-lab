@@ -1,0 +1,41 @@
+line	col	A	B	flagged	crop
+L01	2	NEW:tt (two verticals, one crossbar)	II	AB	
+L01	8	z	Z	AB	
+L01	11	3	m	A	
+L01	20	NEW:brace (tall curl with descender)	3	AB	
+L02	15	0	o	B	
+L02	17	v'	v	AB	
+L02	21	NEW:tt (two verticals, one crossbar)	II	AB	
+L02	22	v'	v	AB	
+L02	26	NEW:tt (two verticals, one crossbar)	II	A	
+L03	1	m'	m	AB	
+L03	7	v'	v	AB	
+L03	16	NEW:A (pointed lambda/caret a)	a	AB	
+L03	19	NEW:tt (two verticals, one crossbar)	II	A	
+L03	33	v'	v	AB	
+L03	38	0	o	B	
+L03	45	NEW:theta (0 with bar inside)	NEW:0 with horizontal bar inside (theta)	AB	
+L03	46	a'	a	AB	
+L03	50	0	o	B	
+L04	3	NEW:tt (two verticals, one crossbar)	#	AB	
+L04	4	T	t	AB	
+L04	10	NEW:tt (two verticals, one crossbar)	II	AB	
+L04	14	v'	-	A	
+L04	15	NEW:brace (tall curl with descender)	v	AB	
+L04	20	NEW:A (pointed lambda/caret a)	a	AB	
+L04	24	0	o	B	
+L04	30	1	L	B	
+L04	46	sq'	sq	AB	
+L04	47	0	0'	AB	
+L05	3	NEW:tt (two verticals, one crossbar)	II	A	
+L05	13	NEW:tt (two verticals, one crossbar)	II	A	
+L05	18	v	NEW:Gamma with long descender	AB	
+L05	21	NEW:tt (two verticals, one crossbar)	II	AB	
+L05	23	NEW:tt (two verticals, one crossbar)	II	A	
+L05	24	NEW:u (open round bowl)	NEW:u shape with hook	AB	
+L05	33	v'	v	AB	
+L05	44	sq'	sq	AB	
+L06	1	v	NEW:v over long baseline	AB	
+L06	7	NEW:tt (two verticals, one crossbar)	II	A	
+L06	16	NEW:q (round closed loop on stem)	y	AB	
+L06	25	NEW:q (round closed loop on stem)	y	AB	
