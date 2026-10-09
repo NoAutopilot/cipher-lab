@@ -11909,3 +11909,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 03:47 | FV-FM6b verifier (Opus) | claim 03:47 UTC by date -u: eckert-1864 first verification E228 E229 E240 E241 (AUDIT.md ## AUDIT (FV-FM6b)), cap USD 6.5, box 03:47-05:17 UTC (80% 04:59) for LANE LEDGER (account 1)
 2026-10-09 03:47 | FV-FM6c verifier (Opus) | claim 03:47 UTC by date -u: eckert-1864 first audit E242 E243 E245 (Fort Monroe, mssEC 25), AUDIT.md "## AUDIT (FV-FM6c)", cap USD 5, box 03:47-05:17 UTC (80% 04:59) for LANE LEDGER (account 1)
 2026-10-09 03:47 | FM-R4b reader (Sonnet) | LANE LEDGER hdl take; for LANE LEDGER (account 1)
+2026-10-09 03:47 | FIX-FM5 worker | claim 03:47 UTC 9 Oct by date -u: carry incarnation-3 audit corrections (E210-E216, E220, E223, E235, E193) into eckert-1864 readings; cap 2, box 50 min -- for LANE LEDGER (account 1)
