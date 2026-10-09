@@ -65,7 +65,7 @@ line "in print / holder clear copy / not located (sources searched)", Remaining 
 
 ---
 
-# Wave 2 (written 9 Oct 2026 21:2x UTC; seven_day allowed_warning, continuing per lane-common-blast; lane ~17 of 60 at writing)
+# Wave 2 (written 9 Oct 2026 21:1x UTC; seven_day allowed_warning, continuing per lane-common-blast; lane ~17 of 60 at writing)
 By get_session: FV-MS18d 7.16 (E334 N1 OR I/34 pt 4 p.64; E333 E335 E340 N3 D3; AUD2-LEDGER-30), FV-MS18e 3.40 (E331 E332 E336-E339 N1 on page images), FIX-FM14
 0.77, KEY-LAV 2.15 (lavender = Washburne 3/3 vs 0/3; Tulip rule 11/11 + 108/108; E287 misdecode), MS18-R4 2.04 (E341-E350: 4 printed, 6 not located). Wave 1 15.52.
 
@@ -94,6 +94,6 @@ the Eckert-office note about copies to Lamb, is U/M and unprinted -- classify th
 question); E348 I/37 pt 2 (8 July 1864; find the page). AUDIT.md "## AUDIT (FV-MS18h)". If E344 paragraph 2 is N3+ D2+, it rides AUD2-LEDGER-32 or the next free number.
 
 ## MS18-R5 (Sonnet 5.5, reader; cap $3, box 100 min): 10 more mssEC 18 No. 1 rows
-Method exactly "## MS18-R4" (wave 1). Rows (next in clean-ms18.tsv order after 9895/2, none in a ciphertext.txt header at 21:2x): 10065/2 (2 Dec 1865 -- HEAD
+Method exactly "## MS18-R4" (wave 1). Rows (next in clean-ms18.tsv order after 9895/2, none in a ciphertext.txt header at 21:1x): 10065/2 (2 Dec 1865 -- HEAD
 share first; "no book in hand" if none reads), 9821/1, 10004/1, 9791/0, 9863/0, 9729/2, 9825/1, 10043/1, 9753/1, 9770/1 (spare: 9674/0, 9886/1). IDs from E351.
 NOTES "## MS18-R5 (9 Oct 2026, account 1, for LANE LEDGER)". No audits. Unit ~0.25 per row.
