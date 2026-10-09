@@ -220,6 +220,27 @@ TNA Discovery /records/v1/details, fetched once each: C6822019 (SP 105/60/121), 
   Status unchanged (open).
 - Requests: archives.soas.ac.uk 7 browser fetches (3 rendered, 2 "Page not found", 2 timeouts), >= 3 s apart.
 
+## SP106-KEY (9 Oct 2026, 11:43-11:5x UTC by date -u; catalogue only, search result)
+
+- Step: "check SP 106 key templates for Stepney's 1693-94 cipher against the f.123 cipher words" (D2-PRINT4 Verdict). No image exists
+  (Discovery `digitised` False, IMG-AUDIT), so the check is by catalogue description, not by comparing templates with the words.
+- `tools/prior_work.py - --interceptor England --year 1693` listed one depot to log: TNA SP 106 (period span not checked by the tool). Logged below.
+  (`prior_work.py sp105-paget-1693 --item SP105/60/135` refused: the folder has no items.tsv row for it; not a priced step, so not worked around.)
+- Searched (TNA Discovery API, tools/discovery_items.py, 3 term runs, SP 106 term "cipher" = all 67 pieces; SP 105/60 term "cipher" = 11 items;
+  SP 106 term "Stepney" = 0 records). Pieces read, none names Stepney, Paget, Plantamour or 1693-94:
+  SP 106/1-3 Elizabeth I (1558-1603); /4 James I; /5 Charles I (to 1649); /6 Charles II (1660 May 29-1685 Feb 6); /7-9 Anne to George II (from 1702 Mar 8);
+  /10 "Italian and other ciphers ... not deciphered", 17th century, Civil War Royalist letters; /11-39 named tables 1731-1759; /40-42 undated
+  18th-century sheets (/40 "For writing in cipher", printed with manuscript annotations; /41 French manuscript cipher; /42 "For writing in
+  cypher" plus "For Decyphering" nos 1-1800 and 1-900/1-1300); /43-66 duplicates 1742-1757; /67 Ewart and Whitworth 1787-91.
+- Found: no piece of SP 106 is dated 1685-1702, so no William and Mary table is catalogued there; this repeats the 24 Sept 2026 reading of the
+  same class (LANE S worker H) from a fresh listing. Pieces that could hold an undated or earlier table printed for general use: SP 106/10, /40, /42
+  (descriptions give no office, name or date).
+- Not found: any piece naming Stepney, Paget or 1693-94; the SP 105/60 f.123 cipher words ("Kinsky", "Paget's brother", the route) cannot be
+  tested against /40 and /42 because no image of either set of sheets or of f.123 was seen. Not found is a search result for these pieces and
+  this catalogue text, not a design negative and not a statement that the key is absent from TNA.
+- Hosts: discovery.nationalarchives.gov.uk, 3 term runs of tools/discovery_items.py (paged, >=1.5 s; a count of about 12 requests, tool does not print it), all returned data, no 429/403.
+- Next: an owner-side look at SP 106/10, /40, /42 (needs-physical-access; add to REQUEST.md if a copy order goes ahead). Status unchanged (open).
+
 ## Remaining gaps (D2-PRINT4, 8 Oct 2026)
 Read so far: unmeasured; no image of SP 105/60 f.135 has been seen (not digitised, IMG-AUDIT)
 - an image of SP 105/60 f.135 (and f.123, the cipher-word sibling) - blocker: needs-physical-access; not digitised (Discovery `digitised` False), copy order in REQUEST.md
@@ -228,7 +249,7 @@ Read so far: unmeasured; no image of SP 105/60 f.135 has been seen (not digitise
 ## Escalation (D2-PRINT4, 8 Oct 2026)
 - [x] siblings: SOAS PP MS 4/02 titles walked (D2-PRINT4) and the SP 105/60 neighbours listed (Premise check (c)): f.123 cipher words with readings, f.138, f.151, f.168
 - [ ] clear-pages: f.123's "[In cipher]" words with the cataloguer's readings are a crib source once an image exists
-- [ ] known-keys: SP 106 key templates; the cataloguer says f.135's key is untraced there; not re-checked by D2-PRINT4
+- [x] known-keys: SP 106 key templates re-listed 9 Oct 2026 (SP106-KEY): 67 pieces, none 1685-1702, none names Stepney or Paget; /10, /40, /42 undated and unseen
 - [x] print: CSPD W&M vol. 4, Lexington Papers 1851, Google Books sweep (Verdict); no print of the f.135 PS
 - [ ] key-rebuild: needs the image (REQUEST.md)
 - [ ] image-check: copy order, REQUEST.md (needs the person)
