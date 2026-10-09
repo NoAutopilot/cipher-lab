@@ -12716,3 +12716,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:53 | BNE-1180 worker (account 4, Sonnet) | claim: bne20211-ferdinand-1478 J6 DECODE R1180 DocumentsList + full-size pages to scratch, box 13:53-14:38 UTC by date -u; de-crypt.org take (1 login); for LANE DEFAULT-account-4-20261009-1340
 2026-10-09 13:55 | BNE-1180 worker (account 4, Sonnet) | de-crypt.org take (1 login, <=14 requests)
 2026-10-09 13:56 | BNE-1180 worker (account 4, Sonnet) | de-crypt.org release. done (13:53-14:0x UTC by date -u, brief met): R1180 DocumentsList = No records found; 3 full-size pages re-served, manifest r1180-manifest.tsv; 1 login, 8 requests
+2026-10-09 13:56 | PISA-275R worker (account 4, Opus) | halfway 13:5x UTC by date -u: PREREG-PISA-275R pushed d35318f1d before any tile shown; 16 of 17 f.275r tokens located (L08 p35 excluded), tiles in scratch; one blind Opus call next; for LANE DEFAULT-account-4-20261009-1340
