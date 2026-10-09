@@ -78,3 +78,38 @@ key.md Virginia: read the 5021 page image at that line (~USD 0.5) and log the co
 resolved by count; (c) if time remains: select printed residue entries by Myrtle, Mary, Ingress, Camden, Humboldt in the other OR volumes
 (~USD 1). hdl.huntington.org: LANE LEDGER (account 1) is using it today -- follow the ROOM "hdl take/release" lines, <= 15 requests,
 >= 3.2 s apart; IA `_djvu.txt` for OR volumes. Do not touch eckert-1864 (LANE LEDGER's).
+
+## Wave 2 (written 9 Oct 2026, ~11:3x UTC by date -u, after wave 1 closed: 5 workers, 12.29 by get_session)
+
+Same "Common to every job" as above. Register lines can be stale (JMAN-CSP found its step already done on disk): check the
+folder's own files and prior_work.py check 1 before any priced step, and stop with a ROOM flag if the step is already done.
+
+### J6 D1411-R21 -- decode-1411-hhsta-vienna-1600, Opus (Opus subagents for the passes), cap USD 6.5, box 100 min
+NOTES line ~114 (GAPS157): pre-register r at residue 21 as an alternative table beside the frozen one (a PREREG file committed before
+any read), then cut the unused numerals (p.2 left lower half, p.2 right page) from the images on disk with `tools/iiif_lines.py --image`,
+two blind Opus passes + your reconciliation (3 units), and test both tables against the shuffled-target and shifted-rule controls only
+(controls-vs-decode, no language-judge gate: the judge is retired for this leaf). The language reading waits on ASKS 120; do not attempt it.
+
+### J7 VIVX-KEYS -- fr16106-vivonne-longlee-1579, Opus, cap USD 2.5, box 60 min
+NOTES line ~96: the known-keys rung -- read Mousset 1912 pp.lviii-lix (the printed Longlee/Vivonne table) from the IA djvu text and page
+images into a key table on disk, and apply it to f.101v (transcription on disk) as a published-key check with a shuffled-key control.
+Key source `published` (Mousset), credited. IA: post "IA take/release", <= 20 requests, >= 1.5 s.
+
+### J8 BNE-DECODE -- bne20211-ferdinand-1478, Sonnet, cap USD 1.5, box 45 min
+NOTES line ~244: one DECODE browser login (`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js` with `--guess-fullsize`, the
+A2-HDK route) to re-test whether R1172 (/123) and the Decrypted sibling R1180 (/126) serve full-size images or plaintext documents.
+One login only; "DECODE take/release" in ROOM; images to scratch, never committed; scrub the account name from any saved page. Record
+what each record serves (HTTP, content-type, size) in NOTES. If R1180's plaintext document is served, save its text (not images) and
+note it as prior work for the target; no decode.
+
+### J9 E62-CHECK2 -- eckert-1862, Sonnet, cap USD 3, box 75 min
+Finish E62-STALE's (a) and (c): rerun `residue_decode.py --check` with the 58 page re-fetches it needs (hdl.huntington.org, follow the
+"hdl take/release" ROOM lines -- LANE LEDGER uses the host today -- >= 3.2 s apart, one token block), diff against pages_manifest.tsv /
+pages.tsv and name the cause of the stale report; fix only with the cause explained. Then (c): select printed residue entries carrying
+Myrtle, Mary, Ingress, Camden, Humboldt in the other OR volumes (IA `_djvu.txt`), ~USD 1. Do not touch eckert-1864.
+
+### J10 CS-1162 -- decode-1162-modena-ambung-1492, Sonnet, cap USD 3, box 60 min
+`tools/intake_gate_check.py decode-1162-modena-ambung-1492` FAILs (partial, no standard-edition citation within 6 lines). Run a
+check-solved per `.claude/briefs/check-solved.md` (all six source families, the Required web/blog step and the "## Premise check"
+section), write the verdict at the top of NOTES.md in the gate's format, and re-run the gate; paste both outputs. Do not do the F19
+key-constrained check (that is the next lane's, once the gate passes).
