@@ -12012,3 +12012,97 @@ the 171 cached texts in `sources/ia-fulltext/print-check/`):
   step is done (0).
 Requests: hdl.huntington.org 26 (14 CONTENTdm queries, 8 item records, 4 IIIF pages, all 200); archive.org 12 (11 djvu downloads: 10 x 200, ORN
 `officialrecordso0003unse_x7o4` 500 once, not retried; 1 advancedsearch, plus 1 for vol. 21); Google Books API 9 (all 200); loc.gov 5 (all 200).
+
+## AUDIT (FV-MS18h)
+
+Verifier FV-MS18h (account 1, for LANE LEDGER), 9 Oct 2026, 21:17-21:3x UTC by `date -u`; a separate session from the reader MS18-R4, not
+protecting its conclusions. Scope: N1 confirmation of **E341, E342, E344, E348** (NOTES "## MS18-R4"), placed in print by the reader from OCR page
+heads only. Sent ledger mssEC 18 = Huntington object 10074, Cipher No. 1. Nothing decoded beyond key look-ups in key.md. Key source for all four:
+`period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate (21:19 UTC): `eckert-1864: partial (line 3) --
+edition/page or full-text-search citation found within 6 lines`. Prior work (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC
+18;folio=<pointer>;date=..;sender=..;recipient=..' --step-type audit --offline`, one per entry): 1-own LEAD x5 on each = slug-level live claims
+(FIX-FM11, KEY-BLIND, NO9-PAGES, FIX-FM12, FIX-FM14), none naming these four entries (CLEAR for this scope). Scripts: `ms18/fv_ms18h_ia.py`,
+`ms18/fv_ms18h_hdl.py`, `ms18/fv_ms18h_info.py`, `ms18/fv_ms18h_gb.py` (each + `.out`).
+
+### 1. Print, on the page image (IA `_page_numbers.json` leaf -> page image at 1400 px, to scratch; ids from `ciphers/eckert-1862/ec18/or_volumes.tsv`)
+| ID | volume (IA id) | leaf | page head on the image | print as read on the image |
+|---|---|---|---|---|
+| E341 | OR I/39 pt 3 (`warofrebellion393unit`) | 709 | "CHAP. LI.] CORRESPONDENCE, ETC.--UNION. 703" | Washington, November 8, 1864 -- 11 a.m.; Major-General Thomas: "General Schofield, as the commander of an army, ranks General Stanley, as the commander of a corps. It was therefore proper for you to assign Stanley to Schofield's command. A former order of General Sherman's placing Schofield under Stanley was disapproved by the War Department." H. W. Halleck, Major-General, Chief of Staff. Last item, complete on p.703 (leaf 710, p.704, fetched and not needed). |
+| E342 | OR I/39 pt 2 (`warofrebellion392unit`) | 349 | "CHAP. LI.] CORRESPONDENCE, ETC.--UNION. 343" | Washington, September 5, 1864 -- 12 noon; Major-General Burbridge, Lexington, Ky.: "Lieutenant-General Grant directs that you relieve Brig. Gen. E. A. Paine from command at Paducah. General Grant does not deem him fit to command where there are any loyal people." H. W. Halleck, Major-General and Chief of Staff. Third item. |
+| E344 | OR I/39 pt 3 (`warofrebellion393unit`) | 280 | "274 KY., SW. VA., TENN., MISS., ALA., AND N. GA. [CHAP. LI." | War Department, Washington, October 14, 1864 -- 10 a.m.; Major-General Thomas, Nashville: "I have directed copies of the following communications* of General Grant to General Sherman to be delivered to you, that you may understand General Grant's views while the communication between you and General Sherman is interrupted. Please keep the Department fully and frequently advised of what transpires, so that we can notify General Grant of the aspect of things." Edwin M. Stanton, Secretary of War. Footnote: "Probably October 11, 11 a.m., and 11.30 p.m., p. 202, and October 12, 1 p.m., p. 222." Second item. Nothing of the ledger's second paragraph is on the page. |
+| E348 | OR I/37 pt 2 (`warofrebellion372unit`) | 139 | "CHAP. XLIX.] CORRESPONDENCE, ETC.--UNION. 133" | War Department, July 8, 1864 -- 11 p.m.; Major-General Dix, New York: "Please report immediately what is doing in respect to sending State troops from New York. General Wallace reports the enemy about 20,000 strong moving by Urbana, about thirty miles from here, toward Washington. This is confirmed by General Howe, who is now in command at Harper's Ferry. General Halleck reports that he has no troops here fit for field service." Edwin M. Stanton, Secretary of War. First item. |
+
+**All four pages are confirmed on the image; E348's page, which the reader left open, is OR I/37 pt 2 p.133.** Diff, word for word, print against
+the ledger text and reading.md (date, hour, sender, addressee, body):
+- **E341:** body identical. **"Stanley" is plain in the ledger** ("Shelby Stanley", "assign Stanley", "under Stanley") and in the print; the decoder
+  reads it as the code word Stanley = [Invest (-ed, -ing)] three times, wrong here (the reader's note already flags it). Kiss / Kings / Kitten =
+  Schofield, Kidnap = Sherman, opal = army, pelton = corps, quadroon = Department agree. Hour: Fanny = 11 AM agrees. Signer: Italy = General-in-Chief
+  is the code's label; the print signs Halleck, Chief of Staff (same man).
+- **E342:** body identical. **"Pay duke a" is "Paducah" by syllables**; the decoder reads "duke" as a code word ([Meridian]), wrong here. "Burr
+  patron" = Burbridge (sound-spelling with the code word for Bridge), "Palate" = Brigadier General, "E A Pain" = E. A. Paine, Jupiter / Judah = Grant
+  agree. Hour 12 noon agrees. The ledger's tail "that pains alleviated" after the signature is not in the print (the operator's, not the message).
+- **E344, paragraph 1:** body identical. **"Platations" / "platation" are unkeyed and stand for "communications" / "communication"** (print; C by
+  print, not a key edit) -- the reader's note that the ledger "omits the print's 'communications'" is wrong: it is there in cipher. Lady / Kidnap /
+  Jupiter / Quadroon agree. Date: Female = 14 (numeral) agrees; the ledger carries no hour word (Grapes is a blind word), the print has 10 a.m. Signer Indigo = Secretary of War = Stanton agrees.
+- **E344, paragraph 2** (to the end of the entry, signed Eckert): **not in the print**, as the reader said. Key look-ups give, all H: "In connection
+  with this translate & deliver to [Lamb = Thomas] copies of all [Penfield = cipher]s to and from [Kunkle = Dix] [Pekin = comma] particularly [Plank =
+  2] from Beckwith on [Forbid Plug = 12 + 1] of [Mansion Pebble = 53] words commencing Henry & [Plunge = 1] of [Publish Gift = 116] words beginning
+  McClellan -- answer if this is done. Eckert." Every token is a key row, but the sense is not settled: Lamb = Thomas makes Thomas the recipient of
+  Dix's cipher traffic, which fits nothing else on the page; "Plank" may be the numeral 2 or "No. 2" (the cipher book, as in the received ledger's
+  "Beckwith No 2 Washn Oct 12th 1864", mssEC 19 p9093, whose text does not begin "Henry"); "Forbid Plug" may be 13 or "12th" plus a separate 1. I
+  graded it M as a whole (see s.3).
+- **E348:** body identical. **"Wallace" is plain in the ledger and the print** ("Shelby Wallace whites the Rome" = General Wallace reports the enemy);
+  the decoder reads it as the code word Wallace = [Ram], wrong here. "Shelten Howe" = General Howe (Shelten not keyed; C by print). "whisky" = troops,
+  Jordan = General Halleck, Amos = New York, harsh Promise = 20,000, laugh spoons = thirty miles agree. Hour 11 PM agrees. "Hurry this up", after
+  the signer, is not in the print (the ledger's closing).
+**No difference of substance in E341, E342, E348 or E344 paragraph 1.** Every difference is a plain word the decoder took for a code word
+(Stanley x3, duke, Wallace) or the operator's own words after the signature.
+
+### 2. Holder's full text (Huntington CONTENTdm p16003coll11, `CISOSEARCHALL`, all pointers; hdl take 21:26-21:27 UTC, 8 requests)
+Stanley 34 (own 9892; 6320 read: an 1860s detective's report on an envelope, other matter); Paducah 57 (none in Aug-Sept 1864 near 9835; own
+page not among them, Paducah being "Pay duke a" in cipher); transpires 3 (own 9866; 6320 as above; 6759 not read, 1863 range); Beckwith 605 (too
+common to read; a lead for paragraph 2 only, not worked); Urbana 13 (own 9779; **9780 read: the 8 July 1864 message to F. T. Bickford** -- a
+different message, same night, Urbana 'about Norris sylvans'; **8998 read: the 8 July 1864 10.30 pm message** to Bellows, a different message). **No
+period clear copy of any of the four at any pointer.** Not searched: NARA RG 107; the mssEC 19 received ledger by date beyond p9093/p9096 (the four
+are sent messages).
+
+### 3. Grades (reading.md as of this audit; decode.py counts, then print)
+| ID | decoder H | wrong code reads found by the print | after correction | U/M |
+|---|---|---|---|---|
+| E341 | 19 | Stanley x3 | H 16; body C by print | 0 |
+| E342 | 14 | duke | H 13; body C by print | 0 |
+| E344 | 26 | 0 in para 1 | para 1: H 14 + Platations x2 C by print; para 2: 12 key tokens H as look-ups, sense M (my count) | para 2 M |
+| E348 | 30 | Wallace | H 29 + Shelten C by print | 0 |
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E341 | **N1** (text known) | period | D3 (H 16 + C by print, no gap; external: OR I/39 pt 3 p.703 on the image) | printed word for word, Halleck to Thomas, 8 Nov 1864, 11 a.m. |
+| E342 | **N1** (text known) | period | D3 (H 13 + C by print; external: OR I/39 pt 2 p.343) | printed word for word, Halleck to Burbridge, 5 Sept 1864, 12 noon |
+| E344 | **N1 for paragraph 1** (text known); **paragraph 2 not classified** | period | para 1 D3 (external OR I/39 pt 3 p.274); para 2 D1 | see below |
+| E348 | **N1** (text known) | period | D3 (H 29 + C by print; external: OR I/37 pt 2 p.133) | printed word for word, Stanton to Dix, 8 July 1864, 11 p.m. |
+**E344 as a whole:** the message Stanton sent is N1 (printed OR I/39 pt 3 p.274). **Paragraph 2 alone does carry an N3 question** -- it is an
+unprinted cipher-office service note (Eckert) that no print or holder copy located here contains (OR I/39 pt 3 by the reader's phrase grep;
+Google Books 4 queries, whose quoted phrases the API did not respect, no hit naming the note; IA be-api "words commencing Henry", "words beginning
+McClellan": 0 hits; CONTENTdm "transpires" own page only) -- **but it is D1, not D2**: every token is a key look-up, yet I cannot write a true,
+specific sentence about it with confidence (whom the copies go to, Lamb = Thomas, is doubtful in sense; which Beckwith message, "No. 2 ... on the
+12th" or "2 ... 13", is unsettled). Under rule 4a an N-class on it is premature, so **it does not ride AUD2-LEDGER-32** and no WORK-QUEUE row is
+appended. Next step for it: identify the two referenced telegrams (Beckwith, ~12-13 Oct 1864, 53 words beginning "Henry"; one of 116 words beginning
+"McClellan") in the received ledger mssEC 19 or the Dix traffic of 12-14 Oct; if they are found, Lamb's sense and the paragraph's depth settle.
+Not D4 for any: no fresh rule-7 re-derivation in a separate session. Safe sentence (E341, E342, E348, E344 para 1): "The ledger copy of this
+telegram reads with the period key (Cipher No. 1) to the text printed in the Official Records (ser. I, vol./pt, page as above); the plaintext was
+already in print." Unsafe: "first decipherment", "previously unread", any word implying the text, or E344's paragraph 2, is new. No status.json or SO
+rows (N1, per the brief).
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+- Plain-word overrides (exceptions, per entry, not key edits): E341 "Stanley" plain (x3); E342 "duke" plain (Pay duke a = Paducah); E348 "Wallace"
+  plain. Then `decode.py --write`, `--check`.
+- E344 note: "Platations"/"platation" = communications/communication (C by print); strike "the ledger copy omits the print's 'communications'".
+- ciphertext.txt `###` headers: replace "text checked against the print, page not eye-checked" with "print page eye-checked (FV-MS18h, IA leaf
+  <n>)" -- E341 leaf 709, E342 leaf 349, E344 leaf 280, E348 leaf 139; **E348: "OR I/37 pt 2 p.133"** in place of "(page head not legible in the OCR)"
+  (header, note, reading.md and NOTES "## MS18-R4" table).
+- NOTES "## Remaining gaps (MS18-R4)": the page-image gap is closed for these four; add E344 paragraph 2's next step (s.4).
+
+### 6. Requests
+hdl.huntington.org 8 (5 CISOSEARCHALL, 3 dmGetItemInfo; all 200); archive.org 9 (3 `_page_numbers.json`, 6 page images; all 200, to scratch, 1.6
+s apart); googleapis 4; be-api 2. Subagents 0.
