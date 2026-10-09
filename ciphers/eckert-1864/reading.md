@@ -1649,7 +1649,7 @@ Code-word tokens: H 31.
 
 Code-word tokens: H 20.
 
-**E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; FIX-FM12, AUDIT FV-FM10a s.5; row 5709/1; image-read at 2400 px; whole entry image-read by FV-FM10a)**
+**E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; FIX-FM12, AUDIT FV-FM10a s.5; FIX-FM14, AUD2-LEDGER-26 s.5: Halleck's opinion is printed in Sheldon's same-day relay, OR I/36 pt 3 p.281, this telegram is not; row 5709/1; image-read at 2400 px; whole entry image-read by FV-FM10a)**
 
 [General-in-Chief] opinion is that the Gloucester route is the best [100] [Men] can [Guard (-ed, -ing)] that line where a [Regiment] could not the other pause unless u know of some very good reason why it should not be Dunn let the work be commenced first [As soon as] Mackintosh arrives with his party & push through fast as Can send Logue & Embree to Jamestown and hold blissfull & Glazier ready for white house send Collings to [Yorktown] & Homan to Gloucester if office is needed there [.] Bickford has some operators with him who will be stationed at [West Point] send Cowans with Mackintoshs building party let him come in circuit twice a day & [Report] progress and inform me all blank T. T. Eckert
 
@@ -1667,7 +1667,7 @@ I regret having ordered OBrien away from Bermuda hundreds he must remain there i
 
 Code-word tokens: H 4.
 
-**E321 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 1 Sept 1864 Head Qrs A. P., Caldwell to Eckert: cable to be laid on the north side of the river, less danger from anchors, channel nearest the south shore (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5782/0; image-read at 2400 px; two cipher copies: 5781 foot in wire order, 12319 received copy)**
+**E321 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 1 Sept 1864 Head Qrs A. P. (text ends 'D do wren' = D. Doren, inside the grid; signed Caldwell below it) to Eckert: cable to be laid on the north side of the river, less danger from anchors, channel nearest the south shore (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5782/0; image-read at 2400 px; two cipher copies: 5781 foot in wire order, 12319 received copy)**
 
 I think cab bell should be laid on [North] side of [River] as it will take less cab bell and will be less danger of being dragged up by anchors and channel most of way is nearest [South] shore D do wren Caldwell
 
@@ -1727,13 +1727,13 @@ Code-word tokens: H 32, C 3, M 1.
 
 Code-word tokens: H 12, C 2.
 
-**E325 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Clowry at St Louis for Maj. Gen. Rosecrans: the Secretary of War directs the arrest at 10 AM on Monday morning next of the following named rebel agents and the seizure of their papers: Wm Kendall and Capt. Lewis Kennerly (St Louis), John or Wm Ritchie (St Joseph, Mo.), James Hunter (New Madrid, Mo.), Wm Harper (Cape Girardeau); signed Dana (MS18-R2; FIX-FM13, AUDIT FV-MS18b s.5; row 9889/0; image-read at 2400 px; siblings 9114 (mssEC 19, Cincinnati) and 9889/1 (Louisville))**
+**E325 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Clowry at St Louis for Maj. Gen. Rosecrans: the Secretary of War directs the arrest at 10 AM on Monday morning next of the following named rebel agents and the seizure of their papers: Wm Kendall and Capt. Lewis Kennerly (St Louis), John or Wm Ritchie (St Joseph, Mo.), James Hunter (New Madrid, Mo.), Wm Harper (Cape Girardeau); signed Dana (MS18-R2; FIX-FM13, AUDIT FV-MS18b s.5; row 9889/0; image-read at 2400 px; siblings 9114 (mssEC 19, Cincinnati) and 9889/1 (Louisville); FIX-FM14, AUD2-LEDGER-28 s.5: the same-day Chicago/Cincinnati order is printed as a relay, OR I/39 pt 3 p.678 (Cook to Sweet, 6 Nov 1864); agents' list Horan 1954 p.227)**
 
 {time: 3.30 PM} [5] for [Maj Gen W. S. Rosecrans] [.] . The [Secretary of War] directs the [Arrest (-ed, -ing)] at {time: 10 AM} on Monday morning next [Of the] following named [Rebel] agents and the seizure of their papers [.] Wm Kendall and [Captain] Lewis Kennerly [St Louis] ---- John or Wm Ritchie Saint Joseph [Missouri] James Hunter New Madrid [Missouri] [Colonel] Wm Harper keep Girardeau [C. A. Dana]
 
 Code-word tokens: H 16.
 
-**E326 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Capt. Van Duzer at Nashville for Brig. Gen. J. F. Miller: the Secretary of War directs the arrest at 10 AM on Monday next of the following named rebel agent and the seizure of his papers, Col. Thos T. Tunstall of Nashville; signed Dana (the same telegram as E325 and the Louisville copy) (MS18-R2; row 9889/2; image-read at 2400 px)**
+**E326 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Capt. Van Duzer at Nashville for Brig. Gen. J. F. Miller: the Secretary of War directs the arrest at 10 AM on Monday next of the following named rebel agent and the seizure of his papers, Col. Thos T. Tunstall of Nashville; signed Dana (the same telegram as E325 and the Louisville copy; the agent is listed in Horan 1954 p.227 as 'Col. Thos. J. Tunstall', the page having 'Thos T'; companion Chicago relay OR I/39 pt 3 p.678) (MS18-R2; FIX-FM14, AUD2-LEDGER-29 s.5; row 9889/2; image-read at 2400 px)**
 
 {time: 3.30 PM} [5] for [Brigadier General] J F Miller [Nashville] [.] The [Secretary of War] directs the [Arrest (-ed, -ing)] at {time: 10 AM} on Monday morning next [Of the] [Follow (-ed, -ing)]ing named [Rebel] agent and the seizure of his papers [.] [Colonel] Thos T Tunstall [Nashville]  {tail: [signed] [C. A. Dana] stop Tun stall}
 

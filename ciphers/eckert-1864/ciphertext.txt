@@ -3324,7 +3324,7 @@ plain-at: webster#1
 plain-at: webster#3
 note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9d s.5): the third Webster is the plain name (Col. R. C. Webster, chief quartermaster, Fort Monroe); the 5.30 PM reply is Webster's. Lead, not decoded: row 5786/1 (Butler's Hd Qrs reply, same page).
 
-### E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; FIX-FM12, AUDIT FV-FM10a s.5; row 5709/1; image-read at 2400 px; whole entry image-read by FV-FM10a)
+### E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; FIX-FM12, AUDIT FV-FM10a s.5; FIX-FM14, AUD2-LEDGER-26 s.5: Halleck's opinion is printed in Sheldon's same-day relay, OR I/36 pt 3 p.281, this telegram is not; row 5709/1; image-read at 2400 px; whole entry image-read by FV-FM10a)
 Geo D Sheldon
 Ivory opinion is that the Gloucester route is the best
 plunge prolong spit can saddle that line where a whip
@@ -3340,7 +3340,7 @@ with Mackintoshs building party let him come in circuit twice
 a day & white progress and inform me all blank
 T. T. Eckert
 plain-at: white#1
-note: FM-R7b: Image-read only down to 'Cowans'; the last lines were transcription only. FIX-FM12 (9 Oct 2026, AUDIT FV-FM10a s.5): the earlier note 'Ivory is probably my; M' is withdrawn: Ivory = General-in-Chief, H (key), identity open (sibling 5709/2; reply 5713/1); '[100] [Men]' may be rendered 'one hundred men'; whole entry image-read by FV-FM10a.
+note: FM-R7b: Image-read only down to 'Cowans'; the last lines were transcription only. FIX-FM12 (9 Oct 2026, AUDIT FV-FM10a s.5): the earlier note 'Ivory is probably my; M' is withdrawn: Ivory = General-in-Chief, H (key), identity open (sibling 5709/2; reply 5713/1); '[100] [Men]' may be rendered 'one hundred men'; whole entry image-read by FV-FM10a. FIX-FM14 (9 Oct 2026, AUD2-LEDGER-26 s.3/s.5): Ivory = General-in-Chief stays H (key p.16 l.8); the identity 'General Halleck' is C for the first clause, OR ser. I vol. 36 pt 3 p.281 (Sheldon to Butler, 28 May 1864 = ledger 5709/2) prints the same opinion with Ivory rendered 'General Halleck'; the print is the editors' rendering of the relay, not a clear copy of E318; the earlier 'identity open' is closed.
 
 ### E319 | Page 151 | 5695 | mssEC 25 (obj 5952, pointer 5695), 27 May 1864 Ft Monroe, Sheldon to Eckert: distances across York River at Yorktown and Mattapony at West Point, cannot string wire, navigation must remain open, country as favourable as the route up the peninsula (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5695/2; page fetched at 2400 px; eye-checked by FV-FM10b)
 Maj Eckert Di
@@ -3381,7 +3381,7 @@ plain: bermuda
 plain-at: white#1
 note: FM-R7b: Bermuda and white (White House) are plain English where the key gives White River and Report; first lines image-read, the rest transcription only.
 
-### E321 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 1 Sept 1864 Head Qrs A. P., Caldwell to Eckert: cable to be laid on the north side of the river, less danger from anchors, channel nearest the south shore (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5782/0; image-read at 2400 px; two cipher copies: 5781 foot in wire order, 12319 received copy)
+### E321 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 1 Sept 1864 Head Qrs A. P. (text ends 'D do wren' = D. Doren, inside the grid; signed Caldwell below it) to Eckert: cable to be laid on the north side of the river, less danger from anchors, channel nearest the south shore (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5782/0; image-read at 2400 px; two cipher copies: 5781 foot in wire order, 12319 received copy)
 Maj. Eckert Di - Sheldon F
 I think cab bell should be laid
 on tremble side of windsor as it
@@ -3391,7 +3391,7 @@ by anchors and channel most of way
 is nearest waxy shore D do wren
 Caldwell
 plain: anchors
-note: FM-R7b: anchors is plain English where the key gives Donelson; signature Caldwell plain; first 7 lines image-read. FIX-FM12 (9 Oct 2026, AUDIT FV-FM10b s.5): 'D do wren' = D. Doren (plain phonetic), M; two cipher copies of this text: the 5781 foot (wire order; the FM-R4a gap 'E252 second text on 5781' is this entry, no new telegram) and the received copy 12319 ('terrible' for tremble).
+note: FM-R7b: anchors is plain English where the key gives Donelson; signature Caldwell plain; first 7 lines image-read. FIX-FM12 (9 Oct 2026, AUDIT FV-FM10b s.5): 'D do wren' = D. Doren (plain phonetic), M; two cipher copies of this text: the 5781 foot (wire order; the FM-R4a gap 'E252 second text on 5781' is this entry, no new telegram) and the received copy 12319 ('terrible' for tremble). FIX-FM14 (9 Oct 2026, AUD2-LEDGER-27 s.5): header sender corrected from 'Caldwell to Eckert' to Head Qrs A. P. to Eckert, Caldwell being the signature below the text, not established as the sender; tulip/Period S not touched here (E319 reads Open).
 
 ### E310 | Page 100 | 5644 | mssEC 25 (obj 5952, pointer 5644), 1 May 1864 Ft Monroe, Maj. Gen. B. F. Butler (by Sheldon) to Maj. Gen. Lew Wallace via G. W. Baldwin, Hd Qrs Baltimore (passed Washington 11.15 PM): W. W. Shore, correspondent of the World at Baltimore and from Monroe, sent away from the Department, to be arrested (clear copy pointer 10291; sibling of pointer 5656, 5 May) (FM-R7a; FIX-FM11, AUDIT FV-FM9e s.3/s.5; row 5644/1; image-read at 2400 px)
 Ft Monroe May 1 . 1864
@@ -3527,7 +3527,7 @@ receive & hold them in safe cuss tady Brutus
 gloss: galway=Richmond:C immy=immediately:C
 note: MS18-R2: No. 1 (share .30, just above the control p10 .29; the sense reads). 'R empty Hunt her' = R. M. T. Hunter, 'Sed don' = Seddon, 'Camp bell' = Campbell are plain, phonetic. Galway = Richmond is H and C by print ('They are now at Richmond'; also holder 7931) [FIX-FM13: the M and the Fort Monroe/Hampton Roads remark that stood here are withdrawn, AUDIT FV-MS18b s.3]. The image reads 'saco' (= Fort, H), 'immy' (immediately, C) and one 'held in', where the holder has 'suco', 'many' and a doubled 'held in' (marked <del>/<ins>); neither page nor print has 'close' custody. Sibling on the holder page 10022 (28 May 1865, 'Seddon had better go also', cipher, same day).
 
-### E325 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Clowry at St Louis for Maj. Gen. Rosecrans: the Secretary of War directs the arrest at 10 AM on Monday morning next of the following named rebel agents and the seizure of their papers: Wm Kendall and Capt. Lewis Kennerly (St Louis), John or Wm Ritchie (St Joseph, Mo.), James Hunter (New Madrid, Mo.), Wm Harper (Cape Girardeau); signed Dana (MS18-R2; FIX-FM13, AUDIT FV-MS18b s.5; row 9889/0; image-read at 2400 px; siblings 9114 (mssEC 19, Cincinnati) and 9889/1 (Louisville))
+### E325 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Clowry at St Louis for Maj. Gen. Rosecrans: the Secretary of War directs the arrest at 10 AM on Monday morning next of the following named rebel agents and the seizure of their papers: Wm Kendall and Capt. Lewis Kennerly (St Louis), John or Wm Ritchie (St Joseph, Mo.), James Hunter (New Madrid, Mo.), Wm Harper (Cape Girardeau); signed Dana (MS18-R2; FIX-FM13, AUDIT FV-MS18b s.5; row 9889/0; image-read at 2400 px; siblings 9114 (mssEC 19, Cincinnati) and 9889/1 (Louisville); FIX-FM14, AUD2-LEDGER-28 s.5: the same-day Chicago/Cincinnati order is printed as a relay, OR I/39 pt 3 p.678 (Cook to Sweet, 6 Nov 1864); agents' list Horan 1954 p.227)
 Clowry St Louis  Washn Novr 5th 1864
 Jennie person for Moon unity . The Indigo directs the
 odor at Emily on Monday morning next torch following
@@ -3540,9 +3540,9 @@ plain-at: saint#1
 plain-at: hunter#1
 plain-at: madrid#1
 plain-at: harper#1
-note: MS18-R2: No. 1 (share .55 vs No. 2 .52, No. 9 .17: the shares do not pick the book, the sense does). Names are plain (image-read; the image has 'Kennerly' where the holder transcription says Kennedy, kept as transcribed). 'Saint Joseph Aragon' = St Joseph, Missouri (Aragon = Missouri key row, H). Same telegram as E326 and a third copy to Louisville (Bruch, pointer 9889/1, not filed here).
+note: MS18-R2: No. 1 (share .55 vs No. 2 .52, No. 9 .17: the shares do not pick the book, the sense does). Names are plain (image-read; the image has 'Kennerly' where the holder transcription says Kennedy: corrected by <del>/<ins> in FIX-FM13, Horan p.227). 'Saint Joseph Aragon' = St Joseph, Missouri (Aragon = Missouri key row, H). Same telegram as E326 and a third copy to Louisville (Bruch, pointer 9889/1, not filed here).
 
-### E326 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Capt. Van Duzer at Nashville for Brig. Gen. J. F. Miller: the Secretary of War directs the arrest at 10 AM on Monday next of the following named rebel agent and the seizure of his papers, Col. Thos T. Tunstall of Nashville; signed Dana (the same telegram as E325 and the Louisville copy) (MS18-R2; row 9889/2; image-read at 2400 px)
+### E326 | Page 229 | 9889 | mssEC 18 (obj 10074, pointer 9889; printed page 223), 5 Nov 1864 Washington, to Capt. Van Duzer at Nashville for Brig. Gen. J. F. Miller: the Secretary of War directs the arrest at 10 AM on Monday next of the following named rebel agent and the seizure of his papers, Col. Thos T. Tunstall of Nashville; signed Dana (the same telegram as E325 and the Louisville copy; the agent is listed in Horan 1954 p.227 as 'Col. Thos. J. Tunstall', the page having 'Thos T'; companion Chicago relay OR I/39 pt 3 p.678) (MS18-R2; FIX-FM14, AUD2-LEDGER-29 s.5; row 9889/2; image-read at 2400 px)
 Capt Van Duzer Nashville  Washn Nov 5th 1864
 Jennie plaster for Palate J F Miller
 Empress unity The Infant directs the oakum
@@ -3550,7 +3550,7 @@ at Emily on Monday morning next torch
 rambling named walpole agent and the seizure
 of his papers zebra Paradise Thos T
 Tunstall Embrace yoke Insanity stop Tun stall
-note: MS18-R2: No. 1 (share .57). 'Thos T Tunstall' is plain (image-read, repeated 'Tun stall' at the end); Embrace = Nashville is the key row, H. Palate = Brig. General is H.
+note: MS18-R2: No. 1 (share .57). 'Thos T Tunstall' is plain (image-read, repeated 'Tun stall' at the end); Embrace = Nashville is the key row, H. Palate = Brig. General is H. FIX-FM14 (9 Oct 2026, AUD2-LEDGER-29 s.5): external check located by the second audit: Horan 1954 p.227 lists the agent ('Col. Thos. J. Tunstall'); the Chicago relay of the same order is OR ser. I vol. 39 pt 3 p.678 (neither is a copy of this telegram).
 
 ### E327 | Page 153 | 9813 | mssEC 18 (obj 10074, pointer 9813; printed page 147), 6 Aug 1864 Washington, to Maj. Gen. David Hunter (addressee 'Makent' = Hunter, C), signed General-in-Chief: the Cavalry Bureau asks that all unserviceable cavalry horses in your department be sent to the depots at Gallipolis, Ohio and Giesboro, D.C.; every effort has been directed to mount your cavalry (MS18-R2; FIX-FM13, AUDIT FV-MS18c s.5; row 9813/1; image-read at 2400 px; printed OR I/43 pt 1 p.709, Halleck to Hunter, 6 Aug 1864)
 McCaine  Aug 6th 1864

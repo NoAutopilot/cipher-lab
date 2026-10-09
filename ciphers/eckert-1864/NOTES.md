@@ -3806,6 +3806,21 @@ Dated correction notes (old text not rewritten): NOTES "## MS18-R2" print lines:
 
 Propagation (rule 10): status.json and second-opinions/PROMPT-chatgpt-e325 already read "Monday morning next", Kennerly (per image) and Colonel (pandora); E326 none; E322-E324, E327-E330 are N1 with no status row or SO prompt. No class, depth or SO row touched.
 
+## FIX-FM14 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM14, 20:47-20:49 UTC by `date -u`, offline (git only). Carries AUDIT s.5 of AUD2-LEDGER-26 (E318), -27 (E321; E319, E320 none), -28 (E325) and -29 (E326) into ciphertext.txt headers and note lines (no transcription or key row touched; reading.md is `decode.py --write` output). key.md untouched (KEY-LAV owns lavender / Tulip). Classes and depths are the verifiers'.
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| E318 | header and note: Ivory = General-in-Chief stays H; identity "General Halleck" is C for the first clause (OR I/36 pt 3 p.281, Sheldon's relay 5709/2); "identity open" closed; the print is the editors' rendering, not a clear copy of E318 | no change in token grades |
+| E321 | header sender "Caldwell to Eckert" -> Head Qrs A. P. (text ends "D do wren" = D. Doren; signed Caldwell below it) to Eckert; note records the correction; Tulip row untouched | no change |
+| E325 | header: same-day Chicago/Cincinnati order is printed as a relay, OR I/39 pt 3 p.678 (Cook to Sweet, 6 Nov 1864), agents' list Horan p.227; stale note "Kennerly kept as transcribed" replaced by the FIX-FM13 del/ins fact ("Monday morning next" and Kennerly were already in) | no change |
+| E326 | header and note: agent listed in Horan 1954 p.227 as "Col. Thos. J. Tunstall" (page has "Thos T"); companion relay OR I/39 pt 3 p.678; neither is a copy | no change |
+
+Decode: `decode.py --write` then `--check` -> "reading.md is current", exit 0; `decode_no2.py --check` and `decode_no9.py --check` current. Totals unchanged (H 4666, C 54, I 25, M 34, S 16, U 10 at FIX-FM13; no grade moved, the audits' C for Halleck's identity is a note, not a regrade, because Ivory's key row is H and `gloss:` is only for tokens no key row supplies).
+
+Propagation (rule 10): status.json results 300-303 (E321, E318, E326, E325) were already corrected by the auditors (audit_status "two audits", title/line/gap/depth fields); read, nothing further needed. SO prompts updated, no class or count changed so the SECOND-OPINIONS-QUEUE.tsv rows stay as filed: PROMPT-chatgpt-e318 (OR p.281 relay), -e321 (sender wording and subject line), -e325 (volume now identified as OR I/39 pt 3 p.678; Horan read), -e326 (Horan p.227, p.678). E319, E320: no fix owed.
+
 ## MS18-R3 (9 Oct 2026, account 1, for LANE LEDGER)
 
 Ten more No. 1 rows of the sent ledger mssEC 18 (Huntington object 10074, `ms18/clean-ms18.tsv`) read and filed as E331-E340 (`ciphertext.txt`; `decode.py --write` then `--check` exit 0; `decode_no2.py --check`, `decode_no9.py --check` exit 0). Intake gate (19:1x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Scripts and outputs in `ms18/`: `ms18_r3_extract.py`, `ms18_r3.py` + `ms18_r3_controls.txt` (book and controls), `ms18_r3_printcheck.py/.out`, `ms18_r3_loose.py/.out`, `ms18_r3_hdl.py/.out`, `ms18_r3_file.py`. Prior-work lines: own work (git grep of the ten pointers in NOTES/AUDIT/ciphertext at 19:2x): none; siblings: none filed.

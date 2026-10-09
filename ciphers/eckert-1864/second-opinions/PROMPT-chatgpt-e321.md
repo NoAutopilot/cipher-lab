@@ -7,7 +7,7 @@ reading. Be adversarial: we would rather learn now that it is in print than clai
 THE ITEM
 - Source: Thomas T. Eckert Papers, Huntington Library, San Marino, mssEC 25 ("Ciphers Received and Sent", Fort Monroe) p.238 (digital pointer 5782), first entry on the page, E321, headed "Head Qrs A. P. Sept 1/64 / Maj. Eckert Di - Sheldon F", signed Caldwell, https://hdl.huntington.org/digital/collection/p16003coll11/id/5782. Read with War Department Cipher No. 1 (Huntington mssEC 41). The same telegram is in the ledger a second time in its transposed (wire) order at the foot of p.237 (pointer 5781), and a received copy is at pointer 12319 (https://hdl.huntington.org/digital/collection/p16003coll11/id/12319).
 - Reading: "I think cable should be laid on [north] side of [river] as it will take less cable and will be less danger of being dragged up by anchors and channel most of way is nearest [south] shore. D. Doren. Caldwell" Bracketed words are code words read from the period key; "cab bell" (cable) and "D do wren" (D. Doren) are the clerk's phonetic spellings. The telegram does not name the river; we have not supplied one.
-- Context we already know: Plum, The Military Telegraph during the Civil War (1882) vol. II names A. H. Caldwell chief operator at Meade's headquarters and D. Doren superintendent of construction. We found no printed context for this cable.
+- Context we already know: Plum, The Military Telegraph during the Civil War (1882) vol. II names A. H. Caldwell chief operator at Meade's headquarters and D. Doren superintendent of construction. We found no printed context for this cable. The telegram's text ends "D do wren" (D. Doren) and Caldwell's name stands below it; we have not established that Caldwell sent it, so read the sender as Army of the Potomac headquarters.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM10b)").
@@ -21,7 +21,7 @@ HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path
   `ciphers/eckert-1864/second-opinions/chatgpt-e321-<UTC date>.md`. Do not touch any other file. Do not commit to `main`:
   create a branch named `second-opinion/SO-ECKERT-E321` and open a pull request from it, titled exactly
-  `[SO-ECKERT-E321] second opinion: A. H. Caldwell, Head Qrs Army of the Potomac, to Maj. Eckert: lay the cable on the north side, 1 Sept 1864`.
+  `[SO-ECKERT-E321] second opinion: Head Qrs Army of the Potomac (signed Caldwell), to Maj. Eckert: lay the cable on the north side, 1 Sept 1864`.
 - The first lines of the file must be this header, filled in:
       label: SO-ECKERT-E321
       model: <your model name and version>
