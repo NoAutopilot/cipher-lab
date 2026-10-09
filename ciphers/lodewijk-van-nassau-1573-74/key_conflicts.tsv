@@ -109,3 +109,4 @@ code	block_value	observed	count	where	note
 312		lledetillemontlaultredem	1	4613_L11.5	word/null sign, key value uillede
 338		300cheuaulxlegiers	1	4613_L21.7	word/null sign, key value cheuaulxlegiers
 339		1500harquebouzi	1	4613_L20.17	word/null sign, key value harquebouziers
+270	bommel	mastrech	1	7208_p1_L11.9	SIG5-58-270 (9 Oct 2026): list B (Orange->Lodewijk) value from 7208 f.223r "lentreprinse de mastrech"; the sign itself reads 276 on the eye (final glyph matches 5 key-checked 6s, not 3 key-checked 0s or 4 key-checked 5s; blind Sonnet 6, low-medium; own look 6, medium): the list-B mastrech value most likely belongs to 276, which agrees with 4612 p1_r05/p1_r21 276 x2; ciphertext_7208.tsv left at 270 M (proposal only); no key value changed

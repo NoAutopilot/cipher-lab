@@ -4465,3 +4465,43 @@ No key or reading changed (rule 7): `python3 tools/decode_key.py ciphers/lodewij
 (no reading). 4612 v3 stays unread in its cipher body.
 
 Not found: no 4612 reassignment was derived; nothing was searched in print by this job. Novelty not classified (rule 10).
+
+## SIG5-58-270, results (9 Oct 2026, account 1, for LANE SIG-5; continues the pre-registration above SIG5-4612E)
+
+Deviation from the pre-registered wording, stated: the pre-registration said an observed z would give the proposal I -> C as z; the slot table also
+holds 4 print-confirmed u/v slots, so the proposal written is "keep I, mixed code" instead -- more cautious than the pre-stated rule, not less.
+
+**A. Code 58 against the 5811 print -- bar NOT met; key_full 58 = z unchanged.** The 7 occurrences in ciphertext_5811.tsv, each decoded with
+key_full on both sides and aligned by eye to groen/groen_IV_CDLXXXIII.txt (table in HYPOTHESES.md "Code 58 against the 5811 print"):
+slot 1 p1_L06.1 "deliberation de <58>eoir" / print "délibération de venir" -> v; slot 2 p1_L06.12 "auec uo<58> tro..ppes" / "avec voz
+trouppes" -> z; slot 3 p2_L01.3 "uenu..i<58>sques" / "venuz jusques" -> u; slot 4 p2_L02.3 "me do<58>btant" / "me doubtant" -> u; slot 5
+p2_L02.10 (M) "q<58>e douant leur" / "que devant leur" -> u; slot 6 p2_L31.6 "is no<58> fosces ne" / "mais noz forces ne" -> z; slot 7 p5_L15.1
+(M) "enuiron<58>e.tiol pour" / "ès environs de Tiel pour" -> unclear (s or d). Count: v/u 4, z 2, unclear 1 against the pre-stated bar of >= 5
+v/u and no z: FAIL. The SIG-4612D "58 -> V" admissions are explained by the 4 u/v slots; the 2 print-confirmed z slots (voz, noz) plus 5797's
+"zeuget" mean 58 is a mixed code in Lodewijk's letters, not a clean V. Proposal (HYPOTHESES.md, not applied): keep 58 = z at grade I with the
+slot table as its note; no I -> C either way. 4610 p2_L14.12 "dou<58>e flori..": z gives "douze", v gives nothing -> z reads better; 4611
+p1_L25.14 "diuers aruit<58>": z "aruitz" (cf. advertiz) vs v "aruitv", neither clean, z marginally better. No 4610/4611 token changes.
+Side observation (not counted): 7208 (list B) has 58 twice, both reading b ("e[t] bien pourvoir" p1_L15.6, "bien fortifier" p1_L27.5).
+Rule 7 (no file changed): `decode_key.py . --check`, `--config decode_4610_full.json --check`, `--config decode_4611_full.json --check`,
+`--config sig7208/decode_7208.json --check`: all "reading up to date", exit 0.
+
+**B. 7208 p1_L11 pos9 -- reads 276 (eye), proposal only.** resources.huygens.knaw.nl 1 request: `curl -A "cipher-lab research script
+(contact via repository)" https://resources.huygens.knaw.nl/media/wvo/images/07000-07999/07208.pdf` -> 6,233,052 bytes, sha1
+31aa506d73904d9034f99e4b263bcf48efeccc4e (match). Commands from regen_images.sh lines 172-173: `pdftoppm -png -r 300 -f 1 -l 3 07208.pdf p`;
+`python3 ../../tools/iiif_lines.py --image p-1.png --out CROPS --region 150,330,2300,2790 --prefix 07208_p1 --debug` (41 lines, as SIG-7208).
+Token crops cut from p-1.png with PIL at the boxes in `sig7208/look_270/crops.tsv` (13 PNGs, 68 KB, committed): query.png (the token) and
+exemplars whose final digit is fixed by the key against the period decipherment (the alternative digit gives a different letter):
+0 = 10 x3 (p1_L12 "donner", p1_L13 "vost[re]", p1_L28 "pourveoir"); 5 = 115 (p1_L22 "voudrez la"), 105 (p1_L22 "ou il"), 35 (p1_L13 "vost"),
+85 (p1_L26); 6 = 76 (p1_L11 "de"), 6 (p1_L26 "Stockem"), 116 (p1_L26 "Stockem"), 6 (p1_L27 "fortifier"), 36 (p1_L11 "vous").
+This hand: 0 a plain closed oval; 5 open, hooked, no closed body; 6 a closed body with a rising stroke/flourish from its top.
+One blind Sonnet look (neutral filenames, no candidate numbers given): "6, low-medium: closed round body rules out 5; the ascending tick over
+the loop matches the 6 exemplars, which the plain 0s lack; a 0 with a stray neighbour mark not fully excluded". Own look: 6, medium -- the
+query's last glyph carries the same long rising flourish as the 76 two tokens earlier on the same line. Verdict: **276** (medium; 270 not
+excluded). The period decipherment f.223r reads "lentreprinse de mastrech" at this place (SIG-7208 spans_7208.tsv rows 6-8), so list B
+mastrech most likely sits on 276 -- the code 4612 (list A direction) carries twice at p1_r05/p1_r21 -- and 7208 then no longer contradicts
+list A 270 = bommel. No key value changed; ciphertext_7208.tsv left at 270 M (a second eye would move it); key_conflicts.tsv row 270 added and
+HYPOTHESES.md "Key conflicts by direction from 7208" 270 line extended.
+
+Requests: resources.huygens.knaw.nl 1. No Gallica request. Subagent calls: 1 Sonnet (vision). Not found / not done: no second eye on the
+7208 token; slot 7 of 5811 (p5_L15.1) not settled from the image. Novelty not classified (rule 10).
+`python3 tools/gaps_check.py lodewijk-van-nassau-1573-74`: "OK keep-going lodewijk-van-nassau-1573-74: keep going: 7 internal gap(s), 3 step(s) untried" (1 checked, 0 FAIL).
