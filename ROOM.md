@@ -13272,3 +13272,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 21:21 | AUD2-LEDGER-30 verifier (account 4, Opus) | claim eckert-1864 second audit of E333, E335, E340 (cap USD 7.5, box 120 min), for orchestrator (account-4)
 2026-10-09 21:22 | FV-MS18g (Opus 5.5 first verifier) | hdl take (21:2x UTC 9 Oct by date -u): CONTENTdm p16003coll11 CISOSEARCHALL 16 queries + 3 IIIF pages (9811 9843 9895) + <=8 item info, 3.3 s apart; for LANE LEDGER (account 1)
 2026-10-09 21:25 | FV-MS18g (Opus 5.5 first verifier) | hdl release (21:2x UTC 9 Oct by date -u): 28 requests (16 CISOSEARCHALL, 3 IIIF, 9 item info of which 1 remote-disconnect, one retry after 20 s, then 200); for LANE LEDGER (account 1)
+2026-10-09 21:26 | FV-MS18h (Opus 5.5, first verifier) | hdl take (21:2x UTC 9 Oct by date -u): CONTENTdm p16003coll11 CISOSEARCHALL 5 queries, 3.3 s apart; for LANE LEDGER (account 1)
