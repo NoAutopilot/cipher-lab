@@ -1,0 +1,18 @@
+passage	pos	sign_id	conf	note
+L01	3	T51	M	stem with foot bar and crossbar; T95 lacks foot bar
+L01	8	T51	M	same shape as pos3; rejected T95
+L01	12	T86	M	verticals extend past short bars; rejected T60
+L01	23	T50	M	looped omega with left hook and right tail; rejected plain T92
+L02	19	T81	H	simple x with curled ends; rejected T83
+L03	4	T50	M	looped omega with inner loop and dot; rejected T92
+L03	24	T11	M	8 followed by 5 as one sign; no separate new cell
+L04	4	T50	M	looped omega with inner loop; rejected T92
+L05	7	X_NEW	L	t-like: short bar, stem rises above it, foot curls right; T42 has straight stem; not T42
+L05	9	T64	M	plain m; tilde sits over gap above next sign, not on m; rejected T13
+L05	11	T86	M	verticals extend past bar; rejected T60
+L05	25	T50	M	looped omega with inner loop; rejected T92
+L06	8	T29	H	epsilon joined by bar to small circle is one sign; rejected T24
+L06	9	NONE	H	circle is part of preceding T29 sign
+L06	27	X_NEW	M	single 8 with ink blob, no 6 so not T46
+L06	29	T29	H	epsilon joined by bar to circle; rejected T24
+L06	30	NONE	H	circle is part of preceding T29 sign
