@@ -1,0 +1,473 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050105">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050105">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3653
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050105_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105">Français 3653 • Anc. 10344 • Recueil de copies de pièces.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e104">1 « Confirmation d'allience » entre Henri IV, roi de France, et le sultan Mahomet III. « Escript en nostre ville imperialle de Constantinople, en l'année 1005, qui est 1597, environ le XXVe febvrier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e113">Fol. 10 • 2 « Remonstrances au roy par monsieur le president FORGET, sur les lectres d'abolition de monsieur de St Geran, 7 febvrier 1603 ». Avec la « responce du roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e134">Fol. 14 • 3 Harangue supposée « de M. le president DU VAIR » au roi, « sur la remise des seaux », 1616.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e147">Fol. 17 • 4 « Relation au parlement de la responce de monsieur le president Du Vair, sur le suget des seaux. 16 decembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e160">Fol. 18 • 5 Extrait des registres du parlement relativement à « la depputation de la cour vers M. le chancelier, sur la remise des seaux, du jeudy 16e juin 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e176">Fol. 21 • 6 Lettre du « cardinal DE LA ROCHEFOUCAULT » au roi.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e189">Fol. 23 • 7 Lettre de HENRI IV « à messieurs de Boissise et de Beaumont,... Escript à Fontainebleau... mars 1602 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e197">Fol. 28 • 8 Lettre de HENRI IV « à la royne d'Angleterre, par M. de Nevers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e205">Fol. 29 • 9 Lettre de HENRI IV « au roy d'Angleterre... Escrit à Fontainebleau, le XXVIIe juing 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e216">10 Lettre de HENRI IV « au duc de Savoye ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e222">Fol. 31 • 11 Lettre de MAXIMILIEN DE BETHUNE, « duc DE SULLY, au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e235">Fol. 39 • 12 « Harangue de M. DE MURAT, lieutenant general à Lyon, à monseigneur le duc de Chevreuse ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e248">Fol. 44 • 13 « Affiche seditieuse des habitans de Poitiers mises aux princippalles portes, lorsque le roy y envoya M. Mangot, pour restablir les principaux de la ville, qu'ilz avoient chassez, le mois de decembre 1614 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e261">Fol. 46 • 14 « Affiches des chevalliers de la croix rose ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e279">Fol. 47 • 15 « Parolles qui debvoient estre prononcées par le corps de la justice à la bienheureuse entrée de monsieur le comte de Soissons dans la ville de Caen, si sa mort ne l'eust prevenu ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e297">Fol. 50 • 16 « Autres Parolles-recitées par le corps de la justice à monseigneur le chancellier Bellievre, lors de la bien heureuse entrée du roy en la ville de Caen, en septembre 1603 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e310">Fol. 55 • 17 Remontrances « du tiers estat de Provence au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e323">Fol. 57 • 18 « Extrait d'une lettre envoyée de Paris à monseigneur le chancellier, en datte du VIe novembre M.VI.C. quinze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e337">19 « Harangue de M. le premier president, à l'ouverture du parlement St Martin, M.VI.C. quinze ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e349">Fol. 63 • 20 Harangue « de M. DE MARSIL » au roi, « aux estatz » généraux de 1615.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e362">Fol. 67 • 21 « Memoire sur le traffic », par « M. BRASSET ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e380">Fol. 71 • 22 Discours de « M. BRASSET » à messieurs des états généraux.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e393">Fol. 74 • 23 « Fragmant » sur l'ignorance de la vérité.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050105_d0e406">Fol. 76 • 24 « Oraison didascalique ou doctrinalle, qui enseigne clairement que c'est que la memoire artificielle ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3653 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc501051&Cote=Français 3653&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3653 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 10344</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de copies de pièces.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Caen. • Entrée, de Henri IV.</p>
+<p>Constantinople. • Traité (1597).</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Henri IV, roi de France. • Relations, avec les Turcs.</p>
+<p>Jacques Ier, roi d'Angleterre. • Notes et pièces diverses.</p>
+<p>La Guiche, Jean-François de, sieur de Saint-Géran, maréchal de France.</p>
+<p>Louis XIII, roi de France. • Notes et pièces diverses.</p>
+<p>Marie de Médicis, reine de France. • Actes et lettres.</p>
+<p>Parlement de Paris. • Arrêts divers (1615).</p>
+<p>Rose-Croix, Frères de la. • Affiches.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Pièces diverses.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e104');">1 « Confirmation d'allience » entre Henri IV, roi de France, et le sultan Mahomet III. « Escript en nostre ville imperialle de Constantinople, en l'année 1005, qui est 1597, environ le XXVe febvrier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e113');">2 « Remonstrances au roy par monsieur le president FORGET, sur les lectres d'abolition de monsieur de St Geran, 7 febvrier 1603 ». Avec la « responce du roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e134');">3 Harangue supposée « de M. le president DU VAIR » au roi, « sur la remise des seaux », 1616.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e147');">4 « Relation au parlement de la responce de monsieur le president Du Vair, sur le suget des seaux. 16 decembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e160');">5 Extrait des registres du parlement relativement à « la depputation de la cour vers M. le chancelier, sur la remise des seaux, du jeudy 16e juin 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e176');">6 Lettre du « cardinal DE LA ROCHEFOUCAULT » au roi.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e189');">7 Lettre de HENRI IV « à messieurs de Boissise et de Beaumont,... Escript à Fontainebleau... mars 1602 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e197');">8 Lettre de HENRI IV « à la royne d'Angleterre, par M. de Nevers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e205');">9 Lettre de HENRI IV « au roy d'Angleterre... Escrit à Fontainebleau, le XXVIIe juing 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e216');">10 Lettre de HENRI IV « au duc de Savoye ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e222');">11 Lettre de MAXIMILIEN DE BETHUNE, « duc DE SULLY, au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e235');">12 « Harangue de M. DE MURAT, lieutenant general à Lyon, à monseigneur le duc de Chevreuse ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e248');">13 « Affiche seditieuse des habitans de Poitiers mises aux princippalles portes, lorsque le roy y envoya M. Mangot, pour restablir les principaux de la ville, qu'ilz avoient chassez, le mois de decembre 1614 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e261');">14 « Affiches des chevalliers de la croix rose ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e279');">15 « Parolles qui debvoient estre prononcées par le corps de la justice à la bienheureuse entrée de monsieur le comte de Soissons dans la ville de Caen, si sa mort ne l'eust prevenu ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e297');">16 « Autres Parolles-recitées par le corps de la justice à monseigneur le chancellier Bellievre, lors de la bien heureuse entrée du roy en la ville de Caen, en septembre 1603 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e310');">17 Remontrances « du tiers estat de Provence au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e323');">18 « Extrait d'une lettre envoyée de Paris à monseigneur le chancellier, en datte du VIe novembre M.VI.C. quinze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e337');">19 « Harangue de M. le premier president, à l'ouverture du parlement St Martin, M.VI.C. quinze ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e349');">20 Harangue « de M. DE MARSIL » au roi, « aux estatz » généraux de 1615.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e362');">21 « Memoire sur le traffic », par « M. BRASSET ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e380');">22 Discours de « M. BRASSET » à messieurs des états généraux.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e393');">23 « Fragmant » sur l'ignorance de la vérité.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050105_d0e406');">24 « Oraison didascalique ou doctrinalle, qui enseigne clairement que c'est que la memoire artificielle ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

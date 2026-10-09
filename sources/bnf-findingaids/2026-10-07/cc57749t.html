@@ -1,0 +1,507 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057749">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057749">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4699
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057749_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749">Français 4699 • Anc. 9521 • Recueil de pièces originales et de copies concernant l'histoire des années 1567 à 1621.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e234">Fol. 1 • 1 Lettre du duc DE MANTOUE au duc de Nevers. Mantoue, 11 juin 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e242">Fol. 3 • 2 Lettre de CAMILLO VOLTA au duc de Nevers. Rome, 29 mai 1589. En italien. Double.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e250">Fol. 7 • 3 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova », au duc de Nevers. Mantoue, 24 décembre 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e258">Fol. 9 • 4 Lettre de « FEDERICO PICO DELLA MIRANDOLA » au duc de Nevers. « Della Mirandola, lo ultimo d'ottobre 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e266">Fol. 11 • 5 Lettre de « GIO. BATTISTA AGOCCHI » au Sr « Girolamo Agocchi », son frère. Rome, 19 janvier 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e277">Fol. 14 • 6 Lettre de « FRANCESCO GHISILIERI » au cardinal de Plaisance, Philippe Sega, alors légat en France. Rome, 16 janvier 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e285">Fol. 16 • 7 Lettre de « GIO. BATTISTA AGOCCHI » au Sr Girolamo Agocchi. Rome, 16 janvier 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e296">Fol. 18 • 8 Lettre de « FERRANTE GONZAGA » au duc de Nevers. « Di San Martino, alli 22 di gennaro 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e304">Fol. 20 • 9 Lettre de « MAXIMILIANO MAGANZA » à Sébastien Zamet. Milan, 28 janvier 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e312">Fol. 22 • 10 Lettre du Sr « CAPELLO » au Sr « Agostino Forneli,... Da Paris, 21 di giugno 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e331">Fol. 23 • 11 Lettre de « FRANCESCO GHISILIERI » au Sr « Gieronimo Agocchi ». Rome, 20 janvier 1593. En italien. Chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e342">Fol. 25 • 12 Lettre de « FABIO GONZAGA » au duc de Nevers. « Da la Santa Casa dell' Oreto, l'ultimo del 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e350">Fol. 27 • 13 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova », au duc de Nevers. Mantoue, 16 décembre 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e358">Fol. 29 • 14 Lettre de « CESARE CEPPO » au duc de Nevers. Mantoue, 22 mai 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e366">Fol. 31 • 15 Lettre du Sr « HIERONIMO AGOCCHI » à « Pietro Aldobrandin, castellano di Sto Angello... Di Han, li 7 d'aprile 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e380">Fol. 33 • 16 Lettre de « CESARE CEPPO » au duc de Nevers. Mantoue, 24 décembre 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e388">Fol. 35 • 17 Lettre d' « ALESSANDRO DIVERSI, mastro di camera dell' illmo di Piacenza, legato in Francia », à la « signora Vittoria Valletta ». Paris, 8 janvier 1593. En italien.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e399">18-19 Lettres de « P. DE FORTIA ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e405">Fol. 37 • 18 lettre, avec chiffre et déchiffrement, de P. de Fortia « à Mrde Roissieu, commissaire general des vivres, conseiller et secretaire d'Estat pres de Monseigneur [le duc de Mayenne]... A Lyon, le 7 de fevrier 1593. Dupplicata ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e418">Fol. 41 • 19 lettre, avec chiffre et déchiffrement, de P. de Fortia « à Mrde La Chapelle, conseiller et secretaire d'Estat pres de Mr le duc du Mayne,... A Lion, le 7 de fevrier 1593 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e434">Fol. 43 • 20 Lettre de « GIO. BATTISTA AGOCCHI » à Girolamo Agocchi. Rome, 19 janvier 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e442">Fol. 44 • 21 Lettre, signée : « ANT. Ma PELLETTA », au « cardinal Sega, legato in Francia ». Rome, 6 juillet 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e453">Fol. 46 • 22 Lettre du Sr « GIORGIO ALANO » au duc de Nevers. « Di San Martino, a III di febraro 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e464">Fol. 48 • 23 Lettre de « JACOMO MALATESTA » au duc de Nevers. « Di Padova, li 26 novembre 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e472">Fol. 50 • 24 Lettre de « BARTOLOMEO CENAMI » au duc de Nevers. « Di Mantes, alli 20 di dicembre 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e480">Fol. 51 • 25 Lettre de CHARLES « MONTIGLIA », archevêque d'Amalfi et évêque de Viterbe, au « cavalier Francesco Alba, Fiorenza ». Paris, 10 mars 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e488">Fol. 52 • 26 Lettre de L. DE GONZAGUE, duc DE NEVERS, à l'évêque de Mantoue, François de Gonzague. Rome, 11 décembre 1593. Copie. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e496">Fol. 53 • 27 Lettre de « P. FRANCESCO MONTORO », lequel fut évêque de Nicastro, à « don Pietro Aldobrandino,... Di Parigi, a 13 di aprile 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e504">Fol. 55 • 28 Lettre de « FRANCESCO VALENTINI » au Sr « Lothario Conti,... Di Roma, alli 4 di gennaro 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e515">Fol. 57 • 29 Lettre de « P. FRANCESCO MONTORO » à son frère, « Federico Montoro,... Di Parigi, a 13 d'aprile 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e523">Fol. 59 • 30 « Copia d'una lettera scritta a Gio. Francesco Resta, sotto il di 2 di decembre 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e531">Fol. 60 • 31 « Copia d'un capitolo d'una lettera scritta a D. Clemente Resta ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e539">Fol. 61 • 32 Lettre de « GIO. ANTONIO GUAZZO » au duc de Nevers. « Di Pavia, li 13 di decembre 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e552">Fol. 63 et suiv • 33-37 Lettres de « CESARE CEPPO » au duc de Nevers. Mantoue, janvier et février 1593. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e560">Fol. 73 • 38 Lettre de « N., cardinal DE PELLEVE,... à Mr Arnoul, doyen en l'eglise de Sens et [son] grand vicaire ». Rome, 14 mai.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e571">Fol. 75 • 39 Lettre d' « ORATIO SPADA » au Sr « protonotario Agocchi, appresso l'illmo sigre cardinale di Piacenza, legato, Parigi... Di Roma, li 19 gennaro 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e588">Fol. 77 • 40 « Deschiffrement d'une lectre escripte à Mme [la duchesse de Nevers ?] par le gouverneur de Melun, que le duc de Sesse envoyoit au Sr de Ybarra,... Di Meluni, a li 21 di magio 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e602">Fol. 79 et 81 • 41-42 Lettres du duc DE NEVERS à Camillo Volta. Des 8 novembre et 5 décembre 1576. En italien. Minutes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e610">Fol. 83 • 43 « Memoria datta al cavalier Guazzo, per Mantova. Novalisa, luglio 1585 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e621">44 Mémoire, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e636">Fol. 89 • 45 « Avisi di Padova, per il Sr duca eccmo di Nevers, mio Sre ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e656">Fol. 92 • 46 « Memoria della contessa DELLA MIRANDOLA all' illmo et eccmo Sr duca di Nevers ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e679">Fol. 95 • 47 « Extraict des clauses qui sont aux pouvoirs baillez à Mrs les duc de Mayenne et d'Espernon, lesquelles ont esté obmises au pouvoir de Monseigneur le duc de Nevers ». Après 1581.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e690">Fol. 95 • 48 « Extraict des clauses qui sont au pouvoir de mond. seigneur le duc de Nevers, lesquelles ne sont aux deulx susd ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e698">Fol. 97 • 49 Copie d'une lettre dans laquelle on parle des menées de la Ligue, du marquis de Senecey, du cardinal de Gondi. Elle était peut-être adressée par Girolamo Gondi a un agent du duc de Nevers. Février 1594. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e706">Fol. 101 • 50 Lettre du Sr HIERONIMO GRIMALDI, adressée au duc de Nevers : « Desiderando io far participe a V. S. illma et eccma della incoronatione del serenissimo duce Battista di Negrone,... », doge de Gênes. En décembre 1589. Incomplète à la fin. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e723">Fol. 103 et 107 • 51-52 Lettres du duc DE NEVERS au cardinal Scipion de Gonzague et au duc de Mantoue. 1589 et 1588. En italien. Minutes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e734">Fol. 111 • 53 Mémoire concernant les différends des ducs de Mantoue et de Savoie et la Valteline. Après 1621. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e745">Fol. 112 • 54 Mémoire, en italien, pour le duc de Nevers. Ce mémoire devait être présenté au pape, pour montrer à S. S. la justice et l'utilité de la restitution de Mézières audit duc de Nevers. Minute. Décembre 1591.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e753">Fol. 114 • 55 Promesse faite par des entrepreneurs pour les fortifications de « Savigliano ». Saluces, 2 octobre 1567. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e761">Fol. 118 • 56 Mémoire sur une expédition du duc de Nevers contre les troupes du Sr de S. Pol, à Poix-Terron, à trois lieues de Mézières. Octobre 1590. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e772">Fol. 125 • 57 Minute inachevée d'une ordonnance du roi HENRI III, sur la requête à lui présentée par le duc de Nevers, pour « remonstrer que, en l'année 1574, [ledit duc de Nevers] auroit intenté proces contre [ledit roi], pour avoir adjudication de la moictié des terres de la legitime de Charles d'Armaignac, suivant certain contract de transaction faict entre Françoise et Anne d'Allençon, le 2 avril 1542 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e783">Fol. 126 • 58 Minute d'un inventaire de production du duc de Nevers, « deffendeur et respectivement demandeur contre dame Marie, duchesse de Touteville et de Longueville, o l'auctorité de messire Leonor d'Orleans,... son espoux. G. Martin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e791">Fol. 132 • 59 « Copie de la lettre escritte à Mr de Nemours » par « DRAGUES DE COMNENE ». Pièce imprimée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e802">Fol. 133 • 60 Lettre adressée des environs de Lyon à Pierre d'Espinac, archevêque de Lyon, le 5 octobre 1590.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e810">Fol. 135 • 61 Lettre signée : « QUITRY », au duc de Nevers. « D'Eu, ce 22 decembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e818">Fol. 136 • 62 « Factum, pour fere entendre la verité du proces que messire Loys d'Amboize, conte d'Aubigoux, a au conseil d'Estat, contre Anne d'Amboize, dame d'Ambres, sa seur ». Inachevé.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e826">Fol. 138 • 63 « Procedure et enqueste faicte sur la noblesse de « noble Pompée de Sarracin, pourveu et nommé d'une place de religieux dans... l'eglise... de Sainct Pierre hors portes de Vienne » en Dauphiné. « Du mardy 15... septembre 1604, apres midy, dans la ville de Lyon... ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057749_d0e834">Fol. 144 et 154 • 64-65 Mémoires du duc DE NEVERS pour le Sr « de Laulné ». Minutes.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4699 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57749t&Cote=Français 4699&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4699 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9521</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant l'histoire des années 1567 à 1621.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Les feuillets 39, 40, 87 et 94 ont été coupés ; le feuillet 124 n'existe pas.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Agocchi, Giovanni Battista. • Lettres.</p>
+<p>Alano, Giorgio. • Lettre (1593).</p>
+<p>Cenami, Bartolomeo. • Lettre (1593).</p>
+<p>Ceppo, Cesare. • Lettres.</p>
+<p>Charles IX, roi de France. • Pièces et recueils divers.</p>
+<p>Diversi, Alessandro. • Lettre (1593).</p>
+<p>Fortia, P. de. • Lettres (1593).</p>
+<p>France. • Pitorre (1531-1626).</p>
+<p>Ghisilieri, Francesco. • Lettres.</p>
+<p>Gonzague, Famille de.</p>
+<p>Gonzague, Vincent Ier de, duc de Mantoue. • Lettres et actes.</p>
+<p>Grimaldi, Jérôme. • Lettres.</p>
+<p>Henri III, roi de France. • Notes et pièces diverses.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>Longueville, Marie de Bourbon, duchesse d'Estouteville, de Nevers, puis de. • Procès.</p>
+<p>Louis XIII, roi de France. • Notes et pièces diverses.</p>
+<p>Maganza, Maximiliano. • Lettres.</p>
+<p>Malatesta, Giacomo. • Lettres.</p>
+<p>Mézières. • Restitution au duc de Nevers.</p>
+<p>Montbeton, Antoine de, sr de Saint-Paul, maréchal de France. • Affaire de Poix-Terron.</p>
+<p>Montigli, Carlo, archevêque d'Amalfi, puis de Viterbe. • Lettres.</p>
+<p>Montoro, Francesco. • Lettres (1593).</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Orsini, Lodovico.</p>
+<p>Pelletta, Antonio. • Lettres.</p>
+<p>Pellevé, Nicolas de, cardinal, archevêque de Sens. • Actes et lettres.</p>
+<p>Philotheus [N.-A. Mavrocordato]. Parerga, p. a.</p>
+<p>Pic de la Mirandole, Frédéric. • Lettres.</p>
+<p>Pic de la Mirandole, Fulvia, comtesse de Randan. • Contestation avec son beau-frère.</p>
+<p>Poix-Terron, Ardennes. • Expédition du duc de Nevers (1590).</p>
+<p>Sarrasin, Pompée de. • Enquête sur sa noblesse (1604).</p>
+<p>Savigliano, Piémont. • Fortifications.</p>
+<p>Spada, Oratio. • Lettre.</p>
+<p>Valentini, Francesco. • Lettre.</p>
+<p>Volta, Camillo. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e234');">1 Lettre du duc DE MANTOUE au duc de Nevers. Mantoue, 11 juin 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e242');">2 Lettre de CAMILLO VOLTA au duc de Nevers. Rome, 29 mai 1589. En italien. Double.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e250');">3 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova », au duc de Nevers. Mantoue, 24 décembre 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e258');">4 Lettre de « FEDERICO PICO DELLA MIRANDOLA » au duc de Nevers. « Della Mirandola, lo ultimo d'ottobre 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e266');">5 Lettre de « GIO. BATTISTA AGOCCHI » au Sr « Girolamo Agocchi », son frère. Rome, 19 janvier 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e277');">6 Lettre de « FRANCESCO GHISILIERI » au cardinal de Plaisance, Philippe Sega, alors légat en France. Rome, 16 janvier 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e285');">7 Lettre de « GIO. BATTISTA AGOCCHI » au Sr Girolamo Agocchi. Rome, 16 janvier 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e296');">8 Lettre de « FERRANTE GONZAGA » au duc de Nevers. « Di San Martino, alli 22 di gennaro 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e304');">9 Lettre de « MAXIMILIANO MAGANZA » à Sébastien Zamet. Milan, 28 janvier 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e312');">10 Lettre du Sr « CAPELLO » au Sr « Agostino Forneli,... Da Paris, 21 di giugno 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e331');">11 Lettre de « FRANCESCO GHISILIERI » au Sr « Gieronimo Agocchi ». Rome, 20 janvier 1593. En italien. Chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e342');">12 Lettre de « FABIO GONZAGA » au duc de Nevers. « Da la Santa Casa dell' Oreto, l'ultimo del 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e350');">13 Lettre de « FRANCESCO GONZAGA, vescovo di Mantova », au duc de Nevers. Mantoue, 16 décembre 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e358');">14 Lettre de « CESARE CEPPO » au duc de Nevers. Mantoue, 22 mai 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e366');">15 Lettre du Sr « HIERONIMO AGOCCHI » à « Pietro Aldobrandin, castellano di Sto Angello... Di Han, li 7 d'aprile 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e380');">16 Lettre de « CESARE CEPPO » au duc de Nevers. Mantoue, 24 décembre 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e388');">17 Lettre d' « ALESSANDRO DIVERSI, mastro di camera dell' illmo di Piacenza, legato in Francia », à la « signora Vittoria Valletta ». Paris, 8 janvier 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e399');">18-19 Lettres de « P. DE FORTIA ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e434');">20 Lettre de « GIO. BATTISTA AGOCCHI » à Girolamo Agocchi. Rome, 19 janvier 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e442');">21 Lettre, signée : « ANT. Ma PELLETTA », au « cardinal Sega, legato in Francia ». Rome, 6 juillet 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e453');">22 Lettre du Sr « GIORGIO ALANO » au duc de Nevers. « Di San Martino, a III di febraro 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e464');">23 Lettre de « JACOMO MALATESTA » au duc de Nevers. « Di Padova, li 26 novembre 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e472');">24 Lettre de « BARTOLOMEO CENAMI » au duc de Nevers. « Di Mantes, alli 20 di dicembre 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e480');">25 Lettre de CHARLES « MONTIGLIA », archevêque d'Amalfi et évêque de Viterbe, au « cavalier Francesco Alba, Fiorenza ». Paris, 10 mars 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e488');">26 Lettre de L. DE GONZAGUE, duc DE NEVERS, à l'évêque de Mantoue, François de Gonzague. Rome, 11 décembre 1593. Copie. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e496');">27 Lettre de « P. FRANCESCO MONTORO », lequel fut évêque de Nicastro, à « don Pietro Aldobrandino,... Di Parigi, a 13 di aprile 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e504');">28 Lettre de « FRANCESCO VALENTINI » au Sr « Lothario Conti,... Di Roma, alli 4 di gennaro 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e515');">29 Lettre de « P. FRANCESCO MONTORO » à son frère, « Federico Montoro,... Di Parigi, a 13 d'aprile 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e523');">30 « Copia d'una lettera scritta a Gio. Francesco Resta, sotto il di 2 di decembre 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e531');">31 « Copia d'un capitolo d'una lettera scritta a D. Clemente Resta ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e539');">32 Lettre de « GIO. ANTONIO GUAZZO » au duc de Nevers. « Di Pavia, li 13 di decembre 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e552');">33-37 Lettres de « CESARE CEPPO » au duc de Nevers. Mantoue, janvier et février 1593. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e560');">38 Lettre de « N., cardinal DE PELLEVE,... à Mr Arnoul, doyen en l'eglise de Sens et [son] grand vicaire ». Rome, 14 mai.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e571');">39 Lettre d' « ORATIO SPADA » au Sr « protonotario Agocchi, appresso l'illmo sigre cardinale di Piacenza, legato, Parigi... Di Roma, li 19 gennaro 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e588');">40 « Deschiffrement d'une lectre escripte à Mme [la duchesse de Nevers ?] par le gouverneur de Melun, que le duc de Sesse envoyoit au Sr de Ybarra,... Di Meluni, a li 21 di magio 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e602');">41-42 Lettres du duc DE NEVERS à Camillo Volta. Des 8 novembre et 5 décembre 1576. En italien. Minutes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e610');">43 « Memoria datta al cavalier Guazzo, per Mantova. Novalisa, luglio 1585 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e621');">44 Mémoire, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e636');">45 « Avisi di Padova, per il Sr duca eccmo di Nevers, mio Sre ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e656');">46 « Memoria della contessa DELLA MIRANDOLA all' illmo et eccmo Sr duca di Nevers ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e679');">47 « Extraict des clauses qui sont aux pouvoirs baillez à Mrs les duc de Mayenne et d'Espernon, lesquelles ont esté obmises au pouvoir de Monseigneur le duc de Nevers ». Après 1581.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e690');">48 « Extraict des clauses qui sont au pouvoir de mond. seigneur le duc de Nevers, lesquelles ne sont aux deulx susd ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e698');">49 Copie d'une lettre dans laquelle on parle des menées de la Ligue, du marquis de Senecey, du cardinal de Gondi. Elle était peut-être adressée par Girolamo Gondi a un agent du duc de Nevers. Février 1594. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e706');">50 Lettre du Sr HIERONIMO GRIMALDI, adressée au duc de Nevers : « Desiderando io far participe a V. S. illma et eccma della incoronatione del serenissimo duce Battista di Negrone,... », doge de Gênes. En décembre 1589. Incomplète à la fin. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e723');">51-52 Lettres du duc DE NEVERS au cardinal Scipion de Gonzague et au duc de Mantoue. 1589 et 1588. En italien. Minutes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e734');">53 Mémoire concernant les différends des ducs de Mantoue et de Savoie et la Valteline. Après 1621. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e745');">54 Mémoire, en italien, pour le duc de Nevers. Ce mémoire devait être présenté au pape, pour montrer à S. S. la justice et l'utilité de la restitution de Mézières audit duc de Nevers. Minute. Décembre 1591.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e753');">55 Promesse faite par des entrepreneurs pour les fortifications de « Savigliano ». Saluces, 2 octobre 1567. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e761');">56 Mémoire sur une expédition du duc de Nevers contre les troupes du Sr de S. Pol, à Poix-Terron, à trois lieues de Mézières. Octobre 1590. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e772');">57 Minute inachevée d'une ordonnance du roi HENRI III, sur la requête à lui présentée par le duc de Nevers, pour « remonstrer que, en l'année 1574, [ledit duc de Nevers] auroit intenté proces contre [ledit roi], pour avoir adjudication de la moictié des terres de la legitime de Charles d'Armaignac, suivant certain contract de transaction faict entre Françoise et Anne d'Allençon, le 2 avril 1542 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e783');">58 Minute d'un inventaire de production du duc de Nevers, « deffendeur et respectivement demandeur contre dame Marie, duchesse de Touteville et de Longueville, o l'auctorité de messire Leonor d'Orleans,... son espoux. G. Martin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e791');">59 « Copie de la lettre escritte à Mr de Nemours » par « DRAGUES DE COMNENE ». Pièce imprimée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e802');">60 Lettre adressée des environs de Lyon à Pierre d'Espinac, archevêque de Lyon, le 5 octobre 1590.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e810');">61 Lettre signée : « QUITRY », au duc de Nevers. « D'Eu, ce 22 decembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e818');">62 « Factum, pour fere entendre la verité du proces que messire Loys d'Amboize, conte d'Aubigoux, a au conseil d'Estat, contre Anne d'Amboize, dame d'Ambres, sa seur ». Inachevé.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e826');">63 « Procedure et enqueste faicte sur la noblesse de « noble Pompée de Sarracin, pourveu et nommé d'une place de religieux dans... l'eglise... de Sainct Pierre hors portes de Vienne » en Dauphiné. « Du mardy 15... septembre 1604, apres midy, dans la ville de Lyon... ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057749_d0e834');">64-65 Mémoires du duc DE NEVERS pour le Sr « de Laulné ». Minutes.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

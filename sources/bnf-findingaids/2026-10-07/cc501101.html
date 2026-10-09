@@ -1,0 +1,469 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050110">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050110">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3659
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050110_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110">Français 3659 • Anc. 9153 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e86">1 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à St Germain en Laye, le VIIe jour de septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e98">Fol. 2 • 2 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, ce 6e 7bre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e112">Fol. 4 • 3 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce VIIe jour de septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e123">Fol. 6 • 4 Lettre du « cardinal LUDOVISIO,... à monseigneur de Bethune,... Di Alessandria, li 8 di settembre 1617 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e136">Fol. 8 • 5 Lettre du « cardinal LUDOVISIO,... à monseigneur de Bethune,... Di Alessandria, li 10 di settembre 1617 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e144">Fol. 10 • 6 Lettre de « don PEDRO DE TOLEDO,... à monseigneur de Bettune,... De Alexandria, a 15 de settembre 1617 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e152">Fol. 12 • 7 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XVIe jour de septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e163">Fol. 14 • 8 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XVIIe jour de septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e174">Fol. 16 • 9 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXe jour de septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e185">Fol. 18 • 10 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XX septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e193">Fol. 20 • 11 « Receu du Sr domp Pietro de Toledo, gouverneur de Milan, de la foy de Sa Magesté [Louis XIII] de l'acceptation du traité d'Ast, faicte par le duc de Savoye... En Alexandria, a 20 de 7bre 1617 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e207">Fol. 22 • 12 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 20 de 7bre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e218">Fol. 24 • 13 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... A Paris, le XXIe septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e229">Fol. 26 • 14 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXIXe jour de septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e240">Fol. 28 • 15 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 29 de 7bre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e251">Fol. 30 • 16 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXIX septembre » 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e259">Fol. 32 • 17 Instructions relatives à l'exécution du traité d'Ast, données par don PEDRO DE TOLEDO à « don Juan Vinas », envoyé vers Philippe de Béthune, ambassadeur extraordinaire en Italie. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e270">Fol. 34 • 18 Lettre de FRANÇOIS DE BONNE, maréchal DE « LESDIGUIERES », à monsieur de Béthune. « A Turin, le IIIe octobre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e286">Fol. 36 • 19 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIIIe octobre » 1617.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e297">Fol. 38 • 20 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à St Germain, le VIIe jour de septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e311">Fol. 42 • 21 « Relacion de lo que se ha hecho y queda por hacer para la execucion del trattado de Aste, segun lo acordado entre las Mages de los dos reyes... Fecha en Pavia, a 9 de octubre 1617 ». En espagnol. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e322">Fol. 44 • 22 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIIII octobre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e330">Fol. 46 • 23 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bethune,... A Turin, ce 17 d'octobre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e341">Fol. 48 • 24 Lettre, avec chiffre, du « duque DE MONTELEON,... a don Pedro de Toledo,... De Paris, 18 de ottobre 1617 ». En espagnol. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e354">Fol. 50 • 25 Lettre de « FERDINANDO, duca DI MANTOVA, a S. Mta Christianissima... Di Mantova, a 17 ottobre 1617 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e370">Fol. 52 • 26 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce XIXe jour d'octobre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e381">Fol. 54 • 27 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIXe octobre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e392">Fol. 55 • 28 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXI octobre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e400">Fol. 57 • 29 « Double des articles envoyez d'Espaigne touchant le differend qui est entre l'archiduc Ferdinand et les Venitiens », ainsi que celui entre la « Savoye et Mantoue ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e423">Fol. 59 • 30 Traduction de la pièce n° 21.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e431">Fol. 61 • 31 « Memoire faict en Ast sur l'execution du traité ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e439">Fol. 63 • 32 « Memoire du duc » DE SAVOIE, relatif à l'exécution du traité d'Ast, adressé « à Philippe de Bethune » ; avec les réponses de ce dernier.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e447">Fol. 65 • 33 Mémoire adressé par CHARLES-EMMANUEL Ier, duc DE SAVOIE, au roi de France, pour se plaindre des infractions faites par les Espagnols au traité d'Asti. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e458">Fol. 67 • 34 Même contenu que le n° 30.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e466">Fol. 69 • 35 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, ce 9e novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e477">Fol. 71 • 36 Lettre, avec chiffre et déchiffrement, de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris; ce IXe novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e488">Fol. 73 • 37 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le IIe jour de novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e499">Fol. 75 • 38 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIe novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e510">Fol. 77 • 39 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVIIIe jour de novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e521">Fol. 79 • 40 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à St Germain en Laye, le XIIIIe jour de novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e535">Fol. 80 • 41 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce Xe jour de novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e546">Fol. 82 • 42 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bethune,... De Thurin, ce 15 9bre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e560">Fol. 84 • 43 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVe novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e571">Fol. 86 • 44 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVI novembre au soir, 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e579">Fol. 88 • 45 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVIIe novembre au soir, 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e590">Fol. 89 • 46 Lettre de « GIOVANNI GONZAGA, marchese DI VESINO », à Philippe de Béthune. « Di Madrid, li 18 di novembre 1617 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e603">Fol. 91 • 47 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à Mr de Betthune,... A Thurin, ce 18 novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e617">Fol. 93 • 48 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXe novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e628">Fol. 95 • 49 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bethune,... A Rivoles, ce 21 de Xbre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e642">Fol. 97 • 50 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « Di Torino, 20 novembre 1617 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e655">Fol. 99 • 51 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à Mr de Betthune,... De Rivoles, ce 22 9bre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e672">Fol. 101 et 103 • 52-53 Deux lettres de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « A Turino, 26 di novembre 1617 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e680">Fol. 105 • 54 Lettre de « C[HARLES-]EMANUEL [Ier], duc DE SAVOYE », au roi de France. « A Thurin, ce XXVIe novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e694">Fol. 107 • 55 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Rouen, ce XXVIIe jour de novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e705">Fol. 109 • 56 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouan, ce XXVIII novembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e713">Fol. 111 • 57 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « A Turino, 29 novembre 1617 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e721">Fol. 113 • 58 Lettre de CLAUDIO DE « MARINI » à Philippe de Béthune. « Novembre 1617 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e729">Fol. 115 • 59 Notification faite par « LOUIS » XIII à « don Pedro de Toledo, gouverneur de Milan », de l'exécution du traité d'Asti par le duc de Savoye. « Faict à Rouen, le dernier novembre mil six cens dix sept ». Copie, adressée par Philippe de Béthune audit don Pedro de Toledo.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e737">Fol. 116 • 60 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Rouen, ce VIe jour de decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e748">Fol. 118 • 61 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce VIe jour de decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e759">Fol. 120 • 62 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Rouen, le VIIe jour de decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e770">Fol. 122 • 63 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce VII decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e778">Fol. 124 • 64 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bettune,... De Thurin, ce XI Xbre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e792">Fol. 126 et 128 • 65-66 Deux lettres de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce XII decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e800">Fol. 130 • 67 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « Di Turino, 13 dicembre 1617 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e808">Fol. 132 • 68 Lettre de HENRI DE BEAUFREMONT, marquis DE « SENECEY [ambassadeur extraordinaire en Espagne]... à monsieur de Bethune,... De Madrid, ce 14e decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e824">Fol. 134 • 69 « Memoire » pour Philippe de Béthune, sur ce qu'il doit représenter au duc de Savoie, touchant l'affaire du « comte de Bueil,... Xbre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e845">Fol. 136 • 70 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouan, ce XX decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e853">Fol. 138 • 71 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Bethune. « A Turino, 21 Xbre 1617 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e864">Fol. 139 • 72 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bethune,... De Rivoles, ce 21 Xbre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e878">Fol. 141 et 143 • 73-74 Deux lettres, dont une avec chiffre et déchiffrement, de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce XXVI decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e886">Fol. 145 • 75 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Rouen, le XXVIIe jour de decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e897">Fol. 147 • 76 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce XXVII decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e905">Fol. 149 • 77 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « A Turino, 28 Xbre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e916">Fol. 151 • 78 Lettre de HENRI DE BEAUFREMONT, marquis DE « SENECEY,... à monsieur de Bethune,... De Madrid, ce 31 decembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050110_d0e929">Fol. 152 • 79 Lettre du « cardinal [ALEXANDRE] LUDOVISIO » à « monsor di Bettune,... Di Milano, li 6 di febrajo 1618 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3659 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc501101&Cote=Français 3659&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3659 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9153</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Asti. • Traités de 1614-1617.</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Puysieux, Pierre Brûlart, marquis de Sillery, vicomte de, secrétaire d'État. • Lettres et actes.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Actes et lettres.</p>
+<p>Toledo-Osorio, Don Pedro de, marquis de Villafranca, gouverneur de Milan. • Actes et lettres.</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e86');">1 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à St Germain en Laye, le VIIe jour de septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e98');">2 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, ce 6e 7bre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e112');">3 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce VIIe jour de septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e123');">4 Lettre du « cardinal LUDOVISIO,... à monseigneur de Bethune,... Di Alessandria, li 8 di settembre 1617 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e136');">5 Lettre du « cardinal LUDOVISIO,... à monseigneur de Bethune,... Di Alessandria, li 10 di settembre 1617 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e144');">6 Lettre de « don PEDRO DE TOLEDO,... à monseigneur de Bettune,... De Alexandria, a 15 de settembre 1617 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e152');">7 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XVIe jour de septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e163');">8 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XVIIe jour de septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e174');">9 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXe jour de septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e185');">10 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XX septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e193');">11 « Receu du Sr domp Pietro de Toledo, gouverneur de Milan, de la foy de Sa Magesté [Louis XIII] de l'acceptation du traité d'Ast, faicte par le duc de Savoye... En Alexandria, a 20 de 7bre 1617 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e207');">12 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 20 de 7bre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e218');">13 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... A Paris, le XXIe septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e229');">14 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXIXe jour de septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e240');">15 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 29 de 7bre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e251');">16 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXIX septembre » 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e259');">17 Instructions relatives à l'exécution du traité d'Ast, données par don PEDRO DE TOLEDO à « don Juan Vinas », envoyé vers Philippe de Béthune, ambassadeur extraordinaire en Italie. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e270');">18 Lettre de FRANÇOIS DE BONNE, maréchal DE « LESDIGUIERES », à monsieur de Béthune. « A Turin, le IIIe octobre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e286');">19 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIIIe octobre » 1617.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e297');">20 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à St Germain, le VIIe jour de septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e311');">21 « Relacion de lo que se ha hecho y queda por hacer para la execucion del trattado de Aste, segun lo acordado entre las Mages de los dos reyes... Fecha en Pavia, a 9 de octubre 1617 ». En espagnol. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e322');">22 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIIII octobre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e330');">23 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bethune,... A Turin, ce 17 d'octobre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e341');">24 Lettre, avec chiffre, du « duque DE MONTELEON,... a don Pedro de Toledo,... De Paris, 18 de ottobre 1617 ». En espagnol. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e354');">25 Lettre de « FERDINANDO, duca DI MANTOVA, a S. Mta Christianissima... Di Mantova, a 17 ottobre 1617 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e370');">26 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce XIXe jour d'octobre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e381');">27 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIXe octobre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e392');">28 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXI octobre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e400');">29 « Double des articles envoyez d'Espaigne touchant le differend qui est entre l'archiduc Ferdinand et les Venitiens », ainsi que celui entre la « Savoye et Mantoue ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e423');">30 Traduction de la pièce n° 21.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e431');">31 « Memoire faict en Ast sur l'execution du traité ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e439');">32 « Memoire du duc » DE SAVOIE, relatif à l'exécution du traité d'Ast, adressé « à Philippe de Bethune » ; avec les réponses de ce dernier.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e447');">33 Mémoire adressé par CHARLES-EMMANUEL Ier, duc DE SAVOIE, au roi de France, pour se plaindre des infractions faites par les Espagnols au traité d'Asti. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e458');">34 Même contenu que le n° 30.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e466');">35 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, ce 9e novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e477');">36 Lettre, avec chiffre et déchiffrement, de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris; ce IXe novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e488');">37 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le IIe jour de novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e499');">38 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIe novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e510');">39 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVIIIe jour de novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e521');">40 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à St Germain en Laye, le XIIIIe jour de novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e535');">41 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce Xe jour de novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e546');">42 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bethune,... De Thurin, ce 15 9bre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e560');">43 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVe novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e571');">44 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVI novembre au soir, 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e579');">45 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVIIe novembre au soir, 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e590');">46 Lettre de « GIOVANNI GONZAGA, marchese DI VESINO », à Philippe de Béthune. « Di Madrid, li 18 di novembre 1617 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e603');">47 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à Mr de Betthune,... A Thurin, ce 18 novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e617');">48 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXe novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e628');">49 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bethune,... A Rivoles, ce 21 de Xbre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e642');">50 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « Di Torino, 20 novembre 1617 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e655');">51 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à Mr de Betthune,... De Rivoles, ce 22 9bre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e672');">52-53 Deux lettres de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « A Turino, 26 di novembre 1617 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e680');">54 Lettre de « C[HARLES-]EMANUEL [Ier], duc DE SAVOYE », au roi de France. « A Thurin, ce XXVIe novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e694');">55 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Rouen, ce XXVIIe jour de novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e705');">56 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouan, ce XXVIII novembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e713');">57 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « A Turino, 29 novembre 1617 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e721');">58 Lettre de CLAUDIO DE « MARINI » à Philippe de Béthune. « Novembre 1617 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e729');">59 Notification faite par « LOUIS » XIII à « don Pedro de Toledo, gouverneur de Milan », de l'exécution du traité d'Asti par le duc de Savoye. « Faict à Rouen, le dernier novembre mil six cens dix sept ». Copie, adressée par Philippe de Béthune audit don Pedro de Toledo.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e737');">60 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Rouen, ce VIe jour de decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e748');">61 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce VIe jour de decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e759');">62 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Rouen, le VIIe jour de decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e770');">63 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce VII decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e778');">64 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bettune,... De Thurin, ce XI Xbre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e792');">65-66 Deux lettres de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce XII decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e800');">67 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « Di Turino, 13 dicembre 1617 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e808');">68 Lettre de HENRI DE BEAUFREMONT, marquis DE « SENECEY [ambassadeur extraordinaire en Espagne]... à monsieur de Bethune,... De Madrid, ce 14e decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e824');">69 « Memoire » pour Philippe de Béthune, sur ce qu'il doit représenter au duc de Savoie, touchant l'affaire du « comte de Bueil,... Xbre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e845');">70 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouan, ce XX decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e853');">71 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Bethune. « A Turino, 21 Xbre 1617 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e864');">72 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monsieur de Bethune,... De Rivoles, ce 21 Xbre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e878');">73-74 Deux lettres, dont une avec chiffre et déchiffrement, de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce XXVI decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e886');">75 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Rouen, le XXVIIe jour de decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e897');">76 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Rouen, ce XXVII decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e905');">77 Lettre de « C[LAUDIO] DE MARINI » à Philippe de Béthune. « A Turino, 28 Xbre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e916');">78 Lettre de HENRI DE BEAUFREMONT, marquis DE « SENECEY,... à monsieur de Bethune,... De Madrid, ce 31 decembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050110_d0e929');">79 Lettre du « cardinal [ALEXANDRE] LUDOVISIO » à « monsor di Bettune,... Di Milano, li 6 di febrajo 1618 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

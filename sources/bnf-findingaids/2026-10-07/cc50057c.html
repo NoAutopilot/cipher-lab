@@ -1,0 +1,472 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050057">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050057">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3607
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050057_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057">Français 3607 • Anc. 9096 • Recueil de lettres originales et d'une copie de pièce indiquée comme telle dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e104">1 Lettre du connétable HENRI DE « MONTMORENCY,... au roy... De Paris, ce XXe 7bre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e116">Fol. 3 • 2 Lettre du connétable HENRI DE « MONTMORENCY,... au roy... De Paris, ce XIXe juin 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e127">Fol. 5 • 3 Lettre des « gens tenans la cour de parlement de Thoulouse... à monseigneur le duc de Montmorancy,... A Thoulouse, ce XVIe d'avril 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e143">Fol. 7 • 4 Lettre de FRANÇOIS DE BONNE DE « LESDIGUIERES,... à monseigneur le duc de Montmorancy,... A St Jehan de Morienne, le XXIIIIe juin 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e162">Fol. 9 • 5 Lettre du maréchal CLAUDE DE « LA CHASTRE » au connétable de Montmorancy. « A Orleans, ce dernier jour de novembre 1595 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e180">Fol. 11 • 6 Lettre de HENRI DE « JOYEUSE,... à monsieur le connestable... De Paris, ce 9 novembre... 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e203">Fol. 13 • 7 Lettre du « mareschal DE BOUILLON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... De Paris, ce XXVIIe de novembre 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e229">Fol. 15 • 8 Lettre de CHARLES DE COSSE, comte DE «BRISSAC,... mareschal [de France]... à monsieur le duc de Montmorency,... A Paris, ce X septembre 1605 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e252">Fol. 17 • 9 Lettre du « mareschal d'ORNANO,... à monseigneur de Montmorancy,... A Bourdeaux, ce 14e de novembre 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e283">Fol. 19 • 10 Lettre du « mareschal DE BOUILHON,... HENRY DE LA TOUR,... à monsieur le connestable... A Sedan, le 29e desembre... 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e314">Fol. 21 • 11 Lettre d'URBAIN « DE LAVAL, mareschal DE BOISDAULPHIN,... à monsieur de Monmorancy,... De Sablé, le 7 febvrier 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e347">Fol. 23 • 12 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorancy,... A Rennes, ce XXIIIe apvril 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e383">Fol. 25 • 13 Lettre de FRANÇOIS DE BONNE DE « LESDIGUIERES,... à monseigneur le duc de Montmorancy,... De Grenoble, le 5 febvrier 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e416">Fol. 28 • 14 Lettre d'URBAIN « DE LAVAL, mareschal DE BOISDAUPHIN,... à monsieur le duc de Monmorancy,... Le 5 desambre 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e449">Fol. 30 • 15 Lettre du maréchal CLAUDE DE « LA CHASTRE,... à monsieur le duc de Montmorancy,... A La Maisonfort, ce XXe jour de may 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e485">Fol. 32 • 16 Lettre du « mareschal [CLAUDE DE] LA CHASTRE,... à monsieur le duc de Monmorancy,... De Baugency... septembre... 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e518">Fol. 35 • 17 Lettre du « mareschal [CLAUDE DE] LA CHASTRE,... à monsieur le duc de Montmorancy,... A La Maisonfort, ce XVIe jour de novembre 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e554">Fol. 38 • 18 Lettre d'URBAIN « DE LAVAL, mareschal DE BOISDAULPHIN,... à monsieur le duc de Montmorancy,... De Paris, se 7 novembre 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e587">Fol. 40 • 19 Lettre de HENRY DE « JOYEUSE,... à monsieur le duc de Montmorancy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e625">Fol. 42 • 20 Lettre de JEAN DE BEAUMANOIR, marquis DE « LAVARDYN,... mareschal de [France]... à monsieur le connestable... De Parys, se dys et neuf d'aoust... 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e663">Fol. 44 • 21 Lettre des maréchaux CHARLES DE COSSE « BRISSAC » et URBAIN « DE LAVAL,... à monsieur le duc de Montmorancy,... A Paris, ce IIe aoust 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e699">Fol. 46 • 22 Lettre du maréchal DE « LAVARDYN... à monsyeur le conestable... Le XXIIIe octobre, à St Germain... 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e743">Fol. 48 • 23 Lettre du « mareschal [JACQUES] DE MATIGNON,... à monsieur le duc de Montmorancy,... A Bordeaux, le VIe aoust 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e784">Fol. 50 • 24 Lettre du maréchal « ALFONSE D'ORNANO,... à monseigneur le duc de Montmorancy,... Au St Esprit, ce IIIIe octobre 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e823">Fol. 52 • 25 Lettre du « mareschal DE BALAGNY, [JEAN DE] MONLUC,... à monseigneur le connestable... Mars 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e861">Fol. 54 • 26 Lettre du maréchal JACQUES DE « MATIGNON,... à monsieur de Montmorancy,... De Bordeaux, ce IXe decembre 1595 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e907">Fol. 56 • 27 Lettre du « mareschal DE BALAGNY,... à monseigneur le connestable... Ce XXIIIe septembre 1599 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e948">Fol. 58 • 28 Lettre du « mareschal DE BALAGNY,... à monseigneur le connestable ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e986">Fol. 60 • 29 Lettre du maréchal DE BOUILLON « HENRY DE LA TOUR,... A Sedan, le 22e aoust 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1027">Fol. 62 • 30 Lettre du maréchal DE « BOISDAULPHIN,... à monsieur le duc de Montmorancy,... Aoust 1599 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1060">Fol. 64 • 31 Lettre du « mareschal [CLAUDE] DE LA CHASTRE,... à monsieur le duc de Montmorency,... Septembre 1599 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1093">Fol. 66 • 32 Lettre du maréchal DE « LAVARDYN,... à monsieur le connestable... Aoust 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1126">Fol. 68 • 33 Lettre de M. « DE MATIGNON,... à monseigneur le connestable... De St-Lo, ce 25e may 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1165">Fol. 70 • 34 Lettre du « mareschal DE BOISDAUFIN, [URBAIN] DE LAVAL... à monsieur le duc de Monmorancy,... De Boisdaufin, ce XXVIIe juing 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1196">Fol. 72 • 35 Lettre du maréchal « DE BOISDAUFIN,... à monsieur le duc de Monmorancy,... A Sablé, ce 19 avril 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1224">Fol. 74 • 36 Lettre de FRANÇOIS DE BONNE « DE LESDIGUIERES,... à monseigneur le duc de Montmorancy,... A Grenoble, le XXVIIIe may 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1255">Fol. 76 • 37 Lettre du maréchal « DE BOISDAUFIN,... à monsieur le duc de Monmorancy,... De Paris, se 26 octobre 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1278">Fol. 78 • 38 Lettre du maréchal DE BALAGNY, JEAN « DE MONLUC,... à monseigneur le connestable... A Marle, ce XIIe d'apvril 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1299">Fol. 80 • 39 Lettre du maréchal « ALFONSE D'ORNANO,... à monseigneur de Montmorancy,... A Agen, ce 24e 7bre 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1313">Fol. 82 • 40 Lettre du maréchal « ALFONSE D'ORNANO,... à monseigneur le duc de Montmorancy,... A Moras, ce XIIe juillet 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1324">Fol. 84 • 41 Lettre de HENRI DE « JOYEUSE,... à monsieur le conestable... De Beziers, ce 27e juillet 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1340">Fol. 86 • 42 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Monmoransy,... A L'Estelan, ce premier octobre 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1348">Fol. 88 • 43 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorancy,... A Rennes, ce XIXe decembre 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1359">Fol. 90 • 44 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorensy,... A Paris, ce XXIIIIe de novembre 1595 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1370">Fol. 92 • 45 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorency,... A Brissac, ce IIe decembre 1605 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1381">Fol. 94 • 46 Lettre de « J[EAN] DAFFYS,... à monsieur le cardinal de Joyeuse ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1394">Fol. 97 • 47 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorancy,... A Paris, ce XXIIIe mars 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1405">Fol. 99 • 48 Lettre du connétable HENRY DE « MONTMORANCY,... à messieurs les commissaires contrerolleur et paieur de ma compagnie... D'Amyens, ce VIe aoust 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1421">Fol. 101 • 49 Lettre du connétable HENRY DE « MONTMORANCY,... à messieurs les commissaires contrerolleur et paieur de ma compagnie... D'Amyens, ce Ve d'aoust 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1432">Fol. 103 • 50 « Instruction pour le Sr de Miraulmont, allant à Monstreuil et Boullongne », pour le connétable de Montmorancy. « Du XVIIe mars ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050057_d0e1461">Fol. 105 • 51 Lettre des « gens tenans la court de parlement pour le roy en Thoulouse... à monseigneur le duc de Montmorency,... De Thoulouse, ce 30e de mars 1597 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3607 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50057c&Cote=Français 3607&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3607 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9096</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales et d'une copie de pièce indiquée comme telle dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècles</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Bouillon, Henri de La Tour d'Auvergne, duc de, maréchal de France. • Actes et lettres.</p>
+<p>Brissac, Charles II de Cossé, duc de, maréchal de France. • Actes et lettres.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>La Châtre, Claude de, baron de Maisonfort, maréchal de France. • Actes et lettres.</p>
+<p>Laval, Urbain de, marquis de Sablé, maréchal de Boisdauphin. • Lettres.</p>
+<p>Lesdiguières, François de Bonne, duc de, connétable de France. • Actes et lettres.</p>
+<p>Monluc, Jean de, sr de Balagny, maréchal de France. • Actes et lettres.</p>
+<p>Montmorency, Henri Ier, comte de Damville, puis duc de, connétable de France. • Lettres et actes.</p>
+<p>Ornano, Alphonse d', maréchal de France. • Actes et lettres.</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e104');">1 Lettre du connétable HENRI DE « MONTMORENCY,... au roy... De Paris, ce XXe 7bre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e116');">2 Lettre du connétable HENRI DE « MONTMORENCY,... au roy... De Paris, ce XIXe juin 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e127');">3 Lettre des « gens tenans la cour de parlement de Thoulouse... à monseigneur le duc de Montmorancy,... A Thoulouse, ce XVIe d'avril 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e143');">4 Lettre de FRANÇOIS DE BONNE DE « LESDIGUIERES,... à monseigneur le duc de Montmorancy,... A St Jehan de Morienne, le XXIIIIe juin 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e162');">5 Lettre du maréchal CLAUDE DE « LA CHASTRE » au connétable de Montmorancy. « A Orleans, ce dernier jour de novembre 1595 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e180');">6 Lettre de HENRI DE « JOYEUSE,... à monsieur le connestable... De Paris, ce 9 novembre... 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e203');">7 Lettre du « mareschal DE BOUILLON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... De Paris, ce XXVIIe de novembre 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e229');">8 Lettre de CHARLES DE COSSE, comte DE «BRISSAC,... mareschal [de France]... à monsieur le duc de Montmorency,... A Paris, ce X septembre 1605 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e252');">9 Lettre du « mareschal d'ORNANO,... à monseigneur de Montmorancy,... A Bourdeaux, ce 14e de novembre 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e283');">10 Lettre du « mareschal DE BOUILHON,... HENRY DE LA TOUR,... à monsieur le connestable... A Sedan, le 29e desembre... 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e314');">11 Lettre d'URBAIN « DE LAVAL, mareschal DE BOISDAULPHIN,... à monsieur de Monmorancy,... De Sablé, le 7 febvrier 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e347');">12 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorancy,... A Rennes, ce XXIIIe apvril 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e383');">13 Lettre de FRANÇOIS DE BONNE DE « LESDIGUIERES,... à monseigneur le duc de Montmorancy,... De Grenoble, le 5 febvrier 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e416');">14 Lettre d'URBAIN « DE LAVAL, mareschal DE BOISDAUPHIN,... à monsieur le duc de Monmorancy,... Le 5 desambre 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e449');">15 Lettre du maréchal CLAUDE DE « LA CHASTRE,... à monsieur le duc de Montmorancy,... A La Maisonfort, ce XXe jour de may 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e485');">16 Lettre du « mareschal [CLAUDE DE] LA CHASTRE,... à monsieur le duc de Monmorancy,... De Baugency... septembre... 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e518');">17 Lettre du « mareschal [CLAUDE DE] LA CHASTRE,... à monsieur le duc de Montmorancy,... A La Maisonfort, ce XVIe jour de novembre 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e554');">18 Lettre d'URBAIN « DE LAVAL, mareschal DE BOISDAULPHIN,... à monsieur le duc de Montmorancy,... De Paris, se 7 novembre 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e587');">19 Lettre de HENRY DE « JOYEUSE,... à monsieur le duc de Montmorancy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e625');">20 Lettre de JEAN DE BEAUMANOIR, marquis DE « LAVARDYN,... mareschal de [France]... à monsieur le connestable... De Parys, se dys et neuf d'aoust... 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e663');">21 Lettre des maréchaux CHARLES DE COSSE « BRISSAC » et URBAIN « DE LAVAL,... à monsieur le duc de Montmorancy,... A Paris, ce IIe aoust 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e699');">22 Lettre du maréchal DE « LAVARDYN... à monsyeur le conestable... Le XXIIIe octobre, à St Germain... 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e743');">23 Lettre du « mareschal [JACQUES] DE MATIGNON,... à monsieur le duc de Montmorancy,... A Bordeaux, le VIe aoust 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e784');">24 Lettre du maréchal « ALFONSE D'ORNANO,... à monseigneur le duc de Montmorancy,... Au St Esprit, ce IIIIe octobre 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e823');">25 Lettre du « mareschal DE BALAGNY, [JEAN DE] MONLUC,... à monseigneur le connestable... Mars 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e861');">26 Lettre du maréchal JACQUES DE « MATIGNON,... à monsieur de Montmorancy,... De Bordeaux, ce IXe decembre 1595 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e907');">27 Lettre du « mareschal DE BALAGNY,... à monseigneur le connestable... Ce XXIIIe septembre 1599 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e948');">28 Lettre du « mareschal DE BALAGNY,... à monseigneur le connestable ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e986');">29 Lettre du maréchal DE BOUILLON « HENRY DE LA TOUR,... A Sedan, le 22e aoust 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1027');">30 Lettre du maréchal DE « BOISDAULPHIN,... à monsieur le duc de Montmorancy,... Aoust 1599 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1060');">31 Lettre du « mareschal [CLAUDE] DE LA CHASTRE,... à monsieur le duc de Montmorency,... Septembre 1599 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1093');">32 Lettre du maréchal DE « LAVARDYN,... à monsieur le connestable... Aoust 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1126');">33 Lettre de M. « DE MATIGNON,... à monseigneur le connestable... De St-Lo, ce 25e may 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1165');">34 Lettre du « mareschal DE BOISDAUFIN, [URBAIN] DE LAVAL... à monsieur le duc de Monmorancy,... De Boisdaufin, ce XXVIIe juing 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1196');">35 Lettre du maréchal « DE BOISDAUFIN,... à monsieur le duc de Monmorancy,... A Sablé, ce 19 avril 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1224');">36 Lettre de FRANÇOIS DE BONNE « DE LESDIGUIERES,... à monseigneur le duc de Montmorancy,... A Grenoble, le XXVIIIe may 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1255');">37 Lettre du maréchal « DE BOISDAUFIN,... à monsieur le duc de Monmorancy,... De Paris, se 26 octobre 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1278');">38 Lettre du maréchal DE BALAGNY, JEAN « DE MONLUC,... à monseigneur le connestable... A Marle, ce XIIe d'apvril 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1299');">39 Lettre du maréchal « ALFONSE D'ORNANO,... à monseigneur de Montmorancy,... A Agen, ce 24e 7bre 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1313');">40 Lettre du maréchal « ALFONSE D'ORNANO,... à monseigneur le duc de Montmorancy,... A Moras, ce XIIe juillet 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1324');">41 Lettre de HENRI DE « JOYEUSE,... à monsieur le conestable... De Beziers, ce 27e juillet 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1340');">42 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Monmoransy,... A L'Estelan, ce premier octobre 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1348');">43 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorancy,... A Rennes, ce XIXe decembre 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1359');">44 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorensy,... A Paris, ce XXIIIIe de novembre 1595 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1370');">45 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorency,... A Brissac, ce IIe decembre 1605 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1381');">46 Lettre de « J[EAN] DAFFYS,... à monsieur le cardinal de Joyeuse ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1394');">47 Lettre du maréchal CHARLES DE COSSE « BRISSAC,... à monsieur le duc de Montmorancy,... A Paris, ce XXIIIe mars 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1405');">48 Lettre du connétable HENRY DE « MONTMORANCY,... à messieurs les commissaires contrerolleur et paieur de ma compagnie... D'Amyens, ce VIe aoust 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1421');">49 Lettre du connétable HENRY DE « MONTMORANCY,... à messieurs les commissaires contrerolleur et paieur de ma compagnie... D'Amyens, ce Ve d'aoust 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1432');">50 « Instruction pour le Sr de Miraulmont, allant à Monstreuil et Boullongne », pour le connétable de Montmorancy. « Du XVIIe mars ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050057_d0e1461');">51 Lettre des « gens tenans la court de parlement pour le roy en Thoulouse... à monseigneur le duc de Montmorency,... De Thoulouse, ce 30e de mars 1597 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

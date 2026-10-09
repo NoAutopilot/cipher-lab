@@ -1,0 +1,507 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057761">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057761">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4711
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057761_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761">Français 4711 • Anc. 9533 • Recueil de lettres originales, adressées aux ducs et duchesses de Nevers, durant la seconde moitié du XVIe siècle, principalement.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e278">Fol. 1 • 1 Lettre de « MARGUERITE » DE VALOIS, soeur de François Ier, roi de France, reine de Navarre, à la duchesse de Nevers, Marguerite de Bourbon. 1548.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e289">Fol. 2 • 2 Lettre de « JEHANNE » D'ALBRET, « reine DE NAVARRE », à Marguerite de Bourbon, duchesse de Nevers. 1559.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e297">Fol. 3 et 5 • 3-4 Lettres d' « ANTHOINETTE DE BOURBON, [duchesse] douairière DE GUYSE », à Marguerite de Bourbon, duchesse de Nevers, sa nièce. 1555 et 1558.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e305">Fol. 6 • 5 Lettre de « CATHERINE DE BOURBON »-VENDOME à Marguerite de Bourbon, duchesse de Nevers, sa soeur.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e313">Fol. 8 et 9 • 6-7 Lettres d' « ANTHOINETTE DE BOURBON », duchesse douairière DE GUISE, à Marguerite de Bourbon, duchesse de Nevers, sa nièce. Vers 1559.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e321">Fol. 10 • 8 Lettre de « RENEE DE BOURBON » à Marguerite de Bourbon, duchesse de Nevers, sa soeur.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e329">Fol. 11 • 9 Lettre d'« ÉLEONOR DE BOURBON » à Henriette de Clèves, duchesse de Nevers, sa nièce. « A Fontevraust, ce 24 octobre 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e337">Fol. 12 • 10 Lettre de « MARIE DE BOURBON », duchesse DE LONGUEVILLE, à Catherine de Lorraine-Mayenne, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e345">Fol. 13 • 11 Lettre de « MARGUERITE DE FRANCE », fille de François Ier, roi de France, « duchesse de Berry », à la duchesse de Nevers, Marguerite de Bourbon. 1554.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e361">Fol. 14 et 16 • 12-13 Lettres de « CATHERINE DE BOURBON »-VENDOME à Marguerite de Bourbon, duchesse de Nevers, sa soeur.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e369">Fol. 17 • 14 Lettre de « CHARLES, cardinal DE BOURBON »-VENDOME, à Marguerite de Bourbon, duchesse de Nevers, sa soeur.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e377">Fol. 18 • 15 Lettre de « C[HARLES], cardinal DE BOURBON »-CONDE, à « Mr de Monthelon ». 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e388">Fol. 19 et suiv • 16-26 Lettres de « DIANNE DE POYTIERS, [duchesse] DE VALENTINOYS », au duc et à la duchesse de Nevers, François de Clèves et Marguerite de Bourbon.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e396">27 Lettre, signée : « POYTIERS », adressée à « Mr le tresoryer [Rob] ertet, seygneur d'Aluye ». Laditelettre commence (fol. 34) par : « Mr le tresoryer, je ssuys yssy aryvé à Ors, et mayn m'an voys coucher à Ssuse avecques toute ma bande... » et finissant par : «... se que ples desyrés. A Hours, le 17e d'ost. Vostre bon frere et amy. Poytiers ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e414">Fol. 36 et 38 • 28-29 Lettres de « LOYS, cardinal DE GUYSE », au duc et à la duchesse de Nevers. La seconde lettre est datée de « Villiers Costeretz, le 6 may 1557 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e422">Fol. 39 et suiv • 30-32 Lettres de « CATTERINE » DE GONZAGUE et DE CLEVES, duchesse DE LONGUEVILLE, à la duchesse de Nevers, Henriette de Clèves, sa mère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e430">Fol. 44 • 33 Lettre de « HENRIETTE » DE CLEVES, duchesse DE NEVERS, à son fils, Charles de Gonzague et de Clèves, duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e438">Fol. 45 et 47 • 34-35 Lettres de « CHARLES, cardinal DE VENDOSME », à sa soeur, Marguerite de Bourbon, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e446">Fol. 49 • 36 Lettre de « FRANÇOYS DE CLEVES » à sa mère, Marguerite de Bourbon, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e454">Fol. 51 • 37 Lettre de « HENRIETTE DE GONZAGUE et DE CLEVES » à la duchesse de Nevers, sa mère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e462">Fol. 52 et 54 • 38-39 Lettres, signées d'un monogramme, de LOUISE DE LORRAINE, fille de Henri de Lorraine, duc DE GUISE, et de Catherine de Clèves, à sa tante, la duchesse de Nevers, Henriette de Clèves.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e470">Fol. 56 et 58 • 40-41 Lettres, signées d'un monogramme, de CATHERINE DE CLEVES, duchesse DE GUISE, à sa soeur, Henriette de Clèves, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e478">Fol. 60 • 42 Lettre de FRANÇOISE D'ORLEANS, seconde femme de Louis de Bourbon, prince DE CONDE, à la duchesse de Nevers, Henriette de Clèves. 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e486">Fol. 61 et suiv • 43-46 Lettres d' « ANNE D'EST », duchesse DE GUISE, au duc et à la duchesse de Nevers, François de Clèves et Marguerite de Bourbon. 1549 et 1557.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e494">Fol. 67 • 47 Lettre de « HENRIETTE DE CLEVES », duchesse DE NEVERS, à « Mr de Reugny ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e505">Fol. 68 et 70 • 48-49 Lettres, signées d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à Henriette de Clèves, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e513">Fol. 72 et 73 • 50-51 Lettres de « HENRIE DE SAVOYE », duchesse DE MAYENNE, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e521">Fol. 74 et suiv • 52-56 Lettres de « CHARLES DE GONZAGUE et DE CLEVES » à sa mère, Henriette de Clèves, duchesse de Nevers. Deux sont datées, l'une de 1598, l'autre de 1599.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e529">Fol. 79 et suiv • 57-63 Lettres de « CHARLES DE LORRAINE », duc DE MAYENNE, à Henriette de Clèves, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e537">Fol. 90 et suiv • 64-72 Lettres de « FRANÇOYS DE CLEVES » à sa mère, Marguerite de Bourbon, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e548">Fol. 102 et 104 • 73-74 Lettres de « JAQUES DE CLEVES » à son père, François de Clèves, duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e556">Fol. 106 • 75 Lettre de « JEHANNE DE BRETAYNGNE » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e564">Fol. 108 • 76 Lettre de MARGUERITE DE BOURBON, duchesse DE NEVERS, à son mari, François de Clèves, duc de Nevers. 1558.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e572">Fol. 110 et 112 • 77-78 Lettres de « JAQUES DE CLEVES » à Marguerite de Bourbon, duchesse de Nevers, sa mère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e580">Fol. 114 • 79 Lettre de « J. D'ALBRET », baron DE MIOSSANS, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e588">Fol. 116 • 80 Lettre de « GUILLEMETE DE SARREBRUCHE », duchesse DE BOUILLON, à Marguerite de Bourbon, duchesse de Nevers. « De Reims, ce 28 de juillet » 1558.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e596">Fol. 117 • 81 Lettre de « Mme DE BOUILLON,... FRANÇOYSE DE BRESZE », comtesse DE MAULEVRIER, à François de Clèves, duc de Nevers. 1558.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e607">Fol. 118 • 82 Lettre d' « ADRIENNE DE TOUTEVILLE », veuve de François de Bourbon-Vendôme, comte de St-Paul, à sa nièce, Marguerite de Bourbon, duchesse de Nevers. « De Louvyers, 6 avril » 1558.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e618">Fol. 119 • 83 Lettre de « CHARLOTTE D'ALBRET », comtesse DE COMINGES, à sa soeur, Marie d'Albret, comtesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e626">Fol. 120 • 84 Lettre de « FRANÇOYS DE ROHAN » à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e634">Fol. 121 • 85 Lettre d'IMBERT DE LA PLATIERE, seigneur DE « BORDILLON », à François de Clèves, duc de Nevers. « De Villoutrey, ce 27 aust » 1559.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e642">86-87 Lettres de « JAQUES DE CLEVES », duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e648">Fol. 123 • 86 « à MrsSeguyer, president, et Lamoignon, conseiller en la court du parlement, à Paris... A Lion, ce 3 juillet » 1561.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e664">Fol. 124 • 87 à Marguerite de Bourbon, duchesse de Nevers, sa mère.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e678">Fol. 125 • 88 Lettre d'IMBERT DE LA PLATIERE, seigneur DE « BORDILLON », à Marguerite de Bourbon, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e686">Fol. 126 • 89 Lettre de « FRANÇOYSE DE BRESZE », comtesse DE MAULEVRIER, au duc de Nevers, François de Clèves.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e694">Fol. 127 • 90 Lettre de « DIANE DE LA MARCK » à sa belle-mère, Marguerite de Bourbon, duchesse de Nevers. 1559.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e702">Fol. 129 • 91 Lettre de « FRANÇOYSE » D'ALENÇON, duchesse DE VENDOME, à sa fille, Marguerite de Bourbon, duchesse de Nevers. 1550.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e710">Fol. 131 • 92 Lettre de « JAQUES DE CLEVES » à sa mère, Marguerite de Bourbon, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e718">Fol. 133 • 93 Lettre d' « ADRIENE DE TOUTEVILLE » à sa nièce, Marguerite de Bourbon, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e726">94 Lettre signée d'un monogramme.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e746">Fol. 136 • 95 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS, au duc de Nemours, J. de Savoie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e754">Fol. 137 • 96 Lettre de « FRANÇOIS D'ORLEANS », comte DE ST-PAUL, à Jacques de Savoie, duc de Nemours.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e765">Fol. 138 • 97 Lettre de CLAUDE DE LORRAINE, duc DE « CHEVREUSE », au duc de Nemours.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e773">Fol. 139 • 98 Lettre, signée : « BARBANSSON », adressée à Jacques de Savoie, duc de Nemours.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e781">Fol. 141 • 99 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e792">Fol. 142 et 143 • 100-101 Lettres de CATHERINE DE LORRAINE, duchesse DE NEVERS, à Henriette de Clèves, duchesse de Nevers, sa belle-mère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e800">Fol. 144 • 102 Lettre, signée d'un monogramme, de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e808">Fol. 145 • 103 Lettre de « CATHERINE D'ORLEANS », damoiselle DE LONGUEVILLE, à Henriette de Clèves, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e816">Fol. 146 • 104 Lettre de « CATERINE DE LORRAINE », duchesse DE NEVERS, à Henriette de Clèves, duchesse de Nevers, sa belle-mère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e824">Fol. 147 • 105 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves, duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e832">Fol. 148 • 106 Lettre, signée : « CHARLES G. et CLEVES », au duc de Nemours.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e843">Fol. 150 • 107 Lettre de HENRI DE LORRAINE, « marquis DE MOY », au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e851">Fol. 151 • 108 Lettre, signée : « CHARLES DE BOURBON », au duc de Nevers, son cousin. 1597.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e864">Fol. 152 • 109 Lettre de « FRANÇOYS DE BOURBON », prince DE CONTI, à la duchesse de Nevers. « Au camp d'Amyens, ce 20 septembre 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e875">Fol. 153 • 110 Lettre de « MARIE DE BOURBON », duchesse DE LONGUEVILLE, à la duchesse de Nevers, Henriette de Clèves. « De Trye, ce 11 aoust 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e883">Fol. 154 et suiv • 111-121 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves, duchesse de Nevers. La lettre 120 est signée d'un monogramme. De 1597 à 1599.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e894">Fol. 165 • 122 Lettre de CHARLES EMMANUEL, duc DE SAVOIE, à Henriette de Clèves, duchesse de Nevers. « Turin, 13 mars 1599 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e902">Fol. 167 • 123 Lettre de « HENRIETTE » DE CLEVES, duchesse DE NEVERS, au duc de Nevers, Charles de Gonzague et de Clèves, son fils. « De Sens, ce 30 septembre 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057761_d0e910">Fol. 168 • 124 Lettre du roi HENRI IV au duc de Nevers, Charles de Gonzague et de Clèves. « Au camp devant Amiens, le 10 juillet 1597 ». Copie.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4711 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc577619&Cote=Français 4711&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4711 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9533</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales, adressées aux ducs et duchesses de Nevers, durant la seconde moitié du XVI<emph render="super">e</emph> siècle, principalement.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Albret, Charlotte d', comtesse de Rethel. • Lettre.</p>
+<p>Albret, J. d', baron de Miossens. • Lettre.</p>
+<p>Albret, Jeanne d', reine de Navarre. • Actes et lettres.</p>
+<p>Alençon, Françoise d', duchesse de Bourbon-Vendôme. • Actes.</p>
+<p>Bouillon, Guillemette de Sarrebrück, duchesse de. • Lettres.</p>
+<p>Bourbon, Catherine de, fille die Charles, duc de Vendôme. • Lettres.</p>
+<p>Bourbon, Charles de [Charles X], cardinal. • Actes et lettres.</p>
+<p>Bourbon, Éléonore de, princesse d'Orange. • Lettres.</p>
+<p>Bourdillon de La Platière, Imbert, maréchal de France. • Actes et lettres.</p>
+<p>Bretagne, Jeanne de. • Actes.</p>
+<p>Chevreuse, Claude de Lorraine, duc de. • Actes et lettres.</p>
+<p>Condé, Françoise d'Orléans, princesse de. • Lettres.</p>
+<p>Conti, François de Bourbon, prince de. • Lettres.</p>
+<p>Conti, Louise-Marguerite de Lorraine, princesse de.</p>
+<p>Conti, Louise-Marguerite de Lorraine, princesse de. • Lettres.</p>
+<p>Estouteville, Adrienne d', dame de Saint-Pol. • Lettres.</p>
+<p>Gonzague, Famille de.</p>
+<p>Guise, Anne d'Este, duc de Nemours et de. • Actes et lettres.</p>
+<p>Guise, Antoinette de Bourbon, duchesse de. • Lettres.</p>
+<p>Guise, Catherine de Clèves, duchesse de. • Lettres.</p>
+<p>Guise, Louis Ier de Lorraine, cardinal de. • Lettres.</p>
+<p>Guise, Louis II de Lorraine, cardinal de. • Actes et lettres.</p>
+<p>Harlay de Sancy, Nicolas de. • Lettres.</p>
+<p>La Marck, Diane de. • Lettre.</p>
+<p>Longueville, Catherine de Gonzague, duchesse de. • Lettres.</p>
+<p>Longueville, Catherine d'Orléans de. • Lettres.</p>
+<p>Longueville, Marie de Bourbon, duchesse d'Estouteville, de Nevers, puis de. • Lettres.</p>
+<p>Lorraine, Renée de Bourbon, duchesse de. • Lettre.</p>
+<p>Marguerite de Navarre, Marguerite d'Angoulême, duchesse d'Alençon, reine de Navarre. • Actes et lettres.</p>
+<p>Mayenne, Charles de Lorraine, marquis, puis duc de. • Actes et lettres.</p>
+<p>Mayenne, Henriette de Savoie, duchesse de. • Lettres.</p>
+<p>Navarre, Catherine de Bourbon, princesse de, soeur de Henri IV. • Lettres.</p>
+<p>Nevers, Catherine de Lorraine, duchesse de. • Lettres.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, François Ier de Clèves, duc de. • Actes et lettres.</p>
+<p>Nevers, Henriette de Clèves, duchesse de. • Actes et lettres.</p>
+<p>Nevers, Jacques de Clèves, duc de. • Lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Nevers, Marguerite de Bourbon, duchesse de. • Lettres.</p>
+<p>Orléans, François d', comte de Saint-Pol. • Lettres.</p>
+<p>Poitiers, Diane de, duchesse de Valentinois. • Lettres.</p>
+<p>Retz, Claude-Catherine de Clermont-Tonnerre, maréchale de. • Lettres.</p>
+<p>Rohan, François de, sr de Gié. • Lettres.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e278');">1 Lettre de « MARGUERITE » DE VALOIS, soeur de François Ier, roi de France, reine de Navarre, à la duchesse de Nevers, Marguerite de Bourbon. 1548.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e289');">2 Lettre de « JEHANNE » D'ALBRET, « reine DE NAVARRE », à Marguerite de Bourbon, duchesse de Nevers. 1559.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e297');">3-4 Lettres d' « ANTHOINETTE DE BOURBON, [duchesse] douairière DE GUYSE », à Marguerite de Bourbon, duchesse de Nevers, sa nièce. 1555 et 1558.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e305');">5 Lettre de « CATHERINE DE BOURBON »-VENDOME à Marguerite de Bourbon, duchesse de Nevers, sa soeur.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e313');">6-7 Lettres d' « ANTHOINETTE DE BOURBON », duchesse douairière DE GUISE, à Marguerite de Bourbon, duchesse de Nevers, sa nièce. Vers 1559.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e321');">8 Lettre de « RENEE DE BOURBON » à Marguerite de Bourbon, duchesse de Nevers, sa soeur.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e329');">9 Lettre d'« ÉLEONOR DE BOURBON » à Henriette de Clèves, duchesse de Nevers, sa nièce. « A Fontevraust, ce 24 octobre 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e337');">10 Lettre de « MARIE DE BOURBON », duchesse DE LONGUEVILLE, à Catherine de Lorraine-Mayenne, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e345');">11 Lettre de « MARGUERITE DE FRANCE », fille de François Ier, roi de France, « duchesse de Berry », à la duchesse de Nevers, Marguerite de Bourbon. 1554.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e361');">12-13 Lettres de « CATHERINE DE BOURBON »-VENDOME à Marguerite de Bourbon, duchesse de Nevers, sa soeur.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e369');">14 Lettre de « CHARLES, cardinal DE BOURBON »-VENDOME, à Marguerite de Bourbon, duchesse de Nevers, sa soeur.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e377');">15 Lettre de « C[HARLES], cardinal DE BOURBON »-CONDE, à « Mr de Monthelon ». 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e388');">16-26 Lettres de « DIANNE DE POYTIERS, [duchesse] DE VALENTINOYS », au duc et à la duchesse de Nevers, François de Clèves et Marguerite de Bourbon.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e396');">27 Lettre, signée : « POYTIERS », adressée à « Mr le tresoryer [Rob] ertet, seygneur d'Aluye ». Laditelettre commence (fol. 34) par : « Mr le tresoryer, je ssuys yssy aryvé à Ors, et mayn m'an voys coucher à Ssuse avecques toute ma bande... » et finissant par : «... se que ples desyrés. A Hours, le 17e d'ost. Vostre bon frere et amy. Poytiers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e414');">28-29 Lettres de « LOYS, cardinal DE GUYSE », au duc et à la duchesse de Nevers. La seconde lettre est datée de « Villiers Costeretz, le 6 may 1557 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e422');">30-32 Lettres de « CATTERINE » DE GONZAGUE et DE CLEVES, duchesse DE LONGUEVILLE, à la duchesse de Nevers, Henriette de Clèves, sa mère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e430');">33 Lettre de « HENRIETTE » DE CLEVES, duchesse DE NEVERS, à son fils, Charles de Gonzague et de Clèves, duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e438');">34-35 Lettres de « CHARLES, cardinal DE VENDOSME », à sa soeur, Marguerite de Bourbon, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e446');">36 Lettre de « FRANÇOYS DE CLEVES » à sa mère, Marguerite de Bourbon, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e454');">37 Lettre de « HENRIETTE DE GONZAGUE et DE CLEVES » à la duchesse de Nevers, sa mère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e462');">38-39 Lettres, signées d'un monogramme, de LOUISE DE LORRAINE, fille de Henri de Lorraine, duc DE GUISE, et de Catherine de Clèves, à sa tante, la duchesse de Nevers, Henriette de Clèves.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e470');">40-41 Lettres, signées d'un monogramme, de CATHERINE DE CLEVES, duchesse DE GUISE, à sa soeur, Henriette de Clèves, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e478');">42 Lettre de FRANÇOISE D'ORLEANS, seconde femme de Louis de Bourbon, prince DE CONDE, à la duchesse de Nevers, Henriette de Clèves. 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e486');">43-46 Lettres d' « ANNE D'EST », duchesse DE GUISE, au duc et à la duchesse de Nevers, François de Clèves et Marguerite de Bourbon. 1549 et 1557.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e494');">47 Lettre de « HENRIETTE DE CLEVES », duchesse DE NEVERS, à « Mr de Reugny ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e505');">48-49 Lettres, signées d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à Henriette de Clèves, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e513');">50-51 Lettres de « HENRIE DE SAVOYE », duchesse DE MAYENNE, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e521');">52-56 Lettres de « CHARLES DE GONZAGUE et DE CLEVES » à sa mère, Henriette de Clèves, duchesse de Nevers. Deux sont datées, l'une de 1598, l'autre de 1599.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e529');">57-63 Lettres de « CHARLES DE LORRAINE », duc DE MAYENNE, à Henriette de Clèves, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e537');">64-72 Lettres de « FRANÇOYS DE CLEVES » à sa mère, Marguerite de Bourbon, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e548');">73-74 Lettres de « JAQUES DE CLEVES » à son père, François de Clèves, duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e556');">75 Lettre de « JEHANNE DE BRETAYNGNE » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e564');">76 Lettre de MARGUERITE DE BOURBON, duchesse DE NEVERS, à son mari, François de Clèves, duc de Nevers. 1558.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e572');">77-78 Lettres de « JAQUES DE CLEVES » à Marguerite de Bourbon, duchesse de Nevers, sa mère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e580');">79 Lettre de « J. D'ALBRET », baron DE MIOSSANS, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e588');">80 Lettre de « GUILLEMETE DE SARREBRUCHE », duchesse DE BOUILLON, à Marguerite de Bourbon, duchesse de Nevers. « De Reims, ce 28 de juillet » 1558.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e596');">81 Lettre de « Mme DE BOUILLON,... FRANÇOYSE DE BRESZE », comtesse DE MAULEVRIER, à François de Clèves, duc de Nevers. 1558.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e607');">82 Lettre d' « ADRIENNE DE TOUTEVILLE », veuve de François de Bourbon-Vendôme, comte de St-Paul, à sa nièce, Marguerite de Bourbon, duchesse de Nevers. « De Louvyers, 6 avril » 1558.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e618');">83 Lettre de « CHARLOTTE D'ALBRET », comtesse DE COMINGES, à sa soeur, Marie d'Albret, comtesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e626');">84 Lettre de « FRANÇOYS DE ROHAN » à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e634');">85 Lettre d'IMBERT DE LA PLATIERE, seigneur DE « BORDILLON », à François de Clèves, duc de Nevers. « De Villoutrey, ce 27 aust » 1559.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e642');">86-87 Lettres de « JAQUES DE CLEVES », duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e678');">88 Lettre d'IMBERT DE LA PLATIERE, seigneur DE « BORDILLON », à Marguerite de Bourbon, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e686');">89 Lettre de « FRANÇOYSE DE BRESZE », comtesse DE MAULEVRIER, au duc de Nevers, François de Clèves.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e694');">90 Lettre de « DIANE DE LA MARCK » à sa belle-mère, Marguerite de Bourbon, duchesse de Nevers. 1559.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e702');">91 Lettre de « FRANÇOYSE » D'ALENÇON, duchesse DE VENDOME, à sa fille, Marguerite de Bourbon, duchesse de Nevers. 1550.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e710');">92 Lettre de « JAQUES DE CLEVES » à sa mère, Marguerite de Bourbon, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e718');">93 Lettre d' « ADRIENE DE TOUTEVILLE » à sa nièce, Marguerite de Bourbon, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e726');">94 Lettre signée d'un monogramme.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e746');">95 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS, au duc de Nemours, J. de Savoie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e754');">96 Lettre de « FRANÇOIS D'ORLEANS », comte DE ST-PAUL, à Jacques de Savoie, duc de Nemours.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e765');">97 Lettre de CLAUDE DE LORRAINE, duc DE « CHEVREUSE », au duc de Nemours.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e773');">98 Lettre, signée : « BARBANSSON », adressée à Jacques de Savoie, duc de Nemours.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e781');">99 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e792');">100-101 Lettres de CATHERINE DE LORRAINE, duchesse DE NEVERS, à Henriette de Clèves, duchesse de Nevers, sa belle-mère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e800');">102 Lettre, signée d'un monogramme, de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e808');">103 Lettre de « CATHERINE D'ORLEANS », damoiselle DE LONGUEVILLE, à Henriette de Clèves, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e816');">104 Lettre de « CATERINE DE LORRAINE », duchesse DE NEVERS, à Henriette de Clèves, duchesse de Nevers, sa belle-mère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e824');">105 Lettre de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves, duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e832');">106 Lettre, signée : « CHARLES G. et CLEVES », au duc de Nemours.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e843');">107 Lettre de HENRI DE LORRAINE, « marquis DE MOY », au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e851');">108 Lettre, signée : « CHARLES DE BOURBON », au duc de Nevers, son cousin. 1597.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e864');">109 Lettre de « FRANÇOYS DE BOURBON », prince DE CONTI, à la duchesse de Nevers. « Au camp d'Amyens, ce 20 septembre 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e875');">110 Lettre de « MARIE DE BOURBON », duchesse DE LONGUEVILLE, à la duchesse de Nevers, Henriette de Clèves. « De Trye, ce 11 aoust 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e883');">111-121 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves, duchesse de Nevers. La lettre 120 est signée d'un monogramme. De 1597 à 1599.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e894');">122 Lettre de CHARLES EMMANUEL, duc DE SAVOIE, à Henriette de Clèves, duchesse de Nevers. « Turin, 13 mars 1599 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e902');">123 Lettre de « HENRIETTE » DE CLEVES, duchesse DE NEVERS, au duc de Nevers, Charles de Gonzague et de Clèves, son fils. « De Sens, ce 30 septembre 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057761_d0e910');">124 Lettre du roi HENRI IV au duc de Nevers, Charles de Gonzague et de Clèves. « Au camp devant Amiens, le 10 juillet 1597 ». Copie.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

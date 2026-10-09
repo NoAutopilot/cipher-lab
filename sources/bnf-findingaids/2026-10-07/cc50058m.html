@@ -1,0 +1,505 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050058">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050058">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3608
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050058_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058">Français 3608 • Anc. 9097 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e94">1 Lettre de « HENRY [IV]... à mon compere le connestable de France... Ce XVIme may, à Fontenebleau... 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e103">Fol. 3 • 2 Lettre de CATHERINE DE BOURBON, duchesse de Bar, au roi Henri IV.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e116">Fol. 5 • 3 Lettre de CATHERINE DE BOURBON, « duchesse de Bar,... à mon cousin monsieur le conestable... Novembre 1595 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e124">Fol. 7 • 4 Lettre de « JAQUES [Ier, roi d'Angleterre]... à mon cousin le duc de Mommorency,... A nostre Palais de Westmestre, ce 16me de may 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e148">Fol. 9 • 5 Lettre de « LOUYS FRIDERIC, prince de Wirttemberg... à monsieur le duc de Montmorancy, connestable de France... De Londres, ce 18/28 may 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e161">Fol. 11 • 6 Lettre de COME II DE MEDICIS, « gran duca di Toscana... all' illmo... duca di Montmoranci,... Da Fiorenza, il di 26 di maggio 1610 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e182">Fol. 14 • 7 Lettre de « CHRESTIENNE [DE LORRAINE]... grand' duchesse de Toscane... à monsieur le connestable de France... De Florence, le 27 de mai 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e195">Fol. 16 • 8 Lettre de « l'infante... ISABEL [gouvernante des Pays-Bas]... à mon cousin le ducq de Montmorency,... A Mariement, le XIIIIe juillet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e216">Fol. 18 • 9 Lettre de « l'infante... ISABEL,... à mon cousin le ducq de Montmorency,... A Bruxelles, le VIe septembre 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e237">Fol. 20 • 10 Lettre de « CHARLES DE BOURBON,... comte DE SOISSONS,... à monsieur le duc de Montmorancy,... A Paris, ce 14e aoust 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e253">Fol. 22 • 11 Lettre de CATHERINE DE BOURBON, duchesse de Bar, « à mon cousin monsieur le conestable ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e266">Fol. 25 • 12 Lettre d'«ERNESTUS, marchio Brandenburgensis » et de « WOLFFGANGUS WILHELMUS, comes palatinus Rheni... à monsieur le president Jannin,... Dusseldorpii, 15/25 maii anno 1610 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e284">Fol. 28 • 13 Lettre de « DIANE l[égitimée] DE FRANCE, [duchesse] D'ANGOULESME,... à monsieur le connestable de France, mon frere... Janvier 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e297">Fol. 31 • 14 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce VIIIe septembre 1605 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e308">Fol. 34 • 15 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce XXVIIIe decembre 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e324">Fol. 36 • 16 Lettre de « HENRY DE BOURBON,... prince [DE CONDE]... à monsieur le connestable... Juing 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e342">Fol. 38 • 17 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce premier avril 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e355">Fol. 40 • 18 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce XIIIIe avril 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e366">Fol. 42 • 19 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à monsieur le conestable ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e379">Fol. 44 • 20 Lettre de « LOUYSE DE BUDOS [duchesse DE MONTMORENCY]... à... son mari... Janvier 1596 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e397">Fol. 46 • 21 Lettre de « DIANE l[égitimée] DE FRANCE, [duchesse] D'ANGOULESME,... à monsieur le connestable mon frere... De vostre belle maison, ce mecredy 28e juillet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e413">Fol. 48 • 22 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce dernier may 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e421">Fol. 50 • 23 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce XVIIe aoust 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e432">Fol. 52 • 24 Lettre du maréchal JEAN « D'AUMONT,... au roy... A Tours, le XXIIIIe janvier 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e448">Fol. 55 • 25 Lettre de HENRY DE LA TOUR, vicomte DE « TURENNE,... au roy de Navarre... A Turenne, ce 12e may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e469">Fol. 57 • 26 Lettre de M. DE « SANCY,... à monseigneur le duc de Montmorancy,... A Geneve, ce XXVe janvier 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e490">Fol. 60 • 27 Lettre de « FRANCESCO SPINOLA,... all' illmo... duca di Montmoransi,... Da Mantova, li 24 di luglio 1596 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e511">Fol. 63 • 28 Lettre de « madamoiselle [CHARLOTTE-MARGUERITE] DE MONTMORENCY,... à monsieur le conestable... Novembre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e529">Fol. 65 • 29 Lettre de « M. l'admiral [CHARLES] DE MONTMORENCY,... à monsieur le duc de Montmorency, pair et connestable de France... A Paris, ce Ve mars 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e550">Fol. 67 • 30 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Montmorency ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e563">Fol. 69 • 31 Lettre de M. DE « BARRAULT,... à monseigneur le connetable... De Cambray, se XI julliet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e576">Fol. 71 • 32 Avis relatif à l'entreprise méditée par « M. de Soubise,... de forcer et prendre la maison ou estoit madame et madamoiselle de Chemilly ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e597">Fol. 73 • 33 Lettre de NICOLAS « DE NEUFVILLE » DE VILLEROI au connétable de Montmorency.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e610">Fol. 75 • 34 Lettre de « HENRY DE BOURBON,... prince [DE CONDE]... à monsieur le connestable... May 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e623">Fol. 77 • 35 Lettre de « DIANE l[égitimée] DE FRANCE, [duchesse] D'ANGOULESME,... à monsieur mon frere, monsieur le connestable... A Paris, ce XVe juillet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e639">Fol. 79 • 36 Lettre des « gens tenans la court de parlement de Bretaigne... à monseigneur le duc de Monmorency,... De Rennes, ce VIIme avril 1599 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e650">Fol. 81 • 37 Lettre du « mareschal DE BOUILHON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... A Paris, ce 26e dissembre... 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e661">Fol. 83 • 38 Lettre du maréchal « duc DE BOUILHON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... A Fontenebeleau, ce 14e avril 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e677">Fol. 85 • 39 Lettre du maréchal duc « DE BOUILLON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... De Paris, ce 6e septembre 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e698">Fol. 87 • 40 Lettre du « mareschal DE BOUILLON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... Juillet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e716">Fol. 89 • 41 Lettre du « mareschal DE BOUILLON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorancy,... A Roye, ce lundy a sis heures du soir... juillet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e734">Fol. 91 • 42 Lettre du « cardinale SAN GIORGIO,... all' illmo... Sor gran contestabile di Franza... Di Roma, a XX di decembre [MD]LX ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e758">Fol. 94 • 43 Lettre de M. « P. PHELIPEAUX [DE PONTCHARTRAIN] à monseigneur le duc de Montmorancy,... A Paris, ce XXIe aoust 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e779">Fol. 96 • 44 Lettre du « cardinal DE BONSY,... à monseigneur le duc de Montmorency,... De Paris, ce 27e aoust 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e800">Fol. 98 • 45 Lettre de « DIANE l[égitimée] DE FRANCE [duchesse] D'ANGOULESME,... à monsieur le connestable mon frere... Au boys de Vincennes, ce XXVIIIe juillet 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e816">Fol. 100 • 46 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Montmorency,... Du camp devant Amiens, le VIIe de juillet 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e827">Fol. 102 • 47 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Montmorancy,... De Conflans, le XIe de aoust 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e838">Fol. 104 • 48 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Montmorancy,... De Escoui, le VIIe de fevrier 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e849">Fol. 106 • 49 Lettre de M. DE « PUYSIEULX,... à monseigneur le duc de Montmorancy,... De Fontainebleau, ce XVIIIe juillet 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e865">Fol. 108 • 50 Lettre de « SIGONGNE,... à monseigneur le connestable... A Diepe, le XXIe may 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e881">Fol. 111 • 51 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le XXVIIe d'avril 1600 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e892">Fol. 113 • 52 Lettre de « LOYS DE ROHAN, [duc] DE MONBAZON,... à monsieur le duc de Montmorancy,... Au Verger, ce IIIIe octobre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e908">Fol. 115 • 53 Lettre des « gens des trois estatz du pays de Languedoc... à monseigneur le connestable... De Pezenas, ce IXe nouvembre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e924">Fol. 118 • 54 Lettre de « J[EAN-] J[ACQUES] DE MESMES, [Sr] DE ROISSY,... à monseigneur le duc de Montmorency,... Du premier 8bre 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e943">Fol. 120 • 55 Lettre de M. « DU MAURIER [ambassadeur à La Haye]... à monsieur Jannin,... De La Haye, ce 30e mars 1621 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e959">Fol. 122 • 56 Lettre de « R[ENE] DE BARNEVELT » et de « GUILLIAUME DE BARNEVELT,... à monseigneur Jannin,... Haye, ce 30 de mars 1621 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e977">Fol. 124 • 57 Lettre de M. « DE HARLAY,... à monsieur le duc de Montmorency,... De Chalis, ce VIIIe octobre 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e993">Fol. 126 • 58 Lettre de MM. DE « MAUGIRON » et DE « CHEVERNY,... à monseigneur le duc de Montmorancy,... D'Avignon, ce XXIe mars 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e1009">Fol. 128 • 59 Minute d'une lettre du connétable HENRI DE MONTMORANCY au roi. « De Pezenas... aoust 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e1022">Fol. 130 • 60 Minute d'une lettre du connétable HENRI DE MONTMORANCY « à monsieur le premier president de la cour de parlement... Escript à Amyens... mars 1598 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e1030">Fol. 132 • 61 « Minutte d'ordonnance » du connétable DE « MONTMORANCY,... pour ce quy regarde à donner le mot en la ville de Thoul... Faict à Paris, le XVe septembre mil six cens neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e1046">Fol. 134 • 62 « Coppie de la commission baillée » par le connétable « HENRY, duc DE MONTMORANCY,... à Mr le commissaire Le Clerc, contenant despartement pour faire les monstres aux gens de guerre que le roy entretient en Holande... Donné à Fontainebleau... juing mil six cens neuf ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050058_d0e1067">Fol. 137 • 63 Lettres d'abolition accordées par « HENRY » IV à « Henry de La Tour, duc de Bouillon,... Donné à Donchery, au moys d'apvril, l'an de grace mil six cens six ». Copie.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3608 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50058m&Cote=Français 3608&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9057413v">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 15118 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50058m&Cote=MF 15118&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3608 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9097</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècles</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 15118. Cote de la matrice (pour commander une reproduction) : R 149515.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9057413v" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9057413v.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9057413v.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Angoulême, Diane de France, duchesse de Montmorency, puis d'. • Lettres.</p>
+<p>Bouillon, Henri de La Tour d'Auvergne, duc de, maréchal de France. • Actes et lettres.</p>
+<p>Brandebourg. • Notes et pièces diverses.</p>
+<p>Bretagne. • Parlement.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Montmorency, Henri Ier, comte de Damville, puis duc de, connétable de France. • Lettres et actes.</p>
+<p>Navarre, Catherine de Bourbon, princesse de, soeur de Henri IV. • Lettres.</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e94');">1 Lettre de « HENRY [IV]... à mon compere le connestable de France... Ce XVIme may, à Fontenebleau... 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e103');">2 Lettre de CATHERINE DE BOURBON, duchesse de Bar, au roi Henri IV.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e116');">3 Lettre de CATHERINE DE BOURBON, « duchesse de Bar,... à mon cousin monsieur le conestable... Novembre 1595 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e124');">4 Lettre de « JAQUES [Ier, roi d'Angleterre]... à mon cousin le duc de Mommorency,... A nostre Palais de Westmestre, ce 16me de may 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e148');">5 Lettre de « LOUYS FRIDERIC, prince de Wirttemberg... à monsieur le duc de Montmorancy, connestable de France... De Londres, ce 18/28 may 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e161');">6 Lettre de COME II DE MEDICIS, « gran duca di Toscana... all' illmo... duca di Montmoranci,... Da Fiorenza, il di 26 di maggio 1610 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e182');">7 Lettre de « CHRESTIENNE [DE LORRAINE]... grand' duchesse de Toscane... à monsieur le connestable de France... De Florence, le 27 de mai 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e195');">8 Lettre de « l'infante... ISABEL [gouvernante des Pays-Bas]... à mon cousin le ducq de Montmorency,... A Mariement, le XIIIIe juillet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e216');">9 Lettre de « l'infante... ISABEL,... à mon cousin le ducq de Montmorency,... A Bruxelles, le VIe septembre 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e237');">10 Lettre de « CHARLES DE BOURBON,... comte DE SOISSONS,... à monsieur le duc de Montmorancy,... A Paris, ce 14e aoust 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e253');">11 Lettre de CATHERINE DE BOURBON, duchesse de Bar, « à mon cousin monsieur le conestable ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e266');">12 Lettre d'«ERNESTUS, marchio Brandenburgensis » et de « WOLFFGANGUS WILHELMUS, comes palatinus Rheni... à monsieur le president Jannin,... Dusseldorpii, 15/25 maii anno 1610 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e284');">13 Lettre de « DIANE l[égitimée] DE FRANCE, [duchesse] D'ANGOULESME,... à monsieur le connestable de France, mon frere... Janvier 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e297');">14 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce VIIIe septembre 1605 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e308');">15 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce XXVIIIe decembre 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e324');">16 Lettre de « HENRY DE BOURBON,... prince [DE CONDE]... à monsieur le connestable... Juing 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e342');">17 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce premier avril 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e355');">18 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce XIIIIe avril 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e366');">19 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à monsieur le conestable ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e379');">20 Lettre de « LOUYSE DE BUDOS [duchesse DE MONTMORENCY]... à... son mari... Janvier 1596 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e397');">21 Lettre de « DIANE l[égitimée] DE FRANCE, [duchesse] D'ANGOULESME,... à monsieur le connestable mon frere... De vostre belle maison, ce mecredy 28e juillet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e413');">22 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce dernier may 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e421');">23 Lettre de « DIANE l[égitimée] DE FRANCE,... à monsieur le connestable mon frere... A Paris, ce XVIIe aoust 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e432');">24 Lettre du maréchal JEAN « D'AUMONT,... au roy... A Tours, le XXIIIIe janvier 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e448');">25 Lettre de HENRY DE LA TOUR, vicomte DE « TURENNE,... au roy de Navarre... A Turenne, ce 12e may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e469');">26 Lettre de M. DE « SANCY,... à monseigneur le duc de Montmorancy,... A Geneve, ce XXVe janvier 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e490');">27 Lettre de « FRANCESCO SPINOLA,... all' illmo... duca di Montmoransi,... Da Mantova, li 24 di luglio 1596 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e511');">28 Lettre de « madamoiselle [CHARLOTTE-MARGUERITE] DE MONTMORENCY,... à monsieur le conestable... Novembre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e529');">29 Lettre de « M. l'admiral [CHARLES] DE MONTMORENCY,... à monsieur le duc de Montmorency, pair et connestable de France... A Paris, ce Ve mars 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e550');">30 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Montmorency ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e563');">31 Lettre de M. DE « BARRAULT,... à monseigneur le connetable... De Cambray, se XI julliet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e576');">32 Avis relatif à l'entreprise méditée par « M. de Soubise,... de forcer et prendre la maison ou estoit madame et madamoiselle de Chemilly ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e597');">33 Lettre de NICOLAS « DE NEUFVILLE » DE VILLEROI au connétable de Montmorency.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e610');">34 Lettre de « HENRY DE BOURBON,... prince [DE CONDE]... à monsieur le connestable... May 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e623');">35 Lettre de « DIANE l[égitimée] DE FRANCE, [duchesse] D'ANGOULESME,... à monsieur mon frere, monsieur le connestable... A Paris, ce XVe juillet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e639');">36 Lettre des « gens tenans la court de parlement de Bretaigne... à monseigneur le duc de Monmorency,... De Rennes, ce VIIme avril 1599 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e650');">37 Lettre du « mareschal DE BOUILHON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... A Paris, ce 26e dissembre... 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e661');">38 Lettre du maréchal « duc DE BOUILHON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... A Fontenebeleau, ce 14e avril 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e677');">39 Lettre du maréchal duc « DE BOUILLON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... De Paris, ce 6e septembre 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e698');">40 Lettre du « mareschal DE BOUILLON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorency,... Juillet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e716');">41 Lettre du « mareschal DE BOUILLON,... HENRY DE LA TOUR,... à monsieur le duc de Montmorancy,... A Roye, ce lundy a sis heures du soir... juillet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e734');">42 Lettre du « cardinale SAN GIORGIO,... all' illmo... Sor gran contestabile di Franza... Di Roma, a XX di decembre [MD]LX ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e758');">43 Lettre de M. « P. PHELIPEAUX [DE PONTCHARTRAIN] à monseigneur le duc de Montmorancy,... A Paris, ce XXIe aoust 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e779');">44 Lettre du « cardinal DE BONSY,... à monseigneur le duc de Montmorency,... De Paris, ce 27e aoust 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e800');">45 Lettre de « DIANE l[égitimée] DE FRANCE [duchesse] D'ANGOULESME,... à monsieur le connestable mon frere... Au boys de Vincennes, ce XXVIIIe juillet 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e816');">46 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Montmorency,... Du camp devant Amiens, le VIIe de juillet 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e827');">47 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monseigneur le duc de Montmorancy,... De Conflans, le XIe de aoust 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e838');">48 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Montmorancy,... De Escoui, le VIIe de fevrier 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e849');">49 Lettre de M. DE « PUYSIEULX,... à monseigneur le duc de Montmorancy,... De Fontainebleau, ce XVIIIe juillet 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e865');">50 Lettre de « SIGONGNE,... à monseigneur le connestable... A Diepe, le XXIe may 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e881');">51 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le XXVIIe d'avril 1600 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e892');">52 Lettre de « LOYS DE ROHAN, [duc] DE MONBAZON,... à monsieur le duc de Montmorancy,... Au Verger, ce IIIIe octobre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e908');">53 Lettre des « gens des trois estatz du pays de Languedoc... à monseigneur le connestable... De Pezenas, ce IXe nouvembre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e924');">54 Lettre de « J[EAN-] J[ACQUES] DE MESMES, [Sr] DE ROISSY,... à monseigneur le duc de Montmorency,... Du premier 8bre 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e943');">55 Lettre de M. « DU MAURIER [ambassadeur à La Haye]... à monsieur Jannin,... De La Haye, ce 30e mars 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e959');">56 Lettre de « R[ENE] DE BARNEVELT » et de « GUILLIAUME DE BARNEVELT,... à monseigneur Jannin,... Haye, ce 30 de mars 1621 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e977');">57 Lettre de M. « DE HARLAY,... à monsieur le duc de Montmorency,... De Chalis, ce VIIIe octobre 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e993');">58 Lettre de MM. DE « MAUGIRON » et DE « CHEVERNY,... à monseigneur le duc de Montmorancy,... D'Avignon, ce XXIe mars 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e1009');">59 Minute d'une lettre du connétable HENRI DE MONTMORANCY au roi. « De Pezenas... aoust 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e1022');">60 Minute d'une lettre du connétable HENRI DE MONTMORANCY « à monsieur le premier president de la cour de parlement... Escript à Amyens... mars 1598 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e1030');">61 « Minutte d'ordonnance » du connétable DE « MONTMORANCY,... pour ce quy regarde à donner le mot en la ville de Thoul... Faict à Paris, le XVe septembre mil six cens neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e1046');">62 « Coppie de la commission baillée » par le connétable « HENRY, duc DE MONTMORANCY,... à Mr le commissaire Le Clerc, contenant despartement pour faire les monstres aux gens de guerre que le roy entretient en Holande... Donné à Fontainebleau... juing mil six cens neuf ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050058_d0e1067');">63 Lettres d'abolition accordées par « HENRY » IV à « Henry de La Tour, duc de Bouillon,... Donné à Donchery, au moys d'apvril, l'an de grace mil six cens six ». Copie.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,494 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057760">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057760">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4710
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057760_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760">Français 4710 • Anc. 9532 • Recueil de lettres originales, adressées au duc et à la duchesse de Nevers, Louis de Gonzague et Henriette de Clèves.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e215">Fol. 1 et 3 • 1-2 Lettres de « HENRY DE BOURBON », prince DE CONDE, à ses beau-frère et belle-soeur, le duc et la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e223">Fol. 5 • 3 Lettre de « HENRY DE BOURBON, [duc] DE MONTPENSIER », à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e231">Fol. 6 • 4 Lettre de « FRANÇOYS DE BOURBON »-CONDE, prince DE CONTI, à Henriette de Gonzague, duchesse de Nevers, sa cousine.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e239">Fol. 7 et suiv • 5-9 Lettres de « FRANÇOIS D'ORLEANS »-LONGUEVILLE, comte de St-Paul, au duc de Nevers, Louis de Gonzague.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e250">10-21 Lettres de « HENRY D'ORLEANS », duc DE LONGUEVILLE.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e256">Fol. 14 • 10 « au roy » Henri IV.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e267">Fol. 15 et suiv • 11-19 au duc de Nevers, Louis de Gonzague, son beau-père.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e278">Fol. 24 • 20 à la duchesse de Nevers, sa bellemère.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e289">Fol. 25 • 21 audit duc de Nevers.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e303">Fol. 26 et suiv • 22-30 Lettres de « PHILIPPE EMANUEL DE LORRAINE », duc DE MERCOEUR, au duc de Nevers, Louis de Gonzague.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e311">Fol. 41 et suiv • 31-35 Lettres de « CHARLES DE LORRAINE », duc DE MAYENNE, au duc de Nevers, Louis de Gonzague, et à la duchesse de Nevers, Henriette de Clèves.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e322">Fol. 49 • 36 Lettre de « CHARLES DE LORRAYNE », duc DE GUISE, à la duchesse de Nevers, Henriette de Clèves.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e333">37-46 Lettres de « CHARLES DE LORRAINE », duc DE MAYENNE.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e339">Fol. 50 et suiv • 37-45 à la duchesse de Nevers, Henriette de Clèves.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e350">Fol. 65 • 46 à Charles de Gonzague, duc de Nevers.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e367">Fol. 66 • 47 Lettre de « CHARLES DE LORRAYNE », duc DE GUISE, au duc de Nevers, Louis de Gonzague.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e375">Fol. 67 • 48 Lettre de « CHARLES DE LORRAINE », duc DE MAYENNE, à la duchesse de Nevers, Henriette de Clèves.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e383">Fol. 69 et suiv • 49-53 Lettres de CHARLES DE GONZAGUE, duc DE NEVERS, à « Mr d'Incarville, conseiller general de [la] maison » de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e397">Fol. 75 • 54 Lettre de « FRANÇOIS DE LORRAINE », comte DE VAUDEMONT, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e408">Fol. 77 • 55 Lettre de CHARLES DE BOURBON-CONDE, « cardinal de Vandosme », au duc de Nevers, Louis de Gonzague. « 15 settembre 1585 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e416">Fol. 79 • 56 Lettre de J. DE FERRIERES-MALIGNY, « vidame de Chartres », à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e424">Fol. 81 • 57 Lettre de HENRI DE LORRAINE, « marquis DE MOY », au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e432">Fol. 82 • 58 Lettre de HENRI DE LORRAINE, duc DE « MAYENNE », à Charles de Gonzague, duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e440">Fol. 83 • 59 Lettre de « FRANÇOIS DE LORRAINE », comte DE VAUDEMONT, à Charles de Gonzague, duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e448">Fol. 84 • 60 Lettre de HENRI D'ORLEANS, duc DE « LONGUEVILLE », à son oncle, Charles de Gonzague, duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e456">61 Lettre, signée d'un monogramme, adressée, semblet-il, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e469">Fol. 87 • 62 Lettre de « CHARLES DE LUXEMBOURG », comte DE BRIENNE, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e477">Fol. 88 • 63 Lettre de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e485">Fol. 90 • 64 Lettre du Sr DE CHANLEMIS à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e496">Fol. 91 • 65 Lettre de « FRANÇOYS DE CLEVES ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e504">Fol. 92 • 66 Lettre de FRANÇOIS D'ORLEANS, « comte DE S. POL », à Louis de Gonzague, duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e512">Fol. 93 • 67 Lettre de HENRI D'ORLEANS, duc DE LONGUEVILLE, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e523">Fol. 94 • 68 Lettre, signée : « MONTMORENCY », adressée à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e531">Fol. 95 • 69 Lettre de CHARLES DE LORRAINE, duc DE « GUYSE », au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e539">70 Lettre, signée : « CLERMONT », adressée au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e559">Fol. 98 • 71 Lettre de « FRANÇOIS DE LUXEMBOURG », duc DE PINEY, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e567">Fol. 99 et 100 • 72-73 Lettres de « J. LOUIS DE LA VALLETTE », duc D'ÉPERNON, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e575">Fol. 101 et 102 • 74-75 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e583">Fol. 103 • 76 Lettre, signée : « REINS », adressée au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e591">Fol. 104 • 77 Lettre de HENRI D'ORLEANS, duc DE « LONGUEVILLE », au duc de Nevers, Charles de Gonzague, son oncle.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e599">Fol. 105 • 78 Lettre de « HENRY DE LORRAINE » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e610">Fol. 106 • 79 Lettre de « CLAUDE DE GUISE » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e618">Fol. 108 et 109 • 80-81 Lettres de HENRI D'ORLEANS, duc de « LONGUEVILLE », au duc de Nevers, Charles de Gonzague et de Clèves, son oncle.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e626">Fol. 110 • 82 Lettre non signée, adressée au duc de Nevers. On y lit : «... La royne mere du roi a tant faict que la paix c'est conclue aujourd'huy et le Te Deum chanté... Mrs de Guise vous peuvent mander au long le progres de ceste negotiation... Nemours, ce dimenche 7 juillet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e640">Fol. 111 • 83 Lettre de « HENRY DE LA TREMOILLE » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e648">84 Lettre non signée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e664">85 Lettre, signée d'un monogramme, adressée à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e687">Fol. 116 • 86 Lettre, signée d'un monogramme, adressée à la duchesse de Nevers. On y lit : «... estant en ce lieu de Lucé, d'où je vois partir des lettres de Mme la princesse, ma seur... ». La princesse dont il est ici question paraît être la princesse de Conti, Jeanne de Coëme, dame de Bonnestable et de Lucé, décédée le 26 décembre 1601.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e698">Fol. 118 • 87 Lettre de HENRI D'ORLEANS, duc DE LONGUEVILLE, au duc de Nevers, Charles de Gonzague, son oncle.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e706">Fol. 119 • 88 Lettre de HENRI D'ORLEANS, duc DE LONGUEVILLE, au duc de Nevers, Louis de Gonzague, son beau-père.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e714">Fol. 121 • 89 Lettre de « LOYS DE GUISE » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e722">Fol. 122 • 90 Lettre, signée d'un monogramme, de F. D'ORLEANS, comte DE ST-PAUL (voir l'article 66), adressée au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e733">91 Lettre signée : « CLERMONT », sans adresse.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e749">Fol. 124 et suiv • 92-104 Lettres de CHARLES DE GONZAGUE et DE CLEVES au duc (fol. 128) et à la duchesse de Nevers, ses père et mère. La troisième lettre n'est qu'un post-scriptum ajouté à une lettre signée : « VALERAN », écrite durant le siège d'Amiens, en 1597.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e757">105 Lettre, signée d'un monogramme, adressée à « Mme de Rez ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e773">Fol. 139 et suiv • 106-108 Lettres de CHARLES DE GONZAGUE et DE CLEVES à la duchesse de Nevers, sa mère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e781">Fol. 143 • 109 Lettre de HENRI D'ORLEANS, duc DE « LONGUEVILLE », à Charles de Gonzague et de Clèves, duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057760_d0e789">Fol. 144 • 110 Copie d'une lettre du roi HENRI IV à la duchesse de Nevers, Henriette de Clèves.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4710 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc577602&Cote=Français 4710&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4710 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9532</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales, adressées au duc et à la duchesse de Nevers, Louis de Gonzague et Henriette de Clèves.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Bourbon, Charles de [Charles X], cardinal. • Actes et lettres.</p>
+<p>Champlemys, De la Rivière de, bailli de Nivernais. • Actes et lettres.</p>
+<p>Condé, Henri Ier de Bourbon, prince de. • Actes et lettres.</p>
+<p>Conti, François de Bourbon, prince de. • Lettres.</p>
+<p>Épernon, Jean-Louis de Nogaret, duc d'. • Lettres.</p>
+<p>Ferrières-Maligny, J. de. • Lettre.</p>
+<p>Gonzague, Famille de.</p>
+<p>Guise, Charles IV de Lorraine, duc de. • Actes et lettres.</p>
+<p>Guise, Claude Ier de Lorraine, comte d'Aumale, duc de. • Actes et lettres.</p>
+<p>Guise, Louis Ier de Lorraine, cardinal de. • Lettres.</p>
+<p>Guise, Louis II de Lorraine, cardinal de. • Actes et lettres.</p>
+<p>La Trémoille, Henri de, duc de Thouars. • Lettres.</p>
+<p>Longueville, Henri Ier d'Orléans, duc de. • Lettres.</p>
+<p>Lorraine, François II, comte de Vaudémont, duc de. • Actes et lettres.</p>
+<p>Lorraine, Henri de, marquis de Moy. • Lettres.</p>
+<p>Luxembourg, Charles II de, comte de Brienne. • Lettres.</p>
+<p>Luxembourg, François de, duc de Piney. • Lettres.</p>
+<p>Mayenne, Charles de Lorraine, marquis, puis duc de. • Actes et lettres.</p>
+<p>Mayenne, Henri de Lorraine, duc d'Aiguillon et de. • Lettres et actes.</p>
+<p>Mercoeur, Philippe-Emmanuel de Lorraine, duc de. • Actes et lettres.</p>
+<p>Montmorency, Anne, duc de, connétable de France. • Lettres et actes.</p>
+<p>Montpensier, Henri de Bourbon, duc de. • Actes et lettres.</p>
+<p>Moy, Jean de, sr de la Meilleraye. • Lettres.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, François Ier de Clèves, duc de. • Actes et lettres.</p>
+<p>Nevers, Henriette de Clèves, duchesse de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Orléans, François d', comte de Saint-Pol. • Lettres.</p>
+<p>Reims. • Notes et pièces diverses.</p>
+<p>Retz, Claude-Catherine de Clermont-Tonnerre, maréchale de. • Lettres.</p>
+<p>Vignacourt, Alof de, grand-maître de Malte. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e215');">1-2 Lettres de « HENRY DE BOURBON », prince DE CONDE, à ses beau-frère et belle-soeur, le duc et la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e223');">3 Lettre de « HENRY DE BOURBON, [duc] DE MONTPENSIER », à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e231');">4 Lettre de « FRANÇOYS DE BOURBON »-CONDE, prince DE CONTI, à Henriette de Gonzague, duchesse de Nevers, sa cousine.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e239');">5-9 Lettres de « FRANÇOIS D'ORLEANS »-LONGUEVILLE, comte de St-Paul, au duc de Nevers, Louis de Gonzague.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e250');">10-21 Lettres de « HENRY D'ORLEANS », duc DE LONGUEVILLE.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e303');">22-30 Lettres de « PHILIPPE EMANUEL DE LORRAINE », duc DE MERCOEUR, au duc de Nevers, Louis de Gonzague.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e311');">31-35 Lettres de « CHARLES DE LORRAINE », duc DE MAYENNE, au duc de Nevers, Louis de Gonzague, et à la duchesse de Nevers, Henriette de Clèves.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e322');">36 Lettre de « CHARLES DE LORRAYNE », duc DE GUISE, à la duchesse de Nevers, Henriette de Clèves.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e333');">37-46 Lettres de « CHARLES DE LORRAINE », duc DE MAYENNE.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e367');">47 Lettre de « CHARLES DE LORRAYNE », duc DE GUISE, au duc de Nevers, Louis de Gonzague.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e375');">48 Lettre de « CHARLES DE LORRAINE », duc DE MAYENNE, à la duchesse de Nevers, Henriette de Clèves.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e383');">49-53 Lettres de CHARLES DE GONZAGUE, duc DE NEVERS, à « Mr d'Incarville, conseiller general de [la] maison » de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e397');">54 Lettre de « FRANÇOIS DE LORRAINE », comte DE VAUDEMONT, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e408');">55 Lettre de CHARLES DE BOURBON-CONDE, « cardinal de Vandosme », au duc de Nevers, Louis de Gonzague. « 15 settembre 1585 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e416');">56 Lettre de J. DE FERRIERES-MALIGNY, « vidame de Chartres », à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e424');">57 Lettre de HENRI DE LORRAINE, « marquis DE MOY », au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e432');">58 Lettre de HENRI DE LORRAINE, duc DE « MAYENNE », à Charles de Gonzague, duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e440');">59 Lettre de « FRANÇOIS DE LORRAINE », comte DE VAUDEMONT, à Charles de Gonzague, duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e448');">60 Lettre de HENRI D'ORLEANS, duc DE « LONGUEVILLE », à son oncle, Charles de Gonzague, duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e456');">61 Lettre, signée d'un monogramme, adressée, semblet-il, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e469');">62 Lettre de « CHARLES DE LUXEMBOURG », comte DE BRIENNE, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e477');">63 Lettre de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e485');">64 Lettre du Sr DE CHANLEMIS à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e496');">65 Lettre de « FRANÇOYS DE CLEVES ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e504');">66 Lettre de FRANÇOIS D'ORLEANS, « comte DE S. POL », à Louis de Gonzague, duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e512');">67 Lettre de HENRI D'ORLEANS, duc DE LONGUEVILLE, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e523');">68 Lettre, signée : « MONTMORENCY », adressée à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e531');">69 Lettre de CHARLES DE LORRAINE, duc DE « GUYSE », au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e539');">70 Lettre, signée : « CLERMONT », adressée au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e559');">71 Lettre de « FRANÇOIS DE LUXEMBOURG », duc DE PINEY, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e567');">72-73 Lettres de « J. LOUIS DE LA VALLETTE », duc D'ÉPERNON, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e575');">74-75 Lettres de CHARLES DE GONZAGUE et DE CLEVES, duc DE NEVERS, à sa mère, Henriette de Clèves.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e583');">76 Lettre, signée : « REINS », adressée au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e591');">77 Lettre de HENRI D'ORLEANS, duc DE « LONGUEVILLE », au duc de Nevers, Charles de Gonzague, son oncle.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e599');">78 Lettre de « HENRY DE LORRAINE » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e610');">79 Lettre de « CLAUDE DE GUISE » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e618');">80-81 Lettres de HENRI D'ORLEANS, duc de « LONGUEVILLE », au duc de Nevers, Charles de Gonzague et de Clèves, son oncle.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e626');">82 Lettre non signée, adressée au duc de Nevers. On y lit : «... La royne mere du roi a tant faict que la paix c'est conclue aujourd'huy et le Te Deum chanté... Mrs de Guise vous peuvent mander au long le progres de ceste negotiation... Nemours, ce dimenche 7 juillet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e640');">83 Lettre de « HENRY DE LA TREMOILLE » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e648');">84 Lettre non signée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e664');">85 Lettre, signée d'un monogramme, adressée à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e687');">86 Lettre, signée d'un monogramme, adressée à la duchesse de Nevers. On y lit : «... estant en ce lieu de Lucé, d'où je vois partir des lettres de Mme la princesse, ma seur... ». La princesse dont il est ici question paraît être la princesse de Conti, Jeanne de Coëme, dame de Bonnestable et de Lucé, décédée le 26 décembre 1601.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e698');">87 Lettre de HENRI D'ORLEANS, duc DE LONGUEVILLE, au duc de Nevers, Charles de Gonzague, son oncle.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e706');">88 Lettre de HENRI D'ORLEANS, duc DE LONGUEVILLE, au duc de Nevers, Louis de Gonzague, son beau-père.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e714');">89 Lettre de « LOYS DE GUISE » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e722');">90 Lettre, signée d'un monogramme, de F. D'ORLEANS, comte DE ST-PAUL (voir l'article 66), adressée au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e733');">91 Lettre signée : « CLERMONT », sans adresse.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e749');">92-104 Lettres de CHARLES DE GONZAGUE et DE CLEVES au duc (fol. 128) et à la duchesse de Nevers, ses père et mère. La troisième lettre n'est qu'un post-scriptum ajouté à une lettre signée : « VALERAN », écrite durant le siège d'Amiens, en 1597.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e757');">105 Lettre, signée d'un monogramme, adressée à « Mme de Rez ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e773');">106-108 Lettres de CHARLES DE GONZAGUE et DE CLEVES à la duchesse de Nevers, sa mère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e781');">109 Lettre de HENRI D'ORLEANS, duc DE « LONGUEVILLE », à Charles de Gonzague et de Clèves, duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057760_d0e789');">110 Copie d'une lettre du roi HENRI IV à la duchesse de Nevers, Henriette de Clèves.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

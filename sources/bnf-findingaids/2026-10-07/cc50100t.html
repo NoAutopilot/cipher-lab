@@ -1,0 +1,502 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050100">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050100">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3649
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050100_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100">Français 3649 • Anc. 9138 • Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e79">1 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XIXme cetambre 1601, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e88">Fol. 2 • 2 Lettre de « HENRY [IV]... à madame de Montglat,... Ce lundy au soyr, à XI heures, Ve setambre, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e99">Fol. 3 • 3 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XVIIme may, au Plessys-les-Tours ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e110">Fol. 4 • 4 Lettre de « HENRY [prince DE GALLES]... à monsieur et frere monsieur le dauphin... Nonsuch, 22 juiellet 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e123">Fol. 5 • 5 Lettre de « HENRY [IV]... à madame de Montglat,... Ce mardy, à VII heures du matyn, Vme setambre, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e134">Fol. 7 • 6 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XXe mars, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e145">Fol. 9 • 7 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XIXme octobre, à Nemours ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e156">Fol. 10 • 8 Lettre de « HENRY [IV]... à madame de Monglat,... Ce mardy à quatre heures apres midy. IXme mars, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e167">Fol. 11 • 9 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XVIIIe juylet au soyr, à Vylyers Coteres ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e178">Fol. 12 • 10 Lettre de « HENRY [IV]... à madame de Monglat,... Ce IXe setambre, à Monceaus ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e189">Fol. 13 • 11 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XVIe juyllet, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e200">Fol. 15 • 12 Lettre de « HENRY [IV]... à madame de Monglat,... Ce samedy à deus heures apres midy, VIIIme juyllet, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e211">Fol. 16 • 13 Lettre de « HENRY [IV]... à madame de Monglat,... Ce 4me janvyer, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e222">Fol. 17 • 14 Lettre de « HENRY [IV]... à madame de Montglat,... Ce 2me aut, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e233">Fol. 18 • 15 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXXe octobre, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e244">Fol. 19 • 16 Lettre de « HENRY [IV]... à madame de Monglat,... Ce mercredy à huyt heures du matyn, XIIIme cetambre, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e255">Fol. 20 • 17 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XXIIme mars, à Mets ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e266">Fol. 21 • 18 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXe octobre, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e277">Fol. 22 • 19 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXIXe juyllet, à Monceaus ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e288">Fol. 23 • 20 Lettre de « HENRY [IV]... à madame de Montglat,... Ce VIme juyllet, à Monceaus ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e299">Fol. 24 • 21 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XXIXme aut, à Monceaus ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e310">Fol. 25 • 22 Lettre de « HENRY [IV]... à madame de Montglat,... Ce samedy à cet heures du soyr, Xe juyn, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e321">Fol. 26 • 23 Lettre de « HENRY [IV]... à madame de Monglat,... Ce 3me may, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e332">Fol. 27 • 24 Lettre de « HENRY [IV]... à madame de Montglat,... Ce lundy matyn, XIIme cetambre, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e343">Fol. 28 • 25 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXVme fevryer, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e354">Fol. 29 • 26 Lettre de « HENRY [IV]... à madame de Montglat,... Ce mercredy à unse heures du soyr, XIme aut, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e365">Fol. 30 • 27 Lettre de « HENRY [IV]... à madame de Monglat,... Ce IXme juylet, à Parys, ce dymanche à IX heures du soyr ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e376">Fol. 31 • 28 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XIXme juyllet, à Monceaus ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e387">Fol. 32 • 29 Lettre de « HENRY [IV]... à madame de Monglat,... Ce dernyer novanbre, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e395">Fol. 33 • 30 Lettre de « HENRY [IV]... à madame de Montglat,... Ce samedy à mydy, XIIIIme aut, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e406">Fol. 34 • 31 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXIIIme novambre, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e417">Fol. 35 • 32 Lettre de « HENRY [IV]... à madame de Monglat,... Ce 5me avryl, à Fontaynebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e428">Fol. 36 • 33 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XVIme janvyer, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e439">Fol. 37 • 34 Lettre de « HENRY [IV]... à madame de Monglat,... Ce 2e aut, à Monceaus ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e450">Fol. 38 • 35 Lettre de « HENRY [IV]... à madame de Monglat,... Ce mercredy VIme avryl, à Fontenebleau »...</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e461">Fol. 39 • 36 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XIIme juyllet, à Monceaus ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e472">Fol. 40 • 37 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XVIme avril, à Fontenebleau ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e483">Fol. 41 • 38 Lettre de « HENRY [IV]... à madame de Monglat,... Ce dernyer de janvyer, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e491">Fol. 42 • 39 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXVIme desambre, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e502">Fol. 43 • 40 Lettre de « HENRY [IV]... à madame de Monglat,... Ce VIIIe octobre, à Parys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e513">Fol. 44 • 41 Lettre de « MARIE [DE MEDICIS]... à madame de Monglat,... De Paris, ce XIXe jour de septembre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e524">Fol. 45 et 46 • 42-43 Deux lettres de « LOUIS [XIII, dauphin]... à ma soeur ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e532">Fol. 47 et 48 • 44-45 Deux lettres d'«ELIZABETH [DE FRANCE]... à maman Gast » (Mme de Montglat).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e543">Fol. 49 • 46 Lettre d' « ANNE D'EST [duchesse DE NEMOURS]... à madame de Monglat ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e561">Fol. 50 • 47 Lettre d'«ELIZABETH [DE FRANCE]... à maman Ga » (Mme de Montglat).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e582">Fol. 51 • 48 Lettre de « MARIE [DE MEDICIS]... à made de Montglat,... De Paris, ce XIXe d'aoust 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e596">Fol. 52 • 49 Lettre de « MARIE [DE MEDICIS]... à madame de Montglas,... De Paris, ce XIIIIe janvier au soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e607">Fol. 53 • 50 Lettre de « CHRESTIENNE [DE LORRAINE], grande duchesse [DE TOSCANE]... à madame de Monglas,... A l'Ambrosiane, ce 29 octobre 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e620">Fol. 54 • 51 Lettre de « CHRESTIENNE [DE LORRAINE], grande duchesse [DE TOSCANE]... à madame de Mongla, gouvernante de monsieur le dauphin ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e633">Fol. 55 • 52 Lettre de « MARIE [DE MEDICIS]... à made de Montglas,... De Fontaynebleau, ce VIIe mars 1602 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e647">Fol. 56 • 53 Lettre de « MARIE [DE MEDICIS]... à ma fille... A Blois, le VIIe d'octobre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e658">Fol. 57 • 54 Lettre de « MARIE [DE MEDICIS]... à madame de Montglat,... De Poittiers, ce XXVe de may 1602 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e669">Fol. 58 • 55 Lettre de FERDINAND Ier DE MEDICIS, « gran duca di T[oscana]... al sermo principe, il dolfino di Francia... Di Firenze, li 8 d'agosto 1605 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e688">Fol. 59 • 56 Lettre de « CHRESTIENNE [DE LORRAINE], grande duchesse [DE TOSCANE]... à madame de Monglas, gouvernante de monseigr le dauphin, à Paris... De Florence, le XVIIe de decembre 1605 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e712">Fol. 60 • 57 Lettre de « MARIE [DE MEDICIS]... à made de Monglat,... Escrit à Fontaynebleau, le Xe jour d'octobre 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e731">Fol. 62 • 58 Lettre de « CATHERINE DE BOURBON, duchesse DE BAR, « à madame de Mongla ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e744">Fol. 64 • 59 Lettre de FRANÇOIS, « cardinal DE JOYEUSE,... à madame de Monglat,... De St Clou, ce 6 de septembre 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e765">Fol. 66 • 60 Lettre de « CATHERINE [DE BOURBON, duchesse DE BAR]... à madame de Mongla ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e778">Fol. 67 • 61 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Souvré,... De Fontainebleau, ce VIIIe jour de may 1604 au soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e794">Fol. 68 • 62 « Instruction pour le baptesme de monseigneur le dauphin » Louis XIII.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e812">Fol. 69 • 63 Lettre de « MARIE [DE MEDICIS]... à made de Montglat,... De Paris, ce jeudy au soir XXIIe janvier 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e826">Fol. 70 • 64 Lettre de « CHARLES [II, duc DE LORRAINE]... à monseigneur de Montglat,... A Bar, le XVe octobre 1597 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e847">Fol. 72 • 65 Réponses faites par LOUIS XIII aux félicitations à lui adressées à l'occasion de son avénement au trône, « 14 may 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050100_d0e855">Fol. 73 • 66 Formulaire de compliments, rédigé pour LOUIS XIII.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3649 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50100t&Cote=Français 3649&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10783186g">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MFICHE Français 3649 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50100t&Cote=MFICHE Français 3649&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3649 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9138</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècles</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfiche noir et blanc pour la cote Français 3649. Cote de consultation en salle de lecture : MFICHE Français 3649. Cote de la matrice (pour commander une reproduction) : S 52484.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution : S 52484.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10783186g" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b10783186g.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b10783186g.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="controlaccess-class">
+<p>Élisabeth de France, reine d'Espagne, femme de Philippe IV. • Lettres.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Marie de Médicis, reine de France. • Actes et lettres.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e79');">1 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XIXme cetambre 1601, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e88');">2 Lettre de « HENRY [IV]... à madame de Montglat,... Ce lundy au soyr, à XI heures, Ve setambre, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e99');">3 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XVIIme may, au Plessys-les-Tours ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e110');">4 Lettre de « HENRY [prince DE GALLES]... à monsieur et frere monsieur le dauphin... Nonsuch, 22 juiellet 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e123');">5 Lettre de « HENRY [IV]... à madame de Montglat,... Ce mardy, à VII heures du matyn, Vme setambre, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e134');">6 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XXe mars, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e145');">7 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XIXme octobre, à Nemours ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e156');">8 Lettre de « HENRY [IV]... à madame de Monglat,... Ce mardy à quatre heures apres midy. IXme mars, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e167');">9 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XVIIIe juylet au soyr, à Vylyers Coteres ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e178');">10 Lettre de « HENRY [IV]... à madame de Monglat,... Ce IXe setambre, à Monceaus ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e189');">11 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XVIe juyllet, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e200');">12 Lettre de « HENRY [IV]... à madame de Monglat,... Ce samedy à deus heures apres midy, VIIIme juyllet, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e211');">13 Lettre de « HENRY [IV]... à madame de Monglat,... Ce 4me janvyer, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e222');">14 Lettre de « HENRY [IV]... à madame de Montglat,... Ce 2me aut, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e233');">15 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXXe octobre, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e244');">16 Lettre de « HENRY [IV]... à madame de Monglat,... Ce mercredy à huyt heures du matyn, XIIIme cetambre, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e255');">17 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XXIIme mars, à Mets ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e266');">18 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXe octobre, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e277');">19 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXIXe juyllet, à Monceaus ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e288');">20 Lettre de « HENRY [IV]... à madame de Montglat,... Ce VIme juyllet, à Monceaus ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e299');">21 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XXIXme aut, à Monceaus ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e310');">22 Lettre de « HENRY [IV]... à madame de Montglat,... Ce samedy à cet heures du soyr, Xe juyn, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e321');">23 Lettre de « HENRY [IV]... à madame de Monglat,... Ce 3me may, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e332');">24 Lettre de « HENRY [IV]... à madame de Montglat,... Ce lundy matyn, XIIme cetambre, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e343');">25 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXVme fevryer, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e354');">26 Lettre de « HENRY [IV]... à madame de Montglat,... Ce mercredy à unse heures du soyr, XIme aut, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e365');">27 Lettre de « HENRY [IV]... à madame de Monglat,... Ce IXme juylet, à Parys, ce dymanche à IX heures du soyr ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e376');">28 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XIXme juyllet, à Monceaus ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e387');">29 Lettre de « HENRY [IV]... à madame de Monglat,... Ce dernyer novanbre, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e395');">30 Lettre de « HENRY [IV]... à madame de Montglat,... Ce samedy à mydy, XIIIIme aut, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e406');">31 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXIIIme novambre, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e417');">32 Lettre de « HENRY [IV]... à madame de Monglat,... Ce 5me avryl, à Fontaynebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e428');">33 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XVIme janvyer, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e439');">34 Lettre de « HENRY [IV]... à madame de Monglat,... Ce 2e aut, à Monceaus ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e450');">35 Lettre de « HENRY [IV]... à madame de Monglat,... Ce mercredy VIme avryl, à Fontenebleau »...</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e461');">36 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XIIme juyllet, à Monceaus ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e472');">37 Lettre de « HENRY [IV]... à madame de Montglat,... Ce XVIme avril, à Fontenebleau ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e483');">38 Lettre de « HENRY [IV]... à madame de Monglat,... Ce dernyer de janvyer, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e491');">39 Lettre de « HENRY [IV]... à madame de Monglat,... Ce XXVIme desambre, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e502');">40 Lettre de « HENRY [IV]... à madame de Monglat,... Ce VIIIe octobre, à Parys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e513');">41 Lettre de « MARIE [DE MEDICIS]... à madame de Monglat,... De Paris, ce XIXe jour de septembre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e524');">42-43 Deux lettres de « LOUIS [XIII, dauphin]... à ma soeur ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e532');">44-45 Deux lettres d'«ELIZABETH [DE FRANCE]... à maman Gast » (Mme de Montglat).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e543');">46 Lettre d' « ANNE D'EST [duchesse DE NEMOURS]... à madame de Monglat ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e561');">47 Lettre d'«ELIZABETH [DE FRANCE]... à maman Ga » (Mme de Montglat).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e582');">48 Lettre de « MARIE [DE MEDICIS]... à made de Montglat,... De Paris, ce XIXe d'aoust 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e596');">49 Lettre de « MARIE [DE MEDICIS]... à madame de Montglas,... De Paris, ce XIIIIe janvier au soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e607');">50 Lettre de « CHRESTIENNE [DE LORRAINE], grande duchesse [DE TOSCANE]... à madame de Monglas,... A l'Ambrosiane, ce 29 octobre 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e620');">51 Lettre de « CHRESTIENNE [DE LORRAINE], grande duchesse [DE TOSCANE]... à madame de Mongla, gouvernante de monsieur le dauphin ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e633');">52 Lettre de « MARIE [DE MEDICIS]... à made de Montglas,... De Fontaynebleau, ce VIIe mars 1602 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e647');">53 Lettre de « MARIE [DE MEDICIS]... à ma fille... A Blois, le VIIe d'octobre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e658');">54 Lettre de « MARIE [DE MEDICIS]... à madame de Montglat,... De Poittiers, ce XXVe de may 1602 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e669');">55 Lettre de FERDINAND Ier DE MEDICIS, « gran duca di T[oscana]... al sermo principe, il dolfino di Francia... Di Firenze, li 8 d'agosto 1605 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e688');">56 Lettre de « CHRESTIENNE [DE LORRAINE], grande duchesse [DE TOSCANE]... à madame de Monglas, gouvernante de monseigr le dauphin, à Paris... De Florence, le XVIIe de decembre 1605 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e712');">57 Lettre de « MARIE [DE MEDICIS]... à made de Monglat,... Escrit à Fontaynebleau, le Xe jour d'octobre 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e731');">58 Lettre de « CATHERINE DE BOURBON, duchesse DE BAR, « à madame de Mongla ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e744');">59 Lettre de FRANÇOIS, « cardinal DE JOYEUSE,... à madame de Monglat,... De St Clou, ce 6 de septembre 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e765');">60 Lettre de « CATHERINE [DE BOURBON, duchesse DE BAR]... à madame de Mongla ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e778');">61 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Souvré,... De Fontainebleau, ce VIIIe jour de may 1604 au soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e794');">62 « Instruction pour le baptesme de monseigneur le dauphin » Louis XIII.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e812');">63 Lettre de « MARIE [DE MEDICIS]... à made de Montglat,... De Paris, ce jeudy au soir XXIIe janvier 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e826');">64 Lettre de « CHARLES [II, duc DE LORRAINE]... à monseigneur de Montglat,... A Bar, le XVe octobre 1597 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e847');">65 Réponses faites par LOUIS XIII aux félicitations à lui adressées à l'occasion de son avénement au trône, « 14 may 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050100_d0e855');">66 Formulaire de compliments, rédigé pour LOUIS XIII.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

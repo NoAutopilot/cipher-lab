@@ -1,0 +1,466 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050104">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050104">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3652
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050104_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104">Français 3652 • Anc. 9141 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e74">1 Lettre de « don PHELIPPE [II], rey de España... al duque de Montmorency,... De Madrid, a quatro de enero M.D.LXI ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e80">Fol. 2 • 2 Lettre d'« ANT[ONIO] PEREZ,... al rey, mi señor ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e93">Fol. 3 • 3 Capitulation passée entre don Antonio Perez et le roi Henri IV, au mois de janvier 1597. « A Ruan, le 18 janvier 1597 ». En espagnol et en français. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e116">Fol. 6 • 4 Lettre d'« ANT[ONIO] PEREZ » à Henri IV. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e129">Fol. 9 • 5 Lettre d'« ANT[ONIO] PEREZ » à Henri IV. « A 18 de junio 1598 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e137">Fol. 11 • 6 Lettre d'« AN[TONIO] PEREZ,... al señor condestable... De Paris, a 26 de abril 1607 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e145">Fol. 14 • 7 « Memoria » d'«A[NTONIO] P[EREZ]... al señor Gil de Mesa, para hablaral condestable ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e158">Fol. 18 • 8 Lettre d'«ANT[ONIO] PEREZ,... sacro ac illmo privato consilio ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e174">Fol. 20 • 9 Lettre d'«ANT[ONIO] PEREZ,... al señor condestable de Francia ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e182">Fol. 22 • 10 Lettre d'«ANT[ONIO] PEREZ,... al señor condestable de Francia... A XI de otubre » 1604. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e190">Fol. 25 • 11 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A IIII° de septiembre » 1604. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e198">Fol. 28 • 12 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». Septembre 1604. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e206">Fol. 30 • 13 Lettre d'«ANT[ONIO] PEREZ » au connétable. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e214">Fol. 32 • 14 Lettre d'«ANT[ONIO] PEREZ » au Sr Maridat. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e225">Fol. 33 • 15 Lettre de « HENRY » IV au « sieur Anthonio Perez,... Escript à Fontainebleau, le dernier jour d'avril 1595 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e233">Fol. 35 • 16 Lettre d'«ANT[ONIO] PEREZ » à Henri IV. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e241">Fol. 37 • 17 Lettre d'«ANT[ONIO] PEREZ,... al condestable ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e249">Fol. 39 • 18 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia. A IIII° de junio ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e257">Fol. 61 et 63 • 19-20 Deux lettres d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e265">Fol. 66 • 21 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A V de mayo ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e273">Fol. 68, 90, 92 • 22-24 Trois lettres d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e281">Fol. 94 • 25 Lettre d'«ANT[ONIO] PEREZ » au connétable de France. « Febvrier 1603 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e289">Fol. 96 et 97 • 26-27 Deux lettres d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e297">Fol. 99 • 28 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». Octobre 1599. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e305">Fol. 101 • 29 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A 29 de noviembre 1597 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e313">Fol. 103 • 30 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e321">Fol. 104 • 31 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A IX de otubre ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e329">Fol. 106 • 32 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... Lunes, a IIII° de agosto 1608 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e337">Fol. 108 • 33 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e345">Fol. 110 • 34 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». Avril 1604. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e353">Fol. 112 • 35 « Memoria de ANT[ONIO] PEREZ al señor condestable ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e366">Fol. 115 • 36 Maximes d'État. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e384">Fol. 117 • 37 Lettre d'«ANT[ONIO] PEREZ » au Sr « Maridat ». Mars 1599. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e400">Fol. 119 • 38 Lettre d'«ANT[ONIO] PEREZ » au Sr « Maridat ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e411">Fol. 121 • 39 Lettre d'«ANT[ONIO] PEREZ » au Sr « de Maridad, primer secretario del condestable de Francia... A X de março ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e422">Fol. 123 • 40 Lettre d'«ANT[ONIO] PEREZ » au sieur de « Maridat ». Décembre 1601. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e430">Fol. 125 • 41 Lettre d'«ANT[ONIO] PEREZ,... al señor de Maridat. Nobre 1601 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e441">Fol. 127 • 42 Lettre d'«ANT[ONIO] PEREZ,... al señor de Maridad,... A VI de otubre 1604 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e449">Fol. 129, 131, 133 • 43-45 Trois lettres d'«ANT[ONIO] PEREZ » au Sr de Maridat. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e460">Fol. 134 • 46 Lettre d'«ANT[ONIO] P[EREZ] » au connétable de Montmorency. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e468">Fol. 136 • 47 Lettre d'«ANT[ONIO] PEREZ,... a mosr Castillon, primer secretario del condestable, mio señor ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e479">Fol. 138 • 48 Lettre d'«ANT[ONIO] PEREZ,... à mosieur Maridad ». Décembre 1601. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e487">Fol. 140 • 49 Lettre d'«ANT[ONIO] PEREZ,... à mosieur Maridat ». Octobre 1601. En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e495">Fol. 142, 144, 146, 148 • 50-53 Quatre lettres d'«ANT[ONIO] PEREZ,... à mosieur Maridad ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e503">Fol. 150 • 54 Lettre d'«ANT[ONIO] PEREZ,... à monsieur Maridad,... De Paris, a primero de novienbre 1603 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050104_d0e511">Fol. 151 • 55 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A 16 de agosto » 1600. En espagnol.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3652 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50104s&Cote=Français 3652&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3652 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9141</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècles</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>France. • Pitorre (Henri IV).</p>
+<p>Marie de Médicis, reine de France. • Actes et lettres.</p>
+<p>Perez, Antonio. • Lettres.</p>
+<p>Philippe II, roi d'Espagne. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e74');">1 Lettre de « don PHELIPPE [II], rey de España... al duque de Montmorency,... De Madrid, a quatro de enero M.D.LXI ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e80');">2 Lettre d'« ANT[ONIO] PEREZ,... al rey, mi señor ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e93');">3 Capitulation passée entre don Antonio Perez et le roi Henri IV, au mois de janvier 1597. « A Ruan, le 18 janvier 1597 ». En espagnol et en français. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e116');">4 Lettre d'« ANT[ONIO] PEREZ » à Henri IV. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e129');">5 Lettre d'« ANT[ONIO] PEREZ » à Henri IV. « A 18 de junio 1598 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e137');">6 Lettre d'« AN[TONIO] PEREZ,... al señor condestable... De Paris, a 26 de abril 1607 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e145');">7 « Memoria » d'«A[NTONIO] P[EREZ]... al señor Gil de Mesa, para hablaral condestable ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e158');">8 Lettre d'«ANT[ONIO] PEREZ,... sacro ac illmo privato consilio ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e174');">9 Lettre d'«ANT[ONIO] PEREZ,... al señor condestable de Francia ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e182');">10 Lettre d'«ANT[ONIO] PEREZ,... al señor condestable de Francia... A XI de otubre » 1604. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e190');">11 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A IIII° de septiembre » 1604. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e198');">12 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». Septembre 1604. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e206');">13 Lettre d'«ANT[ONIO] PEREZ » au connétable. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e214');">14 Lettre d'«ANT[ONIO] PEREZ » au Sr Maridat. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e225');">15 Lettre de « HENRY » IV au « sieur Anthonio Perez,... Escript à Fontainebleau, le dernier jour d'avril 1595 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e233');">16 Lettre d'«ANT[ONIO] PEREZ » à Henri IV. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e241');">17 Lettre d'«ANT[ONIO] PEREZ,... al condestable ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e249');">18 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia. A IIII° de junio ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e257');">19-20 Deux lettres d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e265');">21 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A V de mayo ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e273');">22-24 Trois lettres d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e281');">25 Lettre d'«ANT[ONIO] PEREZ » au connétable de France. « Febvrier 1603 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e289');">26-27 Deux lettres d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e297');">28 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». Octobre 1599. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e305');">29 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A 29 de noviembre 1597 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e313');">30 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e321');">31 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A IX de otubre ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e329');">32 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... Lunes, a IIII° de agosto 1608 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e337');">33 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e345');">34 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia ». Avril 1604. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e353');">35 « Memoria de ANT[ONIO] PEREZ al señor condestable ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e366');">36 Maximes d'État. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e384');">37 Lettre d'«ANT[ONIO] PEREZ » au Sr « Maridat ». Mars 1599. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e400');">38 Lettre d'«ANT[ONIO] PEREZ » au Sr « Maridat ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e411');">39 Lettre d'«ANT[ONIO] PEREZ » au Sr « de Maridad, primer secretario del condestable de Francia... A X de março ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e422');">40 Lettre d'«ANT[ONIO] PEREZ » au sieur de « Maridat ». Décembre 1601. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e430');">41 Lettre d'«ANT[ONIO] PEREZ,... al señor de Maridat. Nobre 1601 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e441');">42 Lettre d'«ANT[ONIO] PEREZ,... al señor de Maridad,... A VI de otubre 1604 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e449');">43-45 Trois lettres d'«ANT[ONIO] PEREZ » au Sr de Maridat. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e460');">46 Lettre d'«ANT[ONIO] P[EREZ] » au connétable de Montmorency. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e468');">47 Lettre d'«ANT[ONIO] PEREZ,... a mosr Castillon, primer secretario del condestable, mio señor ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e479');">48 Lettre d'«ANT[ONIO] PEREZ,... à mosieur Maridad ». Décembre 1601. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e487');">49 Lettre d'«ANT[ONIO] PEREZ,... à mosieur Maridat ». Octobre 1601. En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e495');">50-53 Quatre lettres d'«ANT[ONIO] PEREZ,... à mosieur Maridad ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e503');">54 Lettre d'«ANT[ONIO] PEREZ,... à monsieur Maridad,... De Paris, a primero de novienbre 1603 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050104_d0e511');">55 Lettre d'«ANT[ONIO] PEREZ,... al condestable de Francia... A 16 de agosto » 1600. En espagnol.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

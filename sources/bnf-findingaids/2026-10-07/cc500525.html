@@ -1,0 +1,466 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050052">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050052">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3602
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050052_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052">Français 3602 • Anc. 9091 • Recueil de lettres originales et d'une copie de lettre indiquée comme telle dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e71">1 Lettre d'ANNE DE LEVIS, duc DE « VANTADOUR,... à monsieur le duc de Montmorency, pair et connestable de France... De Pezenas, ce XXVe febvrier 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e80">Fol. 3 • 2 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Pezenas, le 5e mars 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e91">Fol. 5 • 3 Lettre du « Sr SERVOLES,... à monseigneur [le duc de Montmorency]... A Montpellier, ce XVIIe may 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e110">Fol. 8 • 4 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pesennas, ce dernier jour de may 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e118">Fol. 9 • 5 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... De Pesenas le dernier de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e131">Fol. 10 • 6 Lettre du duc DE « VANTADOUR,... à monsieur Maridat, secretaire de monsieur le connestable... A Pezenas, ce IIIIe janvier 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e142">Fol. 11 • 7 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce VIIIe janvier 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e153">Fol. 13 • 8 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce XXIe janvyer 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e164">Fol. 14 • 9 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Beziers, ce XXIIIe janvyer 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e175">Fol. 15 • 10 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Tholose, le XI febvrier 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e183">Fol. 16 • 11 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... De Tholose, le XIIe febvrier 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e194">Fol. 18 • 12 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce IXe mars 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e205">Fol. 20 • 13 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De La Voulte, ce XXVIIe mars 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e216">Fol. 21 • 14 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... De Monpellier, ce XXIIIIe mars 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e227">Fol. 23 • 15 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, le XXIXe juing 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e238">Fol. 25 • 16 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... De Paris, ce VIe juillet 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e249">Fol. 26 • 17 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, le VIe jour de juillet 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e260">Fol. 27 • 18 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, le XIIIe juillet 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e271">Fol. 28 • 19 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, le VIIIe jour de septembre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e282">Fol. 29 • 20 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A La Voulte, XXVIe octobre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e293">Fol. 30 • 21 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... De Beaucaire, ce XXIXe octobre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e304">Fol. 31 • 22 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De La Voulte, le VIIe de decembre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e315">Fol. 32 • 23 « Copie de la lettre escripte au roy » Henri IV par le duc « DE VENTADOUR,... De La Voulte, le VIIe de decembre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e326">Fol. 33 • 24 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VENTADOUR,... à monsieur le conetable... De La Voute, ce XIe de desanbre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e337">Fol. 34 • 25 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De La Voulte, ce XIe decembre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e348">Fol. 35 • 26 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXIIIIe mars 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e359">Fol. 36 • 27 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXVIIIe mars 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e370">Fol. 37 • 28 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce XXXe mars 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e381">Fol. 38 • 29 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Paris, ce XXXe de mars... 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e392">Fol. 40 • 30 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XIe juing 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e403">Fol. 41 • 31 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXIIIIe juing 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e414">Fol. 42 • 32 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le connestable... De Paris, ce XXIII de jen... 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e422">Fol. 43 • 33 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce XIIe julhet 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e433">Fol. 44 • 34 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXVIIe julhet 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e444">Fol. 45 • 35 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... Ce XII de jeuliet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e452">Fol. 46 • 36 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce IXe aoust 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e463">Fol. 47 • 37 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce mardy au soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e471">Fol. 48 • 38 Lettre du duc DE « VANTADOUR,... à monsieur de Castilhon, secretaire de monsieur le connestable... A Paris, ce sabmedy au soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e479">Fol. 49 • 39 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce sabmedi au soir ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e487">Fol. 50 • 40 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conestable... De Paris, ce 4 de octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e495">Fol. 52 • 41 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Narbonne, ce XXe novembre 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e506">Fol. 54 • 42 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Beaucaire, ce IIIIe jour de decembre 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e517">Fol. 55 • 43 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Beaucaire, ce VIIIe decembre 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e528">Fol. 56 • 44 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Beauquere, ce XXVIII de novambre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e536">Fol. 57 • 45 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Pesenas, ce XI desambre... 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e544">Fol. 58 • 46 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Pesennas, ce VIIe febvrier 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e555">Fol. 59 • 47 Lettre du duc DE « VANTADOUR,... à monsieur de Castilhon,... A Pezenas, ce Xe febvrier 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e566">Fol. 60 • 48 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce Xe febvrier 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e577">Fol. 61 • 49 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezennas, ce Xe febvrier 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e588">Fol. 63 • 50 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce Xe febvrier 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e599">Fol. 65 • 51 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VENTADOUR,... à monsieur Castilhon,... De Pezenas, ce XIIe febvrier 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e610">Fol. 66 • 52 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Pezenas, ce XVIIe mars 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e621">Fol. 67 • 53 Lettre du duc DE « VANTADOUR,... à monsieur de Castilhon,... A Pezenas, ce XVIIe mars 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e632">Fol. 68 • 54 Lettre du duc DE « VANTADOUR,... à monsieur de Castilhon,... De Pezenas, ce XXVIe mars 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e643">Fol. 69 • 55 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Pesenas, ce premier de may... 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e651">Fol. 70 • 56 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce XXVIIe avril 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e662">Fol. 71 • 57 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Lion, ce XVIIe juillet 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e673">Fol. 72 • 58 Lettre du duc DE « VANTADOUR,... à monsieur le conestable... De Meaux, ce 15 aoust 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e681">Fol. 73 • 59 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce XXIIe aoust 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e692">Fol. 74 • 60 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXIIe jung 1608 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e703">Fol. 75 • 61 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... De Pesenas, ce IIe de mey ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e714">Fol. 76 • 62 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce IIIe septembre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e725">Fol. 77 • 63 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce VIIIe octobre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e736">Fol. 78 • 64 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Fontainebleau, ce Xe octobre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e747">Fol. 79 • 65 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... A Paris, ce XXIIe octobre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e758">Fol. 80 • 66 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... Au St Esprit ce XVIe febvrier 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e772">Fol. 81 • 67 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Monmorancy,... Du St Esprit, ce XVIIe febvrier 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e786">Fol. 82 • 68 Lettre de « [MARGUERITE] DE MONTMORENCY, duchesse DE VANTADOUR,... à monsieur le conetable... De La Voulte, ce dise neuf janvier... 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e794">Fol. 83 • 69 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse DE VANTADOUR,... à monsieur Castilhon,... A La Voute le Xe mars 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e805">Fol. 84 • 70 Lettre du duc DE « VANTADOUR,... à monsieur... le duc de Montmorancy,... De La Voulte, ce XXIIe avril 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e816">Fol. 85 • 71 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse DE VANTADOUR,... à monsieur le conetable... De La Voute... apvril 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e824">Fol. 86 • 72 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse DE VANTADOUR,... à monsieur le conetable... De La Voute, ce II d'avril... 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e832">Fol. 87 • 73 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... A La Voulte, ce Ve may 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e843">Fol. 88 • 74 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... De La Voute, ce XXIII d'avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e851">Fol. 89 • 75 Lettre du duc DE « VANTADOUR,... à monsieur le connestable... De Monpellier, ce XXVIIe may... 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e862">Fol. 90 • 76 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Montpellier, le XXIIIe may 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e873">Fol. 91 • 77 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... De La Voute, ce XXIIII d'avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e881">Fol. 92 • 78 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... Du premier de juing, à Pezenas... 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e889">Fol. 93 • 79 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezennas, ce XVIIe jung 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e900">Fol. 94 • 80 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce XVIIIe juing 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e911">Fol. 95 • 81 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur Castilhon,... A Pesenas, le 4e juilhet... 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e922">Fol. 96 • 82 Lettre du duc DE « VANTADOUR,... à monsieur... le connestable... A Pezenas, ce XXIIIe juillet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e933">Fol. 97 • 83 Lettre du Sr « MARION,... à monseigneur... le duc de Ventadour,... De Pezenas, ce samedy à midy... juillet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e954">Fol. 98 • 84 Lettre de « M[ARGUERITE] DE MONTMORANCY,... duchesse DE VANTADOUR,... à monsieur... le conetable... De Pesenas, ce XX... juillet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e962">Fol. 100 • 85 Lettre du duc DE « VANTADOUR,... à monsieur... le duc de Montmorancy,... A Pezenas, ce VIIe aoust 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e973">Fol. 101 • 86 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur... le conetable... De Pesenas, ce VI d'aoust 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e981">Fol. 102 • 87 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur... le conetable... De Pesenas, ce XI de jeuliet ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e989">Fol. 103 • 88 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Pesenas, ce XVI d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e997">Fol. 104 • 89 Lettre de « M[ARGUERITE] DE MONTMORANCY, duchesse DE VANTADOUR,... à monsieur... le conetable... De Pesenas, ce XXI d'aoust ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e1005">Fol. 105 • 90 Lettre du duc DE « VANTADOUR,... à monsieur... le duc de Montmorency,... De Pezenas, ce IXe octobre 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050052_d0e1016">Fol. 106 • 91 Lettre du duc DE « VANTADOUR,... De Monpellier, ce XVIe apvril 1610 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3602 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc500525&Cote=Français 3602&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3602 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9091</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales et d'une copie de lettre indiquée comme telle dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>France. • Pitorre (Henri IV).</p>
+<p>Montmorency, Marguerite de, duchesse de Ventadour. • Lettres.</p>
+<p>Ventadour, Anne de Lévis, duc de. • Actes et lettres.</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e71');">1 Lettre d'ANNE DE LEVIS, duc DE « VANTADOUR,... à monsieur le duc de Montmorency, pair et connestable de France... De Pezenas, ce XXVe febvrier 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e80');">2 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Pezenas, le 5e mars 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e91');">3 Lettre du « Sr SERVOLES,... à monseigneur [le duc de Montmorency]... A Montpellier, ce XVIIe may 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e110');">4 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pesennas, ce dernier jour de may 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e118');">5 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... De Pesenas le dernier de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e131');">6 Lettre du duc DE « VANTADOUR,... à monsieur Maridat, secretaire de monsieur le connestable... A Pezenas, ce IIIIe janvier 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e142');">7 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce VIIIe janvier 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e153');">8 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce XXIe janvyer 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e164');">9 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Beziers, ce XXIIIe janvyer 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e175');">10 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Tholose, le XI febvrier 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e183');">11 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... De Tholose, le XIIe febvrier 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e194');">12 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce IXe mars 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e205');">13 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De La Voulte, ce XXVIIe mars 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e216');">14 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... De Monpellier, ce XXIIIIe mars 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e227');">15 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, le XXIXe juing 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e238');">16 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... De Paris, ce VIe juillet 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e249');">17 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, le VIe jour de juillet 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e260');">18 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, le XIIIe juillet 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e271');">19 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, le VIIIe jour de septembre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e282');">20 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A La Voulte, XXVIe octobre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e293');">21 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... De Beaucaire, ce XXIXe octobre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e304');">22 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De La Voulte, le VIIe de decembre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e315');">23 « Copie de la lettre escripte au roy » Henri IV par le duc « DE VENTADOUR,... De La Voulte, le VIIe de decembre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e326');">24 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VENTADOUR,... à monsieur le conetable... De La Voute, ce XIe de desanbre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e337');">25 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De La Voulte, ce XIe decembre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e348');">26 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXIIIIe mars 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e359');">27 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXVIIIe mars 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e370');">28 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce XXXe mars 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e381');">29 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Paris, ce XXXe de mars... 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e392');">30 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XIe juing 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e403');">31 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXIIIIe juing 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e414');">32 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le connestable... De Paris, ce XXIII de jen... 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e422');">33 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce XIIe julhet 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e433');">34 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXVIIe julhet 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e444');">35 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... Ce XII de jeuliet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e452');">36 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce IXe aoust 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e463');">37 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce mardy au soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e471');">38 Lettre du duc DE « VANTADOUR,... à monsieur de Castilhon, secretaire de monsieur le connestable... A Paris, ce sabmedy au soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e479');">39 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce sabmedi au soir ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e487');">40 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conestable... De Paris, ce 4 de octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e495');">41 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Narbonne, ce XXe novembre 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e506');">42 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Beaucaire, ce IIIIe jour de decembre 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e517');">43 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Beaucaire, ce VIIIe decembre 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e528');">44 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Beauquere, ce XXVIII de novambre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e536');">45 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Pesenas, ce XI desambre... 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e544');">46 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Pesennas, ce VIIe febvrier 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e555');">47 Lettre du duc DE « VANTADOUR,... à monsieur de Castilhon,... A Pezenas, ce Xe febvrier 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e566');">48 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce Xe febvrier 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e577');">49 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezennas, ce Xe febvrier 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e588');">50 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce Xe febvrier 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e599');">51 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VENTADOUR,... à monsieur Castilhon,... De Pezenas, ce XIIe febvrier 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e610');">52 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Pezenas, ce XVIIe mars 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e621');">53 Lettre du duc DE « VANTADOUR,... à monsieur de Castilhon,... A Pezenas, ce XVIIe mars 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e632');">54 Lettre du duc DE « VANTADOUR,... à monsieur de Castilhon,... De Pezenas, ce XXVIe mars 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e643');">55 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Pesenas, ce premier de may... 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e651');">56 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce XXVIIe avril 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e662');">57 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Lion, ce XVIIe juillet 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e673');">58 Lettre du duc DE « VANTADOUR,... à monsieur le conestable... De Meaux, ce 15 aoust 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e681');">59 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce XXIIe aoust 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e692');">60 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce XXIIe jung 1608 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e703');">61 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... De Pesenas, ce IIe de mey ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e714');">62 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Paris, ce IIIe septembre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e725');">63 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Paris, ce VIIIe octobre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e736');">64 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... A Fontainebleau, ce Xe octobre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e747');">65 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... A Paris, ce XXIIe octobre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e758');">66 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... Au St Esprit ce XVIe febvrier 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e772');">67 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Monmorancy,... Du St Esprit, ce XVIIe febvrier 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e786');">68 Lettre de « [MARGUERITE] DE MONTMORENCY, duchesse DE VANTADOUR,... à monsieur le conetable... De La Voulte, ce dise neuf janvier... 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e794');">69 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse DE VANTADOUR,... à monsieur Castilhon,... A La Voute le Xe mars 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e805');">70 Lettre du duc DE « VANTADOUR,... à monsieur... le duc de Montmorancy,... De La Voulte, ce XXIIe avril 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e816');">71 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse DE VANTADOUR,... à monsieur le conetable... De La Voute... apvril 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e824');">72 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse DE VANTADOUR,... à monsieur le conetable... De La Voute, ce II d'avril... 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e832');">73 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorency,... A La Voulte, ce Ve may 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e843');">74 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... De La Voute, ce XXIII d'avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e851');">75 Lettre du duc DE « VANTADOUR,... à monsieur le connestable... De Monpellier, ce XXVIIe may... 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e862');">76 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Montpellier, le XXIIIe may 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e873');">77 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur le conetable... De La Voute, ce XXIIII d'avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e881');">78 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... Du premier de juing, à Pezenas... 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e889');">79 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezennas, ce XVIIe jung 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e900');">80 Lettre du duc DE « VANTADOUR,... à monsieur le duc de Montmorancy,... De Pezenas, ce XVIIIe juing 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e911');">81 Lettre de « M[ARGUERITE] DE MONTMORANCY, [duchesse] DE VANTADOUR,... à monsieur Castilhon,... A Pesenas, le 4e juilhet... 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e922');">82 Lettre du duc DE « VANTADOUR,... à monsieur... le connestable... A Pezenas, ce XXIIIe juillet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e933');">83 Lettre du Sr « MARION,... à monseigneur... le duc de Ventadour,... De Pezenas, ce samedy à midy... juillet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e954');">84 Lettre de « M[ARGUERITE] DE MONTMORANCY,... duchesse DE VANTADOUR,... à monsieur... le conetable... De Pesenas, ce XX... juillet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e962');">85 Lettre du duc DE « VANTADOUR,... à monsieur... le duc de Montmorancy,... A Pezenas, ce VIIe aoust 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e973');">86 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur... le conetable... De Pesenas, ce VI d'aoust 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e981');">87 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur... le conetable... De Pesenas, ce XI de jeuliet ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e989');">88 Lettre de « M[ARGUERITE] DE MONTMORANCY,... à monsieur le conetable... De Pesenas, ce XVI d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e997');">89 Lettre de « M[ARGUERITE] DE MONTMORANCY, duchesse DE VANTADOUR,... à monsieur... le conetable... De Pesenas, ce XXI d'aoust ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e1005');">90 Lettre du duc DE « VANTADOUR,... à monsieur... le duc de Montmorency,... De Pezenas, ce IXe octobre 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050052_d0e1016');">91 Lettre du duc DE « VANTADOUR,... De Monpellier, ce XVIe apvril 1610 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

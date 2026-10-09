@@ -1,0 +1,465 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050056">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050056">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3606
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050056_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056">Français 3606 • Anc. 9095 • Recueil de lettres originales.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e66">1 Lettre de « HENRY [IV]... à mon compere le connestable de France... Le VIe avryl, à Paris... 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e75">Fol. 4 • 2 Lettre de « HENRY [IV]... à mon compere le connestable de France... Le XVIIIe may, à Fontenebleau... 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e86">Fol. 6 • 3 Lettre de « HENRY [IV]... à mon compere le connestable de France... Ce XIIe juyn, à Fontenebleau... 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e97">Fol. 8 • 4 Lettre de « HENRY [IV]... à mon compere le connestable de France... Le XXIIIIe avryl, à Fontenebleau... 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e108">Fol. 10 • 5 Lettre de « HENRY [IV]... à mon compere le connestable de France... Le XXIIIe cetambre, à Fontenebleau... 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e119">Fol. 12 • 6 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le 24 de avril 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e127">Fol. 14 • 7 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, ce IIIIe de may 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e138">Fol. 16 • 8 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le XVIe de mai 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e149">Fol. 18 • 9 Lettre de « la reyne... MARIE [DE MEDICIS]... à mon cousin le duc de Montmorency,... Escrit à Fontaynebleau, le XVIIIe jour de may 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e165">Fol. 20 • 10 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le 30 de may 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e173">Fol. 22 • 11 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le IIe de juin 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e184">Fol. 24 • 12 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorancy,... De Fontainebleau, le 13 de juin 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e192">Fol. 26 • 13 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorancy,... Escript à Fontainebleau, le XXVIIIe jour de juin 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e203">Fol. 28 • 14 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Moulins, ce premier juillet 1600 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e216">Fol. 31 • 15 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Villeroy, le premier jour de juilet 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e224">Fol. 33 • 16 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le 5 aoust 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e232">Fol. 35 • 17 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Conflans, le XIIIIe de aoust 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e243">Fol. 37 • 18 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Monceaux, ce 25 aoust 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e251">Fol. 39 • 19 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Paris, ce 19 aoust 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e259">Fol. 42 • 20 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Monceaux, ce 20 aoust 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e267">Fol. 45 • 21 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorancy,... Escript à Monceaulx, le XXIIe jour d'aoust 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e278">Fol. 47 • 22 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorancy,... Escript à Fontainebleau, le IIIe jour d'octobre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e289">Fol. 49 • 23 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le IIIe de octobre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e300">Fol. 51 • 24 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorency,... Escript à Tours, le cinqme jour d'octobre 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e311">Fol. 53 • 25 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Chambery, ce 19 8bre 1600 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e322">Fol. 55 • 26 Lettre de FRANÇOIS SAVARY DE « BREVES [ambassadeur à Rome]... à monseigneur le duc de Montmorency,... De Rome, ce 5me mars 1609 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e338">Fol. 58 • 27 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorancy,... Escript à Paris, le XXe jour de mars 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e349">Fol. 60 • 28 Lettre de « C[HARLES-] EMANUEL [Ier]... duc de Savoye... à monsieur mon cousin le duc de Montmorancy,... A Thurin, ce 14 d'avril 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e365">Fol. 62 • 29 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorency,... Escrit à Paris, le XVIIe jour d'avril 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e376">Fol. 64 • 30 Lettre des « capitoulz de Thoulouse, DUFOREZ, FRANINOS, PERRIERE, GAYRARD, DE RUDILLY, DUPUY,... à monseigneur de Montmorancy,... A Thoulouse, ce quatriesme juing 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e419">Fol. 66 • 31 Lettre des « gens tenants la cour de parlement de Thoulouse... à monseigneur de Montmorancy,... A Thoulouse, en parlement, le Vme juin 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e435">Fol. 69 • 32 Lettre d'ANTOINE DE « ROQUELAURE,... à monseigneur le connestable... De Bourdeaulx ce XIIe jung 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e451">Fol. 72 • 33 Lettre de l'«archiduc ALBERT [D'AUTRICHE, gouverneur des Pays-Bas]... à monseigneur le ducq de Montmorency,... A Mariemont, le XIIIIe juillet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e467">Fol. 74 • 34 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le XVIIIe de juilet 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e478">Fol. 76 • 35 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmoransi,... De Conflans, le 3 de aoust 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e486">Fol. 78 • 36 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le XXIIIIe de aoust 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e497">Fol. 80 • 37 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, ce XVe d'aoust, à neuf heures du soir, 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e508">Fol. 82 • 38 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le XVIIIe de aoust 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e519">Fol. 84 • 39 Lettre de M. « P. PHELIPEAUX,... à monsieur Castillon, secretaire de monseigneur le connestable... A Paris, ce XXVe aoust 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e535">Fol. 86 • 40 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Monmorancy,... De Paris, le cinqe de septembre 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e546">Fol. 88 • 41 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le 28 de 7bre au soir 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e557">Fol. 91 • 42 « Lettre de la reyne... MARIE [DE MEDICIS]... à mon cousin le duc de Montmorency,... Escrit à Paris, le XIIe jour de septembre 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e568">Fol. 94 • 43 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Montmorency,... De Paris, le 15 de 7bre 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e579">Fol. 97 • 44 Lettre de M. « P. PHELIPEAUX,... à monseigneur le duc de Montmorency,... A Paris, ce premier octobre 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050056_d0e587">Fol. 99 • 45 Lettre de « la reyne... MARIE [DE MEDICIS]... à mon cousin le duc de Montmorency,... Escrit à Paris, ce premier jour de octobre 1611 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3606 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc500564&Cote=Français 3606&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3606 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9095</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Forget, Pierre, sieur de Fresne. • Lettres et actes.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e66');">1 Lettre de « HENRY [IV]... à mon compere le connestable de France... Le VIe avryl, à Paris... 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e75');">2 Lettre de « HENRY [IV]... à mon compere le connestable de France... Le XVIIIe may, à Fontenebleau... 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e86');">3 Lettre de « HENRY [IV]... à mon compere le connestable de France... Ce XIIe juyn, à Fontenebleau... 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e97');">4 Lettre de « HENRY [IV]... à mon compere le connestable de France... Le XXIIIIe avryl, à Fontenebleau... 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e108');">5 Lettre de « HENRY [IV]... à mon compere le connestable de France... Le XXIIIe cetambre, à Fontenebleau... 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e119');">6 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le 24 de avril 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e127');">7 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, ce IIIIe de may 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e138');">8 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le XVIe de mai 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e149');">9 Lettre de « la reyne... MARIE [DE MEDICIS]... à mon cousin le duc de Montmorency,... Escrit à Fontaynebleau, le XVIIIe jour de may 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e165');">10 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le 30 de may 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e173');">11 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le IIe de juin 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e184');">12 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorancy,... De Fontainebleau, le 13 de juin 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e192');">13 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorancy,... Escript à Fontainebleau, le XXVIIIe jour de juin 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e203');">14 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Moulins, ce premier juillet 1600 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e216');">15 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Villeroy, le premier jour de juilet 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e224');">16 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le 5 aoust 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e232');">17 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Conflans, le XIIIIe de aoust 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e243');">18 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Monceaux, ce 25 aoust 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e251');">19 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Paris, ce 19 aoust 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e259');">20 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Monceaux, ce 20 aoust 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e267');">21 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorancy,... Escript à Monceaulx, le XXIIe jour d'aoust 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e278');">22 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorancy,... Escript à Fontainebleau, le IIIe jour d'octobre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e289');">23 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Montmorency,... De Fontainebleau, le IIIe de octobre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e300');">24 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorency,... Escript à Tours, le cinqme jour d'octobre 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e311');">25 Lettre de M. « FORGET [DE] FRESNES,... à monseigneur le duc de Montmorency,... A Chambery, ce 19 8bre 1600 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e322');">26 Lettre de FRANÇOIS SAVARY DE « BREVES [ambassadeur à Rome]... à monseigneur le duc de Montmorency,... De Rome, ce 5me mars 1609 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e338');">27 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorancy,... Escript à Paris, le XXe jour de mars 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e349');">28 Lettre de « C[HARLES-] EMANUEL [Ier]... duc de Savoye... à monsieur mon cousin le duc de Montmorancy,... A Thurin, ce 14 d'avril 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e365');">29 Lettre de « HENRY [IV]... à mon cousin le duc de Montmorency,... Escrit à Paris, le XVIIe jour d'avril 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e376');">30 Lettre des « capitoulz de Thoulouse, DUFOREZ, FRANINOS, PERRIERE, GAYRARD, DE RUDILLY, DUPUY,... à monseigneur de Montmorancy,... A Thoulouse, ce quatriesme juing 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e419');">31 Lettre des « gens tenants la cour de parlement de Thoulouse... à monseigneur de Montmorancy,... A Thoulouse, en parlement, le Vme juin 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e435');">32 Lettre d'ANTOINE DE « ROQUELAURE,... à monseigneur le connestable... De Bourdeaulx ce XIIe jung 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e451');">33 Lettre de l'«archiduc ALBERT [D'AUTRICHE, gouverneur des Pays-Bas]... à monseigneur le ducq de Montmorency,... A Mariemont, le XIIIIe juillet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e467');">34 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le XVIIIe de juilet 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e478');">35 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmoransi,... De Conflans, le 3 de aoust 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e486');">36 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le XXIIIIe de aoust 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e497');">37 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, ce XVe d'aoust, à neuf heures du soir, 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e508');">38 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le XVIIIe de aoust 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e519');">39 Lettre de M. « P. PHELIPEAUX,... à monsieur Castillon, secretaire de monseigneur le connestable... A Paris, ce XXVe aoust 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e535');">40 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Monmorancy,... De Paris, le cinqe de septembre 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e546');">41 Lettre de NICOLAS « DE NEUFVILLE DE VILLERROY,... à monseigneur le duc de Montmorency,... De Paris, le 28 de 7bre au soir 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e557');">42 « Lettre de la reyne... MARIE [DE MEDICIS]... à mon cousin le duc de Montmorency,... Escrit à Paris, le XIIe jour de septembre 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e568');">43 Lettre de NICOLAS « DE NEUFVILLE DE VILLEROY,... à monseigneur le duc de Montmorency,... De Paris, le 15 de 7bre 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e579');">44 Lettre de M. « P. PHELIPEAUX,... à monseigneur le duc de Montmorency,... A Paris, ce premier octobre 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050056_d0e587');">45 Lettre de « la reyne... MARIE [DE MEDICIS]... à mon cousin le duc de Montmorency,... Escrit à Paris, ce premier jour de octobre 1611 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

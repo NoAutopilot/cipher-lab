@@ -1,0 +1,469 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050098">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050098">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3647
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050098_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098">Français 3647 • Anc. 9136 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e86">1 Lettre de « C[HARLES] EMANUEL [Ier]... duc DE SAVOYE,... à mon frere monsieur le duc de Genevoys et de Nemours,... A Turin, ce 26 en aoust 1600 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e95">Fol. 3 • 2 Lettre de « C[HARLES] EMANUEL... duc DE SAVOYE,... à mon frere monsieur le duc de Genevoys et de Nemours,... A Turin, ce 29 en aoust 1600 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e103">Fol. 5 • 3 Lettre des « syndiques et conseil de Geneve... à monsieur le duc de Nemours,... De Geneve, ce 10 septembre 1600 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e116">Fol. 7 • 4 Lettre d'« il cardinale ALDOBRANDINI,... all' illmo signore duca di Nemours,... De Ciamberi, li 17 de novembre 1600 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e132">Fol. 9 • 5 Lettre de CHARLES DE « CREQUY,... à monseigneur le duc de Nemours,... A Chamberi, le 6e mars 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e148">Fol. 10 • 6 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce 13 d'avril 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e156">Fol. 12 • 7 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce 14 de may 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e164">Fol. 13 • 8 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce 24 de juillet 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e172">Fol. 15 • 9 Lettre de « CHARLES DE BOURBON [comte DE SOISSONS]... à monsieur le duc de Nemours,... A Paris, ce 25e juillet 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e188">Fol. 16 • 10 Lettre de « F[ILIBERT] EMANUEL [DE SAVOIE]... à monsieur mon cousin le duc de Genevois et de Nemours,... A Turin, ce 28 julliet 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e201">Fol. 17 • 11 Lettre de « V[ITTORE] AMEDEO [DE SAVOIE]... à monsieur mon cousin le duc de Genevoys et de Nemours,... A Turin, ce 28 julliet 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e214">Fol. 18 • 12 Lettre des « syndiqz et conseil de Geneve... à monsieur le duc de Nemours,... Ce XI aoust 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e227">Fol. 20 • 13 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce XVIIIe aoust 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e238">Fol. 22 • 14 « Conclusion de messieurs du chapitre de Verdun sur la proposition faicte par monsieur le president de Metz. Du 20e septembre 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e254">Fol. 24 • 15 Lettre de FERDINAND DE MEDICIS, « gran duca di Toscana,... all' illmo signore duca di Nemurs,... Da Fiorenza, il di ultimo d'ottobre 1601 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e270">Fol. 26 • 16 Lettre du « p[résident] JEANNIN,... à monsieur Viart,... De Fontainebleau, le XVe octobre 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e291">Fol. 27 • 17 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce 19 de 9bre 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e302">Fol. 29 • 18 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce IIIe en decembre 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e313">Fol. 31 • 19 « Coppie des lettres que Sa Majesté a escript à messrs l'evesque, chappitre et habitans de la ville de Thoul, du VIIIe janvier 1602 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e332">Fol. 33 • 20 Lettre de « HENRY [IV]... à messrs Vyart et Myron,... Escrit au Plessis lez Tours, le XVe jour de may 1602 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e351">Fol. 35 • 21 Lettre de « CAR [LO] FILIB[ERTO] D'ESTE [marquis DE ST-MARTIN]... all' illmo signore ducca di Nemors,... Di Torino, li 2 de agosto 1602 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e375">Fol. 37 • 22 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 6 en aoust 1602 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e383">Fol. 39 • 23 Lettre de « LEONORA, duchessa DI MANTOVA,... à madama di Nemours,... Di Mantova, li 23 di giugno 1603 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e401">Fol. 41 • 24 Lettre de « CHARLES [II, duc DE LORRAINE]... à monseigneur Vyart,... De Nancy, ce 9e juin 1603 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e422">Fol. 43 • 25 Lettre de « JOHANNES GEORGIUS, episcopatus argentinensis administrator postulatus, marchio brandeburgicus... à monsieur le duc de Nemours,... Données à Ansbach, le IIIe de juillet 1603 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e448">Fol. 47 • 26 Lettre de « CESAR D'ESTE [duc DE MODENE]... al duca [di] Nemours,... Di Modena, il primo di settembre 1603 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e476">Fol. 47 • 27 Lettre du Sr « BOURSIER [secrétaire de l'ordre de l'Annonciade]... à monsieur le duc de Genevois et de Nemours,... De Thurin, ce 4 apvril 1604 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e507">Fol. 49 • 28 Lettre du Sr « BOURSIER,... à monsieur le duc de Nemours,... De Thurin, ce 12 apvril 1604 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e533">Fol. 51 • 29 Lettre de « PHILIPPE [LOUIS DE HANAU]... à monsieur le duc de Nemours,... De Steina, le 30 d'avril 1604 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e556">Fol. 53 • 30 Lettre de « C[HARLES] EMANUEL », duc DE SAVOIE, à « madame ma tante... De Thurin, ce 24 jour de may 1604 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e574">Fol. 54 • 31 « Contract pour la pention de huict mil escus », qui appartenait à « Henry de Savoye, duc de Nemours,... sur l'archevesché d'Aux, portant remise d'icelle au profit du roy [Henri IV]... Quart d'octobre mil six cens quatre, avant midy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e602">Fol. 58 • 32 Contrat pour la somme de cent vingt mille livres, due par le roi Henri IV au duc de Nemours, en récompense de ladite pension.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e620">Fol. 64 • 33 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Verceil, ce 20 de Xmbre 1604 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e641">Fol. 66 • 34 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 15 de fevrier 1605 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e659">Fol. 68 • 35 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 28 de mars 1605 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e677">Fol. 70 • 36 Lettre de « AME DE SAVOYE » au duc de Nemours. « A Turin, le 10 apvril 1605 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e700">Fol. 72 • 37 Lettre de « HENRY DE SAVOYE, duc DE NEMOURS », au pape Clément VIII. « A Paris, ce 16 d'avril 1605 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e723">Fol. 74 • 38 Lettre de VINCENT Ier, « duca DI MANTOVA,... all' illmo duca di Nemors,... Di Mantova, a 21 di marzo 1606 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e752">Fol. 76 • 39 Lettre de « LEONORA, duchessa DI MANTOVA,... all' illma duchessa di Nemours,... Di Mantova, li 16 marzo 1606 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e778">Fol. 78 • 40 Lettre de « MARGHERITA, duchessa DI FERRARA,... al duca di Nemors,... Di Mantova, a 8 di maggio 1606 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e801">Fol. 79 • 41 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin... 28 may 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e819">Fol. 81 • 42 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 28 may 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e837">Fol. 83 • 43 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... A Turin... juin 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e855">Fol. 85 • 44 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin... 6 juillet 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e873">Fol. 87 • 45 Lettre de « C[HARLES] EMANUEL, duc DE SAVOYE,... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 14 juillet 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e891">Fol. 89 • 46 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Turin, ce 30 juillet 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e909">Fol. 91 • 47 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Rivoles, ce 6 aost 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e927">Fol. 93 • 48 Lettre de « dom PEDRO DE TOLEDO,... De Milan, 8 de agosto 1606 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e950">Fol. 94 • 49 Lettre de « RANUCCIO FARNESE [duc de Parme]... all' illmo duca di Namur,... Di Parma, a 8 d'agosto 1606 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e976">Fol. 96 • 50 Lettre d'«ALFONSO D'ESTE », duc de Modène, au duc de Nemours. « Di Turino, li 26 agosto 1606 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e999">Fol. 98 • 51 Lettre de VINCENT Ier, « duca DI MANTOVA,... all' illmo duca di Nemours,... Di Gonzaga, a 15 de settembre 1606 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1028">Fol. 100 • 52 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Thurin, ce XIIe d'octobre 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1049">Fol. 102 • 53 Lettre de « GEORG FRIDERICH, marggrave zue Baden undt Hochberg,... dem hochgebornen Fürsten Herrn Heinrichen von Lottringen, Hertzogen zu Nemours,... Datum Carlspurg, den 6 novembris 1606 ». En allemand.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1077">Fol. 104 • 54 Lettre de « CHRESTIENNE, g[rande] d[uchesse DE TOSCANE]... à monsieur le duc de Nemours,... De Montevettoria, ce 15 decembre 1606 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1100">Fol. 106 • 55 Lettre d'« il cardinale PIO DI SAVOIA,... all' illmo duca di Nemours,... Di Roma, alli 20 di Xbre 1606 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1129">Fol. 108 • 56 Lettre de FERDINAND Ier DE MEDICIS, « gran duca di T[oscana]... all' illmo duca di Nemurs,... Da Pisa, a 30 di Xbre 1606 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1156">Fol. 110 • 57 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Thurin, ce XXVme de janvier 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1177">Fol. 112 • 58 Lettre du Sr « D'ALLIGNY,... à monsieur le duc de Nemours,... Ce 5e mars 1601, à Rivoles ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1206">Fol. 114 • 59 Lettre de « F[ILIBERT] EMANUEL, prince de Piemont,... à mon cousin le duc de Nemours,... De Turin, ce 17 en avril 1601 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1229">Fol. 116 • 60 Lettre de « MARIE [DE MEDICIS]... à mon cousin le duc de Nemours,... A Fontaynebleau, le XVIIIe jour de may 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1255">Fol. 117 • 61 Lettre d'«A. FAVRE,... à monseigneur [de Nemours] en l'hostel de Nemours... De vostre Necy [Annecy], ce 9 juin 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1278">Fol. 119 • 62 Lettre de « PHILIPPE [LOUIS] DE HANAU,... à monsieur le duc de Nemours,... A Hanau, ce X juin 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1301">Fol. 120 • 63 Lettre de « CHARLES [duc] DE LORRAINE,... à monsieur mon cousin le duc de Nemours,... De Nancy, le 15e juin 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1322">Fol. 122 • 64 Lettre d'«A. FAVRE,... à monseigneur [le duc de Nemours]... De vostre Necy, ce 22 juin 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1345">Fol. 124 • 65 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Nemours,... De Nancy, le XXVIe juin 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1366">Fol. 126 • 66 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Turin, ce 15 juillet 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1374">Fol. 128 • 67 Lettre de « V[ITTORE] AMEDEO [DE SAVOIE]... à monsieur le duc de Genevoys et de Nemours, mon cousin... De Thurin, ce 15 de julliet 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1387">Fol. 130 • 68 Lettre de « CHRESTIENNE, g[rande] d[uchesse DE TOSCANE]... à monsieur le duc de Nemours,... De Florence, le 30 de juillet 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1405">Fol. 132 • 69 Lettre de FRANÇOIS MARIE II DE LA ROVERE, « duca D'URBINO,... all' illmo duca di Nemours,... Di Casteldurante, a 16 di agosto 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1421">Fol. 134 • 70 Lettre de « « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Thurin, ce 25 aoust 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1429">Fol. 136 • 71 Lettre de « LIVIA, duc[hessa] D'URBINO,... all' illmo duca de Nemours,... Di Casteldurante, a 27 d'agosto 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1450">Fol. 138 • 72 Lettre de FERDINAND DE MEDICIS, « gran duca DI T[OSCANA]... all' illmo duca di Nemurs,... Di Firenze, li 28 luglio 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1461">Fol. 139bis • 73 Lettre de FERDINAND DE MEDICIS, « gran duca DI T[OSCANA]... all' illmo duca di Nemurs,... Da Firenze, il primo di settembre 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1472">Fol. 141 • 74 Lettre de « CHRESTIENNE, g[rande] d[uchesse DE TOSCANE]... à monsieur le duc de Nemours,... De Florence, le quatriesme de setembre 1607 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1485">Fol. 143 • 75 Lettre de « CESARE D'ESTE [duc DE MODENE]... all' illmo duca di Nemours,... Di Modena, li X settembre 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1501">Fol. 145 • 76 Lettre de VINCENT, « duca DI MANTOVA,... all' illmo duca di Nemors,... Di Quingentole, a 18 di settembre 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1517">Fol. 147 • 77 Lettre d'«il cardinale BORGHESE,... all' illmo signore duca di Nemurs,... Di Roma, li 18 di settembre 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050098_d0e1538">Fol. 149 • 78 « Contract passé entre monsegneur [Henri de Savoie, duc] de Nemours et messegneurs de Guyse et du Mayne, à raison des biens trouvés dans la succession d'Anne d'Est, duchesse douairiere de Nemours,... Du XXe octobre M.VI.C.VII ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3647 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50098f&Cote=Français 3647&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3647 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9136</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Brandebourg. • Notes et pièces diverses.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Henri IV, roi de France. • Actes et lettres.</p>
+<p>La Rovère, François-Marie II de, duc d'Urbino. • Lettres.</p>
+<p>Lorraine, Charles III, duc de. • Actes et lettres.</p>
+<p>Médicis, Ferdinand Ier de, cardinal, grand-duc de Toscane. • Lettres.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e86');">1 Lettre de « C[HARLES] EMANUEL [Ier]... duc DE SAVOYE,... à mon frere monsieur le duc de Genevoys et de Nemours,... A Turin, ce 26 en aoust 1600 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e95');">2 Lettre de « C[HARLES] EMANUEL... duc DE SAVOYE,... à mon frere monsieur le duc de Genevoys et de Nemours,... A Turin, ce 29 en aoust 1600 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e103');">3 Lettre des « syndiques et conseil de Geneve... à monsieur le duc de Nemours,... De Geneve, ce 10 septembre 1600 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e116');">4 Lettre d'« il cardinale ALDOBRANDINI,... all' illmo signore duca di Nemours,... De Ciamberi, li 17 de novembre 1600 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e132');">5 Lettre de CHARLES DE « CREQUY,... à monseigneur le duc de Nemours,... A Chamberi, le 6e mars 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e148');">6 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce 13 d'avril 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e156');">7 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce 14 de may 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e164');">8 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce 24 de juillet 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e172');">9 Lettre de « CHARLES DE BOURBON [comte DE SOISSONS]... à monsieur le duc de Nemours,... A Paris, ce 25e juillet 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e188');">10 Lettre de « F[ILIBERT] EMANUEL [DE SAVOIE]... à monsieur mon cousin le duc de Genevois et de Nemours,... A Turin, ce 28 julliet 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e201');">11 Lettre de « V[ITTORE] AMEDEO [DE SAVOIE]... à monsieur mon cousin le duc de Genevoys et de Nemours,... A Turin, ce 28 julliet 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e214');">12 Lettre des « syndiqz et conseil de Geneve... à monsieur le duc de Nemours,... Ce XI aoust 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e227');">13 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce XVIIIe aoust 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e238');">14 « Conclusion de messieurs du chapitre de Verdun sur la proposition faicte par monsieur le president de Metz. Du 20e septembre 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e254');">15 Lettre de FERDINAND DE MEDICIS, « gran duca di Toscana,... all' illmo signore duca di Nemurs,... Da Fiorenza, il di ultimo d'ottobre 1601 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e270');">16 Lettre du « p[résident] JEANNIN,... à monsieur Viart,... De Fontainebleau, le XVe octobre 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e291');">17 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin, ce 19 de 9bre 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e302');">18 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce IIIe en decembre 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e313');">19 « Coppie des lettres que Sa Majesté a escript à messrs l'evesque, chappitre et habitans de la ville de Thoul, du VIIIe janvier 1602 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e332');">20 Lettre de « HENRY [IV]... à messrs Vyart et Myron,... Escrit au Plessis lez Tours, le XVe jour de may 1602 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e351');">21 Lettre de « CAR [LO] FILIB[ERTO] D'ESTE [marquis DE ST-MARTIN]... all' illmo signore ducca di Nemors,... Di Torino, li 2 de agosto 1602 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e375');">22 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 6 en aoust 1602 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e383');">23 Lettre de « LEONORA, duchessa DI MANTOVA,... à madama di Nemours,... Di Mantova, li 23 di giugno 1603 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e401');">24 Lettre de « CHARLES [II, duc DE LORRAINE]... à monseigneur Vyart,... De Nancy, ce 9e juin 1603 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e422');">25 Lettre de « JOHANNES GEORGIUS, episcopatus argentinensis administrator postulatus, marchio brandeburgicus... à monsieur le duc de Nemours,... Données à Ansbach, le IIIe de juillet 1603 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e448');">26 Lettre de « CESAR D'ESTE [duc DE MODENE]... al duca [di] Nemours,... Di Modena, il primo di settembre 1603 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e476');">27 Lettre du Sr « BOURSIER [secrétaire de l'ordre de l'Annonciade]... à monsieur le duc de Genevois et de Nemours,... De Thurin, ce 4 apvril 1604 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e507');">28 Lettre du Sr « BOURSIER,... à monsieur le duc de Nemours,... De Thurin, ce 12 apvril 1604 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e533');">29 Lettre de « PHILIPPE [LOUIS DE HANAU]... à monsieur le duc de Nemours,... De Steina, le 30 d'avril 1604 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e556');">30 Lettre de « C[HARLES] EMANUEL », duc DE SAVOIE, à « madame ma tante... De Thurin, ce 24 jour de may 1604 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e574');">31 « Contract pour la pention de huict mil escus », qui appartenait à « Henry de Savoye, duc de Nemours,... sur l'archevesché d'Aux, portant remise d'icelle au profit du roy [Henri IV]... Quart d'octobre mil six cens quatre, avant midy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e602');">32 Contrat pour la somme de cent vingt mille livres, due par le roi Henri IV au duc de Nemours, en récompense de ladite pension.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e620');">33 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Verceil, ce 20 de Xmbre 1604 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e641');">34 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 15 de fevrier 1605 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e659');">35 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 28 de mars 1605 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e677');">36 Lettre de « AME DE SAVOYE » au duc de Nemours. « A Turin, le 10 apvril 1605 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e700');">37 Lettre de « HENRY DE SAVOYE, duc DE NEMOURS », au pape Clément VIII. « A Paris, ce 16 d'avril 1605 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e723');">38 Lettre de VINCENT Ier, « duca DI MANTOVA,... all' illmo duca di Nemors,... Di Mantova, a 21 di marzo 1606 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e752');">39 Lettre de « LEONORA, duchessa DI MANTOVA,... all' illma duchessa di Nemours,... Di Mantova, li 16 marzo 1606 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e778');">40 Lettre de « MARGHERITA, duchessa DI FERRARA,... al duca di Nemors,... Di Mantova, a 8 di maggio 1606 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e801');">41 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Turin... 28 may 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e819');">42 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 28 may 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e837');">43 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... A Turin... juin 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e855');">44 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin... 6 juillet 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e873');">45 Lettre de « C[HARLES] EMANUEL, duc DE SAVOYE,... à mon frere monsieur le duc de Genevois et de Nemours,... De Thurin, ce 14 juillet 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e891');">46 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Turin, ce 30 juillet 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e909');">47 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevois et de Nemours,... De Rivoles, ce 6 aost 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e927');">48 Lettre de « dom PEDRO DE TOLEDO,... De Milan, 8 de agosto 1606 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e950');">49 Lettre de « RANUCCIO FARNESE [duc de Parme]... all' illmo duca di Namur,... Di Parma, a 8 d'agosto 1606 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e976');">50 Lettre d'«ALFONSO D'ESTE », duc de Modène, au duc de Nemours. « Di Turino, li 26 agosto 1606 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e999');">51 Lettre de VINCENT Ier, « duca DI MANTOVA,... all' illmo duca di Nemours,... Di Gonzaga, a 15 de settembre 1606 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1028');">52 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Thurin, ce XIIe d'octobre 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1049');">53 Lettre de « GEORG FRIDERICH, marggrave zue Baden undt Hochberg,... dem hochgebornen Fürsten Herrn Heinrichen von Lottringen, Hertzogen zu Nemours,... Datum Carlspurg, den 6 novembris 1606 ». En allemand.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1077');">54 Lettre de « CHRESTIENNE, g[rande] d[uchesse DE TOSCANE]... à monsieur le duc de Nemours,... De Montevettoria, ce 15 decembre 1606 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1100');">55 Lettre d'« il cardinale PIO DI SAVOIA,... all' illmo duca di Nemours,... Di Roma, alli 20 di Xbre 1606 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1129');">56 Lettre de FERDINAND Ier DE MEDICIS, « gran duca di T[oscana]... all' illmo duca di Nemurs,... Da Pisa, a 30 di Xbre 1606 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1156');">57 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Thurin, ce XXVme de janvier 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1177');">58 Lettre du Sr « D'ALLIGNY,... à monsieur le duc de Nemours,... Ce 5e mars 1601, à Rivoles ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1206');">59 Lettre de « F[ILIBERT] EMANUEL, prince de Piemont,... à mon cousin le duc de Nemours,... De Turin, ce 17 en avril 1601 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1229');">60 Lettre de « MARIE [DE MEDICIS]... à mon cousin le duc de Nemours,... A Fontaynebleau, le XVIIIe jour de may 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1255');">61 Lettre d'«A. FAVRE,... à monseigneur [de Nemours] en l'hostel de Nemours... De vostre Necy [Annecy], ce 9 juin 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1278');">62 Lettre de « PHILIPPE [LOUIS] DE HANAU,... à monsieur le duc de Nemours,... A Hanau, ce X juin 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1301');">63 Lettre de « CHARLES [duc] DE LORRAINE,... à monsieur mon cousin le duc de Nemours,... De Nancy, le 15e juin 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1322');">64 Lettre d'«A. FAVRE,... à monseigneur [le duc de Nemours]... De vostre Necy, ce 22 juin 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1345');">65 Lettre de « CHARLES, cardinal DE LORRAINE,... à monsieur le duc de Nemours,... De Nancy, le XXVIe juin 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1366');">66 Lettre de « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Turin, ce 15 juillet 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1374');">67 Lettre de « V[ITTORE] AMEDEO [DE SAVOIE]... à monsieur le duc de Genevoys et de Nemours, mon cousin... De Thurin, ce 15 de julliet 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1387');">68 Lettre de « CHRESTIENNE, g[rande] d[uchesse DE TOSCANE]... à monsieur le duc de Nemours,... De Florence, le 30 de juillet 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1405');">69 Lettre de FRANÇOIS MARIE II DE LA ROVERE, « duca D'URBINO,... all' illmo duca di Nemours,... Di Casteldurante, a 16 di agosto 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1421');">70 Lettre de « « C[HARLES] EMANUEL [duc DE SAVOIE]... à mon frere monsieur le duc de Genevoys et de Nemours,... De Thurin, ce 25 aoust 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1429');">71 Lettre de « LIVIA, duc[hessa] D'URBINO,... all' illmo duca de Nemours,... Di Casteldurante, a 27 d'agosto 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1450');">72 Lettre de FERDINAND DE MEDICIS, « gran duca DI T[OSCANA]... all' illmo duca di Nemurs,... Di Firenze, li 28 luglio 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1461');">73 Lettre de FERDINAND DE MEDICIS, « gran duca DI T[OSCANA]... all' illmo duca di Nemurs,... Da Firenze, il primo di settembre 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1472');">74 Lettre de « CHRESTIENNE, g[rande] d[uchesse DE TOSCANE]... à monsieur le duc de Nemours,... De Florence, le quatriesme de setembre 1607 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1485');">75 Lettre de « CESARE D'ESTE [duc DE MODENE]... all' illmo duca di Nemours,... Di Modena, li X settembre 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1501');">76 Lettre de VINCENT, « duca DI MANTOVA,... all' illmo duca di Nemors,... Di Quingentole, a 18 di settembre 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1517');">77 Lettre d'«il cardinale BORGHESE,... all' illmo signore duca di Nemurs,... Di Roma, li 18 di settembre 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050098_d0e1538');">78 « Contract passé entre monsegneur [Henri de Savoie, duc] de Nemours et messegneurs de Guyse et du Mayne, à raison des biens trouvés dans la succession d'Anne d'Est, duchesse douairiere de Nemours,... Du XXe octobre M.VI.C.VII ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

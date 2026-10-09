@@ -1,0 +1,471 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050096">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050096">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3645
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050096_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096">Français 3645 • Anc. 9134 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e96">1 Lettre du président « DE HARLAY,... au roy... Ce 10 septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e102">Fol. 3 • 2 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... De Chelles, ce Xe jour de septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e118">Fol. 5 • 3 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy [Henri IV]... Au camp à Eschelles, le XIe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e129">Fol. 6 • 4 Lettre de « FRANÇOYS DE BOURBON [prince DE CONTI]... au roy... A Tours, ce XIe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e145">Fol. 8 • 5 Lettre de « JANNE DE COHESMES [princesse DE CONTI]... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e163">Fol. 10 • 6 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... De Chelle, le XIe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e179">Fol. 12 • 7 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON [maréchal de France]... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e192">Fol. 13 • 8 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp devant Pierrefons, ce XIe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e213">Fol. 15 • 9 Lettre chiffrée avec déchiffrement d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp de Gaillefontaine, ce XXVIIIe jour de septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e234">Fol. 17 • 10 Lettre de RENAUD II DE BEAUNE DE SEMBLANÇAI, « ar[chevêque] de Bourges... au roy... De Chartres, le XXVIII septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e257">Fol. 18 • 11 Lettre du Sr « D'O,... au roy... A Senlis, ce 15e septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e281">Fol. 20 • 12 Lettre du Sr « D'O,... au roy... A St Denis, ce XVIe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e308">Fol. 22 • 13 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... De Chartres, ce 25 septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e326">Fol. 24 • 14 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp devant Gournay, ce XXIXe jour de septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e347">Fol. 26 • 15 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp devant Gournay, le XXIXe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e368">Fol. 27 • 16 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du XXXe septembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e389">Fol. 28 • 17 Lettre du président « DE HARLAY,... au roy... A Tours, ce 2 octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e412">Fol. 30 • 18 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp devant Gournay, le IIIe octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e433">Fol. 31 • 19 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... De Chartres, ce IIIIe jour d'octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e454">Fol. 33 • 20 Lettre, avec chiffre et déchiffrement, d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp de Gournay, ce VIIe jour d'octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e475">Fol. 36 • 21 Lettre de « HENRY DE BOURBON [duc DE MONTPENSIER]... au roy... Au camp de Gahard, ce XIIe octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e491">Fol. 38 • 22 Lettre de « LODOVICO GONZAGA [duc DE NEVERS]... au roy... De Beaumont, ce dimanche XIIIe ottobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e512">Fol. 40 • 23 Lettre de « HENRY DE BOURBON [duc DE MONTPENSIER]... au roy... A Gahard, ce XIIIe d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e533">Fol. 41 • 24 Lettre du Sr DE « LA HUNAUDAYE,... au roy... Du camp de Gahart, le XIIIe d'octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e557">Fol. 43 • 25 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... De Chartres, ce 15 octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e570">Fol. 45 • 26 Lettre des « atournez gouverneurs de vostre ville de Compiengne... au roy... De Compiengne, ce quinziesme octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e581">Fol. 47 • 27 Lettre d'ANNE DE LEVIS, duc DE « VANTADOUR,... au roy... A Limoges, ce XVIe octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e602">Fol. 49 • 28 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... Escrit à Chartres, le XIXe jour d'octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e618">Fol. 51 • 29 Lettre de « DIANE, l[égitimée] DE FRANCE [duchesse D'ANGOULEME]... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e636">Fol. 53 • 30 Lettre du Sr DE « LA VAUGUYON,... au roy... A La Vauguyon, ce XIe aoust 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e655">Fol. 55 • 31 Lettre de JEAN, maréchal « D'AUMONT,... au roy... A Pierre, ce XXme octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e676">Fol. 56 • 32 Lettre du Sr DE « CHEVERNY [chancelier de France]... au roy... De Chartres, ce premier d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e692">Fol. 58 • 33 Lettre de « FRANÇOYS DE BOURBON [prince DE CONTI]... au roy... Au camp devant Selles, ce XXe octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e713">Fol. 60 • 34 Lettre de « CHARLES DE MONTMORENCY,... au roy... Au camp devant Selles, le XXVe octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e734">Fol. 62 • 35 Lettre de « LODOVICO GONZAGA [duc DE NEVERS]... au roy... De Vervin, ce IIe novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e755">Fol. 64 • 36 Lettre de HENRI DE La TOUR, vicomte DE « TURENNE [maréchal DE BOUILLON]... au roy... De Sedan, ce 2e novambre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e776">Fol. 66 • 37 Lettre de « CHARLES DE BRETAIGNE [Sr D'AVAUGOUR]... au roy... A Clisson, le XVe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e800">Fol. 68 • 38 Lettre « d'A[DRIEN] DE HUMYERES, Sr DE VITERMONT,... au roy... De vostre ville de St Quentin, ce IIIe novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e822">Fol. 70 • 39 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON,... au roy... De Son, ce 3 novembre, à deux heures apres mynuist ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e835">Fol. 72 • 40 Lettre du Sr « D'O,... au roy... A Diepe, ce 3e jour de novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e849">Fol. 74 • 41 Lettre de « S[oeur] CATHERINE DE BOURBON,... au roy... A Compiengne, ce 5e de novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e865">Fol. 75 • 42 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON,... au roy... De Origny, ce 4 novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e878">Fol. 77 • 43 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... De Chartres, ce 4 novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e886">Fol. 79 et 81 • 44-45 Deux lettres du Sr « D'O,... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e897">Fol. 83 • 46 Lettre du Sr DE « LAVARDYN,... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e918">Fol. 84 • 47 Lettre de CATHERINE DE CLEVES, duchesse DE GUISE, « au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e931">Fol. 85 • 48 Lettre de CLAUDE-CATHERINE DE « CLERMONT, [duchesse] DE RETZ,... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e949">Fol. 87 • 49 Lettre du Sr « DOMINIQUE DE VIC,... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e970">Fol. 88 • 50 Requête des « prelatz et aultres ecclesiastiques assemblez à Chartres... au roy... De Chartres, ce 4 novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e983">Fol. 90 • 51 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... Escrit à Chartres, le cinquiesme jour de novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e991">Fol. 92 • 52 Lettre, avec chiffre, des sieurs « DE VYVONNE, QUITRY, SALAGNAC,... au roy... De Herbonieres, où vostre armée est venue loger, ce XIe novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1012">Fol. 94 • 53 « Dechiffrement de la lettre » précédente.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1030">Fol. 96 • 54 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON,... au roy... De Harbonniere, ce X novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1043">Fol. 99 • 55 Lettre, avec chiffre et déchiffrement, des sieurs « DE VYVONNE, QUITRY, SALAGNAC,... au roy... De Herbonieres, où vostre armée est venue loger, ce IXe novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1064">Fol. 101 • 56 Lettre du Sr « D'O,... au roy... Au camp d'Anglequeville, ce Xe novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1083">Fol. 102 • 57 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON [maréchal de France]... au roy... De Harbonnieres, ce IX novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1091">Fol. 104 • 58 Lettre d'«A[DRIEN] DE HUMYERES,... au roy... De vostre ville de St Quentin, ce XIe novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1110">Fol. 106 • 59 Lettre du Sr « D'O,... au roy... Au camp de Dernetal, ce XIIIe novembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1124">Fol. 107 • 60 Lettre de « DOMINIQUE DE VIC,... au roy... A St Denis, ce XVIe novembre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1143">Fol. 108 • 61 Lettre de « HENRIETTE DE CLEVES [duchesse DE NEVERS]... au roy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1156">Fol. 110 • 62 Lettre du Sr DE « CHAZERON,... au roy... De vostre chasteau de Molins, ce premier septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1172">Fol. 111 • 63 Lettre des « maire et eschevins de vostre ville de Molins... au roy... De vostre ville de Molins, ce XXIIe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1188">Fol. 113 • 64 Lettre des « officiers des senechaucées et siege presidial de Bourbonnois... au roy... Molins, le XXVIIe septembre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1204">Fol. 115 • 65 Lettre de GABRIEL NOMPAR DE CAUMONT, duc DE « LAUZUN,... au roy... De Lauzun, ce VIIIe octobre 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050096_d0e1220">Fol. 117 • 66 « Advis de Rome du XXIme septembre 1591 », envoyé au roi Henri IV. Double.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3645 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50096z&Cote=Français 3645&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3645 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9134</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Biron, Armand de Gontaut, duc de, maréchal de France. • Actes et lettres.</p>
+<p>Biron, Charles de Gontaut, duc de, maréchal de France. • Actes et lettres.</p>
+<p>Bourbon, Charles de [Charles X], cardinal. • Actes et lettres.</p>
+<p>Chartres. • Église et diocèse, assemblée du clergé (1591).</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Guitry, Jean de Chaumont, sieur de. • Lettres.</p>
+<p>Harlay, Achille Ier de, premier président au Parlement de Paris. • Lettres.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>O, François d', seigneur de Fresnes. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e96');">1 Lettre du président « DE HARLAY,... au roy... Ce 10 septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e102');">2 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... De Chelles, ce Xe jour de septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e118');">3 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy [Henri IV]... Au camp à Eschelles, le XIe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e129');">4 Lettre de « FRANÇOYS DE BOURBON [prince DE CONTI]... au roy... A Tours, ce XIe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e145');">5 Lettre de « JANNE DE COHESMES [princesse DE CONTI]... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e163');">6 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... De Chelle, le XIe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e179');">7 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON [maréchal de France]... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e192');">8 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp devant Pierrefons, ce XIe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e213');">9 Lettre chiffrée avec déchiffrement d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp de Gaillefontaine, ce XXVIIIe jour de septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e234');">10 Lettre de RENAUD II DE BEAUNE DE SEMBLANÇAI, « ar[chevêque] de Bourges... au roy... De Chartres, le XXVIII septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e257');">11 Lettre du Sr « D'O,... au roy... A Senlis, ce 15e septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e281');">12 Lettre du Sr « D'O,... au roy... A St Denis, ce XVIe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e308');">13 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... De Chartres, ce 25 septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e326');">14 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp devant Gournay, ce XXIXe jour de septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e347');">15 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp devant Gournay, le XXIXe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e368');">16 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du XXXe septembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e389');">17 Lettre du président « DE HARLAY,... au roy... A Tours, ce 2 octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e412');">18 Lettre d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp devant Gournay, le IIIe octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e433');">19 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... De Chartres, ce IIIIe jour d'octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e454');">20 Lettre, avec chiffre et déchiffrement, d'ARMAND DE GONTAUT, maréchal DE « BIRON,... au roy... Du camp de Gournay, ce VIIe jour d'octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e475');">21 Lettre de « HENRY DE BOURBON [duc DE MONTPENSIER]... au roy... Au camp de Gahard, ce XIIe octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e491');">22 Lettre de « LODOVICO GONZAGA [duc DE NEVERS]... au roy... De Beaumont, ce dimanche XIIIe ottobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e512');">23 Lettre de « HENRY DE BOURBON [duc DE MONTPENSIER]... au roy... A Gahard, ce XIIIe d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e533');">24 Lettre du Sr DE « LA HUNAUDAYE,... au roy... Du camp de Gahart, le XIIIe d'octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e557');">25 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... De Chartres, ce 15 octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e570');">26 Lettre des « atournez gouverneurs de vostre ville de Compiengne... au roy... De Compiengne, ce quinziesme octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e581');">27 Lettre d'ANNE DE LEVIS, duc DE « VANTADOUR,... au roy... A Limoges, ce XVIe octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e602');">28 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... Escrit à Chartres, le XIXe jour d'octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e618');">29 Lettre de « DIANE, l[égitimée] DE FRANCE [duchesse D'ANGOULEME]... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e636');">30 Lettre du Sr DE « LA VAUGUYON,... au roy... A La Vauguyon, ce XIe aoust 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e655');">31 Lettre de JEAN, maréchal « D'AUMONT,... au roy... A Pierre, ce XXme octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e676');">32 Lettre du Sr DE « CHEVERNY [chancelier de France]... au roy... De Chartres, ce premier d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e692');">33 Lettre de « FRANÇOYS DE BOURBON [prince DE CONTI]... au roy... Au camp devant Selles, ce XXe octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e713');">34 Lettre de « CHARLES DE MONTMORENCY,... au roy... Au camp devant Selles, le XXVe octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e734');">35 Lettre de « LODOVICO GONZAGA [duc DE NEVERS]... au roy... De Vervin, ce IIe novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e755');">36 Lettre de HENRI DE La TOUR, vicomte DE « TURENNE [maréchal DE BOUILLON]... au roy... De Sedan, ce 2e novambre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e776');">37 Lettre de « CHARLES DE BRETAIGNE [Sr D'AVAUGOUR]... au roy... A Clisson, le XVe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e800');">38 Lettre « d'A[DRIEN] DE HUMYERES, Sr DE VITERMONT,... au roy... De vostre ville de St Quentin, ce IIIe novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e822');">39 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON,... au roy... De Son, ce 3 novembre, à deux heures apres mynuist ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e835');">40 Lettre du Sr « D'O,... au roy... A Diepe, ce 3e jour de novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e849');">41 Lettre de « S[oeur] CATHERINE DE BOURBON,... au roy... A Compiengne, ce 5e de novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e865');">42 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON,... au roy... De Origny, ce 4 novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e878');">43 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... De Chartres, ce 4 novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e886');">44-45 Deux lettres du Sr « D'O,... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e897');">46 Lettre du Sr DE « LAVARDYN,... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e918');">47 Lettre de CATHERINE DE CLEVES, duchesse DE GUISE, « au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e931');">48 Lettre de CLAUDE-CATHERINE DE « CLERMONT, [duchesse] DE RETZ,... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e949');">49 Lettre du Sr « DOMINIQUE DE VIC,... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e970');">50 Requête des « prelatz et aultres ecclesiastiques assemblez à Chartres... au roy... De Chartres, ce 4 novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e983');">51 Lettre de « CHARLES, cardinal DE BOURBON,... au roy... Escrit à Chartres, le cinquiesme jour de novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e991');">52 Lettre, avec chiffre, des sieurs « DE VYVONNE, QUITRY, SALAGNAC,... au roy... De Herbonieres, où vostre armée est venue loger, ce XIe novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1012');">53 « Dechiffrement de la lettre » précédente.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1030');">54 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON,... au roy... De Harbonniere, ce X novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1043');">55 Lettre, avec chiffre et déchiffrement, des sieurs « DE VYVONNE, QUITRY, SALAGNAC,... au roy... De Herbonieres, où vostre armée est venue loger, ce IXe novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1064');">56 Lettre du Sr « D'O,... au roy... Au camp d'Anglequeville, ce Xe novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1083');">57 Lettre de « C[HARLES DE GONTAUT, duc DE] BIRON [maréchal de France]... au roy... De Harbonnieres, ce IX novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1091');">58 Lettre d'«A[DRIEN] DE HUMYERES,... au roy... De vostre ville de St Quentin, ce XIe novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1110');">59 Lettre du Sr « D'O,... au roy... Au camp de Dernetal, ce XIIIe novembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1124');">60 Lettre de « DOMINIQUE DE VIC,... au roy... A St Denis, ce XVIe novembre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1143');">61 Lettre de « HENRIETTE DE CLEVES [duchesse DE NEVERS]... au roy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1156');">62 Lettre du Sr DE « CHAZERON,... au roy... De vostre chasteau de Molins, ce premier septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1172');">63 Lettre des « maire et eschevins de vostre ville de Molins... au roy... De vostre ville de Molins, ce XXIIe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1188');">64 Lettre des « officiers des senechaucées et siege presidial de Bourbonnois... au roy... Molins, le XXVIIe septembre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1204');">65 Lettre de GABRIEL NOMPAR DE CAUMONT, duc DE « LAUZUN,... au roy... De Lauzun, ce VIIIe octobre 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050096_d0e1220');">66 « Advis de Rome du XXIme septembre 1591 », envoyé au roi Henri IV. Double.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

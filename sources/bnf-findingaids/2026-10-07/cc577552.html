@@ -1,0 +1,499 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057755">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057755">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4705
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057755_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755">Français 4705 • Anc. 9527 • Recueil de pièces originales et de copies concernant l'histoire des années 1622 à 1627.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e223">Fol. 1 • 1 Lettre de « CHRISTIANUS QUINTUS, electus princeps DANIAE, Norvegiae, Vandalorum Gothorumque, dux Slesvici, Holsatiae, Stormariae ac Dithmarsiae, comes in Oldenburg et Delmenhorst,... duci Niverniae,... Datae ex arce Coldinga, 22 maii 1626 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e234">Fol. 3 • 2 Lettre de « FRANCESCO MARTINELLO » audit duc de Nevers, Charles de Gonzague. « Di Mantova, a di 23 di maggio 1626 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e242">Fol. 5 et 6 • 3-4 Lettres de « FERDINANDO GONZAGA », duc DE MAYENNE, audit duc de Nevers, son père. Mantoue, 23 et 29 mai 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e250">Fol. 8 • 5 Lettre de « BENEDETTO BALDESCHI » audit duc de Nevers. Rome, 2 juin 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e258">Fol. 9 • 6 Lettre de FERDINAND DE GONZAGUE, duc DE MANTOUE, audit duc de Nevers. Mantoue, 30 juin 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e266">Fol. 11 • 7 Lettre de « FR. ANTONIO DAÇA,... a don Henrique de Guzman,... Valdescopeço, 8 de junio 1626 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e279">Fol. 13 • 8 Lettre du « comte... ALESSANDRO STRIGGI » audit duc de Nevers. Mantoue, 10 juin 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e287">Fol. 14 • 9 Lettre de CATHERINE DE MEDICIS, duchesse DE MANTOUE, audit duc de Nevers. Mantoue, 14 juin 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e298">Fol. 16 • 10 Lettre, signée : « Il card. [BERNARDIN] SPADA », audit duc de Nevers. Nantes, 27 juillet 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e306">Fol. 17 • 11 Lettre, signée : « Il cardinale [GUI] BENTIVOGLIO », audit duc de Nevers. Rome, 29 juillet 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e314">Fol. 18 • 12 Lettre, signée : « Il duca DI RETEL », CHARLES DE GONZAGUE, audit duc de Nevers. « Di Porto, a di 7 d'agosto 1626 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e322">Fol. 19 • 13 Lettre de « FRANCESCO MARTIN ELLO » audit duc de Nevers. « Di Porto, a di 7 di agosto 1626 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e330">Fol. 20 • 14 Lettre de « CESARE D'ESTE », duc DE MODENE, écrite 3 jours après la mort de l'«infante Isabella », sa bru, audit duc de Nevers. « Di Modana, li 25 agosto 1626 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e338">Fol. 22 • 15 Lettre de FERDINAND DE GONZAGUE, duc DE MANTOUE, audit duc de Nevers. Mantoue, 29 août 1 626. En italien.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e346">16-23 Recueil de copies de pièces ayant pour titre : « Comment Monseigneur le duc de Rethelois fust appellé à la succession des Estatz de Mantoue et de Montferrat, par ambassadeurs expres envoyés à Monseigneur le duc de Nevers ».</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e352">Fol. 25 • 16 « Copia dell' instruzione di S. A. al Sr Magnocavalli,... Di Mantova, a 18 settembre 1625. FERDINANDO ». En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e363">Fol. 25 • 17 « Copia della lettera di S. A. al Sr duca di Nevers,... Mantova, li 18 di settembre 1625. Il duca DI MANTOVA ». En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e374">Fol. 26 • 18 « Copia d'un' altra lettera di S. A., sotto li 26 (sic) settembre... Di Mantova, li 18 di settembre 1625... Il duca DI MANTOVA a duca di Nevers ». En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e385">Fol. 26 • 19 Lettre de « CATERINA, duchessa DI MANTOVA », audit duc de Nevers. « Di Mantova, a 18 [settembre] 1625 ». En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e393">Fol. 27 • 20 Lettre du duc DE MANTOUE audit duc de Nevers Mantoue, 20 décembre 1625. En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e401">Fol. 27 • 21 Lettre de « CATERINA, duchessa DI MANTOVA », audit duc de Nevers. Mantoue, 12 mars 1626. En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e409">Fol. 28 • 22 Lettre de FERDINAND DE GONZAGUE, duc DE MANTOUE, audit duc de Nevers. Mantoue, 18 août 1626. En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e417">Fol. 28 • 23 Lettre de VINCENT DE GONZAGUE, duc DE MANTOUE, dans laquelle il fait part de la mort dudit Ferdinand de Gonzague, son frère, audit duc de Nevers. Mantoue, 29 octobre 1626. En italien.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e425">Fol. 30 • 24 Lettre de CHARLES DE GONZAGUE, duc DE RETHEL, audit duc de Nevers, son père. Mantoue, 9 octobre 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e433">Fol. 31 • 25 Lettre de « FRANCESCO MARTINELLO » audit duc de Nevers. Mantoue, 9 octobre 1626. En ita lien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e441">Fol. 33 • 26 Lettre du marquis DE GRANA audit duc de Nevers. « Vienna, 12 ottobre 1626 ». En ita lien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e449">Fol. 35 et 36 • 27-28 Lettres de « D. MARTIN BABIN » audit duc de Nevers. Mantoue, 26 octobre et novem bre 1626.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e457">Fol. 37 • 29 Lettre de CHARLES DE GONZAGUE, duc DE RETHEL, audit duc de Nevers. Mantoue, 30 octobre 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e465">Fol. 39 • 30 Lettre de « CESARE D'ESTE », duc DE MODENE, audit duc de Nevers. « Di Modana, li 12 novembre 1626 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e473">Fol. 41 • 31 Lettre de « CATERINA [DE MEDICIS], duchessa [douairière] DI MANTOVA », audit duc de Nevers. « Di Mantova, a 13 novembre 1626 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e481">Fol. 43 • 32 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. Mantoue, 18 novembre 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e489">Fol. 45 • 33 Lettre du « comte... ALESSANDRO STRIGGI » audit duc de Nevers. Mantoue, 26 novembre 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e497">Fol. 46 • 34 Lettre de CHARLES DE GONZAGUE, duc DE RETHEL, audit duc de Nevers. Mantoue, 27 novembre 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e505">Fol. 47 • 35 Lettre du « duc DE WIRTTEMBERG » audit duc de Nevers. « De Stutgart, le 17 decembre 1626 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e513">Fol. 49 • 36 Lettre de « CESARE D'ESTE », duc DE MODENE, audit duc de Nevers. Modène, 11 décembre 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e521">Fol. 51 • 37 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. Mantoue, 18 décembre 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e529">Fol. 52 • 38 Lettre d' « ALESSANDRO STIGGI » audit duc de Nevers. « Di Mantova, il di 28 di decembre 1626 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e537">Fol. 54 • 39 Lettre de « CATERINA, duchessa DI MANTOVA », audit duc de Nevers. Mantoue, 26 decembre 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e545">Fol. 56 • 40 Lettre de « GIACINTO GONZAGA » audit duc de Nevers. « Di Mantova, li 28 di decembre 1626 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e553">Fol. 57 • 41 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. Mantoue, 1er janvier 1627. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e564">Fol. 58 • 42 Lettre de « FRANCESCO MARTINELLO » audit duc de Nevers. Mantoue, 26 janvier 1627. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e572">Fol. 59 • 43 Lettre de « CATERINA, duchessa DI MANTOVA », audit duc de Nevers. Mantoue, 27 janvier 1627. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e580">Fol. 61 • 44 Lettre de « TRAJANO GUISCARDI » audit duc de Nevers. Casal, 20 février 1627. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e588">Fol. 63 et 64 • 45-46 Lettres du cardinal « BARBERINO » audit duc de Nevers. Rome, 23 et 24 mars 1627. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e596">Fol. 65 • 47 Lettre de « CATERINA, duchessa DI MANTOVA », audit duc de Nevers. Mantoue, 6 avril 1627. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e607">Fol. 67 • 48 Lettre du grand-duc DE TOSCANE, FERDINAND DE MEDICIS, audit duc de Nevers. « Dalla villa Imperiale, li 23 aprile 1627 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e618">Fol. 69 • 49 Lettre de CHRISTINE DE LORRAINE, grande-duchesse douairière DE TOSCANE, audit duc de Nevers. Florence, 23 avril 1627. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e629">Fol. 71 • 50 Lettre de « MARIA MAGDALENA » D'AUTRICHE, grandeduchesse douairière DE TOSCANE, bru de la précédente, audit duc de Nevers. « Dalla villa Imperiale, li 23 aprile 1627 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e640">Fol. 73 • 51 Lettre de « PIRRO MARIA GONZAGA » audit duc de Nevers. « Di Mantova, li 21 maggio 1627 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e648">Fol. 74 • 52 Lettre de « PAOLEMILIO GONZAGA » audit duc de Nevers. « Di Mantova, a di 30 maggio 1627 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e656">Fol. 75 • 53 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. « Di Mantova, 1 giugno 1627 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e664">Fol. 76 • 54 Lettre de « MASSIMIGLIANO STROZZI » audit duc de Nevers. « Mantova, 9 giugno 1627 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e672">Fol. 77 • 55 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. « Mantova, 26 giugno 1627 ». En italien.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e680">56-59 Lettres de CHARLES DE GONZAGUE, duc DE NEVERS.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e686">Fol. 78 et 80 • 56-57 au duc de Rethel, son fils. Novembre 1626. Copies.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e697">Fol. 82 • 58 « al sigr marqueze Anto. Bentivoglio,... Paris, 27 decembre 1626 ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e711">Fol. 83 • 59 au « seigneur Martinelli,... Paris, 2 janvier 1627 ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e722">60 Lettre, en forme de remontrance, pour servir d'instruction au Sr de Courtavené, dépêché par ledit duc de Nevers auprès de l'électeur de Cologne.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e738">Fol. 88 • 61 « Les propositions du sultan JAQUIA, principe ottomano », audit duc de Nevers. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e746">Fol. 90 • 62 Lettre, signée : « F. J. C. », adressée audit duc de Nevers. « 27 avril ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e757">Fol. 92 • 63 « Estat des compagnies ordonnez pour les armées de Piedmont, le nombre d'hommes et leur rendez vous ». Vers 1621.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e765">64 Lettre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e781">65 « Copia della risposta fatta da S. A. all' ambasciata del Sr don Alonso Pimentel ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e809">66 Lettre qui paraît être de la main de CHARLES DE GONZAGUE, duc DE NEVERS. Elle est adressée à la reine Marie de Médicis et commence (fol. 97) par : « Madame, ayant apris que l'intention de V. M. estoit que les fortifications de cette ville cessassent pandant la conferance de Soisons... ». Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e815">67 « Descriptio ordinis novi equitum, utis, veluti medium idoneum hac nostra tempestate pro liberatione christianorum ab infidelibus oppressorum, confirmari possit a serenissimo domino nostro papa Paulo Quinto ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057755_d0e832">68 Sommaire d'une pièce de théâtre, en italien, portant pour titre : « Germanico Cesare. Tragedia ». Il commence (fol. 106), après deux feuillets consacrés au titre et au tableau des personnages, par : « Atto primo. Scena prima. Virbio e Veranio discorrono con allegrezza grande del ritorno di Germanico e delle feste preparate dal popolo d'Antiochia... » et finit par : «... coro fermo termina la tragedia, provando essere una tragedia la vita humana ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4705 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc577552&Cote=Français 4705&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4705 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9527</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant l'histoire des années 1622 à 1627.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Agnelli, Vincenzo. • Lettres.</p>
+<p>Babin, Martin. • Lettres (1626).</p>
+<p>Baldeschi, Benedetto. • Lettres.</p>
+<p>Bentivoglio, Guido, cardinal. • Lettres.</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>Christian V, roi de Danemark. • Lettre.</p>
+<p>Courtavenel, De. • Mission auprès de l'électeur de Cologne.</p>
+<p>France. • Pitorre (1622-1627).</p>
+<p>Germanico Cesare, tragédie. • Sommaire.</p>
+<p>Gonzague, Famille de.</p>
+<p>Gonzague, Ferdinand de, cardinal et duc de Mantoue. • Lettres et actes.</p>
+<p>Gonzague, Hyacinthe de. • Lettres.</p>
+<p>Gonzague, Paul-Émile de. • Lettre (1627).</p>
+<p>Gonzague, Pirro Maria de. • Lettre.</p>
+<p>Guerre. • Pièces (1621).</p>
+<p>Guiscardi, Trajano. • Lettres.</p>
+<p>Jachia, sultan. • Propositions au duc de Nevers.</p>
+<p>Littérature, italienne.</p>
+<p>Louis XIII, roi de France. • Notes et pièces diverses.</p>
+<p>Mantoue. • Succession du duché.</p>
+<p>Martinello, Francesco. • Lettres.</p>
+<p>Médicis, Ferdinand II de, grand-duc de Toscane. • Lettres.</p>
+<p>Milice Chrétienne, Ordre de la.</p>
+<p>Modène, César d'Este, duc de. • Lettres.</p>
+<p>Montferrat, Marquisat, puis duché de. • Succession.</p>
+<p>Nevers, Catherine de Lorraine, duchesse de. • Lettres.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Droits, sur Mantoue et Montferrat.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Spada, Bernardin, cardinal. • Lettres.</p>
+<p>Sriggi, Alessandro. • Lettres.</p>
+<p>Strozzi, Léon, prieur de Capoue. • Lettres.</p>
+<p>Toscane, Christine de Lorraine, grande-duchesse de. • Lettres.</p>
+<p>Toscane, Marie-Madeleine d'Autriche, grande-duchesse de. • Lettres.</p>
+<p>Würtemberg, Jean-Frédéric, duc de. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e223');">1 Lettre de « CHRISTIANUS QUINTUS, electus princeps DANIAE, Norvegiae, Vandalorum Gothorumque, dux Slesvici, Holsatiae, Stormariae ac Dithmarsiae, comes in Oldenburg et Delmenhorst,... duci Niverniae,... Datae ex arce Coldinga, 22 maii 1626 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e234');">2 Lettre de « FRANCESCO MARTINELLO » audit duc de Nevers, Charles de Gonzague. « Di Mantova, a di 23 di maggio 1626 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e242');">3-4 Lettres de « FERDINANDO GONZAGA », duc DE MAYENNE, audit duc de Nevers, son père. Mantoue, 23 et 29 mai 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e250');">5 Lettre de « BENEDETTO BALDESCHI » audit duc de Nevers. Rome, 2 juin 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e258');">6 Lettre de FERDINAND DE GONZAGUE, duc DE MANTOUE, audit duc de Nevers. Mantoue, 30 juin 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e266');">7 Lettre de « FR. ANTONIO DAÇA,... a don Henrique de Guzman,... Valdescopeço, 8 de junio 1626 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e279');">8 Lettre du « comte... ALESSANDRO STRIGGI » audit duc de Nevers. Mantoue, 10 juin 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e287');">9 Lettre de CATHERINE DE MEDICIS, duchesse DE MANTOUE, audit duc de Nevers. Mantoue, 14 juin 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e298');">10 Lettre, signée : « Il card. [BERNARDIN] SPADA », audit duc de Nevers. Nantes, 27 juillet 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e306');">11 Lettre, signée : « Il cardinale [GUI] BENTIVOGLIO », audit duc de Nevers. Rome, 29 juillet 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e314');">12 Lettre, signée : « Il duca DI RETEL », CHARLES DE GONZAGUE, audit duc de Nevers. « Di Porto, a di 7 d'agosto 1626 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e322');">13 Lettre de « FRANCESCO MARTIN ELLO » audit duc de Nevers. « Di Porto, a di 7 di agosto 1626 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e330');">14 Lettre de « CESARE D'ESTE », duc DE MODENE, écrite 3 jours après la mort de l'«infante Isabella », sa bru, audit duc de Nevers. « Di Modana, li 25 agosto 1626 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e338');">15 Lettre de FERDINAND DE GONZAGUE, duc DE MANTOUE, audit duc de Nevers. Mantoue, 29 août 1 626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e346');">16-23 Recueil de copies de pièces ayant pour titre : « Comment Monseigneur le duc de Rethelois fust appellé à la succession des Estatz de Mantoue et de Montferrat, par ambassadeurs expres envoyés à Monseigneur le duc de Nevers ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e425');">24 Lettre de CHARLES DE GONZAGUE, duc DE RETHEL, audit duc de Nevers, son père. Mantoue, 9 octobre 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e433');">25 Lettre de « FRANCESCO MARTINELLO » audit duc de Nevers. Mantoue, 9 octobre 1626. En ita lien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e441');">26 Lettre du marquis DE GRANA audit duc de Nevers. « Vienna, 12 ottobre 1626 ». En ita lien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e449');">27-28 Lettres de « D. MARTIN BABIN » audit duc de Nevers. Mantoue, 26 octobre et novem bre 1626.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e457');">29 Lettre de CHARLES DE GONZAGUE, duc DE RETHEL, audit duc de Nevers. Mantoue, 30 octobre 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e465');">30 Lettre de « CESARE D'ESTE », duc DE MODENE, audit duc de Nevers. « Di Modana, li 12 novembre 1626 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e473');">31 Lettre de « CATERINA [DE MEDICIS], duchessa [douairière] DI MANTOVA », audit duc de Nevers. « Di Mantova, a 13 novembre 1626 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e481');">32 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. Mantoue, 18 novembre 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e489');">33 Lettre du « comte... ALESSANDRO STRIGGI » audit duc de Nevers. Mantoue, 26 novembre 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e497');">34 Lettre de CHARLES DE GONZAGUE, duc DE RETHEL, audit duc de Nevers. Mantoue, 27 novembre 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e505');">35 Lettre du « duc DE WIRTTEMBERG » audit duc de Nevers. « De Stutgart, le 17 decembre 1626 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e513');">36 Lettre de « CESARE D'ESTE », duc DE MODENE, audit duc de Nevers. Modène, 11 décembre 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e521');">37 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. Mantoue, 18 décembre 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e529');">38 Lettre d' « ALESSANDRO STIGGI » audit duc de Nevers. « Di Mantova, il di 28 di decembre 1626 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e537');">39 Lettre de « CATERINA, duchessa DI MANTOVA », audit duc de Nevers. Mantoue, 26 decembre 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e545');">40 Lettre de « GIACINTO GONZAGA » audit duc de Nevers. « Di Mantova, li 28 di decembre 1626 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e553');">41 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. Mantoue, 1er janvier 1627. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e564');">42 Lettre de « FRANCESCO MARTINELLO » audit duc de Nevers. Mantoue, 26 janvier 1627. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e572');">43 Lettre de « CATERINA, duchessa DI MANTOVA », audit duc de Nevers. Mantoue, 27 janvier 1627. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e580');">44 Lettre de « TRAJANO GUISCARDI » audit duc de Nevers. Casal, 20 février 1627. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e588');">45-46 Lettres du cardinal « BARBERINO » audit duc de Nevers. Rome, 23 et 24 mars 1627. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e596');">47 Lettre de « CATERINA, duchessa DI MANTOVA », audit duc de Nevers. Mantoue, 6 avril 1627. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e607');">48 Lettre du grand-duc DE TOSCANE, FERDINAND DE MEDICIS, audit duc de Nevers. « Dalla villa Imperiale, li 23 aprile 1627 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e618');">49 Lettre de CHRISTINE DE LORRAINE, grande-duchesse douairière DE TOSCANE, audit duc de Nevers. Florence, 23 avril 1627. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e629');">50 Lettre de « MARIA MAGDALENA » D'AUTRICHE, grandeduchesse douairière DE TOSCANE, bru de la précédente, audit duc de Nevers. « Dalla villa Imperiale, li 23 aprile 1627 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e640');">51 Lettre de « PIRRO MARIA GONZAGA » audit duc de Nevers. « Di Mantova, li 21 maggio 1627 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e648');">52 Lettre de « PAOLEMILIO GONZAGA » audit duc de Nevers. « Di Mantova, a di 30 maggio 1627 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e656');">53 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. « Di Mantova, 1 giugno 1627 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e664');">54 Lettre de « MASSIMIGLIANO STROZZI » audit duc de Nevers. « Mantova, 9 giugno 1627 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e672');">55 Lettre de « VINCENZO [AGNELLI], vescovo di Mantova », audit duc de Nevers. « Mantova, 26 giugno 1627 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e680');">56-59 Lettres de CHARLES DE GONZAGUE, duc DE NEVERS.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e722');">60 Lettre, en forme de remontrance, pour servir d'instruction au Sr de Courtavené, dépêché par ledit duc de Nevers auprès de l'électeur de Cologne.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e738');">61 « Les propositions du sultan JAQUIA, principe ottomano », audit duc de Nevers. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e746');">62 Lettre, signée : « F. J. C. », adressée audit duc de Nevers. « 27 avril ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e757');">63 « Estat des compagnies ordonnez pour les armées de Piedmont, le nombre d'hommes et leur rendez vous ». Vers 1621.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e765');">64 Lettre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e781');">65 « Copia della risposta fatta da S. A. all' ambasciata del Sr don Alonso Pimentel ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e809');">66 Lettre qui paraît être de la main de CHARLES DE GONZAGUE, duc DE NEVERS. Elle est adressée à la reine Marie de Médicis et commence (fol. 97) par : « Madame, ayant apris que l'intention de V. M. estoit que les fortifications de cette ville cessassent pandant la conferance de Soisons... ». Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e815');">67 « Descriptio ordinis novi equitum, utis, veluti medium idoneum hac nostra tempestate pro liberatione christianorum ab infidelibus oppressorum, confirmari possit a serenissimo domino nostro papa Paulo Quinto ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057755_d0e832');">68 Sommaire d'une pièce de théâtre, en italien, portant pour titre : « Germanico Cesare. Tragedia ». Il commence (fol. 106), après deux feuillets consacrés au titre et au tableau des personnages, par : « Atto primo. Scena prima. Virbio e Veranio discorrono con allegrezza grande del ritorno di Germanico e delle feste preparate dal popolo d'Antiochia... » et finit par : «... coro fermo termina la tragedia, provando essere una tragedia la vita humana ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

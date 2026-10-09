@@ -1,0 +1,496 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057756">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057756">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4706
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057756_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756">Français 4706 • Anc. 9528 • Recueil de pièces originales et de copies concernant l'histoire des années 1531 à 1626.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e225">Fol. 1 • 1 « Epitome omnium eorum quae in comitiis spirensibus, anno 1570, peracta sunt ». En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e233">Fol. 5 • 2 « Copia instrumenti procurae ad compromittendum ». Pour les intérêts de Louis de Gonzague, duc de Nevers, au duché de Mantoue. 1572. En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e241">Fol. 9 • 3 « Copia instrumenti procurae ad supplicandum Caesareae Majestati pro obtinendo delegato... 1572 ». Pour les intérêts dudit duc de Nevers au duché de Mantoue. En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e249">Fol. 11 • 4 « Copia instrumenti procurae ad lites... 1572 ». Pour les intérêts dudit duc de Nevers au duché de Mantoue. En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e257">Fol. 15 et suiv • 5-12 Lettres du cardinal HERCULE DE GONZAGUE à son neveu non encore duc de Nevers, Louis de Gonzague. De 1557 à 1562. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e265">13 Instruction de LOUIS DE GONZAGUE, duc DE NEVERS, pour Camillo Volta, allant à la cour de France. Carmagnole, 28 octobre 1567. En italien. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e271">Fol. 37 • 14 Acte scellé de FREDERIC DE GONZAGUE, duc DE MANTOUE, par lequel il s'oblige, au cas où son mariage avec Marguerite, fille d'Anne d'Alençon, marquise de Montferrat, et de Guillaume Paléologue, serait agréé par ladite marquise de Montferrat, à constituer à son épouse une dot de cent mille écus d'or. Mantoue, 8 avril 1531. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e279">Fol. 39 • 15 « Coppie du testament de feu Monseigneur le duc Francisque de Manthoue. 1550 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e287">Fol. 49 • 16 Pièce, en italien, portant pour titre : « Contenta in processu ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e321">Fol. 53 • 17 Acte par lequel l'empereur CHARLES-QUINT confirme la constitution de dot assignée par Frédéric de Gonzague, duc de Mantoue, à sa future épouse, Marguerite Paléologue, fille d'Anne d'Alençon, marquise de Montferrat, et de Guillaume Paléologue. Ratisbonne, 20 mai 1532. En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e329">Fol. 55 • 18 « Copie de la minute du compromis, baillée à Monseigneur le duc de Mantoue [Guillaume de Gonzague] par les gens de Monseigneur le duc de Nevers [Louis de Gonzague], laquelle fust passée à Pinerol » en « 1574 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e337">19 Note, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e371">20 « Inventorio mandato da Mantova di giolii dell' heredita di fu Mr cardinal di Mantova illmo... 1565 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e389">Fol. 62 • 21 « Rimostrationi quali si fano per parte dil marchesato di Saluzzo all' illmo et eccmo Sor Lodovico Birago, vicere de qua de monti, sopra la publicatione delle littere patenti di S. M., portanti edito d'ellettion in officii formati di l'essertitio di procura, e comandamento di prender littere di provisione, e come piu amplamente si contiene in dette littere publicate nella senescalia dil detto marchesato, il quinto giorno di decembre 1572, et altre littere portanti officio di guardia di picioli sigilli, per instrumenti di contratti, ultime volonta et atti giudiciarii ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e409">Fol. 64 • 22 Lettre de MARGUERITE PALEOLOGUE, duchesse DE MANTOUE, à son fils, Louis de Gonzague, non encore duc de Nevers. 12 juin 1559. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e417">Fol. 65 • 23 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, « al molto ill. Sr, il Sr Carlo Birago,... Di Bar sur Aulbe, il 25 decembre 1567 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e431">Fol. 67 • 24 Lettre de MARGUERITE PALEOLOGUE, duchesse DE MANTOUE, à son fils, Louis de Gonzague, non encore duc de Nevers. Mantoue, 14 avril 1563. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e439">Fol. 69 • 25 « Copia della lettera della Sra marchesa » DE PESCARA, ISABELLE DE GONZAGUE, à Marguerite Paléologue, duchesse de Mantoue, sa mère. Milan, 29 décembre 1562. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e450">Fol. 71 • 26 Acte par lequel HERCULE DE GONZAGUE, cardinal de Mantoue, ordonne à Charles Malatesta d'assigner en payement d'une somme due par led. cardinal au Sr Olivo « jura et melioramenta portus Corregii Cremaschorum ». Mantoue, 29 septembre 1541. En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e461">Fol. 73 et suiv • 27-30 Lettres, avec chiffre, signées : « Il c[avaliere] GUAZZO », adressées au duc de Nevers, Louis de Gonzague. Casal, 20 et 31 août, 3 mai, 7 juin 1572.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e469">31 Mémoire portant pour titre : « Ce que Monseigneur le duc de Manthoue pretend ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e485">Fol. 94 • 32 « Nativita delli figliuoli dello sermo arciduca Carlo di Austria et di sua amantissima consorte Maria, arciduchessa di Austria, natta duchessa di Bavera, etc. ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e499">Fol. 96 • 33 « Copia di una lettera scritta dall' eccmo Sr duca DI NEVERS all' eccmo Sr duca di Mantova, il 28 di febraro 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e519">Fol. 98 • 34 Lettre du Sr « PALIANO,... al Sr cavaglier Guazzo », son neveu. 10 octobre 1567. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e533">Fol. 100 • 35 Déclarations faites par ARNAUD DU FERRIER, ambassadeur de France à Venise, concernant l'entrée dans le comté de La Mirandole du « capitano Artusie, con cento sessanta soldati francesi », et par la comtesse DE LA MIRANDOLE, acceptant comme tutrice de son fils, le comte Galeotto Pico de La Mirandole, la protection accordée par le roi de France audit comté de La Mirandole. La Mirandole, 22 juin 1571. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e549">Fol. 102 • 36 « Memoriale per S. E. » le duc de Nevers, Louis de Gonzague.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e568">Fol. 104 • 37 « Lista d'alcune persone che si trovarono all' assedio dell' Haver, per le quali S. E. [Louis de Gonzague] ha procurato ricompensa presso S. M. ». 1563 ? En italien. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e576">Fol. 106 • 38 Lettre de la comtesse DE LA MIRANDOLE au duc de Nevers, Louis de Gonzague, pour lui recommander le capitaine « Nicolo,... gia eletto da monsre di Foix, ambre della Mta del re ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e593">Fol. 107 • 39 Liste des personnes appartenant à la religion réformée, domiciliées à Carmagnole. En italien. 1571.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e601">Fol. 109 • 40 Lettre de « FRANCESCO MARTINELLO » à Charles de Gonzague, duc de Nevers. Mantoue, 17 avril 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e609">Fol. 110 • 41 Lettre de « C. FERDINANDO GONZAGA », duc DE MAYENNE, à Charles de Gonzague, duc de Nevers, son père. Mantoue, 17 avril 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e617">Fol. 111 • 42 Lettre de « D. OTTAVIO CYBO » audit duc de Nevers. « Di Massa, li 20 decembre 1625 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e625">Fol. 112 • 43 Supplique adressée audit duc de Nevers par « FILIPPO D'AQUINO, ministro fra gl' hebrei convertito », concernant une pension qu'on refusait de lui payer, en dépit de la promesse à lui faite par le cardinal François de La Rochefoucauld. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e633">Fol. 114 • 44 Lettre de « FRANCESCO PRATO » audit duc de Nevers. Mantoue, 16 février 1626. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e641">Fol. 115 • 45 Lettre du cardinal « HIERONIMO DI COREGGIO », concernant la mort du comte Louis Pic de La Mirandole. Rome, 16 février 1569. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e649">Fol. 117 • 46 État des poudres, munitions et artillerie qui étaient à La Mirandole au 30 août 1569. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e657">Fol. 119 • 47 Lettre, en italien, adressée au duc de Nevers, Charles de Gonzague, par un de ses agents à Rome, « LANDRIANO ZANETTI » ? Rome, 21 avril 1625.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e665">Fol. 121 • 48 Texte de la convention passée entre « Fulvia di Correggio, contessa vedova Della Mirandola », et « Luigi Pico », pour le gouvernement du comté de La Mirandole, durant la minorité du jeune comte Galeotto Pico de La Mirandole. 22 novembre 1568. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e673">Fol. 122 • 49 Lettre de « HIERONIMO, cardinale DI CORREGGIO », à ladite comtesse de La Mirandole. Rome, 5 février 1569. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e681">50 Mémoire, en italien, contre le seigneur Luigi, et pour la comtesse de La Mirandole et le duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e708">51 « Lettera del RUCELLAI prima. Copia ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e733">Fol. 128 • 52 « Guardie et santinelle fatte nella Mirandola. 1569 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e741">53 « Memoria delle cose et ufficii che il capitano Hercole, di ritorno alla Mirandola, havera da fare per parte delle illme signore madama DI RANDAN et Sra LIVIA » PICO.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e776">Fol. 132 • 54 Lettre de « HIERONIMO, cardinale DI COREGIO », au seigneur Luigi Pico. « Di Roma, il 1 di giugno 1569 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e784">Fol. 134 • 55 Requête au nom de « Francesco Parma, luogotenente del Sr Carlo Birago », adressée pour les neveux dudit Parma au duc de Nevers. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e795">Fol. 136 • 56 « Lettera del [ANNIBAL ORICELLARI DE'] RUCELLAI, ... vescovo di Carcassona... », au duc de Nevers, Louis de Gonzague. « Di Parigi, alli 25 d'ottobre 1569 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e803">57 Mémoire, en italien, rédigé, au nom de la comtesse de La Mirandole, pour répondre aux plaintes de son beau-frère, le Sr Luigi Pico.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e831">Fol. 139 • 58 Lettre, en forme de requête, de « LUIGI PICO », cotuteur, avec la comtesse de La Mirandole, du jeune comte Galeotto Pico, son neveu, au duc de Nevers, Louis de Gonzague. 31 août 1569. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e839">Fol. 140 • 59 Lettre de « HIERONIMO, cardinale DI COREGIO, al sigor Luigi Pico Della Mirandola ». Rome, 29 juin 1569. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e850">Fol. 142 • 60 Lettre de « GIOVANNI TURLO » au duc de Nevers, Louis de Gonzague. « Di Grana, li 20 di marzo 1577 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e858">Fol. 144 • 61 Lettre de « VERGINIO, ducha DE SELCI ORSINI », audit duc de Nevers. Mantoue, 8 août 1594. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e866">Fol. 145 • 62 Lettre de « J. BECIO » audit duc de Nevers, Louis de Gonzague. « Di Casale, li 22 di giugno 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e874">Fol. 147 • 63 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à Livio « Crotto,... Di Carrara, il 1 settembre 1571 ». En italien. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e882">Fol. 149 • 64 « Copia del memoriale dato in consiglio, a Casale, per conto delli 9000 scudi, con l'ordine del consiglio, fatto li 18 aprile 1572 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e893">Fol. 151 • 65 Lettre de « PIETRO RUFFETTI » audit duc de Nevers. Turin, 28 octobre 1588. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e901">Fol. 152 • 66 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, au duc de Mantoue. Au camp devant Laon, le 25 juillet 1594. En italien. Minute.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e909">Fol. 154 • 67 « Ricordi dil Sr vescovo di Saluzo sopra gli hugonot Per la corte. Saluzo, 24 gen° 1570 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e920">68 Lettre, en italien, adressée à Livio Crotto, de la part du duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057756_d0e942">Fol. 158 • 69 « Copia di lettera del sigr conte HERCOLE STROZZI, scritta al Sr cavaliere Guazzo,... dalla villa desu de Suzara, li 28 aprile 1577 ». En italien.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4706 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc577569&Cote=Français 4706&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4706 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9528</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant l'histoire des années 1531 à 1626.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Aquin, Philippe d'. • Supplique.</p>
+<p>Becio, Francesco. • Lettres.</p>
+<p>Carmagnola. • Protestants.</p>
+<p>Cibo, Ottavio. • Lettres.</p>
+<p>Corregio, Hieronimo di, cardinal. • Lettres (1569).</p>
+<p>France. • Pitorre (1531-1626).</p>
+<p>Gonzague, Famille de.</p>
+<p>Gonzague, Ferdinand de, cardinal et duc de Mantoue. • Lettres et actes.</p>
+<p>Gonzague, Frédéric de, duc de Mantoue. • Dot de Marguerite Paléologue.</p>
+<p>Gonzague, Hercule de, cardinal de Mantoue. • Inventaire de ses joyaux.</p>
+<p>Gonzague, Hercule de, cardinal de Mantoue. • Lettres.</p>
+<p>Guazzo, Chevalier Stefano, agent du duc de Nevers. • Correspondance.</p>
+<p>Hâvre, Le. • Siège de 1563.</p>
+<p>Mantoue. • Succession du duché.</p>
+<p>Mantoue, Marguerite Paléologue, duchesse de. • Dot.</p>
+<p>Mantoue, Marguerite Paléologue, duchesse de. • Lettres.</p>
+<p>Martinello, Francesco. • Lettres.</p>
+<p>Mirandole, La. • Garnison.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Pièces diverses.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Paliano, G. • Lettres (1567).</p>
+<p>Parma, Francesco. • Requête.</p>
+<p>Philippe d'Aquin. • Supplique.</p>
+<p>Pic de la Mirandole, Fulvia, comtesse de Randan. • Tutelle de Galeotto Pic de La Mirandole.</p>
+<p>Pic de la Mirandole, Galeotto. • Minorité.</p>
+<p>Pic de la Mirandole, Louis, comte. • Mort.</p>
+<p>Prato, Francesco. • Lettre (1626).</p>
+<p>Rucellai, Annibal, évêque de Carcassonne. • Lettres.</p>
+<p>Ruffetti, Pietro. • Lettre (1588).</p>
+<p>Selci Orsini, Verginio, duc de. • Lettre.</p>
+<p>Turlo, Giovanni. • Lettre.</p>
+<p>Volta, Camillo. • Instruction.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e225');">1 « Epitome omnium eorum quae in comitiis spirensibus, anno 1570, peracta sunt ». En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e233');">2 « Copia instrumenti procurae ad compromittendum ». Pour les intérêts de Louis de Gonzague, duc de Nevers, au duché de Mantoue. 1572. En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e241');">3 « Copia instrumenti procurae ad supplicandum Caesareae Majestati pro obtinendo delegato... 1572 ». Pour les intérêts dudit duc de Nevers au duché de Mantoue. En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e249');">4 « Copia instrumenti procurae ad lites... 1572 ». Pour les intérêts dudit duc de Nevers au duché de Mantoue. En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e257');">5-12 Lettres du cardinal HERCULE DE GONZAGUE à son neveu non encore duc de Nevers, Louis de Gonzague. De 1557 à 1562. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e265');">13 Instruction de LOUIS DE GONZAGUE, duc DE NEVERS, pour Camillo Volta, allant à la cour de France. Carmagnole, 28 octobre 1567. En italien. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e271');">14 Acte scellé de FREDERIC DE GONZAGUE, duc DE MANTOUE, par lequel il s'oblige, au cas où son mariage avec Marguerite, fille d'Anne d'Alençon, marquise de Montferrat, et de Guillaume Paléologue, serait agréé par ladite marquise de Montferrat, à constituer à son épouse une dot de cent mille écus d'or. Mantoue, 8 avril 1531. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e279');">15 « Coppie du testament de feu Monseigneur le duc Francisque de Manthoue. 1550 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e287');">16 Pièce, en italien, portant pour titre : « Contenta in processu ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e321');">17 Acte par lequel l'empereur CHARLES-QUINT confirme la constitution de dot assignée par Frédéric de Gonzague, duc de Mantoue, à sa future épouse, Marguerite Paléologue, fille d'Anne d'Alençon, marquise de Montferrat, et de Guillaume Paléologue. Ratisbonne, 20 mai 1532. En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e329');">18 « Copie de la minute du compromis, baillée à Monseigneur le duc de Mantoue [Guillaume de Gonzague] par les gens de Monseigneur le duc de Nevers [Louis de Gonzague], laquelle fust passée à Pinerol » en « 1574 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e337');">19 Note, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e371');">20 « Inventorio mandato da Mantova di giolii dell' heredita di fu Mr cardinal di Mantova illmo... 1565 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e389');">21 « Rimostrationi quali si fano per parte dil marchesato di Saluzzo all' illmo et eccmo Sor Lodovico Birago, vicere de qua de monti, sopra la publicatione delle littere patenti di S. M., portanti edito d'ellettion in officii formati di l'essertitio di procura, e comandamento di prender littere di provisione, e come piu amplamente si contiene in dette littere publicate nella senescalia dil detto marchesato, il quinto giorno di decembre 1572, et altre littere portanti officio di guardia di picioli sigilli, per instrumenti di contratti, ultime volonta et atti giudiciarii ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e409');">22 Lettre de MARGUERITE PALEOLOGUE, duchesse DE MANTOUE, à son fils, Louis de Gonzague, non encore duc de Nevers. 12 juin 1559. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e417');">23 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, « al molto ill. Sr, il Sr Carlo Birago,... Di Bar sur Aulbe, il 25 decembre 1567 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e431');">24 Lettre de MARGUERITE PALEOLOGUE, duchesse DE MANTOUE, à son fils, Louis de Gonzague, non encore duc de Nevers. Mantoue, 14 avril 1563. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e439');">25 « Copia della lettera della Sra marchesa » DE PESCARA, ISABELLE DE GONZAGUE, à Marguerite Paléologue, duchesse de Mantoue, sa mère. Milan, 29 décembre 1562. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e450');">26 Acte par lequel HERCULE DE GONZAGUE, cardinal de Mantoue, ordonne à Charles Malatesta d'assigner en payement d'une somme due par led. cardinal au Sr Olivo « jura et melioramenta portus Corregii Cremaschorum ». Mantoue, 29 septembre 1541. En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e461');">27-30 Lettres, avec chiffre, signées : « Il c[avaliere] GUAZZO », adressées au duc de Nevers, Louis de Gonzague. Casal, 20 et 31 août, 3 mai, 7 juin 1572.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e469');">31 Mémoire portant pour titre : « Ce que Monseigneur le duc de Manthoue pretend ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e485');">32 « Nativita delli figliuoli dello sermo arciduca Carlo di Austria et di sua amantissima consorte Maria, arciduchessa di Austria, natta duchessa di Bavera, etc. ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e499');">33 « Copia di una lettera scritta dall' eccmo Sr duca DI NEVERS all' eccmo Sr duca di Mantova, il 28 di febraro 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e519');">34 Lettre du Sr « PALIANO,... al Sr cavaglier Guazzo », son neveu. 10 octobre 1567. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e533');">35 Déclarations faites par ARNAUD DU FERRIER, ambassadeur de France à Venise, concernant l'entrée dans le comté de La Mirandole du « capitano Artusie, con cento sessanta soldati francesi », et par la comtesse DE LA MIRANDOLE, acceptant comme tutrice de son fils, le comte Galeotto Pico de La Mirandole, la protection accordée par le roi de France audit comté de La Mirandole. La Mirandole, 22 juin 1571. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e549');">36 « Memoriale per S. E. » le duc de Nevers, Louis de Gonzague.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e568');">37 « Lista d'alcune persone che si trovarono all' assedio dell' Haver, per le quali S. E. [Louis de Gonzague] ha procurato ricompensa presso S. M. ». 1563 ? En italien. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e576');">38 Lettre de la comtesse DE LA MIRANDOLE au duc de Nevers, Louis de Gonzague, pour lui recommander le capitaine « Nicolo,... gia eletto da monsre di Foix, ambre della Mta del re ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e593');">39 Liste des personnes appartenant à la religion réformée, domiciliées à Carmagnole. En italien. 1571.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e601');">40 Lettre de « FRANCESCO MARTINELLO » à Charles de Gonzague, duc de Nevers. Mantoue, 17 avril 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e609');">41 Lettre de « C. FERDINANDO GONZAGA », duc DE MAYENNE, à Charles de Gonzague, duc de Nevers, son père. Mantoue, 17 avril 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e617');">42 Lettre de « D. OTTAVIO CYBO » audit duc de Nevers. « Di Massa, li 20 decembre 1625 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e625');">43 Supplique adressée audit duc de Nevers par « FILIPPO D'AQUINO, ministro fra gl' hebrei convertito », concernant une pension qu'on refusait de lui payer, en dépit de la promesse à lui faite par le cardinal François de La Rochefoucauld. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e633');">44 Lettre de « FRANCESCO PRATO » audit duc de Nevers. Mantoue, 16 février 1626. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e641');">45 Lettre du cardinal « HIERONIMO DI COREGGIO », concernant la mort du comte Louis Pic de La Mirandole. Rome, 16 février 1569. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e649');">46 État des poudres, munitions et artillerie qui étaient à La Mirandole au 30 août 1569. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e657');">47 Lettre, en italien, adressée au duc de Nevers, Charles de Gonzague, par un de ses agents à Rome, « LANDRIANO ZANETTI » ? Rome, 21 avril 1625.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e665');">48 Texte de la convention passée entre « Fulvia di Correggio, contessa vedova Della Mirandola », et « Luigi Pico », pour le gouvernement du comté de La Mirandole, durant la minorité du jeune comte Galeotto Pico de La Mirandole. 22 novembre 1568. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e673');">49 Lettre de « HIERONIMO, cardinale DI CORREGGIO », à ladite comtesse de La Mirandole. Rome, 5 février 1569. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e681');">50 Mémoire, en italien, contre le seigneur Luigi, et pour la comtesse de La Mirandole et le duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e708');">51 « Lettera del RUCELLAI prima. Copia ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e733');">52 « Guardie et santinelle fatte nella Mirandola. 1569 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e741');">53 « Memoria delle cose et ufficii che il capitano Hercole, di ritorno alla Mirandola, havera da fare per parte delle illme signore madama DI RANDAN et Sra LIVIA » PICO.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e776');">54 Lettre de « HIERONIMO, cardinale DI COREGIO », au seigneur Luigi Pico. « Di Roma, il 1 di giugno 1569 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e784');">55 Requête au nom de « Francesco Parma, luogotenente del Sr Carlo Birago », adressée pour les neveux dudit Parma au duc de Nevers. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e795');">56 « Lettera del [ANNIBAL ORICELLARI DE'] RUCELLAI, ... vescovo di Carcassona... », au duc de Nevers, Louis de Gonzague. « Di Parigi, alli 25 d'ottobre 1569 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e803');">57 Mémoire, en italien, rédigé, au nom de la comtesse de La Mirandole, pour répondre aux plaintes de son beau-frère, le Sr Luigi Pico.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e831');">58 Lettre, en forme de requête, de « LUIGI PICO », cotuteur, avec la comtesse de La Mirandole, du jeune comte Galeotto Pico, son neveu, au duc de Nevers, Louis de Gonzague. 31 août 1569. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e839');">59 Lettre de « HIERONIMO, cardinale DI COREGIO, al sigor Luigi Pico Della Mirandola ». Rome, 29 juin 1569. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e850');">60 Lettre de « GIOVANNI TURLO » au duc de Nevers, Louis de Gonzague. « Di Grana, li 20 di marzo 1577 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e858');">61 Lettre de « VERGINIO, ducha DE SELCI ORSINI », audit duc de Nevers. Mantoue, 8 août 1594. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e866');">62 Lettre de « J. BECIO » audit duc de Nevers, Louis de Gonzague. « Di Casale, li 22 di giugno 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e874');">63 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, à Livio « Crotto,... Di Carrara, il 1 settembre 1571 ». En italien. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e882');">64 « Copia del memoriale dato in consiglio, a Casale, per conto delli 9000 scudi, con l'ordine del consiglio, fatto li 18 aprile 1572 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e893');">65 Lettre de « PIETRO RUFFETTI » audit duc de Nevers. Turin, 28 octobre 1588. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e901');">66 Lettre de LOUIS DE GONZAGUE, duc DE NEVERS, au duc de Mantoue. Au camp devant Laon, le 25 juillet 1594. En italien. Minute.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e909');">67 « Ricordi dil Sr vescovo di Saluzo sopra gli hugonot Per la corte. Saluzo, 24 gen° 1570 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e920');">68 Lettre, en italien, adressée à Livio Crotto, de la part du duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057756_d0e942');">69 « Copia di lettera del sigr conte HERCOLE STROZZI, scritta al Sr cavaliere Guazzo,... dalla villa desu de Suzara, li 28 aprile 1577 ». En italien.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

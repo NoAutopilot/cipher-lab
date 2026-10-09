@@ -1,0 +1,472 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050108">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050108">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3657
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050108_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108">Français 3657 • Anc. 9151 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e101">1 « Instruction donnée par le roy LOUIS [XIII]... à monsieur [Philippe] de Bethune [comte de Selles], allant ambassadeur extraordinaire en ltalie... Faict à Blois, le XXIXe jour d'avril 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e110">Fol. 8 • 2 « Chiffre », avec sa clef.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e123">Fol. 10 • 3 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Blois, le IIe jour de may 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e134">Fol. 11 • 4 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le dernier de l'an 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e142">Fol.13 • 5 Lettre de « l'archiduc FERDINAND à CHARLES BRULART, abbé de Leon [en Bretagne]... Di Gratz, a 4 di gennaro 1616 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e155">Fol. 14 • 6 « Copie de la letre que [CHARLES-EMMANUEL Ier, duc] DE SAVOYE, offroit d'escrire au roy d'Espaigne... En Turino, a 20 de hebrero 1616 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e166">Fol. 16 • 7 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Bloys, ce IIIIe jour de may 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e177">Fol. 18 • 8 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIIIIe jour de may 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e188">Fol. 20 • 9 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXVIIe jour de may 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e199">Fol. 22 • 10 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXVIIe jour de may 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e210">Fol. 24 • 11 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXVIII may 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e218">Fol. 26 • 12 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXIXe jour de may 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e229">Fol. 28 • 13 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce VIII juin 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e237">Fol. 30 • 14 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XVe jour de juin 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e248">Fol. 32 • 15 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XV juin 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e256">Fol. 34 • 16 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, ce XVIIe de juin 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e267">Fol. 36 • 17 Lettre de LOUIS XIII au pape. « Escrit à Fontainebleau, du XXIIe apvril 1616 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e278">Fol. 37 • 18 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XXIIe jour de juin 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e289">Fol. 39 • 19 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, ce premier jour de juillet 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e297">Fol. 41 • 20 « Instance faicte par monsieur [PHILIPPE] DE BETHUNE au sieur don Pietre de Tolede,... Faict à Milan, le quatriesme juillet mil six cens seize ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e305">Fol. 42 • 21 « Responce de don PIETRO DE TOLEDO à monsieur de Bethune,... Faict en la ville de Milan, le vingt troisiesme juillet mil six cens seize ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e313">Fol. 49 • 22 « Trattato di pace et accommodamento di questi ultimi moti di guerra, seguiti trà la maestà del re catholico et l'altezza di Savoia... In Torino, appresso Luigi Pizzamiglio, stampator ducale, 1615 ». En italien. Imprimé.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e326">Fol. 62 • 23 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le cinqe de juilet 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e337">Fol. 64 • 24 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XIIe de juilet 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e348">Fol. 66 • 25 Lettres patentes de « LOUIS » XIII, portant défense « de faire des amas et levées de gens de guerre pour iceux conduire hors [du] royaume... Donné à Paris, le XVIIIe jour de juillet » 1616. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e359">Fol. 68 • 26 Lettre de « LOUIS » XIII à « monseigneur de Bethune,... Escrit à Paris, le XXe jour de juillet 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e370">Fol. 70 • 27 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XXe de juilet 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e381">Fol. 72 • 28 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 10 de aoust 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e389">Fol. 74 • 29 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 14 de aoust 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e397">Fol. 75 • 30 Lettre du Sr « GIULIO ROY » à Philippe de Bethune. « A Milan, ce 14me d'ost 1616, à mi jour ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e416">Fol. 76 • 31 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le 14e jour d'aoust 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e427">Fol. 78 • 32 Lettre de « don PEDRO DE TOLEDO » à Philippe de Béthune. « De Pavie, ce 15e d'aoust 1616 ». Traduction.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e438">Fol. 80 • 33 Original de la précédente, en espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e446">Fol. 82 • 34 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXe jour du moys d'aoust 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e457">Fol. 85 • 35 Lettre de « LOUIS [XIII]... à noz tres chers et grandz amys, alliez et confederez, les duc et seigneurie de Venize... Escript à Paris, le XXe jour d'aoust mil six cens seize ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e471">Fol. 86 • 36 Lettre de « MARIE [DE MEDICIS]... à noz tres chers et grandz amys, alliez et confederez, les duc et seigneurie de Venize... Escript à Paris, le XXe jour d'aoust 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e487">Fol. 87 • 37 Lettre de « LOUIS [XIII]... à monsieur de Leon, mon ambassadeur à Venize... Escript à Paris, le XXe jour d'aoust 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e498">Fol. 88 • 38 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Leon,... Escript à Paris, le XXe jour d'aoust 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e509">Fol. 89 • 39 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XXe d'aoust 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e520">Fol. 91 • 40 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, ce XXIe jour d'aoust 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e531">Fol. 92 • 41 « Proposition » faite par PHILIPPE « DE BETHUNE, ambassadeur extraordinaire en Italye... au Sr don Pietre de Tolede, gouverneur de Milan, le 28e aoust 1616 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e545">Fol. 94 • 42 Avis adressé au roi par les « Srs mareschal D'ESDIGUIERES et [PHILIPPE] DE BETHUNE,... Faict à Turin, aoust mil six cens seize ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e561">Fol. 96 • 43 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... De Paris, ce premier septembre 1616, à midy ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e574">Fol. 96bis • 44 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monseigneur de Bethune,... De Paris, ce premier septembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e582">Fol. 98 • 45 Lettre de « C[HARLES-]EMANUEL » Ier, duc DE SAVOIE, à « Mr de Bethune,... A Verceil, ce 3 7bre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e599">Fol. 100 • 46 « Respuesta dada al senor de Betuna, embaxador de Su Magestad Cristianisima, por don PEDRO DE TOLEDO, en Pavia, a 5 de septiembre 1616 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e607">Fol. 102 • 47 Lettre de CHARLES-EMMANUEL Ier, duc « DE SAVOYE, à la royne [Marie de Médicis]... Le 6e 7bre 1616 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e624">Fol. 103 • 48 Minute d'une déclaration de « LOUIS [XIII]... au Sr don Pedro de Toledo,... 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e635">Fol. 104 • 49 « Copie de la lettre de monsieur [PHILIPPE] DE BETHUNE au Sr don Pietro de Tolede,... De Verseille, ce 11 septembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e646">Fol. 106 • 50 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce XIIIe septembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e657">Fol. 108 • 51 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XVe de septembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e668">Fol. 109 • 52 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 25 de 7bre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e679">Fol. 110 • 53 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le premier de octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e687">Fol. 112 • 54 « Aggiunta all' instruzzione data al Sor baron Rons, ambasciadore straordinario in Spagna, da parte del re della Gran Brettagna... 1616 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e701">Fol. 114 • 55 Lettre de « LOUIS [XIII]... à mon cousin l'archiduc Ferdinand,... Escrit à Paris, ce IIIIe octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e717">Fol. 116 • 56 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... De Paris, ce IIIIe octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e728">Fol. 118 • 57 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Betune,... De Paris, ce IIIIe octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e739">Fol. 120 • 58 « Extraict de ce qu'a rapporté le chancelier de La Vallée du voyage faict à Milan, le VIe octobre 1616 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e760">Fol. 121 • 59 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Betune,... De Paris, ce VIIe octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e771">Fol. 122 • 60 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le 18 d'octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e779">Fol. 124 • 61 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le XXIe octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e790">Fol. 126 • 62 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monseigneur de Bethune,... De Thurin, ce 25 octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e801">Fol. 128 • 63 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce 25 octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e809">Fol. 130 • 64 « Propositioni fatti per l'illmo sigor cardinale LODOVISIO et per l'eccmo sigor DI BETHUNA, ambasciadore straordinario di S. M. cristianissima in Italia all' eccmo sigor don Pietro di Toledo, alli 27 di ottobre 1616 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e845">Fol. 132 • 65 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, le dernier octobre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e853">Fol. 133 • 66 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce 2e novembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e864">Fol. 135 • 67 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce IX novembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e872">Fol. 137 • 68 « Traité de paix » conclu par l'entremise de Victor-Amédée, prince de Piémont, entre Charles-Emmanuel, duc de Savoie, et « Henry de Savoye [duc de Nemours]... Faict et arresté le 14e jour du mois de novembre 1616 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e893">Fol. 139 • 69 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce XVIe novembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e909">Fol. 141 • 70 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XVIe de novembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e920">Fol. 143 • 71 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le XXe novembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e931">Fol. 145 • 72 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le 23 novembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e939">Fol. 147 • 73 « Propositions » relatives à « l'exécution du traité de Xanten », faites par « DUDLEY CARLETON, ambassadeur du roy d'Angletere... en l'assemblée de messrs les estatz des provinces unies des Païs Bas, le 23e du mois de novembre 1616, stylo veteri ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e963">Fol. 149 • 74 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le dernier novembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e971">Fol. 151 • 75 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... A Paris, ce sixiesme decembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e979">Fol. 153 • 76 Mémoire relatif au différend survenu entre le duc de Savoie et le comte de Bueil, et à la protection accordée à ce dernier par le roi Louis XIII. « Decembre 1616 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e1002">Fol. 155 • 77 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune, ambassadeur extraordinaire en Italie... De Conflans, le XVIIIe desembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e1018">Fol. 157 • 78 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce 23 decembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e1026">Fol. 158 • 79 Lettre d'ARMAND JEAN DU PLESSIS « DE RICHELIEU [évêque de Luçon]... à monsieur de Bethune,... De Paris, ce 25e decembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050108_d0e1042">Fol. 160 • 80 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce XXVIIe decembre 1616 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3657 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc50108r&Cote=Français 3657&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3657 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9151</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Vélin et papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Béthune, Philippe de, comte de Selles. • Ambassade, à Rome.</p>
+<p>Béthune, Philippe de, comte de Selles. • Lettres.</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>La Rochefoucauld, François de, cardinal. • Ambassade à Rome (1609).</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Mangot, Claude, sieur de Villarceaux, secrétaire d'État. • Lettres.</p>
+<p>Puysieux, Pierre Brûlart, marquis de Sillery, vicomte de, secrétaire d'État. • Lettres et actes.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Actes et lettres.</p>
+<p>Toledo-Osorio, Don Pedro de, marquis de Villafranca, gouverneur de Milan. • Actes et lettres.</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e101');">1 « Instruction donnée par le roy LOUIS [XIII]... à monsieur [Philippe] de Bethune [comte de Selles], allant ambassadeur extraordinaire en ltalie... Faict à Blois, le XXIXe jour d'avril 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e110');">2 « Chiffre », avec sa clef.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e123');">3 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Blois, le IIe jour de may 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e134');">4 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le dernier de l'an 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e142');">5 Lettre de « l'archiduc FERDINAND à CHARLES BRULART, abbé de Leon [en Bretagne]... Di Gratz, a 4 di gennaro 1616 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e155');">6 « Copie de la letre que [CHARLES-EMMANUEL Ier, duc] DE SAVOYE, offroit d'escrire au roy d'Espaigne... En Turino, a 20 de hebrero 1616 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e166');">7 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Bloys, ce IIIIe jour de may 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e177');">8 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIIIIe jour de may 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e188');">9 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXVIIe jour de may 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e199');">10 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXVIIe jour de may 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e210');">11 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXVIII may 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e218');">12 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXIXe jour de may 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e229');">13 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce VIII juin 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e237');">14 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XVe jour de juin 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e248');">15 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XV juin 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e256');">16 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, ce XVIIe de juin 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e267');">17 Lettre de LOUIS XIII au pape. « Escrit à Fontainebleau, du XXIIe apvril 1616 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e278');">18 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XXIIe jour de juin 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e289');">19 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, ce premier jour de juillet 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e297');">20 « Instance faicte par monsieur [PHILIPPE] DE BETHUNE au sieur don Pietre de Tolede,... Faict à Milan, le quatriesme juillet mil six cens seize ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e305');">21 « Responce de don PIETRO DE TOLEDO à monsieur de Bethune,... Faict en la ville de Milan, le vingt troisiesme juillet mil six cens seize ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e313');">22 « Trattato di pace et accommodamento di questi ultimi moti di guerra, seguiti trà la maestà del re catholico et l'altezza di Savoia... In Torino, appresso Luigi Pizzamiglio, stampator ducale, 1615 ». En italien. Imprimé.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e326');">23 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le cinqe de juilet 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e337');">24 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XIIe de juilet 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e348');">25 Lettres patentes de « LOUIS » XIII, portant défense « de faire des amas et levées de gens de guerre pour iceux conduire hors [du] royaume... Donné à Paris, le XVIIIe jour de juillet » 1616. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e359');">26 Lettre de « LOUIS » XIII à « monseigneur de Bethune,... Escrit à Paris, le XXe jour de juillet 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e370');">27 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XXe de juilet 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e381');">28 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 10 de aoust 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e389');">29 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 14 de aoust 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e397');">30 Lettre du Sr « GIULIO ROY » à Philippe de Bethune. « A Milan, ce 14me d'ost 1616, à mi jour ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e416');">31 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le 14e jour d'aoust 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e427');">32 Lettre de « don PEDRO DE TOLEDO » à Philippe de Béthune. « De Pavie, ce 15e d'aoust 1616 ». Traduction.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e438');">33 Original de la précédente, en espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e446');">34 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXe jour du moys d'aoust 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e457');">35 Lettre de « LOUIS [XIII]... à noz tres chers et grandz amys, alliez et confederez, les duc et seigneurie de Venize... Escript à Paris, le XXe jour d'aoust mil six cens seize ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e471');">36 Lettre de « MARIE [DE MEDICIS]... à noz tres chers et grandz amys, alliez et confederez, les duc et seigneurie de Venize... Escript à Paris, le XXe jour d'aoust 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e487');">37 Lettre de « LOUIS [XIII]... à monsieur de Leon, mon ambassadeur à Venize... Escript à Paris, le XXe jour d'aoust 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e498');">38 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Leon,... Escript à Paris, le XXe jour d'aoust 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e509');">39 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XXe d'aoust 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e520');">40 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, ce XXIe jour d'aoust 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e531');">41 « Proposition » faite par PHILIPPE « DE BETHUNE, ambassadeur extraordinaire en Italye... au Sr don Pietre de Tolede, gouverneur de Milan, le 28e aoust 1616 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e545');">42 Avis adressé au roi par les « Srs mareschal D'ESDIGUIERES et [PHILIPPE] DE BETHUNE,... Faict à Turin, aoust mil six cens seize ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e561');">43 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... De Paris, ce premier septembre 1616, à midy ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e574');">44 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monseigneur de Bethune,... De Paris, ce premier septembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e582');">45 Lettre de « C[HARLES-]EMANUEL » Ier, duc DE SAVOIE, à « Mr de Bethune,... A Verceil, ce 3 7bre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e599');">46 « Respuesta dada al senor de Betuna, embaxador de Su Magestad Cristianisima, por don PEDRO DE TOLEDO, en Pavia, a 5 de septiembre 1616 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e607');">47 Lettre de CHARLES-EMMANUEL Ier, duc « DE SAVOYE, à la royne [Marie de Médicis]... Le 6e 7bre 1616 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e624');">48 Minute d'une déclaration de « LOUIS [XIII]... au Sr don Pedro de Toledo,... 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e635');">49 « Copie de la lettre de monsieur [PHILIPPE] DE BETHUNE au Sr don Pietro de Tolede,... De Verseille, ce 11 septembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e646');">50 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce XIIIe septembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e657');">51 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XVe de septembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e668');">52 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 25 de 7bre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e679');">53 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le premier de octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e687');">54 « Aggiunta all' instruzzione data al Sor baron Rons, ambasciadore straordinario in Spagna, da parte del re della Gran Brettagna... 1616 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e701');">55 Lettre de « LOUIS [XIII]... à mon cousin l'archiduc Ferdinand,... Escrit à Paris, ce IIIIe octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e717');">56 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... De Paris, ce IIIIe octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e728');">57 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Betune,... De Paris, ce IIIIe octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e739');">58 « Extraict de ce qu'a rapporté le chancelier de La Vallée du voyage faict à Milan, le VIe octobre 1616 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e760');">59 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Betune,... De Paris, ce VIIe octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e771');">60 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le 18 d'octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e779');">61 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le XXIe octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e790');">62 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monseigneur de Bethune,... De Thurin, ce 25 octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e801');">63 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce 25 octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e809');">64 « Propositioni fatti per l'illmo sigor cardinale LODOVISIO et per l'eccmo sigor DI BETHUNA, ambasciadore straordinario di S. M. cristianissima in Italia all' eccmo sigor don Pietro di Toledo, alli 27 di ottobre 1616 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e845');">65 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, le dernier octobre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e853');">66 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce 2e novembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e864');">67 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce IX novembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e872');">68 « Traité de paix » conclu par l'entremise de Victor-Amédée, prince de Piémont, entre Charles-Emmanuel, duc de Savoie, et « Henry de Savoye [duc de Nemours]... Faict et arresté le 14e jour du mois de novembre 1616 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e893');">69 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce XVIe novembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e909');">70 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XVIe de novembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e920');">71 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le XXe novembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e931');">72 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le 23 novembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e939');">73 « Propositions » relatives à « l'exécution du traité de Xanten », faites par « DUDLEY CARLETON, ambassadeur du roy d'Angletere... en l'assemblée de messrs les estatz des provinces unies des Païs Bas, le 23e du mois de novembre 1616, stylo veteri ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e963');">74 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le dernier novembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e971');">75 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... A Paris, ce sixiesme decembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e979');">76 Mémoire relatif au différend survenu entre le duc de Savoie et le comte de Bueil, et à la protection accordée à ce dernier par le roi Louis XIII. « Decembre 1616 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e1002');">77 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune, ambassadeur extraordinaire en Italie... De Conflans, le XVIIIe desembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e1018');">78 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce 23 decembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e1026');">79 Lettre d'ARMAND JEAN DU PLESSIS « DE RICHELIEU [évêque de Luçon]... à monsieur de Bethune,... De Paris, ce 25e decembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050108_d0e1042');">80 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, ce XXVIIe decembre 1616 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

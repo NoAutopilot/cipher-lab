@@ -177,3 +177,35 @@ known-answer sibling), then the first test: key no.35 re-reads Bourdeau's fr.397
 8 Oct UTC spend on this lane: workers 22.36 (ledger rows), lane orchestrator not exposed; under the 40 cap.
 Next best attempt and why: 9 Oct, after Gallica cools down -- Rondinelli views (~$1), then re-screen fr.4698 against
 Bourdeau at HEAD (if he has moved on or read it, record it), then the next unswept Nevers/League volumes.
+
+## Wave 16 (9 Oct 2026, 06:1x UTC by date -u): daily re-check
+
+- Orchestrator role moved to account 4 (ROOM 04:56 UTC TAKEOVER); this lane now reports to "orchestrator (account-4)".
+- Account 1 reported seven_day allowed_warning (LANE SIG-5, 05:14 UTC): BUDGETS.md scaling rule -> no new workers;
+  this wave is script work by the lane only.
+- Gallica: 403 again (1 request, 06:1x UTC). Rondinelli stays blocked; no Gallica requests until the next check.
+- fr.4698 / fr.4700 (Nevers-Mantua, Badalocchio): Bourdeau at HEAD 1fb3c46 (unchanged since 7 Oct) still lists them as
+  his candidate (CATALOGUE.md entry 331); left to him.
+- Finding-aid sweep (archivesetmanuscrits only, 2.5 s apart): Français 3600-3609, 3642-3660, 4699-4711 fetched
+  (snapshots in sources/bnf-findingaids/2026-10-07/). 29 cipher-marked items without a decipherment note, all but
+  fr.4700 in volumes the notices give no Gallica link for. Rows for the next BnF reproduction batch (owner-side,
+  ASKS 78 pattern), ranked:
+  - **R1 fr.3654** (not online): eleven letters "avec chiffre" to Savary de Brèves, ambassador in Rome, Nov 1611 -
+    Nov 1613, from Marie de Médicis (7), Villeroy (2) and Puysieux (2) -- a pool of one office and key family, the same
+    correspondence as `ciphers/fr3789-mariedemedicis-savary-1610` (Marie de Médicis to Savary, 1610). No Bourdeau or
+    Tomokiyo entry found for fr.3654.
+  - **R2 fr.4707** (not online): f.15 no.26 Nevers to the Cardinal of Guise, La Cassine, 25 Jan 1586 (copy, chiffre);
+    f.70 no.76 Nevers to Cardinal Pellevé, Chenonceau, 20 Sept 1586 (minute, chiffre). Keys: Tomokiyo reconstructed
+    the "Nevers-Guise" and "Nevers-Pellevé" ciphers from fr.3612's interlined letters (nevers.htm, BnF fr.3612
+    section) -- held keys for both if the leaves are reproduced.
+  - R3 fr.3646 f.108 (dispatch in cipher, 6 Feb 1593) and f.129 (Dauphiné affairs, 26 May); fr.3645 f.92 (Vivonne,
+    Quitry, Salagnac to the King, 11 Nov); fr.3603 f.75 (copy of Joyeuse's cipher letter to his brother the
+    cardinal); fr.3659 f.48 (Monteleón to Pedro de Toledo, Paris, 18 Oct 1617, copy); fr.4699 f.23 (Ghislieri to
+    Agocchi, Rome, 20 Jan 1593).
+  - Not letters or not cipher in our sense: fr.3657 f.8 (a cipher with its key: a key sheet), fr.4703 f.106 (Nevers
+    key with Count Rusca, 1619: a key sheet), fr.4708 ff.69, 86 (letters "signed with a cipher" = a monogram).
+- Desk rows still open (posted for the orchestrator 8 Oct): Sega edition question; fr.3622 f.91 owner sign sorter.
+
+9 Oct UTC spend on this lane: 0 workers so far; lane orchestrator not exposed.
+Next best attempt and why: nothing runnable from the cloud today without Gallica or a desk answer; the R1/R2 rows are
+the strongest new material (a held key or a sibling folder) once reproduced. Re-check once a day.

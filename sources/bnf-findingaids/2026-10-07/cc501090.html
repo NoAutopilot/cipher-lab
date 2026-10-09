@@ -1,0 +1,470 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050109">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050109">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3658
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050109_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109">Français 3658 • Anc. 9152 • Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e91">1 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le vingt et sixe jour de decembre 1616 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e100">Fol. 5 • 2 « Manifeste de Mrs CESAR [duc] DE VENDOSME, CHARLES DE GONZAGUES [duc DE NEVERS], HENRY DE LORRAINE [duc DE MAYENNE], HENRY DE LA TOUR [duc DE BOUILLON, et FRANÇOIS] D'ESTREE », marquis DE COEUVRES, qui déclarent s'unir pour s'opposer aux menées du maréchal d'Ancre, 1616. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e137">Fol. 6 • 3 « Lectre escripte à monsieur le mareschal de Lesdiguieres par messieurs les ducs DE VENDOSME, DU MAINE, DE NEVERS, DE BOUILLON et marquis DE COEUVRE,... De Mezieres, le 15 janvier 1617 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e165">Fol. 7 • 4 Lettre d'ARMAND DU PLESSIS « DE RICHELIEU [évêque de Luçon]... à monsieur de Bethune,... Ce 18e janvier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e176">Fol. 9 • 5 Lettre d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... A Paris, le 21 janvier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e184">Fol. 11 • 6 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, ce XXIIIme janvier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e195">Fol. 13 • 7 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le 24 de janvier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e203">Fol. 14 • 8 Lettre d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Ce 30 janvier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e211">Fol. 16 • 9 Lettre de CHARLES DE GONZAGUE, duc « DE NEVERS, au roy... A Soissons, ce dernier janvier 1617 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e219">Fol. 18 • 10 « Extraict » contenant la « quatorziesme proposition... du cahier de l'assemblée des notables, tenue à Rouen en l'année M.VI.C. dix sept ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e235">Fol. 20 • 11 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le premier jour de fevrier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e243">Fol. 22 • 12 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le 6 de fevrier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e251">Fol. 24 • 13 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, ce XIIme febvrier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e262">Fol. 26 et 28 • 14-15 Deux lettres d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Ce 12e febvrier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e273">Fol. 30 et 32 • 16-17 Deux lettres d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Le 28e febvrier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e284">Fol. 34 • 18 « Copie de la letre escrite par monsieur [CHARLES-EMMANUEL Ier, duc] DE SAVOYE, à l'abbé Scaglia, son ambassadeur à Rome... 20 marzo 1617 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e295">Fol. 36 • 19 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le 3e avril 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e311">Fol. 38 • 20 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, ce sixe apvril 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e322">Fol. 40 • 21 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 6 de avril 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e330">Fol. 41 • 22 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, ce septiesme apvril 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e338">Fol. 43 et 45 • 23-24 Deux lettres d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Ce 8e apvril 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e349">Fol. 47 • 25 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, le XXIIIIe jour d'avril 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e360">Fol. 49 • 26 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XXIIIIe de avril au soir », 1617.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e371">Fol. 50 • 27 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le IIe de may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e382">Fol. 52 • 28 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit au chasteau du Bois de Vinciennes, le 8 jour de may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e390">Fol. 54 • 29 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XVIe jour de may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e401">Fol. 56 • 30 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... Du 8e may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e412">Fol. 57 • 31 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... Du 16e may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e423">Fol. 58 • 32 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXIIIe jour de may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e434">Fol. 59 • 33 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XXIIIe jour de may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e445">Fol. 61 • 34 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, ce 27 de may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e453">Fol. 63 • 35 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXIXe jour de may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e464">Fol. 65 • 36 Lettre de « C[HARLES-]EMANUEL » Ier, duc DE SAVOIE, à « monsieur de Bethune,... Le 30 may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e475">Fol. 67 • 37 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce dernier may 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e483">Fol. 69 • 38 « Coppie de la lettre du roy [LOUIS XIII]... à Mr le marquis de Senecey, du III juin 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e494">Fol. 71 • 39 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIII juin 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e502">Fol. 73 • 40 « Coppie de la lettre de monseigneur le marquis DE SENEÇAY, du 6 juing 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e515">Fol. 75 • 41 Lettre, avec chiffre et déchiffrement, de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Fontainebleau, le XIIIIe jour de juin 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e526">Fol. 77 • 42 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Fontainebleau, le XIXe de juin 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e537">Fol. 79 • 43 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Fontainebleau, le XXe jour de juin 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e548">Fol. 82 • 44 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Fontainebleau, le XXe juing 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e559">Fol. 84 • 45 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Fontainebleau, le XXe jour de juin 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e570">Fol. 86 • 46 Lettre d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Le 23e janvier 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e581">Fol. 87 • 47 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Fontainebleau, le XXVIe juin 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e592">Fol. 89 • 48 Lettre de « C[HARLES-]EMANUEL » Ier, duc DE SAVOIE à « Mr de Bethune,... De Thurin, ce 29 juin 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e606">Fol. 91 • 49 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIIIe jour de juillet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e617">Fol. 93 • 50 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 8 de juilet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e625">Fol. 95 • 51 Lettre de PHILIPPE DE « BETHUNE » à l'«ambassadeur de Venise... De Turin, ce 10e juliet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e641">Fol. 97 • 52 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 10 de juilet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e649">Fol. 99 • 53 Lettre de PHILIPPE DE « BETHUNE,... à monsieur le duc de Savoye,... A Turin, le 10 juillet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e657">Fol. 101 • 54 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XIe jour de juillet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e668">Fol. 104 • 55 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIe jour de juillet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e679">Fol. 106 • 56 « Copie de letre » de PHILIPPE DE BETHUNE « à monseigneur de Puisieux, le 14e juliet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e690">Fol. 108 • 57 « Copie de la letre » de PHILIPPE DE BETHUNE « à domp Pietre de Tolede, le 14e juliet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e701">Fol. 109 • 58 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... Du 18e juliet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e712">Fol. 111 • 59 Lettre de CHARLES DE NEUFVILLE, marquis D'«HALINCOURT,... à monsieur de Bethune,... A Lion, ce 20e de juiliet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e728">Fol. 113 • 60 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXV juillet 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e741">Fol. 115 • 61 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le premier de aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e749">Fol. 116 • 62 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIIe jour d'aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e760">Fol. 118 • 63 Lettre de don « PEDRO DE TOLEDO » à « monseigneur de Betuna,... De Novara, a 4 de agosto 1617 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e768">Fol. 120 • 64 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce Ve aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e779">Fol. 122 • 65 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XIIe jour d'aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e790">Fol. 123 • 66 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIIe jour d'aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e801">Fol. 125 • 67 Lettre de « don PEDRO DE TOLEDO » à « mos. de Betuna,... De Novara, a 12 de agosto 1617 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e809">Fol. 127 • 68 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XIX de aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e817">Fol. 129 • 69 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce XXe jour d'aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e828">Fol. 131 • 70 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XXe jour d'aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e839">Fol. 133 • 71 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXe jour d'aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e850">Fol. 134 • 72 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXe jour d'aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e861">Fol. 136 • 73 « Extraict d'une lettre escripte au roy par monseigneur DE SENECEY, le 21e aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e877">Fol. 138 • 74 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXVII aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e885">Fol. 140 • 75 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXVIIIe jour d'aoust 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e896">Fol. 141 • 76 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 3 de 7bre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e907">Fol. 142 • 77 « Coppie de la promesse baillée par le roy [LOUIS XIII] aux ambassadeurs de Venize pour la restitution de leurs vaisseaux... Faict à Paris, le VIe jour de septembre 1617 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e923">Fol. 144 • 78 « Coppie de l'escript baillé par les ambassadeurs de Venize », contenant les pouvoirs desdits ambassadeurs. « De Parigi, a 6 di settembre 1617 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050109_d0e931">Fol. 146 • 79 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce VI septembre 1617 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3658 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc501090&Cote=Français 3658&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3658 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9152</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>France. • Pitorre (Louis XIII).</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Milan. • Traités et négociations (1618).</p>
+<p>Puysieux, Pierre Brûlart, marquis de Sillery, vicomte de, secrétaire d'État. • Lettres et actes.</p>
+<p>Richelieu, Armand-Jean du Plessis de, cardinal. • Lettres.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Actes et lettres.</p>
+<p>Toledo-Osorio, Don Pedro de, marquis de Villafranca, gouverneur de Milan. • Actes et lettres.</p>
+<p>Villeroy, Nicolas de Neufville, seigneur de, secrétaire d'État. • Lettres et actes.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e91');">1 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le vingt et sixe jour de decembre 1616 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e100');">2 « Manifeste de Mrs CESAR [duc] DE VENDOSME, CHARLES DE GONZAGUES [duc DE NEVERS], HENRY DE LORRAINE [duc DE MAYENNE], HENRY DE LA TOUR [duc DE BOUILLON, et FRANÇOIS] D'ESTREE », marquis DE COEUVRES, qui déclarent s'unir pour s'opposer aux menées du maréchal d'Ancre, 1616. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e137');">3 « Lectre escripte à monsieur le mareschal de Lesdiguieres par messieurs les ducs DE VENDOSME, DU MAINE, DE NEVERS, DE BOUILLON et marquis DE COEUVRE,... De Mezieres, le 15 janvier 1617 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e165');">4 Lettre d'ARMAND DU PLESSIS « DE RICHELIEU [évêque de Luçon]... à monsieur de Bethune,... Ce 18e janvier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e176');">5 Lettre d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... A Paris, le 21 janvier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e184');">6 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, ce XXIIIme janvier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e195');">7 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le 24 de janvier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e203');">8 Lettre d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Ce 30 janvier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e211');">9 Lettre de CHARLES DE GONZAGUE, duc « DE NEVERS, au roy... A Soissons, ce dernier janvier 1617 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e219');">10 « Extraict » contenant la « quatorziesme proposition... du cahier de l'assemblée des notables, tenue à Rouen en l'année M.VI.C. dix sept ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e235');">11 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le premier jour de fevrier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e243');">12 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, le 6 de fevrier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e251');">13 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, ce XIIme febvrier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e262');">14-15 Deux lettres d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Ce 12e febvrier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e273');">16-17 Deux lettres d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Le 28e febvrier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e284');">18 « Copie de la letre escrite par monsieur [CHARLES-EMMANUEL Ier, duc] DE SAVOYE, à l'abbé Scaglia, son ambassadeur à Rome... 20 marzo 1617 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e295');">19 Lettre de CLAUDE « MANGOT [DE VILLARCEAU]... à monsieur de Bethune,... De Paris, le 3e avril 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e311');">20 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, ce sixe apvril 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e322');">21 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 6 de avril 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e330');">22 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, ce septiesme apvril 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e338');">23-24 Deux lettres d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Ce 8e apvril 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e349');">25 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Paris, le XXIIIIe jour d'avril 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e360');">26 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XXIIIIe de avril au soir », 1617.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e371');">27 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le IIe de may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e382');">28 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit au chasteau du Bois de Vinciennes, le 8 jour de may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e390');">29 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XVIe jour de may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e401');">30 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... Du 8e may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e412');">31 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... Du 16e may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e423');">32 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXIIIe jour de may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e434');">33 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XXIIIe jour de may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e445');">34 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Conflans, ce 27 de may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e453');">35 Lettre, avec chiffre et déchiffrement, de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXIXe jour de may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e464');">36 Lettre de « C[HARLES-]EMANUEL » Ier, duc DE SAVOIE, à « monsieur de Bethune,... Le 30 may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e475');">37 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce dernier may 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e483');">38 « Coppie de la lettre du roy [LOUIS XIII]... à Mr le marquis de Senecey, du III juin 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e494');">39 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIII juin 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e502');">40 « Coppie de la lettre de monseigneur le marquis DE SENEÇAY, du 6 juing 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e515');">41 Lettre, avec chiffre et déchiffrement, de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Fontainebleau, le XIIIIe jour de juin 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e526');">42 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Fontainebleau, le XIXe de juin 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e537');">43 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escrit à Fontainebleau, le XXe jour de juin 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e548');">44 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Fontainebleau, le XXe juing 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e559');">45 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Fontainebleau, le XXe jour de juin 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e570');">46 Lettre d'ARMAND DU PLESSIS « DE RICHELIEU,... à monsieur de Bethune,... Le 23e janvier 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e581');">47 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Fontainebleau, le XXVIe juin 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e592');">48 Lettre de « C[HARLES-]EMANUEL » Ier, duc DE SAVOIE à « Mr de Bethune,... De Thurin, ce 29 juin 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e606');">49 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIIIe jour de juillet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e617');">50 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 8 de juilet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e625');">51 Lettre de PHILIPPE DE « BETHUNE » à l'«ambassadeur de Venise... De Turin, ce 10e juliet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e641');">52 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 10 de juilet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e649');">53 Lettre de PHILIPPE DE « BETHUNE,... à monsieur le duc de Savoye,... A Turin, le 10 juillet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e657');">54 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XIe jour de juillet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e668');">55 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIe jour de juillet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e679');">56 « Copie de letre » de PHILIPPE DE BETHUNE « à monseigneur de Puisieux, le 14e juliet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e690');">57 « Copie de la letre » de PHILIPPE DE BETHUNE « à domp Pietre de Tolede, le 14e juliet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e701');">58 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... Du 18e juliet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e712');">59 Lettre de CHARLES DE NEUFVILLE, marquis D'«HALINCOURT,... à monsieur de Bethune,... A Lion, ce 20e de juiliet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e728');">60 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXV juillet 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e741');">61 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le premier de aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e749');">62 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIIe jour d'aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e760');">63 Lettre de don « PEDRO DE TOLEDO » à « monseigneur de Betuna,... De Novara, a 4 de agosto 1617 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e768');">64 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce Ve aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e779');">65 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XIIe jour d'aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e790');">66 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIIe jour d'aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e801');">67 Lettre de « don PEDRO DE TOLEDO » à « mos. de Betuna,... De Novara, a 12 de agosto 1617 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e809');">68 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le XIX de aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e817');">69 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce XXe jour d'aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e828');">70 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XXe jour d'aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e839');">71 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXe jour d'aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e850');">72 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXe jour d'aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e861');">73 « Extraict d'une lettre escripte au roy par monseigneur DE SENECEY, le 21e aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e877');">74 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXVII aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e885');">75 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXVIIIe jour d'aoust 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e896');">76 Lettre de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monsieur de Bethune,... De Paris, le 3 de 7bre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e907');">77 « Coppie de la promesse baillée par le roy [LOUIS XIII] aux ambassadeurs de Venize pour la restitution de leurs vaisseaux... Faict à Paris, le VIe jour de septembre 1617 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e923');">78 « Coppie de l'escript baillé par les ambassadeurs de Venize », contenant les pouvoirs desdits ambassadeurs. « De Parigi, a 6 di settembre 1617 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050109_d0e931');">79 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce VI septembre 1617 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

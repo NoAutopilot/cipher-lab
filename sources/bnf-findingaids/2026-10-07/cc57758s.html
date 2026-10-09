@@ -1,0 +1,487 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057758">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057758">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4708
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057758_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758">Français 4708 • Anc. 9530 • Recueil de lettres originales adressées à Louis de Gonzague et à Charles de Gonzague, ducs de Nevers, et à Henriette de Clèves, duchesse de Nevers.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e178">Fol. 1 • 1 Lettre de « MARIE DE BOURBON », duchesse douairière DE LONGUEVILLE, à Henriette de Clèves, duchesse de Nevers. Entre 1595 et 1601.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e186">2-3 Lettres d' « ELEONORE DE BOURBON » VENDOME.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e192">Fol. 2 • 2 à Henriette de Clèves, duchesse de Nevers, sa nièce. 1595.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e206">Fol. 3 • 3 à Louis de Gonzague, duc de Nevers, son neveu. 1588.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e223">4 Lettre, signée de deux monogrammes, adressée à Henriette de Cleves, duchesse de Nevers ; elle commence (fol. 5) par : « Je ne veus, Mme, que ce porteur s'an aille, sans vous importuner de troys lignes... » et finit par : «... me permettre d'am (sic) dire aultant à Mme de Raitz. Adieu, ma duchesse ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e241">Fol. 7 • 5 Lettre de « HENRIETTE DE GONZAGUE et DE CLEVES » à Henriette de Clèves, duchesse de Nevers, sa mère. Entre 1599 et 1601.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e249">Fol. 9 • 6 Lettre, signée d'un monogramme, de CATHERINE DE MARCILLY, dame DE CIPIERRE, à Charles de Gonzague, duc de Nevers. Entre la mort du roi Henri IV et celle du chevalier de Guise, 1610-1614.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e263">Fol. 11 • 7 Lettre incomplète à la fin. Elle paraît avoir été adressée à la duchesse de Nevers, Henriette de Clèves. On y parle de « Mme de Raiz », Claude-Catherine de Clermont, épouse du maréchal de Retz; de « Mr d'Oysonville », qui a présenté à ladite « dame de Raiz » une lettre de la duchesse de Nevers et « le Cupido » ; de « Mr de La Vieuville », qui « a fait grande instance pour avoir augmentation à Maizieres » ; du « comte de Grandpré », qui « a voulu faire quelques remontrances au roy de ce que Monseigneur [le duc de Nevers] vouloit qu'il le recogneust... ». La lettre finit par : «... Et ayant apris ce que vous desirez de Monseigneur de Mayenne, je ne fauldray de vous en donner ad... ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e280">Fol. 12 et suiv • 8-12 Lettres, signées d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, épouse d'Albert de Gondy, duc de Retz, maréchal de France, à Henriette de Clèves, duchesse de Nevers. La troisième de ces lettres (fol. 16) est incomplète.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e288">Fol. 22 • 13 Lettre de LOUISe DE LORRAINE, reine douairière de France, à Henriette de Clèves, duchesse de Nevers. 1595.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e296">14-15 Lettres, signées d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, épouse d'Albert de Gondy, duc DE RETZ, maréchal de France.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e302">Fol. 23 • 14 à « ma chere seur... ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e313">Fol. 24 • 15 à la « duchesse de Nevers ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e324">Fol. 26 et suiv • 16-18 Lettres de LOUISE DE LORRAINE, fille de Henri de Lorraine, duc de Guise, et de Catherine de Clèves, à sa tante, la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e332">Fol. 32 et suiv • 19-21 Lettres, signées d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e340">22 Lettre écrite de la même main qui a écrit la lettre portée sous le n° 4 et signée du premier des deux monogrammes qui figurent au bas de ladite lettre. Adressée à Henriette de Clèves, duchesse de Nevers, elle commence (fol. 38) par : « Je ne fis jamais mieus que de croire le S. comseil de ma duchesse, car ayant esté issy je n'ay trouvé les choses comme l'on les m'avoyt faictes... » et finit par : «... je vous en diré le reste à nostre premiere veue. Et cepandant honnores moy tousjours, Mme, de l'heur de vos bonne graces ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e349">Fol. 40 • 23 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e357">Fol. 41 • 24 Lettre de « MARGUERITE » DE FRANCE, reine DE NAVARRE, au duc de Nevers, Charles de Gonzague.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e365">Fol. 42 • 25 Lettre de Mme DE « VIEUBOUR » à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e381">Fol. 44 • 26 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e395">Fol. 47 • 27 Lettre, signée d'un monogramme, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e420">Fol. 49 • 28 Lettre de « LOUYSE DE COLLIGNY » à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e428">29 Lettre signée du même monogramme et écrite de la même main que la lettre portée sous le n° 22. Adressée à la duchesse de Nevers, elle commence (fol. 50) par : « Ma prinsesse, la suffisance de ce porteur me gardera vous faire grand discours. Ces troys motz ceront donc pour vous supplier... » et finit par : «... et sur cette verité, je baise tres humblemant sa belle main ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e434">Fol. 52 • 30 Lettre de « F. DE CLEVES » à « Madame » la duchese de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e442">31 Lettre non signée à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e455">Fol. 54 • 32 Lettre de « LOUYSE DE COLLIGNY » à la duchesse de Nevers. Pougues, 14 juillet.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e463">Fol. 55 • 33 Lettre de CATHERINE DE MARCILLY, dame DE CIPIERRE, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e471">Fol. 56 • 34 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e479">Fol. 57 • 35 Lettre de « MARGUERITE DE BRION » à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e487">Fol. 58 • 36 Lettre de « MARIE DE CLEVES » à son beau-frère, le duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e495">Fol. 60 • 37 Lettre, signée d'un monogramme, de FULVIA PICA DE LA MIRANDOLE, comtesse DE RANDAN, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e503">Fol. 62 • 38 Lettre d' « ANNE DE MONTAFYE » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e514">Fol. 63 • 39 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e522">Fol. 64 • 40 Lettre de CHARLOTTE-CATHERINE DE LA TREMOILLE, princesse DE CONDE, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e530">Fol. 66 • 41 Lettre d' « ANTHOINETTE, duchesse DE CLEVES », au duc de Nevers, Charles de Gonzague.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e538">42 Lettre, signée d'un monogramme, adressée au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e551">Fol. 69 • 43 Lettre, signée de deux chiffres, de FRANÇOISE D'ORLEANS, seconde femme de Louis de Bourbon, prince DE CONDE, à la duchesse de Nevers, Henriette de Clèves, sa nièce. Après 1572.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e559">44 Billet de six lignes au duc de Nevers, écrit, semble-t-il, de la main de FULVIA PICA DE LA MIRANDOLE, comtesse DE RANDAN, dont une lettre se trouve au fol. 60.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e565">Fol. 71 • 45 Lettre, signée d'un monogramme, de CATHERINE DE CLEVES, duchesse DE GUISE, à la duchesse de Nevers, Henriette de Clèves, sa soeur.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e573">Fol. 73 • 46 Lettre de JEANNE DE COEME, « princesse DE CONTY », à « la duchesse de Nevers », sa cousine.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e584">Fol. 75 et 77 • 47-48 Lettres, signées de deux monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers, son beau-frère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e595">49 Lettre, signée de deux monogrammes, à la duchesse de Nevers, « ma cousine ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e615">Fol. 79 • 50 Lettre de MARIE DE CLEVES au duc de Nevers. 1572.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e623">Fol. 81 et suiv • 51-53 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, à la duchesse et au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e634">Fol. 86 • 54 Lettre, signée d'un chiffre, de FRANÇOISE D'ORLEANS, seconde femme de Louis de Bourbon, prince DE CONDE, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e642">Fol. 88 et 90 • 55-56 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc et à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e650">Fol. 90 • 57 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e658">Fol. 92 • 58 Lettre, signée d'un monogramme, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers, son beau-frère. Après le 26 décembre 1574.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e666">Fol. 94 • 59 Lettre, signée d'un monogramme, de MARIE DE CLEVES à la duchesse de Nevers. Après la mort du roi Charles IX.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e674">Fol. 96 et suiv • 60-63 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc et à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e682">Fol. 104 et suiv • 64-70 Lettres, dont trois signées d'un monogramme, avec chiffre et déchiffrement, de HENRIETTE DE CLEVES, duchesse DE NEVERS, au duc de Nevers, son mari.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e696">71 Lettre, signée de deux monogrammes.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e719">Fol. 118 et 120 • 72-73 Lettres, signées d'un monogramme, de HENRIETTE DE CLEVES, duchesse DE NEVERS, au duc de Nevers, son mari.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e727">Fol. 121 • 74 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e735">Fol. 123 • 75 Lettre, signée d'un monogramme, de FRANÇOISE D'ORLEANS, seconde femme de Louis de Bourbon, prince DE CONDE, à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e743">Fol. 125 • 76 Lettre, signée d'un monogramme, de MARIE DE CLEVES à la duchesse de Nevers, sa soeur.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e751">Fol. 127 et 129 • 77-78 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, à la duchesse et au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e759">Fol. 131 et suiv • 79-82 Lettres, signées d'un monogramme, de HENRIETTE DE CLEVES, duchesse DE NEVERS, au duc de Nevers, son mari. Avec chiffre et déchiffrement.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e767">Fol. 138 • 83 Lettre, signée de deux monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e775">Fol. 138 • 84 Post-scriptum de la lettre qui précède, écrit de la main de CLAUDE-CATHERINE DE CLERMONT.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e783">Fol. 139 et suiv • 85-90 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc et à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e794">Fol. 146 • 91 Lettre, signée d'un monogramme, de MARIE DE CLEVES au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e802">Fol. 147 • 92 Lettre de CATHERINE DE CLEVES, duchesse DE GUISE, à la duchesse de Nevers, sa soeur.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e810">Fol. 147 • 93 Post-scriptum de la lettre qui précède, signé du monogramme et écrit de la main de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e818">Fol. 148 et 150 • 94-95 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, à son beau-frère, le duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e826">Fol. 152 • 96 Lettre de « MARIE DE CLEVES » au duc de Nevers, son beau-frère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e834">Fol. 154 et 156 • 97-98 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers, son beau-frère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e842">Fol. 148 et 160 • 99-100 Lettres de « MARIE DE CLEVES : » au duc de Nevers, son beau-frère.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e850">Fol. 162 et 164 • 101-102 Lettres, signées d'un monogramme, de CATHERINE DE CLEVES, duchesse DE GUISE, à sa soeur, la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e858">Fol. 166 et 167 • 103-104 Lettres de « HENRIETTE DE GONZAGUE et DE CLEVES » à la duchesse et au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e866">Fol. 169 et 171 • 105-106 Lettres de « KATERINE DE CLEVES », duchesse DE GUISE, à la duchesse et au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e874">Fol. 173 • 107 Lettre, signée d'un monogramme, de SILVIA PICA, comtesse DE LA ROCHEFOUCAULD, au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e882">Fol. 173 • 108 Post-scriptum ajouté à la lettre qui précède par FULVIA PICA, comtesse DE RANDAN.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e890">Fol. 175 • 109 Lettre de « MARIE DE CLEVES » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e898">Fol. 177 • 110 Lettre, signée d'un monogramme, de CATHERINE DE CLEVES à la duchesse de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e906">Fol. 179 • 111 Lettre de « MARIE DE CLEVES » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057758_d0e914">Fol. 181 • 112 Lettre de « C[ATHERINE] DE CLEVES » au duc de Nevers.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4708 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57758s&Cote=Français 4708&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4708 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9530</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales adressées à Louis de Gonzague et à Charles de Gonzague, ducs de Nevers, et à Henriette de Clèves, duchesse de Nevers.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Bourbon, Éléonore de, princesse d'Orange. • Lettres.</p>
+<p>Brion, Marguerite de. • Lettre.</p>
+<p>Clèves, Antoinette, duchesse de. • Lettre.</p>
+<p>Coligny, Louise de, princesse d'Orange. • Lettres.</p>
+<p>Condé, Charlotte-Catherine de la Trémoille, princesse de. • Lettres.</p>
+<p>Condé, Françoise d'Orléans, princesse de. • Lettres.</p>
+<p>Condé, Marie de Clèves, princesse de, marquise d'Isles. • Lettres.</p>
+<p>Conti, Jeanne de Coesmes, princesse de. • Lettres.</p>
+<p>Conti, Louise-Marguerite de Lorraine, princesse de.</p>
+<p>Conti, Louise-Marguerite de Lorraine, princesse de. • Lettres.</p>
+<p>Gonzague, Famille de.</p>
+<p>Guise, Catherine de Clèves, duchesse de. • Lettres.</p>
+<p>Longueville, Marie de Bourbon, duchesse d'Estouteville, de Nevers, puis de. • Lettres.</p>
+<p>Louise de Lorraine, femme de Henri III. • Lettres.</p>
+<p>Marcilly, Catherine de, dame de Cipierre. • Lettres.</p>
+<p>Marguerite de Valois, reine de Navarre, puis de France. • Actes et lettres.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, François Ier de Clèves, duc de. • Actes et lettres.</p>
+<p>Nevers, Henriette de Clèves, duchesse de. • Actes et lettres.</p>
+<p>Nevers, Louis de Gonzague, duc de. • Actes et lettres.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Pic de la Mirandole, Fulvia, comtesse de Randan. • Actes et lettres.</p>
+<p>Pic de la Mirandole, Silvia, comtesse de la Rochefoucauld. • Lettres.</p>
+<p>Retz, Claude-Catherine de Clermont-Tonnerre, maréchale de. • Lettres.</p>
+<p>Soissons, Anne de Montafié, comtesse de. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e178');">1 Lettre de « MARIE DE BOURBON », duchesse douairière DE LONGUEVILLE, à Henriette de Clèves, duchesse de Nevers. Entre 1595 et 1601.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e186');">2-3 Lettres d' « ELEONORE DE BOURBON » VENDOME.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e223');">4 Lettre, signée de deux monogrammes, adressée à Henriette de Cleves, duchesse de Nevers ; elle commence (fol. 5) par : « Je ne veus, Mme, que ce porteur s'an aille, sans vous importuner de troys lignes... » et finit par : «... me permettre d'am (sic) dire aultant à Mme de Raitz. Adieu, ma duchesse ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e241');">5 Lettre de « HENRIETTE DE GONZAGUE et DE CLEVES » à Henriette de Clèves, duchesse de Nevers, sa mère. Entre 1599 et 1601.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e249');">6 Lettre, signée d'un monogramme, de CATHERINE DE MARCILLY, dame DE CIPIERRE, à Charles de Gonzague, duc de Nevers. Entre la mort du roi Henri IV et celle du chevalier de Guise, 1610-1614.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e263');">7 Lettre incomplète à la fin. Elle paraît avoir été adressée à la duchesse de Nevers, Henriette de Clèves. On y parle de « Mme de Raiz », Claude-Catherine de Clermont, épouse du maréchal de Retz; de « Mr d'Oysonville », qui a présenté à ladite « dame de Raiz » une lettre de la duchesse de Nevers et « le Cupido » ; de « Mr de La Vieuville », qui « a fait grande instance pour avoir augmentation à Maizieres » ; du « comte de Grandpré », qui « a voulu faire quelques remontrances au roy de ce que Monseigneur [le duc de Nevers] vouloit qu'il le recogneust... ». La lettre finit par : «... Et ayant apris ce que vous desirez de Monseigneur de Mayenne, je ne fauldray de vous en donner ad... ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e280');">8-12 Lettres, signées d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, épouse d'Albert de Gondy, duc de Retz, maréchal de France, à Henriette de Clèves, duchesse de Nevers. La troisième de ces lettres (fol. 16) est incomplète.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e288');">13 Lettre de LOUISe DE LORRAINE, reine douairière de France, à Henriette de Clèves, duchesse de Nevers. 1595.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e296');">14-15 Lettres, signées d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, épouse d'Albert de Gondy, duc DE RETZ, maréchal de France.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e324');">16-18 Lettres de LOUISE DE LORRAINE, fille de Henri de Lorraine, duc de Guise, et de Catherine de Clèves, à sa tante, la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e332');">19-21 Lettres, signées d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e340');">22 Lettre écrite de la même main qui a écrit la lettre portée sous le n° 4 et signée du premier des deux monogrammes qui figurent au bas de ladite lettre. Adressée à Henriette de Clèves, duchesse de Nevers, elle commence (fol. 38) par : « Je ne fis jamais mieus que de croire le S. comseil de ma duchesse, car ayant esté issy je n'ay trouvé les choses comme l'on les m'avoyt faictes... » et finit par : «... je vous en diré le reste à nostre premiere veue. Et cepandant honnores moy tousjours, Mme, de l'heur de vos bonne graces ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e349');">23 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e357');">24 Lettre de « MARGUERITE » DE FRANCE, reine DE NAVARRE, au duc de Nevers, Charles de Gonzague.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e365');">25 Lettre de Mme DE « VIEUBOUR » à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e381');">26 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e395');">27 Lettre, signée d'un monogramme, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e420');">28 Lettre de « LOUYSE DE COLLIGNY » à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e428');">29 Lettre signée du même monogramme et écrite de la même main que la lettre portée sous le n° 22. Adressée à la duchesse de Nevers, elle commence (fol. 50) par : « Ma prinsesse, la suffisance de ce porteur me gardera vous faire grand discours. Ces troys motz ceront donc pour vous supplier... » et finit par : «... et sur cette verité, je baise tres humblemant sa belle main ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e434');">30 Lettre de « F. DE CLEVES » à « Madame » la duchese de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e442');">31 Lettre non signée à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e455');">32 Lettre de « LOUYSE DE COLLIGNY » à la duchesse de Nevers. Pougues, 14 juillet.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e463');">33 Lettre de CATHERINE DE MARCILLY, dame DE CIPIERRE, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e471');">34 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e479');">35 Lettre de « MARGUERITE DE BRION » à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e487');">36 Lettre de « MARIE DE CLEVES » à son beau-frère, le duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e495');">37 Lettre, signée d'un monogramme, de FULVIA PICA DE LA MIRANDOLE, comtesse DE RANDAN, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e503');">38 Lettre d' « ANNE DE MONTAFYE » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e514');">39 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e522');">40 Lettre de CHARLOTTE-CATHERINE DE LA TREMOILLE, princesse DE CONDE, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e530');">41 Lettre d' « ANTHOINETTE, duchesse DE CLEVES », au duc de Nevers, Charles de Gonzague.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e538');">42 Lettre, signée d'un monogramme, adressée au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e551');">43 Lettre, signée de deux chiffres, de FRANÇOISE D'ORLEANS, seconde femme de Louis de Bourbon, prince DE CONDE, à la duchesse de Nevers, Henriette de Clèves, sa nièce. Après 1572.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e559');">44 Billet de six lignes au duc de Nevers, écrit, semble-t-il, de la main de FULVIA PICA DE LA MIRANDOLE, comtesse DE RANDAN, dont une lettre se trouve au fol. 60.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e565');">45 Lettre, signée d'un monogramme, de CATHERINE DE CLEVES, duchesse DE GUISE, à la duchesse de Nevers, Henriette de Clèves, sa soeur.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e573');">46 Lettre de JEANNE DE COEME, « princesse DE CONTY », à « la duchesse de Nevers », sa cousine.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e584');">47-48 Lettres, signées de deux monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers, son beau-frère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e595');">49 Lettre, signée de deux monogrammes, à la duchesse de Nevers, « ma cousine ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e615');">50 Lettre de MARIE DE CLEVES au duc de Nevers. 1572.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e623');">51-53 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, à la duchesse et au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e634');">54 Lettre, signée d'un chiffre, de FRANÇOISE D'ORLEANS, seconde femme de Louis de Bourbon, prince DE CONDE, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e642');">55-56 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc et à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e650');">57 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e658');">58 Lettre, signée d'un monogramme, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers, son beau-frère. Après le 26 décembre 1574.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e666');">59 Lettre, signée d'un monogramme, de MARIE DE CLEVES à la duchesse de Nevers. Après la mort du roi Charles IX.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e674');">60-63 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc et à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e682');">64-70 Lettres, dont trois signées d'un monogramme, avec chiffre et déchiffrement, de HENRIETTE DE CLEVES, duchesse DE NEVERS, au duc de Nevers, son mari.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e696');">71 Lettre, signée de deux monogrammes.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e719');">72-73 Lettres, signées d'un monogramme, de HENRIETTE DE CLEVES, duchesse DE NEVERS, au duc de Nevers, son mari.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e727');">74 Lettre, signée d'un monogramme, de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e735');">75 Lettre, signée d'un monogramme, de FRANÇOISE D'ORLEANS, seconde femme de Louis de Bourbon, prince DE CONDE, à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e743');">76 Lettre, signée d'un monogramme, de MARIE DE CLEVES à la duchesse de Nevers, sa soeur.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e751');">77-78 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, à la duchesse et au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e759');">79-82 Lettres, signées d'un monogramme, de HENRIETTE DE CLEVES, duchesse DE NEVERS, au duc de Nevers, son mari. Avec chiffre et déchiffrement.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e767');">83 Lettre, signée de deux monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e775');">84 Post-scriptum de la lettre qui précède, écrit de la main de CLAUDE-CATHERINE DE CLERMONT.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e783');">85-90 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc et à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e794');">91 Lettre, signée d'un monogramme, de MARIE DE CLEVES au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e802');">92 Lettre de CATHERINE DE CLEVES, duchesse DE GUISE, à la duchesse de Nevers, sa soeur.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e810');">93 Post-scriptum de la lettre qui précède, signé du monogramme et écrit de la main de CLAUDE-CATHERINE DE CLERMONT, maréchale DE RETZ.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e818');">94-95 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, à son beau-frère, le duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e826');">96 Lettre de « MARIE DE CLEVES » au duc de Nevers, son beau-frère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e834');">97-98 Lettres, signées de monogrammes, de CATHERINE DE CLEVES, duchesse DE GUISE, au duc de Nevers, son beau-frère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e842');">99-100 Lettres de « MARIE DE CLEVES : » au duc de Nevers, son beau-frère.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e850');">101-102 Lettres, signées d'un monogramme, de CATHERINE DE CLEVES, duchesse DE GUISE, à sa soeur, la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e858');">103-104 Lettres de « HENRIETTE DE GONZAGUE et DE CLEVES » à la duchesse et au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e866');">105-106 Lettres de « KATERINE DE CLEVES », duchesse DE GUISE, à la duchesse et au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e874');">107 Lettre, signée d'un monogramme, de SILVIA PICA, comtesse DE LA ROCHEFOUCAULD, au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e882');">108 Post-scriptum ajouté à la lettre qui précède par FULVIA PICA, comtesse DE RANDAN.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e890');">109 Lettre de « MARIE DE CLEVES » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e898');">110 Lettre, signée d'un monogramme, de CATHERINE DE CLEVES à la duchesse de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e906');">111 Lettre de « MARIE DE CLEVES » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057758_d0e914');">112 Lettre de « C[ATHERINE] DE CLEVES » au duc de Nevers.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

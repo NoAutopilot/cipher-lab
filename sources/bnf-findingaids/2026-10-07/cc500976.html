@@ -1,0 +1,473 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050097">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050097">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3646
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050097_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097">Français 3646 • Anc. 9135 • Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e104">1 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce XXIIIme octobre, à Saynt Denys ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e113">Fol. 2 • 2 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... De St Denys, ce premier jour d'aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e124">Fol. 3 à 5 • 3-5 Trois lettres de « HENRY IV » à divers cardinaux. « Escrit à Melun, le dernier jour d'aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e132">Fol. 6 • 6 Lettre de « HENRY [IV]... à mon cousin le cardinal Sforsa,... Escrit à Melun, le dernier jour de aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e140">Fol. 7 • 7 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Escrit à Mante, le XXXe jour de may 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e151">Fol. 8 • 8 Lettre du Sr « REVOL,... à monseigneur le duc de Nyvernois,... A Mante, ce XXXe may 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e170">Fol. 9 • 9 Lettre de « HENRY [IV]... à mon cousin le Sr Pietro Aldobrandin,... Escrit à Melun, le dernier jour d'aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e181">Fol. 10 • 10 Lettre de « HENRY [IV]... à mon cousin le Sr Curtio Aldobrandin,... Escrit à Melun, le dernier jour d'aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e192">Fol. 11 • 11 Lettre de « HENRY [IV]... à monseigneur d'Ossat,... Escrit à Melun, le dernier jour d'aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e200">Fol. 12 • 12 Lettre de « HENRY [IV]... à monseigneur Seraphin, auditeur de rotte... Escrit à Melun, le dernier jour d'aoust 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e208">Fol. 13 • 13 « Copie de l'instruction baillée » par « Charles, cardinal de Bourbon, Ludovic Gonzague, Chiverni, Charles de Montmorancy, François d'O », au nom « des princes du sang, et autres princes, ducs, pairs, chancelier, mareschaulx de France, gouverneurs, lieutenants des provinces, gentilzhommes, ecclesiastiques et tous autres tenans le party royal... à monseigneur le marquiz de Pizani [envoyé vers le pape Clément VIII]... Faicte à Champs, le deuxiesme jour d'octobre 1592 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e246">Fol. 15 • 14 « Responce faicte au nom du pape Clement VIII, quand monsieur le duc de Nevers fut envoyé à Rome par le roy Henry 4e, devant son absolution ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e257">Fol. 17 • 15 Lettre de « CHARLES, cardinal DE BOURBON,... à monsieur le duc de Nevers,... De Tours, ce 2 aoust 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e270">Fol. 19 • 16 Lettre du « cardinal N[ICOLAS] DE PELLEVE,... à monsieur l'abbé de Cluny, general de l'ordre... A Paris, le XXIIe d'apvril 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e286">Fol. 20 • 17 Lettre, avec chiffre et déchiffrement, de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... De Dezençan [Desenzano], le XIIIIe juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e302">Fol. 22 • 18 Lettre, avec chiffre et déchiffrement, de « HENRY DE LA TOUR [duc DE BOUILLON]... à monsieur le duc de Nivernoys,... A Sedan, ce IIII juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e320">Fol. 24 • 19 Lettre de « PIETRO ALDOBRANDINO,... al vescovo di Viterbo [Carolus Montilius]... Di Roma, li 19 di gennaro 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e338">Fol. 26 • 20 Lettre de « PIETRO ALDOBRANDINO,... al cardinale di Piacenza [Philippe Sega]... Di Roma, li VIII di gennaro M.D.LXXXXIII ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e356">Fol. 28 • 21 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... all' arcivescovo d'Evora... Di Parigi, li 23 di marzo 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e364">Fol. 30 • 22 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al signore Jacomo Graty,... Di Parigi, li 23 di marzo 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e372">Fol. 32 • 23 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al signore Christoforo Zanolini,... Di Parigi, li 23 di marzo 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e380">Fol. 34 • 24 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al Sr Cornelio Cornago,... Di Parigi, li 23 di marzo 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e391">Fol. 36 • 25 « Arresto della corte di parlamento che resiede à Chalons contro il rescritto in forma di bolle indirizzato al cardinale di Piacenza, publicato da i rebelli di Parigi, del mense di ottobre prossimo passato ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e409">Fol. 38 • 26 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al signore patriarca d'Alessandria... Di Parigi, li 3 d'aprile 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e417">Fol. 40 • 27 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al signor Pietro Aldobrandini,... Da Parigi, li 13 de aprile 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e425">Fol. 42 • 28 Lettre de FRANÇOIS DE BONNE, duc de « LESDIGUIERES,... à monseigneur le duc de Nevers,... Grenoble, ce VIIIe apvril 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e446">Fol. 44 • 29 Lettre de JEAN « DE VYVONNE [marquis DE PISANI]... à monseigneur le duc de Nevers,... De Boulongne, le XIe novembre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e457">Fol. 46 • 30 Lettre, avec chiffre et déchiffrement, de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... De Boulongne, le XIe novembre, à cinq heures de nuit, 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e468">Fol. 48 • 31 Lettre des « gens tenans la cour de parlement à Chalons... à monsieur le duc de Nyvernoys,... Escript en parlement, le dix neufiesme jour de mars 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e486">Fol. 49 • 32 Lettre des « gens tenans le parlement de Bourgongne... à monsieur le duc de Nevers,... De Semur en Auxois, ce XXIe avril 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e497">Fol. 51 • 33 Lettre, avec chiffre et déchiffrement, de NICOLAS « BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Soleurre, ce 12e octobre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e518">Fol. 53 • 34 Lettre de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... De Racanate, le XIIe decembre 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e529">Fol. 55 • 35 « Copie de la lettre de monsieur DU MAYNE à monsieur le duc de Mercueur,... Du camp de Pontoise, le XVI mars 1590 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e542">Fol. 57 • 36 Lettre de « VINCENT, secretaire du commandeur de Dion... à monsieur de La Chappelle,... De Romme, le XXe novembre 1593 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e556">Fol. 59 • 37 Lettre de FERDINAND Ier DE MEDICIS, « gran duca di T[oscana]... al duca di Nivers,... Dall' Ambrogiana, el di 11 di novembre 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e572">Fol. 60 • 38 « Coppie de lettre de MONFORIO au cardinal Aldobrandin,... Di Lione, a 22 di novembre 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e585">Fol. 62 • 39 Lettre de FERDINAND Ier DE MEDICIS, « gran duca di T[oscana]... al duca di Nivers,... Dal Poggio à Cacano, el di XVI di gennaio 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e601">Fol. 63 • 40 « Extraict des registres du parlement », contenant « ce que la court avoit trouvé bon... estre representé » au duc de Mayenne, « tant pour le faict de l'establissement de l'infante d'Espagne à la couronne de France, qui se traict au conseil dudict seigneur duc... et en l'assemblée des estats tenue à Paris, que pour le faict de la necessité... à laquelle le pauvre peuple est reduict par le malheur de la guerre », et la réponse du duc de Mayenne. « Du mercredy, trentiesme jour de juin 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e624">Fol. 75 • 41 Sauvegarde donnée par « le seigneur DE SAINCT-PAUL,... au Sr de La Thour,... Faict à Reims, le XVIIIe mars mil V.C. quatre vingtz et treize ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e646">Fol. 77 • 42 « Articles acordés par le roy HENRY [IV] à Mr de Guyse, le 22 ottobre 1594 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e662">Fol. 81 • 43 « Articles pour la liberté du commerce, culture et labourage des terres et seureté des personnes de la ville, duché, ellection, grenier et magazin à seel de Nemoux ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e680">Fol. 82 • 44 Articles pour « la neutralité es terres du duché de Nemours ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e688">Fol. 83 • 45 « Articles proposés en l'assemblée de Nancy, en janvier, pour estre arrestez en la generalle de mars prochain », contenant « ce que le roy de France [Henri III] sera sommé » de faire pour satisfaire « à la saincte Ligue ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e701">Fol. 85 • 46 « Discours du different arrivé entre monseigneur le duc de Longueville et Mr le duc d'Espernon, à Corbie, où le dernier eust courru fortune de la vie, s'il n'eust relasché les prisonniers que le premier luy demandoit au mois d'avril 1591 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e727">Fol. 91 • 47 « Coppie de la lettre de la reyne [douairière] LOYSE » DE VAUDEMONT à la duchesse de Nevers. « De Moulins, ce XXIIIe de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e743">Fol. 92 • 48 Lettre concernant la démarche faite par MM. de Schomberg et de Révol à Mantes, pour « estre esclarcis de la volonté du roy [Henri IV], principalement sur le faict de l'instruction de Sa Majesté [dans la religion catholique]... Le XVIe de mai ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e764">Fol. 93 • 49 Lettre, avec chiffre et déchiffrement, de VINCENT Ier, « duca DI MANTOVA,... al signor duca di Nivers,... Di Mantova, li 7 di novembre 1589 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e780">Fol. 96 • 50 Lettre, avec chiffre et déchiffrement, de VINCENT Ier, duc DE MANTOUE, « all' illmo duca di Nevers ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e794">Fol. 98 • 51 Mémoire, en italien, envoyé au duc de Nevers, sur les dispositions du pape Clément VIII touchant l'absolution demandée par le roi Henri IV.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e802">Fol. 102 • 52 Lettre des « gens tenans la cour de parlement de Bourgongne à Semur... à monsieur le duc de Nevers,... De Semur en Auxois, ce XII juin 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e810">Fol. 104 • 53 Lettre des « gens tenans la cour de parlement de Bourgongne... à monsieur le duc de Nevers,... De Semur en Auxois, le XIIIIe juillet 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e821">Fol. 106 • 54 Nouvelles du siége de Noyon, « du premier » et « du VIII aoust ». 1591.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e834">Fol. 108 • 55 Dépêche, en chiffre, du 6 février 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e842">Fol. 110 • 56 Lettre du Sr « FREMYOT,... à monseigneur le duc de Nivernois,... De Mante, ce VIIIe may 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e861">Fol. 112 • 57 « Requeste » du « chevalier de Seure... à monseigneur le duc de Nivernois ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e874">Fol. 114 • 58 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... all' illmo signore Pietro Aldobrandini,... Di Parigi, li 5 d'aprile 1593 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e885">Fol. 116 • 59 Lettre datée de Naples, relative aux moyens de hâter l'absolution du roi Henri IV en cour de Rome.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e898">Fol. 117 • 60 « Arresto della corte del parlamento di Parigi contro il preteso arresto di Chalons » sur Marne, touchant les monitoires de Grégoire XIV lancés contre les partisans de Henri IV. 1591. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e914">Fol. 119 • 61 « Extraict de lettres interceptées que l'on portoit à Dijon, dont on a tiré les mesmes mots portez par les lettres », relativement aux mouvements des ducs de Parme et de Mayenne.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e937">Fol. 120 • 62 Lettre du Sr DE « DINTEVILLE » au duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e953">63 Lettre de « HENRIETTE DE CLEVES [duchesse DE NEVERS]... au roy... De Nevers, ce 5 mars 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e959">Fol. 123 • 64 « Coppie de lettre » d'un agent du duc de Nevers « à Paris... Du Xe octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e975">Fol. 124 • 65 Bref du pape SIXTE V touchant la réformation des cordeliers de Nevers, du 25 octobre 1586, et mandement d'ARNAULD SORBIN, évêque de Nevers, au sujet dudit bref. En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e1001">Fol. 127 • 66 Mémoire envoyé au roi par M. DE TAVANNES pour lui représenter l'affaiblissement de l'autorité royale en Bourgogne. « 1593 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e1017">Fol. 129 • 67 Lettre, avec chiffre, du «26 may», relative aux affaires du Dauphiné.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e1030">Fol. 130 • 68 « Estat des forces que le duc de Sçavoye pretend d'assembler ce printemps ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e1043">Fol. 132 • 69 « Articles que les esleuz des estatz du duché de Bourgougne et pays adjacens entendent estre presentés par le Sr de Corcelles,... à monseigneur le duc de Nivernois,... Faict à Semeur, le XXVIIIe apvril 1593 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e1067">Fol. 133 • 70 « Nouvelles arrivées de la cour touchant la trefve et siege du chasteau de Dreux par le roy de France... Escript à St Denis, ce 26e jour de jung 1593 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e1086">Fol. 134 • 71 Mémoire touchant le douaire de la reine Louise de Vaudemont, veuve de Henri III. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050097_d0e1099">Fol. 136 • 72 Lettre contenant des détails sur les deux audiences que le pape avait accordées au duc de Nevers touchant les affaires de la France et l'absolution du roi. « De Romme, ce XXVIe jour de novembre 1593 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3646 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc500976&Cote=Français 3646&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3646 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9135</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Aldobrandini, Pietro, cardinal.</p>
+<p>Bourgogne. • Parlement, actes et pièces.</p>
+<p>Clément VIII, pape. • Absolution de Henri IV.</p>
+<p>France. • Pitorre (Henri IV).</p>
+<p>Henri IV, roi de France. • Conversion et absolution.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>Mayenne, Charles de Lorraine, marquis, puis duc de. • Actes et lettres.</p>
+<p>Parlement de Paris. • Arrêts divers (1593).</p>
+<p>Rambouillet, Charles d'Angennes, marquis de. • Instructions.</p>
+<p>Sega, Philippe, cardinal de Plaisance, légat en France. • Actes et lettres.</p>
+<p>Vivonne, Jean de, sr de Saint-Goard, marquis de Pisani. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e104');">1 Lettre de « HENRY [IV]... à mon cousyn le duc de Nyvernoys,... Ce XXIIIme octobre, à Saynt Denys ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e113');">2 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... De St Denys, ce premier jour d'aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e124');">3-5 Trois lettres de « HENRY IV » à divers cardinaux. « Escrit à Melun, le dernier jour d'aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e132');">6 Lettre de « HENRY [IV]... à mon cousin le cardinal Sforsa,... Escrit à Melun, le dernier jour de aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e140');">7 Lettre de « HENRY [IV]... à mon cousin le duc de Nivernoys,... Escrit à Mante, le XXXe jour de may 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e151');">8 Lettre du Sr « REVOL,... à monseigneur le duc de Nyvernois,... A Mante, ce XXXe may 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e170');">9 Lettre de « HENRY [IV]... à mon cousin le Sr Pietro Aldobrandin,... Escrit à Melun, le dernier jour d'aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e181');">10 Lettre de « HENRY [IV]... à mon cousin le Sr Curtio Aldobrandin,... Escrit à Melun, le dernier jour d'aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e192');">11 Lettre de « HENRY [IV]... à monseigneur d'Ossat,... Escrit à Melun, le dernier jour d'aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e200');">12 Lettre de « HENRY [IV]... à monseigneur Seraphin, auditeur de rotte... Escrit à Melun, le dernier jour d'aoust 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e208');">13 « Copie de l'instruction baillée » par « Charles, cardinal de Bourbon, Ludovic Gonzague, Chiverni, Charles de Montmorancy, François d'O », au nom « des princes du sang, et autres princes, ducs, pairs, chancelier, mareschaulx de France, gouverneurs, lieutenants des provinces, gentilzhommes, ecclesiastiques et tous autres tenans le party royal... à monseigneur le marquiz de Pizani [envoyé vers le pape Clément VIII]... Faicte à Champs, le deuxiesme jour d'octobre 1592 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e246');">14 « Responce faicte au nom du pape Clement VIII, quand monsieur le duc de Nevers fut envoyé à Rome par le roy Henry 4e, devant son absolution ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e257');">15 Lettre de « CHARLES, cardinal DE BOURBON,... à monsieur le duc de Nevers,... De Tours, ce 2 aoust 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e270');">16 Lettre du « cardinal N[ICOLAS] DE PELLEVE,... à monsieur l'abbé de Cluny, general de l'ordre... A Paris, le XXIIe d'apvril 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e286');">17 Lettre, avec chiffre et déchiffrement, de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... De Dezençan [Desenzano], le XIIIIe juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e302');">18 Lettre, avec chiffre et déchiffrement, de « HENRY DE LA TOUR [duc DE BOUILLON]... à monsieur le duc de Nivernoys,... A Sedan, ce IIII juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e320');">19 Lettre de « PIETRO ALDOBRANDINO,... al vescovo di Viterbo [Carolus Montilius]... Di Roma, li 19 di gennaro 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e338');">20 Lettre de « PIETRO ALDOBRANDINO,... al cardinale di Piacenza [Philippe Sega]... Di Roma, li VIII di gennaro M.D.LXXXXIII ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e356');">21 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... all' arcivescovo d'Evora... Di Parigi, li 23 di marzo 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e364');">22 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al signore Jacomo Graty,... Di Parigi, li 23 di marzo 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e372');">23 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al signore Christoforo Zanolini,... Di Parigi, li 23 di marzo 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e380');">24 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al Sr Cornelio Cornago,... Di Parigi, li 23 di marzo 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e391');">25 « Arresto della corte di parlamento che resiede à Chalons contro il rescritto in forma di bolle indirizzato al cardinale di Piacenza, publicato da i rebelli di Parigi, del mense di ottobre prossimo passato ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e409');">26 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al signore patriarca d'Alessandria... Di Parigi, li 3 d'aprile 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e417');">27 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... al signor Pietro Aldobrandini,... Da Parigi, li 13 de aprile 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e425');">28 Lettre de FRANÇOIS DE BONNE, duc de « LESDIGUIERES,... à monseigneur le duc de Nevers,... Grenoble, ce VIIIe apvril 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e446');">29 Lettre de JEAN « DE VYVONNE [marquis DE PISANI]... à monseigneur le duc de Nevers,... De Boulongne, le XIe novembre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e457');">30 Lettre, avec chiffre et déchiffrement, de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... De Boulongne, le XIe novembre, à cinq heures de nuit, 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e468');">31 Lettre des « gens tenans la cour de parlement à Chalons... à monsieur le duc de Nyvernoys,... Escript en parlement, le dix neufiesme jour de mars 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e486');">32 Lettre des « gens tenans le parlement de Bourgongne... à monsieur le duc de Nevers,... De Semur en Auxois, ce XXIe avril 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e497');">33 Lettre, avec chiffre et déchiffrement, de NICOLAS « BRULART [DE SILLERY]... à monseigneur le duc de Nivernois,... De Soleurre, ce 12e octobre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e518');">34 Lettre de JEAN « DE VYVONNE, marquis DE PISANY,... à monseigneur le duc de Nivernois,... De Racanate, le XIIe decembre 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e529');">35 « Copie de la lettre de monsieur DU MAYNE à monsieur le duc de Mercueur,... Du camp de Pontoise, le XVI mars 1590 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e542');">36 Lettre de « VINCENT, secretaire du commandeur de Dion... à monsieur de La Chappelle,... De Romme, le XXe novembre 1593 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e556');">37 Lettre de FERDINAND Ier DE MEDICIS, « gran duca di T[oscana]... al duca di Nivers,... Dall' Ambrogiana, el di 11 di novembre 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e572');">38 « Coppie de lettre de MONFORIO au cardinal Aldobrandin,... Di Lione, a 22 di novembre 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e585');">39 Lettre de FERDINAND Ier DE MEDICIS, « gran duca di T[oscana]... al duca di Nivers,... Dal Poggio à Cacano, el di XVI di gennaio 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e601');">40 « Extraict des registres du parlement », contenant « ce que la court avoit trouvé bon... estre representé » au duc de Mayenne, « tant pour le faict de l'establissement de l'infante d'Espagne à la couronne de France, qui se traict au conseil dudict seigneur duc... et en l'assemblée des estats tenue à Paris, que pour le faict de la necessité... à laquelle le pauvre peuple est reduict par le malheur de la guerre », et la réponse du duc de Mayenne. « Du mercredy, trentiesme jour de juin 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e624');">41 Sauvegarde donnée par « le seigneur DE SAINCT-PAUL,... au Sr de La Thour,... Faict à Reims, le XVIIIe mars mil V.C. quatre vingtz et treize ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e646');">42 « Articles acordés par le roy HENRY [IV] à Mr de Guyse, le 22 ottobre 1594 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e662');">43 « Articles pour la liberté du commerce, culture et labourage des terres et seureté des personnes de la ville, duché, ellection, grenier et magazin à seel de Nemoux ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e680');">44 Articles pour « la neutralité es terres du duché de Nemours ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e688');">45 « Articles proposés en l'assemblée de Nancy, en janvier, pour estre arrestez en la generalle de mars prochain », contenant « ce que le roy de France [Henri III] sera sommé » de faire pour satisfaire « à la saincte Ligue ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e701');">46 « Discours du different arrivé entre monseigneur le duc de Longueville et Mr le duc d'Espernon, à Corbie, où le dernier eust courru fortune de la vie, s'il n'eust relasché les prisonniers que le premier luy demandoit au mois d'avril 1591 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e727');">47 « Coppie de la lettre de la reyne [douairière] LOYSE » DE VAUDEMONT à la duchesse de Nevers. « De Moulins, ce XXIIIe de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e743');">48 Lettre concernant la démarche faite par MM. de Schomberg et de Révol à Mantes, pour « estre esclarcis de la volonté du roy [Henri IV], principalement sur le faict de l'instruction de Sa Majesté [dans la religion catholique]... Le XVIe de mai ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e764');">49 Lettre, avec chiffre et déchiffrement, de VINCENT Ier, « duca DI MANTOVA,... al signor duca di Nivers,... Di Mantova, li 7 di novembre 1589 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e780');">50 Lettre, avec chiffre et déchiffrement, de VINCENT Ier, duc DE MANTOUE, « all' illmo duca di Nevers ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e794');">51 Mémoire, en italien, envoyé au duc de Nevers, sur les dispositions du pape Clément VIII touchant l'absolution demandée par le roi Henri IV.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e802');">52 Lettre des « gens tenans la cour de parlement de Bourgongne à Semur... à monsieur le duc de Nevers,... De Semur en Auxois, ce XII juin 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e810');">53 Lettre des « gens tenans la cour de parlement de Bourgongne... à monsieur le duc de Nevers,... De Semur en Auxois, le XIIIIe juillet 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e821');">54 Nouvelles du siége de Noyon, « du premier » et « du VIII aoust ». 1591.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e834');">55 Dépêche, en chiffre, du 6 février 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e842');">56 Lettre du Sr « FREMYOT,... à monseigneur le duc de Nivernois,... De Mante, ce VIIIe may 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e861');">57 « Requeste » du « chevalier de Seure... à monseigneur le duc de Nivernois ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e874');">58 Lettre de PHILIPPE SEGA, « cardinale di Piacenza... all' illmo signore Pietro Aldobrandini,... Di Parigi, li 5 d'aprile 1593 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e885');">59 Lettre datée de Naples, relative aux moyens de hâter l'absolution du roi Henri IV en cour de Rome.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e898');">60 « Arresto della corte del parlamento di Parigi contro il preteso arresto di Chalons » sur Marne, touchant les monitoires de Grégoire XIV lancés contre les partisans de Henri IV. 1591. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e914');">61 « Extraict de lettres interceptées que l'on portoit à Dijon, dont on a tiré les mesmes mots portez par les lettres », relativement aux mouvements des ducs de Parme et de Mayenne.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e937');">62 Lettre du Sr DE « DINTEVILLE » au duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e953');">63 Lettre de « HENRIETTE DE CLEVES [duchesse DE NEVERS]... au roy... De Nevers, ce 5 mars 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e959');">64 « Coppie de lettre » d'un agent du duc de Nevers « à Paris... Du Xe octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e975');">65 Bref du pape SIXTE V touchant la réformation des cordeliers de Nevers, du 25 octobre 1586, et mandement d'ARNAULD SORBIN, évêque de Nevers, au sujet dudit bref. En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e1001');">66 Mémoire envoyé au roi par M. DE TAVANNES pour lui représenter l'affaiblissement de l'autorité royale en Bourgogne. « 1593 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e1017');">67 Lettre, avec chiffre, du «26 may», relative aux affaires du Dauphiné.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e1030');">68 « Estat des forces que le duc de Sçavoye pretend d'assembler ce printemps ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e1043');">69 « Articles que les esleuz des estatz du duché de Bourgougne et pays adjacens entendent estre presentés par le Sr de Corcelles,... à monseigneur le duc de Nivernois,... Faict à Semeur, le XXVIIIe apvril 1593 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e1067');">70 « Nouvelles arrivées de la cour touchant la trefve et siege du chasteau de Dreux par le roy de France... Escript à St Denis, ce 26e jour de jung 1593 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e1086');">71 Mémoire touchant le douaire de la reine Louise de Vaudemont, veuve de Henri III. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050097_d0e1099');">72 Lettre contenant des détails sur les deux audiences que le pape avait accordées au duc de Nevers touchant les affaires de la France et l'absolution du roi. « De Romme, ce XXVIe jour de novembre 1593 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

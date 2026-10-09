@@ -1,0 +1,465 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050106">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050106">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3654
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050106_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106">Français 3654 • Anc. 9021(2) • Recueil de lettres originales.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e66">1 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escrit à Paris, le XXIXe jour de septembre 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e75">Fol. 2 • 2 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escrit à Paris, le XXIIIIe jour de novembre 1610 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e86">Fol. 4 • 3 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XVIIIe jour de janvier 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e97">Fol. 6 • 4 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Fontainebleau, le XXVIIe jour d'avril 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e108">Fol. 8 • 5 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XXXe jour d'aoust 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e119">Fol. 10 • 6 Lettre, avec chiffre, de « MARIE » DE MEDICIS à « monseigneur de Breves,... Escript à Paris, ce IX novembre 1611 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e127">Fol. 12 • 7 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le IIIe jour de janvyer 1612 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e138">Fol. 14 • 8 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XVIIe jour de janvyer 1612 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e149">Fol. 16 • 9 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XXIIe jour de may 1612 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e160">Fol. 18 • 10 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le VIe jour de novembre 1612 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e171">Fol. 20 • 11 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, ce XV janvier 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e179">Fol. 22 • 12 Lettre, avec chiffre, de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monseigneur de Breves,... De Paris, le 8e jour de febvrier 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e195">Fol. 26 • 13 Lettre, avec chiffre, de PIERRE BRULART, vicomte DE « PUYSIEULX », à monseigneur de Breves. « De Paris, ce XIIe jour de mars 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e206">Fol. 28 • 14 Lettre, avec chiffre, de NICOLAS « DE NEUFVILLE [DE VILLEROI] à monseigneur de Breves,... Escrit à Fontainebleau, le 2e jour de juin 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e217">Fol. 32 • 15 Lettre, avec chiffre, de PIERRE BRULART, marquis DE « PUYSIEULX », à M. de Brèves. « De Fontainebleau, le XXIIIIe jour de septembre 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e228">Fol. 34 • 16 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Fontainebleau, le VIIIe jour d'octobre 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e239">Fol. 37 • 17 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Fontainebleau, le XXIIe jour d'octobre 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e250">Fol. 40 • 18 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escrit à Fontaynebleau, ce 6e novembre 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e261">Fol. 43 • 19 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Fontainebleau, le XXe jour de novembre 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e272">Fol. 47 • 20 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le IIIe jour de decembre 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e283">Fol. 49 • 21 Lettre, avec chiffre et déchiffrement, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le IIIIe jour de decembre 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e294">Fol. 51 • 22 Lettre, avec chiffre et déchiffrement, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XVIIIe jour de decembre 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e305">Fol. 53 • 23 Lettre, avec chiffre et déchiffrement, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le dernier jour de decembre 1613 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e313">Fol. 56 • 24 Lettre à monseigneur de Breves sur l'attitude de la France à l'égard du saint-siége et sur les menées du duc de Savoie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e321">Fol. 57 • 25 « Double de lettre pour envoyer à monseigneur de Breves,... Escrit à Paris, le 14 jour de febvrier 1614 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e329">Fol. 60 • 26 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, ce XXVIIIe janvier 1614 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050106_d0e340">Fol. 62 • 27 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à la royne... De Mezieres, ce XVIIIe febvrier 1614 ».</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3654 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc501068&Cote=Français 3654&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3654 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9021(2)</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres originales.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Brèves, François Savary de. • Ambassade à Rome (1608).</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>Marie de Médicis, reine de France. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e66');">1 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escrit à Paris, le XXIXe jour de septembre 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e75');">2 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escrit à Paris, le XXIIIIe jour de novembre 1610 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e86');">3 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XVIIIe jour de janvier 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e97');">4 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Fontainebleau, le XXVIIe jour d'avril 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e108');">5 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XXXe jour d'aoust 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e119');">6 Lettre, avec chiffre, de « MARIE » DE MEDICIS à « monseigneur de Breves,... Escript à Paris, ce IX novembre 1611 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e127');">7 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le IIIe jour de janvyer 1612 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e138');">8 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XVIIe jour de janvyer 1612 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e149');">9 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XXIIe jour de may 1612 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e160');">10 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le VIe jour de novembre 1612 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e171');">11 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, ce XV janvier 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e179');">12 Lettre, avec chiffre, de NICOLAS « DE NEUFVILLE [DE VILLEROI]... à monseigneur de Breves,... De Paris, le 8e jour de febvrier 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e195');">13 Lettre, avec chiffre, de PIERRE BRULART, vicomte DE « PUYSIEULX », à monseigneur de Breves. « De Paris, ce XIIe jour de mars 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e206');">14 Lettre, avec chiffre, de NICOLAS « DE NEUFVILLE [DE VILLEROI] à monseigneur de Breves,... Escrit à Fontainebleau, le 2e jour de juin 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e217');">15 Lettre, avec chiffre, de PIERRE BRULART, marquis DE « PUYSIEULX », à M. de Brèves. « De Fontainebleau, le XXIIIIe jour de septembre 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e228');">16 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Fontainebleau, le VIIIe jour d'octobre 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e239');">17 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Fontainebleau, le XXIIe jour d'octobre 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e250');">18 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escrit à Fontaynebleau, ce 6e novembre 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e261');">19 Lettre, avec chiffre, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Fontainebleau, le XXe jour de novembre 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e272');">20 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le IIIe jour de decembre 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e283');">21 Lettre, avec chiffre et déchiffrement, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le IIIIe jour de decembre 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e294');">22 Lettre, avec chiffre et déchiffrement, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le XVIIIe jour de decembre 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e305');">23 Lettre, avec chiffre et déchiffrement, de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, le dernier jour de decembre 1613 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e313');">24 Lettre à monseigneur de Breves sur l'attitude de la France à l'égard du saint-siége et sur les menées du duc de Savoie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e321');">25 « Double de lettre pour envoyer à monseigneur de Breves,... Escrit à Paris, le 14 jour de febvrier 1614 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e329');">26 Lettre de « MARIE [DE MEDICIS]... à monseigneur de Breves,... Escript à Paris, ce XXVIIIe janvier 1614 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050106_d0e340');">27 Lettre de « HENRY DE BOURBON [prince DE CONDE]... à la royne... De Mezieres, ce XVIIIe febvrier 1614 ».</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

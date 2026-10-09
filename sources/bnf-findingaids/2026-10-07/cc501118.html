@@ -1,0 +1,473 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000050111">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000050111">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 3381-3728</div>
+					<h1>Français 3660
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000050111_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111">Français 3660 • Anc. 9154 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e106">1 Lettre, avec chiffre et déchiffrement, de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De St Germain en Laye, le IIIe janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e118">Fol. 3 • 2 Lettre de « C[HARLES-]EMANUEL [Ier, duc] DE SAVOYE », à « Mr de Bettune,... De Thurin, ce 3 janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e132">Fol. 5 • 3 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce XVe jour de janvier mil six cens dix huict ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e143">Fol. 7 • 4 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce premier jour de janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e156">Fol. 10 • 5 Minute de lettre de PHILIPPE DE « BETHUNE [ambassadeur extraordinaire en Italie] à don Pedro de Toledo, gouverneur de Milan... Faict à Milan, le 2e janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e177">Fol. 12 • 6 Lettre de « R[OBERT] MYRON,... à monsieur de Bethune,... De Soleurre, ce 6 jour de l'an 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e190">Fol. 14 • 7 Lettre, avec chiffre et déchiffrement, de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XIIIIe jour de janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e206">Fol. 16 • 8 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XV janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e214">Fol. 18 • 9 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce 17 janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e222">Fol. 20 • 10 Lettre de HENRI DE BEAUFREMONT, marquis DE « SENECEY,... à monsieur de Bethune,... De Madrid, ce 17 janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e240">Fol. 22 • 11 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 18 janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e258">Fol. 24 • 12 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... Escript à Paris, le XXIIe jour de janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e282">Fol. 25 • 13 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce XXII febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e300">Fol. 27 • 14 Lettre du Sr « GUEFFIER », ambassadeur pres les ligues grises, « à monsieur de Bethune,... De Coire, ce 23 janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e326">Fol. 29 • 15 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXIIIIe jour de janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e347">Fol. 30 et 32 • 16-17 Deux lettres de PIERRE BRULART DE PUY« SIEULX,... à monsieur de Bethune,... De Paris, ce XXIIIIe jour de janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e358">Fol. 34 • 18 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 29 janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e376">Fol. 36 • 19 Lettre de HENRY DE BEAUFREMONT, marquis DE « SENECEY,... à monsieur de Bethune,... De Madrid, ce 29e janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e397">Fol. 38 • 20 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce 31 janvier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e415">Fol. 40 • 21 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce 4 febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e433">Fol. 42 • 22 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce VIe febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e454">Fol. 44 • 23 Lettre de « LOUIS [XIII]... à messieurs de Bethune et de Modene,... Escript à Paris, le VIIe jour de febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e475">Fol. 46 • 24 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce VIIe jour de febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e496">Fol. 48 • 25 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene... De Paris, ce VII febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e514">Fol. 50 • 26 Lettre de HENRI DE BEAUFREMONT, marquis DE « SENECEY,... à monsieur de Bethune,... De Madrid, ce XI febvrier M.VI.C.XVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e535">Fol. 52 • 27 Lettre de « don PEDRO DE TOLEDO » au duc de Savoie. « De Milan, a 11 de hebrero 1618 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e543">Fol. 54 • 28 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce douziesme febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e551">Fol. 55 • 29 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XII febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e559">Fol. 57 • 30 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 15 febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e567">Fol. 59 • 31 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce 16 febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e575">Fol. 61 • 32 « Acceptation de don PEDRO [DE TOLEDO] du desarmement du duc de Savoye » à lui notifié par le roi Louis XIII. « En Milan, a 25 de hebrero 1618 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e583">Fol. 62 • 33 « Certificacion que ha de dar el rey christianissimo » à don Pedro de Toledo du désarmement du duc de Savoie. En espagnol. Deux copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e591">Fol. 65 • 34 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXVII febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e599">Fol. 67 • 35 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 28 febvrier 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e607">Fol. 69 • 36 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monseigneur de Bethune,... De Thurin, ce I mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e618">Fol. 71 • 37 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monseigneur de Bethune,... De Thurin, ce 3 mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e629">Fol. 73 • 38 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à Mr de Bethune,... A Thurin, ce 5e mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e646">Fol. 75 • 39 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce VIe jour de mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e657">Fol. 77 • 40 Lettre du Sr « GUEFFIER », ambassadeur près les ligues grises, à Philippe de Béthune. « De Coire, ce 6 mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e678">Fol. 79 • 41 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... Escript à Paris, ce VIe mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e692">Fol. 81 • 42 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce IX mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e700">Fol. 83 • 43 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à messrs de Bethune et de Modene,... A Thurin, ce Xme mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e717">Fol. 85 • 44 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à messrs de Bethune et de Modene,... De Thurin, ce 14 mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e731">Fol. 87 • 45 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce XIIIIe mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e742">Fol. 89 • 46 Lettre de CHARLES BRULART, « prieur de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 16 mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e750">Fol. 91 • 47 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVIII mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e758">Fol. 93 • 48 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... De Paris, ce XVIIIe jour de mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e772">Fol. 95 • 49 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Bethune. « De Rome, ce 21 mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e780">Fol. 97 • 50 Lettre de « C[LAUDIO] MARINI » à Philippe de Béthune. « A Turino, 22 marzo 1618 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e798">Fol. 99 • 51 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à messieurs de Bethune et de Modene,... Mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e809">Fol. 101 • 52 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... Escrit à Paris, le XXIIIIe jour de mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e823">Fol. 103 • 53 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Betunes,... De Venise, ce 27 mars 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e831">Fol. 105 • 54 Lettre du Sr « GUEFFIER [ambassadeur près les ligues grises]... à monsieur de Bethune,... De Coire, ce 2 avril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e852">Fol. 107 • 55 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce IIIIe jour d'avril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e863">Fol. 109 • 56 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIII avril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e871">Fol. 111 • 57 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethunes,... De Venise, ce 10 apvril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e879">Fol. 113 • 58 Lettre de « C[HARLES-]EMANUEL [Ier], duc DE SAVOYE,... à messrs de Bettune et de Modene,... D'Ivrée, ce 12 apvril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e893">Fol. 114bis • 59 Lettre de PHILIPPE DE BETHUNE, ambassadeur extraordinaire en Italie, « au duc de Savoye, le 12 avril 1618 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e906">Fol. 116 • 60 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... Escript à Paris, le XIIIIe jour d'apvril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e925">Fol. 118 • 61 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... A Paris, le XIIII avril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e933">Fol. 120 • 62 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Bethune. « De Rome, ce 14 avril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e941">Fol. 122 • 63 Lettre de « JACOMO ANTONIO VALPERGA RIVARA » à Philippe de Béthune. « Di Casale, le 17 aprile 1618 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e954">Fol. 124 • 64 Lettre de « C[HARLES-]EMANUEL [Ier, duc] DE SAVOYE,... à Mrs les ambassadeurs de France... De Ivrée, ce 17 apvril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e973">Fol. 126 • 65 Lettre du Sr « DE FAUCON,... à monseigneur de Bethunes,... A Digne, ce 18 d'apvril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e994">Fol. 128 • 66 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIX avril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e1002">Fol. 130 • 67 Lettre de « C[HARLES-]EMANUEL [Ier], duc DE SAVOYE,... à messrs de Betthune et de Modene,... D'Ivrée, ce 21 apvril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e1016">Fol. 132 • 68 « Ordonnance » DE PHILIPPE III, roi d'Espagne, « pour la restitution des biens des subjects de monsieur le duc de Savoye... In Milano, a 20 d'aprile 1618 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e1024">Fol. 134 • 69 Copie de la « certification » délivrée « à Milan », le « 20 avril 1618 », par les ambassadeurs de France, Ph. de Béthune et Sr de Modène, au duc de Savoie, Charles Emmanuel, de l'entière observation de son côté des traités d'Asti et de Pavie; suivie du récépissé de ladite « certification », donné par le duc à « Ivrée, ce 22 avril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e1060">Fol. 136 • 70 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethunes,... De Venise, ce 24 apvril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e1073">Fol. 138 • 71 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Bethune. « De Rome, ce 27 avril 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e1081">Fol. 140 • 72 « Forme de la certification » portée sous le n° 69.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000050111_d0e1089">Fol. 142 • 73 Édit de « CARLO-EMANUEL, duca DI SAVOIA », pour la restitution des biens des particuliers, exigée par les traités d'Asti et de Pavie. « Datum in Torino, li tre d'aprile mille sei cento dieciotto ». En italien. Imprimé.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 3660 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc501118&Cote=Français 3660&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 3660 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9154</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Bauffremont, Henri de, marquis de Sénecey. • Lettres.</p>
+<p>Brûlart, Charles, prieur de Léon. • Lettres.</p>
+<p>France. • Pitorre (Louis XIII).</p>
+<p>Louis XIII, roi de France. • Actes et lettres.</p>
+<p>Marquemont, Denis-Simon de, archevêque de Lyon. • Lettres.</p>
+<p>Milan. • Traités et négociations (1618).</p>
+<p>Philippe III, roi d'Espagne. • Actes et lettres.</p>
+<p>Puysieux, Pierre Brûlart, marquis de Sillery, vicomte de, secrétaire d'État. • Lettres et actes.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Actes et lettres.</p>
+<p>Savoie, Charles-Emmanuel Ier, duc de. • Pièces diverses.</p>
+<p>Toledo-Osorio, Don Pedro de, marquis de Villafranca, gouverneur de Milan. • Actes et lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e106');">1 Lettre, avec chiffre et déchiffrement, de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De St Germain en Laye, le IIIe janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e118');">2 Lettre de « C[HARLES-]EMANUEL [Ier, duc] DE SAVOYE », à « Mr de Bettune,... De Thurin, ce 3 janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e132');">3 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce XVe jour de janvier mil six cens dix huict ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e143');">4 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce premier jour de janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e156');">5 Minute de lettre de PHILIPPE DE « BETHUNE [ambassadeur extraordinaire en Italie] à don Pedro de Toledo, gouverneur de Milan... Faict à Milan, le 2e janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e177');">6 Lettre de « R[OBERT] MYRON,... à monsieur de Bethune,... De Soleurre, ce 6 jour de l'an 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e190');">7 Lettre, avec chiffre et déchiffrement, de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, le XIIIIe jour de janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e206');">8 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XV janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e214');">9 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce 17 janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e222');">10 Lettre de HENRI DE BEAUFREMONT, marquis DE « SENECEY,... à monsieur de Bethune,... De Madrid, ce 17 janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e240');">11 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 18 janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e258');">12 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... Escript à Paris, le XXIIe jour de janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e282');">13 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce XXII febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e300');">14 Lettre du Sr « GUEFFIER », ambassadeur pres les ligues grises, « à monsieur de Bethune,... De Coire, ce 23 janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e326');">15 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, le XXIIIIe jour de janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e347');">16-17 Deux lettres de PIERRE BRULART DE PUY« SIEULX,... à monsieur de Bethune,... De Paris, ce XXIIIIe jour de janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e358');">18 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 29 janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e376');">19 Lettre de HENRY DE BEAUFREMONT, marquis DE « SENECEY,... à monsieur de Bethune,... De Madrid, ce 29e janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e397');">20 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce 31 janvier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e415');">21 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce 4 febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e433');">22 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce VIe febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e454');">23 Lettre de « LOUIS [XIII]... à messieurs de Bethune et de Modene,... Escript à Paris, le VIIe jour de febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e475');">24 Lettre de PIERRE BRULART DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce VIIe jour de febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e496');">25 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene... De Paris, ce VII febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e514');">26 Lettre de HENRI DE BEAUFREMONT, marquis DE « SENECEY,... à monsieur de Bethune,... De Madrid, ce XI febvrier M.VI.C.XVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e535');">27 Lettre de « don PEDRO DE TOLEDO » au duc de Savoie. « De Milan, a 11 de hebrero 1618 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e543');">28 Lettre de « LOUIS [XIII]... à monseigneur de Bethune,... Escript à Paris, ce douziesme febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e551');">29 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XII febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e559');">30 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 15 febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e567');">31 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Béthune. « De Rome, ce 16 febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e575');">32 « Acceptation de don PEDRO [DE TOLEDO] du desarmement du duc de Savoye » à lui notifié par le roi Louis XIII. « En Milan, a 25 de hebrero 1618 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e583');">33 « Certificacion que ha de dar el rey christianissimo » à don Pedro de Toledo du désarmement du duc de Savoie. En espagnol. Deux copies.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e591');">34 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XXVII febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e599');">35 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 28 febvrier 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e607');">36 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monseigneur de Bethune,... De Thurin, ce I mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e618');">37 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à monseigneur de Bethune,... De Thurin, ce 3 mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e629');">38 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à Mr de Bethune,... A Thurin, ce 5e mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e646');">39 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce VIe jour de mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e657');">40 Lettre du Sr « GUEFFIER », ambassadeur près les ligues grises, à Philippe de Béthune. « De Coire, ce 6 mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e678');">41 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... Escript à Paris, ce VIe mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e692');">42 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce IX mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e700');">43 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à messrs de Bethune et de Modene,... A Thurin, ce Xme mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e717');">44 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à messrs de Bethune et de Modene,... De Thurin, ce 14 mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e731');">45 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce XIIIIe mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e742');">46 Lettre de CHARLES BRULART, « prieur de Leon [en Bretagne]... à monsieur de Bethune,... De Venise, ce 16 mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e750');">47 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XVIII mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e758');">48 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... De Paris, ce XVIIIe jour de mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e772');">49 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Bethune. « De Rome, ce 21 mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e780');">50 Lettre de « C[LAUDIO] MARINI » à Philippe de Béthune. « A Turino, 22 marzo 1618 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e798');">51 Lettre de « C[HARLES-]EMANUEL [Ier, duc DE SAVOIE]... à messieurs de Bethune et de Modene,... Mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e809');">52 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... Escrit à Paris, le XXIIIIe jour de mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e823');">53 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Betunes,... De Venise, ce 27 mars 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e831');">54 Lettre du Sr « GUEFFIER [ambassadeur près les ligues grises]... à monsieur de Bethune,... De Coire, ce 2 avril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e852');">55 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... De Paris, ce IIIIe jour d'avril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e863');">56 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce IIII avril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e871');">57 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethunes,... De Venise, ce 10 apvril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e879');">58 Lettre de « C[HARLES-]EMANUEL [Ier], duc DE SAVOYE,... à messrs de Bettune et de Modene,... D'Ivrée, ce 12 apvril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e893');">59 Lettre de PHILIPPE DE BETHUNE, ambassadeur extraordinaire en Italie, « au duc de Savoye, le 12 avril 1618 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e906');">60 Lettre de « LOUIS [XIII]... à messrs de Bethune et de Modene,... Escript à Paris, le XIIIIe jour d'apvril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e925');">61 Lettre de PIERRE BRULART DE « PUYSIEULX,... à messieurs de Bethune et de Modene,... A Paris, le XIIII avril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e933');">62 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Bethune. « De Rome, ce 14 avril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e941');">63 Lettre de « JACOMO ANTONIO VALPERGA RIVARA » à Philippe de Béthune. « Di Casale, le 17 aprile 1618 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e954');">64 Lettre de « C[HARLES-]EMANUEL [Ier, duc] DE SAVOYE,... à Mrs les ambassadeurs de France... De Ivrée, ce 17 apvril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e973');">65 Lettre du Sr « DE FAUCON,... à monseigneur de Bethunes,... A Digne, ce 18 d'apvril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e994');">66 Lettre de PIERRE BRULART, vicomte DE « PUYSIEULX,... à monsieur de Bethune,... De Paris, ce XIX avril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e1002');">67 Lettre de « C[HARLES-]EMANUEL [Ier], duc DE SAVOYE,... à messrs de Betthune et de Modene,... D'Ivrée, ce 21 apvril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e1016');">68 « Ordonnance » DE PHILIPPE III, roi d'Espagne, « pour la restitution des biens des subjects de monsieur le duc de Savoye... In Milano, a 20 d'aprile 1618 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e1024');">69 Copie de la « certification » délivrée « à Milan », le « 20 avril 1618 », par les ambassadeurs de France, Ph. de Béthune et Sr de Modène, au duc de Savoie, Charles Emmanuel, de l'entière observation de son côté des traités d'Asti et de Pavie; suivie du récépissé de ladite « certification », donné par le duc à « Ivrée, ce 22 avril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e1060');">70 Lettre de CHARLES BRULART, prieur « de Leon [en Bretagne]... à monsieur de Bethunes,... De Venise, ce 24 apvril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e1073');">71 Lettre de « DENYS[-SIMON DE MARQUEMONT], archevesque de Lyon », à Philippe de Bethune. « De Rome, ce 27 avril 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e1081');">72 « Forme de la certification » portée sous le n° 69.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000050111_d0e1089');">73 Édit de « CARLO-EMANUEL, duca DI SAVOIA », pour la restitution des biens des particuliers, exigée par les traités d'Asti et de Pavie. « Datum in Torino, li tre d'aprile mille sei cento dieciotto ». En italien. Imprimé.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

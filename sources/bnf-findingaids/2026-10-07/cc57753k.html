@@ -1,0 +1,519 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000057753">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000057753">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4570-4924</div>
+					<h1>Français 4703
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000057753_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753">Français 4703 • Anc. 9525 • Recueil de pièces originales et de copies concernant l'ordre de la Milice chrétienne, les projets de Charles de Gonzague, duc de Nevers, contre les Turcs, etc., l'histoire des années 1606 à 1620.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e329">Fol. 1 • 1 Lettre de « SIGISMUNDO, marchese DI MIROW », à Charles de Gonzague, duc de Nevers. « Cracoviae, 15 julii 1606 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e337">Fol. 3 • 2 Lettre de VINCENT Ier, duc DE MANTOUE, audit duc de Nevers. Mantoue, 26 juin 1607. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e348">Fol. 5 • 3 Lettre de « FERNANDO GONZAGA » audit duc de Nevers. « Della Montegiana, alli 26 giugno 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e356">Fol. 7 • 4 Lettre de « LEONORA, duchessa DI MANTOVA », audit duc de Nevers. « Di Mantova, a 26 di giugno 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e364">Fol. 9 • 5 Lettre de FRANÇOIS DE GONZAGUE, prince DE MANTOUE, audit duc de Nevers. « Di Mantova, alli 27 di giugno 1607 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e372">Fol. 11 • 6 Lettre de « LEO SAPICHA, supremus Lithuaniae cancellarius, Moschoviensis, Parnaviensis, Bludnensis, etc., etc. gubernator », audit duc de Nevers. « Datae Cracoviae, idibus augusti, anno 1607 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e380">Fol. 13 • 7 Lettre de VINCENT DE GONZAGUE, duc DE MANTOUE, audit duc de Nevers. Mantoue, 16 novembre 1607. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e388">Fol. 15 • 8 Lettre, en latin, signée : « Comes GEORGIUS DRUGETH DE HOMONNA per Hungariam, judex curiae, eques auratus ac sacerrimae caesareae et regiae majestatis cubicularius et consiliarius, nec non comitatuum Zemplen et de Ungs perpetuus comes ». Adressée audit duc de Nevers. Date : « Viennae Austriae, die 17 julii anni 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e396">Fol. 17 • 9 Lettre de « LEONORA ORSINA SFORZA » à la « principessa de Mayene », Renée de Lorraine. Rome, 21 août 1612. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e404">Fol. 18 • 10 Lettre, signée : « Il duca [Alexandre] SFORZA », à la « principessa de Mayene ». Rome, 21 août 1612. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e412">Fol. 19 • 11 Lettre de « MARIO SFORZA » à la princesse de Mayenne. Rome, 22 août 1612. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e420">Fol. 20 • 12 « Lettera del vescovo del Braccio di Maina, del primo di ottobre 1612 ». En grec.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e431">Fol. 21 • 13 « Lettera di NEOPHITO, vescovo del Braccio di Maina, del 8 d'ottobre 1612 ». Au bas de la lettre, même estampille que celle du n° 12. En grec.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e439">Fol. 22 • 14 « Lettera de' magnoti a S. M. christianissima [Louis XIII]. Del 1612 ». En 3 parties, dont la première est du 8 et la seconde du 9 octobre 1612. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e447">Fol. 24 • 15 Lettre de « FULVIO ANGELUCCI » audit duc de Nevers. « Di Carlovilla, gli 15 giugno 1613 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e455">Fol. 26 • 16 Lettre de « TRAJANO GUISCARDI » audit duc de Nevers. « Di Parigi, questo di 24 di giugno 1613 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e463">Fol. 28 • 17 Lettre de « CHRISANTO LASCARI, arcivescovo di Lacedemonia, et GEORGIO COLUNBO, sacerdoto chioto », audit duc de Nevers. 28 août 1613. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e471">Fol. 30 • 18 Résumé des propositions adoptées, le 8 septembre 1614, dans une assemblée tenue à Cucci, dans l'Albanie supérieure, en vue d'une résistance à organiser contre les exactions des Turcs. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e488">Fol. 32 • 19 Lettre adressée audit duc de Nevers par CHRISTIERN IV, roi de Danemark. « Dabantur in castro nostro Coroniburgico, 3 die mensis decembris, anno 1614 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e496">Fol. 34 et 36 • 20-21 Lettres du cardinal « BORGHESE » audit duc de Nevers. Rome, avril et mai 1615. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e504">Fol. 38 • 22 Lettre, signée : « ADOLPH, comes AB ALTHAN », audit duc de Nevers. Vienne, 10 juin 1615. En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e512">Fol. 39 • 23 Lettre du cardinal « BORGHESE » audit duc de Nevers. Rome, 23 juin 1615. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e520">Fol. 41 • 24 Lettre du cardinal « VERALLO » audit duc de Nevers. Rome, 28 juin 1615. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e528">Fol. 43 • 25 Lettre de « FERDINANDO, c[ardinale] duca DI MANTOVA », à Marie de Médicis, reine de France. Mantoue, 3 juillet 1615. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e536">Fol. 45 • 26 Lettre, signée : « Il marchese DI MIROVA », audit duc de Nevers. « Di Bassano, li 15 luglio 1615 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e544">Fol. 47 • 27 Lettre de « CARLO GUAZZO » audit duc de Nevers. « Da Casale, alli 4 agosto 1615 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e552">Fol. 49 • 28 Lettre d' « ALBERTO STANISLAO RADZIWIL, duca D'OLICHA », audit duc de Nevers. « D'Olika, a le 10 d'agosto 1615 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e560">Fol. 50 • 29 Lettre de « FRANCESCO [GONZAGA], vescovo di Mantova », audit duc de Nevers. « Di Mantova, a 16 agosto 1615 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e568">Fol. 51 • 30 Lettre de « VINCENZO GONZAGA » audit duc de Nevers. « Di Mantova, li 12 di settembre 1615 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e576">Fol. 52 • 31 Lettre, signée : « ADOLPH, comes AB ALTHAN », audit duc de Nevers. « Datum Viennae, 16 septembris 1615 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e584">Fol. 53 • 32 Lettre en latin, signée : « ANDREAS FIRLEII DE DAMBRA, capit. Casimir,... Datum Parisiis, prima octobris, anno 1615 ». Adressée audit duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e597">Fol. 54 • 33 « Minutte de lettre escripte par Monseigneur [le duc DE NEVERS, CHARLES DE GONZAGUE], au duc de Lerma, laquelle a esté envoyée dans le paquet du seigneur D. Inigo, ambassadeur d'Espagne, porté par Mr de Chevrieres, partant de Nevers, le 3e octobre 1615 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e614">Fol. 56 et 57 • 34-35 Lettres du « sultan JACHIA, gran principe ottomano », audit duc de Nevers. Paris, 4 et 8 octobre 1615. En italien.</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e622">36-37 Lettres de CHRISTINE DE LORRAINE, grande-duchesse douairière DE TOSCANE.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e628">Fol. 59 • 36 audit duc de Nevers. « Di Fiorenza, li 22 giugno 1616 ». En italien.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e639">Fol. 61 • 37 au duc Maximilien de Bavière. Florence, 22 juin 1616. En italien.</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e650">Fol. 63 et 65 • 38-39 Lettres de « MARIA-MAGDALENA » D'AUTRICHE, grande-duchesse de Toscane, au roi de Pologne, Sigismond, et à la reine de Pologne, Constance d'Autriche. Florence, 24 juin 1616. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e658">Fol. 67 • 40 Lettre de COME DE MEDICIS, grand-duc DE TOSCANE, audit duc de Nevers. Florence, 25 juin 1616. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e666">Fol. 69 • 41 « Pro illustrissimo domino Nivernensi. Anno 1616 ». Mémoire, en latin, divisé en 12 articles, dont le premier est tel : « Quomodo probari possit Joannem, primum ducem Clivensem, tenuisse et possedisse comitatus Marchiae et Ravenspurgi ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e677">Fol. 71 • 42 Lettre adressée au pape Paul V par « GABRIEL, arceviscovo d'Anapacto et d'Arta », et ses cinq suffragants, et par l' « arceviscovo di Jianina » et ses cinq suffragants. 1618. En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e685">Fol. 72 • 43 Lettre des mêmes au cardinal « Borguese. 1618 ». En italien. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e693">Fol. 73 • 44 Lettre d' « ANDREAS LIPSKI, episcopus Luceoriensis, vicecancellarius regni Poloniae », audit duc de Nevers. « Datum Varsoviae, die 9 mensis octobris, anno 1618 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e701">Fol. 75 • 45 Lettre de DIONYSIOS, archevêque de Lacédémone, audit duc de Nevers. « Rendue par M. de Chasteaurenault. 1618 ». En grec.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e709">Fol. 77 • 46 Lettre de « FRANCESCO DIOTALLEVI, vescovo di S. Angelo... nonce de Poulogne », audit duc de Nevers. « Di Varsovia, a di aprile 1618 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e717">Fol. 78 • 47 « Copia d'una lettera authentica mandata dalli Cosacchi al signor duca di Nevers, sotto il nome del sigr di Marcones, mandato da S. E. in quelle parti, et fatto poi procuratore de' Cosacchi ; tradotta dal vero originale di lingua polacca in italiano... In Warsavia, li 7 d'aprile 1618 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e728">Fol. 80 • 48 Lettre, en italien, dudit duc DE NEVERS au général des capucins, concernant un projet d'expédition contre les Turcs et l'utilité des bons offices que « le R. P. Giuseppe da Pariggi » et « il R. P. Valeriano Magno » accomplissent en Europe en vue de ladite expédition. « Parigi, alli 17 aprile 1618 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e736">Fol. 82 • 49 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS. Paris, 24 mai 1618. Une note, placée en haut de cette lettre, porte : « Copia diretta a Pietro Petrignani, a Roma ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e744">Fol. 83 • 50 « Copia d'una lettera greca, scritta al signor duca, dall' arcivescovo di Malvasia MITROPHANE ». Cette note s'applique à une traduction, en italien, d'une lettre dont l'original, en grec, avait été adressé audit duc de Nevers. 14 juillet 1618.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e752">Fol. 84 • 51 Traduction, en italien, d'une lettre en grec, adressée audit duc de Nevers par l'archevêque de Lacédémone. Le texte grec est indiqué ci-dessus, sous le n° 45.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e760">Fol. 85 • 52 Lettre, en latin, adressée audit duc de Nevers par « DIONYSIOS RHALIS PALEOLOGOS », archevêque de Ternova et de toute la Bulgarie. « Anno a partu Virginis 1618, mense augusto 26 ». La souscription est en grec.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e768">Fol. 87 • 53 Lettre de « GASPAR GRATIANI, duca DI NAXIA », audit duc de Nevers. « Di Vienna, alli 5 di ottobre 1618 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e776">Fol. 89 • 54 Lettre signée : « Comes GEOR. DRUGET DE HOMONNA, judex curiae Caesareae Majestatis... Unguarini, 9 nov. 1618 ». Adressée audit duc de Nevers. En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e784">Fol. 91 • 55 Lettre, en latin, signée : « JANUSSIUS, dux OSTROGIAE, comes in TARNOW », adressée audit duc de Nevers. « In arce mea Jaroslaviensi, die 16 novembris... 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e797">Fol. 93 et 95 • 56-57 Lettres du grand maréchal de Pologne audit duc de Nevers. Cracovie, novembre et décembre 1618. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e805">Fol. 97 • 58 Lettre, en latin, signée : « ANDREAS LIPSKI, episcopus Luceoriensis, vicecancellarius regni Poloniae... Datum Varsoviae, die VII decembris 1618 ». Adressée audit duc de Nevers.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e813">Fol. 99 • 59 Lettre du grand maréchal de Pologne audit duc de Nevers. Cracovie, 28 décembre 1618. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e821">Fol. 101 • 60 Lettre, en latin, de « MARTINUS LISCHOUSTKI » audit duc de Nevers. « Dattum Kielcys, 29 decembris 1618 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e829">Fol. 103 • 61 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS. En tête on lit cette note : « Copia diretta a Pietro e Bernadino Petrignani, a Roma... A Vienna in Austria, a di 30 decembre 1618 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e837">Fol. 104 • 62 Lettre souscrite : « N. N., equites christianae Militiae districtus orientalis, quotquot modi sic agimus ». Au dos on lit : « Copia litterarum ad illustrissimum comitem de Althan perscriptarum ». La date est telle : « Viennae Austriae, in die S. Sylvestri extrema anni 1619 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e845">Fol. 106 • 63 « Chiffre » dudit duc de Nevers, « avec le seigneur conte Rusca Poloniae... 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e853">Fol. 108 • 64 Lettre du grand maréchal de Pologne audit duc de Nevers. « Di Cracovia, alli 3 januar. 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e861">Fol. 110 • 65 « Lettera de' magnoti, scritta a S. E. mio signore [ledit duc de Nevers], portata dal signor Chateaurenault. 1618 ». En grec.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e869">Fol. 111 • 66 « Lettera dell' arcivescovo di Asta e di alcuni altri, portata dall' arcivescovo di Durazzo. 1619 ». Audit duc de Nevers. En grec.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e877">Fol. 112 et 114 • 67-68 Lettres de CHRISTOPHE, duc DE ZBARAS, audit duc de Nevers. 1619. En italien et en latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e891">Fol. 116 • 69 Lettre de « FER[DINANDO TABERNA], cardinale di S. Eusebio », audit duc de Nevers. « Di Novara, li 20 di febraro 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e899">Fol. 118 • 70 Lettre du « chevalier NOWODWOUSKI » audit duc de Nevers. « Dattum Varschaviae, vigesima prima martii, anno Domini 1619 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e907">Fol. 119 • 71 Lettre de l'archevêque de Gnesne audit duc de Nevers. « Varsaviae, 9 martii 1619 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e915">Fol. 121 • 72 « Cedulle de l'archevesque... de Tornavia [DENIS] PALEOLOGUE », par laquelle il reconnaît avoir reçu du duc de Nevers, par les mains du Sr J.-B. Petrignani, 22 écus d'or, en monnaie de France. Vienne, 6 avril 1619. En italien. La souscription est en grec.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e926">Fol. 123 • 73 Lettre signée : « ADOLPH, co[mes] AB ALT[HAN]... Viennae, 18 aprilis anni 1619 ». Au duc de Nevers. En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e937">Fol. 125 • 74 Lettre de PIERRE et JEAN-BAPTISTE « PETRIGNANI SFORZA » audit duc de Nevers. Vienne, 1er et 8 mai 1619. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e951">Fol. 127 • 75-76 « Copie des lectres de l'ordre » de la Milice chrétienne, « escrittes au roy catholicq et à la reyne mere du roy treschrestien... Mandata per il signr conte Scoti ». Vienne en Autriche, 15 mai 1619. En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e962">Fol. 129 • 77 Lettre de FERDINAND, duc DE MANTOUE, audit duc de Nevers. « Di Mantova, li 21 di giugno 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e970">Fol. 131 • 78 Lettre de « l'archiduc LEOPOLDO » D'AUTRICHE audit duc de Nevers. « Di Moltzheim, l'ultimo di maggio 1619 ». Un postscriptum est daté de « Ruffach, li 2 di giugno 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e978">Fol. 133 • 79 « Copia d'un memoriale presentato alla [S.] S. dal Sor co[nte] GIO. VINCENZO D'A[RCO], per lo stabilimento del districto meri[dio]nale in Roma, per la creatione » de « cavalieri dell' ordine della Militia christiana... nello Stato di S. Chiesa, e per la p[rotettione] della Sta Sua a tutto l'ordine. 18 luglio 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e992">Fol. 135 • 80 Lettre de l'archiduc LEOPOLD D'AUTRICHE audit duc de Nevers. Vienne, 2 août 1619. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1000">Fol. 137 et suiv • 81-83 Lettres de « GIO. BATTISTA PETRIGNANI SFORZA, fundatore della Militia christiana », audit duc de Nevers. Vienne, 14 et 28 août et 4 septembre 1619. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1008">Fol. 143 • 84 « Copia della lettera scritta dal Sr conte DAMPIER al Sr conte Gio. Vincenzo d'Archo,... Di Vienna, 20 ottobre 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1022">Fol. 145 • 85 « Copia de la carta de S. M. catolica [PHILIPPE III] ai cavalieri dell' ordine... de la Milicia christiana... De Talabera, a 5 de novembre de 1619 ». En espagnol.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1033">Fol. 147 • 86 Pouvoir de contracter alliances avec différents peuples voisins ou soumis aux Turcs contre lesdits Turcs, accordé au Sr « de Marcones » par le conseil et les chevaliers de la Milice chrétienne du district occidental. « Datum in civitate Nivernensi, die 5 novembris 1619 ». En latin. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1047">Fol. 148 • 87 Lettre du cardinal CHARLES DE MEDICIS audit duc de Nevers. Florence, 9 novembre 1619. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1055">Fol. 150 • 88 Lettre de « POMPEO STROZZI » au duc de Nevers. Mantoue, 10 novembre 1619. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1063">Fol. 152 • 89 Lettre de CHRISTINE DE LORRAINE, grande-duchesse DE TOSCANE, audit duc de Nevers. Florence, 12 novembre 1619. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1071">Fol. 154 • 90 Lettre du cardinal PIERRE ALDOBRANDINI audit duc de Nevers. Rome, 16 novembre 1619. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1079">Fol. 156 • 91 Lettre de « SANTI SANTIO » audit duc de Nevers. « Di Foligno, li 18 di novembre 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1087">Fol. 158 • 92 Lettre du cardinal SCIPION CAFFARELLI « BORGHESE » audit duc de Nevers. « Di Roma, li 22 di novembre 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1095">Fol. 160 • 93 Lettre, en latin, adressée audit duc de Nevers, « Augusta, 22 novembris 1619 ». Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1106">Fol. 161 • 94 Lettre de SCIPION COBELLUTIO, cardinal de Sainte-Suzanne, audit duc de Nevers. « Di Roma, a 23 di novembre 1619 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1114">Fol. 163 • 95 Lettre du cardinal « MELLINO » audit duc de Nevers. Rome, 23 novembre 1619. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1122">Fol. 165 • 96 Lettre de « SANTI SANTIO » audit duc de Nevers. « Di Foligno, li 26 di novembre 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1130">Fol. 167 • 97 Lettre du cardinal PIERRE « CAMPORA » audit duc de Nevers. « Di Roma, li 30 di novembre 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1143">Fol. 169 • 98 « Copia mandati ordinis Militiae christianae contra Petrignanos, quo eis intimatur ut crucem deponant, et ratificatur plenipotentia ab eodem ordine alias emanata ad illustrissimum D. Jo. Vincentium, comitem Archi... et pariter copia inhibitionis pro Jo. Baptista Petrignano contra dominum Johannem Vincentium, comitem supradictum. 1619 ». En latin.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1154">Fol. 171 • 99 Lettre de « CLEMENTE SANTIO » audit duc de Nevers. Rome, 12 décembre 1619. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1162">Fol. 173 • 100 « Lettera del prencipe DI SOLFERINO » audit duc de Nevers. « Castiglione, 17 decembre 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1173">Fol. 175 • 101 Lettre de « GIO. BARTOLOTTI, rettore della compania di Giesu », audit duc de Nevers. « Di Mantova, li 30 decembre 1619 ». En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000057753_d0e1181">Fol. 177 • 102 Lettre de « TRAJANO GUISCARDI » audit duc de Nevers. « Di Mantova, questo di 20 di marzo 1620 ». En italien.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 4703 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc57753k&Cote=Français 4703&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 4703 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9525</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces originales et de copies concernant l'ordre de la Milice chrétienne, les projets de Charles de Gonzague, duc de Nevers, contre les Turcs, etc., l'histoire des années 1606 à 1620.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="controlaccess-class">
+<p>Aldobrandini, Pietro, cardinal. • Lettres.</p>
+<p>Althan, Adolphe, comte d'. • Lettres (1615-1619).</p>
+<p>Bartolotti, Giovanni. • Lettre (1619).</p>
+<p>Borghese, Scipione Caffarelli, cardinal. • Lettres.</p>
+<p>Caffarelli, Scipion, dit le cardinal Borghèse. • Lettres.</p>
+<p>Christian IV, roi de Danemark. • Lettres.</p>
+<p>Cobeluzzi, Scipion. • Correspondance.</p>
+<p>Cosaques.</p>
+<p>Dionysios, archevêque de Lacédémone. • Lettre (1618).</p>
+<p>Diotallevi, Francesco, nonce de Pologne. • Lettre (1618).</p>
+<p>France. • Pitorre (1606-1620).</p>
+<p>Gembicki, Laurent, archevêque de Gnesen. • Lettre (1619).</p>
+<p>Gonzague, Famille de.</p>
+<p>Gonzague, Ferdinand de, cardinal et duc de Mantoue. • Lettres et actes.</p>
+<p>Gonzague, François de, cardinal de Saint-Pierre-ès-Liens. • Lettres.</p>
+<p>Gonzague, François IV de, duc de Mantoue. • Lettres.</p>
+<p>Gonzague, Vincent Ier de, duc de Mantoue. • Lettres et actes.</p>
+<p>Gratiani, Gaspar, duc de Naxia. • Lettre.</p>
+<p>Guazzo, Carlo. • Lettres.</p>
+<p>Guiscardi, Trajano. • Lettres.</p>
+<p>Henri IV, roi de France. • Notes et pièces diverses.</p>
+<p>Homonna, Georgius Drugeth de. • Lettres.</p>
+<p>Jachia, sultan. • Lettres.</p>
+<p>Lascaris, Chrisanto. • Lettre (1613).</p>
+<p>Lipski, Andreas, vice-chancelier de Pologne. • Lettres (1618).</p>
+<p>Lischoutski, Martin. • Lettre (1618).</p>
+<p>Louis XIII, roi de France. • Notes et pièces diverses.</p>
+<p>Mantoue, Éléonore de Médicis, duchesse de. • Lettres.</p>
+<p>Médicis, Charles de, cardinal. • Lettres.</p>
+<p>Médicis, Côme II de, grand-duc de Toscane. • Lettres.</p>
+<p>Mellini, Jean-Garcias, cardinal. • Lettres.</p>
+<p>Milice Chrétienne, Ordre de la.</p>
+<p>Miron, Sigismond, marquis de. • Lettres (1606-1615).</p>
+<p>Neophito, évêque de Braccio di Maina. • Lettre.</p>
+<p>Nevers, Charles Ier de Gonzague, duc de Mantoue et de. • Actes et lettres.</p>
+<p>Nevers, Maison de. • Pièces et recueils divers.</p>
+<p>Nowodwouski. • Lettre (1619).</p>
+<p>Paléologue, Denis.</p>
+<p>Pentorio, Isidore, archevêque d'Asti. • Lettre.</p>
+<p>Petrignani, Gio. • Lettres (1619).</p>
+<p>Petrignani, Pietro. • Lettre (1619).</p>
+<p>Pologne. • Lettres du grand maréchal.</p>
+<p>Radziwill, Albert-Stanislas, duc d'Oliva. • Lettre.</p>
+<p>Santio, Clemente. • Lettre.</p>
+<p>Santio, Santi, Lettres.</p>
+<p>Sapieha, Leo, chancelier de Lithuanie. • Lettre (1607).</p>
+<p>Senlis. • Défense (1615).</p>
+<p>Sforza, Alexandre, duc de Milan. • Lettres.</p>
+<p>Sforza, Leonora Orsina. • Lettre.</p>
+<p>Sforza, Mario. • Mariage.</p>
+<p>Solferino, Prince de. • Lettres.</p>
+<p>Strozzi, Pompeo. • Lettres.</p>
+<p>Taberna, Ferdinando, cardinal. • Lettres.</p>
+<p>Toscane, Christine de Lorraine, grande-duchesse de. • Lettres.</p>
+<p>Toscane, Marie-Madeleine d'Autriche, grande-duchesse de. • Lettres.</p>
+<p>Veralli, Fabrizio, cardinal. • Lettres.</p>
+<p>Zbaraz, Christophe, duc de. • Lettres.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e329');">1 Lettre de « SIGISMUNDO, marchese DI MIROW », à Charles de Gonzague, duc de Nevers. « Cracoviae, 15 julii 1606 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e337');">2 Lettre de VINCENT Ier, duc DE MANTOUE, audit duc de Nevers. Mantoue, 26 juin 1607. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e348');">3 Lettre de « FERNANDO GONZAGA » audit duc de Nevers. « Della Montegiana, alli 26 giugno 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e356');">4 Lettre de « LEONORA, duchessa DI MANTOVA », audit duc de Nevers. « Di Mantova, a 26 di giugno 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e364');">5 Lettre de FRANÇOIS DE GONZAGUE, prince DE MANTOUE, audit duc de Nevers. « Di Mantova, alli 27 di giugno 1607 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e372');">6 Lettre de « LEO SAPICHA, supremus Lithuaniae cancellarius, Moschoviensis, Parnaviensis, Bludnensis, etc., etc. gubernator », audit duc de Nevers. « Datae Cracoviae, idibus augusti, anno 1607 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e380');">7 Lettre de VINCENT DE GONZAGUE, duc DE MANTOUE, audit duc de Nevers. Mantoue, 16 novembre 1607. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e388');">8 Lettre, en latin, signée : « Comes GEORGIUS DRUGETH DE HOMONNA per Hungariam, judex curiae, eques auratus ac sacerrimae caesareae et regiae majestatis cubicularius et consiliarius, nec non comitatuum Zemplen et de Ungs perpetuus comes ». Adressée audit duc de Nevers. Date : « Viennae Austriae, die 17 julii anni 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e396');">9 Lettre de « LEONORA ORSINA SFORZA » à la « principessa de Mayene », Renée de Lorraine. Rome, 21 août 1612. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e404');">10 Lettre, signée : « Il duca [Alexandre] SFORZA », à la « principessa de Mayene ». Rome, 21 août 1612. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e412');">11 Lettre de « MARIO SFORZA » à la princesse de Mayenne. Rome, 22 août 1612. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e420');">12 « Lettera del vescovo del Braccio di Maina, del primo di ottobre 1612 ». En grec.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e431');">13 « Lettera di NEOPHITO, vescovo del Braccio di Maina, del 8 d'ottobre 1612 ». Au bas de la lettre, même estampille que celle du n° 12. En grec.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e439');">14 « Lettera de' magnoti a S. M. christianissima [Louis XIII]. Del 1612 ». En 3 parties, dont la première est du 8 et la seconde du 9 octobre 1612. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e447');">15 Lettre de « FULVIO ANGELUCCI » audit duc de Nevers. « Di Carlovilla, gli 15 giugno 1613 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e455');">16 Lettre de « TRAJANO GUISCARDI » audit duc de Nevers. « Di Parigi, questo di 24 di giugno 1613 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e463');">17 Lettre de « CHRISANTO LASCARI, arcivescovo di Lacedemonia, et GEORGIO COLUNBO, sacerdoto chioto », audit duc de Nevers. 28 août 1613. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e471');">18 Résumé des propositions adoptées, le 8 septembre 1614, dans une assemblée tenue à Cucci, dans l'Albanie supérieure, en vue d'une résistance à organiser contre les exactions des Turcs. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e488');">19 Lettre adressée audit duc de Nevers par CHRISTIERN IV, roi de Danemark. « Dabantur in castro nostro Coroniburgico, 3 die mensis decembris, anno 1614 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e496');">20-21 Lettres du cardinal « BORGHESE » audit duc de Nevers. Rome, avril et mai 1615. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e504');">22 Lettre, signée : « ADOLPH, comes AB ALTHAN », audit duc de Nevers. Vienne, 10 juin 1615. En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e512');">23 Lettre du cardinal « BORGHESE » audit duc de Nevers. Rome, 23 juin 1615. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e520');">24 Lettre du cardinal « VERALLO » audit duc de Nevers. Rome, 28 juin 1615. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e528');">25 Lettre de « FERDINANDO, c[ardinale] duca DI MANTOVA », à Marie de Médicis, reine de France. Mantoue, 3 juillet 1615. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e536');">26 Lettre, signée : « Il marchese DI MIROVA », audit duc de Nevers. « Di Bassano, li 15 luglio 1615 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e544');">27 Lettre de « CARLO GUAZZO » audit duc de Nevers. « Da Casale, alli 4 agosto 1615 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e552');">28 Lettre d' « ALBERTO STANISLAO RADZIWIL, duca D'OLICHA », audit duc de Nevers. « D'Olika, a le 10 d'agosto 1615 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e560');">29 Lettre de « FRANCESCO [GONZAGA], vescovo di Mantova », audit duc de Nevers. « Di Mantova, a 16 agosto 1615 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e568');">30 Lettre de « VINCENZO GONZAGA » audit duc de Nevers. « Di Mantova, li 12 di settembre 1615 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e576');">31 Lettre, signée : « ADOLPH, comes AB ALTHAN », audit duc de Nevers. « Datum Viennae, 16 septembris 1615 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e584');">32 Lettre en latin, signée : « ANDREAS FIRLEII DE DAMBRA, capit. Casimir,... Datum Parisiis, prima octobris, anno 1615 ». Adressée audit duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e597');">33 « Minutte de lettre escripte par Monseigneur [le duc DE NEVERS, CHARLES DE GONZAGUE], au duc de Lerma, laquelle a esté envoyée dans le paquet du seigneur D. Inigo, ambassadeur d'Espagne, porté par Mr de Chevrieres, partant de Nevers, le 3e octobre 1615 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e614');">34-35 Lettres du « sultan JACHIA, gran principe ottomano », audit duc de Nevers. Paris, 4 et 8 octobre 1615. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e622');">36-37 Lettres de CHRISTINE DE LORRAINE, grande-duchesse douairière DE TOSCANE.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e650');">38-39 Lettres de « MARIA-MAGDALENA » D'AUTRICHE, grande-duchesse de Toscane, au roi de Pologne, Sigismond, et à la reine de Pologne, Constance d'Autriche. Florence, 24 juin 1616. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e658');">40 Lettre de COME DE MEDICIS, grand-duc DE TOSCANE, audit duc de Nevers. Florence, 25 juin 1616. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e666');">41 « Pro illustrissimo domino Nivernensi. Anno 1616 ». Mémoire, en latin, divisé en 12 articles, dont le premier est tel : « Quomodo probari possit Joannem, primum ducem Clivensem, tenuisse et possedisse comitatus Marchiae et Ravenspurgi ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e677');">42 Lettre adressée au pape Paul V par « GABRIEL, arceviscovo d'Anapacto et d'Arta », et ses cinq suffragants, et par l' « arceviscovo di Jianina » et ses cinq suffragants. 1618. En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e685');">43 Lettre des mêmes au cardinal « Borguese. 1618 ». En italien. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e693');">44 Lettre d' « ANDREAS LIPSKI, episcopus Luceoriensis, vicecancellarius regni Poloniae », audit duc de Nevers. « Datum Varsoviae, die 9 mensis octobris, anno 1618 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e701');">45 Lettre de DIONYSIOS, archevêque de Lacédémone, audit duc de Nevers. « Rendue par M. de Chasteaurenault. 1618 ». En grec.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e709');">46 Lettre de « FRANCESCO DIOTALLEVI, vescovo di S. Angelo... nonce de Poulogne », audit duc de Nevers. « Di Varsovia, a di aprile 1618 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e717');">47 « Copia d'una lettera authentica mandata dalli Cosacchi al signor duca di Nevers, sotto il nome del sigr di Marcones, mandato da S. E. in quelle parti, et fatto poi procuratore de' Cosacchi ; tradotta dal vero originale di lingua polacca in italiano... In Warsavia, li 7 d'aprile 1618 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e728');">48 Lettre, en italien, dudit duc DE NEVERS au général des capucins, concernant un projet d'expédition contre les Turcs et l'utilité des bons offices que « le R. P. Giuseppe da Pariggi » et « il R. P. Valeriano Magno » accomplissent en Europe en vue de ladite expédition. « Parigi, alli 17 aprile 1618 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e736');">49 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS. Paris, 24 mai 1618. Une note, placée en haut de cette lettre, porte : « Copia diretta a Pietro Petrignani, a Roma ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e744');">50 « Copia d'una lettera greca, scritta al signor duca, dall' arcivescovo di Malvasia MITROPHANE ». Cette note s'applique à une traduction, en italien, d'une lettre dont l'original, en grec, avait été adressé audit duc de Nevers. 14 juillet 1618.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e752');">51 Traduction, en italien, d'une lettre en grec, adressée audit duc de Nevers par l'archevêque de Lacédémone. Le texte grec est indiqué ci-dessus, sous le n° 45.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e760');">52 Lettre, en latin, adressée audit duc de Nevers par « DIONYSIOS RHALIS PALEOLOGOS », archevêque de Ternova et de toute la Bulgarie. « Anno a partu Virginis 1618, mense augusto 26 ». La souscription est en grec.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e768');">53 Lettre de « GASPAR GRATIANI, duca DI NAXIA », audit duc de Nevers. « Di Vienna, alli 5 di ottobre 1618 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e776');">54 Lettre signée : « Comes GEOR. DRUGET DE HOMONNA, judex curiae Caesareae Majestatis... Unguarini, 9 nov. 1618 ». Adressée audit duc de Nevers. En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e784');">55 Lettre, en latin, signée : « JANUSSIUS, dux OSTROGIAE, comes in TARNOW », adressée audit duc de Nevers. « In arce mea Jaroslaviensi, die 16 novembris... 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e797');">56-57 Lettres du grand maréchal de Pologne audit duc de Nevers. Cracovie, novembre et décembre 1618. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e805');">58 Lettre, en latin, signée : « ANDREAS LIPSKI, episcopus Luceoriensis, vicecancellarius regni Poloniae... Datum Varsoviae, die VII decembris 1618 ». Adressée audit duc de Nevers.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e813');">59 Lettre du grand maréchal de Pologne audit duc de Nevers. Cracovie, 28 décembre 1618. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e821');">60 Lettre, en latin, de « MARTINUS LISCHOUSTKI » audit duc de Nevers. « Dattum Kielcys, 29 decembris 1618 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e829');">61 Lettre de CHARLES DE GONZAGUE, duc DE NEVERS. En tête on lit cette note : « Copia diretta a Pietro e Bernadino Petrignani, a Roma... A Vienna in Austria, a di 30 decembre 1618 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e837');">62 Lettre souscrite : « N. N., equites christianae Militiae districtus orientalis, quotquot modi sic agimus ». Au dos on lit : « Copia litterarum ad illustrissimum comitem de Althan perscriptarum ». La date est telle : « Viennae Austriae, in die S. Sylvestri extrema anni 1619 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e845');">63 « Chiffre » dudit duc de Nevers, « avec le seigneur conte Rusca Poloniae... 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e853');">64 Lettre du grand maréchal de Pologne audit duc de Nevers. « Di Cracovia, alli 3 januar. 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e861');">65 « Lettera de' magnoti, scritta a S. E. mio signore [ledit duc de Nevers], portata dal signor Chateaurenault. 1618 ». En grec.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e869');">66 « Lettera dell' arcivescovo di Asta e di alcuni altri, portata dall' arcivescovo di Durazzo. 1619 ». Audit duc de Nevers. En grec.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e877');">67-68 Lettres de CHRISTOPHE, duc DE ZBARAS, audit duc de Nevers. 1619. En italien et en latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e891');">69 Lettre de « FER[DINANDO TABERNA], cardinale di S. Eusebio », audit duc de Nevers. « Di Novara, li 20 di febraro 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e899');">70 Lettre du « chevalier NOWODWOUSKI » audit duc de Nevers. « Dattum Varschaviae, vigesima prima martii, anno Domini 1619 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e907');">71 Lettre de l'archevêque de Gnesne audit duc de Nevers. « Varsaviae, 9 martii 1619 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e915');">72 « Cedulle de l'archevesque... de Tornavia [DENIS] PALEOLOGUE », par laquelle il reconnaît avoir reçu du duc de Nevers, par les mains du Sr J.-B. Petrignani, 22 écus d'or, en monnaie de France. Vienne, 6 avril 1619. En italien. La souscription est en grec.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e926');">73 Lettre signée : « ADOLPH, co[mes] AB ALT[HAN]... Viennae, 18 aprilis anni 1619 ». Au duc de Nevers. En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e937');">74 Lettre de PIERRE et JEAN-BAPTISTE « PETRIGNANI SFORZA » audit duc de Nevers. Vienne, 1er et 8 mai 1619. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e951');">75-76 « Copie des lectres de l'ordre » de la Milice chrétienne, « escrittes au roy catholicq et à la reyne mere du roy treschrestien... Mandata per il signr conte Scoti ». Vienne en Autriche, 15 mai 1619. En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e962');">77 Lettre de FERDINAND, duc DE MANTOUE, audit duc de Nevers. « Di Mantova, li 21 di giugno 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e970');">78 Lettre de « l'archiduc LEOPOLDO » D'AUTRICHE audit duc de Nevers. « Di Moltzheim, l'ultimo di maggio 1619 ». Un postscriptum est daté de « Ruffach, li 2 di giugno 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e978');">79 « Copia d'un memoriale presentato alla [S.] S. dal Sor co[nte] GIO. VINCENZO D'A[RCO], per lo stabilimento del districto meri[dio]nale in Roma, per la creatione » de « cavalieri dell' ordine della Militia christiana... nello Stato di S. Chiesa, e per la p[rotettione] della Sta Sua a tutto l'ordine. 18 luglio 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e992');">80 Lettre de l'archiduc LEOPOLD D'AUTRICHE audit duc de Nevers. Vienne, 2 août 1619. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1000');">81-83 Lettres de « GIO. BATTISTA PETRIGNANI SFORZA, fundatore della Militia christiana », audit duc de Nevers. Vienne, 14 et 28 août et 4 septembre 1619. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1008');">84 « Copia della lettera scritta dal Sr conte DAMPIER al Sr conte Gio. Vincenzo d'Archo,... Di Vienna, 20 ottobre 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1022');">85 « Copia de la carta de S. M. catolica [PHILIPPE III] ai cavalieri dell' ordine... de la Milicia christiana... De Talabera, a 5 de novembre de 1619 ». En espagnol.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1033');">86 Pouvoir de contracter alliances avec différents peuples voisins ou soumis aux Turcs contre lesdits Turcs, accordé au Sr « de Marcones » par le conseil et les chevaliers de la Milice chrétienne du district occidental. « Datum in civitate Nivernensi, die 5 novembris 1619 ». En latin. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1047');">87 Lettre du cardinal CHARLES DE MEDICIS audit duc de Nevers. Florence, 9 novembre 1619. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1055');">88 Lettre de « POMPEO STROZZI » au duc de Nevers. Mantoue, 10 novembre 1619. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1063');">89 Lettre de CHRISTINE DE LORRAINE, grande-duchesse DE TOSCANE, audit duc de Nevers. Florence, 12 novembre 1619. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1071');">90 Lettre du cardinal PIERRE ALDOBRANDINI audit duc de Nevers. Rome, 16 novembre 1619. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1079');">91 Lettre de « SANTI SANTIO » audit duc de Nevers. « Di Foligno, li 18 di novembre 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1087');">92 Lettre du cardinal SCIPION CAFFARELLI « BORGHESE » audit duc de Nevers. « Di Roma, li 22 di novembre 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1095');">93 Lettre, en latin, adressée audit duc de Nevers, « Augusta, 22 novembris 1619 ». Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1106');">94 Lettre de SCIPION COBELLUTIO, cardinal de Sainte-Suzanne, audit duc de Nevers. « Di Roma, a 23 di novembre 1619 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1114');">95 Lettre du cardinal « MELLINO » audit duc de Nevers. Rome, 23 novembre 1619. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1122');">96 Lettre de « SANTI SANTIO » audit duc de Nevers. « Di Foligno, li 26 di novembre 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1130');">97 Lettre du cardinal PIERRE « CAMPORA » audit duc de Nevers. « Di Roma, li 30 di novembre 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1143');">98 « Copia mandati ordinis Militiae christianae contra Petrignanos, quo eis intimatur ut crucem deponant, et ratificatur plenipotentia ab eodem ordine alias emanata ad illustrissimum D. Jo. Vincentium, comitem Archi... et pariter copia inhibitionis pro Jo. Baptista Petrignano contra dominum Johannem Vincentium, comitem supradictum. 1619 ». En latin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1154');">99 Lettre de « CLEMENTE SANTIO » audit duc de Nevers. Rome, 12 décembre 1619. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1162');">100 « Lettera del prencipe DI SOLFERINO » audit duc de Nevers. « Castiglione, 17 decembre 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1173');">101 Lettre de « GIO. BARTOLOTTI, rettore della compania di Giesu », audit duc de Nevers. « Di Mantova, li 30 decembre 1619 ». En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000057753_d0e1181');">102 Lettre de « TRAJANO GUISCARDI » audit duc de Nevers. « Di Mantova, questo di 20 di marzo 1620 ». En italien.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>
