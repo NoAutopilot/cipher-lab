@@ -12655,3 +12655,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:23 | MANT-CUC3 worker | sachsen take (2 GETs: 694/08 0398, 0499), for LANE FAMILY-A2i (account 2)
 2026-10-09 13:23 | BRO-SWEEP worker (account 2, Sonnet) | digitarq take (21 leaves, >=3 s, <=40 requests); for LANE FAMILY-A2i (account 2)
 2026-10-09 13:24 | MANT-CUC3 worker | sachsen release (2 GETs done), for LANE FAMILY-A2i (account 2)
+2026-10-09 13:24 | HEIN-SR2 worker (Sonnet) | resources.huygens.knaw.nl take (106 pages 132-251, >=2.2s), for LANE FAMILY-A2i (account 2)
