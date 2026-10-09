@@ -1,0 +1,46 @@
+'Hauliff': 1 hits: 9819()
+'Kenner': 1 hits: 9045()
+'James Bruce': 2 hits: 9820() 13180()
+'Keith Halifax': 6 hits: 9042() 9045() 9816() 9817() 9819() 9820()
+'Mitchell Montreal': 1 hits: 9045()
+'machinery Montreal': 0 hits: 
+'Murray Keith': 1 hits: 9820()
+'Bruce Halifax': 3 hits: 9045() 9819() 9820()
+requests 8
+9042 | Page 149 | {} | Geo D. Sheldon  Wash'n Aug. 11th 11 1/2 am 1864  / Grapes Fence Florence For Pandora Biggs Vinton zebra / Provision and water the Continental to bring whiskey / Saxon Quadroon Torch Waxy and Persia a dispatch / preparing by Ivory amirs send her with it / to Hit on Head zodiac Wick ham of / sailing youth Meigs Belsher Italys dispatch gone forward /  /  / John Horner  Wash'n Aug 11th 1864 230 Pm / Grapes Aug Fence Henrietta For Abe Wake Man Esq / Post Master Frog unity Alexander Keith the Walnut agent / at Halifax to whom the Penfield stopped by you / last winter were addressed is in France Zodiac It / is likely that he is now getting letters from / Fool where he has recently been & perhaps from / other Vernons zebra His oakum would be of immense / advantage to the Spark unity Can you arrange it / Yoke Infant Zodiac To Homer Please examine your office / business & see if any thing been rec'd for / or sent by Keith during past three days & / also look out for anything which may be received / or offered in his name zebra His is probably / in correspondence with Norris & sons Frog answer quick  / 
+Traceback (most recent call last):
+  File "/home/user/cipher-lab/ciphers/eckert-1864/ms18/aud2_ledger31_hdl.py", line 20, in <module>
+    d = json.load(urllib.request.urlopen(urllib.request.Request(HB + f"dmGetItemInfo/p16003coll11/{p}/json", headers=UA), timeout=60)); n += 1
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.13/urllib/request.py", line 1379, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 1335, in do_open
+    r = h.getresponse()
+  File "/usr/lib/python3.13/http/client.py", line 1478, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 312, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+# 9816: RemoteDisconnected on first request; one retry after 10 s pause
+9816 | Page 150 | {} | C. G. Sholes  Wash'n Aug 7th 1864 1030 Pm  / Growl Aug Plunder Reliance For Kidnap / Shelby Wash burn has been directed / to send you all the whisky / he can possibly spare from his / Polka youth Italy awful hot here /  /  / Capt W. G. Fuller  Wash'n Aug 7th 1864 / Hang Aug Downing Reliance For Oyster Tulip / It is important that the Salems of / your Princeton that can possibly be spared / should be imm'y sent to Fortune Spit / Bishop yawl Cupid acknowledge recpt of this /  /  / 930 PM / Thayer Phila  Wash D. C. Aug 10. 1864 / Washn Aug 10. 9. 30. / P. M for Chas Gilpin / U S Dist Atty Phila / Strictly Confidential - Spare no / means to catch Keith who / purchased the locomotives ---- His / capture is vastly important I / know him He is the / rebel agent in Halifax ---- / He is worth more to / us than you can imagine / signed Edwin M Stanton Secy / 
+9817 | Page 151 | {} | G. D. Sheldon  Wash'n Aug 11th 1864 11 AM / Growl Flag Aug Fanny For Lester Polkaing Quadrant Waxy Unity / John directs that you will send to Grapes all the / Whiff you can possibly spare Pekin remaining your self merely / in the quackin yoke Italy Forward by very first chance / Inland says the Continental is under orders for Quadroon Wax end /  /  / Thayer Phila  Washn D.C. Aug 11, 1864 / for C. A. Wal- born / P M Phila ---- If / there are in your office / any letters for Alex Keith / addressed either to Phila or / any other place will you / please seize them & send / them to this Dept at / once by a special messenger / signed C A Dana Asst / Secy War ---- to Thayer / Stop all mesgs from or / to Alex Keith and any / from Norris & Son about / detention of locomotives also any / from any person to Halifax / in regard to same matter / & send <deletion>them</deletion> <insertion>here</insertion> by telegh / Examine your files for 3 / days back for same telegrams / 
+13180 | Leaf 282 | {} | 1205P Oct 24 / N York City  Oct 24 / Maj Eckert / The names of the thieves & murdering marauders / in Jail at St Johns CE are . / Jno McGroty . Jas Doty . Geo Williams / Alias Scott [unclear][/unclear] Saml Greigg . D Moore  / [unclear]Calabon[/unclear] . Wallace Seleacky . E. P. Bruce / T. B. Cullin . Marcus Spruce . Square . / Tevis . Bennett Young & Chas M. / Swayer Please inform your Secy of / War / [unclear]J Horn Jr[/unclear]  /  /  / Rectorstown / Oct 24 / Maj Eckert / If you have not expressed / money to Father [unclear]please[/unclear]  / send it to him Care / Geo S Koontz Genl Agent / Balt Depot Washn . / Let me know when it / is delivered / Embree / 
+requests 3

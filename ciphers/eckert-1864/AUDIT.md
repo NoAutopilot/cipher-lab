@@ -12613,3 +12613,64 @@ decoder slips. Corrections (a verifier does not edit ciphertext.txt or reading.m
 
 Requests: hdl.huntington.org 21 (8 CISOSEARCHALL, 8 item info, 5 IIIF 2400 px), all 200; archive.org 14 (4 djvu texts, 3 page_numbers, 7 page images),
 all 200; googleapis.com 4; be-api.us.archive.org 4 (2 answered, 2 empty). Queued: WORK-QUEUE `AUD2-LEDGER-33` (E358), SO-ECKERT-E358.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-31)
+
+Second verifier AUD2-LEDGER-31 (account 4, for the orchestrator (account-4); row queued by LANE LEDGER (account 1)), 9 Oct 2026, 22:01-22:1x UTC by
+`date -u`; a separate session and account from the reader MS18-R4 and the first auditor FV-MS18f (account 1); this session had not read or audited
+E346 before. Scope: **E346** (Stanton to U.S. Marshal Robert Murray, New York, 13 Aug 1864; mssEC 18 p.154, pointer 9820). Nothing decoded beyond key
+look-ups. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3 ciphers/eckert-1864/decode.py
+--check` -> "reading.md is current" (after FIX-FM16 carried "Hanliff" -> "Hauliff"). Image: not re-checked (FV-MS18f eye-checked p.154 at 2400 px; no
+token below turns on the image). Committed: this section; `ms18/aud2_ledger31_hdl.py` + `.out` (8 CONTENTdm queries FV-MS18f did not run, 4 item
+infos); `ms18/aud2_ledger31_search.py` + `.out` (IA be-api inside Larabee and across all items, Google Books, OpenAlex, CORE); `ms18/aud2_ledger31_ca.py`
++ `.out` (Chronicling America by date window) and `ms18/aud2_ledger31_ca_pages.out` (5 page OCRs read with `aud2_ledger30_ca_pages.py`); two
+JSTOR-QUEUE.tsv rows.
+
+### 1. Families FV-MS18f did not cover, and what this pass did
+| Family | FV-MS18f | This pass |
+|---|---|---|
+| Huntington CONTENTdm, new queries (all pointers, CISOSEARCHALL, suppressfulltext=1) | 8 queries | 8 more: Hauliff 1 (9819); Kenner 1 (9045); James Bruce 2 (9820 own; 13180 = Oct 1864 St Johns C.E. raiders list, "E. P. Bruce", other); **Keith Halifax 6** (9042, 9045, **9816**, **9817**, 9819, 9820); Mitchell Montreal 1 (9045); machinery Montreal 0; Murray Keith 1 (9820 own); Bruce Halifax 3 (9045, 9819, 9820). No clear copy of E346, and **no reply from Murray** in the holder's full text |
+| Sibling clear copies of the same affair, 7-11 Aug 1864 | 9819, 9045 | **9816** (mssEC 18 p.150, Washington 10 Aug 1864 9.30 PM, to Thayer, Philadelphia, for Chas Gilpin, U.S. Dist. Atty, Philadelphia): "Strictly Confidential - Spare no means to catch Keith who purchased the locomotives ---- His capture is vastly important I know him He is the rebel agent in Halifax ---- He is worth more to us than you can imagine / signed Edwin M Stanton Secy". **9817** (p.151, 11 Aug 1864, for C. A. Walborn, P.M. Philadelphia, signed C. A. Dana): seize any letters for Alex Keith; to Thayer: "Stop all mesgs from or to Alex Keith and any from Norris & Son about detention of locomotives also any from any person to Halifax in regard to same matter". **9042** (p.149, 11 Aug 1864 2.30 PM, to Wakeman, P.M. New York; partly in code): "Alexander Keith the [rebel] agent at Halifax ... is in France[?]"; check the office for anything sent or received by Keith in the past three days; "probably in correspondence with Norris & sons". So E346 is one of a run of Stanton/Dana/Seward telegrams of 10-13 Aug 1864 on Keith's purchase of locomotives from Norris & Son, Philadelphia; the "machinery of some description" E346 asks Murray to identify sits in that run. Context, not copies: none of them names Murray, Gordon Bruce's machinery or James Bruce |
+| Larabee, *The Dynamite Fiend* (2005), Keith's biography (`dynamitefiendchi0000lara`, be-api inside the item) | LS-V3: Keith, Ferris, Princess | machinery 1 (the 1870s bank-note plates, other); **locomotives 1** ("Philadelphia and buy him two steam locomotives for moving cotton along the Southern railroads"); **Norris 1** (the Norris Locomotive Works at Bush Hill); **Stanton 1** ("finally reached Secretary of War Edwin Stanton who ordered an investigation"); Montreal 1 (Patrick Martin, Keith's Montreal counterpart, fall 1864); Murray 0 as marshal (a John Murray imprint only); marshal 1 (U.S. Marshal David Phillips, a later episode); Gordon 0, Bruce 0, Kenner 0, Gilpin 0 relevant. **The locomotive affair is printed as narrative; this telegram, Murray, Gordon Bruce and Mitchell Kenner(-uer) are not in the book by full-text search.** "investigation" and one "Keith locomotives" all-items query answered 502 (not retried beyond one) |
+| IA full text, all items | 4 queries | "Gordon, Bruce & Co" 73: on re-reading the snippets these are **provisions-market reports listing "Bigland, Athya & Co ... Wakefield, Nash & Co and Gordon, Bruce & Co report beef/pork/lard"** in the Pittsburgh Gazette/Commercial, Cincinnati Commercial and others, 1863-66 -- the brokers' circulars of the foreign (Liverpool-style) provisions market, not a Pittsburgh firm as FV-MS18f s.2 put it; no snippet ties that firm to Keith, Halifax or machinery, and E39's "Gordon Bruce & Co [New York]" (Frog, H) places E346's firm in New York; "Gordon Bruce" Halifax (noise); "Alexander Keith" locomotives (Larabee, a 1870s Kurier notice, noise); "Keith" "Norris" locomotives 1864 (railroad-history items on Norris's 1864 reorganisation and Baldwin's 1864 accusation that Norris supplied ... (snippet cut); not Keith) |
+| Google Books (keyed, `country=US`) | 4 queries | 6 more: "Alexander Keith" locomotives Halifax 1864 (4: Wise, *In Armageddon's Shadow* (2000) on Keith's purchase of the Caledonia; a 1876 Pfälzischer Kurier notice on the Thomas bomb; other); Keith locomotives Norris Halifax rebel (1, noise); "Gordon, Bruce" Keith Halifax 1864 (directories, noise); "Mitchell, Kenner" Montreal (the publisher Mitchell Kennerley only); Stanton Gilpin Keith locomotives (noise); "James Bruce" Halifax 1864 machinery (other James Bruces) |
+| Chronicling America, 1 Aug-31 Oct 1864 | not searched (FV-MS18f: NY press unsearched) | 5 window queries (`aud2_ledger31_ca.py`; the 4th and 5th cut off by this session's own 110 s timeout, not retried): "Keith Halifax locomotives" 0; "Gordon Bruce" 29 (word-match); "Keith rebel agent Halifax" 7. **5 page OCRs read** (terms Keith, Gordon Bruce, locomotiv-, Kenner): New-York Daily Tribune 17 Aug 1864 p.5, Chicago Tribune 3 Sept p.1, Portland Daily Press 15 Sept p.3, Burlington Free Press 16 Sept p.2, Springfield Weekly Republican 13 Aug p.8: only other Keiths (a Chicago hat jobber, a Vermont election return, a marriage notice). OCR- and rank-dependent: a weak negative |
+| OpenAlex, CORE | not searched | OpenAlex 2 queries (Nova Scotia public-sphere and Canadian-politics papers; book-review issues; nothing on Keith's 1864 purchases); CORE 2 (blockade-running and Confederate-finance theses; none on this) |
+| JSTOR | not queued | 2 rows queued: family (i) "Alexander Keith" AND Halifax AND (locomotives OR machinery) AND 1864; family (ii) the quoted phrase "Gordon Bruce & Co" with no cipher keyword. Never blocking |
+| Unreachable / not searched | NARA RG 107, RG 60, Stanton papers, NY press page by page, HathiTrust, JSTOR | still unsearched: NARA RG 107 (telegrams sent/received; Murray's reply), RG 60 (marshals' letters), the Stanton papers (LC), Seward's consular files on Keith (RG 59), the Halifax and Montreal press of Aug 1864, the New York press page by page beyond the 5 pages read, HathiTrust (Cloudflare), Canadiana.ca (not tried) |
+
+### 2. Findings
+- **No print of the telegram** was found on any family above, and no reply from Murray in the holder. The affair is printed only as narrative (Larabee:
+  Keith bought two Norris locomotives in Philadelphia; Stanton ordered an investigation), and the holder's own clear copies 9816/9817/9042 now give its
+  10-11 Aug setting: Keith "who purchased the locomotives", Norris & Son, "detention of locomotives". That is context for E346's "machinery of some
+  description", not its plaintext: **N3 stands** (N2 would need this telegram's own text known elsewhere).
+- **Not over-claimed:** FV-MS18f's counts (H 8 of 8 code groups), book test (No. 1 only) and the "Hauliff" reading stand; this pass found nothing that
+  reads a group otherwise. The depth sentence's "a New York firm" rests on E39's Frog = New York (H) and stands.
+- **One mis-description in FV-MS18f s.2:** "'Gordon Bruce & Co' 73 (a Pittsburgh provisions firm in market reports 1863-66)". The snippets are foreign
+  provisions-market reports reprinted in Pittsburgh and Cincinnati papers, naming Gordon, Bruce & Co beside Bigland, Athya & Co and Wakefield, Nash & Co;
+  the firm is not shown to be in Pittsburgh, and not shown to be E346's New York firm either way. A search-log correction only; no class or grade turns on
+  it.
+- What the machinery was is **not settled** here. That it was locomotives or locomotive parts for Keith is a reasonable inference from 9816/9817 and
+  Larabee, not a reading (I): E346 itself says "machinery of some description" and asks what it is.
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E346 | **N3** (kept) | period | **D3** (kept: H 8 of 8 code groups, rest plain; external non-statistical, strengthened: holder 9816 (Stanton to Gilpin, 10 Aug 1864: "Keith who purchased the locomotives ... the rebel agent in Halifax"), 9817 (11 Aug: Norris & Son, detention of locomotives), 9042 and 9819 (11 and 13 Aug, to Wakeman: Keith the rebel agent at Halifax), E39; Larabee 2005 on the locomotive purchase) | not located after FV-MS18f's search and s.1 |
+
+- Not N4: NARA RG 107/60/59, the Stanton papers, the Halifax/Montreal/New York press page by page and HathiTrust unsearched; JSTOR rows open. Not D4: no
+  fresh rule-7 re-derivation session.
+- **Safe sentence:** FV-MS18f's, unchanged; it may add "It belongs to a run of War Department telegrams of 10-13 August 1864 on Keith's purchase of
+  locomotives from Norris & Son, Philadelphia (Huntington clear copies; Larabee, *The Dynamite Fiend*, 2005), none of which prints this one."
+- **Unsafe:** "first", "new", "unpublished", "previously unread"; "the machinery was locomotives" as read (inference); "Gordon Bruce & Co of Pittsburgh"
+  or "of Liverpool" (neither shown); "Murray found ..." (no reply located).
+
+### 4. Postmortem and fixes (for the next FIX job; reading.md and ciphertext.txt not edited here)
+- No over-claim in FV-MS18f's class, grade or depth. One search-log mis-description (s.2 above), corrected here.
+- **ciphertext.txt E346 note:** add "context: holder 9816 (10 Aug 1864, Stanton to Gilpin: Keith 'who purchased the locomotives'), 9817 (11 Aug, Norris
+  & Son, detention of locomotives), 9042 (11 Aug, to Wakeman); Larabee 2005 on Keith's Norris locomotives; what the machinery was is inference".
+- status.json E346: `audit_status` "two audits", this section in `audit_refs`, `gap` and `depth_check` updated here. SECOND-OPINIONS-QUEUE row
+  SO-ECKERT-E346: no count or class changed, row left as filed; its prompt should carry the 9816/9817 context lines before it is answered.
+Requests: hdl.huntington.org 12 (8 CISOSEARCHALL, 4 item info; 11 x 200, 1 RemoteDisconnected retried once after a pause); be-api.us.archive.org 20
+(4 x 502; Murray retried once, answered); www.googleapis.com 6; api.openalex.org 2; api.core.ac.uk 2; www.loc.gov 3 search (2 more cut off by the session timeout) + 10
+page/full-text.

@@ -11509,9 +11509,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18f)'"
+        "AUDIT.md '## AUDIT (FV-MS18f)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-31)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18f verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11532,7 +11533,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): Stanton to U.S. Marshal Robert Murray, New York, 13 Aug 1864: what machinery is Gordon Bruce & Co supplying for Alex Keith Jr., rebel agent at Halifax (E346)",
       "line": "Read at grade H with War Department Cipher No. 1: on 13 Aug 1864 Stanton asked U.S. Marshal Robert Murray in New York to find out what machinery Gordon Bruce & Co (or Gordon Bruce & Hauliff) were supplying for Alex Keith Jr., the rebel agent at Halifax, for shipment to Mitchell Kennuer & Co, Montreal; not located in print (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18f); most words clear in the holder's public transcription; not N4: NARA RG 107/60, the Stanton papers, the New York press of Aug 1864 page by page, HathiTrust, JSTOR not searched",
+      "gap": "N3 two audits (FV-MS18f, AUD2-LEDGER-31); the telegram not located in print; its setting is in holder clear copies 9816 (10 Aug 1864, Stanton to Gilpin: Keith 'who purchased the locomotives') and 9817 (11 Aug, Norris & Son, detention of locomotives) and in Larabee, The Dynamite Fiend (2005); not N4: NARA RG 107/60/59, the Stanton papers, the Halifax/Montreal/New York press page by page, HathiTrust not searched; JSTOR rows open",
       "depth": "D3",
       "completeness": "8 H of 8 code-word groups (rest plain)",
       "phrases": [
@@ -11543,7 +11544,7 @@
         "Huntington mssEC 18 (obj 10074) p.154, pointer 9820, E346"
       ],
       "depth_sentence": "On 13 Aug 1864 Stanton asked the U.S. Marshal at New York to find out what machinery a New York firm was supplying, by way of Montreal, for the Confederate agent Alexander Keith Jr. at Halifax.",
-      "depth_check": "code clause: Forlorn = 13 (the header's own date), Frog = New York, Walnut = Rebel, White = Report, Brutus with Webster = signed Secretary of War; external (non-statistical): holder transcription of 9819 (same hour, same affair: Gordon Bruce & Hauliff, Keith at Halifax, Brutus) and E39 (Gordon Bruce & Co, Mitchell Kenner & Co Montreal); No. 2 and No. 9 read none of the groups in sense",
+      "depth_check": "code clause: Forlorn = 13 (the header's own date), Frog = New York, Walnut = Rebel, White = Report, Brutus with Webster = signed Secretary of War; external (non-statistical): holder transcription of 9819 (same hour, same affair: Gordon Bruce & Hauliff, Keith at Halifax, Brutus) and E39 (Gordon Bruce & Co, Mitchell Kenner & Co Montreal); No. 2 and No. 9 read none of the groups in sense; second audit (AUD2-LEDGER-31): holder 9816, 9817, 9042 (10-11 Aug 1864, the Keith locomotive affair) and Larabee 2005 on Keith's Norris locomotives",
       "depth_note": "8 H of 8 code-word groups (rest plain)"
     },
     {
