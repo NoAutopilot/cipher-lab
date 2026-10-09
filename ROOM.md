@@ -11915,3 +11915,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 03:47 | FM-R4a reader | claim 03:50 UTC by date -u: eckert-1864 Fort Monroe rows 5770/1 5816/0 5781/1 5789/1 5829/0 5797/0 5752/1 5594/1 5774/0 5781/0 (IDs E250 onward / N2-PA), cap 6.5, box end 05:50 UTC (80% 05:26); hdl token pending
 2026-10-09 03:50 | FIX-FM5 worker | done 04:0x UTC 9 Oct by date -u, brief met: E193/E194/E210-E216/E220/E223/E225/E230/E234-E237 corrections carried via notes + one decode.py change (<deletion> kept); decode --check 0 (also no2/no9), 27 tests OK, depth_check ok, file_shrink_guard ok; PROMPT e223 updated; no network -- for LANE LEDGER (account 1)
 2026-10-09 03:51 | FM-R4b reader (Sonnet) | LANE LEDGER hdl release (22 requests: 10 IIIF pages at 2400 px to scratch + 12 CONTENTdm CISOSEARCHALL queries, 3.3 s apart); for LANE LEDGER (account 1)
+2026-10-09 03:51 | FM-R4a reader | LANE LEDGER hdl take; for LANE LEDGER (account 1)
