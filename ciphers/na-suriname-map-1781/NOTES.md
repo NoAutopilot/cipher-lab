@@ -3786,7 +3786,7 @@ Where it was not found: no cipher in the sampled scans of 370, 371, 378, 379, 38
 ### SUR-GOV next steps
 - [x] [SUR-372, 9 Oct 2026: done -- run 0183-0195 closed, glossed line by line (N0), key test: Nieuw sheet reads; see ## SUR-372] 372: fetch 0183 and 0195 (2 requests) to close the run; one full-res (>=1500 px) scan of 0189 to read the date, heading and any
   gloss; then prior-work step and check-solved on the letter before any transcription; ~$1.
-- [ ] 266-270 (1739-42) 1-in-15: not attempted (request cap); next: 4 item pages + about 40 scans, ~$1.5.
+- [x] [SUR-266, 9 Oct 2026: done at 24 scans per inventory (120 scans), no cipher found; see ## SUR-266] 266-270 (1739-42) 1-in-15: not attempted (request cap); next: 4 item pages + about 40 scans, ~$1.5.
 - [ ] 370, 371, 378-380 at a denser stride (every 10th, about 330 scans) in a separate session with its own request budget; ~$3.
 Verdict: keep going.
 
@@ -3882,3 +3882,46 @@ plan. So the "no printed transcription of the 2077 legend located" sentence (AUD
 sharpened, not answered: the "1972 Suriname en zijn historie" item is Jos Fontaine, *Zeelandia, de geschiedenis van een fort* (1972),
 deel I of the same series, which Temminck Groll says reproduces many sources in full -- queued as LOCAL-QUEUE L72 for the owner's next
 ILL. No reading, key or class changed here; the next verifier pass (VERIFY5 per the 2 Oct note) cites L41/L72.
+
+## SUR-266 (9 Oct 2026, account 2, Sonnet worker for LANE FAMILY-A2m; 23:23-23:3x UTC by date -u)
+Job: thumbnail screen of NA 1.05.03 inv. 266-270 (governor's incoming letters 1739-42, the Nieuw alphabet's issue years) for cipher
+passages, in SUR-GOV's method. Output `sources/na-1.05.03/2026-10-09/screen_gov_266.tsv` (120 rows), scripts and fetch log in
+`passes/sur_266/` (getitem.py, fetch.py, nb.py, sheets.py, plan.tsv, fetch.log), 25 contact sheets and the three 1200 px looks in
+`images/sur_266/` (sheets re-saved at JPEG quality 60 to keep the folder growth to 2.6 MB).
+
+**Prior work (rule 1 / prior-work step).** `tools/prior_work.py ... --step-type lookup --fetch`, exit 4: its three LEADs are claim lines (SUR-GOV
+21:01, SUR-372 21:45, this job 23:23), not prior readings; no other own hit. Own work: SUR-GOV states 266-270 "not screened"; no cipher passage
+in 266-270 is named in this folder, the EAD snapshot or LEDGER. Tomokiyo/solver-repo/edition rows UNCHECKED by the tool (no volume or pointer):
+not run, this is an image screen with no reading; check 5 is not owed (no decode).
+
+**Method.** Item pages for 266-270 (5 requests, viewer JSON: DIGITALIZED; scans 1214, 1461, 1534, 1014, 813 = 6,036 in all), then
+IIIF `full/400,/0/default.jpg`, 24 scans per inventory at an even stride (every ~34-64th scan), one at a time at 1.95 s, all HTTP 200.
+Contact sheets of 5 sampled scans plus the known cipher scan 373_0693 (from disk, 0 requests) on every one of 25 sheets, control placed at
+slot 4. Negative control: every sheet also carries plain letters, tables and blanks; none was marked cipher.
+**Control caveat (stated, not hidden):** the control sat in a known slot, so "control read" means it was visible as the odd page, not that it
+was found blind. At 400 px it shows as a light page of short fine-hand lines with interlinear spacing; the 600 px of SUR-GOV was a firmer
+test. Power per one-or-two-scan passage at 24 of ~1,200 scans per inventory is about 2%, as in SUR-GOV; only a run of 30-60 scans (like inv. 372's
+11-13) is reliably caught (24 samples at stride ~50 would hit a 13-scan run with probability about 25-30% per inventory, not reliable either).
+So a "no" is "none in the sampled scans", not "none in the inventory", and it is weaker than SUR-GOV's for runs.
+
+**Brief deviation (named).** 1-in-15 would be about 400 scans; the 150-request cap allows 120 plus 5 item pages and 3 follow-ups. No hit, so
+no +-5 follow-up scans were owed.
+
+**Counts (scans looked at -> cipher yes / possible / no).**
+| inv | years | scans | sampled | cipher yes | possible (resolved at 1200 px) | no |
+|---|---|---|---|---|---|---|
+| 266 | 1739 | 1214 | 24 | 0 | 1 (0937, plain Dutch petition on the Wacht, no gloss) | 24 |
+| 267 | 1739-40 | 1461 | 24 | 0 | 1 (0217, plain Dutch, Competentie van de Raad van Politie) | 24 |
+| 268 | 1740-41 | 1534 | 24 | 0 | 0 | 24 |
+| 269 | 1741 | 1014 | 24 | 0 | 1 (0152, plain Dutch debt bond Fort Zeelandia 1735-36; marginal figures are sums) | 24 |
+| 270 | 1742 | 813 | 24 | 0 | 0 | 24 |
+Glossed yes/no: n/a, no cipher run found (the 1200 px look was taken on the three possibles instead). **Unglossed cipher runs: none; no
+unread candidate from 266-270.**
+
+**Not done, by the brief's own condition.** The continuation to inv. 370, 371, 378-380 (every 10th scan not already looked at) was not run:
+125 requests were spent by the screen and 128 with the follow-ups; 22 remain, of which 5 would be item pages (viewer JSONs for those five are not
+kept, SUR-GOV's stayed in scratch), leaving 17 scans of about 2,900 (0.6 percent). Not worth the requests; the denser stride for those five stays
+open in the SUR-GOV list. Request counts: www.nationaalarchief.nl 5, service.archief.nl 123 (120 + 3), 128 in all; no 429, no challenge.
+
+Where it was not found: no cipher in the 120 sampled scans of inv. 266-270 (power above). Not a novelty statement.
+Verdict for this item: brief met, no candidate; the target's own Verdict line is unchanged ("keep going").
