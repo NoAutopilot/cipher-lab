@@ -69,3 +69,44 @@ classify novelty. Update Remaining gaps / Escalation, gaps_check.
 Sessions wave 1 (18:20 UTC): MANT-0490 session_01JSQGXzU4jxaXKy8aZsseiy (Opus); MANT-0309 session_01BJv3LLv5CgyEAymkFzuH5U (Opus); MANT-0290W
 session_01FHP39cf4RxHSXw7VXRQznX (Opus); V-MANTH session_01NSARMiUrmcgnS1tJmuWfq2 (Opus); DK-TESTS session_01LqfLtCUjVKDEVkf7HzG15B (Sonnet);
 BRO-0200 session_01WZFYuJpRNbRKrR8HXzLs2C (Opus).
+
+Wave 1 results (18:23-18:36): MANT-0490 right page 148 tokens, gloss gate PASS 61/92 vs p99 22, C61 M87, not in BO I; MANT-0309 = covering dispatch
+of the 0312/0314 Extrait pair, gate PASS 35/40 vs p99 12, C35 M13, not in BO I; MANT-0290W keyed-word class PASS, 281-674 untestable (non-test);
+V-MANTH 321 held (rule-4 conflict), 191 M, 254 folded to 259, 199 held, 42 C; DK-TESTS stale config snapshots synced, suite green; BRO-0200 already
+done 6 Oct (check 1). Workers 17.29 by get_session. ledger_check exit 1 is pre-existing (duplicate ids at LEDGER lines 426-438, not this lane).
+
+## Wave 2 (18:4x UTC 9 Oct)
+sachsen order: MANT-0490L first, MANT-0317 second, MANT-0310 third (each waits for the previous "sachsen release"). Note: full-page images are
+not committed (folder over 30 MB); a worker that needs a leaf already fetched by another session fetches it once again (1 GET) or reads the
+committed crops.
+
+### V-MANT16S (Opus first verifier, cap 6, box 100 min, disk + print/IA searches; a session that did not solve these leaves)
+CLAUDE.md "Verifier brief (template)" in full, on sachsstaatsarchiv-manteuffel-1712 Loc. 694/08 0309 (MANT-0309) + 0312/0314 (MANT-XTR): one
+dispatch pack, Berlin 16 Sept 1712 (covering letter + Extrait pair), none printed in Acta Borussica BO I by the solvers' search. Rule-7
+re-derivation with each leaf's --check; independent search families (a)-(g) incl. BO I and II, Berner 1901, Bonnesen 1918, the Prussian/Saxon
+editions, IA/HathiTrust EF/Google Books (country=US + key) phrase searches on the decoded text, JSTOR-QUEUE rows in both families (i) and (ii);
+N-class and depth (rule 4a) per item in AUDIT.md "## AUDIT (V-MANT16S)", key source recorded; corrections to any over-claim. If N3+ D2+, append the
+SECOND-OPINIONS-QUEUE.tsv row and name it in your done line (the lane adds the AUD2 row for account 3). Do not decode new material.
+
+### V-MANT0490 (Opus first verifier, cap 4, box 80 min; a session that did not solve the leaf): 694/08 0490 right page (MANT-0490)
+Same template on the 0490 right page only (mid-Nov 1712, page 392). AUDIT.md "## AUDIT (V-MANT0490)". Same SO-queue rule. MANT-0490L is reading
+the left page in parallel: audit only the right page as committed at MANT-0490's commit eb4031655 (note in AUDIT if the left-page work lands first).
+
+### MANT-0490L (Opus, cap 5, box 100 min, sachsen take FIRST): 694/08 0490 left page + gutter run
+MANT-0490's named next. As MANT-0490 (read its NOTES section and PREREG-MANT0490), left page and gutter run; PREREG-MANT0490L.md own commit before
+scoring; gloss gate vs key-shuffle p99; held codes reported as witnesses; key.tsv not above M without a passed gate. ~$4.
+
+### MANT-0317 (Opus, cap 5.5, box 110 min, sachsen after MANT-0490L's release): 694/08 frame 0317
+inv08f.tsv row 0317 (stamp 246, 17 Sept 1712, runs in numbered paragraphs 1-3, small words above groups). Day after the 0309 pack: check whether it
+continues it. Same procedure and gate as MANT-0309 (PREREG-MANT0317.md before scoring). ~$4.5.
+
+### MANT-0310 (Sonnet, cap 1.5, box 50 min, sachsen after MANT-0317's release): 694/08 0310/0311 look
+MANT-0309's named next. Fetch 0310 and 0311 once each (manifest), classify per the inventory columns, say whether either belongs to the 16 Sept pack
+(more code, a second Extrait, a decipherment). No transcription. Append to inv08f.tsv with a dated note.
+
+### MANT-YCEN (Opus, cap 2.5, box 70 min, disk only): y-glyph 4|9 census per hand
+V-MANTH's and MANT-0309's named next (254 vs 259, 9 vs 14/19 rest on the y-shaped digit). From committed crops of every 694/08 and 694/09 leaf read
+so far: list each y-shaped digit token with leaf/line/pos/hand (clerk vs Manteuffel's own) and the key value it would give as 4 vs as 9; where a
+token's value is fixed by gloss or by a known word, record it as a known-answer exemplar. PREREG the rule before applying it (own commit); report a
+per-hand rule with its known-answer accuracy vs a shuffled-label control; no transcription edit unless both your eye and the rule agree, and then
+regenerate readings with --check. Report what was found and where it was not found; do not classify novelty.
