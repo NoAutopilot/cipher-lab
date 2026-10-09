@@ -2822,3 +2822,17 @@ Read so far: ten of ten rows filed (E260-E269). Printed context: E264 (reply), E
 - [x] image-check: all ten pages read whole (matches the transcription except E266 "required by Lieut").
 - [x] retry: none needed.
 Verdict: keep going: 5 internal gaps, cheapest next: OR I/42 pts 2-3 page-by-page for E260, E263, E267, ~$0.4
+
+## FV-FM6a (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier for E217, E219 (reader FM-R3a) and E226, E227 (reader FM-R3b); full log in AUDIT.md "## AUDIT (FV-FM6a)". Duplicate diff: none
+(5780, 5748, 5808 carry other filed rows, E166, E189, E165, other telegrams); mssEC 18/19 hold no sender's copy. The holder's CONTENTdm full text
+across all pointers found **period clear copies of E217 (pointer 10487, p.345) and E226 (pointer 4711, p.270)**, word for word the readings:
+**E217 N1, E226 N1** (C-graded, D3, no status/SO row). E217 is not the Ingalls telegram printed in OR I/37 pt 2 p.159 (that is the 10.30 a.m.
+message, clear copy 4787). **E219 N3 D3** (addressee "are see Webster" = Col. R. C. Webster, new chief QM, OR I/42 pt 2 p.447; Grant Papers vol. 12
+chronology: Grant left 27 Aug to meet Julia Grant at Fort Monroe; 5780 image read here, transcription stands) and **E227 N3 D3** (OR I/43 pt 2:
+Ninth Vermont to New York for the election, Stinson AQM New York, transport Thomas Perit). Status rows E219, E227; SO-ECKERT-E219/E227 queued;
+WORK-QUEUE AUD2-LEDGER-12.
+Reading corrections for a FIX job (rule 7, decode.py entry notes): E217 address-line "Washington" plain (not [Volunteer]); E219 "webster" plain
+(R. C. Webster; the body is pushed into the tail now), "Chief" plain; E226 "White horse" = White House plain, "wharf" plain (not [Today]);
+E227 "William" plain (not [100]), "Weasler" = [Steam]er.
+Requests: hdl.huntington.org 14 (one token block 03:58-04:00 UTC); archive.org 3; be-api 8; Google Books 0.

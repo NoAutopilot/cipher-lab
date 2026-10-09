@@ -7566,3 +7566,169 @@ notes; reading.md is the decoder's, rule 7; not applied here): E241 `plain: pers
 E240 `variant: peken=pekin` (image) and the image's "Barnes".
 Requests: hdl.huntington.org 14 (one token block, 04:00-04:01 UTC, 3.2 s apart); archive.org 4 (djvu downloads); be-api 7 (1.6 s apart, no 502);
 Google Books 1 (429, stopped); loc.gov 15 (searches and OCR texts, 2-3 s apart; one HTTP/2 stream reset, retried once with --http1.1).
+
+## AUDIT (FV-FM6a)
+
+Verifier FV-FM6a (account 1, for LANE LEDGER), 9 Oct 2026, 03:48-04:1x UTC by `date -u`; a separate session from the readers FM-R3a
+and FM-R3b (account 1), not protecting their conclusions. Scope: **E217, E219** (NOTES "## FM-R3a") and **E226, E227** (NOTES
+"## FM-R3b"), ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952. Nothing decoded beyond key look-ups
+in key.md. Key source for all four: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for
+eckert-1864, so `judge_plaintext.py` was not run. Scripts and outputs: `fortmonroe/fv_fm6a_print.py` + `.out` (cached + scratch OR
+grep), `fortmonroe/fv_fm6a_hdl.py` + `.out` (CONTENTdm full text across all pointers, two IIIF pages), `fortmonroe/fv_fm6a_beapi.py`
++ `.out` (IA full text, Grant Papers vols. 11-12).
+
+### 1. Prior-work, duplicates, sender's copies, image
+- **prior_work.py** (`--item-spec 'shelfmark=Huntington mssEC 25;canvas=<ptr>;date=...;sender=...;recipient=...' --step-type audit
+  --offline`, one per entry, 03:5x UTC): exit 4 for all four, owing two target-level LEADs (ECK-PAGEFIX's live claim on the mssEC 19 page
+  column; LANE LEDGER's own incarnation-4 claim), neither covering these units: CLEAR. Editions: below.
+- **Duplicate diff:** pointers 5770, 5780, 5748, 5808 occur in ciphertext*.txt only in their own E-headers and in other entries of the
+  same pages (5780 = E166, 20 Aug; 5748 = E189, 14 June for Rucker; 5808 = E165, 14 Nov), none the same telegram (different date,
+  addressee or text). No other filed header for 10 July / Eckert / Ingalls, 27 Aug / Beckwith, 14 June / Allen, 6 Nov / Horner.
+  No filed duplicate.
+- **Sender's copies on disk:** mssEC 18 (`ms18/entries-ms18.tsv`) rows of 10-11 July, 27-28 Aug, 13-15 June, 6-7 Nov 1864: none is
+  any of the four (9782-9784, 10 July, are Washington to Beckwith; 9892, 7 Nov, Washington to Horner on another matter). mssEC 19
+  (`entries-mssEC19.tsv`): no row for these dates and addressees. Grep of both for greyhound, Ingalls + Wright, Perit, Stinson, Charles
+  City, mail boat, Blood, Ninth Vermont: nothing relevant.
+- **Image:** FM-R3a read 5770 and 5780 whole from the image, FM-R3b 5748 and 5808 at 2400 px; the brief's eye-check is owed only for
+  lines not image-checked, so none is owed. I fetched 5780 and 5748 at 2400 px (scratch, not committed) and read 5780's E219 block whole: the transcription
+  stands word for word, including "are see Webster Chief vincent" and "weasel her Greyhound". 5748 not re-read (the clear copy below settles
+  E226's two doubtful words).
+
+### 2. Holder's full text
+**Huntington CONTENTdm full text** across all pointers (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1; `fv_fm6a_hdl.py`, under the
+LANE LEDGER hdl token 03:58-04:00 UTC, 12 queries + 2 IIIF pages = 14 requests, 3.2 s apart; output `fv_fm6a_hdl.out`):
+- **E217 has a period clear copy: pointer 10487 (Page 345 of a Washington clear telegram book):** "9 P. M Ft Monroe Va July 10th 1864 City
+  Point July 10th (via) Ft Monroe, 430 pm July 10th For Qr Mr Genl Wash'n. There are transports here now for seven thousand men ---- Gen'l
+  Wright has eleven thousand men ---- I think there will be transports enough for his command Rufus Ingalls Brig Gen & Chf Qr Mr" (query
+  "ingalls wright", 7 hits). Word for word FM-R3a's reading, header included (City Point, July 10, via Fort Monroe, 4.30 PM). The OR-printed
+  Ingalls telegram of the same day is the clear copy at **4787** (Page 346, "City Point 10th 1030 am ... Genl Wright left at 10 am ...
+  boats enough here now for seven thousand ..."): a different, earlier message, as section 3 says.
+- **E226 has a period clear copy: pointer 4711 (Page 270):** "White House June 14 1864 White House 14th June for Capt Allen Qrmr Seventh
+  Street Whf Wash. ---- Send the mail boats to Charles City landing on the James River H. B. Blood Capt. A. Qm. 8.20 Pm" (queries
+  "charles city landing" 3 hits, "mail boats" 14, "blood" 15); Pitkin's 14 June letter (OR I/40 pt 2 p.47) is the clear copy on the next
+  page, 4712.
+- **E219: no other copy.** "greyhound" 2 (5780 itself; 4536, Baltimore, Apr 1864), "meet his family" 2 (5780; 2167, 1862), "webster
+  greyhound" 1 (5780).
+- **E227: no other copy.** "perit" 3 (5808 itself; 5787, 4 Oct 1864, Sheldon to Eckert naming the Perit among transports to be sent from
+  Fort Monroe; 10213, coaling the Perit), "stinson" 3 (5808; 9912, City Point to Horner N. Y. for Stinson, 9 Dec 1864; 12209, "D Stinson
+  Capt AQM"), "horner stinson" 2 (5808, 9912), "ninth vermont" 6 (none 1864 Nov). So the holder's transcription knows Stinson as AQM
+  reached through Horner in New York, and the Perit as a Fort Monroe transport, but has no second copy of this telegram.
+
+### 3. Print
+Cached texts (167 volumes, `sources/ia-fulltext/print-check`) plus three volumes fetched to scratch this session (archive.org, 2 s apart,
+3 requests): OR I/40 pt 2 (`warofrebellion402unit`), I/42 pt 2 (`warofrebellion422unit`), I/42 pt 3 (`warofrebellion423unit`). Letters-only
+phrase grep (`fv_fm6a_print.py`, 30 phrases): **0 hits for every decoded sentence of all four entries** ("transports here now", "Wright has
+11,000", "transports enough for his command", "meet his family", "steamer Greyhound at his disposal", "mail boats to Charles City", "Ninth
+Vermont will leave", "steamer Perit", "William L. James"); the name hits were then read by date:
+- **E217 (Ingalls via Sheldon to the QMG, 10 July 1864):** **OR I/37 pt 2 p.159**: "City Point, July 10, 1864 -- 10.30 a. m. (Received 4.30
+  p. m.) Brig. Gen. M. C. Meigs, Quartermaster-General: General Wright left at 10 a. m. His troops number 11,000. They are embarking rapidly.
+  There are boats enough here now for 7,000. I expect more boats will arrive in time. General Wright's artillery and trains are left
+  behind. RUFUS INGALLS, Quartermaster." Same sender, recipient, day and the same two figures (E217's postpone waldo = 7,000, flag woodbury
+  = 11,000), and the printed receipt time equals E217's Katy = 4.30 PM; **but the wording differs in every clause** (E217: "There are
+  transports here now for 7,000 men. General Wright has 11,000 men. I think there will be transports enough for his command"). A cipher
+  text deciphered word for word cannot yield the printed sentences, so E217 is not the printed text. The holder's clear books settle it (section 2): the printed telegram is the 10.30 a.m. message (clear copy 4787), E217 the 4.30 p.m. one
+  (clear copy 10487). E217's text **not located in print** (OR I/37 pt 2, I/40 pt 3, Grant Papers vol. 11 by "boats enough" and "Ingalls
+  Wright 11,000").
+- **E219 (Ingalls via Beckwith to Sheldon, 27 Aug 1864):** **Grant Papers vol. 12, Chronology** (IA be-api snippet, identifier
+  `papersofulyssess0012gran`): "[Aug.] 27. USG left for a visit with Julia Dent Grant at Fort Monroe, Va., bringing her to City Point";
+  the steamer Greyhound is Butler's dispatch boat (OR I/42 pt 2 p.254, Butler to Grant 17 Aug, "Shall I call for you with the Greyhound";
+  Butler V, to Kensel 23 Aug). **OR I/42 pt 2 p.447**, War Dept. Special Orders No. 279 [late Aug 1864], item 28: "Col. R. C. Webster,
+  Quartermaster's Department, is hereby relieved from duty at New Berne, N. C., and will report ... to relieve Col. Herman Biggs in his
+  duties as chief quartermaster of that department"; Butler V and OR I/42 pt 3 address "Col. R. C. Webster, Chief Q. M., Fort Monroe" from
+  October. The telegram itself **not located** (Grant Papers vol. 12 by Greyhound, Fort Monroe + family, Webster; OR I/42 pts 2-3; Butler
+  V).
+- **E226 (Blood at White House via Sheldon to Capt. Allen, QM, Washington, 14 June 1864):** **OR I/40 pt 2 pp.46-47**: "White House, Va.,
+  June 14, 1864. (Received 9.10 p. m.) Brig. Gen. D. H. Rucker, Chief Quartermaster, Washington: ... Captain Blood, assistant
+  quartermaster, will be left here in charge of property from this depot. I start with most of my employes immediately for Charles City
+  Landing, where supplies for the Army of the Potomac are to be sent ... P. P. PITKIN"; OR I/42 pt 2 names "Capt. H. B. Blood, assistant
+  quartermaster" (Aug 1864, City Point). OR I/40 pt 2 (26 June) has a "Captain Allen, Assistant Quartermaster" handling transports at
+  Alexandria. The telegram **not located in print** (OR I/40 pt 2, Butler IV-V by mail boat / Charles City Landing, Grant Papers vol. 11 by
+  "Charles City" + Blood).
+- **E227 (W. L. James via Sheldon and John Horner to Capt. D. Stinson, New York, 6 Nov 1864):** **OR I/43 pt 2 pp.558-629** (Butler's
+  New York election force, Nov 1864): the Ninth Vermont (Lt. Col. Barney) sent to New York on the Thorn and the John Romer, "The Thorn,
+  bringing the One hundred and forty-eighth New York and 200 of the Ninth Vermont, has not arrived"; "Captain Stinson, assistant
+  quartermaster at New York" furnishing the transports (index: Stinson, Daniel, pp. 624, 628, 629); p.628 (Hawley, 14 Nov): "four
+  infantry transports -- the Ashland, Thomas Perit, Trade Wind, and North Point -- sailed" (index: "Perit, Thomas, Steamer"). So the
+  steamer Perit, the Ninth Vermont's move to New York and Stinson's office are all in print; the 6 Nov telegram **not located** (OR I/43
+  pt 2, I/42 pt 3, Butler V). "William L. James" not found in the cached OR/Butler texts.
+- **IA be-api, Grant Papers (snippet only, `fv_fm6a_beapi.py`, 8 requests, all answered):** vol. 12 "Greyhound" 1 (Butler's 17 Aug and
+  later notes), '"Fort Monroe" family' 1 (the chronology above), "Webster" 1 (Ralph C. Webster, 378n), '"visit with Julia Dent Grant"' 1,
+  '"Aug. 27"' index lines only; vol. 11 '"boats enough"' 0, "Ingalls Wright 11,000" 0, '"Charles City" Blood' 0. Google Books not called
+  (429 to readers on 8-9 Oct; no quota reset reached in my box). Press of the day not searched (Chronicling America; none of the four is to
+  or from Lincoln or the Secretary). The solver repositories and Tomokiyo: prior_work.py's cached checks CLEAR.
+
+### 4. Grade and reading corrections (readers' tables, reading.md)
+Where a period clear copy exists every code word it renders is grade **C** (rule 4), as FV-FM5c. Corrections are for a FIX job
+(reading.md is the decoder's, rule 7); this section records them.
+- **E217 (clear copy 10487):** all 24 code groups agree with the clear copy: Black = City Point, feeble/federal = 10, peasant = By the
+  way of ("(via)"), appian = Monroe, Katy = 4.30 PM, Belcher = QMG, grapes = Washington, whimpers = Transports x2, postpone waldo = 7,000,
+  flag woodbury = 11,000, spit = Men x2, Shelby = General, pontiac = Command, webster = signature, palate = Brigadier General, vincent =
+  Quartermaster, unity/zodiac = period: **C 24 of 24** (FM-R3a 25 H). Decoder slip: **"Washington" in the address line "Maj. Eckert
+  Washington" is plain** (the decoder's [Volunteer] is wrong; that is FM-R3a's 25th "H"), and the decoder prints {date: July 10} twice.
+  "wilby" = "will be" (plain, the clerk's). Reading (= the clear copy): "[City Point, July 10, by way of Monroe, 4.30 PM.] For the
+  Quartermaster General, Washington. There are transports here now for 7,000 men. General Wright has 11,000 men. I think there will be
+  transports enough for his command. [Signed] Ingalls, Brigadier General, [Chief] Quartermaster."
+- **E226 (clear copy 4711):** **"White horse" = White House** (the place of origin, plain, the clerk's spelling, as E216's "while horse";
+  the clear copy heads it "White House June 14 1864"), not [Report] + "horse"; **"wharf" is plain** ("Seventh Street Whf"; the decoder's
+  [Today] is wrong). fugitive = 14, princess/pilgrim = Captain, vinton/Vincent = Quartermaster, plunder = 7 ("Seventh"), growl =
+  Washington, unity = period, Bergen = James ("James River"), Yoke = signature: **C 10**; viola = 12.30 has no counterpart in the clear copy
+  (its time column reads 8.20 PM, the Monroe forwarding time): **H 1**. FM-R3b's "M 2" (the header, wharf) resolve to plain. Reading: "[White
+  House, June 14, 12.30.] For [Captain] Allen, [Quartermaster], [7th] Street wharf, [Washington]. Send the mail boats to Charles City
+  Landing on the [James]. [Signed] H. B. Blood, [Captain], A[ssistant] [Quartermaster]." The tail "Cloudy windy appearance of rain" is the
+  operator's weather note.
+- **E219 (no clear copy; image read here):** **"are see Webster" = R. C. Webster**, the addressee (plain, phonetic initials as "Are see"
+  in E193 and FV-FM5b's E220 signer): Col. Ralph C. Webster, ordered by War Dept. Special Orders No. 279 to relieve Biggs as chief
+  quartermaster of the Department of Virginia and North Carolina (OR I/42 pt 2 p.447); identification grade I, supported by print.
+  **Decoder slip: it reads this "webster" as [signed] and pushes the whole body into the tail** (reading.md prints the message inside
+  "{tail: ...}"). "Chief" plain; "roof us" = Rufus (plain). mary = 6.30 PM, paradise = Colonel, vincent = Quartermaster, unity/zebra =
+  period, japan = Lt. Gen. Grant, Martha = 7 PM, appian = Monroe, weasel = Steam ("weasel her" = steamer), yoke = signature, palate =
+  Brigadier General: **H 11 of 11** (FM-R3a 12 H counted "webster"). Reading: "[6.30 PM.] To [Colonel] R. C. Webster, Chief
+  [Quartermaster]. [Lieutenant General Grant] leaves here at [7 PM] to meet his family at [Monroe]. On his arrival there place the
+  [steam]er Greyhound at his disposal. [Signed] Rufus Ingalls, [Brigadier General]."
+- **E227 (no clear copy):** "Weasler" = **Weasel + -er = steamer (H)**, as E212's "weaselers"; the decoder leaves it plain. **"William" in
+  "Youth William L James" is plain** (the signer's forename; the decoder's [100] is wrong). "plug publish mandate" = 1 100 50 = 150 (as
+  E210's 158). "Perit" plain (the transport Thomas Perit, OR I/43 pt 2 p.628; holder 5787). Animal = Monroe, plague = 6, minnie = 7.30 PM,
+  princess/pilgrim = Captain, vinton/Vinton = Quartermaster, France = New York, spit = Men, Abel = Vermont, Nancy = 8 PM, swindle =
+  Join, wharton = Regiment, Youth = signature: **H 18 of 18** (FM-R3b H 16 / M 2: the time words are H in key.md, Perit is plain). Reading:
+  "[Monroe, November 6, 7.30 PM.] For [Captain] D. Stinson, [Quartermaster], [New York]. [150] [men] Ninth [Vermont] will leave here at [8
+  PM] on [steamer] Perit to [join] their [regiment]. [Signed] William L. James, [Captain] and [Quartermaster]."
+
+### 5. Classification (key `period`)
+`depth_pct` = H/C / code-word groups (plain words and names excluded), as FV-FM4.
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E217** Ingalls (City Point, via Fort Monroe) to the QMG, 10 July 1864 4.30 PM | **N1** (plain text in the holder's public transcription of the clear copy, pointer 10487) | yes (holder's transcription) | **D3** | 100 (C 24 of 24) | code clause: Whimper = Transport, Spit = Men, Woodbury/Waldo = 1000 passim; external non-statistical: the period clear copy 10487; OR I/37 pt 2 p.159 prints Ingalls's earlier telegram of the day with the same 7,000 and 11,000; image FM-R3a |
+| **E219** Ingalls (City Point, via Beckwith) to Col. R. C. Webster, chief QM, Fort Monroe, 27 Aug 1864 6.30 PM | **N3** | unknown | **D3** | 100 (H 11 of 11) | code clause: Japan = Grant, Appian = Monroe, Weasel = Steam passim; external non-statistical: Grant Papers vol. 12 chronology, 27 Aug 1864 ("USG left for a visit with Julia Dent Grant at Fort Monroe"); OR I/42 pt 2 p.447 (Webster to relieve Biggs as chief QM); Greyhound Butler's dispatch steamer (OR I/42 pt 2 p.254); image read here |
+| **E226** Capt. H. B. Blood (White House) to Capt. Allen, QM, 7th Street wharf, Washington, 14 June 1864 | **N1** (clear copy 4711) | yes | **D3** | 100 (C 10 + H 1 of 11) | code clause: Bergen = James, Growl = Washington, Princess/Pilgrim = Captain passim; external: clear copy 4711; OR I/40 pt 2 pp.46-47 (Pitkin, White House, 14 June: Blood left in charge, depot moving to Charles City Landing); image FM-R3b |
+| **E227** Capt. W. L. James (QM, Fort Monroe) via Horner to Capt. D. Stinson, AQM, New York, 6 Nov 1864 7.30 PM | **N3** | unknown | **D3** | 100 (H 18 of 18) | code clause: Abel = Vermont, Spit = Men, Swindle = Join passim; external non-statistical: OR I/43 pt 2 pp.558-629 (Ninth Vermont sent to New York for the election, "200 of the Ninth Vermont has not arrived"; Capt. Daniel Stinson AQM at New York furnishing transports; the transport Thomas Perit, p.628); holder 5787 (Perit at Fort Monroe, 4 Oct 1864); image FM-R3b |
+
+- **E219: N3, D3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: at 6.30 p.m. on 27 Aug 1864 Brig. Gen. Rufus Ingalls at
+  City Point told Col. R. C. Webster, chief quartermaster at Fort Monroe, that General Grant was leaving at 7 p.m. to meet his family at
+  Fort Monroe and that the steamer Greyhound was to be placed at his disposal on arrival. The telegram was not located in the Official
+  Records (ser. I vol. 42 pts 2-3), Butler's Private and Official Correspondence vol. V, the Grant Papers vol. 12 (full-text search) or the
+  Huntington's full-text search (searched 9 Oct 2026); the Grant Papers' chronology records the trip." Unsafe: "first decipherment",
+  "previously unread", "unpublished". Depth sentence (mine, from the reading): "On the evening of 27 Aug 1864 Grant left City Point to meet
+  his family at Fort Monroe, and the quartermaster there was told to have the steamer Greyhound waiting for him."
+- **E227: N3, D3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 6 Nov 1864 Capt. William L. James, quartermaster at
+  Fort Monroe, told Capt. D. Stinson, assistant quartermaster in New York, that 150 men of the Ninth Vermont would leave Fort Monroe at 8
+  p.m. on the steamer Perit to join their regiment. The telegram was not located in the Official Records (ser. I vols. 42 pt 3, 43 pt 2),
+  Butler's Private and Official Correspondence vol. V or the Huntington's full-text search (searched 9 Oct 2026); OR I/43 pt 2 prints the
+  regiment's move to New York and Stinson's transports." Unsafe: "first decipherment", "previously unread". Depth sentence (mine): "Two days
+  before the 1864 election, 150 men of the Ninth Vermont were shipped from Fort Monroe on the steamer Perit to rejoin their regiment,
+  and New York's quartermaster was told to expect them."
+- **E217, E226: N1.** Safe sentence (each): "Read at grade C with War Department Cipher No. 1 against the period clear copy in the
+  Eckert Papers (Huntington pointer 10487 / 4711), whose plain text is in the holder's public transcription." No status.json or SO row (N3+
+  only, brief). Depth sentences recorded for the lane: E217 "On 10 July 1864 Ingalls reported from City Point that transports for 7,000 men
+  were on hand and that he expected enough for all 11,000 of Wright's corps"; E226 "As the White House depot closed on 14 June 1864, its
+  quartermaster asked Washington to send the mail boats to Charles City Landing on the James."
+
+### 6. Postmortem
+The readings were sound; two of the four "not located" entries had a clear copy at another pointer (E217 at 10487, E226 at 4711), the
+lesson FV-FM5c already recorded and this brief's added CONTENTdm step was written for: the readers' prior-work step did not run the
+holder's full-text search across all pointers. FM-R3a also logged E217's printed Ingalls telegram (OR I/37 pt 2 p.159) only as "outline";
+it is a different message of the same day, settled by the two clear copies 4787 and 10487. Grading slips: E217 counts the address word
+"Washington" as a code word; E219's addressee "are see Webster" was left unread (R. C. Webster, the new chief quartermaster) and its
+"webster" counted as a signature; E226's "White horse" (White House) and "wharf" were held M; E227's time words were held M though in
+key.md, and "Weasler" not credited. Decoder slips for a FIX job: E217 header "Washington" -> plain; E219 "webster" -> plain (body out of
+the tail); E226 "White horse" -> White House plain, "wharf" plain; E227 "William" -> plain, "Weasler" -> [Steam]er.
