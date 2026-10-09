@@ -84,3 +84,19 @@ rare-name full-text grep, Grant Papers via IA be-api. The 1865 rows: paste the H
 reads is recorded "no book in hand", not forced. Images: crops only (tools/iiif_lines.py --image), page text on disk in sources/mssEC18/ first; hdl token rules.
 IDs from E322 (fetch first; take the next free one if taken). NOTES "## MS18-R2 (9 Oct 2026, account 1, for LANE LEDGER)" with a per-row line "in print /
 holder clear copy / not located (sources searched)", Remaining gaps / Escalation, gaps_check, decode --check. Unit ~0.5 per row.
+
+---
+
+# Wave 3 (written 9 Oct 2026 18:1x UTC; seven_day allowed_warning, continuing per lane-common-blast; lane ~30 of 60 at writing)
+By get_session: FIX-FM12 1.16, MS18-R2 3.68 (E322-E330 filed; E329 E330 printed OR I/39 pt 3 pp.253, 379; 10058/0 no book in hand; 7 not located; OR I/47
+pt 3 on IA answered 503 twice and be-api 502 -- retry once each, then log unreachable). Wave 2 total 4.84.
+
+## FV-MS18b, FV-MS18c (Opus 5.5, first verifiers, separate from the reader; cap $7.5 and $7, box 100 min each)
+Exactly "## FV-FM9a" of the ledger6 jobs file (= FV-FM8/FV-FM6 method, the all-pointer CONTENTdm clear-copy search FIRST, mssEC 19 received-ledger diff, eye
+check of every graded line on crops) with the 1865 sources: OR I/47 pt 3, I/49 pt 2, ser. III vol. 5, and the Wilson/Gillmore/Rosecrans correspondence in
+print for May 1865; Johnson Papers (vol. 8) for May 1865 Washington traffic where reachable. NOTES "## MS18-R2" names the sources the reader searched.
+- FV-MS18b: E322, E323, E324, E325. AUDIT.md "## AUDIT (FV-MS18b)". On N3+ D2+ append WORK-QUEUE `AUD2-LEDGER-28`.
+- FV-MS18c: E326, E327, E328, and confirm E329, E330 as N1 against OR I/39 pt 3 pp.253, 379 on the page image of the print (IA leaf), not OCR heads (~0.4 each);
+  test the reader's print-derived values Kearney = Burbridge, lavender = Washburn at every filed occurrence with `tools/decode_key.py --try` or a short script
+  with a control, and propose them for key.md at C only if they read everywhere (do not edit key.md). AUDIT.md "## AUDIT (FV-MS18c)". On N3+ D2+ `AUD2-LEDGER-29`.
+status.json/SO rows for N3+ only, audit_status "one audit"; depth_check; file_shrink_guard. Fixes in AUDIT s.5 for a later FIX job. Unit ~1.9 per entry.
