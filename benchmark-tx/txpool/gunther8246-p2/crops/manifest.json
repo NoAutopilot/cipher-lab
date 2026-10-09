@@ -1,0 +1,1179 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p2_L01.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    84,
+    1200,
+    211
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 38.98,
+    "b": 0.0169,
+    "peaks_kept": 7,
+    "half_height": 33,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     18,
+     82
+    ],
+    "height": 64
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     88
+    ],
+    "removed": 19,
+    "kept": 29
+   }
+  },
+  {
+   "crop": "p2_L02.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    148,
+    1200,
+    270
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 110.06,
+    "b": -0.00112,
+    "peaks_kept": 6,
+    "half_height": 38,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     72,
+     140
+    ],
+    "height": 68
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     98
+    ],
+    "removed": 56,
+    "kept": 30
+   }
+  },
+  {
+   "crop": "p2_L03.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    198,
+    1200,
+    328
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 154.05,
+    "b": 0.01786,
+    "peaks_kept": 7,
+    "half_height": 34,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     134,
+     198
+    ],
+    "height": 64
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     90
+    ],
+    "removed": 58,
+    "kept": 32
+   }
+  },
+  {
+   "crop": "p2_L04.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    253,
+    1200,
+    372
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 207.77,
+    "b": 0.01024,
+    "peaks_kept": 7,
+    "half_height": 32,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     187,
+     249
+    ],
+    "height": 62
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     86
+    ],
+    "removed": 48,
+    "kept": 36
+   }
+  },
+  {
+   "crop": "p2_L05.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    306,
+    1200,
+    444
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 267.18,
+    "b": 0.01571,
+    "peaks_kept": 7,
+    "half_height": 39,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     236,
+     307
+    ],
+    "height": 71
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     100
+    ],
+    "removed": 63,
+    "kept": 30
+   }
+  },
+  {
+   "crop": "p2_L06.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    362,
+    1200,
+    506
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 328.2,
+    "b": 0.01214,
+    "peaks_kept": 7,
+    "half_height": 44,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     289,
+     364
+    ],
+    "height": 75
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     110
+    ],
+    "removed": 61,
+    "kept": 47
+   }
+  },
+  {
+   "crop": "p2_L07.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    423,
+    1200,
+    541
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 379.46,
+    "b": 0.00619,
+    "peaks_kept": 7,
+    "half_height": 34,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     356,
+     419
+    ],
+    "height": 63
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     90
+    ],
+    "removed": 54,
+    "kept": 49
+   }
+  },
+  {
+   "crop": "p2_L08.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    475,
+    1200,
+    613
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 434.3,
+    "b": 0.01929,
+    "peaks_kept": 7,
+    "half_height": 37,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     411,
+     479
+    ],
+    "height": 68
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     96
+    ],
+    "removed": 66,
+    "kept": 48
+   }
+  },
+  {
+   "crop": "p2_L09.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    541,
+    1200,
+    676
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 499.88,
+    "b": 0.01738,
+    "peaks_kept": 7,
+    "half_height": 36,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     468,
+     536
+    ],
+    "height": 68
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     94
+    ],
+    "removed": 70,
+    "kept": 42
+   }
+  },
+  {
+   "crop": "p2_L10.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    601,
+    1200,
+    733
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 556.27,
+    "b": 0.02071,
+    "peaks_kept": 7,
+    "half_height": 33,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     529,
+     595
+    ],
+    "height": 66
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     88
+    ],
+    "removed": 52,
+    "kept": 44
+   }
+  },
+  {
+   "crop": "p2_L11.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    657,
+    1200,
+    777
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 619.41,
+    "b": -0.00405,
+    "peaks_kept": 7,
+    "half_height": 36,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     587,
+     654
+    ],
+    "height": 67
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     94
+    ],
+    "removed": 55,
+    "kept": 48
+   }
+  },
+  {
+   "crop": "p2_L12.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    714,
+    1200,
+    851
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 672.25,
+    "b": 0.02048,
+    "peaks_kept": 7,
+    "half_height": 36,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     648,
+     714
+    ],
+    "height": 66
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     94
+    ],
+    "removed": 62,
+    "kept": 41
+   }
+  },
+  {
+   "crop": "p2_L13.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    766,
+    1200,
+    912
+   ],
+   "lines_in_crop": 1,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 721.82,
+    "b": 0.03381,
+    "peaks_kept": 7,
+    "half_height": 33,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     707,
+     771
+    ],
+    "height": 64
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     88
+    ],
+    "removed": 59,
+    "kept": 31
+   }
+  },
+  {
+   "crop": "p2_L14.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    818,
+    1200,
+    974
+   ],
+   "lines_in_crop": 1,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 777.14,
+    "b": 0.03619,
+    "peaks_kept": 7,
+    "half_height": 37,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     765,
+     836
+    ],
+    "height": 71
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     96
+    ],
+    "removed": 53,
+    "kept": 54
+   }
+  },
+  {
+   "crop": "p2_L15.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    886,
+    1200,
+    1018
+   ],
+   "lines_in_crop": 1,
+   "band": 15,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 839.18,
+    "b": 0.02524,
+    "peaks_kept": 7,
+    "half_height": 31,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     824,
+     884
+    ],
+    "height": 60
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     84
+    ],
+    "removed": 67,
+    "kept": 39
+   }
+  },
+  {
+   "crop": "p2_L16.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    936,
+    1200,
+    1080
+   ],
+   "lines_in_crop": 1,
+   "band": 16,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 896.57,
+    "b": 0.02286,
+    "peaks_kept": 7,
+    "half_height": 38,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     875,
+     945
+    ],
+    "height": 70
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     98
+    ],
+    "removed": 63,
+    "kept": 32
+   }
+  },
+  {
+   "crop": "p2_L17.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    1006,
+    1200,
+    1130
+   ],
+   "lines_in_crop": 1,
+   "band": 17,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 964.16,
+    "b": 0.00786,
+    "peaks_kept": 7,
+    "half_height": 36,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     937,
+     1001
+    ],
+    "height": 64
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     94
+    ],
+    "removed": 56,
+    "kept": 39
+   }
+  },
+  {
+   "crop": "p2_L18.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    1062,
+    1200,
+    1185
+   ],
+   "lines_in_crop": 1,
+   "band": 18,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 1022.89,
+    "b": 0.00238,
+    "peaks_kept": 7,
+    "half_height": 38,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     985,
+     1052
+    ],
+    "height": 67
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     98
+    ],
+    "removed": 59,
+    "kept": 39
+   }
+  },
+  {
+   "crop": "p2_L19.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    1110,
+    1200,
+    1238
+   ],
+   "lines_in_crop": 1,
+   "band": 19,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 1068.41,
+    "b": 0.01119,
+    "peaks_kept": 7,
+    "half_height": 36,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     1045,
+     1110
+    ],
+    "height": 65
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     94
+    ],
+    "removed": 56,
+    "kept": 39
+   }
+  },
+  {
+   "crop": "p2_L20.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    1172,
+    1200,
+    1304
+   ],
+   "lines_in_crop": 1,
+   "band": 20,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 1134.0,
+    "b": 0.00762,
+    "peaks_kept": 7,
+    "half_height": 40,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     1100,
+     1169
+    ],
+    "height": 69
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     102
+    ],
+    "removed": 64,
+    "kept": 57
+   }
+  },
+  {
+   "crop": "p2_L21.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    1237,
+    1200,
+    1357
+   ],
+   "lines_in_crop": 1,
+   "band": 21,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 1192.41,
+    "b": 0.00929,
+    "peaks_kept": 7,
+    "half_height": 33,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     1160,
+     1226
+    ],
+    "height": 66
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     88
+    ],
+    "removed": 65,
+    "kept": 50
+   }
+  },
+  {
+   "crop": "p2_L22.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    1286,
+    1200,
+    1405
+   ],
+   "lines_in_crop": 1,
+   "band": 22,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 1241.61,
+    "b": 0.0081,
+    "peaks_kept": 7,
+    "half_height": 33,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     1216,
+     1278
+    ],
+    "height": 62
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     88
+    ],
+    "removed": 63,
+    "kept": 41
+   }
+  },
+  {
+   "crop": "p2_L23.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    1336,
+    1200,
+    1469
+   ],
+   "lines_in_crop": 1,
+   "band": 23,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 1299.61,
+    "b": 0.00619,
+    "peaks_kept": 7,
+    "half_height": 41,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     1272,
+     1347
+    ],
+    "height": 75
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     104
+    ],
+    "removed": 56,
+    "kept": 59
+   }
+  },
+  {
+   "crop": "p2_L24.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    1402,
+    1200,
+    1536
+   ],
+   "lines_in_crop": 1,
+   "band": 24,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 1361.98,
+    "b": 0.015,
+    "peaks_kept": 7,
+    "half_height": 37,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     1335,
+     1408
+    ],
+    "height": 73
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     96
+    ],
+    "removed": 56,
+    "kept": 64
+   }
+  },
+  {
+   "crop": "p2_L25.jpg",
+   "source_url": "",
+   "source_file": "08246_p2.jpg",
+   "box": [
+    150,
+    1476,
+    1200,
+    1602
+   ],
+   "lines_in_crop": 1,
+   "band": 25,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 150 (sheared strip), --mask-neighbours (margin 22)",
+   "params": {
+    "pitch_autocorr": 59,
+    "distance": 41,
+    "prominence": 37.9
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 1437.46,
+    "b": 0.00429,
+    "peaks_kept": 7,
+    "half_height": 39,
+    "win": 150,
+    "local": true
+   },
+   "band_extent": {
+    "frac": 0.05,
+    "band_rows": [
+     1401,
+     1471
+    ],
+    "height": 70
+   },
+   "mask": {
+    "margin": 22,
+    "keep": 0.5,
+    "band_rows": [
+     22,
+     100
+    ],
+    "removed": 45,
+    "kept": 59
+   }
+  }
+ ]
+}
