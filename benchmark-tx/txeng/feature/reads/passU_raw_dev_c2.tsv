@@ -1,0 +1,186 @@
+passage	pos	features	sign_id	alt	conf	note
+L07	1	desc=none asc=long bars=1 loops=1 dots=0 lean=upright tail=none	T90	T84	M	cross over small loop; line start
+L07	2	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L07	3	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L07	4	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T18		H	
+L07	5	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L07	6	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L07	7	desc=none asc=none bars=0 loops=0 dots=0 lean=upright tail=none	T63		H	
+L07	8	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L07	9	desc=none asc=long bars=1 loops=1 dots=0 lean=upright tail=none	T90	T84	M	cross over loop
+L07	10	desc=none asc=none bars=1 loops=1 dots=0 lean=left tail=none	T83		H	
+L07	11	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T80		H	
+L07	12	desc=short asc=none bars=0 loops=1 dots=0 lean=right tail=left	T76	T26	M	9-shape
+L07	13	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T36	T27	M	loop on stem
+L07	14	desc=none asc=short bars=0 loops=1 dots=0 lean=right tail=right	T96		H	
+L07	15	desc=none asc=long bars=1 loops=1 dots=0 lean=upright tail=none	T90	T84	M	cross over loop
+L07	16	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L07	17	desc=none asc=none bars=1 loops=2 dots=0 lean=upright tail=none	T58		H	
+L07	18	desc=none asc=none bars=1 loops=1 dots=0 lean=right tail=right	T54		H	
+L07	19	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L07	20	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L07	21	desc=none asc=none bars=0 loops=2 dots=0 lean=upright tail=none	T53		H	
+L07	22	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L07	23	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T18		H	
+L07	24	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T85		H	
+L07	25	desc=none asc=short bars=0 loops=1 dots=1 lean=right tail=none	T13		M	m with small ascender above and dot below
+L07	26	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L07	27	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T36		H	
+L07	28	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T85		H	
+L07	29	desc=none asc=none bars=0 loops=0 dots=0 lean=upright tail=none	T92	T50	M	omega joined to next
+L07	30	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	line end
+L08	1	desc=none asc=none bars=0 loops=0 dots=0 lean=upright tail=none	T63		H	line start
+L08	2	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L08	3	desc=none asc=short bars=1 loops=0 dots=0 lean=right tail=right	T17		M	small t
+L08	4	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L08	5	desc=none asc=short bars=1 loops=0 dots=0 lean=right tail=right	T17		M	small t
+L08	6	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L08	7	desc=none asc=none bars=1 loops=1 dots=0 lean=left tail=none	T83		H	
+L08	8	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T85		H	
+L08	9	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L08	10	desc=none asc=short bars=0 loops=0 dots=0 lean=upright tail=right	T50	T92	M	( omega
+L08	11	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T80		H	
+L08	12	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=right	T64		H	
+L08	13	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L08	14	desc=none asc=short bars=1 loops=0 dots=0 lean=upright tail=none	T33		H	
+L08	15	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L08	16	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L08	17	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T18		H	
+L08	18	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L08	19	desc=none asc=long bars=0 loops=0 dots=0 lean=right tail=right	T25		H	
+L08	20	desc=long asc=short bars=1 loops=0 dots=0 lean=right tail=none	T51	T56	M	f crossed low
+L08	21	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T36		H	
+L08	22	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T85		H	
+L08	23	desc=long asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T98		H	
+L08	24	desc=long asc=none bars=1 loops=2 dots=0 lean=upright tail=none	T65		H	
+L08	25	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L08	26	desc=none asc=short bars=0 loops=1 dots=1 lean=right tail=none	T13		M	m with a above and dot
+L08	27	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T55		H	
+L08	28	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T18		H	
+L08	29	desc=none asc=short bars=0 loops=1 dots=0 lean=right tail=right	T96		H	
+L08	30	desc=none asc=short bars=0 loops=2 dots=0 lean=upright tail=none	T11	T46	M	85 numeral pair; line end
+L09	1	desc=none asc=none bars=1 loops=1 dots=0 lean=right tail=none	T29		H	line start
+L09	2	desc=none asc=long bars=1 loops=1 dots=0 lean=upright tail=none	T84		H	
+L09	3	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T18		H	
+L09	4	desc=none asc=short bars=0 loops=1 dots=0 lean=right tail=right	T96		H	
+L09	5	desc=none asc=none bars=1 loops=1 dots=0 lean=left tail=none	T83		H	
+L09	6	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L09	7	desc=none asc=short bars=1 loops=0 dots=0 lean=upright tail=none	T33		H	
+L09	8	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L09	9	desc=none asc=short bars=0 loops=1 dots=1 lean=right tail=none	T13		M	m with a above and colon
+L09	10	desc=short asc=none bars=0 loops=0 dots=0 lean=right tail=right	T52		M	n with z-like tail below
+L09	11	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L09	12	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L09	13	desc=none asc=short bars=0 loops=1 dots=1 lean=right tail=none	T13		M	m with a above and dot
+L09	14	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L09	15	desc=none asc=none bars=1 loops=1 dots=0 lean=right tail=right	T54		H	
+L09	16	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L09	17	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L09	18	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T80		H	
+L09	19	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L09	20	desc=long asc=none bars=2 loops=1 dots=0 lean=upright tail=none	T49		H	
+L09	21	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L09	22	desc=none asc=none bars=1 loops=2 dots=0 lean=upright tail=none	T58		H	
+L09	23	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T85		H	
+L09	24	desc=none asc=long bars=1 loops=1 dots=0 lean=upright tail=none	T90	T84	M	cross over loop
+L09	25	desc=none asc=long bars=0 loops=0 dots=0 lean=right tail=right	T25		H	
+L09	26	desc=none asc=short bars=1 loops=0 dots=0 lean=upright tail=none	T33		H	
+L09	27	desc=none asc=long bars=1 loops=1 dots=0 lean=upright tail=none	T90	T84	M	cross over loop
+L09	28	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L09	29	desc=none asc=none bars=0 loops=0 dots=0 lean=upright tail=none	X_NEW		L	tiny 8 or s mark after theta; line end
+L10	1	desc=none asc=none bars=0 loops=2 dots=0 lean=upright tail=none	T53		H	line start
+L10	2	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L10	3	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T18		H	
+L10	4	desc=short asc=none bars=0 loops=1 dots=0 lean=right tail=left	T76	T26	M	bold 9 shape
+L10	5	desc=none asc=short bars=0 loops=0 dots=0 lean=upright tail=right	T50	T92	M	( omega
+L10	6	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L10	7	desc=none asc=none bars=1 loops=2 dots=0 lean=upright tail=none	T58		H	
+L10	8	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T18		H	
+L10	9	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T85		H	
+L10	10	desc=none asc=none bars=0 loops=2 dots=0 lean=upright tail=none	T53		H	
+L10	11	desc=none asc=short bars=0 loops=1 dots=0 lean=right tail=right	T96		H	
+L10	12	desc=long asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T98		H	
+L10	13	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T55		H	
+L10	14	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L10	15	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T55		H	
+L10	16	desc=long asc=none bars=0 loops=2 dots=0 lean=right tail=left	T15	T46	M	89 numeral pair
+L10	17	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L10	18	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T70		H	
+L10	19	desc=none asc=none bars=1 loops=2 dots=0 lean=upright tail=none	T58		H	
+L10	20	desc=none asc=short bars=0 loops=1 dots=0 lean=right tail=right	T96		H	
+L10	21	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L10	22	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		M	loop with doubled stem above
+L10	23	desc=none asc=long bars=1 loops=1 dots=0 lean=upright tail=none	T90	T84	M	cross over loop
+L10	24	desc=none asc=short bars=1 loops=0 dots=0 lean=upright tail=none	T33		H	
+L10	25	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L10	26	desc=none asc=none bars=1 loops=0 dots=0 lean=left tail=none	T24		M	large epsilon
+L10	27	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L10	28	desc=none asc=none bars=1 loops=1 dots=0 lean=left tail=none	T83		H	
+L10	29	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L10	30	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T18	T36	M	phi-like loop with tail
+L10	31	desc=none asc=short bars=0 loops=1 dots=0 lean=right tail=right	T96		H	
+L10	32	desc=none asc=none bars=0 loops=0 dots=0 lean=upright tail=none	X_NEW		L	two tiny vertical strokes; line end
+L11	1	desc=short asc=none bars=0 loops=2 dots=0 lean=right tail=right	T89		H	line start
+L11	2	desc=none asc=short bars=1 loops=0 dots=0 lean=upright tail=none	T33		H	
+L11	3	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L11	4	desc=long asc=short bars=1 loops=0 dots=0 lean=right tail=none	T51	T56	M	f crossed low
+L11	5	desc=short asc=none bars=0 loops=1 dots=0 lean=right tail=left	T76	T26	M	9 shape
+L11	6	desc=none asc=short bars=0 loops=0 dots=0 lean=upright tail=right	T50	T92	M	( omega
+L11	7	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L11	8	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L11	9	desc=none asc=none bars=1 loops=2 dots=0 lean=upright tail=none	T10		H	
+L11	10	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T85		H	
+L11	11	desc=long asc=short bars=0 loops=1 dots=0 lean=right tail=none	T56	T51	M	gamma-like twist with descender
+L11	12	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L11	13	desc=none asc=short bars=1 loops=0 dots=0 lean=upright tail=none	T33		H	
+L11	14	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L11	15	desc=none asc=none bars=1 loops=1 dots=0 lean=left tail=none	T83		H	
+L11	16	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L11	17	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T80		H	
+L11	18	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L11	19	desc=none asc=none bars=1 loops=0 dots=0 lean=left tail=none	T24		M	large epsilon
+L11	20	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L11	21	desc=none asc=none bars=1 loops=1 dots=0 lean=left tail=none	T83		H	
+L11	22	desc=none asc=short bars=1 loops=0 dots=0 lean=right tail=right	T17		M	small t
+L11	23	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L11	24	desc=none asc=none bars=0 loops=0 dots=0 lean=upright tail=none	T63		H	
+L11	25	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T80		H	
+L11	26	desc=none asc=long bars=1 loops=1 dots=0 lean=upright tail=none	T90	T84	M	cross over loop
+L11	27	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T55		H	
+L11	28	desc=none asc=none bars=0 loops=2 dots=0 lean=upright tail=none	T53		H	
+L11	29	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L11	30	desc=none asc=none bars=1 loops=1 dots=0 lean=left tail=none	T83		H	
+L11	31	desc=long asc=short bars=1 loops=0 dots=0 lean=right tail=none	T51	T56	M	f crossed low
+L11	32	desc=none asc=none bars=0 loops=0 dots=0 lean=upright tail=none	X_NEW		L	tiny vertical stroke; line end
+L12	1	desc=none asc=short bars=1 loops=2 dots=0 lean=upright tail=none	T97		H	line start
+L12	2	desc=none asc=short bars=0 loops=1 dots=0 lean=right tail=right	T96		H	
+L12	3	desc=none asc=none bars=1 loops=1 dots=0 lean=right tail=right	T54		H	
+L12	4	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L12	5	desc=none asc=none bars=0 loops=0 dots=0 lean=upright tail=none	T63		H	
+L12	6	desc=none asc=short bars=0 loops=1 dots=0 lean=right tail=right	T96		H	
+L12	7	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L12	8	desc=none asc=short bars=1 loops=2 dots=0 lean=upright tail=none	T97		H	
+L12	9	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L12	10	desc=long asc=none bars=0 loops=1 dots=1 lean=left tail=left	T26		M	loop with j-tail and dot
+L12	11	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L12	12	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L12	13	desc=none asc=none bars=2 loops=0 dots=0 lean=upright tail=none	T60		H	
+L12	14	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=none	T86		H	
+L12	15	desc=long asc=none bars=0 loops=1 dots=0 lean=upright tail=none	T36		H	
+L12	16	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L12	17	desc=short asc=none bars=0 loops=1 dots=0 lean=upright tail=right	T57		H	
+L12	18	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L12	19	desc=none asc=none bars=1 loops=1 dots=0 lean=left tail=none	T83		H	
+L12	20	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T80		H	
+L12	21	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L12	22	desc=short asc=none bars=0 loops=2 dots=0 lean=right tail=right	T89		H	
+L12	23	desc=short asc=short bars=2 loops=1 dots=0 lean=right tail=left	X_A		M	capital A with small cross on right leg
+L12	24	desc=long asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T98		H	
+L12	25	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L12	26	desc=none asc=short bars=1 loops=0 dots=0 lean=upright tail=none	T33		H	
+L12	27	desc=none asc=none bars=1 loops=0 dots=0 lean=upright tail=left	T19		H	
+L12	28	desc=long asc=short bars=1 loops=0 dots=0 lean=right tail=none	T51	T56	M	f crossed low
+L12	29	desc=none asc=long bars=0 loops=1 dots=0 lean=upright tail=none	T45		H	
+L12	30	desc=none asc=none bars=1 loops=1 dots=0 lean=upright tail=none	T37		H	
+L12	31	desc=short asc=none bars=0 loops=1 dots=0 lean=upright tail=right	T57		H	
+L12	32	desc=none asc=none bars=0 loops=0 dots=0 lean=upright tail=none	X_NEW		L	tiny vertical stroke; line end
