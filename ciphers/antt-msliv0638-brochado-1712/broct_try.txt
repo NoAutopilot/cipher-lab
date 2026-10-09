@@ -1,0 +1,23 @@
+# BRO-CT 9 Oct 2026: python3 tools/decode_key.py ciphers/antt-msliv0638-brochado-1712 --try t=l --lm tools/data/pt18 (then t=m, the runner-up); and --avalanche --lm tools/data/pt18 (fr16 default first run discarded: wrong language)
+t=l: n 4, current -, statistic -18.7 bits over M; null p95 positions -14.9, value class 9.4; reject (no better than the runner-up) [non-blind]
+  0:214  e p <g±> e s o c e [l] o q v a <t> e v c
+  0:219  o c e <t> o q v a [l] e v c o <28> a s a
+  0:741  a e s t e s g <g> [l] <p> a c o s d e c
+  1:73  l o s e g t a l [l] e n t o v i l h
+t=m: n 4, current -, statistic 9.4 bits over NULL; null p95 positions -2.8, value class -11.3; undecided (below the acceptance rule) [non-blind]
+  0:214  e p <g±> e s o c e [m] o q v a <t> e v c
+  0:219  o c e <t> o q v a [m] e v c o <28> a s a
+  0:741  a e s t e s g <g> [m] <p> a c o s d e c
+  1:73  l o s e g t a l [m] e n t o v i l h
+
+# avalanche: 9 codes with no value and n >= 2; candidates 24; rule margin>=10,n>=5,null=no; lm tools/data/pt18; never written to the key
+order	code	value	margin	second	n	accepted
+0	h	M	12.5	A	11	yes
+1	t	M	9.4	NULL	4	no
+2	4±	S	5.5	A	2	no
+3	g±	R	4.4	A	3	no
+4	28	NULL	3.9	M	2	no
+5	p	I	2.0	A	2	no
+6	g	I	4.1	E	12	no
+7	y±	R	0.4	S	2	no
+8	57	O	0.1	C	2	no

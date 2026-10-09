@@ -51,3 +51,10 @@ tokens; 16 of the 18 appendix uses of 24 sat in runs that failed that test (the 
 Standing: `24 -> e`, grade C (25 of 31 tagged uses e, 0.81; key builder rule C at >= 0.65 and n >= 2), same date and
 direction as letter 134, so C applies in letter 134. The single h witness is logged here and not settled by count alone:
 its gloss does not match its cipher letter for letter, so it is not an equal-strength period reading of 24.
+
+## BRO-CT (9 Oct 2026, account 2; for LANE FAMILY-A2m): crossed-t `t` = letter 134 m0276-r2 pos 16, value l?
+| hypothesis | instrument | control | target | result |
+|---|---|---|---|---|
+| letter 134's unkeyed sign is the appendix crossed-t (3 witnesses, gloss l) | 2 blind Sonnet looks, 3 t + 4 decoys shuffled (PREREG-BROCT.md, b9250bc79) | decoys in each look | look A: same = T1, T2 (T3 unsure), no decoy; look B: same = T1, T2, T3 + decoy D3 (slashed f, s) | NOT SUPPORTED (gate: >=2 t and no decoy in both looks) |
+| t = l at all 4 occurrences | decode_key.py --try t=l, lm pt18 (broct_try.txt) | tool's own null (positions p95 -14.9, value class 9.4) | statistic -18.7 bits vs runner-up M | reject (non-blind); t=m undecided (+9.4 over NULL, below rule); avalanche top for t is M, not accepted |
+Standing: no value for letter 134 pos 16; key.tsv unchanged. The appendix t still reads l by gloss in all three appendix contexts ("pelo qual" x2, "velhacos"); the LM pooling of those with letter 134 ("...tal[?]ento...") does not favour l, and the LM-context instrument failed its own known-answer control on this volume (D4-BROLM), so the --try verdict is weak either way.
