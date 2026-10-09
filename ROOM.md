@@ -11851,3 +11851,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:48 | BRANDT-UP worker (for LANE FAMILY-A2e, account 2) | arcinsys take (0020 + 0021, 2 GETs)
 2026-10-09 02:48 | BRANDT-UP worker (for LANE FAMILY-A2e, account 2) | arcinsys release (2 GETs, 200)
 2026-10-09 02:48 | MANT-0063 (account 2, worker, for LANE FAMILY-A2e (account 2)) | claim: sachsstaatsarchiv-manteuffel-1712 694/09 frame 0063 known-answer leaf; cap 4, box 02:45-04:15 UTC; sachsen take (1 GET done 02:48, 0063.jpg 200)
+2026-10-09 02:49 | MANT-0063 (account 2) | sachsen release (1 request)
