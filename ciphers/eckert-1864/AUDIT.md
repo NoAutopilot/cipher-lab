@@ -11016,7 +11016,7 @@ retry 500; Plum vol. 2 download reset); be-api 17 (15 answered, 2 x 502).
 
 ## AUDIT (FV-FM10c)
 
-Verifier FV-FM10c (account 1, for LANE LEDGER), 9 Oct 2026, 16:46-17:2x UTC by `date -u`; a separate session from the readers NO9-KEY, NO9-R1
+Verifier FV-FM10c (account 1, for LANE LEDGER), 9 Oct 2026, 16:46-17:19 UTC by `date -u`; a separate session from the readers NO9-KEY, NO9-R1
 and FM-R7a (account 1), not protecting their conclusions. Scope: the five Cipher No. 9 entries **O9-BD** (FM-R7a), **O9-CA, O9-CB, O9-CC, O9-CD**
 (NO9-R1); `ciphertext-no9.txt`, `reading-no9.md`, `decode_no9.py`; Fort Monroe ledger mssEC 25 = Huntington object 5952. Nothing decoded beyond
 key look-ups. Key source for all five: `period` (handwritten meanings of the Huntington copy mssEC 67, object 1750). Depth under
