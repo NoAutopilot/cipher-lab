@@ -7413,3 +7413,156 @@ Washington clear copy (10485) in one query ("nantucket"), and that copy also set
 Decoder slips for a FIX worker (not applied here): E245 "Jno toby" -> Ino (plain) to be, Livingston, blockades/blockaders; E243 "penny gallant"
 read as [19] instead of 4.15 (Penny = 4, Gallant = 15); E242 `gloss: bermuda=Bermuda:I` -> `plain: bermuda`. FM-R3d's table cell for E243
 ("penny gallant = 10 9 or 19") misread the key.
+
+## AUDIT (FV-FM6b)
+
+Verifier FV-FM6b (account 1, for LANE LEDGER), 9 Oct 2026, 03:47-04:2x UTC by `date -u`; a separate session from the readers FM-R3b and FM-R3d
+(account 1), not protecting their conclusions. Scope: **E228, E229** (NOTES "## FM-R3b") and **E240, E241** (NOTES "## FM-R3d"); ciphertext.txt,
+Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all four: `period`.
+Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts: `fortmonroe/fv_fm6b_hdl.py` (+ `.out`; CONTENTdm full text across all pointers + four page images at 2400 px to scratch),
+`fortmonroe/fv_fm6b_beapi.py` (+ `.out`; Grant Papers / Butler V by identifier, snippet only; Google Books probe). Print greps were run inline
+(letters-only, the 168 cached volumes of `sources/ia-fulltext/print-check` plus ORN I/11 `officialrecordso0011unse`, OR I/44 `warofrebellion44unit`,
+OR I/42 pts 2-3 `warofrebellion422unit`/`423unit` fetched to scratch, 4 archive.org downloads); newspapers through the loc.gov Chronicling America
+JSON API (6 searches, 6 page OCR texts, 2-3 s apart).
+
+### 1. Duplicates, prior-work, own transcription and image
+- **Duplicate diff:** pointers 5814, 5833, 5784, 5663 against every `###` header in ciphertext*.txt and status.json: 5784 also carries E193 (row /0,
+  19 Sept 1864, Sheldon for Rucker -- a different telegram); 5814, 5833, 5663 occur only in their own headers. 5831 (same date as E229) carries E190
+  and E235, different telegrams (E235 is Eckert's own Foster news to Sheldon the same day). **No duplicate.**
+- **Prior work:** `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=5814;date=1864-12-01;...' --step-type audit
+  --fetch` -> exit 4, holds: LEAD x2 = target-level live claims (ECK-PAGEFIX mssEC 19 page column; the LANE LEDGER orchestrator's own claim), neither
+  covers these units; UNCHECKED-NET aaymeloglu repository (no clone) and OR volumes not on disk (fetched by hand below); Tomokiyo and cached solver
+  files CLEAR. No AUDIT.md/status.json class on any of the four before this section.
+- **Own transcription** (Huntington volunteer text, `sources/fortmonroe/p<pointer>.json`) matches ciphertext.txt for all four. **Image eye check
+  this session** (pages at 2400 px under the hdl token, cropped to the entry lines, scratch only): E228 all four lines read as transcribed
+  ("for wise Chief of Bureau of Ord. growl unity / are the torpid does here the same as those / invented by Mister Woods Sugar If not please send /
+  me federal of the latter Youth Niagara Florence lovely"); E229 all five lines read as transcribed; E240 lines 1-4: the image has **"palsy Barnes
+  grapes"** (the transcription drops Barnes, already noted by FM-R3d) and **"violently pekin that"** where the transcription has "peken" (recorded,
+  not repaired: ciphertext.txt stays as transcribed); E241 lines 2-5 read as transcribed ("he polkaing in person").
+- **Sender's/receiver's copies on disk:** no Washington copy of any of the four in mssEC 18/19 on disk (grep of `torpid|invented`, `pocotaligo`,
+  `quarantine|purveyor|freeman`, `heckman|hicks ford|fulton and craig` over sources/mssEC18, mssEC19: hits are other telegrams -- p9924, p9948
+  torpedo boats Jan 1865; p9713 the steam tug Mary Freeman).
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, across all pointers; under the hdl token 04:00-04:01 UTC):
+"torpid" 7 (5814; 4281 = May 1863 "torpid does" planted at the White House; 5890/9948 = Jan 1865 torpedo boats; **5907 = Fort Monroe 16 Feb 1865,
+"Maj. Eckert, Washington / Farmer gift for polkaer H a wise Sheaf Bureau growl / Sub squadron torpid owes mentioned in Bureaux letter ... D. Lynch
+polkaer"**, i.e. "for Commander H. A. Wise, Chief [of] Bureau, Washington" -- the same address form as E228, with "wise" the plain surname; 5908 the
+next day, Lynch "No torpedoes on hand, have [telegraphed] the Bureau of Ordnance"), "invented" 1 (5814 only), "pocotaligo" 8 (5831, 5833; 5900,
+5911, 7720, 7754, 7779, 8562 = Jan-Feb 1865 traffic; 7779/5911 print the Feb 1865 "road has been so thoroughly destroyed ... Pocotaligo Station",
+the same "questioned" = destroyed), "despatch" 306 (word noise), "quarantine" 5 (5784; 13047/13059/13113 = Oct 1864 operator Gilmore quarantined at
+Norfolk -- **13059 names "Asst Surg. McClellan, Med. Div. Ft Monroe"**, the E. McClellan who signs E240; 4904 = 1867), "purveyor" 4 (5784; others
+unrelated), "freeman" 9 (5784; others unrelated: the tug Mary Freeman, Freeman A.D.C. 1863), "heckmans" 4 (5663; 5662 = the 9 May press telegram
+for Samuel Wilkeson, Tribune rooms -- a sibling press report of the day before; 5164, 5650 other), "rowe" 29 and "english" 40 (5663 among unrelated
+pages). **No clear or received copy of E228, E229, E240 or E241 in the holder's full text.**
+
+**Print and press:**
+- **E228:** ORN I/11 (Oct 1864-Feb 1865) grepped for "invented", "Woods", "torpedoes here the same", "same as those invented", and the Porter/Wise/Fox
+  telegrams of 30 Nov-6 Dec read in context: Wise signs "H. A. Wise, Chief of Bureau" (djvu text; page numbers not read), Fox 2 Dec ("Your dispatch
+  of the 30th November to Commander Wise"), Wise 3 Dec ("The Stromboli is on her way to you with 80 torpedoes on board and 2 of Beardslee's clock
+  movements"), Wise 6 Dec to Commander D. Lynch off Norfolk ("A torpedo apparatus and 20 torpedoes have this day been forwarded ... to the care of the
+  senior officer at Fortress Monroe"). **E228 itself is not printed there**; "Woods" occurs only as woods/trees and unrelated men named Wood. Butler V
+  (be-api) "torpedoes": one snippet (Sept 1864, closing Wilmington with torpedoes), not this. Cached 168 volumes: 0 for every E228 phrase. Google
+  Books: one probe, HTTP 429, host stopped. Press: one Chronicling America query ("torpedoes Woods", Nov-Dec 1864) listed pages, none read.
+  **Not located.**
+- **E229:** OR I/44 grepped: "Pocotaligo" 30+ hits (Foster's and Hatch's Dec 1864 reports, Confederate traffic), "had not communicated with General
+  Sherman" 0, "press despatch" 0, "Herald" (Dec 1864) 0 relevant. **The press despatch E229 contradicts is in print:** Evening Star (Washington),
+  13 Dec 1864 p.2, "General Foster's Expedition -- Affairs Subsequent to the Battle of Honey Hill -- Pocotaligo Bridge Destroyed -- The Charleston and
+  Savannah Railroad Cut -- Foster Communicates with Sherman (From the Philadelphia Inquirer)", the Donegal's news, "before evening the Pocotaligo
+  bridge was reached and destroyed"; New-York Daily Tribune 13 Dec 1864 p.1, the same story ("POCOTALIGO BRIDGE DESTROYED ... FOSTER'S SCOUTS MEET
+  SHERMAN'S ARMY", Philadelphia, 12 Dec, from the Bulletin). The New York Herald's own 13 Dec text was not read (not in the six OCR pages fetched).
+  This is the despatch, not E229; E229 (Fort Monroe to Eckert, 14 Dec) is **not located**. Grant Papers vol. 13 by identifier answered 0 even for
+  "Sherman" -- the identifier is not a real item: **unreachable by this route** (as FV-FM5b found).
+- **E240:** OR I/42 pts 2-3: "yellow fever is raging", "Surgeon Hand", "D. W. Hand", "William H. Freeman", "most rigid quarantine", "purveyor in New
+  York" all 0; I/42 pt 3 (Confederate, Whiting at Wilmington, Oct 1864) "late reports from New Berne. Yellow fever violent there and at Beaufort and
+  Morehead City" -- context. Press: Stanton's bulletin of 30 Sept 1864 (Portland Daily Press 1 Oct 1864 p.3: "Dispatches from Newbern, N. C., received
+  this evening, say that yellow fever is extensively prevailing in that place, but it is not very fatal among the troops"); Alexandria Gazette 3 Oct
+  1864 p.2 the same news. Context for the same evening's reports, **not this telegram** (Hand, Freeman, the quarantine and the doctors are absent).
+  Grant Papers vol. 12 "yellow fever" 0 (identifier unverified), Butler V "yellow fever" 0. **Not located.**
+- **E241: PRINTED.** Daily National Intelligencer (Washington), 11 May 1864 p.3 (Chronicling America, sn83026172/1864-05-11/ed-1/seq-3): "**An
+  Associated Press despatch from Fortress Monroe communicates the following important intelligence: Bermuda Hundreds, May 10, 1864. Fighting commenced
+  yesterday noon and continued till night, between Gen. Hickman's brigade and several other brigades, under Gen. Smith. Gen. Beauregard commanded the
+  rebel forces in person. During the fight our troops drove the enemy back three miles, nearly into Petersburg. We hold the railroad between Richmond
+  and Petersburg. Gen. Kautz's cavalry succeeded in destroying some portion of the Petersburg and Weldon (N. C.) railroad at Hicksford, and captured
+  many rebel prisoners. Twenty go to Fort Monroe to-day, including captains and lieutenants.**" This is the plaintext of the very telegram, sent "for
+  Fulton and Craig" (= the press agents; my identification, grade I: C. C. Fulton of the Baltimore American and D. H. Craig, general agent of the
+  New York Associated Press), printed without the operator's tail ("J. C. Rowe. Here follows list of wounded ... shall I send it in English? please
+  answer in time. Geo Sheldon"). Not in OR I/36 pt 2 (Butler's 9 May dispatch to Stanton is the same events, a different text, as FM-R3d said);
+  Grant Papers vol. 10 "Hicksford" 1 item (Grant's April planning letters), "Fulton and Craig" 0. Other press of 11 May (New-York Daily Tribune p.4,
+  an editorial naming Hicksford) not checked for a second printing.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E228:** **"wise" is the plain surname** of Capt. (Commander) Henry A. Wise, Chief of the Navy's Bureau of Ordnance (ORN I/11 signatures; holder
+  5907 "for ... H a wise Sheaf Bureau growl"), not the blind word Wise of key.md p.7; the reading's "for wise chief of Bureau of Ord" stands as plain
+  and FM-R3b's "[name] Chief" is now "Wise, Chief". "torpid does" = torpedoes (phonetic plain, the ledger's usual spelling: 4281, 5890, 5907).
+  "Sugar" = [?] (H): "invented by Mister Woods? If not please send me [10] of the latter" -- FM-R3b's "Woods sugar" M is resolved. Signer "youth
+  Niagara" = [Signed] [D. D. Porter] (H, key row Niagara p.18 l.5); context agrees (Porter at Hampton Roads fitting the Wilmington expedition, Wise
+  shipping torpedoes to him 3 Dec and to Lynch at Fort Monroe 6 Dec), but Commander D. Lynch at Fort Monroe used the same channel in Feb 1865, so
+  the signer rests on the key value alone. "lovely" after Florence = 11.30 AM: unread, **M**. Code groups growl, unity, sugar, federal, youth,
+  Niagara, Florence = **7 H**, lovely M (FM-R3b H 5 / M 3).
+- **E229:** **"Herald" is plain** (the New York Herald; the decoder prints [Ewell] from the key row Herald = Ewell): reading "The press despatch in
+  [New York] Herald of [13th] about [Foster] is wrong. Up to the [10th] [Foster] had not [communicated] with [Sherman], nor has Pocotaligo [bridge]
+  been [destroyed]. [Signed] L. F. Shell ..." -- "up tooth feeble" = "up to th[e] [10]th" (phonetic plain + numeral, **M** as to wording); "L F Shell
+  done cloudy this morning" after Webster = Signature: the signer and an operator's weather remark, M. The press of 12-13 Dec (above) prints exactly
+  the claims E229 denies (bridge destroyed, Foster communicating with Sherman), a non-statistical check of Plate = communicate, Question = destroy,
+  Patron = bridge, Lester/Lonesome = Foster, Kidnap = Sherman, France = New York. Code groups France, fever, Lester, feeble, Lonesome, plated,
+  Kidnap, patron, questioned, Webster = **10 H of 10**; Herald plain I-grade correction of a decoder slip.
+- **E240:** sound. "peken" is **"pekin" on the image** = [,] (Pekin = Comma, H): "raging in [Newbern] violently, that he is used up and requires
+  immediate aid" (the decoder leaves "peken" in clear; record for the FIX worker as an image reading, ciphertext unchanged). "Barnes" after palsy on
+  the image: "for [Brigadier General] Barnes, [Washington]" = Surgeon General Joseph K. Barnes (brigadier general from Aug 1864) -- now read from the
+  image, not inferred (I -> plain). "E. McClellan &C." = Asst. Surg. E. McClellan, Medical Division, Fort Monroe (holder 13059, Oct 1864), plain
+  signer (FM-R3d: "unread"). "Dock Tours"/"Dock tears" = doctors, "fall supplies" = full supplies, "asa" = as a (phonetic plain). Code groups
+  21 H (decoder) + pekin = **22 H of 22**.
+- **E241:** the print grades the code groups **C**. One decoder slip: **"person" is plain** in "he polkaing in person" = "he [command]ing in person"
+  (print: "commanded the rebel forces in person"); the decoder prints "[5]" from the numeral row Person = 5. "Francis" = [12] = noon (print:
+  "yesterday noon"); "Bermuda hundreds" = Bermuda Hundred, the gloss now **C** (print: "Bermuda Hundreds, May 10"); "princess and Lieutenant" =
+  [Captain] and Lieutenant (print: "captains and lieutenants"). Print variants: "Hickman's" (print) for Heckman's (ledger, correct); the print omits
+  "Gen." before "Kautz" and the tail. Code groups: 49 as decoded, less "person" = **48 C of 48**, Bermuda C.
+
+### 4. Classification (key `period`)
+`depth_pct` = H(or C) / code-word groups (plain names and phonetic words the decoder mapped are excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E228** Fort Monroe (signed [D. D. Porter]) via Sheldon to Maj. Eckert for Capt. H. A. Wise, Chief of the Bureau of Ordnance, 1 Dec 1864 11.30 AM | **N3** (weak: the question is clear in the holder's public transcription; the key supplies Washington, ?, 10, the signer and the time) | unknown | **D2** | 87.5 (7 H of 8; lovely M) | code clause: Federal = 10 and Growl = Washington read passim in this ledger; context (non-statistical, not a check of the values): ORN I/11 Wise's torpedo shipments 3 and 6 Dec 1864; holder 5907 the same address form to Wise |
+| **E229** Sheldon (signed L. F. Shell?) to Maj. Eckert, Washington, 14 Dec 1864 | **N3** | unknown | **D3** | 100 (10 H of 10; Herald plain, "up tooth" M) | code clause: Lester/Lonesome = Foster (also E235, 5900), Question = destroy (5911/7779 "thoroughly destroyed"); external (non-statistical): Evening Star and New-York Daily Tribune 13 Dec 1864 print the despatch E229 denies, claim for claim; image read this session |
+| **E240** Asst. Surg. E. McClellan via Sheldon to Maj. Eckert for Surgeon General Barnes, 30 Sept 1864 6.30 PM | **N3** | unknown | **D3** | 100 (22 H of 22) | code clause: Fortune = Newbern, Fox = Philadelphia, Wilkes = Wounded passim; external (non-statistical): Stanton's bulletin of the same evening (Portland Daily Press 1 Oct 1864 p.3) on yellow fever at Newbern; holder 13059 names Asst. Surg. McClellan of Fort Monroe; image read this session |
+| **E241** Sheldon to Maj. Eckert for Fulton and Craig (Associated Press), Bermuda Hundred report signed J. C. Rowe, 10 May 1864 4.30 PM | **N1** (the plaintext is printed: Daily National Intelligencer, 11 May 1864, p.3, "An Associated Press despatch from Fortress Monroe"; our reading is an independent re-decipherment) | **known** | **D3** | 100 (48 C of 48; Bermuda C) | external (non-statistical): the printed despatch agrees with every code group read (12 = noon, Smith, Beauregard, 3 miles, Petersburg, Richmond, Weldon, North Carolina, 20, Monroe, Captain); "person" plain |
+
+- **E228: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 1 Dec 1864, while the Wilmington expedition was being
+  fitted out at Hampton Roads, a telegram signed in cipher [D. D. Porter] asked Captain H. A. Wise, Chief of the Navy's Bureau of Ordnance, whether
+  the torpedoes at hand were the same as those invented by a Mr. Woods and, if not, for ten of the latter. Not located in the Official Records of the
+  Navies (ser. I vol. 11), the Huntington's full-text search or Butler's correspondence (searched 9 Oct 2026)." Unsafe: "first decipherment",
+  "unpublished", and any statement that the signer is certainly Porter. Depth sentence (mine): "On 1 Dec 1864 Fort Monroe asked the Chief of the
+  Bureau of Ordnance whether the torpedoes on hand were Mr. Woods's design, and if not, for ten of his."
+- **E229: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 14 Dec 1864 the Fort Monroe telegraph office told Major Eckert that the press
+  despatch in the New York Herald of the 13th about General Foster was wrong: up to the 10th Foster had not communicated with Sherman, nor had the
+  Pocotaligo bridge been destroyed. The despatch it contradicts is printed in the Washington Evening Star and the New-York Daily Tribune of 13 Dec
+  1864; this telegram was not located in the Official Records (ser. I vol. 44), the Huntington's full-text search or the press searched (9 Oct
+  2026)." Depth sentence (mine): "On 14 Dec 1864 Fort Monroe warned Eckert that the newspaper story of Foster cutting the Charleston and Savannah
+  railroad at the Pocotaligo bridge and making contact with Sherman was false as of the 10th."
+- **E240: N3.** Safe sentence: "Read at grade H with Cipher No. 1: on 30 Sept 1864 the Fort Monroe medical officer E. McClellan forwarded to the
+  Surgeon General Surgeon D. W. Hand's report that yellow fever was raging violently in Newbern and that Hand was used up, offered all the doctors he
+  could spare though wounded were arriving in large numbers, suggested Dr. William H. Freeman of Philadelphia, experienced in the disease, and
+  reported a rigid quarantine at Fort Monroe. Not located in the Official Records (ser. I vol. 42 pts 2-3), Butler's correspondence, the Huntington's
+  full-text search or the press searched (9 Oct 2026); Stanton's bulletin of the same evening reports the epidemic in other words." Depth sentence
+  (mine): "On 30 Sept 1864, with yellow fever raging at Newbern and its surgeon exhausted, Fort Monroe asked the Surgeon General for help and proposed
+  Dr. William H. Freeman of Philadelphia."
+- **E241: N1.** Safe sentence: "The plaintext is printed as an Associated Press despatch from Fortress Monroe in the Daily National Intelligencer of
+  11 May 1864, p.3; our reading of the Fort Monroe ledger's cipher copy with Cipher No. 1 agrees with that print in every code word and adds the
+  operator's tail (signed J. C. Rowe; Sheldon offering the list of wounded)." Unsafe: anything implying the content was unknown. Depth sentence (mine):
+  "On 10 May 1864 Fort Monroe sent the press agents in cipher the report that Heckman's brigade had fought Beauregard to within three miles of
+  Petersburg and that Kautz had cut the Weldon railroad at Hicksford." Not queued for a second opinion (N1).
+
+### 5. Postmortem
+FM-R3b and FM-R3d read all four soundly in substance; slips are decoder-level. (1) **E241 was in the press of the next day**: an entry addressed
+"for" two private names at a news hour ("Fulton and Craig", like 5662's "for Samuel Wilkeson, Tribune rooms") is a press telegram, and the next
+day's Washington and New York papers are its first print lead -- one Chronicling America query on a rare plain word (Hicksford, 10-20 May) found it.
+Readers of Fort Monroe entries addressed to press agents should run that query before filing. (2) A numeral or blind code word that is also an
+English word (Person = 5, Herald = Ewell, Wise = blind) was decoded where the sentence needs the English word: E241 "in person", E229 "Herald",
+E228 "wise". (3) E240 "peken" is a transcription slip for "pekin" (comma), visible on the image. Corrections for a FIX worker (decode.py entry
+notes; reading.md is the decoder's, rule 7; not applied here): E241 `plain: person`, Bermuda gloss to C; E229 `plain: herald`; E228 `plain: wise`;
+E240 `variant: peken=pekin` (image) and the image's "Barnes".
+Requests: hdl.huntington.org 14 (one token block, 04:00-04:01 UTC, 3.2 s apart); archive.org 4 (djvu downloads); be-api 7 (1.6 s apart, no 502);
+Google Books 1 (429, stopped); loc.gov 15 (searches and OCR texts, 2-3 s apart; one HTTP/2 stream reset, retried once with --http1.1).
