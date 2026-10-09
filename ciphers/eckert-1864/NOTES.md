@@ -3605,3 +3605,20 @@ Key-row effect on the totals line: H 4527, C 39, I 25, M 35, U 10 -> H 4499, C 3
 Propagated (rule 10): status.json rows (E100 E143 E256 E262 E290 E293, tulip rows E9 E170 E175 E230 E283 E284 E289: completeness / depth_note / unresolved_spans text now S, depth and class untouched: they are the verifiers'); second-opinions PROMPT-chatgpt-e262, -e289 (grade words) and -e307 (sender); AUDIT.md closing note. The FV-FM9 status rows and prompts for E291 E292 E299-E306 E308 E309 already carried the corrected words. Not decoded: leads row 5783/0 (E292's page) and row 5786/1 (E309's page).
 
 Checks: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current", exit 0 after `--write`; `decode_no2.py --check` and `decode_no9.py --check` exit 0; `tools/depth_check.py` exit 0 (no eckert-1864 line); `tools/file_shrink_guard.py` below.
+
+## FIX-FM11 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM11, 16:4x UTC by `date -u`, offline. Carries AUDIT (FV-FM9e) s.5 (E310-E313) and the reading corrections of AUDIT 2 (AUD2-LEDGER-22 .. -25) into ciphertext.txt as note lines/headers; reading.md is decode.py output. AUD2-LEDGER-22 (E291/E292), -23 (E302) and -25 (E307/E309) name no reading correction beyond what FIX-FM10 landed; the E305/E306 corrections are AUD2-LEDGER-24's. Classes and depths untouched (the verifiers'); key.md, the Tulip/Whiskey rows and key rows untouched.
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| E305 | `plain: wilson` dropped: Wilson (R) = West (key.md p.24 l.17), so "Wilson point" and "wilson vernon" read West Point; header "Wilson's Point" -> West Point | H 19 -> H 21 |
+| E306 | `whites` back on the key (White = Report + s = reports), `white` stays plain (White House) | H 30, C 1 -> H 31, C 1 |
+| E310 | header: Butler (by Sheldon) to Maj. Gen. Lew Wallace via Baldwin, passed Washington 11.15 PM, clear copy 10291; `gloss: season=Maj_Gen_Lew_Wallace:C` (reader's U lifted); `gloss: webster=Stop:C` (first Webster is a stop, body no longer cut at "Department"; the signature now opens the tail at the real [signed]); "correspond aunt" = correspondent noted plain | H 14 -> H 13, C 2 |
+| E311 | `gloss: georgia=Suffolk:C` (M -> C by clear copy 10193); header: received Washington 10.44 PM, clear copy 10193 | H 9 -> H 8, C 1 |
+| E312 | note: "while horse wilby" = White House will be (phonetic plain), sum/live/paws plain, first-clause U lifted; header: answers E306 | H 2 |
+| E313 | none (as the audit) | H 3 |
+
+The audits count every code group of E310/E311 as C from the clear copy; the decoder regrades only the two glossed tokens each (season, Webster; Georgia), the rest stay H as in FIX-FM10 (the C/H split differs where an audit counts clear-copy C, not regraded here). Propagation (rule 10): status.json rows 293/294 (E305/E306) and second-opinions PROMPT-chatgpt-e305/-e306 already carry the corrected words and counts (AUD2-LEDGER-24 wrote them); counts now agree with the decoder (21; 31+1). E310-E313 are N1 with no status.json row or SO prompt. FM-R7a "Remaining gaps" E310/E312 first clauses: closed by FV-FM9e s.3.
+
+Checks: `python3 ciphers/eckert-1864/decode.py --write` then `--check` -> "reading.md is current", exit 0; `decode_no2.py --check` and `decode_no9.py --check` exit 0; `tools/depth_check.py` exit 0.

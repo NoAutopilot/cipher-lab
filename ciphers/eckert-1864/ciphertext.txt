@@ -3203,7 +3203,7 @@ plain: black darling apple person
 variant: wadge=Wedge
 note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9c s.5): three lines corrected from the page image (Wadge = Wedge, Today; "and" for the marginal count 14; "zodiac ... Whist" restored); the marginal 14 is a count, not text. Clear copy received 4.55 PM.
 
-### E305 | Page 196 | 5740 | mssEC 25 (obj 5952, pointer 5740), 12 June 1864 Washington, T. T. Eckert to G. D. Sheldon Ft Monroe: cannot save all the wire between White House and Wilson's Point, cut it up, cable at West Point to be taken up (FM-R6b; row 5740/0; page image checked on the first strip (8 lines) at 2400 px)
+### E305 | Page 196 | 5740 | mssEC 25 (obj 5952, pointer 5740), 12 June 1864 Washington, T. T. Eckert to G. D. Sheldon Ft Monroe: cannot save all the wire between White House and West Point, cut it up, cable at West Point to be taken up unless West Point is to be held (FM-R6b; FIX-FM11: Wilson = West, AUD2-LEDGER-24; row 5740/0; page image checked on the first strip (8 lines) at 2400 px)
 Geo D Sheldon
 Ft Monroe
 Your pembroke rec'd unity I C that it wilby
@@ -3225,9 +3225,8 @@ occupies waxy side Bergen unity glad to know youve
 found shorter & more direct rout peasant Blubber zebra
 sorry whether has prevented your getting cable OK K
 T. T. Eckert
-plain: wilson
 plain: white
-note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9c s.5): white (House) plain.
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9c s.5): white (House) plain. FIX-FM11 (9 Oct 2026, AUDIT 2 AUD2-LEDGER-24 s.2/s.4): the `plain: wilson` note is dropped; key.md p.24 l.17 Wilson (R) = West (H), so line 2 'Wilson point' and line 11 'wilson vernon' read West Point (E214's pattern; Plum vol. 2 p.136, OR I/36 pt 3 p.262).
 
 ### E306 | Page 200 | 5744 | mssEC 25 (obj 5952, pointer 5744), 13 June 1864 Ft Monroe, Sheldon to Maj. Eckert: Butler can only protect the line from City Point to Fort Powhatan; Bickford to close out the White House line; Abercrombie wants the office kept open (FM-R6b; row 5744/1; page image checked on one strip (8 lines) at 2400 px)
 Maj Eckert Di
@@ -3248,8 +3247,8 @@ about plug spoon long is tarquin at blubber zebra Bickford
 whites that Johns snake are removed and his last plank
 orderlies have been unable to find them and come back <del>16</del>
 Geo D Sheldon
-plain: white whites
-note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9c s.5): white plain (White House, written "horse" after it); whites plain (writes); closing 16 is a marginal count, struck from the reading.
+plain: white
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9c s.5): white plain (White House, written "horse" after it); FIX-FM11 (9 Oct 2026, AUD2-LEDGER-24 s.2/s.4): `whites` is back on the key, White (= Report, H, p.23 l.12) + s = reports, contrary to FV-FM9c s.5; closing 16 is a marginal count, struck from the reading.
 
 ### E307 | Page 233 | 5777 | mssEC 25 (obj 5952, pointer 5777), 9 Aug 1864 Ft Monroe, J. R. Gilmore (Newbern, 6 Aug 1864 4 PM) to Maj. Eckert, sent on from Fort Monroe 9 Aug by Sheldon: news of the Chambersburg burning, asks leave of about a week or two, Mack Gaughey to take charge (continues on pointer 5778) (FM-R6c; row 5777/2; image-read at 2400 px)
 Maj. Eckert Washington
@@ -3392,7 +3391,7 @@ Caldwell
 plain: anchors
 note: FM-R7b: anchors is plain English where the key gives Donelson; signature Caldwell plain; first 7 lines image-read.
 
-### E310 | Page 100 | 5644 | mssEC 25 (obj 5952, pointer 5644), 1 May 1864 Ft Monroe, Sheldon to G. W. Baldwin, Hd Qrs Baltimore: W. W. Shore, correspondent of the World at Baltimore and from Monroe, sent away from the Department, to be arrested (sibling of pointer 5656, 5 May) (FM-R7a; row 5644/1; image-read at 2400 px)
+### E310 | Page 100 | 5644 | mssEC 25 (obj 5952, pointer 5644), 1 May 1864 Ft Monroe, Maj. Gen. B. F. Butler (by Sheldon) to Maj. Gen. Lew Wallace via G. W. Baldwin, Hd Qrs Baltimore (passed Washington 11.15 PM): W. W. Shore, correspondent of the World at Baltimore and from Monroe, sent away from the Department, to be arrested (clear copy pointer 10291; sibling of pointer 5656, 5 May) (FM-R7a; FIX-FM11, AUDIT FV-FM9e s.3/s.5; row 5644/1; image-read at 2400 px)
 Ft Monroe May 1 . 1864
 G. W. Baldwin Hd Qrs Baltimore
 for season unity correspond aunt torch France world at
@@ -3403,9 +3402,10 @@ have found Stephen garden papers that his articles are
 giving aid & comfort to the Rome Youth Knave
 Geo D Sheldon
 plain: world
-note: FM-R7a: 'world' is plain English (pointer 5656 writes 'Corresp't of the world' plain); the key row world = Valley does not apply. season/aunt unread, U.
+gloss: season=Maj_Gen_Lew_Wallace:C webster=Stop:C
+note: FM-R7a: 'world' is plain English (pointer 5656 writes 'Corresp't of the world' plain); the key row world = Valley does not apply. FIX-FM11 (9 Oct 2026, AUDIT FV-FM9e s.3): season = Maj. Gen. Lew Wallace (the 17 Mar 1864 key supplement of E168, 'Season [and] Submit for [Maj Gen] Lewis Wallace'; clear copy 10291 'For Gen Liu Wallace'), C, the reader's U lifted; the one Webster (line 4, 'this quadroon Webster please') stands where the clear copy has '----', a stop, not [signed], so the body is no longer cut at Department; 'correspond aunt' = correspondent (phonetic split, plain). Every code group is C from the clear copy (10291); the decoder grades the unglossed ones H as before.
 
-### E311 | Page 37 | 5581 | mssEC 25 (obj 5952, pointer 5581), 9 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert: our outpost near Suffolk evacuated in a hurry and retreated to Bowers Hill, Homans left his key behind (FM-R7a; row 5581/1; image-read at 2400 px)
+### E311 | Page 37 | 5581 | mssEC 25 (obj 5952, pointer 5581), 9 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert: our outpost near Suffolk evacuated in a hurry and retreated to Bowers Hill, Homans left his key behind (received Washington 10.44 PM; clear copy pointer 10193) (FM-R7a; row 5581/1; image-read at 2400 px)
 Ft. Monroe Mar 9th 1864
 Maj Eckert Di
 Our Turtle near Georgia was relayed in
@@ -3415,9 +3415,10 @@ I sent him another unity It is
 not thought the ridge will oats the
 present Venus have not heard Homans yet
 Geo D Sheldon
-note: FM-R7a: Turtle and warwicked decode as outpost and retreated; Georgia = Suffolk is M.
+gloss: georgia=Suffolk:C
+note: FM-R7a: Turtle and warwicked decode as outpost and retreated; Georgia = Suffolk was M. FIX-FM11 (9 Oct 2026, AUDIT FV-FM9e s.3/s.5): Georgia = Suffolk lifted M -> C by the clear copy (pointer 10193, 'Our outpost near Suffolk'); every code group agrees with it (the ledger image reads Homans, the holder's clear book Hornans).
 
-### E312 | Page 202 | 5746 | mssEC 25 (obj 5952, pointer 5746), 13 June 1864 Washington, Eckert to Sheldon at Ft Monroe: office kept open for some days, the line cannot be taken down, hold the building party ready to go to Jamestown, work on the south side of the river (FM-R7a; row 5746/1; image-read at 2400 px)
+### E312 | Page 202 | 5746 | mssEC 25 (obj 5952, pointer 5746), 13 June 1864 Washington, Eckert to Sheldon at Ft Monroe: office kept open for some days, the line cannot be taken down, hold the building party ready to go to Jamestown, work on the south side of the river; answers E306 (FM-R7a; row 5746/1; image-read at 2400 px)
 Washington June 13 . 1864
 Geo D Sheldon Ft Monroe
 office at while horse wilby kept open for sum days
@@ -3425,7 +3426,7 @@ yet & the live can not be taken down till
 then paws hold the building party ready to go to
 Jamestown for work on waxend side of windpipe End end
 Thos T. Eckert
-note: FM-R7a: 'while horse wilby' (White House will be?) and 'waxend/windpipe' read South/River in No. 1; South side of River is M; the first clause is unread, U.
+note: FM-R7a: 'while horse wilby' (White House will be?) and 'waxend/windpipe' read South/River in No. 1; South side of River is M. FIX-FM11 (9 Oct 2026, AUDIT FV-FM9e s.3): 'while horse wilby' is phonetic plain, White House will be (the same clerk's 'while horse' in E216 the same day; wilby = will be in E190, E270, E309); sum = some, live = line (the dot is doubtful, either way plain), paws a stop word (plain); the reader's U on the first clause is lifted; it answers E306 (Abercrombie wants the White House office kept open).
 
 ### E313 | Page 116 | 5660 | mssEC 25 (obj 5952, pointer 5660), 10 May 1864 Washington, Eckert to R. O'Brien at Bermuda Landing: your ciphers come here untimed and with important words open, use arbitrary words, never leave out the time, punctuate carefully (FM-R7a; row 5660/2; image-read at 2400 px)
 Washington May 10 1864

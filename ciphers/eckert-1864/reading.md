@@ -1619,17 +1619,17 @@ from [Maj Gen B. F. Butler]'s [Head Quarters] {date: May 9} [By the way of] [Mon
 
 Code-word tokens: H 103.
 
-**E305 | Page 196 | 5740 | mssEC 25 (obj 5952, pointer 5740), 12 June 1864 Washington, T. T. Eckert to G. D. Sheldon Ft Monroe: cannot save all the wire between White House and Wilson's Point, cut it up, cable at West Point to be taken up (FM-R6b; row 5740/0; page image checked on the first strip (8 lines) at 2400 px)**
+**E305 | Page 196 | 5740 | mssEC 25 (obj 5952, pointer 5740), 12 June 1864 Washington, T. T. Eckert to G. D. Sheldon Ft Monroe: cannot save all the wire between White House and West Point, cut it up, cable at West Point to be taken up unless West Point is to be held (FM-R6b; FIX-FM11: Wilson = West, AUD2-LEDGER-24; row 5740/0; page image checked on the first strip (8 lines) at 2400 px)**
 
-Ft Monroe Your [Cipher] rec'd [.] I C that it wilby impossible to save all the wire between white house and Wilson point let break ford save what he can and [Destroy (-ed, -ing)]'s the rest by Cutting it into as many pieces as possible with axes or otherwise as be or you may think best doing it as rapidly possible to enable him to [Join (-ed, -ing)] [Force] at Jamestown [.] cable at [West] [Point] should b taken up & line from there to gloster saved unless its decided that wilson [Point] is toby held of this you wilby advised from here or can barn from telegrams passing through your office [.] in any event act upon your own judgment [.] will arrange to have a sufficient [Guard (-ed, -ing)] & escort but there wilby no trouble from guerillas after the [Army] occupies [South] side [James] [.] glad to know youve found shorter & more direct rout [By the way of] [City Point] [.] sorry whether has prevented your getting cable OK K T. T. Eckert
+Ft Monroe Your [Cipher] rec'd [.] I C that it wilby impossible to save all the wire between white house and [West] point let break ford save what he can and [Destroy (-ed, -ing)]'s the rest by Cutting it into as many pieces as possible with axes or otherwise as be or you may think best doing it as rapidly possible to enable him to [Join (-ed, -ing)] [Force] at Jamestown [.] cable at [West] [Point] should b taken up & line from there to gloster saved unless its decided that [West] [Point] is toby held of this you wilby advised from here or can barn from telegrams passing through your office [.] in any event act upon your own judgment [.] will arrange to have a sufficient [Guard (-ed, -ing)] & escort but there wilby no trouble from guerillas after the [Army] occupies [South] side [James] [.] glad to know youve found shorter & more direct rout [By the way of] [City Point] [.] sorry whether has prevented your getting cable OK K T. T. Eckert
 
-Code-word tokens: H 19.
+Code-word tokens: H 21.
 
 **E306 | Page 200 | 5744 | mssEC 25 (obj 5952, pointer 5744), 13 June 1864 Ft Monroe, Sheldon to Maj. Eckert: Butler can only protect the line from City Point to Fort Powhatan; Bickford to close out the White House line; Abercrombie wants the office kept open (FM-R6b; row 5744/1; page image checked on one strip (8 lines) at 2400 px)**
 
-[Maj Gen B. F. Butler] says can only protect line from [City Point] to [Fort] how patton at present but can protects rest very soon [.] from indications it is very important that line be built to that [Point] immed'y [,] I have therefore asked Bickford to send Perkins and party direct to Burr Moody [100] to [Report] to OBrien [,] also [2] operators [.] Bickford to remain and take charge of closing out that line Mack and party to do the work. [.] [General] Abercrombie wishes white horse office kept open till [P. H. Sheriden] and [Maj. Gen. David Hunter] arrive there which will be within [3] days probably [Tomorrow] night [.] I think it will all come out right as circumstances will allow [,] teams and a good [Guard (-ed, -ing)] left [Yorktown] this morning for [West] [Point] a cabal about [1] [Mile] long is [Necessary] at [City Point] [.] Bickford whites that [Maj Genl U.S. Grant]'s [Head Quarters] are removed and his last [2] orderlies have been unable to find them and come back Geo D Sheldon
+[Maj Gen B. F. Butler] says can only protect line from [City Point] to [Fort] how patton at present but can protects rest very soon [.] from indications it is very important that line be built to that [Point] immed'y [,] I have therefore asked Bickford to send Perkins and party direct to Burr Moody [100] to [Report] to OBrien [,] also [2] operators [.] Bickford to remain and take charge of closing out that line Mack and party to do the work. [.] [General] Abercrombie wishes white horse office kept open till [P. H. Sheriden] and [Maj. Gen. David Hunter] arrive there which will be within [3] days probably [Tomorrow] night [.] I think it will all come out right as circumstances will allow [,] teams and a good [Guard (-ed, -ing)] left [Yorktown] this morning for [West] [Point] a cabal about [1] [Mile] long is [Necessary] at [City Point] [.] Bickford [Report]'s that [Maj Genl U.S. Grant]'s [Head Quarters] are removed and his last [2] orderlies have been unable to find them and come back Geo D Sheldon
 
-Code-word tokens: H 30, C 1.
+Code-word tokens: H 31, C 1.
 
 **E307 | Page 233 | 5777 | mssEC 25 (obj 5952, pointer 5777), 9 Aug 1864 Ft Monroe, J. R. Gilmore (Newbern, 6 Aug 1864 4 PM) to Maj. Eckert, sent on from Fort Monroe 9 Aug by Sheldon: news of the Chambersburg burning, asks leave of about a week or two, Mack Gaughey to take charge (continues on pointer 5778) (FM-R6c; row 5777/2; image-read at 2400 px)**
 
@@ -1673,19 +1673,19 @@ I think cab bell should be laid on [North] side of [River] as it will take less 
 
 Code-word tokens: H 3.
 
-**E310 | Page 100 | 5644 | mssEC 25 (obj 5952, pointer 5644), 1 May 1864 Ft Monroe, Sheldon to G. W. Baldwin, Hd Qrs Baltimore: W. W. Shore, correspondent of the World at Baltimore and from Monroe, sent away from the Department, to be arrested (sibling of pointer 5656, 5 May) (FM-R7a; row 5644/1; image-read at 2400 px)**
+**E310 | Page 100 | 5644 | mssEC 25 (obj 5952, pointer 5644), 1 May 1864 Ft Monroe, Maj. Gen. B. F. Butler (by Sheldon) to Maj. Gen. Lew Wallace via G. W. Baldwin, Hd Qrs Baltimore (passed Washington 11.15 PM): W. W. Shore, correspondent of the World at Baltimore and from Monroe, sent away from the Department, to be arrested (clear copy pointer 10291; sibling of pointer 5656, 5 May) (FM-R7a; FIX-FM11, AUDIT FV-FM9e s.3/s.5; row 5644/1; image-read at 2400 px)**
 
-G. W. Baldwin Hd Qrs Baltimore for season [.] correspond aunt [Of the] [New York] world at [Baltimore] and also from [Monroe] is W W Shore whom I sent away from this [Department]  {tail: [signed] please [Arrest (-ed, -ing)] him & send him to me [,] I have found [In the] [Richmond] papers that his articles are giving aid & comfort to the [Enemy] [signed] [Maj Gen B. F. Butler] Geo D Sheldon}
+G. W. Baldwin Hd Qrs Baltimore for [Maj Gen Lew Wallace] [.] correspond aunt [Of the] [New York] world at [Baltimore] and also from [Monroe] is W W Shore whom I sent away from this [Department] [Stop] please [Arrest (-ed, -ing)] him & send him to me [,] I have found [In the] [Richmond] papers that his articles are giving aid & comfort to the [Enemy]  {tail: [signed] [Maj Gen B. F. Butler] Geo D Sheldon}
 
-Code-word tokens: H 14.
+Code-word tokens: H 13, C 2.
 
-**E311 | Page 37 | 5581 | mssEC 25 (obj 5952, pointer 5581), 9 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert: our outpost near Suffolk evacuated in a hurry and retreated to Bowers Hill, Homans left his key behind (FM-R7a; row 5581/1; image-read at 2400 px)**
+**E311 | Page 37 | 5581 | mssEC 25 (obj 5952, pointer 5581), 9 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert: our outpost near Suffolk evacuated in a hurry and retreated to Bowers Hill, Homans left his key behind (received Washington 10.44 PM; clear copy pointer 10193) (FM-R7a; row 5581/1; image-read at 2400 px)**
 
 Maj Eckert Di Our [Out post] near [Suffolk] was [Evacuate (-ed, -ing) - ion]ed in a hurry [Today] and [Retreat]ed to Bowers hill Homans left his Key behind and I sent him another [.] It is not thought the [Enemy] will [Attack (-ed, -ing)] the present [Position] have not heard Homans yet Geo D Sheldon
 
-Code-word tokens: H 9.
+Code-word tokens: H 8, C 1.
 
-**E312 | Page 202 | 5746 | mssEC 25 (obj 5952, pointer 5746), 13 June 1864 Washington, Eckert to Sheldon at Ft Monroe: office kept open for some days, the line cannot be taken down, hold the building party ready to go to Jamestown, work on the south side of the river (FM-R7a; row 5746/1; image-read at 2400 px)**
+**E312 | Page 202 | 5746 | mssEC 25 (obj 5952, pointer 5746), 13 June 1864 Washington, Eckert to Sheldon at Ft Monroe: office kept open for some days, the line cannot be taken down, hold the building party ready to go to Jamestown, work on the south side of the river; answers E306 (FM-R7a; row 5746/1; image-read at 2400 px)**
 
 Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on [South] side of [River] End end Thos T. Eckert
 
@@ -1709,5 +1709,5 @@ Maj Eckert Di flag ship agawam Farrars [Inland [sic: Island]] {date: June 13} {t
 
 Code-word tokens: H 16.
 
-Totals over the 263 entries: H 4499, C 39, I 25, M 33, S 17, U 10.
+Totals over the 263 entries: H 4500, C 42, I 25, M 33, S 17, U 10.
 <!-- decode.py: derived block ends -->
