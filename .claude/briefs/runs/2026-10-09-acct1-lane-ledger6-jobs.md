@@ -68,3 +68,34 @@ control (fortmonroe/fm_control.py method), and report per row: share of words th
 and arbitrary words give sense. A clear win (No. 9 reads, control does not) -> HYPOTHESES.md row and NOTES "## NO9-KEY" naming the rows ready for readers
 (IDs not filed; readings are a later reader's job). No win -> say which book is missing and stop. Also the CONTENTdm clear-copy search first for these 5
 rows (a clear copy at another pointer gives a known-plaintext check of No. 9 itself -- use it). hdl token rules apply.
+
+---
+
+# Wave 2 (written 9 Oct 2026 14:2x UTC; seven_day allowed_warning on every session, continuing per lane-common-blast)
+By get_session: FV-FM9a 5.19 (E299 N1; E291 N3 D2, E292 N3 D3; AUD2-LEDGER-22), FIX-FM9 1.31, KEY-TW 2.48 (Tulip=stop 9/9 vs 1/9, whiskey=Troops 7/7 vs 1/7,
+proposed at S, not applied), FM-R6a 1.71 (E300-E303), FM-R6b 3.48 (E304-E306), FM-R6c 3.63 (E307-E309), NO9-KEY 2.46 (No. 9 wins on 5570/0 only; 5581/1
+5746/1 read in No. 1; May-June rows labelled 9 were not No. 9). Wave 1 total 20.26.
+
+## FV-FM9b, FV-FM9c, FV-FM9d (Opus 5.5, first verifiers; cap $6, $6, $5; box 90 min each)
+Exactly "## FV-FM9a" above (= FV-FM8 method; the all-pointer CONTENTdm clear-copy search FIRST; eye-check every graded line on crops). AUDIT.md headings
+"## AUDIT (FV-FM9b)" etc.; on N3+ D2+ append WORK-QUEUE `AUD2-LEDGER-23` (FV-FM9b), `-24` (FV-FM9c), `-25` (FV-FM9d) (account-3, Opus 5.5, cap 2.5 per
+entry), named in ROOM for the account-3 VERIFY lane. Reading fixes go in AUDIT s.5 for FIX-FM10, not into the reading. Unit ~1.4 per entry (long entries 2).
+- FV-FM9b: E300, E301 (reader found holder clear copy 10435 p.293: confirm word by word, N1 if the same telegram), E302, E303 (NOTES "## FM-R6a"; E300/E301
+  print leads ORN I/9, I/10, OR I/33, Butler IV, pages not located by the reader).
+- FV-FM9c: E304 (clear copy 4610-4611 + NY Daily Tribune 11 May 1864 p.1 per the reader), E305, E306 (NOTES "## FM-R6b"; image check was partial).
+- FV-FM9d: E307, E308 (clear copy 4607, obj 4849 p.166), E309 (NOTES "## FM-R6c"; pointer 5778 tail not eye-checked).
+
+## FM-R7a, FM-R7b (Sonnet 5.5, readers; cap $5, $5.5; box 120 min each): the last unbriefed clean 1864 Fort Monroe rows
+Method exactly "## FM-R6a, FM-R6b, FM-R6c" above. NO9-KEY (NOTES "## NO9-KEY") found the May-June rows FM-PRE labelled 9 read in No. 1: for every row below,
+paste the HEAD share scorer for No. 1 / No. 2 / No. 9 and decode under the book whose decode gives sense (decode.py / decode_no2.py / decode_no9.py); a row
+no book reads is recorded "no book in hand", not forced. File No. 1 rows as E-IDs in ciphertext.txt, No. 2 rows as N2- IDs in ciphertext-no2.txt (next free
+letter after the last filed), following each file's existing header format. Mechanical grep (14:2x UTC) found these clean 1864 rows not yet named anywhere:
+- FM-R7a (about 8 units): 5644/1 (61 w, No. 1), 5581/1 and 5746/1 (No. 1 per NO9-KEY), 5660/2 (48 w), 5666/1 (92 w), 5750/1 (51 w), 5771/1 (105 w) -- E-IDs
+  from E310.
+- FM-R7b (about 8 units): 5639/2 (205 w), 5709/1 (121 w), and the No. 2 rows 5648/2 (80 w), 5695/2 (78 w), 5702/0 (127 w), 5782/0 (48 w) -- E-IDs from E318,
+  N2 IDs from the next free letter.
+
+## NO9-R1 (Sonnet 5.5, reader; cap $3, box 90 min): the No. 9 rows NO9-KEY found readable
+5570/0, 5570/1, 5570/2 (and 5576/1 partial) per NOTES "## NO9-KEY" (no9_key.py, key-no9.md). Method as the readers above, with decode_no9.py and the file's
+own ID convention in ciphertext-no9.txt (create the first header in the format of ciphertext-no2.txt if the file is empty). key-no9.md is a sample table:
+untabled words are graded U/M with the reason, never guessed into the key; name the mssEC 67 pages a later job must read for them. Clear-copy search first.
