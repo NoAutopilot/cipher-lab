@@ -1,0 +1,187 @@
+passage	pos	sign_id	alt	conf	note
+L07	1	T90		H	line start
+L07	2	T86		H	
+L07	3	T60		H	
+L07	4	T18		H	
+L07	5	T86		H	
+L07	6	T60		M	three-bar hash, T60
+L07	7	T63		H	
+L07	8	T19		H	
+L07	9	T90		H	
+L07	10	T83		H	
+L07	11	T80		H	
+L07	12	T76		H	
+L07	13	T27		H	
+L07	14	T96		H	
+L07	15	T90		H	
+L07	16	T37		H	
+L07	17	T58		H	
+L07	18	T54		H	
+L07	19	T86		H	
+L07	20	T60		H	
+L07	21	T53		H	
+L07	22	T86		M	T86 with interlinear S-like curl above (not counted separately)
+L07	23	T18		H	
+L07	24	T85		H	
+L07	25	T64		M	m with superscript a and dot (m.a), read as T64
+L07	26	T37		H	
+L07	27	T36		H	
+L07	28	T85		H	
+L07	29	T92	T29	L	omega joined to theta, read as two signs
+L07	30	T37		M	theta joined to preceding omega; line end
+L08	1	T63		H	line start
+L08	2	T86		H	
+L08	3	T17		L	t-like shape, nearest T17
+L08	4	T45		H	
+L08	5	T17		L	t-like shape, nearest T17
+L08	6	T19		H	
+L08	7	T83		H	
+L08	8	T85		H	
+L08	9	T60		H	
+L08	10	T92		H	
+L08	11	T80		H	
+L08	12	T64		M	m with dot above
+L08	13	T37		H	
+L08	14	T33		H	
+L08	15	T45		H	
+L08	16	T60		H	
+L08	17	T18		H	
+L08	18	T19		H	
+L08	19	T25		H	
+L08	20	T51	T56	L	p-like with two crossbars below stem
+L08	21	T36		H	
+L08	22	T85		H	
+L08	23	T98		H	
+L08	24	T65		H	
+L08	25	T45		H	
+L08	26	T64		M	m with superscript a and dot
+L08	27	T55		H	
+L08	28	T18		H	
+L08	29	T96		H	
+L08	30	T11	T46	M	85 numeral, no tick visible; line end
+L09	1	T29		H	line start
+L09	2	T84		H	
+L09	3	T18		H	
+L09	4	T96		H	
+L09	5	T83		H	
+L09	6	T37		H	
+L09	7	T33		H	
+L09	8	T86		H	
+L09	9	T64		M	m with superscript a and dot
+L09	10	T52		M	n-like with 3 tail below
+L09	11	T60		H	
+L09	12	T45		H	
+L09	13	T64		M	m with superscript a and dot
+L09	14	T86		H	
+L09	15	T54		H	
+L09	16	T37		H	
+L09	17	T60		H	
+L09	18	T80		H	
+L09	19	T19		M	pi with comma below
+L09	20	T49		H	
+L09	21	T86		H	
+L09	22	T58		H	
+L09	23	T85		H	
+L09	24	T90		H	
+L09	25	T25		H	
+L09	26	T33		H	
+L09	27	T90		H	
+L09	28	T37		H	
+L09	29	T97	X_NEW	L	small 3/z-shaped mark at line end, cramped; line end
+L10	1	T53		H	line start
+L10	2	T86		H	
+L10	3	T18		H	
+L10	4	T76	T26	M	bold 9 with long tail
+L10	5	T92		H	
+L10	6	T19		H	
+L10	7	T58		H	
+L10	8	T18		H	
+L10	9	T85		H	
+L10	10	T53		H	
+L10	11	T96		H	
+L10	12	T98		H	
+L10	13	T55		H	
+L10	14	T60		H	
+L10	15	T55		H	
+L10	16	T15	T11	M	89 numeral
+L10	17	T86		H	
+L10	18	T70		H	
+L10	19	T58		H	
+L10	20	T96		H	
+L10	21	T60		M	hash with extra stroke through
+L10	22	T45		H	
+L10	23	T90		H	
+L10	24	T33		H	
+L10	25	T19		H	
+L10	26	T24		H	
+L10	27	T37		H	
+L10	28	T83		H	
+L10	29	T45		H	
+L10	30	T18		H	
+L10	31	T96		H	
+L10	32	T19		L	tiny pi at gutter edge; line end
+L11	1	T89		H	line start
+L11	2	T33		H	
+L11	3	T19		H	
+L11	4	T51	T56	L	p-like with two crossbars below
+L11	5	T76	T26	L	q-like with foot
+L11	6	T92		H	
+L11	7	T45		H	
+L11	8	T60		H	
+L11	9	T10		H	
+L11	10	T85		H	
+L11	11	T56		H	
+L11	12	T37		H	
+L11	13	T33		H	
+L11	14	T45		H	
+L11	15	T83		H	
+L11	16	T86		H	
+L11	17	T80		H	
+L11	18	T19		H	
+L11	19	T24		H	
+L11	20	T19		H	
+L11	21	T83		H	
+L11	22	T17		H	
+L11	23	T37		H	
+L11	24	T63		H	
+L11	25	T80		H	
+L11	26	T90		H	
+L11	27	T55		H	
+L11	28	T53		H	
+L11	29	T86		H	
+L11	30	T83		H	
+L11	31	T51	T56	L	p-like with crossbars below, ligatured to preceding sign
+L11	32	T96		H	line end
+L12	1	T97		H	line start
+L12	2	T96		H	
+L12	3	T54		H	
+L12	4	T45		H	
+L12	5	T51		M	interlinear insertion above R/o, p with crossbars
+L12	6	T63		H	
+L12	7	T96		H	
+L12	8	T37		H	
+L12	9	T97		H	
+L12	10	T86		H	
+L12	11	T26	T76	M	gj with dot
+L12	12	T19		H	
+L12	13	T86		H	
+L12	14	T60		H	
+L12	15	T86		H	
+L12	16	T36		H	
+L12	17	T45		H	
+L12	18	T57		H	
+L12	19	T37		H	
+L12	20	T83		H	
+L12	21	T80		H	
+L12	22	T19		H	
+L12	23	T89		H	
+L12	24	X_A		M	capital A with cross stroke
+L12	25	T98		H	
+L12	26	T45		H	
+L12	27	T33		H	
+L12	28	T19		H	
+L12	29	T51	T56	L	p-like with two crossbars below
+L12	30	T45		H	
+L12	31	T37		H	
+L12	32	T57		H	
+L12	33	T96		H	line end
