@@ -1,0 +1,45 @@
+control	arm	N	K	seed	draw	restarts	locked_share	unlocked_positions	recovery	note
+K1	lock	6 leaf streams	49	1	a	32	-	-	1	planted a true u: consensus u (6/6, votes {'u': 6}) dL4 0.13177 null p95 0.07439 -> recovered
+K1	lock	6 leaf streams	49	1	p	32	-	-	1	planted p true c: consensus c (6/6, votes {'c': 6}) dL4 0.07111 null p95 0.03316 -> recovered
+K1	lock	6 leaf streams	49	1	d	32	-	-	1	planted d true n: consensus n (6/6, votes {'n': 6}) dL4 0.07752 null p95 0.04260 -> recovered
+K1	summary	-	-	-	-	32	-	-	3/3	GATE PASS (gate 3/3; local C1161-LOLO 3/3); free signs differing from key.tsv per leaf: 14 14 13 13 19 16
+K2-cal	B	150	35	1	0	8	0.300	105	0.0950	N calibration (blind, same positions)
+K2-cal	B	150	35	2	0	8	0.307	104	0.8080	N calibration (blind, same positions)
+K2-cal	B	150	35	3	0	8	0.313	103	0.5630	N calibration (blind, same positions)
+K2	A	150	35	1	0	8	0.300	105	0.9330	
+K2	A	150	35	2	0	8	0.307	104	0.8080	
+K2	A	150	35	3	0	8	0.313	103	0.7770	
+K2	A	150	35	1	1	8	0.300	105	0.9330	
+K2	A	150	35	2	1	8	0.320	102	0.8530	
+K2	A	150	35	3	1	8	0.327	101	0.5940	
+K2	A	150	35	1	2	8	0.347	98	0.9290	
+K2	A	150	35	2	2	8	0.333	100	0.8700	
+K2	A	150	35	3	2	8	0.307	104	0.7790	
+K2	B	150	35	1	0	8	0.300	105	0.0950	
+K2	B	150	35	2	0	8	0.307	104	0.8080	
+K2	B	150	35	3	0	8	0.313	103	0.5630	
+K2	B	150	35	1	1	8	0.300	105	0.1050	
+K2	B	150	35	2	1	8	0.320	102	0.8530	
+K2	B	150	35	3	1	8	0.327	101	0.4950	
+K2	B	150	35	1	2	8	0.347	98	0.1120	
+K2	B	150	35	2	2	8	0.333	100	0.8500	
+K2	B	150	35	3	2	8	0.307	104	0.5290	
+K2	C	150	35	1	0	16	0.300	105	0.9330	
+K2	C	150	35	2	0	16	0.307	104	0.8080	
+K2	C	150	35	3	0	16	0.313	103	0.5630	
+K2	C	150	35	1	1	16	0.300	105	0.9330	
+K2	C	150	35	2	1	16	0.320	102	0.8530	
+K2	C	150	35	3	1	16	0.327	101	0.4950	
+K2	C	150	35	1	2	16	0.347	98	0.9290	
+K2	C	150	35	2	2	16	0.333	100	0.8500	
+K2	C	150	35	3	2	16	0.307	104	0.5290	
+K2	D	150	35	1	0	8	0.300	105	0.0000	
+K2	D	150	35	2	0	8	0.307	104	0.0770	
+K2	D	150	35	3	0	8	0.313	103	0.0000	
+K2	D	150	35	1	1	8	0.300	105	0.1050	
+K2	D	150	35	2	1	8	0.320	102	0.1470	
+K2	D	150	35	3	1	8	0.327	101	0.1390	
+K2	D	150	35	1	2	8	0.347	98	0.1840	
+K2	D	150	35	2	2	8	0.333	100	0.3300	
+K2	D	150	35	3	2	8	0.307	104	0.0960	
+K2	summary	150	35	1-3	0-2	-	0.3	-	gA +0.3407	FAIL: blind B mean 0.4900 sd 0.3195; A 0.8307 C(2x restarts) 0.7659 D(wrong key) 0.1198; gA +0.3407 > gC +0.2759: True; gA > 2sdB 0.6389: False; null gD -0.3702 <= 2sdB: True; B < 0.95: True

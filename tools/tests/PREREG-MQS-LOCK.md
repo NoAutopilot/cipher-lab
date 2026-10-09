@@ -77,6 +77,30 @@ leaf LOOK bears on a harness fidelity check. (`--derive` and the run above wrote
 `prior-work.tsv` into the clair1161 folder; all three were removed at once -- moved to this job's scratchpad -- since this
 job writes nothing there.)
 
+## Results (written after the runs, 9 Oct 2026, 05:05 UTC by date -u; rows in `tools/tests/MQS-LOCK-controls.tsv`)
+
+**K1: GATE PASS, 3/3** (gate 3/3). a = u, p = c, d = n each at consensus 6/6; dL4 0.13177 / 0.07111 / 0.07752 against
+null p95 0.07439 / 0.03316 / 0.04260 -- the same figures as the local `two/lolo/lolo_ctl_signs.tsv`. The six leaf keys
+from `families.homophonic` with `lock` are identical sign for sign to `two/lolo/key_lolo_ctl_<leaf>.tsv` (and to the
+tgt keys), so the missing `init` (difference 1 above) changed nothing here. Fidelity only: this licenses nothing about gain.
+
+**K2: FAIL** (N = 150, the first N in the ladder with blind mean in [0.30, 0.80]: 0.4887 at draw 0; K = 35; locked share
+0.300-0.347; 98-105 unlocked positions per run; 9 (seed, draw) pairs per arm):
+
+| arm | mean recovery on unlocked positions | per seed (draws 0/1/2) |
+|---|---|---|
+| A lock, 8 restarts | 0.8307 | s1 0.933/0.933/0.929; s2 0.808/0.853/0.870; s3 0.777/0.594/0.779 |
+| B blind, same positions, 8 restarts | 0.4900 (SD 0.3195) | s1 0.095/0.105/0.112; s2 0.808/0.853/0.850; s3 0.563/0.495/0.529 |
+| C blind, 16 restarts | 0.7659 | s1 0.933/0.933/0.929; s2 = B; s3 = B |
+| D wrong-key null, 8 restarts | 0.1198 | s1 0.000/0.105/0.184; s2 0.077/0.147/0.330; s3 0.000/0.139/0.096 |
+
+gA = +0.3407 > gC = +0.2759 (pass); gA > 2 x sdB = 0.6389 (**fail**); null gD = -0.3702 <= 2 x sdB (pass: right values
+matter, a wrong-value lock pulls the unlocked rest down to 0.12); B < 0.95 (pass). One part fails, so by the
+pre-registration the option ships with shelf grade **weak**. What the numbers show beside the gate: blind is bimodal over
+seeds (seed 1 fails at 8 restarts and reads 0.93 at 16), so most of the lock's gain on seed 1 is also bought by doubling
+the restarts; the part 2x restarts does not buy is seed 3 (lock 0.594-0.779 vs 16 restarts 0.495-0.563). No threshold
+was changed after the runs.
+
 ## Amendments
 
-(none yet)
+(none)
