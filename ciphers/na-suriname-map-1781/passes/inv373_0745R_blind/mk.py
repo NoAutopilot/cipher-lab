@@ -4,7 +4,7 @@ gloss_reconciled.tsv (that pass's own gloss rows, unedited), as SUR-0744R mk.py.
 em dash -> -, glyph psi/lambda/delta -> vocabulary code. No sign is re-read. Usage: python3 mk.py A|B"""
 import os, re, sys
 H = os.path.dirname(os.path.abspath(__file__)); p = sys.argv[1]; d = os.path.join(H, p)
-NOTE = {'§': '&', '—': '-', 'ψ': '[psi]', 'λ': '[lambda]', 'δ': '[delta]', 'Δ': '[delta]'}
+NOTE = {'§': '&', '—': '-', 'ψ': '[psi]', 'λ': '[lambda]', 'δ': '[delta]', 'Δ': '[delta]', '#': '[hash]'}  # '#' -> '[hash]' added after the PREREG (notation only: pass B wrote the vocabulary's [hash] as a bare #; stated in NOTES)
 rows = [l.rstrip('\n') for l in open(os.path.join(d, 'raw.tsv'), encoding='utf-8') if l.strip()]
 def fix(r):
     f = r.split('\t')

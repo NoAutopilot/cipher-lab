@@ -1,0 +1,48 @@
+# SUR-0745R pass A: one blind Sonnet call on crops p0745R_L01-L23 (crop paths only, reader-code vocabulary, [ij]=dotted, y=undotted; no values, no key), 9 Oct 2026 20:3x UTC, after PREREG-SUR-0745R.md. Verbatim as returned (notation per mk.py).
+crop	kind	text	conf	remarks
+L01	gloss	proportie de lengte vande boeyreepst [?] Hunner	0.5	last word unclear
+L01	cipher	1o [hash] 5k0 | a f 3 , r 7 c 3 y 9 [lambda] 3 5 % . y r 7 0 [hash] | 3 f 0 3 7 | S [psi] | b 5 y l 3 h	0.4	approximate; dense
+L02	gloss	van 10 a 12 Vaam bestaan, dus voor 24 Swaare	0.6	
+L02	cipher	5 4 y , 10 4 12 , r . % p y | d 3 [psi] [lambda] % . p y , d 5 [psi] 5 k [hash] 0 , 2 4 y [psi] 4 . % p .	0.4	triangle-like signs read as 4
+L03	gloss	anckers en dubbeld Stel in cant Kabels Jan	0.5	
+L03	cipher	0 3 . x y b 3 0 [psi] | 3 7 y r 5 d 6 3 c r . [psi] [lambda] 3 c p 8 0 p 4 5 8 3 0 p 4 d 3 c	0.3	ij vs y uncertain; no dots seen
+L04	gloss	duim en en voor ligtere drie kabels van	0.5	
+L04	cipher	[psi] 5 4 y 4 9 [lambda] . r 5 . t y , 3 y | 5 k [hash] 0 , 1 6 , c 8 9 [lambda] 3 0 7 r 0 8 3 p 4 d 3 c [psi]	0.4	first sign chi-like, written [psi]
+L05	gloss	drie duim.	0.6	
+L05	cipher	5 . x y , 3 . d [other: superscript m with underline]	0.5	short line
+L06	gloss	de onkosten vande dit alles Schynt int oog byden	0.5	
+L06	cipher	w 7 b [hash] | [psi] [lambda] 3 y 5 % . y r 8 [lambda] 4 c 9 3 [psi] | [psi] x d t y r f y [lambda] [hash] k 9 d t r 3 [ij]	0.35	
+L07	gloss	wtten opslag groot, dog zal in geenen deelen	0.5	
+L07	cipher	3 7 0 [psi] [lambda] 7 r [hash] S [psi] c 4 9 9 0 k [hash] [lambda] w [hash] 9 n . c 8 [ij] 9 3 7 y d l r 3 7 c 0 l	0.3	
+L08	gloss	die hoogste besyken als het rendesende	0.45	
+L08	cipher	w f 3 d k [hash] 9 [lambda] 3 d 7 0 t b 3 l , 4 c [psi] [lambda] 0 0 [ij] r 3 7 0 d y r d e 4 [ij] n 5 c b	0.3	
+L09	gloss	van zulk een kist boom, welkede Heer	0.5	
+L09	cipher	3 7 y b f [psi] [lambda] d k [hash] , y 4 3 c b 7 d 3 & 3 7 0 . 9 k 5 c 3 0 [ij] 3 5 0 9 3 l 7 0 4 % . c	0.35	
+L10	gloss	Gouverneur Generaal aan ons volgende	0.6	
+L10	cipher	, x 4 y [hash] y [psi] , 5 [hash] c 9 3 y [psi] r 7 4 . x y [psi] p & o t 5 8 y 9 r k [hash] 0 w 7 & 3 7 0	0.3	
+L11	gloss	aanschryving door Heeren Directeuren is hou-	0.55	
+L11	cipher	d y r 8 0 3 p [lambda] 3 5 0 7 y 5 % . y w 7 [psi] [hash] c f 3 [lambda] 3 8 r f f [psi] & [hash] 5 r 3 [ij]	0.3	
+L12	gloss	dende voorgeslagen heeft.	0.6	
+L12	cipher	r 7 e k [hash] 0 9 3 [psi] c 4 . . 9 3 l & 3 7 & [lambda] .	0.35	
+L13	gloss	Boven dit heeft onze gemaakte Verhooping no	0.45	
+L13	cipher	d k [hash] e 3 y r f [lambda] & 3 7 & [lambda] | [hash] [ij] [psi] 7 9 7 7 4 . b [lambda] 7 5 3 0 [psi] [lambda] [hash] S 9 8 y 9	0.3	
+L14	gloss	twee nuttigheden.	0.55	
+L14	cipher	l [hash] 9 [lambda] 4 3 7 y 5 [lambda] r 8 9 & 3 7 r d h	0.4	"Slur" marginal word at right ignored
+L15	gloss	dat in 't midden of elders [struck word] pen op de einden	0.4	struck-through word
+L15	cipher	w 4 [lambda] f y [lambda] y s r w 3 l [hash] & 3 c r 7 0 [psi] [psi] c 5 0 f 3 y [hash] S r 7 3 y w d l	0.3	
+L16	gloss	Der Tonnen komen die door een spond opgetrou	0.4	
+L16	cipher	r 3 0 [lambda] [hash] 5 4 3 y b k [hash] y 3 y w f 3 r k [hash] 0 3 7 y 5 [hash] y r [hash] S 3 3 k 5 w 7 l	0.35	
+L17	gloss	Dan endus een opening laat, waardoor	0.5	
+L17	cipher	3 y w 5 [psi] 3 7 y k [hash] S 3 y 8 l 9 c 4 . [lambda] , 4 . 4 0 r k [hash] 0 [hash] y [psi] 3 7 6 9 3 [psi] p & 3	0.3	
+L18	gloss	onze eige Schepen altoos in en uitgelaten	0.5	
+L18	cipher	, 7 S 7 y 4 c [lambda] k [hash] [psi] 8 f y 3 l 5 t [lambda] 9 3 c 4 . . [lambda] 7 y b 5 y l 3 h 4 [hash] 0 r 3 y	0.3	
+L19	gloss	kunnen worden, zonder de minste moeite	0.5	
+L19	cipher	n k y . r 3 0 w 7 y 8 y [psi] [lambda] 3 y [hash] 3 8 [lambda] 7 . | 3 l b 4 y r . p o f y [lambda] 3 7 9 d y	0.3	
+L20	gloss	en kan daaren tegen op de eerste Kunstschap	0.4	
+L20	cipher	[hash] S w 7 3 7 0 [psi] [lambda] d b 5 y r [psi] x & 4 S f y 3 7 l k [hash] 9 3 y d c 8 b 8 l 3 c b 4	0.3	
+L21	gloss	in een oogenblik in elkander gesplitst en	0.45	
+L21	cipher	y w 7 0 9 3 [psi] S c 8 [psi] [lambda] , 3 4 c [psi] d [hash] 5 3 y 4 t [psi] p 3 8 3 c t b 8 y [psi] [lambda] 4	0.3	
+L22	gloss	als boven Zy schielyk in staat gebragt worden dat	0.4	
+L22	cipher	. x [lambda] 9 3 d 0 4 9 [lambda] | 4 [hash] 0 r 3 y , r 4 [lambda] [psi] t [lambda] 5 3 0 4 % . 9 [lambda] 7 | 3 8 [w-tilde] 3 p [lambda] [lambda] 7 4 8 ,	0.25	
+L23	gloss	zy 't vernagte affect te weeg brengen.	0.5	
+L23	cipher	& [lambda] | [lambda] 7 4 3 7 9 d 0 3 y 9 7 [ij] . -	0.3	dot above last sign seen

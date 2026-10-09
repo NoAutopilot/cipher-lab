@@ -1,0 +1,14 @@
+# pass A: pairs 23, signs 752; keyed aligned 663, A 0.730; C1 (N=10000, seed 7450) mean 0.504 p99 0.547 max 0.577 -> SAME SYSTEM (DP)
+  (a) CLASS pooled y-family -> m|n: n_al 67, agree 48, share 0.716; C1 share mean 0.435 p99 0.577; need >= 0.607 -> PASS
+      [ij]-only (descriptive): n_al 6, agree 5, share 0.833
+  (b) SPLIT: y-family on gloss m 5, n 43; S = n/(m+n) 0.896; C1 (draws with m+n>0: 10000) mean 0.897 sd 0.048 p0.5 0.762 p99.5 1.000; distinct values 107 -> NO SPLIT SHOWN
+  (c) gloss m aligned 8: [y-fam] 5, [other=_superscript_m_with_underline] 1, k 1, l 1
+  (c) gloss n aligned 83: [y-fam] 43, l 9, [psi] 8, 4 5, 8 2, r 2, 5 2, p 2
+# pass B: pairs 23, signs 756; keyed aligned 657, A 0.743; C1 (N=10000, seed 7450) mean 0.511 p99 0.554 max 0.579 -> SAME SYSTEM (DP)
+  (a) CLASS pooled y-family -> m|n: n_al 68, agree 48, share 0.706; C1 share mean 0.445 p99 0.574; need >= 0.603 -> PASS
+      [ij]-only (descriptive): n_al 10, agree 8, share 0.800
+  (b) SPLIT: y-family on gloss m 5, n 43; S = n/(m+n) 0.896; C1 (draws with m+n>0: 10000) mean 0.885 sd 0.052 p0.5 0.739 p99.5 1.000; distinct values 111 -> NO SPLIT SHOWN
+  (c) gloss m aligned 7: [y-fam] 5, 5 1, b 1
+  (c) gloss n aligned 78: [y-fam] 43, [psi] 8, l 6, p 5, 0 3, r 2, c 1, 4 1
+UNIT CLASS (a): PASS  [A PASS; B PASS]
+UNIT SPLIT (b): NO SPLIT SHOWN  [A NO SPLIT SHOWN; B NO SPLIT SHOWN]
