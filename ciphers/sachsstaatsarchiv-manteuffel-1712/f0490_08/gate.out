@@ -1,0 +1,30 @@
+key: key.tsv; spans 17
+== R deciding (right page, R01 line excluded): spans 16; code tokens 92; keyed 92
+S = 61/92 keyed (0.663); control (1000 permutations, seed 490): mean 14.08, p95 20, p99 22, max 25; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== R incl. R01 line (reported only): spans 17; code tokens 130; keyed 130
+S = 96/130 keyed (0.738); control (1000 permutations, seed 490): mean 21.66, p95 28, p99 32, max 34; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+G01	R	la paix sans tiers, l'epee a la gloire et au profit du Roy de Prusse 392	35/38	17:match:p 66:match:a 9:match:i 4:match:x 51:match:s 66:match:a 21:match:n 29:match:s 57:miss:t 39:match:i 27:null: 35:match:e 26:match:r 44:match:l 10:match:e 34:match:p 2:match:e 35:match:e 50:match:a 110:match:la 7:match:g 44:match:l 16:match:o 46:match:i 60:match:r 2:match:e 1000:match:et 25:match:a 54:match:u 23:match:p 27:match:r 22:match:o 36:match:f 46:match:i 28:match:t 100:match:d 67:match:u 257:miss:sse
+G03	R	l.f.m.	2/3	103:miss:l 1:match:f 13:match:m
+G05	R	Blackscheiffen	5/8	11:match:k 74:match:sch 35:match:e 9:match:i 77:miss:ff 10:match:e 60:null: 29:miss:n
+G06	R	Grumbkow	5/7	48:match:g 60:match:r 6:match:u 13:match:m 11:match:k 66:miss:o 67:miss:w
+G07	R	Mantuffel	0/1	160:miss:fel
+G08	R	Roy de Prusse	0/1	257:miss:sse
+G09	R	f.m.	2/2	1:match:f 13:match:m
+G10a	R	manti:	0/1	160:miss:nti
+G10c	R	Dohna	1/1	120:match:d
+G11	R	la postining que le oy	6/9	110:match:la 17:match:p 41:miss:ost 9:match:i 60:miss:n 6:miss:i 21:match:n 7:match:g 24:match:q
+G12a	R	Roy de Pruss voulois faire	10/14	67:miss:oid 2:match:e 257:miss:uss 5:match:v 33:match:o 6:match:u 12:match:l 33:match:o 9:match:i 28:miss:s 11:miss:f 66:match:a 9:match:i 60:match:re
+G12b	R	en mecklenbourg Le R. de Prus	2/4	38:miss:e 14:match:n 288:match:mecklenbourg 257:miss:rus
+G13	R	une tete	3/6	355:match:u 54:miss:n 26:miss:et 10:match:e 68:miss:t 35:match:e
+G14	R	en sigmere fut traine en mecklenbourg qu	10/15	110:miss:nsi 7:match:g 6:miss:m 2:match:e 27:null: 60:match:r 10:match:e 1:match:f 67:match:u 28:match:t 54:miss:t 26:match:r 66:match:a 4:miss:kle 21:match:n
+G15a	R	trnbeck	0/1	76:miss:eck
+G15b	R	ordre pour S. el	4/4	33:match:o 26:match:r 120:match:d 27:match:r
+G17	R	mouvroit de faie a Roy	11/15	31:match:m 46:miss:o 6:match:u 60:miss:v 27:match:r 33:match:o 39:match:i 28:match:t 120:match:d 10:match:e 36:match:f 50:match:a 46:match:i 31:miss:ea 150:miss:roi
+
+distinct codes: 55; matched on every instance: 31
+unkeyed codes and their slots: 
+keyed codes with a non-match slot: 4(x)=miss:kle; 6(u)=miss:i,miss:m; 11(k)=miss:f; 26(r)=miss:et; 27(r)=null:,null:; 28(t)=miss:s; 29(s)=miss:n; 31(m)=miss:ea; 38(h)=miss:e; 41(k)=miss:ost; 46(i)=miss:o; 54(u)=miss:n,miss:t; 57(s)=miss:t; 60(r|re|ro)=null:,miss:n,miss:v; 66(a)=miss:o; 67(u)=miss:w,miss:oid; 68(v)=miss:t; 76(st)=miss:eck; 77(d)=miss:ff; 103(le|la)=miss:l; 110(la)=miss:nsi; 150(le Roi de Pologne)=miss:roi; 160(Manteuffel)=miss:fel,miss:nti; 257(Le roi de Prusse)=miss:sse,miss:sse,miss:uss,miss:rus

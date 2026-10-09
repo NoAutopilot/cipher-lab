@@ -1,0 +1,13 @@
+code	key_value	slot_on_0490	gloss_note	kind	note
+1000	et (C)	'et' in 'et au profit' (R01 line)	G01 (R01 line, reported row)	code>401	agrees; second witness for 1000=et
+355	u|un|une (M)	'u' at the head of the R13 note ('une te?te' by the pass; worker eye 'une treve')	G13	held-M code	positional: 355 heads the span, consistent with 'une'; one leaf; key grade not changed
+76	st (C)	single code under a note the pass read 'tr?nbeck' (worker eye 'Stanbock'/'Stenbock')	G15a	name abbreviation	key st = initial of a St- name; 191 (Stenbock, M) does not occur here; no change
+120	d (C)	alone under 'Dohna' (R10); also 'd' in 'ordre' (G15b) and 'mourroit de' (G17)	G10c	initial as name	120 used as the initial D for Dohna; no new key row
+160	Manteuffel (C)	under 'Mant?uffel' (R07) and 'manti:' (R10)	G07, G10a	name	agrees by meaning; misses S only by the gloss's abbreviation (as 0474's 150, 0136's 160)
+257	Le roi de Prusse (C)	under 'Roy de Prusse' x3 and 'Le R. de Prus?'	G08, G12a, G12b, G01	name	agrees by meaning x4; S misses by spelling only
+288	Mecklenbourg (C)	'mecklenbourg' (G12b)	G12b	name	agrees (matched)
+150	le Roi de Pologne (C)	'Roy' at the end of 'mouvroit de fai?e a Roy'	G17	name	agrees by meaning (the gloss abbreviates)
+1.13	f + m	'f.m.' (G09), 'l.f.m.' with 103 (G03)	G03, G09	compound	103.1.13 = le f.m. (le Feldmarechal); compound pair agrees
+77	d (C)	'ff' in 'Blackscheiffen' (G05)	G05	rule-4 conflict	pass A read 77?, B 74?; settled 74 at pos 2, 77 here is pos 5 (both passes 77); positional miss, logged, key unchanged
+66 67	a, u (C)	'o','w' in 'Grumbkow' (G06)	G06	spelling	run reads g r u m k a u = 'Grumkau', a period spelling; not a conflict
+67	u (C)	'oid' of 'Roy' in G12a	G12a	alignment	67 2 257 = (le) Roi + e? -- span start, positional; not a conflict
