@@ -193,7 +193,7 @@ Read so far: unmeasured for the target as a whole: this folder holds no transcri
 - f.80r-81r (R8490): the unread letter groups Xd+c:87, AcdD7p#cI, A:VAI, Ac-D:XL and `V z L ### A l c c A`, and f.81r "restrain[ed]?" (I) - blocker: not-attempted; correction to the classifier and to Bourdeau's own gap list: f.80g (HcVwUVd7) is already read "forwarde" (H) in his solver loop 1 and third pass (cobham1588/NOTES.md l.181, reading_ff80_92_96_full.md L5). solve.py was rerun on them with the loop-1 values and -=b (NEXT-HAR, 2 Oct 2026, solver/out_nexthar.txt): no group read; groups of 5+ signs hit the word list at the shuffled-null rate (0.125 vs 0.114) while the known-answer control reads 0.877 rank-1 clean, so the strings act as noise to the solver; next: blind sign-by-sign transcription of f.80r-81r from DECODE full-size crops (2 passes + 1 reconciliation, ~$4.5) after the R8491/R8494 glosses, then rerun run_nexthar.py
 - f.88r (R8492): the name after "captain", the word after "haven of", lines 3-6 and the seven cipher words of lines 12-20 (the recurring "Tnn") - blocker: not-attempted; filed open-codes by Bourdeau, but these are letter runs blocked by the unglossed signs K, upsilon, rho and W and by polyphonic signs (cobham1588/NOTES.md "Remaining gaps"). DECODE R8491 (f.84, 1588) and R8494 (ff.90-91) are marked Decrypted in the same volume, and nobody has opened them (records-decrypted-2026-09-24.tsv; grep of Bourdeau's three folders finds neither); next: fetch R8491 and R8494 at full size and align their interlinear glosses sign by sign against cobham1588/signs.tsv (2 pages x 2 passes + 1 reconciliation), ~$8. A2-HAR3 (2 Oct 2026) did this mapping but its pairs were never pushed (A2-HAR4 step below); next: redo it, commit gloss_pairs.tsv before any analysis, then interlinear_align.py with a shuffled control, ~$7.5. Done 3 Oct 2026 (A2-HAR7): f.84r/f.90r glosses aligned with gloss_pairs.tsv committed first, consistency 0.819 vs nulls max 0.305/0.226, 19/20 signs agree with signs.tsv; K, Q, L, upsilon, rho and W are not glossed there at this transcription, so no new value reaches f.88r; next: rerun solver/run_nexthar.py with 8 = c/d added (the only value the glosses add), no vision, ~$0.5; then a gloss-masked cipher-only pass of f.84r to rule out reader projection, ~$3. A4-RFHAR (5 Oct 2026): the f.88r two-pass blind read is a non-test (err_2reader 0.504 > 0.30 gate). R11A-HAR (6 Oct 2026): lookalike_pass.py confusion run, no dominant pair (top 3 of 41 swaps, 103 of 144 disagreements are sign-count gaps), so no third re-read; sorter page sorter/f88r/ built, preflight PASS, handed to the account-3 orchestrator to publish; blocker: waiting-on the owner's sort of the sorter/f88r page (ROOM flag 6 Oct 2026, R11A-HAR); next after the sort: sign_sorter_apply.py, then two blind passes against the settled labels, ~$4.5
 - f.92r (R8495): of runs 92a-d, 92a is read "Portugals?" (I) and 92d "Bridges" (M) in reading_ff80_92_96_full.md, so the classifier's "92a-d unread" is out of date. Still unread: 92b, 92c and 22 groups of lines 3-10, including the surname -cX8L - blocker: not-attempted; the same unglossed and polyphonic signs; solve.py rerun on lines 1-10 (NEXT-HAR, 2 Oct 2026): no unread group read, same null-level result as f.80r-81r; next: blind sign-by-sign transcription of f.92r from DECODE full-size crops (2 passes + 1 reconciliation, ~$4.5) after the R8491/R8494 glosses, then rerun run_nexthar.py
-- ff.96r-97r (R8496): f.96v, 8 unread groups (reading_ff80_92_96_full.md "f.96v counts"); f.96r and the f.97r runs have no sign transcription at all (not in runs.txt) - blocker: not-attempted; the f.96v strings went through solve.py on 2 Oct 2026 (NEXT-HAR) with no group read; Bourdeau's own retry step says to add f.97r and rerun (cobham1588/NOTES.md Escalation); next: two blind sign-by-sign passes of f.96r, f.96v and f.97r on DECODE full-size crops (6 calls + 1 reconciliation at ~$1.5), then solve.py, ~$11
+- ff.96r-97r (R8496): f.96v, 8 unread groups (reading_ff80_92_96_full.md "f.96v counts"); f.96r and the f.97r runs have no sign transcription at all (not in runs.txt) - blocker: not-attempted; the f.96v strings went through solve.py on 2 Oct 2026 (NEXT-HAR) with no group read; Bourdeau's own retry step says to add f.97r and rerun (cobham1588/NOTES.md Escalation); next: two blind sign-by-sign passes of f.96r, f.96v and f.97r on DECODE full-size crops (6 calls + 1 reconciliation at ~$1.5), then solve.py, ~$11. HAR-GLOSS (9 Oct 2026): on the R8496 images f.97r is blank and f.97v is the address leaf, f.96r shows no cipher at whole-leaf view, so the passes reduce to f.96v (2 calls + 1 reconciliation, ~$4.5)
 
 ## Escalation (2 Oct 2026)
 - [ ] siblings: Done by Bourdeau: the glossed R8481 (f.63), R8488 (f.75), R8489 (f.78-79) and R8493 (f.89) were aligned sign by sign (cobham1588/signs.tsv), the harley287 and cobham1588 keys were merged, and R8497 (Bodley 1590) was checked and found to be a different system. Those glosses already settle one harley287 gap: ·7· is glossed "her Maties" (signs.tsv l.33, READING.md l.4), so the .7. before "ships" on f.70r is her Majesty from a period gloss of the same key and sender, 1588, not a context guess. Upgrade it from C on the next decode of our own and drop it from the open codes. Not tried: four DECODE records in the same volume that are marked Decrypted and that nobody has opened. R8491 (f.84, 1588) and R8494 (ff.90-91) could gloss K, upsilon, rho and W. R8478 (f.37-38, 1587) and R8480 (f.41-42, 1587) flank Needham's ff.39-40. R8491 and R8494 fetched full-size 2 Oct 2026 (A2-HAR, second spawn): both are glossed interlinearly in the Cobham alphabet (f.84r about 16 cipher lines, peace-treaty letter; f.90r about 13, Ostend, 14 Mar. 1587/8), with no number codes. Planned: align their glosses against cobham1588/signs.tsv, ~$8, plus ~$1 for the Needham pair R8478/R8480 (not fetched). Done 3 Oct 2026 (A2-HAR7) for R8491/R8494: aligned, 0.819 vs nulls max 0.305; confirms signs.tsv on 19/20 signs, adds only 8 = d (M); K, Q, L, upsilon, rho and W not glossed there
@@ -647,7 +647,51 @@ Token grades: no token read (H 0, C 0, S 0, M 0, I 0); no key or reading changed
 Requests: none (disk only). Credit: the sign code and sign values used for the two passes are D. Bourdeau's
 (github.com/dbourdeau/cyphersolver, MIT / CC BY 4.0).
 
+## Step HAR-GLOSS, 9 Oct 2026: leaf census of ff.70r-72v and ff.96-97 for interlinear glosses (none found)
+
+Brief: .claude/briefs/runs/2026-10-09-account4-default-1340-jobs.md, "### J16 HAR-GLOSS" (LANE DEFAULT-account-4-20261009-1340).
+Leaf census only: no transcription pass, no sign labels, no subagent.
+
+**Prior-work step (pasted).** `tools/prior_work.py harley-287-1587 --item-spec 'shelfmark=BL Harley MS 287;folio=70r-72v;...'
+--step-type lookup --fetch` gave exit 4 with LEAD `adhoc-d473d5:1-own:cd94a9`. The lead is this NOTES.md's own Escalation line:
+"[x] clear-pages: no interlinear, marginal or separate decipherment on ff.70r-72v (Bourdeau harley287/NOTES.md Escalation)".
+That was Bourdeau's word-by-word read from crops, so this census is an independent image check of his statement.
+Bourdeau's file itself could not be re-read: raw.githubusercontent.com returned 404 for the guessed path, and api.github.com
+returned 403. That host was stopped after these 2 requests. The two Tomokiyo CONTEXT rows are a different manuscript's f.70-75,
+the Spanish Vargas Mexia letters of 1578, and do not bear on this one.
+ff.96r-97v: exit 0. Rows are in prior-work.tsv.
+
+**Fetch.** One DECODE browser login, at 14:52 UTC (`tools/decode_browser_login.js 8482 <scratch> --fetch-page
+RecordsView/8483,...,8487,8496 --guess-fullsize --max-files 30`). It served 7 record pages, 10 thumbnails and 10 full-size
+images. All 10 sha1s equal images/decode_sha1.txt (A4-RFHAR, 5 Oct). The images were kept in the scratchpad and not committed.
+
+**Census** (gloss/leaf_census_HAR-GLOSS.tsv; whole-leaf views plus native-pixel zooms of every candidate):
+- Glossed leaves: 0 of 10 images. Glossed groups: 0. None of these leaves carries a decipherment over its cipher of the
+  f.84r/f.90r kind. Bourdeau's ff.70r-72v statement holds on the images, and the same is true of ff.96-97.
+- What is between the lines is the writer's own work, in clear:
+  - f.70r line 21: two cipher groups are struck through, with 'these works' written above them. This is a correction and a
+    possible crib for the struck groups. It is not graded and not used, and no values were assigned.
+  - Caret insertions: 'from' (f.70r), 'Some' (f.71v), 'more or lesse' and 'our letters' (f.72r).
+  - Clear-in-clear corrections, and show-through from the facing sides.
+- DECODE's record pages: R8486 (f.72r) is the only one of the seven with Status "Partially decrypted" and "Inline Plaintext:
+  Yes". The others read Non-decrypted / Inline Plaintext No. On the image, the only interlinear writing that touches cipher
+  on f.72r is the two caret insertions in the writer's clear. No decipherer's gloss was found. This answers the clear-pages
+  residual check: the flag is not backed by a gloss visible on the full-size image. What DECODE's annotator meant by it is
+  not recorded on the page.
+- ff.96-97 correction: f.97r is blank (P3) and f.97v is the address leaf with its endorsement (P4). No cipher was seen on
+  f.96r at whole-leaf view. Cipher on these images is on f.96v only (lines 1-4, 8-10, 13). The "f.97r runs" in the gap below
+  are not on DECODE R8496's images; Bourdeau's "f.97" may use another foliation (not checked).
+
+So the WAIT-PASS-5 hope that a glossed leaf here would read at about 0.144 does not apply: there is no glossed leaf in this
+set. Token grades: none read (H 0, C 0, S 0, M 0, I 0). No key or reading changed, so no decode --check or judge was run.
+Requests: de-crypt.org 1 login + 27 fetches (7 record pages, 10 thumbnails, 10 full-size), 1.5 s apart;
+raw.githubusercontent.com 1 (404); api.github.com 1 (403). Credit: harley287 reading and statement are D. Bourdeau's
+(github.com/dbourdeau/cyphersolver, MIT / CC BY 4.0).
+Suggestion (one line, not done): the f.70r struck pair under 'these works' is a cheap crib for the owner's f.88r sort session
+or a later `decode_key.py --try`, after the sort settles the labels.
+
 ## While waiting (9 Oct 2026, WAIT-PASS-5)
 
 Waits on the owner's pass over the f.88r sign sorter (sorter/f88r/, handed on by R11A-HAR, 6 Oct 2026); blind machine reads of this hand are retired.
 - View DECODE ff.70r-72v and ff.96-97 (R8482-R8487, R8496; fetched 5 Oct, never read) for interlinear glosses: a glossed leaf reads at 0.144, not 0.50. S, ~$1, decode_browser_login.js
+  Done 9 Oct 2026 (HAR-GLOSS): 0 of 10 images glossed (gloss/leaf_census_HAR-GLOSS.tsv); no glossed leaf in this set.
