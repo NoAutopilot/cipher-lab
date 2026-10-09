@@ -34,3 +34,31 @@ Corpora: family_run's default from the spec's judge block (fr16, the two Catheri
   measurement changed (LAG-ERR), not as a tuning knob. A control below gate here at <= 0.107 retires syllabary-by-this-tool on
   this text until new material (pooling) or a different instrument.
 - The target stays `open` (rule 5) whatever the result. No reading is claimed by this job.
+
+## Amendment 1 (written after the control calibration, before any target or gate score)
+
+Control calibration (family_run rows in HYPOTHESES.md, 00:4x UTC): mean recovery 0.861 at err 0.055, 0.863 at 0.084, 0.833 at
+0.107 (all gate 0.60 met), 0.264 at 0.183 (not met). Per the read-out above, the third branch applies: the control gates at
+0.055, 0.084 and 0.107, so the LAG-GAP score-gap gate is run, power check first in the same batch. Fixed now:
+
+- Script `families/lag_syl.py` (a copy of `lag_gap.py`'s design with the syllabary family on the spec's marks-kept input).
+  Solver: syllabary, restarts 8, defaults otherwise (iters 120000, order 3, assign regular, use auto, gap 2).
+- **Statistic: solver score per cipher token (score / N of the ciphertext solved).** Changed from LAG-GAP's raw score because
+  this family's error mix inserts and deletes tokens, so control N varies (226-243 in the calibration) while the target and
+  its shuffles have N=239; a raw log-likelihood would move with N, not with fit.
+- Target T: the spec ciphertext, solver seed 1. (a) 40 matched controls: err 0.084 and 0.107, seeds 1-20 each (the 0.055
+  level is dropped from (a) because 0.107 is the licensing level fixed above; 0.084 keeps the brief's bracket).
+  (b) 40 shuffled targets (family_run --shuffle-target convention: the 239 code^mark tokens permuted over the same 15 message
+  lengths; shuffle seed k, solver seed k), k = 1-40.
+- **PASS iff T > p95(b) and T >= p05(a).** p95/p05 = ceil(q n)-th order statistic, as lag_gap.py.
+- **Power check (decides whether the gate is a test at all):** 10 held-out controls at err 0.107, seeds 101-110, each against
+  the p95 of 20 shuffles of its own ciphertext (seeds 1-20) and p05(a). Power PASS iff >= 80% of the held-out controls with
+  recovery >= 0.60 pass. Power FAIL -> the gate is a non-test for this family at this N; logged "untested-by-this-gate", no
+  gate swap, target result not read either way.
+- Read-out: power PASS and target FAIL -> **control-backed negative for syllabary (this design, regular assignment) at N=239
+  for transcription error up to 0.107**; NOT a negative over the 0.107-0.183 band, where the control itself fails (0.264), so
+  the row stays conditional on the true marks-kept error being <= ~0.11 (pairwise disagreement 0.183 is an upper estimate of
+  one reader's error; about half if independent). Power PASS and target PASS -> "worth a verifier" at most: run the spec
+  judge on the decode, report it, grade every token S at best, claim no reading in this job, and name a shuffle-decode judge
+  check (rule 3, ARM-C1) as the next step. Target stays `open` either way.
+- Scores to families/lag_syl.tsv; `--report` re-prints; `--check` re-runs and diffs (rule 7).
