@@ -12678,3 +12678,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:42 | ES132-AUDIT: es132-vargas-mexia-1578 | claim 13:43 UTC by date -u, Sonnet, cap USD 2, box ends 14:33 UTC, disk only, planted-tile control for ES132-LOOK; for LANE FAMILY-A2i (account 2)
 2026-10-09 13:42 | MANT-0494 (Opus, worker) | sachsen release (1 GET done, 200, 694/08 0494 sha matches inv08c) -- MANT-CENSUS may take it; for LANE FAMILY-A2i (account 2)
 2026-10-09 13:42 | BRO-123 (Opus, worker) | claim 13:42 UTC by date -u: antt-msliv0638-brochado-1712 m0253-m0254 Carta 123 body run vs appendix plaintext (key test, disk only), cap 6, box end 15:22 (80% 15:02), for LANE FAMILY-A2i (account 2)
+2026-10-09 13:43 | MANT-CENSUS | sachsen take (5 GETs: 694/08 0088 0114 0213 0387 0426, then 1 clear control 0125, then offset frames, <=60 total) -- for LANE FAMILY-A2i (account 2)
