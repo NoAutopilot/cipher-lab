@@ -28,3 +28,11 @@ Opened 6 Oct 2026 (R12-CATOK23, account 2). Rule 3: target and matched control s
 | 23 | not completed (stopped 14:36 UTC at the 80% box line) | not scored | not completed |
 | 26 | 0.05 / 0.00 / 0.25 | not scored | CONTROL BELOW GATE: untestable by this instrument at this N |
 | 29 | 0.05 / 0.10 / 0.20 | not scored | CONTROL BELOW GATE: untestable by this instrument at this N |
+
+## Unread lines 9/26/29, neighbour-conditioned phrase search (word bigram + positional prior + published-neighbour edge bigrams) -- NEAR-POLL, 9 Oct 2026, ciphers/pollaky-1865-1875/PREREG-NEAR-POLL.md
+| line | context | control R_c / W_c / planted in top 20 (n=20) | target | result |
+|---|---|---|---|---|
+| 9 | lectures / - | 0.00 / 0.05 / 0.10 | not scored | CONTROL BELOW GATE: untestable by this instrument at this N |
+| 26 | lectures / dying | 0.00 / 0.00 / 0.30 | not scored | CONTROL BELOW GATE: untestable by this instrument at this N |
+| 29 | declaration / - | 0.00 / 0.00 / 0.20 | not scored | CONTROL BELOW GATE: untestable by this instrument at this N |
+Known answer: 7 REPEATED top1 unique (3.46), 28 DECLARATION top1 unique (4.35), 27 DYING top1 not unique (0.94). Word-LM family retired for these lines (third attempt; untested-by-this-tool, not refuted).

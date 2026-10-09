@@ -1,0 +1,262 @@
+{
+ "prereg": "ciphers/pollaky-1865-1875/PREREG-NEAR-POLL.md",
+ "lines": [
+  {
+   "line": 9,
+   "A": "mistrl",
+   "B": "otenpu",
+   "letters": 12,
+   "left": "lectures",
+   "right": null,
+   "control": {
+    "n": 20,
+    "unique": 0.05,
+    "correct_unique": 0.0,
+    "wrong_unique": 0.05,
+    "planted_in_top20": 0.1,
+    "word_acc_top1": 0.2738,
+    "examples": [
+     {
+      "left": "my",
+      "planted": "wife but what said mrs tester",
+      "right": null,
+      "A": "wwmrte",
+      "B": "fthass",
+      "top": "wife with mr tastes"
+     },
+     {
+      "left": "since",
+      "planted": "the quiet evening when",
+      "right": null,
+      "A": "tequgw",
+      "B": "heenin",
+      "top": "the queen gwine"
+     },
+     {
+      "left": "to",
+      "planted": "do for him i said i could",
+      "right": null,
+      "A": "dfhscd",
+      "B": "omiiiu",
+      "top": "do me if his i could"
+     }
+    ],
+    "gate_met": false
+   },
+   "target": null,
+   "verdict": "CONTROL BELOW GATE: untestable by this instrument at this N; target not scored"
+  },
+  {
+   "line": 26,
+   "A": "mistrl",
+   "B": "oatvpu",
+   "letters": 12,
+   "left": "lectures",
+   "right": "dying",
+   "control": {
+    "n": 20,
+    "unique": 0.0,
+    "correct_unique": 0.0,
+    "wrong_unique": 0.0,
+    "planted_in_top20": 0.3,
+    "word_acc_top1": 0.4124,
+    "examples": [
+     {
+      "left": "you",
+      "planted": "in what you said to biddy",
+      "right": "which",
+      "A": "yustob",
+      "B": "inhaad",
+      "top": "you in his to a bad"
+     },
+     {
+      "left": "ornaments",
+      "planted": "were a large sword a skull and",
+      "right": "cross",
+      "A": "wlgssu",
+      "B": "raoaan",
+      "top": "were a long as a sun"
+     },
+     {
+      "left": "better",
+      "planted": "pleased but i did tell",
+      "right": "her",
+      "A": "psbdtl",
+      "B": "eedtid",
+      "top": "pleased but did tell"
+     }
+    ],
+    "gate_met": false
+   },
+   "target": null,
+   "verdict": "CONTROL BELOW GATE: untestable by this instrument at this N; target not scored"
+  },
+  {
+   "line": 29,
+   "A": "ereflodbr",
+   "B": "rileohmae",
+   "letters": 18,
+   "left": "declaration",
+   "right": null,
+   "control": {
+    "n": 20,
+    "unique": 0.0,
+    "correct_unique": 0.0,
+    "wrong_unique": 0.0,
+    "planted_in_top20": 0.2,
+    "word_acc_top1": 0.4725,
+    "examples": [
+     {
+      "left": "and",
+      "planted": "with precipitate wrath quarrelled",
+      "right": null,
+      "A": "wpatwqred",
+      "B": "ithriittl",
+      "top": "with part with quite rattled"
+     },
+     {
+      "left": "more",
+      "planted": "clearly than ever when i was the most",
+      "right": null,
+      "A": "cetwhwato",
+      "B": "llyhevset",
+      "top": "closely the waves he want to"
+     },
+     {
+      "left": "the",
+      "planted": "comfortless public house where",
+      "right": null,
+      "A": "cmfobhuwe",
+      "B": "otlessoer",
+      "top": "comfortable house so were"
+     }
+    ],
+    "gate_met": false
+   },
+   "target": null,
+   "verdict": "CONTROL BELOW GATE: untestable by this instrument at this N; target not scored"
+  }
+ ],
+ "known_answer": [
+  {
+   "line": 7,
+   "A": "rep",
+   "B": "etd",
+   "left": null,
+   "right": "i",
+   "published": "repeated",
+   "top1": "repeated",
+   "top1_is_published": true,
+   "unique": true,
+   "margin": 3.461000000000002,
+   "published_rank": 1,
+   "top5": [
+    [
+     -17.604,
+     2,
+     "repeated"
+    ],
+    [
+     -21.065,
+     2,
+     "repented"
+    ],
+    [
+     -22.207,
+     3,
+     "respected"
+    ],
+    [
+     -25.172,
+     4,
+     "repeatedly"
+    ],
+    [
+     -25.797,
+     4,
+     "respect and"
+    ]
+   ]
+  },
+  {
+   "line": 27,
+   "A": "ding",
+   "B": "y",
+   "left": null,
+   "right": "declaration",
+   "published": "dying",
+   "top1": "dying",
+   "top1_is_published": true,
+   "unique": false,
+   "margin": 0.9420000000000002,
+   "published_rank": 1,
+   "top5": [
+    [
+     -21.743,
+     0,
+     "dying"
+    ],
+    [
+     -22.685,
+     0,
+     "dingy"
+    ],
+    [
+     -25.302,
+     1,
+     "drying"
+    ],
+    [
+     -26.768,
+     1,
+     "dyeing"
+    ],
+    [
+     -27.528,
+     2,
+     "denying"
+    ]
+   ]
+  },
+  {
+   "line": 28,
+   "A": "declon",
+   "B": "arati",
+   "left": "dying",
+   "right": null,
+   "published": "declaration",
+   "top1": "declaration",
+   "top1_is_published": true,
+   "unique": true,
+   "margin": 4.353,
+   "published_rank": 1,
+   "top5": [
+    [
+     -11.553,
+     0,
+     "declaration"
+    ],
+    [
+     -15.906,
+     1,
+     "a declaration"
+    ],
+    [
+     -16.338,
+     1,
+     "declarations"
+    ],
+    [
+     -19.094,
+     1,
+     "declaration i"
+    ],
+    [
+     -20.436,
+     2,
+     "declaration it"
+    ]
+   ]
+  }
+ ]
+}
