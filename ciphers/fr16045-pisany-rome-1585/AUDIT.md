@@ -266,3 +266,10 @@ Unsafe: as section 5.
 Propagation: status.json results[119] grade counts, depth_pct (56.5 -> 57.7), line ("about 56%" -> "about 58%") and depth_check updated;
 depth, novelty and audit_status unchanged. SECOND-OPINIONS-QUEUE.tsv has no row for this folder (grep, 9 Oct) -- nothing to change.
 Verdict: the relabel is a pre-registered transcription-label change with key86 untouched; counts confirmed, percentage updated; N0 / D1 stand.
+
+## Carry-over PISA-T32 (9 Oct 2026) -- f.275r T57 -> T32 relabel (not an audited item; facts only, written by the solver-side worker)
+Change: tx86e/ciphertext_f275r.tsv, four tokens T57 -> T32 (L11 o32, L13 o21, L13 o37, L15 o36; 1-based over non-'/' tokens), under
+pisa_t32/PREREG-PISA-T32.md (gates G1-G3 PASS: 0.6527 -> 0.6620 above key-shuffle p99 0.466 and order p99 0.494; control 5/5; 4 of 4 relabelled
+tokens align to copy n, 0 of 4 under la). reading_f275r_M.txt "la" -> "n" at those four places; kp86e/grades_f275r.tsv C 364 -> 368, M 187 -> 183,
+U 10. Pre-edit bytes kept as tx86e/ciphertext_f275r_preT32.tsv. key86.tsv unchanged. No class or depth change here; audited items f.247r, f.275v,
+f.302v untouched by this commit. A verifier session to check it (as R12A-PISV did for the T36 relabel). No SECOND-OPINIONS-QUEUE row names f.275r.

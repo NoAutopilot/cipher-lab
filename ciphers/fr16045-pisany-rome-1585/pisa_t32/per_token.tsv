@@ -1,0 +1,17 @@
+page	line	ord	una_pisa	old_label	old_copy	old_identical	new_label	new_copy	new_identical
+f275r	L03	12	SETTLED-T27	T47	f	False	T47	f	False
+f275r	L06	29	SETTLED-T57	T57	la	True	T57	la	True
+f275r	L06	30	SETTLED-T57	T57	--	False	T57	--	False
+f275r	L10	11	UNSETTLED	T57	la	True	T57	la	True
+f275r	L11	18	UNSETTLED	T47	-	False	T47	-	False
+f275r	L11	32	SETTLED-T32	T57	--	False	T32	n	True
+f275r	L11	38	SETTLED-T57	T57	cc	False	T57	cc	False
+f275r	L13	21	SETTLED-T32	T57	--	False	T32	n	True
+f275r	L13	26	SETTLED-T45	T45	o	True	T45	o	True
+f275r	L13	28	SETTLED-T31	T47	m	True	T47	m	True
+f275r	L13	32	SETTLED-T57	T57	ca	False	T57	ca	False
+f275r	L13	37	SETTLED-T32	T57	n-	False	T32	n	True
+f275r	L15	2	SETTLED-T57	T57	la	True	T57	la	True
+f275r	L15	25	UNSETTLED	T45	u	False	T45	u	False
+f275r	L15	28	SETTLED-T57	T57	c-	False	T57	c-	False
+f275r	L15	36	SETTLED-T32	T57	no	False	T32	n	True

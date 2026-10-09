@@ -428,7 +428,7 @@ L11	29	T33		o	H
 L11	30	T12		n	H
 L11	31	T25		d	H
 L11	32	T56		faire	H
-L11	33	T57		la	H
+L11	33	T32		n	H
 L11	34	T24		c	H
 L11	35	T26		e	H
 L11	36	/		?	U
@@ -512,7 +512,7 @@ L13	19	T18		t	H
 L13	20	T56		faire	H
 L13	21	T26		e	H
 L13	22	/		?	U
-L13	23	T57		la	H
+L13	23	T32		n	H
 L13	24	T41		e	H
 L13	25	T17		s	H
 L13	26	T17		s	H
@@ -528,7 +528,7 @@ L13	35	T01		a	H
 L13	36	T18		t	H
 L13	37	T43		i	H
 L13	38	T33		o	H
-L13	39	T57		la	H
+L13	39	T32		n	H
 L13	40	/		?	U
 L13	41	T25		d	H
 L13	42	T41		e	H
@@ -617,7 +617,7 @@ L15	36	T56		faire	H
 L15	37	T40		a	H
 L15	38	T31		m	H
 L15	39	T12		n	H
-L15	40	T57		la	H
+L15	40	T32		n	H
 L15	41	T18		t	H
 L15	42	T12		n	H
 L15	43	T03		c	H

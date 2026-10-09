@@ -5,7 +5,7 @@ tx86e/ciphertext_f275r_preT36.tsv by relabelling T31 -> T36 at the f275r tokens 
     python3 tx86e/apply_t36.py [--check]   (--check: exit 1 if the committed file differs from what this derives)"""
 import os, sys
 H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(H)
-SRC, DST = os.path.join(H, 'ciphertext_f275r_preT36.tsv'), os.path.join(H, 'ciphertext_f275r.tsv')
+SRC, DST = os.path.join(H, 'ciphertext_f275r_preT36.tsv'), os.path.join(H, 'ciphertext_f275r_preT32.tsv')  # PISA-T32: the T32 step is tx86e/apply_t32.py
 picks, pos = {}, {}
 for ln in open(os.path.join(T, 'pis2/t31_tokens.tsv')).read().splitlines()[1:]:
     f = ln.split('\t')
@@ -35,6 +35,6 @@ assert done == set(picks), (done, picks)
 new = ''.join(out)
 if '--check' in sys.argv:
     ok = open(DST).read() == new
-    print('tx86e/ciphertext_f275r.tsv', 'up to date' if ok else 'STALE'); sys.exit(0 if ok else 1)
+    print('tx86e/ciphertext_f275r_preT32.tsv', 'up to date' if ok else 'STALE'); sys.exit(0 if ok else 1)
 open(DST, 'w').write(new)
-print('wrote tx86e/ciphertext_f275r.tsv:', ', '.join(f'{l} i{i} T31->T36' for l, i in sorted(picks)))
+print('wrote tx86e/ciphertext_f275r_preT32.tsv:', ', '.join(f'{l} i{i} T31->T36' for l, i in sorted(picks)))
