@@ -6843,3 +6843,149 @@ an I that is H), E216's plain "strong"/"bass" counted as unread M, E212's time w
 header settles it), and E213's signer left as G. D. Sheldon's office where the initials are L. F. Sheldon's. The reader's check of the
 sender's copies grepped mssEC 19 only; the Washington-sent telegrams of 1864 (E212, E214, E216) also need the mssEC 18 diff, where E212's
 copy sat already flagged `mssEC25-dup`, and a diff by addressee + date +-1 day, which would have caught E216 = E49. Corrections are for a FIX job (reading.md is the decoder's, rule 7); this section records them.
+
+## AUDIT (FV-FM5c)
+
+Verifier FV-FM5c (account 1, for LANE LEDGER), 9 Oct 2026, 00:29-00:5x UTC by `date -u`; a separate session from the reader FM-R3c
+(account 1), not protecting its conclusions. Scope: **E230, E234, E235, E236, E237** (ciphertext.txt, Cipher No. 1, Fort Monroe ledger
+mssEC 25 = Huntington object 5952; NOTES "## FM-R3c"). Nothing decoded beyond key look-ups in key.md and a token-by-token comparison
+with the period clear copies below. Key source for all five: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md.
+No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Scripts: `fortmonroe/fv_fm5c_hdl.py`, `fortmonroe/fv_fm5c_hdl2.py`
+(CONTENTdm full text, item info, page images to scratch). Print greps were run on the cached texts plus six volumes fetched to scratch.
+
+### 1. Duplicates, prior work, own transcription and image
+- **Duplicate diff:** pointers 5839, 5683, 5831, 5670, 5729 occur in ciphertext*.txt only in E230/E234/E235/E236/E237's own headers
+  (E77 = 5839/1 is a different entry on the same page); no other filed header for 25 Dec 1864 Rodgers/Fox, 22 May 1864 O'Brien/Rowe,
+  14 Dec 1864 Foster/Tullifinny, 14 May 1864 Rowe/Fulton and Craig, or 2-3 June 1864 Carter/Finck. mssEC 19/18 rows on disk
+  (`entries-mssEC19.tsv`, `ms18/entries-ms18.tsv`) for those dates are other telegrams. **No duplicate in our files.**
+- **Holder's clear copies (the decisive find).** The Huntington's CONTENTdm full text (p16003coll11, `CISOSEARCHALL`, under the LANE
+  LEDGER hdl token 00:34-00:39 UTC, 18 requests) returns, in the Eckert Papers' Washington **clear** telegram books, the plain text of four
+  of the five telegrams, word for word:
+  - **E230 -> pointer 8479** ("6 Pm. Ft. Monroe Va Dec. 25. 1864 / "Dictator" Chesapeake Bay for Hon. G. V. Fox ---- The brasses are worn
+    again in a few hours run ---- we can not go on in the "Dictator" ---- I go now in the Cuyler (signed) Jno. Rodgers Comm.").
+    Page 5838 (E230's own ledger, 19 Dec) carries the earlier Rodgers/Dictator traffic ("main journal brasses cut ...").
+  - **E234 -> pointer 4647** (mssEC p.206: "9 pm Fort Monroe May 22 / 5 pm OBrien says Gen Butler direct no press despatches sent unless
+    revised and approved by him ... Rowe has sent in the following not approved ... yesterday 12 M rebel cavalry attacked Fort Powhattan and
+    made three successive charges which were repulsed without much loss on our side, Enemy lost heavy and badly discouraged ... Bermuda
+    Hundred May twenty two - at 11 pm last night enemy in force attacked our lines near the centre ... Steamer Dictaten from Newbern reports
+    bottle picked up May 20 off Hatteras stating loss Str Manhattan at sea from Wilmington to Bermuda, large lot cotton picked up near
+    Hatteras").
+  - **E236 -> pointer 4625** (p.184: "7.30 P. M Ft Monroe Va May 14th 1864 / From Bermuda Hundred May 13th 8 P. M For Fulton & Craig via Ft
+    Monroe 14th May. At an early hour Gen Butler renewed advance towards Fort Darling, reached Kingsland Creek 12 m ... (sig) J. C. Rowe").
+  - **E237 -> pointer 10382** (p.240: "12M Nashville June 3 1864 / Nashville June 2d ---- Gen HW Halleck ---- The following has just been
+    recd from Br Genl S P Carter "Knoxville June Second ---- A Hanoverian named Finck ... approached from the South-ward and west ward ...
+    he come via Columbia S. C. ---- JD Webster Brig Genl").
+  - **E235: no clear copy** ("tallifinny" 1 = 5831 itself; "tulifinny" 2 = 5831, 5834; "coosawatchie" 3 = 5831, 5834, 7754 (Feb 1865);
+    "pocotaligo" 8, none this telegram; "knock fits" 1 = 5831; "parrotts" 22 and "exchanged prisoners" 20 read, none this telegram).
+  These clear books are in the holder's public transcription; FM-R3c's prior-work step did not run the holder's full-text search, which is
+  why the reader logged four of these as "not located".
+- **Image (eye check, this session):** pages 5831, 5670, 5729 fetched at native size (6024x7200) under the hdl token to scratch.
+  5831 (E235): cut with `tools/iiif_lines.py --image <page> --out <scratch> --region 550,3050,4750,3800 --lines-per-crop 4` and all 15
+  lines read from the 8 crops: the transcription matches the image word for word, including "lonesome", "volcano in salem", "publish
+  mansion", "Soasto polk[er struck] welch with woodford shoals", "prolong and mandate", "peach lamp plank pound Parrotts", "Garter windpipe";
+  header "Ft Monroe Dec. 14 - 1864 / Maj Eckert Washington". The last three lines (page 5832) were not imaged. 5729 (E237): crops of the
+  six last lines (`--region 300,950,4900,3750 --lines-per-crop 6`, two of nine crops read) match ("wilson ward zodiac", "pause he came via",
+  "columbia avon take joy", "D webster palsy how is juro progessing now"); header "Nashville 8.00 A.M. June 3rd / Maj Eckert Washin. /
+  Copy to Beckwith Gen. Grants Hd. Qrs." -- the telegram is Van Duzer (Nashville) to Washington, repeated through Fort Monroe for Beckwith
+  at Grant's headquarters, not "Eckert to Sheldon". 5670 (E236): the 11 lines on the page checked against a 700 px overview only (legible
+  at word level; no crops); the last four lines (page 5671) not imaged. E230 and E234 pages were image-read by FM-R3c. No gloss on any page.
+  The clear copies above are an independent check of every transcription word they share.
+
+### 2. Print
+Cached texts (168 volumes in sources/ia-fulltext/print-check) plus, fetched to scratch this session: OR I/39 pt 2 (`warofrebellion392unit`),
+OR I/44 (`warofrebellion44unit`), OR I/36 pt 3 (`warofrebellion363unit`), OR I/42 pt 3 (`warofrebellion423unit`), ORN I/11
+(`officialrecordso0011unse`), ORN I/16 (`officialrecordso0016unse`); 6 archive.org downloads, 2 s apart.
+- **E230:** "brasses are worn", "go now in the Cuyler", "go on in the" 0 in ORN I/11 (Dictator passim: Fox's orders of mid-Dec, "Dictator not
+  available" in Porter's Fort Fisher orders); 0 in all 174 volumes. Not printed in what was searched; plain text in the holder's clear book.
+- **E234:** looser phrase grep by FM-R3c on 11 volumes; nothing added here (the clear copy settles the text).
+- **E235:** "knock fits", "990"/"nine hundred and ninety exchanged", "steamer United States", "break of communication", "within 150 yards"
+  0 in OR I/44, ORN I/16, OR II/7, and 0 across the 174 volumes. **Context printed, OR I/44** (`warofrebellion44unit`): Foster to Halleck,
+  Hilton Head, 8 Dec 1864 (p.665-666: "Now hold a position within three-quarters of a mile of the railroad between the Coosawhatchie and
+  Tullifinny Rivers"); Foster to Sherman, 13 Dec (p.708: "My own force is strongly posted between the Coosawhatchie and Tullifinny Rivers, and
+  commands with its batteries the railroad, which is within 1,200 yards"); Sherman to Foster, 18 Dec (p.749-750: "let them whale away with
+  their 30-pounder Parrotts and break the road with cannon balls"); the 9 Dec Tullifinny action reports. The telegram itself is
+  not printed there.
+- **E236:** the courier passage is Butler's own 12 May telegram (clear copy 10323; OR I/36 pt 2), related, not the same words.
+- **E237:** "Finck", "Hanoverian named" 0 in OR I/39 pt 2, OR I/36 pt 3 and the 174 volumes; IA be-api `warofrebellion384unit`
+  "Hanoverian" 0 (HTTP 200, no positive control); Grant Papers vol. 11 be-api 502 (unreachable, not retried).
+- Google Books: three probes, all HTTP 429 (should have stopped at the first; host stopped). Chronicling America (www.loc.gov collection
+  JSON): four queries for E235 phrases, 0 hits, one 503; the date filter was not validated with a positive control, so the 0s are not
+  evidence (logged unreachable-in-effect). Butler IV-V searched (cached) for E234/E236. Basler: not searched (no row to or from Lincoln).
+
+### 3. Grade and reading corrections (FM-R3c's table, reading.md)
+Where a period clear copy exists, every code word it renders is grade **C** (known plaintext) by rule 4, and decoder values that the clear
+copy contradicts are corrected.
+- **E230:** "Forks" = **Fox** (phonetic plain, as "Are see" = R. C. in E193; clear copy "for Hon. G. V. Fox"; decoder's [Pensacola] wrong).
+  "John" in "Webster John Rodgers" is **plain** (decoder's [Grant] wrong). "tulip" (key: Open) has no counterpart in the clear copy (a
+  "----"): **M**. "Dick potatoe" / "Dick rater" = Dictator (plain, phonetic). Code words zebra, unity (stops), Sligo (In the), Webster
+  (signed) = **C 4**, M 1. Reading: "[Steamer] Dictator, Chesapeake Bay, for [Asst. Sec.] Fox. The brasses are worn again in a few hours'
+  run. We cannot go on in the Dictator. I go now in the [R. R.] Cuyler. [Signed] John Rodgers." Sender corrected: Commodore John Rodgers
+  (via Sheldon, Fort Monroe) to Asst. Sec. G. V. Fox, 25 Dec 1864, 6 p.m.
+- **E234:** "Bermuda" twice is **plain** (Bermuda Hundred; Bermuda, the islands; clear copy) -- the decoder's [White River] (key word Bermuda)
+  is wrong both times. All other values agree with the clear copy (Knox = Butler, Webb = Reinforcements, oiled = attacked, Simms = heavy,
+  Rose = enemy, Saco = Fort, Flora = Newbern, Hannibal = Wilmington, Weaseler = Steamer ...): **C 50**, M 0. The clerk's cipher copy has
+  "badly disorganized" where the clear copy has "badly discouraged" (a plain word; the image shows "disorganized", FM-R3c).
+- **E235 (no clear copy):** the decoder **drops the first line** ("Last friday lonesome who had landed between Tallifinny") -- reading.md
+  starts at "Creek and"; "lonesome" = **Foster** (H, key p.17 l.11; Lonesome = Foster also on 5833). "polk[er]" = **Command** (H; the decoder
+  missed it because of the deletion tag). "Weldon" = Rail Road is the key's own value (H, p.23 l.9 R), not an M. "peach lamp plank pound
+  Parrotts" = 2 + 30 + 2: "[two] [30]-[?] pound Parrotts"; the decoder's "[34]" is wrong; Sherman's and Foster's guns there were 30-pounder
+  Parrotts (OR I/44), so "plank" (2) is **M** (perhaps "32", perhaps a clerk's slip). "plug prolong and mandate" = 1-100 and 50 = about 150;
+  "pony william and modest" = 9 x 100 and 90 = **990** exchanged prisoners; "herat plunder" = here at [7]. "Shell done" = Sheldon (plain;
+  "George D Shell done" on 5915), so "L. F. Shell done" is the signature L. F. Sheldon, not a line indicator. Sender/direction corrected:
+  Sheldon (Fort Monroe) **to** Maj. Eckert, Washington, 14 Dec 1864 (header on the image), not "received at Fort Monroe, Eckert to Sheldon".
+  Code words: **H 44, M 1** (45). Reading: "Last Friday [Foster], who had landed between Tullifinny Creek and Coosawatchie just below
+  Pocotaligo, made a [reconnoissance] in [force] to within [150] yards of [the railroad], during which he cut an opening through the woods so as
+  to [command] the [railroad] with [siege] [guns]; then [fell back] about half a [mile] and held his own, although [attacked] by a large
+  [force]; lost about [150] [killed] and [wounded]. [The enemy] suffered severely, being twice [repulsed]. He was then able to knock fits out of
+  [the railroad] with [two] [30(-?)]-pound Parrotts. This accounts for the break of [communication] between [Charleston] and [Savannah]. We
+  heard [heavy] firing in the direction of [Savannah] [River], west of [Savannah], on Thursday and Friday. [Steamer] United States with [990]
+  exchanged prisoners left [Charleston] Monday morning, arrived here at [7] this morning and left immediately for Annapolis. [Signed] L. F.
+  Sheldon."
+- **E236:** "Bermuda" is **plain** (decoder [White River] wrong); "darling" is **plain** (Fort Darling; decoder's [Martinsburg] from key word
+  Darling wrong). All other values agree with the clear copy: **C 57**, M 0 (FM-R3c's four M are resolved).
+- **E237:** "columbia" is **plain** (Columbia, S.C.; decoder [Elizabeth City] wrong), "avon" = South Carolina (C); "Webster" is the plain
+  surname of Brig. Gen. J. D. Webster (decoder [signed] wrong), "palsy" = Brig. Genl (C); "waly" = South (C, clear "South-ward"; not in
+  key.md); "pause" is a plain operator word (in the clear copy too). "take joy" before "D Webster" is unexplained (the clear copy has "JD"):
+  **M 2**. Header: Brig. Gen. J. D. Webster (Nashville) to Halleck, 2 June 1864, repeated 3 June 8 a.m. to Eckert with copy to
+  Beckwith; "J. C. Van Duzer" is the Nashville telegraph superintendent's tail. **C 42, M 2**. (FM-R3c's "Charleston/Columbia place names
+  read by the decoder, Elizabeth City" are settled; "Charleston" = brandy is right.)
+
+### 4. Classification (key `period`)
+`depth_pct` = H+C / code-word groups (plain words the decoder mapped are excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E230** Rodgers (Dictator) via Sheldon to Fox, 25 Dec 1864 | **N1** (plain text in the holder's public transcription of the clear copy, pointer 8479) | yes (holder's transcription) | **D3** | 80.0 (C 4 of 5) | code clause: Sligo = In the (E237 "in the city", C), Webster = signed passim; external non-statistical: the period clear copy 8479; image FM-R3c |
+| **E234** O'Brien/Rowe via Sheldon to Eckert, 22 May 1864 | **N1** (clear copy 4647) | yes | **D3** | 100 (C 50 of 50) | code clause: Knox = Butler, oiled = attacked (E235/E236), Webb = Reinforcements (E236); external: clear copy 4647; image FM-R3c |
+| **E235** Sheldon to Eckert, 14 Dec 1864, Foster at Tullifinny, 990 exchanged prisoners | **N3** | unknown | **D3** | 97.8 (H 44 of 45) | code clause: Weldon/welch = Rail Road (x4 here; passim), Lonesome = Foster (5833), brandy/Bravo = Charleston, oiled = attacked (C in E234/E236); external non-statistical: OR I/44 pp.665-666, 708, 749-750 (Foster's force between Coosawhatchie and Tullifinny commanding the railroad with batteries; 30-pounder Parrotts to break the road), the 9 Dec action reports; image checked here (5831; 5832 not) |
+| **E236** Rowe press telegram via Monroe, 13-14 May 1864 | **N1** (clear copy 4625) | yes | **D3** | 100 (C 57 of 57) | code clause as E234; external: clear copy 4625; image overview here (5670; 5671 not) |
+| **E237** J. D. Webster (Nashville) to Halleck, Carter's Knoxville telegram on Finck, 2-3 June 1864 | **N1** (clear copy 10382) | yes | **D3** | 95.5 (C 42 of 44) | code clause: Holland = Beauregard, Empress/Embrace = Nashville, brandy = Charleston passim; external: clear copy 10382; image checked here (crops of 6 lines) |
+
+- **E235: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 14 Dec 1864 the Fort Monroe operator told Major Eckert
+  in Washington that on the previous Friday Foster's force, landed between Tullifinny Creek and the Coosawatchie below Pocotaligo, had
+  reconnoitred in force to within 150 yards of the Charleston and Savannah railroad, held its ground at a loss of about 150 killed and wounded,
+  and was breaking the railroad with 30-pound Parrotts, and that the steamer United States had brought 990 exchanged prisoners from Charleston
+  on their way to Annapolis. The telegram was not located in the Official Records (ser. I vol. 44, ser. II vol. 7), the Navy Official Records
+  (ser. I vol. 16), 174 cached volumes or the Huntington's full-text search (searched 9 Oct 2026)." Unsafe: "first decipherment", "previously
+  unread", "unpublished". Depth sentence (mine, from the reading): "On 14 Dec 1864 Fort Monroe reported that Foster's troops between the
+  Tullifinny and the Coosawatchie had come within 150 yards of the Charleston and Savannah railroad, lost about 150 men, and were shelling the
+  line with Parrott guns, cutting communication between Charleston and Savannah, while 990 exchanged prisoners passed through for Annapolis."
+- **E230, E234, E236, E237: N1.** Safe sentence (each): "Read at grade C with War Department Cipher No. 1 against the period clear copy in
+  the Eckert Papers (Huntington pointer 8479 / 4647 / 4625 / 10382), whose plain text is in the Huntington's public transcription; our reading
+  is an independent re-decipherment of the Fort Monroe cipher copy." Unsafe: any novelty word; "not located in print" without naming the
+  holder's clear copy. No status.json row or SO row (N3+ only, brief). Depth sentences recorded for the lane: E230 "On Christmas Day 1864
+  Commodore Rodgers told Fox the Dictator's brasses had worn out again after a few hours' run and he was going on in the Cuyler"; E234 "On 22
+  May 1864 Butler stopped unrevised press despatches at Fort Monroe, and the held-back report described the rebel cavalry's three charges on
+  Fort Powhatan and the night attack on the Bermuda Hundred lines"; E236 "On 13 May 1864 the press reported Butler's advance to Kingsland Creek
+  within three miles of Drewry's Bluff and a captured courier carrying Beauregard's promise of reinforcement"; E237 "On 2 June 1864 Carter at
+  Knoxville passed on a Hanoverian's report that Charleston held only 2,000 men and could be taken by 3,000 approaching from the south and west."
+
+### 5. Postmortem
+FM-R3c read all five soundly in substance, but logged four as "not located" because its prior-work step skipped the holder's own full-text
+search, which finds the Washington clear copies in one query each (the same route found 4551 for 5614 in FV-FM4). Lesson for the readers of
+the Fort Monroe ledger (E217, E219, E226-E229, E240-E245 handed on): before decoding, run CONTENTdm `CISOSEARCHALL` on two or three plain words
+of the entry (a ship, a place, a surname) -- a hit in the 4xxx/7xxx/8xxx/10xxx clear books makes the row C-graded and N1. Decoder slips found
+(for a FIX worker; corrections not applied here, rule 7 is the decoder's): plain names that are also key words -- Bermuda (E234 x2, E236),
+Darling (E236), Columbia and Webster (E237), John (E230) -- the "Forks" = Fox phonetic in E230, the dropped first line of E235 and the
+deletion-tagged "polk[er]" in E235, and the composite numeral "peach lamp plank" read as [34]. Headers to correct: E235 (Sheldon to Eckert)
+and E237 (Webster/Van Duzer, Nashville, to Halleck, repeated via Monroe for Beckwith).

@@ -2676,3 +2676,12 @@ p.235 9901/0 is Rucker's call to him) -- tail "[Signed] [Colonel] Webster", 6600
 FM-R3b's "[information correct]" -> "information".
 Side find for future readers: row 5747/0 (Butler to Benham, 13 June 1864, 3.40 PM, unfiled) is printed in clear in OR I/40 pt 2 pp.5-6 (N1).
 Requests: hdl.huntington.org 12 (one token block 00:38-00:40 UTC); archive.org 4; be-api 18; Google Books 1 (429, stopped).
+
+## FV-FM5c (9 Oct 2026, account 1, for LANE LEDGER)
+First audit of E230 E234 E235 E236 E237 (reader FM-R3c), AUDIT.md "## AUDIT (FV-FM5c)". The Huntington's CONTENTdm full text holds the
+period clear copies of four of them in the Washington clear books: E230 = 8479, E234 = 4647, E236 = 4625, E237 = 10382 -> N1, grade C, D3.
+E235 (Foster at the Tullifinny, 14 Dec 1864): no clear copy, N3 D3 (H 44, M 1), status.json row, SO-ECKERT-E235 queued, AUD2-LEDGER-11
+queued for account 3. Decoder fixes handed to a FIX worker (not applied here): plain Bermuda (E234 x2, E236), Darling (E236), Columbia and
+Webster (E237), John and Forks = Fox (E230); E235's dropped first line ("Last friday lonesome ..."), "polk[er]" = Command, "peach lamp plank"
+not [34]; headers E235 (Sheldon to Eckert) and E237 (J. D. Webster, Nashville, to Halleck, repeated via Monroe for Beckwith). Lesson for the
+next Fort Monroe readers: run the holder's full-text search on two or three plain words of each entry before decoding.
