@@ -1,0 +1,21 @@
+name	source	hits	reading_of_hits	grade
+Achaii	KRUGER	1	Krüger: not checked	none
+Africanus	AOSB_I3	2	same footnote; R4120 ficta for Rex Hispaniae	none
+Anastasius	KRUGER	1	"Krüger: Rusdorf pseudonym ""Anastasius de valle Quietis"" (published alias, not the R4120 mapping)"	none
+Antonius	AOSB_I3	2	I:3 real people (Antonius Cleophas, captain)	none
+Aurelius	AOSB_II1	2	"AOSB I:3 same footnote has ""Aurelio"" (line 18428, missed by stem; added by hand); II:1 hits are Egidius Aurelius, a student (unrelated)"	none
+Campania	AOSB_II1	3	II:1 not checked	none
+Franciscus	AOSB_I3	2	I:3 index entries, real people	none
+Hannibal	AOSB_II1	2	II:1 index: Carl Hannibal von Dohna / Hannibal von Schaumburg (real people)	none
+Marcus	AOSB_I3	4	not checked in context (common name)	none
+Paulus	AOSB_I3	2	I:3 index/ real people	none
+Podolia	AOSB_I3	5	geographic, real (Polish Podolia)	none
+Quirites	AOSB_I3	4	"I:3 ""quiritabitur/quiritandi"" (verb), not the cover name"	none
+Russia	AOSB_I3	6	geographic, real	none
+Russia	AOSB_II1	1	geographic, real	none
+Sardinia	AOSB_I3	1	"same footnote (""Sardiniam""); R4120 ficta for Livonia"	none
+Scipio	AOSB_I3	2	"I:3 p.~323 letter 165 (Oxenstierna/King to Camerarius, 6 Juni 1626) cipher footnote, plaintext ""Scipioni Africano"" x3 (OCR); R4120 ficta for Rex Galliae"	none
+Sigismundus	AOSB_I3	24	POSITIVE CONTROL for the grep: the Polish king, 44 hits across the two volumes	none
+Sigismundus	AOSB_II1	20	POSITIVE CONTROL for the grep: the Polish king, 44 hits across the two volumes	none
+Sigismundus	KRUGER	1	POSITIVE CONTROL for the grep: the Polish king, 44 hits across the two volumes	none
+Aurelio (by hand)	AOSB_I3	1	"AOSB I:3 same footnote has ""Aurelio"" (line 18428, missed by stem; added by hand); II:1 hits are Egidius Aurelius, a student (unrelated)"	none
