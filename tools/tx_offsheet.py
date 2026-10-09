@@ -22,6 +22,8 @@ Read-free: no model call, no truth file opened by `detect` or `grow`.
           cluster with >= min_size tiles -> a new cell NEW_k, exemplar = the medoid tile; writes the grown
           sheet PNG (base cells: label + 3 consensus exemplars; grown cells: NEW_k + medoid + 2 nearest
           members, never a value) and a cells TSV.
+  census  value-blind tile census of other pages (sibling leaves): glyph-size components per page, counted when
+          within the item's median within-cell distance of a flagged tile and of a consensus cell (no labels shown).
   recall  (scoring step, run only after detect's output is committed) recall of the baseline's errors
           (tx_bench.position_errors) among flagged positions; share of all tiled and of scored positions.
 
@@ -439,6 +441,57 @@ def grow(cfg, rows, F, base_cells, thr=0.9, min_size=3, out_png=None, out_tsv=No
     return cells
 
 
+# ---------------------------------------------------------------- census (value-blind, sibling pages)
+def page_blobs(path, min_area=30, hmin=8, hmax=120):
+    from scipy import ndimage
+    ink = load_ink(path)
+    lab, n = ndimage.label(ink, structure=np.ones((3, 3)))
+    out = []
+    for i, sl in enumerate(ndimage.find_objects(lab)):
+        if sl is None:
+            continue
+        ys, xs = sl
+        h, w = ys.stop - ys.start, xs.stop - xs.start
+        if not (hmin <= h <= hmax) or w > 3 * hmax or int((lab[sl] == i + 1).sum()) < min_area:
+            continue
+        out.append([xs.start, xs.stop, ys.start, ys.stop])
+    return ink, out
+
+
+def census(cfg, det_rows, pages, knn=3):
+    """Value-blind: per page, glyph-size components and how many sit within the item's within-cell distance of
+    (a) a flagged (off-sheet candidate) tile and (b) an on-sheet consensus cell. No label or value is read or shown."""
+    rows, F, _ = detect(cfg, knn=knn)
+    flg = {(d['line'], str(d['pos'])) for d in det_rows if int(d['flagged'])}
+    off = [i for i, r in enumerate(rows) if (r['line'], str(r['pos'])) in flg]
+    cells = defaultdict(list)
+    for i, r in enumerate(rows):
+        if r['consensus'] and (r['line'], str(r['pos'])) not in flg:
+            cells[r['consensus']].append(i)
+    cells = {k: v for k, v in cells.items() if len(v) >= 2}
+    within = []
+    for idx in cells.values():
+        for i in idx:
+            ds = sorted(dist(F[i], F[j]) for j in idx if j != i)
+            within.append(float(np.mean(ds[:knn])))
+    thr = max(0.05, float(np.median(within)) if within else 0.0)  # floor: identical synthetic tiles give 0
+    out = []
+    for pg in pages:
+        ink, bl = page_blobs(pg)
+        n_off = n_on = n_off_only = 0
+        for b in bl:
+            f = tile_feature(ink, b)
+            d_off = min((dist(f, F[i]) for i in off), default=9e9)
+            d_on = min((float(np.mean(sorted(dist(f, F[j]) for j in idx)[:knn])) for idx in cells.values()),
+                       default=9e9)
+            n_off += d_off <= thr
+            n_on += d_on <= thr
+            n_off_only += d_off <= thr and d_off < d_on
+        out.append(dict(page=pg, blobs=len(bl), thr=round(thr, 4), near_flagged=int(n_off), near_cell=int(n_on),
+                        near_flagged_not_cell=int(n_off_only)))
+    return out
+
+
 # ---------------------------------------------------------------- recall (scoring)
 def recall(cfg, det_rows, base, exclude_flagged=False):
     lm = tb.load_label_map(cfg['label_map']) if cfg.get('label_map') else None
@@ -474,6 +527,9 @@ def main(argv=None):
     g = sub.add_parser('grow'); g.add_argument('configs', nargs='+'); g.add_argument('--det', nargs='+', required=True)
     g.add_argument('--thr', type=float, default=0.9); g.add_argument('--min-size', type=int, default=3)
     g.add_argument('--png', required=True); g.add_argument('--tsv', required=True)
+    c = sub.add_parser('census', help='value-blind tile census of other pages against the flagged tiles and cells')
+    c.add_argument('config'); c.add_argument('--det', required=True); c.add_argument('--pages', nargs='+', required=True)
+    c.add_argument('--out', required=True)
     r = sub.add_parser('recall'); r.add_argument('config'); r.add_argument('--det', required=True)
     r.add_argument('--base', required=True)
     r.add_argument('--exclude-flagged', action='store_true',
@@ -494,6 +550,13 @@ def main(argv=None):
             rr['flagged'] = int(det[(rr['line'], rr['pos'])]['flagged'])
         out = grow(cfg, rows, F, cells, args.thr, args.min_size, args.png, args.tsv)
         print('grown cells: %d (%s)' % (len(out), ', '.join('%s n=%d' % (c['cell'], c['size']) for c in out)))
+    elif args.cmd == 'census':
+        cfg = json.load(open(args.config))
+        out = census(cfg, tb.read_tsv(args.det), args.pages)
+        write_tsv(args.out, out, ['page', 'blobs', 'thr', 'near_flagged', 'near_cell', 'near_flagged_not_cell'],
+                  'tx_offsheet census %s (value-blind: no label, no value)' % cfg['item'])
+        print('census: %d pages, %d blobs, %d near a flagged tile and no closer cell' %
+              (len(out), sum(o['blobs'] for o in out), sum(o['near_flagged_not_cell'] for o in out)))
     else:
         cfg = json.load(open(args.config))
         print(json.dumps(recall(cfg, tb.read_tsv(args.det), args.base, args.exclude_flagged)))

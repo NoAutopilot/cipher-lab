@@ -65,6 +65,15 @@ def main():
     assert r1['errors'] == 2 and r1['caught'] >= 1 and r1['caught_score_only'] >= 1, r1
     r2 = T.recall(cfg2, rows, passes[0], exclude_flagged=True)
     assert r2['errors'] == 1 and r2['exclude_flagged'], r2
+    # census: a page holding only the planted shape's kind (X) is near a flagged tile; a page of I bars is near a cell
+    for name, kind in (('pgX', 'X'), ('pgI', 'I')):
+        pim = Image.new('L', (400, 80), 255); pd = ImageDraw.Draw(pim)
+        for k in range(6):
+            glyph(pd, kind, 20 + 60 * k)
+        pim.save(os.path.join(tmp, name + '.jpg'))
+    cen = T.census(cfg, rows, [os.path.join(tmp, 'pgX.jpg'), os.path.join(tmp, 'pgI.jpg')])
+    assert cen[0]['near_flagged_not_cell'] > cen[1]['near_flagged_not_cell'], cen
+    assert cen[1]['near_cell'] >= 1, cen
     print('test_tx_offsheet: ALL PASS')
 
 
