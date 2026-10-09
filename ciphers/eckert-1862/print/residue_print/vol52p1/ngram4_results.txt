@@ -1,0 +1,15 @@
+# OR djvu files in /tmp/claude-0/s/or (warofrebellion015201rootrich = Ser. I vol. 52 pt 1; warofrebellionco0005unit_i9i6 = vol. 5); run from eckert-1862/ with: python3 -I print/residue_print/vol52p1/ngram_check.py 4
+entries 13 vols ['warofrebellion015201rootrich', 'warofrebellionco0005unit_i9i6']
+4982 *14 Feb*  Feb 14 ' 62 2 PM [Halleck] Ple 53 {'warofrebellion015201rootrich': 5, 'warofrebellionco0005unit_i9i6': 2} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4982 *14 Feb*  Feb 14 ' 62 For [Lander] [Rose 45 {'warofrebellion015201rootrich': 1, 'warofrebellionco0005unit_i9i6': 1} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4982 *14 Feb*  Feb 14 ' 62. 11 PM [Buell] Tel 51 {'warofrebellion015201rootrich': 34, 'warofrebellionco0005unit_i9i6': 1} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4984 *15 Feb*  Genl Hooker February 15th 1862 35 {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4984 *15 Feb*  Feb 15 " 62 [Halleck] the Pres 32 {'warofrebellion015201rootrich': 1, 'warofrebellionco0005unit_i9i6': 0} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4984 *02 Mar*  March 2d 1862 For [Rosecrans]  45 {'warofrebellion015201rootrich': 3, 'warofrebellionco0005unit_i9i6': 0} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4992 *16 Feb*  Feb 16 " 62 <deletion>of this  57 {'warofrebellion015201rootrich': 2, 'warofrebellionco0005unit_i9i6': 1} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4992 *16 Feb*  F. Swain Cairo Feb 16 " 62 For 35 {'warofrebellion015201rootrich': 16, 'warofrebellionco0005unit_i9i6': 0} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4992 *16 Feb*  Feb 16 " 62 For [Buell] give m 45 {'warofrebellion015201rootrich': 2, 'warofrebellionco0005unit_i9i6': 0} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4998 *18 Feb*  Feby 18th 1862. For William Ra 47 {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 2} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4999 *19 Feb*  Feb 19 " 62 [Thomas A. Scott,  86 {'warofrebellion015201rootrich': 4, 'warofrebellionco0005unit_i9i6': 0} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4999 *19 Feb*  Feb 19 " 62 [Buell] what news  22 {'warofrebellion015201rootrich': 3, 'warofrebellionco0005unit_i9i6': 0} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}
+4999 *19 Feb*  Feb 19 " 62 [Halleck] telegram 20 {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0} shuf {'warofrebellion015201rootrich': 0, 'warofrebellionco0005unit_i9i6': 0}

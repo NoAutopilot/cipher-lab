@@ -2472,3 +2472,45 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%); this job ad
 - [x] image-check: 5021 read 9 Oct 2026 (Merlin)
 - [ ] retry: --check rerun in a clean dir, ~$0.3
 Verdict: keep going: 2 internal gaps; cheapest next: clean-directory `residue_decode.py --check` with 58 hdl requests, ~$0.3
+
+## E62-CHECK2 (9 Oct 2026, account 4, for LANE DEFAULT-account-4-20261009-1051)
+Worker E62-CHECK2, 11:24-11:5x UTC by date -u, cap USD 3. Status unchanged (partial). Rule 10: found / not found only, no novelty class. Prior-work lines (by hand;
+tools/prior_work.py cannot run on this folder, no items.tsv row, as E62-STALE): own work = E62-ALN/E62-9660/E62-STALE sections above; ROOM claims on eckert-1862: none live.
+(a) Stale `residue_decode.py --check`, explained. All 58 page records re-fetched from hdl.huntington.org into a clean scratch dir (items/<pointer>/false, 3.3 s apart, one
+transient curl 000 on 5014, retried once, 200): 58 of 58 text sha256 equal print/residue/pages_manifest.tsv; `residue_decode.py <clean dir> --check` = "residue readings are
+current", exit 0. Cause test: the script as it stood before FIX-DEC (9e576d1d^, which reads every `*.json` >= 4956 in the dir) on the same clean dir: exit 0; on a copy of it
+plus one extra page file (9400.json, a copy of 5104): "stale", exit 1; the current script on that same dir with the stray file: exit 0. So the stale report of 8 Oct (E62-9660)
+was the shared pages dir under the pre-FIX-DEC script (page set changed by files outside the manifest), not a change in the Huntington text, key.md or decode.py. No file
+regenerated (nothing stale). Control: the current script with the stray file stays current (the FIX-DEC fix works), and the old script on the clean dir is current (the old
+script was not wrong on the right page set).
+(c) Printed text for the single-day rows (Myrtle, Mary, Ingress, Camden, Humboldt), other OR volume. Volumes new to this folder: Ser. I vol. 52 pt 1 (IA
+warofrebellion015201rootrich, title page "Series I Vol LII in two parts", `_djvu.txt`, 2.7 MB) and vol. 5 (warofrebellionco0005unit_i9i6). 13 residue entries (pages 4982,
+4984, 4992, 4998, 4999, the ones carrying the five words plus their page neighbours in readings.md) compared by shared 4-word runs of the decoded reading, with the same
+entry word-shuffled as control (seed 1862): shuffled 0 hits on every entry in both volumes; real entries 0-34. Output print/residue_print/vol52p1/ngram4_results.txt,
+script ngram_check.py (needs the two djvu files in scratch).
+Found: one entry, 4982 entry 3 (McClellan to Buell, 14 Feb 1862, 11 PM, "Telegraph me in cipher, and much detail, the position of your troops ... Where is Thomas, and
+where is Carter? ... Bowling Green line ... line of the Cumberland. Write fully"), 34 shared 4-grams, in vol. 52 pt 1 under the page header numbered 209 (djvu text, page image
+not read). The ledger reads Camden (image-checked LS3-R62) where the print has "Thomas": a dated plain-text witness for Camden = Thomas on 14 Feb, outside key.md's 16-21 Feb
+range. Not entered: key.md unchanged, grade stays M for the ledger token (one occurrence, the print is a witness not a key source; a `decode_key --try`-style test needs a
+second occurrence). 4992 entry 2 (McClellan to Foote, 16 Feb, "Sorry you are wounded ...") also in vol. 52 pt 1 (16 shared 4-grams); it carries no M token.
+Not found: the Halleck 14 Feb 2 PM entry (Myrtle, Mary) as a whole in either volume (only formula runs: "as soon as possible", "the number of troops"); the Scott 16/19 Feb entries
+(Ingress) and the 2 Mar Rosecrans/Lander entry (Humboldt): only formula runs ("I do not know what", "I want you to keep a", "what news have you" -> a Farragut telegram of 1864); no
+Myrtle/Mary/Ingress/Humboldt witness from the print in these two volumes. ORN not searched.
+Requests: hdl.huntington.org 60 (58 + the transient + 1 retry), archive.org 4 (advancedsearch 2, `_djvu.txt` 2). Subagents: 0.
+
+## Remaining gaps (E62-CHECK2, 9 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%); this job adds no reading.
+- Myrtle, Mary, Ingress, Humboldt single-day rows - blocker: no-key-material; vols. 5 and 52 pt 1 give no witness; next: ORN (Official Records of the Navies, Feb 1862, Foote/Tennessee River items) and vol. 7's Halleck-McClellan pages by phrase, ~USD 1
+- Camden = Thomas on 14 Feb (OR 52 pt 1, p. 209 header) - blocker: open-codes; one occurrence, graded M; next: read the OR 52 pt 1 page image at that telegram and look for a second Camden entry 13-15 Feb in the ledger, ~USD 0.5
+- Merlin = Maryland vs Virginia - blocker: open-codes; as E62-STALE
+- object 9660, 8472 and 6254 entries - blocker: no-key-material; as E62-9660
+
+## Escalation (E62-CHECK2)
+- [x] siblings: no new sibling
+- [x] clear-pages: none
+- [ ] known-keys: Cipher No. 4 copy in the Friedman Collection; next: owner's desk runner, ~USD 1
+- [ ] print: ORN and the OR vol. 7 Halleck pages for the four unmatched words, ~USD 1
+- [n/a] key-rebuild: Camden = Thomas logged, key.md unchanged
+- [ ] image-check: OR 52 pt 1 page image for Camden; next: IA reader by a person or the Hathi copy, ~USD 0.5
+- [x] retry: residue_decode.py --check rerun clean, current; stale cause explained
+Verdict: keep going: 2 internal gaps; cheapest next: check the Camden second occurrence in the ledger text, ~USD 0.5
