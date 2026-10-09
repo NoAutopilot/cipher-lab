@@ -1,0 +1,170 @@
+line	pos	plain	truth	ref_sign	pos_class	line_len	line_in_call	seg_edge	band_edge	glued	stroke	erosion	box_w	box_h	n_cov	n_wrong	same_wrong	read_A	read_B	read_H	read_H2	read_L	err_A	err_B	err_H	err_H2	err_L
+f178r_L01	9	qual	T78	T78	inner	31	1	-	-	-	-				5	0		T78	T78	T78	T78	T78	0	0	0	0	0
+f178r_L01	10	d	T18|T63	T63	inner	31	1	-	-	-	-				5	0		T63	T63	T63	T63	T63	0	0	0	0	0
+f178r_L01	11	e	T45|T66|T86	T86	inner	31	1	-	-	-	-				5	1		T86	T86	T60	T86	T86	0	0	1	0	0
+f178r_L01	13	o	T19|T52|T55	T19	inner	31	1	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178r_L01	14	l	T13|T51|T58|T95	T58	inner	31	1	-	-	-	-				5	0		T58	T58	T58	T58	T58	0	0	0	0	0
+f178r_L01	15	t	T27|T53|T65	T53	inner	31	1	-	-	-	-				5	0		T53	T53	T53	T53	T53	0	0	0	0	0
+f178r_L01	16	i	T25|T52|T80|T96	T96	inner	31	1	-	-	-	-				5	0		T96	T96	T96	T96	T96	0	0	0	0	0
+f178r_L01	17	g	T70|T88	T70	inner	31	1	-	-	-	-				5	0		T70	T70	T70	T70	T70	0	0	0	0	0
+f178r_L01	18	i	T25|T52|T80|T96	T25	inner	31	1	-	-	-	-				5	0		T25	T25	T25	T25	T25	0	0	0	0	0
+f178r_L01	19	o	T19|T52|T55	T19	inner	31	1	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178r_L01	20	r	T83|T97	T83	inner	31	1	-	-	-	-				5	1		T83	T24	T83	T83	T83	0	1	0	0	0
+f178r_L01	21	n	T60|T76	T60	inner	31	1	-	-	-	-				5	0		T60	T60	T60	T60	T60	0	0	0	0	0
+f178r_L01	22	i	T25|T52|T80|T96	T80	inner	31	1	-	-	-	-				5	0		T80	T80	T80	T80	T80	0	0	0	0	0
+f178r_L01	23	e	T45|T66|T86	T86	inner	31	1	-	-	-	-				5	0		T86	T86	T86	T86	T86	0	0	0	0	0
+f178r_L01	24	r	T83|T97	T83	inner	31	1	-	-	-	-				5	1		T83	T24	T83	T83	T83	0	1	0	0	0
+f178r_L01	25	a	T37|T85	T37	inner	31	1	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178r_L01	26	a	T37|T85	T85	inner	31	1	-	-	-	-				5	0		T85	T85	T85	T85	T85	0	0	0	0	0
+f178r_L01	27	c	T36|T50	T92	inner	31	1	-	-	-	-				5	3	1	T92	T92	T50	T50	T92	1	1	0	0	1
+f178r_L01	28	a	T37|T85	T66	inner	31	1	-	-	-	-				5	5	0	T66	T66	T51	T51	T66	1	1	1	1	1
+f178r_L01	29	r	T83|T97	T83	inner	31	1	-	-	-	-				5	1		T83	T24	T83	T83	T83	0	1	0	0	0
+f178r_L01	30	d	T18|T63	T63	inner	31	1	-	-	-	-				5	0		T63	T63	T63	T63	T63	0	0	0	0	0
+f178r_L01	31	e	T45|T66|T86	T45	last	31	1	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178r_L02	1	n	T60|T76	T60	first	31	2	-	-	-	-				5	0		T60	T60	T60	T60	T60	0	0	0	0	0
+f178r_L02	2	e	T45|T66|T86	T45	inner	31	2	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178r_L02	3	s	T57|T92|T95|T98|X_CE	T98	inner	31	2	-	-	-	-				5	0		T98	T98	T98	T98	T98	0	0	0	0	0
+f178r_L02	4	i	T25|T52|T80|T96	T25	inner	31	2	-	-	-	-				5	0		T25	T25	T25	T25	T25	0	0	0	0	0
+f178r_L02	5	p	T90	T90	inner	31	2	-	-	-	-				5	0		T90	T90	T90	T90	T90	0	0	0	0	0
+f178r_L02	6	r	T83|T97	T97	inner	31	2	-	-	-	-				5	0		T97	T97	T97	T97	T97	0	0	0	0	0
+f178r_L02	7	e	T45|T66|T86	T45	inner	31	2	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178r_L02	8	t	T27|T53|T65	T65	inner	31	2	-	-	-	-				5	0		T65	T65	T65	T65	T65	0	0	0	0	0
+f178r_L02	9	e	T45|T66|T86	T86	inner	31	2	-	-	-	-				5	0		T86	T86	T86	T86	T86	0	0	0	0	0
+f178r_L02	10	n	T60|T76	T76	inner	31	2	-	-	-	-				5	0		T76	T76	T76	T76	T76	0	0	0	0	0
+f178r_L02	11	d	T18|T63	T18	inner	31	2	-	-	-	-				5	0		T18	T18	T18	T18	T18	0	0	0	0	0
+f178r_L02	12	e	T45|T66|T86	T45	inner	31	2	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178r_L02	13	a	T37|T85	T37	inner	31	2	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178r_L02	14	c	T36|T50	T36	inner	31	2	-	-	-	-				5	0		T36	T36	T36	T36	T36	0	0	0	0	0
+f178r_L02	15	h	T56|T64	T56	inner	31	2	-	-	-	-				5	1		T56	T56	T52	T56	T56	0	0	1	0	0
+f178r_L02	16	a	T37|T85	T37	inner	31	2	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178r_L02	17	u	T33|T49	T33	inner	31	2	-	-	-	-				5	0		T33	T33	T33	T33	T33	0	0	0	0	0
+f178r_L02	18	e	T45|T66|T86	T45	inner	31	2	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178r_L02	19	s	T57|T92|T95|T98|X_CE	T70	inner	31	2	-	-	-	-				5	3	1	T70	T70	T57	T57	T70	1	1	0	0	1
+f178r_L02	20	e	T45|T66|T86	T86	inner	31	2	-	-	-	-				5	0		T86	T86	T86	T86	T86	0	0	0	0	0
+f178r_L02	21	p	T90	T90	inner	31	2	-	-	-	-				5	0		T90	T90	T90	T90	T90	0	0	0	0	0
+f178r_L02	22	i	T25|T52|T80|T96	T80	inner	31	2	-	-	-	-				5	0		T80	T80	T80	T80	T80	0	0	0	0	0
+f178r_L02	23	u	T33|T49	T49	inner	31	2	-	-	-	-				5	0		T49	T49	T49	T49	T49	0	0	0	0	0
+f178r_L02	24	a	T37|T85	T85	inner	31	2	-	-	-	-				5	0		T85	T85	T85	T85	T85	0	0	0	0	0
+f178r_L02	25	r	T83|T97	T83	inner	31	2	-	-	-	-				5	1		T83	T24	T83	T83	T83	0	1	0	0	0
+f178r_L02	26	i	T25|T52|T80|T96	T25	inner	31	2	-	-	-	-				5	0		T25	T25	T25	T25	T25	0	0	0	0	0
+f178r_L02	27	t	T27|T53|T65	T53	inner	31	2	-	-	-	-				5	0		T53	T53	T53	T53	T53	0	0	0	0	0
+f178r_L02	28	o	T19|T52|T55	T19	inner	31	2	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178r_L02	29	r	T83|T97	T83	inner	31	2	-	-	-	-				5	1		T83	T24	T83	T83	T83	0	1	0	0	0
+f178r_L02	30	n	T60|T76	T60	inner	31	2	-	-	-	-				5	0		T60	T60	T60	T60	T60	0	0	0	0	0
+f178r_L02	31	a	T37|T85	T37	last	31	2	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178r_L03	1	r	T83|T97	T83	first	35	3	-	-	-	-				5	1		T83	T24	T83	T83	T83	0	1	0	0	0
+f178r_L03	2	e	T45|T66|T86	T45	inner	35	3	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178r_L03	3	a	T37|T85	T37	inner	35	3	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178r_L03	7	a	T37|T85	T37	inner	35	3	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178r_L03	8	s	T57|T92|T95|T98|X_CE	T92	inner	35	3	-	-	-	-				5	0		T92	T92	T92	T92	T92	0	0	0	0	0
+f178r_L03	9	o	T19|T52|T55	T55	inner	35	3	-	-	-	-				5	0		T55	T55	T55	T55	T55	0	0	0	0	0
+f178r_L03	10	l	T13|T51|T58|T95	T65	inner	35	3	-	-	-	-				5	3	1	T65	T65	T51	T51	T65	1	1	0	0	1
+f178r_L03	11	o	T19|T52|T55	T19	inner	35	3	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178r_L03	12	a	T37|T85	T85	inner	35	3	-	-	-	-				5	0		T85	T85	T85	T85	T85	0	0	0	0	0
+f178r_L03	13	n	T60|T76	T76	inner	35	3	-	-	-	-				5	0		T76	T76	T76	T76	T76	0	0	0	0	0
+f178r_L03	14	d	T18|T63	T63	inner	35	3	-	-	-	-				5	0		T63	T63	T63	T63	T63	0	0	0	0	0
+f178r_L03	15	a	T37|T85	T37	inner	35	3	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178r_L03	16	r	T83|T97	T83	inner	35	3	-	-	-	-				5	1		T83	T24	T83	T83	T83	0	1	0	0	0
+f178r_L03	17	s	T57|T92|T95|T98|X_CE	T92	inner	35	3	-	-	-	-				5	0		T92	T92	T92	T92	T92	0	0	0	0	0
+f178r_L03	18	e	T45|T66|T86	T45	inner	35	3	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178r_L03	19	n	T60|T76	T60	inner	35	3	-	-	-	-				5	0		T60	T60	T60	T60	T60	0	0	0	0	0
+f178r_L03	20	e	T45|T66|T86	T45	inner	35	3	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178r_L03	21	a	T37|T85	T85	inner	35	3	-	-	-	-				5	0		T85	T85	T85	T85	T85	0	0	0	0	0
+f178r_L03	22	turino	T46	T46	inner	35	3	-	-	-	-				5	0		T46	T46	T46	T46	T46	0	0	0	0	0
+f178r_L03	23	t	T27|T53|T65	T90	inner	35	3	-	-	-	-				5	5	1	T90	T90	T90	T90	T90	1	1	1	1	1
+f178r_L03	24	t	T27|T53|T65	T53	inner	35	3	-	-	-	-				5	2	1	<deleted>	<deleted>	T53	T53	T53	1	1	0	0	0
+f178r_L03	25	o	T19|T52|T55	T19	inner	35	3	-	-	-	-				5	2	1	<deleted>	<deleted>	T19	T19	T19	1	1	0	0	0
+f178r_L03	26	l	T13|T51|T58|T95	T58	inner	35	3	-	-	-	-				5	2	1	<deleted>	<deleted>	T58	T58	T58	1	1	0	0	0
+f178r_L03	27	t	T27|T53|T65	T65	inner	35	3	-	-	-	-				5	0		T53	T53	T65	T65	T65	0	0	0	0	0
+f178r_L03	28	o	T19|T52|T55	T52	inner	35	3	-	-	-	-				5	0		T19	T19	T52	T52	T52	0	0	0	0	0
+f178r_L03	29	l	T13|T51|T58|T95	T95	inner	35	3	-	-	-	-				5	0		T58	T58	T51	T51	T95	0	0	0	0	0
+f178r_L03	30	i	T25|T52|T80|T96	T25	inner	35	3	-	-	-	-				5	2	1	<deleted>	<deleted>	T25	T25	T25	1	1	0	0	0
+f178r_L03	31	c	T36|T50	T96	inner	35	3	-	-	-	-				5	4	0	<deleted>	<deleted>	T27	T36	T96	1	1	1	0	1
+f178r_L03	32	e	T45|T66|T86	T66	inner	35	3	-	-	-	-				5	3	0	<deleted>	<deleted>	X_NEW	T66	T66	1	1	1	0	0
+f178r_L03	33	n	T60|T76	T60	inner	35	3	-	-	-	-				5	2	1	<deleted>	<deleted>	T60	T60	T60	1	1	0	0	0
+f178r_L03	34	c	T36|T50	T90	inner	35	3	-	-	-	-				5	5	0	<deleted>	<deleted>	T90	T90	T90	1	1	1	1	1
+f178v_L05	1	e	T45|T66|T86	T76	first	31	5	-	-	-	-				5	4	0	T76	T76	X_NEW	T66	T76	1	1	1	0	1
+f178v_L05	2	s	T57|T92|T95|T98|X_CE	T57	inner	31	5	-	-	-	-				5	0		T57	T57	T57	T57	T57	0	0	0	0	0
+f178v_L05	3	o	T19|T52|T55	T55	inner	31	5	-	-	-	-				5	0		T55	T55	T55	T55	T55	0	0	0	0	0
+f178v_L05	4	t	T27|T53|T65	T90	inner	31	5	-	-	-	-				5	5	1	T90	T90	T90	T90	T90	1	1	1	1	1
+f178v_L05	5	l	T13|T51|T58|T95	T58	inner	31	5	-	-	-	-				5	0		T58	T58	T58	T58	T58	0	0	0	0	0
+f178v_L05	6	a	T37|T85	T37	inner	31	5	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178v_L05	7	m	T17|T42|T54	T42	inner	31	5	-	-	-	-				5	1		T42	X_NEW	T17	T17	T42	0	1	0	0	0
+f178v_L05	8	o	T19|T52|T55	T19	inner	31	5	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178v_L05	9	s	T57|T92|T95|T98|X_CE	T64	inner	31	5	-	-	-	-				5	5	0	T13	T64	T13	T64	T64	1	1	1	1	1
+f178v_L05	10	i	T25|T52|T80|T96	T25	inner	31	5	-	-	-	-				5	0		T25	T25	T25	T25	T25	0	0	0	0	0
+f178v_L05	11	e	T45|T66|T86	T86	inner	31	5	-	-	-	-				5	1		T86	T60	T86	T86	T86	0	1	0	0	0
+f178v_L05	12	d	T18|T63	T63	inner	31	5	-	-	-	-				5	0		T63	T63	T63	T63	T63	0	0	0	0	0
+f178v_L05	13	e	T45|T66|T86	T45	inner	31	5	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178v_L05	14	l	T13|T51|T58|T95	T13	inner	31	5	-	-	-	-				5	1		T13	T13	T13	T64	T13	0	0	0	1	0
+f178v_L05	15	a	T37|T85	T85	inner	31	5	-	-	-	-				5	0		T85	T85	T85	T85	T85	0	0	0	0	0
+f178v_L05	16	o	T19|T52|T55	T19	inner	31	5	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178v_L05	18	e	T45|T66|T86	T45	inner	31	5	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178v_L05	19	n	T60|T76	T76	inner	31	5	-	-	-	-				5	0		T76	T76	T76	T76	T76	0	0	0	0	0
+f178v_L05	20	i	T25|T52|T80|T96	T25	inner	31	5	-	-	-	-				5	0		T25	T25	T25	T25	T25	0	0	0	0	0
+f178v_L05	21	o	T19|T52|T55	T19	inner	31	5	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178v_L05	22	n	T60|T76	T60	inner	31	5	-	-	-	-				5	0		T60	T60	T60	T60	T60	0	0	0	0	0
+f178v_L05	23	e	T45|T66|T86	T86	inner	31	5	-	-	-	-				5	0		T86	T86	T86	T86	T86	0	0	0	0	0
+f178v_L05	24	che	T89	T89	inner	31	5	-	-	-	-				5	0		T89	T89	T89	T89	T89	0	0	0	0	0
+f178v_L05	25	s	T57|T92|T95|T98|X_CE	X_CE	inner	31	5	-	-	-	-				5	1		T50	T92	T92	T92	X_CE	1	0	0	0	0
+f178v_L05	26	o	T19|T52|T55	T19	inner	31	5	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178v_L05	27	n	T60|T76	T76	inner	31	5	-	-	-	-				5	0		T76	T76	T76	T76	T76	0	0	0	0	0
+f178v_L05	28	o	T19|T52|T55	T52	inner	31	5	-	-	-	-				5	0		T52	T52	T52	T52	T52	0	0	0	0	0
+f178v_L05	29	m	T17|T42|T54	T54	inner	31	5	-	-	-	-				5	0		T54	T54	T54	T54	T54	0	0	0	0	0
+f178v_L05	30	a	T37|T85	T37	inner	31	5	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178v_L05	31	n	T60|T76	T76	last	31	5	-	-	-	-				5	0		T76	T76	T76	T76	T76	0	0	0	0	0
+f178v_L10	1	t	T27|T53|T65	T92	first	32	10	-	-	-	-				5	3	1	T92	T92	T53	T53	T92	1	1	0	0	1
+f178v_L10	2	e	T45|T66|T86	T86	inner	32	10	-	-	-	-				5	0		T86	T86	T86	T86	T86	0	0	0	0	0
+f178v_L10	3	d	T18|T63	T18	inner	32	10	-	-	-	-				5	1		T18	T98	T18	T18	T18	0	1	0	0	0
+f178v_L10	4	e	T45|T66|T86	T76	inner	32	10	-	-	-	-				5	5	1	T76	T76	T76	T76	T76	1	1	1	1	1
+f178v_L10	5	s	T57|T92|T95|T98|X_CE	X_CE	inner	32	10	-	-	-	-				5	1		T50	T92	T92	T92	X_CE	1	0	0	0	0
+f178v_L10	6	o	T19|T52|T55	T19	inner	32	10	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178v_L10	7	l	T13|T51|T58|T95	T58	inner	32	10	-	-	-	-				5	0		T58	T58	T58	T58	T58	0	0	0	0	0
+f178v_L10	8	d	T18|T63	T18	inner	32	10	-	-	-	-				5	1		T18	T98	T18	T18	T18	0	1	0	0	0
+f178v_L10	9	a	T37|T85	T85	inner	32	10	-	-	-	-				5	0		T85	T85	T85	T85	T85	0	0	0	0	0
+f178v_L10	10	t	T27|T53|T65	T53	inner	32	10	-	-	-	-				5	0		T53	T53	T53	T53	T53	0	0	0	0	0
+f178v_L10	11	i	T25|T52|T80|T96	T96	inner	32	10	-	-	-	-				5	0		T96	T96	T96	T96	T96	0	0	0	0	0
+f178v_L10	12	s	T57|T92|T95|T98|X_CE	T98	inner	32	10	-	-	-	-				5	0		T98	T98	T98	T98	T98	0	0	0	0	0
+f178v_L10	13	o	T19|T52|T55	T55	inner	32	10	-	-	-	-				5	0		T55	T55	T55	T55	T55	0	0	0	0	0
+f178v_L10	14	n	T60|T76	T60	inner	32	10	-	-	-	-				5	0		T60	T60	T60	T60	T60	0	0	0	0	0
+f178v_L10	15	o	T19|T52|T55	T55	inner	32	10	-	-	-	-				5	0		T55	T55	T55	T55	T55	0	0	0	0	0
+f178v_L10	17	n	T60|T76	T76	inner	32	10	-	-	-	-				5	2	1	T76	T76	T15	T15	T76	0	0	1	1	0
+f178v_L10	18	e	T45|T66|T86	T86	inner	32	10	-	-	-	-				5	0		T86	T86	T86	T86	T86	0	0	0	0	0
+f178v_L10	19	g	T70|T88	T70	inner	32	10	-	-	-	-				5	0		T70	T70	T70	T70	T70	0	0	0	0	0
+f178v_L10	20	l	T13|T51|T58|T95	T58	inner	32	10	-	-	-	-				5	0		T58	T58	T58	T58	T58	0	0	0	0	0
+f178v_L10	21	i	T25|T52|T80|T96	T96	inner	32	10	-	-	-	-				5	0		T96	T96	T96	T96	T96	0	0	0	0	0
+f178v_L10	22	n	T60|T76	T60	inner	32	10	-	-	-	-				5	0		T60	T60	T60	T60	T60	0	0	0	0	0
+f178v_L10	23	e	T45|T66|T86	T45	inner	32	10	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178v_L10	24	p	T90	T90	inner	32	10	-	-	-	-				5	0		T90	T90	T90	T90	T90	0	0	0	0	0
+f178v_L10	25	u	T33|T49	T33	inner	32	10	-	-	-	-				5	0		T33	T33	T33	T33	T33	0	0	0	0	0
+f178v_L10	26	o	T19|T52|T55	T19	inner	32	10	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178v_L10	27	f	T24	T24	inner	32	10	-	-	-	-				5	0		T24	T24	T24	T24	T24	0	0	0	0	0
+f178v_L10	28	a	T37|T85	T37	inner	32	10	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178v_L10	29	r	T83|T97	T83	inner	32	10	-	-	-	-				5	0		T83	T83	T83	T83	T83	0	0	0	0	0
+f178v_L10	30	e	T45|T66|T86	T45	inner	32	10	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178v_L10	31	c	T36|T50	T98	inner	32	10	-	-	-	-				5	3	1	T98	T98	T36	T36	T98	1	1	0	0	1
+f178v_L10	32	i	T25|T52|T80|T96	T96	last	32	10	-	-	-	-				5	0		T96	T96	T96	T96	T96	0	0	0	0	0
+f178v_L22	1	t	T27|T53|T65	T53	first	28	22	-	-	-	-				5	0		T53	T53	T53	T53	T53	0	0	0	0	0
+f178v_L22	2	z	T10|T38	T60	inner	28	22	-	-	-	-				5	5	1	T60	T60	T60	T60	T60	1	1	1	1	1
+f178v_L22	3	z	T10|T38	T38	inner	28	22	-	-	-	-				5	0		T38	T38	T38	T38	T38	0	0	0	0	0
+f178v_L22	4	a	T37|T85	T37	inner	28	22	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178v_L22	5	d	T18|T63	T63	inner	28	22	-	-	-	-				5	0		T63	T63	T63	T63	T63	0	0	0	0	0
+f178v_L22	6	i	T25|T52|T80|T96	T96	inner	28	22	-	-	-	-				5	0		T96	T96	T96	T96	T96	0	0	0	0	0
+f178v_L22	8	e	T45|T66|T86	T45	inner	28	22	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178v_L22	10	e	T45|T66|T86	T45	inner	28	22	-	-	-	-				5	1		T45	T45	T45	X_NEW	T45	0	0	0	1	0
+f178v_L22	11	t	T27|T53|T65	T27	inner	28	22	-	-	-	-				5	2	1	T27	T27	T76	T76	T27	0	0	1	1	0
+f178v_L22	12	o	T19|T52|T55	T19	inner	28	22	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178v_L22	13	s	T57|T92|T95|T98|X_CE	T92	inner	28	22	-	-	-	-				5	0		T92	T92	T92	T92	T92	0	0	0	0	0
+f178v_L22	14	e	T45|T66|T86	T45	inner	28	22	-	-	-	-				5	0		T45	T45	T45	T45	T45	0	0	0	0	0
+f178v_L22	15	g	T70|T88	T70	inner	28	22	-	-	-	-				5	0		T70	T70	T70	T70	T70	0	0	0	0	0
+f178v_L22	16	u	T33|T49	T33	inner	28	22	-	-	-	-				5	0		T33	T33	T33	T33	T33	0	0	0	0	0
+f178v_L22	17	i	T25|T52|T80|T96	T25	inner	28	22	-	-	-	-				5	0		T25	T25	T25	T25	T25	0	0	0	0	0
+f178v_L22	18	t	T27|T53|T65	T53	inner	28	22	-	-	-	-				5	0		T53	T53	T53	T53	T53	0	0	0	0	0
+f178v_L22	19	o	T19|T52|T55	T19	inner	28	22	-	-	-	-				5	0		T19	T19	T19	T19	T19	0	0	0	0	0
+f178v_L22	20	i	T25|T52|T80|T96	T25	inner	28	22	-	-	-	-				5	0		T25	T25	T25	T25	T25	0	0	0	0	0
+f178v_L22	21	n	T60|T76	T60	inner	28	22	-	-	-	-				5	0		T60	T60	T60	T60	T60	0	0	0	0	0
+f178v_L22	24	t	T27|T53|T65	T90	inner	28	22	-	-	-	-				5	5	0	T90	T45	T90	T90	T90	1	1	1	1	1
+f178v_L22	25	a	T37|T85	T85	inner	28	22	-	-	-	-				5	0		T85	T85	T85	T85	T85	0	0	0	0	0
+f178v_L22	26	s	T57|T92|T95|T98|X_CE	T57	inner	28	22	-	-	-	-				5	0		T57	T57	T57	T57	T57	0	0	0	0	0
+f178v_L22	27	a	T37|T85	T37	inner	28	22	-	-	-	-				5	0		T37	T37	T37	T37	T37	0	0	0	0	0
+f178v_L22	28	i	T25|T52|T80|T96	T80	last	28	22	-	-	-	-				5	0		T80	T80	T80	T80	T80	0	0	0	0	0
