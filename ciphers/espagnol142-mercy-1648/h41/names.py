@@ -1,3 +1,4 @@
+# promoted to tools/name_candidates.py --index (h41_surnames) (MQS-NAMES, 9 Oct 2026); kept because its outputs are cited
 """H41 name list, built before scoring from a named printed source: Urkunden und Actenstücke zur Geschichte des
 Kurfürsten Friedrich Wilhelm von Brandenburg, Bd. 4 (1867) and Bd. 5 (1869), Internet Archive
 urkundenundacten04berluoft / urkundenundacten05berluoft, _djvu.txt OCR. Surnames = the word after von / v. / Graf(en) /

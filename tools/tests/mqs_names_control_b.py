@@ -62,7 +62,14 @@ def pages():
     out = []
     for p in OR:
         t = gzip.open(p, 'rt', encoding='utf-8', errors='replace').read()
-        for i, pg in enumerate(t.split('\x0c')):
+        # the cached djvu text carries no page breaks, so "pages" are 3000-character blocks cut at a line end
+        blocks, cur, n = [], [], 0
+        for line in t.split('\n'):
+            cur.append(line); n += len(line) + 1
+            if n >= 3000:
+                blocks.append('\n'.join(cur)); cur, n = [], 0
+        blocks.append('\n'.join(cur))
+        for i, pg in enumerate(blocks):
             if len(pg) > 200:
                 out.append((os.path.basename(p).split('_djvu')[0], i, pg))
     return out
@@ -101,12 +108,13 @@ def freeze():
     res = dict(n_person_codes_n2=len(persons), sample=codes, pools={})
     for c in codes:
         man, kept, masked = write_index(c, ctx, text, allp)
-        r = nc.run(nc.parser().parse_args(argv_for(c, mean, man, ['--freeze-pool', os.path.join(OUT, f'pool_{c}.tsv'),
+        r = nc.run(nc.parser().parse_args(argv_for(c, mean, man, ['--freeze-pool', os.path.join(SCR, f'pool_{c}.tsv'),
                                                                     '--freeze-only'])))
         res['pools'][c] = dict(sha256=r['pool_sha'], pool=r['pool'], pages_kept=kept, pages_masked=masked,
                                n_contexts=len(ctx[c]))
         print(c, r['pool'], r['pool_sha'], kept, masked)
-    json.dump(res, open(os.path.join(OUT, 'pools.json'), 'w'), indent=1)
+    os.makedirs(OUT, exist_ok=True)
+    json.dump(res, open(os.path.join(OUT, 'pools.json'), 'w'), indent=1)  # pools (up to ~12k rows) stay in SCR
 
 
 def score():
@@ -115,7 +123,7 @@ def score():
     rows = []
     for c in pj['sample']:
         man = os.path.join(SCR, f'index_{c}.tsv')
-        s = nc.run(nc.parser().parse_args(argv_for(c, mean, man, ['--pool', os.path.join(OUT, f'pool_{c}.tsv'),
+        s = nc.run(nc.parser().parse_args(argv_for(c, mean, man, ['--pool', os.path.join(SCR, f'pool_{c}.tsv'),
                                                                    '--nulls', str(NULLS)])))['summary']
         cn = s['context_null'] or {}
         rows.append([c, mean[c], s['n_contexts'], s['pool'], s['coverage'], s['truth_rank'], s['truth_score'],

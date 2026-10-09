@@ -1,0 +1,9 @@
+code	class	n_contexts	pool	coverage	truth_rank	truth_score	null_p95	beats_p95	decoy_beat_share	truth_label	top5
+202	place	5	147	True	13	1.4166	1.4166	False	0.01	France	Over | Nassau | Collectie | Zoeken | Archives
+223	place	4	159	True	11	1.4722	1.4722	False	0.03	Harlem	Over | Collectie | Jan van Nassau | Lodewijk  van Nassau | Nassau
+153	person2	4	122	False	None	None	None	None	0.0	None	Over | Jan van Nassau | Lodewijk  van Nassau | Nassau | Collectie
+154	n1	1	128	False	None	None	None	None	0.005	None	Graff zu Nassaw | Jan van Nassau | Lodewijk  van Nassau | Over | Collectie
+161	n1	2	128	False	None	None	None	None	0.005	None	Over | Graff zu Nassaw | Jan van Nassau | Lodewijk  van Nassau | Collectie
+200	n1	1	128	False	None	None	None	None	0.0	None	Over | Collectie | Graff zu Nassaw | Jan van Nassau | Lodewijk  van Nassau
+241	n1	1	159	False	None	None	None	None	0.005	None	Over | Collectie | Jan van Nassau | Lodewijk  van Nassau | Nassau
+171	trivial	1	151	True	23	1.1513	1.1513	False	0.065	Willem van Oranje	Over | Collectie | Graff zu Nassaw | Jan van Nassau | Lodewijk  van Nassau

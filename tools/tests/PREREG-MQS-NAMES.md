@@ -113,3 +113,30 @@ co-mention feature. The pool never reads key.md. Nulls: context null 100 draws, 
 **Expected:** FAIL. With no Wikidata, person candidates are bare surnames from the OR index; the English cues give
 title (general, gen) and frame (by, with, at, to) terms only, and ranking is then dominated by co-mention, which the
 context null holds constant -- so a true value can pass only if its contexts carry a title or frame cue the others lack.
+
+**Amendment 1a (03:3x UTC, before any (b) scoring):** the cached OR djvu texts carry no page breaks (the first freeze
+saw 13 "pages", one per volume, so the mask dropped whole volumes), so "pages" are 3000-character blocks cut at a line
+end; the mask rule (>= 2 shared 4-grams) is unchanged. Pools re-frozen after this change; sha256 in
+fixtures/name_candidates/eckert/pools.json.
+
+## Result, control (a) (scored 03:2x UTC, `fixtures/name_candidates/lodewijk/control_a.tsv`)
+
+| code | class | n | pool | coverage | rank | score | context-null p95 | beats p95 | decoy beat share |
+|---|---|---|---|---|---|---|---|---|---|
+| 202 franckreich | place (gated) | 5 | 147 | yes (France) | 13 | 1.417 | 1.417 | no | 0.01 |
+| 223 harlem | place (gated) | 4 | 159 | yes (Harlem) | 11 | 1.472 | 1.472 | no | 0.03 |
+| 153 pfaltzgraf | person n>=2 | 4 | 122 | **no** (pool failure) | - | - | - | - | - |
+| 154, 161, 200, 241 | n=1 | 1-2 | 128-159 | **no** for all four | - | - | - | - | - |
+| 171 (trivially placed) | - | 1 | 151 | yes | 23 | - | - | - | - |
+
+Power check (top-5 share at one context, 20 draws): 202 0.00, 223 0.00, 153 0.00 -- fails, so the n=1 class licenses
+nothing. **Gate: FAIL** (places 13 and 11, not top 5; neither above its own p95). **Diagnosis, and why this is a
+non-test of the context features rather than a negative on them:** the true score equals its null p95 to the last digit
+because every index-derived candidate (France, Harlem) carries no person/place type -- types were to come from Wikidata
+(HTTP 429, stopped) -- and score_context skips the place/person frame for an untyped candidate, so the context terms
+were 0 for both true values under real and null contexts alike: the context null could not vary on the statistic for
+these candidates (CLAUDE.md rule 3, "a control that cannot vary"). What the run does measure: co-mention alone ranks the
+true places 13th and 11th behind DBNL page boilerplate ("Over", "Collectie", "Zoeken") and the correspondents' own
+names, i.e. the index pool step needs the site chrome stripped. Logged "untested-by-this-run" for the context features,
+not refuted; the next instrument step is typed candidates (Wikidata when it answers, or a gazetteer), not another
+run of this pool. Shelf grade: weak.

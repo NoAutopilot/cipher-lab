@@ -1,0 +1,18 @@
+[
+ {
+  "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fp+WHERE+%7B+VALUES+%3Fn+%7B+%22Louis+of+Nassau%22%40en+%22Louis+of+Nassau%22%40fr+%22Louis+of+Nassau%22%40de+%22Louis+of+Nassau%22%40nl+%7D+%3Fp+rdfs%3Alabel+%3Fn+%3B+wdt%3AP31+wd%3AQ5+.+%7D+LIMIT+3&format=json",
+  "status": 429,
+  "bytes": 0,
+  "time": "2026-10-09T03:15:24Z",
+  "file": null,
+  "label": "resolve"
+ },
+ {
+  "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fp+WHERE+%7B+VALUES+%3Fn+%7B+%22Louis+of+Nassau%22%40en+%22Louis+of+Nassau%22%40fr+%22Louis+of+Nassau%22%40de+%22Louis+of+Nassau%22%40nl+%7D+%3Fp+rdfs%3Alabel+%3Fn+%3B+wdt%3AP31+wd%3AQ5+.+%7D+LIMIT+3&format=json",
+  "status": 429,
+  "bytes": 0,
+  "time": "2026-10-09T03:18:17Z",
+  "file": null,
+  "label": "resolve"
+ }
+]

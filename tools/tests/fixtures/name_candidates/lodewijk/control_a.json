@@ -1,0 +1,385 @@
+{
+ "202": {
+  "code": "202",
+  "n_contexts": 5,
+  "pool": 147,
+  "pool_sha256": "b77b821dcbcf1a97cadabb797164802925ecb258f1df4dd080a419d05e350151",
+  "any_cue": true,
+  "masked_index": [
+   "ciphers/jan-van-nassau-1572-75/groen/gpas_lettre45.txt"
+  ],
+  "coverage": true,
+  "truth_rank": 13,
+  "truth_score": 1.4166,
+  "truth_label": "France",
+  "top": [
+   "Over",
+   "Nassau",
+   "Collectie",
+   "Zoeken",
+   "Archives",
+   "Prince",
+   "Literatuur",
+   "Periode",
+   "Verantwoording",
+   "Louis",
+   "Jan van Nassau",
+   "Lodewijk  van Nassau",
+   "France",
+   "Informatie",
+   "Volgende"
+  ],
+  "context_null": {
+   "draws": 200,
+   "p95_score": 1.4166,
+   "median_rank": 13,
+   "top5_share": 0.0
+  },
+  "decoy_null": {
+   "draws": 200,
+   "decoy_beat_share": 0.01
+  },
+  "beats_null_p95": false,
+  "class": "place",
+  "contexts": [
+   "5549 PS12: harquebouziers de [202] ",
+   "5550 p1-1: vnd guttes zugeschrieben werden, aus [202] ist des mehrer theil vnd grosser hauff",
+   "5550 p2-3: Ich hab bey den Leuten aus [202] viel bekommen in ihr",
+   "5550 p2-9: wollen, damit sie denen i <n> [202] so",
+   "5550 p2-15: als da man etwan in uingt [202] (line ends)"
+  ]
+ },
+ "223": {
+  "code": "223",
+  "n_contexts": 4,
+  "pool": 159,
+  "pool_sha256": "2111e9ee382ab55acafd9831c592dacc34f37113f1e281d732a1a3408a24cb74",
+  "any_cue": false,
+  "masked_index": [
+   "ciphers/lodewijk-van-nassau-1573-74/groen/groen_IV_CDLXVIII.txt"
+  ],
+  "coverage": true,
+  "truth_rank": 11,
+  "truth_score": 1.4722,
+  "truth_label": "Harlem",
+  "top": [
+   "Over",
+   "Collectie",
+   "Jan van Nassau",
+   "Lodewijk  van Nassau",
+   "Nassau",
+   "Zoeken",
+   "Archives",
+   "Literatuur",
+   "Periode",
+   "Verantwoording",
+   "Harlem",
+   "Louis",
+   "Informatie",
+   "Volgende",
+   "Vorige"
+  ],
+  "context_null": {
+   "draws": 200,
+   "p95_score": 1.4722,
+   "median_rank": 11,
+   "top5_share": 0.0
+  },
+  "decoy_null": {
+   "draws": 200,
+   "decoy_beat_share": 0.03
+  },
+  "beats_null_p95": false,
+  "class": "place",
+  "contexts": [
+   "5810 05810_p1_L40: onne uillede de <127> [223] <173> aq",
+   "5810 05810_p2_L12: o <124> dudicu [223] ",
+   "5810 05810_p5_L39:  [223] laquell",
+   "5810 05810_p6_L15: <124> dudict [223] <126> areceut"
+  ]
+ },
+ "153": {
+  "code": "153",
+  "n_contexts": 4,
+  "pool": 122,
+  "pool_sha256": "f33a4e8fef9f901a04695a501655e83d2efa7a8ae1ad7e14db68993bf90d4372",
+  "any_cue": true,
+  "masked_index": [
+   "ciphers/lodewijk-van-nassau-1573-74/groen/groen_IV_CDXLIV.txt",
+   "ciphers/jan-van-nassau-1572-75/groen/gpas_lettre45.txt"
+  ],
+  "coverage": false,
+  "truth_rank": null,
+  "truth_score": null,
+  "truth_label": null,
+  "top": [
+   "Over",
+   "Jan van Nassau",
+   "Lodewijk  van Nassau",
+   "Nassau",
+   "Collectie",
+   "Zoeken",
+   "Archives",
+   "Francis I of France",
+   "Prince",
+   "Literatuur",
+   "Periode",
+   "Verantwoording",
+   "Louis",
+   "Informatie",
+   "Volgende"
+  ],
+  "context_null": {
+   "draws": 200,
+   "p95_score": null,
+   "median_rank": null,
+   "top5_share": null
+  },
+  "decoy_null": {
+   "draws": 200,
+   "decoy_beat_share": 0.0
+  },
+  "beats_null_p95": null,
+  "class": "person2",
+  "contexts": [
+   "5549 PS24: bey <142> [153] ",
+   "5797 p7_spot2:  [153] <146> helt sich wol",
+   "5550 p2-5: dafür gewiss sein, dass sie [153] fnd <173> gehen in andere Sach",
+   "5550 p2-11: darinnen sie bey [153] landgraf und andere so zu lang"
+  ]
+ },
+ "154": {
+  "code": "154",
+  "n_contexts": 1,
+  "pool": 128,
+  "pool_sha256": "b6615daae110505bedd98e12e3652fbd9b3d9d448617879b1f4622f692919b3d",
+  "any_cue": true,
+  "masked_index": [
+   "ciphers/lodewijk-van-nassau-1573-74/groen/groen_IV_CDXLIV.txt"
+  ],
+  "coverage": false,
+  "truth_rank": null,
+  "truth_score": null,
+  "truth_label": null,
+  "top": [
+   "Graff zu Nassaw",
+   "Jan van Nassau",
+   "Lodewijk  van Nassau",
+   "Over",
+   "Collectie",
+   "Nassau",
+   "Francis I of France",
+   "Zoeken",
+   "Archives",
+   "Literatuur",
+   "Periode",
+   "Verantwoording",
+   "Willem van Oranje",
+   "Prince",
+   "Louis"
+  ],
+  "context_null": {
+   "draws": 200,
+   "p95_score": null,
+   "median_rank": null,
+   "top5_share": null
+  },
+  "decoy_null": {
+   "draws": 200,
+   "decoy_beat_share": 0.005
+  },
+  "beats_null_p95": null,
+  "class": "n1",
+  "contexts": [
+   "5797 p5_spot3: Bey [154] und landgraf uingt <146>"
+  ]
+ },
+ "161": {
+  "code": "161",
+  "n_contexts": 2,
+  "pool": 128,
+  "pool_sha256": "b6615daae110505bedd98e12e3652fbd9b3d9d448617879b1f4622f692919b3d",
+  "any_cue": true,
+  "masked_index": [
+   "ciphers/lodewijk-van-nassau-1573-74/groen/groen_IV_CDXLIV.txt"
+  ],
+  "coverage": false,
+  "truth_rank": null,
+  "truth_score": null,
+  "truth_label": null,
+  "top": [
+   "Over",
+   "Graff zu Nassaw",
+   "Jan van Nassau",
+   "Lodewijk  van Nassau",
+   "Collectie",
+   "Nassau",
+   "Zoeken",
+   "Archives",
+   "Literatuur",
+   "Periode",
+   "Verantwoording",
+   "Francis I of France",
+   "Prince",
+   "Louis",
+   "Informatie"
+  ],
+  "context_null": {
+   "draws": 200,
+   "p95_score": null,
+   "median_rank": null,
+   "top5_share": null
+  },
+  "decoy_null": {
+   "draws": 200,
+   "decoy_beat_share": 0.005
+  },
+  "beats_null_p95": null,
+  "class": "n1",
+  "contexts": [
+   "5797 p5_spot3: Bey herzogvonsachsen und [161] uingt <146> ist",
+   "5550 p2-11: darinnen sie bey pfaltzgraf [161] und andere so zu lang"
+  ]
+ },
+ "200": {
+  "code": "200",
+  "n_contexts": 1,
+  "pool": 128,
+  "pool_sha256": "b6615daae110505bedd98e12e3652fbd9b3d9d448617879b1f4622f692919b3d",
+  "any_cue": false,
+  "masked_index": [
+   "ciphers/lodewijk-van-nassau-1573-74/groen/groen_IV_CDXLIV.txt"
+  ],
+  "coverage": false,
+  "truth_rank": null,
+  "truth_score": null,
+  "truth_label": null,
+  "top": [
+   "Over",
+   "Collectie",
+   "Graff zu Nassaw",
+   "Jan van Nassau",
+   "Lodewijk  van Nassau",
+   "Nassau",
+   "Zoeken",
+   "Archives",
+   "Literatuur",
+   "Periode",
+   "Verantwoording",
+   "Prince",
+   "Louis",
+   "Informatie",
+   "Volgende"
+  ],
+  "context_null": {
+   "draws": 200,
+   "p95_score": null,
+   "median_rank": null,
+   "top5_share": null
+  },
+  "decoy_null": {
+   "draws": 200,
+   "decoy_beat_share": 0.0
+  },
+  "beats_null_p95": null,
+  "class": "n1",
+  "contexts": [
+   "5797 p6_control_abso: nicht allein von [200] <142> abso"
+  ]
+ },
+ "241": {
+  "code": "241",
+  "n_contexts": 1,
+  "pool": 159,
+  "pool_sha256": "2111e9ee382ab55acafd9831c592dacc34f37113f1e281d732a1a3408a24cb74",
+  "any_cue": false,
+  "masked_index": [
+   "ciphers/lodewijk-van-nassau-1573-74/groen/groen_IV_CDLXVIII.txt"
+  ],
+  "coverage": false,
+  "truth_rank": null,
+  "truth_score": null,
+  "truth_label": null,
+  "top": [
+   "Over",
+   "Collectie",
+   "Jan van Nassau",
+   "Lodewijk  van Nassau",
+   "Nassau",
+   "Zoeken",
+   "Archives",
+   "Literatuur",
+   "Periode",
+   "Verantwoording",
+   "Louis",
+   "Informatie",
+   "Volgende",
+   "Vorige",
+   "Zoek"
+  ],
+  "context_null": {
+   "draws": 200,
+   "p95_score": null,
+   "median_rank": null,
+   "top5_share": null
+  },
+  "decoy_null": {
+   "draws": 200,
+   "decoy_beat_share": 0.005
+  },
+  "beats_null_p95": null,
+  "class": "n1",
+  "contexts": [
+   "5810 05810_p6_L17:  [241] si grand secours porte honte et desergon"
+  ]
+ },
+ "171": {
+  "code": "171",
+  "n_contexts": 1,
+  "pool": 151,
+  "pool_sha256": "36015cbd6c18e098c958188288b963ae0b9d40911bb2b326d3c58270dbc76b22",
+  "any_cue": false,
+  "masked_index": [],
+  "coverage": true,
+  "truth_rank": 23,
+  "truth_score": 1.1513,
+  "truth_label": "Willem van Oranje",
+  "top": [
+   "Over",
+   "Collectie",
+   "Graff zu Nassaw",
+   "Jan van Nassau",
+   "Lodewijk  van Nassau",
+   "Nassau",
+   "Zoeken",
+   "Archives",
+   "Prince",
+   "Literatuur",
+   "Periode",
+   "Verantwoording",
+   "Louis",
+   "Informatie",
+   "Volgende"
+  ],
+  "context_null": {
+   "draws": 200,
+   "p95_score": 1.1513,
+   "median_rank": 23,
+   "top5_share": 0.0
+  },
+  "decoy_null": {
+   "draws": 200,
+   "decoy_beat_share": 0.065
+  },
+  "beats_null_p95": false,
+  "class": "trivial",
+  "contexts": [
+   "5550 p2-19: das man [struck word] [171] helfe Ich hoffe kein wollen mit"
+  ]
+ },
+ "_power_top5_share_n1": {
+  "202": 0.0,
+  "223": 0.0,
+  "153": 0.0
+ }
+}

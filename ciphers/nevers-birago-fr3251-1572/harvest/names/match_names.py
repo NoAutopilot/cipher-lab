@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# promoted to tools/name_candidates.py --nulls (decoy null) (MQS-NAMES, 9 Oct 2026); kept because its outputs are cited
 """NEVBIR-NAMES: whole-name gap fill against the letter pattern around each gap, with two matched controls.
 
 Rule fixed in PREREG.md (pushed before any gap was inventoried). Disk only.
