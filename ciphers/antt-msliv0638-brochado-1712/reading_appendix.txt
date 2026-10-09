@@ -5,9 +5,9 @@
 # no spec/judge for this target yet, and every entry here is already given in plaintext by the
 # manuscript's own Deciffrada line (see plaintext_appendix.tsv); see conflicts.tsv for the per-entry
 # agreement between this decode and that plaintext.
-# tokens 1702: H 0, C 1463, S 0, M 202, I 0, U 37 (U = code with no key.tsv row; M = key value held by <65% majority)
+# tokens 1740: H 0, C 1486, S 0, M 211, I 0, U 43 (U = code with no key.tsv row; M = key value held by <65% majority)
 m0280 Carta 13 | estesmnistrosestamquemosconuencemaisospdadehesemairiteeitesestamaperdereaseguiroceucroiectoothesogreirodauidaedahoneaeesigiamasuaginganca
-m0281 Carta 15 | da·moutqu·a·ainhamndoueaceogoeae·eeicoehgmacaetacom·eimrntosamandauaeesocesoquaseuco·a
+m0281 Carta 15 | da·moutquea·ainhamndoueaceogoeae·eeicoehgmacaetacompeimrntosamandauaeep·esoce·oqua·euco·a
 m0281 Carta 23 | sairdebulingbrocnossoinimigo
 m0282 Carta 30 | asocradoduquedebuquincan
 m0282 Carta 58 | onaofoisemdetiuenciansobornodaspesoassabeicoqaqducamdosaiustes
@@ -21,7 +21,7 @@ m0285 Carta 72 | euitaramentrarcomiuoemiuuandoasescondidasteruiuersaca·
 m0285 Passage 5a | amheresposta
 m0286 Passage 3a | animuuemclaranocursodesta
 m0286 Carta 73 | semordreinaraoaquiestesuelhacos
-m0286 Carta 74 | escero·ueoarta·ontleamport·raiocasi·mmaestestaremaresoostaco·ocastelhano
+m0286 Carta 74 | escero·ueoarta·onteleamport·rariocasi·mmaestesg···acosdeconsultaremaresoostaco·ocastelhano
 m0287 Carta 78 | em·serdestesuelhacos
 m0287 Carta 79 | aquinamseatendearasamahgumadesteuelhacolotesoureiroseuperataiborne
 m0287 Carta 80 | humfinodesprosito
@@ -30,12 +30,12 @@ m0288 Carta 85 | atrocdealcansarem·notratadodeisuenderamtodomundo
 m0288 Passage 2a | esteshomasfechadoatodanopapelode·aforotratamstodos
 m0289 Carta 89 | atndaquetstohemen·rabomseralhdmetam·edo
 m0289 Carta 91 | segundoprometeapoucauidadam
-m0289 Carta 92 | esteutlhacoestadeclaradofrancese·umdestesdias·antandoe·ca·ado·docbt·ssehum·ilpamdeprauoissescomfbeca
+m0289 Carta 92 | esteutlhacoestadeclaradofrancese·umdestesdias·antandoe·ca·ado·docbt·ssehum·ilpamdeprauoissescomfu·poucodeu·n·onacabeca
 m0290 Carta 93 | enamestae·boainte··genciacomoafortepulinrbrocrr
-m0290 Passage 2a | quecuel·aouoseupdpoderiamestarnesete·poforadosunddoudoein·sterioneuundoasindispo·icoesdahieasuioldnciasdos··nistros
-m0291 Passage 3a | pel·osnh·ucs·entmadadoprincipedehanouerporescociaparapreuiniradopc
+m0290 Passage 2a | quecuel·aouoseupdpoderiamestarnesete·poforadosunddoudoein·sterioneuundoasindispos·coesdahieasuioldnciasdos··nistros
+m0291 Passage 3a | pel·osnhpucs·entmadadoprincipedehanouerporescociaparapreuiniradopc
 m0291 Carta 94 | pudesseenueruonharestarainha
-m0291 Carta 96 | crdrogostocomqudficoodiabolduaotdssoureiro
+m0291 Carta 96 | crdrogostocomqudficoodiabolduaotdsoureiro
 m0292 Carta 101 | masopudnhapprnddntreportadahi
 m0292 Carta 105 | sepordebocheconhecidoporhumpobretalento
 m0292 Passage 2a | emquesoentrouoprincipe
