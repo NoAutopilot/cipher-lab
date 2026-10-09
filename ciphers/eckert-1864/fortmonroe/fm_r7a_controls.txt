@@ -1,0 +1,77 @@
+F1 tokens=38 no1=15(0.39) no2=17(0.45) no9=3(0.08)
+  no1: H15 C0 I0 M0
+    G. W. Baldwin Hd Qrs Baltimore for season [.] correspond aunt [Of the] [New York] [Valley] at [Baltimore] and also from [Monroe] is W W Shore whom I sent away from this [Department]  {tail: [signed] please [Arrest (-ed, -ing)] him & send him to me [,] I have found [In the] [Richmond] papers that his articles are giving aid & comfort to the [Enemy] [signed] [Maj Gen B. F. Butler] Geo D Sheldon}
+  no2: H16 C0 I0 M0
+    G. W. [Crocker M M] Hd Qrs [Cruft J [?]] for [Supply] unity correspond aunt [Pursue (-ed, -ing)] [Macon] [West] at [Baton Rouge] and also from [Tennessee] is W W Shore whom I sent away from this [Deserter] [Surrounding] please [Lee S P] him & send him to me [Cavalry] I have found [Left] [Mobile] papers that his articles are giving aid & comfort to the [Earthworks] [Saturday] Knave Geo D Sheldon
+  no9: H3 C0 I0 M0
+    G. W. Baldwin Hd Qrs Baltimore for season unity correspond aunt torch [Arkansas (river)] [Rear] at Baptism and also from appian is W W Shore whom I sent away from this quadroon Webster please oakum him & send him to me pedlar I have found Stephen garden papers that his articles are giving aid & comfort to the Rome [Troops] Knave Geo D Sheldon
+  no1shuf: H15 C0 I0 M0
+    G. W. Baldwin Hd Qrs Baltimore for season [.] correspond aunt [Goldsboro] [Meridian] [Ford (-ed, -ing)] at [Gen C. C. Washburne] and also from [Fortify (-ed, -ing)] is W W Shore whom I sent away from this [Abandon (-ed, -ing)]  {tail: [signed] please [Tallahatchie] him & send him to me [,] I have found [Heavy] [Scatter (-ed, -ing)] papers that his articles are giving aid & comfort to the [Rear Guard] [signed] [Alexandria] Geo D Sheldon}
+  no2shuf: H16 C0 I0 M0
+    G. W. [Missionary Ridge] Hd Qrs [Secretary of Navy] for [McPherson J B] unity correspond aunt [Unite (-ed, -ing)] [Wilcox O B] [Cruft J [?]] at [Atlanta] and also from [Charleston] is W W Shore whom I sent away from this [Athens] [Tuckers Station] please [Transport (-ed, -ing)] him & send him to me [Ferrero [?] E] I have found [Advance (-ed, -ing)] [Beatty J] papers that his articles are giving aid & comfort to the [McHenry] [Hardee] Knave Geo D Sheldon
+F2 tokens=30 no1=13(0.43) no2=9(0.30) no9=4(0.13)
+  no1: H9 C0 I0 M0
+    Maj Eckert Di Our [Out post] near [Suffolk] was [Evacuate (-ed, -ing) - ion]ed in a hurry [Today] and [Retreat]ed to Bowers hill Homans left his Key behind and I sent him another [.] It is not thought the [Enemy] will [Attack (-ed, -ing)] the present [Position] have not heard Homans yet Geo D Sheldon
+  no2: H8 C0 I0 M0
+    Maj Eckert Di Our [( )] near [Natchez] was [Effect (-ed, -ing) [#]]ed in a hurry [Troops] and [Recruit]ed to Bowers hill Homans left his Key behind and I sent him another unity It is not thought the [Equipment] will [Abandon (-ed, -ing)] the present [Re-enforcements] have not heard Homans yet Geo D Sheldon
+  no9: H4 C0 I0 M0
+    Maj Eckert Di Our Turtle near Georgia was [Cavalry]ed in a hurry [Subsistence] and [Cut off]ed to Bowers hill Homans left his Key behind and I sent him another unity It is not thought the ridge will oats the present [Colonel] have not heard Homans yet Geo D Sheldon
+  no1shuf: H9 C0 I0 M0
+    Maj Eckert Di Our [Overtook the Enemy] near [Baton Rouge] was [Enemy]ed in a hurry [Chattahoochee] and [Picket (-ed, -ing)]ed to Bowers hill Homans left his Key behind and I sent him another [.] It is not thought the [Demoralize (-ed, -ing)] will [Surprise (-ed, -ing)] the present [Maj Genl J. M. Schofield] have not heard Homans yet Geo D Sheldon
+  no2shuf: H8 C0 I0 M0
+    Maj Eckert Di Our [( )] near [Surprise] was [Union]ed in a hurry [Cumberland Gap] and [Gun]ed to Bowers hill Homans left his Key behind and I sent him another unity It is not thought the [Hovey A.P.] will [Flank (-ed, -ing) [#]] the present [Resisting] have not heard Homans yet Geo D Sheldon
+F3 tokens=32 no1=6(0.19) no2=2(0.06) no9=0(0.00)
+  no1: H2 C0 I0 M0
+    Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on [South] side of [River] End end Thos T. Eckert
+  no2: H2 C0 I0 M0
+    Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on [Subsist (-ed, -ing)] side of [Subsistence] End end Thos T. Eckert
+  no9: H0 C0 I0 M0
+    Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on waxend side of windpipe End end Thos T. Eckert
+  no1shuf: H2 C0 I0 M0
+    Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on [J. S. Negley] side of [Trenton] End end Thos T. Eckert
+  no2shuf: H2 C0 I0 M0
+    Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on [La Grange] side of [Fork] End end Thos T. Eckert
+F4 tokens=33 no1=6(0.18) no2=6(0.18) no9=1(0.03)
+  no1: H4 C0 I0 M0
+    R OBrien [White River] Landing Your [Cipher]'s come here with out being timed and with very important words open [.] the arbitrary words should be used when at all possible and the time should never be left out [.] be very careful in punctuation please notice end TT Eckert
+  no2: H3 C0 I0 M0
+    R OBrien [Virginia] Landing Your [Communications]'s come here with out being timed and with very important words open Unity the arbitrary words should be used when at all possible and the time should never be left out [1000] be very careful in punctuation please notice end TT Eckert
+  no9: H1 C0 I0 M0
+    R OBrien Bermuda Landing Your penfields come here with out being timed and with very important words open Unity the arbitrary words should be used when at all possible and the time should never be left out [Movement] be very careful in punctuation please notice end TT Eckert
+  no1shuf: H4 C0 I0 M0
+    R OBrien [Maj Gen Jno A. Logan] Landing Your [Steam]'s come here with out being timed and with very important words open [.] the arbitrary words should be used when at all possible and the time should never be left out [.] be very careful in punctuation please notice end TT Eckert
+  no2shuf: H3 C0 I0 M0
+    R OBrien [Push] Landing Your [Edisto]'s come here with out being timed and with very important words open Unity the arbitrary words should be used when at all possible and the time should never be left out [1000] be very careful in punctuation please notice end TT Eckert
+F5 tokens=64 no1=11(0.17) no2=11(0.17) no9=5(0.08)
+  no1: H6 C0 I0 M0
+    11. A. M. Geo D Sheldon I left done at landing giving him full instructions about taking off Battery & [Evacuate (-ed, -ing) - ion] in storms &c bat I regret to say his [Evacuate (-ed, -ing) - ion] was torn to pieces & ten porous cups broken this morning I cautioned him several times that storm was coming he said he thought it was over & connected wires [.] [Evacuate (-ed, -ing) - ion] entirely worthless spools burnt through please supply me immediately [.] office at [Gen Q. A. Gillmore]'s this morning when will op
+  no2: H7 C0 I0 M0
+    11. A. M. Geo D Sheldon I left done at landing giving him full instructions about taking off Battery & [Effect (-ed, -ing) [#]] in storms &c bat I [Mass] to say his [Effect (-ed, -ing) [#]] was torn to pieces & ten porous cups broken this morning I cautioned him several times that storm was coming he said he thought it was over & connected wires [1000] [Effect (-ed, -ing) [#]] entirely worthless spools burnt through please supply me immediately [1000] office at [Reynolds J J]'s this morning when will opers be here 
+  no9: H5 C0 I0 M0
+    11. A. M. Geo D Sheldon I left done at landing giving him full instructions about taking off Battery & [Cavalry] in storms &c bat I regret to say his [Cavalry] was torn to pieces & ten porous cups broken this morning I cautioned him several times that storm was coming he said he thought it was over & connected wires [Movement] [Cavalry] entirely worthless spools burnt through please supply me immediately [Movement] office at maxims this morning when will opers be here nothing important going on considerable firing 
+  no1shuf: H6 C0 I0 M0
+    11. A. M. Geo D Sheldon I left done at landing giving him full instructions about taking off Battery & [Enemy] in storms &c bat I regret to say his [Enemy] was torn to pieces & ten porous cups broken this morning I cautioned him several times that storm was coming he said he thought it was over & connected wires [.] [Enemy] entirely worthless spools burnt through please supply me immediately [.] office at [Information]'s this morning when will opers be here nothing important going on considerable firing yesterday w
+  no2shuf: H7 C0 I0 M0
+    11. A. M. Geo D Sheldon I left done at landing giving him full instructions about taking off Battery & [Union] in storms &c bat I [Maj Genl U S Grant] to say his [Union] was torn to pieces & ten porous cups broken this morning I cautioned him several times that storm was coming he said he thought it was over & connected wires [1000] [Union] entirely worthless spools burnt through please supply me immediately [1000] office at [Creek]'s this morning when will opers be here nothing important going on considerable firi
+F6 tokens=41 no1=21(0.51) no2=18(0.44) no9=9(0.22)
+  no1: H17 C0 I0 M0
+    Maj Eckert Di [11] ship agawam Farrars [Inland [sic: Island]] {date: June 13} {time: 10 PM} [By the way of] [Monroe] [14] {time: 9 PM} for [Secretary of Navy] [.] [Deserter]'s from [Rebel] Ironic lads confirm previous [Information] [.] [Rebel] tug from bend above fired a shot or two in this direction this after noon  {tail: [signed] [S. P. Lee] sprinkle of rain Geo D Sheldon}
+  no2: H17 C0 I0 M0
+    Maj Eckert Di [Acton [sic, ? Action]] ship agawam Farrars [Joining] June fever {time: 10 PM} [Concentrate (-ed, -ing)] [Tennessee] [Cooyehuttie " [ditto = River]] {time: 9.30 PM} for [McHenry] [Sunday] [Citizen]'s from [Rail-road] Ironic lads confirm previous [Join] [1000] [Rail-road] tug from bend above fired a shot or two in this direction this after noon [Saturday] [Sigel F] sprinkle of [March] Geo D Sheldon
+  no9: H9 C0 I0 M0
+    Maj Eckert Di flag ship agawam Farrars Smyrna June fever {time: 7.30 PM} peasant appian female {time: 5.30 PM} for [A. E. Burnside] [Movement] poplars from [Army] Ironic lads confirm previous sweden [Movement] [Army] tug from bend above fired a shot or two in this direction this after noon [Troops] [Richmond] sprinkle of rain Geo D Sheldon
+  no1shuf: H17 C0 I0 M0
+    Maj Eckert Di [11] ship agawam Farrars [Effective] {date: June 13} {time: 10 PM} [Suffolk] [Fortify (-ed, -ing)] [14] {time: 9 PM} for [Our lines] [.] [Kirby Smith]'s from [Front] Ironic lads confirm previous [Our scouts report] [.] [Scout (-ed, -ing)] tug from bend above fired a shot or two in this direction this after noon  {tail: [signed] [Winchester] sprinkle of rain Geo D Sheldon}
+  no2shuf: H16 C1 I0 M0
+    Maj Eckert Di [Repulse] ship agawam Farrars [Florence] June fever {time: 10 PM} [Maj Gen B. F. Butler] [Charleston] [Kanawha] {time: 9.30 PM} for [Tunnel Hill] [Carter S.P.] [Equipage]'s from [Killed] Ironic lads confirm previous [Willich A] [1000] [Hotly [?]] tug from bend above fired a shot or two in this direction this after noon [Hardee] [Chattahoochee] sprinkle of [Subsist (-ed, -ing)] Geo D Sheldon
+F7 tokens=73 no1=17(0.23) no2=18(0.25) no9=12(0.16)
+  no1: H12 C0 I0 M0
+    Maj. Eckert "D. I." Copy to Sheldon following message passed here to [Elizabeth] [C. A. Dana] July thirteen one off the staff here has received information which he deems reliable that a force off rebel [Evacuate (-ed, -ing) - ion] crossed the [Help] two [Battery] between Laurel and Beltsville with instructions two go to point look out and release the rebels confined there precaution would no harm a rebel force is reported south of the [Harbor] near the places named signed [Pieces] ord period [Killing] Communicatio
+  no2: H14 C0 I0 M0
+    Maj. Eckert "D. I." Copy to Sheldon following message [Fire]ed here to [Minnesota] [Cheatham] July thirteen one off the [Station] here has received information which he deems reliable that a force off rebel [Effect (-ed, -ing)] crossed the [Has (or) have been reenforced] two [Artillery] between Laurel and Beltsville with instructions two go to point look out and release the rebels confined there precaution would no harm a rebel force is reported south of the [Has (or) have been reenforced] near the places named sig
+  no9: H12 C0 I0 M0
+    Maj. Eckert "D. I." Copy to Sheldon following message passed here to [U. S. Grant] [Baltimore] July thirteen one off the staff here has received information which he deems reliable that a force off rebel [Cavalry] crossed the [Rail Road] two [Washington] between Laurel and Beltsville with instructions two go to point look out and release the rebels confined there precaution would no harm a rebel force is reported south of the [Rail Road] near the places named signed [Maj. Gen.] ord period [Telegraphs] Communication
+  no1shuf: H12 C0 I0 M0
+    Maj. Eckert "D. I." Copy to Sheldon following message passed here to [Near] [Threaten (-ed, -ing)] July thirteen one off the staff here has received information which he deems reliable that a force off rebel [Johnston] crossed the [Galveston] two [Memphis] between Laurel and Beltsville with instructions two go to point look out and release the rebels confined there precaution would no harm a rebel force is reported south of the [Bellefonte] near the places named signed [Reinforcements] ord period [Danville] Communi
+  no2shuf: H14 C0 I0 M0
+    Maj. Eckert "D. I." Copy to Sheldon following message [Pieces]ed here to [Rear] [Ewell] July thirteen one off the [West] here has received information which he deems reliable that a force off rebel [Jacksonville] crossed the [Destroy (-ed, -ing) [#]] two [General in Chief] between Laurel and Beltsville with instructions two go to point look out and release the rebels confined there precaution would no harm a rebel force is reported south of the [Ram] near the places named signed [Columbus] ord period [Movement] Com

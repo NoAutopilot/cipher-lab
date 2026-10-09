@@ -380,5 +380,11 @@ John Horner New York for William Lee Chief detective [Brig. Gen.] Hays office [N
 
 Code-word tokens: H 4.
 
-Totals over the 45 entries: H 353, C 0, I 0, M 4.
+**O9-BD | Page 227 | 5771 | mssEC 25 (obj 5952, pointer 5771), 13 July 1864 New Castle, M. V. B. Buell to Maj. Eckert, copy to Sheldon: Ord (Baltimore) to Grant, rebel cavalry crossed the railroad to Washington between Laurel and Beltsville; read in No. 9 (No. 1 and No. 2 give nonsense); printed OR I/37 pt 2, Ord to Grant, Baltimore 13 July (FM-R7a; row 5771/1; image-read at 2400 px)**
+
+Maj. Eckert "D. I." Copy to Sheldon following message passed here to [U. S. Grant] [Baltimore] July thirteen one off the staff here has received information which he deems reliable that a force off rebel [Cavalry] crossed the [Rail Road] two [Washington] between Laurel and Beltsville with instructions two go to point look out and release the rebels confined there precaution would no harm a rebel force is reported south of the [Rail Road] near the places named signed [Maj. Gen.] ord period [Telegraphs] Communication is all right to [Baltimore] but [Rail Road] not they run steamers from have D grass to [Baltimore] painful rumors here regard to [Washington] MVB Buell
+
+Code-word tokens: H 12.
+
+Totals over the 46 entries: H 365, C 0, I 0, M 4.
 <!-- decode.py: derived block ends -->

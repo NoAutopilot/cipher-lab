@@ -3535,3 +3535,47 @@ Read so far: four of six filed (E318-E321).
 - [x] image-check: partial.
 - [x] retry: none.
 Verdict: keep going: 1 internal gap, cheapest next: eye-check the three strips, ~$0.3
+
+## FM-R7a (9 Oct 2026, account 1, for LANE LEDGER)
+
+Seven clean 1864 rows of the Fort Monroe ledger (Huntington object 5952 = mssEC 25) read and filed: six as Cipher No. 1, E310-E315 (`ciphertext.txt`), one as Cipher No. 9, O9-BD (`ciphertext-no9.txt`); both `decode.py --check` and `decode_no9.py --check` exit 0 after `--write`. No No. 2 entry. Scripts and outputs in `fortmonroe/`: `fm_r7a_dump.py`, `fm_r7a.py` + `fm_r7a_controls.txt` (shares, five decodes), `fm_r7a_multi.py/.out` (30 shuffled copies per book), `fm_r7a_hdl.py/.out`, `fm_r7a_printcheck.py/.out`, `fm_r7a_datescan.py/.out`, `fm_r7a_beapi.py/.out`, `fm_r7a_file.py`. Novelty not classified (rule 10).
+
+**Book per row.** Shares s1/s2/s9 (FM-PRE scorer at HEAD): 5644/1 .375/.425/.075; 5581/1 .367/.233/.067; 5746/1 .182/.061/0; 5660/2 .143/.214/.036; 5666/1 .159/.143/.079; 5750/1 .5/.45/.225; 5771/1 .239/.254/.179. The shares do not pick the book (4 of 7 rows put No. 2 level or ahead). The book is the one under which the words read and the shuffled copies do not. Control, per row, 30 meaning-shuffled copies of each book (`fm_r7a_multi.out`): the H count of a shuffled copy equals the true count (mean within 0.4, max equal) on every row and book, so an H-count control cannot fail by construction (shuffling meanings leaves which words are in the key unchanged); it licenses nothing, and the discriminator is sense, read by me, against the shuffled decodes printed in `fm_r7a_controls.txt` (Burnside, Goldsboro, Tallahatchie, Chattahoochee for the same words). 5771/1 is the only row where the share points away from the book that reads: No. 2 .254 against No. 9 .179, yet No. 9 reads every clause and No. 1/No. 2 give nonsense, confirmed by print (below). No row needed "no book in hand".
+
+**Holder search first (19 requests, CISOSEARCHALL on 12 clear phrases, all pointers).** No clear period copy of any of the seven rows. Hits that are siblings, not copies: pointer 5656 (5 May 1864, Sheldon: "W. W. Shore is in baptism somewhere ... I want him caught and oakumed", the follow-up of E310); pointer 10490 (Eckert's received copy, 12-13 July 1864, Havre de Grace and Baltimore telegrams on the same raid as O9-BD, a different telegram); 5772 (13 July, Baltimore to Sheldon, sibling of O9-BD). (Note: I ran these 19 requests without a ROOM hdl-token line; flagged in ROOM.)
+
+**Prior print (phrase grep over 164 cached volumes, then date + keyword windows).** Two hits:
+- **E315 (5750/1)** is the telegram S. P. Lee to Welles, "Flagship Agawam, Farrar's Island, June 13, 10 p.m. (Via Fort Monroe, 14th, 9 p.m. ...) Deserters from rebel ironclads confirm previous information. Rebel tug from bend above fired a shot or two in this direction this afternoon", ORN I/10 (IA `officialrecordso0010unse`; OCR header "146" near it, page not confirmed). The decode reads it word for word, so the body is C against that print.
+- **O9-BD (5771/1)** carries Ord to Grant, Baltimore 13 July 1864, "a force of rebel cavalry crossed the railroad to Washington between Laurel and Beltsville, with instructions to go to Point Lookout and release the rebels confined there. Precautions would do no harm. A rebel force is reported south of the railroad near the places named. E. O. C. Ord", OR I/37 pt 2 (IA `warofrebellion372unit`, OCR footer "94" after it, page not confirmed). The No. 9 decode matches clause by clause (cavalry, Rail Road, Washington, Maj. Gen. Ord); the cipher gives "to U. S. Grant, Baltimore July thirteen" for the printed address and dateline. The tail (Buell: communication all right to Baltimore, steamers from Havre de Grace to Baltimore, rumors regard to Washington) is not in the print found.
+- E310-E314: none located (phrase grep, date scan, 7 be-api queries on Butler IV and Grant Papers 10-11 all 0 hits). For E311 the only hit is "Bowers Hill" in OR I/33, 36, 40.
+
+**Image check** (7 pages at 2400 px, full-page reads; own entry only; `iiif_lines.py` not used because it found no lines on these ruled-grid pages in FM-R6c): every line of each entry matches the transcription, read row by row down the grid. E313 has a stray ")" after "here" in the image, not a word. Two fixes the image check forced, both filed as notes: E313 "Bermuda Landing" is the plain address line (No. 1 would read Bermuda as White River); E314 "relay" is the telegraph relay, plain English, three times (No. 1's key row relay = Evacuate reads in E311, where "relayed in a hurry" is sense).
+
+| row | ID | date, direction, content as read | book / H / M | printed |
+|---|---|---|---|---|
+| 5644/1 | E310 | 1 May 1864 Sheldon to G. W. Baldwin, Baltimore: W. W. Shore, correspondent of the (New York) World at Baltimore and from Monroe, to be arrested, his articles in the Richmond papers give aid and comfort to the enemy, signed Butler | No. 1, H 14, M 2 (world, Baltimore) | none; sibling 5656 |
+| 5581/1 | E311 | 9 Mar 1864 Sheldon to Eckert: our outpost near Suffolk evacuated in a hurry and retreated to Bowers Hill, Homans left his key | No. 1, H 9, M 2 (Georgia = Suffolk, Today) | none |
+| 5746/1 | E312 | 13 June 1864 Eckert to Sheldon: office kept open some days, line not to be taken down, building party ready for Jamestown, work on the south side of the river | No. 1, H 2, M 2; first clause U | none |
+| 5660/2 | E313 | 10 May 1864 Eckert to R. O'Brien, Bermuda Landing: ciphers must come timed, arbitrary words used, punctuate carefully | No. 1, H 3, M 1 (Cipher) | none |
+| 5666/1 | E314 | 12 May 1864 O'Brien to Sheldon from Butler's headquarters: relay torn to pieces, ten porous cups broken, spools burnt, send supplies, office at Gillmore's | No. 1, H 3, M 1 (Gillmore) | none |
+| 5750/1 | E315 | 14 June 1864 Sheldon to Eckert: S. P. Lee, Agawam, Farrar's Island, to Welles: deserters confirm, tug fired a shot | No. 1, H 16, M 1 | ORN I/10, word for word |
+| 5771/1 | O9-BD | 13 July 1864 New Castle, Buell to Eckert, copy Sheldon: Ord to Grant, Baltimore, rebel cavalry across the railroad near Laurel and Beltsville, to release prisoners at Point Lookout; steamers Havre de Grace to Baltimore | No. 9, H 12, M 2 (Image/Insanity = Baltimore as address) | OR I/37 pt 2, Ord to Grant, clause by clause |
+
+Grades: decoder H 59 (47 in E310-E315, 12 in O9-BD), no I; M as in the table; C for E315 and for the Ord clause of O9-BD against the prints. The brief's key-no9 sample table reads 12 words of O9-BD; the first sample row to be confirmed by a printed text in a July 1864 No. 9 entry, which means No. 9 is in use in July 1864 and not only in Jan-Apr 1864 (NO9-KEY: May-June rows labelled 9 were No. 1). Check: `python3 decode.py --check`, `python3 decode_no9.py --check` exit 0. Requests: hdl.huntington.org 19 (12 CISOSEARCHALL, 7 IIIF pages); be-api 7, all 200, 1.8 s apart.
+
+## Remaining gaps (FM-R7a, 9 Oct 2026)
+Read so far: seven of seven filed (E310-E315, O9-BD).
+- E315 and O9-BD print pages - blocker: not-attempted; OCR header/footer only; next: locate the page of ORN I/10 Lee to Welles and OR I/37 pt 2 Ord to Grant in the djvu OCR, ~$0.1
+- O9-BD tail (Buell, Havre de Grace to Baltimore steamers) - blocker: not-attempted; not found in the cached OR volumes; next: Butler IV and Delaware/Havre de Grace date window by be-api, ~$0.2
+- E310 first clause "for season ... correspond aunt" - blocker: open-codes; season and aunt are unread filler in the key; next: compare with 5656 header (same "for season baptism"), ~$0.1
+- E312 first clause "while horse wilby" - blocker: open-codes; unread; next: Jamestown/White House sibling entries of 13-14 June, ~$0.2
+
+## Escalation (FM-R7a, 9 Oct 2026)
+- [x] siblings: 5656, 10490, 5772 seen, not filed.
+- [x] clear-pages: all-pointer CISOSEARCHALL, no clear copy.
+- [x] known-keys: three books plus 30 shuffled copies each (count control non-discriminating by construction, read by sense).
+- [x] print: 164 cached volumes (phrase + date), be-api 7; two prints found.
+- [n/a] key-rebuild: relay and world are plain-at fixes, no key row edited (conflict relay = Evacuate vs plain relay logged here, FIX job decides).
+- [x] image-check: all seven pages read at 2400 px.
+- [x] retry: none needed.
+Verdict: keep going: 4 internal gaps, cheapest next: print page numbers, ~$0.1

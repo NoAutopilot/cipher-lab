@@ -3377,3 +3377,85 @@ is nearest waxy shore D do wren
 Caldwell
 plain: anchors
 note: FM-R7b: anchors is plain English where the key gives Donelson; signature Caldwell plain; first 7 lines image-read.
+
+### E310 | Page 100 | 5644 | mssEC 25 (obj 5952, pointer 5644), 1 May 1864 Ft Monroe, Sheldon to G. W. Baldwin, Hd Qrs Baltimore: W. W. Shore, correspondent of the World at Baltimore and from Monroe, sent away from the Department, to be arrested (sibling of pointer 5656, 5 May) (FM-R7a; row 5644/1; image-read at 2400 px)
+Ft Monroe May 1 . 1864
+G. W. Baldwin Hd Qrs Baltimore
+for season unity correspond aunt torch France world at
+Baptism and also from appian is W W Shore
+whom I sent away from this quadroon Webster please
+oakum him & send him to me pedlar I
+have found Stephen garden papers that his articles are
+giving aid & comfort to the Rome Youth Knave
+Geo D Sheldon
+plain: world
+note: FM-R7a: 'world' is plain English (pointer 5656 writes 'Corresp't of the world' plain); the key row world = Valley does not apply. season/aunt unread, U.
+
+### E311 | Page 37 | 5581 | mssEC 25 (obj 5952, pointer 5581), 9 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert: our outpost near Suffolk evacuated in a hurry and retreated to Bowers Hill, Homans left his key behind (FM-R7a; row 5581/1; image-read at 2400 px)
+Ft. Monroe Mar 9th 1864
+Maj Eckert Di
+Our Turtle near Georgia was relayed in
+a hurry wedge and warwicked to Bowers
+hill Homans left his Key behind and
+I sent him another unity It is
+not thought the ridge will oats the
+present Venus have not heard Homans yet
+Geo D Sheldon
+note: FM-R7a: Turtle and warwicked decode as outpost and retreated; Georgia = Suffolk is M.
+
+### E312 | Page 202 | 5746 | mssEC 25 (obj 5952, pointer 5746), 13 June 1864 Washington, Eckert to Sheldon at Ft Monroe: office kept open for some days, the line cannot be taken down, hold the building party ready to go to Jamestown, work on the south side of the river (FM-R7a; row 5746/1; image-read at 2400 px)
+Washington June 13 . 1864
+Geo D Sheldon Ft Monroe
+office at while horse wilby kept open for sum days
+yet & the live can not be taken down till
+then paws hold the building party ready to go to
+Jamestown for work on waxend side of windpipe End end
+Thos T. Eckert
+note: FM-R7a: 'while horse wilby' (White House will be?) and 'waxend/windpipe' read South/River in No. 1; South side of River is M; the first clause is unread, U.
+
+### E313 | Page 116 | 5660 | mssEC 25 (obj 5952, pointer 5660), 10 May 1864 Washington, Eckert to R. O'Brien at Bermuda Landing: your ciphers come here untimed and with important words open, use arbitrary words, never leave out the time, punctuate carefully (FM-R7a; row 5660/2; image-read at 2400 px)
+Washington May 10 1864
+R OBrien Bermuda Landing
+Your penfields come here with out being
+timed and with very important words open
+Unity the arbitrary words should be used
+when at all possible and the time
+should never be left out Zebra be
+very careful in punctuation please notice end
+TT Eckert
+plain-at: bermuda#1
+note: FM-R7a: Bermuda Landing is the plain address line (image-read); No. 1 would give White River, wrong. penfields = Cipher fits.
+
+### E314 | Page 122 | 5666 | mssEC 25 (obj 5952, pointer 5666), 12 May 1864 Gen. Butler's Hd Qrs 11 AM, R. O'Brien to Sheldon: the operator left at the landing tore his relay to pieces, ten porous cups broken, spools burnt through, asks supplies (FM-R7a; row 5666/1; image-read at 2400 px)
+Gen'l Butlers Hd Qrs May 12th 1864
+11. A. M.
+Geo D Sheldon
+I left done at landing giving him full
+instructions about taking off Battery & relay in
+storms &c bat I regret to say his
+relay was torn to pieces & ten porous
+cups broken this morning I cautioned him several
+times that storm was coming he said he
+thought it was over & connected wires zebra
+relay entirely worthless spools burnt through please supply
+me immediately zebra office at maxims this morning
+when will opers be here nothing important going
+on considerable firing yesterday without any apparent result
+R OBrien
+plain-at: relay#1
+plain-at: relay#2
+plain-at: relay#3
+note: FM-R7a: relay is the telegraph relay, plain English, read in context (image-read); No. 1's key row relay = Evacuate does not apply here (it reads in E311). Maxims = Gillmore is M.
+
+### E315 | Page 206 | 5750 | mssEC 25 (obj 5952, pointer 5750), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert: S. P. Lee's telegram from flag ship Agawam, Farrar's Island, 13 June 10 PM via Ft Monroe 14th 9 PM, for Welles (printed ORN I/10, Lee to Welles) (FM-R7a; row 5750/1; image-read at 2400 px)
+Ft Monroe June 14 1864
+Maj Eckert Di
+flag ship agawam Farrars Smyrna June fever Rebecca peasant
+appian female Rosalie for Burton zodiac poplars from Walpole
+Ironic lads confirm previous sweden zebra walnut tug from
+bend above fired a shot or two in this
+direction this after noon youth Neptune sprinkle of rain
+Geo D Sheldon
+plain-at: flag#1
+plain-at: farrars#1
+note: FM-R7a: flag ship and Farrars are plain (image-read; printed as 'Flagship Agawam, Farrar's Island'); the telegram is printed in ORN I/10 word for word, so the body readings are C against that print.

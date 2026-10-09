@@ -1673,5 +1673,41 @@ I think cab bell should be laid on [North] side of [River] as it will take less 
 
 Code-word tokens: H 3.
 
-Totals over the 257 entries: H 4480, C 39, I 25, M 35, U 10.
+**E310 | Page 100 | 5644 | mssEC 25 (obj 5952, pointer 5644), 1 May 1864 Ft Monroe, Sheldon to G. W. Baldwin, Hd Qrs Baltimore: W. W. Shore, correspondent of the World at Baltimore and from Monroe, sent away from the Department, to be arrested (sibling of pointer 5656, 5 May) (FM-R7a; row 5644/1; image-read at 2400 px)**
+
+G. W. Baldwin Hd Qrs Baltimore for season [.] correspond aunt [Of the] [New York] world at [Baltimore] and also from [Monroe] is W W Shore whom I sent away from this [Department]  {tail: [signed] please [Arrest (-ed, -ing)] him & send him to me [,] I have found [In the] [Richmond] papers that his articles are giving aid & comfort to the [Enemy] [signed] [Maj Gen B. F. Butler] Geo D Sheldon}
+
+Code-word tokens: H 14.
+
+**E311 | Page 37 | 5581 | mssEC 25 (obj 5952, pointer 5581), 9 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert: our outpost near Suffolk evacuated in a hurry and retreated to Bowers Hill, Homans left his key behind (FM-R7a; row 5581/1; image-read at 2400 px)**
+
+Maj Eckert Di Our [Out post] near [Suffolk] was [Evacuate (-ed, -ing) - ion]ed in a hurry [Today] and [Retreat]ed to Bowers hill Homans left his Key behind and I sent him another [.] It is not thought the [Enemy] will [Attack (-ed, -ing)] the present [Position] have not heard Homans yet Geo D Sheldon
+
+Code-word tokens: H 9.
+
+**E312 | Page 202 | 5746 | mssEC 25 (obj 5952, pointer 5746), 13 June 1864 Washington, Eckert to Sheldon at Ft Monroe: office kept open for some days, the line cannot be taken down, hold the building party ready to go to Jamestown, work on the south side of the river (FM-R7a; row 5746/1; image-read at 2400 px)**
+
+Geo D Sheldon Ft Monroe office at while horse wilby kept open for sum days yet & the live can not be taken down till then paws hold the building party ready to go to Jamestown for work on [South] side of [River] End end Thos T. Eckert
+
+Code-word tokens: H 2.
+
+**E313 | Page 116 | 5660 | mssEC 25 (obj 5952, pointer 5660), 10 May 1864 Washington, Eckert to R. O'Brien at Bermuda Landing: your ciphers come here untimed and with important words open, use arbitrary words, never leave out the time, punctuate carefully (FM-R7a; row 5660/2; image-read at 2400 px)**
+
+R OBrien Bermuda Landing Your [Cipher]'s come here with out being timed and with very important words open [.] the arbitrary words should be used when at all possible and the time should never be left out [.] be very careful in punctuation please notice end TT Eckert
+
+Code-word tokens: H 3.
+
+**E314 | Page 122 | 5666 | mssEC 25 (obj 5952, pointer 5666), 12 May 1864 Gen. Butler's Hd Qrs 11 AM, R. O'Brien to Sheldon: the operator left at the landing tore his relay to pieces, ten porous cups broken, spools burnt through, asks supplies (FM-R7a; row 5666/1; image-read at 2400 px)**
+
+11. A. M. Geo D Sheldon I left done at landing giving him full instructions about taking off Battery & relay in storms &c bat I regret to say his relay was torn to pieces & ten porous cups broken this morning I cautioned him several times that storm was coming he said he thought it was over & connected wires [.] relay entirely worthless spools burnt through please supply me immediately [.] office at [Gen Q. A. Gillmore]'s this morning when will opers be here nothing important going on considerable firing yesterday without any apparent result R OBrien
+
+Code-word tokens: H 3.
+
+**E315 | Page 206 | 5750 | mssEC 25 (obj 5952, pointer 5750), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert: S. P. Lee's telegram from flag ship Agawam, Farrar's Island, 13 June 10 PM via Ft Monroe 14th 9 PM, for Welles (printed ORN I/10, Lee to Welles) (FM-R7a; row 5750/1; image-read at 2400 px)**
+
+Maj Eckert Di flag ship agawam Farrars [Inland [sic: Island]] {date: June 13} {time: 10 PM} [By the way of] [Monroe] [14] {time: 9 PM} for [Secretary of Navy] [.] [Deserter]'s from [Rebel] Ironic lads confirm previous [Information] [.] [Rebel] tug from bend above fired a shot or two in this direction this after noon  {tail: [signed] [S. P. Lee] sprinkle of rain Geo D Sheldon}
+
+Code-word tokens: H 16.
+
+Totals over the 263 entries: H 4527, C 39, I 25, M 35, U 10.
 <!-- decode.py: derived block ends -->
