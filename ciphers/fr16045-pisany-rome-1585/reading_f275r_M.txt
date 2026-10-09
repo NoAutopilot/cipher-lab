@@ -2,7 +2,7 @@
 # tokens 623: H 554, C 0, S 0, M 0, I 0, U 69 (U = sign not covered by the key)
 L01	r p
 L02	a le est qui o u e [/] e que [/] f est o i t [?[bar-ic]] [?[circle-n]] o r t est qui faire car a i [?[cross]] l e [/] e n o o n [/] e a [?[y-hook]] [?[q]] r i [?[S-loop]] e x o o le [/]
-L03	l entreprise [/] d Angleterre [/] a u o i t [/] roy e [/] m a i l e e [/] i t [/] d e r e r l [/] u o le o i t [/] m d e u r o
+L03	l entreprise [/] d Angleterre [/] a u o i t [/] roy e [/] f a i l e e [/] i t [/] d e r e r l [/] u o le o i t [/] m d e u r o
 L04	s e [/] e n t r e m est a a n d [/] d a n g e r a n t n i a n t [/] e a r e e car roy e r i [/] d e s l a roy e a
 L05	m l o a e e que pour [/] roy r e [/] b i e n [/] a s a n e [/] a o est d e l d [/] d t n t [/] i l [/] a e u t a d r o
 L06	l e t e s c u o l e r [/] t a i u a n t t e t l a e s a n t [/] la la d e t u [/] t o s l t que d e u o n

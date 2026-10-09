@@ -1,0 +1,9 @@
+page	line	ord	una_pisa	old_label	old_copy	old_identical	new_label	new_copy	new_identical
+f275r	L03	12	SETTLED-T27	T47	f	False	T27	f	True
+f275r	L11	18	UNSETTLED	T47	-	False	T47	-	False
+f275r	L13	28	SETTLED-T31	T47	m	True	T47	m	True
+f301v	L07	1	SETTLED-T27	T47	f	False	T27	f	True
+f301v	L08	19	UNSETTLED	T47	-	False	T47	-	False
+f302v	L07	21	UNSETTLED	T47	-	False	T47	-	False
+f302v	L07	29	SETTLED-T27	T47	f	False	T27	f	True
+f302v	L09	8	UNSETTLED	T47	f	False	T47	f	False

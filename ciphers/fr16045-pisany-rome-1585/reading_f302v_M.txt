@@ -6,7 +6,7 @@ L03	u e s i e u r a s [/] x e [?[c]] g u s o le [/] l u l le c t a a <null> [?[f
 L04	[/] e u l a [/] l o n [?[bighook]] n a r t a n t r d e e faire l d [/] d c [/] i l roy t r t o f a m a r
 L05	a o a [?[m]] m m la e r a le u [?[m]] [/] entreprise [?[curl]] e e d a n [/] e a [?[H]] o t n n e i u o e [/] c l a i [?[m]] e [?[t]]
 L06	r <null> a le r d e c m [?[r]] u n e c a t i t n [/] a u e c monsieur est a [/] e u x [/] qui [?[mo]] <null> e a e a [/] t i i t
-L07	i e u l o a est a e e a [?[loop]] car e i i r faict u u m i e n d e a a m faire e [/] d e qui <null> [/] e o monsieur
+L07	i e u l o a est a e e a [?[loop]] car e i i r faict u u m i e n d e a a f faire e [/] d e qui <null> [/] e o monsieur
 L08	i o o l y e [/] m r e a d o m <null> l e o e n i [/] m e [/] x d m t i e r o [/] o i i e [/] l o y d i
 L09	que l le [/] n e a e m i e [/] x e a m o r e n r e [/] que a u t a n t que l le [/] e n u e [?[t]] a
 L10	roy a n i [/] t m u i c m t n ont e [/] c e g t e m o i n i m n [/] i l n e l e t e [?[edge-stroke]]

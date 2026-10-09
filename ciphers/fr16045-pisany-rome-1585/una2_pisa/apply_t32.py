@@ -12,7 +12,7 @@ for pg, d, *_ in U.PAGES:
     picks = {(l, o) for (p, l, o), v in U.SETTLED.items() if p == pg and v == 'SETTLED-T32'}
     lines = U.read(f'{d}/ciphertext_{pg}_preT32.tsv')
     txt = ''.join('\n' if x is None else f'{x[0]}\t{x[1]}\n' for x in U.relabel(lines, pg, picks))
-    dst = os.path.join(T, f'{d}/ciphertext_{pg}.tsv')
+    dst = os.path.join(T, f'{d}/ciphertext_{pg}_preT27.tsv')  # UNA3-PISA: una3_pisa/apply_t27.py now derives the committed file from this copy
     if '--check' in sys.argv:
         ok = open(dst).read() == txt; bad += not ok; print(dst, 'up to date' if ok else 'STALE')
     else:

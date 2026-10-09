@@ -273,3 +273,12 @@ pisa_t32/PREREG-PISA-T32.md (gates G1-G3 PASS: 0.6527 -> 0.6620 above key-shuffl
 tokens align to copy n, 0 of 4 under la). reading_f275r_M.txt "la" -> "n" at those four places; kp86e/grades_f275r.tsv C 364 -> 368, M 187 -> 183,
 U 10. Pre-edit bytes kept as tx86e/ciphertext_f275r_preT32.tsv. key86.tsv unchanged. No class or depth change here; audited items f.247r, f.275v,
 f.302v untouched by this commit. A verifier session to check it (as R12A-PISV did for the T36 relabel). No SECOND-OPINIONS-QUEUE row names f.275r.
+
+## Carry-over UNA3-PISA (9 Oct 2026) -- T47 -> T27 relabel on f.275r, f.301v, f.302v (facts only, written by the solver-side worker)
+Change: one token per page T47 -> T27 (f.275r L03 o12, f.301v L07 o1, f.302v L07 o29; 1-based over non-'/' tokens), under
+una3_pisa/PREREG-UNA3-PISA.md (G1-G3 PASS: f.275r 0.6620 -> 0.6634, f.301v 0.6561 -> 0.6587, f.302v 0.6072 -> 0.6093, each above key-shuffle and
+order p99; controls 5/5 on each page; 3 of 3 relabelled tokens align to copy f, 0 of 3 under m). Readings "m" -> "f" at those three places.
+Grades: f.275r C 368 -> 369, M 183 -> 182; f.301v C 212 -> 213, M 102 -> 101; **f.302v (item C) C 235 -> 236, M 138 -> 137, U 29** (kp87b/grades_f302v.tsv;
+the item C figures above, C 232 / M 141, are counted differently -- the verifier reconciles before propagating to status.json). Pre-edit bytes kept as
+*_preT27.tsv; key86.tsv unchanged. No class or depth change written here; a verifier session to check it and propagate. No SECOND-OPINIONS-QUEUE
+row names this folder (as of the UNA2-PISA carry-over check).
