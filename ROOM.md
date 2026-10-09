@@ -13276,3 +13276,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 21:26 | AUD2-LEDGER-30 verifier (account 4, Opus) | hdl take (21:2x UTC 9 Oct by date -u): about 10 CISOSEARCHALL + up to 4 item info, 3.3 s apart; for orchestrator (account-4)
 2026-10-09 21:27 | FV-MS18f (Opus first verifier) | IA release (21:3x UTC 9 Oct by date -u): archive.org 15 GETs (8 djvu texts, 2 page_numbers, 5 page images; one 403 restricted OR III/4 id), all else 200; for LANE LEDGER (account 1)
 2026-10-09 21:27 | MS18-R5 reader | hdl take 2 (21:4x UTC 9 Oct by date -u): 11 short CISOSEARCHALL queries incl. one positive control, 3.3 s apart; for LANE LEDGER (account 1)
+2026-10-09 21:27 | FV-MS18h (Opus 5.5, first verifier) | hdl release (21:2x UTC 9 Oct by date -u): 8 requests (5 CISOSEARCHALL, 3 item info), all 200; for LANE LEDGER (account 1)
