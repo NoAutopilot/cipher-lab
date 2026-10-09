@@ -1,0 +1,133 @@
+{
+ "reclassed_word_to_letter": [
+  "c1:18 9-16",
+  "c1:30 17-17",
+  "c5:19 3-24",
+  "c5:20 8-22",
+  "c5:21 11-1",
+  "c5:22 13-1",
+  "c5:23 3-24",
+  "c5:24 3-12",
+  "c6:15 23-1"
+ ],
+ "anchors": {
+  "c1": {
+   "token_index": 0,
+   "dw_index": 0,
+   "word": "congress",
+   "occurrences_in_dw": 1
+  },
+  "c2": {
+   "token_index": 9,
+   "dw_index": 36,
+   "word": "assemble",
+   "occurrences_in_dw": 2
+  },
+  "c3": {
+   "token_index": 21,
+   "dw_index": 89,
+   "word": "assemble",
+   "occurrences_in_dw": 2
+  },
+  "c4": {
+   "token_index": 6,
+   "dw_index": 115,
+   "word": "given",
+   "occurrences_in_dw": 2
+  },
+  "c5": {
+   "token_index": 0,
+   "dw_index": 148,
+   "word": "paterson",
+   "occurrences_in_dw": 1
+  }
+ },
+ "columns_without_anchor": [
+  "c6"
+ ],
+ "compared_cells": 35,
+ "S_can_differ_share": 1.0,
+ "S_is_test": true,
+ "a_printed_page": 29,
+ "b_line1_variant_GATED": 29,
+ "c_plus_line9": 24,
+ "d_plus_doubled_figures": 24,
+ "share_b": 0.829,
+ "per_column_b_compared_matched": {
+  "c1": [
+   19,
+   19
+  ],
+  "c2": [
+   10,
+   10
+  ],
+  "c4": [
+   6,
+   0
+  ]
+ },
+ "control_K_page_permuted_key": {
+  "seeds": 1000,
+  "mean": 2.1,
+  "p95": 5,
+  "max": 10
+ },
+ "control_K_full_pipeline_reanchored_not_gated": {
+  "seeds": 1000,
+  "mean": 0.0,
+  "p95": 0,
+  "max": 0
+ },
+ "control_S_shuffled_column": {
+  "seeds": 1000,
+  "mean": 9.7,
+  "p95": 21,
+  "max": 29
+ },
+ "gate": "NON-TEST (compared < 40)",
+ "mismatches_b": [
+  {
+   "at": "c4:2",
+   "cell": "26-2",
+   "want": "s",
+   "word": "seneca",
+   "page_b": "i"
+  },
+  {
+   "at": "c4:3",
+   "cell": "26-6",
+   "want": "e",
+   "word": "seneca",
+   "page_b": "h"
+  },
+  {
+   "at": "c4:4",
+   "cell": "26-11",
+   "want": "n",
+   "word": "seneca",
+   "page_b": "f"
+  },
+  {
+   "at": "c4:5",
+   "cell": "26-6",
+   "want": "e",
+   "word": "seneca",
+   "page_b": "h"
+  },
+  {
+   "at": "c4:6",
+   "cell": "26-5",
+   "want": "c",
+   "word": "seneca",
+   "page_b": "t"
+  },
+  {
+   "at": "c4:7",
+   "cell": "26-1",
+   "want": "a",
+   "word": "seneca",
+   "page_b": "w"
+  }
+ ]
+}
