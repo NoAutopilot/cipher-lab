@@ -272,7 +272,8 @@ def nclass(r):
     return int(m.group(1)) if m else None
 
 
-AUDIT_STATUS = {"two audits": 2, "one audit": 1, "none": 0}
+AUDIT_STATUS = {"four audits": 4, "three audits": 3, "two audits": 2, "one audit": 1, "none": 0}
+TWO_PLUS = ("two audits", "three audits", "four audits")  # 9 Oct 2026: a third audit must not drop a row off the board
 _heuristic_rows = []
 
 
@@ -286,7 +287,7 @@ def audits(r):
         _heuristic_rows.append(r.get("title"))
         print(f"warning: no audit_status field, old heuristic used: {r.get('title', '')[:80]}", file=sys.stderr)
     g = r.get("grade", "")
-    if "two audits" in g or (nclass(r) or 0) >= 4 or r.get("kind") == "solve":
+    if any(x in g for x in TWO_PLUS) or (nclass(r) or 0) >= 4 or r.get("kind") == "solve":
         return 2
     if "audit" in g.lower():
         return 1
@@ -465,7 +466,7 @@ def counted_novelty(r):
     if r.get("qa_flag"):
         return False
     if "claim_scope" in r:
-        return ((novelty(r, "plaintext_novelty") or 0) >= 3 and r.get("audit_status") == "two audits"
+        return ((novelty(r, "plaintext_novelty") or 0) >= 3 and r.get("audit_status") in TWO_PLUS
                 and r["claim_scope"] in READING_SCOPES)
     return (nclass(r) or 0) >= 3 and audits(r) >= 2
 
@@ -473,12 +474,12 @@ def counted_novelty(r):
 def counted_key(r):
     """Third count: a key or mapping to text already in print, mapping_novelty >= N3 after two audits."""
     return (not r.get("qa_flag") and r.get("claim_scope") == "key-to-known-text"
-            and (novelty(r, "mapping_novelty") or 0) >= 3 and r.get("audit_status") == "two audits")
+            and (novelty(r, "mapping_novelty") or 0) >= 3 and r.get("audit_status") in TWO_PLUS)
 
 
 def counted_contrib(r):
     """Fourth count: catalogue contributions and corrections that carry a verifier's AUDIT.md class."""
-    return r.get("claim_scope") in ("catalogue-contribution", "correction") and r.get("audit_status") in ("one audit", "two audits")
+    return r.get("claim_scope") in ("catalogue-contribution", "correction") and r.get("audit_status") in ("one audit",) + TWO_PLUS
 
 
 def n_docs(pred, rows):
@@ -520,7 +521,7 @@ def reading_row(r, idx):
         chips += '<span class="chip k-known" title="The text itself was already in print; what is ours is the key.">text already in print</span>'
     if rlabel:
         chips += f'<span class="chip {rk}">{E(rlabel)}</span>'
-    chips += f'<span class="chip c-aud">{["no audit", "one audit", "two audits"][a]}</span>'
+    chips += f'<span class="chip c-aud">{["no audit", "one audit", "two audits", "three audits", "four audits"][min(a, 4)]}</span>'
     if r.get("claim_scope"):
         chips += f'<span class="chip c-scope" title="{E(r.get("unresolved_spans", ""))}">{E(r["claim_scope"].replace("-", " "))}</span>'
     if r.get("completeness") and r["completeness"] != "n/a":

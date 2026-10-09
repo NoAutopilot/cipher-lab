@@ -6,6 +6,8 @@ s.1-2): the strip counts documents from explicit per-row fields, not rows from g
   C  key to a text already in print, mapping N3, two audits              -> not a reading; counted in the third chip
   D  a second row naming one of A's documents                            -> the document is counted once
   E  completed reading, N3, two audits                                   -> 1 completed reading
+  G  completed reading, N3, "three audits" (9 Oct 2026: a third audit    -> counted too (2 completed readings);
+     dropped E97/E146/Chavigny f.229 off the board)                         the counter takes two OR MORE audits
   F  catalogue contribution with one audit                               -> 1 contribution
 Run: python3 tools/tests/test_build_dashboard_counts.py"""
 import json
@@ -37,6 +39,8 @@ RESULTS = [
         plaintext_novelty="N3", mapping_novelty="N3", audit_status="two audits", depth="D2"),
     row("E", "solve", "N3", document_id="doc E", claim_scope="completed-reading",
         plaintext_novelty="N3", mapping_novelty="N3", audit_status="two audits", depth="D2"),
+    row("G", "solve", "N3", document_id="doc G", claim_scope="completed-reading",
+        plaintext_novelty="N3", mapping_novelty="N3", audit_status="three audits", depth="D2"),
     row("F", "contribution", "N0", document_id="doc F", claim_scope="catalogue-contribution",
         plaintext_novelty="N0", mapping_novelty="N0", audit_status="one audit"),
 ]
@@ -56,7 +60,7 @@ with tempfile.TemporaryDirectory() as tmp:
         print(f"FAIL: build_dashboard.py exited {proc.returncode}: {proc.stderr}")
         sys.exit(1)
     page = open(os.path.join(tmp, "dashboard.html"), encoding="utf-8").read()
-    want = {"documents with recovered passages": 2, "completed readings": 1,
+    want = {"documents with recovered passages": 2, "completed readings": 2,
             "keys or mappings to text already in print": 1, "catalogue contributions and corrections": 1,
             "with our own key and no earlier decipherment found": 2}
     for label, n in want.items():

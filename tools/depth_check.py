@@ -70,7 +70,7 @@ def nclass(r):
 
 def is_counted(r):
     n = nclass(r)
-    return (r.get("audit_status") == "two audits" and n is not None and n >= 3
+    return (r.get("audit_status") in ("two audits", "three audits", "four audits") and n is not None and n >= 3
             and r.get("claim_scope") in COUNTED_SCOPES and not r.get("superseded_by"))
 
 
