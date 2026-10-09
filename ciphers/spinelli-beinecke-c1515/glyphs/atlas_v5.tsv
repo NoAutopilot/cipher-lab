@@ -1,0 +1,27 @@
+code	desc	count	pages	exemplars	marks_seen
+DIAMOND	rotated square outline (NOT in key)	10	p1,p2L1,p2L2	p1_07_010,p1_02_011,p1_03_018,p1_08_020,p1_06_012,p1_04_007,p1_04_024,p2L1_01_011,p2L2_01_007,p1_05_007	
+EIGHT	figure 8 (key: null N7)	12	p1,p2L1,p2L2	p1_07_026,p2L1_01_026,p1_05_008,p1_06_023,p1_04_017,p1_06_006,p2L2_01_016,p2L2_01_017,p2L1_01_009,p1_07_021	
+EIGHTBAR	8 crossed by a bar (NOT in key)	2	p1	p1_02_017,p1_06_003	
+EM	M zigzag (key: null N6)	6	p1,p2L1,p2L2	p1_08_026,p2L1_01_018,p1_02_012,p1_06_005,p2L2_01_014,p1_07_006	
+ENN	bold N (NOT in key; or N6)	5	p1,p2L1	p2L1_01_008,p1_07_003,p1_04_018,p2L1_01_002,p1_03_015	
+ESS	S curve (key: N11 or s)	2	p1	p1_02_022,p1_05_020,p1_08_030	
+FOUR	numeral 4 (key: c)	7	p1,p2L2	p1_01_032,p1_03_026,p1_08_029,p2L2_01_009,p1_04_009,p1_02_027,p2L2_01_005	
+HCURL	H-shape with curled serifs (key: word code under Prince of Castile, per the image; N4 per pass A)	6	p1,p2L1	p2L1_01_022,p1_04_013,p1_04_003,p1_03_011,p1_02_009,p1_03_005	
+HOOK	small hook-and-loop family: script e, bold e, rho/long-s with loop, t-cross with loop, u-curl, mu (v2 codes ELOOP/ECAP/RHO/TLOOP/UCURL/MU merged in v3: H3 passes could not separate them)	33	p1,p2L1,p2L2	p1_02_008,p1_03_022,p1_02_007,p1_04_025,p2L1_01_024,p1_04_010,p1_01_020,p1_03_008,p1_03_002,p1_08_017	
+LL	two verticals on a baseline (NOT in key)	3	p1	p1_07_014,p1_06_007,p1_04_022	
+NINE	numeral-9 loop with tail (key: p)	14	p1,p2L1	p1_02_004,p1_05_011,p1_01_023,p2L1_01_014,p2L1_01_020,p1_04_026,p1_07_011,p1_02_018,p1_06_013,p1_01_022	
+OMEGABAR	omega/w with or without a bar on top (v2 OMEGABAR/OMEGA2 merged in v3; key: null N10)	17	p1,p2L1,p2L2	p1_08_012,p1_01_029,p1_06_002,p1_05_012,p1_03_006,p1_05_004,p2L1_01_023,p1_02_016,p1_08_031	
+OMEGADOT	omega with two dots/hooks above (key: ?)	2	p1,p2L1	p1_02_003,p2L1_01_010	
+PHI	phi loop on a descender, crossed (key: a)	11	p1,p2L1,p2L2	p1_08_003,p1_03_014,p2L2_01_012,p1_04_002,p1_04_011,p1_07_023,p2L1_01_007,p1_01_005,p1_02_006,p1_05_019	
+PI	capital Pi (key: null N2)	2	p1	p1_04_001,p1_08_002	
+PLUS	plus sign (NOT in key)	2	p2L1	p2L1_01_006,p2L1_01_031	
+SEVEN	numeral-7 hook, thin or bold with a long top bar and hooked foot, and the bold caret (v2 SEVEN/SEVENB/CARET merged in v3)	26	p1,p2L1,p2L2	p2L1_01_012,p1_06_016,p1_03_009,p1_05_006,p1_04_006,p1_03_019,p1_03_012,p1_07_028,p1_02_015,p1_07_002	
+SIX	6 / b, loop at base with ascender (key: n1/n2)	11	p1,p2L1	p1_06_022,p2L1_01_004,p1_05_015,p1_06_001,p1_04_027,p1_05_003,p1_05_021	
+TEE	t-like cross with a curl, or a plus with a foot (key: b = T? or t)	4	p1	p1_08_011,p1_03_027,p1_05_001	
+THETA	circle crossed by a horizontal bar (NOT in key)	6	p1,p2L1	p1_01_017,p1_08_022,p1_03_013,p1_05_013,p2L1_01_029,p1_07_012	
+THREE	numeral-3 zigzag (key: d)	9	p1,p2L1	p1_03_021,p1_06_024,p1_02_014,p1_04_005,p1_02_023,p1_04_021,p1_07_005,p2L1_01_016,p1_01_015	
+TWO	numeral 2: round, flat/Z-shaped or D-shaped (v2 TWO/TWOFLAT/DEE merged in v3)	19	p1,p2L1,p2L2	p1_08_006,p1_07_004,p1_07_024,p1_04_015,p2L2_01_013,p1_06_014,p1_04_023,p1_06_011,p1_02_013,p1_06_015	
+XCURL	cursive x with curled ends (NOT in key; key d zigzag?)	8	p1,p2L1,p2L2	p2L1_01_021,p2L2_01_019,p1_06_019,p1_04_019,p1_07_020,p1_06_009,p2L1_01_032,p1_02_002	
+KEY_G1	published key cell G sign 1 (Domnina 2016 Ill. 1): loop on a vertical stem, foot turned left	0	print	domnina2016_ill1:236,2049,292,2174	
+KEY_U_V2	published key cell U/V sign 2 (Domnina 2016 Ill. 1): tall long s / f with a crossbar and a left foot	0	print	domnina2016_ill1:831,1283,903,1406	
+KEY_SS	published key cell SS sign 1 (Domnina 2016 Ill. 1): large looped H-like flourish	0	print	domnina2016_ill1:1170,1814,1266,1929	

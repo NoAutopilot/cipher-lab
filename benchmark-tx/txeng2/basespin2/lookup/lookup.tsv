@@ -1,0 +1,10 @@
+# Blind table lookup (TXE2-BASE-SPIN2, 9 Oct 2026 21:4x UTC by date -u): one Opus subagent, saw ONLY domnina2016_ill1_table.png
+# (crop 180,330,1540,2840 of sources/domnina-2015-2016/p27_2016_plate_key_letter_decipherment.jpg) and the three shape names.
+# Boxes are in the crop's coordinates; the subagent verified each by cropping. Verbatim hand-back:
+shape	match_rank	cell_letter	sign_index	confidence	box	description
+circle-on-stem	1	G	1	M	236,2049,292,2174	phi-like sign: a small oval loop with a vertical stem running through it and down, ending in a leftward hook at the foot
+circle-on-stem	2	FF	1	L	834,2276,926,2382	looped stroke with a closed loop at the bottom and a diagonal tail, shaped like an 8 or delta (the loop sits low on the stroke, not on top of a stem)
+circle-on-stem	3	D	2	L	184,1349,287,1420	small oval crossed by a long horizontal bar, theta-like (the bar is horizontal, not a vertical stem)
+long-s-crossbar	1	U/V	2	H	831,1283,903,1406	tall f-shaped long s: a hooked top, a descender ending in a leftward foot, and a horizontal crossbar at mid-height
+long-s-crossbar	2	P	1	L	498,2159,592,2215	short t-like sign: a curved upright crossed by a horizontal bar (too short to be a long s)
+looped-H	1	SS	1	H	1170,1814,1266,1929	large cursive H flourish: two slanted uprights joined by a crossing stroke, with a loop at the lower left

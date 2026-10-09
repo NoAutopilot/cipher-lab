@@ -25,3 +25,11 @@ TWO_NULLA	TWO
 TWO_O	TWO
 TWO_P	TWO
 TWO_S2	TWO
+# atlas_v5 rows (TXE2-BASE-SPIN2, PREREG-txeng2-9 B2, 9 Oct 2026), fixed before any read. Rule: a published-cell row maps to the
+# atlas code that BOTH 28 Sept H35 keymatch passes (ciphers/spinelli-beinecke-c1515/passes/keymatch_pass{K,L}.tsv, made before any
+# truth file) gave that published cell; where they disagree the name stays unmapped and scores as itself. Published values: G1 g,
+# U/V2 u, SS ss (Domnina 2016 Ill. 1).
+#   KEY_G1: K PHI (M), L PHI (M) -> PHI (agrees with key.tsv, where the g codes PHI_G and OMEGADOT are told apart by shape)
+#   KEY_U_V2: K NONE (2nd TEE), L TEE (2nd PHI) -> unmapped
+#   KEY_SS: K JHOOK, L NONE -> unmapped
+KEY_G1	PHI

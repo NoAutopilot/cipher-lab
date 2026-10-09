@@ -1,0 +1,12 @@
+3c3
+< Sheet (sign inventory with exemplars): /home/user/cipher-lab/ciphers/spinelli-beinecke-c1515/glyphs/atlas_v4.png
+---
+> Sheet (sign inventory with exemplars): /home/user/cipher-lab/ciphers/spinelli-beinecke-c1515/glyphs/atlas_v5.png
+6c6
+< Queue: /home/user/cipher-lab/benchmark-tx/txeng2/basespin/adjud_queue.tsv -- one row per doubtful position: line, col (the sign's position counting cipher signs from the left of the line, from 1), kind, candidates (readings two earlier readers gave), left_neighbours and right_neighbours (the agreed signs just before and after it, as landmarks to find the position).
+---
+> Queue: /home/user/cipher-lab/benchmark-tx/txeng2/basespin2/adjud_queue.tsv -- one row per doubtful position: line, col (the sign's position counting cipher signs from the left of the line, from 1), kind, candidates (readings two earlier readers gave), left_neighbours and right_neighbours (the agreed signs just before and after it, as landmarks to find the position).
+10c10
+< Write /home/user/cipher-lab/benchmark-tx/txeng2/basespin/adjud_out.tsv with header line<TAB>col<TAB>sign<TAB>conf (H/M/L), one row per queue row, same order. Reply only with the row count.
+---
+> Write /home/user/cipher-lab/benchmark-tx/txeng2/basespin2/adjud_out.tsv with header line<TAB>col<TAB>sign<TAB>conf (H/M/L), one row per queue row, same order. Reply only with the row count.

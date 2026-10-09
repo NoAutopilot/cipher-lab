@@ -1,0 +1,19 @@
+You are transcribing a 16th-century symbol cipher from images. Use ONLY the images named here; do not open any other file.
+
+Sheet (sign inventory, exemplars of each code): /home/user/cipher-lab/ciphers/spinelli-beinecke-c1515/glyphs/atlas_v5.png
+One extra code not on the sheet: JHOOK = a bold vertical stroke turning left at the foot (like a J).
+Line crops (10 lines, each split in two overlapping halves s1 then s2), in /home/user/cipher-lab/benchmark-tx/txeng/confirm/crops/:
+p1c_L01_s1.jpg p1c_L01_s2.jpg ... p1c_L08_s1.jpg p1c_L08_s2.jpg, p2c_L01_s1.jpg p2c_L01_s2.jpg, p2c_L02_s1.jpg p2c_L02_s2.jpg
+(20 files; view every one at its own size; do not resize, downscale or crop any image.)
+
+Rules:
+- Each crop holds ONE full-width line along its middle; ignore fragments of neighbouring lines at the top or bottom edge.
+- s1 and s2 of a line overlap: the last ~200 px of s1 and the first ~200 px of s2 show the SAME ink. Read every sign of the line exactly once, left to right.
+- Skip ordinary Latin-script words (e.g. a few plain words at the start of p1c_L01); transcribe cipher signs only.
+- For each sign give the sheet code that matches its shape. If a box holds two signs, give two rows. If a shape is on no sheet row, write NEW:<short description>. If unsure between two codes write A/B? (first choice first).
+- Ignore dots and punctuation between signs.
+- conf = H (sure), M (likely), L (guess).
+
+Write a TSV to OUTPUT_PATH with header: line<TAB>pos<TAB>sign<TAB>conf
+line = p1c_L01 ... p1c_L08, p2c_L01, p2c_L02 (no _s1/_s2); pos = 1,2,3... per line.
+Reply with only the number of signs per line.
