@@ -307,3 +307,49 @@ CONTROL PT/TT/CLNH/0086/11 m0002	-	blind control tile (local thumbnail of the on
 CONTROL PT/TT/CLNH/0086/11 m0003	-	blind control tile (local thumbnail of the on-disk full image)	heavy (detected)	S04-13	LIN-SIB2 doc09 montage
 CONTROL PT/TT/CLNH/0086/11 m0002	-	blind control tile (local thumbnail of the on-disk full image)	heavy (detected)	S05-03	LIN-SIB2 doc09 montage
 CONTROL PT/TT/CLNH/0086/11 m0003	-	blind control tile (local thumbnail of the on-disk full image)	light (detected)	S06-05	LIN-SIB2 doc09 montage
+PT/TT/CLNH/0086/09 m0171	-	thumbnail montage	none	S01-01	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0172	-	thumbnail montage	none	S01-02	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0173	-	thumbnail montage	none	S01-03	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0174	-	thumbnail montage	none	S01-04	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0175	-	thumbnail montage	none	S01-05	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0176	-	thumbnail montage	none	S01-06	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0177	-	thumbnail montage	none	S01-07	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0178	-	thumbnail montage (reader: light; 3x enlargement, not blind: signature block and short name lines, no numeral groups)	none (reader light)	S01-08	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0179	-	thumbnail montage	none	S01-09	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0180	-	thumbnail montage	none	S01-10	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0181	-	thumbnail montage	none	S01-11	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0182	-	thumbnail montage	none	S01-12	LIN-SIB3 doc09 montage
+CONTROL PT/TT/CLNH/0086/11 m0002	-	blind control tile (local thumbnail of the on-disk full image)	heavy (detected)	S01-13	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0183	-	thumbnail montage	none	S01-14	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0184	-	thumbnail montage	none	S01-15	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0185	-	thumbnail montage	none	S02-01	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0186	-	thumbnail montage	none	S02-02	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0187	-	thumbnail montage	none	S02-03	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0188	-	thumbnail montage	none	S02-04	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0189	-	thumbnail montage	none	S02-05	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0190	-	thumbnail montage	none	S02-06	LIN-SIB3 doc09 montage
+CONTROL PT/TT/CLNH/0086/11 m0003	-	blind control tile (local thumbnail of the on-disk full image)	heavy (detected)	S02-07	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0191	-	thumbnail montage	none	S02-08	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0192	-	thumbnail montage	none	S02-09	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0193	-	thumbnail montage	none	S02-10	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0194	-	thumbnail montage	none	S02-11	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0195	-	thumbnail montage	none	S02-12	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0196	-	thumbnail montage	none	S02-13	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0197	-	thumbnail montage	none	S02-14	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0198	-	thumbnail montage	none	S02-15	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0199	-	thumbnail montage	none	S03-01	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0200	-	thumbnail montage	none	S03-02	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0201	-	thumbnail montage	none	S03-03	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0202	-	thumbnail montage	none	S03-04	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0203	-	thumbnail montage	none	S03-05	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0204	-	thumbnail montage	none	S03-06	LIN-SIB3 doc09 montage
+CONTROL PT/TT/CLNH/0086/11 m0002	-	blind control tile (local thumbnail of the on-disk full image)	heavy (detected)	S03-07	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0205	-	thumbnail montage	none	S03-08	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0206	-	thumbnail montage	none	S03-09	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0207	-	thumbnail montage	none	S03-10	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0208	-	thumbnail montage (reader: light; 3x enlargement, not blind: address leaf with red postal-mark lattice, no numeral groups)	none (reader light)	S03-11	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0209	-	thumbnail montage	none	S03-12	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0210	-	thumbnail montage	none	S03-13	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0211	-	thumbnail montage	none	S03-14	LIN-SIB3 doc09 montage
+PT/TT/CLNH/0086/09 m0212	-	thumbnail montage	none	S03-15	LIN-SIB3 doc09 montage
+m0146 working size: PT/TT/CLNH/0086/09 m0146	-	dissemination JPEG 1158x1409 (1 request)	none: cursive prose, sideways marginal postscript in cursive, no numerals	LIN-SIB3

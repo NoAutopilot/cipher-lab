@@ -966,7 +966,7 @@ Settled (no longer a gap): m0001 of PT/TT/CLNH/0086/11, settled 2 Oct 2026 (NEXT
 Settled (no longer a gap): maço 86 items /04, /01, /02 in full and /09 m0001-m0020, no cipher (settled for /04 and /01 by KH1-E, 7 Oct 2026; for /02 in full and /09 m0001-m0020 by LIN-SIB, 9 Oct 2026, and /09 m0021-m0170 by LIN-SIB2, 9 Oct 2026, each with 6 of 6 blind /11 control tiles detected at thumbnail scale; NOTES "LIN-SIB (9 Oct 2026)", "LIN-SIB2 (9 Oct 2026)"). Not a gap any more for these units; the /09 remainder is the next line. Motive stays weak (NEXT-LIN, 2 Oct 2026: no stray pages 1 and 4 exist; only a numbered-series "1" billet is conceivable, M)
 - Sender-family edition, Textos Politicos, Economicos e Financeiros (1993, 2 vols), which could print the letter or its context in clear - blocker: waiting-on LOCAL-QUEUE.tsv row L10 (owner's desk runner, home IP; retry queued 26 Sept 2026 19:43 UTC, PR 27 recheck still Cloudflare 403); every cloud route has failed: bportugal.pt 403 on curl, browser_fetch.js and WebFetch, and Google Books NO_PAGES (AUDIT s.10, s.11). The Wayback CDX route named as the meantime step was tried again by this check (2 Oct 2026, 00:19 UTC, 1 request, prefix query on ocpep-7_t*). It failed at the transport level again (curl 35 reset; proxy recentRelayFailures: ws_closed_mid_exchange, web.archive.org:443), its third such failure after 24 Sept and AUD2 25 Sept, so that route is closed from the cloud
 - Other "Chave de uma cifra" units in the fonds, PT/TT/CLNH/0020/14 and PT/TT/CLNH/0078/80 - blocker: needs-physical-access; both are hasImages:false and hasPublishedRepresentations:false on a fresh docs/details call (NOTES "More under this key (LX-TR)"), with no description beyond the bare title. No ASKS.md row for an ANTT reproduction quote exists yet (grep CLNH/Linhares in ASKS.md: no hit); the parent should file one
-- maco 86 item /09 images m0171-m0212 (42 of 212), not yet thumbnailed (20 of 21 maço 86 items fully eye-checked, plus /09 m0001-m0170: 562 of 604 images, no cipher) - blocker: not-attempted; LIN-SIB2 (9 Oct 2026) stopped at the 150-request DigitArq session cap (last image fetched: index 169, m0170); next: the same blind-control montage sweep from index 170 (scripts/linsib_montage.py over a dir holding only the new thumbnails, as LIN-SIB2 did), 42 requests, one DigitArq session, ~$1.5; the same session can spend one working-size fetch on m0146 to confirm its sideways marginal postscript is cursive (LIN-SIB2 flag, own look: cursive)
+- [done 9 Oct 2026, LIN-SIB3: /09 m0171-m0212 thumbnailed, no cipher; maço 86 now 21 of 21 items, 604 of 604 images eye-checked] (was: maco 86 item /09 images m0171-m0212 (42 of 212), not yet thumbnailed (20 of 21 maço 86 items fully eye-checked, plus /09 m0001-m0170: 562 of 604 images, no cipher) - blocker: not-attempted; LIN-SIB2 (9 Oct 2026) stopped at the 150-request DigitArq session cap (last image fetched: index 169, m0170); next: the same blind-control montage sweep from index 170 (scripts/linsib_montage.py over a dir holding only the new thumbnails, as LIN-SIB2 did), 42 requests, one DigitArq session, ~$1.5; the same session can spend one working-size fetch on m0146 to confirm its sideways marginal postscript is cursive (LIN-SIB2 flag, own look: cursive)
 
 ## Escalation (1 Oct 2026)
 - [ ] siblings: maço 86 has 17 of 21 items (138 of 604 images) eye-checked with no numeral-group cipher found (LX-SIB/SIB2/SIB3), and the maço is Bezerra de Seixas family correspondence, 1796-1817. A DigitArq title search across CLNH found only 2 other key units, both undigitised. DECODE has no Linhares/CLNH row. Done 2 Oct 2026: m0001 on this unit (the verso of the m0002 leaf, a clear French billet, no cipher). Done 7 Oct 2026 (KH1-E): /04, /01; done 9 Oct 2026 (LIN-SIB): /02 in full, /09 m0001-m0020, no cipher; (LIN-SIB2): /09 m0021-m0170, no cipher. Not done: /09 m0171-m0212 (42 images), a lower priority -- no stray pages 1 and 4 exist; only a numbered-series "1" billet is conceivable (M)
@@ -1581,3 +1581,24 @@ full plus /09 m0001-m0170, 562 of 604 images, no sibling cipher.
 Requests: digitarq.arquivos.pt 150 (thumbnails, 3.6 s apart, all HTTP 200 JPEG, no 403/429/challenge); no other host. Thumbnails
 committed (images/maco86_scan/doc09, maço86_scan now 3.9 MB).
 
+
+## LIN-SIB3 (9 Oct 2026)
+
+LIN-SIB3 (LANE FAMILY-A2d, account 2, 9 Oct 2026, 01:09-01:20 UTC by date -u). Last leg of the maço 86 /09 thumbnail sweep. No decoding.
+
+Prior-work: `tools/prior_work.py antt-linhares-chave --item-spec shelfmark=PT/TT/CLNH/0086/09 --step-type lookup --fetch` exit 4; owed row
+(1-own, this job's own claim) recorded CLEAR; other rows UNCHECKED (no unit id; no decode, so check 4 not applicable); check 3 as LIN-SIB.
+
+Method: as LIN-SIB2. Thumbnails of /09 m0171-m0212 (42) fetched one at a time 3.6 s apart, all HTTP 200 JPEG; 3 sheets of 15 tiles
+(`scripts/linsib_montage.py`, seed 931), one blind /11 control tile per sheet (key keyhunt/2026-10-09-LINSIB3-montage-key-doc09.json); three
+Sonnet readers, one sheet each, key not shown.
+
+Result: **control 3 of 3 detected** (S01-13, S02-07, S03-07, all heavy). **Target: 0 of 42 with cipher.** Readers flagged two target tiles as light:
+S01-08 = m0178 and S03-11 = m0208. A 3x enlargement of both thumbnails (local, not blind, key known): m0178 is a signature block with short
+name lines; m0208 is an address leaf with a red postal-mark lattice; neither shows numeral groups. Graded none, noted per row in
+keyhunt/2026-10-09-LINSIB.tsv. Limit: thumbnail scale (128 px), where the small /11 billet sits near its floor (LIN-SIB2); a few stained tiles
+could not be ruled out for small numerals inside prose by the readers.
+m0146 at working size (1 request, 1158x1409): ordinary cursive prose with a sideways marginal postscript in cursive; no numerals.
+Maço 86: 21 of 21 items, 604 of 604 images eye-checked, no sibling cipher found by this method.
+
+Requests: digitarq.arquivos.pt 43 (42 thumbnails + 1 working-size), >= 3.6 s apart, no 403/429/challenge; no other host.
