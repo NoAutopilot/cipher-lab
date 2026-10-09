@@ -100,3 +100,27 @@ The global LM-anneal, key_repair and word-segmentation instruments are [retired]
 4. NOTES "## SIG-4612C (9 Oct 2026, account 1, for LANE SIG-4)": numbers for (a)/(b)/(c)/target side by side, HYPOTHESES.md row, Remaining gaps
    item updated (on a FAIL the crib instrument is logged with its attempt count, not retired after one attempt unless its own control failed),
    gaps_check. Report what was found and where it was not found; do not classify novelty.
+
+---
+
+# Wave 3 (written 9 Oct 2026 04:0x UTC by date -u)
+
+SIG-4612C (done 03:29, 2.95): control (a) recall 0.512 (pass), mean G +0.107 (pass), mean false reassignments 2.5 vs <= 2.0 (FAIL);
+4612 not scored. Crib instrument attempt 1 of 3.
+
+## SIG-4612D (Opus 5.5, solver; cap $4, box 60 min, no network, no vision calls): 4612 crib placement, attempt 2 -- a changed DESIGN, control first
+Target lodewijk-van-nassau-1573-74. Read NOTES "## SIG-4612C", `sig4612c/PREREG.md`, `sig4612c/crib_place.py`, `sig4612c/control.json`.
+Rule 3's third-attempt clause: this attempt must change the design, not one threshold. The named change (SIG-4612C's own next step): a
+reassignment is admitted only with (i) support from >= 2 independent kept placements (different cribs or non-overlapping windows), OR
+(ii) one placement plus a whole-stream per-code check fixed in advance: applying c -> L alone raises the fr16 word share over ALL other
+occurrences of code c outside the placement window (state the margin and the minimum count of outside occurrences in PREREG).
+1. `sig4612d/PREREG.md` committed and pushed before any new control run. The SAME 25 cribs, 0.60 placement share, f calibration, seeds,
+   pools (b)/(c) and the SAME false bar (mean false <= 2.0 per seed) and G > 0 as SIG-4612C -- do not relax them. The recall bar may be
+   re-fixed in PREREG with a reason written before the run (fewer, better-supported reassignments are the point), but not below 0.30.
+2. Control (a) first. If it fails any bar: stop, CONTROL BELOW GATE, attempt 2 of 3 logged, 4612 not scored.
+3. If (a) passes: (b) and (c) and the 4612 target exactly as SIG-4612C's PREREG; gate G_topical > p95(b) AND > p95(c). On PASS apply
+   through a decode config (never hand-edit key_full.tsv), grades S at most / M in crib windows, `tools/decode_key.py ... --check` exit 0,
+   and quote the stretches that now read with M marked. Run `tools/judge_plaintext.py` on the resulting 4612 decode and on the shuffled
+   control's decode through the same judge (rule 3 ARM-C1 clause), paste both.
+4. NOTES "## SIG-4612D (9 Oct 2026, account 1, for LANE SIG-4)", HYPOTHESES.md row with both numbers, Remaining gaps item, gaps_check.
+   Report what was found and where it was not found; do not classify novelty.
