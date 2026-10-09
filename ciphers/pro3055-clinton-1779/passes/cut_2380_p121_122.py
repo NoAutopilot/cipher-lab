@@ -18,8 +18,14 @@ BOXES = {
     # 25 Sept 1782 cipher copy, B.148 p.123 (D4-CLIN, 8 Oct 2026; img1205.jpg from .../69429%2Fc0ft8dg56944/full/max/0/default.jpg;
     # white ink on grey as filmed, read as is; run with SHEAR=0.012 PAD=0)
     1205: {'y': (720, 3800), 'cols': [(2330, 2660), (2640, 2930), (2900, 3200), (3130, 3460), (3420, 3760), (3700, 4120)]},
+    # its continuation, B.148 p.124 (UNA-CLIN, 9 Oct 2026; img1206.jpg from .../69429%2Fc0b27pp7jj22/full/max/0/default.jpg; dark ink
+    # as filmed). The columns fan out down the page (c1 ~0 px, c5 ~+150 px), which no single shear undoes, so this frame takes no
+    # shear and its own boxes for the bottom half ('cols_bot'); column 6 holds only the clear words at its head.
+    1206: {'y': (740, 3790), 'shear': 0.0,
+           'cols': [(2400, 2650), (2640, 2900), (2860, 3170), (3140, 3420), (3420, 3720), (3700, 4000)],
+           'cols_bot': [(2400, 2700), (2650, 2960), (2950, 3215), (3200, 3500), (3490, 3780), (3700, 4000)]},
 }
-LABEL = {1056: 406, 1058: 407, 1205: 123}  # page label where it is not image - 638
+LABEL = {1056: 406, 1058: 407, 1205: 123, 1206: 124}  # page label where it is not image - 638
 STRETCH = {1205}  # low-contrast frames (white ink on grey as filmed): autocontrast each crop on its own
 SHEAR = float(os.environ.get('SHEAR', '0.025'))  # 0 = the first cut (R11-CLIN2380B blind pass A read SHEAR=0 crops)
 PAD = int(os.environ.get('PAD', '30'))  # widen each box by PAD px both sides (0 for pass A's crops)
@@ -31,11 +37,14 @@ def main(src, out, only=None):
         if only and img not in only:
             continue
         im = ImageOps.autocontrast(Image.open(os.path.join(src, f'img{img}.jpg')).convert('L'), cutoff=1)
-        y0, y1 = b['y']
-        if SHEAR:  # the columns drift right down the page (about 50-90 px over the height); undo it before boxing
-            im = im.transform(im.size, Image.AFFINE, (1, SHEAR, -SHEAR * y0, 0, 1, 0), resample=Image.BICUBIC, fillcolor=255); mid = (y0 + y1) // 2
+        y0, y1 = b['y']; mid = (y0 + y1) // 2
+        shear = b.get('shear', SHEAR)
+        if shear:  # the columns drift right down the page (about 50-90 px over the height); undo it before boxing
+            im = im.transform(im.size, Image.AFFINE, (1, shear, -shear * y0, 0, 1, 0), resample=Image.BICUBIC, fillcolor=255)
         for k, (x0, x1) in enumerate(b['cols'], 1):
             for half, (a, z) in (('top', (y0, mid + 60)), ('bot', (mid - 60, y1))):
+                if half == 'bot' and 'cols_bot' in b:
+                    x0, x1 = b['cols_bot'][k - 1]
                 c = im.crop((x0 - PAD, a, x1 + PAD, z))
                 if img in STRETCH:
                     c = ImageOps.autocontrast(c, cutoff=2)
