@@ -1,0 +1,11 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-09 13:53	ciphers/huntington-blathwayt-madrid-1728	1240=s	2	6.3		6.1	undecided	non-blind
+2026-10-09 13:53	ciphers/huntington-blathwayt-madrid-1728	1240=que	2	-4.7		7.6	reject	non-blind
+2026-10-09 13:53	ciphers/huntington-blathwayt-madrid-1728	1250=hier	2	20.9		35.5	undecided	non-blind
+2026-10-09 13:53	ciphers/huntington-blathwayt-madrid-1728	1250=c'est	2	3.2		33.1	undecided	non-blind
+2026-10-09 13:54	ciphers/huntington-blathwayt-madrid-1728	665=co	1	11.4		21.8	undecided	non-blind
+2026-10-09 13:54	ciphers/huntington-blathwayt-madrid-1728	665=lo	1	12.0		21.8	undecided	non-blind
+2026-10-09 13:54	ciphers/huntington-blathwayt-madrid-1728	46=accommodeme	1	5.3		12.9	undecided	non-blind
+2026-10-09 13:54	ciphers/huntington-blathwayt-madrid-1728	46=acomodement	1	0.4		12.9	undecided	non-blind
+2026-10-09 13:54	ciphers/huntington-blathwayt-madrid-1728	1018=sec	1	12.0		20.5	undecided	non-blind
+2026-10-09 13:54	ciphers/huntington-blathwayt-madrid-1728	1018=ser	1	14.7		19.7	undecided	non-blind
