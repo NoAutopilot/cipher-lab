@@ -9,7 +9,8 @@ Reference = benchmark-tx/txeng2/dint-f98v-gloss/passZ_pipeline.tsv (2 blind Opus
 adjudication; committed before the gloss was read). Plain side = gloss.tsv (2 blind Opus gloss reads, reconciled), per
 line: struck [..] words and *clear words dropped, '+', '|' and '?' turned into the wildcard '.', j -> i, v -> u by fold.
 Alignment: tools/interlinear_align.run_align with align_print.py's syl settings (floor 100, null_cost -1, max_chunk 3,
-seg_bonus 0, len_prior 1) plus wildcard '.'; one pair per cipher line; reference labels coded 100+k (NEW:* each its code).
+seg_bonus 0, len_prior 1) plus wildcard '.' and, as a stated deviation, key_print.tsv as the EM prior (weight = its
+agree count; unseeded: align agrees 50/246, GAPS4 rank 25/201, 0 scored), so the key_print check is partly circular; one pair per cipher line; reference labels coded 100+k (NEW:* each its code).
 Key rebuilt from this leaf: per sign, the single-letter chunks it aligned to: majority letter, count, agree share.
 A sign is GATED when its majority count >= 2, agree >= 0.75 and, where its label maps to key_print.tsv rows (reader
 labels '+' -> plus, '-:-' -> div, 'a' -> a|al, '4' -> 4|D, else same), at least one mapped row reads the same letter.
@@ -19,6 +20,7 @@ value", which makes the reference score 0 on identity by construction): a scored
 gated to ANOTHER letter stays scored (flag ref-off-key; the reference is wrong there unless the decipherer slipped); a
 reference sign that is NOT gated at a position excludes it (low-agree / n<2 / key-conflict / off-sheet), so a sign the leaf
 cannot pin is never charged. The literal-rule figure = drop the ref-off-key rows; RESULTS.md prints both.
+G03's first two words are dropped (left of the cipher run, over no sign).
 Excluded classes: gloss-unread (wildcard in chunk), unaligned, multi-letter, letter-no-gated-sign, off-sheet (NEW:/?),
 low-agree, n<2, key-conflict. Flag align-conflict where interlinear_align's own status is conflict/single.
 Control: GAPS4 statistic (share of decoded letters in difflib blocks >= 3 against the folded gloss), rebuilt key vs 200
@@ -66,14 +68,25 @@ def build(out_root):
     for r in rd(os.path.join(TX, 'passZ_pipeline.tsv')):
         ref[r['line']].append(r['sign'])
     gl = {'f98v_L' + r['line'][1:]: gloss_plain(r['text']) for r in rd(os.path.join(TX, 'gloss.tsv'))}
+    # G03's first two words ('?e Suoillem') stand LEFT of L03's first cipher sign (region x < 300 on the deskewed source,
+    # checked on the overlay): a name written beside the run, over no sign; dropped here by rule, never by editing gloss.tsv.
+    gl['f98v_L03'] = ' '.join(gl['f98v_L03'].split()[2:])
     codes = {}
     pairs = []
     for ln in sorted(ref):
         raw = ' '.join(str(codes.setdefault(s, 100 + len(codes))) for s in ref[ln])
         pairs.append({'plain_line': ln, 'plain_raw': gl.get(ln, ''), 'cipher_line': ln, 'cipher_raw': raw})
     inv = {c: s for s, c in codes.items()}
+    # prior = key_print.tsv through KPMAP, weight = its agree count (stated deviation: the unseeded run never converged on
+    # this leaf -- align agrees 50/246, GAPS4 rank 25 of 201 -- while key_print's decode visibly tracks the gloss)
+    kpr = {r['sign']: r for r in rd(KP)}
+    prior = {}
+    for s_, c_ in codes.items():
+        for m_ in KPMAP.get(s_, [s_]):
+            if m_ in kpr:
+                prior.setdefault(c_, Counter())[kpr[m_]['meaning']] += int(kpr[m_]['agree'])
     prep, results, counts, shown = ia.run_align(pairs, floor=100, null_cost=-1.0, max_chunk=3, seg_bonus=0.0,
-                                                 len_prior=1.0, wildcard='.')
+                                                 len_prior=1.0, wildcard='.', prior=prior)
     trows = ia.token_rows(prep, results, counts, shown)
     assert len(trows) == sum(len(v) for v in ref.values())
     agrees = sum(1 for t in trows if t[7] == 'agrees')
