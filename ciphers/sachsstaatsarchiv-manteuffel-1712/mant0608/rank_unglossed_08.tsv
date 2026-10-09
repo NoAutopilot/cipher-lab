@@ -1,4 +1,4 @@
-# MANT-INV08 (9 Oct 2026): 694/08 stride-4 code-bearing frames, unglossed or only partly glossed, ranked by eye token estimate (grade M, not transcribed; coverage blank); extended by MANT-INV08B (9 Oct 2026, offset-2 frames 0004-0262, rows marked MANT-INV08B), re-ranked by the lower bound of est_tokens
+# MANT-INV08 (9 Oct 2026): 694/08 stride-4 code-bearing frames, unglossed or only partly glossed, ranked by eye token estimate (grade M, not transcribed; coverage blank); extended by MANT-INV08B (9 Oct 2026, offset-2 frames 0004-0262, rows marked MANT-INV08B), re-ranked by the lower bound of est_tokens; extended by MANT-INV08C (9 Oct 2026, offset-2 frames 0267-0499, rows marked MANT-INV08C), re-ranked by the lower bound of est_tokens
 rank	loc	frame	glossed	density_eye	est_tokens	note
 1	694/08	0109	n	moderate	70-90	MANT-INV08B: f.80 (beschaedigt), two pages, calligraphic clerk hand, UNGLOSSED: name pairs 55.44 (~14x) and 7.60 (~9x) recur (two persons in a dispute over accounts before 'le Roy' and commissaires), 11.60.66.6.28, 11.26, 11.27; runs 10.3.1.55.44.120.13.96.284.100.35.21.66.34.60.39.14.89.1000.260.239 and 103.7.60.66.21.120.31.50.9.28.26.10 (M eye); '400 ecus' in clear
 2	694/08	0454	n	moderate	60-75	ff.~360v-361 (stamp 361): left page only, UNGLOSSED: 60.35.55.10.44.103; 26.33.82.60.66.73.10.69.51.11.92 (repeated later as 60.33.82.60.66.73.10.69.51.11.92); 198 x6; 150; 187; 257; 60.75.14.16.21.30.35.50; 68.27.21.33.12.120; 25.55.100.9.24.6.10.60
@@ -6,13 +6,25 @@ rank	loc	frame	glossed	density_eye	est_tokens	note
 4	694/08	0200	partial	moderate	40-55	MANT-INV08B: stamp 152, two pages (mentions de Laverne's cassette, Comte de Lippe): runs 65.44.66.57.17, 11.103.34.35.28.9.59, 1.27.9.2.51.7.21.140, 103.300.66.6.7.91.25; singles 9 (many), 11, 1.26, 1.27, 190, 7.60, 257, 157; small superscript glosses over about half (M eye: 'Stanislas', 'le Roy de Suede', 'le Roy d'Angl.'?)
 5	694/08	0176	n	moderate	30-40	MANT-INV08B: stamp 135, Berl. 2 Juil 1712 (Golowkin and the prince's library at Custrin in clear), right page lower third UNGLOSSED: runs ~17.41.35.26, 13.66.4.10.26.36 (repeated later as 13.66.22.26.?), 5.17.50...120.1000.433.60.21 (partly struck), 55.2.27.44.25.6 (M eye); left page blank verso
 6	694/08	0114	partial	light	15-25	MANT-INV08B: stamp 85, Berl. 7 Juin 1712: left page (end of a letter, dense marginal column) runs 100.6.34.27.5.48.25.44 (gloss over, M), 14.35.7.16.15.4.66.28.34.33.14 (gloss 'negociation'), single 3, 'n.' 'la Pologne' over a struck word; right page clear (de Laverne affair, Konigsberg regency)
-7	694/08	0426	partial	light	11-13	left page (Manteuffel report end, para 7): one run 56.34.28.4.76.4.38.60.54.38 with a small word above (M); right page f.336 Flemming to Manteuffel, Greifswald 23 Oct 1712, single 46 x2
-8	694/08	0173	partial	light	10-12	f.132 Flemming to Manteuffel, Dresden 2 Juil 1712: 48 x2, 39, 25.12.1.700.25.7.18?, 3 (gloss 'Welling' over 3 only)
-9	694/08	0247	n	light	6-8	MANT-INV08B: stamp 181, Berl. 6 Aout 1712 (No 63), right page UNGLOSSED: 'le projet de 57.28.35.54', later '57.28.' again (a repeated run, two witnesses), single 272 ('que 272 put garder'?) (M eye)
-10	694/08	0117	?	light	5-7	ff.~86v-87 (stamp 87, endorsement 'Mr Manteufel Dresden le 11 Juin 1712'): run 17.60.39.21.72 with a possible small word above; 18 single
-11	694/08	0147	partial	light	4	ff.~261v-262 (stamp 262): 11 (gloss 'R. m.'), 260, 145.60 (small gloss)
-12	694/08	0492	n	light	4	end of a letter: 11; 35.33.51; unglossed
-13	694/08	0107	n	light	1	single 11 ('je sais que 11. a dit'); unglossed
-14	694/08	0127	n	light	1	f.94 (no 41, Berl. ce 14 Juin 1712): single 44; unglossed
-15	694/08	0213	n	light	1	f.164 (no 54?, ce 17 Juin 1712) left page: single 46; unglossed
-16	694/08	0026	n	light	1-2	MANT-INV08B: single page (Lubomirski, Wackerbart, Freywald) clear but for 'l'homme de 3' (single code 3, unglossed; 3 = 'W.' elsewhere)
+7	694/08	0489	partial	light	14-18	MANT-INV08C: stamp 391, Berl. 15 Nov 1712: run 44.66.63.50.39.60.35.51.15.26.10.2.35 ('voulois plus ...', gloss 'l'alliance defensive'? small, M), 150 x2 (gloss 'Schlippenbach'? at sight); left page bleed-through only
+8	694/08	0382	n	light	12-15	MANT-INV08C: stamp 306, Berl. ?7 Oct 1712 P.S.: UNGLOSSED name codes 11.60 ~5x and the run 11.60.66.6.28 ('le pauvre 11.60.66.6.28 est fort malade de chagrin ... de ne pouvoir pas rendre ses comptes', 'les comptes de 11.60', 'le poste de 11.60'), 57.12 once; the same run 11.60.66.6.28 and the same accounts matter (Maillette, the King's coffers) as 0109 -- a second witness for 0109's name codes (M at sight)
+9	694/08	0318	partial	light	12-16	MANT-INV08C: stamp 247: right page only: 30.33.6.60.12 (small gloss), 160 x2, 177, 170, 257 x2, 187, 34.66.39.4 (gloss 'Paix'?); left page clear (Turks, the Porte, Schlippenbach)
+10	694/08	0426	partial	light	11-13	left page (Manteuffel report end, para 7): one run 56.34.28.4.76.4.38.60.54.38 with a small word above (M); right page f.336 Flemming to Manteuffel, Greifswald 23 Oct 1712, single 46 x2
+11	694/08	0173	partial	light	10-12	f.132 Flemming to Manteuffel, Dresden 2 Juil 1712: 48 x2, 39, 25.12.1.700.25.7.18?, 3 (gloss 'Welling' over 3 only)
+12	694/08	0442	n	light	8-10	MANT-INV08C: stamp 349: right page: UNGLOSSED run 35.30.51.66.21.120 ('que le tout dependroit des nouvelles que 35.30.51.66.21.120 manderoit du 187') + 187, 217; left page clear (Russians, Mecklenburg, Wolffrath)
+13	694/08	0477	partial	light	8-10	MANT-INV08C: right page of a spread (left blank): 40 (gloss 'Ilgen'? over it) x2, 103.113 glossed ('le feldmarechal'?), 1.13 ('V.E. ... 1.13 a ecrit'?), 9 glossed 'Ilgen'; a Flemming-side page, codes at sight
+14	694/08	0247	n	light	6-8	MANT-INV08B: stamp 181, Berl. 6 Aout 1712 (No 63), right page UNGLOSSED: 'le projet de 57.28.35.54', later '57.28.' again (a repeated run, two witnesses), single 272 ('que 272 put garder'?) (M eye)
+15	694/08	0482	n	light	6-8	MANT-INV08C: left page only: '1.13' x3 (a person: 'la lettre que j'ay ecrite a 1.13', 'notre bon 1.13'), 96, 11, 257 -- UNGLOSSED name codes (1.13 recurs on 0026? no -- 0026 was '3')
+16	694/08	0117	?	light	5-7	ff.~86v-87 (stamp 87, endorsement 'Mr Manteufel Dresden le 11 Juin 1712'): run 17.60.39.21.72 with a possible small word above; 18 single
+17	694/08	0423	partial	light	5-7	MANT-INV08C: stamp 334: 155, 160 (small gloss), 257 (gloss 'le Roy de Pr.'), 83.44 (small gloss, 'Ilg.'? M); rest clear (the King and Ahlefeldt, Hamburg)
+18	694/08	0147	partial	light	4	ff.~261v-262 (stamp 262): 11 (gloss 'R. m.'), 260, 145.60 (small gloss)
+19	694/08	0492	n	light	4	end of a letter: 11; 35.33.51; unglossed
+20	694/08	0377	n	light	3-4	MANT-INV08C: stamp 302, Flemming to Manteuffel, Greifswald 8 Oct 1712 (the other direction, the hand of 0482): UNGLOSSED name codes 11 x2 ('11 ne devroit pas donner tant d'avis', '11 a besoin de son amitie'), 96 ('cela fait connoitre a 96')
+21	694/08	0433	n	light	3-6	MANT-INV08C: stamp 342: 112 ('en secret avec 112'), 1914? and a short run in an interlinear insertion ('je demanderoi 17.66.9.4'? M); Breton, Withworth; unglossed
+22	694/08	0387	n	light	3-5	MANT-INV08C: stamp 309, Berl. 7 Oct 1712 (to 'Mons. le Comte de Fl.'): unglossed name codes 11 ('11 veuille ou puisse me seconder'), 39 ('trembler terriblement 39'), 257 -- 11 and 39 are the 'K.' and 'I.' of 0348 (M)
+23	694/08	0107	n	light	1	single 11 ('je sais que 11. a dit'); unglossed
+24	694/08	0127	n	light	1	f.94 (no 41, Berl. ce 14 Juin 1712): single 44; unglossed
+25	694/08	0213	n	light	1	f.164 (no 54?, ce 17 Juin 1712) left page: single 46; unglossed
+26	694/08	0026	n	light	1-2	MANT-INV08B: single page (Lubomirski, Wackerbart, Freywald) clear but for 'l'homme de 3' (single code 3, unglossed; 3 = 'W.' elsewhere)
+27	694/08	0328	n	light	1-2	MANT-INV08C: stamp 256: one UNGLOSSED name code 11 ('je ne sai la chose que confusement par 11'), maybe one more over 'ministre' (M); otherwise clear
+28	694/08	0408	n	light	1-2	MANT-INV08C: stamp 325, Berl. 17 Oct 1712: one UNGLOSSED code 150 ('cela n'accommoderoit pas 150', M); otherwise clear
