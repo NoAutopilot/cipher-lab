@@ -9464,6 +9464,211 @@
       "depth_sentence": "On 29 Nov 1864 Ingalls had the City Point depot quartermaster send every empty steamer to Washington to fetch troops.",
       "depth_check": "code clause: Weasel = Steam (C by holder clear copy 10267 of 5630), Grapes = Washington, Whist = Troops passim; external (non-statistical): OR I/42 pt 3 S.O. No. 120 (City Point, 5 Nov 1864) makes Lt Col G. W. Bradley depot quartermaster at City Point under Ingalls; Grant to Halleck 28 Nov 1864 on moving the Sixth Corps infantry first; sibling entry on 5812 the same day",
       "depth_note": "17 H of 17 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM7a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM7a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7a)' section 5",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): R. O'Brien for Butler (Hd Qrs Army of the James) to Maj. Carney, Norfolk, 4 Dec 1864, Col. Saunders to report quietly on property and papers taken from Stephen Barton of Bartonsville (E251)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 4 Dec 1864 Butler's office (R. O'Brien) told Maj. Carney at Norfolk to have Col. Saunders report, by the next day's boat, on property taken from Stephen Barton of Bartonsville, N.C., and to send all books and papers taken from Barton, without attracting observation. The telegram was not located in Butler's Private and Official Correspondence vol. V, the Official Records (ser. I vol. 42 pt 3) or the Huntington's full-text search (searched 9 Oct 2026); Butler V p.265 prints Butler's 15 Oct order on Barton's arrest.",
+      "gap": "N3: Google Books (429), OR I/42 pt 3 page by page for early Dec, Norfolk provost records unread. Depth D3.",
+      "depth": "D3",
+      "completeness": "20 H of 20 code-word groups ('Stephen Barton', 'Bartonsville', 'Saunders', 'Carney' plain; 'funny' after the signature unread)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.272, pointer 5816, E251"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.272, pointer 5816, E251",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.272, pointer 5816, E251"
+      ],
+      "depth_sentence": "On 4 Dec 1864 Butler's office ordered the Norfolk provost to report, quietly, on property and papers taken from the arrested Stephen Barton of Bartonsville.",
+      "depth_check": "code clause: Wick = Report (x4 here; passim), Pandora = Colonel passim; external, non-statistical: Butler V p.265 (Butler to Shepley, 15 Oct 1864: Stephen Barton of Bartonsville, Hertford Co., arrested with his property; send all papers found upon him); page read whole by FM-R4a",
+      "depth_note": "20 H of 20 code-word groups ('Stephen Barton', 'Bartonsville', 'Saunders', 'Carney' plain; 'funny' after the signature unread)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM7a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM7a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7a)' section 5",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Lt. Col. T. D. Hart, 104th Pennsylvania, Fort Monroe, to the General-in-Chief, 28 Aug 1864, arrival of the 104th Pa. Vols. from Hilton Head (E252)",
+      "line": "Read at grade H with War Department Cipher No. 1: at 4 p.m. on 28 Aug 1864 Lt. Col. T. D. Hart reported to the General-in-Chief the arrival of the 104th Pennsylvania Volunteers at Fort Monroe from Hilton Head. The telegram was not located in the Official Records (ser. I vol. 35 pt 2, vol. 42 pt 2) or the Huntington's full-text search (searched 9 Oct 2026); OR I/35 pt 2 names Hart as the regiment's commander and prints Foster's 26 Aug letter sending it north on the Fulton.",
+      "gap": "N3: Google Books (429), press of 28-30 Aug 1864 unread. Depth D3.",
+      "depth": "D3",
+      "completeness": "16 H of 16 code-word groups ('Hart', 'Pennsylvania', 'Hilton Head' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.237, pointer 5781, E252"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.237, pointer 5781, E252",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.237, pointer 5781, E252"
+      ],
+      "depth_sentence": "Lt. Col. Hart reported the 104th Pennsylvania's arrival at Fort Monroe from Hilton Head on 28 Aug 1864.",
+      "depth_check": "code clause: Whip = Regiment, Wilcox/Washington = Volunteer passim; external: OR I/35 pt 2 pp.79, 204 (104th Pa., Lt. Col. Thompson D. Hart) and pp.258-259 (the 104th Pa. sent north on the Fulton, 26 Aug); image read by FV-FM7a",
+      "depth_note": "16 H of 16 code-word groups ('Hart', 'Pennsylvania', 'Hilton Head' plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM7a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM7a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7a)' section 5",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 93.8,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Gilmore (Morehead City, 5 Oct) via Fort Monroe to Maj. Eckert, 8 Oct 1864, offices closed by fever, Kent dead, Waterhouse very ill (E253)",
+      "line": "Read at grade H with War Department Cipher No. 1: Gilmore at Morehead City told Maj. Eckert (via Fort Monroe, 8 Oct 1864) that the offices were all closed, Kent was dead, Waterhouse very ill in hospital, fever increasing, no operators needed for some weeks, and that he would go north by the next steamer. The telegram was not located in Plum's Military Telegraph (1882) vols. I-II, the Official Records (ser. I vol. 42 pts 2-3) or the Huntington's full-text search (searched 9 Oct 2026); Plum vol. II p.35 narrates the yellow fever deaths of the operators Waterhouse and Douglas Kent.",
+      "gap": "N3: Google Books (429), Eckert's annual telegraph report for 1864-65 unread. Depth D3.",
+      "depth": "D3",
+      "completeness": "15 H + 1 I of 16 code-word groups ('fever' read plain although Fever = 13 in key.md; 'Kent', 'Waterhouse', 'Gilmore' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.245, pointer 5789, E253"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.245, pointer 5789, E253",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.245, pointer 5789, E253"
+      ],
+      "depth_sentence": "In early Oct 1864 yellow fever closed the telegraph offices at Morehead City, killing the operator Kent.",
+      "depth_check": "code clause: Whiff = Troops, Weasel = Steam, Tremble = North passim; external, non-statistical: Plum, The Military Telegraph during the Civil War (1882) vol. II p.35 (yellow fever in the N.C. district; operators Waterhouse and Douglas Kent died; Gilmore's lines incl. Morehead City); image read by FV-FM7a",
+      "depth_note": "15 H + 1 I of 16 code-word groups ('fever' read plain although Fever = 13 in key.md; 'Kent', 'Waterhouse', 'Gilmore' plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM7a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM7a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7a)' section 5",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 87.5,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): W. J. Dealy, Fort Monroe, to Maj. Eckert, 17 June 1864 1 PM, a boat captain's report that the army had crossed the James and the pontoon bridge was being taken up (E256, 17 June part; the 16 June part is N1)",
+      "line": "Read at grade H with War Department Cipher No. 1: at 1 p.m. on 17 June 1864 W. J. Dealy at Fort Monroe told Maj. Eckert that the captain of the boat that brought Dana's dispatch down to Jamestown Island reported that all the [one word unread] had crossed and that the pontoon bridge was probably by then taken up. Not located in the Official Records (ser. I vol. 40 pts 1-2) or the Huntington's full-text search (searched 9 Oct 2026); OR I/40 pt 1 prints Dana's dispatches of 16-17 June sent via Jamestown Island. The 16 June part of the entry (Clapp to Pettes) stands in clear in the Huntington's transcription, pointer 4717.",
+      "gap": "N3 (17 June part only; 16 June part N1, clear copy 4717): 'whiskey' unread; Google Books (429). Depth D3.",
+      "depth": "D3",
+      "completeness": "7 H + 1 M of 8 code-word groups in the 17 June part ('whiskey' not in key.md; 'Dealy' plain as 'Day lea')",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.208, pointer 5752, E256"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.208, pointer 5752, E256",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.208, pointer 5752, E256"
+      ],
+      "depth_sentence": "On 17 June 1864 a boat captain reported at Fort Monroe that the army had crossed the James and the pontoon bridge was probably being taken up.",
+      "depth_check": "code clause: Village = Pontoon, Patron = Bridge, Insanity = Dana passim; external: OR I/40 pt 1 pp.20-22 (Dana's 16-17 June dispatches via Jamestown Island; pontoon bridge, army south of the James by noon 17 June); Plum vol. II p.261 (Dealy at Fort Monroe); image read by FV-FM7a",
+      "depth_note": "7 H + 1 M of 8 code-word groups in the 17 June part ('whiskey' not in key.md; 'Dealy' plain as 'Day lea')"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM7a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM7a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7a)' section 5",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Maj. Gen. J. G. Foster (Hilton Head, 26 Aug) via Fort Monroe to the General-in-Chief, 28 Aug 1864, the 104th Pa. Vols., 900 men, on the steamer Fulton (E258)",
+      "line": "Read at grade H with War Department Cipher No. 1: Maj. Gen. J. G. Foster at Hilton Head (26 Aug, via Fort Monroe 28 Aug 1864, 4 p.m.) told the General-in-Chief he was sending the 104th Pennsylvania Volunteers, 900 men, on the steamer Fulton to report to him at Washington, the commander to telegraph from Fort Monroe and, unless ordered otherwise, proceed to Alexandria and march to Washington. The telegram was not located in the Official Records (ser. I vol. 35 pt 2, vol. 42 pt 2) or the Huntington's full-text search (searched 9 Oct 2026); OR I/35 pt 2 pp.258-259 prints Foster's letter to Halleck of the same day naming the regiment, its strength and the steamer.",
+      "gap": "N3 (facts printed in Foster's letter, not this text): Google Books (429), Grant Papers vol. 12 unread for this item. Depth D3.",
+      "depth": "D3",
+      "completeness": "33 H of 33 code-word groups ('Fulton', 'Hilton Head' plain; Lester = Foster H)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.237, pointer 5781, E258"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.237, pointer 5781, E258",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.237, pointer 5781, E258"
+      ],
+      "depth_sentence": "Foster sent the 104th Pennsylvania, 900 men, north on the Fulton with orders to march from Alexandria to Washington.",
+      "depth_check": "code clause: Banjo = Alexandria, Spit = Men, Lester = Foster; external, non-statistical: OR I/35 pt 2 pp.258-259 (Foster to Halleck, 26 Aug 1864: the 104th Pa., 900 men, sent on the Fulton); image read by FV-FM7a",
+      "depth_note": "33 H of 33 code-word groups ('Fulton', 'Hilton Head' plain; Lester = Foster H)"
     }
   ],
   "lanes": [

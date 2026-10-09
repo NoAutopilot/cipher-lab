@@ -2891,3 +2891,24 @@ Lead for readers (fourth time, FV-FM5c/6a/6c/7b): query CONTENTdm with two commo
 tents instead"), not the rare cipher-side spellings (farquhor): the clear copy spells names normally.
 Requests: hdl.huntington.org 20 (one token block 04:27-04:29 UTC: 15 dmQuery, 3 IIIF pages, 2 dmGetParent calls the API does not support);
 archive.org 3; Google Books 1 (429, stopped).
+
+## FV-FM7a (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier for E251, E252, E253, E256, E258 (reader FM-R4a); full log in AUDIT.md "## AUDIT (FV-FM7a)". Duplicate diff: none (5781
+carries E252 and E258, two telegrams); mssEC 18/19 hold no sender's copy. The holder's CONTENTdm full text across all pointers found a
+**period clear copy of E256's 16 June part (pointer 4717, p.276: Clapp to Col. W. H. Pettes, "White House is abandoned ---- send material
+here")**: that part N1. **E251, E252, E253, E256 (17 June part), E258: N3 D3**, with printed context: E258 = Foster to Halleck, 26 Aug 1864
+(OR I/35 pt 2 pp.258-259, same facts, a letter); E252 signer Lt. Col. Thompson D. Hart (OR I/35 pt 2 pp.79, 204); E253's event (Kent and
+Waterhouse dead of yellow fever under Gilmore) in Plum, Military Telegraph II p.35; E251 Butler V p.265 (Barton's arrest, 15 Oct); E256
+Dana's dispatches via Jamestown Island (OR I/40 pt 1 pp.20-22), Dealy at Fort Monroe (Plum II p.261). Pages 5781, 5789, 5752 eye-checked
+from `tools/iiif_lines.py --image` crops (scratch): transcription stands, except E252 "from from" and **the text below E252 is a struck-out
+entry dated "Head Qrs. A. P. Sept. 1/64", not part of E252**. Status rows E251 E252 E253 E256 E258; SO-ECKERT-E251/E252/E253/E256/E258
+queued; WORK-QUEUE AUD2-LEDGER-15.
+Reading corrections for a FIX job (rule 7, decode.py entry notes): E251 "Stephen", "Barton" x3 plain (decoder [In the], [Adjt Genl]);
+"Tobey sent me" = to be sent me; Harriet = 1 PM H. E252 "sylvan" plain (decoder [Junction]); washingtons = Volunteers H; cut the tail at
+"Geo. D. Sheldon" (struck 1 Sept entry). E253 address "Washington" plain; "fever" plain (decoder [13]; I-graded). E256 "White" plain
+(White House; decoder [Report]); address "Washington" plain; "insanity's" = [C. A. Dana]'s; queenly = Depot vs the clear copy's "Brigade"
+(M, unsettled); "whiskey" unread (M). E258 Lester = Foster H (reader M).
+Lead for readers: query the plain words that survive encipherment ("Channing Clapp", "send material here"); the decoded name ("Pettus")
+missed the clear copy, which spells "Petters".
+Requests: hdl.huntington.org 18 (one token block 04:23-04:25 UTC); archive.org 6 (four OR volumes, two Plum volumes); be-api 0;
+Google Books 1 (429, stopped).
