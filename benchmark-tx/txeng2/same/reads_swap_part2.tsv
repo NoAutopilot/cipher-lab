@@ -1,0 +1,17 @@
+row	pick	conf	note
+17	A	H	ce-ligature loop matches A; A has one stray +
+18	A	M	stem starts at loop top, not above
+19	A	H	o-loop over s-tail matches A
+20	A	H	D with left hook, base stroke
+21	A	H	figure 8 matches A
+22	B	H	9 with long curved tail; C straight-footed
+23	neither	L	row_023.png does not exist; not read
+24	A	L	both strips are m; A shows superscript traces
+25	neither	H	framed is a plain cross; both strips are ce
+26	B	H	t with crossbar and hooked foot
+27	A	H	t with crossbar and hooked foot
+28	A	H	ce-ligature with ending hook
+29	A	H	looped stem with two crossbars matches A
+30	B	L	both strips are m; B shows superscript traces
+31	neither	L	partial blotted stroke, not a whole m
+32	A	H	double loop like an infinity sign

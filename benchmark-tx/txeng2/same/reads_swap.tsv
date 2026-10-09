@@ -1,0 +1,49 @@
+row	pick	conf	note
+1	B	M	phi loop, stem from top of loop
+2	A	H	loop-topped stem with two crossbars
+3	A	H	loop-topped stem with two crossbars
+4	B	M	open loop plus j-like descender, dot
+5	A	H	c-e with right hook
+6	B	L	both strips m; A includes n-like
+7	A	L	square-top stem matches A third only
+8	A	H	crossed-loop x shape
+9	A	L	both strips m; B includes n-like
+10	A	H	plain oval O
+11	A	H	c-e with right hook
+12	B	H	c-e with right hook
+13	A	M	q with foot bar
+14	B	M	cross over small bowl, b-like
+15	A	H	t with crossbar
+16	B	L	both strips m; A includes n-like
+17	A	H	ce-ligature loop matches A; A has one stray +
+18	A	M	stem starts at loop top, not above
+19	A	H	o-loop over s-tail matches A
+20	A	H	D with left hook, base stroke
+21	A	H	figure 8 matches A
+22	B	H	9 with long curved tail; C straight-footed
+23	neither	L	row_023.png does not exist; not read
+24	A	L	both strips are m; A shows superscript traces
+25	neither	H	framed is a plain cross; both strips are ce
+26	B	H	t with crossbar and hooked foot
+27	A	H	t with crossbar and hooked foot
+28	A	H	ce-ligature with ending hook
+29	A	H	looped stem with two crossbars matches A
+30	B	L	both strips are m; B shows superscript traces
+31	neither	L	partial blotted stroke, not a whole m
+32	A	H	double loop like an infinity sign
+33	A	M	loop high, long stem below, matches A
+34	B	M	filled-head q, straight stem, foot stroke
+35	B	H	ce-ligature with hook, matches B
+36	B	M	looped 8 with dot; g tail outside
+37	B	H	cursive 9 with long curved tail
+38	B	L	phi-like loop on stem; A similar
+39	B	M	q with b-hook, B's first example
+40	A	H	p over double crossbar, same form
+41	A	M	q straight stem, horizontal foot
+42	C	H	ce-ligature with hook matches C
+43	neither	H	inverted double-T on baseline, no match
+44	B	H	ae-like crossed sign matches B
+45	neither	H	infinity/oo sign, not hash forms
+46	B	L	box spans ae-sign plus p-cross; bad cut
+47	B	H	g with straight j-like descender
+48	B	H	p over double crossbar matches B
