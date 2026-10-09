@@ -1,0 +1,66 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+L01	6	disagree	-	sq 0 z	m 4 1
+L01	11	disagree	c | a	4 1 a	c 0 4
+L01	20	disagree	X_VSTEM | v	X_DELTA v w	1 X_DELTA 4
+L01	46	disagree	X_VSTEM | v	p 0' X_4BAR	3 0 1
+L01	52	disagree	w | w'	1 y m'	v 4 m
+L01	56	disagree	3 | z	v 4 m	c 0
+L02	18	disagree	1 | -	CLEAR CLEAR p	X_DELTA y m
+L02	39	disagree	L | -	m p 4	v L v
+L02	40	disagree	v | -	p 4 L	L v L
+L02	41	disagree	L | 1	4 L v	v L c
+L02	50	disagree	- | 1	m # v	X_4BAR 9 1
+L03	3	disagree	L | 1	a m	4 X_4BAR 0
+L03	6	disagree	0 | 0'	L 4 X_4BAR	z' sq 4
+L03	40	disagree	x | T	4 0 #	X_VSTEM sq m
+L03	41	disagree	X_VSTEM | v'	0 # x	sq m 0
+L03	48	disagree	X_VSTEM | v	4 + 0	0 X_4BAR X_DELTA
+L04	6	disagree	+ | 1	y m w	c 4 0
+L04	8	disagree	4 | -	w + c	0 m' 4
+L04	9	disagree	0 | -	+ c 4	m' 4 0
+L04	10	disagree	m' | -	c 4 0	4 0 m'
+L04	13	disagree	m' | X_MBASE	m' 4 0	c m L
+L04	16	disagree	L | 1	m' c m	# m a
+L04	21	disagree	L | 1	m a m	+ v 4
+L04	29	disagree	X_VSTEM | v	y 1 m	c y m
+L05	3	disagree	CLEAR | a	CLEAR CLEAR	sq X_OCROSS y
+L05	5	disagree	X_OCROSS | X_DELTA	CLEAR CLEAR sq	y L X_OCROSS
+L05	7	disagree	L | 1	sq X_OCROSS y	X_OCROSS sq 0
+L05	8	disagree	X_OCROSS | X_DELTA	X_OCROSS y L	sq 0 X_OCROSS
+L05	11	disagree	X_OCROSS | X_DELTA	X_OCROSS sq 0	1 sq m
+L05	17	disagree	X_VSTEM | v	m y p	a m 0
+L05	22	disagree	z | 1	m 0 sq	4 1 w
+L05	26	disagree	y | -	4 1 w	L y L
+L05	27	disagree	L | -	1 w y	y L 0
+L05	29	disagree	L | 1	y L y	0 m sq
+L05	35	disagree	c | -	sq m a	y + a
+L05	43	disagree	X_VSTEM | v	CLEAR 1 sq	9 t 4
+L05	44	disagree	9 | X_DELTA	1 sq X_VSTEM	t 4 v
+L05	45	disagree	t | X_HBAR	sq X_VSTEM 9	4 v sq
+L05	49	disagree	X_OCROSS | X_DELTA	4 v sq	1 sq 1
+L06	13	disagree	- | X_DELTA	CLEAR f T	w 0 X_DELTA
+L06	36	disagree	L | 1	4 4 m	4 4 0
+L06	38	disagree	4 | +	m L 4	0
+L07	10	disagree	0 | 0'	v X_4BAR m	f 4 y
+L07	17	disagree	p' | p	c w v	X_4BAR 0 y
+L07	27	disagree	L | 1	1 sq m	4 v 0
+L07	34	disagree	L | 1	f m y	0 CLEAR CLEAR
+L07	39	disagree	0 | X_DELTA	CLEAR CLEAR v	4 Z v
+L07	41	disagree	Z | z	v 0 4	v L 0
+L07	43	disagree	L | 1	4 Z v	0 sq m
+L08	1	disagree	CLEAR | -		m c v
+L08	31	disagree	- | a	f m #	a' L w
+L08	32	disagree	a' | c	m # a	L w v
+L09	19	disagree	X_FBAR | f	CLEAR CLEAR CLEAR	y v a
+L09	40	disagree	X_ZBAR | 4	1 z 0	1
+L10	6	disagree	0' | o	m 3 1	# w L
+L10	28	disagree	+ | t	m p 4	0 3 1
+L10	50	disagree	1 | -	0 a m	
+L11	43	disagree	0' | X_8	m 1 4	
+L13	5	disagree	+ | t	v 3 p	L y 0
+L13	25	disagree	m | z	3 v m	v f v
+L13	34	disagree	X_EB | p	4 p v	X_DDAG L y
+L13	35	disagree	X_DDAG | f	p v X_EB	L y m
+L14	8	disagree	0 | 0'	L 1 v	4 Z v
+L14	24	disagree	L | T	v c 4	CLEAR CLEAR CLEAR
+L14	33	disagree	X_VSTEM | X_N	m 0 3	L 0 w
