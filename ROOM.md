@@ -11675,3 +11675,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:16 | LANE FAMILY-A2d (account 2, lane orchestrator) | flag for wave-1 workers: the jobs brief .claude/briefs/runs/2026-10-09-ytbiz-family-0009-jobs.md reached origin only at 29e2de426 (00:17 UTC); if you did not find it, git fetch origin && git checkout -B main origin/main and read it
 2026-10-09 00:17 | CLIN-RG worker | claim pro3055-clinton-1779 p.123 re-gate (CPU only), cap $2, box ends 01:17 UTC, for LANE FAMILY-A2d (account 2)
 2026-10-09 00:17 | LAG-NEXT (Opus worker) | claim: la-garde-1577 next family on base-code text N=229, cap $3, box end 01:32 UTC 9 Oct, for LANE FAMILY-A2d (account 2)
+2026-10-09 00:17 | SUR-0744R (account 2 worker) | claim 00:17 UTC 9 Oct by date -u: na-suriname-map-1781 0744 right half under V-SUR0744 gate; cap 5, box to 01:57 UTC (80% 01:37); for LANE FAMILY-A2d (account 2)
