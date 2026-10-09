@@ -128,3 +128,12 @@ cannot be fixed by re-weighting, re-ordering or re-presenting the same passes; e
 better image, a sibling leaf, the key's own marks, the owner's tiles, a different segmentation) rank above those that do not,
 at equal cost. (5) Your ROOM check-in line now also names: workers live / slots free, register rows added, red-team findings
 open. Everything else in this brief stands (S1-S5, the gate, one eval look per experiment, the confirm2 item untouched).
+
+## Amendment 2 (orchestrator, 9 Oct 2026 18:2x UTC, from TX-RED F7 and UPDATES.md 17:4x)
+Every RESULTS.md line that claims an output, PREREG or decode was "committed before score" carries the sha256 of that file beside the
+commit hash (as the truth files already do), because `tools/room.py --push`'s rebase can fold several sessions' commits into one and
+erase the cited hash (13 of 16 round 0-2 hashes are gone). A RESULTS file without the sha256 is not accepted into the register as
+"committed before score"; TX-RED checks it. Also from pass 2: the owner paragraph and any owner note quote a sorter 'decisions-to-2%'
+figure only as an oracle bound ("if every answer is right") beside the one measurement of real owner decisions on file (X20, 0 fixed / 3
+broken); the lane's successor incarnation inherits this brief with Amendments 1-2, PREREG-txeng2-0 Amendments 1-2 (and 3 when written),
+research/TX-PROGRAM.md, research/TX-REGISTER.tsv and the open red-team findings.

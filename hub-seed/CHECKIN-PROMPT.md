@@ -96,3 +96,6 @@ STATE DELTA 17:5x UTC 9 Oct: TX-RED pass 1 = three blocking findings (F1 dev gat
 F3 gloss-visible item pooled, recipe control unrun); the lane must answer at 17:45 and take no eval/S2 look until F1-F3 close; the orchestrator
 reports open blocking findings to the owner. TX-RED cost 8.3 on pass 1 -- if pass 2 is above 5, lengthen its cadence to 60-90 min. AUD2-LEDGER-26/27
 live on account 4 (ledger + archive on their done lines).
+STATE DELTA 18:3x UTC 9 Oct: lane incarnation 2 due (find its id in ROOM, update the programme table); TX-RED open F5 F6 F7 F9 F10 (F5: never
+relay the sorter '22 decisions' figure to the owner without 'oracle bound; real owner decisions X20 0/3'); eval pool 25 under the p<0.05 branch;
+a Spinelli truth-verifier pass is owed before any eval look. AUD2-LEDGER-26/27 closed; account 4 outside the programme: nothing.

@@ -7489,6 +7489,24 @@ TX programme table 17:5x UTC: slot 1 orchestrator 17.1 | slot 2 lane session_01N
 soon), round 3 + X2b, check-in 17:45 | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 8.3, pass 2 at 18:06; open blocking F1 F2 F3 |
 slots 4-10: six lane workers live | outside the programme on account 4: AUD2-LEDGER-26, -27.
 
+Check-in 6, 18:19-18:3x UTC 9 Oct (11:19 am PT): five_hour allowed; orchestrator context ~510k, cost 19.4. TX programme, the loop works:
+the lane adopted F1-F4 at 17:45 in PREREG-txeng2-0 Amendment 2 before any eval look (dev non-tests relabelled; flagged-excluded binds the
+paired count, pool 26 -> the pre-declared p<0.05 branch; kp2 out of the pool; S1 split tuned-leaf lines 10 / held-out leaves 16), and ran
+round 4 (C1 kp2 recipe control FAIL 31/59, so the gloss items stay truth-unknown; V1 verifier on f152r's flags: 1 corrected, 2 flagged;
+X1b off-sheet detector on Spinelli 8/14 at 15% -- but 7 of 8 are the reader's own NEW flags; X8b cost replication: page-level reads at
+0.29x the tokens with fewer errors in 3/3 pairs, p 0.4-1.0; S4 feed tool tools/tx_feed.py, 11 focus tiles on the held-out lines).
+TX-RED pass 2 (3.1, cadence stays 45 min): F1-F4, F8 adopted; F5-F7 open (the owner paragraph and the feed note still quote the oracle
+'22 decisions' without X20's 0/3 -- the orchestrator will not relay that figure uncaveated); new F9 (V1 moved the eval pool to 25, one
+above the branch floor; Spinelli's 14 errors never verifier-checked -> a Spinelli truth pass before any look) and F10 (the grown-sheet
+read that X1b licenses must fix a truth-free NEW_k scoring rule first; Spinelli-only scope). Lane brief Amendment 2 (sha256 beside every
+before-score hash; oracle figures caveated). The lane hands over to incarnation 2 at its 18:21 check-in (639k context). AUD2-LEDGER-26
+(4.14 D-: E318 N3 weak D3 held, Ivory = Halleck at C) and -27 (4.46 D: E319 E320 N3 D3, E321 N3 D2 held, one over-claim removed) done,
+ledgered, archived. Account 1 LEDGER-7 wave 3 (E322-E330 filed, two first verifiers); account 2 FAMILY-A2k opened 18:16; account 3
+silent since 02:03. Checks ok; keys 6; queue SORTER-RERENDER-A3 only. Next check-in 19:01.
+TX programme table 18:3x UTC: slot 1 orchestrator 19.4 | slot 2 lane session_01NmaB9fhuaMSMYexV4NaVsR 27.4 (+workers 30.4 round 3; handing
+over) | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 11.4, pass 3 at 18:54; open F5 F6 F7 F9 F10 | slots 4-10: round 4 done, refill by
+incarnation 2 | eval looks 0, S2 look 0, dev passes 0 (one screening pass X2b right-way 3/0).
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
