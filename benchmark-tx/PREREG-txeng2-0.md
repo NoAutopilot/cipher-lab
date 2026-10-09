@@ -266,3 +266,36 @@ with --help, an offline test, a tool_shelf.tsv row and a SYSTEM.md row.
 - **S2 stays held** (C1 on file, Amendment 2 reviewed by TX-RED, both conditions met): the frozen pipeline today contains no
   instrument beyond today's, so a look now would spend the single confirm2 look on a null; it is taken when the combined
   pipeline carries at least one instrument that passed its eval look, or when the programme closes, whichever first.
+
+## Amendment 6 (lane incarnation 2, 9 Oct 2026 20:4x UTC by date -u; after round 7 (B1, O1, H1) and TX-RED pass 5 F24-F28; written BEFORE any eval look, none spent)
+- **Spinelli baseline is now passZ_v4 (B1, a baseline change, never a gain).** Under atlas_v4: passZ_v4 err_true 0.057
+  (11/193) as measured, 0.047 (9/191) flagged-excluded; position errors 8 / **6** (old passZ_pipeline 14 / 12); old -> new
+  fixed 8 / broken 2 (p 0.109; the 3 sheet-defect positions all old-wrong -> new-right; 3 of the 6 remaining are adjudicated
+  NEW: shapes, counted wrong under TXE-Q's rule, which stands). Every Spinelli base from here is passZ_v4
+  (benchmark-tx/outputs/spinelli-c1519-confirm/passZ_v4.tsv; BENCHMARK-TX notes updated); passZ_pipeline stays on disk as
+  the pre-correction figure. **F27:** 0.047 is a baseline after a truth-traced sheet correction on a tuned leaf, never the
+  pipeline's unseen-hand number -- only S2 is that.
+- **Eval pool, flagged excluded = eval_heldout 10 + f178r 6 + spinelli 6 + f152r 1 = 23 < 24.** Amendment 3's under-24 rule
+  fires again: **no eval look is possible this incarnation** unless an 0b-rule item lands (TX-POOL-LEAF, queued on account 1
+  by the orchestrator at 20:3x, route (a) of Amendment 5; the confirm2 split stays the orchestrator's call after it reports).
+  The branch does not move.
+- **X1c:** its "reachable <= 8 of 25" rested on the old 14; X1b's recall tables are re-derived read-free against passZ_v4
+  (PREREG-txeng2-8 X1b-v4) before the X1c section is rewritten, and X1c stays held (pool under 24, TX-RED review owed).
+- **O1 (overlap audit).** The typed s1/s2 overlap sentence was wrong on every folio but one (measured f178v 425, f179r 375,
+  f178r 350 vs "about 100 px at 2x"; dint 1,100 vs 150; Spinelli p1c 200 / p2c 145 vs "~200"; f152r 612 as stated; f87 0 as
+  stated), yet the baselines' indels are NOT concentrated at the seams (pooled no.87 + dint 13 of 45 in or at a seam, at or
+  under chance 0.12-0.52; dint 7/21 below half; Spinelli 2/5 below half). Consequence: the corrected per-folio sentences
+  (overlap/RESULTS.md "Corrected overlap sentences") go into every future brief for these folios, and no baseline is re-read
+  for the overlap alone. The eval_heldout "overlap-sentence-suspect" mark (1 of 1 indel, chance 0.37-0.45) is **withdrawn
+  (F26)**: a rule firing at N=1 by construction licenses nothing; units/README carries the withdrawal beside the mark.
+- **H1 (housekeeping).** ciphers/spinelli-beinecke-c1515 stays at 44 MB: every one of its 213 images is cited (benchmark
+  crops, confirm item, verifier pass, sheet audit, census); the manifest (images_manifest_full.tsv) and regen_images.sh are
+  on file, regen 20/20 byte-identical on the on-disk-region crops. Decision: cited crops are evidence the readers saw and
+  are never re-encoded; the only route is moving the pl24/pl29 crops and debug overlays after a host-backed regen test of
+  the 158 full-canvas crops, deferred to a worker with the Beinecke host allowed (not this window).
+- **S2 (F28, the orchestrator's call; the lane's recommendation).** Take S2 once as the PRODUCT baseline as soon as the
+  baseline-side fixes are frozen into the pipeline (manifest overlap note in the brief, a text-list or printed-key sheet, do
+  not resize, sha256 before any score, verifier flags before counting), because the instrument tests cannot reach it (pool
+  under 24, no instrument past dev) and holding it until one does may mean never measuring the product on an unseen hand;
+  any later instrument's generalisation then needs a second confirm-class leaf (TX-POOL-LEAF or its successor). The S2 PREREG
+  draft now carries that pipeline; its dated freeze line is written only on the orchestrator's decision.

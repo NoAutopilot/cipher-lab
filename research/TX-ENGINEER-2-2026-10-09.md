@@ -36,10 +36,13 @@ The most useful finding of the last hour came from the verifier, not from an ins
 given for the Spinelli letter shows one of the letter's own h signs as an example of the SIX cell, so three of that leaf's
 twelve remaining errors are the sheet's fault, not the reader's. Because that was found by looking at the answer key, fixing
 the sheet counts as a change to the baseline, never as an instrument's gain; the sheet has been corrected (three mislabelled example tiles found and removed; every other sheet in use is cut from a printed key or
-is a text list, so has no such defect), and the Spinelli baseline is being re-read under the corrected sheet. Two more baseline-side
-findings are being checked before any instrument: whether the readers' errors at line seams come from a wrong overlap note in the
-reading instructions, and where the next known-answer material will come from, since the Birago 1572 hand now has no further
-leaf with a period decipherment worth building, and the pool may fall under its floor again once the Spinelli sheet fix lands.
+is a text list, so has no such defect), and the Spinelli baseline re-read under the corrected sheet came down from 12 unflagged errors to 6 (8 signs fixed, 2 broken). That
+is a correction of the measuring stick on a leaf the sheet was built from, not a gain of the pipeline on an unseen hand; the one
+number that would be is the confirm2 leaf, still unopened. With the Spinelli count halved the held-out pool sits at 23, one under
+its floor, so no instrument can be scored on it until a further known-answer leaf is built outside this lane (requested). The overlap note in every reading
+instruction turned out to be wrong on every folio but two (the readers measured 350 to 1,100 pixels where the text said 100 to 150),
+but the readers' deletions and insertions do not cluster at the seams, so the sentence is corrected for future briefs and nothing
+is re-read for it.
 
 The known-answer material for hands that read at 10-25% is the real bottleneck. Three glossed Dinteville leaves and one Birago
 1591 leaf were fetched from DECODE and built, but a key rebuilt from a gloss cannot score the reads it was built from, and the
@@ -51,7 +54,7 @@ What you should do at the sorter: the feed (TXE2-FEED, being written) lists the 
 ## Headline numbers (S1-S5)
 | what | figure | source |
 |---|---|---|
-| S1 held-out gain | no instrument earned an eval look; eval looks spent 0; the pool is 29 unflagged errors (tuned-letter lines: eval_heldout 10 + f178r 6; held-out leaves: Spinelli 12 verified + f152r 1), gate p < 0.05 at >= 24 (Amendments 2-4; clean 30% fixer 0.908) | PREREG-txeng2-0 |
+| S1 held-out gain | no instrument earned an eval look; eval looks spent 0; the pool is 23 unflagged errors (tuned-letter lines: eval_heldout 10 + f178r 6; held-out leaves: Spinelli 6 under the corrected sheet + f152r 1), one under the 24 floor, so no look is possible until a further 0b-rule leaf lands (Amendment 6) | PREREG-txeng2-0 |
 | S2 confirm2 | not looked at (vivonne1573-f103r-confirm2 built by account 1, 1,068 scored; look held until C1 and TX-RED's review of Amendment 2) | PREREG-txeng2-S2 draft |
 | S3 live letter | TXE-R (first campaign, same pipeline): f.117r err_2reader 0.134, S 207 vs 190 committed, judge 0.010 worse, no licensed change | ciphers/birago-fr3252-1571-72/harvest/f117/RESULTS-TXE-R.md |
 | S4 sorter | feed: dev 10/12 at 14.0% flagged; eval read-free 9/15 at 2.9% (substitute rule); decisions-to-2% per tile: eval 22 (was 32); whole-cluster propagation destructive (77% purity) | benchmark-tx/txeng2/doubt/, sorter/ |
@@ -88,4 +91,4 @@ Open: X2b with more labelled tiles of the same hand (new material); the colour m
 gloss leaves from a native image; the grown-sheet read on Spinelli only if X1b's recall table licenses it (then the first eval look).
 
 ## Costs and looks
-35 workers ledgered 191.84 (round 6: TXE2-MODEL2 9.51, TXE2-SHEETAUDIT 4.62, TXP-SCOUT2 1.71, TXE2-RECUT2 2.43) + round 7 (caps 13); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 12.3 at 19:51. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3, V2 1, f178r baseline 1.
+38 workers ledgered 204.12 (round 7: TXE2-BASE-SPIN 6.04, TXE2-OVERLAP 4.22, TXE2-SHRINK-SPIN 2.02) + round 8 (caps 8); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 15.6 at 20:38. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3, V2 1, f178r baseline 1.

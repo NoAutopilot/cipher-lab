@@ -24,3 +24,12 @@ vivonne1573-f103r-confirm2 --paired benchmark-tx/outputs/vivonne1573-f103r-confi
 `--paired passA.tsv` / `passB.tsv` (the builder's own two passes, if their vocabulary matches). Reported whatever it is, with
 CI, both figures; counted as the campaign's S2 look (1). No re-read, no second score. passA/passB alone reported beside.
 Cost: 37 lines -> 5 calls per pass x 2 + 2 adjudication units + crops ~ 12 Opus-equivalent calls: cap 20, box 120 min.
+
+## Draft update (lane incarnation 2, 9 Oct 2026 20:4x UTC by date -u; NOT a freeze -- the dated freeze line is written only on the orchestrator's F28 decision)
+The frozen pipeline, if S2 is taken as the product baseline (Amendment 6): steps 1-4 above, with the baseline-side fixes of this
+campaign made explicit: (1a) the reader brief's overlap sentence is the manifest-generated one (`tools/iiif_lines.py --overlap-note`,
+M16; never a typed figure -- TXE2-OVERLAP found every typed sentence wrong); (1b) the sheet is the folder's text-list or printed-key
+sheet (Vivonne's is a text list: clean by construction, A1); (1c) the reader brief says "do not resize" (F14); (2a) every pass is
+committed with its sha256 before any score (Amendment 3); (3a) a verifier pass on the item's align-conflict flags (if any) precedes
+the count (V1/V2's shape), with both figures reported. Step 5 is empty: no instrument passed its eval look. The single score is
+reported as the product's unseen-hand number beside S1, never as a gain.
