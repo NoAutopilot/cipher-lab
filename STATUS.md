@@ -7698,4 +7698,11 @@ column + the error map of both pools, read-free, cap 4). Ideas register v2: rese
 | X3 widened lattice + word LM (TXE2-LATT) | truth-in-lattice 10/12; fix 4/5 p 1.0 | not taken | dev-FAIL | 2.59 |
 | X4 calibrated confidence (TXE2-CONF) | top-3 holds truth 3/12; weights 2/9 | not taken | dev-FAIL | 6.03 |
 | X9+X17 doubt re-tune (TXE2-DOUBT) | 10/12 at 14.0% PASS | read-free: registered 6/15, substitute 9/15 at 2.9% | sorter feed (S4): eval 2% at 22 decisions | 3.32 |
-| round 3 live 17:1x (PREREG-txeng2-3): R2 kp2 truth, X7 same-sign strips, X12 count-then-read, X13 lattice cells, X8 cost | | | running | caps 3/7/6/6/8 |
+| R2 kp2 truth (TXP-KP2) | f89 passZ 0.124 (31/249) | n/a | pooled by R2's rule, removed at check-in 4 (TX-RED F3); control C1 spawned | 2.50 |
+| X7 same-page strips (TXE2-SAME) | 5/4 p 1.0; swapped-strip control 3/28 | not taken | dev non-test at E 12 | 7.31 |
+| X12 count-then-read (TXE2-COUNT) | count gate 5/9 | n/a | FAIL read-free | 5.14 |
+| X13 lattice cells at 4x (TXE2-CELLS) | 2/14 p 0.0042 wrong way | not taken | dev-FAIL | 6.73 |
+| X8 cost (TXE2-COST, S5) | per-page call 0.235 at 0.30x the tokens of per-line 2x (0.318) | n/a | measured; replication X8b | 6.46 |
+| X2b own-ink pair classifier (TXE2-PAIR2) | 3/0 p 0.25, controls fail | not taken | dev non-test, right way | 2.29 |
+| TX-RED pass 1 F1-F4 | | | all four adopted (Amendment 2): screening stage on dev_tune; flagged-excluded binds, pool 26, branch p<0.05; f89-kp2 out of the pool pending C1; S1 split reporting | lane |
+| round 4 live 17:4x (PREREG-txeng2-4): C1 kp2 control, V1 f152r flags verifier, X1b off-sheet on unseen hands (read-free), S4 feed product, X8b cost replication | | | running | caps 2/3/4/3/6 |

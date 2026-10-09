@@ -129,3 +129,30 @@ with --help, an offline test, a tool_shelf.tsv row and a SYSTEM.md row.
   eval errors (Spinelli's two deleted h, no.87's o<-T70 and z<-T60 among them) are not attacked by presentation changes.
 - Round 1 results (dev only, no eval look): X2 FAIL (1/11 wrong way); X20 FAIL (0/3); X6 is a measurement: whole-cluster
   propagation is destructive (77% cluster purity), per-tile the doubt feed removes a third to two thirds of what an oracle would.
+
+## Amendment 2 (lane, 9 Oct 2026 17:4x UTC by date -u; answers to TX-RED pass 1 F1-F4, research/TX-RED-2026-10-09.md; written BEFORE any eval look, none spent)
+- **F1 adopted.** The dev gate line above says "on the dev pool"; every no.87-only instrument ran on dev_tune (E 12), where a
+  clean 30% fixer passes p < 0.05 in 0.106 of draws. Register verdicts are re-labelled: a right-way null on dev_tune is "dev
+  non-test at E 12" (X3 4/5, X5 3/7, X7 5/4, X2b 3/0, X4's doubt arm); a wrong-way result significant at p < 0.05 stays
+  "dev-FAIL" (X2 1/11, X13 2/14, X4 weights 2/9); X20 0/3 is a non-test too (p 0.25). From now: the dev stage of a no.87-only
+  instrument is a SCREENING stage, pre-declared here: fixed > broken with two-sided sign-test p < 0.10 on dev_tune (so 5/0 or
+  7/1 passes, 3/0 does not) AND every registered control failing; a screening pass licenses the one eval look at the gate in
+  force; a right-way miss is logged non-test, never FAIL. A hand-independent instrument (X1, X12, X8, any read arm) gates on
+  the dev pool as the line above says. X2b (3/0) does not pass screening; its own named next step stands.
+- **F2 adopted.** The paired count that decides a pass is taken with `--exclude-flagged` (a verifier-flagged position has
+  doubtful truth and cannot decide a pass); the as-measured count is reported beside. Eval pool, flagged excluded: eval_heldout
+  10 + spinelli 14 + f152r 2 = **26** (< 32). The pre-declared fallback branch applies: **single-experiment gate p < 0.05 on
+  the eval pool at >= 24 errors** (tx_power this amendment, E 26 / N 634: clean 30% fixer 0.849 at p 0.05, 0.543 at p 0.01;
+  no-op, random-3%, 30%-worse 0.000). Amendment 1's "p < 0.01 branch in force" rested on the as-measured 34 and is withdrawn
+  before any look; the branch now fixed is p < 0.05 and holds for every experiment of this campaign. The combined pipeline's
+  look and S2 stay at the same p. A verifier pass on f152r's 3 flagged positions (TXV-152) may raise the pool; the branch
+  does not change again.
+- **F3 adopted.** dint-f89-gloss-kp2 leaves the dev pool for read arms: it is gloss-visible (Amendment 1's exclusion stands
+  over PREREG-3 R2's pool rule, which omitted it -- the lane's error); it may serve read-free instruments only, and only after
+  the recipe's known-answer control: kp2 run on dint-f128-print against the 1882-print truth (TXP-KP2C, PREREG-txeng2-4),
+  reporting per-position agreement of the kp2 set with the print set and the baseline's err_true under each. Until that
+  control is on file, f89-kp2 counts toward no gate. BENCHMARK-TX gains a `gloss_visible` note on the four gloss items.
+- **F4 adopted.** S1's "leaves the lane never tuned on" is amended to "lines or leaves the lane never tuned an instrument on";
+  every eval paired count is reported split: held-out lines of the tuned leaf (eval_heldout, 10 flagged-excluded) and
+  held-out leaves (spinelli 14 + f152r 2 = 16), with the pool total; a result that holds only on the tuned leaf's lines is said
+  so.
