@@ -24,6 +24,22 @@ taxonomy sorts errors by:
                3x3 erosion on the page image (thin strokes lose it all); `-` when unmapped
   n_wrong      how many of the passes are wrong at this position; same_wrong = all wrong passes read the same sign
 
+Reader agreement on errors (TXP-AGREE, 9 Oct 2026; appended as the last columns, every earlier column and every earlier
+--md section unchanged). The first --pass is the baseline:
+  n_pass_wrong how many covering passes are wrong here (equals n_wrong; kept under its own name for the agreement table)
+  n_same_wrong how many covering passes, baseline included, read the baseline's own wrong sign (`<deleted>` is a sign of its
+               own); 0 when the baseline is right, empty when the baseline does not cover the position
+  agree_class  right | all-same-wrong (every covering pass wrong with the baseline's sign) | all-wrong-split (every
+               covering pass wrong, signs differ) | majority-wrong (more than half wrong, not all) | baseline-only (no
+               other pass wrong) | minority-wrong (some other pass wrong, at most half in all) | no-other-pass (only the
+               baseline covers it); empty when the baseline does not cover the position
+  err_class    the baseline error's class for the cross table, first match wins: crop (band_edge cut, seg_edge
+               outside, or the baseline deleted the sign) | look-alike (the baseline's (truth plain <- read) pair recurs
+               at least twice among its errors on this item) | thin (stroke tercile thin) | other; empty when right
+The --md output gains a last section: the baseline's errors by agree_class, crossed with err_class and with the top
+(truth <- read) pairs. A class that is all-same-wrong is "every reader, every presentation"; a reader-split class is
+where a second look can help. Passes that cover only some lines (dev-only passes) count only where they cover.
+
 The markdown summary (--md) gives, per pass, the error mass by each feature class and the top (truth value <- read) pairs
 with their feature profile, and a correlation table (share of pass X's errors repeated by pass Y, same wrong sign). It
 sorts, it does not explain: the mechanism per class is the analyst's sentence in the research note, not this tool's.
@@ -251,7 +267,82 @@ def build_rows(truth_rows, passes, call_lines, geo, edge_frac):
         e = geo_cache.get((row['line'], row['pos']))
         row['erosion'] = '' if e is None else '%.3f' % e
     rows.sort(key=lambda r: (r['line'], float(r['pos'])))
+    add_agreement(rows, names)
     return rows, names
+
+
+AGREE_CLASSES = ['all-same-wrong', 'all-wrong-split', 'majority-wrong', 'minority-wrong', 'baseline-only', 'no-other-pass']
+ERR_CLASSES = ['crop', 'look-alike', 'thin', 'other']
+
+
+def add_agreement(rows, names):
+    """n_pass_wrong, n_same_wrong, agree_class and err_class per row, with names[0] as the baseline."""
+    b = names[0]
+    pairs = Counter((r['plain'], r['read_' + b]) for r in rows if r['err_' + b] == '1' and r['read_' + b] != '<deleted>')
+    for r in rows:
+        cov = [n for n in names if r['err_' + n] != '']
+        wrong = [n for n in cov if r['err_' + n] == '1']
+        r['n_pass_wrong'] = len(wrong)
+        if r['err_' + b] == '':
+            r['n_same_wrong'] = r['agree_class'] = r['err_class'] = ''
+            continue
+        if r['err_' + b] == '0':
+            r['n_same_wrong'], r['agree_class'], r['err_class'] = 0, 'right', ''
+            continue
+        rb = r['read_' + b]
+        same = [n for n in wrong if r['read_' + n] == rb]
+        r['n_same_wrong'] = len(same)
+        if len(cov) == 1:
+            ac = 'no-other-pass'
+        elif len(wrong) == len(cov):
+            ac = 'all-same-wrong' if len(same) == len(cov) else 'all-wrong-split'
+        elif 2 * len(wrong) > len(cov):
+            ac = 'majority-wrong'
+        elif len(wrong) == 1:
+            ac = 'baseline-only'
+        else:
+            ac = 'minority-wrong'
+        r['agree_class'] = ac
+        if r.get('band_edge') == 'cut' or r.get('seg_edge') == 'outside' or rb == '<deleted>':
+            r['err_class'] = 'crop'
+        elif pairs[(r['plain'], rb)] >= 2:
+            r['err_class'] = 'look-alike'
+        elif r.get('stroke') == 'thin':
+            r['err_class'] = 'thin'
+        else:
+            r['err_class'] = 'other'
+
+
+def fmt_agree(rows, names, top):
+    """The baseline's errors by agree_class, crossed with err_class and with the top (truth <- read) pairs."""
+    b = names[0]
+    err = [r for r in rows if r['err_' + b] == '1']
+    acs = [c for c in AGREE_CLASSES if any(r['agree_class'] == c for r in err)]
+    ne = len(err)
+    lines = ['', '### Reader agreement on the baseline\'s errors (baseline %s; %d errors; passes %s)' % (b, ne, ', '.join(names)),
+             '']
+    ac = Counter(r['agree_class'] for r in err)
+    lines.append('| agree_class | errors | share |')
+    lines.append('|---|---|---|')
+    for c in acs:
+        lines.append('| %s | %d | %.1f%% |' % (c, ac[c], 100.0 * ac[c] / ne if ne else 0))
+    lines += ['', '| err_class | errors | ' + ' | '.join(acs) + ' |', '|---|---|' + '---|' * len(acs)]
+    for ec in ERR_CLASSES:
+        rs = [r for r in err if r['err_class'] == ec]
+        if not rs:
+            continue
+        c = Counter(r['agree_class'] for r in rs)
+        lines.append('| %s | %d | %s |' % (ec, len(rs), ' | '.join('%d (%.0f%%)' % (c[a], 100.0 * c[a] / len(rs)) for a in acs)))
+    pc = Counter((r['plain'], r['read_' + b]) for r in err)
+    lines += ['', '| truth <- read | n | err_class | ' + ' | '.join(acs) + ' | lines |', '|---|---|---|' + '---|' * len(acs) + '---|']
+    for k, v in pc.most_common(top):
+        rs = [r for r in err if (r['plain'], r['read_' + b]) == k]
+        c = Counter(r['agree_class'] for r in rs)
+        ecs = Counter(r['err_class'] for r in rs)
+        lines.append('| %s <- %s | %d | %s | %s | %s |' % (
+            k[0], k[1], v, ', '.join('%s %d' % kv for kv in ecs.most_common()), ' | '.join(str(c[a]) for a in acs),
+            ' '.join(sorted({'%s.%s' % (r['line'].split('_')[-1], r['pos']) for r in rs}))[:120]))
+    return lines
 
 
 def mass_table(rows, names, feature):
@@ -359,7 +450,8 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
     ap.add_argument('--bench', default='BENCHMARK-TX.tsv')
     ap.add_argument('--item', required=True)
-    ap.add_argument('--pass', dest='passes', action='append', required=True, metavar='NAME=PATH')
+    ap.add_argument('--pass', dest='passes', action='append', required=True, metavar='NAME=PATH',
+                    help='a pass to score (repeatable); the first is the baseline for the agreement columns')
     ap.add_argument('--line-prefix')
     ap.add_argument('--call-lines', help='comma-separated leaf_Lnn-mm groups read in one reader call')
     ap.add_argument('--boxes', help='atlas signs.tsv')
@@ -394,7 +486,8 @@ def main(argv=None):
     rows, names = build_rows(truth, passes, parse_call_lines(a.call_lines), geo, a.edge_frac)
     cols = ['line', 'pos', 'plain', 'truth', 'ref_sign', 'pos_class', 'line_len', 'line_in_call', 'seg_edge', 'band_edge',
             'glued', 'stroke', 'erosion', 'box_w', 'box_h', 'n_cov', 'n_wrong', 'same_wrong'] + \
-           ['read_' + n for n in names] + ['err_' + n for n in names]
+           ['read_' + n for n in names] + ['err_' + n for n in names] + \
+           ['n_pass_wrong', 'n_same_wrong', 'agree_class', 'err_class']
     with open(a.out_tsv, 'w', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols, delimiter='\t')
         w.writeheader()
@@ -414,6 +507,7 @@ def main(argv=None):
     md += fmt_callpos(rows, names)
     md += fmt_corr(rows, names)
     md += fmt_pairs(rows, names, a.top)
+    md += fmt_agree(rows, names, a.top)
     text = '\n'.join(md) + '\n'
     if a.md:
         with open(a.md, 'w') as f:

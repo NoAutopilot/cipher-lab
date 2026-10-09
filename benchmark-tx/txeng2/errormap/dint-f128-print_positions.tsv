@@ -1,0 +1,86 @@
+line	pos	plain	truth	ref_sign	pos_class	line_len	line_in_call	seg_edge	band_edge	glued	stroke	erosion	box_w	box_h	n_cov	n_wrong	same_wrong	read_B	read_A	read_F	err_B	err_A	err_F	n_pass_wrong	n_same_wrong	agree_class	err_class
+f128_L02	1	m	z	z	first	8	2	-	-	-	-				3	0		z	z	z	0	0	0	0	0	right	
+f128_L02	6	d	3	3	inner	8	2	-	-	-	-				3	0		3	3	3	0	0	0	0	0	right	
+f128_L02	7	i	L|p	L	inner	8	2	-	-	-	-				3	0		L	L	L	0	0	0	0	0	right	
+f128_L02	8	t	m	m	last	8	2	-	-	-	-				3	1		m	m	3	0	0	1	1	0	right	
+f128_L03	2	a	4	4	inner	54	3	-	-	-	-				3	0		4	4	4	0	0	0	0	0	right	
+f128_L03	3	u	a	a	inner	54	3	-	-	-	-				3	0		a	a	a	0	0	0	0	0	right	
+f128_L03	4	o	y	y	inner	54	3	-	-	-	-				3	0		y	y	y	0	0	0	0	0	right	
+f128_L03	5	i	L|p	p	inner	54	3	-	-	-	-				3	0		p	p	p	0	0	0	0	0	right	
+f128_L03	6	r	c|w	w	inner	54	3	-	-	-	-				3	0		w	w	w	0	0	0	0	0	right	
+f128_L03	9	u	a	a	inner	54	3	-	-	-	-				3	0		a	a	a	0	0	0	0	0	right	
+f128_L03	12	e	.|o	.	inner	54	3	-	-	-	-				3	0		.	.	.	0	0	0	0	0	right	
+f128_L03	16	n	f|r	f	inner	54	3	-	-	-	-				3	0		f	f	f	0	0	0	0	0	right	
+f128_L03	17	d	3	3	inner	54	3	-	-	-	-				3	0		3	3	3	0	0	0	0	0	right	
+f128_L03	18	r	c|w	c	inner	54	3	-	-	-	-				3	0		c	c	c	0	0	0	0	0	right	
+f128_L03	20	e	.|o	.	inner	54	3	-	-	-	-				3	1		.	<deleted>	.	0	1	0	1	0	right	
+f128_L03	21	a	4	4	inner	54	3	-	-	-	-				3	0		4	4	4	0	0	0	0	0	right	
+f128_L03	22	g	9	9	inner	54	3	-	-	-	-				3	0		9	9	9	0	0	0	0	0	right	
+f128_L03	24	e	.|o	.	inner	54	3	-	-	-	-				3	0		.	.	.	0	0	0	0	0	right	
+f128_L03	26	n	f|r	r	inner	54	3	-	-	-	-				3	3	0	0	4	4	1	1	1	3	1	all-wrong-split	other
+f128_L03	32	m	z	z	inner	54	3	-	-	-	-				3	0		z	z	z	0	0	0	0	0	right	
+f128_L03	33	i	L|p	p	inner	54	3	-	-	-	-				3	0		p	p	p	0	0	0	0	0	right	
+f128_L03	34	l	4	4	inner	54	3	-	-	-	-				3	0		4	4	4	0	0	0	0	0	right	
+f128_L03	36	i	L|p	L	inner	54	3	-	-	-	-				3	0		L	L	L	0	0	0	0	0	right	
+f128_L03	37	o	y	y	inner	54	3	-	-	-	-				3	0		y	y	y	0	0	0	0	0	right	
+f128_L03	38	n	f|r	f	inner	54	3	-	-	-	-				3	0		f	f	f	0	0	0	0	0	right	
+f128_L03	40	d	3	3	inner	54	3	-	-	-	-				3	0		3	3	3	0	0	0	0	0	right	
+f128_L03	41	o	y	y	inner	54	3	-	-	-	-				3	0		y	y	y	0	0	0	0	0	right	
+f128_L03	42	r	c|w	w	inner	54	3	-	-	-	-				3	0		w	w	w	0	0	0	0	0	right	
+f128_L03	48	i	L|p	L	inner	54	3	-	-	-	-				3	1		L	L	1	0	0	1	1	0	right	
+f128_L03	49	g	9	9	inner	54	3	-	-	-	-				3	0		9	9	9	0	0	0	0	0	right	
+f128_L03	50	n	f|r	r	inner	54	3	-	-	-	-				3	3	0	4	t	4	1	1	1	3	2	all-wrong-split	other
+f128_L04	4	a	4	4	inner	59	4	-	-	-	-				3	0		4	4	4	0	0	0	0	0	right	
+f128_L04	5	n	f|r	f	inner	59	4	-	-	-	-				3	2	0	#	t	f	1	1	0	2	1	majority-wrong	other
+f128_L04	7	o	y	y	inner	59	4	-	-	-	-				3	0		y	y	y	0	0	0	0	0	right	
+f128_L04	8	n	f|r	r	inner	59	4	-	-	-	-				3	3	0	p	y	4	1	1	1	3	1	all-wrong-split	other
+f128_L04	10	u	a	a	inner	59	4	-	-	-	-				3	1		a	c	a	0	1	0	1	0	right	
+f128_L04	12	r	c|w	w	inner	59	4	-	-	-	-				3	0		w	w	w	0	0	0	0	0	right	
+f128_L04	13	a	4	4	inner	59	4	-	-	-	-				3	0		4	4	4	0	0	0	0	0	right	
+f128_L04	14	n	f|r	f	inner	59	4	-	-	-	-				3	1		f	<deleted>	f	0	1	0	1	0	right	
+f128_L04	19	n	f|r	f	inner	59	4	-	-	-	-				3	0		f	f	f	0	0	0	0	0	right	
+f128_L04	21	m	z	z	inner	59	4	-	-	-	-				3	0		z	z	z	0	0	0	0	0	right	
+f128_L04	23	l	4	4	inner	59	4	-	-	-	-				3	0		4	4	4	0	0	0	0	0	right	
+f128_L04	28	h	T	T	inner	59	4	-	-	-	-				3	0		T	T	T	0	0	0	0	0	right	
+f128_L04	30	r	c|w	w	inner	59	4	-	-	-	-				3	0		w	w	w	0	0	0	0	0	right	
+f128_L04	31	g	9	9	inner	59	4	-	-	-	-				3	2	0	0	o	9	1	1	0	2	1	majority-wrong	other
+f128_L04	33	e	.|o	.	inner	59	4	-	-	-	-				3	0		.	.	.	0	0	0	0	0	right	
+f128_L04	37	i	L|p	L	inner	59	4	-	-	-	-				3	3	1	1	1	1	1	1	1	3	3	all-same-wrong	other
+f128_L04	39	o	y	y	inner	59	4	-	-	-	-				3	0		y	y	y	0	0	0	0	0	right	
+f128_L04	40	i	L|p	p	inner	59	4	-	-	-	-				3	3	1	x	x	x	1	1	1	3	3	all-same-wrong	look-alike
+f128_L04	42	e	.|o	o	inner	59	4	-	-	-	-				3	1		o	o	0	0	0	1	1	0	right	
+f128_L04	43	n	f|r	f	inner	59	4	-	-	-	-				3	0		f	f	f	0	0	0	0	0	right	
+f128_L04	47	r	c|w	c	inner	59	4	-	-	-	-				3	0		c	c	c	0	0	0	0	0	right	
+f128_L04	49	i	L|p	L	inner	59	4	-	-	-	-				3	0		L	L	L	0	0	0	0	0	right	
+f128_L04	50	r	c|w	c	inner	59	4	-	-	-	-				3	0		c	c	c	0	0	0	0	0	right	
+f128_L04	53	n	f|r	f	inner	59	4	-	-	-	-				3	1		f	t	f	0	1	0	1	0	right	
+f128_L04	56	r	c|w	w	inner	59	4	-	-	-	-				3	0		w	w	w	0	0	0	0	0	right	
+f128_L04	57	o	y	y	inner	59	4	-	-	-	-				3	0		y	y	y	0	0	0	0	0	right	
+f128_L04	58	i	L|p	p	inner	59	4	-	-	-	-				3	1		p	p	x	0	0	1	1	0	right	
+f128_L05	2	o	y	y	inner	62	5	-	-	-	-				3	1		y	y	Z	0	0	1	1	0	right	
+f128_L05	4	r	c|w	w	inner	62	5	-	-	-	-				3	0		w	w	w	0	0	0	0	0	right	
+f128_L05	9	r	c|w	w	inner	62	5	-	-	-	-				3	0		w	w	w	0	0	0	0	0	right	
+f128_L05	11	e	.|o	.	inner	62	5	-	-	-	-				3	0		.	.	.	0	0	0	0	0	right	
+f128_L05	12	n	f|r	f	inner	62	5	-	-	-	-				3	0		f	f	f	0	0	0	0	0	right	
+f128_L05	13	d	3	3	inner	62	5	-	-	-	-				3	0		3	3	3	0	0	0	0	0	right	
+f128_L05	14	r	c|w	c	inner	62	5	-	-	-	-				3	0		c	c	c	0	0	0	0	0	right	
+f128_L05	16	l	4	4	inner	62	5	-	-	-	-				3	0		4	4	4	0	0	0	0	0	right	
+f128_L05	19	h	T	T	inner	62	5	-	-	-	-				3	0		T	T	T	0	0	0	0	0	right	
+f128_L05	21	m	z	z	inner	62	5	-	-	-	-				3	0		z	z	z	0	0	0	0	0	right	
+f128_L05	22	i	L|p	p	inner	62	5	-	-	-	-				3	3	1	x	x	x	1	1	1	3	3	all-same-wrong	look-alike
+f128_L05	23	n	f|r	f	inner	62	5	-	-	-	-				3	0		f	f	f	0	0	0	0	0	right	
+f128_L05	26	e	.|o	.	inner	62	5	-	-	-	-				3	0		.	.	.	0	0	0	0	0	right	
+f128_L05	28	e	.|o	o	inner	62	5	-	-	-	-				3	2	0	0	o	<deleted>	1	0	1	2	1	majority-wrong	other
+f128_L05	30	o	y	y	inner	62	5	-	-	-	-				3	0		y	y	y	0	0	0	0	0	right	
+f128_L05	32	n	f|r	f	inner	62	5	-	-	-	-				3	0		f	f	f	0	0	0	0	0	right	
+f128_L05	35	n	f|r	r	inner	62	5	-	-	-	-				3	3	0	t	y	4	1	1	1	3	1	all-wrong-split	other
+f128_L05	36	t	m	m	inner	62	5	-	-	-	-				3	3	0	y	9	4	1	1	1	3	1	all-wrong-split	other
+f128_L05	39	u	a	a	inner	62	5	-	-	-	-				3	0		a	a	a	0	0	0	0	0	right	
+f128_L05	41	e	.|o	.	inner	62	5	-	-	-	-				3	0		.	.	.	0	0	0	0	0	right	
+f128_L05	44	n	f|r	f	inner	62	5	-	-	-	-				3	0		f	f	f	0	0	0	0	0	right	
+f128_L05	47	h	T	T	inner	62	5	-	-	-	-				3	0		T	T	T	0	0	0	0	0	right	
+f128_L05	51	u	a	a	inner	62	5	-	-	-	-				3	0		a	a	a	0	0	0	0	0	right	
+f128_L05	53	d	3	3	inner	62	5	-	-	-	-				3	0		3	3	3	0	0	0	0	0	right	
+f128_L05	55	e	.|o	.	inner	62	5	-	-	-	-				3	0		.	.	.	0	0	0	0	0	right	
+f128_L05	58	o	y	y	inner	62	5	-	-	-	-				3	0		y	y	y	0	0	0	0	0	right	
+f128_L05	62	e	.|o	.	last	62	5	-	-	-	-				3	0		.	.	.	0	0	0	0	0	right	

@@ -77,5 +77,38 @@ def test_geometry_and_label_map():
         assert by['1']['stroke'] == 'heavy' and by['2']['stroke'] == 'thin'
 
 
+def test_agreement_columns():
+    """3 passes (A baseline): pos 1 all-same-wrong, pos 2 all-wrong-split, pos 3 baseline-only, pos 4 right,
+    pos 5 majority-wrong; L02 is covered by A only (no-other-pass); pos 1's pair recurs at L02 -> look-alike."""
+    with tempfile.TemporaryDirectory() as d:
+        _w(d, 't.truth.tsv', '# x\nline\tpos\tref_sign\ttruth\tplain\tstatus\n'
+           'f1_L01\t1\tA\tA\ta\tscored\nf1_L01\t2\tB\tB\tb\tscored\nf1_L01\t3\tD\tD\td\tscored\n'
+           'f1_L01\t4\tE\tE\te\tscored\nf1_L01\t5\tG\tG\tg\tscored\nf1_L02\t1\tA\tA\ta\tscored\n')
+        bench = _w(d, 'B.tsv', 'item\ttruth\tsplit\nit1\t%s\teval\n' % os.path.join(d, 't.truth.tsv'))
+        pa = _w(d, 'a.tsv', 'line\tpos\tsign\nf1_L01\t1\tZ\nf1_L01\t2\tY\nf1_L01\t3\tW\nf1_L01\t4\tE\nf1_L01\t5\tV\nf1_L02\t1\tZ\n')
+        pb = _w(d, 'b.tsv', 'line\tpos\tsign\nf1_L01\t1\tZ\nf1_L01\t2\tX\nf1_L01\t3\tD\nf1_L01\t4\tE\nf1_L01\t5\tV\n')
+        pc = _w(d, 'c.tsv', 'line\tpos\tsign\nf1_L01\t1\tZ\nf1_L01\t2\tY\nf1_L01\t3\tD\nf1_L01\t4\tE\nf1_L01\t5\tG\n')
+        out = os.path.join(d, 'o.tsv'); md = os.path.join(d, 'o.md')
+        with contextlib.redirect_stdout(io.StringIO()):
+            rc = tx_taxonomy.main(['--bench', bench, '--item', 'it1', '--pass', 'A=' + pa, '--pass', 'B=' + pb,
+                                   '--pass', 'C=' + pc, '--out-tsv', out, '--md', md])
+        assert rc == 0
+        rows = list(csv.DictReader(open(out), delimiter='\t'))
+        assert list(rows[0])[-4:] == ['n_pass_wrong', 'n_same_wrong', 'agree_class', 'err_class']
+        by = {(r['line'], r['pos']): r for r in rows}
+        r = by[('f1_L01', '1')]
+        assert (r['agree_class'], r['n_pass_wrong'], r['n_same_wrong'], r['err_class']) == ('all-same-wrong', '3', '3', 'look-alike')
+        r = by[('f1_L01', '2')]
+        assert (r['agree_class'], r['n_pass_wrong'], r['n_same_wrong']) == ('all-wrong-split', '3', '2')
+        r = by[('f1_L01', '3')]
+        assert (r['agree_class'], r['n_pass_wrong'], r['n_same_wrong'], r['err_class']) == ('baseline-only', '1', '1', 'other')
+        assert by[('f1_L01', '4')]['agree_class'] == 'right' and by[('f1_L01', '4')]['err_class'] == ''
+        assert by[('f1_L01', '5')]['agree_class'] == 'majority-wrong'
+        assert by[('f1_L02', '1')]['agree_class'] == 'no-other-pass'
+        text = open(md).read()
+        assert 'Reader agreement on the baseline\'s errors (baseline A; 5 errors' in text
+        assert '| all-same-wrong | 1 | 20.0% |' in text and '| a <- Z | 2 | look-alike 2 |' in text
+
+
 if __name__ == '__main__':
-    test_positions_and_classes(); test_geometry_and_label_map(); print('ok')
+    test_positions_and_classes(); test_geometry_and_label_map(); test_agreement_columns(); print('ok')
