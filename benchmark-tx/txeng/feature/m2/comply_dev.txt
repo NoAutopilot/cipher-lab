@@ -1,0 +1,24 @@
+(a) signs per line vs base (within 10%):
+    f178v_L01 base 27 read 27 dev 0.000 ok
+    f178v_L02 base 27 read 27 dev 0.000 ok
+    f178v_L03 base 26 read 27 dev 0.038 ok
+    f178v_L04 base 28 read 28 dev 0.000 ok
+    f178v_L05 base 31 read 31 dev 0.000 ok
+    f178v_L06 base 30 read 30 dev 0.000 ok
+    f178v_L07 base 30 read 30 dev 0.000 ok
+    f178v_L08 base 30 read 31 dev 0.033 ok
+    f178v_L09 base 29 read 30 dev 0.034 ok
+    f178v_L10 base 32 read 32 dev 0.000 ok
+    f178v_L11 base 32 read 33 dev 0.031 ok
+    f178v_L12 base 32 read 32 dev 0.000 ok
+(b) feature variety (two values on >= 10% of rows; columns constant in the cell table exempt):
+    desc: {'short': 21, 'none': 296, 'long': 41} ok
+    asc: {'short': 44, 'none': 274, 'long': 40} ok
+    bars: {'0': 175, '1': 140, '2': 43} ok
+    loops: {'1': 140, '2': 53, '0': 165} ok
+    dots: {'0': 336, '1': 16, '2+': 6} exempt (constant in the cell table)
+    lean: {'upright': 278, 'right': 71, 'left': 9} ok
+    tail: {'none': 291, 'right': 43, 'left': 24} ok
+(c) control: 51 of 51 tiles read; within one feature 19 (0.373, gate 0.70) FAIL; all seven 4
+    per feature agreement: desc 33/51 asc 32/51 bars 27/51 loops 47/51 dots 49/51 lean 26/51 tail 36/51
+COMPLIANCE a ok b ok c FAIL -> non-test: no compliant feature read
