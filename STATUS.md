@@ -7530,3 +7530,18 @@ Empty-queue auto-fill (blast 1 of 1), standing brief `.claude/briefs/default-lan
 **Known-text share (owner guardrail):** Monluc f.86 (glossed leaf; 3 jobs 7.00) and Pisany f.275r (2 jobs 7.15) are key-building on leaves with period text, for the unread c268 and the key86 cells -- 14.15 of 44.55 (32%), all in the allowed "tests or builds a key for an unread sibling" class; known-text work outside that class: 0.
 **Lessons.** (1) A host probe must use the job's real identifier: HTRC answered 200 on a dummy volume and MongoError on osu.32435013919725 (SALAZ-HTRC, ~1.0 spent twice now). (2) Seven of 19 workers ran 1.04-1.48x cap, all Opus jobs priced at 1.5-3 with a PREREG + tile build + scoring: price any pre-registered tile/score job at >= 2.5 (the 1051 lane's lesson 3, again). (3) Retirements this lane under rule 3: fr5160 1653 key rebuild (three control failures), costabili slip pairing (three runs). (4) send_later check-ins fired 1-14 min late.
 **What is left (pre-checked, cheap):** fr4735 rescore c268 with the f.86 K38 rows (~$1); sforza-pusterla 3 unsettled f.13 tiles to the owner sorter (focus.tsv was scratch; rebuild ~$0.5); rah-salazar HTRC when osu.32435013919725 itself answers (~$0.2); Pisany f.275r 2 unsettled T47/T45 tokens and a verifier carry-over into AUDIT.md (~$1); fr16144 Boucher volumes need a full-view read (desk row); costabili Lang 2018 p.156 via the owner's runner (one line in costabili NOTES COS-ASMO). Everything else on these targets waits on Gallica (403) or an owner sort.
+
+## LANE TX-ENGINEER-2 handoff (session_01NmaB9fhuaMSMYexV4NaVsR, account 4, Fable, campaign second run), 9 October 2026 (15:03 UTC by date -u, live; cap = the account-4 window (150), box open-ended, hand-over at ~700k context; five_hour allowed at open)
+Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer-2.md (owner, ~15:00 UTC: 10-15 more pre-registered experiments, success defined
+first, the setup checked for genuineness). PREREG benchmark-tx/PREREG-txeng2-0.md pushed 15:13 (b8d08264d) before any read: S1-S5; gate paired
+fixed > broken p < 0.01 on the eval pool once it carries >= 32 baseline errors (tx_power: 80% power for a clean 30% fixer), else p < 0.05 at
+>= 24, declared now; dev gate p < 0.05 on the dev pool; one eval look per experiment; combined pipeline one look; S2 confirm2 one look.
+Round 0a done 15:13: tools/tx_power.py (+ test, SYSTEM.md, shelf) -- the first campaign's units (12-15 errors) gave 0.8-5% power for a clean
+30% fixer at p 0.01: its FAIL rows were non-tests of instruments at that N. Eval pool today 29 errors (eval_heldout 15 + spinelli 14), dev 37.
+Round 0b/0d live 15:16: TXP-DEC (DECODE scout of the Nevers 1590s Decrypted items fr.3619/3621/3623, cap 6), TXP-152 (BENCHMARK-TX item
+birago1572-f152r from the f.151v decipherment slip + today's-pipeline baseline, cap 8), TXP-AGREE (tx_taxonomy reader-agreement-on-errors
+column + the error map of both pools, read-free, cap 4). Ideas register v2: research/TX-IDEAS-2-2026-10-09.md (17 ideas).
+
+| experiment | dev (paired, p) | eval (paired, p; looks so far) | verdict | cost |
+|---|---|---|---|---|
+| 0a power audit | n/a | n/a | gate set from the table | lane |
