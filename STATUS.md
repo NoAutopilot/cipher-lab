@@ -7507,6 +7507,23 @@ TX programme table 18:3x UTC: slot 1 orchestrator 19.4 | slot 2 lane session_01N
 over) | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 11.4, pass 3 at 18:54; open F5 F6 F7 F9 F10 | slots 4-10: round 4 done, refill by
 incarnation 2 | eval looks 0, S2 look 0, dev passes 0 (one screening pass X2b right-way 3/0).
 
+Check-in 7, 19:02-19:1x UTC 9 Oct (12:02 pm PT): five_hour allowed; orchestrator context ~615k, cost 25.1 -- hand-over to a successor at
+the next check-in (~19:43) if above 680k. Owner, 18:4x: every retired step noted where we can return to it (RETIRED-REGISTER done 1.74 D:
+tools/retired.py -> RETIRED.tsv 208 rows; 88 name no reopen condition -> RETIRED-REOPEN spawned, overrides file, no target-folder edits);
+the transcription programme stays standing at up to 10 sessions (confirmed). TX programme: lane incarnation 1 archived and self-ledgered
+(29.66; 25 workers 146.73; 15 experiments scored, none earned a held-out look); incarnation 2 session_011EV9AKeJ4YuU9jjghdUy6F live (7.3;
+Amendment 3: pool 25 after the f152r verifier, under-24 rule declared; round 5: V2 Spinelli verifier flagged 2 of 6 -> pool 23, X21 reader-model
+pipeline test, R3 masked re-cut, P1 sorter boxes; X1c grown-sheet read held). TX-RED pass 3 (2.5): F5-F14 adopted, F1 closed; BLOCKING F15 --
+X21's pooled Sonnet-over-Opus win (33/14, p 0.008) is carried by the Ceppo f.87 item alone, whose truth derives from the Sonnet reads it scores;
+on the two independent items 12/14 null -> the re-baselining rule must not fire (I upheld it by message to the lane); F16 pool 23 < 24, no eval
+look until an 0b item restores it, and f178r L01-03 cannot both train X2c and be pooled; F17/F18 on the held read and Spinelli. Eval looks 0,
+S2 look 0. AUD2-LEDGER-28/29 (E325, E326; queued by LEDGER-7 for account 3) re-tagged and spawned on account 4. Account 1 LEDGER-7 wave 3
+(mssEC 18 first audits); account 2 FAMILY-A2k (Manteuffel 0490 left page gloss PASS; 0309/0312/0314 N0 by their own period gloss; y-glyph
+census: y = 9 on 20/21 known slots); account 3 silent since 02:03. Checks ok; keys 6; queue SORTER-RERENDER-A3 only. Next check-in 19:43.
+TX programme table 19:1x UTC: slot 1 orchestrator 25.1 | slot 2 lane inc. 2 session_011EV9AKeJ4YuU9jjghdUy6F 7.3 (+ workers), check-in 19:02 |
+slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 13.9, pass 4 at 19:41; open F15 (blocking) F16 F17 F18 | slots 4-10: round 5 (5 workers) |
+programme spend so far: lanes 37.0 + workers ~170 + reviewer 13.9 on the account-4 window; eval looks 0.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

@@ -99,3 +99,7 @@ live on account 4 (ledger + archive on their done lines).
 STATE DELTA 18:3x UTC 9 Oct: lane incarnation 2 due (find its id in ROOM, update the programme table); TX-RED open F5 F6 F7 F9 F10 (F5: never
 relay the sorter '22 decisions' figure to the owner without 'oracle bound; real owner decisions X20 0/3'); eval pool 25 under the p<0.05 branch;
 a Spinelli truth-verifier pass is owed before any eval look. AUD2-LEDGER-26/27 closed; account 4 outside the programme: nothing.
+STATE DELTA 19:1x UTC 9 Oct: lane incarnation 2 = session_011EV9AKeJ4YuU9jjghdUy6F; TX-RED open F15 (blocking: X21 re-baselining must not fire)
+F16 (pool 23 < 24: no eval look until an 0b item) F17 F18. RETIRED.tsv exists (tools/retired.py; --check must pass after RETIRED-REOPEN
+session_01Jq... lands -- ledger + archive it). AUD2-LEDGER-28 session_016BM5xQpaCaPwYmpcdwFw4P and -29 session_016jr9GDGGMgBeWQgNmvJmj3 live on
+account 4 (ledger + archive on done). Orchestrator hand-over due near 680-700k context: rewrite hub-seed/SUCCESSOR-PROMPT.md state first.

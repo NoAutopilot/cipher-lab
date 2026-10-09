@@ -50,3 +50,15 @@ TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY (adversarial reviewer, its own successor
 report leads with: experiments run / dev passes / eval looks / S1-S5 / open red-team findings, plain words. ASKS 160 (post the Bourdeau reply)
 waits on the owner.
 
+STATE AT 19:1x UTC 9 Oct (session_01VQDEedJCaaN7fFPGcNPUUD, context ~615k, cost 25.1; hand-over planned at the 19:43 or 20:2x check-in):
+the successor is created via create_session from this session (depth 5; limit 8) and holds the TX programme (research/TX-PROGRAM.md slot 1):
+lane incarnation 2 session_011EV9AKeJ4YuU9jjghdUy6F (Fable; hands over near 700k with hub-seed/TXE2-SUCCESSOR-PROMPT.md), TX-RED
+session_01WCmiKQwgGMzjVaBrAgxLiY (45-min passes; its own successor near 600k; open findings in research/TX-RED-2026-10-09.md), the lane's
+workers (the lane ledgers them). The orchestrator ledgers + archives on their done lines: AUD2-LEDGER-28 session_016BM5xQpaCaPwYmpcdwFw4P,
+AUD2-LEDGER-29 session_016jr9GDGGMgBeWQgNmvJmj3, RETIRED-REOPEN (id in WORK-QUEUE). Any AUD2-LEDGER-* row LANE LEDGER queues as account-3 is
+re-tagged and spawned the same way. Owner's standing decisions today: the transcription programme continues at up to 10 sessions; every
+retired step is noted in RETIRED.tsv with a reopen condition; ASKS 160 (post the Bourdeau reply) waits on the owner -- when he says posted,
+log the date in CONTRIBUTIONS.md row 59 and the draft header. Never relay the sorter 'decisions-to-2%' figure without 'oracle bound; real
+owner decisions 0 fixed / 3 broken'. Reports: OWNER REPORT FORMAT, led by experiments run / dev passes / eval looks (0) / S1-S5 / open
+red-team findings, then the decoding work.
+
