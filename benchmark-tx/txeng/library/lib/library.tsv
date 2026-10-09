@@ -1,0 +1,152 @@
+code	k	source	ref	file
+T10	1	print	cell [786, 49, 826, 73]	T10_1.png
+T11	1	print	cell [458, 304, 494, 340]	T11_1.png
+T13	1	print	cell [341, 196, 381, 227]	T13_1.png
+T13	2	secure	f174vB_04_007	T13_2.png
+T15	1	print	cell [693, 304, 746, 341]	T15_1.png
+T17	1	print	cell [384, 51, 404, 77]	T17_1.png
+T17	2	secure	f174v_10_028	T17_2.png
+T18	1	print	cell [117, 84, 143, 122]	T18_1.png
+T18	2	secure	f174vB_06_016	T18_2.png
+T18	3	secure	f144r_05_026	T18_3.png
+T18	4	secure	f174vB_06_020	T18_4.png
+T19	1	print	cell [454, 48, 479, 76]	T19_1.png
+T19	2	secure	f174v_06_025	T19_2.png
+T19	3	secure	f174r_02_003	T19_3.png
+T19	4	secure	f174vB_12_004	T19_4.png
+T24	1	print	cell [198, 51, 222, 75]	T24_1.png
+T25	1	print	cell [303, 86, 329, 116]	T25_1.png
+T25	2	secure	f174v_06_022	T25_2.png
+T25	3	secure	f174v_11_008	T25_3.png
+T25	4	secure	f139v_01_019	T25_4.png
+T26	1	print	cell [158, 316, 182, 348]	T26_1.png
+T26	2	secure	f174vB_10_012	T26_2.png
+T26	3	secure	f174r_03_013	T26_3.png
+T26	4	secure	f175v_01_029	T26_4.png
+T27	1	print	cell [649, 188, 671, 227]	T27_1.png
+T27	2	secure	f174v_10_009	T27_2.png
+T27	3	secure	f175v_01_020	T27_3.png
+T27	4	secure	f174v_01_024	T27_4.png
+T29	1	print	cell [857, 49, 895, 76]	T29_1.png
+T29	2	secure	f174r_02_023	T29_2.png
+T29	3	secure	f174vB_03_016	T29_3.png
+T33	1	print	cell [676, 45, 713, 71]	T33_1.png
+T33	2	secure	f174v_08_020	T33_2.png
+T33	3	secure	f152r_04_023	T33_3.png
+T33	4	secure	f139v_02_053	T33_4.png
+T36	1	print	cell [84, 46, 109, 83]	T36_1.png
+T36	2	secure	f174r_03_007	T36_2.png
+T36	3	secure	f152r_03_018	T36_3.png
+T36	4	secure	f174v_05_017	T36_4.png
+T37	1	print	cell [4, 51, 37, 79]	T37_1.png
+T37	2	secure	f174vB_04_016	T37_2.png
+T37	3	secure	f174v_10_008	T37_3.png
+T37	4	secure	f184r_01_009	T37_4.png
+T38	1	print	cell [790, 194, 820, 221]	T38_1.png
+T42	1	print	cell [230, 120, 261, 150]	T42_1.png
+T45	1	print	cell [155, 45, 180, 80]	T45_1.png
+T45	2	secure	f184r_11_043	T45_2.png
+T45	3	secure	f174vB_07_010	T45_3.png
+T45	4	secure	f174vB_11_014	T45_4.png
+T46	1	print	cell [576, 307, 612, 338]	T46_1.png
+T49	1	print	cell [679, 82, 704, 115]	T49_1.png
+T49	2	secure	f174r_02_013	T49_2.png
+T49	3	secure	f174v_06_012	T49_3.png
+T49	4	secure	f184r_03_012	T49_4.png
+T50	1	print	cell [81, 83, 117, 114]	T50_1.png
+T50	2	secure	f184r_07_032	T50_2.png
+T50	3	secure	f144r_05_018	T50_3.png
+T50	4	secure	f184r_01_010	T50_4.png
+T51	1	print	cell [340, 47, 362, 77]	T51_1.png
+T52	1	print	cell [303, 126, 333, 157]	T52_1.png
+T52	2	secure	f174v_11_027	T52_2.png
+T52	3	secure	f184r_07_033	T52_3.png
+T52	4	secure	f174v_02_025	T52_4.png
+T53	1	print	cell [636, 48, 671, 71]	T53_1.png
+T53	2	secure	f174v_07_028	T53_2.png
+T53	3	secure	f174vB_09_001	T53_3.png
+T53	4	secure	f175v_01_027	T53_4.png
+T54	1	print	cell [374, 158, 408, 192]	T54_1.png
+T54	2	secure	f174vB_06_008	T54_2.png
+T54	3	secure	f184r_03_002	T54_3.png
+T54	4	secure	f174v_06_027	T54_4.png
+T55	1	print	cell [455, 83, 481, 114]	T55_1.png
+T55	2	secure	f184r_07_031	T55_2.png
+T55	3	secure	f174vB_10_010	T55_3.png
+T55	4	secure	f174r_03_008	T55_4.png
+T56	1	print	cell [270, 85, 297, 130]	T56_1.png
+T57	1	print	cell [604, 189, 636, 231]	T57_1.png
+T57	2	secure	f174vB_09_021	T57_2.png
+T57	3	secure	f174vB_03_024	T57_3.png
+T57	4	secure	f184r_07_007	T57_4.png
+T58	1	print	cell [341, 158, 367, 192]	T58_1.png
+T58	2	secure	f174vB_08_006	T58_2.png
+T58	3	secure	f184r_08_002	T58_3.png
+T58	4	secure	f174vB_10_014	T58_4.png
+T60	1	print	cell [416, 82, 448, 116]	T60_1.png
+T60	2	secure	f184r_11_019	T60_2.png
+T60	3	secure	f174vB_03_014	T60_3.png
+T60	4	secure	f175v_02_009	T60_4.png
+T63	1	print	cell [121, 51, 147, 76]	T63_1.png
+T63	2	secure	f174v_01_022	T63_2.png
+T63	3	secure	f184r_03_005	T63_3.png
+T63	4	secure	f184r_03_009	T63_4.png
+T64	1	print	cell [265, 53, 296, 76]	T64_1.png
+T65	1	print	cell [642, 78, 675, 116]	T65_1.png
+T65	2	secure	f174vB_02_009	T65_2.png
+T65	3	secure	f174v_07_001	T65_3.png
+T65	4	secure	f184r_03_007	T65_4.png
+T66	1	print	cell [158, 122, 183, 155]	T66_1.png
+T70	1	print	cell [233, 85, 261, 111]	T70_1.png
+T70	2	secure	f174vB_11_016	T70_2.png
+T70	3	secure	f175v_02_004	T70_3.png
+T70	4	secure	f139v_03_043	T70_4.png
+T76	1	print	cell [416, 47, 440, 78]	T76_1.png
+T76	2	secure	f174v_04_025	T76_2.png
+T76	3	secure	f174v_03_005	T76_3.png
+T76	4	secure	f174vB_06_015	T76_4.png
+T78	1	print	cell [231, 315, 273, 338]	T78_1.png
+T80	1	print	cell [303, 158, 337, 190]	T80_1.png
+T80	2	secure	f174vB_08_023	T80_2.png
+T80	3	secure	f144r_03_028	T80_3.png
+T80	4	secure	f174r_02_010	T80_4.png
+T81	1	print	cell [45, 53, 69, 77]	T81_1.png
+T81	2	secure	f184r_08_006	T81_2.png
+T81	3	secure	f174v_07_003	T81_3.png
+T81	4	secure	f174vB_06_011	T81_4.png
+T83	1	print	cell [564, 47, 598, 75]	T83_1.png
+T83	2	secure	f184r_11_042	T83_2.png
+T83	3	secure	f184r_08_019	T83_3.png
+T83	4	secure	f139v_01_045	T83_4.png
+T84	1	print	cell [311, 304, 335, 337]	T84_1.png
+T85	1	print	cell [8, 89, 34, 114]	T85_1.png
+T85	2	secure	f184r_03_010	T85_2.png
+T85	3	secure	f174v_09_024	T85_3.png
+T85	4	secure	f174v_06_002	T85_4.png
+T86	1	print	cell [153, 89, 186, 120]	T86_1.png
+T86	2	secure	f184r_08_008	T86_2.png
+T86	3	secure	f184r_07_010	T86_3.png
+T86	4	secure	f184r_01_028	T86_4.png
+T88	1	print	cell [234, 51, 252, 71]	T88_1.png
+T89	1	print	cell [90, 318, 115, 350]	T89_1.png
+T89	2	secure	f174vB_12_001	T89_2.png
+T89	3	secure	f174vB_07_024	T89_3.png
+T89	4	secure	f174vB_05_013	T89_4.png
+T90	1	print	cell [492, 40, 515, 77]	T90_1.png
+T90	2	secure	f174vB_03_022	T90_2.png
+T90	3	secure	f144r_05_032	T90_3.png
+T90	4	secure	f174vB_05_018	T90_4.png
+T92	1	print	cell [601, 51, 632, 71]	T92_1.png
+T95	1	print	cell [604, 122, 627, 155]	T95_1.png
+T95	2	secure	f174r_03_021	T95_2.png
+T96	1	print	cell [307, 44, 329, 78]	T96_1.png
+T96	2	secure	f174v_07_004	T96_2.png
+T96	3	secure	f174vB_05_022	T96_3.png
+T96	4	secure	f152r_04_017	T96_4.png
+T97	1	print	cell [564, 84, 588, 111]	T97_1.png
+T97	2	secure	f152r_04_020	T97_2.png
+T97	3	secure	f184r_06_025	T97_3.png
+T98	1	print	cell [604, 77, 622, 118]	T98_1.png
+T98	2	secure	f174v_09_017	T98_2.png
+T98	3	secure	f174r_02_007	T98_3.png
+T98	4	secure	f162r_03_029	T98_4.png

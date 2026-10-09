@@ -26,6 +26,17 @@ Subcommands
            OUT/<unit>/topk_weighted.tsv (line, pos, cand, score: the pick H 1.0 / M 0.6 / L 0.3, the other candidates
            sharing the rest; 'none' gives the line-read sign 0.6; an unshown position is its line-read sign at 1.0) for
            tools/key_decode_lattice.py decode.
+           --agree DIR1 DIR2 (TXE-S): two independent readers' reads folders; a position changes from the line read only
+           when both pick the same candidate and it is not the line read's sign (a single pick never overrides).
+           --reads-dir DIR reads one reader's folder by the TXE-A rule (a pick overrides).
+  library  (TXE-S, ideas O7 + O8, 9 Oct 2026) a cross-target exemplar library: for each code of the key map (--key-map,
+           id -> printed cell box), up to 4 tiles = the printed key cell cut from --print-image, then up to 3 secure
+           tiles (--secure: sid, code, page) from pages not in --exclude-page, chosen by farthest-point sampling on
+           glyph_atlas.py's classify features (pick_spread spread=True trim=0.2). --extra TSV (code, image, x, y, w, h,
+           credit) adds tiles from any other target in the family. Writes OUT/<code>_<k>.png and OUT/library.tsv; prints
+           per-code counts. `build --library OUT` then shows up to --per-cand (4) library tiles per candidate. Lesson it
+           answers: TXE-A's 2 same-hand exemplars per candidate let a degraded look-alike win; the printed cell plus spread
+           tiles of the hand show each code's whole range.
   lattice-out  P.decode.tsv from key_decode_lattice.py -> line, pos, sign (its `chosen` column) for tools/tx_bench.py.
   tiles    (TXE-L, idea M7, 9 Oct 2026) --lines ... --order ordered|shuffled: every mapped position (1:1 or 2:1 in
            box_pos.tsv) as its own tile -- the box plus its attached marks, grown --grow (0.25) per side, every other
@@ -329,6 +340,8 @@ def cmd_build(a):
     if a.exemplars and os.path.exists(path(a.exemplars)):
         ex_lists = {r['code']: [s for s in (r.get('exemplars') or '').split(',') if s] for r in rd(path(a.exemplars))}
     pages = Pages(a.atlas)
+    lib = load_library(a.library) if a.library else None
+    npc = a.per_cand if lib else 2
     shown, stats = [], Counter()
     for r in L:
         if r['line'] not in lines:
@@ -353,12 +366,15 @@ def cmd_build(a):
     for k0 in range(0, len(shown), a.rows):
         nsheet += 1
         rows = shown[k0:k0 + a.rows]
+        if a.max_sheets and nsheet > a.max_sheets:
+            stats['not_read_cut'] += len(rows)
+            continue
         cell, gap = a.cell, 8
         tiles = [context_tile(pages, sb, s['sids'], a.ctx_h, a.ctx_scale, a.ctx_w) for s in rows]
         kmax = max(len(s['cands']) for s in rows)
         ctxw = max(t.width for t in tiles)
         rowh = max(cell, max(t.height for t in tiles)) + 2 * gap
-        W = 60 + ctxw + 24 + kmax * (2 * cell + 50) + gap
+        W = 60 + ctxw + 24 + kmax * (npc * (cell + 4) + 46) + gap
         H = 40 + rowh * len(rows)
         sheet = Image.new('RGB', (W, H), (255, 255, 255))  # saved greyscale (size)
         d = ImageDraw.Draw(sheet)
@@ -373,19 +389,110 @@ def cmd_build(a):
             d.line((x - 12, y, x - 12, y + rowh), fill=(0, 0, 0), width=3)
             for ci, code in enumerate(s['cands'], 1):
                 d.text((x, y + rowh // 2 - 14), f'{ci}', fill=(0, 0, 0), font=font(24))
-                ex = exemplars_for(code, ex_lists, sb, by_code, excl)
-                for e in range(2):
-                    tt = exemplar_tile(pages, sb[ex[e]], cell) if e < len(ex) else Image.new('L', (cell, cell), 235)
+                if lib is not None:
+                    ims = [Image.open(f).convert('L').resize((cell, cell)) for f in lib.get(code, [])[:npc]]
+                else:
+                    ex = exemplars_for(code, ex_lists, sb, by_code, excl)
+                    ims = [exemplar_tile(pages, sb[e], cell) for e in ex]
+                for e in range(npc):
+                    tt = ims[e] if e < len(ims) else Image.new('L', (cell, cell), 235)
                     sheet.paste(tt.convert('RGB'), (x + 30 + e * (cell + 4), y + (rowh - cell) // 2))
-                x += 2 * cell + 50
+                x += npc * (cell + 4) + 46
         d.line((0, H - 1, W, H - 1), fill=(120, 120, 120), width=2)
         base = os.path.join(od, f'sheet_{nsheet:02d}')
-        sheet.convert('L').save(base + '.png', optimize=True)
+        if a.split and len(rows) > a.split:
+            cut = 40 + rowh * a.split
+            sheet.convert('L').crop((0, 0, W, cut)).save(base + '_a.png', optimize=True)
+            sheet.convert('L').crop((0, cut - 2, W, H)).save(base + '_b.png', optimize=True)
+        else:
+            sheet.convert('L').save(base + '.png', optimize=True)
         wr(base + '.tsv', ['row', 'line', 'pos', 'cands', 'why'],
            [dict(row=n, line=s['line'], pos=s['pos'], cands=','.join(s['cands']), why=s['why']) for n, s in enumerate(rows, 1)])
     print(f'{a.unit}: positions {stats["positions"]}, shown {len(shown)}, sheets {nsheet} '
-          f'(unmapped {stats["unmapped"]}, undecidable {stats["undecidable"]})')
+          f'(unmapped {stats["unmapped"]}, undecidable {stats["undecidable"]}, past --max-sheets {stats["not_read_cut"]})')
     return shown
+
+
+# ---------------------------------------------------------------- library (TXE-S, O7 + O8)
+def cmd_library(a):
+    import numpy as np
+    from PIL import Image
+    sys.path.insert(0, os.path.join(ROOT, 'tools'))
+    import glyph_atlas as ga
+    cells = json.load(open(path(a.key_map)))
+    pr = Image.open(path(a.print_image)).convert('L')
+    signs = rd(os.path.join(path(a.atlas), 'signs.tsv'))
+    idx = {r['sid']: i for i, r in enumerate(signs)}
+    excl = set(a.exclude_page)
+    by, noimg = defaultdict(list), Counter()
+    pages = Pages(a.atlas)
+    for r in rd(path(a.secure)):
+        if r['sid'] in idx and signs[idx[r['sid']]]['page'] not in excl and (not a.grades or r.get('grade', '') in a.grades):
+            if pages.get(signs[idx[r['sid']]]['page']) is None:       # page image not on disk: no tile can be cut
+                noimg[signs[idx[r['sid']]]['page']] += 1; continue
+            by[r['code']].append(idx[r['sid']])
+    if noimg:
+        print(f'library: secure tiles skipped, page image not on disk: {dict(noimg)}')
+    X = None
+    if by:
+        bm = np.load(os.path.join(path(a.atlas), 'bitmaps.npz'))['signs']
+        X = ga.feats(bm, signs, pca_scale='shared')
+    extra = defaultdict(list)
+    if a.extra:
+        for r in rd(path(a.extra)):
+            extra[r['code']].append(r)
+    od = path(a.out_dir) if os.path.exists(a.out_dir) else a.out_dir
+    os.makedirs(od, exist_ok=True)
+    rows, counts = [], {}
+    for c in sorted(cells, key=lambda c: c['id']):
+        code, k = c['id'], 0
+        x0, y0, x1, y1 = c['box']
+        sub = pr.crop((max(0, x0), max(0, y0), min(pr.width, x1), min(pr.height, y1)))
+        t = Image.new('L', (a.cell, a.cell), 255)
+        sc = min((a.cell - 8) / sub.width, (a.cell - 8) / sub.height, 3.0)
+        sub = sub.resize((max(1, int(sub.width * sc)), max(1, int(sub.height * sc))), Image.LANCZOS)
+        t.paste(sub, ((a.cell - sub.width) // 2, (a.cell - sub.height) // 2))
+        tiles = [(t, 'print', f'cell {c["box"]}')]
+        ids = by.get(code, [])
+        if ids:
+            for j in ga.pick_spread(X[ids], a.per_hand, True, a.trim)[:a.per_hand]:
+                s = signs[ids[j]]
+                tiles.append((exemplar_tile(pages, s, a.cell), 'secure', s['sid']))
+        for r in extra.get(code, []):
+            if len(tiles) >= 1 + a.per_hand + 4:
+                break
+            g = Image.open(path(r['image'])).convert('L')
+            tiles.append((exemplar_tile_img(g, *(int(r[q]) for q in 'xywh'), a.cell), 'extra:' + r.get('credit', ''),
+                          f"{r['image']}@{r['x']},{r['y']}"))
+        for t, src, ref in tiles:
+            k += 1
+            fn = f'{code}_{k}.png'
+            t.save(os.path.join(od, fn))
+            rows.append(dict(code=code, k=k, source=src, ref=ref, file=fn))
+        counts[code] = (k, len(ids))
+    wr(os.path.join(od, 'library.tsv'), ['code', 'k', 'source', 'ref', 'file'], rows)
+    n4 = sum(1 for v in counts.values() if v[0] >= 4)
+    print(f'library: {len(counts)} codes, {len(rows)} tiles ({n4} codes with 4 tiles) -> {od}')
+    print('per code (tiles/secure pool): ' + ' '.join(f'{c}:{v[0]}/{v[1]}' for c, v in counts.items()))
+    return counts
+
+
+def exemplar_tile_img(g, x, y, w, h, cell):
+    from PIL import Image
+    t = Image.new('L', (cell, cell), 255)
+    m = int(0.2 * max(w, h)); top = int(0.6 * max(w, h))
+    sub = g.crop((max(0, x - m), max(0, y - top), min(g.width, x + w + m), min(g.height, y + h + m)))
+    sc = min((cell - 6) / sub.width, (cell - 6) / sub.height, 3.0)
+    sub = sub.resize((max(1, int(sub.width * sc)), max(1, int(sub.height * sc))), Image.BICUBIC)
+    t.paste(sub, ((cell - sub.width) // 2, (cell - sub.height) // 2))
+    return t
+
+
+def load_library(d):
+    by = defaultdict(list)
+    for r in rd(os.path.join(path(d), 'library.tsv')):
+        by[r['code']].append(os.path.join(path(d), r['file']))
+    return by
 
 
 # ---------------------------------------------------------------- resolve
@@ -398,14 +505,38 @@ def cmd_resolve(a):
     L = rd(path(a.line_read))
     lines = unit_lines(a.units, a.unit)
     od = os.path.join(a.out, a.unit)
+    if a.agree:
+        p1 = sheet_picks(od, path(a.agree[0]), a)
+        p2 = sheet_picks(od, path(a.agree[1]), a)
+        picks, n_sheets, agst = {}, p1[1], Counter()
+        for key, (cands, pk, cf) in p1[0].items():
+            o = p2[0].get(key)
+            if o is None:
+                agst['one_reader'] += 1; continue
+            if pk is not None and pk == o[1]:
+                agst['agree_pick'] += 1
+                picks[key] = (cands, pk, cf if cf == o[2] else 'M')
+            else:
+                agst['agree_none' if pk is None and o[1] is None else 'disagree'] += 1
+        print(f'agree: {dict(agst)}')
+    else:
+        picks, n_sheets = sheet_picks(od, path(a.reads_dir) if a.reads_dir else od, a)
+    return finish_resolve(a, L, lines, od, picks, n_sheets)
+
+
+def sheet_picks(od, rdir, a):
+    """{(line, pos): (cands, pick index or None, conf)} from the reads_NN.tsv of folder rdir against OUT/<unit>'s keys.
+    A sheet with no reads file in rdir is skipped (its positions keep the line read) and counted."""
     picks, n_sheets = {}, 0
     for fn in sorted(os.listdir(od)):
         m = re.match(r'sheet_(\d+)\.tsv$', fn)
         if not m:
             continue
         keyrows = {r['row']: r for r in rd(os.path.join(od, fn))}
-        rp = os.path.join(od, f'reads_{m.group(1)}.tsv')
+        rp = os.path.join(rdir, f'reads_{m.group(1)}.tsv')
         if not os.path.exists(rp):
+            if a.agree or a.reads_dir:
+                continue
             sys.exit(f'resolve: {rp} missing (read every sheet first)')
         n_sheets += 1
         for r in rd(rp):
@@ -418,6 +549,10 @@ def cmd_resolve(a):
                 cands = kr['cands'].split(',')
                 picks[(kr['line'], kr['pos'])] = (cands, parse_pick(r.get('pick'), len(cands)),
                                                   (r.get('conf') or '').strip().upper())
+    return picks, n_sheets
+
+
+def finish_resolve(a, L, lines, od, picks, n_sheets):
     out, wt, ch = [], [], Counter()
     for r in L:
         if r['line'] not in lines:
@@ -606,10 +741,25 @@ def main(argv=None):
     b.add_argument('--ctx-h', type=int, default=90, help='target sign height in the context tile, px (90)')
     b.add_argument('--ctx-scale', type=float, default=4.0, help='upscale cap for the context tile (4)')
     b.add_argument('--ctx-w', type=int, default=420, help='context tile width cap, px (420)')
+    b.add_argument('--library', help='library folder from `library` (TXE-S): up to --per-cand tiles per candidate')
+    b.add_argument('--per-cand', type=int, default=4)
+    b.add_argument('--split', type=int, default=0, help='save each sheet as two images, rows 1..N and N+1.. (0: one image)')
+    b.add_argument('--max-sheets', type=int, default=0, help='build only the first N sheets; later shown rows keep L (0: all)')
     r = sp.add_parser('resolve'); common(r)
     r.add_argument('--unit', required=True); r.add_argument('--pass-out')
     r.add_argument('--only-conf', help='apply picks at these confidences only, e.g. H or H,M (PREREG-txeng-2 M1b); others keep the line read')
     r.add_argument('--only-reason', help="apply picks only on rows whose show reason contains this word, e.g. top1 (M1b)")
+    r.add_argument('--reads-dir', help='one reader folder of reads_NN.tsv (default OUT/UNIT); sheets without reads keep L')
+    r.add_argument('--agree', nargs=2, metavar=('DIR1', 'DIR2'),
+                   help='two readers: change from L only where both pick the same non-L candidate (TXE-S)')
+    li = sp.add_parser('library', help='cross-target exemplar library: printed cell + spread secure tiles (TXE-S)')
+    li.add_argument('--atlas', default=D['atlas']); li.add_argument('--out-dir', required=True)
+    li.add_argument('--key-map', default=f'{T}/harvest/sign_id_map_1572.json', help='JSON list of {id, box} printed cells')
+    li.add_argument('--print-image', default='sources/cryptiana/web/img/NeversBirago.png')
+    li.add_argument('--secure', default=f'{T}/atlas/secure_tokens.tsv'); li.add_argument('--grades', default='S,H,C')
+    li.add_argument('--exclude-page', action='append'); li.add_argument('--per-hand', type=int, default=3)
+    li.add_argument('--trim', type=float, default=0.2); li.add_argument('--cell', type=int, default=100)
+    li.add_argument('--extra', help='TSV code, image, x, y, w, h, credit: tiles from another family target')
     lo = sp.add_parser('lattice-out'); lo.add_argument('decode'); lo.add_argument('--pass-out', required=True)
     t = sp.add_parser('tiles', help='per-sign tile sheets in line order or a seeded shuffled order (TXE-L, M7)')
     t.add_argument('--atlas', default=D['atlas']); t.add_argument('--lines', nargs='+', required=True)
@@ -629,7 +779,9 @@ def main(argv=None):
         a.conf = a.conf or D['conf']; a.exclude_page = a.exclude_page or D['exclude']
         if a.box_pos is None and os.path.exists(path(os.path.join(a.out, 'box_pos.tsv'))):
             a.box_pos = os.path.join(a.out, 'box_pos.tsv')
-    return {'map': cmd_map, 'build': cmd_build, 'resolve': cmd_resolve, 'lattice-out': cmd_lattice_out,
+    if a.cmd == 'library':
+        a.exclude_page = a.exclude_page or D['exclude']; a.grades = [g for g in a.grades.split(',') if g]
+    return {'map': cmd_map, 'library': cmd_library, 'build': cmd_build, 'resolve': cmd_resolve, 'lattice-out': cmd_lattice_out,
             'tiles': cmd_tiles, 'tiles-resolve': cmd_tiles_resolve}[a.cmd](a)
 
 
