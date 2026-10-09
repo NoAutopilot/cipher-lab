@@ -114,3 +114,24 @@ regenerate readings with --check. Report what was found and where it was not fou
 Sessions wave 2 (18:39 UTC): V-MANT16S session_01Xz3fF2N1zMfMY9kBWbP5Pn (Opus); V-MANT0490 session_01WA5jDsGmAzLqKDHNJvcVe1 (Opus); MANT-0490L
 session_01Vonz3Lnjze8D87Ry7ayUZu (Opus); MANT-0317 session_01YP499gXR45w7Cf2v1d8ndw (Opus); MANT-0310 session_0112dGUYSmccoBkuoJrANaXr (Sonnet);
 MANT-YCEN session_01CRPuhyAzoJNykjMhxo82fk (Opus). Wave 1 sessions archived.
+
+Wave 2 results so far (18:50-18:57): MANT-YCEN y=9 rule PASS 20/21 vs null p99 7, six slots flagged for an eye check; V-MANT16S 0309+0312/0314 N0
+(period interlinear gloss), D1, key period; MANT-0490L left page gloss PASS 24/42 vs p99 12, unglossed gutter run 38 letters judge PASS, C24 S36
+M30, owed fixes. 10.56 by get_session. Lesson: a glossed leaf is N0 by its own period gloss -- the gloss-gated readings are key tests (known text);
+the lane's unread material is the unglossed runs (0490 gutter, 0290 281-674) and unglossed leaves.
+
+## Wave 3 (18:5x UTC 9 Oct)
+
+### FIX-YEYE (Opus, cap 2, box 60 min, disk only; 1 sachsen GET only if a needed crop is not committed, after MANT-0310's release)
+(1) MANT-0490L's owed fixes (its NOTES section and candidates_L.tsv): G01 r1.7/r2.4 29 -> 28 where both blind passes and your eye agree; 207 note
+held; regenerate the 0490 left-page readings and gates with --check, report old/new numbers. (2) MANT-YCEN's six flagged slots: eye-check each on the
+committed crop, record 4 or 9 or illegible beside the census row; a transcription edit only where your eye and the PREREG rule agree, then
+regenerate that leaf with --check. You did not solve these leaves; do not raise any key grade. gaps_check, file_shrink_guard before push.
+
+### MANT-0503 (Opus, cap 5.5, box 110 min, sachsen after MANT-0310's "sachsen release"): 694/08 frame 0503
+inv08g.tsv row 0503 (page no. 403, left page code lines throughout with small words above many groups; right page German clear text; "re-photograph
+of the leaf N9-MANT saw as..."). Check 1 FIRST: read n9mant/ and the N9-MANT NOTES section -- if the leaf is already read under another frame
+number, one ROOM line and stop. Otherwise as MANT-0490 (PREREG before scoring, gloss gate vs key-shuffle p99, count tokens first, one page if > 120).
+Prefer the UNGLOSSED code groups as the reading target: report glossed and unglossed tokens separately, and give the unglossed span its own
+pre-registered gate (judge at its length with power reported, as MANT-0490L's gutter gate). ~$4.5. Report what was found and where it was not
+found; do not classify novelty.
