@@ -32,7 +32,8 @@ Status per p.2 position: scored when the aligned chunk is exactly one letter and
 committed sign is outside the key (excluded:off-key: the 5109 key's U signs, BLOT) or the letter has no keyed sign
 (excluded:letter-unkeyed). Flag column (set here, before any reader is scored): `align-conflict` where the committed sign is
 keyed but its key value differs from the aligned letter (a wrong committed sign, a slip by the encipherer, or an alignment
-shift: tx_bench --exclude-flagged drops these). Report as measured AND flagged-excluded, never the second alone.
+shift: tx_bench --exclude-flagged drops these), overridden per position by the verifier verdicts in
+benchmark-tx/gunther8246-p2.flags.tsv (TXV-GUN, 9 Oct 2026; FLAG/CORRECT/KEEP as build_birago152.py). Report as measured AND flagged-excluded, never the second alone.
 
 Alignment control (printed, not a gate): share of keyed committed signs whose key value equals the aligned letter, real text vs
 20 letter-shuffled texts (same letters, permuted; seeds 1-20).
@@ -51,7 +52,7 @@ ALIGN_OUT = os.path.join(W, 'align_letter.tsv')
 TOOL = os.path.join(ROOT, 'tools/interlinear_align.py')
 HEADER = ('# Gunther van Schwarzburg WVO 8246 MS p.2 (Willem van Oranje, 2 May 1561), split=eval: Japikse 1934 no.316 printed '
           'decipherment (Koot) under the 5109-rebuilt key (C rows); built by benchmark-tx/build_gunther8246p2.py (TX-POOL-LEAF). '
-          'Flag align-conflict = committed sign keyed to another letter.\nline\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n')
+          'Flag align-conflict = committed sign keyed to another letter; verifier verdicts from gunther8246-p2.flags.tsv (TXV-GUN).\nline\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n')
 
 
 def rd(p):
@@ -120,6 +121,12 @@ def build(write_align):
             it = iter(sh)
             stext = ''.join(next(it) if c.isalpha() else c for c in text)
             ctrl.append(agree_share(ct, run_align(ct, stext, kv, os.path.join(tmp, 's.tsv'), tmp), kv))
+    # TXV-GUN (9 Oct 2026): verifier verdicts per position, as build_birago152.py; FLAG -> flag column, CORRECT -> truth changed
+    flags = {}
+    fp = os.path.join(ROOT, 'benchmark-tx', 'gunther8246-p2.flags.tsv')
+    if os.path.exists(fp):
+        for r in rd(fp):
+            flags[(r['line'], r['pos'])] = r
     rows, counts = [], {}
     for c, a in zip(ct, al):
         if not c['line'].startswith('p2'):
@@ -139,6 +146,17 @@ def build(write_align):
             st, truth = 'scored', '|'.join(sorted(by_val[ch]))
             if kv[s] != ch:
                 flag = 'align-conflict'
+            fr = flags.get((line, c['pos']))
+            if fr:
+                if fr['verdict'] == 'CORRECT':
+                    if fr['correct_plain']:
+                        ch = fr['correct_plain']
+                    truth = '|'.join(sorted(by_val.get(ch, set()) | set(filter(None, fr['add_signs'].split('|')))))
+                    flag = 'corrected:' + fr['class']
+                elif fr['verdict'] == 'FLAG':
+                    flag = fr['class']
+                elif fr['verdict'] == 'KEEP':
+                    flag = ''
         counts[st] = counts.get(st, 0) + 1
         if flag:
             counts['flag:' + flag] = counts.get('flag:' + flag, 0) + 1

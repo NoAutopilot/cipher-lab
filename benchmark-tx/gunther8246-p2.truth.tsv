@@ -1,4 +1,4 @@
-# Gunther van Schwarzburg WVO 8246 MS p.2 (Willem van Oranje, 2 May 1561), split=eval: Japikse 1934 no.316 printed decipherment (Koot) under the 5109-rebuilt key (C rows); built by benchmark-tx/build_gunther8246p2.py (TX-POOL-LEAF). Flag align-conflict = committed sign keyed to another letter.
+# Gunther van Schwarzburg WVO 8246 MS p.2 (Willem van Oranje, 2 May 1561), split=eval: Japikse 1934 no.316 printed decipherment (Koot) under the 5109-rebuilt key (C rows); built by benchmark-tx/build_gunther8246p2.py (TX-POOL-LEAF). Flag align-conflict = committed sign keyed to another letter; verifier verdicts from gunther8246-p2.flags.tsv (TXV-GUN).
 line	pos	ref_sign	truth	plain	status	flag
 p2_L01	1	x+	01|ii|x|x+	a	scored	
 p2_L01	2	34	34|44|48|60	u	scored	
@@ -75,7 +75,7 @@ p2_L05	10	m		l	excluded:off-key
 p2_L05	11	of	gn|ne|of	l	scored	
 p2_L05	12	f	85|f|g|r|ss	e	scored	
 p2_L05	13	oo	c|cc|oo|or|ox|ps	n	scored	
-p2_L05	14	th	85|f|g|r|ss	e	scored	align-conflict
+p2_L05	14	th	85|f|g|r|ss	e	scored	alignment-doubtful
 p2_L06	1	Ol		l	excluded:off-key	
 p2_L06	2	34		v	excluded:letter-unkeyed	
 p2_L06	3	Ib	Ib|o|phi|vt	o	scored	
@@ -84,10 +84,10 @@ p2_L06	5	d	d|d6|tau|th|th+|xm	d	scored
 p2_L06	6	f	85|f|g|r|ss	e	scored	
 p2_L06	7	88x	8|8+|88|88x	r	scored	
 p2_L06	8	4000	4000	q	scored	
-p2_L06	9	34	c|cc|oo|or|ox|ps	n	scored	align-conflict
+p2_L06	9	34	34|44|48|60	u	scored	corrected:alignment-shift
 p2_L06	10	60	34|44|48|60	u	scored	
 p2_L06	11	44	34|44|48|60	u	scored	
-p2_L06	12	88x	p|x+x	f	scored	align-conflict
+p2_L06	12	88x	8|8+|88|88x	r	scored	corrected:print-misprint
 p2_L06	13	th	d|d6|tau|th|th+|xm	d	scored	
 p2_L07	1	f	85|f|g|r|ss	e	scored	
 p2_L07	2	or	c|cc|oo|or|ox|ps	n	scored	
@@ -120,7 +120,7 @@ p2_L08	13	th	d|d6|tau|th|th+|xm	d	scored
 p2_L08	14	hs	86|fb|hs|ob|rp	i	scored	
 p2_L08	15	f	85|f|g|r|ss	e	scored	
 p2_L08	16	]	L|]|aaa	s	scored	
-p2_L08	17	Ib	L|]|aaa	s	scored	align-conflict
+p2_L08	17	Ib	L|]|aaa	s	scored	key-gap
 p2_L09	1	f	85|f|g|r|ss	e	scored	
 p2_L09	2	ps	c|cc|oo|or|ox|ps	n	scored	
 p2_L09	3	aab	101|62|aab|x_|xb	h	scored	
@@ -151,8 +151,8 @@ p2_L10	13	88x	8|8+|88|88x	r	scored
 p2_L10	14	th	d|d6|tau|th|th+|xm	d	scored	
 p2_L10	15	f	85|f|g|r|ss	e	scored	
 p2_L10	16	or	c|cc|oo|or|ox|ps	n	scored	
-p2_L11	1	x	p|x+x	f	scored	align-conflict
-p2_L11	2	or	Ib|o|phi|vt	o	scored	align-conflict
+p2_L11	1	x	p|x+x	f	scored	key-gap
+p2_L11	2	or	Ib|o|phi|vt	o	scored	slip
 p2_L11	3	88	8|8+|88|88x	r	scored	
 p2_L11	4	6	6|7|dot7|z|zz	t	scored	
 p2_L11	5	53	53|63|77	z	scored	
@@ -163,13 +163,13 @@ p2_L11	9	6	6|7|dot7|z|zz	t	scored
 p2_L11	10	77	53|63|77	z	scored	
 p2_L11	11	f	85|f|g|r|ss	e	scored	
 p2_L11	12	or	c|cc|oo|or|ox|ps	n	scored	
-p2_L11	13	Ib	L|]|aaa	s	scored	align-conflict
+p2_L11	13	Ib	L|]|aaa	s	scored	key-gap
 p2_L11	14	Ib+		o	excluded:off-key	
 p2_L12	1	aa		h	excluded:off-key	
 p2_L12	2	x	01|ii|x|x+	a	scored	
 p2_L12	3	q	q|sq|vi|xn	b	scored	
 p2_L12	4	ob	86|fb|hs|ob|rp	i	scored	
-p2_L12	5	d6	a|xr	c	scored	align-conflict
+p2_L12	5	d6	a|xr	c	scored	key-gap
 p2_L12	6	x_	101|62|aab|x_|xb	h	scored	
 p2_L12	7	x	01|ii|x|x+	a	scored	
 p2_L12	8	44	34|44|48|60	u	scored	
@@ -219,7 +219,7 @@ p2_L15	8	ps	c|cc|oo|or|ox|ps	n	scored
 p2_L15	9	hs	86|fb|hs|ob|rp	i	scored	
 p2_L15	10	33	3|33|87|rf|tn	m	scored	
 p2_L15	11	m		l	excluded:off-key	
-p2_L15	12	th	Ib|o|phi|vt	o	scored	align-conflict
+p2_L15	12	th	Ib|o|phi|vt	o	scored	key-gap
 p2_L15	13	6	6|7|dot7|z|zz	t	scored	
 p2_L15	14	101	101|62|aab|x_|xb	h	scored	
 p2_L16	1	88	8|8+|88|88x	r	scored	
@@ -249,7 +249,7 @@ p2_L17	9	aaa	L|]|aaa	s	scored
 p2_L17	10	ut		c	excluded:off-key	
 p2_L17	11	aab	101|62|aab|x_|xb	h	scored	
 p2_L17	12	f	85|f|g|r|ss	e	scored	
-p2_L17	13	x	p|x+x	f	scored	align-conflict
+p2_L17	13	x	p|x+x	f	scored	key-gap
 p2_L17	14	z	6|7|dot7|z|zz	t	scored	
 p2_L18	1	ob	86|fb|hs|ob|rp	i	scored	
 p2_L18	2	b		g	excluded:off-key	
@@ -303,14 +303,14 @@ p2_L21	7	t		g	excluded:off-key
 p2_L21	8	f	85|f|g|r|ss	e	scored	
 p2_L21	9	oo	c|cc|oo|or|ox|ps	n	scored	
 p2_L21	10	rf	3|33|87|rf|tn	m	scored	
-p2_L21	11	th	Ib|o|phi|vt	o	scored	align-conflict
+p2_L21	11	th	Ib|o|phi|vt	o	scored	key-gap
 p2_L21	12	b		g	excluded:off-key	
 p2_L21	13	f	85|f|g|r|ss	e	scored	
 p2_L21	14	ps	c|cc|oo|or|ox|ps	n	scored	
 p2_L21	15	Ol		e	excluded:off-key	
-p2_L22	1	34	gn|ne|of	l	scored	align-conflict
+p2_L22	1	34	34|44|48|60	u	scored	corrected:alignment-shift
 p2_L22	2	60	34|44|48|60	u	scored	
-p2_L22	3	th	Ib|o|phi|vt	o	scored	align-conflict
+p2_L22	3	th	Ib|o|phi|vt	o	scored	key-gap
 p2_L22	4	m		l	excluded:off-key	
 p2_L22	5	of	gn|ne|of	l	scored	
 p2_L22	6	q	q|sq|vi|xn	b	scored	
@@ -318,7 +318,7 @@ p2_L22	7	f	85|f|g|r|ss	e	scored
 p2_L22	8	BLOT		t	excluded:off-key	
 p2_L22	9	88	8|8+|88|88x	r	scored	
 p2_L22	10	x+	01|ii|x|x+	a	scored	
-p2_L22	11	d6	a|xr	c	scored	align-conflict
+p2_L22	11	d6	a|xr	c	scored	key-gap
 p2_L22	12	aab	101|62|aab|x_|xb	h	scored	
 p2_L22	13	7	6|7|dot7|z|zz	t	scored	
 p2_L22	14	f	85|f|g|r|ss	e	scored	
@@ -351,7 +351,7 @@ p2_L24	8	xr	a|xr	c	scored
 p2_L24	9	101	101|62|aab|x_|xb	h	scored	
 p2_L24	10	zz	6|7|dot7|z|zz	t	scored	
 p2_L24	11	th	d|d6|tau|th|th+|xm	d	scored	
-p2_L24	12	Ib	86|fb|hs|ob|rp	i	scored	align-conflict
+p2_L24	12	Ib	86|fb|hs|ob|rp	i	scored	key-gap
 p2_L24	13	f	85|f|g|r|ss	e	scored	
 p2_L24	14	]	L|]|aaa	s	scored	
 p2_L24	15	L	L|]|aaa	s	scored	
