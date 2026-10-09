@@ -1,0 +1,59 @@
+# R4120 (DECODE II:15, cover "1626 Camerarius och Grubbe") Vera nomina/Ficta lists as read by the worker (9 Oct 2026) from keys_decode/IMG_R4120_I24252 (names) and I24251 (countries); spelling as read, patterns are OCR-tolerant stems; M-grade where the hand is small (Achaia, Dantiscum line).
+name	pattern	kind	slot
+Sempronius	sempronius	person	Caesar
+Caius	caius	person	Caesar
+Achilles	achilles	person	Rex Sueciae
+Antonius	antonius	person	Rex Sueciae
+Alfonsus	alfons[iu]	person	Papa
+Franciscus	franciscus	person	Papa
+Africanus	africanus	person	Rex Hispaniae
+Aurelius	aurelius	person	Rex Hispaniae
+Vespasianus	vespasian	person	Rex Galliae
+Scipio	scipio	person	Rex Galliae
+Valerius	valerius	person	Rex Angliae
+Lambertus	lambertus	person	Rex Angliae
+Marcus	marcus	person	Rex Daniae
+Albertus	albertus	person	Rex Daniae
+Josephus	josephus	person	Rex Bohemiae
+Marcellus	marcellus	person	Rex Bohemiae
+Rodericus	rodericus	person	Rex Poloniae
+Guilelmus	guilelmus	person	Rex Poloniae
+Paulus	paulus	person	Rex Hungariae (Bethlen Gabor)
+Sigismundus	sigismund	person	Rex Hungariae (Bethlen Gabor)
+Titus	titus	person	Elector Saxoniae
+Rudolphus	rudolph	person	Elector Saxoniae
+Venceslaus	venceslau	person	Elector Brandenburgicus
+Hilarius	hilarius	person	Elector Brandenburgicus
+Areopagitae	areopagit	group	Ordines Belgici
+Quirites	quirit	group	Ordines Belgici
+Tryphon	tryphon	person	Dux Vinariensis
+Hannibal	han+ibal	person	Dux Vinariensis
+Hector	hector	person	Mansfeldius
+Turnus	turnus	person	Mansfeldius
+Alcimistae	alc[iy]mist	group	Jesuitae
+Celestini	celestini	group	Jesuitae
+Arabes	arabes	group	Turcae
+Peregrini	peregrini	group	Turcae
+Lacedaemones	lacedaemon	group	Veneti
+Achaii	acha[ij]	group	Veneti
+Leodius	leodius	person	Camerarius
+Anastasius	anastasi	person	Camerarius
+Sicilia	sicili	country	Germania
+Campania	campani	country	Gallia
+Biscaia	bisca[iy]	country	Polonia
+Sardinia	sardini	country	Livonia
+Corsica	corsica	country	Lithuania
+Hungaria	hungari	country	Moscovia
+Lombardia	lombardi	country	Hungaria
+Piccardia	piccardi	country	Suecia
+Natolia	natoli	country	Dania
+Castilia	castili	country	Bohemia
+Podolia	podoli	country	Italia
+Norwegia	norwegi	country	Transsylvania
+Cyprus	cypr	country	Dantiscum
+Achaia	acha[ij]a	country	Borussia
+Russia	russi	country	Silesia
+Sabaudia	sa[uv]oia	country	Austria
+Liguria	liguri	country	Bavaria
+Arragonia	arrago	country	Anglia
+Peloponnesus	peloponn	country	Belgium
