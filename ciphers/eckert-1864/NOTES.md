@@ -3306,3 +3306,35 @@ The audit lists E50, E100, E256, E293 as the other places the same miss leaves "
 Propagated (rule 10): status.json rows E283 (unresolved_spans "1 (tulip M)", gap), E256 17 June (gap, completeness, depth_note, depth_pct 87.5 -> 100.0; D3 and N3 unchanged, verifiers'), E100 and E50 (completeness, depth_note); SO prompts PROMPT-chatgpt-e256 ("[troops]"), -e100 ("whiskey" = troops by the key row), -e50 ("[troops]"). PROMPT-chatgpt-e283 (Dutch [Gap]) and -e254 (B. W. Brice) already carried the corrected words. Not applied: E277 "pause" stays U; E275 "boots" stays M.
 
 Checks: `python3 ciphers/eckert-1864/decode.py --write` then `--check` -> "reading.md is current", exit 0; `decode_no2.py --check` and `decode_no9.py --check` exit 0; `tools/depth_check.py` exit 0.
+
+## FM-R6a (9 Oct 2026, account 1, for LANE LEDGER)
+
+Four long 1864 rows of the Fort Monroe ledger (Huntington object 5952 = mssEC 25): 5639/1 5764/0 5697/1 5797/1, filed as E300-E303 (`ciphertext.txt`; `decode.py --write`, `--check`, `decode_no2.py --check`, `decode_no9.py --check` all exit 0). Scripts and outputs in `fortmonroe/`: `fm_r6a_dump.py`, `fm_r6a.py` + `fm_r6a_controls.txt` (HEAD shares and the five-book decodes), `fm_r6a_hdl.py/.out` (CONTENTdm search across all pointers, 4 IIIF pages, 11 queries), `fm_r6a_printcheck.py/.out` (164 cached volumes), `fm_r6a_beapi.py/.out`, `fm_r6a_beapi2.py/.out`, `fm_r6a_file.py`.
+
+Shares s1/s2/s9 (HEAD scorer): 5639/1 .421/.395/.132; 5764/0 .550/.475/.175; 5697/1 .454/.403/.134; 5797/1 .395/.347/.048; best_book 1 on all four. The clause picks the book: under No. 1 each reads as a connected telegram with names that fit sender, date and place; under No. 2, No. 9 and the shuffled No. 1/No. 2 code words give nonsense ("Concentrate Tennessee", "Tunnel Hill", "Lieut Gen U.S. Grant"). A consistency check, not a test.
+
+| row | ID | date, direction, content as read | book / H | print / holder search |
+|---|---|---|---|---|
+| 5639/1 | E300 | 29 Apr 1864 Sheldon to Eckert for the Secretary of the Navy: Butler informs that Plymouth is evacuated and the rebels are leaving North Carolina, S. P. Lee, 2 PM via Monroe; second message for Eckert | No. 1, H 18 | same words in ORN I/9, OR I/33 and Butler IV (phrase match, pages not located); CONTENTdm: only the row itself, no clear copy at another pointer |
+| 5764/0 | E301 | 21 June 1864 Sheldon to Eckert for the Secretary of the Navy: flag-ship Malvern, Farrars Island, no change in the naval situation, rebel ironclads taking on board sand in bags, S. P. Lee | No. 1, H 21 | **clear copy at pointer 10435, Page 293** (filed as such, not unread); ORN I/10 prints it |
+| 5697/1 | E302 | 27 May 1864 Sheldon to Eckert: telegraph line if White House becomes the base (West Point depot, Gloucester Point to West Point by Yorktown, chestnut poles, little wire); answers Eckert's clear question at 5696 p.152 | No. 1, H 50 | not found in the cached OR/ORN/Butler volumes or be-api (OR I/36 pts 2-3, Grant Papers 11) |
+| 5797/1 | E303 | 17 Oct 1864 Nashville, B. B. Glass to Beckwith for the General-in-Chief: Sherman from Ship's Gap 16 Oct (Hood, Snake Creek pass, railroad repair) and Thomas (Roddy moved from Tuscumbia); continues at 5798 | No. 1, H 46, C 1 | not found: cached volumes (OR I/39 pt 3 not cached), be-api on `warofrebellion393unit` 0 hits on three queries (two 502s; index answers, a Sherman query returned snippets), Grant Papers 12 0 |
+
+Image check: strips of the 2400 px page (full-width bands, not iiif_lines crops: the tool found no lines on these ruled pages, 0 crops). E300 tail, E302 middle and E303 head agree with the transcription; E301's strip read was another entry on the shared page, so E301 is transcription-only. Grades: decoder H 135, C 1, I 0, M 0; unread filler U uncounted. Requests: hdl.huntington.org 15, be-api 15, no IA downloads. A miss in print is a search result, not a verdict (rule 10). No novelty class assigned.
+
+## Remaining gaps (FM-R6a, 9 Oct 2026)
+Read so far: four of four filed (E300-E303). Printed: E300, E301 (volumes matched, page numbers not located). Not located in what was searched: E302, E303 as telegrams.
+- E303 (17 Oct 1864) - blocker: not-attempted; OR I/39 pt 3 not read by page (Sherman to Thomas/Grant 16 Oct, Ship's Gap); next: fetch `warofrebellion393unit` djvu and grep by date, ~$0.3
+- E302 (27 May 1864) - blocker: not-attempted; Eckert/Sheldon telegraph-line exchange 26-28 May by page in OR I/36 pt 3 and Butler/Grant Papers; next: grep `warofrebellion363unit` Eckert 27 May, ~$0.3
+- E300 E301 - blocker: not-attempted; printed pages not located; next: ORN I/9 and I/10 page by 29 Apr and 21 June, ~$0.3
+- E300 E302 E303 - blocker: not-attempted; images eye-checked only in bands; next: iiif_lines crops with a tuned --ink, ~$0.5
+
+## Escalation (FM-R6a, 9 Oct 2026)
+- [x] siblings: 5764 page neighbour (22 June insertion) and 5797-5798 continuation seen, not filed.
+- [x] clear-pages: E301 clear copy at pointer 10435 found.
+- [x] known-keys: each entry under all three books and shuffled No. 1/No. 2.
+- [x] print: 164 cached volumes plus be-api; E300, E301 matched.
+- [n/a] key-rebuild: not needed for these four.
+- [x] image-check: 3 of 4 in bands (E301 not).
+- [x] retry: be-api 502 twice, one retry script.
+Verdict: keep going: 4 internal gaps, cheapest next: OR I/39 pt 3 djvu grep for E303, ~$0.3

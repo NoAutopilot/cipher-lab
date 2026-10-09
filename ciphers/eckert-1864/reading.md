@@ -1589,5 +1589,29 @@ for [Secretary of War] [.] I have [Capture (-ed, -ing)]ed J H Maddox on the [Vir
 
 Code-word tokens: H 14.
 
-Totals over the 243 entries: H 4084, C 37, I 25, M 35, U 10.
+**E300 | Page 95 | 5639 | mssEC 25 (obj 5952, pointer 5639), 29 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Secretary of the Navy: Butler informs that Plymouth is evacuated and the rebels are leaving North Carolina, signed S. P. Lee, 2 PM via Monroe, with a second message for Eckert to say what to do; the same words are in print (ORN I/9, OR I/33 and Butler IV, volumes matched by phrase, pages not located); no clear copy found at another pointer (FM-R6a, 9 Oct 2026; row 5639/1; image-read at the tail, transcription agrees)**
+
+Maj Eckert Di for [Secretary of Navy] [.] I am just informed by [Maj Gen B. F. Butler] that he has [Information] that plymouth is [Evacuate (-ed, -ing) - ion]ed and [Rebel]'s are leaving [North Carolina]  {tail: [signed] [S. P. Lee] {time: 2 PM} [By the way of] [Monroe] [53] [.] Another for [Major] Eckert [.] please let me know what I am to do in this [Movement] if any thing no time to spare Geo D Sheldon}
+
+Code-word tokens: H 18.
+
+**E301 | Page 220 | 5764 | mssEC 25 (obj 5952, pointer 5764), 21 June 1864 Ft Monroe, Sheldon to Maj. Eckert for the Secretary of the Navy: flag-ship Malvern, Farrars Island 10.30 PM 20th, no change in the naval situation, look out that the rebel ironclads are taking on board sand in bags, signed S. P. Lee; a clear period copy stands at pointer 10435, Page 293, and ORN I/10 prints it (FM-R6a; row 5764/0; transcription-only, the image strip read was another entry on a shared page)**
+
+Maj. Eckert [Volunteer] [11] ship Malvern Farrars [Inland [sic: Island]] {time: 10.30 PM} [20] [By the way of] [Monroe] {time: 6 PM} [21] for [Secretary of Navy] [Washington] [.] no change [In the] naval situation [.] [Report] [From the] [Army] look out that the [Rebel] ironic lads are taking on board sand in bags  {tail: [signed] [S. P. Lee] end Geo D Sheldon}
+
+Code-word tokens: H 21.
+
+**E302 | Page 153 | 5697 | mssEC 25 (obj 5952, pointer 5697), 27 May 1864 Ft Monroe, Sheldon to Maj. Eckert: reply on the telegraph line if White House is made the base of supplies, West Point depot, route from Gloucester Point by Yorktown to West Point, chestnut poles on the railroad, little wire on hand; the question it answers stands clear at pointer 5696, Page 152; no print of this reply found in the volumes searched (FM-R6a; row 5697/1; image-read at its middle lines, transcription agrees)**
+
+Maj Eckert Di If [Report] House is made the base of supplies [West Point] will also be made a [Depot] and an office there will be a great Convenience [.] the old line was all [Destroy (-ed, -ing)]ed last year [,] anew line must be built [.] if it is Extended from [Williamsburg] up the Peninsula Either to [Report] house direct or [By the way of] [West Point] [,] the whole line [Of the] [Huntsville] hominy must be [Guard (-ed, -ing)]d to protect it from raiders [.] why not [Cross (-ed, -ing)] at [Yorktown] to Glow sister [Point] thence by a direct [Road] to the Mattie [9] and [Cross (-ed, -ing)] to [West Point] [?] distance from G. [Point] to the Mattie [9] about [30] [Mile]'s [,] [Road] is good and direct [,] from [West Point] to [Report] House on [Rail Road] [12] [Mile]'s [.] I think most [Of the] on the [Rail Road] are standing [,] they are fine large chestnut poles and have not rotted down [.] the distance [By the way of] G. [Point] is very little more than from [Williamsburg] up peninsula and by [Maj Genl U.S. Grant]'s [Position] the route must be pretty secure [,] office at G. [Point] will also be convenience [.] have asked obrien about material think he must have considerable [,] I have very little wire on hand now Geo D Sheldon
+
+Code-word tokens: H 50.
+
+**E303 | Page 253 | 5797 | mssEC 25 (obj 5952, pointer 5797), 17 Oct 1864 Nashville, B. B. Glass to S. H. Beckwith at City Point for the General-in-Chief: Sherman from Ship's Gap 16 Oct (Hood, Snake Creek pass, railroad repair) and Thomas (Roddy moved from Tuscumbia), continues at pointer 5798; no print found in the volumes searched (FM-R6a; row 5797/1; image-read at the head lines, transcription agrees)**
+
+S H. Beckwith City Point [Nashville] [17] {time: 4 PM} for [General-in-Chief] [Washington] [.] the following dispatch has been received from [Maj Gen W. T. Sherman] period ships gap October [16] {time: 5 PM} [,] we took ships gap [Today] [Capture (-ed, -ing)]ing a part of the [24] [South Carolina] [2] [Corps] are represented at [Lafayette] & [1] went [South] from villanou plain they obstructed [Head Quarters] creek pass to delay our trains but by [Tomorrow] I can move in any direction I want the first positive fact that [Maj Gen J. B. Hood (Confederate)] contemplated an in vision of [Tennessee] to invite him to do so and with a free pass in [.] reoccupy the [Rail Road] and put the construction [Corps] to work to repair the break from the tunnel to reese sacky [.] I will get my trains up here and move according to the best information I can get  {tail: [signed] [Maj Gen W. T. Sherman] period the necessary orders have been given for the repair [Of the] [Rail Road] [.] [Deserter]'s from hudsons [Army] report his [Force] at about [30000] the strength of his [Cavalry] [Force] not known pause no additional move from the [Tennessee] [River] except that roddys [Force] moved from [Tuscumbia] yester day [signed] [Maj Gen Geo. H. Thomas] send copy to [Maj Genl U.S. Grant] weather very pleasant B. B. Glass}
+
+Code-word tokens: H 46, C 1.
+
+Totals over the 247 entries: H 4219, C 38, I 25, M 35, U 10.
 <!-- decode.py: derived block ends -->
