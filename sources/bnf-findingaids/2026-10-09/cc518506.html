@@ -1,0 +1,470 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000051850">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000051850">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 20065-22884 [Petits fonds] > Français 20145-21332</div>
+					<h1>Français 20500-20576</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000051850_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850">Français 20500-20576 • Gaignières 388-464 • Recueil de lettres et pièces originales des XVIe et XVIIe siècles formé par Gaignières.</a><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e62">Français 20500-20501 • Gaignières 388-389 • I-II Lettres écrites par des membres de la famille de Montmorency ou à eux adressés (XVIe siècle). 1556-1596.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e72">Français 20500 • I Lettres signées : « F[rançois] de Montmorency, [maréchal de France] ; [Anne, duc de] Montmorency, [connétable de France] ; H[enri] de Montmorency, [connétable] ; » etc. — II (20501). Lettres signées : « F[rançois] de Montmorency ; Charles, b[âtard] de Valois, [comte d'Auvergne] ; Charles de Lorraine, [duc de Mayenne], » 1556-1596.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e113">Français 20501 • II Lettres signées : « F[rançois] de Montmorency ; Charles, b[âtard] de Valois, [comte d'Auvergne] ; Charles de Lorraine, [duc de Mayenne] ».</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e149">Français 20502 • Gaignières 390 • III Pièces et lettres du XVIe siècle.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e275">Français 20503 • Gaignières 391 • IV Lettres du XVIe siècle et du commencement du XVIIe.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e376">Français 20504 • Gaignières 392 • V Lettres pour la plupart adressées à Anne et Henri de Montmorency, connétables de France, par « [Hercule d'Este, IIe du nom, duc de Ferrare, qui signe] Hercule Estense, il duca di Chartres, il duca di Ferrara ; Alfonso [I] et Alfonso [II] de Este, [ducs de Ferrare] ; Cesare de Este, [duc de Modène] ; Vincent Ier, duc de Mantoue ; Ranuce Farnese, duc de Parme ; [Alexandre], cardinale da Este ; J[ean] cardinal du Belloy, évêque de Bayonne ; Guillaume du Bellay ; Ch[arles] de Gramont, é[vêque] d'Ayre, puis ar[chevêque] de Bourd[eaux] ; G[abriel] de Gramont, é[vêque] de Tarbes et M. de Morette ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e464">Français 20505 • Gaignières 393 • VI Lettres adressées aux mêmes personnages, et pièces diverses.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e635">Français 20506 • Gaignières 394 • VII Lettres adressées au grand-maître Anne de Montmorency, dépêches chiffrées et pièces diverses, relatives surtout à l'Italie. — Lettres de « J[ean] de Langhac [ou Langeac], é[vêque] d'Avranches ; Glau[de] Dodieu, [sr de Velly, ambassadeur à Florence] ; G[eorges] de Selve, é[vêque] de Lavaur ; [le seigneur] Francysque, [comte de Pontresme] ; » etc.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e693">Français 20507 • Gaignières 395 • VIII Pièces diverses et lettres pour la plupart adressées à des membres de la maison de Montmorency.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e862">Français 20508 • Gaignières 396 • IX Lettres adressées pour la plupart à des membres de la maison de Montmorency (XVIe et comm. XVIIe s.), et pièces diverses.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e1128">Français 20509 • Gaignières 397 • X Lettres adressées pour la plupart à des membres de la maison de Montmorency (XVIe et comm. XVIIe s.), et pièces diverses (suite).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e1312">Français 20510 • Gaignières 398 • XI Lettres concernant la Bretagne et adressées pour la plupart à [Jean IV de La Brosse, dit de Bretagne], duc d'Étampes, (1543-1566).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e1452">Français 20511 • Gaignières 309 • XII Lettres et pièces du milieu du XVIe siècle, concernant surtout la famille de Lorraine-Guise.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e1789">Français 20512 • Gaignières 400 • XIII Lettres et pièces du milieu du XVIe siècle, concernant surtout la famille de Lorraine-Guise (suite), seconde moitié du XVIe siècle.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e2027">Français 20513 • Gaignières 401 • XIV Lettres adressées au duc de Guise et à la duchesse douairière Ant. de Bourbon (1551).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e2350">Français 20514 • Gaignières 402 • XV Lettres adressées au duc de Guise et à la duchesse douairière Ant. de Bourbon (suite) (1551-1552).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e2660">Français 20515 • Gaignières 403 • XVI Lettres adressées au duc de Guise et à la duchesse douairière Ant. de Bourbon (suite) (1552).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e2929">Français 20516 • Gaignières 404 • XVII Lettres et pièces, relatives particulièrement au Dauphiné et à la Savoie, adressées au duc d'Aumale (1548).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e3137">Français 20517 • Gaignières 405 • XVIII Lettres adressées au duc de Guise (1553-1554), etc.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e3409">Français 20518 • Gaignières 406 • XIX Traités de paix, conventions, etc., entre les rois de France, les princes du sang, les souverains étrangers, etc. (1544-1593).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e3442">Français 20519 • Gaignières 407 • XX Lettres adressées surtout au duc de Guise (1552-1553).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e3755">Français 20520 • Gaignières 408 • XX Lettres adressées surtout au duc de Guise (suite) (1557, etc.)</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e3995">Français 20521 • Gaignières 409 • XXII Lettres du maréchal Oudart de Biez, minutes (1540-1555).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e4026">Français 20522 • Gaignières 410 • XXIII Lettres pour la plupart adressées au duc de Guise (1550-1557) et minutes de lettres de ce duc.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e4257">Français 20523 • Gaignières 411 • XXIV Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (1549-1552).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e4423">Français 20524 • Gaignières 412 • XXV Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1552-1554).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e4564">Français 20525 • Gaignières 413 • XXVI Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1554-1557).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e4728">Français 20526 • Gaignières 414 • XXVII Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1556-1558).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e4894">Français 20527 • Gaignières 415 • XXVIII Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1551-1566).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e5025">Français 20528 • Gaignières 416 • XXIX Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1554-1582)</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e5194">Français 20529 • Gaignières 417 • XXX Lettres et pièces ; la plupart des lettres sont de 1557 et adressées au duc de Guise ; minutes de celui-ci.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e5445">Français 20530 • Gaignières 418 • XXXI Lettres et pièces diverses (1548-1603).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e5601">Français 20531 • Gaignières 419 • XXXII Lettres et pièces diverses (1548-1645).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e5792">Français 20532 • Gaignières 420 • XXXIII Lettres et pièces diverses (1547-1650).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e5946">Français 20533 • Gaignières 421 • XXXIV Lettres adressées au duc de Guise (1550 et 1551, n. st).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e6205">Français 20534 • Gaignières 422 • XXXV Lettres pour la plupart adressées au duc d'Aumale (1549 et 1550, n. st.).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e6527">Français 20535 • Gaignières 423 • XXXVI Lettres adressées pour la plupart au duc de Guise (1557-1559).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e6688">Français 20536 • Gaignières 424 • XXXVII Lettres diverses (1557-1559), pour la plupart adressées à des membres de la famille de Guise.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e6972">Français 20537 • Gaignières 425 • XXXVIII Pièces diverses ; lettres pour la plupart adressées au duc de Guise et d'Aumale (1548-1560).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e7239">Français 20538 • Gaignières 426 • XXXIX Lettres pour la plupart adressées au duc d'Aumale (1548-1549).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e7475">Français 20539 • Gaignières 427 • XL Lettres pour la plupart adressées à Bartolomeo et à Giuliano d'Elbene (1568-1612).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e7576">Français 20540 • Gaignières 428 • XLI Lettres adressées pour la plupart au duc de Guise (1551-1556).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e7827">Français 20541 • Gaignières 429 • XLII Lettres pour la plupart adressées au duc de Guise (1550-1551).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e8063">Français 20542 • Gaignières 430 • XLIII Lettres pour la plupart adressées à Claude de Lorraine, comte, puis duc d'Aumale (1543-1548).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e8275">Français 20543 • Gaignières 431 • XLIV Lettres adressées en général au duc de Guise (1544-1553, etc.).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e8534">Français 20544 • Gaignières 432 • XLV Lettres adressées au duc de Guise (1553).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e8798">Français 20545 • Gaignières 433 • XLVI Lettres adressées pour la plupart au duc de Guise (1554-1555).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e9134">Français 20546 • Gaignières 435 • XLVII Lettres pour la plupart adresssées à [Roger de Saint-Lary et de Termes], duc de Bellegarde (1621-1644).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e9300">Français 20547 • Gaignières 435 • XLVIII Lettres et pièces, originaux et copies (1600-1660).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e9431">Français 20548 • Gaignières 436 • XLIX Lettres adressées au duc d'Aumale (1547-1548), etc.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e9665">Français 20549 • Gaignières 437 • L Lettres adressées au duc d'Aumale (1548).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e9944">Français 20550 • Gaignières 438 • LI Lettres pour la plupart adressées au duc de Guise (1551).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e10264">Français 20551 • Gaignières 439 • LII Lettres pour la plupart adressées au duc de Guise (juin-décembre 1553).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e10580">Français 20552 • Gaignières 440 • LIII Lettres pour la plupart adressées au duc de Guise (suite) (juillet-septembre 1551).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e10876">Français 20553 • Gaignières 441 • LIV Lettres pour la plupart adressées au duc d'Aumale (1548-1549).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e11132">Français 20554 • Gaignières 442 • LV Lettres pour la plupart adressées au duc de Guise (1555-1556).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e11423">Français 20555 • Gaignières 443 • LVI Lettres pour la plupart adressées au duc d'Aumale (sept.-oct. 1548).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e11743">Français 20556 • Gaignières 444 • LVII Lettres et pièces touchant le voyage de Henry de Lorraine, duc de Guise, à Naples. — Tome I.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e11884">Français 20557 • Gaignières 445 • LVIII Lettres et pièces touchant le voyage de Henry de Lorraine, duc de Guise, à Naples. — Tome II.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e11960">Français 20558 • Gaignières 446 • LIX Lettres et pièces touchant le voyage de Henry de Lorraine, duc de Guise, à Naples. — Tome III.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e12051">Français 20559 • Gaignières 447 • LX Lettres écrites surtout à Charles de Lorraine, duc de Guise (1605-1638).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e12237">Français 20560 • Gaignières 448 • LXI Lettres adressées à divers membres de la famille de Guise (1590-1622).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e12416">Français 20561 • Gaignières 449 • LXII Papiers du comte de Brienne. Tome I.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e12522">Français 20562 • Gaignières 450 • LXIII Papiers du comte de Brienne. Tome II.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e12573">Français 20563 • Gaignières 451 • LXIV Papiers du comte de Brienne. Tome III (1630-1660).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e12635">Français 20564 • Gaignières 452 • LXV Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome I (1649-1657).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e12826">Français 20565 • Gaignières 453 • LXVI Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome II (1651-1660).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e12932">Français 20566 • Gaignières 454 • LXVII Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome III (1655-1656).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e13013">Français 20567 • Gaignières 455 • LXVIII Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome III (1656-1657).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e13192">Français 20568 • Gaignières 456 • LXIX Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome IV (ou I de la seconde série).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e13318">Français 20569 • Gaignières 457 • LXX Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome V (ou II).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e13424">Français 20570 • Gaignières 458 • LXXI Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome VI (ou III).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e13510">Français 20571 • Gaignières 459 • LXXII Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome VII (ou IV).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e13666">Français 20572 • Gaignières 460 • LXXIII Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome VIII (ou V).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e13827">Français 20573 • Gaignières 461 • LXXIV Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome IX (ou VI).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e14023">Français 20574 • Gaignières 462 • LXXV Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome X (ou VII).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e14224">Français 20575 • Gaignières 463 • LXXVI Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome XI (ou VIII).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000051850_d0e14340">Français 20576 • Gaignières 644 • LXXVII Lettres adressées à [Louis-Charles-Gaston de Nogaret, de La Valette et de Foix, dit] le duc de Candale (1649-1657).</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 20500-20576<br/>Cette cote ne correspond pas à une unité matérielle communicable. Veuillez sélectionner un document réservable parmi les niveaux inférieurs.</span></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 20500-20576 
+							</div>
+<div class="did-unitid">Ancienne cote : Gaignières 388-464</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et pièces originales des XVIe et XVIIe siècles formé par Gaignières.</div>
+</div>
+<div class="did-date">XVIe-XVIIe siècle</div>
+<div class="divdid">Papier.77 volumes.In-folio.Reliure veau fauve.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>NOTE : Un catalogue analytique de ce recueil a été rédigé par M. Charles de Grandmaison. Il est à la disposition du public dans la salle de travail du Détement des manuscrits.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Gaignières, Roger de. • Lettres et pièces originales, recueil (XVIe-XVIIe s.).</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e62');">Français 20500-20501 (cote) • I-II Lettres écrites par des membres de la famille de Montmorency ou à eux adressés (XVIe siècle). 1556-1596.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e149');">Français 20502 (cote) • III Pièces et lettres du XVIe siècle.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e275');">Français 20503 (cote) • IV Lettres du XVIe siècle et du commencement du XVIIe.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e376');">Français 20504 (cote) • V Lettres pour la plupart adressées à Anne et Henri de Montmorency, connétables de France, par « [Hercule d'Este, IIe du nom, duc de Ferrare, qui signe] Hercule Estense, il duca di Chartres, il duca di Ferrara ; Alfonso [I] et Alfonso [II] de Este, [ducs de Ferrare] ; Cesare de Este, [duc de Modène] ; Vincent Ier, duc de Mantoue ; Ranuce Farnese, duc de Parme ; [Alexandre], cardinale da Este ; J[ean] cardinal du Belloy, évêque de Bayonne ; Guillaume du Bellay ; Ch[arles] de Gramont, é[vêque] d'Ayre, puis ar[chevêque] de Bourd[eaux] ; G[abriel] de Gramont, é[vêque] de Tarbes et M. de Morette ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e464');">Français 20505 (cote) • VI Lettres adressées aux mêmes personnages, et pièces diverses.</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e635');">Français 20506 (cote) • VII Lettres adressées au grand-maître Anne de Montmorency, dépêches chiffrées et pièces diverses, relatives surtout à l'Italie. — Lettres de « J[ean] de Langhac [ou Langeac], é[vêque] d'Avranches ; Glau[de] Dodieu, [sr de Velly, ambassadeur à Florence] ; G[eorges] de Selve, é[vêque] de Lavaur ; [le seigneur] Francysque, [comte de Pontresme] ; » etc.</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e693');">Français 20507 (cote) • VIII Pièces diverses et lettres pour la plupart adressées à des membres de la maison de Montmorency.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e862');">Français 20508 (cote) • IX Lettres adressées pour la plupart à des membres de la maison de Montmorency (XVIe et comm. XVIIe s.), et pièces diverses.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e1128');">Français 20509 (cote) • X Lettres adressées pour la plupart à des membres de la maison de Montmorency (XVIe et comm. XVIIe s.), et pièces diverses (suite).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e1312');">Français 20510 (cote) • XI Lettres concernant la Bretagne et adressées pour la plupart à [Jean IV de La Brosse, dit de Bretagne], duc d'Étampes, (1543-1566).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e1452');">Français 20511 (cote) • XII Lettres et pièces du milieu du XVIe siècle, concernant surtout la famille de Lorraine-Guise.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e1789');">Français 20512 (cote) • XIII Lettres et pièces du milieu du XVIe siècle, concernant surtout la famille de Lorraine-Guise (suite), seconde moitié du XVIe siècle.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e2027');">Français 20513 (cote) • XIV Lettres adressées au duc de Guise et à la duchesse douairière Ant. de Bourbon (1551).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e2350');">Français 20514 (cote) • XV Lettres adressées au duc de Guise et à la duchesse douairière Ant. de Bourbon (suite) (1551-1552).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e2660');">Français 20515 (cote) • XVI Lettres adressées au duc de Guise et à la duchesse douairière Ant. de Bourbon (suite) (1552).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e2929');">Français 20516 (cote) • XVII Lettres et pièces, relatives particulièrement au Dauphiné et à la Savoie, adressées au duc d'Aumale (1548).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e3137');">Français 20517 (cote) • XVIII Lettres adressées au duc de Guise (1553-1554), etc.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e3409');">Français 20518 (cote) • XIX Traités de paix, conventions, etc., entre les rois de France, les princes du sang, les souverains étrangers, etc. (1544-1593).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e3442');">Français 20519 (cote) • XX Lettres adressées surtout au duc de Guise (1552-1553).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e3755');">Français 20520 (cote) • XX Lettres adressées surtout au duc de Guise (suite) (1557, etc.)</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e3995');">Français 20521 (cote) • XXII Lettres du maréchal Oudart de Biez, minutes (1540-1555).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e4026');">Français 20522 (cote) • XXIII Lettres pour la plupart adressées au duc de Guise (1550-1557) et minutes de lettres de ce duc.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e4257');">Français 20523 (cote) • XXIV Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (1549-1552).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e4423');">Français 20524 (cote) • XXV Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1552-1554).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e4564');">Français 20525 (cote) • XXVI Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1554-1557).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e4728');">Français 20526 (cote) • XXVII Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1556-1558).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e4894');">Français 20527 (cote) • XXVIII Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1551-1566).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e5025');">Français 20528 (cote) • XXIX Correspondance de Charles Cossé, seigneur de Brissac, maréchal de France, lieutenant général des armes du Roi en Piémont (suite) (1554-1582)</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e5194');">Français 20529 (cote) • XXX Lettres et pièces ; la plupart des lettres sont de 1557 et adressées au duc de Guise ; minutes de celui-ci.</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e5445');">Français 20530 (cote) • XXXI Lettres et pièces diverses (1548-1603).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e5601');">Français 20531 (cote) • XXXII Lettres et pièces diverses (1548-1645).</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e5792');">Français 20532 (cote) • XXXIII Lettres et pièces diverses (1547-1650).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e5946');">Français 20533 (cote) • XXXIV Lettres adressées au duc de Guise (1550 et 1551, n. st).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e6205');">Français 20534 (cote) • XXXV Lettres pour la plupart adressées au duc d'Aumale (1549 et 1550, n. st.).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e6527');">Français 20535 (cote) • XXXVI Lettres adressées pour la plupart au duc de Guise (1557-1559).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e6688');">Français 20536 (cote) • XXXVII Lettres diverses (1557-1559), pour la plupart adressées à des membres de la famille de Guise.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e6972');">Français 20537 (cote) • XXXVIII Pièces diverses ; lettres pour la plupart adressées au duc de Guise et d'Aumale (1548-1560).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e7239');">Français 20538 (cote) • XXXIX Lettres pour la plupart adressées au duc d'Aumale (1548-1549).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e7475');">Français 20539 (cote) • XL Lettres pour la plupart adressées à Bartolomeo et à Giuliano d'Elbene (1568-1612).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e7576');">Français 20540 (cote) • XLI Lettres adressées pour la plupart au duc de Guise (1551-1556).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e7827');">Français 20541 (cote) • XLII Lettres pour la plupart adressées au duc de Guise (1550-1551).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e8063');">Français 20542 (cote) • XLIII Lettres pour la plupart adressées à Claude de Lorraine, comte, puis duc d'Aumale (1543-1548).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e8275');">Français 20543 (cote) • XLIV Lettres adressées en général au duc de Guise (1544-1553, etc.).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e8534');">Français 20544 (cote) • XLV Lettres adressées au duc de Guise (1553).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e8798');">Français 20545 (cote) • XLVI Lettres adressées pour la plupart au duc de Guise (1554-1555).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e9134');">Français 20546 (cote) • XLVII Lettres pour la plupart adresssées à [Roger de Saint-Lary et de Termes], duc de Bellegarde (1621-1644).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e9300');">Français 20547 (cote) • XLVIII Lettres et pièces, originaux et copies (1600-1660).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e9431');">Français 20548 (cote) • XLIX Lettres adressées au duc d'Aumale (1547-1548), etc.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e9665');">Français 20549 (cote) • L Lettres adressées au duc d'Aumale (1548).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e9944');">Français 20550 (cote) • LI Lettres pour la plupart adressées au duc de Guise (1551).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e10264');">Français 20551 (cote) • LII Lettres pour la plupart adressées au duc de Guise (juin-décembre 1553).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e10580');">Français 20552 (cote) • LIII Lettres pour la plupart adressées au duc de Guise (suite) (juillet-septembre 1551).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e10876');">Français 20553 (cote) • LIV Lettres pour la plupart adressées au duc d'Aumale (1548-1549).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e11132');">Français 20554 (cote) • LV Lettres pour la plupart adressées au duc de Guise (1555-1556).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e11423');">Français 20555 (cote) • LVI Lettres pour la plupart adressées au duc d'Aumale (sept.-oct. 1548).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e11743');">Français 20556 (cote) • LVII Lettres et pièces touchant le voyage de Henry de Lorraine, duc de Guise, à Naples. — Tome I.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e11884');">Français 20557 (cote) • LVIII Lettres et pièces touchant le voyage de Henry de Lorraine, duc de Guise, à Naples. — Tome II.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e11960');">Français 20558 (cote) • LIX Lettres et pièces touchant le voyage de Henry de Lorraine, duc de Guise, à Naples. — Tome III.</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e12051');">Français 20559 (cote) • LX Lettres écrites surtout à Charles de Lorraine, duc de Guise (1605-1638).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e12237');">Français 20560 (cote) • LXI Lettres adressées à divers membres de la famille de Guise (1590-1622).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e12416');">Français 20561 (cote) • LXII Papiers du comte de Brienne. Tome I.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e12522');">Français 20562 (cote) • LXIII Papiers du comte de Brienne. Tome II.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e12573');">Français 20563 (cote) • LXIV Papiers du comte de Brienne. Tome III (1630-1660).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e12635');">Français 20564 (cote) • LXV Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome I (1649-1657).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e12826');">Français 20565 (cote) • LXVI Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome II (1651-1660).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e12932');">Français 20566 (cote) • LXVII Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome III (1655-1656).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e13013');">Français 20567 (cote) • LXVIII Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome III (1656-1657).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e13192');">Français 20568 (cote) • LXIX Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome IV (ou I de la seconde série).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e13318');">Français 20569 (cote) • LXX Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome V (ou II).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e13424');">Français 20570 (cote) • LXXI Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome VI (ou III).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e13510');">Français 20571 (cote) • LXXII Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome VII (ou IV).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e13666');">Français 20572 (cote) • LXXIII Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome VIII (ou V).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e13827');">Français 20573 (cote) • LXXIV Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome IX (ou VI).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e14023');">Français 20574 (cote) • LXXV Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome X (ou VII).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e14224');">Français 20575 (cote) • LXXVI Lettres adressées au duc d'Épernon [Bernard de Nogaret de La Valette] et copies de lettres de ce seigneur. — Tome XI (ou VIII).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000051850_d0e14340');">Français 20576 (cote) • LXXVII Lettres adressées à [Louis-Charles-Gaston de Nogaret, de La Valette et de Foix, dit] le duc de Candale (1649-1657).</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

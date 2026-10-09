@@ -48,7 +48,8 @@ fr.3618	3	keysheet	stratum2	Table de chiffrement du sieur de Villelongue pour co
 fr.3618	4	keysheet	stratum2	Clef d'un chiffre employé par le duc de Nevers.
 fr.3619	1	keysheet	stratum2	Clef de chiffre.
 fr.3632	63	named	stratum2	Lettre, avec chiffre, au duc de Nevers.
-fr.3974-3995	32	keysheet	stratum2	Chiffre, avec déchiffrement, des cardinaux DE BOURBON et DE GUISE au duc de Nevers. « 29 d
+fr.3974-3995	32	deciphered	stratum2-corrected	Chiffre, avec déchiffrement, des cardinaux DE BOURBON et DE GUISE au duc de Nevers. « 29 d
+fr.3974-3995	32	keysheet	stratum2	« Chiffre de 13043 ».
 fr.3974-3995	8	named	stratum2	Lettre, en chiffre. « Di Parigi, li 15 di maggio 1593 ».
 fr.4687	41	bare	stratum2	Chiffre. Quelques lignes non chiffrées sont en italien.
 fr.4712	11	named	stratum2	Fragment de dépêche en clair et en chiffre.

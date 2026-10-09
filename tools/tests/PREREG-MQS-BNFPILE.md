@@ -14,7 +14,7 @@ only that the code reproduces the prototype.
 ## C2 Hand-labelled sample (the real measure)
 `tools/tests/data/bnf_pile_labels.tsv`: 54 cipher-bearing items, none from fr.2988, labelled by reading the item text
 (bare / named / deciphered / key sheet) before the scorer ran on them. Stratum "random": 40 items drawn with
-`random.Random(20261009)` from the 487 cipher-bearing items of the other saved notices (sorted by (title, no, text),
+`random.Random(20261009)` from the 488 cipher-bearing items of the other saved notices (sorted by (title, no, text),
 shuffled, first 40). The random stratum holds **no bare item and no key sheet**, so it cannot measure either; stratum
 "stratum2" is the 14 cipher items that are short (<60 characters) or carry table/clef/alphabet/précédent words, and is
 hand-labelled the same way (5 bare, 5 key sheet, the rest named). Stratum 2 was chosen by a loose filter that is not the
@@ -43,3 +43,13 @@ order does not change bare counts either; the within-fonds variant is reported b
 ## C5 Shelf grade
 `--pile` ships at most `weak` (one calibration point) until a second, independently found pile is scored, whatever
 C2 returns. `PILE_MIN` = 5 open bare items for class `pile` is set here, before the sample ran.
+
+## Amendment 1 (9 Oct 2026, after the first scorer run; disclosed, not hidden)
+The first label file had one row wrong, found when the first run disagreed with it: the stratum-2 row "fr.3974-3995 no.32
+key sheet" had been looked up by (cote, no), and that volume group holds three items numbered 32; the row picked up
+"Chiffre, avec déchiffrement, des cardinaux DE BOURBON ET DE GUISE" (deciphered), not "« Chiffre de 13043 »" (the key
+sheet I meant). Corrected: that row is now `deciphered` (stratum2-corrected) and the key-sheet row is added with its own
+text, 55 labels (bare 5, key sheet 5, deciphered 23, named 22). The scorer was NOT changed because of this or of any
+sample result; two known misses remain by design and are reported: the key sheet "« Chiffre de 13043 »" (guillemets
+read as a name) and the bare "Chiffre. Quelques lignes non chiffrées sont en italien." (a sentence-initial capital
+read as a place name by the place-name proxy).

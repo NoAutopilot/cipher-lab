@@ -1,0 +1,194 @@
+[
+ {
+  "phrase": "pièce en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 23391,
+  "seconds": 1.92,
+  "file": "sources/bnf-census/2026-10-09/html/q01.html.gz"
+ },
+ {
+  "phrase": "pièces en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 9843,
+  "seconds": 0.82,
+  "file": "sources/bnf-census/2026-10-09/html/q02.html.gz"
+ },
+ {
+  "phrase": "lettre en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 45859,
+  "seconds": 1.38,
+  "file": "sources/bnf-census/2026-10-09/html/q03.html.gz"
+ },
+ {
+  "phrase": "lettres en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 16824,
+  "seconds": 2.11,
+  "file": "sources/bnf-census/2026-10-09/html/q04.html.gz"
+ },
+ {
+  "phrase": "dépêche en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 16062,
+  "seconds": 1.23,
+  "file": "sources/bnf-census/2026-10-09/html/q05.html.gz"
+ },
+ {
+  "phrase": "copie en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 9833,
+  "seconds": 0.77,
+  "file": "sources/bnf-census/2026-10-09/html/q06.html.gz"
+ },
+ {
+  "phrase": "billet en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 9835,
+  "seconds": 0.64,
+  "file": "sources/bnf-census/2026-10-09/html/q07.html.gz"
+ },
+ {
+  "phrase": "mémoire en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 18278,
+  "seconds": 3.14,
+  "file": "sources/bnf-census/2026-10-09/html/q08.html.gz"
+ },
+ {
+  "phrase": "en chiffres",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 2277857,
+  "seconds": 5.09,
+  "file": "sources/bnf-census/2026-10-09/html/q09.html.gz"
+ },
+ {
+  "phrase": "Chiffre.",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 3208046,
+  "seconds": 6.88,
+  "file": "sources/bnf-census/2026-10-09/html/q10.html.gz"
+ },
+ {
+  "phrase": "dépêches chiffrées",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 39828,
+  "seconds": 1.06,
+  "file": "sources/bnf-census/2026-10-09/html/q11.html.gz"
+ },
+ {
+  "phrase": "lettres chiffrées",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 162468,
+  "seconds": 1.94,
+  "file": "sources/bnf-census/2026-10-09/html/q12.html.gz"
+ },
+ {
+  "phrase": "pièces chiffrées",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 19300,
+  "seconds": 1.16,
+  "file": "sources/bnf-census/2026-10-09/html/q13.html.gz"
+ },
+ {
+  "phrase": "en partie chiffrées",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 43086,
+  "seconds": 2.12,
+  "file": "sources/bnf-census/2026-10-09/html/q14.html.gz"
+ },
+ {
+  "phrase": "la plupart en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 21166,
+  "seconds": 2.31,
+  "file": "sources/bnf-census/2026-10-09/html/q15.html.gz"
+ },
+ {
+  "phrase": "entièrement en chiffre",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 18726,
+  "seconds": 1.93,
+  "file": "sources/bnf-census/2026-10-09/html/q16.html.gz"
+ },
+ {
+  "phrase": "non déchiffré",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 26979,
+  "seconds": 1.26,
+  "file": "sources/bnf-census/2026-10-09/html/q17.html.gz"
+ },
+ {
+  "phrase": "sans déchiffrement",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 21321,
+  "seconds": 1.33,
+  "file": "sources/bnf-census/2026-10-09/html/q18.html.gz"
+ },
+ {
+  "phrase": "caractères inconnus",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 14858,
+  "seconds": 1.06,
+  "file": "sources/bnf-census/2026-10-09/html/q19.html.gz"
+ },
+ {
+  "phrase": "écriture secrète",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 23657,
+  "seconds": 1.21,
+  "file": "sources/bnf-census/2026-10-09/html/q20.html.gz"
+ },
+ {
+  "phrase": "en cifra",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 14325,
+  "seconds": 0.9,
+  "file": "sources/bnf-census/2026-10-09/html/q21.html.gz"
+ },
+ {
+  "phrase": "cifrata",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 9815,
+  "seconds": 1.37,
+  "file": "sources/bnf-census/2026-10-09/html/q22.html.gz"
+ },
+ {
+  "phrase": "cifrado",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 9815,
+  "seconds": 2.49,
+  "file": "sources/bnf-census/2026-10-09/html/q23.html.gz"
+ },
+ {
+  "phrase": "en zifra",
+  "url": "https://archivesetmanuscrits.bnf.fr/resultatRechercheSimple.html",
+  "status": 200,
+  "bytes": 9817,
+  "seconds": 0.74,
+  "file": "sources/bnf-census/2026-10-09/html/q24.html.gz"
+ }
+]

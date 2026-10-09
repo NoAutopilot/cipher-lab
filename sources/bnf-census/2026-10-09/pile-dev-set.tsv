@@ -1,0 +1,72 @@
+cote	ark	items	cipher	deciphered	keysheets	named	bare	open_bare	open_named	median_gap	est_signs	est_signs_open	neighbour_trap	digitised	cls	prior_work
+fr.3413	cc49884s	56	5	1	0	1	3	3	1	16	31200	31200		yes	few-bare	
+fr.4715	cc577658	51	44	40	0	3	1	1	3	0	0	0		yes	few-bare	
+fr.2988	cc49442s	50	29	0	0	3	26	0	2	4	67600	0	yes	yes	named-open	Contient notamment des lettres chiffrées de Marie Stuart à l'ambassadeur de France en Angleterre, Michel de Castelnau , entre 1578 et 1584. | Georges Lasry, Norbert Biermann et Satoshi Tomokiyo, "Deci
+Dupuy 452	cc885911	0	0	0	0	0	0	0	0	0	0	0		yes	image-triage	
+Dupuy 468	cc88606j	0	0	0	0	0	0	0	0	0	0	0		yes	image-triage	Lettres adressées à François I er par les personnages suivants : Ernest, [prince d'Anhalt-Zerbst-Dessau], et de Joachim, son frère, s. l., veille de la saint Paul, s. d. [1515 ou 1516], orig., en lati
+Mélanges de Colbert 120-120bis	cc95423k	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+Mélanges de Colbert 121-121bis	cc95424t	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+Mélanges de Colbert 122	cc954252	0	0	0	0	0	0	0	0	0	0	0		yes	image-triage	
+Mélanges de Colbert 123-123bis	cc954269	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+Mélanges de Colbert 124	cc95427j	0	0	0	0	0	0	0	0	0	0	0		yes	image-triage	
+Mélanges de Colbert 125	cc95428s	0	0	0	0	0	0	0	0	0	0	0		yes	image-triage	
+Mélanges de Colbert 126	cc954291	0	0	0	0	0	0	0	0	0	0	0		yes	image-triage	
+Mélanges de Colbert 127-127bis	cc954302	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+Mélanges de Colbert 128-128bis	cc954319	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+Mélanges de Colbert 129-129bis	cc95432j	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+Mélanges de Colbert 130-130bis	cc954341	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+Mélanges de Colbert 131-131bis	cc954358	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+Mélanges de Colbert 132-132bis	cc95436h	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+Mélanges de Colbert 133	cc95437r	0	0	0	0	0	0	0	0	0	0	0		yes	image-triage	
+Mélanges de Colbert 26	cc955062	0	0	0	0	0	0	0	0	0	0	0		yes	image-triage	
+fr.15540-15584	cc459423	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+fr.20140	cc51725m	0	0	0	0	0	0	0	0	0	0	0		yes	image-triage	
+fr.20500-20576	cc518506	0	0	0	0	0	0	0	0	0	0	0		unknown	image-triage	
+fr.2751	cc49202m	51	1	1	0	0	0	0	0	0	0	0		yes	excluded	
+fr.2980	cc494342	55	2	0	0	2	0	0	2	0	0	0		yes	named-open	
+fr.3040	cc49499h	32	5	0	0	5	0	0	3	0	0	0		yes	named-open	
+fr.3251	cc49712p	73	14	1	0	13	0	0	12	0	0	0		yes	named-open	
+fr.3252	cc49713x	90	4	1	0	3	0	0	3	0	0	0		yes	named-open	
+fr.3315	cc49776w	41	4	2	1	1	0	0	1	0	0	0		yes	named-open	
+fr.3416	cc49887h	53	4	1	0	3	0	0	3	0	0	0		yes	named-open	
+fr.3610	cc50060w	29	0	0	0	0	0	0	0	0	0	0		unknown	no-cipher-items	
+fr.3611	cc500614	31	0	0	0	0	0	0	0	0	0	0		unknown	no-cipher-items	
+fr.3612	cc50062c	98	35	32	0	3	0	0	3	0	0	0		unknown	named-open	
+fr.3613	cc50063m	94	2	0	0	2	0	0	2	0	0	0		yes	named-open	
+fr.3614	cc50064v	87	3	1	0	2	0	0	2	0	0	0		unknown	named-open	
+fr.3615	cc500653	84	8	8	0	0	0	0	0	0	0	0		unknown	excluded	
+fr.3616	cc50066b	107	5	4	0	1	0	0	1	0	0	0		unknown	named-open	
+fr.3617	cc50067k	92	0	0	0	0	0	0	0	0	0	0		unknown	no-cipher-items	
+fr.3618	cc50068t	125	3	1	2	0	0	0	0	0	0	0		unknown	excluded	
+fr.3619	cc500692	111	7	6	1	0	0	0	0	0	0	0		unknown	excluded	
+fr.3620	cc500703	74	1	0	0	1	0	0	1	0	0	0		unknown	named-open	
+fr.3621	cc50071b	108	7	5	0	2	0	0	2	0	0	0		yes	named-open	
+fr.3622	cc50072k	87	1	0	0	1	0	0	1	0	0	0		yes	named-open	
+fr.3623	cc50073t	83	9	4	0	5	0	0	5	0	0	0		yes	named-open	
+fr.3624	cc500742	126	3	0	0	3	0	0	3	0	0	0		unknown	named-open	
+fr.3625	cc500759	94	7	6	0	1	0	0	1	0	0	0		yes	named-open	
+fr.3626	cc50076j	62	2	2	0	0	0	0	0	0	0	0		unknown	excluded	
+fr.3627	cc50077s	71	0	0	0	0	0	0	0	0	0	0		unknown	no-cipher-items	
+fr.3628	cc500781	76	3	3	0	0	0	0	0	0	0	0		unknown	excluded	
+fr.3629	cc500798	74	0	0	0	0	0	0	0	0	0	0		unknown	no-cipher-items	
+fr.3630	cc500809	93	6	6	0	0	0	0	0	0	0	0		unknown	excluded	
+fr.3631	cc50081j	98	5	4	0	1	0	0	1	0	0	0		unknown	named-open	
+fr.3632	cc50082s	87	7	6	0	1	0	0	1	0	0	0		unknown	named-open	
+fr.3633	cc500831	104	20	15	0	5	0	0	5	0	0	0		unknown	named-open	
+fr.3634	cc500848	122	9	4	0	5	0	0	5	0	0	0		unknown	named-open	
+fr.3635	cc50085h	46	0	0	0	0	0	0	0	0	0	0		unknown	no-cipher-items	
+fr.3636	cc50086r	68	0	0	0	0	0	0	0	0	0	0		unknown	no-cipher-items	
+fr.3637	cc500870	15	0	0	0	0	0	0	0	0	0	0		unknown	no-cipher-items	
+fr.3638	cc500887	35	0	0	0	0	0	0	0	0	0	0		yes	no-cipher-items	
+fr.3639	cc50089g	4	0	0	0	0	0	0	0	0	0	0		unknown	no-cipher-items	
+fr.3640	cc50091r	36	0	0	0	0	0	0	0	0	0	0		yes	no-cipher-items	
+fr.3641	cc500920	69	52	43	0	9	0	0	0	0	0	0		yes	excluded	
+fr.3669	cc501207	41	30	29	0	1	0	0	1	0	0	0		yes	named-open	
+fr.3675	cc50126p	63	6	6	0	0	0	0	0	0	0	0		yes	excluded	
+fr.3805	cc50243j	44	0	0	0	0	0	0	0	0	0	0		yes	no-cipher-items	
+fr.3974-3995	cc504266	2299	149	104	0	45	0	0	45	0	0	0		unknown	named-open	
+fr.4687	cc577374	37	2	0	0	2	0	0	2	0	0	0		yes	named-open	
+fr.4688	cc57738c	31	2	0	0	2	0	0	2	0	0	0		unknown	named-open	
+fr.4698	cc57748k	54	17	10	0	7	0	0	7	0	0	0		yes	named-open	
+fr.4702	cc57752b	49	2	2	0	0	0	0	0	0	0	0		yes	excluded	
+fr.4712	cc57762j	68	2	1	0	1	0	0	1	0	0	0		yes	named-open	

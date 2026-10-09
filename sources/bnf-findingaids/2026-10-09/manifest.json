@@ -1,0 +1,32 @@
+[
+ {
+  "url": "https://archivesetmanuscrits.bnf.fr/ark:/12148/cc49442s",
+  "status": 200,
+  "file": "cc49442s.html",
+  "note": "fr.2988 notice (unit 2)"
+ },
+ {
+  "url": "resultatRechercheSimple.html POST \"Français 20506\" then ark:/12148/cc518506",
+  "status": 200,
+  "file": "cc518506.html",
+  "note": "fr.20506 notice: volume-level, 0 items; 2 requests"
+ },
+ {
+  "url": "resultatRechercheSimple.html POST \"Français 15568\" (curl 56 transport error, one retry after 15 s) then ark:/12148/cc459423",
+  "status": 200,
+  "file": "(cc459423.html already on disk in 2026-10-07; not re-saved)",
+  "note": "fr.15540-15584 notice: no Marie Stuart / Castelnau text; 3 requests incl. the failed one"
+ },
+ {
+  "url": "affichageDetailsComposants.html?eadCid=FRBNFEAD000049442&typeIndex=TEXTE_LIBRE_LOCAL&val=chiffre",
+  "status": 200,
+  "file": "localsearch-fr2988-chiffre.html",
+  "note": "--local-search CONFIRMED: 29 elements in one response"
+ },
+ {
+  "url": "exportBranchePdf.html?arkId=cc49442s",
+  "status": 500,
+  "file": "(error page, not kept)",
+  "note": "--branch-pdf UNTESTED ROUTE: HTTP 500"
+ }
+]

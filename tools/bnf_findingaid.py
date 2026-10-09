@@ -17,12 +17,33 @@ Scope (Usage 8a):
   does NOT a volume catalogued only at volume level (no "Fol." lines): it prints 0 items and says so, never
   catch    "no cipher" -- an absent item list is not a negative.
 
+--pile (MQS-BNFPILE, 9 Oct 2026; offline, scores saved notices, one row per volume):
+  catches  an unread pile: cipher items catalogued with no name, date or place ("Pièce en chiffre."), the way the
+           57 Mary Stuart letters sat in fr.2988 (Lasry, Biermann, Tomokiyo 2023, Cryptologia 47/2 pp.101-109);
+           counts key sheets apart, drops deciphered items, takes volume-level prior work from the notice's own
+           Présentation / Bibliographie, flags the clear-neighbour trap (M41), digitised yes/no/unknown (M42), and
+           asks tools/prior_work.py check 3 (cached Tomokiyo, DECODE listing, solver caches) per cipher item.
+  does NOT rank a volume whose cipher items are all named/dated/deciphered (fr.4715: 40 of 44 deciphered), count
+           a key sheet ("Table de chiffrement", "Clef d'un chiffre") as a bare item, or call a volume-level notice
+           with no item list a negative: it is class image-triage.
+  est_signs = n_bare x median folio gap x 650: calibrated on ONE point, fr.2988 itself (26 x 4 x 650 = 67,600 vs the
+           paper's ~68,000), the development volume; it is an estimate, not a measurement.
+  Per-item exclusion goes through prior_work.py (check_portals), not a second path; --prior FILE (TSV: shelfmark,
+  folio, status, source) is only an override for statuses no cache holds.  Known gap in prior_work check 3 seen on
+  9 Oct 2026: its classifier reads the Tomokiyo line "f.2 and f.9 ... not deciphered yet" as KNOWN and f.1 "broken by
+  Torbjorn Andersson" as CONTEXT; --pile applies a stated wording guard on top (negation words void a KNOWN,
+  "broken/deciphered/solved by" makes a CONTEXT KNOWN), see item_status().
+  --census PHRASE ... --out DIR: one quoted POST per phrase, total + facets + first-page ids (never pages further).
+  --local-search IR TERM and --branch-pdf ARK: routes read from /js/pagePresentationIr.js (status in --help).
+
 Usage:
+  python3 tools/bnf_findingaid.py --pile NOTICE.html [...] [--prior FILE] [--tsv OUT]
+  python3 tools/bnf_findingaid.py --census "pièce en chiffre" "dépêches chiffrées" --out DIR
   python3 tools/bnf_findingaid.py --cote "Français 3251" --save-html DIR      # search + fetch + TSV to stdout
   python3 tools/bnf_findingaid.py --ark cc49712p --save-html DIR             # skip the search
   python3 tools/bnf_findingaid.py --html saved.html                          # offline parse only
 """
-import argparse, html as H, os, re, subprocess, sys, time
+import argparse, html as H, os, re, subprocess, sys, time, urllib.parse
 
 BASE = 'https://archivesetmanuscrits.bnf.fr/'
 UA = 'cipher-lab research script (contact via repository)'
@@ -94,15 +115,312 @@ def parse(s):
             out.append(r)
     return title, out
 
+# ---------------------------------------------------------------------------------------------------------------
+# --pile: score a saved notice for an unread cipher pile (MQS-BNFPILE, 9 Oct 2026).  Scope in the module docstring.
+# ---------------------------------------------------------------------------------------------------------------
+CIPHER = re.compile(r'(?i)\b(chiffr|cifra|cifre|ziffer)')
+DECIPH = re.compile(r'(?i)d[ée]s?chiffr')
+KEYSHEET = re.compile(r'(?i)\b(table|cl[ée]f|clef|alphabet)\b|chiffre pr[ée]c[ée]dent')
+NAME = re.compile(r'[A-ZÉÈ]{4,}|«')
+MONTHS = (r'janvier|f[ée]vrier|mars|avril|mai|juin|juillet|ao[uû]t|septembre|octobre|novembre|d[ée]cembre|'
+          r'gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|dicembre|'
+          r'enero|febrero|abril|mayo|junio|julio|septiembre|octubre|noviembre|diciembre|decembre|jung')
+DATE = re.compile(r'1[4-8]\d\d|M\.\s?D|V\.\s?C|\b(?:%s)\b' % MONTHS, re.I)
+FORMULA = {'pièce', 'pièces', 'lettre', 'lettres', 'chiffre', 'chiffres', 'copie', 'minute', 'mémoire', 'dépêche',
+           'billet', 'instruction', 'avis', 'double', 'fragment', 'en', 'et', 'de', 'la', 'le', 'des', 'du'}
+LANG = re.compile(r'(?i)\ben (italien|espagnol|latin|anglais|allemand|flamand|portugais|n[ée]erlandais)\b')
+STOP_HEAD = {'Bibliographie', 'Présentation du contenu', "Présentation de l'IR", 'Versions numérisées :'}
+PRIOR_VOL = re.compile(r'(?i)lasry|tomokiyo|bourdeau|desenclos|DECODE|d[ée]s?chiffr|lettres chiffr[ée]es de')
+NEGATION = re.compile(r'(?i)not (yet )?deciphered|undeciphered|unsolved|unread|not been deciphered|pas (encore )?d[ée]chiffr')
+POSITIVE = re.compile(r'(?i)\b(was broken by|broken by|deciphered by|decipherment by|solved by|was deciphered)\b')
+GAP_CONST = 650
+PILE_MIN = 5       # open bare items for class 'pile' (pre-registered; fr.2988 has 26, no other saved notice more than 3)
+
+
+def _folio_num(f):
+    m = re.match(r'\s*(\d+)', f or '')
+    return int(m.group(1)) if m else None
+
+
+def classify_item(r):
+    """-> 'clear' (not a cipher item), 'deciphered', 'keysheet', 'bare' or 'named'."""
+    t = r['text']
+    if not CIPHER.search(t):
+        return 'clear'
+    if DECIPH.search(t):
+        return 'deciphered'
+    if KEYSHEET.search(t):
+        return 'keysheet'
+    if NAME.search(t) or DATE.search(t) or re.search(r'(?i)en clair', t):      # 'en clair' = a mixed piece, not a bare cipher
+        return 'named'
+    toks = [w.strip('.,;:()') for w in t.split()]
+    if any(w[:1].isupper() and w.lower() not in FORMULA for w in toks[1:]):     # a place-name proxy
+        return 'named'
+    return 'bare'
+
+
+def volume_blocks(s):
+    """Text lines under 'Présentation du contenu' and 'Bibliographie' (the notice's own volume-level statements)."""
+    L, out = to_text(s), []
+    for i, l in enumerate(L):
+        if l in ('Présentation du contenu', 'Bibliographie'):
+            for x in L[i + 1:i + 4]:
+                if x in STOP_HEAD or len(x) < 6:
+                    break
+                out.append(x)
+    return out
+
+
+def digitised(s):
+    t = ' '.join(to_text(s))
+    if re.search(r'(?i)non num[ée]ris|n.est pas num[ée]ris|pas de version num[ée]ris', t):
+        return 'no'
+    if re.search(r'(?i)version num[ée]ris[ée]e de ce document|gallica\.bnf\.fr/ark', t) or 'Voir le document numérisé' in t:
+        return 'yes'
+    return 'unknown'
+
+
+_PW = {}
+
+
+def _pw_ctx(root):
+    """A prior_work.py context for check 3 (its functions are called read-only; offline, working tree)."""
+    if root not in _PW:
+        import types
+        sys.path.insert(0, os.path.join(root, 'tools'))
+        import prior_work as pw
+        a = types.SimpleNamespace(slug='bnf-pile', root=root, ref='WORKTREE', now=None, max_requests=0, reading=None,
+                                  known_answer=None, strict=False, cache=None, clone=[], dry_run=True, json=False,
+                                  me='', or_dir=[])
+        ctx = pw.Ctx(a, pw.State(root, 'WORKTREE'))
+        ctx.net = None
+        _PW[root] = (pw, ctx)
+    return _PW[root]
+
+
+def item_status(rows):
+    """prior_work check-3 rows -> ('known'|'open', evidence).  A KNOWN stays known unless its evidence says
+    undeciphered; a CONTEXT row whose evidence says 'broken/deciphered by' counts as known (the wording guard)."""
+    for r in rows:
+        ev = r.get('evidence', '')
+        if r['verdict'] in ('KNOWN', 'KNOWN-PART') and not NEGATION.search(ev):
+            return 'known', ev
+        if r['verdict'] == 'CONTEXT' and POSITIVE.search(ev) and not NEGATION.search(ev):
+            return 'known', ev
+    return 'open', ''
+
+
+def portal_status(cote, folio, root):
+    pw, ctx = _pw_ctx(root)
+    it = pw.item_from_spec('shelfmark=BnF %s;folio=%s' % (cote, folio))
+    return item_status(pw.check_portals(ctx, it, pw.item_unit(it)))
+
+
+def title_cote(title):
+    m = re.match(r'^(Français|Clairambault|Dupuy|Espagnol|[A-ZÉ][\w\-éè\. ]*?) ([0-9][\w\-]*)', title)
+    if not m:
+        return ''
+    name = {'Français': 'fr.', 'Clairambault': 'Clair. ', 'Dupuy': 'Dupuy ', 'Espagnol': 'esp. '}.get(m.group(1), m.group(1) + ' ')
+    return name + m.group(2)
+
+
+def score_volume(s, ark='', root=None, prior=None, portals=True):
+    title, rows = parse(s)
+    cote = title_cote(title)
+    for r in rows:
+        r['kind'] = classify_item(r)
+        r['f'] = _folio_num(r['folio']) or (1 if r['no'] == '1' else None)
+    kinds = [r['kind'] for r in rows]
+    n = {k: kinds.count(k) for k in ('clear', 'deciphered', 'keysheet', 'bare', 'named')}
+    bare = [r for r in rows if r['kind'] == 'bare']
+    bf_ = [r['f'] for r in bare if r['f'] is not None]
+    gaps = sorted(b - a for a, b in zip(bf_, bf_[1:]) if b > a)
+    gap = gaps[len(gaps) // 2] if gaps else 0
+    pv = [b for b in volume_blocks(s) if PRIOR_VOL.search(b)]
+    trap = False                       # clear-neighbour trap (M41)
+    if len(bare) >= 2:
+        idx = [i for i, r in enumerate(rows) if r['kind'] == 'bare']
+        span = rows[idx[0]:idx[-1] + 1]
+        clear = [r for r in span if r['kind'] == 'clear']
+        years = [int(y) for r in clear for y in re.findall(r'\b(1[4-8]\d\d)\b', r['text'])]
+        trap = bool(clear) and (any(LANG.search(r['text']) for r in clear) or
+                                (len(years) >= 2 and max(years) - min(years) >= 10))
+    ov = prior or {}
+    open_items = []
+    for r in rows:
+        if r['kind'] not in ('bare', 'named'):
+            continue
+        st, key = 'open', (cote, r['f'])
+        if key in ov:
+            st = ov[key][0]
+        elif r['kind'] == 'bare' and pv:
+            st = 'known'                                  # the notice's own Présentation / Bibliographie
+        elif portals and root and cote and r['f'] is not None:
+            st = portal_status(cote, r['f'], root)[0]
+        if st != 'known':
+            open_items.append(r)
+    open_bare = sum(1 for r in open_items if r['kind'] == 'bare')
+    ncipher = n['bare'] + n['named'] + n['keysheet'] + n['deciphered']
+    if not rows:
+        cls = 'image-triage'
+    elif not ncipher:
+        cls = 'no-cipher-items'
+    elif open_bare >= PILE_MIN:
+        cls = 'pile'
+    elif open_bare:
+        cls = 'few-bare'
+    elif open_items:
+        cls = 'named-open'
+    else:
+        cls = 'excluded'
+    return dict(cote=cote, title=title[:70], ark=ark, items=len(rows), cipher=ncipher, deciphered=n['deciphered'],
+                keysheets=n['keysheet'], named=n['named'], bare=n['bare'], open_bare=open_bare,
+                open_named=sum(1 for r in open_items if r['kind'] == 'named'), median_gap=gap,
+                est_signs=len(bare) * gap * GAP_CONST, est_signs_open=open_bare * gap * GAP_CONST,
+                neighbour_trap='yes' if trap else '', digitised=digitised(s), prior_work=' | '.join(pv)[:200], cls=cls)
+
+
+PILE_COLS = ['cote', 'ark', 'items', 'cipher', 'deciphered', 'keysheets', 'named', 'bare', 'open_bare', 'open_named',
+             'median_gap', 'est_signs', 'est_signs_open', 'neighbour_trap', 'digitised', 'cls', 'prior_work']
+
+
+def read_prior(path):
+    out = {}
+    if path:
+        for l in open(path, encoding='utf-8'):
+            c = l.rstrip('\n').split('\t')
+            if len(c) >= 3 and not c[0].startswith('#') and c[0] != 'shelfmark':
+                out[(c[0], _folio_num(c[1]))] = (c[2], c[3] if len(c) > 3 else '')
+    return out
+
+
+def pile(paths, prior=None, tsv=None, root=None, portals=True):
+    root = root or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    ov, res = read_prior(prior), []
+    for p in paths:
+        ark = re.match(r'(cc[0-9a-z]+)', os.path.basename(p))
+        res.append(score_volume(open(p, errors='ignore').read(), ark.group(1) if ark else '', root, ov, portals))
+    res = list({r['ark'] or r['cote']: r for r in res}.values())       # one row per notice
+    res.sort(key=lambda r: (-r['open_bare'], -r['bare'], r['cote']))
+    lines = ['\t'.join(PILE_COLS)] + ['\t'.join(str(r[c]) for c in PILE_COLS) for r in res]
+    if tsv:
+        open(tsv, 'w').write('\n'.join(lines) + '\n')
+    return res, lines
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# --census / --local-search / --branch-pdf (MQS-BNFPILE, 9 Oct 2026)
+# ---------------------------------------------------------------------------------------------------------------
+def curl_meta(args):
+    """-> (http status, body, seconds, bytes); sys.exit only on a curl transport error."""
+    t0 = time.time()
+    r = subprocess.run(['curl', '-sS', '-A', UA, '--max-time', '60', '-w', '\n%{http_code}'] + args, capture_output=True)
+    if r.returncode:
+        sys.exit('curl failed: %s' % r.stderr.decode(errors='ignore')[:200])
+    body, _, code = r.stdout.decode('utf-8', errors='ignore').rpartition('\n')
+    return int(code or 0), body, round(time.time() - t0, 2), len(r.stdout)
+
+
+def parse_results(s):
+    """Total, facets (Départements / Dates / Noms as 'label (n)'), first-page finding-aid arks, Gallica links."""
+    L = to_text(s)
+    total = next((int(m.group(1).replace(' ', '')) for l in L for m in [re.match(r'^([\d\s]+) r[ée]sultats?$', l)] if m), None)
+    if total is None and any(l.startswith('Aucun résultat') for l in L):
+        total = 0
+    facets, cur = {}, None
+    for l in L:
+        if l in ('Départements', 'Dates', 'Noms'):
+            cur = l
+            facets[cur] = []
+        elif cur and re.search(r'\(\d+\)$', l):
+            facets[cur].append(l)
+        elif cur and not re.search(r'\(\d+\)$', l):
+            cur = None
+    arks = []
+    for m in re.finditer(r'ark:/12148/(cc[0-9a-z]+)', s):
+        if m.group(1) not in arks:
+            arks.append(m.group(1))
+    return dict(total=total, facets=facets, arks=arks, gallica=s.count('class="pictoGallica"'),
+                challenge=bool(re.search(r'(?i)captcha|challenge|access denied|cloudflare', s[:3000])))
+
+
+def census(phrases, outdir, gap=2.0):
+    """One quoted POST per phrase; saves each response, appends census.tsv and manifest.json under OUTDIR.
+    Stops at the first non-200 or challenge page (good-citizen rule); never pages beyond the first result page."""
+    import json
+    os.makedirs(os.path.join(outdir, 'html'), exist_ok=True)
+    manifest, rows = [], []
+    for i, ph in enumerate(phrases, 1):
+        q = '"%s"' % ph.strip('"')
+        code, body, secs, size = curl_meta(['-X', 'POST', '--data-urlencode', 'TEXTE_LIBRE_INPUT=' + q,
+                                            '-d', 'DOC_NUMERISE_INPUT_RADIO=all_docs&NUMERO_DEPARTEMENT_INPUT=',
+                                            BASE + 'resultatRechercheSimple.html'])
+        fn = os.path.join(outdir, 'html', 'q%02d.html' % i)
+        open(fn, 'w').write(body)
+        manifest.append(dict(phrase=ph, url=BASE + 'resultatRechercheSimple.html', status=code, bytes=size, seconds=secs, file=fn))
+        r = parse_results(body)
+        rows.append([ph, str(r['total']), '; '.join('%s: %s' % (k, ', '.join(v)) for k, v in r['facets'].items()),
+                     ' '.join(r['arks'][:20]), str(r['gallica'])])
+        if code != 200 or r['challenge']:
+            sys.stderr.write('STOP: HTTP %s / challenge=%s on %r\n' % (code, r['challenge'], ph))
+            break
+        time.sleep(gap)
+    open(os.path.join(outdir, 'census.tsv'), 'w').write(
+        'phrase\ttotal\tfacets\tfirst_page_arks\tgallica_links\n' + '\n'.join('\t'.join(x) for x in rows) + '\n')
+    open(os.path.join(outdir, 'manifest.json'), 'w').write(json.dumps(manifest, ensure_ascii=False, indent=1))
+    return rows
+
+
+def local_search(ir, term):
+    """Search inside ONE finding aid (route read from /js/pagePresentationIr.js).  IR is the finding-aid id seen in
+    the notice's refreshCompInfo('FRBNFEAD000049442_d0e92') calls, i.e. FRBNFEAD000049442.  Confirmed on fr.2988
+    (9 Oct 2026): 'chiffre' answers 'Nombre d'éléments trouvés : 29' in one response, no pagination."""
+    code, body, _, _ = curl_meta([BASE + 'affichageDetailsComposants.html?eadCid=%s&typeIndex=TEXTE_LIBRE_LOCAL&val=%s'
+                                  % (ir, urllib.parse.quote(term))])
+    return code, to_text(body)
+
+
+def branch_pdf(ark):
+    """UNTESTED ROUTE: exportBranchePdf.html?arkId=ARK answered HTTP 500 on 9 Oct 2026 (cc49442s, one request); it
+    probably needs a session or the browser's own parameters.  Kept so a later session can retry with them."""
+    code, body, _, _ = curl_meta([BASE + 'exportBranchePdf.html?arkId=' + ark])
+    return code, body[:300]
+
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument('--pile', nargs='+', metavar='NOTICE.html', help='score saved notices for an unread cipher pile (offline)')
+    g.add_argument('--census', nargs='+', metavar='PHRASE', help='count quoted catalogue phrases (needs --out DIR)')
+    g.add_argument('--local-search', nargs=2, metavar=('IR', 'TERM'), help='search inside one finding aid')
+    g.add_argument('--branch-pdf', metavar='ARK', help='UNTESTED ROUTE (HTTP 500 on 9 Oct 2026)')
     g.add_argument('--cote')
     g.add_argument('--ark')
     g.add_argument('--html')
+    ap.add_argument('--prior', help='--pile: override TSV (shelfmark, folio, status, source) for statuses no cache holds')
+    ap.add_argument('--out', help='--census: output directory (census.tsv, manifest.json, html/)')
+    ap.add_argument('--tsv', help='--pile: write the per-volume table here')
+    ap.add_argument('--no-portals', action='store_true', help='--pile: skip the prior_work.py per-item check (fast)')
     ap.add_argument('--save-html', help='directory to keep the fetched notice (fetch once, read from disk after)')
     a = ap.parse_args()
+    if a.census:
+        if not a.out:
+            ap.error('--census needs --out DIR')
+        for r in census(a.census, a.out):
+            print('\t'.join(r)[:300])
+        return 0
+    if a.local_search:
+        code, lines = local_search(*a.local_search)
+        print('# HTTP %s' % code)
+        print('\n'.join(lines))
+        return 0
+    if a.branch_pdf:
+        print(branch_pdf(a.branch_pdf))
+        return 0
+    if a.pile:
+        res, lines = pile(a.pile, a.prior, a.tsv, portals=not a.no_portals)
+        print('\n'.join(lines))
+        return 0
     ark = a.ark
     if a.html:
         s = open(a.html, errors='ignore').read()

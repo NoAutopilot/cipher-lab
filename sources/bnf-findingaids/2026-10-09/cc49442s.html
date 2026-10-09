@@ -1,0 +1,549 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000049442">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000049442">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 2754-3068</div>
+					<h1>Français 2988
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000049442_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442">Français 2988 • Regius 8513 • Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e92">1 Lettre en chiffre de « V° HIERONIMO RANZO ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e98">Fol. 4 • 2 « Double de lettres escriptes en chiffre par NICOLAS RAINCE,... De Romme, XVme decembre V.C.XXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e117">Fol. 9 • 3 Lettre en chiffre de « V° HIERONIMO RANZO ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e130">Fol. 13 • 4 « Proposition de la majesté imperiale faicte et exbibée à la journée de Regenspurg, l'an 1546, le 5 juing ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e143">Fol. 17 • 5 « Advertissemens du XXVIIe de janvier ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e154">Fol. 18 • 6 « Advertissemens du XXIXe de janvier... à monseigneur... le grand maistre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e165">Fol. 21 • 7 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e173">Fol. 23 • 8 Copie des « articles secretz » conclus entre le pape et les ambassadeurs du roi de France, au sujet du mariage de Mme d'Urbino, nièce de Clément VII, avec Henri d'Orléans (plus tard Henri II). « Fait à Albine, le venredi IXe de jung M.V.C.XXXI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e200">Fol. 26 • 9 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e208">Fol. 28 • 10 « Advis envoyé de Barcelone ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e221">Fol. 30 • 11 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e229">Fol. 34 • 12 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e237">Fol. 36 • 13 Copie d'une lettre de la princesse « MARIE,... Escript à Bruxelles, le second jour d'octobre 1537 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e250">Fol. 38 • 14 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e258">Fol. 40 • 15 Copie d'une lettre de « monseigneur [CHARLES] DE BOURBON » à « messire Baptiste,... De Millan, ce VIIIe octobre V.C.XXVI ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e277">Fol. 42 • 16 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e285">Fol. 44 • 17 « Avisi de diversilochi... capitulo de la lettera del... cardinale Trivultio,... Del XV de juglio ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e298">Fol. 46 • 18 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e306">Fol. 48 • 19 Avis de Bologne.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e319">Fol. 50 • 20 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e327">Fol. 52 • 21 Copie d'une lettre, en italien, d'« ANDREA DORIA,... alli magnifici et honorati maestri Augustino Lomelino et Giovanni Batista de Monelia in Genoa... Da Lerexo, a di XVII de julio M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e340">Fol. 54 • 22 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e348">Fol. 56 • 23 Copie d'une lettre, en italien, d'« ANDREA DORIA,... allo illustrissimo il signor Theodoro Trivultio, mareschial di Franza et regio governator in Genoa... Del golfo della Spezza al monastero, alli VI de augusto M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e356">Fol. 58 • 24 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e364">Fol. 60 • 25 Copie d'une lettre, en italien, d'« ANDREA DORIA,... allo illustrissimo signor, il signor Theodoro Trivultio, governator de Genoa... Di Leleco, alli XIX de giuglio M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e372">Fol. 62 • 26 Copie d'une lettre, en italien, d'« ANDREA DORIA,... alli magnifici signori maestri Battista Lomelino, commendatore di Jeronymi, Augustino Pallavicino, Lorenzo Lomelino, Jeronymo Doria, etc... nel monesterio de Santo Venero nel golfo della Spezza, alli XXI de giulio M.D.XXVIII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e380">Fol. 64 • 27 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e388">Fol. 66 • 28 Lettre, en italien, de « GASPAR SORMANO,... all' illustrissimo... signore... il gran maestro... Da Turino, alli XXX° d'ottobre 1536 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e401">Fol. 69 • 29 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e409">Fol. 71 • 30 « Advisi di Roma, con lettere delli VI di maggio ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e422">Fol. 74 • 31 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e430">Fol. 76 • 32 Lettre, en italien, de « Mr DE LAUDDES,... a monsignore... il gran maestro... Murani, II Xbris 1529 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e449">Fol. 78 • 33 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e457">Fol. 80 • 34 Lettre de M. D'«YZERNAY,... Escript à Marseille, ce XIIIIme jour de may ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e473">Fol. 82 • 35 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e481">Fol. 84 • 36 Lettre, en italien, de « GASPAR SORMANO,... al illustrissimo... signor... el gran maistro... Da Vercelli, alli 4 decembre 1530 ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e494">Fol. 87 • 37 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e502">Fol. 89 • 38 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e510">Fol. 91 • 39 Copie d'une lettre de « NICOLAS SURISCHITZ,... Le XXXe d'aoust, l'an XV.C.XXXII ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e529">Fol. 96 • 40 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e537">Fol. 98 • 41 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e545">Fol. 100 • 42 Lettre du Sr « DE GRANGES,... à monseigneur de Montmorency, grand maistre et mareschal de France... De Cuyre, ce XXIIe jour d'octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e564">Fol. 102 • 43 Lettre du Sr DES GRANGES au roi. « De Cuyre, ce XXIIe octobre ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e578">Fol. 105 • 44 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e586">Fol. 107 • 45 « Coppie de lettres pour les advis d'Espaigne ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e594">Fol. 109 • 46 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e602">Fol. 111 • 47 Avis du littoral de la Méditerranée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e615">Fol. 113 • 48 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e623">Fol. 105 • 49 Avis d'Angleterre, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e631">Fol. 118 • 50 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e639">Fol. 120 • 51 Avis d'Angleterre, en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e647">Fol. 123 • 52 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e655">Fol. 125 • 53 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e668">Fol. 127 • 54 « Depposition de Jehan Carigues, que monseigneur de Clermont avoyt envoyé il y a environ quatre mois devers monseigneur le segond president de Bourdeaulx, ambassadeur pour le roy en la court de l'Empereur, pour estre adverti de ce que y surviendroyt d'importance ».</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e689">Fol. 130 • 55 Pièce en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000049442_d0e697">Fol. 132 • 56 Avis d'Angleterre, en italien.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 2988 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49442s&Cote=Français 2988&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Versions numérisées :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b525240150">Consulter le document numérisé</a></li><li><a class="ext" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059908w">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 31288 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc49442s&Cote=MF 31288&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 2988 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Regius 8513</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et de pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original : Français 2988.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b525240150" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b525240150.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b525240150.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 31288. Cote de la matrice (pour commander une reproduction) : R 3807.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="https://gallica.bnf.fr/ark:/12148/btv1b9059908w" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="https://gallica.bnf.fr/ark:/12148/btv1b9059908w.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;https://gallica.bnf.fr/ark:/12148/btv1b9059908w.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Contient notamment des lettres chiffrées de <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb121808234" class="hrefLink ext">Marie Stuart</a> à l'ambassadeur de France en Angleterre, <a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb125134590" class="hrefLink ext">Michel de Castelnau</a>, entre 1578 et 1584.</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>Georges Lasry, Norbert Biermann et Satoshi Tomokiyo, "Deciphering Mary Stuart's lost letters from 1578-1584", <emph render="italic">Cryptologia</emph>, t. 47/2, p. 101-202.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Angleterre. • Notes et pièces diverses.</p>
+<p>Chiffres diplomatiques.</p>
+<p>Doria, André. • Lettres.</p>
+<p>Espagne. Histoire intérieure. • Lettres et nouvelles.</p>
+<p>François Ier, roi de France. • Actes et lettres.</p>
+<p>François Ier, roi de France. • Notes, pièces et recueils divers.</p>
+<p>Ranzo, Hieronimo. • Lettres.</p>
+<p>Tolentino. • Miracles de St Nicolas.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e92');">1 Lettre en chiffre de « V° HIERONIMO RANZO ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e98');">2 « Double de lettres escriptes en chiffre par NICOLAS RAINCE,... De Romme, XVme decembre V.C.XXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e117');">3 Lettre en chiffre de « V° HIERONIMO RANZO ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e130');">4 « Proposition de la majesté imperiale faicte et exbibée à la journée de Regenspurg, l'an 1546, le 5 juing ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e143');">5 « Advertissemens du XXVIIe de janvier ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e154');">6 « Advertissemens du XXIXe de janvier... à monseigneur... le grand maistre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e165');">7 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e173');">8 Copie des « articles secretz » conclus entre le pape et les ambassadeurs du roi de France, au sujet du mariage de Mme d'Urbino, nièce de Clément VII, avec Henri d'Orléans (plus tard Henri II). « Fait à Albine, le venredi IXe de jung M.V.C.XXXI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e200');">9 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e208');">10 « Advis envoyé de Barcelone ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e221');">11 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e229');">12 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e237');">13 Copie d'une lettre de la princesse « MARIE,... Escript à Bruxelles, le second jour d'octobre 1537 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e250');">14 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e258');">15 Copie d'une lettre de « monseigneur [CHARLES] DE BOURBON » à « messire Baptiste,... De Millan, ce VIIIe octobre V.C.XXVI ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e277');">16 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e285');">17 « Avisi de diversilochi... capitulo de la lettera del... cardinale Trivultio,... Del XV de juglio ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e298');">18 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e306');">19 Avis de Bologne.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e319');">20 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e327');">21 Copie d'une lettre, en italien, d'« ANDREA DORIA,... alli magnifici et honorati maestri Augustino Lomelino et Giovanni Batista de Monelia in Genoa... Da Lerexo, a di XVII de julio M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e340');">22 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e348');">23 Copie d'une lettre, en italien, d'« ANDREA DORIA,... allo illustrissimo il signor Theodoro Trivultio, mareschial di Franza et regio governator in Genoa... Del golfo della Spezza al monastero, alli VI de augusto M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e356');">24 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e364');">25 Copie d'une lettre, en italien, d'« ANDREA DORIA,... allo illustrissimo signor, il signor Theodoro Trivultio, governator de Genoa... Di Leleco, alli XIX de giuglio M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e372');">26 Copie d'une lettre, en italien, d'« ANDREA DORIA,... alli magnifici signori maestri Battista Lomelino, commendatore di Jeronymi, Augustino Pallavicino, Lorenzo Lomelino, Jeronymo Doria, etc... nel monesterio de Santo Venero nel golfo della Spezza, alli XXI de giulio M.D.XXVIII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e380');">27 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e388');">28 Lettre, en italien, de « GASPAR SORMANO,... all' illustrissimo... signore... il gran maestro... Da Turino, alli XXX° d'ottobre 1536 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e401');">29 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e409');">30 « Advisi di Roma, con lettere delli VI di maggio ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e422');">31 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e430');">32 Lettre, en italien, de « Mr DE LAUDDES,... a monsignore... il gran maestro... Murani, II Xbris 1529 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e449');">33 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e457');">34 Lettre de M. D'«YZERNAY,... Escript à Marseille, ce XIIIIme jour de may ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e473');">35 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e481');">36 Lettre, en italien, de « GASPAR SORMANO,... al illustrissimo... signor... el gran maistro... Da Vercelli, alli 4 decembre 1530 ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e494');">37 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e502');">38 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e510');">39 Copie d'une lettre de « NICOLAS SURISCHITZ,... Le XXXe d'aoust, l'an XV.C.XXXII ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e529');">40 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e537');">41 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e545');">42 Lettre du Sr « DE GRANGES,... à monseigneur de Montmorency, grand maistre et mareschal de France... De Cuyre, ce XXIIe jour d'octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e564');">43 Lettre du Sr DES GRANGES au roi. « De Cuyre, ce XXIIe octobre ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e578');">44 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e586');">45 « Coppie de lettres pour les advis d'Espaigne ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e594');">46 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e602');">47 Avis du littoral de la Méditerranée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e615');">48 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e623');">49 Avis d'Angleterre, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e631');">50 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e639');">51 Avis d'Angleterre, en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e647');">52 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e655');">53 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e668');">54 « Depposition de Jehan Carigues, que monseigneur de Clermont avoyt envoyé il y a environ quatre mois devers monseigneur le segond president de Bourdeaulx, ambassadeur pour le roy en la court de l'Empereur, pour estre adverti de ce que y surviendroyt d'importance ».</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e689');">55 Pièce en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000049442_d0e697');">56 Avis d'Angleterre, en italien.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>
