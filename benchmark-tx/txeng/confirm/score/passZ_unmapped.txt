@@ -1,0 +1,3 @@
+spinelli-c1519-confirm [confirm] err_true 0.518 (100/193) 95% 0.448-0.588 | wrong 90 deleted 6 inserted 4 | excluded 66 | lines missing 0
+  top confusions (truth value <- read): e<-SEVEN x12, e<-NINE x12, a<-HOOK x11, i<-PHI x9, t<-HOOK x9, i<-SEVEN x7, r<-SIX x4, m<-HOOK x3
+split confirm: err_true 0.518 (100/193) 95% 0.448-0.588
