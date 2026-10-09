@@ -9766,7 +9766,7 @@ Gap"). Graded **H as a spelling variant** (the Knocks = Knox precedent), not I. 
 
 ## AUDIT 2 (AUD2-LEDGER-21)
 
-Second verifier AUD2-LEDGER-21 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 12:30-12:4x UTC by
+Second verifier AUD2-LEDGER-21 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 12:30-12:38 UTC by
 `date -u`; a separate session and account from the readers FM-R5a and FM-R5b and the first auditor FV-FM8d (all account 1); this session had
 not read or audited these entries before. Scope: **E278, E289** (WORK-QUEUE AUD2-LEDGER-21). Nothing decoded beyond key look-ups in key.md.
 FV-FM8d's 32 CONTENTdm full-text queries, its image eye check of pages 5829 and 5814 and its OR I/42 pt 3 / ORN I/11 / Butler V greps were not
