@@ -4107,3 +4107,19 @@ Read so far: E343, E345, E346 audited (E343, E345 N1 by print; E346 N3 D3); all 
 - [x] image-check: all three entries eye-checked.
 - [x] retry: none needed (one IA 403 on a restricted OR III/4 id, not retried).
 Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18f) s.5, ~$1
+
+## KEY-CANBY (9 Oct 2026, account 1, for LANE LEDGER)
+One key question: does the No. 1 slot p.17 l.5-6 (Leghorn, Legend, Lehigh, Leopard = Maj Gen S. A. Hurlbut, key.md H) mean Hurlbut in the traffic?
+- Page re-read (disk 1600 px + one hdl region at native 2295 px): l.5 "Maj Gen S. A. Hurlbut", l.6 "-do - do - do", one ink hand, no strike, no second
+  hand, no addition. The book has no Canby row anywhere.
+- Every filed No. 1 use (E334 27 May 1864, E345 19 Aug 1864 x3, E55 26 Aug 1864, E323 18 May 1865) reads **Canby** in the print, and E55 is the office's
+  own interlineation "Gen Canby ^ leopard". Hurlbut-supporting uses: 0. Controls: the Thomas and Hooker rows read their key value at 9 of 9 print-checked
+  entries; interlined code words over a clear term match the key at 4 of 4 (Pandora, Nabob, walrus, Sexton). Rule-4 record: HYPOTHESES.md "## KEY-CANBY".
+- **Proposed key.md wording (not applied; key-lane decision):** keep the four rows H = "Maj Gen S. A. Hurlbut" (what the book says) and add to each:
+  "In the traffic from 11 May 1864 (Canby to the Military Division of West Mississippi) this slot is used for Maj Gen E. R. S. Canby: 4 entries, 6 tokens,
+  0 for Hurlbut (E323, E334, E345 by print, C; E55 by the office's interlineation). Read Canby, grade C where a print agrees and M otherwise, in No. 1
+  entries dated on or after 11 May 1864; before that date read Hurlbut (H), no occurrence on file." The E323/E334/E345 `gloss:` lines would then move
+  from M to C (print) under that condition; that change is a FIX job's, after the key lane accepts the wording.
+- Found and not found: no second No. 1 copy and no period instruction naming Canby's code word located in the repository's sources; hdl was used for
+  the key page only (2 requests). Suggested (not run): fetch mssEC 19 p.163 (pointer 9057) at native size to confirm the E55 interlineation's hand and
+  ink against the clerk's; search mssEC 19/18 for any pre-May 1864 No. 1 use of the slot (would test the date split from the other side).

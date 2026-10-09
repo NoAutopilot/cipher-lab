@@ -54,3 +54,43 @@ Settled (FV-FM2, 8 Oct 2026, AUDIT.md "## AUDIT (FV-FM2)" section 3): witness C,
 | 9 Oct 2026 | KEY-LAV (a): Lavender = Gen. C. C. Washburn(e) (key.md H, mssEC 43 p.[17]) at every use | every use: E330 (filed; OR I/39 pt 3 p.379 "Burbridge and Washburn"), 9870/1 and 9893/2 (unfiled, mssEC 18, addressee "for lavender" at Memphis; text from the Huntington's cached CONTENTdm transcription, image not checked); E169 is the period instruction itself (plain there), not scored | Washburne reads **3 of 3** | the same 3 contexts each given a random key.md person (pool 52, seed 20261009: Secretary of State, General-in-Chief, Maj Genl U.S. Grant): **0 of 3** | candidate above control, Fisher one-sided p = 0.050 (the floor at N=3); confirms the H row; reader not blind to the candidate (disclosed in the verdict file) | fortmonroe/key_lav.py --blind/--unmask; fortmonroe/key_lav_verdicts.tsv (committed 06894c5f9 before unmask) |
 | 9 Oct 2026 | KEY-LAV (b): in No. 1 entries Tulip = Open when inflected or after a verb taking "open" (PRED: remain, keep, be/is/are/was, left, hold, stand, lie ...), else Tulip = Period | every filed No. 1 occurrence in ciphertext.txt: 11 (E9 E106 E141 E170 E175 E230 E283 [written twice, "tuslip tulip"] E284 E287 E289 E319), plus unfiled 9893/1; side check on all 108 No. 2 tokens (key-no2.md Tulip = Period, H) | rule reads **11 of 11** No. 1: Open at E287 ("have just tuliped fire" = opened fire, inflected; KEY-TW's search missed it) and E319 ("navigation must remain open for vessels"); Period at the other 9 (KEY-BLIND read stop at 9 of them); 9893/1 Period; No. 2: Period at 108 of 108 (never fires falsely) | null: the rule's Open trigger fires on 20 of 2592 (0.008) random No. 1 key-word tokens | condition separates the two values at every occurrence; not a blind test (PRED was written after reading E319; E287 was found by the run, through the inflection clause taken from the book's "(-ed, -ing)"), so grade the split S, not C | fortmonroe/key_lav.py --tulip |
 - Second witness (9 Oct 2026, FIX-FM15, from AUDIT FV-MS18d s.3): E334 (Halleck to Rosecrans, Washington, 27 May 1864 2.30 PM, mssEC 18 pointer 9746): "send down the Mississippi ... to report to Legend the following ..." reads "Major-General Canby" in the print (OR I/34 pt 4 p.64, word for word); key.md Legend = Maj Gen S. A. Hurlbut (H). Context agrees with Canby (same-day Halleck to Canby, p.62; Special Orders No. 146, St Louis 28 May 1864). Supporting values by sender, recipient, direction and date: key Hurlbut (mssEC 41, No. 1, undated key page); print Canby at E323 (Grant to Clowry for Pope, 18 May 1865, to the St Louis office) and E334 (Halleck to Rosecrans via Smith, 27 May 1864, to the St Louis office). Legend has no print-checked Hurlbut reading in mssEC 18 so far. Status: still not settled by the more frequent value: "legend" is graded M in E334 too (`gloss:` line, "[Maj Gen S. A. Hurlbut (key; the print reads Canby)]"), key.md untouched; two of two print-checked mssEC 18 uses read Canby, one is a lead for a key-lane test, not a key edit.
+
+## KEY-CANBY: the p.17 l.5-6 Hurlbut slot (Leghorn / Legend / Lehigh / Leopard) read as Canby (rule 4) -- 9 Oct 2026, account 1, for LANE LEDGER
+Consolidates the E323 (FIX-FM13), E334 (FIX-FM15) and E345 (FV-MS18f) notes above into one record. Not settled by majority; key.md untouched.
+- **Key book (re-read 9 Oct 2026, mssEC 41 p.17 = pointer 334, disk copy 1600 px plus one hdl IIIF region at native 2295 px, lines 4-7):** l.5 "Leghorn
+  Maj Gen S. A. Hurlbut .... Legend"; l.6 "Lehigh -do - do - do ..... Leopard". One ink hand, the same as every other p.17 entry; no strike-through, no
+  pencil, no second hand, no later addition on either line. The faint brown marks between the lines are mirror-image show-through of the facing page,
+  as on every line of the page. The book has **no Canby row** on any page (key.md: "canby" only as the sound-spelling "can be", section 2).
+- **Every filed No. 1 occurrence of the four words** (ciphertext.txt; Cipher No. 2's Legend = B. F. Butler etc., key-no2.md p.18, is another book and
+  not counted):
+
+| entry | date | sender -> addressee (office) | word(s) | witness | reads |
+|---|---|---|---|---|---|
+| E334 | 27 May 1864 2.30 PM | Halleck -> Rosecrans via Capt. Smith (St Louis) | Legend | print OR I/34 pt 4 p.64, word for word | **Canby** |
+| E345 | 19 Aug 1864 3 PM | Halleck (print; ledger signature 'Jonah') -> Sherman (Sholes, near Atlanta) | Leopard, Leghorn, Legend | print OR I/39 pt 2 pp.269-270 | **Canby** x3 |
+| E55 | 26 Aug 1864 11 AM | Halleck -> Lt. Col. C. H. Howard (Louisville) | leopard (interlined) | the ledger itself: clear "Gen Canby" with "leopard" written above it (image per LS-R5 and the holder transcription p9057, `<insertion>leopard</insertion>`); print OR I/39 pt 2 p.304 "General Canby" | **Canby** (an office equation, not a decode) |
+| E323 | 18 May 1865 2.30 PM | Grant -> Clowry for Pope (St Louis) | legends | print OR I/48 pt 2 p.492 "Canby's division" | **Canby** |
+
+  Hurlbut-supporting witnesses in the traffic: **0**. Lehigh: no filed occurrence. Each of the four entries with a clear witness reads Canby (6 tokens).
+- **Date test.** Canby was assigned the Military Division of West Mississippi on 11 May 1864; Hurlbut lost the XVI Corps in April 1864 and held no
+  command again until the Department of the Gulf under Canby (Sept 1864). The book's Hurlbut entry fits an issue date before May 1864 (it lists Hooker,
+  Banks, Butterfield, Hurlbut as they stood in winter 1863-64). All four occurrences fall after 11 May 1864 (27 May 1864 - 18 May 1865); no filed No. 1
+  occurrence predates it, so the data cannot show a before/after split, only that every use after the split is Canby.
+- **Control 1, other p.17 name rows by the same test.** Thomas (Lady, Lamb, Lantern, Lafitte; l.1-2): 17 filed No. 1 entries (E18 E19 E20 E56 E89 E99
+  E123 E147 E202 E303 E322 E329 E330 E336 E338 E341 E344), 8 print-checked (E56 E303 E322 E329 E330 E336 E338 E344, body C; E322 Lantern = Thomas confirmed
+  on the image, AUDIT FV-MS18b); no AUDIT section logs a Thomas-row conflict; Thomas held his command at every date, so the date test predicts no
+  conflict, and none is found. Hooker (Lapland, Language, Lark, Lawn; l.3-4): 1 filed No. 1 entry, E298 (16 Oct 1864, Fort Monroe), print OR I/41 pt 4
+  reads Hooker where the ledger has Languages and lapland (AUDIT, E298: C) -- after Hooker's July 1864 relief, so a slot whose man moved to another command (the Northern Department) stayed
+  with the man. Banks (Lock, Locust; l.8), whom Canby superseded: no filed No. 1 occurrence. Result: the control rows read their key value at 9 of 9
+  print-checked entries; the Hurlbut slot reads the key value at 0 of 4. The contrast is the slot, not the print or the reader.
+- **Control 2, the interlineation shape (E55).** Every other code word interlined over a clear term in ciphertext.txt carries that term's key value:
+  E55 "Lt. Col" ^ Pandora = Colonel; E56 "For" ^ Nabob = Sheridan (print: to Sheridan); E36 "<del>signed</del>" ^ walrus = Signature; E30
+  "inter <del>fere</del>" ^ Sexton = Fear (phonetic). 4 of 4. E55's "Gen Canby" ^ leopard is the fifth: the office's code for Canby on 26 Aug 1864. (AUDIT
+  E55's note reads it the other way, "decodes to Hurlbut ... a later gloss"; the four parallels make it an encoder's equation for the clear name below.)
+- **Book-edition split:** not testable from the material. Only one filled-in copy of No. 1 is on file (mssEC 41); no second issue with a Canby row is known
+  to this repository. A date split (the War Department office reusing the slot of a commander out of command for his successor in the West) explains all
+  four witnesses; an edition split is not needed and not excluded.
+- **Status:** conflict recorded, not resolved by count. Values by witness: Hurlbut -- the key book only (undated page, original hand); Canby -- E334, E345
+  (x3), E323 (prints, all Washington outgoing to western posts: St Louis x2, Sherman's HQ) and E55 (the office's own interlineation, Washington to Louisville).
+  Proposed key.md wording in NOTES.md "## KEY-CANBY". Script: none (a lookup over ciphertext.txt and AUDIT.md; the counts are re-derivable with
+  `grep -n -i -w -E "leghorn|legends?|lehigh|leopard" ciphertext.txt`).
