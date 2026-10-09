@@ -69,3 +69,11 @@ Siri VIII, Mercure XXIII-XXIV, Caillet 1912) except to search them for f.228's o
 The WORK-QUEUE row's note is the brief (first audit FV-FM4, account 1; reader FM-R2b account 1, Fort Monroe ledger mssEC 25). Cap 2.5 per
 entry; Huntington hdl take/release lines (LANE LEDGER account 1 works the same host: at most one holder at a time). Google Books: one
 probe, no loop on 429. AUDIT.md heading "## AUDIT 2 (AUD2-LEDGER-8)".
+
+## AUD2-LEDGER-9, AUD2-LEDGER-10, AUD2-LEDGER-11 (account 3; added 00:5x UTC 9 Oct): eckert-1864 Fort Monroe ledger second audits
+Each WORK-QUEUE row's note is the brief (entries, first audit, reader, sources to start from); cap 2.5 per entry (rows 9/10: $10, box
+120; row 11: $2.5, box 60). First audits FV-FM5a/5b/5c (account 1). AUDIT.md headings "## AUDIT 2 (AUD2-LEDGER-9)" etc. Three workers
+write eckert-1864 AUDIT.md, status.json and SECOND-OPINIONS-QUEUE.tsv in parallel with LANE LEDGER (account 1): rebase before every
+write; on a WORK-QUEUE.tsv rebase conflict never commit conflict markers (AUD2-SIG-228 did, 00:3x) -- re-run work_queue.py on a clean
+tree. Huntington hdl: take/release lines, one holder at a time across both lanes. Google Books returned 429 (daily quota) to every
+account-3 worker 8 Oct 23:4x-9 Oct 00:3x: one probe, no loop; log as unreachable. Stop before starting an entry that would cross 80% of cap.
