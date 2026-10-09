@@ -2283,7 +2283,7 @@ Edition re-check, same worker: Dória 1944 *Cartas* (`rE7SAAAAMAAJ`) keyed Books
 
 ## While waiting (FT4-antt-msliv0638-brochado-1712, account-4, 3 Oct 2026; was GF4-BATCH15)
 
-- The action that depends on nobody: eye-check m0200 from disk (images/full_PT-TT-MSLIV-0638_m0200.jpg.jpg, no fetch) and record it in body_leaves.tsv, then transcribe m0277/m0278 as a paraphrase crib for letter 134 (Verdict line, ~$3).
+- The action that depends on nobody: the appendix data-fault gap (Remaining gaps bullet 'Appendix data faults': _anchors.json vs ciphertext_appendix.tsv on Cartas 74/92, m0281 idx10 'z±', the false 'e que' anchor at m0281 idx56, m0289 Carta 92's missing z, D4V-BROC's m0291 Carta 96 f.f -> ff fix, the bare-9 image compare at m0290 idx82 / m0292 idx29; Verdict line, ~$3). (Was: eye-check m0200 + m0277/m0278 crib -- both done 6 Oct 2026 by R11A-BRO, see that section; repointed 9 Oct 2026 by BRO-0200.)
 - Waiting on the owner: ASKS row 108 -- BL folio location and images of the 22 and 29 Oct 1713 letters in Add MS 20819 (Add MS 15182 only if 20819 lacks them); exact request in REQUEST.md (filed 3 Oct 2026).
 
 Gate re-run (GF4-BATCH15, 3 Oct 2026): status unchanged `partial` (line 1 untouched; line 3's Dória 1944 search-within citation re-verified above).
@@ -2575,3 +2575,13 @@ Not done: m0177's head of the run (on disk, images/body/full_..._m0177; not in t
 **(b) clear prose m0253-m0254.** One blind Sonnet read of crops m0253_L10, m0253_L11, m0254_L04 (bro178/clear_m0253_m0254.txt; text only, graded nothing). It reads m0253 L10-L11: "... a diligencia [5.15.18.13] ... [15.14.15.26.25] Minis- / Art^o 17. Q.^e não há duvida [14.z.4.3.19] Aviso. / [12 groups] he para entender q [x.z] ... [19.8.24]" and m0254 L04: "G^e P^e[?] a V. Ex^a m^s. an^s. Londres 7 de Obr. de 1713". Against BRO-123's settled tokens ('Minis-', 'Arg', 17, 'A', 'e não há duvida', 14.7.4.3.19, 'Aviso'): the worker's own look at the L11 crop reads "Arg. 17. A e não há duvida 14.7.4.3.19 Aviso." (the blind 'Art^o 17. Q.^e' is a misreading of 'Arg. 17. A e'). Under key.tsv 14.7.4.3.19 = 'neste', so the inline clause reads '... e não há duvida neste Aviso' (context only, M). 'Minis- / Arg 17 A' is not settled: 'Arg' is not the expected '-tro', so it may be an abbreviation or a cipher-like group written in letters; not graded. The close: the blind read gives 'Obr.' where BRO-123 read 9br.o / 8br.o; the appendix date is 7 Nov 1713 (9bro), unchanged. This clear text adds no restatement of a coded run beyond 'neste Aviso'.
 Words: a known-text key test and a context read. Found: m0178's run is Carta 79's tail, key gate PASS 0.804 vs p99 0.294, five copy differences. Not found: any second code run on m0178; any unglossed cipher in this job's material.
 Requests: 0 network. Subagent calls: 3 Sonnet (2 passes + 1 clear read) + 1 reconciliation by the worker.
+
+## BRO-0200 (9 Oct 2026, Opus worker, account 2; for LANE FAMILY-A2k): check 1 -- brief already met, no work run
+Check 1 (grep NOTES.md and body_leaves.tsv for m0200, m0277, m0278): both steps of this brief were done on 6 Oct 2026 by
+R11A-BRO (section above): (a) m0200 eye-checked from disk -- page "92", plain letter, no cipher groups (body_leaves.tsv row
+m0200); (b) m0272/m0277/m0278 transcribed from mandatory line crops (images/crib, crib_m0272/m0277/m0278.txt, grade M) and
+gated by PREREG-R11A-BRO.md / scripts/21_crib_gate.py -> crib_gate.tsv, FAIL on every leaf, nothing graded. The job was
+re-emitted only because the "While waiting" line still named it; that line now names the appendix data-fault gap (the
+Verdict's cheapest internal step). Per the brief's common rule ("if check 1 shows the step already done, one ROOM line and
+stop"), no image read, no subagent, no prior_work fetch, 0 requests to any host. Reading, key and grades unchanged; status
+stays `partial`.
