@@ -9721,6 +9721,40 @@
       "depth_sentence": "",
       "depth_check": "V-MANT0136: cipher clause fails (longest H/C/S stretch 9 tokens / 11 letters vs AD ~127-138); code clause fails (170 reads in neither of 2 contexts; 257/150/177 once each)",
       "decode_status": "Non-decrypted"
+    },
+    {
+      "date": "9 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT0454)\" (first audit, 9 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANT0454)\""
+      ],
+      "completeness": "cipher spans of one frame",
+      "novelty": "N2",
+      "plaintext_novelty": "N2",
+      "mapping_novelty": "N2",
+      "text": "unknown (news known)",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0454, ff.360v-361), Manteuffel to Flemming, mid-Oct to early Nov 1712 (by position; date line not on 0452-0454)",
+      "title": "SHStA Dresden Loc. 694/08 frame 0454 (autumn 1712): unglossed cipher spans read with Dr. Krauske's 1893 manuscript key table",
+      "grade": "N2 (V-MANT0454, medium-low confidence), key published (Krauske 1893 manuscript table, credited). 62 tokens S 46 M 16 by the PREREG grade (key.tsv rows C 42 M 20); gate (b) fr18 permuted-key PASS at N=52 (real -1.659 vs p95 -1.693, 29/1000), every S run reads in sense, repeated 11-code run agrees 11/11 by letter. News printed: Arnold's mission to bring Stanislas to abdicate (Droysen IV.1 p. 267, Anm. 511); Rozrazewski sent by Stanislas to Berlin (Bonnesen 1918 pp. 68-70, snippets only -- could lower the class).",
+      "line": "Partially deciphered (about 74% of the cipher tokens; D2, V-MANT0454 9 Oct 2026). Krauske's 1893 table applied to Manteuffel's letter of autumn 1712 (Loc. 694/08 ff.360v-361) reads 'rebelle', 'abdiquer', the name Rozrazewski and the agent Arnold in cipher; the abdication negotiation and Arnold's mission are printed in Droysen IV.1 p. 267, and Rozrazewski's mission to Berlin is treated in Bonnesen (1918), not read here beyond snippets.",
+      "unresolved_spans": "5 low-conf letter tokens (r03 73, r12 66, r14 9, r15 51, r17 60); 11 name-code tokens M by the PREREG",
+      "depth": "D2",
+      "depth_pct": 74.2,
+      "depth_unread": {
+        "names_codes": "none unread (198, 150, 187, 257 from the table, M by PREREG)",
+        "other": "5 low-conf letter tokens"
+      },
+      "depth_sentence": "In this letter of autumn 1712 Manteuffel reports that Stanislas's envoy Rozrazewski, then at Berlin, had had an audience of the King of Prussia three days earlier and passed on all that Stanislas had written, that the question was what the King of Poland would grant Stanislas if he renounced with the King of Sweden's consent, and that Stanislas was said to be displeased with the Prussian agent Arnold for having pressed him somewhat too hard to abdicate.",
+      "depth_check": "V-MANT0454: code clause met -- 198 Stanislas in >= 5 non-verbatim clear-context sentences read from the crops, class person, consistent with the letter-spelled runs 'abdiquer', 'renonc-', 'rebelle' on the same item (V-MANT08's 0391 test); cipher clause fails (11 letters vs AD ~127-138); D3 out (74.2% < 80%, no non-statistical check)",
+      "decode_status": "Partially decrypted",
+      "depth_by": "session_01TJYftg9fmCzPrt4EvyWECg",
+      "depth_date": "9 Oct 2026"
     }
   ],
   "lanes": [
