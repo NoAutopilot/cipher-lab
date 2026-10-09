@@ -55,3 +55,17 @@ FV-LS4-R1b acct 2, second V1-LS4B acct 3 in another session) needs the same test
 for E97's people and substance, and judge N2 (substance in print) vs N3 (name only, or nothing). Also check E100 against the same pages
 if it belongs to the same confession affair (V1-LS4B audited E96 E97 E100 together). AUDIT.md heading "## AUDIT 3 (AUD3-E97)"; propagate
 class to status.json and any SO row. Units 1-2 items x ~$1 + reconciliation.
+
+## AUD2-SIG-228 (account 3), cap $5, box 60 min: baluze167-davaux-1637 Baluze 170 f.228r-v (added 00:1x UTC 9 Oct)
+The WORK-QUEUE row's note is the brief: first audit "## AUDIT 1 f.228 (SIG-V228)" (account 1; readers SIG-B228/SIG-B228B account 1):
+N3 D2 (36%). Check the verifier-corrected grades (15 sig_marks regrades -> I) by re-running decode_key.py --check and comparing counts;
+the B228B changes (4 u4/4u signs -> a) landed after or before SIG-V228? -- say which reading was audited and carry any difference. Google
+Books phrase search (it answered 429 to every account-3 worker 8 Oct 23:4x-23:5x: one probe, and if still 429 log it, no retry loop).
+Do NOT repeat the f.229 families AUD-SIG-CHAV just covered (its "## AUDIT 3 (AUD-SIG-CHAV)": Rommel VIII, Eberstein 1865, Bougeant II,
+Siri VIII, Mercure XXIII-XXIV, Caillet 1912) except to search them for f.228's own phrases (la langrave, etc.). AUDIT.md heading
+"## AUDIT 2 f.228 (AUD2-SIG-228)". Units: 1 item x ~$3 + reconciliation.
+
+## AUD2-LEDGER-8 (account 3), cap $5, box 100 min: eckert-1864 E193, E194 (added 00:1x UTC 9 Oct)
+The WORK-QUEUE row's note is the brief (first audit FV-FM4, account 1; reader FM-R2b account 1, Fort Monroe ledger mssEC 25). Cap 2.5 per
+entry; Huntington hdl take/release lines (LANE LEDGER account 1 works the same host: at most one holder at a time). Google Books: one
+probe, no loop on 429. AUDIT.md heading "## AUDIT 2 (AUD2-LEDGER-8)".
