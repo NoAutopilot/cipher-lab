@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L22	34	6	L	yes	looped 6-like after tz
+f102r_L22	35	{swash}	M	yes	long sweeping stroke
+f102r_L22	37	s	M	yes	short s after swash/tz
+f102r_L22	44	s	L	yes	small s before d
+f102r_L22	48	{swash}	L	yes	long curved stroke before m
+f102r_L23	8	{swash}	M	yes	big loop stroke after m g m
+f102r_L23	12	{curl}	L	yes	small curl before m after S
+f102r_L23	20	NONE	L	yes	no p seen between y and oo
+f102r_L23	38	s	M	yes	short s before oo
+f102r_L23	45	{swash}	M	yes	long stroke after to
+f102r_L23	53	3	M	yes	3 at right edge
+f102r_L24	8	p	L	yes	p-like before p tz
+f102r_L24	17	NONE	L	yes	no p seen between m y and tz
+f102r_L24	21	NONE	L	yes	no extra sign after y
+f102r_L24	29	3	L	yes	round topped 3-like
+f102r_L24	34	s	M	yes	short s before oo

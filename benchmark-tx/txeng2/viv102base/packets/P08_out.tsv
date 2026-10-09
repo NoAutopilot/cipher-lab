@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L20	45	V	L	yes	long backslash-like swash between m and #
+f102r_L20	52	tz	M	yes	t with z descender at right edge after oo
+f102r_L21	1	n	L	yes	two humps with lead-in flourish
+f102r_L21	3	p	L	yes	second y-like stroke with descender before m
+f102r_L21	5	3	M	yes	round-topped with descender after m
+f102r_L21	11	g	L	yes	looped descender sign after m
+f102r_L21	36	z	M	yes	flat z with lead stroke after j
+f102r_L21	40	NONE	L	yes	only swash y then o-like; no separate p seen
+f102r_L21	44	z	L	yes	z-like after m
+f102r_L21	46	e	L	yes	small closed e-like before tall s
+f102r_L21	47	S	M	yes	tall descending stroke
+f102r_L21	50	S	L	yes	tall stroke before p
+f102r_L22	2	z	M	yes	flat z before m
+f102r_L22	8	z	M	yes	z-like after j with lead stroke
+f102r_L22	14	{curl}	M	yes	small loop curl before m
+f102r_L22	17	s	L	yes	short s, no long descender

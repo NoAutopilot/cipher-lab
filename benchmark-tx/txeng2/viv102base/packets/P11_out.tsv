@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L26	10	c	M	yes	round c-like with dot beside
+f102r_L26	17	NONE	M	yes	curl belongs to following m
+f102r_L26	18	{curled m}	M	yes	m with large left curl
+f102r_L26	21	y	M	yes	descending y-like stroke before tilde
+f102r_L26	22	{tilde}	M	yes	wavy overbar-like stroke
+f102r_L26	37	g	M	yes	round body with descender
+f102r_L26	39	g	M	yes	g-like with descender
+f102r_L26	42	y	L	yes	j/y-like stroke after tz
+f102r_L26	43	{tilde}	M	yes	wavy stroke
+f102r_L26	45	{dot}	M	yes	single dot after 2
+f102r_L26	48	x	M	yes	x-like cross shape
+f102r_L26	56	{fragment}	L	yes	cut at right edge
+f102r_L27	1	Z	M	yes	Z-like at line start
+f102r_L27	5	{u}	M	yes	u-like with tick
+f102r_L27	32	V	M	yes	long backslash-like stroke
+f102r_L27	41	g	L	yes	descender loop shape
