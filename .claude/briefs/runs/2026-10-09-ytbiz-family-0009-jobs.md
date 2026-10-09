@@ -101,3 +101,57 @@ does ONE unit, 0744 right. Read NOTES "V-SUR0744" and the 0744-left sections fir
 dot-label permutation gate, 10,000 draws, p99, the statistic and the held-out rule) and push before scoring. Crop step pasted
 (tools/iiif_lines.py --image), two blind passes + one reconciliation, score. NOTES section "SUR-0744R (9 Oct 2026)", HYPOTHESES row, Remaining
 gaps, gaps_check. Stop before 0745 whatever the result (one unit per brief).
+
+## Wave 2 (00:4x UTC 9 Oct) -- same common rules. Wave 1 results: ROOM done lines 00:20-00:36 and LEDGER rows of 9 Oct (FAMILY-A2d).
+Hosts this wave: digitarq (LIN-SIB2 only), sachsen (MANT-0609Y only), arcinsys (HDK-BRANDT only, <= 10 requests), NA (V-SUR0744R only if needed).
+
+### LIN-SIB2 (Opus, cap 4.5, box 100 min): antt-linhares-chave, maço 86 /09 m0021-m0212 thumbnail sweep
+LIN-SIB (NOTES "LIN-SIB (9 Oct 2026)", keyhunt/2026-10-09-LINSIB.tsv) stopped at the request budget at /09 m0020. Same method, same /11
+positive control placed blind, same scale; DigitArq >= 3.5 s apart, <= 150 requests per DigitArq session -- if 192 thumbnails need more than
+one budget, stop at 150 and record the last index (do not exceed it). Append to keyhunt/2026-10-09-LINSIB.tsv, NOTES "LIN-SIB2 (9 Oct 2026)",
+SIBLINGS row state, Remaining gaps / Escalation, gaps_check. No decoding.
+
+### HDK-BRANDT (Sonnet, cap 2.5, box 60 min): check-solved and premise check on the Brandt 1672 cipher leaves of Dänemark 131
+HDK-131 (NOTES "HDK-131 (9 Oct 2026)", dk131_inventory.tsv) found 7 leaves of HStAM 4 f Dänemark Nr. 131 (0020 0021 0049 0050 0062 0063
+0064) carrying Friedrich von Brandt's numeral cipher from Copenhagen, 1672, with a period decipherment on 0020 (margin, running German) and
+0049 (letter per group). Run the check-solved procedure (.claude/briefs/check-solved.md, six sources, including the "## Premise check"
+(a)-(d)) for these leaves as one candidate item: Arcinsys record text, HCPortal (api.hcportal.eu) and DECODE listings for "Dänemark 131" /
+Brandt, the two solver repositories (grep only), Cipherbrain / Cryptiana, an edition of Brandt's Copenhagen reports or the Hessian-Danish 1672
+files (Urkunden und Actenstücke zur Geschichte des Kurfürsten Friedrich Wilhelm for the Brandenburg side, Rommel), open-index scholarship.
+Write the verdict as a section "HDK-BRANDT check-solved (9 Oct 2026)" in ciphers/hessen-daenemark-1672/NOTES.md (not a new folder; the
+orchestrator decides on a folder from your verdict), with: open/found-solved/blocked word, editions and pages actually read, what fraction of
+the cipher the two glossed leaves cover (count groups vs glossed groups from the crops HDK-131 left, or <= 10 arcinsys requests), and the
+cheapest first test (e.g. build the letter table from 0049's per-group gloss and test it on 0050/0062-0064 with a shuffled control). No
+decoding, no key building. gaps_check on hessen-daenemark-1672.
+
+### MANT-0609Y (Opus, cap 5.5, box 110 min): sachsstaatsarchiv-manteuffel-1712, 694/09 frame 0007 gloss pairs + offset-1 stride-3 sweep
+(a) MANT-EYE found 694/09 frame 0007 glossed (~18 tokens; 0008 is its verso). Crop (iiif_lines.py --image, native frame from the sachsen
+host), two blind passes + reconciliation of the code groups AND their glosses; compare every gloss pair with key.tsv (Krauske 1-401): agree /
+disagree / not in key, counts. Known text used as a key check (guardrail share), C on agreeing values. (b) Then the remaining ~84 unseen 694/09
+frames at stride 3 offset 1 (mant0609/inventory_stride3.tsv shows what is seen), the MANT-0609X method (<= 800 px, >= 2 s, contact sheets, blind
+positive control 0015/0052), stopping (b) before 80% of cap or box. Append to inventory_stride3.tsv / rank_unglossed.tsv, NOTES "MANT-0609Y
+(9 Oct 2026)", Remaining gaps, gaps_check. No transcription beyond 0007.
+
+### V-SUR0744R (Opus, cap 2.5, box 60 min): na-suriname-map-1781, separate verifier of SUR-0744R's class-gate PASS
+SUR-0744R (NOTES "SUR-0744R (9 Oct 2026)", PREREG-SUR0744R.md 94e16aee, HYPOTHESES row) reports the CLASS gate ([ij] in m|n) PASS on both blind
+passes of 0744 right and the DOT gate FAIL with no headroom. You did not run it. Re-run its scorer (--check) and 3 fresh seeds of the 10k-draw
+control, confirm the held-out rule was kept (no 0744R reading used to build the classes), check whether the control CAN differ from the target on
+the class statistic (rule 3 non-test clause), spot-check 5 crops against the two passes' labels, and say whether the PASS stands, is fragile, or
+is a non-test. Write "## AUDIT (V-SUR0744R)" in AUDIT.md (no N-class change unless the reading changed; depth per the depth bar only if a
+reading claim exists), and correct any over-claim in NOTES/HYPOTHESES. Do not run 0745.
+
+### BERGH-GRP (Opus, cap 7.5, box 120 min): wvo-11106-bergh-1572, sign-group reads with a de-stacked layout (the second instrument)
+NOTES Verdict / BERGH-STRIP "What would settle it": same 19 gate windows and the same PREREG truth table, re-registered for GROUP scoring in
+PREREG-BERGH-GRP.md and pushed before any pass: readers answer "box numbers that together make one sign -> label" (e.g. 3+4 -> y); each number
+drawn directly under its own box, no shared verticals (offset sideways when two boxes share an x-range). Build the strips locally from the atlas
+on disk (no network), ~4 Sonnet vision calls (2 per pass) + 1 reconciliation, score against the truth table, both numbers vs the registered
+gate. This is the second attempt with a different instrument; if it fails, say what a third would need (rule 3: no third run of this one).
+PASS: write atlas/group_sign.tsv for the 19 windows only; the sorter rebuild is a separate job. NOTES "BERGH-GRP (9 Oct 2026)", Remaining
+gaps, gaps_check.
+
+### LAG-SYL (Opus, cap 3, box 75 min): la-garde-1577, syllabary family control at the measured error (CPU only)
+NOTES Verdict (after LAG-NEXT): "syllabary family_run control at the measured error 0.055/0.084, ~$2". Check tools/family_run.py for a
+syllabary family (or the nearest matched-design one; if none exists, stop and log "no matched-design tool" -- do not build a solver). Matched
+control first at 0.055 and 0.084 (the `noise` parameter LAG-NEXT added to running_key may need the same in this family: add it with an offline
+test if so), target only if the control mean meets the gate, scored with the LAG-GAP gate design after its power check. PREREG-LAG-SYL.md pushed
+before scoring. Both numbers in HYPOTHESES.md, NOTES "LAG-SYL (9 Oct 2026)", Remaining gaps, gaps_check. Target stays open (rule 5).
