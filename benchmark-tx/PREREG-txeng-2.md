@@ -80,3 +80,11 @@ Per the lane brief's Amendment 2 (orchestrator, 07:0x UTC): the single-instrumen
 (dev gate and eval alike), not 0.05; the combined pipeline (round 3) is p < 0.05. One eval look per instrument, counted in
 research/TX-IDEAS-2026-10-09.md beside each eval p-value. Everything else above stands. The three workers were told by message
 and their briefs point here.
+
+## Amendment M1b (lane, 9 Oct 2026 07:2x UTC by date -u; written BEFORE any re-resolution of TXE-A's dev reads)
+TXE-A FAILed dev (fixed 4 / broken 16): every broken row was a shown position where L was right and the reader picked a
+look-alike exemplar. Read-free follow-up on the SAME dev reads (no new vision call, no eval): re-resolve with (a) picks at
+confidence H only, (b) picks only on rows shown for top-1 disagreement (`why` contains top1), (c) both. Each scored
+paired vs L_dev_tune; gate fixed > broken, p < 0.01. A variant that meets it would still need its own eval read (the 11
+unread eval sheets) counted as one eval look; a miss retires the compare layout at this show rule (rule 3 third-attempt
+clause: three fixes of the same instrument are not tried).

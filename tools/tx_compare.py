@@ -393,6 +393,10 @@ def cmd_resolve(a):
         n_sheets += 1
         for r in rd(rp):
             kr = keyrows.get(str(r.get('row', '')).strip())
+            if kr and a.only_reason and a.only_reason not in (kr.get('why') or ''):
+                continue
+            if kr and a.only_conf and (r.get('conf') or '').strip().upper() not in a.only_conf.split(','):
+                continue
             if kr:
                 cands = kr['cands'].split(',')
                 picks[(kr['line'], kr['pos'])] = (cands, parse_pick(r.get('pick'), len(cands)),
@@ -451,6 +455,8 @@ def main(argv=None):
     b.add_argument('--ctx-w', type=int, default=420, help='context tile width cap, px (420)')
     r = sp.add_parser('resolve'); common(r)
     r.add_argument('--unit', required=True); r.add_argument('--pass-out')
+    r.add_argument('--only-conf', help='apply picks at these confidences only, e.g. H or H,M (PREREG-txeng-2 M1b); others keep the line read')
+    r.add_argument('--only-reason', help="apply picks only on rows whose show reason contains this word, e.g. top1 (M1b)")
     lo = sp.add_parser('lattice-out'); lo.add_argument('decode'); lo.add_argument('--pass-out', required=True)
     a = ap.parse_args(argv)
     if a.cmd == 'build':
