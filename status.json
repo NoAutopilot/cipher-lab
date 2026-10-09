@@ -8445,7 +8445,7 @@
       "kind": "reading",
       "title": "Baluze 170 f.228r-v: Chavigny to d'Avaux, Amiens, 25 Aug 1640, cipher passages on the Landgravine of Hesse-Kassel, the dukes of Lüneburg and the enemy",
       "grade": "N3",
-      "line": "Read with Tomokiyo's published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens H, letter signs M); apart from the four words Tomokiyo quotes ('sont mal satisfaits de'), no prior decipherment or printed text located in Avenel VI-VIII, Rommel's Geschichte von Hessen VIII, Charveriat II, the Guebriant histories, Boppe 1887, Internet Archive full text, OpenAlex or CrossRef (searched 8 Oct 2026, one audit).",
+      "line": "Read with Tomokiyo's published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens H, letter signs M); apart from the four words Tomokiyo quotes ('sont mal satisfaits de'), no prior decipherment or printed text located in Avenel VI-VIII, Rommel's Geschichte von Hessen VIII, Charveriat II, the Guebriant histories, Boppe 1887, Internet Archive full text, OpenAlex or CrossRef (searched 8-9 Oct 2026, one audit).",
       "gap": "AAE Correspondance politique and Chavigny's registers unread; Google Books unreachable (429) this audit; JSTOR rows queued; one audit (SIG-V228); second audit AUD2-SIG-228 queued; SO-BAL170-F228 queued; 15 mark-read regrades returned to I, not yet applied in the decode files",
       "phrases": [
         "quelque crainte que la langrave et les ducs de Lunebourg",

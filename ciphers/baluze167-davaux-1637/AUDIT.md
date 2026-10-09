@@ -237,3 +237,152 @@ clear, was located, and nobody else's reading of these signs was found.
   is made in the "## Lane SIG additions" line, not by rewriting line 15.
 - No over-claim found in the target's files. status.json: `audit_refs` gains this section, `audit_status` "three audits", `gap`
   updated; class, depth and key unchanged. SECOND-OPINIONS-QUEUE.tsv SO-BAL170-F229: class and counts unchanged, row left as filed.
+
+## AUDIT 1 f.228 (SIG-V228), 8-9 Oct 2026, 23:46-00:1x UTC by date -u
+
+Verifier: SIG-V228 (account 1, Opus), for LANE SIG-1, brief `.claude/briefs/runs/2026-10-08-acct1-sig1-jobs.md` section "SIG-V228".
+Separate from the solvers (SIG-B228, SIG-B228B, B167-228) and from both f.229 audits. No decoding: the committed reading was read, not
+re-derived. Search files in `sigv228/`; downloaded texts kept outside the repository (re-fetchable from the IA ids below).
+
+### 1. Item under audit
+
+| field | value |
+|---|---|
+| Item | BnF Baluze 170, f.228r-v, the cipher passages on the first leaf of the letter ff.228r-230r (Gallica ark btv1b90015040, canvases 239 right and 240 left) |
+| Sender, recipient, place, date | Léon Bouthillier, comte de Chavigny, to Claude de Mesmes, comte d'Avaux. One letter, not two: f.228r begins it, f.229r-v continues the same bare cipher, and the clear close on f.230r reads "Amyens ce 25 Aoust 1640" with Chavigny's signature (D1-BAL170, from the c239-241 overview; f.228 has no separate date or subscription). So the date 25 Aug 1640 comes from this letter's own close and not from a different f.229 letter. The clear words on f.228r a_L01 ("par ce que Madame la Langrave et les d[ucs]") were checked by this verifier on the crop |
+| Claim under audit | NOTES "## SIG-B228B": reading_b170f228.txt, H 71 / M 70 / I 12 / U 1 of 154 cipher tokens, fr17 -0.925 vs real_p05 -0.935 (PASS by 0.010); content sentence "the cipher says Chavigny doubts the Landgravine of Hesse-Kassel would come to terms with the enemy because of the treaty she has recently made with the King" |
+| Key | Tomokiyo's "D'Avaux's Cipher (1637-1641) (DE=16')" table (key.tsv), plus our shape values for the f.228 letter signs (f.229 values; SIG-B228/B exemplar tests). Key source: **published** (Tomokiyo's table, credited) **plus ours** (the letter-sign shape values) |
+| Period decipherment on the leaf | none (survey.tsv c239-241 "absent"; D1-BAL170) |
+| Prior print of any part | Tomokiyo, louisxiii.htm l.361: "f.228, undeciphered: "sont mal satisfaits de *", ...". Four words of f.228r a_L02 are therefore in print as his partial reading, with the name left as `*` |
+
+Distinctive phrases (as read): "sont mal satisfaits de [73]"; "point a propos dans cette conjoncture de le traitter de la me[?]me sorte"
+(clear + cipher); "quelque crainte que la langrave et les ducs de Lunebourg [...] avec les ennemis"; "qu'ainsy luy et [73=] soient contraincts
+de se retirer chacun de leur coste"; "le traitte qu'elle a fait depuis peu avec le Roy"; "a tous ajustemens raisonnables pour le bien" (clear).
+
+### 2. Prior-work gate (pasted)
+
+`python3 tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228r;date=1640-08-25;sender=Chavigny;recipient=Avaux;place=Amiens' --step-type audit --fetch`
+first run: `holds: specific 19 (DONE 1, LEAD 18); generic 2 (UNCHECKED-NET 2) ... exit 3: the step is DONE`. The 17 own-folder LEADs (escalation
+checkboxes of solver steps) and the Bourdeau holder LEAD (line 239: Tomokiyo fragments only, DECODE R2761 key only) were answered CONTEXT with
+`--record`. Re-run: `holds: specific 1 (DONE 1); generic 2 (UNCHECKED-NET 2) / verdict plaintext: UNCHECKED-NET / verdict step: DONE / exit 3`.
+**The DONE is a unit-matching artefact, not a prior audit of this item:** the status.json row it matches is "BnF Baluze 170 ff.229r-v (letter
+ff.228r-230r)", i.e. the f.229 passage audited by AUD1/AUD2-B167; no AUDIT section covered f.228 before this one. Proceeded on that reading.
+G3: `... --reading ciphers/baluze167-davaux-1637/reading_b170f228.txt --network` -> `6-g3 CLEAR ... ia-global: no hits`; `6-g3 UNCHECKED-NET
+... gbooks: not searched (blocked: HTTP 429)`; `exit 3` (same DONE). Google Books also failed the 23:4x key livecheck (works yes->no).
+
+### 3. Independent search log (8-9 Oct 2026)
+
+`python3 tools/print_check.py ciphers/baluze167-davaux-1637 --phrases .../sigv228/phrases.txt --sources .../sigv228/sources.tsv --out .../sigv228/print-check.tsv`
+-> `8 phrases, 9 listed sources: 92 rows, 2 with hits` (the 2 are CrossRef keyword rows whose top hits are unrelated ODNB/Oxford
+Scholarly Editions entries on other Landgravines and other Avaux/Chavigny). Per source: the 7 listed IA volumes (Avenel VI, Rommel VIII,
+Justi 1812, Charvériat II, Boppe 1887, Le Laboureur 1657, Noailles 1913) x 8 phrases = 56 rows, **no hits**; IA global full text 6 phrases
+no hits, 2 (`j'ay peine a le croire veu le traitte`, `a tous ajustemens raisonnables pour le bien`) HTTP 502, not searched; OpenAlex 9 no
+hits; Google Books 8 and Semantic Scholar 9 **not searched (HTTP 429)**. Requests: archive.org 1, be-api 8, googleapis 1, openalex 9,
+semanticscholar 1, crossref 2 (plus this verifier's own 3 IA metadata/advancedsearch calls and 3 `_djvu.txt` downloads).
+Raw: `sigv228/print-check.tsv`, `sigv228/print-check-hosts.tsv`.
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical series: Avenel, Richelieu VI-VIII | AUD1-B167's whole-volume greps cover this letter (no Chavigny despatch to d'Avaux of 25 Aug 1640); Avenel VI re-run through print_check with the f.228 phrases | not found |
+| (b) sender/recipient correspondence | Le Clerc *Négociations secrètes* t.1 (from 1642), Boppe 1887 (d'Avaux and his father; its 25 Aug 1640 letter is the father's) covered by AUD1/AUD2 for this letter; Boppe re-run with the f.228 phrases | not found. No edition of Chavigny's despatches to d'Avaux located |
+| (c) Hesse-Kassel side | Rommel, *Geschichte von Hessen* VIII (1843, IA 10021035bsb, `_djvu.txt` grep): Chavigni 1 hit (1630s patents), Avaux 2 (a 1638 letter to Amalie Elisabeth, the 1643 plenipotentiaries), Lunebourg 2 French hits (Du Mont 1641 treaty text; a footnote), none of the f.228 phrases. Justi, *Amalie Elisabeth* (1812, IA 10019860bsb): 0 Chavigny/Avaux/Banér | not found. Context only: Rommel VIII p.553 n. says the Dorsten treaty with France (1639) supplemented the Hamburg treaty and that Amalie Elisabeth lifted her secret reservation against France only in March 1640 (ratification to La Boderie, revers of 24 Mar 1640) -- consistent with "le traitte qu'elle a fait depuis peu avec le Roy" in Aug 1640; it corroborates the reading's sense, it does not supply it |
+| (c) Brunswick-Lüneburg side, Banér's 1640 campaign | Charvériat, *Histoire de la guerre de trente ans* II (1878, IA histoiredelaguer02char): Avaux 68, Banier 245 hits, Lunebourg 2; none of the f.228 phrases, no Chavigny | not found. Le Laboureur 1657 and Noailles 1913 (Guébriant) covered by AUD1 and re-run with the f.228 phrases |
+| (d) holding archive and project pages | BnF archivesetmanuscrits Baluze 170 (AUD2-B167, read 8 Oct: no edition or decipherment named); DECODE R2761 = ff.228-230, "Decrypted", Inline Plaintext No, key only (CS-6, AUD1) | no decipherment of f.228 located beyond Tomokiyo's fragment |
+| (e) full text: IA, Google Books | print_check (above) on 8 f.228 phrases; G3 ia-global | IA: see table; Google Books unreachable this session (429) |
+| (f) solver repositories and blogs | Tomokiyo louisxiii.htm (on disk): only the one f.228 fragment, nothing else from this letter; repo-wide grep of `sources/` for "mal satisfaits"/"Lunebourg": only Tomokiyo and two unrelated BnF finding aids; Bourdeau and Aymeloglu as re-cloned by AUD2-B167 on 8 Oct (no Baluze 170 reading; Aymeloglu only DECODE row 2761) | Tomokiyo's fragment is the only prior reading located |
+| (g) scholarship | OpenAlex and CrossRef via print_check (above). JSTOR: two rows appended to JSTOR-QUEUE.tsv, family (i) Chavigny AND Landgrave AND Lunebourg AND 1640 AND cipher terms, family (ii) the bare quoted phrase "le traitté qu'elle a fait depuis peu avec le Roy" | see table; JSTOR queued |
+
+Unreachable or not searched: Google Books (HTTP 429 this session); Semantic Scholar (HTTP 429; AUD2's 8 Oct queries for the same
+letter found nothing); IA global full text for 2 phrases (HTTP 502); the AAE Correspondance politique (Allemagne/Hesse) and Chavigny's own registers (not online here); the Calenberg/
+Lüneburg archive editions (none located on IA by title; not searched further); Gallica not touched (403 to cloud sessions on 8 Oct).
+
+### 4. Adversarial reading check
+
+**Crop spot check (34 tokens, native crops):** f.228r a_L02 (all 12 cipher tokens), c_L01 (2), f.228v b_L02 (first 18), b_L05 (10 of 10
+cipher tokens), b_L06 (9). Sign identity and order agree with ciphertext_b170f228.txt on every token; the letter shapes match the classes the
+reading uses (h = n, u4 = t, minim pair = l, wave/v = s, crossed ff = s, 4u = a, g+ = n, r-shaped sign = g, y+ = r, q = c). **Marks do not all
+agree:** on f.228r a_L02 the numeral transcribed `16'` carries no acute (the crossbar of the preceding ff runs over it), `73=` carries no
+overbar, and on c_L01 `86'` carries no acute. These three are exactly as D1-BAL170B's eye re-check recorded them ("'16 73' carry no mark or
+bar (was 16' 73=); c_L01 86 has no tick"); SIG-B228 then re-marked them from two blind Sonnet reads (`b167228/sig_marks.tsv`).
+
+**Correction 1 (grades).** SIG-B228 regraded 15 unmarked numerals to H because two Sonnet reads named a mark. That gate's control (prereg
+item 6) tested only marks that are present (4 acute controls); it could not fail on the axis that matters here, a reader that sees a mark
+where there is none (rule 3: a control orthogonal to the error). SIG-B228B's tight-crop reads then named "acute" on both pre-registered
+"none" controls and SIG-B228B itself concluded Sonnet mark detection on this hand "is not a usable instrument at either scale". This
+verifier's eye agrees with "no mark" on 3 of the 15 checked. So the 15 `sig_marks.tsv` regrades are not H. **Corrected counts: H 56, M 70,
+I 27, U 1 of 154** (the 15 return to I, their pre-SIG-B228 grade; values unchanged, so the judge numbers are unchanged). Most consequential:
+the name in "sont mal satisfaits de [73]" (f.228r a_L02) is **not** read -- an unmarked 73 has no value in the table; Tomokiyo left the same
+spot as `*`. "Bavier" stands only at f.228v b_L03 (73= transcribed with its bar by both D1-BAL170B passes). Not applied to the reading
+files here (no decoding in this brief): the next solver step sets `b167228/to_pipe.py` to grade the sig_marks tokens I and re-runs `--check`.
+
+**Correction 2 (content sentence).** The verb of the fear clause is unread: f.228v b_L02-03 "la c [13] m mo de n t avec les ennemis" (13 is
+unresolved, sued|co). "Come to terms with the enemy" is an inference (plausibly "s'accommodent"), supported by the clause that follows ("et
+qu'ainsy luy et Bavier soient contraincts de se retirer chacun de leur coste"), not a reading. The sentence must say the verb is unread.
+
+**Cipher vs clear share of the quoted clauses.** Of the clauses the solver quotes, the frame is clear text: "TESMOIGNE QU'IL A QUELQUE",
+"ET QU'AINSY", "POUR", "J'AY PEINE A LE CROIRE VEU", "DEPUIS PEU", "MAIS POUR", "C'EST CHOSE QUI N'EST PAS" (plus f.228r a_L01 "par ce que
+Madame la Langrave et les d[ucs]" and "a ce que l'on nous [mande]", "point a propos dans cette conjoncture"). The content words are cipher:
+"crainte", "la langrave", "les ducs de Lunebourg", "avec les ennemis", "luy et Bavier soient contraincts de se retirer chacun de leur coste",
+"le traitte qu'elle a fait", "avec le Roy". About 120 of the roughly 300 letters in those clauses are clear; the claimed meaning (doubt about
+the Landgravine, reason = her recent treaty with the King) sits on the boundary: "I can hardly believe it" and "recently" are clear, the
+subject and the reason are cipher.
+
+**With every M letter doubted** (letter signs replaced by `?`, the 15 regraded numerals by their value with `?`): "crainte que ... la ????rave
+et ca du?? de lune bo??? la ?[13]?mo de ?? [avec?] les enne mi? ... luy et Bavier so?en? con?ra????? de se re[ti?]re ?? ha cu? de leur co??e
+POUR cu la ????rave J'AY PEINE A LE CROIRE VEU le [traitte?] que ?le ? fait DEPUIS PEU [avec?] le Roy MAIS POUR les du?? de lune bo???".
+What survives on H numerals plus clear words: a fear about "la ...rave" (Madame la Langrave is named in clear on f.228r) and "Lunebo[urg]"
+in connection with "les enne mi[s]"; "luy et Bavier" withdrawing ("se re..re", "chacun de leur coste"); and "J'AY PEINE A LE CROIRE" of the
+"...rave" because of something "que ...le ... fait DEPUIS PEU ... le Roy". "Traitte" there rests on 29 with a diaeresis (`29:?`, M in the
+file); this verifier sees the two dots on the b_L06 crop, and 29: = traitte is the key's own value. So the sentence survives in this form:
+Chavigny finds it hard to believe of the Landgravine, given what she recently [made] with the King; the "treaty" and "she has made" add two
+M-dependent words, and "come to terms" does not survive.
+
+**Authentication distance (rule 4a, depth bar).** Longest contiguous H stretch after correction 1: 11 letters ("le Roy" / "les du", across
+a clear-word break; inside one cipher run it is under 10). The design is a nomenclator of about 150 marked numerals plus homophonic letter
+signs; H(K) counts the 70 M letter signs, 27 I and 1 U as liberties, and the published key does not shrink it. No stretch approaches 1.5 x
+unicity. **Cipher clause: not met.**
+
+**Judge.** fr17 PASS by 0.010 (-0.925 vs real_p05 -0.935), above all 40 shuffled nulls, positive control 3/3. The margin rests on four M
+letter values fixed by an exemplar test whose decoy gate passed at its minimum (2/3), and the letter-sign transcription is shape-class
+labelled with f.229 values, so it is not independent of the decoded text (the ARM-C1 caveat AUD1-B167 stated for f.229). Read as "worth a
+verifier", not as confirmation of any one word.
+
+### 5. Classification
+
+| item | prior plaintext | prior decipherment | class | key | confidence |
+|---|---|---|---|---|---|
+| Baluze 170 f.228r-v (Chavigny to d'Avaux, Amiens, 25 Aug 1640; first leaf of the letter whose f.229 passage is classed N3 above) | four words only: Tomokiyo prints "sont mal satisfaits de *" from f.228 (louisxiii.htm); nothing else located | Tomokiyo's fragment (KNOWN-PART); no other | **N3** for the passage, with the f.228r fragment "sont mal satisfaits de" excluded as N1 (Tomokiyo) | published (Tomokiyo's table, credited) plus ours (letter-sign shape values matched to f.229 exemplars) | moderate: same gaps as the f.229 audits (AAE series, Chavigny's registers, JSTOR queued) plus Google Books unreachable this session |
+
+Why not N4: the AAE and Chavigny's own registers are unread, Google Books was unreachable, JSTOR is queued.
+
+- **Safe sentence:** "The cipher passages on Baluze 170 f.228r-v (Chavigny to d'Avaux, Amiens, 25 Aug 1640) were read by us with Tomokiyo's
+  published D'Avaux key and letter-sign values matched to the same letter's f.229 (56 of 154 cipher tokens at grade H; the letter signs
+  at M). Apart from the four words Tomokiyo already quotes ("sont mal satisfaits de"), no prior decipherment or printed text was located in
+  Avenel's Richelieu letters, Rommel's *Geschichte von Hessen* VIII, Charvériat, the Guébriant histories, Boppe 1887, Internet Archive
+  full text, OpenAlex or CrossRef (searched 8-9 Oct 2026)."
+- **Unsafe sentences:** "first/new decipherment" or "previously unread" (rule 10); "the cipher says the Landgravine would come to terms
+  with the enemy" (the verb is unread); "dissatisfied with Banér" for f.228r (the name there is an unmarked 73, unread); "H 71".
+
+### 6. Depth (rule 4a, depth bar of 8 Oct 2026)
+
+- Tokens: **56 / 154 = 36% H/C/S** (after correction 1); M 70 (letter signs and numerals with doubtful marks), I 27, U 1. Unread:
+  names/codes 2 (13 "sued|co" in the fear clause; 73 unmarked on f.228r), other 1 (U, the wave-like sign f.228r b_L02).
+- **Cipher clause: not met** (above).
+- **Code clause: met.** 10: = "les" reads in two independent f.228v phrases, "avec les ennemis" (b_L03, on H en-ne-mi) and "mais pour les
+  ducs de Lunebourg" (b_L07, clear-word frame); 9: = "luy" in "avec luy" (f.228r c_L01) and "luy et Bavier" (f.228v b_L03); 10: also reads
+  "les" seven times on f.229 (AUD1/AUD2-B167). Neither rests on a sig_marks regrade.
+- **Verifier's sentence (D2), from the reading, letter signs M:** "In cipher Chavigny reports a fear that the Landgravine and the dukes of
+  Lüneburg would [verb unread] with the enemy, so that 'he' and [73=, Bavier in the key, Banér by context] would each be forced to withdraw
+  to his own side; of the Landgravine he writes that he can hardly believe it, given the treaty she has recently made with the King, but of
+  the dukes of Lüneburg he does not say the same." Context (Rommel VIII: Hesse-Kassel's French alliance confirmed March 1640) is
+  consistent and is not used to supply any word.
+- **Depth: D2**, outward words "partially deciphered (about 36%)".
+
+### 7. Postmortem and corrections
+
+- Over-claim 1: SIG-B228's 15 mark regrades to H, carried into SIG-B228B's "H 71" -- corrected here to H 56 / I 27 (section 4); NOTES.md
+  carries a pointer under SIG-V228.
+- Over-claim 2: SIG-B228's "sont mal satisfaits de Bavier [Banér]" on f.228r and the "Landgravine ... dissatisfied with Banér" sentence --
+  the name there is unread.
+- Over-claim 3: SIG-B228B's "come to terms with the enemy" -- the verb is unread.
+- No novelty wording found in the solver sections. Rule 10: this section alone assigns the class.
