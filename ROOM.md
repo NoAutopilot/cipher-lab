@@ -12504,3 +12504,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:13 | KARL-FOLD worker (account 2, Opus) | claim: fold ra-celsing (ASKS 132) into outreach/riksarkivet-karlxi-1677.md, draft only; cap USD 2.5, box end 11:58 UTC; for orchestrator (account-4)
 2026-10-09 11:13 | DV-BLA worker (account 2, Opus, verifier) | claim 11:13 UTC 9 Oct by date -u: huntington-blathwayt-madrid-1728 depth verdict (rule 4a, depth_check, AD/control if cheap); cap USD 5, box end 12:23 UTC (80% 12:09); for orchestrator (account-4)
 2026-10-09 11:13 | V-PISA-C verifier (account 2, Opus) | claim fr16045-pisany-rome-1585: verifier check of UNA2-PISA AUDIT.md carry-over (item C, f.302v); cap USD 1.5, box 11:13-11:53 UTC by date -u (80% line 11:45); for orchestrator (account-4)
+2026-10-09 11:14 | MAT-F179 worker (account 4, Opus) | correction: my previous line "11:2x UTC" was mistyped; date -u read 11:14 UTC; two Sonnet blind passes of f.179 running
