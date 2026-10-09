@@ -1,0 +1,25 @@
+status: drafted 9 Oct 2026 10:2x UTC by KARL-REQ (account-2 worker, for orchestrator account-4); no `checked:` line yet -- the gate-7 pre-send check is a separate session; not in the mailbox, not queued, not sent
+to: riksarkivet@riksarkivet.se (read 9 Oct 2026 10:1x UTC on Riksarkivet's own page https://riksarkivet.se/om-riksarkivet/kontakta-oss, heading "E-postadress"; the same page says copy orders are best placed through the web forms, "Beställ kopior eller undersökningsuppdrag" -> https://bestall.riksarkivet.se/en/ovriga-bestallningar ("Other inquiries", listed on https://riksarkivet.se/utforska-och-bestall/bestall-kopior-och-undersokningsuppdrag/forms-in-english, read the same day); the body below pastes into that form's free-text field unchanged if the person prefers the form. Fees: Riksarkivet's fee page lists "Skanning av handling med fotografisk kvalitet (inklusive digital kopia, 400 dpi)" and says copies of up to 10 pages are also charged; price not read off the page this pass (full list: https://riksarkivet.se/om-riksarkivet/tjanster-och-priser) -- hence the quote request in the body)
+subject: [SUBJECT] (suggested: Copy order: SE/RA/25.3/4/II/7/B, document (b), Karl XI's full power, Nääs, 6 May 1677)
+prior_contact: none (searched 9 Oct 2026: project mailbox, all folders, "riksarkivet OR riksarkivet.se OR Swedish National Archives", 0 threads; CONTRIBUTIONS.md Recipient column, 0 rows; outreach/ has no Riksarkivet draft)
+holdings: none -- Riksarkivet has sent us nothing; we hold only its catalogue record for this dossier (data.riksarkivet.se API, read 24 Sept 2026, quoted in ciphers/ra-karlxi-fullmakt-1677/NOTES.md "What this is"); no image of either document
+fold_with: ASKS 132 (ciphers/ra-celsing-sillen-1755, a second Riksarkivet copy order, backlog, never drafted or sent). Rule 1c (one message per recipient): before this goes to the send batch, the parent either folds the Celsing volume into this message as a second item or holds one of the two until Riksarkivet answers the other; never two separate sends to Riksarkivet on one day
+asks_row: 159
+target: ciphers/ra-karlxi-fullmakt-1677 (REQUEST.md is the source of the reference code and the document description)
+links: request-file=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/ra-karlxi-fullmakt-1677/REQUEST.md; notes=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/ra-karlxi-fullmakt-1677/NOTES.md; printed-sibling=https://archive.org/details/bub_gb_mUtFAAAAcAAJ/page/n137 (Nimwegisch Friedens-Memorial, 1680, pp. 102-104)
+
+Dear Riksarkivet,
+
+I write on behalf of a small non-commercial project that reads cipher passages in historical letters and documents. One person directs the project and sends every message; the searches of the printed editions, the reading of images and the audits are done by AI agents (Claude models) working in a public repository, where every step is logged. I say this at the outset so you know whom you are dealing with.
+
+I would like to order a digital copy (a scan, 400 dpi or whatever your standard photographic quality is) of one document, and would be grateful for a quotation before any work is done. Reference code SE/RA/25.3/4/II/7/B (Originaltraktater med främmande makter / Tyskland / Kejsaren (Österrike-Ungern) / Fredsfördrag med tillägg). Your catalogue lists two documents under this code; I ask only for document (b): "Konung Karl XI:s fullmakt för svenske kommissarierna, Nääs, 6 maj 1677. Latin, delvis i chiffer. Papper, 3 sidor text, sigill." -- all three pages of text, and the seal side if it carries any writing. Document (a), Stockholm 12 April 1676, is not needed.
+
+The reason: the catalogue describes document (b) as partly in cipher, and we have not found its cipher passage printed or deciphered anywhere. We checked that Sverges traktater med främmande magter has no part covering 1648-1723 (LIBRIS lists the series running from D. 6, 1646-1648, to D. 8, 1723-1771), searched the full text of 27 scans of the printed Nijmegen congress papers (Actes et mémoires, the 1678 Recueil, St Disdier and Dumont's Corps universel diplomatique) for the Nääs full power without finding it (a search of OCR text, conclusive only for the 12 scans where a control name was found), and read the Swedish full power printed in the German Nimwegisch Friedens-Memorial of 1680 (pp. 102-104): it is the 12 April 1676 instrument, your document (a), not the 1677 one. The record also shows the document is not digitised. If (b) follows the formulary of (a), the printed 1676 text may help read its plain-Latin parts, and so where the cipher passage sits; the full record of these checks is at the link below.
+
+If a scan is not possible and the document must be consulted in the reading room, I would be grateful to know. Anything we read from the copy will be published in the repository with a citation of Riksarkivet and the reference code, and sent to you if it is of interest.
+
+Thank you for your help.
+
+[SIGN-OFF]
+Project repository: https://github.com/NoAutopilot/cipher-lab
+Record of checks: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/ra-karlxi-fullmakt-1677/NOTES.md

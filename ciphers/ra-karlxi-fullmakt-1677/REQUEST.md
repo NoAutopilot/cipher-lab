@@ -1,10 +1,13 @@
 # Archive request — ra-karlxi-fullmakt-1677
 
-**Gated — do not send.** NOTES.md's edition search (Sverges traktater med främmande magter, volume covering
-1672-1697) is inconclusive, not negative. Resolve that first; a copy order is wasted if the document is already
-in print with its cipher passage either deciphered in the edition or simply omitted/noted as illegible.
+**Gate cleared (9 Oct 2026, KARL-REQ).** The edition question this file was gated on is settled: Sverges traktater med
+främmande magter has no part covering 1648-1723 (NOTES.md "Check-solved (LANE CX2, 25 Sep 2026)" item 1 and "NX-UNBLOCK
+(26 Sept 2026)", LIBRIS xsearch), and the later print passes found no printing of document (b) (RUN1/RUN3/R8-KARL3 be-api fts
+over 27 Nijmegen-congress scans, 0 hits; R9-KARL4 page read: the Swedish Vollmacht in the German 1680 Actes is document (a),
+12 April 1676). The copy order is drafted as `outreach/riksarkivet-karlxi-1677.md` (status drafted, gate-7 check pending;
+ASKS 159; to be folded with ASKS 132, the Celsing copy order, under outreach rule 1c).
 
-Riksarkivet i Stockholm/Täby, reading-room copy order (reproduction), once cleared. No personal data of the
+Riksarkivet i Stockholm/Täby, reading-room copy order (reproduction); gate cleared 9 Oct 2026. No personal data of the
 requester is recorded here.
 
 - **Fonds:** Originaltraktater med främmande makter (traktater) / Tyskland / Kejsaren (Österrike-Ungern) /
@@ -15,4 +18,4 @@ requester is recorded here.
   requested.)
 - **Not digitised** — confirmed via `data.riksarkivet.se/api/records`, 24 Sept 2026.
 
-Status: blocked on the edition search, not yet waiting on the person.
+Status (9 Oct 2026): drafted in outreach/riksarkivet-karlxi-1677.md; waiting on the gate-7 check, then the person's send (ASKS 159).

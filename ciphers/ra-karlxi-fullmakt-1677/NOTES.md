@@ -452,7 +452,7 @@ grepped for the Swedish full power, then read the page images (archive.org `page
 Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not been located in any print or image (0 of 1 target document found)
 - Bakeš 2014 thesis full text - blocker: needs-physical-access; theses.cz "Soubory jsou nedostupné" and dk.upce.cz 10195/58052 PDF and text answer 401 without a Pardubice login (D2B-KARL section above); a person can use the repository's own request route or a Pardubice reader
 - Bakeš 2015/2016 ČČH articles (dk.upce.cz 10195/66550, 67724) - blocker: needs-physical-access; "Pouze v rámci univerzity", text bitstreams HTTP 401, no open copy via OpenAlex or Google Books (R8-KARL2 section above); the 2018 dissertation (10195/72172, open, 465 pp.) was grepped in full with 0 hits for the 1677 Nääs full power
-- Riksarkivet owner/copy route - blocker: waiting-on the Riksarkivet reply to REQUEST.md; the owner-side copy request is unanswered
+- Riksarkivet owner/copy route - blocker: waiting-on ASKS 159 (copy order drafted 9 Oct 2026 as outreach/riksarkivet-karlxi-1677.md; gate-7 check, then the person's send, then Riksarkivet's quotation); before 9 Oct no request had been drafted or sent (WAIT-PASS-4)
 
 ## Escalation (R8-KARL3, 6 Oct 2026; updated R9-KARL4)
 - [x] siblings: Emperor-Sweden sibling instruments checked (A2P4-KARL page read)
@@ -462,11 +462,25 @@ Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not
 - [n/a] key-rebuild: no cipher key involved
 - [x] image-check: title page and page read via A2P4-KARL, Hathi H4
 - [x] retry: be-api retried 4 Oct 2026 (RUN1-KARL, RUN3-KARL); dk.upce.cz 401 not retried (auth gate, not a transient)
-Verdict: parked: every remaining gap is outside-blocked (Bakeš texts needs-physical-access; Riksarkivet copy waiting-on REQUEST.md reply); the printed 1676 sibling (document a) is a possible crib once an image of (b) arrives
+Verdict: parked: every remaining gap is outside-blocked (Bakeš texts needs-physical-access; Riksarkivet copy waiting-on ASKS 159, draft outreach/riksarkivet-karlxi-1677.md, gate-7 check pending); the printed 1676 sibling (document a) is a possible crib once an image of (b) arrives
 
 ## While waiting (9 Oct 2026, WAIT-PASS-4)
 
 Waits on: an image of document (b), Nääs 6 May 1677, from Riksarkivet (Verdict, R8-KARL3/R9-KARL4, 6 Oct 2026). Found this pass: REQUEST.md still reads "Gated -- do not send" and "blocked on the edition search", though NX-UNBLOCK settled that question on 26 Sept 2026, and no ASKS.md, SEND-QUEUE.tsv or outreach/ row for this copy order exists (grep, 9 Oct 2026); so the request the Verdict waits on may never have been made.
-- Refresh REQUEST.md's gate line and draft the Riksarkivet copy order in outreach/ (gate 7 check, then an ASKS row), since nothing shows it was ever sent; S
 - Transcribe the 12 Apr 1676 Vollmacht (document a) from IA bub_gb_mUtFAAAAcAAJ pp. 102-104 (leaves n137-n139, image-checked by R9-KARL4) into a crib file aligned clause by clause, ready for (b)'s clear parts; S
 - Search Riksarkivet's data.riksarkivet.se API for Karl XI-era chancery cipher keys (chifferklaver, Kanslikollegium 1675-1680) so a key is on disk when (b)'s cipher passage arrives; S
+- [done 9 Oct 2026, KARL-REQ] Refresh REQUEST.md's gate line and draft the Riksarkivet copy order in outreach/ (gate 7 check, then an ASKS row), since nothing shows it was ever sent; S
+
+## Copy order drafted (KARL-REQ, account-2 worker for orchestrator account-4, 9 Oct 2026, 10:13-10:3x UTC by date -u)
+- Gate: cleared. REQUEST.md's "Gated -- do not send ... blocked on the edition search" was stale: CX2 (25 Sept, item 1) and NX-UNBLOCK (26 Sept)
+  settled the Sverges traktater question (no part covers 1648-1723), and RUN1/RUN3/R8-KARL3/R9-KARL4 found no printing of document (b).
+  REQUEST.md's gate line now says so, citing those sections. `intake_gate_check.py` passes; `prior_work.py --step-type lookup`: 2 LEADs, both
+  own-claim lines (WAIT-PASS-4, closed by its done line; this session), recorded DONE in prior-work.tsv.
+- Draft: outreach/riksarkivet-karlxi-1677.md, status drafted, no `checked:` line (gate 7 is a separate session). Recipient
+  riksarkivet@riksarkivet.se, read on https://riksarkivet.se/om-riksarkivet/kontakta-oss 9 Oct 2026; the same page recommends the web forms
+  (bestall.riksarkivet.se, "Other inquiries"), named in the draft header as the alternative. Prior contact: none (mailbox, all folders, 0 threads;
+  CONTRIBUTIONS.md 0 rows). Holdings: none.
+- Rule 1c flag: ASKS 132 is a second, never-drafted Riksarkivet copy order (ra-celsing-sillen-1755); the draft header says to fold the two or hold one.
+- Rows: ASKS 159 (backlog), CONTRIBUTIONS.md (drafted, not sent). Nothing sent. Requests: riksarkivet.se 5 (2 curl, 3 browser_fetch; one 404-style
+  page at /bestall-kopior), Gmail search 1.
+
