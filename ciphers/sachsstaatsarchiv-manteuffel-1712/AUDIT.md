@@ -1538,6 +1538,7 @@ Unsafe: "deciphered", "partially deciphered", any first/new/unpublished wording;
 with a probable comma, not 'bernau' plus a seventh code. The solver had it at M low, so the grades do not change. (c) The transcription stays as
 committed. A verifier does not edit it. Owed by the lane (one job, about $0.5): r04 pos 7 to punctuation and r01 pos 3 to 26 (agreeing with three
 eyes), then re-run the --check scripts and the gate. The gate result would be expected to hold at 31 letters, but that is not computed here.
+    Fix applied 0a781d4e4 (MANT-0177, 9 Oct 2026): r04 pos 7 removed as a comma, r01 pos 3 = 26; --check exit 0; gate (b) PASS holds (-1.277 vs p95 -1.665, 0/1000; S27 M3 U0, 30 tokens).
 (d) Next print checks before any further reading of this letter: Berner (1901) and Bonnesen (1918) by date and the names Meyerfeldt/Bernau, and 0177
 for the letter's end. The 0177 reading may identify 'le vieux'.
 Requests this audit: archive.org 4 (djvu 1, advancedsearch 3); be-api.us.archive.org 7 by hand + 5 print_check; api.openalex.org 6 (print_check);
