@@ -1,0 +1,19 @@
+Q01	best=H	second=M	confidence=medium	n-shaped sign with right leg descending into a leftward hook (ŋ-like); H cell is circled
+Q02	best=F	second=R	confidence=high	ϖ (pi-omega): flat top bar over a w-shaped body; F cell is circled
+Q03	best=P	second=H	confidence=medium	m-shape with the right leg extended into a long descender; P cell is circled
+Q04	best=F	second=R	confidence=high	ϖ with a heavy top bar
+Q05	best=F	second=R	confidence=low	faint ϖ, top bar over a w body, ink weak
+Q06	best=A	second=O	confidence=low	stroke from the left forming a loop at upper right, then a diagonal down-left ending in a hook (looped ℓ/ρ-like); A cell is circled
+Q07	best=O	second=U	confidence=high	large X whose lower-right arm curls into a small loop/hook
+Q08	best=F	second=R	confidence=medium	ϖ/π with a flat top bar, faint
+Q09	best=F	second=R	confidence=high	clear ϖ with a top bar
+Q10	best=F	second=R	confidence=medium	ϖ with a top bar; small stroke above it, likely a neighbour or a mark
+Q11	best=F	second=Q	confidence=low	faint w/ϖ cut off by the dark page edge at right
+Q12	best=A	second=O	confidence=medium	same shape as Q06: top-right loop with a diagonal tail down-left ending in a hook
+Q13	best=B	second=L	confidence=medium	k-like sign: tall stem with a looped arm and a leg to the right
+Q14	best=O	second=U	confidence=high	X with a loop at the end of the lower-right stroke, same as Q07
+Q15	best=C	second=H	confidence=medium	y-shape: two upper strokes with a long tail curving down-left, faint
+Q16	best=Q	second=F	confidence=medium	open ω/w without a top bar; Q cell is circled
+Q17	best=L	second=B	confidence=medium	vertical stem with a loop at upper right and a horizontal crossbar
+Q18	best=F	second=R	confidence=high	ϖ with a top bar
+Q19	best=Q	second=F	confidence=medium	slanted w/ω, no clear top bar

@@ -148,3 +148,9 @@ R12A-PISRS (6 Oct 2026; pisrs/PREREG_t36commit.md): the 4 f.275r labels committe
 | G2 agreement, reader B (D1A-PISG2) | same | 0.691 | -- | -- | >= 0.80 | FAIL -- second failure: untestable by this instrument (blind single-call reader) at this length, not refuted |
 | reconciled (D1A-PISG2, copy seen) | same, 724 letters (pisg/pisg_result_R.json) | 0.945 | 0.467 | 0.428 | descriptive, not gated | -- |
 No key86 change (running-text gloss, no sign-level value; T40 not covered).
+
+## UNA-PISA per-token crop compare (9 Oct 2026)
+| hypothesis | instrument | control | target | verdict |
+|---|---|---|---|---|
+| f.301v/f.302v T57-labelled signs are the table's T32 (n) | blind Opus tile vs 22 table cells (una_pisa/, PREREG-UNA-PISA.md) | known-answer GK 4/5, 5/5, 5/5 | 11 of 15 located settle T32, 2 settle T57, 2 unsettled | key-cell rule not met (2 on T57); label-merge candidate (barred varpi = T32 n vs open omega = T57 la); key86 unchanged; next: pre-registered relabel re-score of the 11 |
+| T47 -> f, T45 -> u (remap witnesses) | same | same | T47: 2 of 5 settle T27 (f), 0 on T47; T45: 1 on T45, 1 on T19 (u) | too few tokens; untested at this N, not refuted |
