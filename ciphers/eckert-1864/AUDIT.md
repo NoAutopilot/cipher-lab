@@ -8670,3 +8670,102 @@ the propagation below.
   of the day settles it. The reader's "10 Oct 1864" came from the transcription's digit, which a side-by-side crop with the leaf's own "15"
   shows to be a 5. Still open: the other hit pages of 15-17 Oct (New York Dispatch 16 Oct p.1, Daily National Intelligencer 15 Oct p.3) for
   the hour of sailing; Google Books (429); the Light-House Board report of Dec 1864.
+
+## AUDIT (CONF-FM)
+
+CONF-FM, 9 Oct 2026 (10:49-11:0x UTC by `date -u`), account 1, for LANE LEDGER; verifier, a session separate from every reader (FM-R4a and
+its fixers). Short-form verifier (CLAUDE.md template, steps 1-5 compressed) for the four FM-R4a entries the reader filed with a clear copy or a
+print location: **E250, E254, E257** (claimed clear copies at Huntington pointers 10490, 9913, 4823) and **E255** (claimed in OR I/39 pt 3).
+Key source for all four: `period` (War Department Cipher No. 1, `key.md`, rebuilt from the period cipher book).
+
+### 1. Duplicate diff and prior work
+- Pointers 5770, 5829, 5797, 5774 occur in `ciphertext*.txt` only in their own E-headers (5770 also as E217 = 5770/0, a different entry);
+  no other filed header has the same date and addressee. No duplicate.
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=mssEC 25;folio=<ptr>;date=<d>' --step-type audit --offline`, each of the four:
+  exit 4, "LEAD adhoc-*:1-own:bef257" (the target-level own-work lead: FM-R4a's reading itself, which is what is audited here),
+  "3-solver CLEAR (no cached solver file names this unit)", "4-editions UNCHECKED (item names no sender or recipient)" -- the edition
+  check was run by hand below.
+- Holder: `fortmonroe/conf_fm_hdl.py` (dmGetItemInfo, p16003coll11) for 10490, 9913, 4823 (and 5820, 5821 for the key test below), saved
+  to `fortmonroe/conf_fm_hdl.json`; `fortmonroe/conf_fm_q.py` (CISOSEARCHALL "binney outlay" 2 hits, "binney brice" 3 hits: only 5829
+  itself, 9913 and 5857, a Jan 1865 Binney telegram, other text) -> `conf_fm_q.out`.
+- Edition: OR ser. I vol. 39 pt 3 `_djvu.txt` (archive.org `warofrebellion393unit`, 1 request), grep "Caperton", "Van Duzer".
+
+### 2. Diff against the clear copy / print (normalised: one case, abbreviations expanded, sound-spellings joined -- rule 3 PX-BRODEC)
+
+**E250 (5770/1) vs pointer 10490, Page 348** ("415 AM 13th Maj Eckert Ft Monroe July 12 64 / 2 following just recd & is forwarded for
+information of War Dept ---- Havre de Grace July 12th for Gen Grant City Point ---- the Maj Gen commanding Middle Dept Eighth Corps ordered me
+upon my arrival here to learn whether telegraph com with you was intact ---- To in form that yesterday after noon a fight was going on seven
+miles from Washn DC on Seventh Street road near Silver Spring ---- that he had but Eleven thousand troops all told including Ricketts men in
+Balto sig Respectfully Wm M Este Maj & A D C finis"). **The same telegram, the whole of it** (FM-R4a's "second half" undersold it: the clear
+copy starts at "following just received"; it is the Washington received copy, 4.15 AM 13 July). Code groups, 29: agree with the clear copy
+26 (Helen = 2 [PM], the copy's leading "2"; quadroon = Dept; zebra, unity, pekin, pedlar = stops; forbid = 12; Jersey = Grant; Blubber =
+City Point; Tappan shelby polkaing = Maj Gen commanding; quadrant = Dept; platina = Eighth; pelham = Corps; ravish = fight; postpone spoons
+= seven miles; growl = Washington; fence waldo = eleven thousand; whistle = troops; spit = men; Baptism = Baltimore; youth = signed;
+taunton = Maj); read by the decoder as plain, supplied by the clear copy 3 (**swede = information; wreathic = telegraph** (key has
+Wreathe = Telegraph, p.24 l.9); **plation = com[munication]**) -- C, candidates, not written to key.md. Plain words: "Have her D grass" =
+Havre de Grace (clear copy; FM-R4a's opening M "Helen ... Jersey Blubber" is now read in full). **Decoder slips (for a FIX worker, not
+applied here):** "Silver spring" is plain in the clear copy but rendered as code [Head Quarters] [Has, or have been, reinforced] (key
+Silver, Spring); "William M Este" rendered "[100] M Este" (key William = 100). Disagreements in substance: none.
+
+**E257 (5774/0) vs pointer 4823, Page 382** ("810 pm J W Sampson Balto Fort Monroe July 25th 1864 / Ft Monroe 2 pm July 25th Com Purviance
+light house Inspr Balto . Capt gale keeper of Lightship mouth of York river asks to have his vessel moved back to obstructions in Elizabeth
+river , reports her present position dangerous as Yorktown is evacuated . I know of no service he can render where he now is so far as the
+Army is concerned Herman Biggs Lt Col & QM"). **The same telegram** (Baltimore's received copy, 8.10 PM; it omits Sheldon's own tail "nothing
+new here today"). Code groups, 22: agree 20 (Appian = Monroe; Helen = 2 PM; harrow person = 25; baptism = Baltimore; unity, pedlar, zodiac =
+stops; pilgrim = Captain; windsor, windpipe = River; bangor = Elizabeth; wicks = reports; vesper = position; quaker = danger[ous]; hastings =
+Yorktown; relayed = evacuated; oyster = Army; pandora = Colonel; vincent = Quartermaster); no counterpart 2 (pekin = comma; webster =
+signed, H passim). Plain: "door Purviance" = clear "Com[modore] Purviance" (M, the clerk's "Commo-" not in the cipher copy); "Gayle" =
+"gale" (spelling only). **Decoder slip:** the address line's plain "Sampson" is rendered [Ferry] (key Sampson = Ferry); the reading.md
+line should open "J. W. Sampson, Baltimore". Disagreements in substance: none.
+
+**E255 (5797/0) vs OR ser. I vol. 39 pt 3, p.334** (page header "334" at djvu line 27835, telegram lines 27866-27877, next header "335";
+**FM-R4a's "about 336" is p.334**): "Nashville, Tenn., October 17, 1864 -- 8 p.m. (Received 11 p.m.) Maj. T. T. Eckert: Sherman was this
+morning in Ship's Gap, in Taylor's Ridge, watching Hood, who was north of him, and threatening equally Bridgeport, the great trestle near
+Whiteside's, and the Tennessee crossing, at Caperton's Ferry. From Atlanta I hear that they are plentifully supplied, foraging parties being
+able to supply the garrison entirely, bringing in from one trip 400 wagon-loads of subsistence stores. Railroad is all right from Atlanta to
+Resaca. J. C. Van Duzer." **The same telegram** (same sender, date, hour; the ledger copy is addressed "S. H. Beckwith 'U. S.'", the print to
+Eckert). Code groups: every one agrees with the print (Nancy Kidnap = Sherman; sharper = Gap; handle = Hood; tremble = north; weighing =
+threatening; bethel = Tennessee; pocketing = crossing; salmon = Ferry; bonner, bishop = Atlanta; shakering = foraging; penny publish = 400;
+woolwich = subsistence; welch = Railroad; webster = signed). **Decoder slips:** plain "Taylors ridge watching" rendered [Mountain]'s
+[Enemy] [Surrender]ing (key Taylor, Ridge, Watching) and plain "white side" rendered "[Report] side" (key White = Report); print has
+"Taylor's Ridge, watching" and "Whiteside's". Tail "Van are you now boys" is operator chat, not in print. Disagreements in substance: none.
+
+**E254 (5829/0) vs pointer 9913 (mssEC 18) Page 247 entry 1: NOT a clear copy.** 9913 is Washington's **sent copy of the same cipher
+text**: it carries the same code groups ("Lucy Knox ... Tappan Binney toupee plug mos. pay ... Walrus B W Brice Ahr to tappan Binney chf
+Pay Mr famish Pay plunge mos. pay ... authority of Knave"), so it confirms the plain words and the transcription, not the code meanings
+(precedent: E212, "the sent copy of the same cipher text, not a plaintext", FV-FM5a/AUD2). Word diff of the plain words: agree except
+"continue" (5829) vs "contrive" (9913) and the receiving clerk's sound-spellings ("Yuma" = you may, "bayou inure" = by you in your, "Reese
+supply" = re-supply, "hole" = whole). Code groups 12: Lucy = 5 PM (9913's header "No 1 5 PM" agrees), **Knocks = Knox = Butler** (9913 writes
+"Knox"; key Knox = Maj Gen B. F. Butler; the decoder left it M), Tappan x2, Taunton = Major, plug, plunge = 1, famish = Norfolk, Knave =
+Butler, walrus = signed, unity, Zebra = stops: 12 H of 12 once "Knocks" is read as Knox (decoder slip, `variant:` for a FIX worker). Holder
+full-text search finds no clear copy (section 1).
+
+### 3. Classification (key `period`)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E250** Este (Havre de Grace) via Sheldon to Eckert for the War Dept and Grant, 12 July 1864 | **N1** (plain text in the holder's public transcription of the received clear copy, pointer 10490) | yes (holder's transcription) | **D3** | 100 (26 H agreeing + 3 C of 29) | code clause: Jersey = Grant, Blubber = City Point, growl = Washington passim; external non-statistical: clear copy 10490; image not viewed (FM-R4a transcription-only; not viewed here) |
+| **E255** Van Duzer (Nashville) to Eckert/Beckwith, 17 Oct 1864 8 PM | **N1** (printed, OR I/39 pt 3 p.334) | yes (print) | **D3** | 100 (all code groups agree with print) | code clause: bonner/bishop = Atlanta, handle = Hood; external: the print |
+| **E257** Biggs via Sheldon to Sampson, Baltimore, for Com. Purviance, 25 July 1864 | **N1** (clear copy 4823) | yes (holder's transcription) | **D3** | 100 (20 agree + 2 H no counterpart, of 22) | code clause: baptism = Baltimore, hastings = Yorktown, relayed = evacuated; external: clear copy 4823 |
+| **E254** Brice (Acting Paymaster General) to Sheldon for Butler, 12 Dec 1864 | **not N1: no class assigned here** (9913 is the sent cipher copy; no clear copy, no print located by FM-R4a's OR/Grant Papers searches or the holder's full text) | no | D2 (provisional, the full verifier sets it) | 100 (12 H of 12 with Knocks = Knox) | external: the sent copy confirms the transcription and the 5 PM time word only |
+
+- **E250: N1.** Safe sentence: "Read with War Department Cipher No. 1 against the period clear copy in the Eckert Papers (Huntington
+  pointer 10490), whose plain text is in the Huntington's public transcription; our reading is an independent re-decipherment of the Fort
+  Monroe cipher copy." Unsafe: any novelty word. Depth sentence (mine): "On 12 July 1864 Fort Monroe forwarded to the War Department Maj.
+  Este's report from Havre de Grace that the day before a fight had been going on seven miles from Washington on the Seventh Street road near
+  Silver Spring, and that Wallace had only eleven thousand troops in all, Ricketts's men included."
+- **E255: N1.** Safe sentence: "The Fort Monroe ledger's cipher copy reads, with the period key, to Van Duzer's telegram of 17 Oct 1864
+  printed in OR ser. I vol. 39 pt 3 p.334." Unsafe: "not located in print". Depth sentence: "Van Duzer reported from Nashville on 17 Oct 1864
+  that Sherman was in Ship's Gap watching Hood and that the railroad was in order from Atlanta to Resaca."
+- **E257: N1.** Safe sentence: as E250, clear copy pointer 4823. Depth sentence: "On 25 July 1864 Lt. Col. Biggs passed to the Baltimore
+  light-house inspector the request of the keeper of the York River light-ship to move her back to the Elizabeth River obstructions, since
+  Yorktown had been evacuated."
+- **E254:** the brief's premise ("clear copy at 9913") does not hold; N1 is not supported. Not classed here (a full first verifier owns
+  N2/N3: recipient-side Butler V, OR I/42 pt 3 by Binney, the Paymaster General's letters; next step named in NOTES "## CONF-FM").
+
+status.json: rows for E250, E255, E257 (`text: known`, key `period`); none for E254. No SECOND-OPINIONS-QUEUE rows (N1).
+
+### 4. Postmortem
+FM-R4a's three "clear copy" claims: two are clear copies (E250, E257) and one is the sender's cipher copy (E254) -- the precedent E212
+already said a sent copy is not a plaintext; the reader's prefilter label "clear sibling" was taken at its word. FM-R4a undersold E250's
+copy ("second half"; it is the whole text) and mis-paged E255 (p.334, not about 336). Decoder slips for a FIX worker (not applied):
+E250 plain Silver Spring, William; E255 plain Taylor's Ridge, watching, Whiteside; E257 plain Sampson; E254 Knocks = Knox (Butler).

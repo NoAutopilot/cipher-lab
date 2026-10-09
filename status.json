@@ -9789,6 +9789,132 @@
       "decode_status": "Partially decrypted",
       "depth_by": "session_01HTLxe5PqcTKDaUMmL5hXxK",
       "depth_date": "9 Oct 2026"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM)' section 3",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Maj. W. M. Este (Havre de Grace) via Fort Monroe to Maj. Eckert for the War Department and Grant, 12 July 1864, the fight near Silver Spring (E250)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the period clear copy in the Eckert Papers (Huntington pointer 10490, Page 348, in the holder's public transcription): Este reports a fight seven miles from Washington near Silver Spring and only eleven thousand troops in hand.",
+      "gap": "plain text known from the holder's public transcription of the received clear copy (pointer 10490); no novelty. Decoder slips (Silver Spring, William) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "29 H/C of 29 code-word groups (26 H agreeing with the clear copy, 3 C supplied by it: swede, wreathic, plation)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.226, pointer 5770, E250"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.226, pointer 5770, E250",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.226, pointer 5770, E250"
+      ],
+      "depth_sentence": "On 12 July 1864 Fort Monroe forwarded to the War Department Maj. Este's report from Havre de Grace that a fight had been going on the day before seven miles from Washington on the Seventh Street road near Silver Spring.",
+      "depth_check": "code clause: Jersey = Grant, Blubber = City Point, growl = Washington passim; external non-statistical: clear copy 10490",
+      "depth_note": "29 H/C of 29 code-word groups (26 H agreeing with the clear copy, 3 C supplied by it: swede, wreathic, plation)",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM)' section 3",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): J. C. Van Duzer (Nashville) to Washington (ledger: S. H. Beckwith; print: Maj. T. T. Eckert), 17 Oct 1864 8 PM, Sherman at Ship's Gap watching Hood (E255)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to Van Duzer's telegram printed in OR ser. I vol. 39 pt 3 p.334 (Nashville, 17 Oct 1864, 8 p.m., to Maj. T. T. Eckert).",
+      "gap": "printed text exists (OR I/39 pt 3 p.334); no novelty. Decoder slips (Taylor's Ridge, watching, Whiteside) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "all code-word groups agree with the print (H 20, C 1)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.253, pointer 5797, E255"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.253, pointer 5797, E255",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.253, pointer 5797, E255"
+      ],
+      "depth_sentence": "Van Duzer reported from Nashville on 17 Oct 1864 that Sherman was in Ship's Gap watching Hood and that the railroad was in order from Atlanta to Resaca.",
+      "depth_check": "code clause: bonner/bishop = Atlanta, handle = Hood; external: OR I/39 pt 3 p.334",
+      "depth_note": "all code-word groups agree with the print (H 20, C 1)",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (CONF-FM)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "CONF-FM verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (CONF-FM)' section 3",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), decoder slips listed in AUDIT (CONF-FM) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Fort Monroe ledger): Lt. Col. H. Biggs via Fort Monroe to J. W. Sampson, Baltimore, for Com. Purviance, light-house inspector, 25 July 1864, the York River light-ship (E257)",
+      "line": "The Cipher No. 1 ledger copy reads, with the period key, to the period clear copy in the Eckert Papers (Huntington pointer 4823, Page 382, in the holder's public transcription): the York River light-ship's keeper asks to move her back to the Elizabeth River obstructions, Yorktown being evacuated.",
+      "gap": "plain text known from the holder's public transcription of the received clear copy (pointer 4823); no novelty. Decoder slip (address Sampson) pending a FIX worker.",
+      "depth": "D3",
+      "completeness": "22 H of 22 code-word groups (20 checked against the clear copy)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.230, pointer 5774, E257"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.230, pointer 5774, E257",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.230, pointer 5774, E257"
+      ],
+      "depth_sentence": "On 25 July 1864 Lt. Col. Biggs passed to the Baltimore light-house inspector the request of the York River light-ship's keeper to move her back to the Elizabeth River obstructions, since Yorktown had been evacuated.",
+      "depth_check": "code clause: baptism = Baltimore, hastings = Yorktown, relayed = evacuated; external non-statistical: clear copy 4823",
+      "depth_note": "22 H of 22 code-word groups (20 checked against the clear copy)",
+      "text": "known"
     }
   ],
   "lanes": [
