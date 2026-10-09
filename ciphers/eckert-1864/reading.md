@@ -1409,5 +1409,65 @@ Code-word tokens: H 14.
 
 Code-word tokens: H 12.
 
-Totals over the 213 entries: H 3606, C 32, I 24, M 32, U 10.
+**E270 | Page 257 | 5801 | mssEC 25 (obj 5952, pointer 5801), 1 Nov 1864 Ft Monroe, R. O'Brien (Butler's Hd Qrs, Army of the James) to Sheldon, for Maj. Gen. Terry near Varina: Butler leaves for Washington, Lt. Col. Smith to attend (FM-R5a, 9 Oct 2026; row 5801/0; image-read, transcription agrees; no clear copy found at another pointer)**
+
+R OBrien Hd Qrs A. of J. {time: 7 PM} [Monroe] for [Major] [General] Terry [Command = Er (-ed, -ing)]ing [Near] Varina [.] I leave for [Washington] tonight [.] [In the meantime] all I think Wilby quiet [.] Lieutenant [Colonel] Smith will attend to [Necessary] quadrantal matters  {tail: [signed] [Maj Gen B. F. Butler] [.] repeat this to [Colonel] Smith assistant [Adjt Genl. U.S.] how are you Geo D Sheldon}
+
+Code-word tokens: H 18.
+
+**E271 | Page 128 | 5641 | mssEC 25 (obj 5952, pointer 5641), 1 May 1864 Ft Monroe, Sheldon to S. H. Beckwith at Culpepper for Grant: one iron-clad arrived, two more due, four gunboats due, Gillmore not yet arrived; a clear period copy stands at pointer 4587, Page 146, and Butler's Private and Official Correspondence IV prints it; trailing second text ("would it meet your views to have new Man at ...", signed S.) not matched to a clear copy (FM-R5a; row 5641/1; transcription-only)**
+
+SH Beckwith Culpepper for [Maj Genl U.S. Grant] [.] [1] ironic lad arrived [,] [2] more now due [.] [4] [Gunboat]'s due besides [.] [Gen Q. A. Gillmore] not yet arrived  {tail: [signed] Knocks Geo D Sheldon E . would it meet your views to have new Man at [Yorktown] and [Harass (-ed, -ing)] at [Monroe] would please all better am sure S.}
+
+Code-word tokens: H 14.
+
+**E272 | Page 237 | 5768 | mssEC 25 (obj 5952, pointer 5768), 10 July 1864 10.15 AM Ft Monroe, S. H. Beckwith (Hd Qrs U.S.A.) to Sheldon, for Brig. Gen. John A. Rawlins: none of the 19th Corps has arrived, signed J. W. Shaffer (FM-R5a; row 5768/2; image-read at the date line and tail; no clear copy found)**
+
+S. H. Beckwith Hd Qrs U. S. A. For [Brigadier General] [Maj Genl U.S. Grant] A. Rawlins Sheaf Staff [City Point] [.] There has none [Of the] [19] [Army] [Corps] arrived yet [.] [General-in-Chief] has [Telegraph (-ed, -ing)]d to have them sent to [Washington] [As soon as] they arrive  {tail: [signed] J. W. Shaffer [Colonel] and chief of staff pleasant morning Geo. D. Sheldon}
+
+Code-word tokens: H 15.
+
+**E273 | Page 234 | 5724 | mssEC 25 (obj 5952, pointer 5724), 31 May 1864 9.30 PM Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: pay-steamer not obstructed to White House, enemy reported at mouth of the Chickahominy with a pontoon train, signed Herman Biggs; a clear period copy stands at pointer 10376, Page 234 (FM-R5a; row 5724/2; transcription-only)**
+
+Maj Eckert Di for [Qr Master Genl U.S.] [.] your dispatch received [.] the pay monkey is not obstructed to what house [.] the [Enemy] are [Report]ed in some [Force] at mouth of [Huntsville] hominy with [Pontoon] train which I dont believe  {tail: [signed] her man Big Chief [Quartermaster] {time: 9.30 PM} warm evening Geo D. Sheldon}
+
+Code-word tokens: H 12.
+
+**E274 | Page 152 | 5645 | mssEC 25 (obj 5952, pointer 5645), 2 May 1864 4.30 PM Ft Monroe, Sheldon to S. H. Beckwith for Gen. Grant: letter from Gillmore, he comes with the last detachment, signed Butler; a clear period copy stands at pointer 4593, Page 152 (FM-R5a; row 5645/2; transcription-only)**
+
+S. H. Beckwith for [Maj Genl U.S. Grant] [.] letter just received from [Gen Q. A. Gillmore] which states that he would start yesterday which would bring him here to night or [Tomorrow] morning [.] he comes with the last [Detach (-ed, -ing)] meant  {tail: [signed] Knocks {time: 4.30 PM} how you get along Geo D Sheldon}
+
+Code-word tokens: H 8.
+
+**E275 | Page 280 | 5824 | mssEC 25 (obj 5952, pointer 5824), 9 Dec 1864 3.30 PM Ft Monroe, Sheldon to Maj. Eckert for Capt. Allen, Quartermaster: no boots to spare, signed Capt. James, Quartermaster (FM-R5a; row 5824/0; image-read, transcription agrees; no clear copy found)**
+
+Maj Eckert Di {time: 3.30 PM} [Captain] Allen [Quartermaster] [Washington] [.] we have know boots of any kind to spare [.] Have been waiting [2] days for boots to [Transport (-ed, -ing)] [1000] [Cavalry] and have not yet succeeded in getting them  {tail: [signed] [Captain] James [Quartermaster] Geo D Sheldon}
+
+Code-word tokens: H 14.
+
+**E276 | Page 52 | 5582 | mssEC 25 (obj 5952, pointer 5582), 12 Mar 1864 Ft Monroe, Sheldon to Maj. Gen. Pleasonton from Kilpatrick: men all embarked by tomorrow noon, will report in person Tuesday; a clear period copy stands at pointer 4493, Page 52, and OR I/33 prints it (FM-R5a; row 5582/1; transcription-only)**
+
+Lt Caldwell Hd Qrs A. of P. from [Yorktown] {date: Mar 12} {time: 11 AM} for [Major] [General] pleasant on [.] my [Men] will all have [Embark (-ed, -ing)]ed by [Tomorrow] {time: 12} [.] I will [Report] in [5] on Tuesday  {tail: [signed] Jay Kill pay trick [Brigadier General] [Volunteer]'s Geo D Sheldon}
+
+Code-word tokens: H 16.
+
+**E277 | Page 258 | 5802 | mssEC 25 (obj 5952, pointer 5802), 2 Nov 1864 Ft Monroe, R. O'Brien (Hd Qrs A. of J.) to Sheldon, for Col. Howard, chief of artillery: strength of batteries and style of guns, signed Fred Martin (FM-R5a; row 5802/1; image-read, transcription agrees; no clear copy found)**
+
+R OBrien Hd Qrs A. of J. {time: 10 AM} [Monroe] for [Colonel] Howard chief [Artillery] pause Let me know the strength of each [Battery] and the style of [Gun] [In the] [2] last mentioned [Battery]'s please send word at once  {tail: [signed] Fred Martin [Captain] Geo D Sheldon}
+
+Code-word tokens: H 11.
+
+**E278 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 13 Dec 1864 1 PM Ft Monroe, Sheldon to S. H. Beckwith at City Point for Gen. Ingalls: the few remaining vessels of the fleet to get away this evening (FM-R5a; row 5829/2; image-read, transcription agrees; no clear copy found)**
+
+S. H. Beckwith City Point . {time: 1 PM} for In galls [.] mast [Of the] fleet [Left] during last night I do not know when the few remaining will get away but I presume this evening .  {tail: [signed] are see [signed] [Colonel] and [Quartermaster] . Geo. D. Sheldon}
+
+Code-word tokens: H 8.
+
+**E279 | Page 96 | 5609 | mssEC 25 (obj 5952, pointer 5609), 17 Apr 1864 8 PM Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: Gillmore has no shelter tents, 20,000 asked, signed Butler; a clear period copy stands at pointer 10238, Page 96 (FM-R5a; row 5609/0; transcription-only)**
+
+Maj Eckert Di for [Qr Master Genl U.S.] [.] [Gen Q. A. Gillmore] has written saying that he has no [General] tents & asking that I be prepared to supply him with [20000] [.] the last requisition was for him  {tail: [signed] [Maj Gen B. F. Butler] {time: 8 PM} Geo D Sheldon}
+
+Code-word tokens: H 10.
+
+Totals over the 223 entries: H 3732, C 32, I 24, M 32, U 10.
 <!-- decode.py: derived block ends -->
