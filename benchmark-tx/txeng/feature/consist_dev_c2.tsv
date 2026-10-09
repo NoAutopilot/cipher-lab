@@ -1,0 +1,186 @@
+line	pos	sign	n_written	contra	features_contradicted	wrong
+f178v_L07	1	T90	7	1	bars	0
+f178v_L07	2	T86	7	2	desc,asc	0
+f178v_L07	3	T60	7	3	desc,asc,loops	0
+f178v_L07	4	T18	7	2	bars,loops	0
+f178v_L07	5	T86	7	2	desc,asc	0
+f178v_L07	6	T60	7	3	desc,asc,loops	0
+f178v_L07	7	T63	7	1	desc	0
+f178v_L07	8	T19	7	0		0
+f178v_L07	9	T90	7	1	bars	0
+f178v_L07	10	T83	7	0		0
+f178v_L07	11	T80	7	0		0
+f178v_L07	12	T76	7	2	desc,bars	0
+f178v_L07	13	T36	7	1	bars	0
+f178v_L07	14	T96	7	2	bars,tail	0
+f178v_L07	15	T90	7	1	bars	0
+f178v_L07	16	T37	7	3	desc,asc,loops	0
+f178v_L07	17	T58	7	1	bars	0
+f178v_L07	18	T54	7	2	lean,tail	0
+f178v_L07	19	T86	7	2	desc,asc	0
+f178v_L07	20	T60	7	3	desc,asc,loops	0
+f178v_L07	21	T53	7	1	bars	0
+f178v_L07	22	T86	7	2	desc,asc	0
+f178v_L07	23	T18	7	2	bars,loops	0
+f178v_L07	24	T85	7	2	desc,asc	0
+f178v_L07	25	T13	7	5	desc,asc,bars,loops,dots	0
+f178v_L07	26	T37	7	3	desc,asc,loops	0
+f178v_L07	27	T36	7	1	bars	0
+f178v_L07	28	T85	7	2	desc,asc	0
+f178v_L07	29	T92	7	2	bars,lean	0
+f178v_L07	30	T37	7	3	desc,asc,loops	0
+f178v_L08	1	T63	7	1	desc	0
+f178v_L08	2	T86	7	2	desc,asc	0
+f178v_L08	3	T17	7	3	asc,bars,lean	0
+f178v_L08	4	T45	7	1	bars	0
+f178v_L08	5	T17	7	3	asc,bars,lean	0
+f178v_L08	6	T19	7	0		0
+f178v_L08	7	T83	7	0		0
+f178v_L08	8	T85	7	2	desc,asc	0
+f178v_L08	9	T60	7	3	desc,asc,loops	0
+f178v_L08	10	T50	7	3	asc,lean,tail	1
+f178v_L08	11	T80	7	0		0
+f178v_L08	12	T64	7	2	desc,lean	0
+f178v_L08	13	T37	7	3	desc,asc,loops	0
+f178v_L08	14	T33	7	3	desc,asc,lean	0
+f178v_L08	15	T45	7	1	bars	0
+f178v_L08	16	T60	7	3	desc,asc,loops	0
+f178v_L08	17	T18	7	2	bars,loops	0
+f178v_L08	18	T19	7	0		0
+f178v_L08	19	T25	7	3	desc,lean,tail	0
+f178v_L08	20	T51	7	3	desc,asc,lean	0
+f178v_L08	21	T36	7	1	bars	0
+f178v_L08	22	T85	7	2	desc,asc	0
+f178v_L08	23	T98	7	2	asc,bars	0
+f178v_L08	24	T65	7	0		0
+f178v_L08	25	T45	7	1	bars	0
+f178v_L08	26	T13	7	5	desc,asc,bars,loops,dots	0
+f178v_L08	27	T55	7	3	desc,asc,tail	0
+f178v_L08	28	T18	7	2	bars,loops	0
+f178v_L08	29	T96	7	2	bars,tail	0
+f178v_L08	30	T11	7	0		0
+f178v_L09	1	T29	7	1	desc	0
+f178v_L09	2	T84	7	2	desc,bars	0
+f178v_L09	3	T18	7	2	bars,loops	0
+f178v_L09	4	T96	7	2	bars,tail	1
+f178v_L09	5	T83	7	0		0
+f178v_L09	6	T37	7	3	desc,asc,loops	0
+f178v_L09	7	T33	7	3	desc,asc,lean	0
+f178v_L09	8	T86	7	2	desc,asc	0
+f178v_L09	9	T13	7	5	desc,asc,bars,loops,dots	0
+f178v_L09	10	T52	7	1	lean	0
+f178v_L09	11	T60	7	3	desc,asc,loops	0
+f178v_L09	12	T45	7	1	bars	0
+f178v_L09	13	T13	7	5	desc,asc,bars,loops,dots	0
+f178v_L09	14	T86	7	2	desc,asc	0
+f178v_L09	15	T54	7	2	lean,tail	0
+f178v_L09	16	T37	7	3	desc,asc,loops	0
+f178v_L09	17	T60	7	3	desc,asc,loops	0
+f178v_L09	18	T80	7	0		0
+f178v_L09	19	T19	7	0		0
+f178v_L09	20	T49	7	0		0
+f178v_L09	21	T86	7	2	desc,asc	0
+f178v_L09	22	T58	7	1	bars	0
+f178v_L09	23	T85	7	2	desc,asc	0
+f178v_L09	24	T90	7	1	bars	0
+f178v_L09	25	T25	7	3	desc,lean,tail	0
+f178v_L09	26	T33	7	3	desc,asc,lean	0
+f178v_L09	27	T90	7	1	bars	0
+f178v_L09	28	T37	7	3	desc,asc,loops	0
+f178v_L09	29	X_NEW	7	0		0
+f178v_L10	1	T53	7	1	bars	0
+f178v_L10	2	T86	7	2	desc,asc	0
+f178v_L10	3	T18	7	2	bars,loops	0
+f178v_L10	4	T76	7	2	desc,bars	1
+f178v_L10	5	T50	7	3	asc,lean,tail	1
+f178v_L10	6	T19	7	0		0
+f178v_L10	7	T58	7	1	bars	0
+f178v_L10	8	T18	7	2	bars,loops	0
+f178v_L10	9	T85	7	2	desc,asc	0
+f178v_L10	10	T53	7	1	bars	0
+f178v_L10	11	T96	7	2	bars,tail	0
+f178v_L10	12	T98	7	2	asc,bars	0
+f178v_L10	13	T55	7	3	desc,asc,tail	0
+f178v_L10	14	T60	7	3	desc,asc,loops	0
+f178v_L10	15	T55	7	3	desc,asc,tail	0
+f178v_L10	16	T15	7	5	asc,loops,dots,lean,tail	1
+f178v_L10	17	T86	7	2	desc,asc	0
+f178v_L10	18	T70	7	0		0
+f178v_L10	19	T58	7	1	bars	0
+f178v_L10	20	T96	7	2	bars,tail	0
+f178v_L10	21	T60	7	3	desc,asc,loops	0
+f178v_L10	22	T45	7	1	bars	0
+f178v_L10	23	T90	7	1	bars	0
+f178v_L10	24	T33	7	3	desc,asc,lean	0
+f178v_L10	25	T19	7	0		0
+f178v_L10	26	T24	7	1	asc	0
+f178v_L10	27	T37	7	3	desc,asc,loops	0
+f178v_L10	28	T83	7	0		0
+f178v_L10	29	T45	7	1	bars	0
+f178v_L10	30	T18	7	2	bars,loops	1
+f178v_L10	31	T96	7	2	bars,tail	0
+f178v_L10	32	X_NEW	7	0		0
+f178v_L11	1	T89	7	3	desc,bars,lean	0
+f178v_L11	2	T33	7	3	desc,asc,lean	0
+f178v_L11	3	T19	7	0		0
+f178v_L11	4	T51	7	3	desc,asc,lean	0
+f178v_L11	5	T76	7	2	desc,bars	1
+f178v_L11	6	T50	7	3	asc,lean,tail	1
+f178v_L11	7	T45	7	1	bars	0
+f178v_L11	8	T60	7	3	desc,asc,loops	0
+f178v_L11	9	T10	7	3	bars,lean,tail	0
+f178v_L11	10	T85	7	2	desc,asc	0
+f178v_L11	11	T56	7	4	asc,bars,loops,lean	0
+f178v_L11	12	T37	7	3	desc,asc,loops	0
+f178v_L11	13	T33	7	3	desc,asc,lean	0
+f178v_L11	14	T45	7	1	bars	0
+f178v_L11	15	T83	7	0		0
+f178v_L11	16	T86	7	2	desc,asc	0
+f178v_L11	17	T80	7	0		1
+f178v_L11	18	T19	7	0		0
+f178v_L11	19	T24	7	1	asc	0
+f178v_L11	20	T19	7	0		0
+f178v_L11	21	T83	7	0		0
+f178v_L11	22	T17	7	3	asc,bars,lean	0
+f178v_L11	23	T37	7	3	desc,asc,loops	0
+f178v_L11	24	T63	7	1	desc	0
+f178v_L11	25	T80	7	0		0
+f178v_L11	26	T90	7	1	bars	0
+f178v_L11	27	T55	7	3	desc,asc,tail	0
+f178v_L11	28	T53	7	1	bars	0
+f178v_L11	29	T86	7	2	desc,asc	0
+f178v_L11	30	T83	7	0		0
+f178v_L11	31	T51	7	3	desc,asc,lean	0
+f178v_L11	32	X_NEW	7	0		1
+f178v_L12	1	T97	7	2	asc,bars	0
+f178v_L12	2	T96	7	2	bars,tail	0
+f178v_L12	3	T54	7	2	lean,tail	0
+f178v_L12	4	T45	7	1	bars	0
+f178v_L12	5	T63	7	1	desc	0
+f178v_L12	6	T96	7	2	bars,tail	0
+f178v_L12	7	T37	7	3	desc,asc,loops	0
+f178v_L12	8	T97	7	2	asc,bars	0
+f178v_L12	9	T86	7	2	desc,asc	0
+f178v_L12	10	T26	7	2	dots,tail	0
+f178v_L12	11	T19	7	0		0
+f178v_L12	12	T86	7	2	desc,asc	0
+f178v_L12	13	T60	7	3	desc,asc,loops	0
+f178v_L12	14	T86	7	2	desc,asc	0
+f178v_L12	15	T36	7	1	bars	0
+f178v_L12	16	T45	7	1	bars	0
+f178v_L12	17	T57	7	3	desc,asc,tail	0
+f178v_L12	18	T37	7	3	desc,asc,loops	0
+f178v_L12	19	T83	7	0		0
+f178v_L12	20	T80	7	0		0
+f178v_L12	21	T19	7	0		0
+f178v_L12	22	T89	7	3	desc,bars,lean	0
+f178v_L12	23	X_A	7	0		0
+f178v_L12	24	T98	7	2	asc,bars	0
+f178v_L12	25	T45	7	1	bars	0
+f178v_L12	26	T33	7	3	desc,asc,lean	0
+f178v_L12	27	T19	7	0		0
+f178v_L12	28	T51	7	3	desc,asc,lean	0
+f178v_L12	29	T45	7	1	bars	0
+f178v_L12	30	T37	7	3	desc,asc,loops	0
+f178v_L12	31	T57	7	3	desc,asc,tail	0
+f178v_L12	32	X_NEW	7	0		1
