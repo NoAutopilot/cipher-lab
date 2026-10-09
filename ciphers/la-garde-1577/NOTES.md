@@ -1664,7 +1664,7 @@ One extra row (00:45, 0.859) ran at the family's default err 0.05 under a label 
 did not match (the label's parentheses read as a regex group), and it finished. Its label cell in HYPOTHESES.md now says so.
 
 **Score-gap gate** (Amendment 1; `families/lag_syl.py`, 291 solves, 4 processes, 00:45-01:03 UTC; every score in
-`families/lag_syl.tsv`; `--report` re-prints; `--check` re-runs and diffs). Statistic: solver score per cipher token, because
+`families/lag_syl.tsv`; `--report` re-prints; `--check` re-ran all 291 solves 01:03-01:20 UTC: **exit 0**, byte-identical TSV). Statistic: solver score per cipher token, because
 the error mix changes control N.
 
 | Set | n | Per-token score |
