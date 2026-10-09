@@ -266,15 +266,16 @@ def cmd_measure(a):
         rep['signals'] = [stats(rows, wrong, [s]) for s in sigs]
         for s in rep['signals']:
             print(fmt(s))
-        rep['nmin2'] = nmin_stats(rows, wrong, 2)
-        print(fmt(rep['nmin2']))
+        for n in (int(x) for x in a.nmin.split(',')):
+            rep[f'nmin{n}'] = nmin_stats(rows, wrong, n)
+            print(fmt(rep[f'nmin{n}']))
         if a.combo:
             rep['combo'] = stats(rows, wrong, a.combo.split('+'))
             print('\nFixed combination (chosen elsewhere, not re-chosen)\n' + hdr + '\n' + fmt(rep['combo']))
         if not a.no_search:
             bc = best_combos(rows, wrong, sigs, a.kmax, caps)
             rep['best'] = {f'k{k}_cap{c:g}': s for (k, c), s in bc.items()}
-            print('\nBest OR-combination (k signals at most, share cap)\n| k | cap ' + hdr[1:].replace('\n|', '\n|---|---|', 1))
+            print('\nBest OR-combination (k signals at most, share cap)\n| k | cap ' + hdr.replace('\n|', '\n|---|---|', 1))
             for (k, c), s in sorted(bc.items()):
                 print(f'| {k} | {c:g} ' + fmt(s))
     if a.json:
@@ -314,6 +315,7 @@ def main(argv=None):
     m.add_argument('--kmax', type=int, default=3); m.add_argument('--cap', default='0.10,0.15,0.20')
     m.add_argument('--signals', help='a+b+c: restrict the search to these signals')
     m.add_argument('--combo', help='a+b: report this fixed combination'); m.add_argument('--no-search', action='store_true')
+    m.add_argument('--nmin', default='2,3,4', help='report n_signals >= each of these (default 2,3,4)')
     m.add_argument('--json')
     li = sp.add_parser('list'); common(li)
     li.add_argument('--combo', required=True); li.add_argument('--per-session', type=int, nargs='+', default=[10, 20])

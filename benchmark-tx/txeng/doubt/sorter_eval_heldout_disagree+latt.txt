@@ -1,0 +1,28 @@
+eval_heldout combo disagree+latt: 25 of 402 positions flagged (6.2%)
+  sorter sessions of 10 tiles: 3
+  sorter sessions of 20 tiles: 2
+f178v_L13	1	T27	show,disagree
+f178v_L13	7	T70	show,latt
+f178v_L13	20	T98	show,disagree,thin,freq,latt,pair
+f178v_L13	27	T52	show,disagree,thin,stab
+f178v_L15	11	T95	show,disagree,bandcut,pair
+f178v_L15	14	T29	disagree,thin,contrast
+f178v_L17	29	X_EQ	show,disagree,bandcut,thin
+f178v_L18	19	T27	show,disagree,thin,contrast
+f178v_L19	6	T98	show,disagree,bandcut,stab,freq,pair
+f178v_L19	16	T84	show,disagree
+f178v_L19	24	T98	show,disagree,freq,pair
+f178v_L20	15	T66	show,disagree,bandcut,thin,latt,pair
+f178v_L21	21	T76	show,thin,latt,pair
+f178v_L22	2	T60	bandcut,contrast,freq,latt,pair
+f178v_L22	24	T90	show,disagree,bandcut,latt,pair
+f179r_L01	13	T24	show,disagree,pair
+f179r_L01	15	T83	disagree,freq,pair
+f179r_L01	17	T83	disagree,freq,pair
+f179r_L01	20	T83	disagree,freq,pair
+f179r_L02	4	T83	disagree,freq,pair
+f179r_L02	8	T24	show,disagree,thin,latt,pair
+f179r_L02	22	T83	show,disagree,freq,pair
+f179r_L03	4	T83	disagree,freq,pair
+f179r_L03	8	T83	show,disagree,contrast,freq,pair
+f179r_L03	17	T83	show,disagree,thin,contrast,freq,pair
