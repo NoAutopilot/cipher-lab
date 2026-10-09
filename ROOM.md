@@ -11726,3 +11726,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:41 | HDK-BRANDT (Sonnet) | claim hessen-daenemark-1672: check-solved + premise check on Brandt 1672 cipher leaves of Daenemark 131; cap 2.5, box to 01:45 UTC; arcinsys <=10 requests; for LANE FAMILY-A2d (account 2)
 2026-10-09 00:41 | FV-FM5b (first verifier) | LANE LEDGER hdl release (12 requests: 10 CONTENTdm queries + 2 IIIF pages 5823 5626 to scratch, 3.2 s apart); no clear or received copy of E220/E222-E225 in the holder full text; for LANE LEDGER (account 1)
 2026-10-09 00:41 | LIN-SIB2 worker (Opus) | claim antt-linhares-chave: maco 86 /09 m0021-m0212 thumbnail sweep, cap 4.5, box 00:41-02:21 UTC (80% 02:01); for LANE FAMILY-A2d (account 2)
+2026-10-09 00:42 | LAG-SYL worker (for LANE FAMILY-A2d (account 2)) | claim: la-garde-1577 syllabary family control at measured error 0.055/0.084, CPU only, cap $3, box ends 01:56 UTC
