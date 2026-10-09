@@ -1,0 +1,257 @@
+[
+ {
+  "file": "c0063A_L01.jpg",
+  "sha256": "c84f873a578e20c33d662e1b9ff505a21eecc3e80e0a6ec8b8f5119606c15d2a",
+  "bytes": 43093,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": null,
+  "scale": 1,
+  "made_by": "tools/iiif_lines.py --image (MANT-0063 regions), MANT-EYE63R 9 Oct 2026"
+ },
+ {
+  "file": "c0063A_L02.jpg",
+  "sha256": "dc7ce03eccd760d9d3a6438bb1fe8a5c87be1b1107de8af566e95c5d2971be1f",
+  "bytes": 43451,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": null,
+  "scale": 1,
+  "made_by": "tools/iiif_lines.py --image (MANT-0063 regions), MANT-EYE63R 9 Oct 2026"
+ },
+ {
+  "file": "c0063B_L01.jpg",
+  "sha256": "7e6c254baa8c7b487958320564df8f437aa33abefe9fb1b24c1fe1b4b4748820",
+  "bytes": 39691,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": null,
+  "scale": 1,
+  "made_by": "tools/iiif_lines.py --image (MANT-0063 regions), MANT-EYE63R 9 Oct 2026"
+ },
+ {
+  "file": "c0063B_L02.jpg",
+  "sha256": "2e3c22513566caeeac0dd39cbe44d68111a68aa00a2dedaa05cb01ea9b275acc",
+  "bytes": 40955,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": null,
+  "scale": 1,
+  "made_by": "tools/iiif_lines.py --image (MANT-0063 regions), MANT-EYE63R 9 Oct 2026"
+ },
+ {
+  "file": "c0063C_L01.jpg",
+  "sha256": "1536f089fd2eec99089f50a039b948fed11c42a75a1ee5feb74e8ea968d13e7d",
+  "bytes": 47239,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": null,
+  "scale": 1,
+  "made_by": "tools/iiif_lines.py --image (MANT-0063 regions), MANT-EYE63R 9 Oct 2026"
+ },
+ {
+  "file": "c0063C_L02.jpg",
+  "sha256": "84045a172221cc26f32eddc350e826818c72fc0925ee7d4c45e8f5d33208dca3",
+  "bytes": 57179,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": null,
+  "scale": 1,
+  "made_by": "tools/iiif_lines.py --image (MANT-0063 regions), MANT-EYE63R 9 Oct 2026"
+ },
+ {
+  "file": "ref01.jpg",
+  "sha256": "09aed633c1acff326472ed83c09fdcc82e5f89ed5d2a4ff161059be74aa25d29",
+  "bytes": 27265,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": [
+   2440,
+   1925,
+   2600,
+   1995
+  ],
+  "scale": 4,
+  "made_by": "MANT-EYE63R 9 Oct 2026 (PIL crop, 4x LANCZOS, grayscale JPEG q88)"
+ },
+ {
+  "file": "ref02.jpg",
+  "sha256": "714610b5e32deb4e52769b2586abfb0c05c7e0d0d1c0c20260cf1f18a9fea2c8",
+  "bytes": 34848,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": [
+   3080,
+   1870,
+   3360,
+   1930
+  ],
+  "scale": 4,
+  "made_by": "MANT-EYE63R 9 Oct 2026 (PIL crop, 4x LANCZOS, grayscale JPEG q88)"
+ },
+ {
+  "file": "slot01.jpg",
+  "sha256": "0f0781b8d60b47ace02be624f3f8f9b1d9099c0ff3e036c3ebdff8abbc721c16",
+  "bytes": 7671,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": [
+   3140,
+   1875,
+   3205,
+   1930
+  ],
+  "scale": 4,
+  "made_by": "MANT-EYE63R 9 Oct 2026 (PIL crop, 4x LANCZOS, grayscale JPEG q88)"
+ },
+ {
+  "file": "slot02.jpg",
+  "sha256": "1c5bf3f0ead7fd2d80bf3ee00d1a1c3822a974cce37e75e354c1afd5f0fadaa1",
+  "bytes": 10259,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": [
+   2280,
+   2095,
+   2360,
+   2145
+  ],
+  "scale": 4,
+  "made_by": "MANT-EYE63R 9 Oct 2026 (PIL crop, 4x LANCZOS, grayscale JPEG q88)"
+ },
+ {
+  "file": "slot03.jpg",
+  "sha256": "f7bfcc2ae4283684362a7441068be1eb34008ab42cb08b3c7a22f2385249d4dd",
+  "bytes": 16256,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": [
+   2740,
+   2490,
+   2830,
+   2555
+  ],
+  "scale": 4,
+  "made_by": "MANT-EYE63R 9 Oct 2026 (PIL crop, 4x LANCZOS, grayscale JPEG q88)"
+ },
+ {
+  "file": "slot04.jpg",
+  "sha256": "17f49e7feb176d72c440c6d7810524e47f1042fe8fbd3bb0c9d6ff54375174c6",
+  "bytes": 15543,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": [
+   2985,
+   2490,
+   3070,
+   2555
+  ],
+  "scale": 4,
+  "made_by": "MANT-EYE63R 9 Oct 2026 (PIL crop, 4x LANCZOS, grayscale JPEG q88)"
+ },
+ {
+  "file": "slot05.jpg",
+  "sha256": "2b8c8ea6cd93328178877928086c7fc8e277fd63a4269dfd7d4f6c150081490b",
+  "bytes": 15752,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": [
+   3240,
+   2490,
+   3330,
+   2555
+  ],
+  "scale": 4,
+  "made_by": "MANT-EYE63R 9 Oct 2026 (PIL crop, 4x LANCZOS, grayscale JPEG q88)"
+ },
+ {
+  "file": "slot06.jpg",
+  "sha256": "68204dfc118271f0021c22b25277faeb1151354d603517881077f28c1ee8eaad",
+  "bytes": 16982,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": [
+   2290,
+   2560,
+   2420,
+   2610
+  ],
+  "scale": 4,
+  "made_by": "MANT-EYE63R 9 Oct 2026 (PIL crop, 4x LANCZOS, grayscale JPEG q88)"
+ },
+ {
+  "file": "slot07.jpg",
+  "sha256": "94978a1724aed541f06e2b0e3effed3007f9af503d24ebe673367a41dd6d4c15",
+  "bytes": 14892,
+  "source": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0063.jpg",
+  "source_sha256_prefix": "b58656a6e157f2df",
+  "source_size": [
+   4339,
+   3866
+  ],
+  "box_xyxy": [
+   2130,
+   2555,
+   2245,
+   2615
+  ],
+  "scale": 4,
+  "made_by": "MANT-EYE63R 9 Oct 2026 (PIL crop, 4x LANCZOS, grayscale JPEG q88)"
+ }
+]

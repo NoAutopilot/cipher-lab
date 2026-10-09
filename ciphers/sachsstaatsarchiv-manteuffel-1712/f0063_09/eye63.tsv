@@ -1,0 +1,11 @@
+# MANT-EYE63R, 9 Oct 2026: native eye check of MANT-0063's flagged slots on 694/09 frame 0063 (crops/slot01-07, refs crops/ref01-02; boxes in crops/manifest.json).
+# eye = this worker at 4-6x native; blind = one Sonnet look (CONTAMINATED: crop filenames then carried the transcribed readings; renamed to neutral slotNN afterwards).
+# verdict: confirmed = transcription stands; open = transcription kept, alternative recorded, no token changed. Grades follow rule 4; key.tsv unchanged.
+slot	line	transcribed	key_value	gloss_letters	eye	blind	alt_reading	alt_key_value	verdict	evidence
+slot01	A1 tok2	7	g	i (Si)	lone y-glyph: open top, long descender, no crossbar, no closed loop	4 medium / 7 medium / 9 low	9	i	open	glyph differs from this hand's crossed 4 (ref01 '14','24'), from its looped 9 (ref02 '29') and from its barred 7 (slot05 '67'); passes A and B both read 7
+slot02	B2 tok2	84	sch	th (Barth)	second digit the same y-glyph as slot01	84, 4 medium	89	tz|z|s	open	y-glyph again; neither 84 (sch) nor 89 (tz|z|s) gives th, so the rule-4 conflict (sch vs th) stands either way
+slot03	C1 tok6	24	q	s (hast; gloss ink 'has')	second digit the y-glyph, not the crossed 4 of A2's '24' (= q in 'manquer', ref01)	24, 4 medium, alt 29 low	29	s	open	under 29 the C1 run reads 'was hast'; the same code 24 written with a crossed 4 on A2 reads q in 'manquer'
+slot04	C1 tok11	34	p	i (dich)	second digit the y-glyph	34, 4 medium, alt 39 low	39	i	open	under 39 the run reads 'd i c h'
+slot05	C1 tok19	83	sch	m/b (darumb)	'83' read; first digit two stacked loops, close to the page-edge shadow	83 low, alt 53/63	-	-	confirmed (low)	no alternative digit gives m or b (43=m would need a looped 4, not seen); left as M slot
+slot06	C2 tok4	40 (2nd)	b	e (bekümmern)	first digit a tall closed loop with a long stem, unlike the crossed 4 of the 40 before it	40 low, alt 90 medium	90	c|ch	open	neither 40 (b) nor 90 (c|ch) gives e; 10 (= e) not supported by the stroke (this hand's 1 is a plain stroke, ref02 '103')
+slot07	C2 tok1	73	s|z	z (zu)	'73' at the left margin, legible at 4x	no group readable (page-edge shadow)	-	-	confirmed	z alternative already in key; no change

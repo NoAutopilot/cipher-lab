@@ -185,3 +185,19 @@ Codes above 401 on the leaf: 503 and 399 (G08 run end, after "les forces" is ful
 Rule-4 conflict (MANT-0063): | 84 | sch (key) | th | 0063 G03 '55.25 / 60.84' under "Barth:" (b a r + th); 55 25 60 matched | conflict, one witness; the gloss is an abbreviated name, so "Barsch" as the key gives it and "Barth" as the glossator wrote it are both plausible; key.tsv unchanged |
 
 Exploratory, after scoring (not a gate, not grade-bearing): the key's own decode of the spans shows the gloss ink sits offset from the codes it glosses (abbreviated gloss, cipher continuing onto the next line): 103 17 26 after the ';' reads "le p r" (= the gloss "le Pr."); 3 66 51 8 50 [24] 28 reads "w a s h a [q] t" (= "Was hat", 24 unexplained); 120 34 15 8 = "d [p] c h" (gloss "Dich"; 34 would be i); 100 25 60 67 83 55 = "d a r u [sch] [b]" (cf. "darumb", 83 would be m); the C2 run 73 54 40 40 11 6 31 43 35 27 21 = "[s] u b [b] k u m m e r n" (cf. "zu bekümmern", 73 would be z, the second 40 e). 29 7 at the run start reads "s [g]" under "Si" (7 would be i). These six slots (7, 24, 34, 40 second instance, 73, 83) are flagged for a native eye re-check (possible misreads 9/7, 39/34, 10/40 not excluded) before any is treated as a rule-4 conflict; key.tsv unchanged.
+
+## MANT-EYE63R (9 Oct 2026): 0063 flagged slots at native
+
+| slot | transcribed (key) | alternative (key) | gloss | verdict |
+|---|---|---|---|---|
+| A1 tok2 | 7 (g) | 9 (i) | i | open: y-shaped glyph, neither this hand's crossed 4 nor its looped 9 |
+| B2 tok2 | 84 (sch) | 89 (tz/z/s) | th | open; rule-4 conflict stands either way |
+| C1 tok6 | 24 (q) | 29 (s) | s | open: same y-glyph; A2's '24' (crossed 4) reads q in "manquer" |
+| C1 tok11 | 34 (p) | 39 (i) | i | open: same y-glyph |
+| C1 tok19 | 83 (sch) | - | m/b | confirmed (low) |
+| C2 tok4 | 40 (b) | 90 (c/ch) | e | open; neither gives e |
+| C2 tok1 | 73 (s/z) | - | z | confirmed |
+
+Gate unchanged (24/36 vs p99 9 PASS, `--check` exit 0); no token changed. The y=9 hypothesis is untested here: its only support on this leaf is
+the gloss it would be scored against (circular). V-MANT08's two 4->9 corrections on 0390/0391 are the same confusion on other leaves. Test: a
+pre-registered y-glyph census on leaves whose gloss is not the scoring target (eye63.tsv, NOTES "MANT-EYE63R").
