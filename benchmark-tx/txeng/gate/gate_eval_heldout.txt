@@ -1,0 +1,10 @@
+gate eval_heldout: 376 scored positions; L wrong 15, A wrong 18
+| label | flagged | % of positions | L wrong held | L precision | L recall | A wrong held | A precision | A recall |
+|---|---|---|---|---|---|---|---|---|
+| joined | 6 | 1.6 | 0 | 0.000 | 0.000 | 0 | 0.000 | 0.000 |
+| bad-crop | 63 | 16.8 | 5 | 0.079 | 0.333 | 6 | 0.095 | 0.333 |
+| blot | 0 | 0.0 | 0 | - | 0.000 | 0 | - | 0.000 |
+| good | 307 | 81.6 | 10 | 0.033 | 0.667 | 12 | 0.039 | 0.667 |
+| non-good | 69 | 18.4 | 5 | 0.072 | 0.333 | 6 | 0.087 | 0.333 |
+| no box | 0 | 0.0 | 0 | - | 0.000 | 0 | - | 0.000 |
+registered gate (non-good hold >= 50% of L wrong at <= 15% flagged): recall 0.333, flagged 0.184 -> NOT MET

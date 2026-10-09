@@ -90,7 +90,9 @@ def otsu(gray):
     w0 = np.cumsum(p); m = np.cumsum(p * np.arange(256)); mt = m[-1]
     with np.errstate(divide='ignore', invalid='ignore'):
         sb = (mt * w0 - m) ** 2 / (w0 * (1 - w0))
-    return int(np.nanargmax(sb))
+    sb = np.nan_to_num(sb, nan=-1.0)
+    top = np.where(sb >= sb.max() - 1e-9)[0]               # a flat optimum (a binary image): take its middle
+    return int(round(top.mean()))
 
 
 def components(mask):
@@ -272,13 +274,15 @@ def box_positions(a, lines):
     """Label-blind box <-> position map (tools/tx_compare.py box_map: DP over box widths only)."""
     from tx_compare import box_map
     if a.box_pos and os.path.exists(path(a.box_pos)):
-        return [r for r in rd(a.box_pos) if r['line'] in lines]
+        rows = rd(a.box_pos)
+        if set(lines) <= {r['line'] for r in rows}:
+            return [r for r in rows if r['line'] in lines]
     signs = rd(os.path.join(a.atlas, 'signs.tsv'))
     L = rd(a.line_read)
-    rows = box_map(signs, L, sorted(lines))
+    rows = box_map(signs, L, sorted({r['line'] for r in L}))       # every line of the line read, once
     if a.box_pos:
         wr(a.box_pos, ['sid', 'line', 'pos', 'op'], rows)
-    return rows
+    return [r for r in rows if r['line'] in lines]
 
 
 def position_labels(bp, tiles):
@@ -383,8 +387,11 @@ def make_sheets(rows, out_dir, max_rows):
     except OSError:
         font = ImageFont.load_default()
     sheets = []
+    os.makedirs(path(out_dir), exist_ok=True)
     for si in range(0, len(rows), max_rows):
         chunk = rows[si:si + max_rows]
+        for i, r in enumerate(chunk):                          # rows are numbered from 1 on every sheet
+            r['row'] = i + 1
         lw = 90
         width = lw + max(r['img'].width for r in chunk) + 20
         height = sum(r['img'].height + 16 for r in chunk) + 10
@@ -450,8 +457,6 @@ def cmd_recut(a):
             rows.append(dict(line=lp[0], pos=lp[1], L_sign=L.get(lp, ''), sid=t['sid'], label=t['label'], part=part,
                              img=render_tile(page_img, thr, (x, y, w, h), nbs, a.scale)))
     rows.sort(key=lambda r: (r['line'], float(r['pos'] or 0), r['part']))
-    for i, r in enumerate(rows):
-        r['row'] = (i % a.rows) + 1
     sheets = make_sheets(rows, out_dir, a.rows) if rows else []
     wr(os.path.join(out_dir, 'dropped.tsv'), COLS + ['positions'], dropped)
     print('recut %s: %d tiles (%s) on %d sheets, %d blots dropped -> %s' % (
