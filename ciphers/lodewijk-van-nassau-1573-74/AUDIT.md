@@ -1775,3 +1775,25 @@ mostly on the edition coverage logged by V2, A1, D1 and V8.
 
 Requests (V1-G3C): resources.huygens.knaw.nl counted in august-van-saksen-1561-64/AUDIT.md (one session total, 16);
 be-api.us.archive.org 14 for this target; www.googleapis.com 10. No subagents.
+
+## AUDIT (AUD-LOD4612, 9 Oct 2026)
+
+Verifier, account 3 (rules 4, 4a, 10). Trigger: PROGRESS-SYNC flag (9 Oct 2026 02:29 UTC) -- status.json's
+results row "Lodewijk van Nassau to William of Orange, four cipher letters 1573-1574" listed WVO 4612 in
+`documents`, so the board counted 4612 as an N3+/D2+/two-audit document, while NOTES.md "Read so far" gives 4612
+0 of 833 numerals read.
+
+Checked: this file's section 1 (4612 N3), A1 (N3 kept: "there is no reading to qualify"), D1 ("4612 stays N3, as
+A1 set it", out of scope), V8.1 (4612 "unchanged ... still no reading"); NOTES.md "Remaining gaps" (4612 cipher
+body not-attempted: key_full French-word share 70.7% below the 79.2% gate, fr16 judge FAIL, anneal control 0.699
+< 0.90, global LM-anneal instrument retired); `python3 tools/decode_key.py ciphers/lodewijk-van-nassau-1573-74
+--check` exits "reading up to date" (ciphertext_4612.tsv C 371 of 813 are key-aligned values, not a reading that
+runs as French). The row's depth_sentence and depth_check rest on 4610 and the 4613/4615 controls only.
+
+Verdict: NOTES.md is right; status.json over-counted. Per rule 4a, 4612 has no clause above the authentication
+distance and no true sentence about its content: item depth D0 (keyed values, nothing reads). **Correction:**
+WVO 4612 removed from the row's `documents` (now 4610, 4611, 4616); 4612 stays named in the title, grade line and
+unresolved_spans as the unread fourth letter, N3. Row depth stays D2 on 4610/4611/4616; depth_pct (62.6) is left on
+the DEPTH-REGRADE basis, which includes 4612's tokens in its denominator and so understates, not overstates, the
+three letters. Board: recovered-passage documents 20 -> 19 (tools/build_dashboard.py); unique solves per
+tools/depth_check.py unchanged (it counts rows, 90). No decoding done.

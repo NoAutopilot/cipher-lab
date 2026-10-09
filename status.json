@@ -2630,7 +2630,6 @@
       "documents": [
         "WVO 4610 (Lodewijk van Nassau to Orange, 1573-74)",
         "WVO 4611 (Lodewijk van Nassau to Orange, 1573-74)",
-        "WVO 4612 (Lodewijk van Nassau to Orange, 1573-74)",
         "WVO 4616 (Lodewijk van Nassau to Orange, 1573-74)"
       ],
       "claim_scope": "recovered-passages",
@@ -2640,7 +2639,8 @@
       "unresolved_spans": "no letter reads straight through; most of 4612's keyed runs not yet French (4612 N3); 658 M, 575 U, 267 I",
       "audit_refs": [
         "AUDIT.md '## 1. Verdict'",
-        "AUDIT.md '## Second audit (A1)'"
+        "AUDIT.md '## Second audit (A1)'",
+        "AUDIT.md '## AUDIT (AUD-LOD4612, 9 Oct 2026)'"
       ],
       "audit_status": "two audits",
       "reading_version": "a3401a1 (reading_4610.txt at A1, cec1a0f); revised by key_full, re-confirmed on e40bac6 (axmerge3/v2) by '## V8 audit: WVO 5797 and key_full revision'",
@@ -2654,7 +2654,7 @@
       },
       "depth_sentence": "WVO 4610 opens 'il fault que on pardonne' in connection with a dispatch sent by messenger 'ce lundy', and later speaks of 'la rechute'.",
       "depth_check": "key aligned from the period decipherments of WVO 4613 and 4615 (C); key_full v3 0 regressions on those controls",
-      "depth_note": "C 2512 of 4012 audited (v2 files: 2112 of 2940 non-null for 4610/4611/4616 = 72%) | 6 Oct 2026 (R15-LVNV, after R15-LVNAPP): full-key token files now 2353 C/H of 3214 for 4610/4611/4616 (73.2%), 2353 of 4047 over four letters (58.1%); depth_pct stays on the DEPTH-REGRADE basis; AUDIT.md \"Carry-over (R15-LVNV)\"",
+      "depth_note": "C 2512 of 4012 audited (v2 files: 2112 of 2940 non-null for 4610/4611/4616 = 72%) | 6 Oct 2026 (R15-LVNV, after R15-LVNAPP): full-key token files now 2353 C/H of 3214 for 4610/4611/4616 (73.2%), 2353 of 4047 over four letters (58.1%); depth_pct stays on the DEPTH-REGRADE basis; AUDIT.md \"Carry-over (R15-LVNV)\" | 9 Oct 2026 (AUD-LOD4612): WVO 4612 removed from `documents` -- it is N3 with no reading (AUDIT.md A1/D1/V8: keyed runs do not read French; NOTES.md 'Read so far' 4612 0 of 833 numerals), item depth D0, so it is not a D2 document of this row; it stays named in the title and unresolved_spans; AUDIT.md 'AUDIT (AUD-LOD4612)'",
       "depth_by": "session_015eezFKYThEoRKoeamyhxSD",
       "depth_date": "4 Oct 2026",
       "decode_status": "Partially decrypted"
