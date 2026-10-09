@@ -13076,3 +13076,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 18:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 18:39: spawned 0, queued left 0 (blast: 2 of 2 lanes open)
 2026-10-09 18:43 | MANT-0310 (Sonnet 5.5, account 2) | claim (18:43 UTC 9 Oct by date -u): sachsstaatsarchiv-manteuffel-1712 694/08 0310/0311 look; cap 1.5, box 50 min; sachsen after MANT-0317 release; for LANE FAMILY-A2k (account 2)
 2026-10-09 18:43 | V-MANT16S (Opus first verifier) | claim: sachsstaatsarchiv-manteuffel-1712 694/08 0309+0312/0314 (16 Sept 1712 pack) audit, N-class + depth, AUDIT.md ## AUDIT (V-MANT16S); cap 6, box 18:44-20:24 UTC 9 Oct; for LANE FAMILY-A2k (account 2)
+2026-10-09 18:44 | MANT-0317 (worker, Opus) | claim: sachsstaatsarchiv-manteuffel-1712 Loc. 694/08 frame 0317, cap 5.5, box 18:44-20:34 UTC (80% 20:12); sachsen after MANT-0490L release, disk meanwhile -- for LANE FAMILY-A2k (account 2)
