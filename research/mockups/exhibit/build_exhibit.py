@@ -150,12 +150,10 @@ DISPLAYS = [
     lines=[
       ("img/manteuffel_L13.jpg", M["L13"], "… à … la reine d'Angleterre … touchant le prince",
        "… to … the Queen of England … concerning the prince"),
-      ("img/manteuffel_L14.jpg", M["L14"], "… fils … la reine d'Angleterre … ne fe-",
-       "… son … the Queen of England … will not"),
+      ("img/manteuffel_L14.jpg", M["L14"], None, None),
       ("img/manteuffel_M4.jpg", M["M4"], "-ra rien pour lui, mais luy …",
        "do anything for him, but [to] him …"),
-      ("img/manteuffel_L16.jpg", M["L16"], "… sera … Stettin … contraire",
-       "… will be … Stettin … contrary"),
+      ("img/manteuffel_L16.jpg", M["L16"], None, None),
     ],
     lang="French",
     faces=[("Ernst Christoph von Manteuffel", "Saxon envoy at Berlin", "writes the cipher postscripts"),
@@ -382,8 +380,9 @@ def display_html(d, img):
         out.append(f'<div class="line"><img src="{img(src)}" alt="Cipher line">'
                    f'<div class="layer">{d["lang"]} as read, sign by sign (grade under each)</div>'
                    f'<div class="toks">{"".join(tok_html(*t) for t in toks)}</div>'
-                   f'<div class="layer">English (translation, interpretation)</div>'
-                   f'<div class="en"><div class="fr">{E(fr)}</div><div class="tr">{E(en)}</div></div></div>')
+                   + (f'<div class="layer">English (translation, interpretation)</div>'
+                      f'<div class="en"><div class="fr">{E(fr)}</div><div class="tr">{E(en)}</div></div></div>' if en else
+                      '<div class="layer">No English: this line reads as letters with gaps, shown as read.</div></div>'))
     out.append("</div></div></div>")
     out.append('<h2>Faces</h2><div class="faces">' + "".join(
         f'<div class="face">{silhouette(n)}<strong>{E(n)}</strong>{E(r)}<div class="now">{E(w)}</div></div>' for n, r, w in d["faces"])
