@@ -61,3 +61,11 @@ after dropping a trailing `?`. A gate box missing from a pass = miss. No reconci
 - FAIL: <= 16/19. Stop, write the reason and what a third instrument would need.
 - Reported beside it, not gating: BERGH-STRIP's 16/19 and the alignment baseline 5/19; A/B agreement over all 285 numbered boxes
   (same group membership and same labels); share of agreed groups with >= 2 boxes (how much over-segmentation the groups absorbed).
+
+## Outcome (appended after scoring, 00:49 UTC 9 Oct 2026 by `date -u`)
+
+Gate **18/19: PASS** (needs >= 17). Only miss: gate_15/6 L18_01_007, both passes group 5+6 (the right group) but A labels it n, B u?
+(a listed look-alike pair, but the rule needs the same label in both passes). A/B agreement (same group and labels) 231/285 = 0.811.
+Sensitivity, disclosed: 3 of the 18 hits (gate_02/8, gate_06/13, gate_18/8) rest on the parent signs set above by eye before the reads;
+under BERGH-STRIP's fragment-only truth they would be misses (15/19). Both passes put L11_01_019+020+021 in one m group in both windows
+that contain them (gate_02 and gate_18), independently. atlas/group_sign.tsv written for the 19 windows only.

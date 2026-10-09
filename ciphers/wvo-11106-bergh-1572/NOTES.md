@@ -68,7 +68,7 @@ exit=0
 ## Remaining gaps
 
 Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct 2026: K=41 provisional, err_2reader 0.10, err_true not measurable).
-- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes); alignment labels 5/19 right, box-numbered strip reads (BERGH-STRIP) 16/19, FAIL against the pre-registered 17 (atlas over-segments: 39% of read boxes are pieces; stacked leader lines); sorter page not built; next: sign-group reads ("boxes 3+4 -> y") on the same 19 gate windows with a de-stacked number layout, then all boxes and sorter/build_inputs.py, ~$7.5
+- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes); alignment labels 5/19, box-numbered strip reads (BERGH-STRIP) 16/19 FAIL, sign-group reads on a de-stacked layout (BERGH-GRP, 9 Oct 2026) **18/19 PASS** against the pre-registered 17 (A/B 0.811), atlas/group_sign.tsv for the 19 gate windows (285 boxes) only; sorter page not built; next: the same group instrument on all 875 boxes (whole-line de-stacked strips, add a --line mode to atlas/strips_grp.py; 44 half-line strips, 2 passes x ~5 calls + 1 reconciliation), then sorter/build_inputs.py from group labels, ~$15
 - Whole letter, language - blocker: not-attempted; homophonic K41 now control-backed FAIL in French (fr16, 6-seed control 0.718), German (de1600, 0.777), Latin (la17, 0.611) and Dutch (nl16, 0.681, NL16-11106) and at a merged K38 in French (FAM-11106L); Bergh's six WVO sibling letters 1574-77 are in French (2) and German (4), none Dutch; single-letter homophonic is now negative in all four candidate languages, so the open question is the design, not the language; next: the multi-sign family (below)
 - Whole letter, design - blocker: not-attempted; multi-sign (syllable/code) is the design prior's nearest class, untested; next: `family_run.py --family syllabary` with its control after the inventory is settled, ~$1
 - Year - blocker: not-attempted; the year 1572 is editorial; next: only once something reads, ~$0.3
@@ -80,9 +80,9 @@ Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct
 - [x] known-keys: the Nassau keys key_1572.tsv and key_nepveu.tsv were dropped as a design mismatch by KH2-D; no Bergh key on file.
 - [x] print: Groen 1re serie, Gachard III-IV, Kervyn full text, Japikse out of range (FAM-CS11106); Waanders 2022 still unchecked.
 - [ ] key-rebuild: homophonic K41 FAIL with control at gate in fr16, de1600, la17, nl16 (NL16-11106) and merged-K38 fr16 (FAM-11106L); merged-K38 de1600 control below gate (non-test); the syllabary/multi-sign family is untried.
-- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106), box labels by alignment failed the eye check (5/19); box-numbered strip reads (BERGH-STRIP) 16/19, FAIL at the pre-registered 17 (over-segmentation, leader layout); sign-group reads next, then the owner's sorter.
+- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106); alignment labels 5/19, box-strip reads 16/19 (BERGH-STRIP, FAIL), sign-group reads on a de-stacked layout 18/19 (BERGH-GRP, PASS, 19 gate windows only); next the all-box group pass, then the owner's sorter.
 - [ ] retry: the syllabary/multi-sign family after the inventory is settled.
-Verdict: keep going: 4 internal gaps; cheapest next: sign-group reads (box numbers -> one sign) on the 19 BERGH-STRIP gate windows with a de-stacked layout, so the sorter piles are per sign, ~$7.5, then the syllabary/multi-sign family once the inventory is settled, ~$1
+Verdict: keep going: 4 internal gaps; cheapest next: the BERGH-GRP sign-group instrument (PASS 18/19 on the gate) on all 875 boxes with whole-line de-stacked strips, then the sorter rebuild from group labels, ~$15, then the syllabary/multi-sign family once the inventory is settled, ~$1
 
 ## While waiting
 
@@ -398,3 +398,58 @@ an x-range). Same 19 gate windows and the same PREREG truth table, re-registered
 
 Requests: 0 network. Calls: 4 Sonnet vision (2 per pass), this worker's diagnosis of 3 strips. Report what was found and where it was not
 found; novelty is not classified here (rule 10).
+
+## BERGH-GRP: sign-group reads with a de-stacked layout (LANE FAMILY-A2d, account 2, 9 Oct 2026, 00:40-00:5x UTC by `date -u`)
+
+Brief `.claude/briefs/runs/2026-10-09-ytbiz-family-0009-jobs.md` "### BERGH-GRP". The second instrument after BERGH-STRIP (rule 3: no third
+run of the strip instrument): readers answer **sign groups** ("3+4 -> y", "9 -> d 4" for one box holding two signs) on a **de-stacked**
+layout, same 19 gate windows, same atlas boxes, same number -> sid key.
+
+Prior work: `tools/prior_work.py wvo-11106-bergh-1572 --item-spec 'shelfmark=WVO 11106;wvo=11106;date=1572-09-19;sender=Willem van den
+Bergh;recipient=Willem van Oranje' --step-type crop --fetch` exit 4 (LEAD 1: this job's own claim, ROOM 00:43); answered with `--record`;
+re-run exit 0 ("proceed on the residue: whole item"), UNCHECKED-NET 1 (aaymeloglu repo not cloned; FAM-CS11106 grepped it by hand). Check 1
+by hand: no atlas/strips_grp/, atlas/group_sign.tsv or PREREG-BERGH-GRP.md before this job; BERGH-STRIP's claim has its done line. Checks
+2-4 as BERGH-STRIP (leaf p1-p3 viewed, FAM-CS11106; editions and solver repos FAM-CS11106); this step reads shapes, not plaintext, so
+check 5 does not apply. Disk only, 0 network requests.
+
+**Crop step (pasted).** Strips cut from the committed line crops (FAM-11106T: `python3 tools/iiif_lines.py --image p-000.jpg --out
+images/crops --region 470,280,2050,2070 --prefix p2 --debug --mask-neighbours --mask-margin 50 --mask-keep 0.2`) by
+`python3 ciphers/wvo-11106-bergh-1572/atlas/strips_grp.py --check-key` -> 19 PNGs (1280 px wide, 2-4 label rows each; regenerated
+byte-for-byte, not committed), "key.tsv identical to atlas/strips/key.tsv". Layout: clean copy of the window above the outlined copy; no
+leader lines; each box a bar of its own colour spanning exactly its x-range with the number under it, bars packed into rows, numbers
+offset sideways when two box centres are within 20 px; six colours.
+
+**Pre-registration:** PREREG-BERGH-GRP.md with atlas/score_groups.py, pushed e6632d60b (00:47 UTC) before any read. Same truth table,
+re-registered for group scoring: a fragment-truth box also hits if both passes put it in a group of >= 2 boxes labelled with its parent
+sign, the parent set by this worker by eye on the outlined strips before any reader call (m for gate_02/8 and gate_06/13, u/n for
+gate_15/6, m/f/b for gate_18/8, none for gate_05/10 and gate_10/9, which are other-line ink). PASS >= 17/19.
+
+**Reads:** two blind Sonnet passes, 2 calls each (A: strips 1-10, 11-19; B: 19-11, 10-1), sign list and strip paths only; files
+atlas/strips_grp/passA.tsv (252 groups), passB.tsv (254 groups); every number covered exactly once in both passes (checked).
+
+**Result (`python3 atlas/score_groups.py atlas/strips_grp/passA.tsv atlas/strips_grp/passB.tsv`; `--check` -> "group_sign.tsv current"):**
+
+| | value |
+|---|---|
+| gate, 19 eye-checked boxes | **18/19 -- PASS** (pre-registered >= 17) |
+| BERGH-STRIP (box labels, stacked leaders), same 19 | 16/19 |
+| alignment mapping (atlas/boxmap.tsv), same 19 | 5/19 |
+| A/B agreement, same group and labels, all 285 boxes | 231/285 = 0.811 (BERGH-STRIP 223/285 = 0.782) |
+| agreed boxes in groups of >= 2 boxes | 39/231 |
+| agreed boxes: one sign / two or more signs / FRAG-OTHERLINE | 150 / 21 / 60 |
+| splits (54): same group, label differs / group differs | 34 / 20 |
+| commonest label splits | g/G? 4, n/u? 4, 2/z 3, G?/sz? 2, G?/g 2, S?/b? 2 |
+| boxes agreed in two windows: identical group and label in both | 29/31 |
+
+The miss: gate_15/6 (right half of a u), both passes group 5+6 correctly, A labels it n, B u?: the n/u look-alike, not a grouping fault.
+The two BERGH-STRIP faults are gone on the gate: the y head is grouped with its tail (3+4 -> y, both passes) and gate_09/13 reads 7 in
+both passes on the de-stacked layout. **Sensitivity, disclosed:** 3 of the 18 hits (gate_02/8, gate_06/13, gate_18/8) rest on the parent
+signs registered by eye before the reads; under BERGH-STRIP's fragment-only truth they would be misses (15/19). Both passes, in both windows
+that hold them, put L11_01_019+020+021 into one m group independently. Under-segmentation also shows: 21 agreed boxes hold two or more
+signs (e.g. gate_09 "d 4", "s g"), which group reads absorb but a sorter tile per box would not.
+
+Per the brief: atlas/group_sign.tsv written for the 19 windows only (285 boxes); the sorter rebuild and the all-box pass are separate jobs.
+The remaining look-alike splits (g/G, n/u, 2/z, G/sz) are the owner's sorter's job, not more machine passes (CLAUDE.md Usage 6).
+
+Calls: 4 Sonnet vision (2 per pass); this worker's own eye on 8 gate windows (fragment parents, before the reads) and 1 layout check.
+Requests: 0 network. Report what was found and where it was not found; novelty is not classified here (rule 10).
