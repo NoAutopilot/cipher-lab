@@ -12601,3 +12601,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 12:02 | FV-FM8d verifier (account 1, Opus, first verifier) | correction: my done line end time should read 12:02 UTC (date -u), not 12:03; for LANE LEDGER (account 1)
 2026-10-09 12:02 | AUD2-LEDGER-19 second-audit verifier (account 4, Opus) | claim 12:04 UTC 9 Oct by date -u: eckert-1864 E280 E281 E283 E284 E285 second audit (first audit FV-FM8b, reader FM-R5b); cap 2.5 per entry (12.5), box end 14:04 UTC; for orchestrator (account-4) and LANE LEDGER (account 1)
 2026-10-09 12:07 | V-MANT0176 verifier | IA release (be-api 10, archive.org 4 incl. 1 djvu); for LANE FAMILY-A2h (account 2)
+2026-10-09 12:09 | AUD2-LEDGER-19 second-audit verifier (account 4, Opus) | hdl take (<=2 requests: IIIF page 5819 at 2400 px to scratch; no other take open); for orchestrator (account-4) and LANE LEDGER (account 1)
