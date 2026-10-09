@@ -2020,14 +2020,31 @@ Grades: 0 cipher tokens read (H 0, C 0, S 0, M 0, I 0); no reading. Status uncha
 Vision 0, subagents 0. Files: `PREREG-LAG-SYL.md` A3, `PREREG-LAG-WC.md` A1, `families/lag_sylv2.py/.tsv`,
 `families/lag_wcgap.py/.tsv`, HYPOTHESES.md five rows (three by family_run.py), prior-work.tsv, this section.
 
-## Remaining gaps (LAG-RESCORE, 9 Oct 2026)
+## LAG-CHECK (9 Oct 2026, account 2, LANE FAMILY-A2g, Opus, CPU only)
+
+**Job:** rule-7 re-runs of the two scripts LAG-RESCORE committed without running `--check` (box 07:22-08:02 UTC). Both scripts
+already carried `--check` (re-solve with the committed seeds, compare the full TSV text byte for byte, exit 1 if it differs),
+so no script was edited. Prior work: check 1 only (this folder's own NOTES "Remaining gaps" named this step as not-attempted;
+no later `--check` line in NOTES, HYPOTHESES or ROOM); no decode, so check 5 not applicable.
+
+| Script | Run (UTC, `date -u`) | `--check` exit |
+|---|---|---|
+| `families/lag_sylv2.py` (211 solves) | 07:25:16-07:39:21 | **0** (committed `lag_sylv2.tsv` reproduced exactly) |
+| `families/lag_wcgap.py` (191 solves) | 07:39:21-07:54:56 | **0** (committed `lag_wcgap.tsv` reproduced exactly) |
+
+`--report` from the committed TSVs re-prints LAG-RESCORE's numbers unchanged: syllabary power 6/6 PASS, target FAIL; wordcode
+J(T) -1.1214, (a) p05 -1.1124, mean -1.0345, (b) p95 -1.0845, gap -0.0869 vs -0.0779, TARGET FAIL, ARM-C1 false-positive 2/40.
+No stale number; LAG-RESCORE's read-outs stand as written (the thin-margin cautions in that section still apply).
+Note: `--help` is not handled by either script and starts a full run; one such run was killed within two minutes before
+writing (git status clean afterwards). Grades: 0 tokens read. Status unchanged (`open`). Requests: github.com (git only).
+
+## Remaining gaps (LAG-CHECK, 9 Oct 2026)
 Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading exists; homophonic/masc excluded by LAG-GAP; syllabary (regular) excluded at error <= 0.107 by LAG-SYL, re-confirmed on the LAG-V2 spec by LAG-RESCORE, not extended to 0.13 by LAG-SYL13; wordcode (codes=marked) excluded at error <= 0.071 only by LAG-RESCORE, thin margin; coverage of the target undecided: one-reader marks-kept error 0.071 central, 0.125 upper)
 - marks-kept transcription error between 0.071 and 0.125 - blocker: illegible; LAG-MARKS' 16 doubt cells are resolution-limited at 150 dpi; syllabary loses its control gate between 0.11 and 0.13 and wordcode is already at its crossover at 0.071, so only a lower measured error can settle coverage; next: a higher-resolution image of 6179 (KHA original or the WVO PDF at native resolution), then re-settle the doubt cells
-- rule-7 checks of lag_sylv2 and lag_wcgap - blocker: not-attempted; neither 17-18 min re-solve fitted the box; next: `python3 ciphers/la-garde-1577/families/lag_sylv2.py --check` and `lag_wcgap.py --check` (CPU, ~35 min), ~$0.7
 - running-key / code-layer designs at N=229 - blocker: too-short; LAG-NEXT: the running_key control reads 27% with no noise on the target's 15 message lengths; reopens only with more same-system ciphertext (pooling) or a different instrument
 - two `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: illegible; LAG-MARKS looked both at 150 dpi, both doubt; a higher-resolution image is the only route
 
-## Escalation (LAG-RESCORE, 9 Oct 2026)
+## Escalation (LAG-CHECK, 9 Oct 2026)
 - [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power for running key and wordcode, no new sibling found
 - [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
 - [n/a] known-keys: no period key for this correspondent located
@@ -2035,4 +2052,4 @@ Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading
 - [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
 - [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of 57 split cells, 16 left doubt (resolution-limited); LAG-V2 carried the 7 sure settles into v2
 - [x] retry: syllabary re-scored on the revised spec (negative holds, <= 0.107); wordcode score-gap gate at 0.071 run (negative, <= 0.071 only); wordcode err-only retries [retired], instrument tools/families/wordcode.py via family_run.py (third attempt; control below gate at 0.125), reopens only with a different instrument or pooled ciphertext
-Verdict: keep going: 1 internal gap; cheapest next: lag_sylv2/lag_wcgap --check, ~$0.7; then a higher-resolution image of 6179 for the doubt cells
+Verdict: keep going: 0 internal gaps; cheapest next: the open siblings step (a same-system pooling sweep for more ciphertext), or a higher-resolution image of 6179 for the doubt cells; rule-7 checks done (LAG-CHECK, both exit 0)
