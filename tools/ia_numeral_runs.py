@@ -7,11 +7,42 @@ least --share are 1-4 digit numerals, groups marked lines fewer than four lines 
 numerals, distinct values, repeat rate (cipher repeats; index and table columns mostly do not) and prose words of
 4+ letters within three lines either side. One TSV row per cluster with 240 characters of context. Scripts read,
 models judge. Lending-only items answer 403 and are reported, not retried. Exit 0 always.
+
+--markers (MQS-IA-MARKERS, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv row M04; after Lasry, Biermann and
+Tomokiyo 2023, Cryptologia 47:2, p.108 n.38: Labanoff 1844 printed a cipher passage as ellipses) also reports clusters
+of printed gap markers, where an edition left the cipher out instead of printing its numerals: an ellipsis (three or
+more dots, optionally spaced, or the ellipsis character) and a bracketed cipher note ([en chiffre], (in cipher),
+[Chiffre], weight 3). Marked lines fewer than --marker-gap lines apart form a cluster, flagged at --min-markers.
+Meant to catch: three ellipses within a few lines of a letter; one bracketed "en chiffre" note.
+Must NOT flag: a table of contents of dot leaders ending in a page number; one isolated editorial ellipsis.
+Rows get kind=marker (numeral rows kind=numeral, only when --markers is given; without it output is unchanged).
+Grade and evidence: tools/data/tool_shelf.tsv; pre-registration tools/tests/PREREG-MQS-IA-MARKERS.md.
 """
 import argparse, os, re, sys, time, urllib.request, urllib.error
 
 NUM = re.compile(r'^\d{1,4}[.,;:]?$')
 WORD = re.compile(r'^[A-Za-zÀ-ſ]{4,}[.,;:]?$')
+DOTS = re.compile(r'(?:\.\s?){2,}\.|…')
+LEADER = re.compile(r'(?:\.\s?){2,}\.?\s*(?:p\.\s*)?(?:\d{1,4}|[ivxlcdm]{1,7})\.?\s*$', re.I)
+NOTE = re.compile(r'[\[(][^\])]{0,40}(?:chiffr|cipher|cypher|ziffer|cifra)[^\])]{0,40}[\])]', re.I)
+
+def marker_count(line):
+    """Weighted gap markers on one OCR line: ellipses 1 each (dot leaders to a page number excluded), cipher notes 3."""
+    notes = len(NOTE.findall(line))
+    body = LEADER.sub('', line)
+    return len(DOTS.findall(body)) + 3 * notes
+
+def marker_clusters(lines, gap):
+    out = []
+    for i, l in enumerate(lines):
+        m = marker_count(l)
+        if m:
+            if out and i - out[-1][0][-1] < gap:
+                out[-1][0].append(i)
+                out[-1][1] += m
+            else:
+                out.append([[i], m])
+    return [(c, m) for c, m in out]
 
 def fetch(ident, cache):
     path = os.path.join(cache, ident + '_djvu.txt')
@@ -57,9 +88,13 @@ def main():
     ap.add_argument('--min-tokens', type=int, default=6)
     ap.add_argument('--share', type=float, default=0.7)
     ap.add_argument('--tsv', default='-')
+    ap.add_argument('--markers', action='store_true', help='also report clusters of printed gap markers (ellipses, [en chiffre])')
+    ap.add_argument('--marker-gap', type=int, default=6, help='marked lines fewer than this apart join a cluster')
+    ap.add_argument('--min-markers', type=int, default=3, help='weighted marker count that flags a cluster')
     a = ap.parse_args()
     out = sys.stdout if a.tsv == '-' else open(a.tsv, 'w', encoding='utf-8')
-    out.write('identifier\tline\tn_lines\tnumerals\tdistinct\trepeat_rate\tprose_words\tcontext\n')
+    out.write('identifier\tline\tn_lines\tnumerals\tdistinct\trepeat_rate\tprose_words\tcontext%s\n'
+              % ('\tkind\tmarkers' if a.markers else ''))
     for ident in a.ids:
         text, how = fetch(ident, a.cache)
         if text is None:
@@ -71,8 +106,16 @@ def main():
         for c in cs:
             n, d, r, p = score(lines, c)
             ctx = ' / '.join(lines[i].strip() for i in range(max(0, c[0] - 1), min(len(lines), c[-1] + 2)))
-            out.write('%s\t%d\t%d\t%d\t%d\t%.2f\t%d\t%s\n' % (ident, c[0] + 1, len(c), n, d, r, p,
-                                                             ctx[:240].replace('\t', ' ')))
+            out.write('%s\t%d\t%d\t%d\t%d\t%.2f\t%d\t%s%s\n' % (ident, c[0] + 1, len(c), n, d, r, p,
+                                                               ctx[:240].replace('\t', ' '),
+                                                               '\tnumeral\t' if a.markers else ''))
+        if a.markers:
+            mc = [(c, m) for c, m in marker_clusters(lines, a.marker_gap) if m >= a.min_markers]
+            print('%s: %d marker clusters flagged' % (ident, len(mc)), file=sys.stderr)
+            for c, m in mc:
+                ctx = ' / '.join(lines[i].strip() for i in range(c[0], c[-1] + 1))
+                out.write('%s\t%d\t%d\t0\t0\t0.00\t0\t%s\tmarker\t%d\n' % (ident, c[0] + 1, c[-1] - c[0] + 1,
+                                                                     ctx[:240].replace('\t', ' '), m))
 
 if __name__ == '__main__':
     main()

@@ -48,3 +48,28 @@ Outcome: PASS -> shelf `controlled-only` (one known answer); FAIL -> shelf `weak
 re-briefed (brief). No target status, key, reading or AUDIT.md change either way.
 
 Hosts: archive.org only, at most 4 requests, 1.5 s apart, one at a time.
+
+## Results (appended after scoring, 9 Oct 2026; nothing above this line changed)
+
+Hosts: archive.org 3 requests (1 advancedsearch, 2 `_djvu.txt`), 1.5-2 s apart, no errors. Cache: `sources/ia-fulltext/`
+(gitignored). Span located by printed page headers ("DE MARIE STUART. 45" ... "49"): uoft scan lines ~1715-1990,
+second scan ~1735-1995. The letter is Marie Stuart to Mauvissière, Wingfield 30 Oct 1584, "Ms. Béthune no 8678 fol. 57".
+
+| scan | lines | marked lines | flagged clusters | KA (pp.45-49) score | vol max real | null max p95 (200 perms) | G1 | G2 | G3 |
+|---|---|---|---|---|---|---|---|---|---|
+| lettresinstructi06maryuoft | 19,954 | 6 | 0 | 0 | 1 | 1 | FAIL | FAIL | FAIL |
+| lettresinstructi06mary | 20,245 | 7 | 1 | 0 | 3 | 3 | FAIL | FAIL | FAIL |
+
+**Verdict: FAIL (G1).** Why: in both OCR texts the printed dotted lines are gone -- the text runs "sir Ralf Sadler'" straight
+into "Quoy qu'il en soit" (p.46) with no dot characters at all; the djvu OCR does not carry rows of printed points. The only
+OCR-visible trace is the editor's unbracketed footnote "Les lignes marquées par des points sont en chiffres dans l'original,
+et on n'en connaît point la clef", which the pre-registered marker set (bracketed notes only) does not match. The second
+scan's one flagged cluster is a source note "(Déchiffrement original. -- State paper office ...)" -- a decipherment
+pointer, not a gap.
+
+Descriptive (no gate): on-disk djvu texts, 13 flagged clusters in 333,832 OCR lines (0.04 per 1,000 lines); not inspected.
+Post-hoc descriptive only, NOT a test: unbracketed `en chiffres?` occurs on 16 lines in each vol. 6 scan. A footnote-phrase
+detector ("sont en chiffres dans l'original", "in cipher in the original") would need its own pre-registration and a
+known answer other than this volume, since this one was used to find it.
+
+Shelf: `--markers` `weak` (rule: FAIL ships weak with both numbers, option kept, not re-briefed).
