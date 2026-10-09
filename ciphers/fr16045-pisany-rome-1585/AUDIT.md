@@ -79,7 +79,7 @@ decipherment; no claim of a new reading") is correct and stands.
 |---|---|---|---|---|---|---|
 | A f.247r | 365 | 236 / 122 / 7 (kp86g/grades_f247r.tsv) | 64.7 | 17 letters | **D1** | known-answer PASS kp86g (0.639 vs key-shuffle p99 0.431 / order p99 0.494, control 5/5 at e 0.268) |
 | B f.275v | 746 | 287 / 444 / 15 (kp86h/grades_f275v.tsv; L17-L20 all M after kp86h/kp86i local FAIL) | 38.5 | 15 letters | **D1** | full page PASS kp86h (0.514 vs 0.391 / 0.469, control 5/5 at e 0.190); L17-L20 FAIL twice |
-| C f.302v | 402 | 227 / 146 / 29 (kp87b/grades_f302v.tsv holds the script's 230 / 143; the 3 T31 tokens held at M per HYPOTHESES.md, as NOTES.md reports) | 56.5 | 13 letters | **D1** | known-answer PASS kp87b (0.590 vs 0.389 / 0.464, control 5/5 at e 0.335) |
+| C f.302v | 402 | 227 / 146 / 29 [9 Oct: 232 / 141 / 29, 57.7%, AUDIT 3] (kp87b/grades_f302v.tsv holds the script's 230 / 143; the 3 T31 tokens held at M per HYPOTHESES.md, as NOTES.md reports) | 56.5 | 13 letters | **D1** | known-answer PASS kp87b (0.590 vs 0.389 / 0.464, control 5/5 at e 0.335) |
 D1, "fragments read", on all three: the firm (C) tokens are letters scattered between M tokens, the longest unbroken firm
 stretch is 13-17 letters, and for a 73-cell homophonic table at two-reader transcription error 0.18-0.34 the authentication
 distance is of the order of 10^2 letters before liberties; no firm stretch comes near it, and no code value is read in two
@@ -163,7 +163,7 @@ this very item exists, so N0 holds whether or not it was ever printed. Confidenc
 |---|---|---|---|---|
 | A f.247r | 64.7 (C 236/365) | M 122, U 7: mostly ordinary letters, not names/codes | **D1** | longest firm run 17 letters, below the authentication distance; no code value read in two contexts; firm share < 80% |
 | B f.275v | 38.5 (C 287/746) | M 444, U 15 (L17-L20 all M) | **D1** | longest firm run 15 letters; as above |
-| C f.302v | 56.5 (C 227/402, T31 held) | M 146, U 29 | **D1** | longest firm run 13 letters; as above |
+| C f.302v | 56.5 (C 227/402, T31 held) [9 Oct: 57.7, C 232/402, AUDIT 3] | M 146, U 29 | **D1** | longest firm run 13 letters; as above |
 The C grades are licensed by an aggregate known-answer alignment against the period text, with controls on file (Audit 1, 3a);
 they are scattered letters, not a clause of our own reading, so D2 is not reached. No D2 content sentence is required.
 
@@ -221,16 +221,48 @@ Propagation: status.json carries no f.275r row (results 117-119 are f.247r, f.27
 SECOND-OPINIONS-QUEUE.tsv has no row for this target -- nothing to change. NOTES.md's "(e78873a18)" corrected to 709a81b3d.
 Verdict: change consistent with its PREREG and the crops; carried over; no class raised.
 
-## Carry-over UNA2-PISA (9 Oct 2026) -- f.302v T57 -> T32 relabel (audited item C), written by the solver worker; a verifier to check
+## AUDIT 3 (V-PISA-C, 9 Oct 2026) -- verifier check of the UNA2-PISA carry-over: f.302v T57 -> T32 relabel (item C)
 
-Written by the worker that made the change (UNA2-PISA, orchestrator account-4 brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md),
-so that rule 10's propagation is not left for a later session; it classes nothing and raises no N-class or depth. Facts only:
-- Change: tx87b/ciphertext_f302v.tsv, 5 tokens T57 -> T32 (L02 o10, L03 o33, L05 o27, L10 o26, L10 o29; 1-based over non-'/' tokens), pre-edit
-  copy tx87b/ciphertext_f302v_preT32.tsv, derivation una2_pisa/apply_t32.py (`--check` exit 0). Same on f.301v (not an audited item), 6 tokens.
-- Reading: reading_f302v_M.txt "la" -> "n" at those 5 places; kp87b/grades_f302v.tsv C 230 -> 235, M 143 -> 138, U 29 unchanged (402 tokens).
-  Audit 1/2's depth row quotes 227 / 146 / 29 with the 3 T31 tokens held at M; on the same holding that reads 232 / 141 / 29 (57.7%), still D1
-  unless a verifier finds otherwise (the longest firm run is not re-measured here).
-- Evidence: una2_pisa/PREREG-UNA2-PISA.md (pushed before any score); gate PASS (NOTES.md "UNA2-PISA"): f.302v 0.5903 -> 0.6072 above key-shuffle
-  p99 0.392 and order p99 0.465, control 5/5 at e 0.335; all 5 relabelled tokens decode n on the leaf's Colbert copy n (0 of 5 identical as la).
-  Labels come from UNA-PISA's blind tile compare (known-answer gate 5/5 on the f.302v call). key86.tsv unchanged.
-- The N0 class and the safe sentence are unaffected (the plaintext is the period margin decipherment and the Colbert copy).
+Verifier session V-PISA-C (account 2, for the account-4 orchestrator; brief .claude/briefs/runs/2026-10-09-account4-orch-unassigned-2.md
+"V-PISA-C"), 11:13-11:3x UTC by date -u. Not the solver (UNA2-PISA) nor the tile reader (UNA-PISA). Disk only, 0 network, 0 subagent calls.
+This section replaces the carry-over UNA2-PISA appended in c0a068c8e (10:34 UTC); every statement below was checked against the files, and
+what the files did not support is corrected.
+
+Checked:
+- PREREG order: una2_pisa/PREREG-UNA2-PISA.md landed alone in 9700dc93c (10:14:31 UTC); result.json, the relabel and the regenerated readings
+  landed in c0a068c8e (10:34:28 UTC). The gate (G1 each page, G2 controls >= 4/5, G3 >= 6 of 11 aligned as n and more than as la) was fixed
+  before any score.
+- It is a transcription-label change, not a key change: key86.tsv and key.tsv are byte-identical between 9700dc93c and HEAD (empty git diff);
+  key86 still gives T57 la and T32 n, Tomokiyo's table values. A diff of tx87b/ciphertext_f302v_preT32.tsv against the committed
+  tx87b/ciphertext_f302v.tsv shows exactly 5 changes, each T57 -> T32, on L02, L03, L05 (o27, not the unlocated o7, which stays T57) and L10
+  (two); token counts per line unchanged. f.301v (not an audited item) carries the other 6.
+- Reproducibility (rule 7): `python3 una2_pisa/apply_t32.py --check` "up to date" exit 0 on both pages; `python3 tools/decode_key.py
+  ciphers/fr16045-pisany-rome-1585 --ciphertext tx87b/ciphertext_f302v.tsv --key key86.tsv --reading reading_f302v_M.txt --tokens
+  reading_f302v_tokens.tsv --check` "reading up to date" exit 0 (439 tokens: H 378, U 61); the f.301v form also exit 0 (375: H 315, U 60).
+- Gate numbers re-read from una2_pisa/result.json: f.302v 0.5903 -> 0.6072 vs key-shuffle p99 0.3918 / order p99 0.4650, control 5/5 at
+  e 0.335; f.301v 0.6302 -> 0.6561 vs 0.3997 / 0.4789, control 5/5 at e 0.192; G3 11 of 11 relabelled tokens on an identical copy n,
+  0 of 11 as la (una2_pisa/per_token.tsv; f.302v 5 of 5). PASS as the PREREG defines it.
+- Caveat the carry-over did not state: on f.302v the descriptive random-relabel null is degenerate (all 6 draws of 5-of-6 score 0.6072, the
+  sixth T57, L05 o7, moves nothing), so on this page the relabel's support is G3 and the blind tile compare, not the null. The tile labels
+  are UNA-PISA's medium/high blind calls (known-answer tiles 5/5 on the f.302v call); the locating step saw the signs, the reader saw no
+  label, key value or copy. Independent witnesses agree (PIS1-302 alignment T57 -> n 4 of 6; f.275v gloss conflict C4, n).
+- Grades: kp87b/grades_f302v.tsv counts, mine: before (9700dc93c) C 230 / M 143 / U 29, now C 235 / M 138 / U 29, 402 tokens; the 5 changed
+  rows are the 5 relabelled tokens. With the 3 C-graded T31 tokens (L01 p19, L06 p9, L11 p4) held at M as Audits 1-2 hold them:
+  **C 232 / M 141 / U 29, firm 57.7%** (was 227 / 146 / 29, 56.5%). These now supersede the item C counts in sections 1 (depth table) and
+  3a above, which stay as written on 5 Oct.
+- Longest firm run, re-measured (C tokens unbroken in reading order, T31 held): 13 tokens / 16 letters from L09 p22, the same before and after
+  the relabel (Audits 1-2's "13 letters" is that run counted in tokens). Far below the authentication distance of the order of 10^2 letters;
+  no code value read in two contexts; firm share < 80%. **Depth stays D1.**
+- Judge (rule 7), re-run: `python3 tools/judge_plaintext.py specs/fr16045-pisany-rome-1585.json --file ciphers/fr16045-pisany-rome-1585/
+  reading_f302v_M.txt` -> FAIL language score -1.397, null_p99 -1.701, real_p05 -0.942, N=586; words cover 0.824 ok; as UNA2-PISA logged.
+- Reading change on item C: 5 places "la" -> "n" in reading_f302v_M.txt. Plaintext source unchanged (the leaf's margin decipherment and
+  Colbert 16 pt II pp.341-342); key published (Tomokiyo, credited). **N0 unchanged.**
+
+Safe sentence (item C), current: "Tomokiyo's published table reads the f.302v cipher (24 Mar 1587) at letter level against the leaf's own
+period margin decipherment and the Colbert 16 pt II copy (known-answer PASS, about 58% of tokens confirmed; D1); the plaintext is known from
+those two manuscripts and was not located in print in the editions and full-text indexes searched on 5 Oct 2026 (two audits)."
+Unsafe: as section 5.
+
+Propagation: status.json results[119] grade counts, depth_pct (56.5 -> 57.7), line ("about 56%" -> "about 58%") and depth_check updated;
+depth, novelty and audit_status unchanged. SECOND-OPINIONS-QUEUE.tsv has no row for this folder (grep, 9 Oct) -- nothing to change.
+Verdict: the relabel is a pre-registered transcription-label change with key86 untouched; counts confirmed, percentage updated; N0 / D1 stand.

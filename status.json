@@ -3817,10 +3817,10 @@
       "fields_source": "fr16045-pisany-rome-1585/AUDIT.md: AUDIT 1 (VER1-PIS, 5 Oct 2026)",
       "document_id": "BnF fr.16045 f.302v: Pisany to Henri III, Rome, 24 Mar 1587",
       "title": "Pisany to Henri III, 24 Mar 1587 (BnF fr.16045 f.302v): Tomokiyo's published table checked against the leaf's margin decipherment",
-      "grade": "N0 (one audit), key published (S. Tomokiyo, credited); text known from the leaf's 19-line margin decipherment and Colbert 16 pt II pp.341-342; not located in print (Aubery 1654, L'Epinois 1886, Hubner 1870 vols 1 and 3, searched 5 Oct 2026). 402 sign tokens: C 227, M 146, U 29; known-answer PASS kp87b.",
-      "line": "Fragments read (D1). Tomokiyo's published table reads the f.302v cipher at letter level against the leaf's own margin decipherment and the Colbert copy (about 56% of tokens confirmed). The text was already known from those period manuscripts; not a decipherment.",
-      "depth_pct": 56.5,
-      "depth_check": "known-answer PASS kp87b 0.590 vs p99 0.389/0.464, control 5/5 at e 0.335; longest firm run 13 letters; VER1-PIS 5 Oct 2026; Audit 2 DEF1-PIS 5 Oct 2026: N0 and D1 upheld; plaintext not located in print (two audits), known from the leaf margin decipherment and Colbert 16 pt II"
+      "grade": "N0 (one audit), key published (S. Tomokiyo, credited); text known from the leaf's 19-line margin decipherment and Colbert 16 pt II pp.341-342; not located in print (Aubery 1654, L'Epinois 1886, Hubner 1870 vols 1 and 3, searched 5 Oct 2026). 402 sign tokens: C 232, M 141, U 29 (after the 9 Oct 2026 T57->T32 relabel, AUDIT 3 V-PISA-C); known-answer PASS kp87b.",
+      "line": "Fragments read (D1). Tomokiyo's published table reads the f.302v cipher at letter level against the leaf's own margin decipherment and the Colbert copy (about 58% of tokens confirmed). The text was already known from those period manuscripts; not a decipherment.",
+      "depth_pct": 57.7,
+      "depth_check": "known-answer PASS kp87b 0.590 vs p99 0.389/0.464, control 5/5 at e 0.335; longest firm run 13 letters; VER1-PIS 5 Oct 2026; Audit 2 DEF1-PIS 5 Oct 2026: N0 and D1 upheld; plaintext not located in print (two audits), known from the leaf margin decipherment and Colbert 16 pt II; AUDIT 3 V-PISA-C 9 Oct 2026: 5 T57->T32 transcription relabels (key86 unchanged) checked, C 232/402 (T31 held), longest firm run 13 tokens/16 letters, D1 and N0 upheld"
     },
     {
       "date": "5 Oct 2026",
