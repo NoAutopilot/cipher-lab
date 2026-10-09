@@ -1,0 +1,68 @@
+## intitle:"Mercure historique et politique" 1713 &filter=full HTTP 503 0 | https://www.googleapis.com/books/v1/volumes?q=intitle%3A%22Mercure%20historique%20et%20politique%22%201713&country=US&maxResults=20&filter=full
+## intitle:"Europäische Fama" &filter=full HTTP 200 6 | https://www.googleapis.com/books/v1/volumes?q=intitle%3A%22Europ%C3%A4ische%20Fama%22&country=US&maxResults=20&filter=full
+fPBYAAAAcAAJ	“Die” europäische Fama, welche den gegenwärtigen Zustand der	1707	ALL_PAGES	... inurl), ine-le. -que(uti Luke-u ub'erjus geheimer-ur, ) ultetjuo * 'F tei-reliej jeinere, yee- lia* ein partir uäueelx,pre. „7-- --->.- - iedochdaßman fich iuvorhe.ro bey dem deßhalber itd Zum-nenten liegenden Commen
+pjRQAAAAcAAJ	P. V. M. Omnia Opera	1510	ALL_PAGES	... fama uagatur . Huc delecta uirum sortiti corpora furtim Includunt cæco lateri : penituly cauernas Ingenteis : uterum ... intext : ut Bis denas Italo texa mus robore naues . Abiete costas : no sine causa Vin hoc loco 
+stVttmRnaXMC	Patris Christiani Lupi Opera omnia	1727	ALL_PAGES	... fama ( Certare docta fragilitate crystallo , Et dum perit redire nescia ) conftans , Longè stetisti à crimine ... intitle : Florentini Tertulliant , Presbyters Carthaginie Liber de Præfcriptionibus contra Hereticos ,
+vDloAAAAcAAJ	P. V. M. omnia opera: diligenti castigatione exculta: aptiss	1510	ALL_PAGES	... fama uagatur . Huc delecta uirum sortiti corpora furtim Includunt cæco lateri : penituso cauernas Ingenteis : uterum ... intext : ut Bis denas Italo texa mus robore naues . Abiete costas : no sine causa Vin hoc loco 
+VoBCAAAAcAAJ	Omnium Angeli Politiani operum qu[a]e quidem extare nouimus 	1512	ALL_PAGES	... fama quo sue fortune pued niens : quippe ingenti studio comilitones vehicula vrgebant , quafi Macrino adhuc rerú ... Europa angufto Propontidos freto : iae cedes . Byzantio appropinquatem , vento aduerso vsum perhibe
+sTxpAAAAcAAJ	Za'ijob Lodalf za'embhera garmanja 'eheta jebelewa 'alemana 	1699	ALL_PAGES	... Fama 151.153.316.482.497 Extirpare cum derivatis 110.568 C5F5-568-408 Famelicus 432 Fames , fame affligere 132 438 ... intext is veftem 615 Expandere 123. feq . 129. 184 186. manus 573. inftar veli 563 Expanfio 130.1
+## intitle:"Europaeische Fama" 1713 &filter=full HTTP 200 0 | https://www.googleapis.com/books/v1/volumes?q=intitle%3A%22Europaeische%20Fama%22%201713&country=US&maxResults=20&filter=full
+## intitle:"Mercure historique et politique" 1713  HTTP 200 0 | https://www.googleapis.com/books/v1/volumes?q=intitle%3A%22Mercure%20historique%20et%20politique%22%201713&country=US&maxResults=20
+## "Mercure historique et politique" "tome LIV"  HTTP 200 3 | https://www.googleapis.com/books/v1/volumes?q=%22Mercure%20historique%20et%20politique%22%20%22tome%20LIV%22&country=US&maxResults=20
+YqP-eIN5JfoC	MERCURE HISTORIQUE ET POLITIQUE	1713	ALL_PAGES	... l'arbitrage des Puiflances garantes du Traité du 8. Novembre 1703. pour le payement des créances de Son Alteffe Royale de Savoyes 1 8. Comme par les incidens , & le fort de. 8. Com . Tome LIV . 14 . 1 632 Mercure His
+5mosFyuJ5SMC	Mercure historique et politique contenant l'état present de 	1713	ALL_PAGES	... Provinces ; fur quoi ayant été secondé , il fut résolu d'imposer deux Schellings par liv , sterl . sur les Revenus des Terres pour cette année . Tome LIV . Z Le Le 4. on fit l'examen des Comptes pu- blics qui Politiq
+Eo9RL48dDjcC	Mercure historique et politique contenant l'état présent de 	1713	ALL_PAGES	... Provinces ; fur quoi ayant été secondé , il fut résolu d'imposer deux Schellings par liv . sterl . fur les Revenus des Terres pour cette année . Tome LIV . Z Le Le 4. on fit l'examen des Comptes pu- blics qui Politiq
+## intitle:Fama 1713 europäische  HTTP 503 0 | https://www.googleapis.com/books/v1/volumes?q=intitle%3AFama%201713%20europ%C3%A4ische&country=US&maxResults=20
+YqP-eIN5JfoC | MERCURE HISTORIQUE ET POLITIQUE | Contenant l'état present de l'Europe, ce qui se passe dans toutes les Cours, l' interêt des Princes, leurs brigues, & generalement tout ce qu'il y a d | 1713 | pages 728 |  | ALL_PAGES
+5mosFyuJ5SMC | Mercure historique et politique contenant l'état present de l'Europe.. |  | 1713 | pages 744 |  | ALL_PAGES
+Eo9RL48dDjcC | Mercure historique et politique contenant l'état présent de l'Europe |  | 1713 | pages 144 |  | ALL_PAGES
+## "Mercure historique et politique" Utrecht paix signée onze Avril  HTTP 503 0 | https://www.googleapis.com/books/v1/volumes?q=%22Mercure%20historique%20et%20politique%22%20Utrecht%20paix%20sign%C3%A9e%20onze%20Avril&country=US&maxResults=20
+## "Mercure historique et politique" Czar Livonie Porte Berlin  HTTP 200 4 | https://www.googleapis.com/books/v1/volumes?q=%22Mercure%20historique%20et%20politique%22%20Czar%20Livonie%20Porte%20Berlin&country=US&maxResults=20
+NWIMAAAAYAAJ	Mercure historique et politique de Bruxelles	1791	ALL_PAGES	... Cronstadt avec sa flotille qui porte 25 mille hommes de débar- quement . Il se - rend d'abord en Livonie . Sa ve Pa 1 T ritable destination est un mystère qui inquiète , car cet ( 3393 posa à Londres & à Pétersbourg 
+uOFefYT3-GcC	Mercure historique et politique contenant l'état présent de 		ALL_PAGES	... : cette oie atis d dar e pet Le Prince de Nafsfau est parti de Cronstadt avec sa flotille qui porte 25 mille hommes de débar- quement . Il se rend d'abord en Livonie . Sa vé : P2 ritable destination est un mystère qu
+NtpMAQAAIAAJ	Grand Larousse encyclopedique	1960	NO_PAGES	... Livonie , 1794 - Saint- Pétersbourg 1874 ) . Il combattit en Allemagne ... Berlin ; nommé comte en 1856 , envoyé ensuite en Pologne , comme lieutenant ... politique danois ( Fjaltring 1829 - Copenhague 1891 ) . Déput
+5q0EYZh6i1wC	Nouveau Larousse illustré	1897	NO_PAGES	... Porte une note exposant les réformes dont l'exécution immédiate s'im- posait ... Berlin le 13 juin 1878 , et permit à l'Autriche d ' « occuper » la Bosnie et ... Mercure sur le Soleil ( 1878 ) . Outre des mémoires , 
+## "Mercure historique et politique" Czar Berlin Roi de Prusse Livonie 1713  HTTP 200 0 | https://www.googleapis.com/books/v1/volumes?q=%22Mercure%20historique%20et%20politique%22%20Czar%20Berlin%20Roi%20de%20Prusse%20Livonie%201713&country=US&maxResults=20
+## Mercure "mort du Roi de Prusse" 1713 Frederic HTTP 200 20
+    fLA_AQAAMAAJ	Mercure de France	1974	NO_PAGES	... mort du feu Roi . En attendant , >> on avoit fait fermer les portes de ... Prusse . Remarquons ici qu'on ne sçait à quoi at- tribuer l'erreur de ... 1713. Son fils re- gna jusqu'en 1740 , fous le nom de [ 1 ] Nous do
+## Czar Berlin "Roi de Prusse" Livonie 1713 HTTP 200 18
+## Czar Livonie Porte "Roi de Prusse" Golowkin HTTP 503 0
+## Czaar Liefland Berlin "König in Preussen" 1713 Pforte HTTP 200 2
+## Fama 1713 Czaar Berlin Liefland HTTP 200 2
+## intitle:mercure Utrecht 1713 HTTP 200 20
+    Xyw0AAAAMAAJ	Mercure françias	1778	ALL_PAGES	... Utrecht 1713 & de Paris 1763 , à l'ex- ception des articles auxquels il déroge . Les deux Cours se proposent de donner à celui de 1777 toute la clarté & la solidité qu'exigent les anciens Traités auxquels il se rappo
+    19ZPvqsXHb8C	Mercure français		ALL_PAGES	... Utrecht , 1713 , les Plénipotentiaires des deux Cours . Le Marqu's d'Uxelles & M. Mefnager d'une part , l'Evêque de Bristol & le Comte de Strafford de l'autre , arrêterent , au nom de leurs Souverains , trente - neuf
+    om4YX9YthdcC	Mercure de France	1778	ALL_PAGES	... Utrecht 1713 & de Paris 1763 , à l'ex- ception des articles es auxquels il il déroge . Les deux Cours se proposent de donner à celui de 1777 toute la clarté & la folidité qu'exigent les anciens Traités auxquels il se
+    -RY4AQAAMAAJ	Mercure historique et politique	1726	ALL_PAGES	... Utrecht 1713. & c . en Réflexions sur les Nouvelles ... d'Italie : Suoneriones fen I I l'on raisonne sur le principe , hazard , & qu'ils ont toujours un certain but dans toutes leurs demar- ches , on fera obligé de p
+    WReiLCNUUHIC	Mercure historique et politique contenant l'état présent de 	1739	ALL_PAGES	... Utrecht 1713. porte , que la Navigation des Anglois en Amerique doit demeurer fur le même pied qu'elle étoit sous le Regne de Charles II . Or il est certain que sous ce Regne les Loix fondamentales du Royaume defendo
+    YqP-eIN5JfoC	MERCURE HISTORIQUE ET POLITIQUE	1713	ALL_PAGES	
+    iDVmAAAAcAAJ	Actes, memoires, & autres pieces authentiques concernant la 	1714	ALL_PAGES	
+    al9bAAAAQAAJ	Actes, mémoires & autres pièces authentiques concernant la P	1713	ALL_PAGES	
+    i5tFAAAAcAAJ	Traitez de paix et de commerce	1713	ALL_PAGES	
+## intitle:mercure Livonie Czar Porte Prusse HTTP 503 0
+## intitle:mercure Czar Livonie Berlin descendans HTTP 200 0
+## intitle:fama Czaar Liefland Berlin HTTP 200 0
+## intitle:fama Utrecht 1713 HTTP 200 19
+    TOxYAAAAcAAJ	“Die” europÃ¤ische Fama, welche den gegenwÃ¤rtigen Zustand d		ALL_PAGES	... Utrecht den 11. April . Anno 1713 . ( L.S. ) Huxelles . ( L.S. ) Mesnager . ( LS . ) J. von Randvvyck . ( L.S. ) W ... 1713. Jahrs geschlossen , als wollen Se . Majeft . zur Beförderung des General Friedens alles moa
+    FeBTAAAAcAAJ	Die europäische Fama, welche den gegenwärtigen Zustand der v	1715	ALL_PAGES	... 1713 . Actes , Memoires & autres pieces authentiques concer- nant la Paix d ' Utrecht , Tome IV . 1 2. a Utrecht 1713 . Bibliotheque choisie pour servir de suite a la Bibliothe . que universelle par Jean le Clerc Tom
+    RvlYAAAAcAAJ	“Die” Neue EuropÃ¤ische Fama, Welche den gegenwÃ¤rtigen Zust	1738	ALL_PAGES	... Utrecht 1713 nochmahls confirmiret worden . *** Worauf 1715 und 1721 noch andere gefolget . Der Au- tor führet darauf an , daß man bis auf diese Zeit nicht das geringste von Groß . Britanni scher , wohl aber von Span
+    TUpBAAAAcAAJ	Die neue europäische Fama, welche den gegenwärtigen Zustand 	1737	ALL_PAGES	... Utrecht 1713 nochmahis confirmiret worden . *** Worauf 1715 und 1721 noch andere gefolget . Der Aur tor führet darauf an , daß man bis auf diese Zeit nicht das geringste pon Groß - Britanni scher , wohl aber von Span
+    pTkoAAAAYAAJ	Europäische Fama	1737	ALL_PAGES	... Utrecht 1713 nochmahls confirmiret worden . *** Worauf 1715 und 1721 noch andere gefolget . Der Au- tor führet darauf an , daß man bis auf diese Zeit nicht das geringste von Groß - Britanni scher , wohl aber von Span
+    Kd5TAAAAcAAJ	Die europäische Fama, welche den gegenwärtigen Zustand der v	1713	ALL_PAGES	
+    rjVmAAAAcAAJ	Actes, memoires, & autres pieces authentiques concernant la 	1714	ALL_PAGES	
+    xzZNAAAAcAAJ	Redenen, waaromme zyne Keizerlyke Majesteit niet heeft zamen	1713	ALL_PAGES	
+    c0x5NQEACAAJ	Hundert ausgefertigte Gedanken an die Gevollmächtigte der Kö	1713	NO_PAGES	
+## intitle:mercure Czar Livonie 1713 HTTP 200 0
+## intitle:mercure Czar Porte Berlin 1713 Prusse HTTP 200 0
+## intitle:mercure Czar Livonie Prusse descendans HTTP 200 0
+## intitle:fama Czaar Liefland 1713 HTTP 200 0
+## intitle:fama Czaar Pforte Berlin 1713 HTTP 200 0
+## intitle:fama Czaar Liefland Preussen Nachkommen HTTP 200 0
+## intitle:mercure Czar 1713 HTTP 200 0
+## intitle:mercure Livonie HTTP 200 0
+## intitle:fama Czaar 1713 HTTP 200 0
+## intitle:fama Liefland HTTP 200 0
+## intitle:mercure Golowkin HTTP 200 0
+## intitle:mercure Livonie Czar HTTP 200 0
+## intitle:fama Golowkin HTTP 200 0
+## intitle:fama Liefland Czaar Preussen HTTP 200 0

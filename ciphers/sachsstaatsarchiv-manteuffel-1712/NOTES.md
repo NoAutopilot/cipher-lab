@@ -2220,7 +2220,7 @@ Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 
 - [x] siblings: Loc. 694/03, /04, /06 opened (R12D-MANTSIB, 6 Oct 2026: 390/310/538 frames, frames.tsv each; stride-20 sample 63 frames: 694/06 0290 0510 0530 cipher and glossed, same key family as Krauske (31 66 14 47 50, 160, 187, 227 agree, M), codes seen <=289 plus one 939; no glossed nomenclator-range leaf; Loc. 695/03 (1716) carries Feldmann's 1925 key slip, a different system); stride-5 screen of 694/06 0480-0538 DONE (R12D-MANT06, 6 Oct 2026: 13 frames, 10 cipher-bearing, 7 glossed; Krauske-family glosses agree again (227, 177, 170, 291, M); no glossed code in f.410's range, 609 once unglossed; a second, 4-digit name code glossed on 0505/0520 (5249 Konig von D., 5765 Manteuffel), not Krauske's); next: inventory of the 4-digit system's glossed groups across 694/03-06 (~$2), a separate hypothesis ; 4-digit inventory DONE (D4-MANT, 8 Oct 2026: 694/03 0010 10 groups + 694/04 0170-0171 7 groups, unglossed, 2727/1016 recur 1706-07; 694/06 0504 17 groups glossed + 0519-0521 ~150-250 groups glossed per name; 4229/5249/1900 consistent across leaves; d4mant/inventory_4digit.tsv); next: stride-5 screen of 694/03-04 around 0010/0170 for more 4-digit leaves (~$1.5), then 694/06 0519-0521 transcription with glosses as known answers (~$16), premise check first
 - [x] clear-pages: 694/08 f.468 glosses transcribed and scored against the key, 17/17 vs shuffled-key p99 5 (GAPS154, 3 Oct 2026); gloss hand judged period, not Krauske's (GAPS158, 3 Oct 2026, M)
 - [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026); transcribed into key.tsv, 157 codes (GAPS151, 3 Oct 2026)
-- [x] print: NASG 1893-98, Acta Borussica I, Droysen IV.1 (AUDIT2-MANT), Haake 1902/1926/1939 and Rous 2016 (GAPS180, 3 Oct 2026): no print of f.410 found; Haake's NO_PAGES titles unread (bag-of-words only where read)
+- [x] print: NASG 1893-98, Acta Borussica I, Droysen IV.1 (AUDIT2-MANT), Haake 1902/1926/1939 and Rous 2016 (GAPS180, 3 Oct 2026): no print of f.410 found; Haake's NO_PAGES titles unread (bag-of-words only where read); 694/09 0136 press of the day (Mercure historique et politique, Europäische Fama, Apr-May 1713): GB-PHRASE 9 Oct 2026, Google Books API + IA full text, no report found but a non-test for absence (term-level control fails, no 1713 issue on IA); next: a page read of the Apr-May 1713 issues by the desk runner (LOCAL-QUEUE), ~$0 in session
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
 - [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 47 sampled (13 cipher, 3 possible; A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026), 847 to check; GAPS184's 9 cipher frames classified at native (GAPS189, 3 Oct 2026: 8 glossed, 2 nomenclator-range); 0528 transcribed (GAPS195, 3 Oct 2026); 0001-0501 stride 10 screened (GAPS201, 3 Oct 2026: 6 possible, 98 of 894 seen); the 6 possibles classified at native (GAPS207, 4 Oct 2026: 5 cipher, 1 clear; 0501 glossed nomenclator-range); 0501 transcribed and aligned (RUN3-MANT, 4 Oct 2026); 0501/f.409v witnesses settled (RUN4-MANT, 4 Oct 2026); clear-vs-cipher diff of 0501 (RUN4-MANT2, 4 Oct 2026: 2 pairs, M); 0500/0502 diffed (RUN4-MANT3, 4 Oct 2026: 0 pairs); pool duplicate search (N9-MANT, 5 Oct 2026: no copy of f.409/f.410 beyond 0500-0502; 0502/0503 looked at, copy ends at f.409v; 50 frames in 0504-0578 never inventoried, listed in NOTES N9-MANT; the 50 screened, N9-MANT2, 5 Oct 2026: 24 code-bearing + 3 possible, no f.410 P.S. copy; 148 of 894 seen, 746 to check; frames after 0580 screened at stride 5, R13-MANTSCR, 6 Oct 2026: 55 frames, 5 code-bearing + 5 possible, one glossed nomenclator-range frame 694/09 0085; 202 of 894 seen, 692 to check; 694/08 0581-0592 completed, NZ-MANT, 7 Oct 2026: 6 frames, 2 code-bearing glossed letter-range (0588, 0589); 208 of 894 seen, 686 to check; next: 694/08 0001-0501 stride-10 offset-5 screen, ~50 frames, ~$1.5); 694/09 stride inventory MANT-0609X 8 Oct 2026: 0008 heavy glossed, next its transcription (~$4.5); 694/08 stride-4 screen MANT-INV08 9 Oct 2026: 94 frames, 22 code-bearing (13 glossed or clear-under-code, 9 unglossed), 282 694/08 frames still unseen; next: 0454 read (~$4.5)
 - [ ] retry: nothing has failed yet that needs a retry
@@ -2780,3 +2780,43 @@ What this gives (all crib, grade M at best; key.tsv unchanged; HYPOTHESES.md row
   readings at fit 3, so nothing is proposed. Open.
 Not done: Droysen IV.2 / Acta Borussica search for Lölhöffel's negotiation in Apr 1713 (network, ~$0.5); a second spelled witness of
 the name in the series (any leaf with 44 16|33 12 8 ...). Requests: none (disk only). Vision calls: none.
+
+## GB-PHRASE (9 Oct 2026, 07:23-07:3x UTC by date -u, LANE FAMILY-A2g account 2): 694/09 0136 press of the day, Mercure historique et politique and Europäische Fama, April-May 1713
+
+Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-0709-jobs.md "GB-PHRASE" item (2); the check AUDIT "V-MANT0136" section 4 left unchecked (Google Books
+429). Prior work: `python3 tools/prior_work.py sachsstaatsarchiv-manteuffel-1712 --item-spec 'shelfmark=SHStA Dresden 10026 Loc. 694/09;folio=frame
+0136;sender=Manteuffel;recipient=Flemming' --step-type lookup --fetch` exit 4 (3 LEAD: MANT-INV08B, MANT-NAMES136 and this job's claims), recorded CLEAR
+(INV08B is a 694/08 frame inventory; NAMES136 reads 0136 name runs on disk; neither searches the press). 4-editions KNOWN-PART (V-MANT0136: Acta Borussica
+BO I, Droysen IV.1/IV.2). Check 1 by hand: no press search for 0136 in the folder before this. The news under test (AUDIT V-MANT0136 s.1, s.4): Prussia
+helping the czar to Livonia "pour luy & pour ses descendens", the czar no longer fearing the Porte, the czar in Berlin 8-12 March 1713 (Droysen IV.2 p.43).
+
+1. Volumes located (Google Books API, keyed, country=US; `f0136_09/gbphrase_gbooks.txt`): Mercure historique et politique 1713, full view, three
+   volumes YqP-eIN5JfoC (728 pp.), 5mosFyuJ5SMC (744 pp.), Eo9RL48dDjcC (144 pp.), also TRYVAAAAQAAJ (1713) -- which half-year each covers is not in the
+   API metadata; Europäische Fama, full view, TOxYAAAAcAAJ (prints "Utrecht den 11. April. Anno 1713") and Kd5TAAAAcAAJ (1713).
+2. **Positive controls (one per periodical): PASS.** 'intitle:mercure Utrecht 1713' returns YqP-eIN5JfoC; 'intitle:fama Utrecht 1713' returns
+   TOxYAAAAcAAJ with the snippet "Utrecht den 11. April. Anno 1713 ... Huxelles ... Mesnager" (the Peace of Utrecht, 11 April 1713, in the April-May
+   window) and Kd5TAAAAcAAJ. So the route reaches both periodicals' 1713 volumes.
+3. Target queries (Google Books, >= 2.5 s apart): 'intitle:mercure Czar Livonie 1713', '... Czar Porte Berlin 1713 Prusse', '... Czar Livonie Prusse
+   descendans', 'intitle:mercure Golowkin', 'intitle:fama Czaar Liefland 1713', '... Czaar Pforte Berlin 1713', '... Czaar Liefland Preussen Nachkommen',
+   'intitle:fama Golowkin', and untitled variants ('Czar Berlin "Roi de Prusse" Livonie 1713', 'Czaar Liefland Berlin "König in Preussen" 1713 Pforte'):
+   **0 volumes from either periodical; no snippet about the czar, Livonia or the Porte in April-May 1713.**
+   **But this is a non-test for absence, not a miss**: a term-level control fails on the same route -- 'intitle:mercure Livonie' and 'intitle:mercure
+   Czar 1713' return 0, although 'intitle:mercure Czar' returns 20 Mercure volumes (none of the 1713 ones in the top 40) and one of those served
+   snippets itself contains "Livonie"; 'intitle:fama Czaar' and 'intitle:fama Liefland' return 0 though the Fama certainly reported the Northern War.
+   The Books API ranks by relevance, caps at 40 results and has no in-volume search, so a 0 here says the index did not surface the term, not that the
+   volume lacks it. The control in step 2 shows the volumes are reachable; it does not show the target terms would be found if present.
+4. IA full text (be-api.us.archive.org, 8 queries, `f0136_09/gbphrase_ia.txt`): '"Mercure historique et politique" 1713' (1,738 items), '"Europäische
+   Fama" 1713' (605), '"europaeische Fama"' (57) -- every top hit is a later book citing the periodical; **no 1713 issue of either periodical surfaced
+   as an IA item**, matching V-MANT0136 (no 1713 Mercure on IA by title). Phrase rows: '"pour luy et pour ses descendans" Livonie' 0, '"n'avoit plus
+   la Porte"' 0; 'Czaar Liefland Golowkin Dohna 1713' returns Droysen IV.2 (already read by V-MANT0136: "Manteuffel, 9. April 1713 ... an Graf Dohna
+   Pommern") and genealogies, nothing else; '"Avril 1713" Czar Livonie' and the French name query return Mably, Voltaire, Sbornik RIO 34 and a Polish
+   study "Polska a sprawa wschodnia 1709-1714" (kpbc.umk.pl.Magazyn_227_10_HD007_180457: "nous avons arrêté le Czar et le Roi de Prusse", a Sieniawski /
+   Szembek letter of July 1713 -- context of the same Prusso-Russian talks, three months later, not the April news; not SUBSTANCE under the brief's +-3
+   days rule, listed for the verifier).
+Where not found: Google Books API and IA full text, 9 Oct 2026: no printed press report of 0136's news located in Mercure historique et politique or
+Europäische Fama for April-May 1713. **Status of the check: still unchecked in substance** -- the API cannot see inside these volumes for the target
+terms (term-level control fails), and IA holds neither run. What would settle it: reading the April and May 1713 issues page by page (Google Books
+reader at books.google.com, captcha-blocked from the cloud; or a BSB / ÖNB digital copy of the Fama; a LOCAL-QUEUE row for the desk runner), not a
+further API query. No SUBSTANCE hit, so no verifier flag. A search result, not a novelty verdict (rule 10). No decode, no grade change, no class.
+Requests: www.googleapis.com 31 (several HTTP 503, each its own query, no 429); be-api.us.archive.org 8.
+
