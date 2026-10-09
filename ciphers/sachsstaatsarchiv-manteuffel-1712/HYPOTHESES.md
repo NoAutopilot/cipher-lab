@@ -248,3 +248,11 @@ unreadable curl (key d); 31 glossed n (key m) and 55 glossed h (key b|[a]) in r0
 - r07 '60.35.14.16.21.30.35.50' = r e n o n c e a after 'en cas qu'il' and before 'et que [Roi de Suède] y consentit': sense 'renonçât';
   the last two codes give 'ea' with no t (M; a spelling or a dropped code, not a key change).
 - r17 single '60' (key r|re|ro) in 'le pr. R. voiant le pr. 60 parler au Roi': a letter-valued code used for a person (M, open-code).
+
+## MANT-NAMES136 (9 Oct 2026, LANE FAMILY-A2g account 2): name runs on 694/09 0136 and 0103, crib_list_fit.py (names136/), no key.tsv change
+| date / job | hypothesis | control | control result | target result | verdict |
+|---|---|---|---|---|---|
+| 9 Oct 2026 MANT-NAMES136 | 0136 r01 '44.16.12.8.33.5.35.42' = Lölhöffel (Prussian resident in Poland) | C2 0136 r04 'livonie' (PASS 6/0 unique, P 0.000); N1 French window (no candidate) | gate met | strict list: no candidate; variant list (f->v chosen after seeing the decode): lolhovel unique, fit 7/0, P 0.000 | crib, **M**; external support: f.468 lone 44 'Lol.', 694/08 0370 'Mr. Lolhoffel' 6 Oct 1712, Heinsius XIV no. 142 |
+| 9 Oct 2026 MANT-NAMES136 | 0103 r04 '44.33.12.8' = Lolh[ovel] abbreviated | same | gate met | too short for the rule (max fit 4 < 6); best 'lol' | **M**, same stem as 0136 r01 |
+| 9 Oct 2026 MANT-NAMES136 | 0136 r02 '39.12.7' = Ilg[en] abbreviated | same | gate met | too short (max fit 3 < 6); best 'ilg' (f.468's 'Ilg.') | **M** |
+| 9 Oct 2026 MANT-NAMES136 | 0136 r09 '50.15.10.17.6.29.14.30.35' = a phrase/name | same | gate met | no candidate; 'aceprince' 6-way tie at fit 3 | open, untested-by-this-tool beyond the fr18 list |
