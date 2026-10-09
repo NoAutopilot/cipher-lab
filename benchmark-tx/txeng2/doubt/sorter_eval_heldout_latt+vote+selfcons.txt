@@ -1,0 +1,10 @@
+eval_heldout combo latt+vote+selfcons: 7 of 402 positions flagged (1.7%)
+  sorter sessions of 10 tiles: 1
+  sorter sessions of 20 tiles: 1
+f178v_L13	7	T70	show,latt
+f178v_L13	20	T98	show,disagree,thin,freq,latt,pair,vote4
+f178v_L20	15	T66	show,disagree,bandcut,thin,latt,pair,vote4
+f178v_L21	21	T76	show,thin,latt,pair
+f178v_L22	2	T60	bandcut,contrast,freq,latt,pair
+f178v_L22	24	T90	show,disagree,bandcut,latt,pair
+f179r_L02	8	T24	show,disagree,thin,latt,pair

@@ -1,0 +1,49 @@
+{
+ "propagation": "none (per tile)",
+ "showable": 343,
+ "tiles_in_clusters": 0,
+ "clusters": 0,
+ "base_wrong": 12,
+ "scored": 343,
+ "base_err": 0.035,
+ "orderings": {
+  "a_doubt": {
+   "to_2pct": 20,
+   "removed_10": 3,
+   "removed_20": 6,
+   "err_10": 0.0262,
+   "err_20": 0.0175,
+   "broken_20": 0,
+   "steps": 200
+  },
+  "d_oracle": {
+   "to_2pct": 6,
+   "removed_10": 10,
+   "removed_20": 12,
+   "err_10": 0.0058,
+   "err_20": 0.0,
+   "broken_20": 0,
+   "steps": 12
+  },
+  "c_random": {
+   "to_2pct": [
+    "not reached by k=200",
+    "not reached by k=200",
+    183,
+    "not reached by k=200",
+    139,
+    133,
+    "not reached by k=200",
+    180,
+    175,
+    125
+   ],
+   "removed_10_mean": 0.3,
+   "removed_20_mean": 0.8,
+   "removed_20_band": [
+    0,
+    2
+   ]
+  }
+ }
+}

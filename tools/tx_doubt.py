@@ -225,7 +225,7 @@ def cmd_signals(a):
 def stats(rows, wrong, combo):
     """recall, flagged share, flagged count, wrong flagged for an OR-combination over rows keyed (line, pos)."""
     keys = [(r['line'], int(r['pos'])) for r in rows if (r['line'], int(r['pos'])) in wrong]
-    flag = {(r['line'], int(r['pos'])) for r in rows if any(int(r[s]) for s in combo)}
+    flag = {(r['line'], int(r['pos'])) for r in rows if any(int(r.get(s) or 0) for s in combo)}  # absent column = 0
     nw = sum(1 for k in keys if wrong[k])
     tp = sum(1 for k in keys if wrong[k] and k in flag)
     nf = sum(1 for k in keys if k in flag)
@@ -410,7 +410,7 @@ def cmd_measure(a):
 def cmd_list(a):
     rows = rd(a.table or os.path.join(a.out, f'{a.unit}_signals.tsv'))
     combo = a.combo.split('+')
-    fl = [r for r in rows if any(int(r[s]) for s in combo)]
+    fl = [r for r in rows if any(int(r.get(s) or 0) for s in combo)]
     print(f'{a.unit} combo {a.combo}: {len(fl)} of {len(rows)} positions flagged ({len(fl) / len(rows):.1%})')
     for n in a.per_session:
         print(f'  sorter sessions of {n} tiles: {math.ceil(len(fl) / n)}')
