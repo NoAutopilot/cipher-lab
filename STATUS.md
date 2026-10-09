@@ -7269,6 +7269,17 @@ firing. Account 2: LANE FAMILY-A2i opened 13:15 (Manteuffel 0176 fix/0177, CUC3,
 pass; Gallica 403 again on one probe). Account 1: refill expected 13:39. Account 3 silent since 02:03. Checks all ok; keys 5 of 9 (S2
 429); wait-only empty. Next check-in 14:05.
 
+Check-in 10, 14:06-14:1x UTC 9 Oct (7:06 am PT): five_hour allowed; orchestrator context ~656k, cost 26.2 (hand-over at the next check-in
+if above 700k). All three accounts have a live lane, nothing for the orchestrator to ledger: account 4 DEFAULT-1340 (dispatcher re-fire
+13:40; 8 workers in two waves: F5160-POOL pooled nomenclator control running; PISA-275R f.275r tile compare, 4 T57 tokens match T32,
+nothing relabelled; SFZ-LOOK look-alike pass control 12/13, 10 of 18 relabelled, judge still FAIL; BLA-TRY 7 key ties all undecided;
+MONLUC-F86 blind-sort gate FAIL p 0.063; COS-ASMO Modena key lead not digitised; SALAZ-HTRC HTRC API down); account 1 LEDGER-6 (13:40;
+eckert Fort Monroe E300-E309 readers, FV-FM9a, FIX-FM9, KEY-TW: Tulip = stop 9/9 and whiskey = Troops 7/7 vs random 1/9 and 1/7,
+proposed for key.md at S; NO9-KEY: the No.9 key wins on 5570/0); account 2 FAMILY-A2i (13:15; BRO-123: Brochado Carta 123 body run
+key test PASS 0.836 vs p99 0.220, code 24 = e vs key h to V-BRO24; MANT-0494 gloss PASS 74/99; MANT-CUC3 7-leaf pool PASS; ES132-LOOK
+look-alike pass, its planted control 7/9 non-test). Account 3 silent since 02:03. Gallica 403 on every probe today. Checks ok; wait-only
+empty; queue holds only SORTER-RERENDER-A3. Next check-in 14:45.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
