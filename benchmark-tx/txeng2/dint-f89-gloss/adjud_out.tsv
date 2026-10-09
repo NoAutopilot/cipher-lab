@@ -1,0 +1,66 @@
+line	col	sign	conf	viewed	note
+L01	6	NONE	M	yes	blotted m after z is one sign; no extra sign
+L01	11	a	M	yes	alpha-like loop joined toward following c
+L01	20	X_VSTEM	H	yes	v with long stem rising
+L01	46	X_VSTEM	H	yes	v with stem rising
+L01	52	w'	M	yes	bar over w under gloss a
+L01	56	z	M	yes	flat-topped z with descending tail, separate from preceding m
+L02	18	NONE	M	yes	the l below the line is gloss, not main line
+L02	39	L	H	yes	inverted T after p 4
+L02	40	v	H	yes	triangle
+L02	41	NONE	M	yes	only L v then V-with-base then c; no third sign here
+L02	50	NONE	M	yes	# v then barred 4 directly; no stroke between
+L03	3	L	H	yes	inverted T
+L03	6	0'	M	yes	mark above the 0
+L03	40	T	M	yes	two legs under a bar (pi-like)
+L03	41	v'	L	yes	triangle with short tick at top right, not a through-stem
+L03	48	X_VSTEM	H	yes	v with stem rising
+L04	6	+	M	yes	cross, bar slightly low
+L04	8	NONE	H	yes	only one '4 0 m' group after c; duplicate
+L04	9	NONE	H	yes	duplicate of following 0
+L04	10	NONE	H	yes	duplicate of following M-with-base
+L04	13	X_MBASE	H	yes	M with baseline
+L04	16	L	H	yes	inverted T
+L04	21	L	H	yes	inverted T
+L04	29	X_VSTEM	H	yes	v with long stem rising
+L05	3	CLEAR	M	yes	'de' in clear hand
+L05	5	X_OCROSS	H	yes	small o with cross above
+L05	7	L	H	yes	inverted T
+L05	8	X_OCROSS	H	yes	small o with cross above
+L05	11	X_OCROSS	H	yes	small o with cross above (dark slash is gloss)
+L05	17	X_VSTEM	H	yes	v with stem rising
+L05	22	1	M	yes	stroke with flag and foot, not z
+L05	26	NONE	H	yes	w y L 0 only once; duplicate from half overlap
+L05	27	NONE	H	yes	duplicate from half overlap
+L05	29	L	H	yes	inverted T
+L05	35	NONE	M	yes	a is one alpha shape; no separate c before y
+L05	43	X_VSTEM	M	yes	v with stem rising
+L05	44	9	M	yes	loop with descender below line
+L05	45	X_HBAR	M	yes	crossed stroke with hooked right leg (h-like)
+L05	49	X_OCROSS	H	yes	small o with cross above
+L06	13	NONE	M	yes	small loop under T's leg appears part of T; no separate sign
+L06	36	L	H	yes	inverted T (stroke below is gloss)
+L06	38	+	H	yes	plus
+L07	10	0	M	yes	small raised 0, no mark above seen
+L07	17	p	M	yes	bar across descender looks like dark gloss ink
+L07	27	L	H	yes	inverted T
+L07	34	L	H	yes	inverted T
+L07	39	X_DELTA	M	yes	o with stroke rising at top right
+L07	41	Z	H	yes	large Z
+L07	43	L	M	yes	upright with wide foot
+L08	1	NONE	M	yes	dark-ink 'pd' raised at margin, gloss hand not main line
+L08	31	NONE	M	yes	single alpha sign with dot below
+L08	32	a'	M	yes	alpha with dot below
+L09	19	X_FBAR	M	yes	T-topped stem with crossbar
+L09	40	X_ZBAR	M	yes	z with crossbar and tail
+L10	6	o	M	yes	small circle; rising thin stroke likely gloss
+L10	28	+	M	yes	cross with longer lower stem
+L10	50	1	L	yes	short raised stroke after m, could be a mark on m
+L11	43	X_8	M	yes	8-like double loop at line end
+L13	5	+	M	yes	cross
+L13	25	z	M	yes	z with descending tail, separate from preceding m
+L13	34	X_EB	M	yes	eb-shaped sign
+L13	35	X_DDAG	M	yes	double-barred dagger
+L14	8	X_DELTA	M	yes	o with stem rising (same as later delta)
+L14	24	L	H	yes	inverted T
+L14	33	X_VSTEM	M	yes	v with long diagonal stroke through it
