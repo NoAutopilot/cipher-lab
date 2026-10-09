@@ -12756,3 +12756,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 14:23 | standby (owner account) | alive; holder account 4, last line 14:08
 2026-10-09 14:24 | COS-SPAN worker (account 4, Opus) | claim: costabili-modena-1491 short-span boxes on R1163/R1165 slips + anchor-span scoring vs N9-COS2 control; cap USD 3.5, box 14:24-15:39 UTC by date -u (80% 15:24); for LANE DEFAULT-account-4-20261009-1340
 2026-10-09 14:24 | F5160-WORD worker (account 4, Opus) | claim: fr5160-letellier-1653 word-level solver on 1653 syllabic table, matched control first on control_pool.txt; cap 5, box 14:24-16:04 UTC (80% 15:44); disk only; for LANE DEFAULT-account-4-20261009-1340
+2026-10-09 14:24 | MONLUC-CURL worker (account 4, Opus) | claim: fr4735-monluc-lansac-poland-1573 f.86 K07 binary curl-present blind sort on wider crops (disk only); cap USD 2.5, box 14:25-15:15 UTC (80% 15:05); for LANE DEFAULT-account-4-20261009-1340
