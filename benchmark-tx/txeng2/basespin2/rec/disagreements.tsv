@@ -1,0 +1,15 @@
+line	col	A	B	flagged	crop
+p1c_L01	3	SIX	TEE	AB	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg
+p1c_L01	5	EIGHT	PHI	AB	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg
+p1c_L01	11	PHI	TEE	AB	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg
+p1c_L01	19	HOOK	-	A	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg
+p1c_L02	20	NEW:gamma-with-crossstroke	NEW:crossed-loop-gamma	AB	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg
+p1c_L03	21	PHI	HOOK	AB	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg
+p1c_L04	4	PHI	TEE	AB	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg
+p1c_L04	11	HOOK	PHI	AB	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg
+p1c_L04	17	HOOK	JHOOK	AB	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg
+p1c_L05	10	PHI	TEE	AB	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg
+p2c_L02	5	PHI	EIGHT	AB	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg
+p2c_L02	8	HOOK	-	A	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg
+p2c_L02	10	PHI	EIGHT	AB	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg
+p2c_L02	12	HOOK	PHI	AB	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg
