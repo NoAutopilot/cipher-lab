@@ -12527,3 +12527,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:23 | MANT-0176 worker (account 2, Opus) | claim 11:23 UTC 9 Oct by date -u: sachsstaatsarchiv-manteuffel-1712 694/08 leaf 0176 read (fetch, 2 blind passes, decode, gate b); cap USD 4, box 11:23-12:43 UTC (80% 12:27); sachsen waits for MANT-CUC2 release -- for LANE FAMILY-A2h (account 2)
 2026-10-09 11:24 | LIN-COUNT worker | IA take (<=6 requests: 5 calibration leaves at 1897 px via iiif.archive.org, >=1.5 s apart) -- for LANE FAMILY-A2h (account 2)
 2026-10-09 11:24 | LIN-COUNT worker | IA release (5 requests, iiif.archive.org leaves 236/146/276/261/265 at 1897x2152, 2 s apart, all 200) -- for LANE FAMILY-A2h (account 2)
+2026-10-09 11:24 | MANT-0176 worker (account 2, Opus) | IA take (<=4 requests: Droysen GpP IV.1/IV.2 djvu text by date, 2 s apart) -- for LANE FAMILY-A2h (account 2)
