@@ -9540,3 +9540,137 @@ which should read [Troops] H). Pagans = Pagan (Battery, H); wrangled = Wrangle (
   covers transcription; it survives on the code clause and the key-level control. Still open: the Paymaster General's letter books (E254);
   Rawlins's received telegrams (E272); the Quartermaster General's Washington depot records for Capt. Allen (E275); the Army of the James
   chief of artillery's report (E277); the press of the day (not searched, none is a press telegram).
+
+## AUDIT (FV-FM8d)
+
+Verifier FV-FM8d (account 1, for LANE LEDGER), 9 Oct 2026, 11:45-12:1x UTC by `date -u`; a separate session from the readers FM-R5a and FM-R5b
+(account 1), not protecting their conclusions. Scope: **E278** (NOTES "## FM-R5a"), **E286, E288, E289** (NOTES "## FM-R5b"); ciphertext.txt,
+Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952. Nothing decoded beyond key look-ups in key.md (`decode.load_key()`). Key
+source for all four: `period`. Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Scripts (all in `fortmonroe/`): `fv_fm8d_hdl.py` (+ `.out`; CONTENTdm full text across all pointers on 20
+clear-word pairs, and the four IIIF pages at 2400 px to scratch), `fv_fm8d_hdl2.py` (+ `fv_fm8d_hdl2.out`, `fv_fm8d_hdl2b.out`; dmGetItemInfo on
+8 other-pointer hits), `fv_fm8d_print.py` (+ `.out`; letters-only phrase grep over the 164 cached print-check volumes plus ORN I/11
+`officialrecordso0011unse`, OR I/36 pt 3 `warofrebellion363unit`, OR I/42 pt 3 `warofrebellion423unit` fetched to scratch), `fv_fm8d_beapi.py`
+(+ `.out`; Grant Papers vols. 10 and 13, snippet only). The ~1,226 holder page transcriptions on disk (`sources/fortmonroe`, `sources/mssEC18`,
+`sources/mssEC19`) were grepped first (no requests): no clear copy of any of the four on disk.
+
+### 1. Duplicates, prior work, own transcription and image
+- **Duplicate diff:** pointers 5829, 5605, 5724, 5814 against every `###` header in ciphertext*.txt and status.json: 5829 also carries E254 (12 Dec,
+  Brice to Sheldon, a different telegram), 5724 also E273 (31 May 9.30 PM, Biggs, different), 5814 also E228 (1 Dec, torpedoes, different); 5605
+  only E286. Rare clear words (few remaining, Dewey, millions + rations, New Jersey + battery) occur in ciphertext.txt only in these entries.
+  **No duplicate.**
+- **Prior work:** `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=<date>' --step-type audit
+  --offline` for each of the four -> exit 4 each, holds: LEAD x1 = a target-level live claim (FIX-FM7, 10:49, names the slug, no unit; does not
+  cover these entries); UNCHECKED-NET aaymeloglu (no clone); UNCHECKED editions (done by hand below). No AUDIT.md/status.json class on any of the
+  four before this section.
+- **Own transcription** (`sources/fortmonroe/p<pointer>.json`) matches ciphertext.txt for all four. **Image eye check this session, every line
+  graded** (`tools/iiif_lines.py --image ... --lines-per-crop 3 --distance 60 --prominence 15 --ink 190 --debug`: 25-28 lines per page; entry crops
+  stacked in scratch, nothing committed). Pages 5605, 5724, 5814 were not image-read by the reader; all three now are. Differences from the
+  transcription: **5724 (E288) has one "Shall"** (line 3 ends "Zodiac Shall", line 4 "I send them"): the holder's "shall Shall" doubles it;
+  **5814 (E289) reads "Witnesses"**, not "witness". Everything else reads word for word as transcribed, including 5829 "mast", "are see",
+  "webster"; 5605 "Saxon", "quacks", "Japan Pekin", "Webster Knox"; 5724 "Mary John Potts is good boy" (the last grid row, after the time word);
+  5814 "Polkaer", "tulip", "Niagara". 5724 and 5605 are written in a 9- and 8-column grid with small word-count numerals over the first row.
+
+### 2. Holder's full text, internal witnesses and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the LANE LEDGER hdl token, take 11:47,
+release 11:50, 32 requests 3.2 s apart): few remaining 7 (5829; 3237 = Feb 1863 Hd Qrs to Heintzelman, "the few remaining vessels", other; others
+other), fleet+remaining 4 (5829; 4601 = Butler to Grant 6 May 1864, other), fleet+last night 14, presume+evening 7, ingalls+fleet 4 (5829; 2917 = Aug
+1862, other), **jersey+battery 5, spared+defences 5, pleased+ordered 4 and direct+forward 34 all include 4529**, millions+rations 3 and
+cattle+white house 5 **include 4676**, commissary+taylor 2 (5724, 4530 = Sherman to Taylor 15 Apr 1864, other), small+commissary 7, court martial 19
+(5456 = Oct 1863 witness, other), dewey 1 (5814 only), witness+leave 5, squadron+leaving 3 (6157 = Sept 1862, other), taylor+dewey 1 (5814 only).
+- **Period clear copies found at other pointers (the FV-FM5c/FV-FM6/FV-FM7b failure mode, tested first as briefed):**
+  - **E286 = pointer 4529, Page 88** (dmGetItemInfo): "Recd 215 Pm / Fort Monroe 1 PM Apl 14th 1864 / For Secy of War - Can the fifth N. J.
+    battery be spared to this department from the defences of Washn ? If so I should be pleased to have it ordered here - I do not know but I
+    should direct this to Gen Grant , if so please forward it signed Gen Butler". Word for word the decode, every code group confirmed.
+  - **E288 = pointer 4676, Page 235**: "630 pm Fortress Monroe May 31 / Br Genl Taylor Comy Genl ---- I am prepared to send two millions rations
+    and one thousand Head of cattle to the White House . shall I send them ---- M P Small Lt Col &C S 630 pm". Word for word the decode;
+    the clear copy confirms Mary = 6.30 PM and has no "John Potts is good boy".
+  - E278, E289: no clear copy at another pointer.
+- **Internal witnesses (mssEC 25 on disk), not clear copies:** E278: **5829 second entry** (City Point 13 Dec, Beckwith to Sheldon): "Frances fever
+  paradise arsey webster chief vincent . has Knox fleet stomach yet youth Ingalls" = {time} for [Colonel] R. C. Webster, chief [Quartermaster]: has
+  [the?] fleet [left] yet? [signed] Ingalls -- E278 is the reply to it. E289: **5814 first entry** (Butler's Hd Qrs, 1 Dec, O'Brien to Sheldon for
+  Porter: the monitors Mahopac, Canonicus and Saugus are ready for service, signed Parker). E288: 5783 (Sept 1864, "M. P. Small Lieut paradise
+  [and] C. S.", same signature).
+- **Print, found (none prints E278 or E289 itself):**
+  - **E278:** OR I/42 pt 3 p.432 closes Butler's 29 Oct 1864 order "By command of Maj. Gen. B. F. Butler: R. C. WEBSTER, Colonel and
+    Quartermaster" -- the signature formula of E278's tail; Grant to "Col. R. C. Webster, Fort Monroe", 27 Dec 1864 (same vol.); Butler's Private
+    and Official Correspondence V pp.220-221 (running head) "Col. R. C. Webster, Chief Q. M., Fort Monroe" (14 and 18 Oct 1864). The Wilmington expedition's fleet is
+    reported leaving Hampton Roads in mid-December in the Confederate correspondence of the same vol. (pp.1278-1279, "fleet left Old Point"), dated
+    by the Confederates 16 Dec; not used as a check on the 13 Dec text. Not located: "few remaining", "remaining will get away", "presume this
+    evening", "has the fleet left" (0 relevant in 167 volumes).
+  - **E286:** clear copy above. OR I/33 (troops in the Department of Washington, camp of instruction under Barry) lists "5th New Jersey Battery,
+    Capt. Zenas C. Warren" -- the battery was in the defences of Washington, as the telegram presumes; OR I/42 pt 3 p.946 has the Fifth New Jersey
+    Battery in the Army of the James by 10 Dec 1864. The telegram itself was not located in OR I/33 by phrase.
+  - **E288:** clear copy above. OR I/33 (GO 24, Fort Monroe, 22 Feb 1864) announces "Lieut. Col. M. P. Small, commissary of subsistence" as chief
+    commissary of the department. Not located in OR I/36 pt 3 ("shall I send them" 5 hits, all other telegrams; "millions of rations" 0).
+  - **E289:** ORN I/11 prints the 1 Dec 1864 traffic around it but not it: Porter to Fox, Fort Monroe, 1 Dec ("What chance is there of getting
+    those tugs?"), Porter to Parker, Hampton Roads, 1 Dec, and **Parker's report of 1 Dec on "the three monitors, Saugus, Canonicus, and Mahopac ...
+    ready for immediate service"** (pp.116-117 by the running heads, the same-page sibling 5814/1). Captain William Rogers Taylor (U.S.S. Juniata; reports p.321, 27 and 30
+    Dec 1864) and Lieutenant George Dewey (executive officer named in a Fort Fisher report; index "Dewey, George, mentioned") both sailed with the
+    squadron that left Hampton Roads for Fort Fisher in December. No court-martial of Taylor or Dewey in ORN I/11 ("court martial" 6 hits: Nichols
+    Nov 1864, Wight, Parker Mar 1865, other). Grant Papers vol. 13 snippet search: "Dewey court martial" 0.
+- **Not searched / unreachable:** Google Books (not called); the Navy Department's general court-martial records (NARA RG 125) and Welles's diary
+  (E289); Ingalls's and Webster's letter-books (E278); the press of the day (none of the four is a press telegram). Grant Papers vol. 13 be-api
+  returned 0 on every query (one 502 then 0): a 0 there may mean the volume is not indexed, so it is logged as weak.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E278:** **"webster" is the plain name R. C. Webster**, not [Signature]: the tail "youth are see webster paradise and vincent" = [signed] R. C.
+  Webster, [Colonel] and [Quartermaster] (Ralph C. Webster, chief quartermaster at Fort Monroe; OR I/42 pt 3 p.432 signs exactly "R. C. WEBSTER,
+  Colonel and Quartermaster"). So **the message is Col. Webster's to Gen. Ingalls**, via Sheldon (operator) and Beckwith; the FM-R5a header
+  "Sheldon to Beckwith for Ingalls" names the operators. "are see" = R. C. (phonetic plain, I). **"mast" = "Most"** (phonetic plain, I): "[.] Most
+  [of the] fleet [left] during last night. I do not know when the few remaining will get away, but I presume this evening." FM-R5a's "The last of
+  the fleet left during last night" contradicts "the few remaining" and is withdrawn. Count: **H 7 of 7 code groups** (harriet, zodiac, torch,
+  stomach, youth, paradise, vincent; decoder H 8 - webster).
+- **E286:** sound. Read against the clear copy (4529): **C 15 of 15 code groups** (Bruno = Secretary of War, plaster Africa pagan = 5th New
+  Jersey Battery, quadrant = Department, Saxon quacks = from the defences, grapes = Washington, sugar = ?, Japan Pekin = Grant ,, Webster Knox =
+  signed Butler; unity, zodiac = period). **Sender corrected: Maj. Gen. B. F. Butler to the Secretary of War, Fort Monroe 1 PM 14 Apr 1864**
+  (received 2.15 PM); "Maj Eckert Di" is the operator's routing, not the addressee.
+- **E288:** Read against the clear copy (4676): palate Shelby = Brigadier General / General, peach = 2, Wales = rations, plug purple = 1 1000
+  ("one thousand"), zodiac, youth, pandora = Colonel, **Mary = 6.30 PM** (clear copy "630 pm" twice): **C 11**; growl = [Washington] H (address,
+  not in the clear copy): **H 1**. **Decoder misfire: "John" is not [Maj Genl U.S. Grant]**: "John Potts is good boy" fills the last grid row
+  after the time word and is not in the clear copy (filler or operator chat; the key row Potts is a route blind word of another table) -- not graded,
+  [Grant] withdrawn. "shall Shall" is one "Shall" in the image. "white horse" = White House (phonetic plain; plain note exists). Count: **C 11, H 1
+  of 12 code groups** (John excluded).
+- **E289:** Francis = {12}, Burton = Secretary of Navy, princess = Captain, Polkaer = (Lieutenant) Commander, zodiac, zebra, Niagara = [D. D.
+  Porter] H; **"tulip" = [Open] reads nothing** ("leaving here immediately tulip shall the Witnesses leave") -> **M** (CONF-FM's candidate Tulip =
+  stop would fit; candidate only, FIX-FM8). "witness" -> **"Witnesses"** (image). "court marshall" = court martial, "squad run" = squadron
+  (phonetic plain). Message: Porter to the Secretary of the Navy (Welles): "Orders have come here for Captain Taylor and Lieutenant Commander Dewey
+  to appear before a court martial. There is a prospect of this squadron leaving here immediately [?]. Shall the witnesses leave at such a time as
+  this?" Count: **H 7, M 1 (tulip) of 8 code groups**.
+
+### 4. Classification (key `period`)
+`depth_pct` = H or C / code-word groups (plain names and phonetic words excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E278** Col. R. C. Webster, chief QM, Fort Monroe, via Sheldon and S. H. Beckwith to Gen. Rufus Ingalls, City Point, 13 Dec 1864 1 PM | **N3** | no | **D3** | 100 (7 H of 7) | internal witness: 5829 second entry, Ingalls to Webster the same day, "has [the] fleet [left] yet?" -- E278 answers it; external (non-statistical): OR I/42 pt 3 p.432 signature formula "R. C. WEBSTER, Colonel and Quartermaster"; code clause: Torch = Of the, Stomach = Left in both entries |
+| **E286** Maj. Gen. B. F. Butler, Fort Monroe, to the Secretary of War, 14 Apr 1864 1 PM | **N1** (period clear copy, holder pointer 4529, Page 88) | yes (holder clear copy) | **D3** | 100 (15 C of 15) | clear copy 4529, every code group; OR I/33 5th N.J. Battery in the defences of Washington |
+| **E288** Lt. Col. M. P. Small, chief commissary, Fort Monroe, to Brig. Gen. J. P. Taylor, Commissary General, 31 May 1864 6.30 PM | **N1** (period clear copy, holder pointer 4676, Page 235) | yes (holder clear copy) | **D3** | 100 (11 C + 1 H of 12) | clear copy 4676; OR I/33 GO 24 (Small chief commissary) |
+| **E289** Rear-Adm. D. D. Porter, Hampton Roads, via Fort Monroe (Sheldon) and Maj. Eckert to the Secretary of the Navy, 1 Dec 1864 12 noon | **N3** | no | **D3** | 87.5 (7 H of 8; tulip M) | external (non-statistical): ORN I/11 (Porter's and Parker's 1 Dec 1864 traffic, incl. the same-page sibling, the monitors report); Capt. W. R. Taylor (Juniata) and Lt. Cdr. George Dewey both with the squadron that sailed for Fort Fisher in December (ORN I/11); code clause: Burton = Secretary of Navy, Niagara = Porter as in E228 and 5814/1 |
+
+- **E278: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: at 1 PM on 13 Dec 1864 Col. R. C. Webster, chief quartermaster at
+  Fort Monroe, answering General Ingalls's question of the same day whether the fleet had left, told him that most of the fleet had left during the
+  night and that the few remaining vessels would, he presumed, get away that evening. It was not located in the Official Records (ser. I vol. 42
+  pt 3), Butler's Private and Official Correspondence vol. V or the Huntington's full-text search (searched 9 Oct 2026)." Unsafe: any novelty
+  word; "the fleet sailed for Fort Fisher on 13 Dec" (the telegram does not name a destination). Depth sentence (mine): "On 13 Dec 1864 Fort
+  Monroe's chief quartermaster told Ingalls most of the fleet had left overnight and the rest would get away that evening."
+- **E286: N1.** Safe sentence: "Read at grade C against the period clear copy in the same Huntington collection (mssEC, pointer 4529, Page 88):
+  on 14 Apr 1864 General Butler at Fort Monroe asked the Secretary of War whether the 5th New Jersey Battery could be spared from the defences of
+  Washington; our reading is an independent re-decipherment of a text already transcribed by the holder." Unsafe: any novelty word.
+- **E288: N1.** Safe sentence: "Read at grade C against the period clear copy at the Huntington (pointer 4676, Page 235): at 6.30 PM on 31 May 1864
+  Lt. Col. M. P. Small told the Commissary General he was ready to send two million rations and a thousand head of cattle to White House and asked
+  whether to send them; an independent re-decipherment of a text the holder has already transcribed." Unsafe: any novelty word.
+- **E289: N3.** Safe sentence: "Read at grade H with Cipher No. 1: at noon on 1 Dec 1864 Admiral Porter, through Fort Monroe, told the Secretary of
+  the Navy that orders had come for Captain Taylor and Lieutenant Commander Dewey to appear before a court martial and, the squadron being about to
+  leave, asked whether the witnesses should go at such a time. Porter's other telegrams and reports of that day are printed in the Official
+  Records of the Union and Confederate Navies (ser. I vol. 11); this one was not located there or in the Huntington's full-text search (searched
+  9 Oct 2026)." Unsafe: "Dewey court-martialled" (he and Taylor were ordered to appear, most likely as witnesses -- the telegram says "witnesses";
+  whose trial is not stated), any novelty word. Depth sentence (mine): "On 1 Dec 1864 Porter asked Welles whether Captain Taylor and Lieutenant
+  Commander Dewey, summoned to a court martial, should leave just as the squadron was about to sail."
+- WORK-QUEUE `AUD2-LEDGER-21` (account-3, Opus 5.5, cap 2.5 per entry) queued for the second audits of E278 and E289 (N3 D3). E286 and E288 are N1
+  from the holder's own clear copies (the FV-FM8c E294/E295/E297 precedent); no status.json or SO row.
+- Postmortem: FM-R5b left two of its four entries (E286, E288) as "not located" while the holder's clear copies sat at pointers 4529 and 4676 --
+  its own CONTENTdm queries (16+5) did not include the pairs that hit; FM-R5a read E278's "mast" as "last" against "the few remaining" and took the
+  plain name Webster for the signature word. The reader headers name the operators (Sheldon, Beckwith, Eckert) as correspondents for E278 and E286;
+  the senders are Webster and Butler. Reading fixes (E278 Webster/Most, E288 John withdrawn and single Shall, E289 Witnesses, tulip M) are for
+  FIX-FM8; reading.md and ciphertext.txt are not edited here.
