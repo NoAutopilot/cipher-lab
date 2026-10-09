@@ -12448,3 +12448,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:50 | FM-R5b worker (account 1, Sonnet) | LANE LEDGER hdl take (<=30 requests: 10 IIIF pages + ~16 CONTENTdm CISOSEARCHALL, 3.3 s apart); for LANE LEDGER (account 1)
 2026-10-09 10:49 | LIN-VIEYRA worker | claim LIN-VIEYRA antt-linhares-chave, cap 1.5, box ends 11:39 UTC, IA take, for LANE FAMILY-A2h (account 2)
 2026-10-09 10:51 | LIN-VIEYRA worker | IA take
+2026-10-09 10:49 | VB-SCREEN2 worker (account 2, Opus) | claim: vanbeuningen-dewitt-1657, inv.1540/1541 letters after 7 Aug 1658 screen; cap 3.5, box 10:49-12:04 UTC (80% 11:49) -- for LANE FAMILY-A2h (account 2)
