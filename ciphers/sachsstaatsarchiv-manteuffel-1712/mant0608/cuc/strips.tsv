@@ -22,3 +22,17 @@ leaf	strip	x	y	w	h	clear_under_by_worker_eye	note
 0348	s06	1285	2385	65	48	K.	code over underlined 'K.'
 0348	s07	1465	2385	95	48	I.	code over underlined 'I.'
 0348	s08	1365	3085	90	40	vous	code over underlined 'vous'
+0282	s01	1340	962	300	38	la force	run over underlined 'la force' (left p. line 1; '187' after 'contre' in line not cut)
+0282	s02	1300	1150	265	40	Prince	run over underlined 'Prince'
+0282	s03a	1150	1272	250	36	Negociation	first part of the run over underlined Negociation (run slants up)
+0282	s03b	1390	1238	230	44	Negociation	second part of the same run
+0282	s04	2020	1358	60	36	la	single code over underlined 'la'
+0282	s05	1855	1460	110	40	Roy de Prusse	single code (after clear 'de') over underlined 'Roy de Prusse'
+0282	s06	1320	1480	180	38	Paix	run over underlined 'Paix'
+0282	s07	1485	1806	435	38	Puissances	run over underlined 'Puissances'
+0282	s08	1860	1911	100	36	le Roy de Prusse	single code over underlined 'le Roy de Prusse'
+0282	s09	1405	2403	185	38	Non	run over underlined 'Non'
+0282	s10	1440	2953	205	36	Arnh.	run over underlined 'Arnh.' (one digit struck)
+0282	s11	3310	1503	310	38	Mr. Britton	run over underlined 'Britton' (right p.)
+0282	s12	3510	2030	80	60	le Roy de Suede	single code over underlined 'le Roy de Suede' (right p.)
+0282	s13	2810	2290	230	40	abime?	run over an underlined word (right p.)
