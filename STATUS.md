@@ -6986,7 +6986,7 @@ vs L, dev then eval once): three Opus 5.5 workers spawned 07:11 UTC.
 
 | instrument | worker | dev err_true (paired vs L) | eval err_true (paired vs L) | verdict |
 |---|---|---|---|---|
-| A compare-don't-recall (tools/tx_compare.py) | TXE-A session_01WRvxRA2LYbA2Z48bcHaSja, cap 25, done 07:26, cost 8.44 | 0.041 -> 0.076 (fixed 4 / broken 16, p 0.012, wrong way); M1b variants 2/12, 4/14, 2/12 | not run | FAIL; retired at this show rule |
+| A compare-don't-recall (tools/tx_compare.py) | TXE-A session_01WRvxRA2LYbA2Z48bcHaSja, cap 25, done 07:26, cost 9.64 | 0.041 -> 0.076 (fixed 4 / broken 16, p 0.012, wrong way); M1b variants 2/12, 4/14, 2/12 | not run | FAIL; retired at this show rule |
 | B crop geometry (iiif_lines --band-extent/--check-boxes/--overlap-note) | TXE-B session_01KgjZdcCPTEZqpN1MA73hzx, cap 7 | read-free band gate; one read on geo unit vs pass A | -- | -- |
 | C thin-stroke pair re-read (tools/tx_pair_reread.py) | TXE-C session_01Qgc8K1v3akoPFs6oBoTnz6, cap 8, done 07:23, cost 4.36 | 0.041 -> 0.041 (fixed 1 / broken 1, p 1.0; 28 selected) | not run | FAIL on dev; selection too small (4 of 14 errors inside it) |
 | D tile rendering sweep: white space, darkening, colour channels, SR (tools/tx_prep.py; owner ideas 1, 2, 4) | TXE-D session_01VLuSJo5qBusuxzwbfMQoXv, cap 10 | read-free atlas proxy per setting, then one read | -- | -- |
