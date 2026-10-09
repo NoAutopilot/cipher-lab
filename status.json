@@ -9006,9 +9006,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM6b)'"
+        "AUDIT.md '## AUDIT (FV-FM6b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-13)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM6b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9028,8 +9029,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe (signed [D. D. Porter]) via Sheldon to Maj. Eckert for Capt. H. A. Wise, Chief of the Bureau of Ordnance, 1 Dec 1864, are the torpedoes here Mr. Woods's? (E228)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 1 Dec 1864, while the Wilmington expedition was being fitted out at Hampton Roads, a telegram signed in cipher [D. D. Porter] asked Captain H. A. Wise, Chief of the Navy's Bureau of Ordnance, whether the torpedoes at hand were the same as those invented by a Mr. Woods and, if not, for ten of the latter. Not located in the Official Records of the Navies (ser. I vol. 11), the Huntington's full-text search or Butler's correspondence (searched 9 Oct 2026).",
-      "gap": "N3 (weak: the question is clear in the holder's public transcription; the key supplies Washington, ?, 10, the signer and the time): signer rests on the key value Niagara = D. D. Porter alone; 'lovely' unread; Navy Bureau of Ordnance letters (RG 74), press unread; 'wise' is the plain surname (decoder leaves it as a blind word)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 1 Dec 1864, while the Wilmington expedition was being fitted out at Hampton Roads, a telegram signed in cipher [D. D. Porter] (the same signature reads \"David D. Porter\" in the Official Records of the Navies on a telegram of the same night) asked Captain H. A. Wise, Chief of the Navy's Bureau of Ordnance, whether the torpedoes at hand were the same as those invented by a Mr. Woods and, if not, for ten of the latter. Not located in the Official Records of the Navies (ser. I vol. 11), the Huntington's full-text search or Butler's correspondence or the press searched (9 Oct 2026).",
+      "gap": "N3 (weak: the question is clear in the holder's public transcription; the key supplies Washington, ?, 10, the signer and the time): the signer group 'Youth Niagara' reads 'David D. Porter' in ORN I/11 on the same night's coaling order (ledger 5813; AUD2-LEDGER-13), E228 itself unprinted; 'Mister Woods' probably Chief Engineer W. W. W. Wood (I); 'lovely' unread; Navy Bureau of Ordnance letters (RG 74) unreachable; Google Books 429; 'wise' plain",
       "depth": "D2",
       "completeness": "7 H of 8 code-word groups (lovely M; 'wise' plain)",
       "phrases": [
@@ -9047,9 +9048,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM6b)'"
+        "AUDIT.md '## AUDIT (FV-FM6b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-13)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM6b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9069,8 +9071,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon to Maj. Eckert, 14 Dec 1864, the New York Herald's despatch on Foster is wrong: no contact with Sherman, Pocotaligo bridge not destroyed (E229)",
-      "line": "Read at grade H with Cipher No. 1: on 14 Dec 1864 the Fort Monroe telegraph office told Major Eckert that the press despatch in the New York Herald of the 13th about General Foster was wrong: up to the 10th Foster had not communicated with Sherman, nor had the Pocotaligo bridge been destroyed. The despatch it contradicts is printed in the Washington Evening Star and the New-York Daily Tribune of 13 Dec 1864; this telegram was not located in the Official Records (ser. I vol. 44), the Huntington's full-text search or the press searched (9 Oct 2026).",
-      "gap": "N3: Grant Papers vol. 13 unreachable by identifier; the Herald's own 13 Dec text and the Hilton Head source of the denial unread; 'Herald' is plain and 'up to the 10th' is M (both now in reading.md, FIX-FM6 9 Oct 2026); the signer 'L F Shell' M",
+      "line": "Read at grade H with Cipher No. 1: on 14 Dec 1864 the Fort Monroe telegraph office told Major Eckert that the press despatch in the New York Herald of the 13th (printed there p.1) about General Foster was wrong: up to the 10th Foster had not communicated with Sherman, nor had the Pocotaligo bridge been destroyed. The despatch it contradicts is printed in the Washington Evening Star and the New-York Daily Tribune of 13 Dec 1864; this telegram was not located in the Official Records (ser. I vol. 44), the Huntington's full-text search or the press searched (9 Oct 2026).",
+      "gap": "N3: the Herald's own 13 Dec 1864 despatch read (p.1, the claims E229 denies; AUD2-LEDGER-13); no printed denial in the press of 13-19 Dec searched; Grant Papers vol. 13 unreachable by identifier; the Hilton Head source of the denial unread; 'up to the 10th' M; signer 'L F Shell' M",
       "depth": "D3",
       "completeness": "10 H of 10 code-word groups (Herald plain; 'up tooth' M)",
       "phrases": [
@@ -9088,9 +9090,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM6b)'"
+        "AUDIT.md '## AUDIT (FV-FM6b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-13)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM6b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9111,7 +9114,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Asst. Surg. E. McClellan via Sheldon to Maj. Eckert for Surgeon General Barnes, 30 Sept 1864, yellow fever raging at Newbern, Dr. W. H. Freeman proposed (E240)",
       "line": "Read at grade H with Cipher No. 1: on 30 Sept 1864 the Fort Monroe medical officer E. McClellan forwarded to the Surgeon General Surgeon D. W. Hand's report that yellow fever was raging violently in Newbern and that Hand was used up, offered all the doctors he could spare though wounded were arriving in large numbers, suggested Dr. William H. Freeman of Philadelphia, experienced in the disease, and reported a rigid quarantine at Fort Monroe. Not located in the Official Records (ser. I vol. 42 pts 2-3), Butler's correspondence, the Huntington's full-text search or the press searched (9 Oct 2026); Stanton's bulletin of the same evening reports the epidemic in other words.",
-      "gap": "N3: Surgeon General's letters received (RG 112) and the Medical and Surgical History unread; Grant Papers vol. 12 identifier unverified; 'peken' is 'pekin' (comma) on the image, now read so in reading.md (FIX-FM6 9 Oct 2026)",
+      "gap": "N3: Surgeon General's letters received (RG 112) unreachable; Medical and Surgical History, Hand's own later report and Benjamin's Great Epidemic in New Berne (1865) searched, no copy (AUD2-LEDGER-13); Google Books 429",
       "depth": "D3",
       "completeness": "22 H of 22 code-word groups (pekin read from the image)",
       "phrases": [

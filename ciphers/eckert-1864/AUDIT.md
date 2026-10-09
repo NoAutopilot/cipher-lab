@@ -8282,3 +8282,95 @@ this section, prior-work.tsv rows and the propagation below).
 - Postmortem: nothing against FV-FM6c's readings or grades. Plum's undated station list naming different operators at Gillmore's and Smith's is
   a fact for a reader, not a reading error. Still open: Google Books (429), Chronicling America full text of the remaining E243 hit pages (429),
   the NY Herald 22-25 May 1864 page by page, QM vessel records (RG 92) for the Brady, Matilda and Cloud.
+
+## AUDIT 2 (AUD2-LEDGER-13)
+
+Second verifier AUD2-LEDGER-13 (account 4, session_01GiCAM9m4S4oHTToeoa5q9B, for the account-4 orchestrator; row moved from account 3), 9 Oct
+2026, 05:11-05:4x UTC by `date -u`. Account 4 did not read or first-audit E228, E229 or E240 (readers FM-R3b/FM-R3d and first verifier
+FV-FM6b, all account 1). Audited reading: reading.md at origin/main 05:30 UTC (FIX-FM6 applied: E228 `plain: wise`, E229 `plain: herald`, E240
+`variant: peken=pekin`); `decode.py --check` exit 0. Nothing decoded; key `period` for all three. Depth: keep or lower only (depth-bar file).
+Script: `fortmonroe/aud2_l13_hdl.py` (+ `.out`). Print greps inline: ORN I/11 `officialrecordso0011unse` djvu text (scratch); be-api fts
+(all-IA and by identifier, snippet only); Chronicling America JSON + page OCR (scratch).
+
+### 1. Duplicate diff and prior work
+- Pointers 5814, 5833, 5784 against every `###` header in ciphertext*.txt: unchanged from FV-FM6b (5784 also carries E193, a different
+  telegram); **no duplicate**. The neighbouring pages read this session, 5813 and 5815 (Porter traffic of 1-3 Dec) and 5785 (30 Sept - 1 Oct),
+  carry no filed ID.
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<5814|5833|5784>;date=<...>;sender=Fort Monroe;recipient=Eckert'
+  --step-type second-audit --fetch` -> exit 4 for each, the only hold a LEAD on LANE LEDGER's target-level claim of 03:42, closed by its done line
+  at 04:55 (it does not cover these units); 3-tomokiyo and 3-solver caches CLEAR; aaymeloglu repository and OR volumes not on disk UNCHECKED-NET
+  (ORN I/11 fetched by hand below). Logged in prior-work.tsv.
+
+### 2. Prior-work checks 3-5 (search-family log)
+| family | route | query / object | result |
+|---|---|---|---|
+| holder full text (G3) | hdl CONTENTdm CISOSEARCHALL, suppressfulltext=1, all pointers, 8 requests 3.2 s apart | woods 61, mister woods 1 (5814), herald 22 (5833 + other dates), cloudy 117, yell 2 (5784, **5785**), dock tours 1 (5784), surgeon hand 5 (5784; 5733 Jun 1864, 11073, 10394, 5533 not on disk), wise 154 (incl. **5813/5815**, 5907) | no clear or received copy of E228, E229, E240; context pages 5813, 5815, 5785 read (below) |
+| canonical series | ORN I/11 djvu text | Porter/Wise/Fox telegrams 28 Nov-6 Dec; "Wood", "Mahopac", "torpedo" | E228 not printed; **Porter's coaling order of the same night printed with his signature** (below); Fox to Chief Engineer W. W. W. Wood 29 Nov |
+| press of the day (E229) | Chronicling America, 5 searches + 13 page OCR texts, 13-19 Dec 1864 (NY Tribune 17 Dec p.1: 503, not retried) | NY Herald 13 Dec pp.1, 4; 14 Dec p.4; NY Tribune 16, 19 Dec p.1; Evening Star 14, 19 Dec; Nat. Intelligencer 16 Dec p.3; Chicago Tribune 15-17 Dec p.1; Portland Daily Press 15 Dec p.2; Palmetto Herald (Port Royal) 15 Dec p.2 | **the Herald's own despatch of the 13th found** (below); no printed denial located |
+| press of the day (E240) | Chronicling America, 3 searches + 4 page OCR texts, 28 Sept-25 Oct 1864 | "Freeman yellow fever Newbern", "Surgeon Hand yellow fever", "yellow fever Newbern physicians Fortress Monroe" | context only (Stanton's bulletin, Worcester Daily Spy 1 Oct p.2; troops quarantined, NY Tribune 11 Oct p.1); E240 not located |
+| medical histories (E240) | be-api by identifier | Med. and Surg. History Pt I v.1 (`medicalsurgicalh11unit`), Pt III v.1 (`pt3medicalsurgic01unituoft`): Freeman, Hand, McClellan, "Fort Monroe" | Pt I v.1 notes the September epidemic at New Berne; no Freeman/McClellan/Fort Monroe passage |
+| participants' print (E240) | be-api all-IA, then by identifier | "D. W. Hand" "yellow fever" (645); "Surgeon Hand"; "William H. Freeman" "yellow fever" | Hand's own later "Report on Yellow Fever in 1864" (`report14healgoog`, a state board of health report): Freeman, "Fortress Monroe", "used up" 0; W. S. Benjamin, *The Great Epidemic in New Berne* (1865, `greatepidemicinn00benj`): Freeman (only a victims' list), McClellan, "Surgeon General" 0 -- context below |
+| ordnance (E228) | be-api all-IA | "W. W. W. Wood" torpedo "picket boat" | Scientific American 25 Mar 1865: patent by J. L. Lay "assignor to himself and W. W. W. Wood" (torpedo) -- context |
+| Navy Bureau of Ordnance letters (RG 74), Surgeon General's letters received (RG 112) | NARA | -- | **unreachable**: not digitised in any route this container has (NARA catalog search needs an absent key) |
+| Google Books | API, key, country=US | 2 queries | **429**, stopped (no loop) |
+| Grant Papers | -- | not repeated (FV-FM6b: identifier unreachable) | unreachable |
+
+### 3. Findings per item
+- **E228 (5814).** (a) **Signer.** FV-FM6b held "[D. D. Porter]" on the key value Niagara alone. The same ledger, same night, carries Porter's
+  order to Cdr. W. A. Parker (5813, header "Ft. Monroe Dec 1st 1864"): "You will fill up the perfume [3] Monitors Saugus Canonicus and Mahopac
+  with Cole and have them ready tucum down hear without delay ... Let me know by wreathe [telegraph] and by letter when they are ready or wilby
+  ready **Youth Niagara**". ORN I/11 prints the same telegram word for word, "Hampton Roads, November 30, 1864 ... will be ready. **David D.
+  Porter**, Rear-Admiral. Commander W. A. Parker" (Parker's reply: received 6:40 a.m. 1 Dec). And 5815 carries Fox's 2 Dec and Wise's 3 Dec
+  replies "for Niagara", both printed in ORN I/11 addressed to "Rear-Admiral D. D. Porter". So **Youth Niagara = [Signed] D. D. Porter is
+  checked against print (C) on the same day's traffic**; E228's signer now rests on that, not on the key row alone (E228 itself is still unprinted).
+  (b) **"Mister Woods"**: probably Chief Engineer W. W. W. Wood, U.S.N., with whom Fox was corresponding on picket and torpedo boats (ORN I/11, Fox
+  to Wood, 29 Nov 1864) and who held a torpedo patent with J. L. Lay (Scientific American, 25 Mar 1865); Porter on 2 Dec ordered that "one of
+  the torpedoes used in picket boat No. 4 is the only kind to use" (ORN I/11). Identification grade I (context); the reading "Woods" stays as
+  written. (c) **Date.** ORN dates Porter's coaling order 30 Nov; the ledger files it under "Dec 1st". Fox's printed 2 Dec telegram answers
+  "your dispatch of the 30th November to Commander Wise". E228 (ledger "Dec 1st", 11.30 AM) may be that dispatch or a second one; Fox's reply
+  concerns "the other matter" (Grant's date), not torpedoes, so the identity is **unproven (M)** and is not used. (d) Grades unchanged: 7 H, lovely
+  M; "wise" plain. **N3 (weak) held** (the question is in the holder's public transcription in clear); no copy of E228 in ORN I/11, the holder's
+  full text, Butler V or the press. **D2 held** (depth keep-or-lower; with 87.5% H and the signer now checked against print, a later depth check
+  may consider D3 -- recorded, not ruled).
+- **E229 (5833).** The New York Herald, 13 Dec 1864, p.1, headlines "Capture of Pocotaligo Bridge by Our Forces Under General Foster and Admiral
+  Dahlgren. General Foster's Scouts Communicating with General Sherman's Forces", prints the Philadelphia Bulletin's press despatch of 12 Dec
+  ("Before evening Pocotaligo bridge was reached and destroyed"), and its p.4 summary says "General Foster has communicated with General
+  Sherman". This is **the "press despatch in [New York] Herald of [13th] about [Foster]"** E229 calls wrong, claim for claim: it confirms "Herald"
+  as plain (FIX-FM6) and France = New York, fever = 13, Lester/Lonesome = Foster, Kidnap = Sherman, plated = communicated, patron = bridge,
+  questioned = destroyed, against print. The Palmetto Herald (Port Royal) of 15 Dec p.2 reports Union guns placed within half a mile of the
+  railroad with "range upon the bridge" -- context agreeing that the bridge stood. **No printed denial** found in 13 pages 13-19 Dec or the three
+  searches. Grades unchanged (10 H; "up tooth" M; signer "L F Shell" M). **N3 held, D3 held.**
+- **E240 (5784).** The next page, **5785**, carries Sheldon's own telegram of the same evening (signed Gilmore): yellow fever "prevailing to an
+  alarming extent ... The fever is not very fatal among the [troops] who are encamped outside the town" -- the wording of Stanton's printed
+  bulletin of 30 Sept ("not very fatal among the troops. They are encamped outside the town", Worcester Daily Spy 1 Oct 1864 p.2), so the press
+  bulletin derives from that telegram, not from E240; and an entry of 1 Oct, E. McClellan to John Horner, New York, for Surgeon Charles McDougall:
+  "Yellow fever is prevailing to considerable extent at [Newbern]". Both agree with E240 (same signer McClellan, the New York medical channel of
+  "purveyor in New York"); neither is E240's text. W. S. Benjamin (1865) records a doctor "who came from Fort Monroe to assist, only lived a few
+  days" -- the offer in E240 carried out; context. Hand's own later report and the Medical and Surgical History give no Freeman, Fort Monroe or
+  Surgeon General passage. Grades unchanged (22 H). **N3 held, D3 held.**
+
+### 4. Classification (key `period`)
+| ID | N-class | text known? | depth | depth_pct | change |
+|---|---|---|---|---|---|
+| E228 | **N3** (weak, held) | unknown | **D2** (held) | 87.5 | signer checked against print on same-night traffic (5813 = ORN I/11 Porter to Parker, 30 Nov); "Woods" probably Chief Engineer W. W. W. Wood (I) |
+| E229 | **N3** (held) | unknown | **D3** (held) | 100 | the Herald's 13 Dec despatch read: p.1, the despatch E229 contradicts |
+| E240 | **N3** (held) | unknown | **D3** (held) | 100 | context 5785 (same evening, source of Stanton's bulletin), Benjamin 1865 |
+
+Safe sentences (FV-FM6b's stand, amended): E228 -- "... a telegram signed in cipher [D. D. Porter] (the same signature reads 'David D. Porter'
+in the Official Records of the Navies on a telegram of the same night) asked Captain H. A. Wise ... Not located in ORN ser. I vol. 11, the
+Huntington's full-text search, Butler's correspondence or the press searched (9 Oct 2026)." E229 -- "... the press despatch in the New York Herald
+of the 13th (printed there p.1, 'Capture of Pocotaligo Bridge ... General Foster's Scouts Communicating with General Sherman's Forces') ...; this
+telegram was not located in OR ser. I vol. 44, the Huntington's full-text search or the Washington, New York, Chicago, Portland and Port Royal
+press of 13-19 Dec 1864 (searched 9 Oct 2026)." E240 -- FV-FM6b's sentence stands, adding "Hand's own report on the epidemic, the Medical and
+Surgical History and W. S. Benjamin's *Great Epidemic in New Berne* (1865)" to the sources searched. Unsafe for all three: "first decipherment",
+"unpublished", "previously unread".
+
+### 5. Postmortem
+Nothing against FV-FM6b's readings or classes. Two of its open points are closed: the Herald's own 13 Dec text (read: it is the despatch), and
+E228's signer "on the key value alone" (now checked on the same night's printed traffic). Lesson: when a signer rests on a key row, read the
+**neighbouring ledger pages of the same day** for a sibling telegram with the same signature group that the Official Records print -- one ORN grep
+settled it. Lead for LANE LEDGER (not mine to file): 5785 (30 Sept, Sheldon/Gilmore on the fever and the office; 1 Oct McClellan to Horner) carries
+no filed ID; 5813 and 5815 (Porter traffic 1-3 Dec, several printed in ORN I/11) likewise. Still open: NARA RG 74 / RG 112 (unreachable), Google
+Books (429), New York Herald 14-16 Dec page by page.
+Requests: hdl.huntington.org 8 (CONTENTdm, 3.2 s apart, under take/release); archive.org 2 (ORN I/11 djvu, advancedsearch); be-api about 29 (>=1.8 s
+apart); loc.gov about 46 (searches + page JSON + OCR, 2-2.5 s apart; one 503, not retried); googleapis 2 (429, stopped).

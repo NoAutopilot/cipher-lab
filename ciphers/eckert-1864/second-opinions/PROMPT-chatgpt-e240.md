@@ -7,15 +7,15 @@ reading. Be adversarial: we would rather learn now that it is in print than clai
 THE ITEM
 - Source: Thomas T. Eckert Papers, Huntington Library, San Marino, mssEC 25 ("Ciphers Received and Sent", Fort Monroe) p.240 (digital pointer 5784), second entry on the page, E240, headed "Ft Monroe Sept. 30 / 64 / Maj. Eckert Wash'n", https://hdl.huntington.org/digital/collection/p16003coll11/id/5784. Read with War Department Cipher No. 1 (Huntington mssEC 41).
 - Reading: Fort Monroe (Sheldon is the operator) to Maj. Eckert for Brig. Gen. Barnes, Washington, 30 Sept 1864 6.30 PM: "Surgeon D. W. Hand [reports] that yellow fever is raging in [Newbern] violently, that he is used up and requires immediate aid. I will send him all the doctors I can, but the [wounded] are arriving [today] in large numbers and I am short myself. I can forward doctors from this point with rapidity. He must have by this time full supplies from purveyor in [New York]. Allow me to suggest a doctor, William H. Freeman of [Philadelphia], who has had great experience in the disease, as a good man to send to his aid. A most rigid quarantine [is] established at this [post] by the [command]ing [general] of district. E. McClellan &c." Bracketed words are code words read from the period key. Barnes is read as Surgeon General Joseph K. Barnes and E. McClellan as Assistant Surgeon E. McClellan of the Fort Monroe medical division (our identifications; please test them).
-- Context we already know: Stanton's war bulletin of the same evening (e.g. Portland Daily Press, 1 Oct 1864, p.3) reports yellow fever "extensively prevailing" at Newbern in other words; it is not this telegram.
+- Context we already know: Stanton's war bulletin of the same evening (e.g. Portland Daily Press, 1 Oct 1864, p.3) reports yellow fever "extensively prevailing" at Newbern in other words; it is not this telegram (its wording comes from another Fort Monroe telegram of the same evening on the next ledger page, pointer 5785). W. S. Benjamin, The Great Epidemic in New Berne (1865), mentions a doctor who came from Fort Monroe to assist and died within days; Hand's own later report on the 1864 epidemic and The Medical and Surgical History of the War of the Rebellion (Pt I v.1, Pt III v.1, full-text search) do not mention Freeman, Fort Monroe or the Surgeon General.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
-  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM6b)").
+  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (sections "AUDIT (FV-FM6b)" and "AUDIT 2 (AUD2-LEDGER-13)").
 
 WHERE WE HAVE LOOKED: Official Records ser. I vol. 42 pts 2-3 (full text); Butler's Private and Official Correspondence vol. V; the Huntington's CONTENTdm full-text search; Chronicling America for 28 Sept-31 Oct 1864.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- Surgeon General's Office letters received (National Archives RG 112); The Medical and Surgical History of the War of the Rebellion (yellow fever at New Berne, 1864); reports on the 1864 New Berne epidemic; Dr. William H. Freeman of Philadelphia; Google Books; HathiTrust; JSTOR.
+- Surgeon General's Office letters received (National Archives RG 112); the 1864 New Berne epidemic in medical journals of 1864-65; Dr. William H. Freeman of Philadelphia; Google Books; HathiTrust; JSTOR.
 
 
 HOW TO REPORT (this part is the same for every label)
