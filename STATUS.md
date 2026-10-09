@@ -7650,6 +7650,27 @@ TX programme table 20:4x UTC: slot 1 orchestrator (this session) | slot 2 lane i
 20:37 | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 16.3, pass 5 running, pass 6 21:15; open F20-F23 all adopted by the lane | slots
 4-10: round 7 all three done (B1, O1, SHRINK); pool 23, Amendment 6 due; TX-POOL-LEAF queued on account 1 | eval looks 0.
 
+Check-in 3, 21:13-21:2x UTC 9 Oct (2:13 pm PT): five_hour allowed; trigger trig_01FXkgzR1Cxu4dqMsADuesUf (21:56). Owner (2:0x-2:1x pm PT):
+full report given (OWNER REPORT FORMAT, board 19/117/19/1/6); he asked why "material" was a blocker -> the outside-the-frame rule
+(.claude/briefs/README.md, research/TX-PROGRAM.md); he pointed at Tomokiyo's/Bourdeau's/Aymeloglu's solved items as pool candidates ->
+TX-POOL-LEAF Amendment 1, then TX-POOL-LEAF-2 queued (account 1) because TX-POOL-LEAF (done 21:04: gunther8246-p2, WVO 8246 p.2, Japikse
+1934 print truth, 317 scored, 18/317 as measured, 5/302 flagged-excluded) had not seen the amendment; ASKS 158 YES (anonymous piles) ->
+ANON-PILE-RULE session_014dgzs8BVgB2ZhwS6pYvjy6 live (CLAUDE.md + intake_gate_check.py + S6 re-queue); ASKS 156 default (a)
+fingerprint-and-leave unless he says (b); depth bar stays strict (his "I don't understand" on both, explained in chat); ASKS 160 later; he
+asked which recent readings are of historical significance (answered from status.json depth sentences: Gramont 1530 on the suspended
+divorce cause, Manteuffel 1712, Lodewijk 1573 blanks, Birago 1572, Du Vergier, Chavigny 1640; Eckert mostly N1). TX-RED pass 5 (20:3x):
+F24-F28, none blocking; F28 (S2 hold vs product baseline) decided by the orchestrator at 21:18: (b) -- S2 taken once, as the product
+baseline on an unseen hand, after the baseline-side fixes are frozen by a dated PREREG line; a later instrument needs a second
+confirm-class leaf. AUD2-LEDGER-30 (E333/E335/E340, LANE LEDGER-8 for account 3) re-tagged and spawned session_01P6QdexMTmENKUbZ5PwZqUe
+(cap 7.5). Lane inc. 2 (19.1, 476k) round 8 (SHEET3, SHEETS-ALL, REGFIX), check-in 5 at 21:24; TX-RED pass 6 running (18.3, context
+569k -- successor near 600k is its own duty), pass 7 22:02. Account 1 LEDGER-8 wave 2 (E334 N1; E333/E335/E340 N3 D3 one audit; E331-
+E339 N1); account 2 FAMILY-A2l wave 2 (Manteuffel 0491 gate FAIL uninformative, Suriname inv.372 scans 0184-0194 enciphered unread, Van
+Beuningen 1540 no unprinted cipher letter); account 3 silent since 02:03. Checks ok; orphan check only known false positives.
+TX programme table 21:2x UTC: slot 1 orchestrator | slot 2 lane inc. 2 session_011EV9AKeJ4YuU9jjghdUy6F 19.1, check-in 5 21:24 | slot 3
+TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 18.3, pass 6 running, pass 7 22:02; open F24-F27 (lane), F28 decided (b) | slots 4-10: round 8
+three workers; pool 23 + gunther8246-p2 pending the lane's Amendment 7; TX-POOL-LEAF-2 queued account 1 | eval looks 0; S2 to be
+taken once the freeze line exists.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

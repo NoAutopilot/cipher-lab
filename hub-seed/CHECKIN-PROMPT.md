@@ -117,3 +117,9 @@ STATE DELTA 20:4x UTC 9 Oct: round 7 done -- B1 Spinelli baseline 0.088 -> 0.057
 O1: typed overlap sentences wrong everywhere but seams not an error source. Owner asked for a recap and challenged "material" (answered:
 answer-keyed leaves in unused hands are the scarce set; training on our own readings is circular). TX-REGISTER row 79 (R3b retired) needs
 a reopen condition (flagged to the lane). Account 2 LANE FAMILY-A2l live (20:14). Next orchestrator check-in 21:12.
+STATE DELTA 21:2x UTC 9 Oct: F28 decided (b): S2 = product baseline on an unseen hand, taken once after the freeze line; later instruments need
+a second confirm-class leaf. TX-POOL-LEAF done (gunther8246-p2, lane pools under Amendment 7 after a verifier flag pass); TX-POOL-LEAF-2
+(other solvers' items) queued account 1. ANON-PILE-RULE live on account 4 (ledger + archive on done; then MQS-BNF-S6b for the :34
+dispatcher). AUD2-LEDGER-30 live on account 4 session_01P6QdexMTmENKUbZ5PwZqUe (ledger + archive on done). Owner defaults: ASKS 156 (a)
+unless he says (b); depth bar strict; ASKS 160 later. Outside-the-frame rule in force (README common tail): no "blocked"/"material"
+without three outside places checked.
