@@ -12,7 +12,7 @@ opening of line A1; the Dinteville f.23r sorter (ASKS 112) put 268 of 303 tiles 
 "Check these first" questions ("pass A D, pass B -; which sheet label?") whose labels had no pile to tap; the MLH
 page reached the owner on a template without "Fix the cut". Each was found by the owner, after publishing.
 
-Checks (each prints one line; the verdict is PASS only if all four pass):
+Checks (each prints one line; the verdict is PASS only if all five pass):
  1. template  the page carries the "Fix the cut" control (id="ctxFix") and the current template's version marker
               (<meta name="sign-sorter-template" content=...> in tools/sign_sorter/template.html). An older page is
               re-rendered with tools/sorter_rerender.py. Not applicable with --inputs.
@@ -31,10 +31,23 @@ Checks (each prints one line; the verdict is PASS only if all four pass):
  4. contact sheet  writes <page stem>.preflight.png (or --sheet): 24 random tiles (--seed) each beside its line
               strip with the box drawn, for a person or a separate session to eye in 30 seconds. Fails only if it
               cannot be drawn when page images exist; with no images (text-only inputs) it is skipped and says so.
+ 5. colour (MQS-SORTER, 9 Oct 2026; --cvd runs this one alone, on a page or on the template: `--cvd [PAGE_OR_TEMPLATE]`)  the
+              page's `:root` tokens (the light block and both dark blocks) are run through tools/cvd_check.py: the
+              marks (ink/accent, ok, bad, and grey in the light block) differ by CIEDE2000 >= its declared gate in
+              normal vision and in protan/deutan/tritan simulation, reach 3:1 on --bg, text (ink, muted) reaches 4.5:1,
+              every tint (--tint-sky, --tint-yellow) carries its text (--on-tint) at 4.5:1, and text on a fill
+              (--ok/--bad with --on-fill, --accent with --bg) and on the soft surfaces reaches 4.5:1; the `const BOX`
+              colours drawn over a manuscript image reach 3:1 against each page image's median colour (embedded greys,
+              or --pages-json for the real colours) or, failing that, against their under-stroke; and no person-facing
+              string (page text outside style/script, the lede, script string text, focus note, rank note, ref caption,
+              focus questions, rank captions) names a colour: `\bred\b`, `\bgreen\b`, `\borange\b` on word boundaries.
+              Pile names and data values are exempt. cvd_check's WARN (judgement call, under its gate by < 2) prints
+              WARN and does not fail. n/a for a page with no `:root` tokens.
  --expect-owner-account  also fail unless CIPHERLAB_ACCOUNT is 'owner' (ASKS 145: a page published from another
               account is private to it, and the owner gets "deleted or not available").
 
-Must NOT block (each has an offline test in tools/tests/test_sorter_preflight.py):
+Must NOT block (each has an offline test in tools/tests/test_sorter_preflight.py; the colour check's are in test_sign_sorter_cvd.py:
+"ordered", "required" and "entered" in a hint, and "green" in a pile name or a data value):
  - a page whose focus tiles are legitimately all one family or one pile (Ferdinand's 25 t / tt / e questions): the
    gate counts named piles on the page, never the spread of the focus tiles' own piles;
  - a focus question in free prose that names no reader split ("tt or a single crossed t?"): only the explicit
@@ -59,6 +72,96 @@ SPLIT_FORMS = [
     re.compile(r"\bthe\s+(\S+)\s+pile\b"),
 ]
 INK_LO, INK_HI, WIDE, MAX_BAD = 0.03, 0.60, 2.5, 0.05
+
+
+COLOUR_WORDS = re.compile(r'\b(red|green|orange)\b', re.I)
+B64_RUN = re.compile(r'[A-Za-z0-9+/=]{100,}')
+
+
+def _tokens(block):
+    return {m.group(1): m.group(2) for m in re.finditer(r'--([a-z-]+)\s*:\s*(#[0-9a-fA-F]{3,6})\b', block)}
+
+
+def theme_blocks(html):
+    """{'light': tokens, 'dark-media': tokens, 'dark-attr': tokens} from the template's three token blocks (missing ones absent)."""
+    out = {}
+    m = re.search(r':root\s*\{(.*?)\}', html, re.S)
+    if m:
+        out['light'] = _tokens(m.group(1))
+    m = re.search(r'prefers-color-scheme:\s*dark\)\s*\{\s*:root:not\(\[data-theme="light"\]\)\s*\{(.*?)\}', html, re.S)
+    if m:
+        out['dark-media'] = _tokens(m.group(1))
+    m = re.search(r':root\[data-theme="dark"\]\s*\{(.*?)\}', html, re.S)
+    if m:
+        out['dark-attr'] = _tokens(m.group(1))
+    return out
+
+
+def person_facing_text(html, data):
+    """Strings a person reads: page text outside <style>/<script>, script string text (comments and the DATA literal removed), and the
+    DATA fields lede-like notes, focus questions, rank captions. Pile names and data values are not included."""
+    body = re.sub(r'<style.*?</style>', ' ', html, flags=re.S)
+    scripts = ' '.join(re.findall(r'<script[^>]*>(.*?)</script>', body, re.S))
+    body = re.sub(r'<script.*?</script>', ' ', body, flags=re.S)
+    body = re.sub(r'<[^>]+>', ' ', body)
+    scripts = B64_RUN.sub('', re.sub(r'const DATA = .*?;\n', '\n', scripts, flags=re.S))
+    scripts = re.sub(r'//[^\n]*', '', scripts)
+    strings = [data.get(k, '') for k in ('focusNote', 'rankNote', 'refCaption', 'seedNote', 'banner')]
+    strings += [f.get('q', '') for f in data.get('focus', [])]
+    strings += [r.get(k, '') for r in data.get('rank', []) for k in ('why', 'detail')]
+    return ' '.join([body, scripts] + [str(x) for x in strings])
+
+
+def page_medians(data, imgs, rgb=None):
+    """Median colour of each page image as hex: the real colours (rgb: {page: PIL RGB image}) when given, else the embedded greys."""
+    out = {}
+    for p, im in (rgb or imgs or {}).items():
+        im = im.convert('RGB').resize((64, 64))
+        px = list(im.getdata())
+        out[p] = '#%02x%02x%02x' % tuple(sorted(c[i] for c in px)[len(px) // 2] for i in range(3))
+    return out
+
+
+def check_cvd(html, data=None, imgs=None, rgb=None):
+    """(ok|None, line). See the module docstring, check 5."""
+    import cvd_check
+    data = data or {}
+    blocks = theme_blocks(html or '')
+    if 'light' not in blocks:
+        return None, 'colour: no :root tokens (not a template page)'
+    fails, warns = [], []
+    for name, tk in blocks.items():
+        light = name == 'light'
+        # a dark block overrides only some tokens: start from the light block for what it leaves out
+        t = dict(blocks['light'], **tk) if not light else tk
+        marks = []
+        for k in (('accent', 'ok', 'bad', 'grey') if light else ('accent', 'ok', 'bad')):
+            if k in t and t[k].lower() not in [m.lower() for m in marks]:
+                marks.append(t[k])
+        text = [t[k] for k in ('ink', 'muted') if k in t]
+        pairs = [(t[a], t[b]) for a, b in (('tint-sky', 'on-tint'), ('tint-yellow', 'on-tint'), ('ok', 'on-fill'), ('bad', 'on-fill'),
+                                           ('accent', 'bg'), ('ok-soft', 'ink'), ('accent-soft', 'ink'), ('warn-soft', 'ink')) if a in t and b in t]
+        r = cvd_check.check(marks, t.get('bg', '#ffffff'), tints=(), text=text, pairs=pairs)
+        for f in r['failures']:
+            if not f.startswith('judgement call'):
+                (warns if r['verdict'] == 'WARN' else fails).append(f'{name}: {f}')
+    bx = re.search(r'const BOX = \{([^}]*)\}', html)
+    if bx:
+        box = {k: v for k, v in re.findall(r"(\w+):\s*'(#[0-9a-fA-F]{6})'", bx.group(1))}
+        under = box.get('under')
+        for pg, med in page_medians(data, imgs, rgb).items():
+            for k, col in box.items():
+                if k == 'under':
+                    continue
+                c = cvd_check.contrast(col, med)
+                if c < cvd_check.MARK_CONTRAST and not (under and cvd_check.contrast(col, under) >= cvd_check.MARK_CONTRAST):
+                    fails.append(f'box {k} {col} on page {pg} median {med}: contrast {c:.2f} < 3 and no under-stroke that reaches 3:1')
+    words = sorted({m.group(1).lower() for m in COLOUR_WORDS.finditer(person_facing_text(html, data))})
+    if words:
+        fails.append('person-facing text names a colour: ' + ', '.join(words) + ' (name the glyph, not the hue)')
+    if fails:
+        return False, 'colour: ' + '; '.join(fails)
+    return True, 'colour: tokens, tints, box colours and person-facing text pass tools/cvd_check.py' + (f' ({len(warns)} WARN: ' + '; '.join(warns) + ')' if warns else '')
 
 
 def current_marker():
@@ -314,7 +417,7 @@ def contact_sheet(data, imgs, scale, out, flags, seed=20261006, k=24):
     return True, f'contact sheet: {len(pick)} tiles beside their line strips -> {out} (seed {seed}; eye it before publishing)'
 
 
-def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=None, seed=20261006, quiet=False, search=()):
+def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=None, seed=20261006, quiet=False, search=(), pages_json=None):
     """-> (ok, lines). Used by tools/sign_sorter.py after a build."""
     html = None
     if page:
@@ -333,6 +436,14 @@ def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=Non
     res.append((ok3, m3 + (f' [list: {os.path.relpath(clp)}]' if clp else '')))
     out = sheet or (os.path.splitext(page)[0] + '.preflight.png' if page else os.path.join(base, 'preflight.png'))
     res.append(contact_sheet(data, imgs, scale, out, flags, seed))
+    if html is not None:
+        rgb = None
+        if pages_json:
+            from PIL import Image
+            root = os.path.dirname(HERE)
+            rgb = {k: Image.open(v['image'] if os.path.isabs(v['image']) else os.path.join(root, v['image'])).convert('RGB')
+                   for k, v in json.load(open(pages_json)).items() if not v.get('box') and k in (data.get('pages') or {})}
+        res.append(check_cvd(html, data, imgs, rgb))
     if expect_owner:
         acct = os.environ.get('CIPHERLAB_ACCOUNT', '')
         res.append((acct == 'owner', f'account: CIPHERLAB_ACCOUNT={acct or "unset"}' +
@@ -355,10 +466,21 @@ def main(argv=None):
     ap.add_argument('--expect-owner-account', action='store_true')
     ap.add_argument('--sheet', help='contact sheet path (default <page stem>.preflight.png)')
     ap.add_argument('--seed', type=int, default=20261006)
+    ap.add_argument('--cvd', nargs='?', const=TEMPLATE, metavar='PAGE_OR_TEMPLATE',
+                    help='run only the colour check (check 5) on a page or on the template (default tools/sign_sorter/template.html)')
+    ap.add_argument('--pages-json', help='glyph_atlas pages.json: real page colours for the box-colour check (default: the embedded greys)')
     a = ap.parse_args(argv)
+    if a.cvd:
+        html = open(a.cvd, encoding='utf-8').read()
+        data, imgs, rgb = {}, {}, None
+        if 'const DATA = ' in html and '__DATA__' not in html:
+            data, html = load_html(a.cvd); imgs, _ = page_images_from_data(data)
+        ok, line = check_cvd(html, data, imgs, rgb)
+        print(('PASS ' if ok else 'n/a  ' if ok is None else 'FAIL ') + line)
+        sys.exit(0 if ok is not False else 1)
     if bool(a.page) == bool(a.inputs):
         ap.error('give a page or --inputs DIR')
-    ok, _ = run(a.page, a.inputs, a.cipher_lines, a.expect_owner_account, a.sheet, a.seed)
+    ok, _ = run(a.page, a.inputs, a.cipher_lines, a.expect_owner_account, a.sheet, a.seed, pages_json=a.pages_json)
     sys.exit(0 if ok else 1)
 
 

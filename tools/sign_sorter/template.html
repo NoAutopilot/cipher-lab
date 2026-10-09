@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-08.4"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.2"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -7,7 +7,11 @@
    large, over cards of every other pile -- drag it onto its pile or tap the pile. Phone first, mouse works too. */
 :root{
   --bg:#f3f1ec; --surface:#fbfaf7; --ink:#24211c; --muted:#6b655b; --line:#d9d4c9;
-  --accent:#8a3b12; --accent-soft:#f1e2d6; --ok:#2f6b3a; --ok-soft:#dcebdc; --warn:#9a6a00; --warn-soft:#f3e7c4; --bad:#b3261e;
+  /* Colour-blind safe (MQS-SORTER, 9 Oct 2026; Okabe-Ito, tools/cvd_check.py PALETTES['sorter_light'|'dark']): no state is told by hue
+     alone -- every state also has a glyph and a border style. ok = blue (solid border, check), bad = dark orange (dashed, cross),
+     accent = ink (double border, ?), warn = a yellow TINT used only as a fill with dark text and a dotted ink border. */
+  --accent:#24211c; --accent-soft:#e4dfd3; --ok:#0072B2; --ok-soft:#dde7ee; --warn:#24211c; --warn-soft:#e9e4d3; --bad:#B35900; --grey:#767676;
+  --tint-sky:#56B4E9; --tint-yellow:#F0E442; --on-tint:#24211c; --on-fill:#ffffff;
   --tile:#ffffff; --tile-ink:#000000;
   --f-display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
   --f-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -16,11 +20,13 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#1b1916; --surface:#24211d; --ink:#ece6dc; --muted:#a59e92; --line:#3a352e;
-  --accent:#e08a5a; --accent-soft:#3d2a1f; --ok:#7fc38b; --ok-soft:#203325; --warn:#e2b54f; --warn-soft:#3a3020; --bad:#ff8a80;
+  --accent:#ece6dc; --accent-soft:#3a352e; --ok:#56B4E9; --ok-soft:#1f2d36; --warn:#ece6dc; --warn-soft:#3a3626; --bad:#E69F00; --grey:#a59e92;
+  --tint-sky:#56B4E9; --tint-yellow:#F0E442; --on-tint:#1b1916; --on-fill:#1b1916;
   --tile:#f4f1ea; --tile-ink:#000000; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#1b1916; --surface:#24211d; --ink:#ece6dc; --muted:#a59e92; --line:#3a352e;
-  --accent:#e08a5a; --accent-soft:#3d2a1f; --ok:#7fc38b; --ok-soft:#203325; --warn:#e2b54f; --warn-soft:#3a3020; --bad:#ff8a80;
+  --accent:#ece6dc; --accent-soft:#3a352e; --ok:#56B4E9; --ok-soft:#1f2d36; --warn:#ece6dc; --warn-soft:#3a3626; --bad:#E69F00; --grey:#a59e92;
+  --tint-sky:#56B4E9; --tint-yellow:#F0E442; --on-tint:#1b1916; --on-fill:#1b1916;
   --tile:#f4f1ea; --tile-ink:#000000; color-scheme:dark}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45;margin:0}
 body.traypad{padding-bottom:92px}
@@ -35,11 +41,11 @@ h1{font-family:var(--f-display);font-weight:600;font-size:2.1rem;margin:0;text-w
 .tabs{display:flex;gap:6px;flex:1 1 auto;min-width:0}
 .tabs button{flex:1 1 0;font-size:.9rem;padding:7px 8px;font-weight:600;min-width:0}
 .tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.cntb{display:inline-block;min-width:20px;padding:0 6px;border-radius:10px;background:var(--accent);color:#fff;font-size:.78rem;line-height:20px;margin-left:4px}
+.cntb{display:inline-block;min-width:20px;padding:0 6px;border-radius:10px;background:var(--accent);color:var(--bg);font-size:.78rem;line-height:20px;margin-left:4px}
 .cntb.zero{background:var(--line);color:var(--muted)}
 #undo{padding:7px 10px}
 .save{font-size:.78rem;color:var(--muted);flex:1 1 100%}
-.save.err{color:var(--bad)}
+.save.err{color:var(--ink);font-weight:700;border-bottom:2px dashed var(--bad)}
 .hint1{margin:10px 0 0;font-size:.95rem}
 .hint1 b{color:var(--accent)}
 .meter{display:flex;align-items:center;gap:8px;font-variant-numeric:tabular-nums;font-size:.9rem;margin-top:8px}
@@ -60,12 +66,12 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .fam .sub{color:var(--muted);font-size:.82rem;margin:0 0 10px}
 .pile{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:6px;padding:10px 12px;margin-top:10px;scroll-margin-top:var(--barh,110px)}
 .pile.flash{outline:3px solid var(--accent);outline-offset:2px}
-.pile.same{border-left-color:var(--ok)} .pile.merge{border-left-color:var(--accent)} .pile.mark{border-left-color:var(--warn)}
+.pile.same{border-left:4px solid var(--ok)} .pile.merge{border-left:5px double var(--accent)} .pile.mark{border-left:4px dotted var(--ink)}
 .ph{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
 .pid{font-family:var(--f-mono);font-weight:600;font-size:.95rem}
 .cnt{color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums}
 .chip{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;padding:1px 7px;border-radius:10px;background:var(--line);color:var(--ink)}
-.chip.same{background:var(--ok-soft);color:var(--ok)} .chip.merge{background:var(--accent-soft);color:var(--accent)} .chip.mark{background:var(--warn-soft);color:var(--warn)}
+.chip.same{background:var(--tint-sky);color:var(--on-tint);border:1px solid var(--ok)} .chip.merge{background:var(--accent-soft);color:var(--ink);border:2px double var(--accent)} .chip.mark{background:var(--tint-yellow);color:var(--on-tint);border:1px dotted var(--on-tint)}
 .ph .big{margin-left:auto;font-size:.8rem;padding:2px 8px}
 .tiles{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}
 /* tiles: tap and hold, never select text, show a callout or drag the picture */
@@ -73,18 +79,18 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
   position:relative;overflow:hidden;touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;transition:transform .12s}
 .t img{width:100%;height:100%;min-width:0;min-height:0;object-fit:contain;image-rendering:auto;pointer-events:none;-webkit-user-drag:none}
 .t.pressing{transform:scale(.92);border-color:var(--accent)}
-.t.out{border:2px dashed var(--ink)}
+.t.out{border:2px dashed var(--bad)}
 .t.out img{opacity:.35}
-.t.fq{border:2px dashed var(--accent)}
+.t.fq{border:3px double var(--accent)}
 .t .badge{position:absolute;top:1px;right:1px;min-width:18px;height:18px;border-radius:9px;padding:0 3px;
   font:700 12px/18px var(--f-body);text-align:center;background:var(--ink);color:var(--bg)}
-.t.fq .badge{background:var(--accent);color:#fff}
+.t.fq .badge{background:var(--accent);color:var(--bg)}
 .t .badge.ok{cursor:pointer;min-width:24px;height:24px;border-radius:12px;font-size:14px;line-height:24px;top:0;right:0;box-shadow:0 0 0 2px var(--surface)}
 @media (hover:hover){.t .badge.ok:hover{background:var(--ok)}}
 .t.kept{border:2px solid var(--ok)}
 .t.ref{border:2px solid var(--ok);opacity:.8}
-.t.ref .badge{background:var(--ok);color:#fff}
-.t.kept .badge{background:var(--ok);color:#fff}
+.t.ref .badge{background:var(--ok);color:var(--on-fill)}
+.t.kept .badge{background:var(--ok);color:var(--on-fill)}
 .pile.dropover{outline:3px solid var(--accent);outline-offset:2px;background:var(--accent-soft)}
 #trayTiles .t{touch-action:pan-x}
 .tapmode{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:8px;font-size:.9rem}
@@ -141,7 +147,7 @@ canvas{display:block;max-width:none;height:auto}
 #tray .lab b{font-size:1.1rem}
 #trayTiles{display:flex;gap:4px;overflow-x:auto;flex:1 1 auto;min-width:0;margin:0;flex-wrap:nowrap}
 #trayTiles .t{--sz:52px;flex:0 0 auto}
-#trayGo{font-weight:600;padding:8px 10px;flex:0 0 auto;background:var(--accent);color:#fff;border-color:var(--accent)}
+#trayGo{font-weight:600;padding:8px 10px;flex:0 0 auto;background:var(--accent);color:var(--bg);border-color:var(--accent)}
 .fly{position:fixed;z-index:40;pointer-events:none;background:var(--tile);border-radius:4px;transition:transform .32s ease-in,opacity .32s ease-in;object-fit:contain}
 /* step 2 */
 #s2[hidden],#s1[hidden],#s2Empty[hidden],#s2Work[hidden]{display:none}
@@ -192,18 +198,18 @@ body.traypad #offer{bottom:100px}
 .cv.editing.brush canvas{cursor:cell}
 #fixBrush[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
 #fixBrushRow{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
-#fixSave{font-weight:600;background:var(--accent);color:#fff;border-color:var(--accent)}
+#fixSave{font-weight:600;background:var(--accent);color:var(--bg);border-color:var(--accent)}
 #viewSeg[hidden],#ctxNbL[hidden]{display:none}
 #viewSeg button{font-size:.82rem;padding:4px 10px}
-.t .trash{position:absolute;left:1px;top:1px;width:22px;height:22px;border-radius:4px;font:700 13px/22px var(--f-body);text-align:center;background:var(--bad);color:#fff;opacity:0;cursor:pointer;transition:opacity .1s}
+.t .trash{position:absolute;left:1px;top:1px;width:22px;height:22px;border-radius:4px;font:700 13px/22px var(--f-body);text-align:center;background:var(--bad);color:var(--on-fill);opacity:0;cursor:pointer;transition:opacity .1s}
 .t:hover .trash,.t:focus-visible .trash{opacity:.9}
 @media (hover:none){.t .trash{display:none}}
-.t .rcb{position:absolute;left:1px;bottom:1px;font:600 9px/13px var(--f-body);background:var(--accent);color:#fff;border-radius:3px;padding:0 3px;pointer-events:none}
+.t .rcb{position:absolute;left:1px;bottom:1px;font:600 9px/13px var(--f-body);background:var(--accent);color:var(--bg);border-radius:3px;padding:0 3px;pointer-events:none}
 #dropBar[hidden]{display:none}
 #dropBar{position:fixed;left:0;right:0;bottom:0;z-index:45;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:2px solid var(--accent);box-shadow:0 -4px 14px rgba(0,0,0,.2)}
 #dropBar [data-drop]{border:2px dashed var(--line);border-radius:8px;padding:14px 8px;text-align:center;font-weight:600;line-height:1.2}
 #dropBar [data-drop] small{font-weight:400;color:var(--muted)}
-#dropBar [data-drop="NOT-LETTER"]{color:var(--bad)}
+#dropBar [data-drop="NOT-LETTER"]{border-color:var(--bad)}
 #dropBar .dropover{border-color:var(--accent);background:var(--accent-soft);outline:3px solid var(--accent)}
 .t.lifted{opacity:.35}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -257,7 +263,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <section id="s1">
-    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign: lift your finger to see it larger, or drag it onto a pile (or onto the bar at the bottom: doesn’t belong / trash). <span class="mouse-only">Click the orange <b>?</b> on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it, lift, and press “Right pile: keep it”.</span> <b>Drag</b> a sign onto another pile (mouse: straight away; phone: hold first). The red <b>✕</b> on a sign (mouse: hover) trashes it: a page edge, shadow or stain, not a sign.</p>
+    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign: lift your finger to see it larger, or drag it onto a pile (or onto the bar at the bottom: doesn’t belong / trash). <span class="mouse-only">Click the <b>?</b> badge on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it, lift, and press “Right pile: keep it”.</span> <b>Drag</b> a sign onto another pile (mouse: straight away; phone: hold first). The <b>✕</b> on a sign (mouse: hover) trashes it: a page edge, shadow or stain, not a sign.</p>
     <div class="tapmode"><span class="hint">A tap on a sign:</span><span class="seg" role="group" aria-label="What a tap does"><button type="button" id="modeOut" class="on">Takes it out</button><button type="button" id="modeLook">Shows it large</button></span></div>
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
     <details class="opts"><summary>Display options</summary><div class="row">
@@ -1041,7 +1047,7 @@ function drawLine(sid, c, z, alive){
     if (ia){ g.fillStyle = '#f4f1ea'; g.fillRect(0, 0, c.width, ha); strip(ia, 0, ha); }
     g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, ha, c.width, hm);
     if (ib){ g.fillStyle = '#f4f1ea'; g.fillRect(0, ha + hm, c.width, hb); strip(ib, ha + hm, hb); }
-    if (ia || ib){ g.fillStyle = 'rgba(138,59,18,.55)'; if (ia) g.fillRect(0, ha - 1, c.width, 2); if (ib) g.fillRect(0, ha + hm - 1, c.width, 2); }
+    if (ia || ib){ g.fillStyle = 'rgba(36,33,28,.55)'; if (ia) g.fillRect(0, ha - 1, c.width, 2); if (ib) g.fillRect(0, ha + hm - 1, c.width, 2); }
     g.translate(0, ha);
     // corner brackets (shape, not colour), drawn twice for contrast; stroke sizes in screen pixels
     const k = c.width / cssW;
@@ -1214,22 +1220,27 @@ function makeRecutImg(sid){
 let rrT = 0;
 function rerenderSoon(){ clearTimeout(rrT); rrT = setTimeout(() => { render(); if (!$('ctx').hidden && ctxSid) $('ctxBig').src = imgSrc(ctxSid); }, 30); }
 function setRecut(sid, r){ if (r) recuts[sid] = r; else delete recuts[sid]; delete recutImg[sid]; if (r) makeRecutImg(sid); else rerenderSoon(); }
-// the box being edited, drawn by drawLine / drawRegion: brush strokes as paper (a red rim says "erased"), the quad white under red
+// the box being edited, drawn by drawLine / drawRegion: brush strokes as paper (a dotted ink rim says "erased"), the quad white under dark orange
 // dashes, a square handle mid-edge, a round one on each corner. pt: strip pixel -> canvas pixel; sc: canvas px per strip px.
+// Box colours drawn over a manuscript image (tools/sorter_preflight.py --cvd reads this line: each colour must reach 3:1 against every page
+// image's median colour, or have the under-stroke do so). outline = dark orange dashes, handle = blue, grey = muted marks.
+const BOX = {outline: '#B35900', handle: '#0072B2', grey: '#767676', under: '#ffffff'};
 function drawEdit(g, k, pt, sc){
   g.setLineDash([]); g.lineCap = g.lineJoin = 'round';
-  [['rgba(179,38,30,.6)', 2 * k], ['#ffffff', 0]].forEach(([col, rim]) => { g.strokeStyle = g.fillStyle = col;
+  [['rgba(36,33,28,.6)', 2 * k], ['#ffffff', 0]].forEach(([col, rim]) => { g.strokeStyle = g.fillStyle = col;
     fix.mask.forEach(st => { const P = st.pts.map(p => pt(...p)), rr = st.r * sc + rim / 2; g.lineWidth = 2 * rr;
       P.forEach(([x, y]) => { g.beginPath(); g.arc(x, y, rr, 0, 2 * Math.PI); g.fill(); });
       if (P.length > 1){ g.beginPath(); g.moveTo(...P[0]); P.slice(1).forEach(p => g.lineTo(...p)); g.stroke(); } }); });
-  g.lineCap = 'butt'; g.lineJoin = 'miter';
+  g.setLineDash([k, 2 * k]); g.strokeStyle = '#24211c'; g.lineWidth = k;   // the rim dotted, so it is not told by tone alone
+  fix.mask.forEach(st => st.pts.forEach(p => { const [x, y] = pt(...p); g.beginPath(); g.arc(x, y, st.r * sc + k, 0, 2 * Math.PI); g.stroke(); }));
+  g.setLineDash([]); g.lineCap = 'butt'; g.lineJoin = 'miter';
   const Q = fix.quad.map(p => pt(...p));
-  [['#ffffff', 5 * k, []], ['#b3261e', 2 * k, [6 * k, 4 * k]]].forEach(([col, lw, dash]) => { g.strokeStyle = col; g.lineWidth = lw; g.setLineDash(dash);
+  [[BOX.under, 5 * k, []], [BOX.outline, 2 * k, [6 * k, 4 * k]]].forEach(([col, lw, dash]) => { g.strokeStyle = col; g.lineWidth = lw; g.setLineDash(dash);
     g.beginPath(); g.moveTo(...Q[0]); Q.slice(1).forEach(p => g.lineTo(...p)); g.closePath(); g.stroke(); });
   g.setLineDash([]); const hs = (COARSE ? 8 : 5) * k, mid = (a, b) => [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
   [mid(Q[0], Q[3]), mid(Q[1], Q[2]), mid(Q[0], Q[1]), mid(Q[3], Q[2])].forEach(([hx, hy]) => {
-    g.fillStyle = '#ffffff'; g.fillRect(hx - hs - k, hy - hs - k, 2 * hs + 2 * k, 2 * hs + 2 * k); g.fillStyle = '#b3261e'; g.fillRect(hx - hs, hy - hs, 2 * hs, 2 * hs); });
-  Q.forEach(([hx, hy]) => { [['#ffffff', hs + 1.5 * k], ['#b3261e', hs]].forEach(([col, rr]) => { g.fillStyle = col; g.beginPath(); g.arc(hx, hy, rr, 0, 2 * Math.PI); g.fill(); }); });
+    g.fillStyle = BOX.under; g.fillRect(hx - hs - k, hy - hs - k, 2 * hs + 2 * k, 2 * hs + 2 * k); g.fillStyle = BOX.handle; g.fillRect(hx - hs, hy - hs, 2 * hs, 2 * hs); });
+  Q.forEach(([hx, hy]) => { [[BOX.under, hs + 1.5 * k], [BOX.handle, hs]].forEach(([col, rr]) => { g.fillStyle = col; g.beginPath(); g.arc(hx, hy, rr, 0, 2 * Math.PI); g.fill(); }); });
 }
 function fixUi(on){
   $('fixBox').hidden = !on; $('ctxFix').textContent = on ? 'Stop fixing (no save)' : 'Fix the cut'; $('ctxFix').setAttribute('aria-pressed', on);

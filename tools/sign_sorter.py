@@ -41,7 +41,7 @@ Active sorter (TX-SORTER, 3 Oct 2026; TRANSCRIPTION.md pipeline step 7):
               region around the tile, its (sheared) box drawn there, "Whole page" by default with a "Line strips" toggle.
               The image goes beside --out as <stem>_region.jpg: publish it with the page (Artifact files), or --region-embed.
   --refs      TSV with a sid column (BIR87-SORTER, 4 Oct 2026): tiles the person already sorted on an earlier page, put in
-              --labels under the pile the person chose and shown with a green check as examples for sorting new tiles
+              --labels under the pile the person chose and shown with a check as examples for sorting new tiles
               into the person's own piles. Since 4 Oct 2026 (owner: "give me a way to fix, I might make mistakes") they
               move like any tile (tap out, place, drag, Undo), so a wrong earlier pick can be corrected. Leave them out
               of the --labels file given to sign_sorter_apply.py; a move stored for a ref sid is a correction to the
