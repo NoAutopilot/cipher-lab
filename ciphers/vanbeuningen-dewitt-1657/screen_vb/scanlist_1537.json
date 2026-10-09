@@ -1,0 +1,472 @@
+{
+"inv": "1537",
+"mets_uuid": "aeb68de6-b638-42c9-bceb-0fb8aca6464c",
+"iiif_prefix": "ae/b6/8d/e6/b6/38/42/c9/bc/eb/0f/b8/ac/a6/46/4c",
+"scans": [
+{
+"id": "004b1e3c-bdf6-49a8-a371-d4a20e13e9c0",
+"order": 1,
+"label": "NL-HaNA_3.01.17_1537_0001.jpg"
+},
+{
+"id": "33f61946-372e-4ccd-b641-524d2642caff",
+"order": 2,
+"label": "NL-HaNA_3.01.17_1537_0002.jpg"
+},
+{
+"id": "e698134d-718b-44c7-9814-3dd96c3918bf",
+"order": 3,
+"label": "NL-HaNA_3.01.17_1537_0003.jpg"
+},
+{
+"id": "f9878a6d-005d-4d4f-8d4f-f6a2ed61634e",
+"order": 4,
+"label": "NL-HaNA_3.01.17_1537_0004.jpg"
+},
+{
+"id": "9837d429-48f5-499e-9e45-1cb7037cdf1c",
+"order": 5,
+"label": "NL-HaNA_3.01.17_1537_0005.jpg"
+},
+{
+"id": "4b2a4bf1-b50f-420f-af2c-8dcff89092d1",
+"order": 6,
+"label": "NL-HaNA_3.01.17_1537_0006.jpg"
+},
+{
+"id": "7b3f8ff1-6a67-4482-b628-b5cbc15f706a",
+"order": 7,
+"label": "NL-HaNA_3.01.17_1537_0007.jpg"
+},
+{
+"id": "3ca13683-cf9a-4975-a6f0-a9d0803146ee",
+"order": 8,
+"label": "NL-HaNA_3.01.17_1537_0008.jpg"
+},
+{
+"id": "00c7878e-16a9-4ea6-893e-1416170212c2",
+"order": 9,
+"label": "NL-HaNA_3.01.17_1537_0009.jpg"
+},
+{
+"id": "4bf0e0d8-6787-41c2-8d41-0a11c8c79ef0",
+"order": 10,
+"label": "NL-HaNA_3.01.17_1537_0010.jpg"
+},
+{
+"id": "237bd500-d4b8-4d42-8c04-0ef62617d5ae",
+"order": 11,
+"label": "NL-HaNA_3.01.17_1537_0011.jpg"
+},
+{
+"id": "567fdf30-5eb3-4ed9-9342-2d2b5186f28b",
+"order": 12,
+"label": "NL-HaNA_3.01.17_1537_0012.jpg"
+},
+{
+"id": "153544f7-de91-4c05-9f77-723bdcbc3dab",
+"order": 13,
+"label": "NL-HaNA_3.01.17_1537_0013.jpg"
+},
+{
+"id": "f46c60f7-a2d3-43d5-9e19-5e8d3aa56589",
+"order": 14,
+"label": "NL-HaNA_3.01.17_1537_0014.jpg"
+},
+{
+"id": "87f56f48-df68-488f-9ccb-9bcc55ff4b9a",
+"order": 15,
+"label": "NL-HaNA_3.01.17_1537_0015.jpg"
+},
+{
+"id": "9d401f47-e48e-40b7-84e4-8ae9e1810ef6",
+"order": 16,
+"label": "NL-HaNA_3.01.17_1537_0016.jpg"
+},
+{
+"id": "bafa98a2-273b-4e72-af4d-52eee4bb86c7",
+"order": 17,
+"label": "NL-HaNA_3.01.17_1537_0017.jpg"
+},
+{
+"id": "5fe61d4d-ae92-45d6-81f5-dfa0c7865524",
+"order": 18,
+"label": "NL-HaNA_3.01.17_1537_0018.jpg"
+},
+{
+"id": "a8cc03d5-587f-40e4-b023-f244f60d65ed",
+"order": 19,
+"label": "NL-HaNA_3.01.17_1537_0019.jpg"
+},
+{
+"id": "47109841-060d-4db8-b4bd-140ff32e4c95",
+"order": 20,
+"label": "NL-HaNA_3.01.17_1537_0020.jpg"
+},
+{
+"id": "97481641-d900-4fe2-93c5-edb8d0a84083",
+"order": 21,
+"label": "NL-HaNA_3.01.17_1537_0021.jpg"
+},
+{
+"id": "83872454-8d22-4cc7-9fad-199cc357bf19",
+"order": 22,
+"label": "NL-HaNA_3.01.17_1537_0022.jpg"
+},
+{
+"id": "3408b1d3-93cc-410c-9d73-386ffa04cece",
+"order": 23,
+"label": "NL-HaNA_3.01.17_1537_0023.jpg"
+},
+{
+"id": "90b70444-e2fe-466c-a432-53cbeb780338",
+"order": 24,
+"label": "NL-HaNA_3.01.17_1537_0024.jpg"
+},
+{
+"id": "5e585f19-ec4d-4025-922f-f2d759551aec",
+"order": 25,
+"label": "NL-HaNA_3.01.17_1537_0025.jpg"
+},
+{
+"id": "66f8d16c-1a7c-45ef-85da-0a2f966c43a9",
+"order": 26,
+"label": "NL-HaNA_3.01.17_1537_0026.jpg"
+},
+{
+"id": "bee11876-ed3c-40a9-8361-683d51a454d5",
+"order": 27,
+"label": "NL-HaNA_3.01.17_1537_0027.jpg"
+},
+{
+"id": "61dad3c1-3e31-40e5-aed6-137defaa828f",
+"order": 28,
+"label": "NL-HaNA_3.01.17_1537_0028.jpg"
+},
+{
+"id": "685c2097-641d-4af3-a037-58111a135734",
+"order": 29,
+"label": "NL-HaNA_3.01.17_1537_0029.jpg"
+},
+{
+"id": "675f0a9c-7a2e-4901-899b-b38bd15a39fa",
+"order": 30,
+"label": "NL-HaNA_3.01.17_1537_0030.jpg"
+},
+{
+"id": "6817496a-1e75-46e4-a8e4-087b83d62e6e",
+"order": 31,
+"label": "NL-HaNA_3.01.17_1537_0031.jpg"
+},
+{
+"id": "0063ef75-04b8-40ca-92f5-ad6d6f4d84f0",
+"order": 32,
+"label": "NL-HaNA_3.01.17_1537_0032.jpg"
+},
+{
+"id": "5d45b7f9-bb08-456d-b163-8a72ff276e68",
+"order": 33,
+"label": "NL-HaNA_3.01.17_1537_0033.jpg"
+},
+{
+"id": "f768421f-c0ae-416d-b7cb-8e0416984c3c",
+"order": 34,
+"label": "NL-HaNA_3.01.17_1537_0034.jpg"
+},
+{
+"id": "f74434dd-95a3-4bba-bddb-4b66211fa59b",
+"order": 35,
+"label": "NL-HaNA_3.01.17_1537_0035.jpg"
+},
+{
+"id": "4fe01549-caf1-47f8-acc9-2761d113e583",
+"order": 36,
+"label": "NL-HaNA_3.01.17_1537_0036.jpg"
+},
+{
+"id": "a584653f-b3ee-4926-be84-e275aa55019b",
+"order": 37,
+"label": "NL-HaNA_3.01.17_1537_0037.jpg"
+},
+{
+"id": "ad54aa5e-a901-4857-84e8-2a2fa707b216",
+"order": 38,
+"label": "NL-HaNA_3.01.17_1537_0038.jpg"
+},
+{
+"id": "54ead15a-4efd-40d8-9b2d-0c905e340803",
+"order": 39,
+"label": "NL-HaNA_3.01.17_1537_0039.jpg"
+},
+{
+"id": "e1e65179-7d90-4065-85f2-0d43fb448fdf",
+"order": 40,
+"label": "NL-HaNA_3.01.17_1537_0040.jpg"
+},
+{
+"id": "ee043ed4-6506-46c9-b901-225b1bddd7ba",
+"order": 41,
+"label": "NL-HaNA_3.01.17_1537_0041.jpg"
+},
+{
+"id": "3b96c06f-df3c-4f81-8d3a-e6e3c8849181",
+"order": 42,
+"label": "NL-HaNA_3.01.17_1537_0042.jpg"
+},
+{
+"id": "3ce0beac-49a4-47b9-99f0-3e3ab6806c12",
+"order": 43,
+"label": "NL-HaNA_3.01.17_1537_0043.jpg"
+},
+{
+"id": "e98033fd-83ee-4dc2-ac0f-adba54c2a02d",
+"order": 44,
+"label": "NL-HaNA_3.01.17_1537_0044.jpg"
+},
+{
+"id": "07c8e5b5-6bef-4a59-9652-1f609802d295",
+"order": 45,
+"label": "NL-HaNA_3.01.17_1537_0045.jpg"
+},
+{
+"id": "01e86300-3bce-4a6d-9faf-5e7bddc0f778",
+"order": 46,
+"label": "NL-HaNA_3.01.17_1537_0046.jpg"
+},
+{
+"id": "03bfbf64-dd69-4343-869d-444732f3d62c",
+"order": 47,
+"label": "NL-HaNA_3.01.17_1537_0047.jpg"
+},
+{
+"id": "1fbf587e-fed3-4729-b489-358817d057f5",
+"order": 48,
+"label": "NL-HaNA_3.01.17_1537_0048.jpg"
+},
+{
+"id": "83679e13-93e2-476b-9928-c2049e3febca",
+"order": 49,
+"label": "NL-HaNA_3.01.17_1537_0049.jpg"
+},
+{
+"id": "3483afc7-cd8a-4db3-8226-143f044f4e18",
+"order": 50,
+"label": "NL-HaNA_3.01.17_1537_0050.jpg"
+},
+{
+"id": "c22d6c20-2584-49ef-86f8-62b42bae36b0",
+"order": 51,
+"label": "NL-HaNA_3.01.17_1537_0051.jpg"
+},
+{
+"id": "18bd6df3-b69e-4eec-b10a-5659dbbaab17",
+"order": 52,
+"label": "NL-HaNA_3.01.17_1537_0052.jpg"
+},
+{
+"id": "89b981be-a3d8-41ac-bafd-f1735cb966ee",
+"order": 53,
+"label": "NL-HaNA_3.01.17_1537_0053.jpg"
+},
+{
+"id": "6e7d11e7-c506-40c8-b33f-c05fb8e4da74",
+"order": 54,
+"label": "NL-HaNA_3.01.17_1537_0054.jpg"
+},
+{
+"id": "385e77e4-1b92-4a4d-8b5f-3840417590ee",
+"order": 55,
+"label": "NL-HaNA_3.01.17_1537_0055.jpg"
+},
+{
+"id": "f726e09c-2fb7-4b87-b1cf-457983f6afe0",
+"order": 56,
+"label": "NL-HaNA_3.01.17_1537_0056.jpg"
+},
+{
+"id": "a4ee7b48-957f-4719-87b4-fc190f3ce963",
+"order": 57,
+"label": "NL-HaNA_3.01.17_1537_0057.jpg"
+},
+{
+"id": "3c0b4881-c9a0-4b30-848d-f5566ace63f3",
+"order": 58,
+"label": "NL-HaNA_3.01.17_1537_0058.jpg"
+},
+{
+"id": "cc0bea8f-e511-4c6c-8fdc-369ba444e62d",
+"order": 59,
+"label": "NL-HaNA_3.01.17_1537_0059.jpg"
+},
+{
+"id": "691d6b8b-47f5-4f93-a296-5669d92ca774",
+"order": 60,
+"label": "NL-HaNA_3.01.17_1537_0060.jpg"
+},
+{
+"id": "4f4ce9af-2e47-4d2f-bde3-1f8d12ee2cee",
+"order": 61,
+"label": "NL-HaNA_3.01.17_1537_0061.jpg"
+},
+{
+"id": "a718c9f7-12e1-4a5b-84d5-cfc2cc89e41b",
+"order": 62,
+"label": "NL-HaNA_3.01.17_1537_0062.jpg"
+},
+{
+"id": "35aa7f3e-a322-4fc4-897b-4a7edeb47f5a",
+"order": 63,
+"label": "NL-HaNA_3.01.17_1537_0063.jpg"
+},
+{
+"id": "eb6315c0-c285-4bc5-b27d-01b35256b3e2",
+"order": 64,
+"label": "NL-HaNA_3.01.17_1537_0064.jpg"
+},
+{
+"id": "b57a687a-add1-4f51-b7f7-51e82a730f4c",
+"order": 65,
+"label": "NL-HaNA_3.01.17_1537_0065.jpg"
+},
+{
+"id": "1c28c9d5-b97b-4fcc-ad49-227e90fdc167",
+"order": 66,
+"label": "NL-HaNA_3.01.17_1537_0066.jpg"
+},
+{
+"id": "a58563d6-94df-49b1-bed3-7cb336f1e163",
+"order": 67,
+"label": "NL-HaNA_3.01.17_1537_0067.jpg"
+},
+{
+"id": "69171de9-be16-4721-b3c6-287645b65561",
+"order": 68,
+"label": "NL-HaNA_3.01.17_1537_0068.jpg"
+},
+{
+"id": "4e70c606-43fb-44f0-9ba7-0f26ad6e7c65",
+"order": 69,
+"label": "NL-HaNA_3.01.17_1537_0069.jpg"
+},
+{
+"id": "20c7dd1b-8d1e-4b7c-9e13-40245deae3be",
+"order": 70,
+"label": "NL-HaNA_3.01.17_1537_0070.jpg"
+},
+{
+"id": "cda693ce-471b-4362-ba04-b055e66cd70b",
+"order": 71,
+"label": "NL-HaNA_3.01.17_1537_0071.jpg"
+},
+{
+"id": "4bc65ae4-a162-462a-bbd3-29ca71e0e71b",
+"order": 72,
+"label": "NL-HaNA_3.01.17_1537_0072.jpg"
+},
+{
+"id": "f6012f90-da33-49c1-8062-81b42a41a70d",
+"order": 73,
+"label": "NL-HaNA_3.01.17_1537_0073.jpg"
+},
+{
+"id": "395c7f17-9240-4b85-9853-e3d43a7cd30c",
+"order": 74,
+"label": "NL-HaNA_3.01.17_1537_0074.jpg"
+},
+{
+"id": "cdc12286-c62b-44cb-810a-791f6c9bdb72",
+"order": 75,
+"label": "NL-HaNA_3.01.17_1537_0075.jpg"
+},
+{
+"id": "0a49e0f1-8afa-4bac-888e-c35fdc8b0e20",
+"order": 76,
+"label": "NL-HaNA_3.01.17_1537_0076.jpg"
+},
+{
+"id": "5d0f4241-0624-4666-b475-31d41c4d8334",
+"order": 77,
+"label": "NL-HaNA_3.01.17_1537_0077.jpg"
+},
+{
+"id": "4e9ca071-6019-4b96-abf2-0f12c64c54d6",
+"order": 78,
+"label": "NL-HaNA_3.01.17_1537_0078.jpg"
+},
+{
+"id": "a94bfbad-b418-4cc0-88fe-05b05baa7306",
+"order": 79,
+"label": "NL-HaNA_3.01.17_1537_0079.jpg"
+},
+{
+"id": "48a04b3d-d025-4df8-8277-53f1724259a2",
+"order": 80,
+"label": "NL-HaNA_3.01.17_1537_0080.jpg"
+},
+{
+"id": "d26ba984-4ca1-4bf3-bbe4-066d2cd880c6",
+"order": 81,
+"label": "NL-HaNA_3.01.17_1537_0081.jpg"
+},
+{
+"id": "745513e2-209d-4abd-a4e8-6998190f7e17",
+"order": 82,
+"label": "NL-HaNA_3.01.17_1537_0082.jpg"
+},
+{
+"id": "4d554570-eaa5-4f37-b699-5df400691841",
+"order": 83,
+"label": "NL-HaNA_3.01.17_1537_0083.jpg"
+},
+{
+"id": "07347691-f902-485c-85ab-ff08c7b5587b",
+"order": 84,
+"label": "NL-HaNA_3.01.17_1537_0084.jpg"
+},
+{
+"id": "527415a4-4be1-4ec9-9e66-0aac42b08088",
+"order": 85,
+"label": "NL-HaNA_3.01.17_1537_0085.jpg"
+},
+{
+"id": "0a463ecb-0cce-4290-9491-11c69ed40c1a",
+"order": 86,
+"label": "NL-HaNA_3.01.17_1537_0086.jpg"
+},
+{
+"id": "8371eb14-422e-4bc8-a826-4236c7687e80",
+"order": 87,
+"label": "NL-HaNA_3.01.17_1537_0087.jpg"
+},
+{
+"id": "06d97e1d-2664-4e8f-93f0-3623ee28633d",
+"order": 88,
+"label": "NL-HaNA_3.01.17_1537_0088.jpg"
+},
+{
+"id": "a2d1940e-c79d-4700-9745-3ec674986dff",
+"order": 89,
+"label": "NL-HaNA_3.01.17_1537_0089.jpg"
+},
+{
+"id": "6d21a6c5-9076-4d82-8a6e-2fcb0b5d4606",
+"order": 90,
+"label": "NL-HaNA_3.01.17_1537_0090.jpg"
+},
+{
+"id": "8a1af488-a71d-4d40-8cd4-d4b392452636",
+"order": 91,
+"label": "NL-HaNA_3.01.17_1537_0091.jpg"
+},
+{
+"id": "9aee7a22-2160-4c52-a717-e5fb44ab5112",
+"order": 92,
+"label": "NL-HaNA_3.01.17_1537_0092.jpg"
+},
+{
+"id": "aafbb0d5-9ede-4b36-a6c9-68dcb5422909",
+"order": 93,
+"label": "NL-HaNA_3.01.17_1537_0093.jpg"
+}
+]
+}

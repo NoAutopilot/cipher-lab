@@ -1,0 +1,566 @@
+{
+"A01-01": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0002.jpg"
+},
+"A01-02": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A01-03": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A01-04": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0005.jpg"
+},
+"A01-05": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A01-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0004.jpg"
+},
+"A01-07": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0003.jpg"
+},
+"A01-08": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0001.jpg"
+},
+"A01-09": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0007.jpg"
+},
+"A01-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0008.jpg"
+},
+"A01-11": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A01-12": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0006.jpg"
+},
+"A02-01": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0015.jpg"
+},
+"A02-02": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0010.jpg"
+},
+"A02-03": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0011.jpg"
+},
+"A02-04": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0009.jpg"
+},
+"A02-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0014.jpg"
+},
+"A02-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0013.jpg"
+},
+"A02-07": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A02-08": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0016.jpg"
+},
+"A02-09": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A02-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0012.jpg"
+},
+"A02-11": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A02-12": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A03-01": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A03-02": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A03-03": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0023.jpg"
+},
+"A03-04": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0017.jpg"
+},
+"A03-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0024.jpg"
+},
+"A03-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0021.jpg"
+},
+"A03-07": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0020.jpg"
+},
+"A03-08": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0018.jpg"
+},
+"A03-09": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A03-10": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A03-11": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0019.jpg"
+},
+"A03-12": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0022.jpg"
+},
+"A04-01": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A04-02": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0031.jpg"
+},
+"A04-03": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0029.jpg"
+},
+"A04-04": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A04-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0030.jpg"
+},
+"A04-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0026.jpg"
+},
+"A04-07": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0032.jpg"
+},
+"A04-08": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A04-09": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0025.jpg"
+},
+"A04-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0028.jpg"
+},
+"A04-11": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A04-12": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0027.jpg"
+},
+"A05-01": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A05-02": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A05-03": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A05-04": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0038.jpg"
+},
+"A05-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0040.jpg"
+},
+"A05-06": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A05-07": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0034.jpg"
+},
+"A05-08": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0037.jpg"
+},
+"A05-09": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0035.jpg"
+},
+"A05-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0039.jpg"
+},
+"A05-11": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0033.jpg"
+},
+"A05-12": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0036.jpg"
+},
+"A06-01": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0042.jpg"
+},
+"A06-02": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A06-03": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0046.jpg"
+},
+"A06-04": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A06-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0045.jpg"
+},
+"A06-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0047.jpg"
+},
+"A06-07": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A06-08": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0041.jpg"
+},
+"A06-09": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0044.jpg"
+},
+"A06-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0043.jpg"
+},
+"A06-11": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0048.jpg"
+},
+"A06-12": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A07-01": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0053.jpg"
+},
+"A07-02": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0056.jpg"
+},
+"A07-03": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A07-04": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A07-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0051.jpg"
+},
+"A07-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0049.jpg"
+},
+"A07-07": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0050.jpg"
+},
+"A07-08": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0055.jpg"
+},
+"A07-09": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0054.jpg"
+},
+"A07-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0052.jpg"
+},
+"A07-11": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A07-12": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A08-01": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A08-02": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A08-03": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0063.jpg"
+},
+"A08-04": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0062.jpg"
+},
+"A08-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0061.jpg"
+},
+"A08-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0059.jpg"
+},
+"A08-07": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0058.jpg"
+},
+"A08-08": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A08-09": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A08-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0064.jpg"
+},
+"A08-11": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0060.jpg"
+},
+"A08-12": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0057.jpg"
+},
+"A09-01": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A09-02": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0066.jpg"
+},
+"A09-03": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0071.jpg"
+},
+"A09-04": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0065.jpg"
+},
+"A09-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0072.jpg"
+},
+"A09-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0067.jpg"
+},
+"A09-07": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A09-08": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A09-09": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0070.jpg"
+},
+"A09-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0068.jpg"
+},
+"A09-11": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A09-12": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0069.jpg"
+},
+"A10-01": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A10-02": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0079.jpg"
+},
+"A10-03": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0078.jpg"
+},
+"A10-04": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A10-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0080.jpg"
+},
+"A10-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0074.jpg"
+},
+"A10-07": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0076.jpg"
+},
+"A10-08": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A10-09": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0077.jpg"
+},
+"A10-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0073.jpg"
+},
+"A10-11": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0075.jpg"
+},
+"A10-12": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A11-01": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+},
+"A11-02": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A11-03": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0081.jpg"
+},
+"A11-04": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A11-05": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A11-06": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0085.jpg"
+},
+"A11-07": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0082.jpg"
+},
+"A11-08": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0083.jpg"
+},
+"A11-09": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0086.jpg"
+},
+"A11-10": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0084.jpg"
+},
+"A11-11": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0088.jpg"
+},
+"A11-12": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0087.jpg"
+},
+"A12-01": {
+"kind": "K2",
+"file": "ctl_0207.jpg"
+},
+"A12-02": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0089.jpg"
+},
+"A12-03": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0090.jpg"
+},
+"A12-04": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0093.jpg"
+},
+"A12-05": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0091.jpg"
+},
+"A12-06": {
+"kind": "C1",
+"file": "ctl_0210.jpg"
+},
+"A12-07": {
+"kind": "T",
+"file": "NL-HaNA_3.01.17_1537_0092.jpg"
+},
+"A12-08": {
+"kind": "C2",
+"file": "ctl_0211.jpg"
+},
+"A12-09": {
+"kind": "K1",
+"file": "ctl_0206.jpg"
+}
+}

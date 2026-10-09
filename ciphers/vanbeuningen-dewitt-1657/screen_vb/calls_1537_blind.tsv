@@ -1,0 +1,142 @@
+tile	call	note
+A01-01	clear	dense prose, signed
+A01-02	cipher	dotted digit runs most lines
+A01-03	clear	prose, signed
+A01-04	blank	address/seal
+A01-05	clear	prose both pages, signed
+A01-06	clear	address + prose
+A01-07	blank	
+A01-08	cover	
+A01-09	clear	short prose top
+A01-10	clear	prose
+A01-11	cipher	dotted runs on right page
+A01-12	clear	prose, dated Maert 1656?
+A02-01	clear	prose + margin
+A02-02	clear	prose
+A02-03	clear	short prose signed
+A02-04	clear	dense prose two pages
+A02-05	clear	prose
+A02-06	clear	prose signed
+A02-07	cipher	dotted runs
+A02-08	clear	prose + margin note
+A02-09	clear	prose signed
+A02-10	clear	prose
+A02-11	clear	prose
+A02-12	cipher	dotted runs
+A03-01	clear	prose signed
+A03-02	cipher	dotted runs
+A03-03	clear	prose signed
+A03-04	clear	dense autograph prose
+A03-05	clear	address + prose
+A03-06	blank	
+A03-07	clear	dense prose + margin
+A03-08	clear	dense prose
+A03-09	clear	prose
+A03-10	cipher	dotted runs
+A03-11	clear	dense prose
+A03-12	clear	prose
+A04-01	clear	prose signed
+A04-02	clear	prose + margin
+A04-03	maybe	prose; a few lines on right page/lower left may hold short inline runs; dateline ?April 1656
+A04-04	cipher	dotted runs
+A04-05	clear	prose + list
+A04-06	clear	slip prose
+A04-07	clear	slip prose
+A04-08	clear	prose
+A04-09	blank	
+A04-10	clear	address + prose
+A04-11	cipher	dotted runs
+A04-12	clear	slip short prose
+A05-01	clear	prose signed
+A05-02	cipher	dotted runs
+A05-03	cipher	dotted runs
+A05-04	maybe	prose; middle lines right page may carry inline number groups
+A05-05	clear	address + prose
+A05-06	clear	prose
+A05-07	clear	prose
+A05-08	clear	prose signed
+A05-09	clear	prose two pages
+A05-10	blank	
+A05-11	clear	prose
+A05-12	clear	prose
+A06-01	clear	address + prose signed
+A06-02	cipher	dotted runs
+A06-03	clear	prose
+A06-04	clear	prose
+A06-05	blank	
+A06-06	clear	prose two pages
+A06-07	cipher	dotted runs
+A06-08	clear	prose signed
+A06-09	clear	address + prose
+A06-10	blank	
+A06-11	maybe	prose; some dotted segments in upper right-page lines
+A06-12	clear	prose signed
+A07-01	clear	prose signed
+A07-02	clear	address + slip prose
+A07-03	clear	prose
+A07-04	clear	prose signed
+A07-05	clear	prose
+A07-06	clear	prose
+A07-07	clear	prose
+A07-08	clear	short prose signed
+A07-09	clear	prose
+A07-10	clear	prose
+A07-11	cipher	dotted runs
+A07-12	cipher	dotted runs
+A08-01	cipher	dotted runs
+A08-02	clear	prose signed
+A08-03	clear	dense prose
+A08-04	clear	address + prose
+A08-05	clear	short prose signed
+A08-06	clear	prose
+A08-07	clear	prose
+A08-08	clear	prose
+A08-09	cipher	dotted runs
+A08-10	clear	slip prose
+A08-11	clear	address + prose
+A08-12	clear	dense prose two pages
+A09-01	clear	prose
+A09-02	clear	address + prose
+A09-03	clear	prose signed
+A09-04	clear	prose two pages signed
+A09-05	clear	slip prose
+A09-06	clear	prose signed
+A09-07	clear	prose signed
+A09-08	cipher	dotted runs
+A09-09	clear	address + prose
+A09-10	clear	prose
+A09-11	cipher	dotted runs
+A09-12	clear	prose signed
+A10-01	clear	prose
+A10-02	maybe	prose signed; dotted segments in a few middle lines
+A10-03	clear	prose
+A10-04	clear	prose signed
+A10-05	clear	prose
+A10-06	clear	address + prose
+A10-07	clear	address + prose
+A10-08	cipher	dotted runs
+A10-09	clear	prose signed
+A10-10	clear	prose signed
+A10-11	blank	
+A10-12	cipher	dotted runs
+A11-01	clear	prose
+A11-02	cipher	dotted runs
+A11-03	clear	prose signed
+A11-04	clear	prose signed
+A11-05	cipher	dotted runs
+A11-06	clear	short prose signed
+A11-07	clear	prose
+A11-08	clear	short prose signed
+A11-09	partial	prose with dotted digit segments in several lines (mixed clear+cipher)
+A11-10	clear	address + slip prose
+A11-11	maybe	prose; a few dotted segments
+A11-12	clear	prose signed
+A12-01	clear	prose signed
+A12-02	blank	
+A12-03	clear	address + prose
+A12-04	cover	
+A12-05	clear	prose signed
+A12-06	cipher	dotted runs
+A12-07	blank	address/cover
+A12-08	cipher	dotted runs
+A12-09	clear	prose
