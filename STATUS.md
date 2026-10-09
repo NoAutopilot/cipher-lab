@@ -7144,6 +7144,24 @@ DV-BLA queued (account 2, depth verifier, separate session; the next count candi
 (Fort Monroe clean rows, N1 confirms, FIX-FM7 done). Account 3 silent since 02:03. A stray ROOM line "10:51 | x | y" (a test line by an
 unknown session) is left as is. Keys unchanged (6 of 9 working). Next check-in 11:35.
 
+Check-in 5, 11:36-11:4x UTC 9 Oct (4:36 am PT): five_hour allowed; orchestrator context ~490k, cost 16.5 (hand-over planning from
+~750k: SUCCESSOR-PROMPT.md to be rewritten before then). Account 2 (its 11:11 dispatcher): DV-BLA done 11:17 -- Blathwayt depth D2 KEPT by
+the verifier (H/C/S 84.3% clears the 80% line, but 23 of the 27 gaps are ordinary words/syllables, not names/codes, so D3's residue
+criterion fails; no AD run needed) -> no count change; V-PISA-C done 11:17 -- the UNA2-PISA carry-over replaced by a verifier section
+(PREREG before results confirmed, key86 byte-identical, a transcription-label change only); KARL-FOLD done 11:15 -- ra-celsing (ASKS
+132) folded into the Riksarkivet draft as item 2, status drafted, no checked: line -> OUT-CHECK-KARL queued (gate 7, separate session,
+account 2 :10). Account 1 LANE LEDGER-5: wave 1 done 15.79 (E270-E299 filed; CONF-FM: E250 E255 E257 N1 D3, E254 not N1; Porter key test
+46/52 vs shuffled p99 3), wave 2 live (CONF-FM2: nine more N1 D3 key period; FV-FM8a: E270 N1, E254/E272/E275 N3 D3; FV-FM8c: E294 E295
+E297 E298 N1). The two second-audit rows those verifiers queued for the silent account 3 (AUD2-LEDGER-18: E254 E272 E275 E277; -20: E293)
+re-tagged to account 4 and spawned from this session (session_01FzQxtmABL8ccgFDo8YvztH, session_01DUcSTNr22GDDmKkpEEKS8g). Board rebuilt
+11:4x after the class changes: 19 recovered-passage / 92 completed / 19 fragments / 1 key-to-known-text / 6 contributions (completed
+89 -> 92). Account 4 LANE DEFAULT-1051: wave 1 done 12.29 (MAT-F179: code 76 x2 held M, Cipher-3 f.179 two passes agree 32%, decode below
+shuffle; JVN-104 third pass a NON-TEST, reader failed both positive controls; JMAN-CSP map exists; SALAZ-KEY Tomokiyo key 217 rows all M;
+E62-STALE partial), wave 2 live (CS-1162, BNE-DECODE, E62-CHECK2; D1411-R21 and VIVX-KEYS stopped as already-done steps). Account 2
+FAMILY-A2h wave 2 done 12.91 (MANT-CUC: the Krauske table holds on the Flemming drafts, 124/175 vs p99 36; LIN-COUNT gate FAIL 6/7, 5/7
+-> antt-linhares-chave now the one wait-only row with no parallel action, asked of LANE FAMILY-A2h with a 12:30 default). Account 3 silent.
+Keys unchanged. Next check-in 11:58 (two verifiers live on account 4).
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

@@ -47,3 +47,8 @@ UNA2-PISA running. Account 1: UNA3-BLA at :40, then queue DV-BLA (depth verifier
 STATE DELTA 11:0x UTC 9 Oct: account 4 live = DEFAULT-account-4-20261009-1051 lane (default-lane.md). Queued account 2: KARL-FOLD, DV-BLA (Blathwayt
 depth verifier: H/C/S 84.3% vs recorded D2; a D3 would be a count change -> board rebuild), V-PISA-C. Then OUT-CHECK-KARL after KARL-FOLD lands.
 CLOSEST: Blathwayt (DV-BLA decides D2/D3). Wait-only 0 missing.
+STATE DELTA 11:4x UTC 9 Oct: Blathwayt D2 KEPT (DV-BLA: residue not names/codes); board 19/92/19/1/6 (completed 89 -> 92, Eckert first
+audits). Account 4 live: DEFAULT-account-4-20261009-1051 lane (wave 2) + AUD2-LEDGER-18/-20 (re-tagged from account 3, spawned by the
+orchestrator; ledger+archive on their done lines). Account 2 queued: OUT-CHECK-KARL (:10); after it passes, the orchestrator queues the
+SEND-QUEUE row (tools/send_queue_check.py first) and promotes ASKS 159 to the desk. AUD2-LEDGER-19 (FV-FM8b's) will be queued for account 3
+by LANE LEDGER: re-tag to account 4 and spawn. antt-linhares-chave wait-only: LANE FAMILY-A2h asked, default WAIT-PASS-6 at 12:30.
