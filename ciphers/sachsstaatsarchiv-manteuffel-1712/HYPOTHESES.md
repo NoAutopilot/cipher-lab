@@ -217,3 +217,15 @@ sur ses gardes'); 66 = a in 'la Po[66]te a craindre' where sense needs r (worker
 229 glossed 's' in both blind passes, most likely 29 (= s) with a struck 2. r01 (8 codes after 'negociation secrete de') and r02
 (3 codes, subject of "m'en parla") decode to no French under the table: probably names spelt in letters or a nomenclator outside
 key.tsv. Test: two further blind gloss passes at 3x on r07 under a PREREG amendment (would score 66, 20, 120, 26 against a gloss).
+
+### MANT-R07 (9 Oct 2026, LANE FAMILY-A2f account 2): 0136 r07 + r08 gloss read blind, PREREG f0136_09/PREREG-MANT-0136-A1.md (committed 978bf33fc before scoring)
+
+| date / job | hypothesis and data | control | target | result |
+|---|---|---|---|---|
+| 9 Oct 2026 MANT-R07 (a)-A1, blind gloss pass A1A | f0136_09/gloss_gate.py --gloss gloss_A1A.tsv: key.tsv vs the r07 + r08 gloss, 2 spans, 33 tokens, 32 keyed | key values permuted over codes, 1000 draws, seed 8: mean 4.19, p95 7, p99 8, max 11 | S 22/32 (0.688) | **PASS** |
+| 9 Oct 2026 MANT-R07 (a)-A1, blind gloss pass A1B | same, gloss_A1B.tsv | mean 4.32, p95 7, p99 8, max 11 | S 21/32 (0.656) | **PASS** |
+
+Rule-4 slots from both blind passes (M, not key.tsv changes): 20 glossed e (key b; 'craindr[e]'); 66 at 0136 r07.6 glossed r (key a;
+'Po[r]te') -- both readers also saw the numeral as 68 there, so the slot may be a transcription question first; 120 glossed with an
+unreadable curl (key d); 31 glossed n (key m) and 55 glossed h (key b|[a]) in r08 ('[c]omme [b]ien' expected; gloss 'o n m e h i e n');
+229 glossed 'e s' (a struck 2 + 29 = s). Earlier candidates 6 = r / 29 = i (r09) untouched by this job.

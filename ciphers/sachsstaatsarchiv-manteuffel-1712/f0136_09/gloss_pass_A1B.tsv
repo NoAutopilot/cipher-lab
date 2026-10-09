@@ -1,0 +1,45 @@
+# MANT-R07 blind Sonnet gloss pass A1B (crops_a1 in reversed order r08_3..r07_1; paths only, no key/ciphertext/notes), reader output verbatim
+crop	number	gloss_under	confidence
+a1_r08_3	2 (overstruck, with vertical stroke)	e	low
+a1_r08_3	29	s	low
+a1_r08_2	2 (partial at left edge)	?	low
+a1_r08_2	21	n	high
+a1_r08_2	100	d	high
+a1_r08_2	56	a	high
+a1_r08_2	67	u	high
+a1_r08_2	59	t	high
+a1_r08_2	27	r	high
+a1_r08_2	2 (overstruck)	e	low
+a1_r08_2	29	s	low
+a1_r08_1	6 (with a leading mark)	o	low
+a1_r08_1	31	n	low
+a1_r08_1	13	m	low
+a1_r08_1	35	e	low
+a1_r08_1	55	h	low
+a1_r08_1	9	i	low
+a1_r08_1	2	e	low
+a1_r08_1	21	n	low
+a1_r07_3	46	i	high
+a1_r07_3	14	?	low
+a1_r07_3	120	?	low
+a1_r07_3	26	r	high
+a1_r07_3	40	e	high
+a1_r07_3	170	-	low
+a1_r07_3	30	c	high
+a1_r07_2	8 (partial at left edge)	-	low
+a1_r07_2	28	t	high
+a1_r07_2	35	e	high
+a1_r07_2	50	a	high
+a1_r07_2	15	c	high
+a1_r07_2	27	r	high
+a1_r07_2	66	a	high
+a1_r07_2	46	i	high
+a1_r07_2	14	u	low
+a1_r07_1	6	-	high
+a1_r07_1	51	-	high
+a1_r07_1	79	-	high
+a1_r07_1	34	?	low
+a1_r07_1	22	o	high
+a1_r07_1	68	r	high
+a1_r07_1	28	t	high
+# notes: In r08_3 the right-hand part is main-text prose ("aurroit traison d'"), not cipher. The overstruck "2/29" is ambiguous (one number or two). Several numbers (100, 120 and 170) could also be read as other values.

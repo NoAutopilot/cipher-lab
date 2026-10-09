@@ -1,0 +1,47 @@
+# MANT-R07 blind Sonnet gloss pass A1A (crops_a1 in order r07_1..r08_3; paths only, no key/ciphertext/notes), reader output verbatim
+crop	number	gloss_under	confidence
+r07_1	6	-	high
+r07_1	57	-	high
+r07_1	79	-	high
+r07_1	34	? (tiny mark under/after)	low
+r07_1	22	o	high
+r07_1	68	r	high
+r07_1	28	t	high
+r07_1	(partial 9 at right edge)	-	low
+r07_2	(partial 28 at left edge)	-	low
+r07_2	28	t	high
+r07_2	35	e	high
+r07_2	50	a	high
+r07_2	15	c	low
+r07_2	27	r	high
+r07_2	66	a	high
+r07_2	46	i	high
+r07_2	14	n	low
+r07_3	46	i	low
+r07_3	14	? (tiny mark)	low
+r07_3	120 (may be 170)	? (curl mark)	low
+r07_3	26	r	low
+r07_3	20 (may be 40)	e	low
+r07_3	170 (may be 120 or "vyp")	-	low
+r07_3	30	c	low
+r08_1	16 (may be 6 with flourish)	o (left of the number)	low
+r08_1	31	n	low
+r08_1	13	m	low
+r08_1	35	e	low
+r08_1	55	h (could be k)	low
+r08_1	9	i	low
+r08_1	2	e	low
+r08_1	21	n	low
+r08_2	2	e	low
+r08_2	21	n	high
+r08_2	100	d	high
+r08_2	56	a	high
+r08_2	67	u	low
+r08_2	59	t	high
+r08_2	27	r	high
+r08_2	2 (struck through)	e	low
+r08_2	29	s	low
+r08_3	2 (struck through)	e	low
+r08_3	29	s	low
+r08_3	(no more numbers; main line continues in plain French script: "au roit traison d'")	-	high
+# notes: The small glosses are very faint, and the 34, 14, 120 and 170 positions hold unreadable marks. On r08_2 and r08_3 the "2" before 29 is struck through with a vertical stroke; the line turns into plain French at the right end of r08_3.
