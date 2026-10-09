@@ -132,7 +132,7 @@ T130	c0494L_L14	35	35	35	high	agree
 T131	c0494L_L14	30	30	30	high	agree
 T132	c0494L_L14	22	22	22	high	agree
 T133	c0494L_L14	14	14	14	high	agree
-T134	c0494L_L15	54?	54	54	high	
+T134	c0494L_L15	54?	54	59	med	V-MANTC + MANT-FIX eye (9 Oct 2026): closed-loop 9, not the 4 of T151; passes 54/54?; was 54
 T135	c0494L_L15	10	10	10	high	agree
 T136	c0494L_L15	21	21	21	high	agree
 T137	c0494L_L15	28	28	28	high	agree
