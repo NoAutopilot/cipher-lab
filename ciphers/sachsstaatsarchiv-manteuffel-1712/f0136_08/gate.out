@@ -1,0 +1,35 @@
+key: key.tsv; spans 19
+== L (gloss pass left page): spans 6; code tokens 19; keyed 19
+S = 17/19 keyed (0.895); control (1000 permutations, seed 136): mean 1.60, p95 4, p99 5, max 6; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== R (gloss pass right page): spans 13; code tokens 39; keyed 36
+S = 22/36 keyed (0.611); control (1000 permutations, seed 136): mean 3.61, p95 7, p99 9, max 12; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== pooled (reported): spans 19; code tokens 58; keyed 55
+S = 39/55 keyed (0.709); control (1000 permutations, seed 136): mean 5.21, p95 10, p99 12, max 15; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+G01a	L	mant	0/1	160:miss:ant
+G01b	L	blaff.	2/2	55:match:b 12:match:l
+G01c	L	Kraut	5/5	11:match:k 27:match:r 66:match:a 6:match:u 28:match:t
+G02	L	Gr.	2/2	7:match:g 60:match:r
+G03	L	Bf	1/2	55:match:b 12:miss:f
+G04	L	Hoefgen	7/7	8:match:h 16:match:o 35:match:e 1:match:f 7:match:g 10:match:e 21:match:n
+G05	R	Fr. d'Anhalt	7/8	283:miss:fr 100:match:d 66:match:a 14:match:n 38:match:h 50:match:a 44:match:l 52:match:t
+G06	R	la marquaue	6/10	110:match:la 43:match:m 66:match:a 60:match:r 48:miss:q 26:miss:u 25:match:a 68:miss:u 2:match:e 199:null:
+G07	R	blaff.	2/2	55:match:b 12:match:l
+G08	R	le M:	1/2	110:miss:le 43:match:m
+G09a	R	la m.	2/2	110:match:la 43:match:m
+G09b	R	Zinne	0/2	103:miss:zi 283:miss:nne
+G10	R	la	1/2	110:match:la 43:null:
+G11	R	bl.	2/2	55:match:b 12:match:l
+G12	R	Kagge	0/1	260:miss:gge
+G13	R	maget Flyn	1/4	55:match:a 12:miss:g 160:miss:etf 254:miss:lyn
+G14	R	myrt	0/1	160:miss:yrt
+G15	R	Rhw	0/2	55:miss:r 12:miss:hw
+G16	R	Haer	0/1	254:miss:aer
+
+distinct codes: 34; matched on every instance: 21
+unkeyed codes and their slots: 199=0; 254=lyn,aer
+keyed codes with a non-match slot: 12(l)=miss:f,miss:g,miss:hw; 26(r)=miss:u; 43(m)=null:; 48(g)=miss:q; 55(b|[a])=miss:r; 68(v)=miss:u; 103(le|la)=miss:zi; 110(la)=miss:le; 160(Manteuffel)=miss:ant,miss:etf,miss:yrt; 260(Kameke)=miss:gge; 283(prince)=miss:fr,miss:nne

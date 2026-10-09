@@ -1,0 +1,22 @@
+key: key.tsv; spans 6
+== L (gloss pass left page): spans 2; code tokens 4; keyed 4
+S = 4/4 keyed (1.000); control (1000 permutations, seed 136): mean 0.63, p95 2, p99 2, max 4; control >= real 1/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== R (gloss pass right page): spans 4; code tokens 16; keyed 16
+S = 16/16 keyed (1.000); control (1000 permutations, seed 136): mean 2.54, p95 5, p99 6, max 8; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== pooled (reported): spans 6; code tokens 20; keyed 20
+S = 20/20 keyed (1.000); control (1000 permutations, seed 136): mean 3.17, p95 6, p99 8, max 10; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+P01	L	Grumbkow	2/2	7:match:g 60:match:r
+P02	L	Blaspil	2/2	55:match:a 12:match:l
+P03	R	Prince d'Anhalt	8/8	283:match:prince 100:match:d 66:match:a 14:match:n 38:match:h 50:match:a 44:match:l 52:match:t
+P04	R	Blaspil	2/2	55:match:a 12:match:l
+P05	R	Kameke le Grand-Maitre	5/5	260:match:kameke 103:match:le 37:match:g 60:match:r 43:match:m
+P06	R	Kameke	1/1	260:match:kameke
+
+distinct codes: 16; matched on every instance: 16
+unkeyed codes and their slots: 
+keyed codes with a non-match slot: 

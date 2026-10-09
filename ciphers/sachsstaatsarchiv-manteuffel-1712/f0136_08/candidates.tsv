@@ -1,0 +1,11 @@
+code	n_on_0136	slots (gloss pass / print / worker eye, eye never scored)	key.tsv	status
+254	2	R10 under gloss 'maget Flyn' (joined span, unplaced); R13 under gloss 'Haer?'; worker eye reads the note 'Ilgen' over both; not in the BO I quotation (elided)	absent	held (one leaf, gloss pass did not read the name; both passes read 259, eye y-shaped 4 = 254 low); candidate Ilgen M, never key.tsv
+199	1	R02 run tail after 110.43.66.60.48.26.25.68.2 (la m a r g r a v e) under gloss 'la marquaue?'; no gloss letter left for it (null)	absent	held, one instance (y-tailed 9s; 144 not excluded)
+160	4	L01 gloss 'mant', R10 (joined), R11 gloss 'myrt?'; key long form Manteuffel	Manteuffel C	agrees by abbreviation only (the statistic scores the long form as a miss, as 150 on 0474); no change
+260	2	R08 print 'Kameke le Grand-Maitre', R09 print 'Kameke', gloss pass 'Kagge?'	Kameke M	print agrees 2/2 (gate c PASS); second witness reported, key grade unchanged (no key edit in this job)
+266	1	R04, gloss pass NONE (worker eye sees 'Hannovre' above); not in the print	Hannover M	unscored, eye only; no change
+103	2	R08 print 'le' (matched); R05 103.283 under gloss 'Zinne?' (worker eye 'a 2nnie'/'la Princesse'?, unread)	le|la M	print agrees 1/1; R05 slot unread
+283	2	R01 print 'Prince' (matched), gloss 'Fr.' (miss, gloss pass read Pr as Fr); R05 unread	prince C	print agrees
+110	5	R02 'la' (matched), R05/R06 'la' (matched), R03b gloss 'le M:' (miss: gloss le vs key la)	la C	rule-4 note: one 'le' slot by the gloss pass (worker eye also 'le M:'); logged, key unchanged
+48	1	R02 at 'q' of gloss-pass 'marquaue' (eye reads the note 'la Margrave', g)	g C	gloss-pass misreading most likely; not a conflict on this evidence
+55	7	matched b at 6 slots (gloss), a at 2 (print 'Blaspil': b skipped); R12 under gloss 'Rhw?' (illegible)	b|[a] M	no conflict

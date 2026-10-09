@@ -1,0 +1,65 @@
+tokid	crop	page	pos	passA	passB	settled	conf	note
+T001	L01	L	0	160	160	160	high	agree
+T002	L01	L	1	55	55	55	high	agree
+T003	L01	L	2	12	12	12	high	agree
+T004	L01	L	3	11	11	11	high	agree
+T005	L01	L	4	27	27	27	high	agree
+T006	L01	L	5	66	66	66	high	agree
+T007	L01	L	6	6	6	6	high	agree
+T008	L01	L	7	28	28	28	high	A 28? B 28? (8|9); eye 28
+T009	L02	L	0	7	7	7	high	agree
+T010	L02	L	1	60	60	60	high	agree
+T011	L03	L	0	55	55	55	high	agree
+T012	L03	L	1	12	12	12	high	agree
+T013	L04	L	0	8	8	8	high	agree
+T014	L04	L	1	16	16	16	high	agree
+T015	L04	L	2	35	35	35	high	agree
+T016	L04	L	3	1	1	1	high	agree
+T017	L04	L	4	7	7	7	high	agree
+T018	L04	L	5	10	10	10	high	agree
+T019	L04	L	6	21	21	21	high	agree
+T020	R01	R	0	283	283	283	high	agree
+T021	R01	R	1	100	100	100	high	agree
+T022	R01	R	2	66	66	66	high	agree
+T023	R01	R	3	14	14	14	high	agree
+T024	R01	R	4	38	38	38	high	agree
+T025	R01	R	5	50	50	50	high	agree
+T026	R01	R	6	44	44	44	high	agree
+T027	R01	R	7	52	52	52	high	agree
+T028	R02	R	0	110	110	110	high	agree
+T029	R02	R	1	43	43	43	high	agree
+T030	R02	R	2	66	66	66	high	agree
+T031	R02	R	3	60	60	60	high	agree
+T032	R02	R	4	48	48	48	high	agree
+T033	R02	R	5	26	26	26	high	agree
+T034	R02	R	6	25	25	25	high	agree
+T035	R02	R	7	68	68	68	high	agree
+T036	R02	R	8	2	2	2	high	agree
+T037	R02	R	9	199	199	199	high	y-tailed 9s; A 199 B 199?; 144 not excluded
+T038	R03a	R	0	55	55	55	high	agree
+T039	R03a	R	1	12	12	12	high	agree
+T040	R03b	R	0	110	110	110	high	agree
+T041	R03b	R	1	43	43	43	high	agree
+T042	R04	R	0	266	266	266	high	B 266?; eye 266
+T043	R05	R	0	110	110	110	high	agree
+T044	R05	R	1	43	43	43	high	agree
+T045	R05	R	2	103	103	103	high	agree
+T046	R05	R	3	283	283	283	high	agree
+T047	R06	R	0	110	110	110	high	agree
+T048	R06	R	1	43	43	43	high	agree
+T049	R07	R	0	55	55	55	high	agree
+T050	R07	R	1	12	12	12	high	agree
+T051	R08	R	0	260	260	260	high	agree
+T052	R08	R	1	103	103	103	high	agree
+T053	R08	R	2	37	37	37	high	agree
+T054	R08	R	3	60	60	60	high	agree
+T055	R08	R	4	43	43	43	high	agree
+T056	R09	R	0	260	260	260	med	A 260? B 260?; eye 260, med
+T057	R10	R	0	55	55	55	high	agree
+T058	R10	R	1	12	12	12	high	agree
+T059	R10	R	2	100	100	160	med	A 100 B 100; eye 160 (the 6 as in 260 R08/R09), med
+T060	R10	R	3	259	259	254	low	A 259? B 259?; eye y-shaped 4 (V-MANTC: the y glyph = 4), low
+T061	R11	R	0	160	160	160	high	agree
+T062	R12	R	0	55	12	55	med	A 55? B (missed); eye 55, med
+T063	R12	R	1	12		12	med	passes 12/
+T064	R13	R	0	259	25	254	low	A 259? B 25?; eye y-shaped 4, low

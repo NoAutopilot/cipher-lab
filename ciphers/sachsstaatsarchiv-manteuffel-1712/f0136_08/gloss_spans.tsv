@@ -1,0 +1,20 @@
+span_id	page	crop	gloss	tokids	codes	note
+G01a	L	g0136L01_L01	mant	T001	160	gloss pass as written (? dropped); by position
+G01b	L	g0136L01_L01	blaff.	T002 T003	55 12	gloss pass as written (? dropped); by position
+G01c	L	g0136L01_L01	Kraut	T004 T005 T006 T007 T008	11 27 66 6 28	gloss pass as written (? dropped); by position
+G02	L	g0136L02_L01	Gr.	T009 T010	7 60	gloss pass as written (? dropped); by position
+G03	L	g0136L03_L01	Bf	T011 T012	55 12	pass 'Bf?'
+G04	L	g0136L04_L01	Hoefgen	T013 T014 T015 T016 T017 T018 T019	8 16 35 1 7 10 21	gloss pass as written (? dropped); by position
+G05	R	g0136R01_L01	Fr. d'Anhalt	T020 T021 T022 T023 T024 T025 T026 T027	283 100 66 14 38 50 44 52	
+G06	R	g0136R02_L01	la marquaue	T028 T029 T030 T031 T032 T033 T034 T035 T036 T037	110 43 66 60 48 26 25 68 2 199	gloss pass as written (? dropped); by position
+G07	R	g0136R03a_L01	blaff.	T038 T039	55 12	gloss pass as written (? dropped); by position
+G08	R	g0136R03b_L01	le M:	T040 T041	110 43	gloss pass as written (? dropped); by position
+G09a	R	g0136R05_L01	la m.	T043 T044	110 43	gloss pass as written (? dropped); by position
+G09b	R	g0136R05_L01	Zinne	T045 T046	103 283	gloss pass as written (? dropped); by position
+G10	R	g0136R06_L01	la	T047 T048	110 43	pass 'la | ?' (2 notes, 1 sub-run): joined, '?' note dropped
+G11	R	g0136R07_L01	bl.	T049 T050	55 12	gloss pass as written (? dropped); by position
+G12	R	g0136R09_L01	Kagge	T056	260	gloss pass as written (? dropped); by position
+G13	R	g0136R10_L01	maget Flyn	T057 T058 T059 T060	55 12 160 254	pass 'maget | Flyn?' (2 notes, 3 sub-runs 55.12 / 160 / 254): one span, joined
+G14	R	g0136R11_L01	myrt	T061	160	gloss pass as written (? dropped); by position
+G15	R	g0136R12_L01	Rhw	T062 T063	55 12	gloss pass as written (? dropped); by position
+G16	R	g0136R13_L01	Haer	T064	254	gloss pass as written (? dropped); by position
