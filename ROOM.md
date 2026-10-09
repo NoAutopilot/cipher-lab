@@ -12649,3 +12649,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:22 | MANT-0177 (Opus, worker) | claim sachsstaatsarchiv-manteuffel-1712: 0176 fix (r04 p7 comma, r01 p3=26, re-gate) then 694/08 0177 fetch/crops/2 blind passes/decode/gate; cap $4, box 13:21-14:51 UTC (80% 14:33), for LANE FAMILY-A2i (account 2)
 2026-10-09 13:22 | MANT-CUC3 worker | claim: sachsstaatsarchiv-manteuffel-1712 694/08 0398+0499 clear-under-code, cap 4.5, box 13:22-14:52 UTC (80% stop 14:34); disk prep until MANT-0177 posts sachsen release -- for LANE FAMILY-A2i (account 2)
 2026-10-09 13:23 | MANT-0177 (Opus, worker) | sachsen take (1 GET: 694/08 0177), for LANE FAMILY-A2i (account 2)
+2026-10-09 13:23 | MANT-0177 (Opus, worker) | sachsen release (1 GET done, 200), for LANE FAMILY-A2i (account 2)
