@@ -10508,9 +10508,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8b)'"
+        "AUDIT.md '## AUDIT (FV-FM8b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-19)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -10532,7 +10533,7 @@
       "depth_pct": 100.0,
       "title": "Eckert 1864 (Fort Monroe ledger): Gilmore, Newbern, via Fort Monroe to Maj. Eckert, 30 Sept 1864: yellow fever, operators sick, three men wanted or leave to close the offices (E280)",
       "line": "Read at grade H with War Department Cipher No. 1: on 30 Sept 1864 Gilmore at Newbern, through Fort Monroe, told Major Eckert that yellow fever was prevailing to an alarming extent, that the operator Waterhouse was sick at Newport Barracks, that Kent would stay only a few days, that Vanderhoef should be relieved and had been advised by the surgeon to go to Morehead for a change of air, and asked for three men or permission to close the offices. Plum, The Military Telegraph (1882) vol. 2 pp.33-35, describes these requests and their outcome but does not print this telegram; it was not located in the Official Records (ser. I vol. 42 pt 2, by phrase) or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 (weak): Plum II pp.33-35 gives the substance of Gilmore's requests for men and Eckert's order to close the lines, not this telegram; first audit only",
+      "gap": "N3 (weak), second audit concurs (AUD2-LEDGER-19, N2 rejected): Plum II pp.33-35 gives the substance of Gilmore's requests and Eckert's order to close the lines, not this telegram; Google Books and Grant Papers vol. 12 (snippet) searched",
       "completeness": "26 H of 26 code-word groups",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.241, pointer 5785, E280"
@@ -10549,9 +10550,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8b)'"
+        "AUDIT.md '## AUDIT (FV-FM8b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-19)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -10573,7 +10575,7 @@
       "depth_pct": 100.0,
       "title": "Eckert 1864 (Fort Monroe ledger): T. T. Eckert to Geo. D. Sheldon, Fort Monroe, 27 May 1864: detail with axes to cut poles, Gloucester-West Point line, Bickford to build toward White House (E281)",
       "line": "Read at grade H with Cipher No. 1: on 27 May 1864 Major Eckert told Sheldon at Fort Monroe to get a detail of at least thirty men with axes to cut poles for a telegraph line from Gloucester to West Point, said that Bickford would leave Port Royal on the Rappahannock with twelve men next morning to build from West Point towards White House on the railroad, and asked whether Sheldon could lay cables at Gloucester and West Point. Sheldon's reply of 28 May is printed in the Official Records (ser. I vol. 36 pt 3, p.281); this telegram was not located there, in Plum's Military Telegraph or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "first audit only; Grant Papers vol. 10 snippet search only",
+      "gap": "two audits; Grant Papers vol. 10 snippet search only (no page read); Google Books searched",
       "completeness": "21 H of 21 code-word groups",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.162, pointer 5706, E281"
@@ -10590,9 +10592,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8b)'"
+        "AUDIT.md '## AUDIT (FV-FM8b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-19)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -10609,13 +10612,13 @@
       "unresolved_spans": "2 (tulip M; sharpes I = Gap?)",
       "depth_unread": {
         "names_codes": "0",
-        "other": "2"
+        "other": "1"
       },
-      "depth_pct": 90.9,
+      "depth_pct": 95.5,
       "title": "Eckert 1864 (Fort Monroe ledger): D. D. Porter, Portsmouth, via Fort Monroe to Cdr. W. A. Parker, Onondaga, 7 Dec 1864: two gunboats between White Shoal light and Point of Shoals (E283)",
-      "line": "Read at grade H with Cipher No. 1: on 7 Dec 1864 Admiral Porter, at Portsmouth, told Commander Parker of the Onondaga to send two gunboats at once to cruise between White Shoal light-house and Point of Shoals night and day, to keep rebel boats off, tow off vessels anchored near shore and hold the men in any boat found in the river as prisoners. Porter's written instructions of the same day (Official Records of the Union and Confederate Navies, ser. I vol. 11, pp.153-154: 'I telegraphed you to send two vessels there at once') and Parker's report of 11 Dec (p.188) refer to this telegram; its text was not located there or in the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3: sender's and recipient's printed letters (ORN I/11 pp.153-154, p.188) refer to this telegram but do not print it; first audit only",
-      "completeness": "20 H of 22 code-word groups (tulip M, sharpes I)",
+      "line": "Read at grade H with Cipher No. 1: on 7 Dec 1864 Admiral Porter, at Portsmouth, told Commander Parker of the Onondaga, at Dutch Gap, to send two gunboats at once to cruise between White Shoal light-house and Point of Shoals night and day, to keep rebel boats off, tow off vessels anchored near shore and hold the men in any boat found in the river as prisoners. Porter's written instructions of the same day (Official Records of the Union and Confederate Navies, ser. I vol. 11, pp.153-154: 'I telegraphed you to send two vessels there at once') and Parker's report of 11 Dec (p.188) refer to this telegram; its text was not located there or in the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3, second audit concurs (AUD2-LEDGER-19, N2 rejected): ORN I/11 pp.153-154, p.188 refer to this telegram and paraphrase its order but do not print it; Sharpes = [Gap] H (key row Sharper), FIX-FM8 note owed",
+      "completeness": "21 H of 22 code-word groups (tulip M; Sharpes = Gap H, AUD2-LEDGER-19)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.275, pointer 5819, E283"
       ],
@@ -10625,15 +10628,16 @@
       ],
       "depth_sentence": "On 7 Dec 1864 Porter had Parker post two gunboats between White Shoal light and Point of Shoals to stop rebel boats on the James.",
       "depth_check": "external (non-statistical): ORN I/11 pp.153-154 Porter to Parker 7 Dec 1864 ('I telegraphed you to send two vessels there at once', White Shoal and Point of Shoals light-houses); p.188 Parker 11 Dec (Hunchback and Daylight 'cruising between White Shoal light-house and Point of Shoals, as you had directed in a former telegram'); code clause: Plank Sharons = 2 Gunboats, Niagara = Porter passim",
-      "depth_note": "20 H of 22 code-word groups (tulip M, sharpes I)"
+      "depth_note": "21 H of 22 code-word groups (tulip M; Sharpes = Gap H, AUD2-LEDGER-19)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8b)'"
+        "AUDIT.md '## AUDIT (FV-FM8b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-19)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -10655,7 +10659,7 @@
       "depth_pct": 91.7,
       "title": "Eckert 1864 (Fort Monroe ledger): Lt. Col. O. E. Babcock, Fort Monroe, to Lt. Col. T. S. Bowers, City Point, 4 Nov 1864: authority to take Col. Mulford's boats, Lizzie Baker the only boat reported (E284)",
       "line": "Read at grade H with Cipher No. 1: on 4 Nov 1864 Lt. Col. Orville E. Babcock at Fort Monroe told Lt. Col. T. S. Bowers at City Point that the troops could not be transferred there within 48 hours unless he were authorized to take enough of Colonel Mulford's boats as they were, the Lizzie Baker being the only boat yet reported, and asked by telegraph whether to take them. Babcock's other telegrams to Bowers of 3 and 4 Nov are printed in the Official Records (ser. I vol. 42 pt 3, pp.492, 506); this one was not located there, in the Grant Papers vol. 12 (snippet search) or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "first audit only; correspondents corrected from the FM-R5b header (Sheldon to Beckwith); time word Nelly (8.30 PM) conflicts with the ledger order before the printed 6.30 p.m. message",
+      "gap": "two audits; Grant Papers vol. 12 snippet search only, page read for 3-5 Nov owed (HTRC down, HathiTrust from the owner's desk); Google Books not run (503); time word Nelly (8.30 PM) conflicts with the ledger order before the printed 6.30 p.m. message",
       "completeness": "11 H of 12 code-word groups (tulip M)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.260, pointer 5804, E284"
@@ -10754,9 +10758,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM8b)'"
+        "AUDIT.md '## AUDIT (FV-FM8b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-19)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM8b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -10777,8 +10782,8 @@
       },
       "depth_pct": 100.0,
       "title": "Eckert 1864 (Fort Monroe ledger): D. D. Porter via Fort Monroe to the Secretary of the Navy, 27 Oct 1864: Tallapoosa, Yantic, Maumee steering for Halifax before the Tallahassee (E285)",
-      "line": "Read at grade H with Cipher No. 1: on 27 Oct 1864 Admiral Porter, through Fort Monroe, reported to the Secretary of the Navy that the Tallapoosa was near Montauk Point, having run the coast 20 miles off shore, the Yantic in the latitude of New York 40 miles off shore and the Maumee in the same latitude 45 or 50 miles off, all steering for Halifax with orders to get there before the Tallahassee. Porter's orders to the three ships of 26 Oct are printed in the Official Records of the Union and Confederate Navies (ser. I vol. 10, pp.603-604); this telegram was not located there, in vol. 11 or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "first audit only; Welles's diary not searched",
+      "line": "Read at grade H with Cipher No. 1: on 27 Oct 1864 Admiral Porter, through Fort Monroe, reported to the Secretary of the Navy that the Tallapoosa was near Montauk Point, having run the coast 20 miles off shore, the Yantic in the latitude of New York 40 miles off shore and the Maumee in the same latitude 45 or 50 miles off, all steering for Halifax with orders to get there before the Tallahassee. Porter's orders to the three ships of 26 Oct are printed in the Official Records of the Union and Confederate Navies (ser. I vol. 10, pp.603-604); Porter's other telegram to Welles that day (the Hope prisoners) is printed in ser. I vol. 10, pp.593-594; this telegram was not located there, in vol. 11, Welles's diary or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "two audits; Porter's other 27 Oct telegram to Welles (the Hope prisoners) is printed ORN I/10 pp.593-594, this one not; Welles's diary has no entry 16 Oct-24 Nov 1864; Google Books not run (503)",
       "completeness": "21 H of 21 code-word groups",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.254, pointer 5798, E285"

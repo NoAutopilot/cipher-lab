@@ -10,7 +10,7 @@ THE ITEM
 - Context we already know: Porter's written instructions to Parker of the same day (Official Records of the Union and Confederate Navies ser. I vol. 11 pp.153-154, Gosport Navy Yard, 7 Dec 1864) say "I telegraphed you to send two vessels there at once" and order care of the White Shoal and Point of Shoals light-houses; Parker's report of 11 Dec (p.188) found the Hunchback and Daylight "cruising between White Shoal light-house and Point of Shoals, as you had directed in a former telegram". Neither prints the telegram itself. We want to know whether its text is printed anywhere.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
-  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM8b)").
+  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (sections "AUDIT (FV-FM8b)" and "AUDIT 2 (AUD2-LEDGER-19)").
 
 WHERE WE HAVE LOOKED: ORN ser. I vols. 9-11 (by phrase, and the 7-11 Dec pages of vol. 11); Official Records ser. I vol. 42 pt 3; Butler's Private and Official Correspondence vol. V; the Huntington's CONTENTdm full-text search.
 

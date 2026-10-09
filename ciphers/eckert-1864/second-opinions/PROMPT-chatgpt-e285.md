@@ -7,15 +7,15 @@ reading. Be adversarial: we would rather learn now that it is in print than clai
 THE ITEM
 - Source: Thomas T. Eckert Papers, Huntington Library, San Marino, mssEC 25 ("Ciphers Received and Sent", Fort Monroe) p.254 (digital pointer 5798), third entry on the page, E285, headed "Ft Monroe Oct 27 / 64 / Maj. Eckert Washington", https://hdl.huntington.org/digital/collection/p16003coll11/id/5798. Read with War Department Cipher No. 1 (Huntington mssEC 41).
 - Reading: Rear-Admiral D. D. Porter, Hampton [Roads], via Fort Monroe (Sheldon) to Major Eckert for the [Secretary of the Navy], [Washington], 27 Oct 1864 {6.30 PM}: "Tallapoosa is now near Montauk Point, having run the coast along [20] [miles] off shore. Yantic is now [in the] latitude of [New York] steering [40] [miles] off shore. The Maumee is [in the] latitude of [New York] [45] or [50] [miles] off shore, all steering for Halifax with orders to get there before the Tallahassee. [Signed] [D. D. Porter]." Bracketed words are code words read from the period key; braces are time words.
-- Context we already know: Porter's orders of 26 Oct 1864 to Lt. Cdr. James Parker (Maumee), and of the same tenor to De Haven (Tallapoosa) and Harris (Yantic), are printed in Official Records of the Union and Confederate Navies ser. I vol. 10 pp.603-604 ("Keep 40 miles off the coast until you get up to the latitude of Boston, then proceed off the port of Halifax"). That is a different text; we want to know whether THIS telegram to Welles is printed.
+- Context we already know: Porter's orders of 26 Oct 1864 to Lt. Cdr. James Parker (Maumee), and of the same tenor to De Haven (Tallapoosa) and Harris (Yantic), are printed in Official Records of the Union and Confederate Navies ser. I vol. 10 pp.603-604 ("Keep 40 miles off the coast until you get up to the latitude of Boston, then proceed off the port of Halifax"). That is a different text; we want to know whether THIS telegram to Welles is printed. Porter's OTHER telegram to Welles of 27 Oct 1864 from Fortress Monroe (58 prisoners from the Hope claiming protection as foreign subjects) is printed in the same volume, pp.593-594; it is a different telegram, not this one.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
-  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-FM8b)").
+  https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (sections "AUDIT (FV-FM8b)" and "AUDIT 2 (AUD2-LEDGER-19)").
 
-WHERE WE HAVE LOOKED: ORN ser. I vols. 3, 10, 11 (by phrase: Montauk, Tallapoosa, Halifax); the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: ORN ser. I vols. 3, 10, 11 (by phrase: Montauk, Tallapoosa, Halifax; vol. 10 pp.593-607 read for every 27 Oct item); the Huntington's CONTENTdm full-text search; Welles's diary vol. 2 (it has no entry between 15 Oct and 25 Nov 1864).
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- Welles's diary for 27-28 Oct 1864; the Navy Department's received-telegram books (RG 45); New York press of late Oct 1864 on the Tallahassee chase; Google Books; HathiTrust.
+- The Navy Department's received-telegram books (RG 45); New York press of late Oct 1864 on the Tallahassee chase; Google Books; HathiTrust.
 
 
 HOW TO REPORT (this part is the same for every label)

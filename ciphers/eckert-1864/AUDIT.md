@@ -9674,3 +9674,92 @@ cattle+white house 5 **include 4676**, commissary+taylor 2 (5724, 4530 = Sherman
   plain name Webster for the signature word. The reader headers name the operators (Sheldon, Beckwith, Eckert) as correspondents for E278 and E286;
   the senders are Webster and Butler. Reading fixes (E278 Webster/Most, E288 John withdrawn and single Shall, E289 Witnesses, tulip M) are for
   FIX-FM8; reading.md and ciphertext.txt are not edited here.
+
+## AUDIT 2 (AUD2-LEDGER-19)
+
+Second verifier AUD2-LEDGER-19 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 12:02-12:22 UTC by
+`date -u`; a separate session and account from the reader FM-R5b and the first auditor FV-FM8b (both account 1); this session had not read or
+audited these entries before. Scope: **E280, E281, E283, E284, E285** (WORK-QUEUE AUD2-LEDGER-19). Nothing decoded beyond key look-ups in
+key.md. FV-FM8b's 24 CONTENTdm full-text queries (holder transcription, all pointers) and its OR/ORN/Plum phrase greps were not redone. Key
+source: `period`. Committed: this section, `fortmonroe/aud2_ledger19_search.py` + `.out`, prior-work.tsv rows, the propagation below; texts
+and the one page image in scratch only.
+
+### 1. Prior-work checks
+`prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=pointer <ptr>;date=...;sender=...;recipient=...' --step-type
+second-audit --offline` for 5785, 5706, 5819, 5804, 5798 (12:03 UTC): all five LEAD 1-own = FIX-FM7's target-level claim (10:49; names no unit,
+does not cover these items: CLEAR); 4-editions CLEAR on the cached OR volumes; 3-solver UNCHECKED-NET (unsolved-ciphers not cloned). 5798 also
+LEAD 4-editions in `officialrecordso0010unse` (ORN I/10): opened; the window is **ORN I/10 pp.593-594, Porter to Welles, Fortress Monroe,
+27 Oct 1864 (telegram): 58 prisoners from the Hope claim protection as foreign subjects**, and Welles's same-day reply. A different telegram
+from the same sender to the same recipient on the same day, not E285: it shows ORN prints Porter's 27 Oct telegrams to Welles, and E285 is not
+among them (pp.593-607 read for every 27 Oct item: the Hope, the Halifax consul's report, York River guard, Vanderbilt; no Tallapoosa/Maumee/
+Yantic position report).
+
+### 2. New searches (the queue row's named gaps)
+- **Welles's diary** (vol. 2, 1911, `diaryofgideonwel02welluoft`, djvu text, fetched once to scratch): **no entries between 15 Oct and 25 Nov
+  1864** (the 25 Nov entry opens "For some weeks I have been unable to note down occurrences daily"); the 5-9 Dec entries name neither Porter,
+  Parker, the Onondaga nor the James. Nothing for E285 or E283; the 25 Nov entry mentions Eckert only as the operator who served supper on
+  election night.
+- **Grant Papers vol. 12** (E284; vol. 10 for E281): page-by-page reading was **not reachable** this session: the IA item is lending-only
+  (page images obfuscated to scripts, CLAUDE.md access playbook), HathiTrust is search-only and Cloudflare-blocked from the cloud, and the HTRC
+  Extracted Features API (per-page token counts for `mdp.39015074927412` and `wu.89062231733`, vol. 12, located through the HathiTrust
+  bibliographic API, LCCN 67010725) answered `PrimaryUnavailableException` twice (12:0x and 12:10 UTC); host stopped. IA be-api full-text
+  (snippet only, 11 queries, `aud2_ledger19_search.out`): vol. 12 `Lizzie` 0, `"only boat"` 0, `"forty-eight hours" Babcock` 0, `"48 hours"
+  Fort Monroe` 0, `"authority to take"` 1 (other), `Craney Island` 1 (the 4 Nov 6.30 p.m. Babcock telegram = 5805, printed OR I/42 pt 3 p.506,
+  and index 378n), `Beckwith Babcock` 1 (index and other), `"yellow fever" New Berne` 0; FV-FM8b's run also returned the note "On Oct. 17, Lt.
+  Col. John E. Mulford, asst. agent for exchange" (vol. 12), which supports E284's "[Colonel] Mulford". Vol. 10: `Eckert Sheldon` (index; Eckert
+  to USG 14 May), `"cut poles"` 0, `Gloucester telegraph line` (Gloucester Point camp of instruction, other). **E284 and E281 not located by
+  snippet; a page read of Grant Papers vol. 12 around its p.378 note (3-5 Nov) is still owed** (owner's desk: HathiTrust full-text search of
+  `mdp.39015074927412` for "Lizzie Baker", "Mulford's boats").
+- **Google Books API** (key, `country=US`; 10 requests): E280 `"Newport Barracks" "yellow fever" Waterhouse` -> Plum, *Military Telegraph*
+  only (the passage FV-FM8b cites); `Vanderhoef "yellow fever" Newbern 1864` -> *Letters from a North Carolina Unionist* (2001), NO_PAGES, index
+  "Vanderhoef, T. H., 155, 156n, 165" and "Yellow fever: in Beaufort" (a lead, unchecked; the index initials differ from the operator Robert B.
+  Vanderhoef); `"close the offices" Gilmore telegraph Newbern` -> *The Telegrapher* 1865 (Snow resigned as cipher operator at Newbern; other);
+  E281 `Bickford "Port Royal" "West Point" telegraph 1864 Eckert` 0, `"cut poles" Gloucester "West Point" telegraph` noise (OR 1889 "West Point
+  ... Gloucester", 1862 context); E283 `"White Shoal" "Point of Shoals" Porter 1864` -> ORN I/11 p.188 only (Parker's "as you had directed in a
+  former telegram"), `"hold the persons in them as prisoners"` noise only. **E284 and E285 Google Books queries not run**: 503 twice on the
+  first E284 query, host stopped (the good-citizen rule).
+- **Image, second eye** (hdl token 12:07-12:08, one IIIF page 5819 at 2400 px to scratch, line crops by `tools/iiif_lines.py --image`,
+  `--lines-per-crop 3`): the E283 header line reads "Ports mouth Libby for polkaer Parker onondaga Dutch **Sharpes** Bergen" (the last
+  letters of the doubtful word are -es, the same s as in "Sharons" on the next line); "Zebra send at once plank Sharons down to white shoal /
+  Stagger house & to crews between there & vernon of" as transcribed.
+- Requests by host: hdl.huntington.org 1; archive.org 2 (advancedsearch, one djvu text); be-api 11; HTRC 2 (both failed); HathiTrust
+  bibliographic API 5; Open Library 3; Google Books 10 (two 503).
+
+### 3. Key look-ups (independent)
+Every code word of the five entries looked up again in key.md: all as FV-FM8b, H, including its four plain-English corrections (E281 axis =
+Missouri and hope = 19 do not fit; E283 anchor = Donelson and persons = 5 do not fit), paulding = Convoy (H), wrangle = Telegraph (E280),
+youth = Signature (E284), France and Frog both = New York, Leg = 40 and Plaster = 5 (E285 "leg plaster" = [45]), Lampoon Paddle = [48] (E284).
+**One correction:** key.md has `| Sharper | Gap | H | p.21 l.4 (338) L |` (used elsewhere in the ledger: "between Grub and Chester sharper",
+ciphertext.txt l.589 = Chester Gap). FV-FM8b's "sharpes is not a key row ... -> I" is wrong: "Dutch Sharpes" is Dutch **[Gap]** from the key
+row Sharper, written with a final s (image above); the place is where the Onondaga lay (Porter, ORN I/11 pp.153-154, "vessels now at Dutch
+Gap"). Graded **H as a spelling variant** (the Knocks = Knox precedent), not I. E283 becomes **H 21, M 1 (tulip) of 22**, depth_pct 95.5.
+
+### 4. Verdict (key `period` for all five)
+- **E280: N3 (weak) holds; N2 rejected. D3 kept** (H 26 of 26). N2 needs this telegram's plaintext known elsewhere; Plum II pp.33-35
+  narrates Gilmore's repeated requests and Eckert's order to close the lines without giving the text, and no other print was found (Google
+  Books on three phrase sets, Grant Papers vol. 12 by snippet). Safe sentence: FV-FM8b's, with "Google Books (searched 9 Oct 2026)" added among
+  the places not located. Unsafe: any novelty word; "Plum prints the telegram".
+- **E281: N3 holds. D3 kept** (H 21 of 21). Safe sentence: FV-FM8b's, with "the Grant Papers vol. 10 full-text search and Google Books" added.
+- **E283: N3 holds; N2 rejected. D3 kept, depth_pct 95.5** (H 21 of 22, tulip M; Sharpes = [Gap] H). ORN I/11 pp.153-154 and p.188 refer to
+  this telegram and paraphrase its order (two vessels at once, White Shoal and Point of Shoals); its words are not printed there, so the
+  plaintext is not "known elsewhere" in rule 10's sense. Safe sentence: FV-FM8b's, with "on 7 Dec 1864 Admiral Porter, at Portsmouth, told
+  Commander Parker of the Onondaga, at Dutch Gap," and "Welles's diary and Google Books" added among the places not located. Unsafe: "the
+  printed instructions give its text"; any novelty word.
+- **E284: N3 holds. D3 kept** (H 11 of 12, tulip M). External check strengthened slightly: the Grant Papers vol. 12 note names Lt. Col. John E.
+  Mulford, assistant agent for exchange, in Oct 1864. The time-word conflict (Nelly = 8.30 PM against ledger order before the printed 6.30 p.m.
+  5805) stays recorded, not settled; the entry before E284 on its page (5804/0, City Point, received 3 Nov) is probably Bowers's printed 3 Nov
+  9 p.m. "Provide transportation at Fort Monroe for the infantry" (not decoded here; a lead for a reader), so E284's "whether I shall take the
+  boats" follows that order rather than being answered by it. Safe sentence: FV-FM8b's, with "the Grant Papers vol. 12 (snippet search only;
+  a page read is owed)" kept as written. Unsafe: "not in the Grant Papers" without "snippet search"; any novelty word.
+- **E285: N3 holds. D3 kept** (H 21 of 21). Strengthened negative: ORN I/10 pp.593-607 prints Porter's other telegram to Welles of 27 Oct
+  (the Hope prisoners) and the day's orders, not this one; Welles's diary has no entry for 16 Oct-24 Nov 1864. Safe sentence: FV-FM8b's, with
+  "Porter's other telegram to Welles that day (the Hope prisoners) is printed in ser. I vol. 10, pp.593-594; this telegram was not located
+  there, in vol. 11, Welles's diary or the Huntington's full-text search (searched 9 Oct 2026)". Unsafe: any novelty word; "Google Books
+  searched" (it was not, for E285).
+- Propagated: status.json rows (audit_refs, audit_status "two audits", gap; E283 completeness/depth_pct/depth_note); SO-ECKERT-E283 and
+  -E285 prompts (Dutch Gap; the printed sibling of 27 Oct, so a second opinion does not "find" it as prior print of E285). **For FIX-FM8
+  (decode.py entry note, rule 7; not applied here):** E283 `variant: sharpes=Sharper` (Dutch [Gap], H), replacing FV-FM8b's "sharpes I".
+- Postmortem: FV-FM8b's readings, classes and depths hold. One error: the Sharper = Gap key row exists (a prefix grep of key.md finds it), so
+  E283's Dutch Gap is H, not I. Still open: Grant Papers vol. 12 page read for 3-5 Nov (E284; HathiTrust search from the owner's desk or a
+  borrow read by a person); Google Books for E284 and E285 (host 503); *Letters from a North Carolina Unionist* pp.155-165 (E280 context lead);
+  the press of the day (not searched; none is a press telegram).
