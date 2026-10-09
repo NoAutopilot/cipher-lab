@@ -152,7 +152,7 @@ For each flagged digit token it lists every way the digit string cuts into two o
 (exact strings, so '05' is not '5'; parts drawn from the confident range when there is one) with their values.
 Output: a compact table per job and a count line; --split-tsv FILE also writes target, job, key_range, token, n, status,
 positions (line:pos), exceptions (occurrences overridden by exceptions.tsv), splits, decoded. Exit 0 whatever it
-finds (a report, not a gate); exit 2 only if the target cannot be loaded. It writes no reading and ignores --check.
+finds (a report, not a gate); exit 2 only if the target cannot be loaded. It writes no reading; with --check the staleness test runs instead of the report (TOOL-CHK, 9 Oct 2026).
 A split is a candidate for an image check, never a correction by itself: 26 = i at Mercy r18 and r24 was also two
 digits (2 6, o s), in range and keyed, which only sense and the image could show.
 
@@ -2021,6 +2021,19 @@ def main(argv=None):
     ap.add_argument('--cce-seed', type=int, default=0, help='with --error-matrix: null seed (0)')
     ap.add_argument('--error-tsv', help='with --error-matrix: write every examined position to this TSV')
     a = ap.parse_args(argv)
+    report_modes = [n for n, v in (('--aliases', a.aliases), ('--alias-scan', a.alias_scan), ('--lookalike', a.lookalike),
+                                   ('--error-matrix', a.error_matrix), ('--special-scan', a.special_scan),
+                                   ('--try', a.try_), ('--avalanche', a.avalanche), ('--consistency', a.consistency),
+                                   ('--split-check', a.split_check)) if v]
+    if a.check and report_modes:
+        # TOOL-CHK (9 Oct 2026): a report mode used to return before the staleness test, so --check exited 0 whatever
+        # the committed reading said (V-MANTC: key.tsv grade-only drift, C 202 vs 199). --check now wins: it runs
+        # the staleness test and nothing else.
+        print(f'--check with {", ".join(report_modes)}: running the staleness test only (the report is not run)',
+              file=sys.stderr)
+        for k in ('aliases', 'alias_scan', 'lookalike', 'error_matrix', 'special_scan', 'try_', 'avalanche',
+                  'consistency', 'split_check'):
+            setattr(a, k, None if k not in ('avalanche', 'consistency', 'split_check') else False)
     if a.aliases or a.alias_scan:
         return alias_main(a)
     if a.lookalike:
