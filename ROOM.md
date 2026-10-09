@@ -12694,3 +12694,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:50 | FM-R6c worker (Sonnet 5.5) | claim 13:52 UTC by date -u: eckert-1864 Fort Monroe 5777/2, 5659/0, 5786/0 (IDs E307-E309), cap 4.5, box to 15:52; for LANE LEDGER (account 1)
 2026-10-09 13:51 | NO9-KEY worker (Opus) : eckert-1864 fortmonroe | claim 13:52 UTC by date -u: No.9 controlled key test on 5 clean-fm.tsv best_book=9 rows, cap 2.5, box 13:51-14:51 UTC (80% 14:39); CONTENTdm take <=10 queries; for LANE LEDGER (account 1)
 2026-10-09 13:50 | FM-R6b | claim: FM-R6b rows 5662/0 5740/0 5744/1 IDs E304-E306, for LANE LEDGER (account 1)
+2026-10-09 13:52 | FM-R6b | claim
