@@ -1,0 +1,696 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	CLEAR		H	depuis
+L01	2	CLEAR		L	se? ornate S/J ligature, could be a sign
+L01	3	sq		H	
+L01	4	0		H	
+L01	5	z		H	
+L01	6	m		M	ink blot over sign
+L01	7	4		H	
+L01	8	1		H	
+L01	9	.		H	
+L01	10	a		H	
+L01	11	c	a	M	
+L01	12	c		L	overlapping c
+L01	13	0		H	
+L01	14	4		H	
+L01	15	1		H	
+L01	16	sq		H	
+L01	17	X_DELTA		M	d/delta with looped top
+L01	18	v		H	
+L01	19	w		H	
+L01	20	X_VSTEM	t	M	vertical stroke ending in v
+L01	21	1		H	
+L01	22	X_DELTA		M	
+L01	23	4		M	4 with long stem
+L01	24	f		H	
+L01	25	sq		H	
+L01	26	3		H	
+L01	27	0'		H	
+L01	28	+		H	
+L01	29	v		H	
+L01	30	4		H	
+L01	31	1		H	
+L01	32	9		H	
+L01	33	m		H	
+L01	34	0		H	
+L01	35	sq		H	
+L01	36	x		M	
+L01	37	4		H	
+L01	38	y		H	
+L01	39	c		H	
+L01	40	m		H	
+L01	41	1		H	
+L01	42	4		H	
+L01	43	p		H	
+L01	44	0'		H	
+L01	45	X_4BAR	4	M	4 with crossbar (Ꝟ-like)
+L01	46	X_VSTEM	t	M	
+L01	47	3		H	
+L01	48	0		H	
+L01	49	1	L	M	foot at base
+L01	50	y		H	
+L01	51	m'		H	
+L01	52	w		H	
+L01	53	v		H	
+L01	54	4		H	
+L01	55	m		H	
+L01	56	3	m	L	
+L01	57	c		H	
+L01	58	0		H	
+L02	1	.		H	
+L02	2	1		H	
+L02	3	.		H	
+L02	4	X_4BAR	4	M	
+L02	5	sq		H	
+L02	6	y		H	
+L02	7	c		H	
+L02	8	m		H	
+L02	9	.		H	
+L02	10	1		H	
+L02	11	.		H	
+L02	12	a		H	
+L02	13	m		H	
+L02	14	X_8	9	M	figure-8 shape
+L02	15	X_DELTA		H	
+L02	16	.		H	
+L02	17	p		H	
+L02	18	4		H	
+L02	19	CLEAR		M	en
+L02	20	CLEAR		M	bonne
+L02	21	CLEAR		L	plaist
+L02	22	p		H	
+L02	23	1		M	
+L02	24	X_DELTA		H	
+L02	25	y		H	
+L02	26	m		H	
+L02	27	c		M	c with cedilla
+L02	28	a'	a	M	accent over a
+L02	29	X_4BAR	9	M	
+L02	30	1		H	
+L02	31	w		H	
+L02	32	.		H	
+L02	33	X_DELTA		H	
+L02	34	c		H	
+L02	35	y		H	
+L02	36	z		H	
+L02	37	m		H	
+L02	38	0		H	
+L02	39	z		H	
+L02	40	1		H	
+L02	41	f		H	
+L02	42	m		H	
+L02	43	p		H	
+L02	44	4		H	
+L02	45	L	1	M	
+L02	46	v		H	
+L02	47	L		M	
+L02	48	v		H	
+L02	49	L		M	V/L shaped
+L02	50	c		H	
+L02	51	4		M	Δ with stem
+L02	52	f		H	
+L02	53	m		H	
+L02	54	#		H	
+L02	55	v		H	
+L02	56	X_4BAR		H	
+L02	57	9		H	
+L02	58	1		H	
+L02	59	w		H	
+L03	1	a		H	
+L03	2	m		H	
+L03	3	L		H	
+L03	4	4		H	
+L03	5	X_4BAR		H	
+L03	6	0	o	M	
+L03	7	z'		H	
+L03	8	sq		H	
+L03	9	4		M	Δ with stem
+L03	10	3		H	
+L03	11	m		H	
+L03	12	p		H	
+L03	13	0		H	
+L03	14	f		H	
+L03	15	X_4BAR		H	
+L03	16	1		H	
+L03	17	.		H	
+L03	18	3		H	
+L03	19	0		H	
+L03	20	#		H	
+L03	21	1		H	
+L03	22	sq		H	
+L03	23	m		H	
+L03	24	1		H	
+L03	25	.		H	
+L03	26	X_DELTA		H	
+L03	27	4		H	
+L03	28	v		H	
+L03	29	#		H	
+L03	30	0		H	
+L03	31	X_COMMA		M	comma
+L03	32	4		H	
+L03	33	1		H	
+L03	34	.		H	
+L03	35	sq		H	
+L03	36	L		H	
+L03	37	0		H	
+L03	38	a		H	
+L03	39	w		H	
+L03	40	4		H	
+L03	41	0		H	
+L03	42	#		H	
+L03	43	x	T	L	roofed x
+L03	44	X_VSTEM		M	v with cross stroke
+L03	45	sq		H	
+L03	46	.		H	
+L03	47	m		H	
+L03	48	0		H	
+L03	49	4		H	
+L03	50	+		H	
+L03	51	0		H	
+L03	52	X_VSTEM		H	
+L03	53	.		H	
+L03	54	0		H	
+L03	55	.		H	
+L03	56	X_4BAR		H	
+L03	57	X_DELTA		H	
+L03	58	v		H	
+L03	59	c		H	
+L03	60	v		H	
+L03	61	L		H	
+L03	62	m		H	
+L03	63	CLEAR		M	samedy
+L04	1	CLEAR		H	faisant
+L04	2	#		H	
+L04	3	y		H	
+L04	4	m		H	
+L04	5	w		H	
+L04	6	+		H	
+L04	7	c		H	
+L04	8	4		H	
+L04	9	0		H	
+L04	10	m'	m	M	m underlined
+L04	11	4		H	
+L04	12	0		H	
+L04	13	m'	m	M	m underlined
+L04	14	c		H	
+L04	15	m		H	
+L04	16	L		H	
+L04	17	#		H	
+L04	18	m		H	
+L04	19	a		H	
+L04	20	m		H	
+L04	21	L		H	
+L04	22	+		H	
+L04	23	v		H	
+L04	24	4		H	
+L04	25	+		H	
+L04	26	y		H	
+L04	27	1		H	
+L04	28	m		H	
+L04	29	X_VSTEM		H	
+L04	30	c		H	
+L04	31	y		H	
+L04	32	m		H	
+L04	33	a		H	
+L04	34	0		H	
+L04	35	w		H	
+L04	36	4		H	
+L04	37	1		H	
+L04	38	c		H	
+L04	39	y		H	
+L04	40	p		H	
+L04	41	CLEAR		H	et
+L04	42	CLEAR		M	que
+L04	43	CLEAR		L	a
+L04	44	CLEAR		M	quil
+L04	45	CLEAR		M	avoit
+L04	46	CLEAR		M	faict
+L04	47	CLEAR		M	pour
+L05	1	CLEAR		H	le
+L05	2	CLEAR		H	regard
+L05	3	CLEAR		H	de
+L05	4	sq		H	
+L05	5	X_OCROSS	0'	M	
+L05	6	y		H	
+L05	7	L		H	
+L05	8	X_OCROSS		H	
+L05	9	sq		H	
+L05	10	0		H	
+L05	11	X_OCROSS		H	
+L05	12	.		H	
+L05	13	1		H	
+L05	14	.		H	
+L05	15	sq		H	
+L05	16	m		H	
+L05	17	y		H	
+L05	18	p		H	
+L05	19	X_VSTEM		H	
+L05	20	a		H	
+L05	21	m		H	
+L05	22	0		H	
+L05	23	sq		H	
+L05	24	z	L	L	
+L05	25	4		H	
+L05	26	1		H	
+L05	27	.		H	
+L05	28	w		H	
+L05	29	y		H	
+L05	30	L		H	
+L05	31	y		H	
+L05	32	L		H	
+L05	33	0	0'	M	dot above may be interlinear
+L05	34	m		H	
+L05	35	sq		H	
+L05	36	m	z	M	
+L05	37	a		H	
+L05	38	c		L	
+L05	39	y		H	
+L05	40	+		H	
+L05	41	a		H	
+L05	42	CLEAR		M	quils
+L05	43	CLEAR		L	eussent
+L05	44	.		H	
+L05	45	1		H	
+L05	46	.		H	
+L05	47	sq		H	
+L05	48	X_VSTEM		H	
+L05	49	9	p	M	9 with stem
+L05	50	t		M	cross with hooked tail
+L05	51	4		H	
+L05	52	v		H	
+L05	53	sq	p	L	square with stem
+L05	54	X_OCROSS		H	
+L05	55	.		H	
+L05	56	1		H	
+L05	57	.		H	
+L05	58	sq		H	
+L05	59	1	L	M	
+L05	60	#		H	
+L05	61	p		H	
+L06	1	CLEAR		L	se (ornate ligature)
+L06	2	CLEAR		H	luy
+L06	3	CLEAR		H	en
+L06	4	CLEAR		H	eust
+L06	5	CLEAR		M	esté
+L06	6	CLEAR		H	quelque
+L06	7	CLEAR		H	chose
+L06	8	CLEAR		H	le
+L06	9	CLEAR		H	dimenche
+L06	10	CLEAR		L	se (same ligature)
+L06	11	f		M	large crossed F
+L06	12	T	NEW:T-over-o	M	pi with o beneath
+L06	13	w		H	
+L06	14	0		H	
+L06	15	X_DELTA		H	
+L06	16	v		H	
+L06	17	sq		H	
+L06	18	X_DELTA		H	
+L06	19	v		M	filled
+L06	20	4		H	
+L06	21	y		H	
+L06	22	w		H	
+L06	23	m		H	
+L06	24	X_HBAR		M	h with cross bar
+L06	25	c		H	
+L06	26	X_CTAIL	c	M	c with descender
+L06	27	#		H	
+L06	28	T		H	
+L06	29	1		H	
+L06	30	3		H	
+L06	31	0		H	
+L06	32	4		H	
+L06	33	4		M	with stem
+L06	34	m		H	
+L06	35	L		M	underlined
+L06	36	4		H	
+L06	37	4	+	M	
+L06	38	0		H	
+L07	1	w		H	
+L07	2	.		H	
+L07	3	1		H	
+L07	4	.		H	
+L07	5	m		H	
+L07	6	y		H	
+L07	7	m		H	
+L07	8	f		H	
+L07	9	.		H	
+L07	10	v		H	
+L07	11	X_4BAR		H	
+L07	12	m		H	
+L07	13	0		H	
+L07	14	f		H	
+L07	15	4		H	
+L07	16	y		H	
+L07	17	c		H	
+L07	18	w		H	
+L07	19	v		H	
+L07	20	p'	p	M	underline
+L07	21	X_4BAR		H	
+L07	22	0		H	
+L07	23	y		H	
+L07	24	m		H	
+L07	25	p		H	
+L07	26	4		H	
+L07	27	1		H	
+L07	28	sq		H	
+L07	29	m		H	
+L07	30	L		H	
+L07	31	4		H	
+L07	32	v		H	
+L07	33	0		H	
+L07	34	f		H	
+L07	35	m		H	
+L07	36	y		H	
+L07	37	L		H	
+L07	38	0		H	
+L07	39	CLEAR		H	ung
+L07	40	CLEAR		H	gentilhomme
+L07	41	v		H	
+L07	42	0		H	
+L07	43	4		M	with stem
+L07	44	Z		H	
+L07	45	v		H	
+L07	46	L		H	
+L07	47	0		H	
+L07	48	sq		H	
+L07	49	m		H	
+L07	50	.		H	
+L07	51	1		H	
+L07	52	.		H	
+L07	53	X_DELTA		H	
+L07	54	y		H	
+L08	1	CLEAR		L	pd (dark ink at left margin, possibly later gloss)
+L08	2	m		H	
+L08	3	c		H	
+L08	4	v		H	
+L08	5	m		H	
+L08	6	y		H	
+L08	7	L		H	
+L08	8	c		H	
+L08	9	4		H	
+L08	10	0		H	
+L08	11	#		H	
+L08	12	.		H	
+L08	13	y		H	
+L08	14	Z		H	
+L08	15	p		H	written xp
+L08	16	v		H	
+L08	17	4	NEW:r4-ligature	M	r4-ligature
+L08	18	3		H	
+L08	19	1		H	
+L08	20	z		H	figure-2 shape
+L08	21	v		H	
+L08	22	f		H	
+L08	23	m	3	M	z-tail only, no hump
+L08	24	sq		H	
+L08	25	m		H	
+L08	26	0'		H	
+L08	27	#		H	
+L08	28	.		H	
+L08	29	1		H	
+L08	30	.		H	
+L08	31	f		H	
+L08	32	m	3	M	z-tail shape
+L08	33	#		H	
+L08	34	a'	a	M	dot below
+L08	35	L		H	
+L08	36	w		H	
+L08	37	v		H	stroke above may be fragment from line above
+L08	38	sq		H	
+L08	39	0'		H	
+L08	40	0		H	
+L08	41	sq		H	
+L08	42	CLEAR		H	de
+L08	43	CLEAR		L	vostre?
+L08	44	CLEAR		M	quelle?
+L08	45	CLEAR		M	vous? (B-shaped v)
+L08	46	CLEAR		L	auez?
+L09	1	y		H	
+L09	2	w		H	
+L09	3	3		H	
+L09	4	y		H	
+L09	5	4	NEW:looped-4	M	4 with looped descender
+L09	6	f		H	
+L09	7	0		H	
+L09	8	1		H	
+L09	9	sq		M	dark stroke over, likely fragment
+L09	10	L		H	
+L09	11	#		H	
+L09	12	p		H	written xp
+L09	13	CLEAR		M	vous
+L09	14	CLEAR		L	inquietez?
+L09	15	CLEAR		H	si
+L09	16	CLEAR		M	vous
+L09	17	CLEAR		H	plaist
+L09	18	CLEAR		M	Monseigneur
+L09	19	X_FBAR	f	M	F shape with crossbar
+L09	20	y		H	
+L09	21	v		H	
+L09	22	a		H	
+L09	23	m		H	
+L09	24	y		H	
+L09	25	L		H	
+L09	26	#		H	
+L09	27	0	0'	M	dot above may be gloss i
+L09	28	4		H	
+L09	29	4		H	stroke below from lower line
+L09	30	m		H	
+L09	31	1		H	
+L09	32	f		H	
+L09	33	v		H	mark above is fragment
+L09	34	4		H	
+L09	35	0		H	
+L09	36	c		H	
+L09	37	1		H	
+L09	38	z		H	figure-2 shape
+L09	39	0		H	
+L09	40	X_ZBAR	f	M	z with crossbar
+L09	41	1		H	
+L10	1	0	NEW:theta	M	inner mark or blot
+L10	2	sq		H	
+L10	3	m		H	
+L10	4	3		H	
+L10	5	1		H	
+L10	6	0'	0	M	tall stroke above may be fragment
+L10	7	#		H	
+L10	8	w		H	dark fragment over
+L10	9	L		H	
+L10	10	w		H	
+L10	11	0		H	
+L10	12	CLEAR		L	promptement?
+L10	13	v		H	
+L10	14	#		H	
+L10	15	0		H	
+L10	16	m		H	
+L10	17	sq		H	
+L10	18	3		H	
+L10	19	0		H	
+L10	20	#		H	
+L10	21	1		H	
+L10	22	sq		H	
+L10	23	m		H	
+L10	24	0		H	
+L10	25	m		H	
+L10	26	p		H	written xp
+L10	27	4		H	
+L10	28	+	t	M	
+L10	29	0		H	
+L10	30	3		H	
+L10	31	.		H	
+L10	32	1		H	
+L10	33	.		H	
+L10	34	f		H	
+L10	35	0		H	
+L10	36	w		H	
+L10	37	0		H	
+L10	38	#		H	
+L10	39	.		H	
+L10	40	1		H	
+L10	41	.		H	
+L10	42	m		H	
+L10	43	y		H	
+L10	44	L		H	
+L10	45	w		H	
+L10	46	v		H	
+L10	47	m		H	
+L10	48	4		H	
+L10	49	m		H	
+L10	50	c		H	
+L10	51	0		H	
+L10	52	a		H	
+L10	53	m		H	
+L10	54	.		H	
+L10	55	1		H	
+L10	56	.		M	faint
+L11	1	Z	z	M	
+L11	2	y		H	
+L11	3	L		H	
+L11	4	CLEAR		L	ou?
+L11	5	CLEAR		L	celluy?
+L11	6	CLEAR		H	qu'il
+L11	7	CLEAR		M	vous
+L11	8	CLEAR		H	plaira
+L11	9	CLEAR		M	ordonner
+L11	10	0'		H	
+L11	11	y		H	
+L11	12	m		H	
+L11	13	c		H	
+L11	14	#		H	
+L11	15	y		H	
+L11	16	z		H	
+L11	17	v		H	
+L11	18	f		H	
+L11	19	3		H	
+L11	20	0		H	
+L11	21	w		H	
+L11	22	4		H	
+L11	23	1		H	
+L11	24	sq		H	
+L11	25	#		H	
+L11	26	m		H	
+L11	27	p		H	written xp
+L11	28	w		H	
+L11	29	v		H	fragment above
+L11	30	sq		H	
+L11	31	0'		H	
+L11	32	.		H	
+L11	33	1		H	
+L11	34	.		H	
+L11	35	sq		H	dark stroke over, fragment
+L11	36	0		H	
+L11	37	f		H	
+L11	38	#		H	
+L11	39	y		H	
+L11	40	w		H	
+L11	41	a		H	
+L11	42	m		H	
+L11	43	1		M	small stroke after m tail
+L11	44	4		H	
+L11	45	0'		H	
+L12	1	0		H	
+L12	2	f		H	
+L12	3	v		H	
+L12	4	L	1	M	
+L12	5	0		H	
+L12	6	f		H	
+L12	7	v		H	stroke through from fragment
+L12	8	4		H	
+L12	9	0		H	
+L12	10	m		H	
+L12	11	v		H	mark above is fragment
+L12	12	c		H	
+L12	13	1		H	
+L12	14	sq		H	
+L12	15	CLEAR		H	de
+L12	16	CLEAR		H	sa
+L12	17	CLEAR		M	majeste (abbrev ma.te)
+L12	18	CLEAR		H	d'autant
+L12	19	CLEAR		H	que
+L12	20	CLEAR		M	vous
+L12	21	CLEAR		H	en
+L12	22	CLEAR		M	scaurez
+L12	23	CLEAR		M	l'intention
+L12	24	CLEAR		M	particuliere
+L12	25	CLEAR		H	et
+L12	26	CLEAR		H	si
+L12	27	CLEAR		M	vous
+L12	28	CLEAR		M	plaise
+L13	1	4		H	
+L13	2	v		H	
+L13	3	3		H	
+L13	4	p		H	written xp
+L13	5	+	t	M	
+L13	6	L		H	
+L13	7	y	NEW:phi	M	circle with vertical stroke
+L13	8	0		H	
+L13	9	f		H	
+L13	10	#		H	
+L13	11	L		H	
+L13	12	0		H	
+L13	13	sq		H	
+L13	14	m		H	
+L13	15	w		H	
+L13	16	0		H	
+L13	17	a		H	
+L13	18	m		H	
+L13	19	p		H	
+L13	20	sq		H	
+L13	21	0		H	
+L13	22	.		H	
+L13	23	3		H	
+L13	24	v		H	
+L13	25	m		H	
+L13	26	m	3	M	z-tail only
+L13	27	v		H	
+L13	28	f		H	
+L13	29	v		H	
+L13	30	a		H	
+L13	31	m		H	
+L13	32	4		H	
+L13	33	p	x	M	
+L13	34	v		H	
+L13	35	X_EB		L	pale, under gloss eb, may be gloss overlap
+L13	36	X_DDAG	f	L	dark ink, may be correction
+L13	37	L		H	
+L13	38	y		H	
+L13	39	m		H	
+L13	40	w		H	
+L13	41	sq		H	
+L13	42	a		H	
+L13	43	m		H	
+L13	44	0		H	
+L13	45	#		H	
+L13	46	.		H	
+L13	47	1		H	
+L13	48	.		H	
+L13	49	4		H	
+L13	50	+		H	
+L13	51	a		H	
+L13	52	L		H	
+L13	53	a		H	
+L13	54	m		H	
+L13	55	1		H	
+L13	56	+		H	
+L14	1	0		H	
+L14	2	f		H	
+L14	3	m		H	
+L14	4	y		H	
+L14	5	L		H	
+L14	6	1		H	
+L14	7	v		H	
+L14	8	0		H	
+L14	9	4		H	triangle with stem below
+L14	10	Z		H	
+L14	11	v		H	
+L14	12	L		H	
+L14	13	0		H	
+L14	14	sq		H	
+L14	15	m		H	
+L14	16	1		H	
+L14	17	0		H	
+L14	18	sq		H	
+L14	19	m		H	
+L14	20	0'		H	
+L14	21	v		H	
+L14	22	c		H	
+L14	23	4		H	triangle with stem
+L14	24	L		H	
+L14	25	CLEAR		H	que
+L14	26	CLEAR		H	je
+L14	27	CLEAR		M	pourray
+L14	28	CLEAR		L	scau (word may continue)
+L14	29	a		H	
+L14	30	m		H	
+L14	31	0		H	
+L14	32	3		H	
+L14	33	X_VSTEM	v	M	N-like, v with long diagonal
+L14	34	L		H	
+L14	35	0		H	
+L14	36	w		H	
+L14	37	CLEAR		M	vne
+L14	38	CLEAR		H	partie
+L14	39	CLEAR		M	des
+L14	40	CLEAR		H	forces
+L14	41	CLEAR		H	de
+L14	42	CLEAR		M	monsr (abbrev)
+L14	43	CLEAR		L	de

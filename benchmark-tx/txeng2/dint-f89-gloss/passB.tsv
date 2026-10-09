@@ -1,0 +1,686 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	CLEAR		H	depuis
+L01	2	CLEAR		M	Je
+L01	3	sq		H	
+L01	4	0		H	
+L01	5	z		H	
+L01	6	?		L	blotted/overwritten,maybe
+L01	7	m		H	
+L01	8	4		H	
+L01	9	1		H	
+L01	10	.		H	
+L01	11	a		H	
+L01	12	a		H	alpha form
+L01	13	c	a	L	
+L01	14	0	o	M	
+L01	15	4		H	
+L01	16	1		H	
+L01	17	sq		H	
+L01	18	X_DELTA		H	o with stem rising (δ)
+L01	19	v		H	
+L01	20	w		H	
+L01	21	v		M	stroke through from above
+L01	22	1		H	
+L01	23	X_DELTA		H	o with stem rising (δ)
+L01	24	4		H	
+L01	25	f		H	
+L01	26	sq		H	
+L01	27	3		H	
+L01	28	0'		H	
+L01	29	+		H	
+L01	30	v		H	
+L01	31	4		H	
+L01	32	1		H	
+L01	33	9		H	
+L01	34	m		H	
+L01	35	0		H	
+L01	36	sq		H	
+L01	37	x	p	M	
+L01	38	4		H	
+L01	39	y		H	
+L01	40	c		H	
+L01	41	m		H	
+L01	42	1		H	
+L01	43	4		H	
+L01	44	p		H	
+L01	45	0'	0	M	
+L01	46	X_4BAR		H	
+L01	47	v		H	
+L01	48	3		H	
+L01	49	0		H	
+L01	50	1		H	
+L01	51	y		H	
+L01	52	m'		H	
+L01	53	w'	w	M	
+L01	54	v		H	
+L01	55	4		H	
+L01	56	m		H	
+L01	57	z	3	M	
+L01	58	c		H	
+L01	59	0		H	
+L02	1	.		H	
+L02	2	1		H	
+L02	3	.		H	
+L02	4	X_4BAR		H	
+L02	5	sq		H	
+L02	6	y		H	
+L02	7	c		H	
+L02	8	m		H	
+L02	9	.		H	
+L02	10	1		H	
+L02	11	.		H	
+L02	12	a		H	
+L02	13	m		H	
+L02	14	X_8	g	M	
+L02	15	X_DELTA		M	crossbar on stem
+L02	16	.		H	
+L02	17	p		H	
+L02	18	4		H	
+L02	19	CLEAR		L	pour
+L02	20	CLEAR		H	bon
+L02	21	CLEAR		M	plaisir
+L02	22	p		H	
+L02	23	X_DELTA		H	o with stem rising (δ)
+L02	24	y		H	
+L02	25	m		H	
+L02	26	c		H	
+L02	27	a'	a	M	
+L02	28	X_4BAR		H	
+L02	29	1		H	
+L02	30	w		H	
+L02	31	X_DELTA		H	o with stem rising (δ)
+L02	32	c		H	
+L02	33	y		H	
+L02	34	z		H	
+L02	35	m		H	
+L02	36	0		H	
+L02	37	z		H	
+L02	38	1		H	
+L02	39	f		H	
+L02	40	m		H	
+L02	41	p		H	
+L02	42	4		H	
+L02	43	1		H	
+L02	44	v		H	
+L02	45	L	1	M	
+L02	46	c		H	
+L02	47	4		H	
+L02	48	f		H	
+L02	49	m		H	
+L02	50	#		H	
+L02	51	v		H	
+L02	52	1		H	
+L02	53	X_4BAR		H	
+L02	54	9		H	
+L02	55	1		H	
+L02	56	w		H	
+L03	1	a		H	
+L03	2	m		H	
+L03	3	1		H	
+L03	4	4		H	
+L03	5	X_4BAR		H	
+L03	6	0'	0	M	
+L03	7	z'	z	M	
+L03	8	sq		H	
+L03	9	4		H	
+L03	10	3		H	
+L03	11	m		H	
+L03	12	p		H	
+L03	13	0		H	
+L03	14	f		H	
+L03	15	X_4BAR		H	
+L03	16	.		H	
+L03	17	1		H	
+L03	18	.		H	
+L03	19	3		H	
+L03	20	0		H	
+L03	21	#		H	
+L03	22	1		H	
+L03	23	sq		H	
+L03	24	m		H	
+L03	25	.		H	
+L03	26	1		H	
+L03	27	.		H	
+L03	28	X_DELTA		H	o with stem rising (δ)
+L03	29	4		H	
+L03	30	v		H	
+L03	31	#		H	
+L03	32	0		H	
+L03	33	X_COMMA	.	L	
+L03	34	4		H	
+L03	35	1		H	
+L03	36	.		H	
+L03	37	sq		H	
+L03	38	L		H	
+L03	39	0		H	
+L03	40	a		H	
+L03	41	w		H	
+L03	42	4		H	
+L03	43	0		H	
+L03	44	#		H	
+L03	45	T		M	bar over lambda shape
+L03	46	v'	v	M	
+L03	47	sq		H	
+L03	48	m		H	
+L03	49	0		H	
+L03	50	4		H	
+L03	51	+		H	
+L03	52	0		H	
+L03	53	v		H	
+L03	54	.		H	
+L03	55	0		H	
+L03	56	.		H	
+L03	57	X_4BAR		H	
+L03	58	X_DELTA		H	o with stem rising (δ)
+L03	59	v		H	
+L03	60	c		H	
+L03	61	v		H	
+L03	62	L		H	
+L03	63	m		H	
+L03	64	CLEAR		M	samedy
+L04	1	CLEAR		H	faisant
+L04	2	#		H	
+L04	3	y		H	
+L04	4	m		H	
+L04	5	w		H	
+L04	6	1	L	M	
+L04	7	c		H	
+L04	8	4		H	
+L04	9	0		H	
+L04	10	X_MBASE	m	M	
+L04	11	c		H	
+L04	12	m		H	
+L04	13	1		H	
+L04	14	#		H	
+L04	15	m		H	
+L04	16	a		H	
+L04	17	m		H	
+L04	18	1		H	
+L04	19	+		H	
+L04	20	v		H	
+L04	21	4		H	
+L04	22	+		H	
+L04	23	y		H	
+L04	24	1		H	
+L04	25	m		H	
+L04	26	v		H	
+L04	27	c		H	
+L04	28	y		H	
+L04	29	m		H	
+L04	30	a		H	
+L04	31	0		H	
+L04	32	w		H	
+L04	33	4		H	
+L04	34	1		H	
+L04	35	c		H	
+L04	36	y		H	
+L04	37	p		H	
+L04	38	CLEAR		H	et
+L04	39	CLEAR		H	que
+L04	40	CLEAR		H	a
+L04	41	CLEAR		H	quil
+L04	42	CLEAR		H	avoit
+L04	43	CLEAR		H	faict
+L04	44	CLEAR		H	pour
+L05	1	CLEAR		H	le
+L05	2	CLEAR		H	regard
+L05	3	a		H	
+L05	4	sq		H	
+L05	5	X_DELTA		M	crossbar on stem
+L05	6	y		H	
+L05	7	1		H	
+L05	8	X_DELTA		H	o with stem rising (δ)
+L05	9	sq		H	
+L05	10	0		H	
+L05	11	X_DELTA		H	o with stem rising (δ)
+L05	12	.		H	
+L05	13	1		H	
+L05	14	.		H	
+L05	15	sq		H	
+L05	16	m		H	
+L05	17	y		H	
+L05	18	p		H	
+L05	19	v		H	
+L05	20	a		H	
+L05	21	m		H	
+L05	22	0		H	
+L05	23	sq		H	
+L05	24	1		H	
+L05	25	4		H	
+L05	26	1		H	
+L05	27	.		H	
+L05	28	w		H	
+L05	29	y		H	
+L05	30	1		H	
+L05	31	0		H	
+L05	32	m		H	
+L05	33	sq		H	
+L05	34	m		H	
+L05	35	a		H	
+L05	36	y		H	
+L05	37	+		H	
+L05	38	a		H	
+L05	39	CLEAR		M	quils
+L05	40	CLEAR		L	ensuivent
+L05	41	1		H	
+L05	42	.		H	
+L05	43	sq		H	
+L05	44	v		H	
+L05	45	X_DELTA		M	o with stem rising (δ)
+L05	46	X_HBAR	f	L	
+L05	47	4		H	
+L05	48	v		H	
+L05	49	sq	p	M	
+L05	50	X_DELTA		H	o with stem rising (δ)
+L05	51	.		H	
+L05	52	1		H	
+L05	53	.		H	
+L05	54	sq		H	
+L05	55	1		H	
+L05	56	#		H	
+L05	57	p		H	
+L06	1	CLEAR		H	Je
+L06	2	CLEAR		H	luy
+L06	3	CLEAR		L	ay
+L06	4	CLEAR		H	eust
+L06	5	CLEAR		H	escrit
+L06	6	CLEAR		H	quelque
+L06	7	CLEAR		H	chose
+L06	8	CLEAR		H	le
+L06	9	CLEAR		H	dimanche
+L06	10	CLEAR		M	Je
+L06	11	f		H	
+L06	12	T		L	pi over loop
+L06	13	X_DELTA		H	o with stem rising (δ)
+L06	14	w		H	
+L06	15	0		H	
+L06	16	X_DELTA		H	o with stem rising (δ)
+L06	17	v		H	
+L06	18	sq		H	
+L06	19	X_DELTA		H	o with stem rising (δ)
+L06	20	v		H	
+L06	21	4		H	
+L06	22	y		H	
+L06	23	w		H	
+L06	24	m		H	
+L06	25	X_HBAR		M	
+L06	26	c		H	
+L06	27	X_CTAIL	9	M	
+L06	28	#		H	
+L06	29	T		H	
+L06	30	1		H	
+L06	31	3		H	
+L06	32	0		H	
+L06	33	4		H	
+L06	34	4	t	M	
+L06	35	m		H	
+L06	36	1		H	
+L06	37	4		H	
+L06	38	+		H	
+L06	39	0		H	
+L07	1	w		H	
+L07	2	.		H	
+L07	3	1		H	
+L07	4	.		H	
+L07	5	m		H	
+L07	6	y		H	
+L07	7	m		H	
+L07	8	f		H	
+L07	9	v		H	
+L07	10	X_4BAR		H	
+L07	11	m		H	
+L07	12	0'	0	M	
+L07	13	f		H	
+L07	14	4		H	
+L07	15	y		H	
+L07	16	c		H	
+L07	17	w		H	
+L07	18	v		H	
+L07	19	p		H	
+L07	20	X_4BAR		H	
+L07	21	0		H	
+L07	22	y		H	
+L07	23	m		H	
+L07	24	p		H	
+L07	25	4		H	
+L07	26	1		H	
+L07	27	sq		H	
+L07	28	m		H	
+L07	29	1		H	
+L07	30	4		H	
+L07	31	v		H	
+L07	32	0		H	
+L07	33	f		H	
+L07	34	m		H	
+L07	35	y		H	
+L07	36	1		H	
+L07	37	0		H	
+L07	38	CLEAR		M	vng
+L07	39	CLEAR		H	gentilhomme
+L07	40	v		H	
+L07	41	X_DELTA		H	o with stem rising (δ)
+L07	42	4		H	
+L07	43	z		H	
+L07	44	v		H	
+L07	45	1		H	
+L07	46	0		H	
+L07	47	sq		H	
+L07	48	m		H	
+L07	49	.		H	
+L07	50	1		H	
+L07	51	.		H	
+L07	52	X_DELTA		H	o with stem rising (δ)
+L07	53	y		H	
+L08	1	m		H	
+L08	2	c		H	
+L08	3	v		H	
+L08	4	m		H	
+L08	5	y		H	
+L08	6	L		H	
+L08	7	c		H	
+L08	8	4		H	
+L08	9	0		H	
+L08	10	#		H	
+L08	11	.		H	
+L08	12	y		H	
+L08	13	Z		H	
+L08	14	p		H	
+L08	15	v		H	
+L08	16	4	t	M	4-shape-with-cross
+L08	17	3		H	
+L08	18	1		H	
+L08	19	z	2	M	z-or-2
+L08	20	v		H	
+L08	21	f		H	
+L08	22	m		H	
+L08	23	sq		H	
+L08	24	m		H	
+L08	25	0'		H	
+L08	26	#		H	
+L08	27	.		H	
+L08	28	1		H	
+L08	29	.		H	
+L08	30	f		H	
+L08	31	m		H	
+L08	32	#		H	
+L08	33	a		H	
+L08	34	c		M	dot-below
+L08	35	L		H	
+L08	36	w		H	
+L08	37	v		H	
+L08	38	sq		M	gloss-stroke-crosses
+L08	39	0'		H	
+L08	40	0		H	
+L08	41	sq		H	
+L08	42	CLEAR		H	de
+L08	43	CLEAR		H	vostre
+L08	44	CLEAR		H	quelle
+L08	45	CLEAR		H	bonne
+L08	46	CLEAR		H	amij
+L09	1	y		H	
+L09	2	w		H	
+L09	3	3		H	
+L09	4	y		H	
+L09	5	4	NEW:variant	M	4-with-cross
+L09	6	f		H	
+L09	7	0		H	
+L09	8	1		H	
+L09	9	sq		M	dark-gloss-stroke-through
+L09	10	L	T	M	
+L09	11	#		H	
+L09	12	p		H	
+L09	13	CLEAR		H	bonne
+L09	14	CLEAR		M	Ingleterre?
+L09	15	CLEAR		H	si
+L09	16	CLEAR		H	bonne
+L09	17	CLEAR		H	plaist
+L09	18	CLEAR		H	Monseigneur
+L09	19	f		H	
+L09	20	y		H	
+L09	21	v		H	
+L09	22	a		H	
+L09	23	m		H	
+L09	24	y		H	
+L09	25	L		H	
+L09	26	#		H	
+L09	27	0	0'	M	dot-above-may-be-gloss
+L09	28	4		H	
+L09	29	4		H	
+L09	30	m		H	
+L09	31	1		H	
+L09	32	f		H	
+L09	33	v		H	
+L09	34	4		H	
+L09	35	0		H	
+L09	36	c		H	
+L09	37	1		H	
+L09	38	z		H	
+L09	39	0		H	
+L09	40	4	NEW:variant	M	4-with-cross
+L09	41	1		H	
+L10	1	0	NEW:variant	M	theta
+L10	2	sq		H	
+L10	3	m		H	
+L10	4	3		H	
+L10	5	1		H	
+L10	6	o	0'	M	vertical-gloss-stroke-above
+L10	7	#		H	
+L10	8	w		M	partly-under-dark-gloss-ink
+L10	9	L		H	
+L10	10	w		H	
+L10	11	0		H	
+L10	12	CLEAR		M	promptement?
+L10	13	v		H	
+L10	14	#		H	
+L10	15	0		H	
+L10	16	m		H	
+L10	17	sq		H	
+L10	18	3		H	
+L10	19	0		H	
+L10	20	#		H	
+L10	21	1		H	
+L10	22	sq		H	
+L10	23	m		H	
+L10	24	0		H	
+L10	25	m		H	
+L10	26	p		H	
+L10	27	4		H	
+L10	28	t	+	M	
+L10	29	0		H	
+L10	30	3		H	
+L10	31	.		H	
+L10	32	1		H	
+L10	33	.		H	
+L10	34	f		H	
+L10	35	0		H	
+L10	36	w		H	
+L10	37	0		H	
+L10	38	#		H	
+L10	39	.		H	
+L10	40	1		H	
+L10	41	.		H	
+L10	42	m		H	
+L10	43	y		H	
+L10	44	L		H	
+L10	45	w		H	
+L10	46	v		H	
+L10	47	m		H	
+L10	48	4		H	
+L10	49	m		H	
+L10	50	c		H	
+L10	51	0		H	
+L10	52	a	CLEAR	M	could-be-clear-word-amij
+L10	53	m		M	
+L10	54	.		L	
+L11	1	Z		H	
+L11	2	y		H	
+L11	3	L		H	
+L11	4	CLEAR		H	ou
+L11	5	CLEAR		H	celluy
+L11	6	CLEAR		H	qu'il
+L11	7	CLEAR		H	bonne
+L11	8	CLEAR		H	plaira
+L11	9	CLEAR		H	ordonner
+L11	10	0'	0	M	stroke-above-may-be-gloss
+L11	11	y		H	
+L11	12	m		H	
+L11	13	c		H	
+L11	14	#		H	
+L11	15	y		H	
+L11	16	z		H	
+L11	17	v		H	
+L11	18	f		H	
+L11	19	3		H	
+L11	20	0		H	
+L11	21	w		H	
+L11	22	4		H	
+L11	23	1		H	
+L11	24	sq		H	
+L11	25	#		H	
+L11	26	m		H	
+L11	27	p		H	
+L11	28	w		H	
+L11	29	v		M	gloss-ink-over
+L11	30	sq		H	
+L11	31	0'	0	M	
+L11	32	.		H	
+L11	33	1		H	
+L11	34	.		H	
+L11	35	sq		H	
+L11	36	0		H	
+L11	37	f		H	
+L11	38	#		H	
+L11	39	y		H	
+L11	40	w		H	
+L11	41	a		H	
+L11	42	m		H	
+L11	43	1	L	M	
+L11	44	4		M	
+L11	45	X_8	3	L	last-sign
+L12	1	0		H	
+L12	2	f		H	
+L12	3	v		H	
+L12	4	L		H	
+L12	5	0		H	
+L12	6	f		H	
+L12	7	v		M	gloss-stroke-through
+L12	8	4		H	
+L12	9	0		H	
+L12	10	m		H	
+L12	11	v		M	gloss-stroke-through
+L12	12	c		H	
+L12	13	1		H	
+L12	14	sq		H	
+L12	15	CLEAR		H	de
+L12	16	CLEAR		H	sa
+L12	17	CLEAR		H	majeste
+L12	18	CLEAR		H	d'autant
+L12	19	CLEAR		H	que
+L12	20	CLEAR		H	bonne
+L12	21	CLEAR		H	en
+L12	22	CLEAR		H	france
+L12	23	CLEAR		H	l'instruction
+L12	24	CLEAR		H	particuliere
+L12	25	CLEAR		H	et
+L12	26	CLEAR		H	si
+L12	27	CLEAR		H	bonne
+L12	28	CLEAR		H	plaise
+L13	1	4		H	
+L13	2	v		H	
+L13	3	3		H	
+L13	4	p		H	
+L13	5	t		H	
+L13	6	L		H	
+L13	7	y	0'	M	o-crossed-by-vertical-stroke
+L13	8	0		H	
+L13	9	f		H	
+L13	10	#		H	
+L13	11	L		H	
+L13	12	0		H	
+L13	13	sq		M	dark-gloss-stroke-through
+L13	14	m		H	
+L13	15	w		H	
+L13	16	0		H	
+L13	17	a		H	
+L13	18	m		H	
+L13	19	p		H	
+L13	20	sq		H	
+L13	21	0		H	
+L13	22	.		H	
+L13	23	3		H	
+L13	24	v		H	
+L13	25	m		H	
+L13	26	z	m	M	
+L13	27	v		H	
+L13	28	f		H	
+L13	29	v		H	
+L13	30	a		H	
+L13	31	m		H	
+L13	32	4		H	
+L13	33	p		H	
+L13	34	v		H	
+L13	35	p	NEW:variant	M	p-with-b-attached
+L13	36	f	t	M	overlapped-by-gloss
+L13	37	L		H	
+L13	38	y	NEW:variant	M	psi-without-stem
+L13	39	m		H	
+L13	40	w		H	
+L13	41	sq		H	
+L13	42	a		H	
+L13	43	m		H	
+L13	44	0		H	
+L13	45	#		H	
+L13	46	.		H	
+L13	47	1		H	
+L13	48	.		H	
+L13	49	4		H	
+L13	50	+	t	M	
+L13	51	a		H	
+L13	52	L		H	
+L13	53	a		H	
+L13	54	m		H	
+L13	55	1		H	
+L13	56	+	t	M	
+L14	1	0		H	
+L14	2	f		H	
+L14	3	m		H	
+L14	4	y		H	
+L14	5	L		H	
+L14	6	1		H	
+L14	7	v		H	
+L14	8	0'		H	
+L14	9	4		M	overlapped-by-gloss
+L14	10	Z		H	
+L14	11	v		H	
+L14	12	L		H	
+L14	13	0		H	
+L14	14	sq		H	
+L14	15	m		H	
+L14	16	1		H	
+L14	17	0		H	
+L14	18	sq		H	
+L14	19	m		H	
+L14	20	0'		H	
+L14	21	v		H	
+L14	22	c		H	
+L14	23	4	v'	M	delta-with-stem
+L14	24	T		H	
+L14	25	CLEAR		H	que
+L14	26	CLEAR		H	le
+L14	27	CLEAR		M	prosy?
+L14	28	CLEAR		M	sera?
+L14	29	a		H	
+L14	30	m		H	
+L14	31	0		H	
+L14	32	3		H	
+L14	33	X_N	4	L	
+L14	34	L		H	
+L14	35	0		H	
+L14	36	w		H	
+L14	37	CLEAR		H	bonne
+L14	38	CLEAR		H	partie
+L14	39	CLEAR		H	de
+L14	40	CLEAR		H	forcce
+L14	41	CLEAR		H	de
+L14	42	CLEAR		H	mrs
+L14	43	CLEAR		H	de

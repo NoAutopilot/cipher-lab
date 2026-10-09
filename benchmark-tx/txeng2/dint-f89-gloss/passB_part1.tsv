@@ -1,0 +1,386 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	CLEAR		H	depuis
+L01	2	CLEAR		M	Je
+L01	3	sq		H	
+L01	4	0		H	
+L01	5	z		H	
+L01	6	?		L	blotted/overwritten,maybe
+L01	7	m		H	
+L01	8	4		H	
+L01	9	1		H	
+L01	10	.		H	
+L01	11	a		H	
+L01	12	a		H	alpha
+L01	13	form		H	
+L01	14	c	a	L	
+L01	15	0	o	M	
+L01	16	4		H	
+L01	17	1		H	
+L01	18	sq		H	
+L01	19	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L01	20	v		H	
+L01	21	w		H	
+L01	22	v		M	stroke
+L01	23	through		H	
+L01	24	from		H	
+L01	25	above		H	
+L01	26	1		H	
+L01	27	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L01	28	4		H	
+L01	29	f		H	
+L01	30	sq		H	
+L01	31	3		H	
+L01	32	0'		H	
+L01	33	+		H	
+L01	34	v		H	
+L01	35	4		H	
+L01	36	1		H	
+L01	37	9		H	
+L01	38	m		H	
+L01	39	0		H	
+L01	40	sq		H	
+L01	41	x	p	M	
+L01	42	4		H	
+L01	43	y		H	
+L01	44	c		H	
+L01	45	m		H	
+L01	46	1		H	
+L01	47	4		H	
+L01	48	p		H	
+L01	49	0'	0	M	
+L01	50	NEW:4-with-crossbar		H	
+L01	51	v		H	
+L01	52	3		H	
+L01	53	0		H	
+L01	54	1		H	
+L01	55	y		H	
+L01	56	m'		H	
+L01	57	w'	w	M	
+L01	58	v		H	
+L01	59	4		H	
+L01	60	m		H	
+L01	61	z	3	M	
+L01	62	c		H	
+L01	63	0		H	
+L02	1	.		H	
+L02	2	1		H	
+L02	3	.		H	
+L02	4	NEW:4-with-crossbar		H	
+L02	5	sq		H	
+L02	6	y		H	
+L02	7	c		H	
+L02	8	m		H	
+L02	9	.		H	
+L02	10	1		H	
+L02	11	.		H	
+L02	12	a		H	
+L02	13	m		H	
+L02	14	NEW:8-shape	g	M	
+L02	15	NEW:delta (o with rising stem)		M	crossbar
+L02	16	on		H	
+L02	17	stem		H	
+L02	18	.		H	
+L02	19	p		H	
+L02	20	4		H	
+L02	21	CLEAR		L	pour
+L02	22	CLEAR		H	bon
+L02	23	CLEAR		M	plaisir
+L02	24	p		H	
+L02	25	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L02	26	y		H	
+L02	27	m		H	
+L02	28	c		H	
+L02	29	a'	a	M	
+L02	30	NEW:4-with-crossbar		H	
+L02	31	1		H	
+L02	32	w		H	
+L02	33	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L02	34	c		H	
+L02	35	y		H	
+L02	36	z		H	
+L02	37	m		H	
+L02	38	0		H	
+L02	39	z		H	
+L02	40	1		H	
+L02	41	f		H	
+L02	42	m		H	
+L02	43	p		H	
+L02	44	4		H	
+L02	45	1		H	
+L02	46	v		H	
+L02	47	L	1	M	
+L02	48	c		H	
+L02	49	4		H	
+L02	50	f		H	
+L02	51	m		H	
+L02	52	#		H	
+L02	53	v		H	
+L02	54	1		H	
+L02	55	NEW:4-with-crossbar		H	
+L02	56	9		H	
+L02	57	1		H	
+L02	58	w		H	
+L03	1	a		H	
+L03	2	m		H	
+L03	3	1		H	
+L03	4	4		H	
+L03	5	NEW:4-with-crossbar		H	
+L03	6	0'	0	M	
+L03	7	z'	z	M	
+L03	8	sq		H	
+L03	9	4		H	
+L03	10	3		H	
+L03	11	m		H	
+L03	12	p		H	
+L03	13	0		H	
+L03	14	f		H	
+L03	15	NEW:4-with-crossbar		H	
+L03	16	.		H	
+L03	17	1		H	
+L03	18	.		H	
+L03	19	3		H	
+L03	20	0		H	
+L03	21	#		H	
+L03	22	1		H	
+L03	23	sq		H	
+L03	24	m		H	
+L03	25	.		H	
+L03	26	1		H	
+L03	27	.		H	
+L03	28	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L03	29	4		H	
+L03	30	v		H	
+L03	31	#		H	
+L03	32	0		H	
+L03	33	NEW:comma	.	L	
+L03	34	4		H	
+L03	35	1		H	
+L03	36	.		H	
+L03	37	sq		H	
+L03	38	L		H	
+L03	39	0		H	
+L03	40	a		H	
+L03	41	w		H	
+L03	42	4		H	
+L03	43	0		H	
+L03	44	#		H	
+L03	45	T		M	bar
+L03	46	over		H	
+L03	47	lambda		H	
+L03	48	shape		H	
+L03	49	v'	v	M	
+L03	50	sq		H	
+L03	51	m		H	
+L03	52	0		H	
+L03	53	4		H	
+L03	54	+		H	
+L03	55	0		H	
+L03	56	v		H	
+L03	57	.		H	
+L03	58	0		H	
+L03	59	.		H	
+L03	60	NEW:4-with-crossbar		H	
+L03	61	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L03	62	v		H	
+L03	63	c		H	
+L03	64	v		H	
+L03	65	L		H	
+L03	66	m		H	
+L03	67	CLEAR		M	samedy
+L04	1	CLEAR		H	faisant
+L04	2	#		H	
+L04	3	y		H	
+L04	4	m		H	
+L04	5	w		H	
+L04	6	1	L	M	
+L04	7	c		H	
+L04	8	4		H	
+L04	9	0		H	
+L04	10	NEW:M-with-baseline	m	M	
+L04	11	c		H	
+L04	12	m		H	
+L04	13	1		H	
+L04	14	#		H	
+L04	15	m		H	
+L04	16	a		H	
+L04	17	m		H	
+L04	18	1		H	
+L04	19	+		H	
+L04	20	v		H	
+L04	21	4		H	
+L04	22	+		H	
+L04	23	y		H	
+L04	24	1		H	
+L04	25	m		H	
+L04	26	v		H	
+L04	27	c		H	
+L04	28	y		H	
+L04	29	m		H	
+L04	30	a		H	
+L04	31	0		H	
+L04	32	w		H	
+L04	33	4		H	
+L04	34	1		H	
+L04	35	c		H	
+L04	36	y		H	
+L04	37	p		H	
+L04	38	CLEAR		H	et
+L04	39	CLEAR		H	que
+L04	40	CLEAR		H	a
+L04	41	CLEAR		H	quil
+L04	42	CLEAR		H	avoit
+L04	43	CLEAR		H	faict
+L04	44	CLEAR		H	pour
+L05	1	CLEAR		H	le
+L05	2	CLEAR		H	regard
+L05	3	a		H	
+L05	4	sq		H	
+L05	5	NEW:delta (o with rising stem)		M	crossbar
+L05	6	on		H	
+L05	7	stem		H	
+L05	8	y		H	
+L05	9	1		H	
+L05	10	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L05	11	sq		H	
+L05	12	0		H	
+L05	13	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L05	14	.		H	
+L05	15	1		H	
+L05	16	.		H	
+L05	17	sq		H	
+L05	18	m		H	
+L05	19	y		H	
+L05	20	p		H	
+L05	21	v		H	
+L05	22	a		H	
+L05	23	m		H	
+L05	24	0		H	
+L05	25	sq		H	
+L05	26	1		H	
+L05	27	4		H	
+L05	28	1		H	
+L05	29	.		H	
+L05	30	w		H	
+L05	31	y		H	
+L05	32	1		H	
+L05	33	0		H	
+L05	34	m		H	
+L05	35	sq		H	
+L05	36	m		H	
+L05	37	a		H	
+L05	38	y		H	
+L05	39	+		H	
+L05	40	a		H	
+L05	41	CLEAR		M	quils
+L05	42	CLEAR		L	ensuivent
+L05	43	1		H	
+L05	44	.		H	
+L05	45	sq		H	
+L05	46	v		H	
+L05	47	NEW:delta (o with rising stem)		M	o with stem rising (δ)
+L05	48	NEW:h-shape-crossed	f	L	
+L05	49	4		H	
+L05	50	v		H	
+L05	51	sq	p	M	
+L05	52	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L05	53	.		H	
+L05	54	1		H	
+L05	55	.		H	
+L05	56	sq		H	
+L05	57	1		H	
+L05	58	#		H	
+L05	59	p		H	
+L06	1	CLEAR		H	Je
+L06	2	CLEAR		H	luy
+L06	3	CLEAR		L	ay
+L06	4	CLEAR		H	eust
+L06	5	CLEAR		H	escrit
+L06	6	CLEAR		H	quelque
+L06	7	CLEAR		H	chose
+L06	8	CLEAR		H	le
+L06	9	CLEAR		H	dimanche
+L06	10	CLEAR		M	Je
+L06	11	f		H	
+L06	12	T		L	pi
+L06	13	over		H	
+L06	14	loop		H	
+L06	15	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L06	16	w		H	
+L06	17	0		H	
+L06	18	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L06	19	v		H	
+L06	20	sq		H	
+L06	21	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L06	22	v		H	
+L06	23	4		H	
+L06	24	y		H	
+L06	25	w		H	
+L06	26	m		H	
+L06	27	NEW:h-shape-crossed		M	
+L06	28	c		H	
+L06	29	NEW:c-with-tail	9	M	
+L06	30	#		H	
+L06	31	T		H	
+L06	32	1		H	
+L06	33	3		H	
+L06	34	0		H	
+L06	35	4		H	
+L06	36	4	t	M	
+L06	37	m		H	
+L06	38	1		H	
+L06	39	4		H	
+L06	40	+		H	
+L06	41	0		H	
+L07	1	w		H	
+L07	2	.		H	
+L07	3	1		H	
+L07	4	.		H	
+L07	5	m		H	
+L07	6	y		H	
+L07	7	m		H	
+L07	8	f		H	
+L07	9	v		H	
+L07	10	NEW:4-with-crossbar		H	
+L07	11	m		H	
+L07	12	0'	0	M	
+L07	13	f		H	
+L07	14	4		H	
+L07	15	y		H	
+L07	16	c		H	
+L07	17	w		H	
+L07	18	v		H	
+L07	19	p		H	
+L07	20	NEW:4-with-crossbar		H	
+L07	21	0		H	
+L07	22	y		H	
+L07	23	m		H	
+L07	24	p		H	
+L07	25	4		H	
+L07	26	1		H	
+L07	27	sq		H	
+L07	28	m		H	
+L07	29	1		H	
+L07	30	4		H	
+L07	31	v		H	
+L07	32	0		H	
+L07	33	f		H	
+L07	34	m		H	
+L07	35	y		H	
+L07	36	1		H	
+L07	37	0		H	
+L07	38	CLEAR		M	vng
+L07	39	CLEAR		H	gentilhomme
+L07	40	v		H	
+L07	41	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L07	42	4		H	
+L07	43	z		H	
+L07	44	v		H	
+L07	45	1		H	
+L07	46	0		H	
+L07	47	sq		H	
+L07	48	m		H	
+L07	49	.		H	
+L07	50	1		H	
+L07	51	.		H	
+L07	52	NEW:delta (o with rising stem)		H	o with stem rising (δ)
+L07	53	y		H	
