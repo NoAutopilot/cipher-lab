@@ -6308,3 +6308,122 @@ in print) has nothing to match. **N3 (weak) kept**, three audits. Horan pp.226-2
   (E97 names no one).
 - Depth sentence unchanged (true against the reading); D2 kept (the print checks the affair, not E97's statement: no raise).
 - Postmortem: no over-claim found; status.json E97 gap/audit_status/audit_refs updated; SO-ECKERT-E97 stays queued (class unchanged).
+
+## AUDIT (FV-FM4)
+
+Verifier FV-FM4 (account 1, for LANE LEDGER), 8-9 Oct 2026, 23:46-00:1x UTC by `date -u`; a separate session from the reader FM-R2b
+(account 1), not protecting its conclusions. Scope: **E193, E194** (ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 =
+Huntington object 5952; NOTES "## FM-R2b"). Nothing decoded beyond key look-ups in key.md. Key source for both: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Scripts:
+`fortmonroe/fv_fm4_hdl.py` and `fv_fm4_hdl2.py` (CONTENTdm full text, item info, page images), `fortmonroe/fv_fm4_print.py` (cached
+OR/ORN/Butler grep), `fortmonroe/fv_fm4_beapi.py` (IA full text, Google Books probe).
+
+### 1. Duplicates, prior-work, own transcription and image
+- **prior_work.py** (`--item-spec`, step `audit`; E193/E194 are not rows of items.tsv): exit 4 for both, owing two target-level LEADs
+  that are live claims (ECK-PAGEFIX, the mssEC 19 page column; FIX-FM3, whose entry list E170-E191/E200-E209 excludes these two) --
+  neither covers E193/E194: CLEAR. Tomokiyo mirror and cached solver files CLEAR; aaymeloglu repository UNCHECKED-NET (no local clone);
+  editions: its date window CLEAR on the cached OR volumes, the uncached volumes it names (OR I/32 etc.) are outside Sept/Nov 1864.
+- **Duplicate diff:** pointers 5784 and 5805 occur in ciphertext*.txt only in E193/E194's own headers; no other filed header for
+  19 Sept 1864 Sheldon-Eckert-Rucker or 4 Nov 1864 O'Brien-Sheldon. **No duplicate.**
+- **Sender's/receiver's copies on disk:** mssEC 19 (`entries-mssEC19.tsv`) and mssEC 18 (`ms18/entries-ms18.tsv`) are Washington ledgers;
+  their 19-20 Sept and 4-5 Nov 1864 rows are other telegrams (Beckwith, Sampson, Thayer, W. P. Smith, Horner, Schermerhorn). E194 ran
+  Army of the James HQ -> Fort Monroe and would not pass Washington. No copy of either on disk.
+- **Image (eye check, this session):** pages 5784 and 5805 fetched at native size (6024x7200) under the hdl token to scratch, cut with
+  `tools/iiif_lines.py --image <page> --out <scratch> --region ... --lines-per-crop 2` and read from the crops. The volunteer
+  transcription matches the image word for word for both entries, including E193 "harsh second", "person waldo plunder william",
+  "Toby", "Are see Webster vinton" and E194 "pro" (line 2, first column), "Hawley", "Taunton Shelby Barry", "R OBrien". No gloss on
+  either page. (E194 had been image-read by FM-R2b; E193 is now image-checked.)
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`; under the hdl token 23:48-23:51 UTC): "sick prisoners" 8
+(5784 and seven pages without a transcription snippet in the result), "destination unknown" 2 (5784, 9117), "exchanged" 35, "langdon"
+1 (5805 only), "letter of instructions" 38, "hawley" 3 (5805; 5807 = Sheldon to John Horner, New York, 6 Nov, "General Hawley and
+[Colonel] Babcock attended to ..." -- the same New York troop movement; 5180 = an 1863 Colonel Hawley, unrelated), "corresponding order"
+4 (5805, 2219, 13983, 4746), "barry" 12 (5805; the rest Camp Barry, Gen. W. F. Barry 1863, Gen. W. J. Barry 1866), "rucker" 120.
+Second block (23:59-00:00 UTC; `fv_fm4_hdl2.py`, dmGetItemInfo full transcription) on every hit that came back without a snippet:
+9117 (mssEC 19 p.223, 7 Nov 1864 to New Orleans, "his destination is unknown" -- unrelated), 2215, 2901, 3809, 3705 (1862 and other
+transport/sick traffic), 3093 (St Louis, Nov 1864), 5614 and 4551 (20 Apr 1864, below), 2219, 4746, 13983 (unrelated "corresponding").
+**No clear or received copy of E193 or E194 in the holder's full text** (22 hdl requests in all, two token blocks).
+Side find: 4551 ("Recd 4 PM Fort Monroe Apl 20th 1864 2 pm For Gen Grant Culpeper -- Instructions in regard to Exchange of prisoners
+received and will be implicitly followed ...") is the clear received copy of the Fort Monroe cipher entry 5614 (mssEC 25 p.70, 20 Apr
+1864, not filed): a reader of 5614 starts from 4551 (N1).
+
+**Print** (cached texts, letters-only phrase grep, 158 volumes; `fv_fm4_print.py`):
+- **E193:** "sick prisoners to be exchanged" 0, "destination unknown to me" 1 (OR I/35 pt 2, unrelated), "5,700 sick"/"5700 sick" 0,
+  "transportation for sick prisoners" 0. OR ser. II vol. 7 (`warofrebellion0207rootrich`, Sept 1864 pages read around every "sick
+  prisoners", "Mulford", "Webster" and 16-20 Sept hit): only context -- the September exchanges of disabled men through Major Mulford
+  (Butler to Hoffman, 25 Sept 1864, 11 a.m.: "Major Mulford leaves City Point this morning with 600 officers and soldiers, mostly
+  disabled ... Please get ready 600 of disabled Confederates ... for return trip"; Point Lookout board of 17 Sept selecting 500 sick
+  for exchange); no order for about 5,700. Butler's Private and Official Correspondence V (`privateofficialc05butl`): **Col. R. C.
+  Webster, Chief Q. M., Fort Monroe** is the addressee of Butler telegrams of 4 and 18 Oct 1864 -- this identifies E193's signer
+  (below); no 19-20 Sept telegram about sick prisoners. IA be-api (snippet only): OR I/42 pt 2 (`warofrebellion422unit`) "sick
+  prisoners" 0, "5,700" 0; Grant Papers vol. 12 (`papersofulyssess0012gran`) "sick prisoners" 0, "5,700" 0 (the item answers: "letter
+  of instructions" 1 hit, Ould correspondence, unrelated). **Not located.**
+- **E194:** "open your own letter of instructions" 0, "vessels which have no letters" 0, "If General Hawley is gone" 0, "use all
+  possible despatch" 0. **Context printed, OR I/43 pt 2** (`warofrebellion432unit`; Hawley's report to Butler on the New York
+  expedition): "Two batteries ... Battery M, First U. S. Artillery (Captain Langdon), and Fourth New Jersey (Captain Doane) -- were sent
+  to Bermuda Landing, to report to me ... I was told that sea going vessels would be furnished Captain Langdon, of the artillery ... I
+  furnished him, as well as the senior officer of each transport, with sealed instructions, of which I inclose a copy ... At Fortress
+  Monroe I met Colonel Babcock ... I shall sail as soon as I finish this dispatch, leaving Captain Langdon over the artillery"; and the
+  inclosure's endorsement "Captain Langdon, commanding the artillery, will be governed generally by these instructions ... JOS. B.
+  HAWLEY, Brigadier-General ... Captain L. will sail as soon as he is embarked, without reporting further to me." The telegram itself
+  is not printed there. Butler V: Langdon 0, O'Brien/Hawley hits not this telegram. be-api OR I/43 pt 2 "letter of instructions" 0,
+  "letters of instructions" 0 (positive control on the same item: "sealed instructions" 1 hit, the passage above). Grant Papers vol. 12
+  "Langdon" 0. **Not located.**
+- **Side find (not E193/E194):** Butler V p.312 prints "From Quartermaster Webster, Ft. Monroe, Nov. 4, '64, For Gen'l. Butler, 5th
+  Ave. Hotel: I have taken that not actually loaded by Mulford, and have plenty for all purposes that I have knowledge of" -- the clear
+  text of the **first** entry on page 5805 (Sheldon to John Horner, New York: "... frog actually loaded by [Mulford] ... plenty for all
+  purposes that I have knowledge of Youth Webster ..."), an unfiled row (5805/0). Any future reader of 5805/0 starts from this print (N1).
+- Google Books: one probe ("sick prisoners to be exchanged at some point") answered 429; host stopped. Chronicling America: the old
+  `chroniclingamerica.loc.gov/search/pages/results/?format=json` route returned non-JSON twice; not retried (unreachable this session).
+  Basler: not searched (neither entry is to or from Lincoln). Press of the day: not searched beyond that.
+
+### 3. Grade and reading corrections (FM-R2b's table, reading.md)
+- **E193:** the signature "walrus Are see Webster vinton" = **[Signed] R. C. Webster, [Quartermaster]**: "Are see" is the clerk's
+  phonetic "R. C.", "Webster" is the plain surname of Col. R. C. Webster, Chief Quartermaster at Fort Monroe (Butler V), not the code
+  word Webster = Signature (decoder wrong: it prints "[signed] Are see [signed] [Quartermaster]"). "Toby" = "to be", plain (not in the
+  key). "harsh second" = [twenty] second = **by the 22nd** (harsh = 20 is H; the ordinal is the clear "second"); FM-R2b's "by the 20th"
+  is corrected. "person waldo plunder william" = 5 x 1000 + 7 x 100 = **5,700** (H, four groups; FM-R2b had it M). Reading: "[Monroe]
+  [1 PM] [19]. For [Brigadier General] Rucker, [Washington]. My orders were from [Maj. Gen. B. F. Butler] to provide [transportation]
+  by the [twenty]-second for about [5,700] sick prisoners to be exchanged at some point [South]. Exact point and destination unknown to
+  me at present. [Signed] R. C. Webster, [Quartermaster]." Code groups: Animal, harriet, hunkey, palsy, grapes, zebra, knox, whig,
+  harsh, person, waldo, plunder, william, waxy, unity, walrus, vinton = **17 H of 17**, 0 M (FM-R2b H 16 / M 2; decoder 18 counts
+  Webster).
+- **E194:** **"Hawley" is plain** = Brig. Gen. Joseph R. Hawley (decoder's Roddy wrong; 5805/1 "Shelby Hawley goes tonight" and 5807
+  confirm). "pro" (image: "pro", first word of line 2) is unexplained: **M** (perhaps "pro[ceed]"; not supplied). "Barry" (image:
+  "Barry") is plain and unexplained: the signature reads "[Signed] [Major] [General] Barry, R. O'Brien"; no Maj. Gen. Barry fits Butler's
+  headquarters on 4 Nov 1864 (W. F. Barry was Sherman's chief of artillery), so the name is held **M** as read. Reading: "[2.30 PM]
+  Nov [4]. For [Captain] Langdon, [1st] United States [Artillery] pro[?], [New York], [Monroe]. If [General] Hawley is gone when you
+  reach [Monroe], open your own letter of instructions and give corresponding order to the vessels which have no letters. Use all
+  possible despatch. [Signed] [Major] [General] Barry [sic], R. O'Brien." Code groups: Henrietta, penny, pilgrim, plug, negro, pedlar,
+  france, appian, unity, shelby, animal, zebra, walrus, Taunton, Shelby = **15 H of 15**; the values the print can test agree (Captain,
+  1st, Artillery, New York, General [Hawley], Monroe as the embarkation point).
+
+### 4. Classification (key `period`)
+`depth_pct` = H / code-word groups (plain names the decoder mapped are excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E193** Col. R. C. Webster (Chief QM, Fort Monroe) via Sheldon to Brig. Gen. D. H. Rucker (QM, Washington), 19 Sept 1864 | **N3** (weak: the body is mostly clear in the holder's public transcription; the key supplies Butler, transportation, 22nd, 5,700, South, Quartermaster) | unknown | **D2** | 100 (17 H of 17) | code clause: Knox = Butler (E191 and passim), Whig = Transportation, Animal = Monroe passim; signer identified from Butler V; content context only (OR II/7 Sept 1864 exchanges of the disabled); image checked here; D3 withheld (no external check of the content) |
+| **E194** R. O'Brien (Butler's HQ) to Sheldon for Capt. Langdon, Battery M, 1st U.S. Artillery, 4 Nov 1864 | **N3** (weak: the operative sentence is clear in the holder's public transcription; the key supplies Captain, 1st, Artillery, New York, Monroe, General) | unknown | **D3** | 93.8 (15 H of 16 groups incl. "pro" M) | code clause: France = New York, Appian/Animal = Monroe passim (5807, E193); external (non-statistical): OR I/43 pt 2 Hawley's report (Battery M, 1st U.S. Artillery, Captain Langdon; sealed instructions to each transport; Hawley sailing ahead); image checked by FM-R2b and here; matched control FM-R2b |
+
+- **E193: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 19 Sept 1864 the chief quartermaster at
+  Fort Monroe, Col. R. C. Webster, told the Washington depot quartermaster that Butler had ordered him to provide transportation by the
+  22nd for about 5,700 sick prisoners to be exchanged at some point South, destination not yet known. The telegram was not located in
+  the Official Records (ser. I vol. 42 pt 2, ser. II vol. 7), Butler's printed correspondence (vols. IV-V), the Grant Papers vol. 12 or
+  the Huntington's full-text search (searched 8-9 Oct 2026)." Unsafe: "first decipherment", "previously unread", "unpublished".
+  Depth sentence (mine, from the reading): "On 19 Sept 1864 Fort Monroe's chief quartermaster reported that Butler had ordered transport
+  ready by the 22nd for about 5,700 sick prisoners to be exchanged somewhere South."
+- **E194: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 4 Nov 1864 Butler's headquarters told
+  Captain Langdon of the 1st U.S. Artillery, shipping for New York, that if General Hawley had already gone when he reached Fort Monroe he
+  should open his own letter of instructions and give the corresponding order to the vessels that had none. Hawley's report in the
+  Official Records (ser. I vol. 43 pt 2) prints the movement and the sealed instructions, not this telegram (searched 8-9 Oct 2026)."
+  Unsafe: "first decipherment", "previously unread". Depth sentence (mine): "On 4 Nov 1864 Captain Langdon's battery, bound for New York
+  in the election-week troop movement, was told to open its own sealed instructions if General Hawley had already sailed from Fort Monroe."
+
+### 5. Postmortem
+FM-R2b's two readings were sound in substance; three slips: E193's signer (decoder's Webster = Signature where Webster is a surname,
+the same plain-name-as-code slip FV-FM3c found in E189/E191), E193's "by the 20th" for "twenty-second", and E194's Hawley = Roddy kept
+in reading.md. The side find on page 5805/0 shows the same page carries a printed sibling (Butler V p.312): a reader of the unfiled rows
+of a page should grep Butler V for the signer's name before decoding. Corrections are carried by FIX (a reading.md regeneration is the
+decoder's, rule 7); this section records them.

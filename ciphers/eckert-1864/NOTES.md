@@ -2274,11 +2274,11 @@ Grades (decoder counts less the M tokens named in the table, by my hand count): 
 
 ## Remaining gaps (FM-R2b, 8 Oct 2026)
 Read so far: ten of ten rows filed (E185-E194); in print: E186, E188, E192. Not located in what was searched: E185 E187 E189 E190 E191 E193 E194.
-First audit FV-FM3c (8 Oct 2026, AUDIT.md "## AUDIT (FV-FM3c)"): E190 is in print (OR I/42 pt 3 p.1006, N1); E189's clear received copy is in the holder's public transcription (pointer 4711, N1); E187 N1 (body clear); E185 N3 weak D3, E191 N3 D2; pages 5799, 5748, 5831 eye-checked against the image (match). The bullets below are updated accordingly.
+First audit FV-FM3c (8 Oct 2026, AUDIT.md "## AUDIT (FV-FM3c)"): E190 is in print (OR I/42 pt 3 p.1006, N1); E189's clear received copy is in the holder's public transcription (pointer 4711, N1); E187 N1 (body clear); E185 N3 weak D3, E191 N3 D2; pages 5799, 5748, 5831 eye-checked against the image (match). First audit FV-FM4 (9 Oct 2026, AUDIT.md "## AUDIT (FV-FM4)"): E193 N3 weak D2, E194 N3 weak D3 (OR I/43 pt 2 Hawley report as external check); page 5784 eye-checked (match); readings to correct: E193 signer R. C. Webster (plain), "by the 22nd", 5,700 H; E194 Hawley plain, "pro" and "Barry" M; second audits queued as AUD2-LEDGER-8. The bullets below are updated accordingly.
 - E185 (Porter telegrams, 10 Dec 1864) - blocker: not-attempted; ORN I/11 and Butler's Dec 1864 letters not searched; next: ORN I/11 by Saugus/Onondaga/Parker, ~$0.4
-- E191, E193, E194 (Butler traffic Mar-Nov 1864) - blocker: not-attempted; E187/E189/E190 settled N1 by FV-FM3c; E191 searched in OR I/33, Butler III-IV by FV-FM3c; E191 second-audited by AUD2-LEDGER-7 (8 Oct 2026: N3 held; OR II/6 Chestnut 0; the arrest itself is printed, Alexandria Gazette 31 Mar 1864 p.1; D3 criteria met, held at D2 for the orchestrator); next: Baltimore Sun/American 29 Mar-10 Apr 1864 for E191 (owner desk or a Baltimore Sun archive), rare names by printed stem (Langdon) for E193/E194, ~$0.8
+- E191 (Butler traffic Mar 1864) - blocker: not-attempted; E193/E194 first-audited by FV-FM4 (9 Oct 2026; OR I/42 pt 2, II/7, I/43 pt 2, Butler IV-V, Grant 12, holder full text: not located), second audits AUD2-LEDGER-8 queued; E193/E194 reading corrections (AUDIT FV-FM4 s.3) - blocker: not-attempted; next: a FIX job carrying them through decode.py notes, ~$0.3; E187/E189/E190 settled N1 by FV-FM3c; E191 searched in OR I/33, Butler III-IV by FV-FM3c; E191 second-audited by AUD2-LEDGER-7 (8 Oct 2026: N3 held; OR II/6 Chestnut 0; the arrest itself is printed, Alexandria Gazette 31 Mar 1864 p.1; D3 criteria met, held at D2 for the orchestrator); next: Baltimore Sun/American 29 Mar-10 Apr 1864 for E191 (owner desk or a Baltimore Sun archive), ~$0.5
 - [settled by FV-FM3c] E187 Van Rensselaer (companion telegram 13215, Maj & PM) and E185 "Hemp town wileys" = Hampton Roads (5830 heads "Hampton wileys"); no step left.
-- E186 E188 E192 E193 (image check) - blocker: not-attempted; 5799, 5748, 5831 eye-checked by FV-FM3c (match); next: image pass on pointers 5635 5584 5643 5784 via tools/iiif_lines.py --image, ~$0.7
+- E186 E188 E192 (image check) - blocker: not-attempted; 5799, 5748, 5831 eye-checked by FV-FM3c (match), 5784 by FV-FM4 (match); next: image pass on pointers 5635 5584 5643 via tools/iiif_lines.py --image, ~$0.7
 
 ## Escalation (FM-R2b, 8 Oct 2026)
 - [x] siblings: same-page neighbours (e.g. 5805/1, 5824/1, 5589/0 and 5589/1) read in the images, not filed; none is one of the ten.
@@ -2494,3 +2494,16 @@ Read so far: nine of ten rows filed (E220, E222-E229); 5587/1 plain and already 
 - [x] image-check: all nine pages read whole (matches the transcription).
 - [x] retry: none needed.
 Verdict: keep going: 4 internal gaps, cheapest next: page-by-page OR I/36 pt 3 and I/40 pt 2 for E222/E224/E226, ~$0.5
+
+
+## FV-FM4 (8-9 Oct 2026, account 1, for LANE LEDGER)
+First verifier for E193 and E194 (reader FM-R2b); full log in AUDIT.md "## AUDIT (FV-FM4)". Prior-work (`tools/prior_work.py --item-spec`,
+step audit): exit 4 on two target-level live-claim LEADs (ECK-PAGEFIX mssEC 19; FIX-FM3, entries E170-E191/E200s) -- neither covers E193/E194,
+recorded CLEAR; solver caches and Tomokiyo mirror CLEAR; aaymeloglu UNCHECKED-NET. Duplicate diff: none. Image 5784 and 5805 eye-checked from
+`tools/iiif_lines.py --image` crops (scratch, not committed): transcription matches. Results: **E193 N3 (weak) D2**, **E194 N3 (weak) D3**; SO rows
+SO-ECKERT-E193/E194 queued; WORK-QUEUE AUD2-LEDGER-8. Reading corrections for a FIX job (rule 7, decode.py notes): E193 "Webster" plain (Col. R. C.
+Webster, Chief QM Fort Monroe, Butler V), "Are see" = R. C. plain, "Toby" plain, "harsh second" = twenty-second; E194 "Hawley" plain (not Roddy).
+Side finds for future readers: 5805/0 (Sheldon to John Horner, 4 Nov 1864) is printed in Butler V p.312 (Webster to Butler, Fifth Avenue Hotel);
+5614 (20 Apr 1864, Butler to Grant on exchange instructions) has its clear received copy at pointer 4551. Neither is filed.
+Requests: hdl.huntington.org 22 (two token blocks: 9 dmQuery + 2 IIIF full pages; 11 dmGetItemInfo; >= 3.2 s apart); be-api 9 (1.6 s apart);
+Google Books 1 (429, host stopped); chroniclingamerica.loc.gov 2 (non-JSON, not retried).
