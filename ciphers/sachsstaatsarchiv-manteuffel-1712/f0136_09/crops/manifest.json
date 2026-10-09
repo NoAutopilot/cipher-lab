@@ -1,0 +1,234 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f0136_L03.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    600,
+    1397,
+    2150,
+    1531
+   ],
+   "lines_in_crop": 2,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 62,
+    "distance": 43,
+    "prominence": 147.0
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  },
+  {
+   "crop": "f0136_L07.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    600,
+    1898,
+    2150,
+    2022
+   ],
+   "lines_in_crop": 2,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 62,
+    "distance": 43,
+    "prominence": 147.0
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  },
+  {
+   "crop": "f0136_L09.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    600,
+    2144,
+    2150,
+    2273
+   ],
+   "lines_in_crop": 2,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 62,
+    "distance": 43,
+    "prominence": 147.0
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  },
+  {
+   "crop": "f0136_L10.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    600,
+    2273,
+    2150,
+    2404
+   ],
+   "lines_in_crop": 2,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 62,
+    "distance": 43,
+    "prominence": 147.0
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  },
+  {
+   "crop": "f0136_L11.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    600,
+    2404,
+    2150,
+    2532
+   ],
+   "lines_in_crop": 2,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 62,
+    "distance": 43,
+    "prominence": 147.0
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  },
+  {
+   "crop": "f0136_L12.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    600,
+    2532,
+    2150,
+    2650
+   ],
+   "lines_in_crop": 2,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 62,
+    "distance": 43,
+    "prominence": 147.0
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  },
+  {
+   "crop": "f0136_L13.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    600,
+    2650,
+    2150,
+    2779
+   ],
+   "lines_in_crop": 2,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 62,
+    "distance": 43,
+    "prominence": 147.0
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  },
+  {
+   "crop": "f0136_L14.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    600,
+    2779,
+    2150,
+    2907
+   ],
+   "lines_in_crop": 2,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 62,
+    "distance": 43,
+    "prominence": 147.0
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  },
+  {
+   "crop": "f0136_L16.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    600,
+    3040,
+    2150,
+    3172
+   ],
+   "lines_in_crop": 2,
+   "band": 16,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 62,
+    "distance": 43,
+    "prominence": 147.0
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  },
+  {
+   "crop": "f0136R_L01.jpg",
+   "source_url": "https://www.archiv.sachsen.de/digitalisate/c5158a8f-281c-49a8-985a-b0aa75400e17/fullsize/0136.jpg",
+   "source_file": "0136.jpg",
+   "box": [
+    2150,
+    1163,
+    3600,
+    1283
+   ],
+   "lines_in_crop": 2,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 61,
+    "distance": 42,
+    "prominence": 103.6
+   },
+   "date": "09 Oct 2026",
+   "source_sha256_prefix": "ff5e898d384dbfbb",
+   "note": "saved greyscale JPEG q80 at native size (MANT-0136)"
+  }
+ ]
+}
