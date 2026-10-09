@@ -1,0 +1,24 @@
+line	count	doubtful	note
+L01	27	1	s1 prose only (0); s3 mid-right vertical stroke before 3-shape counted as one sign with it (one vs two)
+L02	45	3	s2 left: stroke-through-3 counted as one sign; s2 middle: ij-shape counted as one; s4 start: '=' whose lower bar runs into the crossed 8 counted as separate sign
+L03	47	1	s3 right: ij-shape counted as one
+L04	45	3	s1 left and s2 left: stroke-through-3 counted as one sign each; s3 right: ij-shape counted as one
+L05	45	3	s2 middle and right: ij-shape counted as one each; s2/s3 boundary: one a/omega-like sign split across segments, counted once in s3
+L01_s1	0		
+L01_s2	11		
+L01_s3	14		
+L01_s4	1		
+L02_s1	13		
+L02_s2	15		
+L02_s3	14		
+L02_s4	3		
+L03_s1	13		
+L03_s2	17		
+L03_s3	17		
+L04_s1	13		
+L04_s2	16		
+L04_s3	16		
+L05_s1	11		
+L05_s2	16		
+L05_s3	15		
+L05_s4	3		
