@@ -7584,3 +7584,9 @@ column + the error map of both pools, read-free, cap 4). Ideas register v2: rese
 | experiment | dev (paired, p) | eval (paired, p; looks so far) | verdict | cost |
 |---|---|---|---|---|
 | 0a power audit | n/a | n/a | gate set from the table | lane |
+| 0b f152r item (TXP-152) | n/a | eval pool 34 (p<0.01 branch; 0c PASS 0.863) | built; baseline 0.082 (6/73) | 6.20 |
+| 0d error map (TXP-AGREE) | dev 37: all-same-wrong 6 | eval 29: all-same-wrong 8 (read-free) | on file | 2.36 |
+| scout DECODE 1590s (TXP-DEC) | n/a | n/a | 3 glossed Dinteville leaves (~1,000 signs, dev) + fr.3623 f.23r (eval hand); builds live 15:48 | 3.92 |
+| X2 pair classifiers (TXE2-PAIR) | 1/11 p 0.0063 wrong way | not taken (0 looks) | dev-FAIL | 2.19 |
+| X6 sorter curve (TXE2-SORT) | measurement: cluster propagation destructive; per-tile doubt feed 3-6 of 7-27 in 20 | read-free sim | measured | 3.48 (with X20) |
+| X20 owner decisions (TXE2-SORT) | 0/3 p 0.25 | not taken | dev-FAIL | -- |
