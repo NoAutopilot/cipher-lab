@@ -18,7 +18,26 @@ dropped. The tool reads only; it never edits a PREREG, RESULTS or truth file and
 
   python3 tools/tx_register.py                 # write research/TX-REGISTER.tsv, print counts per verdict
   python3 tools/tx_register.py --stdout        # print the TSV instead
+  python3 tools/tx_register.py --check          # exit 1 listing any unparsed txeng2 row
   python3 tools/tx_register.py --check benchmark-tx/PREREG-new.md
+
+Verdict shapes (TXE2-REGFIX, 9 Oct 2026, TX-RED pass 5 F25). A results-log row parses whatever its id cell looks like
+(V2, E-f178r, 0b-152, X9+X17, "X1b-v4, A2, REGFIX"). The verdict cell's leading words are read first (LEAD): "null" ->
+non-test; "verified", "on file", "audit on file", "product", "pool restored", "baseline change", "the gate is set",
+"eval pool", "sorter feed updated", "done:" -> measured; "cancelled"/"blocked", "gate incomplete ... retired" -> retired (a
+"blocked: no X" row gets "reopen when: new material -- X" in its reason, for tools/retired.py); "not run" and "pooled
+... removed" -> non-test; "running" -> running; "FAIL:" (a
+control) -> dev-FAIL; then the older substring rules ("gate ... MET" -> dev-PASS, "not met" -> dev-FAIL). A RESULTS.md
+with no "Verdict:" line takes its verdict from its first "**Outcome" line, else its first "gate ... ->" / "gate: MET"
+line, else its first line naming a verdict or "no gate" (table rows skipped); if none maps it stays unparsed with that
+sentence in the reason. Citations are read from the full results-log cells, so a file a row cites is covered by it.
+
+--check with no PREREG exits 1 and lists the rows when any txeng2 (current-campaign) row is `unparsed`; with a PREREG it
+applies the same test first, then the PREREG gate below.
+Must catch (::test_check_catches_unparsed_current): a txeng2 results-log row whose verdict text the mapper does not know
+-- exit 1, with or without a PREREG. Must NOT block (::test_check_ignores_first_campaign_unparsed,
+::test_check_allows_non_retired): a txeng (first-campaign) idea row that stays unparsed (M9 "covered") -- exit 0; and a
+PREREG with a proper Nearest-prior section -- exit 0. Shapes: ::test_lane_verdict_shapes, ::test_results_outcome_fallback.
 
 --check PREREG exits non-zero unless the PREREG has a "Nearest prior" or "differs from" section (a markdown heading, or
 a line starting with that label) naming at least one register id in a sentence of at least five words, and unless every
@@ -47,6 +66,7 @@ COLS = ['id', 'campaign', 'family', 'mechanism_attacked', 'unit_or_pool', 'dev_r
         'verdict', 'reason', 'source_file', 'date']
 VERDICTS = ['dev-FAIL', 'dev-PASS', 'moved-eval', 'did-not-move', 'non-test', 'retired', 'measured', 'running',
             'queued', 'unparsed']
+CURRENT = 'txeng2'  # the campaign whose rows --check refuses to leave unparsed
 MONTHS = {'Sept': 9, 'Sep': 9, 'Oct': 10}
 
 
@@ -55,11 +75,31 @@ def clean(s, n=300):
     return s if len(s) <= n else s[:n - 3] + '...'
 
 
+# Leading words of a verdict cell, as LANE TX-ENGINEER-2 writes them (TXE2-REGFIX, 9 Oct 2026), tried before the
+# substring rules below; each maps to one of VERDICTS, the cell itself is kept as the reason.
+LEAD = [
+    (r'null\b', 'non-test'),                                  # "null: untested at this N ..." (X21b)
+    (r'running\b', 'running'),
+    (r'(cancelled|canceled|blocked)\b', 'retired'),            # "cancelled (Amendment 4 ...); blocked: ..." (X2c)
+    (r'gate incomplete\b.*\bretired\b', 'retired'),           # R3b
+    (r'not run\b', 'non-test'),                               # an idea never run: superseded (X15), no answer (X18)
+    (r'pooled\b.*\bremoved\b', 'non-test'),                   # pooled, then removed from the pool unscored (R2)
+    (r'fail\s*:', 'dev-FAIL'),                                 # "FAIL: ..." on a control (C1)
+    (r'(verified|on file|audit on file|product|pool restored|baseline change|the gate is set|eval pool'
+     r'|sorter feed updated|done\s*:)', 'measured'),
+]
+
+
 def map_verdict(text):
     """Map a free-text status or verdict cell to the register vocabulary; None when it cannot be read."""
     t = (text or '').lower()
     if not t.strip():
         return None
+    lead = re.sub(r'^[\s*_`:|-]+', '', t)
+    lead = re.sub(r'^(outcome|verdict)\s*:[\s*_`]*', '', lead)  # "**Outcome: null.**" reads as "null
+    for pat, v in LEAD:
+        if re.match(pat, lead):
+            return v
     if 'retired' in t:
         return 'retired'
     if 'non-test' in t or 'non test' in t:
@@ -74,13 +114,25 @@ def map_verdict(text):
         return 'queued'
     if re.search(r'confirm figure|proposal only|no gate|doubt flag', t):
         return 'measured'
-    if re.search(r'dev-pass|\bpass\b', t) and not re.search(r'fail', t):
+    if re.search(r'\bnot met\b', t):
+        return 'dev-FAIL'
+    if re.search(r'dev-pass|\bpass\b|\bmet\b', t) and not re.search(r'fail', t):
         return 'dev-PASS'
     if re.search(r'fail|not adopted|worse', t):
         return 'dev-FAIL'
     if re.search(r'measured|error map|on file|no gate|proposal only|signal|confirm figure|\bbuilt\b|truth rule', t):
         return 'measured'
     return None
+
+
+def reason_of(cell, verdict):
+    """The verdict cell as the reason; a retired "blocked: no X" row also carries the reopen condition its own words
+    state ("reopen when: new material -- X"), so tools/retired.py --check can read it (X2c)."""
+    r = clean(cell, 200)
+    m = re.search(r'blocked\s*:\s*no ([^;.()]+)', cell or '', re.I)
+    if verdict == 'retired' and m and not re.search(r'reopen', cell, re.I):
+        r = clean('%s; reopen when: new material -- %s' % (clean(cell, 160), m.group(1).strip()), 260)
+    return r
 
 
 def md_rows(lines, start):
@@ -154,9 +206,9 @@ def parse_ideas(path, campaign, root=ROOT):
                              dev_result=clean(c[3], 240), eval_result=clean(c[4], 160),
                              eval_looks=looks.group(1) if looks else ('0' if 'not taken' in c[4].lower() else ''),
                              verdict=v or 'unparsed',
-                             reason=clean(c[5], 200) if v else clean('UNPARSED %s:%d %s' % (path, ln, lines[ln - 1]), 300),
+                             reason=reason_of(c[5], v) if v else clean('UNPARSED %s:%d %s' % (path, ln, lines[ln - 1]), 300),
                              source_file='%s:%d; %s' % (path, ln, clean(c[2], 120)),
-                             date=parse_date(c[0])))
+                             date=parse_date(c[0]), _raw=' '.join(c)))
     for rid, idea in ideas.items():
         if rid in logged:
             continue
@@ -220,6 +272,8 @@ def parse_files(cited, root=ROOT):
                     vl = l if len(l.split(':', 1)[-1].strip()) > 3 and ':' in l else ' '.join(lines[k:k + 2])
                     break
             v = map_verdict(vl) if vl else None
+            if v is None and not vl:
+                v, vl = outcome_sentence(lines)
             if v is None and re.match(r'TXP-', title):
                 v, vl = 'measured', 'benchmark item / truth build (TXP-), no gate: ' + title
             elif v is None and 'DRAFT' in title:
@@ -229,9 +283,29 @@ def parse_files(cited, root=ROOT):
             rows.append(dict(id=rid, campaign=camp, family=clean(title, 160), mechanism_attacked='',
                              unit_or_pool=unit_of(text[:2000]), dev_result='', eval_result='', eval_looks='',
                              verdict=v or 'unparsed',
-                             reason=clean(vl, 200) if v else clean('UNPARSED no Verdict line read; title: ' + title, 300),
+                             reason=clean(vl, 200) if v else clean('UNPARSED no Verdict line read%s; title: %s' % (
+                                 ('; outcome/gate/verdict sentence unmapped: ' + vl) if vl else '', title), 300),
                              source_file=rel, date=file_date(text)))
     return rows
+
+
+OUTCOME_PATS = [r'\s*\**\s*outcome\b|#+\s*outcome\b', r'.*\bgate\b.*(->|:\s*\**\s*(not met|met|pass|fail)\b)',
+                r'.*\bverdicts?\b', r'.*\bno gate\b']
+
+
+def outcome_sentence(lines):
+    """For a RESULTS.md with no "Verdict:" line: the first "**Outcome" line, else the first "Gate ... ->" / "gate: MET"
+    line, else the first line naming a verdict (table rows skipped); returns (verdict or None, the sentence used)."""
+    first = ''
+    for pat in OUTCOME_PATS:
+        for l in lines:
+            if l.lstrip().startswith('|') or not re.match(pat, l, re.I):
+                continue
+            first = first or l
+            v = map_verdict(l)
+            if v:
+                return v, l
+    return None, first
 
 
 def compile_register(root=ROOT):
@@ -240,7 +314,8 @@ def compile_register(root=ROOT):
         rows += parse_ideas(path, camp, root)
     today = parse_today(root)
     rows += today
-    blob = ' '.join(r['source_file'] + ' ' + r['reason'] + ' ' + r['dev_result'] + ' ' + r['eval_result'] for r in rows)
+    blob = ' '.join(r['source_file'] + ' ' + r['reason'] + ' ' + r['dev_result'] + ' ' + r['eval_result'] + ' ' +
+                    r.get('_raw', '') for r in rows)
     cited = set(re.findall(r'benchmark-tx/[\w./-]+?\.md', blob))
     cited |= set(re.findall(r'\b(PREREG-[\w-]+\.md)', blob))
     cited |= {c[len('benchmark-tx/'):] for c in cited if c.startswith('benchmark-tx/')}
@@ -339,9 +414,18 @@ def main(argv=None):
     ap.add_argument('--root', default=ROOT)
     ap.add_argument('--out', default=OUT, help='register path relative to --root (default %(default)s)')
     ap.add_argument('--stdout', action='store_true', help='print the TSV instead of writing it')
-    ap.add_argument('--check', metavar='PREREG', help='gate a PREREG against the register (reads --out)')
+    ap.add_argument('--check', metavar='PREREG', nargs='?', const='',
+                    help='fail on any unparsed current-campaign row; with PREREG also gate it against the register')
     a = ap.parse_args(argv)
-    if a.check:
+    if a.check is not None:
+        bad = [r for r in compile_register(a.root) if r['campaign'] == CURRENT and r['verdict'] == 'unparsed']
+        if bad:
+            print('FAIL %d %s row(s) unparsed -- teach the mapper their verdict shape:\n  ' % (len(bad), CURRENT) +
+                  '\n  '.join('%s: %s' % (r['id'], r['reason'][:200]) for r in bad))
+            return 1
+        if not a.check:
+            print('OK no %s row unparsed' % CURRENT)
+            return 0
         reg = os.path.join(a.root, a.out)
         if not os.path.exists(reg):
             print('no register at %s: run tools/tx_register.py first' % reg)
