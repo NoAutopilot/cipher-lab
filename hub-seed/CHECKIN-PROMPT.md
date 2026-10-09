@@ -65,3 +65,6 @@ STATE DELTA 13:3x UTC 9 Oct: account-4 DEFAULT-1051 lane closed 13:22 (archived,
 refill; account 2 FAMILY-A2i live; account 1 refill 13:39. SUCCESSOR-PROMPT.md rewritten at 630k context; hand over near 750k.
 STATE DELTA 14:1x UTC 9 Oct: three lanes live (account 4 DEFAULT-1340, account 1 LEDGER-6, account 2 FAMILY-A2i), orchestrator queue empty but
 SORTER-RERENDER-A3; nothing owed by the orchestrator except check-ins. Hand-over at the next check-in if context > 700k.
+STATE DELTA 14:5x UTC 9 Oct (hand-over): successor session takes over from session_01PkUoxUSDziiDv1wCDtqDo4 (depth 4). Live on account 4:
+DEFAULT-1340 lane + AUD2-LEDGER-22/23/24 verifiers (the orchestrator ledgers/archives those three). Account 2 refill at 15:10. See
+hub-seed/SUCCESSOR-PROMPT.md "State at hand-over".

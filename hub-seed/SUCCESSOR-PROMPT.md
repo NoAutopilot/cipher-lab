@@ -27,11 +27,19 @@ read whole, never with tail; room.py --push on an already-committed tree says "n
 a rebase refused for "unstaged changes" is KEYS-STATUS.md / the livecheck cache / NEXT-STEPS.tsv / NO-CRACKS.tsv: commit them by path
 first; open_asks.py keeps listing the 09:42 MQS-BNF-S6 line although it was answered at 09:5x (treat as answered).
 
-State at writing (13:3x UTC 9 Oct; refresh the block below at hand-over): account 4 -- DEFAULT-1051 lane closed 13:22 (20 workers,
-~50 of 60), nothing queued for account 4, blast lanes=1 on default-lane.md refills at the dispatcher's next firing; account 1 -- LANE
-LEDGER-5 closed 12:37, blast lanes=2 lane-ledger refills at 13:39; account 2 -- LANE FAMILY-A2i live since 13:15 with five workers;
-account 3 -- silent since 02:03 (SORTER-RERENDER-A3 queued for it only). Board 19 / 97 / 19 / 1 / 6 (recovered-passage / completed /
-fragments / key-to-known-text / contributions). Riksarkivet copy order = SEND-QUEUE S7 (gate 7 passed; the owner's send runner sends;
-ASKS 159 backlog because the desk is at five). To-do for the first check-in after 10 Oct 00:00 UTC: re-queue ONE Gallica probe each for
-SIG (lane-significance brief, SIG-5 handoff item 1) and MQS-BNF-S4; Gallica answered 403 all of 9 Oct. USAGE.tsv bars are stale on
-every account (the usage mod is not loading); flagged once, not repeated. Keys: 5 of 9 working (Semantic Scholar 429).
+State at hand-over (14:5x UTC 9 Oct, session_01PkUoxUSDziiDv1wCDtqDo4 at ~700k context, cost ~28 by get_session; eleven check-ins
+09:22-14:5x): account 4 -- LANE DEFAULT-account-4-20261009-1340 live (session_01ALo565sPeiKLJT5UrYLMkv; waves 1-3; it ledgers and archives
+its own workers; its send_later fires late, ping it by send_message if silent past its own check-in time) plus three second-audit
+verifiers spawned from the orchestrator session at 14:47 that YOU ledger (cost by get_session), retitle ARCHIVED and archive on their
+done lines, closing their WORK-QUEUE rows: AUD2-LEDGER-22 session_01TaJELb79NhYF8ZTQVL7qUt (cap 5), AUD2-LEDGER-23
+session_01AVihkRiS2YD2WNauEvB2ke (cap 2.5), AUD2-LEDGER-24 session_01JewjCMFEfnsd8PTx1Uckgn (cap 5); any further AUD2-LEDGER-* row
+LANE LEDGER (account 1) queues as account-3 is re-tagged to account-4 and spawned the same way (the row names items, cap and brief).
+Account 1 -- LANE LEDGER-6 live (session_0112WrReDK9hPUT3z5o7jJGi, eckert-1864 Fort Monroe E300-E321 readers and first audits; Tulip =
+stop / whiskey = Troops proposed at S; the No.9 key wins on pointer 5570). Account 2 -- FAMILY-A2i closed 14:26 (~52.5 of 60; Brochado
+Carta 123 key test PASS 0.836, code 24 = e at C; Manteuffel 0474 gloss gates PASS); blast lanes=1 lane-family refills at its 15:10
+dispatcher. Account 3 -- silent since 02:03 (SORTER-RERENDER-A3 queued for it only). Board 19 / 97 / 19 / 1 / 6; rebuild
+(`python3 tools/build_dashboard.py x`) after the FV-FM9 and AUD2 second audits change classes. Riksarkivet copy order = SEND-QUEUE S7
+(gate 7 passed; the owner's send runner sends; ASKS 159 backlog, desk at five). To-do for the first check-in after 10 Oct 00:00 UTC:
+re-queue ONE Gallica probe each for SIG (lane-significance brief, SIG-5 handoff item 1) and MQS-BNF-S4; Gallica answered 403 all of
+9 Oct; HTRC EF API down from ~13:50 (SALAZ-HTRC J7 rerun when it answers). USAGE.tsv bars stale on every account (flagged once).
+Keys: 5 of 9 working (Semantic Scholar 429). Predecessor's trigger trig_01RCuWkgfPyVeE9449tH2pvs is deleted at hand-over; arm your own.
