@@ -1823,5 +1823,65 @@ Code-word tokens: H 25.
 
 Code-word tokens: H 8.
 
-Totals over the 282 entries: H 4892, C 55, I 25, M 34, S 17, U 10.
+**E341 | Page 232 | 9892 | mssEC 18 (obj 10074, pointer 9892; printed page 226), 8 Nov 1864 11 AM Washington, to J. C. Van Duzer at Nashville for Maj. Gen. Thomas, signed General-in-Chief (Halleck): General Schofield as the commander of an army ranks General Stanley as the commander of a corps; it was therefore proper for you to assign Stanley to Schofield's command; a former order of General Sherman placing Schofield under Stanley was disapproved by the War Department; printed OR I/39 pt 3 p.703 (page head 704 follows the item) (MS18-R4; row 9892/1; text checked against the print, page not eye-checked)**
+
+{time: 11 AM} [8] [Maj Gen Geo. H. Thomas] [.] [Maj Genl J. M. Schofield] as the polker of an [Army] ranks [General] [Invest (-ed, -ing)] as the polker offa [Corps] [.] Twas there four proper for you to assign [Invest (-ed, -ing)] to [Maj Genl J. M. Schofield]'s [Command = Er (-ed, -ing)] A former order of [Maj Gen W. T. Sherman] placing [Maj Genl J. M. Schofield] under [Invest (-ed, -ing)] was dies approved blithe War [Department]  {tail: [signed] [General-in-Chief]}
+
+Code-word tokens: H 19.
+
+**E342 | Page 175 | 9835 | mssEC 18 (obj 10074, pointer 9835; printed page 169), 5 Sept 1864 12 noon Washington, to Carey (operator, Lexington Ky) for Maj. Gen. Burbridge, signed General-in-Chief (Halleck): Lieutenant-General Grant directs that you relieve Brig. Gen. E. A. Paine from command at Paducah; General Grant does not deem him fit to command where there are any loyal people; printed OR I/39 pt 2 p.343 (page head 344 follows the item) (MS18-R4; row 9835/0; text checked against the print, page not eye-checked)**
+
+{time: 12} [5] for [General] Burr [Bridge (-ed, -ing)] [.] [Maj Genl U.S. Grant] directs that you relieve [Brigadier General] E A Pain from [Command = Er (-ed, -ing)] at Pay [Meridian] a [.] [Maj Genl U.S. Grant] does not deem him fit to [Command = Er (-ed, -ing)] where there are any loyal people  {tail: [signed] [General-in-Chief] that pains alleviated}
+
+Code-word tokens: H 14.
+
+**E343 | Page 167 | 9827 | mssEC 18 (obj 10074, pointer 9827; printed page 161), 26 Aug 1864 4.30 PM Washington, to McCaine (for Maj. Gen. Sheridan, decode: 'Katy Nabob'), sender not on the leaf: the provisional battalion of cavalry belonging to Gregg's division, now guarding the Upper Potomac while the 8th Illinois Cavalry is absent, has been ordered to City Point; this leaves me without means of guarding the river while the 8th Illinois is absent; Major [Waite] reports today he cannot get his regiment ready to move before Monday; the forges, coal etc. have been sent from here; I think he will get ready as soon as possible; if you think it advisable I will send out the [scouts] in the direction of Aldie; they cannot raise [horses] and cannot go to [?]; they may scout about Aldie and pick up rumors (MS18-R4; row 9827/1; image-read at 2400 px)**
+
+{time: 4.30 PM} [P. H. Sheriden] The provisional battalion of [Cavalry] belonging to Greggs [Division] which is now [Over the] Upper [Potomac] [Guard (-ed, -ing)]ing the [River] while the [8] [Illinois] [Cavalry] is absent [,] has been ordered to [City Point] stop This will leave me without means of [Guard (-ed, -ing)]ing the [River] while the [8] [Illinois] is absent stop [Major] waite [Report]'s [Today] that he cannot get his [Regiment] ready to [Movement] before Monday [.] The forges coal &c had toby sent from here I think he will get ready [As soon as] possible [.] If you think it advisable I will send out the [16] [New York] [In the] direction of Aldie They cannot raise morn [300] forth field & they cannot go to Laughter [Gap] [.] They may [Scout (-ed, -ing)] about Aldie & pick up rumors Corkscrew
+
+Code-word tokens: H 33.
+
+**E344 | Page 206 | 9866 | mssEC 18 (obj 10074, pointer 9866; printed page 200), 14 Oct 1864 Washington, to Van Duzer at Nashville for Maj. Gen. Thomas (first part, Stanton 10 a.m.): I have directed copies of the following dispatches of General Grant to General Sherman to be delivered to you that you may understand General Grant's views while the communication between you and Sherman is interrupted; please keep the Department fully and frequently advised of what transpires so that we can notify General Grant of the aspect of things, signed Secretary of War; followed by an instruction from the cipher office (Eckert) to translate and deliver to Lamb copies of all telegrams to and from Kunkle (Dix) particularly 'plank from Beckwith' and the words beginning Henry and McClellan (M), answer if this is done; the first part printed OR I/39 pt 3 p.274 (page head 274 precedes the item) (MS18-R4; row 9866/3; text checked against the print, page not eye-checked)**
+
+[Washington] [14] for [Maj Gen Geo. H. Thomas] ---- I have directed copies [Of the] [Follow (-ed, -ing)]ing Platations of [Maj Genl U.S. Grant] to [Maj Gen W. T. Sherman] to be delivered to you that you may understand [Maj Genl U.S. Grant]'s views while the platation between you & [Maj Gen W. T. Sherman] is interrupted ---- Please keep the [Department] fully & frequently advised of what transpires so that we can notify [Maj Genl U.S. Grant] [Of the] aspect of things  {tail: [signed] [Secretary of War] ---- In connection with this translate & deliver to [Maj Gen Geo. H. Thomas] copies of all [Cipher]'s to and from [Maj Gen Jno A. Dix] [,] particularly [2] from Beckwith on [13] of [53] words commencing Henry & [1] of [116] words beginning McClellan ---- answer if this is done Eckert}
+
+Code-word tokens: H 26.
+
+**E345 | Page 165 | 9825 | mssEC 18 (obj 10074, pointer 9825; printed page 159), 19 Aug 1864 3 PM Washington, to 'Sholes near Atlanta Ga' (ledger label No 1; decode: Kid nap = Sherman's staff addressee), signed Jonah: it seems absolutely necessary that [Hurlbut, M] should command the troops on both banks of the Mississippi; he cannot otherwise protect the navigation or prevent Kirby Smith from waylaying [the river transports]; the conflict of orders at [Memphis] probably results from the fact that [Grant] first directed troops in West Tennessee to be sent to you but a few days after directed that [Hurlbut] should send everything to Europe [sic, M]; I think you will find [Halleck?] is giving you all the assistance in his power (MS18-R4; row 9825/2; image-read at 2400 px)**
+
+[Washington] [19] {time: 3 PM} Kid nap [.] It seems absolutely [Necessary] that [Maj Gen S. A. Hurlbut] Shld [Command = Er (-ed, -ing)] the [Troops] on both banks [Of the] [Mississippi] He cannot otherwise protect the navigation or prevent Kirby Smith from [Reinforce (-ed, -ing)]ing hudson [.] The conflict of orders at [Memphis] probly results from the fact that [Maj Genl U.S. Grant] first directed [Troops] in [West] [Tennessee] to be sent to you [,] but a few days after directed that [Maj Gen S. A. Hurlbut] shld send everything [Available] to [Mobile] [.] I think that you will find [Maj Gen S. A. Hurlbut] is giving you all the assistance in his power [General-in-Chief]
+
+Code-word tokens: H 24.
+
+**E346 | Page 160 | 9820 | mssEC 18 (obj 10074, pointer 9820; printed page 154), 13 Aug 1864 12.30 Washington, to Horner (N.Y.) for Robert Murray, U.S. Marshal, New York (ledger label No 1), signed Stanton ('Brutus' with 'webster'): Gordon Bruce & Co, or Gordon Bruce & Hanliff, are supplying machinery of some description for Alex Keith Jr, the rebel agent at Halifax, which is to be shipped to Mitchell Kennuer & Co, Montreal; please find out what the machinery is and report to me immediately, also what kind of business Gordon Bruce & Co carry on; James Bruce of that firm is in Halifax or was yesterday (MS18-R4; row 9820/1; image-read at 2400 px)**
+
+{time: 12.30} {date: Aug 13} for Robt Murray U S marshal [New York] ---- Gordon Bruce & Co or Gordon Bruce & Hanliff are supplying machinery of some description for Alex Keith Jr the [Rebel] agent at Halifax which is tobe Shipped to Mitchell Kennuer & Co Mont real ---- Please find out what the machinery is & [Report] to me immed'y [,] also what kind of business Gordon Bruce & Co carry on ---- James Bruce of that firm is in Halifax or was yesterday  {tail: [signed] [Secretary of War]}
+
+Code-word tokens: H 8.
+
+**E347 | Page 151 | 9811 | mssEC 18 (obj 10074, pointer 9811; printed page 145), 5 Aug 1864 Washington, to Sampson at Baltimore for W. P. Smith: General Grant with one of his staff wishes to go to Monocacy this afternoon; have your car put on the Frederick train and have Joe go along with it; the General leaves here on [3 PM] train for Relay where he will meet your car; have some refreshments; the departure of the General must be kept a profound secret; signed W. G. Wood, Side Viola Growl Aug plaster (MS18-R4; row 9811/2; image-read at 2400 px)**
+
+for W. P. Smith [Baltimore] ---- [Maj Genl U.S. Grant] with one of his Stf wishes to go to Monocacy this afternoon Have your car put on Fred erick train & have Joe to go along with it ---- The [General] leaves here on {time: 3 PM} train for [Evacuate (-ed, -ing) - ion] where he will meet your car ---- Have some refresh ments The depart ure ofthe [General] must be kept a profound secret sig W G Wood Side {time: 12.30} [Washington] {date: Aug 5} ---- ----
+
+Code-word tokens: H 9.
+
+**E348 | Page 119 | 9779 | mssEC 18 (obj 10074, pointer 9779; printed page 113), 8 July 1864 11 PM Washington, to Jno Horner N.Y. for Maj. Gen. Dix, signed Infant = Secretary of War (Stanton): please report immediately what is doing in respect to sending State troops from New York; General [Wallace] reports the enemy about 20,000 strong moving by Urbana about thirty miles from here toward Washington; this is confirmed by General [Howe] now in command at Harper's Ferry; General Halleck reports he has no troops here fit for field service; hurry this up; printed OR I/37 pt 2, Stanton to Dix, War Department 8 July 1864 11 p.m. (page head not legible in the OCR) (MS18-R4; row 9779/1; text checked against the print, page not eye-checked)**
+
+[Washington] {date: July 8} {time: 11 PM} For [Maj Gen Jno A. Dix] [New York] [.] Please [Report] imm'y what is doing in respect to sending state [Troops] from [New York] [.] [General] [Ram] [Report]'s the [Enemy] about [20000] strong [Movement]ing by Urbana about [30] [Mile]'s from here [Towards] [Washington] [.] This is confirmed by Shelten Howe now in [Command = Er (-ed, -ing)] at [Harpers Ferry] [.] [General-in-Chief] [Report]'s that he has no [Troops] here fit for field service  {tail: [signed] [Secretary of War] Hurry this up}
+
+Code-word tokens: H 30.
+
+**E349 | Page 183 | 9843 | mssEC 18 (obj 10074, pointer 9843; printed page 177), 16 Sept 1864 8 PM Washington, to the cipher clerk at Nashville for Donaldson, Chief Quartermaster (Vinton), signed M. C. Meigs: who can relieve Colonel Crane as disbursing officer; the duties of Inspector and of disbursing officer are incompatible; having been appointed Inspector he must be relieved of his present duties; followed by a note to John (Eckert's office): a long [cipher] dispatch is coming through from [Meade, M] to you; shall it be forwarded to you at [Baltimore] or wait your arrival here; answer quick (MS18-R4; row 9843/1; image-read at 2400 px)**
+
+Nashville [Washington] [16] {time: 8 PM} for [Colonel] Donaldson Chf [Quartermaster] who can relieve [Colonel] Crane as disbursing officer [?] The duties of Inspector and of disburse sing officer are incompatible Having been appointed Inspector he must be relieved of his present duties MC Meigs [Maj Genl U.S. Grant] A long [Cipher] dispatch is coming through from [Maj Genl G. G. Meade] to you shall it be for warded to you at [Baltimore] or wait your arrival here  {tail: [signed] [Secretary of War] ans quick}
+
+Code-word tokens: H 13.
+
+**E350 | Page 235 | 9895 | mssEC 18 (obj 10074, pointer 9895; printed page 229), 10 Nov 1864 9 PM Washington, to Capt. R. C. Clowry (St Louis) for Col. A. G. Brackett at the Planters House: General-in-Chief countermands the orders [?]; inform me at the Burnet House, Cincinnati, 12 Nov, when Sheridan's and Grierson's [commands] will be in St Louis and the number of serviceable horses there for issue; await orders; will be in Nashville 15th instant; signed Wm Redwood Price (MS18-R4; row 9895/2; image-read at 2400 px)**
+
+[Washington] {date: Nov 10} {time: 9 PM} for [Colonel] A G Brackett Especial Ispect or Tomama [Concentrate (-ed, -ing)]ers House [St Louis] [.] [General-in-Chief] Counter mans the orders [.] Inform me Bur net House [Cincinnati] {date: Nov 12} when [General]'s Pleasant on and Griersons [Command = Er (-ed, -ing)]'s will be in [St Louis] and number of service able [Horse]'s there for issue [.] await orders [.] Will be in [Nashville] [15] instant and [Communicate (-ed, -ing)]  {tail: [signed] Wm Red wood Price [Major] and so forth}
+
+Code-word tokens: H 22.
+
+Totals over the 292 entries: H 5090, C 55, I 25, M 34, S 17, U 10.
 <!-- decode.py: derived block ends -->

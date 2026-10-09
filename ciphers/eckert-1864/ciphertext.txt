@@ -3746,3 +3746,145 @@ Hall can leave the safe open by taking
 the money papers home with him Every night
 Sig M H Alberger pilgrim & a vinton
 note: MS18-R3: No. 1 (share .37; control median .41, p10 .29). Image: the word the holder transcription gives as 'Gvt' reads 'Get' in the page image; the entry is a civil private message, plain except the codes 'plug publish ghost' (number 115) and 'dryden' (Lynchburg). The ledger's printed page is 390, not 396 (the holder pointer's page). ms18_r3_entries.txt has an 'H Seiberg N Orleans' entry carried in by the segmenter; it is cut here and not filed. Not located in print: the post-war date is outside the OR series; 171 volumes, no window for Alberger + safe.
+
+### E341 | Page 232 | 9892 | mssEC 18 (obj 10074, pointer 9892; printed page 226), 8 Nov 1864 11 AM Washington, to J. C. Van Duzer at Nashville for Maj. Gen. Thomas, signed General-in-Chief (Halleck): General Schofield as the commander of an army ranks General Stanley as the commander of a corps; it was therefore proper for you to assign Stanley to Schofield's command; a former order of General Sherman placing Schofield under Stanley was disapproved by the War Department; printed OR I/39 pt 3 p.703 (page head 704 follows the item) (MS18-R4; row 9892/1; text checked against the print, page not eye-checked)
+JC Van Duzer Nashville  Washn Novr 8th 1864
+Fanny platina Lantern zebra Kiss as the
+polker of an opal ranks Shelby Stanley
+as the polker offa pelton unity Twas
+there four proper for you to assign
+Stanley to Kings pontiac A former order
+of Kidnap placing Kitten under Stanley was
+dies approved blithe War quadroon youth Italy
+note: MS18-R4: No. 1 (HEAD share .57 vs No. 2 .63: the sense picks the book; shuffled No. 1 gives Loring/Tombigbee nonsense). Printed OR I/39 pt 3 (Halleck to Thomas, Washington 8 Nov 1864, 11 a.m.): body C against that print (the print signs 'Chief of Staff'). From the print only, not key edits (rule 4): the word the decoder reads 'Invest (-ed, -ing)' stands for Stanley, 'polker of an opal' for 'commander of an army' (M).
+
+### E342 | Page 175 | 9835 | mssEC 18 (obj 10074, pointer 9835; printed page 169), 5 Sept 1864 12 noon Washington, to Carey (operator, Lexington Ky) for Maj. Gen. Burbridge, signed General-in-Chief (Halleck): Lieutenant-General Grant directs that you relieve Brig. Gen. E. A. Paine from command at Paducah; General Grant does not deem him fit to command where there are any loyal people; printed OR I/39 pt 2 p.343 (page head 344 follows the item) (MS18-R4; row 9835/0; text checked against the print, page not eye-checked)
+Carey Lexington Ky  Washn Sept 5th 1864
+Francis plaster for Shelby Burr patron zebra
+Jupiter directs that you relieve Palate E
+A Pain from polka at Pay duke
+a zodiac Judah does not deem him
+fit to pontiac where there are any
+loyal people webster Ireland that pains alleviated
+note: MS18-R4: No. 1 (HEAD share .52 vs No. 2 .52: the sense picks the book). Printed OR I/39 pt 2 (Halleck to Burbridge, Lexington Ky, Washington 5 Sept 1864, 12 noon): body C against that print. 'Burr patron zebra' = Burbridge (M, from the print), 'Pay duke' = Paducah (H via key rows as filed).
+
+### E343 | Page 167 | 9827 | mssEC 18 (obj 10074, pointer 9827; printed page 161), 26 Aug 1864 4.30 PM Washington, to McCaine (for Maj. Gen. Sheridan, decode: 'Katy Nabob'), sender not on the leaf: the provisional battalion of cavalry belonging to Gregg's division, now guarding the Upper Potomac while the 8th Illinois Cavalry is absent, has been ordered to City Point; this leaves me without means of guarding the river while the 8th Illinois is absent; Major [Waite] reports today he cannot get his regiment ready to move before Monday; the forges, coal etc. have been sent from here; I think he will get ready as soon as possible; if you think it advisable I will send out the [scouts] in the direction of Aldie; they cannot raise [horses] and cannot go to [?]; they may scout about Aldie and pick up rumors (MS18-R4; row 9827/1; image-read at 2400 px)
+430 pm  Washn Aug 26th 1864
+Katy Nabob The provisional battalion of Pacific belonging
+to Greggs quitman which is now tower Upper
+Attica saddling the windsor while the Platina Andover
+Panama is absent pekin has been ordered to
+Blubber stop This will leave me without means
+of saddling the windpipe while the paddle Andover
+is absent stop Taunton waite whites wedge that
+he cannot get his whip ready to tablet
+before Monday zodiac The forges coal &c had
+toby sent from here I think he will
+get ready persia possible unity If you think
+it advisable I will send out the Gas
+Amos sligo direction of Aldie They cannot raise
+morn perfume prolong forth field & they cannot
+go to Laughter Sheffield zodiac They may wolf
+about Aldie & pick up rumors Cork = screw
+note: MS18-R4: No. 1 (HEAD share .43 vs No. 2 .35; the sense reads). Image (2400 px, whole page): the transcription matches line by line; the leaf carries period glosses in the same hand over code words: '(rec'd)' above 'battalion', '(the)' above 'Pacific', '(for)' above 'Belonging', '(on)' under 'Aldie', '(Not)' and '(letter)' and '(corner)' above 'pick up', and a pencil line at the foot 'Draw off your water out of town' (a separate note, not read). The glosses settle those words as plain English at those places, not as code values. Sender not shown, so not graded; no Sheridan in the clear text: the addressee is the key's 'Nabob'. Not located in print: letters-only phrase grep over 169 volumes, loose windows (Gregg + provisional + Aldie) none; OR I/43 pt 1-2 cached.
+
+### E344 | Page 206 | 9866 | mssEC 18 (obj 10074, pointer 9866; printed page 200), 14 Oct 1864 Washington, to Van Duzer at Nashville for Maj. Gen. Thomas (first part, Stanton 10 a.m.): I have directed copies of the following dispatches of General Grant to General Sherman to be delivered to you that you may understand General Grant's views while the communication between you and Sherman is interrupted; please keep the Department fully and frequently advised of what transpires so that we can notify General Grant of the aspect of things, signed Secretary of War; followed by an instruction from the cipher office (Eckert) to translate and deliver to Lamb copies of all telegrams to and from Kunkle (Dix) particularly 'plank from Beckwith' and the words beginning Henry and McClellan (M), answer if this is done; the first part printed OR I/39 pt 3 p.274 (page head 274 precedes the item) (MS18-R4; row 9866/3; text checked against the print, page not eye-checked)
+Van Duzer Nashville  Wash Oct. 14. 1864
+Grapes female for lady ---- I have directed
+copies torch rambling Platations of Jersey to Kennebec
+to be delivered to you that you may understand Jupiters
+views while the platation between you & kidnap
+is interrupted ---- Please keep the Quadroon fully
+& frequently advised of what transpires so that
+we can notify John torch aspect of things walrus
+Indigo ---- In connection with this translate &
+deliver to lamb copies of all penfields to
+and from Kunkle pekin particularly plank from Beckwith
+on forbid plug of mansion pebble words commencing
+Henry & plunge of publish gift words beginning
+McClellan ---- answer if this is done Eckert
+note: MS18-R4: No. 1 (HEAD share .50 vs No. 2 .37). Printed OR I/39 pt 3 p.274 (Stanton to Thomas, War Department, Washington 14 Oct 1864, 10 a.m.): the first paragraph is C against that print; the ledger copy omits the print's 'communications' and says 'Platations' for 'dispatches'. The second paragraph (to deliver to Lamb copies of all penfields to and from Kunkle, 'plank from Beckwith', 'plug of mansion pebble', 'publish gift') is not in the printed telegram and is not read to a sentence: U/M. A different message from E82 (13 Oct 3 pm to Baker). Not a key edit (rule 4).
+
+### E345 | Page 165 | 9825 | mssEC 18 (obj 10074, pointer 9825; printed page 159), 19 Aug 1864 3 PM Washington, to 'Sholes near Atlanta Ga' (ledger label No 1; decode: Kid nap = Sherman's staff addressee), signed Jonah: it seems absolutely necessary that [Hurlbut, M] should command the troops on both banks of the Mississippi; he cannot otherwise protect the navigation or prevent Kirby Smith from waylaying [the river transports]; the conflict of orders at [Memphis] probably results from the fact that [Grant] first directed troops in West Tennessee to be sent to you but a few days after directed that [Hurlbut] should send everything to Europe [sic, M]; I think you will find [Halleck?] is giving you all the assistance in his power (MS18-R4; row 9825/2; image-read at 2400 px)
+Sholes near Atlanta Ga  Washn D. C. Aug 19 1864
+Grapes hunkey Imogene Kid nap Unity It seems absolutely
+tartar that leopard Shld pontiac the whisky on both
+banks torch ark He cannot otherwise protect the navigation
+or prevent Kir - by Smith from waylaying hudson zebra
+The conflict of orders at Drum probly results from the
+fact that Japan first directed whinny in Wilson Adonis
+to be sent to you pekin but a few days
+after directed that leghorn shld send everything nutmeg to
+Europe zodiac I think that you will find legend
+is giving you all the assistance in his power
+Jonah
+note: MS18-R4: No. 1 (HEAD share .47 vs No. 2 .42; the sense reads; the page also carries a 2 PM message to Beckwith at City Point, 19 Aug, not read here). Image: the transcription matches line by line; 'Kirby Smith' is plain in the ledger. The ledger 'whisky on both banks' = 'troops on both banks' (key row), 'leopard' = Hurlbut (key row, H), 'Dram' = Memphis. A reading of the content only: Hurlbut-for-command at Memphis, Kirby Smith, 19 Aug 1864. Not located in print: 169 volumes, no phrase 'absolutely necessary that General Hurlbut' and no window Hurlbut + both banks + navigation; OR I/38 pt 5 (cached), I/39 pt 2 and I/41 pt 2 not individually searched by date. The signature 'Jonah' is the ledger's code for the sender (not read).
+
+### E346 | Page 160 | 9820 | mssEC 18 (obj 10074, pointer 9820; printed page 154), 13 Aug 1864 12.30 Washington, to Horner (N.Y.) for Robert Murray, U.S. Marshal, New York (ledger label No 1), signed Stanton ('Brutus' with 'webster'): Gordon Bruce & Co, or Gordon Bruce & Hanliff, are supplying machinery of some description for Alex Keith Jr, the rebel agent at Halifax, which is to be shipped to Mitchell Kennuer & Co, Montreal; please find out what the machinery is and report to me immediately, also what kind of business Gordon Bruce & Co carry on; James Bruce of that firm is in Halifax or was yesterday (MS18-R4; row 9820/1; image-read at 2400 px)
+Horner NY  Wash D. C Aug 13 1864
+Viola aug forlorn for Robt Murray U S
+marshal frog ---- Gordon Bruce & Co or
+Gordon Bruce & Hanliff are supplying machinery of
+some description for Alex Ke - ith Jr the
+walnut agent at Hali - fax which is tobe
+Shipped to Mitchell Kennuer & Co Mont real
+---- Please find out what the machinery is
+& white to me immed'y pekin also what
+kind of business Gordon Bruce & Co carry
+on ---- James Bruce of that firm is
+in Hali - fax or was yesterday webster Brutus
+note: MS18-R4: No. 1 (HEAD share .16 vs No. 2 .18: low; the clear text is almost all plain, H 8, so the book is not established by the share). Image: transcription matches; the word 'machinery' is written above 'supplying ... of' and above 'what the ... is' (period glosses/underwritings in the same hand), and the page continues with two further Horner messages of 14 Aug 9 PM ('Detain the Prince till further directions, the subject is under investigation') and 16 Aug ('The Princess may be released ... sending plug or more detectives along to observe the course of trade'), not read here. Plain: names and firms. 'frog' = Murray's New York office (H as filed). Not located in print: letters-only grep, 169 volumes, no 'Gordon Bruce' or 'Keith' phrase; Navy ORN and the New York press not searched. The sibling pair (Prince/Princess, 14-16 Aug) is the same series.
+
+### E347 | Page 151 | 9811 | mssEC 18 (obj 10074, pointer 9811; printed page 145), 5 Aug 1864 Washington, to Sampson at Baltimore for W. P. Smith: General Grant with one of his staff wishes to go to Monocacy this afternoon; have your car put on the Frederick train and have Joe go along with it; the General leaves here on [3 PM] train for Relay where he will meet your car; have some refreshments; the departure of the General must be kept a profound secret; signed W. G. Wood, Side Viola Growl Aug plaster (MS18-R4; row 9811/2; image-read at 2400 px)
+Sampson Balto  Washn D. C Aug. 5. 1864
+for W. P. Smith Baptism ---- Juno with one
+of his Stf wishes to go to Mono - cacy
+this afternoon Have your car put on Fred erick
+train & have Joe to go along with it
+---- The shelby leaves here on Imogene train for
+Relay where he will meet your car ---- Have
+some refresh ments The depart ure ofthe Shelter must
+be kept a pro - found se - cret sig W
+G Wood Side Viola Growl Aug plaster ---- ----
+note: MS18-R4: No. 1 (HEAD share .28 vs No. 2 .23; low: the clear words carry the sense, H 9). Image: transcription matches; the entry is the third on the leaf (above it: S. H. Beckwith 1 Aug, and McCaine 5 Aug 10.40 AM to Monocacy Junction, 'Wesley / Mutton / Veron' etc., not read here). 'Imogene train' = 3 PM train (key row). Not located in print: letters-only grep 169 volumes, no Monocacy + refreshments window; OR I/37 pt 2 cached. Grant's visit to Monocacy of 5 Aug 1864 is in Grant Papers vol. 11 (not searched by phrase: be-api not called).
+
+### E348 | Page 119 | 9779 | mssEC 18 (obj 10074, pointer 9779; printed page 113), 8 July 1864 11 PM Washington, to Jno Horner N.Y. for Maj. Gen. Dix, signed Infant = Secretary of War (Stanton): please report immediately what is doing in respect to sending State troops from New York; General [Wallace] reports the enemy about 20,000 strong moving by Urbana about thirty miles from here toward Washington; this is confirmed by General [Howe] now in command at Harper's Ferry; General Halleck reports he has no troops here fit for field service; hurry this up; printed OR I/37 pt 2, Stanton to Dix, War Department 8 July 1864 11 p.m. (page head not legible in the OCR) (MS18-R4; row 9779/1; text checked against the print, page not eye-checked)
+Jno Horner N. Y.  Washn July 8th 1864 11 PM
+Growl July Paddle Sarah For Kasson Frog Unity
+Please wick imm'y what is doing in respect
+to sending state whiff from Amos zebra Shelby
+Wallace whites the Rome about harsh Promise strong
+tableting by Urbana about laugh spoons from here
+Whack growl zodiac This is confirmed by Shelten
+Howe now in Polka at Cancer Unity Jordan
+wicks that he has no whisky here fit
+for field service Youth Infant Hurry this up
+note: MS18-R4: No. 1 (HEAD share .57 vs No. 2 .46). Printed OR I/37 pt 2 (Stanton to Dix, New York, War Department 8 July 1864, 11 p.m.): body C against that print; the print has 'General Howe' where the ledger reads 'Shelten Howe' (a first name or garble, M), 'General Wallace' for 'Ram' (Wallace = key row H as filed), and no 'Hurry this up' (the ledger's own closing). Page not eye-checked on an image and the OCR gives no page head: the cell for the page is 'OR I/37 pt 2, 8 July 1864'. Not a key edit (rule 4).
+
+### E349 | Page 183 | 9843 | mssEC 18 (obj 10074, pointer 9843; printed page 177), 16 Sept 1864 8 PM Washington, to the cipher clerk at Nashville for Donaldson, Chief Quartermaster (Vinton), signed M. C. Meigs: who can relieve Colonel Crane as disbursing officer; the duties of Inspector and of disbursing officer are incompatible; having been appointed Inspector he must be relieved of his present duties; followed by a note to John (Eckert's office): a long [cipher] dispatch is coming through from [Meade, M] to you; shall it be forwarded to you at [Baltimore] or wait your arrival here; answer quick (MS18-R4; row 9843/1; image-read at 2400 px)
+Cipher Clerk  Washn Sept 16th 1864
+Nashville
+Grapes Gas Nancy for Pandora Donaldson Chf Vinton
+who can relieve Paradise Crane as disbursing officer
+sugar The duties of Inspector and of disburse
+sing officer are incompatible Having been appointed Inspector
+he must be relieved of his present duties
+MC Meigs
+John A long pembroke dispatch is
+coming through from Jolly to you
+shall it be for warded to
+you at Baptism or wait your
+arrival here webster Brutus ans quick
+note: MS18-R4: No. 1 (HEAD share .36 vs No. 2 .36: tie; the sense and the plain words read it; No. 9 H 4 only). Image: transcription matches; the header 'Cipher Clerk Nashville' and the line 'Washn Sept 16th 1864' are written faintly (pencil, fainter than the page); above this entry the leaf has H. E. Thayer's 16 Sept message to Col. A. J. Perry (plain, arrest of Cozzens, Neal, Pugh, tent maker, by order of C. A. Dana), not read here. Not located in print: letters-only phrase 'Inspector and of disbursing officer' none; loose window Crane + disbursing + Inspector none in 169 volumes; Meigs's own letter books and OR ser. III not searched.
+
+### E350 | Page 235 | 9895 | mssEC 18 (obj 10074, pointer 9895; printed page 229), 10 Nov 1864 9 PM Washington, to Capt. R. C. Clowry (St Louis) for Col. A. G. Brackett at the Planters House: General-in-Chief countermands the orders [?]; inform me at the Burnet House, Cincinnati, 12 Nov, when Sheridan's and Grierson's [commands] will be in St Louis and the number of serviceable horses there for issue; await orders; will be in Nashville 15th instant; signed Wm Redwood Price (MS18-R4; row 9895/2; image-read at 2400 px)
+Capt RC Clowny  Wash'n Nov. 10th 1864
+Grapes Nov. Federal Rosalie for Paradise A G Brackett
+Especial Ispect or Tomama Planters House Gaul zebra Jacob
+Counter mans the orders zodiac Inform me Bur net
+House Booby Nov Flood when Shelbys Pleasant on and
+Griersons Polkas will be in Geneva and number of
+service able spartans there for issue unity await orders
+zebra Will be in Empress Ghost instant and Plainfield
+yoke Wm Red wood Price Tappan and so forth
+note: MS18-R4: No. 1 (HEAD share .44 vs No. 2 .38). Image: transcription matches; the page carries above it the 9 Nov 9.30 PM message J. B. Price Hdqrs to Franklin (Dana, 'Austin criminals', plain), and the Clowry header has the ledger label 'I'. Plain: Planters House, Burnet House, Grierson, Brackett, Wm Redwood Price. Not located in print: letters-only phrase 'serviceable horses there for issue' none; loose window Brackett + Burnet + Grierson none; OR I/41 pt 4 and I/45 pt 1 searched (I/45 pt 1 cached in scratch).
