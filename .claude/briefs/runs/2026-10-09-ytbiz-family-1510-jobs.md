@@ -115,3 +115,34 @@ As HEIN-SR3.
 Sessions wave 2 (15:51 UTC): MANT-0136B session_01Nvaqy73ZhkM6KLDwMYVn8v (Opus); MANT-CEN3 session_017xoW4Esk2vaZC9iHg4YMDF (Sonnet); MANT-FIX
 session_015V5DDMXtz5HfyxHWqCmaDa (Opus); SUR-KB session_0154RpSj3UHX8Kd3eB3G3P1V (Opus); TOOL-CHK session_013uKUj3z41pHiKNkmCBQLWQ (Sonnet);
 HEIN-SR4 session_01GS7TwbuDkriXWK7sK59qub (Sonnet).
+
+Wave 2 results (15:54-16:18): MANT-0136B 0136 = Manteuffel to Flemming 18 Jun 1712, gloss gate PASS pooled 39/55 vs p99 12, BO I p.212 quotes it
+(known text), C47 M17; MANT-CEN3 0268-0399 inventoried (inv08f), 0312/0314 heavy glossed Extrait pair, 0290/0383 unglossed; MANT-FIX 0494 T134 -> 59,
+code 19 unsettled, 0176 r01 needs physical access; SUR-KB full-split negative holds key-blind, partial splits untested at N=65; TOOL-CHK --check
+fixed for report-flag runs (+ test); HEIN-SR4 pp.372-491 none. Workers wave 2: 16.21 by get_session (lane workers 34.30). Opus jobs ran 1.2-1.5x
+their caps all incarnation: wave 3 Opus caps are sized at the observed rate.
+
+## Wave 3 (16:3x UTC 9 Oct) -- last wave of this incarnation
+sachsen order: MANT-UNG takes first; MANT-XTR next; MANT-CEN4 last (each waits for the previous "sachsen release", works from disk meanwhile).
+
+### MANT-UNG (Opus, cap 6, box 100 min, sachsen take FIRST, 2 GETs): 694/08 0290 and 0383, UNGLOSSED leaves read under the key
+inv08f rows 0290 (stamp 224, 17 Sept 1712, run in lines 1-3 of the right page + short groups, no gloss) and 0383 (stamp 307, runs low on the
+right page). This is a reading of material with no gloss, so: premise check first (check 1; Acta Borussica BO I / Berner 1901 by date and names,
+IA be-api, "IA" take/release -- 0089 and 0136 were both paraphrased or quoted in BO I, so look for these two dispatches there before decoding);
+fetch each ONCE at native, count tokens on the image; crops, two blind Sonnet code passes per leaf, reconciliation; decode under key.tsv
+(decode_key.py --check); gate exactly as MANT-0176/0177 ran it (gate (b), fr18 permuted-key with a power control at the run's own N; too-short if
+power < 0.8 -- say so, no reading claimed). Then check 5 (print check of any decoded phrase). Grades per rule 4 with counts. A leaf that clears its
+gate and is not in print goes to a SEPARATE first verifier (say so in the done line; the orchestrator queues it). Report what was found and where
+it was not found; do not classify novelty.
+
+### MANT-XTR (Opus, cap 7, box 110 min, sachsen after MANT-UNG's release, 2 GETs): 694/08 0312 + 0314, heavy glossed "Extrait" pair
+inv08f rows 0312 (stamp 242, Extrait de la relation, groups 66.60.21.12.120 etc. throughout, words above many) and 0314 (stamp 244, Extrait de
+la resolution 15 Sept 1712). MANT-0474/0089/0136B procedure (gloss gate per page and pooled, PREREG-MANTXTR.md in its own commit before scoring,
+gloss NOT in the code crops, gloss read blind). Count tokens on the image first; if the two leaves exceed ~150 tokens together, do 0314 first and
+stop at 80% of cap. Codes > 401 and 0494's held 231-715 here -> second witnesses reported; key.tsv not above M without a passed gate.
+
+### MANT-CEN4 (Sonnet, cap 1.5, box 45 min, sachsen after MANT-XTR's release): 694/08 last 39 uncovered frames from 0402
+As MANT-CEN2/CEN3; append to inv08f.tsv (or inv08g.tsv). That closes the 694/08 frame census; say so if it does.
+
+### HEIN-SR5 (Sonnet, cap 1.2, box 45 min, huygens take/release): heinsius-vanhaersolte-1703, small_runs Deel 2 pp.492-600 (end of Deel 2)
+As HEIN-SR3/SR4. Update the folder's Remaining gaps / Verdict to say Deel 2 is scanned end to end; gaps_check.
