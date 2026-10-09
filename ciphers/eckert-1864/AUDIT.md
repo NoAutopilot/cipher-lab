@@ -7992,3 +7992,158 @@ again: search the holder across all pointers for the subject, not only the entry
 worker (not applied here): E267 header date -> "Oct 1[0 or 5] 1864 (image unsettled; context 14-15 Oct)", graded M; E268 reading -> signed
 Colonel Shaffer, then O'Brien's service line; "plank" = 2, the noun "plank" I. Next for E267: a second eye on the 5790 header and the
 mssEC 18 row for 14-15 Oct (pp.200-201) on the image, to see whether the Keyport telegram was entered there.
+## AUDIT (FV-FM7a)
+
+Verifier FV-FM7a (account 1, for LANE LEDGER), 9 Oct 2026, 04:22-05:0x UTC by `date -u`; a separate session from the reader FM-R4a
+(account 1), not protecting its conclusions. Scope: **E251, E252, E253, E256, E258** (NOTES "## FM-R4a"), ciphertext.txt, Cipher No. 1,
+Fort Monroe ledger mssEC 25 = Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all five: `period`.
+Depth under .claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Scripts and outputs: `fortmonroe/fv_fm7a_hdl.py` + `.out` (CONTENTdm full text across all pointers, three IIIF pages),
+`fortmonroe/fv_fm7a_print.py` + `.out` (cached + scratch OR/Butler grep). Images and crops in scratch, not committed.
+
+### 1. Prior-work, duplicates, sender's copies, image
+- **prior_work.py** (`--item-spec 'shelfmark=Huntington mssEC 25;canvas=<ptr>;date=...;sender=...;recipient=...' --step-type audit
+  --offline`, one per entry, 04:3x UTC): exit 4 for all, owing the two target-level LEADs (ECK-PAGEFIX's mssEC 19 page-column claim;
+  LANE LEDGER's own incarnation-4 claim), neither covering these units: CLEAR. For 5781 (26 Aug, Foster) it also raised an edition-hit
+  LEAD in `warofrebellion352unit` (OR I/35 pt 2): opened and read, section 3. UNCHECKED-NET: aaymeloglu (no clone), OR volumes not on disk.
+- **Duplicate diff:** pointers 5816, 5781, 5789, 5752 occur in ciphertext*.txt only in their own E-headers (5781 carries both E252 and
+  E258, two different telegrams of 28 Aug). No other filed header for 4 Dec / Carney, 26-28 Aug / Hart or Foster, 8 Oct / Gilmore,
+  16-17 June / Pettes or Dealy. The 16 June Dana text at the top of p.208 (row 5752/0, "Add following to Brutus from insanity ...") is a
+  separate, unfiled entry, not part of E256. No filed duplicate.
+- **Sender's copies on disk:** mssEC 18 (`ms18/entries-ms18.tsv`) rows of 16-17 June, 26-29 Aug, 7-9 Oct, 4-5 Dec 1864 (9760, 9827-9829,
+  9861-9863, 9905-9907): none is any of the five. mssEC 19 (`entries-mssEC19.tsv`): no row for these dates.
+- **Image (FM-R4a viewed only 5816):** I fetched 5781, 5789, 5752 at 2400 px (scratch) and cut line crops with `tools/iiif_lines.py
+  --image ... --centres ... --lines-per-crop 2` (the automatic profile found no lines on these faint ruled pages; centres set by eye from
+  the debug overlay). Read: E258 all ten lines, E252 all five, E253 all thirteen, E256 all fourteen. The transcription stands word for
+  word except: **E252 line 5 reads "port from from Hill ton head"** (a doubled "from"); **the "Head Qrs. A. P." text below E252 is dated
+  "Sept. 1/64", not "1 / 64", and is struck through with large crosses** -- a cancelled entry of 1 Sept, not part of E252 (reading.md
+  prints it inside E252's tail; that is a decoder/filing slip, below). 5816 (E251) was read whole by FM-R4a; not re-read.
+
+### 2. Holder's full text
+**Huntington CONTENTdm full text** across all pointers (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1; `fv_fm7a_hdl.py`, under the
+LANE LEDGER hdl token 04:23-04:25 UTC, 15 queries + 3 IIIF pages = 18 requests, 3.2 s apart; output `fv_fm7a_hdl.out`):
+- **E256 (16 June half) has a period clear copy: pointer 4717 (Page 276):** "5. P. M Ft Monroe Va Jan [sic] 16th 1864 Hd Qrs Brigade Ft
+  Monroe noon 16th for Col W. H Petters Comdg Engr Brigade Navy Yard Wash'n White House is abandoned ---- send material here signed
+  Channing Clapp A. A. Genl" (query "channing clapp", 2 hits: 4717, 5752). The same page carries Dana's 2.30 p.m. 16 June dispatch from
+  Douthat's Landing via Fort Monroe (pontoon bridge, "the last of the Army will no doubt be south of the James River by noon tomorrow").
+  **E256 (17 June half): no other copy** ("jamestown island" 80 hits, none this text; "pontoon bridge taken" 6, none).
+- **E251: no other copy.** "bartonsville" 1, "saunders carney" 1 (both 5816 itself); "toby barton" 7, all other messages (they show the
+  clerks' "toby" = "to be", which settles E251's "Tobey sent me", section 4).
+- **E253: no other copy.** "kent is dead" 1 (5789 itself), "morehead city waterhouse" 0, "gilmore morehead" 0.
+- **E252, E258: no other copy.** "hart hilton head" 1 (5781), "steamer fulton" 7 and "foster fulton" 7 (1863 press and Foster messages,
+  a 1864 operator's note 12112 "Arrived here yesterday in Fulton by order of Genl Foster"; none these texts), "fulton alexandria" 0,
+  "one hundred fourth" 39 (no 104th Pa. text). "pettus" 3 (2705, 4305 = Governor Pettus of Mississippi, 1863; 5752).
+
+### 3. Print
+Cached texts (`sources/ia-fulltext/print-check`, incl. OR I/33, 35-2, 36-1/2, 37-2, 40-3, 43-1/2, 45-2, Butler IV-V) plus four OR
+volumes fetched to scratch (archive.org, 2 s apart: I/40 pts 1-2, I/42 pts 2-3) and Plum, *The Military Telegraph during the Civil War*
+(1882), vols. I-II (`militarytelegraph01plumrich`, `militarytelegraph02plumrich`, 2 requests). Phrase and name grep (`fv_fm7a_print.py`,
+17 patterns), hits read by date:
+- **E258 (Foster, Hilton Head, 26 Aug, via Fort Monroe 28 Aug 4 PM, to Halleck):** **OR I/35 pt 2 pp.258-259**, Foster to Halleck, Hilton
+  Head, 26 Aug 1864 (a letter): "... I have literally obeyed the order to send every man that I possibly could ... The regiment sent on
+  the Fulton is the One hundred and fourth Pennsylvania Volunteers, 900 men, just from Florida. Their time is nearly out ...". Same sender,
+  recipient, day, steamer, regiment and strength; **different text** (the letter has none of E258's clauses: "to Washington to report to
+  you", "report by telegraph from Monroe", "proceed direct to Alexandria and march thence to Washington"). The telegram itself **not
+  located** (OR I/35 pt 2, I/42 pt 2 by "march thence", "report by telegraph from", Fulton + 104th).
+- **E252 (Lt. Col. T. D. Hart, Fort Monroe, 28 Aug, to the General-in-Chief):** OR I/35 pt 2 p.79 and p.204: "104th Pennsylvania, Lieut.
+  Col. Thompson D. Hart" (Hilton Head District; index "Hart, Thompson D. Mentioned 11, 79, 204"): confirms the signer "Tea D Hart". The
+  telegram **not located** (OR I/35 pt 2, I/42 pt 2).
+- **E253 (Gilmore, Morehead City 5 Oct, via Fort Monroe 8 Oct, to Eckert):** **Plum, *Military Telegraph* vol. II p.35** (index "Kent.
+  D., death of, II, 35"): Gilmore's North Carolina line (Morehead City, Newport Barracks, Newberne, Bachelor's Creek), operators "Herman
+  Waterhouse, Douglass Kent ... B F. Gilmore"; "No sooner had he [J. R. Gilmore] returned with his brother, another operator, than the
+  yellow fever broke out in the district, and three of the operators were stricken, poor McGaughey first. Herman Frank Waterhouse was
+  convalescing in the hospital at Newport Barracks ... McGaughey, Waterhouse, and Douglas Kent another operator, fell victims of the
+  scourge". The event, the two operators and the superintendent are in print; E253's text **not located** (Plum I-II, OR I/42 pts 2-3:
+  "Waterhouse" only an R.I. artillery lieutenant in OR I/35 pt 2).
+- **E251 (O'Brien for Butler, 4 Dec, to Maj. Carney, Norfolk):** **Butler, *Private and Official Correspondence* vol. V p.265**, Butler to
+  Shepley, Norfolk, 15 Oct 1864: "Stephen Barton, of Bartonsville, Hertford Co., was arrested near South Mills with his property. Send him
+  up to me with ... all papers found upon him ... and an inventory of the property found upon him" (index: Barton, Stephen, 265;
+  Bartonsville, Hertford Co., 265). Context, not the telegram; E251 **not located** (Butler V by Carney, Saunders, Barton; OR I/42 pt 3).
+- **E256 (Clapp 16 June; Dealy's boat report 17 June):** OR I/40 pt 1 pp.20-22: Dana's 16-17 June dispatches to Stanton, each "via
+  Jamestown Island", among them the 16 June report of the pontoon bridge (the text on holder page 4717); OR I/40 pt 2: "50th New York,
+  Col. William H. Pettes" in the Volunteer Engineer Brigade (Pettes, William H., Mentioned 542); Plum vol. II p.261: "At Fort Monroe, were
+  George D. Sheldon, C. L. Snyder, W. J. Dealy ...", and the Jamestown Island office (W. N. Embree). Neither half **located in print**.
+- **IA be-api / Google Books / press:** be-api not called (the readers' 13 Grant Papers queries covered Barton, Pettus, Clapp; this audit
+  added Plum instead). Google Books: one probe ("Bartonsville" + Barton + Butler, `country=US`), HTTP 429, stopped. Press of the day not
+  searched (none of the five is a press telegram). Solver repositories and Tomokiyo: prior_work.py cached checks CLEAR.
+
+### 4. Grade and reading corrections (reader's table, reading.md)
+`depth_pct` = H/C over code-word groups (plain words and names excluded), as FV-FM4. Corrections are for a FIX job (reading.md is the
+decoder's, rule 7).
+- **E251:** Harriet = 1 PM (time word, H; FM-R4a held it M), Tappan = Major, famish = Norfolk, zodiac x3 / zebra = period, Pandora x2 =
+  Colonel, wick x4 = Report, Pekin x2 / pedlar = comma, abacus = North Carolina, wrangle = Telegraph, walrus = signature, Knox = Butler:
+  **H 20 of 20**. **Decoder slips: "Stephen" [In the] and "Barton" [Adjt Genl. U.S.] x3 are plain** (Stephen Barton of Bartonsville,
+  Butler V p.265); FM-R4a's table already reads them plain, the decoder's H 24 counts them. **"Tobey sent me" = "to be sent me"** (plain,
+  the clerks' "toby", key.md note and holder 10043 "toby delivered"); "round" = found, "take" = taken (plain). "funny" after the
+  signature: not in key.md, unread (U 1). Reading: "[1 PM] For [Major] Carney, [Norfolk]. Tell [Colonel] Saunders [to] make a [report]
+  to be sent me [by] tomorrow's boat of property found on him by any officers, captured at the time or taken from Stephen Barton of
+  Bartonsville, [North Carolina]. Say nothing about this [telegram]. If [Colonel] Saunders is not able to make the [report] himself, get
+  the facts and make the [report] yourself; also send me all the books and papers taken from Barton. Make and send these [report]s
+  without attracting any observation. [Signed] [Butler]. R. O'Brien."
+- **E252:** Julia = 4 PM, Indian = General-in-Chief, growl = Washington, zodiac = period, wick = Report, torch = Of the, plunge = 1,
+  publish = 100, whip = Regiment, washingtons = Volunteers (key.md "Washington | Volunteer", H; FM-R4a's M), webster = signature, paradise
+  = Colonel, polkaing = Commanding, plug = 1, pension = 4, wilcoxs = Volunteers: **H 16 of 16**. **Decoder slip: "sylvan" [Junction] is
+  plain** ("Penn sylvan I a" = Pennsylvania); "forth" = fourth (plain). **The trailing "Head Qrs. A. P. Sept. 1/64 ... Maj. Eckert 'D. I.'
+  Sheldon ..." text is a separate, struck-out entry of 1 Sept (image), not part of E252**: reading.md's tail should end at "Geo. D.
+  Sheldon"; the reader's "second text ... not read" gap is a cancelled entry, not an E252 gap. Reading: "[4 PM.] For the
+  [General-in-Chief], [Washington]. I have the honor to [report] the arrival [of the] 104th [Regiment] Pennsylvania [Volunteers] at this
+  port from Hilton Head. [Signed] T. D. Hart, Lieut. [Colonel] [Command]ing 104th Penn[sylvania] [Volunteers]."
+- **E253:** plaster = 5, peasant = By the way of, animal = Monroe, paddle = 8, tappan = Major, zodiac x2 / unity x3 / zebra = period, plug
+  = 1, tremble = North, weaseler = Steam-er, whiff = Troops: **H 15**; **"fever" is a key word (Fever = 13) read plain** ("unity fever
+  increasing zebra"; "13 increasing" makes no sense; Plum II p.35 yellow fever): **I 1**, so **15 of 16**. **Decoder slips: address-line
+  "Washington" printed [Volunteer] is plain; "fever" printed [13]** (reading.md "[13] increasing"). Reading = FM-R4a's: "[Morehead City,
+  5th, by way of Monroe, 8th.] To [Major] Eckert. Your dispatch of [1st] received. Offices all closed. Kent is dead; Waterhouse very ill
+  in hospital here. Fever increasing. No operators needed here for some weeks ... Think I will go [North] by next [steam]er. [Troops]
+  generally are escaping though several prominent officers have died. Gilmore."
+- **E256 (16 June half, clear copy 4717):** Snake = Head Quarters, panther = Brigade, appian = Monroe, francis = 12 ("noon"), gas = 16,
+  Pandora = Colonel, pontiac = Commanding, Raymond = Engineer, growl = Washington, nursed = Abandon-ed, zebra = period, walrus =
+  signature, Shelby = General: **C 13**; Randolph = Engineer (heading; the clear copy has "Hd Qrs Brigade" without it): **H 1**; **queenly
+  = Depot (key.md, H) where the clear copy writes "Comdg Engr Brigade"**: a key/clear-copy disagreement on one token, graded **M 1**,
+  not settled here (Pettes commanded the 50th N.Y. Engineers at the Engineer Depot, Washington Navy Yard; either is true of him).
+  **Decoder slips: "White" printed [Report] is plain ("White Hows" = White House, as the clear copy); address-line "Washington" plain.**
+  "All well nothing new" is the operator's note. Reading: "[Head Quarters] [Engineer] [Brigade], [Monroe], [12] [16th]. For [Colonel] W. H.
+  Pettes, [Commanding] [Engineer] [Depot], Navy Yard, [Washington]. White House is [abandoned]. Send material here. [Signed] Channing
+  Clapp, A. A. [General]."
+- **E256 (17 June half, no clear copy):** Pilgrim = Captain, sidney = Island, insanity = C. A. Dana ("insanity's" = Dana's; the decoder
+  leaves it plain: slip), plum-ed = Cross-ed, village = Pontoon, patron = Bridge, yoke = signature: **H 7**; **"whiskey" not in key.md: M
+  1** (the same word reads "The whiskey seem to be ..." in the 7 Oct Birney text on p.245; "troops" or "enemy" both fit; not guessed);
+  **7 of 8**. "Day lea" = W. J. Dealy, Fort Monroe operator (Plum II p.261; E267 is addressed to him), plain. Reading: "[1 PM.] [Captain]
+  of boat that brought down to Jamestown [Island] [Dana]'s dispatch says that all the [?whiskey] have [crossed] and that [the] [pontoon]
+  [bridge] is probably by this time taken up. [Signed] Dealy. Nothing later."
+- **E258:** harsh = 20, plague = 6, peasant = By the way of, appian / animal = Monroe, Julia = 4 PM, harrow = 20, paddle = 8, Jew =
+  General-in-Chief, grapes x2 / growl = Washington, zebra x2 / zodiac = period, Shelter = General, pekin / pedlar = comma, weaseler =
+  Steam-er, plug = 1, wine = 100, penny = 4, wilcoxs = Volunteers, pony = 9, William = 100, spit = Men, wick / white = Report, polkaing =
+  Commanding, wreathe = Telegraph, Banjo = Alexandria, youth = signature, **Lester = Maj. Gen. J. G. Foster (key.md, H; FM-R4a's "Foster
+  M, from the tail")**: **H 33 of 33**. Reading = FM-R4a's, with Foster H.
+
+### 5. Classification (key `period`)
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E251** R. O'Brien for Butler (Hd Qrs Army of the James) to Maj. Carney, Norfolk, via Sheldon, 4 Dec 1864 12.50 PM | **N3** | unknown | **D3** | 100 (H 20 of 20) | code clause: Wick = Report (x4 here; passim), Pandora = Colonel passim; external, non-statistical: Butler V p.265 (Butler to Shepley, 15 Oct 1864: Stephen Barton of Bartonsville, Hertford Co., arrested with his property; send all papers found upon him) |
+| **E252** Lt. Col. T. D. Hart, 104th Pa., Fort Monroe, to the General-in-Chief, 28 Aug 1864 4 PM | **N3** | unknown | **D3** | 100 (H 16 of 16) | code clause: Whip = Regiment, Wilcox/Washington = Volunteer passim; external: OR I/35 pt 2 pp.79, 204 (104th Pa., Lt. Col. Thompson D. Hart) and pp.258-259 (the 104th Pa. sent north on the Fulton, 26 Aug); image read |
+| **E253** Gilmore (Morehead City 5 Oct) via Fort Monroe 8 Oct to Maj. Eckert, 1864 | **N3** | unknown | **D3** | 94 (H 15 + I 1 of 16) | code clause: Whiff = Troops, Weasel = Steam, Tremble = North passim; external, non-statistical: Plum, Military Telegraph II p.35 (yellow fever in the N.C. district; operators Waterhouse and Douglas Kent died; Gilmore's lines incl. Morehead City); image read |
+| **E256** (16 June noon) Capt. Channing Clapp, A.A.G., Engineer Brigade, to Col. W. H. Pettes, Navy Yard, Washington, via Fort Monroe | **N1** (plain text in the holder's public transcription of the clear copy, pointer 4717) | yes (holder's transcription) | **D3** | 93 (C 13 + H 1 of 15) | external: clear copy 4717; OR I/40 pt 2 (Pettes, 50th N.Y. Engineers) |
+| **E256** (17 June 1 PM) W. J. Dealy, Fort Monroe, to Maj. Eckert: boat captain's report of the crossing of the James | **N3** | unknown | **D3** | 88 (H 7 of 8) | code clause: Village = Pontoon, Patron = Bridge, Insanity = Dana passim; external: OR I/40 pt 1 pp.20-22 (Dana's 16-17 June dispatches via Jamestown Island; pontoon bridge, army south of the James by noon 17 June); Plum II p.261 (Dealy at Fort Monroe); image read |
+| **E258** Maj. Gen. J. G. Foster (Hilton Head 26 Aug) via Fort Monroe 28 Aug 4 PM to the General-in-Chief, 1864 | **N3** | unknown (facts printed, not the text) | **D3** | 100 (H 33 of 33) | code clause: Banjo = Alexandria, Spit = Men, Lester = Foster; external, non-statistical: OR I/35 pt 2 pp.258-259 (Foster to Halleck, 26 Aug 1864: the 104th Pa., 900 men, sent on the Fulton); image read |
+
+Depth sentences (D3, own, from the reading): E251 "On 4 Dec 1864 Butler's office ordered the Norfolk provost to report, quietly, on
+property and papers taken from the arrested Stephen Barton of Bartonsville." E252 "Lt. Col. Hart reported the 104th Pennsylvania's arrival
+at Fort Monroe from Hilton Head on 28 Aug 1864." E253 "In early Oct 1864 yellow fever closed the telegraph offices at Morehead City,
+killing the operator Kent." E256 (17 June) "On 17 June 1864 a boat captain reported at Fort Monroe that the army had crossed the James and
+the pontoon bridge was probably being taken up." E258 "Foster sent the 104th Pennsylvania, 900 men, north on the Fulton with orders to
+march from Alexandria to Washington."
+
+Safe sentences (N3): "Read at grade H with War Department Cipher No. 1 (period key): <reading summary>. The telegram was not located in
+<sources searched in section 3> or the Huntington's full-text search (searched 9 Oct 2026); <printed context>." Unsafe for all: "first
+decipherment", "previously unread", "new", "unpublished" (rule 10: N3 only). E256's 16 June half: "Its plain text stands in the
+Huntington's own transcription of a clear copy (pointer 4717); our reading agrees with it."
+
+### 6. Postmortem
+Over-claims and slips found: FM-R4a held as M four tokens key.md reads H (E251 Harriet = 1 PM, E252 washingtons = Volunteers, E258 Lester =
+Foster) and left E251 "Tobey" ( = to be) unread; it filed E252 with a struck-out 1 Sept entry as a "second text" gap; it listed no clear
+copy for E256, which has one for its first half (4717) -- the reader queried "Pettus", and the clear copy spells "Petters". Lesson: query
+the plain words that survive encipherment (here "Channing Clapp", "send material here"), not only the name as decoded. Decoder slips
+for a FIX job (decode.py entry notes, rule 7): E251 "Stephen"/"Barton" x3 -> plain; E252 "sylvan" -> plain, tail cut at "Geo. D. Sheldon"
+(the struck 1 Sept entry is not E252); E253 address "Washington" -> plain, "fever" -> plain; E256 "White" -> plain, address
+"Washington" -> plain, "insanity's" -> [C. A. Dana]'s; E258 none. No "new" or "first" wording found in FM-R4a's NOTES table.
