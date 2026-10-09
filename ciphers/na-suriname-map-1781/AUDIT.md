@@ -715,3 +715,53 @@ V-SUR0744 (c): 0745 with the dot dropped, testing the m-vs-n split pooled under 
 Over-claims corrected: NOTES/HYPOTHESES cited "PREREG 94e16aee", which is not a main-history hash; both now name 9d14bcf29 beside it.
 Not changed: key files, conflicts.tsv, transcriptions, token grades, N-class. Rule 10: report only. Requests: service.archief.nl 1 (200).
 Vision: this verifier's eye on 5 crops; no subagent.
+
+## V-SUR0745 (9 Oct 2026)
+Verifier of SUR-0745 (session_011jmCoBmZ8mdWwKEb6YAssx), unit NA 1.05.03 inv. 373 scan 0745 LEFT page (22 gloss+cipher pairs); account 2,
+LANE FAMILY-A2e, 9 Oct 2026, 02:46-03:0x UTC by date -u (this session did not run SUR-0745). Claim audited: "(a) CLASS gate, dot dropped,
+pooled y-family in m|n, PASS on both blind passes (A 53/59 = 0.898, B 53/60 = 0.883 vs 10,000-draw C1 p99 0.492/0.507, need +2 steps);
+(b) SPLIT S = n/(m+n) NO SPLIT SHOWN on both (0.717/0.736 inside 0.545-0.947 / 0.562-0.944)." No reading is claimed: no N-class or depth change.
+Files: `passes/inv373_0745L_blind/vsur0745_seeds.py` and `vsur0745_seeds.out` (loads score.py's functions unchanged; its body is not run).
+
+1. **Reproduction.** `score.py --check` exit 0 (1 min 33 s, 4 processes): score.out is current.
+2. **Pre-registration order. Holds.** 6cb5b6299 (02:24:59 UTC, on origin/main) carries PREREG-SUR-0745.md, score.py, crops_manifest.tsv
+   and calib_0744R.out and no pass; mk.py came in 25e5fd682 (02:25:41), A/raw.tsv in a1afb0d4b (02:26:13), B/raw.tsv with score.out in
+   b6050db83 (02:31:03). `git diff 6cb5b6299 HEAD` on PREREG-SUR-0745.md and score.py is empty: the gate code that scored the passes is the
+   code committed before them. Limit: git shows when the pass files were committed, not when the subagent calls started (A's file landed
+   74 s after the PREREG), so "before either pass ran" rests on the worker's ROOM line at 02:24. Either way, the scoring rule was fixed
+   in main before any pass output was on disk in the repository.
+3. **(a) CLASS on fresh seeds. Holds.** Master seeds 111/222/333, 10,000 draws each. Pass A: p99 0.492-0.500, need 0.526-0.534, share
+   0.898. **PASS 3/3**. Pass B: p99 0.500-0.508, need 0.533-0.541, share 0.883. **PASS 3/3**. In every run, 0 of 10,000 draws reach
+   the share. Key-blind variant (descriptive, seed 444; `[y-fam]` removed from T so the aligner earns nothing for m or n; raw share of
+   aligned y-family tokens on gloss m|n): A 43/55 = 0.782, B 44/57 = 0.772, against C1 mean 0.184/0.166 and p99 0.298/0.281, 0 of 10,000
+   draws reach either share. The class signal on 0745 left does not depend on the aligner's `[y-fam]` row, the same as V-SUR0744R found on
+   0744 right. CLASS PASS stands: this is a third held-out page.
+4. **(b) SPLIT on fresh seeds. Same verdict: NO SPLIT SHOWN.** Same seeds: A S 0.717 inside p0.5-p99.5 0.529-0.947 (range over the three
+   seeds); B S 0.736 inside 0.550-0.950. **NO SPLIT SHOWN 3/3 on each pass.**
+5. **Can the SPLIT control differ from the target (rule 3's non-test clause)? Yes, but the gate's power is not shown.** Derangement
+   changes which gloss letters face the y-family positions, and C1's S does move (sd 0.078/0.073, 152 distinct values on 0745; sd about
+   0.05 on 0744R's calibration). So it is not a non-test by construction. Two limits the NOTES do not state:
+   (i) **No positive control.** No run shows that this aligner, with this T, reads LEANS n or LEANS m on a sign known to carry only one of
+   the two letters. I tried one (`--posctl h`; `h` is the only n-only sign in T), but `h` has 0 aligned tokens on 0745 left, so it is a
+   non-test. To read LEANS n, S must exceed about 0.947, which means at most 2 of about 53 m|n-facing tokens can face m.
+   (ii) **Without the steer, the gate cannot fire upward.** In the key-blind variant (descriptive), the real S is 0.721/0.750
+   (m 12/11, n 31/33). Unsteered, the y-family still faces gloss m 11-12 times. But C1's p0.5-p99.5 there is 0.333-1.000 / 0.273-1.000,
+   so LEANS n is unreachable. The pre-registered gate's finite upper bar exists only because the `[y-fam]` row steers deranged tokens
+   onto m|n as well.
+   So NO SPLIT SHOWN is a result of "not shown at this N with an unmeasured power". It is not evidence that one sign carries both m and
+   n. HYPOTHESES' "consistent with one class carrying m and n, not a proof" is accurate, but it lacked this power caveat; one is added.
+6. **Design. Holds.** AUDIT (V-SUR0744) "What 0744 right and 0745 must show" (c) asked that, if the DOT gate failed again (it did,
+   0744R: p99 1.000), the next unit drop the dot and pool dotted and undotted signs as `[y-fam]` for a letters' n-vs-m test under the same
+   derangement control. PREREG-SUR-0745 does exactly that, with (a) kept as asked: p99 over 10,000 draws and +2 token steps. The
+   two-sided 1% SPLIT bar and the calibration on 0744R before the PREREG are additions that make it stricter. They do not loosen it.
+   Not checked by this verifier: the crops and the passes against the image (no fetch: disk-only brief). The claim that B "read only the
+   22 crops" rests on the worker's transcript.
+
+**Ruling. (a) CLASS PASS holds** (fresh seeds 6/6, key-blind 2/2, order kept, design as asked). **(b) SPLIT: NO SPLIT SHOWN holds as
+computed, as a not-shown with unmeasured power, not a negative and not support for one shared value.** What it licenses: `[y-fam]` = {m, n}
+as a class across three held-out pages (0744 left, 0744 right, 0745 left). It does not license an m-vs-n choice, a dotted-`[ij]` value, or
+any edit to key.tsv, key_period_*.tsv, conflicts.tsv, a transcription or a token grade. Next, if the split is pursued: a positive control
+first. That means either a sign with a single m-or-n value and at least 10 aligned tokens on a held-out page, or a synthetic page built
+from T's own sign table with a planted n-only y-family. Show that the gate reads LEANS n there before another unit is spent on (b).
+Over-claim corrected: HYPOTHESES.md SUR-0745 SPLIT row's verdict now carries "power unmeasured (V-SUR0745)". Not changed: key files,
+conflicts.tsv, transcriptions, token grades, N-class. Rule 10: report only. Requests: none. Vision: none. CPU: about 9 min (4 processes).
