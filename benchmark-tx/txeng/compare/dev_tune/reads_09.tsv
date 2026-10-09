@@ -1,0 +1,17 @@
+row	pick	conf	note
+1	1	M	upright double-bar hash; cand 2 is more slanted
+2	none	L	boxed sign looks like 8; no 8 among candidates (cand 2 blank)
+3	2	M	bold upright H-like hash matches cand 2; cand 1 slanted
+4	1	H	o with cross above
+5	none	L	epsilon-like; closest is cand 2 C but has middle stroke
+6	4	M	loop on top with stem below; cand 2 phi possible
+7	2	M	l-c ligature with mark
+8	4	M	q-b ligature
+9	1	H	double-barred t-cross
+10	2	M	loop on top, stem with foot
+11	3	L	curled omega-like; cand 3 contains similar w-form
+12	1	H	plus
+13	1	M	4/gamma-phi shape
+14	2	H	theta
+15	1	H	inverted pi with base
+16	3	M	b/delta shape with tall stem

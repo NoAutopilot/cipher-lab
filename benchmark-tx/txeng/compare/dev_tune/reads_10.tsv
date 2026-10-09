@@ -1,0 +1,17 @@
+row	pick	conf	note
+1	1	H	ligature ae-like sign
+2	2	H	pi
+3	none	M	epsilon-like sign; no epsilon candidate
+4	1	H	pi
+5	1	H	ae-like sign
+6	1	H	t
+7	2	H	theta-like barred o
+8	2	H	V
+9	2	M	D-like sign; 3 is similar
+10	1	H	crossed o
+11	2	H	F-like sign
+12	2	H	infinity
+13	2	M	double cross; 1 is similar
+14	3	L	crossed descender sign; boxed tile is ambiguous
+15	none	L	box is over the dark page edge; no sign visible
+16	1	M	D-like sign; 3 is similar

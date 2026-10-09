@@ -1,0 +1,6 @@
+row	pick	conf	note
+1	none	L	boxed sign is A-like with crossbar and vertical stroke; not a plain cross (1) nor double-hash (2); 3 blank
+2	1	H	pi-shape matches cand 1
+3	2	H	double-barred p/cross matches cand 2
+4	2	H	diamond on curved tail matches cand 2
+5	2	L	faint slanted l-stroke; possibly looped l of cand 2, loop not visible; cand 1 is a blob
