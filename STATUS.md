@@ -7050,12 +7050,28 @@ vs L, dev then eval once): three Opus 5.5 workers spawned 07:11 UTC.
 | P ink-density profiles to split glued digit groups, Dinteville f.128 (tools/tx_split_groups.py; idea M8, read-free) | TXE-P session_016eUJxFGBEsNyTuuS5TF6cR, cap 4, done 08:17, cost 2.86 | recall 1/11 at 4.2% flagged | n/a | FAIL read-free; Dinteville's extra signs are dots and marks, not glued groups |
 | M2 feature-first retest in two calls with a compliance gate (idea M24 retest) | TXE-M2 session_019efEWkgp2uydCcRAiUZNQK, cap 8, done 08:20, cost 4.76 | compliance (c) FAIL 19/51 vs 0.70; no cell call | not run | non-test; M24 retired at this vocabulary |
 | Q round 3, guard 2: confirm item spinelli-c1519-confirm read ONCE with today's pipeline | TXE-Q session_01HMGqtrRCcKjZfJTxC46Aae, cap 12, done 08:38, cost 6.93 | passes 0.104 / 0.083 | ONE look: pipeline 0.088 (17/193, 0.056-0.137); vs committed 1/11 | the headline: a different hand reads at 0.088 with today's pipeline; 8 of 14 errors are sheet-inventory gaps |
-| R round 3, guard 3: live letter fr.3252 f.117r re-transcribed with today's pipeline, decoded under the folder's PREREG and power control | TXE-R session_01PVzzRkDWo1nNw4P8ZAkKJn, cap 15 | err_2reader new vs old; S tokens vs committed 190 | n/a | -- |
+| R round 3, guard 3: live letter fr.3252 f.117r re-transcribed with today's pipeline, decoded under the folder's PREREG and power control | TXE-R session_01PVzzRkDWo1nNw4P8ZAkKJn, cap 15, done 08:41, cost 8.35 | err_2reader 0.134 vs 0.25; S 207 vs 190 (+17 net) | power licensed; judge -1.234 vs -1.224 FAIL | NO LICENSED CHANGE: the committed reading stands; the key does not license more tokens at S by this pipeline |
 | S cross-target symbol library in a two-reader-agree compare layout (owner items 7 and 8; third compare run, retires the family on FAIL) | TXE-S session_01SSAYkYoUgEenNMg6nDGeuk, cap 10 | dev_tune vs L | -- | -- |
 | T floor audit: the 20 all-pass-wrong no.87 positions traced to the truth source, read-free; flag column proposed, never an edit | TXE-T session_013aFb7fVnMhWMhEzPxedEvS, cap 6, done 08:36, cost 2.54 | reader-wrong 7, alignment 8, key 1, clerk 4 of 20 | L 0.045 as measured, 0.029 with the 13 doubtful excluded (read-free) | 13 truth flags proposed for a verifier (benchmark-tx/taxonomy/truth_flags_proposed.tsv); the floor is partly the truth's |
 | T2 skipped-letter truth audit over all 803 no.87 positions, read-free; extended flag proposal + ASKS row for a verifier | TXE-T2 session_01XvCo9StdAiyDhCCvKEChMY, cap 6 | per-pass err_true with and without doubtful positions | n/a | -- |
 | G document-recovery practice literature -> research/TX-RECOVERY-PRACTICE-2026-10-09.md (owner idea 5) | TXE-G session_01Q5gZS93pQxXHF4cVWDKxok, cap 6, done 07:31, cost 3.72 | sauvola 7/10, clahe 4/65, swn 3/3 on the proxy | not run | FAIL; 19-method note written |
-Amendments 1-2 (07:0x UTC): cap 150, ideas register research/TX-IDEAS-2026-10-09.md (23 ideas, owner's eight first), single-instrument gate p<0.01, one eval look each (0 taken), confirm item from TX-CONFIRM-SET opened once at the end, final pipeline applied to one unread Birago 1572 letter. Round 3 (PREREG-txeng-3 Decision, 08:2x UTC): no instrument moved eval and the crop step did not clear a second unit (TXE-N S0 vs A 9/8), so the eval_heldout look is not spent (looks 0) and the Today column does not move; round 3 = the register report, the doubt detector (TXE-O) as the sorter feed, the confirm item read once (TXE-Q), the live letter f.117r (TXE-R).
+Amendments 1-2 (07:0x UTC): cap 150, ideas register research/TX-IDEAS-2026-10-09.md (23 ideas, owner's eight first), single-instrument gate p<0.01, one eval look each (0 taken), confirm item from TX-CONFIRM-SET opened once at the end, final pipeline applied to one unread Birago 1572 letter. 
+### Hand-over to incarnation 2 (lane, 9 Oct 2026 08:4x UTC by date -u; orchestrator's instruction at ~737k context)
+Successor: LANE TX-ENGINEER incarnation 2, created by `create_session` from this session (depth +1), prompt leading with the
+brief path; it starts from this handoff and research/TX-IDEAS-2026-10-09.md. Live workers handed over: TXE-S
+(session_01SSAYkYoUgEenNMg6nDGeuk, library compare, cap 10) and TXE-T2 (session_01XvCo9StdAiyDhCCvKEChMY, truth audit over 803,
+cap 6) -- the successor ledgers and archives them (get_session cost once idle), fills their rows in this table and in
+research/TX-ENGINEER-2026-10-09.md (rows S and T2 marked pending), then finalises that report (remove the DRAFT line, keep the
+owner's paragraph current) and this handoff's close-out line. The truth-doubtful positions go to TX-TRUTH-VERIFY (account 1,
+the orchestrator's queue): the lane never edits a truth file. The confirm look (0.088) is spent; eval_heldout looks 0;
+the live letter is reported (no licensed change). Pending check-in trigger trig_01EYoqFJQLFDu17Mxxrv3Y8w is deleted by this
+incarnation; the successor arms its own. Tool note for the successor's first ledger: `tools/reconcile_passes.py` silently
+misreads a `passage/sign_id` header (TXE-R: aligned the pos column, reported 99.3% for a real 86.6%); a one-line fix + test.
+Costs this incarnation: 23 workers ledgered (C 4.36, A 9.64, E 3.26, G 3.72, B 7.46, D 3.45, F 2.99, H 5.77, D2 7.49, I 2.97,
+B2 3.68, J 4.09, K 10.76, L 7.36, M 4.70, N 9.97, O 3.45, P 2.86, M2 4.76, T 2.54, Q 6.93, R 8.35 = 120.56) + S and T2 live;
+orchestrator cost not exposed while running (read it on the ARCHIVED session). Window: five_hour allowed throughout.
+
+Round 3 (PREREG-txeng-3 Decision, 08:2x UTC): no instrument moved eval and the crop step did not clear a second unit (TXE-N S0 vs A 9/8), so the eval_heldout look is not spent (looks 0) and the Today column does not move; round 3 = the register report, the doubt detector (TXE-O) as the sorter feed, the confirm item read once (TXE-Q), the live letter f.117r (TXE-R).
 
 Check-in 4, 07:17-07:2x UTC 9 Oct (fired 15 min late): five_hour allowed on account 4; orchestrator context ~600k, cost 26.6 by
 get_session -- hub-seed/SUCCESSOR-PROMPT.md written; hand-over planned at ~750k. TX-ENGINEER round 2 live: TXE-A compare-don't-recall,

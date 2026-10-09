@@ -1,7 +1,7 @@
 # TX-ENGINEER: results of the transcription-engineering campaign (LANE TX-ENGINEER, account 4, Fable; 9 Oct 2026)
 
-DRAFT at 08:4x UTC 9 Oct 2026 by date -u: TXE-R (live letter f.117r), TXE-S (library compare) and TXE-T2 (truth audit over 803)
-are still live; their rows are marked pending and the file is finalised when they report. Brief
+DRAFT at 08:4x UTC 9 Oct 2026 by date -u: TXE-S (library compare) and TXE-T2 (truth audit over 803) are still live; their rows
+are marked pending and the file is finalised by incarnation 2 when they report. Brief
 `.claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md` and its Amendments 1-2; pre-registrations
 `benchmark-tx/PREREG-txeng-2.md`, `PREREG-txeng-3.md`; the ideas register `research/TX-IDEAS-2026-10-09.md`; the taxonomy
 `research/TX-TAXONOMY-2026-10-09.md`; per-instrument results under `benchmark-tx/txeng/<instrument>/RESULTS.md`.
@@ -31,7 +31,10 @@ rule flags 18% and holds 11 of 15. That is 25 tiles on the held-out lines, about
 the look-alike pairs (d/s, p/t, n/e, h/l) in this hand's ink; your decision propagates through the atlas clusters to every
 letter of the family. Nothing else we tried moves them.
 
-The confirm leaf (a different hand, Spinelli c.1519, never tuned on) reads at 0.088 with the same pipeline; 8 of its 14
+On the live letter f.117r the pipeline's two fresh passes split on 13% of signs (the folder's earlier pair split on 25%) and
+the key reads 17 more tokens at S than the committed reading, but the language judge scores the new reading very slightly
+worse, so under the folder's own rules no change is licensed and the committed reading stands. The confirm leaf (a
+different hand, Spinelli c.1519, never tuned on) reads at 0.088 with the same pipeline; 8 of its 14
 errors are two shapes that are not on that folder's sign sheet, which is the same lesson from the other side: the sheet
 inventory, not the reader, is where the next gain is.
 
@@ -43,7 +46,7 @@ inventory, not the reader, is where the next gain is.
 | the same with the 13 truth-doubtful floor positions excluded (proposed, read-free) | 0.029 (23/790, 0.019-0.043) | TXE-T, benchmark-tx/taxonomy/FLOOR-AUDIT.md |
 | eval_heldout looks spent on an instrument | 0 | PREREG-txeng-3 Decision |
 | confirm item spinelli-c1519-confirm, one look, today's pipeline | 0.088 (17/193, 0.056-0.137); passes 0.104 / 0.083 | TXE-Q |
-| live letter fr.3252 f.117r: tokens the key licenses at S | pending (TXE-R) | |
+| live letter fr.3252 f.117r: tokens the key licenses at S | none licensed: S 207 vs committed 190 (+17 net) at err_2reader 0.134 (power ok), but the judge reads -1.234 vs the committed -1.224, so the committed reading stands | TXE-R, ciphers/birago-fr3252-1571-72/harvest/f117/RESULTS-TXE-R.md |
 
 ## The instrument table (dev = f178v L01-12, 343 signs; gate paired fixed > broken, p < 0.01)
 
@@ -70,7 +73,7 @@ inventory, not the reader, is where the next gain is.
 | M2 | feature-first retest, two calls, compliance gate | C1 | control 19/51 vs 0.70 | not run | non-test; M24 retired | 4.76 |
 | T | floor audit, read-free | truth | 13 of 20 truth-doubtful; L 0.045 -> 0.029 | n/a | flags proposed for a verifier | 2.54 |
 | Q | confirm item, one look | guard 2 | 0.088 (17/193) | one look | headline | 6.93 |
-| R | live letter f.117r | guard 3 | pending | | | |
+| R | live letter f.117r (guard 3) | live | err_2reader 0.134 (old 0.25); S 207 vs 190; judge -1.234 vs -1.224 | n/a | no licensed change | 8.35 |
 | S | cross-target library compare, two-reader-agree | C1 | pending | | | |
 | T2 | truth audit over all 803 | truth | pending | | | |
 
