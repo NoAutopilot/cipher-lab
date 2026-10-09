@@ -159,3 +159,8 @@ No key86 change (running-text gloss, no sign-level value; T40 not covered).
 | hypothesis | instrument | control | target | verdict |
 |---|---|---|---|---|
 | the 11 UNA-PISA SETTLED-T32 tokens (f.301v 6, f.302v 5) are T32 (n), a transcription label merge, key86 unchanged | pis1key run_files (key-shuffle/order p99, 1000 each), una2_pisa/PREREG-UNA2-PISA.md | positive control 5/5 (f.301v e 0.192), 5/5 (f.302v e 0.335) | f.301v 0.6302 -> 0.6561, f.302v 0.5903 -> 0.6072, both above both p99s; per-token 11/11 identical as n vs 0/11 as la | SUPPORTED; labels committed (una2_pisa/apply_t32.py) |
+
+## PISA-275R per-token crop compare on f.275r (9 Oct 2026)
+| hypothesis | instrument | control | target | verdict |
+|---|---|---|---|---|
+| f.275r T45/T47/T57-labelled signs are other table cells (T45 -> u, T47 -> f, T57 -> n) | blind Opus tile vs 22 table cells, UNA-PISA instrument unchanged (una_pisa/, PREREG-PISA-275R.md) | known-answer GK 5/5 on the same call | T57: 4 settle T32, 6 settle T57, 1 unsettled; T47: 1 T27 (f), 1 T31 (m), 1 unsettled; T45: 1 T45, 1 unsettled | key-cell rule not met for any label (T57 6 on its own cell); label-merge again (barred varpi T32 vs open omega T57), 4 T32 relabel candidates; key86 unchanged; next: UNA2-PISA-shape re-score of the 4 on f.275r |

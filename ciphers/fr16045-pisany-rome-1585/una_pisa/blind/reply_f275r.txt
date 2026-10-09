@@ -1,0 +1,21 @@
+Q01	best=Q	second=F	confidence=high	open w-shaped sign (omega), no top bar
+Q02	best=P	second=H	confidence=medium	m-shaped sign whose last stroke runs down below the line
+Q03	best=L	second=B	confidence=low	4-like sign: a vertical stroke crossed by a horizontal stroke, with a loop at the upper left
+Q04	best=D	second=L	confidence=low	faint upright stroke crossed by a horizontal bar, with a b-like bowl at the bottom
+Q05	best=A	second=K	confidence=medium	looped p/ρ-shaped sign with a long diagonal stroke through it
+Q06	best=Q	second=F	confidence=high	w-shaped sign (omega); a faint loop above may be a circle mark
+Q07	best=O	second=U	confidence=high	large X-shaped cross with a small o loop at the lower right
+Q08	best=Q	second=F	confidence=high	open w-shaped sign, no bar
+Q09	best=Q	second=F	confidence=high	small w-shaped sign (omega)
+Q10	best=F	second=R	confidence=high	w-shaped sign (omega) under a heavy horizontal top bar (ϖ)
+Q11	best=H	second=M	confidence=medium	n-shaped sign whose last stroke runs down below the line (ŋ-like)
+Q12	best=F	second=R	confidence=high	w-shaped sign (omega) under a horizontal top bar running right
+Q13	best=C	second=K	confidence=medium	y-shaped sign with a looped tail; a faint circle may surround it
+Q14	best=U	second=O	confidence=medium	small slanted x-shaped sign
+Q15	best=B	second=J	confidence=high	k-shaped sign with a tall stem
+Q16	best=F	second=R	confidence=high	w-shaped sign (omega) under a long horizontal top bar
+Q17	best=F	second=Q	confidence=medium	w-shaped sign (omega) with a bar across its top
+Q18	best=Q	second=F	confidence=low	slanted w/ω-shaped sign with a looped tail running down to the left; possible circle
+Q19	best=O	second=U	confidence=high	X-shaped cross with a small curl at the lower right
+Q20	best=Q	second=F	confidence=high	small w-shaped sign (omega)
+Q21	best=Q	second=F	confidence=medium	w-shaped sign with a small hook or stroke at the upper right (a partial bar?)
