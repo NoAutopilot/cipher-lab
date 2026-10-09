@@ -6674,3 +6674,22 @@ already known: ~0 (SIG-AVS's 74 re-look, a sibling with a period decipherment, ~
 4. 4612: new material or a different instrument only. Code 146 (5797): band tests retired; open-codes.
 5. august-van-saksen: Qf label-split hypothesis (~$1, low value); otherwise waiting on ASKS 67 / the Dresden reply.
 SIG-2 (session_01SYyVT7bpRYp2Fzxc8BoxdG, 9 Oct 00:39-00:4x UTC): one Gallica IIIF manifest probe (Baluze 170, btv1b90015040) -> 403 at 00:42; closed at once, no workers; items 1-2 still Gallica-blocked, 3-5 unchanged; SIG-3 queued with the same probe-first note.
+
+## LANE VERIFY-4 handoff (session_01667XGk7THE9debemXAefTi, account 3), 8-9 October 2026 (23:35-01:3x UTC by date -u; workers 36.88 + orchestrator ~5.6 = ~42.5 of 60 by get_session; seven_day allowed_warning throughout; closed dry)
+Jobs file .claude/briefs/runs/2026-10-08-acct3-verify4-jobs.md. 10 Opus verifiers on account 3, all done and ledgered; none re-addressed
+(readers and first auditors accounts 1, 2, 4; account 3's own V1-LS4B/AUD2-LEDGER-2 were second audits in other sessions).
+Results:
+- AUD3-E96 (1.78): **eckert-1864 E96 N3 -> N2** -- Horan, Confederate Agent (1954) p.226 prints the Jones confession naming Col. Wm. Hamilton among Baltimore rebel agents; SO row withdrawn.
+- AUD3-E97 (1.87, row added by this lane): E97 N3 weak kept (Horan p.227 names the St Louis agents only); E100 outside the affair.
+- AUD-SIG-CHAV (4.08): Baluze 170 f.229 N3 D2 kept; Caillet 1912 pp.65-66 (Louis XIII to Eberstein, 9 Nov 1640) confirms the reward clause; AAE CP still unreached (not N4).
+- AUD-SIG-E146 (4.47, 1.49x cap): E146 N3 weak D2 kept; USMRR/QMG/OR reports and Herr silent on the L&N take-over; 2 JSTOR rows (Cotterill 1924).
+- AUD2-MANTR8 (4.14, row added by this lane): manteuffel 0375 N2, 0214 N3 low, both D1 held; 51.28 = "St." eye-checked; 0214 grades corrected.
+- AUD2-SIG-228 (3.53): Baluze 170 f.228 N3 D2 held; **SIG-V228's grade fix changed two values (73 so, 29 gu): fr17 judge PASS -> FAIL by 0.038**; status/SO corrected.
+- AUD2-LEDGER-8 (3.72): E193 N3 weak D2, E194 N3 weak D3 kept; side find 5805/1 = OR I/42-3 p.506 (N1) for LANE LEDGER.
+- AUD2-LEDGER-9 (4.35): E210 E212 E213 E214 N3 weak kept. AUD2-LEDGER-10 (6.04): E220 E222 E223 E224 N3 weak D3 kept. AUD2-LEDGER-11 (2.90): E235 N3 D3 held.
+- Tool fix: tools/verify_backlog.py counted audit_status 'three audits' as "audit 2 missing" (4 false high rows: f.229, E96, E97, E146); fixed + offline test.
+**next** (for LANE VERIFY-5, or whoever finds new rows):
+1. Nothing queued at close (01:3x UTC): no account-3 AUD row; VERIFY-BACKLOG has 0 high audit2 rows (2 low). LANE LEDGER (account 1) keeps adding AUD2-LEDGER-n rows as its FV-FM verifiers finish: re-read WORK-QUEUE after a fresh fetch. Cost ~2.5 per eckert entry, ~3.5-4.5 per family audit.
+2. Google Books answered 429 (daily quota) to every account-3 worker 8 Oct 23:4x-9 Oct 01:2x; the Google Books phrase pass is owed on E193 E194 E210-E214 E220-E224 E235 and f.228 once the quota resets (a cheap Sonnet sweep, ~1 per target).
+3. Grant Papers vol. 13 (not on IA) is unchecked for E220 E223 E235 (and E173 E177 from VERIFY-3): a LOCAL-QUEUE/HathiTrust row, not a cloud job.
+4. Push the brief and the WORK-QUEUE row before create_session: workers spawned in the gap could not claim (2 rows claimed on their behalf).

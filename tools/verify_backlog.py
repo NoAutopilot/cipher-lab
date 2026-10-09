@@ -11,7 +11,7 @@ Two registers, read from disk, never merged by guesswork:
                 . not yet; tools/progress_block.py STAGES). Audit 1 done = `1` is x. Missing = `2` / `C` not x
                 (a ~ counts as missing and is noted). Date key = the row's `updated` cell.
   status.json   `results[]`. Audit 1 done = audit_status 'one audit'/'two audits', or a `novelty`/`class` or
-                `audit_refs` set (a verifier class exists). Audit 2 done = audit_status 'two audits'. Counted = a
+                `audit_refs` set (a verifier class exists). Audit 2 done = audit_status 'two audits' or 'three audits'. Counted = a
                 `depth` field set (rule 4a; tools/depth_check.py is the counting gate). Date key = the result's
                 `date`. Readings only: claim_scope recovered-passages, completed-reading, key-to-known-text, or none;
                 corrections and catalogue contributions are skipped (not readings). key-to-known-text is never
@@ -33,6 +33,9 @@ PROGRESS.tsv row (it is listed with note 'absent from PROGRESS.tsv'). Offline te
 import argparse, csv, datetime, json, re, sys
 
 PROGRESS = "PROGRESS.tsv"
+# audit_status values meaning Audit 2 is done ('three audits' since LANE-VERIFY-4, 9 Oct 2026: a third audit was
+# listed as "audit2 missing" before this, four false high rows).
+DONE_A2 = ("two audits", "three audits")
 STATUS = "status.json"
 OUT = "VERIFY-BACKLOG.tsv"
 COLS = ["name", "folder", "leaf_row", "audit1_date", "missing", "priority", "next_action", "source", "note"]
@@ -155,11 +158,11 @@ def build(progress, results):
         if not folder or scope not in READING_SCOPES:
             continue
         st = e.get("audit_status") or ""
-        a1 = st in ("one audit", "two audits") or bool(e.get("novelty") or e.get("class") or e.get("audit_refs"))
+        a1 = st in ("one audit",) + DONE_A2 or bool(e.get("novelty") or e.get("class") or e.get("audit_refs"))
         if not a1:
             continue
         cls = e.get("novelty") or e.get("class") or ""
-        m2 = st != "two audits"
+        m2 = st not in DONE_A2
         mc = not e.get("depth") and scope not in NOT_COUNTABLE and cls not in LOW_CLASS
         if not (m2 or mc):
             continue

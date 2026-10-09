@@ -36,6 +36,8 @@ RESULTS = {"results": [
      "date": "20 Sept 2026", "title": "Y correction"},
     {"link": "https://x/tree/main/ciphers/f-x", "audit_status": "two audits", "claim_scope": "key-to-known-text",
      "date": "20 Sept 2026", "title": "X known text"},
+    {"link": "https://x/tree/main/ciphers/f-v", "audit_status": "three audits", "claim_scope": "recovered-passages",
+     "novelty": "N3", "depth": "D2", "date": "20 Sept 2026", "title": "V three audits"},
     {"link": "https://x/tree/main/ciphers/f-w", "claim_scope": "recovered-passages", "date": "20 Sept 2026",
      "title": "W never audited"},
 ]}
@@ -68,6 +70,7 @@ def test_must_not():
     names = {r["name"] for r in rows}
     assert "NoAudit" not in names and "Y correction" not in names and "X known text" not in names
     assert "W never audited" not in names and "Done" not in names
+    assert "V three audits" not in names  # a third audit is not a missing second one
     dec = by(rows, "Decided")[0]
     assert dec["priority"] == "none" and dec["next_action"].startswith("no verifier action")
     k = by(rows, "KnownN0")[0]
