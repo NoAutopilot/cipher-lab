@@ -110,3 +110,16 @@ placeholders, and that no personal data is in the file. Write the verdict as a `
 corrected (or "nothing"), set `status: ready` only if it passes, run `python3 tools/send_queue_check.py` on a would-be row and paste the
 output in the done line; do NOT add the SEND-QUEUE row (the orchestrator queues it) and do not send. Then update the ASKS 159 row to a
 self-contained desk-ready sentence (one action, paste-ready) but leave its status word `backlog` (desk ranking is the orchestrator's).
+
+## KARL-SENDQ (account 4, Opus 5.5, cap USD 1.5, box 30 min) -- mailbox json + SEND-QUEUE row for the checked Riksarkivet draft
+outreach/riksarkivet-karlxi-1677.md passed gate 7 (OUT-CHECK-KARL, checked: 9 Oct 2026 12:16 UTC, status ready). The send runner reads
+SEND-QUEUE.tsv rows whose `draft` is an outreach/mailbox/<slug>.json (tools/send_queue_runner_prompt.md; tools/send_queue_check.py fails on a
+.md draft path). Job: (1) write outreach/mailbox/riksarkivet-karlxi-1677.json with the same keys as outreach/mailbox/spencer-stair-townshend-quote.json
+(read it first), body = the draft's body verbatim (the [SIGN-OFF] and [SUBJECT] placeholders kept, the AI-disclosure sentence in the first
+paragraph), to/subject from the draft header; (2) append the SEND-QUEUE.tsv row (next free S id, kind email, target the two folders, draft
+the json path, to riksarkivet@riksarkivet.se, subject the draft's suggested subject, checked "2026-10-09 12:16 (OUT-CHECK-KARL)", status
+queued, result empty); (3) run `python3 tools/send_queue_check.py SEND-QUEUE.tsv --row <id>` and paste the output in the done line -- if it
+fails, fix the row/json until it passes, never the draft's checked: line; (4) update the draft header's "not in the mailbox, not queued"
+clause to "queued S<id> 9 Oct 2026", CONTRIBUTIONS.md row to queued, and ASKS 159's status word from backlog to desk with one sentence:
+"the send runner sends S<id>; nothing for you unless it fails" (desk count must stay <= 5: run tools/desk_check.py --cap 5 after). Never
+send; never name the owner; file_shrink_guard on every touched path; done line for orchestrator (account-4).
