@@ -7084,6 +7084,21 @@ account 4. USAGE.tsv bars: no reading from accounts 2-4, account 1's 6 days old 
 flagged in ROOM once). Owner's open decisions unchanged: depth-bar convention (DV-MERCY), ASKS 156 (ROOM.md restricted figures).
 No owner report until he asks (10 Oct Pacific): the TX-ENGINEER result stands as written at 08:54 (research/TX-ENGINEER-2026-10-09.md).
 
+Check-in 2, 09:53-10:0x UTC 9 Oct (2:53 am PT): five_hour allowed; orchestrator context ~280k, cost 7.6 by get_session. All seven
+account-4 workers done inside 15 minutes, ledgered, archived: MQS-CVD-AUDIT 2.08 D (cvd_check --audit controlled-only; glyph_atlas red/green
+overlay the one collapse), MQS-SAMEDAY 2.68 D (sameday.py rank controlled-only, date weak), MQS-STRUCK 1.70 D (decode_key corrections mode;
+STRUCK-2 suggested), MQS-PARTICIPATION 2.32 N (FAIL, weak), MQS-BNF-S6 1.97 F (stopped at intake: no owner approval of the anonymous-pile
+proposal -> ASKS 158, backlog, self-contained wording), MQS-BNF-S5 3.07 N (attribution leads FAIL vs null, weak), WAIT-PASS-4 3.74 D
+(10/10 While-waiting sections; wait-only 0 missing; finding: ra-karlxi copy order never drafted -> KARL-REQ queued on account 2).
+Account 1 (its dispatcher 09:39): UNA2-BLA done 09:48 -- Huntington IIIF serves BLA191 p5 at 8708 px native; blind read at 4354 px, KA
+14/14, 8 L12 tokens M -> C (C 138, M 14 of 172), H/C/S 82.0%, depth left to a verifier -> UNA3-BLA queued (the 14 remaining M columns at
+the same size), then DV-BLA (a separate depth verifier) once it lands; TX-TRUTH-VERIFY done 09:49 -- 11 of 13 no.87 truth flags upheld
+(8 alignment, 3 clerk), 2 corrected from the image, 0 kept; flag column + tx_bench --exclude-flagged; pass L 0.045 -> 0.042 as measured,
+0.029 with the flagged excluded; TRANSCRIPTION.md Today column updated by the verifier (both figures). Account-1 costs are account 1's to
+ledger (not visible here). Account 4: LANE-TX-ENGINEER's queue row closed late (09:57), which restarted the blast auto-fill timer, so
+LANE-MQS-3-account-4 was added by hand and spawned from this session (STRUCK-2 first; S6 and Gallica-bound rows out). Queue: account 1
+UNA3-BLA (:40), account 2 UNA2-BIR3252, UNA2-PISA, KARL-REQ (:10). Desk/NEAR/work_queue checks ok. Next check-in 10:25.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

@@ -35,3 +35,8 @@ Gallica 403s): at the first check-in after 10 Oct 00:00 UTC re-queue ONE Gallica
 handoff item 1) and MQS-BNF-S4 (brief 2026-10-09-ytbiz-mqs-next-bnf-s4.md); nothing Gallica-bound before that. Keys at 09:25: all six
 API keys answer 200 (Google Books and S2 recovered). USAGE.tsv bars stale on every account (mod not loading): flag once, not every
 check-in. Cadence: 15 min while the seven S-band workers are live, 40-45 after.
+STATE DELTA 10:0x UTC 9 Oct: account-4 MQS-* wave and WAIT-PASS-4 all done/ledgered/archived; LANE-MQS-3-account-4 (third MQS incarnation,
+STRUCK-2 first) live from this session; ASKS 158 = the owner's decision on anonymous-pile intake (S6 waits on it). Blathwayt: UNA2-BLA
+moved 8 tokens to C (H/C/S 82%), UNA3-BLA queued on account 1, then queue DV-BLA (depth verifier, separate session) when it lands.
+TX-TRUTH-VERIFY: no.87 measured error 0.045 -> 0.042, 0.029 flagged-excluded (owner report line). Account-1/2 worker costs are theirs to
+ledger; record results in STATUS only.
