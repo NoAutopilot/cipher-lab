@@ -156,6 +156,32 @@ def bitmap(mask):
     return cv2.resize(can, (BM, BM), interpolation=cv2.INTER_AREA)
 
 
+# Overlay colours, BGR for cv2: Okabe-Ito blue #0072B2 and the project's dark orange #B35900 (cvd_check.py
+# sheets_light), replacing red vs green (MQS-CVD-AUDIT lead, deutan dE 3.7-5.1; MQS-CVD-FIX, 9 Oct 2026).
+OVERLAY_BLUE = (178, 114, 0)  # BGR colour; on a line cvd_check.py --audit scans
+OVERLAY_ORANGE = (0, 89, 179)  # BGR colour
+
+
+def _dashed_line(img, x0, y, x1, col, t, dash=None):
+    """Horizontal dashed line from x0 to x1 at row y."""
+    dash = dash or max(6, 4 * t)
+    for x in range(x0, x1, 2 * dash):
+        cv2.line(img, (x, y), (min(x + dash, x1), y), col, t)
+
+
+def _dashed_rect(img, x, y, w, h, col, t, dash=None):
+    """Rectangle outline drawn as dashes (the non-colour cue beside a solid one)."""
+    dash = dash or max(3, 2 * t)
+    for xa in range(x, x + w, 2 * dash):
+        xb = min(xa + dash, x + w)
+        cv2.line(img, (xa, y), (xb, y), col, t)
+        cv2.line(img, (xa, y + h), (xb, y + h), col, t)
+    for ya in range(y, y + h, 2 * dash):
+        yb = min(ya + dash, y + h)
+        cv2.line(img, (x, ya), (x, yb), col, t)
+        cv2.line(img, (x + w, ya), (x + w, yb), col, t)
+
+
 def segment_page(name, path, box, a):
     grey = np.array(Image.open(path).convert('L'))
     if box:
@@ -226,12 +252,14 @@ def segment_page(name, path, box, a):
     if a.debug:
         d = cv2.cvtColor(grey, cv2.COLOR_GRAY2BGR)
         t = max(1, int(mh / 12))
+        # CVD-safe overlay (MQS-CVD-FIX, 9 Oct 2026; was red/blue/green): signs solid orange boxes, marks dashed
+        # blue boxes, line peaks dashed blue full-width lines -- shape and dash carry the kind, not hue alone.
         for s in signs:
-            cv2.rectangle(d, (s['x'], s['y']), (s['x'] + s['w'], s['y'] + s['h']), (0, 0, 255), t)
+            cv2.rectangle(d, (s['x'], s['y']), (s['x'] + s['w'], s['y'] + s['h']), OVERLAY_ORANGE, t)
         for m in marks:
-            cv2.rectangle(d, (m['x'], m['y']), (m['x'] + m['w'], m['y'] + m['h']), (255, 0, 0), t)
+            _dashed_rect(d, m['x'], m['y'], m['w'], m['h'], OVERLAY_BLUE, t)
         for p in peaks:
-            cv2.line(d, (0, int(p)), (d.shape[1], int(p)), (0, 160, 0), t)
+            _dashed_line(d, 0, int(p), d.shape[1], OVERLAY_BLUE, t)
         sc = 1600 / d.shape[1]
         cv2.imwrite(os.path.join(a.out, f'debug_{name}.jpg'), cv2.resize(d, None, fx=sc, fy=sc))
     return signs, marks, grey, mh
@@ -352,7 +380,7 @@ def segment_cursive(name, path, box, a):
     if a.debug:
         d = cv2.cvtColor(grey, cv2.COLOR_GRAY2BGR)
         for s_ in signs:
-            cv2.rectangle(d, (s_['x'], s_['y']), (s_['x'] + s_['w'], s_['y'] + s_['h']), (0, 0, 255), 1)
+            cv2.rectangle(d, (s_['x'], s_['y']), (s_['x'] + s_['w'], s_['y'] + s_['h']), OVERLAY_ORANGE, 1)
         cv2.imwrite(os.path.join(a.out, f'debug_{name}.jpg'), d)
     return signs, [], grey, xh
 
@@ -927,8 +955,12 @@ def strips(a, out, marks):
             img = np.full((band.shape[0] + lab_h, band.shape[1], 3), 255, np.uint8)
             img[:band.shape[0]] = band
             for j, b in enumerate(b for b in bs if cx0 <= b['x'] < cx1):
-                col = (0, 0, 220) if b['pos'] % 2 else (200, 90, 0)
-                cv2.rectangle(img, (b['x'] - cx0, b['y'] - y0), (b['x'] + b['w'] - cx0, b['y'] + b['h'] - y0), col, 2)
+                # odd positions solid orange, even dashed blue; the printed position number is the non-colour key
+                col = OVERLAY_ORANGE if b['pos'] % 2 else OVERLAY_BLUE
+                if b['pos'] % 2:
+                    cv2.rectangle(img, (b['x'] - cx0, b['y'] - y0), (b['x'] + b['w'] - cx0, b['y'] + b['h'] - y0), col, 2)
+                else:
+                    _dashed_rect(img, b['x'] - cx0, b['y'] - y0, b['w'], b['h'], col, 2)
                 cv2.putText(img, str(b['pos']), (b['x'] - cx0, band.shape[0] + 16 + 20 * (j % 2)),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, col, 2)
             p = os.path.join(a.strips, f'{a.page}_L{li:02d}' + (f'{"abcdefgh"[k]}' if nparts > 1 else '') + '.jpg')

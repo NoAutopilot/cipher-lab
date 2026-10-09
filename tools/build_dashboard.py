@@ -726,14 +726,14 @@ next_steps_strip = "".join(f'<span><b>{v}</b> {E(k)}</span>' for k, v in sorted(
 CSS = """
 :root{
   --ground:#F6F5F1; --surface:#FFFFFF; --ink:#1F2328; --muted:#6A7178; --line:#DCDFE3; --accent:#2E6F6A; --accent-soft:#E3EFEE;
-  --good:#2F7D4F; --good-soft:#E4F1E8; --warn:#B4741A; --warn-soft:#F7ECD9; --focus:#2E6F6A;
+  --good:#22306E; --good-soft:#E3E6F3; --warn:#B4741A; --warn-soft:#F7ECD9; --focus:#2E6F6A;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
   --ground:#15181C; --surface:#1C2127; --ink:#E6E8EB; --muted:#98A0A8; --line:#2C333B; --accent:#5FB3AB; --accent-soft:#1F3634;
-  --good:#6ABF85; --good-soft:#1E3327; --warn:#D9A24A; --warn-soft:#3A2E17; --focus:#5FB3AB; color-scheme:dark; } }
+  --good:#9DB7F5; --good-soft:#1B2340; --warn:#D9A24A; --warn-soft:#3A2E17; --focus:#5FB3AB; color-scheme:dark; } }
 :root[data-theme="dark"]{
   --ground:#15181C; --surface:#1C2127; --ink:#E6E8EB; --muted:#98A0A8; --line:#2C333B; --accent:#5FB3AB; --accent-soft:#1F3634;
-  --good:#6ABF85; --good-soft:#1E3327; --warn:#D9A24A; --warn-soft:#3A2E17; --focus:#5FB3AB; color-scheme:dark; }
+  --good:#9DB7F5; --good-soft:#1B2340; --warn:#D9A24A; --warn-soft:#3A2E17; --focus:#5FB3AB; color-scheme:dark; }
 *{box-sizing:border-box}
 body{background:var(--ground);color:var(--ink);font-family:"Public Sans","Segoe UI",system-ui,sans-serif;font-size:16px;line-height:1.5;padding-block:20px 60px;padding-inline:clamp(16px,4vw,40px)}
 .wrap{max-width:960px;margin-inline:auto;min-width:0}
@@ -765,10 +765,10 @@ section[hidden]{display:none}
 .rhead:hover{background:var(--surface)}
 .rtitle{text-wrap:pretty} .rchips{grid-column:2;display:flex;flex-wrap:wrap;gap:6px}
 .chip{display:inline-block;font-size:0.74rem;font-weight:600;padding:2px 7px;border-radius:3px;background:var(--line);color:var(--ink);letter-spacing:0.01em}
-.chip.r-sub{background:var(--good-soft);color:var(--good)} .chip.r-conf{background:var(--accent-soft);color:var(--accent)} .chip.r-form,.chip.c-aud{background:transparent;border:1px solid var(--line);color:var(--muted)} .chip.qa-flag{background:transparent;border:1px solid var(--warn,#b45309);color:var(--warn,#b45309)}
-.chip.k-ours{background:var(--good);color:#fff} .chip.k-period{background:var(--accent-soft);color:var(--accent)} .chip.k-pub{background:transparent;border:1px solid var(--line);color:var(--muted)} .chip.k-known{background:transparent;border:1px dashed var(--line);color:var(--muted)}
+.chip.r-sub{background:var(--good-soft);color:var(--good)} .chip.r-conf{background:var(--accent-soft);color:var(--accent)} .chip.r-form,.chip.c-aud{background:transparent;border:1px solid var(--line);color:var(--muted)} .chip.qa-flag{background:transparent;border:1px solid var(--warn,#B4741A);color:var(--warn,#B4741A)}
+.chip.k-ours{background:var(--good);color:var(--surface)} .chip.k-period{background:var(--accent-soft);color:var(--accent)} .chip.k-pub{background:transparent;border:1px solid var(--line);color:var(--muted)} .chip.k-known{background:transparent;border:1px dashed var(--line);color:var(--muted)}
 .chip.so-queued{color:var(--muted);border:1px dashed var(--line);background:transparent} .chip.so-posted{background:var(--warn-soft);color:var(--warn)} .chip.so-checked{background:var(--good-soft);color:var(--good)}
-.chip.out-ready{background:var(--good);color:#fff} .chip.out-sent{background:var(--accent-soft);color:var(--accent)} .task.sentrow{grid-template-columns:12px minmax(0,1fr);opacity:0.85} .chip.out-drafted{background:var(--warn-soft);color:var(--warn)} .chip.k{background:var(--accent-soft);color:var(--accent)}
+.chip.out-ready{background:var(--good);color:var(--surface)} .chip.out-sent{background:var(--accent-soft);color:var(--accent)} .task.sentrow{grid-template-columns:12px minmax(0,1fr);opacity:0.85} .chip.out-drafted{background:var(--warn-soft);color:var(--warn)} .chip.k{background:var(--accent-soft);color:var(--accent)}
 .rbody{padding:4px 4px 18px 56px;display:grid;gap:14px;font-size:0.95rem}
 @media (max-width:600px){.rbody{padding-left:4px}}
 .dz p{max-width:70ch} .memo p{max-width:70ch} .rating{font-weight:600} .rating.r-sub{color:var(--good)} .rating.r-conf{color:var(--accent)} .rating.r-form{color:var(--muted)}

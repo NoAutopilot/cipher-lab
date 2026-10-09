@@ -31,3 +31,24 @@ Fix, not a method: replace the red-vs-green overlay pairs that MQS-CVD-AUDIT (9e
    flagged by the audit.
 
 A miss on gate 1 or 2 is reported with both numbers; this is a fix, so no shelf grade unless a shelf row describes the colours.
+
+## Results (9 Oct 2026, 10:3x UTC by date -u)
+
+1. Gate 1 PASS: after the edit `--audit tools/glyph_atlas.py tools/build_dashboard.py` -> glyph_atlas 2 colour literals,
+   2 chromatic, 0 flags; build_dashboard 22 literals, 8 chromatic, 0 flags; exit 0 (before: 4 + 2 flags, exit 2).
+2. Gate 2 PASS: control unchanged, false flags 2/31, rotated null recall 0/10, CONTROL PASS.
+3. Gate 3 PASS: test_glyph_atlas ok, _jitter ok (stab small 0.00, big 1.00), _match ok, build_dashboard counts/depth/fame/
+   sidequests ok, test_cvd_check PASS (before and after; opencv/skimage/sklearn had to be pip-installed first).
+4. Null PASS, after one finding: the first re-broken copy (OVERLAY_BLUE back to (0, 160, 0)) read 0 flags, because the
+   audit scans 3-int tuples only on lines naming cv2/col/fill/outline and the bare constant line was invisible to it -- the
+   first 0-flag result was coming from the hex in the comment above the constants, not the code. The constant lines now
+   carry "# BGR colour" so the audit reads them; re-run: fixed file 0 flags (reads #0072b2, #b35900 from code lines
+   161/162), re-broken copy 1 flag (CVD-COLLAPSE #00a000 vs #b35900, deutan 4.4, exit 2), pre-fix files 4 + 2 flags.
+5. Palette: overlay pair #B35900/#0072B2 on white PASS (deutan 53.9, tritan 51.2). Dashboard light #22306E vs #B4741A PASS;
+   dark #9DB7F5 vs #D9A24A PASS on contrast except white text on #9DB7F5 (2.00; was 2.23 on #6ABF85), fixed by drawing
+   k-ours/out-ready chip text in var(--surface) (#1C2127 on #9DB7F5 PASS). Blue #0072B2/#56B4E9 for --good was rejected:
+   the audit flags it CVD-COLLAPSE against --accent teal (tritan 7.9 / 5.0). Navy #22306E vs teal #2E6F6A is not flagged
+   by the audit but is under the 20 palette gate under deutan/tritan; both are "positive" states and every chip carries
+   its text label, so meaning does not ride on that hue difference.
+Non-colour cues: segment --debug signs solid orange boxes, marks dashed blue boxes, line peaks dashed blue lines (checked
+on a synthetic page render); strips odd positions solid orange, even dashed blue, position number printed under each.
