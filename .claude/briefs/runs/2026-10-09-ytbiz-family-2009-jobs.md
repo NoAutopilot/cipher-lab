@@ -76,3 +76,50 @@ Posthius (Bavarikon), Willem van Hessen / Orange chancery (WVO), Puebla / Spanis
 POOLS-2026-10-09-A2l.tsv (key_path, office, host, unread item ids, signs estimate, key-in-hand grade, prior-work check 1-3 result per item,
 p_move, cost) and rank the top three for a check-solved worker in wave 2. No transcription, no new target folders, no scouting outside these
 key families.
+
+## Wave 2 (21:0x UTC 9 Oct)
+Wave 1 results: MANT-CEN5 census (0181, 0491 the only unglossed, unattributed code leaves), MANT-GUT gate PASS (gutter C 24 M 14), BRO-DF
+faults fixed, LIN-TRIM non-test (gluing gate FAIL, char scorers retired for trim/join), POOLS-A2l top 3 (Suriname governor letters; Van
+Beuningen inv.1540; Juan Manuel -- parked on ASKS 138/L17, not briefed). Pricing lesson: every Opus job in wave 1 ran 1.5-1.7x its cap; an
+Opus worker spends ~$2 reading a large folder before work. Caps below are set accordingly; stop at the cap all the same.
+Hosts this wave: sachsen (MANT-0181 first, then MANT-0491 after its "sachsen release"); NA (SUR-GOV, then VB-1540 after its "NA release";
+VB-1540 works from disk and the huygens host meanwhile); IA ("IA": LIN-BFSP only).
+
+### MANT-0181 (Opus, cap 6, box 100 min, sachsen take FIRST): sachsstaatsarchiv-manteuffel-1712 694/08 frame 0181 (+0182 if continuation)
+MANT-CEN5 top unattributed unglossed leaf: stamp 138, Dresden 6 Juillet 1712, Flemming to Manteuffel, right page, 7 inline runs ~35 tokens,
+no gloss, no clear rendering after; 0182's unglossed runs may continue it. Prior-work step in full BEFORE any transcription: check 4 = Acta
+Borussica BO I and Droysen IV.1 by date (+-3 days) and both correspondents, Flemming's printed correspondence, Krauske; check 2 = 0180-0184
+on disk/sheets for a clear copy or gloss. Fetch 0181/0182 once at native (manifest), COUNT tokens on the image before planning. Crops
+pasted, two blind Sonnet code passes, reconciliation. PREREG-MANT0181.md (own commit, checked on origin) BEFORE decoding: decode under
+key.tsv; gate = fr18 judge on the decode vs (i) key-shuffled decodes p95 and (ii) the SHUFFLED-TARGET decode (CLAUDE.md rule 3: a judge that
+passes the shuffled-target decode is void as a gate at this N -- then say "judge cannot decide" and grade by key alone). Grades per token
+(rule 4): H only where key.tsv is H; S needs the gate; else M. Print-check the decoded phrases (G3) before any "not located" sentence. Report
+what was found and where it was not found; do not classify novelty. If it beats its control, the orchestrator sends it to a first verifier.
+
+### MANT-0491 (Opus, cap 5, box 90 min, sachsen after MANT-0181's "sachsen release"; prior-work from disk meanwhile): 694/08 frame 0491
+MANT-CEN5: stamp 393, Berl. 14 Nov 1712; runs 103.34.26.27 x3, 34.22.60.53.39.27, 60.16.54.53.11, 36.31 plus 155 187 257, ~35 tokens, two
+small words above (pouvoir, Flem.) = partial gloss, no clear rendering after. Same procedure as MANT-0181 (prior-work 1-4 first: BO I by date,
+the 0490/0494 neighbours already read -- does 0491 continue 0490's mid-Nov dispatch?). The two glossed words are a tiny known answer: score
+them blind, report them, but they do not make a gate (N < 5, say so). PREREG-MANT0491.md before decoding; same judge + shuffled-target rule.
+
+### SUR-GOV (Sonnet, cap 3, box 75 min, NA take/release, <= 150 requests, >= 1.5 s): na-suriname-map-1781 governor letters image screen
+POOLS-A2l rank 1. NA 1.05.03 governor's incoming letters: screen the unlooked inv. 370, 371, 372 (1780) and 378, 379, 380 (1783-84) for
+cipher passages at thumbnail scale (IIIF 300-400 px), 1-in-10 sample per inventory first, then every scan within +-5 of any hit; then inv.
+266-270 (1739-42, the Nieuw alphabet's issue years) 1-in-15 if requests remain. Seed every contact sheet with one known cipher scan from inv.
+373 (0744 or 0745) as a positive control and one plain scan as a negative; a sheet whose control is missed is a non-test, re-look it. Output
+sources/na-1.05.03/2026-10-09/screen_gov.tsv (inv, scan, cipher yes/no/possible, glossed yes/no, date if legible) and a NOTES section
+"## SUR-GOV". No transcription. Report counts per inventory and requests per host.
+
+### VB-1540 (Sonnet, cap 2.5, box 70 min; NA after SUR-GOV's "NA release" (<= 30 requests); huygens host for the edition, <= 30 requests):
+vanbeuningen-dewitt-1657 inv.1540 per-letter edition match
+POOLS-A2l rank 2. Read VB-SCREEN2 and edition_check_1539_1541.tsv first. For each cipher-bearing scan of NA 3.01.17 inv.1540 (1658, 141
+scans; a 1-in-7 sample saw groups at 0036): find the letter it belongs to (date line, endorsement) and match it against Brieven aan Johan de
+Witt I (Huygens retroboeken full-text by date/opening words). Output edition_check_1540.tsv (scan, letter date, endorsement, cipher yes/no,
+printed yes/no with page, printed in clear over the cipher span yes/no/unknown). Letters printed in clear are N0 (key tests at most); list
+only the unprinted cipher-bearing letters as candidates. No transcription, no decode.
+
+### LIN-BFSP (Sonnet, cap 2.5, box 60 min, IA take/release, be-api >= 1.5 s, <= 80 requests): antt-linhares-chave print step
+The Verdict's cheapest next: be-api full-text sweep of the 33 unchecked British and Foreign State Papers volumes (read NOTES line ~976 and
+the print rung for which volumes are checked and which phrases/names to use; run a positive control per query family on a volume known to
+carry the term). Log every volume searched with hit/no-hit; any hit -> the surrounding sentence quoted, nothing more. A search result for the
+log, never a novelty verdict. gaps_check.py after.
