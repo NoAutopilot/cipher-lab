@@ -1,0 +1,54 @@
+line	seg	order	gloss	signs	note
+L02	s2	1	CLEAR:et	-	clear word before the cipher; preceding clear text '...qui sert de Florance' not itemised
+L02	s2	2	-	Z v	no gloss directly above; v sits at the left edge of 'ma'
+L02	s2	3	ma	y a	a at right edge of gloss; grouping approximate
+L02	s2	4	-	f	under the gap between 'ma' and 'dit'
+L02	s2	5	dit	3 L z	3 could be z; final z could be 3 with tail
+L03	s1	1	-	II 4 a c	no gloss word clearly above (descenders of line above intrude); II and 4 touch
+L03	s1	2	aucuns	y p w m	m sits at the right end of the gloss, could belong to next
+L03	s1	3	ben	o a #	# partly under the gap before 'dassister'
+L03	s1	4	dassister	1 . sq o 0' f 3 c 1	o small; 0' accent faint
+L03	s1	5	a	. 4	dot could close previous group
+L03	s1	6	gehinef	9 1 . f 4 0 0'	gloss read as gehine plus underlined f (could be gesine/genev); 9 could be NEW:q-shape
+L03	s2	7	-	# 0	under gap between gloss words
+L03	s2	8	deux	m sq z	
+L03	s2	9	millions	p 4 + L 9 f sq 3	p at left edge, sq 3 at right edge of gloss
+L03	s2	10	dor	y w #	gloss underlined
+L03	s2	11	despaigne	0 sq 0 v L 9 NEW:r-shape 4 0	r-shape (rotunda r / 2-like) close after 9; last 0 could be o
+L03	s2	12	CLEAR:Il	-	clear
+L03	s2	13	CLEAR:ha	-	clear
+L03	s2	14	CLEAR:laisse	-	clear
+L03	s2	15	+	y	decipherer's + (unexpanded) above y
+L03	s2	16	-	#	hash with a descending stroke; no gloss
+L03	s2	17	a	v	
+L03	s2	18	-	.	final dot, could be punctuation
+L04	s1	1	destinons	-:- 0 0 4 f # y NEW:r-shape	gloss word uncertain (destinons/destinees); 4 looks like open triangle
+L04	s1	2	quarante	a a c v w 4 f v	first a could be o
+L04	s1	3	cinq	0 # 1 f	
+L04	s1	4	+	a	gloss is the decipherer's +
+L04	s1	5	|	z	gloss is the decipherer's |; z could be Z
+L04	s1	6	millez	m 4 0 v sq #	
+L04	s2	7	chacun	T v w o 1 . sq	gloss word hard to read (chacun/chavoys); grouping approximate
+L04	s2	8	-	a	under gap
+L04	s2	9	qui	m 1 #	1 could be L
+L04	s2	10	doibt	y p m o f	p written like xp
+L04	s2	11	estre	z y v c v	alignment approximate
+L04	s2	12	pewtre	L c # 9 f	gloss word unclear (pewtre/perdre); 9 is q-like
+L04	s2	13	dans	NEW:r-shape z w y	alignment approximate
+L04	s2	14	thoun	p sq	gloss word partly lost; line ends with a long filler dash (not a sign)
+L05	s1	1	jouio	1 9 m w	gloss word unclear; 9 could be NEW:&-shape
+L05	s1	2	tet	o 0' v	0' accent faint
+L05	s1	3	|	0'	gloss is the decipherer's |
+L05	s1	4	prendre	w 1 . f 3 c 0	
+L05	s1	5	la	4 1 #	
+L05	s1	6	chalun	T 1 z p f	gloss word unclear; p written xp
+L05	s2	7	-	# 1 .	under gap before 'de'
+L05	s2	8	de	m o	
+L05	s2	9	+	0'	gloss is the decipherer's +
+L05	s2	10	bessoun	y a f v 1 t	t is a dagger written low under the line, may combine with following sign
+L05	s2	11	naiance	y 0' a a 1 . #	gloss may be one word with 'bessoun' (bessounaiance)
+L05	s2	12	qui	0 f v	
+L05	s2	13	en	# x	
+L05	s2	14	creance	1 m v a sq 3 1 .	
+L05	s2	15	desseret	0' # y c NEW:n-shape 1 .	n-shape like cursive n; last sign may be colon (two dots)
+L05	s2	16	CLEAR:creance	-	closing clear word, reading uncertain

@@ -1,0 +1,190 @@
+passage	pos	sign_id	conf	note
+L02	1	Z	H	
+L02	2	v	H	
+L02	3	y	H	
+L02	4	a	H	
+L02	5	f	H	
+L02	6	3	H	
+L02	7	L	H	
+L02	8	z	H	
+L03	1	II	H	
+L03	2	4	H	
+L03	3	a	H	
+L03	4	c	H	
+L03	5	y	H	
+L03	6	p	H	
+L03	7	w	H	
+L03	8	m	H	
+L03	9	o	H	
+L03	10	a	H	
+L03	11	#	H	
+L03	12	1	H	
+L03	13	.	H	
+L03	14	sq	H	
+L03	15	?	L	split
+L03	16	?	L	split
+L03	17	f	H	
+L03	18	3	H	
+L03	19	c	H	
+L03	20	1	H	
+L03	21	.	H	
+L03	22	4	H	
+L03	23	9	H	
+L03	24	1	H	
+L03	25	.	H	
+L03	26	f	H	
+L03	27	4	H	
+L03	28	0	H	
+L03	29	0'	H	
+L03	30	#	H	
+L03	31	0	H	
+L03	32	m	H	
+L03	33	sq	H	
+L03	34	z	H	
+L03	35	p	H	
+L03	36	4	H	
+L03	37	+	H	
+L03	38	L	H	
+L03	39	?	L	split
+L03	40	f	H	
+L03	41	sq	H	
+L03	42	3	H	
+L03	43	y	H	
+L03	44	w	H	
+L03	45	#	H	
+L03	46	0	H	
+L03	47	sq	H	
+L03	48	0	H	
+L03	49	v	H	
+L03	50	L	H	
+L03	51	9	H	
+L03	52	?	L	split
+L03	53	?	L	gapA
+L03	54	0	H	
+L03	55	y	H	
+L03	56	?	L	split
+L03	57	?	L	split
+L03	58	?	L	gapA
+L04	1	-:-	H	
+L04	2	0	H	
+L04	3	0	H	
+L04	4	4	H	
+L04	5	f	H	
+L04	6	#	H	
+L04	7	y	H	
+L04	8	?	L	split
+L04	9	a	H	
+L04	10	?	L	gapA
+L04	11	c	H	
+L04	12	v	H	
+L04	13	w	H	
+L04	14	4	H	
+L04	15	f	H	
+L04	16	v	H	
+L04	17	0	H	
+L04	18	#	H	
+L04	19	1	H	
+L04	20	f	H	
+L04	21	a	H	
+L04	22	z	H	
+L04	23	m	H	
+L04	24	4	H	
+L04	25	0	H	
+L04	26	v	H	
+L04	27	sq	H	
+L04	28	#	H	
+L04	29	T	H	
+L04	30	v	H	
+L04	31	w	H	
+L04	32	?	L	split
+L04	33	1	H	
+L04	34	.	H	
+L04	35	sq	H	
+L04	36	a	H	
+L04	37	m	H	
+L04	38	1	H	
+L04	39	#	H	
+L04	40	y	H	
+L04	41	p	H	
+L04	42	m	H	
+L04	43	o	H	
+L04	44	f	H	
+L04	45	z	H	
+L04	46	y	H	
+L04	47	v	H	
+L04	48	c	H	
+L04	49	v	H	
+L04	50	L	H	
+L04	51	c	H	
+L04	52	#	H	
+L04	53	?	L	split
+L04	54	f	H	
+L04	55	?	L	split
+L04	56	?	L	gapB
+L04	57	z	H	
+L04	58	w	H	
+L04	59	y	H	
+L04	60	p	H	
+L04	61	sq	H	
+L05	1	1	H	
+L05	2	?	L	split
+L05	3	m	H	
+L05	4	w	H	
+L05	5	?	L	split
+L05	6	0'	H	
+L05	7	v	H	
+L05	8	0'	H	
+L05	9	w	H	
+L05	10	1	H	
+L05	11	.	H	
+L05	12	f	H	
+L05	13	3	H	
+L05	14	c	H	
+L05	15	0	H	
+L05	16	4	H	
+L05	17	1	H	
+L05	18	#	H	
+L05	19	T	H	
+L05	20	1	H	
+L05	21	z	H	
+L05	22	p	H	
+L05	23	f	H	
+L05	24	#	H	
+L05	25	1	H	
+L05	26	.	H	
+L05	27	m	H	
+L05	28	?	L	split
+L05	29	0'	H	
+L05	30	y	H	
+L05	31	a	H	
+L05	32	f	H	
+L05	33	v	H	
+L05	34	1	H	
+L05	35	t	H	
+L05	36	?	L	gapA
+L05	37	0'	H	
+L05	38	a	H	
+L05	39	a	H	
+L05	40	1	H	
+L05	41	.	H	
+L05	42	#	H	
+L05	43	0	H	
+L05	44	f	H	
+L05	45	v	H	
+L05	46	#	H	
+L05	47	x	H	
+L05	48	1	H	
+L05	49	m	H	
+L05	50	v	H	
+L05	51	a	H	
+L05	52	sq	H	
+L05	53	3	H	
+L05	54	1	H	
+L05	55	.	H	
+L05	56	0'	H	
+L05	57	#	H	
+L05	58	y	H	
+L05	59	c	H	
+L05	60	NEW:n-shape	H	
+L05	61	1	H	
+L05	62	.	H	
