@@ -1,0 +1,74 @@
+comparison	n_aligned	split	doubt	A_err	W_err	A_rate_central	W_rate_central	mean_reader_central	mean_reader_lower	mean_reader_upper
+6179 p2 A-vs-L1	110	23	7	1	16	0.010	0.155	0.083	0.077	0.141
+6179 p3 A-vs-L1	78	17	3	4	11	0.053	0.147	0.100	0.096	0.135
+6179 p2 A-vs-B	112	12	8	3	2	0.029	0.019	0.024	0.022	0.094
+6467 run1 A-vs-L1	27	7	1	3	3	0.115	0.115	0.115	0.111	0.148
+6467 run2 A-vs-L1	18	4	1	1	2	0.059	0.118	0.088	0.083	0.139
+TOTAL A-vs-B	112	12	8	3	2	0.029	0.019	0.024	0.022	0.094
+TOTAL A-vs-L1	233	51	12	9	32	0.041	0.145	0.093	0.088	0.139
+TOTAL pooled	345	63	20	12	34	0.037	0.105	0.071	0.067	0.125
+
+unit	cell	A	witness	settled	look	wrong
+6179 p2 A-vs-L1	p2L22.10	10~	10	10	doubt	A
+6179 p2 A-vs-L1	p2L22.12	11^	11	11^	sure	W
+6179 p2 A-vs-L1	p2L22.17	17	19	17	sure	W
+6179 p2 A-vs-L1	p2L24.8	2~	2	2	doubt	A
+6179 p2 A-vs-L1	p2L24.11	19^	19	19^	sure	W
+6179 p2 A-vs-L1	p2L24.12	24^	24	29^	doubt	AW
+6179 p2 A-vs-L1	p2L24.17	17	17^	17	sure	W
+6179 p2 A-vs-L1	p2L24.19	11^	11	11^	sure	W
+6179 p2 A-vs-L1	p2L24.21	11	11^	11	doubt	W
+6179 p2 A-vs-L1	p2L26.6	10	18	18	doubt	A
+6179 p2 A-vs-L1	p2L27.2	12	9	12	sure	W
+6179 p2 A-vs-L1	p2L27.10	7^	7	7^	sure	W
+6179 p2 A-vs-L1	p2L27.13	10	18	10	doubt	W
+6179 p2 A-vs-L1	p2L27.18	7^	7	7^	sure	W
+6179 p2 A-vs-L1	p2L27.20	23^	23	23^	sure	W
+6179 p2 A-vs-L1	p2L27.23	11^	11	11^	sure	W
+6179 p2 A-vs-L1	p2L27.28	16^	16	10	doubt	AW
+6179 p2 A-vs-L1	p2L28.2	10^	10	10^	sure	W
+6179 p2 A-vs-L1	p2L28.4	23^	23	23^	sure	W
+6179 p2 A-vs-L1	p2L28.7	29^	24	29^	sure	W
+6179 p2 A-vs-L1	p2L28.8	12^	12	12^	sure	W
+6179 p2 A-vs-L1	p2L28.10	10^	10	10^	sure	W
+6179 p2 A-vs-L1	p2L28.12	12	18	18^	sure	AW
+6179 p3 A-vs-L1	p3L6.6	10^	10	10^	sure	W
+6179 p3 A-vs-L1	p3L6.7	18^	[mark]	18^	sure	W
+6179 p3 A-vs-L1	p3L6.8	9	1	1~	sure	AW
+6179 p3 A-vs-L1	p3L6.16	12	2	2	sure	A
+6179 p3 A-vs-L1	p3L7.4	15	[mark]15	[mark]15	doubt	A
+6179 p3 A-vs-L1	p3L7.5	6	8	6	sure	W
+6179 p3 A-vs-L1	p3L7.6	18	10	18	sure	W
+6179 p3 A-vs-L1	p3L7.17	18	10	18	sure	W
+6179 p3 A-vs-L1	p3L8.5	2^	2	2^	sure	W
+6179 p3 A-vs-L1	p3L8.7	10	10^	10	doubt	W
+6179 p3 A-vs-L1	p3L8.13	23^	23	23	sure	A
+6179 p3 A-vs-L1	p3L8.19	23^	23	23^	sure	W
+6179 p3 A-vs-L1	p3L8.23	8^	8	8^	sure	W
+6179 p3 A-vs-L1	p3L8.25	24^	24	24^	sure	W
+6179 p3 A-vs-L1	p3L9.1	20^	20	20	sure	A
+6179 p3 A-vs-L1	p3L9.3	9	9^	9	sure	W
+6179 p3 A-vs-L1	p3L9.13	11	[mark]11	11	doubt	W
+6179 p2 A-vs-B	p2L22.10	10~	16	10	doubt	AW
+6179 p2 A-vs-B	p2L22.14	14	14^	14^	sure	A
+6179 p2 A-vs-B	p2L22.15	3	[mark]3	[mark]3	doubt	A
+6179 p2 A-vs-B	p2L22.16	15	15^	15^	sure	A
+6179 p2 A-vs-B	p2L24.8	2~	2	2	doubt	A
+6179 p2 A-vs-B	p2L24.12	24^	29^	29^	doubt	A
+6179 p2 A-vs-B	p2L24.19	11^	11	11^	sure	W
+6179 p2 A-vs-B	p2L27.8	16	[mark]16	[mark]16	doubt	A
+6179 p2 A-vs-B	p2L27.16	12	[mark]12	[mark]12	doubt	A
+6179 p2 A-vs-B	p2L27.28	16^	10	10	doubt	A
+6179 p2 A-vs-B	p2L28.12	12	8^	18^	sure	AW
+6179 p2 A-vs-B	p2L28.20	4	4^	4	doubt	W
+6467 run1 A-vs-L1	p2L6.3	2^	2	2	doubt	A
+6467 run1 A-vs-L1	p2L6.5	10	10^	10	sure	W
+6467 run1 A-vs-L1	p2L6.9	9~	9	9	sure	A
+6467 run1 A-vs-L1	p2L7.8	2^	2	2^	sure	W
+6467 run1 A-vs-L1	p2L7.12	4	24	24	sure	A
+6467 run1 A-vs-L1	p2L7.14	9~	9	9	sure	A
+6467 run1 A-vs-L1	p2L8.1	2^	2	2^	sure	W
+6467 run2 A-vs-L1	p2L10.2	8^	8	8^	sure	W
+6467 run2 A-vs-L1	p2L10.6	7^	7	7^	sure	W
+6467 run2 A-vs-L1	p2L11.8	[mark]	07~~	[mark]	doubt	W
+6467 run2 A-vs-L1	p2L11.12	5^	3^	3^	sure	A

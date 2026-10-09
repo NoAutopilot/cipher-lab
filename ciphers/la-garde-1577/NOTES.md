@@ -1709,3 +1709,96 @@ Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading
 - [ ] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells and the marks-kept split cells remain (they decide whether LAG-SYL's negative covers the target's real error)
 - [ ] retry: homophonic/masc closed (LAG-GAP); syllabary (regular) closed at error <= 0.107 (LAG-SYL); running_key untestable by running_key.py at this N (LAG-NEXT); wordcode never run at the measured error
 Verdict: keep going: 4 internal gaps; cheapest next: wordcode family_run control at err 0.107 (then 0.055/0.084) plus the LAG-SYL gate, ~$2
+
+## LAG-MARKS (9 Oct 2026, account 2, LANE FAMILY-A2e, Opus + two Sonnet looks, disk only)
+
+**Job:** LAG-SYL's named gaps "plaintext prior-work rows" and "marks-kept transcription error". No network beyond git and
+one shallow clone of a solver repository; images on disk only.
+
+**Prior work** (`tools/prior_work.py la-garde-1577 --item-spec 'shelfmark=KHA A 11/XIV C/M-12;date=1577-11-28;sender=La
+Garde;recipient=Willem van Oranje' --step-type decode --fetch`): **exit 4**, owed LEAD 1-own (this job's claim), LOOK
+2-leaf, UNCHECKED 3-tomokiyo, 3-solver x2 (one UNCHECKED-NET), 4-editions. Each row checked and `--record`ed, then re-run
+`--offline`: **exit 0** ("proceed on the residue: whole item"). One line per check:
+1. own work (route: ROOM.md, HYPOTHESES.md, NOTES.md): the live claim is this job; nothing settled the split cells beyond
+   WC-LAGARDE's 9 -> CLEAR.
+2. leaf look (route: the 3 owed crops, `images/margin_6467_*`, and `images/06179_p2.png` by eye): the crops are sibling
+   6467's margin ("Justiffier le faict de Gand" beside run 1, "N.c.f." beside run 2), a gloss of another letter, already in
+   R15/Y1/A2-LAG; 6179's own p2 shows no interlinear gloss, slip or clear copy (as GF-A2-4 (c)) -> CONTEXT.
+3. Tomokiyo (route: grep `sources/cryptiana` index files and web mirror, `schoonhoven|walhain|la garde`): one hit,
+   bazeries3.htm "la garde de la Savoye", unrelated; princeoforange.htm is the 1670s-80s William III transposition -> CLEAR.
+4. solver repositories (route: grep `sources/cyphersolver` snapshots; shallow clone of aaymeloglu/unsolved-ciphers, 9 Oct
+   2026, cited not copied): coincidental hits only (DECODE record 6179 is a Florence item; a zeschau1841 number) -> CLEAR.
+5. editions (route: `sources/ia-fulltext/print-check/correspondancede0[1-6]will_djvu.txt.gz`, grep `la garde|schoonhov`):
+   **Gachard, Correspondance de Guillaume le Taciturne t.5, calendar "1577 (suite)", p.423**: "28 novembre, à Walhain. --
+   La Garde au prince d'Orange. Détails militaires sur l'armée des états généraux. Archives, etc., VI, 248." A one-line
+   analysis of the clear part citing Groen VI, which omits the cipher by its own footnote; no decipherment -> KNOWN-PART
+   (clear part only). The tool's window missed it because the djvu text says "Orange", not "oranie"/"willem"; suggestion
+   for `tools/data/prior_editions.tsv`: add `orange` to gachard-guillaume's recipient terms. This also closes the "Gachard not
+   searched (search route 500)" hole left in the 25 Sept check-solved and the 2 Oct premise check (d).
+No period gloss or printed plaintext of 6179's cipher passages was found, so no KNOWN flag.
+
+**Cells.** `lag_marks_cells.py` (`--check` exits 0) lists every literal (marks-kept) split LAG-ERR counted: 63 comparisons
+(44 mark-only, 19 base) over 345 aligned, 57 distinct cells, with v2's sign beside each; 9 are already H in v2 (WC-LAGARDE
+image settles). **Pre-registration:** `PREREG-LAG-MARKS.md`, pushed 02:26 UTC (28ba3d5d1) before either look was read.
+
+**Crop step** (pasted): `tools/iiif_lines.py --image images/06179_p2.png --region 270,950,940,290 --centres
+41,117,210,240,270 --top-margin 22 --bottom-margin 14`; `--image images/06179_p3.png --region 250,275,950,170 --centres
+33,63,95,130` (L9 re-cut `--region 250,275,950,190 --centres 142 --top-margin 24`); `--image images/06467_p2.png --region
+340,400,840,300 --centres 32,69,109,240,279` (L6 re-cut `--centres 36 --top-margin 30`); each line upscaled 2x and halved
+with 100 px overlap; crops in the session scratchpad, not committed (regenerable from these commands). The page renders
+are 150 dpi (1241x1754), which is the limit on every call below.
+
+**Looks.** Two blind Sonnet calls (6179 p2: 28 cells; 6179 p3 + 6467 p2: 20 cells), candidates listed alphabetically,
+no pass named, `sure`/`doubt` per cell. Reconciler (this worker) re-looked p2L24 left half and p2L28 left half: agrees
+on p2L24.8/.11 and all six p2L28 cells; cannot separate 4 from 9 at p2L24.12 (the look's `29^ sure`), so that cell
+moved to doubt. Settled table: `lag_marks_look.tsv` (41 sure, 16 doubt; the 9 v2-H cells counted sure).
+
+**Re-measure** (`lag_marks.py`, `--check` exits 0, `lag_marks.tsv`): a reader is charged at each split cell where its
+sign differs from the settled sign; central drops doubt cells, lower charges them to neither, upper to both.
+
+| Comparison | Aligned | Splits | Doubt | A wrong | Witness wrong | One-reader central | lower | upper |
+|---|---|---|---|---|---|---|---|---|
+| A vs B (6179 p2) | 112 | 12 | 8 | 3 | 2 | 0.024 | 0.022 | 0.094 |
+| A vs L1 (all units) | 233 | 51 | 12 | 9 | 32 | 0.093 | 0.088 | 0.139 |
+| **Pooled** | 345 | 63 | 20 | 12 | 34 | **0.071** | 0.067 | **0.125** |
+
+Per reader: pass A 0.037 central (upper (12+20)/345 = 0.093); L1 0.145 central on its 233; B 0.019 on 112. L1 carries
+most of the marks disagreement (32 of 46 charged errors; it drops overlines A and B both see). Shared misreadings (A and
+its witness agreeing, both wrong) are invisible here, so every figure is a lower bound on true error of its kind.
+
+**Read-out (fixed in the prereg):** central 0.071 <= 0.107 < upper 0.125 -> **undecided at this resolution**. The
+covered-band claim is **not** made: LAG-SYL's syllabary (regular) negative is not extended to the target. If the doubt
+cells fall mostly against the readers the mean-reader figure sits at about 0.125, inside the 0.107-0.183 band LAG-SYL's
+control did not cover. Next control level, named not run: syllabary control at **err 0.13** (the upper, rounded up), with
+the LAG-SYL gate if it reaches 0.60. Descriptive only, outside the prereg statistic: pass A alone, from which v2 is mostly
+built, sits at 0.037-0.093, inside the covered band even at its upper bound; and the committed v2 differs from 7 of the 41
+sure settles (all mark-only: p2L22.14, p2L22.16, p2L24.19 lack an overline the look sees; p3L8.13, p3L9.1 carry one it
+does not; 6467 p2L6.9, p2L7.14 carry `~` on a bare 9). v2 was not edited (outside the brief); a v2 revision with these 7
+cells is a one-line suggestion for the next transcription job, after which the error re-measure is against the
+transcription actually fed to the families.
+Of the two `10`/`18` cells: p2L26.6 look reads 18 (doubt), p2L27.13 not separable (doubt); both stay M in v2.
+Side note (not acted on): image p3 line 10 opens with "17." before "Car les aultres", and no pass carries it after p3L9's
+final 15; a possible shared omission for the next transcription job to check.
+
+Grades: 0 cipher tokens read (H 0, C 0, S 0, M 0, I 0); no reading. Status unchanged (`open`). Requests: github.com 1
+(git shallow clone); no other host. Vision: 2 Sonnet calls + reconciler looks at 2 half-line crops (+ the 3 leaf-look crops
+and the 6179 p2 page). Files: `lag_marks_cells.py/.tsv`, `lag_marks_look.tsv`, `lag_marks.py/.tsv`, `PREREG-LAG-MARKS.md`,
+`prior-work.tsv`, HYPOTHESES.md one row, this section.
+
+## Remaining gaps (LAG-MARKS, 9 Oct 2026)
+Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading exists; homophonic/masc excluded by LAG-GAP; syllabary (regular) excluded at error <= 0.107 by LAG-SYL, coverage of the target undecided by LAG-MARKS: one-reader marks-kept error 0.071 central, 0.125 upper)
+- marks-kept transcription error above the covered band - blocker: not-attempted; LAG-MARKS left 16 doubt cells at 150 dpi (`lag_marks_look.tsv`), upper bound 0.125 > 0.107; next: syllabary `family_run.py` control at err 0.13 plus the LAG-SYL gate if it reaches 0.60, ~$2
+- v2 marks revision - blocker: not-attempted; 7 v2 cells differ from sure image settles (`lag_marks_look.tsv` vs `ciphertext_6179_v2.tsv`/`ciphertext_6467_v2.tsv`); next: revise v2 and rebuild the spec, then re-run lag_err/lag_marks, ~$1
+- wordcode at the measured error - blocker: not-attempted; its only row (WC-LAGARDE2) ran the control at err 0.23; next: `family_run.py --family wordcode --param codes=marked --param err=0.107` (then 0.055/0.084), control-only first, LAG-SYL-style gate if it gates, ~$2
+- running-key / code-layer designs at N=229 - blocker: too-short; LAG-NEXT: the running_key control reads 27% with no noise on the target's 15 message lengths; reopens only with more same-system ciphertext (pooling) or a different instrument
+- two `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: illegible; LAG-MARKS looked both at 150 dpi, both doubt (p2L26.6 leans 18); a higher-resolution image (the KHA original or the WVO PDF at native resolution) is the only route
+
+## Escalation (LAG-MARKS, 9 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power for running key, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG; Gachard t.5 p.423 calendar summarises the clear part only (LAG-MARKS)
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of the 57 split cells from the 150 dpi renders, 16 left doubt (resolution-limited)
+- [ ] retry: syllabary at err 0.13; wordcode never run at the measured error
+Verdict: keep going: 3 internal gaps; cheapest next: v2 marks revision then the syllabary control at err 0.13, ~$1

@@ -1,0 +1,64 @@
+unit	A_line.pos	A_sign	witness_sign	kind	v2_sign	v2_conf	v2_alt	v2_note
+6179 p2 A-vs-L1	p2L22.10	10~	10	mark	10~	M	B:16/C:10	digit majority 10, mark disputed
+6179 p2 A-vs-L1	p2L22.12	11^	11	mark	11^	M	C:11	literal majority
+6179 p2 A-vs-L1	p2L22.17	17	19	base	17	M	C:19	literal majority
+6179 p2 A-vs-L1	p2L24.8	2~	2	mark	2	M	A:2~	literal majority
+6179 p2 A-vs-L1	p2L24.11	19^	19	mark	19^	M	C:19	literal majority
+6179 p2 A-vs-L1	p2L24.12	24^	24	mark	24^	M	B:29^/C:24	digit majority 24, mark disputed
+6179 p2 A-vs-L1	p2L24.17	17	17^	mark	17	M	C:17^	literal majority
+6179 p2 A-vs-L1	p2L24.19	11^	11	mark	11	M	A:11^	literal majority
+6179 p2 A-vs-L1	p2L24.21	11	11^	mark	11	M	C:11^	literal majority
+6179 p2 A-vs-L1	p2L26.6	10	18	base	10	M	C:18	literal majority
+6179 p2 A-vs-L1	p2L27.2	12	9	base	12	M	C:9	literal majority
+6179 p2 A-vs-L1	p2L27.10	7^	7	mark	7^	M	C:7	literal majority
+6179 p2 A-vs-L1	p2L27.13	10	18	base	10	M	C:18	literal majority
+6179 p2 A-vs-L1	p2L27.18	7^	7	mark	7^	M	C:7	literal majority
+6179 p2 A-vs-L1	p2L27.20	23^	23	mark	23^	M	C:23	literal majority
+6179 p2 A-vs-L1	p2L27.23	11^	11	mark	11^	M	C:11	literal majority
+6179 p2 A-vs-L1	p2L27.28	16^	16	mark	16^	M	B:10/C:16	digit majority 16, mark disputed
+6179 p2 A-vs-L1	p2L28.2	10^	10	mark	10^	M	C:10	literal majority
+6179 p2 A-vs-L1	p2L28.4	23^	23	mark	23^	M	C:23	literal majority
+6179 p2 A-vs-L1	p2L28.7	29^	24	base	29^	M	C:24	literal majority
+6179 p2 A-vs-L1	p2L28.8	12^	12	mark	12^	M	C:12	literal majority
+6179 p2 A-vs-L1	p2L28.10	10^	10	mark	10^	M	C:10	literal majority
+6179 p2 A-vs-L1	p2L28.12	12	18	base	18^	H		WC-LAGARDE 26 Sept 2026: settled 18^ (two independent blind crop reads describe a 1-stroke feeding a single closed loop under one continuous overline) -- images/crops_wc/6179p2_p2L28_pos12_zoom5x.png
+6179 p3 A-vs-L1	p3L6.6	10^	10	mark	10^	M	B:10	digit majority 10, mark disputed
+6179 p3 A-vs-L1	p3L6.7	18^	[mark]	base	18^	H		WC-LAGARDE 26 Sept 2026: confirmed 18^ on crop (clear 1+8 digit shapes under one overline, not a free-standing mark) -- images/crops_wc/6179p3_L6_pos78_7x.png
+6179 p3 A-vs-L1	p3L6.8	9	1	base	1~	H		WC-LAGARDE 26 Sept 2026: settled 1~ (digit 1 under the loop-crossbar flourish, not a plain 9 -- compared directly against p3L6 pos3's own 9 on the same line) -- two independent blind reads -- images/crops_wc/6179p3_L6_pos8_10x.png
+6179 p3 A-vs-L1	p3L6.16	12	2	base	2	H		WC-LAGARDE 26 Sept 2026: settled 2 (crop shows a bare small loop-tail digit right after the free-standing mark at pos15, no leading 1-stroke for a 12) -- images/crops_wc/6179p3_L6_pos1516_7x.png
+6179 p3 A-vs-L1	p3L7.4	15	[mark]15	mark	15	M	B:[mark]15	digit majority 15, mark disputed
+6179 p3 A-vs-L1	p3L7.5	6	8	base	6	H		WC-LAGARDE 26 Sept 2026: confirmed 6 (crop shows a clear overlined 6-shape, not an 8) -- images/crops_wc/6179p3_L7_pos56_v2.png
+6179 p3 A-vs-L1	p3L7.6	18	10	base	18	H		WC-LAGARDE 26 Sept 2026: confirmed 18 (crop shows 1-stroke plus 8-loop, no closed-oval 10 shape) -- images/crops_wc/6179p3_L7_pos56_v2.png
+6179 p3 A-vs-L1	p3L7.17	18	10	base	18	H		WC-LAGARDE 26 Sept 2026: confirmed 18 (crop shows 1-stroke plus 8-loop before the overlined 12 and the free-standing mark that precede vre Sgre) -- images/crops_wc/6179p3_L7_pos17_v2.png
+6179 p3 A-vs-L1	p3L8.5	2^	2	mark	2^	M	B:2	digit majority 2, mark disputed
+6179 p3 A-vs-L1	p3L8.7	10	10^	mark	10	M	B:10^	digit majority 10, mark disputed
+6179 p3 A-vs-L1	p3L8.13	23^	23	mark	23^	M	B:23	digit majority 23, mark disputed
+6179 p3 A-vs-L1	p3L8.19	23^	23	mark	23^	M	B:23	digit majority 23, mark disputed
+6179 p3 A-vs-L1	p3L8.23	8^	8	mark	8^	M	B:8	digit majority 8, mark disputed
+6179 p3 A-vs-L1	p3L8.25	24^	24	mark	24^	M	B:24	digit majority 24, mark disputed
+6179 p3 A-vs-L1	p3L9.1	20^	20	mark	20^	M	B:20	digit majority 20, mark disputed
+6179 p3 A-vs-L1	p3L9.3	9	9^	mark	9	M	B:9^	digit majority 9, mark disputed
+6179 p3 A-vs-L1	p3L9.13	11	[mark]11	mark	11	M	B:[mark]11	digit majority 11, mark disputed
+6179 p2 A-vs-B	p2L22.10	10~	16	base	10~	M	B:16/C:10	digit majority 10, mark disputed
+6179 p2 A-vs-B	p2L22.14	14	14^	mark	14	M	B:14^	literal majority
+6179 p2 A-vs-B	p2L22.15	3	[mark]3	mark	3	M	B:[mark]3	literal majority
+6179 p2 A-vs-B	p2L22.16	15	15^	mark	15	M	B:15^	literal majority
+6179 p2 A-vs-B	p2L24.8	2~	2	mark	2	M	A:2~	literal majority
+6179 p2 A-vs-B	p2L24.12	24^	29^	base	24^	M	B:29^/C:24	digit majority 24, mark disputed
+6179 p2 A-vs-B	p2L24.19	11^	11	mark	11	M	A:11^	literal majority
+6179 p2 A-vs-B	p2L27.8	16	[mark]16	mark	16	M	B:[mark]16	literal majority
+6179 p2 A-vs-B	p2L27.16	12	[mark]12	mark	12	M	B:[mark]12	literal majority
+6179 p2 A-vs-B	p2L27.28	16^	10	base	16^	M	B:10/C:16	digit majority 16, mark disputed
+6179 p2 A-vs-B	p2L28.12	12	8^	base	18^	H		WC-LAGARDE 26 Sept 2026: settled 18^ (two independent blind crop reads describe a 1-stroke feeding a single closed loop under one continuous overline) -- images/crops_wc/6179p2_p2L28_pos12_zoom5x.png
+6179 p2 A-vs-B	p2L28.20	4	4^	mark	4	M	B:4^	literal majority
+6467 run1 A-vs-L1	p2L6.3	2^	2	mark	2^	M	B:2	digit majority 2, mark disputed
+6467 run1 A-vs-L1	p2L6.5	10	10^	mark	10	M	B:10^	digit majority 10, mark disputed
+6467 run1 A-vs-L1	p2L6.9	9~	9	mark	9~	M	B:9	digit majority 9, mark disputed
+6467 run1 A-vs-L1	p2L7.8	2^	2	mark	2^	M	B:2	digit majority 2, mark disputed
+6467 run1 A-vs-L1	p2L7.12	4	24	base	24	H		WC-LAGARDE 26 Sept 2026: settled 24 (crop clearly shows two-digit 24, not a bare 4) -- agrees with OX-LAG's independent GSME print-edition cross-check (25 Sept 2026) -- images/crops_wc/6467p2_run1_overview.png
+6467 run1 A-vs-L1	p2L7.14	9~	9	mark	9~	M	B:9	digit majority 9, mark disputed
+6467 run1 A-vs-L1	p2L8.1	2^	2	mark	2^	M	B:2	digit majority 2, mark disputed
+6467 run2 A-vs-L1	p2L10.2	8^	8	mark	8^	M	B:8	digit majority 8, mark disputed
+6467 run2 A-vs-L1	p2L10.6	7^	7	mark	7^	M	B:7	digit majority 7, mark disputed
+6467 run2 A-vs-L1	p2L11.8	[mark]	07~~	base	[mark]	M	B:07~~	confirmed on images/06467_p2.png (L4): a separate mark follows the second 07, matching A's split over L1's merged 07~~
+6467 run2 A-vs-L1	p2L11.12	5^	3^	base	3^	H		WC-LAGARDE 26 Sept 2026: settled 3^ (crop clearly shows an overlined 3, the loop opens downward-right unlike 5's upper hook) -- agrees with OX-LAG's independent GSME print-edition cross-check (25 Sept 2026) -- images/crops_wc/6467p2_L11_pos12_final.png

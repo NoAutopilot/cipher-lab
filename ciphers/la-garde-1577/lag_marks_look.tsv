@@ -1,0 +1,58 @@
+unit	cell	settled	look	evidence
+6179	p2L22.10	10	doubt	look C (batch 1): oval-ish 10, tiny stroke possible, no clear flourish
+6179	p2L22.12	11^	sure	look C: second 11 has short bar above
+6179	p2L22.14	14^	sure	look C: bar clearly above the 14
+6179	p2L22.15	[mark]3	doubt	look C: hooked flourish over/left of 3, may be line above
+6179	p2L22.16	15^	sure	look C: bar above the 15
+6179	p2L22.17	17	sure	look C: plain 17, unlike the later 19
+6179	p2L24.8	2	doubt	look C: nothing above 2, slash from line above; reconciler agrees
+6179	p2L24.11	19^	sure	look C: bar above 19; reconciler agrees
+6179	p2L24.12	29^	doubt	look C sure 29^; reconciler cannot separate 4/9 in this hand (LAG-ERR 24/29 pair): doubt
+6179	p2L24.17	17	sure	look C: no bar above
+6179	p2L24.19	11^	sure	look C: bar above the 11
+6179	p2L24.21	11	doubt	look C: nothing above, slash follows the 11
+6179	p2L26.6	18	doubt	look C: loop looks like 8, resolution poor
+6179	p2L27.2	12	sure	look C: clear 12, bar belongs to the 29 before
+6179	p2L27.8	[mark]16	doubt	look C: loop-flourish above the gap before 16
+6179	p2L27.10	7^	sure	look C: bar across top of 7
+6179	p2L27.13	10	doubt	look C: 10 vs 18 not separable at this resolution
+6179	p2L27.16	[mark]12	doubt	look C: flourish over the gap before the 12
+6179	p2L27.18	7^	sure	look C: heavy bar above the 7
+6179	p2L27.20	23^	sure	look C: bar above 23
+6179	p2L27.23	11^	sure	look C: short bar above 11
+6179	p2L27.28	10	doubt	look C: no bar seen; 10 vs 16 uncertain
+6179	p2L28.2	10^	sure	look C: bar above 10; reconciler agrees
+6179	p2L28.4	23^	sure	look C: bar above 23; reconciler agrees
+6179	p2L28.7	29^	sure	look C: 29 with bar above; reconciler agrees (24 at pos 6 is open, pos 7 looped)
+6179	p2L28.8	12^	sure	look C: bar above 12; reconciler agrees
+6179	p2L28.10	10^	sure	look C: bar above 10; reconciler agrees
+6179	p2L28.12	18^	sure	v2 H (WC-LAGARDE image settle, 26 Sept 2026)
+6179	p2L28.20	4	doubt	look C: line end cut off in crop
+6179	p3L6.6	10^	sure	look C (batch 2): clear overline above 10 before 18
+6179	p3L6.7	18^	sure	v2 H (WC-LAGARDE)
+6179	p3L6.8	1~	sure	v2 H (WC-LAGARDE)
+6179	p3L6.16	2	sure	v2 H (WC-LAGARDE)
+6179	p3L7.4	[mark]15	doubt	look C: flourish just left of 15, curl above 15
+6179	p3L7.5	6	sure	v2 H (WC-LAGARDE)
+6179	p3L7.6	18	sure	v2 H (WC-LAGARDE)
+6179	p3L7.17	18	sure	v2 H (WC-LAGARDE)
+6179	p3L8.5	2^	sure	look C: short bar above 2 after 17
+6179	p3L8.7	10	doubt	look C: no clear bar on 10; flourish with stem follows
+6179	p3L8.13	23	sure	look C: bar is above 5 (pos 14), not over 23
+6179	p3L8.19	23^	sure	look C: distinct overline above 23
+6179	p3L8.23	8^	sure	look C: overline on 8 before the flourish
+6179	p3L8.25	24^	sure	look C: clear overline above final 24
+6179	p3L9.1	20	sure	look C: bare 20, no mark above
+6179	p3L9.3	9	sure	look C: bare; the overline sits on the second 9
+6179	p3L9.13	11	doubt	look C: flourish between 14 and 11, may be free mark
+6467	p2L6.3	2	doubt	look C: no overline seen over 2
+6467	p2L6.5	10	sure	look C: bare small 10
+6467	p2L6.9	9	sure	look C: no mark above 9, cross stroke below only
+6467	p2L7.8	2^	sure	look C: clear overline above 2 after 11
+6467	p2L7.12	24	sure	v2 H (WC-LAGARDE)
+6467	p2L7.14	9	sure	look C: bare 9, no mark above
+6467	p2L8.1	2^	sure	look C: overline above 2, line start
+6467	p2L10.2	8^	sure	look C: overline above 8
+6467	p2L10.6	7^	sure	look C: overline above final 7
+6467	p2L11.8	[mark]	doubt	look C: other -- a free-standing star-like sign, not 07 with extra strokes
+6467	p2L11.12	3^	sure	v2 H (WC-LAGARDE)
