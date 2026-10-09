@@ -72,3 +72,24 @@ Intake gate: `bne20211-ferdinand-1478: partial (line 1)` passes. NOTES line ~510
 (`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js` per CLAUDE.md DECODE row; one login only, scrub the account name from saved
 pages) to fetch R1180 `DocumentsList` and its full-size pages to scratch (images never committed); compare dimensions against
 images-123-shots and record what R1180 holds (manifest TSV only). No transcription pass. de-crypt.org take/release lines.
+
+## Wave 2 (added ~13:5x UTC by date -u; spawned as wave-1 slots free)
+
+### J7 SALAZ-HTRC -- rah-salazar-soria-sanchez-1524-28, Sonnet, cap USD 1, box 30 min
+HTRC EF API answered 200 at 13:47 UTC. Rerun NOTES line ~503's exact command (`python3 tools/htrc_ef_headwords.py osu.32435013919725 --words
+cifra,cifras,salazar,sanchez,sánchez,soria,mirandola,descifrar,descifrado,cifrada,cifrado --target '' --json`), once; on error one retry after
+60 s, then stop. Record the page locations of the Soria catalogue entries in NOTES (TSV beside it). data.htrc.illinois.edu take/release.
+
+### J8 COS-SPAN -- costabili-modena-1491, Opus, cap USD 3.5, box 75 min
+Intake gate before briefing: run `python3 tools/intake_gate_check.py costabili-modena-1491` and paste it; stop on nonzero. The Verdict's cheapest
+next: short-span boxes on the R1163/R1165 slips cut at each clear word and at line ends (pairs of one to three groups; NOTES lines ~281-284, 322),
+then the anchor-span scoring with the same matched control as N9-COS2. Images from disk or DECODE per the CLAUDE.md DECODE row (one login),
+to scratch only. Units: crop + 2 Sonnet reader calls + your reconciliation.
+
+### J9 COS-ASMO -- costabili-modena-1491 / decode-1162-modena-ambung-1492 key lead, Sonnet, cap USD 1.5, box 45 min
+Catalogue search only (no solving). Lead: Archivio di Stato di Modena, Cancelleria, Cifrario 'Cifre con Ambasciatori e Agenti estensi all'estero,
+sec. XV' (B.4), cited in Lang 2018 p.156 (STATUS.md line ~5034; costabili NOTES line 3). Establish: (a) the full Lang 2018 citation and whether
+an open copy exists (OpenAlex, Semantic Scholar, CORE, Google Books with country=US, IA be-api); (b) whether ASMo B.4 is digitised anywhere
+(ASMo site, Archivi di Stato portals, DECODE records by holding "Modena" and date 1480-1500 via tools/decode_list.py); (c) whether any DECODE
+record already holds a Costabili/Este 1490s key. Write a "## Key lead ASMo B.4 (COS-ASMO)" section in costabili-modena-1491/NOTES.md with every
+host searched and the result; if an owner-side request is needed, name it in one line (do not file ASKS). Good-citizen rule on every host.
