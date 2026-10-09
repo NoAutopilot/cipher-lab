@@ -1,0 +1,19 @@
+# SUR-POOLPC: units inv373_0744_blind_sb, inv373_0744R_blind, inv373_0745L_blind, inv373_0745R_blind; K=300 C1 draws per synthetic unit, master seed 20261010
+# pass A real m|n-facing y-family tokens: inv373_0744_blind_sb lines 21 m 15 n 40; inv373_0744R_blind lines 22 m 18 n 58; inv373_0745L_blind lines 22 m 15 n 38; inv373_0745R_blind lines 23 m 5 n 43; pooled lines 88 m 53 n 179
+# scaffold A: lines 88, gloss letters 3008, p_del 0.092, p_ins 0.109; face m {'[y-fam]': 53, 'k': 2, 'λ': 1, '[psi]': 1}; face n {'[y-fam]': 179, 'l': 54, '[psi]': 14, '4': 14}
+# pass B real m|n-facing y-family tokens: inv373_0744_blind_sb lines 21 m 14 n 38; inv373_0744R_blind lines 22 m 19 n 62; inv373_0745L_blind lines 22 m 14 n 39; inv373_0745R_blind lines 23 m 5 n 43; pooled lines 88 m 52 n 182
+# scaffold B: lines 88, gloss letters 3004, p_del 0.094, p_ins 0.115; face m {'[y-fam]': 52, 'λ': 2, 'k': 1, 'c': 1}; face n {'[y-fam]': 182, 'l': 52, '[psi]': 14, '4': 10}
+# SUR-0745R power curve: pooled lines 88, K=300 C1 per unit, 60 units per level per pass, master seed 20261011
+  f 0.00 A: units 60; y on m mean 53.8, on n mean 169.7; S mean 0.759; p99.5 mean 0.866; verdicts {'NO SPLIT SHOWN': 60}; LEANS n 0.000
+  f 0.00 B: units 60; y on m mean 52.4, on n mean 174.7; S mean 0.769; p99.5 mean 0.876; verdicts {'NO SPLIT SHOWN': 60}; LEANS n 0.000
+  f 0.50 A: units 60; y on m mean 27.3, on n mean 170.9; S mean 0.863; p99.5 mean 0.877; verdicts {'LEANS n': 12, 'NO SPLIT SHOWN': 48}; LEANS n 0.200
+  f 0.50 B: units 60; y on m mean 26.9, on n mean 174.7; S mean 0.867; p99.5 mean 0.883; verdicts {'LEANS n': 9, 'NO SPLIT SHOWN': 51}; LEANS n 0.150
+  f 0.75 A: units 60; y on m mean 15.4, on n mean 168.0; S mean 0.916; p99.5 mean 0.880; verdicts {'LEANS n': 58, 'NO SPLIT SHOWN': 2}; LEANS n 0.967
+  f 0.75 B: units 60; y on m mean 15.9, on n mean 174.2; S mean 0.917; p99.5 mean 0.888; verdicts {'LEANS n': 58, 'NO SPLIT SHOWN': 2}; LEANS n 0.967
+  f 1.00 A: units 60; y on m mean 4.2, on n mean 170.0; S mean 0.976; p99.5 mean 0.885; verdicts {'LEANS n': 60}; LEANS n 1.000
+  f 1.00 B: units 60; y on m mean 3.4, on n mean 172.1; S mean 0.981; p99.5 mean 0.882; verdicts {'LEANS n': 60}; LEANS n 1.000
+DETECTION f 0.00: A 0.000 B 0.000 (false LEANS n, gate <= 0.05)
+DETECTION f 0.50: A 0.200 B 0.150
+DETECTION f 0.75: A 0.967 B 0.967 -> power >= 0.80 both
+DETECTION f 1.00: A 1.000 B 1.000 -> power >= 0.80 both
+GATE (f = 1.00 power >= 0.80 both and H0 false LEANS n <= 0.05 both): PASS; smallest tested f with power >= 0.80: 0.75
