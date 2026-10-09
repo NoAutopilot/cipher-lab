@@ -12,6 +12,11 @@ words) are dropped as nulls. Statistics, each with its matched control on the sa
      (the shuffled-decode control the brief names); the shuffled decodes must FAIL for a PASS to mean anything;
  (2) if c270 clear text (c270_text.txt) is present: score_c172.py's alignment of decode vs that text, target vs shuffle.
 Writes reading_c268.txt and results_c268.json; --check exits 1 when stale (rule 7).
+
+Relabel (MONLUC-RELABEL, 9 Oct 2026): the 10 C-curl 'Z' tokens that pass A filed K63/K19 are written K38 (table t), a
+transcription correction backed by the MONLUC-BLIND blind sort (blind_k07_sort.tsv group B = pre-registered form A, which
+also holds the token both passes call K38, L01:9) and its decode_key.py --try K69=t accept (+49.7 bits; crossword_log.tsv).
+The pass-A label is kept in column pass_a; relabelled tokens get conf M (relabel = 'blind-sort'). key.tsv is unchanged.
 """
 import argparse, difflib, json, random, subprocess, sys
 from pathlib import Path
@@ -38,6 +43,12 @@ def judge(text):
     return j
 
 
+RELABEL = {('L01', 32): ('K19', 'K38'), ('L02', 16): ('K63', 'K38'), ('L02', 18): ('K63', 'K38'),
+           ('L03', 10): ('K63', 'K38'), ('L04', 14): ('K63', 'K38'), ('L04', 20): ('K63', 'K38'),
+           ('L04', 24): ('K63', 'K38'), ('L04', 36): ('K63', 'K38'), ('L05', 8): ('K63', 'K38'),
+           ('L05', 13): ('K63', 'K38')}
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--draws', type=int, default=100)
@@ -46,7 +57,7 @@ def main():
     a = ap.parse_args()
     key = load_key()
     A, B = read_pass('c268_passA.tsv'), read_pass('c268_passB.tsv')
-    rows, toks, lines = [], [], []
+    rows, toks, lines, agree = [], [], [], 0
     for lab in sorted(A):
         ta, tb = A[lab], B.get(lab, [])
         conf = ['M'] * len(ta)
@@ -54,13 +65,21 @@ def main():
             if tag == 'equal':
                 for i in range(i1, i2):
                     conf[i] = 'H'
+        agree += conf.count('H')  # pass A/B agreement, counted before the relabel sets its tokens to M
+        pa = ta[:]
+        ta = ta[:]
+        for (rl, rp), (old, new) in RELABEL.items():
+            if rl == lab:
+                assert pa[rp - 1] == old, (lab, rp, pa[rp - 1])
+                ta[rp - 1] = new
+                conf[rp - 1] = 'M'
         for i, t in enumerate(ta, 1):
-            rows.append(f"{lab}\t{i}\t{t}\t{conf[i-1]}\n")
+            rel = 'blind-sort' if (lab, i) in RELABEL else ''
+            rows.append(f"{lab}\t{i}\t{t}\t{conf[i-1]}\t{pa[i-1]}\t{rel}\n")
         kt = [t for t in ta if not t.startswith('W:')]
         toks += kt
         lines.append(f"{lab}\t{''.join(key.get(t, '_') for t in ta if not t.startswith('W:'))}")
     dec = norm(''.join(key.get(t, '') for t in toks))
-    agree = sum(1 for r in rows if r.endswith('\tH\n'))
     j = judge(dec)
     rng = random.Random(a.seed)
     sh_pass, sh_scores = 0, []
@@ -70,7 +89,7 @@ def main():
         js = judge(norm(''.join(key.get(x, '') for x in t)))
         sh_pass += js.get('verdict') == 'PASS'
         sh_scores.append(js.get('checks', {}).get('language', {}).get('score'))
-    res = dict(tokens=len(toks), signs_pass_a=len(rows), pass_agree_h=agree, decoded_letters=len(dec), decoded=dec,
+    res = dict(relabelled=len(RELABEL), tokens=len(toks), signs_pass_a=len(rows), pass_agree_h=agree, decoded_letters=len(dec), decoded=dec,
                judge=j, shuffle_draws=a.draws, shuffle_judge_pass=sh_pass,
                shuffle_language_scores_max=max(s for s in sh_scores if s is not None) if any(sh_scores) else None)
     ct = HERE / 'c270_text.txt'
@@ -86,8 +105,8 @@ def main():
         res.update(c270_letters=len(g), c270_matched=tgt, c270_rate=round(tgt / len(dec), 4),
                    c270_shuffle_mean=round(sum(ctl) / len(ctl) / len(dec), 4), c270_shuffle_p95=round(ctl[189] / len(dec), 4),
                    c270_shuffle_max=round(ctl[-1] / len(dec), 4))
-    outs = {HERE / 'ciphertext_c268.tsv': 'line\tpos\tsign\tconf\n' + ''.join(rows),
-            HERE / 'reading_c268.txt': '# c268 (f.138) first 5 cipher lines, Tomokiyo Monluc Cipher 1 table, pass A base; _ = unkeyed sign;'
+    outs = {HERE / 'ciphertext_c268.tsv': 'line\tpos\tsign\tconf\tpass_a\trelabel\n' + ''.join(rows),
+            HERE / 'reading_c268.txt': '# c268 (f.138) first 5 cipher lines, Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL); _ = unkeyed sign;'
                                        ' W: words dropped. Not graded: see NOTES.md.\n' + '\n'.join(lines) + '\n',
             HERE / 'results_c268.json': json.dumps(res, indent=1, default=str) + '\n'}
     if a.check:

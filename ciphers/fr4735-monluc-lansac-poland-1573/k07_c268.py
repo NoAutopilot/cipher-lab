@@ -58,7 +58,8 @@ def main():
     key = {l.split('\t')[0]: l.split('\t')[2] for l in (HERE / 'key.tsv').read_text().splitlines()[1:]}
     lines = {}
     for l in (HERE / 'ciphertext_c268.tsv').read_text().splitlines()[1:]:
-        ln, pos, sign = l.split('\t')[:3]
+        f = l.split('\t')
+        ln, pos, sign = f[0], f[1], (f[4] if len(f) > 4 and f[4] else f[2])  # pass-A label (before MONLUC-RELABEL)
         lines.setdefault(ln, []).append((int(pos), sign))
     dec = {ln: [norm(key[s]) if s in key else '' for _, s in toks] for ln, toks in lines.items()}
     pos_ix = {ln: {p: i for i, (p, _) in enumerate(toks)} for ln, toks in lines.items()}
