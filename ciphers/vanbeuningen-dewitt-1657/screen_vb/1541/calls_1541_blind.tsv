@@ -1,0 +1,60 @@
+S1-01	letter-start	-	n	0	n	spread, left blank, right prose letter with seal
+S1-02	continuation	-	n	0	n	letter end, signature, seal, top endorsement lines
+S1-03	letter-start	-	partial	40	n	Myn Heer opening; two number stretches in prose
+S1-04	address/cover	-	n	0	n	folded cover with red seal beside letter-start page
+S1-05	letter-start	-	y	300	n	Myn Heer; most of page number groups
+S1-06	address/cover	-	n	0	n	address leaf with red seal; small letter page right
+S1-07	continuation	-	n	0	n	closing lines, signature; right side blank
+S1-08	continuation	-	n	0	n	closing and signature, seal; right half blank
+S1-09	continuation	-	partial	20	n	two prose pages; few number stretches on left
+S1-10	continuation	-	n	0	n	two dense pages, signature, seal
+S1-11	letter-start	-	n	0	n	left blank; right Myn Heer prose page
+S1-12	continuation	-	n	0	n	prose page with closing signature; right blank
+S2-01	continuation	-	n	0	n	prose only, right half blank, torn corner, signatures
+S2-02	address/cover	-	n	0	n	address panel with red seal; letter-start below, date illegible
+S2-03	continuation	-	y	150	n	left blank; right page mostly rows of number groups
+S2-04	letter-start	-	partial	10	n	two prose pages; heading date illegible, a few numbers possible
+S2-05	letter-start	-	n	0	n	cover board left; right page has heading, prose
+S2-06	continuation	-	n	0	n	two prose pages with signature, no numbers visible
+S2-07	continuation	-	partial	20	n	prose with possible number stretches on right page
+S2-08	letter-start	-	n	0	n	blank left; right page dated heading, salutation, prose
+S2-09	continuation	-	n	0	n	dense prose spread, seal at bottom
+S2-10	blank	-	n	0	n	two blank pages
+S2-11	letter-start	-	n	0	n	blank left; heading with date line, salutation, prose
+S2-12	address/cover	-	n	0	n	blank page and brown cover with endorsement notes
+S3-01	letter-start	-	n	0	n	prose letter, seal stamp, heading illegible
+S3-02	blank	-	n	0	n	both pages empty
+S3-03	continuation	-	n	0	n	prose ending with signature, ink blot
+S3-04	letter-start	-	n	0	n	left page address/endorsement, right page letter
+S3-05	letter-start	-	n	0	n	left page continuation with signature, right salutation
+S3-06	continuation	-	n	0	n	short prose and signature, right page blank
+S3-07	letter-start	-	y	150	n	dense number-group block mid-letter
+S3-08	letter-start	-	n	0	n	prose with endorsement heading; possible numbers near bottom, unclear
+S3-09	letter-start	-	n	0	n	prose with signature, heading date illegible
+S3-10	continuation	-	n	0	n	closing lines and signature, right page blank
+S3-11	letter-start	-	partial	40	n	middle lines look like short groups, uncertain
+S3-12	blank	-	n	0	n	empty pages, dark damaged corner
+S4-01	continuation	-	partial	30	n	two dense pages, short columns lower left
+S4-02	letter-start	-	partial	60	n	Mijn Heer; number groups in middle lines
+S4-03	blank	-	n	0	n	both pages blank
+S4-04	continuation	-	n	0	n	prose with signatures, date illegible
+S4-05	letter-start	-	n	0	n	dated heading illegible, prose body
+S4-06	blank	-	n	0	n	both pages blank
+S4-07	continuation	-	n	0	n	prose ending with signature and flourish
+S4-08	continuation	-	n	0	n	prose, signature, endorsement at foot
+S4-09	letter-start	-	y	250	n	Mijn Heer; page dominated by number groups
+S4-10	continuation	-	n	0	n	dense prose across both pages
+S4-11	letter-start	-	partial	50	n	Mijn Heer; number stretches mid-page
+S4-12	continuation	-	n	0	n	prose continuation, right page blank
+S5-01	letter-start	-	partial	40	n	Right leaf has dense number-group stretches within prose
+S5-02	continuation	-	n	0	n	Prose text and signature, left side; blank right
+S5-03	letter-start	-	n	0	n	Heading dateline top, possibly 1650s; dense prose
+S5-04	address/cover	-	n	0	n	Address leaf with seal; right leaf prose letter
+S5-05	blank	-	n	0	n	Plain tan board or cover
+S5-06	address/cover	-	n	0	n	Red seal address panel; right prose with marginal marks
+S5-07	continuation	-	n	0	n	Prose with signature lower left; right blank
+S5-08	continuation	-	partial	10	n	Landscape page; prose, possible numbers lower right
+S5-09	blank	-	n	0	n	Faint ruled leaf beside tan board
+S5-10	letter-start	-	y	150	n	Whole right page dense number groups; flourish heading
+S5-11	blank	-	n	0	n	Small slip pasted; page mostly blank, faint writing
+S5-12	continuation	-	n	0	n	Small inserted note with prose; large page blank
