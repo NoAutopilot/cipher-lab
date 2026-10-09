@@ -12656,3 +12656,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:23 | BRO-SWEEP worker (account 2, Sonnet) | digitarq take (21 leaves, >=3 s, <=40 requests); for LANE FAMILY-A2i (account 2)
 2026-10-09 13:24 | MANT-CUC3 worker | sachsen release (2 GETs done), for LANE FAMILY-A2i (account 2)
 2026-10-09 13:24 | HEIN-SR2 worker (Sonnet) | resources.huygens.knaw.nl take (106 pages 132-251, >=2.2s), for LANE FAMILY-A2i (account 2)
+2026-10-09 13:23 | worker ES132-LOOK | claim: es132-vargas-mexia-1578 look-alike pass f.51v L11-L25 + f.52r (Cipher 3), disk only, cap 4.5, box 13:22-14:52 UTC (80% 14:34), for LANE FAMILY-A2i (account 2)
