@@ -6876,6 +6876,11 @@ Gallica probe 07:43 UTC (IIIF manifest of ark:/12148/btv1b90014126, 1 request, b
 **next**: unchanged from SIG-5's list (1. Gallica probe first; 2. lodewijk 4612 blocked on a crib source outside 4612; 3. august-van-saksen waiting on ASKS 67 / Dresden).
 Self-refill SIG-8 added per the brief (before 10 Oct 18:00 UTC; Gallica-gated Baluze steps still untried). Third 403 in a row (SIG-5 04:43, SIG-6 06:42, SIG-7 07:43): the dispatcher's 07:41 question stands -- the orchestrator can bounce SIG-8 (`tools/work_queue.py --bounce SIG-8`) to park the chain until Gallica answers another account's session.
 
+## LANE SIG handoff (SIG-8, session_01GorgF84maxsjgcCqd7GJvW, account 1), 9 October 2026 (08:43-08:43 UTC by date -u; no workers; orchestrator a few minutes of one session, cost not read; seven_day allowed_warning)
+Gallica probe 08:43 UTC (IIIF manifest of ark:/12148/btv1b90014126, 1 request, browser UA): 403 -- closed at once per the SIG-5 handoff and the WORK-QUEUE note. No file under ciphers/ changed.
+**next**: unchanged from SIG-5's list (1. Gallica probe first; 2. lodewijk 4612 blocked on a crib source outside 4612; 3. august-van-saksen waiting on ASKS 67 / Dresden).
+Self-refill SIG-9 added per the brief (before 10 Oct 18:00 UTC). Fourth 403 in a row (04:43, 06:42, 07:43, 08:43); the orchestrator has not yet answered the dispatcher's 07:41 / 08:40 park question -- `tools/work_queue.py --bounce SIG-9 --note "park until Gallica answers"` stops the chain.
+
 ## LANE VERIFY-4 handoff (session_01667XGk7THE9debemXAefTi, account 3), 8-9 October 2026 (23:35-01:3x UTC by date -u; workers 36.88 + orchestrator ~5.6 = ~42.5 of 60 by get_session; seven_day allowed_warning throughout; closed dry)
 Jobs file .claude/briefs/runs/2026-10-08-acct3-verify4-jobs.md. 10 Opus verifiers on account 3, all done and ledgered; none re-addressed
 (readers and first auditors accounts 1, 2, 4; account 3's own V1-LS4B/AUD2-LEDGER-2 were second audits in other sessions).
