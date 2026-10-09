@@ -1,0 +1,6 @@
+passZ_dv1.tsv as measured total 434 {'notation': 8, 'read:=committed ref': 276, 'read:other': 87, 'segmentation:deleted': 21, 'segmentation:inserted': 42}
+passZ_dv1.tsv flagged excluded total 80 {'notation': 6, 'read:other': 26, 'segmentation:deleted': 6, 'segmentation:inserted': 42}
+passA_dv1.tsv as measured total 449 {'notation': 18, 'read:=committed ref': 263, 'read:other': 112, 'segmentation:deleted': 24, 'segmentation:inserted': 32}
+passA_dv1.tsv flagged excluded total 84 {'notation': 12, 'read:other': 33, 'segmentation:deleted': 7, 'segmentation:inserted': 32}
+passB_dv1.tsv as measured total 418 {'notation': 5, 'read:=committed ref': 277, 'read:other': 78, 'segmentation:deleted': 24, 'segmentation:inserted': 34}
+passB_dv1.tsv flagged excluded total 65 {'notation': 4, 'read:other': 22, 'segmentation:deleted': 5, 'segmentation:inserted': 34}

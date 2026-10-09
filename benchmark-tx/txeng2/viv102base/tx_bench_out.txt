@@ -1,0 +1,15 @@
+vivonne1573-f102r-dev [dev] err_true 0.431 (434/1008) 95% 0.400-0.461 | wrong 371 deleted 21 inserted 42 | excluded 840 | lines missing 0
+  as measured 0.431 (434/1008) | flagged excluded 0.199 (80/403) 95% 0.163-0.240 [605 flagged]
+  top confusions (truth value <- read): d<-d x10, a<-3 x9, a<-S x8, s<-m x8, r<-y x8, a<-2 x7, s<-: x7, a<-d x7
+split dev: err_true 0.431 (434/1008) 95% 0.400-0.461
+paired passZ_dv1.tsv vs committed.tsv on vivonne1573-f102r-dev: 1008 common scored signs; base wrong 330, output wrong 392; fixed 2, broken 64; sign test p = 0.0000
+vivonne1573-f102r-dev [dev] err_true 0.445 (449/1008) 95% 0.415-0.476 | wrong 393 deleted 24 inserted 32 | excluded 840 | lines missing 0
+  as measured 0.445 (449/1008) | flagged excluded 0.208 (84/403) 95% 0.172-0.251 [605 flagged]
+  top confusions (truth value <- read): a<-S x18, a<-3 x11, d<-d x10, r<-y x9, s<-m x9, s<-: x7, a<-d x7, a<-2 x6
+split dev: err_true 0.445 (449/1008) 95% 0.415-0.476
+paired passA_dv1.tsv vs committed.tsv on vivonne1573-f102r-dev: 1008 common scored signs; base wrong 330, output wrong 417; fixed 2, broken 89; sign test p = 0.0000
+vivonne1573-f102r-dev [dev] err_true 0.415 (418/1008) 95% 0.385-0.445 | wrong 360 deleted 24 inserted 34 | excluded 840 | lines missing 0
+  as measured 0.415 (418/1008) | flagged excluded 0.161 (65/403) 95% 0.129-0.200 [605 flagged]
+  top confusions (truth value <- read): d<-d x10, s<-: x8, s<-m x8, a<-3 x7, a<-d x7, e<-d x6, u<-tz x6, r<-y x6
+split dev: err_true 0.415 (418/1008) 95% 0.385-0.445
+paired passB_dv1.tsv vs committed.tsv on vivonne1573-f102r-dev: 1008 common scored signs; base wrong 330, output wrong 384; fixed 2, broken 56; sign test p = 0.0000
