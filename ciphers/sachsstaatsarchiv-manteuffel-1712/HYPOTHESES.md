@@ -279,3 +279,12 @@ unreadable curl (key d); 31 glossed n (key m) and 55 glossed h (key b|[a]) in r0
   Crossen (Krosno Odrzanskie) I, untested; 51 low (alt 57, also s).
 - 0453 r04 tok5 '14' has a stroke through the 4 (a correction?); read 14 = n low; 'renoncer' reads either way only if 14 = n.
 - Letter No. 88, Berlin 29 Oct 1712 (head on URL 0451 f.358) spans URL 0451-0454; 0454's reading and 0453's belong to it.
+
+## MANT-CUC (9 Oct 2026, LANE FAMILY-A2h account 2): Krauske's table (key.tsv) against clear words written under code runs, 694/08 0323/0348/0282
+PREREG-MANTCUC.md (4c5930db8, pushed before scoring); scorer mant0608/cuc/cuc_score.py; blind code passes A/B and one blind clear pass per leaf.
+| date / job | hypothesis | control (1,000 permutations of key.tsv values, seed 6083) | target S (agreed tokens) | result |
+|---|---|---|---|---|
+| 9 Oct 2026 MANT-CUC | key.tsv letter values = the clear words under the runs, pooled 0323+0348+0282 | all-codes mean 16.0, p99 29; letter-codes mean 22.6, p99 36; 0/1000 >= real | 124/175 (0.709) | PASS (both controls); pass A 125/175, pass B 129/181, PASS |
+| 9 Oct 2026 MANT-CUC | same, 0323 alone | all-codes p99 17; letter p99 19 | 62/82 (0.756) | PASS |
+| 9 Oct 2026 MANT-CUC | same, 0348 alone | all-codes p99 9; letter p99 11 | 36/39 (0.923) | PASS |
+| 9 Oct 2026 MANT-CUC | same, 0282 alone | all-codes p99 8; letter p99 10 | 26/54 (0.481) | PASS on the gate, but under the PREREG's 0.5 rate line; 10 of the 28 misses are two strips where the blind clear pass saw no underline ('-') |

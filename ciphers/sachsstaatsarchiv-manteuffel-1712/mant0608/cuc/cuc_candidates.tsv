@@ -1,0 +1,62 @@
+# MANT-CUC 9 Oct 2026: codes on 694/08 0323/0348/0282 (agreed blind code tokens) that did not match the blind clear read under key.tsv in the PREREG alignment, or are absent from key.tsv. Grade C only once the image confirms both the code and the clear letters; most rows are blind-read slips (clear pass: contienne=conclure le, la Reve=la Treve, Penne=Prince, Cron=Czar, Son/Avnh, two missed underlines; code: ?=disagreement). Never into key.tsv.
+leaf	strip	code	key_value	clear_substring_aligned	clear_word	status
+0282	s01	?	(absent)		laforce	candidate; image check owed
+0282	s01	10	e		laforce	candidate; image check owed
+0282	s01	20	b	for	laforce	candidate; image check owed
+0282	s01	?	(absent)	e	laforce	candidate; image check owed
+0282	s02	17	p			candidate; image check owed
+0282	s02	26	r			candidate; image check owed
+0282	s02	9	i			candidate; image check owed
+0282	s02	14	n			candidate; image check owed
+0282	s02	15	c			candidate; image check owed
+0282	s02	10	e			candidate; image check owed
+0282	s03ab	60	r|re|ro		negociation	candidate; image check owed
+0282	s03ab	?	(absent)	eg	negociation	candidate; image check owed
+0282	s03ab	?	(absent)	ia	negociation	candidate; image check owed
+0282	s03ab	?	(absent)		negociation	candidate; image check owed
+0282	s03ab	18	(absent)	io	negociation	candidate; image check owed
+0282	s06	17	p			candidate; image check owed
+0282	s06	25	a			candidate; image check owed
+0282	s06	?	(absent)			candidate; image check owed
+0282	s06	4	x			candidate; image check owed
+0282	s07	?	(absent)	ss	puissances	candidate; image check owed
+0282	s09	25	a		son	candidate; image check owed
+0282	s09	26	r	so	son	candidate; image check owed
+0282	s09	8	h		son	candidate; image check owed
+0282	s10	60	r|re|ro		avnh	candidate; image check owed
+0282	s10	?	(absent)		avnh	candidate; image check owed
+0282	s10	32	n	vnh	avnh	candidate; image check owed
+0282	s11	40	b	mrb	mrbritton	candidate; image check owed
+0282	s13	?	(absent)	me	abime	candidate; image check owed
+0323	s02a	?	(absent)	i	alliance	candidate; image check owed
+0323	s02a	1	f		alliance	candidate; image check owed
+0323	s02b	?	(absent)	fe	deffensive	candidate; image check owed
+0323	s02b	?	(absent)	i	deffensive	candidate; image check owed
+0323	s03	118	e|et	la	la	candidate; image check owed
+0323	s04	30	c		contienne	candidate; image check owed
+0323	s04	42	l		contienne	candidate; image check owed
+0323	s04	6	u		contienne	candidate; image check owed
+0323	s04	60	r|re|ro	ti	contienne	candidate; image check owed
+0323	s04	103	le|la	nne	contienne	candidate; image check owed
+0323	s05	10	e	te	traitte	candidate; image check owed
+0323	s06	?	(absent)	l	lalliance	candidate; image check owed
+0323	s06	?	(absent)	n	lalliance	candidate; image check owed
+0323	s07	35	e	fe	deffensive	candidate; image check owed
+0323	s09	23	p		lareve	candidate; image check owed
+0323	s09	12	l	e	lareve	candidate; image check owed
+0323	s09	15	c	e	lareve	candidate; image check owed
+0323	s14	49	f	l	lalliancedeffensive	candidate; image check owed
+0323	s14	109	ss	d	lalliancedeffensive	candidate; image check owed
+0323	s14	10	e	fe	lalliancedeffensive	candidate; image check owed
+0348	s03	?	(absent)		ministre	candidate; image check owed
+0348	s05	?	(absent)	s	secretaire	candidate; image check owed
+0348	s07	39	i	j	j	candidate; image check owed
+0282	s04	?	(absent)		name-class	candidate; image check owed
+0282	s05	?	(absent)	royde	name-class	candidate; image check owed
+0282	s08	?	(absent)	royde	name-class	candidate; image check owed
+0282	s12	?	(absent)	royde	name-class	candidate; image check owed
+0323	s01	257	leroideprusse	la	name-class	candidate; image check owed
+0323	s08	257	leroideprusse		name-class	candidate; image check owed
+0323	s11	173	(absent)	penne	name-class	candidate; image check owed
+0323	s13	144	(absent)	cron	name-class	candidate; image check owed
+0348	s08	160	manteuffel	vous	name-class	candidate; image check owed

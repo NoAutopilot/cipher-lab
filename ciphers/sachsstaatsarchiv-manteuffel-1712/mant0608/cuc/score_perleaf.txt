@@ -1,0 +1,27 @@
+agreed leaf 0323 letter-class strips 10, tokens 82; S real 62 (0.756 per token)
+  control all-codes permutation x1000: mean 8.3 p95 14 p99 17; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 11.7 p95 17 p99 19; >= real 0; gate (real > p99) PASS
+passA leaf 0323 letter-class strips 10, tokens 82; S real 62 (0.756 per token)
+  control all-codes permutation x1000: mean 8.5 p95 14 p99 17; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 11.9 p95 18 p99 20; >= real 0; gate (real > p99) PASS
+passB leaf 0323 letter-class strips 10, tokens 82; S real 63 (0.768 per token)
+  control all-codes permutation x1000: mean 8.4 p95 14 p99 17; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 11.8 p95 17 p99 19; >= real 0; gate (real > p99) PASS
+agreed leaf 0348 letter-class strips 6, tokens 39; S real 36 (0.923 per token)
+  control all-codes permutation x1000: mean 4.2 p95 8 p99 9; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 5.9 p95 10 p99 11; >= real 0; gate (real > p99) PASS
+passA leaf 0348 letter-class strips 6, tokens 39; S real 36 (0.923 per token)
+  control all-codes permutation x1000: mean 4.2 p95 8 p99 9; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 5.9 p95 10 p99 11; >= real 0; gate (real > p99) PASS
+passB leaf 0348 letter-class strips 6, tokens 39; S real 37 (0.949 per token)
+  control all-codes permutation x1000: mean 4.2 p95 8 p99 9; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 5.9 p95 10 p99 12; >= real 0; gate (real > p99) PASS
+agreed leaf 0282 letter-class strips 9, tokens 54; S real 26 (0.481 per token)
+  control all-codes permutation x1000: mean 3.6 p95 6 p99 8; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 5.1 p95 8 p99 10; >= real 0; gate (real > p99) PASS
+passA leaf 0282 letter-class strips 9, tokens 54; S real 27 (0.500 per token)
+  control all-codes permutation x1000: mean 3.9 p95 7 p99 8; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 5.6 p95 9 p99 11; >= real 0; gate (real > p99) PASS
+passB leaf 0282 letter-class strips 12, tokens 60; S real 29 (0.483 per token)
+  control all-codes permutation x1000: mean 4.1 p95 7 p99 9; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 6.0 p95 10 p99 11; >= real 0; gate (real > p99) PASS
