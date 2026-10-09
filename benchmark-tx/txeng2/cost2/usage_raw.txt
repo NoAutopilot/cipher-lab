@@ -1,0 +1,11 @@
+dint_a2_L02 api_calls 5 {'input_tokens': 10, 'cache_creation_input_tokens': 105730, 'cache_read_input_tokens': 396175, 'output_tokens': 738} input_all 501915
+dint_a2_L03 api_calls 5 {'input_tokens': 10, 'cache_creation_input_tokens': 113486, 'cache_read_input_tokens': 396674, 'output_tokens': 1153} input_all 510170
+dint_a2_L04 api_calls 9 {'input_tokens': 18, 'cache_creation_input_tokens': 128842, 'cache_read_input_tokens': 852624, 'output_tokens': 901} input_all 981484
+dint_a2_L05 api_calls 5 {'input_tokens': 10, 'cache_creation_input_tokens': 110891, 'cache_read_input_tokens': 396662, 'output_tokens': 658} input_all 507563
+dint_b2 api_calls 7 {'input_tokens': 14, 'cache_creation_input_tokens': 116047, 'cache_read_input_tokens': 607344, 'output_tokens': 313} input_all 723405
+c87_a_L01 api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 104053, 'cache_read_input_tokens': 293841, 'output_tokens': 748} input_all 397902
+c87_a_L02 api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 104941, 'cache_read_input_tokens': 293976, 'output_tokens': 748} input_all 398925
+c87_a_L03 api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 104188, 'cache_read_input_tokens': 293302, 'output_tokens': 629} input_all 397498
+c87_a_L04 api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 103784, 'cache_read_input_tokens': 293230, 'output_tokens': 629} input_all 397022
+c87_a_L05 api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 105098, 'cache_read_input_tokens': 294075, 'output_tokens': 747} input_all 399181
+c87_b api_calls 17 {'input_tokens': 34, 'cache_creation_input_tokens': 144505, 'cache_read_input_tokens': 1845530, 'output_tokens': 3595} input_all 1990069

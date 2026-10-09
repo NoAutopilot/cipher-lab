@@ -1,0 +1,31 @@
+dint-f128-print [dev] err_true 0.388 (33/85) 95% 0.292-0.494 | wrong 18 deleted 1 inserted 14 | excluded 98 | lines missing 0
+  top confusions (truth value <- read): m<-Z x4, n<-z x2, o<-9 x2, t<-z x1, r<-w' x1, i<-T x1, n<-t x1, i<-x x1
+split dev: err_true 0.388 (33/85) 95% 0.292-0.494
+paired out_dint_a2.tsv vs passB.tsv on dint-f128-print: 85 common scored signs; base wrong 11, output wrong 19; fixed 4, broken 12; sign test p = 0.0768
+dint-f128-print [dev] err_true 0.318 (27/85) 95% 0.228-0.423 | wrong 17 deleted 1 inserted 9 | excluded 98 | lines missing 0
+  top confusions (truth value <- read): n<-4 x4, i<-1 x3, o<-9 x3, m<-Z x2, t<-z x1, u<-c x1, g<-o x1, e<-<deleted> x1
+split dev: err_true 0.318 (27/85) 95% 0.228-0.423
+paired out_dint_b2.tsv vs passB.tsv on dint-f128-print: 85 common scored signs; base wrong 11, output wrong 18; fixed 3, broken 10; sign test p = 0.0923
+dint-f128-print [dev] err_true 0.318 (27/85) 95% 0.228-0.423 | wrong 17 deleted 1 inserted 9 | excluded 98 | lines missing 0
+  top confusions (truth value <- read): m<-Z x3, o<-9 x3, n<-NEW:z-with-crossbar x2, t<-z x1, i<-T x1, n<-t x1, u<-c x1, i<-1 x1
+split dev: err_true 0.318 (27/85) 95% 0.228-0.423
+paired out_armA.tsv vs passB.tsv on dint-f128-print: 85 common scored signs; base wrong 11, output wrong 18; fixed 3, broken 10; sign test p = 0.0923
+dint-f128-print [dev] err_true 0.235 (20/85) 95% 0.158-0.336 | wrong 16 deleted 0 inserted 4 | excluded 98 | lines missing 0
+  top confusions (truth value <- read): i<-1 x3, m<-Z x2, t<-z x2, n<-4 x2, o<-NEW:c-with-tail x2, n<-4' x1, n<-NEW:R-with-crossbar x1, n<-NEW:r-overbar-with-dagger-below x1
+split dev: err_true 0.235 (20/85) 95% 0.158-0.336
+paired out_armB.tsv vs passB.tsv on dint-f128-print: 85 common scored signs; base wrong 11, output wrong 16; fixed 5, broken 10; sign test p = 0.3018
+ceppo-f87-S [dev] err_true 0.166 (23/139) 95% 0.113-0.236 | wrong 20 deleted 0 inserted 3 | excluded 65 | lines missing 0
+  top confusions (truth value <- read): n<-S30 x4, e<-S56 x3, o<-S88 x3, g<-S69 x2, u<-S45 x1, a<-S65 x1, o<-S60 x1, e<-S70 x1
+split dev: err_true 0.166 (23/139) 95% 0.113-0.236
+paired out_c87_a.tsv vs passA.tsv on ceppo-f87-S: 139 common scored signs; base wrong 4, output wrong 20; fixed 4, broken 20; sign test p = 0.0015
+ceppo-f87-S [dev] err_true 0.122 (17/139) 95% 0.078-0.187 | wrong 16 deleted 0 inserted 1 | excluded 65 | lines missing 0
+  top confusions (truth value <- read): e<-S71 x4, g<-S69 x2, m<-S77 x2, et<-S80 x2, r<-S69 x1, u<-S45 x1, o<-S60 x1, e<-S70 x1
+split dev: err_true 0.122 (17/139) 95% 0.078-0.187
+paired out_c87_b.tsv vs passA.tsv on ceppo-f87-S: 139 common scored signs; base wrong 4, output wrong 16; fixed 4, broken 16; sign test p = 0.0118
+ceppo-f87-S [dev] err_true 0.130 (18/139) 95% 0.084-0.195 | wrong 8 deleted 0 inserted 10 | excluded 65 | lines missing 0
+  top confusions (truth value <- read): o<-S88 x3, a<-S65 x2, i<-S66 x1, e<-S25 x1, o<-S32 x1
+split dev: err_true 0.130 (18/139) 95% 0.084-0.195
+paired passB.tsv vs passA.tsv on ceppo-f87-S: 139 common scored signs; base wrong 4, output wrong 8; fixed 4, broken 8; sign test p = 0.3877
+paired out_dint_b2.tsv vs out_dint_a2.tsv on dint-f128-print: 85 common scored signs; base wrong 19, output wrong 18; fixed 6, broken 5; sign test p = 1.0000
+paired out_armB.tsv vs out_armA.tsv on dint-f128-print: 85 common scored signs; base wrong 18, output wrong 16; fixed 5, broken 3; sign test p = 0.7266
+paired out_c87_b.tsv vs out_c87_a.tsv on ceppo-f87-S: 139 common scored signs; base wrong 20, output wrong 16; fixed 9, broken 5; sign test p = 0.4240
