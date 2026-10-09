@@ -240,3 +240,11 @@ unreadable curl (key d); 31 glossed n (key m) and 55 glossed h (key b|[a]) in r0
   letter values in context ('couronne de Suede. 83 donc a donne', 'on promet a 93 le gouvernement perpetuel du duche de Sleswig, et a
   4.10.11.2 20 m risdales', 'chez Gyque 59 a intercepte une lettre', 'de 93 a 75'): they behave as person/name codes; Krauske's table
   gives them letter values only. Open-codes for this clerk hand (the hand of 0136's "chiffre ... celui du proces").
+
+## MANT-0454 (9 Oct 2026, LANE FAMILY-A2f account 2): rule-4 slots from 694/08 0454 (f0454_08/), no key.tsv change
+- r03 '26.33.82.60.66.73.10.69.51.11.92' and r15 '60.33.82...' = r o z r a s|z e w s k y twice (26 and 60 both = r under key.tsv): the
+  surname of Stanislas's envoy at Berlin, probably Rozrażewski (I for the identification; the two witnesses agree in letters 11/11, in codes 10/11).
+- r12 '66.27.21.33.12.120' = a r n o l d ('continuer d'y employer le Sr. Arnold'); first code 66 (a) vs 68 (v) not settled on the image (M).
+- r07 '60.35.14.16.21.30.35.50' = r e n o n c e a after 'en cas qu'il' and before 'et que [Roi de Suède] y consentit': sense 'renonçât';
+  the last two codes give 'ea' with no t (M; a spelling or a dropped code, not a key change).
+- r17 single '60' (key r|re|ro) in 'le pr. R. voiant le pr. 60 parler au Roi': a letter-valued code used for a person (M, open-code).

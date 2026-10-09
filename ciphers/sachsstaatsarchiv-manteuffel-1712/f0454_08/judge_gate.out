@@ -1,0 +1,21 @@
+leaf_0454	letters 52	power at L: 11/11 = 1.00	real -1.659	permuted mean -2.012 p95 -1.693 p99 -1.593 max -1.472	permuted>=real 29/1000	PASS	rebellerozrasewskyrenonceaarnoldabdiquerrozrasewskyr
+# per run (reported, not gates): run, letters, score, decoded letters
+694-08_0454_r01	0	nan	
+694-08_0454_r02	7	-0.367	rebelle
+694-08_0454_r03	11	-2.184	rozrasewsky
+694-08_0454_r04	0	nan	
+694-08_0454_r05	0	nan	
+694-08_0454_r06	0	nan	
+694-08_0454_r07	8	-0.936	renoncea
+694-08_0454_r08	0	nan	
+694-08_0454_r09	0	nan	
+694-08_0454_r10	0	nan	
+694-08_0454_r11	0	nan	
+694-08_0454_r12	6	-1.558	arnold
+694-08_0454_r13	0	nan	
+694-08_0454_r14	8	-1.026	abdiquer
+694-08_0454_r15	11	-2.184	rozrasewsky
+694-08_0454_r16	0	nan	
+694-08_0454_r17	1	nan	r
+694-08_0454_r18	0	nan	
+# repeated run 694-08_0454_r03 vs 694-08_0454_r15: 10/11 positions agree; 26 33 82 60 66 73 10 69 51 11 92 | 60 33 82 60 66 73 10 69 51 11 92

@@ -1,0 +1,65 @@
+# leaf 0454 gate (b): PASS; no gloss on the leaf (gate (a) n/a)
+# tokens 62: H 0, C 0, S 46, M 16, I 0, U 0
+tokid	code	key_value	conf	grade	why
+694-08_0454_r01.1	198	Stanislas	high	M	name/word code (key value shown, identification I)
+694-08_0454_r02.1	60	r|re|ro	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r02.2	35	e	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r02.3	55	b|[a]	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r02.4	10	e	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r02.5	44	l	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r02.6	103	le|la	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.1	26	r	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.2	33	o	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.3	82	z	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.4	60	r|re|ro	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.5	66	a	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.6	73	s|z	low	M	low-conf transcription
+694-08_0454_r03.7	10	e	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.8	69	w	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.9	51	s|sa	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.10	11	k	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r03.11	92	y	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r04.1	198	Stanislas	high	M	name/word code (key value shown, identification I)
+694-08_0454_r05.1	150	le Roi de Pologne	high	M	name/word code (key value shown, identification I)
+694-08_0454_r06.1	198	Stanislas	high	M	name/word code (key value shown, identification I)
+694-08_0454_r07.1	60	r|re|ro	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r07.2	35	e	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r07.3	14	n	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r07.4	16	o|ou|ous	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r07.5	21	n	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r07.6	30	c	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r07.7	35	e	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r07.8	50	a	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r08.1	187	Roi de Suède	high	M	name/word code (key value shown, identification I)
+694-08_0454_r09.1	257	Le roi de Prusse	low	M	name/word code (key value shown, identification I)
+694-08_0454_r10.1	198	Stanislas	high	M	name/word code (key value shown, identification I)
+694-08_0454_r11.1	150	le Roi de Pologne	high	M	name/word code (key value shown, identification I)
+694-08_0454_r12.1	66	a	low	M	low-conf transcription
+694-08_0454_r12.2	27	r	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r12.3	21	n	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r12.4	33	o	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r12.5	12	l	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r12.6	120	d	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r13.1	198	Stanislas	low	M	name/word code (key value shown, identification I)
+694-08_0454_r14.1	25	a	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r14.2	55	b|[a]	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r14.3	100	d	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r14.4	9	i	low	M	low-conf transcription
+694-08_0454_r14.5	24	q	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r14.6	6	u	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r14.7	10	e	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r14.8	60	r|re|ro	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.1	60	r|re|ro	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.2	33	o	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.3	82	z	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.4	60	r|re|ro	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.5	66	a	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.6	73	s|z	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.7	10	e	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.8	69	w	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.9	51	s|sa	low	M	low-conf transcription
+694-08_0454_r15.10	11	k	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r15.11	92	y	high	S	unglossed letter token; leaf gate (b) PASS with power
+694-08_0454_r16.1	198	Stanislas	high	M	name/word code (key value shown, identification I)
+694-08_0454_r17.1	60	r|re|ro	low	M	low-conf transcription
+694-08_0454_r18.1	198	Stanislas	high	M	name/word code (key value shown, identification I)

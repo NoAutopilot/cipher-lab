@@ -1,0 +1,7 @@
+# MANT-0454 decoded phrases (cipher letters filled from key.tsv, names from Krauske's table) + clear context, 9 Oct 2026
+Stanislas qu'il regarderoit toujours comme un rebelle
+Rozrazewski qui est ici de la part de Stanislas
+un peu trop presse d'abdiquer
+Stanislas avoit temoigne etre malcontent
+Rozrazewski Stanislas Berlin 1712
+continuer d'y employer le Sr Arnold

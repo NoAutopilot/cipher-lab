@@ -1,0 +1,72 @@
+# MANT-0454 (9 Oct 2026): HStA Dresden 10026 Loc. 694/08 file 0454 (ff.~360v-361, stamp 361), LEFT page only (right page: no codes at
+# downscaled view). Two blind Sonnet passes (passA_0454.tsv crop order, passB_0454.tsv reversed) + worker reconciliation on native 2x zooms.
+# One run id per code group, page order. Ordinary numeral '3 jours' (L09) is not a code. No interlinear letters under/over any code
+# (both passes + worker look): gate (a) n/a.
+# Settled by the worker: r03 tok6 73 (A 43, B raw 73; a descender from the line above crosses the 7; r15's same slot is a clear 73) low;
+# r03/r15 tok8 '6y' = 69 (this hand's 9 has a looped descender, cf. 92 'y2'); r14 tok4 9 (A 4, B 9; same looped-descender 9) low;
+# r13 198 (A 198, B 178; the hand's 9 often looks like 7) low; r12 tok1 66 (both passes; worker: gap between the digits, alt 68) low;
+# r15 tok9 51 (both passes; worker zoom could be 57, both = s) low; r09 257 (both passes low; alt 237/252) low; r17 single '60' after
+# 'le pr.' (both low) low. 'r03 vs r15' are the two witnesses of the repeated run.
+line	pos	sign	conf
+694-08_0454_r01	1	198	high
+694-08_0454_r02	1	60	high
+694-08_0454_r02	2	35	high
+694-08_0454_r02	3	55	high
+694-08_0454_r02	4	10	high
+694-08_0454_r02	5	44	high
+694-08_0454_r02	6	103	high
+694-08_0454_r03	1	26	high
+694-08_0454_r03	2	33	high
+694-08_0454_r03	3	82	high
+694-08_0454_r03	4	60	high
+694-08_0454_r03	5	66	high
+694-08_0454_r03	6	73	low
+694-08_0454_r03	7	10	high
+694-08_0454_r03	8	69	high
+694-08_0454_r03	9	51	high
+694-08_0454_r03	10	11	high
+694-08_0454_r03	11	92	high
+694-08_0454_r04	1	198	high
+694-08_0454_r05	1	150	high
+694-08_0454_r06	1	198	high
+694-08_0454_r07	1	60	high
+694-08_0454_r07	2	35	high
+694-08_0454_r07	3	14	high
+694-08_0454_r07	4	16	high
+694-08_0454_r07	5	21	high
+694-08_0454_r07	6	30	high
+694-08_0454_r07	7	35	high
+694-08_0454_r07	8	50	high
+694-08_0454_r08	1	187	high
+694-08_0454_r09	1	257	low
+694-08_0454_r10	1	198	high
+694-08_0454_r11	1	150	high
+694-08_0454_r12	1	66	low
+694-08_0454_r12	2	27	high
+694-08_0454_r12	3	21	high
+694-08_0454_r12	4	33	high
+694-08_0454_r12	5	12	high
+694-08_0454_r12	6	120	high
+694-08_0454_r13	1	198	low
+694-08_0454_r14	1	25	high
+694-08_0454_r14	2	55	high
+694-08_0454_r14	3	100	high
+694-08_0454_r14	4	9	low
+694-08_0454_r14	5	24	high
+694-08_0454_r14	6	6	high
+694-08_0454_r14	7	10	high
+694-08_0454_r14	8	60	high
+694-08_0454_r15	1	60	high
+694-08_0454_r15	2	33	high
+694-08_0454_r15	3	82	high
+694-08_0454_r15	4	60	high
+694-08_0454_r15	5	66	high
+694-08_0454_r15	6	73	high
+694-08_0454_r15	7	10	high
+694-08_0454_r15	8	69	high
+694-08_0454_r15	9	51	low
+694-08_0454_r15	10	11	high
+694-08_0454_r15	11	92	high
+694-08_0454_r16	1	198	high
+694-08_0454_r17	1	60	low
+694-08_0454_r18	1	198	high

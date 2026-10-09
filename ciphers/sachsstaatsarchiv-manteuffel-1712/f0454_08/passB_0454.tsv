@@ -1,0 +1,25 @@
+# MANT-0454 blind Sonnet code pass B (reversed crop order L13..L01, 2x enlargements of crops/), verbatim TSV as returned, 9 Oct 2026
+crop	line	numbers	words_before	words_after	confidence	alternatives	interlinear_letters_seen
+f0454_L13	-	(none)	-	-	high	-	no
+f0454_L12	top	198 (single group, written "198.," with a dot before the comma)	"a eté grec ce" / "d'un ... eté grece"	", w. dot ... nuit" (following words are German-looking and unclear: "dass man nicht ...")	low	198 vs 178 (1/7 ambiguity, first digit looks like 1, middle 9 or 7)	no
+f0454_L11	top	60 (as "fr. 60." the group after "le fr.")	"c'est que le fr. K. voyant le fr."	"parle au Roi, dit au C. Dohna"	low	60 vs 66; "fr. K." may be a letter abbreviation, not a number	no
+f0454_L10	-	(none; line is crossed out words "...sur ...", no digits)	-	-	high	-	no
+f0454_L09	top	60.33.82.60.66.73.10.6y.51.11.92 (read as 60.33.82.60.66.73.10.69.51.11.92)	"[start of line]"	"a pris, il y a 3 jours une audience"	low	first 60 vs 66 vs Go; 73 vs 43 vs 75; 6y = 69 or 64; 51 vs 57; 82 vs 62	no
+f0454_L09	top	3 (ordinary numeral "il y a 3 jours")	"a pris, il y a"	"jours une audience"	high	-	no
+f0454_L09	bottom	198 ("tout ce que 198 doit")	"dit au Roi de prusse tout ce que"	"doit"	low	198 vs 178 vs 148	no
+f0454_L08	top	25.55.100.9.24.6.10.60 (read as 25.55.100.9.24.6.10.60)	"un peu trop pressé de"	"Ce que je suis assuré de tout cela"	low	25 vs 23; 55 vs 58 vs 53; 100 vs 160; 9 vs 4 (4/9); 60 vs 66	no
+f0454_L07	top	178 ("que 178. avoit témoigné")	"son sentiment, mais que"	"avoit témoigné être malcontent"	low	178 vs 198 vs 148	no
+f0454_L06	bottom	66.27.21.33.12.120	"[line start; end of previous line: le fr.]"	", sur quoi il me dit que c'étoit aussi"	low	66 vs 60 vs 68; 27 vs 21; 12 vs 72; 120 vs 126	no
+f0454_L05	top	257 ("que 257 envoya a 198")	"qui je voudrois que"	"envoya a 198 en"	low	257 vs 237 vs 252 (2/7, 5/3)	no
+f0454_L05	top	198 ("a 198. en")	"que 257 envoya a"	"en ce que 150 s'expliqua"	low	198 vs 178	no
+f0454_L05	bottom	150 ("ce que 150 s'expliqua")	"en ce que"	"s'expliqua, et je lui ai repondu"	low	150 vs 130 vs 156	no
+f0454_L04	-	(none)	-	-	high	-	no
+f0454_L03	top	150. ("ce que 150. voudroit accorder")	"de savoir ce que"	"voudroit accorder a 198"	low	150 vs 130	no
+f0454_L03	top	198. ("accorder a 198., en cas")	"voudroit accorder a"	"en cas qu'il"	low	198 vs 178	no
+f0454_L03	bottom	60.35.14.16.21.30.35.50 (also 60.35;14.16.21.30.35.50 with a semicolon-like mark after 35)	"qu'il [en cas qu'il]"	"et que 187. y consentit"	low	60 vs 66; 14 vs 11; 16 vs 10; 21 vs 27; 30 vs 36; 50 vs 58	no
+f0454_L03	bottom	187. ("et que 187. y consentit")	"35.50. et que"	"y consentit. Et"	low	187 vs 181 vs 107	no
+f0454_L02	top	26.33.82.60.66.73.10.6y.51.11.92 (read as 26.33.82.60.66.43.10.69.51.11.92)	"[une] chose a"	"qui est ... de la porte"	low	first group 26 vs 20 (vs 60 in L09); 73/43; 6y = 69 or 64; 51 vs 57	no
+f0454_L02	bottom	198. ("la porte le 198., mais")	"la porte le"	"mais qu'en attendant il seroit bon"	low	198 vs 178	no
+f0454_L01	top	198. ("avec 198. qu'il regarderoit toujours")	"[ ...ociation] avec"	"qu'il regarderoit toujours"	low	198 vs 178	no
+f0454_L01	bottom	60.35.55.10.44.103 (read as 60.35.55.10.44.103)	"comme un" (approx. "...comme un")	". J. qu'il avoit dit la me[me]"	low	35 vs 33; 55 vs 53; 44 vs 41; 103 vs 105 vs 108	no
+# NOTES (pass B, abridged verbatim): 198/178 recurs, lean 198 throughout. Long run L09 repeats L02; first group 60 vs 26 and 73 vs 43 differ. Superscript letters at line ends are abbreviation flourishes; interlinear "pria" (L04) and "de cette audience" (L10) are word insertions, no numbers. No interlinear letters seen above or below any number group.

@@ -1,0 +1,6 @@
+host	requests	status
+api.openalex.org	7	ok
+api.semanticscholar.org	4	ok
+archive.org	1	ok (some errors)
+be-api.us.archive.org	12	ok
+www.googleapis.com	1	blocked: HTTP 429 on https://www.googleapis.com/books/v1/volumes?q=%22Stanislas%20qu%27il%20regarderoit%20toujours%20comme%20un%20rebelle%22&country=US&maxResults=10

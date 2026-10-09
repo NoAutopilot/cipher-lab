@@ -1,0 +1,27 @@
+# MANT-0454 blind Sonnet code pass A (crop order L01..L13, 2x enlargements of crops/), verbatim TSV as returned, 9 Oct 2026
+crop	line	numbers	words_before	words_after	confidence	alternatives	interlinear_letters_seen
+f0454_L01	top	198.	"...sociation avec"	"qu'il regarderoit toujours"	high	198 could be 178 (1/7)	no
+f0454_L01	bottom	60.35.55.10.44.103	"comme un"	". / qu'il avoit dit la me[me]"	high	55 could be 35 (second group 35.55); 44 could be 49; 103 could be 108	no
+f0454_L02	top	26.33.82.60.66.43.10.6y.51.11.92	"...me chose a"	"qui est in. de / la part le 198"	low	26 could be 76; 6y may be 64 or 69; 43 first digit could be 93; 51 could be 57; 92 could be 42	no
+f0454_L02	top (also, 2nd in-line number after "qui est ... de")	(read as part of the same line, "qui est iny de" unclear, no separate number)	"qui est"	"de la part"	low	possibly a short number (iny) before "de", unclear: could be 17 or 44	no
+f0454_L02	bottom	198.	"la part le"	", mais qu'en attendant il serait bon"	high	178	no
+f0454_L03	top	150.	"de savoir ce que"	"voudroit accorder a 198"	high	130 or 180 (5/3, 5/8)	no
+f0454_L03	top	198.	"voudroit accorder a"	", en cas"	high	178	no
+f0454_L03	bottom	60.35.14.16.21.30.35.50.	"en qu'il"	"et que 187"	low	14 could be 11; 16 could be 10; 21 could be 27; 30 could be 36; 35 could be 55; 50 could be 56	no
+f0454_L03	bottom	187.	"et que"	"y consentit. Et"	low	137, 181, 187	no
+f0454_L04	top	none	-	-	-	line contains "m'a prie [struck word] en meme temps d'en ecrire a V.E." with no digits	-
+f0454_L04	bottom	none	-	-	-	"et de luy demander ses sentiments. Il a aussi"	-
+f0454_L05	top	257	"qui je voudrois que"	"envoyat a 198 en"	low	237, 252, 297	no
+f0454_L05	top	198.	"envoyat a"	"en cas que"	high	178	no
+f0454_L05	bottom	150	"cas que"	"s'expliqua, et je luy ai repondu"	high	130, 180	no
+f0454_L06	bottom	66.27.21.33.12.120.	"(start of line, after 'employer le fi')"	", sur quoi il me dit que c'estoit aussi"	low	66 could be 60 or 68; 27 could be 21; 21 could be 27; 33 could be 35; 120 could be 100 or 126	no
+f0454_L07	top	198.	"mais que"	"avoit temoigne"	high	178 (written like 178 here: 1/7 ambiguous)	no
+f0454_L08	top	25.55.100.4.24.6.10.60	"un peu trop pressé de"	"Ce que je fais d'assuré"	low	25 could be 23; 55 could be 35 or 58; 100 could be 106; 4 could be 9; 24 could be 21; 6 could be 0; 60 could be 66	no
+f0454_L09	top	60.33.82.60.66.43.10.69.51.11.92	"(start of line, after previous 'que')"	"a pris, il y a 3 jours une"	low	first group could be 60 or 66 (6/0); 33 could be 35; 43 could be 93; 69 could be 64; 51 could be 57; 92 could be 42	no
+f0454_L09	top	3	"il y a"	"jours une audience"	high	5 (3/5)	no
+f0454_L09	bottom	198	"tout ce que"	"doit / avoir ecrit"	high	178	no
+f0454_L10	both	none	-	-	-	line has "avoir ecrit. Je ne veux pas oublier de vous dire [struck] le sujet d'une particularite" with no digits	-
+f0454_L11	top	60.	"le fr. [..]"	"parle / au Roi"	low	66 or 80 (struck/ambiguous)	no
+f0454_L12	top	198.	"a ete grece"	", ...dit nuss..."	high	178	no
+f0454_L13	both	none	-	-	-	"lere au Roi, et voulant faire une reverence au" no digits	-
+# NOTES (pass A, abridged verbatim): 198 and 178 visually near-identical (writer's 9 and 7/8 loop); all read 198 except L07, which looks like 178 but is probably the same code. Long group L02 closely matches L09; first digits (26/76 vs 60/66) doubtful. No interlinear small letters seen above or below any number group in any crop.
