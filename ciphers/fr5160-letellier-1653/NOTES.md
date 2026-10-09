@@ -2400,3 +2400,70 @@ Read so far: f.86+f.88 169 of 539 cipher tokens C (AUDIT.md Audit 2, D1); f.67 C
 - [ ] image-check: f.1-2, f.9, f.67, f.86, f.88 reconciled from native crops; canvas 11-12 and canvas 32 reconciled at text level only (Gallica 503 8 Oct, 403 9 Oct); next: image arbitration of their 26 split positions, ~$3
 - [x] retry: every failed fetch has been retried and closed (canvases 45, 55, 58, 74, 679; canvas 11 HTTP 500 and canvas 32 resets recovered 24 Sept); the 8 Oct 503 is the image-check step above, to be retried in a later session, not looped here
 Verdict: keep going: 2 internal gaps; cheapest next: the word-level dictionary-constrained solver with its own matched control on control_pool.txt (~$4, disk only), or image arbitration of canvas 11-12 and canvas 32 when Gallica answers (~$3)
+
+## F5160-WORD: word-placement (dictionary-constrained) search on the 1653 table, matched control (9 Oct 2026, 14:24-14:4x UTC by date -u)
+
+Worker F5160-WORD (solver, account 4, Opus), LANE DEFAULT-account-4-20261009-1340 job J12. Disk only, no network, no
+subagent. Pre-registered in `PREREG-F5160-WORD.md`, on origin at 2976e4115 (14:31 UTC) before any score. (A first
+`tools/room.py --push` of the prereg at 14:28 pushed only ROOM.md -- room.py does not stage untracked paths -- caught and
+committed explicitly before the run had produced anything.)
+
+**Prior-work step (run late, after the synthetic control and before any target step, as in F5160-POOL).**
+`tools/prior_work.py fr5160-letellier-1653 --item-spec 'shelfmark=BnF fr.5160;folio=1r;sender=Brienne;recipient=Servien'
+--step-type key --offline` (origin/main 2976e4115): **exit 4**, verdict LEAD, the same leads F5160-POOL listed: this
+worker's own live claim (4c80c2), the known-keys row (4341b9, a different step), five period-span edition LEADs (Le Clerc
+t.2-4; Cheruel t.2, t.9), none spanning 1653 by its own label; aaymeloglu/unsolved-ciphers UNCHECKED-NET. The target step
+was not run (control below gate), so nothing hangs on them.
+
+**Instrument.** `word_solve.py` (private; why: `tools/family_run.py` builds its own control and cannot score against
+`control_pool.truth.json`, and its `wordcode` family has no syllable values, while this design is 80% syllable tokens).
+Score = `nomenclator_anneal.Problem` unchanged (fr16 order-5 model rebuilt without control paragraphs by
+`FR_MODEL_DIR=<scratch> pool_inputs.py --model`, not committed; same prior, caps max-syl 100 / max-word 16 / max-null 3 /
+max-homo 4, fixes S8=de S91=ques S32=le S43=se). Search: half the moves place a whole fr17 word (4,000 commonest types,
+weight sqrt count) over a window of 1-6 consecutive cipher tokens, split into values the design allows (35,009 splits:
+k=1 93, 2 665, 3 2,384, 4 6,225, 5 11,038, 6 14,604); the other half are nomenclator_anneal's single-sign/swap moves.
+T0 2 -> T1 0.02, 10M iterations x 4 restarts (seeds 7000-7003; timing run 8.9k it/s, unevaluated), greedy polish.
+Check on the settings: the same Problem scores the control's true key at **-2978.9**, the figure on file.
+
+| control (972 tokens, control_pool.txt) | best-score restart: token / letter acc | max token acc | best score | true-key score | gap (nats) |
+|---|---|---|---|---|---|
+| 24 Sept t5, nomenclator_anneal (752 tokens) | 25.7% / 21.0% | 25.7% | -3013.0 | -2309.7 | 703 |
+| 9 Oct pool_t5, nomenclator_anneal | 26.0% / 13.8% | 26.0% | -4030.3 | -2978.9 | 1051 |
+| **9 Oct word_t5, word_solve.py** | **21.4% / 16.3%** | 21.4% | -4147.1 | -2978.9 | **1168** |
+
+Per-restart rows: `control_word_runs.tsv`; best key and reading: `control_word_best.json`.
+
+**Gate: token accuracy of the best-scoring restart >= 0.60. Result 0.214: FAIL.** As pre-registered, `real_pool.txt`
+was **not run**. Word placement found *worse* optima than plain annealing (best -4147.1 vs -4030.3; gap to the true key
+1168 nats), and the best reading has only scattered function words ("ceque", "aussi", "entre", "dement") between the
+clear frames, the shape of a search that places common words without a consistent key. The model still prefers the true
+key by more than 1,000 nats, so the limit is search over this design at this N, now with two different move sets.
+
+**Result.** Third control-backed failure on this table, all three under the same score: nomenclator_anneal twice
+(25.7% at 752, 26.0% at 972) and word-placement search once (21.4% at 972), the numbers not moving together toward the
+bar. Under rule 3's third-attempt clause the key-rebuild step by annealing on this score is retired for the 1653 table
+(instruments: tools/nomenclator_anneal.py and word_solve.py; logged untested-by-this-tool, not refuted). What reopens it
+is new material: a clear copy or minute of a 1653 letter (Français 20661-20662, ASKS 154) would give known-plaintext
+alignment (tools/interlinear_align.py), a different instrument. **Grades: H 0, C 0, S 0, M 0, I 0 of 972 cipher
+tokens: no token read** (cryptanalytic method-limit negative, not evidence about the letters).
+
+What was found, and where it was not found: no reading of f1, f9, c11 or c32; the control shows neither annealing nor
+word-placement search recovers a key_1659-like syllabic nomenclator at 972 tokens under this model. Requests: none.
+
+Suggestion (Usage 7, not attempted): if ASKS 154 returns minutes for any 1653 letter, align them with
+tools/interlinear_align.py and pin the recovered values (`family_run.py --param lock=`) before any further search.
+
+## Remaining gaps (F5160-WORD, 9 Oct 2026)
+Read so far: f.86+f.88 169 of 539 cipher tokens C (AUDIT.md Audit 2, D1); f.67 C 435 / M 111 of 546 (align_f67.py); 1653 band f.1-2+f.9 0 of 752; canvas 11-12 block 0 of 113 and canvas 32 0 of 107 (ciphertext_c11/c32.tsv, text-level reconciled, trial_1653_c11c32.tsv)
+- 1653 band f.1-2 + f.9 + c11 + c32 (972 tokens, a key_1659-like syllabic table) - blocker: waiting-on ASKS 154; all four office keys trialled without a read, and cryptanalytic key rebuild retired under rule 3 after three control failures on control_pool.txt (nomenclator_anneal 25.7% and 26.0%, word_solve.py 21.4%, bar 60%; F5160-WORD); the remaining route is known plaintext from the Brienne 1653 minutes (Français 20661-20662, REQUEST.md)
+- canvas 11-12 and canvas 32 image arbitration (26 split positions, 8 of them db/tt) - blocker: not-attempted; Gallica HTTP 503 on 8 Oct 2026 09:2x UTC and 403 on 9 Oct 13:47 UTC (lane probe), crops not on disk; next: one region fetch per canvas when Gallica answers, iiif_lines crops, one reconciliation unit each, ~$3
+
+## Escalation (F5160-WORD, 9 Oct 2026)
+- [x] siblings: canvas walks 4-367 complete (walk_37_159.tsv, walk_160_367.tsv; canvas 45 D1A-CAN 8 Oct); sibling volumes and Colbert 26 part III read whole (375/375, AM-LOOK 7 Oct); KH2-A keyhunt 7 Oct: 0 unread fetchable siblings for key_1659/1647/1651
+- [x] clear-pages: f.68r clear text aligned to f.67 and tested (D1A-F68, PASS 0.801 vs p99 0.518); f.87 decipherment is the key source for f.86/f.88; the 1653 band has no interlinear or clear copy on any canvas 4-36 (Premise check, 2 Oct 2026)
+- [x] known-keys: all four keys of the office (key_1646, Tomokiyo 1647, Tomokiyo 1651, key_1659) trialled under matched controls on all four 1653 pieces (trial_1653.tsv, trial_1653_c11c32.tsv): none reads; KEY-OFFICES.tsv holds no other key of this office for 1650-1655
+- [x] print: the read items were print-checked (print-check.tsv, print-check-f67.tsv) and searched by two verifier audits; the 1653 band has nothing read to search
+- [retired] key-rebuild: annealing instruments tools/nomenclator_anneal.py and word_solve.py failed the matched control three times on the 1653 table (25.7%, 26.0%, 21.4% vs bar 60%; PREREG-F5160-POOL.md, PREREG-F5160-WORD.md), numbers not moving together; key_1659 itself rebuilt from f.87 and confirmed on f.67 (D1A-F68); reopened only by new material (1653 minutes, ASKS 154) for known-plaintext alignment
+- [ ] image-check: f.1-2, f.9, f.67, f.86, f.88 reconciled from native crops; canvas 11-12 and canvas 32 reconciled at text level only (Gallica 503 8 Oct, 403 9 Oct); next: image arbitration of their 26 split positions, ~$3
+- [x] retry: every failed fetch has been retried and closed (canvases 45, 55, 58, 74, 679; canvas 11 HTTP 500 and canvas 32 resets recovered 24 Sept); the Gallica 503/403 is the image-check step above, to be retried in a later session, not looped here
+Verdict: keep going: 1 internal gaps; cheapest next: image arbitration of canvas 11-12 and canvas 32 when Gallica answers (~$3)
