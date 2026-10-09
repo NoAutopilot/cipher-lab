@@ -1,0 +1,64 @@
+== birago1572-no87
+  opus pipeline                                err_true 0.044 (15/343) [0.027-0.071] | flagged-excluded 0.030 (10/338) [0.016-0.054]
+  sonnet pipeline                              err_true 0.050 (17/343) [0.031-0.078] | flagged-excluded 0.036 (12/338) [0.020-0.061]
+  opus reader r1                               err_true 0.038 (13/343) [0.022-0.064] | flagged-excluded 0.024 (8/338) [0.012-0.046]
+  opus reader r2                               err_true 0.052 (18/343) [0.033-0.081] | flagged-excluded 0.038 (13/338) [0.023-0.065]
+  opus reconcile (pre-adjudication)            err_true 0.055 (19/343) [0.036-0.085] | flagged-excluded 0.041 (14/338) [0.025-0.068]
+  sonnet reader A                              err_true 0.064 (22/343) [0.043-0.095] | flagged-excluded 0.050 (17/338) [0.032-0.079]
+  sonnet reader B                              err_true 0.093 (32/343) [0.067-0.129] | flagged-excluded 0.080 (27/338) [0.055-0.114]
+  sonnet reconcile (pre-adjudication)          err_true 0.105 (36/343) [0.077-0.142] | flagged-excluded 0.092 (31/338) [0.065-0.127]
+  L (committed Sonnet pipeline + relabels)     err_true 0.035 (12/343) [0.020-0.060] | flagged-excluded 0.021 (7/338) [0.010-0.042]
+  paired [as measured] opus pipeline vs base sonnet pipeline: n 343, base wrong 17, out wrong 15, fixed 8, broken 6, p 0.7905
+  paired [as measured] sonnet pipeline vs base opus pipeline: n 343, base wrong 15, out wrong 17, fixed 6, broken 8, p 0.7905
+  reader spread [as measured] Sonnet B vs base Sonnet A: fixed 10, broken 17
+  reader spread [as measured] Opus r2 vs base Opus r1: fixed 2, broken 6
+  control [as measured] sonnet pipeline vs base L (committed Sonnet pipeline + relabels): fixed 1, broken 6, p 0.1250
+  paired [flagged excluded] opus pipeline vs base sonnet pipeline: n 338, base wrong 12, out wrong 10, fixed 8, broken 6, p 0.7905
+  paired [flagged excluded] sonnet pipeline vs base opus pipeline: n 338, base wrong 10, out wrong 12, fixed 6, broken 8, p 0.7905
+  reader spread [flagged excluded] Sonnet B vs base Sonnet A: fixed 10, broken 17
+  reader spread [flagged excluded] Opus r2 vs base Opus r1: fixed 2, broken 6
+  control [flagged excluded] sonnet pipeline vs base L (committed Sonnet pipeline + relabels): fixed 1, broken 6, p 0.1250
+== dint-f128-print (label-mapped)
+  opus pipeline                                err_true 0.176 (15/85) [0.110-0.271] | flagged-excluded 0.176 (15/85) [0.110-0.271]
+  sonnet pipeline                              err_true 0.212 (18/85) [0.138-0.310] | flagged-excluded 0.212 (18/85) [0.138-0.310]
+  opus reader r1                               err_true 0.188 (16/85) [0.119-0.284] | flagged-excluded 0.188 (16/85) [0.119-0.284]
+  opus reader r2                               err_true 0.200 (17/85) [0.129-0.297] | flagged-excluded 0.200 (17/85) [0.129-0.297]
+  opus reconcile (pre-adjudication)            err_true 0.235 (20/85) [0.158-0.336] | flagged-excluded 0.235 (20/85) [0.158-0.336]
+  sonnet reader A                              err_true 0.247 (21/85) [0.168-0.348] | flagged-excluded 0.247 (21/85) [0.168-0.348]
+  sonnet reader B                              err_true 0.188 (16/85) [0.119-0.284] | flagged-excluded 0.188 (16/85) [0.119-0.284]
+  sonnet reconcile (pre-adjudication)          err_true 0.271 (23/85) [0.188-0.373] | flagged-excluded 0.271 (23/85) [0.188-0.373]
+  paired [as measured] opus pipeline vs base sonnet pipeline: n 85, base wrong 12, out wrong 10, fixed 5, broken 3, p 0.7266
+  paired [as measured] sonnet pipeline vs base opus pipeline: n 85, base wrong 10, out wrong 12, fixed 3, broken 5, p 0.7266
+  reader spread [as measured] Sonnet B vs base Sonnet A: fixed 4, broken 1
+  reader spread [as measured] Opus r2 vs base Opus r1: fixed 2, broken 2
+  paired [flagged excluded] opus pipeline vs base sonnet pipeline: n 85, base wrong 12, out wrong 10, fixed 5, broken 3, p 0.7266
+  paired [flagged excluded] sonnet pipeline vs base opus pipeline: n 85, base wrong 10, out wrong 12, fixed 3, broken 5, p 0.7266
+  reader spread [flagged excluded] Sonnet B vs base Sonnet A: fixed 4, broken 1
+  reader spread [flagged excluded] Opus r2 vs base Opus r1: fixed 2, broken 2
+== ceppo-f36v-gloss
+  opus pipeline                                err_true 0.188 (3/16) [0.066-0.430] | flagged-excluded 0.188 (3/16) [0.066-0.430]
+  sonnet pipeline                              err_true 0.312 (5/16) [0.142-0.556] | flagged-excluded 0.312 (5/16) [0.142-0.556]
+  opus reader r1                               err_true 0.188 (3/16) [0.066-0.430] | flagged-excluded 0.188 (3/16) [0.066-0.430]
+  opus reader r2                               err_true 0.125 (2/16) [0.035-0.360] | flagged-excluded 0.125 (2/16) [0.035-0.360]
+  opus reconcile (pre-adjudication)            err_true 0.188 (3/16) [0.066-0.430] | flagged-excluded 0.188 (3/16) [0.066-0.430]
+  sonnet reader A                              err_true 0.250 (4/16) [0.102-0.495] | flagged-excluded 0.250 (4/16) [0.102-0.495]
+  sonnet reader B                              err_true 0.375 (6/16) [0.185-0.614] | flagged-excluded 0.375 (6/16) [0.185-0.614]
+  sonnet reconcile (pre-adjudication)          err_true 0.375 (6/16) [0.185-0.614] | flagged-excluded 0.375 (6/16) [0.185-0.614]
+  folder recon (committed)                     err_true 0.438 (7/16) [0.231-0.668] | flagged-excluded 0.438 (7/16) [0.231-0.668]
+  paired [as measured] opus pipeline vs base sonnet pipeline: n 16, base wrong 5, out wrong 3, fixed 4, broken 2, p 0.6875
+  paired [as measured] sonnet pipeline vs base opus pipeline: n 16, base wrong 3, out wrong 5, fixed 2, broken 4, p 0.6875
+  reader spread [as measured] Sonnet B vs base Sonnet A: fixed 0, broken 2
+  reader spread [as measured] Opus r2 vs base Opus r1: fixed 1, broken 0
+  control [as measured] sonnet pipeline vs base folder recon (committed): fixed 2, broken 0, p 0.5000
+  paired [flagged excluded] opus pipeline vs base sonnet pipeline: n 16, base wrong 5, out wrong 3, fixed 4, broken 2, p 0.6875
+  paired [flagged excluded] sonnet pipeline vs base opus pipeline: n 16, base wrong 3, out wrong 5, fixed 2, broken 4, p 0.6875
+  reader spread [flagged excluded] Sonnet B vs base Sonnet A: fixed 0, broken 2
+  reader spread [flagged excluded] Opus r2 vs base Opus r1: fixed 1, broken 0
+  control [flagged excluded] sonnet pipeline vs base folder recon (committed): fixed 2, broken 0, p 0.5000
+== POOLED (dev_tune + dint-f128-print + ceppo-f36v-gloss; independent truths only)
+  opus pipeline    err_true 0.074 (33/444) [0.053-0.103] | flagged-excluded 0.064 (28/439) [0.044-0.091]
+  sonnet pipeline  err_true 0.090 (40/444) [0.067-0.120] | flagged-excluded 0.080 (35/439) [0.058-0.109]
+  pooled paired [as measured] opus pipeline vs the other: n 444, fixed 17, broken 11, two-sided sign test p 0.3449
+  pooled paired [as measured] sonnet pipeline vs the other: n 444, fixed 11, broken 17, two-sided sign test p 0.3449
+  pooled paired [flagged excluded] opus pipeline vs the other: n 439, fixed 17, broken 11, two-sided sign test p 0.3449
+  pooled paired [flagged excluded] sonnet pipeline vs the other: n 439, fixed 11, broken 17, two-sided sign test p 0.3449
