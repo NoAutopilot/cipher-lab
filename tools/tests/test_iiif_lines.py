@@ -12,6 +12,9 @@
    --band-extent keeps every box inside its band (0% cut, 0% admitted, box and ink rules, with and without
    --mask-neighbours); --overlap-note states the configured overlap (150 px, 5 signs of 30 px); the mask leaves no
    ghost rim of a removed neighbour stroke.
+9. TXE-N (9 Oct 2026): --shift-segments 0 gives segments() back; 0.5 puts every new cut in the middle of an old
+   segment with the same overlap and covers the line; --shift-bands 0.5 moves each band down half a pitch, keeps the
+   marked line's ink (mask rows own top .. next bottom), and draws the red marker at the line centre in a white margin.
 Run: python3 tools/tests/test_iiif_lines.py"""
 import contextlib, io, json, os, random, shutil, sys, tempfile
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -191,5 +194,46 @@ try:
     check(all(not e.get('source_file_downscaled') for e in man['iiif_lines']), 'manifest does not mark the tracked copy downscaled')
 finally:
     shutil.rmtree(tmp)
+# 9. TXE-N shifted crop set
+segs0 = il.segments(0, 2900, 1250, 150)
+check(il.shift_segments(0, 2900, 1250, 150, 0.0) == segs0, 'shift-segments 0 == segments()')
+ss = il.shift_segments(0, 2900, 1250, 150, 0.5)
+step = segs0[1][0] - segs0[0][0]; ov = segs0[0][1] - segs0[1][0]
+oldcuts = [(segs0[i][1] + segs0[i + 1][0]) / 2 for i in range(len(segs0) - 1)]
+newcuts = [(ss[i][1] + ss[i + 1][0]) / 2 for i in range(len(ss) - 1)]
+check(ss[0][0] == 0 and ss[-1][1] == 2900 and len(ss) == len(segs0) + 1, f'shift-segments 0.5 covers the line, one more segment ({ss})')
+check(all(abs(ss[i][1] - ss[i + 1][0] - ov) <= 1 for i in range(len(ss) - 1)), 'shift-segments keeps the overlap')
+check(all(min(abs(n - o) for o in oldcuts) >= step / 2 - 1 for n in newcuts), 'new cuts sit half a step from every old cut')
+check(all(e - s_ < 2500 for s_, e in ss), 'shifted segments under 2500 px')
+bb0 = [(0, 100, 1), (100, 200, 1), (200, 300, 1)]
+sb, mr = il.shift_bands(bb0, 0.5, 100, 400)
+check(sb == [(50, 150, 1), (150, 250, 1), (250, 350, 1)] and mr[0] == (0, 200) and mr[1] == (100, 300),
+      f'shift-bands 0.5 moves bands half a pitch; mask rows own top .. next bottom ({sb}, {mr})')
+tmp9 = tempfile.mkdtemp()
+try:
+    W9, P9 = 1800, 100
+    im9 = Image.new('L', (W9, 6 * P9), 235); d9 = ImageDraw.Draw(im9)
+    for li in range(5):
+        cy = 80 + li * P9
+        for x in range(40, W9 - 60, 70):
+            d9.rectangle([x, cy - 22 - (30 if (x // 70) % 4 == 0 else 0), x + 30, cy + 22], fill=20)
+    src9 = os.path.join(tmp9, 'p.png'); im9.save(src9)
+    out9 = os.path.join(tmp9, 'o')
+    r9 = run('--image', src9, '--out', out9, '--prefix', 'z', '--max-width', '800', '--centres', '80,180,280,380,480',
+             '--band-extent', '0.1', '--mask-neighbours', '--shift-bands', '0.5', '--shift-segments', '0.5', '--only-lines', '2',
+             '--overlap-note')
+    ent = [e for e in r9['entries'] if e['band'] == 2]
+    c1 = Image.open(os.path.join(out9, ent[0]['crop'])).convert('RGB')
+    my = ent[0]['marked']['line_centre_row']
+    px = c1.getpixel((20, my))
+    check(px[0] > 180 and px[1] < 60, f'red marker at the marked line centre (row {my}, {px})')
+    g = c1.convert('L'); arr = [g.getpixel((x, my)) for x in range(40, c1.width)]
+    check(sum(v < 100 for v in arr) > 0.3 * len(arr), 'marked line ink kept whole at the band edge')
+    tall = [g.getpixel((x, my - 45)) for x in range(40, c1.width)]
+    check(sum(v < 100 for v in tall) > 0, 'tall strokes of the marked line kept above the shifted band top')
+    note = open(os.path.join(out9, 'crops_note.md')).read()
+    check('red triangle' in note, 'crops note tells the reader which line to read')
+finally:
+    shutil.rmtree(tmp9)
 print('iiif_lines:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)

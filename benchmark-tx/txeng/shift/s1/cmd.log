@@ -1,0 +1,28 @@
+ciphers/nevers-birago-fr3251-1572/harvest/f178v/src_ark_12148_btv1b9060248g_f182_1703_848_2900_3452.jpg (local): region 2900x3452, 23 lines, 23 bands x 4 segments; pitch 137 distance 95 prominence 150.0
+  centres (region y): 191 321 473 609 731 895 1034 1171 1298 1452 1589 1715 1871 2010 2134 2273 2414 2545 2696 2816 2951 3086 3209
+  check-boxes f178v: 675 boxes, ink rule: cut 13 (1.9%), admitted to another band 646 (95.7%); band-extent 0.1, mask on (margin 54) -> benchmark-tx/txeng/shift/s1/band_check.tsv
+    (proxy box rule: cut 76 (11.3%), admitted to another band 529 (78.4%))
+    L01 (atlas line 1): 28 boxes, cut 0, admitted 28
+    L02 (atlas line 2): 28 boxes, cut 0, admitted 27
+    L03 (atlas line 3): 27 boxes, cut 0, admitted 29
+    L04 (atlas line 4): 29 boxes, cut 0, admitted 32
+    L05 (atlas line 5): 33 boxes, cut 1, admitted 31
+    L06 (atlas line 6): 30 boxes, cut 0, admitted 32
+    L07 (atlas line 7): 32 boxes, cut 0, admitted 33
+    L08 (atlas line 8): 32 boxes, cut 0, admitted 29
+    L09 (atlas line 9): 29 boxes, cut 0, admitted 32
+    L10 (atlas line 10): 32 boxes, cut 0, admitted 31
+    L11 (atlas line 11): 31 boxes, cut 0, admitted 33
+    L12 (atlas line 12): 33 boxes, cut 0, admitted 28
+    L13 (atlas line 13): 28 boxes, cut 0, admitted 27
+    L14 (atlas line 14): 27 boxes, cut 2, admitted 29
+    L15 (atlas line 15): 29 boxes, cut 0, admitted 30
+    L16 (atlas line 16): 30 boxes, cut 0, admitted 28
+    L17 (atlas line 17): 28 boxes, cut 5, admitted 27
+    L18 (atlas line 18): 27 boxes, cut 1, admitted 30
+    L19 (atlas line 19): 30 boxes, cut 2, admitted 28
+    L20 (atlas line 20): 28 boxes, cut 2, admitted 27
+    L21 (atlas line 21): 27 boxes, cut 0, admitted 28
+    L22 (atlas line 22): 28 boxes, cut 0, admitted 29
+  overlap note -> benchmark-tx/txeng/shift/s1/crops_note.md: segments of a line overlap by 426 native px (the images you read are at 2x, so 852 px in each image), about 6 signs (median sign width 66 px, from the atlas boxes); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 852 px of s1 and the first 852 px of s2 show the same ink, read it once. Each crop shows parts of two lines: transcribe ONLY the line marked by the red triangle in the white left margin (80 px wide in each image), along its full length; the other line is read from its own crop. The overlap above is measured after that margin.
+  wrote 48 crops and benchmark-tx/txeng/shift/s1/manifest.json

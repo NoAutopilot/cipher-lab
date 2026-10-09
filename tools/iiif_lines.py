@@ -319,7 +319,7 @@ def check_boxes(boxes, geoms, keep=0.5, masked=False):
     return [rows[k] for k in sorted(rows)], total, l2b
 
 
-def check_ink(gray, boxes, bb, centres, lines_per_crop, x0, x1, ink, mm, keep, masked, l2b, cut_below=0.9):
+def check_ink(gray, boxes, bb, centres, lines_per_crop, x0, x1, ink, mm, keep, masked, l2b, cut_below=0.9, mrows=None):
     """Ink rule for fixed (unsloped) bands: simulate each band's crop on the page pixels -- rows band +/- mm, and with
     masked the same component mask as mask_neighbours() -- and count, per box, the share of its ink pixels (darker than
     ink, whole page) that survive in a band's crop. Own band: CUT when under cut_below survive. Other band: ADMITTED
@@ -338,7 +338,8 @@ def check_ink(gray, boxes, bb, centres, lines_per_crop, x0, x1, ink, mm, keep, m
             lab, n = label_components(m)
             if n:
                 total = np.bincount(lab.ravel(), minlength=n + 1)
-                ins = np.bincount(lab[max(0, top - ct):max(0, bot - ct)].ravel(), minlength=n + 1)
+                mt, mb = mrows[bi - 1] if mrows else (top, bot)
+                ins = np.bincount(lab[max(0, mt - ct):max(0, mb - ct)].ravel(), minlength=n + 1)
                 drop = np.where((total > 0) & (ins < keep * total))[0]
                 drop = drop[drop > 0]
                 m[np.isin(lab, drop)] = False
@@ -428,6 +429,55 @@ def segments(x0, x1, max_width, overlap):
     n = int(np.ceil((w - overlap) / (max_width - overlap)))
     step = (w - max_width) / (n - 1)
     return [(x0 + int(round(i * step)), x0 + int(round(i * step)) + max_width) for i in range(n)]
+
+
+def shift_segments(x0, x1, max_width, overlap, frac):
+    """--shift-segments FRAC (TXE-N, 9 Oct 2026): the segment cut points (the middles of the overlaps of segments())
+    moved right by FRAC x the segment step, the segments rebuilt around them with the same overlap, a shorter edge
+    segment added where needed. FRAC 0 gives segments() back; 0.5 puts every new cut at the middle of an old segment,
+    so a sign at an old segment edge is central in a new one."""
+    base = segments(x0, x1, max_width, overlap)
+    if len(base) < 2:
+        return base
+    step = base[1][0] - base[0][0]
+    ov = base[0][1] - base[1][0]
+    cut0 = (base[0][1] + base[1][0]) / 2 - step + (frac % 1.0) * step
+    cuts, c = [], cut0
+    while c < x1:
+        if c > x0 + ov / 2 and c < x1 - ov / 2:
+            cuts.append(c)
+        c += step
+    edges = [x0] + cuts + [x1]
+    out = []
+    for i in range(len(edges) - 1):
+        a = x0 if i == 0 else int(round(edges[i] - ov / 2))
+        b = x1 if i == len(edges) - 2 else int(round(edges[i + 1] + ov / 2))
+        out.append((a, b))
+    return out
+
+
+def shift_bands(bb, frac, pitch, height):
+    """--shift-bands FRAC (TXE-N): every band moved down by FRAC x pitch (clamped to the region). Returns (shifted
+    bands, mask rows): with --mask-neighbours a shifted crop keeps the components of its own line and of the next one
+    whole (mask rows = own band top .. next band bottom), so the marked line is never masked away at the band edge."""
+    s = int(round(frac * pitch))
+    out, mrows = [], []
+    for i, (top, bot, nl) in enumerate(bb):
+        out.append((min(height, top + s), min(height, bot + s), nl))
+        nb = bb[i + 1][1] if i + 1 < len(bb) else min(height, bot + s)
+        mrows.append((top, max(nb, min(height, bot + s))))
+    return out, mrows
+
+
+def mark_crop(crop, y, pad=40):
+    """A white left margin of pad px with a red triangle pointing at row y: the line the reader transcribes (TXE-N)."""
+    c = crop.convert('RGB')
+    out = Image.new('RGB', (c.width + pad, c.height), (255, 255, 255))
+    out.paste(c, (pad, 0))
+    d = ImageDraw.Draw(out)
+    h = max(6, pad // 3)
+    d.polygon([(4, y - h), (pad - 6, y), (4, y + h)], fill=(220, 0, 0))
+    return out
 
 
 def track_line(gray, centre, pitch, x0, x1, win, ink, smooth=5):
@@ -822,6 +872,14 @@ def main(argv=None):
     ap.add_argument('--note-scale', type=float, default=1.0,
                     help='with --overlap-note: the scale the reader sees the crops at (2 when they are upscaled 2x, as '
                          'harvest/make_2x.py does), so the note gives pixels in the reader\'s images')
+    ap.add_argument('--shift-bands', type=float, metavar='FRAC',
+                    help='move every band down by FRAC x pitch (0.5: bands centred on the gaps), keep the own line and '
+                         'the next one whole under --mask-neighbours, and mark the own line with a red triangle in a '
+                         'white left margin: a second crop set where each sign sits at a band edge instead of the '
+                         'centre (TXE-N, M20, 9 Oct 2026)')
+    ap.add_argument('--shift-segments', type=float, metavar='FRAC',
+                    help='move every segment cut point right by FRAC x the segment step (0.5: new cuts at the middles '
+                         'of the old segments), adding a shorter edge segment (TXE-N)')
     ap.add_argument('--only-lines', help='comma list of band numbers to write crops for (default: all)')
     ap.add_argument('--centres', help='comma list of line centres (region y px) given by eye, skipping detection: for a '
                                       'short block whose ink profile the autocorrelation misreads (GAPS4-nevers-birago, 2 Oct 2026: '
@@ -878,7 +936,14 @@ def main(argv=None):
         bb = [(max(0, top - a.top_margin), bot, nl) for top, bot, nl in bb]
     if a.bottom_margin:
         bb = [(top, min(im.height, bot + a.bottom_margin), nl) for top, bot, nl in bb]
-    segs = segments(x0, x1, a.max_width, a.overlap)
+    mrows = None
+    if a.shift_bands:
+        if a.deskew or a.follow_slope:
+            ap.error('--shift-bands is for fixed bands (not --deskew / --follow-slope)')
+        pitch0 = int(np.median(np.diff(centres))) if len(centres) > 1 else 100
+        bb, mrows = shift_bands(bb, a.shift_bands, pitch0, im.height)
+    segs = (shift_segments(x0, x1, a.max_width, a.overlap, a.shift_segments) if a.shift_segments
+            else segments(x0, x1, a.max_width, a.overlap))
     print(f'{src} ({how}): region {im.width}x{im.height}, {len(centres)} lines, {len(bb)} bands x {len(segs)} segments; '
           f"pitch {params['pitch_autocorr']} distance {params['distance']} prominence {params['prominence']}")
     print('  centres (region y): ' + ' '.join(map(str, centres)))
@@ -919,7 +984,7 @@ def main(argv=None):
         rule = 'box'
         if not slope_win:
             rows, total = check_ink(gray, boxes, bb, centres, a.lines_per_crop, x0, x1, a.ink, mm, a.mask_keep,
-                                    a.mask_neighbours, l2b)
+                                    a.mask_neighbours, l2b, mrows=mrows)
             rule = 'ink'
         bc = write_band_check(a.out, prefix, rows, total, f'{ext};rule={rule}', a.mask_neighbours)
         print(f"  check-boxes {page}: {total['boxes']} boxes, {rule} rule: cut {total['cut']} "
@@ -937,6 +1002,11 @@ def main(argv=None):
         if sign_w is None:
             sign_w, src_w = ink_run_width(gray, bb, x0, x1, a.ink), 'ink-run median'
         sent, ov = overlap_sentence(segs, sign_w, src_w, a.note_scale)
+        if a.shift_bands:
+            mp_ = int(round(40 * a.note_scale))
+            sent += (f' Each crop shows parts of two lines: transcribe ONLY the line marked by the red triangle in the '
+                     f'white left margin ({mp_} px wide in each image), along its full length; the other line is read '
+                     f'from its own crop. The overlap above is measured after that margin.')
         np_ = write_note(a.out, prefix, sent)
         print(f'  overlap note -> {np_}: {sent}')
     if a.dry_run or a.check_only:
@@ -974,10 +1044,20 @@ def main(argv=None):
                 crop, box = rgb.crop((sx0, ct, sx1, cb)), [rx + sx0, ry + ct, rx + sx1, ry + cb]
                 method = 'tools/iiif_lines.py row ink profile'
                 band_rows = (top - ct, bot - ct)
+            if a.mask_neighbours and mrows and not slope_win:
+                band_rows = (mrows[bi - 1][0] - ct, mrows[bi - 1][1] - ct)
             if a.mask_neighbours:
                 crop, ndrop, nkeep = mask_neighbours(crop, band_rows[0], band_rows[1], a.ink, a.mask_keep)
                 extra['mask'] = dict(margin=mm, keep=a.mask_keep, band_rows=list(band_rows), removed=ndrop, kept=nkeep)
                 method += f', --mask-neighbours (margin {mm})'
+            if a.shift_bands:
+                c = centres[(bi - 1) * a.lines_per_crop:(bi - 1) * a.lines_per_crop + nl]
+                my = int(round(sum(c) / len(c))) - ct
+                crop = mark_crop(crop, my)
+                extra['marked'] = dict(line_centre_row=my, margin_px=40, shift_bands=a.shift_bands,
+                                       note='crop x = source x - box[0] + 40 (white margin with the marker)')
+            if a.shift_segments:
+                extra['shift_segments'] = a.shift_segments
             crop.convert('RGB').save(os.path.join(a.out, name), quality=a.quality)
             e = dict(crop=name, source_url=url, source_file=os.path.basename(src), box=box, lines_in_crop=nl, band=bi,
                      segment=si, method=method, params=params, date=date)
