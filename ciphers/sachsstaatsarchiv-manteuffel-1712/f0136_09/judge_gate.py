@@ -18,10 +18,9 @@ def spans():
             s.update(r["tokids"].split())
     return s
 def toks_target():
-    glossed = spans(); out = []
-    for r in csv.DictReader((l for l in open(F / "ciphertext.tsv") if not l.startswith("#")), delimiter="\t"):
-        out += [t for i, t in enumerate(r["settled"].split()) if f"{r['line']}.{i}" not in glossed and t != "|"]
-    return [t.strip("?") for t in out]
+    glossed = spans()
+    return [r["sign"] for r in csv.DictReader((l for l in open(F / "ciphertext.tsv") if not l.startswith("#")), delimiter="\t")
+            if f"{r['line']}.{r['pos']}" not in glossed]
 def toks_power():
     out = []
     for r in csv.DictReader(open(D / "f0085_09/reconciled.tsv"), delimiter="\t"):

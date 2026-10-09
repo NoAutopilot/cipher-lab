@@ -1,0 +1,12 @@
+crop	line	anchor	tokens	notes
+f0136_L03	2	de	44.16.12.8.33.5.35.42	"44" first group could be 49?; "12" could be 17 (written like "vz"); 42 could be 43
+f0136_L07	1	mains	39.12.7	"12" written like "vz", alt 17; "39" alt 34
+f0136_L09	2	que	257	single isolated number; 7 could be 2 alt 257 vs 252
+f0136_L10	1	à	170.97.44.39.5.22.21.9.10	"97" alt 91; "39" alt 34; "9" before 10 alt 4; 170 could be 120
+f0136_L11	1	avec	150	single; alt 130
+f0136_L12	1	que	177.21.66.5.16.9.28.17.44	"177" alt 172/177; "16" alt 18; "17" alt 12; final "44" alt 41
+f0136_L12	2	(continues line 1; no word between)	6.51.79.34.22.66.28.35.50.15.27.66.46.14.120.26.20.170.30	"6" begins line 2, continuing previous run; "35" alt 33; "66" alt 60; "15" alt 18; "46" alt 40; "120" alt 170; "20" alt 10; last "30" partly cut at edge
+f0136_L13	1	(start of line, none; run continues from previous crop)	16.31.13.35.55.9.2.21.100.50.67.59.27.229	first token "16" alt 18 (partly cut); "55" alt 53; "67" alt 61; "229" may be "29" overwritten with a stroke over the 2 (alt 29)
+f0136_L13	2	rapport	50.15.10.17.6.29.14	"15" alt 18; "10" alt 16; "17" alt 12; "6" is bold/blotted
+f0136_L14	1	(start of line, none; run continues from previous crop)	30.25	"25" alt 15/26; followed by comma
+f0136_L16	2	à	39	single; followed by colon; alt 34 [worker: this is the right-page token, f0136R_L01; L16 carries 'a.12' which the pass missed]
