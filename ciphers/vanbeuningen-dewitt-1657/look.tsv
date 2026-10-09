@@ -8,3 +8,4 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			NL-HaNA_3.01.17_1538_0209.jpg	manifest	owed
 2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			NL-HaNA_3.01.17_1538_0210.jpg	manifest	owed
 2026-10-09 08:36	adhoc-598099	adhoc-598099:2-leaf:92f34d	unit			NL-HaNA_3.01.17_1538_0211.jpg	manifest	owed
+2026-10-09 23:24	adhoc-64d9a9	adhoc-64d9a9:2-leaf:3ca102	unit			no folio, canvas or pointer in items.tsv: name the leaf to narrow the look	none	owed
