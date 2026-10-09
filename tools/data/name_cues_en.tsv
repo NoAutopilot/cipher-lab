@@ -1,0 +1,57 @@
+# name_cues_en.tsv (MQS-NAMES, 9 Oct 2026). Source: standard English kinship, possessive, title/military rank and preposition vocabulary (general grammar and army-rank terms, complete classes, not selected from any control); corpus_count = occurrences in tools/data/en18.
+# Columns: cue (lower case; space = word sequence), class (kin|poss|title|gender|place|person), value (kin: relation/gender; poss: whose; title: rank class; place/person: frame), weight, corpus_count.
+# Frozen before any control was scored; sha256 in tools/tests/PREREG-MQS-NAMES.md.
+cue	class	value	weight	corpus_count
+brother	kin	sibling/m	1	36
+sister	kin	sibling/f	1	18
+brother in law	kin	sibling_in_law/m	1	0
+sister in law	kin	sibling_in_law/f	1	1
+son	kin	child/m	1	121
+daughter	kin	child/f	1	15
+father	kin	parent/m	1	40
+mother	kin	parent/f	1	44
+cousin	kin	cousin/m	1	1
+uncle	kin	uncle_aunt/m	1	3
+aunt	kin	uncle_aunt/f	1	1
+nephew	kin	nephew_niece/m	1	6
+niece	kin	nephew_niece/f	1	0
+husband	kin	spouse/m	1	14
+wife	kin	spouse/f	1	14
+my	poss	sender	1	3532
+your	poss	recipient	1	2788
+king	title	king	1	154
+queen	title	queen	1	4
+emperor	title	emperor	1	150
+duke	title	duke	1	32
+prince	title	prince	1	45
+count	title	count	0.5	98
+general	title	general	1	1237
+gen	title	general	1	133
+major	title	major	1	34
+colonel	title	colonel	1	109
+col	title	colonel	1	88
+captain	title	captain	1	88
+admiral	title	admiral	1	26
+commodore	title	admiral	1	21
+president	title	president	1	748
+secretary	title	secretary	1	493
+governor	title	governor	1	190
+ambassador	title	ambassador	1	15
+minister	title	minister	1	401
+bishop	title	bishop	1	13
+lord	title	lord	1	122
+he	gender	m	0.5	3718
+she	gender	f	0.5	771
+at	place	place	1	4861
+to	place	place	0.5	40312
+from	place	place	0.5	6198
+near	place	place	1	150
+toward	place	place	1	55
+towards	place	place	1	369
+in	place	place	0.5	21237
+into	place	place	1	1467
+via	place	place	1	6
+by	person	person	0.5	9083
+with	person	person	0.5	8572
+mr	person	person	1	2556
+mrs	person	person	1	168

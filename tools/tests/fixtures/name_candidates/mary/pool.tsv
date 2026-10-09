@@ -1,0 +1,9 @@
+id	label	aliases	type	relations	titles	born	died	offices	gender	source
+fx:francis2	Francis II of France	François II	person	sender:spouse	king	1544-01-19	1560-12-05	King of France@1559-07-10/1560-12-05	m	fixture: paper p.103
+fx:charles9	Charles IX of France	Charles IX	person	sender:sibling_in_law	king	1550-06-27	1574-05-30	King of France@1560-12-05/1574-05-30	m	fixture: paper p.103
+fx:henry3	Henry III of France	Henri III	person	sender:sibling_in_law	king	1551-09-19	1589-08-02	King of France@1574-05-30/1589-08-02	m	fixture: paper p.103
+fx:anjou	Francis, Duke of Anjou	François d'Anjou|Monsieur	person	sender:sibling_in_law	duke	1555-03-18	1584-06-10	Duke of Anjou@1576-05-06/1584-06-10	m	fixture: paper p.103
+fx:elizabeth	Elizabeth I of England	Elizabeth	person		queen	1533-09-07	1603-03-24	Queen of England@1558-11-17/1603-03-24	f	fixture
+fx:james6	James VI of Scotland	Jacques	person	sender:child	king	1566-06-19	1625-03-27	King of Scots@1567-07-24/1625-03-27	m	fixture
+fx:london	London	Londres	place							fixture
+fx:paris	Paris		place							fixture

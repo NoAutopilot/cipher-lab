@@ -1,0 +1,91 @@
+# name_cues_fr.tsv (MQS-NAMES, 9 Oct 2026). Source: standard French kinship, possessive, title/office, agreement and preposition vocabulary of the 16th-17th century (general grammar terms, typed as complete classes, not selected from any control); corpus_count = occurrences as a word sequence in tools/data/fr16 (Lettres de Catherine de Medicis I-II + Marguerite, djvu OCR).
+# Columns: cue (lower case; space = word sequence), class (kin|poss|title|gender|place|person), value (kin: relation/gender; poss: whose; title: rank class; place/person: frame), weight, corpus_count.
+# Frozen before any control was scored; sha256 in tools/tests/PREREG-MQS-NAMES.md.
+cue	class	value	weight	corpus_count
+frere	kin	sibling/m	1	1
+sœur	kin	sibling/f	1	107
+soeur	kin	sibling/f	1	4
+beau frere	kin	sibling_in_law/m	1	0
+beau frère	kin	sibling_in_law/m	1	10
+belle sœur	kin	sibling_in_law/f	1	2
+belle soeur	kin	sibling_in_law/f	1	0
+frère	kin	sibling/m	1	773
+fils	kin	child/m	1	741
+fille	kin	child/f	1	520
+père	kin	parent/m	1	261
+pere	kin	parent/m	1	1
+mère	kin	parent/f	1	397
+mere	kin	parent/f	1	0
+cousin	kin	cousin/m	1	1624
+cousine	kin	cousin/f	1	511
+oncle	kin	uncle_aunt/m	1	98
+tante	kin	uncle_aunt/f	1	21
+neveu	kin	nephew_niece/m	1	30
+niepce	kin	nephew_niece/f	1	2
+nièce	kin	nephew_niece/f	1	35
+mary	kin	spouse/m	1	38
+mari	kin	spouse/m	1	148
+espouse	kin	spouse/f	1	1
+gendre	kin	child_in_law/m	1	17
+beau pere	kin	parent_in_law/m	1	0
+beau père	kin	parent_in_law/m	1	6
+belle mere	kin	parent_in_law/f	1	0
+belle mère	kin	parent_in_law/f	1	8
+mon	poss	sender	1	4881
+ma	poss	sender	1	1439
+mes	poss	sender	1	667
+votre	poss	recipient	1	258
+vostre	poss	recipient	1	1928
+vos	poss	recipient	1	308
+voz	poss	recipient	1	289
+roy	title	king	1	2702
+roi	title	king	1	1447
+royne	title	queen	1	451
+reine	title	queen	1	1007
+empereur	title	emperor	1	318
+duc	title	duke	1	1484
+duchesse	title	duke	1	422
+conte	title	count	1	111
+comte	title	count	1	355
+prince	title	prince	1	657
+princesse	title	prince	1	114
+electeur	title	elector	1	2
+électeur	title	elector	1	14
+landgrave	title	landgrave	1	0
+marquis	title	marquis	1	82
+palatin	title	palatine	1	13
+evesque	title	bishop	1	2
+évesque	title	bishop	1	92
+eveque	title	bishop	1	0
+archevesque	title	bishop	1	6
+cardinal	title	cardinal	1	914
+pape	title	pope	1	278
+admiral	title	admiral	1	1
+amiral	title	admiral	1	175
+ambassadeur	title	ambassador	1	571
+chancelier	title	chancellor	1	53
+gouverneur	title	governor	1	83
+baron	title	baron	1	71
+connestable	title	constable	1	46
+ledict	gender	m	1	326
+ledit	gender	m	1	44
+le dict	gender	m	1	119
+ladicte	gender	f	1	288
+ladite	gender	f	1	31
+la dicte	gender	f	1	129
+en	place	place	1	15074
+vers	place	place	1	153
+dans	place	place	1	1993
+dedans	place	place	1	182
+jusques	place	place	1	350
+jusqu	place	place	1	144
+à	place	place	0.5	16556
+a	place	place	0.3	8569
+monsieur	person	person	1	3566
+monsr	person	person	1	26
+monseigneur	person	person	1	173
+sieur	person	person	1	1224
+sr	person	person	0.5	174
+madame	person	person	1	588
+envers	person	person	0.5	190
+avec	person	person	0.5	1938
