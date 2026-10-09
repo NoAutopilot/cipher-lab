@@ -1,0 +1,45 @@
+pass A: 22 gloss-bearing code tokens; witness codes on disk: 140
+  9 [letter]: cuc0282:abime britton; cuc0284:deuoir iaunfier; cuc0323:alliance deffensiue stetin traitte; cuc0348:ministre secretaire; cuc0398:ialousie polonois; cuc0410:konigmarck; f0008_09:accommodement agir aucun offici oreille pacifier pologne preter sinon ueut; f0056_09:futur maitre; f0089_08:miz; f0136_09:eaendautrs earendautes onmehiendautres; f0474_08:ennemi notre religion roial
+  68 [letter]: f0008_09:auec conuenu pologne roi; f0136_08:marquaue
+  106 [unkeyed]: (no witness elsewhere)
+  155 [keyed-word]: (no witness elsewhere)
+  160 [keyed-word]: cuc0348:uous; cuc0499:treue; f0008_09:auec conuenu pologne roi; f0136_08:flin maget mant mirt
+  240 [keyed-word]: (no witness elsewhere)
+  257 [keyed-word]: cuc0323:-; f0312_08:conste pruffe roi; f0314_08:ler pru pruffe roi
+  281 [unkeyed]: (no witness elsewhere)
+  333 [unkeyed]: (no witness elsewhere)
+  447 [unkeyed]: (no witness elsewhere)
+  451 [letter]: (no witness elsewhere)
+  563 [unkeyed]: (no witness elsewhere)
+  583 [unkeyed]: f0494_08:court mente moins ont
+  635 [unkeyed]: (no witness elsewhere)
+  642 [unkeyed]: (no witness elsewhere)
+  674 [unkeyed]: (no witness elsewhere)
+class	N_tokens	K_with_witness	S	ctrl_mean	ctrl_p99	ctrl_min	ctrl_max	ctrl>=real	verdict
+letter	3	2	0	0.09	1	0	1	1000/1000	untestable (K<5)
+keyed-word	9	6	4	0.81	3	0	3	0/1000	PASS
+unkeyed	10	1	0	0.00	0	0	0	1000/1000	non-test (control cannot move)
+pooled	22	9	4	0.91	3	0	3	0/1000	FAIL
+per token (code class gloss -> consistent?):
+  160	keyed-word	mont	witness	0
+  642	unkeyed	Reve aux guerriers du nord	no-witness	0
+  447	unkeyed	Reve aux guerriers du nord	no-witness	0
+  635	unkeyed	Reve aux guerriers du nord	no-witness	0
+  155	keyed-word	Reve aux guerriers du nord	no-witness	0
+  674	unkeyed	Reve aux guerriers du nord	no-witness	0
+  333	unkeyed	Reve aux guerriers du nord	no-witness	0
+  281	unkeyed	Reve aux guerriers du nord	no-witness	0
+  563	unkeyed	Reve aux guerriers du nord	no-witness	0
+  281	unkeyed	Reve aux guerriers du nord	no-witness	0
+  583	unkeyed	Reve aux guerriers du nord	witness	0
+  240	keyed-word	Reve aux guerriers du nord	no-witness	0
+  451	letter	Reve aux guerriers du nord	no-witness	0
+  106	unkeyed	Reve aux guerriers du nord	no-witness	0
+  68	letter	Reve aux guerriers du nord	witness	0
+  9	letter	Nyen	witness	0
+  160	keyed-word	mant n°a	witness	1
+  257	keyed-word	Roy de Prusse	witness	1
+  160	keyed-word	Manteuffel	witness	1
+  155	keyed-word	item	no-witness	0
+  257	keyed-word	S.M.la	witness	0
+  160	keyed-word	mant	witness	1

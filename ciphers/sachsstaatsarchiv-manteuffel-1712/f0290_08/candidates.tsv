@@ -1,6 +1,7 @@
 # MANT-UNG (9 Oct 2026): codes on 694/08 0290 (17 Sept 1712) under the leaf's interlinear notes. Gloss gate (a) FAILed on both blind passes
 # (letter statistic, a lower bound for word/syllable codes), so NOTHING here is above M and nothing enters key.tsv. Slots are the blind passes'
 # note text by position (pass A | pass B), never settled by the worker. status: held = position-only witness; conflict = keyed code whose slot reads otherwise.
+# MANT-0290W (9 Oct 2026): cross-leaf word gate (PREREG-MANT0290W.md) -- unkeyed 281-674 untestable on disk (only 583 witnessed elsewhere, on 0494, no shared word); nothing here moves above M.
 code	run	slot_passA	slot_passB	status	note
 257	r02	(no note read)	a Roy de Prusse	agrees	key 'Le roi de Prusse'; also r08 'Roy de Prusse' (A,B), r13 'S.M.la'|'I.M.sa'
 311 515 485 492 281	r02	(no note read)	fera moyoller une	held	phrase 'fera proposer une' by the worker's eye (not scored); 515 key e (M), 281 recurs in r03

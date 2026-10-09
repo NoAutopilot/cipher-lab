@@ -323,3 +323,10 @@ PREREG-MANTCUC.md (4c5930db8, pushed before scoring); scorer mant0608/cuc/cuc_sc
 | 63 | null (M) | 0474 T032 'galere' a (M->F, Nov 1712); 0008 G05 'offici' ff (M->F, Jan 1713) | 0474's second digit is crossed by gloss ink, not a legible 3; 66 = a fits | 0474 withdrawn; 0008 single instance stands, unsettled; key unchanged |
 | 54 | u (C -> **M**) | u: Krauske; 0474 T052/T103/T107; 0494 T063, T151; 0008 G04, G10. t: 0494 T149 ('touchant', eye 54), T035 ('Détaché'); 0007 G01; 0008 G01; 0056 G06 -- all M->F, Nov 1712 - Jan 1713 | same direction and dates for both values, same word on 0494; 0494 T134 is a 59 misread (eye), not a witness | data conflict, not settled by count; key.tsv grade lowered C -> M (V-MANTC) |
 | 84 | sch (C) | 0089 T020 at the tail of the run glossed 'Keuk?' (blind pass; worker eye 'Kreutz'; Acta Borussica BO I p.208 names Creutz for the 31 May 1712 dispatch) (M->F, 31 May 1712) | second glyph y-tailed (4|9 open), so 84 itself is low; sch vs tz both plausible as a name ending | logged by MANT-0089 (9 Oct 2026), single instance, key unchanged |
+
+## MANT-0290W (9 Oct 2026, LANE FAMILY-A2k account 2): word/syllable codes 281-674 on 694/08 0290, cross-leaf note consistency (PREREG-MANT0290W.md)
+
+| hypothesis | control | target | verdict |
+|---|---|---|---|
+| 0290's unkeyed codes carry the same note on other leaves | notes shuffled over tokens, 1000 draws, seed 2900: p99 0, min = max = 0 | K 1 (583 only; 0494, no shared word), S 0, both passes | untestable on disk (K<5), non-test (control cannot move) -- not refuted |
+| method check: keyed names on 0290 match their notes elsewhere | p99 3 (A) / 5 (B) | 4/6 (A), 6/7 (B) | PASS (known-answer only) |
