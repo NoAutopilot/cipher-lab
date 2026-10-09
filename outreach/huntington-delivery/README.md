@@ -22,7 +22,7 @@ Regenerate (offline; `item-meta.tsv` holds the few per-item values the folders s
       --select-class N3,N4 --select-min-audits 2 --select-scope completed-reading,recovered-passages \
       --select-folder eckert-1864,huntington-blathwayt-madrid-1728
 
-Drift at build time (selection re-run on status.json at origin/main d2ee84932, 9 Oct 2026 00:18 UTC): E96 (mssEC 19 p.222, pointer 9116) is now
+Drift at build time (selection re-run on status.json at origin/main 124430116, 9 Oct 2026 00:23 UTC): E96 (mssEC 19 p.222, pointer 9116) is now
 N2 (AUD3-E96: Horan, Confederate Agent (1954) p.226 prints the Hamilton report); it is still on the list, so it is in
 the file with its current class, N2, and Horan cited under "partly in print?". The reply draft's counts (69 telegrams,
 N3/N4) predate this; the gate-7 check should decide whether E96 stays in the file and in the reply's count.

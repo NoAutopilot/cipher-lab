@@ -115,8 +115,8 @@ NOTE_PREFIXES = ("plain:", "variant:", "split:", "plain-at:", "gloss:", "join:",
 NEG_RE = re.compile(r"\b(no prior|not located|not found|neither|unprinted|not printed|nothing|unread|not in the)\b", re.I)
 PRINT_RE = re.compile(r"\bprints\b|\bin print\b|\bprinted\b(?!\s+(?:correspondence|papers|editions?|volumes?|works|"
                       r"sources|text|accounts?|prints?)\b)", re.I)
-JARGON_RE = re.compile(r"\bAUD|\baudit|\bN[0-5]\b|code clause|\bheld\b|\bweak|\b(?:LS|FM|V1|G3|PROP|FIX)-?[A-Z0-9]|"
-                       r"be-api|snippet|decoded|verifier|grade [A-Z]\b", re.I)
+JARGON_RE = re.compile(r"(?-i:\b(?:AUD\w*|LS\d*|FM|V1|G3|PROP|FIX|SO)-[A-Z0-9])|\baudit|\bN[0-5]\b|code clause|"
+                       r"\bheld\b|\bweak|be-api|snippet|decoded|verifier|grade [A-Z]\b", re.I)
 CITE_RE = re.compile(r"\bp\.\s?\d|\bpp\.\s?\d|\b1[5-9]\d\d\b|\bORN?\b|Official Records")
 ABBR = {"ser", "vol", "vols", "pt", "p", "pp", "no", "nos", "st", "gen", "col", "capt", "lt", "maj", "mr", "dr", "u", "s",
         "jr", "ed", "eds", "cf", "corr", "rec", "i", "ii", "iii", "iv", "v", "a", "b", "c", "d", "e", "f", "g", "h", "j",

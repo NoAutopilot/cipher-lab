@@ -191,6 +191,18 @@ class TestHolderExport(unittest.TestCase):
         self.assertEqual(dn["partly in print?"], "")
         self.assertTrue(dn["reading"].startswith("Note: lines 1-2 only -- "))
 
+    def test_print_clauses(self):
+        rec = {"line": "No prior decipherment or printed text located in Butler's printed correspondence (vols. III-V); "
+                       "its reply is printed in OR I/2 p.3",
+               "depth_check": "re-derivation (LS-V5); external: Biggs's printed replies (OR I/35 pt 2 pp.37-38, the "
+                              "Montauk and two other propellers) answer it",
+               "gap": "second audit AUD2-LS-A held N3 (OR I/33 read through, printed accounts)"}
+        out = he.print_clauses(rec)
+        self.assertIn("its reply is printed in OR I/2 p.3.", out)
+        self.assertIn("(OR I/35 pt 2 pp.37-38, the Montauk and two other propellers)", out)  # no cut inside (), no
+        self.assertNotIn("printed correspondence", out)                                        # 'PROP' false hit
+        self.assertNotIn("AUD2", out)
+
     def test_sentences_keep_abbreviations(self):
         s = he.sentences("not located in OR ser. I vol. 34 pt 4 (searched 7 Oct 2026); its reply is printed. Next one")
         self.assertEqual(s[0], "not located in OR ser. I vol. 34 pt 4 (searched 7 Oct 2026)")
