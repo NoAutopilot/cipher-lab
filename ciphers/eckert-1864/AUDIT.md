@@ -8493,3 +8493,99 @@ the unfiled second entry on 5812 is N1 if ever filed (OR I/42 pt 3 p. 739). stat
 safe lines and gaps updated; E263 grade "N3 (weak)". SO rows E260/E262/E263 already queued; their prompts updated (E263: the p. 739 companion; E260, E262: the windows read).
 Requests: hdl.huntington.org 26; archive.org 4 (3 djvu, 1 metadata) + advancedsearch 2 + be-api 4; scholarsjunction.msstate.edu 8 (listing,
 2 volume-page URLs, PDF by curl 1, browser tool 2, browser context 2: all PDF attempts 403); loc.gov 2; Google Books 0. Time 05:09-05:39 UTC.
+
+## AUDIT 2 (AUD2-LEDGER-15)
+
+Second verifier AUD2-LEDGER-15 (account 4, for the account-4 orchestrator), 9 Oct 2026, 05:37-05:47 UTC by `date -u`; a separate session
+and account from the reader FM-R4a and the first auditor FV-FM7a (both account 1). Scope: **E251, E252, E253, E256 (17 June part), E258**
+(E256's 16 June part is N1 on clear copy 4717, not re-audited). Nothing decoded: `decode.py --check` exit 0 at 05:38 ("reading.md is
+current"); reading.md read against FV-FM7a section 4. Key source: `period`. Script and output: `fortmonroe/aud2_ledger15_print.py` + `.out`
+(volume texts fetched to scratch, title page checked per volume, not committed).
+
+### Prior-work
+- `prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;canvas=<5816|5781|5789|5752|5781>;date=...;sender=...;recipient=...'
+  --step-type second-audit --offline` (05:3x UTC), one per entry: exit 4 for all five, the shared LEAD being LANE LEDGER's incarnation-4
+  target-level claim of 03:42 (its done line 04:55 in ROOM.md; it does not cover a second audit): CLEAR. For Foster/26 Aug the
+  4-editions LEAD is `warofrebellion352unit` = Foster's letter of 26 Aug, OR I/35 pt 2 pp.258-259, already read by FV-FM7a and re-read
+  here (section below). 3-tomokiyo, 3-solver (cached) CLEAR; unsolved-ciphers UNCHECKED-NET (not cloned).
+- Holder full text: FV-FM7a's 15 CONTENTdm all-pointer queries stand; not repeated (no hdl requests this session).
+
+### Print: the decisive finding
+**The cached `sources/ia-fulltext/print-check/warofrebellion431unit_djvu.txt.gz` is OR ser. I vol. XLVII pt 2 (Jan-Mar 1865), not vol.
+XLIII pt 1** (title page read here; already noted in NOTES.md in the E30-E64 rows, "`431unit` is I/47 pt 2"). FV-FM7a section 3 lists
+"43-1/2" among the cached texts it grepped, and FM-R4a's print check (`fm_r4a_printcheck.out`, F10 "steamer Fulton") searched
+`warofrebellion431unit`: the real I/43 pt 1 (Aug-Sept 1864, Washington and the Valley) was never searched for these two entries. I
+fetched the real volume (`warofrebellion014301rootrich`, title page "SERIES I -- VOLUME XLIII -- IN TWO PARTS. PART I"):
+- **E258 is printed, OR I/43 pt 1 p.919** (index "Foster, John G. Correspondence with Henry W. Halleck 919"; "Fulton, Steamer. Mentioned
+  919"): "HILTON HEAD, August 26, 1864. (Via Fort Monroe 4 p. m. 28th. Received 11.20 p. m. 28th.) Major-General HALLECK, Chief of Staff:
+  On the steamer Fulton I send the One hundred and fourth Pennsylvania Volunteers, 900 men, to Washington to report to you. The
+  commanding officer has orders to report by telegraph from Fort Monroe, and then, unless otherwise ordered, to proceed to Alexandria
+  and march thence to Washington. Very respectfully, your obedient servant, J. G. FOSTER, Major-General." Indorsement, Headquarters of
+  the Army, 29 Aug: "On its arrival this regiment will report to Major-General Augur for assignment to duty in the defenses." Same
+  sender, recipient, dates and the same "via Fort Monroe 4 p.m. 28th" as the ledger. Our reading differs only by "General," at the head
+  and "proceed **direct** to Alexandria" (the ledger's words; the print omits "direct").
+- **E252 is printed, OR I/43 pt 1 p.944** (index "Hart, Thompson D. Correspondence with Henry W. Halleck 944"): "FORT MONROE, VA., August
+  28, 1864 -- [hour garbled in the OCR] p. m. (Received 11.25 p. m.) Maj. Gen. H. W. HALLECK: I have the honor to report the arrival of
+  the One hundred and fourth Regiment Pennsylvania Volunteers at this post, from Hilton Head. T. D. HART, Lieutenant-Colonel,
+  Commanding." Word for word with our reading except "post" (our "port", the ledger's word).
+- **E256 (17 June):** OR I/40 pt 1 (`warofrebellion401unit`) read page by page over Dana's 16-18 June dispatches (pp.20-24) and I/40 pt 2
+  (`402unit`) over its 16-17 June section and its Eckert index entries (pp.20, 372, 378, 405-406: Caldwell, Bickford, Macintosh, none
+  this text): **not located**. New context: Dana to Stanton, City Point, 18 June 1864, 8 a.m. (I/40 pt 1 p.24): "Everything is across
+  the river at Powhatan. The bridge was taken up at 3 a.m. to-day" -- the boat captain's "probably by this time taken up" of 17 June 1 p.m.
+  was early by about 14 hours. "Dealy" 0 in both parts.
+- **E253:** Plum, *Military Telegraph* II pp.34-35 re-read: after the deaths of McGaughey, Waterhouse and Douglas Kent, "In response to
+  repeated requests for men to take the places of these 'discharged' ones, Mr. Gilmore was ordered by Major Eckert to close the lines and
+  protect himself and men as best he could, as he did not consider that the exigencies of the service required additional sacrifices."
+  This is the outcome of E253's exchange told in other words (E253: "offices all closed ... no operators needed here for some weeks as
+  the business ... is not of sufficient importance to warrant us in risking the health ... of any more men"), which puts the decision with
+  Gilmore and Eckert both; the telegram's text is **not located** (Plum I-II; OR I/42 pt 3, `warofrebellion423unit`, title page "October 1,
+  1864, to December 31, 1864", no Kent/Waterhouse/Morehead fever text).
+- **E251:** Butler V (cached) re-read: **p.11**, Butler to Col. Saunders, "Unofficial. Aug. 6th, 1864. I have assigned you to duty in
+  Norfolk as Provost Marshal ..." (identifies E251's Col. Saunders); Butler's later statement in vol. V naming "Maj. Geo. C. Carney of
+  Quartermaster's dept., Superintendent of Negro affairs" (E251's Maj. Carney at Norfolk); p.265 (Barton, 15 Oct) as FV-FM7a. OR I/42 pt 3
+  (4 Dec 1864, Norfolk; "Bartonsville" 0, "Stephen Barton" 0): **not located**.
+- **104th Pa. history** (Davis, *History of the 104th Pennsylvania Regiment*, 1866, `historyof104thpe00davi`; the Cornell copy's text
+  answered 500): pp.328-329: "The last of August several regiments from the department of the South were sent north, of which the 104th
+  was one. It was ordered to Washington city and landed from the steamer at Alexandria, when it was assigned to the fortifications on the
+  south side of the Potomac." Context for E252/E258 (no steamer name, no telegram).
+- OR I/35 pt 2 read page by page over 20-29 Aug (every dateline from "Hilton Head, August 20" to "Charleston, August 29", pp.254-262):
+  Foster's 26 Aug letter (pp.258-259) is the only 104th Pa./Fulton item; Halleck's 26 Aug indorsement (Foster "repeatedly ordered ... to
+  send north all troops not required") is context. OR I/42 pt 2 (`422unit`): "Fulton" only as the operator H. W. Fulton; no 104th Pa.
+- Not run: press of the day, Google Books (no probe: the decisive item was found in the OR; the other three are context-only misses),
+  Grant Papers be-api (covered by the readers' 13 queries and FV-FM7a).
+
+### Reading and grade check
+- E251, E252, E253, E256, E258: reading.md still carries the decoder slips FV-FM7a listed (E251 "Stephen"/"Barton" printed as code words;
+  E252 "sylvan" [Junction] and the struck 1 Sept tail; E253 "fever" [13] and address "Washington"; E256 "White" [Report], "insanity's"
+  plain). **No FIX job has yet applied FV-FM7a section 4**; the grades below are FV-FM7a's corrected ones, which I confirm against key.md
+  for the code words named in its section 4 (no new disagreement). The OR text now confirms E252's "sylvan" = plain "Pennsylvania" and
+  "forth" = "fourth", and E258's every code-word value (H), and gives E252 and E258 a known-plaintext check: no H value contradicts the print.
+
+### Verdict
+| ID | first audit | second audit | depth | note |
+|---|---|---|---|---|
+| **E251** | N3 D3 | **N3 holds**, D3 kept | 100 (H 20 of 20) | added context: Butler V p.11 (Saunders, Provost Marshal, Norfolk); Carney, QM, Supt. of Negro Affairs |
+| **E252** | N3 D3 | **N1** (text `known`: OR I/43 pt 1 p.944), D3 kept (D4 would need FV-FM7a s.4's decoder fixes applied and a fresh rule-7 re-derivation; the non-statistical external check now exists) | 100 (H 16 of 16) | our reading is an independent re-decipherment of a printed text |
+| **E253** | N3 D3 | **N3 holds**, D3 kept | 94 (H 15 + I 1 of 16) | added context: Plum II p.35 (Eckert's order to close the lines) |
+| **E256** 17 June | N3 D3 | **N3 holds**, D3 kept | 88 (H 7 of 8) | added context: Dana 18 June 8 a.m., OR I/40 pt 1 p.24 (bridge taken up 3 a.m. 18th) |
+| **E258** | N3 D3 | **N1** (text `known`: OR I/43 pt 1 p.919), D3 kept | 100 (H 33 of 33) | our reading is an independent re-decipherment of a printed text |
+
+Safe sentences. E252: "The Cipher No. 1 ledger copy reads, with the period key, to the text printed in OR ser. I vol. 43 pt 1 p.944
+(Hart to Halleck, Fort Monroe, 28 Aug 1864)." E258: "The Cipher No. 1 ledger copy reads, with the period key, to the text printed in OR
+ser. I vol. 43 pt 1 p.919 (Foster to Halleck, Hilton Head 26 Aug, via Fort Monroe 28 Aug 1864)." E251, E253, E256 (17 June): FV-FM7a's
+N3 sentences, with the added context above. Unsafe for all five: any novelty word; for E252/E258 also "not located in the Official
+Records".
+
+Propagated: status.json E252 and E258 rows (grade N1, text known, line, gap, audit_status two audits, audit_refs), E251/E253/E256 rows
+(audit_status two audits, audit_refs, gap); SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E252 and -E258 withdrawn (N1, OR I/43 pt 1); SO prompts
+e251/e253/e256 context and "where we have looked" lines updated.
+
+### Postmortem
+The OR volume for Washington in late Aug 1864 was believed searched but was not: the print-check cache holds a mislabelled
+`warofrebellion431unit` (I/47 pt 2), the correct identifier `warofrebellion431unit_0` / `warofrebellion014301rootrich` is already named in
+`tools/data/prior_editions.tsv` but prior_work.py's 4-editions check marked it "not on disk" (UNCHECKED-NET) while the readers' and first
+auditor's own greps ran on the wrong file. Two N3 claims were one volume away from N1. Lesson: read a cached volume's title page before
+counting it as searched; an identifier is not a volume. Suggestion (not done, outside this brief): cache the real I/43 pt 1 text under
+`sources/ia-fulltext/print-check/` and rename or annotate the 431unit file, then re-run every eckert-1864 N3 entry dated 1 Aug-30 Sept
+1864 that reaches Halleck, Augur or the Department of Washington against it, ~$1.
+Requests: archive.org 8 djvu downloads (one 500, Cornell copy of Davis) + 2 advancedsearch, 2 s apart; hdl.huntington.org 0; Google Books 0.

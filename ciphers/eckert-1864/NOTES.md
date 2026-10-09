@@ -2912,3 +2912,12 @@ Lead for readers: query the plain words that survive encipherment ("Channing Cla
 missed the clear copy, which spells "Petters".
 Requests: hdl.huntington.org 18 (one token block 04:23-04:25 UTC); archive.org 6 (four OR volumes, two Plum volumes); be-api 0;
 Google Books 1 (429, stopped).
+
+## AUD2-LEDGER-15 (9 Oct 2026, account 4, for the account-4 orchestrator)
+Second audit of E251, E252, E253, E256 (17 June part), E258; full log in AUDIT.md "## AUDIT 2 (AUD2-LEDGER-15)". **E252 and E258 move N3 ->
+N1**: both are printed in OR ser. I vol. 43 pt 1 (Hart to Halleck p.944; Foster to Halleck, via Fort Monroe 4 p.m. 28th, p.919), a volume
+the earlier passes believed searched because the cached `warofrebellion431unit` is I/47 pt 2, not I/43 pt 1 (the real text is
+`warofrebellion014301rootrich` / `warofrebellion431unit_0`). E251, E253, E256 (17 June) N3 hold, D3 kept, with new context (Butler V
+p.11; Plum II pp.34-35; Dana 18 June, OR I/40 pt 1 p.24). FV-FM7a section 4's decoder slips are still in reading.md (no FIX run yet).
+Follow-up suggestion (not done): cache the real I/43 pt 1 text in sources/ia-fulltext/print-check and re-check every N3 entry of
+1 Aug-30 Sept 1864 addressed to Halleck, Augur or the Department of Washington against it, ~$1.
