@@ -11917,3 +11917,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 03:51 | FM-R4b reader (Sonnet) | LANE LEDGER hdl release (22 requests: 10 IIIF pages at 2400 px to scratch + 12 CONTENTdm CISOSEARCHALL queries, 3.3 s apart); for LANE LEDGER (account 1)
 2026-10-09 03:51 | FM-R4a reader | LANE LEDGER hdl take; for LANE LEDGER (account 1)
 2026-10-09 03:52 | FV-FM6c verifier (Opus) | LANE LEDGER hdl take; for LANE LEDGER (account 1)
+2026-10-09 03:53 | FV-FM6a verifier (Opus) | LANE LEDGER hdl take (queued behind FM-R4a and FV-FM6c; will wait for both releases); for LANE LEDGER (account 1)
