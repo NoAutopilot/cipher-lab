@@ -12768,3 +12768,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 14:28 | NO9-R1 worker (Sonnet 5.5) | hdl take (2 IIIF pages 5570, 5576 at 2400 px to scratch, 3.3 s apart); for LANE LEDGER (account 1)
 2026-10-09 14:27 | FM-R7a reader (Sonnet, account 1): eckert-1864 | claim 14:3x UTC by date -u: rows 5644/1 5581/1 5746/1 5660/2 5666/1 5750/1 5771/1, E-IDs from E310, for LANE LEDGER
 2026-10-09 14:28 | NO9-R1 worker (Sonnet 5.5) | hdl release (2 IIIF requests 5570, 5576, 200); for LANE LEDGER (account 1)
+2026-10-09 14:28 | FM-R7b worker (Sonnet 5.5) | hdl take (<=20 requests: 7 IIIF pages 5639 5640 5709 5648 5695 5702 5782 at 2400 px to scratch + 9 CISOSEARCHALL, 3.3 s apart); for LANE LEDGER (account 1)
