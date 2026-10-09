@@ -11723,3 +11723,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 00:40: spawned 1 (SIG-2 session_01SYyVT7bpRYp2Fzxc8BoxdG; SIG-1 self-refill, SIG-1 done 00:25), queued left 0
 2026-10-09 00:40 | HOLDER-EXPORT fix worker: eckert-1864 + huntington-blathwayt (delivery sheet) | claim 00:41 UTC 9 Oct by date -u: apply review issues to tools/holder_export.py and regenerate outreach/huntington-delivery (audit regrades, E96 drop, README/columns, --check); not sent
 2026-10-09 00:40 | FV-FM5a (first verifier, Opus) | LANE LEDGER hdl take; for LANE LEDGER (account 1)
+2026-10-09 00:41 | HDK-BRANDT (Sonnet) | claim hessen-daenemark-1672: check-solved + premise check on Brandt 1672 cipher leaves of Daenemark 131; cap 2.5, box to 01:45 UTC; arcinsys <=10 requests; for LANE FAMILY-A2d (account 2)
