@@ -29,7 +29,10 @@ Excluded (counted, never scored): sign aligned to no letter (unaligned); committ
 (off-key: V, c, 2, o, braces, residues) or M-graded (key-M-<code>); aligned letter that no forcing code carries
 (letter-off-key); align-uncertain: fewer than half of the aligned keyed neighbours within 8 positions either side
 (same line stream) decode to their aligned letter (a stretch where the clerk reading or the alignment is unreliable).
-Flag column (set at build time, before any reader score; tx_bench --exclude-flagged reports both figures):
+Flag column (set at build time, before any reader score; tx_bench --exclude-flagged reports both figures; the align-conflict
+flag is replaced per position by the verifier verdicts in benchmark-tx/vivonne1573-f103r-confirm2.flags.tsv, TXV-VIV, 9 Oct 2026:
+FLAG -> its class (clerk-doubtful / key-doubtful / alignment-doubtful), CORRECT -> truth re-forced and corrected:<class>, KEEP ->
+the align-conflict flag cleared, clerk-split kept where set):
   align-conflict  scored position whose committed sign decodes to a different letter than the aligned one (reader error,
                   clerk-reading error or a one-letter shift: undecidable here);
   clerk-split     the aligned letter sits in a word the two blind readings of the clerk's hand did not write alike (or
@@ -199,6 +202,16 @@ def build():
     ctrl = ('control: f.103r match share, published key %.3f vs 200 value-shuffled keys mean %.3f p95 %.3f max %.3f, rank %d of '
             '201' % (real, sum(sh) / len(sh), sorted(sh)[189], max(sh), rank))
 
+    # TXV-VIV (9 Oct 2026): verifier verdicts on the align-conflict positions, keyed by the oo's first raw position (both raw
+    # rows of a collapsed oo carry the same verdict); FLAG -> class in the flag column, CORRECT -> truth re-forced, KEEP -> cleared
+    flags = {}
+    fp = os.path.join(OUT, ITEM + '.flags.tsv')
+    if os.path.exists(fp):
+        lines = [l for l in open(fp, encoding='utf-8').read().splitlines() if not l.startswith('#')]
+        hd = lines[0].split('\t')
+        for l in lines[1:]:
+            r = dict(zip(hd, l.split('\t')))
+            flags[(r['line'], int(r['pos']))] = r
     rows, nex = [], {}
     for k in sub:
         pg, code, line, raws = stream[k]
@@ -221,6 +234,15 @@ def build():
                     fl.append('align-conflict')
                 if not cmask[amap[k]]:
                     fl.append('clerk-split')
+                fr = flags.get(('f103r_' + line, raws[0]))
+                if fr and 'align-conflict' in fl:  # TXV-VIV verdict replaces the automatic align-conflict flag
+                    fl.remove('align-conflict')
+                    if fr['verdict'] == 'FLAG':
+                        fl.insert(0, fr['class'])
+                    elif fr['verdict'] == 'CORRECT':
+                        cp = fr['correct_plain'] or plain
+                        truth = '|'.join(sorted(by_val.get(cp, set()) | set(filter(None, fr['add_signs'].split('|')))))
+                        fl.insert(0, 'corrected:' + fr['class'])
                 flag = ','.join(fl)
         if code == 'oo':
             t1 = '|'.join(sorted(by_val[plain] - {'oo'} | {'o'})) if truth else ''

@@ -32,7 +32,7 @@ f103r_L01	28	3	3|h|k	d	scored
 f103r_L01	29	d	d	o	scored	clerk-split
 f103r_L01	30	o	Zu|a|o	u	scored	clerk-split
 f103r_L01	31	o	o	u	scored	clerk-split
-f103r_L01	32	p	3|h|k	d	scored	align-conflict
+f103r_L01	32	p	3|h|k	d	scored	alignment-doubtful
 f103r_L01	33	m	7|m	e	scored	
 f103r_L01	34	d	d	o	scored	
 f103r_L01	35	A		t	excluded:key-M-A	
@@ -41,9 +41,9 @@ f103r_L01	37	d	d	o	scored
 f103r_L01	38	tz	tz	i	scored	
 f103r_L01	39	d	d	o	scored	
 f103r_L01	40	p	p	n	scored	
-f103r_L01	41	h	7|m	e	scored	align-conflict
+f103r_L01	41	h	7|m	e	scored	alignment-doubtful
 f103r_L01	42	m	7|m	e	scored	
-f103r_L01	43	:	x	s	scored	align-conflict
+f103r_L01	43	:	x	s	scored	key-doubtful
 f103r_L01	44	:			excluded:unaligned	
 f103r_L01	45	m	7|m	e	scored	
 f103r_L01	46	c		a	excluded:off-key	
@@ -51,7 +51,7 @@ f103r_L01	47	S		b	excluded:key-M-S
 f103r_L01	48	g	L|g	r	scored	clerk-split
 f103r_L01	49	#	#|R|n	t	scored	
 f103r_L01	50	tz	tz	i	scored	
-f103r_L01	51	L	6|f|j	l	scored	align-conflict
+f103r_L01	51	L	6|f|j	l	scored	
 f103r_L01	52	:	:	c	scored	clerk-split
 f103r_L01	53	:	:	c	scored	clerk-split
 f103r_L01	54	m	7|m	e	scored	clerk-split
@@ -60,15 +60,15 @@ f103r_L02	1	tz	tz	i	scored	clerk-split
 f103r_L02	2	m	7|m	e	scored	clerk-split
 f103r_L02	3	p	p	n	scored	clerk-split
 f103r_L02	4	m	7|m	e	scored	
-f103r_L02	5	o	o|x	s	scored	align-conflict
-f103r_L02	6	o	o	s	scored	align-conflict
+f103r_L02	5	o	o|x	s	scored	alignment-doubtful
+f103r_L02	6	o	o	s	scored	alignment-doubtful
 f103r_L02	7	d	d	o	scored	
 f103r_L02	8	z	P|s|z	a	scored	
-f103r_L02	9	6	P|s|z	a	scored	align-conflict,clerk-split
-f103r_L02	10	h	Zu|a|oo	u	scored	align-conflict,clerk-split
+f103r_L02	9	6	P|s|z	a	scored	clerk-doubtful,clerk-split
+f103r_L02	10	h	Zu|a|oo	u	scored	clerk-doubtful,clerk-split
 f103r_L02	11	g			excluded:unaligned	
 f103r_L02	12	d	d	o	scored	clerk-split
-f103r_L02	13	tz	L|g	r	scored	align-conflict,clerk-split
+f103r_L02	13	tz	L|g	r	scored	clerk-doubtful,clerk-split
 f103r_L02	14	x			excluded:unaligned	
 f103r_L02	15	to	@|to	q	scored	clerk-split
 f103r_L02	16	c		u	excluded:off-key	
@@ -78,15 +78,15 @@ f103r_L02	19	o	o	u	scored
 f103r_L02	20	V		s	excluded:off-key	
 f103r_L02	21	m	7|m	e	scored	
 f103r_L02	22	p	p	n	scored	
-f103r_L02	23	#	P|s|z	a	scored	align-conflict
-f103r_L02	24	g	Zu|a|oo	u	scored	align-conflict
+f103r_L02	23	#	P|s|z	a	scored	key-doubtful
+f103r_L02	24	g	Zu|a|oo	u	scored	key-doubtful
 f103r_L02	25	S			excluded:unaligned	
 f103r_L02	26	tz	tz	i	scored	
 f103r_L02	27	g	L|g	r	scored	
 f103r_L02	28	m		e	excluded:align-uncertain	
-f103r_L02	29	d	:	c	scored	align-conflict
-f103r_L02	30	tz	@|to	q	scored	align-conflict
-f103r_L02	31	tz	Zu|a|oo	u	scored	align-conflict
+f103r_L02	29	d	:	c	scored	alignment-doubtful
+f103r_L02	30	tz	@|to	q	scored	alignment-doubtful
+f103r_L02	31	tz	Zu|a|oo	u	scored	key-doubtful
 f103r_L02	32	2		e	excluded:off-key	
 f103r_L02	33	V		s	excluded:off-key	
 f103r_L02	34	y		l	excluded:key-M-y	
@@ -107,8 +107,8 @@ f103r_L02	48	L	L|g	r	scored
 f103r_L02	49	m	7|m	e	scored	
 f103r_L02	50	#	#|R|n	t	scored	
 f103r_L02	51	x	x	s	scored	clerk-split
-f103r_L02	52	tz	P|s|z	a	scored	align-conflict,clerk-split
-f103r_L02	53	6	x	s	scored	align-conflict,clerk-split
+f103r_L02	52	tz	P|s|z	a	scored	clerk-doubtful,clerk-split
+f103r_L02	53	6	x	s	scored	clerk-doubtful,clerk-split
 f103r_L03	1	x	x	s	scored	clerk-split
 f103r_L03	2	m	7|m	e	scored	clerk-split
 f103r_L03	3	g	L|g	r	scored	
@@ -117,10 +117,10 @@ f103r_L03	5	S		o	excluded:key-M-S
 f103r_L03	6	o		u	excluded:align-uncertain	
 f103r_L03	7	o		u	excluded:align-uncertain	
 f103r_L03	8	6		e	excluded:align-uncertain	
-f103r_L03	9	h	x	s	scored	align-conflict
+f103r_L03	9	h	x	s	scored	alignment-doubtful
 f103r_L03	10	S		b	excluded:key-M-S	
-f103r_L03	11	f	d	o	scored	align-conflict,clerk-split
-f103r_L03	12	f	p	n	scored	align-conflict,clerk-split
+f103r_L03	11	f	d	o	scored	clerk-doubtful,clerk-split
+f103r_L03	12	f	p	n	scored	clerk-doubtful,clerk-split
 f103r_L03	13	S		s	excluded:key-M-S	
 f103r_L03	14	tz		p	excluded:letter-off-key	
 f103r_L03	15	g		r	excluded:align-uncertain	
@@ -129,9 +129,9 @@ f103r_L03	17	m		e	excluded:align-uncertain
 f103r_L03	18	x		s	excluded:align-uncertain	
 f103r_L03	19	3		d	excluded:align-uncertain	
 f103r_L03	20	m		e	excluded:align-uncertain	
-f103r_L03	21	d	tz	i	scored	align-conflict
+f103r_L03	21	d	tz	i	scored	alignment-doubtful
 f103r_L03	22	b		r	excluded:key-M-b	
-f103r_L03	23	3	7|m	e	scored	align-conflict
+f103r_L03	23	3	7|m	e	scored	alignment-doubtful
 f103r_L03	24	S		e	excluded:key-M-S	
 f103r_L03	25	o		x	excluded:letter-off-key	
 f103r_L03	26	o		x	excluded:letter-off-key	
@@ -141,7 +141,7 @@ f103r_L03	29	m		e	excluded:align-uncertain
 f103r_L03	30	o		s	excluded:off-key	
 f103r_L03	31	S		t	excluded:key-M-S	
 f103r_L03	32	g	L|g	r	scored	
-f103r_L03	33	#	d	o	scored	align-conflict
+f103r_L03	33	#	d	o	scored	alignment-doubtful
 f103r_L03	34	tz	tz	i	scored	
 f103r_L03	35	m	7|m	e	scored	
 f103r_L03	36	V		l	excluded:off-key	
@@ -158,7 +158,7 @@ f103r_L03	46	x	x	s	scored
 f103r_L03	47	o		p	excluded:off-key	
 f103r_L03	48	g	L|g	r	scored	
 f103r_L03	49	tz	tz	i	scored	
-f103r_L03	50	d	Zu|a|oo	u	scored	align-conflict
+f103r_L03	50	d	Zu|a|oo	u	scored	
 f103r_L03	51	m	7|m	e	scored	
 f103r_L03	52	V		a	excluded:off-key	
 f103r_L03	53	y		f	excluded:key-M-y	
@@ -178,7 +178,7 @@ f103r_L04	5	a	Zu|a|oo	u	scored	clerk-split
 f103r_L04	6	z	P|s|z	a	scored	clerk-split
 f103r_L04	7	d	d	o	scored	
 f103r_L04	8	f	6|f|j	l	scored	
-f103r_L04	9	f	tz	i	scored	align-conflict,clerk-split
+f103r_L04	9	f	tz	i	scored	clerk-doubtful,clerk-split
 f103r_L04	10	g	L|g	r	scored	clerk-split
 f103r_L04	11	m	7|m	e	scored	clerk-split
 f103r_L04	12	:	:	c	scored	clerk-split
@@ -191,14 +191,14 @@ f103r_L04	18	y		b	excluded:key-M-y
 f103r_L04	19	d	d	o	scored	
 f103r_L04	20	e		s	excluded:off-key	
 f103r_L04	21	y		n	excluded:key-M-y	
-f103r_L04	22	m	P|s|z	a	scored	align-conflict
+f103r_L04	22	m	P|s|z	a	scored	key-doubtful
 f103r_L04	23	a	Zu|a|oo	u	scored	
 f103r_L04	24	tz	tz	i	scored	
 f103r_L04	25	m	7|m	e	scored	
 f103r_L04	26	#	#|R|n	t	scored	
-f103r_L04	27	tz	Zu|a|oo	u	scored	align-conflict
+f103r_L04	27	tz	Zu|a|oo	u	scored	key-doubtful
 f103r_L04	28	m	7|m	e	scored	
-f103r_L04	29	p	:	c	scored	align-conflict
+f103r_L04	29	p	:	c	scored	alignment-doubtful
 f103r_L04	30	S		q	excluded:key-M-S	
 f103r_L04	31	o		u	excluded:off-key	
 f103r_L04	32	l			excluded:unaligned	
@@ -208,16 +208,16 @@ f103r_L04	35	x		s	excluded:align-uncertain
 f103r_L04	36	o		a	excluded:off-key	
 f103r_L04	37	d		m	excluded:letter-off-key	
 f103r_L04	38	J		i	excluded:off-key	
-f103r_L04	39	o	6|f|j|o	l	scored	align-conflict
-f103r_L04	40	o	o	l	scored	align-conflict
-f103r_L04	41	3	6|f|j	l	scored	align-conflict
+f103r_L04	39	o	6|f|j|o	l	scored	alignment-doubtful
+f103r_L04	40	o	o	l	scored	alignment-doubtful
+f103r_L04	41	3	6|f|j	l	scored	alignment-doubtful
 f103r_L04	42	m	7|m	e	scored	
 f103r_L04	43	3	3|h|k	d	scored	clerk-split
 f103r_L04	44	S		i	excluded:key-M-S	
 f103r_L04	45	p	p	n	scored	clerk-split
 f103r_L04	46	3		m	excluded:letter-off-key	
 f103r_L04	47	m	7|m	e	scored	
-f103r_L04	48	g	P|s|z	a	scored	align-conflict
+f103r_L04	48	g	P|s|z	a	scored	alignment-doubtful
 f103r_L04	49	a	Zu|a|oo	u	scored	
 f103r_L04	50	d	d	o	scored	
 f103r_L04	51	o		s	excluded:off-key	
@@ -230,7 +230,7 @@ f103r_L04	57	m	7|m	e	scored
 f103r_L05	1	o		u	excluded:off-key	
 f103r_L05	2	g	L|g	r	scored	
 f103r_L05	3	tz	tz	i	scored	
-f103r_L05	4	d	3|h|k	d	scored	align-conflict
+f103r_L05	4	d	3|h|k	d	scored	
 f103r_L05	5	m	7|m	e	scored	
 f103r_L05	6	z	P|s|z	a	scored	
 f103r_L05	7	m	7|m	e	scored	
@@ -239,10 +239,10 @@ f103r_L05	9	o	Zu|a|o	u	scored
 f103r_L05	10	o	o	u	scored	
 f103r_L05	11	V		d	excluded:off-key	
 f103r_L05	12	m		e	excluded:align-uncertain	
-f103r_L05	13	:	6|f|j	l	scored	align-conflict
-f103r_L05	14	tz	P|s|z	a	scored	align-conflict
+f103r_L05	13	:	6|f|j	l	scored	alignment-doubtful
+f103r_L05	14	tz	P|s|z	a	scored	alignment-doubtful
 f103r_L05	15	S		p	excluded:key-M-S	
-f103r_L05	16	a	L|g	r	scored	align-conflict
+f103r_L05	16	a	L|g	r	scored	alignment-doubtful
 f103r_L05	17	d		o	excluded:align-uncertain	
 f103r_L05	18	g		p	excluded:letter-off-key	
 f103r_L05	19	#		t	excluded:align-uncertain	
@@ -260,24 +260,24 @@ f103r_L05	30	V		l	excluded:off-key
 f103r_L05	31	:		x	excluded:letter-off-key	
 f103r_L05	32	tz	tz	i	scored	clerk-split
 f103r_L05	33	m	7|m	e	scored	clerk-split
-f103r_L05	34	x	p	n	scored	align-conflict,clerk-split
+f103r_L05	34	x	p	n	scored	clerk-doubtful,clerk-split
 f103r_L05	35	:			excluded:unaligned	
 f103r_L05	36	#	#|R|n	t	scored	clerk-split
 f103r_L05	37	tz			excluded:unaligned	
 f103r_L05	38	6	6|f|j	l	scored	
-f103r_L05	39	#	7|m	e	scored	align-conflict
-f103r_L05	40	d	x	s	scored	align-conflict
+f103r_L05	39	#	7|m	e	scored	key-doubtful
+f103r_L05	40	d	x	s	scored	key-doubtful
 f103r_L05	41	o			excluded:unaligned	
 f103r_L05	42	o			excluded:unaligned	
 f103r_L05	43	x	x	s	scored	
 f103r_L05	44	tz	tz	i	scored	
-f103r_L05	45	d	7|m	e	scored	align-conflict
+f103r_L05	45	d	7|m	e	scored	key-doubtful
 f103r_L05	46	o	Zu|a|o	u	scored	
 f103r_L05	47	o	o	u	scored	
 f103r_L05	48	g	L|g	r	scored	
 f103r_L05	49	x	x	s	scored	
-f103r_L05	50	3	d	o	scored	align-conflict
-f103r_L05	51	m	tz	i	scored	align-conflict
+f103r_L05	50	3	d	o	scored	alignment-doubtful
+f103r_L05	51	m	tz	i	scored	key-doubtful
 f103r_L05	52	x	x	s	scored	
 f103r_L05	53	V		q	excluded:off-key	
 f103r_L05	54	S		u	excluded:key-M-S	
@@ -312,11 +312,11 @@ f103r_L06	22	m		e	excluded:align-uncertain
 f103r_L06	23	to		q	excluded:align-uncertain	
 f103r_L06	24	V		u	excluded:off-key	
 f103r_L06	25	m	7|m	e	scored	
-f103r_L06	26	a	6|f|j	l	scored	align-conflict
-f103r_L06	27	d	@|to	q	scored	align-conflict
+f103r_L06	26	a	6|f|j	l	scored	alignment-doubtful
+f103r_L06	27	d	@|to	q	scored	alignment-doubtful
 f103r_L06	28	o	Zu|a|o	u	scored	
 f103r_L06	29	o	o	u	scored	
-f103r_L06	30	6	7|m	e	scored	align-conflict
+f103r_L06	30	6	7|m	e	scored	alignment-doubtful
 f103r_L06	31	h			excluded:unaligned	
 f103r_L06	32	g			excluded:unaligned	
 f103r_L06	33	d			excluded:unaligned	
@@ -336,10 +336,10 @@ f103r_L06	46	g	L|g	r	scored	clerk-split
 f103r_L06	47	S		e	excluded:key-M-S	
 f103r_L06	48	j	6|f|j	l	scored	
 f103r_L06	49	m		e	excluded:align-uncertain	
-f103r_L06	50	g	d	o	scored	align-conflict
+f103r_L06	50	g	d	o	scored	alignment-doubtful
 f103r_L06	51	o		u	excluded:off-key	
 f103r_L06	52	S		p	excluded:key-M-S	
-f103r_L06	53	tz	3|h|k	d	scored	align-conflict
+f103r_L06	53	tz	3|h|k	d	scored	alignment-doubtful
 f103r_L06	54	m		e	excluded:align-uncertain	
 f103r_L06	55	V		a	excluded:off-key	
 f103r_L06	56	S		p	excluded:key-M-S	
@@ -347,24 +347,24 @@ f103r_L06	57	o		a	excluded:off-key
 f103r_L06	58	g		r	excluded:align-uncertain	
 f103r_L06	59	d		m	excluded:letter-off-key	
 f103r_L07	1	c		e	excluded:off-key	
-f103r_L07	2	d	p	n	scored	align-conflict,clerk-split
-f103r_L07	3	@	#|R|n	t	scored	align-conflict,clerk-split
+f103r_L07	2	d	p	n	scored	clerk-doubtful,clerk-split
+f103r_L07	3	@	#|R|n	t	scored	clerk-doubtful,clerk-split
 f103r_L07	4	m	7|m	e	scored	
 f103r_L07	5	#		t	excluded:align-uncertain	
-f103r_L07	6	x	@|to	q	scored	align-conflict
+f103r_L07	6	x	@|to	q	scored	alignment-doubtful
 f103r_L07	7	c		u	excluded:off-key	
 f103r_L07	8	tz		i	excluded:align-uncertain	
-f103r_L07	9	:	6|f|j	l	scored	align-conflict
+f103r_L07	9	:	6|f|j	l	scored	alignment-doubtful
 f103r_L07	10	3		d	excluded:align-uncertain	
 f103r_L07	11	m	7|m	e	scored	
 f103r_L07	12	g	L|g	r	scored	
-f103r_L07	13	d	P|s|z	a	scored	align-conflict
-f103r_L07	14	g	x	s	scored	align-conflict
+f103r_L07	13	d	P|s|z	a	scored	alignment-doubtful
+f103r_L07	14	g	x	s	scored	key-doubtful
 f103r_L07	15	#	#|R|n	t	scored	
-f103r_L07	16	o	7|m|o	e	scored	align-conflict
-f103r_L07	17	o	o	e	scored	align-conflict
+f103r_L07	16	o	7|m|o	e	scored	alignment-doubtful
+f103r_L07	17	o	o	e	scored	alignment-doubtful
 f103r_L07	18	p	p	n	scored	
-f103r_L07	19	m	:	c	scored	align-conflict
+f103r_L07	19	m	:	c	scored	alignment-doubtful
 f103r_L07	20	w		o	excluded:off-key	
 f103r_L07	21	o			excluded:unaligned	
 f103r_L07	22	#			excluded:unaligned	
@@ -382,11 +382,11 @@ f103r_L07	33	d	d	o	scored
 f103r_L07	34	tz	tz	i	scored	
 f103r_L07	35	#	#|R|n	t	scored	
 f103r_L07	36	R	#|R|n	t	scored	
-f103r_L07	37	g	tz	i	scored	align-conflict
+f103r_L07	37	g	tz	i	scored	
 f103r_L07	38	d	d	o	scored	
 f103r_L07	39	a	Zu|a|oo	u	scored	
 f103r_L07	40	h	3|h|k	d	scored	clerk-split
-f103r_L07	41	d	tz	i	scored	align-conflict,clerk-split
+f103r_L07	41	d	tz	i	scored	clerk-doubtful,clerk-split
 f103r_L07	42	A		c	excluded:key-M-A	
 f103r_L07	43	S		t	excluded:key-M-S	
 f103r_L07	44	S		o	excluded:key-M-S	
@@ -404,7 +404,7 @@ f103r_L07	55	V		d	excluded:off-key
 f103r_L07	56	m	7|m	e	scored	
 f103r_L07	57	g	L|g	r	scored	clerk-split
 f103r_L07	58	d	d	o	scored	clerk-split
-f103r_L07	59	tz	L|g	r	scored	align-conflict,clerk-split
+f103r_L07	59	tz	L|g	r	scored	clerk-doubtful,clerk-split
 f103r_L07	60	#	#|R|n	t	scored	clerk-split
 f103r_L07	61	o		m	excluded:off-key	
 f103r_L07	62	c		a	excluded:off-key	
@@ -417,7 +417,7 @@ f103r_L08	3	c		e	excluded:off-key
 f103r_L08	4	g		r	excluded:align-uncertain	
 f103r_L08	5	d		o	excluded:align-uncertain	
 f103r_L08	6	b		y	excluded:key-M-b	
-f103r_L08	7	d	p	n	scored	align-conflict
+f103r_L08	7	d	p	n	scored	alignment-doubtful
 f103r_L08	8	@			excluded:unaligned	
 f103r_L08	9	m		e	excluded:align-uncertain	
 f103r_L08	10	d		g	excluded:align-uncertain	
@@ -427,12 +427,12 @@ f103r_L08	13	tz		t	excluded:align-uncertain
 f103r_L08	14	m		e	excluded:align-uncertain	
 f103r_L08	15	g		r	excluded:align-uncertain	
 f103r_L08	16	S		r	excluded:key-M-S	
-f103r_L08	17	:	7|m	e	scored	align-conflict,clerk-split
+f103r_L08	17	:	7|m	e	scored	clerk-doubtful,clerk-split
 f103r_L08	18	V		q	excluded:off-key	
 f103r_L08	19	y			excluded:unaligned	
 f103r_L08	20	o	Zu|a|o	u	scored	
 f103r_L08	21	o	o	u	scored	
-f103r_L08	22	z	7|m	e	scored	align-conflict
+f103r_L08	22	z	7|m	e	scored	
 f103r_L08	23	S			excluded:unaligned	
 f103r_L08	24	f	6|f|j	l	scored	
 f103r_L08	25	d	d	o	scored	
@@ -440,27 +440,27 @@ f103r_L08	26	o	Zu|a|o	u	scored
 f103r_L08	27	o	o	u	scored	
 f103r_L08	28	tz			excluded:unaligned	
 f103r_L08	29	j	6|f|j	l	scored	
-f103r_L08	30	m	tz	i	scored	align-conflict
+f103r_L08	30	m	tz	i	scored	key-doubtful
 f103r_L08	31	g	L|g	r	scored	
 f103r_L08	32	V			excluded:unaligned	
 f103r_L08	33	y			excluded:unaligned	
 f103r_L08	34	m			excluded:unaligned	
 f103r_L08	35	x	x	s	scored	clerk-split
-f103r_L08	36	:	Zu|a|oo	u	scored	align-conflict,clerk-split
+f103r_L08	36	:	Zu|a|oo	u	scored	clerk-doubtful,clerk-split
 f103r_L08	37	:			excluded:unaligned	
 f103r_L08	38	S		b	excluded:key-M-S	
-f103r_L08	39	g	x	s	scored	align-conflict,clerk-split
+f103r_L08	39	g	x	s	scored	clerk-doubtful,clerk-split
 f103r_L08	40	R	#|R|n	t	scored	clerk-split
 f103r_L08	41	m	7|m	e	scored	clerk-split
 f103r_L08	42	x	x	s	scored	clerk-split
 f103r_L08	43	o		e	excluded:off-key	
 f103r_L08	44	S		b	excluded:key-M-S	
-f103r_L08	45	g	7|m	e	scored	align-conflict
+f103r_L08	45	g	7|m	e	scored	alignment-doubtful
 f103r_L08	46	y		l	excluded:key-M-y	
 f103r_L08	47	y		l	excluded:key-M-y	
 f103r_L08	48	m	7|m	e	scored	
 f103r_L08	49	x	x	s	scored	
-f103r_L08	50	d	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L08	50	d	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L08	51	tz	tz	i	scored	clerk-split
 f103r_L08	52	m	7|m	e	scored	clerk-split
 f103r_L08	53	p	p	n	scored	clerk-split
@@ -471,24 +471,24 @@ f103r_L08	57	d	d	o	scored
 f103r_L08	58	tz	tz	i	scored	
 f103r_L08	59	m			excluded:unaligned	
 f103r_L08	60	d	d	o	scored	
-f103r_L09	1	:	p	n	scored	align-conflict
-f103r_L09	2	:	3|h|k	d	scored	align-conflict
+f103r_L09	1	:	p	n	scored	alignment-doubtful
+f103r_L09	2	:	3|h|k	d	scored	alignment-doubtful
 f103r_L09	3	m	7|m	e	scored	
-f103r_L09	4	d	7|m	e	scored	align-conflict
+f103r_L09	4	d	7|m	e	scored	key-doubtful
 f103r_L09	5	#	#|R|n	t	scored	
 f103r_L09	6	o	Zu|a|o	u	scored	
 f103r_L09	7	o	o	u	scored	
 f103r_L09	8	tz	tz	i	scored	
-f103r_L09	9	:	d	o	scored	align-conflict,clerk-split
-f103r_L09	10	:	Zu|a|oo	u	scored	align-conflict,clerk-split
+f103r_L09	9	:	d	o	scored	clerk-doubtful,clerk-split
+f103r_L09	10	:	Zu|a|oo	u	scored	clerk-doubtful,clerk-split
 f103r_L09	11	3	3|h|k	d	scored	clerk-split
 f103r_L09	12	d	d	o	scored	clerk-split
 f103r_L09	13	f	6|f|j	l	scored	
-f103r_L09	14	f	7|m	e	scored	align-conflict
+f103r_L09	14	f	7|m	e	scored	alignment-doubtful
 f103r_L09	15	p	p	n	scored	
 f103r_L09	16	g	L|g	r	scored	
 f103r_L09	17	m	7|m	e	scored	
-f103r_L09	18	g	x	s	scored	align-conflict,clerk-split
+f103r_L09	18	g	x	s	scored	clerk-doubtful,clerk-split
 f103r_L09	19	S			excluded:unaligned	
 f103r_L09	20	tz	tz	i	scored	clerk-split
 f103r_L09	21	g	L|g	r	scored	
@@ -500,7 +500,7 @@ f103r_L09	26	V		d	excluded:off-key
 f103r_L09	27	tz	tz	i	scored	
 f103r_L09	28	L	L|g	r	scored	
 f103r_L09	29	#	#|R|n	t	scored	clerk-split
-f103r_L09	30	d	P|s|z	a	scored	align-conflict
+f103r_L09	30	d	P|s|z	a	scored	alignment-doubtful
 f103r_L09	31	o	Zu|a|o	u	scored	
 f103r_L09	32	o	o	u	scored	
 f103r_L09	33	d		f	excluded:letter-off-key	
@@ -509,9 +509,9 @@ f103r_L09	35	y		r	excluded:key-M-y
 f103r_L09	36	m		e	excluded:align-uncertain	
 f103r_L09	37	x		s	excluded:align-uncertain	
 f103r_L09	38	S		b	excluded:key-M-S	
-f103r_L09	39	P	L|g	r	scored	align-conflict,clerk-split
-f103r_L09	40	p	7|m	e	scored	align-conflict,clerk-split
-f103r_L09	41	4	x	s	scored	align-conflict,clerk-split
+f103r_L09	39	P	L|g	r	scored	clerk-doubtful,clerk-split
+f103r_L09	40	p	7|m	e	scored	clerk-doubtful,clerk-split
+f103r_L09	41	4	x	s	scored	clerk-doubtful,clerk-split
 f103r_L09	42	6		m	excluded:letter-off-key	
 f103r_L09	43	d		a	excluded:align-uncertain	
 f103r_L09	44	tz		i	excluded:align-uncertain	
@@ -522,7 +522,7 @@ f103r_L09	48	z		a	excluded:align-uncertain
 f103r_L09	49	tz		e	excluded:align-uncertain	
 f103r_L09	50	x		p	excluded:letter-off-key	
 f103r_L09	51	d		a	excluded:align-uncertain	
-f103r_L09	52	p	L|g	r	scored	align-conflict
+f103r_L09	52	p	L|g	r	scored	alignment-doubtful
 f103r_L09	53	#		t	excluded:align-uncertain	
 f103r_L09	54	m		e	excluded:align-uncertain	
 f103r_L09	55	p		n	excluded:align-uncertain	
@@ -539,7 +539,7 @@ f103r_L10	3	S		r	excluded:key-M-S
 f103r_L10	4	o		i	excluded:align-uncertain	
 f103r_L10	5	o		i	excluded:align-uncertain	
 f103r_L10	6	x		s	excluded:align-uncertain	
-f103r_L10	7	m	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L10	7	m	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L10	8	g		r	excluded:align-uncertain	
 f103r_L10	9	o		u	excluded:align-uncertain	
 f103r_L10	10	o		u	excluded:align-uncertain	
@@ -597,8 +597,8 @@ f103r_L11	3	@		s	excluded:align-uncertain
 f103r_L11	4	m		e	excluded:align-uncertain	
 f103r_L11	5	x		d	excluded:align-uncertain	
 f103r_L11	6	m		e	excluded:align-uncertain	
-f103r_L11	7	6	d	o	scored	align-conflict
-f103r_L11	8	to	p	n	scored	align-conflict
+f103r_L11	7	6	d	o	scored	alignment-doubtful
+f103r_L11	8	to	p	n	scored	alignment-doubtful
 f103r_L11	9	2		n	excluded:off-key	
 f103r_L11	10	m	7|m	e	scored	
 f103r_L11	11	tz	tz	i	scored	
@@ -610,7 +610,7 @@ f103r_L11	16	#	#|R|n	t	scored
 f103r_L11	17	S		a	excluded:key-M-S	
 f103r_L11	18	p	p	n	scored	
 f103r_L11	19	:	:	c	scored	
-f103r_L11	20	:	7|m	e	scored	align-conflict
+f103r_L11	20	:	7|m	e	scored	alignment-doubtful
 f103r_L11	21	m	7|m	e	scored	
 f103r_L11	22	V		t	excluded:off-key	
 f103r_L11	23	y		a	excluded:key-M-y	
@@ -623,7 +623,7 @@ f103r_L11	29	6		s	excluded:align-uncertain
 f103r_L11	30	6			excluded:unaligned	
 f103r_L11	31	tz		i	excluded:align-uncertain	
 f103r_L11	32	S		e	excluded:key-M-S	
-f103r_L11	33	p	x	s	scored	align-conflict,clerk-split
+f103r_L11	33	p	x	s	scored	clerk-doubtful,clerk-split
 f103r_L11	34	#		t	excluded:align-uncertain	
 f103r_L11	35	R		t	excluded:align-uncertain	
 f103r_L11	36	g		s	excluded:align-uncertain	
@@ -668,7 +668,7 @@ f103r_L12	14	x		s	excluded:align-uncertain
 f103r_L12	15	c		a	excluded:off-key	
 f103r_L12	16	6	6|f|j	l	scored	
 f103r_L12	17	S		l	excluded:key-M-S	
-f103r_L12	18	tz	7|m	e	scored	align-conflict
+f103r_L12	18	tz	7|m	e	scored	alignment-doubtful
 f103r_L12	19	g		r	excluded:align-uncertain	
 f103r_L12	20	S		b	excluded:key-M-S	
 f103r_L12	21	a			excluded:unaligned	
@@ -698,9 +698,9 @@ f103r_L12	44	tz		r	excluded:align-uncertain
 f103r_L12	45	d		o	excluded:align-uncertain	
 f103r_L12	46	p		n	excluded:align-uncertain	
 f103r_L12	47	3		d	excluded:align-uncertain	
-f103r_L12	48	m	p	n	scored	align-conflict,clerk-split
-f103r_L12	49	:	4	g	scored	align-conflict,clerk-split
-f103r_L12	50	:	6|f|j	l	scored	align-conflict,clerk-split
+f103r_L12	48	m	p	n	scored	clerk-doubtful,clerk-split
+f103r_L12	49	:	4	g	scored	clerk-doubtful,clerk-split
+f103r_L12	50	:	6|f|j	l	scored	clerk-doubtful,clerk-split
 f103r_L12	51	m	7|m	e	scored	clerk-split
 f103r_L12	52	d			excluded:unaligned	
 f103r_L12	53	#	#|R|n	t	scored	clerk-split
@@ -709,10 +709,10 @@ f103r_L12	55	c		r	excluded:off-key
 f103r_L12	56	g		r	excluded:align-uncertain	
 f103r_L12	57	S		r	excluded:key-M-S	
 f103r_L12	58	#	#|R|n	t	scored	
-f103r_L12	59	tz	d	o	scored	align-conflict,clerk-split
+f103r_L12	59	tz	d	o	scored	clerk-doubtful,clerk-split
 f103r_L12	60	:		c	excluded:align-uncertain	
 f103r_L12	61	:		c	excluded:align-uncertain	
-f103r_L13	1	@	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L13	1	@	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L13	2	m		s	excluded:align-uncertain	
 f103r_L13	3	2		i	excluded:off-key	
 f103r_L13	4	m		o	excluded:align-uncertain	
@@ -724,7 +724,7 @@ f103r_L13	9	o			excluded:unaligned
 f103r_L13	10	3			excluded:unaligned	
 f103r_L13	11	g		r	excluded:align-uncertain	
 f103r_L13	12	3		m	excluded:letter-off-key	
-f103r_L13	13	L	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L13	13	L	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L13	14	tz	tz	i	scored	clerk-split
 f103r_L13	15	6			excluded:unaligned	
 f103r_L13	16	m	7|m	e	scored	clerk-split
@@ -733,49 +733,49 @@ f103r_L13	18	#	#|R|n	t	scored	clerk-split
 f103r_L13	19	S		e	excluded:key-M-S	
 f103r_L13	20	6			excluded:unaligned	
 f103r_L13	21	tz	tz	i	scored	
-f103r_L13	22	o	6|f|j|o	l	scored	align-conflict
-f103r_L13	23	o	o	l	scored	align-conflict
-f103r_L13	24	m	p	n	scored	align-conflict
+f103r_L13	22	o	6|f|j|o	l	scored	alignment-doubtful
+f103r_L13	23	o	o	l	scored	alignment-doubtful
+f103r_L13	24	m	p	n	scored	alignment-doubtful
 f103r_L13	25	m	7|m	e	scored	
 f103r_L13	26	V		s	excluded:off-key	
 f103r_L13	27	:	:	c	scored	
-f103r_L13	28	:	P|s|z	a	scored	align-conflict
-f103r_L13	29	m	Zu|a|oo	u	scored	align-conflict
+f103r_L13	28	:	P|s|z	a	scored	alignment-doubtful
+f103r_L13	29	m	Zu|a|oo	u	scored	alignment-doubtful
 f103r_L13	30	d	d	o	scored	
 f103r_L13	31	#	#|R|n	t	scored	
 f103r_L13	32	m	7|m	e	scored	clerk-split
 f103r_L13	33	:		b	excluded:letter-off-key	
-f103r_L13	34	:	L|g	r	scored	align-conflict
+f103r_L13	34	:	L|g	r	scored	alignment-doubtful
 f103r_L13	35	d	d	o	scored	
 f103r_L13	36	o	Zu|a|o	u	scored	
 f103r_L13	37	o	o	u	scored	
 f103r_L13	38	g	L|g	r	scored	clerk-split
 f103r_L13	39	R	#|R|n	t	scored	clerk-split
-f103r_L13	40	3	L|g	r	scored	align-conflict,clerk-split
+f103r_L13	40	3	L|g	r	scored	clerk-doubtful,clerk-split
 f103r_L13	41	m	7|m	e	scored	clerk-split
 f103r_L13	42	o	Zu|a|o	u	scored	clerk-split
 f103r_L13	43	o	o	u	scored	clerk-split
 f103r_L13	44	tz	tz	i	scored	clerk-split
 f103r_L13	45	x	x	s	scored	clerk-split
 f103r_L13	46	#		m	excluded:letter-off-key	
-f103r_L13	47	g	7|m	e	scored	align-conflict,clerk-split
+f103r_L13	47	g	7|m	e	scored	clerk-doubtful,clerk-split
 f103r_L13	48	:	:	c	scored	
-f103r_L13	49	d	7|m	e	scored	align-conflict
+f103r_L13	49	d	7|m	e	scored	key-doubtful
 f103r_L13	50	tz			excluded:unaligned	
 f103r_L13	51	x	x	s	scored	
 f103r_L13	52	d	d	o	scored	
 f103r_L13	53	o		f	excluded:letter-off-key	
 f103r_L13	54	o		f	excluded:letter-off-key	
-f103r_L14	1	to	L|g	r	scored	align-conflict
+f103r_L14	1	to	L|g	r	scored	alignment-doubtful
 f103r_L14	2	2		e	excluded:off-key	
 f103r_L14	3	S		b	excluded:key-M-S	
 f103r_L14	4	#			excluded:unaligned	
 f103r_L14	5	g	L|g	r	scored	clerk-split
 f103r_L14	6	m	7|m	e	scored	clerk-split
-f103r_L14	7	tz	:	c	scored	align-conflict,clerk-split
+f103r_L14	7	tz	:	c	scored	clerk-doubtful,clerk-split
 f103r_L14	8	d	d	o	scored	clerk-split
-f103r_L14	9	o	o|tz	i	scored	align-conflict,clerk-split
-f103r_L14	10	o	o	i	scored	align-conflict,clerk-split
+f103r_L14	9	o	o|tz	i	scored	clerk-doubtful,clerk-split
+f103r_L14	10	o	o	i	scored	clerk-doubtful,clerk-split
 f103r_L14	11	g	L|g	r	scored	clerk-split
 f103r_L14	12	x			excluded:unaligned	
 f103r_L14	13	k			excluded:unaligned	
@@ -790,7 +790,7 @@ f103r_L14	21	p	p	n	scored
 f103r_L14	22	d	d	o	scored	
 f103r_L14	23	#			excluded:unaligned	
 f103r_L14	24	tz	tz	i	scored	
-f103r_L14	25	6	x	s	scored	align-conflict
+f103r_L14	25	6	x	s	scored	
 f103r_L14	26	@	@|to	q	scored	
 f103r_L14	27	a	Zu|a|oo	u	scored	
 f103r_L14	28	y		s	excluded:key-M-y	
@@ -798,13 +798,13 @@ f103r_L14	29	d	d	o	scored	clerk-split
 f103r_L14	30	e		n	excluded:off-key	
 f103r_L14	31	y			excluded:unaligned	
 f103r_L14	32	m		e	excluded:align-uncertain	
-f103r_L14	33	d	L|g	r	scored	align-conflict
+f103r_L14	33	d	L|g	r	scored	alignment-doubtful
 f103r_L14	34	m		e	excluded:align-uncertain	
 f103r_L14	35	x		s	excluded:align-uncertain	
 f103r_L14	36	:		u	excluded:align-uncertain	
 f103r_L14	37	:		s	excluded:align-uncertain	
 f103r_L14	38	d		e	excluded:align-uncertain	
-f103r_L14	39	d	L|g	r	scored	align-conflict
+f103r_L14	39	d	L|g	r	scored	alignment-doubtful
 f103r_L14	40	d		u	excluded:align-uncertain	
 f103r_L14	41	tz		i	excluded:align-uncertain	
 f103r_L14	42	x		c	excluded:align-uncertain	
@@ -819,26 +819,26 @@ f103r_L14	50	d		a	excluded:align-uncertain
 f103r_L14	51	e		i	excluded:off-key	
 f103r_L14	52	y			excluded:unaligned	
 f103r_L14	53	m	7|m	e	scored	clerk-split
-f103r_L14	54	@	x	s	scored	align-conflict,clerk-split
+f103r_L14	54	@	x	s	scored	clerk-doubtful,clerk-split
 f103r_L15	1	y		t	excluded:key-M-y	
 f103r_L15	2	S		e	excluded:key-M-S	
 f103r_L15	3	3			excluded:unaligned	
 f103r_L15	4	m		e	excluded:align-uncertain	
 f103r_L15	5	6		l	excluded:align-uncertain	
-f103r_L15	6	#	Zu|a|oo	u	scored	align-conflict
+f103r_L15	6	#	Zu|a|oo	u	scored	alignment-doubtful
 f103r_L15	7	d		o	excluded:align-uncertain	
-f103r_L15	8	p	3|h|k	d	scored	align-conflict
+f103r_L15	8	p	3|h|k	d	scored	alignment-doubtful
 f103r_L15	9	m	7|m	e	scored	
-f103r_L15	10	#	P|s|z	a	scored	align-conflict
+f103r_L15	10	#	P|s|z	a	scored	key-doubtful
 f103r_L15	11	g	L|g	r	scored	
-f103r_L15	12	:	3|h|k	d	scored	align-conflict
+f103r_L15	12	:	3|h|k	d	scored	alignment-doubtful
 f103r_L15	13	:			excluded:unaligned	
 f103r_L15	14	m	7|m	e	scored	
-f103r_L15	15	a	x	s	scored	align-conflict,clerk-split
+f103r_L15	15	a	x	s	scored	clerk-doubtful,clerk-split
 f103r_L15	16	tz	tz	i	scored	clerk-split
 f103r_L15	17	m	7|m	e	scored	clerk-split
 f103r_L15	18	V		n	excluded:off-key	
-f103r_L15	19	#	4	g	scored	align-conflict
+f103r_L15	19	#	4	g	scored	
 f103r_L15	20	m	7|m	e	scored	
 f103r_L15	21	p	p	n	scored	
 f103r_L15	22	k	3|h|k	d	scored	
@@ -849,16 +849,16 @@ f103r_L15	26	o	Zu|a|o	u	scored
 f103r_L15	27	o	o	u	scored	
 f103r_L15	28	p			excluded:unaligned	
 f103r_L15	29	m	7|m	e	scored	
-f103r_L15	30	x	L|g	r	scored	align-conflict
+f103r_L15	30	x	L|g	r	scored	alignment-doubtful
 f103r_L15	31	#	#|R|n	t	scored	
-f103r_L15	32	:	p	n	scored	align-conflict
+f103r_L15	32	:	p	n	scored	alignment-doubtful
 f103r_L15	33	:	:	c	scored	
 f103r_L15	34	m	7|m	e	scored	
 f103r_L15	35	j	6|f|j	l	scored	
 f103r_L15	36	o	Zu|a|o	u	scored	
 f103r_L15	37	o	o	u	scored	
 f103r_L15	38	3		p	excluded:letter-off-key	
-f103r_L15	39	@	6|f|j	l	scored	align-conflict
+f103r_L15	39	@	6|f|j	l	scored	alignment-doubtful
 f103r_L15	40	m			excluded:unaligned	
 f103r_L15	41	x			excluded:unaligned	
 f103r_L15	42	tz		i	excluded:align-uncertain	
@@ -881,12 +881,12 @@ f103r_L16	3	p		n	excluded:align-uncertain
 f103r_L16	4	4		m	excluded:letter-off-key	
 f103r_L16	5	m	7|m	e	scored	
 f103r_L16	6	4		m	excluded:letter-off-key	
-f103r_L16	7	m	P|s|z	a	scored	align-conflict
+f103r_L16	7	m	P|s|z	a	scored	key-doubtful
 f103r_L16	8	p	p	n	scored	
 f103r_L16	9	R			excluded:unaligned	
 f103r_L16	10	3	3|h|k	d	scored	
 f103r_L16	11	m	7|m	e	scored	
-f103r_L16	12	d	L|g	r	scored	align-conflict
+f103r_L16	12	d	L|g	r	scored	
 f103r_L16	13	:	:	c	scored	
 f103r_L16	14	:			excluded:unaligned	
 f103r_L16	15	d			excluded:unaligned	
@@ -896,7 +896,7 @@ f103r_L16	18	m		e	excluded:align-uncertain
 f103r_L16	19	V		q	excluded:off-key	
 f103r_L16	20	y		u	excluded:key-M-y	
 f103r_L16	21	y		i	excluded:key-M-y	
-f103r_L16	22	m	6|f|j	l	scored	align-conflict
+f103r_L16	22	m	6|f|j	l	scored	alignment-doubtful
 f103r_L16	23	o		u	excluded:align-uncertain	
 f103r_L16	24	o		u	excluded:align-uncertain	
 f103r_L16	25	y		a	excluded:key-M-y	
@@ -906,23 +906,23 @@ f103r_L16	28	S		e	excluded:key-M-S
 f103r_L16	29	tz	tz	i	scored	
 f103r_L16	30	:	:	c	scored	clerk-split
 f103r_L16	31	#	#|R|n	t	scored	
-f103r_L16	32	m	tz	i	scored	align-conflict
+f103r_L16	32	m	tz	i	scored	key-doubtful
 f103r_L16	33	p	p	n	scored	
 f103r_L16	34	#	#|R|n	t	scored	
-f103r_L16	35	m	d	o	scored	align-conflict
+f103r_L16	35	m	d	o	scored	alignment-doubtful
 f103r_L16	36	p	p	n	scored	
 f103r_L16	37	k	3|h|k	d	scored	
 f103r_L16	38	g			excluded:unaligned	
 f103r_L16	39	m	7|m	e	scored	
 f103r_L16	40	m	7|m	e	scored	clerk-split
-f103r_L16	41	d	x	s	scored	align-conflict,clerk-split
+f103r_L16	41	d	x	s	scored	clerk-doubtful,clerk-split
 f103r_L16	42	#	#|R|n	t	scored	clerk-split
 f103r_L16	43	g	L|g	r	scored	
 f103r_L16	44	m	7|m	e	scored	
 f103r_L16	45	#	#|R|n	t	scored	
 f103r_L16	46	g	L|g	r	scored	
-f103r_L16	47	m	L|g	r	scored	align-conflict
-f103r_L16	48	d	tz	i	scored	align-conflict
+f103r_L16	47	m	L|g	r	scored	alignment-doubtful
+f103r_L16	48	d	tz	i	scored	alignment-doubtful
 f103r_L16	49	S		u	excluded:key-M-S	
 f103r_L16	50	3			excluded:unaligned	
 f103r_L16	51	o			excluded:unaligned	
@@ -935,17 +935,17 @@ f103r_L17	5	m	7|m	e	scored	clerk-split
 f103r_L17	6	o	Zu|a|o	u	scored	clerk-split
 f103r_L17	7	o	o	u	scored	clerk-split
 f103r_L17	8	g	L|g	r	scored	clerk-split
-f103r_L17	9	a	3|h|k	d	scored	align-conflict
+f103r_L17	9	a	3|h|k	d	scored	alignment-doubtful
 f103r_L17	10	m	7|m	e	scored	
 f103r_L17	11	V		p	excluded:off-key	
 f103r_L17	12	o	Zu|a|o	u	scored	
 f103r_L17	13	o	o	u	scored	
-f103r_L17	14	m	tz	i	scored	align-conflict
-f103r_L17	15	m	x	s	scored	align-conflict
+f103r_L17	14	m	tz	i	scored	key-doubtful
+f103r_L17	15	m	x	s	scored	alignment-doubtful
 f103r_L17	16	#	#|R|n	t	scored	
 f103r_L17	17	V		o	excluded:off-key	
 f103r_L17	18	y		u	excluded:key-M-y	
-f103r_L17	19	m	@|to	q	scored	align-conflict
+f103r_L17	19	m	@|to	q	scored	alignment-doubtful
 f103r_L17	20	o	Zu|a|o	u	scored	
 f103r_L17	21	o	o	u	scored	
 f103r_L17	22	g	L|g	r	scored	
@@ -954,11 +954,11 @@ f103r_L17	24	m	7|m	e	scored
 f103r_L17	25	V		o	excluded:off-key	
 f103r_L17	26	o	Zu|a|o	u	scored	
 f103r_L17	27	o	o	u	scored	
-f103r_L17	28	d	x	s	scored	align-conflict
+f103r_L17	28	d	x	s	scored	key-doubtful
 f103r_L17	29	3	3|h|k	d	scored	
 f103r_L17	30	m	7|m	e	scored	
-f103r_L17	31	h	4	g	scored	align-conflict
-f103r_L17	32	d	7|m	e	scored	align-conflict
+f103r_L17	31	h	4	g	scored	alignment-doubtful
+f103r_L17	32	d	7|m	e	scored	key-doubtful
 f103r_L17	33	p		n	excluded:align-uncertain	
 f103r_L17	34	y		h	excluded:key-M-y	
 f103r_L17	35	S		m	excluded:key-M-S	
@@ -985,17 +985,17 @@ f103r_L17	55	6		m	excluded:letter-off-key
 f103r_L17	56	tz	tz	i	scored	
 f103r_L17	57	8			excluded:unaligned	
 f103r_L17	58	6	6|f|j	l	scored	
-f103r_L17	59	@	#|R|n	t	scored	align-conflict
+f103r_L17	59	@	#|R|n	t	scored	key-doubtful
 f103r_L18	1	d	d	o	scored	
 f103r_L18	2	p	p	n	scored	
 f103r_L18	3	#	#|R|n	t	scored	
 f103r_L18	4	m	7|m	e	scored	
-f103r_L18	5	d	p	n	scored	align-conflict
+f103r_L18	5	d	p	n	scored	
 f103r_L18	6	#	#|R|n	t	scored	
 f103r_L18	7	m	7|m	e	scored	
 f103r_L18	8	S		n	excluded:key-M-S	
 f103r_L18	9	k	3|h|k	d	scored	
-f103r_L18	10	g	p	n	scored	align-conflict
+f103r_L18	10	g	p	n	scored	
 f103r_L18	11	m	7|m	e	scored	
 f103r_L18	12	V		t	excluded:off-key	
 f103r_L18	13	o		c	excluded:off-key	
@@ -1006,10 +1006,10 @@ f103r_L18	17	c		l	excluded:off-key
 f103r_L18	18	S		o	excluded:key-M-S	
 f103r_L18	19	g	L|g	r	scored	
 f103r_L18	20	h	3|h|k	d	scored	
-f103r_L18	21	d	7|m	e	scored	align-conflict,clerk-split
+f103r_L18	21	d	7|m	e	scored	clerk-doubtful,clerk-split
 f103r_L18	22	p	p	n	scored	clerk-split
-f103r_L18	23	3	6|f|j	l	scored	align-conflict,clerk-split
-f103r_L18	24	tz	L|g	r	scored	align-conflict
+f103r_L18	23	3	6|f|j	l	scored	clerk-doubtful,clerk-split
+f103r_L18	24	tz	L|g	r	scored	key-doubtful
 f103r_L18	25	m	7|m	e	scored	
 f103r_L18	26	4	4	g	scored	
 f103r_L18	27	a			excluded:unaligned	
@@ -1019,7 +1019,7 @@ f103r_L18	30	#		t	excluded:align-uncertain
 f103r_L18	31	y		s	excluded:key-M-y	
 f103r_L18	32	o		s	excluded:off-key	
 f103r_L18	33	m	7|m	e	scored	
-f103r_L18	34	3	7|m	e	scored	align-conflict
+f103r_L18	34	3	7|m	e	scored	alignment-doubtful
 f103r_L18	35	S		r	excluded:key-M-S	
 f103r_L18	36	V		o	excluded:off-key	
 f103r_L18	37	S		y	excluded:key-M-S	
@@ -1032,8 +1032,8 @@ f103r_L18	43	h		f	excluded:letter-off-key
 f103r_L18	44	m		a	excluded:align-uncertain	
 f103r_L18	45	d		i	excluded:align-uncertain	
 f103r_L18	46	:		c	excluded:align-uncertain	
-f103r_L18	47	:	#|R|n	t	scored	align-conflict
-f103r_L18	48	d	7|m	e	scored	align-conflict
+f103r_L18	47	:	#|R|n	t	scored	alignment-doubtful
+f103r_L18	48	d	7|m	e	scored	key-doubtful
 f103r_L18	49	y		n	excluded:key-M-y	
 f103r_L18	50	V		t	excluded:off-key	
 f103r_L18	51	m		e	excluded:align-uncertain	
@@ -1044,28 +1044,28 @@ f103r_L19	1	@			excluded:unaligned
 f103r_L19	2	m		e	excluded:align-uncertain	
 f103r_L19	3	2			excluded:unaligned	
 f103r_L19	4	m	7|m	e	scored	
-f103r_L19	5	6	#|R|n	t	scored	align-conflict
-f103r_L19	6	tz	L|g	r	scored	align-conflict
+f103r_L19	5	6	#|R|n	t	scored	alignment-doubtful
+f103r_L19	6	tz	L|g	r	scored	key-doubtful
 f103r_L19	7	8		e	excluded:off-key	
-f103r_L19	8	6	#|R|n	t	scored	align-conflict,clerk-split
-f103r_L19	9	p	L|g	r	scored	align-conflict,clerk-split
+f103r_L19	8	6	#|R|n	t	scored	clerk-doubtful,clerk-split
+f103r_L19	9	p	L|g	r	scored	clerk-doubtful,clerk-split
 f103r_L19	10	m	7|m	e	scored	clerk-split
 f103r_L19	11	x		s	excluded:align-uncertain	
 f103r_L19	12	m	7|m	e	scored	
 f103r_L19	13	g		r	excluded:align-uncertain	
 f103r_L19	14	S		b	excluded:key-M-S	
-f103r_L19	15	3	7|m	e	scored	align-conflict
+f103r_L19	15	3	7|m	e	scored	alignment-doubtful
 f103r_L19	16	S		t	excluded:key-M-S	
 f103r_L19	17	6	6|f|j	l	scored	
 f103r_L19	18	S		e	excluded:key-M-S	
 f103r_L19	19	c		u	excluded:off-key	
 f103r_L19	20	g	L|g	r	scored	
-f103r_L19	21	4	Zu|a|oo	u	scored	align-conflict
+f103r_L19	21	4	Zu|a|oo	u	scored	alignment-doubtful
 f103r_L19	22	d	d	o	scored	
 f103r_L19	23	b		d	excluded:key-M-b	
 f103r_L19	24	d		o	excluded:align-uncertain	
-f103r_L19	25	@	P|s|z	a	scored	align-conflict,clerk-split
-f103r_L19	26	:	p	n	scored	align-conflict,clerk-split
+f103r_L19	25	@	P|s|z	a	scored	clerk-doubtful,clerk-split
+f103r_L19	26	:	p	n	scored	clerk-doubtful,clerk-split
 f103r_L19	27	:	:	c	scored	clerk-split
 f103r_L19	28	m	7|m	e	scored	clerk-split
 f103r_L19	29	a	Zu|a|oo	u	scored	clerk-split
@@ -1084,12 +1084,12 @@ f103r_L19	41	m	7|m	e	scored
 f103r_L19	42	c		g	excluded:off-key	
 f103r_L19	43	o	Zu|a|o	u	scored	
 f103r_L19	44	o	o	u	scored	
-f103r_L19	45	tz	6|f|j	l	scored	align-conflict
+f103r_L19	45	tz	6|f|j	l	scored	
 f103r_L19	46	8		a	excluded:off-key	
 f103r_L19	47	Z		m	excluded:off-key	
 f103r_L19	48	S		b	excluded:key-M-S	
-f103r_L19	49	:	P|s|z	a	scored	align-conflict
-f103r_L19	50	:	3|h|k	d	scored	align-conflict
+f103r_L19	49	:	P|s|z	a	scored	alignment-doubtful
+f103r_L19	50	:	3|h|k	d	scored	alignment-doubtful
 f103r_L19	51	m		e	excluded:align-uncertain	
 f103r_L19	52	d		u	excluded:align-uncertain	
 f103r_L19	53	c			excluded:unaligned	
@@ -1117,12 +1117,12 @@ f103r_L20	15	x		s	excluded:align-uncertain
 f103r_L20	16	k		p	excluded:letter-off-key	
 f103r_L20	17	d		o	excluded:align-uncertain	
 f103r_L20	18	p		n	excluded:align-uncertain	
-f103r_L20	19	#	3|h|k	d	scored	align-conflict,clerk-split
+f103r_L20	19	#	3|h|k	d	scored	clerk-doubtful,clerk-split
 f103r_L20	20	m			excluded:unaligned	
 f103r_L20	21	V			excluded:unaligned	
 f103r_L20	22	g		r	excluded:align-uncertain	
 f103r_L20	23	m		e	excluded:align-uncertain	
-f103r_L20	24	g	4	g	scored	align-conflict
+f103r_L20	24	g	4	g	scored	alignment-doubtful
 f103r_L20	25	S		a	excluded:key-M-S	
 f103r_L20	26	g		r	excluded:align-uncertain	
 f103r_L20	27	d			excluded:unaligned	
@@ -1149,22 +1149,22 @@ f103r_L20	47	d	d	o	scored
 f103r_L20	48	k		b	excluded:letter-off-key	
 f103r_L20	49	tz	tz	i	scored	
 f103r_L20	50	:		m	excluded:letter-off-key	
-f103r_L20	51	:	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L20	51	:	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L20	52	#		t	excluded:align-uncertain	
-f103r_L20	53	@	P|s|z	a	scored	align-conflict
+f103r_L20	53	@	P|s|z	a	scored	key-doubtful
 f103r_L21	1	o		p	excluded:letter-off-key	
 f103r_L21	2	o		p	excluded:letter-off-key	
 f103r_L21	3	m	7|m	e	scored	
 f103r_L21	4	V		s	excluded:off-key	
 f103r_L21	5	o	Zu|a|o	u	scored	
 f103r_L21	6	o	o	u	scored	
-f103r_L21	7	@	Zu|a|oo	u	scored	align-conflict
+f103r_L21	7	@	Zu|a|oo	u	scored	
 f103r_L21	8	m	7|m	e	scored	
 f103r_L21	9	p	p	n	scored	
 f103r_L21	10	:	:	c	scored	
 f103r_L21	11	:			excluded:unaligned	
 f103r_L21	12	m	7|m	e	scored	
-f103r_L21	13	d	x	s	scored	align-conflict
+f103r_L21	13	d	x	s	scored	key-doubtful
 f103r_L21	14	#	#|R|n	t	scored	
 f103r_L21	15	m	7|m	e	scored	
 f103r_L21	16	:	:	c	scored	
@@ -1181,7 +1181,7 @@ f103r_L21	26	m	7|m	e	scored	clerk-split
 f103r_L21	27	p	p	n	scored	clerk-split
 f103r_L21	28	a	Zu|a|oo	u	scored	clerk-split
 f103r_L21	29	d	d	o	scored	clerk-split
-f103r_L21	30	3	tz	i	scored	align-conflict,clerk-split
+f103r_L21	30	3	tz	i	scored	clerk-doubtful,clerk-split
 f103r_L21	31	m	7|m	e	scored	clerk-split
 f103r_L21	32	S		a	excluded:key-M-S	
 f103r_L21	33	o	Zu|a|o	u	scored	
@@ -1190,7 +1190,7 @@ f103r_L21	35	L			excluded:unaligned
 f103r_L21	36	d			excluded:unaligned	
 f103r_L21	37	3			excluded:unaligned	
 f103r_L21	38	:	:	c	scored	
-f103r_L21	39	:	P|s|z	a	scored	align-conflict
+f103r_L21	39	:	P|s|z	a	scored	
 f103r_L21	40	S			excluded:unaligned	
 f103r_L21	41	#	#|R|n	t	scored	
 f103r_L21	42	y		h	excluded:key-M-y	
@@ -1201,7 +1201,7 @@ f103r_L21	46	tz	tz	i	scored
 f103r_L21	47	:	:	c	scored	
 f103r_L21	48	:			excluded:unaligned	
 f103r_L21	49	@	@|to	q	scored	
-f103r_L21	50	m	Zu|a|oo	u	scored	align-conflict
+f103r_L21	50	m	Zu|a|oo	u	scored	
 f103r_L21	51	x			excluded:unaligned	
 f103r_L21	52	m	7|m	e	scored	
 f103r_L21	53	c		p	excluded:off-key	
@@ -1224,19 +1224,19 @@ f103r_L22	14	V		l	excluded:off-key
 f103r_L22	15	y			excluded:unaligned	
 f103r_L22	16	o	Zu|a|o	u	scored	
 f103r_L22	17	o	o	u	scored	
-f103r_L22	18	m	P|s|z	a	scored	align-conflict
+f103r_L22	18	m	P|s|z	a	scored	key-doubtful
 f103r_L22	19	V		l	excluded:off-key	
 f103r_L22	20	y		a	excluded:key-M-y	
 f103r_L22	21	o			excluded:unaligned	
 f103r_L22	22	S			excluded:unaligned	
 f103r_L22	23	@	@|to	q	scored	
 f103r_L22	24	m	7|m	e	scored	
-f103r_L22	25	x	6|f|j	l	scored	align-conflict
+f103r_L22	25	x	6|f|j	l	scored	
 f103r_L22	26	m			excluded:unaligned	
 f103r_L22	27	j	6|f|j	l	scored	
 f103r_L22	28	m	7|m	e	scored	
 f103r_L22	29	tz	tz	i	scored	
-f103r_L22	30	L	7|m	e	scored	align-conflict
+f103r_L22	30	L	7|m	e	scored	key-doubtful
 f103r_L22	31	Z		l	excluded:off-key	
 f103r_L22	32	y			excluded:unaligned	
 f103r_L22	33	o	Zu|a|o	u	scored	
@@ -1247,12 +1247,12 @@ f103r_L22	37	V		n	excluded:off-key
 f103r_L22	38	o	Zu|a|o	u	scored	
 f103r_L22	39	o	o	u	scored	
 f103r_L22	40	d	d	o	scored	
-f103r_L22	41	3	tz	i	scored	align-conflict
+f103r_L22	41	3	tz	i	scored	
 f103r_L22	42	m	7|m	e	scored	
 f103r_L22	43	m	7|m	e	scored	
 f103r_L22	44	p	p	n	scored	
 f103r_L22	45	m	7|m	e	scored	
-f103r_L22	46	d	x	s	scored	align-conflict
+f103r_L22	46	d	x	s	scored	key-doubtful
 f103r_L22	47	c		p	excluded:off-key	
 f103r_L22	48	S		a	excluded:key-M-S	
 f103r_L22	49	tz			excluded:unaligned	
@@ -1263,7 +1263,7 @@ f103r_L22	53	6	6|f|j	l	scored
 f103r_L22	54	m	7|m	e	scored	
 f103r_L22	55	#	#|R|n	t	scored	
 f103r_L22	56	R	#|R|n	t	scored	clerk-split
-f103r_L23	1	4	L|g	r	scored	align-conflict,clerk-split
+f103r_L23	1	4	L|g	r	scored	clerk-doubtful,clerk-split
 f103r_L23	2	S		a	excluded:key-M-S	
 f103r_L23	3	k	3|h|k	d	scored	clerk-split
 f103r_L23	4	o	Zu|a|o	u	scored	clerk-split
@@ -1282,18 +1282,18 @@ f103r_L23	16	p	p	n	scored	clerk-split
 f103r_L23	17	:	:	c	scored	clerk-split
 f103r_L23	18	:			excluded:unaligned	
 f103r_L23	19	d	d	o	scored	clerk-split
-f103r_L23	20	3	tz	i	scored	align-conflict,clerk-split
+f103r_L23	20	3	tz	i	scored	clerk-doubtful,clerk-split
 f103r_L23	21	d		z	excluded:letter-off-key	
 f103r_L23	22	tz	tz	i	scored	clerk-split
 f103r_L23	23	m	7|m	e	scored	clerk-split
 f103r_L23	24	d	d	o	scored	clerk-split
 f103r_L23	25	c		y	excluded:off-key	
 f103r_L23	26	m	7|m	e	scored	clerk-split
-f103r_L23	27	g	x	s	scored	align-conflict,clerk-split
+f103r_L23	27	g	x	s	scored	clerk-doubtful,clerk-split
 f103r_L23	28	m			excluded:unaligned	
 f103r_L23	29	d			excluded:unaligned	
 f103r_L23	30	:	:	c	scored	clerk-split
-f103r_L23	31	:	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L23	31	:	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L23	32	S			excluded:unaligned	
 f103r_L23	33	o	Zu|a|o	u	scored	clerk-split
 f103r_L23	34	o	o	u	scored	clerk-split
@@ -1308,16 +1308,16 @@ f103r_L23	42	to	@|to	q	scored	clerk-split
 f103r_L23	43	#		z	excluded:letter-off-key	
 f103r_L23	44	g	L|g	r	scored	clerk-split
 f103r_L23	45	S		e	excluded:key-M-S	
-f103r_L23	46	tz	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L23	46	tz	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L23	47	:	:	c	scored	clerk-split
 f103r_L23	48	:			excluded:unaligned	
 f103r_L23	49	#	#|R|n	t	scored	clerk-split
-f103r_L23	50	m	tz	i	scored	align-conflict,clerk-split
+f103r_L23	50	m	tz	i	scored	clerk-doubtful,clerk-split
 f103r_L23	51	g			excluded:unaligned	
 f103r_L23	52	d	d	o	scored	clerk-split
 f103r_L23	53	p		n	excluded:align-uncertain	
 f103r_L23	54	#		p	excluded:letter-off-key	
-f103r_L23	55	@	P|s|z	a	scored	align-conflict
+f103r_L23	55	@	P|s|z	a	scored	key-doubtful
 f103r_L23	56	3			excluded:unaligned	
 f103r_L23	57	L	L|g	r	scored	
 f103r_L24	1	c		l	excluded:off-key	
@@ -1326,7 +1326,7 @@ f103r_L24	3	g			excluded:unaligned
 f103r_L24	4	y			excluded:unaligned	
 f103r_L24	5	y			excluded:unaligned	
 f103r_L24	6	m	7|m	e	scored	
-f103r_L24	7	d	x	s	scored	align-conflict
+f103r_L24	7	d	x	s	scored	key-doubtful
 f103r_L24	8	m	7|m	e	scored	
 f103r_L24	9	tz	tz	i	scored	
 f103r_L24	10	4	4	g	scored	
@@ -1338,13 +1338,13 @@ f103r_L24	15	g	L|g	r	scored
 f103r_L24	16	x	x	s	scored	clerk-split
 f103r_L24	17	#	#|R|n	t	scored	clerk-split
 f103r_L24	18	a	Zu|a|oo	u	scored	clerk-split
-f103r_L24	19	:	d	o	scored	align-conflict,clerk-split
-f103r_L24	20	:	6|f|j	l	scored	align-conflict,clerk-split
+f103r_L24	19	:	d	o	scored	clerk-doubtful,clerk-split
+f103r_L24	20	:	6|f|j	l	scored	clerk-doubtful,clerk-split
 f103r_L24	21	6	6|f|j	l	scored	
 f103r_L24	22	m	7|m	e	scored	
 f103r_L24	23	S		c	excluded:key-M-S	
-f103r_L24	24	o	P|o|s|z	a	scored	align-conflict
-f103r_L24	25	o	o	a	scored	align-conflict
+f103r_L24	24	o	P|o|s|z	a	scored	alignment-doubtful
+f103r_L24	25	o	o	a	scored	alignment-doubtful
 f103r_L24	26	c		t	excluded:off-key	
 f103r_L24	27	m		h	excluded:letter-off-key	
 f103r_L24	28	x		o	excluded:align-uncertain	
@@ -1359,7 +1359,7 @@ f103r_L24	36	S		a	excluded:key-M-S
 f103r_L24	37	S		a	excluded:key-M-S	
 f103r_L24	38	o	Zu|a|o	u	scored	clerk-split
 f103r_L24	39	o	o	u	scored	clerk-split
-f103r_L24	40	d	x	s	scored	align-conflict,clerk-split
+f103r_L24	40	d	x	s	scored	clerk-doubtful,clerk-split
 f103r_L24	41	tz	tz	i	scored	clerk-split
 f103r_L24	42	g	L|g	r	scored	clerk-split
 f103r_L24	43	m	7|m	e	scored	clerk-split
@@ -1377,7 +1377,7 @@ f103r_L24	54	tz	tz	i	scored	clerk-split
 f103r_L24	55	8		l	excluded:off-key	
 f103r_L24	56	o	Zu|a|o	u	scored	
 f103r_L24	57	o	o	u	scored	
-f103r_L24	58	d	tz	i	scored	align-conflict,clerk-split
+f103r_L24	58	d	tz	i	scored	clerk-doubtful,clerk-split
 f103r_L25	1	3		m	excluded:letter-off-key	
 f103r_L25	2	m	7|m	e	scored	clerk-split
 f103r_L25	3	2		t	excluded:off-key	
@@ -1386,19 +1386,19 @@ f103r_L25	5	tz	tz	i	scored	clerk-split
 f103r_L25	6	p	p	n	scored	clerk-split
 f103r_L25	7	c		d	excluded:off-key	
 f103r_L25	8	d	d	o	scored	clerk-split
-f103r_L25	9	f	tz	i	scored	align-conflict,clerk-split
+f103r_L25	9	f	tz	i	scored	clerk-doubtful,clerk-split
 f103r_L25	10	S		b	excluded:key-M-S	
 f103r_L25	11	V		o	excluded:off-key	
 f103r_L25	12	p		w	excluded:letter-off-key	
 f103r_L25	13	m	7|m	e	scored	
-f103r_L25	14	o	#|R|n|o	t	scored	align-conflict
-f103r_L25	15	o	o	t	scored	align-conflict
+f103r_L25	14	o	#|R|n|o	t	scored	
+f103r_L25	15	o	o	t	scored	
 f103r_L25	16	g	L|g	r	scored	
 f103r_L25	17	m	7|m	e	scored	
 f103r_L25	18	2		d	excluded:off-key	
 f103r_L25	19	m	7|m	e	scored	
 f103r_L25	20	p	p	n	scored	
-f103r_L25	21	#	7|m	e	scored	align-conflict
+f103r_L25	21	#	7|m	e	scored	key-doubtful
 f103r_L25	22	S		u	excluded:key-M-S	
 f103r_L25	23	g	L|g	r	scored	
 f103r_L25	24	S		a	excluded:key-M-S	
@@ -1407,12 +1407,12 @@ f103r_L25	26	:	:	c	scored
 f103r_L25	27	:			excluded:unaligned	
 f103r_L25	28	#		t	excluded:align-uncertain	
 f103r_L25	29	m		e	excluded:align-uncertain	
-f103r_L25	30	#	Zu|a|oo	u	scored	align-conflict
+f103r_L25	30	#	Zu|a|oo	u	scored	alignment-doubtful
 f103r_L25	31	g	L|g	r	scored	
 f103r_L25	32	S		e	excluded:key-M-S	
 f103r_L25	33	tz		m	excluded:letter-off-key	
-f103r_L25	34	:	7|m	e	scored	align-conflict
-f103r_L25	35	:	p	n	scored	align-conflict
+f103r_L25	34	:	7|m	e	scored	alignment-doubtful
+f103r_L25	35	:	p	n	scored	alignment-doubtful
 f103r_L25	36	#	#|R|n	t	scored	
 f103r_L25	37	R	#|R|n	t	scored	
 f103r_L25	38	d	d	o	scored	
@@ -1436,9 +1436,9 @@ f103r_L25	55	m	7|m	e	scored	clerk-split
 f103r_L25	56	:	:	c	scored	clerk-split
 f103r_L25	57	:			excluded:unaligned	
 f103r_L25	58	d	d	o	scored	clerk-split
-f103r_L25	59	p	Zu|a|oo	u	scored	align-conflict,clerk-split
-f103r_L26	1	:	Zu|a|oo	u	scored	align-conflict,clerk-split
-f103r_L26	2	:	L|g	r	scored	align-conflict,clerk-split
+f103r_L25	59	p	Zu|a|oo	u	scored	clerk-doubtful,clerk-split
+f103r_L26	1	:	Zu|a|oo	u	scored	clerk-doubtful,clerk-split
+f103r_L26	2	:	L|g	r	scored	clerk-doubtful,clerk-split
 f103r_L26	3	tz			excluded:unaligned	
 f103r_L26	4	j			excluded:unaligned	
 f103r_L26	5	tz			excluded:unaligned	
@@ -1449,7 +1449,7 @@ f103r_L26	9	3	3|h|k	d	scored	clerk-split
 f103r_L26	10	g	L|g	r	scored	clerk-split
 f103r_L26	11	S		a	excluded:key-M-S	
 f103r_L26	12	p	p	n	scored	clerk-split
-f103r_L26	13	p	4	g	scored	align-conflict,clerk-split
+f103r_L26	13	p	4	g	scored	clerk-doubtful,clerk-split
 f103r_L26	14	m	7|m	e	scored	clerk-split
 f103r_L26	15	7	7|m	e	scored	
 f103r_L26	16	#	#|R|n	t	scored	
@@ -1457,8 +1457,8 @@ f103r_L26	17	6	6|f|j	l	scored	clerk-split
 f103r_L26	18	m			excluded:unaligned	
 f103r_L26	19	d	d	o	scored	clerk-split
 f103r_L26	20	x	x	s	scored	clerk-split
-f103r_L26	21	tz	:	c	scored	align-conflict,clerk-split
-f103r_L26	22	m	Zu|a|oo	u	scored	align-conflict,clerk-split
+f103r_L26	21	tz	:	c	scored	clerk-doubtful,clerk-split
+f103r_L26	22	m	Zu|a|oo	u	scored	clerk-doubtful,clerk-split
 f103r_L26	23	p			excluded:unaligned	
 f103r_L26	24	d	d	o	scored	clerk-split
 f103r_L26	25	S		a	excluded:key-M-S	
@@ -1466,7 +1466,7 @@ f103r_L26	26	o	Zu|a|o	u	scored	clerk-split
 f103r_L26	27	o	o	u	scored	clerk-split
 f103r_L26	28	m	7|m	e	scored	clerk-split
 f103r_L26	29	:	:	c	scored	clerk-split
-f103r_L26	30	:	@|to	q	scored	align-conflict,clerk-split
+f103r_L26	30	:	@|to	q	scored	clerk-doubtful,clerk-split
 f103r_L26	31	c		u	excluded:off-key	
 f103r_L26	32	m	7|m	e	scored	clerk-split
 f103r_L26	33	x	x	s	scored	clerk-split
@@ -1474,8 +1474,8 @@ f103r_L26	34	m	7|m	e	scored	clerk-split
 f103r_L26	35	d	d	o	scored	clerk-split
 f103r_L26	36	{cross}		t	excluded:off-key	
 f103r_L26	37	S		h	excluded:key-M-S	
-f103r_L26	38	o	d|o	o	scored	align-conflict
-f103r_L26	39	o	o	o	scored	align-conflict
+f103r_L26	38	o	d|o	o	scored	alignment-doubtful
+f103r_L26	39	o	o	o	scored	alignment-doubtful
 f103r_L26	40	6	6|f|j	l	scored	
 f103r_L26	41	to	@|to	q	scored	
 f103r_L26	42	:		x	excluded:letter-off-key	
@@ -1488,11 +1488,11 @@ f103r_L26	48	#	#|R|n	t	scored
 f103r_L26	49	tz	tz	i	scored	
 f103r_L26	50	d	d	o	scored	
 f103r_L26	51	p	p	n	scored	
-f103r_L26	52	d	x	s	scored	align-conflict
-f103r_L26	53	3	x	s	scored	align-conflict,clerk-split
+f103r_L26	52	d	x	s	scored	key-doubtful
+f103r_L26	53	3	x	s	scored	clerk-doubtful,clerk-split
 f103r_L26	54	m	7|m	e	scored	clerk-split
 f103r_L26	55	6	6|f|j	l	scored	clerk-split
-f103r_L26	56	m	x	s	scored	align-conflict,clerk-split
+f103r_L26	56	m	x	s	scored	clerk-doubtful,clerk-split
 f103r_L28	1	x	x	s	scored	clerk-split
 f103r_L28	2	tz	tz	i	scored	clerk-split
 f103r_L28	3	m	7|m	e	scored	clerk-split
@@ -1506,7 +1506,7 @@ f103r_L28	10	m	7|m	e	scored	clerk-split
 f103r_L28	11	#	#|R|n	t	scored	clerk-split
 f103r_L28	12	a	Zu|a|oo	u	scored	clerk-split
 f103r_L28	13	:	:	c	scored	clerk-split
-f103r_L28	14	:	6|f|j	l	scored	align-conflict,clerk-split
+f103r_L28	14	:	6|f|j	l	scored	clerk-doubtful,clerk-split
 f103r_L28	15	m	7|m	e	scored	clerk-split
 f103r_L28	16	g	L|g	r	scored	
 f103r_L28	17	S		a	excluded:key-M-S	
@@ -1521,7 +1521,7 @@ f103r_L28	25	6			excluded:unaligned
 f103r_L28	26	@			excluded:unaligned	
 f103r_L28	27	a			excluded:unaligned	
 f103r_L28	28	3	3|h|k	d	scored	clerk-split
-f103r_L28	29	m	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L28	29	m	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L28	30	d			excluded:unaligned	
 f103r_L28	31	S			excluded:unaligned	
 f103r_L28	32	g		r	excluded:align-uncertain	
@@ -1530,8 +1530,8 @@ f103r_L28	34	m	7|m	e	scored	clerk-split
 f103r_L28	35	g		x	excluded:letter-off-key	
 f103r_L28	36	d	d	o	scored	clerk-split
 f103r_L28	37	tz	tz	i	scored	clerk-split
-f103r_L28	38	m	L|g	r	scored	align-conflict,clerk-split
-f103r_L28	39	p	6|f|j	l	scored	align-conflict,clerk-split
+f103r_L28	38	m	L|g	r	scored	clerk-doubtful,clerk-split
+f103r_L28	39	p	6|f|j	l	scored	clerk-doubtful,clerk-split
 f103r_L28	40	R			excluded:unaligned	
 f103r_L28	41	m	7|m	e	scored	clerk-split
 f103r_L28	42	#	#|R|n	t	scored	clerk-split
@@ -1546,7 +1546,7 @@ f103r_L28	50	m			excluded:unaligned
 f103r_L28	51	g	L|g	r	scored	clerk-split
 f103r_L28	52	d	d	o	scored	clerk-split
 f103r_L28	53	tz	tz	i	scored	clerk-split
-f103r_L28	54	m	L|g	r	scored	align-conflict,clerk-split
+f103r_L28	54	m	L|g	r	scored	clerk-doubtful,clerk-split
 f103r_L28	55	p			excluded:unaligned	
 f103r_L28	56	#	#|R|n	t	scored	
 f103r_L29	1	#			excluded:unaligned	
@@ -1567,16 +1567,16 @@ f103r_L29	15	p	p	n	scored	clerk-split
 f103r_L29	16	m	7|m	e	scored	clerk-split
 f103r_L29	17	p	p	n	scored	clerk-split
 f103r_L29	18	R	#|R|n	t	scored	clerk-split
-f103r_L29	19	a	:	c	scored	align-conflict,clerk-split
+f103r_L29	19	a	:	c	scored	clerk-doubtful,clerk-split
 f103r_L29	20	d			excluded:unaligned	
 f103r_L29	21	o	Zu|a|o	u	scored	clerk-split
 f103r_L29	22	o	o	u	scored	clerk-split
 f103r_L29	23	g	L|g	r	scored	clerk-split
 f103r_L29	24	m		f	excluded:letter-off-key	
-f103r_L29	25	g	P|s|z	a	scored	align-conflict
+f103r_L29	25	g	P|s|z	a	scored	alignment-doubtful
 f103r_L29	26	S			excluded:unaligned	
 f103r_L29	27	tz	tz	i	scored	
-f103r_L29	28	d	x	s	scored	align-conflict
+f103r_L29	28	d	x	s	scored	key-doubtful
 f103r_L29	29	S		a	excluded:key-M-S	
 f103r_L29	30	p	p	n	scored	
 f103r_L29	31	#	#|R|n	t	scored	
@@ -1586,7 +1586,7 @@ f103r_L29	34	o	Zu|a|o	u	scored
 f103r_L29	35	o	o	u	scored	
 f103r_L29	36	#	#|R|n	t	scored	
 f103r_L29	37	m	7|m	e	scored	
-f103r_L29	38	d	x	s	scored	align-conflict
+f103r_L29	38	d	x	s	scored	key-doubtful
 f103r_L29	39	x	x	s	scored	
 f103r_L29	40	d	d	o	scored	
 f103r_L29	41	g	L|g	r	scored	
@@ -1600,7 +1600,7 @@ f103r_L29	48	m	7|m	e	scored
 f103r_L29	49	3		m	excluded:letter-off-key	
 f103r_L29	50	d	d	o	scored	
 f103r_L29	51	p	p	n	scored	
-f103r_L29	52	d	x	s	scored	align-conflict
+f103r_L29	52	d	x	s	scored	key-doubtful
 f103r_L30	1	#	#|R|n	t	scored	
 f103r_L30	2	g	L|g	r	scored	
 f103r_L30	3	S		a	excluded:key-M-S	
@@ -1618,10 +1618,10 @@ f103r_L30	14	3	3|h|k	d	scored	clerk-split
 f103r_L30	15	S		a	excluded:key-M-S	
 f103r_L30	16	p	p	n	scored	clerk-split
 f103r_L30	17	4	4	g	scored	clerk-split
-f103r_L30	18	tz	6|f|j	l	scored	align-conflict,clerk-split
+f103r_L30	18	tz	6|f|j	l	scored	clerk-doubtful,clerk-split
 f103r_L30	19	m	7|m	e	scored	clerk-split
-f103r_L30	20	g	7|m	e	scored	align-conflict,clerk-split
-f103r_L30	21	d	x	s	scored	align-conflict,clerk-split
+f103r_L30	20	g	7|m	e	scored	clerk-doubtful,clerk-split
+f103r_L30	21	d	x	s	scored	clerk-doubtful,clerk-split
 f103r_L30	22	to	@|to	q	scored	clerk-split
 f103r_L30	23	2		u	excluded:off-key	
 f103r_L30	24	tz	tz	i	scored	clerk-split
@@ -1691,12 +1691,12 @@ f103r_L31	32	S			excluded:unaligned
 f103r_L31	33	g			excluded:unaligned	
 f103r_L31	34	d	d	o	scored	clerk-split
 f103r_L31	35	g	L|g	r	scored	clerk-split
-f103r_L31	36	:	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L31	36	:	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L31	37	:		c	excluded:align-uncertain	
 f103r_L31	38	m		e	excluded:align-uncertain	
-f103r_L31	39	:	@|to	q	scored	align-conflict
-f103r_L31	40	:	Zu|a|oo	u	scored	align-conflict
-f103r_L31	41	m	tz	i	scored	align-conflict
+f103r_L31	39	:	@|to	q	scored	alignment-doubtful
+f103r_L31	40	:	Zu|a|oo	u	scored	key-doubtful
+f103r_L31	41	m	tz	i	scored	key-doubtful
 f103r_L31	42	c		l	excluded:off-key	
 f103r_L31	43	Z		f	excluded:off-key	
 f103r_L31	44	g			excluded:unaligned	
@@ -1705,7 +1705,7 @@ f103r_L31	46	g			excluded:unaligned
 f103r_L31	47	d			excluded:unaligned	
 f103r_L31	48	tz	tz	i	scored	clerk-split
 f103r_L31	49	#	#|R|n	t	scored	clerk-split
-f103r_L31	50	m	P|s|z	a	scored	align-conflict
+f103r_L31	50	m	P|s|z	a	scored	key-doubtful
 f103r_L31	51	V			excluded:unaligned	
 f103r_L31	52	a	Zu|a|oo	u	scored	
 f103r_L31	53	p	p	n	scored	
@@ -1720,7 +1720,7 @@ f103r_L32	7	d	d	o	scored	clerk-split
 f103r_L32	8	o	Zu|a|o	u	scored	clerk-split
 f103r_L32	9	o	o	u	scored	clerk-split
 f103r_L32	10	#	#|R|n	t	scored	clerk-split
-f103r_L32	11	d	x	s	scored	align-conflict,clerk-split
+f103r_L32	11	d	x	s	scored	clerk-doubtful,clerk-split
 f103r_L32	12	m	7|m	e	scored	clerk-split
 f103r_L32	13	o	Zu|a|o	u	scored	clerk-split
 f103r_L32	14	o	o	u	scored	clerk-split
@@ -1735,18 +1735,18 @@ f103r_L32	22	p	p	n	scored
 f103r_L32	23	#	#|R|n	t	scored	
 f103r_L32	24	o		b	excluded:letter-off-key	
 f103r_L32	25	o		b	excluded:letter-off-key	
-f103r_L32	26	p	tz	i	scored	align-conflict,clerk-split
+f103r_L32	26	p	tz	i	scored	clerk-doubtful,clerk-split
 f103r_L32	27	m	7|m	e	scored	clerk-split
 f103r_L32	28	y		r	excluded:key-M-y	
 f103r_L32	29	m		e	excluded:align-uncertain	
 f103r_L32	30	:		c	excluded:align-uncertain	
 f103r_L32	31	:			excluded:unaligned	
 f103r_L32	32	d		o	excluded:align-uncertain	
-f103r_L32	33	p	Zu|a|oo	u	scored	align-conflict,clerk-split
-f103r_L32	34	d	L|g	r	scored	align-conflict,clerk-split
-f103r_L32	35	tz	7|m	e	scored	align-conflict,clerk-split
+f103r_L32	33	p	Zu|a|oo	u	scored	clerk-doubtful,clerk-split
+f103r_L32	34	d	L|g	r	scored	clerk-doubtful,clerk-split
+f103r_L32	35	tz	7|m	e	scored	clerk-doubtful,clerk-split
 f103r_L32	36	j	6|f|j	l	scored	clerk-split
-f103r_L32	37	tz	6|f|j	l	scored	align-conflict,clerk-split
+f103r_L32	37	tz	6|f|j	l	scored	clerk-doubtful,clerk-split
 f103r_L32	38	S		a	excluded:key-M-S	
 f103r_L32	39	#	#|R|n	t	scored	clerk-split
 f103r_L32	40	tz	tz	i	scored	clerk-split
@@ -1757,11 +1757,11 @@ f103r_L32	44	o	Zu|a|o	u	scored	clerk-split
 f103r_L32	45	o	o	u	scored	clerk-split
 f103r_L32	46	m	7|m	e	scored	clerk-split
 f103r_L32	47	:	:	c	scored	clerk-split
-f103r_L32	48	:	@|to	q	scored	align-conflict,clerk-split
+f103r_L32	48	:	@|to	q	scored	clerk-doubtful,clerk-split
 f103r_L32	49	c		u	excluded:off-key	
 f103r_L32	50	m	7|m	e	scored	clerk-split
 f103r_L32	51	x	x	s	scored	clerk-split
-f103r_L32	52	m	x	s	scored	align-conflict,clerk-split
+f103r_L32	52	m	x	s	scored	clerk-doubtful,clerk-split
 f103r_L32	53	d			excluded:unaligned	
 f103r_L32	54	:			excluded:unaligned	
 f103r_L32	55	:			excluded:unaligned	
@@ -1771,7 +1771,7 @@ f103r_L33	1	x	x	s	scored	clerk-split
 f103r_L33	2	o	Zu|a|o	u	scored	clerk-split
 f103r_L33	3	o	o	u	scored	clerk-split
 f103r_L33	4	S		b	excluded:key-M-S	
-f103r_L33	5	tz	4	g	scored	align-conflict,clerk-split
+f103r_L33	5	tz	4	g	scored	clerk-doubtful,clerk-split
 f103r_L33	6	m	7|m	e	scored	clerk-split
 f103r_L33	7	:			excluded:unaligned	
 f103r_L33	8	:			excluded:unaligned	
@@ -1788,8 +1788,8 @@ f103r_L33	18	p		n	excluded:align-uncertain
 f103r_L33	19	3		m	excluded:letter-off-key	
 f103r_L33	20	S		a	excluded:key-M-S	
 f103r_L33	21	V		s	excluded:off-key	
-f103r_L33	22	m	x	s	scored	align-conflict,clerk-split
-f103r_L33	23	a	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L33	22	m	x	s	scored	clerk-doubtful,clerk-split
+f103r_L33	23	a	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L33	24	o		c	excluded:off-key	
 f103r_L33	25	g		r	excluded:align-uncertain	
 f103r_L33	26	y			excluded:unaligned	
@@ -1799,17 +1799,17 @@ f103r_L33	29	V		n	excluded:off-key
 f103r_L33	30	S		a	excluded:key-M-S	
 f103r_L33	31	3	3|h|k	d	scored	
 f103r_L33	32	d	d	o	scored	
-f103r_L33	33	o	o|p	n	scored	align-conflict
-f103r_L33	34	o	o	n	scored	align-conflict
+f103r_L33	33	o	o|p	n	scored	
+f103r_L33	34	o	o	n	scored	
 f103r_L33	35	p	p	n	scored	
 f103r_L33	36	m	7|m	e	scored	
 f103r_L33	37	V		n	excluded:off-key	
 f103r_L33	38	o	Zu|a|o	u	scored	
 f103r_L33	39	o	o	u	scored	
 f103r_L33	40	j	6|f|j	l	scored	
-f103r_L33	41	m	6|f|j	l	scored	align-conflict
+f103r_L33	41	m	6|f|j	l	scored	alignment-doubtful
 f103r_L33	42	m	7|m	e	scored	
-f103r_L33	43	d	x	s	scored	align-conflict,clerk-split
+f103r_L33	43	d	x	s	scored	clerk-doubtful,clerk-split
 f103r_L33	44	c		t	excluded:off-key	
 f103r_L33	45	m	7|m	e	scored	clerk-split
 f103r_L33	46	g		x	excluded:letter-off-key	
@@ -1821,13 +1821,13 @@ f103r_L33	51	m	7|m	e	scored	clerk-split
 f103r_L34	1	o	Zu|a|o	u	scored	clerk-split
 f103r_L34	2	o	o	u	scored	clerk-split
 f103r_L34	3	d	d	o	scored	clerk-split
-f103r_L34	4	z	6|f|j	l	scored	align-conflict,clerk-split
+f103r_L34	4	z	6|f|j	l	scored	clerk-doubtful,clerk-split
 f103r_L34	5	j	6|f|j	l	scored	clerk-split
 f103r_L34	6	d	d	o	scored	clerk-split
 f103r_L34	7	tz	tz	i	scored	clerk-split
 f103r_L34	8	g	L|g	r	scored	clerk-split
-f103r_L34	9	m	P|s|z	a	scored	align-conflict
-f103r_L34	10	p	#|R|n	t	scored	align-conflict
+f103r_L34	9	m	P|s|z	a	scored	key-doubtful
+f103r_L34	10	p	#|R|n	t	scored	alignment-doubtful
 f103r_L34	11	#	#|R|n	t	scored	
 f103r_L34	12	m	7|m	e	scored	
 f103r_L34	13	p	p	n	scored	
@@ -1846,28 +1846,28 @@ f103r_L34	25	#	#|R|n	t	scored	clerk-split
 f103r_L34	26	tz	tz	i	scored	clerk-split
 f103r_L34	27	:			excluded:unaligned	
 f103r_L34	28	#	#|R|n	t	scored	clerk-split
-f103r_L34	29	d	P|s|z	a	scored	align-conflict,clerk-split
-f103r_L34	30	o	:|o	c	scored	align-conflict,clerk-split
-f103r_L34	31	o	o	c	scored	align-conflict,clerk-split
+f103r_L34	29	d	P|s|z	a	scored	clerk-doubtful,clerk-split
+f103r_L34	30	o	:|o	c	scored	clerk-doubtful,clerk-split
+f103r_L34	31	o	o	c	scored	clerk-doubtful,clerk-split
 f103r_L34	32	#		h	excluded:letter-off-key	
 f103r_L34	33	m		f	excluded:letter-off-key	
 f103r_L34	34	d	d	o	scored	clerk-split
 f103r_L34	35	g			excluded:unaligned	
 f103r_L34	36	d			excluded:unaligned	
 f103r_L34	37	tz	tz	i	scored	clerk-split
-f103r_L34	38	x	P|s|z	a	scored	align-conflict,clerk-split
+f103r_L34	38	x	P|s|z	a	scored	clerk-doubtful,clerk-split
 f103r_L34	39	tz	tz	i	scored	
 f103r_L34	40	m	7|m	e	scored	
 f103r_L34	41	p	p	n	scored	
 f103r_L34	42	m	7|m	e	scored	
-f103r_L34	43	d	x	s	scored	align-conflict
+f103r_L34	43	d	x	s	scored	key-doubtful
 f103r_L34	44	:		c	excluded:align-uncertain	
-f103r_L34	45	:	P|s|z	a	scored	align-conflict
+f103r_L34	45	:	P|s|z	a	scored	alignment-doubtful
 f103r_L34	46	S		y	excluded:key-M-S	
 f103r_L34	47	z		a	excluded:align-uncertain	
 f103r_L34	48	:		y	excluded:letter-off-key	
-f103r_L34	49	:	x	s	scored	align-conflict,clerk-split
-f103r_L34	50	m	tz	i	scored	align-conflict,clerk-split
+f103r_L34	49	:	x	s	scored	clerk-doubtful,clerk-split
+f103r_L34	50	m	tz	i	scored	clerk-doubtful,clerk-split
 f103r_L34	51	to		o	excluded:align-uncertain	
 f103r_L34	52	2			excluded:unaligned	
 f103r_L34	53	m			excluded:unaligned	
@@ -1882,14 +1882,14 @@ f103r_L35	5	m	7|m	e	scored	clerk-split
 f103r_L35	6	g	L|g	r	scored	clerk-split
 f103r_L35	7	p		p	excluded:letter-off-key	
 f103r_L35	8	d	d	o	scored	
-f103r_L35	9	tz	Zu|a|oo	u	scored	align-conflict
-f103r_L35	10	#	L|g	r	scored	align-conflict
+f103r_L35	9	tz	Zu|a|oo	u	scored	key-doubtful
+f103r_L35	10	#	L|g	r	scored	alignment-doubtful
 f103r_L35	11	c			excluded:unaligned	
 f103r_L35	12	d			excluded:unaligned	
 f103r_L35	13	g	L|g	r	scored	clerk-split
 f103r_L35	14	m	7|m	e	scored	clerk-split
 f103r_L35	15	p	p	n	scored	clerk-split
-f103r_L35	16	m	3|h|k	d	scored	align-conflict,clerk-split
+f103r_L35	16	m	3|h|k	d	scored	clerk-doubtful,clerk-split
 f103r_L35	17	f			excluded:unaligned	
 f103r_L35	18	tz			excluded:unaligned	
 f103r_L35	19	m			excluded:unaligned	
@@ -1902,7 +1902,7 @@ f103r_L35	25	S		a	excluded:key-M-S
 f103r_L35	26	p		f	excluded:letter-off-key	
 f103r_L35	27	p		f	excluded:letter-off-key	
 f103r_L35	28	S		e	excluded:key-M-S	
-f103r_L35	29	tz	Zu|a|oo	u	scored	align-conflict,clerk-split
+f103r_L35	29	tz	Zu|a|oo	u	scored	clerk-doubtful,clerk-split
 f103r_L35	30	g		r	excluded:align-uncertain	
 f103r_L35	31	m		e	excluded:align-uncertain	
 f103r_L35	32	x		z	excluded:letter-off-key	
@@ -1922,7 +1922,7 @@ f103r_L35	45	@		z	excluded:letter-off-key
 f103r_L35	46	3	3|h|k	d	scored	clerk-split
 f103r_L35	47	o	Zu|a|o	u	scored	clerk-split
 f103r_L35	48	o	o	u	scored	clerk-split
-f103r_L35	49	h	:	c	scored	align-conflict,clerk-split
+f103r_L35	49	h	:	c	scored	clerk-doubtful,clerk-split
 f103r_L35	50	tz		p	excluded:letter-off-key	
 f103r_L35	51	#			excluded:unaligned	
 f103r_L35	52	#			excluded:unaligned	
@@ -1930,17 +1930,17 @@ f103r_L36	1	c			excluded:unaligned
 f103r_L36	2	g		r	excluded:align-uncertain	
 f103r_L36	3	tz		i	excluded:align-uncertain	
 f103r_L36	4	p		m	excluded:letter-off-key	
-f103r_L36	5	:	P|s|z	a	scored	align-conflict
-f103r_L36	6	:	#|R|n	t	scored	align-conflict,clerk-split
+f103r_L36	5	:	P|s|z	a	scored	alignment-doubtful
+f103r_L36	6	:	#|R|n	t	scored	clerk-doubtful,clerk-split
 f103r_L36	7	m			excluded:unaligned	
 f103r_L36	8	m			excluded:unaligned	
 f103r_L36	9	d	d	o	scored	clerk-split
 f103r_L36	10	#	#|R|n	t	scored	clerk-split
-f103r_L36	11	R	:	c	scored	align-conflict,clerk-split
+f103r_L36	11	R	:	c	scored	clerk-doubtful,clerk-split
 f103r_L36	12	d	d	o	scored	clerk-split
 f103r_L36	13	o	Zu|a|o	u	scored	clerk-split
 f103r_L36	14	o	o	u	scored	clerk-split
-f103r_L36	15	d	L|g	r	scored	align-conflict,clerk-split
+f103r_L36	15	d	L|g	r	scored	clerk-doubtful,clerk-split
 f103r_L36	16	tz	tz	i	scored	clerk-split
 f103r_L36	17	d			excluded:unaligned	
 f103r_L36	18	o			excluded:unaligned	
@@ -1948,7 +1948,7 @@ f103r_L36	19	o			excluded:unaligned
 f103r_L36	20	g	L|g	r	scored	clerk-split
 f103r_L36	21	x			excluded:unaligned	
 f103r_L36	22	m	7|m	e	scored	
-f103r_L36	23	d	x	s	scored	align-conflict
+f103r_L36	23	d	x	s	scored	key-doubtful
 f103r_L36	24	#	#|R|n	t	scored	
 f103r_L36	25	o	Zu|a|o	u	scored	
 f103r_L36	26	o	o	u	scored	
@@ -1961,7 +1961,7 @@ f103r_L36	32	m	7|m	e	scored
 f103r_L36	33	V			excluded:unaligned	
 f103r_L36	34	S			excluded:unaligned	
 f103r_L36	35	p	p	n	scored	
-f103r_L36	36	:	6|f|j	l	scored	align-conflict
+f103r_L36	36	:	6|f|j	l	scored	alignment-doubtful
 f103r_L36	37	:	:	c	scored	
 f103r_L36	38	S		a	excluded:key-M-S	
 f103r_L36	39	j	6|f|j	l	scored	
@@ -1971,7 +1971,7 @@ f103r_L36	42	o	Zu|a|o	u	scored	clerk-split
 f103r_L36	43	o	o	u	scored	clerk-split
 f103r_L36	44	m	7|m	e	scored	clerk-split
 f103r_L36	45	:	:	c	scored	clerk-split
-f103r_L36	46	:	@|to	q	scored	align-conflict,clerk-split
+f103r_L36	46	:	@|to	q	scored	clerk-doubtful,clerk-split
 f103r_L36	47	c		u	excluded:off-key	
 f103r_L36	48	m	7|m	e	scored	clerk-split
 f103r_L36	49	x	x	s	scored	clerk-split
@@ -1994,7 +1994,7 @@ f103r_L37	8	m	7|m	e	scored	clerk-split
 f103r_L37	9	3		m	excluded:letter-off-key	
 f103r_L37	10	S		a	excluded:key-M-S	
 f103r_L37	11	tz		i	excluded:align-uncertain	
-f103r_L37	12	d	x	s	scored	align-conflict,clerk-split
+f103r_L37	12	d	x	s	scored	clerk-doubtful,clerk-split
 f103r_L37	13	S		a	excluded:key-M-S	
 f103r_L37	14	V		s	excluded:off-key	
 f103r_L37	15	o		s	excluded:off-key	
@@ -2008,7 +2008,7 @@ f103r_L37	22	m		r	excluded:align-uncertain
 f103r_L37	23	p		a	excluded:align-uncertain	
 f103r_L37	24	o		i	excluded:align-uncertain	
 f103r_L37	25	o		i	excluded:align-uncertain	
-f103r_L37	26	m	:	c	scored	align-conflict,clerk-split
+f103r_L37	26	m	:	c	scored	clerk-doubtful,clerk-split
 f103r_L37	27	#		p	excluded:letter-off-key	
 f103r_L37	28	c		a	excluded:off-key	
 f103r_L37	29	S			excluded:unaligned	
