@@ -4051,3 +4051,33 @@ Read so far: ten of ten filed (E351-E360); two printed, eight not located; spare
 - [x] image-check: ten pages read at 2400 px.
 - [x] retry: none needed (no host refused).
 Verdict: keep going: 5 internal gaps; cheapest next: ORN full-text for E355/E356 and the unopened holder hits, ~$0.5
+
+## FV-MS18g (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E347, E349, E350 (AUDIT.md "## AUDIT (FV-MS18g)"), MS18-R4's "not located" rows. **E349's second message is printed**: Stanton to Grant
+at the Eutaw House, Baltimore ("A long cipher despatch is coming through from General Meade to you. Shall it be forwarded to you at Baltimore or wait your
+arrival here"), The Papers of Ulysses S. Grant vol. 12, editors' note (IA be-api; page not established): N1, and it confirms John = Grant, Jolly = Meade,
+Baptism = Baltimore, Pembroke = Cipher, Brutus = Secretary of War by print (C); the long dispatch is Meade's of 16 Sept 1864 10 a.m., OR I/42 pt 2 p.852.
+MS18-R4's "note to John (Eckert's office)" is wrong. **E349's first message** (Meigs to Donaldson, relieve Col. J. C. Crane as disbursing officer) **N3 weak,
+bordering N2**: the resulting orders are in the Army and Navy Official Gazette (Google Books snippets), the telegram is not. **E347 N3 D3** (Grant's secret
+car from the Relay House to Monocacy, 5 Aug 1864; not in OR I/43 pt 1 or Grant Papers vol. 11 by full text). **E350 N3 D3** (Price, Cavalry Bureau, to
+Brackett at St Louis; context OR I/45 pt 1 pp.898, 952, 1001). Image reads: E350 "Tomama" is **Panama** (= Cavalry: "Special Inspector [Cavalry]") and
+"Pleasant on" is Pleasonton (header "Sheridan's" wrong); decoder errors: Relay (E347) and Planters (E350) are plain, not code words. `AUD2-LEDGER-32`
+queued (E347, E349 msg 1, E350; account-3); SO-ECKERT-E347/E349/E350 queued; status.json rows added. Fixes in AUDIT s.5, not applied here. Requests:
+hdl.huntington.org 28 (one remote-disconnect, retried once after 20 s); archive.org 6 djvu (5 x 200, OR III/4 403 not retried) + 1 advancedsearch;
+be-api 14 (one 502, not retried); googleapis 8.
+
+## Remaining gaps (FV-MS18g, 9 Oct 2026)
+Read so far: E347, E349 (both messages), E350 audited; all three pages eye-checked on 2400 px crops.
+- E347, E349 msg 1, E350 second audit and the unsearched families (B&O / W. P. Smith papers, Meigs letter books NARA RG 92, Cavalry Bureau records, the press) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER-32; a second audit is a separate session (rule 10)
+- the transcription, plain-at and header fixes of AUDIT (FV-MS18g) s.5 (Relay, Planters, Tomama -> Panama, Pleasonton, the E349 split and John = Grant) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$0.8
+- Grant Papers vol. 12 page for E349 msg 2 and the Gazette memoranda's date and page - blocker: not-attempted; be-api and Google Books give snippets without pages; next: one IA page read or a LOCAL-QUEUE row for the Gazette, ~$0.2
+
+## Escalation (FV-MS18g, 9 Oct 2026)
+- [x] siblings: Comstock via McCaine 5 Aug 1864 10.40 AM above E347 and Thayer to Perry 16 Sept above E349 seen, not filed.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 16 queries + 8 item reads, no clear copy.
+- [x] known-keys: No. 1 rows checked for every graded token (Panama = Cavalry, Side = 9-line indicator, Relay and Planter- shown plain).
+- [x] print: E349 msg 2 found (Grant Papers vol. 12); E349 msg 1 orders found (Gazette); E347, E350 not located; context in OR I/42 pt 2, I/43 pt 1, I/45 pt 1.
+- [n/a] key-rebuild: no key row needed; John = Grant and Jolly = Meade confirmed by print.
+- [x] image-check: all three entries eye-checked.
+- [x] retry: one hdl disconnect retried once; OR III/4 403 and one be-api 502 not retried (good-citizen rule).
+Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18g) s.5, ~$0.8
