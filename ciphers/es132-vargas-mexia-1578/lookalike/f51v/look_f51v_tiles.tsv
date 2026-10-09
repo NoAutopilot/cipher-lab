@@ -1,0 +1,188 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+look_f51v	L01	4	23+	23+	23+	agree	top-pair	23+,231,13+	28 8ρ@l 25.@r	12.@r 1 6+		
+look_f51v	L01	6	1	1		split-gap	split	1,1+,161	25.@r 23+ 12.@r	6+ 12ρ 7ρ@n		
+look_f51v	L01	7	6+	6+	16+	split	split	6+,16+,36+	23+ 12.@r 1	12ρ 7ρ@n 3		
+look_f51v	L01	9	7ρ@n	7ρ@n	7+@n	split	split	7ρ@n,7+@n,70ρ@n,77@n	1 6+ 12ρ	3 6+ 4@l		
+look_f51v	L01	14	y	y	y	agree	top-pair	y,{y},7	6+ 4@l 10	1 6+ 6ρ		
+look_f51v	L01	15	1	1		split-gap	split	1,1+,161	4@l 10 y	6+ 6ρ 6.		
+look_f51v	L01	17	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	y 1 6+	6. 15ρ@s 21		
+look_f51v	L02	2	23σ	23σ	23σ	agree	top-pair	23σ,23ρ,6	15.	1.@n 4@n 4		
+look_f51v	L02	5	4	4		split-gap	split	4,4+,4.	23σ 1.@n 4@n	23. r. 28ρ		
+look_f51v	L02	6	23.	23.		split-gap	split	23.,23,12.	1.@n 4@n 4	r. 28ρ 28		
+look_f51v	L02	7	r.	r.	423.@r	split	split	r.,423.@r,x.,26.	4@n 4 23.	28ρ 28 6.		
+look_f51v	L02	13	23σ	23σ	23σ	agree	top-pair	23σ,23ρ,6	6. 15 7+	1 6σ xρ		
+look_f51v	L02	14	1	1		split-gap	split	1,1+,161	15 7+ 23σ	6σ xρ y		
+look_f51v	L02	15	6σ	6σ	16σ	split	split	6σ,16σ,6ρ	7+ 23σ 1	xρ y 6.		
+look_f51v	L02	17	y	y	y	agree	top-pair	y,{y},7	1 6σ xρ	6. 183		
+look_f51v	L03	2	2	2		split-gap	split	2,7,2σ	6.	1 6 4@n		
+look_f51v	L03	3	1	1		split-gap	split	1,1+,161	6. 2	6 4@n 23		
+look_f51v	L03	4	6	6	21σ	split	split	6,21σ,24σ,6.	6. 2 1	4@n 23 25+@l		
+look_f51v	L03	8	3	3		split-gap	split	3,3@l,183	4@n 23 25+@l	26 10@n 4@n		
+look_f51v	L03	9	26	26	32σ	split	split	26,32σ,12σ,x	23 25+@l 3	10@n 4@n 23		
+look_f51v	L03	13	24.	24.	24.	agree	top-pair	24.,24,12.	10@n 4@n 23	7+ 23ρ 1.		
+look_f51v	L03	15	23ρ	23ρ	23ρ	agree	top-pair	23ρ,23σ,13ρ	23 24. 7+	1. 28 21.		
+look_f51v	L03	18	21.	21.	21.	agree	top-pair	21.,11.	23ρ 1. 28	4@n 15ρ 6.		
+look_f51v	L03	20	15ρ	15ρ	15ρ	agree	top-pair	15ρ,15σ,12ρ	28 21. 4@n	6. 15 6.		
+look_f51v	L03	23	6.	6.	6	split	split	6.,6,6.@s	15ρ 6. 15			
+look_f51v	L04	2	r+@n	r+@n	x+@n	split	split	r+@n,x+@n	18	11.@s 23. 15.		
+look_f51v	L04	10	24+	24+	24+	agree	top-pair	24+,x+,24	33. 7σ 10	8σ 4 r		
+look_f51v	L04	13	r	r	n	split	split	r,n,6,6.@r	24+ 8σ 4	21. 20σ 32σ		
+look_f51v	L04	14	21.	21.	21.	agree	top-pair	21.,11.	8σ 4 r	20σ 32σ 10		
+look_f51v	L05	1	21.	21.	21.	agree	top-pair	21.,11.		6. 1 6+@s		
+look_f51v	L05	6	15ρ	15ρ	15ρ	agree	top-pair	15ρ,15σ,12ρ	1 6+@s 6.	21. 15. 10		
+look_f51v	L05	7	21.	21.	21.	agree	top-pair	21.,11.	6+@s 6. 15ρ	15. 10 25σ		
+look_f51v	L05	11	10	10	1	split	split	10,1,610,10.	15. 10 25σ	1 6+ 6+		
+look_f51v	L05	12	1	1	0	split	split	1,0,1+,161	10 25σ 10	6+ 6+ 6ρ		
+look_f51v	L05	13	6+	6+	16+	split	split	6+,16+,36+	25σ 10 1	6+ 6ρ r.		
+look_f51v	L05	15	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	1 6+ 6+	r. 23 20ρ@n		
+look_f51v	L05	16	r.	r.	x.	split	split	r.,x.,26.	6+ 6+ 6ρ	23 20ρ@n 6.		
+look_f51v	L05	19	6.	6.		split-gap	split	6.,6,6.@s	r. 23 20ρ@n	r 23.		
+look_f51v	L05	20	r	r	6.@r	split	split	r,6.@r,6	23 20ρ@n 6.	23.		
+look_f51v	L06	5	24σ@r	24σ@r	6@m	split	split	24σ@r,6@m	4@n 20.@r m	yρ 21. 4@l		
+look_f51v	L06	7	21.	21.	21.	agree	top-pair	21.,11.	m 24σ@r yρ	4@l r. y		
+look_f51v	L06	9	r.	r.	x.	split	split	r.,x.,26.	yρ 21. 4@l	y 2 01		
+look_f51v	L06	10	y	y	y	agree	top-pair	y,{y},7	21. 4@l r.	2 01 6σ		
+look_f51v	L06	11	2	2	20	split	split	2,20,7,2σ	4@l r. y	01 6σ 4		
+look_f51v	L06	12	01	01	1	split	split	01,1	r. y 2	6σ 4 23.		
+look_f51v	L06	13	6σ	6σ	6σ	agree	top-pair	6σ,6ρ,16σ	y 2 01	4 23. 3		
+look_f51v	L06	18	24+@m	24+@r	24+@m	split	split	24+@r,24+@m,24+	23. 3 6+	6.		
+look_f51v	L07	1	6σ	6σ	6σ	agree	top-pair	6σ,6ρ,16σ		18@s 20+ r+		
+look_f51v	L07	2	18@s	18@s	20	split	split	18@s,20,18	6σ	20+ r+ 4@l		
+look_f51v	L07	3	20+	20+	1+	split	split	20+,1+,201,20⊣	6σ 18@s	r+ 4@l 7ρ@m		
+look_f51v	L07	4	r+	r+	x+	split	split	r+,x+	6σ 18@s 20+	4@l 7ρ@m 7σ		
+look_f51v	L07	6	7ρ@m	7ρ	7ρ@m	split	split	7ρ,7ρ@m	20+ r+ 4@l	7σ 4@m 24ρ		
+look_f51v	L07	8	4@m	4@r	4@m	split	split	4@r,4@m,4	4@l 7ρ@m 7σ	24ρ 6. 10		
+look_f51v	L07	12	21.	21.	21.	agree	top-pair	21.,11.	24ρ 6. 10	15ρ 1. 28		
+look_f51v	L07	13	15ρ	15ρ	15ρ	agree	top-pair	15ρ,15σ,12ρ	6. 10 21.	1. 28 12+		
+look_f51v	L07	17	2	2		split-gap	split	2,7,2σ	1. 28 12+	5σ 4@n 6		
+look_f51v	L07	18	5σ	5σ	25σ	split	split	5σ,25σ	28 12+ 2	4@n 6		
+look_f51v	L08	2	24.@n	24.@n	24	split	split	24.@n,24	4@n	6σ 6ρ 15		
+look_f51v	L08	3	6σ	6σ	6σ	agree	top-pair	6σ,6ρ,16σ	4@n 24.@n	6ρ 15 4		
+look_f51v	L08	4	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	4@n 24.@n 6σ	15 4 11ρ		
+look_f51v	L08	9	24ρ@s	24ρ	24ρ@s	split	split	24ρ,24ρ@s	4 11ρ 4@s	6ρ 20@n 1		
+look_f51v	L08	10	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	11ρ 4@s 24ρ@s	20@n 1 24σ		
+look_f51v	L08	11	20@n	20@n	0@n	split	split	20@n,0@n	4@s 24ρ@s 6ρ	1 24σ 23		
+look_f51v	L08	13	24σ	24σ	6	split	split	24σ,6,24ρ	6ρ 20@n 1	23 21. 4@l		
+look_f51v	L08	15	21.	21.	21.	agree	top-pair	21.,11.	1 24σ 23	4@l 10 6		
+look_f51v	L08	19	25σ	25σ	25	split	split	25σ,25,25ρ,28σ	4@l 10 6	6		
+look_f51v	L09	3	1	1		split-gap	split	1,1+,161	18 15.	6+@n 6. r.		
+look_f51v	L09	4	6+@n	6+@n	16+@n	split	split	6+@n,16+@n,64+@n	18 15. 1	6. r. 23		
+look_f51v	L09	6	r.	r.	x.	split	split	r.,x.,26.	1 6+@n 6.	23 20ρ@n 6.		
+look_f51v	L09	9	6.	6.		split-gap	split	6.,6,6.@s	r. 23 20ρ@n	r / 10		
+look_f51v	L09	10	r	r	6.@r	split	split	r,6.@r,6	23 20ρ@n 6.	/ 10 15ρ		
+look_f51v	L09	13	15ρ	15ρ	15ρ	agree	top-pair	15ρ,15σ,12ρ	r / 10	35ρ 16. r+		
+look_f51v	L09	14	35ρ	35ρ	5ρ	split	split	35ρ,5ρ,35+,1	/ 10 15ρ	16. r+ 21.		
+look_f51v	L09	16	r+	r+	x+	split	split	r+,x+	15ρ 35ρ 16.	21. 4@n 24ρ		
+look_f51v	L09	17	21.	21.	21.	agree	top-pair	21.,11.	35ρ 16. r+	4@n 24ρ 6		
+look_f51v	L09	21	15	15	1	split	split	15,1,11⊣	4@n 24ρ 6			
+look_f51v	L10	1	21.	21.	21.	agree	top-pair	21.,11.		16 7+ 23.		
+look_f51v	L10	2	16	16	7	split	split	16,7,161,10	21.	7+ 23. 15.		
+look_f51v	L10	3	7+	7+	0+	split	split	7+,0+,7,74	21. 16	23. 15. r.		
+look_f51v	L10	6	r.	r.	x.	split	split	r.,x.,26.	7+ 23. 15.	31.@s 7σ 4		
+look_f51v	L10	14	y	y	y	agree	top-pair	y,{y},7	6. 6+ 12ρ	20. 15σ 3+		
+look_f51v	L10	16	15σ	15σ	6	split	split	15σ,6,15ρ,18σ	12ρ y 20.	3+ 4@n		
+look_f51v	L11	1	7ρ	7ρ	7ρ	agree	top-pair	7ρ,77ρ,7σ		231+@s y 68		
+look_f51v	L11	2	231+@s	231+@s	23+@s	split	split	231+@s,23+@s	7ρ	y 68 20ρ@r		
+look_f51v	L11	3	y	y	y	agree	top-pair	y,{y},7	7ρ 231+@s	68 20ρ@r 7+@r		
+look_f51v	L11	4	68	68	8	split	split	68,8,68+,368	7ρ 231+@s y	20ρ@r 7+@r 23+		
+look_f51v	L11	7	23+	23+	23+	agree	top-pair	23+,231,13+	68 20ρ@r 7+@r	28 r. 23		
+look_f51v	L11	9	r.	r.	x.	split	split	r.,x.,26.	7+@r 23+ 28	23 20. 24ρ		
+look_f51v	L11	15	25.	25.		split-gap	split	25.,x.,25.@r	24ρ 6. 10	r 23 18		
+look_f51v	L11	16	r	r	25.@r	split	split	r,25.@r,6,6.@r	6. 10 25.	23 18		
+look_f51v	L12	4	231	231	23+	split	split	231,23+,23⊣	4@s 24ρ 10	12.@r 16+ 12ρ		
+look_f51v	L12	9	35+	35+	5+	split	split	35+,5+,35ρ,1835+	16+ 12ρ 28	21 24+@n 6ρ		
+look_f51v	L12	11	24+@n	24+	24+@n	split	split	24+,24+@n,x+@n	28 35+ 21	6ρ 7σ@n 231@s		
+look_f51v	L12	12	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	35+ 21 24+@n	7σ@n 231@s 21		
+look_f51v	L12	13	7σ@n	7σ	7σ@n	split	split	7σ,7σ@n,7ρ@n	21 24+@n 6ρ	231@s 21 4@r		
+look_f51v	L12	14	231@s	231@s	23+@s	split	split	231@s,23+@s	24+@n 6ρ 7σ@n	21 4@r 29+		
+look_f51v	L13	3	24+	24+	24+	agree	top-pair	24+,x+,24	6. 10	14+@r 15. 231@s		
+look_f51v	L13	6	231@s	231@s	23+@s	split	split	231@s,23+@s	24+ 14+@r 15.	6. 23σ 11		
+look_f51v	L13	8	23σ	23σ	6	split	split	23σ,6,23ρ	15. 231@s 6.	11 17ρ@s 28ρ		
+look_f51v	L13	11	28ρ	28ρ	ρ	split	split	28ρ,ρ,28σ,25ρ	23σ 11 17ρ@s	15. 10 281		
+look_f51v	L13	14	281	281	1	split	split	281,1	28ρ 15. 10	6+ r 610		
+look_f51v	L13	16	r	r	6	split	split	r,6,6.@r	10 281 6+	610 2		
+look_f51v	L13	17	610	610	10	split	split	610,10	281 6+ r	2		
+look_f51v	L14	1	71	71	6	split	split	71,6,38ρ		6σ r 610		
+look_f51v	L14	2	6σ	6σ	x	split	split	6σ,x,6ρ,16σ	71	r 610 77ρ		
+look_f51v	L14	3	r	r	6	split	split	r,6,6.@r	71 6σ	610 77ρ mρ		
+look_f51v	L14	4	610	610	10	split	split	610,10	71 6σ r	77ρ mρ 23.		
+look_f51v	L14	5	77ρ	77ρ	7ρ	split	split	77ρ,7ρ,77	6σ r 610	mρ 23. 6.		
+look_f51v	L14	6	mρ	mρ	12ρ	split	split	mρ,12ρ,nρ	r 610 77ρ	23. 6. 37		
+look_f51v	L14	10	610	610	10	split	split	610,10	23. 6. 37	10 24+@l 6.		
+look_f51v	L14	12	24+@l	24+@l	24+	split	split	24+@l,24+,24@l	37 610 10	6. 16ρ@n 3		
+look_f51v	L14	14	16ρ@n	16ρ@n	6ρ@n	split	split	16ρ@n,6ρ@n	10 24+@l 6.	3 6+ 7618		
+look_f51v	L14	17	7618	7618	1	split	split	7618,1	16ρ@n 3 6+			
+look_f51v	L15	4	231	231	23+	split	split	231,23+,23⊣	12. 7+ 20ρ@r	20+@r 24 /		
+look_f51v	L15	6	24	24	24	agree	top-pair	24,24.,24.@n	20ρ@r 231 20+@r	/ 28 4@n		
+look_f51v	L15	13	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	18ρ 23. 1@n	6. 15 6.		
+look_f51v	L16	1	11.@s	11	11.@s	split	split	11,11.@s		21. 28ρ 12ρ@l		
+look_f51v	L16	2	21.	21.	21.	agree	top-pair	21.,11.	11.@s	28ρ 12ρ@l 1		
+look_f51v	L16	5	1	1	1+	split	split	1,1+,161	21. 28ρ 12ρ@l	1+ r 610		
+look_f51v	L16	6	1+	1+	x	split	split	1+,x,1,14+	28ρ 12ρ@l 1	r 610 21.		
+look_f51v	L16	7	r	r	6	split	split	r,6,6.@r	12ρ@l 1 1+	610 21. 4@l		
+look_f51v	L16	8	610	610	10	split	split	610,10	1 1+ r	21. 4@l 6σ		
+look_f51v	L16	9	21.	21.	21.	agree	top-pair	21.,11.	1+ r 610	4@l 6σ 7.		
+look_f51v	L16	11	6σ	6σ	6σ	agree	top-pair	6σ,6ρ,16σ	610 21. 4@l	7. r. y		
+look_f51v	L16	12	7.	7.	7+	split	split	7.,7+,7σ,22	21. 4@l 6σ	r. y 4@n		
+look_f51v	L16	13	r.	r.	x.	split	split	r.,x.,26.	4@l 6σ 7.	y 4@n 24.@n		
+look_f51v	L16	14	y	y	y	agree	top-pair	y,{y},7	6σ 7. r.	4@n 24.@n 6σ		
+look_f51v	L16	17	6σ	6σ	6σ	agree	top-pair	6σ,6ρ,16σ	y 4@n 24.@n	4 23		
+look_f51v	L17	2	15+	15+	15+	agree	top-pair	15+,15+@s,15+@n	7ρ@n	18 7+ 23σ		
+look_f51v	L17	5	23σ	23σ	23σ	agree	top-pair	23σ,23ρ,6	15+ 18 7+	18@n 6. 15+		
+look_f51v	L17	8	15+	15+	15+	agree	top-pair	15+,15+@s,15+@n	23σ 18@n 6.	7+ r 24+		
+look_f51v	L17	10	r	r	x	split	split	r,x,6,6.@r	6. 15+ 7+	24+ 21 15.		
+look_f51v	L17	11	24+	24+	24+	agree	top-pair	24+,x+,24	15+ 7+ r	21 15. h+		
+look_f51v	L17	18	3	3		split-gap	split	3,3@l,183	25σ 10 3@s			
+look_f51v	L18	3	21.	21.	21.	agree	top-pair	21.,11.	20 24ρ	4 r+ 231		
+look_f51v	L18	5	r+	r+	x+	split	split	r+,x+	24ρ 21. 4	231 14@n 24.@n		
+look_f51v	L18	6	231	231	23+	split	split	231,23+,23⊣	21. 4 r+	14@n 24.@n 7σ		
+look_f51v	L18	16	21.	21.	21.	agree	top-pair	21.,11.	17σ 16ρ 20ρ@r	1		
+look_f51v	L19	11	15+@n	15+	15+@n	split	split	15+,15+@n,15+@r	23+@m 10 6.	24. 4@n 4@s		
+look_f51v	L19	12	24.	24.	24.	agree	top-pair	24.,24,12.	10 6. 15+@n	4@n 4@s 24.		
+look_f51v	L19	15	24.	24.	24.	agree	top-pair	24.,24,12.	24. 4@n 4@s	n. 11ρ 7		
+look_f51v	L19	18	7	7		split-gap	split	7,2,7ρ	24. n. 11ρ			
+look_f51v	L20	1	y	y	y	agree	top-pair	y,{y},7		7ρ@n 4@s 24ρ		
+look_f51v	L20	11	6σ	6σ	6σ	agree	top-pair	6σ,6ρ,16σ	25σ 18 4@l	7ρ {bul} 16		
+look_f51v	L20	12	7ρ	7ρ	7ρ	agree	top-pair	7ρ,77ρ,7σ	18 4@l 6σ	{bul} 16 1		
+look_f51v	L20	17	7ρ	7ρ	7ρ	agree	top-pair	7ρ,77ρ,7σ	16 1 28	24.@n 24+		
+look_f51v	L20	19	24+	24+	24+	agree	top-pair	24+,x+,24	28 7ρ 24.@n			
+look_f51v	L21	1	23+	23+	23+	agree	top-pair	23+,231,13+		24σ 23 2.		
+look_f51v	L21	2	24σ	24σ	6	split	split	24σ,6,24ρ	23+	23 2. 7ρ		
+look_f51v	L21	5	7ρ	7ρ	7ρ	agree	top-pair	7ρ,77ρ,7σ	24σ 23 2.	6 15+ r.		
+look_f51v	L21	7	15+	15+	15+	agree	top-pair	15+,15+@s,15+@n	2. 7ρ 6	r. 23 201		
+look_f51v	L21	8	r.	r.	x.	split	split	r.,x.,26.	7ρ 6 15+	23 201 4@s		
+look_f51v	L21	10	201	201	1	split	split	201,1,20+	15+ r. 23	4@s 24+ 14		
+look_f51v	L21	12	24+	24+	24+	agree	top-pair	24+,x+,24	23 201 4@s	14 33. 7σ		
+look_f51v	L21	17	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	33. 7σ 4@n	6. 1		
+look_f51v	L22	1	29.@r	29.@r	16	split	split	29.@r,16,29σ@r		161 28 814		
+look_f51v	L22	2	161	161	1	split	split	161,1,16	29.@r	28 814 nρ@s		
+look_f51v	L22	4	814	814	4	split	split	814,4	29.@r 161 28	nρ@s 18 26		
+look_f51v	L22	8	7618@s	7618@s	18@s	split	split	7618@s,18@s	nρ@s 18 26	7ρ@n 231 101		
+look_f51v	L22	10	231	231	10	split	split	231,10,23+,23⊣	26 7618@s 7ρ@n	101 6ρ 102		
+look_f51v	L22	11	101	101	1	split	split	101,1	7618@s 7ρ@n 231	6ρ 102 362		
+look_f51v	L22	12	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	7ρ@n 231 101	102 362 368		
+look_f51v	L22	13	102	102	6	split	split	102,6	231 101 6ρ	362 368		
+look_f51v	L22	14	362	362	23	split	split	362,23	101 6ρ 102	368		
+look_f51v	L22	15	368	368	68	split	split	368,68	6ρ 102 362			
+look_f51v	L23	2	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	15ρ@s	20@n 1 24ρ@s		
+look_f51v	L23	7	21.	21.	21.	agree	top-pair	21.,11.	1 24ρ@s 4@n	16. 12+ 29σ		
+look_f51v	L23	10	29σ	29σ	6	split	split	29σ,6,29ρ,29	21. 16. 12+	10 12+ 30_		
+look_f51v	L23	14	6ρ	6ρ	6ρ	agree	top-pair	6ρ,6σ,6+	10 12+ 30_	77ρ 7ρ 20		
+look_f51v	L23	15	77ρ	77ρ	7ρ	split	split	77ρ,7ρ,77	12+ 30_ 6ρ	7ρ 20		
+look_f51v	L23	16	7ρ	7ρ	nρ	split	split	7ρ,nρ,77ρ,7σ	30_ 6ρ 77ρ	20		
+look_f51v	L24	1	21.	21.	21.	agree	top-pair	21.,11.		7ρ@n 15+ 18		
+look_f51v	L24	3	15+	15+	15+	agree	top-pair	15+,15+@s,15+@n	21. 7ρ@n	18 7+ 23σ		
+look_f51v	L24	6	23σ	23σ	23σ	agree	top-pair	23σ,23ρ,6	15+ 18 7+	18@n 6. 15ρ@s		
+look_f51v	L24	11	7ρ@n	7ρ@n	m.@n	split	split	7ρ@n,m.@n,70ρ@n,77@n	6. 15ρ@s 23.	3+ 23. 10		
+look_f51v	L24	15	36+	36+	6+	split	split	36+,6+	3+ 23. 10	8+ 1		
+look_f51v	L25	1	21.	21.	21.	agree	top-pair	21.,11.		15+ 10 16σ		
+look_f51v	L25	2	15+	15+	15+	agree	top-pair	15+,15+@s,15+@n	21.	10 16σ 23		
+look_f51v	L25	4	16σ	16σ	6σ	split	split	16σ,6σ,16ρ	21. 15+ 10	23 24+ 6		
+look_f51v	L25	6	24+	24+	24+	agree	top-pair	24+,x+,24	10 16σ 23	6 21. 4@l		
+look_f51v	L25	8	21.	21.	21.	agree	top-pair	21.,11.	23 24+ 6	4@l 35ρ 201		
+look_f51v	L25	10	35ρ	35ρ	1	split	split	35ρ,1,35+	6 21. 4@l	201 23ρ 15ρ@s		
+look_f51v	L25	11	201	201	23	split	split	201,23,20+,1	21. 4@l 35ρ	23ρ 15ρ@s 18		
+look_f51v	L25	12	23ρ	23ρ	5ρ	split	split	23ρ,5ρ,23σ,13ρ	4@l 35ρ 201	15ρ@s 18 36+@s		
+look_f51v	L25	15	36+@s	36+@s	3	split	split	36+@s,3	23ρ 15ρ@s 18	6 6 10		
+look_f51v	L25	16	6	6	6+@s	split	split	6,6+@s,24σ,6.	15ρ@s 18 36+@s	6 10		
+look_f51v	L25	17	6	6	6σ	split	split	6,6σ,24σ,6.	18 36+@s 6	10		

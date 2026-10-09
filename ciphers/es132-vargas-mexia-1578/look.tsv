@@ -1,0 +1,30 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	cipher-page	51v		f51v_L01_s1.jpg	manifest	owed
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	facing	52r		f52r_L01_s1.jpg	manifest	owed
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	before-1	51r		f51r_L01_s1.jpg	manifest	owed
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	before-2	50v		f50v_L01_s1.jpg	manifest	owed
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	after-2	52v			folio arithmetic	owed
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	after-3	53r			folio arithmetic	owed
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	after-4	53v			folio arithmetic	owed
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	cipher-page	52r		f52r_L01_s1.jpg	manifest	owed
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	facing	51v		f51v_L01_s1.jpg	manifest	owed
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	before-2	51r		f51r_L01_s1.jpg	manifest	owed
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	after-1	52v			folio arithmetic	owed
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	after-2	53r			folio arithmetic	owed
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	after-3	53v			folio arithmetic	owed
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	after-4	54r			folio arithmetic	owed
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	cipher-page	51v		f51v_L01_s1.jpg	manifest	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	facing	52r		f52r_L01_s1.jpg	manifest	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	before-1	51r		f51r_L01_s1.jpg	manifest	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	before-2	50v		f50v_L01_s1.jpg	manifest	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	after-2	52v			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	after-3	53r			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-b2df4f	adhoc-b2df4f:2-leaf:6bb973	after-4	53v			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	cipher-page	52r		f52r_L01_s1.jpg	manifest	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	facing	51v		f51v_L01_s1.jpg	manifest	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	before-2	51r		f51r_L01_s1.jpg	manifest	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	after-1	52v			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	after-2	53r			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	after-3	53v			folio arithmetic	answered CLEAR (recorded)
+2026-10-09 13:26	adhoc-bc9eb7	adhoc-bc9eb7:2-leaf:e53ba0	after-4	54r			folio arithmetic	answered CLEAR (recorded)

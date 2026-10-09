@@ -1,0 +1,409 @@
+passage	posA	idA	confA	posB	idB	confB	status	merged	merged_conf
+L01	1	20ρ@r	H	1	20ρ@r	H	agree	20ρ@r	H
+L01	2	24+@n	H	2	24+@n	H	agree	24+@n	H
+L01	3	1	H	3	14@l	H	split	1	M
+L01	4	20+	H	4	20+@r	H	split	20+@r	M
+L01	5	24+@n	H	5	24+@n	H	agree	24+@n	H
+L01	6	24.	H	6	24.	H	agree	24.	H
+L01	7	28	H	7	28	H	agree	28	H
+L01	8	7ρ@n	H	8	7ρ@n	H	agree	7ρ@n	H
+L01	9	29.	H	9	29.	H	agree	29.	H
+L01	10	26	H	10	26	H	agree	26	H
+L01	11	6	H	11		H	split-gap	6	M
+L01	12	4@n	H	12	4@n	H	agree	4@n	H
+L01	13	24.	H	13	24.	H	agree	24.	H
+L01	14	20+	H	14	20+	H	agree	20+	H
+L01	15	24+	H	15	25+	H	split	24+	M
+L01	16	4@l	H	16	4@l	H	agree	4@l	H
+L01	17	8.	H	17	8.	H	agree	8.	H
+L01	18	24.	H	18	26.	H	split	24.	M
+L02	1	26	H	1	26	H	agree	26	H
+L02	2	7σ	H	2	7σ	H	agree	7σ	H
+L02	3	18	H	3	18	H	agree	18	H
+L02	4	6.	H	4	6.	H	agree	6.	H
+L02	5	16σ	H	5	16σ	H	agree	16σ	H
+L02	6	23	H	6	23	H	agree	23	H
+L02	7	7ρ	H	7	7ρ	H	agree	7ρ	H
+L02	8	23+@s	H	8	23+@s	H	agree	23+@s	H
+L02	9	28	H	9	28	H	agree	28	H
+L02	10	6.	H	10	6.	H	agree	6.	H
+L02	11	15+	H	11	15+	H	agree	15+	H
+L02	12	73	H	12	73	H	agree	73	H
+L02	13	6.	H	13	6.	H	agree	6.	H
+L02	14	23+	H	14	23+	H	agree	23+	H
+L02	15	7ρ	H	15	7ρ	H	agree	7ρ	H
+L02	16	24+	H	16	26+	H	split	24+	M
+L02	17	(.	H	17	/	H	split	(.	M
+L03	1	12.	H	1	12.	H	agree	12.	H
+L03	2	21.	H	2	21.	H	agree	21.	H
+L03	3	26	H	3	26	H	agree	26	H
+L03	4	6ρ	H	4	6ρ	H	agree	6ρ	H
+L03	5	10	H	5	10	H	agree	10	H
+L03	6	25	H	6	25	H	agree	25	H
+L03	7	6	H	7	6	H	agree	6	H
+L03	8	23+@r	H	8	23+@r	H	agree	23+@r	H
+L03	9	18@s	H	9	18@s	H	agree	18@s	H
+L03	10	6.	H	10	6.	H	agree	6.	H
+L03	11	15ρ	H	11	15ρ	H	agree	15ρ	H
+L03	12	21.	H	12	21.	H	agree	21.	H
+L03	13	4@n	H	13	4@n	H	agree	4@n	H
+L03	14	4@s	H	14	4@s	H	agree	4@s	H
+L03	15	24ρ	H	15	24ρ	H	agree	24ρ	H
+L03	16	12+	H	16	12+	H	agree	12+	H
+L03	17	20+	H	17	20+	H	agree	20+	H
+L03	18	23+	H	18	23+	H	agree	23+	H
+L03	19	6ρ	H	19	6ρ	H	agree	6ρ	H
+L04	1	7ρ@n	H	1	7ρ@n	H	agree	7ρ@n	H
+L04	2	4@l	H	2	4@l	H	agree	4@l	H
+L04	3	7	H	3	7ρ	H	split	7	M
+L04	4	26.	H	4	26.	H	agree	26.	H
+L04	5	18	H	5	18	H	agree	18	H
+L04	6	21.	H	6	21.	H	agree	21.	H
+L04	7	12+	H	7	12+	H	agree	12+	H
+L04	8	6σ	H	8	6σ	H	agree	6σ	H
+L04	9	7ρ	H	9	7ρ	H	agree	7ρ	H
+L04	10	6.	H	10	6.	H	agree	6.	H
+L04	11	23	H	11		H	split-gap	23	H
+L04	12	23	H	12	23	H	agree	23	M
+L04	13	20+	H	13	20+	H	agree	20+	H
+L04	14	7+	H	14	7+	H	agree	7+	H
+L04	15	15+	H	15	15+	H	agree	15+	H
+L04	16	4	H	16	4	H	agree	4	H
+L04	17	1+	H	17	14ρ	H	split	1+	M
+L04	18	7ρ@n	H	18	7ρ@n	H	agree	7ρ@n	H
+L04	19	15+	H	19	15+	H	agree	15+	H
+L04	20	24.	H	20	26.	H	split	24.	M
+L04	21	23	H	21	23	H	agree	23	H
+L05	1	20	H	1	201	H	split	20	M
+L05	2	4@s	H	2	4@s	H	agree	4@s	H
+L05	3	24+	H	3	24+	H	agree	24+	H
+L05	4	6.	H	4	6.	H	agree	6.	H
+L05	5	24ρ	H	5	24ρ	H	agree	24ρ	H
+L05	6	6ρ	H	6	6ρ	H	agree	6ρ	H
+L05	7	4@s	H	7	4@s	H	agree	4@s	H
+L05	8	24ρ	H	8	24ρ	H	agree	24ρ	H
+L05	9	20+	H	9	20+	H	agree	20+	H
+L05	10	24+	H	10	25+	H	split	24+	M
+L05	11	21.	H	11	21.	H	agree	21.	H
+L05	12	4@s	H	12	4@s	H	agree	4@s	H
+L05	13	24.	H	13	24.	H	agree	24.	H
+L05	14	28@s	H	14	28@s	H	agree	28@s	H
+L05	15	35.	H	15	35.	H	agree	35.	H
+L05	16	25.	H	16	25.	H	agree	25.	H
+L05	17	26	H	17	26	H	agree	26	H
+L05	18	6ρ	H	18	6ρ	H	agree	6ρ	H
+L06	1	28	H	1	28	H	agree	28	H
+L06	2	20+	H	2	20+	H	agree	20+	H
+L06	3	24+	H	3	25+	H	split	24+	M
+L06	4	21.	H	4	21.	H	agree	21.	H
+L06	5	23σ	H	5	23σ	H	agree	23σ	H
+L06	6	36+	H	6	36+	H	agree	36+	H
+L06	7	24+	H	7	24+	H	agree	24+	H
+L06	8	r.	H	8	26.	H	split	r.	M
+L06	9	24	H	9	26	H	split	24	M
+L06	10	7ρ@n	H	10	7ρ@n	H	agree	7ρ@n	H
+L06	11	25ρ@s	H	11	25ρ@s	H	agree	25ρ@s	H
+L06	12	23ρ	H	12	23ρ	H	agree	23ρ	H
+L06	13	30.	H	13	30.	H	agree	30.	H
+L06	14	15+	H	14	15+	H	agree	15+	H
+L06	15	16+	H	15	16+	H	agree	16+	H
+L06	16	24@l	H	16	24	H	split	24@l	M
+L06	17	6	H	17	25@l	H	split	6	M
+L06	18	10	H	18	10	H	agree	10	H
+L07	1	23.	H	1	23.	H	agree	23.	H
+L07	2	20+	H	2	20+	H	agree	20+	H
+L07	3	28	H	3	28	H	agree	28	H
+L07	4	23	H	4	23	H	agree	23	H
+L07	5	7ρ	H	5	7ρ	H	agree	7ρ	H
+L07	6	10	H	6	10	H	agree	10	H
+L07	7	25.	H	7	25.	H	agree	25.	H
+L07	8	y	H	8		H	split	y	M
+L07	9	23	H	9	23	H	agree	23	H
+L07	10	6.	H	10	6.	H	agree	6.	H
+L07	11	35+	H	11	35+	H	agree	35+	H
+L07	12	7.	H	12	7.	H	agree	7.	H
+L07	13	6.	H	13	6.	H	agree	6.	H
+L07	14	r	H	14		H	split	r	M
+L07	15	21.	H	15	21.	H	agree	21.	H
+L07	16	12+	H	16	12+	H	agree	12+	H
+L07	17	6.	H	17	6.	H	agree	6.	H
+L07	18	23@r	H	18	23@r	H	agree	23@r	H
+L07	19	4@n	H	19	4@n	H	agree	4@n	H
+L07	20	15+	H	20	15+	H	agree	15+	H
+L08	1	16	H	1		H	split-gap	16	M
+L08	2	6	H	2	16σ	H	split	6	M
+L08	3	23	H	3	23	H	agree	23	H
+L08	4	16+	H	4	16+	H	agree	16+	H
+L08	5	2ρ	H	5	2ρ	H	agree	2ρ	H
+L08	6	6+	H	6	26+	H	split	6+	M
+L08	7	(.	H	7	/	H	split	(.	M
+L09	1	25	H	1	25	H	agree	25	H
+L09	2	24+	H	2	26+	H	split	24+	M
+L09	3	7ρ	H	3	7ρ	H	agree	7ρ	H
+L09	4	23+	H	4	23+	H	agree	23+	H
+L09	5	23.	H	5	23.	H	agree	23.	H
+L09	6	24	H	6	24	H	agree	24	H
+L09	7	8σ	H	7	8σ	H	agree	8σ	H
+L09	8	4@l	H	8	4@l	H	agree	4@l	H
+L09	9	12.	H	9	12.	H	agree	12.	H
+L09	10	10	H	10		H	split-gap	10	H
+L09	11	10	H	11	10	H	agree	10	M
+L09	12	6	H	12	6	H	agree	6	H
+L09	13	25	H	13	25	H	agree	25	H
+L09	14	6	H	14	6@r	H	split	6@r	M
+L09	15	24+	H	15	24+	H	agree	24+	H
+L09	16	y@s	H	16	?@s	H	split	y@s	M
+L09	17	21.	H	17	21.	H	agree	21.	H
+L09	18	4@n	H	18	4@n	H	agree	4@n	H
+L09	19	4@l	H	19	4@l	H	agree	4@l	H
+L09	20	6σ	H	20	6σ	H	agree	6σ	H
+L09	21	23	H	21	23	H	agree	23	H
+L09	22	7@r	H	22	7@r	H	agree	7@r	H
+L09	23	23ρ	H	23	23ρ	H	agree	23ρ	H
+L10	1	6.	H	1	6.	H	agree	6.	H
+L10	2	15+@s	H	2	15+@s	H	agree	15+@s	H
+L10	3	35+	H	3	35+	H	agree	35+	H
+L10	4	24	H	4		H	split-gap	24	M
+L10	5	6	H	5	24σ	H	split	6	M
+L10	6	7+	H	6	7+	H	agree	7+	H
+L10	7	23	H	7	23	H	agree	23	H
+L10	8	21	H	8	21	H	agree	21	H
+L10	9	24	H	9		H	split-gap	24	M
+L10	10	25	H	10	241	H	split	25	M
+L10	11	6	H	11	25σ	H	split	6	M
+L10	12	4	H	12	4	H	agree	4	H
+L10	13	r.	H	13	?.	H	split	r.	M
+L10	14	6.	H	14	6.	H	agree	6.	H
+L10	15	23	H	15	23	H	agree	23	H
+L10	16	23ρ	H	16	23ρ	H	agree	23ρ	H
+L10	17	30.	H	17	30.	H	agree	30.	H
+L10	18	4@s	H	18	4@s	H	agree	4@s	H
+L10	19	24+	H	19	24+	H	agree	24+	H
+L10	20	16+	H	20	16+	H	agree	16+	H
+L10	21	24.	H	21	24.	H	agree	24.	H
+L11	1	26	H	1		H	split-gap	26	M
+L11	2	6	H	2	25	H	split	6	M
+L11	3	10@s	H	3	10@s	H	agree	10@s	H
+L11	4	7ρ@n	H	4	7ρ@n	H	agree	7ρ@n	H
+L11	5	15+	H	5	15+	H	agree	15+	H
+L11	6	26.	H	6	25.	H	split	26.	M
+L11	7	y	H	7		H	split	y	M
+L11	8	24+	H	8	26+	H	split	24+	M
+L11	9	16+	H	9	16+	H	agree	16+	H
+L11	10	6.	H	10	6	H	split	6.	M
+L11	11	6.	H	11	/	H	split	6.	M
+L11	12	26.	H	12	25.	H	split	26.	M
+L11	13	18	H	13	18	H	agree	18	H
+L11	14	7ρ@n	H	14	7ρ@n	H	agree	7ρ@n	H
+L11	15	10@n	H	15	10@l	H	split	10@l	M
+L11	16	14@n	H	16	14@n	H	agree	14@n	H
+L11	17	18	H	17		H	split-gap	18	M
+L11	18	3	H	18	183	H	split	3	M
+L11	19	6ρ	H	19	6ρ	H	agree	6ρ	H
+L11	20	16	H	20		H	split-gap	16	M
+L11	21	6	H	21		H	split-gap	6	M
+L11	22	24	H	22	16σ	H	split	24	M
+L11	23	6	H	23	26	H	split	6	M
+L12	1	3	H	1		H	split-gap	3	M
+L12	2	6ρ	H	2	36ρ	H	split	6ρ	M
+L12	3	23.	H	3	23.	H	agree	23.	H
+L12	4	24+	H	4	24+	H	agree	24+	H
+L12	5	8σ	H	5	8σ	H	agree	8σ	H
+L12	6	4@l	H	6	4@n	H	split	4@n	M
+L12	7	21.	H	7	21.	H	agree	21.	H
+L12	8	7ρ	H	8	7ρ	H	agree	7ρ	H
+L12	9	6	H	9	7ρ	H	split	6	M
+L12	10	6.	H	10	6.	H	agree	6.	H
+L12	11	14+	H	11	14+	H	agree	14+	H
+L12	12	6σ	H	12	6σ	H	agree	6σ	H
+L12	13	4@s	H	13	4@s	H	agree	4@s	H
+L12	14	3	H	14		H	split-gap	3	M
+L12	15	6+	H	15	36+	H	split	6+	M
+L12	16	16.	H	16	16.	H	agree	16.	H
+L12	17	24	H	17	26	H	split	24	M
+L12	18	24.	H	18	24.	H	agree	24.	H
+L12	19	15.	H	19	15.	H	agree	15.	H
+L12	20	10@n	H	20	10@n	H	agree	10@n	H
+L12	21	24.	H	21	24.	H	agree	24.	H
+L13	1	2	H	1		H	split-gap	2	M
+L13	2	0ρ@n	H	2	20ρ@n	H	split	0ρ@n	M
+L13	3	14+	H	3	14+	H	agree	14+	H
+L13	4	28@s	H	4	28@s	H	agree	28@s	H
+L13	5	4@l	H	5	4@l	H	agree	4@l	H
+L13	6	4@s	H	6	4@s	H	agree	4@s	H
+L13	7	24+	H	7	24+	H	agree	24+	H
+L13	8	6ρ	H	8	6ρ	H	agree	6ρ	H
+L13	9	6.	H	9	6.	H	agree	6.	H
+L13	10	23@s	H	10	23@s	H	agree	23@s	H
+L13	11	23+@s	H	11		H	split-gap	23+@s	M
+L13	12	7ρ	H	12	7ρ	H	agree	7ρ	H
+L13	13	23+@s	H	13	23+@s	H	agree	23+@s	H
+L13	14	28	H	14	28	H	agree	28	H
+L13	15	15+	H	15	15+	H	agree	15+	H
+L13	16	7ρ@n	H	16	7ρ@n	H	agree	7ρ@n	H
+L13	17	21	H	17	21	H	agree	21	H
+L13	18	23σ	H	18	23σ	H	agree	23σ	H
+L13	19	18@n	H	19	18@n	H	agree	18@n	H
+L14	1	4@n	H	1	4@n	H	agree	4@n	H
+L14	2	21.	H	2	21.	H	agree	21.	H
+L14	3	23.	H	3	23.	H	agree	23.	H
+L14	4	20	H	4		H	split-gap	20	M
+L14	5	4	H	5	201	H	split	4	M
+L14	6	6@n	H	6	6.@n	H	split	6@n	M
+L14	7	16.	H	7	16.	H	agree	16.	H
+L14	8	24.	H	8	24.	H	agree	24.	H
+L14	9	r	H	9		H	split	r	M
+L14	10	23σ	H	10	23σ	H	agree	23σ	H
+L14	11	4@s	H	11	4@s	H	agree	4@s	H
+L14	12	24ρ	H	12	24ρ	H	agree	24ρ	H
+L14	13	6.	H	13	6.	H	agree	6.	H
+L14	14	15	H	14	15	H	agree	15	H
+L14	15	6.	H	15	6.	H	agree	6.	H
+L14	16	10	H	16	10	H	agree	10	H
+L14	17	15+@n	H	17	15+@n	H	agree	15+@n	H
+L14	18	23ρ	H	18	23ρ	H	agree	23ρ	H
+L14	19	24	H	19	26	H	split	24	M
+L15	1	20+	H	1	20+	H	agree	20+	H
+L15	2	23+	H	2	23+	H	agree	23+	H
+L15	3	10	H	3	10	H	agree	10	H
+L15	4	6.	H	4	6.	H	agree	6.	H
+L15	5	15+@l	H	5	15+@r	H	split	15+@r	M
+L15	6	24.	H	6	24.	H	agree	24.	H
+L15	7	28	H	7	28	H	agree	28	H
+L15	8	21.	H	8	21.	H	agree	21.	H
+L15	9	6	H	9		H	split-gap	6	M
+L15	10	7	H	10	67	H	split	7	M
+L15	11	15+	H	11	15+	H	agree	15+	H
+L15	12	23	H	12	23	H	agree	23	H
+L15	13	7ρ	H	13	7ρ	H	agree	7ρ	H
+L15	14	23+@s	H	14	23+@s	H	agree	23+@s	H
+L15	15	6.	H	15	6.	H	agree	6.	H
+L15	16	26	H	16		H	split-gap	26	M
+L15	17	6@s	H	17	26@s	H	split	6@s	M
+L15	18	6ρ	H	18	?ρ	H	split	6ρ	M
+L15	19	8+	H	19	8+	H	agree	8+	H
+L16	1	27ρ@s	H	1	27ρ@s	H	agree	27ρ@s	H
+L16	2	20+	H	2	20+	H	agree	20+	H
+L16	3	6.	H	3	6.	H	agree	6.	H
+L16	4	29	H	4	29	H	agree	29	H
+L16	5	7+@n	H	5	7+@n	H	agree	7+@n	H
+L16	6	42	H	6	42	H	agree	42	H
+L16	7	28ρ	H	7	28ρ	H	agree	28ρ	H
+L16	8	2	H	8		H	split-gap	2	M
+L16	9	4@n	H	9		H	split-gap	4@n	M
+L16	10	24.	H	10	24	H	split	24.	M
+L16	11	14ρ	H	11	14+	H	split	14ρ	M
+L16	12	18	H	12	18	H	agree	18	H
+L16	13	3	H	13	3	H	agree	3	H
+L16	14	6ρ@s	H	14	6ρ@s	H	agree	6ρ@s	H
+L16	15	x.	H	15	25.	H	split	x.	M
+L16	16	28	H	16	28	H	agree	28	H
+L16	17	24ρ	H	17	26ρ	H	split	24ρ	M
+L16	18	23	H	18	23	H	agree	23	H
+L17	1	28	H	1	28	H	agree	28	H
+L17	2	6ρ	H	2	?ρ	H	split	6ρ	M
+L17	3	23	H	3	23	H	agree	23	H
+L17	4	7ρ@n	H	4	7ρ@n	H	agree	7ρ@n	H
+L17	5	21.	H	5	21.	H	agree	21.	H
+L17	6	20ρ	H	6	20ρ	H	agree	20ρ	H
+L17	7	6.	H	7	6.	H	agree	6.	H
+L17	8	r	H	8		H	split	r	M
+L17	9	10	H	9	10	H	agree	10	H
+L17	10	7	H	10		H	split-gap	7	M
+L17	11	24	H	11		H	split-gap	24	M
+L17	12	6	H	12	74	H	split	6	M
+L17	13	6	H	13	6σ	H	split	6	M
+L17	14	r	H	14		H	split	r	M
+L17	15	10	H	15	10	H	agree	10	H
+L17	16	x.	H	16	25.	H	split	x.	M
+L17	17	16.	H	17	16.	H	agree	16.	H
+L17	18	6.	H	18		H	split-gap	6.	M
+L17	19	6	H	19		H	split-gap	6	M
+L17	20	6	H	20	6_σ	H	split	6	M
+L17	21	18	H	21	18	H	agree	18	H
+L17	22	6.	H	22	6.	H	agree	6.	H
+L17	23	10	H	23	10	H	agree	10	H
+L17	24	21.	H	24	21.	H	agree	21.	H
+L18	1	15ρ	H	1	15ρ@2	H	split	15ρ@2	M
+L18	2	28	H	2	28	H	agree	28	H
+L18	3	4	H	3	4	H	agree	4	H
+L18	4	15ρ@s	H	4	15ρ@2	H	split	15ρ@2	M
+L18	5	23ρ	H	5	23ρ	H	agree	23ρ	H
+L18	6	15ρ	H	6	15ρ	H	agree	15ρ	H
+L18	7	4	H	7	4	H	agree	4	H
+L18	8	23.	H	8	23.	H	agree	23.	H
+L18	9	22	H	9		H	split-gap	22	M
+L18	10	22.	H	10	22.	H	agree	22.	H
+L18	11	28	H	11	28	H	agree	28	H
+L18	12	24ρ	H	12	26ρ	H	split	24ρ	M
+L18	13	21.	H	13	21.	H	agree	21.	H
+L18	14	23σ	H	14	23σ	H	agree	23σ	H
+L18	15	7ρ	H	15	7ρ	H	agree	7ρ	H
+L18	16	4@n	H	16	4@n	H	agree	4@n	H
+L18	17	7+@n	H	17	7+@n	H	agree	7+@n	H
+L19	1	24	H	1	26+	H	split	24	M
+L19	2	4	H	2	4	H	agree	4	H
+L19	3	25ρ@s	H	3	25ρ@s	H	agree	25ρ@s	H
+L19	4	36+	H	4	36+	H	agree	36+	H
+L19	5	8+	H	5	8+	H	agree	8+	H
+L19	6	14ρ@s	H	6	14ρ@s	H	agree	14ρ@s	H
+L19	7	4@n	H	7	4@n	H	agree	4@n	H
+L19	8	4@l	H	8	4@l	H	agree	4@l	H
+L19	9	23.	H	9	23.	H	agree	23.	H
+L19	10	20.	H	10	20.	H	agree	20.	H
+L19	11	4	H	11	4	H	agree	4	H
+L19	12	6	H	12	6.@n	H	split	6.@n	M
+L19	13	25.	H	13	25.@r	H	split	25.@r	M
+L19	14	4@n	H	14	4@n	H	agree	4@n	H
+L19	15	16	H	15		H	split-gap	16	M
+L19	16	1	H	16	161	H	split	1	M
+L19	17	7ρ	H	17	7ρ	H	agree	7ρ	H
+L19	18	20.	H	18	20.	H	agree	20.	H
+L20	1	15σ	H	1	15σ	H	agree	15σ	H
+L20	2	34ρ	H	2	34ρ	H	agree	34ρ	H
+L20	3	23σ	H	3	23σ	H	agree	23σ	H
+L20	4	21.	H	4	21.	H	agree	21.	H
+L20	5	6+	H	5	6+	H	agree	6+	H
+L20	6	r	H	6		H	split	r	M
+L20	7	15.@s	H	7	15.@s	H	agree	15.@s	H
+L20	8	18	H	8		H	split-gap	18	M
+L20	9	3	H	9	183	H	split	3	M
+L20	10	6ρ	H	10	6ρ	H	agree	6ρ	H
+L20	11	x.	H	11	25.	H	split	x.	M
+L20	12	y	H	12		H	split	y	M
+L20	13	17ρ@s	H	13	17ρ@s	H	agree	17ρ@s	H
+L20	14	6ρ@n	H	14	6ρ@n	H	agree	6ρ@n	H
+L20	15	6.	H	15	6.	H	agree	6.	H
+L20	16	8ρ	H	16	8ρ@l	H	split	8ρ@l	M
+L20	17	25.	H	17	25.@r	H	split	25.@r	M
+L20	18	23	H	18	23	H	agree	23	H
+L20	19	/	H	19	/	H	agree	/	H
+L20	20	21.	H	20	21.	H	agree	21.	H
+L20	21	y+	H	21	?4+	H	split	y+	M
+L21	1	55.	H	1	55.	H	agree	55.	H
+L21	2	23.	H	2	23.	H	agree	23.	H
+L21	3	15.	H	3	15.	H	agree	15.	H
+L21	4	12+	H	4	12+	H	agree	12+	H
+L21	5	12.	H	5	12.	H	agree	12.	H
+L21	6	7+	H	6	7+	H	agree	7+	H
+L21	7	6ρ	H	7	6ρ	H	agree	6ρ	H
+L21	8	4@n	H	8	4@n	H	agree	4@n	H
+L21	9	15+	H	9	15+	H	agree	15+	H
+L21	10	18	H	10	18	H	agree	18	H
+L21	11	x.	H	11	25.	H	split	x.	M
+L21	12	14+	H	12	14+	H	agree	14+	H
+L21	13	10	H	13	10	H	agree	10	H
+L21	14	{bul}	H	14	{bul}	H	agree	{bul}	H
+L21	15	4@s	H	15	4@s	H	agree	4@s	H
+L21	16	24+	H	16	24+	H	agree	24+	H
+L21	17	x+	H	17	25+	H	split	x+	M
+L21	18	29ρ	H	18	29ρ	H	agree	29ρ	H
+L21	19	/.	H	19	/	H	split	/.	M
+L22	1		H	1		H	split-gap	B	H
+L22	2		H	2		H	split-gap	dρ	H
+L22	3		H	3		H	split-gap	sρ	H
+L22	4		H	4		H	split-gap	±	M
+L22	5		H	5		H	split-gap	v	H
+L22	6		H	6		H	split-gap	dρ	H
+L22	7		H	7		H	split-gap	j	H
+L22	8		H	8		H	split-gap	1578.	M

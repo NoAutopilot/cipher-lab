@@ -1,0 +1,50 @@
+passage	pos	label	conf	second	note
+L19	11	15+@n	H		hat above
+L19	12	24.	M	24	dot after
+L19	15	24.	M	24	dot after
+L19	18	7	M	7ρ	plain 7 at crop edge
+L20	1	y	M	{y}	y shape
+L20	11	6σ	M	6ρ	6 with 6-like hook
+L20	12	77ρ	M	7ρ	double 7 stroke
+L20	17	7ρ	M	77ρ	single 7 with loop
+L20	19	24+	H		cross
+L21	1	23+	H		cross
+L21	2	24σ	M	24ρ	hook like 6
+L21	5	7ρ	M	77ρ	7 with loop
+L21	7	15+	H	15+@n	no mark above
+L21	8	x.	M	r.	x-like with dot
+L21	10	201	H		
+L21	12	24+	H		cross
+L21	17	6ρ	H		loop tail
+L22	1	29.@r	M	29σ@r	dot, v-mark above
+L22	2	161	M	16	trailing 1
+L22	4	814	M	4	
+L22	8	7618@s	H		bar above
+L22	10	231	M	23⊣	
+L22	11	101	H		
+L22	12	6ρ	H		
+L22	13	102	H		
+L22	14	362	H		
+L22	15	368	H		
+L23	2	6ρ	H		
+L23	7	21.	H		
+L23	10	29σ	M	29	6-like hook after 29
+L23	14	6ρ	H		
+L23	15	77ρ	M	7ρ	
+L23	16	7ρ	M	nρ	
+L24	1	21.	H		
+L24	3	15+	H		
+L24	6	23σ	M	6	
+L24	11	m.@n	L	7ρ@n	hat over m.; 7ρ may be separate group
+L24	15	36+	H		
+L25	1	21.	H		
+L25	2	15+	H		
+L25	4	16σ	M	6σ	
+L25	6	24+	H		
+L25	8	21.	H		
+L25	10	35ρ	H		
+L25	11	201	H		
+L25	12	23ρ	M	23σ	
+L25	15	36+@s	H		bar above
+L25	16	6	M	6.	
+L25	17	6	M	6σ	
