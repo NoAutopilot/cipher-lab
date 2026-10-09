@@ -142,10 +142,12 @@ The 16 existing `tools/tests/test_*homophonic*.py` files must pass unchanged. **
 - **Commit and push.** Fetch and rebase before writing a shared file (`tools/data/tool_shelf.tsv`, `SYSTEM.md`,
   `ROOM.md`); keep both facts on a conflict. Before the final push run
   `python3 tools/file_shrink_guard.py <every file you touched>` and paste the output. Commit by explicit path only,
-  with the two attribution lines, through room.py's rebase-and-retry push:
+  ending the message with the two attribution lines YOUR session's system reminder gives (its Co-Authored-By line
+  and your own Claude-Session URL; never a session URL copied from this brief, which would break the per-session
+  trail rule 6 rebuilds from `git log`), through room.py's rebase-and-retry push:
 
   ```
-  MSG="$(printf 'MQS-SOLVER: <one-line summary>\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_0198Cv8ypBfBVfRToKVWx33M\n')" \
+  MSG="$(printf 'MQS-SOLVER: <one-line summary>\n\n<Co-Authored-By line from YOUR session's system reminder>\n<Claude-Session line from YOUR session's system reminder>\n')" \
     python3 tools/room.py --push <path1> <path2> ...
   ```
 
@@ -155,7 +157,7 @@ The 16 existing `tools/tests/test_*homophonic*.py` files must pass unchanged. **
   "novel", "first" or "new" for anything this project did; do not classify novelty. Never name the owner in a
   committed file; never print a credential; never call AskUserQuestion.
 - **Stop.** At the cap or at 80% of the box, whichever comes first, and do not start a unit that would cross 80% of
-  either (Usage 6: the unit list below gives each unit's estimate). The orchestrator reads your cost every 15 minutes
+  either (Usage 6: the unit table gives each unit's dollar and minute estimates; check both before each unit). The orchestrator reads your cost every 15 minutes
   and will interrupt at the cap. Stop when the brief is met (Usage 7): follow-ups go in your report as one-line
   suggestions, never as extra work.
 - **Done.** One ROOM line:

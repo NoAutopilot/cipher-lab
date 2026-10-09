@@ -107,10 +107,11 @@ reading or AUDIT.md change anywhere; no outreach. So no verifier step is owed. R
    person's sort is the field's own transcription method (Lasry, Biermann and Tomokiyo 2023 p.112); owner labels are one
    strong reader, scored against BENCHMARK-TX" if B's unit 4 supports it.
 5. `python3 tools/work_queue.py --done MQS-TOOLS --note "<one line>"`; `python3 tools/file_shrink_guard.py <every file
-   you touched>`; push by explicit path with the two attribution lines:
+   you touched>`; push by explicit path, ending the message with the two attribution lines YOUR session's system reminder
+   gives (its Co-Authored-By line and your own Claude-Session URL; never a session URL copied from a brief):
 
    ```
-   MSG="$(printf 'LANE MQS close: registration lines, handoff, ledger\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_0198Cv8ypBfBVfRToKVWx33M\n')" \
+   MSG="$(printf 'LANE MQS close: registration lines, handoff, ledger\n\n<Co-Authored-By line from YOUR session's system reminder>\n<Claude-Session line from YOUR session's system reminder>\n')" \
      python3 tools/room.py --push CLAUDE.md .claude/briefs/README.md STATUS.md LEDGER.md WORK-QUEUE.tsv
    ```
 
