@@ -1,6 +1,6 @@
 # PREREG TX-ENGINEER-2 round 12 (lane incarnation 3, session_01P46fwsU5VTc1oJiV1sayg5, 9 Oct 2026 22:2x UTC by date -u; pushed AFTER the S2 look (22:22:57 UTC, one of one) and BEFORE any further look; Amendment 9)
 
-Rules as PREREG-txeng2-5's preamble. `tools/tx_register.py --check` passes on this file before any spawn.
+Rules as PREREG-txeng2-5's preamble. `tools/tx_register.py --check benchmark-tx/PREREG-txeng2-12.md` output before the spawn (F42): `OK benchmark-tx/PREREG-txeng2-12.md: names register rows and states a difference` (exit 0).
 
 ## S2-NOTE Notation audit of the S2 look, read-free (TXE2-S2NOTE; Opus 5.5; cap 4; box 45 min; a classification of the 75 flagged-excluded errors, never a re-read and never a second look)
 Nearest prior: B2-fold (the Spinelli notation fold: new cell names folded to key codes, never from the truth), GS1 (the

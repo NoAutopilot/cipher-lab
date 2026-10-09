@@ -1,6 +1,6 @@
 # PREREG TX-ENGINEER-2 round 11 (lane incarnation 3, session_01P46fwsU5VTc1oJiV1sayg5, 9 Oct 2026 22:2x UTC by date -u; pushed BEFORE any read or score; Amendment 9; the S2 score and any pool look are the lane's)
 
-Rules as PREREG-txeng2-5's preamble. `tools/tx_register.py --check` passes on this file before any spawn.
+Rules as PREREG-txeng2-5's preamble. `tools/tx_register.py --check benchmark-tx/PREREG-txeng2-11.md` output before the spawn (F42): `OK benchmark-tx/PREREG-txeng2-11.md: names register rows and states a difference` (exit 0).
 
 ## B3b Gunther calibration sheet corrected on its two shape slips + fresh two-pass baseline (TXE2-BASE-GUN2; Opus 5.5; cap 8; box 80 min; a baseline change, never a gain; Amendment 9 option (b); TX-RED F35)
 Nearest prior: B3 / TXE2-BASE-GUN (stopped at step 1: the print-letter relabel conflicted with the image on 4 of 6), GS1 /

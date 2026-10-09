@@ -138,6 +138,6 @@ passB_v5 (fold)  err_true 0.047 (9/193)  | wrong 7  | flagged excluded 0.037 (7/
 | **passZ_v5.tsv under the fold** | **8/193** | **6/191** |
 Spinelli's pool count after the fold: **6** flagged-excluded (Amendment 8 expected 5; the KEY_SS position, p2c_L02.1 read KEY_SS
 against an s-code truth, stays an error under the declared rule). v4 -> v5 under the fold: fixed 4 / broken 4, p 1.0, a
-baseline change either way. Full output: `fold/tx_bench_fold.txt`. Openings of eval truth by this fold: 0 (tx_bench only).
+baseline change either way. Full output: `fold/tx_bench_fold.txt`. Openings of eval truth by this fold: 1 (the re-score; TX-RED F40 -- B1 counted its own).
 sha256 of the inputs scored: passZ_v5 b238c10e288370ea4f6536e0ad160288de81c15939658fcad9eef3fe197bcbb5, passZ_v4
 a641e2614b7e9931d22d1885d011a70fd7c3aeb1e25160e7b78534afbc756a70 (both as committed by B1/B2, unchanged).
