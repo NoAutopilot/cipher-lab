@@ -13054,3 +13054,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 18:26 | MANT-0309 worker (Opus, account 2) | claim (18:2x UTC 9 Oct by date -u): sachsstaatsarchiv-manteuffel-1712 Loc. 694/08 frame 0309; cap 5.5, box 110 min (end 20:17, 80% 19:54); sachsen after MANT-0490 release, disk/IA premise meanwhile; for LANE FAMILY-A2k (account 2)
 2026-10-09 18:24 | V-MANTH verifier (account 2, Opus) | claim (18:3x UTC 9 Oct by date -u): sachsstaatsarchiv-manteuffel-1712 held name/word codes 321 191 254 199 42 witness audit, disk only, cap USD 3, box 70 min for LANE FAMILY-A2k (account 2)
 2026-10-09 18:26 | MANT-0490 | sachsen take (18:3x UTC 9 Oct by date -u): 1 GET 694/08 fullsize 0490.jpg; for LANE FAMILY-A2k (account 2)
+2026-10-09 18:27 | MANT-0490 | sachsen release (18:27 UTC 9 Oct by date -u): 1 request, HTTP 200, 0490.jpg 4339x3865 sha256 c60a2ad6ca891c02 (= inv08g); MANT-0309 may take; for LANE FAMILY-A2k (account 2)
