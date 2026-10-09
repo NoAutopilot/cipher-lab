@@ -20,11 +20,22 @@ the target's own NOTES.md / HYPOTHESES.md, then this tool is re-run.
 --check exits 1 and prints the rows whose reopen_when is `not stated` (CLAUDE.md rule 5: a [retired] step names
 the instrument and what reopens it -- a different instrument or new material). It reports; it never repairs.
 
+Overrides (RETIRED-REOPEN, 9 Oct 2026): tools/data/retired_overrides.tsv, columns
+  source, step, instrument, reopen_when, note, set_by, date
+is merged by `source` (file:line, without any "(+N identical)" suffix) when the register is built: a non-empty
+override cell replaces the parsed step / instrument / reopen_when cell. Use it where the parser misreads a line or
+the line itself names no reopen condition, written from what the folder's own record says (never a guess); the
+target's NOTES.md stays untouched. An override whose source no longer matches a register row is reported as
+stale on stderr (the line moved: re-point it). --overrides FILE reads another file; --overrides '' reads none.
+
 Scope (CLAUDE.md Usage 8a), each backed by an offline test in tools/tests/test_retired.py:
   must catch:     a `[retired]` line with no reopen condition at all ("... is [retired] after three FAILs.")
                   -> reopen_when `not stated`, --check exits 1.
   must not block: a `[retired]` line that names "a different instrument or new material" (or "only X
                   reopens it", "reopened only by X", "next: X") -> reopen_when filled, --check exits 0.
+  must catch:     an override row keyed to a source -> its cells replace the parsed ones, a `not stated` row with
+                  an override reopen_when passes --check; an override for a vanished source is reported stale.
+  must not block: a row with no override keeps its parsed cells; an empty override cell keeps the parsed cell.
 """
 import argparse
 import csv
@@ -34,6 +45,8 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OVERRIDES = os.path.join("tools", "data", "retired_overrides.tsv")
+OVERRIDE_COLS = ["source", "step", "instrument", "reopen_when", "note", "set_by", "date"]
 COLS = ["folder", "step", "instrument", "date", "attempts", "why", "reopen_when", "source"]
 MAXCELL = 300
 
@@ -225,6 +238,38 @@ def build_rows(root):
     return rows
 
 
+def base_source(source):
+    return re.sub(r" \(\+\d+ identical\)$", "", source)
+
+
+def read_overrides(path):
+    if not path or not os.path.exists(path):
+        return {}
+    out = {}
+    with open(path, encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE)
+        for rec in reader:
+            src = (rec.get("source") or "").strip()
+            if src and not src.startswith("#"):
+                out[base_source(src)] = rec
+    return out
+
+
+def apply_overrides(rows, overrides):
+    """Replace parsed step/instrument/reopen_when cells by non-empty override cells; return stale sources."""
+    used = set()
+    for r in rows:
+        o = overrides.get(base_source(r["source"]))
+        if not o:
+            continue
+        used.add(base_source(r["source"]))
+        for c in ("step", "instrument", "reopen_when"):
+            v = clean(o.get(c) or "")
+            if v:
+                r[c] = v
+    return sorted(set(overrides) - used)
+
+
 def render(rows):
     lines = ["\t".join(COLS)]
     for r in rows:
@@ -239,8 +284,13 @@ def main(argv=None):
     ap.add_argument("--out", default=None, help="default <root>/RETIRED.tsv")
     ap.add_argument("--check", action="store_true", help="exit 1 if any row has reopen_when 'not stated'")
     ap.add_argument("--stdout", action="store_true", help="print the TSV instead of writing it")
+    ap.add_argument("--overrides", default=None, help="default <root>/%s; '' for none" % OVERRIDES)
     a = ap.parse_args(argv)
     rows = build_rows(a.root)
+    ov_path = os.path.join(a.root, OVERRIDES) if a.overrides is None else a.overrides
+    overrides = read_overrides(ov_path)
+    for src in apply_overrides(rows, overrides):
+        print("retired.py: stale override (no register row at %s)" % src, file=sys.stderr)
     text = render(rows)
     if a.stdout:
         sys.stdout.write(text)

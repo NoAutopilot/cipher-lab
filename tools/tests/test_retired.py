@@ -71,3 +71,31 @@ def test_unparseable_line_kept(tmp_path):
     root = make(tmp_path, "[retired]\n")
     rows = [r for r in retired.build_rows(root) if "NOTES" in r["source"]]
     assert len(rows) == 1  # never dropped
+
+
+def write_overrides(tmp_path, rows):
+    d = tmp_path / "tools" / "data"
+    d.mkdir(parents=True)
+    lines = ["\t".join(retired.OVERRIDE_COLS)] + ["\t".join(r) for r in rows]
+    (d / "retired_overrides.tsv").write_text("\n".join(lines) + "\n")
+
+
+def test_override_merge(tmp_path, capsys):
+    root = make(tmp_path, GOOD + BAD + BAD)  # BAD repeated -> source carries "(+1 identical)"
+    src = [r for r in retired.build_rows(root) if r["reopen_when"] == "not stated"][0]["source"]
+    assert "(+1 identical)" in src
+    base = retired.base_source(src)
+    write_overrides(tmp_path, [
+        [base, "", "crop compare (Sonnet)", "a person's read of the crops", "from the NOTES", "T", "9 Oct 2026"],
+        ["ciphers/t1/NOTES.md:9999", "x", "y", "z", "", "T", "9 Oct 2026"],
+    ])
+    assert retired.main(["--root", root, "--check"]) == 0
+    err = capsys.readouterr().err
+    assert "stale override (no register row at ciphers/t1/NOTES.md:9999)" in err
+    rows = (tmp_path / "RETIRED.tsv").read_text().splitlines()
+    hit = [l.split("\t") for l in rows if base in l][0]
+    assert hit[1] == "image-check"  # empty override cell keeps the parsed step
+    assert hit[2] == "crop compare (Sonnet)" and hit[6] == "a person's read of the crops"
+    good = [l.split("\t") for l in rows if l.split("\t")[1] == "key-rebuild"][0]
+    assert "homophonic_anneal.py" in good[2]  # no override: parsed cells kept
+    assert retired.main(["--root", root, "--check", "--overrides", ""]) == 1
