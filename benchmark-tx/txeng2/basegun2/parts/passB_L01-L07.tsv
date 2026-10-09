@@ -1,0 +1,105 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	x+		M	x with vertical stroke, curled left arm
+L01	2	34		H	
+L01	3	f		H	
+L01	4	cc		H	
+L01	5	53		M	looks 53
+L01	6	34		H	
+L01	7	f		H	
+L01	8	88		H	
+L01	9	rf		H	
+L01	10	f		H	
+L01	11	m		H	
+L01	12	d		H	
+L01	13	f		H	
+L01	14	ps		H	
+L01	15	th		H	
+L01	16	x		H	
+L01	17	sqt		H	square with stem on top
+L02	1	]		H	
+L02	2	hs		H	
+L02	3	xr		H	
+L02	4	aa		H	no bar
+L02	5	tau		H	
+L02	6	hs		H	
+L02	7	v		H	
+L02	8	01		H	
+L02	9	m		H	
+L02	10	7		H	
+L02	11	f		H	
+L02	12	x_	xb	M	large X with bar under, faint bar on top
+L02	13	f		H	
+L02	14	88		H	
+L02	15	z		H	
+L02	16	53		H	
+L02	17	od		H	
+L03	1	rr		H	
+L03	2	ob		H	
+L03	3	oo		H	
+L03	4	58		H	
+L03	5	34		H	
+L03	6	60		H	
+L03	7	m		H	
+L03	8	Ib		H	
+L03	9	zz		H	
+L03	10	xb		H	
+L03	11	88x		H	
+L03	12	ob		H	
+L03	13	ps		H	
+L04	1	ro		H	
+L04	2	f		H	
+L04	3	cc		H	
+L04	4	60		M	small mark above
+L04	5	NEW:f-with-bars	f	L	f with extra short horizontal strokes above and below
+L04	6	88		H	
+L04	7	cc		H	
+L04	8	f		H	
+L04	9	33		H	
+L04	10	f		H	
+L04	11	ps		M	p joined to s, p stem crossed
+L04	12	m		H	
+L04	13	x		H	
+L04	14	]		M	stroke above may belong to line above
+L04	15	Ib		H	
+L05	1	f		H	
+L05	2	cc		H	
+L05	3	aab		H	
+L05	4	01		M	
+L05	5	6		M	
+L05	6	f		H	
+L05	7	aaa		H	
+L05	8	L		M	square C open right
+L05	9	phi		H	
+L05	10	m		H	
+L05	11	of		H	
+L05	12	f		H	
+L05	13	oo		H	
+L05	14	ps	th	L	struck; horizontal stroke through a ps/ff-like group
+L06	1	Ol		H	
+L06	2	34		H	dot below
+L06	3	Ib		H	
+L06	4	ps		H	
+L06	5	d		H	
+L06	6	f		H	
+L06	7	88x		H	
+L06	8	4000		H	
+L06	9	34		H	
+L06	10	60		H	
+L06	11	44		H	
+L06	12	88x		H	
+L06	13	th		M	
+L07	1	f		H	
+L07	2	or		H	
+L07	3	58		H	
+L07	4	48		H	
+L07	5	60		H	
+L07	6	NEW:d-crossed	th	L	uncial-d-like loop with a horizontal stroke through it
+L07	7	f		H	
+L07	8	or		H	
+L07	9	cc		H	
+L07	10	f		H	
+L07	11	33		H	
+L07	12	x		H	
+L07	13	88		H	
+L07	14	xr		H	
+L07	15	dd		H	barred
