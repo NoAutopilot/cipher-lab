@@ -61,7 +61,7 @@ the file, do NOT score it (the lane spends the look). Amendment 1 item (4): this
 labelled ink), not a re-weighting of the same passes. The truth column of no87_box_token.tsv / the truth file is read ONLY
 by the training step for the training lines and by tx_bench at scoring; never by the apply step.
 
-## N1 Colour master of no.87 (M25 / O4, deferred): Gallica probe at 17:2x UTC 9 Oct answered <code below>; a colour fetch is
+## N1 Colour master of no.87 (M25 / O4, deferred): Gallica probe at 17:19 UTC 9 Oct answered HTTP 403 (still blocked); a colour fetch is
 allowed from 10 Oct 00:00 UTC (lane rule 7). If it answers then: one `iiif_lines.py --ark ark:/12148/btv1b9060248g --canvas
 182/183/184` fetch at native colour, then tx_prep.py channel/sep/false and tx_recovery.py bleed-through under the read-free atlas
 proxy (the TXE-D harness), ONE blind read of dev_tune at the best rendering paired vs pass A, dev gate p < 0.05. Nearest prior:
