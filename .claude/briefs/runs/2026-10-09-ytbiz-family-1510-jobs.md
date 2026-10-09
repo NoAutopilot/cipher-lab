@@ -62,3 +62,7 @@ Handoff next 4. Exactly as HEIN-SR2 (read its NOTES section and the command it r
 "io sono avisato via di Milano"). Named unread: Gomberville 1665 (Mémoires de M. le duc de Nevers), the Italian Ceppo editions, web, Cipherbrain/
 Cryptiana threads; also the solver repos. No Gallica (403): use IA, Google Books API (country=US + key), HathiTrust EF, OpenAlex/S2. Write the
 verdict into NOTES.md, run `tools/intake_gate_check.py ceppo-nevers-fr4702-f36` and paste the output. Do not reconcile or decode.
+
+Sessions wave 1 (15:17 UTC): BRO-178 session_01UJTyAAzKE49HXDsEPG5RrW (Opus); V-MANTC session_011zGvgiB3FSzBPiLGok1mSb (Opus); MANT-0089
+session_01D2fMcEwEBfaLu9k4j9Qki6 (Opus); MANT-CEN2 session_01YS2WyAcVpuE5V2xwLMXxoE (Sonnet); HEIN-SR3 session_016e6ryPYQRaip79mnbEQooc (Sonnet);
+CS-4702 session_01DStVvPBbQQijJcisVhcJaG (Sonnet).
