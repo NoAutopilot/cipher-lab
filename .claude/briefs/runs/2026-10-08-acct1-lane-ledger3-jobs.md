@@ -59,3 +59,14 @@ Diff every row against mssEC 19/18 filed IDs first (FM rows received at Fort Mon
 Shared pages (5747/1 vs FM-R2a's 5747/2; 5748/0 vs FM-R2b's 5748/1; 5734/0 + 5734/2 split across R3a/R3c; 5780/1 vs FM-R1's 5780/0; 5823/2; 5808/1;
 5831/2; 5784): read only your own entry; a continuation goes to ROOM. Unit ~0.55 per entry. NOTES "## FM-R3a (9 Oct 2026, account 1, for LANE LEDGER)"
 etc., Remaining gaps / Escalation, gaps_check, decode --check.
+
+---
+
+# Wave 2 (written 9 Oct 2026 00:0x UTC)
+By get_session: FIX-FM3 2.14 (corrections applied E167-E209; per-entry note types added to decode.py; decode --check 0).
+
+## FM-R3d (Sonnet 5.5, reader; cap $6.5, box 120 min): six long Fort Monroe 1864 No. 1 rows (95-135 words)
+Rows: 5784/1 5663/1 5682/0 5826/1 5796/0 5769/0. Method exactly "## FM-R3a, FM-R3b, FM-R3c" above (including the rare-name OR grep and the mssEC 19/18
+duplicate diff). Long rows: price 2 units (~1.1) each; stop before a row that would cross 80% of cap or box. 5784/1 shares a page with FM-R2b's 5784/0
+(E193, under FV-FM4): read only your own entry. IDs E240 onward (No. 1), N2-NA onward (No. 2). NOTES "## FM-R3d (9 Oct 2026, account 1, for LANE LEDGER)",
+Remaining gaps / Escalation, gaps_check, decode --check.
