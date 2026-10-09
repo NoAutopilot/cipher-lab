@@ -1,0 +1,37 @@
+item	answer	conf	note
+1	2	M	stem with loop top-right and crossbars, not plain P
+2	1	M	same shape as item 1: loop head, crossbars on stem
+3	2	M	two verticals, single horizontal bar
+4	1	M	w-form with rising curl at right
+5	1	M	plain x/loop cross, no extra bar
+6	2	M	c-e with closing curl, w with rising tail
+7	1	M	clear 8 then 5, no second unlisted marks
+8	2	M	c-e with closing curl, same as item 6
+9	T17	L	plain t, no curl at top; not T42
+10	2	M	plain m, tilde belongs to next sign
+11	1	M	two verticals, one main bar
+12	1	M	c-e with closing curl, same as items 6/8
+13	1	H	E joined to o by bar, one sign
+14	2	M	bracket holds bare 8 only, no 6
+15	1	H	E joined to o by bar, one sign
+16	1	M	open loop on long descending stem, no stem above
+17	1	M	same as item 16
+18	T85	M	bracket holds a plain cross, not the w sign
+19	1	M	cursive t, stem with crossbar; closest cell T42
+20	1	M	same cursive t as item 19
+21	2	M	w with inner loop and right curl tail, not plain w
+22	1	H	wide loop, stem down only, no stem above
+23	2	M	p-loop top right on stem with crossbars
+24	2	H	wide loop, stem down only
+25	1	H	E joined to small o, matches T29
+26	1	H	wide loop, stem down only
+27	2	L	small theta-like then 8 at gutter, not 86
+28	1	H	wide loop, stem down only
+29	1	M	same looped w with curl as item 21
+30	2	H	wide loop, stem down only
+31	T15	M	8 then 9 with long tail, reads as 89 not 86
+32	1	H	p-loop on stem with two crossbars
+33	T33	M	two stems on a base bar, not o or loop-stem
+34	T53	M	two closed loops side by side, not a hash
+35	2	M	order is p-on-crossbars then l-loop; preceding T83 also inside bracket
+36	1	H	p-loop on stem with two crossbars

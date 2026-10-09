@@ -1,0 +1,37 @@
+item	answer	conf	note
+1	2	M	loop top-right, stem, two crossbars and foot: T51's barred stem, not T95's plain P hook
+2	1	M	same barred-stem sign as item 1: T51
+3	2	H	two verticals, one long horizontal bar: T86, not the two-bar T60
+4	2	M	C-open left arm, mid loop, no tall S upstroke at right: plain T92, not T50
+5	1	H	plain x: T81, no side loops as T83
+6	1	M	same Cw sign as item 4: T92
+7	1	M	8 then S-shaped second mark; nearest cell T11 (85), though its 5 has a flatter top and no tick above here
+8	1	M	same Cw sign, no tall final upstroke: T92
+9	2	L	t-shaped: stem rising above crossbar with curved foot; T42 is the only T-bar cell but its bar hooks and its stem is straight
+10	1	M	m with a loopy superscript above right: T13, not bare T64
+11	1	H	two verticals crossed by one long bar: T86
+12	2	M	same Cw sign: T92
+13	1	H	epsilon joined by a bar to a small o in one stroke: T29 as one cell
+14	2	M	bracket holds a lone 8 only; the 9 that follows is outside it (8-9 together would be T15, not T46)
+15	1	H	epsilon-bar-o compound: T29
+16	1	H	wide round loop with stem below, stem barely above loop: T18, not narrow T98
+17	1	H	wide loop phi with stem below: T18
+18	T85	H	bracket sits on a plain cross (+), neither w option; the Cw sign is to its right outside the bracket
+19	1	L	t-form: stem crossed by a short top bar, foot curling right; T42 is the nearest cell (bar on stem) but has no foot, T17 also near
+20	1	L	same t-form as item 19 (second t of the same line); T42 nearest, no exact cell
+21	1	M	c-loop-) three-stroke omega without any rising final tail; T50's tall s-tail absent
+22	1	M	round open loop with stem mostly below, barely above; T98 is narrow with long stem above and below
+23	1	M	bowl top right, stem with two horizontal crossbars below the bowl; T95 has no crossbar, only a foot
+24	2	M	round loop, stem below only; T18 form, not the narrow tall-stemmed T98
+25	1	H	epsilon joined by a mid-height bar to a small o, one ligature as in T29
+26	1	M	round loop with long stem below, short above; T18
+27	T37 T46	L	bracket holds a theta with bar through it (T37) then an 8-shape cut by the fold (T46's 86 or T89); not T46 alone
+28	1	M	round loop, stem below; T18
+29	2	M	c-loop-) omega with no rising tail; T92 not T50
+30	2	M	round loop, stem below; T18 not T98
+31	T15	M	8 then a 9 with long left-curling descender (loop on top), as in T15's 89; T46's 6 has its loop at the bottom
+32	T51	M	bowl top right, stem with two crossbars below; T51's crossbar form, not T95 (foot only) nor T66 (loop with foot)
+33	T33	H	bracket holds two short verticals on a base bar (T33); the o-with-ascender both readers name sits right of the bracket
+34	T53	H	bracket holds the double loop (T53); the hash sign both readers name sits right of the bracket
+35	T83 T51 T96	M	bracket holds the x-with-bar sign, then the crossbarred p, then the e-loop before the fold; p precedes the loop (option-2 order) but has crossbars and is preceded by T83
+36	T51	M	bowl top right, stem with two crossbars; T51, not T95 or T66
