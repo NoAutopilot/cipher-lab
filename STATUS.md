@@ -7389,6 +7389,21 @@ opened 15:16 (six workers; V-MANTC lowered Manteuffel 54 to M and flagged decode
 lane). Account 3 silent since 02:03. Checks all ok (keys 6 working, S2 recovered); queue: SORTER-RERENDER-A3, TX-CONFIRM-SET-2 (account 1, :40).
 CLOSEST: TX-ENGINEER-2 round 0 (a headroom pool that can show a gain). Next check-in 16:13.
 
+Check-in 3, 16:14-16:2x UTC 9 Oct (9:14 am PT): five_hour allowed; orchestrator context ~350k, cost 10.6. Account 4 live: LANE TX-ENGINEER-2 only
+(Fable, 14.48 + workers; its own check-in 2 at 16:24). Round 0 closed by the lane: gate p<0.01 fixed on the eval pool at 34 baseline errors (f152r
+added), the gate's controls PASS (planted 30% fixer passes 0.863 of draws, no-op/random/worse 0.000), reader-agreement map on file (eval: 8 of 29
+errors all-readers-same-wrong). Headroom pool builds from the DECODE Dinteville fr.3619 glosses: f.89 gives 10 baseline errors on 240 scored; f.98v
+and f.113 give 0 BY CONSTRUCTION (their recipe scores a position only where the pipeline's own sign is the leaf majority, so the pipeline cannot be
+scored wrong -- the workers said so themselves; flagged to the lane in ROOM as a rule-3 non-test: those items need a recipe that scores every
+gloss-confident position whatever the pipeline read, or they add nothing to S1). bir1591-f23r (eval hand, fr.3623) built: 203 scored, 16 errors
+all on align-conflict-flagged positions. First experiments: X2 pair classifiers dev-FAIL (1/11, wrong way), X5 learned reader weighting dev-FAIL
+(3/7), X20 owner-decision propagation dev-FAIL (0/3); X6 sorter curve measured (cluster propagation destructive; per-tile doubt feed holds 3-6 of
+7-27 errors in 20 tiles). TX-CONFIRM-SET-2 done on account 1 (vivonne1573-f103r-confirm2: fr.16105 f.103r, Saint-Gouard to Charles IX 1573, a new
+hand/office/decade/key family, truth from the clerk decipherment ff.104r-108v through Tomokiyo's published key; account 1 ledgers it). Account 2
+FAMILY-A2j wave 2 (Manteuffel 0136 gloss + Acta Borussica print gates PASS, 64 tokens C 47 M 17; decode_key --check report-mode drift fixed by
+TOOL-CHK). Account 3 silent since 02:03. Orphan check: only the known trigger false positives, five (b) rows on sessions already archived and
+ledgered by their lane, the Oct 1-3 stale-claim tail; no new dropped request. Checks ok; keys 6 working. Next check-in 16:55.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
