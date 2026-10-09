@@ -143,3 +143,4 @@ if unclaimed at check-in 7. EXHIBIT-2 done and given (https://claude.ai/artifact
 the segmentation PREREG is the lane's next step -- tell the owner when its first dev result lands. ASKS 156 (a) APPLIED (restricted_guard allowed
 lines + set 2); ASKS 160 waits on the owner. Orchestrator context 765k at 23:22: write hub-seed/SUCCESSOR-PROMPT.md's TAKEN line for a successor
 and hand over before ~850k (next check-in if past 820k).
+STATE DELTA 23:4x UTC 9 Oct: container restarted 23:4x (nothing lost; the guard scan had already posted clean). Dispatcher 23:35 spawned WVO-1068-KEY session_01Vw4NDEo8HgDpYPLpo8h63Q (box to 01:39 UTC; ledger + archive on its done line); WVO-153-KEY stays queued until that done line. Lane inc. 3 check-in 2 posted 23:31 (DV1b ledgered 18.38 D; DV1c anchor + SH-VIV sheet workers live); TX-RED pass 10 at 23:41 (F43-F46 closed).
