@@ -1,0 +1,251 @@
+line	k	crop	x	y	w	h	marks
+p1c_L01	1	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	158	195	58	51	p1c_L01_s1_01_m0001|p1c_L01_s1_01_m0002|p1c_L01_s1_01_m0005
+p1c_L01	2	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	223	113	58	131	p1c_L01_s1_01_m0003
+p1c_L01	3	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	272	106	164	221	
+p1c_L01	4	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	421	114	34	45	
+p1c_L01	5	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	516	189	123	51	p1c_L01_s1_01_m0009
+p1c_L01	6	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	581	304	44	43	
+p1c_L01	7	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	837	145	40	53	
+p1c_L01	8	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	1015	192	53	65	p1c_L01_s1_01_m0013|p1c_L01_s1_01_m0014
+p1c_L01	9	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	1093	172	108	80	p1c_L01_s1_01_m0006
+p1c_L01	10	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	1198	197	44	87	p1c_L01_s1_01_m0004
+p1c_L01	11	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	1235	78	110	215	
+p1c_L01	12	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg	1346	86	172	174	
+p1c_L01	13	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	124	197	126	103	
+p1c_L01	14	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	180	93	36	59	
+p1c_L01	15	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	254	202	44	95	p1c_L01_s2_01_m0009
+p1c_L01	16	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	525	110	70	177	p1c_L01_s2_01_m0001
+p1c_L01	17	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	603	210	50	57	
+p1c_L01	18	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	670	208	90	92	p1c_L01_s2_01_m0002|p1c_L01_s2_01_m0004
+p1c_L01	19	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	778	204	181	135	p1c_L01_s2_01_m0003|p1c_L01_s2_01_m0005
+p1c_L01	20	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	949	210	135	92	
+p1c_L01	21	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	1099	145	121	210	p1c_L01_s2_01_m0008
+p1c_L01	22	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	1233	205	111	75	
+p1c_L01	23	benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg	1320	152	145	127	
+p1c_L02	1	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	119	201	150	136	p1c_L02_s1_01_m0001
+p1c_L02	2	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	280	209	116	59	p1c_L02_s1_01_m0002
+p1c_L02	3	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	418	192	102	117	p1c_L02_s1_01_m0003
+p1c_L02	4	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	545	140	100	120	
+p1c_L02	5	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	666	185	49	126	
+p1c_L02	6	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	756	123	70	170	
+p1c_L02	7	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	838	142	88	119	p1c_L02_s1_01_m0004|p1c_L02_s1_01_m0008
+p1c_L02	8	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	1117	158	72	96	
+p1c_L02	9	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	1196	136	58	113	
+p1c_L02	10	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	1261	159	91	85	
+p1c_L02	11	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	1367	168	88	66	
+p1c_L02	12	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg	1456	170	63	67	
+p1c_L02	13	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	137	171	41	88	
+p1c_L02	14	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	212	184	54	78	
+p1c_L02	15	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	303	191	150	81	p1c_L02_s2_01_m0003
+p1c_L02	16	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	462	169	127	105	
+p1c_L02	17	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	599	193	44	129	
+p1c_L02	18	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	658	161	128	160	
+p1c_L02	19	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	794	176	148	116	p1c_L02_s2_01_m0002|p1c_L02_s2_01_m0005|p1c_L02_s2_01_m0008
+p1c_L02	20	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	943	188	68	82	p1c_L02_s2_01_m0006|p1c_L02_s2_01_m0007
+p1c_L02	21	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	1059	185	69	137	
+p1c_L02	22	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	1118	21	102	301	p1c_L02_s2_01_m0001|p1c_L02_s2_01_m0004
+p1c_L02	23	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	1203	191	116	56	p1c_L02_s2_01_m0009
+p1c_L02	24	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	1340	138	71	161	
+p1c_L02	25	benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg	1522	180	68	101	
+p1c_L03	1	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	99	181	153	93	
+p1c_L03	2	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	273	187	58	127	
+p1c_L03	3	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	363	141	67	165	p1c_L03_s1_01_m0010
+p1c_L03	4	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	428	162	82	92	p1c_L03_s1_01_m0001
+p1c_L03	5	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	514	82	152	145	p1c_L03_s1_01_m0004
+p1c_L03	6	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	762	162	97	119	
+p1c_L03	7	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	882	163	65	78	
+p1c_L03	8	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	970	169	71	84	p1c_L03_s1_01_m0006
+p1c_L03	9	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	1046	175	61	86	p1c_L03_s1_01_m0008
+p1c_L03	10	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	1129	162	105	80	p1c_L03_s1_01_m0007
+p1c_L03	11	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg	1383	145	121	93	
+p1c_L03	12	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	79	163	238	88	p1c_L03_s2_01_m0002|p1c_L03_s2_01_m0006|p1c_L03_s2_01_m0007|p1c_L03_s2_01_m0008
+p1c_L03	13	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	331	129	98	105	
+p1c_L03	14	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	459	164	67	80	p1c_L03_s2_01_m0005
+p1c_L03	15	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	539	177	71	77	p1c_L03_s2_01_m0001
+p1c_L03	16	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	632	190	174	128	
+p1c_L03	17	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	833	116	89	140	
+p1c_L03	18	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	920	178	99	110	
+p1c_L03	19	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	1021	119	68	170	
+p1c_L03	20	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	1112	193	52	135	p1c_L03_s2_01_m0003
+p1c_L03	21	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	1196	187	78	103	
+p1c_L03	22	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	1293	154	104	94	
+p1c_L03	23	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	1405	178	65	73	
+p1c_L03	24	benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg	1488	172	94	74	
+p1c_L04	1	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	101	285	21	77	
+p1c_L04	2	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	99	48	153	93	
+p1c_L04	3	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	117	247	161	118	
+p1c_L04	4	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	273	54	58	126	
+p1c_L04	5	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	264	242	127	156	
+p1c_L04	6	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	363	7	65	165	
+p1c_L04	7	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	406	252	63	82	
+p1c_L04	8	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	493	242	85	87	
+p1c_L04	9	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	660	255	111	74	p1c_L04_s1_01_m0002|p1c_L04_s1_01_m0003|p1c_L04_s1_01_m0005
+p1c_L04	10	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	768	249	70	78	p1c_L04_s1_01_m0004
+p1c_L04	11	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	873	252	121	67	p1c_L04_s1_01_m0006|p1c_L04_s1_01_m0009
+p1c_L04	12	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	1004	258	89	100	
+p1c_L04	13	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	1067	250	151	122	p1c_L04_s1_01_m0001
+p1c_L04	14	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	1210	204	112	162	
+p1c_L04	15	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	1224	0	133	232	
+p1c_L04	16	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	1324	242	67	132	p1c_L04_s1_01_m0011
+p1c_L04	17	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg	1429	234	64	113	p1c_L04_s1_01_m0007
+p1c_L04	18	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	181	170	113	135	p1c_L04_s2_01_m0009|p1c_L04_s2_01_m0010|p1c_L04_s2_01_m0014
+p1c_L04	19	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	310	205	146	215	
+p1c_L04	20	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	476	219	60	89	p1c_L04_s2_01_m0012
+p1c_L04	21	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	526	420	59	86	
+p1c_L04	22	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	568	209	71	106	
+p1c_L04	23	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	657	235	105	70	
+p1c_L04	24	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	632	56	169	128	p1c_L04_s2_01_m0002
+p1c_L04	25	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	769	249	211	127	p1c_L04_s2_01_m0001|p1c_L04_s2_01_m0013
+p1c_L04	26	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	920	44	99	89	p1c_L04_s2_01_m0005|p1c_L04_s2_01_m0011
+p1c_L04	27	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	987	252	54	89	
+p1c_L04	28	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	1063	239	119	89	p1c_L04_s2_01_m0004
+p1c_L04	29	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	1112	59	52	135	
+p1c_L04	30	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	1176	240	73	76	p1c_L04_s2_01_m0003
+p1c_L04	31	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	1196	53	78	103	
+p1c_L04	32	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	1268	232	63	79	
+p1c_L04	33	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	1349	186	79	117	
+p1c_L04	34	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	1410	232	53	114	
+p1c_L04	35	benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg	1490	171	80	114	
+p1c_L05	1	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	107	55	16	59	
+p1c_L05	2	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	111	200	141	146	p1c_L05_s1_01_m0002
+p1c_L05	3	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	279	221	203	139	p1c_L05_s1_01_m0004
+p1c_L05	4	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	473	147	98	135	
+p1c_L05	5	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	536	226	163	57	p1c_L05_s1_01_m0001
+p1c_L05	6	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	713	160	111	119	p1c_L05_s1_01_m0005
+p1c_L05	7	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	799	206	73	74	
+p1c_L05	8	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	911	204	77	75	p1c_L05_s1_01_m0007
+p1c_L05	9	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	1004	165	57	120	
+p1c_L05	10	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	1099	181	108	88	
+p1c_L05	11	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	1290	166	74	181	
+p1c_L05	12	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg	1383	185	156	58	
+p1c_L05	13	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	145	159	93	81	
+p1c_L05	14	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	246	171	212	209	
+p1c_L05	15	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	335	0	102	124	
+p1c_L05	16	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	408	85	87	201	
+p1c_L05	17	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	506	162	40	79	
+p1c_L05	18	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	526	117	59	88	p1c_L05_s2_01_m0002
+p1c_L05	19	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	601	97	67	150	
+p1c_L05	20	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	671	68	125	201	p1c_L05_s2_01_m0001|p1c_L05_s2_01_m0003
+p1c_L05	21	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	788	133	68	148	p1c_L05_s2_01_m0004
+p1c_L05	22	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	874	335	73	107	p1c_L05_s2_01_m0005
+p1c_L05	23	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	969	241	95	235	p1c_L05_s2_01_m0006|p1c_L05_s2_01_m0008
+p1c_L05	24	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	1089	258	83	147	p1c_L05_s2_01_m0007|p1c_L05_s2_01_m0010
+p1c_L05	25	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	1164	316	64	95	p1c_L05_s2_01_m0009
+p1c_L05	26	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	1258	336	49	101	
+p1c_L05	27	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	1327	339	233	81	
+p1c_L05	28	benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg	1410	243	96	139	
+p1c_L06	1	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	99	79	79	226	
+p1c_L06	2	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	165	214	188	74	
+p1c_L06	3	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	279	25	203	131	p1c_L06_s1_01_m0001
+p1c_L06	4	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	315	198	141	119	
+p1c_L06	5	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	454	226	90	94	p1c_L06_s1_01_m0003|p1c_L06_s1_01_m0008
+p1c_L06	6	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	565	213	98	79	
+p1c_L06	7	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	676	212	72	143	
+p1c_L06	8	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	749	204	155	133	p1c_L06_s1_01_m0002|p1c_L06_s1_01_m0004
+p1c_L06	9	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	886	224	174	65	
+p1c_L06	10	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	1062	220	104	116	
+p1c_L06	11	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	1191	226	113	65	p1c_L06_s1_01_m0006
+p1c_L06	12	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	1331	174	72	119	
+p1c_L06	13	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg	1421	210	76	86	p1c_L06_s1_01_m0005|p1c_L06_s1_01_m0007
+p1c_L06	14	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	121	218	49	110	
+p1c_L06	15	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	197	220	105	58	p1c_L06_s2_01_m0010
+p1c_L06	16	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	328	195	54	91	p1c_L06_s2_01_m0009
+p1c_L06	17	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	419	215	78	77	
+p1c_L06	18	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	482	83	10	32	
+p1c_L06	19	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	495	139	115	139	p1c_L06_s2_01_m0002
+p1c_L06	20	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	574	196	159	118	p1c_L06_s2_01_m0001
+p1c_L06	21	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	746	184	105	107	p1c_L06_s2_01_m0003
+p1c_L06	22	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	858	174	89	105	p1c_L06_s2_01_m0006
+p1c_L06	23	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	1091	102	81	219	
+p1c_L06	24	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	1164	162	80	177	
+p1c_L06	25	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	1258	184	49	99	
+p1c_L06	26	benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg	1327	95	233	175	
+p1c_L07	1	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	176	179	114	161	
+p1c_L07	2	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	298	234	83	73	
+p1c_L07	3	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	415	199	72	105	p1c_L07_s1_01_m0001
+p1c_L07	4	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	518	229	52	78	
+p1c_L07	5	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	597	228	53	111	p1c_L07_s1_01_m0002
+p1c_L07	6	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	687	228	87	83	
+p1c_L07	7	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	802	166	95	126	p1c_L07_s1_01_m0003
+p1c_L07	8	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	854	204	150	142	
+p1c_L07	9	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	1013	218	58	95	p1c_L07_s1_01_m0005|p1c_L07_s1_01_m0006
+p1c_L07	10	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	1099	222	83	85	
+p1c_L07	11	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	1200	232	45	165	
+p1c_L07	12	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	1277	218	119	79	p1c_L07_s1_01_m0007
+p1c_L07	13	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg	1414	237	77	77	p1c_L07_s1_01_m0008
+p1c_L07	14	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	102	155	146	143	p1c_L07_s2_01_m0010|p1c_L07_s2_01_m0011
+p1c_L07	15	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	269	222	69	71	p1c_L07_s2_01_m0012
+p1c_L07	16	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	369	175	183	179	p1c_L07_s2_01_m0002|p1c_L07_s2_01_m0005|p1c_L07_s2_01_m0006|p1c_L07_s2_01_m0009|p1c_L07_s2_01_m0013
+p1c_L07	17	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	581	206	49	75	
+p1c_L07	18	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	659	198	100	75	p1c_L07_s2_01_m0014
+p1c_L07	19	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	783	192	57	136	
+p1c_L07	20	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	871	199	112	133	
+p1c_L07	21	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	985	160	90	145	
+p1c_L07	22	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	1088	198	114	86	
+p1c_L07	23	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	1194	192	71	82	p1c_L07_s2_01_m0003
+p1c_L07	24	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	1285	177	52	103	
+p1c_L07	25	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	1349	184	115	98	
+p1c_L07	26	benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg	1473	212	80	82	
+p1c_L08	1	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	99	199	205	84	
+p1c_L08	2	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	275	185	113	143	
+p1c_L08	3	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	441	201	63	79	p1c_L08_s1_01_m0001
+p1c_L08	4	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	487	140	44	50	
+p1c_L08	5	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	536	212	116	55	
+p1c_L08	6	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	657	193	98	186	
+p1c_L08	7	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	782	197	112	185	
+p1c_L08	8	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	887	177	132	208	
+p1c_L08	9	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	1037	202	133	131	
+p1c_L08	10	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	1179	209	99	164	
+p1c_L08	11	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg	1294	186	211	186	
+p1c_L08	12	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	119	209	70	111	
+p1c_L08	13	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	185	214	123	156	
+p1c_L08	14	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	304	209	146	56	
+p1c_L08	15	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	427	344	22	32	
+p1c_L08	16	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	461	195	70	222	
+p1c_L08	17	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	545	192	130	76	p1c_L08_s2_01_m0005
+p1c_L08	18	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	676	202	205	180	p1c_L08_s2_01_m0001|p1c_L08_s2_01_m0003|p1c_L08_s2_01_m0004
+p1c_L08	19	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	752	101	113	161	
+p1c_L08	20	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	878	137	90	149	
+p1c_L08	21	benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg	968	142	147	93	p1c_L08_s2_01_m0002
+p2c_L01	1	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	60	65	129	264	p2c_L01_s1_01_m0010|p2c_L01_s1_01_m0012|p2c_L01_s1_01_m0015
+p2c_L01	2	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	210	165	87	115	
+p2c_L01	3	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	280	189	92	69	
+p2c_L01	4	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	395	95	68	163	
+p2c_L01	5	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	459	195	50	118	
+p2c_L01	6	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	596	168	136	189	p2c_L01_s1_01_m0003
+p2c_L01	7	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	744	187	76	98	
+p2c_L01	8	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	823	112	67	184	p2c_L01_s1_01_m0004
+p2c_L01	9	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	906	191	100	69	
+p2c_L01	10	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	947	156	38	48	
+p2c_L01	11	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	1021	200	56	74	
+p2c_L01	12	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	1166	146	78	132	p2c_L01_s1_01_m0005
+p2c_L01	13	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg	1429	215	56	143	p2c_L01_s1_01_m0008|p2c_L01_s1_01_m0011|p2c_L01_s1_01_m0014
+p2c_L01	14	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	133	208	88	63	p2c_L01_s2_01_m0002
+p2c_L01	15	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	236	210	87	55	p2c_L01_s2_01_m0004|p2c_L01_s2_01_m0005
+p2c_L01	16	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	429	206	84	94	p2c_L01_s2_01_m0007|p2c_L01_s2_01_m0011
+p2c_L01	17	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	540	157	219	121	p2c_L01_s2_01_m0012
+p2c_L01	18	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	759	161	101	125	p2c_L01_s2_01_m0006
+p2c_L01	19	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	852	201	51	82	
+p2c_L01	20	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	932	165	62	146	
+p2c_L01	21	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	1020	198	97	120	
+p2c_L01	22	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	1105	195	93	71	
+p2c_L01	23	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	1214	212	79	71	
+p2c_L01	24	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	1325	204	81	69	
+p2c_L01	25	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	1426	212	96	80	
+p2c_L01	26	benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg	1538	219	62	87	
+p2c_L02	1	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	200	183	98	135	
+p2c_L02	2	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	301	192	101	127	p2c_L02_s1_01_m0010
+p2c_L02	3	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	412	182	129	69	p2c_L02_s1_01_m0011
+p2c_L02	4	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	544	158	86	107	
+p2c_L02	5	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	654	185	109	72	p2c_L02_s1_01_m0008
+p2c_L02	6	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	764	185	110	122	
+p2c_L02	7	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	870	191	163	153	p2c_L02_s1_01_m0001|p2c_L02_s1_01_m0002
+p2c_L02	8	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	1150	318	26	31	
+p2c_L02	9	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	1333	186	126	120	p2c_L02_s1_01_m0004|p2c_L02_s1_01_m0009
+p2c_L02	10	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg	1474	172	99	169	p2c_L02_s1_01_m0007|p2c_L02_s1_01_m0012
+p2c_L02	11	benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg	134	192	85	120	p2c_L02_s2_01_m0001|p2c_L02_s2_01_m0003|p2c_L02_s2_01_m0004|p2c_L02_s2_01_m0006
+p2c_L02	12	benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg	244	108	117	152	
+p2c_L02	13	benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg	325	142	109	141	
+p2c_L02	14	benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg	542	153	123	94	
+p2c_L02	15	benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg	667	123	96	186	
+p2c_L02	16	benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg	799	276	58	113	p2c_L02_s2_01_m0007

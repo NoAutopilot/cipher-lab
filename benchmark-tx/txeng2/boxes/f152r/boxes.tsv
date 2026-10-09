@@ -1,0 +1,5 @@
+tile	line	pos	box_k	source	x	y	w	h	mapping	overlay_check	note
+f152r_L03_31	f152r_L03	31	f152r_04_032	ciphers/nevers-birago-fr3251-1572/harvest/f152r/src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg	2924	362	82	69	order (33 boxes / 33 positions)	yes	atlas line 4 order 33/33; box covers one whole sign
+f152r_L04_25	f152r_L04	25	f152r_05_030	ciphers/nevers-birago-fr3251-1572/harvest/f152r/src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg	2538	426	64	92	end-anchored (27 boxes / 25 positions)	yes	end-anchored: last box before the plain text that ends the line; box covers one whole sign; counts 27/25, so only the end anchor is checked
+f152r_L02_15	f152r_L02	15	f152r_03_015	ciphers/nevers-birago-fr3251-1572/harvest/f152r/src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg	1749	240	60	60	order (31 boxes / 31 positions)	yes	atlas line 3 order 31/31 after the tick over box 21 is dropped; box covers one whole sign
+f152r_L03_3	f152r_L03	3	f152r_04_004	ciphers/nevers-birago-fr3251-1572/harvest/f152r/src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg	638	384	79	60	order (33 boxes / 33 positions)	yes	atlas line 4 order 33/33; box covers one whole sign
