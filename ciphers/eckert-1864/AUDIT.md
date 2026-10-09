@@ -7862,3 +7862,133 @@ corrected here: FM-R4b's table gloss "Please send Herman ('hoe man')" -> the ope
 notes, not applied here): E261 `plain: saddle`, "the be" note (they); E266 Iron = soon (C), "requested by client" = required by Lieut
 (clear + image; ciphertext stays as transcribed), nuptial M; E262 Whiskey = Whisky = [Troops] (`variant:`), hoe man = Homan (plain).
 Requests: hdl.huntington.org 20 (15 dmQuery, 3 IIIF pages, 2 failed dmGetParent calls); archive.org 3; Google Books 1 (429).
+
+## AUDIT (FV-FM7c)
+
+Verifier FV-FM7c (account 1, for LANE LEDGER), 9 Oct 2026, 04:22-04:5x UTC by `date -u`; a separate session from the reader FM-R4b
+(account 1), not protecting its conclusions. Scope: **E267, E268, E269** (ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 =
+Huntington object 5952; NOTES "## FM-R4b"). Nothing decoded beyond key look-ups in key.md. Key source for all three: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Scripts:
+`fortmonroe/fv_fm7c_hdl.py` + `.out` (CONTENTdm full text, item info, page images to scratch), `fortmonroe/fv_fm7c_print.py` + `.out`.
+
+### 1. Duplicates, prior work, holder's full text, image
+- **Duplicate diff:** pointers 5790, 5742, 5775 occur in ciphertext*.txt only in E267/E268/E269's own headers. Same-date filed headers are
+  other telegrams: E49 (8983, 12 June 1864, Meigs to Biggs: White House expedition), E262 (5741, 12 June, O'Brien to Eckert), E140 (8984),
+  E27 (9091, 10 Oct). mssEC 18 (`ms18/entries-ms18.tsv`, Washington sent book) has no row for 9-11 Oct 1864 (p.197 ends 8 Oct, p.198 opens
+  12 Oct) and no Keyport row on 14-16 Oct; its 15 Oct rows to Dealy (9867/2, 9868/1) are other telegrams (9867/2 = the 15 Oct entry below
+  E267 on the same leaf, 5790/1). **No duplicate in our files.**
+- **Prior-work tool:** `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<ptr>;date=<d>' --step-type audit
+  --offline` for each: exit 4, LEAD only on two target-level ROOM claims (ECK-PAGEFIX's mssEC 19 page-column claim and this lane's own
+  orchestrator claim), neither covering these items; plaintext UNCHECKED-NET (aaymeloglu not cloned); editions UNCHECKED (no correspondents in
+  items.tsv; the edition pass below is by hand). Rows appended to prior-work.tsv by the tool.
+- **Holder's full text (CONTENTdm p16003coll11, `CISOSEARCHALL`, all pointers, under the LANE LEDGER hdl token 04:29-04:31 UTC, 12 queries
+  + 5 item records + 3 page images = 20 requests):**
+  - **E267: no clear copy.** keyport 9 hits (9713 8700 5615 5630 13644 13126 13138 9219 4546; 5790 itself writes "Key / post", so it does not
+    hit), "wharf on arrival" 7 (5790; 10357 and 10414 read: Butler's 25 May and Dana's 14 June telegrams, "Wilsons Wharf"/"Wilcox Wharf", not
+    this), "directed you to do so" 32, "since you left" 59 (5790, 9867 = the 15 Oct entry and its sent-book copy). No Washington clear copy
+    of E267 located.
+  - **E268: no clear copy.** "hurry me an operator" 1 (5742 only), scantling 2 (5742; 4756 read: Dana, Grant's Hd Qrs, 3 July 1864,
+    "mills where scantling for sleepers could be sawed", other telegram), "inch plank" 4 (5742; 5802 5759 5765 not read, later Fort Monroe
+    pages), afloat 19.
+  - **E269: no clear copy of the telegram itself, but its antecedent in two period copies.** "light vessel" 9, "york river light" 4, "house
+    inspector" 5 (5774, 5775 ...), mcgarvey 0 (the leaf writes "Mc / Garvey"). **5774** (Page 230, the leaf before E269, Fort Monroe 25 July
+    1864, to J. W. Sampson, Baltimore, cipher copy) and **4823** (Page 382, the same telegram in clear, received Baltimore 8.10 p.m.): "Com
+    Purviance light house Inspr Balto. Capt Gale keeper of Lightship mouth of York river asks to have his vessel moved back to obstructions in
+    Elizabeth river, reports her present position dangerous as Yorktown is evacuated. I know of no service he can render where he now is so
+    far as the Army is concerned. Herman Biggs Lt Col & QM". E269 (30 July, Baltimore, Sampson to Sheldon for Biggs) is the reply: "authority
+    is received to remove York River light vessel ...". The clear copy 4823 also confirms Windsor = River and Stagger = Light in this context.
+- **Image (this session, pages 5790, 5742, 5775 at 2400 px to scratch, eye-read whole; one zoomed crop of the 5790 headers):** 5742 (E268)
+  and 5775 (E269): every word of the transcription matches, including "and / plank / inch / you / can / &", "walrus paradise shaffer chief of
+  staff please hurry me an operator", "yoke J [or I] Mc Garvey". 5790 (E267): the body matches ("Key / post" across the line break, "optic
+  wharf", "sea him in person"). **Header date:** the transcription reads "Oct 10 / 64"; on the image the second digit is a small raised loop
+  with a flag at the top, written like the "5" of the "Oct 15 / 64" header lower on the same leaf, and unlike a plain 0. I read it as **10 or
+  15, not settled from the image**; the context below favours 14-15 Oct.
+
+### 2. Print
+Cached texts (168 volumes, sources/ia-fulltext/print-check) plus, fetched to scratch: OR I/36 pt 3 (`warofrebellion363unit`), OR I/40 pt 2
+(`402unit`), OR I/42 pts 2-3 (`422unit`, `423unit`), Butler's Private and Official Correspondence III (`privateofficialc03butl`); 5 archive.org
+downloads, 2 s apart. Phrase/rare-name grep (`fv_fm7c_print.out`): Keyport, "meet him at the wharf", "see him in person", "tell him that I
+directed you", Dealy, "Secretary of War left here"; "put afloat all the", scantling, "inch plank", "100,000 feet", "hurry me an operator",
+"until you get further orders"; "York River light vessel", light-vessel, McGarvey/Garvey, "light-house inspector", "J. W. Sampson".
+- **E267:** 0 for the telegram's words. Keyport is a steamer (Butler V, "steward of the steamer Keyport", Aug 1864; OR I/33 index). Dealy is
+  W. J. Dealy, operator at Fort Monroe (Bates, *Lincoln in the Telegraph Office*, p.360). **Context printed:** OR I/43 pt 2 p.363, Stanton to
+  Grant, War Department, **14 Oct 1864, 10.30 a.m.**: "I expect to make you a visit to-morrow with General Meigs ... am only awaiting
+  Sheridan's arrival"; OR I/42 pt 3 pp.257-259, Army of the Potomac, 17 Oct: "the Secretary of War is about to visit these headquarters" and
+  "the Secretary of War has returned to City Point". The leaf's own next entry (5790/1, Washington 15 Oct, Eckert to Dealy for [the Secretary
+  of War]) begins "... is all we have received since you left". The Secretary's trip to City Point was therefore about 14-15 Oct; a 10 Oct
+  departure is not supported by anything found, and the header digit may be a 5 (above).
+- **E268: 0 for the telegram's words. Same-day orders printed, OR I/36 pt 3:** p.755, Meigs to Lt. Col. H. Biggs, chief quartermaster, Fort
+  Monroe, 11 June 1864, 11.05 a.m.: "Lieutenant-General Grant desires the saw-mills at Fort Monroe to saw out all the 2-inch plank possible,
+  and that it be put upon barges and held subject to his orders"; pp.768-769, Grant to Colonel Biggs, Cold Harbor, 12 June 1864: "Send also
+  all the lumber you can, particularly the 2-inch plank." E268 (Butler's Hd Qrs, 12 June 7.30 p.m., to Biggs: "put afloat all the 3 and 2
+  inch [plank] you can & 100,000 feet 1 inch") is the Army of the James's own call on the same plank the same day. Shaffer (Col. J. W.
+  Shaffer, Butler's chief of staff) passim in OR I/36 and Butler III-V.
+- **E269:** 0 for the telegram's words; J. W. Sampson, Cipher Operator, Baltimore, OR I/37 pt 2 (14 July 1864, other telegram). The period
+  antecedent is the holder's 5774/4823 (above), not print.
+- Press: loc.gov Chronicling America JSON, 3 requests ("Stanton Keyport", "Secretary Stanton City Point", one cut off); the date filter was not
+  honoured and nothing relevant returned -- not a test, logged. Not searched: Google Books (readers saw 429 this hour); Grant Papers (no row to
+  or from Grant); the Lighthouse Board's annual report for 1864; Plum, *The Military Telegraph*.
+
+### 3. Grade and reading corrections (FM-R4b's table, reading.md)
+- **E267:** code words Brutus = Secretary of War, Stomach = Left, Harriet = 1 PM, Black = City Point, zebra/unity = period, Optic = At the,
+  Appian = Monroe: **H 8 of 8**. "wharf" and "person" plain (the key's Wharf = Today and Person = 5 give nonsense; FM-R4b's call, agreed, M 0
+  as the sense is unambiguous). "Key post" = the steamer **Keyport** (plain; the clerk's split). Header date: **M** ("Oct 10" as transcribed;
+  image 10 or 15; context 14-15 Oct) -- FM-R4b's "10 Oct 1864" should carry that doubt in the header and in status.json. Reading as FM-R4b's.
+- **E268:** Snake = Head Quarters, Minnie = 7.30 PM, Forbid = 12, Paradise = Colonel (twice), Perfume = 3, Plank = 2, Plug = 1 (twice),
+  Prolong = 100, Promise = 1000, Walrus = Signature, zodiac = period (twice): **H 14 of 14**. Two internal checks: Minnie = 7.30 PM and Forbid
+  = 12 agree with the clear header "June 12 1864 7.30 P.M." "plug prolong promise" = 1 x 100 x 1000 = 100,000 (English way, key note), agreed.
+  **Correction:** "plank" is the numeral 2, so the leaf says "all the 3 and 2 inch you can"; FM-R4b's "3 and 2 inch plank" supplies the noun
+  (I, by sense; OR I/36 pt 3's "2-inch plank" supports it). **Correction (attribution):** Walrus = Signature, so the message is signed
+  "Colonel Shaffer, chief of staff" (Butler's chief of staff), and "please hurry me an operator / R O'Brien" is the operator's own service
+  line, not Shaffer's words; FM-R4b's "Colonel Shaffer, chief of staff: please hurry me an operator", R. O'Brien, runs the two together.
+  Reading: "Headquarters, 7.30 p.m., 12 [June]. For Colonel Biggs: Put afloat all the 3 and 2 inch [plank] you can, and 100,000 feet 1 inch.
+  Don't want scantling. Don't start vessel up until you get further orders. [Signed] Colonel Shaffer, chief of staff. -- Please hurry me an
+  operator. R. O'Brien."
+- **E269:** Banditti = Baltimore, Laugh = 30, Emily = 10 AM, Vinton = Quartermaster, Animal = Monroe, Windsor = River, Stagger = Light
+  (twice), Wiley(s) = Road(s), zodiac/zebra = period, Yoke = Signature: **H 12 of 12**. Sampson plain (FM-R4b, agreed). "hamp tun" = Hampton
+  (plain). Signer "J [or I] Mc Garvey": initial M. Reading as FM-R4b's, with the antecedent named: Baltimore, 30 July 1864, 10 a.m., for
+  Colonel Biggs, quartermaster, Monroe: authority is received to remove the York River light vessel (the lightship at the mouth of the York,
+  whose keeper Capt. Gale had asked on 25 July to be moved back to the Elizabeth River obstructions); if you have the means take her to Hampton
+  Roads; let me know if the service can be done by you. J. McGarvey for the light-house inspector [Commander Purviance].
+
+### 4. Classification (key `period`)
+`depth_pct` = H+C / code-word groups.
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E267** T. T. Eckert (Washington) to W. J. Dealy, Fort Monroe, Oct 1864 (header "Oct 10", image 10 or 15): meet the Secretary of War off the Keyport | **N3** | unknown | **D2** | 100 (H 8 of 8) | code clause: Brutus = Secretary of War, Black = City Point, Appian = Monroe passim; external: OR I/43 pt 2 p.363 and OR I/42 pt 3 pp.257-259 confirm the Secretary's trip to City Point but put it at 14-17 Oct, so they check the event and challenge the header date -- D2 until the date is settled; image checked here |
+| **E268** R. O'Brien, Butler's Hd Qrs, to Sheldon, Fort Monroe, for Col. Biggs, 12 June 1864 7.30 p.m., message of Col. Shaffer: put plank afloat | **N3** | unknown | **D3** | 100 (H 14 of 14) | code clause: Minnie = 7.30 PM and Forbid = 12 agree with the clear header (internal), Paradise = Colonel twice, Walrus = Signature passim; external non-statistical: OR I/36 pt 3 p.755 (Meigs to Biggs, 11 June, all the 2-inch plank on barges) and pp.768-769 (Grant to Biggs, 12 June, particularly the 2-inch plank); image checked here |
+| **E269** J. W. Sampson, Baltimore, to Sheldon for Col. Biggs, 30 July 1864: removal of the York River light vessel authorized | **N3** | unknown | **D3** | 100 (H 12 of 12) | code clause: Banditti = Baltimore, Windsor = River, Stagger = Light (twice), Wiley = Road; external non-statistical: the holder's 5774 (cipher) and 4823 (clear) copies of Biggs's 25 July request about the same lightship, which also confirm River and Light; image checked here |
+
+- **E267: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: in October 1864 (the ledger header reads 10 Oct; the
+  Secretary's trip is printed for 14-17 Oct) Major Eckert told W. J. Dealy, operator at Fort Monroe, that the Secretary of War had left
+  Washington at 1 p.m. on the Keyport for City Point, and asked him to meet him at the wharf at Monroe, deliver his telegrams and take
+  anything he had to send. The telegram was not located in the Official Records (ser. I vols. 42 pts 2-3, 43 pt 2), 174 cached volumes or the
+  Huntington's full-text search (searched 9 Oct 2026)." Unsafe: "first decipherment", "previously unread", "unpublished"; "10 Oct 1864" stated
+  as certain. Depth sentence (mine): "Eckert arranged for the Fort Monroe operator to meet Stanton's steamer Keyport at the wharf on its way
+  to City Point and to act as his telegraph office while he passed."
+- **E268: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: at 7.30 p.m. on 12 June 1864 Butler's headquarters asked
+  Colonel Biggs at Fort Monroe, over the signature of Col. Shaffer, chief of staff, to put afloat all the 3- and 2-inch plank he could and
+  100,000 feet of 1-inch, but no scantling, and to hold the vessel until further orders; the operator R. O'Brien added a request for another
+  operator. The telegram was not located in the Official Records (ser. I vol. 36 pt 3, which prints Meigs's and Grant's same-day plank orders
+  to Biggs), Butler's Private and Official Correspondence (vols. III-V), 174 cached volumes or the Huntington's full-text search (searched
+  9 Oct 2026)." Unsafe as above. Depth sentence (mine): "On the evening of 12 June 1864, as Grant moved to cross the James, Butler's chief of
+  staff called on Fort Monroe for barge-loads of 2- and 3-inch plank, the same plank Grant and Meigs had ordered Biggs to saw and float."
+- **E269: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 30 July 1864 the Baltimore cipher operator J. W. Sampson
+  passed to Colonel Biggs at Fort Monroe, for the light-house inspector, word that authority had been received to remove the York River
+  light vessel and asked whether Biggs could tow her to Hampton Roads; it answers Biggs's request of 25 July, whose clear copy is in the
+  Huntington's public transcription (pointer 4823). The telegram itself was not located in the Official Records, 174 cached volumes or the
+  Huntington's full-text search (searched 9 Oct 2026)." Unsafe as above; "not located" without naming 4823. Depth sentence (mine): "With
+  Yorktown evacuated, the lightship at the mouth of the York was judged in danger, and on 30 July the light-house service authorized her
+  removal and asked the army quartermaster at Fort Monroe to tow her to Hampton Roads."
+
+### 5. Postmortem
+FM-R4b read all three soundly; its controls and image read hold. Three things it missed or over-stated: (1) E268's sign-off -- Walrus is the
+signature word, so the plank order is Col. Shaffer's and "please hurry me an operator" is O'Brien's own line; and the printed same-day plank
+orders (OR I/36 pt 3 pp.755, 768-769) were not found because its phrase list did not include "2-inch plank". (2) E269's antecedent (5774 cipher,
+4823 clear, 25 July) is in the holder's full text under "york river light"/"house inspector", queries the reader did not run (FV-FM5c's lesson
+again: search the holder across all pointers for the subject, not only the entry's own rare words). (3) E267's header date is stated as
+"10 Oct 1864" without doubt; the printed record puts Stanton's City Point trip at 14-17 Oct and the leaf's digit may be a 5. For a FIX
+worker (not applied here): E267 header date -> "Oct 1[0 or 5] 1864 (image unsettled; context 14-15 Oct)", graded M; E268 reading -> signed
+Colonel Shaffer, then O'Brien's service line; "plank" = 2, the noun "plank" I. Next for E267: a second eye on the 5790 header and the
+mssEC 18 row for 14-15 Oct (pp.200-201) on the image, to see whether the Keyport telegram was entered there.
