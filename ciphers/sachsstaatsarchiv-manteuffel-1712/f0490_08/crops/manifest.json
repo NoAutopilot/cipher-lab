@@ -1271,6 +1271,30 @@
     ]
    },
    "date": "09 Oct 2026"
+  },
+  {
+   "crop": "r0490G01_L01.jpg",
+   "source_url": "",
+   "source_file": "gutter_rot.jpg",
+   "box": [
+    735,
+    55,
+    1240,
+    130
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     37
+    ]
+   },
+   "date": "09 Oct 2026"
   }
  ]
 }

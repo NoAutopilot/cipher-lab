@@ -1,0 +1,29 @@
+key: key.tsv (174 valued codes); renderings: R1 'et à la satisfaction des deux partis belligerent'; R2 'et à la satisfaction des deux partis tellement'
+== passA x R1 (deciding): tokens 38, keyed 38
+S = 29/38; control mean 6.85, p95 10, p99 11, max 13; control >= real 0/1000; PASS
+  per class (real matched/tokens | control mean, p99): letter 25/34 | 6.14, 10; multi 4/4 | 0.71, 3; unkeyed 0/0 | 0.00, 0
+  path: 7:null: 1000:match:et 50:match:a 100:miss:la 29:match:s 66:match:a 28:match:t 9:match:i 51:match:s 42:miss:f 25:match:a 15:match:c 54:miss:t 37:miss:i 33:match:o 21:match:n 120:match:d 35:match:e 29:match:s 356:match:deux 17:match:p 65:miss:a 26:match:r 29:miss:t 39:match:i 29:match:s 55:match:b 10:match:e 44:match:l 12:match:l 39:match:i 7:match:g 2:match:e 60:match:r 66:miss:e 21:match:n 59:match:t 55:null:
+== passA x R2 (deciding): tokens 38, keyed 38
+S = 25/38; control mean 7.01, p95 10, p99 11, max 13; control >= real 0/1000; PASS
+  per class (real matched/tokens | control mean, p99): letter 22/34 | 6.27, 10; multi 3/4 | 0.75, 3; unkeyed 0/0 | 0.00, 0
+  path: 7:null: 1000:match:et 50:match:a 100:miss:la 29:match:s 66:match:a 28:match:t 9:match:i 51:match:s 42:miss:f 25:match:a 15:match:c 54:miss:t 37:miss:i 33:match:o 21:match:n 120:match:d 35:match:e 29:match:s 356:match:deux 17:match:p 65:miss:a 26:match:r 29:miss:t 39:match:i 29:match:s 55:miss:t 10:match:e 44:match:l 12:match:l 39:null: 7:null: 2:match:e 60:miss:m 66:miss:e 21:match:n 59:match:t 55:null:
+== passB x R1 (deciding): tokens 38, keyed 38
+S = 30/38; control mean 6.96, p95 10, p99 11, max 12; control >= real 0/1000; PASS
+  per class (real matched/tokens | control mean, p99): letter 26/34 | 6.23, 10; multi 4/4 | 0.73, 3; unkeyed 0/0 | 0.00, 0
+  path: 7:null: 1000:match:et 50:match:a 100:miss:la 29:match:s 66:match:a 28:match:t 9:match:i 51:match:s 4:miss:f 22:match:a 15:match:c 54:miss:t 37:miss:i 33:match:o 21:match:n 120:match:d 35:match:e 29:match:s 356:match:deux 17:match:p 65:miss:a 26:match:r 28:match:t 39:match:i 29:match:s 55:match:b 10:match:e 44:match:l 12:match:l 39:match:i 7:match:g 2:match:e 60:match:r 66:miss:e 21:match:n 59:match:t 53:null:
+== passB x R2 (deciding): tokens 38, keyed 38
+S = 26/38; control mean 7.11, p95 10, p99 11, max 14; control >= real 0/1000; PASS
+  per class (real matched/tokens | control mean, p99): letter 23/34 | 6.35, 10; multi 3/4 | 0.76, 3; unkeyed 0/0 | 0.00, 0
+  path: 7:null: 1000:match:et 50:match:a 100:miss:la 29:match:s 66:match:a 28:match:t 9:match:i 51:match:s 4:miss:f 22:match:a 15:match:c 54:miss:t 37:miss:i 33:match:o 21:match:n 120:match:d 35:match:e 29:match:s 356:match:deux 17:match:p 65:miss:a 26:match:r 28:match:t 39:match:i 29:match:s 55:miss:t 10:match:e 44:match:l 12:match:l 39:null: 7:null: 2:match:e 60:miss:m 66:miss:e 21:match:n 59:match:t 53:null:
+== recon x R1 (reported only): tokens 38, keyed 38
+S = 31/38; control mean 6.86, p95 10, p99 11, max 12; control >= real 0/1000; PASS
+  per class (real matched/tokens | control mean, p99): letter 27/34 | 6.14, 11; multi 4/4 | 0.72, 3; unkeyed 0/0 | 0.00, 0
+  path: 7:null: 1000:match:et 50:match:a 100:miss:la 29:match:s 66:match:a 28:match:t 9:match:i 51:match:s 4:miss:f 25:match:a 15:match:c 59:match:t 39:match:i 33:match:o 21:match:n 120:match:d 35:match:e 29:match:s 356:match:deux 17:match:p 65:miss:a 26:match:r 29:miss:t 39:match:i 29:match:s 55:match:b 10:match:e 44:match:l 12:match:l 39:match:i 7:match:g 2:match:e 60:match:r 66:miss:e 21:match:n 59:match:t 53:null:
+== recon x R2 (reported only): tokens 38, keyed 38
+S = 27/38; control mean 6.99, p95 10, p99 12, max 12; control >= real 0/1000; PASS
+  per class (real matched/tokens | control mean, p99): letter 24/34 | 6.25, 11; multi 3/4 | 0.74, 3; unkeyed 0/0 | 0.00, 0
+  path: 7:null: 1000:match:et 50:match:a 100:miss:la 29:match:s 66:match:a 28:match:t 9:match:i 51:match:s 4:miss:f 25:match:a 15:match:c 59:match:t 39:match:i 33:match:o 21:match:n 120:match:d 35:match:e 29:match:s 356:match:deux 17:match:p 65:miss:a 26:match:r 29:miss:t 39:match:i 29:match:s 55:miss:t 10:match:e 44:match:l 12:match:l 39:null: 7:null: 2:match:e 60:miss:m 66:miss:e 21:match:n 59:match:t 53:null:
+
+GATE (a), all four deciding rows PASS: PASS (PASS, PASS, PASS, PASS)
+positions matched on all four deciding rows (same code): 24 -> 2:1000 3:50 5:29 6:66 7:28 8:9 9:51 12:15 15:33 16:21 17:120 18:35 19:29 20:356 21:17 23:26 25:39 26:29 28:10 29:44 30:12 33:2 36:21 37:59
+key M codes matched at >= 2 positions on all four rows: none
