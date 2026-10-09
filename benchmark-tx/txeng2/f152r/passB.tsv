@@ -1,0 +1,97 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T83	T63	L	V crossed by horizontal bar; prose before: "bisogna"
+L01	2	T84	T70	L	upright triangle over double-barred cross (T84 inverted?)
+L01	3	T89		H	q-b form
+L01	4	T96		M	l-loop with dot/tick above
+L01	5	T19		H	pi
+L01	6	T63		H	V
+L01	7	T80		H	D; prose after: line end
+L02	1	T57	T88	M	diamond, tail faint; line start
+L02	2	T25		H	lambda
+L02	3	T17		M	t-shape
+L02	4	T33		H	two verticals on base
+L02	5	T58		H	B
+L02	6	T96		M	l-loop with tick
+L02	7	T90	T45	M	cross over loop
+L02	8	T55		H	F-bar
+L02	9	T80		H	D
+L02	10	T89		H	q-b form
+L02	11	T98		H	phi
+L02	12	T45	X_NEW	M	6-shaped loop with stem up-left; stroke above likely from line above
+L02	13	T60		H	two bars two verticals
+L02	14	X_NEW	T33	L	open box U-bracket, no base stems
+L02	15	T85		M	plus; tick above probably neighbour ink
+L02	16	T37		H	loop crossed by bar
+L02	17	T58		H	B
+L02	18	T36		H	circle on stem
+L02	19	T49		H	box on stem
+L02	20	T76	T26	M	9/g with heavy flat foot
+L02	21	T95	T66	M	p with foot stroke at base
+L02	22	T19		H	pi; loop above is neighbour line
+L02	23	T27	X_NEW	L	8-shape: small top loop over larger bottom loop
+L02	24	T85		H	plus
+L02	25	T98		H	phi
+L02	26	T80		H	D
+L02	27	T55		H	F-bar
+L02	28	T60		H	two bars two verticals
+L02	29	T86	T60	H	one bar two verticals
+L02	30	T64	T38	H	m
+L02	31	T37		H	loop crossed by bar; line end
+L03	1	T90	T45	M	cross over loop, stem rising; line start
+L03	2	T26	T76	M	q with straight descender
+L03	3	T60		H	two bars two verticals
+L03	4	T92	T50	M	omega with initial loop
+L03	5	T95	T66	M	p with foot stroke
+L03	6	T65		H	two loops over cross
+L03	7	T19		H	pi
+L03	8	T98		M	phi
+L03	9	T25		H	lambda
+L03	10	T58		H	B
+L03	11	T45	T90	M	loop with stem rising
+L03	12	T33		H	two verticals on base
+L03	13	T85		H	plus
+L03	14	T83		H	crossed x-epsilon
+L03	15	T17		M	t-shape
+L03	16	T96		M	l-loop with dot
+L03	17	T58		H	B
+L03	18	T37		H	loop crossed by bar
+L03	19	T97	T46	M	slanted 8 with hook
+L03	20	T86		H	one bar two verticals
+L03	21	T90		M	cross over loop
+L03	22	T33		H	two verticals on base; g above is neighbour line
+L03	23	T53		H	infinity
+L03	24	T85		H	plus
+L03	25	T65		H	two loops over cross
+L03	26	T25		H	lambda
+L03	27	T19		H	pi
+L03	28	T60		H	two bars two verticals
+L03	29	T86		H	one bar two verticals
+L03	30	T24	X_NEW	L	b-like bowl with top flag and flat base
+L03	31	T54	X_NEW	L	cursive R/Q loop with tail and base tick
+L03	32	T86		H	one bar two verticals
+L03	33	T76	T26	M	g: open loop with curled tail; line end
+L04	1	T86		H	one bar two verticals; line start
+L04	2	T97		M	slanted 8 with hook
+L04	3	T17		M	t-shape
+L04	4	T96		M	l-loop with dot
+L04	5	T25		H	lambda; ink above is neighbour line
+L04	6	T60		H	two bars two verticals
+L04	7	T50	T92	H	omega with S-curl
+L04	8	T19		H	pi
+L04	9	T17		M	t-shape
+L04	10	T90		M	cross over loop
+L04	11	T83		H	crossed x-epsilon
+L04	12	T55		H	F-bar
+L04	13	T17		M	t-shape, joining dash to next
+L04	14	T86		H	one bar two verticals
+L04	15	T57		H	diamond with long tail
+L04	16	T52		H	n with z-tail
+L04	17	T58		H	B
+L04	18	T64	T38	H	m
+L04	19	T19		H	pi
+L04	20	T60		H	two bars two verticals
+L04	21	T55		H	F-bar
+L04	22	T83		H	crossed x-epsilon
+L04	23	T45		M	loop with stem rising
+L04	24	X_NEW	T56	L	two long-s/f strokes joined by crossbar
+L04	25	X_NEW	T49	L	double-barred cross over open box; prose after: "con uolermi"
