@@ -1669,6 +1669,9 @@ def select_since(key_paths, ct_paths, changed):
 SIBLING_FOLDERS = [
     {'lodewijk-van-nassau-1573-74', 'jan-van-nassau-1572-75'},   # key_5549 is a copy of Lodewijk's 1574 table (J5S)
     {'clair1067-brienne-poland-1646', 'fr5160-letellier-1653'},   # Brienne's 1647/1651 tables in both folders
+    # XMATCH-TRIAGE (9 Oct 2026, research/XMATCH-TRIAGE-2026-10-09.md): two families KEY-OFFICES/N4-XM already record.
+    {'ceppo-nevers-fr3251-1570s', 'ceppo-nevers-fr4702-f36'},     # KEY-OFFICES row 61; f.36r is KH4-A's unread sibling
+    {'fr3416-nevers-fils-1589', 'fr3993-gonzague-nevers-1595'},   # no.70 = no.25 plus 7 letters (N4-XM, 4 Oct 2026)
 ]
 
 
@@ -1694,6 +1697,10 @@ ADJUDICATED = {
     ('ciphers/thurloe-printed/key_montagu_extended.tsv', 'ciphers/jan-van-nassau-1572-75/ciphertext_5549_ps.tsv'):
         'false positive: loses to 20 decoy keys (fr16 -1.941 vs max -1.871), judge FAIL fr16 and en16, 7/150 '
         'tokens agree with key_5549',
+    # XMATCH-TRIAGE (9 Oct 2026): the 8 Oct nightly's second lead; it passed both per-pair nulls.
+    ('ciphers/sforza-italien1584-1447/amidani/key_f367.tsv', 'ciphers/dupuy468-anhalt/ciphertext.txt'):
+        'false positive: shared transcription labels (q, V, P, D, ...) name different drawn signs in the two folders; '
+        '0 of 512 doubly-covered tokens agree with the gloss-backed Anhalt key.tsv',
 }
 
 
