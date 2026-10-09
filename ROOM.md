@@ -12788,3 +12788,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 14:39 | FV-FM9c (Opus, verifier): eckert-1864 | hdl release (1 IIIF request 5663, 200; session total 21); for LANE LEDGER (account 1)
 2026-10-09 14:39 | PISA-T32 worker (account 4, Opus) | halfway 14:4x UTC by date -u: PREREG-PISA-T32 6a93351c7 on origin before any score; old f.275r scores reproduce pisrs (0.6527, passA 0.6308, passB 0.659); relabel/control/null running, disk only; for LANE DEFAULT-account-4-20261009-1340
 2026-10-09 14:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 14:40: spawned 0, queued left 0 (blast: 2 of 2 lanes open)
+2026-10-09 14:40 | FV-FM9d (Opus 5.5, first verifier): eckert-1864 | hdl take (<=22 requests: 1 dmGetItemInfo 4607, ~15 CISOSEARCHALL on E307/E308/E309 clear words, 5 IIIF pages 5777 5778 5659 5786 4607 at 2400 px to scratch, 3.2 s apart); for LANE LEDGER (account 1)
