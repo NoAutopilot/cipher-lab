@@ -60,3 +60,28 @@ at 10:5x UTC (a row found already handled is recorded and skipped, not re-read).
 - FM-R5c (10, 12 units): 5751/2 5722/0 5783/1 5822/0 5616/1 5624/0 5827/2 5632/0 5794/1 5609/1 -- IDs E290 onward, N2-TA onward.
 Not briefed this wave: 5820/2 (Part B of CONF-FM covers its page), the long rows 5662/0 (309 words) 5697/1 5797/1 5740/0 5744/1 5777/2 5659/0 5786/0, the
 22 clean rows whose best book is No. 9 (decode_no9.py), 5751/2 onward rows 40-43.
+
+---
+
+# Wave 2 (written 9 Oct 2026 11:1x UTC; seven_day allowed_warning on every session, continuing per lane-common-blast)
+By get_session: FIX-FM7 2.18, CONF-FM 5.07 (E250 E255 E257 N1 D3; E254 NOT N1 -- 9913 is the sent cipher copy; Porter key test 46/52 vs shuffled p99 3,
+candidate Tulip = stop), FM-R5a 2.22 (E270-E279), FM-R5b 3.45 (E280-E289), FM-R5c 2.87 (E290-E299). Wave 1 total 15.79.
+
+## CONF-FM2 (Opus 5.5, verifier, separate from every reader; cap $5, box 80 min): short N1 confirms, exactly CONF-FM Part A's method
+Entries whose reader found a holder clear copy at another pointer or the telegram in print: E271 (4587; also Butler IV pp.148-149), E273 (10376), E274
+(4593), E276 (4493; OR I/33), E279 (10238) from NOTES "## FM-R5a"; E282 (10267-10268), E287 (OR I/42 pt 3 + Butler V p.231) from "## FM-R5b"; E290 (OR I/40
+pt 2 p.85), E296 (OR I/42 pt 3 p.971) from "## FM-R5c" (check the printed page numbers on the page image, not the OCR line). Diff word by word; N1 where it is
+the same telegram, otherwise say what it is (a sent cipher copy, as E254/9913, is NOT a clear copy: leave the entry for a first verifier and say so).
+"## AUDIT (CONF-FM2)", status.json rows (text: known), no SO rows. Decoder slips the diff exposes go in AUDIT s.4 for a FIX job. ~0.5 per entry.
+
+## FV-FM8a, FV-FM8b, FV-FM8c (Opus 5.5, first verifiers; cap $7 each; box 90 min each)
+Exactly "## FV-FM7a, FV-FM7b, FV-FM7c" of the ledger4 jobs file (= FV-FM6 method: the all-pointer CONTENTdm clear-copy search FIRST; duplicate diff; OR
+I-III, ORN; Grant Papers via IA be-api; Butler III-V; press of the day; G3 with decoded phrases; rare-name OR grep). The reader's own "Remaining gaps" for
+your entries are your first print leads. FM-R5b and FM-R5c eye-checked only some pages: eye-check every line you grade (tools/iiif_lines.py --image, crops
+only) before grading. AUDIT.md headings "## AUDIT (FV-FM8a)" etc.; status.json/SO rows for N3+ only, audit_status "one audit"; depth_check;
+file_shrink_guard. On N3+ D2+ append WORK-QUEUE `AUD2-LEDGER-18` (FV-FM8a), `-19` (FV-FM8b), `-20` (FV-FM8c) (account-3, Opus 5.5, cap 2.5 per entry) and
+name it in ROOM for the account-3 VERIFY lane. Unit ~1.3 per entry; stop before an entry that would cross 80% of cap or box.
+- FV-FM8a: E254 (CONF-FM: 9913 is the sent cipher copy, not a clear copy; AUDIT "## AUDIT (CONF-FM)"), E270, E272, E275, E277 (NOTES "## FM-R5a").
+- FV-FM8b: E280, E281, E283, E284, E285 (NOTES "## FM-R5b"; E283 E285 against ORN I/11 page by page).
+- FV-FM8c: E293, E294, E295, E297, E298 (NOTES "## FM-R5c"; E298 against Basler, Collected Works of Lincoln vol. 8, and OR I/39 pt 3 for 16 Oct 1864).
+Handed on, not briefed: E278 (FM-R5a), E286 E288 E289 (FM-R5b, pages not image-read), E291 E292 E299 (FM-R5c, printed context only).
