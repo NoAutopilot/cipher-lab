@@ -1,0 +1,2 @@
+file	commons_title	artist	date	licence_extmetadata	url	note
+(none)						9 Oct 2026 22:48-22:49 UTC: en.wikipedia.org pageimages x2 and commons.wikimedia.org imageinfo x1 all answered HTTP 429 (Wikimedia rate limit on this egress); stopped per the good-citizen rule. All 24 faces are labelled placeholders. Next: fetch from a machine with its own IP (owner's desk runner) via action=query&prop=imageinfo&iiprop=url|extmetadata, keep only PD-Art/PD-old per extmetadata.

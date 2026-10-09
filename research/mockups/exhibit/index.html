@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Secrets in the Post</title><meta name="description" content="Three museum-style displays of cipher letters read by the project (private mock-up)."><style>
+:root{--bg:#f6f2ea;--panel:#fffdf8;--ink:#1d1b18;--muted:#5f5a52;--rule:#d9d1c3;--accent:#123c69;
+--gH:#0072B2;--gC:#0072B2;--gS:#0072B2;--gM:#B35900;--gI:#B35900;--gU:#595959;--bt:#ffffff;--chip:#efe8db;--tint:#e8eef6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15130f;--panel:#1f1c17;--ink:#efe9de;--muted:#b4ab9c;
+--rule:#3a352d;--accent:#9cc3ef;--gH:#56B4E9;--gC:#56B4E9;--gS:#56B4E9;--gM:#E69F00;--gI:#E69F00;--gU:#9a9184;--bt:#1b1916;--chip:#2a261f;--tint:#1d2a3a}}
+:root[data-theme="dark"]{--bg:#15130f;--panel:#1f1c17;--ink:#efe9de;--muted:#b4ab9c;--rule:#3a352d;--accent:#9cc3ef;--gH:#56B4E9;
+--gC:#56B4E9;--gS:#56B4E9;--gM:#E69F00;--gI:#E69F00;--gU:#9a9184;--bt:#1b1916;--chip:#2a261f;--tint:#1d2a3a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,"Iowan Old Style",serif}
+a{color:var(--accent)}.wrap{max-width:1060px;margin:0 auto;padding:0 16px 48px}
+.mock{font:13px/1.4 system-ui,sans-serif;background:var(--chip);color:var(--muted);padding:6px 16px;text-align:center}
+nav.top{display:flex;gap:16px;flex-wrap:wrap;font:14px system-ui,sans-serif;padding:12px 0;border-bottom:1px solid var(--rule)}
+.kicker{font:600 13px system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:28px 0 4px}
+h1{font-size:clamp(26px,4.4vw,40px);line-height:1.15;margin:0 0 14px}h2{font:600 13px system-ui,sans-serif;letter-spacing:.1em;
+text-transform:uppercase;color:var(--muted);margin:36px 0 10px;border-top:1px solid var(--rule);padding-top:14px}
+.headline{font-size:clamp(18px,2.4vw,22px);max-width:46em;margin:0 0 18px}
+.hero{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:760px){.hero{grid-template-columns:minmax(0,1fr)}}
+figure{margin:0}figure img{width:100%;height:auto;display:block;border:1px solid var(--rule);background:#fff}
+figcaption{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin-top:6px}
+.line{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px;margin-bottom:12px}
+.line img{width:100%;height:auto;display:block;background:#fff;border-radius:3px}
+.toks{display:flex;justify-content:space-between;gap:2px;margin-top:6px;overflow-x:auto;padding-bottom:2px}
+.tok{display:inline-flex;flex-direction:column;align-items:center;font:600 14px/1.1 ui-monospace,Menlo,monospace;min-width:.9em}
+.tok small{font:9px system-ui,sans-serif;color:var(--muted);margin-top:2px}
+.tok.H b{color:var(--gH);border-bottom:2px solid var(--gH)}.tok.C b{color:var(--gC);border-bottom:3px double var(--gC)}
+.tok.S b{color:var(--gS);border-bottom:4px solid var(--gS)}.tok.M b{color:var(--gM);border-bottom:2px dotted var(--gM)}
+.tok.I b{color:var(--gI);border-bottom:2px dashed var(--gI)}.tok.U b{color:var(--gU)}
+.tok.clear b{font:italic 15px Georgia,serif;color:var(--ink)}.tok.null b{color:var(--gU);font-weight:400}
+.layer{font:12px system-ui,sans-serif;color:var(--muted);margin-top:8px}
+.en{border-left:3px solid var(--rule);padding:4px 10px;margin-top:4px}.en .fr{font-style:italic}.en .tr{font-size:17px}
+.reveal .toks,.reveal .en,.reveal .layer{display:none}.reveal.open .toks,.reveal.open .en,.reveal.open .layer{display:flex}
+.reveal.open .en,.reveal.open .layer{display:block}
+button{font:600 14px system-ui,sans-serif;background:var(--accent);color:var(--bg);border:0;border-radius:4px;padding:8px 14px;cursor:pointer}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;font:12px system-ui,sans-serif;color:var(--muted);margin:8px 0 14px}
+.legend .tok{flex-direction:row;gap:6px}
+.faces{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.face{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px;font:13px/1.35 system-ui,sans-serif}
+.face svg{width:100%;height:auto;display:block;border-radius:4px}.face strong{display:block;font:600 14px Georgia,serif;margin-top:6px}
+.face .now{color:var(--muted)}
+.moment{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px}@media (max-width:760px){.moment{grid-template-columns:minmax(0,1fr)}}
+ol.strip{list-style:none;margin:0;padding:0;border-left:3px solid var(--rule)}ol.strip li{padding:6px 0 10px 14px;position:relative}
+ol.strip li:before{content:"";position:absolute;left:-8px;top:12px;width:12px;height:12px;border-radius:50%;background:var(--panel);
+border:3px solid var(--muted)}ol.strip li.this:before{border-color:var(--accent);background:var(--accent)}
+ol.strip time{font:600 13px system-ui,sans-serif;display:block}ol.strip li.this time{color:var(--accent)}
+.map{background:var(--panel);border:1px solid var(--rule);border-radius:6px}.map svg{width:100%;height:auto;display:block}
+.secret{background:var(--tint);border-radius:6px;padding:14px}.secret .tag{font:600 12px system-ui,sans-serif;color:var(--muted)}
+.secret img{width:100%;max-width:820px;display:block;margin-top:8px;background:#fff;border-radius:3px}
+.try{display:flex;flex-wrap:wrap;gap:12px}.card{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px;
+width:190px;text-align:center;cursor:pointer;font:13px system-ui,sans-serif}.card img{height:84px;width:auto;max-width:100%;background:#fff}
+.card .code{font:600 22px ui-monospace,Menlo,monospace;min-height:84px;display:flex;align-items:center;justify-content:center}
+.card .ans{visibility:hidden;font:600 18px Georgia,serif;margin-top:6px}.card.open .ans{visibility:visible}
+.card .hint{color:var(--muted)}.card.open .hint{display:none}
+.badges{display:flex;flex-wrap:wrap;gap:10px}.badge{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;
+max-width:330px;font:13px/1.4 system-ui,sans-serif}.badge strong{font:600 20px Georgia,serif;display:block}
+.bar{display:flex;height:22px;border-radius:4px;overflow:hidden;border:1px solid var(--rule);margin:6px 0;max-width:620px}
+.bar span{display:flex;align-items:center;justify-content:center;font:600 11px system-ui,sans-serif;color:var(--bt);min-width:0}
+.bar .H{background:var(--gH)}.bar .C{background:var(--gC)}.bar .S{background:var(--gS)}.bar .M{background:var(--gM);
+background-image:repeating-linear-gradient(45deg,transparent 0 4px,rgba(255,255,255,.28) 4px 6px)}.bar .I{background:var(--gI)}
+.bar .U{background:var(--gU);background-image:repeating-linear-gradient(-45deg,transparent 0 3px,rgba(255,255,255,.35) 3px 5px)}
+.small{font:13px/1.45 system-ui,sans-serif;color:var(--muted)}ul.links{font:14px system-ui,sans-serif;padding-left:18px}
+.credit{font:12px/1.45 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:30px;padding-top:10px}
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:20px}
+.cards3 a{display:block;background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:12px;text-decoration:none;color:var(--ink)}
+.cards3 img{width:100%;height:150px;object-fit:cover;object-position:top;border-radius:4px}
+</style></head><body><div class="mock">Private mock-up for review, 9 October 2026. Not published, not linked.</div><div class="wrap"><nav class="top" id="top"><a href="index.html" aria-current=page>Three displays</a><a href="gramont-1530.html">Rome, 1530</a><a href="manteuffel-1712.html">Berlin, 1712</a><a href="nassau-1573.html">Dillenburg, 1573</a></nav><div class="kicker">Three cipher letters, read</div><h1>Secrets in the post</h1><p class="headline">A bishop in Rome, an envoy in Berlin, two brothers in a German castle. Each wrote what mattered most in signs. See the page, open the reading, meet the people.</p><div class="cards3"><a href="gramont-1530.html"><img src="img/gramont_f29r_page.jpg" alt=""><div class="kicker" style="margin-top:8px">Rome · 20 May 1530</div><strong>A bishop&#x27;s secret article, in the weeks Rome held Henry VIII&#x27;s divorce</strong></a><a href="manteuffel-1712.html"><img src="img/manteuffel_f410_block.jpg" alt=""><div class="kicker" style="margin-top:8px">Berlin · November 1712</div><strong>What would London do for the North? A Saxon envoy&#x27;s cipher postscript</strong></a><a href="nassau-1573.html"><img src="img/nassau_p7_page.jpg" alt=""><div class="kicker" style="margin-top:8px">Dillenburg · 22 October 1573</div><strong>The blanks in the Orange archives: who “holds well” with the Nassau brothers</strong></a></div></div><script>
+document.addEventListener('click',function(e){var b=e.target.closest('[data-reveal]');if(b){var s=document.getElementById(b.dataset.reveal);
+var o=s.classList.toggle('open');b.textContent=o?'Hide the reading':'Reveal the reading';b.setAttribute('aria-expanded',o);return}
+var c=e.target.closest('.card');if(c){c.classList.toggle('open');c.setAttribute('aria-pressed',c.classList.contains('open'))}});
+document.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.classList&&e.target.classList.contains('card')){
+e.preventDefault();e.target.click()}});
+</script></body></html>
