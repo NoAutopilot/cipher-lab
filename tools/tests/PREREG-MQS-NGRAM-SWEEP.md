@@ -1,6 +1,6 @@
 # PREREG MQS-NGRAM-SWEEP: n-gram order x score norm on the matched homophonic control
 
-Written 9 Oct 2026, 06:58 UTC by date -u, by MQS-NGRAM-SWEEP (LANE MQS-2, account 4), before any accuracy below is
+Written 9 Oct 2026, 06:51 UTC by date -u, by MQS-NGRAM-SWEEP (LANE MQS-2, account 4), before any accuracy below is
 read (one timing-only run at N=400, seed 9, output discarded, sized the grid). Brief stub:
 `.claude/briefs/runs/2026-10-09-ytbiz-mqs-next-ngram-sweep.md`; research row M13 (research/MARY-STUART-TALK-2026-10-09.tsv).
 Credit: Lasry, Biermann and Tomokiyo 2023 (Cryptologia 47:2) App. A pp.195-196 (S = sum N_g log F_g / sum N_c^2 with
