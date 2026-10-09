@@ -155,3 +155,31 @@ syllabary family (or the nearest matched-design one; if none exists, stop and lo
 control first at 0.055 and 0.084 (the `noise` parameter LAG-NEXT added to running_key may need the same in this family: add it with an offline
 test if so), target only if the control mean meets the gate, scored with the LAG-GAP gate design after its power check. PREREG-LAG-SYL.md pushed
 before scoring. Both numbers in HYPOTHESES.md, NOTES "LAG-SYL (9 Oct 2026)", Remaining gaps, gaps_check. Target stays open (rule 5).
+
+## Wave 3 (01:1x UTC 9 Oct) -- same common rules; lane at ~42 of 60, so these are sized tight. Hosts: arcinsys (BRANDT-TX only), digitarq
+(LIN-SIB3 only), sachsen (MANT-0136 only, <= 6 requests).
+
+### BRANDT-TX (Opus worker, Sonnet passes, cap 7, box 110 min): hessen-daenemark-1672, Dänemark 131 leaf 0020 lower block + its gloss, then align
+HDK-BRANDT (NOTES "HDK-BRANDT check-solved (9 Oct 2026)": verdict open, conditional) names the first test. Work in a subfolder
+ciphers/hessen-daenemark-1672/dk131_brandt/. Units, priced per pass at ~1.4: (1) fetch 0020 once at native (arcinsys, <= 3 requests; URL
+pattern in NOTES HDK-131), crop with `tools/iiif_lines.py --image <0020 file> --out dk131_brandt/crops ...` (paste the command; line crops only,
+never the full leaf to a subagent); (2) two blind Sonnet passes of the ~22-line lower cipher block (groups only) + your reconciliation
+(tools/reconcile_passes.py) -> ciphertext_0020.tsv; (3) one Sonnet pass + your check of the marginal German gloss text for that block ->
+gloss_0020.txt (normalised: one case, abbreviations expanded, rule 3 convention clause); (4) `tools/interlinear_align.py` of groups against the
+gloss (read its --help; per-line pairing if the gloss tracks lines), value -> letter/syllable table with counts, against a shuffled-gloss control
+that CAN differ on the agreement statistic (rule 3). PREREG-BRANDT-TX.md pushed before step 4's score. Stop before step 4 if steps 1-3 reach
+80% of cap; then the alignment is the next incarnation's job. Do NOT read 0049 (it is the held-out test) or decode 0050/0062-0064. Grade per
+token (C for values the gloss gives, M otherwise); NOTES section "BRANDT-TX (9 Oct 2026)", Remaining gaps / Escalation, gaps_check. Report
+what was found and where it was not found; do not classify novelty.
+
+### LIN-SIB3 (Sonnet, cap 1.8, box 45 min): antt-linhares-chave, maço 86 /09 m0171-m0212, the last 42 thumbnails
+As LIN-SIB2 (NOTES "LIN-SIB2 (9 Oct 2026)"): same method, same blind /11 control, DigitArq >= 3.5 s apart; plus one working-size fetch of m0146
+(LIN-SIB2's optional look). Append to keyhunt/2026-10-09-LINSIB.tsv; NOTES "LIN-SIB3 (9 Oct 2026)"; mark the maço 86 /02 /09 sibling row done in
+SIBLINGS-2026-10-08.tsv and Remaining gaps; gaps_check.
+
+### MANT-0136 (Opus, cap 1.8, box 45 min): sachsstaatsarchiv-manteuffel-1712, is 694/09 0136's "chiffre ... celui du proces" Krauske's table?
+MANT-0609Y (NOTES "MANT-0609Y") found 0136 (P.S., clerk hand, ~70-80 tokens, unglossed): "je me servirai du chiffre que nous appelons celui du
+proces". Establish the identity before anyone reads it: grep the folder (NOTES, key notes, 694/10 key notes, Krauske ff.2-5 description) for
+"proces"/"procès"; fetch 0136 once at native (sachsen, <= 3 requests incl. 0233 if needed) and crop the cipher lines; one Opus look: code range
+and shape (Krauske 1-401 numbers vs another system), any overlap with key.tsv codes on frequent tokens. No transcription pass, no decode. Answer
+in NOTES "MANT-0136 (9 Oct 2026)": same table / different system / undecided, with evidence; update the 0136 Remaining gaps line; gaps_check.
