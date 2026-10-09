@@ -30,3 +30,10 @@ unit from the nearest ledger rows (S2-READ 12.70 for 10 Opus calls + overlap che
 agreed-uncertain rows are kept as agreed), about 13 packets, plus 1 reconciliation unit. **Cap 22, box 120 min**; nothing else in the
 section changes. The pipeline on the dev leaf is thereby identical to the S2 pipeline as run (steps 1-4 + the packet-shape repair).
 Workers' stop rule unchanged (80% of either figure).
+
+## DV1b, the 80% line and the packets (lane, 9 Oct 2026 23:0x UTC by date -u; on the worker's report after its reads, before the adjudication finished)
+Reads done (10 Opus calls), reconcile 86.1%, 257 disagree rows -> 17 packets; cost 10.95 by get_session at 23:05 with packet 4 in
+progress; projection about 17.0 of cap 22 (80% line 17.6). Declared now: a passZ assembled from a subset of the packets (pass A kept at
+unviewed splits) is the F33 defect and is worse than a small overrun of the 80% line, so the worker runs every packet and the one
+score up to the HARD cap 22, never assembles from a subset, and says so in RESULTS if the 80% line is crossed. The 80% self-stop
+stays the rule for every other unit shape.
