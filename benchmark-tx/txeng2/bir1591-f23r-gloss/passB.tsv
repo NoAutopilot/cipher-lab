@@ -1,0 +1,325 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	ALPHA	CUP	L	c-curl with rising hook and tail
+L01	2	TRIX	TRIS	M	triangle with slant stroke through, bar below
+L01	3	HASH		H	
+L01	4	PSI	Q	M	curve with stem down; gloss p touches above
+L01	5	OS		H	
+L01	6	NEW:h-shaped hook		M	
+L01	7	Q		H	c-cedilla with dot
+L01	8	X	ALPHA	M	x with loop
+L01	9	TRIS		H	figure 4
+L01	10	THREE		H	
+L01	11	INVT		H	
+L01	12	SQ		H	
+L01	13	OS		H	
+L01	14	DTRI		H	
+L01	15	XI		H	
+L01	16	HASH		M	H with long bar
+L01	17	CUP		H	
+L01	18	INVT		H	
+L01	19	CENT	Q	M	c with long stroke through
+L01	20	TRI		H	
+L01	21	DTRI		H	
+L01	22	DTRIS		H	
+L01	23	PSI		H	
+L01	24	TRIS		H	
+L01	25	INVT		H	
+L01	26	CUP		H	
+L01	27	X	ALPHA	M	x with loop
+L01	28	O		H	
+L01	29	OMEGA		H	bar over
+L01	30	INVT		H	
+L01	31	CUP		H	
+L01	32	PSI	Q	M	cup with stem down
+L01	33	XI		M	struck
+L01	34	C		H	
+L01	35	INVT		H	
+L01	36	HASH		M	H with long bar
+L01	37	O		H	
+L01	38	M		H	
+L01	39	ALPHA		H	
+L01	40	DTRIS		H	
+L01	41	Q		H	
+L02	1	TRIS		H	figure 4
+L02	2	O		H	
+L02	3	DTRIS		H	
+L02	4	XI	Z	M	
+L02	5	DOT		H	
+L02	6	I		H	
+L02	7	DOT		H	
+L02	8	C		H	
+L02	9	O		H	
+L02	10	HASH		H	
+L02	11	X	ALPHA	M	x with loop
+L02	12	Z		H	
+L02	13	PSI	Q	M	cup with stem down
+L02	14	NEQ		H	
+L02	15	SQ		H	
+L02	16	INVT		M	tick above
+L02	17	M		H	
+L02	18	C		H	
+L02	19	OS	NEW:o with crossed stem	M	stem crossed by long bar
+L02	20	INVT		H	line through it
+L02	21	TRIS		M	struck?; long line through
+L02	22	PLUS		M	struck?; long line through
+L02	23	O		M	two dots above
+L02	24	C		H	
+L02	25	HASH		M	long bar into H; gloss q above
+L02	26	ALPHA		H	a
+L02	27	X	Q	M	x with loop and tail
+L02	28	ALPHA		H	a
+L02	29	ALPHA		H	alpha
+L02	30	DTRI		H	
+L02	31	TRIS		H	
+L02	32	X	ALPHA	M	x with loop
+L02	33	PLUS		H	
+L02	34	X	ALPHA	M	x with loop
+L02	35	Z		H	
+L02	36	DTRI		H	
+L02	37	NEQ		H	
+L02	38	THREE		H	
+L02	39	PSI		M	
+L02	40	HASH		M	H with long bar
+L02	41	CUP		H	
+L02	42	O		H	
+L02	43	TRIS		H	
+L02	44	DTRIS		H	
+L02	45	PLUS		H	
+L02	46	O		H	
+L02	47	M		H	
+L02	48	DTRIS	DTRI	M	small tick
+L02	49	M	XI	M	short m / 3-like
+L02	50	TRIX		H	marks below line ignored
+L03	1	PSI		M	bar under (may be gloss underline)
+L03	2	XI	THREE	L	z with descending tail
+L03	3	OS	O	M	gloss i above
+L03	4	SQ		H	
+L03	5	M		H	
+L03	6	X	ALPHA	M	x with loop; gloss 2 above
+L03	7	O		M	bar through
+L03	8	O		M	bar through
+L03	9	NEW:o with vertical stroke through	CENT	M	phi-like
+L03	10	O		H	
+L03	11	OMEGA		H	
+L03	12	X	ALPHA	M	x with loop
+L03	13	NEQ		H	
+L03	14	PSI		M	
+L03	15	PSI		M	
+L03	16	TRIS		M	
+L03	17	O		H	
+L03	18	OS		H	
+L03	19	C		H	
+L03	20	PSI		M	
+L03	21	DTRIS		H	
+L03	22	TRIX	TRI	M	bar under; gloss below
+L03	23	XI		M	
+L03	24	CUP		H	
+L03	25	O		H	
+L03	26	Z	TWO	M	
+L03	27	INVT		H	
+L03	28	TRI		H	
+L03	29	DTRI		M	
+L03	30	PSI		M	long bar under
+L03	31	OMEGA	CUP	M	no bar
+L03	32	X	ALPHA	M	x with loop and tall ascender
+L03	33	SQ		H	
+L03	34	PSI		M	
+L03	35	TRIS		M	
+L03	36	M		H	
+L03	37	O		H	
+L03	38	C		H	
+L03	39	OS		H	
+L03	40	DTRIS		M	
+L03	41	C		H	
+L03	42	DTRIS		H	
+L03	43	X	ALPHA	M	x with loop
+L03	44	C		H	
+L03	45	SQ	TRI	M	
+L03	46	DTRI		H	
+L03	47	DIV		H	
+L03	48	TRIX	TRIS	M	4-like over bar, stroke through
+L04	1	ALPHA	X	L	long loop crossing to tail
+L04	2	DTRIS		H	
+L04	3	Q	CENT	M	c with tail crossing
+L04	4	OS		H	
+L04	5	C		H	
+L04	6	PSI		M	
+L04	7	SQ		H	
+L04	8	OS		M	bar above (gloss mo above)
+L04	9	INVT		H	
+L04	10	Z	TWO	M	
+L04	11	Q	CENT	M	
+L04	12	HASH		M	
+L04	13	CUP		H	
+L04	14	NEQ		H	
+L04	15	ALPHA		H	a
+L04	16	ALPHA		H	alpha
+L04	17	DTRI		H	
+L04	18	NEQ		H	
+L04	19	DTRIS		H	
+L04	20	Q		H	
+L04	21	CUP		H	
+L04	22	O		H	
+L04	23	ALPHA		H	a
+L04	24	ALPHA		H	alpha
+L04	25	DTRI		H	
+L04	26	ALPHA		H	a
+L04	27	ALPHA		H	alpha
+L04	28	O	OS	M	gloss q touches above
+L04	29	TRIS		M	long bar to next
+L04	30	PLUS		M	
+L04	31	CENT	Q	M	
+L04	32	HASH		M	
+L04	33	CUP		H	
+L04	34	O		H	
+L04	35	X		H	plain saltire
+L04	36	X	ALPHA	M	x with loop and tall ascender
+L04	37	X	ALPHA	M	x with loop
+L04	38	C		H	
+L04	39	O		H	
+L04	40	Z	TWO	M	
+L04	41	O		H	
+L04	42	SQ	TRI	M	
+L04	43	X	ALPHA	M	x with loop
+L04	44	OS		M	crossbar on stem; gloss s above
+L04	45	PSI		M	
+L04	46	NEQ		H	
+L04	47	Q		M	
+L05	1	SQ		M	slanted
+L05	2	M		H	
+L05	3	PSI		M	
+L05	4	X	ALPHA	M	x with loop
+L05	5	I		H	dotted
+L05	6	I		H	dotted
+L05	7	O		H	
+L05	8	DTRIS		H	
+L05	9	ALPHA		H	a
+L05	10	X	ALPHA	M	x with loop
+L05	11	HASH		H	
+L05	12	DTRI		H	
+L05	13	NEQ		H	
+L05	14	ALPHA		H	a
+L05	15	X	Q	L	small hook with tail
+L05	16	TRIX		H	
+L05	17	TRIS	TRIX	M	stem through triangle; gloss below
+L05	18	OMEGA		H	bar over
+L05	19	Q	X	M	p-like loop with tail
+L05	20	SQ		H	
+L05	21	X	ALPHA	M	x with loop
+L05	22	HASH		M	
+L05	23	CUP		H	
+L05	24	O	OS	M	
+L05	25	TRIS		H	
+L05	26	DTRI		H	
+L05	27	SQ		H	
+L05	28	X		M	dots near
+L05	29	M		H	
+L05	30	OS		M	gloss touches above
+L05	31	PLUS		H	
+L05	32	INVT		H	
+L05	33	HASH		H	
+L05	34	Q	TRIS	M	
+L05	35	X		H	plain saltire
+L05	36	X	ALPHA	M	x with loop and tall ascender
+L05	37	DTRI		H	
+L05	38	NEQ		H	
+L05	39	THREE		H	
+L05	40	DTRI		H	
+L05	41	C		H	
+L05	42	DIV		H	
+L05	43	PSI		M	
+L05	44	NEQ		H	
+L05	45	DTRI		H	
+L05	46	SQ		M	
+L05	47	XI		M	
+L05	48	PSI		M	
+L05	49	C		H	
+L05	50	DTRIS		H	
+L05	51	TRIX		H	
+L06	1	SQ		H	
+L06	2	M		H	
+L06	3	TRIS		H	
+L06	4	DTRI	O	M	rounded
+L06	5	SQ		H	
+L06	6	DTRIS		H	
+L06	7	C		H	
+L06	8	TRIX		H	
+L06	9	THREE		H	
+L06	10	TRIX		H	
+L06	11	ALPHA		H	a
+L06	12	X	ALPHA	M	x with loop
+L06	13	DTRIS		H	
+L06	14	TRIS		M	slant stem through triangle
+L06	15	OMEGA		H	bar over
+L06	16	TRIX		H	
+L06	17	XI		H	
+L06	18	CUP		H	
+L06	19	DTRI		H	
+L06	20	TRIX		H	
+L06	21	TRIS		H	
+L06	22	PLUS		M	
+L06	23	PSI		M	
+L06	24	NEQ		H	
+L06	25	DOT		H	
+L06	26	I		H	
+L06	27	DOT		H	
+L06	28	NEW:h-shaped hook		M	
+L06	29	PSI		M	
+L06	30	M		H	
+L06	31	NEW:o with vertical stroke through		M	gloss gi above
+L06	32	X	ALPHA	M	x with loop
+L06	33	HASH		M	H with long bar
+L06	34	CUP		H	
+L06	35	O		H	
+L06	36	Z	TWO	M	
+L06	37	X	ALPHA	M	x with loop
+L06	38	DTRIS		H	
+L06	39	C		H	
+L06	40	PSI		M	
+L06	41	ALPHA		H	a
+L06	42	X	ALPHA	M	x with loop
+L06	43	M		H	
+L06	44	I		M	
+L06	45	DOT		H	
+L06	46	C		H	
+L06	47	DTRI		H	
+L06	48	NEQ		H	
+L06	49	TRIS	NEW:r-shaped hook crossed	L	
+L06	50	Q	PSI	M	
+L06	51	X	ALPHA	M	x with loop
+L06	52	NEQ		H	
+L07	1	TRIS	TRIX	M	stem through triangle, small bar
+L07	2	M		H	
+L07	3	X	ALPHA	M	x with loop
+L07	4	DTRI		H	
+L07	5	PSI		M	bar under
+L07	6	X	NEW:bar over x-loop	L	bar over x with loop
+L07	7	ALPHA		H	a
+L07	8	X	ALPHA	M	x with loop
+L08	1	HASH		H	
+L08	2	O		H	
+L08	3	ALPHA		H	a
+L08	4	X	Q	L	z/g-like with tail
+L08	5	PLUS		H	
+L08	6	TRIS	TRIX	M	stem through triangle
+L08	7	NEQ		H	
+L08	8	INVT		M	
+L08	9	OMEGA		H	bar over
+L08	10	DOT		H	
+L08	11	I		H	
+L08	12	DOT		H	
+L08	13	PSI		M	bar under
+L08	14	TRIS		H	
+L08	15	X	ALPHA	M	x with loop
+L08	16	TWO	Z	M	bar over
+L08	17	NEW:s-shape		M	bar over
+L08	18	PSI		M	
+L08	19	DTRIS		H	
+L08	20	M		H	
+L08	21	PSI		M	
+L08	22	PSI		M	bar and cross below
+L08	23	ALPHA		H	alpha
+L08	24	C		H	
+L08	25	O		H	
+L08	26	ALPHA		H	a
+L08	27	X	ALPHA	M	x with loop
