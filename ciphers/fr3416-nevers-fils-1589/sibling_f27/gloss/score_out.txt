@@ -3,3 +3,18 @@ pass A aumoins: LCS 6/7 gate 5 shuffle p95 6 mean 5.00 -> BELOW
 pass B onnehorscestes: LCS 6/14 gate 10 shuffle p95 7 mean 6.00 -> BELOW
 pass B aumoins: LCS 6/7 gate 5 shuffle p95 6 mean 4.99 -> BELOW
 controls FAIL -> NON-TEST
+
+# UNA-NEVF27, 9 Oct 2026: one blind Opus 5.5 pass (PREREG-AMNEVF27 amendment, commit 74dcee14); scorer unchanged; frame-1 span text = 'bora_irsh_bMr' (words reported over 48..43 18), frame-0 span = 'aumoina'
+## input: bora_irsh_bMr
+pass A onnehorscestes: LCS 3/14 gate 10 shuffle p95 4 mean 3.12 -> BELOW
+pass A aumoins: LCS 3/7 gate 5 shuffle p95 4 mean 2.81 -> BELOW
+controls FAIL -> NON-TEST
+## input: aumoina
+pass A onnehorscestes: LCS 2/14 gate 10 shuffle p95 2 mean 1.83 -> BELOW
+pass A aumoins: LCS 6/7 gate 5 shuffle p95 5 mean 3.43 -> ok
+controls FAIL -> NON-TEST
+## input: bora_irsh_bMr_aumoina_fai_prott?gh?
+pass A onnehorscestes: LCS 5/14 gate 10 shuffle p95 6 mean 5.13 -> BELOW
+pass A aumoins: LCS 6/7 gate 5 shuffle p95 6 mean 4.84 -> BELOW
+controls FAIL -> NON-TEST
+UNA-NEVF27 gated: K1 (span) 3/14 gate 10, shuffle p95 4 -> BELOW; K2 (span) 6/7 gate 5, shuffle p95 5 -> ok; controls FAIL -> NON-TEST, S not scored
