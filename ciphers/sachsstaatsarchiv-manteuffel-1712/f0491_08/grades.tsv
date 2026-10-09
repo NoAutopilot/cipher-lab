@@ -1,0 +1,39 @@
+tokid	code	value	grade	conf
+L01.1	34	p	M	high
+L01.2	22	o|a	M	high
+L01.3	60	r|re|ro	M	high
+L01.4	5	v	M	high
+L01.5	33	o	M	high
+L01.6	39	i	M	low
+L01.7	27	r	M	high
+L01b.1	155	Flemming	M	high
+L02.1	91	st	M	low
+L03.1	187	Roi de Suède	M	high
+L07.1	60	r|re|ro	M	high
+L07.2	16	o|ou|ous	M	med
+L07.3	85	st	M	high
+L07.4	33	o	M	high
+L07.5	11	k	M	high
+R02.1	103	le|la	M	high
+R02.2	34	p	M	high
+R02.3	26	r	M	high
+R02.4	27	r	M	high
+R03.1	36	f	M	high
+R03.2	31	m	M	high
+R05.1	103	le|la	M	high
+R05.2	34	p	M	high
+R05.3	26	r	M	high
+R05.4	27	r	I	low
+R06.1	257	Le roi de Prusse	M	high
+R11.1	103	le|la	M	high
+R11.2	34	p	M	med
+R11.3	26	r	M	high
+R11.4	27	r	M	high
+R14.1	9	i	M	med
+R15.1	257	Le roi de Prusse	M	high
+R19.1	11	k	M	high
+X01.1	11	k	M	high
+X15.1	35	e	M	med
+X15.2	33	o	M	high
+X15.3	81	k	M	high
+# counts H 0 C 0 S 0 M 36 I 1 U 0 (of 37)

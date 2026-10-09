@@ -1,0 +1,39 @@
+# MANT-0491 reconciled code tokens, Loc. 694/08 0491 (L = left page, tail of the previous dispatch; R = right page, stamp 393, Berl. 14 Nov 1712) + 0492 left (end of the 14 Nov letter). Worker reconciliation from native 2x/4x zooms, before any decode or score.
+line	pos	sign	conf	note
+L01	1	34	high	A/B agree; note 'pouvoir' above (both passes)
+L01	2	22	high	agree
+L01	3	60	high	agree
+L01	4	5	high	agree
+L01	5	33	high	agree
+L01	6	39	low	A/B '34' (both give 39 as alternative); eye: '3' + y-tailed 9 (the hand's 9, MANT-0008)
+L01	7	27	high	agree
+L01b	1	155	high	agree; note 'Flem.' above (both)
+L02	1	91	low	both passes: no code ('y.'/'9.' taken as a letter); eye '91.' (y-tailed 9 + 1) in 'que 91. seroit ravi'; a tiny note above (A 'St'-like in its context field, B 'Sr'? unreadable)
+L03	1	187	high	agree; note 'Roy de Suede' above (both, approx.)
+L07	1	60	high	agree; note above the run (A 'relation ? Mollolk?', B 'relation/veclation ... Rosselle?')
+L07	2	16	med	A/B '10'; eye at 4x: '16' (MANT-CEN5 also read 16)
+L07	3	85	high	agree (alt 83 both)
+L07	4	33	high	agree
+L07	5	11	high	agree
+R02	1	103	high	agree; group continues on R03
+R02	2	34	high	agree (R03 head)
+R02	3	26	high	agree
+R02	4	27	high	agree
+R03	1	36	high	agree
+R03	2	31	high	agree
+R05	1	103	high	agree
+R05	2	34	high	agree
+R05	3	26	high	agree
+R05	4	27	low	both '2?': last digit lost at the page edge; repaired to 27 from the two other 103.34.26.27 runs (I)
+R06	1	257	high	agree
+R11	1	103	high	agree
+R11	2	34	med	A/B '84' (overstrike); eye: 3 written over another digit, 34
+R11	3	26	high	agree
+R11	4	27	high	agree
+R14	1	9	med	both passes: no code ('y' as a letter); eye: 'que y. a pretendu' = a lone y-tailed 9 with its dot (as MANT-UNG 0383 '9.')
+R15	1	257	high	agree
+R19	1	11	high	agree
+X01	1	11	high	agree (0492 left l.1)
+X15	1	35	med	agree (both alt 33)
+X15	2	33	high	agree
+X15	3	81	high	agree

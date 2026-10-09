@@ -1,0 +1,16 @@
+power	at 23 letters: 49/55 = 0.89	TEST
+block_1	letters 1-23	real -1.881	permuted mean -2.014 p95 -1.401 p99 -1.171 max -0.934	permuted>=real 342/1000	FAIL	leprrfmleprrleprrikkeok
+shuffled_target	1000 order shuffles (seed 4910) under the real key: mean -1.879, share above permuted p95 (-1.472) 0.016	judge not void
+leaf_0491	letters 23	blocks 1	FAIL	leprrfmleprrleprrikkeok
+# whole leaf (reported, no power behind it if L > 62): real -1.881 permuted mean -2.019 p95 -1.472 p99 -1.294 permuted>=real 333/1000
+# per run (reported, not gates): run, letters, score, decoded letters
+R02	5	-1.763	leprr
+R03	2	nan	fm
+R05	5	-1.763	leprr
+R06	0	nan	
+R11	5	-1.763	leprr
+R14	1	nan	i
+R15	0	nan	
+R19	1	nan	k
+X01	1	nan	k
+X15	3	nan	eok

@@ -1,0 +1,18 @@
+# MANT-0491 blind pass B (Sonnet subagent, 9 Oct 2026 21:0x UTC; 14 strips in reverse order in ONE call -- disclosed deviation); verbatim
+strip	group_no	codes	conf	context_before	context_after	note_above	notes
+c0492L15_L01	1	35.33.81	med	(line start)	a écrit, mais ses lettres	-	first digit 3 vs 5 unsure: 35?(33)
+c0492L01_L01	1	11	med	(line start)	m'a promis de faire comprendre	-	
+c0491R19_L01	1	11	med	fait comprendre a	que nous n'y entrerons qu'	-	written "ll" like two strokes, reads as 11
+c0491R15_L01	1	257	med	se ouvroit a	que la derniere lettre que le	-	5 possibly 3?(5)
+c0491R14_L01	-	-	high	J'ai appris hier au soir	que y a pretendu fai-	-	no code group on main line
+c0491R11_L01	1	103.84.26.27	med	me an	, et je le prendrai	-	second element could be 84?(54) or 8?4(3?4) with overstrike
+c0491R06_L01	1	257	med	aucun des ministres de	(line end)	-	possibly incomplete at right edge
+c0491R05_L01	1	103.34.26.2?	low	dont je suis tres content, et	(line end)	-	truncated; 34 could be 31?(34)
+c0491R03_L01	1	34.26.27	med	(line start)	Cet an	-	continues from previous line
+c0491R03_L01	2	36.31	med	C'est an	que nous en aurons la plus	-	36 vs 38?
+c0491R02_L01	1	103	med	j'ai bonne esperance de retrouver	(end of line)	-	
+c0491L07_L01	1	60.10.85.33.11	med	l' [struck word] de	, et je	"relation" or "veclation" then "Rosselle"? above the group; "mutatis mutandis" at left; tiny "que" under	10 vs 40?; 85 vs 83?
+c0491L03_L01	1	187	med	aupres de	, en lui fai-	-	1?8?7
+c0491L02_L01	1	187	med	(sliver of the line below)	en lui	Roy de Suede (?)	main line itself has no code group; tiny word above "que M." at upper left: "Sr"? unreadable
+c0491L01_L01	1	34.22.60.5.33.34.27	med	(line start)	jusques-la. Je supposois apres ce que	pouvoir	second 34 could be 39?(34)
+c0491L01_L01	2	155	med	apres ce que	m'	Flem.	

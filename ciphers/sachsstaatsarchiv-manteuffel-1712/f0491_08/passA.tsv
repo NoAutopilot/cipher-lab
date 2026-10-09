@@ -1,0 +1,19 @@
+# MANT-0491 blind pass A (Sonnet subagent, 9 Oct 2026 21:0x UTC; 14 strips in file order in ONE call -- disclosed deviation from the PREREG's two calls per pass); verbatim
+strip	group_no	codes	conf	context_before	context_after	note_above	notes
+c0491L01	1	34.22.60.5.33.34.27.	med	(start of line; interlinear "pouvoir" above)	jusqu'a la. Je supposois	pouvoir (over start of group)	the 5 could be a dot+5; 33.34 could be 33.39 (9 tail?); read 34.22.60.5.33.34.27
+c0491L01	2	155	med	apres ce que	mi (trailing "m" or "mi")	Flem. (small, above 155; letters F-l-e-m)	reads 155 with a dot/mark after
+c0491L02	-	-	-	en avoit dit, que	(none)	-	no numeric group on main line; "y." or "9." after "que" is a letter/sign not clearly code
+c0491L02	-	-	-	-	-	Roy de Suede (approx.) at right, above lower line "de 187"	the sliver belongs to the line below
+c0491L03	1	187,	med	aupres de	en luy fai-	-	"187," written with comma; digit 8 could be 3?(8)
+c0491L07	1	60.10.85.33.11.,	med	a l' (struck-through word under)	et je	"mutatis mutandis" (small, left); "relation ? Mollolk?" small above near the group (R-e-l-a-t-i-o-n . M-o-?-?-?-k-e)	85 could be 83?
+c0491R02	1	103.	high	j'ai bonne esperance de retresser	(end of strip)	-	group at end of strip 103. with trailing dot
+c0491R03	1	34.26.27.	high	(start of line)	Cest an 36.31 que nous en aurons	-	34 then 26:27 written with colons
+c0491R03	2	36.31.	med	Cest an	que nous en aurons	-	could be 36.37
+c0491R05	1	103.34.26.2?	med	conversation dont je suis tres content, et	(runs off strip right edge)	-	last digits cut off
+c0491R06	1	257	med	des ministres, de	(end of strip)	-	could be 25y? reported as 257
+c0491R11	1	103.84.26.27.,	med	me an	et je le prendrai	-	second element 84?(34) overstrike; 103.34.26.27 plausible alternative
+c0491R14	-	-	-	J'ai appris hier au soir que y a pretendu fui-	(none)	-	no code group; "y" before "a pretendu" is a letter y (possibly 9-like tail) standing alone
+c0491R15	1	257.	high	se ouvroire a	que la derniere lettre que le Roi	-	
+c0491R19	1	11.	med	fait comprendre a	que nous n'y entrerons qu'	-	may be code 11
+c0492L01	1	11.	med	(start of line)	m'a promis de faire comprendre cela a	-	
+c0492L15	1	35.33.81.	med	(start of line)	a ecrit, mais ses lettres n'etoient pas en	-	35 could be 33?; the 81 could be 87
