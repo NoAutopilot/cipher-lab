@@ -1,0 +1,132 @@
+folder	sheet	cell	box	truth_source	truth	verdict
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T17	f162r_03_012	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T17	f174r_04_014	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T17	f162r_01_057	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T17	f162r_01_053	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T17	f168r_01_037	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T17	f162r_01_002	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T17	f162r_02_035	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T24	f168v_03_011	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T24	f168v_03_014	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T24	f168v_03_009	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T24	f162r_02_013	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T24	f175v_01_033	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T26	f184r_11_051	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T26	f162r_03_036	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T26	f175v_02_021	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T26	f184v_04_025	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T27	f174v_10_009	secure_tokens.tsv (S)	T27	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T27	f174r_03_005	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T27	f174r_02_019	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T27	f174v_02_020	secure_tokens.tsv (S)	T27	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T27	f174vB_09_009	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T27	f184r_10_020	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T27	f174v_11_020	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T29	f184v_04_018	secure_tokens.tsv (S)	T29	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T29	f117r_05_011	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T29	f174vB_03_016	secure_tokens.tsv (S)	T29	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T29	f117r_08_002	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T38	f185r_01_005	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T38	f184r_01_017	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T38	f185r_01_020	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T38	f184v_04_015	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T49	f174vB_04_027	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T49	f174r_02_013	secure_tokens.tsv (S)	T49	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T49	f117r_01_006	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T49	f184v_01_021	secure_tokens.tsv (S)	T49	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T52	f174vB_11_024	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T52	f184r_07_033	secure_tokens.tsv (S)	T52	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T52	f184r_01_055	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T54	f174vB_06_008	secure_tokens.tsv (S)	T54	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T55	f139v_02_047	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T57	f174vB_04_019	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T57	f174vB_09_021	secure_tokens.tsv (S)	T57	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T57	f184r_01_040	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T64	f174v_08_011	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T64	f174vB_03_004	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T64	f184v_04_009	secure_tokens.tsv (S)	T52	MISLABELLED
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T65	f185r_03_019	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T70	f174v_05_001	secure_tokens.tsv (S)	T70	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T70	f174v_05_028	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T70	f185r_02_003	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T70	f139v_03_017	secure_tokens.tsv (S)	T70	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T81	f144r_05_008	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T81	f117r_04_028	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T81	f117r_03_010	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T81	f144r_04_029	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T81	f117r_06_010	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T88	f162r_04_041	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T88	f184r_11_023	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T88	f162r_04_087	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T88	f162r_04_106	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T88	f168r_04_006	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T88	f174v_11_009	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T88	f162r_04_111	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T88	f162r_04_043	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T88	f117r_07_001	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T89	f174vB_12_001	secure_tokens.tsv (S)	T89	OK
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T95	f174vB_08_003	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T97	f184v_03_005	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+nevers-birago-fr3251-1572	atlas/atlas.tsv	T97	f162r_03_033	secure_tokens.tsv (S)	-	no-truth (not a secure token)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	lam	A01	interlined gloss c.264 (S) vs key.tsv	la / key la	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	X+	A02	interlined gloss c.264 (S) vs key.tsv	se / key se	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	alpha	A03	interlined gloss c.264 (S) vs key.tsv	co / key co	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	T	A04	interlined gloss c.264 (S) vs key.tsv	n / key n	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	g	A05	interlined gloss c.264 (S) vs key.tsv	de / key de|f	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	X++	A06	interlined gloss c.264 (S) vs key.tsv	si / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	v	A07	interlined gloss c.264 (S) vs key.tsv	u / key li|lo	VALUE-CONFLICT (gloss not a key value of the cell)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	beta	A08	interlined gloss c.264 (S) vs key.tsv	n / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	ll4	A09	interlined gloss c.264 (S) vs key.tsv	p / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	3	A10	interlined gloss c.264 (S) vs key.tsv	ri / key ri|z	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	inT	A11	interlined gloss c.264 (S) vs key.tsv	n / key n	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	18	A12	interlined gloss c.264 (S) vs key.tsv	ce / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	phi	A13	interlined gloss c.264 (S) vs key.tsv	ca / key ca|duc de ferrare	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	e	A14	interlined gloss c.264 (S) vs key.tsv	to / key e|to	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	sigma	A15	interlined gloss c.264 (S) vs key.tsv	li / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	pi	A16	interlined gloss c.264 (S) vs key.tsv	que / key o	OK (on-file key60 pi=que; key.tsv tag spelled differently)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	E	A17	interlined gloss c.264 (S) vs key.tsv	re / key re	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	alpha	A18	interlined gloss c.264 (S) vs key.tsv	co / key co	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	inT	A19	interlined gloss c.264 (S) vs key.tsv	n / key n	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	T	A20	interlined gloss c.264 (S) vs key.tsv	n / key n	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	v	A21	interlined gloss c.264 (S) vs key.tsv	u / key li|lo	VALUE-CONFLICT (gloss not a key value of the cell)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	f	A22	interlined gloss c.264 (S) vs key.tsv	e / key e	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	do	A23	interlined gloss c.264 (S) vs key.tsv	r / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	E	A24	interlined gloss c.264 (S) vs key.tsv	re / key re	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	++	A25	interlined gloss c.264 (S) vs key.tsv	u / key u	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	8o	A26	interlined gloss c.264 (S) vs key.tsv	raison / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	12	A27	interlined gloss c.264 (S) vs key.tsv	du / key du	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	pi	A28	interlined gloss c.264 (S) vs key.tsv	que / key o	OK (on-file key60 pi=que; key.tsv tag spelled differently)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	cH	A29	interlined gloss c.264 (S) vs key.tsv	l / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	10	A30	interlined gloss c.264 (S) vs key.tsv	p / key p	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	pl	A31	interlined gloss c.264 (S) vs key.tsv	e / key so	VALUE-CONFLICT (gloss not a key value of the cell)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	E	A32	interlined gloss c.264 (S) vs key.tsv	re / key re	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	n	A33	interlined gloss c.264 (S) vs key.tsv	et / key et	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	+o	A34	interlined gloss c.264 (S) vs key.tsv	le / key le	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	y	A35	interlined gloss c.264 (S) vs key.tsv	s / key s	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	x	A36	interlined gloss c.264 (S) vs key.tsv	a / key a	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	T	A37	interlined gloss c.264 (S) vs key.tsv	n / key n	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	g	A38	interlined gloss c.264 (S) vs key.tsv	de / key de|f	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	lam	A39	interlined gloss c.264 (S) vs key.tsv	la / key la	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	∠	A40	interlined gloss c.264 (S) vs key.tsv	c / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	X	A41	interlined gloss c.264 (S) vs key.tsv	o / key o	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	++	A42	interlined gloss c.264 (S) vs key.tsv	u / key u	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	do	A43	interlined gloss c.264 (S) vs key.tsv	r / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	v	A44	interlined gloss c.264 (S) vs key.tsv	o / key li|lo	VALUE-CONFLICT (gloss not a key value of the cell)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	T	A45	interlined gloss c.264 (S) vs key.tsv	n / key n	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	g	A46	interlined gloss c.264 (S) vs key.tsv	de / key de|f	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	∠	A47	interlined gloss c.264 (S) vs key.tsv	c / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	lam	A48	interlined gloss c.264 (S) vs key.tsv	la / key la	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	E	A49	interlined gloss c.264 (S) vs key.tsv	re / key re	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	g3	A50	interlined gloss c.264 (S) vs key.tsv	p / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	do	A51	interlined gloss c.264 (S) vs key.tsv	r / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264.tsv	to	A52	interlined gloss c.264 (S) vs key.tsv	i / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	L40	A53	interlined gloss c.264 (S) vs key.tsv	qui / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	8	A54	interlined gloss c.264 (S) vs key.tsv	t / key t	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	r	A55	interlined gloss c.264 (S) vs key.tsv	s / key s	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	r	A56	interlined gloss c.264 (S) vs key.tsv	s / key s	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	c	A57	interlined gloss c.264 (S) vs key.tsv	s / key a|s	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	ue	A58	interlined gloss c.264 (S) vs key.tsv	e / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	ue	A59	interlined gloss c.264 (S) vs key.tsv	e / key 	no key cell (tag not in key.tsv)
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	20	A60	interlined gloss c.264 (S) vs key.tsv	u / key u	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	=	A61	interlined gloss c.264 (S) vs key.tsv	d / key d	OK
+fr3985/fr3986 key60	tools/keys/key60_atlas/atlas264ext.tsv	//	A62	interlined gloss c.264 (S) vs key.tsv	c / key c	OK
