@@ -1,0 +1,50 @@
+# Brandt 27 Feb 1672, HStAM 4 f Staaten D Daenemark 131 image 0020, right-page head block (3 numeral lines above 'Es ist hier eine troupe').
+# BRANDT-UP 9 Oct 2026: crop cropsU/b20u_L01.jpg (tools/iiif_lines.py --image), two blind Sonnet passes (passA20u top-down, passB20u bottom-up),
+# tools/reconcile_passes.py -> recU/: 46/46 tokens agree (only vndt/Vndt case differs). w: = clear word; | = separator. Gloss: gloss_0020u.txt (margin).
+line	pos	token	conf	note
+L01	1	52	H	agree A/B
+L01	2	74	H	agree A/B
+L01	3	94	H	agree A/B
+L01	4	56	H	agree A/B
+L01	5	259	H	agree A/B
+L01	6	156	H	agree A/B
+L01	7	144	H	agree A/B
+L01	8	75	H	agree A/B
+L01	9	125	H	agree A/B
+L01	10	42	H	agree A/B
+L01	11	73	H	agree A/B
+L01	12	53	H	agree A/B
+L01	13	92	H	agree A/B
+L01	14	|	H	agree A/B
+L01	15	46	H	agree A/B
+L01	16	52	H	agree A/B
+L01	17	95	H	agree A/B
+L02	1	198	H	agree A/B
+L02	2	47	H	agree A/B
+L02	3	53	H	agree A/B
+L02	4	74	H	agree A/B
+L02	5	100	H	agree A/B
+L02	6	117	H	agree A/B
+L02	7	79	H	agree A/B
+L02	8	w:vndt	H	agree A/B
+L02	9	71	H	agree A/B
+L02	10	74	H	agree A/B
+L02	11	129	H	agree A/B
+L02	12	75	H	agree A/B
+L02	13	67	H	agree A/B
+L02	14	56	H	agree A/B
+L02	15	117	H	agree A/B
+L03	1	272	H	agree A/B
+L03	2	156	H	agree A/B
+L03	3	138	H	agree A/B
+L03	4	94	H	agree A/B
+L03	5	53	H	agree A/B
+L03	6	64	H	agree A/B
+L03	7	101	H	agree A/B
+L03	8	42	H	agree A/B
+L03	9	74	H	agree A/B
+L03	10	76	H	agree A/B
+L03	11	52	H	agree A/B
+L03	12	118	H	agree A/B
+L03	13	53	H	agree A/B
+L03	14	94	H	agree A/B

@@ -1,0 +1,130 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "u20_L01.jpg",
+   "source_url": "",
+   "source_file": "0020.jpg",
+   "box": [
+    2000,
+    370,
+    3420,
+    492
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     45,
+     110,
+     190
+    ]
+   },
+   "date": "09 Oct 2026"
+  },
+  {
+   "crop": "u20_L02.jpg",
+   "source_url": "",
+   "source_file": "0020.jpg",
+   "box": [
+    2000,
+    402,
+    3420,
+    565
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     45,
+     110,
+     190
+    ]
+   },
+   "date": "09 Oct 2026"
+  },
+  {
+   "crop": "u20_L03.jpg",
+   "source_url": "",
+   "source_file": "0020.jpg",
+   "box": [
+    2000,
+    475,
+    3420,
+    641
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     45,
+     110,
+     190
+    ]
+   },
+   "date": "09 Oct 2026"
+  },
+  {
+   "crop": "b20u_L01.jpg",
+   "source_url": "",
+   "source_file": "0020.jpg",
+   "box": [
+    1760,
+    360,
+    3420,
+    660
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     150
+    ]
+   },
+   "date": "09 Oct 2026"
+  },
+  {
+   "crop": "b21_L01.jpg",
+   "source_url": "",
+   "source_file": "0021.jpg",
+   "box": [
+    400,
+    270,
+    1800,
+    560
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     145
+    ]
+   },
+   "date": "09 Oct 2026"
+  }
+ ]
+}

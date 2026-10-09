@@ -1,0 +1,14 @@
+line	position	sign	confidence	alt	why
+L01	1	w:der	M		agree-flagged
+L01	2	244	H		agree
+L02	1	w:aus	M	B:w:auß	differ
+L02	2	209	H		agree
+L02	3	53	H		agree
+L02	4	74	H		agree
+L02	5	94	H		agree
+L02	6	54	H		agree
+L02	7	259	M		agree-flagged
+L02	8	w:tractiren	M		agree-flagged
+L03	1	w:bei	M		agree-flagged
+L03	2	196	H		agree
+L03	3	w:gewesen	M		agree-flagged

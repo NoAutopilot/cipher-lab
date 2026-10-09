@@ -1,0 +1,6 @@
+line	col	A	B	flagged	crop	both_conf
+L01	1	w:der	w:der	AB		A:M/B:M
+L02	7	259	259	A		A:M/B:H
+L02	8	w:tractiren	w:tractiren	AB		A:M/B:M
+L03	1	w:bei	w:bei	AB		A:M/B:M
+L03	3	w:gewesen	w:gewesen	AB		A:M/B:M
