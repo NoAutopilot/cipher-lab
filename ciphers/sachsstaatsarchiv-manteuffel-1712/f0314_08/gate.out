@@ -1,0 +1,151 @@
+key: key.tsv
+
+######## gloss pass G1 (deciding); spans 44
+== G1 row (a) letter runs (>= 2 codes), 0314: spans 4; code tokens 28; keyed 28
+S = 19/28 keyed (0.679); control (1000 permutations, seed 312): mean 3.28, p95 6, p99 7, max 9; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G1 row (a) letter runs (>= 2 codes), 0312: spans 5; code tokens 21; keyed 21
+S = 19/21 keyed (0.905); control (1000 permutations, seed 312): mean 2.38, p95 5, p99 7, max 11; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G1 row (a) letter runs (>= 2 codes), pooled: spans 9; code tokens 49; keyed 49
+S = 38/49 keyed (0.776); control (1000 permutations, seed 312): mean 5.66, p95 10, p99 12, max 17; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G1 row (n) name runs (1 code), 0314: spans 16; code tokens 16; keyed 16
+S = 12/16 keyed (0.750); control (1000 permutations, seed 312): mean 0.23, p95 2, p99 4, max 5; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G1 row (n) name runs (1 code), 0312: spans 19; code tokens 19; keyed 18
+S = 13/18 keyed (0.722); control (1000 permutations, seed 312): mean 0.15, p95 1, p99 4, max 7; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G1 row (n) name runs (1 code), pooled: spans 35; code tokens 35; keyed 34
+S = 25/34 keyed (0.735); control (1000 permutations, seed 312): mean 0.38, p95 3, p99 6, max 12; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G1 row (a-all) every span, 0474 statistic (continuity, not deciding), 0314: spans 20; code tokens 44; keyed 44
+S = 20/44 keyed (0.455); control (1000 permutations, seed 312): mean 5.50, p95 11, p99 15, max 16; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): FAIL
+== G1 row (a-all) every span, 0474 statistic (continuity, not deciding), 0312: spans 24; code tokens 40; keyed 39
+S = 23/39 keyed (0.590); control (1000 permutations, seed 312): mean 5.89, p95 14, p99 16, max 20; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G1 row (a-all) every span, 0474 statistic (continuity, not deciding), pooled: spans 44; code tokens 84; keyed 83
+S = 43/83 keyed (0.518); control (1000 permutations, seed 312): mean 11.39, p95 24, p99 28, max 35; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span G1 (code:op:gloss-letters; name rows: match 1/0):
+G1-R01	0314	St.	1/1	198=Stanislas
+G1-R02	0314	Sant.	2/7	66:match:a 60:null: 21:match:n 8:null: 33:null: 12:null: 120:miss:t
+G1-R03	0314	leR. de Pr.	0/1	257=Le roi de Prusse
+G1-R04	0314	St.	1/1	198=Stanislas
+G1-R05	0314	Pol.	1/1	292=Pologne
+G1-R06	0314	R. de suede	1/1	187=Roi de Suède
+G1-R07	0314	la Couronn	8/9	110:match:la 15:match:c 16:match:o 6:match:u 60:match:r 33:match:o 14:match:n 21:match:n 35:null:
+G1-R08	0314	R. de Pruße	0/1	257=Le roi de Prusse
+G1-R09	0314	Pol.	1/1	292=Pologne
+G1-R10	0314	St.	1/1	198=Stanislas
+G1-R11	0314	la Couronne	8/9	110:match:la 15:match:c 33:match:o 6:match:u 60:match:r 16:match:o 42:miss:n 14:match:n 10:match:e
+G1-R12	0314	la Republique	1/1	202=la république de Pologne
+G1-R13	0314	leR. de Pr.	0/1	257=Le roi de Prusse
+G1-R15	0314	la Pol.^ au Roy	1/3	292:miss:pol 66:match:a 190:miss:roi
+G1-R16	0314	la Pologne	1/1	292=Pologne
+G1-R17	0314	Roy	1/1	150=le Roi de Pologne
+G1-R18	0314	le Roy de Pruße	0/1	257=Le roi de Prusse
+G1-R19	0314	la Pol:	1/1	292=Pologne
+G1-R20	0314	Stan:	1/1	198=Stanislas
+G1-R21	0314	R. de suede	1/1	187=Roi de Suède
+G1-A02	0312	Stan:	1/1	198=Stanislas
+G1-A03	0312	Roy de Pruffe	0/1	257=Le roi de Prusse
+G1-A04	0312	Roy de Suede	1/1	187=Roi de Suède
+G1-A05	0312	Danh:	2/3	66:match:a 60:null: 21:match:n
+G1-A06	0312	Roy de Pr:	1/1	257=Le roi de Prusse
+G1-A07	0312	Javon	0/1	198=Stanislas
+G1-A08	0312	Czar	1/1	177=le czar
+G1-A09	0312	Stan:	1/1	198=Stanislas
+G1-A10	0312	Roy de Suede	1/1	187=Roi de Suède
+G1-A11	0312	Stan:	1/1	198=Stanislas
+G1-A12	0312	Stockolm	0/1	321=(unkeyed)
+G1-A13	0312	le Senat	6/6	103:match:le 57:match:s 35:match:e 21:match:n 66:match:a 28:match:t
+G1-A14	0312	le Comte Horn	6/6	103:match:le 284:match:comte 47:match:h 16:match:o 60:match:r 21:match:n
+G1-A15	0312	Roy de Pruffe	0/1	257=Le roi de Prusse
+G1-A16	0312	Senat	3/3	57:match:s 35:match:e 21:match:n
+G1-A17	0312	Steinbock	0/1	191=Stenbock
+G1-A18	0312	Steinbock	0/1	191=Stenbock
+G1-A19	0312	Stan:	1/1	198=Stanislas
+G1-A20	0312	Argh:	2/3	66:match:a 60:match:r 21:miss:gh
+G1-A21	0312	Stan	1/1	198=Stanislas
+G1-A22	0312	Roy de Suede	1/1	187=Roi de Suède
+G1-A23	0312	Stan:	1/1	198=Stanislas
+G1-A24	0312	le Roy de Suede	1/1	187=Roi de Suède
+G1-A25	0312	Stan:	1/1	198=Stanislas
+
+######## gloss pass G2 (reported beside G1); spans 44
+== G2 row (a) letter runs (>= 2 codes), 0314: spans 4; code tokens 28; keyed 28
+S = 20/28 keyed (0.714); control (1000 permutations, seed 312): mean 3.22, p95 6, p99 7, max 9; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (a) letter runs (>= 2 codes), 0312: spans 5; code tokens 21; keyed 21
+S = 19/21 keyed (0.905); control (1000 permutations, seed 312): mean 2.32, p95 5, p99 7, max 11; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (a) letter runs (>= 2 codes), pooled: spans 9; code tokens 49; keyed 49
+S = 39/49 keyed (0.796); control (1000 permutations, seed 312): mean 5.54, p95 10, p99 13, max 17; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (n) name runs (1 code), 0314: spans 16; code tokens 16; keyed 16
+S = 11/16 keyed (0.688); control (1000 permutations, seed 312): mean 0.27, p95 2, p99 3, max 4; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (n) name runs (1 code), 0312: spans 19; code tokens 19; keyed 18
+S = 13/18 keyed (0.722); control (1000 permutations, seed 312): mean 0.15, p95 1, p99 4, max 7; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (n) name runs (1 code), pooled: spans 35; code tokens 35; keyed 34
+S = 24/34 keyed (0.706); control (1000 permutations, seed 312): mean 0.42, p95 3, p99 4, max 11; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (a-all) every span, 0474 statistic (continuity, not deciding), 0314: spans 20; code tokens 44; keyed 44
+S = 21/44 keyed (0.477); control (1000 permutations, seed 312): mean 5.30, p95 11, p99 14, max 15; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): FAIL
+== G2 row (a-all) every span, 0474 statistic (continuity, not deciding), 0312: spans 24; code tokens 40; keyed 39
+S = 23/39 keyed (0.590); control (1000 permutations, seed 312): mean 6.01, p95 14, p99 17, max 20; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== G2 row (a-all) every span, 0474 statistic (continuity, not deciding), pooled: spans 44; code tokens 84; keyed 83
+S = 44/83 keyed (0.530); control (1000 permutations, seed 312): mean 11.31, p95 23, p99 27, max 34; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span G2 (code:op:gloss-letters; name rows: match 1/0):
+G2-R01	0314	St.	1/1	198=Stanislas
+G2-R02	0314	aint	2/7	66:match:a 60:miss:i 21:match:n 8:null: 33:null: 12:null: 120:miss:t
+G2-R03	0314	le R. de Pr	1/1	257=Le roi de Prusse
+G2-R04	0314	St.	1/1	198=Stanislas
+G2-R05	0314	Pol.	1/1	292=Pologne
+G2-R06	0314	R. de huede	0/1	187=Roi de Suède
+G2-R07	0314	la couronne	9/9	110:match:la 15:match:c 16:match:o 6:match:u 60:match:r 33:match:o 14:match:n 21:match:n 35:match:e
+G2-R08	0314	R. de Pruffe	0/1	257=Le roi de Prusse
+G2-R09	0314	Pol.	1/1	292=Pologne
+G2-R10	0314	St.	1/1	198=Stanislas
+G2-R11	0314	la Couronne	8/9	110:match:la 15:match:c 33:match:o 6:match:u 60:match:r 16:match:o 42:miss:n 14:match:n 10:match:e
+G2-R12	0314	la Republique	1/1	202=la république de Pologne
+G2-R13	0314	le R. de Pr.	1/1	257=Le roi de Prusse
+G2-R15	0314	la Pol. au Roy	1/3	292:miss:pol 66:match:a 190:miss:roi
+G2-R16	0314	la Pologne	1/1	292=Pologne
+G2-R17	0314	Roy	1/1	150=le Roi de Pologne
+G2-R18	0314	le Roy de Pruffe	0/1	257=Le roi de Prusse
+G2-R19	0314	la Pol:	1/1	292=Pologne
+G2-R20	0314	Han:	0/1	198=Stanislas
+G2-R21	0314	R. de huede	0/1	187=Roi de Suède
+G2-A02	0312	Stan:	1/1	198=Stanislas
+G2-A03	0312	Roy de Conste	0/1	257=Le roi de Prusse
+G2-A04	0312	Roy de Suede	1/1	187=Roi de Suède
+G2-A05	0312	Arnh:	3/3	66:match:a 60:match:r 21:match:n
+G2-A06	0312	Roy de Pr:	1/1	257=Le roi de Prusse
+G2-A07	0312	Jaron	0/1	198=Stanislas
+G2-A08	0312	Czar	1/1	177=le czar
+G2-A09	0312	Stan:	1/1	198=Stanislas
+G2-A10	0312	Roy de Suede	1/1	187=Roi de Suède
+G2-A11	0312	Stan:	1/1	198=Stanislas
+G2-A12	0312	Stockhol	0/1	321=(unkeyed)
+G2-A13	0312	le Senat	6/6	103:match:le 57:match:s 35:match:e 21:match:n 66:match:a 28:match:t
+G2-A14	0312	le Conte Horn	5/6	103:match:le 284:miss:nte 47:match:h 16:match:o 60:match:r 21:match:n
+G2-A15	0312	Roy de Conste	0/1	257=Le roi de Prusse
+G2-A16	0312	Senat	3/3	57:match:s 35:match:e 21:match:n
+G2-A17	0312	Steinbock	0/1	191=Stenbock
+G2-A18	0312	Steinbock	0/1	191=Stenbock
+G2-A19	0312	Stan:	1/1	198=Stanislas
+G2-A20	0312	Argh:	2/3	66:match:a 60:match:r 21:miss:gh
+G2-A21	0312	Stan	1/1	198=Stanislas
+G2-A22	0312	Roy de Suede	1/1	187=Roi de Suède
+G2-A23	0312	Stan:	1/1	198=Stanislas
+G2-A24	0312	le Roy de Suede	1/1	187=Roi de Suède
+G2-A25	0312	Stan:	1/1	198=Stanislas
