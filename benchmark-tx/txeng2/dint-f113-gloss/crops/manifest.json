@@ -1,0 +1,272 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f113_L03.jpg",
+   "source_url": "",
+   "source_file": "src_f113_rot178.jpg",
+   "box": [
+    0,
+    122,
+    1220,
+    173
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 250 (sheared strip), --mask-neighbours (margin 8)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     25,
+     52,
+     78,
+     91,
+     98,
+     122,
+     145,
+     162,
+     180
+    ]
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 80.73,
+    "b": -0.00407,
+    "peaks_kept": 5,
+    "half_height": 15,
+    "win": 250,
+    "local": false
+   },
+   "band_extent": {
+    "frac": 0.1,
+    "band_rows": [
+     63,
+     89
+    ],
+    "height": 26
+   },
+   "mask": {
+    "margin": 8,
+    "keep": 0.5,
+    "band_rows": [
+     8,
+     38
+    ],
+    "removed": 87,
+    "kept": 100
+   }
+  },
+  {
+   "crop": "f113_L07.jpg",
+   "source_url": "",
+   "source_file": "src_f113_rot178.jpg",
+   "box": [
+    0,
+    181,
+    1220,
+    241
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 250 (sheared strip), --mask-neighbours (margin 8)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     25,
+     52,
+     78,
+     91,
+     98,
+     122,
+     145,
+     162,
+     180
+    ]
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 149.71,
+    "b": -0.01336,
+    "peaks_kept": 5,
+    "half_height": 14,
+    "win": 250,
+    "local": false
+   },
+   "band_extent": {
+    "frac": 0.1,
+    "band_rows": [
+     131,
+     159
+    ],
+    "height": 28
+   },
+   "mask": {
+    "margin": 8,
+    "keep": 0.5,
+    "band_rows": [
+     8,
+     36
+    ],
+    "removed": 64,
+    "kept": 103
+   }
+  },
+  {
+   "crop": "f113_L09.jpg",
+   "source_url": "",
+   "source_file": "src_f113_rot178.jpg",
+   "box": [
+    0,
+    222,
+    1220,
+    273
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 250 (sheared strip), --mask-neighbours (margin 8)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     25,
+     52,
+     78,
+     91,
+     98,
+     122,
+     145,
+     162,
+     180
+    ]
+   },
+   "date": "09 Oct 2026",
+   "slope_fit": {
+    "a": 179.14,
+    "b": -0.00247,
+    "peaks_kept": 5,
+    "half_height": 16,
+    "win": 250,
+    "local": false
+   },
+   "band_extent": {
+    "frac": 0.1,
+    "band_rows": [
+     164,
+     192
+    ],
+    "height": 28
+   },
+   "mask": {
+    "margin": 8,
+    "keep": 0.5,
+    "band_rows": [
+     8,
+     40
+    ],
+    "removed": 18,
+    "kept": 97
+   }
+  },
+  {
+   "crop": "f113_L05.jpg",
+   "source_url": "",
+   "source_file": "src_f113_rot178.jpg",
+   "box": [
+    0,
+    158,
+    1220,
+    197
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --mask-neighbours (margin 8)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     25,
+     52,
+     77,
+     91,
+     106,
+     122,
+     142,
+     162,
+     183
+    ]
+   },
+   "date": "09 Oct 2026",
+   "band_extent": {
+    "frac": 0.1,
+    "band_rows": [
+     96,
+     119
+    ],
+    "height": 23
+   },
+   "mask": {
+    "margin": 8,
+    "keep": 0.5,
+    "band_rows": [
+     8,
+     31
+    ],
+    "removed": 94,
+    "kept": 102
+   }
+  },
+  {
+   "crop": "f113e_L02.jpg",
+   "source_url": "",
+   "source_file": "src_f113_rot178.jpg",
+   "box": [
+    880,
+    92,
+    1220,
+    132
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --mask-neighbours (margin 8)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     22,
+     42,
+     62
+    ]
+   },
+   "date": "09 Oct 2026",
+   "band_extent": {
+    "frac": 0.1,
+    "band_rows": [
+     30,
+     54
+    ],
+    "height": 24
+   },
+   "mask": {
+    "margin": 8,
+    "keep": 0.5,
+    "band_rows": [
+     8,
+     32
+    ],
+    "removed": 28,
+    "kept": 17
+   }
+  }
+ ]
+}
