@@ -11846,3 +11846,169 @@ decipherment", "previously unread", any word implying the text is new. No status
 ### 6. Requests
 hdl.huntington.org 12 (6 CISOSEARCHALL, 6 dmGetItemInfo; all 200); archive.org 14 (4 `_page_numbers.json`, 6 page images, 4 `_djvu.txt`; all 200,
 to scratch, 1.6 s apart). be-api 0; googleapis 0. Subagents 0.
+
+## AUDIT (FV-MS18d)
+
+Verifier FV-MS18d (account 1, for LANE LEDGER), 9 Oct 2026, 20:48-21:2x UTC by `date -u`; a separate session from the reader MS18-R3, not protecting its
+conclusions. Scope: **E333, E334, E335, E340** (NOTES "## MS18-R3"); ciphertext.txt, Cipher No. 1, Washington sent ledger mssEC 18 = Huntington object
+10074. Nothing decoded beyond key look-ups in key.md (and key-no2.md / key-no9.md for the glosses). Key source for all four: `period`. No spec exists for
+eckert-1864, so `judge_plaintext.py` was not run. Scripts: `ms18/fv_ms18d_hdl.py` (+ `.out`: 14 CONTENTdm full-text queries across all pointers, 8 item
+records, 4 page images at 2400 px to scratch), `ms18/fv_ms18d_gb.py` (+ `.out`: Google Books API 8 queries with `country=US`; loc.gov Chronicling America 4
+queries). Print greps were run by hand on archive.org texts fetched to scratch (ids below). Intake gate: `eckert-1864: partial (line 3) -- edition/page or
+full-text-search citation found within 6 lines`. Prior work: `tools/prior_work.py --item-spec` refused the reader-style spec (`item` is not a key; the
+run was not repeated with `item_id`), so the checks were run by hand: own work = `git grep` of 9745/9746/9693/10056 in AUDIT/NOTES/status.json: only
+NOTES "## MS18-R3"; editions, holder and solver rows as s.2; aaymeloglu/unsolved-ciphers not cloned (unchecked).
+
+### 1. Duplicates and image (every graded line eye-checked on 2400 px crops; `iiif_lines.py --image` finds 0 lines on these ruled pages, as before)
+- **Duplicate diff:** the four pointers occur only in their own headers. mssEC 19 (`entries-mssEC19.tsv`) has no entry to Horner/Dix 26 May 1864, to
+  Smith/Rosecrans 27 May 1864, to Mason/Cairo 31 Mar 1864 or to Lynchburg 1 Oct 1865 (26-28 May 1864: 8970-8974 are Mason/Beckwith/O'Brien/Bruch; 31 Mar
+  1864: 8919 Bunnell, Clowry). CONTENTdm hits for each entry's rare clear words (Lasalle, Monthny, Phillips Havana, Berrien Pittsburgh, part cannon part
+  musket, safe key Hall) are the entry's own page only. **No duplicate, no clear period copy.**
+- **E333 (9745, printed p.79):** the transcription matches the image, except **"sulton" reads "sutton"** (the l/t stroke is uncrossed but the word is the
+  key's Sutton = Information, p.21 l.16 R; "directed ... to [give] information you" = "to inform you"). "black moustache" is plain on the page (not the
+  code word Black = City Point). The small parenthesised words are in a lighter, smaller hand above or beside seven words: **(brace)** Imogene, **(miles)**
+  harrow, **(smoking)** pledge, **(animal)** zebra, **(propulsion)** under "mail", **(distance)** beside "L", **(prisoners)** beside "C" (of "L C Turner"), and a
+  pencil note in the right margin, "Enemy / gulf / became? / by" (partly illegible). **They settle no token.** None is the word's meaning in No. 1 (Imogene
+  3 PM, Harrow 20, Pledge 6, Zebra Period, Mail a route indicator), No. 2 (Imogene 3.30 PM, Zebra 1000) or No. 9 (Imogene 5 PM); two sit on the signer's
+  plain initials L and C, which no clerk would gloss. They read as a later annotator's class labels, not a period decipherment; graded nothing, used for
+  nothing.
+- **E334 (9746, printed p.80):** matches the image line by line ("Windsor" = River; "U S Colored" plain). The second entry on the page (S. P. Kimber, 27 May
+  1864 3 PM, "Hang ... For Mastiff ... has been added to your Princeton and ... directed to obey your orders") is the sibling printed OR I/34 pt 4 p.62
+  (Halleck to Canby, 3 p.m.); not filed.
+- **E335 (9693, printed p.27):** **"Pen rock" reads "Pen nock"** = Pennock (A. M. Pennock, fleet captain at Cairo; holder 4505, below). The six small
+  numerals (Mar 4, Florence 6, For 2, Wise 5, Chief 3, Ordnance 7; the header's "(1)" is the book number) **settle no token**: they fall on a time word, a
+  month, a plain preposition and three plain words of the signature, and do not match any key value of those words; read as a clerk's count or order
+  marks. Unrecorded marginalia: left margin, written vertically, **"Sent from Book 12.10 Pm Tinker"** (sent 12.10 PM by the operator Tinker); top left "No
+  113"; a pencil note at the foot (illegible).
+- **E340 (10056, printed p.390):** the time word reads **"Francis"** (= 12, TIME page; the header's "12 m" is written above the date), not "Frances";
+  "Get" not "Gvt" (MS18-R3 right). The entry above it on the page (Sampson, Lynchburg, 30 Sept 1865, Eckert: "Send [Captain] Alberger, his Supt and the
+  orderly who procured the wax ...") is context.
+
+### 2. Holder's full text, sibling ledgers and print
+**Huntington CONTENTdm** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl take 20:53-20:56 UTC, 26 requests, all 200): Lasalle 1
+(9745), Monthny 1 (9745), Portuguese passport 0, diamond ring 2 (9745; 10168 = Olcott 11 Feb 1864, other), seize a steamer 4 (9706, 6626, 8041, 8438;
+**9706** = 16 Apr 1864 to John Horner, N York: other matter, but it shows "pause" used as a period mark in a Horner entry), spies Havana 0, Phillips Havana
+1 (9745), Kansas Colored Hurlbut 0, Tenth Kansas 0, Berrien Pittsburgh 1 (9693), part cannon part musket 1 (9693), Pennock powder 2 (**4505**, 5235),
+Alberger 7 (**10055**, 10056, 8003, **8004**, 8823, **8825**, 8828), safe key Hall 1 (10056).
+- **4505** (received clear book, Page 64): "Recd 840 PM / Cairo Ill March 30th 1864 / ... Comdr H A Wise U S N Chief of Bureau of ordnance Washn - I do not
+  consider it prudent to have more than five hundred barrels of the powder sent to this place at present - If the balance is sent to St Louis it will be
+  much safer ... I have reason to believe that spies & other improper persons are on this side and that an effort will be made to destroy the large
+  amount of public property here by fire ... signed A M Pennock fleet Capt & commandant of Station" -- the telegram E335 answers ("Your telegram
+  received"; "if you apprehend any danger ... retain it at Pittsburgh").
+- **10055** (mssEC 18 p.389): "12 m JW Sampson Lynchburg Wash Sept 23 1865 / Growl harsh pebble Francis for pilgrim Alberger ..." (the same operator, the
+  same time word Francis = 12 m, "[Captain] Alberger"; L C Baker signs the second message); **8004** (received, 26 Sept 1865, Lynchburg, to Gen. Baker: "...
+  sig MH Alberger Capt & Q. M."); **8825** (28 Sept 1865, to Brig. Gen. Baker: "met man at Gordonsville ... He brought the duplicate Key ... sig M H Al
+  berger capt and asst QM"). OR ser. I vol. 40 pt 3 index: "Alberger, Morris H." (Capt., 24th New York Cavalry). So the signer of E340 is Capt. Morris H.
+  Alberger, assistant quartermaster, then on a detective operation for L. C. Baker at Lynchburg; that the safe key of E340 belongs to that operation is an
+  inference (I), not read.
+
+**Print** (archive.org djvu texts fetched to scratch: OR ser. I vol. 34 pt 3 `warofrebellion013403rootrich`, pt 4 `warofrebellion013404rootrich`, vol. 36
+pt 3 `warofrebellion363unit`, vol. 37 pt 1 `warofrebellion371unit`, vol. 39 pt 2 `warofrebellion392unit`; ORN ser. I vol. 3 `officialrecordso0003honh`,
+vol. 21 `officialrecordso0021unse`, vol. 26 `officialrecordso0026unse`; ORN ser. II vol. 3 `officialrecordso0003unse`; plus the cached OR ser. II vol. 7 and
+the 171 cached texts in `sources/ia-fulltext/print-check/`):
+- **E334 -> printed OR ser. I vol. 34 pt 4 p.64** (running head 64 before the item, 65 after it; page not read on an image): "WASHINGTON, D. C., May 27,
+  1864 -- 2.30 p.m. Major-General ROSECRANS, Saint Louis: The Secretary of War directs that you immediately send down the Mississippi River to report to
+  Major-General **Canby** the following regiments, viz: The Tenth Kansas Volunteer Infantry, the Sixty-eighth U. S. Colored Infantry, the Twelfth Missouri
+  Volunteer Cavalry, and the Seventh Kansas Volunteer Cavalry. If the cavalry regiments cannot be immediately mounted and equipped as cavalry, one or both
+  will be dismounted and equipped as infantry, and sent forward as such. You will see that these regiments are sent with proper amount of provisions,
+  ammunition, and other supplies. You will telegraph daily to the Adjutant-General of the Army the progress made in forwarding these regiments till they
+  all leave your department. H. W. HALLECK, Major-General and Chief of Staff." Word for word with the decode. MS18-R3 missed it because its phrases
+  ("immediately send down the Mississippi River to report to", "Sixty-eighth United States Colored") do not survive the OCR's line-break hyphen
+  ("Sixty-/eighth") and the print's "U. S."; the same page carries Halleck's letter to Grant of 27 May naming the four regiments, and Special Orders No. 146
+  (Saint Louis, 28 May 1864, later in the volume) moves them.
+- **E333 -> the telegram not located; its source is printed: ORN ser. I vol. 21 pp.302-303** (heads 302 before, 303 inside): Seward to Welles, 27 May 1864,
+  transmitting vice-consul-general Thomas Savage's dispatch No. 148, Havana, May 1[?] 1864 (OCR "May 1 J"), on "a scheme to capture steamships plying
+  between New York and New Orleans": "the leading man is a Captain Edwards, a Kentuckian, who formerly belonged to our Navy ... Edwards is a man of from
+  38 to 45 years of age, fair complexion, side whiskers ... The original plan was for several of the gang to take passage at New York upon a given steamer
+  (one of the New York and New Orleans line ...) ... a Frenchman, called Dr. Mouthrey de Lasalle ... Dr. Mouthrey is about 45 years old ... thick set, and
+  very strongly built ... Phelps ... is very tall and slim; wears moustache, imperial, and goatee, very black ... wears on the little finger of the right
+  hand a gold ring, with a diamond ... he goes to New York in the steamer Havana ... Mouthrey has a Portuguese passport". Every fact of E333 is in the
+  dispatch; the ledger spells Phelps "Phillips" and Mouthrey "Monthny" (image). It confirms **France = New York** (the header's "from France" is wrong),
+  **Wells = Right** ("right hand"; the header's "left hand" is wrong), **Aurorian = Kentuck-ian** (Aurora = Kentucky), Leg = 40 and Lampoon plaster = 45.
+  Not in ORN ser. I vol. 3 (the 1865 Havana plots only), OR ser. I vol. 36 pt 3, 37 pt 1, ser. II vol. 7 (a "L. C. TURNER" signature at another item, no
+  Havana spies), or the cached texts (letters-only grep: monthny, mouthrey, portuguesepassport, imperialandgoatee, plottoseizeasteamer: only ORN I/3's 1865
+  items). Google Books: "Portuguese passport" Havana 1864 steamer -> the same ORN vol. 21 dispatch (`gTlAAAAAYAAJ`, `8ASqIMsVOiYC`, 1906-07 printings); "de
+  Lasalle" Havana spies 0; Chronicling America (1864-65): "Monthny" 0, "Lasalle Havana spies" 87 and "plot seize steamer Havana spies" 60 hits, the
+  first six of each read by date and title only, none of 26-30 May 1864 in a New York paper.
+- **E335 -> the telegram not located.** ORN ser. I vol. 26 (western waters, Mar-Dec 1864): no Berrien, no Pittsburgh(h), no "part cannon"; it confirms
+  "Wm. F. Mason" / "W. Mason, Manager, Cairo" (the telegraph manager, endorsing cipher telegrams of Dec 1864; page not noted). Not in the cached texts (letters-only: berrienatpittsburg,
+  retainitatpittsburg, partcannonandpartmusket, reshippedbyhim: 0). Google Books "Berrien" Pittsburgh powder Pennock 1864: 0; "retain it at Pittsburgh":
+  noise. Pennock's 30 Mar request (holder 4505) was not found printed either.
+- **E340 -> not located.** Post-war private message. Letters-only grep: alberger only in OR I/40 pt 3 and 43 pt 2 (the officer, 1864); safekey 0. Google
+  Books "Alberger" Lynchburg 1865 Baker 0; Chronicling America "Alberger Lynchburg" (1865) 51 hits, the six newest-ranked are 3-21 Oct 1865 papers whose
+  OCR has no Alberger/safe/Baker passage near "Lynchburg" (not read further).
+- Not searched: Dix papers (Columbia), Turner-Baker papers (NARA M797), NY press of 26-30 May 1864 page by page; Navy Bureau of Ordnance letter books
+  (NARA RG 74), Pennock papers; Baker's 1865-66 Lynchburg case files (NARA RG 94/110), Lynchburg press of Oct 1865; HathiTrust; JSTOR.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E333 (not located; source ORN I/21 pp.302-303):** decoder H 26 includes **"black" read as Black = City Point: wrong** (plain "black moustache"; ORN
+  "very black"): -1. Add **Sutton = Information H** (transcription "sulton") and **Aurorian = Aurora (Kentucky) + -ian H** (ORN "a Kentuckian"): **H 27**.
+  **pause = period M** (not in key.md; the same use in 9706 to Horner). Imogene = 3 PM (H; the header's ledger hour is 2.40 PM). "knavey" = navy, "Ditto" =
+  ditto (New York), plain. Reading: "[3 PM] May [26] for [Maj Gen Jno A. Dix]. I am directed by the [Secretary of War] to [inform] you that there is a plot
+  to seize a [steam]er going from [New York] to [New Orleans]. That several [men] have [left] Havana and are now in or about [New York], [one] named
+  Phillips [left] for ditto in the [steam]er Havana [.] Phillips is tall and thin, stout built, has black moustache, imperial and goatee, wears diamond ring
+  on little finger [right] hand. A [Captain] Edwards is another [one], aged [40], side whiskers, a [Kentuck]ian formerly in our navy. A Dr Monthny de Lasalle
+  is another, is a Frenchman [45] years old, stout, and has a Portuguese passport. You will learn more by mail of [today]. L C Turner." **H 27, M 1**, no gap.
+- **E334 (OR I/34 pt 4 p.64):** decoder H 47 includes **"Colored" read as Color = Jasper + -ed: wrong** (plain; print "Colored"): H 46. **Legend =
+  Maj Gen S. A. Hurlbut (key, H) but the print reads "Major-General Canby": a data conflict (rule 4), graded M**, the second such case in mssEC 18 after
+  E323 (FV-MS18b: May 1865, print Canby), and the context agrees (same-day Halleck to Canby, p.62: "He has to-day been directed to send down the river to
+  you ..."; Special Orders No. 146: "Major-General Canby"): **H 45 + M 1**, rest C by print. Yoke Jacob = signature, General-in-Chief (key) where the print
+  signs "H. W. HALLECK, Major-General and Chief of Staff" (the signer C by print; the title word as keyed). MS18-R3's header "to Maj. Gen. Hurlbut" and
+  "signed 'Infant' = Secretary of War" are wrong (Infant is the directing Secretary; the signer is Halleck).
+- **E335 (not located; answers holder 4505):** decoder H 17 includes **"Ordnance" read as Ordnance = After the: wrong** (plain signature word "Chief of
+  Bureau Ordnance"): **H 16**. "Pen nock" = Pennock, plain (image, 4505). Reading: "[Washington] Mar [31] [11.30 AM] For [Captain] Pennock, [Cairo]. Your
+  [telegram] received. [1000] barrels powder, part cannon and part musket, have been ordered to [Cairo] and are now being forwarded. The Bureau decides to
+  let it go, and as it has been consigned first to [Captain] Berrien at Pittsburgh to be reshipped by him, be pleased to [communicate] with him, and if you
+  apprehend any danger desire him to retain it at Pittsburgh subject to your order. [Signature] Henry A Wise, Chief of Bureau Ordnance. T. T. Eckert"
+  (sent 12.10 PM, Tinker). **H 16**, no gap.
+- **E340 (not located):** decoder H 8 includes **"Frances" read as France (New York) + 's: wrong** -- it is the time word Francis = 12 (H; header "12 m";
+  10055 the same): H stays 8 with the right value. Reading: "[12 M] for Mrs M H Alberger, [115] Church St, [Lynchburg]. Get from Hall the safe key and
+  bring it with you. Hall can leave the safe open by taking the money papers home with him every night. Sig M H Alberger, [Captain] and A[ssistant]
+  [Quartermaster]." **H 8**, no gap; "Capt & A.Q.M." C by holder 8004/8825.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E333 | **N3** (weak, bordering N2: every fact of the telegram is printed in Savage's Havana dispatch, ORN ser. I vol. 21 pp.302-303, though not the telegram itself) | period | **D3** (H 27 + M 1 of 28 code groups; external non-statistical: ORN I/21 pp.302-303 for New York, right hand, Kentuckian, the ages) | the telegram (Turner for the Secretary of War to Dix, 26 May 1864) not located after the search in s.2 |
+| E334 | **N1** (text known) | period | D3 (H 45 + M 1 (Legend/Canby conflict), rest C by print) | printed OR ser. I vol. 34 pt 4 p.64 |
+| E335 | **N3** | period | **D3** (H 16 of 16; external non-statistical: Pennock's telegram of 30 Mar 1864, holder 4505, which E335 answers; ORN I/26 for W. F. Mason, Cairo) | not located after the search in s.2 |
+| E340 | **N3** | period | **D3** (H 8 of 8, the rest plain; external non-statistical: holder 10055, 8004, 8825 for Capt. M. H. Alberger, A.Q.M., at Lynchburg, and Francis = 12 m) | not located after the search in s.2 |
+
+- Not N4 for E333, E335, E340: the Dix, Turner-Baker, Navy Ordnance and Baker files and the New York and Lynchburg press were not searched; HathiTrust and
+  JSTOR not reached.
+- **Safe sentences.** E333: "Read at grade H with War Department Cipher No. 1: on 26 May 1864 L. C. Turner, for the Secretary of War, warned General Dix at
+  New York of a plot to seize a steamer on the New York-New Orleans run and described three suspects from Havana -- Phillips, a Captain Edwards (a
+  Kentuckian formerly in the U.S. Navy) and a Dr Monthny de Lasalle (a Frenchman with a Portuguese passport); the facts are printed in the Havana consul's
+  dispatch in the Official Records of the Navies, ser. I vol. 21 pp.302-303, but this telegram was not located there or in the Huntington's full-text
+  search (searched 9 Oct 2026)." Depth sentence (D3): "On 26 May 1864 the War Department warned General Dix at New York of a rebel plot to seize a steamer
+  on the New York-New Orleans line and described three suspects who had come from Havana." E334: "Printed in the Official Records, ser. I vol. 34 pt 4
+  p.64; our reading agrees with the print except that the code word printed as Canby is Hurlbut's in the key." E335: "Read at grade H with War
+  Department Cipher No. 1: on 31 March 1864 Commander Henry A. Wise, Chief of the Navy's Bureau of Ordnance, told Fleet Captain Pennock at Cairo that
+  1,000 barrels of powder were on their way, consigned first to Captain Berrien at Pittsburgh, who could hold them there if Pennock feared danger; it
+  answers Pennock's telegram of 30 March in the same collection; not located in print (searched 9 Oct 2026)." Depth sentence (D3): "On 31 March 1864 the
+  Navy's Bureau of Ordnance told Fleet Captain Pennock at Cairo that 1,000 barrels of powder were being forwarded through Pittsburgh, where they could be
+  held if he feared danger." E340: "Read at grade H with War Department Cipher No. 1: on 1 October 1865 Capt. M. H. Alberger, assistant quartermaster,
+  telegraphed from Washington to Mrs M. H. Alberger at 115 Church Street, Lynchburg, to get the safe key from Hall and bring it with her; not located in
+  print (searched 9 Oct 2026)." Depth sentence (D3): "On 1 October 1865 Capt. M. H. Alberger telegraphed to Mrs M. H. Alberger at Lynchburg to bring him the
+  safe key from Hall, who could leave the safe open by taking the money papers home each night."
+- **Unsafe:** any novelty for E334; "first", "new", "unpublished" for E333, E335, E340; "spies" (E333: the code word is Men), "steamer going from France"
+  and "left hand" (E333); "report to Hurlbut" (E334); "Penrock" (E335); that the safe key was part of Baker's sting (E340: inference only).
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+- **ciphertext.txt E333:** "sulton" -> "Sutton" (image; = Information); `plain-at: black#1`; render "Aurorian" as Aurora + ian (Kentuckian); note: pause =
+  period (M; 9706); glosses (brace)/(miles)/(smoking)/(animal)/(propulsion)/(distance)/(prisoners) settle no token (s.1); header: "spies" -> "men",
+  "from France" -> "from New York", "left hand" -> "right hand", ages 40 and 45, "a Kentuckian formerly in our navy"; source printed ORN I/21 pp.302-303
+  (Savage, Havana, No. 148: Phelps, Mouthrey de Lasalle).
+- **ciphertext.txt E334:** `plain-at: colored#1`; note: legend = Legend: key Hurlbut vs print Canby (M, conflict logged, second case after E323); header:
+  "report to Maj. Gen. Canby [key: Hurlbut]", signed Halleck (Yoke Jacob), printed OR I/34 pt 4 p.64; sibling 9746/1 = OR I/34 pt 4 p.62.
+- **ciphertext.txt E335:** "Pen rock" -> "Pen nock" (image; Pennock); `plain-at: ordnance#1`; header: to Fleet Capt. A. M. Pennock via W. F. Mason
+  (Cairo manager), sent 12.10 PM by Tinker (margin); note: answers holder 4505 (Pennock to Wise, 30 Mar 1864); numerals 2-7 settle no token.
+- **ciphertext.txt E340:** "Frances" -> "Francis" (image; time word 12 M; the decoder must not split it as France + s); header: signer Capt. M. H. (Morris H.)
+  Alberger, A.Q.M.; context holder 10055, 8004, 8825.
+- **KEY lane (not key.md here):** Legend read as Canby against the print twice (E323 May 1865, E334 May 1864) and never yet as Hurlbut in a print-checked
+  mssEC 18 entry: propose a HYPOTHESES.md row "Legend = Canby in mssEC 18 (key p.17 l.5 R reads Hurlbut)" for a context test; Sutton = Information read
+  at E333; pause = period (two Horner entries).
+- **NOTES (MS18-R3):** E334 "not located" is superseded (OR I/34 pt 4 p.64); the E333 and E334 print gaps are closed by s.2; the E335 "Google Books Berrien"
+  step is done (0).
+Requests: hdl.huntington.org 26 (14 CONTENTdm queries, 8 item records, 4 IIIF pages, all 200); archive.org 12 (11 djvu downloads: 10 x 200, ORN
+`officialrecordso0003unse_x7o4` 500 once, not retried; 1 advancedsearch, plus 1 for vol. 21); Google Books API 9 (all 200); loc.gov 5 (all 200).
