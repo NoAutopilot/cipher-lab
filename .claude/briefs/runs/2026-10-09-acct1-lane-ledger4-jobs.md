@@ -52,3 +52,25 @@ per entry (rows over 95 words: 2 units). NOTES "## FM-R4a (9 Oct 2026, account 1
 decode --check.
 - FM-R4a (10): 5770/1 5816/0 5781/1 5789/1 5829/0 5797/0 5752/1 5594/1 5774/0 5781/0 -- IDs E250 onward (No. 1), N2-PA onward (No. 2).
 - FM-R4b (10): 5787/1 5629/1 5741/0 5812/0 5610/1 5822/1 5609/2 5790/0 5742/1 5775/1 -- IDs E260 onward (No. 1), N2-QA onward (No. 2).
+
+---
+
+# Wave 2 (written 9 Oct 2026 04:2x UTC; seven_day allowed_warning on every session, continuing per lane-common-blast)
+By get_session: FIX-FM5 1.66, FV-FM6a 6.71 (E219 E227 N3; E217 E226 N1), FV-FM6b 6.28 (E228 weak, E229 E240 N3; E241 N1 Intelligencer), FV-FM6c 5.11
+(E242 E243 N3; E245 N1), FM-R4a 3.28 (E250-E258; 5594/1 = E62; E255 in print; clear copies E250 10490, E254 9913, E257 4823), FM-R4b 4.58 (E260-E269).
+Wave 1 total 27.62. The all-pointer CONTENTdm search found a clear copy for 6 of 23 entries this wave: keep it first.
+
+## FIX-FM6 (Sonnet 5.5; cap $2, box 50 min, no network): FV-FM6a/b/c reading corrections
+Exactly the FIX-FM5 method above. Sources: NOTES "## FV-FM6a" reading corrections (E217 Washington, E219 webster/Chief, E226 White House/wharf, E227
+William/[Steam]er); AUDIT.md "## AUDIT (FV-FM6b)" s.5 (E228 Wise, E229 Herald, E240, E241 person); "## AUDIT (FV-FM6c)" s.5 (E243 4.15, E245 Ino to be, E242).
+Propagate to status.json and second-opinions/PROMPT-chatgpt-e<NNN>.md. NOTES "## FIX-FM6 (9 Oct 2026, account 1, for LANE LEDGER)"; depth_check;
+file_shrink_guard.
+
+## FV-FM7a, FV-FM7b, FV-FM7c (Opus 5.5, first verifiers; cap $7, $7, $4.5; box 90 min each)
+Exactly "## FV-FM6a, FV-FM6b, FV-FM6c" above (the all-pointer CONTENTdm clear-copy search first). The reader's own "Remaining gaps" for your entries are your
+first print leads. FM-R4a image-read only 1 of 9 pages: FV-FM7a eye-checks its entries' lines (tools/iiif_lines.py --image, crops only) before grading.
+AUDIT.md headings "## AUDIT (FV-FM7a)" etc.; WORK-QUEUE `AUD2-LEDGER-15` (FV-FM7a), `-16` (FV-FM7b), `-17` (FV-FM7c) on N3+ D2+.
+- FV-FM7a: E251, E252, E253, E256, E258 (NOTES "## FM-R4a").
+- FV-FM7b: E260, E261, E262, E263, E266 (NOTES "## FM-R4b").
+- FV-FM7c: E267, E268, E269 (NOTES "## FM-R4b").
+Handed on, not briefed: E250 E254 E257 (reader found holder clear copies: short N1 confirms, ~0.5 each), E255 (in print), E264 E265 (printed context).
