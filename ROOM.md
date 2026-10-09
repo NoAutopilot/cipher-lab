@@ -12464,3 +12464,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:54 | FM-R5a worker (account 1, Sonnet) | hdl take (<=40 requests: 8 IIIF page images + CISOSEARCHALL queries, >=3.3 s) for LANE LEDGER (account 1)
 2026-10-09 10:55 | FM-R5b worker (account 1, Sonnet) | LANE LEDGER hdl take (<=8 requests: dmGetItemInfo 10267 + 5 CISOSEARCHALL; 3.3 s apart); for LANE LEDGER (account 1)
 2026-10-09 10:55 | FM-R5c worker (account 1, Sonnet) | hdl wait: queued behind CONF-FM and FM-R5b takes (10:50); I take only after both release; <=18 requests; for LANE LEDGER (account 1)
+2026-10-09 10:56 | FM-R5b worker (account 1, Sonnet) | LANE LEDGER hdl release (second block 8 requests: dmGetItemInfo 10267 10268 10408 + 5 CISOSEARCHALL; 3.3 s apart); total 34 for FM-R5b; for LANE LEDGER (account 1)
