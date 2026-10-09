@@ -175,3 +175,20 @@ release"; read the letter's date, place and sender. Check 4 by that date: Droyse
 Kraut/commission affair in print (IA full text, Google Books country=US + key, OpenAlex; positive control per edition). Check 5 / G3 where
 MANT-0109 got Google Books 503. Rule the 55.44 / 7.60 name groups: H/C only with a key-table row or a gloss; else M. Write "## AUDIT
 (V-MANT0109)" in AUDIT.md, status.json row, NOTES pointer; if N3+ D2+, the SO row and WORK-QUEUE `AUD2-FAMILY-A2g-2` for account 3. ~$4.5.
+
+## Wave 4 (08:2x UTC 9 Oct) -- last worker of this incarnation (lane spend ~47 + orchestrator)
+Lesson from V-MANT0109 (08:16): MANT-0109 read a letter Acta Borussica Behördenorganisation I Nr. 64 prints in clear. Check 4 (the edition by
+date) runs BEFORE any transcription, not after.
+
+### VB-1537 (Opus, cap 5, box 80 min; host service.archief.nl only if a scan is not on disk): vanbeuningen-dewitt-1657, inv.1537 1656 cipher scans
+NOTES "VB-SCREEN" and siblings_screen.tsv: 0029 (5 Apr 1656, ~20 groups, glossed), 0038, 0048, 0086 (29 Dec 1656, ~120 groups, glossed),
+0088 (glossed), 0079 (1656, ~30 groups, name codes 172/185/193/149/173/225/213, NO gloss). Order, with a stop after each step:
+(1) Check 4 first, for all six: Fruin/Japikse, Brieven aan Johan de Witt I (1919) by date via the Huygens retroboeken full-text search and its
+toc1 chronological index (CLAUDE.md host table; >= 2 s apart; positive control = the 19/29 Sept 1657 letter on p.405); also Fruin/Kernkamp
+1906 IA OCR. Record per scan: printed y/n, page, and whether the print gives the cipher passage deciphered, as clear, or as "onopgelost
+cijfer". (2) Key check on the smallest glossed leaf not in print (prefer 0029): line crops via tools/iiif_lines.py --image (pasted,
+committed), two blind Sonnet passes of codes and of gloss separately, then score key.tsv's values against the blind gloss per pass
+(PREREG-VB-1537.md in its own commit before scoring: agreement statistic, shuffled-key control that CAN differ, gate). This tells whether the
+1656 letters share the 1657 key. (3) Only if (2) PASSES and 0079 is not in print: 0079 under key.tsv with tools/decode_key.py, gate per
+PREREG, grades, check 5. Stop at 80% of cap; hand on what is left. Report what was found and where it was not found; do not classify novelty.
+~$4.5.
