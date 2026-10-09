@@ -1,0 +1,49 @@
+agreed pooled 7 leaves (MANT-CUC3) letter-class strips 31, tokens 231; S real 156 (0.675 per token)
+  control all-codes permutation x1000: mean 20.9 p95 31 p99 38; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 29.1 p95 40 p99 45; >= real 0; gate (real > p99) PASS
+  0282 s01 2/6 clear=laforce 110=la ?=* 10=* 20=for* 15=c ?=e*
+  0282 s02 0/6 clear= 17=* 26=* 9=* 14=* 15=* 10=*
+  0282 s03ab 5/10 clear=negociation 21=n 60=* ?=eg* 33=o 15=c ?=ia* 28=t ?=* 18=io* 21=n
+  0282 s06 0/4 clear= 17=* 25=* ?=* 4=*
+  0282 s07 8/9 clear=puissances 23=p 67=u 46=i ?=ss* 50=a 21=n 30=c 2=e 29=s
+  0282 s09 1/4 clear=son 25=* 26=so* 21=n 8=*
+  0282 s10 1/4 clear=avnh 66=a 60=* ?=* 32=vnh*
+  0282 s11 6/7 clear=mrbritton 40=mrb* 26=r 9=i 28=t 59=t 33=o 21=n
+  0282 s13 3/4 clear=abime 25=a 20=b 9=i ?=me*
+  0284 s01 5/9 clear=jaunfier 29=j* 25=a ?=* 60=* 9=un* 1=f 46=i 10=e 60=r
+  0284 s02 4/6 clear=devoir 120=d 10=e 5=v ?=o* 9=i 100=r*
+  0323 s02a 7/9 clear=alliance 25=a 12=l 44=l ?=i* 66=a 21=n 1=* 15=c 10=e
+  0323 s02b 7/9 clear=deffensive 100=d 2=e 1=f ?=fe* 21=n 29=s ?=i* 5=v 35=e
+  0323 s03 0/1 clear=la 118=la*
+  0323 s04 4/9 clear=contienne 15=c 16=o 21=n 30=* 42=* 6=* 60=ti* 10=e 103=nne*
+  0323 s05 5/6 clear=traitte 28=t 27=r 66=a 9=i 59=t 10=te*
+  0323 s06 7/9 clear=lalliance ?=l* 66=a 12=l 42=l 9=i 25=a ?=n* 15=c 2=e
+  0323 s07 8/9 clear=deffensive 100=d 10=e 1=f 35=fe* 21=n 29=s 9=i 5=v 10=e
+  0323 s09 3/6 clear=lareve 110=la 23=* 27=r 12=e* 5=v 15=e*
+  0323 s12 6/6 clear=stetin 29=s 28=t 10=e 59=t 9=i 14=n
+  0323 s14 15/18 clear=lalliancedeffensive 12=l 66=a 49=l* 12=l 9=i 25=a 21=n 30=c 10=e 109=d* 35=e 1=f 10=fe* 14=n 29=s 39=i 5=v 35=e
+  0348 s02 10/10 clear=secretaire 58=s 2=e 15=c 26=r 2=e 28=t 25=a 9=i 60=r 10=e
+  0348 s03 8/9 clear=ministre 13=m 9=i 14=n 39=i ?=* 29=s 59=t 60=r 2=e
+  0348 s04 8/8 clear=ministre 43=m 9=i 14=n 9=i 29=s 28=t 26=r 10=e
+  0348 s05 9/10 clear=secretaire ?=s* 2=e 15=c 60=r 10=e 59=t 66=a 9=i 60=r 35=e
+  0348 s06 1/1 clear=k 11=k
+  0348 s07 0/1 clear=j 39=j*
+  0398 s01 2/4 clear=de 120=d 10=e 12=* 55=*
+  0398 s02 13/20 clear=lajalousiedespolonois 110=la 9=j* 25=a 42=l 16=o 6=u 29=s ?=i* 35=e 100=d 10=e 24=s* 17=p 33=o ?=l* 16=o 19=* ?=* ?=noi* 51=s
+  0410 s01 8/9 clear=konigmarck 11=k 16=o 14=n 9=i 7=g 13=m 25=a ?=rc* 11=k
+  0410 s02 0/8 clear= 12=* 2=* 19=* 120=* 2=* 8=* ?=* 19=*
+  leaf 0282: 26/54
+  leaf 0284: 9/15
+  leaf 0323: 62/82
+  leaf 0348: 36/39
+  leaf 0398: 15/24
+  leaf 0410: 8/17
+  name 0282 s04 ?: key "(absent)" clear "-" exact-after-article differ
+  name 0282 s05 ?: key "(absent)" clear "Roy de" exact-after-article differ
+  name 0282 s08 ?: key "(absent)" clear "Roy de" exact-after-article differ
+  name 0282 s12 ?: key "(absent)" clear "Roy de" exact-after-article differ
+  name 0323 s01 257: key "leroideprusse" clear "la" exact-after-article differ
+  name 0323 s08 257: key "leroideprusse" clear "-" exact-after-article differ
+  name 0323 s11 173: key "(absent)" clear "Penne" exact-after-article differ
+  name 0323 s13 144: key "(absent)" clear "Cron" exact-after-article differ
+  name 0348 s08 160: key "manteuffel" clear "vous" exact-after-article differ

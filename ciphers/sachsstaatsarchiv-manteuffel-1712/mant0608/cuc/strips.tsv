@@ -40,3 +40,6 @@ leaf	strip	x	y	w	h	clear_under_by_worker_eye	note
 0410	s02	2905	2868	365	44	l'Electeur de Han.	MANT-CUC2: run over underlined l'Electeur de Han.
 0284	s01	1395	1060	475	54	underlined word after "me" (inventory MANT-INV08 read laisser; not settled by the worker)	MANT-CUC2: run over underlined word after me (Flemming-hand draft)
 0284	s02	1550	1186	315	36	Devoir	MANT-CUC2: run over underlined Devoir
+0398	s01	3225	2850	235	45	d'E.	MANT-CUC3: run 120.10.12.55 over underlined d'E. (f. stamp 318, Flemming to Manteuffel, Greifswald 15 Oct 1712)
+0398	s02	3010	3172	690	40	la jalousie des Polonois	MANT-CUC3: run over underlined 'la jalousie des Polonois' (clear box 3010,3222,600,60)
+0499	s01	1362	2775	555	50	la Treve	MANT-CUC3: run in line after 'de', clear 'la Treve' written ABOVE it (gloss-over-code, not under); 2nd code an ink blot (clear box 1390,2728,270,45)

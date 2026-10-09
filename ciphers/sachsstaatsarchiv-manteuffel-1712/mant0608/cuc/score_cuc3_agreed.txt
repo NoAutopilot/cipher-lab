@@ -1,0 +1,6 @@
+agreed 2 leaves 0398+0499 (MANT-CUC3) letter-class strips 2, tokens 24; S real 15 (0.625 per token)
+  control all-codes permutation x1000: mean 2.8 p95 5 p99 6; >= real 0; gate (real > p99) PASS
+  control letter-codes permutation x1000: mean 3.6 p95 6 p99 7; >= real 0; gate (real > p99) PASS
+  0398 s01 2/4 clear=de 120=d 10=e 12=* 55=*
+  0398 s02 13/20 clear=lajalousiedespolonois 110=la 9=j* 25=a 42=l 16=o 6=u 29=s ?=i* 35=e 100=d 10=e 24=s* 17=p 33=o ?=l* 16=o 19=* ?=* ?=noi* 51=s
+  leaf 0398: 15/24
