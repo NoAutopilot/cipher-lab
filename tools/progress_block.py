@@ -25,10 +25,22 @@ when the folder has one row; `-` means "matches nothing" (a leaf with no counted
 before depth D2 was required, and a counted target with no row. Must NOT block: a row whose folder has no counted result
 and whose C is '.' (most rows); an uncounted result in a folder that has rows (D1 fragments, N0-N2 readings).
 
-Usage: python3 tools/progress_block.py [--tsv PROGRESS.tsv] [--check] [--no-notes] [--check-board [--status status.json]]
-(--check exits 1 on a malformed row; --no-notes drops the long notes for the chat update; --check-board exits 1 on a mismatch)
+ON column (PROGRESS-ONIT, 9 Oct 2026, owner: "show which lane is working each row"): `--on-it` adds a short column after T naming who
+is on the row now, derived and never typed: a WORK-QUEUE.tsv row in status claimed/queued/active whose job id, brief or note names the
+row's folder (lane = brief `lane-X.md` -> X, else the job id without its trailing number), or a ROOM.md line from the last 12 h that
+names the folder (lane = "LANE X" in the line, else the role's first word, number suffix dropped) and is not followed by a `done` line
+from the same role. '-' when nobody. Catches: a row nobody is on that the block showed as live. Must NOT count: a `done` role, the
+nightly key_crossmatch and orchestrator bookkeeping lines (IGNORE_ROLES), or a line older than the window.
+
+`--unassigned` lists the rows that are open (R or C not x), have nobody on them and a runnable next step in NEXT-STEPS.tsv
+(tools/next_steps.py's data: blocker `runnable`; needs-person / needs-image / needs-key / needs-edition / needs-triage rows are
+skipped): one line each, row, folder, cost band, next step. The parent hands these to the account with free lane slots.
+
+Usage: python3 tools/progress_block.py [--tsv PROGRESS.tsv] [--check] [--no-notes] [--on-it] [--unassigned] [--check-board [--status status.json]]
+(--check exits 1 on a malformed row; --no-notes drops the long notes for the chat update; --check-board exits 1 on a mismatch;
+--on-it/--unassigned read WORK-QUEUE.tsv, ROOM.md and NEXT-STEPS.tsv, paths overridable with --wq/--room/--next-steps, clock with --now)
 """
-import argparse, csv, json, re, sys
+import argparse, calendar, csv, json, re, sys, time
 
 STAGES = ["F", "K", "R", "1", "2", "C", "S"]
 MARKS = {"x", "~", "."}
@@ -96,10 +108,93 @@ def check_board(rows, status):
     return bad
 
 
-def render(rows, notes=True):
+IGNORE_ROLES = re.compile(r"key_crossmatch|orchestrator|nightly|\bretro", re.I)
+LIVE_WQ = ("claimed", "queued", "active")
+WINDOW_H = 12
+
+
+def _lane(role, text=""):
+    m = re.search(r"\bLANE ([A-Za-z0-9]+)", role) or re.search(r"\bLANE ([A-Za-z0-9]+)", text[:80])
+    w = m.group(1) if m else re.split(r"[\s(:,]", role.strip())[0]
+    return (re.sub(r"-\d+[A-Za-z]*$", "", re.sub(r"^LANE-", "", w, flags=re.I)).upper() or "?")[:9]
+
+
+def _wq_lane(r):
+    m = re.search(r"lane-([a-z0-9]+)\.md", r.get("brief", ""))
+    return m.group(1).upper() if m else re.sub(r"-\d+[A-Za-z]*$", "", r.get("job_id", "")).upper()[:9]
+
+
+def load_wq(path):
+    try:
+        return load(path)
+    except OSError:
+        return []
+
+
+def load_room(path):
+    out = []
+    try:
+        fh = open(path, encoding="utf-8")
+    except OSError:
+        return out
+    with fh:
+        for l in fh:
+            m = re.match(r"(\d{4}-\d\d-\d\d \d\d:\d\d) \| ([^|]*) \| (.*)", l)
+            if m:
+                out.append((calendar.timegm(time.strptime(m.group(1), "%Y-%m-%d %H:%M")), m.group(2).strip(), m.group(3)))
+    return out
+
+
+def on_it(rows, wq, room, now, hours=WINDOW_H):
+    """{row name: 'LANE,LANE' or '-'} derived from WORK-QUEUE rows and ROOM lines naming the row's folder."""
+    res = {}
+    recent = [x for x in room if now - hours * 3600 <= x[0] <= now + 3600]
+    for r in rows:
+        f = r["folder"]
+        pat = re.compile(r"(?<![\w.-])" + re.escape(f) + r"(?![\w-])")
+        lanes = []
+        for w in wq:
+            if (w.get("status") or "").split(" ")[0] in LIVE_WQ and pat.search(" ".join((w.get("job_id", ""), w.get("brief", ""), w.get("note", "")))):
+                lanes.append(_wq_lane(w))
+        last = {}
+        for ts, role, text in recent:
+            if IGNORE_ROLES.search(role):
+                continue
+            if pat.search(text) or pat.search(role):
+                last[role] = (ts, text, True)
+        for ts, role, text in recent:
+            if role in last and ts >= last[role][0] and re.match(r"\s*done\b", text, re.I):
+                del last[role]
+        lanes += [_lane(role, t) for role, (ts, t, _) in last.items()]
+        u = list(dict.fromkeys(lanes))
+        res[r["name"]] = "-" if not u else ",".join(u[:2]) + (f"+{len(u) - 2}" if len(u) > 2 else "")
+    return res
+
+
+COST = re.compile(r"~\s*\$\s*\d+(?:\.\d+)?")
+
+
+def unassigned(rows, steps, onit):
+    """Lines for open rows (R or C not x) with nobody on them and a runnable next step."""
+    by = {s["folder"]: s for s in steps}
+    out = []
+    for r in rows:
+        if (r.get("R") or "").strip() == "x" and (r.get("C") or "").strip() == "x":
+            continue
+        s = by.get(r["folder"])
+        if onit.get(r["name"], "-") != "-" or not s or (s.get("blocker") or "").strip() != "runnable":
+            continue
+        step = re.sub(r"\s+", " ", s.get("next_step", "")).strip()
+        cost = (COST.search(step) or [""])[0] or s.get("cost_band", "").strip() or "?"
+        out.append(f"{r['name']} | {r['folder']} | {cost} | {step[:170]}")
+    return out
+
+
+def render(rows, notes=True, onit=None):
     out, problems = [], []
     w = max([len(r["name"]) for r in rows] + [10]) + 1
-    out.append(" " * (1 + w + 1 + 12 + 1 + 10 + 7) + " ".join(STAGES) + " T")
+    ow = max([len(v) for v in (onit or {}).values()] + [2])
+    out.append(" " * (1 + w + 1 + 12 + 1 + 10 + 7) + " ".join(STAGES) + " T" + (f"  {'ON':<{ow}}" if onit else ""))
     for r in rows:
         star = "*" if r.get("sent_star", "").strip() == "*" else " "
         try:
@@ -128,12 +223,15 @@ def render(rows, notes=True):
         if total <= 0:
             if not notes:
                 note = re.split(r"[;,(]", note)[0].strip()[:28]
-            out.append(f"{star}{r['name']:<{w}} {note}")
+            tail = f"  [on: {onit[r['name']]}]" if onit and onit.get(r["name"], "-") != "-" else ""
+            out.append(f"{star}{r['name']:<{w}} {note}{tail}")
             continue
         n = min(10, firm * 10 // total)
         bar = "[" + "#" * n + "." * (10 - n) + "]"
         frac = f"{firm}/{total}"
         line = f"{star}{r['name']:<{w}} {bar} {frac:>10} read  " + " ".join(marks)
+        if onit:
+            line += f"  {onit.get(r['name'], '-'):<{ow}}"
         if notes and note:
             line += "   (" + note + ")"
         out.append(line)
@@ -141,7 +239,8 @@ def render(rows, notes=True):
     out.append("F Found  K Key  R Read  1 Audit 1  2 Audit 2  C Counted  S Sent  T Text")
     out.append("K key: o ours, p period, b published (P period+ours, B published+ours, M published+period, ? unrecorded); "
                "T text: k known (in print or on the leaf), n not found in print, ? unrecorded")
-    out.append("x done  ~ partial  . not yet   # = 10% of tokens read firmly   * = finding already emailed/posted")
+    out.append("x done  ~ partial  . not yet   # = 10% of tokens read firmly   * = finding already emailed/posted"
+               + ("   ON = lane on the row now (WORK-QUEUE + ROOM, last 12 h), - = nobody" if onit else ""))
     return "\n".join(out), problems
 
 
@@ -152,10 +251,24 @@ def main():
     ap.add_argument("--no-notes", action="store_true", help="omit the notes (the chat update's default)")
     ap.add_argument("--check-board", action="store_true", help="compare each row's C with status.json's counted set; exit 1 on a mismatch")
     ap.add_argument("--status", default="status.json")
+    ap.add_argument("--on-it", action="store_true", help="add the ON column (who is on each row now)")
+    ap.add_argument("--unassigned", action="store_true", help="list open rows with nobody on them and a runnable next step")
+    ap.add_argument("--wq", default="WORK-QUEUE.tsv")
+    ap.add_argument("--room", default="ROOM.md")
+    ap.add_argument("--next-steps", default="NEXT-STEPS.tsv")
+    ap.add_argument("--now", help="UTC 'YYYY-MM-DD HH:MM' (default: the clock)")
     a = ap.parse_args()
     rows = load(a.tsv)
-    text, problems = render(rows, notes=not a.no_notes)
+    onit = None
+    if a.on_it or a.unassigned:
+        now = calendar.timegm(time.strptime(a.now, "%Y-%m-%d %H:%M")) if a.now else int(time.time())
+        onit = on_it(rows, load_wq(a.wq), load_room(a.room), now)
+    text, problems = render(rows, notes=not a.no_notes, onit=onit if a.on_it else None)
     print(text)
+    if a.unassigned:
+        lines = unassigned(rows, load(a.next_steps), onit)
+        print(f"\nUNASSIGNED ({len(lines)}): row | folder | cost | next step")
+        print("\n".join(lines))
     for p in problems:
         print("PROBLEM:", p, file=sys.stderr)
     bad = []

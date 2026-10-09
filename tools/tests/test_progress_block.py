@@ -47,4 +47,34 @@ assert any(m.startswith("b: C is 'x'") for m in bad), bad              # D1 type
 assert any("set `board`" in m for m in bad), bad                       # multi-row folder without a regex
 assert pb.check_board([row("one", "one", "x")], st)[0].startswith("counted but no row"), "uncovered counted result"
 assert not pb.result_counted(res("x", "t", depth="")) and not pb.result_counted(res("x", "t", scope="catalogue-contribution"))
+# --on-it / --unassigned (PROGRESS-ONIT, 9 Oct 2026)
+NOW = 1760000000
+def rl(mins_ago, role, text): return (NOW - mins_ago * 60, role, text)
+orow = lambda n, f, **k: dict(name=n, folder=f, firm="1", total="10", sent_star="", note="", **{**H, "R": ".", "C": ".", **k})
+orows = [orow("a", "alpha-1"), orow("b", "beta-2"), orow("c", "gamma-3"), orow("d", "delta-4"), orow("e", "eps-5", R="x", C="x")]
+wq = [dict(job_id="FAM-9", brief=".claude/briefs/lane-family.md", status="claimed sess 2026", note="target alpha-1"),
+      dict(job_id="OLD-1", brief="x.md", status="done 2026-10-09", note="alpha-1 beta-2"),
+      dict(job_id="SIG-4", brief="x.md", status="queued", note="beta-2xx")]          # beta-2xx is a different folder
+room = [rl(30, "LEDGER worker (account 2)", "claim: ciphers/beta-2 re-audit"),
+        rl(500, "AUD (account 1)", "claim: gamma-3 audit"),
+        rl(20, "WEB (account 1)", "claim: delta-4 check"), rl(5, "WEB (account 1)", "done: delta-4 checked"),
+        rl(10, "key_crossmatch nightly (tools/key_crossmatch.py)", "alpha-1 scanned"),
+        rl(900, "OLDLANE worker", "claim: gamma-3"),
+        rl(40, "x (account 3)", "LANE MQS-2 handoff: eps-5 held")]
+o = pb.on_it(orows, wq, room, NOW)
+assert o["e"] == "MQS", o
+assert o["a"] == "FAMILY" and o["b"] == "LEDGER" and o["c"] == "AUD" and o["d"] == "-", o   # done role cleared; ignored role; old line outside 12 h
+assert pb._lane("LANE-VERIFY-4 (account 3)") == "VERIFY"
+assert pb._lane("x (account 3)", "LANE MQS-2 handoff") == "MQS"
+to, _ = pb.render(orows, onit=o)
+assert to.splitlines()[0].rstrip().endswith("ON") and to.splitlines()[1].rstrip().endswith("FAMILY"), to
+assert "ON = lane" in to and "ON" not in pb.render(orows)[0].splitlines()[0]
+steps = [dict(folder="alpha-1", blocker="runnable", cost_band="S", next_step="do it ~$3 now"),
+         dict(folder="beta-2", blocker="runnable", cost_band="M", next_step="busy row"),
+         dict(folder="gamma-3", blocker="needs-person", cost_band="S", next_step="ask owner"),
+         dict(folder="delta-4", blocker="runnable", cost_band="M", next_step="read the leaf"),
+         dict(folder="eps-5", blocker="runnable", cost_band="S", next_step="finished row")]
+u = pb.unassigned(orows, steps, o)
+assert u == ["d | delta-4 | M | read the leaf"], u     # on-row, person-blocked and fully-counted rows are skipped
+assert pb.unassigned(orows, steps, {**o, "a": "-"})[0].startswith("a | alpha-1 | ~$3 |")
 print("passed: 0 failure(s)")

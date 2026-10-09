@@ -15,6 +15,10 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
 
 ## Duties at every check-in
 
+0a. **Progress block and unassigned rows (owner, 9 Oct 2026).** Render the block with `python3 tools/progress_block.py --no-notes --on-it`
+   (ON = lane on the row now, derived, never typed). Then `python3 tools/progress_block.py --unassigned`: every open row it
+   lists has nobody on it and a runnable next step; hand them to the account with free lane slots as WORK-QUEUE rows, highest
+   expected value (rule 3, selection) first. Do not leave a listed row for the next check-in.
 0. **Near solves.** Read NEAR.md. A row untouched for 48 hours gets a worker or an ASKS row named in it; a row whose
    target reads `closed-negative` is a rule-5 breach to reverse. Nothing leaves the register without the named next
    step's numbers or a verifier class.
