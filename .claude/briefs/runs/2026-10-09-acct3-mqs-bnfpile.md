@@ -1,10 +1,10 @@
 # MQS-BNFPILE: the BnF pile census, session S0-S1 (tool and phrase census; no reading) (job E of LANE MQS)
 
 Written 9 Oct 2026 (clock read 00:58 UTC) by the account-3 orchestrator's reconciling session, for one worker on
-**account 4**. Lane brief: `.claude/briefs/runs/2026-10-09-acct3-mqs-lane.md`. Background: research note
+**account 4**; revised 9 Oct 2026 (clock read 01:26 UTC) by the check-and-fix pass. Lane brief: `.claude/briefs/runs/2026-10-09-acct3-mqs-lane.md`. Background: research note
 `research/MARY-STUART-TALK-2026-10-09.md` section (b) and matrix rows M01, M02, M06, M41, M42.
 
-- **Model:** Sonnet (`claude-sonnet-5`). **Cap:** USD 5. **Box:** 100 min.
+- **Model:** Sonnet (`claude-sonnet-5`). **Cap:** USD 6. **Box:** 110 min.
 - **Host:** archivesetmanuscrits.bnf.fr only, **at most 40 requests**, one at a time, 2 s apart, User-Agent
   `cipher-lab research script (contact via repository)`, every response saved to disk once. **No Gallica** (HTTP 403 to
   cloud sessions since about 12:45 UTC on 8 Oct; our own last probe 23:45:56 UTC). On any 403, 429 or challenge page:
@@ -29,17 +29,23 @@ upside is in volume-level notices with no item list, notices that never say "chi
 (notices fetched this session + `manifest.json`), `sources/bnf-census/2026-10-09/census.tsv` + `manifest.json`,
 `ciphers/_triage/bnf-fr2988-f1-fr20506-f146.md`, one appended row in BNF-VALUE.md's ITERATE table, rows in
 `tools/data/tool_shelf.tsv` and `SYSTEM.md`. Never edit anything under `sources/` that another session wrote.
+`tools/prior_work.py` is **read-only** for you (MQS-SCOUT owns it in this lane): import its check-3 functions, never edit
+them.
 
 ## Units (stop before a unit that would cross 80% of cap or box)
 
-| # | Unit | Requests | Estimate |
-|---|---|---|---|
-| 1 | `--pile` scorer + offline tests on the notices already on disk | 0 | USD 1.6 |
-| 2 | Fetch: fr.2988 notice `cc49442s`, the fr.20506 notice, the fr.15568 notice; one test each of `--local-search` and `--branch-pdf` | <= 6 | 0.4 |
-| 3 | `--census` + PREREG; then the control (offline) | 0 | 0.6 |
-| 4 | S1 phrase census | <= 32 | 1.0 |
-| 5 | Triage note, ITERATE row, registration | 0 | 0.5 |
-| | Total 4.1; cap 5 | <= 38 | |
+Minutes are planning estimates, about 80% of the box split by each unit's dollar share (nearest measured rows: the
+TOOLS-TOMO single-option Opus jobs of 8 Oct 2026, 11-18 min and USD 3.75-5.11 each, LEDGER.md lines 3548-3552); unit 4's
+minutes are set by its requests at 2 s each plus parsing.
+
+| # | Unit | Requests | USD | Min |
+|---|---|---|---|---|
+| 1 | `--pile` scorer (per-item prior work through `prior_work.py` check 3) + offline tests on the notices already on disk | 0 | 1.8 | 30 |
+| 2 | Fetch: fr.2988 notice `cc49442s`, the fr.20506 notice, the fr.15568 notice; one test each of `--local-search` and `--branch-pdf` | <= 6 | 0.4 | 7 |
+| 3 | `--census` + PREREG (the hand-labelled sample written first); then the controls (offline) | 0 | 1.2 | 20 |
+| 4 | S1 phrase census | <= 32 | 1.0 | 18 |
+| 5 | Triage note, ITERATE row, registration | 0 | 0.5 | 9 |
+| | Total 4.9 of cap 6; 84 of box 110 | <= 38 | | |
 
 ## Unit 1: `--pile`
 
@@ -55,11 +61,19 @@ module's own `parse()`; cipher item = text matching `(?i)\b(chiffr|cifra|cifre|z
   "déchiffr") sets `prior_work` to that text. **Must catch: fr.2988's notice now says the volume contains cipher letters
   of Marie Stuart to Castelnau, 1578-1584, and its Bibliographie cites Lasry, Biermann and Tomokiyo**, while its items
   still read "Pièce en chiffre." (fetched 8 Oct 23:44 UTC). Without this, a solved pile ranks first;
-- **per-item exclusion** (M02): a volume is excluded only when every cipher item in it matches prior work; `--prior
-  FILE` (a TSV of shelfmark, folio, status, source) supplies item statuses. Fixture: fr.2988 today keeps the volume
+- **per-item exclusion** (M02) **through `tools/prior_work.py`, not a second path**: for every cipher item, call
+  prior_work's check-3 functions (the cached Tomokiyo, DECODE-listing and solver-repo sources keyed by
+  `tools/shelfmark.py`, registered in `tools/data/prior_portals.tsv`), or `prior_work.py --item-spec 'shelfmark=BnF
+  fr.NNNN;folio=Nr'`; Tomokiyo's cache already carries fr.2988 (`sources/cryptiana/web/unsolved.htm`,
+  `unsolved-2026-09-24.htm`, `mary_castelnau.htm`: 'deciphered' at volume + folio = KNOWN) and a DECODE 'Decrypted'
+  listing is a LEAD. A volume is excluded only when every cipher item in it is KNOWN or found-solved. `--prior FILE` (a
+  TSV of shelfmark, folio, status, source) stays only as an **override** for statuses no cache holds (say so in the
+  docstring). Fixture, testing prior_work's own verdicts rather than a hand-typed list: fr.2988 today keeps the volume
   (Ranzo f.2 and f.9 open: Tomokiyo's unsolved list, `ciphers/decode-4450-bnf-fr20506-1525`), drops the 26 Mary items
   (prior work: the paper and the notice's own Bibliographie) and f.1 (found-solved: T. Andersson 2017; DECODE 2323);
-  must not block: a synthetic volume whose every cipher item is matched is excluded;
+  must not block: a synthetic volume whose every cipher item is matched is excluded. MQS-SCOUT adds an active-edition
+  check to prior_work.py in the same lane; you pick it up through the same call, so the lane ends with one per-item
+  prior-work path, not two;
 - **clear-neighbour trap** (M41; paper p.108-109: the clear neighbours gave "the wrong impression that the plaintext
   documents were the deciphered versions"): flag a volume whose clear items alternate with bare cipher items and carry
   another language ("en italien", "en espagnol" ...) or another decade. fr.2988 must be flagged;
@@ -68,11 +82,13 @@ module's own `parse()`; cipher item = text matching `(?i)\b(chiffr|cifra|cifre|z
 - **image-triage**: a volume-level notice with no item list (the fr.20506 shape) is class `image-triage`, never a
   negative (the module's own scope rule);
 - **est_signs** = n_bare x median folio gap x 650. The constant is calibrated on fr.2988 (26 x 4 x 650 = 67,600 against
-  the paper's ~68,000 for its 26 letters: more than 150,000 signs over 57 letters, p.110). One calibration point:
-  say so in the docstring; the pools rule's 2,000-sign line then rests on a stated estimate.
+  the paper's ~68,000 for its 26 letters: more than 150,000 signs over 57 letters, p.110). One calibration point, on the
+  development volume itself: say so in the docstring; the pools rule's 2,000-sign line then rests on a stated estimate.
 
 Offline tests on the saved notices (`sources/bnf-findingaids/2026-10-07/`, 55; `sources/bnf-aem/`, 18; plus the
-fr.2988 notice you save in unit 2): (1) fr.2988 has the highest bare count (26; next at most 3); (2) fr.2988's
+fr.2988 notice you save in unit 2); these are **regression tests on the development set** (the prototype's rules and
+est_signs were built on fr.2988 and these notices), not evidence of power: (1) fr.2988 has the highest bare count (26;
+next at most 3); (2) fr.2988's
 `prior_work` names the Bibliographie citation; (3) fr.2988's neighbour trap is set; (4) fr.4715 (40 of 44 items
 deciphered) is not ranked; (5) fr.3618's key sheets are counted apart (bare 0); (6) a volume-level notice is
 `image-triage`; (7) the per-item exclusion fixture above; (8) must not block: the existing per-item TSV output of
@@ -93,10 +109,24 @@ does not answer as expected ships marked "untested route" in `--help`.
 `resultatRechercheSimple.html` (quoted phrases behave as phrases: "pièce en chiffre" gave 26, "dépêches chiffrées" 7,
 on 8 Oct), parse the total, the facets (Départements, Dates, Noms) and the first page's finding-aid ids; never page
 further in S1 (the facets summarise every hit).
-**Control (rule 3; offline, before the census):** known answer fr.2988 ranks first by bare count AND carries its
-prior-work flag. Null that can fail differently: shuffle item texts across the saved notices, keeping each volume's
-item count (200 draws); fr.2988's bare count under the shuffle must fall far below its real 26 (pre-register "below 8
-in at least 95% of draws"). A pile score built from item-level noise would not fall.
+**Controls (rule 3; offline, before the census; every number and gate in PREREG-MQS-BNFPILE.md first).**
+- **fr.2988 is the calibration item, not a known answer.** The prototype's rules (bare item, neighbour trap) and the
+  est_signs constant were built on fr.2988 and on the same saved notices, so "fr.2988 ranks first AND carries its
+  prior-work flag" shows only that the code reproduces the prototype: report it as a reproduction test.
+- **Hand-labelled sample (the real measure).** Before running the scorer on them, draw a seeded random sample of about
+  40 cipher-bearing items from the saved notices (`sources/bnf-findingaids/2026-10-07/`, `sources/bnf-aem/`), **none
+  from fr.2988**, label each by reading its item text as bare / named / deciphered / key sheet, and write the labels into
+  the PREREG. Then report precision and recall of `bare` and of each exclusion (deciphered, key sheet) against them.
+- **Held-out known pile.** Look for another volume that DECODE or Tomokiyo list as cipher letters catalogued without
+  names (`sources/decode/`, `sources/cryptiana/web/`) and that was not used in development; score it and report its
+  rank. If none qualifies, log "no held-out pile; ranking untested".
+- **A null whose pass is not guaranteed.** Plant a synthetic 10-item bare pile (bare cipher item texts, dates and names
+  stripped) into a notice that has none, and pre-register that it must rank in the top 5 of the whole set. The old
+  item-text shuffle across all notices stays as a **sanity line only**: with about 30 bare items in the pool, 26 of them
+  fr.2988's, fr.2988's shuffled bare count falls far below 26 whatever the scorer does, so that null cannot fail (rule 3,
+  a control at ceiling); a shuffle within each fonds or decade may be reported beside it.
+- **Shelf grade:** `--pile` ships at most `weak` (one calibration point) until a second, independently found pile is
+  scored, whatever the sample's precision and recall.
 
 ## Unit 4: S1 phrase census (about 30 queries, 32 requests at most)
 
@@ -122,7 +152,8 @@ both numbers of the control.
 - **S2** score every finding aid the census and the six earlier passes hit (2-3 Sonnet sessions, 150-200 requests each);
   undigitised piles above threshold go into one batched REQUEST.md and reproduction-quote row (the ASKS 38 pattern),
   never one by one.
-- **S3** prior work per item from disk (`tools/prior_work.py --item`, with the active-projects flag MQS-SCOUT adds).
+- **S3** prior work per item from disk beyond what `--pile` already calls (`tools/prior_work.py --item-spec`, with the
+  active-edition flag MQS-SCOUT adds).
 - **S4** image triage, only when Gallica answers again (one probe per session, from the next UTC day): calibrate
   `cipher_page_detector.py` on fr.2988 itself (its cipher leaves sit among clear ones in one scan), then triage.
 - **S5** attribution for the top piles: sign inventory on line crops, shape match against keys on file, a small sample
@@ -133,13 +164,14 @@ both numbers of the control.
 
 ## Registration
 
-- tool_shelf rows: `bnf_findingaid.py --census` (kind access) and `bnf_findingaid.py --pile` (instrument; grade from
-  unit 3's known answer and null).
+- tool_shelf rows: `bnf_findingaid.py --census` (kind access) and `bnf_findingaid.py --pile` (instrument; grade at most
+  `weak`, evidence the hand-labelled sample's precision and recall, the planted-pile rank and the held-out pile's rank or
+  "untested").
 - SYSTEM.md: name both on bnf_findingaid.py's row; `sources/bnf-census/` as a register.
 - CLAUDE.md Usage 8 line (for the orchestrator): "`tools/bnf_findingaid.py --pile` scores a BnF volume for an unread
-  cipher pile item by item (bare cipher items; key sheets apart; decipherments and the notice's own Présentation and
-  Bibliographie as prior work; the clear-neighbour trap; digitised or not), and `--census` counts quoted catalogue
-  phrases; scout exclusions are per item, never per volume (MQS-BNFPILE, 9 Oct 2026; the Mary Stuart lesson, Lasry,
+  cipher pile item by item (bare cipher items; key sheets apart; decipherments, `prior_work.py` check 3 and the notice's
+  own Présentation and Bibliographie as prior work; the clear-neighbour trap; digitised or not), and `--census` counts
+  quoted catalogue phrases; scout exclusions are per item, never per volume (MQS-BNFPILE, 9 Oct 2026; the Mary Stuart lesson, Lasry,
   Biermann and Tomokiyo 2023 pp.101-109)."
 - README common-tail line: "Scout exclusions are per item, never per volume; a volume-level notice with no item list is
   'image-triage', never a negative."
@@ -149,7 +181,7 @@ both numbers of the control.
 - **First commands.** `git fetch origin && git checkout -B main origin/main`; `python3 tools/room.py --start`; `date -u`.
   Every time and date you write comes from `date -u` (rule 6). Read the last 30 lines of ROOM.md. If a claim under six
   hours old with no done line covers a file you own below, stop and write one ROOM `flag` line instead of working.
-- **Claim.** `python3 tools/room.py "MQS-BNFPILE worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 5, box 100 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
+- **Claim.** `python3 tools/room.py "MQS-BNFPILE worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 6, box 110 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
 - **Your files.** Exactly the ones under "Files" below; the lane brief's file table says who owns what. Extend the
   existing script (CLAUDE.md Usage 8): an option and its functions; existing behaviour and existing tests unchanged.
   Run the tool's existing tests before your first edit and again before the push, and paste both results; a test that

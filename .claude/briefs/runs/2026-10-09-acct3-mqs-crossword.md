@@ -33,12 +33,15 @@ The method already exists, with controls, in target folders:
 
 ## What failed and why (read before porting; cite in the docstring)
 
-- **The same instrument's later runs on Gramont accepted nothing.** A2-GRA3 (round 2) and A2-GRA4 (round 3), 3 Oct 2026,
-  re-ran `test_f30r_top.py` on f.30r with only the base key changed between runs (Gramont NOTES.md lines ~920-1026):
-  no hypothesis on L01, L02, L11, L12 was accepted. HASH and B8 sat at shuffled-position p 0.61-1.00 (B8 NULL 79.8 bits,
-  p 0.614; HASH EMPEREVR 3.3 bits, p 1.000), i.e. not separated from random positions; E's I (61.5 bits, p 0.010) was
-  rejected by the breakage rule (8 of 26 outside occurrences lose more than 3 bits); CROSS/CROSSp "never passed its
-  control; the instrument is retired for it (rule 3, third attempt)", with only 5, 2 and 1 occurrences per shape. Lesson
+- **The same instrument's later runs on Gramont accepted almost nothing.** `test_f30r_top.py` ran three times on the
+  default f.30r sign list with only the base key changed between runs (rounds 1 and 2 on 24 Sept; round 3, A2-GRA4,
+  3 Oct; Gramont NOTES.md lines ~731-770 and ~977-1026): after round 1, nothing on L01, L02, L11, L12 was accepted, and
+  the instrument is retired for those hypotheses. HASH and B8 sat at shuffled-position p 0.61-1.00 (round 3: B8 NULL
+  79.8 bits, p 0.614; HASH EMPEREVR 3.3 bits, p 1.000), i.e. not separated from random positions; E's I (61.5 bits,
+  p 0.010) was rejected by the breakage rule (8 of 26 outside occurrences lose more than 3 bits). A2-GRA3 (3 Oct, the
+  shape-split rerun, NOTES.md ~920-975) accepted one value, ehx = T (152.1 bits over D, p 0.010, grade S), and rejected
+  every cross shape: CROSS/CROSSp "never passed its control; the instrument is retired for it (rule 3, third attempt)",
+  with only 5, 2 and 1 occurrences per shape. Lesson
   for the shared option: at low n, and on lines that are not in the model's language, the shuffled-position null cannot
   separate, so `--try` says "undecided" there rather than ranking.
 - **The 24 Sept control's own limitation** (NOTES.md ~575): "only 25 distinct keyed signs could fill the pool, so the
@@ -154,7 +157,7 @@ the current key value returns a zero statistic, not an error. The existing `test
 - **First commands.** `git fetch origin && git checkout -B main origin/main`; `python3 tools/room.py --start`; `date -u`.
   Every time and date you write comes from `date -u` (rule 6). Read the last 30 lines of ROOM.md. If a claim under six
   hours old with no done line covers a file you own below, stop and write one ROOM `flag` line instead of working.
-- **Claim.** `python3 tools/room.py "MQS-CROSSWORD worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 6.5, box 120 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
+- **Claim.** `python3 tools/room.py "MQS-CROSSWORD worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 7, box 130 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
 - **Your files.** Exactly the ones under "Files" below; the lane brief's file table says who owns what. Extend the
   existing script (CLAUDE.md Usage 8): an option and its functions; existing behaviour and existing tests unchanged.
   Run the tool's existing tests before your first edit and again before the push, and paste both results; a test that

@@ -184,7 +184,7 @@ real use after a control passes). No target is run in this job. The first target
 - **First commands.** `git fetch origin && git checkout -B main origin/main`; `python3 tools/room.py --start`; `date -u`.
   Every time and date you write comes from `date -u` (rule 6). Read the last 30 lines of ROOM.md. If a claim under six
   hours old with no done line covers a file you own below, stop and write one ROOM `flag` line instead of working.
-- **Claim.** `python3 tools/room.py "MQS-NAMES worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 8, box 150 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
+- **Claim.** `python3 tools/room.py "MQS-NAMES worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 9, box 160 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
 - **Your files.** Exactly the ones under "Files" below; the lane brief's file table says who owns what. Extend the
   existing script (CLAUDE.md Usage 8): an option and its functions; existing behaviour and existing tests unchanged.
   Run the tool's existing tests before your first edit and again before the push, and paste both results; a test that

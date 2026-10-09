@@ -27,8 +27,9 @@ Written 9 Oct 2026 (clock read 00:58 UTC) by the account-3 orchestrator's reconc
   `--lede` (`ciphers/nevers-birago-fr3251-1572/sorter/no87/build.sh` line 12, "tiles with a green check are the ones you
   sorted") direct the reader by colour too. Boxing is machine-only (the person cannot add or split a box; out of scope
   here, a later SORTER-BOX job, which the lane close queues).
-- **The default page is not blind today.** `rank_from_lattice` (sign_sorter.py lines ~317-321) captions every "Most
-  useful first" tile `T45 (top-1) or T24 (decode)?` with a detail line `~N letters change; reader weight NN% on T24`;
+- **The default page is not blind today.** `rank_from_lattice` (sign_sorter.py lines ~317-321) captions a "Most useful
+  first" tile `T45 (top-1) or T24 (decode)?` whenever the decode picks another pile, and every ranked tile gets a detail
+  line `~N letters change; reader weight NN% on T24`;
   `--rank-confusion` and `--focus` captions name the machine's alternative pile too, and the no.87 build.sh `--focus-note`
   calls it "the computer's pick". A decode choice, a top-1 label and a reader weight are machine guesses shown to the
   sorter (TRANSCRIPTION.md, blind first).
@@ -199,7 +200,7 @@ reading the chips? yes/no". The owner's answer, not the simulation, is the final
 - **First commands.** `git fetch origin && git checkout -B main origin/main`; `python3 tools/room.py --start`; `date -u`.
   Every time and date you write comes from `date -u` (rule 6). Read the last 30 lines of ROOM.md. If a claim under six
   hours old with no done line covers a file you own below, stop and write one ROOM `flag` line instead of working.
-- **Claim.** `python3 tools/room.py "MQS-SORTER worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 6.5, box 120 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
+- **Claim.** `python3 tools/room.py "MQS-SORTER worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 7.5, box 130 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
 - **Your files.** Exactly the ones under "Files" below; the lane brief's file table says who owns what. Extend the
   existing script (CLAUDE.md Usage 8): an option and its functions; existing behaviour and existing tests unchanged.
   Run the tool's existing tests before your first edit and again before the push, and paste both results; a test that

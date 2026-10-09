@@ -1,10 +1,10 @@
 # MQS-SCOUT: do not bury an unnamed pile; flag active editions; one calendar routine (job G of LANE MQS)
 
 Written 9 Oct 2026 (clock read 00:58 UTC) by the account-3 orchestrator's reconciling session, for one worker on
-**account 4**. Lane brief: `.claude/briefs/runs/2026-10-09-acct3-mqs-lane.md`. Background: matrix rows M29, M37, M39
+**account 4**; revised 9 Oct 2026 (clock read 01:26 UTC) by the check-and-fix pass. Lane brief: `.claude/briefs/runs/2026-10-09-acct3-mqs-lane.md`. Background: matrix rows M29, M37, M39
 and M40 of `research/MARY-STUART-TALK-2026-10-09.tsv`.
 
-- **Model:** Sonnet (`claude-sonnet-5`). **Cap:** USD 5.5. **Box:** 110 min.
+- **Model:** Sonnet (`claude-sonnet-5`). **Cap:** USD 6. **Box:** 120 min.
 - **Goal, three small gates and one proposal.** (1) The talk's lesson on why nobody read the Mary letters: "not enough
   incentive" and "no way to know that they are from Mary" ([00:08:49]-[00:09:40]; paper p.102 n.6). Our scout rubric
   repeats that mistake: it scores an unnamed, undated, all-cipher pile low on every axis that needs a name. (2) A
@@ -16,8 +16,12 @@ and M40 of `research/MARY-STUART-TALK-2026-10-09.tsv`.
 
 - `.claude/workflows/scout.js` (lines ~85-107): `language_fit` 0 = "unknown script or language"; `key_lead` 0 =
   nothing; `weight` = "historical interest of the content"; `size` 0-3 caps at "enough text to check a reading";
-  total = 3 lang + 4 material + 3 key + 2 size + 2 competition + weight + 3 unread. `QUEUE-scores.json` holds 33 scored
-  rows and its `formula` string. Nothing in `tools/` scores; nothing tests the formula.
+  total = 3 lang + 4 material + 3 key + 2 size + 2 competition + weight + 3 unread (scout.js line ~108).
+  `QUEUE-scores.json` holds 33 scored rows and a `formula` string that **already differs** from scout.js:
+  `language_fit*3 + material*2 + key_lead*3 + size*2 + competition*2 + weight` (material x2, no unread term). Nothing in
+  `tools/` scores; nothing tests the formula.
+- `tools/data/prior_portals.tsv` (PRIOR-WORK v1, 8 Oct 2026) is the **append-only registry** that `prior_work.py` check 3
+  already reads; its `kind` column is `tomokiyo | decode-listing | decode-record | solver-repo | holder-portal`.
 - `tools/prior_work.py` (PRIOR-WORK v1, warn-first) has holder, portal and solver caches but no "active project" class.
   `date_variants()` (lines ~1276-1283) adds the other calendar style for 1582-1752 with
   `shift = 10 if d.year < 1700 else 11`: wrong for Julian 1 Jan - 28 Feb 1700, still 10 days (Julian 15 Jan 1700 =
@@ -28,7 +32,9 @@ and M40 of `research/MARY-STUART-TALK-2026-10-09.tsv`.
 ## Files
 
 `tools/scout_rubric.py` (added), `.claude/workflows/scout.js` (the SCORE schema descriptions and the total formula
-only), `tools/tests/test_scout_rubric.py`, `tools/data/active_projects.tsv` (added), `tools/calendar_check.py` (added),
+only), `tools/tests/test_scout_rubric.py`, appended rows of a new kind `active-edition` in `tools/data/prior_portals.tsv`
+(preferred; a separate `tools/data/active_projects.tsv` only with a reason stated in prior_work.py's docstring, e.g. a
+column the registry cannot carry), `tools/calendar_check.py` (added),
 `tools/tests/test_calendar_check.py`, `tools/prior_work.py` (an active-project check and `date_variants()` through
 calendar_check; nothing else), `tools/tests/test_prior_work.py` (cases added, none weakened), an appended section of
 `research/MARY-STUART-TALK-2026-10-09.md`, rows in `tools/data/tool_shelf.tsv` and `SYSTEM.md`. Do not rewrite
@@ -36,19 +42,25 @@ calendar_check; nothing else), `tools/tests/test_prior_work.py` (cases added, no
 
 ## Units (stop before a unit that would cross 80% of cap or box)
 
-| # | Unit | Estimate |
-|---|---|---|
-| 1 | `scout_rubric.py` + scout.js alignment + tests | USD 1.6 |
-| 2 | `active_projects.tsv` + the prior_work.py check + tests | 1.4 |
-| 3 | `calendar_check.py` + date_variants through it + tests | 0.8 |
-| 4 | The anonymous-pile intake proposal (text only) | 0.4 |
-| 5 | Registration | 0.4 |
-| | Total 4.6; cap 5.5 | |
+Minutes are planning estimates, about 80% of the box split by each unit's dollar share (nearest measured rows: the
+TOOLS-TOMO single-option Opus jobs of 8 Oct 2026, 11-18 min and USD 3.75-5.11 each, LEDGER.md lines 3548-3552).
+
+| # | Unit | USD | Min |
+|---|---|---|---|
+| 1 | `scout_rubric.py` + scout.js alignment + drift tests (scout.js and QUEUE-scores.json) + the held-out shape | 1.8 | 36 |
+| 2 | `active-edition` rows in prior_portals.tsv + the prior_work.py check + tests | 1.4 | 28 |
+| 3 | `calendar_check.py` + date_variants through it + tests | 0.8 | 16 |
+| 4 | The anonymous-pile intake proposal (text only) | 0.4 | 8 |
+| 5 | Registration | 0.4 | 8 |
+| | Total 4.8 of cap 6; 96 of box 120 | | |
 
 ## Unit 1: tools/scout_rubric.py
 
 - One scoring function and one `FORMULA` string; `python3 tools/scout_rubric.py --rerank QUEUE-scores.json` prints the
-  ranking (no write).
+  ranking (no write) and **reports every row scored under an older formula** (QUEUE-scores.json's stored `formula`
+  differs from `FORMULA`).
+- **The weights are a declared prior, not fitted.** Say so in the docstring: the `pending` score, the holder/era weight
+  prior and the x2 pile weight below are chosen by argument, and the one fr.2988-shaped test row cannot fit them.
 - Changes, each in the docstring with its reason: `language_fit` may be `pending` (scored 2, not 0) for an all-cipher
   item from a holder whose era's languages are among those we read and whose language is unknown; 0 stays for an
   unknown script with no holder context. `weight` unknown takes a holder/era prior (state the prior; for example 2 for a
@@ -58,26 +70,34 @@ calendar_check; nothing else), `tools/tests/test_prior_work.py` (cases added, no
   (n_bare x median folio gap x 650, calibrated on fr.2988).
 - `scout.js`: the SCORE schema gains `pile` and the `pending` wording for `language_fit`; its total formula is the same
   string as `scout_rubric.FORMULA`. A test reads scout.js and fails if its formula differs from the Python one (so the
-  two cannot drift).
+  two cannot drift), and a second test compares QUEUE-scores.json's stored `formula` string with `FORMULA` too (today it
+  fails: the stored string has material x2 and no unread term; record that as the known drift `--rerank` reports, not a
+  test to weaken).
 - Tests: an fr.2988-shaped row (all cipher, unattributed, 26 letters, about 68,000 signs, digitised, competition 3,
   unread 3, weight unknown) ranks in the top decile of QUEUE-scores.json's 33 scored rows plus itself (must catch);
-  must not block: today's top three named rows stay in the top five; a short named letter with a key lead keeps its
-  rank band.
+  **the same row with its prior-work / active-edition flag set does not stay in the top decile** (raising unattributed
+  piles must not raise solved or claimed ones, so prior work applies before the rank); one **held-out shape not used to
+  set the weights**, a volume-level "dépêches chiffrées" notice with no item list (the fr.20506 shape), is scored and its
+  rank reported, whatever it is; must not block: today's top three named rows stay in the top five; a short named letter
+  with a key lead keeps its rank band.
 
 ## Unit 2: active projects
 
-- `tools/data/active_projects.tsv` columns: keyword (regex), shelfmarks, holder, project, contact_route, source,
-  date_checked. Rows: the Mary Stuart - Castelnau corpus (BnF fr.2988, fr.20506, Cinq Cents de Colbert 470, fr.3158;
-  edition in preparation by E. Paranque, A. Courtney and M. Questier, Routledge 2027, Northeastern Global News 21 Aug
-  2024; contact route: the authors, who invite scholars to contact them, paper p.192); Lasry's second Mary collection
-  (more than 100,000 symbols, archive not named, HistoCrypt 2026 hdl 10062/122074 PDF p.6 n.8; keyword "Marie
-  Stuart|Mary Stuart|Mary Queen of Scots|Castelnau").
-- `prior_work.py`: one added check (or a row kind inside check 3) that matches an item's shelfmark, folio, sender,
-  recipient or keyword against the file and returns a LEAD "active project: contact first" with the source, within
-  prior_work's existing exit scheme and its warn-first rollout. Docstring scope (Usage 8a) and tests: must catch an
-  item-spec for fr.2988 f.38 (`--item-spec 'shelfmark=BnF fr.2988;folio=38r'`), which returns the active-project LEAD
-  (the paper itself is KNOWN prior work); must not block an unrelated BnF item (for example fr.3413). The existing
-  `test_prior_work.py` cases all still pass.
+- Prefer appending rows of a new `kind` `active-edition` to `tools/data/prior_portals.tsv` (append-only; a correction is
+  a new row with the same portal id), carrying keyword (regex), shelfmarks, holder, project, contact_route, source and
+  date_checked in its existing columns (`keyed_on`, `verdict_rules`, `source`) or a documented sub-format; use a
+  separate `tools/data/active_projects.tsv` only if a needed column cannot be carried, and state the reason. Rows: the
+  Mary Stuart - Castelnau corpus (BnF fr.2988, fr.20506, Cinq Cents de Colbert 470, fr.3158; edition in preparation by
+  E. Paranque, A. Courtney and M. Questier, Routledge 2027, Northeastern Global News 21 Aug 2024; contact route: the
+  authors, who invite scholars to contact them, paper p.192); Lasry's second Mary collection (more than 100,000 symbols,
+  archive not named, HistoCrypt 2026 hdl 10062/122074 PDF p.6 n.8; keyword "Marie Stuart|Mary Stuart|Mary Queen of
+  Scots|Castelnau").
+- `prior_work.py`: one added row kind inside check 3 (or, with a stated reason, a separate check) that matches an item's
+  shelfmark, folio, sender, recipient or keyword against those rows and returns a LEAD "active project: contact first"
+  with the source, within prior_work's existing exit scheme and its warn-first rollout. Docstring scope (Usage 8a) and
+  tests: must catch an item-spec for fr.2988 f.38 (`--item-spec 'shelfmark=BnF fr.2988;folio=38r'`), which returns the
+  active-project LEAD (the paper itself is KNOWN prior work); must not block an unrelated BnF item (for example
+  fr.3413). The existing `test_prior_work.py` cases all still pass.
 
 ## Unit 3: tools/calendar_check.py
 
@@ -105,24 +125,27 @@ so the parent puts it to the owner; you do not edit CLAUDE.md or `tools/intake_g
 
 ## Registration
 
-- tool_shelf rows: `scout_rubric.py` (kind scorer, grade n/a, evidence the must-catch test), `calendar_check.py` (kind
-  gate or n/a, evidence the tests), and the active-projects check on `prior_work.py`'s row evidence.
-- SYSTEM.md: rows for `tools/scout_rubric.py` and `tools/calendar_check.py`; `tools/data/active_projects.tsv` named
-  where registers are listed.
+- tool_shelf rows: `scout_rubric.py` (kind scorer, grade n/a, evidence the must-catch test, the flagged-row test and the
+  held-out shape's rank), `calendar_check.py` (kind gate or n/a, evidence the tests), and the active-edition check on
+  `prior_work.py`'s row evidence.
+- SYSTEM.md: rows for `tools/scout_rubric.py` and `tools/calendar_check.py`; the `active-edition` kind named on
+  prior_portals.tsv's register line (or, if you used one, `tools/data/active_projects.tsv` named where registers are
+  listed).
 - CLAUDE.md Usage 8 line (for the orchestrator): "Scout ranking uses `tools/scout_rubric.py` (one formula shared with
   .claude/workflows/scout.js): an unattributed all-cipher pile scores language 'pending trial', not 0, and gains a pile
   term from its estimated signs in one key, so the Mary Stuart shape is not buried (MQS-SCOUT, 9 Oct 2026; the talk's
-  'not enough incentive'). `tools/data/active_projects.tsv` makes prior_work.py flag work under active edition as
-  'contact first'; `tools/calendar_check.py` is the one Julian/Gregorian routine."
-- README common-tail line: "Before working anything near an active edition project (tools/data/active_projects.tsv),
-  contact first: prior_work.py flags it."
+  'not enough incentive'); its weights are a declared prior. `active-edition` rows in tools/data/prior_portals.tsv make
+  prior_work.py flag work under active edition as 'contact first'; `tools/calendar_check.py` is the one Julian/Gregorian
+  routine."
+- README common-tail line: "Before working anything near an active edition project (`active-edition` rows in
+  tools/data/prior_portals.tsv), contact first: prior_work.py flags it."
 
 ## Common rules (every MQS job; read in full before the first command)
 
 - **First commands.** `git fetch origin && git checkout -B main origin/main`; `python3 tools/room.py --start`; `date -u`.
   Every time and date you write comes from `date -u` (rule 6). Read the last 30 lines of ROOM.md. If a claim under six
   hours old with no done line covers a file you own below, stop and write one ROOM `flag` line instead of working.
-- **Claim.** `python3 tools/room.py "MQS-SCOUT worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 5.5, box 110 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
+- **Claim.** `python3 tools/room.py "MQS-SCOUT worker (account 4)" "claim <HH:MM> UTC by date -u: <your files>; cap USD 6, box 120 min (80% line <HH:MM>) -- for LANE MQS (account 4)"`.
 - **Your files.** Exactly the ones under "Files" below; the lane brief's file table says who owns what. Extend the
   existing script (CLAUDE.md Usage 8): an option and its functions; existing behaviour and existing tests unchanged.
   Run the tool's existing tests before your first edit and again before the push, and paste both results; a test that

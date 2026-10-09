@@ -1,11 +1,12 @@
 # Mary Stuart talk and paper: every proven method, where it lives in our toolbox, and what is being built (9 Oct 2026)
 
-Written 9 Oct 2026, 00:3x-01:2x UTC (clock read with `date -u`), by a reconciling session for the account-3 orchestrator.
+Written 9 Oct 2026, 00:3x-01:2x UTC (clock read with `date -u`), by a reconciling session for the account-3 orchestrator;
+revised 9 Oct 2026 from 01:26 UTC (clock read) by a check-and-fix pass, whose corrections are listed at the end.
 It supersedes nothing: `research/MARY-STUART-METHOD-2026-10-04.md` (the 4 Oct note) still holds the step-by-step reading
 of the paper. This note adds the talk, the discovery thread and the critics' corrections, and maps every method to a
 tool. The full matrix, one row per method, is `research/MARY-STUART-TALK-2026-10-09.tsv` (47 rows: 2 covered, 27 partial,
-3 promote-from-local, 15 missing). The build briefs are `.claude/briefs/runs/2026-10-09-acct3-mqs-*.md` (eight jobs and
-one lane brief, for account 4). Nothing here is a reading, and nothing here makes a novelty claim (rule 10).
+3 promote-from-local, 15 missing). The build briefs are `.claude/briefs/runs/2026-10-09-acct3-mqs-*.md` (nine jobs, job A
+split into A1 tools and A2 renders, and one lane brief, for account 4). Nothing here is a reading, and nothing here makes a novelty claim (rule 10).
 
 Sources:
 - G. Lasry, N. Biermann and S. Tomokiyo, "Deciphering Mary Stuart's lost letters from 1578-1584", *Cryptologia* 47:2
@@ -28,10 +29,13 @@ and a solver then finds the single-letter values. Everything else (names, words,
 hand, by testing one guess at every place the symbol occurs. Most of their method was already ours in some form. This
 pass checked each claim about our toolbox against the code, found that several "missing" methods already exist as
 scripts in single target folders (Gramont's crossword scripts, Moray's key-sheet builder, a held re-anneal on
-Clairambault 1161), and turned the rest into eight build jobs for account 4. In priority order: (A) key and reading
-sheets we can show Tomokiyo and the holders, with samples for Gramont, Danzay, Birago 1572 and one Huntington telegram;
-(B) a sign sorter you can read without relying on red and green, which also never shows you key values while you sort;
-(C) a name-and-place candidate tool that learns from our two failed earlier attempts; (D) the crossword test as a shared
+Clairambault 1161), and that several pieces already sit in other shared tools (a swap move and a per-letter cap in
+`subst_hillclimb.py`, a lock in `families/seeded_code.py`, exemplar picking in `glyph_atlas.py`), and turned the rest into
+build jobs for account 4. In priority order: (A) key and reading sheets we can show Tomokiyo and the holders, with samples
+for Gramont, Danzay and one Huntington telegram (the Birago 1572 sheets are held until your open Birago sorts are done, so
+seeing the key cannot bias them); (B) a sign sorter you can read without relying on red and green, which also never
+shows you key values or the machine's guesses while you sort; (C) a name-and-place candidate tool built so that the
+reasons our earlier attempts failed cannot recur; (D) the crossword test as a shared
 option; (E) a catalogue census of BnF piles, done gently; (F) the paper's solver settings, tested against a matched
 control; (G) a scout scoring fix so an unnamed pile is not ranked low; (H) lock-and-re-run. The colour rule for every
 picture we make is in section (f): it uses blue and dark orange plus shapes, never red against green, and the palette
@@ -109,17 +113,17 @@ until then the job is the place it is being put. Grades are our shelf's (`tools/
 | Method (their source) | Lives in, or will | Job |
 |---|---|---|
 | Sweep a digitised holding for any cipher item; attribute after reading (talk [00:07:03]-[00:09:40]; p.101-102, 108-109, 191) | `bnf_findingaid.py --census` / `--pile` | MQS-BNFPILE (S0-S1; S2-S6 later) |
-| Exclude solved material item by item (our lesson from their pile) | `bnf_findingaid.py --pile` per-item exclusion; `prior_work.py` | MQS-BNFPILE |
+| Exclude solved material item by item (our lesson from their pile) | `bnf_findingaid.py --pile` per-item exclusion through `prior_work.py` check 3 (one path, not two) | MQS-BNFPILE |
 | People box symbols and give arbitrary type labels (talk [00:12:45]-[00:13:27]; p.110-112) | `sign_sorter.py` + `sign_sorter_apply.py` (piles are the types); adding or splitting a box is still missing | MQS-SORTER scores the owner's no.87 sort; later SORTER-BOX |
 | Per-type gallery, odd ones first (talk [00:13:27]; Fig. 4 p.113; CTTS review) | `sign_sorter.py` already orders odd ones first (since 1 Oct); its recall gets measured | MQS-SORTER |
 | Colour per type (talk [00:13:09]; Fig. 4) | made safe: `tools/cvd_check.py`, sorter palette, `sorter_preflight.py --cvd` | MQS-SHEETS, MQS-SORTER |
 | Diacritic variants as separate types (talk [00:13:54]; p.112 n.48) | `glyph_atlas.py segment --mark-*`, `sign_sorter.py --marks`; base/mark split later | later BASE-MARK |
-| Annealing with restarts, swap and reassign moves (talk [00:14:21]; App. A p.195-197) | `homophonic_anneal.py` (reassign today) + `--moves swap/both` | MQS-SOLVER |
+| Annealing with restarts, swap and reassign moves (talk [00:14:21]; App. A p.195-197) | `homophonic_anneal.py` (reassign today) + `--moves swap/both`, ported from `subst_hillclimb.py` (swap 0.3, since 23 Sept); `seg_homophonic.py` and `families/columnar_homophonic.py` also swap | MQS-SOLVER |
 | Score divided by sum of squared letter counts (App. A p.195-196) | `homophonic_anneal.py --norm nc2` is an approximation; `--norm nc2paper` is the paper's | MQS-SOLVER |
-| Solver settings: u/v and i/j merged, per-letter cap, minimum count, budget, ignored letters, doubled letters (talk [00:15:58]; p.118; CTTS) | `homophonic_anneal.py` (folding today) + `--max-homophones`, `--min-count`, `--homophone-budget`, `--drop-letters`, `--collapse-doubles` | MQS-SOLVER |
-| Marked symbols kept out of the homophones but kept as gaps (p.115-118) | `homophonic_anneal.py --as-unknown`, `family_run.py --param exclude=` | MQS-SOLVER |
+| Solver settings: u/v and i/j merged, per-letter cap, minimum count, budget, ignored letters, doubled letters (talk [00:15:58]; p.118; CTTS) | `homophonic_anneal.py` (folding today) + `--max-homophones` (ported from `subst_hillclimb.py --max-homo`; `nomenclator_anneal.py --max-homo` too), `--min-count`, `--homophone-budget`, `--drop-letters`, `--collapse-doubles` | MQS-SOLVER |
+| Marked symbols kept out of the homophones but kept as gaps (p.115-118) | `homophonic_anneal.py --as-unknown`, `family_run.py --param exclude=`, by fragment splitting as `subst_hillclimb.py`'s `score_frags` and `partial_key_test.py` already do; compared with `families/homophonic.py wild=` and `solve_nomen word_signs`, which already keep marked signs in the stream | MQS-SOLVER |
 | Language by trial, not from the neighbours (talk [00:15:58]; p.112-115) | `judge_plaintext.py` corpora; `family_run.py --corpus`; a one-call `--langs` later | later LANGS |
-| Confirm fragments, lock them, re-run on the rest (p.115-117; CTTS 'Locked') | `homophonic_anneal.py --fix`, nomenclator `cribs`; `family_run.py --param lock=FILE` | MQS-LOCK |
+| Confirm fragments, lock them, re-run on the rest (p.115-117; CTTS 'Locked') | `homophonic_anneal.py --fix`, nomenclator `cribs`, `families/seeded_code.py --param pins=` (A2-CAS8: matched pinned share, unpinned-only scoring); `family_run.py --param lock=FILE` built on that contract | MQS-LOCK |
 | Special symbols found from context: repeat, delete, nulls (talk [00:17:24]; p.111, 115) | nulls in `decode_key.py`; repeat/delete later | later SPECIAL-SIGNS |
 | Crossword and avalanche: test a guess at every occurrence, follow what opens (talk [00:19:20]-[00:23:49]; p.118-122) | `decode_key.py --try` / `--avalanche` (promoted from `ciphers/fr2980-gramont/infer_unkeyed.py` and `test_f30r_top.py`) | MQS-CROSSWORD |
 | Names from historical context ('mon beau-frère' = Anjou; talk [00:22:08]; p.122) | `tools/name_candidates.py` (proposes; `--try` tests; a verifier grades) | MQS-NAMES |
@@ -127,7 +131,7 @@ until then the job is the place it is being put. Grades are our shelf's (`tools/
 | Months by a chain of deductions (p.124-125, Fig. 12) | `freq.py --tail` later, known answer the Janssens pool | later TAIL |
 | Sibling keys compared (p.128-130) | `key_crossmatch.py` (key vs text, proven); key vs key later | later KEY-COMPARE |
 | Cross-cipher contamination explained (App. B p.198-200; HistoCrypt 2024) | none shared; two target runs failed their gates; needs a positive control first | later CCE-MATRIX |
-| Key sheet (Figs 8, 12-14) | `tools/decipher_sheet.py key` (promoted from `ciphers/moray-wood-1568/no804/refsheet/build_refsheet.py`) | MQS-SHEETS |
+| Key sheet (Figs 8, 12-14) | `tools/decipher_sheet.py key` (exemplars by `glyph_atlas.py atlas --from-truth`'s picker, TX-SHEET; the M/I panel promoted from `ciphers/moray-wood-1568/no804/refsheet/build_refsheet.py`) | MQS-SHEETS (A1 tools, A2 renders) |
 | Reading sheet, occurrence highlighting, annotated strip (Figs 5-11, B24) | `tools/decipher_sheet.py reading` (`--highlight`, `--annotate`) | MQS-SHEETS |
 | Confirmed in capitals, tentative in lower case (p.115; CTTS) | `decode_key.py --style case` | MQS-SHEETS |
 | Second-wave search of the recipient's papers by symbol shape (p.190 n.345) | `glyph_atlas.py match` later, with a non-circular known answer | later GLYPH-MATCH |
@@ -140,7 +144,12 @@ So you can see what this pass did not need to build:
   orders each pile odd ones first, lets you fix a bad cut, and carries every state as a glyph and a border as well as a
   colour (LESSONS.md line 245). What is missing is adding or splitting a box, and a measured error rate for your sorts.
 - **The machine stage.** Annealing with restarts, held values (`--fix`), starting keys (`--init`), u/v and i/j folding,
-  an approximation of their score (`--norm nc2`), and the control-first harness (`family_run.py`).
+  an approximation of their score (`--norm nc2`), and the control-first harness (`family_run.py`). The swap move and a
+  per-letter cap already exist in `subst_hillclimb.py` (23 Sept), a lock with a matched-share control in
+  `families/seeded_code.py` (A2-CAS8, 2 Oct), and exemplar picking for a sheet in `glyph_atlas.py atlas --from-truth`
+  (TX-SHEET, 4 Oct). Our own digest of Lasry's methods, `LESSONS-LASRY.md` (27 Sept 2026) section 3, had already named
+  swap-only moves for syllabic designs, escalating n-gram order and lock-and-rerun (with fr2933-salviati-1525 as the
+  target that would need it).
 - **The checks they did not have.** Our judge (`judge_plaintext.py`) scores a reading against shuffled controls, which is
   stronger than reading the output by eye, and we grade every token (H, C, S, M, I, U). The paper reports no per-symbol
   error rate and no control in our sense (4 Oct note, section 1).
@@ -191,13 +200,19 @@ The rule, for every page, sheet or figure an agent makes for a person:
 3. **The palette.** On light backgrounds, marks (borders, underlines, outlines, badges) use ink (#24211c, or black on
    white), blue #0072B2 and dark orange #B35900, plus mid grey (#767676 on the sorter's beige, #595959 on white) as a
    fourth. On dark backgrounds: light ink #ece6dc, sky blue #56B4E9 and orange #E69F00. Yellow #F0E442 and sky blue are
-   used only as background tints under ink text, never as the only mark. Blue, orange, sky blue and yellow are Okabe and
+   used only as background tints under **dark** ink text in both themes (#24211c or #1b1916), never under the dark
+   theme's light ink (1.07:1 and 1.86:1), and never as the only mark. A box drawn over a manuscript image gets a white or
+   ink under-stroke, because on a parchment-coloured page dark orange and grey fall below 3:1 (2.91:1 and 2.73:1 on
+   #d9c7a0). Blue, orange, sky blue and yellow are Okabe and
    Ito's colour-universal-design set; #B35900 is their orange family darkened, because their own orange #E69F00 reaches
    only 2.25:1 against white.
 4. **The test**, run by `tools/cvd_check.py` (built in job A) and by `sorter_preflight.py --cvd` (job B):
    every pair of mark colours must differ by CIEDE2000 >= 20 in normal vision and after the Machado, Oliveira and
    Fernandes (2009) simulation of protan, deutan and tritan vision at severity 1.0 (in linear RGB); every mark must reach
-   WCAG 3:1 against its actual background, and any text 4.5:1; a tint must give its ink text 4.5:1.
+   WCAG 3:1 against its actual background, and any text 4.5:1; a tint must give its ink text 4.5:1. The 20 is a
+   **declared design threshold**, not a published one: no published CVD-palette minimum was cited, and the same pass
+   chose it and the palettes (the sorter palette passes by 0.7). So the tool prints each palette's margin, and a palette
+   between 18 and 20 is a judgement call for a person, not a hard fail.
 5. **What the test gives** (recomputed in this pass with scikit-image's CIEDE2000; the critic's own script agreed):
 
 | Set | Background | Worst pair, CIEDE2000 (all four visions) | Weakest contrast | Verdict |
@@ -208,6 +223,7 @@ The rule, for every page, sheet or figure an agent makes for a person:
 | Sheets, light: black, blue #0072B2, dark orange #B35900, grey #595959 | white | 22.7 (blue vs grey) | dark orange 4.83:1 | PASS (marks and text) |
 | Dark theme: ink #ece6dc, sky #56B4E9, orange #E69F00 | #1b1916 | 25.5 (ink vs orange, tritan) | 7.60:1 | PASS |
 | Tints yellow #F0E442, sky #56B4E9 under ink #24211c | (fill) | not a mark | ink on them 12.13:1 and 6.95:1 | allowed as fills only |
+| The same tints under dark-theme ink: #1b1916 / light ink #ece6dc | (fill) | not a mark | 13.26:1 and 7.60:1 / 1.07:1 and 1.86:1 | dark ink only (WCAG, check-and-fix pass) |
 
 6. **The owner's eye is the final test**, not the simulation. Job B adds one ASKS row: open the rebuilt Birago sorter and
    say whether done / to do / not-a-letter / bad can be told apart without reading the chips.
@@ -234,8 +250,10 @@ Every method in this note is the authors' unless marked ours (CLAUDE.md rule 8):
 - M. Okabe and K. Ito, Color Universal Design (2002, 2008); G. M. Machado, M. M. Oliveira and L. A. F. Fernandes (2009),
   the colour-vision simulation; G. Sharma, W. Wu and E. N. Dalal (2005), CIEDE2000; W3C, WCAG 2.1 contrast.
 
-Ours: the per-item exclusion lesson, the oddness score in the sorter, the graded-token convention, the controls, and the
-target-local scripts being promoted (Gramont, Moray, Clairambault 1161, Mercy H41, NEVBIR-NAMES).
+Ours: the per-item exclusion lesson, the oddness score in the sorter, the graded-token convention, the controls, the
+target-local scripts being promoted (Gramont, Moray, Clairambault 1161, Mercy H41, NEVBIR-NAMES), and the shared pieces
+the jobs build on (`subst_hillclimb.py`, bowes-walsingham-1583, 23 Sept; `families/seeded_code.py` pins, A2-CAS8, 2 Oct;
+`glyph_atlas.py atlas --from-truth`, TX-SHEET, 4 Oct; `crib_list_fit.py`, Mercy H41-H48; `LESSONS-LASRY.md`, 27 Sept).
 
 ## Corrections this pass made to the 8-9 Oct synthesis
 
@@ -244,7 +262,8 @@ Each critic's claim was checked in the repository before it was applied (details
   (Maclean), month codes (Janssens), calendar handling (`prior_work.py`, with a real bug for Julian Jan-Feb 1700), the
   held re-anneal (Clairambault 1161), and four earlier name-candidate runs, two of which failed their own controls.
 - Methods called covered that are partial: transcription by a person (boxing is machine-only), fragment highlighting (no
-  fragment list), the swap move (absent), plaintext-copy diffing (no labels; three aligners unshelved).
+  fragment list), the swap move (absent from the homophonic solver; the check-and-fix pass found it in three other
+  shared solvers), plaintext-copy diffing (no labels; three aligners unshelved).
 - Wrong facts fixed: the sorter already orders odd ones first; corpus codes `fr16`/`it16` do not exist (the codes are
   `fr`, `it`, `it16dip` ...), and `fr` reads one file; Birago no.87 is Italian, not French; `--norm nc2` is not the
   paper's score; the Ranzo items in fr.2988 are the open ones and the 26 Mary items are prior work, not the reverse; the
@@ -256,6 +275,35 @@ Each critic's claim was checked in the repository before it was applied (details
   name tool's controls are reported by occurrence count and by persons vs places, and the Mary example is a fixture, not
   a gate; the crossword control is gated per value class; the Eckert E52 sample (page image not committed) is replaced
   by E4 (mssEC 19 p.49, committed); the 'register' sheet is deferred to a later job built on `holder_export.py`.
+
+## Corrections the check-and-fix pass made (9 Oct 2026, from 01:26 UTC)
+
+Two critics' issues were checked in the repository before each was applied; what was rejected, and why, is in that
+pass's report.
+- **Blind first, at the level of a key family.** The lane would have shown you the Birago 1572 key and readings while
+  your Birago sorts are still open (ASKS row 118 and the two unnumbered Birago sorter rows of 2 and 3 Oct). Those sheets
+  are now held. The sorter's default page also showed the machine's choice ("(decode)", "(top-1)", reader weights) in
+  its captions; blind mode now strips them, and the non-blind mode is refused while any blind sort in the same key family
+  is open.
+- **Circular scores removed.** Your no.87 sort was to be scored through a pile-to-value map fitted on the clerk sheet
+  that is also the benchmark's truth; the map now comes from the printed 1572 key, with your new piles counted as unknown
+  (the BIR-OWNERSORT lesson). The name tool's Lodewijk control would have read Groen's printed decipherments, which print
+  the answers; the item's own printed text is now masked, cue lists are frozen from a general source before the control's
+  values are opened, and the gate is per class (places only; one person code is "untestable at this N"). The lock's
+  synthetic control would have scored the locked tokens, which read right because they are locked; it now scores only
+  unlocked positions. The BnF pile control was its own development example; a hand-labelled sample and a planted pile now
+  measure it, and the option ships no higher than `weak`.
+- **Existing tools named instead of rebuilt:** the swap move and cap (`subst_hillclimb.py`), gaps (`score_frags`,
+  `partial_key_test.py`), marked signs in stream (`wild=`, `word_signs`), the lock contract (`seeded_code.py` pins), the
+  exemplar picker (`glyph_atlas.py`), per-item prior work (`prior_work.py` check 3), the active-project registry
+  (`prior_portals.tsv`).
+- **Earlier failures cited with their mechanisms:** A2-LVN4 (one generic passage), A2-GRA6 (no topic overlap; identity
+  shuffles; an edge-letter bias), BIRAGO-NUM2, the Gramont crossword's later rounds (A2-GRA3, A2-GRA4), solvEX and
+  solvEX2, and the three no.87 decode-corrects-transcription runs (TX-DECODE, TXD-HOLDOUT, TX-ALTS), so TX-CROSSWORD must
+  name a new instrument or new material.
+- **Plans changed:** job A is split so the renders are not cut by the time limit; every brief prices units in minutes as
+  well as dollars; caps repriced (lane 70); the later methods become queue rows at the lane's close, not a list; each
+  worker signs its own commits with its own session line.
 
 On the JSTOR question of 8 Oct (for the owner; corrects the earlier answer): nothing is needed from you. The JSTOR runner
 was logged back in at 23:38 UTC on 8 Oct (ASKS 76, answered). The Chavigny letter has six searches queued, not two
