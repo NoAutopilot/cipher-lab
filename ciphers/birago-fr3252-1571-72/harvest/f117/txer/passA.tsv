@@ -1,0 +1,279 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	X_NEW		M	line start; H-like with two verticals joined by bar, dot lower left
+L01	2	X_NEW		M	rectangle with small cross/flourish on top (stroke from line above passes through)
+L01	3	X_NEW		M	rectangle with a dot inside
+L01	4	T54		H	R shape
+L01	5	T88		H	small o
+L01	6	T49		H	box on stem
+L01	7	T25		H	lambda
+L01	8	T51		M	crossed k/p shape
+L01	9	T37		H	barred theta
+L01	10	T54		H	R; at s1/s2 overlap, read once
+L01	11	X_NEW		M	plain empty rectangle
+L01	12	T33		H	double-stroke on baseline
+L01	13	T45		H	circle with tall stem up
+L01	14	T58		H	B
+L01	15	T88		H	small o
+L01	16	T49		H	box on stem
+L01	17	T86	T60	M	two verticals, one bar
+L01	18	T76		M	9 with long tail
+L01	19	X_NEW	T46	M	lone digit 8
+L01	20	T90	T84	M	circle-based with cross on top
+L01	21	T98		H	phi with long stem; at s2/s3 overlap
+L01	22	T86		M	two verticals one bar
+L01	23	T60		H	two verticals two bars
+L01	24	T33		H	double-stroke on baseline
+L01	25	T85		H	plus
+L01	26	X_S		M	long-s shape
+L01	27	T37		H	barred theta
+L01	28	T83		M	x-with-loop (3 + t)
+L01	29	T63		H	V
+L01	30	T45		H	circle with tall stem; line end
+L02	1	T51	T95	M	line start; p with crossbar on stem
+L02	2	T85		M	plus with hooked left arm
+L02	3	T86	T60	M	two verticals, bars unclear
+L02	4	T60		H	two verticals two bars
+L02	5	T25		H	lambda
+L02	6	T76	T27	M	g/9 with hooked tail
+L02	7	T65		H	double loop on cross
+L02	8	T45		H	circle with stem up
+L02	9	T60		H	two bars
+L02	10	T53		H	infinity
+L02	11	T80		H	D; at s1/s2 overlap
+L02	12	T19		H	pi
+L02	13	T60		H	two bars
+L02	14	T18		H	loop with bar on stem, foot
+L02	15	T76		M	q/9 shape
+L02	16	T50		H	omega with S
+L02	17	T19		H	pi
+L02	18	T60		H	two bars
+L02	19	T33		H	double-stroke on baseline
+L02	20	T45		H	circle with stem up
+L02	21	T60		M	two bars; at s2/s3 overlap
+L02	22	T25		H	lambda
+L02	23	T81	T83	L	x with loop on right
+L02	24	T37		H	barred theta
+L02	25	T49		H	box on stem, hooked foot
+L02	26	T86		M	two verticals one bar
+L02	27	T98	T18	M	phi, stem with hooked foot
+L02	28	X_NEW	T51	L	4-like with crossbar
+L02	29	X_NEW		M	7-like stroke; line end
+L03	1	T90		H	line start; circle with cross on top
+L03	2	T55		M	barred F stroke, leaning
+L03	3	T33		H	double-stroke on baseline
+L03	4	T83		M	3 joined to t
+L03	5	T51	T95	M	p with crossbar
+L03	6	T33		H	double-stroke on baseline
+L03	7	T19		H	pi
+L03	8	T80		H	D
+L03	9	T81	T83	L	x with loop
+L03	10	T51		M	crossed 2/k shape; at s1/s2 overlap
+L03	11	T86		H	two verticals one bar
+L03	12	T70		H	triangle
+L03	13	T19		H	pi
+L03	14	T33		H	double-stroke on baseline
+L03	15	T86		H	two verticals one bar
+L03	16	T81	T83	L	x with loop
+L03	17	T60		H	two bars
+L03	18	T76		M	q/9
+L03	19	T85		M	small plus with hook
+L03	20	T76		M	q/9
+L03	21	T60		H	two bars; at s2/s3 overlap
+L03	22	T65		H	double loop on cross
+L03	23	T18		H	loop with bar on stem
+L03	24	T45		H	circle with stem up
+L03	25	X_NEW	T46	M	lone digit 8
+L03	26	X_S		M	s shape
+L03	27	T90	T84	M	cross on top of a filled blob
+L03	28	T90		H	cross on top of circle
+L03	29	T52		H	n with descending z tail
+L03	30	X_NEW	T96	L	looped rho/ell with tail
+L03	31	T81	T83	L	x with loop; line end
+L04	1	T50		H	line start; omega with S
+L04	2	T45		H	circle with leaning stem
+L04	3	T88		H	small o
+L04	4	T33		H	double-stroke on baseline
+L04	5	T80		H	D
+L04	6	T51		M	crossed p
+L04	7	T86		H	two verticals one bar
+L04	8	T92		H	omega
+L04	9	T65		H	double loop on cross
+L04	10	T90		H	circle with cross on top; at s1/s2 overlap
+L04	11	T45		H	circle with leaning stem
+L04	12	T83		H	3 joined to t
+L04	13	T98		H	phi
+L04	14	T19		M	short pi
+L04	15	X_S		M	long-s, sup o
+L04	16	T76		M	q/9
+L04	17	T88		H	small o
+L04	18	T33		H	double-stroke on baseline
+L04	19	T96		H	e/ell shape
+L04	20	T98		H	phi
+L04	21	T45		H	circle with stem; at s2/s3 overlap
+L04	22	T83		H	3 joined to t
+L04	23	T86		H	two verticals one bar
+L04	24	T60		H	two bars
+L04	25	T18		H	loop with bar on stem, foot
+L04	26	T83		H	3 joined to t
+L04	27	T19		H	pi
+L04	28	T80		H	D
+L04	29	T53		H	infinity; line end
+L05	1	X_S		M	line start; long-s
+L05	2	T51		M	crossed p
+L05	3	T33		H	double-stroke on baseline
+L05	4	T98		H	phi
+L05	5	T24		H	epsilon
+L05	6	T37		H	barred theta
+L05	7	T36		H	round head on stem
+L05	8	T80		H	D
+L05	9	T64		H	m, sup a, dot below
+L05	10	T76		M	q/9
+L05	11	T29		H	epsilon joined to o; at s1/s2 overlap
+L05	12	T51	T95	M	p with crossbar
+L05	13	X_NEW	T26	L	d-shape with looped ascender
+L05	14	T80		H	D
+L05	15	T60		M	two bars, dotted
+L05	16	T98		H	phi
+L05	17	T45		H	circle with stem up
+L05	18	T51		M	crossed p
+L05	19	T45		H	circle with stem up
+L05	20	X_NEW	T96	L	looped rho/ell with tail
+L05	21	T76		M	q/9
+L05	22	T83		H	3 joined to t; at s2/s3 overlap
+L05	23	T65		H	double loop on cross
+L05	24	T19		H	pi
+L05	25	T33		H	double-stroke on baseline
+L05	26	T27	T57	M	loop with long hooked tail
+L05	27	T76		M	9
+L05	28	T98		H	phi
+L05	29	X_NEW		L	y-like with long hooked tail, smudged
+L05	30	T45		M	circle with looped stem
+L05	31	T95		M	P on stem; line end
+L06	1	T98		H	line start; phi
+L06	2	T80		H	D
+L06	3	T19		H	pi
+L06	4	T60		H	two bars
+L06	5	T98		H	phi
+L06	6	T63		H	V
+L06	7	T45		H	circle with stem up
+L06	8	T92		M	omega with inner hook
+L06	9	T53		H	infinity
+L06	10	T83		H	3 joined to t
+L06	11	T45		H	circle with stem up; at s1/s2 overlap
+L06	12	X_S		M	long-s
+L06	13	T51		M	crossed p
+L06	14	T33		H	double-stroke on baseline
+L06	15	T98		H	phi
+L06	16	T76		M	q/9
+L06	17	T60		H	two bars
+L06	18	T90		H	circle with cross on top
+L06	19	T51	T95	M	small crossed p
+L06	20	T81	T83	L	x with loop
+L06	21	T86		H	two verticals one bar
+L06	22	T96		H	e/ell shape; at s2/s3 overlap
+L06	23	T64		H	m, sup a, dot below
+L06	24	T45		M	circle with leaning stem
+L06	25	T98		H	phi
+L06	26	T90		H	circle with cross on top
+L06	27	T76		M	q/9
+L06	28	T80		H	D
+L06	29	T76		M	9 with curved tail
+L06	30	T76		M	q/9
+L06	31	T98		M	phi with ink blot; line end
+L07	1	T88		H	line start; small o
+L07	2	T33		H	double-stroke on baseline
+L07	3	T45		H	circle with stem up
+L07	4	T36		H	round head on long stem
+L07	5	X_NEW		M	lambda/X with a parallel slash
+L07	6	T63		M	curved V
+L07	7	T45		H	circle with stem up
+L07	8	T33		H	double-stroke on baseline
+L07	9	T85		H	plus
+L07	10	T86		H	two verticals one bar; at s1/s2 overlap
+L07	11	T53		H	infinity
+L07	12	T25		M	lambda with loop at top
+L07	13	T86		H	two verticals one bar
+L07	14	T49		H	box on stem
+L07	15	T19		H	pi
+L07	16	T33		H	double-stroke on baseline
+L07	17	T92		M	omega with loop
+L07	18	T98		H	phi
+L07	19	T49		H	box on stem
+L07	20	X_K		H	capital K; at s2/s3 overlap
+L07	21	T51		M	crossed p
+L07	22	T80		H	D
+L07	23	T86		H	two verticals one bar
+L07	24	T63		M	small V
+L07	25	T37		H	barred theta
+L07	26	X_NEW		M	lambda/X with a parallel slash
+L07	27	T18	T98	M	filled loop on stem, dot foot
+L07	28	T86		H	two verticals one bar
+L07	29	T81	T83	L	x with loop; line end
+L08	1	T29		H	line start; epsilon joined to o
+L08	2	X_EQ		H	two parallel strokes
+L08	3	T85		H	plus
+L08	4	T33		H	double-stroke on baseline
+L08	5	T19		H	pi
+L08	6	T83		H	3 joined to t
+L08	7	T80		H	D
+L08	8	T98		H	phi
+L08	9	T45		H	circle with stem up
+L08	10	T83		H	3 joined to t; at s1/s2 overlap
+L08	11	T50		H	omega with S
+L08	12	T45		H	circle with stem up
+L08	13	T98		H	phi
+L08	14	T53		H	infinity
+L08	15	T37		H	barred theta
+L08	16	X_NEW	T26	L	d-shape with looped ascender
+L08	17	T37		H	barred theta
+L08	18	T25		H	lambda
+L08	19	T83		H	3 joined to t
+L08	20	T45		H	circle with stem; at s2/s3 overlap
+L08	21	T98		H	phi
+L08	22	T80		H	D (rounded)
+L08	23	T51		M	crossed p
+L08	24	T45		H	circle with stem up
+L08	25	T76		M	9/g
+L08	26	T45		H	circle with stem up
+L08	27	T92		M	omega with loop
+L08	28	T53		H	infinity, followed by a dot; line end
+L09	1	X_NEW	T10	L	line start; plus joined to o
+L09	2	T45		H	circle with stem up
+L09	3	T92		M	omega, filled
+L09	4	T55		M	barred F stroke, leaning
+L09	5	T80		H	D
+L09	6	T76		M	9/g with hooked tail
+L09	7	T70		H	triangle
+L09	8	T29		H	epsilon joined to o
+L09	9	T98		H	phi
+L09	10	T80		H	D
+L09	11	T51		M	crossed p; at s1/s2 overlap
+L09	12	T49		H	box on stem
+L09	13	T19		H	pi
+L09	14	T33		H	double-stroke on baseline
+L09	15	T98		H	phi
+L09	16	T92		M	omega with loop
+L09	17	T86		H	two verticals one bar
+L09	18	T54		H	R
+L09	19	T81		H	x
+L09	20	T51		M	crossed p
+L09	21	T45		H	circle with stem; first full sign of s3
+L09	22	T65		H	double loop on cross, dot
+L09	23	T85		H	plus
+L09	24	T60		H	two bars
+L09	25	T53		H	infinity
+L09	26	T88		H	small o
+L09	27	T33		H	double-stroke on baseline
+L09	28	T80		H	D
+L09	29	T51		M	crossed p, long bar; line end
+L10	1	T83		H	line start; 3 joined to t
+L10	2	T45		H	circle with stem up
+L10	3	T19	T33	M	low pi with flourish
+L10	4	T57		H	diamond on hooked stem
+L10	5	T80		H	D
+L10	6	T57		H	diamond on hooked stem
+L10	7	T85		M	plus, long bar
+L10	8	X_NEW	T76	L	6/9 loop inside a large curved stroke
+L10	9	T84		M	down-triangle with bar through
+L10	10	X_NEW	T70	M	triangle above crossbar with stem below
+L10	11	X_S		M	long-s with dots; line end
