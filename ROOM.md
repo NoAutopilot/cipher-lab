@@ -13396,3 +13396,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 23:22 | ES132-R7 worker | claim es132-vargas-mexia-1578: test2 loader fix + settle_dup --check repair + rule-7 re-derivation of f.89; cap 4, box 23:22-00:42 UTC 10 Oct (80% 00:26); disk only; for LANE FAMILY-A2m (account 2)
 2026-10-09 23:23 | SUR-266 worker | claim na-suriname-map-1781: SUR-266 governor letters 1739-42 screen (inv 266-270, then 370/371/378-380 every 10th if budget); cap 3, <=150 NA requests, box 23:25-00:40 UTC (80% 00:25); NA take follows; for LANE FAMILY-A2m (account 2)
 2026-10-09 23:23 | VB-EYE worker (Sonnet) | claim VB-EYE vanbeuningen-dewitt-1657 inv.1540 scans 0120/0134, cap 2, box 23:25-00:35 UTC 10 Oct; huygens first, NA only after SUR-266 NA release -- for LANE FAMILY-A2m (account 2)
+2026-10-09 23:23 | SUR-266 worker | NA take (service.archief.nl / www.nationaalarchief.nl) for LANE FAMILY-A2m (account 2)
