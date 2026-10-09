@@ -1,0 +1,247 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T	t	M	line start; after prose "justice"; tall bar tangled with writing of line below
+L01	2	II	#	M	two strokes joined by one bar
+L01	3	o	0	M	smaller than following 0
+L01	4	m		H	
+L01	5	sq		H	
+L01	6	#		H	
+L01	7	1		H	
+L01	8	Z	z	M	z with cross bar
+L01	9	0		H	
+L01	10	0'	t	M	0 with vertical stroke crossing top
+L01	11	m		H	
+L01	12	1		H	
+L01	13	a		H	alpha form
+L01	14	L		H	
+L01	15	4		H	
+L01	16	+		H	
+L01	17	0		H	
+L01	18	a		H	
+L01	19	m		M	ink dot on it
+L01	20	3	z	L	line end; at crop edge, long tail/foot below
+L02	1	a		H	line start
+L02	2	m		H	
+L02	3	0	o	M	
+L02	4	Z		H	z with bar
+L02	5	1		H	
+L02	6	f		H	
+L02	7	1		H	
+L02	8	a		H	
+L02	9	a		H	alpha form
+L02	10	p	x	M	xp form
+L02	11	4		H	
+L02	12	sq		M	stroke from line above touches top
+L02	13	v		H	
+L02	14	L	1	M	short stroke with foot
+L02	15	o	0	M	
+L02	16	f		H	
+L02	17	v	v'	M	vertical stroke above, may be from line above
+L02	18	4		H	underline flourish below
+L02	19	4		H	open triangle with flag form
+L02	20	0		H	
+L02	21	II	#	M	
+L02	22	v	v'	M	vertical stroke through it above and below
+L02	23	#		H	
+L02	24	0		H	
+L02	25	sq		H	
+L02	26	II		H	
+L02	27	m		H	
+L02	28	1		H	last sign of s1; overlap starts
+L02	29	w		H	omega with overbar
+L02	30	v		H	
+L02	31	0'		H	0 with stroke over
+L02	32	sq		H	
+L02	33	0		H	end of first run; prose follows
+L02	34	y		H	prose skipped before this sign: "en fin de ne vous par[ler]"; psi with crossed stem
+L02	35	4		M	4 with long descender
+L02	36	a		H	
+L02	37	m		H	
+L02	38	1		H	
+L02	39	4		H	
+L02	40	0'		H	
+L02	41	+		H	
+L02	42	1		H	line end
+L03	1	m	m'	M	line start; small mark above
+L03	2	1		H	
+L03	3	p		H	xp form
+L03	4	4		H	
+L03	5	+		H	
+L03	6	f		H	
+L03	7	v	v'	M	vertical stroke above
+L03	8	0		H	
+L03	9	sq		H	
+L03	10	m		H	
+L03	11	L		H	
+L03	12	Z		H	
+L03	13	v		H	
+L03	14	y		M	Y with cross stroke (crossed-y form)
+L03	15	0'		H	
+L03	16	a	4	M	a written like caret with tail
+L03	17	m		H	
+L03	18	1		H	
+L03	19	II		H	
+L03	20	0		H	
+L03	21	4		H	
+L03	22	v		H	
+L03	23	1		H	gap before
+L03	24	sq		H	
+L03	25	m		H	
+L03	26	p		H	xp form
+L03	27	0		H	
+L03	28	y		M	crossed-y form
+L03	29	#		H	
+L03	30	w		H	
+L03	31	y		H	psi with long stem
+L03	32	1	L	M	1 with foot
+L03	33	v	v'	M	stroke above
+L03	34	0'		H	
+L03	35	4		H	
+L03	36	m		H	
+L03	37	sq		H	
+L03	38	o	0	M	
+L03	39	f		H	
+L03	40	t	f	M	cross with lower bar/loop
+L03	41	1		H	
+L03	42	m		H	
+L03	43	c		H	
+L03	44	3		H	
+L03	45	NEW:0 with horizontal bar inside (theta)	0'	M	theta shape
+L03	46	a	a'	M	mark above, maybe from line above
+L03	47	y		H	psi
+L03	48	p		H	xp form
+L03	49	w		H	
+L03	50	o	0	M	
+L03	51	m	m'	M	short bar above
+L03	52	1	.	M	dot under the stroke
+L03	53	Z		H	
+L03	54	0'	NEW:d (0 with tall stem up)	M	line end; 0 with tall upward stroke
+L04	1	1		H	line start
+L04	2	sq		H	
+L04	3	#		M	extra marks above
+L04	4	t	f	L	dagger-like cross with hooked top
+L04	5	0'		H	
+L04	6	c		H	
+L04	7	y		H	psi
+L04	8	p		H	xp form
+L04	9	m		H	
+L04	10	II		M	second stroke slanted
+L04	11	a		H	
+L04	12	m		H	
+L04	13	4		H	
+L04	14	v	v'	M	stroke above; brace-like stroke after it from another line ignored
+L04	15	sq		H	
+L04	16	m		H	
+L04	17	w		H	
+L04	18	1		H	
+L04	19	a	4	M	A-like
+L04	20	m		H	
+L04	21	4		H	
+L04	22	m		H	last sign of s1 (edge)
+L04	23	o	0	M	
+L04	24	Z		H	
+L04	25	v		H	
+L04	26	m		H	
+L04	27	a		H	alpha form
+L04	28	4		H	triangle form, stroke below from line below
+L04	29	L	1	M	
+L04	30	sq		H	
+L04	31	#		H	
+L04	32	0		H	
+L04	33	0'		H	
+L04	34	sq		M	tick above
+L04	35	1		H	
+L04	36	L		H	
+L04	37	f		H	
+L04	38	a		H	
+L04	39	m		H	
+L04	40	0		H	
+L04	41	4		H	
+L04	42	a		H	
+L04	43	m		H	
+L04	44	1		H	
+L04	45	sq	sq'	M	stroke above
+L04	46	0'	0	M	faint stroke above
+L04	47	v		H	
+L04	48	w		H	line end
+L05	1	m		H	line start; interlinear gloss above ignored
+L05	2	p		H	xp form
+L05	3	II		H	
+L05	4	m		H	
+L05	5	4		H	
+L05	6	L		H	
+L05	7	0		H	
+L05	8	w		H	
+L05	9	sq		H	
+L05	10	0'	NEW:d (0 with tall stem up)	M	delta-like
+L05	11	w		H	
+L05	12	y		H	psi
+L05	13	II		H	
+L05	14	.		M	baseline dot before square
+L05	15	sq		H	
+L05	16	1		H	
+L05	17	m		H	
+L05	18	0'		H	0 with cross above
+L05	19	NEW:Gamma with long descender	T	L	
+L05	20	t	+	M	cross with hooked foot
+L05	21	y		M	crossed-y form
+L05	22	II	II'	M	mark above
+L05	23	m		H	
+L05	24	II		H	
+L05	25	NEW:u shape with hook	c	M	last of s1 overlap
+L05	26	1		H	
+L05	27	c		H	
+L05	28	y		M	y with tail, mark above
+L05	29	f		H	
+L05	30	4		H	
+L05	31	L		H	
+L05	32	0		H	
+L05	33	m		H	
+L05	34	v	v'	M	stroke above
+L05	35	1		H	
+L05	36	y		M	crossed-y form
+L05	37	v		H	
+L05	38	f		H	
+L05	39	m		H	
+L05	40	#		H	
+L05	41	1		H	
+L05	42	Z		H	
+L05	43	y		H	psi
+L05	44	y		M	crossed-y form
+L05	45	sq	sq'	M	stroke above
+L05	46	L		H	
+L05	47	0		H	
+L05	48	m		H	
+L05	49	w		H	
+L05	50	#		H	
+L05	51	1		H	line end
+L06	1	NEW:v over long baseline	v	L	line start
+L06	2	m		H	
+L06	3	p		H	xp form
+L06	4	m		H	
+L06	5	w		H	
+L06	6	L	T	M	
+L06	7	II		H	
+L06	8	0		H	
+L06	9	4		H	
+L06	10	v		H	
+L06	11	f		H	
+L06	12	y		H	psi
+L06	13	sq		H	
+L06	14	m		H	
+L06	15	4		M	with cross below from line below
+L06	16	y		M	psi/phi long stem
+L06	17	w		H	
+L06	18	0		H	
+L06	19	v		H	
+L06	20	-:-		H	
+L06	21	4		H	
+L06	22	1		H	
+L06	23	v		H	
+L06	24	m		H	
+L06	25	y	NEW:phi (o with stem)	M	closed o with stem down
+L06	26	0		H	
+L06	27	y		M	crossed-y form
+L06	28	1		H	
+L06	29	c		H	
+L06	30	v		H	
+L06	31	+		H	line end; prose follows "de pense bonne..."
