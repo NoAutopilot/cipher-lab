@@ -1659,3 +1659,8 @@ is line 19 'Cagar'? Then leaf0255.jpg, right-hand column: is line 15 'Jus' or 'J
 About 5 minutes; the calibration sheets in images/rows_hires/sheets show what the counting rule gives on 7 known columns."
 Vision calls: 14 Sonnet subagent calls (one sheet each, about 96k subagent tokens each); own looks 3 (contact sheet, two column checks, one
 debug overlay). Requests: iiif.archive.org 5.
+
+## While waiting (9 Oct 2026)
+- Fresh-PREREG re-calibration of the 1897 px per-row labeller on held-out columns (depends on nobody, ~$4): LIN-COUNT's gate failed only on its "undecided" clause (every rank exact in 14/14 column-passes), so a new PREREG with that clause rewritten, scored on calibration columns NOT used by LIN-COUNT (other known-rank groups, fresh leaves at 1897 px), is a legitimate new test; only if it passes are 83/2 and 241/3 labelled. Not a re-score of LIN-COUNT's sheets.
+- Waiting: a person's count of 83/2 and 241/3 (ASKS draft text above, not filed); LOCAL-QUEUE L10 (Textos Politicos 1993).
+(LANE FAMILY-A2h orchestrator, account 2, at the account-4 orchestrator's 11:38 request.)
