@@ -222,3 +222,12 @@ alignment work, listed in the relevant circle folders above.
 host for 5575/5550/5557/5808, no overlap). www.dbnl.org 0 (G3's existing page reads reused, per "scripts read,
 fetch once" and to stay well under the 20-request cap). archive.org 0 (not needed -- WVO's own remarks and the
 reused G3/folder page-checks were sufficient). No subagents (none named in the brief). Well under the $8 cap.
+
+## Search-term gap, logged 9 Oct 2026 23:2x UTC (orchestrator (account-4))
+
+The 24 Sept harvest's seven terms (cijfer and its compounds, chiffre, onopgelost, oplossing) miss remarks that say
+**geheimschrift** or **geheim** with no "cijfer" at all. Found 7 Oct 2026 by LANE KH-1 (KH1-D, `ciphers/august-van-saksen-1561-64/NOTES.md`
+"Keyhunt 7 Oct 2026"): `opmerkingen=geheimschrift` gives 11 records and `geheim` 19, adding WVO 76 (no cipher on the original), 1068 and
+1130 (both Willem van Hessen, both with a period decipherment on the leaf). Any future WVO sweep runs cijfer, geheimschrift, geheim and
+ontcijfering as four separate searches and reads every witness line (origineel, minuut, afschrift), not only the imaged received letter.
+Re-stated 9 Oct 2026 by the owner's desk agent (PR #70, `second-opinions/chatgpt-2026-10-09-WVO-family-priorities.md`, unmerged).
