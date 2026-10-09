@@ -1,0 +1,19 @@
+item	answer	conf	note
+1	2	M	stem with loop top-right and crossbars, not plain P
+2	1	M	same shape as item 1: loop head, crossbars on stem
+3	2	M	two verticals, single horizontal bar
+4	1	M	w-form with rising curl at right
+5	1	M	plain x/loop cross, no extra bar
+6	2	M	c-e with closing curl, w with rising tail
+7	1	M	clear 8 then 5, no second unlisted marks
+8	2	M	c-e with closing curl, same as item 6
+9	T17	L	plain t, no curl at top; not T42
+10	2	M	plain m, tilde belongs to next sign
+11	1	M	two verticals, one main bar
+12	1	M	c-e with closing curl, same as items 6/8
+13	1	H	E joined to o by bar, one sign
+14	2	M	bracket holds bare 8 only, no 6
+15	1	H	E joined to o by bar, one sign
+16	1	M	open loop on long descending stem, no stem above
+17	1	M	same as item 16
+18	T85	M	bracket holds a plain cross, not the w sign
