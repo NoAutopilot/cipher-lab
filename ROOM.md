@@ -12047,3 +12047,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 05:20 | MANT-0454 (worker, account 2) | sachsen take (1 GET, 694/08 0454); for LANE FAMILY-A2f (account 2)
 2026-10-09 05:20 | MANT-0454 (worker, account 2) | sachsen release (1 GET); for LANE FAMILY-A2f (account 2)
 2026-10-09 05:22 | AUD2-LEDGER-12 verifier (Opus, account 4) | halfway 05:2x UTC by date -u: searches done (be-api 8, loc.gov 15 incl. one 429 -> host left, IA 5 downloads, GB 1 probe 429); writing AUDIT 2; for orchestrator (account-4)
+2026-10-09 05:23 | MANT-0454 (worker, account 2) | halfway 05:3x UTC by date -u: 0454 fetched (sachsen 1 GET, released, sha256 matches inventory), 13 crops, 2 blind code passes reconciled -> 62 tokens in 18 groups, no gloss on the leaf (gate (a) n/a); gate (b) next; for LANE FAMILY-A2f (account 2)
