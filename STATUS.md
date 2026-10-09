@@ -5925,6 +5925,40 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-1310, session_01Xvms7TJ6c589BD817Fkatp, account 2), 9 October 2026 (closed 14:3x UTC: three waves worked, lane ~52.5 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-1310-jobs.md. Started from the
+1010 handoff next list items 1, 2, 3, 5. Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded. Workers 12 in 3 waves (13:19-14:12 UTC;
+Opus 7, Sonnet 5; all ledgered from get_session, archived): 46.85; orchestrator ~5.6. Account 2 seven_day `allowed_warning` throughout (continued per
+blast rules). Gallica probe 13:2x UTC -> 403 (one probe). Known-text share ~48%, all key tests/builds for unread siblings (MANT-CUC3, MANT-0494,
+MANT-0474, BRO-123). Not taken: handoff item 4 (antt-linhares-chave labeller re-calibration) -- the instrument is [retired] at 1897 px after a
+pre-registered calibration FAIL; re-cutting the gate on the same material is rule 3's third-attempt shape (a person's count or a different instrument).
+
+Results:
+- antt-msliv0638-brochado-1712: BRO-SWEEP opened m0250-m0269 + m0178 (42 of 278 body leaves now seen): cipher on m0253-m0254 (body original of appendix
+  Carta 123), a second run on m0178, an inline string on m0264. BRO-123 (known text, key test): 911 tokens, S 0.836 vs perm p99 0.220 PASS; x/d/f/16/2
+  confirmed at C. V-BRO24 (separate session): code 24 = e at C (key.tsv n=2 was an equal-length tally bug), letter 134 C54/M14/U2 -> C56/M12/U2;
+  the judge still FAILs (pt18 -1.236 vs real_p05 -1.134), so letter 134 stays a candidate.
+- sachsstaatsarchiv-manteuffel-1712: MANT-0177 applied V-MANT0176's fix (gate holds -1.277 vs p95 -1.665, S27 M3 U0); 0177 has 11 tokens, too-short.
+  MANT-CUC3: 0398 PASS, 7-leaf clear-under-code pool 156/231 vs p99 38/45; code 19 at n twice vs Krauske non-valeur (conflict, to a verifier).
+  MANT-0494 gloss PASS 74/99 vs p99 27; MANT-0474 gloss PASS (L 11/11, R 60/69); 0494's 13 right-page codes 231-715 still single-witness (held);
+  63 rule-4 conflict logged. MANT-CENSUS: the 5 date-only AB BO frames are not the printed letters; 0003-0130 inventoried (inv08d.tsv), new
+  code-bearing 0089/0113 heavy, 0103 glossed.
+- es132-vargas-mexia-1578: ES132-LOOK look-alike pass f.51v/f.52r residual 0.6%/3.2% (agreement), gate (b) holds; ES132-AUDIT planted catch 7/9 under
+  its 0.80 gate -> non-test; 16 focus rows for the owner's sorter.
+- heinsius-vanhaersolte-1703: HEIN-SR2 Deel 2 pp.132-251 no cipher run (0 runs in pp.7-251 so far).
+
+**next** (for the next LANE FAMILY incarnation):
+1. antt-msliv0638: transcribe m0178's second run and m0253-m0254's clear prose the appendix omits, as more same-key material (~$3); the body originals of
+   the other 35 appendix entries (~236 leaves) are same-key glyph controls, low value for reading; letter 134 itself still waits on ASKS 108 (BL copy).
+2. Manteuffel: a separate verifier on code 19 (n vs non-valeur) and 63/54 conflicts across the CUC and gloss leaves (~$2.5, disk); 0089/0113 heavy
+   glossed leaves as more witnesses for codes > 401 (~$5 each, premise check first); frames past 0130 at offsets 1/3 (~$3.5 per 50 frames).
+3. es132: the next Cipher 3 letter needs Gallica (403 from the cloud); a planted-control redo of the look-alike re-read with a sample large enough to
+   clear 0.80 (~$2) only if a later step depends on passD.
+4. heinsius: pp.252-600 small_runs (~$1.5 per 120 pages, low prior).
+Excluded this incarnation (other lanes): eckert-*, lodewijk-van-nassau-1573-74, jan-van-nassau-1572-75, craven-rupert-1648, fr4735-monluc, sforza-pusterla,
+decode-* and bne20211 (account 4), baluze167, huntington-blathwayt, ceppo-nevers, pro3055-clinton-1779, fr16045-pisany, birago-*, hellen-frederick-1752, ra-karlxi.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-1010, session_01374AXg57FqWBwpvk29CTLT, account 2), 9 October 2026 (closed 12:3x UTC: four waves worked, lane ~58.9 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-1010-jobs.md. Started from the
