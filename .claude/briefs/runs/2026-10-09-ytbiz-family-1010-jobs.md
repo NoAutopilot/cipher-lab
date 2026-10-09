@@ -91,3 +91,30 @@ NOTES "FAM-4333L" side check (line ~1508): grep R4282/R4284's clear phrases on d
 Quirites, Leodius, Anastasius, Tryphon, Hannibal, Paulus, Sigismundus, Norwegia, Piccardia, Biscaia, ... -- full list from the FAM-4333L section or the
 R4120 PDF transcription on disk). Positive control: one name known to occur in the AOSB text. Write rik_cover_hits.tsv + NOTES section; status unchanged
 unless a hit ties R4120 to the Camerarius 1626-28 letters (then say so as a lead, grade nothing).
+
+## Wave 2 (drafted 10:3x UTC 9 Oct; spawned as slots free)
+
+### MANT-CUC (Opus, cap 7, box 120 min, sachsen take/release): sachsstaatsarchiv-manteuffel-1712, clear-under-code leaves as a gloss-free key check
+Handoff next 2 second half; NOTES Remaining gaps bullet "694/08 clear-under-code leaves 0323, 0282, 0348, 0398 (+0499, 0284/0410)" and the
+MANT-INV08C inventory rows (mant0608/inv08c.tsv). These are draft/instruction pages (mostly Flemming's hand, the other direction of the correspondence)
+with CLEAR words underlined and the code runs written ABOVE them: the clear word is the known answer, no gloss reading involved. Check 1: grep
+HYPOTHESES.md/NOTES for any earlier key check on these leaves (MANT-INV08 named 0284+0410 at ~$2; confirm it never ran). Fetch (sachsen take/release,
+>= 2 s) 0323 and 0348 first (largest), then 0282 and 0410 only if the cap allows; save under f0323_08/ etc. with manifest entries. Crops: code-run
+lines only (`tools/iiif_lines.py --image ... --out ... --debug`, pasted); per leaf ONE Sonnet call for pass A and ONE for pass B over that leaf's
+code crops (digits only, the clear word under each run NOT shown -- crop the code line above the underline), plus one call reading the clear words
+(blind, separately); reconcile with tools/reconcile_passes.py. PREREG-MANTCUC.md (own commit, pushed, checked on origin) before scoring: statistic =
+share of codes whose key.tsv value equals the corresponding letter/syllable/word of the clear word under the run (exact rule for multi-code words:
+concatenated key values == clear word after normalisation); control = 1,000 permutations of key.tsv values among codes (changes values, so it can
+differ); gate = real > p99. Report per leaf and pooled; codes absent from key.tsv or disagreeing go to `cuc_candidates.tsv` (grade C from the
+clear word, never into key.tsv). Units: 2-4 GETs + 3 calls per leaf (A, B, clear) x 2-4 leaves + 1 reconciliation, ~$1.5 per call; stop before
+starting a leaf that would cross 80% of cap. No decode of any unglossed leaf.
+
+### LIN-VIEYRA (Sonnet, cap 1.5, box 50 min): antt-linhares-chave, new material for the two M dictionary counts (cagar p.83 col 2, justa p.241 col 3)
+NOTES Remaining gaps bullets for 283219 "cagar" and 3241315 "justa" and the A1B-LIN-ROWS diagnosis (~line 1250): three instruments retired on the
+949 px IA derivative; the named next step is new material. Find (no counting): (1) whether archive.org newpocketdiction00viey has a higher-resolution
+original (the item's files list: `_jp2.zip` / `_orig_jp2.tar`; the IIIF/BookReader full-size of leaves 95 and 255 -- one metadata request, then
+at most 2 page fetches at the largest size served; record the pixel width vs 949); (2) a second independent scan of Vieyra, A New Pocket Dictionary
+of the Portuguese and English Languages, London 1809, Part I: IA advancedsearch (title/creator, other identifiers), Google Books API
+(country=US, key, filter=full), HathiTrust bibliographic API by OCLC (Chrome UA) -- list each copy with edition year, identifier, view and whether
+pp.83 and 241 are reachable. Fetch the two pages from at most one second copy. Write `vieyra_copies.tsv` and a NOTES section; update the two gap
+bullets' "next" with what was found; gaps_check. No count, no regrade (a later job counts under a fresh PREREG).
