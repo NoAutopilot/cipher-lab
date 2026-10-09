@@ -122,6 +122,24 @@ def test_planted_pile_ranks_top5():
     assert rows.index(next(r for r in rows if r['ark'] == 'planted')) < 5
 
 
+def test_permute_null_catches_concentration_not_spread():
+    """--permute (MQS-BNF-S2A): a 10-item pile in one of 20 volumes beats its null; the same 10 bare items spread one
+    per volume tie their null (must-not-pass case)."""
+    clear = ['Lettre de Henri III au duc de Nevers, 1585.'] * 9
+    conc = [['Pièce en chiffre.'] * 10] + [clear + clear[:1]] * 19
+    real, null = bf.permute_null(conc, 200)
+    assert real == 10 and real > null[189]
+    spread = [['Pièce en chiffre.'] + clear for _ in range(10)] + [clear + clear[:1]] * 10
+    real, null = bf.permute_null(spread, 200)
+    assert real == 1 and not real > null[189]
+
+
+def test_permute_fr2988_offline():
+    p = os.path.join(ROOT, 'sources/bnf-findingaids/2026-10-09/cc49442s.html')
+    out = bf.permute_report([p] + sorted(glob.glob(os.path.join(ROOT, 'sources/bnf-findingaids/2026-10-07/*.html')))[:20], 50)
+    assert 'real max bare 26' in out and 'real > p95: yes' in out
+
+
 if __name__ == '__main__':
     if '--controls' in sys.argv:
         smp = sample_scores()
@@ -152,3 +170,4 @@ if __name__ == '__main__':
         if name.startswith('test_'):
             fn()
     print('ok')
+

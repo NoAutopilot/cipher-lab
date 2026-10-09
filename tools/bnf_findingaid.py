@@ -33,6 +33,12 @@ Scope (Usage 8a):
   9 Oct 2026: its classifier reads the Tomokiyo line "f.2 and f.9 ... not deciphered yet" as KNOWN and f.1 "broken by
   Torbjorn Andersson" as CONTEXT; --pile applies a stated wording guard on top (negation words void a KNOWN,
   "broken/deciphered/solved by" makes a CONTEXT KNOWN), see item_status().
+  --permute N (with --pile; MQS-BNF-S2A, 9 Oct 2026): across-volume permutation null for the pile statistic. Pools
+           every item of the given notices, permutes item texts across volumes N times (per-volume item counts kept,
+           seed 20261009) and reports the real max `bare` in one volume beside the null's p50/p95/max.
+  catches  a pile that is a real concentration in one volume (fr.2988: 26 vs a null p95 of a few);
+  does NOT pass a set whose bare items are spread thin across volumes (test: an even spread ties its own null), and a
+           within-volume order shuffle is not offered (it cannot change `bare`: rule 3, a control that cannot vary).
   --census PHRASE ... --out DIR: one quoted POST per phrase, total + facets + first-page ids (never pages further).
   --local-search IR TERM and --branch-pdf ARK: routes read from /js/pagePresentationIr.js (status in --help).
 
@@ -308,6 +314,31 @@ def pile(paths, prior=None, tsv=None, root=None, portals=True):
     return res, lines
 
 
+def permute_null(volumes, n=200, seed=20261009):
+    """volumes: list of item-text lists, one per volume.  -> (real max bare, sorted null maxima).  Item kinds are a
+    function of the text alone (classify_item), so permuting texts across volumes permutes kinds."""
+    import random
+    kinds = [[classify_item({'text': t}) == 'bare' for t in v] for v in volumes]
+    real = max((sum(k) for k in kinds), default=0)
+    pool = [b for k in kinds for b in k]
+    sizes, rng, null = [len(k) for k in kinds], random.Random(seed), []
+    for _ in range(n):
+        rng.shuffle(pool)
+        i, m = 0, 0
+        for z in sizes:
+            m, i = max(m, sum(pool[i:i + z])), i + z
+        null.append(m)
+    return real, sorted(null)
+
+
+def permute_report(paths, n=200, seed=20261009):
+    vols = [[r['text'] for r in parse(open(p, errors='ignore').read())[1]] for p in paths]
+    real, null = permute_null([v for v in vols if v], n, seed)
+    q = lambda f: null[min(len(null) - 1, int(f * len(null)))]
+    return '# permute: volumes %d items %d | real max bare %d | null n=%d p50 %d p95 %d max %d | real > p95: %s' % (
+        sum(1 for v in vols if v), sum(map(len, vols)), real, n, q(0.5), q(0.95), null[-1], 'yes' if real > q(0.95) else 'no')
+
+
 # ---------------------------------------------------------------------------------------------------------------
 # --census / --local-search / --branch-pdf (MQS-BNFPILE, 9 Oct 2026)
 # ---------------------------------------------------------------------------------------------------------------
@@ -400,6 +431,7 @@ def main():
     ap.add_argument('--prior', help='--pile: override TSV (shelfmark, folio, status, source) for statuses no cache holds')
     ap.add_argument('--out', help='--census: output directory (census.tsv, manifest.json, html/)')
     ap.add_argument('--tsv', help='--pile: write the per-volume table here')
+    ap.add_argument('--permute', type=int, metavar='N', help='--pile: across-volume permutation null, N permutations')
     ap.add_argument('--no-portals', action='store_true', help='--pile: skip the prior_work.py per-item check (fast)')
     ap.add_argument('--save-html', help='directory to keep the fetched notice (fetch once, read from disk after)')
     a = ap.parse_args()
@@ -420,6 +452,8 @@ def main():
     if a.pile:
         res, lines = pile(a.pile, a.prior, a.tsv, portals=not a.no_portals)
         print('\n'.join(lines))
+        if a.permute:
+            print(permute_report(a.pile, a.permute))
         return 0
     ark = a.ark
     if a.html:
