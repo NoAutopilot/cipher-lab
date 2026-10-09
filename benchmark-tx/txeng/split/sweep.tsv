@@ -1,0 +1,5 @@
+line	band	g2	g3	g4	g5	g6	g7	g8	g9	g10	g11	g12	n_A	gap_eq_A	nearest_A	n_B	gap_eq_B	nearest_B	n_F	gap_eq_F	nearest_F	working_gap	status
+f128_L02	40-140	35	29	25	22	20	20	20	19	18	17	16	9	-	12(16)	8	-	12(16)	8	-	12(16)	12	unfit: ink beyond the cipher row
+f128_L03	44-144	49	45	40	37	34	28	25	22	20	19	16	56	-	2(49)	56	-	2(49)	58	-	2(49)	2	flagged
+f128_L04	44-144	45	41	38	35	33	29	25	23	19	17	16	60	-	2(45)	61	-	2(45)	60	-	2(45)	2	flagged
+f128_L05	45-145	61	55	51	48	42	37	36	34	28	27	25	61	2	2(61)	62	-	2(61)	65	-	2(61)	2	flagged
