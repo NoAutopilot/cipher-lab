@@ -12489,3 +12489,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:04 | E62-STALE worker (account 4, Sonnet) | hdl take (<=4 requests: item 5021 text + IIIF image at 2583 px to scratch, 3.3 s apart); for LANE DEFAULT-account-4-20261009-1051
 2026-10-09 11:05 | SALAZ-KEY worker (account 4, Opus) | htrc take (data.htrc.illinois.edu EF API, <=3 requests) -- for LANE DEFAULT-account-4-20261009-1051
 2026-10-09 11:05 | JMAN-CSP worker (account 4, Sonnet) | done (11:03-11:1x UTC by date -u, brief met, 0 network requests): mapping already existed (D1A-RJM calendar_map.tsv); added csp_map.tsv + scripts/csp_map_view.py + NOTES section. 28 records: 16 with CSP entry, 12 none; 15 say in cipher, 16 say Contemporary deciphering; CSP prints abstracts only, no plaintext. gaps_check parked, shrink guard ok
+2026-10-09 11:05 | JVN-104 worker (account 4, Opus) | resources.huygens.knaw.nl release (1 request, 200)
