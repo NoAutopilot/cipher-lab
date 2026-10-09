@@ -8,6 +8,7 @@ solver repository or a printed edition? The per-item prior-work gate, v1 (PRIOR-
   prior_work.py <slug> --brief .claude/briefs/runs/<brief>.md         every item the brief names (per-item exit table)
   prior_work.py -      --register NEXT-STEPS.tsv      (also SIBLINGS-*.tsv, LOOSE-ENDS-*.md; step columns autodetected)
   prior_work.py <slug> --record ROWID 'CLEAR: f.18r, f.17v, f.19r read at native size, no gloss'
+  prior_work.py -      --interceptor England --year 1586   the interceptor's key depots to log as searched (prints only)
   prior_work.py <slug> --derive        propose ciphers/<slug>/items.pending.tsv (catalogue-only; never writes items.tsv)
 
 Why: research/PRIOR-WORK-LEAK-2026-10-08.md found 310 records of work spent on items already read (143 plaintext in
@@ -2183,6 +2184,40 @@ def aggregate(codes):
     return 5
 
 
+def interceptor_depots(root, power, year):
+    """Depot rows of tools/data/interceptor_depots.tsv for an intercepting power and a year (MQS-INTERCEPTOR, 9 Oct 2026;
+    row M45 of research/MARY-STUART-TALK-2026-10-09.tsv: search the intercepting power's archive for the key and the
+    decipherers' copies, Lasry, Biermann and Tomokiyo 2023, Cryptologia 47:2, pp.108-109 and p.188 n.332).
+    Meant to catch: a pile with a probable recipient power and date whose keys may sit in the interceptor's depot
+    (England 1586 -> TNA SP 53 and BL Harley MS 1582; England 1659 -> the Thurloe papers; France 1589 -> BnF fr.3977).
+    Must NOT list: a depot of another power (Spain 1586 gets no English row) or outside its period (England 1700 gets
+    no SP 53, Harley 1582 or Thurloe row). Matching: power or any alias, case-insensitive whole string; year inside the
+    row's 'YYYY-YYYY' span; no year lists every row of that power. Prints only: it never marks a family searched."""
+    want = power.strip().lower()
+    out = []
+    for r in registry(root, "interceptor_depots.tsv"):
+        names = [r.get("power", "")] + (r.get("aliases") or "").split(";")
+        if want not in {n.strip().lower() for n in names if n.strip()}:
+            continue
+        m = re.fullmatch(r"\s*(\d{3,4})\s*-\s*(\d{3,4})\s*", r.get("period") or "")
+        if year is not None and (not m or not int(m.group(1)) <= year <= int(m.group(2))):
+            continue
+        out.append(r)
+    return out
+
+
+def run_interceptor(root, power, year):
+    rows = interceptor_depots(root, power, year)
+    print(f"prior_work --interceptor {power} --year {year if year is not None else 'any'}: {len(rows)} depot(s) to log "
+          "as searched families (this list marks nothing searched; tools/data/interceptor_depots.tsv)")
+    for r in rows:
+        print(f"  {r['depot']}\t{r['period']}\t{r['holds']}\t[{r['source']}]")
+    if not rows:
+        print("  none in the table: absence from this seed table is not a negative (seeded from the paper, KEY-OFFICES.tsv"
+              " and KEYHUNT-2026-10-07.tsv only)")
+    return 0
+
+
 def main(argv=None):
     ap = Parser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("slug", help="ciphers/<slug> folder name ('-' with --register for every row)")
@@ -2192,7 +2227,10 @@ def main(argv=None):
     g.add_argument("--derive", action="store_true", help="propose items.pending.tsv rows (catalogue-only), never items.tsv")
     g.add_argument("--register", metavar="FILE", help="step mode: NEXT-STEPS.tsv, SIBLINGS-*.tsv or LOOSE-ENDS-*.md")
     g.add_argument("--brief", metavar="FILE", help="extract the items a brief names and check each (per-item exit table)")
+    g.add_argument("--interceptor", metavar="POWER", help="list the intercepting power's key depots (tools/data/"
+                   "interceptor_depots.tsv) covering --year, as families to log as searched; prints only (slug '-')")
     g.add_argument("--record", nargs=2, metavar=("ROWID", "ANSWER"), help="answer an owed row (any row that is not DONE)")
+    ap.add_argument("--year", type=int, help="with --interceptor: the pile's probable year")
     ap.add_argument("--columns", default=None,
                     help="register columns holding the step text (default: autodetected -- next_step,parallel for "
                          "NEXT-STEPS, sibling,cheap_step for SIBLINGS, step for LOOSE-ENDS)")
@@ -2221,6 +2259,8 @@ def main(argv=None):
     ap.add_argument("--now", help="fixed UTC clock YYYY-MM-DDTHH:MM for the ROOM claim age (tests)")
     a = ap.parse_args(argv)
     a.slug = a.slug.rstrip("/").removeprefix("ciphers/")
+    if a.interceptor:
+        return run_interceptor(a.root, a.interceptor, a.year)
     try:
         guard_path(a.root, "--root")
         for what, p in (("--reading", a.reading), ("--brief", a.brief), ("--register", a.register),
