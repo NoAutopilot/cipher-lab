@@ -146,3 +146,27 @@ NOTES Verdict (CRAV-54): one DECODE login (`tools/decode_browser_login.js`, `--g
 "DECODE take/release" in ROOM (BNE-DECODE used one login 11:2x; one per session), images to scratch only; transcribe any glossed
 pairs and run the A1 test exactly as CRAV-54 did on R8454 (same script, same control), then apply to the 40 legible groups only if A1
 admits the table.
+
+## Wave 4 (written 9 Oct 2026, ~12:3x UTC by date -u; the named next steps of wave 3's three results; lane at ~35 of 60)
+
+Same "Common to every job" and Wave 2 preamble.
+
+### J16 SFZ-F42 -- sforza-pusterla-1447-f13, Opus worker with a Sonnet subagent, cap USD 3, box 60 min
+NOTES Verdict (SFZ-READ2): cut single-line crops of the f.42 key slip from the image on disk (`tools/iiif_lines.py --image`, debug overlay
+checked; SFZ-READ2's two-line crops lost rows), one blind Sonnet second-reader pass, reconcile with the existing Opus read under the same
+pre-fixed f.71/f.67 convention rule SFZ-READ2 used (2 units), then rerun `g1p.py` and `lattice_decode.py` (both corpora, same lam and
+control) and report before/after beside the controls. Put the numbers in the NEAR.md sforza-pusterla row (numbers only; status unchanged;
+`tools/near_check.py` passes).
+
+### J17 MONLUC-BLIND -- fr4735-monluc-lansac-poland-1573, Opus worker with a Sonnet subagent, cap USD 2.5, box 50 min
+NOTES Verdict (MONLUC-K07): a blind sort of the c268 and f.86 'Z/2' crops together (crops on disk; if f.86 crops are not on disk, stop and
+say so -- no Gallica): one Sonnet call shown only the crops, numbered in shuffled order, asked to sort them into shape groups (no values,
+no decode, no label names). Pre-register in NOTES before the call which group assignment counts as "form A". Then
+`python3 tools/decode_key.py ciphers/fr4735-monluc-lansac-poland-1573 --try K69=t` on the blind-sorted form-A tokens, with --try's own
+control; accepted value stays M unless its control passed; never a direct key.tsv edit.
+
+### J18 CRAV-CRIB -- craven-rupert-1648, Opus, cap USD 2.5, box 50 min
+NOTES Verdict (CRAV-8450): the clear-context crib test on the five cipher runs (e.g. "write to [40.97.52.35.85]" is a name): pre-register the
+candidate cribs from the clear text around each run (names in the letter's own clear text, its known correspondents), test each against the
+run's code pattern (repeats, lengths) with a shuffled-crib control, and report which cribs survive. No key exists; a survivor is a lead
+graded M at most. Disk only.
