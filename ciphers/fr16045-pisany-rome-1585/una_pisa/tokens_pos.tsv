@@ -24,3 +24,20 @@ f301v	L08	16	15	T57	1061	eye	ctx: third sign before slash; re-centred on the rul
 f301v	L08	21	19	T47	1372	eye	ctx: second after slash; re-centred on the ruler montage
 f301v	L08	37	33	T57	2341	eye	ctx: first after the last slash; re-centred on the ruler montage
 f301v	L09	8	7	T45	518	eye	ctx: fourth after slash; re-centred on the ruler montage
+f275r	L03	16	12	T47	995	eye	ctx: T64 T26 [T47] T01 T43; re-centred on a 120 px montage, PISA-275R
+f275r	L06	31	29	T57	1722	eye	ctx: T12 T18 [T57] T57 T25; re-centred on a 120 px montage, PISA-275R
+f275r	L06	32	30	T57	1795	eye	ctx: T18 T57 [T57] T25 T26; re-centred on a 120 px montage, PISA-275R
+f275r	L08	35	29	T47	-	not-located	ctx: T49 T54 [T47] T46 T44; sequence fits two neighbouring signs (~2450 or ~2510), PISA-275R
+f275r	L10	12	11	T57	660	eye	ctx: T25 T05 [T57] T25 T26; re-centred on a 120 px montage, PISA-275R
+f275r	L11	19	18	T47	975	eye	ctx: T24 T41 [T47] T26 T37; re-centred on a 120 px montage, PISA-275R
+f275r	L11	33	32	T57	1813	eye	ctx: T25 T56 [T57] T24 T26; re-centred on a 120 px montage, PISA-275R
+f275r	L11	40	38	T57	2202	eye	ctx: T46 T26 [T57] T58 T41; re-centred on a 120 px montage, PISA-275R
+f275r	L13	23	21	T57	1467	eye	ctx: T56 T26 [T57] T41 T17; re-centred on a 120 px montage, PISA-275R
+f275r	L13	28	26	T45	1800	eye	ctx: T17 T18 [T45] T50 T47; re-centred on a 120 px montage, PISA-275R
+f275r	L13	30	28	T47	1917	eye	ctx: T45 T50 [T47] T17 T12; re-centred on a 120 px montage, PISA-275R
+f275r	L13	34	32	T57	2187	eye	ctx: T12 T29 [T57] T01 T18; re-centred on a 120 px montage, PISA-275R
+f275r	L13	39	37	T57	2510	eye	ctx: T43 T33 [T57] T25 T41; re-centred on a 120 px montage, PISA-275R
+f275r	L15	2	2	T57	120	eye	ctx: T09 [T57] T46 T18; re-centred on a 120 px montage, PISA-275R
+f275r	L15	27	25	T45	1670	eye	ctx: T73 T44 [T45] T26 T40; re-centred on a 120 px montage, PISA-275R
+f275r	L15	31	28	T57	1887	eye	ctx: T26 T40 [T57] T29 T16; re-centred on a 120 px montage, PISA-275R
+f275r	L15	40	36	T57	2497	eye	ctx: T31 T12 [T57] T18 T12; re-centred on a 120 px montage, PISA-275R

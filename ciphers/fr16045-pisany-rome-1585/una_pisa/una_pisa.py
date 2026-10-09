@@ -1,10 +1,12 @@
 """UNA-PISA (9 Oct 2026): per-token crop compare of key86 tokens against the 688 px table cells, PREREG-UNA-PISA.md.
   python3 una_pisa/una_pisa.py build STAGE      cells sheet + shuffled tiles + prompt for stage 1 (controls) or a page
   python3 una_pisa/una_pisa.py score [--check]  parse blind/reply_*.txt -> result.tsv (gate GK, per-token settle rule)
-Run from the repository root."""
+Run from the repository root. UNA_IMG=<dir> (PISA-275R, 9 Oct 2026): token crops <dir>/tok/ and tiles <dir>/blind/<stage>/
+for pages whose crops are not committed (f275r; images stay out of the public repository)."""
 import sys, os, random, re, csv
 from PIL import Image, ImageDraw
 D = 'ciphers/fr16045-pisany-rome-1585'; U = f'{D}/una_pisa'
+IMG = os.environ.get('UNA_IMG', U)
 CELLS = 'T45 T47 T57 T13 T33 T11 T31 T19 T38 T46 T51 T06 T27 T42 T12 T32 T48 T36 T17 T49 T16 T35'.split()
 SEED = 20261009
 CONTROLS = [  # id, crop, answer cell
@@ -33,23 +35,24 @@ def tiles_for(stage):
     if stage != 'controls':
         for row in csv.DictReader(open(f'{U}/tokens_pos.tsv'), delimiter='\t'):
             if row['page'] == stage and row['located'] != 'not-located':
-                items.append((f"{row['page']}_{row['line']}_p{row['pos']}", f"{U}/tok/{row['page']}_{row['line']}_p{row['pos']}.jpg", row['label'], 'test'))
+                items.append((f"{row['page']}_{row['line']}_p{row['pos']}", f"{IMG if stage == 'f275r' else U}/tok/{row['page']}_{row['line']}_p{row['pos']}.jpg", row['label'], 'test'))
     idx = {'controls': 0, 'f275r': 1, 'f301v': 2, 'f302v': 3}[stage]
     r = random.Random(SEED + idx); r.shuffle(items)
     return [(f'Q{i+1:02d}',) + it for i, it in enumerate(items)]
 
 def build(stage):
-    os.makedirs(f'{U}/blind/{stage}', exist_ok=True); build_sheet()
+    T = IMG if stage == 'f275r' else U
+    os.makedirs(f'{U}/blind/{stage}', exist_ok=True); os.makedirs(f'{T}/blind/{stage}', exist_ok=True); build_sheet()
     rows = tiles_for(stage)
     with open(f'{U}/blind/{stage}/tiles_map.tsv', 'w') as f:
         f.write('qid\tid\tcrop\tanswer_or_label\trole\n')
         for q, cid, crop, ans, role in rows:
             im = Image.open(crop).convert('L'); im = im.resize((im.size[0] * 2, im.size[1] * 2), Image.LANCZOS)
-            im.save(f'{U}/blind/{stage}/{q}.png'); f.write(f'{q}\t{cid}\t{crop}\t{ans}\t{role}\n')
+            im.save(f'{T}/blind/{stage}/{q}.png'); f.write(f'{q}\t{cid}\t{crop}\t{ans}\t{role}\n')
     qs = ' '.join(r[0] for r in rows)
     prompt = f"""You are comparing handwritten cipher signs from a 16th-century letter against the cells of a printed cipher table.
 Files: the table sheet {U}/blind/cells_sheet.png shows 22 table cells, each under a letter A-V (cells were cut at low resolution;
-some cells have a circle drawn round the sign). Token tiles: {', '.join(f'{U}/blind/{stage}/{r[0]}.png' for r in rows)}.
+some cells have a circle drawn round the sign). Token tiles: {', '.join(f'{T}/blind/{stage}/{r[0]}.png' for r in rows)}.
 Each token tile is cut from a line of the letter; the sign to identify is the one in the horizontal CENTRE of the tile (neighbouring
 signs may show at the edges). Look at every image. For each tile, say which table cell's sign it is. Ignore any circle drawn round a
 cell sign when matching shape, but note it.

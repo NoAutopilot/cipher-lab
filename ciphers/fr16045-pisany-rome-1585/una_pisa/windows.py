@@ -14,6 +14,9 @@ def anchors(page, line):
             for r in csv.DictReader(open(f), delimiter='\t'):
                 x = r.get('x_centre_strip', '-')
                 if r['line'] == line and x not in ('-', ''): a[int(r['tok_index'])] = int(x)
+    if page == 'f275r':  # PISA-275R (9 Oct 2026): R9-PIS2's eye-located T31/T36 tokens; tok_index is the 0-based ordinal
+        for r in csv.DictReader(open(f'{D}/pis2/tokens_pos.tsv'), delimiter='\t'):
+            if r['leaf'] == page and r['line'] == line: a[int(r['tok_index']) + 1] = int(r['x_centre_strip'])
     return a
 def predict(page, line):
     s = strip(page, line); arr = np.array(s) < 140; frac = arr.mean(0)
