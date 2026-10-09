@@ -11740,3 +11740,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:45 | HDK-BRANDT | arcinsys take (3 requests)
 2026-10-09 00:45 | V-SUR0744R (verifier, Opus) | NA take (1 region refetch of 0744 right for 5 crop spot-checks), for LANE FAMILY-A2d (account 2)
 2026-10-09 00:46 | V-SUR0744R (verifier, Opus) | NA release (1 req), for LANE FAMILY-A2d (account 2)
+2026-10-09 00:46 | HDK-BRANDT | arcinsys release
