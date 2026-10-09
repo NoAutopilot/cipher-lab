@@ -6341,6 +6341,34 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_016gnJfRCVWfZbRVf9Bqk3bL, account 1, incarnation 4 of the blast refill), 9 October 2026 (closed 04:5x UTC: at 80% of cap after the last planned wave, lane about 48 of 60; seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-0339; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger4-jobs.md (waves 1-2). Ten
+workers 45.03 + orchestrator ~3.0 by get_session. Five_hour allowed; seven_day allowed_warning on every session (not a stop under lane-common-blast).
+Result (eckert-1864, Fort Monroe mssEC 25; ONE audit each, not counted until a second): N3 -- E219 E227 E229 E240 E242 E251 E252 E253 E256 (17 June part)
+E258 E263 E268 E269 (D3); E243 E260 E267 (D2); N3 weak -- E228 E262 (D2). Second audits queued for the account-3 VERIFY lane: AUD2-LEDGER-12 (E219 E227),
+-13 (E228 E229 E240), -14 (E242 E243), -15 (E251 E252 E253 E256 E258), -16 (E260 E262 E263), -17 (E267 E268 E269). N1 at first audit: E217 E226 E245 E261 E266
+and E256's 16 June part (holder clear copies at other pointers: 10487 4711 10485 10267 10239 4717); E241 (AP despatch, Daily National Intelligencer 11 May 1864
+p.3, found through Chronicling America). Printed context, not the telegram: E251 (Butler V p.265), E253 (Plum, Military Telegraph II p.35), E258 (OR I/35 pt 2
+pp.258-259), E264, E265.
+- Read (Sonnet, ~0.33-0.46 per entry): clean-fm.tsv 1864 No. 1 rows -> E250-E258 (FM-R4a; 5594/1 = E62 duplicate; E255 in print, OR I/39 pt 3), E260-E269
+  (FM-R4b). The all-pointer CONTENTdm search of the holder transcription (added to step 0 this incarnation) found a clear period copy for 12 of 44 entries
+  handled: keep it first in every reader and verifier brief.
+- Fixes: FIX-FM5 (incarnation-3 audit corrections, E193 "22nd" included) and FIX-FM6 (FV-FM6a/b/c corrections); decode --check exit 0.
+**Next** (costs from this incarnation: read ~0.35-0.45/entry; Opus first audit ~1.0-1.7/entry, every verifier within 1.03x cap -- price 1.5/entry):
+1. Fix worker (Sonnet, ~1.5): AUDIT "## AUDIT (FV-FM7a)" s.6 decoder slips and E252's struck 1 Sept entry (remove from the reading by note); "(FV-FM7b)" E261
+   saddle plain, E266 Iron = soon / nuptial M, E262 Whiskey = Troops, hoe man = Homan; "(FV-FM7c)" fixes list; carry into status.json and SO prompts.
+2. Short N1 confirms (Opus, ~0.5 each, one verifier): E250 (clear copy 10490), E254 (9913), E257 (4823) from FM-R4a; also E255's OR I/39 pt 3 page (~0.1).
+3. Fort Monroe readers: 47 clean-fm.tsv 1864 No. 1/No. 2 rows not yet read (by grep of pointer/entry against NOTES.md, ciphertext*.txt and the ledger
+   jobs files), in clean-fm order: 5801/0 5752/0 5641/1 5768/2 5724/2 5645/2 5824/0 5582/1 5802/1 5829/2 | 5609/0 5785/0 5706/0 5630/0 5819/1 5804/1
+   5798/2 5605/2 5788/2 5724/0 | then 5814/2 ... 5702/0 (long rows 5662/0 309 words, 5697/1, 5797/1 at 2 units). 10 per reader, all-pointer CONTENTdm
+   search first, then a first verifier per batch.
+4. Leads, unfiled: 5820/5821 (Porter's two telegrams to Parker, printed ORN I/11 p.155) as a known-plaintext key test (~1.0, FM-R4b); E252 second text on
+   5781 (Head Qrs. A. P.), no key.
+5. mssEC 18 remaining 77 clean No. 1 rows: low yield; only after Fort Monroe is spent.
+6. Blocked: 8472, 6254, 9660 and Jan-Apr 1865 pages (no book in hand; Cipher No. 4 Friedman copy needs a desk browser, LOCAL-QUEUE).
+Light-guardrail share (known-text work): about 0 briefed; the N1 entries were found by verifiers inside ordinary first audits (~8 of 45).
+
 ## LANE LEDGER handoff (session_01SUrPvi8LCc6ZyHcfTUCKbK, account 1, incarnation 3 of the blast refill), 9 October 2026 (closed 00:5x UTC: past 75% of cap after the last planned wave, lane about 45 of 60; seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261008-2340; jobs .claude/briefs/runs/2026-10-08-acct1-lane-ledger3-jobs.md (waves 1-3). Ten
